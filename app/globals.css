@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0e12;
+  --foreground: #f4f4f5;
+  --accent: #f59e0b;
+  --panel: rgba(12, 18, 24, 0.65);
+  --glass: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-blur: 24px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont,
+    "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+}
+
+/* Cesium widget overrides — Apple Maps × Nat Geo */
+.cesium-viewer,
+.cesium-viewer-cesiumWidgetContainer,
+.cesium-widget {
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+}
+
+.cesium-viewer-bottom {
+  display: none;
+}
+
+/* Cinematic glass panel base */
+.glass-panel {
+  background: var(--panel);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+}
+
+/* Subtle amber accent line for secondary sections */
+.accent-line {
+  position: relative;
+  padding-left: 0.875rem;
+}
+.accent-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  bottom: 0.25rem;
+  width: 1.5px;
+  border-radius: 1px;
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.35) 0%, rgba(245, 158, 11, 0.08) 100%);
+}
+
+/* Smooth fade-in for floating panels */
+@keyframes cinematic-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cinematic-enter {
+  animation: cinematic-fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Primary narration — the cinematic hero text */
+.narration-hero {
+  font-size: 1.0625rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.015em;
+  font-weight: 400;
+}
+
+/* Secondary narration section */
+.narration-secondary {
+  font-size: 0.8125rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.01em;
+}
+
+/* Section label — minimal, documentary */
+.section-label {
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(245, 158, 11, 0.4);
+}
+
+/* Cinematic scrollbar — barely visible, elegant */
+.sidebar-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+}
+.sidebar-scroll::-webkit-scrollbar {
+  width: 3px;
+}
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Prevent Cesium from stealing wheel on sidebar */
+.sidebar-scroll {
+  overscroll-behavior: contain;
+}

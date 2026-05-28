@@ -1,0 +1,16 @@
+{
+  "id": "turpan-flaming",
+  "name": "吐鲁番火焰山航线",
+  "description": "吐鲁番 → 火焰山 → 库姆塔格沙漠",
+  "cruiseHeight": 8000,
+  "minLegDurationSec": 35,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 160,
+  "overviewDwellSec": 4,
+  "dwellDuringFlightSec": 10,
+  "waypoints": [
+    { "kind": "city", "id": "turpan-city", "name": "吐鲁番", "lat": 42.95, "lon": 89.17 },
+    { "kind": "terrain", "terrainId": "flaming-mountains" },
+    { "kind": "terrain", "terrainId": "kumtag" }
+  ]
+}
