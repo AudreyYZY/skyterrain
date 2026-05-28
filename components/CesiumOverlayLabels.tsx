@@ -59,7 +59,7 @@ export default function CesiumOverlayLabels({
   if (screenLabels.length === 0) return null;
 
   return (
-    <div className="pointer-events-none absolute inset-0 z-15 overflow-hidden">
+    <div className="pointer-events-none absolute inset-0 z-[15] overflow-hidden">
       {screenLabels.map(({ label, x, y }) => {
         const terrain = terrains.find((t) => t.id === label.terrainId);
 

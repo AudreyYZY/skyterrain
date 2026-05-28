@@ -72,6 +72,7 @@ export default function ExplorerApp() {
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
   const [cameraVersion, setCameraVersion] = useState(0);
+  const [mapReady, setMapReady] = useState(false);
 
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
@@ -413,11 +414,11 @@ export default function ExplorerApp() {
           ref={mapRef}
           onTerrainMode={setTerrainMode}
           onCameraChange={() => setCameraVersion((v) => v + 1)}
+          onReady={() => setMapReady(true)}
         />
         {/* Spatial awareness labels — cinematic map annotations */}
         {mode === "explore" && (
           <CesiumOverlayLabels
-            key={cameraVersion}
             projectToScreen={mapRef.current?.projectToScreen ?? null}
             terrains={allTerrains}
             isRouteFlying={isRouteFlying}

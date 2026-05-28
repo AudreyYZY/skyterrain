@@ -98,6 +98,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
   function CesiumMap({ onReady, onTerrainMode, onCameraChange }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
+    const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
     const flightCancelledRef = useRef(false);
     const routeEntityRef = useRef<import("cesium").Entity | null>(null);
@@ -110,11 +111,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     useImperativeHandle(ref, () => ({
       projectToScreen(lat: number, lon: number) {
         const viewer = viewerRef.current;
-        if (!viewer) return null;
+        const Cesium = cesiumRef.current;
+        if (!viewer || !Cesium) return null;
         try {
-          const cartesian = (globalThis as unknown as { Cesium?: typeof import("cesium") }).Cesium?.Cartesian3.fromDegrees(lon, lat);
-          if (!cartesian) return null;
-          const canvasPos = (globalThis as unknown as { Cesium?: typeof import("cesium") }).Cesium?.SceneTransforms.worldToWindowCoordinates(
+          const cartesian = Cesium.Cartesian3.fromDegrees(lon, lat);
+          const canvasPos = Cesium.SceneTransforms.worldToWindowCoordinates(
             viewer.scene,
             cartesian
           );
@@ -349,6 +350,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
 
           viewerRef.current = viewer;
+          cesiumRef.current = Cesium;
 
           // 监听相机变化，用于标签定位
           if (onCameraChange) {
