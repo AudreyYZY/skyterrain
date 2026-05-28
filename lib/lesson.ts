@@ -2,12 +2,7 @@ import type { TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { generateNarrationFromTerrainData, generateRouteNarration } from "@/lib/narration-engine";
 
 export function lessonToSpeech(lesson: TerrainLesson): string {
-  return [
-    lesson.seeing,
-    lesson.formation,
-    lesson.history,
-    lesson.funFact ? `冷知识：${lesson.funFact}` : "",
-  ]
+  return [lesson.seeing, lesson.formation, lesson.history]
     .filter((s) => s.trim().length > 0)
     .join(" ");
 }

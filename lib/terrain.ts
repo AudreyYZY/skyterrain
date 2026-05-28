@@ -89,11 +89,27 @@ export function getAllTerrains(): TerrainPoint[] {
   return TERRAINS;
 }
 
+/** 将多个底层分类合并为一个展示分组 */
+const CATEGORY_MERGE: Record<TerrainCategory, TerrainCategory[]> = {
+  mountain_range: ["mountain_range"],
+  lake: ["lake"],
+  desert: ["desert"],
+  basin: ["basin"],
+  river: ["river", "valley"],
+  scenic: ["scenic", "oasis", "silk_road"],
+  city: ["city"],
+  valley: ["river", "valley"],
+  oasis: ["scenic", "oasis", "silk_road"],
+  silk_road: ["scenic", "oasis", "silk_road"],
+};
+
 export function getTerrainsByCategory(): TerrainCategoryGroup[] {
   return TERRAIN_CATEGORY_ORDER.map((category) => ({
     category,
     label: TERRAIN_CATEGORY_LABEL[category],
-    terrains: TERRAINS.filter((t) => t.category === category),
+    terrains: TERRAINS.filter((t) =>
+      (CATEGORY_MERGE[category] ?? [category]).includes(t.category)
+    ),
   })).filter((group) => group.terrains.length > 0);
 }
 

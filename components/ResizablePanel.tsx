@@ -131,7 +131,7 @@ export default function ResizablePanel({
       {!collapsed && (
         <>
           {/* Scrollable content area */}
-          <div className="sidebar-scroll min-h-0 flex-1 overflow-y-auto overflow-x-hidden px-3 pb-6 pt-1">
+          <div className="sidebar-scroll min-h-0 flex-1 overflow-y-auto overflow-x-hidden px-3 pb-8 pt-1">
             {children}
           </div>
           {footer && (

@@ -4,6 +4,69 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase L — Information Architecture & UX Cleanup
+
+**Status:** Completed
+
+### Task 1: Simplified Sidebar Categories
+**Removed:**
+- `WorldviewNode`, `WorldviewSubgroup` types from `types/terrain.ts`
+- `GeographyComparison`, `GeographyWorldviewNode` types from `types/terrain.ts`
+- `GEOGRAPHY_COMPARISONS` array and helper functions from `lib/terrain-categories.ts`
+- Two-level collapsible tree from `components/FlightControls.tsx`
+
+**Changed:**
+- `lib/terrain-categories.ts` — Rewritten to simple flat category list (7 categories: 山脉, 湖泊, 沙漠, 盆地, 河谷, 景观, 城市)
+- `lib/terrain.ts` — Added `CATEGORY_MERGE` mapping to group oasis/silk_road under 景观, valley under 河谷
+- `components/FlightControls.tsx` — Simplified to single-level collapsible categories
+
+### Task 2: Fixed Narration/UI Mismatch
+**Problem:** `StructuredLesson` only renders 3 sections (seeing, formation, history) but narration was still speaking `funFact` content.
+
+**Removed:**
+- `funFact: string` from `TerrainLesson` interface in `types/terrain.ts`
+- `funFact` from `lessonToSpeech()` in `lib/lesson.ts`
+- `funFact` fallback from `lib/narration-engine.ts`
+- `funFact` from `ROUTE_END_LESSON` in `components/ExplorerApp.tsx`
+- `funFact` from AI prompt and parser in `lib/mimo.ts`
+- `funFact` from all 4 city lessons in `lib/city-lessons.ts`
+- `funFact` field from all 32 terrain JSON files
+
+**Result:** Narration speech now exactly matches the 3 visible UI sections.
+
+### Task 3: Fixed Sidebar Overflow
+**Problem:** Last route card and buttons partially hidden at bottom.
+
+**Changed:**
+- `components/ExplorerApp.tsx` — Overlay div: `h-full pt-12` → `absolute inset-x-0 top-12 bottom-0` (proper viewport containment)
+- `components/ResizablePanel.tsx` — Bottom padding: `pb-6` → `pb-8` (more safe area)
+
+### Task 4: Implemented Spatial Awareness Labels
+**Added:**
+- `components/CesiumOverlayLabels.tsx` — New component rendering cinematic map labels as HTML overlays
+- `projectToScreen()` method on `CesiumMapHandle` — projects lat/lon to screen coordinates
+- `onCameraChange` callback prop on `CesiumMap` — triggers label position updates
+
+**Changed:**
+- `components/CesiumMap.tsx` — Added `projectToScreen` method, camera change listener
+- `components/ExplorerApp.tsx` — Integrates CesiumOverlayLabels, initializes 15 major terrain labels on mount
+
+**Label Design:**
+- Only shows major landmarks (天山, 昆仑, 塔克拉玛干, etc.)
+- Cinematic dot + text with drop shadow
+- Hidden during route flight (avoids distraction)
+- Click label → fly to terrain + sync narration
+- Camera-change driven position updates (rAF throttled)
+
+### Task 5: Architecture Cleanup
+**Removed:**
+- `GeographyComparison` and `GeographyWorldviewNode` types
+- `GEOGRAPHY_COMPARISONS` array and helper functions
+- `WorldviewNode` and `WorldviewSubgroup` types
+- Unused `createWaypointLabel` import from ExplorerApp
+
+---
+
 ## Phase K — Flight Pacing & Narration Synchronization
 
 **Status:** Completed

@@ -22,27 +22,6 @@ export type TerrainType =
   | "oasis"
   | "silk_road";
 
-/** 对比地理关系 — 用于未来比较模式 */
-export interface GeographyComparison {
-  id: string;
-  label: string;
-  terrainIds: string[];
-  description: string;
-}
-
-/** 地理世界观节点 — 层级结构 */
-export interface GeographyWorldviewNode {
-  id: string;
-  label: string;
-  categories: TerrainCategory[];
-  /** 子分组（可选） */
-  subgroups?: {
-    id: string;
-    label: string;
-    filter: (terrain: TerrainPoint) => boolean;
-  }[];
-}
-
 /** 结构化地理知识（用于生成准确的讲解内容） */
 export interface TerrainKnowledge {
   terrainFeatures: string[];
@@ -72,7 +51,6 @@ export interface TerrainLesson {
   seeing: string;
   formation: string;
   history: string;
-  funFact: string;
 }
 
 export interface TerrainPoint {

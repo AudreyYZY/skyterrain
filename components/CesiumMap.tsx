@@ -17,6 +17,8 @@ export interface CesiumMapHandle {
   flyToTerrainAndWait: (terrain: TerrainPoint) => Promise<void>;
   flyRoute: (route: FlightRoute, callbacks: RouteFlyCallbacks) => void;
   stopFlight: () => void;
+  /** 将经纬度投影到屏幕坐标（返回 null 表示在视野外） */
+  projectToScreen: (lat: number, lon: number) => { x: number; y: number } | null;
 }
 
 export interface RouteFlyCallbacks {
@@ -36,6 +38,7 @@ export type TerrainMode = "world" | "ellipsoid";
 interface CesiumMapProps {
   onReady?: () => void;
   onTerrainMode?: (mode: TerrainMode) => void;
+  onCameraChange?: () => void;
 }
 
 /** 飞机舷窗俯角 — 更低角度，模拟真实客机窗口 */
@@ -92,7 +95,7 @@ function viewHeightForTerrain(
 }
 
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
-  function CesiumMap({ onReady, onTerrainMode }, ref) {
+  function CesiumMap({ onReady, onTerrainMode, onCameraChange }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
@@ -105,6 +108,32 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
     useImperativeHandle(ref, () => ({
+      projectToScreen(lat: number, lon: number) {
+        const viewer = viewerRef.current;
+        if (!viewer) return null;
+        try {
+          const cartesian = (globalThis as unknown as { Cesium?: typeof import("cesium") }).Cesium?.Cartesian3.fromDegrees(lon, lat);
+          if (!cartesian) return null;
+          const canvasPos = (globalThis as unknown as { Cesium?: typeof import("cesium") }).Cesium?.SceneTransforms.worldToWindowCoordinates(
+            viewer.scene,
+            cartesian
+          );
+          if (!canvasPos) return null;
+          const canvas = viewer.canvas;
+          if (
+            canvasPos.x < -50 ||
+            canvasPos.y < -50 ||
+            canvasPos.x > canvas.width + 50 ||
+            canvasPos.y > canvas.height + 50
+          ) {
+            return null;
+          }
+          return { x: canvasPos.x, y: canvasPos.y };
+        } catch {
+          return null;
+        }
+      },
+
       stopFlight() {
         flightCancelledRef.current = true;
         setRoutePreparing(false);
@@ -320,6 +349,18 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
 
           viewerRef.current = viewer;
+
+          // 监听相机变化，用于标签定位
+          if (onCameraChange) {
+            let rafId = 0;
+            viewer.camera.changed.addEventListener(() => {
+              cancelAnimationFrame(rafId);
+              rafId = requestAnimationFrame(() => onCameraChange());
+            });
+            // 初始触发一次
+            onCameraChange();
+          }
+
           onTerrainMode?.(terrainMode);
           setStatus("ready");
           onReady?.();

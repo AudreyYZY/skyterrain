@@ -21,14 +21,12 @@ ${facts}
 - 看到：${base.seeing}
 - 形成：${base.formation}
 - 历史：${base.history}
-- 冷知识：${base.funFact}
 
 输出格式：
 {
   "seeing": "①当前位置与窗外可见景观，约50字。说明在哪里、窗外有什么（山脊/雪线/沙漠纹/湖泊颜色等）。禁止比喻和文学修辞。",
   "formation": "②地貌形成原因，约80字。解释为什么长成这样（构造运动/冰川/河流/风蚀等）。",
-  "history": "③历史文化背景，约80字。与新疆、丝路、农牧、城市的关系。",
-  "funFact": "④一个有趣冷知识，约30字。具体数据或事实。"
+  "history": "③历史文化背景，约80字。与新疆、丝路、农牧、城市的关系。"
 }
 
 要求：
@@ -49,7 +47,6 @@ function parseLesson(raw: string, fallback: TerrainLesson): TerrainLesson {
       seeing: stripEmojis(parsed.seeing?.trim() || fallback.seeing),
       formation: stripEmojis(parsed.formation?.trim() || fallback.formation),
       history: stripEmojis(parsed.history?.trim() || fallback.history),
-      funFact: stripEmojis(parsed.funFact?.trim() || fallback.funFact),
     };
   } catch {
     return fallback;

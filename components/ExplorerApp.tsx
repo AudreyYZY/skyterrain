@@ -4,13 +4,14 @@ import CesiumMap, {
   type CesiumMapHandle,
   type TerrainMode,
 } from "@/components/CesiumMap";
+import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
 import FlightControls from "@/components/FlightControls";
 import NarrationPanel from "@/components/NarrationPanel";
 import PhotoModePanel from "@/components/PhotoModePanel";
 import ResizablePanel from "@/components/ResizablePanel";
 import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
-import { labelManager, createTerrainLabel, createWaypointLabel } from "@/lib/cinematic-labels";
+import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
 import { lessonToSpeech } from "@/lib/lesson";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
@@ -18,12 +19,13 @@ import {
   type ResolvedWaypoint,
 } from "@/lib/routes";
 import { speakAndWait, stopSpeech, warmupSpeechVoices } from "@/lib/speech";
-import { getTerrainsByCategory } from "@/lib/terrain";
+import { getAllTerrains, getTerrainsByCategory } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const terrainGroups = getTerrainsByCategory();
+const allTerrains = getAllTerrains();
 const routes = getAllRoutes();
 
 type AppMode = "explore" | "photo";
@@ -43,10 +45,9 @@ const CITY_LESSONS: Record<string, TerrainLesson> = {
 };
 
 const ROUTE_END_LESSON: TerrainLesson = {
-  seeing: "北疆经典航线飞行结束。你已从乌鲁木齐飞越天山、赛里木湖至伊犁河谷。",
+  seeing: "北疆经典航线飞行结束。你已从乌鲁木齐飞越天山、赛里木湖至伊犁河谷。欢迎继续探索左侧其他地貌，或使用照片模式识别舷窗实景。",
   formation: "",
   history: "",
-  funFact: "欢迎继续探索左侧其他地貌，或使用照片模式识别舷窗实景。",
 };
 
 const SPEECH_RATE = 0.88;
@@ -70,6 +71,29 @@ export default function ExplorerApp() {
   const [isFlyover, setIsFlyover] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
+  const [cameraVersion, setCameraVersion] = useState(0);
+
+  // 初始化地形标注 — 主要地标显示在地图上
+  useEffect(() => {
+    const layerId = "terrain-labels";
+    labelManager.createLayer(layerId, "地形标注", 1);
+    // 只为高优先级地标创建标注
+    const majorTerrains = [
+      "tianshan", "kunlun", "karakoram", "altai",
+      "taklamakan", "gurbantunggut",
+      "kanas", "sayram", "lop-nur",
+      "ili-valley", "tarim-river",
+      "kashgar", "turpan-city",
+      "flaming-mountains", "bayanbulak",
+    ];
+    for (const terrain of allTerrains) {
+      if (majorTerrains.includes(terrain.id)) {
+        labelManager.addLabel(layerId, createTerrainLabel(
+          terrain.id, terrain.name, terrain.lat, terrain.lon, 60
+        ));
+      }
+    }
+  }, []);
 
   // 注册叙述队列的语音函数
   useEffect(() => {
@@ -385,7 +409,21 @@ export default function ExplorerApp() {
 
       {/* Map layer — full bleed */}
       <div className="absolute inset-0 z-0">
-        <CesiumMap ref={mapRef} onTerrainMode={setTerrainMode} />
+        <CesiumMap
+          ref={mapRef}
+          onTerrainMode={setTerrainMode}
+          onCameraChange={() => setCameraVersion((v) => v + 1)}
+        />
+        {/* Spatial awareness labels — cinematic map annotations */}
+        {mode === "explore" && (
+          <CesiumOverlayLabels
+            key={cameraVersion}
+            projectToScreen={mapRef.current?.projectToScreen ?? null}
+            terrains={allTerrains}
+            isRouteFlying={isRouteFlying}
+            onSelectTerrain={handleSelectTerrain}
+          />
+        )}
         {terrainMode === "ellipsoid" && mode === "explore" && (
           <div className="pointer-events-none absolute bottom-4 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-lg border border-amber-500/20 bg-[#0a0e12]/80 px-4 py-2 text-center text-[11px] text-amber-200/60 backdrop-blur-sm">
             未启用 Cesium 全球地形。请配置{" "}
@@ -395,7 +433,7 @@ export default function ExplorerApp() {
       </div>
 
       {/* Overlay layer — floating panels */}
-      <div className="pointer-events-none relative z-10 flex h-full w-full pt-12">
+      <div className="pointer-events-none absolute inset-x-0 top-12 bottom-0 z-10 flex w-full">
         {/* Left panel — terrain list */}
         {mode === "explore" && (
           <ResizablePanel

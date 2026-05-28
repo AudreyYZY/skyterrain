@@ -50,8 +50,6 @@ export function generateNarrationFromTerrainData(
   // 5. 趣味知识
   if (k.interestingFacts.length > 0) {
     sections.push(k.interestingFacts[0]!);
-  } else if (terrain.lesson.funFact) {
-    sections.push(`冷知识：${terrain.lesson.funFact}`);
   }
 
   return sections.filter((s) => s.trim().length > 0).join(" ");

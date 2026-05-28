@@ -4,6 +4,70 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Session: Information Architecture & UX Cleanup
+
+### What Was Removed
+
+1. **Worldview hierarchy** — The two-level collapsible tree with subgroups (天山山脉, 阿尔泰山, etc.) was too academic. Replaced with simple flat categories: 山脉, 湖泊, 沙漠, 盆地, 河谷, 景观, 城市.
+
+2. **GeographyComparison system** — 5 comparison definitions (昆仑山 vs 喀喇昆仑, etc.) and all related types (`GeographyComparison`, `GeographyWorldviewNode`, `WorldviewNode`, `WorldviewSubgroup`) were unused dead code.
+
+3. **`funFact` field** — Removed from `TerrainLesson` interface, all 32 JSON files, `lessonToSpeech()`, narration engine, city lessons, and AI prompt template. The UI only renders 3 sections (seeing, formation, history), so narration was speaking content the user couldn't see.
+
+4. **Unused imports** — `createWaypointLabel` from ExplorerApp.
+
+### What Was Simplified
+
+1. **Sidebar** — `FlightControls` now renders a flat list of categories. Each category is a collapsible section with terrain items. No nested subgroups.
+
+2. **Category system** — `terrain-categories.ts` reduced from 115 lines (worldview hierarchy + comparison definitions) to 27 lines (flat category order + labels + merge map).
+
+3. **Terrain grouping** — `CATEGORY_MERGE` in `lib/terrain.ts` maps `oasis` → "景观", `silk_road` → "景观", `valley` → "河谷". Data categories preserved, display categories simplified.
+
+### New Sidebar Architecture
+
+```
+FlightControls
+├── 山脉 (7) — collapsible
+│   ├── 天山
+│   ├── 阿尔泰山
+│   └── ...
+├── 湖泊 (6) — collapsible
+├── 沙漠 (3) — collapsible
+├── 盆地 (3) — collapsible
+├── 河谷 (4) — collapsible
+├── 景观 (6) — collapsible (includes oasis + silk_road)
+└── 城市 (3) — collapsible
+```
+
+### Narration Synchronization
+
+After removing `funFact`:
+- `TerrainLesson` has exactly 3 fields: `seeing`, `formation`, `history`
+- `StructuredLesson` renders exactly 3 sections: 飞机窗外, 地貌形成, 历史与人文
+- `lessonToSpeech()` concatenates exactly those 3 fields
+- Narration audio and UI text are now perfectly synchronized
+
+### Spatial Awareness Labels
+
+New `CesiumOverlayLabels` component:
+- Renders major terrain names as HTML overlays on the Cesium globe
+- Uses `projectToScreen()` (lat/lon → canvas coordinates) from CesiumMap
+- Camera change listener drives position updates (rAF throttled)
+- 15 major landmarks: 天山, 昆仑, 喀喇昆仑, 阿尔泰, 塔克拉玛干, 古尔班通古特, 喀纳斯, 赛里木, 罗布泊, 伊犁河谷, 塔里木河, 喀什, 吐鲁番, 火焰山, 巴音布鲁克
+- Hidden during route flight to avoid visual clutter
+- Click label → `handleSelectTerrain()` → camera flies + narration plays
+
+### Key Architecture Decisions
+
+1. **Categories are display-only** — Terrain data keeps fine-grained categories (`oasis`, `silk_road`), but display merges them into broader groups. This preserves data fidelity while simplifying UI.
+
+2. **Labels are data-driven** — `CinematicLabelManager` holds label data, `CesiumOverlayLabels` renders it. Labels can be added/removed without touching the renderer.
+
+3. **`projectToScreen` is on the ref** — Avoids passing Cesium viewer instance to child components. The ref method encapsulates Cesium API access.
+
+---
+
 ## Session: Flight Pacing & Narration Synchronization Fix
 
 ### Root Cause Analysis

@@ -32,11 +32,12 @@ app/
   page.tsx                  — Entry → ExplorerApp
 
 components/
-  CesiumMap.tsx             — 3D globe, camera system, route flight engine
-  ExplorerApp.tsx           — Main orchestrator
-  FlightControls.tsx        — Worldview-grouped terrain tree
+  CesiumMap.tsx             — 3D globe, camera system, route flight engine, projectToScreen
+  ExplorerApp.tsx           — Main orchestrator, label initialization
+  CesiumOverlayLabels.tsx   — Spatial awareness labels (HTML overlays on Cesium)
+  FlightControls.tsx        — Flat category terrain list
   NarrationPanel.tsx        — Right floating panel (primary UI)
-  StructuredLesson.tsx      — Lesson content with accent bars
+  StructuredLesson.tsx      — Lesson content (3 sections: seeing, formation, history)
   TerrainGlanceCards.tsx    — Compact metadata strip
   SourceAttribution.tsx     — Data source footer
   TerrainPhotoCarousel.tsx  — Photo overlay (architecture only)
@@ -46,10 +47,10 @@ components/
   PhotoModePanel.tsx        — Photo identification mode
 
 lib/
-  terrain.ts                — Terrain registry (32 locations)
-  terrain-categories.ts     — Worldview hierarchy + comparison architecture
+  terrain.ts                — Terrain registry (32 locations, category merge)
+  terrain-categories.ts     — Flat category order + labels (7 categories)
   narration-engine.ts       — Structured data → Chinese narration
-  lesson.ts                 — Lesson-to-speech conversion
+  lesson.ts                 — Lesson-to-speech conversion (3 sections: seeing, formation, history)
   speech.ts                 — TTS system (Edge TTS + browser fallback)
   routes.ts                 — Route resolution
   geo.ts                    — Haversine distance, bearing
@@ -58,25 +59,24 @@ lib/
   cinematic-labels.ts       — CinematicLabelManager (decoupled annotation layer)
 
 types/
-  terrain.ts                — TerrainPoint, TerrainKnowledge, GeographyComparison
+  terrain.ts                — TerrainPoint, TerrainKnowledge (NO funFact, NO GeographyComparison)
   terrain-visual.ts         — TerrainVisualAsset types
   route.ts                  — FlightRoute, RouteWaypoint
 ```
 
 ## Data Inventory
 
-### Terrains: 32 locations
+### Terrains: 32 locations (7 display categories)
 
-| Category | Count | Locations |
-|----------|-------|-----------|
-| Mountain Ranges | 7 | tianshan, altai, kunlun, karakoram, bogda, pamir, muztagh-ata |
-| Lakes | 6 | kanas, sayram, tianchi, bosten, aibi, lop-nur |
-| Deserts | 3 | taklamakan, gurbantunggut, kumtag |
-| Basins | 3 | junggar-basin, tarim-basin, turpan-basin |
-| Rivers | 4 | ili-valley, tarim-river, ertis, yarkant-river |
-| Scenic | 4 | flaming-mountains, narat, kuche, bayanbulak |
-| Cities | 3 | kashgar, hotan, turpan-city |
-| Oasis | 2 | bachu, maigaiti |
+| Display Category | Count | Data Categories | Locations |
+|----------|-------|-----------------|-----------|
+| 山脉 | 7 | mountain_range | tianshan, altai, kunlun, karakoram, bogda, pamir, muztagh-ata |
+| 湖泊 | 6 | lake | kanas, sayram, tianchi, bosten, aibi, lop-nur |
+| 沙漠 | 3 | desert | taklamakan, gurbantunggut, kumtag |
+| 盆地 | 3 | basin | junggar-basin, tarim-basin, turpan-basin |
+| 河谷 | 4 | river, valley | ili-valley, tarim-river, ertis, yarkant-river |
+| 景观 | 6 | scenic, oasis, silk_road | flaming-mountains, narat, kuche, bayanbulak, bachu, maigaiti |
+| 城市 | 3 | city | kashgar, hotan, turpan-city |
 
 ### Routes: 3 flight routes
 
@@ -159,6 +159,15 @@ Urumqi, Kashgar, Hotan, Turpan
 - `POST_NARRATION_DWELL_MS = 2000` — digest pause after narration
 - `onWaypointArrival` is now `await`ed in CesiumMap flyRoute
 
+### Phase 11 — Information Architecture & UX Cleanup
+- Simplified sidebar: flat 7 categories (山脉, 湖泊, 沙漠, 盆地, 河谷, 景观, 城市)
+- Removed worldview hierarchy, GeographyComparison system, all unused types
+- Removed `funFact` from TerrainLesson, all 32 JSON files, narration engine, city lessons, mimo prompt
+- Narration/UI synchronized: 3 sections (seeing, formation, history) match exactly
+- Fixed sidebar overflow: overlay uses `absolute inset-x-0 top-12 bottom-0`
+- Implemented spatial awareness labels: CesiumOverlayLabels + projectToScreen + 15 major landmarks
+- New file: `components/CesiumOverlayLabels.tsx`
+
 ## Design Philosophy
 
 ### Visual Language
@@ -196,9 +205,9 @@ Urumqi, Kashgar, Hotan, Turpan
 4. **No terrain search** functionality
 5. **Static knowledge data** — no dynamic retrieval
 6. **No offline support** — requires internet for TTS
-7. **No reduced-motion support** — animations ignore `prefers-recommended`
-8. **`speak` vs `speakAndWait`** — `speak` is redundant wrapper, could be removed
-9. **`dwellAfterNarration`** — still used in `handleSelectTerrain` but naming is confusing
+7. **No reduced-motion support** — animations ignore `prefers-reduced-motion`
+8. **CesiumOverlayLabels** — Labels re-render on every camera change (could optimize with virtualization)
+9. **`projectToScreen`** — Uses `globalThis.Cesium` which requires Cesium to be globally available
 
 ## Next Recommended Priorities
 

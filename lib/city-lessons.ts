@@ -13,7 +13,6 @@ export const URUMQI_LESSON: TerrainLesson = {
     "城市依托天山冰雪融水和河流冲积扇发展。山前地下水位较高，适合灌溉农业；向北地势降低，连接准噶尔盆地边缘。",
   history:
     "乌鲁木齐在清代成为新疆军政中心，现代是联通南北疆与中亚的铁路、航空枢纽。地窝堡机场是大多数乘客进入新疆的第一站。",
-  funFact: "乌鲁木齐是世界上离海洋最远的大城市之一。",
 };
 
 export const KASHGAR_CARDS: TerrainCards = {
@@ -29,7 +28,6 @@ export const KASHGAR_LESSON: TerrainLesson = {
     "喀什绿洲由喀什噶尔河冲积而成，天山和昆仑山的冰雪融水滋养了这片平原。绿洲地势平坦，土壤肥沃，是塔里木盆地西缘最大的绿洲。",
   history:
     "喀什有2000多年历史，是丝绸之路南道和北道的交汇点。唐代称「疏勒」，是安西四镇之一。喀什老城保留着中国最完整的迷宫式街区。",
-  funFact: "喀什是中国最西端的大城市，夏天晚上10点还能看到夕阳。",
 };
 
 export const HOTAN_CARDS: TerrainCards = {
@@ -45,7 +43,6 @@ export const HOTAN_LESSON: TerrainLesson = {
     "和田绿洲由昆仑山冰雪融水形成的河流冲积而成。玉龙喀什河从昆仑山带来大量玉石砾石。绿洲地势平坦，但周围被沙漠和戈壁包围。",
   history:
     "和田古称「于阗」，是丝绸之路上的重镇。和田玉闻名天下，是古代中原王朝的重要贡品。和田还是佛教传入中国的重要通道。",
-  funFact: "和田玉中的「羊脂玉」是最名贵的品种，古代只有皇室才能使用。",
 };
 
 export const TURPAN_CITY_CARDS: TerrainCards = {
@@ -61,5 +58,4 @@ export const TURPAN_CITY_LESSON: TerrainLesson = {
     "吐鲁番盆地是天山东部的断陷盆地，最低点艾丁湖海拔-154米。盆地气候极端干燥炎热，天山冰雪融水通过坎儿井引入绿洲。",
   history:
     "吐鲁番是丝绸之路上的重要枢纽，高昌国和交河故城的所在地。坎儿井是古代水利工程的杰作，总长度超过5000公里。葡萄种植已有2000多年历史。",
-  funFact: "吐鲁番夏季地表温度可达70度以上，可以在沙子里烤鸡蛋。",
 };
