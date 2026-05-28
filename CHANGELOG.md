@@ -4,6 +4,38 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase K — Flight Pacing & Narration Synchronization
+
+**Status:** Completed
+
+### Problem
+- Route narration was fire-and-forget — camera moved while narration played
+- No narration queue — multiple narrations could overlap
+- No cancellation — stopping flight didn't stop narration
+- App felt like a fast slideshow instead of calm flight
+
+### Added
+- `lib/narration-queue.ts` — NarrationQueue class with priority, cancellation, serial execution
+- `lib/cinematic-labels.ts` — CinematicLabelManager for decoupled annotation layer
+
+### Changed
+- `components/ExplorerApp.tsx` — `narrateWaypoint` is now async/await, uses `narrationCancelledRef`, integrates cinematic labels
+- `components/CesiumMap.tsx` — `onWaypointArrival` is now `await`ed, added post-narration dwell
+
+### Synchronization Architecture
+```
+flyLeg → await onWaypointArrival → dwell → next flyLeg
+              ↓
+              await speakAndWait (camera waits at waypoint)
+              await POST_NARRATION_DWELL_MS (2s digest)
+```
+
+### Key Constants
+- `POST_NARRATION_DWELL_MS = 2000` — Digest pause after narration
+- `narrationQueue.gapMs = 800` — Gap between sequential narrations
+
+---
+
 ## Phase A — Cinematic Narration Panel Redesign
 
 **Status:** Completed

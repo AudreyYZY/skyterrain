@@ -54,6 +54,8 @@ lib/
   routes.ts                 — Route resolution
   geo.ts                    — Haversine distance, bearing
   city-lessons.ts           — City narration data (4 cities)
+  narration-queue.ts        — NarrationQueue class (serial, priority, cancel)
+  cinematic-labels.ts       — CinematicLabelManager (decoupled annotation layer)
 
 types/
   terrain.ts                — TerrainPoint, TerrainKnowledge, GeographyComparison
@@ -148,6 +150,14 @@ Urumqi, Kashgar, Hotan, Turpan
 - `pb-6` bottom safe padding
 - `overscroll-behavior: contain` (prevents Cesium scroll theft)
 - Cinematic scrollbar (3px, barely visible)
+
+### Phase 10 — Flight Pacing & Narration Synchronization
+- `lib/narration-queue.ts` — NarrationQueue class (serial, priority, cancel)
+- `lib/cinematic-labels.ts` — CinematicLabelManager (decoupled annotation layer)
+- `narrateWaypoint` is now async/await — camera waits at waypoint for narration
+- `narrationCancelledRef` — prevents stale callbacks after user action
+- `POST_NARRATION_DWELL_MS = 2000` — digest pause after narration
+- `onWaypointArrival` is now `await`ed in CesiumMap flyRoute
 
 ## Design Philosophy
 

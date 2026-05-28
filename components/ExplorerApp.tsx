@@ -10,7 +10,9 @@ import PhotoModePanel from "@/components/PhotoModePanel";
 import ResizablePanel from "@/components/ResizablePanel";
 import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
+import { labelManager, createTerrainLabel, createWaypointLabel } from "@/lib/cinematic-labels";
 import { lessonToSpeech } from "@/lib/lesson";
+import { narrationQueue } from "@/lib/narration-queue";
 import {
   getAllRoutes,
   type ResolvedWaypoint,
@@ -49,16 +51,8 @@ const ROUTE_END_LESSON: TerrainLesson = {
 
 const SPEECH_RATE = 0.88;
 
-async function dwellAfterNarration(
-  route: FlightRoute | null,
-  elapsedMs: number
-): Promise<void> {
-  const minMs = (route?.dwellSecAtWaypoint ?? 6) * 1000;
-  const extra = Math.max(0, minMs - elapsedMs);
-  if (extra > 0) {
-    await new Promise((r) => setTimeout(r, extra));
-  }
-}
+/** 叙述后的停留时间（毫秒） — 让用户消化内容 */
+const POST_NARRATION_DWELL_MS = 2000;
 
 export default function ExplorerApp() {
   const mapRef = useRef<CesiumMapHandle>(null);
@@ -75,8 +69,28 @@ export default function ExplorerApp() {
   const [activeRouteId, setActiveRouteId] = useState<string | null>(null);
   const [isFlyover, setIsFlyover] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
+  const narrationCancelledRef = useRef(false);
+
+  // 注册叙述队列的语音函数
+  useEffect(() => {
+    narrationQueue.register(
+      async (text, rate) => {
+        setIsSpeaking(true);
+        try {
+          await speakAndWait(text, rate);
+        } finally {
+          setIsSpeaking(false);
+        }
+      },
+      () => {
+        stopSpeech();
+        setIsSpeaking(false);
+      }
+    );
+  }, []);
 
   const stopSpeaking = useCallback(() => {
+    narrationQueue.cancel();
     stopSpeech();
     setIsSpeaking(false);
   }, []);
@@ -143,31 +157,68 @@ export default function ExplorerApp() {
     }
   }, [activeTerrain]);
 
+  /**
+   * 航点叙述 — 等待叙述完成后再返回
+   * 关键：这里返回 Promise，CesiumMap 的 flyRoute 会 await 它
+   */
   const narrateWaypoint = useCallback(
-    (waypoint: ResolvedWaypoint): void => {
-      if (waypoint.terrain) {
+    async (waypoint: ResolvedWaypoint): Promise<void> => {
+      if (narrationCancelledRef.current) return;
+
+      const terrain = waypoint.terrain;
+      const cityLesson = CITY_LESSONS[waypoint.id];
+      const cityCards = CITY_CARDS[waypoint.id];
+
+      // 更新 UI 状态
+      if (terrain) {
         setIsFlyover(true);
-        setActiveTerrain(waypoint.terrain);
-        setDisplayCards(waypoint.terrain.cards);
-        setLesson(waypoint.terrain.lesson);
+        setActiveTerrain(terrain);
+        setDisplayCards(terrain.cards);
+        setLesson(terrain.lesson);
         setError(null);
 
-        const script = `${waypoint.terrain.flyoverCue}\n${lessonToSpeech(waypoint.terrain.lesson)}`;
-        setIsSpeaking(true);
-        speakAndWait(script, SPEECH_RATE).finally(() => setIsSpeaking(false));
-      } else {
-        const cityLesson = CITY_LESSONS[waypoint.id];
-        const cityCards = CITY_CARDS[waypoint.id];
-        if (cityLesson && cityCards) {
-          setActiveTerrain(null);
-          setDisplayCards(cityCards);
-          setLesson(cityLesson);
-          setIsFlyover(true);
-          setError(null);
+        // 添加地形标注到电影级标注层
+        const layerId = "route-waypoints";
+        if (!labelManager.getLayers().find(l => l.id === layerId)) {
+          labelManager.createLayer(layerId, "航线航点", 10);
+        }
+        labelManager.addLabel(layerId, createTerrainLabel(
+          terrain.id, terrain.name, terrain.lat, terrain.lon, 80
+        ));
+        labelManager.setFocusedTerrain(terrain.id);
 
-          const script = lessonToSpeech(cityLesson);
-          setIsSpeaking(true);
-          speakAndWait(script, SPEECH_RATE).finally(() => setIsSpeaking(false));
+        // 生成叙述脚本
+        const script = `${terrain.flyoverCue}\n${lessonToSpeech(terrain.lesson)}`;
+
+        // 等待叙述完成
+        setIsSpeaking(true);
+        try {
+          await speakAndWait(script, SPEECH_RATE);
+        } finally {
+          setIsSpeaking(false);
+        }
+
+        // 叙述后停留 — 让用户消化
+        if (!narrationCancelledRef.current) {
+          await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
+        }
+      } else if (cityLesson && cityCards) {
+        setActiveTerrain(null);
+        setDisplayCards(cityCards);
+        setLesson(cityLesson);
+        setIsFlyover(true);
+        setError(null);
+
+        const script = lessonToSpeech(cityLesson);
+        setIsSpeaking(true);
+        try {
+          await speakAndWait(script, SPEECH_RATE);
+        } finally {
+          setIsSpeaking(false);
+        }
+
+        if (!narrationCancelledRef.current) {
+          await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
         }
       }
     },
@@ -176,6 +227,9 @@ export default function ExplorerApp() {
 
   const handleSelectTerrain = useCallback(
     async (terrain: TerrainPoint): Promise<void> => {
+      // 取消正在进行的航线和叙述
+      narrationCancelledRef.current = true;
+      narrationQueue.cancel();
       mapRef.current?.stopFlight();
       setIsRouteFlying(false);
       setRoutePreparing(false);
@@ -185,6 +239,18 @@ export default function ExplorerApp() {
       setError(null);
       setAiEnhancing(false);
 
+      // 重置取消标志
+      narrationCancelledRef.current = false;
+
+      // 更新标注层
+      labelManager.clear();
+      const layerId = "explore-labels";
+      labelManager.createLayer(layerId, "探索标注", 5);
+      labelManager.addLabel(layerId, createTerrainLabel(
+        terrain.id, terrain.name, terrain.lat, terrain.lon, 100
+      ));
+      labelManager.setFocusedTerrain(terrain.id);
+
       // 1) 镜头飞到目标地貌，等待飞行动画完成
       await (mapRef.current?.flyToTerrainAndWait(terrain) ?? Promise.resolve());
 
@@ -192,58 +258,85 @@ export default function ExplorerApp() {
       await showTerrainLesson(terrain);
 
       // 3) 停留片刻，让用户看完地形
-      await dwellAfterNarration(null, 0);
+      await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
     },
     [showTerrainLesson]
   );
 
   const handleStartRoute = useCallback(
     (route: FlightRoute) => {
-      mapRef.current?.stopFlight();
-      activeRouteRef.current = route;
-      setIsRouteFlying(true);
-      setRoutePreparing(true);
-      setActiveRouteId(route.id);
-      setIsFlyover(false);
-      setError(null);
-      setLesson(null);
-      setActiveTerrain(null);
-      setDisplayCards(null);
+      // 取消之前的叙述
+      narrationCancelledRef.current = true;
+      narrationQueue.cancel();
 
-      mapRef.current?.flyRoute(route, {
-        onPreparingRoute: () => setRoutePreparing(true),
-        onRouteReady: () => setRoutePreparing(false),
-        onWaypointArrival: (waypoint) => {
-          narrateWaypoint(waypoint);
-        },
-        onComplete: () => {
-          setIsRouteFlying(false);
-          setRoutePreparing(false);
-          setActiveRouteId(null);
-          activeRouteRef.current = null;
-          setActiveTerrain(null);
-          setDisplayCards(null);
-          setLesson(ROUTE_END_LESSON);
-          void speakAndWait(ROUTE_END_LESSON.seeing, SPEECH_RATE);
-        },
-        onCancelled: () => {
-          setIsRouteFlying(false);
-          setRoutePreparing(false);
-          setActiveRouteId(null);
-          activeRouteRef.current = null;
-        },
-      });
+      // 短暂延迟确保取消生效
+      setTimeout(() => {
+        narrationCancelledRef.current = false;
+
+        mapRef.current?.stopFlight();
+        activeRouteRef.current = route;
+        setIsRouteFlying(true);
+        setRoutePreparing(true);
+        setActiveRouteId(route.id);
+        setIsFlyover(false);
+        setError(null);
+        setLesson(null);
+        setActiveTerrain(null);
+        setDisplayCards(null);
+
+        // 初始化航线标注层
+        labelManager.clear();
+        const layerId = "route-waypoints";
+        labelManager.createLayer(layerId, "航线航点", 10);
+
+        mapRef.current?.flyRoute(route, {
+          onPreparingRoute: () => setRoutePreparing(true),
+          onRouteReady: () => setRoutePreparing(false),
+          onWaypointArrival: async (waypoint) => {
+            // 关键：await 叙述完成，镜头在航点等待
+            await narrateWaypoint(waypoint);
+          },
+          onComplete: async () => {
+            setIsRouteFlying(false);
+            setRoutePreparing(false);
+            setActiveRouteId(null);
+            activeRouteRef.current = null;
+            setActiveTerrain(null);
+            setDisplayCards(null);
+            setLesson(ROUTE_END_LESSON);
+
+            // 等待结束语叙述完成
+            setIsSpeaking(true);
+            try {
+              await speakAndWait(ROUTE_END_LESSON.seeing, SPEECH_RATE);
+            } finally {
+              setIsSpeaking(false);
+            }
+          },
+          onCancelled: () => {
+            narrationCancelledRef.current = true;
+            narrationQueue.cancel();
+            setIsRouteFlying(false);
+            setRoutePreparing(false);
+            setActiveRouteId(null);
+            activeRouteRef.current = null;
+          },
+        });
+      }, 50);
     },
     [narrateWaypoint]
   );
 
   const handleStopRoute = useCallback(() => {
+    narrationCancelledRef.current = true;
+    narrationQueue.cancel();
     mapRef.current?.stopFlight();
     setIsRouteFlying(false);
     setRoutePreparing(false);
     setActiveRouteId(null);
     activeRouteRef.current = null;
     stopSpeaking();
+    labelManager.clear();
   }, [stopSpeaking]);
 
   const terrainCount = terrainGroups.reduce(

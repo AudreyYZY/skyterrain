@@ -216,7 +216,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             return;
           }
 
-          // Phase 2: Continuous flight — camera keeps moving, narration fires non-blocking
+          // Phase 2: Sequential flight — fly to waypoint, narrate, then continue
           for (let i = 0; i < waypoints.length; i++) {
             if (flightCancelledRef.current) {
               callbacks.onCancelled?.();
@@ -236,11 +236,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               return;
             }
 
-            // Trigger narration — non-blocking, camera stays at waypoint
-            callbacks.onWaypointArrival(wp, i);
+            // 关键：await 叙述完成 — 镜头在航点等待，叙述完成后再继续
+            await callbacks.onWaypointArrival(wp, i);
 
-            // Dwell at waypoint while narration plays in background
-            await sleep((route.dwellDuringFlightSec ?? 10) * 1000);
+            if (flightCancelledRef.current) {
+              callbacks.onCancelled?.();
+              return;
+            }
+
+            // 短暂停留 — 让用户消化内容后镜头再移动
+            await sleep((route.dwellDuringFlightSec ?? 8) * 1000);
           }
 
           if (!flightCancelledRef.current) {
