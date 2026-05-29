@@ -38,7 +38,6 @@ export type TerrainMode = "world" | "ellipsoid";
 interface CesiumMapProps {
   onReady?: () => void;
   onTerrainMode?: (mode: TerrainMode) => void;
-  onCameraChange?: () => void;
 }
 
 /** 飞机舷窗俯角 — 更低角度，模拟真实客机窗口 */
@@ -95,7 +94,7 @@ function viewHeightForTerrain(
 }
 
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
-  function CesiumMap({ onReady, onTerrainMode, onCameraChange }, ref) {
+  function CesiumMap({ onReady, onTerrainMode }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
@@ -290,21 +289,30 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
       let cancelled = false;
       let resizeObserver: ResizeObserver | null = null;
 
-      /** 等待容器获得非零尺寸 */
+      /** 等待容器获得非零尺寸（带超时保护） */
       function waitForDimensions(el: HTMLElement): Promise<void> {
         return new Promise((resolve) => {
           if (el.clientWidth > 0 && el.clientHeight > 0) {
             resolve();
             return;
           }
+          console.warn("[CesiumMap] Container has 0 dimensions, waiting for layout...");
           const ro = new ResizeObserver((entries) => {
             const entry = entries[0];
             if (entry && entry.contentRect.width > 0 && entry.contentRect.height > 0) {
+              console.log("[CesiumMap] Container dimensions resolved:", entry.contentRect.width, "x", entry.contentRect.height);
               ro.disconnect();
+              clearTimeout(timer);
               resolve();
             }
           });
           ro.observe(el);
+          // 超时保护：3秒后强制继续，避免永久挂起
+          const timer = setTimeout(() => {
+            console.warn("[CesiumMap] waitForDimensions timeout (3s), proceeding with init. Container:", el.clientWidth, "x", el.clientHeight);
+            ro.disconnect();
+            resolve();
+          }, 3000);
         });
       }
 
@@ -386,17 +394,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
           });
           resizeObserver.observe(containerRef.current);
-
-          // 监听相机变化，用于标签定位
-          if (onCameraChange) {
-            let rafId = 0;
-            viewer.camera.changed.addEventListener(() => {
-              cancelAnimationFrame(rafId);
-              rafId = requestAnimationFrame(() => onCameraChange());
-            });
-            // 初始触发一次
-            onCameraChange();
-          }
 
           onTerrainMode?.(terrainMode);
           setStatus("ready");

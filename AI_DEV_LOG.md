@@ -4,6 +4,64 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Session: Cesium Initialization Regression Fix
+
+### Symptoms
+- Black screen on startup
+- Cesium imagery not rendering
+- Labels sometimes appear then disappear
+- Clicking labels does not load terrain
+- Terrain occasionally flashes then disappears
+
+### Root Cause 1: `waitForDimensions` could hang forever
+
+The `waitForDimensions` function in CesiumMap.tsx used a `ResizeObserver` to wait for the container to have non-zero dimensions. If the container had 0×0 dimensions (due to React hydration timing, CSS loading delay, or layout timing), the Promise would **never resolve**, causing the Cesium Viewer to never be created.
+
+**Fix:** Added a 3-second timeout. If dimensions don't resolve within 3s, the init proceeds anyway. Added debug logging to trace initialization flow.
+
+### Root Cause 2: `camera.changed` caused re-render storm
+
+The `camera.changed` event listener called `onCameraChange` on every frame (60fps). This triggered `setCameraVersion(v + 1)` in ExplorerApp, causing a full React re-render cycle on every frame. This:
+- Wasted CPU on unnecessary React reconciliation
+- Could cause visual flickering
+- Made the app feel sluggish
+
+**Fix:** Removed the `camera.changed` listener and `onCameraChange` prop entirely. CesiumOverlayLabels already has a 500ms `setInterval` polling mechanism that calls `projectToScreen` for each label — this is sufficient for label position updates without triggering React re-renders.
+
+### Initialization Timeline (after fix)
+
+```
+T+0ms   : ExplorerApp renders, CesiumMap mounts
+T+0ms    : useEffect fires, starts async init()
+T+0ms    : Dynamic import("cesium") begins
+T+~500ms : Cesium module loaded
+T+~500ms : waitForDimensions checks container
+         : IF dimensions > 0: proceed immediately
+         : IF dimensions = 0: wait up to 3s, then proceed
+T+~600ms : Terrain provider created
+T+~700ms : new Cesium.Viewer(container) — WebGL canvas created
+T+~700ms : ResizeObserver attached
+T+~700ms : onReady() fires → mapReady = true → ExplorerApp re-renders
+T+~700ms : CesiumOverlayLabels gets projectToScreen function
+T+~1200ms: First label position update (500ms interval)
+```
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `components/CesiumMap.tsx` | Added 3s timeout to `waitForDimensions`, removed `onCameraChange` prop and `camera.changed` listener |
+| `components/ExplorerApp.tsx` | Removed `cameraVersion` state, removed `onCameraChange` prop from CesiumMap |
+
+### Why This Fixes the Regression
+
+1. **Black screen**: `waitForDimensions` timeout ensures Viewer always gets created, even if container starts at 0×0
+2. **Imagery not rendering**: Viewer creation no longer blocked by infinite wait
+3. **Labels appearing/disappearing**: No more re-render storm from camera changes; labels update via 500ms polling
+4. **Click labels not working**: `mapReady` state properly triggers re-render to pass `projectToScreen` to overlay
+
+---
+
 ## Session: Cesium Rendering Crash Fix
 
 ### Root Cause

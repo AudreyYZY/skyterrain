@@ -206,8 +206,8 @@ Urumqi, Kashgar, Hotan, Turpan
 5. **Static knowledge data** — no dynamic retrieval
 6. **No offline support** — requires internet for TTS
 7. **No reduced-motion support** — animations ignore `prefers-reduced-motion`
-8. **CesiumOverlayLabels** — Labels re-render on every camera change (could optimize with virtualization)
-9. **`projectToScreen`** — Uses `globalThis.Cesium` which requires Cesium to be globally available
+8. **`labelManager.clear()` in handleSelectTerrain** — clears all labels including the 15 major landmarks initialized on mount
+9. **`flyToTerrain` re-imports cesium** — uses `import("cesium")` instead of `cesiumRef.current` (minor perf)
 
 ## Next Recommended Priorities
 

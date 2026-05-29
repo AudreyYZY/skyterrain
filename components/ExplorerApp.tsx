@@ -71,7 +71,6 @@ export default function ExplorerApp() {
   const [isFlyover, setIsFlyover] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
-  const [cameraVersion, setCameraVersion] = useState(0);
   const [mapReady, setMapReady] = useState(false);
 
   // 初始化地形标注 — 主要地标显示在地图上
@@ -413,7 +412,6 @@ export default function ExplorerApp() {
         <CesiumMap
           ref={mapRef}
           onTerrainMode={setTerrainMode}
-          onCameraChange={() => setCameraVersion((v) => v + 1)}
           onReady={() => setMapReady(true)}
         />
         {/* Spatial awareness labels — cinematic map annotations */}

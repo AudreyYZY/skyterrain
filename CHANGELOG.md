@@ -4,6 +4,33 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Fix: Cesium Initialization Regression
+
+**Status:** Completed
+
+### Problem
+- Black screen on startup — Cesium Viewer never created
+- `waitForDimensions()` could hang forever if container had 0×0 dimensions
+- `camera.changed` event caused 60fps re-render storm in ExplorerApp
+
+### Root Causes
+1. `waitForDimensions` used ResizeObserver with no timeout — if container started at 0×0, Promise never resolved
+2. `onCameraChange` callback triggered `setCameraVersion` on every camera frame, causing full React re-render cycle at 60fps
+
+### Fix
+- `components/CesiumMap.tsx`:
+  - Added 3-second timeout to `waitForDimensions` — forces init to proceed even if container is 0×0
+  - Removed `onCameraChange` prop and `camera.changed` event listener
+  - Added debug console logging for initialization flow
+- `components/ExplorerApp.tsx`:
+  - Removed `cameraVersion` state (no longer needed)
+  - Removed `onCameraChange` prop from CesiumMap
+
+### Label Updates
+CesiumOverlayLabels already has a 500ms `setInterval` that polls `projectToScreen` for each label. This is sufficient for smooth label updates without triggering React re-renders on every camera frame.
+
+---
+
 ## Phase L — Information Architecture & UX Cleanup
 
 **Status:** Completed
