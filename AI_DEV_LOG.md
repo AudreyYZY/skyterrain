@@ -4,6 +4,57 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Session: Cesium Rendering Crash Fix
+
+### Root Cause
+
+**Error:** `DeveloperError: Expected width to be greater than 0, actual value was 0`
+
+**Why it happened:**
+
+The Cesium viewer initialization is async (dynamic `import("cesium")` + `createWorldTerrainAsync`). During this async gap, the container div (`h-full w-full` inside `absolute inset-0`) could momentarily have 0×0 dimensions if:
+
+1. Layout hasn't fully settled after React hydration
+2. Hot module reload triggers a fast remount
+3. Browser hasn't completed the layout pass before the async import resolves
+
+The `new Cesium.Viewer(container)` call internally creates a WebGL canvas sized to the container. If the container is 0×0 at that exact moment, Cesium throws `DeveloperError`.
+
+**Why recent changes made it more likely:**
+
+- Adding `CesiumOverlayLabels` inside the map container div added another React component to the same DOM subtree
+- `onCameraChange` callback triggers frequent ExplorerApp re-renders via `cameraVersion` state
+- `mapReady` state adds another state transition during initialization
+- These increase the probability of hitting the 0×0 window during the async init gap
+
+### Fix Applied
+
+1. **`waitForDimensions()`** — Before creating the viewer, wait for the container to have non-zero dimensions using a `ResizeObserver`. This blocks initialization until the layout is stable.
+
+2. **`ResizeObserver` on container** — After viewer creation, observe the container for size changes and call `viewer.resize()`. This handles sidebar resizing and other layout shifts.
+
+3. **`projectToScreen` guard** — Early return `null` if `canvas.width === 0 || canvas.height === 0`, preventing cascading errors from the label projection system.
+
+### Layout Architecture (after fix)
+
+```
+Root (flex col, h-screen w-screen)
+├── Header (shrink-0, z-20)
+├── Map layer (absolute inset-0, z-0)
+│   ├── CesiumMap (relative h-full w-full)
+│   │   └── Container div (h-full w-full, ref)
+│   │       └── Cesium Viewer (WebGL canvas)
+│   ├── CesiumOverlayLabels (absolute inset-0, z-[15])
+│   └── Terrain mode warning (absolute bottom-4)
+└── Overlay layer (absolute inset-x-0 top-12 bottom-0, z-10)
+    ├── Left panel (ResizablePanel)
+    └── Right panel (floating)
+```
+
+Key invariant: Cesium container dimensions are always validated before viewer creation, and kept in sync via ResizeObserver.
+
+---
+
 ## Session: Information Architecture & UX Cleanup
 
 ### What Was Removed

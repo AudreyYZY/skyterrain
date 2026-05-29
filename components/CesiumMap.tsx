@@ -113,6 +113,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         const viewer = viewerRef.current;
         const Cesium = cesiumRef.current;
         if (!viewer || !Cesium) return null;
+        const canvas = viewer.canvas;
+        if (canvas.width === 0 || canvas.height === 0) return null;
         try {
           const cartesian = Cesium.Cartesian3.fromDegrees(lon, lat);
           const canvasPos = Cesium.SceneTransforms.worldToWindowCoordinates(
@@ -120,7 +122,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             cartesian
           );
           if (!canvasPos) return null;
-          const canvas = viewer.canvas;
           if (
             canvasPos.x < -50 ||
             canvasPos.y < -50 ||
@@ -287,6 +288,25 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
     useEffect(() => {
       let cancelled = false;
+      let resizeObserver: ResizeObserver | null = null;
+
+      /** 等待容器获得非零尺寸 */
+      function waitForDimensions(el: HTMLElement): Promise<void> {
+        return new Promise((resolve) => {
+          if (el.clientWidth > 0 && el.clientHeight > 0) {
+            resolve();
+            return;
+          }
+          const ro = new ResizeObserver((entries) => {
+            const entry = entries[0];
+            if (entry && entry.contentRect.width > 0 && entry.contentRect.height > 0) {
+              ro.disconnect();
+              resolve();
+            }
+          });
+          ro.observe(el);
+        });
+      }
 
       async function init() {
         if (!containerRef.current) return;
@@ -297,6 +317,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           const Cesium = await import("cesium");
           await import("cesium/Build/Cesium/Widgets/widgets.css");
+
+          if (cancelled || !containerRef.current) return;
+
+          // 等待容器获得非零尺寸 — 避免 Cesium WebGL 崩溃
+          await waitForDimensions(containerRef.current);
 
           if (cancelled || !containerRef.current) return;
 
@@ -317,6 +342,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           } else {
             terrainProvider = new Cesium.EllipsoidTerrainProvider();
           }
+
+          if (cancelled || !containerRef.current) return;
 
           const viewer = new Cesium.Viewer(containerRef.current, {
             animation: false,
@@ -352,6 +379,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           viewerRef.current = viewer;
           cesiumRef.current = Cesium;
 
+          // ResizeObserver — 侧边栏调整时同步 Cesium 画布尺寸
+          resizeObserver = new ResizeObserver(() => {
+            if (viewerRef.current && !viewerRef.current.isDestroyed()) {
+              viewerRef.current.resize();
+            }
+          });
+          resizeObserver.observe(containerRef.current);
+
           // 监听相机变化，用于标签定位
           if (onCameraChange) {
             let rafId = 0;
@@ -381,6 +416,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
       return () => {
         cancelled = true;
         flightCancelledRef.current = true;
+        resizeObserver?.disconnect();
         viewerRef.current?.destroy();
         viewerRef.current = null;
       };
