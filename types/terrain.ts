@@ -46,11 +46,13 @@ export interface TerrainCards {
   feature: string;
 }
 
-/** 三层地理讲解（固定结构，避免文学化旁白） */
+/** 四层地理讲解（固定结构，避免文学化旁白） */
 export interface TerrainLesson {
   seeing: string;
   formation: string;
   history: string;
+  /** 飞机上如何区分 — 观察教育 */
+  observation?: string;
 }
 
 export interface TerrainPoint {

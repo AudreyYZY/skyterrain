@@ -159,6 +159,15 @@ Urumqi, Kashgar, Hotan, Turpan
 - `POST_NARRATION_DWELL_MS = 2000` — digest pause after narration
 - `onWaypointArrival` is now `await`ed in CesiumMap flyRoute
 
+### Phase 14 — Airplane Observation Education
+- Added `observation?: string` to `TerrainLesson` interface (4th section)
+- Section heading: "飞机上如何区分"
+- 28 terrain files have observation data for comparison pairs
+- Content covers: visual patterns, distinction from similar terrain, unique identifiers
+- Sources: 中国国家地理, 中国科学院, 新疆地方志, 国家公园考察报告
+- `lessonToSpeech()` and `generateNarrationFromTerrainData()` include observation
+- `StructuredLesson` renders observation as accent-line section
+
 ### Phase 13 — Cinematic Label Lifecycle
 - Camera-driven label updates (150ms throttle on `camera.changed` + `camera.moveEnd`)
 - `CameraState` interface (altitude, zoomLevel, lon, lat) exposed from CesiumMap

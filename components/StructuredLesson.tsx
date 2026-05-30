@@ -14,6 +14,7 @@ const SECTIONS: {
   { key: "seeing", heading: "飞机窗外", primary: true },
   { key: "formation", heading: "地貌形成" },
   { key: "history", heading: "历史与人文" },
+  { key: "observation", heading: "飞机上如何区分" },
 ];
 
 export default function StructuredLesson({
@@ -28,7 +29,7 @@ export default function StructuredLesson({
   return (
     <div className="space-y-5">
       {visible.map(({ key, heading, primary }) => {
-        const body = stripEmojis(lesson[key] ?? "");
+        const body = stripEmojis((lesson[key] as string) ?? "");
         if (!body) return null;
 
         if (primary) {

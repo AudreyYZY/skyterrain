@@ -4,6 +4,68 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase 3 — Airplane Observation Education
+
+**Status:** Completed
+
+### Problem
+Narration was encyclopedia-like — users learned facts but couldn't recognize terrain from the air. No guidance on how to distinguish similar terrain types.
+
+### Solution
+Added `observation` field to `TerrainLesson` — a 4th narration section titled "飞机上如何区分" that teaches airplane passengers to recognize and distinguish terrain.
+
+### Content Architecture
+
+**TerrainLesson (4 sections):**
+1. `seeing` — 飞机窗外 (primary, hero text)
+2. `formation` — 地貌形成
+3. `history` — 历史与人文
+4. `observation` — 飞机上如何区分 (NEW, optional)
+
+**Observation content covers:**
+- What passengers notice first
+- Key visual patterns from the air
+- How to distinguish from nearby similar terrain
+- Comparison pairs: 天山 vs 阿尔泰, 昆仑 vs 喀喇昆仑, 塔克拉玛干 vs 古尔班通古特, etc.
+
+### Source Attribution
+All observation content is traceable to:
+- 《中国国家地理》新疆专辑
+- 中国科学院各研究所
+- 新疆地方志
+- 国家公园科学考察报告
+
+### Changes
+
+**types/terrain.ts:**
+- Added `observation?: string` to `TerrainLesson` interface
+
+**components/StructuredLesson.tsx:**
+- Added 4th section: `{ key: "observation", heading: "飞机上如何区分" }`
+- Renders with same accent-line style as other secondary sections
+
+**lib/lesson.ts:**
+- `lessonToSpeech()` now includes `observation` in TTS output
+
+**lib/narration-engine.ts:**
+- `generateNarrationFromTerrainData()` appends observation text
+
+**28 terrain JSON files:**
+- Added `observation` field with comparison-based educational content
+- Skipped: tianchi, turpan-basin (no clear comparison pair)
+
+### Comparison Pairs Covered
+| Pair | Key Distinction |
+|------|----------------|
+| 天山 vs 阿尔泰 | 走向、森林类型、雪线高度 |
+| 昆仑 vs 喀喇昆仑 | 冰川规模、雪线、山体形态 |
+| 塔克拉玛干 vs 古尔班通古特 | 流动/固定、植被、降雪 |
+| 喀纳斯 vs 赛里木 | 冰蚀湖/构造湖、颜色、周围植被 |
+| 准噶尔 vs 塔里木盆地 | 开口方向、湿度、沙丘类型 |
+| 伊犁河谷 vs 南疆河谷 | 湿度、植被、农业类型 |
+
+---
+
 ## Phase 2 — Cinematic Label Lifecycle
 
 **Status:** Completed

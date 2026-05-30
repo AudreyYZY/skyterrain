@@ -52,6 +52,11 @@ export function generateNarrationFromTerrainData(
     sections.push(k.interestingFacts[0]!);
   }
 
+  // 6. 飞机上如何区分
+  if (terrain.lesson.observation) {
+    sections.push(terrain.lesson.observation);
+  }
+
   return sections.filter((s) => s.trim().length > 0).join(" ");
 }
 

@@ -2,8 +2,8 @@ import type { TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { generateNarrationFromTerrainData, generateRouteNarration } from "@/lib/narration-engine";
 
 export function lessonToSpeech(lesson: TerrainLesson): string {
-  return [lesson.seeing, lesson.formation, lesson.history]
-    .filter((s) => s.trim().length > 0)
+  return [lesson.seeing, lesson.formation, lesson.history, lesson.observation]
+    .filter((s) => s && s.trim().length > 0)
     .join(" ");
 }
 

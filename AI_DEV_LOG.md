@@ -4,6 +4,45 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Phase 3: Airplane Observation Education
+
+### Problem
+Narration was encyclopedia-like. Users learned facts but couldn't distinguish terrain types from the air. No comparative education.
+
+### Solution
+Added `observation` field to `TerrainLesson` — teaches users to recognize terrain by comparing similar types.
+
+### Content Design
+Each observation follows a structure:
+1. **What you see** — key visual pattern from airplane
+2. **How to distinguish** — comparison with similar terrain
+3. **Unique identifier** — one feature that makes it recognizable
+
+### Example (Tianshan vs Altai):
+> 天山与阿尔泰山的区别：天山呈东西走向，山脊线连续平行，山前有明显的冲积扇绿洲带；阿尔泰山呈西北—东南走向，森林覆盖更密，山谷中有翡翠色冰蚀湖。
+
+### Source Policy
+All content traceable to authoritative Chinese geography sources:
+- 《中国国家地理》新疆专辑
+- 中国科学院天山冰川观测站
+- 中国科学院新疆生态与地理研究所
+- 阿尔泰山自然保护区科学考察报告
+- 国家公园科学考察报告
+
+### Files Modified
+| File | Change |
+|------|--------|
+| `types/terrain.ts` | Added `observation?: string` to `TerrainLesson` |
+| `components/StructuredLesson.tsx` | Added 4th section "飞机上如何区分" |
+| `lib/lesson.ts` | `lessonToSpeech()` includes observation |
+| `lib/narration-engine.ts` | `generateNarrationFromTerrainData()` appends observation |
+| 28 terrain JSON files | Added `observation` field |
+
+### Coverage
+28 of 30 terrain files have observation data. Skipped: tianchi (no clear comparison pair), turpan-basin (covered by turpan-city).
+
+---
+
 ## Phase 2: Cinematic Label Lifecycle
 
 ### Problem
