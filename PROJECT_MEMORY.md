@@ -252,4 +252,95 @@ Urumqi, Kashgar, Hotan, Turpan
 - **3** route JSON files in `data/routes/`
 - **13** React components in `components/`
 - **15** utility modules in `lib/`
+
+---
+
+## Protected Infrastructure
+
+> **FUTURE CLAUDE SESSIONS: Read this section before making ANY changes.**
+
+### Stable Rendering Architecture
+
+The Cesium rendering pipeline is now stable. The following architecture has been battle-tested through multiple regression cycles:
+
+```
+CesiumMap.tsx
+├── useEffect init: waitForDimensions (3s timeout) → Viewer creation
+├── ResizeObserver: canvas sync on sidebar resize
+├── NO camera.changed listener (removed — caused black screen)
+├── NO onCameraChange prop (removed — caused render storm)
+├── useImperativeHandle: projectToScreen, getCameraState, flyTo*, stopFlight
+└── All flyTo calls: quarticEaseOut easing, 7s duration, -42° pitch
+
+ExplorerApp.tsx
+├── NO cameraState state (removed — caused render storm)
+├── mapRef passed to CesiumOverlayLabels for polling
+├── handleSelectTerrain: try/catch chain
+├── narrateWaypoint: async/await with narrationCancelledRef
+└── narrationQueue: serial, priority, cancel
+
+CesiumOverlayLabels.tsx
+├── 500ms setInterval polling (NOT camera-driven)
+├── mapRef.current.getCameraState() — imperative read
+├── mapRef.current.projectToScreen() — per-label projection
+├── edgeFade + resolveOverlaps
+└── CSS opacity transitions
+```
+
+### Known Regressions (DO NOT REPEAT)
+
+| Regression | Cause | Fix |
+|-----------|-------|-----|
+| Black screen | `camera.changed` → React re-render storm → WebGL starvation | Removed `camera.changed` entirely |
+| Black screen | `waitForDimensions` hung forever on 0×0 container | Added 3s timeout |
+| Render storm | `onCameraChange` → `setCameraState` → 60fps re-renders | Replaced with 500ms polling |
+| Promise hang | `async` inside `new Promise()` — never settles on error | Use `.then()` chain before Promise |
+| Canvas crash | `new Cesium.Viewer()` on 0×0 container | `waitForDimensions` with timeout |
+
+### Forbidden Modification Areas
+
+Unless explicitly requested with risk assessment:
+
+1. **DO NOT** add `camera.changed` event listeners
+2. **DO NOT** hook camera events to React state (`useState`, `useReducer`)
+3. **DO NOT** modify the Cesium Viewer initialization sequence
+4. **DO NOT** change the `waitForDimensions` timeout mechanism
+5. **DO NOT** modify the `useImperativeHandle` dependency array
+6. **DO NOT** remove the `viewer.isDestroyed()` guards
+7. **DO NOT** change the `setInterval` polling in CesiumOverlayLabels to camera-event-driven updates
+8. **DO NOT** modify the `quarticEaseOut` or `smoothStep` easing functions
+9. **DO NOT** change the `WINDOW_PITCH_DEG` (-42) or `CRUISE_ROLL_DEG` (0.8) constants
+10. **DO NOT** modify the `cameraAt()` function's terrain sampling logic
+
+### Why These Are Protected
+
+Each item above was the source of a regression that caused:
+- Black screens (WebGL context loss)
+- Render starvation (React competing with Cesium)
+- Promise hangs (async anti-patterns)
+- Canvas crashes (0×0 dimension errors)
+
+The fixes were hard-won through multiple debugging cycles. Modifying these areas without deep understanding of the Cesium ↔ React interaction will likely reintroduce regressions.
+
+### Safe Extension Points
+
+These areas CAN be modified safely:
+
+- **Content**: terrain JSON files, narration text, observation data, route definitions
+- **UI**: NarrationPanel, StructuredLesson, FlightControls, RouteControls (styling/layout)
+- **Labels**: CinematicLabelManager data, label priorities, zoom thresholds
+- **Camera parameters**: duration values, easing function selection (not the functions themselves)
+- **New features**: photo carousel, terrain search, comparison panel (as separate components)
+- **New routes**: add JSON files + register in routes.ts
+
+### Development Principle
+
+**Extend content systems, not rendering infrastructure.**
+
+If a feature appears to require modifying protected infrastructure:
+1. STOP
+2. Explain why modification is necessary
+3. Explain risks involved
+4. Propose alternative solutions
+5. Wait for approval
 - **4** type definition files in `types/`
