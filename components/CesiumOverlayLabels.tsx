@@ -1,7 +1,7 @@
 "use client";
 
 import { labelManager, type CinematicLabel } from "@/lib/cinematic-labels";
-import type { CameraState } from "@/components/CesiumMap";
+import type { CesiumMapHandle, CameraState } from "@/components/CesiumMap";
 import type { TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -14,8 +14,7 @@ interface ScreenLabel {
 }
 
 interface CesiumOverlayLabelsProps {
-  projectToScreen: ((lat: number, lon: number) => { x: number; y: number } | null) | null;
-  cameraState: CameraState | null;
+  mapRef: React.RefObject<CesiumMapHandle | null>;
   onSelectTerrain?: (terrain: TerrainPoint) => void;
   terrains?: TerrainPoint[];
   isRouteFlying?: boolean;
@@ -23,20 +22,10 @@ interface CesiumOverlayLabelsProps {
 
 /** 屏幕边缘安全距离（px） */
 const EDGE_MARGIN = 40;
-/** 标注最小间距（px）— 防重叠 */
+/** 标注最小间距（px） — 防重叠 */
 const MIN_LABEL_GAP = 60;
-/** 标注文本预估宽度（px） */
-const LABEL_WIDTH_ESTIMATE = 80;
-/** 标注文本预估高度（px） */
-const LABEL_HEIGHT_ESTIMATE = 24;
-
-/**
- * 将相机高度映射到缩放级别 (1-20)
- * 已在 CesiumMap 中实现，这里作为 fallback
- */
-function altitudeToZoom(altitude: number): number {
-  return Math.max(1, Math.min(20, Math.round(20 - Math.log2(altitude / 50))));
-}
+/** 轮询间隔（ms） */
+const POLL_INTERVAL_MS = 500;
 
 /**
  * 计算边缘透明度 — 越靠近边缘越透明
@@ -55,21 +44,17 @@ function edgeFade(x: number, y: number, canvasW: number, canvasH: number): numbe
 
 /**
  * 简单的网格碰撞检测 — 防止标签重叠
- * 按优先级排序后，逐个放入网格，跳过重叠的低优先级标签
  */
 function resolveOverlaps(labels: ScreenLabel[]): ScreenLabel[] {
   const grid = new Set<string>();
   const result: ScreenLabel[] = [];
 
-  // 已按优先级降序排列
   for (const sl of labels) {
-    // 将坐标量化到网格
     const gx = Math.round(sl.x / MIN_LABEL_GAP);
     const gy = Math.round(sl.y / MIN_LABEL_GAP);
     const key = `${gx},${gy}`;
 
     if (grid.has(key)) {
-      // 该网格已被更高优先级标签占用 → 隐藏
       result.push({ ...sl, visibility: 0 });
     } else {
       grid.add(key);
@@ -81,44 +66,49 @@ function resolveOverlaps(labels: ScreenLabel[]): ScreenLabel[] {
 }
 
 export default function CesiumOverlayLabels({
-  projectToScreen,
-  cameraState,
+  mapRef,
   onSelectTerrain,
   terrains = [],
   isRouteFlying = false,
 }: CesiumOverlayLabelsProps) {
   const [screenLabels, setScreenLabels] = useState<ScreenLabel[]>([]);
-  const canvasSizeRef = useRef({ w: 0, h: 0 });
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const updateLabels = useCallback(() => {
-    if (!projectToScreen) {
+    const handle = mapRef.current;
+    if (!handle) {
       setScreenLabels([]);
       return;
     }
 
-    const zoomLevel = cameraState?.zoomLevel ?? 10;
+    const cameraState = handle.getCameraState();
+    if (!cameraState) {
+      setScreenLabels([]);
+      return;
+    }
+
+    const zoomLevel = cameraState.zoomLevel;
     const labels = labelManager.getVisibleLabels(zoomLevel);
     const result: ScreenLabel[] = [];
 
-    // 获取画布尺寸（用于边缘检测）
+    // 获取画布尺寸
     const canvas = document.querySelector(".cesium-widget canvas") as HTMLCanvasElement | null;
     const canvasW = canvas?.width ?? window.innerWidth;
     const canvasH = canvas?.height ?? window.innerHeight;
-    canvasSizeRef.current = { w: canvasW, h: canvasH };
 
     for (const label of labels) {
-      const pos = projectToScreen(label.position.lat, label.position.lon);
+      const pos = handle.projectToScreen(label.position.lat, label.position.lon);
       if (!pos) continue;
 
-      // 边缘检测 — 超出安全区域直接跳过
+      // 边缘检测
       if (pos.x < -EDGE_MARGIN || pos.y < -EDGE_MARGIN ||
           pos.x > canvasW + EDGE_MARGIN || pos.y > canvasH + EDGE_MARGIN) {
         continue;
       }
 
-      // 计算边缘淡出透明度
+      // 边缘淡出
       const fade = edgeFade(pos.x, pos.y, canvasW, canvasH);
-      if (fade < 0.05) continue; // 几乎不可见则跳过
+      if (fade < 0.05) continue;
 
       result.push({
         label,
@@ -128,16 +118,25 @@ export default function CesiumOverlayLabels({
       });
     }
 
-    // 按优先级排序后碰撞检测
+    // 碰撞检测
     result.sort((a, b) => b.label.priority - a.label.priority);
     const resolved = resolveOverlaps(result);
 
     setScreenLabels(resolved);
-  }, [projectToScreen, cameraState]);
+  }, [mapRef]);
 
-  // 相机变化时更新标签
+  // 500ms 轮询 — 不触发 React 重渲染风暴
   useEffect(() => {
+    // 首次立即更新
     updateLabels();
+
+    intervalRef.current = setInterval(updateLabels, POLL_INTERVAL_MS);
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
   }, [updateLabels]);
 
   // 航线飞行时隐藏标签

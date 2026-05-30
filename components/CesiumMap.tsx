@@ -51,8 +51,6 @@ export type TerrainMode = "world" | "ellipsoid";
 interface CesiumMapProps {
   onReady?: () => void;
   onTerrainMode?: (mode: TerrainMode) => void;
-  /** 相机变化回调（节流） */
-  onCameraChange?: (state: CameraState) => void;
 }
 
 /** 飞机舷窗俯角 — 更低角度，模拟真实客机窗口 */
@@ -109,7 +107,7 @@ function viewHeightForTerrain(
 }
 
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
-  function CesiumMap({ onReady, onTerrainMode, onCameraChange }, ref) {
+  function CesiumMap({ onReady, onTerrainMode }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
@@ -435,32 +433,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
           });
           resizeObserver.observe(containerRef.current);
-
-          // 相机变化监听 — 节流驱动标签更新
-          if (onCameraChange) {
-            let lastEmit = 0;
-            const THROTTLE_MS = 150;
-            const handler = () => {
-              const now = Date.now();
-              if (now - lastEmit < THROTTLE_MS) return;
-              lastEmit = now;
-              const v = viewerRef.current;
-              const C = cesiumRef.current;
-              if (!v || !C || v.isDestroyed()) return;
-              try {
-                const carto = C.Cartographic.fromCartesian(v.camera.position);
-                const altitude = carto.height;
-                const lon = C.Math.toDegrees(carto.longitude);
-                const lat = C.Math.toDegrees(carto.latitude);
-                const zoomLevel = Math.max(1, Math.min(20, Math.round(20 - Math.log2(altitude / 50))));
-                onCameraChange({ altitude, zoomLevel, lon, lat });
-              } catch { /* ignore */ }
-            };
-            viewer.camera.changed.addEventListener(handler);
-            viewer.camera.moveEnd.addEventListener(handler);
-            // 初始触发一次
-            handler();
-          }
 
           onTerrainMode?.(terrainMode);
           setStatus("ready");

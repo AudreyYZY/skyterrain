@@ -3,7 +3,6 @@
 import CesiumMap, {
   type CesiumMapHandle,
   type TerrainMode,
-  type CameraState,
 } from "@/components/CesiumMap";
 import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
 import FlightControls from "@/components/FlightControls";
@@ -72,8 +71,6 @@ export default function ExplorerApp() {
   const [isFlyover, setIsFlyover] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
-  const [mapReady, setMapReady] = useState(false);
-  const [cameraState, setCameraState] = useState<CameraState | null>(null);
 
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
@@ -428,14 +425,11 @@ export default function ExplorerApp() {
         <CesiumMap
           ref={mapRef}
           onTerrainMode={setTerrainMode}
-          onReady={() => setMapReady(true)}
-          onCameraChange={setCameraState}
         />
         {/* Spatial awareness labels — cinematic map annotations */}
         {mode === "explore" && (
           <CesiumOverlayLabels
-            projectToScreen={mapRef.current?.projectToScreen ?? null}
-            cameraState={cameraState}
+            mapRef={mapRef}
             terrains={allTerrains}
             isRouteFlying={isRouteFlying}
             onSelectTerrain={handleSelectTerrain}
