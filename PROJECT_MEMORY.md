@@ -169,14 +169,14 @@ Urumqi, Kashgar, Hotan, Turpan
 - `StructuredLesson` renders observation as accent-line section
 
 ### Phase 13 — Cinematic Label Lifecycle
-- Camera-driven label updates (150ms throttle on `camera.changed` + `camera.moveEnd`)
+- 500ms `setInterval` polling via `getCameraState()` imperative handle (no React re-renders)
 - `CameraState` interface (altitude, zoomLevel, lon, lat) exposed from CesiumMap
 - Zoom-level visibility: 3 priority tiers (90/70/50) filtered by zoom level
 - Edge fade: labels near screen edge fade out via `edgeFade()` function
 - Overlap prevention: grid-based collision detection (60px cells, priority wins)
 - CSS transitions: `opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1)`
 - `getCameraState()` method on CesiumMapHandle
-- Replaced 500ms `setInterval` polling with camera-event-driven updates
+- **No `camera.changed` listener** — was removed to fix render regression (caused 60fps React re-render storm)
 
 ### Phase 12 — Terrain Label Interaction System
 - Fixed `async` inside `new Promise()` anti-pattern in `flyToTerrainAndWait`

@@ -4,6 +4,92 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Fix: Cesium Render Regression After Phase 2
+
+### Root Cause
+
+**`camera.changed` event → React re-render storm → Cesium WebGL starvation**
+
+The `camera.changed` event in CesiumJS fires on **every animation frame** (~60fps). When hooked to `setCameraState` (React state), this caused:
+
+1. 60 `setCameraState` calls per second
+2. Each triggers full ExplorerApp re-render
+3. React reconciliation competes with Cesium WebGL for main thread
+4. Cesium's `requestRender()` misses its frame → black canvas
+
+**Evidence:** Commit `a641d92` explicitly removed `camera.changed` for this exact reason (documented in AI_DEV_LOG.md). Commit `4f6ea19` re-added it with only a 150ms throttle — insufficient to prevent the storm.
+
+### Fix Applied
+
+**Strategy:** Remove `camera.changed` entirely. Replace camera-driven React state with 500ms `setInterval` polling via imperative handle.
+
+**CesiumMap.tsx:**
+- Removed `onCameraChange` prop from interface and component
+- Removed entire `camera.changed` + `camera.moveEnd` listener block
+- `getCameraState()` remains on imperative handle for polling
+
+**ExplorerApp.tsx:**
+- Removed `cameraState` state (`useState<CameraState | null>`)
+- Removed `mapReady` state (no longer needed)
+- Removed `onCameraChange={setCameraState}` from CesiumMap usage
+- Removed `cameraState={cameraState}` from CesiumOverlayLabels usage
+- Now passes `mapRef` directly to CesiumOverlayLabels
+
+**CesiumOverlayLabels.tsx:**
+- Removed `cameraState` prop
+- Added `mapRef` prop (`React.RefObject<CesiumMapHandle | null>`)
+- Replaced `useEffect([cameraState])` with `setInterval(updateLabels, 500)`
+- `updateLabels` now calls `mapRef.current.getCameraState()` imperatively
+- No React re-renders triggered by camera movement
+
+### Why This Fixes the Black Screen
+
+| Before (broken) | After (fixed) |
+|-----------------|---------------|
+| `camera.changed` at 60fps | `setInterval` at 2fps (500ms) |
+| Each event → `setCameraState` → React re-render | Polling reads camera directly, no state updates |
+| React reconciliation blocks Cesium WebGL | React and Cesium run independently |
+| Black screen during animation | Stable rendering |
+
+### Architecture After Fix
+
+```
+CesiumMap (no camera event listeners)
+├── getCameraState() — imperative, reads camera.position directly
+└── projectToScreen() — imperative, projects lat/lon to screen
+
+ExplorerApp (no cameraState state)
+├── mapRef = useRef<CesiumMapHandle>
+└── CesiumOverlayLabels(mapRef={mapRef})
+
+CesiumOverlayLabels (polling, no React re-renders from camera)
+├── setInterval(500ms) → updateLabels()
+├── updateLabels():
+│   ├── mapRef.current.getCameraState() → zoomLevel
+│   ├── labelManager.getVisibleLabels(zoomLevel)
+│   ├── mapRef.current.projectToScreen(lat, lon) → {x, y}
+│   ├── edgeFade(x, y) → opacity
+│   ├── resolveOverlaps() → grid collision
+│   └── setScreenLabels(resolved) — ONE React state update per 500ms
+└── Render with CSS opacity transitions
+```
+
+### Lessons Learned
+
+1. **Never hook `camera.changed` to React state** — it fires at 60fps, causing re-render storms
+2. **Use `camera.moveEnd` for one-shot events** — fires once when camera stops
+3. **Use polling for continuous tracking** — `setInterval` with imperative reads avoids React coupling
+4. **Cesium WebGL and React reconciliation are adversarial** — both want the main thread; avoid coupling them
+5. **150ms throttle is insufficient** — even 6-7 re-renders/second can starve WebGL during animation
+
+### Known Remaining Issues
+
+- Labels update every 500ms (not frame-perfect) — acceptable for documentary pacing
+- `getCameraState()` and `projectToScreen()` are called per-label per-tick — could cache camera state per tick
+- `document.querySelector(".cesium-widget canvas")` in `updateLabels` — could be cached in a ref
+
+---
+
 ## Phase 3: Airplane Observation Education
 
 ### Problem

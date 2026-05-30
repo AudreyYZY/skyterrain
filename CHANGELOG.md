@@ -4,6 +4,45 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Fix: Cesium Render Regression After Phase 2
+
+**Status:** Completed
+
+### Problem
+After Phase 2 (Cinematic Label Lifecycle), the Cesium globe went black — WebGL canvas stopped rendering.
+
+### Root Cause
+`camera.changed` event fired on every animation frame (~60fps). Each event called `onCameraChange` → `setCameraState` → full React re-render of ExplorerApp + children. This competed with Cesium's WebGL render loop for main thread time, causing render starvation.
+
+### Fix
+- **Removed** `camera.changed` listener entirely from CesiumMap
+- **Removed** `onCameraChange` prop from CesiumMap
+- **Removed** `cameraState` React state from ExplorerApp
+- **Replaced** camera-driven updates with 500ms `setInterval` polling
+- CesiumOverlayLabels now polls `getCameraState()` via imperative handle — no React re-renders
+
+### Why This Works
+- `setInterval` runs outside React's reconciliation cycle
+- `getCameraState()` reads Cesium camera position directly (no state)
+- Labels update every 500ms — smooth enough for documentary pacing
+- Cesium's WebGL render loop is no longer interrupted by React
+
+### Files Modified
+- `components/CesiumMap.tsx` — Removed `onCameraChange` prop, camera event listeners
+- `components/ExplorerApp.tsx` — Removed `cameraState` state, `mapReady` state
+- `components/CesiumOverlayLabels.tsx` — Rewritten to use 500ms polling via `mapRef`
+
+### Lessons Learned
+- `camera.changed` in CesiumJS fires at ~60fps — never hook it to React state
+- Use `camera.moveEnd` for one-shot events, or polling for continuous tracking
+- Cesium WebGL rendering and React reconciliation compete for main thread — avoid coupling them
+
+### Known Remaining Issues
+- Labels update every 500ms (not frame-perfect) — acceptable for documentary pacing
+- `getCameraState()` is called twice per tick (once for camera state, once per label projection) — could be optimized
+
+---
+
 ## Phase 3 — Airplane Observation Education
 
 **Status:** Completed
