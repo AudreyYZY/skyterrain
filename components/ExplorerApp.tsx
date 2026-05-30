@@ -3,6 +3,7 @@
 import CesiumMap, {
   type CesiumMapHandle,
   type TerrainMode,
+  type CameraState,
 } from "@/components/CesiumMap";
 import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
 import FlightControls from "@/components/FlightControls";
@@ -72,24 +73,28 @@ export default function ExplorerApp() {
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
   const [mapReady, setMapReady] = useState(false);
+  const [cameraState, setCameraState] = useState<CameraState | null>(null);
 
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
     const layerId = "terrain-labels";
     labelManager.createLayer(layerId, "地形标注", 1);
-    // 只为高优先级地标创建标注
-    const majorTerrains = [
-      "tianshan", "kunlun", "karakoram", "altai",
-      "taklamakan", "gurbantunggut",
-      "kanas", "sayram", "lop-nur",
-      "ili-valley", "tarim-river",
-      "kashgar", "turpan-city",
-      "flaming-mountains", "bayanbulak",
-    ];
+
+    // 最高优先级 — 远景即可看到
+    const primary = ["tianshan", "taklamakan", "kunlun", "kashgar", "ili-valley"];
+    // 次优先级 — 中景可见
+    const secondary = ["altai", "karakoram", "pamir", "kanas", "sayram", "lop-nur", "turpan-city"];
+    // 较低优先级 — 近景可见
+    const tertiary = ["gurbantunggut", "tarim-river", "flaming-mountains", "bayanbulak"];
+
     for (const terrain of allTerrains) {
-      if (majorTerrains.includes(terrain.id)) {
+      let priority = 0;
+      if (primary.includes(terrain.id)) priority = 90;
+      else if (secondary.includes(terrain.id)) priority = 70;
+      else if (tertiary.includes(terrain.id)) priority = 50;
+      if (priority > 0) {
         labelManager.addLabel(layerId, createTerrainLabel(
-          terrain.id, terrain.name, terrain.lat, terrain.lon, 60
+          terrain.id, terrain.name, terrain.lat, terrain.lon, priority
         ));
       }
     }
@@ -424,11 +429,13 @@ export default function ExplorerApp() {
           ref={mapRef}
           onTerrainMode={setTerrainMode}
           onReady={() => setMapReady(true)}
+          onCameraChange={setCameraState}
         />
         {/* Spatial awareness labels — cinematic map annotations */}
         {mode === "explore" && (
           <CesiumOverlayLabels
             projectToScreen={mapRef.current?.projectToScreen ?? null}
+            cameraState={cameraState}
             terrains={allTerrains}
             isRouteFlying={isRouteFlying}
             onSelectTerrain={handleSelectTerrain}

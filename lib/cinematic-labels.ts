@@ -121,10 +121,12 @@ export class CinematicLabelManager {
       case "always":
         return true;
       case "zoom-adaptive":
-        // 在高缩放级别显示更多标注
-        if (zoomLevel !== undefined && zoomLevel < 8) {
-          return label.priority >= 80; // 只显示高优先级
-        }
+        if (zoomLevel === undefined) return true;
+        // 远景（1-6）：只显示最高优先级地标
+        if (zoomLevel <= 6) return label.priority >= 80;
+        // 中景（7-12）：显示主要地标
+        if (zoomLevel <= 12) return label.priority >= 60;
+        // 近景（13+）：显示所有标注
         return true;
       case "focus-only":
         return label.terrainId === this.focusedTerrainId;

@@ -4,6 +4,83 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase 2 — Cinematic Label Lifecycle
+
+**Status:** Completed
+
+### Problem
+- Labels sometimes disappeared or didn't update with camera movement
+- No zoom-level visibility rules — all labels shown regardless of distance
+- No overlap prevention — labels could stack on top of each other
+- 500ms polling interval felt static, not camera-aware
+- No edge fade — labels rendered half off-screen
+
+### Architecture: Camera-Driven Label System
+
+```
+CesiumMap
+├── camera.changed (150ms throttle) → onCameraChange(CameraState)
+├── camera.moveEnd → onCameraChange(CameraState)
+└── getCameraState() → { altitude, zoomLevel, lon, lat }
+
+ExplorerApp
+├── cameraState = useState<CameraState>
+├── onCameraChange={setCameraState}
+└── CesiumOverlayLabels(cameraState={cameraState})
+
+CesiumOverlayLabels
+├── useEffect([cameraState]) → updateLabels()
+├── labelManager.getVisibleLabels(zoomLevel) → filtered by zoom
+├── projectToScreen(lat, lon) → { x, y }
+├── edgeFade(x, y, canvasW, canvasH) → 0-1 opacity
+├── resolveOverlaps(labels) → hide low-priority overlapping labels
+└── Render with CSS opacity transitions
+```
+
+### Changes
+
+**CesiumMap.tsx:**
+- Added `CameraState` interface (altitude, zoomLevel, lon, lat)
+- Added `getCameraState()` to imperative handle
+- Added `onCameraChange` prop with 150ms throttled listener
+- Listens to both `camera.changed` and `camera.moveEnd`
+
+**CesiumOverlayLabels.tsx:**
+- Complete rewrite: camera-driven updates instead of 500ms polling
+- **Zoom-level visibility**: `getVisibleLabels(zoomLevel)` filters labels by zoom
+  - Zoom 1-6 (far): only priority ≥ 80 (天山, 塔克拉玛干, 昆仑...)
+  - Zoom 7-12 (medium): priority ≥ 60
+  - Zoom 13+ (close): all labels
+- **Edge fade**: labels near screen edge fade out via `edgeFade()` function
+- **Overlap prevention**: `resolveOverlaps()` uses grid-based collision detection
+  - Labels quantized to 60px grid cells
+  - Higher priority labels win; losers get visibility=0
+- **CSS transitions**: `opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1)` for smooth fade
+- **Enhanced text shadow**: `0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3)` for readability
+
+**lib/cinematic-labels.ts:**
+- Improved `shouldShowLabel` zoom filtering:
+  - Zoom ≤ 6: priority ≥ 80
+  - Zoom ≤ 12: priority ≥ 60
+  - Zoom 13+: all labels
+
+**ExplorerApp.tsx:**
+- Added `cameraState` state
+- Passes `onCameraChange={setCameraState}` to CesiumMap
+- Passes `cameraState={cameraState}` to CesiumOverlayLabels
+- Differentiated label priorities:
+  - Primary (90): 天山, 塔克拉玛干, 昆仑, 喀什, 伊犁河谷
+  - Secondary (70): 阿尔泰, 喀喇昆仑, 帕米尔, 喀纳斯, 赛里木, 罗布泊, 吐鲁番
+  - Tertiary (50): 古尔班通古特, 塔里木河, 火焰山, 巴音布鲁克
+
+### Performance Impact
+- **Before**: 500ms `setInterval` polling, all labels rendered every tick
+- **After**: 150ms throttled camera events, labels only update when camera moves
+- Overlap detection is O(n) grid lookup — negligible for 15 labels
+- CSS `will-change: opacity, left, top` hints for GPU acceleration
+
+---
+
 ## Phase 1 — Terrain Label Interaction System
 
 **Status:** Completed

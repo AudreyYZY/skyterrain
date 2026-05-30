@@ -159,6 +159,16 @@ Urumqi, Kashgar, Hotan, Turpan
 - `POST_NARRATION_DWELL_MS = 2000` — digest pause after narration
 - `onWaypointArrival` is now `await`ed in CesiumMap flyRoute
 
+### Phase 13 — Cinematic Label Lifecycle
+- Camera-driven label updates (150ms throttle on `camera.changed` + `camera.moveEnd`)
+- `CameraState` interface (altitude, zoomLevel, lon, lat) exposed from CesiumMap
+- Zoom-level visibility: 3 priority tiers (90/70/50) filtered by zoom level
+- Edge fade: labels near screen edge fade out via `edgeFade()` function
+- Overlap prevention: grid-based collision detection (60px cells, priority wins)
+- CSS transitions: `opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1)`
+- `getCameraState()` method on CesiumMapHandle
+- Replaced 500ms `setInterval` polling with camera-event-driven updates
+
 ### Phase 12 — Terrain Label Interaction System
 - Fixed `async` inside `new Promise()` anti-pattern in `flyToTerrainAndWait`
 - `cameraAt()` now runs before Promise creation via `.then()` chain
