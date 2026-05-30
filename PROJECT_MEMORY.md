@@ -246,12 +246,25 @@ Urumqi, Kashgar, Hotan, Turpan
 7. **Keyboard navigation** for accessibility
 8. **Remove dead code** (`speak` wrapper, unused imports)
 
+## Architecture Decision Records
+
+See `docs/ADR.md` for detailed architectural decisions, context, alternatives considered, and tradeoffs.
+
+Key decisions:
+- ADR-001: camera.changed must never drive React state (black screen risk)
+- ADR-002: Use 500ms polling for label updates (decoupled from Cesium frame rate)
+- ADR-003: Narration queue must be serial (prevent audio overlap)
+- ADR-004: Route narration cannot block flight system (continuous flight)
+- ADR-005: Protected infrastructure policy (prevent regression cycles)
+- ADR-006: Geography education first (content over complexity)
+
 ## File Count Summary
 
 - **32** terrain JSON files in `data/`
 - **3** route JSON files in `data/routes/`
 - **13** React components in `components/`
 - **15** utility modules in `lib/`
+- **1** architecture doc in `docs/`
 
 ---
 

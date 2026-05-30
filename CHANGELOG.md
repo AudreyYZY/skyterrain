@@ -43,6 +43,28 @@ After Phase 2 (Cinematic Label Lifecycle), the Cesium globe went black — WebGL
 
 ---
 
+## Architecture Decision Records
+
+**Status:** Completed
+
+### Added
+- `docs/ADR.md` — 6 architecture decision records documenting key technical decisions
+
+### Decisions Documented
+| ADR | Title | Key Insight |
+|-----|-------|-------------|
+| 001 | Avoid camera.changed → React State | camera.changed fires at 60fps — never hook to React state |
+| 002 | Use Polling For Label Updates | 500ms setInterval decoupled from Cesium frame rate |
+| 003 | Narration Queue Must Be Serial | Prevents audio overlap and UI desync |
+| 004 | Route Narration Cannot Block Flight | Coordinated non-blocking for continuous flight |
+| 005 | Protected Infrastructure Policy | Prevents regression cycles in Cesium ↔ React |
+| 006 | Geography Education First | Content over complexity |
+
+### Updated
+- `PROJECT_MEMORY.md` — Added reference to ADR.md
+
+---
+
 ## Phase 3 — Airplane Observation Education
 
 **Status:** Completed
