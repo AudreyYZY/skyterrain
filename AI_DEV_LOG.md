@@ -4,6 +4,106 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Phase 1: Terrain Label Interaction System
+
+### Problem
+Clicking a terrain label on the map caused a runtime error. Camera didn't fly, terrain selection wasn't synchronized with sidebar/right panel.
+
+### Root Cause: `async` inside `new Promise()` anti-pattern
+
+**`flyToTerrainAndWait`** had:
+```ts
+new Promise<void>(async (resolve) => {
+  const dest = await cameraAt(...);  // if this throws...
+  viewer.camera.flyTo({ ... });      // ...this never runs
+  // Promise never resolves or rejects
+})
+```
+
+If `cameraAt` threw inside the `async` callback, the throw happened in the async function's context, NOT in the Promise constructor. The outer Promise **never settled** — it neither resolved nor rejected. This caused:
+- Unhandled promise rejection (runtime error)
+- `handleSelectTerrain` hanging forever at `await flyToTerrainAndWait`
+- Camera not flying
+- Narration not starting
+
+### Fix Applied
+
+**CesiumMap.tsx — `flyToTerrainAndWait`:**
+- Removed `async` from `new Promise()` callback
+- `cameraAt()` is now called BEFORE creating the Promise, using `.then()` chain
+- If `cameraAt` rejects, the outer Promise rejects cleanly
+- Added `viewer.isDestroyed()` guard inside the Promise
+- Added diagnostic logging for fly start/complete/cancel
+
+**CesiumMap.tsx — `flyToTerrain`:**
+- Replaced `import("cesium")` with `cesiumRef.current` (already cached)
+- Added `.catch()` for error handling
+
+**ExplorerApp.tsx — `handleSelectTerrain`:**
+- Wrapped entire body in try/catch
+- Errors now set `error` state instead of becoming unhandled rejections
+- Added diagnostic logging for terrain selection, fly start/complete, narration start/complete
+- Changed `labelManager.clear()` to `labelManager.removeLayer("explore-labels")` — preserves the 15 major terrain landmarks
+
+**cinematic-labels.ts:**
+- Added `removeLayer(id)` method to `CinematicLabelManager`
+
+### Interaction Architecture (after fix)
+
+All three terrain selection paths now share ONE flow:
+
+```
+Path 1: Sidebar click
+  FlightControls.onClick → handleSelectTerrain(terrain)
+
+Path 2: Map label click
+  CesiumOverlayLabels.onClick → handleSelectTerrain(terrain)
+
+Path 3: Route arrival
+  CesiumMap.flyRoute → onWaypointArrival → narrateWaypoint
+  (separate flow, intentionally — route has its own sequencing)
+```
+
+**handleSelectTerrain flow:**
+```
+1. Cancel narration + stop flight
+2. Update label layers (preserve terrain-labels, clear explore-labels)
+3. try:
+   a. await flyToTerrainAndWait → camera flies (Promise resolves on complete/cancel)
+   b. await showTerrainLesson → narration plays
+   c. await dwell(2s) → user digests
+4. catch: set error state
+```
+
+### Diagnostic Logging
+
+Console output for a successful terrain selection:
+```
+[ExplorerApp] handleSelectTerrain: tianshan 天山
+[ExplorerApp] fly start: tianshan
+[CesiumMap] flyToTerrainAndWait: tianshan 天山
+[CesiumMap] flyTo complete: tianshan
+[ExplorerApp] fly complete: tianshan
+[ExplorerApp] narration start: tianshan
+[ExplorerApp] narration complete: tianshan
+```
+
+If an error occurs:
+```
+[ExplorerApp] handleSelectTerrain error: Error: ...
+[CesiumMap] flyToTerrain failed: Error: ...
+```
+
+### Files Modified
+
+| File | Change |
+|------|--------|
+| `components/CesiumMap.tsx` | Fixed promise anti-pattern in `flyToTerrainAndWait`, fixed `flyToTerrain` to use `cesiumRef`, added diagnostic logging |
+| `components/ExplorerApp.tsx` | Added try/catch to `handleSelectTerrain`, added diagnostic logging, use `removeLayer` instead of `clear` |
+| `lib/cinematic-labels.ts` | Added `removeLayer()` method |
+
+---
+
 ## Session: Cesium Initialization Regression Fix
 
 ### Symptoms

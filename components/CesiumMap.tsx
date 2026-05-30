@@ -143,58 +143,59 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
       flyToTerrain(terrain: TerrainPoint) {
         const viewer = viewerRef.current;
-        if (!viewer) return;
+        const Cesium = cesiumRef.current;
+        if (!viewer || !Cesium) return;
 
         flightCancelledRef.current = true;
         viewer.camera.cancelFlight();
         flightCancelledRef.current = false;
 
-        void import("cesium").then(async (Cesium) => {
-          const height = viewHeightForTerrain(terrain, terrain.cameraHeight);
-          const dest = await cameraAt(
-            Cesium,
-            viewer,
-            terrain.lat,
-            terrain.lon,
-            height,
-            terrain.elevation,
-            heightCacheRef.current
-          );
-          viewer.camera.flyTo({
-            destination: dest,
-            duration: 7,
-            easingFunction: quarticEaseOut,
-            orientation: {
-              heading: 0,
-              pitch: Cesium.Math.toRadians(WINDOW_PITCH_DEG),
-              roll: Cesium.Math.toRadians(CRUISE_ROLL_DEG),
-            },
+        cameraAt(Cesium, viewer, terrain.lat, terrain.lon, viewHeightForTerrain(terrain, terrain.cameraHeight), terrain.elevation, heightCacheRef.current)
+          .then((dest) => {
+            if (viewer.isDestroyed()) return;
+            viewer.camera.flyTo({
+              destination: dest,
+              duration: 7,
+              easingFunction: quarticEaseOut,
+              orientation: {
+                heading: 0,
+                pitch: Cesium.Math.toRadians(WINDOW_PITCH_DEG),
+                roll: Cesium.Math.toRadians(CRUISE_ROLL_DEG),
+              },
+            });
+            viewer.scene.requestRender();
+          })
+          .catch((err) => {
+            console.error("[CesiumMap] flyToTerrain failed:", err);
           });
-          viewer.scene.requestRender();
-        });
       },
 
       flyToTerrainAndWait(terrain: TerrainPoint): Promise<void> {
         const viewer = viewerRef.current;
-        if (!viewer) return Promise.resolve();
+        const Cesium = cesiumRef.current;
+        if (!viewer || !Cesium) return Promise.resolve();
 
         flightCancelledRef.current = true;
         viewer.camera.cancelFlight();
         flightCancelledRef.current = false;
 
-        return import("cesium").then(
-          (Cesium) =>
-            new Promise<void>(async (resolve) => {
-              const height = viewHeightForTerrain(terrain, terrain.cameraHeight);
-              const dest = await cameraAt(
-                Cesium,
-                viewer,
-                terrain.lat,
-                terrain.lon,
-                height,
-                terrain.elevation,
-                heightCacheRef.current
-              );
+        console.log("[CesiumMap] flyToTerrainAndWait:", terrain.id, terrain.name);
+
+        return cameraAt(
+          Cesium,
+          viewer,
+          terrain.lat,
+          terrain.lon,
+          viewHeightForTerrain(terrain, terrain.cameraHeight),
+          terrain.elevation,
+          heightCacheRef.current
+        ).then(
+          (dest) =>
+            new Promise<void>((resolve) => {
+              if (viewer.isDestroyed()) {
+                resolve();
+                return;
+              }
               viewer.camera.flyTo({
                 destination: dest,
                 duration: 7,
@@ -204,8 +205,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                   pitch: Cesium.Math.toRadians(WINDOW_PITCH_DEG),
                   roll: Cesium.Math.toRadians(CRUISE_ROLL_DEG),
                 },
-                complete: () => resolve(),
-                cancel: () => resolve(),
+                complete: () => {
+                  console.log("[CesiumMap] flyTo complete:", terrain.id);
+                  resolve();
+                },
+                cancel: () => {
+                  console.log("[CesiumMap] flyTo cancelled:", terrain.id);
+                  resolve();
+                },
               });
               viewer.scene.requestRender();
             })

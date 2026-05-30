@@ -76,6 +76,11 @@ export class CinematicLabelManager {
     layer.labels.sort((a, b) => b.priority - a.priority);
   }
 
+  /** 移除整个图层 */
+  removeLayer(layerId: string): void {
+    this.layers.delete(layerId);
+  }
+
   /** 移除标注 */
   removeLabel(layerId: string, labelId: string): void {
     const layer = this.layers.get(layerId);

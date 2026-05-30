@@ -251,6 +251,8 @@ export default function ExplorerApp() {
 
   const handleSelectTerrain = useCallback(
     async (terrain: TerrainPoint): Promise<void> => {
+      console.log("[ExplorerApp] handleSelectTerrain:", terrain.id, terrain.name);
+
       // 取消正在进行的航线和叙述
       narrationCancelledRef.current = true;
       narrationQueue.cancel();
@@ -266,8 +268,8 @@ export default function ExplorerApp() {
       // 重置取消标志
       narrationCancelledRef.current = false;
 
-      // 更新标注层
-      labelManager.clear();
+      // 更新标注层 — 只清除探索层，保留地形标注层
+      labelManager.removeLayer("explore-labels");
       const layerId = "explore-labels";
       labelManager.createLayer(layerId, "探索标注", 5);
       labelManager.addLabel(layerId, createTerrainLabel(
@@ -275,14 +277,23 @@ export default function ExplorerApp() {
       ));
       labelManager.setFocusedTerrain(terrain.id);
 
-      // 1) 镜头飞到目标地貌，等待飞行动画完成
-      await (mapRef.current?.flyToTerrainAndWait(terrain) ?? Promise.resolve());
+      try {
+        // 1) 镜头飞到目标地貌，等待飞行动画完成
+        console.log("[ExplorerApp] fly start:", terrain.id);
+        await (mapRef.current?.flyToTerrainAndWait(terrain) ?? Promise.resolve());
+        console.log("[ExplorerApp] fly complete:", terrain.id);
 
-      // 2) 展示讲解并等待语音播放完毕
-      await showTerrainLesson(terrain);
+        // 2) 展示讲解并等待语音播放完毕
+        console.log("[ExplorerApp] narration start:", terrain.id);
+        await showTerrainLesson(terrain);
+        console.log("[ExplorerApp] narration complete:", terrain.id);
 
-      // 3) 停留片刻，让用户看完地形
-      await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
+        // 3) 停留片刻，让用户看完地形
+        await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
+      } catch (err) {
+        console.error("[ExplorerApp] handleSelectTerrain error:", err);
+        setError(err instanceof Error ? err.message : "地形选择失败");
+      }
     },
     [showTerrainLesson]
   );

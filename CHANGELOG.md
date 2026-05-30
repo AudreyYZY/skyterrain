@@ -4,6 +4,45 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase 1 — Terrain Label Interaction System
+
+**Status:** Completed
+
+### Problem
+- Clicking terrain labels caused runtime error (unhandled promise rejection)
+- Camera didn't fly to selected terrain
+- Terrain selection not synchronized with sidebar/right panel
+- `flyToTerrainAndWait` had `async` inside `new Promise()` anti-pattern
+
+### Root Cause
+`new Promise(async (resolve) => { ... })` — if `cameraAt()` threw inside the async callback, the outer Promise never settled. `handleSelectTerrain` hung forever at the await.
+
+### Fix
+
+**CesiumMap.tsx:**
+- `flyToTerrainAndWait`: Removed `async` from Promise constructor. `cameraAt()` now runs before Promise creation via `.then()` chain
+- `flyToTerrain`: Uses `cesiumRef.current` instead of re-importing Cesium. Added `.catch()` error handling
+- Added `viewer.isDestroyed()` guards
+- Added diagnostic logging for fly start/complete/cancel
+
+**ExplorerApp.tsx:**
+- `handleSelectTerrain`: Wrapped in try/catch, errors set `error` state
+- Added diagnostic logging for terrain selection flow
+- Changed `labelManager.clear()` → `labelManager.removeLayer("explore-labels")` — preserves terrain landmarks
+
+**lib/cinematic-labels.ts:**
+- Added `removeLayer(id)` method
+
+### Interaction Architecture
+
+All paths converge on `handleSelectTerrain`:
+```
+Sidebar click → handleSelectTerrain → try: fly → narrate → dwell → catch: error
+Label click   → handleSelectTerrain → try: fly → narrate → dwell → catch: error
+```
+
+---
+
 ## Fix: Cesium Initialization Regression
 
 **Status:** Completed

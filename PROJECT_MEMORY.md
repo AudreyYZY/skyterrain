@@ -159,6 +159,14 @@ Urumqi, Kashgar, Hotan, Turpan
 - `POST_NARRATION_DWELL_MS = 2000` — digest pause after narration
 - `onWaypointArrival` is now `await`ed in CesiumMap flyRoute
 
+### Phase 12 — Terrain Label Interaction System
+- Fixed `async` inside `new Promise()` anti-pattern in `flyToTerrainAndWait`
+- `cameraAt()` now runs before Promise creation via `.then()` chain
+- `flyToTerrain` uses `cesiumRef.current` instead of re-importing Cesium
+- `handleSelectTerrain` wrapped in try/catch with diagnostic logging
+- `labelManager.removeLayer()` added — preserves terrain landmarks on terrain select
+- All terrain selection paths (sidebar, label click) converge on `handleSelectTerrain`
+
 ### Phase 11 — Information Architecture & UX Cleanup
 - Simplified sidebar: flat 7 categories (山脉, 湖泊, 沙漠, 盆地, 河谷, 景观, 城市)
 - Removed worldview hierarchy, GeographyComparison system, all unused types
@@ -206,8 +214,7 @@ Urumqi, Kashgar, Hotan, Turpan
 5. **Static knowledge data** — no dynamic retrieval
 6. **No offline support** — requires internet for TTS
 7. **No reduced-motion support** — animations ignore `prefers-reduced-motion`
-8. **`labelManager.clear()` in handleSelectTerrain** — clears all labels including the 15 major landmarks initialized on mount
-9. **`flyToTerrain` re-imports cesium** — uses `import("cesium")` instead of `cesiumRef.current` (minor perf)
+8. **`flyToTerrain`** — defined but never called externally (dead code, could remove)
 
 ## Next Recommended Priorities
 
