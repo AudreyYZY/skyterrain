@@ -12,6 +12,23 @@ export function estimateSpeechDurationSec(
   return Math.max(3, chars / 4.5 / rate);
 }
 
+/** 检测是否为 SSML 格式 */
+function isSSML(text: string): boolean {
+  return text.trim().startsWith("<speak");
+}
+
+/** 从 SSML 中提取纯文本（用于浏览器回退） */
+function stripSSML(ssml: string): string {
+  return ssml
+    .replace(/<break[^>]*\/>/g, " ")  // break → 空格
+    .replace(/<\/?p>/g, " ")           // p → 空格
+    .replace(/<\/?prosody[^>]*>/g, "") // prosody → 移除
+    .replace(/<\/?speak>/g, "")        // speak → 移除
+    .replace(/<[^>]+>/g, "")           // 其他标签 → 移除
+    .replace(/\s+/g, " ")              // 多空格 → 单空格
+    .trim();
+}
+
 function pickBrowserChineseVoice(): SpeechSynthesisVoice | null {
   if (typeof window === "undefined" || !window.speechSynthesis) return null;
 
@@ -42,8 +59,11 @@ function speakBrowserAndWait(text: string, rate = 0.92): Promise<void> {
     return Promise.resolve();
   }
 
+  // 浏览器 TTS 不支持 SSML，提取纯文本
+  const plainText = isSSML(text) ? stripSSML(text) : text;
+
   return new Promise((resolve) => {
-    const utterance = new SpeechSynthesisUtterance(text);
+    const utterance = new SpeechSynthesisUtterance(plainText);
     utterance.lang = "zh-CN";
     utterance.rate = rate;
     utterance.pitch = 1;

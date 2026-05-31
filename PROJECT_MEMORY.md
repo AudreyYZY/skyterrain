@@ -17,8 +17,8 @@ Users experience Xinjiang terrain from an airplane passenger perspective, with s
 - TypeScript 5.x
 - CesiumJS 1.141.0 (3D globe)
 - TailwindCSS 4.x
-- Edge TTS (edge-tts-universal 1.4.0)
-- OpenAI API 6.39.0
+- Edge TTS (edge-tts-universal 1.4.0) — SSML support, XiaoyiNeural default
+- OpenAI API 6.39.0 (mimo.ts — dead code, kept for future LLM narration)
 
 ## Architecture
 
@@ -158,6 +158,16 @@ Urumqi, Kashgar, Hotan, Turpan
 - `narrationCancelledRef` — prevents stale callbacks after user action
 - `POST_NARRATION_DWELL_MS = 2000` — digest pause after narration
 - `onWaypointArrival` is now `await`ed in CesiumMap flyRoute
+
+### Phase 4A — Narration Voice Upgrade & AI Mode Removal
+- **Default voice**: XiaoyiNeural (calmer, more documentary-style)
+- **SSML support**: `lessonToSSML()` generates SSML with `<break>` tags between sections
+- **Natural pauses**: 1.2s between narration sections, 0.8s between flyover cue and lesson
+- **Prosody**: `rate="slow" pitch="-2%"` for documentary pacing
+- **Browser fallback**: SSML stripped to plain text for `SpeechSynthesis`
+- **AI mode removed**: "AI" button replaced with "延伸阅读" (expandable local knowledge)
+- **Extended reading**: Shows `TerrainKnowledge` fields (terrain features, climate, history, culture, facts)
+- **Files**: `lib/lesson.ts`, `lib/speech.ts`, `lib/voice-preference.ts`, `app/api/tts/route.ts`, `components/NarrationPanel.tsx`, `components/ExplorerApp.tsx`
 
 ### Phase 14 — Airplane Observation Education
 - Added `observation?: string` to `TerrainLesson` interface (4th section)

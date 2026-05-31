@@ -4,6 +4,49 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase 4A — Narration Voice Upgrade & AI Mode Removal
+
+**Status:** Completed
+
+### Task A: Narration Voice Upgrade
+
+**Problem:** Narration sounded robotic, stiff, unnatural — too much "AI voice".
+
+**Solution:**
+- Changed default voice to `XiaoyiNeural` (calmer, more documentary-style)
+- Added SSML support for natural pauses and prosody
+- Slowed rate from `-5%` to `-18%`, lowered pitch from `+0Hz` to `-2Hz`
+- Section breaks: 1.2s pause between seeing/formation/history sections
+- Flyover-to-lesson transition: 0.8s pause
+- `prosody rate="slow" pitch="-2%"` wrapping for documentary pacing
+
+**Files Modified:**
+- `lib/voice-preference.ts` — Default voice: `XiaoyiNeural`
+- `lib/lesson.ts` — Added `lessonToSSML()`, `wrapSSML()`, `escapeSSML()`
+- `lib/speech.ts` — Added `isSSML()`, `stripSSML()` for browser fallback
+- `app/api/tts/route.ts` — Rate `-18%`, pitch `-2Hz`, default `XiaoyiNeural`
+- `components/ExplorerApp.tsx` — All speech calls use `lessonToSSML()`
+
+### Task B: Remove AI Mode, Add Extended Reading
+
+**Problem:** AI optimization button reduced content quality — LLM output less accurate than curated JSON data.
+
+**Solution:**
+- Removed `aiEnhancing` state and `enhanceLessonWithAi()` from ExplorerApp
+- Replaced "AI" button with "延伸阅读" toggle button
+- Extended reading shows local `TerrainKnowledge` data: terrain features, climate, history, culture, interesting facts
+- No API calls — all data is local JSON
+
+**Files Modified:**
+- `components/NarrationPanel.tsx` — Removed AI props, added expandable extended reading section
+- `components/ExplorerApp.tsx` — Removed AI state, function, and props
+
+### Architecture Notes
+- `lib/mimo.ts` and `app/api/narration/route.ts` are now dead code — kept for future LLM narration features
+- SSML is passed directly to Edge TTS; browser fallback strips SSML tags to plain text
+
+---
+
 ## Fix: Cesium Render Regression After Phase 2
 
 **Status:** Completed

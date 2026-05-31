@@ -2,7 +2,7 @@ import { EdgeTTS } from "edge-tts-universal";
 import { NextResponse } from "next/server";
 
 const MAX_CHARS = 6000;
-const DEFAULT_VOICE = "zh-CN-XiaoxiaoNeural";
+const DEFAULT_VOICE = "zh-CN-XiaoyiNeural";
 
 export async function POST(request: Request) {
   try {
@@ -15,9 +15,13 @@ export async function POST(request: Request) {
     }
 
     const clipped = text.slice(0, MAX_CHARS);
+
+    // 检测是否为 SSML 格式
+    const isSSML = clipped.trim().startsWith("<speak");
+
     const tts = new EdgeTTS(clipped, voice, {
-      rate: "-5%",
-      pitch: "+0Hz",
+      rate: "-18%",
+      pitch: "-2Hz",
     });
     const { audio } = await tts.synthesize();
     const buffer = Buffer.from(await audio.arrayBuffer());

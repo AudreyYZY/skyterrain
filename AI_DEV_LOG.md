@@ -4,6 +4,51 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Phase 4A — Narration Voice Upgrade & AI Mode Removal
+
+**Date:** 2026-05-30
+**Status:** Completed
+
+### What Was Done
+
+**Task A: Narration Voice Upgrade**
+- Default voice changed from `XiaoxiaoNeural` to `XiaoyiNeural` — calmer, less "news anchor" cadence
+- SSML support added to `lib/lesson.ts`:
+  - `lessonToSSML()` wraps sections in `<speak><prosody>` with `<break time="1200ms"/>` between sections
+  - `wrapSSML()` and `escapeSSML()` helpers for SSML generation
+- TTS API (`app/api/tts/route.ts`):
+  - Rate: `-5%` → `-18%` (slower, more deliberate)
+  - Pitch: `+0Hz` → `-2Hz` (slightly lower, warmer)
+  - Default voice: `XiaoyiNeural`
+- Browser fallback (`lib/speech.ts`):
+  - `isSSML()` detects SSML format
+  - `stripSSML()` extracts plain text for `SpeechSynthesis` (which doesn't support SSML)
+- ExplorerApp: all `speakText()` calls now use `lessonToSSML()` for SSML, `lessonToSpeech()` for plain text display
+
+**Task B: Remove AI Mode**
+- Removed `aiEnhancing` state from ExplorerApp
+- Removed `enhanceLessonWithAi()` function (called `/api/narration` → `lib/mimo.ts` → OpenAI API)
+- Removed `canEnhanceWithAi`, `onEnhanceWithAi`, `aiEnhancing` props from NarrationPanel
+- Added "延伸阅读" button to NarrationPanel — toggles expandable section showing `TerrainKnowledge` fields
+- Extended reading shows: terrain features, climate, history, culture, interesting facts
+- No API calls — all data is local JSON
+
+### Key Decisions
+- SSML preferred over plain text for Edge TTS (better prosody control)
+- Browser fallback strips SSML to plain text (no SSML support in SpeechSynthesis)
+- `lib/mimo.ts` and `/api/narration` kept as dead code — may be needed for future LLM narration
+- Extended reading uses existing `TerrainKnowledge` interface — no new data structures
+
+### Files Modified
+- `lib/voice-preference.ts` — Default voice, voice order
+- `lib/lesson.ts` — SSML generation functions
+- `lib/speech.ts` — SSML detection and stripping
+- `app/api/tts/route.ts` — Rate, pitch, default voice
+- `components/NarrationPanel.tsx` — Removed AI props, added extended reading
+- `components/ExplorerApp.tsx` — Removed AI state/function, updated speech calls
+
+---
+
 ## Fix: Cesium Render Regression After Phase 2
 
 ### Root Cause

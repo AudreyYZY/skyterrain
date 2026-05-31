@@ -5,6 +5,7 @@ import StructuredLesson from "@/components/StructuredLesson";
 import TerrainGlanceCards from "@/components/TerrainGlanceCards";
 import VoiceSelector from "@/components/VoiceSelector";
 import type { TerrainCards, TerrainKnowledge, TerrainLesson } from "@/types/terrain";
+import { useState } from "react";
 
 interface NarrationPanelProps {
   title: string;
@@ -12,12 +13,9 @@ interface NarrationPanelProps {
   cards: TerrainCards | null;
   lesson: TerrainLesson | null;
   knowledge?: TerrainKnowledge | null;
-  aiEnhancing?: boolean;
   error: string | null;
   isFlyover?: boolean;
   isRouteFlying?: boolean;
-  canEnhanceWithAi?: boolean;
-  onEnhanceWithAi?: () => void;
   onSpeak: () => void | Promise<void>;
   onStopSpeak: () => void;
   isSpeaking: boolean;
@@ -30,16 +28,15 @@ export default function NarrationPanel({
   cards,
   lesson,
   knowledge,
-  aiEnhancing = false,
   error,
   isFlyover,
   isRouteFlying,
-  canEnhanceWithAi,
-  onEnhanceWithAi,
   onSpeak,
   onStopSpeak,
   isSpeaking,
 }: NarrationPanelProps) {
+  const [showExtended, setShowExtended] = useState(false);
+
   return (
     <div className="flex h-full flex-col">
       {/* Terrain name — cinematic title */}
@@ -88,12 +85,70 @@ export default function NarrationPanel({
             }
           />
         )}
+
+        {/* 延伸阅读 — 本地知识库 */}
+        {knowledge && showExtended && (
+          <div className="mt-5 space-y-3 border-t border-white/[0.04] pt-4">
+            <p className="text-[10px] font-medium uppercase tracking-[0.15em] text-amber-300/40">
+              延伸阅读
+            </p>
+
+            {knowledge.terrainFeatures.length > 0 && (
+              <div>
+                <p className="text-[11px] font-medium text-white/50 mb-1">地形特征</p>
+                <p className="text-[12px] leading-relaxed text-white/35">
+                  {knowledge.terrainFeatures.join("、")}
+                </p>
+              </div>
+            )}
+
+            {knowledge.climateFeatures.length > 0 && (
+              <div>
+                <p className="text-[11px] font-medium text-white/50 mb-1">气候特点</p>
+                <p className="text-[12px] leading-relaxed text-white/35">
+                  {knowledge.climateFeatures.join("、")}
+                </p>
+              </div>
+            )}
+
+            {knowledge.historicalTopics.length > 0 && (
+              <div>
+                <p className="text-[11px] font-medium text-white/50 mb-1">历史脉络</p>
+                <p className="text-[12px] leading-relaxed text-white/35">
+                  {knowledge.historicalTopics.join("、")}
+                </p>
+              </div>
+            )}
+
+            {knowledge.cultureTopics.length > 0 && (
+              <div>
+                <p className="text-[11px] font-medium text-white/50 mb-1">人文背景</p>
+                <p className="text-[12px] leading-relaxed text-white/35">
+                  {knowledge.cultureTopics.join("、")}
+                </p>
+              </div>
+            )}
+
+            {knowledge.interestingFacts.length > 0 && (
+              <div>
+                <p className="text-[11px] font-medium text-white/50 mb-1">趣味知识</p>
+                <ul className="space-y-1">
+                  {knowledge.interestingFacts.map((fact, i) => (
+                    <li key={i} className="text-[12px] leading-relaxed text-white/35">
+                      · {fact}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Source attribution — ultra subtle */}
       {knowledge && <SourceAttribution knowledge={knowledge} />}
 
-      {/* Footer: voice controls */}
+      {/* Footer: voice controls + extended reading */}
       <div className="mt-4 pt-3 border-t border-white/[0.03] space-y-2">
         <VoiceSelector />
 
@@ -107,14 +162,13 @@ export default function NarrationPanel({
               {isSpeaking ? "停止" : "朗读"}
             </button>
 
-            {canEnhanceWithAi && onEnhanceWithAi && (
+            {knowledge && (
               <button
                 type="button"
-                disabled={aiEnhancing}
-                onClick={onEnhanceWithAi}
-                className="rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50 disabled:opacity-50"
+                onClick={() => setShowExtended(!showExtended)}
+                className="rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
               >
-                {aiEnhancing ? "优化中…" : "AI"}
+                {showExtended ? "收起" : "延伸"}
               </button>
             )}
           </div>

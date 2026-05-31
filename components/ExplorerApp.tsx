@@ -12,7 +12,7 @@ import ResizablePanel from "@/components/ResizablePanel";
 import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
-import { lessonToSpeech } from "@/lib/lesson";
+import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
   getAllRoutes,
@@ -61,7 +61,6 @@ export default function ExplorerApp() {
   const [activeTerrain, setActiveTerrain] = useState<TerrainPoint | null>(null);
   const [displayCards, setDisplayCards] = useState<TerrainCards | null>(null);
   const [lesson, setLesson] = useState<TerrainLesson | null>(null);
-  const [aiEnhancing, setAiEnhancing] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [terrainMode, setTerrainMode] = useState<TerrainMode | null>(null);
@@ -148,40 +147,12 @@ export default function ExplorerApp() {
       if (options?.flyoverOnly) {
         await speakText(terrain.flyoverCue);
       } else {
-        await speakText(lessonToSpeech(terrain.lesson));
+        // 使用 SSML 格式以获得纪录片风格的自然停顿
+        await speakText(lessonToSSML(terrain.lesson));
       }
     },
     [speakText]
   );
-
-  const enhanceLessonWithAi = useCallback(async () => {
-    if (!activeTerrain) return;
-
-    setAiEnhancing(true);
-    setError(null);
-
-    try {
-      const res = await fetch("/api/narration", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ terrainId: activeTerrain.id }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        throw new Error(data.error ?? "AI 优化失败");
-      }
-
-      if (data.lesson) {
-        setLesson(data.lesson as TerrainLesson);
-      }
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "AI 优化失败");
-    } finally {
-      setAiEnhancing(false);
-    }
-  }, [activeTerrain]);
 
   /**
    * 航点叙述 — 等待叙述完成后再返回
@@ -213,13 +184,13 @@ export default function ExplorerApp() {
         ));
         labelManager.setFocusedTerrain(terrain.id);
 
-        // 生成叙述脚本
-        const script = `${terrain.flyoverCue}\n${lessonToSpeech(terrain.lesson)}`;
+        // 生成 SSML 叙述脚本（飞越提示 + 详细讲解，含自然停顿）
+        const ssmlScript = `<speak><prosody rate="slow" pitch="-2%">${terrain.flyoverCue}<break time="800ms"/>${lessonToSpeech(terrain.lesson)}</prosody></speak>`;
 
         // 等待叙述完成
         setIsSpeaking(true);
         try {
-          await speakAndWait(script, SPEECH_RATE);
+          await speakAndWait(ssmlScript, SPEECH_RATE);
         } finally {
           setIsSpeaking(false);
         }
@@ -235,10 +206,10 @@ export default function ExplorerApp() {
         setIsFlyover(true);
         setError(null);
 
-        const script = lessonToSpeech(cityLesson);
+        const ssmlScript = lessonToSSML(cityLesson);
         setIsSpeaking(true);
         try {
-          await speakAndWait(script, SPEECH_RATE);
+          await speakAndWait(ssmlScript, SPEECH_RATE);
         } finally {
           setIsSpeaking(false);
         }
@@ -265,7 +236,6 @@ export default function ExplorerApp() {
       activeRouteRef.current = null;
       setIsFlyover(false);
       setError(null);
-      setAiEnhancing(false);
 
       // 重置取消标志
       narrationCancelledRef.current = false;
@@ -342,10 +312,11 @@ export default function ExplorerApp() {
             setDisplayCards(null);
             setLesson(ROUTE_END_LESSON);
 
-            // 等待结束语叙述完成
+            // 等待结束语叙述完成（SSML 格式）
+            const endSSML = `<speak><prosody rate="slow" pitch="-2%">${ROUTE_END_LESSON.seeing}</prosody></speak>`;
             setIsSpeaking(true);
             try {
-              await speakAndWait(ROUTE_END_LESSON.seeing, SPEECH_RATE);
+              await speakAndWait(endSSML, SPEECH_RATE);
             } finally {
               setIsSpeaking(false);
             }
@@ -480,14 +451,11 @@ export default function ExplorerApp() {
               cards={cardsForPanel}
               lesson={lesson}
               knowledge={activeTerrain?.knowledge ?? null}
-              aiEnhancing={aiEnhancing}
               error={error}
               isFlyover={isFlyover}
               isRouteFlying={isRouteFlying}
               isSpeaking={isSpeaking}
-              canEnhanceWithAi={!!activeTerrain}
-              onEnhanceWithAi={() => void enhanceLessonWithAi()}
-              onSpeak={() => { if (lesson) void speakText(lessonToSpeech(lesson)); }}
+              onSpeak={() => { if (lesson) void speakText(lessonToSSML(lesson)); }}
               onStopSpeak={stopSpeaking}
               embedded
             />
