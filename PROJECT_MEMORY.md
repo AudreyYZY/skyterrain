@@ -367,3 +367,24 @@ If a feature appears to require modifying protected infrastructure:
 4. Propose alternative solutions
 5. Wait for approval
 - **4** type definition files in `types/`
+
+## Phase 4 — UI/UX Refinement (Completed 2026-06-01)
+
+### Changes Summary
+- **Layout**: Right panel 380px→320px, closer to edge, more transparent
+- **Typography**: Sentence segmentation in StructuredLesson, max-width 36ch
+- **Narration highlighting**: `useSentenceHighlight` hook tracks active sentence during TTS
+- **AI mode**: Renamed to "扩展解读" with AI disclaimer
+- **Visual**: Warmer tones (`#0c1018`), lighter panels (opacity 0.45), subtler accents
+
+### New File
+- `components/useSentenceHighlight.ts` — sentence timing estimation hook
+
+### Key Design Decision
+Sentence highlighting uses character-count estimation (~280ms/char) rather than SSML `<mark>` tags. This works with any TTS backend without requiring timing callbacks.
+
+### Cesium Safety
+- CesiumMap.tsx: NO changes to rendering architecture
+- Camera system: NO changes
+- Terrain loading: NO changes
+- Initialization: NO changes

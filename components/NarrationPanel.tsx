@@ -20,6 +20,10 @@ interface NarrationPanelProps {
   onStopSpeak: () => void;
   isSpeaking: boolean;
   embedded?: boolean;
+  /** 当前高亮的句子索引（用于朗读同步） */
+  activeSentenceIndex?: number | null;
+  /** 当前朗读的 section key */
+  activeSection?: string | null;
 }
 
 export default function NarrationPanel({
@@ -34,6 +38,8 @@ export default function NarrationPanel({
   onSpeak,
   onStopSpeak,
   isSpeaking,
+  activeSentenceIndex,
+  activeSection,
 }: NarrationPanelProps) {
   const [showExtended, setShowExtended] = useState(false);
 
@@ -83,14 +89,19 @@ export default function NarrationPanel({
             hideEmptySections={
               !lesson.formation.trim() && !lesson.history.trim()
             }
+            activeSentenceIndex={activeSentenceIndex}
+            activeSection={activeSection}
           />
         )}
 
-        {/* 延伸阅读 — 本地知识库 */}
+        {/* 扩展解读 — AI 辅助补充 */}
         {knowledge && showExtended && (
           <div className="mt-5 space-y-3 border-t border-white/[0.04] pt-4">
             <p className="text-[10px] font-medium uppercase tracking-[0.15em] text-amber-300/40">
-              延伸阅读
+              扩展解读
+            </p>
+            <p className="text-[10px] text-white/20 italic">
+              以下内容由 AI 生成，仅供参考
             </p>
 
             {knowledge.terrainFeatures.length > 0 && (
@@ -168,7 +179,7 @@ export default function NarrationPanel({
                 onClick={() => setShowExtended(!showExtended)}
                 className="rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
               >
-                {showExtended ? "收起" : "延伸"}
+                {showExtended ? "收起" : "扩展解读"}
               </button>
             )}
           </div>

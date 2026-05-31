@@ -608,3 +608,87 @@ flyRoute:
 - Terrain selection: camera flies first, then narration plays, then 2s dwell
 - Stop route: narration stops immediately
 - Rapid terrain clicks: previous narration cancelled, new one starts
+
+## Phase 4 — UI/UX Refinement (UI-only, no Cesium changes)
+
+**Date:** 2026-06-01
+**Status:** Completed
+
+### Phase 4A: Layout Refactor
+
+**Problem:** Right panel occupied too much visual weight, felt like a large modal.
+
+**Solution:**
+- Reduced right panel width: 380px → 320px
+- Reduced padding: `p-6` → `p-5`
+- Reduced margin: `m-5 mb-5` → `mr-3 mb-4 mt-4` (closer to right edge)
+- Reduced background opacity: `bg-[#0a0e12]/40` → `bg-[#0a0e12]/30`
+- Reduced backdrop blur: `backdrop-blur-3xl` → `backdrop-blur-xl`
+- Max height: `calc(100vh-7rem)` → `calc(100vh-5rem)`
+- Header: more minimal, smaller text, reduced opacity
+- Mode tabs: smaller, more subtle
+
+### Phase 4B: Typography — Sentence Segmentation
+
+**Problem:** Text walls difficult to scan, no visual rhythm.
+
+**Solution:**
+- `StructuredLesson` now splits "飞机窗外" section into individual sentences
+- Each sentence rendered as separate `<span>` with transition classes
+- Secondary sections: `max-w-[36ch]` constraint for comfortable reading
+- Updated CSS: `narration-hero` 1rem/1.9, `narration-secondary` 0.8125rem/1.85
+- Reduced opacity for more subtle text
+
+### Phase 4C: Narration Sentence Highlighting
+
+**Problem:** No visual sync between narration audio and text display.
+
+**Solution:**
+- New `useSentenceHighlight` hook — tracks current sentence during TTS playback
+- Estimates sentence duration by character count (~280ms/char at slow rate)
+- Active sentence: `text-white/95`, past: `text-white/50`, future: `text-white/30`
+- CSS transitions: `duration-500` for smooth color changes
+- Integrated into `showTerrainLesson` and `narrateWaypoint`
+
+**Architecture:**
+```
+ExplorerApp
+├── useSentenceHighlight() → { activeSentenceIndex, activeSection, startHighlight, stopHighlight }
+├── showTerrainLesson: startHighlight(plainText) → speakText(SSML) → stopHighlight()
+├── narrateWaypoint: startHighlight(fullText) → speakAndWait(SSML) → stopHighlight()
+└── passes activeSentenceIndex + activeSection → NarrationPanel → StructuredLesson
+```
+
+### Phase 4D: AI Mode Clarification
+
+**Problem:** "延伸" button was unclear — users didn't know it was AI-generated.
+
+**Solution:**
+- Renamed button: "延伸" → "扩展解读"
+- Section header: "延伸阅读" → "扩展解读"
+- Added disclaimer: "以下内容由 AI 生成，仅供参考"
+
+### Phase 4E: Visual Polish
+
+**Problem:** Grey, flat, old-fashioned appearance.
+
+**Solution:**
+- Background: `#0a0e12` → `#0c1018` (slightly warmer)
+- Panel opacity: `0.65` → `0.45` (lighter, more transparent)
+- Glass border: `0.06` → `0.05` (subtler)
+- Accent line: reduced opacity gradient `0.35` → `0.25`
+- Section label: `amber/40` → `amber/35`
+- Scrollbar: 3px → 2px, `white/0.08` → `white/0.06`
+
+### Files Modified
+- `components/ExplorerApp.tsx` — Layout, header, mode tabs, sentence highlighting integration
+- `components/NarrationPanel.tsx` — AI mode rename, sentence highlighting props
+- `components/StructuredLesson.tsx` — Sentence segmentation, highlighting support
+- `components/useSentenceHighlight.ts` — NEW: sentence timing estimation hook
+- `app/globals.css` — Typography, colors, scrollbar, accent line
+
+### Cesium Safety
+- NO changes to CesiumMap.tsx rendering architecture
+- NO changes to camera system
+- NO changes to terrain loading
+- NO changes to initialization sequence

@@ -23,6 +23,7 @@ import { getAllTerrains, getTerrainsByCategory } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useSentenceHighlight } from "@/components/useSentenceHighlight";
 
 const terrainGroups = getTerrainsByCategory();
 const allTerrains = getAllTerrains();
@@ -70,6 +71,7 @@ export default function ExplorerApp() {
   const [isFlyover, setIsFlyover] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
+  const { activeSentenceIndex, activeSection, startHighlight, stopHighlight } = useSentenceHighlight();
 
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
@@ -118,7 +120,8 @@ export default function ExplorerApp() {
     narrationQueue.cancel();
     stopSpeech();
     setIsSpeaking(false);
-  }, []);
+    stopHighlight();
+  }, [stopHighlight]);
 
   const speakText = useCallback(
     async (text: string): Promise<void> => {
@@ -145,13 +148,18 @@ export default function ExplorerApp() {
       setError(null);
 
       if (options?.flyoverOnly) {
+        startHighlight(terrain.flyoverCue, "flyover");
         await speakText(terrain.flyoverCue);
+        stopHighlight();
       } else {
         // 使用 SSML 格式以获得纪录片风格的自然停顿
+        const plainText = lessonToSpeech(terrain.lesson);
+        startHighlight(plainText, "seeing");
         await speakText(lessonToSSML(terrain.lesson));
+        stopHighlight();
       }
     },
-    [speakText]
+    [speakText, startHighlight, stopHighlight]
   );
 
   /**
@@ -185,7 +193,11 @@ export default function ExplorerApp() {
         labelManager.setFocusedTerrain(terrain.id);
 
         // 生成 SSML 叙述脚本（飞越提示 + 详细讲解，含自然停顿）
-        const ssmlScript = `<speak><prosody rate="slow" pitch="-2%">${terrain.flyoverCue}<break time="800ms"/>${lessonToSpeech(terrain.lesson)}</prosody></speak>`;
+        const plainLesson = lessonToSpeech(terrain.lesson);
+        const ssmlScript = `<speak><prosody rate="slow" pitch="-2%">${terrain.flyoverCue}<break time="800ms"/>${plainLesson}</prosody></speak>`;
+
+        // 启动句子高亮（先显示飞越提示，再显示详细讲解）
+        startHighlight(`${terrain.flyoverCue} ${plainLesson}`, "seeing");
 
         // 等待叙述完成
         setIsSpeaking(true);
@@ -193,6 +205,7 @@ export default function ExplorerApp() {
           await speakAndWait(ssmlScript, SPEECH_RATE);
         } finally {
           setIsSpeaking(false);
+          stopHighlight();
         }
 
         // 叙述后停留 — 让用户消化
@@ -219,7 +232,7 @@ export default function ExplorerApp() {
         }
       }
     },
-    []
+    [startHighlight, stopHighlight]
   );
 
   const handleSelectTerrain = useCallback(
@@ -367,17 +380,17 @@ export default function ExplorerApp() {
   return (
     <div className="relative flex h-screen w-screen flex-col overflow-hidden bg-[#0a0e12]">
       {/* Minimal translucent header */}
-      <header className="relative z-20 flex shrink-0 items-center justify-between bg-transparent px-5 py-3">
+      <header className="relative z-20 flex shrink-0 items-center justify-between bg-transparent px-6 py-2.5">
         <div className="flex items-center gap-3">
-          <p className="text-[9px] font-medium uppercase tracking-[0.3em] text-amber-300/40">
+          <p className="text-[9px] font-medium uppercase tracking-[0.25em] text-amber-300/30">
             Flight Geography Explorer
           </p>
-          <span className="text-white/10">|</span>
-          <p className="text-[11px] text-white/30">
+          <span className="text-white/[0.06]">|</span>
+          <p className="text-[10px] text-white/20 tracking-wide">
             新疆 · {terrainCount} 处
           </p>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-0.5">
           <ModeTab
             active={mode === "explore"}
             onClick={() => setMode("explore")}
@@ -444,7 +457,7 @@ export default function ExplorerApp() {
 
         {/* Right overlay — floating narration panel */}
         {mode === "explore" ? (
-          <div className="pointer-events-auto m-5 mb-5 flex w-[380px] shrink-0 flex-col rounded-2xl bg-[#0a0e12]/40 p-6 backdrop-blur-3xl border border-white/[0.04] cinematic-enter max-h-[calc(100vh-7rem)]">
+          <div className="pointer-events-auto mr-3 mb-4 mt-4 flex w-[320px] shrink-0 flex-col rounded-2xl bg-[#0a0e12]/30 p-5 backdrop-blur-xl border border-white/[0.04] cinematic-enter max-h-[calc(100vh-5rem)]">
             <NarrationPanel
               title={panelTitle}
               subtitle={panelSubtitle}
@@ -457,11 +470,13 @@ export default function ExplorerApp() {
               isSpeaking={isSpeaking}
               onSpeak={() => { if (lesson) void speakText(lessonToSSML(lesson)); }}
               onStopSpeak={stopSpeaking}
+              activeSentenceIndex={activeSentenceIndex}
+              activeSection={activeSection}
               embedded
             />
           </div>
         ) : (
-          <div className="pointer-events-auto m-4 mb-4 flex w-[360px] shrink-0 flex-col rounded-2xl bg-[#0a0e12]/55 p-5 backdrop-blur-2xl border border-white/[0.05] cinematic-enter max-h-[calc(100vh-6rem)]">
+          <div className="pointer-events-auto mr-3 mb-4 mt-4 flex w-[300px] shrink-0 flex-col rounded-2xl bg-[#0a0e12]/40 p-4 backdrop-blur-xl border border-white/[0.04] cinematic-enter max-h-[calc(100vh-5rem)]">
             <PhotoModePanel onSpeak={speakText} embedded />
           </div>
         )}
@@ -484,10 +499,10 @@ function ModeTab({
       type="button"
       onClick={onClick}
       className={[
-        "rounded-lg px-2.5 py-1 text-[11px] font-medium transition",
+        "rounded-md px-2 py-0.5 text-[10px] font-medium transition-all duration-200",
         active
-          ? "bg-white/[0.06] text-white/80"
-          : "text-white/30 hover:bg-white/[0.04] hover:text-white/50",
+          ? "bg-white/[0.08] text-white/70"
+          : "text-white/20 hover:text-white/40",
       ].join(" ")}
     >
       {label}

@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0e12;
+  --background: #0c1018;
   --foreground: #f4f4f5;
   --accent: #f59e0b;
-  --panel: rgba(12, 18, 24, 0.65);
-  --glass: rgba(255, 255, 255, 0.04);
-  --glass-border: rgba(255, 255, 255, 0.06);
-  --glass-blur: 24px;
+  --panel: rgba(14, 20, 28, 0.45);
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-blur: 20px;
 }
 
 @theme inline {
@@ -55,17 +55,17 @@ body {
 /* Subtle amber accent line for secondary sections */
 .accent-line {
   position: relative;
-  padding-left: 0.875rem;
+  padding-left: 0.75rem;
 }
 .accent-line::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0.25rem;
-  bottom: 0.25rem;
+  top: 0.2rem;
+  bottom: 0.2rem;
   width: 1.5px;
   border-radius: 1px;
-  background: linear-gradient(180deg, rgba(245, 158, 11, 0.35) 0%, rgba(245, 158, 11, 0.08) 100%);
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.25) 0%, rgba(245, 158, 11, 0.05) 100%);
 }
 
 /* Smooth fade-in for floating panels */
@@ -86,47 +86,47 @@ body {
 
 /* Primary narration — the cinematic hero text */
 .narration-hero {
-  font-size: 1.0625rem;
+  font-size: 1rem;
   line-height: 1.9;
-  color: rgba(255, 255, 255, 0.88);
-  letter-spacing: 0.015em;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.012em;
   font-weight: 400;
 }
 
 /* Secondary narration section */
 .narration-secondary {
   font-size: 0.8125rem;
-  line-height: 1.75;
-  color: rgba(255, 255, 255, 0.45);
-  letter-spacing: 0.01em;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.008em;
 }
 
 /* Section label — minimal, documentary */
 .section-label {
   font-size: 0.625rem;
   font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(245, 158, 11, 0.4);
+  color: rgba(245, 158, 11, 0.35);
 }
 
 /* Cinematic scrollbar — barely visible, elegant */
 .sidebar-scroll {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+  scrollbar-color: rgba(255, 255, 255, 0.06) transparent;
 }
 .sidebar-scroll::-webkit-scrollbar {
-  width: 3px;
+  width: 2px;
 }
 .sidebar-scroll::-webkit-scrollbar-track {
   background: transparent;
 }
 .sidebar-scroll::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 2px;
 }
 .sidebar-scroll::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* Prevent Cesium from stealing wheel on sidebar */

@@ -620,3 +620,50 @@ flyRoute:
 ### Changed
 - `types/terrain.ts` — Added `TerrainCategory` and `TerrainType` unions
 - `lib/terrain-categories.ts` — Added category labels and ordering
+
+---
+
+## Phase 4 — UI/UX Refinement
+
+**Status:** Completed
+
+### 4A: Layout Refactor
+- Right panel: 380px → 320px, closer to edge, increased transparency
+- Header: more minimal, reduced visual weight
+- Map now owns 85%+ visual dominance
+
+### 4B: Typography & Sentence Segmentation
+- StructuredLesson splits hero narration into individual sentences
+- Each sentence independently stylable for highlighting
+- Secondary sections: max-width 36 characters for readability
+- Updated line-height: 1.9 (hero), 1.85 (secondary)
+
+### 4C: Narration Sentence Highlighting
+- New `useSentenceHighlight` hook — estimates sentence timing from character count
+- Active sentence highlighted, past/future dimmed
+- Integrated with both terrain selection and route flight narration
+- No TTS backend changes — pure client-side timing estimation
+
+### 4D: AI Mode Clarification
+- "延伸" → "扩展解读"
+- Added disclaimer: "以下内容由 AI 生成，仅供参考"
+- Original content always remains source of truth
+
+### 4E: Visual Polish
+- Warmer background: `#0a0e12` → `#0c1018`
+- Lighter panels: opacity 0.65 → 0.45
+- Subtler borders, accent lines, scrollbar
+- National Geographic documentary feeling
+
+### Files Modified (5)
+- `components/ExplorerApp.tsx`
+- `components/NarrationPanel.tsx`
+- `components/StructuredLesson.tsx`
+- `components/useSentenceHighlight.ts` (NEW)
+- `app/globals.css`
+
+### Cesium Safety
+- CesiumMap.tsx: UNTOUCHED
+- Camera system: UNTOUCHED
+- Terrain loading: UNTOUCHED
+- Initialization: UNTOUCHED
