@@ -292,6 +292,10 @@ CesiumMap.tsx
 ├── ResizeObserver: canvas sync on sidebar resize
 ├── NO camera.changed listener (removed — caused black screen)
 ├── NO onCameraChange prop (removed — caused render storm)
+├── requestRenderMode: false (tiles always refine)
+├── maximumScreenSpaceError: 1.5 (sharp tiles)
+├── camera.moveEnd → requestRender() (post-settle render)
+├── touch-action: none on canvas (trackpad zoom)
 ├── useImperativeHandle: projectToScreen, getCameraState, flyTo*, stopFlight
 └── All flyTo calls: quarticEaseOut easing, 7s duration, -42° pitch
 

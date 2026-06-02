@@ -4,6 +4,47 @@ Development log for AI-assisted development sessions.
 
 ---
 
+## Fix: Cesium Tile Refinement & Trackpad Zoom
+
+### Root Cause Analysis
+
+**Primary: `requestRenderMode` default behavior**
+
+Cesium's default rendering mode only renders when:
+1. Camera moves
+2. `requestRender()` is explicitly called
+
+After `flyTo()` completes, camera stops → Cesium stops rendering. Tiles that finish loading in the background never get displayed because nothing calls `requestRender()`.
+
+**Secondary: `maximumScreenSpaceError = 2`**
+
+Default Cesium value allows coarser tiles at moderate zoom. For documentary-quality mountain passes at 8000m, this shows visible tile seams.
+
+**Tertiary: Trackpad zoom interception**
+
+The canvas container needed `touch-action: none` to allow trackpad gestures to pass through to Cesium's `ScreenSpaceCameraController`.
+
+### Fix Applied
+
+1. **`requestRenderMode: false`** — Forces continuous rendering. Tiles always refine regardless of camera state. Slightly higher GPU usage but ensures visual quality.
+
+2. **`maximumScreenSpaceError = 1.5`** — Sharper tiles at all zoom levels. ~20% more tiles loaded but significantly better visual quality.
+
+3. **`camera.moveEnd` listener** — Triggers `requestRender()` once after camera animation completes. Belt-and-suspenders with `requestRenderMode: false`.
+
+4. **`touch-action: none`** — On canvas container and `.cesium-widget canvas`. Ensures trackpad two-finger gestures reach Cesium's input handler.
+
+5. **ResizeObserver `requestRender()`** — After sidebar resize, forces a render pass to update tile visibility.
+
+### Why This Doesn't Cause Render Storm
+
+- `requestRenderMode: false` means Cesium manages its own render loop — no React involvement
+- `camera.moveEnd` fires once per camera stop (not per frame)
+- No `camera.changed` listener (intentionally removed in Phase 2 fix)
+- Cesium's internal render loop is frame-rate-limited by the browser
+
+---
+
 ## Phase 4A — Narration Voice Upgrade & AI Mode Removal
 
 **Date:** 2026-05-30

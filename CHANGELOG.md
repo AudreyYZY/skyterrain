@@ -4,6 +4,43 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Fix: Cesium Tile Refinement & Trackpad Zoom
+
+**Status:** Completed
+
+### Problem
+- Terrain loaded but imagery was partially blurred with visible tile boundaries
+- High-resolution tiles never refined after flyTo
+- Trackpad two-finger zoom not working
+- Map labels difficult to read
+
+### Root Cause
+Cesium's default `requestRenderMode` only renders when camera moves or `requestRender()` is called explicitly. After tiles finish loading in the background, nothing triggers `requestRender()`, so the globe stays at low-resolution placeholders.
+
+### Fix
+
+**CesiumMap.tsx:**
+- Added `requestRenderMode: false` to Viewer config — forces continuous rendering
+- Lowered `maximumScreenSpaceError` from 2.0 → 1.5 — sharper tiles at all zoom levels
+- Added `camera.moveEnd` listener — triggers `requestRender()` after camera settles
+- Added `touch-action: none` on canvas container — enables trackpad gestures
+- Added `requestRender()` call in ResizeObserver callback
+
+**app/globals.css:**
+- Added `touch-action: none` on `.cesium-widget canvas` — ensures trackpad zoom works
+
+**components/CesiumOverlayLabels.tsx:**
+- Moved `overflow-hidden` to inline style (no functional change)
+
+### Files Modified
+| File | Lines Changed |
+|------|--------------|
+| `components/CesiumMap.tsx` | +17 -2 |
+| `app/globals.css` | +5 |
+| `components/CesiumOverlayLabels.tsx` | +1 -1 |
+
+---
+
 ## Phase 4A — Narration Voice Upgrade & AI Mode Removal
 
 **Status:** Completed
