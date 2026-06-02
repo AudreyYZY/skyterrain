@@ -405,11 +405,15 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             timeline: false,
             terrainProvider,
             creditContainer: document.createElement("div"),
+            // 关键：禁用 requestRenderMode 确保瓦片持续精炼
+            // 默认模式下 Cesium 仅在相机移动时渲染，导致加载中的高分辨率瓦片无法显示
+            requestRenderMode: false,
           });
 
           viewer.scene.globe.depthTestAgainstTerrain = true;
           viewer.scene.fog.enabled = true;
-          viewer.scene.globe.maximumScreenSpaceError = 2;
+          // 降低屏幕空间误差阈值以获得更清晰的瓦片（默认值 2.0）
+          viewer.scene.globe.maximumScreenSpaceError = 1.5;
           if (viewer.scene.skyAtmosphere) {
             viewer.scene.skyAtmosphere.show = true;
           }
@@ -426,10 +430,18 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           viewerRef.current = viewer;
           cesiumRef.current = Cesium;
 
+          // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
+          viewer.camera.moveEnd.addEventListener(() => {
+            if (!viewer.isDestroyed()) {
+              viewer.scene.requestRender();
+            }
+          });
+
           // ResizeObserver — 侧边栏调整时同步 Cesium 画布尺寸
           resizeObserver = new ResizeObserver(() => {
             if (viewerRef.current && !viewerRef.current.isDestroyed()) {
               viewerRef.current.resize();
+              viewerRef.current.scene.requestRender();
             }
           });
           resizeObserver.observe(containerRef.current);
@@ -460,7 +472,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
     return (
       <div className="relative h-full w-full">
-        <div ref={containerRef} className="h-full w-full" />
+        {/* touch-action: none 确保触控板手势（缩放/平移）传递给 Cesium */}
+        <div ref={containerRef} className="h-full w-full" style={{ touchAction: "none" }} />
 
         {status === "loading" && (
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-[#0c1218]/80 backdrop-blur-sm">

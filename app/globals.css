@@ -40,6 +40,11 @@ body {
   font-family: inherit;
 }
 
+/* 确保触控板手势（缩放/平移）传递给 Cesium 画布 */
+.cesium-widget canvas {
+  touch-action: none;
+}
+
 .cesium-viewer-bottom {
   display: none;
 }
