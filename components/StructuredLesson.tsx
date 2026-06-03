@@ -54,22 +54,35 @@ export default function StructuredLesson({
     return !hideEmptySections || text.length > 0;
   });
 
+  // 计算全局句子偏移量 — 用于将 activeSentenceIndex 映射到各 section 内的局部索引
+  // 顺序与 SECTIONS 定义一致，与 lessonToSpeech 的拼接顺序匹配
+  const sectionOffsets = new Map<string, number>();
+  let cumulativeOffset = 0;
+  for (const s of SECTIONS) {
+    const text = stripEmojis((lesson[s.key] as string) ?? "");
+    if (text.length === 0) continue;
+    sectionOffsets.set(s.key, cumulativeOffset);
+    cumulativeOffset += splitSentences(text).length;
+  }
+
   return (
     <div className="space-y-6">
       {visible.map(({ key, heading, primary }) => {
         const body = stripEmojis((lesson[key] as string) ?? "");
         if (!body) return null;
 
-        if (primary) {
-          const sentences = splitSentences(body);
-          const isActiveSection = activeSection === key;
+        const sentences = splitSentences(body);
+        const offset = sectionOffsets.get(key) ?? 0;
+        const isActiveSection = activeSection === key;
 
+        if (primary) {
           return (
             <section key={key} className="space-y-0">
               {sentences.map((sentence, i) => {
-                const isActive = isActiveSection && activeSentenceIndex === i;
-                const isPast = isActiveSection && activeSentenceIndex != null && i < activeSentenceIndex;
-                const isFuture = isActiveSection && activeSentenceIndex != null && i > activeSentenceIndex;
+                const globalIndex = offset + i;
+                const isActive = isActiveSection && activeSentenceIndex === globalIndex;
+                const isPast = isActiveSection && activeSentenceIndex != null && globalIndex < activeSentenceIndex;
+                const isFuture = isActiveSection && activeSentenceIndex != null && globalIndex > activeSentenceIndex;
 
                 return (
                   <span
@@ -94,7 +107,30 @@ export default function StructuredLesson({
         return (
           <section key={key} className="accent-line">
             <h3 className="section-label">{heading}</h3>
-            <p className="mt-1.5 narration-secondary max-w-[36ch]">{body}</p>
+            <p className="mt-1.5 narration-secondary max-w-[36ch]">
+              {sentences.map((sentence, i) => {
+                const globalIndex = offset + i;
+                const isActive = isActiveSection && activeSentenceIndex === globalIndex;
+                const isPast = isActiveSection && activeSentenceIndex != null && globalIndex < activeSentenceIndex;
+                const isFuture = isActiveSection && activeSentenceIndex != null && globalIndex > activeSentenceIndex;
+
+                return (
+                  <span
+                    key={i}
+                    ref={isActive ? activeRef : undefined}
+                    className={[
+                      "inline transition-colors duration-500",
+                      isActive ? "text-white/95" : "",
+                      isPast ? "text-white/40" : "",
+                      isFuture ? "text-white/25" : "",
+                      !isActiveSection ? "text-white/35" : "",
+                    ].join(" ")}
+                  >
+                    {sentence}
+                  </span>
+                );
+              })}
+            </p>
           </section>
         );
       })}

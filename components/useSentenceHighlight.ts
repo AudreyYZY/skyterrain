@@ -36,13 +36,20 @@ function estimateSentenceDuration(sentence: string): number {
   return chars * msPerChar + pauseMs;
 }
 
+interface HighlightSection {
+  key: string;
+  text: string;
+}
+
 interface UseSentenceHighlightReturn {
-  /** 当前高亮的句子索引 */
+  /** 当前高亮的句子索引（全局） */
   activeSentenceIndex: number | null;
   /** 当前朗读的 section key */
   activeSection: string | null;
   /** 开始高亮循环（朗读开始时调用） */
   startHighlight: (text: string, sectionKey?: string) => void;
+  /** 开始多 section 高亮循环 */
+  startHighlightSections: (sections: HighlightSection[]) => void;
   /** 停止高亮（朗读停止时调用） */
   stopHighlight: () => void;
 }
@@ -62,6 +69,17 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
     setActiveSection(null);
     currentIndexRef.current = 0;
   }, []);
+
+  // 根据全局索引查找所属 section
+  const findSectionForIndex = useCallback(
+    (globalIndex: number, sectionMap: { key: string; start: number; end: number }[]): string | null => {
+      for (const s of sectionMap) {
+        if (globalIndex >= s.start && globalIndex < s.end) return s.key;
+      }
+      return null;
+    },
+    []
+  );
 
   const startHighlight = useCallback(
     (text: string, sectionKey: string = "seeing") => {
@@ -101,6 +119,57 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
     [stopHighlight]
   );
 
+  const startHighlightSections = useCallback(
+    (sections: HighlightSection[]) => {
+      stopHighlight();
+
+      // 构建全局句子数组 + section 映射
+      const allSentences: string[] = [];
+      const sectionMap: { key: string; start: number; end: number }[] = [];
+      let offset = 0;
+
+      for (const section of sections) {
+        const cleanedText = stripEmojis(section.text);
+        const sentences = splitSentences(cleanedText);
+        if (sentences.length === 0) continue;
+        sectionMap.push({ key: section.key, start: offset, end: offset + sentences.length });
+        allSentences.push(...sentences);
+        offset += sentences.length;
+      }
+
+      if (allSentences.length === 0) return;
+
+      const initialSection = findSectionForIndex(0, sectionMap);
+      setActiveSection(initialSection);
+      setActiveSentenceIndex(0);
+      currentIndexRef.current = 0;
+
+      const advance = () => {
+        const currentSentence = allSentences[currentIndexRef.current];
+        if (!currentSentence) return;
+
+        const duration = estimateSentenceDuration(currentSentence);
+
+        timerRef.current = setTimeout(() => {
+          currentIndexRef.current += 1;
+          if (currentIndexRef.current < allSentences.length) {
+            setActiveSentenceIndex(currentIndexRef.current);
+            // 更新当前 section
+            const newSection = findSectionForIndex(currentIndexRef.current, sectionMap);
+            setActiveSection(newSection);
+            advance();
+          } else {
+            setActiveSentenceIndex(null);
+            setActiveSection(null);
+          }
+        }, duration);
+      };
+
+      advance();
+    },
+    [stopHighlight, findSectionForIndex]
+  );
+
   // 清理定时器
   useEffect(() => {
     return () => {
@@ -114,6 +183,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
     activeSentenceIndex,
     activeSection,
     startHighlight,
+    startHighlightSections,
     stopHighlight,
   };
 }

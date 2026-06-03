@@ -71,7 +71,7 @@ export default function ExplorerApp() {
   const [isFlyover, setIsFlyover] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
-  const { activeSentenceIndex, activeSection, startHighlight, stopHighlight } = useSentenceHighlight();
+  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, stopHighlight } = useSentenceHighlight();
 
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
@@ -154,13 +154,19 @@ export default function ExplorerApp() {
       } else {
         // 使用 SSML 格式以获得纪录片风格的自然停顿
         const ssml = lessonToSSML(terrain.lesson);
-        // 只使用 lesson.seeing 确保与 StructuredLesson 渲染文本一致
-        startHighlight(terrain.lesson.seeing, "seeing");
+        // 全 section 高亮 — 与 StructuredLesson 渲染顺序一致
+        const sections = [
+          { key: "seeing", text: terrain.lesson.seeing },
+          { key: "formation", text: terrain.lesson.formation },
+          { key: "history", text: terrain.lesson.history },
+          { key: "observation", text: terrain.lesson.observation ?? "" },
+        ].filter(s => s.text.trim().length > 0);
+        startHighlightSections(sections);
         await speakText(ssml);
         stopHighlight();
       }
     },
-    [speakText, startHighlight, stopHighlight]
+    [speakText, startHighlight, startHighlightSections, stopHighlight]
   );
 
   /**
@@ -197,8 +203,14 @@ export default function ExplorerApp() {
         const plainLesson = lessonToSpeech(terrain.lesson);
         const ssmlScript = `<speak><prosody rate="slow" pitch="-2%">${terrain.flyoverCue}<break time="800ms"/>${plainLesson}</prosody></speak>`;
 
-        // 启动句子高亮 — 只使用 lesson.seeing，与 StructuredLesson 渲染文本一致
-        startHighlight(terrain.lesson.seeing, "seeing");
+        // 全 section 高亮 — 与 StructuredLesson 渲染顺序一致
+        const highlightSections = [
+          { key: "seeing", text: terrain.lesson.seeing },
+          { key: "formation", text: terrain.lesson.formation },
+          { key: "history", text: terrain.lesson.history },
+          { key: "observation", text: terrain.lesson.observation ?? "" },
+        ].filter(s => s.text.trim().length > 0);
+        startHighlightSections(highlightSections);
 
         // 等待叙述完成
         setIsSpeaking(true);
@@ -221,7 +233,13 @@ export default function ExplorerApp() {
         setError(null);
 
         const ssmlScript = lessonToSSML(cityLesson);
-        startHighlight(ssmlScript, "seeing");
+        const citySections = [
+          { key: "seeing", text: cityLesson.seeing },
+          { key: "formation", text: cityLesson.formation },
+          { key: "history", text: cityLesson.history },
+          { key: "observation", text: cityLesson.observation ?? "" },
+        ].filter(s => s.text.trim().length > 0);
+        startHighlightSections(citySections);
         setIsSpeaking(true);
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE);
@@ -235,7 +253,7 @@ export default function ExplorerApp() {
         }
       }
     },
-    [startHighlight, stopHighlight]
+    [startHighlight, startHighlightSections, stopHighlight]
   );
 
   const handleSelectTerrain = useCallback(
