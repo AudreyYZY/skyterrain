@@ -12,6 +12,18 @@ function splitSentences(text: string): string[] {
 }
 
 /**
+ * 从 SSML 中提取纯文本
+ */
+function stripSSML(text: string): string {
+  return text
+    .replace(/<break[^/]*\/>/g, " ")
+    .replace(/<\/?speak[^>]*>/g, "")
+    .replace(/<\/?prosody[^>]*>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
  * 估算单句朗读时长（毫秒）
  * Edge TTS 慢速朗读约 3-4 字/秒
  * 加上句间停顿 300ms
@@ -54,7 +66,9 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
     (text: string, sectionKey: string = "seeing") => {
       stopHighlight();
 
-      const sentences = splitSentences(text);
+      // 如果是 SSML，先提取纯文本
+      const plainText = text.trim().startsWith("<speak") ? stripSSML(text) : text;
+      const sentences = splitSentences(plainText);
       if (sentences.length === 0) return;
 
       setActiveSection(sectionKey);

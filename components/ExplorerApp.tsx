@@ -148,14 +148,15 @@ export default function ExplorerApp() {
       setError(null);
 
       if (options?.flyoverOnly) {
-        startHighlight(terrain.flyoverCue, "flyover");
+        startHighlight(terrain.flyoverCue, "seeing");
         await speakText(terrain.flyoverCue);
         stopHighlight();
       } else {
         // 使用 SSML 格式以获得纪录片风格的自然停顿
-        const plainText = lessonToSpeech(terrain.lesson);
-        startHighlight(plainText, "seeing");
-        await speakText(lessonToSSML(terrain.lesson));
+        const ssml = lessonToSSML(terrain.lesson);
+        // startHighlight 需要纯文本用于分句，传入 SSML 会自动提取
+        startHighlight(ssml, "seeing");
+        await speakText(ssml);
         stopHighlight();
       }
     },
@@ -220,11 +221,13 @@ export default function ExplorerApp() {
         setError(null);
 
         const ssmlScript = lessonToSSML(cityLesson);
+        startHighlight(ssmlScript, "seeing");
         setIsSpeaking(true);
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE);
         } finally {
           setIsSpeaking(false);
+          stopHighlight();
         }
 
         if (!narrationCancelledRef.current) {
@@ -428,7 +431,7 @@ export default function ExplorerApp() {
       </div>
 
       {/* Overlay layer — floating panels */}
-      <div className="pointer-events-none absolute inset-x-0 top-12 bottom-0 z-10 flex w-full">
+      <div className="pointer-events-none absolute inset-x-0 top-12 bottom-0 z-10 flex w-full" style={{ touchAction: "pan-x pan-y" }}>
         {/* Left panel — terrain list */}
         {mode === "explore" && (
           <ResizablePanel

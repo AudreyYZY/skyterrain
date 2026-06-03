@@ -22,7 +22,7 @@ export default function FlightControls({
   const [expandedRegions, setExpandedRegions] = useState<Record<string, boolean>>(() => {
     if (typeof window === "undefined") return {};
     try {
-      const saved = localStorage.getItem("fge-region-expanded");
+      const saved = localStorage.getItem("fge-province-expanded");
       return saved ? JSON.parse(saved) : {};
     } catch {
       return {};
@@ -41,7 +41,7 @@ export default function FlightControls({
     setExpandedRegions((prev) => {
       const next = { ...prev, [regionId]: !prev[regionId] };
       try {
-        localStorage.setItem("fge-region-expanded", JSON.stringify(next));
+        localStorage.setItem("fge-province-expanded", JSON.stringify(next));
       } catch { /* ignore */ }
       return next;
     });
@@ -60,12 +60,12 @@ export default function FlightControls({
       <div className="flex flex-col">
         {hierarchy.map((node) => (
           <RegionNode
-            key={node.region.id}
+            key={node.province.id}
             node={node}
             activeId={activeId}
             disabled={disabled}
             onSelect={onSelect}
-            isExpanded={expandedRegions[node.region.id] ?? node.region.defaultExpanded}
+            isExpanded={expandedRegions[node.province.id] ?? node.province.defaultExpanded}
             expandedCategories={expandedCategories}
             onToggleRegion={toggleRegion}
             onToggleCategory={toggleCategory}
@@ -100,7 +100,7 @@ function RegionNode({
       {/* 区域标题 */}
       <button
         type="button"
-        onClick={() => onToggleRegion(node.region.id)}
+        onClick={() => onToggleRegion(node.province.id)}
         className="flex w-full items-center gap-2 px-1 py-2 text-left transition hover:bg-white/[0.03] rounded-lg"
         aria-expanded={isExpanded}
       >
@@ -113,7 +113,7 @@ function RegionNode({
           ›
         </span>
         <span className="flex-1 text-[11px] font-medium text-white/50 tracking-wide">
-          {node.region.name}
+          {node.province.name}
         </span>
         <span className="text-[9px] tabular-nums text-white/12">
           {node.totalCount}
@@ -124,7 +124,7 @@ function RegionNode({
       {isExpanded && (
         <div className="ml-1.5">
           {node.categoryGroups.map((group) => {
-            const catKey = `${node.region.id}-${group.category}`;
+            const catKey = `${node.province.id}-${group.category}`;
             const isCatExpanded = expandedCategories[catKey] ?? true;
 
             return (

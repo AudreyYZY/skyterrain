@@ -429,6 +429,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             viewer.scene.skyAtmosphere.show = true;
           }
 
+          // 显式配置相机控制器 — 确保触控板缩放和拖拽旋转正常
+          const controller = viewer.scene.screenSpaceCameraController;
+          controller.enableZoom = true;
+          controller.enableRotate = true;
+          controller.enableTilt = true;
+          controller.enableTranslate = true;
+          controller.inertiaSpin = 0.9;
+          controller.inertiaZoom = 0.9;
+          controller.inertiaTranslate = 0.9;
+
           viewer.camera.flyTo({
             destination: Cesium.Cartesian3.fromDegrees(
               XINJIANG_VIEW.lon,
@@ -444,6 +454,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {
             if (!viewer.isDestroyed()) {
+              viewer.scene.requestRender();
+            }
+          });
+
+          // 瓦片加载完成后触发渲染 — 确保高分辨率瓦片显示
+          viewer.scene.globe.tileLoadProgressEvent.addEventListener((e) => {
+            if (!viewer.isDestroyed() && e.queueLength === 0) {
               viewer.scene.requestRender();
             }
           });
