@@ -1,3 +1,4 @@
+import { stripEmojis } from "@/lib/strip-emojis";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
@@ -66,9 +67,10 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
     (text: string, sectionKey: string = "seeing") => {
       stopHighlight();
 
-      // 如果是 SSML，先提取纯文本
+      // 如果是 SSML，先提取纯文本；再去掉 emoji 以匹配 StructuredLesson 渲染文本
       const plainText = text.trim().startsWith("<speak") ? stripSSML(text) : text;
-      const sentences = splitSentences(plainText);
+      const cleanedText = stripEmojis(plainText);
+      const sentences = splitSentences(cleanedText);
       if (sentences.length === 0) return;
 
       setActiveSection(sectionKey);

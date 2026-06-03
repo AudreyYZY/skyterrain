@@ -423,8 +423,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           viewer.scene.globe.depthTestAgainstTerrain = true;
           viewer.scene.fog.enabled = true;
-          // 降低屏幕空间误差阈值以获得更清晰的瓦片（默认值 2.0）
-          viewer.scene.globe.maximumScreenSpaceError = 1.5;
+          // 屏幕空间误差阈值 — 2.0 为默认值，平衡清晰度与 tile 加载压力
+          viewer.scene.globe.maximumScreenSpaceError = 2.0;
           if (viewer.scene.skyAtmosphere) {
             viewer.scene.skyAtmosphere.show = true;
           }
@@ -460,8 +460,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           // 瓦片加载完成后触发渲染 — 确保高分辨率瓦片显示
           viewer.scene.globe.tileLoadProgressEvent.addEventListener((e) => {
-            if (!viewer.isDestroyed() && e.queueLength === 0) {
-              viewer.scene.requestRender();
+            if (!viewer.isDestroyed()) {
+              if (e.queueLength === 0) {
+                viewer.scene.requestRender();
+              }
+              // 调试：记录 tile 加载队列深度
+              if (e.queueLength > 10) {
+                console.log("[CesiumMap] tile queue:", e.queueLength);
+              }
             }
           });
 

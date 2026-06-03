@@ -154,8 +154,8 @@ export default function ExplorerApp() {
       } else {
         // 使用 SSML 格式以获得纪录片风格的自然停顿
         const ssml = lessonToSSML(terrain.lesson);
-        // startHighlight 需要纯文本用于分句，传入 SSML 会自动提取
-        startHighlight(ssml, "seeing");
+        // 只使用 lesson.seeing 确保与 StructuredLesson 渲染文本一致
+        startHighlight(terrain.lesson.seeing, "seeing");
         await speakText(ssml);
         stopHighlight();
       }
@@ -197,8 +197,8 @@ export default function ExplorerApp() {
         const plainLesson = lessonToSpeech(terrain.lesson);
         const ssmlScript = `<speak><prosody rate="slow" pitch="-2%">${terrain.flyoverCue}<break time="800ms"/>${plainLesson}</prosody></speak>`;
 
-        // 启动句子高亮（先显示飞越提示，再显示详细讲解）
-        startHighlight(`${terrain.flyoverCue} ${plainLesson}`, "seeing");
+        // 启动句子高亮 — 只使用 lesson.seeing，与 StructuredLesson 渲染文本一致
+        startHighlight(terrain.lesson.seeing, "seeing");
 
         // 等待叙述完成
         setIsSpeaking(true);
@@ -431,7 +431,7 @@ export default function ExplorerApp() {
       </div>
 
       {/* Overlay layer — floating panels */}
-      <div className="pointer-events-none absolute inset-x-0 top-12 bottom-0 z-10 flex w-full" style={{ touchAction: "pan-x pan-y" }}>
+      <div className="pointer-events-none absolute inset-x-0 top-12 bottom-0 z-10 flex w-full">
         {/* Left panel — terrain list */}
         {mode === "explore" && (
           <ResizablePanel
