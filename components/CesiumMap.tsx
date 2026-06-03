@@ -377,6 +377,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           let terrainMode: TerrainMode = "ellipsoid";
           let terrainProvider: import("cesium").TerrainProvider;
+          let imageryProvider: import("cesium").ImageryProvider | undefined;
 
           if (ionToken) {
             Cesium.Ion.defaultAccessToken = ionToken;
@@ -385,6 +386,12 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               terrainMode = "world";
             } catch {
               terrainProvider = new Cesium.EllipsoidTerrainProvider();
+            }
+            // 显式创建 Ion 影像源 — 避免隐式默认行为导致空白瓦片
+            try {
+              imageryProvider = await Cesium.IonImageryProvider.fromAssetId(2); // Bing Maps
+            } catch {
+              // Ion 影像失败时使用默认
             }
           } else {
             terrainProvider = new Cesium.EllipsoidTerrainProvider();
@@ -405,10 +412,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             timeline: false,
             terrainProvider,
             creditContainer: document.createElement("div"),
-            // 关键：禁用 requestRenderMode 确保瓦片持续精炼
-            // 默认模式下 Cesium 仅在相机移动时渲染，导致加载中的高分辨率瓦片无法显示
             requestRenderMode: false,
           });
+
+          // 显式添加 Ion 影像源
+          if (imageryProvider) {
+            viewer.imageryLayers.removeAll();
+            viewer.imageryLayers.addImageryProvider(imageryProvider);
+          }
 
           viewer.scene.globe.depthTestAgainstTerrain = true;
           viewer.scene.fog.enabled = true;

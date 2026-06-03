@@ -36,7 +36,7 @@ import {
 } from "@/lib/terrain-categories";
 import type { TerrainCategory, TerrainPoint } from "@/types/terrain";
 
-const TERRAINS: TerrainPoint[] = [
+const RAW_TERRAINS = [
   // Mountain Ranges
   tianshan,
   altai,
@@ -79,6 +79,11 @@ const TERRAINS: TerrainPoint[] = [
   maigaiti,
 ] as TerrainPoint[];
 
+const TERRAINS: TerrainPoint[] = RAW_TERRAINS.map((t) => ({
+  ...t,
+  region: t.region ?? "xinjiang",
+}));
+
 export interface TerrainCategoryGroup {
   category: TerrainCategory;
   label: string;
@@ -112,6 +117,9 @@ export function getTerrainsByCategory(): TerrainCategoryGroup[] {
     ),
   })).filter((group) => group.terrains.length > 0);
 }
+
+/** 预计算的分类分组（供层级构建使用） */
+export const TERRAIN_CATEGORY_GROUPS: TerrainCategoryGroup[] = getTerrainsByCategory();
 
 export function getTerrainById(id: string): TerrainPoint | undefined {
   return TERRAINS.find((t) => t.id === id);

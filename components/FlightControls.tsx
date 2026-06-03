@@ -1,8 +1,9 @@
 "use client";
 
-import type { TerrainCategoryGroup } from "@/lib/terrain";
 import type { TerrainPoint } from "@/types/terrain";
-import { useCallback, useState } from "react";
+import type { TerrainCategoryGroup } from "@/lib/terrain";
+import { buildTerrainHierarchy, type HierarchyNode } from "@/lib/terrain-hierarchy";
+import { useCallback, useMemo, useState } from "react";
 
 interface FlightControlsProps {
   groups: TerrainCategoryGroup[];
@@ -17,10 +18,37 @@ export default function FlightControls({
   disabled,
   onSelect,
 }: FlightControlsProps) {
-  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
+  // 从 localStorage 恢复展开状态，或使用默认值
+  const [expandedRegions, setExpandedRegions] = useState<Record<string, boolean>>(() => {
+    if (typeof window === "undefined") return {};
+    try {
+      const saved = localStorage.getItem("fge-region-expanded");
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>({});
+
+  const hierarchy = useMemo(() => {
+    const allTerrains = groups.flatMap((g) => g.terrains);
+    return buildTerrainHierarchy(allTerrains, groups);
+  }, [groups]);
+
+  // 持久化展开状态
+  const toggleRegion = useCallback((regionId: string) => {
+    setExpandedRegions((prev) => {
+      const next = { ...prev, [regionId]: !prev[regionId] };
+      try {
+        localStorage.setItem("fge-region-expanded", JSON.stringify(next));
+      } catch { /* ignore */ }
+      return next;
+    });
+  }, []);
 
   const toggleCategory = useCallback((id: string) => {
-    setCollapsed((prev) => ({ ...prev, [id]: !prev[id] }));
+    setExpandedCategories((prev) => ({ ...prev, [id]: !prev[id] }));
   }, []);
 
   const total = groups.reduce((n, g) => n + g.terrains.length, 0);
@@ -29,52 +57,119 @@ export default function FlightControls({
     <div className="flex flex-col">
       <p className="mb-3 text-[10px] text-white/25 tracking-wide">{total} 个地貌</p>
 
-      <div className="flex flex-col gap-0.5">
-        {groups.map((group) => {
-          const isCollapsed = collapsed[group.category] ?? false;
-
-          return (
-            <section key={group.category} className="mb-1">
-              <button
-                type="button"
-                onClick={() => toggleCategory(group.category)}
-                className="flex w-full items-center gap-2 px-1 py-2 text-left transition hover:bg-white/[0.03] rounded-lg"
-                aria-expanded={!isCollapsed}
-              >
-                <span
-                  className={[
-                    "flex h-3 w-3 items-center justify-center text-[7px] text-amber-400/30 transition-transform",
-                    isCollapsed ? "" : "rotate-90",
-                  ].join(" ")}
-                >
-                  ›
-                </span>
-                <span className="flex-1 text-[11px] font-medium text-white/45 tracking-wide">
-                  {group.label}
-                </span>
-                <span className="text-[9px] tabular-nums text-white/12">
-                  {group.terrains.length}
-                </span>
-              </button>
-
-              {!isCollapsed && (
-                <ul className="ml-1.5 space-y-0.5 pb-1.5 pt-0.5">
-                  {group.terrains.map((terrain) => (
-                    <TerrainItem
-                      key={terrain.id}
-                      terrain={terrain}
-                      isActive={terrain.id === activeId}
-                      disabled={disabled}
-                      onSelect={onSelect}
-                    />
-                  ))}
-                </ul>
-              )}
-            </section>
-          );
-        })}
+      <div className="flex flex-col">
+        {hierarchy.map((node) => (
+          <RegionNode
+            key={node.region.id}
+            node={node}
+            activeId={activeId}
+            disabled={disabled}
+            onSelect={onSelect}
+            isExpanded={expandedRegions[node.region.id] ?? node.region.defaultExpanded}
+            expandedCategories={expandedCategories}
+            onToggleRegion={toggleRegion}
+            onToggleCategory={toggleCategory}
+          />
+        ))}
       </div>
     </div>
+  );
+}
+
+function RegionNode({
+  node,
+  activeId,
+  disabled,
+  onSelect,
+  isExpanded,
+  expandedCategories,
+  onToggleRegion,
+  onToggleCategory,
+}: {
+  node: HierarchyNode;
+  activeId: string | null;
+  disabled?: boolean;
+  onSelect: (terrain: TerrainPoint) => void | Promise<void>;
+  isExpanded: boolean;
+  expandedCategories: Record<string, boolean>;
+  onToggleRegion: (id: string) => void;
+  onToggleCategory: (id: string) => void;
+}) {
+  return (
+    <section className="mb-1">
+      {/* 区域标题 */}
+      <button
+        type="button"
+        onClick={() => onToggleRegion(node.region.id)}
+        className="flex w-full items-center gap-2 px-1 py-2 text-left transition hover:bg-white/[0.03] rounded-lg"
+        aria-expanded={isExpanded}
+      >
+        <span
+          className={[
+            "flex h-3 w-3 items-center justify-center text-[7px] text-amber-400/30 transition-transform",
+            isExpanded ? "" : "rotate-90",
+          ].join(" ")}
+        >
+          ›
+        </span>
+        <span className="flex-1 text-[11px] font-medium text-white/50 tracking-wide">
+          {node.region.name}
+        </span>
+        <span className="text-[9px] tabular-nums text-white/12">
+          {node.totalCount}
+        </span>
+      </button>
+
+      {/* 分类列表 */}
+      {isExpanded && (
+        <div className="ml-1.5">
+          {node.categoryGroups.map((group) => {
+            const catKey = `${node.region.id}-${group.category}`;
+            const isCatExpanded = expandedCategories[catKey] ?? true;
+
+            return (
+              <div key={group.category} className="mb-0.5">
+                <button
+                  type="button"
+                  onClick={() => onToggleCategory(catKey)}
+                  className="flex w-full items-center gap-1.5 px-1 py-1.5 text-left transition hover:bg-white/[0.02] rounded-md"
+                  aria-expanded={isCatExpanded}
+                >
+                  <span
+                    className={[
+                      "text-[6px] text-white/15 transition-transform inline-block",
+                      isCatExpanded ? "rotate-90" : "",
+                    ].join(" ")}
+                  >
+                    ›
+                  </span>
+                  <span className="flex-1 text-[10px] text-white/35 tracking-wide">
+                    {group.label}
+                  </span>
+                  <span className="text-[8px] tabular-nums text-white/10">
+                    {group.terrains.length}
+                  </span>
+                </button>
+
+                {isCatExpanded && (
+                  <ul className="ml-2 space-y-0.5 pb-1 pt-0.5">
+                    {group.terrains.map((terrain) => (
+                      <TerrainItem
+                        key={terrain.id}
+                        terrain={terrain}
+                        isActive={terrain.id === activeId}
+                        disabled={disabled}
+                        onSelect={onSelect}
+                      />
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </section>
   );
 }
 

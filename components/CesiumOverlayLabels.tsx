@@ -176,13 +176,15 @@ export default function CesiumOverlayLabels({
                 boxShadow: "0 0 6px 1px rgba(245,158,11,0.15)",
               }}
             />
-            {/* 标注文本 */}
+            {/* 标注文本 — Google Earth 风格 */}
             <span
-              className="whitespace-nowrap font-medium tracking-wide"
+              className="whitespace-nowrap font-medium tracking-wide rounded-sm px-1.5 py-0.5"
               style={{
-                color: label.style?.color ?? "rgba(255,255,255,0.7)",
-                fontSize: label.style?.fontSize ?? 11,
-                textShadow: "0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3)",
+                color: "rgba(255,255,255,0.9)",
+                fontSize: label.style?.fontSize ?? 12,
+                backgroundColor: "rgba(0,0,0,0.3)",
+                textShadow: "0 1px 4px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.5)",
+                backdropFilter: "blur(4px)",
               }}
             >
               {label.text}

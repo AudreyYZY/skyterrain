@@ -1,5 +1,6 @@
 import { stripEmojis } from "@/lib/strip-emojis";
 import type { TerrainLesson } from "@/types/terrain";
+import { useEffect, useRef } from "react";
 
 interface StructuredLessonProps {
   lesson: TerrainLesson;
@@ -26,7 +27,6 @@ const SECTIONS: {
  */
 function splitSentences(text: string): string[] {
   if (!text.trim()) return [];
-  // 按中文标点分句，保留标点
   const parts = text.split(/(?<=[。！？])/g).filter((s) => s.trim().length > 0);
   return parts;
 }
@@ -37,6 +37,18 @@ export default function StructuredLesson({
   activeSentenceIndex,
   activeSection,
 }: StructuredLessonProps) {
+  const activeRef = useRef<HTMLSpanElement>(null);
+
+  // 当前高亮句变化时，滚动到可见区域
+  useEffect(() => {
+    if (activeSentenceIndex != null && activeRef.current) {
+      activeRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+      });
+    }
+  }, [activeSentenceIndex, activeSection]);
+
   const visible = SECTIONS.filter((s) => {
     const text = stripEmojis(lesson[s.key] ?? "");
     return !hideEmptySections || text.length > 0;
@@ -49,7 +61,6 @@ export default function StructuredLesson({
         if (!body) return null;
 
         if (primary) {
-          // 主叙事：分句渲染，支持高亮
           const sentences = splitSentences(body);
           const isActiveSection = activeSection === key;
 
@@ -63,6 +74,7 @@ export default function StructuredLesson({
                 return (
                   <span
                     key={i}
+                    ref={isActive ? activeRef : undefined}
                     className={[
                       "narration-hero inline transition-colors duration-500",
                       isActive ? "text-white/95" : "",
@@ -79,7 +91,6 @@ export default function StructuredLesson({
           );
         }
 
-        // 次要章节：紧凑段落
         return (
           <section key={key} className="accent-line">
             <h3 className="section-label">{heading}</h3>

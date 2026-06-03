@@ -71,4 +71,6 @@ export interface TerrainPoint {
   lesson: TerrainLesson;
   facts: string[];
   knowledge: TerrainKnowledge;
+  /** 所属地理区域（用于层级导航） */
+  region?: string;
 }
