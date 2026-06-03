@@ -4,6 +4,42 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase 4A — Multi-Task: Imagery, Labels, Sidebar, TTS
+
+**Status:** Completed
+
+### P0: Imagery Provider Fix
+- **Root cause:** No `imageryProvider` passed to Cesium Viewer constructor — relied on implicit default
+- **Fix:** Explicitly create `IonImageryProvider.fromAssetId(2)` (Bing Maps) and add to `imageryLayers`
+- **File:** `components/CesiumMap.tsx`
+
+### P0: Sentence Highlighting
+- Added `scrollIntoView` on active sentence ref — auto-scrolls into visible area during narration
+- **File:** `components/StructuredLesson.tsx`
+
+### P1: Hierarchical Sidebar
+- New `lib/terrain-hierarchy.ts` — builds Continent→Region→Category tree
+- `FlightControls` rewritten: collapsible region groups + collapsible category subgroups
+- Expand state persisted via `localStorage`
+- `TerrainPoint.region` field added (default: "xinjiang")
+- **Files:** `lib/terrain-hierarchy.ts`, `lib/terrain.ts`, `types/terrain.ts`, `components/FlightControls.tsx`
+
+### P1: Label Readability
+- Font size 11→12, opacity 0.7→0.9
+- Semi-transparent background pill (`rgba(0,0,0,0.3)`)
+- Stronger text shadow for contrast over bright terrain
+- **File:** `components/CesiumOverlayLabels.tsx`
+
+### P1: TTS 500 Fix
+- 15s timeout on `tts.synthesize()`
+- Retry with exponential backoff (max 2 retries)
+- SSML validation before sending to Edge TTS
+- Structured logging: voice, chars, elapsed, attempt
+- Better error messages
+- **File:** `app/api/tts/route.ts`
+
+---
+
 ## Fix: Cesium Tile Refinement & Trackpad Zoom
 
 **Status:** Completed

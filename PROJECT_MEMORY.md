@@ -32,10 +32,10 @@ app/
   page.tsx                  — Entry → ExplorerApp
 
 components/
-  CesiumMap.tsx             — 3D globe, camera system, route flight engine, projectToScreen
+  CesiumMap.tsx             — 3D globe, camera system, route flight engine, projectToScreen, imagery provider
   ExplorerApp.tsx           — Main orchestrator, label initialization
-  CesiumOverlayLabels.tsx   — Spatial awareness labels (HTML overlays on Cesium)
-  FlightControls.tsx        — Flat category terrain list
+  CesiumOverlayLabels.tsx   — Spatial awareness labels (HTML overlays on Cesium, zoom-aware, edge-fade)
+  FlightControls.tsx        — Hierarchical sidebar (region → category → terrain)
   NarrationPanel.tsx        — Right floating panel (primary UI)
   StructuredLesson.tsx      — Lesson content (3 sections: seeing, formation, history)
   TerrainGlanceCards.tsx    — Compact metadata strip
@@ -47,8 +47,9 @@ components/
   PhotoModePanel.tsx        — Photo identification mode
 
 lib/
-  terrain.ts                — Terrain registry (32 locations, category merge)
+  terrain.ts                — Terrain registry (32 locations, category merge, region assignment)
   terrain-categories.ts     — Flat category order + labels (7 categories)
+  terrain-hierarchy.ts      — Continent→Region→Category tree builder
   narration-engine.ts       — Structured data → Chinese narration
   lesson.ts                 — Lesson-to-speech conversion (3 sections: seeing, formation, history)
   speech.ts                 — TTS system (Edge TTS + browser fallback)
@@ -204,6 +205,14 @@ Urumqi, Kashgar, Hotan, Turpan
 - Fixed sidebar overflow: overlay uses `absolute inset-x-0 top-12 bottom-0`
 - Implemented spatial awareness labels: CesiumOverlayLabels + projectToScreen + 15 major landmarks
 - New file: `components/CesiumOverlayLabels.tsx`
+
+### Phase 4A — Multi-Task Polish
+- **Imagery provider fix**: Explicit `IonImageryProvider.fromAssetId(2)` instead of implicit default
+- **Sentence highlighting**: `scrollIntoView` on active sentence during narration
+- **Hierarchical sidebar**: `terrain-hierarchy.ts` — region → category → terrain tree
+- **Label readability**: Font 12px, opacity 0.9, background pill, stronger text shadow
+- **TTS 500 fix**: 15s timeout, retry with backoff, SSML validation, structured logging
+- New file: `lib/terrain-hierarchy.ts`
 
 ## Design Philosophy
 
