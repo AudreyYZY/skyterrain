@@ -166,8 +166,11 @@ export default function ExplorerApp() {
           { key: "history", text: terrain.lesson.history },
           { key: "observation", text: terrain.lesson.observation ?? "" },
         ].filter(s => s.text.trim().length > 0);
+        console.log("[ExplorerApp] before startHighlightSections, sections:", sections.length);
         startHighlightSections(sections);
+        console.log("[ExplorerApp] after startHighlightSections");
         await speakText(ssml);
+        console.log("[ExplorerApp] speakText done, calling stopHighlight");
         stopHighlight();
       }
     },
@@ -215,7 +218,9 @@ export default function ExplorerApp() {
           { key: "history", text: terrain.lesson.history },
           { key: "observation", text: terrain.lesson.observation ?? "" },
         ].filter(s => s.text.trim().length > 0);
+        console.log("[ExplorerApp:narrateWaypoint] before startHighlightSections, sections:", highlightSections.length);
         startHighlightSections(highlightSections);
+        console.log("[ExplorerApp:narrateWaypoint] after startHighlightSections");
 
         // 等待叙述完成
         setIsSpeaking(true);
