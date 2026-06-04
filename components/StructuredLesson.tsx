@@ -65,6 +65,14 @@ export default function StructuredLesson({
     cumulativeOffset += splitSentences(text).length;
   }
 
+  // 调试：渲染时的状态
+  console.log("[StructuredLesson]", {
+    activeSentenceIndex,
+    activeSection,
+    totalSentences: cumulativeOffset,
+    sections: Object.fromEntries(sectionOffsets),
+  });
+
   return (
     <div className="space-y-6">
       {visible.map(({ key, heading, primary }) => {
@@ -83,6 +91,10 @@ export default function StructuredLesson({
                 const isActive = isActiveSection && activeSentenceIndex === globalIndex;
                 const isPast = isActiveSection && activeSentenceIndex != null && globalIndex < activeSentenceIndex;
                 const isFuture = isActiveSection && activeSentenceIndex != null && globalIndex > activeSentenceIndex;
+
+                if (isActive) {
+                  console.log("[StructuredLesson] ACTIVE sentence:", { key, i, globalIndex, sentence: sentence.slice(0, 30) });
+                }
 
                 return (
                   <span

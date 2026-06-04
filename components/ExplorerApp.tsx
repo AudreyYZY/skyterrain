@@ -73,6 +73,11 @@ export default function ExplorerApp() {
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, stopHighlight } = useSentenceHighlight();
 
+  // 调试：高亮状态变化
+  useEffect(() => {
+    console.log("[Highlight]", { activeSentenceIndex, activeSection, isSpeaking });
+  }, [activeSentenceIndex, activeSection, isSpeaking]);
+
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
     const layerId = "terrain-labels";
