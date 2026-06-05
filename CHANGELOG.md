@@ -4,76 +4,127 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase 5D — Documentary Map Labeling System
+
+**Date:** 2026-06-04
+**Status:** Completed
+
+### Changes
+
+**Label System Redesign:**
+- 6 major landforms (天山, 昆仑山, 阿尔泰山, 准噶尔盆地, 塔里木盆地, 塔克拉玛干沙漠) always visible at any zoom level
+- Major labels: 28px, weight 600, letter-spacing 0.08em
+- Triple-layer text shadow for cinematic depth
+- Removed background bubbles and dot markers — pure text
+- Font: Noto Sans SC / PingFang SC / Microsoft YaHei
+
+**Files Modified:**
+- `lib/cinematic-labels.ts` — Added `major` field, major labels always visible, larger font sizes
+- `components/CesiumOverlayLabels.tsx` — Cinematic typography, no background, wider edge fade (60px), larger gap (80px)
+- `components/ExplorerApp.tsx` — 6 major landforms with `major: true`
+
+---
+
+## Phase 5C — Sentence Highlighting Fix (Multi-Section)
+
+**Date:** 2026-06-04
+**Status:** Completed
+
+### Root Cause
+
+`speakText()` called `stopSpeaking()` which called `stopHighlight()`, immediately clearing the state set by `startHighlightSections()`.
+
+### Fix
+
+- Added `stopAudio()` — stops audio only, preserves highlight state
+- `speakText()` uses `stopAudio()` instead of `stopSpeaking()`
+- `stopSpeaking()` preserved for user-initiated stops
+- Extracted `speakLessonWithHighlight()` — shared by auto-narration and manual speak button
+- `startHighlightSections()` now tracks `activeSection` as highlight advances through sections
+
+**Files Modified:**
+- `components/ExplorerApp.tsx` — Added `stopAudio()`, `speakLessonWithHighlight()`, updated `onSpeak` button
+- `components/useSentenceHighlight.ts` — Added `startHighlightSections()`, `findSectionForIndex()`, multi-section tracking
+- `components/StructuredLesson.tsx` — All sections render sentence-level highlighting with cumulative offset
+
+---
+
+## Phase 5B — TTS Fix
+
+**Date:** 2026-06-04
+**Status:** Completed
+
+### Problem 1: `b.mask is not a function`
+
+**Root cause:** `ws@8.21.0`'s `buffer-util.js` uses conditional `require('bufferutil')`. Webpack drops the JS fallback during bundling.
+
+**Fix:** `serverExternalPackages: ["ws", "bufferutil"]` in next.config.ts.
+
+### Problem 2: SSML Tags Read as Literal Text
+
+**Root cause:** `edge-tts-universal` always wraps input in `<speak><voice><prosody>`. Passing SSML with `<break>` caused nested tags.
+
+**Fix:** `lessonToSSML()` returns plain text. Removed all manual SSML construction in ExplorerApp.
+
+### Problem 3: Trackpad Zoom Blocked
+
+**Root cause:** `CesiumOverlayLabels` overlay had `touch-action: none` blocking pinch gestures.
+
+**Fix:** Removed `touch-action` from overlay.
+
+### Problem 4: CSS Priority Override
+
+**Root cause:** `.narration-hero` had `color: rgba(255,255,255,0.8)` overriding Tailwind utilities.
+
+**Fix:** Removed `color` from `.narration-hero`.
+
+**Files Modified:**
+- `next.config.ts` — Added `serverExternalPackages`
+- `lib/lesson.ts` — `wrapSSML` returns plain text, removed `escapeSSML`
+- `components/ExplorerApp.tsx` — Removed manual SSML construction
+- `components/CesiumOverlayLabels.tsx` — Removed `touch-action`
+- `app/globals.css` — Removed `color` from `.narration-hero`
+
+---
+
+## Phase 5A — Highlighting, Tile Loading, Hierarchy Fixes
+
+**Date:** 2026-06-03
+**Status:** Completed
+
+### Changes
+
+1. **Sentence Highlighting:** `startHighlight` now uses `lesson.seeing` only, matching `StructuredLesson` render text. Added `stripEmojis` before `splitSentences`.
+
+2. **Trackpad Zoom:** Removed `touchAction: "pan-x pan-y"` from overlay div.
+
+3. **Terrain Tiles:** Reset `maximumScreenSpaceError` from 1.5 to 2.0 (default).
+
+**Files Modified:**
+- `components/ExplorerApp.tsx`
+- `components/useSentenceHighlight.ts`
+- `components/CesiumMap.tsx`
+
+---
+
 ## Phase 4A — Multi-Task: Imagery, Labels, Sidebar, TTS
 
 **Status:** Completed
 
 ### P0: Imagery Provider Fix
-- **Root cause:** No `imageryProvider` passed to Cesium Viewer constructor — relied on implicit default
-- **Fix:** Explicitly create `IonImageryProvider.fromAssetId(2)` (Bing Maps) and add to `imageryLayers`
-- **File:** `components/CesiumMap.tsx`
+- Explicit `IonImageryProvider.fromAssetId(2)` (Bing Maps)
 
 ### P0: Sentence Highlighting
-- Added `scrollIntoView` on active sentence ref — auto-scrolls into visible area during narration
-- **File:** `components/StructuredLesson.tsx`
+- `scrollIntoView` on active sentence during narration
 
 ### P1: Hierarchical Sidebar
-- New `lib/terrain-hierarchy.ts` — builds Continent→Region→Category tree
-- `FlightControls` rewritten: collapsible region groups + collapsible category subgroups
-- Expand state persisted via `localStorage`
-- `TerrainPoint.region` field added (default: "xinjiang")
-- **Files:** `lib/terrain-hierarchy.ts`, `lib/terrain.ts`, `types/terrain.ts`, `components/FlightControls.tsx`
+- `terrain-hierarchy.ts` — region → category → terrain tree
 
 ### P1: Label Readability
-- Font size 11→12, opacity 0.7→0.9
-- Semi-transparent background pill (`rgba(0,0,0,0.3)`)
-- Stronger text shadow for contrast over bright terrain
-- **File:** `components/CesiumOverlayLabels.tsx`
+- Font 12px, opacity 0.9, background pill, stronger text shadow
 
 ### P1: TTS 500 Fix
-- 15s timeout on `tts.synthesize()`
-- Retry with exponential backoff (max 2 retries)
-- SSML validation before sending to Edge TTS
-- Structured logging: voice, chars, elapsed, attempt
-- Better error messages
-- **File:** `app/api/tts/route.ts`
-
----
-
-## Fix: Cesium Tile Refinement & Trackpad Zoom
-
-**Status:** Completed
-
-### Problem
-- Terrain loaded but imagery was partially blurred with visible tile boundaries
-- High-resolution tiles never refined after flyTo
-- Trackpad two-finger zoom not working
-- Map labels difficult to read
-
-### Root Cause
-Cesium's default `requestRenderMode` only renders when camera moves or `requestRender()` is called explicitly. After tiles finish loading in the background, nothing triggers `requestRender()`, so the globe stays at low-resolution placeholders.
-
-### Fix
-
-**CesiumMap.tsx:**
-- Added `requestRenderMode: false` to Viewer config — forces continuous rendering
-- Lowered `maximumScreenSpaceError` from 2.0 → 1.5 — sharper tiles at all zoom levels
-- Added `camera.moveEnd` listener — triggers `requestRender()` after camera settles
-- Added `touch-action: none` on canvas container — enables trackpad gestures
-- Added `requestRender()` call in ResizeObserver callback
-
-**app/globals.css:**
-- Added `touch-action: none` on `.cesium-widget canvas` — ensures trackpad zoom works
-
-**components/CesiumOverlayLabels.tsx:**
-- Moved `overflow-hidden` to inline style (no functional change)
-
-### Files Modified
-| File | Lines Changed |
-|------|--------------|
-| `components/CesiumMap.tsx` | +17 -2 |
-| `app/globals.css` | +5 |
-| `components/CesiumOverlayLabels.tsx` | +1 -1 |
+- 15s timeout, retry with backoff, SSML validation
 
 ---
 
@@ -81,618 +132,14 @@ Cesium's default `requestRenderMode` only renders when camera moves or `requestR
 
 **Status:** Completed
 
-### Task A: Narration Voice Upgrade
+### Narration Voice Upgrade
+- Default voice: XiaoyiNeural (calmer, documentary-style)
+- Rate: -18%, Pitch: -2Hz
+- Browser fallback strips SSML to plain text
 
-**Problem:** Narration sounded robotic, stiff, unnatural — too much "AI voice".
-
-**Solution:**
-- Changed default voice to `XiaoyiNeural` (calmer, more documentary-style)
-- Added SSML support for natural pauses and prosody
-- Slowed rate from `-5%` to `-18%`, lowered pitch from `+0Hz` to `-2Hz`
-- Section breaks: 1.2s pause between seeing/formation/history sections
-- Flyover-to-lesson transition: 0.8s pause
-- `prosody rate="slow" pitch="-2%"` wrapping for documentary pacing
-
-**Files Modified:**
-- `lib/voice-preference.ts` — Default voice: `XiaoyiNeural`
-- `lib/lesson.ts` — Added `lessonToSSML()`, `wrapSSML()`, `escapeSSML()`
-- `lib/speech.ts` — Added `isSSML()`, `stripSSML()` for browser fallback
-- `app/api/tts/route.ts` — Rate `-18%`, pitch `-2Hz`, default `XiaoyiNeural`
-- `components/ExplorerApp.tsx` — All speech calls use `lessonToSSML()`
-
-### Task B: Remove AI Mode, Add Extended Reading
-
-**Problem:** AI optimization button reduced content quality — LLM output less accurate than curated JSON data.
-
-**Solution:**
-- Removed `aiEnhancing` state and `enhanceLessonWithAi()` from ExplorerApp
-- Replaced "AI" button with "延伸阅读" toggle button
-- Extended reading shows local `TerrainKnowledge` data: terrain features, climate, history, culture, interesting facts
+### Remove AI Mode
+- Replaced "AI" button with "扩展解读" (expandable local knowledge)
 - No API calls — all data is local JSON
-
-**Files Modified:**
-- `components/NarrationPanel.tsx` — Removed AI props, added expandable extended reading section
-- `components/ExplorerApp.tsx` — Removed AI state, function, and props
-
-### Architecture Notes
-- `lib/mimo.ts` and `app/api/narration/route.ts` are now dead code — kept for future LLM narration features
-- SSML is passed directly to Edge TTS; browser fallback strips SSML tags to plain text
-
----
-
-## Fix: Cesium Render Regression After Phase 2
-
-**Status:** Completed
-
-### Problem
-After Phase 2 (Cinematic Label Lifecycle), the Cesium globe went black — WebGL canvas stopped rendering.
-
-### Root Cause
-`camera.changed` event fired on every animation frame (~60fps). Each event called `onCameraChange` → `setCameraState` → full React re-render of ExplorerApp + children. This competed with Cesium's WebGL render loop for main thread time, causing render starvation.
-
-### Fix
-- **Removed** `camera.changed` listener entirely from CesiumMap
-- **Removed** `onCameraChange` prop from CesiumMap
-- **Removed** `cameraState` React state from ExplorerApp
-- **Replaced** camera-driven updates with 500ms `setInterval` polling
-- CesiumOverlayLabels now polls `getCameraState()` via imperative handle — no React re-renders
-
-### Why This Works
-- `setInterval` runs outside React's reconciliation cycle
-- `getCameraState()` reads Cesium camera position directly (no state)
-- Labels update every 500ms — smooth enough for documentary pacing
-- Cesium's WebGL render loop is no longer interrupted by React
-
-### Files Modified
-- `components/CesiumMap.tsx` — Removed `onCameraChange` prop, camera event listeners
-- `components/ExplorerApp.tsx` — Removed `cameraState` state, `mapReady` state
-- `components/CesiumOverlayLabels.tsx` — Rewritten to use 500ms polling via `mapRef`
-
-### Lessons Learned
-- `camera.changed` in CesiumJS fires at ~60fps — never hook it to React state
-- Use `camera.moveEnd` for one-shot events, or polling for continuous tracking
-- Cesium WebGL rendering and React reconciliation compete for main thread — avoid coupling them
-
-### Known Remaining Issues
-- Labels update every 500ms (not frame-perfect) — acceptable for documentary pacing
-- `getCameraState()` is called twice per tick (once for camera state, once per label projection) — could be optimized
-
----
-
-## Architecture Decision Records
-
-**Status:** Completed
-
-### Added
-- `docs/ADR.md` — 6 architecture decision records documenting key technical decisions
-
-### Decisions Documented
-| ADR | Title | Key Insight |
-|-----|-------|-------------|
-| 001 | Avoid camera.changed → React State | camera.changed fires at 60fps — never hook to React state |
-| 002 | Use Polling For Label Updates | 500ms setInterval decoupled from Cesium frame rate |
-| 003 | Narration Queue Must Be Serial | Prevents audio overlap and UI desync |
-| 004 | Route Narration Cannot Block Flight | Coordinated non-blocking for continuous flight |
-| 005 | Protected Infrastructure Policy | Prevents regression cycles in Cesium ↔ React |
-| 006 | Geography Education First | Content over complexity |
-
-### Updated
-- `PROJECT_MEMORY.md` — Added reference to ADR.md
-
----
-
-## Phase 3 — Airplane Observation Education
-
-**Status:** Completed
-
-### Problem
-Narration was encyclopedia-like — users learned facts but couldn't recognize terrain from the air. No guidance on how to distinguish similar terrain types.
-
-### Solution
-Added `observation` field to `TerrainLesson` — a 4th narration section titled "飞机上如何区分" that teaches airplane passengers to recognize and distinguish terrain.
-
-### Content Architecture
-
-**TerrainLesson (4 sections):**
-1. `seeing` — 飞机窗外 (primary, hero text)
-2. `formation` — 地貌形成
-3. `history` — 历史与人文
-4. `observation` — 飞机上如何区分 (NEW, optional)
-
-**Observation content covers:**
-- What passengers notice first
-- Key visual patterns from the air
-- How to distinguish from nearby similar terrain
-- Comparison pairs: 天山 vs 阿尔泰, 昆仑 vs 喀喇昆仑, 塔克拉玛干 vs 古尔班通古特, etc.
-
-### Source Attribution
-All observation content is traceable to:
-- 《中国国家地理》新疆专辑
-- 中国科学院各研究所
-- 新疆地方志
-- 国家公园科学考察报告
-
-### Changes
-
-**types/terrain.ts:**
-- Added `observation?: string` to `TerrainLesson` interface
-
-**components/StructuredLesson.tsx:**
-- Added 4th section: `{ key: "observation", heading: "飞机上如何区分" }`
-- Renders with same accent-line style as other secondary sections
-
-**lib/lesson.ts:**
-- `lessonToSpeech()` now includes `observation` in TTS output
-
-**lib/narration-engine.ts:**
-- `generateNarrationFromTerrainData()` appends observation text
-
-**28 terrain JSON files:**
-- Added `observation` field with comparison-based educational content
-- Skipped: tianchi, turpan-basin (no clear comparison pair)
-
-### Comparison Pairs Covered
-| Pair | Key Distinction |
-|------|----------------|
-| 天山 vs 阿尔泰 | 走向、森林类型、雪线高度 |
-| 昆仑 vs 喀喇昆仑 | 冰川规模、雪线、山体形态 |
-| 塔克拉玛干 vs 古尔班通古特 | 流动/固定、植被、降雪 |
-| 喀纳斯 vs 赛里木 | 冰蚀湖/构造湖、颜色、周围植被 |
-| 准噶尔 vs 塔里木盆地 | 开口方向、湿度、沙丘类型 |
-| 伊犁河谷 vs 南疆河谷 | 湿度、植被、农业类型 |
-
----
-
-## Phase 2 — Cinematic Label Lifecycle
-
-**Status:** Completed
-
-### Problem
-- Labels sometimes disappeared or didn't update with camera movement
-- No zoom-level visibility rules — all labels shown regardless of distance
-- No overlap prevention — labels could stack on top of each other
-- 500ms polling interval felt static, not camera-aware
-- No edge fade — labels rendered half off-screen
-
-### Architecture: Camera-Driven Label System
-
-```
-CesiumMap
-├── camera.changed (150ms throttle) → onCameraChange(CameraState)
-├── camera.moveEnd → onCameraChange(CameraState)
-└── getCameraState() → { altitude, zoomLevel, lon, lat }
-
-ExplorerApp
-├── cameraState = useState<CameraState>
-├── onCameraChange={setCameraState}
-└── CesiumOverlayLabels(cameraState={cameraState})
-
-CesiumOverlayLabels
-├── useEffect([cameraState]) → updateLabels()
-├── labelManager.getVisibleLabels(zoomLevel) → filtered by zoom
-├── projectToScreen(lat, lon) → { x, y }
-├── edgeFade(x, y, canvasW, canvasH) → 0-1 opacity
-├── resolveOverlaps(labels) → hide low-priority overlapping labels
-└── Render with CSS opacity transitions
-```
-
-### Changes
-
-**CesiumMap.tsx:**
-- Added `CameraState` interface (altitude, zoomLevel, lon, lat)
-- Added `getCameraState()` to imperative handle
-- Added `onCameraChange` prop with 150ms throttled listener
-- Listens to both `camera.changed` and `camera.moveEnd`
-
-**CesiumOverlayLabels.tsx:**
-- Complete rewrite: camera-driven updates instead of 500ms polling
-- **Zoom-level visibility**: `getVisibleLabels(zoomLevel)` filters labels by zoom
-  - Zoom 1-6 (far): only priority ≥ 80 (天山, 塔克拉玛干, 昆仑...)
-  - Zoom 7-12 (medium): priority ≥ 60
-  - Zoom 13+ (close): all labels
-- **Edge fade**: labels near screen edge fade out via `edgeFade()` function
-- **Overlap prevention**: `resolveOverlaps()` uses grid-based collision detection
-  - Labels quantized to 60px grid cells
-  - Higher priority labels win; losers get visibility=0
-- **CSS transitions**: `opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1)` for smooth fade
-- **Enhanced text shadow**: `0 1px 3px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.3)` for readability
-
-**lib/cinematic-labels.ts:**
-- Improved `shouldShowLabel` zoom filtering:
-  - Zoom ≤ 6: priority ≥ 80
-  - Zoom ≤ 12: priority ≥ 60
-  - Zoom 13+: all labels
-
-**ExplorerApp.tsx:**
-- Added `cameraState` state
-- Passes `onCameraChange={setCameraState}` to CesiumMap
-- Passes `cameraState={cameraState}` to CesiumOverlayLabels
-- Differentiated label priorities:
-  - Primary (90): 天山, 塔克拉玛干, 昆仑, 喀什, 伊犁河谷
-  - Secondary (70): 阿尔泰, 喀喇昆仑, 帕米尔, 喀纳斯, 赛里木, 罗布泊, 吐鲁番
-  - Tertiary (50): 古尔班通古特, 塔里木河, 火焰山, 巴音布鲁克
-
-### Performance Impact
-- **Before**: 500ms `setInterval` polling, all labels rendered every tick
-- **After**: 150ms throttled camera events, labels only update when camera moves
-- Overlap detection is O(n) grid lookup — negligible for 15 labels
-- CSS `will-change: opacity, left, top` hints for GPU acceleration
-
----
-
-## Phase 1 — Terrain Label Interaction System
-
-**Status:** Completed
-
-### Problem
-- Clicking terrain labels caused runtime error (unhandled promise rejection)
-- Camera didn't fly to selected terrain
-- Terrain selection not synchronized with sidebar/right panel
-- `flyToTerrainAndWait` had `async` inside `new Promise()` anti-pattern
-
-### Root Cause
-`new Promise(async (resolve) => { ... })` — if `cameraAt()` threw inside the async callback, the outer Promise never settled. `handleSelectTerrain` hung forever at the await.
-
-### Fix
-
-**CesiumMap.tsx:**
-- `flyToTerrainAndWait`: Removed `async` from Promise constructor. `cameraAt()` now runs before Promise creation via `.then()` chain
-- `flyToTerrain`: Uses `cesiumRef.current` instead of re-importing Cesium. Added `.catch()` error handling
-- Added `viewer.isDestroyed()` guards
-- Added diagnostic logging for fly start/complete/cancel
-
-**ExplorerApp.tsx:**
-- `handleSelectTerrain`: Wrapped in try/catch, errors set `error` state
-- Added diagnostic logging for terrain selection flow
-- Changed `labelManager.clear()` → `labelManager.removeLayer("explore-labels")` — preserves terrain landmarks
-
-**lib/cinematic-labels.ts:**
-- Added `removeLayer(id)` method
-
-### Interaction Architecture
-
-All paths converge on `handleSelectTerrain`:
-```
-Sidebar click → handleSelectTerrain → try: fly → narrate → dwell → catch: error
-Label click   → handleSelectTerrain → try: fly → narrate → dwell → catch: error
-```
-
----
-
-## Fix: Cesium Initialization Regression
-
-**Status:** Completed
-
-### Problem
-- Black screen on startup — Cesium Viewer never created
-- `waitForDimensions()` could hang forever if container had 0×0 dimensions
-- `camera.changed` event caused 60fps re-render storm in ExplorerApp
-
-### Root Causes
-1. `waitForDimensions` used ResizeObserver with no timeout — if container started at 0×0, Promise never resolved
-2. `onCameraChange` callback triggered `setCameraVersion` on every camera frame, causing full React re-render cycle at 60fps
-
-### Fix
-- `components/CesiumMap.tsx`:
-  - Added 3-second timeout to `waitForDimensions` — forces init to proceed even if container is 0×0
-  - Removed `onCameraChange` prop and `camera.changed` event listener
-  - Added debug console logging for initialization flow
-- `components/ExplorerApp.tsx`:
-  - Removed `cameraVersion` state (no longer needed)
-  - Removed `onCameraChange` prop from CesiumMap
-
-### Label Updates
-CesiumOverlayLabels already has a 500ms `setInterval` that polls `projectToScreen` for each label. This is sufficient for smooth label updates without triggering React re-renders on every camera frame.
-
----
-
-## Phase L — Information Architecture & UX Cleanup
-
-**Status:** Completed
-
-### Task 1: Simplified Sidebar Categories
-**Removed:**
-- `WorldviewNode`, `WorldviewSubgroup` types from `types/terrain.ts`
-- `GeographyComparison`, `GeographyWorldviewNode` types from `types/terrain.ts`
-- `GEOGRAPHY_COMPARISONS` array and helper functions from `lib/terrain-categories.ts`
-- Two-level collapsible tree from `components/FlightControls.tsx`
-
-**Changed:**
-- `lib/terrain-categories.ts` — Rewritten to simple flat category list (7 categories: 山脉, 湖泊, 沙漠, 盆地, 河谷, 景观, 城市)
-- `lib/terrain.ts` — Added `CATEGORY_MERGE` mapping to group oasis/silk_road under 景观, valley under 河谷
-- `components/FlightControls.tsx` — Simplified to single-level collapsible categories
-
-### Task 2: Fixed Narration/UI Mismatch
-**Problem:** `StructuredLesson` only renders 3 sections (seeing, formation, history) but narration was still speaking `funFact` content.
-
-**Removed:**
-- `funFact: string` from `TerrainLesson` interface in `types/terrain.ts`
-- `funFact` from `lessonToSpeech()` in `lib/lesson.ts`
-- `funFact` fallback from `lib/narration-engine.ts`
-- `funFact` from `ROUTE_END_LESSON` in `components/ExplorerApp.tsx`
-- `funFact` from AI prompt and parser in `lib/mimo.ts`
-- `funFact` from all 4 city lessons in `lib/city-lessons.ts`
-- `funFact` field from all 32 terrain JSON files
-
-**Result:** Narration speech now exactly matches the 3 visible UI sections.
-
-### Task 3: Fixed Sidebar Overflow
-**Problem:** Last route card and buttons partially hidden at bottom.
-
-**Changed:**
-- `components/ExplorerApp.tsx` — Overlay div: `h-full pt-12` → `absolute inset-x-0 top-12 bottom-0` (proper viewport containment)
-- `components/ResizablePanel.tsx` — Bottom padding: `pb-6` → `pb-8` (more safe area)
-
-### Task 4: Implemented Spatial Awareness Labels
-**Added:**
-- `components/CesiumOverlayLabels.tsx` — New component rendering cinematic map labels as HTML overlays
-- `projectToScreen()` method on `CesiumMapHandle` — projects lat/lon to screen coordinates
-- `onCameraChange` callback prop on `CesiumMap` — triggers label position updates
-
-**Changed:**
-- `components/CesiumMap.tsx` — Added `projectToScreen` method, camera change listener
-- `components/ExplorerApp.tsx` — Integrates CesiumOverlayLabels, initializes 15 major terrain labels on mount
-
-**Label Design:**
-- Only shows major landmarks (天山, 昆仑, 塔克拉玛干, etc.)
-- Cinematic dot + text with drop shadow
-- Hidden during route flight (avoids distraction)
-- Click label → fly to terrain + sync narration
-- Camera-change driven position updates (rAF throttled)
-
-### Task 5: Architecture Cleanup
-**Removed:**
-- `GeographyComparison` and `GeographyWorldviewNode` types
-- `GEOGRAPHY_COMPARISONS` array and helper functions
-- `WorldviewNode` and `WorldviewSubgroup` types
-- Unused `createWaypointLabel` import from ExplorerApp
-
----
-
-## Phase K — Flight Pacing & Narration Synchronization
-
-**Status:** Completed
-
-### Problem
-- Route narration was fire-and-forget — camera moved while narration played
-- No narration queue — multiple narrations could overlap
-- No cancellation — stopping flight didn't stop narration
-- App felt like a fast slideshow instead of calm flight
-
-### Added
-- `lib/narration-queue.ts` — NarrationQueue class with priority, cancellation, serial execution
-- `lib/cinematic-labels.ts` — CinematicLabelManager for decoupled annotation layer
-
-### Changed
-- `components/ExplorerApp.tsx` — `narrateWaypoint` is now async/await, uses `narrationCancelledRef`, integrates cinematic labels
-- `components/CesiumMap.tsx` — `onWaypointArrival` is now `await`ed, added post-narration dwell
-
-### Synchronization Architecture
-```
-flyLeg → await onWaypointArrival → dwell → next flyLeg
-              ↓
-              await speakAndWait (camera waits at waypoint)
-              await POST_NARRATION_DWELL_MS (2s digest)
-```
-
-### Key Constants
-- `POST_NARRATION_DWELL_MS = 2000` — Digest pause after narration
-- `narrationQueue.gapMs = 800` — Gap between sequential narrations
-
----
-
-## Phase A — Cinematic Narration Panel Redesign
-
-**Status:** Completed
-
-### Changed
-- `app/globals.css` — Removed harsh `panel-vignette`, replaced `accent-bar` with `accent-line`, added `narration-hero` / `narration-secondary` / `section-label` classes
-- `components/StructuredLesson.tsx` — Removed `funFact` section, renamed headings to `飞机窗外`, `地貌形成`, `历史与人文`
-- `components/NarrationPanel.tsx` — Simplified title, ultra-compact metadata, muted buttons (`bg-white/[0.06]`)
-- `components/TerrainGlanceCards.tsx` — Single-line `location / elevation` format
-- `components/SourceAttribution.tsx` — Stripped to single-line source names
-- `components/VoiceSelector.tsx` — Transparent background, smaller text
-- `components/ExplorerApp.tsx` — Panel: 380px, `bg-[#0a0e12]/40`, `backdrop-blur-3xl`
-
-### Design Decisions
-- Removed `funFact` — doesn't fit documentary tone
-- Removed `panel-vignette` — too harsh, replaced with natural transparency
-- Hero narration at 17px/1.9 — dominant, cinematic
-- Secondary sections at 13px/white/45 — supportive, not competing
-
----
-
-## Phase B — Cinematic Flight Camera System
-
-**Status:** Completed
-
-### Changed
-- `components/CesiumMap.tsx` — Complete camera system overhaul
-- `data/routes/north-xinjiang.json` — Adjusted pacing parameters
-
-### Camera Design
-- Pitch: -35° → -42° (realistic airplane window angle)
-- Roll: 0° → 0.8° (subtle turbulence simulation)
-- Easing: `cubicEaseOut` → `quarticEaseOut` (gravity-weighted deceleration)
-- Overview: `smoothStep` easing with -30° pitch (cinematic reveal)
-- Terrain-aware heights via `viewHeightForTerrain()`
-- Duration: 6s → 7s for terrain, 4s → 5s for overview
-
-### Terrain View Heights
-| Type | Height | Rationale |
-|------|--------|-----------|
-| mountain_range | 8,000m | Lower pass for mountain scale |
-| lake | 6,000m | Close enough for water color |
-| desert | 16,000m | Higher for vastness |
-| valley | 6,000m | Low flight through corridor |
-| city | 5,000m | Close for urban structure |
-
----
-
-## Phase C — Geography Worldview System
-
-**Status:** Completed
-
-### Added
-- `data/bachu.json` — 巴楚绿洲 (oasis category)
-- `data/maigaiti.json` — 麦盖提绿洲 (oasis category)
-- `data/yarkant-river.json` — 叶尔羌河 (river category)
-
-### Changed
-- `types/terrain.ts` — Added `oasis`, `silk_road` categories; added `GeographyComparison`, `GeographyWorldviewNode` types
-- `lib/terrain-categories.ts` — Complete rewrite: 6 worldview nodes with subgroups, 5 comparison definitions
-- `lib/terrain.ts` — Registered 3 new terrains (total: 32)
-- `components/FlightControls.tsx` — Two-level collapsible tree with subgroup support
-
-### Worldview Hierarchy
-```
-山脉系统 → 天山/阿尔泰/昆仑/喀喇昆仑/帕米尔
-高原与盆地 → 准噶尔/塔里木/吐鲁番
-沙漠系统 → 塔克拉玛干/古尔班通古特/库姆塔格
-河流与绿洲 → 叶尔羌河/塔里木河/伊犁河谷/额尔齐斯河
-湖泊系统 → 天山湖泊/阿尔泰湖泊/罗布泊
-丝绸之路与人类活动 → 丝路古城/丝路遗迹/游牧文化
-```
-
-### Comparison Architecture (5 definitions)
-- 昆仑山 vs 喀喇昆仑
-- 天山 vs 阿尔泰山
-- 塔克拉玛干 vs 古尔班通古特
-- 伊犁河谷 vs 叶尔羌河流域
-- 赛里木湖 vs 喀纳斯湖
-
----
-
-## Phase D — Sidebar Scroll & Layout Fix
-
-**Status:** Completed
-
-### Changed
-- `components/ResizablePanel.tsx` — Fixed height containment, added `sidebar-scroll` class, `pb-6` bottom padding
-- `components/FlightControls.tsx` — Removed heavy borders, indented list, muted colors
-- `components/RouteControls.tsx` — Route cards in `bg-white/[0.02]` containers
-- `app/globals.css` — Added `.sidebar-scroll` with cinematic scrollbar + `overscroll-behavior: contain`
-
-### Layout Fixes
-- `height: 100%` on root container (enables `flex-1` constraint)
-- `min-h-0` on scroll area (allows shrink below content height)
-- `pb-6` bottom padding (last route card fully reachable)
-- `overscroll-behavior: contain` (prevents Cesium scroll theft)
-- 3px scrollbar at `white/0.08` opacity
-
----
-
-## Phase E — Flight Pacing & Async Sequencing
-
-**Status:** Completed
-
-### Changed
-- `components/ExplorerApp.tsx` — `speakText` async, `showTerrainLesson` async, `handleSelectTerrain` uses await chain
-- `components/CesiumMap.tsx` — Added `flyToTerrainAndWait` method
-- `components/FlightControls.tsx` — Type: `onSelect` accepts `Promise<void>`
-- `components/NarrationPanel.tsx` — Type: `onSpeak` accepts `Promise<void>`
-- `components/PhotoModePanel.tsx` — Type: `onSpeak` accepts `Promise<void>`
-
-### Flow
-```
-handleSelectTerrain:
-  1. await flyToTerrainAndWait(terrain)
-  2. await showTerrainLesson(terrain)  // includes speakAndWait
-  3. await dwellAfterNarration(null, 0)
-```
-
----
-
-## Phase F — Continuous Flight Mode
-
-**Status:** Completed
-
-### Changed
-- `types/route.ts` — Added `overviewDwellSec`, `dwellDuringFlightSec`
-- `data/routes/*.json` — Added new config values
-- `components/CesiumMap.tsx` — Rewrote `flyRoute` with overview + continuous flight
-- `components/ExplorerApp.tsx` — `narrateWaypoint` is non-blocking (fire-and-forget)
-
-### Flow
-```
-flyRoute:
-  1. preloadRoute
-  2. flyToRouteOverview (4s)
-  3. for each waypoint:
-     a. flyLeg (camera moves)
-     b. onWaypointArrival (fire-and-forget)
-     c. sleep(dwellDuringFlightSec)
-  4. onComplete
-```
-
----
-
-## Phase G — Geography Knowledge Engine
-
-**Status:** Completed
-
-### Added
-- `lib/narration-engine.ts` — `generateNarrationFromTerrainData()`, `generateFlyoverNarration()`, `generateRouteNarration()`
-- `components/SourceAttribution.tsx` — Data source display
-
-### Changed
-- `types/terrain.ts` — Added `TerrainKnowledge` interface (13 fields)
-- `lib/lesson.ts` — Added `terrainToSpeech()`, `terrainToRouteSpeech()`
-- All 32 `data/*.json` — Added `knowledge` field with structured data
-- `components/NarrationPanel.tsx` — Added `knowledge` prop, integrated SourceAttribution
-- `components/ExplorerApp.tsx` — Passes `activeTerrain?.knowledge` to panel
-
----
-
-## Phase H — UI Cinematic Redesign
-
-**Status:** Completed
-
-### Changed
-- `app/globals.css` — `.glass-panel`, `.accent-bar`, `.cinematic-enter`, `.narration-hero`, `.metadata-text`, `.panel-vignette`
-- `components/ResizablePanel.tsx` — Glassmorphism: `bg-[#0a0e12]/60 backdrop-blur-2xl`
-- `components/ExplorerApp.tsx` — Right panel: floating `rounded-2xl bg-[#0a0e12]/55`
-- `components/FlightControls.tsx` — Removed boxing, subtle dividers
-- `components/RouteControls.tsx` — Simplified route cards
-- `components/VoiceSelector.tsx` — Minimal inline style
-- `components/TerrainGlanceCards.tsx` — Compact dot-separated metadata
-
----
-
-## Phase I — Geography Expansion
-
-**Status:** Completed
-
-### Added (19 terrain files)
-- Mountains: karakoram, muztagh-ata, pamir, bogda
-- Lakes: bosten, aibi, lop-nur
-- Rivers: ertis, yarkant-river (later)
-- Deserts: kumtag
-- Scenic: flaming-mountains, narat, kuche, bayanbulak
-- Cities: kashgar, hotan, turpan-city
-- Oasis: bachu, maigaiti (later)
-
-### Added (2 route files)
-- `data/routes/pamir-adventure.json` — 喀什 → 帕米尔 → 慕士塔格
-- `data/routes/turpan-flaming.json` — 吐鲁番 → 火焰山 → 库姆塔格
-
-### Changed
-- `types/terrain.ts` — Added river, city, scenic categories
-- `lib/terrain-categories.ts` — Added labels for new categories
-- `lib/terrain.ts` — Imported and registered all new terrains
-- `lib/routes.ts` — Imported and registered new routes
-- `lib/city-lessons.ts` — Added lessons for kashgar, hotan, turpan-city
-- `components/ExplorerApp.tsx` — Registered new city lessons
-
----
-
-## Phase J — Terrain Type System
-
-**Status:** Completed
-
-### Changed
-- `types/terrain.ts` — Added `TerrainCategory` and `TerrainType` unions
-- `lib/terrain-categories.ts` — Added category labels and ordering
 
 ---
 
@@ -700,43 +147,135 @@ flyRoute:
 
 **Status:** Completed
 
-### 4A: Layout Refactor
 - Right panel: 380px → 320px, closer to edge, increased transparency
-- Header: more minimal, reduced visual weight
-- Map now owns 85%+ visual dominance
+- Sentence segmentation in StructuredLesson
+- `useSentenceHighlight` hook for narration sync
+- Warmer tones, lighter panels
 
-### 4B: Typography & Sentence Segmentation
-- StructuredLesson splits hero narration into individual sentences
-- Each sentence independently stylable for highlighting
-- Secondary sections: max-width 36 characters for readability
-- Updated line-height: 1.9 (hero), 1.85 (secondary)
+---
 
-### 4C: Narration Sentence Highlighting
-- New `useSentenceHighlight` hook — estimates sentence timing from character count
-- Active sentence highlighted, past/future dimmed
-- Integrated with both terrain selection and route flight narration
-- No TTS backend changes — pure client-side timing estimation
+## Phase 3 — Airplane Observation Education
 
-### 4D: AI Mode Clarification
-- "延伸" → "扩展解读"
-- Added disclaimer: "以下内容由 AI 生成，仅供参考"
-- Original content always remains source of truth
+**Status:** Completed
 
-### 4E: Visual Polish
-- Warmer background: `#0a0e12` → `#0c1018`
-- Lighter panels: opacity 0.65 → 0.45
-- Subtler borders, accent lines, scrollbar
-- National Geographic documentary feeling
+- Added `observation` field to `TerrainLesson` (4th section)
+- 28 terrain files have observation data
+- Comparison pairs: 天山 vs 阿尔泰, 昆仑 vs 喀喇昆仑, etc.
 
-### Files Modified (5)
-- `components/ExplorerApp.tsx`
-- `components/NarrationPanel.tsx`
-- `components/StructuredLesson.tsx`
-- `components/useSentenceHighlight.ts` (NEW)
-- `app/globals.css`
+---
 
-### Cesium Safety
-- CesiumMap.tsx: UNTOUCHED
-- Camera system: UNTOUCHED
-- Terrain loading: UNTOUCHED
-- Initialization: UNTOUCHED
+## Phase 2 — Cinematic Label Lifecycle
+
+**Status:** Completed (later reverted to polling)
+
+- Camera-driven label system (later replaced with 500ms polling)
+- Zoom-level visibility, edge fade, overlap prevention
+
+---
+
+## Phase 1 — Terrain Label Interaction System
+
+**Status:** Completed
+
+- Fixed `async` inside `new Promise()` anti-pattern
+- All terrain selection paths converge on `handleSelectTerrain`
+
+---
+
+## Fix: Cesium Render Regression After Phase 2
+
+**Status:** Completed
+
+- Removed `camera.changed` listener (caused 60fps re-render storm)
+- Replaced with 500ms `setInterval` polling
+
+---
+
+## Fix: Cesium Initialization Regression
+
+**Status:** Completed
+
+- Added 3s timeout to `waitForDimensions`
+- Removed `onCameraChange` prop
+
+---
+
+## Architecture Decision Records
+
+| ADR | Title |
+|-----|-------|
+| 001 | camera.changed must never drive React state |
+| 002 | Use 500ms polling for label updates |
+| 003 | Narration queue must be serial |
+| 004 | Route narration cannot block flight |
+| 005 | Protected infrastructure policy |
+| 006 | Geography education first |
+
+---
+
+## Phase K — Flight Pacing & Narration Synchronization
+
+**Status:** Completed
+
+- `NarrationQueue` class (serial, priority, cancel)
+- `CinematicLabelManager` for decoupled annotation
+- `narrateWaypoint` async/await with `narrationCancelledRef`
+
+---
+
+## Phase E — Flight Pacing & Async Sequencing
+
+**Status:** Completed
+
+- `speakText` async, `showTerrainLesson` async
+- `flyToTerrainAndWait` method
+
+---
+
+## Phase F — Continuous Flight Mode
+
+**Status:** Completed
+
+- Non-blocking narration
+- Route overview before flight
+- `dwellDuringFlightSec` for waypoint pauses
+
+---
+
+## Phase G — Geography Knowledge Engine
+
+**Status:** Completed
+
+- `TerrainKnowledge` interface (13 fields)
+- `narration-engine.ts` — generates narration from structured data
+
+---
+
+## Phase H — UI Cinematic Redesign
+
+**Status:** Completed
+
+- Glassmorphism panels
+- `.narration-hero` typography
+- `.accent-line` amber gradient borders
+
+---
+
+## Phase I — Geography Expansion (13 → 32 locations)
+
+**Status:** Completed
+
+- 19 new terrain JSON files
+- 3 flight routes
+- 4 city lessons
+
+---
+
+## Phase L — Information Architecture & UX Cleanup
+
+**Status:** Completed
+
+- Simplified sidebar: 7 flat categories
+- Removed worldview hierarchy, GeographyComparison
+- Removed `funFact` from all data
+- Implemented spatial awareness labels
