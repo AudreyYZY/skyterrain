@@ -157,10 +157,11 @@ export default function ExplorerApp() {
         { key: "history", text: lesson.history },
         { key: "observation", text: lesson.observation ?? "" },
       ].filter(s => s.text.trim().length > 0);
+      console.log("[speakLessonWithHighlight] BEFORE startHighlightSections, sections:", sections.length, "lesson:", lesson.seeing?.slice(0, 20));
       startHighlightSections(sections);
-      // 等待 React 渲染高亮状态后再开始语音
-      await new Promise(r => setTimeout(r, 50));
+      console.log("[speakLessonWithHighlight] AFTER startHighlightSections");
       await speakText(ssml);
+      console.log("[speakLessonWithHighlight] speakText done, calling stopHighlight");
       stopHighlight();
     },
     [speakText, startHighlightSections, stopHighlight]
@@ -504,7 +505,7 @@ export default function ExplorerApp() {
               isFlyover={isFlyover}
               isRouteFlying={isRouteFlying}
               isSpeaking={isSpeaking}
-              onSpeak={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
+              onSpeak={() => { console.log("[onSpeak] clicked, lesson:", lesson?.seeing?.slice(0, 20)); if (lesson) void speakLessonWithHighlight(lesson); }}
               onStopSpeak={stopSpeaking}
               activeSentenceIndex={activeSentenceIndex}
               activeSection={activeSection}

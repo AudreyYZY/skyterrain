@@ -61,6 +61,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
   const currentIndexRef = useRef(0);
 
   const stopHighlight = useCallback(() => {
+    console.log("[stopHighlight] called, clearing state");
     if (timerRef.current) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
@@ -121,6 +122,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
 
   const startHighlightSections = useCallback(
     (sections: HighlightSection[]) => {
+      console.log("[startHighlightSections] called with", sections.length, "sections");
       stopHighlight();
 
       // 构建全局句子数组 + section 映射
@@ -137,9 +139,13 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
         offset += sentences.length;
       }
 
-      if (allSentences.length === 0) return;
+      if (allSentences.length === 0) {
+        console.log("[startHighlightSections] no sentences, returning");
+        return;
+      }
 
       const initialSection = findSectionForIndex(0, sectionMap);
+      console.log("[startHighlightSections] setting state:", { activeSentenceIndex: 0, activeSection: initialSection, totalSentences: allSentences.length });
       setActiveSection(initialSection);
       setActiveSentenceIndex(0);
       currentIndexRef.current = 0;
@@ -169,6 +175,11 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
     },
     [stopHighlight, findSectionForIndex]
   );
+
+  // 状态变化日志
+  useEffect(() => {
+    console.log("[useSentenceHighlight] state changed:", { activeSentenceIndex, activeSection });
+  }, [activeSentenceIndex, activeSection]);
 
   // 清理定时器
   useEffect(() => {

@@ -5,7 +5,7 @@ import StructuredLesson from "@/components/StructuredLesson";
 import TerrainGlanceCards from "@/components/TerrainGlanceCards";
 import VoiceSelector from "@/components/VoiceSelector";
 import type { TerrainCards, TerrainKnowledge, TerrainLesson } from "@/types/terrain";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface NarrationPanelProps {
   title: string;
@@ -42,6 +42,10 @@ export default function NarrationPanel({
   activeSection,
 }: NarrationPanelProps) {
   const [showExtended, setShowExtended] = useState(false);
+
+  useEffect(() => {
+    console.log("[NarrationPanel] activeSentenceIndex:", activeSentenceIndex, "activeSection:", activeSection);
+  }, [activeSentenceIndex, activeSection]);
 
   return (
     <div className="flex h-full flex-col">
