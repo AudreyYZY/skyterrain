@@ -169,8 +169,9 @@ export default function ExplorerApp() {
         console.log("[ExplorerApp] before startHighlightSections, sections:", sections.length);
         startHighlightSections(sections);
         console.log("[ExplorerApp] after startHighlightSections");
+        console.log("[ExplorerApp] before speakText");
         await speakText(ssml);
-        console.log("[ExplorerApp] speakText done, calling stopHighlight");
+        console.log("[ExplorerApp] after speakText, calling stopHighlight");
         stopHighlight();
       }
     },
@@ -224,9 +225,14 @@ export default function ExplorerApp() {
 
         // 等待叙述完成
         setIsSpeaking(true);
+        console.log("[ExplorerApp:narrateWaypoint] before speakAndWait");
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE);
+          console.log("[ExplorerApp:narrateWaypoint] speakAndWait resolved");
+        } catch (err) {
+          console.error("[ExplorerApp:narrateWaypoint] speakAndWait threw:", err);
         } finally {
+          console.log("[ExplorerApp:narrateWaypoint] finally block, calling stopHighlight");
           setIsSpeaking(false);
           stopHighlight();
         }

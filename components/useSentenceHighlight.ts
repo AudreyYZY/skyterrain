@@ -61,7 +61,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
   const currentIndexRef = useRef(0);
 
   const stopHighlight = useCallback(() => {
-    console.log("[DEBUG] stopHighlight called");
+    console.trace("[DEBUG] stopHighlight called");
     if (timerRef.current) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
