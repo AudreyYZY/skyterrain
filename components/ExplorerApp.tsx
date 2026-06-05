@@ -146,6 +146,23 @@ export default function ExplorerApp() {
     warmupSpeechVoices();
   }, []);
 
+  /** 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用 */
+  const speakLessonWithHighlight = useCallback(
+    async (lesson: TerrainLesson): Promise<void> => {
+      const ssml = lessonToSSML(lesson);
+      const sections = [
+        { key: "seeing", text: lesson.seeing },
+        { key: "formation", text: lesson.formation },
+        { key: "history", text: lesson.history },
+        { key: "observation", text: lesson.observation ?? "" },
+      ].filter(s => s.text.trim().length > 0);
+      startHighlightSections(sections);
+      await speakText(ssml);
+      stopHighlight();
+    },
+    [speakText, startHighlightSections, stopHighlight]
+  );
+
   const showTerrainLesson = useCallback(
     async (terrain: TerrainPoint, options?: { flyoverOnly?: boolean }): Promise<void> => {
       setActiveTerrain(terrain);
@@ -158,21 +175,10 @@ export default function ExplorerApp() {
         await speakText(terrain.flyoverCue);
         stopHighlight();
       } else {
-        // 使用 SSML 格式以获得纪录片风格的自然停顿
-        const ssml = lessonToSSML(terrain.lesson);
-        // 全 section 高亮 — 与 StructuredLesson 渲染顺序一致
-        const sections = [
-          { key: "seeing", text: terrain.lesson.seeing },
-          { key: "formation", text: terrain.lesson.formation },
-          { key: "history", text: terrain.lesson.history },
-          { key: "observation", text: terrain.lesson.observation ?? "" },
-        ].filter(s => s.text.trim().length > 0);
-        startHighlightSections(sections);
-        await speakText(ssml);
-        stopHighlight();
+        await speakLessonWithHighlight(terrain.lesson);
       }
     },
-    [speakText, startHighlight, startHighlightSections, stopHighlight]
+    [speakText, startHighlight, speakLessonWithHighlight, stopHighlight]
   );
 
   /**
@@ -495,7 +501,7 @@ export default function ExplorerApp() {
               isFlyover={isFlyover}
               isRouteFlying={isRouteFlying}
               isSpeaking={isSpeaking}
-              onSpeak={() => { if (lesson) void speakText(lessonToSSML(lesson)); }}
+              onSpeak={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
               onStopSpeak={stopSpeaking}
               activeSentenceIndex={activeSentenceIndex}
               activeSection={activeSection}
