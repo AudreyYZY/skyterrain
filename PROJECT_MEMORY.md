@@ -301,6 +301,52 @@ Major landforms always visible at any zoom level, pure text with cinematic typog
 
 **Prevention rule:** Never set `touch-action` on overlay elements above Cesium. Only the canvas itself should have `touch-action: none`.
 
+## Protected Cesium Architecture
+
+> **PERMANENT SECTION — Do not remove or weaken.**
+
+The following systems are protected. Do not modify without explicit approval.
+
+### Protected Systems
+
+- **Cesium initialization** — `waitForDimensions`, dynamic import, Viewer creation
+- **Viewer creation** — `new Cesium.Viewer()` config, WebGL canvas setup
+- **Terrain loading** — `createWorldTerrainAsync()`, `EllipsoidTerrainProvider` fallback
+- **Imagery provider** — `IonImageryProvider.fromAssetId(2)`, `imageryLayers` management
+- **requestRenderMode** — must remain `false` for continuous rendering
+- **camera lifecycle** — `flyTo`, `flyToTerrainAndWait`, `flyRoute`, easing functions, pitch/roll constants
+- **React ↔ Cesium render bridge** — 500ms polling, imperative handle, no camera.changed → React state
+- **flight system** — `flyLeg`, `flyToRouteOverview`, `preloadRoute`, `drawRouteLine`
+
+### Before Changing Any Protected System
+
+1. **Explain reason** — why is modification necessary?
+2. **Explain risk** — what regressions could this cause?
+3. **Provide diff plan** — exact files and lines to change
+4. **Wait for approval** — do not proceed without explicit approval
+
+### Why These Are Protected
+
+Historical regressions caused by modifying these systems:
+
+| Regression | Impact |
+|-----------|--------|
+| Black globe | `camera.changed` → React re-render storm → WebGL starvation |
+| Missing terrain | `waitForDimensions` hung forever on 0×0 container |
+| Chunk failures | Cesium octal escapes broke in strict mode |
+| Render loops | Camera state → React state → camera change → infinite loop |
+| Camera recursion | `async` inside `new Promise()` anti-pattern → Promise never settles |
+
+### Rule
+
+**Never "refactor" protected systems while working on unrelated tasks.**
+
+If a task appears to require touching protected infrastructure:
+1. STOP
+2. Explain the conflict
+3. Propose an alternative that avoids protected systems
+4. Wait for guidance
+
 ## Forbidden Modification Areas
 
 Unless explicitly requested with risk assessment:
