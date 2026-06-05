@@ -213,7 +213,7 @@ export default function ExplorerApp() {
 
         // 生成 SSML 叙述脚本（飞越提示 + 详细讲解，含自然停顿）
         const plainLesson = lessonToSpeech(terrain.lesson);
-        const ssmlScript = `<speak><prosody rate="slow" pitch="-2%">${terrain.flyoverCue}<break time="800ms"/>${plainLesson}</prosody></speak>`;
+        const ssmlScript = `${terrain.flyoverCue} ${plainLesson}`;
 
         // 全 section 高亮 — 与 StructuredLesson 渲染顺序一致
         const highlightSections = [
@@ -359,7 +359,7 @@ export default function ExplorerApp() {
             setLesson(ROUTE_END_LESSON);
 
             // 等待结束语叙述完成（SSML 格式）
-            const endSSML = `<speak><prosody rate="slow" pitch="-2%">${ROUTE_END_LESSON.seeing}</prosody></speak>`;
+            const endSSML = ROUTE_END_LESSON.seeing;
             setIsSpeaking(true);
             try {
               await speakAndWait(endSSML, SPEECH_RATE);

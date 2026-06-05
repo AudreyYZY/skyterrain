@@ -2,25 +2,15 @@ import type { TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { generateNarrationFromTerrainData, generateRouteNarration } from "@/lib/narration-engine";
 
 /**
- * 将文本转义为 SSML 安全格式
- */
-function escapeSSML(text: string): string {
-  return text
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
-
-/**
- * 将多段文本包装为 SSML，段落之间加自然停顿
- * 纪录片风格：缓慢语速，微降音调，段落间呼吸停顿
+ * 将多段文本拼接为纯文本，段落之间用句号分隔
+ * edge-tts-universal 始终将输入包装在 <speak><voice><prosody> 中，
+ * 传入 SSML 标签（<break>, <p>, <prosody>）会导致嵌套标签被当作纯文本朗读。
+ * rate/pitch 由 EdgeTTS 构造函数参数控制。
  */
 function wrapSSML(sections: string[]): string {
   const valid = sections.filter((s) => s && s.trim().length > 0);
   if (valid.length === 0) return "";
-
-  const parts = valid.map((s) => `<p>${escapeSSML(s)}</p>`);
-  return `<speak><prosody rate="slow" pitch="-2%">${parts.join('<break time="1200ms"/>')}</prosody></speak>`;
+  return valid.join(" ");
 }
 
 /**
