@@ -158,6 +158,8 @@ export default function ExplorerApp() {
         { key: "observation", text: lesson.observation ?? "" },
       ].filter(s => s.text.trim().length > 0);
       startHighlightSections(sections);
+      // 等待 React 渲染高亮状态后再开始语音
+      await new Promise(r => setTimeout(r, 50));
       await speakText(ssml);
       stopHighlight();
     },
