@@ -73,11 +73,6 @@ export default function ExplorerApp() {
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, stopHighlight } = useSentenceHighlight();
 
-  // 调试：高亮状态变化
-  useEffect(() => {
-    console.log("[Highlight]", { activeSentenceIndex, activeSection, isSpeaking });
-  }, [activeSentenceIndex, activeSection, isSpeaking]);
-
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
     const layerId = "terrain-labels";
@@ -121,16 +116,22 @@ export default function ExplorerApp() {
     );
   }, []);
 
-  const stopSpeaking = useCallback(() => {
+  /** 停止音频播放（不影响高亮状态） */
+  const stopAudio = useCallback(() => {
     narrationQueue.cancel();
     stopSpeech();
     setIsSpeaking(false);
+  }, []);
+
+  /** 停止音频 + 高亮（用户主动取消时调用） */
+  const stopSpeaking = useCallback(() => {
+    stopAudio();
     stopHighlight();
-  }, [stopHighlight]);
+  }, [stopAudio, stopHighlight]);
 
   const speakText = useCallback(
     async (text: string): Promise<void> => {
-      stopSpeaking();
+      stopAudio();
       setIsSpeaking(true);
       try {
         await speakAndWait(text, SPEECH_RATE);
@@ -138,7 +139,7 @@ export default function ExplorerApp() {
         setIsSpeaking(false);
       }
     },
-    [stopSpeaking]
+    [stopAudio]
   );
 
   useEffect(() => {
@@ -166,12 +167,8 @@ export default function ExplorerApp() {
           { key: "history", text: terrain.lesson.history },
           { key: "observation", text: terrain.lesson.observation ?? "" },
         ].filter(s => s.text.trim().length > 0);
-        console.log("[ExplorerApp] before startHighlightSections, sections:", sections.length);
         startHighlightSections(sections);
-        console.log("[ExplorerApp] after startHighlightSections");
-        console.log("[ExplorerApp] before speakText");
         await speakText(ssml);
-        console.log("[ExplorerApp] after speakText, calling stopHighlight");
         stopHighlight();
       }
     },
@@ -219,20 +216,13 @@ export default function ExplorerApp() {
           { key: "history", text: terrain.lesson.history },
           { key: "observation", text: terrain.lesson.observation ?? "" },
         ].filter(s => s.text.trim().length > 0);
-        console.log("[ExplorerApp:narrateWaypoint] before startHighlightSections, sections:", highlightSections.length);
         startHighlightSections(highlightSections);
-        console.log("[ExplorerApp:narrateWaypoint] after startHighlightSections");
 
         // 等待叙述完成
         setIsSpeaking(true);
-        console.log("[ExplorerApp:narrateWaypoint] before speakAndWait");
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE);
-          console.log("[ExplorerApp:narrateWaypoint] speakAndWait resolved");
-        } catch (err) {
-          console.error("[ExplorerApp:narrateWaypoint] speakAndWait threw:", err);
         } finally {
-          console.log("[ExplorerApp:narrateWaypoint] finally block, calling stopHighlight");
           setIsSpeaking(false);
           stopHighlight();
         }

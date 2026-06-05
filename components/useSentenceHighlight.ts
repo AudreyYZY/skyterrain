@@ -61,7 +61,6 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
   const currentIndexRef = useRef(0);
 
   const stopHighlight = useCallback(() => {
-    console.trace("[DEBUG] stopHighlight called");
     if (timerRef.current) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
@@ -122,7 +121,6 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
 
   const startHighlightSections = useCallback(
     (sections: HighlightSection[]) => {
-      console.log("[DEBUG] startHighlightSections called, sections:", sections.length);
       stopHighlight();
 
       // 构建全局句子数组 + section 映射
@@ -139,15 +137,9 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
         offset += sentences.length;
       }
 
-      console.log("[DEBUG] total sentences:", allSentences.length, "sectionMap:", sectionMap);
-
-      if (allSentences.length === 0) {
-        console.log("[DEBUG] allSentences is empty, returning early");
-        return;
-      }
+      if (allSentences.length === 0) return;
 
       const initialSection = findSectionForIndex(0, sectionMap);
-      console.log("[DEBUG] setting initial state:", { activeSentenceIndex: 0, activeSection: initialSection });
       setActiveSection(initialSection);
       setActiveSentenceIndex(0);
       currentIndexRef.current = 0;
