@@ -451,62 +451,60 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           viewerRef.current = viewer;
           cesiumRef.current = Cesium;
 
-          // Debug panel — 开发模式下暴露到 window
-          if (process.env.NODE_ENV === "development") {
-            const origTerrain = viewer.terrainProvider;
-            const ellipsoidTerrain = new Cesium.EllipsoidTerrainProvider();
+          // Debug panel — 暴露到 window 供生产环境诊断
+          const origTerrain = viewer.terrainProvider;
+          const ellipsoidTerrain = new Cesium.EllipsoidTerrainProvider();
 
-            (window as any).debugCesium = {
-              viewer,
-              toggleTerrain() {
-                const isEllipsoid = viewer.terrainProvider instanceof Cesium.EllipsoidTerrainProvider;
-                if (isEllipsoid) {
-                  viewer.terrainProvider = origTerrain;
-                  console.log("[debug] Terrain → WorldTerrain");
-                } else {
-                  viewer.terrainProvider = ellipsoidTerrain;
-                  console.log("[debug] Terrain → EllipsoidTerrainProvider");
-                }
-                viewer.scene.requestRender();
-              },
-              toggleImagery() {
-                const layer = viewer.imageryLayers.get(0);
-                if (!layer) { console.log("[debug] No imagery layer"); return; }
-                layer.show = !layer.show;
-                console.log("[debug] Imagery show =", layer.show);
-                viewer.scene.requestRender();
-              },
-              printLayers() {
-                const count = viewer.imageryLayers.length;
-                console.log("[debug] Imagery layers:", count);
-                for (let i = 0; i < count; i++) {
-                  const layer = viewer.imageryLayers.get(i);
-                  console.log(`  [${i}]`, {
-                    provider: layer.imageryProvider.constructor.name,
-                    show: layer.show,
-                    alpha: layer.alpha,
-                    brightness: layer.brightness,
-                    contrast: layer.contrast,
-                    gamma: layer.gamma,
-                  });
-                }
-              },
-              printTerrain() {
-                const tp = viewer.terrainProvider;
-                console.log("[debug] Terrain:", {
-                  type: tp.constructor.name,
-                  hasVertexNormals: (tp as any).hasVertexNormals,
-                  hasWaterMask: (tp as any).hasWaterMask,
+          (window as any).debugCesium = {
+            viewer,
+            toggleTerrain() {
+              const isEllipsoid = viewer.terrainProvider instanceof Cesium.EllipsoidTerrainProvider;
+              if (isEllipsoid) {
+                viewer.terrainProvider = origTerrain;
+                console.log("[debug] Terrain → WorldTerrain");
+              } else {
+                viewer.terrainProvider = ellipsoidTerrain;
+                console.log("[debug] Terrain → EllipsoidTerrainProvider");
+              }
+              viewer.scene.requestRender();
+            },
+            toggleImagery() {
+              const layer = viewer.imageryLayers.get(0);
+              if (!layer) { console.log("[debug] No imagery layer"); return; }
+              layer.show = !layer.show;
+              console.log("[debug] Imagery show =", layer.show);
+              viewer.scene.requestRender();
+            },
+            printLayers() {
+              const count = viewer.imageryLayers.length;
+              console.log("[debug] Imagery layers:", count);
+              for (let i = 0; i < count; i++) {
+                const layer = viewer.imageryLayers.get(i);
+                console.log(`  [${i}]`, {
+                  provider: layer.imageryProvider.constructor.name,
+                  show: layer.show,
+                  alpha: layer.alpha,
+                  brightness: layer.brightness,
+                  contrast: layer.contrast,
+                  gamma: layer.gamma,
                 });
-                console.log("[debug] Globe:", {
-                  maximumScreenSpaceError: viewer.scene.globe.maximumScreenSpaceError,
-                  depthTestAgainstTerrain: viewer.scene.globe.depthTestAgainstTerrain,
-                  terrainExaggeration: (viewer.scene.globe as any).terrainExaggeration ?? "N/A",
-                });
-              },
-            };
-            console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain()");
-          }
+              }
+            },
+            printTerrain() {
+              const tp = viewer.terrainProvider;
+              console.log("[debug] Terrain:", {
+                type: tp.constructor.name,
+                hasVertexNormals: (tp as any).hasVertexNormals,
+                hasWaterMask: (tp as any).hasWaterMask,
+              });
+              console.log("[debug] Globe:", {
+                maximumScreenSpaceError: viewer.scene.globe.maximumScreenSpaceError,
+                depthTestAgainstTerrain: viewer.scene.globe.depthTestAgainstTerrain,
+                terrainExaggeration: (viewer.scene.globe as any).terrainExaggeration ?? "N/A",
+              });
+            },
+          };
+          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain()");
 
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {
