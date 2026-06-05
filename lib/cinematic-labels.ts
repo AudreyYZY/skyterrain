@@ -29,6 +29,8 @@ export interface CinematicLabel {
   priority: number;
   /** 关联的地形 ID */
   terrainId?: string;
+  /** 是否为主要地标（全景可见，大字号） */
+  major?: boolean;
   /** 自定义样式 */
   style?: {
     fontSize?: number;
@@ -117,6 +119,9 @@ export class CinematicLabelManager {
 
   /** 判断标注是否应该显示 */
   private shouldShowLabel(label: CinematicLabel, zoomLevel?: number): boolean {
+    // major 标签始终可见
+    if (label.major) return true;
+
     switch (label.visibility) {
       case "always":
         return true;
@@ -167,7 +172,8 @@ export function createTerrainLabel(
   name: string,
   lat: number,
   lon: number,
-  priority = 50
+  priority = 50,
+  major = false
 ): CinematicLabel {
   return {
     id: `terrain-${terrainId}`,
@@ -178,10 +184,11 @@ export function createTerrainLabel(
     animation: "fade",
     priority,
     terrainId,
+    major,
     style: {
-      fontSize: 13,
-      color: "rgba(255, 255, 255, 0.7)",
-      opacity: 0.9,
+      fontSize: major ? 28 : 14,
+      color: major ? "rgba(255, 255, 255, 0.9)" : "rgba(255, 255, 255, 0.7)",
+      opacity: major ? 1 : 0.9,
     },
   };
 }

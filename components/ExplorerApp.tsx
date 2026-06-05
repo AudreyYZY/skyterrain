@@ -78,21 +78,22 @@ export default function ExplorerApp() {
     const layerId = "terrain-labels";
     labelManager.createLayer(layerId, "地形标注", 1);
 
-    // 最高优先级 — 远景即可看到
-    const primary = ["tianshan", "taklamakan", "kunlun", "kashgar", "ili-valley"];
+    // 6 个主要地标 — 全景可见，大字号，纪录片风格
+    const majorIds = ["tianshan", "kunlun", "altai", "junggar-basin", "tarim-basin", "taklamakan"];
     // 次优先级 — 中景可见
-    const secondary = ["altai", "karakoram", "pamir", "kanas", "sayram", "lop-nur", "turpan-city"];
+    const secondary = ["karakoram", "pamir", "kanas", "sayram", "lop-nur", "turpan-city", "ili-valley", "kashgar", "bosten"];
     // 较低优先级 — 近景可见
     const tertiary = ["gurbantunggut", "tarim-river", "flaming-mountains", "bayanbulak"];
 
     for (const terrain of allTerrains) {
       let priority = 0;
-      if (primary.includes(terrain.id)) priority = 90;
+      let major = false;
+      if (majorIds.includes(terrain.id)) { priority = 100; major = true; }
       else if (secondary.includes(terrain.id)) priority = 70;
       else if (tertiary.includes(terrain.id)) priority = 50;
       if (priority > 0) {
         labelManager.addLabel(layerId, createTerrainLabel(
-          terrain.id, terrain.name, terrain.lat, terrain.lon, priority
+          terrain.id, terrain.name, terrain.lat, terrain.lon, priority, major
         ));
       }
     }

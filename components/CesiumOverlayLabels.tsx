@@ -21,9 +21,9 @@ interface CesiumOverlayLabelsProps {
 }
 
 /** 屏幕边缘安全距离（px） */
-const EDGE_MARGIN = 40;
+const EDGE_MARGIN = 60;
 /** 标注最小间距（px） — 防重叠 */
-const MIN_LABEL_GAP = 60;
+const MIN_LABEL_GAP = 80;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
@@ -148,18 +148,23 @@ export default function CesiumOverlayLabels({
       {screenLabels.map(({ label, x, y, visibility }) => {
         if (visibility <= 0) return null;
         const terrain = terrains.find((t) => t.id === label.terrainId);
+        const isMajor = label.major;
+
+        // 字号随缩放级别缩放 — 远景时 major 更大
+        const baseFontSize = label.style?.fontSize ?? 14;
+        const fontSize = isMajor ? Math.max(20, baseFontSize) : baseFontSize;
 
         return (
           <button
             key={label.id}
             type="button"
-            className="pointer-events-auto absolute flex items-center gap-1.5"
+            className="pointer-events-auto absolute"
             style={{
               left: x,
               top: y,
               transform: "translate(-50%, -50%)",
               opacity: visibility,
-              transition: "opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1)",
+              transition: "opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1)",
               willChange: "opacity, left, top",
             }}
             onClick={() => {
@@ -168,23 +173,19 @@ export default function CesiumOverlayLabels({
               }
             }}
           >
-            {/* 标注点 */}
+            {/* 纪录片风格纯文本标注 */}
             <span
-              className="block h-1.5 w-1.5 rounded-full shrink-0"
+              className="whitespace-nowrap"
               style={{
-                backgroundColor: label.style?.color ?? "rgba(255,255,255,0.6)",
-                boxShadow: "0 0 6px 1px rgba(245,158,11,0.15)",
-              }}
-            />
-            {/* 标注文本 — Google Earth 风格 */}
-            <span
-              className="whitespace-nowrap font-medium tracking-wide rounded-sm px-1.5 py-0.5"
-              style={{
-                color: "rgba(255,255,255,0.9)",
-                fontSize: label.style?.fontSize ?? 12,
-                backgroundColor: "rgba(0,0,0,0.3)",
-                textShadow: "0 1px 4px rgba(0,0,0,0.8), 0 0 12px rgba(0,0,0,0.5)",
-                backdropFilter: "blur(4px)",
+                color: isMajor ? "rgba(255,255,255,0.92)" : "rgba(255,255,255,0.75)",
+                fontSize: `${fontSize}px`,
+                fontWeight: isMajor ? 600 : 500,
+                letterSpacing: isMajor ? "0.08em" : "0.04em",
+                lineHeight: 1.2,
+                textShadow: isMajor
+                  ? "0 2px 6px rgba(0,0,0,0.95), 0 0 20px rgba(0,0,0,0.7), 0 0 40px rgba(0,0,0,0.4)"
+                  : "0 1px 4px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.5)",
+                fontFamily: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif",
               }}
             >
               {label.text}
