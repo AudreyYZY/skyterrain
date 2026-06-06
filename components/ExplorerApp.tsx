@@ -70,6 +70,7 @@ export default function ExplorerApp() {
   const [activeRouteId, setActiveRouteId] = useState<string | null>(null);
   const [isFlyover, setIsFlyover] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
+  const [sidebarCategory, setSidebarCategory] = useState<string | null>(null);
   const [showDetailDrawer, setShowDetailDrawer] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
@@ -560,49 +561,107 @@ export default function ExplorerApp() {
                   </button>
                 </div>
               ) : (
-                /* Expanded: full list */
+                /* Expanded: explorer mode */
                 <div className="px-3 py-2">
-                  <div className="mb-3 flex items-center justify-between">
-                    <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider">地貌探索</p>
-                    <p className="text-[9px] text-white/15">{terrainCount}</p>
-                  </div>
+                  {sidebarCategory ? (
+                    /* Category selected — show terrains */
+                    <div>
+                      <button
+                        type="button"
+                        onClick={() => setSidebarCategory(null)}
+                        className="flex items-center gap-1 mb-3 text-[11px] text-white/40 hover:text-white/60 transition-colors"
+                      >
+                        <span>←</span>
+                        <span>返回</span>
+                      </button>
 
-                  {terrainGroups.map((group) => (
-                    <div key={group.category} className="mb-3">
-                      <p className="text-[10px] font-medium text-white/30 mb-1">
-                        {group.label}（{group.terrains.length}）
+                      <p className="text-[12px] font-medium text-white/60 mb-3">
+                        {terrainGroups.find(g => g.category === sidebarCategory)?.label}
                       </p>
-                      <div className="space-y-0.5">
-                        {group.terrains.map((t) => (
+
+                      <div className="space-y-1">
+                        {terrainGroups.find(g => g.category === sidebarCategory)?.terrains.map((t) => (
                           <button
                             key={t.id}
                             type="button"
                             onClick={() => handleSelectTerrain(t)}
-                            className={`w-full text-left px-2 py-1 rounded text-[11px] transition-all ${
+                            className={`w-full text-left px-3 py-2 rounded-lg transition-all ${
                               activeTerrain?.id === t.id
                                 ? "text-white/80 bg-white/[0.06]"
-                                : "text-white/35 hover:text-white/60 hover:bg-white/[0.03]"
+                                : "text-white/40 hover:text-white/65 hover:bg-white/[0.03]"
                             }`}
                           >
-                            {t.name}
+                            <p className="text-[12px]">{t.name}</p>
+                            <p className="text-[10px] text-white/20 mt-0.5">
+                              {t.elevation.toLocaleString("zh-CN")}m
+                            </p>
                           </button>
                         ))}
                       </div>
                     </div>
-                  ))}
+                  ) : (
+                    /* Category list */
+                    <div>
+                      <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-3">
+                        地貌探索
+                      </p>
 
-                  <div className="my-3 h-px bg-white/[0.06]" />
-                  <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-2">飞行路线</p>
-                  <RouteControls
-                    routes={routes}
-                    activeRouteId={activeRouteId}
-                    isFlying={isRouteFlying || routePreparing}
-                    onStartRoute={handleStartRoute}
-                    onStopRoute={handleStopRoute}
-                  />
+                      <div className="space-y-1">
+                        {terrainGroups.map((group) => (
+                          <button
+                            key={group.category}
+                            type="button"
+                            onClick={() => setSidebarCategory(group.category)}
+                            className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
+                          >
+                            <div className="flex items-center justify-between">
+                              <span className="text-[12px] text-white/50">{group.label}</span>
+                              <span className="text-[10px] text-white/20">{group.terrains.length}</span>
+                            </div>
+                          </button>
+                        ))}
+                      </div>
+
+                      <div className="my-3 h-px bg-white/[0.06]" />
+                      <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-2">飞行路线</p>
+                      <RouteControls
+                        routes={routes}
+                        activeRouteId={activeRouteId}
+                        isFlying={isRouteFlying || routePreparing}
+                        onStartRoute={handleStartRoute}
+                        onStopRoute={handleStopRoute}
+                      />
+                    </div>
+                  )}
                 </div>
               )}
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Welcome guide — first-time entry */}
+      {mode === "explore" && !activeTerrain && !isRouteFlying && (
+        <div className="absolute top-10 right-3 z-20 w-[280px] pointer-events-auto">
+          <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
+            <h3 className="text-[14px] font-medium text-white/75 mb-1">新疆空中地貌探索</h3>
+            <p className="text-[11px] text-white/30 mb-3">
+              从飞机窗外看中国地形
+            </p>
+            <p className="text-[10px] text-white/20 mb-3">
+              点击地图上的地貌或左侧分类开始探索
+            </p>
+            <button
+              type="button"
+              onClick={() => {
+                // 选择第一个地形开始导览
+                const firstTerrain = allTerrains.find(t => t.id === "tianshan");
+                if (firstTerrain) handleSelectTerrain(firstTerrain);
+              }}
+              className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[11px] font-medium text-amber-300/70 transition hover:bg-amber-500/20 hover:text-amber-300"
+            >
+              开始导览
+            </button>
           </div>
         </div>
       )}

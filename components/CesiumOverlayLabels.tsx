@@ -28,11 +28,11 @@ const GRID_CELL_SIZE = 100;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
-/** LOD 级别样式配置 — 弱标签风格，始终可见但不抢焦点 */
+/** LOD 级别样式配置 — Google Earth 风格，贴地感 */
 const LOD_STYLES = {
-  1: { fontSize: 24, opacity: 0.18, fontWeight: 300, letterSpacing: "0.10em" },
-  2: { fontSize: 18, opacity: 0.28, fontWeight: 400, letterSpacing: "0.05em" },
-  3: { fontSize: 13, opacity: 0.45, fontWeight: 400, letterSpacing: "0.03em" },
+  1: { fontSize: 22, opacity: 0.55, fontWeight: 400, letterSpacing: "0.08em" },
+  2: { fontSize: 16, opacity: 0.60, fontWeight: 400, letterSpacing: "0.04em" },
+  3: { fontSize: 12, opacity: 0.65, fontWeight: 400, letterSpacing: "0.02em" },
 } as const;
 
 /**
@@ -213,12 +213,12 @@ export default function CesiumOverlayLabels({
             <span
               className="whitespace-nowrap select-none"
               style={{
-                color: `rgba(255, 255, 255, ${lodLevel === 1 ? 0.85 : lodLevel === 2 ? 0.82 : 0.78})`,
+                color: "rgba(255, 255, 255, 0.9)",
                 fontSize: `${fontSize}px`,
                 fontWeight: lodStyle.fontWeight,
                 letterSpacing: lodStyle.letterSpacing,
                 lineHeight: 1.2,
-                textShadow: "0 1px 3px rgba(0,0,0,0.7), 0 0 6px rgba(0,0,0,0.4)",
+                textShadow: "0 1px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.3)",
                 fontFamily: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif",
               }}
             >
