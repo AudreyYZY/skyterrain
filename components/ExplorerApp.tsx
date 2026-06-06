@@ -75,27 +75,53 @@ export default function ExplorerApp() {
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
 
-  // 初始化地形标注 — 主要地标显示在地图上
+  // 初始化地形标注 — LOD 分级 + 沿地貌方向布局
   useEffect(() => {
     const layerId = "terrain-labels";
     labelManager.createLayer(layerId, "地形标注", 1);
 
-    // 6 个主要地标 — 全景可见，大字号，纪录片风格
-    const majorIds = ["tianshan", "kunlun", "altai", "junggar-basin", "tarim-basin", "taklamakan"];
-    // 次优先级 — 中景可见
-    const secondary = ["karakoram", "pamir", "kanas", "sayram", "lop-nur", "turpan-city", "ili-valley", "kashgar", "bosten"];
-    // 较低优先级 — 近景可见
-    const tertiary = ["gurbantunggut", "tarim-river", "flaming-mountains", "bayanbulak"];
+    // 标签配置: LOD 级别 + 旋转角度 + 地貌类型
+    // LOD 1 = 全国尺度可见, LOD 2 = 区域尺度可见, LOD 3 = 地点尺度可见
+    const labelConfigs: Record<string, {
+      lodLevel: 1 | 2 | 3;
+      rotation?: number;
+      terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau";
+    }> = {
+      // LOD 1 — 全国尺度 (大区域)
+      "tianshan":        { lodLevel: 1, rotation: -8, terrainType: "mountain" },
+      "kunlun":          { lodLevel: 1, rotation: -5, terrainType: "mountain" },
+      "altai":           { lodLevel: 1, rotation: -35, terrainType: "mountain" },
+      "junggar-basin":   { lodLevel: 1, terrainType: "basin" },
+      "tarim-basin":     { lodLevel: 1, terrainType: "basin" },
+      "taklamakan":      { lodLevel: 1, terrainType: "desert" },
+
+      // LOD 2 — 区域尺度
+      "karakoram":       { lodLevel: 2, rotation: -25, terrainType: "mountain" },
+      "pamir":           { lodLevel: 2, terrainType: "plateau" },
+      "ili-valley":      { lodLevel: 2, terrainType: "river" },
+      "sayram":          { lodLevel: 2, terrainType: "lake" },
+      "bosten":          { lodLevel: 2, terrainType: "lake" },
+      "tarim-river":     { lodLevel: 2, rotation: 5, terrainType: "river" },
+      "bogda":           { lodLevel: 2, rotation: -8, terrainType: "mountain" },
+
+      // LOD 3 — 地点尺度
+      "kanas":           { lodLevel: 3, terrainType: "lake" },
+      "tianchi":          { lodLevel: 3, terrainType: "lake" },
+      "flaming-mountains": { lodLevel: 3, terrainType: "mountain" },
+      "bayanbulak":      { lodLevel: 3, terrainType: "plateau" },
+      "gurbantunggut":   { lodLevel: 3, terrainType: "desert" },
+      "lop-nur":         { lodLevel: 3, terrainType: "lake" },
+      "kashgar":         { lodLevel: 3 },
+      "turpan-city":     { lodLevel: 3 },
+    };
 
     for (const terrain of allTerrains) {
-      let priority = 0;
-      let major = false;
-      if (majorIds.includes(terrain.id)) { priority = 100; major = true; }
-      else if (secondary.includes(terrain.id)) priority = 70;
-      else if (tertiary.includes(terrain.id)) priority = 50;
-      if (priority > 0) {
+      const config = labelConfigs[terrain.id];
+      if (config) {
+        const priority = config.lodLevel === 1 ? 100 : config.lodLevel === 2 ? 70 : 50;
         labelManager.addLabel(layerId, createTerrainLabel(
-          terrain.id, terrain.name, terrain.lat, terrain.lon, priority, major
+          terrain.id, terrain.name, terrain.lat, terrain.lon, priority,
+          { lodLevel: config.lodLevel, rotation: config.rotation, terrainType: config.terrainType }
         ));
       }
     }

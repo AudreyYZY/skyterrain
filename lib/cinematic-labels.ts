@@ -29,8 +29,12 @@ export interface CinematicLabel {
   priority: number;
   /** 关联的地形 ID */
   terrainId?: string;
-  /** 是否为主要地标（全景可见，大字号） */
-  major?: boolean;
+  /** LOD 级别: 1=全国, 2=区域, 3=地点 */
+  lodLevel?: 1 | 2 | 3;
+  /** 标签旋转角度（度） — 用于沿山脊/河道方向 */
+  rotation?: number;
+  /** 地貌类型 — 用于标签放置策略 */
+  terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau";
   /** 自定义样式 */
   style?: {
     fontSize?: number;
@@ -119,19 +123,16 @@ export class CinematicLabelManager {
 
   /** 判断标注是否应该显示 */
   private shouldShowLabel(label: CinematicLabel, zoomLevel?: number): boolean {
-    // major 标签始终可见
-    if (label.major) return true;
-
     switch (label.visibility) {
       case "always":
         return true;
       case "zoom-adaptive":
         if (zoomLevel === undefined) return true;
-        // 远景（1-6）：只显示最高优先级地标
-        if (zoomLevel <= 6) return label.priority >= 80;
-        // 中景（7-12）：显示主要地标
-        if (zoomLevel <= 12) return label.priority >= 60;
-        // 近景（13+）：显示所有标注
+        // Level 1 (全国): 只显示 lodLevel 1 的标签
+        if (zoomLevel <= 5) return label.lodLevel === 1;
+        // Level 2 (区域): 显示 lodLevel 1-2 的标签
+        if (zoomLevel <= 10) return (label.lodLevel ?? 3) <= 2;
+        // Level 3 (地点): 显示所有标签
         return true;
       case "focus-only":
         return label.terrainId === this.focusedTerrainId;
@@ -173,7 +174,11 @@ export function createTerrainLabel(
   lat: number,
   lon: number,
   priority = 50,
-  major = false
+  options?: {
+    lodLevel?: 1 | 2 | 3;
+    rotation?: number;
+    terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau";
+  }
 ): CinematicLabel {
   return {
     id: `terrain-${terrainId}`,
@@ -184,11 +189,13 @@ export function createTerrainLabel(
     animation: "fade",
     priority,
     terrainId,
-    major,
+    lodLevel: options?.lodLevel ?? 3,
+    rotation: options?.rotation ?? 0,
+    terrainType: options?.terrainType,
     style: {
-      fontSize: major ? 28 : 14,
-      color: major ? "rgba(255, 255, 255, 0.9)" : "rgba(255, 255, 255, 0.7)",
-      opacity: major ? 1 : 0.9,
+      fontSize: 14,
+      color: "rgba(255, 255, 255, 0.7)",
+      opacity: 0.9,
     },
   };
 }

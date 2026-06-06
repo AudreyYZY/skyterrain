@@ -1,7 +1,7 @@
 "use client";
 
 import { labelManager, type CinematicLabel } from "@/lib/cinematic-labels";
-import type { CesiumMapHandle, CameraState } from "@/components/CesiumMap";
+import type { CesiumMapHandle } from "@/components/CesiumMap";
 import type { TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -9,8 +9,9 @@ interface ScreenLabel {
   label: CinematicLabel;
   x: number;
   y: number;
-  /** 0-1, 1=完全可见, 0=隐藏 */
   visibility: number;
+  fontSize: number;
+  opacity: number;
 }
 
 interface CesiumOverlayLabelsProps {
@@ -21,14 +22,21 @@ interface CesiumOverlayLabelsProps {
 }
 
 /** 屏幕边缘安全距离（px） */
-const EDGE_MARGIN = 60;
-/** 标注最小间距（px） — 防重叠 */
-const MIN_LABEL_GAP = 80;
+const EDGE_MARGIN = 80;
+/** 碰撞检测网格单元格大小（px） */
+const GRID_CELL_SIZE = 100;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
+/** LOD 级别样式配置 */
+const LOD_STYLES = {
+  1: { fontSize: 28, opacity: 0.10, fontWeight: 300, letterSpacing: "0.12em" },
+  2: { fontSize: 20, opacity: 0.20, fontWeight: 400, letterSpacing: "0.06em" },
+  3: { fontSize: 14, opacity: 0.40, fontWeight: 400, letterSpacing: "0.03em" },
+} as const;
+
 /**
- * 计算边缘透明度 — 越靠近边缘越透明
+ * 计算边缘透明度
  */
 function edgeFade(x: number, y: number, canvasW: number, canvasH: number): number {
   const fadeStart = EDGE_MARGIN * 2;
@@ -43,21 +51,42 @@ function edgeFade(x: number, y: number, canvasW: number, canvasH: number): numbe
 }
 
 /**
- * 简单的网格碰撞检测 — 防止标签重叠
+ * 屏幕空间碰撞检测 — 网格占用法
+ * 高优先级标签优先显示，低优先级标签被隐藏
  */
 function resolveOverlaps(labels: ScreenLabel[]): ScreenLabel[] {
-  const grid = new Set<string>();
+  const occupied = new Set<string>();
   const result: ScreenLabel[] = [];
 
   for (const sl of labels) {
-    const gx = Math.round(sl.x / MIN_LABEL_GAP);
-    const gy = Math.round(sl.y / MIN_LABEL_GAP);
-    const key = `${gx},${gy}`;
+    // 标签占据多个网格单元（根据字号估算）
+    const cellSpan = Math.max(1, Math.ceil(sl.fontSize / GRID_CELL_SIZE));
+    let blocked = false;
 
-    if (grid.has(key)) {
+    // 检查标签占据的所有网格
+    for (let dx = 0; dx < cellSpan; dx++) {
+      for (let dy = 0; dy < cellSpan; dy++) {
+        const gx = Math.round((sl.x + dx * GRID_CELL_SIZE * 0.5) / GRID_CELL_SIZE);
+        const gy = Math.round((sl.y + dy * GRID_CELL_SIZE * 0.5) / GRID_CELL_SIZE);
+        if (occupied.has(`${gx},${gy}`)) {
+          blocked = true;
+          break;
+        }
+      }
+      if (blocked) break;
+    }
+
+    if (blocked) {
       result.push({ ...sl, visibility: 0 });
     } else {
-      grid.add(key);
+      // 标记所有被占据的网格
+      for (let dx = 0; dx < cellSpan; dx++) {
+        for (let dy = 0; dy < cellSpan; dy++) {
+          const gx = Math.round((sl.x + dx * GRID_CELL_SIZE * 0.5) / GRID_CELL_SIZE);
+          const gy = Math.round((sl.y + dy * GRID_CELL_SIZE * 0.5) / GRID_CELL_SIZE);
+          occupied.add(`${gx},${gy}`);
+        }
+      }
       result.push(sl);
     }
   }
@@ -91,7 +120,6 @@ export default function CesiumOverlayLabels({
     const labels = labelManager.getVisibleLabels(zoomLevel);
     const result: ScreenLabel[] = [];
 
-    // 获取画布尺寸
     const canvas = document.querySelector(".cesium-widget canvas") as HTMLCanvasElement | null;
     const canvasW = canvas?.width ?? window.innerWidth;
     const canvasH = canvas?.height ?? window.innerHeight;
@@ -110,26 +138,37 @@ export default function CesiumOverlayLabels({
       const fade = edgeFade(pos.x, pos.y, canvasW, canvasH);
       if (fade < 0.05) continue;
 
+      // LOD 样式
+      const lodLevel = (label.lodLevel ?? 3) as 1 | 2 | 3;
+      const lodStyle = LOD_STYLES[lodLevel];
+
+      // 计算最终透明度: LOD 基础透明度 × 边缘淡出
+      const finalOpacity = lodStyle.opacity * fade;
+
       result.push({
         label,
         x: pos.x,
         y: pos.y,
-        visibility: fade * (label.style?.opacity ?? 0.9),
+        visibility: finalOpacity,
+        fontSize: lodStyle.fontSize,
+        opacity: finalOpacity,
       });
     }
 
-    // 碰撞检测
-    result.sort((a, b) => b.label.priority - a.label.priority);
-    const resolved = resolveOverlaps(result);
+    // 碰撞检测: 按 LOD 级别排序 (1 > 2 > 3), 同级按优先级排序
+    result.sort((a, b) => {
+      const lodA = a.label.lodLevel ?? 3;
+      const lodB = b.label.lodLevel ?? 3;
+      if (lodA !== lodB) return lodA - lodB;
+      return b.label.priority - a.label.priority;
+    });
 
+    const resolved = resolveOverlaps(result);
     setScreenLabels(resolved);
   }, [mapRef]);
 
-  // 500ms 轮询 — 不触发 React 重渲染风暴
   useEffect(() => {
-    // 首次立即更新
     updateLabels();
-
     intervalRef.current = setInterval(updateLabels, POLL_INTERVAL_MS);
     return () => {
       if (intervalRef.current) {
@@ -145,14 +184,12 @@ export default function CesiumOverlayLabels({
 
   return (
     <div className="pointer-events-none absolute inset-0 z-[15]" style={{ overflow: "hidden" }}>
-      {screenLabels.map(({ label, x, y, visibility }) => {
+      {screenLabels.map(({ label, x, y, visibility, fontSize }) => {
         if (visibility <= 0) return null;
         const terrain = terrains.find((t) => t.id === label.terrainId);
-        const isMajor = label.major;
-
-        // 字号随缩放级别缩放 — 远景时 major 更大
-        const baseFontSize = label.style?.fontSize ?? 14;
-        const fontSize = isMajor ? Math.max(20, baseFontSize) : baseFontSize;
+        const lodLevel = label.lodLevel ?? 3;
+        const lodStyle = LOD_STYLES[lodLevel as keyof typeof LOD_STYLES];
+        const rotation = label.rotation ?? 0;
 
         return (
           <button
@@ -162,9 +199,9 @@ export default function CesiumOverlayLabels({
             style={{
               left: x,
               top: y,
-              transform: "translate(-50%, -50%)",
+              transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
               opacity: visibility,
-              transition: "opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1)",
+              transition: "opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), left 0.5s ease-out, top 0.5s ease-out",
               willChange: "opacity, left, top",
             }}
             onClick={() => {
@@ -173,18 +210,19 @@ export default function CesiumOverlayLabels({
               }
             }}
           >
-            {/* 纪录片风格纯文本标注 */}
             <span
-              className="whitespace-nowrap"
+              className="whitespace-nowrap select-none"
               style={{
-                color: isMajor ? "rgba(255,255,255,0.92)" : "rgba(255,255,255,0.75)",
+                color: `rgba(255, 255, 255, ${lodLevel === 1 ? 0.9 : lodLevel === 2 ? 0.85 : 0.8})`,
                 fontSize: `${fontSize}px`,
-                fontWeight: isMajor ? 600 : 500,
-                letterSpacing: isMajor ? "0.08em" : "0.04em",
+                fontWeight: lodStyle.fontWeight,
+                letterSpacing: lodStyle.letterSpacing,
                 lineHeight: 1.2,
-                textShadow: isMajor
-                  ? "0 2px 6px rgba(0,0,0,0.95), 0 0 20px rgba(0,0,0,0.7), 0 0 40px rgba(0,0,0,0.4)"
-                  : "0 1px 4px rgba(0,0,0,0.9), 0 0 12px rgba(0,0,0,0.5)",
+                textShadow: lodLevel === 1
+                  ? "0 1px 3px rgba(0,0,0,0.8)"
+                  : lodLevel === 2
+                    ? "0 1px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.5)"
+                    : "0 1px 4px rgba(0,0,0,0.95), 0 0 12px rgba(0,0,0,0.6)",
                 fontFamily: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif",
               }}
             >
