@@ -349,6 +349,10 @@ export default function ExplorerApp() {
       ));
       labelManager.setFocusedTerrain(terrain.id);
 
+      // 高亮地貌边界
+      const boundaryId = `${terrain.id}-boundary`;
+      mapRef.current?.highlightBoundary(boundaryId);
+
       try {
         // 1) 镜头飞到目标地貌，等待飞行动画完成
         console.log("[ExplorerApp] fly start:", terrain.id);
@@ -439,6 +443,7 @@ export default function ExplorerApp() {
     narrationCancelledRef.current = true;
     narrationQueue.cancel();
     mapRef.current?.stopFlight();
+    mapRef.current?.resetBoundaries();
     setIsRouteFlying(false);
     setRoutePreparing(false);
     setActiveRouteId(null);

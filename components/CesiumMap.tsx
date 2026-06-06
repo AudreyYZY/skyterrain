@@ -1,6 +1,7 @@
 "use client";
 
 import { bearingRadians, haversineMeters } from "@/lib/geo";
+import { TERRAIN_BOUNDARIES, BOUNDARY_STYLES, type TerrainBoundary } from "@/lib/terrain-boundaries";
 import { resolveRouteWaypoints, type ResolvedWaypoint } from "@/lib/routes";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainPoint } from "@/types/terrain";
@@ -32,6 +33,10 @@ export interface CesiumMapHandle {
   projectToScreen: (lat: number, lon: number) => { x: number; y: number } | null;
   /** 获取当前相机状态 */
   getCameraState: () => CameraState | null;
+  /** 高亮指定地貌边界 */
+  highlightBoundary: (boundaryId: string) => void;
+  /** 重置所有边界为默认样式 */
+  resetBoundaries: () => void;
 }
 
 export interface RouteFlyCallbacks {
@@ -114,6 +119,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const heightCacheRef = useRef<Map<string, number>>(new Map());
     const flightCancelledRef = useRef(false);
     const routeEntityRef = useRef<import("cesium").Entity | null>(null);
+    const boundaryEntitiesRef = useRef<Map<string, import("cesium").Entity>>(new Map());
     const [status, setStatus] = useState<"loading" | "ready" | "error">(
       "loading"
     );
@@ -171,6 +177,48 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         flightCancelledRef.current = true;
         setRoutePreparing(false);
         viewerRef.current?.camera.cancelFlight();
+      },
+
+      highlightBoundary(boundaryId: string) {
+        const viewer = viewerRef.current;
+        const Cesium = cesiumRef.current;
+        if (!viewer || !Cesium) return;
+
+        for (const [id, entity] of boundaryEntitiesRef.current) {
+          const boundary = TERRAIN_BOUNDARIES.find((b) => b.id === id);
+          if (!boundary) continue;
+          const style = BOUNDARY_STYLES[boundary.type];
+          const isTarget = id === boundaryId;
+          const s = isTarget ? style.selected : style.default;
+
+          if (entity.polygon) {
+            entity.polygon.outlineColor = new Cesium.ConstantProperty(
+              Cesium.Color.fromBytes(s.color[0], s.color[1], s.color[2], Math.round(s.alpha * 255))
+            );
+            entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.width);
+          }
+        }
+        viewer.scene.requestRender();
+      },
+
+      resetBoundaries() {
+        const viewer = viewerRef.current;
+        const Cesium = cesiumRef.current;
+        if (!viewer || !Cesium) return;
+
+        for (const [id, entity] of boundaryEntitiesRef.current) {
+          const boundary = TERRAIN_BOUNDARIES.find((b) => b.id === id);
+          if (!boundary) continue;
+          const style = BOUNDARY_STYLES[boundary.type];
+
+          if (entity.polygon) {
+            entity.polygon.outlineColor = new Cesium.ConstantProperty(
+              Cesium.Color.fromBytes(style.default.color[0], style.default.color[1], style.default.color[2], Math.round(style.default.alpha * 255))
+            );
+            entity.polygon.outlineWidth = new Cesium.ConstantProperty(style.default.width);
+          }
+        }
+        viewer.scene.requestRender();
       },
 
       flyToTerrain(terrain: TerrainPoint) {
@@ -534,6 +582,36 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
           });
           resizeObserver.observe(containerRef.current);
+
+          // 绘制地貌边界 — 极弱边界线，不填充
+          for (const boundary of TERRAIN_BOUNDARIES) {
+            const style = BOUNDARY_STYLES[boundary.type];
+            const positions = boundary.coordinates.map(([lon, lat]) =>
+              Cesium.Cartesian3.fromDegrees(lon, lat)
+            );
+
+            const entity = viewer.entities.add({
+              polygon: {
+                hierarchy: new Cesium.PolygonHierarchy(positions),
+                material: Cesium.Color.TRANSPARENT,
+                outline: true,
+                outlineColor: Cesium.Color.fromBytes(
+                  style.default.color[0],
+                  style.default.color[1],
+                  style.default.color[2],
+                  Math.round(style.default.alpha * 255)
+                ),
+                outlineWidth: style.default.width,
+              },
+              properties: {
+                boundaryId: boundary.id,
+                boundaryName: boundary.name,
+                boundaryType: boundary.type,
+              },
+            });
+
+            boundaryEntitiesRef.current.set(boundary.id, entity);
+          }
 
           onTerrainMode?.(terrainMode);
           setStatus("ready");
