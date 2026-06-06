@@ -100,6 +100,41 @@ const KUNLUN: TerrainBoundary = {
   ],
 };
 
+/** 阿尔泰山范围 — 粗略边界 */
+const ALTAI: TerrainBoundary = {
+  id: "altai-boundary",
+  name: "阿尔泰山",
+  type: "mountain",
+  coordinates: [
+    [86.0, 47.0], [88.0, 48.5], [90.0, 49.0], [92.0, 48.5],
+    [94.0, 48.0], [95.0, 47.0], [94.0, 46.0], [92.0, 45.5],
+    [90.0, 46.0], [88.0, 46.5], [86.0, 47.0],
+  ],
+};
+
+/** 帕米尔高原 — 粗略边界 */
+const PAMIR: TerrainBoundary = {
+  id: "pamir-boundary",
+  name: "帕米尔高原",
+  type: "plateau",
+  coordinates: [
+    [73.0, 38.0], [74.0, 39.5], [76.0, 40.0], [78.0, 39.5],
+    [79.0, 38.5], [78.0, 37.0], [76.0, 36.5], [74.0, 37.0],
+    [73.0, 38.0],
+  ],
+};
+
+/** 喀纳斯湖 — 粗略边界 */
+const KANAS_LAKE: TerrainBoundary = {
+  id: "kanas-boundary",
+  name: "喀纳斯湖",
+  type: "lake",
+  coordinates: [
+    [87.0, 48.7], [87.2, 48.8], [87.5, 48.8], [87.7, 48.7],
+    [87.5, 48.6], [87.2, 48.6], [87.0, 48.7],
+  ],
+};
+
 /** 所有地貌边界 */
 export const TERRAIN_BOUNDARIES: TerrainBoundary[] = [
   TARIM_BASIN,
@@ -107,35 +142,38 @@ export const TERRAIN_BOUNDARIES: TerrainBoundary[] = [
   TAKLAMAKAN,
   TIANSHAN,
   KUNLUN,
+  ALTAI,
+  PAMIR,
   BOSTEN_LAKE,
   SAYRAM_LAKE,
+  KANAS_LAKE,
 ];
 
-/** 边界样式配置 — 默认可见但极淡，选中时明显 */
+/** 边界样式配置 — 用户一眼能看出地貌范围 */
 export const BOUNDARY_STYLES = {
   basin: {
-    default: { alpha: 0.12, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.30, width: 1.5 },
-    selected: { alpha: 0.50, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.20, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.40, width: 2 },
+    selected: { alpha: 0.60, width: 2.5, color: [251, 191, 36] as [number, number, number] },
   },
   desert: {
-    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.25, width: 1.5 },
-    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.18, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.35, width: 2 },
+    selected: { alpha: 0.55, width: 2.5, color: [251, 191, 36] as [number, number, number] },
   },
   lake: {
-    default: { alpha: 0.15, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.35, width: 1.5 },
-    selected: { alpha: 0.55, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.25, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.45, width: 2 },
+    selected: { alpha: 0.65, width: 2.5, color: [251, 191, 36] as [number, number, number] },
   },
   mountain: {
-    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.25, width: 1.5 },
-    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.15, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.30, width: 2 },
+    selected: { alpha: 0.50, width: 2.5, color: [251, 191, 36] as [number, number, number] },
   },
   plateau: {
-    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.25, width: 1.5 },
-    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.15, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.30, width: 2 },
+    selected: { alpha: 0.50, width: 2.5, color: [251, 191, 36] as [number, number, number] },
   },
 } as const;
