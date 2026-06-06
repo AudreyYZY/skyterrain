@@ -190,8 +190,12 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           const style = BOUNDARY_STYLES[boundary.type];
           const isTarget = id === boundaryId;
           const s = isTarget ? style.selected : style.default;
+          const fillAlpha = isTarget ? style.fillAlpha * 2.5 : style.fillAlpha;
 
           if (entity.polygon) {
+            entity.polygon.material = new Cesium.ColorMaterialProperty(
+              Cesium.Color.fromBytes(style.fill[0], style.fill[1], style.fill[2], Math.round(fillAlpha * 255))
+            );
             entity.polygon.outlineColor = new Cesium.ConstantProperty(
               Cesium.Color.fromBytes(s.color[0], s.color[1], s.color[2], Math.round(s.alpha * 255))
             );
@@ -212,6 +216,9 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           const style = BOUNDARY_STYLES[boundary.type];
 
           if (entity.polygon) {
+            entity.polygon.material = new Cesium.ColorMaterialProperty(
+              Cesium.Color.fromBytes(style.fill[0], style.fill[1], style.fill[2], Math.round(style.fillAlpha * 255))
+            );
             entity.polygon.outlineColor = new Cesium.ConstantProperty(
               Cesium.Color.fromBytes(style.default.color[0], style.default.color[1], style.default.color[2], Math.round(style.default.alpha * 255))
             );
@@ -587,8 +594,12 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 const isHovered = id === newHoveredId;
                 const s = isHovered ? style.hover : style.default;
                 const color = style.default.color;
+                const fillAlpha = isHovered ? style.fillAlpha * 2 : style.fillAlpha;
 
                 if (entity.polygon) {
+                  entity.polygon.material = new Cesium.ColorMaterialProperty(
+                    Cesium.Color.fromBytes(style.fill[0], style.fill[1], style.fill[2], Math.round(fillAlpha * 255))
+                  );
                   entity.polygon.outlineColor = new Cesium.ConstantProperty(
                     Cesium.Color.fromBytes(color[0], color[1], color[2], Math.round(s.alpha * 255))
                   );
@@ -621,7 +632,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
           resizeObserver.observe(containerRef.current);
 
-          // 绘制地貌边界 — 极弱边界线，不填充
+          // 绘制地貌边界 — 区域染色 + 边界线
           for (const boundary of TERRAIN_BOUNDARIES) {
             const style = BOUNDARY_STYLES[boundary.type];
             const positions = boundary.coordinates.map(([lon, lat]) =>
@@ -631,7 +642,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             const entity = viewer.entities.add({
               polygon: {
                 hierarchy: new Cesium.PolygonHierarchy(positions),
-                material: Cesium.Color.TRANSPARENT,
+                // 极弱区域染色
+                material: Cesium.Color.fromBytes(
+                  style.fill[0], style.fill[1], style.fill[2],
+                  Math.round(style.fillAlpha * 255)
+                ),
                 outline: true,
                 outlineColor: Cesium.Color.fromBytes(
                   style.default.color[0],

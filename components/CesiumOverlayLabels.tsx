@@ -28,11 +28,14 @@ const GRID_CELL_SIZE = 100;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
-/** LOD 级别样式配置 — Google Earth 风格，贴地感 */
+/** LOD 级别样式配置 — Google Earth 风格 Terrain Label */
 const LOD_STYLES = {
-  1: { fontSize: 22, opacity: 0.55, fontWeight: 400, letterSpacing: "0.08em" },
-  2: { fontSize: 16, opacity: 0.60, fontWeight: 400, letterSpacing: "0.04em" },
-  3: { fontSize: 12, opacity: 0.65, fontWeight: 400, letterSpacing: "0.02em" },
+  // 全国尺度: 大字距, 极细体, 覆盖整个地貌
+  1: { fontSize: 20, opacity: 0.50, fontWeight: 300, letterSpacing: "0.5em" },
+  // 区域尺度: 中等字距
+  2: { fontSize: 15, opacity: 0.55, fontWeight: 400, letterSpacing: "0.15em" },
+  // 地点尺度: 正常字距
+  3: { fontSize: 12, opacity: 0.60, fontWeight: 400, letterSpacing: "0.05em" },
 } as const;
 
 /**
