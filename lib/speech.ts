@@ -77,7 +77,8 @@ function speakBrowserAndWait(text: string, rate = 0.92): Promise<void> {
 
 async function speakEdgeAndWait(
   text: string,
-  voice: EdgeTtsVoiceId
+  voice: EdgeTtsVoiceId,
+  onPlaying?: () => void
 ): Promise<boolean> {
   const res = await fetch("/api/tts", {
     method: "POST",
@@ -99,6 +100,10 @@ async function speakEdgeAndWait(
       URL.revokeObjectURL(url);
       if (currentObjectUrl === url) currentObjectUrl = null;
       if (currentAudio === audio) currentAudio = null;
+    };
+
+    audio.onplaying = () => {
+      onPlaying?.();
     };
 
     audio.onended = () => {
@@ -134,7 +139,8 @@ export function stopSpeech(): void {
 /** 优先 Edge 神经网络语音，失败时回退系统语音 */
 export async function speakAndWait(
   text: string,
-  rate = 0.92
+  rate = 0.92,
+  onPlaying?: () => void
 ): Promise<void> {
   stopSpeech();
 
@@ -142,13 +148,14 @@ export async function speakAndWait(
 
   const voice = getPreferredEdgeVoice();
   try {
-    const ok = await speakEdgeAndWait(text, voice);
+    const ok = await speakEdgeAndWait(text, voice, onPlaying);
     if (ok) return;
   } catch {
     /* 回退 */
   }
 
   await speakBrowserAndWait(text, rate);
+  onPlaying?.();
 }
 
 export async function speak(text: string, rate = 0.92): Promise<void> {

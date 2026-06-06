@@ -131,11 +131,11 @@ export default function ExplorerApp() {
   }, [stopAudio, stopHighlight]);
 
   const speakText = useCallback(
-    async (text: string): Promise<void> => {
+    async (text: string, onPlaying?: () => void): Promise<void> => {
       stopAudio();
       setIsSpeaking(true);
       try {
-        await speakAndWait(text, SPEECH_RATE);
+        await speakAndWait(text, SPEECH_RATE, onPlaying);
       } finally {
         setIsSpeaking(false);
       }
@@ -157,11 +157,10 @@ export default function ExplorerApp() {
         { key: "history", text: lesson.history },
         { key: "observation", text: lesson.observation ?? "" },
       ].filter(s => s.text.trim().length > 0);
-      console.log("[speakLessonWithHighlight] BEFORE startHighlightSections, sections:", sections.length, "lesson:", lesson.seeing?.slice(0, 20));
-      startHighlightSections(sections);
-      console.log("[speakLessonWithHighlight] AFTER startHighlightSections");
-      await speakText(ssml);
-      console.log("[speakLessonWithHighlight] speakText done, calling stopHighlight");
+      // 高亮在音频真正开始播放时启动，而非 TTS 请求前
+      await speakText(ssml, () => {
+        startHighlightSections(sections);
+      });
       stopHighlight();
     },
     [speakText, startHighlightSections, stopHighlight]
@@ -175,8 +174,9 @@ export default function ExplorerApp() {
       setError(null);
 
       if (options?.flyoverOnly) {
-        startHighlight(terrain.flyoverCue, "seeing");
-        await speakText(terrain.flyoverCue);
+        await speakText(terrain.flyoverCue, () => {
+          startHighlight(terrain.flyoverCue, "seeing");
+        });
         stopHighlight();
       } else {
         await speakLessonWithHighlight(terrain.lesson);
@@ -226,12 +226,13 @@ export default function ExplorerApp() {
           { key: "history", text: terrain.lesson.history },
           { key: "observation", text: terrain.lesson.observation ?? "" },
         ].filter(s => s.text.trim().length > 0);
-        startHighlightSections(highlightSections);
 
-        // 等待叙述完成
+        // 等待叙述完成 — 高亮在音频真正播放时启动
         setIsSpeaking(true);
         try {
-          await speakAndWait(ssmlScript, SPEECH_RATE);
+          await speakAndWait(ssmlScript, SPEECH_RATE, () => {
+            startHighlightSections(highlightSections);
+          });
         } finally {
           setIsSpeaking(false);
           stopHighlight();
@@ -255,10 +256,11 @@ export default function ExplorerApp() {
           { key: "history", text: cityLesson.history },
           { key: "observation", text: cityLesson.observation ?? "" },
         ].filter(s => s.text.trim().length > 0);
-        startHighlightSections(citySections);
         setIsSpeaking(true);
         try {
-          await speakAndWait(ssmlScript, SPEECH_RATE);
+          await speakAndWait(ssmlScript, SPEECH_RATE, () => {
+            startHighlightSections(citySections);
+          });
         } finally {
           setIsSpeaking(false);
           stopHighlight();
@@ -505,7 +507,7 @@ export default function ExplorerApp() {
               isFlyover={isFlyover}
               isRouteFlying={isRouteFlying}
               isSpeaking={isSpeaking}
-              onSpeak={() => { console.log("[onSpeak] clicked, lesson:", lesson?.seeing?.slice(0, 20)); if (lesson) void speakLessonWithHighlight(lesson); }}
+              onSpeak={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
               onStopSpeak={stopSpeaking}
               activeSentenceIndex={activeSentenceIndex}
               activeSection={activeSection}

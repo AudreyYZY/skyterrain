@@ -39,10 +39,6 @@ export default function StructuredLesson({
 }: StructuredLessonProps) {
   const activeRef = useRef<HTMLSpanElement>(null);
 
-  useEffect(() => {
-    console.log("[StructuredLesson] props:", { activeSentenceIndex, activeSection });
-  }, [activeSentenceIndex, activeSection]);
-
   // 当前高亮句变化时，滚动到可见区域
   useEffect(() => {
     if (activeSentenceIndex != null && activeRef.current) {
