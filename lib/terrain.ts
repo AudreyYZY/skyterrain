@@ -102,10 +102,10 @@ const CATEGORY_MERGE: Record<TerrainCategory, TerrainCategory[]> = {
   basin: ["basin"],
   river: ["river", "valley"],
   scenic: ["scenic", "oasis", "silk_road"],
-  city: ["city"],
   valley: ["river", "valley"],
   oasis: ["scenic", "oasis", "silk_road"],
   silk_road: ["scenic", "oasis", "silk_road"],
+  city: ["city"],
 };
 
 export function getTerrainsByCategory(): TerrainCategoryGroup[] {

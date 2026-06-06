@@ -69,6 +69,8 @@ export default function ExplorerApp() {
   const [routePreparing, setRoutePreparing] = useState(false);
   const [activeRouteId, setActiveRouteId] = useState<string | null>(null);
   const [isFlyover, setIsFlyover] = useState(false);
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
+  const [showDetailDrawer, setShowDetailDrawer] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
@@ -437,39 +439,13 @@ export default function ExplorerApp() {
   const cardsForPanel = activeTerrain?.cards ?? displayCards;
 
   return (
-    <div className="relative flex h-screen w-screen flex-col overflow-hidden bg-[#0a0e12]">
-      {/* Minimal translucent header */}
-      <header className="relative z-20 flex shrink-0 items-center justify-between bg-transparent px-6 py-2.5">
-        <div className="flex items-center gap-3">
-          <p className="text-[9px] font-medium uppercase tracking-[0.25em] text-amber-300/30">
-            Flight Geography Explorer
-          </p>
-          <span className="text-white/[0.06]">|</span>
-          <p className="text-[10px] text-white/20 tracking-wide">
-            新疆 · {terrainCount} 处
-          </p>
-        </div>
-        <div className="flex items-center gap-0.5">
-          <ModeTab
-            active={mode === "explore"}
-            onClick={() => setMode("explore")}
-            label="探索"
-          />
-          <ModeTab
-            active={mode === "photo"}
-            onClick={() => setMode("photo")}
-            label="照片"
-          />
-        </div>
-      </header>
-
-      {/* Map layer — full bleed */}
+    <div className="relative flex h-screen w-screen overflow-hidden bg-[#0a0e12]">
+      {/* Map layer — full bleed, always behind everything */}
       <div className="absolute inset-0 z-0">
         <CesiumMap
           ref={mapRef}
           onTerrainMode={setTerrainMode}
         />
-        {/* Spatial awareness labels — cinematic map annotations */}
         {mode === "explore" && (
           <CesiumOverlayLabels
             mapRef={mapRef}
@@ -479,67 +455,212 @@ export default function ExplorerApp() {
           />
         )}
         {terrainMode === "ellipsoid" && mode === "explore" && (
-          <div className="pointer-events-none absolute bottom-4 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-lg border border-amber-500/20 bg-[#0a0e12]/80 px-4 py-2 text-center text-[11px] text-amber-200/60 backdrop-blur-sm">
+          <div className="pointer-events-none absolute bottom-4 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-lg border border-amber-500/20 bg-[#0a0e12]/80 px-4 py-2 text-center text-[11px] text-amber-200/60">
             未启用 Cesium 全球地形。请配置{" "}
             <code className="text-amber-300/70">NEXT_PUBLIC_CESIUM_ION_TOKEN</code>
           </div>
         )}
       </div>
 
-      {/* Overlay layer — floating panels */}
-      <div className="pointer-events-none absolute inset-x-0 top-12 bottom-0 z-10 flex w-full">
-        {/* Left panel — terrain list */}
-        {mode === "explore" && (
-          <ResizablePanel
-            side="left"
-            storageKey="fge-panel-left"
-            title="目的地"
-            subtitle={`新疆 · ${terrainCount} 处`}
-          >
-            <FlightControls
-              groups={terrainGroups}
-              activeId={activeTerrain?.id ?? null}
-              onSelect={handleSelectTerrain}
-            />
-            <RouteControls
-              routes={routes}
-              activeRouteId={activeRouteId}
-              isFlying={isRouteFlying || routePreparing}
-              onStartRoute={handleStartRoute}
-              onStopRoute={handleStopRoute}
-            />
-          </ResizablePanel>
-        )}
+      {/* Header — ultra minimal, floating */}
+      <header className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-4 py-2 pointer-events-none">
+        <div className="flex items-center gap-2 pointer-events-auto">
+          <p className="text-[8px] font-medium uppercase tracking-[0.25em] text-amber-300/25">
+            Flight Geography Explorer
+          </p>
+          <span className="text-white/[0.04]">|</span>
+          <p className="text-[9px] text-white/15 tracking-wide">
+            新疆 · {terrainCount}
+          </p>
+        </div>
+        <div className="flex items-center gap-0.5 pointer-events-auto">
+          <ModeTab active={mode === "explore"} onClick={() => setMode("explore")} label="探索" />
+          <ModeTab active={mode === "photo"} onClick={() => setMode("photo")} label="照片" />
+        </div>
+      </header>
 
-        {/* Spacer pushes right panel to the edge */}
-        <div className="min-w-0 flex-1" />
+      {/* Left sidebar — collapsible terrain browser */}
+      {mode === "explore" && (
+        <div
+          className={`absolute top-10 bottom-0 left-0 z-20 flex flex-col transition-all duration-300 ease-out ${
+            sidebarCollapsed ? "w-[60px]" : "w-[280px]"
+          }`}
+        >
+          {/* Sidebar background */}
+          <div className="absolute inset-0 bg-[#0a0e12]/50 backdrop-blur-md border-r border-white/[0.04]" />
 
-        {/* Right overlay — floating narration panel */}
-        {mode === "explore" ? (
-          <div className="pointer-events-auto mr-3 mb-4 mt-4 flex w-[320px] shrink-0 flex-col rounded-2xl bg-[#0a0e12]/30 p-5 backdrop-blur-xl border border-white/[0.04] cinematic-enter max-h-[calc(100vh-5rem)]">
-            <NarrationPanel
-              title={panelTitle}
-              subtitle={panelSubtitle}
-              cards={cardsForPanel}
-              lesson={lesson}
-              knowledge={activeTerrain?.knowledge ?? null}
-              error={error}
-              isFlyover={isFlyover}
-              isRouteFlying={isRouteFlying}
-              isSpeaking={isSpeaking}
-              onSpeak={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
-              onStopSpeak={stopSpeaking}
-              activeSentenceIndex={activeSentenceIndex}
-              activeSection={activeSection}
-              embedded
-            />
+          {/* Sidebar content */}
+          <div className="relative flex flex-col h-full">
+            {/* Toggle button */}
+            <button
+              type="button"
+              onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
+              className="flex items-center justify-center h-10 shrink-0 text-white/30 hover:text-white/60 transition-colors"
+            >
+              <span className="text-[11px]">{sidebarCollapsed ? "▸" : "◂"}</span>
+            </button>
+
+            {/* Category list */}
+            <div className="flex-1 overflow-y-auto overscroll-contain">
+              {sidebarCollapsed ? (
+                /* Collapsed: single characters */
+                <div className="flex flex-col items-center gap-1 py-2">
+                  {terrainGroups.map((group) => (
+                    <button
+                      key={group.category}
+                      type="button"
+                      onClick={() => {
+                        setSidebarCollapsed(false);
+                      }}
+                      className="flex h-9 w-9 items-center justify-center rounded-md text-[13px] text-white/40 hover:text-white/70 hover:bg-white/[0.04] transition-all"
+                      title={group.label}
+                    >
+                      {group.label.charAt(0)}
+                    </button>
+                  ))}
+                  <div className="my-2 h-px w-6 bg-white/[0.06]" />
+                  <button
+                    type="button"
+                    onClick={() => setSidebarCollapsed(false)}
+                    className="flex h-9 w-9 items-center justify-center rounded-md text-[13px] text-white/40 hover:text-white/70 hover:bg-white/[0.04] transition-all"
+                    title="飞行路线"
+                  >
+                    航
+                  </button>
+                </div>
+              ) : (
+                /* Expanded: full list */
+                <div className="px-3 py-2">
+                  <div className="mb-3 flex items-center justify-between">
+                    <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider">地貌探索</p>
+                    <p className="text-[9px] text-white/15">{terrainCount}</p>
+                  </div>
+
+                  {terrainGroups.map((group) => (
+                    <div key={group.category} className="mb-3">
+                      <p className="text-[10px] font-medium text-white/30 mb-1">
+                        {group.label}（{group.terrains.length}）
+                      </p>
+                      <div className="space-y-0.5">
+                        {group.terrains.map((t) => (
+                          <button
+                            key={t.id}
+                            type="button"
+                            onClick={() => handleSelectTerrain(t)}
+                            className={`w-full text-left px-2 py-1 rounded text-[11px] transition-all ${
+                              activeTerrain?.id === t.id
+                                ? "text-white/80 bg-white/[0.06]"
+                                : "text-white/35 hover:text-white/60 hover:bg-white/[0.03]"
+                            }`}
+                          >
+                            {t.name}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+
+                  <div className="my-3 h-px bg-white/[0.06]" />
+                  <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-2">飞行路线</p>
+                  <RouteControls
+                    routes={routes}
+                    activeRouteId={activeRouteId}
+                    isFlying={isRouteFlying || routePreparing}
+                    onStartRoute={handleStartRoute}
+                    onStopRoute={handleStopRoute}
+                  />
+                </div>
+              )}
+            </div>
           </div>
-        ) : (
-          <div className="pointer-events-auto mr-3 mb-4 mt-4 flex w-[300px] shrink-0 flex-col rounded-2xl bg-[#0a0e12]/40 p-4 backdrop-blur-xl border border-white/[0.04] cinematic-enter max-h-[calc(100vh-5rem)]">
+        </div>
+      )}
+
+      {/* Right summary card — top-right, only when terrain selected */}
+      {mode === "explore" && activeTerrain && !showDetailDrawer && (
+        <div className="absolute top-10 right-3 z-20 w-[320px] pointer-events-auto">
+          <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
+            <div className="flex items-start justify-between mb-1">
+              <h3 className="text-[15px] font-medium text-white/85">{activeTerrain.name}</h3>
+              <span className="text-[10px] text-white/30">
+                {activeTerrain.elevation.toLocaleString("zh-CN")}m
+              </span>
+            </div>
+            <p className="text-[11px] text-white/35 mb-3 line-clamp-2">
+              {activeTerrain.lesson?.seeing?.slice(0, 60)}…
+            </p>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => setShowDetailDrawer(true)}
+                className="flex-1 rounded-lg bg-white/[0.05] px-3 py-1.5 text-[10px] text-white/50 hover:bg-white/[0.08] hover:text-white/70 transition-all"
+              >
+                详情
+              </button>
+              <button
+                type="button"
+                onClick={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
+                className="flex-1 rounded-lg bg-white/[0.05] px-3 py-1.5 text-[10px] text-white/50 hover:bg-white/[0.08] hover:text-white/70 transition-all"
+              >
+                {isSpeaking ? "停止" : "朗读"}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Detail drawer — right side, full height */}
+      {mode === "explore" && showDetailDrawer && activeTerrain && (
+        <div className="absolute top-0 right-0 bottom-0 z-20 w-[400px] pointer-events-auto">
+          <div className="h-full bg-[#0a0e12]/60 backdrop-blur-lg border-l border-white/[0.04] flex flex-col">
+            {/* Drawer header */}
+            <div className="flex items-center justify-between px-5 py-3 border-b border-white/[0.04]">
+              <div>
+                <h3 className="text-[15px] font-medium text-white/85">{activeTerrain.name}</h3>
+                <p className="text-[10px] text-white/25">
+                  海拔 {activeTerrain.elevation.toLocaleString("zh-CN")}m
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowDetailDrawer(false)}
+                className="text-white/30 hover:text-white/60 transition-colors text-[14px]"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Drawer content */}
+            <div className="flex-1 overflow-y-auto overscroll-contain px-5 py-4">
+              <NarrationPanel
+                title={panelTitle}
+                subtitle={panelSubtitle}
+                cards={cardsForPanel}
+                lesson={lesson}
+                knowledge={activeTerrain?.knowledge ?? null}
+                error={error}
+                isFlyover={isFlyover}
+                isRouteFlying={isRouteFlying}
+                isSpeaking={isSpeaking}
+                onSpeak={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
+                onStopSpeak={stopSpeaking}
+                activeSentenceIndex={activeSentenceIndex}
+                activeSection={activeSection}
+                embedded
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Photo mode overlay */}
+      {mode === "photo" && (
+        <div className="absolute top-10 right-3 bottom-3 z-20 w-[300px] pointer-events-auto">
+          <div className="h-full rounded-xl bg-[#0a0e12]/40 backdrop-blur-md border border-white/[0.04] p-4 overflow-y-auto">
             <PhotoModePanel onSpeak={speakText} embedded />
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

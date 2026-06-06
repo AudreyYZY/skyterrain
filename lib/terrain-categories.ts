@@ -1,5 +1,6 @@
 import type { TerrainCategory } from "@/types/terrain";
 
+/** 地貌探索分类 — 按地形类型组织，非行政区 */
 export const TERRAIN_CATEGORY_ORDER: TerrainCategory[] = [
   "mountain_range",
   "lake",
@@ -7,7 +8,6 @@ export const TERRAIN_CATEGORY_ORDER: TerrainCategory[] = [
   "basin",
   "river",
   "scenic",
-  "city",
 ];
 
 export const TERRAIN_CATEGORY_LABEL: Record<TerrainCategory, string> = {
@@ -17,8 +17,8 @@ export const TERRAIN_CATEGORY_LABEL: Record<TerrainCategory, string> = {
   basin: "盆地",
   river: "河谷",
   scenic: "景观",
-  city: "城市",
   valley: "河谷",
-  oasis: "景观",
-  silk_road: "景观",
+  oasis: "绿洲",
+  silk_road: "丝路",
+  city: "城市",
 };

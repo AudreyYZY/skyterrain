@@ -414,3 +414,105 @@ If a feature appears to require modifying protected infrastructure:
 | 5B | TTS Fix (SSML nesting, ws bundling) | ✅ |
 | 5C | Sentence Highlighting (multi-section) | ✅ |
 | 5D | Documentary Map Labeling System | ✅ |
+| V2 | UI Architecture V2 — Map-first layout | 🔄 |
+
+---
+
+## UI Architecture V2
+
+> Added 2026-06-06. Map-first layout for Flight Geography Explorer.
+
+### Design Principles
+
+1. **Map is the hero** — 90%+ visual space belongs to the map
+2. **UI is assistant** — panels are floating, minimal, never dominant
+3. **Terrain-first taxonomy** — organize by landform type, not administrative region
+4. **National expansion ready** — structure supports 300+ locations across China
+5. **Professional, restrained** — Google Earth / ArcGIS Earth aesthetic, not dashboard
+
+### Layout Structure
+
+```
+┌─────────────────────────────────────────────────────────┐
+│ Header (40px, ultra-minimal, floating)                  │
+├──┐                                                  ┌──┤
+│60│                                                  │  │
+│px│              Map (~90%)                          │信│
+│  │                                                  │息│
+│侧│                                                  │卡│
+│栏│                                                  │  │
+│  │                                                  │320│
+└──┘                                                  └──┘
+```
+
+### Left Sidebar
+
+- **Collapsed:** 60px, Chinese single characters (山/湖/沙/盆/高/航)
+- **Expanded:** 280px, terrain categories with counts
+- **Structure:** 地貌探索 (mountain/lake/desert/basin/river/scenic) + 飞行路线
+- **No emoji, no icons** — professional Chinese typography
+
+### Right Info Card
+
+- **No terrain selected:** hidden
+- **Terrain selected:** 320px summary card, top-right corner
+- **Detail view:** 400px drawer, right side, full height
+- **Summary → Drawer transition**, not in-card expansion
+
+### Terrain Categories (Updated)
+
+| Category | Label | Data Categories |
+|----------|-------|-----------------|
+| mountain_range | 山脉 | mountain_range |
+| lake | 湖泊 | lake |
+| desert | 沙漠 | desert |
+| basin | 盆地 | basin |
+| river | 河谷 | river, valley |
+| scenic | 景观 | scenic, oasis, silk_road |
+
+**Removed from sidebar:** city (not terrain type)
+
+### Future: Province Filter
+
+```
+顶部过滤器:
+全国 | 新疆 | 西藏 | 青海 | 四川 | 云南 | 甘肃 | 内蒙古
+
+选择省份后 → 左侧分类自动过滤
+```
+
+### Future: LOD Label System
+
+```
+Level 1 (全国): 新疆 / 青藏高原 / 华北平原
+Level 2 (区域): 天山 / 昆仑山 / 塔里木盆地
+Level 3 (地点): 博格达峰 / 赛里木湖 / 博斯腾湖
+```
+
+With screen-space collision detection (80px grid).
+
+### Future: Terrain Boundaries
+
+GeoJSON polygon boundaries for major landforms:
+- Thin outline, no fill
+- Hover: glow + name
+- Click: flyTo + narration
+
+### Priority Roadmap
+
+```
+P0  Terrain boundary GeoJSON
+P1  LOD label system + collision detection
+P2  Left sidebar restructuring ← DONE
+P3  Right info card + drawer ← DONE
+P4  National expansion architecture
+P5  Social + shared location (future)
+```
+
+### Modified Files (V2)
+
+| File | Change |
+|------|--------|
+| `components/ExplorerApp.tsx` | Complete layout rewrite: floating header, collapsible sidebar, summary card, detail drawer |
+| `lib/terrain-categories.ts` | Removed "city" from display categories |
+| `lib/terrain.ts` | Reordered CATEGORY_MERGE |
