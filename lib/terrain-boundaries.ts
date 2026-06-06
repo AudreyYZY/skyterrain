@@ -111,31 +111,31 @@ export const TERRAIN_BOUNDARIES: TerrainBoundary[] = [
   SAYRAM_LAKE,
 ];
 
-/** 边界样式配置 */
+/** 边界样式配置 — 默认可见但极淡，选中时明显 */
 export const BOUNDARY_STYLES = {
   basin: {
-    default: { alpha: 0.06, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.25, width: 1.5 },
-    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
-  },
-  desert: {
-    default: { alpha: 0.05, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.20, width: 1.5 },
-    selected: { alpha: 0.40, width: 2, color: [251, 191, 36] as [number, number, number] },
-  },
-  lake: {
-    default: { alpha: 0.08, width: 1, color: [255, 255, 255] as [number, number, number] },
+    default: { alpha: 0.12, width: 1, color: [255, 255, 255] as [number, number, number] },
     hover: { alpha: 0.30, width: 1.5 },
     selected: { alpha: 0.50, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
+  desert: {
+    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.25, width: 1.5 },
+    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
+  },
+  lake: {
+    default: { alpha: 0.15, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.35, width: 1.5 },
+    selected: { alpha: 0.55, width: 2, color: [251, 191, 36] as [number, number, number] },
+  },
   mountain: {
-    default: { alpha: 0.04, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.15, width: 1.5 },
-    selected: { alpha: 0.35, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.25, width: 1.5 },
+    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
   plateau: {
-    default: { alpha: 0.04, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.15, width: 1.5 },
-    selected: { alpha: 0.35, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.25, width: 1.5 },
+    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
 } as const;

@@ -561,6 +561,44 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
           });
 
+          // 地貌边界 Hover 效果
+          const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+          let hoveredBoundaryId: string | null = null;
+
+          handler.setInputAction((movement: any) => {
+            if (viewer.isDestroyed()) return;
+            const picked = viewer.scene.pick(movement.endPosition);
+            let newHoveredId: string | null = null;
+
+            if (Cesium.defined(picked) && picked.id?.properties) {
+              const props = picked.id.properties;
+              const boundaryId = props?.getValue?.()?.boundaryId;
+              if (boundaryId) {
+                newHoveredId = boundaryId;
+              }
+            }
+
+            if (newHoveredId !== hoveredBoundaryId) {
+              hoveredBoundaryId = newHoveredId;
+              for (const [id, entity] of boundaryEntitiesRef.current) {
+                const boundary = TERRAIN_BOUNDARIES.find((b) => b.id === id);
+                if (!boundary) continue;
+                const style = BOUNDARY_STYLES[boundary.type];
+                const isHovered = id === newHoveredId;
+                const s = isHovered ? style.hover : style.default;
+                const color = style.default.color;
+
+                if (entity.polygon) {
+                  entity.polygon.outlineColor = new Cesium.ConstantProperty(
+                    Cesium.Color.fromBytes(color[0], color[1], color[2], Math.round(s.alpha * 255))
+                  );
+                  entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.width);
+                }
+              }
+              viewer.scene.requestRender();
+            }
+          }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
           // 瓦片加载完成后触发渲染 — 确保高分辨率瓦片显示
           viewer.scene.globe.tileLoadProgressEvent.addEventListener((e) => {
             if (!viewer.isDestroyed()) {
