@@ -6,9 +6,17 @@ const DEFAULT_VOICE = "zh-CN-XiaoyiNeural";
 const SYNTHESIS_TIMEOUT_MS = 15_000;
 const MAX_RETRIES = 2;
 
+interface WordBoundary {
+  /** 开始时间（秒） */
+  start: number;
+  /** 结束时间（秒） */
+  end: number;
+  /** 词文本 */
+  text: string;
+}
+
 function isValidSSML(text: string): boolean {
   if (!text.trim().startsWith("<speak")) return true; // Not SSML, OK
-  // Basic SSML validation
   const openTags = (text.match(/<speak/g) || []).length;
   const closeTags = (text.match(/<\/speak>/g) || []).length;
   return openTags === closeTags;
@@ -17,17 +25,24 @@ function isValidSSML(text: string): boolean {
 async function synthesizeWithTimeout(
   tts: InstanceType<typeof EdgeTTS>,
   timeoutMs: number
-): Promise<Buffer> {
+): Promise<{ audio: Buffer; wordBoundaries: WordBoundary[] }> {
   return new Promise((resolve, reject) => {
     const timer = setTimeout(() => {
       reject(new Error(`TTS 合成超时 (${timeoutMs}ms)`));
     }, timeoutMs);
 
     tts.synthesize()
-      .then(({ audio }) => audio.arrayBuffer())
-      .then((ab) => {
+      .then(({ audio, subtitle }) => {
         clearTimeout(timer);
-        resolve(Buffer.from(ab));
+        // subtitle: [{offset: 100ns, duration: 100ns, text: string}, ...]
+        const wordBoundaries: WordBoundary[] = subtitle.map((s: any) => ({
+          start: s.offset / 1e7,      // 100ns → seconds
+          end: (s.offset + s.duration) / 1e7,
+          text: s.text,
+        }));
+        audio.arrayBuffer().then((ab) => {
+          resolve({ audio: Buffer.from(ab), wordBoundaries });
+        });
       })
       .catch((err) => {
         clearTimeout(timer);
@@ -61,9 +76,9 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: "SSML 内容为空" }, { status: 400 });
       }
       const tts = new EdgeTTS(stripped, voice, { rate: "-18%", pitch: "-2Hz" });
-      const buffer = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
-      return new Response(new Uint8Array(buffer), {
-        headers: { "Content-Type": "audio/mpeg", "Cache-Control": "no-store" },
+      const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
+      return new Response(JSON.stringify({ audio: audio.toString("base64"), wordBoundaries }), {
+        headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
       });
     }
 
@@ -76,14 +91,14 @@ export async function POST(request: Request) {
           pitch: "-2Hz",
         });
 
-        const buffer = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
+        const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
         const elapsed = Date.now() - startTime;
 
-        console.log(`[TTS] OK voice=${voice} chars=${clipped.length} elapsed=${elapsed}ms attempt=${attempt + 1}`);
+        console.log(`[TTS] OK voice=${voice} chars=${clipped.length} elapsed=${elapsed}ms words=${wordBoundaries.length} attempt=${attempt + 1}`);
 
-        return new Response(new Uint8Array(buffer), {
+        return new Response(JSON.stringify({ audio: audio.toString("base64"), wordBoundaries }), {
           headers: {
-            "Content-Type": "audio/mpeg",
+            "Content-Type": "application/json",
             "Cache-Control": "no-store",
           },
         });
@@ -99,7 +114,6 @@ export async function POST(request: Request) {
         });
 
         if (attempt < MAX_RETRIES) {
-          // 指数退避
           await new Promise((r) => setTimeout(r, (attempt + 1) * 1000));
         }
       }

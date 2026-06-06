@@ -18,7 +18,7 @@ import {
   getAllRoutes,
   type ResolvedWaypoint,
 } from "@/lib/routes";
-import { speakAndWait, stopSpeech, warmupSpeechVoices } from "@/lib/speech";
+import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries, type WordBoundary } from "@/lib/speech";
 import { getAllTerrains, getTerrainsByCategory } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
@@ -71,7 +71,7 @@ export default function ExplorerApp() {
   const [isFlyover, setIsFlyover] = useState(false);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
-  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, stopHighlight } = useSentenceHighlight();
+  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
 
   // 初始化地形标注 — 主要地标显示在地图上
   useEffect(() => {
@@ -157,13 +157,21 @@ export default function ExplorerApp() {
         { key: "history", text: lesson.history },
         { key: "observation", text: lesson.observation ?? "" },
       ].filter(s => s.text.trim().length > 0);
-      // 高亮在音频真正开始播放时启动，而非 TTS 请求前
+
+      // onPlaying 在 audio.onplaying 时触发
+      // 此时 getCurrentWordBoundaries() 已包含 Edge TTS 返回的真实时间戳
       await speakText(ssml, () => {
-        startHighlightSections(sections);
+        const wordBoundaries = getCurrentWordBoundaries();
+        const audio = getCurrentAudio();
+        if (wordBoundaries.length > 0 && audio) {
+          startHighlightWithTiming(sections, wordBoundaries, audio);
+        } else {
+          startHighlightSections(sections);
+        }
       });
       stopHighlight();
     },
-    [speakText, startHighlightSections, stopHighlight]
+    [speakText, startHighlightSections, startHighlightWithTiming, stopHighlight]
   );
 
   const showTerrainLesson = useCallback(
@@ -231,7 +239,13 @@ export default function ExplorerApp() {
         setIsSpeaking(true);
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE, () => {
-            startHighlightSections(highlightSections);
+            const wordBoundaries = getCurrentWordBoundaries();
+            const audio = getCurrentAudio();
+            if (wordBoundaries.length > 0 && audio) {
+              startHighlightWithTiming(highlightSections, wordBoundaries, audio);
+            } else {
+              startHighlightSections(highlightSections);
+            }
           });
         } finally {
           setIsSpeaking(false);
@@ -259,7 +273,13 @@ export default function ExplorerApp() {
         setIsSpeaking(true);
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE, () => {
-            startHighlightSections(citySections);
+            const wordBoundaries = getCurrentWordBoundaries();
+            const audio = getCurrentAudio();
+            if (wordBoundaries.length > 0 && audio) {
+              startHighlightWithTiming(citySections, wordBoundaries, audio);
+            } else {
+              startHighlightSections(citySections);
+            }
           });
         } finally {
           setIsSpeaking(false);

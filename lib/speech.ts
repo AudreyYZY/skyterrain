@@ -1,7 +1,28 @@
 import { getPreferredEdgeVoice, type EdgeTtsVoiceId } from "@/lib/voice-preference";
 
+export interface WordBoundary {
+  start: number;  // seconds
+  end: number;    // seconds
+  text: string;
+}
+
+export interface SpeakResult {
+  wordBoundaries: WordBoundary[];
+}
+
 let currentAudio: HTMLAudioElement | null = null;
 let currentObjectUrl: string | null = null;
+let currentWordBoundaries: WordBoundary[] = [];
+
+/** 获取当前正在播放的 Audio 元素（用于外部同步） */
+export function getCurrentAudio(): HTMLAudioElement | null {
+  return currentAudio;
+}
+
+/** 获取当前音频的 word boundaries（在 onPlaying 回调中可用） */
+export function getCurrentWordBoundaries(): WordBoundary[] {
+  return currentWordBoundaries;
+}
 
 /** 中文语速粗估 */
 export function estimateSpeechDurationSec(
@@ -79,16 +100,23 @@ async function speakEdgeAndWait(
   text: string,
   voice: EdgeTtsVoiceId,
   onPlaying?: () => void
-): Promise<boolean> {
+): Promise<{ ok: boolean; wordBoundaries: WordBoundary[] }> {
   const res = await fetch("/api/tts", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ text, voice }),
   });
 
-  if (!res.ok) return false;
+  if (!res.ok) return { ok: false, wordBoundaries: [] };
 
-  const blob = await res.blob();
+  const data = await res.json();
+  const wordBoundaries: WordBoundary[] = data.wordBoundaries ?? [];
+
+  // 存储 word boundaries 到模块变量，供 onPlaying 回调时使用
+  currentWordBoundaries = wordBoundaries;
+
+  const audioBytes = Uint8Array.from(atob(data.audio), (c) => c.charCodeAt(0));
+  const blob = new Blob([audioBytes], { type: "audio/mpeg" });
   const url = URL.createObjectURL(blob);
 
   return new Promise((resolve) => {
@@ -108,16 +136,16 @@ async function speakEdgeAndWait(
 
     audio.onended = () => {
       cleanup();
-      resolve(true);
+      resolve({ ok: true, wordBoundaries });
     };
     audio.onerror = () => {
       cleanup();
-      resolve(false);
+      resolve({ ok: false, wordBoundaries: [] });
     };
 
     void audio.play().catch(() => {
       cleanup();
-      resolve(false);
+      resolve({ ok: false, wordBoundaries: [] });
     });
   });
 }
@@ -141,21 +169,22 @@ export async function speakAndWait(
   text: string,
   rate = 0.92,
   onPlaying?: () => void
-): Promise<void> {
+): Promise<SpeakResult> {
   stopSpeech();
 
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined") return { wordBoundaries: [] };
 
   const voice = getPreferredEdgeVoice();
   try {
-    const ok = await speakEdgeAndWait(text, voice, onPlaying);
-    if (ok) return;
+    const result = await speakEdgeAndWait(text, voice, onPlaying);
+    if (result.ok) return { wordBoundaries: result.wordBoundaries };
   } catch {
     /* 回退 */
   }
 
   await speakBrowserAndWait(text, rate);
   onPlaying?.();
+  return { wordBoundaries: [] };
 }
 
 export async function speak(text: string, rate = 0.92): Promise<void> {
