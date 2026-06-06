@@ -552,8 +552,30 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 terrainExaggeration: (viewer.scene.globe as any).terrainExaggeration ?? "N/A",
               });
             },
+            /** 显示所有边界 polygon 顶点 */
+            debugBoundaries(show: boolean = true) {
+              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugVertex);
+              existing.forEach((e: any) => viewer.entities.remove(e));
+
+              if (!show) {
+                console.log("[debug] Boundary vertices hidden");
+                return;
+              }
+
+              for (const boundary of TERRAIN_BOUNDARIES) {
+                for (const [lon, lat] of boundary.coordinates) {
+                  viewer.entities.add({
+                    position: Cesium.Cartesian3.fromDegrees(lon, lat),
+                    point: { pixelSize: 5, color: Cesium.Color.RED },
+                    properties: { isDebugVertex: true, boundaryId: boundary.id },
+                  });
+                }
+                console.log(`[debug] ${boundary.name}: ${boundary.coordinates.length} vertices`);
+              }
+              viewer.scene.requestRender();
+            },
           };
-          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain()");
+          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries()");
 
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {

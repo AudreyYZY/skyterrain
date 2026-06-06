@@ -32,12 +32,12 @@ const POLL_INTERVAL_MS = 500;
 
 /** LOD 级别样式配置 — Google Earth 风格 Terrain Label */
 const LOD_STYLES = {
-  // 全国尺度: 大字距, 极细体, 覆盖整个地貌
-  1: { fontSize: 20, opacity: 0.50, fontWeight: 300, letterSpacing: "0.5em" },
+  // 全国尺度: 超大字距, 极细体, 覆盖整个地貌范围
+  1: { fontSize: 18, opacity: 0.45, fontWeight: 200, letterSpacing: "1.2em" },
   // 区域尺度: 中等字距
-  2: { fontSize: 15, opacity: 0.55, fontWeight: 400, letterSpacing: "0.15em" },
+  2: { fontSize: 14, opacity: 0.50, fontWeight: 300, letterSpacing: "0.3em" },
   // 地点尺度: 正常字距
-  3: { fontSize: 12, opacity: 0.60, fontWeight: 400, letterSpacing: "0.05em" },
+  3: { fontSize: 11, opacity: 0.55, fontWeight: 400, letterSpacing: "0.08em" },
 } as const;
 
 /**

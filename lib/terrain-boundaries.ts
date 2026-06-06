@@ -149,31 +149,31 @@ export const TERRAIN_BOUNDARIES: TerrainBoundary[] = [
   KANAS_LAKE,
 ];
 
-/** 边界样式配置 — 极弱边界线，不填充 */
+/** 边界样式配置 — 用户一眼看出地貌区域 */
 export const BOUNDARY_STYLES = {
   basin: {
-    default: { alpha: 0.15, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.30, width: 1.5 },
-    selected: { alpha: 0.50, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.18, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.50, width: 2, color: [255, 255, 255] as [number, number, number] },
+    selected: { alpha: 0.80, width: 3, color: [251, 191, 36] as [number, number, number] },
   },
   desert: {
-    default: { alpha: 0.12, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.25, width: 1.5 },
-    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.18, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.50, width: 2, color: [255, 255, 255] as [number, number, number] },
+    selected: { alpha: 0.80, width: 3, color: [251, 191, 36] as [number, number, number] },
   },
   lake: {
-    default: { alpha: 0.18, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.35, width: 1.5 },
-    selected: { alpha: 0.55, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.20, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.50, width: 2, color: [255, 255, 255] as [number, number, number] },
+    selected: { alpha: 0.80, width: 3, color: [251, 191, 36] as [number, number, number] },
   },
   mountain: {
-    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.20, width: 1.5 },
-    selected: { alpha: 0.40, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.15, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.50, width: 2, color: [255, 255, 255] as [number, number, number] },
+    selected: { alpha: 0.80, width: 3, color: [251, 191, 36] as [number, number, number] },
   },
   plateau: {
-    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.20, width: 1.5 },
-    selected: { alpha: 0.40, width: 2, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.15, width: 1.5, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.50, width: 2, color: [255, 255, 255] as [number, number, number] },
+    selected: { alpha: 0.80, width: 3, color: [251, 191, 36] as [number, number, number] },
   },
 } as const;
