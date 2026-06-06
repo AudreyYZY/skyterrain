@@ -149,41 +149,31 @@ export const TERRAIN_BOUNDARIES: TerrainBoundary[] = [
   KANAS_LAKE,
 ];
 
-/** 边界样式配置 — 区域染色 + 边界线 */
+/** 边界样式配置 — 极弱边界线，不填充 */
 export const BOUNDARY_STYLES = {
   basin: {
-    fill: [255, 230, 200] as [number, number, number],   // 暖灰
-    fillAlpha: 0.06,
-    default: { alpha: 0.20, width: 1.5, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.40, width: 2 },
-    selected: { alpha: 0.60, width: 2.5, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.15, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.30, width: 1.5 },
+    selected: { alpha: 0.50, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
   desert: {
-    fill: [255, 220, 160] as [number, number, number],   // 沙黄
-    fillAlpha: 0.07,
-    default: { alpha: 0.18, width: 1.5, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.35, width: 2 },
-    selected: { alpha: 0.55, width: 2.5, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.12, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.25, width: 1.5 },
+    selected: { alpha: 0.45, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
   lake: {
-    fill: [180, 210, 255] as [number, number, number],   // 浅蓝
-    fillAlpha: 0.08,
-    default: { alpha: 0.25, width: 1.5, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.45, width: 2 },
-    selected: { alpha: 0.65, width: 2.5, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.18, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.35, width: 1.5 },
+    selected: { alpha: 0.55, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
   mountain: {
-    fill: [200, 210, 230] as [number, number, number],   // 冷灰蓝
-    fillAlpha: 0.05,
-    default: { alpha: 0.15, width: 1.5, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.30, width: 2 },
-    selected: { alpha: 0.50, width: 2.5, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.20, width: 1.5 },
+    selected: { alpha: 0.40, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
   plateau: {
-    fill: [210, 210, 200] as [number, number, number],   // 灰绿
-    fillAlpha: 0.05,
-    default: { alpha: 0.15, width: 1.5, color: [255, 255, 255] as [number, number, number] },
-    hover: { alpha: 0.30, width: 2 },
-    selected: { alpha: 0.50, width: 2.5, color: [251, 191, 36] as [number, number, number] },
+    default: { alpha: 0.10, width: 1, color: [255, 255, 255] as [number, number, number] },
+    hover: { alpha: 0.20, width: 1.5 },
+    selected: { alpha: 0.40, width: 2, color: [251, 191, 36] as [number, number, number] },
   },
 } as const;
