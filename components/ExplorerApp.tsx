@@ -607,35 +607,42 @@ export default function ExplorerApp() {
         </div>
       )}
 
-      {/* Right summary card — top-right, only when terrain selected */}
+      {/* Right summary card — top-right, documentary entry */}
       {mode === "explore" && activeTerrain && !showDetailDrawer && (
-        <div className="absolute top-10 right-3 z-20 w-[320px] pointer-events-auto">
+        <div className="absolute top-10 right-3 z-20 w-[300px] pointer-events-auto">
           <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
-            <div className="flex items-start justify-between mb-1">
+            {/* 地貌名称 + 海拔 */}
+            <div className="mb-2">
               <h3 className="text-[15px] font-medium text-white/85">{activeTerrain.name}</h3>
-              <span className="text-[10px] text-white/30">
-                {activeTerrain.elevation.toLocaleString("zh-CN")}m
-              </span>
+              <p className="text-[10px] text-white/25 mt-0.5">
+                海拔 {activeTerrain.elevation.toLocaleString("zh-CN")}m
+              </p>
             </div>
-            <p className="text-[11px] text-white/35 mb-3 line-clamp-2">
-              {activeTerrain.lesson?.seeing?.slice(0, 60)}…
-            </p>
-            <div className="flex gap-2">
-              <button
-                type="button"
-                onClick={() => setShowDetailDrawer(true)}
-                className="flex-1 rounded-lg bg-white/[0.05] px-3 py-1.5 text-[10px] text-white/50 hover:bg-white/[0.08] hover:text-white/70 transition-all"
-              >
-                详情
-              </button>
-              <button
-                type="button"
-                onClick={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
-                className="flex-1 rounded-lg bg-white/[0.05] px-3 py-1.5 text-[10px] text-white/50 hover:bg-white/[0.08] hover:text-white/70 transition-all"
-              >
-                {isSpeaking ? "停止" : "朗读"}
-              </button>
-            </div>
+
+            {/* 飞机窗外 — 纪录片第一视角 */}
+            {lesson?.seeing && (
+              <p className="text-[11px] leading-relaxed text-white/35 mb-3 line-clamp-2">
+                {lesson.seeing.slice(0, 50)}...
+              </p>
+            )}
+
+            {/* 主按钮: 开始讲解 */}
+            <button
+              type="button"
+              onClick={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
+              className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[12px] font-medium text-amber-300/80 transition hover:bg-amber-500/20 hover:text-amber-300 mb-2"
+            >
+              {isSpeaking ? "停止讲解" : "开始讲解"}
+            </button>
+
+            {/* 次按钮: 查看详情 */}
+            <button
+              type="button"
+              onClick={() => setShowDetailDrawer(true)}
+              className="w-full rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
+            >
+              查看详情
+            </button>
           </div>
         </div>
       )}

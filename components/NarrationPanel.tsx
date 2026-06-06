@@ -20,9 +20,7 @@ interface NarrationPanelProps {
   onStopSpeak: () => void;
   isSpeaking: boolean;
   embedded?: boolean;
-  /** 当前高亮的句子索引（用于朗读同步） */
   activeSentenceIndex?: number | null;
-  /** 当前朗读的 section key */
   activeSection?: string | null;
 }
 
@@ -41,150 +39,131 @@ export default function NarrationPanel({
   activeSentenceIndex,
   activeSection,
 }: NarrationPanelProps) {
-  const [showExtended, setShowExtended] = useState(false);
+  const [showDetail, setShowDetail] = useState(false);
 
+  // 无内容时显示
+  if (!lesson && !isRouteFlying) {
+    return (
+      <div className="flex flex-col items-center justify-center h-full text-center px-4">
+        <p className="text-[13px] text-white/25 mb-1">选择一个地貌</p>
+        <p className="text-[11px] text-white/15">开始空中探索之旅</p>
+      </div>
+    );
+  }
+
+  // 航线飞行中
+  if (isRouteFlying && !lesson) {
+    return (
+      <div className="flex flex-col items-center justify-center h-full text-center px-4">
+        <p className="text-[12px] text-white/25">飞越时自动讲解</p>
+      </div>
+    );
+  }
+
+  // 讲解进行中 — 纪录片模式
+  if (isSpeaking) {
+    return (
+      <div className="flex flex-col h-full">
+        {/* 标题 */}
+        <div className="mb-3">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400/60 animate-pulse" />
+            <h3 className="text-[13px] font-medium text-white/70">正在讲解</h3>
+          </div>
+          <h2 className="text-[15px] font-medium text-white/85">{title}</h2>
+        </div>
+
+        {/* 当前句子 — 纪录片旁白风格 */}
+        <div className="flex-1 overflow-y-auto mb-3">
+          {lesson && (
+            <StructuredLesson
+              lesson={lesson}
+              hideEmptySections={!lesson.formation.trim() && !lesson.history.trim()}
+              activeSentenceIndex={activeSentenceIndex}
+              activeSection={activeSection}
+            />
+          )}
+        </div>
+
+        {/* 停止按钮 */}
+        <button
+          type="button"
+          onClick={onStopSpeak}
+          className="w-full rounded-lg bg-white/[0.06] px-3 py-2 text-[11px] font-medium text-white/50 transition hover:bg-white/[0.1] hover:text-white/70"
+        >
+          停止讲解
+        </button>
+      </div>
+    );
+  }
+
+  // 默认状态 — 摘要卡 (纪录片入口)
   return (
-    <div className="flex h-full flex-col">
-      {/* Terrain name — cinematic title */}
-      <div className="mb-5">
-        <h2 className="text-[1.125rem] font-medium tracking-tight text-white/90 leading-tight">
-          {title}
-        </h2>
+    <div className="flex flex-col h-full">
+      {/* 地貌名称 */}
+      <div className="mb-3">
+        <h2 className="text-[15px] font-medium text-white/85 leading-tight">{title}</h2>
         {subtitle && (
-          <p className="mt-1 text-[11px] text-white/25 tracking-wide">{subtitle}</p>
+          <p className="mt-1 text-[10px] text-white/25">{subtitle}</p>
         )}
       </div>
 
-      {/* Route flying hint */}
-      {isRouteFlying && !lesson && (
-        <p className="mb-4 text-[12px] text-white/20 tracking-wide">
-          飞越时自动讲解
-        </p>
-      )}
-
-      {/* Compact metadata — single line, minimal */}
+      {/* 元数据 */}
       {cards && (
-        <div className="mb-5">
+        <div className="mb-4">
           <TerrainGlanceCards cards={cards} />
         </div>
       )}
 
-      {/* Lesson content — the dominant block */}
-      <div className="min-h-0 flex-1 overflow-y-auto">
-        {error && (
-          <p className="mb-4 text-[13px] leading-relaxed text-red-300/70">{error}</p>
-        )}
-
-        {!lesson && (
-          <p className="text-[13px] leading-relaxed text-white/20">
-            {isRouteFlying
-              ? "请等待飞机飞越下一处地貌…"
-              : "选择目的地或开始航线"}
+      {/* 飞机窗外 — 纪录片第一视角 */}
+      {lesson?.seeing && (
+        <div className="mb-4">
+          <p className="text-[11px] font-medium text-white/30 mb-1.5 tracking-wide">
+            飞机窗外
           </p>
-        )}
+          <p className="text-[12px] leading-relaxed text-white/45 line-clamp-3">
+            {lesson.seeing}
+          </p>
+        </div>
+      )}
 
-        {lesson && (
+      {/* 错误 */}
+      {error && (
+        <p className="mb-3 text-[11px] text-red-300/60">{error}</p>
+      )}
+
+      {/* 主按钮: 开始讲解 */}
+      <div className="mt-auto space-y-2">
+        <button
+          type="button"
+          onClick={onSpeak}
+          className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[12px] font-medium text-amber-300/80 transition hover:bg-amber-500/20 hover:text-amber-300"
+        >
+          开始讲解
+        </button>
+
+        {/* 次按钮: 查看详情 */}
+        <button
+          type="button"
+          onClick={() => setShowDetail(!showDetail)}
+          className="w-full rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
+        >
+          {showDetail ? "收起详情" : "查看详情"}
+        </button>
+      </div>
+
+      {/* 详情展开 */}
+      {showDetail && lesson && (
+        <div className="mt-3 pt-3 border-t border-white/[0.04] space-y-3 overflow-y-auto">
           <StructuredLesson
             lesson={lesson}
-            hideEmptySections={
-              !lesson.formation.trim() && !lesson.history.trim()
-            }
-            activeSentenceIndex={activeSentenceIndex}
-            activeSection={activeSection}
+            hideEmptySections={!lesson.formation.trim() && !lesson.history.trim()}
+            activeSentenceIndex={null}
+            activeSection={null}
           />
-        )}
-
-        {/* 扩展解读 — AI 辅助补充 */}
-        {knowledge && showExtended && (
-          <div className="mt-5 space-y-3 border-t border-white/[0.04] pt-4">
-            <p className="text-[10px] font-medium uppercase tracking-[0.15em] text-amber-300/40">
-              扩展解读
-            </p>
-            <p className="text-[10px] text-white/20 italic">
-              以下内容由 AI 生成，仅供参考
-            </p>
-
-            {knowledge.terrainFeatures.length > 0 && (
-              <div>
-                <p className="text-[11px] font-medium text-white/50 mb-1">地形特征</p>
-                <p className="text-[12px] leading-relaxed text-white/35">
-                  {knowledge.terrainFeatures.join("、")}
-                </p>
-              </div>
-            )}
-
-            {knowledge.climateFeatures.length > 0 && (
-              <div>
-                <p className="text-[11px] font-medium text-white/50 mb-1">气候特点</p>
-                <p className="text-[12px] leading-relaxed text-white/35">
-                  {knowledge.climateFeatures.join("、")}
-                </p>
-              </div>
-            )}
-
-            {knowledge.historicalTopics.length > 0 && (
-              <div>
-                <p className="text-[11px] font-medium text-white/50 mb-1">历史脉络</p>
-                <p className="text-[12px] leading-relaxed text-white/35">
-                  {knowledge.historicalTopics.join("、")}
-                </p>
-              </div>
-            )}
-
-            {knowledge.cultureTopics.length > 0 && (
-              <div>
-                <p className="text-[11px] font-medium text-white/50 mb-1">人文背景</p>
-                <p className="text-[12px] leading-relaxed text-white/35">
-                  {knowledge.cultureTopics.join("、")}
-                </p>
-              </div>
-            )}
-
-            {knowledge.interestingFacts.length > 0 && (
-              <div>
-                <p className="text-[11px] font-medium text-white/50 mb-1">趣味知识</p>
-                <ul className="space-y-1">
-                  {knowledge.interestingFacts.map((fact, i) => (
-                    <li key={i} className="text-[12px] leading-relaxed text-white/35">
-                      · {fact}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
-
-      {/* Source attribution — ultra subtle */}
-      {knowledge && <SourceAttribution knowledge={knowledge} />}
-
-      {/* Footer: voice controls + extended reading */}
-      <div className="mt-4 pt-3 border-t border-white/[0.03] space-y-2">
-        <VoiceSelector />
-
-        {lesson && (
-          <div className="flex gap-2">
-            <button
-              type="button"
-              onClick={isSpeaking ? onStopSpeak : onSpeak}
-              className="flex-1 rounded-lg bg-white/[0.06] px-3 py-1.5 text-[11px] font-medium text-white/70 transition hover:bg-white/[0.1] hover:text-white/90"
-            >
-              {isSpeaking ? "停止" : "朗读"}
-            </button>
-
-            {knowledge && (
-              <button
-                type="button"
-                onClick={() => setShowExtended(!showExtended)}
-                className="rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
-              >
-                {showExtended ? "收起" : "扩展解读"}
-              </button>
-            )}
-          </div>
-        )}
-      </div>
+          {knowledge && <SourceAttribution knowledge={knowledge} />}
+        </div>
+      )}
     </div>
   );
 }
