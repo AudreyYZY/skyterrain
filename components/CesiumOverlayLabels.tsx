@@ -30,14 +30,14 @@ const GRID_CELL_SIZE = 100;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
-/** LOD 级别样式配置 — Google Earth 风格 Terrain Label */
+/** LOD 级别样式配置 — Terrain Typography System */
 const LOD_STYLES = {
-  // 全国尺度: 超大字距, 极细体, 覆盖整个地貌范围
-  1: { fontSize: 18, opacity: 0.45, fontWeight: 200, letterSpacing: "1.2em" },
-  // 区域尺度: 中等字距
-  2: { fontSize: 14, opacity: 0.50, fontWeight: 300, letterSpacing: "0.3em" },
-  // 地点尺度: 正常字距
-  3: { fontSize: 11, opacity: 0.55, fontWeight: 400, letterSpacing: "0.08em" },
+  // Xinjiang 尺度: 骨架地貌 (三山两盆一高原)
+  2: { fontSize: 18, opacity: 0.35, fontWeight: 200, letterSpacing: "0.8em" },
+  // Regional 尺度: 区域特征 (沙漠/盆地/湖泊)
+  3: { fontSize: 15, opacity: 0.45, fontWeight: 300, letterSpacing: "0.3em" },
+  // Explore 尺度: 具体地点
+  4: { fontSize: 12, opacity: 0.55, fontWeight: 400, letterSpacing: "0.08em" },
 } as const;
 
 /**
@@ -145,7 +145,7 @@ export default function CesiumOverlayLabels({
       if (fade < 0.05) continue;
 
       // LOD 样式
-      const lodLevel = (label.lodLevel ?? 3) as 1 | 2 | 3;
+      const lodLevel = (label.lodLevel ?? 4) as 2 | 3 | 4;
       const lodStyle = LOD_STYLES[lodLevel];
 
       // 计算最终透明度: LOD 基础透明度 × 边缘淡出

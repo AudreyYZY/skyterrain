@@ -29,12 +29,12 @@ export interface CinematicLabel {
   priority: number;
   /** 关联的地形 ID */
   terrainId?: string;
-  /** LOD 级别: 1=全国, 2=区域, 3=地点 */
-  lodLevel?: 1 | 2 | 3;
+  /** LOD 级别: 2=新疆尺度, 3=区域尺度, 4=探索尺度 */
+  lodLevel?: 2 | 3 | 4;
   /** 标签旋转角度（度） — 用于沿山脊/河道方向 */
   rotation?: number;
   /** 地貌类型 — 用于标签放置策略 */
-  terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau";
+  terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
   /** 自定义样式 */
   style?: {
     fontSize?: number;
@@ -128,11 +128,11 @@ export class CinematicLabelManager {
         return true;
       case "zoom-adaptive":
         if (zoomLevel === undefined) return true;
-        // Level 1 (全国): 只显示 lodLevel 1 的标签
-        if (zoomLevel <= 5) return label.lodLevel === 1;
-        // Level 2 (区域): 显示 lodLevel 1-2 的标签
-        if (zoomLevel <= 10) return (label.lodLevel ?? 3) <= 2;
-        // Level 3 (地点): 显示所有标签
+        // Xinjiang 尺度 (zoomLevel <= 7): 只显示 LOD 2 的标签
+        if (zoomLevel <= 7) return label.lodLevel === 2;
+        // Regional 尺度 (zoomLevel <= 12): 显示 LOD 2-3 的标签
+        if (zoomLevel <= 12) return (label.lodLevel ?? 4) <= 3;
+        // Explore 尺度 (zoomLevel > 12): 显示所有标签
         return true;
       case "focus-only":
         return label.terrainId === this.focusedTerrainId;
@@ -175,9 +175,9 @@ export function createTerrainLabel(
   lon: number,
   priority = 50,
   options?: {
-    lodLevel?: 1 | 2 | 3;
+    lodLevel?: 2 | 3 | 4;
     rotation?: number;
-    terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau";
+    terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
   }
 ): CinematicLabel {
   return {

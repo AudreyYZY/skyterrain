@@ -77,50 +77,46 @@ export default function ExplorerApp() {
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
 
-  // 初始化地形标注 — LOD 分级 + 沿地貌方向布局
+  // 初始化地形标注 — 按 Terrain Visibility Matrix 分级
   useEffect(() => {
     const layerId = "terrain-labels";
     labelManager.createLayer(layerId, "地形标注", 1);
 
-    // 标签配置: LOD 级别 + 旋转角度 + 地貌类型
-    // LOD 1 = 全国尺度可见, LOD 2 = 区域尺度可见, LOD 3 = 地点尺度可见
+    // Terrain Visibility Matrix
+    // LOD 2 = Xinjiang 尺度 (三山两盆一高原)
+    // LOD 3 = Regional 尺度 (沙漠/盆地/湖泊)
+    // LOD 4 = Explore 尺度 (具体地点)
     const labelConfigs: Record<string, {
-      lodLevel: 1 | 2 | 3;
+      lodLevel: 2 | 3 | 4;
       rotation?: number;
-      terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau";
+      terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
     }> = {
-      // LOD 1 — 全国尺度 (大区域)
-      "tianshan":        { lodLevel: 1, rotation: -8, terrainType: "mountain" },
-      "kunlun":          { lodLevel: 1, rotation: -5, terrainType: "mountain" },
-      "altai":           { lodLevel: 1, rotation: -35, terrainType: "mountain" },
-      "junggar-basin":   { lodLevel: 1, terrainType: "basin" },
-      "tarim-basin":     { lodLevel: 1, terrainType: "basin" },
-      "taklamakan":      { lodLevel: 1, terrainType: "desert" },
-
-      // LOD 2 — 区域尺度
-      "karakoram":       { lodLevel: 2, rotation: -25, terrainType: "mountain" },
+      // LOD 2 — Xinjiang 尺度: 三山两盆一高原
+      "tianshan":        { lodLevel: 2, rotation: -8, terrainType: "mountain" },
+      "kunlun":          { lodLevel: 2, rotation: -5, terrainType: "mountain" },
+      "altai":           { lodLevel: 2, rotation: -35, terrainType: "mountain" },
       "pamir":           { lodLevel: 2, terrainType: "plateau" },
-      "ili-valley":      { lodLevel: 2, terrainType: "river" },
-      "sayram":          { lodLevel: 2, terrainType: "lake" },
-      "bosten":          { lodLevel: 2, terrainType: "lake" },
-      "tarim-river":     { lodLevel: 2, rotation: 5, terrainType: "river" },
-      "bogda":           { lodLevel: 2, rotation: -8, terrainType: "mountain" },
+      "junggar-basin":   { lodLevel: 2, terrainType: "basin" },
+      "tarim-basin":     { lodLevel: 2, terrainType: "basin" },
 
-      // LOD 3 — 地点尺度
-      "kanas":           { lodLevel: 3, terrainType: "lake" },
-      "tianchi":          { lodLevel: 3, terrainType: "lake" },
-      "flaming-mountains": { lodLevel: 3, terrainType: "mountain" },
-      "bayanbulak":      { lodLevel: 3, terrainType: "plateau" },
-      "gurbantunggut":   { lodLevel: 3, terrainType: "desert" },
-      "lop-nur":         { lodLevel: 3, terrainType: "lake" },
-      "kashgar":         { lodLevel: 3 },
-      "turpan-city":     { lodLevel: 3 },
+      // LOD 3 — Regional 尺度: 区域特征
+      "taklamakan":      { lodLevel: 3, terrainType: "desert" },
+      "turpan-basin":    { lodLevel: 3, terrainType: "basin" },
+      "sayram":          { lodLevel: 3, terrainType: "lake" },
+
+      // LOD 4 — Explore 尺度: 具体地点
+      "bosten":          { lodLevel: 4, terrainType: "lake" },
+      "tianchi":          { lodLevel: 4, terrainType: "lake" },
+      "kanas":           { lodLevel: 4, terrainType: "lake" },
+      "bogda":           { lodLevel: 4, rotation: -8, terrainType: "peak" },
+      "muztagh-ata":     { lodLevel: 4, terrainType: "peak" },
+      "flaming-mountains": { lodLevel: 4, terrainType: "mountain" },
     };
 
     for (const terrain of allTerrains) {
       const config = labelConfigs[terrain.id];
       if (config) {
-        const priority = config.lodLevel === 1 ? 100 : config.lodLevel === 2 ? 70 : 50;
+        const priority = config.lodLevel === 2 ? 100 : config.lodLevel === 3 ? 70 : 50;
         labelManager.addLabel(layerId, createTerrainLabel(
           terrain.id, terrain.name, terrain.lat, terrain.lon, priority,
           { lodLevel: config.lodLevel, rotation: config.rotation, terrainType: config.terrainType }
