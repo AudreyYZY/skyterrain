@@ -56,6 +56,7 @@ export type TerrainMode = "world" | "ellipsoid";
 interface CesiumMapProps {
   onReady?: () => void;
   onTerrainMode?: (mode: TerrainMode) => void;
+  onBoundaryHover?: (boundaryName: string | null) => void;
 }
 
 /** 飞机舷窗俯角 — 更低角度，模拟真实客机窗口 */
@@ -112,7 +113,7 @@ function viewHeightForTerrain(
 }
 
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
-  function CesiumMap({ onReady, onTerrainMode }, ref) {
+  function CesiumMap({ onReady, onTerrainMode, onBoundaryHover }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
@@ -595,6 +596,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                   entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.width);
                 }
               }
+              // 通知标签系统高亮对应标签
+              const hoveredName = newHoveredId
+                ? TERRAIN_BOUNDARIES.find((b) => b.id === newHoveredId)?.name ?? null
+                : null;
+              onBoundaryHover?.(hoveredName);
               viewer.scene.requestRender();
             }
           }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);

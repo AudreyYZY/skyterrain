@@ -19,6 +19,8 @@ interface CesiumOverlayLabelsProps {
   onSelectTerrain?: (terrain: TerrainPoint) => void;
   terrains?: TerrainPoint[];
   isRouteFlying?: boolean;
+  /** 当前 hover 的边界名称 — 对应标签高亮 */
+  hoveredBoundary?: string | null;
 }
 
 /** 屏幕边缘安全距离（px） */
@@ -102,6 +104,7 @@ export default function CesiumOverlayLabels({
   onSelectTerrain,
   terrains = [],
   isRouteFlying = false,
+  hoveredBoundary,
 }: CesiumOverlayLabelsProps) {
   const [screenLabels, setScreenLabels] = useState<ScreenLabel[]>([]);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -193,6 +196,7 @@ export default function CesiumOverlayLabels({
         const lodLevel = label.lodLevel ?? 3;
         const lodStyle = LOD_STYLES[lodLevel as keyof typeof LOD_STYLES];
         const rotation = label.rotation ?? 0;
+        const isHovered = hoveredBoundary === label.text;
 
         return (
           <button
@@ -203,8 +207,8 @@ export default function CesiumOverlayLabels({
               left: x,
               top: y,
               transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
-              opacity: visibility,
-              transition: "opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), left 0.5s ease-out, top 0.5s ease-out",
+              opacity: isHovered ? Math.min(1, visibility * 1.8) : visibility,
+              transition: "opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), left 0.5s ease-out, top 0.5s ease-out",
               willChange: "opacity, left, top",
             }}
             onClick={() => {
@@ -216,9 +220,9 @@ export default function CesiumOverlayLabels({
             <span
               className="whitespace-nowrap select-none"
               style={{
-                color: "rgba(255, 255, 255, 0.9)",
-                fontSize: `${fontSize}px`,
-                fontWeight: lodStyle.fontWeight,
+                color: isHovered ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.9)",
+                fontSize: `${isHovered ? fontSize * 1.1 : fontSize}px`,
+                fontWeight: isHovered ? 500 : lodStyle.fontWeight,
                 letterSpacing: lodStyle.letterSpacing,
                 lineHeight: 1.2,
                 textShadow: "0 1px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.3)",

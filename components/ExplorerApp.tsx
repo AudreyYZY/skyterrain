@@ -72,6 +72,7 @@ export default function ExplorerApp() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
   const [sidebarCategory, setSidebarCategory] = useState<string | null>(null);
   const [showDetailDrawer, setShowDetailDrawer] = useState(false);
+  const [hoveredBoundary, setHoveredBoundary] = useState<string | null>(null);
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
@@ -477,6 +478,7 @@ export default function ExplorerApp() {
         <CesiumMap
           ref={mapRef}
           onTerrainMode={setTerrainMode}
+          onBoundaryHover={setHoveredBoundary}
         />
         {mode === "explore" && (
           <CesiumOverlayLabels
@@ -484,6 +486,7 @@ export default function ExplorerApp() {
             terrains={allTerrains}
             isRouteFlying={isRouteFlying}
             onSelectTerrain={handleSelectTerrain}
+            hoveredBoundary={hoveredBoundary}
           />
         )}
         {terrainMode === "ellipsoid" && mode === "explore" && (
