@@ -43,3 +43,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 claude_history*.txt
+
+# GIS data (too large for git)
+data/gis/raw/
+*.shp
+*.dbf
+*.shx
+*.prj
+*.zip
