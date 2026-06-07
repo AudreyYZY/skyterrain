@@ -1,17 +1,26 @@
 # Source Matrix
 
-## 8 Core Features — Geometry Source Status
+## Core Principle
 
-| Feature | Type | Identity Source | Interaction Source | License | Verified |
-|---------|------|----------------|-------------------|---------|----------|
-| 天山 | mountain_system | Natural Earth geography_regions | OSM / 专业 GIS | PD / ODbL | ⏳ |
-| 昆仑山 | mountain_system | Natural Earth geography_regions | OSM / 专业 GIS | PD / ODbL | ⏳ |
-| 阿尔泰山 | mountain_system | Natural Earth geography_regions | OSM / 专业 GIS | PD / ODbL | ⏳ |
-| 准噶尔盆地 | basin | Natural Earth geography_regions | 专业 GIS / 手工 | PD | ⏳ |
-| 塔里木盆地 | basin | Natural Earth geography_regions | 专业 GIS / 手工 | PD | ⏳ |
-| 帕米尔高原 | plateau | Natural Earth geography_regions | OSM / 组合 | PD / ODbL | ⏳ |
-| 塔克拉玛干 | desert | Natural Earth geography_regions | OSM / 专业 GIS | PD / ODbL | ⏳ |
-| 赛里木湖 | lake | HydroLAKES | HydroLAKES | CC BY 4.0 | ⏳ |
+```
+Natural Earth geography_regions = Identity Layer (标签放置)
+Natural Earth ≠ Interaction Layer (Hover/Selection)
+
+Interaction Geometry 需要权威区域数据源
+```
+
+## 8 Core Features
+
+| Feature | Type | Identity Source | Interaction Source | Verified |
+|---------|------|----------------|-------------------|----------|
+| 天山 | mountain_system | Natural Earth Label Region | OSM / 专业数据 | ❌ FAIL |
+| 昆仑山 | mountain_system | Natural Earth Label Region | OSM / 专业数据 | ⏳ |
+| 阿尔泰山 | mountain_system | Natural Earth Label Region | OSM / 专业数据 | ⏳ |
+| 准噶尔盆地 | basin | Natural Earth Label Region | 需要验证 | ❌ FAIL |
+| 塔里木盆地 | basin | Natural Earth Label Region | 需要验证 | ⏳ |
+| 帕米尔高原 | plateau | Natural Earth Label Region | OSM / 组合 | ⏳ |
+| 塔克拉玛干 | desert | Natural Earth Label Region | OSM | ⏳ |
+| 赛里木湖 | lake | HydroLAKES | HydroLAKES | ⏳ |
 
 ## Source Details
 
@@ -23,8 +32,7 @@
 适用:       identityGeometry (标签放置)
 不适用:     interactionGeometry (Hover/Selection)
 文件:       ne_10m_geography_regions_polys.zip (1.9MB)
-下载状态:   ✅ 已下载
-验证状态:   ⏳ 待确认是否包含天山/准噶尔盆地/塔里木盆地
+状态:       ✅ 已下载，已验证为 Label Region
 ```
 
 ### HydroLAKES
@@ -33,9 +41,7 @@
 类型:       Lake Polygons
 精度:       高精度
 适用:       identityGeometry + interactionGeometry (湖泊)
-文件:       hydrolakes.zip
-下载状态:   ⏳ 待下载
-验证状态:   ⏳ 待确认赛里木湖
+状态:       ⏳ 待下载
 ```
 
 ### OpenStreetMap
@@ -45,8 +51,7 @@
 精度:       变化大，需要验证
 适用:       interactionGeometry (山脉、沙漠)
 授权:       ODbL
-下载状态:   ⏳ 待下载
-验证状态:   ⏳ 待确认天山 Relation
+状态:       ⏳ 待查询
 ```
 
 ### 专业 GIS / 手工编辑
@@ -56,7 +61,7 @@
 精度:       可控
 适用:       interactionGeometry (盆地、高原)
 工具:       QGIS
-验证状态:   ⏳ 待开始
+状态:       ⏳ 待开始
 ```
 
 ## Sprint 1: 天山 + 准噶尔盆地
@@ -65,18 +70,18 @@
 
 ```
 identityGeometry:
-  来源: Natural Earth geography_regions_polys
-  类型: Ridge Line (需要从 Polygon 提取)
-  状态: ⏳ 待验证
+  来源: Natural Earth Label Region
+  类型: Ridge Line (从 Polygon 提取)
+  状态: ⏳ 待提取
 
 interactionGeometry:
-  来源: OSM Relation "Tian Shan" / 手工编辑
-  类型: Ridge Corridor (不是 Buffer Polygon)
+  来源: OSM Relation / 专业数据
+  类型: Ridge Corridor
   状态: ⏳ 待验证
 
 验证标准:
   - Ridge Line 沿天山主脊分布
-  - Ridge Corridor 不覆盖准噶尔盆地
+  - Corridor 不覆盖准噶尔盆地
   - debugCesium.debugGeometry("tianshan") 与卫星影像吻合
 ```
 
@@ -84,9 +89,9 @@ interactionGeometry:
 
 ```
 identityGeometry:
-  来源: Natural Earth geography_regions_polys
+  来源: Natural Earth Label Region
   类型: Polygon
-  状态: ⏳ 待验证
+  状态: ⏳ 待提取
 
 interactionGeometry:
   来源: 专业 GIS / 手工编辑
@@ -98,11 +103,3 @@ interactionGeometry:
   - 不与天山 Corridor 重叠
   - debugCesium.debugGeometry("junggar-basin") 与卫星影像吻合
 ```
-
-## 完成标准
-
-Source Matrix 完成当：
-- [ ] 8 个 Feature 的 identityGeometry 来源全部确认
-- [ ] 8 个 Feature 的 interactionGeometry 来源全部确认
-- [ ] 天山 + 准噶尔盆地的 Geometry 已替换并验证
-- [ ] Debug Geometry 截图与卫星影像吻合

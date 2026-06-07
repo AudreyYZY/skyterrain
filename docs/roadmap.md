@@ -44,15 +44,17 @@
 
 **目标:** 替换手工 Geometry 为真实 GIS 数据
 
+**核心原则:** Natural Earth = Identity Layer，不是 Interaction Layer
+
 **拆分:**
 
 | Step | 内容 | 状态 |
 |------|------|------|
-| 1C.1 | GIS 数据源验证 (Natural Earth / HydroLAKES) | ⏳ |
-| 1C.2 | 天山 Ridge 替换 | ⏳ |
-| 1C.3 | 准噶尔盆地 Polygon 替换 | ⏳ |
-| 1C.4 | 视觉验证 (Debug Geometry + Hover) | ⏳ |
-| 1C.5 | 其余 Feature 替换 | ⏳ |
+| 1C.1 | Source Discovery (确认每个 Feature 的权威来源) | ⏳ |
+| 1C.2 | 天山 Verification (Ridge Line + Corridor) | ⏳ |
+| 1C.3 | 准噶尔盆地 Verification (Polygon) | ⏳ |
+| 1C.4 | 替换第一个真实 Feature | ⏳ |
+| 1C.5 | 视觉验证 (Debug Geometry + Hover) | ⏳ |
 
 **验证标准:**
 
@@ -107,3 +109,4 @@ Raw Source → QGIS → Xinjiang Clip → GeoJSON → Feature Import → Debug V
 - [ADR-003: Real GIS Geometry Only](architecture-decisions/ADR-003-real-gis-only.md)
 - [ADR-004: Terrain Identity Layer](architecture-decisions/ADR-004-terrain-identity-layer.md)
 - [ADR-005: GIS Source of Truth](architecture-decisions/ADR-005-gis-source-of-truth.md)
+- [ADR-006: Separate Geometry Sources](architecture-decisions/ADR-006-separate-geometry-sources.md)
