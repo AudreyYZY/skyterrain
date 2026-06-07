@@ -612,13 +612,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
               viewer.scene.requestRender();
             },
-            /** 显示所有 Feature interactionGeometry 半透明着色 */
-            debugGeometry(show: boolean = true) {
+            /** 显示指定 Feature (或全部) 的 interactionGeometry */
+            debugGeometry(target: string | boolean = true) {
               const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugGeometry);
               existing.forEach((e: any) => viewer.entities.remove(e));
 
-              if (!show) {
+              if (target === false) {
                 console.log("[debug] Geometry debug hidden");
+                viewer.scene.requestRender();
                 return;
               }
 
@@ -633,7 +634,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 sayram: [0, 255, 255],
               };
 
-              for (const feature of XINJIANG_CORE_FEATURES) {
+              const features = typeof target === "string"
+                ? XINJIANG_CORE_FEATURES.filter(f => f.id === target)
+                : XINJIANG_CORE_FEATURES;
+
+              for (const feature of features) {
                 const geo = feature.interactionGeometry;
                 const color = colors[feature.id] ?? [255, 255, 255];
 
@@ -650,7 +655,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                     },
                     properties: { isDebugGeometry: true, featureId: feature.id },
                   });
-                  console.log(`[debug] ${feature.name}: Polygon (${coords.length} vertices) color=${color}`);
+                  console.log(`[debug] ${feature.name}: Polygon (${coords.length} vertices)`);
                 } else if (geo.type === "RidgeCorridor") {
                   for (let si = 0; si < geo.segments.length; si++) {
                     const ring = geo.segments[si][0] as [number, number][];
@@ -667,7 +672,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                       properties: { isDebugGeometry: true, featureId: feature.id },
                     });
                   }
-                  // Ridge line
                   const ridgePositions = geo.ridgeLine.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
                   viewer.entities.add({
                     polyline: {
@@ -678,10 +682,15 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                     },
                     properties: { isDebugGeometry: true, featureId: feature.id },
                   });
-                  console.log(`[debug] ${feature.name}: RidgeCorridor (${geo.segments.length} segments, ${geo.ridgeLine.length} ridge points) color=${color}`);
+                  console.log(`[debug] ${feature.name}: RidgeCorridor (${geo.segments.length} segments, ${geo.ridgeLine.length} ridge points)`);
                 }
               }
               viewer.scene.requestRender();
+            },
+            /** Hover Pick 调试 — 鼠标移动时打印命中的 Feature */
+            debugHover(enable: boolean = true) {
+              (window as any).__debugHover = enable;
+              console.log(`[debug] Hover debug ${enable ? "enabled" : "disabled"}`);
             },
           };
           console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries(), debugGeometry()");
@@ -708,6 +717,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               if (featureId) {
                 newHoveredId = featureId;
               }
+            }
+
+            // Hover Pick 调试
+            if ((window as any).__debugHover) {
+              const feature = newHoveredId ? XINJIANG_CORE_FEATURES.find(f => f.id === newHoveredId) : null;
+              console.log("[hover]", {
+                feature: feature?.name ?? "none",
+                id: newHoveredId ?? "none",
+                type: feature?.featureType ?? "-",
+              });
             }
 
             if (newHoveredId !== hoveredFeatureId) {
