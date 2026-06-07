@@ -110,3 +110,4 @@ Raw Source → QGIS → Xinjiang Clip → GeoJSON → Feature Import → Debug V
 - [ADR-004: Terrain Identity Layer](architecture-decisions/ADR-004-terrain-identity-layer.md)
 - [ADR-005: GIS Source of Truth](architecture-decisions/ADR-005-gis-source-of-truth.md)
 - [ADR-006: Separate Geometry Sources](architecture-decisions/ADR-006-separate-geometry-sources.md)
+- [ADR-007: Trust Before Beauty](architecture-decisions/ADR-007-trust-before-beauty.md)
