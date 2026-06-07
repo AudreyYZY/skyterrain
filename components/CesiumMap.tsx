@@ -122,6 +122,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const flightCancelledRef = useRef(false);
     const routeEntityRef = useRef<import("cesium").Entity | null>(null);
     const featureEntitiesRef = useRef<Map<string, import("cesium").Entity[]>>(new Map());
+    const regionLiftStageRef = useRef<import("cesium").PostProcessStage | null>(null);
     const [status, setStatus] = useState<"loading" | "ready" | "error">(
       "loading"
     );
@@ -614,6 +615,45 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           };
           console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries()");
 
+          // Region Presence PostProcessStage — 影像增强 shader
+          const regionLiftStage = new Cesium.PostProcessStage({
+            fragmentShader: `
+              uniform sampler2D colorTexture;
+              uniform vec2 u_polygon[64];
+              uniform int u_count;
+              uniform float u_brightness;
+              uniform float u_contrast;
+              in vec2 v_textureCoordinates;
+              void main() {
+                vec4 color = texture(colorTexture, v_textureCoordinates);
+                vec2 p = v_textureCoordinates;
+                bool inside = false;
+                for (int i = 0, j = u_count - 1; i < u_count; j = i++) {
+                  vec2 a = u_polygon[i];
+                  vec2 b = u_polygon[j];
+                  if ((a.y > p.y) != (b.y > p.y) &&
+                      p.x < (b.x - a.x) * (p.y - a.y) / (b.y - a.y) + a.x) {
+                    inside = !inside;
+                  }
+                }
+                if (inside) {
+                  color.rgb = (color.rgb - 0.5) * u_contrast + 0.5;
+                  color.rgb *= u_brightness;
+                  color.rgb = clamp(color.rgb, 0.0, 1.0);
+                }
+                out_FragColor = color;
+              }
+            `,
+            uniforms: {
+              u_polygon: () => new Float32Array(128),
+              u_count: () => 0,
+              u_brightness: () => 1.0,
+              u_contrast: () => 1.0,
+            },
+          });
+          viewer.scene.postProcessStages.add(regionLiftStage);
+          regionLiftStageRef.current = regionLiftStage;
+
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {
             if (!viewer.isDestroyed()) {
@@ -640,6 +680,54 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
             if (newHoveredId !== hoveredFeatureId) {
               hoveredFeatureId = newHoveredId;
+              const hoveredFeature = newHoveredId
+                ? XINJIANG_CORE_FEATURES.find((f) => f.id === newHoveredId)
+                : null;
+
+              // 更新 PostProcessStage shader uniforms
+              const stage = regionLiftStageRef.current;
+              if (stage && hoveredFeature) {
+                const geo = hoveredFeature.interactionGeometry;
+                const canvas = viewer.scene.canvas;
+                const positions: import("cesium").Cartesian3[] = [];
+
+                if (geo.type === "Polygon") {
+                  const coords = geo.coordinates[0] as [number, number][];
+                  for (const [lon, lat] of coords) {
+                    positions.push(Cesium.Cartesian3.fromDegrees(lon, lat));
+                  }
+                } else if (geo.type === "RidgeCorridor") {
+                  for (const [lon, lat] of geo.ridgeLine) {
+                    positions.push(Cesium.Cartesian3.fromDegrees(lon, lat));
+                  }
+                }
+
+                // 转换为 UV 坐标 (0-1)
+                const uvCoords: number[] = [];
+                for (const pos of positions) {
+                  const windowPos = Cesium.SceneTransforms.worldToWindowCoordinates(viewer.scene, pos);
+                  if (windowPos) {
+                    uvCoords.push(windowPos.x / canvas.width, 1.0 - windowPos.y / canvas.height);
+                  }
+                }
+
+                const s = hoveredFeature.interaction.hoverStyle;
+                const count = Math.min(uvCoords.length / 2, 64);
+                const padded = new Float32Array(128);
+                for (let i = 0; i < uvCoords.length && i < 128; i++) {
+                  padded[i] = uvCoords[i];
+                }
+
+                stage.uniforms.u_polygon = () => padded;
+                stage.uniforms.u_count = () => count;
+                stage.uniforms.u_brightness = () => 1.2;
+                stage.uniforms.u_contrast = () => 1.15;
+              } else if (stage) {
+                stage.uniforms.u_count = () => 0;
+                stage.uniforms.u_brightness = () => 1.0;
+                stage.uniforms.u_contrast = () => 1.0;
+              }
+
               for (const [id, entities] of featureEntitiesRef.current) {
                 const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
                 if (!feature) continue;
@@ -648,14 +736,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
                 for (const entity of entities) {
                   if (entity.polygon) {
-                    // Region Lift: hover 时区域填充增亮
-                    if (isHovered && s.brightnessAdjust > 0) {
-                      entity.polygon.material = new Cesium.ColorMaterialProperty(
-                        Cesium.Color.WHITE.withAlpha(s.brightnessAdjust)
-                      );
-                    } else {
-                      entity.polygon.material = Cesium.Color.TRANSPARENT as any;
-                    }
+                    entity.polygon.material = Cesium.Color.TRANSPARENT as any;
                     entity.polygon.outlineColor = new Cesium.ConstantProperty(
                       Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
                     );
