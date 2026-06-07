@@ -120,8 +120,8 @@ export interface IdentityDefinition {
 
 /** 可见性定义 */
 export interface VisibilityDefinition {
-  /** 层级 (2=新疆尺度, 3=区域尺度, 4=探索尺度) */
-  hierarchyLevel: 2 | 3 | 4;
+  /** 层级 (1=中国尺度, 2=新疆尺度, 3=区域尺度, 4=探索尺度) */
+  hierarchyLevel: 1 | 2 | 3 | 4;
   /** 父级 Feature ID (用于层级关系) */
   parentId?: string;
 }

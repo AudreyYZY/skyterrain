@@ -12,6 +12,7 @@ import ResizablePanel from "@/components/ResizablePanel";
 import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
+import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
@@ -83,14 +84,31 @@ export default function ExplorerApp() {
     labelManager.createLayer(layerId, "地形标注", 1);
 
     // Terrain Visibility Matrix
+    // LOD 1 = China 尺度 (全国主要地貌)
     // LOD 2 = Xinjiang 尺度 (三山两盆一高原)
     // LOD 3 = Regional 尺度 (沙漠/盆地/湖泊)
     // LOD 4 = Explore 尺度 (具体地点)
     const labelConfigs: Record<string, {
-      lodLevel: 2 | 3 | 4;
+      lodLevel: 1 | 2 | 3 | 4;
       rotation?: number;
       terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
     }> = {
+      // LOD 1 — China 尺度: 全国主要地貌
+      "qinghai-tibet":   { lodLevel: 1, terrainType: "plateau" },
+      "loess":           { lodLevel: 1, terrainType: "plateau" },
+      "inner-mongolia":  { lodLevel: 1, terrainType: "plateau" },
+      "yunnan-guizhou":  { lodLevel: 1, terrainType: "plateau" },
+      "sichuan":         { lodLevel: 1, terrainType: "basin" },
+      "northeast":       { lodLevel: 1, terrainType: "basin" },
+      "north-china":     { lodLevel: 1, terrainType: "basin" },
+      "yangtze":         { lodLevel: 1, terrainType: "basin" },
+      "himalaya":        { lodLevel: 1, rotation: 5, terrainType: "mountain" },
+      "qinling":         { lodLevel: 1, rotation: -5, terrainType: "mountain" },
+      "qilian":          { lodLevel: 1, rotation: -3, terrainType: "mountain" },
+      "taihang":         { lodLevel: 1, rotation: -70, terrainType: "mountain" },
+      "daxinganling":    { lodLevel: 1, rotation: -75, terrainType: "mountain" },
+      "hengduan":        { lodLevel: 1, rotation: -60, terrainType: "mountain" },
+
       // LOD 2 — Xinjiang 尺度: 三山两盆一高原
       "tianshan":        { lodLevel: 2, rotation: -8, terrainType: "mountain" },
       "kunlun":          { lodLevel: 2, rotation: -5, terrainType: "mountain" },
@@ -103,6 +121,7 @@ export default function ExplorerApp() {
       "taklamakan":      { lodLevel: 3, terrainType: "desert" },
       "turpan-basin":    { lodLevel: 3, terrainType: "basin" },
       "sayram":          { lodLevel: 3, terrainType: "lake" },
+      "qaidam":          { lodLevel: 3, terrainType: "basin" },
 
       // LOD 4 — Explore 尺度: 具体地点
       "bosten":          { lodLevel: 4, terrainType: "lake" },

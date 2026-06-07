@@ -32,6 +32,8 @@ const POLL_INTERVAL_MS = 500;
 
 /** LOD 级别样式配置 — Terrain Typography System */
 const LOD_STYLES = {
+  // China 尺度: 全国主要地貌 (青藏高原/四川盆地/秦岭等)
+  1: { fontSize: 22, opacity: 0.30, fontWeight: 200, letterSpacing: "1.0em" },
   // Xinjiang 尺度: 骨架地貌 (三山两盆一高原)
   2: { fontSize: 18, opacity: 0.35, fontWeight: 200, letterSpacing: "0.8em" },
   // Regional 尺度: 区域特征 (沙漠/盆地/湖泊)
@@ -145,7 +147,7 @@ export default function CesiumOverlayLabels({
       if (fade < 0.05) continue;
 
       // LOD 样式
-      const lodLevel = (label.lodLevel ?? 4) as 2 | 3 | 4;
+      const lodLevel = (label.lodLevel ?? 4) as 1 | 2 | 3 | 4;
       const lodStyle = LOD_STYLES[lodLevel];
 
       // 计算最终透明度: LOD 基础透明度 × 边缘淡出

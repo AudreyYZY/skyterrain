@@ -29,8 +29,8 @@ export interface CinematicLabel {
   priority: number;
   /** 关联的地形 ID */
   terrainId?: string;
-  /** LOD 级别: 2=新疆尺度, 3=区域尺度, 4=探索尺度 */
-  lodLevel?: 2 | 3 | 4;
+  /** LOD 级别: 1=中国尺度, 2=新疆尺度, 3=区域尺度, 4=探索尺度 */
+  lodLevel?: 1 | 2 | 3 | 4;
   /** 标签旋转角度（度） — 用于沿山脊/河道方向 */
   rotation?: number;
   /** 地貌类型 — 用于标签放置策略 */
@@ -128,9 +128,11 @@ export class CinematicLabelManager {
         return true;
       case "zoom-adaptive":
         if (zoomLevel === undefined) return true;
-        // Xinjiang 尺度 (zoomLevel <= 7): 只显示 LOD 2 的标签
-        if (zoomLevel <= 7) return label.lodLevel === 2;
-        // Regional 尺度 (zoomLevel <= 12): 显示 LOD 2-3 的标签
+        // China 尺度 (zoomLevel <= 4): 只显示 LOD 1 的标签
+        if (zoomLevel <= 4) return label.lodLevel === 1;
+        // Xinjiang 尺度 (zoomLevel <= 7): 显示 LOD 1-2 的标签
+        if (zoomLevel <= 7) return (label.lodLevel ?? 4) <= 2;
+        // Regional 尺度 (zoomLevel <= 12): 显示 LOD 1-3 的标签
         if (zoomLevel <= 12) return (label.lodLevel ?? 4) <= 3;
         // Explore 尺度 (zoomLevel > 12): 显示所有标签
         return true;
@@ -175,7 +177,7 @@ export function createTerrainLabel(
   lon: number,
   priority = 50,
   options?: {
-    lodLevel?: 2 | 3 | 4;
+    lodLevel?: 1 | 2 | 3 | 4;
     rotation?: number;
     terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
   }

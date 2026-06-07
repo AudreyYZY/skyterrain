@@ -3,7 +3,11 @@
 import { bearingRadians, haversineMeters } from "@/lib/geo";
 import { resolveRouteWaypoints, type ResolvedWaypoint } from "@/lib/routes";
 import { XINJIANG_CORE_FEATURES } from "@/features/xinjiang-core-features";
+import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
+
+/** 所有 Feature (新疆 + 全国) */
+const ALL_FEATURES: GeographicFeature[] = [...XINJIANG_CORE_FEATURES, ...CHINA_CORE_FEATURES];
 import type { FlightRoute } from "@/types/route";
 import type { TerrainPoint } from "@/types/terrain";
 import {
@@ -188,7 +192,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         if (!viewer || !Cesium) return;
 
         for (const [id, entities] of featureEntitiesRef.current) {
-          const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
+          const feature = ALL_FEATURES.find((f) => f.id === id);
           if (!feature) continue;
           const isTarget = id === boundaryId;
           const s = isTarget ? feature.interaction.selectedStyle : feature.interaction.idleStyle;
@@ -224,7 +228,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         if (!viewer || !Cesium) return;
 
         for (const [id, entities] of featureEntitiesRef.current) {
-          const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
+          const feature = ALL_FEATURES.find((f) => f.id === id);
           if (!feature) continue;
           const s = feature.interaction.idleStyle;
 
@@ -587,7 +591,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 return;
               }
 
-              for (const feature of XINJIANG_CORE_FEATURES) {
+              for (const feature of ALL_FEATURES) {
                 const geo = feature.hoverGeometry;
                 if (geo.type === "Polygon") {
                   const coords = geo.coordinates[0] as [number, number][];
@@ -635,8 +639,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               };
 
               const features = typeof target === "string"
-                ? XINJIANG_CORE_FEATURES.filter(f => f.id === target)
-                : XINJIANG_CORE_FEATURES;
+                ? ALL_FEATURES.filter(f => f.id === target)
+                : ALL_FEATURES;
 
               for (const feature of features) {
                 const geo = feature.hoverGeometry;
@@ -698,8 +702,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               existing.forEach((e: any) => viewer.entities.remove(e));
               if (target === false) { viewer.scene.requestRender(); return; }
               const features = typeof target === "string"
-                ? XINJIANG_CORE_FEATURES.filter(f => f.id === target)
-                : XINJIANG_CORE_FEATURES;
+                ? ALL_FEATURES.filter(f => f.id === target)
+                : ALL_FEATURES;
               for (const feature of features) {
                 const geo = feature.identityGeometry;
                 if (geo.type === "LineString") {
@@ -721,8 +725,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               existing.forEach((e: any) => viewer.entities.remove(e));
               if (target === false) { viewer.scene.requestRender(); return; }
               const features = typeof target === "string"
-                ? XINJIANG_CORE_FEATURES.filter(f => f.id === target)
-                : XINJIANG_CORE_FEATURES;
+                ? ALL_FEATURES.filter(f => f.id === target)
+                : ALL_FEATURES;
               for (const feature of features) {
                 const geo = feature.focusGeometry;
                 if (geo.type === "LineString") {
@@ -767,7 +771,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
             // Hover Pick 调试
             if ((window as any).__debugHover) {
-              const feature = newHoveredId ? XINJIANG_CORE_FEATURES.find(f => f.id === newHoveredId) : null;
+              const feature = newHoveredId ? ALL_FEATURES.find(f => f.id === newHoveredId) : null;
               console.log("[hover]", {
                 feature: feature?.name ?? "none",
                 id: newHoveredId ?? "none",
@@ -820,7 +824,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
               // 更新 outline 样式
               for (const [id, entities] of featureEntitiesRef.current) {
-                const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
+                const feature = ALL_FEATURES.find((f) => f.id === id);
                 if (!feature) continue;
                 const isHovered = id === newHoveredId;
                 const s = isHovered ? feature.interaction.hoverStyle : feature.interaction.idleStyle;
@@ -843,7 +847,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
               // 通知标签系统高亮对应标签
               const hoveredName = newHoveredId
-                ? XINJIANG_CORE_FEATURES.find((f) => f.id === newHoveredId)?.name ?? null
+                ? ALL_FEATURES.find((f) => f.id === newHoveredId)?.name ?? null
                 : null;
               onBoundaryHover?.(hoveredName);
               viewer.scene.requestRender();
@@ -873,7 +877,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           resizeObserver.observe(containerRef.current);
 
           // 绘制地貌 Feature — 基于 GeographicFeature 数据
-          for (const feature of XINJIANG_CORE_FEATURES) {
+          for (const feature of ALL_FEATURES) {
             const entities: import("cesium").Entity[] = [];
             const idle = feature.interaction.idleStyle;
 
