@@ -122,7 +122,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const flightCancelledRef = useRef(false);
     const routeEntityRef = useRef<import("cesium").Entity | null>(null);
     const featureEntitiesRef = useRef<Map<string, import("cesium").Entity[]>>(new Map());
-    const featureHaloRef = useRef<Map<string, import("cesium").Entity>>(new Map());
+    const featureHaloRef = useRef<Map<string, import("cesium").Entity[]>>(new Map());
     const [status, setStatus] = useState<"loading" | "ready" | "error">(
       "loading"
     );
@@ -640,11 +640,46 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
 
             if (newHoveredId !== hoveredFeatureId) {
+              const prevHoveredId = hoveredFeatureId;
               hoveredFeatureId = newHoveredId;
 
-              // Region Halo: 显示/隐藏 halo 实体
-              for (const [id, haloEntity] of featureHaloRef.current) {
-                haloEntity.show = id === newHoveredId;
+              // Region Halo: fade-in 动画
+              const HALO_ALPHA = 0.07;
+              const FADE_DURATION = 300; // ms
+              const startTime = performance.now();
+
+              // 立即隐藏之前的 halo
+              if (prevHoveredId) {
+                const prevHalos = featureHaloRef.current.get(prevHoveredId);
+                if (prevHalos) {
+                  for (const h of prevHalos) {
+                    if (h.polygon) {
+                      h.polygon.material = Cesium.Color.WHITE.withAlpha(0.0) as any;
+                    }
+                  }
+                }
+              }
+
+              // Fade-in 新的 halo
+              if (newHoveredId) {
+                const newHalos = featureHaloRef.current.get(newHoveredId);
+                if (newHalos) {
+                  const animate = () => {
+                    const elapsed = performance.now() - startTime;
+                    const progress = Math.min(1, elapsed / FADE_DURATION);
+                    const alpha = HALO_ALPHA * progress;
+                    for (const h of newHalos) {
+                      if (h.polygon) {
+                        h.polygon.material = Cesium.Color.WHITE.withAlpha(alpha) as any;
+                      }
+                    }
+                    viewer.scene.requestRender();
+                    if (progress < 1) {
+                      requestAnimationFrame(animate);
+                    }
+                  };
+                  requestAnimationFrame(animate);
+                }
               }
 
               // 更新 outline 样式
@@ -784,6 +819,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             featureEntitiesRef.current.set(feature.id, entities);
 
             // Region Halo: 极淡填充，Hover 时显示
+            const haloEntities: import("cesium").Entity[] = [];
             if (geo.type === "Polygon" || geo.type === "MultiPolygon") {
               const coords = geo.type === "Polygon"
                 ? (geo.coordinates[0] as [number, number][])
@@ -795,16 +831,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 const haloEntity = viewer.entities.add({
                   polygon: {
                     hierarchy: new Cesium.PolygonHierarchy(positions),
-                    material: Cesium.Color.WHITE.withAlpha(0.07),
+                    material: Cesium.Color.WHITE.withAlpha(0.0),
                     outline: false,
                   },
                   properties: featureProps,
-                  show: false,
                 });
-                featureHaloRef.current.set(feature.id, haloEntity);
+                haloEntities.push(haloEntity);
               }
             } else if (geo.type === "RidgeCorridor") {
-              // 山脉 halo: 使用所有 segments 合并
               for (const segment of geo.segments) {
                 const ring = segment[0] as [number, number][] | undefined;
                 if (!ring) continue;
@@ -814,15 +848,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 const haloEntity = viewer.entities.add({
                   polygon: {
                     hierarchy: new Cesium.PolygonHierarchy(positions),
-                    material: Cesium.Color.WHITE.withAlpha(0.06),
+                    material: Cesium.Color.WHITE.withAlpha(0.0),
                     outline: false,
                   },
                   properties: featureProps,
-                  show: false,
                 });
-                // 山脉可能有多个 segment halo，存储最后一个
-                featureHaloRef.current.set(feature.id, haloEntity);
+                haloEntities.push(haloEntity);
               }
+            }
+            if (haloEntities.length > 0) {
+              featureHaloRef.current.set(feature.id, haloEntities);
             }
           }
 
