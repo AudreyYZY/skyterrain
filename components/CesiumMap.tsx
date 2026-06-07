@@ -780,6 +780,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 feature: feature?.name ?? "none",
                 id: newHoveredId ?? "none",
                 type: feature?.featureType ?? "-",
+                maturity: feature?.maturityLevel ?? "-",
               });
             }
 
@@ -886,7 +887,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
           resizeObserver.observe(containerRef.current);
 
-          // 绘制地貌 Feature — 基于 GeographicFeature 数据
+          // 绘制地貌 Feature — 严格按 maturityLevel
           for (const feature of ALL_FEATURES) {
             const entities: import("cesium").Entity[] = [];
             const idle = feature.interaction.idleStyle;
@@ -895,9 +896,12 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               featureId: feature.id,
               featureName: feature.name,
               featureType: feature.featureType,
+              maturityLevel: feature.maturityLevel,
             };
 
-            // Level 0-1: 不渲染 hoverGeometry
+            // Level 0: 仅 Label，不渲染任何 Geometry
+            // Level 1: Identity Geometry (标签放置)
+            // Level 2+: Hover Geometry (交互)
             if (feature.maturityLevel < 2) continue;
 
             const geo = feature.hoverGeometry;
