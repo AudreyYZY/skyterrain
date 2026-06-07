@@ -219,18 +219,25 @@ export default function ExplorerApp() {
         { key: "observation", text: lesson.observation ?? "" },
       ].filter(s => s.text.trim().length > 0);
 
+      console.log("[speakLessonWithHighlight] session:", session.id, "sections:", sections.length);
+
       await speakText(ssml, () => {
-        // 检查会话是否仍活跃
-        if (!session.active) return;
+        console.log("[onPlaying] session.active:", session.active);
+        if (!session.active) {
+          console.log("[onPlaying] session inactive, skipping highlight");
+          return;
+        }
         const wordBoundaries = getCurrentWordBoundaries();
         const audio = getCurrentAudio();
+        console.log("[onPlaying] wordBoundaries:", wordBoundaries.length, "audio:", !!audio);
         if (wordBoundaries.length > 0 && audio) {
+          console.log("[onPlaying] starting highlightWithTiming");
           startHighlightWithTiming(sections, wordBoundaries, audio);
         } else {
+          console.log("[onPlaying] starting highlightSections (fallback)");
           startHighlightSections(sections);
         }
       });
-      // 只有会话仍活跃时才清除高亮
       if (session.active) {
         stopHighlight();
       }
