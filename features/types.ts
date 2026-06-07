@@ -3,10 +3,13 @@
  *
  * 设计原则:
  * - Feature 是地图上可感知的地理实体
- * - identityGeometry 用于标签放置、走向计算、镜头构图
- * - interactionGeometry 用于 Hover、Outline、Glow、Selection
- * - 山脉的 identityGeometry 是 Line，interactionGeometry 是 Polygon
- * - 盆地/沙漠/湖泊的两者相同 (Polygon)
+ * - 每个 Feature 拥有 4 种 Geometry:
+ *   - identityGeometry: 标签放置、走向、LOD
+ *   - interactionGeometry: Hover、Focus、Selection
+ *   - cameraGeometry: 飞行目标、最佳观赏角度
+ *   - storyGeometry: 讲解节点、镜头运动路径
+ * - 山脉的 identityGeometry 是 RidgeLine，interactionGeometry 是 RidgeCorridor
+ * - 盆地/沙漠/湖泊的 identityGeometry 和 interactionGeometry 相同 (Polygon)
  */
 
 /** 地貌类型 */
@@ -22,6 +25,9 @@ export type FeatureType =
 
 /** 坐标点 [lon, lat] */
 export type Position = [number, number];
+
+/** 坐标点含高程 [lon, lat, height] */
+export type Position3D = [number, number, number];
 
 /** 线几何 (山脊线、河谷线) */
 export interface LineGeometry {
@@ -41,8 +47,52 @@ export interface PointGeometry {
   coordinates: Position;
 }
 
+/** 山脊走廊 (多段山体区域，不是 Buffer) */
+export interface RidgeCorridorGeometry {
+  type: "RidgeCorridor";
+  /** 主脊线 */
+  ridgeLine: Position[];
+  /** 局部山体区域 (多个 Polygon，每个 Polygon 是 Position[][]) */
+  segments: Position[][][];
+}
+
 /** 几何类型联合 */
-export type Geometry = LineGeometry | PolygonGeometry | PointGeometry;
+export type Geometry =
+  | LineGeometry
+  | PolygonGeometry
+  | PointGeometry
+  | RidgeCorridorGeometry;
+
+/** 镜头参数 */
+export interface CameraViewpoint {
+  /** 目标点 [lon, lat] */
+  target: Position;
+  /** 航向角 (度) */
+  heading: number;
+  /** 俯角 (度) */
+  pitch: number;
+  /** 距离目标的距离 (米) */
+  range: number;
+}
+
+/** 讲解节点 */
+export interface StoryNode {
+  /** 节点 ID */
+  id: string;
+  /** 节点名称 */
+  name: string;
+  /** 节点位置 [lon, lat] */
+  position: Position;
+  /** 讲解文本 */
+  text: string;
+  /** 镜头参数 (可选，覆盖默认) */
+  camera?: Partial<CameraViewpoint>;
+}
+
+/** 讲解路径类型 */
+export type StoryPathType =
+  | "nodes"     // 离散节点 (盆地、湖泊)
+  | "path";     // 连续路径 (山脉、河谷)
 
 /** 标签类型 */
 export type LabelType =
@@ -127,10 +177,14 @@ export interface GeographicFeature {
   /** 要素类型 */
   featureType: FeatureType;
 
-  /** 标识几何 (标签放置、走向、镜头构图) */
+  /** 标识几何 (标签放置、走向、LOD) */
   identityGeometry: Geometry;
-  /** 交互几何 (Hover、Outline、Glow、Selection) */
-  interactionGeometry: PolygonGeometry | MultiPolygonGeometry;
+  /** 交互几何 (Hover、Focus、Selection) */
+  interactionGeometry: Geometry;
+  /** 镜头几何 (飞行目标、最佳观赏角度) */
+  cameraGeometry: CameraViewpoint;
+  /** 故事几何 (讲解节点、镜头运动路径) */
+  storyGeometry: StoryNode[];
 
   /** 标签定义 */
   label: IdentityDefinition;
@@ -140,10 +194,4 @@ export interface GeographicFeature {
   interaction: InteractionDefinition;
   /** 故事定义 (可选) */
   story?: StoryDefinition;
-}
-
-/** MultiPolygon 几何 */
-export interface MultiPolygonGeometry {
-  type: "MultiPolygon";
-  coordinates: Position[][][];
 }

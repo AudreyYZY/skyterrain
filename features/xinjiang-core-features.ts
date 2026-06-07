@@ -1,28 +1,25 @@
 /**
  * 新疆 8 个核心 GeographicFeature
  *
+ * 每个 Feature 拥有 4 种 Geometry:
+ *   identityGeometry    → 标签放置、走向、LOD
+ *   interactionGeometry → Hover、Focus、Selection
+ *   cameraGeometry      → 飞行目标、最佳观赏角度
+ *   storyGeometry       → 讲解节点、镜头运动路径
+ *
  * 当前使用手工估算几何数据
  * Phase 1C 将替换为 Natural Earth / HydroLAKES 真实数据
- *
- * 8 个核心 Feature:
- *   天山 (mountain_system, ridge)
- *   昆仑山 (mountain_system, ridge)
- *   阿尔泰山 (mountain_system, ridge)
- *   准噶尔盆地 (basin, polygon)
- *   塔里木盆地 (basin, polygon)
- *   帕米尔高原 (plateau, polygon)
- *   塔克拉玛干沙漠 (desert, polygon)
- *   赛里木湖 (lake, polygon)
  */
 
 import type { GeographicFeature } from "./types";
 
-/** 天山 — 沿山脊方向 */
+/** 天山 — Ridge Line + Ridge Corridor */
 const TIANSHAN: GeographicFeature = {
   id: "tianshan",
   name: "天山",
   featureType: "mountain_system",
 
+  // 标识几何: 沿主脊线方向
   identityGeometry: {
     type: "LineString",
     coordinates: [
@@ -32,17 +29,39 @@ const TIANSHAN: GeographicFeature = {
     ],
   },
 
+  // 交互几何: 山脊走廊 (多段山体区域，不是 Buffer)
   interactionGeometry: {
-    type: "Polygon",
-    coordinates: [[
-      [74.0, 40.5], [76.0, 41.5], [78.0, 42.5], [80.0, 43.5],
-      [82.0, 44.5], [84.0, 45.0], [86.0, 45.0], [88.0, 44.5],
-      [90.0, 43.5], [92.0, 43.0], [94.0, 42.5], [95.5, 42.0],
-      [95.0, 41.0], [93.0, 40.5], [90.0, 40.0], [87.0, 40.5],
-      [84.0, 41.0], [81.0, 41.5], [78.0, 41.0], [75.0, 40.0],
-      [74.0, 40.5],
-    ]],
+    type: "RidgeCorridor",
+    ridgeLine: [
+      [74.0, 41.0], [76.0, 42.0], [78.0, 42.5], [80.0, 43.0],
+      [82.0, 43.5], [84.0, 44.0], [86.0, 44.0], [88.0, 43.5],
+      [90.0, 43.0], [92.0, 42.5], [94.0, 42.0], [95.0, 41.5],
+    ],
+    segments: [
+      // 西天山
+      [[[74.0, 40.5], [76.0, 41.5], [78.0, 43.0], [76.0, 43.5], [74.0, 42.0], [74.0, 40.5]]],
+      // 中天山
+      [[[78.0, 42.0], [82.0, 43.0], [86.0, 44.5], [84.0, 45.0], [80.0, 44.0], [78.0, 42.0]]],
+      // 东天山
+      [[[86.0, 43.0], [90.0, 43.5], [94.0, 42.5], [95.5, 41.5], [92.0, 41.0], [88.0, 42.0], [86.0, 43.0]]],
+    ],
   },
+
+  // 镜头几何: 乌鲁木齐南部，俯瞰博格达峰
+  cameraGeometry: {
+    target: [87.5, 43.5],
+    heading: 120,
+    pitch: -28,
+    range: 180000,
+  },
+
+  // 故事几何: 讲解节点路径
+  storyGeometry: [
+    { id: "tianshan-1", name: "天山西段", position: [78.0, 42.5], text: "天山西段是天山最宽的部分，山脊海拔多在5000米以上。" },
+    { id: "tianshan-2", name: "博格达峰", position: [88.3, 43.8], text: "博格达峰海拔5445米，是天山东段最高峰。" },
+    { id: "tianshan-3", name: "天池", position: [88.1, 43.9], text: "天池是天山著名的冰蚀湖，海拔1910米。" },
+    { id: "tianshan-4", name: "伊犁河谷", position: [81.0, 43.5], text: "伊犁河谷是天山西段的重要绿洲，气候湿润。" },
+  ],
 
   label: {
     labelText: "天山",
@@ -53,41 +72,15 @@ const TIANSHAN: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 2,
-  },
+  visibility: { hierarchyLevel: 2 },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.08,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.25,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.40,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.70,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.08, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.25, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.40, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.70, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
@@ -98,7 +91,7 @@ const TIANSHAN: GeographicFeature = {
   },
 };
 
-/** 昆仑山 — 沿山脊方向 */
+/** 昆仑山 — Ridge Line + Ridge Corridor */
 const KUNLUN: GeographicFeature = {
   id: "kunlun",
   name: "昆仑山",
@@ -114,16 +107,34 @@ const KUNLUN: GeographicFeature = {
   },
 
   interactionGeometry: {
-    type: "Polygon",
-    coordinates: [[
-      [74.0, 35.5], [76.0, 37.5], [78.0, 38.0], [80.0, 37.5],
-      [82.0, 37.0], [84.0, 37.0], [86.0, 37.0], [88.0, 36.5],
-      [90.0, 37.0], [92.0, 37.0], [94.0, 37.5], [96.0, 37.0],
-      [96.0, 35.0], [94.0, 35.5], [92.0, 35.0], [90.0, 35.0],
-      [88.0, 34.5], [86.0, 35.0], [84.0, 35.0], [82.0, 35.0],
-      [80.0, 35.5], [78.0, 36.0], [76.0, 36.0], [74.0, 35.5],
-    ]],
+    type: "RidgeCorridor",
+    ridgeLine: [
+      [74.0, 36.5], [76.0, 37.0], [78.0, 37.0], [80.0, 36.5],
+      [82.0, 36.0], [84.0, 36.0], [86.0, 36.0], [88.0, 35.5],
+      [90.0, 36.0], [92.0, 36.0], [94.0, 36.5], [96.0, 36.0],
+    ],
+    segments: [
+      // 西昆仑
+      [[[74.0, 35.5], [76.0, 37.5], [80.0, 37.5], [78.0, 36.0], [74.0, 35.5]]],
+      // 中昆仑
+      [[[80.0, 35.5], [84.0, 37.0], [88.0, 36.5], [86.0, 35.0], [80.0, 35.5]]],
+      // 东昆仑
+      [[[88.0, 35.0], [92.0, 37.0], [96.0, 37.0], [94.0, 35.5], [88.0, 35.0]]],
+    ],
   },
+
+  cameraGeometry: {
+    target: [82.0, 36.5],
+    heading: 0,
+    pitch: -25,
+    range: 200000,
+  },
+
+  storyGeometry: [
+    { id: "kunlun-1", name: "西昆仑", position: [76.0, 37.0], text: "西昆仑是昆仑山最宽的部分，慕士塔格峰位于此处。" },
+    { id: "kunlun-2", name: "中昆仑", position: [84.0, 36.0], text: "中昆仑是塔里木盆地与青藏高原的分界线。" },
+    { id: "kunlun-3", name: "东昆仑", position: [92.0, 36.0], text: "东昆仑逐渐降低，与阿尔金山相接。" },
+  ],
 
   label: {
     labelText: "昆仑山",
@@ -134,41 +145,15 @@ const KUNLUN: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 2,
-  },
+  visibility: { hierarchyLevel: 2 },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.08,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.25,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.40,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.70,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.08, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.25, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.40, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.70, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
@@ -179,7 +164,7 @@ const KUNLUN: GeographicFeature = {
   },
 };
 
-/** 阿尔泰山 — 沿山脊方向 */
+/** 阿尔泰山 — Ridge Line + Ridge Corridor */
 const ALTAI: GeographicFeature = {
   id: "altai",
   name: "阿尔泰山",
@@ -194,14 +179,30 @@ const ALTAI: GeographicFeature = {
   },
 
   interactionGeometry: {
-    type: "Polygon",
-    coordinates: [[
-      [85.5, 47.0], [87.0, 48.5], [89.0, 49.0], [91.0, 49.0],
-      [93.0, 48.5], [95.0, 48.0], [96.5, 47.5], [96.0, 46.5],
-      [94.0, 46.0], [92.0, 46.5], [90.0, 47.0], [88.0, 46.5],
-      [86.0, 46.0], [85.5, 47.0],
-    ]],
+    type: "RidgeCorridor",
+    ridgeLine: [
+      [86.0, 47.5], [88.0, 48.0], [90.0, 48.5], [92.0, 48.0],
+      [94.0, 47.5], [96.0, 47.0],
+    ],
+    segments: [
+      // 西阿尔泰
+      [[[86.0, 47.0], [88.0, 48.5], [90.0, 49.0], [88.0, 47.0], [86.0, 47.0]]],
+      // 东阿尔泰
+      [[[90.0, 47.0], [92.0, 48.5], [95.0, 48.0], [94.0, 46.5], [90.0, 47.0]]],
+    ],
   },
+
+  cameraGeometry: {
+    target: [90.0, 48.0],
+    heading: 30,
+    pitch: -30,
+    range: 150000,
+  },
+
+  storyGeometry: [
+    { id: "altai-1", name: "喀纳斯", position: [87.0, 48.7], text: "喀纳斯湖是阿尔泰山最著名的冰蚀湖。" },
+    { id: "altai-2", name: "友谊峰", position: [87.8, 49.2], text: "友谊峰海拔4374米，是阿尔泰山最高峰。" },
+  ],
 
   label: {
     labelText: "阿尔泰山",
@@ -212,41 +213,15 @@ const ALTAI: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 2,
-  },
+  visibility: { hierarchyLevel: 2 },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.08,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.25,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.40,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.70,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.08, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.25, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.40, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.70, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
@@ -281,6 +256,18 @@ const JUNGGAR_BASIN: GeographicFeature = {
     ]],
   },
 
+  cameraGeometry: {
+    target: [87.5, 45.0],
+    heading: 0,
+    pitch: -35,
+    range: 250000,
+  },
+
+  storyGeometry: [
+    { id: "junggar-1", name: "古尔班通古特沙漠", position: [88.0, 45.0], text: "古尔班通古特沙漠是中国第二大沙漠，位于盆地中部。" },
+    { id: "junggar-2", name: "克拉玛依", position: [84.9, 45.6], text: "克拉玛依油田是中国第一个大油田。" },
+  ],
+
   label: {
     labelText: "准噶尔盆地",
     labelType: "region",
@@ -290,41 +277,15 @@ const JUNGGAR_BASIN: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 2,
-  },
+  visibility: { hierarchyLevel: 2 },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.10,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.30,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.50,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.70,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.10, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.30, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.50, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.70, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
@@ -361,6 +322,19 @@ const TARIM_BASIN: GeographicFeature = {
     ]],
   },
 
+  cameraGeometry: {
+    target: [83.0, 39.5],
+    heading: 0,
+    pitch: -35,
+    range: 300000,
+  },
+
+  storyGeometry: [
+    { id: "tarim-1", name: "塔克拉玛干", position: [83.0, 38.5], text: "塔克拉玛干沙漠占据盆地中心，面积33万平方公里。" },
+    { id: "tarim-2", name: "塔里木河", position: [85.0, 41.0], text: "塔里木河是中国最长的内陆河，环绕沙漠。" },
+    { id: "tarim-3", name: "库车", position: [83.0, 41.7], text: "库车是古龟兹国所在地，丝绸之路重镇。" },
+  ],
+
   label: {
     labelText: "塔里木盆地",
     labelType: "region",
@@ -370,41 +344,15 @@ const TARIM_BASIN: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 2,
-  },
+  visibility: { hierarchyLevel: 2 },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.10,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.30,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.50,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.70,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.10, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.30, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.50, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.70, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
@@ -439,6 +387,18 @@ const PAMIR: GeographicFeature = {
     ]],
   },
 
+  cameraGeometry: {
+    target: [76.0, 38.5],
+    heading: 45,
+    pitch: -25,
+    range: 150000,
+  },
+
+  storyGeometry: [
+    { id: "pamir-1", name: "慕士塔格峰", position: [75.1, 38.3], text: "慕士塔格峰海拔7509米，被称为冰山之父。" },
+    { id: "pamir-2", name: "喀拉库勒湖", position: [75.0, 38.4], text: "喀拉库勒湖倒映慕士塔格峰，是帕米尔标志性景观。" },
+  ],
+
   label: {
     labelText: "帕米尔高原",
     labelType: "region",
@@ -448,41 +408,15 @@ const PAMIR: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 2,
-  },
+  visibility: { hierarchyLevel: 2 },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.08,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.25,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.40,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.70,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.08, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.25, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.40, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.70, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
@@ -517,6 +451,18 @@ const TAKLAMAKAN: GeographicFeature = {
     ]],
   },
 
+  cameraGeometry: {
+    target: [83.0, 38.5],
+    heading: 0,
+    pitch: -40,
+    range: 200000,
+  },
+
+  storyGeometry: [
+    { id: "taklamakan-1", name: "沙漠中心", position: [83.0, 38.5], text: "塔克拉玛干沙漠中心是连绵的流动沙丘。" },
+    { id: "taklamakan-2", name: "沙漠公路", position: [84.0, 39.0], text: "塔克拉玛干沙漠公路是世界上最长的贯穿流动沙漠公路。" },
+  ],
+
   label: {
     labelText: "塔克拉玛干",
     labelType: "region",
@@ -526,42 +472,15 @@ const TAKLAMAKAN: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 3,
-    parentId: "tarim-basin",
-  },
+  visibility: { hierarchyLevel: 3, parentId: "tarim-basin" },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.06,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.20,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.35,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.60,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.06, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.20, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.35, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.60, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
@@ -594,6 +513,17 @@ const SAYRAM: GeographicFeature = {
     ]],
   },
 
+  cameraGeometry: {
+    target: [81.3, 44.5],
+    heading: 0,
+    pitch: -45,
+    range: 30000,
+  },
+
+  storyGeometry: [
+    { id: "sayram-1", name: "赛里木湖", position: [81.3, 44.5], text: "赛里木湖是新疆海拔最高、面积最大的高山湖泊。" },
+  ],
+
   label: {
     labelText: "赛里木湖",
     labelType: "lake",
@@ -603,42 +533,15 @@ const SAYRAM: GeographicFeature = {
     maxZoom: 20,
   },
 
-  visibility: {
-    hierarchyLevel: 3,
-    parentId: "tianshan",
-  },
+  visibility: { hierarchyLevel: 3, parentId: "tianshan" },
 
   interaction: {
     hoverable: true,
     selectable: true,
-    idleStyle: {
-      outlineAlpha: 0.12,
-      outlineWidth: 1,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0,
-      labelOpacityMultiplier: 1,
-    },
-    hoverStyle: {
-      outlineAlpha: 0.35,
-      outlineWidth: 1.5,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.05,
-      labelOpacityMultiplier: 1.3,
-    },
-    focusStyle: {
-      outlineAlpha: 0.55,
-      outlineWidth: 2,
-      outlineColor: [255, 255, 255],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 1.8,
-    },
-    selectedStyle: {
-      outlineAlpha: 0.80,
-      outlineWidth: 2.5,
-      outlineColor: [251, 191, 36],
-      brightnessAdjust: 0.10,
-      labelOpacityMultiplier: 2.0,
-    },
+    idleStyle: { outlineAlpha: 0.12, outlineWidth: 1, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
+    hoverStyle: { outlineAlpha: 0.35, outlineWidth: 1.5, outlineColor: [255, 255, 255], brightnessAdjust: 0.05, labelOpacityMultiplier: 1.3 },
+    focusStyle: { outlineAlpha: 0.55, outlineWidth: 2, outlineColor: [255, 255, 255], brightnessAdjust: 0.10, labelOpacityMultiplier: 1.8 },
+    selectedStyle: { outlineAlpha: 0.80, outlineWidth: 2.5, outlineColor: [251, 191, 36], brightnessAdjust: 0.10, labelOpacityMultiplier: 2.0 },
   },
 
   story: {
