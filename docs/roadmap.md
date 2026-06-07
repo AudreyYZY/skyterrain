@@ -1,0 +1,102 @@
+# Flight Geography Explorer — Roadmap
+
+## Completed
+
+### Phase 1A: Feature Data Model ✅
+
+- GeographicFeature 接口定义
+- FeatureType 枚举
+- Geometry 类型 (LineString, Polygon, Point, RidgeCorridor)
+- IdentityDefinition, InteractionDefinition, VisibilityDefinition
+- 8 个核心 Feature 数据 (手工估算)
+
+### Phase 1B: Feature Hierarchy ✅
+
+- 4 种 Geometry: identity, interaction, camera, story
+- RidgeCorridor 模型 (ridgeLine + segments)
+- CameraViewpoint 模型
+- StoryNode 模型
+- 新疆 Visibility Matrix
+
+### Phase 2A: Feature Outline ✅
+
+- CesiumMap 渲染 GeographicFeature
+- Polygon outline (盆地/沙漠/湖泊)
+- Ridge line + corridor outline (山脉)
+- Hover 样式切换
+
+### Phase 2B: Region Lift (部分) ✅
+
+- Hover 时 outline 加强
+- 但白色填充效果不理想
+
+### Phase 2C: Region Halo ✅
+
+- Halo 实体 (白色半透明填充)
+- 300ms fade-in 动画
+- Mountain 多 segment 支持
+
+---
+
+## Current
+
+### Phase 1C: Real GIS Geometry ← 当前
+
+**目标:** 替换手工 Geometry 为真实 GIS 数据
+
+**优先级:**
+
+1. 天山 Ridge (Natural Earth Mountain Ranges)
+2. 准噶尔盆地 Polygon (Natural Earth Basins / QGIS)
+
+**验证标准:**
+
+- `debugCesium.debugGeometry("tianshan")` → 天山 Corridor 沿雪线分布
+- `debugCesium.debugGeometry("junggar-basin")` → 填满整个准噶尔盆地
+- Hover 天山 → 只亮天山，不影响准噶尔盆地
+
+**Pipeline:**
+
+```
+Raw Source → QGIS → Xinjiang Clip → GeoJSON → Feature Import → Debug Verify
+```
+
+---
+
+## Next
+
+### Phase 2: Terrain Identity Layer
+
+**目标:** 用户不 Hover 也能识别地貌
+
+**内容:**
+- Region 持续可见轮廓
+- Label 跟随地形
+- 缩放级别 LOD 切换
+
+### Phase 3: Region Interaction Layer
+
+**目标:** Hover → Region 被识别
+
+**内容:**
+- Region Halo (已部分完成)
+- Region Glow (边缘发光)
+- Region Focus (停留 200ms 后加强)
+- Region Select (点击飞行 + 讲解)
+
+### Phase 4: Story Layer
+
+**目标:** 纪录片式讲解
+
+**内容:**
+- Camera Flight 路径
+- Narration 同步
+- Knowledge Card
+
+---
+
+## Architecture Decisions
+
+- [ADR-001: Region First, Label Second](architecture-decisions/ADR-001-region-first.md)
+- [ADR-002: Geographic Feature Model](architecture-decisions/ADR-002-feature-model.md)
+- [ADR-003: Real GIS Geometry Only](architecture-decisions/ADR-003-real-gis-only.md)
