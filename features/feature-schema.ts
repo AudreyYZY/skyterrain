@@ -42,7 +42,8 @@ export function validateFeature(feature: GeographicFeature): ValidationResult {
     errors.push(...validateCoordinates(feature.identityGeometry));
   }
 
-  if (!feature.interactionGeometry) errors.push("缺少 interactionGeometry");
+  if (!feature.hoverGeometry) errors.push("缺少 hoverGeometry");
+  if (!feature.focusGeometry) errors.push("缺少 focusGeometry");
   if (!feature.cameraGeometry) errors.push("缺少 cameraGeometry");
   if (!feature.storyGeometry) errors.push("缺少 storyGeometry");
 

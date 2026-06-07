@@ -588,7 +588,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
 
               for (const feature of XINJIANG_CORE_FEATURES) {
-                const geo = feature.interactionGeometry;
+                const geo = feature.hoverGeometry;
                 if (geo.type === "Polygon") {
                   const coords = geo.coordinates[0] as [number, number][];
                   for (const [lon, lat] of coords) {
@@ -612,7 +612,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
               viewer.scene.requestRender();
             },
-            /** 显示指定 Feature (或全部) 的 interactionGeometry */
+            /** 显示指定 Feature (或全部) 的 hoverGeometry */
             debugGeometry(target: string | boolean = true) {
               const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugGeometry);
               existing.forEach((e: any) => viewer.entities.remove(e));
@@ -639,7 +639,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 : XINJIANG_CORE_FEATURES;
 
               for (const feature of features) {
-                const geo = feature.interactionGeometry;
+                const geo = feature.hoverGeometry;
                 const color = colors[feature.id] ?? [255, 255, 255];
 
                 if (geo.type === "Polygon") {
@@ -691,6 +691,52 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             debugHover(enable: boolean = true) {
               (window as any).__debugHover = enable;
               console.log(`[debug] Hover debug ${enable ? "enabled" : "disabled"}`);
+            },
+            /** 显示 identityGeometry (标签放置) */
+            debugIdentity(target: string | boolean = true) {
+              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugIdentity);
+              existing.forEach((e: any) => viewer.entities.remove(e));
+              if (target === false) { viewer.scene.requestRender(); return; }
+              const features = typeof target === "string"
+                ? XINJIANG_CORE_FEATURES.filter(f => f.id === target)
+                : XINJIANG_CORE_FEATURES;
+              for (const feature of features) {
+                const geo = feature.identityGeometry;
+                if (geo.type === "LineString") {
+                  const coords = geo.coordinates as [number, number][];
+                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                  viewer.entities.add({ polyline: { positions, width: 4, material: Cesium.Color.GREEN.withAlpha(0.8), clampToGround: true }, properties: { isDebugIdentity: true } });
+                } else if (geo.type === "Polygon") {
+                  const coords = geo.coordinates[0] as [number, number][];
+                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                  viewer.entities.add({ polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.GREEN.withAlpha(0.15), outline: true, outlineColor: Cesium.Color.GREEN.withAlpha(0.6), outlineWidth: 2 }, properties: { isDebugIdentity: true } });
+                }
+                console.log(`[debug] ${feature.name}: identityGeometry = ${geo.type}`);
+              }
+              viewer.scene.requestRender();
+            },
+            /** 显示 focusGeometry (高亮内容) */
+            debugFocus(target: string | boolean = true) {
+              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugFocus);
+              existing.forEach((e: any) => viewer.entities.remove(e));
+              if (target === false) { viewer.scene.requestRender(); return; }
+              const features = typeof target === "string"
+                ? XINJIANG_CORE_FEATURES.filter(f => f.id === target)
+                : XINJIANG_CORE_FEATURES;
+              for (const feature of features) {
+                const geo = feature.focusGeometry;
+                if (geo.type === "LineString") {
+                  const coords = geo.coordinates as [number, number][];
+                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                  viewer.entities.add({ polyline: { positions, width: 5, material: Cesium.Color.YELLOW.withAlpha(0.9), clampToGround: true }, properties: { isDebugFocus: true } });
+                } else if (geo.type === "Polygon") {
+                  const coords = geo.coordinates[0] as [number, number][];
+                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                  viewer.entities.add({ polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.YELLOW.withAlpha(0.2), outline: true, outlineColor: Cesium.Color.YELLOW.withAlpha(0.7), outlineWidth: 3 }, properties: { isDebugFocus: true } });
+                }
+                console.log(`[debug] ${feature.name}: focusGeometry = ${geo.type}`);
+              }
+              viewer.scene.requestRender();
             },
           };
           console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries(), debugGeometry()");
@@ -837,7 +883,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               featureType: feature.featureType,
             };
 
-            const geo = feature.interactionGeometry;
+            const geo = feature.hoverGeometry;
 
             if (geo.type === "Polygon" || geo.type === "MultiPolygon") {
               // 盆地/沙漠/湖泊: 渲染 Polygon 边界

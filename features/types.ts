@@ -179,8 +179,10 @@ export interface GeographicFeature {
 
   /** 标识几何 (标签放置、走向、LOD) */
   identityGeometry: Geometry;
-  /** 交互几何 (Hover、Focus、Selection) */
-  interactionGeometry: Geometry;
+  /** Hover 几何 (鼠标进入区域，可比真实边界大) */
+  hoverGeometry: Geometry;
+  /** Focus 几何 (高亮显示内容，如山脊线/湖岸线) */
+  focusGeometry: Geometry;
   /** 镜头几何 (飞行目标、最佳观赏角度) */
   cameraGeometry: CameraViewpoint;
   /** 故事几何 (讲解节点、镜头运动路径) */

@@ -3,7 +3,8 @@
  *
  * 每个 Feature 拥有 4 种 Geometry:
  *   identityGeometry    → 标签放置、走向、LOD
- *   interactionGeometry → Hover、Focus、Selection
+ *   hoverGeometry → Hover 区域
+ *   focusGeometry → Focus 高亮内容
  *   cameraGeometry      → 飞行目标、最佳观赏角度
  *   storyGeometry       → 讲解节点、镜头运动路径
  *
@@ -13,13 +14,13 @@
 
 import type { GeographicFeature } from "./types";
 
-/** 天山 — Ridge Line + Ridge Corridor */
+/** 天山 — Ridge Line + Hover Corridor + Focus Ridge */
 const TIANSHAN: GeographicFeature = {
   id: "tianshan",
   name: "天山",
   featureType: "mountain_system",
 
-  // 标识几何: 沿主脊线方向
+  // 标识几何: 沿主脊线方向 (标签放置)
   identityGeometry: {
     type: "LineString",
     coordinates: [
@@ -29,8 +30,8 @@ const TIANSHAN: GeographicFeature = {
     ],
   },
 
-  // 交互几何: 山脊走廊 (多段山体区域，不是 Buffer)
-  interactionGeometry: {
+  // Hover 几何: 山脊走廊 (鼠标进入区域，不覆盖准噶尔盆地)
+  hoverGeometry: {
     type: "RidgeCorridor",
     ridgeLine: [
       [74.0, 41.0], [76.0, 42.0], [78.0, 42.5], [80.0, 43.0],
@@ -38,12 +39,22 @@ const TIANSHAN: GeographicFeature = {
       [90.0, 43.0], [92.0, 42.5], [94.0, 42.0], [95.0, 41.5],
     ],
     segments: [
-      // 西天山
-      [[[74.0, 40.5], [76.0, 41.5], [78.0, 43.0], [76.0, 43.5], [74.0, 42.0], [74.0, 40.5]]],
-      // 中天山
-      [[[78.0, 42.0], [82.0, 43.0], [86.0, 44.5], [84.0, 45.0], [80.0, 44.0], [78.0, 42.0]]],
-      // 东天山
+      // 西天山 — 北界不超过 43°N
+      [[[74.0, 40.5], [76.0, 41.5], [78.0, 42.5], [76.0, 43.0], [74.0, 42.0], [74.0, 40.5]]],
+      // 中天山 — 北界不超过 44°N (不侵入准噶尔盆地)
+      [[[78.0, 42.0], [82.0, 43.0], [86.0, 44.0], [84.0, 44.0], [80.0, 43.5], [78.0, 42.0]]],
+      // 东天山 — 北界不超过 43.5°N
       [[[86.0, 43.0], [90.0, 43.5], [94.0, 42.5], [95.5, 41.5], [92.0, 41.0], [88.0, 42.0], [86.0, 43.0]]],
+    ],
+  },
+
+  // Focus 几何: 山脊线 (高亮显示内容)
+  focusGeometry: {
+    type: "LineString",
+    coordinates: [
+      [74.0, 41.0], [76.0, 42.0], [78.0, 42.5], [80.0, 43.0],
+      [82.0, 43.5], [84.0, 44.0], [86.0, 44.0], [88.0, 43.5],
+      [90.0, 43.0], [92.0, 42.5], [94.0, 42.0], [95.0, 41.5],
     ],
   },
 
@@ -106,7 +117,8 @@ const KUNLUN: GeographicFeature = {
     ],
   },
 
-  interactionGeometry: {
+  // Hover 几何: 山脊走廊
+  hoverGeometry: {
     type: "RidgeCorridor",
     ridgeLine: [
       [74.0, 36.5], [76.0, 37.0], [78.0, 37.0], [80.0, 36.5],
@@ -120,6 +132,16 @@ const KUNLUN: GeographicFeature = {
       [[[80.0, 35.5], [84.0, 37.0], [88.0, 36.5], [86.0, 35.0], [80.0, 35.5]]],
       // 东昆仑
       [[[88.0, 35.0], [92.0, 37.0], [96.0, 37.0], [94.0, 35.5], [88.0, 35.0]]],
+    ],
+  },
+
+  // Focus 几何: 山脊线
+  focusGeometry: {
+    type: "LineString",
+    coordinates: [
+      [74.0, 36.5], [76.0, 37.0], [78.0, 37.0], [80.0, 36.5],
+      [82.0, 36.0], [84.0, 36.0], [86.0, 36.0], [88.0, 35.5],
+      [90.0, 36.0], [92.0, 36.0], [94.0, 36.5], [96.0, 36.0],
     ],
   },
 
@@ -178,7 +200,8 @@ const ALTAI: GeographicFeature = {
     ],
   },
 
-  interactionGeometry: {
+  // Hover 几何: 山脊走廊
+  hoverGeometry: {
     type: "RidgeCorridor",
     ridgeLine: [
       [86.0, 47.5], [88.0, 48.0], [90.0, 48.5], [92.0, 48.0],
@@ -189,6 +212,15 @@ const ALTAI: GeographicFeature = {
       [[[86.0, 47.0], [88.0, 48.5], [90.0, 49.0], [88.0, 47.0], [86.0, 47.0]]],
       // 东阿尔泰
       [[[90.0, 47.0], [92.0, 48.5], [95.0, 48.0], [94.0, 46.5], [90.0, 47.0]]],
+    ],
+  },
+
+  // Focus 几何: 山脊线
+  focusGeometry: {
+    type: "LineString",
+    coordinates: [
+      [86.0, 47.5], [88.0, 48.0], [90.0, 48.5], [92.0, 48.0],
+      [94.0, 47.5], [96.0, 47.0],
     ],
   },
 
@@ -238,6 +270,7 @@ const JUNGGAR_BASIN: GeographicFeature = {
   name: "准噶尔盆地",
   featureType: "basin",
 
+  // 标识几何: 盆地范围 (标签放置)
   identityGeometry: {
     type: "Polygon",
     coordinates: [[
@@ -247,12 +280,26 @@ const JUNGGAR_BASIN: GeographicFeature = {
     ]],
   },
 
-  interactionGeometry: {
+  // Hover 几何: 盆地完整范围 (鼠标进入区域)
+  hoverGeometry: {
     type: "Polygon",
     coordinates: [[
-      [82.0, 44.0], [84.0, 45.5], [87.0, 46.5], [90.0, 47.0],
-      [92.0, 46.5], [93.0, 45.5], [92.0, 44.0], [90.0, 43.0],
-      [87.0, 42.5], [84.0, 43.0], [82.0, 44.0],
+      // 覆盖整个准噶尔盆地 (扩大范围)
+      [80.0, 43.0], [82.0, 45.0], [84.0, 46.5], [87.0, 47.5],
+      [90.0, 47.5], [92.0, 47.0], [93.5, 45.5], [93.0, 44.0],
+      [91.0, 43.0], [88.0, 42.5], [85.0, 42.0], [82.0, 42.5],
+      [80.0, 43.0],
+    ]],
+  },
+
+  // Focus 几何: 盆地边界 (高亮显示内容)
+  focusGeometry: {
+    type: "Polygon",
+    coordinates: [[
+      [80.0, 43.0], [82.0, 45.0], [84.0, 46.5], [87.0, 47.5],
+      [90.0, 47.5], [92.0, 47.0], [93.5, 45.5], [93.0, 44.0],
+      [91.0, 43.0], [88.0, 42.5], [85.0, 42.0], [82.0, 42.5],
+      [80.0, 43.0],
     ]],
   },
 
@@ -312,7 +359,19 @@ const TARIM_BASIN: GeographicFeature = {
     ]],
   },
 
-  interactionGeometry: {
+  // Hover 几何: 盆地范围
+  hoverGeometry: {
+    type: "Polygon",
+    coordinates: [[
+      [74.5, 39.0], [76.0, 40.5], [79.0, 41.5], [82.0, 42.0],
+      [86.0, 42.0], [89.0, 41.5], [91.0, 40.5], [92.0, 39.5],
+      [91.0, 38.0], [89.0, 37.0], [86.0, 36.5], [82.0, 36.5],
+      [79.0, 37.0], [76.0, 37.5], [74.5, 39.0],
+    ]],
+  },
+
+  // Focus 几何: 盆地边界
+  focusGeometry: {
     type: "Polygon",
     coordinates: [[
       [74.5, 39.0], [76.0, 40.5], [79.0, 41.5], [82.0, 42.0],
@@ -378,7 +437,18 @@ const PAMIR: GeographicFeature = {
     ]],
   },
 
-  interactionGeometry: {
+  // Hover 几何: 高原范围
+  hoverGeometry: {
+    type: "Polygon",
+    coordinates: [[
+      [73.0, 38.0], [74.0, 39.5], [76.0, 40.0], [78.0, 39.5],
+      [79.0, 38.5], [78.0, 37.0], [76.0, 36.5], [74.0, 37.0],
+      [73.0, 38.0],
+    ]],
+  },
+
+  // Focus 几何: 高原边界
+  focusGeometry: {
     type: "Polygon",
     coordinates: [[
       [73.0, 38.0], [74.0, 39.5], [76.0, 40.0], [78.0, 39.5],
@@ -442,7 +512,18 @@ const TAKLAMAKAN: GeographicFeature = {
     ]],
   },
 
-  interactionGeometry: {
+  // Hover 几何: 沙漠范围
+  hoverGeometry: {
+    type: "Polygon",
+    coordinates: [[
+      [77.0, 39.0], [79.0, 40.5], [82.0, 41.0], [85.0, 41.0],
+      [88.0, 40.5], [90.0, 39.5], [90.5, 38.0], [89.0, 37.0],
+      [86.0, 36.5], [83.0, 37.0], [80.0, 37.5], [77.0, 39.0],
+    ]],
+  },
+
+  // Focus 几何: 沙漠边界
+  focusGeometry: {
     type: "Polygon",
     coordinates: [[
       [77.0, 39.0], [79.0, 40.5], [82.0, 41.0], [85.0, 41.0],
@@ -505,7 +586,17 @@ const SAYRAM: GeographicFeature = {
     ]],
   },
 
-  interactionGeometry: {
+  // Hover 几何: 湖泊范围
+  hoverGeometry: {
+    type: "Polygon",
+    coordinates: [[
+      [80.8, 44.4], [81.0, 44.6], [81.4, 44.7], [81.7, 44.6],
+      [81.8, 44.4], [81.5, 44.2], [81.2, 44.2], [80.8, 44.4],
+    ]],
+  },
+
+  // Focus 几何: 湖泊边界
+  focusGeometry: {
     type: "Polygon",
     coordinates: [[
       [80.8, 44.4], [81.0, 44.6], [81.4, 44.7], [81.7, 44.6],
