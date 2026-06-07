@@ -122,6 +122,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const flightCancelledRef = useRef(false);
     const routeEntityRef = useRef<import("cesium").Entity | null>(null);
     const featureEntitiesRef = useRef<Map<string, import("cesium").Entity[]>>(new Map());
+    const featureHaloRef = useRef<Map<string, import("cesium").Entity>>(new Map());
     const [status, setStatus] = useState<"loading" | "ready" | "error">(
       "loading"
     );
@@ -640,6 +641,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
             if (newHoveredId !== hoveredFeatureId) {
               hoveredFeatureId = newHoveredId;
+
+              // Region Halo: 显示/隐藏 halo 实体
+              for (const [id, haloEntity] of featureHaloRef.current) {
+                haloEntity.show = id === newHoveredId;
+              }
+
+              // 更新 outline 样式
               for (const [id, entities] of featureEntitiesRef.current) {
                 const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
                 if (!feature) continue;
@@ -648,14 +656,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
                 for (const entity of entities) {
                   if (entity.polygon) {
-                    // Region Lift: hover 时区域填充增亮
-                    if (isHovered && s.brightnessAdjust > 0) {
-                      entity.polygon.material = new Cesium.ColorMaterialProperty(
-                        Cesium.Color.WHITE.withAlpha(s.brightnessAdjust)
-                      );
-                    } else {
-                      entity.polygon.material = Cesium.Color.TRANSPARENT as any;
-                    }
+                    entity.polygon.material = Cesium.Color.TRANSPARENT as any;
                     entity.polygon.outlineColor = new Cesium.ConstantProperty(
                       Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
                     );
@@ -781,6 +782,48 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
 
             featureEntitiesRef.current.set(feature.id, entities);
+
+            // Region Halo: 极淡填充，Hover 时显示
+            if (geo.type === "Polygon" || geo.type === "MultiPolygon") {
+              const coords = geo.type === "Polygon"
+                ? (geo.coordinates[0] as [number, number][])
+                : (geo.coordinates[0]?.[0] as [number, number][] | undefined);
+              if (coords) {
+                const positions = coords.map(([lon, lat]) =>
+                  Cesium.Cartesian3.fromDegrees(lon, lat)
+                );
+                const haloEntity = viewer.entities.add({
+                  polygon: {
+                    hierarchy: new Cesium.PolygonHierarchy(positions),
+                    material: Cesium.Color.WHITE.withAlpha(0.07),
+                    outline: false,
+                  },
+                  properties: featureProps,
+                  show: false,
+                });
+                featureHaloRef.current.set(feature.id, haloEntity);
+              }
+            } else if (geo.type === "RidgeCorridor") {
+              // 山脉 halo: 使用所有 segments 合并
+              for (const segment of geo.segments) {
+                const ring = segment[0] as [number, number][] | undefined;
+                if (!ring) continue;
+                const positions = ring.map(([lon, lat]) =>
+                  Cesium.Cartesian3.fromDegrees(lon, lat)
+                );
+                const haloEntity = viewer.entities.add({
+                  polygon: {
+                    hierarchy: new Cesium.PolygonHierarchy(positions),
+                    material: Cesium.Color.WHITE.withAlpha(0.06),
+                    outline: false,
+                  },
+                  properties: featureProps,
+                  show: false,
+                });
+                // 山脉可能有多个 segment halo，存储最后一个
+                featureHaloRef.current.set(feature.id, haloEntity);
+              }
+            }
           }
 
           onTerrainMode?.(terrainMode);
