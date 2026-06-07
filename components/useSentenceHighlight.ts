@@ -102,7 +102,6 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const stopHighlight = useCallback(() => {
-    console.log("[highlight-stop] clearing all state");
     if (timerRef.current) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
@@ -169,7 +168,6 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
 
   const startHighlightSections = useCallback(
     (sections: HighlightSection[]) => {
-      console.log("[highlight-start] startHighlightSections called with", sections.length, "sections");
       stopHighlight();
 
       const allSentences: string[] = [];
@@ -185,13 +183,9 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
         offset += sentences.length;
       }
 
-      if (allSentences.length === 0) {
-        console.log("[highlight-start] no sentences, returning");
-        return;
-      }
+      if (allSentences.length === 0) return;
 
       const initialSection = findSectionForIndex(0, sectionMap);
-      console.log("[highlight-start] setting state:", { activeSentenceIndex: 0, activeSection: initialSection, totalSentences: allSentences.length });
       setActiveSection(initialSection);
       setActiveSentenceIndex(0);
       currentIndexRef.current = 0;
@@ -228,15 +222,10 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
    */
   const startHighlightWithTiming = useCallback(
     (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement) => {
-      console.log("[highlight-start] startHighlightWithTiming called, wordBoundaries:", wordBoundaries.length);
       stopHighlight();
 
       const timeMap = buildSentenceTimeMap(sections, wordBoundaries);
-      if (timeMap.length === 0) {
-        console.log("[highlight-start] timeMap empty, returning");
-        return;
-      }
-      console.log("[highlight-start] timeMap:", timeMap.length, "entries");
+      if (timeMap.length === 0) return;
 
       timeMapRef.current = timeMap;
       audioRef.current = audio;

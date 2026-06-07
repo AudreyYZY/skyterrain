@@ -175,9 +175,8 @@ export default function ExplorerApp() {
     );
   }, []);
 
-  /** 停止音频播放（不影响高亮状态） */
+  /** 停止音频播放（不影响高亮状态，不取消 NarrationManager session） */
   const stopAudio = useCallback(() => {
-    narrationManager.cancelCurrent();
     narrationQueue.cancel();
     stopSpeech();
     setIsSpeaking(false);
@@ -219,22 +218,13 @@ export default function ExplorerApp() {
         { key: "observation", text: lesson.observation ?? "" },
       ].filter(s => s.text.trim().length > 0);
 
-      console.log("[speakLessonWithHighlight] session:", session.id, "sections:", sections.length);
-
       await speakText(ssml, () => {
-        console.log("[onPlaying] session.active:", session.active);
-        if (!session.active) {
-          console.log("[onPlaying] session inactive, skipping highlight");
-          return;
-        }
+        if (!session.active) return;
         const wordBoundaries = getCurrentWordBoundaries();
         const audio = getCurrentAudio();
-        console.log("[onPlaying] wordBoundaries:", wordBoundaries.length, "audio:", !!audio);
         if (wordBoundaries.length > 0 && audio) {
-          console.log("[onPlaying] starting highlightWithTiming");
           startHighlightWithTiming(sections, wordBoundaries, audio);
         } else {
-          console.log("[onPlaying] starting highlightSections (fallback)");
           startHighlightSections(sections);
         }
       });
