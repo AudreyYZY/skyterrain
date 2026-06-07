@@ -100,3 +100,5 @@ Raw Source → QGIS → Xinjiang Clip → GeoJSON → Feature Import → Debug V
 - [ADR-001: Region First, Label Second](architecture-decisions/ADR-001-region-first.md)
 - [ADR-002: Geographic Feature Model](architecture-decisions/ADR-002-feature-model.md)
 - [ADR-003: Real GIS Geometry Only](architecture-decisions/ADR-003-real-gis-only.md)
+- [ADR-004: Terrain Identity Layer](architecture-decisions/ADR-004-terrain-identity-layer.md)
+- [ADR-005: GIS Source of Truth](architecture-decisions/ADR-005-gis-source-of-truth.md)
