@@ -612,8 +612,79 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
               viewer.scene.requestRender();
             },
+            /** 显示所有 Feature interactionGeometry 半透明着色 */
+            debugGeometry(show: boolean = true) {
+              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugGeometry);
+              existing.forEach((e: any) => viewer.entities.remove(e));
+
+              if (!show) {
+                console.log("[debug] Geometry debug hidden");
+                return;
+              }
+
+              const colors: Record<string, [number, number, number]> = {
+                tianshan: [255, 0, 0],
+                kunlun: [0, 255, 0],
+                altai: [0, 0, 255],
+                "junggar-basin": [255, 165, 0],
+                "tarim-basin": [255, 255, 0],
+                pamir: [128, 0, 128],
+                taklamakan: [255, 192, 203],
+                sayram: [0, 255, 255],
+              };
+
+              for (const feature of XINJIANG_CORE_FEATURES) {
+                const geo = feature.interactionGeometry;
+                const color = colors[feature.id] ?? [255, 255, 255];
+
+                if (geo.type === "Polygon") {
+                  const coords = geo.coordinates[0] as [number, number][];
+                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                  viewer.entities.add({
+                    polygon: {
+                      hierarchy: new Cesium.PolygonHierarchy(positions),
+                      material: Cesium.Color.fromBytes(color[0], color[1], color[2], 60),
+                      outline: true,
+                      outlineColor: Cesium.Color.fromBytes(color[0], color[1], color[2], 180),
+                      outlineWidth: 2,
+                    },
+                    properties: { isDebugGeometry: true, featureId: feature.id },
+                  });
+                  console.log(`[debug] ${feature.name}: Polygon (${coords.length} vertices) color=${color}`);
+                } else if (geo.type === "RidgeCorridor") {
+                  for (let si = 0; si < geo.segments.length; si++) {
+                    const ring = geo.segments[si][0] as [number, number][];
+                    if (!ring) continue;
+                    const positions = ring.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                    viewer.entities.add({
+                      polygon: {
+                        hierarchy: new Cesium.PolygonHierarchy(positions),
+                        material: Cesium.Color.fromBytes(color[0], color[1], color[2], 50),
+                        outline: true,
+                        outlineColor: Cesium.Color.fromBytes(color[0], color[1], color[2], 150),
+                        outlineWidth: 2,
+                      },
+                      properties: { isDebugGeometry: true, featureId: feature.id },
+                    });
+                  }
+                  // Ridge line
+                  const ridgePositions = geo.ridgeLine.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                  viewer.entities.add({
+                    polyline: {
+                      positions: ridgePositions,
+                      width: 3,
+                      material: Cesium.Color.fromBytes(color[0], color[1], color[2], 200),
+                      clampToGround: true,
+                    },
+                    properties: { isDebugGeometry: true, featureId: feature.id },
+                  });
+                  console.log(`[debug] ${feature.name}: RidgeCorridor (${geo.segments.length} segments, ${geo.ridgeLine.length} ridge points) color=${color}`);
+                }
+              }
+              viewer.scene.requestRender();
+            },
           };
-          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries()");
+          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries(), debugGeometry()");
 
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {
