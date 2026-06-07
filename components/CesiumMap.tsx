@@ -194,6 +194,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           for (const entity of entities) {
             if (entity.polygon) {
+              if (isTarget && s.brightnessAdjust > 0) {
+                entity.polygon.material = new Cesium.ColorMaterialProperty(
+                  Cesium.Color.WHITE.withAlpha(s.brightnessAdjust)
+                );
+              } else {
+                entity.polygon.material = Cesium.Color.TRANSPARENT as any;
+              }
               entity.polygon.outlineColor = new Cesium.ConstantProperty(
                 Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
               );
@@ -222,6 +229,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           for (const entity of entities) {
             if (entity.polygon) {
+              entity.polygon.material = Cesium.Color.TRANSPARENT as any;
               entity.polygon.outlineColor = new Cesium.ConstantProperty(
                 Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
               );
@@ -640,6 +648,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
                 for (const entity of entities) {
                   if (entity.polygon) {
+                    // Region Lift: hover 时区域填充增亮
+                    if (isHovered && s.brightnessAdjust > 0) {
+                      entity.polygon.material = new Cesium.ColorMaterialProperty(
+                        Cesium.Color.WHITE.withAlpha(s.brightnessAdjust)
+                      );
+                    } else {
+                      entity.polygon.material = Cesium.Color.TRANSPARENT as any;
+                    }
                     entity.polygon.outlineColor = new Cesium.ConstantProperty(
                       Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
                     );
