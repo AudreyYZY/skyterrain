@@ -135,9 +135,21 @@ export default function ExplorerApp() {
     for (const terrain of allTerrains) {
       const config = labelConfigs[terrain.id];
       if (config) {
-        const priority = config.lodLevel === 2 ? 100 : config.lodLevel === 3 ? 70 : 50;
+        const priority = config.lodLevel === 1 ? 100 : config.lodLevel === 2 ? 90 : config.lodLevel === 3 ? 70 : 50;
         labelManager.addLabel(layerId, createTerrainLabel(
           terrain.id, terrain.name, terrain.lat, terrain.lon, priority,
+          { lodLevel: config.lodLevel, rotation: config.rotation, terrainType: config.terrainType }
+        ));
+      }
+    }
+
+    // 注册 China Feature 标签 (不在 allTerrains 中)
+    for (const feature of CHINA_CORE_FEATURES) {
+      const config = labelConfigs[feature.id];
+      if (config && feature.cameraGeometry) {
+        const priority = 100; // China Feature 优先级最高
+        labelManager.addLabel(layerId, createTerrainLabel(
+          feature.id, feature.name, feature.cameraGeometry.target[1], feature.cameraGeometry.target[0], priority,
           { lodLevel: config.lodLevel, rotation: config.rotation, terrainType: config.terrainType }
         ));
       }
