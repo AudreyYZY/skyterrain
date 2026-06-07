@@ -593,6 +593,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
               for (const feature of ALL_FEATURES) {
                 const geo = feature.hoverGeometry;
+                if (!geo) continue;
                 if (geo.type === "Polygon") {
                   const coords = geo.coordinates[0] as [number, number][];
                   for (const [lon, lat] of coords) {
@@ -644,6 +645,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
               for (const feature of features) {
                 const geo = feature.hoverGeometry;
+                if (!geo) continue;
                 const color = colors[feature.id] ?? [255, 255, 255];
 
                 if (geo.type === "Polygon") {
@@ -706,6 +708,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 : ALL_FEATURES;
               for (const feature of features) {
                 const geo = feature.identityGeometry;
+                if (!geo) continue;
                 if (geo.type === "LineString") {
                   const coords = geo.coordinates as [number, number][];
                   const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
@@ -729,6 +732,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 : ALL_FEATURES;
               for (const feature of features) {
                 const geo = feature.focusGeometry;
+                if (!geo) continue;
                 if (geo.type === "LineString") {
                   const coords = geo.coordinates as [number, number][];
                   const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
@@ -777,6 +781,12 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 id: newHoveredId ?? "none",
                 type: feature?.featureType ?? "-",
               });
+            }
+
+            // 检查 maturityLevel — Level 0-1 不支持 hover
+            const hoveredFeature = newHoveredId ? ALL_FEATURES.find(f => f.id === newHoveredId) : null;
+            if (hoveredFeature && hoveredFeature.maturityLevel < 2) {
+              newHoveredId = null; // 不支持 hover
             }
 
             if (newHoveredId !== hoveredFeatureId) {
@@ -887,7 +897,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               featureType: feature.featureType,
             };
 
+            // Level 0-1: 不渲染 hoverGeometry
+            if (feature.maturityLevel < 2) continue;
+
             const geo = feature.hoverGeometry;
+            if (!geo) continue;
 
             if (geo.type === "Polygon" || geo.type === "MultiPolygon") {
               // 盆地/沙漠/湖泊: 渲染 Polygon 边界

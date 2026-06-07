@@ -36,16 +36,19 @@ export function validateFeature(feature: GeographicFeature): ValidationResult {
   if (!feature.name) errors.push("缺少 name");
   if (!feature.featureType) errors.push("缺少 featureType");
 
-  if (!feature.identityGeometry) {
-    errors.push("缺少 identityGeometry");
-  } else {
+  // Geometry 校验基于 maturityLevel
+  if (feature.maturityLevel >= 1 && !feature.identityGeometry) {
+    errors.push("Level 1+ 需要 identityGeometry");
+  } else if (feature.identityGeometry) {
     errors.push(...validateCoordinates(feature.identityGeometry));
   }
 
-  if (!feature.hoverGeometry) errors.push("缺少 hoverGeometry");
-  if (!feature.focusGeometry) errors.push("缺少 focusGeometry");
-  if (!feature.cameraGeometry) errors.push("缺少 cameraGeometry");
-  if (!feature.storyGeometry) errors.push("缺少 storyGeometry");
+  if (feature.maturityLevel >= 2 && !feature.hoverGeometry) {
+    errors.push("Level 2+ 需要 hoverGeometry");
+  }
+  if (feature.maturityLevel >= 2 && !feature.cameraGeometry) {
+    errors.push("Level 2+ 需要 cameraGeometry");
+  }
 
   if (!feature.label) {
     errors.push("缺少 label");

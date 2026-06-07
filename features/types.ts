@@ -168,6 +168,14 @@ export interface StoryDefinition {
   observation?: string;
 }
 
+/** Feature 成熟度等级 */
+export type MaturityLevel =
+  | 0  // Label Only — 只显示名称
+  | 1  // Identity Geometry — 标签放置
+  | 2  // Hover Geometry — 鼠标交互
+  | 3  // Focus Geometry — 高亮显示
+  | 4; // Story Ready — 完整讲解
+
 /** 地理要素 (核心数据模型) */
 export interface GeographicFeature {
   /** 唯一标识 */
@@ -176,17 +184,19 @@ export interface GeographicFeature {
   name: string;
   /** 要素类型 */
   featureType: FeatureType;
+  /** 成熟度等级 (决定渲染行为) */
+  maturityLevel: MaturityLevel;
 
-  /** 标识几何 (标签放置、走向、LOD) */
-  identityGeometry: Geometry;
-  /** Hover 几何 (鼠标进入区域，可比真实边界大) */
-  hoverGeometry: Geometry;
-  /** Focus 几何 (高亮显示内容，如山脊线/湖岸线) */
-  focusGeometry: Geometry;
-  /** 镜头几何 (飞行目标、最佳观赏角度) */
-  cameraGeometry: CameraViewpoint;
-  /** 故事几何 (讲解节点、镜头运动路径) */
-  storyGeometry: StoryNode[];
+  /** 标识几何 (标签放置、走向、LOD) — Level 1+ */
+  identityGeometry?: Geometry;
+  /** Hover 几何 (鼠标进入区域) — Level 2+ */
+  hoverGeometry?: Geometry;
+  /** Focus 几何 (高亮显示内容) — Level 3+ */
+  focusGeometry?: Geometry;
+  /** 镜头几何 (飞行目标) — Level 2+ */
+  cameraGeometry?: CameraViewpoint;
+  /** 故事几何 (讲解节点) — Level 4 */
+  storyGeometry?: StoryNode[];
 
   /** 标签定义 */
   label: IdentityDefinition;
