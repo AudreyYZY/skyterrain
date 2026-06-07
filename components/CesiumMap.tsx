@@ -1,8 +1,9 @@
 "use client";
 
 import { bearingRadians, haversineMeters } from "@/lib/geo";
-import { TERRAIN_BOUNDARIES, BOUNDARY_STYLES, type TerrainBoundary } from "@/lib/terrain-boundaries";
 import { resolveRouteWaypoints, type ResolvedWaypoint } from "@/lib/routes";
+import { XINJIANG_CORE_FEATURES } from "@/features/xinjiang-core-features";
+import type { GeographicFeature } from "@/features/types";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainPoint } from "@/types/terrain";
 import {
@@ -120,7 +121,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const heightCacheRef = useRef<Map<string, number>>(new Map());
     const flightCancelledRef = useRef(false);
     const routeEntityRef = useRef<import("cesium").Entity | null>(null);
-    const boundaryEntitiesRef = useRef<Map<string, import("cesium").Entity>>(new Map());
+    const featureEntitiesRef = useRef<Map<string, import("cesium").Entity[]>>(new Map());
     const [status, setStatus] = useState<"loading" | "ready" | "error">(
       "loading"
     );
@@ -185,18 +186,25 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         const Cesium = cesiumRef.current;
         if (!viewer || !Cesium) return;
 
-        for (const [id, entity] of boundaryEntitiesRef.current) {
-          const boundary = TERRAIN_BOUNDARIES.find((b) => b.id === id);
-          if (!boundary) continue;
-          const style = BOUNDARY_STYLES[boundary.type];
+        for (const [id, entities] of featureEntitiesRef.current) {
+          const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
+          if (!feature) continue;
           const isTarget = id === boundaryId;
-          const s = isTarget ? style.selected : style.default;
+          const s = isTarget ? feature.interaction.selectedStyle : feature.interaction.idleStyle;
 
-          if (entity.polygon) {
-            entity.polygon.outlineColor = new Cesium.ConstantProperty(
-              Cesium.Color.fromBytes(s.color[0], s.color[1], s.color[2], Math.round(s.alpha * 255))
-            );
-            entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.width);
+          for (const entity of entities) {
+            if (entity.polygon) {
+              entity.polygon.outlineColor = new Cesium.ConstantProperty(
+                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
+              );
+              entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.outlineWidth);
+            }
+            if (entity.polyline) {
+              entity.polyline.width = new Cesium.ConstantProperty(s.outlineWidth);
+              (entity.polyline as any).material = new Cesium.ColorMaterialProperty(
+                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
+              );
+            }
           }
         }
         viewer.scene.requestRender();
@@ -207,16 +215,24 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         const Cesium = cesiumRef.current;
         if (!viewer || !Cesium) return;
 
-        for (const [id, entity] of boundaryEntitiesRef.current) {
-          const boundary = TERRAIN_BOUNDARIES.find((b) => b.id === id);
-          if (!boundary) continue;
-          const style = BOUNDARY_STYLES[boundary.type];
+        for (const [id, entities] of featureEntitiesRef.current) {
+          const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
+          if (!feature) continue;
+          const s = feature.interaction.idleStyle;
 
-          if (entity.polygon) {
-            entity.polygon.outlineColor = new Cesium.ConstantProperty(
-              Cesium.Color.fromBytes(style.default.color[0], style.default.color[1], style.default.color[2], Math.round(style.default.alpha * 255))
-            );
-            entity.polygon.outlineWidth = new Cesium.ConstantProperty(style.default.width);
+          for (const entity of entities) {
+            if (entity.polygon) {
+              entity.polygon.outlineColor = new Cesium.ConstantProperty(
+                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
+              );
+              entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.outlineWidth);
+            }
+            if (entity.polyline) {
+              entity.polyline.width = new Cesium.ConstantProperty(s.outlineWidth);
+              (entity.polyline as any).material = new Cesium.ColorMaterialProperty(
+                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
+              );
+            }
           }
         }
         viewer.scene.requestRender();
@@ -552,25 +568,38 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 terrainExaggeration: (viewer.scene.globe as any).terrainExaggeration ?? "N/A",
               });
             },
-            /** 显示所有边界 polygon 顶点 */
+            /** 显示所有 Feature 顶点 */
             debugBoundaries(show: boolean = true) {
               const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugVertex);
               existing.forEach((e: any) => viewer.entities.remove(e));
 
               if (!show) {
-                console.log("[debug] Boundary vertices hidden");
+                console.log("[debug] Feature vertices hidden");
                 return;
               }
 
-              for (const boundary of TERRAIN_BOUNDARIES) {
-                for (const [lon, lat] of boundary.coordinates) {
-                  viewer.entities.add({
-                    position: Cesium.Cartesian3.fromDegrees(lon, lat),
-                    point: { pixelSize: 5, color: Cesium.Color.RED },
-                    properties: { isDebugVertex: true, boundaryId: boundary.id },
-                  });
+              for (const feature of XINJIANG_CORE_FEATURES) {
+                const geo = feature.interactionGeometry;
+                if (geo.type === "Polygon") {
+                  const coords = geo.coordinates[0] as [number, number][];
+                  for (const [lon, lat] of coords) {
+                    viewer.entities.add({
+                      position: Cesium.Cartesian3.fromDegrees(lon, lat),
+                      point: { pixelSize: 5, color: Cesium.Color.RED },
+                      properties: { isDebugVertex: true, featureId: feature.id },
+                    });
+                  }
+                  console.log(`[debug] ${feature.name}: ${coords.length} vertices`);
+                } else if (geo.type === "RidgeCorridor") {
+                  for (const [lon, lat] of geo.ridgeLine) {
+                    viewer.entities.add({
+                      position: Cesium.Cartesian3.fromDegrees(lon, lat),
+                      point: { pixelSize: 5, color: Cesium.Color.RED },
+                      properties: { isDebugVertex: true, featureId: feature.id },
+                    });
+                  }
+                  console.log(`[debug] ${feature.name}: ${geo.ridgeLine.length} ridge points, ${geo.segments.length} segments`);
                 }
-                console.log(`[debug] ${boundary.name}: ${boundary.coordinates.length} vertices`);
               }
               viewer.scene.requestRender();
             },
@@ -584,9 +613,9 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
           });
 
-          // 地貌边界 Hover 效果
+          // 地貌 Feature Hover 效果
           const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
-          let hoveredBoundaryId: string | null = null;
+          let hoveredFeatureId: string | null = null;
 
           handler.setInputAction((movement: any) => {
             if (viewer.isDestroyed()) return;
@@ -595,32 +624,38 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
             if (Cesium.defined(picked) && picked.id?.properties) {
               const props = picked.id.properties;
-              const boundaryId = props?.getValue?.()?.boundaryId;
-              if (boundaryId) {
-                newHoveredId = boundaryId;
+              const featureId = props?.getValue?.()?.featureId;
+              if (featureId) {
+                newHoveredId = featureId;
               }
             }
 
-            if (newHoveredId !== hoveredBoundaryId) {
-              hoveredBoundaryId = newHoveredId;
-              for (const [id, entity] of boundaryEntitiesRef.current) {
-                const boundary = TERRAIN_BOUNDARIES.find((b) => b.id === id);
-                if (!boundary) continue;
-                const style = BOUNDARY_STYLES[boundary.type];
+            if (newHoveredId !== hoveredFeatureId) {
+              hoveredFeatureId = newHoveredId;
+              for (const [id, entities] of featureEntitiesRef.current) {
+                const feature = XINJIANG_CORE_FEATURES.find((f) => f.id === id);
+                if (!feature) continue;
                 const isHovered = id === newHoveredId;
-                const s = isHovered ? style.hover : style.default;
-                const color = style.default.color;
+                const s = isHovered ? feature.interaction.hoverStyle : feature.interaction.idleStyle;
 
-                if (entity.polygon) {
-                  entity.polygon.outlineColor = new Cesium.ConstantProperty(
-                    Cesium.Color.fromBytes(color[0], color[1], color[2], Math.round(s.alpha * 255))
-                  );
-                  entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.width);
+                for (const entity of entities) {
+                  if (entity.polygon) {
+                    entity.polygon.outlineColor = new Cesium.ConstantProperty(
+                      Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
+                    );
+                    entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.outlineWidth);
+                  }
+                  if (entity.polyline) {
+                    entity.polyline.width = new Cesium.ConstantProperty(s.outlineWidth);
+                    (entity.polyline as any).material = new Cesium.ColorMaterialProperty(
+                      Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
+                    );
+                  }
                 }
               }
               // 通知标签系统高亮对应标签
               const hoveredName = newHoveredId
-                ? TERRAIN_BOUNDARIES.find((b) => b.id === newHoveredId)?.name ?? null
+                ? XINJIANG_CORE_FEATURES.find((f) => f.id === newHoveredId)?.name ?? null
                 : null;
               onBoundaryHover?.(hoveredName);
               viewer.scene.requestRender();
@@ -649,34 +684,87 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
           resizeObserver.observe(containerRef.current);
 
-          // 绘制地貌边界 — 极弱边界线，不填充
-          for (const boundary of TERRAIN_BOUNDARIES) {
-            const style = BOUNDARY_STYLES[boundary.type];
-            const positions = boundary.coordinates.map(([lon, lat]) =>
-              Cesium.Cartesian3.fromDegrees(lon, lat)
-            );
+          // 绘制地貌 Feature — 基于 GeographicFeature 数据
+          for (const feature of XINJIANG_CORE_FEATURES) {
+            const entities: import("cesium").Entity[] = [];
+            const idle = feature.interaction.idleStyle;
 
-            const entity = viewer.entities.add({
-              polygon: {
-                hierarchy: new Cesium.PolygonHierarchy(positions),
-                material: Cesium.Color.TRANSPARENT,
-                outline: true,
-                outlineColor: Cesium.Color.fromBytes(
-                  style.default.color[0],
-                  style.default.color[1],
-                  style.default.color[2],
-                  Math.round(style.default.alpha * 255)
-                ),
-                outlineWidth: style.default.width,
-              },
-              properties: {
-                boundaryId: boundary.id,
-                boundaryName: boundary.name,
-                boundaryType: boundary.type,
-              },
-            });
+            const featureProps = {
+              featureId: feature.id,
+              featureName: feature.name,
+              featureType: feature.featureType,
+            };
 
-            boundaryEntitiesRef.current.set(boundary.id, entity);
+            const geo = feature.interactionGeometry;
+
+            if (geo.type === "Polygon" || geo.type === "MultiPolygon") {
+              // 盆地/沙漠/湖泊: 渲染 Polygon 边界
+              const coords = geo.type === "Polygon"
+                ? (geo.coordinates[0] as [number, number][])
+                : (geo.coordinates[0]?.[0] as [number, number][] | undefined);
+              if (coords) {
+                const positions = coords.map(([lon, lat]) =>
+                  Cesium.Cartesian3.fromDegrees(lon, lat)
+                );
+                const entity = viewer.entities.add({
+                  polygon: {
+                    hierarchy: new Cesium.PolygonHierarchy(positions),
+                    material: Cesium.Color.TRANSPARENT,
+                    outline: true,
+                    outlineColor: Cesium.Color.fromBytes(
+                      idle.outlineColor[0], idle.outlineColor[1], idle.outlineColor[2],
+                      Math.round(idle.outlineAlpha * 255)
+                    ),
+                    outlineWidth: idle.outlineWidth,
+                  },
+                  properties: featureProps,
+                });
+                entities.push(entity);
+              }
+            } else if (geo.type === "RidgeCorridor") {
+              // 山脉: 渲染山脊线 + 局部山体区域
+              const ridgePositions = geo.ridgeLine.map(([lon, lat]) =>
+                Cesium.Cartesian3.fromDegrees(lon, lat)
+              );
+              const ridgeEntity = viewer.entities.add({
+                polyline: {
+                  positions: ridgePositions,
+                  width: 1.5,
+                  material: Cesium.Color.fromBytes(
+                    idle.outlineColor[0], idle.outlineColor[1], idle.outlineColor[2],
+                    Math.round(idle.outlineAlpha * 255)
+                  ),
+                  clampToGround: true,
+                },
+                properties: featureProps,
+              });
+              entities.push(ridgeEntity);
+
+              // 渲染山体区域轮廓
+              for (const segment of geo.segments) {
+                const ring = segment[0] as [number, number][] | undefined;
+                if (!ring) continue;
+                const positions = ring.map(([lon, lat]) =>
+                  Cesium.Cartesian3.fromDegrees(lon, lat)
+                );
+                const entity = viewer.entities.add({
+                  polygon: {
+                    hierarchy: new Cesium.PolygonHierarchy(positions),
+                    material: Cesium.Color.TRANSPARENT,
+                    outline: true,
+                    outlineColor: Cesium.Color.fromBytes(
+                      idle.outlineColor[0], idle.outlineColor[1], idle.outlineColor[2],
+                      Math.round(idle.outlineAlpha * 0.6 * 255)
+                    ),
+                    outlineWidth: 1,
+                  },
+                  properties: featureProps,
+                });
+                entities.push(entity);
+              }
+            }
+
+            featureEntitiesRef.current.set(feature.id, entities);
           }
 
           onTerrainMode?.(terrainMode);
