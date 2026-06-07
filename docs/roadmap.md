@@ -44,10 +44,15 @@
 
 **目标:** 替换手工 Geometry 为真实 GIS 数据
 
-**优先级:**
+**拆分:**
 
-1. 天山 Ridge (Natural Earth Mountain Ranges)
-2. 准噶尔盆地 Polygon (Natural Earth Basins / QGIS)
+| Step | 内容 | 状态 |
+|------|------|------|
+| 1C.1 | GIS 数据源验证 (Natural Earth / HydroLAKES) | ⏳ |
+| 1C.2 | 天山 Ridge 替换 | ⏳ |
+| 1C.3 | 准噶尔盆地 Polygon 替换 | ⏳ |
+| 1C.4 | 视觉验证 (Debug Geometry + Hover) | ⏳ |
+| 1C.5 | 其余 Feature 替换 | ⏳ |
 
 **验证标准:**
 
