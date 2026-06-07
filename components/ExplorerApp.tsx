@@ -20,6 +20,7 @@ import {
   type ResolvedWaypoint,
 } from "@/lib/routes";
 import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries, type WordBoundary } from "@/lib/speech";
+import { narrationManager } from "@/lib/narration-manager";
 import { getAllTerrains, getTerrainsByCategory } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
@@ -176,6 +177,7 @@ export default function ExplorerApp() {
 
   /** 停止音频播放（不影响高亮状态） */
   const stopAudio = useCallback(() => {
+    narrationManager.cancelCurrent();
     narrationQueue.cancel();
     stopSpeech();
     setIsSpeaking(false);
@@ -183,6 +185,7 @@ export default function ExplorerApp() {
 
   /** 停止音频 + 高亮（用户主动取消时调用） */
   const stopSpeaking = useCallback(() => {
+    narrationManager.cancelCurrent();
     stopAudio();
     stopHighlight();
   }, [stopAudio, stopHighlight]);
@@ -207,6 +210,7 @@ export default function ExplorerApp() {
   /** 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用 */
   const speakLessonWithHighlight = useCallback(
     async (lesson: TerrainLesson): Promise<void> => {
+      const session = narrationManager.createSession();
       const ssml = lessonToSSML(lesson);
       const sections = [
         { key: "seeing", text: lesson.seeing },
@@ -215,9 +219,9 @@ export default function ExplorerApp() {
         { key: "observation", text: lesson.observation ?? "" },
       ].filter(s => s.text.trim().length > 0);
 
-      // onPlaying 在 audio.onplaying 时触发
-      // 此时 getCurrentWordBoundaries() 已包含 Edge TTS 返回的真实时间戳
       await speakText(ssml, () => {
+        // 检查会话是否仍活跃
+        if (!session.active) return;
         const wordBoundaries = getCurrentWordBoundaries();
         const audio = getCurrentAudio();
         if (wordBoundaries.length > 0 && audio) {
@@ -226,7 +230,10 @@ export default function ExplorerApp() {
           startHighlightSections(sections);
         }
       });
-      stopHighlight();
+      // 只有会话仍活跃时才清除高亮
+      if (session.active) {
+        stopHighlight();
+      }
     },
     [speakText, startHighlightSections, startHighlightWithTiming, stopHighlight]
   );
@@ -293,9 +300,11 @@ export default function ExplorerApp() {
         ].filter(s => s.text.trim().length > 0);
 
         // 等待叙述完成 — 高亮在音频真正播放时启动
+        const session = narrationManager.createSession();
         setIsSpeaking(true);
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE, () => {
+            if (!session.active) return;
             const wordBoundaries = getCurrentWordBoundaries();
             const audio = getCurrentAudio();
             if (wordBoundaries.length > 0 && audio) {
@@ -306,7 +315,9 @@ export default function ExplorerApp() {
           });
         } finally {
           setIsSpeaking(false);
-          stopHighlight();
+          if (session.active) {
+            stopHighlight();
+          }
         }
 
         // 叙述后停留 — 让用户消化
@@ -327,9 +338,11 @@ export default function ExplorerApp() {
           { key: "history", text: cityLesson.history },
           { key: "observation", text: cityLesson.observation ?? "" },
         ].filter(s => s.text.trim().length > 0);
+        const session = narrationManager.createSession();
         setIsSpeaking(true);
         try {
           await speakAndWait(ssmlScript, SPEECH_RATE, () => {
+            if (!session.active) return;
             const wordBoundaries = getCurrentWordBoundaries();
             const audio = getCurrentAudio();
             if (wordBoundaries.length > 0 && audio) {
@@ -340,7 +353,9 @@ export default function ExplorerApp() {
           });
         } finally {
           setIsSpeaking(false);
-          stopHighlight();
+          if (session.active) {
+            stopHighlight();
+          }
         }
 
         if (!narrationCancelledRef.current) {
