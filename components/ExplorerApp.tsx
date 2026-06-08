@@ -12,6 +12,8 @@ import ResizablePanel from "@/components/ResizablePanel";
 import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
+import { TERRAIN_LABELS } from "@/lib/terrain-label-registry";
+import { TERRAIN_THEME, getFontSize, LABEL_TEXT_STYLE, type Importance } from "@/lib/terrain-label-theme";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
@@ -154,81 +156,26 @@ export default function ExplorerApp() {
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
 
-  // 初始化地形标注 — 按 Terrain Visibility Matrix 分级
+  // 初始化地形标注 — 从 TERRAIN_LABELS 注册
   useEffect(() => {
     const layerId = "terrain-labels";
     labelManager.createLayer(layerId, "地形标注", 1);
 
-    // Terrain Visibility Matrix
-    // LOD 1 = China 尺度 (全国主要地貌)
-    // LOD 2 = Xinjiang 尺度 (三山两盆一高原)
-    // LOD 3 = Regional 尺度 (沙漠/盆地/湖泊)
-    // LOD 4 = Explore 尺度 (具体地点)
-    const labelConfigs: Record<string, {
-      lodLevel: 1 | 2 | 3 | 4;
-      rotation?: number;
-      terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
-    }> = {
-      // LOD 1 — China 尺度: 全国主要地貌
-      "qinghai-tibet":   { lodLevel: 1, terrainType: "plateau" },
-      "loess":           { lodLevel: 1, terrainType: "plateau" },
-      "inner-mongolia":  { lodLevel: 1, terrainType: "plateau" },
-      "yunnan-guizhou":  { lodLevel: 1, terrainType: "plateau" },
-      "sichuan":         { lodLevel: 1, terrainType: "basin" },
-      "northeast":       { lodLevel: 1, terrainType: "basin" },
-      "north-china":     { lodLevel: 1, terrainType: "basin" },
-      "yangtze":         { lodLevel: 1, terrainType: "basin" },
-      "himalaya":        { lodLevel: 1, rotation: 5, terrainType: "mountain" },
-      "qinling":         { lodLevel: 1, rotation: -5, terrainType: "mountain" },
-      "qilian":          { lodLevel: 1, rotation: -3, terrainType: "mountain" },
-      "taihang":         { lodLevel: 1, rotation: -70, terrainType: "mountain" },
-      "daxinganling":    { lodLevel: 1, rotation: -75, terrainType: "mountain" },
-      "hengduan":        { lodLevel: 1, rotation: -60, terrainType: "mountain" },
+    for (const label of TERRAIN_LABELS) {
+      const theme = TERRAIN_THEME[label.importance];
+      const fontSize = getFontSize(label.importance);
+      const priority = label.importance === "continental" ? 110 :
+                       label.importance === "national" ? 100 :
+                       label.importance === "regional" ? 80 : 60;
 
-      // LOD 2 — Xinjiang 尺度: 三山两盆一高原
-      "tianshan":        { lodLevel: 2, rotation: -8, terrainType: "mountain" },
-      "kunlun":          { lodLevel: 2, rotation: -5, terrainType: "mountain" },
-      "altai":           { lodLevel: 2, rotation: -35, terrainType: "mountain" },
-      "pamir":           { lodLevel: 2, terrainType: "plateau" },
-      "junggar-basin":   { lodLevel: 2, terrainType: "basin" },
-      "tarim-basin":     { lodLevel: 2, terrainType: "basin" },
-
-      // LOD 3 — Regional 尺度: 区域特征
-      "taklamakan":      { lodLevel: 3, terrainType: "desert" },
-      "turpan-basin":    { lodLevel: 3, terrainType: "basin" },
-      "sayram":          { lodLevel: 3, terrainType: "lake" },
-      "qaidam":          { lodLevel: 3, terrainType: "basin" },
-
-      // LOD 4 — Explore 尺度: 具体地点
-      "bosten":          { lodLevel: 4, terrainType: "lake" },
-      "tianchi":          { lodLevel: 4, terrainType: "lake" },
-      "kanas":           { lodLevel: 4, terrainType: "lake" },
-      "bogda":           { lodLevel: 4, rotation: -8, terrainType: "peak" },
-      "muztagh-ata":     { lodLevel: 4, terrainType: "peak" },
-      "flaming-mountains": { lodLevel: 4, terrainType: "mountain" },
-    };
-
-    for (const terrain of allTerrains) {
-      const config = labelConfigs[terrain.id];
-      if (config) {
-        const priority = config.lodLevel === 1 ? 100 : config.lodLevel === 2 ? 90 : config.lodLevel === 3 ? 70 : 50;
-        labelManager.addLabel(layerId, createTerrainLabel(
-          terrain.id, terrain.name, terrain.lat, terrain.lon, priority,
-          { lodLevel: config.lodLevel, rotation: config.rotation, terrainType: config.terrainType }
-        ));
-      }
-    }
-
-    // 注册 China Feature 标签 (不在 allTerrains 中)
-    for (const feature of CHINA_CORE_FEATURES) {
-      const config = labelConfigs[feature.id];
-      if (config && feature.cameraGeometry) {
-        const priority = 100; // China Feature 优先级最高
-        labelManager.addLabel(layerId, createTerrainLabel(
-          feature.id, feature.name, feature.cameraGeometry.target[1], feature.cameraGeometry.target[0], priority,
-          { lodLevel: config.lodLevel, rotation: config.rotation, terrainType: config.terrainType }
-        ));
-      }
+      labelManager.addLabel(layerId, createTerrainLabel(
+        label.id, label.name, label.lat, label.lon, priority,
+        {
+          lodLevel: theme.minZoom <= 3 ? 1 : theme.minZoom <= 5 ? 2 : theme.minZoom <= 7 ? 3 : 4,
+          rotation: label.rotation,
+          terrainType: label.category as any,
+        }
+      ));
     }
 
     // 暴露 labelManager 到 window 供调试

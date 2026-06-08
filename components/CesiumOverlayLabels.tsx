@@ -1,6 +1,7 @@
 "use client";
 
 import { labelManager, type CinematicLabel } from "@/lib/cinematic-labels";
+import { TERRAIN_THEME, getFontSize, LABEL_TEXT_STYLE, type Importance } from "@/lib/terrain-label-theme";
 import type { CesiumMapHandle } from "@/components/CesiumMap";
 import type { TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -30,17 +31,25 @@ const GRID_CELL_SIZE = 100;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
-/** LOD 级别样式配置 — 高对比度，清晰可见 */
-const LOD_STYLES = {
-  // China 尺度: 全国主要地貌
-  1: { fontSize: 28, opacity: 1.0, fontWeight: 500, letterSpacing: "0.8em" },
-  // Xinjiang 尺度: 骨架地貌
-  2: { fontSize: 22, opacity: 1.0, fontWeight: 500, letterSpacing: "0.5em" },
-  // Regional 尺度: 区域特征
-  3: { fontSize: 16, opacity: 1.0, fontWeight: 500, letterSpacing: "0.2em" },
-  // Explore 尺度: 具体地点
-  4: { fontSize: 13, opacity: 1.0, fontWeight: 500, letterSpacing: "0.08em" },
-} as const;
+/** LOD 级别 → Importance 映射 */
+function lodToImportance(lod: number): Importance {
+  if (lod <= 1) return "continental";
+  if (lod <= 2) return "national";
+  if (lod <= 3) return "regional";
+  return "poi";
+}
+
+/** 获取 LOD 级别的样式 (基于 Theme) */
+function getLodStyle(lodLevel: number) {
+  const importance = lodToImportance(lodLevel);
+  const theme = TERRAIN_THEME[importance];
+  return {
+    fontSize: getFontSize(importance),
+    opacity: 1.0,
+    fontWeight: theme.fontWeight,
+    letterSpacing: theme.letterSpacing,
+  };
+}
 
 /**
  * 计算边缘透明度
@@ -148,7 +157,7 @@ export default function CesiumOverlayLabels({
 
       // LOD 样式
       const lodLevel = (label.lodLevel ?? 4) as 1 | 2 | 3 | 4;
-      const lodStyle = LOD_STYLES[lodLevel];
+      const lodStyle = getLodStyle(lodLevel);
 
       // LOD 1-2 标签始终完全可见，不被边缘淡出影响
       // LOD 3-4 标签受边缘淡出影响
@@ -198,7 +207,7 @@ export default function CesiumOverlayLabels({
         if (visibility <= 0) return null;
         const terrain = terrains.find((t) => t.id === label.terrainId);
         const lodLevel = label.lodLevel ?? 3;
-        const lodStyle = LOD_STYLES[lodLevel as keyof typeof LOD_STYLES];
+        const lodStyle = getLodStyle(lodLevel);
         const rotation = label.rotation ?? 0;
         const isHovered = hoveredBoundary === label.text;
 
