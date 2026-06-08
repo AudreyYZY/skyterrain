@@ -30,16 +30,16 @@ const GRID_CELL_SIZE = 100;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
-/** LOD 级别样式配置 — Terrain Typography System */
+/** LOD 级别样式配置 — 高对比度，清晰可见 */
 const LOD_STYLES = {
-  // China 尺度: 全国主要地貌 (青藏高原/四川盆地/秦岭等)
-  1: { fontSize: 22, opacity: 0.30, fontWeight: 200, letterSpacing: "1.0em" },
-  // Xinjiang 尺度: 骨架地貌 (三山两盆一高原)
-  2: { fontSize: 18, opacity: 0.35, fontWeight: 200, letterSpacing: "0.8em" },
-  // Regional 尺度: 区域特征 (沙漠/盆地/湖泊)
-  3: { fontSize: 15, opacity: 0.45, fontWeight: 300, letterSpacing: "0.3em" },
+  // China 尺度: 全国主要地貌
+  1: { fontSize: 28, opacity: 1.0, fontWeight: 500, letterSpacing: "0.8em" },
+  // Xinjiang 尺度: 骨架地貌
+  2: { fontSize: 22, opacity: 1.0, fontWeight: 500, letterSpacing: "0.5em" },
+  // Regional 尺度: 区域特征
+  3: { fontSize: 16, opacity: 1.0, fontWeight: 500, letterSpacing: "0.2em" },
   // Explore 尺度: 具体地点
-  4: { fontSize: 12, opacity: 0.55, fontWeight: 400, letterSpacing: "0.08em" },
+  4: { fontSize: 13, opacity: 1.0, fontWeight: 500, letterSpacing: "0.08em" },
 } as const;
 
 /**
@@ -222,12 +222,13 @@ export default function CesiumOverlayLabels({
             <span
               className="whitespace-nowrap select-none"
               style={{
-                color: isHovered ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.9)",
+                color: "#ffffff",
                 fontSize: `${isHovered ? fontSize * 1.1 : fontSize}px`,
-                fontWeight: isHovered ? 500 : lodStyle.fontWeight,
+                fontWeight: lodStyle.fontWeight,
                 letterSpacing: lodStyle.letterSpacing,
                 lineHeight: 1.2,
-                textShadow: "0 1px 4px rgba(0,0,0,0.9), 0 0 10px rgba(0,0,0,0.6), 0 0 20px rgba(0,0,0,0.3)",
+                WebkitTextStroke: "0.5px rgba(0,0,0,0.6)",
+                textShadow: "0 0 3px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.8)",
                 fontFamily: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif",
               }}
             >

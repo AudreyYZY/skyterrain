@@ -500,11 +500,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           }
 
           viewer.scene.globe.depthTestAgainstTerrain = true;
-          viewer.scene.fog.enabled = true;
-          // 屏幕空间误差阈值 — 2.0 为默认值，平衡清晰度与 tile 加载压力
+          viewer.scene.fog.enabled = false;
           viewer.scene.globe.maximumScreenSpaceError = 2.0;
           if (viewer.scene.skyAtmosphere) {
-            viewer.scene.skyAtmosphere.show = true;
+            viewer.scene.skyAtmosphere.show = false;
           }
 
           // 显式配置相机控制器 — 确保触控板缩放和拖拽旋转正常
