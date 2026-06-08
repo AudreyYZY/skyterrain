@@ -150,8 +150,10 @@ export default function CesiumOverlayLabels({
       const lodLevel = (label.lodLevel ?? 4) as 1 | 2 | 3 | 4;
       const lodStyle = LOD_STYLES[lodLevel];
 
-      // 计算最终透明度: LOD 基础透明度 × 边缘淡出
-      const finalOpacity = lodStyle.opacity * fade;
+      // LOD 1-2 标签始终完全可见，不被边缘淡出影响
+      // LOD 3-4 标签受边缘淡出影响
+      const edgeFadeFactor = lodLevel <= 2 ? 1.0 : fade;
+      const finalOpacity = lodStyle.opacity * edgeFadeFactor;
 
       result.push({
         label,
