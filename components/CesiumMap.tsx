@@ -776,9 +776,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
             if (Cesium.defined(picked) && picked.id?.properties) {
               const props = picked.id.properties;
-              const featureId = props?.getValue?.()?.featureId;
+              const val = props?.getValue?.();
+              const featureId = val?.featureId;
+              const boundaryId = val?.boundaryId;
               if (featureId) {
                 newHoveredId = featureId;
+              } else if (boundaryId) {
+                newHoveredId = boundaryId;
               }
             }
 
@@ -794,8 +798,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
 
             // 检查 maturityLevel — Level 0-1 不支持 hover
+            // GeoJSON 边界 (boundaryId) 始终支持 hover
             const hoveredFeature = newHoveredId ? ALL_FEATURES.find(f => f.id === newHoveredId) : null;
-            if (hoveredFeature && hoveredFeature.maturityLevel < 2) {
+            const isGeoJsonBoundary = newHoveredId && !hoveredFeature;
+            if (hoveredFeature && hoveredFeature.maturityLevel < 2 && !isGeoJsonBoundary) {
               newHoveredId = null; // 不支持 hover
             }
 
@@ -1025,6 +1031,60 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
             if (haloEntities.length > 0) {
               featureHaloRef.current.set(feature.id, haloEntities);
+            }
+          }
+
+          // 加载 Natural Earth GeoJSON 边界
+          const BOUNDARY_FILES = [
+            "tianshan", "kunlun", "altai", "junggar-basin", "tarim-basin",
+            "taklamakan", "pamir", "qinling", "qilian", "taihang",
+            "loess", "sichuan", "inner-mongolia",
+          ];
+          for (const id of BOUNDARY_FILES) {
+            try {
+              const res = await fetch(`/data/gis/exports/${id}.geojson`);
+              if (!res.ok) continue;
+              const geojson = await res.json();
+              const geometry = geojson.geometry;
+              if (!geometry) continue;
+
+              if (geometry.type === "Polygon") {
+                const ring = geometry.coordinates[0];
+                if (!ring) continue;
+                const positions = ring.map(([lon, lat]: [number, number]) =>
+                  Cesium.Cartesian3.fromDegrees(lon, lat)
+                );
+                viewer.entities.add({
+                  polygon: {
+                    hierarchy: new Cesium.PolygonHierarchy(positions),
+                    material: Cesium.Color.TRANSPARENT,
+                    outline: true,
+                    outlineColor: Cesium.Color.WHITE.withAlpha(0.12),
+                    outlineWidth: 1,
+                  },
+                  properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
+                });
+              } else if (geometry.type === "MultiPolygon") {
+                for (const poly of geometry.coordinates) {
+                  const ring = poly[0];
+                  if (!ring) continue;
+                  const positions = ring.map(([lon, lat]: [number, number]) =>
+                    Cesium.Cartesian3.fromDegrees(lon, lat)
+                  );
+                  viewer.entities.add({
+                    polygon: {
+                      hierarchy: new Cesium.PolygonHierarchy(positions),
+                      material: Cesium.Color.TRANSPARENT,
+                      outline: true,
+                      outlineColor: Cesium.Color.WHITE.withAlpha(0.12),
+                      outlineWidth: 1,
+                    },
+                    properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
+                  });
+                }
+              }
+            } catch (e) {
+              // 静默跳过加载失败的文件
             }
           }
 
