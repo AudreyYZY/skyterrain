@@ -611,8 +611,10 @@ export default function ExplorerApp() {
           <CesiumOverlayLabels
             mapRef={mapRef}
             terrains={allTerrains}
+            features={CHINA_CORE_FEATURES}
             isRouteFlying={isRouteFlying}
             onSelectTerrain={handleSelectTerrain}
+            onSelectFeature={handleSelectFeature}
             hoveredBoundary={hoveredBoundary}
           />
         )}

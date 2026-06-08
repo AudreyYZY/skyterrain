@@ -18,7 +18,7 @@ const QINLING: GeographicFeature = {
   maturityLevel: 1,
   cameraGeometry: { target: [108.0, 33.5], heading: 0, pitch: -30, range: 300000 },
   storyGeometry: [
-    { id: "qinling-1", name: "太白山", position: [107.8, 34.0], text: "太白山是秦岭最高峰，海拔3771米。" },
+    { id: "qinling-1", name: "太白山", position: [107.8, 34.0], text: "太白山是秦岭最高峰，海拔3771.2米。" },
     { id: "qinling-2", name: "华山", position: [110.1, 34.5], text: "华山以险峻著称，是中国五岳之一。" },
   ],
   label: { labelText: "秦岭", labelType: "ridge", rotation: -5, priority: 95, minZoom: 1, maxZoom: 20 },
@@ -166,7 +166,7 @@ const HIMALAYA: GeographicFeature = {
     selectedStyle: { outlineAlpha: 0, outlineWidth: 0, outlineColor: [255, 255, 255], brightnessAdjust: 0, labelOpacityMultiplier: 1 },
   },
   story: {
-    seeing: "喜马拉雅山脉是世界最高的山脉，珠穆朗玛峰海拔8848米。从飞机上看，雪山连绵不断，冰川广布，气势磅礴。山脉呈东西走向，绵延2400多公里。",
+    seeing: "喜马拉雅山脉是世界最高的山脉，珠穆朗玛峰海拔8848.86米（2020年中国-尼泊尔联合测量）。从飞机上看，雪山连绵不断，冰川广布，气势磅礴。山脉呈东西走向，绵延2400多公里。",
     formation: "喜马拉雅山是印度板块与欧亚板块碰撞形成的，至今仍在抬升，每年约上升5毫米。山体主要由变质岩和沉积岩组成，拥有世界上最大的冰川群之一。",
     history: "喜马拉雅山是古代丝绸之路南线的重要地标，也是藏传佛教的圣地。1953年人类首次登顶珠穆朗玛峰，至今仍是世界登山运动的终极目标。",
     observation: "喜马拉雅山呈东西走向，雪线极高，约5500米。从飞机上看，山顶终年积雪，冰川从山顶延伸到山谷。南坡陡峭，北坡平缓，分界明显。",
