@@ -31,7 +31,7 @@ export interface CameraState {
 
 export interface CesiumMapHandle {
   flyToTerrain: (terrain: TerrainPoint) => void;
-  flyToTerrainAndWait: (terrain: TerrainPoint) => Promise<void>;
+  flyToTerrainAndWait: (terrain: TerrainPoint, cameraOptions?: { heading?: number; pitch?: number }) => Promise<void>;
   flyRoute: (route: FlightRoute, callbacks: RouteFlyCallbacks) => void;
   stopFlight: () => void;
   /** 将经纬度投影到屏幕坐标（返回 null 表示在视野外） */
@@ -280,7 +280,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
       },
 
-      flyToTerrainAndWait(terrain: TerrainPoint): Promise<void> {
+      flyToTerrainAndWait(terrain: TerrainPoint, cameraOptions?: { heading?: number; pitch?: number }): Promise<void> {
         const viewer = viewerRef.current;
         const Cesium = cesiumRef.current;
         if (!viewer || !Cesium) return Promise.resolve();
@@ -289,7 +289,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         viewer.camera.cancelFlight();
         flightCancelledRef.current = false;
 
-        console.log("[CesiumMap] flyToTerrainAndWait:", terrain.id, terrain.name);
+        const heading = cameraOptions?.heading ?? 0;
+        const pitchDeg = cameraOptions?.pitch ?? WINDOW_PITCH_DEG;
 
         return cameraAt(
           Cesium,
@@ -311,8 +312,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 duration: 7,
                 easingFunction: quarticEaseOut,
                 orientation: {
-                  heading: 0,
-                  pitch: Cesium.Math.toRadians(WINDOW_PITCH_DEG),
+                  heading: Cesium.Math.toRadians(heading),
+                  pitch: Cesium.Math.toRadians(pitchDeg),
                   roll: Cesium.Math.toRadians(CRUISE_ROLL_DEG),
                 },
                 complete: () => {

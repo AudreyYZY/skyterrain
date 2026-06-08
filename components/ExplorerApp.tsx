@@ -489,7 +489,7 @@ export default function ExplorerApp() {
         } as any);
       }
 
-      // 飞向目标
+      // 飞向目标 (使用 cameraGeometry 的 heading/pitch)
       if (feature.cameraGeometry) {
         const target = feature.cameraGeometry;
         await (mapRef.current?.flyToTerrainAndWait({
@@ -499,7 +499,10 @@ export default function ExplorerApp() {
           lon: target.target[0],
           elevation: 0,
           cameraHeight: target.range,
-        } as any) ?? Promise.resolve());
+        } as any, {
+          heading: target.heading,
+          pitch: target.pitch,
+        }) ?? Promise.resolve());
       }
 
       // 讲解
