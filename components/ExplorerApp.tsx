@@ -425,6 +425,12 @@ export default function ExplorerApp() {
         await (mapRef.current?.flyToTerrainAndWait(terrain) ?? Promise.resolve());
         console.log("[ExplorerApp] fly complete:", terrain.id);
 
+        // 检查是否被取消（用户在飞行中点击了停止）
+        if (narrationCancelledRef.current) {
+          console.log("[ExplorerApp] narration cancelled during flight");
+          return;
+        }
+
         // 2) 展示讲解并等待语音播放完毕
         console.log("[ExplorerApp] narration start:", terrain.id);
         await showTerrainLesson(terrain);
