@@ -1059,8 +1059,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                     hierarchy: new Cesium.PolygonHierarchy(positions),
                     material: Cesium.Color.TRANSPARENT,
                     outline: true,
-                    outlineColor: Cesium.Color.WHITE.withAlpha(0.12),
-                    outlineWidth: 1,
+                    outlineColor: Cesium.Color.RED,
+                    outlineWidth: 4,
                   },
                   properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
                 });
@@ -1076,8 +1076,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                       hierarchy: new Cesium.PolygonHierarchy(positions),
                       material: Cesium.Color.TRANSPARENT,
                       outline: true,
-                      outlineColor: Cesium.Color.WHITE.withAlpha(0.12),
-                      outlineWidth: 1,
+                      outlineColor: Cesium.Color.RED,
+                      outlineWidth: 4,
                     },
                     properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
                   });
