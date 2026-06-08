@@ -531,6 +531,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           // 暴露 viewer 和 Cesium 到 window 供调试
           (window as any).viewer = viewer;
           (window as any).Cesium = Cesium;
+          (window as any).__ALL_FEATURES = ALL_FEATURES;
 
           // Debug panel — 暴露到 window 供生产环境诊断
           const origTerrain = viewer.terrainProvider;
@@ -700,6 +701,17 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             debugHover(enable: boolean = true) {
               (window as any).__debugHover = enable;
               console.log(`[debug] Hover debug ${enable ? "enabled" : "disabled"}`);
+            },
+            /** 打印所有 Feature 的镜头目标 */
+            debugFlight() {
+              const features = (window as any).__ALL_FEATURES || [];
+              console.log("[debug] Feature camera targets:");
+              for (const f of features) {
+                if (f.feature?.cameraGeometry) {
+                  const cg = f.feature.cameraGeometry;
+                  console.log(`  ${f.id}: target=[${cg.target[0]}, ${cg.target[1]}] range=${cg.range} heading=${cg.heading} pitch=${cg.pitch}`);
+                }
+              }
             },
             /** 打印当前 zoomLevel 和可见标签 */
             debugLabels() {
