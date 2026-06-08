@@ -481,7 +481,6 @@ export default function ExplorerApp() {
           observation: feature.story.observation,
         };
         setLesson(lesson);
-        console.log("[handleSelectFeature] feature.elevation:", feature.elevation, "feature.name:", feature.name);
         setActiveTerrain({
           id: feature.id,
           name: feature.name,
@@ -830,7 +829,6 @@ export default function ExplorerApp() {
             {/* 地貌名称 + 海拔 */}
             <div className="mb-2">
               <h3 className="text-[15px] font-medium text-white/85">{activeTerrain.name}</h3>
-              {(() => { console.log("[TerrainPanel] elevation:", activeTerrain.elevation, "name:", activeTerrain.name); return null; })()}
               <p className="text-[10px] text-white/25 mt-0.5">
                 海拔 {activeTerrain.elevation.toLocaleString("zh-CN")}m
               </p>
