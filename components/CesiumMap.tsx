@@ -698,6 +698,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               (window as any).__debugHover = enable;
               console.log(`[debug] Hover debug ${enable ? "enabled" : "disabled"}`);
             },
+            /** 打印当前 zoomLevel 和可见标签 */
+            debugLabels() {
+              const camera = viewer.camera;
+              const cartographic = Cesium.Cartographic.fromCartesian(camera.position);
+              const altitude = cartographic.height;
+              const zoomLevel = Math.max(1, Math.min(20, Math.round(20 - Math.log2(altitude / 50))));
+              console.log("[debug] altitude:", Math.round(altitude / 1000), "km, zoomLevel:", zoomLevel);
+              // 这里需要访问 labelManager，但它在 ExplorerApp 中
+              // 先打印 zoomLevel，用户可以在 ExplorerApp 中验证
+            },
             /** 显示 identityGeometry (标签放置) */
             debugIdentity(target: string | boolean = true) {
               const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugIdentity);

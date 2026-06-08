@@ -230,6 +230,9 @@ export default function ExplorerApp() {
         ));
       }
     }
+
+    // 暴露 labelManager 到 window 供调试
+    (window as any).labelManager = labelManager;
   }, []);
 
   // 注册叙述队列的语音函数
