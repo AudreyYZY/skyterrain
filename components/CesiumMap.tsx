@@ -704,15 +704,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             },
             /** 打印所有 Feature 的镜头目标 */
             debugFlight() {
-              // 从 ALL_FEATURES 读取
-              const features = ALL_FEATURES;
               console.log("[debug] Feature camera targets:");
-              for (const f of features) {
-                const cg = (f.feature as any)?.cameraGeometry;
+              for (const f of ALL_FEATURES) {
+                const cg = f.cameraGeometry;
                 if (cg) {
-                  console.log(`  ${f.id}: target=[${cg.target[0]}, ${cg.target[1]}] range=${cg.range} heading=${cg.heading} pitch=${cg.pitch}`);
+                  console.log(`  ${f.id} (${f.name}): target=[${cg.target[0]}, ${cg.target[1]}] range=${cg.range} heading=${cg.heading} pitch=${cg.pitch}`);
                 } else {
-                  console.log(`  ${f.id}: no cameraGeometry (Xinjiang terrain)`);
+                  console.log(`  ${f.id} (${f.name}): no cameraGeometry`);
                 }
               }
             },
