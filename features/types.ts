@@ -184,6 +184,8 @@ export interface GeographicFeature {
   name: string;
   /** 要素类型 */
   featureType: FeatureType;
+  /** 海拔 (米) — 主峰/平均海拔 */
+  elevation: number;
   /** 成熟度等级 (决定渲染行为) */
   maturityLevel: MaturityLevel;
 

@@ -480,7 +480,7 @@ export default function ExplorerApp() {
           name: feature.name,
           lat: feature.cameraGeometry?.target[1] ?? 0,
           lon: feature.cameraGeometry?.target[0] ?? 0,
-          elevation: 0,
+          elevation: feature.elevation,
           category: feature.featureType as any,
           description: "",
           cards: { location: "", peak: "", feature: "" },

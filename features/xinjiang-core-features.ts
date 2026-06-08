@@ -19,6 +19,7 @@ const TIANSHAN: GeographicFeature = {
   id: "tianshan",
   name: "天山",
   featureType: "mountain_system",
+  elevation: 7443, // 托木尔峰，天山最高峰
   maturityLevel: 2,
 
   // 标识几何: 沿主脊线方向 (标签放置)
@@ -108,6 +109,7 @@ const KUNLUN: GeographicFeature = {
   id: "kunlun",
   name: "昆仑山",
   featureType: "mountain_system",
+  elevation: 7167, // 公格尔山，昆仑山最高峰
   maturityLevel: 2,
 
   identityGeometry: {
@@ -193,6 +195,7 @@ const ALTAI: GeographicFeature = {
   id: "altai",
   name: "阿尔泰山",
   featureType: "mountain_system",
+  elevation: 4374, // 友谊峰，阿尔泰山最高峰
   maturityLevel: 2,
 
   identityGeometry: {
@@ -272,6 +275,7 @@ const JUNGGAR_BASIN: GeographicFeature = {
   id: "junggar-basin",
   name: "准噶尔盆地",
   featureType: "basin",
+  elevation: 500, // 盆地底部平均海拔
   maturityLevel: 2,
 
   // 标识几何: 盆地范围 (标签放置)
@@ -352,6 +356,7 @@ const TARIM_BASIN: GeographicFeature = {
   id: "tarim-basin",
   name: "塔里木盆地",
   featureType: "basin",
+  elevation: 1100, // 盆地底部平均海拔
   maturityLevel: 2,
 
   identityGeometry: {
@@ -431,6 +436,7 @@ const TARIM_BASIN: GeographicFeature = {
 const PAMIR: GeographicFeature = {
   id: "pamir",
   name: "帕米尔高原",
+  elevation: 5500, // 平均海拔
   maturityLevel: 2,
   featureType: "plateau",
 
@@ -506,9 +512,10 @@ const PAMIR: GeographicFeature = {
 /** 塔克拉玛干沙漠 */
 const TAKLAMAKAN: GeographicFeature = {
   id: "taklamakan",
-  maturityLevel: 2,
   name: "塔克拉玛干沙漠",
   featureType: "desert",
+  elevation: 1200, // 沙漠平均海拔
+  maturityLevel: 2,
 
   identityGeometry: {
     type: "Polygon",
@@ -581,10 +588,11 @@ const TAKLAMAKAN: GeographicFeature = {
 
 /** 赛里木湖 */
 const SAYRAM: GeographicFeature = {
-  maturityLevel: 2,
   id: "sayram",
   name: "赛里木湖",
   featureType: "lake",
+  elevation: 2073, // 湖面海拔
+  maturityLevel: 2,
 
   identityGeometry: {
     type: "Polygon",

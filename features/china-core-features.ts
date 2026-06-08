@@ -15,6 +15,7 @@ const QINLING: GeographicFeature = {
   id: "qinling",
   name: "秦岭",
   featureType: "mountain_system",
+  elevation: 3771, // 太白山主峰，秦岭最高峰
   maturityLevel: 1,
   cameraGeometry: { target: [108.0, 33.5], heading: 0, pitch: -30, range: 300000 },
   storyGeometry: [
@@ -43,6 +44,7 @@ const QILIAN: GeographicFeature = {
   id: "qilian",
   name: "祁连山",
   featureType: "mountain_system",
+  elevation: 5827, // 团结峰，祁连山最高峰
   maturityLevel: 1,
   cameraGeometry: { target: [100.0, 38.0], heading: 0, pitch: -28, range: 250000 },
   storyGeometry: [
@@ -70,6 +72,7 @@ const TAIHANG: GeographicFeature = {
   id: "taihang",
   name: "太行山",
   featureType: "mountain_system",
+  elevation: 2996, // 小五台山东台，太行山最高峰
   maturityLevel: 1,
   cameraGeometry: { target: [113.5, 37.0], heading: 0, pitch: -30, range: 300000 },
   storyGeometry: [
@@ -97,6 +100,7 @@ const DAXINGANLING: GeographicFeature = {
   id: "daxinganling",
   name: "大兴安岭",
   featureType: "mountain_system",
+  elevation: 2035, // 大白山，大兴安岭最高峰
   maturityLevel: 1,
   cameraGeometry: { target: [122.0, 48.0], heading: 20, pitch: -28, range: 400000 },
   storyGeometry: [
@@ -124,6 +128,7 @@ const HENGDUAN: GeographicFeature = {
   id: "hengduan",
   name: "横断山脉",
   featureType: "mountain_system",
+  elevation: 7556, // 贡嘎山，横断山脉最高峰
   maturityLevel: 1,
   cameraGeometry: { target: [100.0, 30.0], heading: -10, pitch: -25, range: 350000 },
   storyGeometry: [
@@ -151,6 +156,7 @@ const HIMALAYA: GeographicFeature = {
   id: "himalaya",
   name: "喜马拉雅山",
   featureType: "mountain_system",
+  elevation: 8849, // 珠穆朗玛峰 8848.86m，四舍五入
   maturityLevel: 1,
   cameraGeometry: { target: [86.0, 29.0], heading: 0, pitch: -25, range: 500000 },
   storyGeometry: [
@@ -180,6 +186,7 @@ const QINGHAI_TIBET: GeographicFeature = {
   id: "qinghai-tibet",
   name: "青藏高原",
   featureType: "plateau",
+  elevation: 4500, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [90.0, 33.0], heading: 0, pitch: -30, range: 1500000 },
   storyGeometry: [
@@ -207,6 +214,7 @@ const LOESS: GeographicFeature = {
   id: "loess",
   name: "黄土高原",
   featureType: "plateau",
+  elevation: 1300, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [109.0, 36.0], heading: 0, pitch: -32, range: 600000 },
   storyGeometry: [
@@ -234,6 +242,7 @@ const INNER_MONGOLIA: GeographicFeature = {
   id: "inner-mongolia",
   name: "内蒙古高原",
   featureType: "plateau",
+  elevation: 1100, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [112.0, 42.0], heading: 0, pitch: -35, range: 1200000 },
   storyGeometry: [
@@ -261,6 +270,7 @@ const YUNNAN_GUIZHOU: GeographicFeature = {
   id: "yunnan-guizhou",
   name: "云贵高原",
   featureType: "plateau",
+  elevation: 1500, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [105.0, 25.0], heading: 0, pitch: -32, range: 800000 },
   storyGeometry: [
@@ -290,6 +300,7 @@ const SICHUAN: GeographicFeature = {
   id: "sichuan",
   name: "四川盆地",
   featureType: "basin",
+  elevation: 400, // 盆地底部平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [106.0, 30.5], heading: 0, pitch: -35, range: 500000 },
   storyGeometry: [
@@ -317,6 +328,7 @@ const QAIDAM: GeographicFeature = {
   id: "qaidam",
   name: "柴达木盆地",
   featureType: "basin",
+  elevation: 2800, // 盆地底部平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [94.0, 37.0], heading: 0, pitch: -35, range: 400000 },
   storyGeometry: [
@@ -346,6 +358,7 @@ const NORTHEAST: GeographicFeature = {
   id: "northeast",
   name: "东北平原",
   featureType: "basin",
+  elevation: 150, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [125.0, 46.0], heading: 0, pitch: -35, range: 1000000 },
   storyGeometry: [
@@ -373,6 +386,7 @@ const NORTH_CHINA: GeographicFeature = {
   id: "north-china",
   name: "华北平原",
   featureType: "basin",
+  elevation: 50, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [116.0, 37.0], heading: 0, pitch: -35, range: 800000 },
   storyGeometry: [
@@ -400,6 +414,7 @@ const YANGTZE: GeographicFeature = {
   id: "yangtze",
   name: "长江中下游平原",
   featureType: "basin",
+  elevation: 50, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [115.0, 29.5], heading: 0, pitch: -35, range: 800000 },
   storyGeometry: [
