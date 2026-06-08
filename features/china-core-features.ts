@@ -17,7 +17,7 @@ const QINLING: GeographicFeature = {
   featureType: "mountain_system",
   elevation: 3771, // 太白山主峰，秦岭最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [108.0, 33.5], heading: 0, pitch: -30, range: 300000 },
+  cameraGeometry: { target: [108.0, 33.5], heading: 0, pitch: -30, range: 60000 },
   storyGeometry: [
     { id: "qinling-1", name: "太白山", position: [107.8, 34.0], text: "太白山是秦岭最高峰，海拔3771.2米。" },
     { id: "qinling-2", name: "华山", position: [110.1, 34.5], text: "华山以险峻著称，是中国五岳之一。" },
