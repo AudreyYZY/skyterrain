@@ -415,7 +415,7 @@ export default function ExplorerApp() {
     [showTerrainLesson]
   );
 
-  /** 处理全国 Feature 选择 (点击侧边栏或地图标签) */
+  /** 处理全国 Feature 选择 (点击侧边栏或地图标签) — 仅飞行，无讲解 */
   const handleSelectFeature = useCallback(
     async (feature: import("@/features/types").GeographicFeature): Promise<void> => {
       // 取消正在进行的航线和叙述
@@ -428,9 +428,7 @@ export default function ExplorerApp() {
       activeRouteRef.current = null;
       setIsFlyover(false);
       setError(null);
-
-      // 重置取消标志
-      narrationCancelledRef.current = false;
+      stopHighlight();
 
       // 更新标注层
       labelManager.removeLayer("explore-labels");
@@ -443,61 +441,20 @@ export default function ExplorerApp() {
       }
       labelManager.setFocusedTerrain(feature.id);
 
-      // 如果有 lesson 数据，设置为当前 lesson
-      if (feature.story) {
-        const lesson: TerrainLesson = {
-          seeing: feature.story.seeing,
-          formation: feature.story.formation,
-          history: feature.story.history,
-          observation: feature.story.observation,
-        };
-        setLesson(lesson);
-        setActiveTerrain({
+      // 飞向目标
+      if (feature.cameraGeometry) {
+        const target = feature.cameraGeometry;
+        mapRef.current?.flyToTerrain({
           id: feature.id,
           name: feature.name,
-          lat: feature.cameraGeometry?.target[1] ?? 0,
-          lon: feature.cameraGeometry?.target[0] ?? 0,
+          lat: target.target[1],
+          lon: target.target[0],
           elevation: 0,
-          category: feature.featureType as any,
-          description: "",
-          cards: { location: "", peak: "", feature: "" },
-          lesson,
-          knowledge: { terrainFeatures: [], climateFeatures: [], historicalTopics: [], cultureTopics: [], interestingFacts: [], sources: [] },
+          cameraHeight: target.range,
         } as any);
       }
-
-      try {
-        // 飞向目标
-        if (feature.cameraGeometry) {
-          const target = feature.cameraGeometry;
-          // 使用 flyTo 直接飞行
-          mapRef.current?.flyToTerrain({
-            id: feature.id,
-            name: feature.name,
-            lat: target.target[1],
-            lon: target.target[0],
-            elevation: 0,
-            cameraHeight: target.range,
-          } as any);
-          // 等待飞行动画
-          await new Promise(r => setTimeout(r, 7000));
-        }
-
-        // 讲解
-        if (feature.story) {
-          await speakLessonWithHighlight({
-            seeing: feature.story.seeing,
-            formation: feature.story.formation,
-            history: feature.story.history,
-            observation: feature.story.observation,
-          });
-        }
-      } catch (err) {
-        console.error("[ExplorerApp] handleSelectFeature error:", err);
-        setError(err instanceof Error ? err.message : "地形选择失败");
-      }
     },
-    [speakLessonWithHighlight]
+    [stopHighlight]
   );
 
   const handleStartRoute = useCallback(
@@ -703,11 +660,7 @@ export default function ExplorerApp() {
                       </button>
 
                       <p className="text-[12px] font-medium text-white/60 mb-3">
-                        {terrainGroups.find(g => g.category === sidebarCategory)?.label ??
-                         (sidebarCategory === "china-mountain" ? "山脉" :
-                          sidebarCategory === "china-plateau" ? "高原" :
-                          sidebarCategory === "china-basin" ? "盆地" :
-                          sidebarCategory === "china-plain" ? "平原" : "")}
+                        {terrainGroups.find(g => g.category === sidebarCategory)?.label}
                       </p>
 
                       <div className="space-y-1">
@@ -727,23 +680,6 @@ export default function ExplorerApp() {
                             <p className="text-[10px] text-white/20 mt-0.5">
                               {t.elevation.toLocaleString("zh-CN")}m
                             </p>
-                          </button>
-                        ))}
-                        {/* 全国地貌 */}
-                        {CHINA_CORE_FEATURES.filter(f => {
-                          if (sidebarCategory === "china-mountain") return f.featureType === "mountain_system";
-                          if (sidebarCategory === "china-plateau") return f.featureType === "plateau";
-                          if (sidebarCategory === "china-basin") return f.featureType === "basin" && !["northeast", "north-china", "yangtze"].includes(f.id);
-                          if (sidebarCategory === "china-plain") return ["northeast", "north-china", "yangtze"].includes(f.id);
-                          return false;
-                        }).map((f) => (
-                          <button
-                            key={f.id}
-                            type="button"
-                            onClick={() => handleSelectFeature(f)}
-                            className="w-full text-left px-3 py-2 rounded-lg transition-all text-white/40 hover:text-white/65 hover:bg-white/[0.03]"
-                          >
-                            <p className="text-[12px]">{f.name}</p>
                           </button>
                         ))}
                       </div>
@@ -769,55 +705,6 @@ export default function ExplorerApp() {
                             </div>
                           </button>
                         ))}
-                      </div>
-
-                      <div className="my-3 h-px bg-white/[0.06]" />
-                      <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-2">全国地貌</p>
-                      <div className="space-y-1">
-                        {/* 山脉 */}
-                        <button
-                          type="button"
-                          onClick={() => setSidebarCategory("china-mountain")}
-                          className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-[12px] text-white/50">山脉</span>
-                            <span className="text-[10px] text-white/20">6</span>
-                          </div>
-                        </button>
-                        {/* 高原 */}
-                        <button
-                          type="button"
-                          onClick={() => setSidebarCategory("china-plateau")}
-                          className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-[12px] text-white/50">高原</span>
-                            <span className="text-[10px] text-white/20">4</span>
-                          </div>
-                        </button>
-                        {/* 盆地 */}
-                        <button
-                          type="button"
-                          onClick={() => setSidebarCategory("china-basin")}
-                          className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-[12px] text-white/50">盆地</span>
-                            <span className="text-[10px] text-white/20">2</span>
-                          </div>
-                        </button>
-                        {/* 平原 */}
-                        <button
-                          type="button"
-                          onClick={() => setSidebarCategory("china-plain")}
-                          className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-[12px] text-white/50">平原</span>
-                            <span className="text-[10px] text-white/20">3</span>
-                          </div>
-                        </button>
                       </div>
 
                       <div className="my-3 h-px bg-white/[0.06]" />
