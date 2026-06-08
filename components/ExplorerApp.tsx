@@ -466,7 +466,7 @@ export default function ExplorerApp() {
       }
       labelManager.setFocusedTerrain(feature.id);
 
-      // 如果有 lesson 数据，设置为当前 lesson
+      // 设置当前 Feature 状态 — 驱动右侧面板更新
       if (feature.story) {
         const lesson: TerrainLesson = {
           seeing: feature.story.seeing,
@@ -475,6 +475,18 @@ export default function ExplorerApp() {
           observation: feature.story.observation,
         };
         setLesson(lesson);
+        setActiveTerrain({
+          id: feature.id,
+          name: feature.name,
+          lat: feature.cameraGeometry?.target[1] ?? 0,
+          lon: feature.cameraGeometry?.target[0] ?? 0,
+          elevation: 0,
+          category: feature.featureType as any,
+          description: "",
+          cards: { location: "", peak: "", feature: "" },
+          lesson,
+          knowledge: { terrainFeatures: [], climateFeatures: [], historicalTopics: [], cultureTopics: [], interestingFacts: [], sources: [] },
+        } as any);
       }
 
       // 飞向目标
