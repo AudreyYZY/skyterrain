@@ -1058,13 +1058,12 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 const positions = ring.map(([lon, lat]: [number, number]) =>
                   Cesium.Cartesian3.fromDegrees(lon, lat)
                 );
-                // 闭合 polyline
                 positions.push(positions[0]);
                 viewer.entities.add({
                   polyline: {
                     positions,
-                    width: 4,
-                    material: Cesium.Color.RED,
+                    width: 1,
+                    material: Cesium.Color.WHITE.withAlpha(0.12),
                     clampToGround: true,
                   },
                   properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
@@ -1080,8 +1079,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                   viewer.entities.add({
                     polyline: {
                       positions,
-                      width: 4,
-                      material: Cesium.Color.RED,
+                      width: 1,
+                      material: Cesium.Color.WHITE.withAlpha(0.12),
                       clampToGround: true,
                     },
                     properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
