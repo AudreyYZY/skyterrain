@@ -703,6 +703,24 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               (window as any).__debugHover = enable;
               console.log(`[debug] Hover debug ${enable ? "enabled" : "disabled"}`);
             },
+            /** 打印当前相机状态 */
+            debugCamera() {
+              const camera = viewer.camera;
+              const carto = Cesium.Cartographic.fromCartesian(camera.position);
+              const lon = Cesium.Math.toDegrees(carto.longitude);
+              const lat = Cesium.Math.toDegrees(carto.latitude);
+              const height = carto.height;
+              const heading = Cesium.Math.toDegrees(camera.heading);
+              const pitch = Cesium.Math.toDegrees(camera.pitch);
+              const roll = Cesium.Math.toDegrees(camera.roll);
+              console.log("[debug] Camera state:");
+              console.log(`  position: [${lon.toFixed(4)}, ${lat.toFixed(4)}]`);
+              console.log(`  height: ${Math.round(height)}m (${(height / 1000).toFixed(1)}km)`);
+              console.log(`  heading: ${heading.toFixed(1)}°`);
+              console.log(`  pitch: ${pitch.toFixed(1)}°`);
+              console.log(`  roll: ${roll.toFixed(1)}°`);
+              console.log(`  ground: ${Math.round(height - (viewer.scene.globe.getHeight(carto) ?? 0))}m above ground`);
+            },
             /** 打印所有 Feature 的镜头目标 */
             debugFlight() {
               console.log("[debug] Feature camera targets:");
