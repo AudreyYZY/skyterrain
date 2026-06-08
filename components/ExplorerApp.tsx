@@ -440,7 +440,7 @@ export default function ExplorerApp() {
     [showTerrainLesson]
   );
 
-  /** 处理全国 Feature 选择 (点击侧边栏或地图标签) — 仅飞行，无讲解 */
+  /** 处理全国 Feature 选择 (点击侧边栏或地图标签) — 飞行 + 讲解 */
   const handleSelectFeature = useCallback(
     async (feature: import("@/features/types").GeographicFeature): Promise<void> => {
       // 取消正在进行的航线和叙述
@@ -466,20 +466,41 @@ export default function ExplorerApp() {
       }
       labelManager.setFocusedTerrain(feature.id);
 
+      // 如果有 lesson 数据，设置为当前 lesson
+      if (feature.story) {
+        const lesson: TerrainLesson = {
+          seeing: feature.story.seeing,
+          formation: feature.story.formation,
+          history: feature.story.history,
+          observation: feature.story.observation,
+        };
+        setLesson(lesson);
+      }
+
       // 飞向目标
       if (feature.cameraGeometry) {
         const target = feature.cameraGeometry;
-        mapRef.current?.flyToTerrain({
+        await (mapRef.current?.flyToTerrainAndWait({
           id: feature.id,
           name: feature.name,
           lat: target.target[1],
           lon: target.target[0],
           elevation: 0,
           cameraHeight: target.range,
-        } as any);
+        } as any) ?? Promise.resolve());
+      }
+
+      // 讲解
+      if (feature.story) {
+        await speakLessonWithHighlight({
+          seeing: feature.story.seeing,
+          formation: feature.story.formation,
+          history: feature.story.history,
+          observation: feature.story.observation,
+        });
       }
     },
-    [stopHighlight]
+    [stopHighlight, speakLessonWithHighlight]
   );
 
   const handleStartRoute = useCallback(
