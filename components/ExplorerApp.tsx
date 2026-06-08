@@ -32,12 +32,49 @@ const terrainGroups = getTerrainsByCategory();
 const allTerrains = getAllTerrains();
 const routes = getAllRoutes();
 
+/** Sidebar 统一分类类型 */
+type SidebarCategory = "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "plain" | "landscape";
+
+/**
+ * 将原始 category/featureType 统一映射为 Sidebar 分类
+ * 不修改原始数据，只用于 Sidebar 分组
+ */
+function normalizeType(raw: string, name?: string): SidebarCategory | null {
+  // 名称包含"平原" → 强制映射为 plain
+  if (name && name.includes("平原")) return "plain";
+
+  switch (raw) {
+    case "mountain_range":
+    case "mountain_system":
+    case "peak":
+      return "mountain";
+    case "plateau":
+      return "plateau";
+    case "basin":
+      return "basin";
+    case "lake":
+      return "lake";
+    case "desert":
+      return "desert";
+    case "river":
+    case "valley":
+      return "river";
+    case "scenic":
+    case "oasis":
+    case "city":
+    case "silk_road":
+      return "landscape";
+    default:
+      return null;
+  }
+}
+
 /** 统一 Feature Registry — 新疆 + 全国 */
 const ALL_FEATURES = [
   ...allTerrains.map(t => ({
     id: t.id,
     name: t.name,
-    type: t.category as string,
+    type: normalizeType(t.category, t.name),
     source: "xinjiang" as const,
     terrain: t,
     feature: null as GeographicFeature | null,
@@ -45,23 +82,26 @@ const ALL_FEATURES = [
   ...CHINA_CORE_FEATURES.map(f => ({
     id: f.id,
     name: f.name,
-    type: f.featureType,
+    type: normalizeType(f.featureType, f.name),
     source: "china" as const,
     terrain: null as TerrainPoint | null,
     feature: f,
   })),
-];
+].filter(f => f.type !== null);
 
-/** 按 featureType 分组 */
-const FEATURE_GROUPS = [
-  { type: "mountain_system", label: "山脉" },
+/** Sidebar 分类定义 */
+const SIDEBAR_CATEGORIES: { type: SidebarCategory; label: string }[] = [
+  { type: "mountain", label: "山脉" },
   { type: "lake", label: "湖泊" },
   { type: "desert", label: "沙漠" },
   { type: "basin", label: "盆地" },
   { type: "river", label: "河谷" },
   { type: "plateau", label: "高原" },
-  { type: "scenic", label: "景观" },
-].map(g => ({
+  { type: "plain", label: "平原" },
+  { type: "landscape", label: "景观" },
+];
+
+const FEATURE_GROUPS = SIDEBAR_CATEGORIES.map(g => ({
   ...g,
   features: ALL_FEATURES.filter(f => f.type === g.type),
 })).filter(g => g.features.length > 0);
