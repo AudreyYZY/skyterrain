@@ -528,6 +528,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           viewerRef.current = viewer;
           cesiumRef.current = Cesium;
 
+          // 暴露 viewer 和 Cesium 到 window 供调试
+          (window as any).viewer = viewer;
+          (window as any).Cesium = Cesium;
+
           // Debug panel — 暴露到 window 供生产环境诊断
           const origTerrain = viewer.terrainProvider;
           const ellipsoidTerrain = new Cesium.EllipsoidTerrainProvider();
@@ -1054,13 +1058,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 const positions = ring.map(([lon, lat]: [number, number]) =>
                   Cesium.Cartesian3.fromDegrees(lon, lat)
                 );
+                // 闭合 polyline
+                positions.push(positions[0]);
                 viewer.entities.add({
-                  polygon: {
-                    hierarchy: new Cesium.PolygonHierarchy(positions),
-                    material: Cesium.Color.TRANSPARENT,
-                    outline: true,
-                    outlineColor: Cesium.Color.RED,
-                    outlineWidth: 4,
+                  polyline: {
+                    positions,
+                    width: 4,
+                    material: Cesium.Color.RED,
+                    clampToGround: true,
                   },
                   properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
                 });
@@ -1071,13 +1076,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                   const positions = ring.map(([lon, lat]: [number, number]) =>
                     Cesium.Cartesian3.fromDegrees(lon, lat)
                   );
+                  positions.push(positions[0]);
                   viewer.entities.add({
-                    polygon: {
-                      hierarchy: new Cesium.PolygonHierarchy(positions),
-                      material: Cesium.Color.TRANSPARENT,
-                      outline: true,
-                      outlineColor: Cesium.Color.RED,
-                      outlineWidth: 4,
+                    polyline: {
+                      positions,
+                      width: 4,
+                      material: Cesium.Color.RED,
+                      clampToGround: true,
                     },
                     properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
                   });
