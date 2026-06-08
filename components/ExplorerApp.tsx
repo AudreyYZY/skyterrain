@@ -13,6 +13,7 @@ import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
+import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
@@ -30,6 +31,40 @@ import { useSentenceHighlight } from "@/components/useSentenceHighlight";
 const terrainGroups = getTerrainsByCategory();
 const allTerrains = getAllTerrains();
 const routes = getAllRoutes();
+
+/** 统一 Feature Registry — 新疆 + 全国 */
+const ALL_FEATURES = [
+  ...allTerrains.map(t => ({
+    id: t.id,
+    name: t.name,
+    type: t.category as string,
+    source: "xinjiang" as const,
+    terrain: t,
+    feature: null as GeographicFeature | null,
+  })),
+  ...CHINA_CORE_FEATURES.map(f => ({
+    id: f.id,
+    name: f.name,
+    type: f.featureType,
+    source: "china" as const,
+    terrain: null as TerrainPoint | null,
+    feature: f,
+  })),
+];
+
+/** 按 featureType 分组 */
+const FEATURE_GROUPS = [
+  { type: "mountain_system", label: "山脉" },
+  { type: "lake", label: "湖泊" },
+  { type: "desert", label: "沙漠" },
+  { type: "basin", label: "盆地" },
+  { type: "river", label: "河谷" },
+  { type: "plateau", label: "高原" },
+  { type: "scenic", label: "景观" },
+].map(g => ({
+  ...g,
+  features: ALL_FEATURES.filter(f => f.type === g.type),
+})).filter(g => g.features.length > 0);
 
 type AppMode = "explore" | "photo";
 
@@ -648,7 +683,7 @@ export default function ExplorerApp() {
                 /* Expanded: explorer mode */
                 <div className="px-3 py-2">
                   {sidebarCategory ? (
-                    /* Category selected — show terrains */
+                    /* Category selected — show features from unified registry */
                     <div>
                       <button
                         type="button"
@@ -660,48 +695,50 @@ export default function ExplorerApp() {
                       </button>
 
                       <p className="text-[12px] font-medium text-white/60 mb-3">
-                        {terrainGroups.find(g => g.category === sidebarCategory)?.label}
+                        {FEATURE_GROUPS.find(g => g.type === sidebarCategory)?.label}
                       </p>
 
                       <div className="space-y-1">
-                        {/* 新疆地形 */}
-                        {terrainGroups.find(g => g.category === sidebarCategory)?.terrains.map((t) => (
+                        {FEATURE_GROUPS.find(g => g.type === sidebarCategory)?.features.map((f) => (
                           <button
-                            key={t.id}
+                            key={f.id}
                             type="button"
-                            onClick={() => handleSelectTerrain(t)}
+                            onClick={() => {
+                              if (f.source === "xinjiang" && f.terrain) {
+                                handleSelectTerrain(f.terrain);
+                              } else if (f.source === "china" && f.feature) {
+                                handleSelectFeature(f.feature);
+                              }
+                            }}
                             className={`w-full text-left px-3 py-2 rounded-lg transition-all ${
-                              activeTerrain?.id === t.id
+                              activeTerrain?.id === f.id
                                 ? "text-white/80 bg-white/[0.06]"
                                 : "text-white/40 hover:text-white/65 hover:bg-white/[0.03]"
                             }`}
                           >
-                            <p className="text-[12px]">{t.name}</p>
-                            <p className="text-[10px] text-white/20 mt-0.5">
-                              {t.elevation.toLocaleString("zh-CN")}m
-                            </p>
+                            <p className="text-[12px]">{f.name}</p>
                           </button>
                         ))}
                       </div>
                     </div>
                   ) : (
-                    /* Category list */
+                    /* Category list — unified registry */
                     <div>
                       <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-3">
                         地貌探索
                       </p>
 
                       <div className="space-y-1">
-                        {terrainGroups.map((group) => (
+                        {FEATURE_GROUPS.map((group) => (
                           <button
-                            key={group.category}
+                            key={group.type}
                             type="button"
-                            onClick={() => setSidebarCategory(group.category)}
+                            onClick={() => setSidebarCategory(group.type)}
                             className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
                           >
                             <div className="flex items-center justify-between">
                               <span className="text-[12px] text-white/50">{group.label}</span>
-                              <span className="text-[10px] text-white/20">{group.terrains.length}</span>
+                              <span className="text-[10px] text-white/20">{group.features.length}</span>
                             </div>
                           </button>
                         ))}
