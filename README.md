@@ -1,82 +1,112 @@
 # Flight Geography Explorer
 
-飞机视角地理探索平台 MVP — 通过 CesiumJS 三维地球、飞行镜头与 MiMo AI 解说，以乘客舷窗视角了解中国西北地貌。
+飞机视角中国地貌探索系统 — 以乘客舷窗视角，结合三维地球、飞行镜头与语音讲解，探索中国壮丽地形。
 
 ## 功能
 
-- 三维地球浏览（新疆区域初始视角）
-- **五类折叠导航**：山脉 / 湖泊 / 沙漠 / 盆地 / 河谷（13 处新疆地貌）
-- **沿航线飞行**：乌鲁木齐 → 天山 → 赛里木湖 → 伊犁河谷，经过即自动解说
-- **舷窗照片模式**：上传窗外照片，AI 推测地貌与特征
-- `viewer.camera.flyTo` 平滑镜头动画
-- 基于 `data/*.json` 知识库的 AI 解说（`/api/narration`）
-- 浏览器 TTS 语音播报
-- Apple Maps × National Geographic 风格 UI
+- **三维地球浏览**：CesiumJS 全球地形 + Bing Maps 卫星影像
+- **地貌探索**：32 处新疆地形 + 15 处全国核心地貌
+- **飞行镜头**：自动飞向目标地貌，模拟飞机舷窗视角
+- **语音讲解**：Edge TTS 中英文播报，逐句高亮
+- **地貌标签**：Google Earth 风格，沿山脊方向，LOD 分级
+- **地貌边界**：Natural Earth GIS 数据，真实地理边界
+- **航线飞行**：自动航线讲解，途经地形自动播报
+- **中英双语**：一键切换中文/英文，语音同步切换
 
 ## 技术栈
 
 - Next.js 16 (App Router) + TypeScript
-- CesiumJS
+- CesiumJS 1.141 (3D 地球)
 - Tailwind CSS v4
-- OpenAI SDK（兼容 MiMo API）
+- Edge TTS (edge-tts-universal)
 
 ## 快速开始
 
 ```bash
-cd flight-geography-explorer
-cp .env.example .env.local
-# 编辑 .env.local，填入 MIMO_API_KEY 与 MIMO_BASE_URL
-
 npm install
+cp .env.example .env.local
+# 编辑 .env.local，填入 Cesium Ion Token
+
 npm run dev
 ```
 
-浏览器打开 [http://localhost:3000](http://localhost:3000)。
+浏览器打开 http://localhost:3000
 
 ### 环境变量
 
 | 变量 | 必填 | 说明 |
 |------|------|------|
-| `MIMO_API_KEY` | 是 | MiMo / OpenAI 兼容 API Key |
-| `MIMO_BASE_URL` | 是 | API Base URL |
-| `MIMO_MODEL` | 否 | 模型名称，默认 `gpt-4o-mini` |
-| `NEXT_PUBLIC_CESIUM_ION_TOKEN` | 强烈建议 | [Cesium Ion](https://ion.cesium.com/tokens) 免费 Token；未配置时地图为**平坦椭球体**，天山等山地无法呈现起伏 |
+| `NEXT_PUBLIC_CESIUM_ION_TOKEN` | 是 | Cesium Ion Token |
 
 ## 项目结构
 
-```text
-flight-geography-explorer/
-├── app/
-│   ├── page.tsx
-│   ├── layout.tsx
-│   ├── globals.css
-│   └── api/narration/route.ts
-├── components/
-│   ├── CesiumMap.tsx
-│   ├── ExplorerApp.tsx
-│   ├── FlightControls.tsx
-│   └── NarrationPanel.tsx
-├── data/                   # 15 个新疆地貌 JSON（每点一文件）
-│   ├── tianshan.json
-│   ├── altai.json
-│   └── …
-├── lib/
-│   ├── mimo.ts
-│   └── terrain.ts
-├── types/
-│   └── terrain.ts
-├── scripts/
-│   └── copy-cesium.mjs
-└── public/cesium/          # postinstall 自动生成
+```
+app/
+  api/tts/route.ts          — Edge TTS API
+  globals.css               — 样式
+  page.tsx                  — 入口
+
+components/
+  CesiumMap.tsx             — 3D 地球 + 飞行系统
+  CesiumOverlayLabels.tsx   — 地貌标签
+  ExplorerApp.tsx           — 主编排器
+  FlightControls.tsx        — 侧边栏
+  NarrationPanel.tsx        — 信息面板
+  StructuredLesson.tsx      — 讲解内容
+
+features/
+  china-core-features.ts    — 全国 15 个核心地貌
+  xinjiang-core-features.ts — 新疆 8 个核心地貌
+  types.ts                  — GeographicFeature 类型
+
+terrain-dataset/
+  schema/                   — 数据模型 Schema
+
+lib/
+  i18n.ts                   — 国际化 (中/英)
+  i18n-stories.ts           — 地形故事翻译
+  speech.ts                 — TTS 系统
+  terrain.ts                — 地形注册表
+  cinematic-labels.ts       — 标签管理器
+
+data/
+  *.json                    — 新疆地形数据 (32 处)
+  gis/exports/              — GIS 边界数据
 ```
 
-## 部署（Vercel）
+## 数据模型
 
-1. 推送至 GitHub
-2. 在 Vercel 导入项目
-3. 配置环境变量 `MIMO_API_KEY`、`MIMO_BASE_URL`
-4. 可选：`NEXT_PUBLIC_CESIUM_ION_TOKEN`
+```
+TerrainEntity      — 地理对象 (事实层)
+GeometryRecord     — GIS 几何层
+FeatureOfInterest  — 用户探索对象
+Story              — 纪录片内容
+KnowledgeLink      — 知识图谱
+ProvenanceRecord   — 数据来源追溯
+```
 
-## 许可证
+## 架构决策
 
-MIT
+详见 `docs/architecture-decisions/`
+
+- ADR-001: Region First, Label Second
+- ADR-002: Geographic Feature Model
+- ADR-003: Real GIS Geometry Only
+- ADR-004: Terrain Identity Layer
+- ADR-005: GIS Source of Truth
+- ADR-006: Separate Geometry Sources
+- ADR-007: Trust Before Beauty
+
+## 数据来源
+
+| 数据 | 来源 |
+|------|------|
+| 地形边界 | Natural Earth 10m Physical Vectors |
+| 湖泊边界 | HydroLAKES |
+| 地名 | GeoNames |
+| 卫星影像 | Bing Maps (Cesium Ion) |
+| 地形高程 | Cesium World Terrain |
+
+## 许可
+
+MIT License
