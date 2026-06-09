@@ -17,7 +17,8 @@ import { TERRAIN_THEME, getFontSize, LABEL_TEXT_STYLE, type Importance } from "@
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
-import { t, type Language } from "@/lib/i18n";
+import { t, getTerrainName, type Language } from "@/lib/i18n";
+import { getTerrainStory } from "@/lib/i18n-stories";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
   getAllRoutes,
@@ -233,12 +234,12 @@ export default function ExplorerApp() {
       stopAudio();
       setIsSpeaking(true);
       try {
-        await speakAndWait(text, SPEECH_RATE, onPlaying);
+        await speakAndWait(text, SPEECH_RATE, onPlaying, language);
       } finally {
         setIsSpeaking(false);
       }
     },
-    [stopAudio]
+    [stopAudio, language]
   );
 
   useEffect(() => {
@@ -487,12 +488,15 @@ export default function ExplorerApp() {
       labelManager.setFocusedTerrain(feature.id);
 
       // 设置当前 Feature 状态 — 驱动右侧面板更新
-      if (feature.story) {
+      // 优先使用翻译后的故事内容
+      const translatedStory = getTerrainStory(feature.name, language);
+      const storySource = translatedStory ?? feature.story;
+      if (storySource) {
         const lesson: TerrainLesson = {
-          seeing: feature.story.seeing,
-          formation: feature.story.formation,
-          history: feature.story.history,
-          observation: feature.story.observation,
+          seeing: storySource.seeing,
+          formation: storySource.formation,
+          history: storySource.history,
+          observation: storySource.observation,
         };
         setLesson(lesson);
         setActiveTerrain({
@@ -771,7 +775,7 @@ export default function ExplorerApp() {
                                 : "text-white/40 hover:text-white/65 hover:bg-white/[0.03]"
                             }`}
                           >
-                            <p className="text-[12px]">{f.name}</p>
+                            <p className="text-[12px]">{getTerrainName(f.name, language)}</p>
                           </button>
                         ))}
                       </div>
@@ -852,7 +856,7 @@ export default function ExplorerApp() {
           <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
             {/* 地貌名称 + 海拔 */}
             <div className="mb-2">
-              <h3 className="text-[15px] font-medium text-white/85">{activeTerrain.name}</h3>
+              <h3 className="text-[15px] font-medium text-white/85">{getTerrainName(activeTerrain.name, language)}</h3>
               <p className="text-[10px] text-white/25 mt-0.5">
                 {t("card.elevation", language)} {activeTerrain.elevation.toLocaleString(language === "zh-CN" ? "zh-CN" : "en-US")}{t("card.meters", language)}
               </p>
@@ -893,9 +897,9 @@ export default function ExplorerApp() {
             {/* Drawer header */}
             <div className="flex items-center justify-between px-5 py-3 border-b border-white/[0.04]">
               <div>
-                <h3 className="text-[15px] font-medium text-white/85">{activeTerrain.name}</h3>
+                <h3 className="text-[15px] font-medium text-white/85">{getTerrainName(activeTerrain.name, language)}</h3>
                 <p className="text-[10px] text-white/25">
-                  海拔 {activeTerrain.elevation.toLocaleString("zh-CN")}m
+                  {t("card.elevation", language)} {activeTerrain.elevation.toLocaleString(language === "zh-CN" ? "zh-CN" : "en-US")}{t("card.meters", language)}
                 </p>
               </div>
               <button
