@@ -64,9 +64,9 @@ features/
 
 ## 当前阶段
 
-**Terrain Geometry Validation**
+**Phase B — FOI Validation**
 
-目标: 验证 5 个样本地形的 Geometry 数据来源和可用性。
+目标: 针对 5 个样本地形，建立 3~5 个 FeatureOfInterest，验证 FOI → Camera → Cesium 是否正确。
 
 样本地形:
 - 秦岭 (mountain_system)
@@ -75,7 +75,21 @@ features/
 - 柴达木盆地 (basin)
 - 云贵高原 (plateau)
 
-已确认数据源: Natural Earth `ne_10m_geography_regions_polys` (v5.0.0)
+Geometry 验证已完成: Natural Earth `ne_10m_geography_regions_polys` (5/5 地形 Polygon 存在)
+
+## Camera 推导链路
+
+```
+Terrain → Geometry → FOI → Auto Camera
+```
+
+不是:
+
+```
+Terrain → Geometry → Camera
+```
+
+原因: 秦岭长约 900km，Polygon 中心不代表最佳观察位置。需要 FOI 定义观察兴趣点，Camera 从 FOI + Geometry 共同推导。
 
 ## 禁止事项
 
@@ -85,8 +99,7 @@ features/
 - 手工 `target` 坐标
 - 手工 `heading` / `pitch` / `range`
 - 逐个修补秦岭、大兴安岭等 Camera 参数
-
-Camera 必须从 Geometry 自动推导。
+- 继续研究 GMBA / HydroBASINS 数据源（已验证完成）
 
 ## 开发规范
 

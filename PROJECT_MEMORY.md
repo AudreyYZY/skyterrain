@@ -107,39 +107,55 @@ features/
 
 ### 解决方案
 
-**Geometry 驱动 Camera**
+**Geometry + FOI 驱动 Camera**
 
 ```
-Geometry → bbox → center + span → auto Camera
+Terrain → Geometry → FOI → Auto Camera
 ```
 
-不再维护 `cameraGeometry`，Camera 从 Geometry 自动计算。
+不是简单的 `Geometry → bbox → center`。
 
-## Geometry Validation 阶段
+原因: 秦岭长约 900km，Polygon 中心不代表最佳观察位置。需要 FOI 定义观察兴趣点，Camera 从 FOI + Geometry 共同推导。
 
-### 目标
+不再维护 `cameraGeometry`。
 
-验证 5 个样本地形的 Geometry 数据来源。
+## Geometry Validation 阶段（已完成）
 
-### 样本地形
-
-| 地形 | 类型 | Natural Earth | GMBA | HydroSHEDS | GeoNames |
-|------|------|--------------|------|------------|----------|
-| 秦岭 | mountain_system | ✅ Polygon 88pts | 待验证 | ❌ | ⚠️ Point only |
-| 祁连山 | mountain_system | ✅ Polygon 71pts | 待验证 | ❌ | ⚠️ Point only |
-| 四川盆地 | basin | ✅ Polygon 62pts | ❌ | ⚠️ 需合并 | ⚠️ Point only |
-| 柴达木盆地 | basin | ✅ Polygon 51pts | ❌ | ✅ 封闭流域 | ⚠️ Point only |
-| 云贵高原 | plateau | ✅ Polygon 65pts | ❌ | ❌ | ❌ |
-
-### 已确认
+### 结果
 
 Natural Earth `ne_10m_geography_regions_polys` v5.0.0 包含全部 5 个地形的 Polygon。
 
-### 待完成
+| 地形 | 类型 | Points | BBox |
+|------|------|--------|------|
+| 秦岭 | mountain_system | 88 | [105°, 32°] → [114°, 35°] |
+| 祁连山 | mountain_system | 71 | [94°, 36°] → [103°, 40°] |
+| 四川盆地 | basin | 62 | [103°, 29°] → [108°, 32°] |
+| 柴达木盆地 | basin | 51 | [92°, 36°] → [98°, 38°] |
+| 云贵高原 | plateau | 65 | [98°, 23°] → [107°, 29°] |
 
-- GMBA 验证（秦岭、祁连山）
-- HydroBASINS 验证（柴达木盆地）
-- Ridge Line 数据源（秦岭、祁连山 Label 沿山脊放置需要）
+GMBA / HydroBASINS 验证已暂停（非当前优先级）。
+
+## Phase B — FOI Validation（当前阶段）
+
+### 目标
+
+针对 5 个样本地形，建立 3~5 个 FeatureOfInterest。
+
+### 为什么需要 FOI
+
+Camera 推导链路: `Terrain → Geometry → FOI → Auto Camera`
+
+不是: `Terrain → Geometry → Camera`
+
+原因: 秦岭长约 900km，Polygon 中心不代表最佳观察位置。
+
+### 每个地形需要
+
+1. FOI 名称
+2. FOI 类型（山峰 / 谷地 / 城市 / 观察点）
+3. 经纬度
+4. 飞机视角观察价值
+5. 推荐 Camera Target
 
 ## FOI 设计
 

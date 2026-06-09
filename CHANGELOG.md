@@ -30,12 +30,18 @@ All notable changes to Flight Geography Explorer are documented here.
 - 头部标签: "新疆 · N" → "中国 · N"
 - 范围从新疆扩展到全国
 
-### Geometry Validation 阶段启动
+### Geometry Validation 阶段完成
 
 - 审计当前 Camera 系统（全部手工参数）
 - 确认 5 个样本地形缺少真实 Geometry
 - 验证 Natural Earth 数据源（5/5 地形 Polygon 存在）
-- 确认 Camera 必须从 Geometry 自动推导
+- 确认 Camera 链路: Terrain → Geometry → FOI → Auto Camera
+
+### Phase B — FOI Validation 启动
+
+- 目标: 为 5 个样本地形建立 3~5 个 FeatureOfInterest
+- 验证 FOI → Camera → Cesium 是否正确
+- 不再继续研究 GMBA / HydroBASINS 数据源
 
 ### 数据源验证结果
 
