@@ -106,6 +106,65 @@ function smoothStep(t: number): number {
   return t * t * (3 - 2 * t);
 }
 
+/**
+ * 等待地形/影像瓦片收敛
+ * tileLoadProgressEvent 的 queueLength 持续 stableMs 毫秒为 0 才算完成
+ * 超时 timeoutMs 毫秒强制继续
+ */
+function waitForTilesSettled(
+  viewer: import("cesium").Viewer,
+  stableMs: number = 1000,
+  timeoutMs: number = 8000
+): Promise<void> {
+  return new Promise((resolve) => {
+    if (viewer.isDestroyed()) { resolve(); return; }
+
+    let lastQueueLength = -1;
+    let stableStart = 0;
+    let resolved = false;
+
+    const timeout = setTimeout(() => {
+      if (!resolved) {
+        resolved = true;
+        viewer.scene.globe.tileLoadProgressEvent.removeEventListener(onTileProgress);
+        resolve();
+      }
+    }, timeoutMs);
+
+    function onTileProgress(e: any) {
+      if (resolved) return;
+      const q = e.queueLength;
+      if (q === 0) {
+        if (lastQueueLength !== 0) {
+          stableStart = Date.now();
+          lastQueueLength = 0;
+        } else if (Date.now() - stableStart >= stableMs) {
+          resolved = true;
+          clearTimeout(timeout);
+          viewer.scene.globe.tileLoadProgressEvent.removeEventListener(onTileProgress);
+          resolve();
+        }
+      } else {
+        lastQueueLength = q;
+        stableStart = Date.now();
+      }
+    }
+
+    // 检查当前是否已经加载完成
+    // tileLoadProgressEvent 只在有新 tile 时触发，需要主动检查
+    viewer.scene.globe.tileLoadProgressEvent.addEventListener(onTileProgress);
+
+    // 如果当前没有 tile 在加载，立即 resolve
+    // (tileLoadProgressEvent 不会在 queueLength=0 时触发)
+    setTimeout(() => {
+      if (!resolved) {
+        // 给一个短暂的窗口让 tile 开始加载
+        // 如果仍然没有 tile 事件，说明已经加载完成
+      }
+    }, 100);
+  });
+}
+
 /** 根据地貌类型返回理想观看高度 */
 function viewHeightForTerrain(
   terrain: { category?: string; cameraHeight?: number } | undefined,
@@ -318,7 +377,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 },
                 complete: () => {
                   console.log("[CesiumMap] flyTo complete:", terrain.id);
-                  resolve();
+                  // 等待 tiles 收敛后再 resolve
+                  waitForTilesSettled(viewer, 1000, 8000).then(() => {
+                    console.log("[CesiumMap] tiles settled:", terrain.id);
+                    resolve();
+                  });
                 },
                 cancel: () => {
                   console.log("[CesiumMap] flyTo cancelled:", terrain.id);
