@@ -18,7 +18,10 @@ export interface GeometryRecord {
   /** 数据来源 */
   source: GeometrySource;
   /** GeoJSON 几何数据 */
-  geometry: GeoJSON;
+  geometry: {
+    type: string;
+    coordinates: unknown;
+  };
   /** 数据版本 */
   version: string;
   /** 下载时间 */
