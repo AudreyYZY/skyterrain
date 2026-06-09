@@ -1,518 +1,222 @@
 # PROJECT_MEMORY.md
 
-> This file is the single source of truth for future Claude sessions.
+> Single source of truth for future Claude sessions.
 > Read this first before making any changes.
+
+---
 
 ## Project Identity
 
-**Flight Geography Explorer** — An AI-powered cinematic geography documentary web app.
-Users experience Xinjiang terrain from an airplane passenger perspective, with structured Chinese narration.
+**Flight Geography Explorer** — 飞机视角地貌认知系统
 
-**NOT** a GIS dashboard, flight simulator, or game.
+用户从飞机舷窗视角，通过 3D 地球 + 纪录片式讲解，认知地球地貌。
+
+**不是** GIS 仪表盘、飞行模拟器、游戏。
 
 ## Tech Stack
 
 - Next.js 16.2.6 (App Router)
 - React 19.2.4
 - TypeScript 5.x
-- CesiumJS 1.141.0 (3D globe)
+- CesiumJS 1.141.0 (3D 地球)
 - TailwindCSS 4.x
-- Edge TTS (edge-tts-universal 1.4.0) — plain text input, XiaoyiNeural default
-- OpenAI API 6.39.0 (mimo.ts — dead code, kept for future LLM narration)
+- Edge TTS (edge-tts-universal 1.4.0)
 
 ## Architecture
 
+### 数据层
+
 ```
 app/
-  api/narration/route.ts    — AI narration endpoint
-  api/tts/route.ts          — Edge TTS endpoint
-  api/photo-identify/route.ts — Photo ID endpoint
-  globals.css               — Cinematic CSS utilities
-  layout.tsx                — Root layout
-  page.tsx                  — Entry → ExplorerApp
+  api/narration/route.ts    — AI 讲解端点
+  api/tts/route.ts          — Edge TTS 端点
+  api/photo-identify/route.ts — 照片识别端点
+  layout.tsx                — 根布局
+  page.tsx                  — 入口 → ExplorerApp
+```
 
+### 组件层
+
+```
 components/
-  CesiumMap.tsx             — 3D globe, camera system, route flight engine, projectToScreen, imagery provider
-  ExplorerApp.tsx           — Main orchestrator, label initialization, speakLessonWithHighlight
-  CesiumOverlayLabels.tsx   — Spatial awareness labels (HTML overlays on Cesium, zoom-aware, edge-fade)
-  FlightControls.tsx        — Hierarchical sidebar (region → category → terrain)
-  NarrationPanel.tsx        — Right floating panel (primary UI)
-  StructuredLesson.tsx      — Lesson content (4 sections: seeing, formation, history, observation)
-  TerrainGlanceCards.tsx    — Compact metadata strip
-  SourceAttribution.tsx     — Data source footer
-  TerrainPhotoCarousel.tsx  — Photo overlay (architecture only)
-  ResizablePanel.tsx        — Glassmorphism side panels
-  RouteControls.tsx         — Flight route selection
-  VoiceSelector.tsx         — TTS voice picker
-  PhotoModePanel.tsx        — Photo identification mode
-  useSentenceHighlight.ts   — Sentence timing estimation hook (multi-section support)
+  ExplorerApp.tsx           — 主编排器，标签初始化，speakLessonWithHighlight
+  CesiumMap.tsx             — 3D 地球，Camera 系统，航线飞行引擎
+  CesiumOverlayLabels.tsx   — 空间感知标签（HTML overlay，缩放自适应）
+  NarrationPanel.tsx        — 右侧浮动面板（i18n 支持）
+  StructuredLesson.tsx      — 讲解内容（4 段：seeing, formation, history, observation）
+  TerrainGlanceCards.tsx    — 元数据速览
+  RouteControls.tsx         — 航线选择
+  VoiceSelector.tsx         — TTS 语音选择
+  useSentenceHighlight.ts   — 句子高亮同步 hook
+```
 
+### 数据层
+
+```
 lib/
-  terrain.ts                — Terrain registry (32 locations, category merge, region assignment)
-  terrain-categories.ts     — Flat category order + labels (7 categories)
-  terrain-hierarchy.ts      — Continent→Region→Category tree builder
-  narration-engine.ts       — Structured data → Chinese narration
-  lesson.ts                 — Lesson-to-speech conversion (plain text, no SSML)
-  speech.ts                 — TTS system (Edge TTS + browser fallback)
-  routes.ts                 — Route resolution
-  geo.ts                    — Haversine distance, bearing
-  city-lessons.ts           — City narration data (4 cities)
-  narration-queue.ts        — NarrationQueue class (serial, priority, cancel)
-  cinematic-labels.ts       — CinematicLabelManager (decoupled annotation layer, major labels)
-
-types/
-  terrain.ts                — TerrainPoint, TerrainKnowledge (NO funFact, NO GeographyComparison)
-  terrain-visual.ts         — TerrainVisualAsset types
-  route.ts                  — FlightRoute, RouteWaypoint
+  terrain.ts                — 新疆地形注册（32 个位置）
+  terrain-categories.ts     — 分类顺序 + 标签
+  i18n.ts                   — UI 国际化（zh-CN / en-US）
+  i18n-stories.ts           — 讲解故事翻译（6 个地形）
+  narration-engine.ts       — 结构化数据 → 中文讲解
+  lesson.ts                 — Lesson → 语音转换
+  speech.ts                 — TTS 系统（Edge TTS + 浏览器回退）
+  routes.ts                 — 航线解析
+  city-lessons.ts           — 城市讲解（4 个城市）
+  narration-queue.ts        — 叙述队列（串行、优先级、取消）
 ```
 
-## Product Vision
-
-A cinematic documentary experience where users fly over Xinjiang's terrain, hearing professional Chinese narration synchronized with the landscape. The map is always the hero — UI panels are minimal, translucent, and never dominate the view.
-
-## Cesium Rendering Constraints
-
-### Map Layers
+### Feature 层
 
 ```
-Terrain Layer:   Cesium World Terrain (STK)    — Cesium.Ion asset 1
-Imagery Layer:   Bing Maps                     — Cesium.IonImageryProvider.fromAssetId(2)
-3D Tiles Layer:  无                             — 未使用 Google Photorealistic 3D Tiles
+features/
+  types.ts                  — GeographicFeature 类型定义
+  china-core-features.ts    — 全国核心地形（15 个）
+  xinjiang-core-features.ts — 新疆地形定义
 ```
 
-### Rendering Config
+## 全国地貌架构
 
-```ts
-requestRenderMode: false           // continuous rendering, tiles always refine
-maximumScreenSpaceError: 2.0       // default, balanced quality/performance
-depthTestAgainstTerrain: true      // terrain occlusion enabled
-fog.enabled: true                  // atmospheric fog
-```
+### 当前覆盖
 
-### Camera System
+| 类型 | 数量 | 示例 |
+|------|------|------|
+| mountain_system | 6 | 秦岭、祁连山、太行山、大兴安岭、横断山脉、喜马拉雅山 |
+| plateau | 4 | 青藏高原、黄土高原、内蒙古高原、云贵高原 |
+| basin | 5 | 四川盆地、柴达木盆地、东北平原、华北平原、长江中下游平原 |
 
-- Pitch: -42° (airplane window angle)
-- Roll: 0.8° (subtle turbulence)
-- Easing: `quarticEaseOut` (gravity-weighted)
-- Terrain-aware heights (mountains 8000m, deserts 16000m, etc.)
-- Duration: 7s for terrain flyTo
+### 数据来源
 
-## Label System
+- 新疆地形: `data/*.json` 文件（32 个位置）
+- 全国地形: `features/china-core-features.ts`（手工定义）
 
-### Documentary-Style Map Labels
+## Camera 问题
 
-Major landforms always visible at any zoom level, pure text with cinematic typography:
+### 当前问题
 
-| Type | Font Size | Weight | Letter Spacing | Shadow |
-|------|-----------|--------|----------------|--------|
-| Major | 28px | 600 | 0.08em | Triple-layer: 0 2px 6px, 0 0 20px, 0 0 40px |
-| Minor | 14px | 500 | 0.04em | Double-layer: 0 1px 4px, 0 0 12px |
+点击全国地形后:
+1. Camera 飞到错误区域
+2. 画面中心不是目标地形
+3. 经常看到地球曲率
+4. 大型山脉与小型湖泊使用同一种 Camera 逻辑
+5. 所有参数都是手工估算
 
-### 6 Major Landforms (always visible)
+### 根源
 
-- 天山 (tianshan)
-- 昆仑山 (kunlun)
-- 阿尔泰山 (altai)
-- 准噶尔盆地 (junggar-basin)
-- 塔里木盆地 (tarim-basin)
-- 塔克拉玛干沙漠 (taklamakan)
+全国 Feature 没有真实 Geometry，只有手工 `cameraGeometry`。
 
-### Label Rendering
+### 解决方案
 
-- No background bubbles — pure cinematic text
-- No dot markers
-- Edge fade at 60px from screen edge
-- Grid-based overlap prevention (80px cells)
-- CSS transitions: opacity 0.6s
-- Font: Noto Sans SC / PingFang SC / Microsoft YaHei
-
-## Terrain System
-
-### Data: 32 locations (7 display categories)
-
-| Display Category | Count | Data Categories |
-|----------|-------|-----------------|
-| 山脉 | 7 | mountain_range |
-| 湖泊 | 6 | lake |
-| 沙漠 | 3 | desert |
-| 盆地 | 3 | basin |
-| 河谷 | 4 | river, valley |
-| 景观 | 6 | scenic, oasis, silk_road |
-| 城市 | 3 | city |
-
-### Routes: 3 flight routes
-
-| ID | Path |
-|----|------|
-| north-xinjiang | 乌鲁木齐 → 天山 → 赛里木湖 → 伊犁河谷 |
-| pamir-adventure | 喀什 → 帕米尔高原 → 慕士塔格峰 |
-| turpan-flaming | 吐鲁番 → 火焰山 → 库姆塔格沙漠 |
-
-## TTS System
-
-### Edge TTS Configuration
-
-- **Library:** edge-tts-universal 1.4.0
-- **Voice:** zh-CN-XiaoyiNeural (default)
-- **Rate:** -18% (slow, documentary pacing)
-- **Pitch:** -2Hz (slightly lower, warmer)
-- **Input format:** Plain text (NOT SSML — edge-tts-universal wraps input in its own SSML)
-
-### Critical: No SSML Tags
-
-`edge-tts-universal` always wraps input in `<speak><voice><prosody>`. Passing SSML tags (`<break>`, `<p>`, `<prosody>`) causes nested tags that the Edge TTS service reads as literal text (e.g., "t_breaktime=1200ms").
-
-**Fix:** `lessonToSSML()` now returns plain text. Rate/pitch controlled by EdgeTTS constructor params.
-
-### Highlighting System
-
-- `useSentenceHighlight` hook estimates sentence timing (~280ms/char)
-- `startHighlightSections()` tracks multiple sections with global index
-- `activeSection` updates as highlight advances through seeing → formation → history → observation
-- `speakLessonWithHighlight()` is the shared entry point for both auto-narration and manual speak
-
-### Audio/Highlight Separation
-
-- `stopAudio()` — stops audio only, preserves highlight state
-- `stopSpeaking()` — stops audio + highlight (user-initiated cancel)
-- `speakText()` uses `stopAudio()` to avoid clearing highlight set by `startHighlightSections()`
-
-## Deployment Workflow
-
-1. `npm run build` — verify no TypeScript/build errors
-2. `git add . && git commit -m "..."`
-3. `git push origin main`
-4. Vercel auto-deploys from main branch
-5. Verify on https://skyterrain.vercel.app
-
-### Vercel Config
-
-- `serverExternalPackages: ["ws", "bufferutil"]` — prevents webpack bundling of ws library (fixes `b.mask is not a function`)
-
-## UI Principles
-
-### Visual Language
-
-- **Glass panels**: `bg-[#0a0e12]/30 backdrop-blur-xl border border-white/[0.04]`
-- **Borders**: `white/[0.03]` to `white/[0.06]` — barely visible
-- **Typography**: Noto Sans SC / PingFang SC / SF Pro
-- **Accent color**: `amber-400/30` to `amber-400/50` — subtle, not dominant
-- **Spacing**: generous, cinematic breathing room
-
-### Narration Hierarchy
-
-1. Terrain name (18px, medium, white/90)
-2. Metadata (11px, white/25, single line)
-3. Hero narration (1rem, white/80, 1.9 line-height)
-4. Section labels (10px, amber/40)
-5. Secondary text (13px, white/45)
-6. Source attribution (9px, white/15)
-
-### Camera Philosophy
-
-- Airplane window: -42° pitch, 0.8° roll
-- Gravity-weighted easing (quarticEaseOut)
-- Terrain-aware altitude (mountains low, deserts high)
-- Calm, heavy, atmospheric — NOT game camera
-
----
-
-# DO NOT BREAK AGAIN
-
-## Historical Regressions
-
-### 1. Black Cesium Globe (Phase 2)
-
-**Root cause:** `camera.changed` event → React re-render storm → WebGL starvation
-
-**Fix:** Removed `camera.changed` entirely. Replaced with 500ms `setInterval` polling via imperative handle.
-
-**Prevention rule:** NEVER hook `camera.changed` to React state. Use `camera.moveEnd` for one-shot events, or polling for continuous tracking.
-
-### 2. React/Cesium Render Loop
-
-**Root cause:** `onCameraChange` → `setCameraState` → 60fps re-renders → main thread contention
-
-**Fix:** CesiumOverlayLabels polls `getCameraState()` via `setInterval`, not camera events.
-
-**Prevention rule:** Camera-driven React state is FORBIDDEN. Read camera imperatively via ref.
-
-### 3. requestRender Regressions
-
-**Root cause:** `requestRenderMode: true` (default) stops rendering after camera stops. Tiles loaded in background never display.
-
-**Fix:** `requestRenderMode: false` for continuous rendering. `camera.moveEnd` → `requestRender()` as belt-and-suspenders.
-
-**Prevention rule:** Keep `requestRenderMode: false`. Never rely on Cesium's default render-on-change.
-
-### 4. camera.changed Feedback Loops
-
-**Root cause:** `camera.changed` → state update → re-render → camera change → infinite loop
-
-**Fix:** Remove all camera event → React state connections.
-
-**Prevention rule:** Camera state flows ONE WAY: Cesium → imperative read → polling. Never React state → Cesium camera.
-
-### 5. Vercel Chunk Loading Failures
-
-**Root cause:** Cesium's octal escape sequences (`\060`) break in strict mode
-
-**Fix:** Webpack plugin converts octal escapes to hex escapes in all JS assets.
-
-**Prevention rule:** Keep the `FixOctalEscapes` webpack plugin. Never remove it.
-
-### 6. TTS `b.mask is not a function`
-
-**Root cause:** `ws@8.21.0`'s `buffer-util.js` uses conditional `require('bufferutil')` to swap the `mask` function. Webpack's static analysis drops the JS fallback during bundling.
-
-**Fix:** `serverExternalPackages: ["ws", "bufferutil"]` in next.config.ts.
-
-**Prevention rule:** Keep `ws` and `bufferutil` in `serverExternalPackages`. Never remove them.
-
-### 7. TTS Highlighting Regressions
-
-**Root cause:** `speakText()` called `stopSpeaking()` → `stopHighlight()`, immediately clearing state set by `startHighlightSections()`.
-
-**Fix:** Separate `stopAudio()` (audio only) from `stopSpeaking()` (audio + highlight). `speakText()` uses `stopAudio()`.
-
-**Prevention rule:** `speakText()` must NEVER call `stopHighlight()`. Only user-initiated stops or narration completion should clear highlight.
-
-### 8. CSS Priority Override (`.narration-hero` color)
-
-**Root cause:** `.narration-hero` had `color: rgba(255,255,255,0.8)` which overrode all Tailwind text color utilities due to equal specificity.
-
-**Fix:** Removed `color` from `.narration-hero` CSS. Colors now controlled entirely by Tailwind utilities in JSX.
-
-**Prevention rule:** CSS utility classes must NOT set `color` on shared classes. Use Tailwind utilities for all color overrides.
-
-### 9. SSML Tags Read as Literal Text
-
-**Root cause:** `edge-tts-universal` always wraps input in `<speak><voice><prosody>`. Passing SSML with `<break>`/`<p>`/`<prosody>` caused nested tags that Edge TTS couldn't parse.
-
-**Fix:** `lessonToSSML()` returns plain text. Removed all manual SSML construction.
-
-**Prevention rule:** Never pass SSML tags to `edge-tts-universal`. Use plain text only. Rate/pitch via constructor params.
-
-### 10. Trackpad Zoom Blocked by Overlay
-
-**Root cause:** `CesiumOverlayLabels` overlay at `z-[15]` had `touch-action: none` which blocked pinch gestures from reaching Cesium canvas.
-
-**Fix:** Removed `touch-action` from overlay. `pointer-events: none` already handles event pass-through.
-
-**Prevention rule:** Never set `touch-action` on overlay elements above Cesium. Only the canvas itself should have `touch-action: none`.
-
-## Protected Cesium Architecture
-
-> **PERMANENT SECTION — Do not remove or weaken.**
-
-The following systems are protected. Do not modify without explicit approval.
-
-### Protected Systems
-
-- **Cesium initialization** — `waitForDimensions`, dynamic import, Viewer creation
-- **Viewer creation** — `new Cesium.Viewer()` config, WebGL canvas setup
-- **Terrain loading** — `createWorldTerrainAsync()`, `EllipsoidTerrainProvider` fallback
-- **Imagery provider** — `IonImageryProvider.fromAssetId(2)`, `imageryLayers` management
-- **requestRenderMode** — must remain `false` for continuous rendering
-- **camera lifecycle** — `flyTo`, `flyToTerrainAndWait`, `flyRoute`, easing functions, pitch/roll constants
-- **React ↔ Cesium render bridge** — 500ms polling, imperative handle, no camera.changed → React state
-- **flight system** — `flyLeg`, `flyToRouteOverview`, `preloadRoute`, `drawRouteLine`
-
-### Before Changing Any Protected System
-
-1. **Explain reason** — why is modification necessary?
-2. **Explain risk** — what regressions could this cause?
-3. **Provide diff plan** — exact files and lines to change
-4. **Wait for approval** — do not proceed without explicit approval
-
-### Why These Are Protected
-
-Historical regressions caused by modifying these systems:
-
-| Regression | Impact |
-|-----------|--------|
-| Black globe | `camera.changed` → React re-render storm → WebGL starvation |
-| Missing terrain | `waitForDimensions` hung forever on 0×0 container |
-| Chunk failures | Cesium octal escapes broke in strict mode |
-| Render loops | Camera state → React state → camera change → infinite loop |
-| Camera recursion | `async` inside `new Promise()` anti-pattern → Promise never settles |
-
-### Rule
-
-**Never "refactor" protected systems while working on unrelated tasks.**
-
-If a task appears to require touching protected infrastructure:
-1. STOP
-2. Explain the conflict
-3. Propose an alternative that avoids protected systems
-4. Wait for guidance
-
-## Forbidden Modification Areas
-
-Unless explicitly requested with risk assessment:
-
-1. **DO NOT** add `camera.changed` event listeners
-2. **DO NOT** hook camera events to React state
-3. **DO NOT** modify the Cesium Viewer initialization sequence
-4. **DO NOT** change the `waitForDimensions` timeout mechanism
-5. **DO NOT** modify the `useImperativeHandle` dependency array
-6. **DO NOT** remove the `viewer.isDestroyed()` guards
-7. **DO NOT** change the `setInterval` polling in CesiumOverlayLabels to camera-event-driven updates
-8. **DO NOT** modify the `quarticEaseOut` or `smoothStep` easing functions
-9. **DO NOT** change the `WINDOW_PITCH_DEG` (-42) or `CRUISE_ROLL_DEG` (0.8) constants
-10. **DO NOT** pass SSML tags to edge-tts-universal
-11. **DO NOT** set `touch-action` on overlay elements above Cesium
-12. **DO NOT** remove `serverExternalPackages: ["ws", "bufferutil"]`
-13. **DO NOT** remove the `FixOctalEscapes` webpack plugin
-14. **DO NOT** add `color` CSS property to `.narration-hero` or other shared classes
-
-## Safe Extension Points
-
-These areas CAN be modified safely:
-
-- **Content**: terrain JSON files, narration text, observation data, route definitions
-- **UI**: NarrationPanel, StructuredLesson, FlightControls, RouteControls (styling/layout)
-- **Labels**: CinematicLabelManager data, label priorities, zoom thresholds, typography
-- **Camera parameters**: duration values, easing function selection (not the functions themselves)
-- **New features**: photo carousel, terrain search, comparison panel (as separate components)
-- **New routes**: add JSON files + register in routes.ts
-
-## Development Principle
-
-**Extend content systems, not rendering infrastructure.**
-
-If a feature appears to require modifying protected infrastructure:
-1. STOP
-2. Explain why modification is necessary
-3. Explain risks involved
-4. Propose alternative solutions
-5. Wait for approval
-
----
-
-## Phase History
-
-| Phase | Description | Status |
-|-------|-------------|--------|
-| 1 | Flight Pacing Fix | ✅ |
-| 2 | UI Cinematic Redesign | ✅ |
-| 3 | Continuous Flight Mode | ✅ |
-| 4 | Geography Expansion (13→32) | ✅ |
-| 5 | Geography Knowledge Engine | ✅ |
-| 6 | Cinematic Camera System | ✅ |
-| 7 | Geography Worldview System | ✅ |
-| 8 | Narration Panel Redesign | ✅ |
-| 9 | Sidebar Scroll Fix | ✅ |
-| 10 | Flight Pacing & Narration Sync | ✅ |
-| 11 | Information Architecture Cleanup | ✅ |
-| 12 | Terrain Label Interaction | ✅ |
-| 13 | Cinematic Label Lifecycle | ✅ |
-| 14 | Airplane Observation Education | ✅ |
-| 4A | Narration Voice Upgrade & AI Mode Removal | ✅ |
-| 4A | Multi-Task Polish (imagery, labels, sidebar, TTS) | ✅ |
-| 5A | Highlighting, Tile Loading, Hierarchy Fixes | ✅ |
-| 5B | TTS Fix (SSML nesting, ws bundling) | ✅ |
-| 5C | Sentence Highlighting (multi-section) | ✅ |
-| 5D | Documentary Map Labeling System | ✅ |
-| V2 | UI Architecture V2 — Map-first layout | 🔄 |
-
----
-
-## UI Architecture V2
-
-> Added 2026-06-06. Map-first layout for Flight Geography Explorer.
-
-### Design Principles
-
-1. **Map is the hero** — 90%+ visual space belongs to the map
-2. **UI is assistant** — panels are floating, minimal, never dominant
-3. **Terrain-first taxonomy** — organize by landform type, not administrative region
-4. **National expansion ready** — structure supports 300+ locations across China
-5. **Professional, restrained** — Google Earth / ArcGIS Earth aesthetic, not dashboard
-
-### Layout Structure
+**Geometry 驱动 Camera**
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│ Header (40px, ultra-minimal, floating)                  │
-├──┐                                                  ┌──┤
-│60│                                                  │  │
-│px│              Map (~90%)                          │信│
-│  │                                                  │息│
-│侧│                                                  │卡│
-│栏│                                                  │  │
-│  │                                                  │320│
-└──┘                                                  └──┘
+Geometry → bbox → center + span → auto Camera
 ```
 
-### Left Sidebar
+不再维护 `cameraGeometry`，Camera 从 Geometry 自动计算。
 
-- **Collapsed:** 60px, Chinese single characters (山/湖/沙/盆/高/航)
-- **Expanded:** 280px, terrain categories with counts
-- **Structure:** 地貌探索 (mountain/lake/desert/basin/river/scenic) + 飞行路线
-- **No emoji, no icons** — professional Chinese typography
+## Geometry Validation 阶段
 
-### Right Info Card
+### 目标
 
-- **No terrain selected:** hidden
-- **Terrain selected:** 320px summary card, top-right corner
-- **Detail view:** 400px drawer, right side, full height
-- **Summary → Drawer transition**, not in-card expansion
+验证 5 个样本地形的 Geometry 数据来源。
 
-### Terrain Categories (Updated)
+### 样本地形
 
-| Category | Label | Data Categories |
-|----------|-------|-----------------|
-| mountain_range | 山脉 | mountain_range |
-| lake | 湖泊 | lake |
-| desert | 沙漠 | desert |
-| basin | 盆地 | basin |
-| river | 河谷 | river, valley |
-| scenic | 景观 | scenic, oasis, silk_road |
+| 地形 | 类型 | Natural Earth | GMBA | HydroSHEDS | GeoNames |
+|------|------|--------------|------|------------|----------|
+| 秦岭 | mountain_system | ✅ Polygon 88pts | 待验证 | ❌ | ⚠️ Point only |
+| 祁连山 | mountain_system | ✅ Polygon 71pts | 待验证 | ❌ | ⚠️ Point only |
+| 四川盆地 | basin | ✅ Polygon 62pts | ❌ | ⚠️ 需合并 | ⚠️ Point only |
+| 柴达木盆地 | basin | ✅ Polygon 51pts | ❌ | ✅ 封闭流域 | ⚠️ Point only |
+| 云贵高原 | plateau | ✅ Polygon 65pts | ❌ | ❌ | ❌ |
 
-**Removed from sidebar:** city (not terrain type)
+### 已确认
 
-### Future: Province Filter
+Natural Earth `ne_10m_geography_regions_polys` v5.0.0 包含全部 5 个地形的 Polygon。
 
-```
-顶部过滤器:
-全国 | 新疆 | 西藏 | 青海 | 四川 | 云南 | 甘肃 | 内蒙古
+### 待完成
 
-选择省份后 → 左侧分类自动过滤
-```
+- GMBA 验证（秦岭、祁连山）
+- HydroBASINS 验证（柴达木盆地）
+- Ridge Line 数据源（秦岭、祁连山 Label 沿山脊放置需要）
 
-### Future: LOD Label System
+## FOI 设计
 
-```
-Level 1 (全国): 新疆 / 青藏高原 / 华北平原
-Level 2 (区域): 天山 / 昆仑山 / 塔里木盆地
-Level 3 (地点): 博格达峰 / 赛里木湖 / 博斯腾湖
+FeatureOfInterest 是讲解兴趣点。
+
+```typescript
+interface StoryGeometry {
+  id: string;
+  name: string;         // 太白山、成都、格尔木
+  position: [lon, lat];
+  text: string;         // 该点的讲解文本
+}
 ```
 
-With screen-space collision detection (80px grid).
+每个地形有 1-3 个 FOI，用于:
+- 讲解节点定位
+- 镜头运动路径
+- 叙述节奏控制
 
-### Future: Terrain Boundaries
+## Story 设计
 
-GeoJSON polygon boundaries for major landforms:
-- Thin outline, no fill
-- Hover: glow + name
-- Click: flyTo + narration
+4 段式结构化讲解:
 
-### Priority Roadmap
-
-```
-P0  Terrain boundary GeoJSON
-P1  LOD label system + collision detection
-P2  Left sidebar restructuring ← DONE
-P3  Right info card + drawer ← DONE
-P4  National expansion architecture
-P5  Social + shared location (future)
+```typescript
+interface TerrainLesson {
+  seeing: string;       // 飞机窗外看到什么
+  formation: string;    // 地貌如何形成
+  history: string;      // 历史与人文
+  observation?: string; // 飞机上如何区分
+}
 ```
 
-### Modified Files (V2)
+故事数据:
+- `i18n-stories.ts` — 6 个核心地形的中英文故事
+- `china-core-features.ts` — 全国地形的中文故事
+- `data/*.json` — 新疆地形的中文故事
 
-| File | Change |
-|------|--------|
-| `components/ExplorerApp.tsx` | Complete layout rewrite: floating header, collapsible sidebar, summary card, detail drawer |
-| `lib/terrain-categories.ts` | Removed "city" from display categories |
-| `lib/terrain.ts` | Reordered CATEGORY_MERGE |
+## KnowledgeLink 设计
+
+关联地形与知识来源:
+
+```typescript
+interface TerrainKnowledge {
+  terrainFeatures: string[];
+  formation: string[];
+  airplaneViewFeatures: string[];
+  historicalTopics: string[];
+  cultureTopics: string[];
+  climateFeatures: string[];
+  interestingFacts: string[];
+  sources: { title: string; url?: string }[];
+  confidence: "high" | "medium" | "low";
+}
+```
+
+## 国际化
+
+- UI 文本: `lib/i18n.ts` 的 `t()` 函数
+- 讲解故事: `lib/i18n-stories.ts` 的 `getTerrainStory()` 函数
+- 地形名称: `lib/i18n.ts` 的 `getTerrainName()` 函数
+- TTS 语音: `lib/i18n.ts` 的 `getTTSVoice()` 函数
+
+当前支持: zh-CN, en-US
+
+## 航线系统
+
+当前航线是手工定义的，不是真实航班数据。
+
+未来需要:
+- 接入真实航班信息
+- 飞机地面投影阴影
+- 真实地形 + 阴影效果
+
+## 开发规范
+
+1. 不要在未完成审计前修改 Camera 逻辑
+2. 不要在未验证数据源前导入地形数据
+3. 每完成一个 Phase，先更新文档再提交代码
+4. 业务代码和文档分开提交
+5. 读 `node_modules/next/dist/docs/` 了解 Next.js 最新变更

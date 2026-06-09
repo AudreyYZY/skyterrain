@@ -4,6 +4,61 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Phase 6 — i18n + China Scope + Geometry Validation
+
+**Date:** 2026-06-09
+**Status:** In Progress
+
+### i18n 语言切换完成
+
+- 中英文切换 (zh-CN / en-US)
+- UI 文本通过 `t()` 函数翻译
+- 讲解故事通过 `getTerrainStory()` 翻译
+- 地形名称通过 `getTerrainName()` 翻译
+- TTS 语音跟随语言设置
+
+### Narration 翻译同步修复
+
+- **Bug**: `handleSelectFeature` 显示用翻译故事，语音用 `feature.story`
+- **Fix**: 统一使用 `effectiveLesson`（含翻译）
+- NarrationPanel 全面 i18n 支持（language prop）
+
+### 中国地貌探索替代新疆空中地貌探索
+
+- 标题: "新疆空中地貌探索" → "飞行地貌探索"
+- Meta 描述: "新疆 15 处地貌" → "中国地貌"
+- 头部标签: "新疆 · N" → "中国 · N"
+- 范围从新疆扩展到全国
+
+### Geometry Validation 阶段启动
+
+- 审计当前 Camera 系统（全部手工参数）
+- 确认 5 个样本地形缺少真实 Geometry
+- 验证 Natural Earth 数据源（5/5 地形 Polygon 存在）
+- 确认 Camera 必须从 Geometry 自动推导
+
+### 数据源验证结果
+
+| 地形 | Natural Earth | Points | BBox |
+|------|--------------|--------|------|
+| 秦岭 | ✅ Polygon | 88 | [105°, 32°] → [114°, 35°] |
+| 祁连山 | ✅ Polygon | 71 | [94°, 36°] → [103°, 40°] |
+| 四川盆地 | ✅ Polygon | 62 | [103°, 29°] → [108°, 32°] |
+| 柴达木盆地 | ✅ Polygon | 51 | [92°, 36°] → [98°, 38°] |
+| 云贵高原 | ✅ Polygon | 65 | [98°, 23°] → [107°, 29°] |
+
+### Files Modified
+
+- `lib/i18n.ts` — welcome.title 更新
+- `lib/i18n-stories.ts` — 6 地形中英文故事
+- `components/ExplorerApp.tsx` — handleSelectFeature 修复 + 标题更新
+- `components/NarrationPanel.tsx` — i18n 支持 (language prop)
+- `app/layout.tsx` — Meta 描述更新
+- `CLAUDE.md` — 项目指令更新
+- `PROJECT_MEMORY.md` — 项目记忆更新
+
+---
+
 ## Phase 5D — Documentary Map Labeling System
 
 **Date:** 2026-06-04

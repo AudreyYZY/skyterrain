@@ -1,4 +1,15 @@
-# AI_DEV_LOG.md
+# ⚠️ DEPRECATED
+
+**This file is deprecated and no longer maintained.**
+
+For current project documentation, see:
+- [CLAUDE.md](./CLAUDE.md) — Project instructions
+- [PROJECT_MEMORY.md](./PROJECT_MEMORY.md) — Architecture and current state
+- [CHANGELOG.md](./CHANGELOG.md) — Change history
+
+---
+
+# AI_DEV_LOG.md (Historical)
 
 Development log for AI-assisted development sessions.
 

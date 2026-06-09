@@ -1,4 +1,15 @@
-# Development Summary
+# ⚠️ DEPRECATED
+
+**This file is deprecated and no longer maintained.**
+
+For current project documentation, see:
+- [CLAUDE.md](./CLAUDE.md) — Project instructions
+- [PROJECT_MEMORY.md](./PROJECT_MEMORY.md) — Architecture and current state
+- [CHANGELOG.md](./CHANGELOG.md) — Change history
+
+---
+
+# Development Summary (Historical)
 
 ## Flight Geography Explorer — Cinematic Airplane Geography Documentary System
 
