@@ -23,11 +23,11 @@ const SECTIONS: {
 ];
 
 /**
- * 将文本按中文句号、问号、感叹号分割成句子
+ * 将文本按中文/英文句号、问号、感叹号分割成句子
  */
 function splitSentences(text: string): string[] {
   if (!text.trim()) return [];
-  const parts = text.split(/(?<=[。！？])/g).filter((s) => s.trim().length > 0);
+  const parts = text.split(/(?<=[。！？.!?])/g).filter((s) => s.trim().length > 0);
   return parts;
 }
 

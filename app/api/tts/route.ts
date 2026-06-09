@@ -75,7 +75,7 @@ export async function POST(request: Request) {
       if (!stripped) {
         return NextResponse.json({ error: "SSML 内容为空" }, { status: 400 });
       }
-      const tts = new EdgeTTS(stripped, voice, { rate: "-18%", pitch: "-2Hz" });
+      const tts = new EdgeTTS(stripped, voice, { rate: "-12%", pitch: "-1Hz" });
       const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
       return new Response(JSON.stringify({ audio: audio.toString("base64"), wordBoundaries }), {
         headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
@@ -87,8 +87,8 @@ export async function POST(request: Request) {
     for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
       try {
         const tts = new EdgeTTS(clipped, voice, {
-          rate: "-18%",
-          pitch: "-2Hz",
+          rate: "-12%",
+          pitch: "-1Hz",
         });
 
         const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);

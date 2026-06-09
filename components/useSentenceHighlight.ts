@@ -8,7 +8,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 function splitSentences(text: string): string[] {
   if (!text.trim()) return [];
   return text
-    .split(/(?<=[。！？])/g)
+    .split(/(?<=[。！？.!?])/g)
     .map((s) => s.trim())
     .filter((s) => s.length > 0);
 }
@@ -49,13 +49,15 @@ function buildSentenceTimeMap(
   if (allSentences.length === 0 || wordBoundaries.length === 0) return result;
 
   // 将 word boundaries 匹配到句子
+  // 同时支持中文和英文标点
+  const punctuationRegex = /[。，！？、；：""''（）.,!?;:'"()\s]/g;
   let wordIdx = 0;
   let sentenceStartSec = wordBoundaries[0]?.start ?? 0;
 
   for (let si = 0; si < allSentences.length; si++) {
     const sentence = allSentences[si]!;
     // 清理句子中的标点和空格，用于匹配
-    const sentenceChars = sentence.text.replace(/[。，！？、；：""''（）\s]/g, "");
+    const sentenceChars = sentence.text.replace(punctuationRegex, "");
 
     let matchedChars = 0;
     let lastMatchEnd = sentenceStartSec;
@@ -64,7 +66,7 @@ function buildSentenceTimeMap(
     // 消耗 word boundaries 直到匹配完这个句子
     while (wordIdx < wordBoundaries.length && matchedChars < sentenceChars.length) {
       const word = wordBoundaries[wordIdx]!;
-      const wordClean = word.text.replace(/[。，！？、；：""''（）\s]/g, "");
+      const wordClean = word.text.replace(punctuationRegex, "");
       matchedChars += wordClean.length;
       lastMatchEnd = word.end;
       wordIdx++;
