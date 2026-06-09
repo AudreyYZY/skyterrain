@@ -277,9 +277,15 @@ export default function ExplorerApp() {
 
   const showTerrainLesson = useCallback(
     async (terrain: TerrainPoint, options?: { flyoverOnly?: boolean }): Promise<void> => {
+      // 使用翻译后的故事内容
+      const translatedStory = getTerrainStory(terrain.name, language);
+      const effectiveLesson = translatedStory
+        ? { ...terrain.lesson, seeing: translatedStory.seeing, formation: translatedStory.formation, history: translatedStory.history, observation: translatedStory.observation }
+        : terrain.lesson;
+
       setActiveTerrain(terrain);
       setDisplayCards(terrain.cards);
-      setLesson(terrain.lesson);
+      setLesson(effectiveLesson);
       setError(null);
 
       if (options?.flyoverOnly) {
@@ -288,10 +294,10 @@ export default function ExplorerApp() {
         });
         stopHighlight();
       } else {
-        await speakLessonWithHighlight(terrain.lesson);
+        await speakLessonWithHighlight(effectiveLesson);
       }
     },
-    [speakText, startHighlight, speakLessonWithHighlight, stopHighlight]
+    [speakText, startHighlight, speakLessonWithHighlight, stopHighlight, language]
   );
 
   /**

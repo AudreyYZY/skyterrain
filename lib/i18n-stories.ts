@@ -14,8 +14,23 @@ export interface TerrainStoryText {
   observation: string;
 }
 
-/** 5 个核心地形的英文故事 */
+/** 核心地形的英文故事 */
 export const TERRAIN_STORIES: Record<string, Record<Language, TerrainStoryText>> = {
+  "天山": {
+    "zh-CN": {
+      seeing: "天山横贯新疆中部，当前可见博格达雪峰与天池所在冰川谷。窗外白色区域为现代冰川与终年积雪；山麓黄绿色条带多为冲积扇和灌溉绿洲。",
+      formation: "天山是古亚洲洋闭合后形成的褶皱山系，新生代抬升强烈。冰川刨蚀形成U形谷和冰蚀湖，融水在山前堆积成扇形地貌。",
+      history: "天山是北疆与南疆的气候分水岭：北坡受西风影响较湿润，南坡相对干旱。乌鲁木齐、石河子等城市分布在北麓绿洲。",
+      observation: "天山呈东西走向，山脊线连续平行，山前有明显的冲积扇绿洲带。与阿尔泰山相比，天山雪线更高，山前绿洲更宽。",
+    },
+    "en-US": {
+      seeing: "The Tianshan Mountains stretch across central Xinjiang. From the airplane window, you can see the snow-capped Bogda Peak and the glacial valley of Tianchi Lake. The white areas below are modern glaciers and permanent snowfields, while the yellow-green strips at the mountain foot are alluvial fans and irrigated oases.",
+      formation: "The Tianshan range was formed by the closure of the ancient Asian ocean, with intense uplift during the Cenozoic era. Glacial erosion carved U-shaped valleys and moraine lakes, while meltwater built alluvial fans at the mountain front.",
+      history: "The Tianshan Mountains divide Xinjiang into northern and southern regions. The northern slopes receive more moisture from westerly winds, while the southern slopes are drier. Cities like Urumqi and Shihezi sit on the northern foothill oases.",
+      observation: "The Tianshan ridge runs east-west with parallel lines, and distinct alluvial fan oasis belts spread at the mountain front. Compared to the Altai Mountains, Tianshan has a higher snowline and wider foothill oases.",
+    },
+  },
+
   "秦岭": {
     "zh-CN": {
       seeing: "秦岭横贯中国中部，是中国南北地理分界线。从飞机上看，山脊呈东西走向，将中国分为南方和北方。山北是黄河流域的黄土高原，山南是长江流域的四川盆地，分界非常明显。",
