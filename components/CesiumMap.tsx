@@ -108,7 +108,8 @@ function smoothStep(t: number): number {
 
 /**
  * 等待地形/影像瓦片收敛
- * tileLoadProgressEvent 的 queueLength 持续 stableMs 毫秒为 0 才算完成
+ * 每帧检查 viewer.scene.globe.tilesLoaded 状态
+ * tilesLoaded=true 持续 stableMs 毫秒才算完成
  * 超时 timeoutMs 毫秒强制继续
  */
 function waitForTilesSettled(
@@ -119,49 +120,33 @@ function waitForTilesSettled(
   return new Promise((resolve) => {
     if (viewer.isDestroyed()) { resolve(); return; }
 
-    let lastQueueLength = -1;
-    let stableStart = 0;
-    let resolved = false;
+    const start = Date.now();
+    let loadedSince = 0;
 
-    const timeout = setTimeout(() => {
-      if (!resolved) {
-        resolved = true;
-        viewer.scene.globe.tileLoadProgressEvent.removeEventListener(onTileProgress);
-        resolve();
-      }
-    }, timeoutMs);
+    const tick = () => {
+      if (viewer.isDestroyed()) { resolve(); return; }
 
-    function onTileProgress(e: any) {
-      if (resolved) return;
-      const q = e.queueLength;
-      if (q === 0) {
-        if (lastQueueLength !== 0) {
-          stableStart = Date.now();
-          lastQueueLength = 0;
-        } else if (Date.now() - stableStart >= stableMs) {
-          resolved = true;
-          clearTimeout(timeout);
-          viewer.scene.globe.tileLoadProgressEvent.removeEventListener(onTileProgress);
+      const tilesLoaded = (viewer.scene.globe as any).tilesLoaded;
+
+      if (tilesLoaded) {
+        if (loadedSince === 0) loadedSince = Date.now();
+        if (Date.now() - loadedSince >= stableMs) {
           resolve();
+          return;
         }
       } else {
-        lastQueueLength = q;
-        stableStart = Date.now();
+        loadedSince = 0;
       }
-    }
 
-    // 检查当前是否已经加载完成
-    // tileLoadProgressEvent 只在有新 tile 时触发，需要主动检查
-    viewer.scene.globe.tileLoadProgressEvent.addEventListener(onTileProgress);
-
-    // 如果当前没有 tile 在加载，立即 resolve
-    // (tileLoadProgressEvent 不会在 queueLength=0 时触发)
-    setTimeout(() => {
-      if (!resolved) {
-        // 给一个短暂的窗口让 tile 开始加载
-        // 如果仍然没有 tile 事件，说明已经加载完成
+      if (Date.now() - start > timeoutMs) {
+        resolve();
+        return;
       }
-    }, 100);
+
+      requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(tick);
   });
 }
 
