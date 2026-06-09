@@ -19,6 +19,8 @@ import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainStory } from "@/lib/i18n-stories";
+import { getTerrainFOI } from "@/lib/foi-registry";
+import { computeCameraFromPolygon, computeCameraFromRidge, extractPolygonCoords, extractLineCoords, type CameraParams } from "@/lib/auto-camera";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
   getAllRoutes,
@@ -482,19 +484,36 @@ export default function ExplorerApp() {
       setError(null);
       stopHighlight();
 
+      // 计算 Camera 参数 — 优先使用 Auto Camera (FOI + Geometry)
+      const foi = getTerrainFOI(feature.id);
+      let cameraParams: CameraParams | null = null;
+
+      if (foi) {
+        // Auto Camera: 从 Geometry + FOI 计算
+        if (foi.featureType === "mountain_system") {
+          cameraParams = computeCameraFromRidge(foi.geometryCoords, foi.primary);
+        } else {
+          cameraParams = computeCameraFromPolygon(foi.geometryCoords, foi.primary);
+        }
+        console.log(`[AutoCamera] ${feature.name}: target=[${cameraParams.target[0].toFixed(2)}, ${cameraParams.target[1].toFixed(2)}] heading=${cameraParams.heading.toFixed(0)}° pitch=${cameraParams.pitch.toFixed(0)}° range=${(cameraParams.range/1000).toFixed(0)}km`);
+      } else if (feature.cameraGeometry) {
+        // Fallback: 手工 cameraGeometry
+        const cg = feature.cameraGeometry;
+        cameraParams = { target: cg.target, heading: cg.heading, pitch: cg.pitch, range: cg.range };
+      }
+
       // 更新标注层
       labelManager.removeLayer("explore-labels");
       const layerId = "explore-labels";
       labelManager.createLayer(layerId, "探索标注", 5);
-      if (feature.cameraGeometry) {
+      if (cameraParams) {
         labelManager.addLabel(layerId, createTerrainLabel(
-          feature.id, feature.name, feature.cameraGeometry.target[1], feature.cameraGeometry.target[0], 100
+          feature.id, feature.name, cameraParams.target[1], cameraParams.target[0], 100
         ));
       }
       labelManager.setFocusedTerrain(feature.id);
 
       // 设置当前 Feature 状态 — 驱动右侧面板更新
-      // 优先使用翻译后的故事内容（与 showTerrainLesson 逻辑一致）
       const translatedStory = getTerrainStory(feature.name, language);
       const storySource = translatedStory ?? feature.story;
       let effectiveLesson: TerrainLesson | null = null;
@@ -509,8 +528,8 @@ export default function ExplorerApp() {
         setActiveTerrain({
           id: feature.id,
           name: feature.name,
-          lat: feature.cameraGeometry?.target[1] ?? 0,
-          lon: feature.cameraGeometry?.target[0] ?? 0,
+          lat: cameraParams?.target[1] ?? 0,
+          lon: cameraParams?.target[0] ?? 0,
           elevation: feature.elevation,
           category: feature.featureType as any,
           description: "",
@@ -520,19 +539,18 @@ export default function ExplorerApp() {
         } as any);
       }
 
-      // 飞向目标 (使用 cameraGeometry 的 heading/pitch)
-      if (feature.cameraGeometry) {
-        const target = feature.cameraGeometry;
+      // 飞向目标 — Auto Camera 或 fallback
+      if (cameraParams) {
         await (mapRef.current?.flyToTerrainAndWait({
           id: feature.id,
           name: feature.name,
-          lat: target.target[1],
-          lon: target.target[0],
+          lat: cameraParams.target[1],
+          lon: cameraParams.target[0],
           elevation: 0,
-          cameraHeight: target.range,
+          cameraHeight: cameraParams.range,
         } as any, {
-          heading: target.heading,
-          pitch: target.pitch,
+          heading: cameraParams.heading,
+          pitch: cameraParams.pitch,
         }) ?? Promise.resolve());
       }
 
