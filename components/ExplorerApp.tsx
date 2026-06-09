@@ -17,6 +17,7 @@ import { TERRAIN_THEME, getFontSize, LABEL_TEXT_STYLE, type Importance } from "@
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
+import { t, type Language } from "@/lib/i18n";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
   getAllRoutes,
@@ -36,6 +37,18 @@ const routes = getAllRoutes();
 
 /** Sidebar 统一分类类型 */
 type SidebarCategory = "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "plain" | "landscape";
+
+/** 分类翻译 key 映射 */
+const CATEGORY_I18N_KEY: Record<SidebarCategory, string> = {
+  mountain: "sidebar.mountains",
+  lake: "sidebar.lakes",
+  desert: "sidebar.deserts",
+  basin: "sidebar.basins",
+  river: "sidebar.rivers",
+  plateau: "sidebar.plateaus",
+  plain: "sidebar.plains",
+  landscape: "sidebar.landscape",
+};
 
 /**
  * 将原始 category/featureType 统一映射为 Sidebar 分类
@@ -152,6 +165,7 @@ export default function ExplorerApp() {
   const [sidebarCategory, setSidebarCategory] = useState<string | null>(null);
   const [showDetailDrawer, setShowDetailDrawer] = useState(false);
   const [hoveredBoundary, setHoveredBoundary] = useState<string | null>(null);
+  const [language, setLanguage] = useState<Language>("zh-CN");
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
@@ -655,12 +669,19 @@ export default function ExplorerApp() {
           </p>
           <span className="text-white/[0.04]">|</span>
           <p className="text-[9px] text-white/15 tracking-wide">
-            新疆 · {terrainCount}
+            {language === "zh-CN" ? `新疆 · ${terrainCount}` : `Xinjiang · ${terrainCount}`}
           </p>
         </div>
-        <div className="flex items-center gap-0.5 pointer-events-auto">
-          <ModeTab active={mode === "explore"} onClick={() => setMode("explore")} label="探索" />
-          <ModeTab active={mode === "photo"} onClick={() => setMode("photo")} label="照片" />
+        <div className="flex items-center gap-1 pointer-events-auto">
+          <button
+            type="button"
+            onClick={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
+            className="rounded-md px-2 py-0.5 text-[10px] font-medium transition-all duration-200 text-white/30 hover:text-white/60"
+          >
+            {language === "zh-CN" ? "EN" : "中"}
+          </button>
+          <ModeTab active={mode === "explore"} onClick={() => setMode("explore")} label={t("header.exploration", language)} />
+          <ModeTab active={mode === "photo"} onClick={() => setMode("photo")} label={t("header.photo", language)} />
         </div>
       </header>
 
@@ -759,7 +780,7 @@ export default function ExplorerApp() {
                     /* Category list — unified registry */
                     <div>
                       <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-3">
-                        地貌探索
+                        {t("sidebar.terrain_exploration", language)}
                       </p>
 
                       <div className="space-y-1">
@@ -771,7 +792,9 @@ export default function ExplorerApp() {
                             className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
                           >
                             <div className="flex items-center justify-between">
-                              <span className="text-[12px] text-white/50">{group.label}</span>
+                              <span className="text-[12px] text-white/50">
+                                {t(CATEGORY_I18N_KEY[group.type] ?? group.label, language)}
+                              </span>
                               <span className="text-[10px] text-white/20">{group.features.length}</span>
                             </div>
                           </button>
@@ -800,23 +823,24 @@ export default function ExplorerApp() {
       {mode === "explore" && !activeTerrain && !isRouteFlying && (
         <div className="absolute top-10 right-3 z-20 w-[280px] pointer-events-auto">
           <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
-            <h3 className="text-[14px] font-medium text-white/75 mb-1">新疆空中地貌探索</h3>
+            <h3 className="text-[14px] font-medium text-white/75 mb-1">
+              {t("welcome.title", language)}
+            </h3>
             <p className="text-[11px] text-white/30 mb-3">
-              从飞机窗外看中国地形
+              {t("welcome.subtitle", language)}
             </p>
             <p className="text-[10px] text-white/20 mb-3">
-              点击地图上的地貌或左侧分类开始探索
+              {t("welcome.click_to_explore", language)}
             </p>
             <button
               type="button"
               onClick={() => {
-                // 选择第一个地形开始导览
                 const firstTerrain = allTerrains.find(t => t.id === "tianshan");
                 if (firstTerrain) handleSelectTerrain(firstTerrain);
               }}
               className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[11px] font-medium text-amber-300/70 transition hover:bg-amber-500/20 hover:text-amber-300"
             >
-              开始导览
+              {t("welcome.start_tour", language)}
             </button>
           </div>
         </div>
@@ -830,7 +854,7 @@ export default function ExplorerApp() {
             <div className="mb-2">
               <h3 className="text-[15px] font-medium text-white/85">{activeTerrain.name}</h3>
               <p className="text-[10px] text-white/25 mt-0.5">
-                海拔 {activeTerrain.elevation.toLocaleString("zh-CN")}m
+                {t("card.elevation", language)} {activeTerrain.elevation.toLocaleString(language === "zh-CN" ? "zh-CN" : "en-US")}{t("card.meters", language)}
               </p>
             </div>
 
@@ -847,7 +871,7 @@ export default function ExplorerApp() {
               onClick={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
               className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[12px] font-medium text-amber-300/80 transition hover:bg-amber-500/20 hover:text-amber-300 mb-2"
             >
-              {isSpeaking ? "停止讲解" : "开始讲解"}
+              {isSpeaking ? t("card.stop_narration", language) : t("card.start_narration", language)}
             </button>
 
             {/* 次按钮: 查看详情 */}

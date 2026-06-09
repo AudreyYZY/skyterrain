@@ -1,4 +1,5 @@
 import { getPreferredEdgeVoice, type EdgeTtsVoiceId } from "@/lib/voice-preference";
+import { getTTSVoice, type Language } from "@/lib/i18n";
 
 export interface WordBoundary {
   start: number;  // seconds
@@ -168,13 +169,14 @@ export function stopSpeech(): void {
 export async function speakAndWait(
   text: string,
   rate = 0.92,
-  onPlaying?: () => void
+  onPlaying?: () => void,
+  language?: Language
 ): Promise<SpeakResult> {
   stopSpeech();
 
   if (typeof window === "undefined") return { wordBoundaries: [] };
 
-  const voice = getPreferredEdgeVoice();
+  const voice = language ? getTTSVoice(language) as EdgeTtsVoiceId : getPreferredEdgeVoice();
   try {
     const result = await speakEdgeAndWait(text, voice, onPlaying);
     if (result.ok) return { wordBoundaries: result.wordBoundaries };
