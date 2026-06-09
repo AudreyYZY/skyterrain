@@ -494,17 +494,18 @@ export default function ExplorerApp() {
       labelManager.setFocusedTerrain(feature.id);
 
       // 设置当前 Feature 状态 — 驱动右侧面板更新
-      // 优先使用翻译后的故事内容
+      // 优先使用翻译后的故事内容（与 showTerrainLesson 逻辑一致）
       const translatedStory = getTerrainStory(feature.name, language);
       const storySource = translatedStory ?? feature.story;
+      let effectiveLesson: TerrainLesson | null = null;
       if (storySource) {
-        const lesson: TerrainLesson = {
+        effectiveLesson = {
           seeing: storySource.seeing,
           formation: storySource.formation,
           history: storySource.history,
           observation: storySource.observation,
         };
-        setLesson(lesson);
+        setLesson(effectiveLesson);
         setActiveTerrain({
           id: feature.id,
           name: feature.name,
@@ -514,7 +515,7 @@ export default function ExplorerApp() {
           category: feature.featureType as any,
           description: "",
           cards: { location: "", peak: "", feature: "" },
-          lesson,
+          lesson: effectiveLesson,
           knowledge: { terrainFeatures: [], climateFeatures: [], historicalTopics: [], cultureTopics: [], interestingFacts: [], sources: [] },
         } as any);
       }
@@ -535,17 +536,12 @@ export default function ExplorerApp() {
         }) ?? Promise.resolve());
       }
 
-      // 讲解
-      if (feature.story) {
-        await speakLessonWithHighlight({
-          seeing: feature.story.seeing,
-          formation: feature.story.formation,
-          history: feature.story.history,
-          observation: feature.story.observation,
-        });
+      // 讲解 — 使用与面板一致的 effectiveLesson（含翻译）
+      if (effectiveLesson) {
+        await speakLessonWithHighlight(effectiveLesson);
       }
     },
-    [stopHighlight, speakLessonWithHighlight]
+    [stopHighlight, speakLessonWithHighlight, language]
   );
 
   const handleStartRoute = useCallback(
@@ -679,7 +675,7 @@ export default function ExplorerApp() {
           </p>
           <span className="text-white/[0.04]">|</span>
           <p className="text-[9px] text-white/15 tracking-wide">
-            {language === "zh-CN" ? `新疆 · ${terrainCount}` : `Xinjiang · ${terrainCount}`}
+            {language === "zh-CN" ? `中国 · ${terrainCount}` : `China · ${terrainCount}`}
           </p>
         </div>
         <div className="flex items-center gap-1 pointer-events-auto">
@@ -890,7 +886,7 @@ export default function ExplorerApp() {
               onClick={() => setShowDetailDrawer(true)}
               className="w-full rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
             >
-              查看详情
+              {t("card.view_details", language)}
             </button>
           </div>
         </div>
@@ -933,6 +929,7 @@ export default function ExplorerApp() {
                 onStopSpeak={stopSpeaking}
                 activeSentenceIndex={activeSentenceIndex}
                 activeSection={activeSection}
+                language={language}
                 embedded
               />
             </div>

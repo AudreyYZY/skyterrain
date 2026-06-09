@@ -112,8 +112,8 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "en-US": "How to Identify",
   },
   "welcome.title": {
-    "zh-CN": "新疆空中地貌探索",
-    "en-US": "Xinjiang Aerial Terrain Explorer",
+    "zh-CN": "飞行地貌探索",
+    "en-US": "Flight Terrain Explorer",
   },
   "welcome.subtitle": {
     "zh-CN": "从飞机窗外看中国地形",

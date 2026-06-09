@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Flight Geography Explorer | 飞机视角地理探索",
+  title: "Flight Geography Explorer | 飞行地貌探索",
   description:
-    "以飞机乘客视角探索新疆 15 处地貌：山脉、湖泊、沙漠、河谷、盆地与高原，配合三维地球与 AI 解说。",
+    "以飞机乘客视角探索中国地貌：山脉、湖泊、沙漠、河谷、盆地与高原，配合三维地球与 AI 解说。",
 };
 
 export default function RootLayout({

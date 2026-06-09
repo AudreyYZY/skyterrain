@@ -5,6 +5,7 @@ import StructuredLesson from "@/components/StructuredLesson";
 import TerrainGlanceCards from "@/components/TerrainGlanceCards";
 import VoiceSelector from "@/components/VoiceSelector";
 import type { TerrainCards, TerrainKnowledge, TerrainLesson } from "@/types/terrain";
+import { t, type Language } from "@/lib/i18n";
 import { useState } from "react";
 
 interface NarrationPanelProps {
@@ -22,6 +23,7 @@ interface NarrationPanelProps {
   embedded?: boolean;
   activeSentenceIndex?: number | null;
   activeSection?: string | null;
+  language?: Language;
 }
 
 export default function NarrationPanel({
@@ -38,6 +40,7 @@ export default function NarrationPanel({
   isSpeaking,
   activeSentenceIndex,
   activeSection,
+  language = "zh-CN",
 }: NarrationPanelProps) {
   const [showDetail, setShowDetail] = useState(false);
 
@@ -45,8 +48,8 @@ export default function NarrationPanel({
   if (!lesson && !isRouteFlying) {
     return (
       <div className="flex flex-col items-center justify-center h-full text-center px-4">
-        <p className="text-[13px] text-white/25 mb-1">选择一个地貌</p>
-        <p className="text-[11px] text-white/15">开始空中探索之旅</p>
+        <p className="text-[13px] text-white/25 mb-1">{t("narration.select_terrain", language)}</p>
+        <p className="text-[11px] text-white/15">{t("welcome.click_to_explore", language)}</p>
       </div>
     );
   }
@@ -55,7 +58,7 @@ export default function NarrationPanel({
   if (isRouteFlying && !lesson) {
     return (
       <div className="flex flex-col items-center justify-center h-full text-center px-4">
-        <p className="text-[12px] text-white/25">飞越时自动讲解</p>
+        <p className="text-[12px] text-white/25">{language === "zh-CN" ? "飞越时自动讲解" : "Auto-narration during flyover"}</p>
       </div>
     );
   }
@@ -68,7 +71,7 @@ export default function NarrationPanel({
         <div className="mb-3">
           <div className="flex items-center gap-2 mb-1">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400/60 animate-pulse" />
-            <h3 className="text-[13px] font-medium text-white/70">正在讲解</h3>
+            <h3 className="text-[13px] font-medium text-white/70">{t("narration.in_progress", language)}</h3>
           </div>
           <h2 className="text-[15px] font-medium text-white/85">{title}</h2>
         </div>
@@ -91,7 +94,7 @@ export default function NarrationPanel({
           onClick={onStopSpeak}
           className="w-full rounded-lg bg-white/[0.06] px-3 py-2 text-[11px] font-medium text-white/50 transition hover:bg-white/[0.1] hover:text-white/70"
         >
-          停止讲解
+          {t("narration.stop", language)}
         </button>
       </div>
     );
@@ -119,7 +122,7 @@ export default function NarrationPanel({
       {lesson?.seeing && (
         <div className="mb-4">
           <p className="text-[11px] font-medium text-white/30 mb-1.5 tracking-wide">
-            飞机窗外
+            {t("card.seeing", language)}
           </p>
           <p className="text-[12px] leading-relaxed text-white/45 line-clamp-3">
             {lesson.seeing}
@@ -139,7 +142,7 @@ export default function NarrationPanel({
           onClick={onSpeak}
           className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[12px] font-medium text-amber-300/80 transition hover:bg-amber-500/20 hover:text-amber-300"
         >
-          开始讲解
+          {t("card.start_narration", language)}
         </button>
 
         {/* 次按钮: 查看详情 */}
@@ -148,7 +151,7 @@ export default function NarrationPanel({
           onClick={() => setShowDetail(!showDetail)}
           className="w-full rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
         >
-          {showDetail ? "收起详情" : "查看详情"}
+          {showDetail ? (language === "zh-CN" ? "收起详情" : "Collapse") : (language === "zh-CN" ? "查看详情" : "View Details")}
         </button>
       </div>
 
