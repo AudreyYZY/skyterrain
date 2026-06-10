@@ -153,6 +153,68 @@ Camera actual position: [107.7600, 33.9500] height=1225096m (1225km)
 
 ---
 
+## 9. 长江中下游平原/青藏高原飞错位置 — 数据而非 Camera 问题
+
+**问题**: 点击"青藏高原"飞到了新疆区域；点击"长江中下游平原"飞到了华北
+
+**分析**: 这与 Camera range/pitch 无关。这是 target 坐标本身错误。
+
+**根因判断**: `getTerrainFOI(terrainId)` 返回的 `primary.lon/lat` 来自手工维护的 `foi-registry.ts` 配置表。如果某个地形没有 FOI，fallback 到 `feature.cameraGeometry.target`。只要配置表里一个坐标写错（或写成了另一个地形的坐标），整个飞行就飞错。
+
+**验证方法**: 在 `handleSelectFeature` 中打印 console.table：
+```js
+console.table({
+  feature: feature.name,
+  foiLon: terrainFOI?.primary.lon,
+  foiLat: terrainFOI?.primary.lat,
+  cameraLon: target?.[0],
+  cameraLat: target?.[1],
+  range: range ? (range / 1000).toFixed(0) + 'km' : 'N/A',
+  source: source
+});
+```
+
+测试 4 个地形：青藏高原、长江中下游平原、黄土高原、内蒙古高原。如果打印出：
+```
+青藏高原 →  foi=[87,46]  → 新疆（正确应该是 [89.6,32] 左右）
+```
+就已经破案。
+
+**关键**: 地图团队在调试"怎么看见调试点"，真正问题是"调试点本身在错误的省份"。先在控制台打印经纬度确认坐标，再决定是否继续做 billboard 调试。
+
+---
+
+## 10. 停止语音播报后"停几秒又继续" — 三种可能
+
+从用户反馈看：点击停止 → 真的停了 → 过几秒又开始播报。
+
+三种可能：
+
+### 情况1：TTS 队列没有清空
+如果用 Web Speech API：`speechSynthesis.cancel()` 应该清空队列。很多项目只做了 `isSpeaking = false` 或 `speechSynthesis.pause()`。结果暂停后后面队列还在，自动恢复。
+
+### 情况2：Narration 被重新触发
+停止按钮只是 `setNarrationCancelled(true)`。但 `handleSelectFeature()` 后面还有：
+```
+await flyTo()
+await loadTiles()
+speakLessonWithHighlight()  ← 重新触发
+```
+异步流程没结束，又进入 `speakLessonWithHighlight`。
+
+### 情况3：React 状态闭包
+`let narrationCancelled = false`。点击停止时 `narrationCancelled = true`，但异步函数里拿到的是旧值（闭包问题）。
+
+**验证方法**:
+- 在 `stopNarration()` 里打印 `[Narration] STOP CLICKED`
+- 在 `speakLessonWithHighlight()` 入口打印 `[Narration] START cancelled=`
+- 在 `speechSynthesis.cancel()` 之后打印 `[Narration] speech cancelled`
+- 如果停止后又看到 `[Narration] START false`，就是被重新触发了
+
+**注意**: 之前修复 1 和 2 时已经在 `handleSelectFeature` 和 `handleSelectTerrain` 中加了取消检查。但如果还有"停几秒又继续"的问题，可能根因在 `speakAndWait` / `speech.ts` 中的 TTS 队列管理，而非 `narrationCancelledRef`。
+
+---
+
 ## 待办 / 明天继续
 
 - [ ] 部署后验证"停止语音后自动恢复"是否修复
