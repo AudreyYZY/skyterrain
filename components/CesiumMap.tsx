@@ -165,6 +165,42 @@ function viewHeightForTerrain(
   return terrain?.cameraHeight ?? cruiseHeight;
 }
 
+/** 在 Canvas 上绘制调试标记图（红十字/黄十字）—— billboard 用 */
+function makeDebugMarkerImage(Cesium: typeof import("cesium"), color: import("cesium").Color): string {
+  const size = 256;
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext("2d")!;
+  ctx.clearRect(0, 0, size, size);
+
+  const center = size / 2;
+  const half = size * 0.4;
+  const arm = size * 0.08;
+
+  // 十字
+  ctx.fillStyle = `rgba(${Math.round(color.red * 255)},${Math.round(color.green * 255)},${Math.round(color.blue * 255)},1)`;
+  ctx.fillRect(center - arm, center - half, arm * 2, half * 2);
+  ctx.fillRect(center - half, center - arm, half * 2, arm * 2);
+
+  // 外圈
+  ctx.strokeStyle = "#FFFFFF";
+  ctx.lineWidth = 8;
+  ctx.beginPath();
+  ctx.arc(center, center, half + 12, 0, Math.PI * 2);
+  ctx.stroke();
+
+  // 阴影
+  ctx.shadowColor = "rgba(0,0,0,0.7)";
+  ctx.shadowBlur = 12;
+  ctx.strokeStyle = "#000";
+  ctx.lineWidth = 2;
+  ctx.strokeRect(center - half - 4, center - half - 4, half * 2 + 8, half * 2 + 8);
+
+  const blob = new Blob([canvas.toDataURL("image/png")], { type: "image/png" });
+  return URL.createObjectURL(blob);
+}
+
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
   function CesiumMap({ onReady, onTerrainMode, onBoundaryHover }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -315,57 +351,58 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         // 3. 获取 FOI
         const terrainFOI = getTerrainFOI(boundaryId);
 
-        // 4. 画 FOI 红点（如果有）
+        // 4. 画 FOI 红点（billboard + heightReference.NONE + 绝对不可见）
         if (terrainFOI) {
+          const foiPos = Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat, 500);
           viewer.entities.add({
-            position: Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat),
-            point: {
-              pixelSize: 20,
-              color: Cesium.Color.RED,
-              outlineColor: Cesium.Color.WHITE,
-              outlineWidth: 2,
+            position: foiPos,
+            billboard: {
+              image: makeDebugMarkerImage(Cesium, Cesium.Color.RED),
+              scale: 3.0,
+              verticalOrigin: Cesium.VerticalOrigin.CENTER,
+              heightReference: Cesium.HeightReference.NONE,
             },
             label: {
               text: `FOI: ${terrainFOI.primary.name}`,
-              font: "bold 14px sans-serif",
+              font: "bold 18px monospace",
               fillColor: Cesium.Color.RED,
               outlineColor: Cesium.Color.WHITE,
-              outlineWidth: 3,
-              pixelOffset: new Cesium.Cartesian2(0, -25),
+              outlineWidth: 4,
               style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+              pixelOffset: new Cesium.Cartesian2(0, -30),
             },
             properties: { isDebugBoundary: true, debugType: "foi" },
           });
+          console.log(`[Debug] FOI: ${terrainFOI.primary.name} [${terrainFOI.primary.lon}, ${terrainFOI.primary.lat}]`);
         }
 
-        // 5. 画 FOI geometryCoords 边界（如果有）
+        // 5. 画 FOI geometryCoords 边界（billboard 线，不 clampToGround）
         if (terrainFOI) {
           const coords = terrainFOI.geometryCoords;
           if (terrainFOI.featureType === "mountain_system") {
-            // 山脉：画 RidgeCorridor 线（不 clampToGround，避免 outline 被禁用）
-            const ridgePositions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+            const ridgePositions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat, 100));
             viewer.entities.add({
               polyline: {
                 positions: ridgePositions,
-                width: 4,
+                width: 6,
                 material: Cesium.Color.RED,
               },
               properties: { isDebugBoundary: true, debugType: "ridge" },
             });
           } else {
-            // 盆地/高原：画 Polygon
-            const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+            const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat, 100));
             viewer.entities.add({
               polygon: {
                 hierarchy: new Cesium.PolygonHierarchy(positions),
-                material: Cesium.Color.RED.withAlpha(0.25),
+                material: Cesium.Color.RED.withAlpha(0.3),
                 outline: true,
                 outlineColor: Cesium.Color.RED,
-                outlineWidth: 3,
+                outlineWidth: 4,
               },
               properties: { isDebugBoundary: true, debugType: "polygon" },
             });
           }
+          console.log(`[Debug] ${terrainFOI.featureType} boundary: ${coords.length} coords`);
         }
 
         // 6. 计算 Camera Target + range + source
@@ -390,34 +427,33 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           source = "No camera source";
         }
 
-        // 7. 画 Camera Target 黄点 + range 标签（高可见度）
+        // 7. 画 Camera Target 黄点（billboard + heightReference.NONE + 超大小）
         if (target) {
+          const targetPos = Cesium.Cartesian3.fromDegrees(target[0], target[1], 500);
           viewer.entities.add({
-            position: Cesium.Cartesian3.fromDegrees(target[0], target[1]),
-            point: {
-              pixelSize: 16,
-              color: Cesium.Color.YELLOW,
-              outlineColor: Cesium.Color.BLACK,
-              outlineWidth: 3,
+            position: targetPos,
+            billboard: {
+              image: makeDebugMarkerImage(Cesium, Cesium.Color.YELLOW),
+              scale: 4.0,
+              verticalOrigin: Cesium.VerticalOrigin.CENTER,
+              heightReference: Cesium.HeightReference.NONE,
             },
             label: {
-              text: `🎯 ${source} | ${range ? (range / 1000).toFixed(0) : "?"}km\n[${target[0].toFixed(2)}°, ${target[1].toFixed(2)}°]`,
-              font: "bold 13px monospace",
+              text: `${source} | ${(range! / 1000).toFixed(0)}km\n[${target[0].toFixed(2)}°, ${target[1].toFixed(2)}°]`,
+              font: "bold 16px monospace",
               fillColor: Cesium.Color.YELLOW,
               outlineColor: Cesium.Color.BLACK,
-              outlineWidth: 3,
-              pixelOffset: new Cesium.Cartesian2(0, -30),
+              outlineWidth: 4,
               style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+              pixelOffset: new Cesium.Cartesian2(0, -50),
             },
             properties: { isDebugBoundary: true, debugType: "target" },
           });
+          console.log(`[Debug] Target: [${target[0]}, ${target[1]}] range=${range! / 1000}km source=${source}`);
         }
 
-        // 8. 打印到 console
-        console.log(`[Debug] ${feature.name}: source=${source}, target=[${target?.[0]}, ${target?.[1]}], range=${range ? (range / 1000).toFixed(0) : "N/A"}km`);
-        if (foi) {
-          console.log(`[Debug] FOI: ${foi.primary.name} [${foi.primary.lon}, ${foi.primary.lat}]`);
-        }
+        // 8. 打印到 console（总结）
+        console.log(`[Debug] ${feature.name}: source=${source}, range=${range ? (range / 1000).toFixed(0) : "N/A"}km`);
 
         viewer.scene.requestRender();
       },
