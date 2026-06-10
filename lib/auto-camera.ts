@@ -106,8 +106,8 @@ export function computeCameraFromPolygon(
   // 1 度纬度 ≈ 111km
   const spanKm = maxSpan * 111;
 
-  // Camera 高度: span × 1.5, 限制在 50km ~ 1500km
-  const range = Math.max(50_000, Math.min(1_500_000, spanKm * 1.5 * 1000));
+  // FIX EXPERIMENT: fixed range to test if height is the sole issue
+  const range = 300_000;
 
   // pitch: 更大的 span → 更平的视角
   const pitch = clamp(-35 - (spanKm / 1000) * 2, -50, -25);
@@ -135,8 +135,8 @@ export function computeCameraFromRidge(
   const maxSpan = Math.max(bbox.spanLon, bbox.spanLat);
   const spanKm = maxSpan * 111;
 
-  // Camera 高度: span × 1.2
-  const range = Math.max(50_000, Math.min(1_500_000, spanKm * 1.2 * 1000));
+  // FIX EXPERIMENT: fixed range to test if height is the sole issue
+  const range = 300_000;
 
   // pitch: 山脉用更陡的角度
   const pitch = clamp(-38 - (spanKm / 1000) * 1.5, -50, -30);
