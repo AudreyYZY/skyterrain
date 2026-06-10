@@ -794,42 +794,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 terrainExaggeration: (viewer.scene.globe as any).terrainExaggeration ?? "N/A",
               });
             },
-            /** 显示所有 Feature 顶点 */
-            debugBoundaries(show: boolean = true) {
-              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugVertex);
-              existing.forEach((e: any) => viewer.entities.remove(e));
-
-              if (!show) {
-                console.log("[debug] Feature vertices hidden");
-                return;
-              }
-
-              for (const feature of ALL_FEATURES) {
-                const geo = feature.hoverGeometry;
-                if (!geo) continue;
-                if (geo.type === "Polygon") {
-                  const coords = geo.coordinates[0] as [number, number][];
-                  for (const [lon, lat] of coords) {
-                    viewer.entities.add({
-                      position: Cesium.Cartesian3.fromDegrees(lon, lat),
-                      point: { pixelSize: 5, color: Cesium.Color.RED },
-                      properties: { isDebugVertex: true, featureId: feature.id },
-                    });
-                  }
-                  console.log(`[debug] ${feature.name}: ${coords.length} vertices`);
-                } else if (geo.type === "RidgeCorridor") {
-                  for (const [lon, lat] of geo.ridgeLine) {
-                    viewer.entities.add({
-                      position: Cesium.Cartesian3.fromDegrees(lon, lat),
-                      point: { pixelSize: 5, color: Cesium.Color.RED },
-                      properties: { isDebugVertex: true, featureId: feature.id },
-                    });
-                  }
-                  console.log(`[debug] ${feature.name}: ${geo.ridgeLine.length} ridge points, ${geo.segments.length} segments`);
-                }
-              }
-              viewer.scene.requestRender();
-            },
+            /** 删除 — 已替换为 debugBoundaries(id) 新方法 */
+            debugBoundaries: undefined as any,
             /** 显示指定 Feature (或全部) 的 hoverGeometry */
             debugGeometry(target: string | boolean = true) {
               const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugGeometry);
@@ -1081,66 +1047,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               viewer.scene.requestRender();
             },
           };
-          // debugCesium 也暴露 debugBoundaries 供控制台直接调用
-          (window as any).debugCesium.debugBoundaries = (id: string) => {
-            const viewer = viewerRef.current;
-            const Cesium = cesiumRef.current;
-            if (!viewer || !Cesium) return;
-            const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugBoundary);
-            existing.forEach((e: any) => viewer.entities.remove(e));
-            const feature = ALL_FEATURES.find((f) => f.id === id);
-            if (!feature) { console.log("[debug] feature not found:", id); return; }
-            const terrainFOI = getTerrainFOI(id);
-            if (terrainFOI) {
-              viewer.entities.add({
-                position: Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat),
-                point: { pixelSize: 20, color: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
-                label: { text: `FOI: ${terrainFOI.primary.name}`, font: "bold 14px sans-serif", fillColor: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 3, pixelOffset: new Cesium.Cartesian2(0, -25), style: Cesium.LabelStyle.FILL_AND_OUTLINE },
-                properties: { isDebugBoundary: true, debugType: "foi" },
-              });
-            }
-            if (terrainFOI) {
-              const coords = terrainFOI.geometryCoords;
-              if (terrainFOI.featureType === "mountain_system") {
-                const ridgePositions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                viewer.entities.add({ polyline: { positions: ridgePositions, width: 4, material: Cesium.Color.RED }, properties: { isDebugBoundary: true, debugType: "ridge" } });
-              } else {
-                const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                viewer.entities.add({ polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.RED.withAlpha(0.25), outline: true, outlineColor: Cesium.Color.RED, outlineWidth: 3 }, properties: { isDebugBoundary: true, debugType: "polygon" } });
-              }
-            }
-            const foi = getTerrainFOI(id);
-            let target: [number, number] | null = null;
-            let range: number | null = null;
-            let source = "";
-            if (foi) {
-              if (foi.featureType === "mountain_system") {
-                const cp = computeCameraFromRidge(foi.geometryCoords, foi.primary);
-                target = cp.target; range = cp.range; source = "FOI/AutoCamera(Ridge)";
-              } else {
-                const cp = computeCameraFromPolygon(foi.geometryCoords, foi.primary);
-                target = cp.target; range = cp.range; source = "FOI/AutoCamera(Polygon)";
-              }
-            } else if (feature.cameraGeometry) {
-              target = feature.cameraGeometry.target;
-              range = feature.cameraGeometry.range;
-              source = "CameraGeometry (manual)";
-            } else {
-              source = "No camera source";
-            }
-            if (target) {
-              viewer.entities.add({
-                position: Cesium.Cartesian3.fromDegrees(target[0], target[1]),
-                point: { pixelSize: 16, color: Cesium.Color.YELLOW, outlineColor: Cesium.Color.BLACK, outlineWidth: 3 },
-                label: { text: `🎯 ${source} | ${range ? (range / 1000).toFixed(0) : "?"}km\n[${target[0].toFixed(2)}°, ${target[1].toFixed(2)}°]`, font: "bold 13px monospace", fillColor: Cesium.Color.YELLOW, outlineColor: Cesium.Color.BLACK, outlineWidth: 3, pixelOffset: new Cesium.Cartesian2(0, -30), style: Cesium.LabelStyle.FILL_AND_OUTLINE },
-                properties: { isDebugBoundary: true, debugType: "target" },
-              });
-            }
-            console.log(`[debug] ${feature.name}: source=${source}, target=[${target?.[0]}, ${target?.[1]}], range=${range ? (range / 1000).toFixed(0) : "N/A"}km`);
-            if (foi) console.log(`[debug] FOI: ${foi.primary.name} [${foi.primary.lon}, ${foi.primary.lat}]`);
-            viewer.scene.requestRender();
-          };
-          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries(), debugGeometry(), debugAutoCamera(id)");
+          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugGeometry(), debugAutoCamera(id)");
 
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {
