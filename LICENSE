@@ -1,0 +1,210 @@
+GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+Everyone is permitted to copy and distribute verbatim copies
+of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU Affero General Public License is a free, copyleft license for
+software and other kinds of works, specifically designed to ensure
+cooperation with the community in the case of network server software.
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works. By contrast,
+our General Public Licenses are intended to guarantee your freedom to
+share and change all versions of a program—to make sure it remains free
+software for all its users.
+
+  When we speak of free software, we are referring to freedom, not
+price. Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code, and that you can
+modify it.
+
+  When a program is linked with a covered work, the resulting combined
+work is subject to this License.
+
+  For web-based applications: if you modify this software and run it
+on a server to serve users over a network, you must make the
+corresponding Source Code available to those users, in accordance
+with Section 13 of this License.
+
+                        TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU Affero General Public License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  "The Program" refers to any copyrightable work licensed under this
+License. Each licensee is addressed as "you". "Licensees" and
+"recipients" may be individuals or organizations.
+
+  To "modify" a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy. The resulting work is called a "modified version" of the
+earlier work or a work "based on" the earlier work.
+
+  A "covered work" means either the unmodified Program or a work based
+on the Program.
+
+  To "propagate" a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for infringement
+under applicable copyright law, except executing it on a computer or
+modifying a private copy. Propagation includes copying, distribution
+(with or without modification), making available to the public, including
+in the case of a network server distributing copies to the public, and
+distributing modified versions.
+
+  To "convey" a work means any kind of propagation that enables other
+parties to make or receive copies. Mere interaction with a user through
+a computer network, with no transfer of a copy, is not conveying.
+
+  An interactive user interface displays "Appropriate Legal Notices" to
+the extent that it includes a convenient and prominently visible feature
+that (1) displays an appropriate copyright notice, and (2) tells the user
+that there is no warranty for the work (except to the extent that
+warranties are provided), that licensees may convey the work under this
+License, and how to view a copy of this License.
+
+  1. Source Code.
+
+  The "source code" for a work means the preferred form of the work for
+making modifications to it. "Object code" means any non-source form of a
+work.
+
+  2. Basic Permissions.
+
+  All rights granted under this License are granted for the term of
+copyright on the Program, and are irrevocable provided the stated
+conditions are met. This License explicitly affirms your unlimited
+permission to run the unmodified Program.
+
+  You may make, run and propagate covered works that you do not
+convey, without conditions so long as your license otherwise remains
+in force. You may convey covered works to others for the sole purpose
+of having them make modifications exclusively for you, or provide you
+with facilities for running those works, provided that you comply with
+the terms of this License in conveying all material for which you do
+not control copyright.
+
+  3. Protecting Users' Legal Rights from Anti-Circumvention Law.
+
+  No covered work shall be deemed part of an effective technological
+measure under any applicable law fulfilling obligations under article
+11 of the WIPO copyright treaty adopted on 20 December 1996, or
+similar laws prohibiting or restricting circumvention of such
+measures.
+
+  4. Conveying Verbatim Copies.
+
+  You may propagate a verbatim copy of the Program at your discretion.
+
+  5. Conveying Modified Source Versions.
+
+  You may produce and propagate modified versions, provided you:
+  (a) cause the modified files to carry prominent notices stating you
+  changed the files;
+  (b) release the modified work under this License;
+  (c) convey the interactive interfaces with Appropriate Legal Notices.
+
+  6. Conveying Non-Source Forms.
+
+  You may propagate an object code form, provided you also convey the
+corresponding machine-readable Source Code, or use a well-known method
+to provide the source for at least three years.
+
+  7. Conveying at a Charge.
+
+  You may charge a fee for physical conveyance, though not for the License
+itself.
+
+  8. Termination.
+
+  You may not propagate or modify a covered work except as expressly
+provided under this License. Any attempt otherwise is void and results
+in termination of your rights.
+
+  9. Acceptance Not Required for Copies.
+
+  You are not required to accept this License for each copy.
+
+  10. Automatic Licensing of Downstream Recipients.
+
+  Each time you convey a covered work, the recipient automatically receives
+a license from the original authors.
+
+  11. Retaining Legal Notices.
+
+  You must not remove any copyright or license notices from the Program.
+
+  12. Additional Terms.
+
+  You may choose to offer, and charge a fee for, warranty, indemnity,
+or other duties as allowed under applicable law.
+
+  13. Remote Network Interaction; Use to Interact with a Published Website.
+
+  If you modify the Program and operate it as a network service where
+users interact through a computer network, you must provide a way for
+them to receive the corresponding Source Code. You must make it
+available from a network server at no charge, via standard means for
+copying the source code.
+
+                   ADDITIONAL TERMS for Flight Geography Explorer
+  (pursuant to Section 7 of the AGPL-3.0)
+
+  Copyright (C) 2026 Audreee Yang (Author of Flight Geography Explorer)
+
+  1. Commercial Use Requires Separate Licensing.
+     Any commercial use of this software—including but not limited to
+     using it as a backend service, embedding it in a commercial product,
+     offering it as part of a paid service, or using it for commercial
+     training/data purposes—requires prior written permission from
+     the copyright holder.
+
+  2. Attribution Requirement.
+     Any redistribution must retain the original author attribution
+     and a link to the original repository:
+     https://github.com/audreyyzy/flight-geography-explorer
+
+  3. No Trademark Use.
+     The "Flight Geography Explorer" name and any associated branding
+     may not be used in derived works' marketing or promotional
+     materials without written permission.
+
+  4. No Warranty.
+
+  BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK
+AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  5. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY MODIFY AND/OR CONVEY
+THE PROGRAM BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL,
+INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY
+TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA
+BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES
+OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS), EVEN
+IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+The complete official text of the GNU Affero General Public License
+Version 3 is available at: https://www.gnu.org/licenses/agpl-3.0.html
+
+For commercial licensing inquiries, please contact the author.

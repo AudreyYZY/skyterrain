@@ -109,4 +109,8 @@ ProvenanceRecord   — 数据来源追溯
 
 ## 许可
 
-MIT License
+本项目的源代码根据 [GNU Affero General Public License v3.0](LICENSE) 开源。
+
+**商业使用需要单独授权**。任何商业用途（包括但不限于作为后端服务使用、嵌入商业产品、作为付费服务的一部分提供）需事先获得版权所有者的书面许可。
+
+有关商业授权请联系作者。

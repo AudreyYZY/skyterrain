@@ -576,6 +576,12 @@ export default function ExplorerApp() {
       // Debug Mode: 显示边界 + FOI + Camera Target + Range
       mapRef.current?.debugBoundaries(feature.id);
 
+      // 再次检查取消状态 — 用户可能在飞行中点击了停止按钮
+      if (narrationCancelledRef.current) {
+        console.log("[Narration] handleSelectFeature cancelled before speak, bailing");
+        return;
+      }
+
       // 讲解 — 使用与面板一致的 effectiveLesson（含翻译）
       if (effectiveLesson) {
         console.log("[Narration] handleSelectFeature before speak, narrationCancelled=" + narrationCancelledRef.current);
@@ -912,10 +918,16 @@ export default function ExplorerApp() {
               </p>
             )}
 
-            {/* 主按钮: 开始讲解 */}
+            {/* 主按钮: 开始/停止讲解 — 统一逻辑：播报中点击=停止，否则=开始 */}
             <button
               type="button"
-              onClick={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
+              onClick={() => {
+                if (isSpeaking && lesson) {
+                  stopSpeaking();
+                } else if (lesson) {
+                  void speakLessonWithHighlight(lesson);
+                }
+              }}
               className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[12px] font-medium text-amber-300/80 transition hover:bg-amber-500/20 hover:text-amber-300 mb-2"
             >
               {isSpeaking ? t("card.stop_narration", language) : t("card.start_narration", language)}
