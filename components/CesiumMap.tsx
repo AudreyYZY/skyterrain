@@ -362,6 +362,18 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 },
                 complete: () => {
                   console.log("[CesiumMap] flyTo complete:", terrain.id);
+                  // 记录实际 Camera 位置
+                  try {
+                    const cam = viewer.camera;
+                    const camCarto = Cesium.Cartographic.fromCartesian(cam.position);
+                    const camLon = Cesium.Math.toDegrees(camCarto.longitude);
+                    const camLat = Cesium.Math.toDegrees(camCarto.latitude);
+                    const camH = camCarto.height;
+                    const camHeading = Cesium.Math.toDegrees(cam.heading);
+                    const camPitch = Cesium.Math.toDegrees(cam.pitch);
+                    console.log(`[CesiumMap] Camera actual position: [${camLon.toFixed(4)}, ${camLat.toFixed(4)}] height=${Math.round(camH)}m (${Math.round(camH/1000)}km) heading=${camHeading.toFixed(1)}° pitch=${camPitch.toFixed(1)}°`);
+                    console.log(`[CesiumMap] Camera requested: target=[${terrain.lon}, ${terrain.lat}] range=${terrain.cameraHeight}m heading=${heading}° pitch=${pitchDeg}°`);
+                  } catch (e) { /* ignore */ }
                   // 等待 tiles 收敛后再 resolve
                   waitForTilesSettled(viewer, 1000, 8000).then(() => {
                     console.log("[CesiumMap] tiles settled:", terrain.id);
@@ -839,8 +851,91 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
               viewer.scene.requestRender();
             },
+            /** 绘制 Auto Camera 调试标记 (Polygon + FOI + Target + Camera Position) */
+            debugAutoCamera(terrainId: string) {
+              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugAutoCamera);
+              existing.forEach((e: any) => viewer.entities.remove(e));
+
+              const feature = ALL_FEATURES.find(f => f.id === terrainId);
+              if (!feature) { console.log("[debug] feature not found:", terrainId); return; }
+
+              // 1. 绘制 identityGeometry / focusGeometry (Terrain Polygon)
+              const geo = feature.focusGeometry ?? feature.identityGeometry;
+              if (geo?.type === "Polygon") {
+                const coords = geo.coordinates[0] as [number, number][];
+                const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+                viewer.entities.add({
+                  polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.CYAN.withAlpha(0.1), outline: true, outlineColor: Cesium.Color.CYAN.withAlpha(0.6), outlineWidth: 2 },
+                  properties: { isDebugAutoCamera: true },
+                });
+                console.log(`[debug] Polygon: ${coords.length} points`);
+              }
+
+              // 2. 绘制 FOI Point (红点)
+              const foiModule = require("@/lib/foi-registry");
+              const terrainFOI = foiModule.getTerrainFOI(terrainId);
+              if (terrainFOI) {
+                const foiPos = Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat);
+                viewer.entities.add({
+                  position: foiPos,
+                  point: { pixelSize: 14, color: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
+                  label: { text: `FOI: ${terrainFOI.primary.name}`, font: "14px sans-serif", fillColor: Cesium.Color.WHITE, pixelOffset: new Cesium.Cartesian2(0, -20), style: Cesium.LabelStyle.FILL_AND_OUTLINE, outlineWidth: 2 },
+                  properties: { isDebugAutoCamera: true },
+                });
+                console.log(`[debug] FOI: ${terrainFOI.primary.name} [${terrainFOI.primary.lon}, ${terrainFOI.primary.lat}]`);
+              }
+
+              // 3. 计算 Auto Camera 参数
+              const autoCameraModule = require("@/lib/auto-camera");
+              let cameraParams: any;
+              if (terrainFOI?.featureType === "mountain_system") {
+                cameraParams = autoCameraModule.computeCameraFromRidge(terrainFOI.geometryCoords, terrainFOI.primary);
+              } else if (terrainFOI) {
+                cameraParams = autoCameraModule.computeCameraFromPolygon(terrainFOI.geometryCoords, terrainFOI.primary);
+              }
+              if (cameraParams) {
+                // 4. 绘制 Camera Target (蓝点)
+                const targetPos = Cesium.Cartesian3.fromDegrees(cameraParams.target[0], cameraParams.target[1]);
+                viewer.entities.add({
+                  position: targetPos,
+                  point: { pixelSize: 14, color: Cesium.Color.BLUE, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
+                  label: { text: `Target [${cameraParams.target[0].toFixed(2)}, ${cameraParams.target[1].toFixed(2)}]`, font: "13px sans-serif", fillColor: Cesium.Color.LIGHTBLUE, pixelOffset: new Cesium.Cartesian2(0, -20), style: Cesium.LabelStyle.FILL_AND_OUTLINE, outlineWidth: 2 },
+                  properties: { isDebugAutoCamera: true },
+                });
+                console.log(`[debug] Target: [${cameraParams.target[0].toFixed(4)}, ${cameraParams.target[1].toFixed(4)}]`);
+
+                // 5. 计算并绘制 Camera Position (绿点)
+                const headingRad = Cesium.Math.toRadians(cameraParams.heading);
+                const pitchRad = Cesium.Math.toRadians(cameraParams.pitch);
+                const cameraHeight = cameraParams.range;
+
+                // Camera position = target + offset based on heading and pitch
+                const targetCartographic = Cesium.Cartographic.fromDegrees(cameraParams.target[0], cameraParams.target[1]);
+                const targetCartesian = Cesium.Cartographic.toCartesian(targetCartographic);
+
+                // Create a temporary camera to compute position from orientation
+                const tempCamera = new Cesium.Camera(viewer.scene);
+                tempCamera.setView({
+                  destination: Cesium.Cartesian3.fromDegrees(cameraParams.target[0], cameraParams.target[1], cameraHeight),
+                  orientation: { heading: headingRad, pitch: pitchRad, roll: 0 },
+                });
+                const camPos = tempCamera.position;
+                const camCartographic = Cesium.Cartographic.fromCartesian(camPos);
+
+                viewer.entities.add({
+                  position: camPos,
+                  point: { pixelSize: 14, color: Cesium.Color.GREEN, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
+                  label: { text: `Camera [${Cesium.Math.toDegrees(camCartographic.longitude).toFixed(2)}, ${Cesium.Math.toDegrees(camCartographic.latitude).toFixed(2)}] h=${Math.round(camCartographic.height/1000)}km`, font: "13px sans-serif", fillColor: Cesium.Color.LIGHTGREEN, pixelOffset: new Cesium.Cartesian2(0, -20), style: Cesium.LabelStyle.FILL_AND_OUTLINE, outlineWidth: 2 },
+                  properties: { isDebugAutoCamera: true },
+                });
+                console.log(`[debug] Camera Position: [${Cesium.Math.toDegrees(camCartographic.longitude).toFixed(4)}, ${Cesium.Math.toDegrees(camCartographic.latitude).toFixed(4)}] height=${Math.round(camCartographic.height)}m (${Math.round(camCartographic.height/1000)}km)`);
+                console.log(`[debug] Camera Params: heading=${cameraParams.heading}° pitch=${cameraParams.pitch}° range=${cameraParams.range}m (${Math.round(cameraParams.range/1000)}km)`);
+              }
+
+              viewer.scene.requestRender();
+            },
           };
-          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries(), debugGeometry()");
+          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugBoundaries(), debugGeometry(), debugAutoCamera(id)");
 
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {
