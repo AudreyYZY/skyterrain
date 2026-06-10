@@ -310,7 +310,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
         // 2. 查找 feature
         const feature = ALL_FEATURES.find((f) => f.id === boundaryId);
-        if (!feature) return;
+        if (!feature) { console.log("[Debug] feature not found:", boundaryId); return; }
 
         // 3. 获取 FOI
         const terrainFOI = getTerrainFOI(boundaryId);
@@ -320,18 +320,19 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           viewer.entities.add({
             position: Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat),
             point: {
-              pixelSize: 14,
+              pixelSize: 20,
               color: Cesium.Color.RED,
               outlineColor: Cesium.Color.WHITE,
               outlineWidth: 2,
             },
             label: {
               text: `FOI: ${terrainFOI.primary.name}`,
-              font: "12px sans-serif",
-              fillColor: Cesium.Color.YELLOW,
-              outlineColor: Cesium.Color.BLACK,
-              outlineWidth: 2,
-              pixelOffset: new Cesium.Cartesian2(0, -20),
+              font: "bold 14px sans-serif",
+              fillColor: Cesium.Color.RED,
+              outlineColor: Cesium.Color.WHITE,
+              outlineWidth: 3,
+              pixelOffset: new Cesium.Cartesian2(0, -25),
+              style: Cesium.LabelStyle.FILL_AND_OUTLINE,
             },
             properties: { isDebugBoundary: true, debugType: "foi" },
           });
@@ -341,14 +342,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         if (terrainFOI) {
           const coords = terrainFOI.geometryCoords;
           if (terrainFOI.featureType === "mountain_system") {
-            // 山脉：画 RidgeCorridor 线
+            // 山脉：画 RidgeCorridor 线（不 clampToGround，避免 outline 被禁用）
             const ridgePositions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
             viewer.entities.add({
               polyline: {
                 positions: ridgePositions,
-                width: 2,
-                material: Cesium.Color.RED.withAlpha(0.8),
-                clampToGround: true,
+                width: 4,
+                material: Cesium.Color.RED,
               },
               properties: { isDebugBoundary: true, debugType: "ridge" },
             });
@@ -358,10 +358,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             viewer.entities.add({
               polygon: {
                 hierarchy: new Cesium.PolygonHierarchy(positions),
-                material: Cesium.Color.RED.withAlpha(0.1),
+                material: Cesium.Color.RED.withAlpha(0.25),
                 outline: true,
-                outlineColor: Cesium.Color.RED.withAlpha(0.6),
-                outlineWidth: 2,
+                outlineColor: Cesium.Color.RED,
+                outlineWidth: 3,
               },
               properties: { isDebugBoundary: true, debugType: "polygon" },
             });
@@ -390,23 +390,24 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           source = "No camera source";
         }
 
-        // 7. 画 Camera Target 黄点
+        // 7. 画 Camera Target 黄点 + range 标签（高可见度）
         if (target) {
           viewer.entities.add({
             position: Cesium.Cartesian3.fromDegrees(target[0], target[1]),
             point: {
-              pixelSize: 12,
+              pixelSize: 16,
               color: Cesium.Color.YELLOW,
               outlineColor: Cesium.Color.BLACK,
-              outlineWidth: 1,
+              outlineWidth: 3,
             },
             label: {
-              text: `Target [${target[0].toFixed(2)}, ${target[1].toFixed(2)}]\n${source} | Range: ${(range! / 1000).toFixed(0)}km`,
-              font: "11px sans-serif",
-              fillColor: Cesium.Color.WHITE,
+              text: `🎯 ${source} | ${range ? (range / 1000).toFixed(0) : "?"}km\n[${target[0].toFixed(2)}°, ${target[1].toFixed(2)}°]`,
+              font: "bold 13px monospace",
+              fillColor: Cesium.Color.YELLOW,
               outlineColor: Cesium.Color.BLACK,
-              outlineWidth: 2,
-              pixelOffset: new Cesium.Cartesian2(0, -20),
+              outlineWidth: 3,
+              pixelOffset: new Cesium.Cartesian2(0, -30),
+              style: Cesium.LabelStyle.FILL_AND_OUTLINE,
             },
             properties: { isDebugBoundary: true, debugType: "target" },
           });
@@ -1093,8 +1094,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             if (terrainFOI) {
               viewer.entities.add({
                 position: Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat),
-                point: { pixelSize: 14, color: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
-                label: { text: `FOI: ${terrainFOI.primary.name}`, font: "12px sans-serif", fillColor: Cesium.Color.YELLOW, outlineColor: Cesium.Color.BLACK, outlineWidth: 2, pixelOffset: new Cesium.Cartesian2(0, -20) },
+                point: { pixelSize: 20, color: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
+                label: { text: `FOI: ${terrainFOI.primary.name}`, font: "bold 14px sans-serif", fillColor: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 3, pixelOffset: new Cesium.Cartesian2(0, -25), style: Cesium.LabelStyle.FILL_AND_OUTLINE },
                 properties: { isDebugBoundary: true, debugType: "foi" },
               });
             }
@@ -1102,16 +1103,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               const coords = terrainFOI.geometryCoords;
               if (terrainFOI.featureType === "mountain_system") {
                 const ridgePositions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                viewer.entities.add({
-                  polyline: { positions: ridgePositions, width: 2, material: Cesium.Color.RED.withAlpha(0.8), clampToGround: true },
-                  properties: { isDebugBoundary: true, debugType: "ridge" },
-                });
+                viewer.entities.add({ polyline: { positions: ridgePositions, width: 4, material: Cesium.Color.RED }, properties: { isDebugBoundary: true, debugType: "ridge" } });
               } else {
                 const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                viewer.entities.add({
-                  polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.RED.withAlpha(0.1), outline: true, outlineColor: Cesium.Color.RED.withAlpha(0.6), outlineWidth: 2 },
-                  properties: { isDebugBoundary: true, debugType: "polygon" },
-                });
+                viewer.entities.add({ polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.RED.withAlpha(0.25), outline: true, outlineColor: Cesium.Color.RED, outlineWidth: 3 }, properties: { isDebugBoundary: true, debugType: "polygon" } });
               }
             }
             const foi = getTerrainFOI(id);
@@ -1136,8 +1131,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             if (target) {
               viewer.entities.add({
                 position: Cesium.Cartesian3.fromDegrees(target[0], target[1]),
-                point: { pixelSize: 12, color: Cesium.Color.YELLOW, outlineColor: Cesium.Color.BLACK, outlineWidth: 1 },
-                label: { text: `Target [${target[0].toFixed(2)}, ${target[1].toFixed(2)}]\n${source} | Range: ${(range! / 1000).toFixed(0)}km`, font: "11px sans-serif", fillColor: Cesium.Color.WHITE, outlineColor: Cesium.Color.BLACK, outlineWidth: 2, pixelOffset: new Cesium.Cartesian2(0, -20) },
+                point: { pixelSize: 16, color: Cesium.Color.YELLOW, outlineColor: Cesium.Color.BLACK, outlineWidth: 3 },
+                label: { text: `🎯 ${source} | ${range ? (range / 1000).toFixed(0) : "?"}km\n[${target[0].toFixed(2)}°, ${target[1].toFixed(2)}°]`, font: "bold 13px monospace", fillColor: Cesium.Color.YELLOW, outlineColor: Cesium.Color.BLACK, outlineWidth: 3, pixelOffset: new Cesium.Cartesian2(0, -30), style: Cesium.LabelStyle.FILL_AND_OUTLINE },
                 properties: { isDebugBoundary: true, debugType: "target" },
               });
             }
