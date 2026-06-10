@@ -481,7 +481,7 @@ export default function ExplorerApp() {
   const handleSelectFeature = useCallback(
     async (feature: import("@/features/types").GeographicFeature): Promise<void> => {
       console.log("[Narration] handleSelectFeature start");
-      // 取消正在进行的航线和叙述
+      // 取消正在进行的航线和叙述，然后重置为 false 以开始新的播报
       narrationCancelledRef.current = true;
       narrationQueue.cancel();
       mapRef.current?.stopFlight();
@@ -492,6 +492,7 @@ export default function ExplorerApp() {
       setIsFlyover(false);
       setError(null);
       stopHighlight();
+      narrationCancelledRef.current = false;
 
       // 计算 Camera 参数 — 优先使用 Auto Camera (FOI + Geometry)
       const foi = getTerrainFOI(feature.id);
