@@ -450,6 +450,9 @@ export default function ExplorerApp() {
         await (mapRef.current?.flyToTerrainAndWait(terrain) ?? Promise.resolve());
         console.log("[ExplorerApp] fly complete:", terrain.id);
 
+        // Debug Mode: 显示边界 + FOI + Camera Target + Range
+        mapRef.current?.debugBoundaries(terrain.id);
+
         // 检查是否被取消（用户在飞行中点击了停止）
         if (narrationCancelledRef.current) {
           console.log("[ExplorerApp] narration cancelled during flight");
@@ -569,6 +572,9 @@ export default function ExplorerApp() {
         console.log("[Narration] handleSelectFeature cancelled after flyTo, bailing");
         return;
       }
+
+      // Debug Mode: 显示边界 + FOI + Camera Target + Range
+      mapRef.current?.debugBoundaries(feature.id);
 
       // 讲解 — 使用与面板一致的 effectiveLesson（含翻译）
       if (effectiveLesson) {
