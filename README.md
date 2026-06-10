@@ -111,4 +111,4 @@ ProvenanceRecord   — 数据来源追溯
 
 Copyright © 2026 Audrey Yang. All Rights Reserved.
 
-本项目采用 MIT License 开源 — 详见 [LICENSE](LICENSE) 文件。
+未经版权所有人书面许可，任何人不得复制、修改、分发、再授权或商业使用本项目的任何部分。
