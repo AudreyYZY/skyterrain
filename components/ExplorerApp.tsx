@@ -226,6 +226,7 @@ export default function ExplorerApp() {
 
   /** 停止音频 + 高亮（用户主动取消时调用） */
   const stopSpeaking = useCallback(() => {
+    console.log("[Narration] stopSpeaking");
     narrationManager.cancelCurrent();
     stopAudio();
     stopHighlight();
@@ -251,6 +252,7 @@ export default function ExplorerApp() {
   /** 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用 */
   const speakLessonWithHighlight = useCallback(
     async (lesson: TerrainLesson): Promise<void> => {
+      console.log("[Narration] speakLessonWithHighlight called");
       const session = narrationManager.createSession();
       const ssml = lessonToSSML(lesson);
       const sections = [
@@ -459,6 +461,12 @@ export default function ExplorerApp() {
         await showTerrainLesson(terrain);
         console.log("[ExplorerApp] narration complete:", terrain.id);
 
+        // 检查是否被取消（用户在播报中点击了停止）
+        if (narrationCancelledRef.current) {
+          console.log("[ExplorerApp] narration cancelled during playback");
+          return;
+        }
+
         // 3) 停留片刻，让用户看完地形
         await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
       } catch (err) {
@@ -472,6 +480,7 @@ export default function ExplorerApp() {
   /** 处理全国 Feature 选择 (点击侧边栏或地图标签) — 飞行 + 讲解 */
   const handleSelectFeature = useCallback(
     async (feature: import("@/features/types").GeographicFeature): Promise<void> => {
+      console.log("[Narration] handleSelectFeature start");
       // 取消正在进行的航线和叙述
       narrationCancelledRef.current = true;
       narrationQueue.cancel();
@@ -540,6 +549,7 @@ export default function ExplorerApp() {
       }
 
       // 飞向目标 — Auto Camera 或 fallback
+      console.log("[Narration] handleSelectFeature before flyTo");
       if (cameraParams) {
         await (mapRef.current?.flyToTerrainAndWait({
           id: feature.id,
@@ -553,9 +563,15 @@ export default function ExplorerApp() {
           pitch: cameraParams.pitch,
         }) ?? Promise.resolve());
       }
+      console.log("[Narration] handleSelectFeature after flyTo, narrationCancelled=" + narrationCancelledRef.current);
+      if (narrationCancelledRef.current) {
+        console.log("[Narration] handleSelectFeature cancelled after flyTo, bailing");
+        return;
+      }
 
       // 讲解 — 使用与面板一致的 effectiveLesson（含翻译）
       if (effectiveLesson) {
+        console.log("[Narration] handleSelectFeature before speak, narrationCancelled=" + narrationCancelledRef.current);
         await speakLessonWithHighlight(effectiveLesson);
       }
     },
