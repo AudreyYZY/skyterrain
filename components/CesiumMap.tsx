@@ -5,6 +5,8 @@ import { resolveRouteWaypoints, type ResolvedWaypoint } from "@/lib/routes";
 import { XINJIANG_CORE_FEATURES } from "@/features/xinjiang-core-features";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
+import { getTerrainFOI } from "@/lib/foi-registry";
+import { computeCameraFromPolygon, computeCameraFromRidge } from "@/lib/auto-camera";
 
 /** 所有 Feature (新疆 + 全国) */
 const ALL_FEATURES: GeographicFeature[] = [...XINJIANG_CORE_FEATURES, ...CHINA_CORE_FEATURES];
@@ -872,8 +874,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
 
               // 2. 绘制 FOI Point (红点)
-              const foiModule = require("@/lib/foi-registry");
-              const terrainFOI = foiModule.getTerrainFOI(terrainId);
+              const terrainFOI = getTerrainFOI(terrainId);
               if (terrainFOI) {
                 const foiPos = Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat);
                 viewer.entities.add({
@@ -886,12 +887,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               }
 
               // 3. 计算 Auto Camera 参数
-              const autoCameraModule = require("@/lib/auto-camera");
               let cameraParams: any;
               if (terrainFOI?.featureType === "mountain_system") {
-                cameraParams = autoCameraModule.computeCameraFromRidge(terrainFOI.geometryCoords, terrainFOI.primary);
+                cameraParams = computeCameraFromRidge(terrainFOI.geometryCoords, terrainFOI.primary);
               } else if (terrainFOI) {
-                cameraParams = autoCameraModule.computeCameraFromPolygon(terrainFOI.geometryCoords, terrainFOI.primary);
+                cameraParams = computeCameraFromPolygon(terrainFOI.geometryCoords, terrainFOI.primary);
               }
               if (cameraParams) {
                 // 4. 绘制 Camera Target (蓝点)
