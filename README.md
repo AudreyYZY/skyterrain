@@ -109,6 +109,10 @@ ProvenanceRecord   — 数据来源追溯
 
 ## 许可
 
-Copyright © 2026 Audrey Yang. All Rights Reserved.
+版权所有 © 2026 Audrey Yang
 
-未经版权所有人书面许可，任何人不得复制、修改、分发、再授权或商业使用本项目的任何部分。
+保留所有权利。
+未经版权所有人书面许可，不得复制、修改、
+分发、再授权或商业使用本项目。
+
+详见 [LICENSE](LICENSE) 文件。
