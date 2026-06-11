@@ -570,7 +570,7 @@ const LOESS: TerrainFOI = {
 const PAMIR: TerrainFOI = {
   terrainId: "pamir",
   terrainName: "帕米尔高原",
-  featureType: "mountain_system",
+  featureType: "plateau",
   primary: {
     name: "慕士塔格峰",
     lon: 75.17,
