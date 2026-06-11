@@ -552,7 +552,9 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
                     console.log(`[CesiumMap] Camera actual position: [${camLon.toFixed(4)}, ${camLat.toFixed(4)}] height=${Math.round(camH)}m (${Math.round(camH/1000)}km)`);
                     console.log(`[CesiumMap] Camera orientation: heading=${camHeading.toFixed(1)}° pitch=${camPitch.toFixed(1)}° roll=${camRoll.toFixed(1)}°`);
-                    console.log(`[CesiumMap] Camera FOV: ${Cesium.Math.toDegrees(cam.frustum.fov).toFixed(1)}°`);
+                    const frustum = cam.frustum;
+                    const fovDeg = frustum instanceof Cesium.PerspectiveFrustum && frustum.fov ? Cesium.Math.toDegrees(frustum.fov).toFixed(1) : 'N/A';
+                    console.log(`[CesiumMap] Camera FOV: ${fovDeg}°`);
                     console.log(`[CesiumMap] Target on screen: [${screenX?.toFixed(3) ?? 'null'}, ${screenY?.toFixed(3) ?? 'null'}] (0,0=左上，0.5,0.5=中心，1,1=右下)`);
                     console.log(`[CesiumMap] ViewRectangle: [${viewRect?.west.toFixed(4)}, ${viewRect?.south.toFixed(4)}] → [${viewRect?.east.toFixed(4)}, ${viewRect?.north.toFixed(4)}]`);
                     console.log(`[CesiumMap] Target in ViewRectangle: ${viewRect ? (viewRect.west <= terrain.lon && terrain.lon <= viewRect.east && viewRect.south <= terrain.lat && terrain.lat <= viewRect.north ? 'YES' : 'NO') : 'N/A'}`);
