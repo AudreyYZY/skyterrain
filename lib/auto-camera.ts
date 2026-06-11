@@ -4,17 +4,26 @@
  * 输入: Terrain Geometry (Polygon/LineString) + FOI
  * 输出: target, heading, pitch, range
  *
- * 规则:
- * - mountain: 优先观察主脊或代表性山峰
- * - basin: 优先观察中心区域
- * - plateau: 优先观察典型地貌区域
+ * target = 相机位置 (camera position)
+ * heading = 相机朝向 (0=N, 90=E, 180=S, 270=W)
+ * pitch = 俯角 (negative = looking down)
+ *
+ * 核心逻辑:
+ *   相机不直接设在 FOI 正上方。
+ *   根据 heading 和 pitch, 相机向反方向偏移,
+ *   使得屏幕中心落在 FOI 上。
+ *
+ * 例如东西走向山脉 (heading=0, 朝北看):
+ *   相机设在 FOI 南方偏移处, 朝北看 → FOI 在屏幕中心
+ * 例如南北走向山脉 (heading=270, 朝西看):
+ *   相机设在 FOI 东方偏移处, 朝西看 → FOI 在屏幕中心
+ *
+ * 偏移距离 = range * tan(abs(pitch)) (地面投影距离)
  */
 
-import type { Position } from "@/features/types";
-
 export interface CameraParams {
-  target: [number, number]; // [lon, lat]
-  heading: number;          // degrees
+  target: [number, number]; // [lon, lat] — 相机位置
+  heading: number;          // degrees (0=N, 90=E, 180=S, 270=W)
   pitch: number;            // degrees (negative = looking down)
   range: number;            // meters above ground
 }
@@ -55,7 +64,6 @@ export function extractPolygonCoords(geometry: { type: string; coordinates: any 
     return (geometry.coordinates[0] as [number, number][]);
   }
   if (geometry.type === "MultiPolygon") {
-    // 取最大的 polygon
     let maxArea = 0;
     let best: [number, number][] = [];
     for (const poly of geometry.coordinates as [number, number][][][]) {
@@ -93,6 +101,96 @@ function bearingDeg(lon1: number, lat1: number, lon2: number, lat2: number): num
 }
 
 /**
+ * 根据 heading 反算偏移量, 使相机面向目标
+ *
+ * Cesium flyTo 行为:
+ *   destination = 相机位置
+ *   orientation.heading = 相机朝向
+ *   orientation.pitch = 俯角
+ *
+ * 当相机直接设在目标正上方时 (cameraAt),
+ *   heading=0 → 屏幕中心落在目标北方
+ *   偏移量 = range * tan(abs(pitch))
+ *
+ * 修复: 将相机位置向反方向偏移,
+ *   使屏幕中心回到 FOI。
+ *
+ * 例: 东西走向山脉 (heading=0, 朝北看)
+ *   相机设在 FOI 南方 range*tan(|pitch|) 处, 朝北看
+ *   → 屏幕中心 = FOI
+ */
+function offsetPositionForHeading(
+  foiLon: number,
+  foiLat: number,
+  heading: number,
+  pitchDeg: number,
+  rangeMeters: number
+): [number, number] {
+  const groundDistance = rangeMeters * Math.tan((Math.abs(pitchDeg) * Math.PI) / 180);
+
+  // 相机朝向的反方向 = (heading + 180) % 360
+  const backBearing = (heading + 180) % 360;
+  const backRad = (backBearing * Math.PI) / 180;
+
+  // 地球半径
+  const R = 6371000;
+  const d = groundDistance;
+
+  // 沿方位角 backBearing 移动 groundDistance 米
+  const lat1Rad = foiLat * Math.PI / 180;
+  const lon1Rad = foiLon * Math.PI / 180;
+
+  const newLat = Math.asin(
+    Math.sin(lat1Rad) * Math.cos(d / R) +
+    Math.cos(lat1Rad) * Math.sin(d / R) * Math.cos(backRad)
+  );
+  const newLon = lon1Rad + Math.atan2(
+    Math.sin(backRad) * Math.sin(d / R) * Math.cos(lat1Rad),
+    Math.cos(d / R) - Math.sin(lat1Rad) * Math.sin(newLat)
+  );
+
+  return [
+    newLon * 180 / Math.PI,
+    newLat * 180 / Math.PI,
+  ];
+}
+
+/**
+ * 计算山地观察方向
+ * 东西走向 → 从南侧看 (heading=0, 朝北)
+ * 南北走向 → 从东侧看 (heading=270, 朝西)
+ */
+function computeMountainHeading(bbox: { spanLon: number; spanLat: number }): number {
+  if (bbox.spanLon > bbox.spanLat) {
+    // 东西走向: 从南侧看, 朝北
+    return 0;
+  }
+  // 南北走向: 从东侧看, 朝西
+  return 270;
+}
+
+/**
+ * 基于 span 自动计算相机高度
+ * 地形越大, 飞得越高
+ */
+function computeRangeForSpan(spanKm: number): number {
+  if (spanKm < 50) {
+    return 50_000;
+  }
+  if (spanKm < 300) {
+    return spanKm * 500;
+  }
+  if (spanKm < 1000) {
+    return spanKm * 400;
+  }
+  return Math.min(spanKm * 300, 500_000);
+}
+
+function clamp(val: number, min: number, max: number): number {
+  return Math.max(min, Math.min(max, val));
+}
+
+/**
  * 从 Polygon geometry 计算 Camera 参数
  * 用于 basin / plateau
  */
@@ -102,22 +200,15 @@ export function computeCameraFromPolygon(
 ): CameraParams {
   const bbox = computeBBox(polygonCoords);
   const maxSpan = Math.max(bbox.spanLon, bbox.spanLat);
-
-  // 1 度纬度 ≈ 111km
   const spanKm = maxSpan * 111;
 
-  // FIX EXPERIMENT: fixed range to test if height is the sole issue
-  const range = 300_000;
-
-  // pitch: 更大的 span → 更平的视角
+  const range = computeRangeForSpan(spanKm);
   const pitch = clamp(-35 - (spanKm / 1000) * 2, -50, -25);
 
-  // target: 优先使用 FOI, 否则 bbox 中心
-  const target: [number, number] = [primaryFOI.lon, primaryFOI.lat];
-
+  // 面状地形: 从正上方俯瞰
   return {
-    target,
-    heading: 0, // basin/plateau 北朝上
+    target: [primaryFOI.lon, primaryFOI.lat],
+    heading: 0,
     pitch,
     range,
   };
@@ -126,6 +217,9 @@ export function computeCameraFromPolygon(
 /**
  * 从 LineString geometry + FOI 计算 Camera 参数
  * 用于 mountain_system
+ *
+ * 核心: 相机位置 offset 从 FOI 反方向,
+ *   使得屏幕中心落在 FOI 上。
  */
 export function computeCameraFromRidge(
   ridgeCoords: [number, number][],
@@ -135,30 +229,27 @@ export function computeCameraFromRidge(
   const maxSpan = Math.max(bbox.spanLon, bbox.spanLat);
   const spanKm = maxSpan * 111;
 
-  // FIX EXPERIMENT: fixed range to test if height is the sole issue
-  const range = 300_000;
-
-  // pitch: 山脉用更陡的角度
+  const range = computeRangeForSpan(spanKm);
   const pitch = clamp(-38 - (spanKm / 1000) * 1.5, -50, -30);
+  const heading = computeMountainHeading(bbox);
 
-  // heading: 基于 bbox 长轴方向, 取垂直方向
-  // 如果东西跨度 > 南北跨度 → 山脊大致东西走向 → Camera 从南侧观察 (heading=0)
-  // 如果南北跨度 > 东西跨度 → 山脊大致南北走向 → Camera 从东侧观察 (heading=90)
-  let heading = 0;
-  if (bbox.spanLon > bbox.spanLat) {
-    // 东西走向山脉 (秦岭、天山等) → 从南侧看
-    heading = 0;
-  } else {
-    // 南北走向山脉 (横断山脉等) → 从东侧看
-    heading = 90;
-  }
+  // 关键: target = offset 后的位置,
+  //   不是 FOI 本身。
+  //   相机设在 target 正上方,
+  //   朝 heading 方向看,
+  //   屏幕中心 = FOI。
+  const cameraPos = offsetPositionForHeading(
+    primaryFOI.lon,
+    primaryFOI.lat,
+    heading,
+    pitch,
+    range
+  );
 
-  // target: FOI 位置
-  const target: [number, number] = [primaryFOI.lon, primaryFOI.lat];
-
-  return { target, heading, pitch, range };
-}
-
-function clamp(val: number, min: number, max: number): number {
-  return Math.max(min, Math.min(max, val));
+  return {
+    target: cameraPos,
+    heading,
+    pitch,
+    range,
+  };
 }
