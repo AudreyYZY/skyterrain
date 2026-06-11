@@ -555,14 +555,29 @@ export default function ExplorerApp() {
       // 飞向目标 — Auto Camera 或 fallback
       console.log("[Narration] handleSelectFeature before flyTo");
       if (cameraParams) {
-        await (mapRef.current?.flyToTerrainAndWait({
+        console.log("[CameraChain] INPUT feature:", feature.id, feature.name);
+        console.log("[CameraChain] FOI primary:", foi?.primary.name, `[${foi?.primary.lon}, ${foi?.primary.lat}]`);
+        console.log("[CameraChain] cameraParams.target:", `[${cameraParams.target[0].toFixed(4)}, ${cameraParams.target[1].toFixed(4)}]`);
+        console.log("[CameraChain] cameraParams.heading:", cameraParams.heading.toFixed(1) + "°");
+        console.log("[CameraChain] cameraParams.pitch:", cameraParams.pitch.toFixed(1) + "°");
+        console.log("[CameraChain] cameraParams.range:", cameraParams.range, "m");
+
+        const flyPayload = {
           id: feature.id,
           name: feature.name,
           lat: cameraParams.target[1],
           lon: cameraParams.target[0],
           elevation: 0,
           cameraHeight: cameraParams.range,
-        } as any, {
+        };
+        console.log("[CameraChain] flyToTerrainAndWait payload:");
+        console.log("  lat:", flyPayload.lat.toFixed(4));
+        console.log("  lon:", flyPayload.lon.toFixed(4));
+        console.log("  cameraHeight:", flyPayload.cameraHeight);
+        console.log("  heading:", cameraParams.heading.toFixed(1) + "°");
+        console.log("  pitch:", cameraParams.pitch.toFixed(1) + "°");
+
+        await (mapRef.current?.flyToTerrainAndWait(flyPayload as any, {
           heading: cameraParams.heading,
           pitch: cameraParams.pitch,
         }) ?? Promise.resolve());

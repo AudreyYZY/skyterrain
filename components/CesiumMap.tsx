@@ -499,6 +499,16 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         const heading = cameraOptions?.heading ?? 0;
         const pitchDeg = cameraOptions?.pitch ?? WINDOW_PITCH_DEG;
 
+        console.log("[CesiumMap.flyToTerrainAndWait] INPUT:");
+        console.log("  terrain.id:", terrain.id);
+        console.log("  terrain.lat:", terrain.lat);
+        console.log("  terrain.lon:", terrain.lon);
+        console.log("  terrain.cameraHeight:", terrain.cameraHeight);
+        console.log("  terrain.category:", terrain.category);
+        console.log("  cameraOptions.heading:", heading.toFixed(1) + "°");
+        console.log("  cameraOptions.pitch:", pitchDeg.toFixed(1) + "°");
+        console.log("  viewHeightForTerrain result:", viewHeightForTerrain(terrain, terrain.cameraHeight));
+
         return cameraAt(
           Cesium,
           viewer,
