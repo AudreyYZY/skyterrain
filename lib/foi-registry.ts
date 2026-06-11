@@ -10,7 +10,7 @@ import type { FOI } from "./auto-camera";
 export interface TerrainFOI {
   terrainId: string;
   terrainName: string;
-  featureType: "mountain_system" | "basin" | "plateau";
+  featureType: "mountain_system" | "basin" | "plateau" | "plain";
   /** 主 FOI — Camera 默认观察目标 */
   primary: FOI;
   /** 辅助 FOI — 讲解节点 */
@@ -33,10 +33,10 @@ const QINLING: TerrainFOI = {
   featureType: "mountain_system",
   primary: {
     name: "太白山",
-    lon: 107.76,
+    lon: 107.62,
     lat: 33.95,
     type: "peak",
-    description: "秦岭最高峰, 海拔3771m, 南北分界标志",
+    description: "秦岭最高峰, 海拔3767m, 南北分界标志",
   },
   secondary: [
     {
@@ -48,7 +48,7 @@ const QINLING: TerrainFOI = {
     },
     {
       name: "终南山",
-      lon: 109.05,
+      lon: 108.99,
       lat: 33.93,
       type: "ridge",
       description: "秦岭中段, 道教圣地",
@@ -78,7 +78,7 @@ const QINLING: TerrainFOI = {
 // BBox: [94.35, 36.05] → [102.96, 40.14]
 // Span: ~870km NW-SE, ~450km N-S
 // 主脊走向: NW-SE
-// 主 FOI: 岗什卡雪峰 (代表性雪峰)
+// 主 FOI: 岗什卡雪峰 (祁连山东段雪峰)
 // ============================================================
 const QILIAN: TerrainFOI = {
   terrainId: "qilian",
@@ -86,18 +86,18 @@ const QILIAN: TerrainFOI = {
   featureType: "mountain_system",
   primary: {
     name: "岗什卡雪峰",
-    lon: 101.47,
-    lat: 37.70,
+    lon: 101.08,
+    lat: 36.69,
     type: "peak",
-    description: "祁连山东段最高峰之一, 海拔5254m, 冰川发育",
+    description: "祁连山东段雪峰, 海拔5254m, 冰川发育",
   },
   secondary: [
     {
-      name: "团结峰",
-      lon: 98.70,
+      name: "康兹依秀",
+      lon: 97.72,
       lat: 38.50,
       type: "peak",
-      description: "祁连山最高峰, 海拔5827m",
+      description: "祁连山实际最高峰, 海拔5808m, 位于西段",
     },
     {
       name: "黑河源区",
@@ -184,8 +184,8 @@ const QAIDAM: TerrainFOI = {
   featureType: "basin",
   primary: {
     name: "察尔汗盐湖",
-    lon: 95.30,
-    lat: 36.80,
+    lon: 95.10,
+    lat: 36.35,
     type: "center",
     description: "中国最大盐湖, 柴达木核心地貌",
   },
@@ -231,7 +231,7 @@ const YUNNAN_GUIZHOU: TerrainFOI = {
   featureType: "plateau",
   primary: {
     name: "昆明",
-    lon: 102.83,
+    lon: 102.72,
     lat: 25.00,
     type: "city",
     description: "春城, 云贵高原核心城市",
@@ -282,7 +282,7 @@ const ALTAI: TerrainFOI = {
   featureType: "mountain_system",
   primary: {
     name: "喀纳斯湖",
-    lon: 87.98,
+    lon: 87.05,
     lat: 48.73,
     type: "center",
     description: "阿尔泰山标志性高山湖泊, 海拔1374m",
@@ -342,11 +342,11 @@ const INNER_MONGOLIA: TerrainFOI = {
   terrainName: "内蒙古高原",
   featureType: "plateau",
   primary: {
-    name: "锡林郭勒",
-    lon: 114.50,
-    lat: 44.00,
-    type: "center",
-    description: "内蒙古高原中部典型草原地貌",
+    name: "锡林浩特",
+    lon: 116.09,
+    lat: 43.95,
+    type: "city",
+    description: "内蒙古中部城市, 锡林郭勒盟首府",
   },
   secondary: [
     {
@@ -419,15 +419,15 @@ const JUNGGAR_BASIN: TerrainFOI = {
   secondary: [
     {
       name: "艾里克湖",
-      lon: 86.30,
-      lat: 45.00,
+      lon: 85.78,
+      lat: 45.93,
       type: "center",
-      description: "盆地中心典型盐湖地貌",
+      description: "盆地北部典型湖泊",
     },
     {
       name: "古尔班通古特沙漠",
-      lon: 88.00,
-      lat: 45.50,
+      lon: 86.67,
+      lat: 46.28,
       type: "center",
       description: "中国第二大沙漠, 固定半固定沙丘",
     },
@@ -460,23 +460,23 @@ const KUNLUN: TerrainFOI = {
   featureType: "mountain_system",
   primary: {
     name: "昆仑山口",
-    lon: 94.00,
-    lat: 36.10,
+    lon: 94.77,
+    lat: 36.23,
     type: "valley",
-    description: "昆仑山中段, 青藏公路必经之地",
+    description: "昆仑山中段, 青藏公路必经之地, 海拔4678m",
   },
   secondary: [
     {
-      name: "团结峰",
-      lon: 94.99,
-      lat: 36.32,
+      name: "公格尔峰",
+      lon: 75.25,
+      lat: 37.83,
       type: "peak",
-      description: "昆仑山东段最高峰, 海拔6996m",
+      description: "昆仑山著名雪峰, 海拔7649m",
     },
     {
       name: "慕士塔格峰",
-      lon: 75.00,
-      lat: 38.48,
+      lon: 75.17,
+      lat: 38.39,
       type: "peak",
       description: "昆仑山西段标志性雪峰, 海拔7509m",
     },
@@ -573,8 +573,8 @@ const PAMIR: TerrainFOI = {
   featureType: "mountain_system",
   primary: {
     name: "慕士塔格峰",
-    lon: 75.00,
-    lat: 38.48,
+    lon: 75.17,
+    lat: 38.39,
     type: "peak",
     description: "帕米尔高原标志雪峰, 海拔7509m",
   },
@@ -695,8 +695,8 @@ const TAKLAMAKAN: TerrainFOI = {
     },
     {
       name: "策勒",
-      lon: 80.78,
-      lat: 37.10,
+      lon: 79.73,
+      lat: 36.69,
       type: "city",
       description: "沙漠西南缘绿洲",
     },
@@ -736,7 +736,7 @@ const TARIM_BASIN: TerrainFOI = {
   secondary: [
     {
       name: "塔什库尔干",
-      lon: 75.30,
+      lon: 75.43,
       lat: 37.77,
       type: "city",
       description: "盆地西南缘帕米尔门户",
@@ -744,7 +744,7 @@ const TARIM_BASIN: TerrainFOI = {
     {
       name: "和田",
       lon: 79.92,
-      lat: 37.10,
+      lat: 37.02,
       type: "city",
       description: "塔里木盆地南缘古城",
     },
@@ -768,6 +768,388 @@ const TARIM_BASIN: TerrainFOI = {
 };
 
 // ============================================================
+// 大兴安岭
+// ============================================================
+// BBox: [111, 127, 41, 53]
+// Span: ~1400km N-S, ~200-400km E-W
+// 主脊走向: 东北-西南
+// 主 FOI: 东坡断崖 (标志性断崖地貌)
+// ============================================================
+const DAXINGANLING: TerrainFOI = {
+  terrainId: "daxinganling",
+  terrainName: "大兴安岭",
+  featureType: "mountain_system",
+  primary: {
+    name: "东坡断崖",
+    lon: 123.50,
+    lat: 49.50,
+    type: "ridge",
+    description: "大兴安岭东坡断崖, 落差900-1200m, 是平原与森林的清晰分界",
+  },
+  secondary: [
+    {
+      name: "阿尔山火山群",
+      lon: 119.80,
+      lat: 46.20,
+      type: "peak",
+      description: "火山锥、火山口湖, 在西侧高原面上清晰可见",
+    },
+    {
+      name: "长白山天池",
+      lon: 128.05,
+      lat: 42.03,
+      type: "peak",
+      description: "大兴安岭南端火山湖, 圆形火山口, 雪盖清晰",
+    },
+  ],
+  geometryCoords: [
+    [117, 53], [120, 53], [123, 52], [125, 50],
+    [127, 48], [127, 45], [126, 43], [124, 42],
+    [122, 43], [120, 44], [118, 46], [117, 48],
+    [116, 50], [117, 53],
+  ],
+};
+
+// ============================================================
+// 横断山脉
+// ============================================================
+// BBox: [97.5, 102.5, 24.5, 33.0]
+// Span: ~900km N-S, ~400km E-W
+// 主脊走向: 南北
+// 主 FOI: 贡嘎山 (最高峰, 最醒目)
+// ============================================================
+const HENGDUAN: TerrainFOI = {
+  terrainId: "hengduan",
+  terrainName: "横断山脉",
+  featureType: "mountain_system",
+  primary: {
+    name: "贡嘎山",
+    lon: 101.8792,
+    lat: 29.5958,
+    type: "peak",
+    description: "横断山脉最高峰, 海拔7556m, 四川最高峰",
+  },
+  secondary: [
+    {
+      name: "卡瓦格博峰",
+      lon: 98.68,
+      lat: 28.44,
+      type: "peak",
+      description: "梅里雪山主峰, 海拔6740m, 滇西北最高峰",
+    },
+    {
+      name: "虎跳峡",
+      lon: 100.05,
+      lat: 27.10,
+      type: "valley",
+      description: "金沙江深切峡谷, 相对高差超3000m, 世界最深峡谷之一",
+    },
+  ],
+  geometryCoords: [
+    [98.0, 31.0], [99.0, 31.0], [100.5, 30.5], [101.5, 30.0],
+    [102.0, 29.0], [102.5, 28.0], [102.0, 27.0], [101.0, 26.0],
+    [100.0, 25.5], [99.0, 25.5], [98.0, 26.0], [97.5, 27.0],
+    [97.5, 28.5], [97.8, 29.5], [98.0, 30.5], [98.0, 31.0],
+  ],
+};
+
+// ============================================================
+// 喜马拉雅山脉
+// ============================================================
+// BBox: [74.35, 95.06, 26.70, 36.50]
+// Span: ~2400km E-W
+// 主脊走向: 东西
+// 主 FOI: 珠穆朗玛峰 (世界最高峰)
+// ============================================================
+const HIMALAYA: TerrainFOI = {
+  terrainId: "himalaya",
+  terrainName: "喜马拉雅山脉",
+  featureType: "mountain_system",
+  primary: {
+    name: "珠穆朗玛峰",
+    lon: 86.925,
+    lat: 27.988,
+    type: "peak",
+    description: "世界最高峰, 海拔8848m, 金字塔形雪顶",
+  },
+  secondary: [
+    {
+      name: "洛子峰",
+      lon: 86.933,
+      lat: 27.962,
+      type: "peak",
+      description: "世界第四高峰, 海拔8516m, 紧邻珠峰东侧",
+    },
+    {
+      name: "马卡鲁峰",
+      lon: 87.089,
+      lat: 27.890,
+      type: "peak",
+      description: "世界第五高峰, 海拔8485m, 独特四方形金字塔形",
+    },
+  ],
+  geometryCoords: [
+    [74.35, 35.14], [76.50, 34.50], [78.00, 33.00],
+    [80.00, 31.00], [82.00, 30.00], [84.00, 28.85],
+    [85.00, 28.30], [86.50, 28.00], [86.93, 27.99],
+    [88.00, 27.85], [89.00, 27.80], [90.00, 28.00],
+    [91.00, 27.90], [92.00, 27.80], [93.00, 28.20],
+    [95.06, 29.63], [95.06, 27.00], [93.00, 26.70],
+    [91.00, 27.00], [89.00, 27.00], [87.00, 27.00],
+    [85.00, 27.00], [83.00, 27.50], [81.00, 28.00],
+    [79.00, 29.00], [77.00, 30.00], [75.00, 32.00],
+    [74.35, 33.00], [74.35, 35.14],
+  ],
+};
+
+// ============================================================
+// 青藏高原
+// ============================================================
+// BBox: [73, 105, 26, 40]
+// Span: ~3200km E-W, ~1550km N-S
+// 主 FOI: 珠穆朗玛峰 (从飞机上最醒目的地标)
+// ============================================================
+const QINGHAI_TIBET: TerrainFOI = {
+  terrainId: "qinghai-tibet",
+  terrainName: "青藏高原",
+  featureType: "plateau",
+  primary: {
+    name: "珠穆朗玛峰",
+    lon: 86.925,
+    lat: 27.988,
+    type: "peak",
+    description: "世界最高峰, 海拔8848m, 从万米高空清晰可见金字塔形雪顶",
+  },
+  secondary: [
+    {
+      name: "纳木错",
+      lon: 90.73,
+      lat: 31.42,
+      type: "center",
+      description: "世界上海拔最高的大型湖泊之一, 海拔4718m, 碧蓝湖水与纳木那尼雪峰对比鲜明",
+    },
+    {
+      name: "青海湖",
+      lon: 100.133,
+      lat: 37.00,
+      type: "center",
+      description: "中国最大咸水湖, 高原东北部最醒目的蓝色地标",
+    },
+  ],
+  geometryCoords: [
+    [73.0, 39.0], [76.0, 35.0], [78.0, 30.0],
+    [80.0, 28.0], [85.0, 27.0], [88.0, 27.5],
+    [90.0, 28.0], [92.0, 28.5], [95.0, 28.0],
+    [97.0, 28.0], [98.0, 29.0], [99.0, 31.0],
+    [100.0, 33.0], [102.0, 34.0], [103.0, 35.0],
+    [104.0, 36.0], [105.0, 37.0], [102.0, 38.0],
+    [98.0, 38.0], [95.0, 38.0], [90.0, 37.0],
+    [85.0, 36.0], [80.0, 37.0], [76.0, 38.0],
+    [73.0, 39.0],
+  ],
+};
+
+// ============================================================
+// 东北平原
+// ============================================================
+// BBox: [117, 135, 40, 49]
+// Span: ~2000km E-W, ~1000km N-S
+// 主 FOI: 兴凯湖 (最大湖泊, 中俄边境)
+// ============================================================
+const NORTHEAST: TerrainFOI = {
+  terrainId: "northeast",
+  terrainName: "东北平原",
+  featureType: "plain",
+  primary: {
+    name: "兴凯湖",
+    lon: 132.73,
+    lat: 45.20,
+    type: "center",
+    description: "东北平原最大湖泊(2200km2), 中俄边境浅水湖, 从空中可见大片水域",
+  },
+  secondary: [
+    {
+      name: "查干湖",
+      lon: 124.49,
+      lat: 45.83,
+      type: "center",
+      description: "松嫩平原著名湖泊, 冬季传统冰捕鱼文化",
+    },
+    {
+      name: "辽河口红海滩",
+      lon: 121.98,
+      lat: 40.95,
+      type: "center",
+      description: "亚洲最大芦苇沼泽湿地, 秋季红色海岸线绵延数十公里",
+    },
+  ],
+  geometryCoords: [
+    [117, 40], [120, 40], [124, 40.5], [125, 41],
+    [127, 42], [130, 43], [133, 45], [135, 47],
+    [135, 49], [133, 49], [130, 48.5], [128, 48],
+    [125, 48.5], [122, 48.5], [120, 48], [118, 47],
+    [117, 45], [117, 43], [117, 40],
+  ],
+};
+
+// ============================================================
+// 华北平原
+// ============================================================
+// BBox: [114, 122, 32, 43]
+// Span: ~800km E-W, ~1200km N-S
+// 主 FOI: 黄河入海口 (地上悬河入海, 壮观)
+// ============================================================
+const NORTH_CHINA: TerrainFOI = {
+  terrainId: "north-china",
+  terrainName: "华北平原",
+  featureType: "plain",
+  primary: {
+    name: "黄河入海口",
+    lon: 118.95,
+    lat: 37.90,
+    type: "center",
+    description: "黄河携带大量泥沙入渤海, 从空中可见扇形沉积羽流与海水的鲜明对比",
+  },
+  secondary: [
+    {
+      name: "开封地上悬河",
+      lon: 114.35,
+      lat: 34.80,
+      type: "center",
+      description: "黄河河床高出地面10m, 从空中可见金色河带与两侧地面的显著高差",
+    },
+    {
+      name: "华北平原核心区",
+      lon: 117.16,
+      lat: 36.58,
+      type: "center",
+      description: "广袤的矩形农田网格, 灌溉渠和高铁走廊横穿无垠平原",
+    },
+  ],
+  geometryCoords: [
+    [114, 32], [117, 32], [120, 32], [122, 32],
+    [122, 36], [122, 40], [122, 43],
+    [118, 43], [115, 43], [114, 43],
+    [114, 38], [114, 35], [114, 32],
+  ],
+};
+
+// ============================================================
+// 长江中下游平原
+// ============================================================
+// BBox: [110, 122, 24, 33]
+// Span: ~1200km E-W, ~1000km N-S
+// 主 FOI: 鄱阳湖 (中国最大淡水湖)
+// ============================================================
+const YANGTZE: TerrainFOI = {
+  terrainId: "yangtze",
+  terrainName: "长江中下游平原",
+  featureType: "plain",
+  primary: {
+    name: "鄱阳湖",
+    lon: 116.28,
+    lat: 29.08,
+    type: "center",
+    description: "中国最大淡水湖, 从空中可见湖面与密集湖汊水网的显著变化",
+  },
+  secondary: [
+    {
+      name: "洞庭湖",
+      lon: 112.95,
+      lat: 29.31,
+      type: "center",
+      description: "第二大淡水湖, 放射状水系汇入长江, 湖汊密布",
+    },
+    {
+      name: "长江入海口(崇明岛)",
+      lon: 121.90,
+      lat: 31.50,
+      type: "center",
+      description: "长江泥沙沉积形成的冲积岛群, 从空中可见椭圆形轮廓和分流河道",
+    },
+  ],
+  geometryCoords: [
+    [110, 24], [115, 24], [120, 24], [122, 24],
+    [122, 28], [122, 32], [122, 33],
+    [118, 33], [114, 33], [110, 33],
+    [110, 28], [110, 24],
+  ],
+};
+
+// ============================================================
+// 天山 (Xinjiang)
+// ============================================================
+const TIANSHAN: TerrainFOI = {
+  terrainId: "tianshan",
+  terrainName: "天山",
+  featureType: "mountain_system",
+  primary: {
+    name: "博格达峰",
+    lon: 88.25,
+    lat: 43.74,
+    type: "peak",
+    description: "天山东段最高峰之一, 海拔5445m, 终年积雪",
+  },
+  secondary: [
+    {
+      name: "天池",
+      lon: 88.11,
+      lat: 43.87,
+      type: "center",
+      description: "天山著名冰蚀高山湖, 海拔1910m, 深蓝湖水与雪峰对比鲜明",
+    },
+    {
+      name: "伊犁河谷",
+      lon: 81.00,
+      lat: 43.50,
+      type: "valley",
+      description: "天山西段重要绿洲谷地, 气候湿润, 农业带清晰可见",
+    },
+  ],
+  geometryCoords: [
+    [74.0, 41.0], [76.0, 42.0], [78.0, 42.5], [80.0, 43.0],
+    [82.0, 43.5], [84.0, 44.0], [86.0, 44.0], [88.0, 43.5],
+    [90.0, 43.0], [92.0, 42.5], [94.0, 42.0], [95.0, 41.5],
+  ],
+};
+
+// ============================================================
+// 赛里木湖 (Xinjiang)
+// ============================================================
+const SAYRAM: TerrainFOI = {
+  terrainId: "sayram",
+  terrainName: "赛里木湖",
+  featureType: "basin",
+  primary: {
+    name: "赛里木湖心",
+    lon: 81.145,
+    lat: 44.607,
+    type: "center",
+    description: "天山北坡高山湖泊, 湖面海拔2073m, 深蓝椭圆湖",
+  },
+  secondary: [
+    {
+      name: "天山雪峰背景",
+      lon: 81.30,
+      lat: 44.70,
+      type: "peak",
+      description: "赛里木湖北侧天山雪峰, 深蓝湖水与白色雪峰对比",
+    },
+    {
+      name: "环湖草原",
+      lon: 81.00,
+      lat: 44.55,
+      type: "center",
+      description: "湖岸线外侧的哈萨克草原, 深蓝色与翠绿色对比鲜明",
+    },
+  ],
+  geometryCoords: [
+    [80.8, 44.4], [81.0, 44.6], [81.4, 44.7], [81.7, 44.6],
+    [81.8, 44.4], [81.5, 44.2], [81.2, 44.2], [80.8, 44.4],
+  ],
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -786,6 +1168,14 @@ export const TERRAIN_FOIS: TerrainFOI[] = [
   TAIHANG,
   TAKLAMAKAN,
   TARIM_BASIN,
+  // Newly added — 7 terrains without FOI entries
+  DAXINGANLING,
+  HENGDUAN,
+  HIMALAYA,
+  QINGHAI_TIBET,
+  NORTHEAST,
+  NORTH_CHINA,
+  YANGTZE,
 ];
 
 export function getTerrainFOI(terrainId: string): TerrainFOI | undefined {

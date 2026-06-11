@@ -15,11 +15,11 @@ const QINLING: GeographicFeature = {
   id: "qinling",
   name: "秦岭",
   featureType: "mountain_system",
-  elevation: 3771, // 太白山主峰，秦岭最高峰
+  elevation: 3767, // 太白山主峰，秦岭最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [107.76, 33.95], heading: 0, pitch: -30, range: 300000 },
+  cameraGeometry: { target: [107.62, 33.95], heading: 0, pitch: -30, range: 300000 },
   storyGeometry: [
-    { id: "qinling-1", name: "太白山", position: [107.8, 34.0], text: "太白山是秦岭最高峰，海拔3771.2米。" },
+    { id: "qinling-1", name: "太白山", position: [107.62, 33.95], text: "太白山是秦岭最高峰，海拔3767米。" },
     { id: "qinling-2", name: "华山", position: [110.1, 34.5], text: "华山以险峻著称，是中国五岳之一。" },
   ],
   label: { labelText: "秦岭", labelType: "ridge", rotation: -5, priority: 95, minZoom: 1, maxZoom: 20 },
@@ -33,7 +33,7 @@ const QINLING: GeographicFeature = {
   },
   story: {
     seeing: "秦岭横贯中国中部，是中国南北地理分界线。从飞机上看，山脊呈东西走向，将中国分为南方和北方。山北是黄河流域的黄土高原，山南是长江流域的四川盆地，分界非常明显。",
-    formation: "秦岭是扬子板块与华北板块碰撞形成的褶皱山系，新生代以来持续抬升。山体主要由变质岩和花岗岩组成，太白山海拔3771米，是秦岭最高峰。",
+    formation: "秦岭是扬子板块与华北板块碰撞形成的褶皱山系，新生代以来持续抬升。山体主要由变质岩和花岗岩组成，太白山海拔3767米，是秦岭最高峰。",
     history: "秦岭自古以来就是中国南北的天然屏障。蜀道难，难于上青天，指的就是秦岭山区的交通困难。秦岭也是大熊猫的重要栖息地，佛坪自然保护区就位于此处。",
     observation: "秦岭呈东西走向，山脊线连续。从飞机上看，山北是黄土高原的黄色调，山南是四川盆地的绿色调，分界非常明显。山体北坡陡峭，南坡平缓。",
   },
@@ -44,11 +44,11 @@ const QILIAN: GeographicFeature = {
   id: "qilian",
   name: "祁连山",
   featureType: "mountain_system",
-  elevation: 5827, // 团结峰，祁连山最高峰
+  elevation: 5808, // 康兹依秀，祁连山最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [101.47, 37.70], heading: 0, pitch: -28, range: 300000 },
+  cameraGeometry: { target: [101.08, 36.69], heading: 0, pitch: -28, range: 300000 },
   storyGeometry: [
-    { id: "qilian-1", name: "祁连山主峰", position: [100.0, 38.5], text: "祁连山主峰海拔5827米。" },
+    { id: "qilian-1", name: "岗什卡雪峰", position: [101.08, 36.69], text: "祁连山东段雪峰，海拔5254米。" },
   ],
   label: { labelText: "祁连山", labelType: "ridge", rotation: -15, priority: 90, minZoom: 1, maxZoom: 20 },
   visibility: { hierarchyLevel: 1 },
@@ -244,7 +244,7 @@ const INNER_MONGOLIA: GeographicFeature = {
   featureType: "plateau",
   elevation: 1100, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [114.50, 44.00], heading: 0, pitch: -35, range: 300000 },
+  cameraGeometry: { target: [116.09, 43.95], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "inner-mongolia-1", name: "呼伦贝尔", position: [119.8, 49.2], text: "呼伦贝尔草原是内蒙古最著名的草原。" },
   ],
@@ -272,7 +272,7 @@ const YUNNAN_GUIZHOU: GeographicFeature = {
   featureType: "plateau",
   elevation: 1500, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [102.83, 25.00], heading: 0, pitch: -32, range: 300000 },
+  cameraGeometry: { target: [102.72, 25.00], heading: 0, pitch: -32, range: 300000 },
   storyGeometry: [
     { id: "yunnan-guizhou-1", name: "昆明", position: [102.7, 25.0], text: "昆明是云贵高原上的春城。" },
   ],
@@ -330,7 +330,7 @@ const QAIDAM: GeographicFeature = {
   featureType: "basin",
   elevation: 2800, // 盆地底部平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [95.30, 36.80], heading: 0, pitch: -35, range: 300000 },
+  cameraGeometry: { target: [95.10, 36.35], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "qaidam-1", name: "格尔木", position: [94.9, 36.4], text: "格尔木是柴达木盆地的重要城市。" },
   ],
