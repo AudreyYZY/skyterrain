@@ -62,7 +62,7 @@ const TIANSHAN: GeographicFeature = {
 
   // 镜头几何: 乌鲁木齐南部，俯瞰博格达峰
   cameraGeometry: {
-    target: [87.5, 43.5],
+    target: [84.39, 42.60],
     heading: 120,
     pitch: -28,
     range: 180000,
@@ -150,7 +150,7 @@ const KUNLUN: GeographicFeature = {
   },
 
   cameraGeometry: {
-    target: [82.0, 36.5],
+    target: [89.10, 36.29],
     heading: 0,
     pitch: -25,
     range: 200000,
@@ -231,7 +231,7 @@ const ALTAI: GeographicFeature = {
   },
 
   cameraGeometry: {
-    target: [90.0, 48.0],
+    target: [91.77, 47.24],
     heading: 30,
     pitch: -30,
     range: 150000,
@@ -312,7 +312,7 @@ const JUNGGAR_BASIN: GeographicFeature = {
   },
 
   cameraGeometry: {
-    target: [87.5, 45.0],
+    target: [85.63, 44.77],
     heading: 0,
     pitch: -35,
     range: 250000,
@@ -392,7 +392,7 @@ const TARIM_BASIN: GeographicFeature = {
   },
 
   cameraGeometry: {
-    target: [83.0, 39.5],
+    target: [83.20, 39.16],
     heading: 0,
     pitch: -35,
     range: 300000,
@@ -470,7 +470,7 @@ const PAMIR: GeographicFeature = {
   },
 
   cameraGeometry: {
-    target: [76.0, 38.5],
+    target: [73.42, 38.13],
     heading: 45,
     pitch: -25,
     range: 150000,
@@ -547,7 +547,7 @@ const TAKLAMAKAN: GeographicFeature = {
   },
 
   cameraGeometry: {
-    target: [83.0, 38.5],
+    target: [81.85, 38.78],
     heading: 0,
     pitch: -40,
     range: 200000,

@@ -17,7 +17,7 @@ const QINLING: GeographicFeature = {
   featureType: "mountain_system",
   elevation: 3771, // 太白山主峰，秦岭最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [108.0, 33.5], heading: 0, pitch: -30, range: 60000 },
+  cameraGeometry: { target: [107.76, 33.95], heading: 0, pitch: -30, range: 300000 },
   storyGeometry: [
     { id: "qinling-1", name: "太白山", position: [107.8, 34.0], text: "太白山是秦岭最高峰，海拔3771.2米。" },
     { id: "qinling-2", name: "华山", position: [110.1, 34.5], text: "华山以险峻著称，是中国五岳之一。" },
@@ -46,7 +46,7 @@ const QILIAN: GeographicFeature = {
   featureType: "mountain_system",
   elevation: 5827, // 团结峰，祁连山最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [100.0, 38.0], heading: 0, pitch: -28, range: 250000 },
+  cameraGeometry: { target: [101.47, 37.70], heading: 0, pitch: -28, range: 300000 },
   storyGeometry: [
     { id: "qilian-1", name: "祁连山主峰", position: [100.0, 38.5], text: "祁连山主峰海拔5827米。" },
   ],
@@ -74,7 +74,7 @@ const TAIHANG: GeographicFeature = {
   featureType: "mountain_system",
   elevation: 2996, // 小五台山东台，太行山最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [113.5, 37.0], heading: 0, pitch: -30, range: 300000 },
+  cameraGeometry: { target: [113.42, 38.97], heading: 0, pitch: -30, range: 300000 },
   storyGeometry: [
     { id: "taihang-1", name: "太行山北段", position: [114.0, 39.0], text: "太行山北段是华北平原与黄土高原的分界线。" },
   ],
@@ -102,7 +102,7 @@ const DAXINGANLING: GeographicFeature = {
   featureType: "mountain_system",
   elevation: 2035, // 大白山，大兴安岭最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [122.0, 48.0], heading: 20, pitch: -28, range: 400000 },
+  cameraGeometry: { target: [117.0, 48.0], heading: 20, pitch: -28, range: 300000 },
   storyGeometry: [
     { id: "daxinganling-1", name: "大兴安岭北段", position: [124.0, 52.0], text: "大兴安岭北段是中国最北的原始森林。" },
   ],
@@ -130,7 +130,7 @@ const HENGDUAN: GeographicFeature = {
   featureType: "mountain_system",
   elevation: 7556, // 贡嘎山，横断山脉最高峰
   maturityLevel: 1,
-  cameraGeometry: { target: [100.0, 30.0], heading: -10, pitch: -25, range: 350000 },
+  cameraGeometry: { target: [100.0, 30.0], heading: -10, pitch: -25, range: 300000 },
   storyGeometry: [
     { id: "hengduan-1", name: "三江并流", position: [99.0, 29.0], text: "金沙江、澜沧江、怒江在此并行南流。" },
   ],
@@ -158,7 +158,7 @@ const HIMALAYA: GeographicFeature = {
   featureType: "mountain_system",
   elevation: 8849, // 珠穆朗玛峰 8848.86m，四舍五入
   maturityLevel: 1,
-  cameraGeometry: { target: [86.0, 29.0], heading: 0, pitch: -25, range: 500000 },
+  cameraGeometry: { target: [86.0, 29.0], heading: 0, pitch: -25, range: 300000 },
   storyGeometry: [
     { id: "himalaya-1", name: "珠穆朗玛峰", position: [86.9, 28.0], text: "珠穆朗玛峰海拔8848米，是世界最高峰。" },
   ],
@@ -188,7 +188,7 @@ const QINGHAI_TIBET: GeographicFeature = {
   featureType: "plateau",
   elevation: 4500, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [90.0, 33.0], heading: 0, pitch: -30, range: 1500000 },
+  cameraGeometry: { target: [89.6, 32.0], heading: 0, pitch: -30, range: 300000 },
   storyGeometry: [
     { id: "qinghai-tibet-1", name: "拉萨", position: [91.1, 29.6], text: "拉萨是青藏高原上最大的城市。" },
   ],
@@ -216,7 +216,7 @@ const LOESS: GeographicFeature = {
   featureType: "plateau",
   elevation: 1300, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [109.0, 36.0], heading: 0, pitch: -32, range: 600000 },
+  cameraGeometry: { target: [109.40, 36.58], heading: 0, pitch: -32, range: 300000 },
   storyGeometry: [
     { id: "loess-1", name: "延安", position: [109.5, 36.6], text: "延安是黄土高原上的革命圣地。" },
   ],
@@ -244,7 +244,7 @@ const INNER_MONGOLIA: GeographicFeature = {
   featureType: "plateau",
   elevation: 1100, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [112.0, 42.0], heading: 0, pitch: -35, range: 1200000 },
+  cameraGeometry: { target: [114.50, 44.00], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "inner-mongolia-1", name: "呼伦贝尔", position: [119.8, 49.2], text: "呼伦贝尔草原是内蒙古最著名的草原。" },
   ],
@@ -272,7 +272,7 @@ const YUNNAN_GUIZHOU: GeographicFeature = {
   featureType: "plateau",
   elevation: 1500, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [105.0, 25.0], heading: 0, pitch: -32, range: 800000 },
+  cameraGeometry: { target: [102.83, 25.00], heading: 0, pitch: -32, range: 300000 },
   storyGeometry: [
     { id: "yunnan-guizhou-1", name: "昆明", position: [102.7, 25.0], text: "昆明是云贵高原上的春城。" },
   ],
@@ -302,7 +302,7 @@ const SICHUAN: GeographicFeature = {
   featureType: "basin",
   elevation: 400, // 盆地底部平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [106.0, 30.5], heading: 0, pitch: -35, range: 500000 },
+  cameraGeometry: { target: [104.07, 30.57], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "sichuan-1", name: "成都", position: [104.1, 30.6], text: "成都是四川盆地的中心，天府之国。" },
   ],
@@ -330,7 +330,7 @@ const QAIDAM: GeographicFeature = {
   featureType: "basin",
   elevation: 2800, // 盆地底部平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [94.0, 37.0], heading: 0, pitch: -35, range: 400000 },
+  cameraGeometry: { target: [95.30, 36.80], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "qaidam-1", name: "格尔木", position: [94.9, 36.4], text: "格尔木是柴达木盆地的重要城市。" },
   ],
@@ -360,7 +360,7 @@ const NORTHEAST: GeographicFeature = {
   featureType: "basin",
   elevation: 150, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [125.0, 46.0], heading: 0, pitch: -35, range: 1000000 },
+  cameraGeometry: { target: [125.0, 46.0], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "northeast-1", name: "哈尔滨", position: [126.6, 45.7], text: "哈尔滨是东北平原的最大城市。" },
   ],
@@ -388,7 +388,7 @@ const NORTH_CHINA: GeographicFeature = {
   featureType: "basin",
   elevation: 50, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [116.0, 37.0], heading: 0, pitch: -35, range: 800000 },
+  cameraGeometry: { target: [116.0, 37.0], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "north-china-1", name: "北京", position: [116.4, 39.9], text: "北京是华北平原的中心，中国的首都。" },
   ],
@@ -416,7 +416,7 @@ const YANGTZE: GeographicFeature = {
   featureType: "basin",
   elevation: 50, // 平均海拔
   maturityLevel: 1,
-  cameraGeometry: { target: [115.0, 29.5], heading: 0, pitch: -35, range: 800000 },
+  cameraGeometry: { target: [115.0, 29.5], heading: 0, pitch: -35, range: 300000 },
   storyGeometry: [
     { id: "yangtze-1", name: "上海", position: [121.5, 31.2], text: "上海是长江入海口，中国最大的城市。" },
   ],

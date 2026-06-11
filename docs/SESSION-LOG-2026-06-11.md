@@ -215,6 +215,30 @@ speakLessonWithHighlight()  ← 重新触发
 
 ---
 
+## 优先级排序
+
+### P0（必须先解决）
+1. **长江中下游平原飞错** — 点击后飞到华北，不是长江流域
+2. **青藏高原飞错** — 点击后飞到新疆区域
+3. **停止播报后自动恢复** — 点停止 → 停了 → 过几秒又继续播报
+
+这三个是阻断性问题，解决后才能继续其他工作。
+
+### P1
+1. **导出所有 Terrain 的 FOI / GeometryCenter / CameraTarget** — 在 `handleSelectFeature` 中 `console.table` 打印每个地形的 `feature / foiLon / foiLat / cameraLon / cameraLat / range / source`
+2. **建立 `terrain-debug-report.json`** — 结构化记录每个地形的调试数据，便于追踪
+
+### P2
+1. **校验 30 个核心地形** — 逐个验证 target 坐标是否正确（对照真实地理坐标）
+2. **建立观赏点（FOI）标准库** — 为没有 FOI 的 10 个全国地形添加 FOI 注册，统一所有地形的 Camera 推导链路
+
+### P3（锦上添花）
+1. **Billboard** — debugBoundaries 用 billboard 显示 FOI 和 Target 标记
+2. **Marker** — 用 Canvas 绘制的十字图标增强可见性
+3. **Debug UI** — 更好的调试界面（当前 debugBoundaries 只是 console + billboard，不够直观）
+
+---
+
 ## 待办 / 明天继续
 
 - [ ] 部署后验证"停止语音后自动恢复"是否修复
