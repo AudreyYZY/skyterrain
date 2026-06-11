@@ -109,6 +109,8 @@ See `docs/architecture-decisions/`
 
 ## License
 
-Copyright © 2026 Audrey Yang. All Rights Reserved.
+Copyright © 2026 Audrey Yang
 
-No part of this software may be copied, modified, distributed, sublicensed, or used commercially without explicit written permission from the copyright holder.
+All Rights Reserved.
+
+See [LICENSE](LICENSE) for details.
