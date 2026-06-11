@@ -4,6 +4,23 @@ All notable changes to Flight Geography Explorer are documented here.
 
 ---
 
+## Camera Target 偏移修复 (2026-06-12)
+
+**问题**: 所有 14 个全国/新疆地形点击后，相机飞到的位置偏北/偏东 100-300km，需要手动往南/西飞才能看到目标 FOI。
+
+**根因**: `lib/auto-camera.ts` 旧代码将相机设在 FOI 正上方，heading=0（朝北看），pitch=-35°，range=300km → 屏幕中心落在 FOI 北方 ~210km 处（300km × tan(35°) ≈ 210km）。
+
+**修复**:
+- 新增 `offsetPositionForHeading()` — 根据 heading 反算偏移，相机向反方向移动 ground track 距离，使 FOI 在屏幕中心
+- 新增 `computeMountainHeading()` — 正确分类 E-W (heading=0°) / N-S (heading=270°)
+- 新增 `computeRangeForSpan()` — 基于地形 span 自动计算相机高度
+- 恢复 `computeCameraFromPolygon()` 动态 range/pitch（盆地/高原/平原俯看）
+
+**Files Modified**:
+- `lib/auto-camera.ts` — 完整重写 camera target 计算逻辑
+
+---
+
 ## Phase 6 — i18n + China Scope + Geometry Validation
 
 **Date:** 2026-06-09

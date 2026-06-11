@@ -49,14 +49,93 @@ onClick={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
 
 ---
 
+## 3. Camera Target 偏移 100-300km — 根因修复
+
+**问题**: 点击所有 14 个全国/新疆地形后，相机飞到的位置都偏北/偏东 100-300km，需要手动往南/西飞才能看到目标 FOI。
+
+**根因分析**:
+
+`lib/auto-camera.ts` 的 `computeCameraFromRidge`（旧代码）：
+```tsx
+// 东西走向 → heading = 0（朝北）
+// 南北走向 → heading = 90（朝东）
+let heading = 0;
+if (bbox.spanLon > bbox.spanLat) {
+  heading = 0;   // 喜马拉雅、秦岭、阿尔泰山...全朝北
+} else {
+  heading = 90;
+}
+// target = FOI 本身（相机在 FOI 正上方）
+const target: [number, number] = [primaryFOI.lon, primaryFOI.lat];
+```
+
+**核心问题**: 相机设在 FOI 正上方，heading=0（朝北），pitch=-35°，range=300km → 屏幕中心落在 FOI 北方 ~210km 处。
+公式: 300km × tan(35°) ≈ 210km — 正好匹配截图中的偏移量。
+
+**所有 14 个地形偏移方向一致**:
+
+| 地形 | 走向 | 当前 heading | 结果 |
+|------|------|-------------|------|
+| 喜马拉雅 | 东西 | 0°（朝北） | 看北偏 ~210km |
+| 秦岭 | 东西 | 0°（朝北） | 看北偏 ~210km |
+| 祁连山 | NW-SE | 0°（朝北） | 看北偏 |
+| 昆仑山 | 东西 | 0°（朝北） | 看北偏 |
+| 阿尔泰山 | NW-SE | 0°（朝北） | 看北偏 |
+| 大兴安岭 | N-S | 90°（朝东） | 看东偏 |
+| 横断山脉 | N-S | 90°（朝东） | 看东偏 |
+| 太行山 | N-S | 0°（朝北，错误分类） | 看北偏 |
+| 四川盆地 | 面 | 0°（朝北） | 看北偏 |
+| 柴达木盆地 | 面 | 0°（朝北） | 看北偏 |
+| 青藏高原 | 面 | 0°（朝北） | 看北偏 |
+| 黄土高原 | 面 | 0°（朝北） | 看北偏 |
+| 内蒙古高原 | 面 | 0°（朝北） | 看北偏 |
+| 云贵高原 | 面 | 0°（朝北） | 看北偏 |
+
+**修复**:
+
+1. **`offsetPositionForHeading()`** — 根据 heading 反算偏移量，使用球面几何将相机位置向反方向移动 `range × tan(|pitch|)` 米，使屏幕中心回到 FOI。
+   - 东西走向（heading=0，朝北看）：相机设在 FOI 南方偏移处 → FOI 在屏幕中心
+   - 南北走向（heading=270，朝西看）：相机设在 FOI 东方偏移处 → FOI 在屏幕中心
+
+2. **`computeMountainHeading()`** — 正确分类山脉走向：
+   - spanLon > spanLat → E-W → heading=0°（朝北）
+   - spanLat > spanLon → N-S → heading=270°（朝西）
+
+3. **`computeRangeForSpan()`** — 基于地形 span 自动计算高度：
+   - <50km: 固定 50km
+   - 50-300km: span × 500m/km
+   - 300-1000km: span × 400m/km
+   - >1000km: span × 300m/km（上限 500km）
+
+4. **`computeCameraFromPolygon()`** — 恢复动态 range/pitch（盆地/高原/平原从正上方俯瞰）。
+
+**验证数据**:
+
+| 地形 | FOI | 走向 | heading | 相机偏移 | 偏移方向 |
+|------|-----|------|---------|---------|---------|
+| 秦岭 | 太白山 107.62,33.95 | E-W | 0° | ~210km | 南 |
+| 祁连山 | 岗什卡雪峰 101.08,36.69 | E-W(分类) | 0° | ~143km | 南 |
+| 昆仑山 | 昆仑山口 94.77,36.23 | E-W | 0° | ~210km | 南 |
+| 横断山脉 | 贡嘎山 101.88,29.60 | N-S | 270° | ~270km | 东 |
+| 四川盆地 | 成都 104.07,30.57 | 面 | 0° | 无偏移（俯看） | - |
+
+**Files Modified**:
+- `lib/auto-camera.ts` — 重写 computeCameraFromRidge + 新增 offsetPositionForHeading / computeMountainHeading / computeRangeForSpan
+
+**Commit**: `6578656 fix(auto-camera): offset camera position to center FOI in view`
+
+---
+
 ## 优先级排序
 
 ### P0（已修复）
 1. ~~摘要卡片按钮始终触发开始~~ ✅
 2. ~~handleSelectFeature 缺少 speak 前取消检查~~ ✅
 3. ~~项目无许可保护~~ ✅
+4. ~~Camera Target 偏移 100-300km~~ ✅
 
 ### 待办
 - [ ] 部署后验证停止/开始按钮在所有 15 个全国地形上的行为
 - [ ] 验证新疆地形（handleSelectTerrain 路径）不受影响
 - [ ] 考虑在 Vercel 设置 commercial license inquiry 页面
+- [ ] 清理 Xinjiang features 中死代码 cameraGeometry（已被 FOI auto-camera 替代）
