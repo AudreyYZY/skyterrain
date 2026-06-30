@@ -1,0 +1,162 @@
+audreyyzy@yangziyingdeMacBook-Pro ~ % cd Github_Projects
+audreyyzy@yangziyingdeMacBook-Pro Github_Projects % cd flight-geography-explorer
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume 21abbafa-5a0a-49ca-9108-57fb8f38b5b9
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % env | grep -i -E "anthropic|openai|mimo"
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % unset ANTHROPIC_BASE_URL
+unset ANTHROPIC_API_KEY
+unset OPENAI_API_KEY
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % export ANTHROPIC_API_KEY="sk-ant-api03-1234567890abcdef1234567890abcdef"
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % unset ANTHROPIC_BASE_URL
+unset ANTHROPIC_API_KEY
+unset OPENAI_API_KEY
+export ANTHROPIC_API_KEY="sk-ant-api03-1234567890abcdef1234567890abcdef"
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume d76488af-52b3-4d1f-a3c7-1cf05fe15243
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % env | grep -i -E "anthropic|openai|mimo"
+ANTHROPIC_API_KEY=sk-ant-api03-1234567890abcdef1234567890abcdef
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Resume this session with:
+claude --resume 90e72bc1-98f2-4a1d-9130-35b8ff4c0405
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume 90ac6bd2-eeee-4158-9f42-08255c444bc3
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+
+  Read 1 file 
+
+⏺ Update(docs/SESSION-LOG-2026-06-11.md)
+  ⎿  Added 24 lines
+      215  
+      216  ---
+      217  
+      218 +## 优先级排序                                                                                         
+      219 +                                                                                                      
+      220 +### P0（必须先解决）                                                                                  
+      221 +1. **长江中下游平原飞错** — 点击后飞到华北，不是长江流域                                              
+      222 +2. **青藏高原飞错** — 点击后飞到新疆区域                                                              
+      223 +3. **停止播报后自动恢复** — 点停止 → 停了 → 过几秒又继续播报                                          
+      224 +                                                                                                      
+      225 +这三个是阻断性问题，解决后才能继续其他工作。                                                          
+      226 +                                                                                                      
+      227 +### P1                                                                                                
+      228 +1. **导出所有 Terrain 的 FOI / GeometryCenter / CameraTarget** — 在 `handleSelectFeature` 中 `console.
+          +table` 打印每个地形的 `feature / foiLon / foiLat / cameraLon / cameraLat / range / source`            
+      229 +2. **建立 `terrain-debug-report.json`** — 结构化记录每个地形的调试数据，便于追踪                      
+      230 +                                                                                                      
+      231 +### P2                                                                                                
+      232 +1. **校验 30 个核心地形** — 逐个验证 target 坐标是否正确（对照真实地理坐标）                          
+      233 +2. **建立观赏点（FOI）标准库** — 为没有 FOI 的 10 个全国地形添加 FOI 注册，统一所有地形的 Camera 推导 
+          +链路                                                                                                  
+      234 +                                                                                                      
+      235 +### P3（锦上添花）                                                                                    
+      236 +1. **Billboard** — debugBoundaries 用 billboard 显示 FOI 和 Target 标记                               
+      237 +2. **Marker** — 用 Canvas 绘制的十字图标增强可见性                                                    
+      238 +3. **Debug UI** — 更好的调试界面（当前 debugBoundaries 只是 console + billboard，不够直观）           
+      239 +                                                                                                      
+      240 +---                                                                                                   
+      241 +                                                                                                      
+      242  ## 待办 / 明天继续
+      243  
+      244  - [ ] 部署后验证"停止语音后自动恢复"是否修复
+     
+⏺ API Error: 400 ***.ContextWindowExceededError: ***.BadRequestError: ContextWindowExceededError: 
+  OpenAIException - {"error":{"message":"This model's maximum context length is 262144 tokens. However, you 
+  requested 64000 output tokens and your prompt contains at least 198145 input tokens, for a total of at least 
+  262145 tokens. Please reduce the length of the input prompt or the number of requested output tokens. 
+  (parameter=input_tokens, value=198145)","type":"BadRequestError","param":"input_tokens","code":400}}
+  model=agnes-2.0-flash
+  
+✻ Worked for 55s
+                                                                                   
+────────────────────────────────────────────────────────────────────────────────────────────────── terrain-debug-mode ──
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← for agents
+  [恢复于2026年6月11日 上午9:00:46]
+Restored session: Thu Jun 11 00:45:15 AEST 2026
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume 34d7656a-f6fb-44f5-a0c2-db30908487da
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+❯ 修正并提交                                                                                                            
+      234 +    lon: 102.72,                                                                                      
+      235      lat: 25.00,
+      236      type: "city",
+      237      description: "春城, 云贵高原核心城市",
+
+⏺ Tianshan Bogda Peak:
+
+⏺ Update(lib/foi-registry.ts)
+  ⎿  Added 4 lines, removed 4 lines
+      1078    featureType: "mountain_system",
+      1079    primary: {
+      1080      name: "博格达峰",
+      1081 -    lon: 88.30,                                                                                      
+      1082 -    lat: 43.80,                                                                                      
+      1081 +    lon: 88.25,                                                                                      
+      1082 +    lat: 43.74,                                                                                      
+      1083      type: "peak",
+      1084      description: "天山东段最高峰之一, 海拔5445m, 终年积雪",
+      1085    },
+      1086    secondary: [
+      1087      {
+      1088        name: "天池",
+      1089 -      lon: 88.13,                                                                                    
+      1090 -      lat: 43.89,                                                                                    
+      1089 +      lon: 88.11,                                                                                    
+      1090 +      lat: 43.87,                                                                                    
+      1091        type: "center",
+      1092        description: "天山著名冰蚀高山湖, 海拔1910m, 深蓝湖水与雪峰对比鲜明",
+      1093      },
+
+⏺ Now fix the geometry polygons:
+
+⏺ Fix Hengduan polygon — was 6 points, not closed, lat range correct but too narrow longitude. Needs a proper closed
+  polygon:
+
+⏺ Update(lib/foi-registry.ts)
+  ⎿  Added 4 lines, removed 2 lines
+      845      },
+      846    ],
+      847    geometryCoords: [
+      848 -    [99.0, 31.0], [99.2, 30.0], [99.0, 29.0],                                                         
+      849 -    [99.3, 28.0], [99.5, 27.0], [99.8, 26.0],                                                         
+      848 +    [98.0, 31.0], [99.0, 31.0], [100.5, 30.5], [101.5, 30.0],                                         
+      849 +    [102.0, 29.0], [102.5, 28.0], [102.0, 27.0], [101.0, 26.0],                                       
+      850 +    [100.0, 25.5], [99.0, 25.5], [9 Jump to bottom (ctrl+End) ↓                                       
+                                                                                        
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏸ plan mode on (shift+tab to cycle) · ← for agents

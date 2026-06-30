@@ -1,0 +1,162 @@
+audreyyzy@yangziyingdeMacBook-Pro ~ % cd Github_Projects
+audreyyzy@yangziyingdeMacBook-Pro Github_Projects % cd flight-geography-explorer
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume 21abbafa-5a0a-49ca-9108-57fb8f38b5b9
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % env | grep -i -E "anthropic|openai|mimo"
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % unset ANTHROPIC_BASE_URL
+unset ANTHROPIC_API_KEY
+unset OPENAI_API_KEY
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % export ANTHROPIC_API_KEY="sk-ant-api03-1234567890abcdef1234567890abcdef"
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % unset ANTHROPIC_BASE_URL
+unset ANTHROPIC_API_KEY
+unset OPENAI_API_KEY
+export ANTHROPIC_API_KEY="sk-ant-api03-1234567890abcdef1234567890abcdef"
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume d76488af-52b3-4d1f-a3c7-1cf05fe15243
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % env | grep -i -E "anthropic|openai|mimo"
+ANTHROPIC_API_KEY=sk-ant-api03-1234567890abcdef1234567890abcdef
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Resume this session with:
+claude --resume 90e72bc1-98f2-4a1d-9130-35b8ff4c0405
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume 90ac6bd2-eeee-4158-9f42-08255c444bc3
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+
+  Read 1 file 
+
+⏺ Update(docs/SESSION-LOG-2026-06-11.md)
+  ⎿  Added 24 lines
+      215  
+      216  ---
+      217  
+      218 +## 优先级排序                                                                                         
+      219 +                                                                                                      
+      220 +### P0（必须先解决）                                                                                  
+      221 +1. **长江中下游平原飞错** — 点击后飞到华北，不是长江流域                                              
+      222 +2. **青藏高原飞错** — 点击后飞到新疆区域                                                              
+      223 +3. **停止播报后自动恢复** — 点停止 → 停了 → 过几秒又继续播报                                          
+      224 +                                                                                                      
+      225 +这三个是阻断性问题，解决后才能继续其他工作。                                                          
+      226 +                                                                                                      
+      227 +### P1                                                                                                
+      228 +1. **导出所有 Terrain 的 FOI / GeometryCenter / CameraTarget** — 在 `handleSelectFeature` 中 `console.
+          +table` 打印每个地形的 `feature / foiLon / foiLat / cameraLon / cameraLat / range / source`            
+      229 +2. **建立 `terrain-debug-report.json`** — 结构化记录每个地形的调试数据，便于追踪                      
+      230 +                                                                                                      
+      231 +### P2                                                                                                
+      232 +1. **校验 30 个核心地形** — 逐个验证 target 坐标是否正确（对照真实地理坐标）                          
+      233 +2. **建立观赏点（FOI）标准库** — 为没有 FOI 的 10 个全国地形添加 FOI 注册，统一所有地形的 Camera 推导 
+          +链路                                                                                                  
+      234 +                                                                                                      
+      235 +### P3（锦上添花）                                                                                    
+      236 +1. **Billboard** — debugBoundaries 用 billboard 显示 FOI 和 Target 标记                               
+      237 +2. **Marker** — 用 Canvas 绘制的十字图标增强可见性                                                    
+      238 +3. **Debug UI** — 更好的调试界面（当前 debugBoundaries 只是 console + billboard，不够直观）           
+      239 +                                                                                                      
+      240 +---                                                                                                   
+      241 +                                                                                                      
+      242  ## 待办 / 明天继续
+      243  
+      244  - [ ] 部署后验证"停止语音后自动恢复"是否修复
+     
+⏺ API Error: 400 ***.ContextWindowExceededError: ***.BadRequestError: ContextWindowExceededError: 
+  OpenAIException - {"error":{"message":"This model's maximum context length is 262144 tokens. However, you 
+  requested 64000 output tokens and your prompt contains at least 198145 input tokens, for a total of at least 
+  262145 tokens. Please reduce the length of the input prompt or the number of requested output tokens. 
+  (parameter=input_tokens, value=198145)","type":"BadRequestError","param":"input_tokens","code":400}}
+  model=agnes-2.0-flash
+  
+✻ Worked for 55s
+                                                                                   
+────────────────────────────────────────────────────────────────────────────────────────────────── terrain-debug-mode ──
+❯ 
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏵⏵ auto mode on (shift+tab to cycle) · ← for agents
+  [恢复于2026年6月11日 上午9:00:46]
+Restored session: Thu Jun 11 00:45:15 AEST 2026
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+Resume this session with:
+claude --resume 34d7656a-f6fb-44f5-a0c2-db30908487da
+audreyyzy@yangziyingdeMacBook-Pro flight-geography-explorer % claude
+
+❯ 现在新疆的地形数据是很清楚的，而且点击之后跳转的高度和看到的内容也是比较接近我期待的最终效果的，但是不确定这些数据是… 
+    
+  GeographicFeature → handleSelectFeature()
+    → FOI 存在? → computeCameraFromRidge/Polygon() → range=300_000 (硬编码!)
+    → 生成合成 TerrainPoint {lat, lon, cameraHeight=300_000}
+    → flyToTerrainAndWait()
+    → cameraAt(lon, lat, height=300_000)
+    → 相机目标 = FOI 的 lon/lat (不一定在正确地形上!)
+  
+  问题汇总：
+  
+  1. range 硬编码为 300km — 秦岭只有 260km 宽，300km 高度太高；而青藏高原 2000km+，300km 高度又不够
+  2. target 用 FOI 坐标 — 太白山在秦岭东段，点击秦岭后飞向太白山而不是秦岭中心
+  3. 有些全国地形在 FOI 注册表中没有对应项 — fallback 到 cameraGeometry（手动参数，可能过时）
+  4. 全国地形没有 geometry（maturityLevel=1）— 所以 CesiumMap 里不渲染边界
+
+  让我做一个完整的审计，对比新疆地形和其他地形的参数：
+
+⏺ Explore(Audit camera params across terrains)
+  ⎿  Done (21 tool uses · 61.2k tokens · 2m 21s)
+  
+  
+⏺ 非常清楚了。让我总结给你：
+  
+  核心问题总结
+  
+  问题 1：所有地形 range 硬编码为 300km
+  
+  lib/auto-camera.ts 里 range = 300_000 写死了。这意味着：
+  - 昆仑山（2391km 长）→ 只能看到 12.5%，300km 高度只覆盖了一个小片段
+  - 阿尔泰山（2094km 长）→ 只能看到 14.3%
+  - 塔里木盆地（1621km 长）→ 只能看到 18.5%
+  - 而新疆地形用的是 data/*.json 里的 cameraHeight（如 昆仑山=28km，阿尔泰山=22km），这些是针对每个地形单独调的
+  
+  300km 的高度对于几千公里的地形来说太高了，这就是你说的"看到地球曲率"的原因。
+  
+  问题 2：FOI 主目标位置经常偏离地形中心  
+  
+  ┌────────────┬────────────────┬────────────────────────────┬───────────────┐
+  │    地形    │   JSON 中心    │         FOI 主目标         │     偏差      │
+  ├────────────┼────────────────┼────────────────────────────┼───────────────┤
+  │ 昆仑山     │ [81.65, 35.88] │ [94.00, 36.10]（昆仑山口） │ ~1370km 东偏  │
+  ├────────────┼────────────────┼────────────────────────────┼───────────────┤
+  │ 塔里木盆地 │ [83.5, 39.5]   │ [80.26, 41.17]（阿克苏）   │ ~380km 西北偏 │
+  ├────────────┼────────────────┼───────────── Jump to bottom (ctrl+End) ↓ ──┤
+                                                                                   
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+❯ 继续，但是需要检查这些数据是否是完全准确的，你现在是调查了维基百科的数据，但是还有很多权威信息，比如中国国家地理、自
+  然资源部及国家基础地理信息中心、国家地球系统科学数据中心、全国地理信息资源目录服务系统、国家地理信息公共服务平台、
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ⏸ plan mode on (shift+tab to cycle)

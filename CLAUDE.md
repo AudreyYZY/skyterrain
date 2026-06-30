@@ -101,9 +101,34 @@ Terrain → Geometry → Camera
 - 逐个修补秦岭、大兴安岭等 Camera 参数
 - 继续研究 GMBA / HydroBASINS 数据源（已验证完成）
 
+## 代码分析工具
+
+本项目使用 `codeatlas` 进行代码分析和架构理解。
+
+```bash
+# 安装（一次性）
+cd ~/Github_Projects/codeatlas && pip install -e . --break-system-packages
+
+# 索引项目
+codeatlas index . --verbose
+
+# 常用命令
+codeatlas stats                          # 项目统计
+codeatlas symbols <name>                 # 查找符号
+codeatlas callers <function>             # 谁调用了这个函数
+codeatlas callees <function>             # 这个函数调用了谁
+codeatlas chain <function> --depth 3     # 调用链
+codeatlas deps <file>                    # 文件依赖
+codeatlas graph <name> --type calls      # Mermaid 调用图
+```
+
+详细说明见 `~/Github_Projects/codeatlas/README.md`
+
+---
 ## 开发规范
 
 - 不要在未完成审计前修改 Camera 逻辑
 - 不要在未验证数据源前导入地形数据
 - 每完成一个 Phase，先更新文档再提交代码
 - 业务代码和文档分开提交
+- 修改 codeatlas 后先跑 `cd ~/Github_Projects/codeatlas && pytest -q && ruff check codeatlas/` 再 push
