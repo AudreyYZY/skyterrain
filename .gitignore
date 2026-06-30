@@ -46,6 +46,7 @@ claude_history*.txt
 
 # GIS data (too large for git)
 data/gis/raw/
+terrain-dataset/
 *.shp
 *.dbf
 *.shx
