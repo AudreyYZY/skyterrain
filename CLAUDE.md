@@ -124,6 +124,14 @@ codeatlas graph <name> --type calls      # Mermaid 调用图
 
 详细说明见 `~/Github_Projects/codeatlas/README.md`
 
+## 架构文档
+
+- `docs/architecture-metrics.md` — 项目健康度指标、模块耦合度、Architecture Smells（codeatlas 自动生成）
+- CesiumMap 六维分析 → `codeatlas file components/CesiumMap.tsx`
+- 完整架构报告 → `codeatlas stats && codeatlas deps components/ExplorerApp.tsx --depth 2`
+
+编排路线参考：[[architecture-intelligence-direction]]
+
 ---
 ## 开发规范
 
