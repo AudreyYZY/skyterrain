@@ -34,6 +34,7 @@ export interface CameraState {
 export interface CesiumMapHandle {
   flyToTerrain: (terrain: TerrainPoint) => void;
   flyToTerrainAndWait: (terrain: TerrainPoint, cameraOptions?: { heading?: number; pitch?: number }) => Promise<void>;
+  flyToRegion: (center: { lon: number; lat: number; height: number; duration?: number }) => void;
   flyRoute: (route: FlightRoute, callbacks: RouteFlyCallbacks) => void;
   stopFlight: () => void;
   /** 将经纬度投影到屏幕坐标（返回 null 表示在视野外） */
@@ -74,11 +75,13 @@ const WINDOW_PITCH_DEG = -42;
 /** 巡航时的微滚转角（弧度），模拟轻微气流颠簸 */
 const CRUISE_ROLL_DEG = 0.8;
 
-const XINJIANG_VIEW = {
-  lon: 85.0,
-  lat: 42.0,
-  height: 2_800_000,
+const GLOBAL_VIEW = {
+  lon: 90.0,
+  lat: 30.0,
+  height: 35_000_000, // 35,000km — 太空视角，能看到整块大陆
 };
+
+/** 不同地貌类型的理想观看高度（米，离地） */
 
 /** 不同地貌类型的理想观看高度（米，离地） */
 const TERRAIN_VIEW_HEIGHTS: Record<string, number> = {
@@ -268,6 +271,29 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         flightCancelledRef.current = true;
         setRoutePreparing(false);
         viewerRef.current?.camera.cancelFlight();
+      },
+
+      flyToRegion(center: { lon: number; lat: number; height: number; duration?: number }) {
+        const viewer = viewerRef.current;
+        const Cesium = cesiumRef.current;
+        if (!viewer || !Cesium) return;
+
+        flightCancelledRef.current = true;
+        viewer.camera.cancelFlight();
+        flightCancelledRef.current = false;
+
+        const duration = center.duration ?? 2.5;
+
+        viewer.camera.flyTo({
+          destination: Cesium.Cartesian3.fromDegrees(center.lon, center.lat, center.height),
+          duration,
+          easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT,
+          orientation: {
+            heading: 0,
+            pitch: Cesium.Math.toRadians(-30),
+            roll: 0,
+          },
+        });
       },
 
       highlightBoundary(boundaryId: string) {
@@ -775,9 +801,9 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           viewer.camera.flyTo({
             destination: Cesium.Cartesian3.fromDegrees(
-              XINJIANG_VIEW.lon,
-              XINJIANG_VIEW.lat,
-              XINJIANG_VIEW.height
+              GLOBAL_VIEW.lon,
+              GLOBAL_VIEW.lat,
+              GLOBAL_VIEW.height
             ),
             duration: 0,
           });

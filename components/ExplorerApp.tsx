@@ -33,6 +33,13 @@ import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useSentenceHighlight } from "@/components/useSentenceHighlight";
+import RegionSelector from "@/components/RegionSelector";
+import {
+  REGIONS,
+  getActiveRegion,
+  setActiveRegion,
+  type Region,
+} from "@/lib/regions";
 
 const terrainGroups = getTerrainsByCategory();
 const allTerrains = getAllTerrains();
@@ -169,6 +176,18 @@ export default function ExplorerApp() {
   const [showDetailDrawer, setShowDetailDrawer] = useState(false);
   const [hoveredBoundary, setHoveredBoundary] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
+  const [activeRegion, setActiveRegionState] = useState<string>(() => {
+    try {
+      return (typeof window !== "undefined" && localStorage.getItem("fge-active-region")) || "china";
+    } catch {
+      return "china";
+    }
+  });
+
+  // 当前区域名称（用于 Header 显示）
+  const activeRegionObj = REGIONS.find((r) => r.id === activeRegion);
+  const activeRegionName = activeRegionObj?.name ?? "中国";
+  const activeRegionNameEn = activeRegionObj?.nameEn ?? activeRegionObj?.name ?? "China";
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
   const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
@@ -231,6 +250,41 @@ export default function ExplorerApp() {
     stopAudio();
     stopHighlight();
   }, [stopAudio, stopHighlight]);
+
+  /** 区域切换 — 地球平滑飞向目标区域 */
+  const handleRegionChange = useCallback(
+    (region: Region) => {
+      if (!region) return;
+      setActiveRegionState(region.id);
+      setActiveRegion(region.id);
+      try {
+        localStorage.setItem("fge-active-region", region.id);
+      } catch {
+        /* ignore */
+      }
+      // 取消当前飞行和叙述
+      mapRef.current?.stopFlight();
+      narrationCancelledRef.current = true;
+      narrationQueue.cancel();
+      stopSpeech();
+      setIsSpeaking(false);
+      setActiveTerrain(null);
+      setLesson(null);
+      setDisplayCards(null);
+      setIsFlyover(false);
+      narrationCancelledRef.current = false;
+
+      // 先拉高到初始高度，再飞向区域中心
+      const { center } = region;
+      mapRef.current?.flyToRegion({
+        lon: center.lon,
+        lat: center.lat,
+        height: center.height,
+        duration: 3,
+      });
+    },
+    [],
+  );
 
   const speakText = useCallback(
     async (text: string, onPlaying?: () => void): Promise<void> => {
@@ -737,10 +791,17 @@ export default function ExplorerApp() {
           </p>
           <span className="text-white/[0.04]">|</span>
           <p className="text-[9px] text-white/15 tracking-wide">
-            {language === "zh-CN" ? `中国 · ${terrainCount}` : `China · ${terrainCount}`}
+            {language === "zh-CN" ? `${activeRegionName} · ${terrainCount}` : `${activeRegionNameEn} · ${terrainCount}`}
           </p>
         </div>
-        <div className="flex items-center gap-1 pointer-events-auto">
+        <div className="flex items-center gap-2 pointer-events-auto">
+          {/* Region Selector — 桌面端显示在 Header 内 */}
+          <div className="hidden sm:flex">
+            <RegionSelector
+              activeRegion={activeRegion}
+              onRegionChange={handleRegionChange}
+            />
+          </div>
           <button
             type="button"
             onClick={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
@@ -752,6 +813,16 @@ export default function ExplorerApp() {
           <ModeTab active={mode === "photo"} onClick={() => setMode("photo")} label={t("header.photo", language)} />
         </div>
       </header>
+
+      {/* Region Selector — 移动端显示在底部 */}
+      <div className="sm:hidden absolute bottom-4 left-0 right-0 z-30 flex justify-center pointer-events-none">
+        <div className="pointer-events-auto">
+          <RegionSelector
+            activeRegion={activeRegion}
+            onRegionChange={handleRegionChange}
+          />
+        </div>
+      </div>
 
       {/* Left sidebar — collapsible terrain browser */}
       {mode === "explore" && (
