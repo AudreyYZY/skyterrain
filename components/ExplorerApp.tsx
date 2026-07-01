@@ -773,6 +773,7 @@ export default function ExplorerApp() {
             onSelectTerrain={handleSelectTerrain}
             onSelectFeature={handleSelectFeature}
             hoveredBoundary={hoveredBoundary}
+            activeRegion={activeRegion}
           />
         )}
         {terrainMode === "ellipsoid" && mode === "explore" && (

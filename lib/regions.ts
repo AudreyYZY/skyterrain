@@ -48,8 +48,7 @@ export const REGIONS: Region[] = [
     center: {
       lon: 104.0,
       lat: 35.0,
-      height: 15000000,     // 从太空看中国的起始高度
-      settleHeight: 8000000, // 着陆到详细浏览的高度
+      height: 8000000,      // 8,000km — 飞行高度，能看到整个中国
     },
     terrainCount: 32,
     available: true,
@@ -61,8 +60,7 @@ export const REGIONS: Region[] = [
     center: {
       lon: 135.0,
       lat: -25.0,
-      height: 18000000,
-      settleHeight: 10000000,
+      height: 10000000,
     },
     terrainCount: 0,
     available: false,

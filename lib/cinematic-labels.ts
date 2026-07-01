@@ -35,6 +35,8 @@ export interface CinematicLabel {
   rotation?: number;
   /** 地貌类型 — 用于标签放置策略 */
   terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
+  /** 所属区域 ID — 用于区域切换时过滤标签 */
+  regionId?: string;
   /** 自定义样式 */
   style?: {
     fontSize?: number;
@@ -121,6 +123,31 @@ export class CinematicLabelManager {
     return result.sort((a, b) => b.priority - a.priority);
   }
 
+  /**
+   * 获取当前应该显示的标注（按区域过滤）
+   * @param zoomLevel 当前缩放级别
+   * @param regionId 当前激活的区域 ID
+   */
+  getVisibleLabelsForRegion(zoomLevel: number | undefined, regionId: string): CinematicLabel[] {
+    const result: CinematicLabel[] = [];
+
+    for (const layer of this.layers.values()) {
+      if (!layer.visible) continue;
+
+      for (const label of layer.labels) {
+        // 区域过滤：只保留匹配当前区域的标签
+        if (label.regionId && label.regionId !== regionId) {
+          continue;
+        }
+        if (this.shouldShowLabel(label, zoomLevel)) {
+          result.push(label);
+        }
+      }
+    }
+
+    return result.sort((a, b) => b.priority - a.priority);
+  }
+
   /** 判断标注是否应该显示 */
   private shouldShowLabel(label: CinematicLabel, zoomLevel?: number): boolean {
     switch (label.visibility) {
@@ -180,6 +207,7 @@ export function createTerrainLabel(
     lodLevel?: 1 | 2 | 3 | 4;
     rotation?: number;
     terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
+    regionId?: string;
   }
 ): CinematicLabel {
   return {
@@ -194,6 +222,7 @@ export function createTerrainLabel(
     lodLevel: options?.lodLevel ?? 3,
     rotation: options?.rotation ?? 0,
     terrainType: options?.terrainType,
+    regionId: options?.regionId ?? "china",
     style: {
       fontSize: 14,
       color: "rgba(255, 255, 255, 0.7)",

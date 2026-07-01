@@ -25,6 +25,8 @@ interface CesiumOverlayLabelsProps {
   isRouteFlying?: boolean;
   /** 当前 hover 的边界名称 — 对应标签高亮 */
   hoveredBoundary?: string | null;
+  /** 当前激活的区域 ID — 用于过滤标签 */
+  activeRegion?: string;
 }
 
 /** 屏幕边缘安全距离（px） */
@@ -34,24 +36,27 @@ const GRID_CELL_SIZE = 100;
 /** 轮询间隔（ms） */
 const POLL_INTERVAL_MS = 500;
 
-/** LOD 级别 → Importance 映射 */
-function lodToImportance(lod: number): Importance {
-  if (lod <= 1) return "continental";
-  if (lod <= 2) return "national";
-  if (lod <= 3) return "regional";
+/**
+ * LOD 级别 → Importance 映射
+ * zoomLevel 越小（看得越远），重要性阈值越高
+ */
+function zoomLevelToImportance(zoomLevel: number): Importance | null {
+  if (zoomLevel <= 2) return null;        // 太空视角：不显示任何标签
+  if (zoomLevel <= 4) return "continental";
+  if (zoomLevel <= 6) return "national";
+  if (zoomLevel <= 9) return "regional";
   return "poi";
 }
 
-/** 获取 LOD 级别的样式 (基于 Theme) */
-function getLodStyle(lodLevel: number) {
-  const importance = lodToImportance(lodLevel);
-  const theme = TERRAIN_THEME[importance];
-  return {
-    fontSize: getFontSize(importance),
-    opacity: 1.0,
-    fontWeight: theme.fontWeight,
-    letterSpacing: theme.letterSpacing,
-  };
+/**
+ * 根据 zoomLevel 动态计算字体大小
+ * zoomLevel 越大（越近），字体越大
+ */
+function dynamicFontSize(importance: Importance, zoomLevel: number): number {
+  const base = getFontSize(importance);
+  // zoomLevel 4-20，线性缩放
+  const scaleFactor = Math.max(0.5, Math.min(1.5, (zoomLevel - 3) / 17));
+  return Math.round(base * scaleFactor);
 }
 
 /**
@@ -121,6 +126,7 @@ export default function CesiumOverlayLabels({
   features = [],
   isRouteFlying = false,
   hoveredBoundary,
+  activeRegion = "china",
 }: CesiumOverlayLabelsProps) {
   const [screenLabels, setScreenLabels] = useState<ScreenLabel[]>([]);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -139,7 +145,22 @@ export default function CesiumOverlayLabels({
     }
 
     const zoomLevel = cameraState.zoomLevel;
-    const labels = labelManager.getVisibleLabels(zoomLevel);
+
+    // 太远的视角：不渲染任何标签
+    if (zoomLevel <= 2) {
+      setScreenLabels([]);
+      return;
+    }
+
+    // 根据 zoomLevel 计算当前可见的最高 Importance 级别
+    const visibleImportance = zoomLevelToImportance(zoomLevel);
+    if (!visibleImportance) {
+      setScreenLabels([]);
+      return;
+    }
+
+    // 获取当前区域匹配的标签
+    const labels = labelManager.getVisibleLabelsForRegion(zoomLevel, activeRegion);
     const result: ScreenLabel[] = [];
 
     const canvas = document.querySelector(".cesium-widget canvas") as HTMLCanvasElement | null;
@@ -147,6 +168,12 @@ export default function CesiumOverlayLabels({
     const canvasH = canvas?.height ?? window.innerHeight;
 
     for (const label of labels) {
+      // 检查标签的重要性是否在当前 zoomLevel 的可见范围内
+      const labelImportance = label.lodLevel ? lodToImportance(label.lodLevel) : "poi";
+      if (!importanceVisibleAtZoom(labelImportance, zoomLevel)) {
+        continue;
+      }
+
       const pos = handle.projectToScreen(label.position.lat, label.position.lon);
       if (!pos) continue;
 
@@ -160,21 +187,23 @@ export default function CesiumOverlayLabels({
       const fade = edgeFade(pos.x, pos.y, canvasW, canvasH);
       if (fade < 0.05) continue;
 
-      // LOD 样式
+      // 动态字号：随 zoomLevel 缩放
       const lodLevel = (label.lodLevel ?? 4) as 1 | 2 | 3 | 4;
-      const lodStyle = getLodStyle(lodLevel);
+      const lodImportance = lodToImportance(lodLevel);
+      const baseFontSize = getFontSize(lodImportance);
+      const dynamicSize = dynamicFontSize(lodImportance, zoomLevel);
 
       // LOD 1-2 标签始终完全可见，不被边缘淡出影响
       // LOD 3-4 标签受边缘淡出影响
       const edgeFadeFactor = lodLevel <= 2 ? 1.0 : fade;
-      const finalOpacity = lodStyle.opacity * edgeFadeFactor;
+      const finalOpacity = edgeFadeFactor;
 
       result.push({
         label,
         x: pos.x,
         y: pos.y,
         visibility: finalOpacity,
-        fontSize: lodStyle.fontSize,
+        fontSize: dynamicSize,
         opacity: finalOpacity,
       });
     }
@@ -189,7 +218,7 @@ export default function CesiumOverlayLabels({
 
     const resolved = resolveOverlaps(result);
     setScreenLabels(resolved);
-  }, [mapRef]);
+  }, [mapRef, activeRegion]);
 
   useEffect(() => {
     updateLabels();
@@ -213,7 +242,11 @@ export default function CesiumOverlayLabels({
         const terrain = terrains.find((t) => t.id === label.terrainId);
         const feature = features.find((f) => f.id === label.terrainId);
         const lodLevel = label.lodLevel ?? 3;
-        const lodStyle = getLodStyle(lodLevel);
+        const lodImportance = lodToImportance(lodLevel);
+        const lodStyle = {
+          fontWeight: TERRAIN_THEME[lodImportance].fontWeight,
+          letterSpacing: TERRAIN_THEME[lodImportance].letterSpacing,
+        };
         const rotation = label.rotation ?? 0;
         const isHovered = hoveredBoundary === label.text;
 
@@ -242,7 +275,7 @@ export default function CesiumOverlayLabels({
               className="whitespace-nowrap select-none"
               style={{
                 color: "#ffffff",
-                fontSize: `${isHovered ? fontSize * 1.1 : fontSize}px`,
+                fontSize: `${isHovered ? Math.round(fontSize * 1.1) : fontSize}px`,
                 fontWeight: lodStyle.fontWeight,
                 letterSpacing: lodStyle.letterSpacing,
                 lineHeight: 1.2,
@@ -258,4 +291,27 @@ export default function CesiumOverlayLabels({
       })}
     </div>
   );
+}
+
+/** LOD 级别 → Importance 映射 */
+function lodToImportance(lod: number): Importance {
+  if (lod <= 1) return "continental";
+  if (lod <= 2) return "national";
+  if (lod <= 3) return "regional";
+  return "poi";
+}
+
+/**
+ * 判断某个 importance 是否在指定 zoomLevel 下可见
+ * zoomLevel 越小（看得越远），只有更高重要性的标签可见
+ */
+function importanceVisibleAtZoom(importance: Importance, zoomLevel: number): boolean {
+  // continental: zoomLevel >= 4
+  if (importance === "continental") return zoomLevel >= 4;
+  // national: zoomLevel >= 6
+  if (importance === "national") return zoomLevel >= 6;
+  // regional: zoomLevel >= 9
+  if (importance === "regional") return zoomLevel >= 9;
+  // poi: zoomLevel >= 12
+  return zoomLevel >= 12;
 }
