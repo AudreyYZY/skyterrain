@@ -3,8 +3,6 @@
 import { labelManager, type CinematicLabel } from "@/lib/cinematic-labels";
 import { TERRAIN_THEME, getFontSize, LABEL_FONT_FAMILY, type Importance } from "@/lib/terrain-label-theme";
 import type { CesiumMapHandle } from "@/components/CesiumMap";
-import type { TerrainPoint } from "@/types/terrain";
-import type { GeographicFeature } from "@/features/types";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 interface ScreenLabel {
@@ -18,10 +16,8 @@ interface ScreenLabel {
 
 interface CesiumOverlayLabelsProps {
   mapRef: React.RefObject<CesiumMapHandle | null>;
-  onSelectTerrain?: (terrain: TerrainPoint) => void;
-  onSelectFeature?: (feature: GeographicFeature) => void;
-  terrains?: TerrainPoint[];
-  features?: GeographicFeature[];
+  /** 点击标签 → 按 terrain id 选择 */
+  onSelect?: (id: string) => void;
   isRouteFlying?: boolean;
   /** 当前鼠标 hover 的地形 id — 对应标签高亮 */
   hoveredTerrainId?: string | null;
@@ -121,10 +117,7 @@ function resolveOverlaps(labels: ScreenLabel[]): ScreenLabel[] {
 
 export default function CesiumOverlayLabels({
   mapRef,
-  onSelectTerrain,
-  onSelectFeature,
-  terrains = [],
-  features = [],
+  onSelect,
   isRouteFlying = false,
   hoveredTerrainId,
   focusedTerrainId,
@@ -241,8 +234,6 @@ export default function CesiumOverlayLabels({
     <div className="pointer-events-none absolute inset-0 z-[15]" style={{ overflow: "hidden" }}>
       {screenLabels.map(({ label, x, y, visibility, fontSize }) => {
         if (visibility <= 0) return null;
-        const terrain = terrains.find((t) => t.id === label.terrainId);
-        const feature = features.find((f) => f.id === label.terrainId);
         const lodLevel = label.lodLevel ?? 3;
         const lodImportance = lodToImportance(lodLevel);
         const lodStyle = {
@@ -269,11 +260,7 @@ export default function CesiumOverlayLabels({
               zIndex: isFocused ? 3 : isHovered ? 2 : 1,
             }}
             onClick={() => {
-              if (terrain && onSelectTerrain) {
-                onSelectTerrain(terrain);
-              } else if (feature && onSelectFeature) {
-                onSelectFeature(feature);
-              }
+              if (label.terrainId && onSelect) onSelect(label.terrainId);
             }}
           >
             <span

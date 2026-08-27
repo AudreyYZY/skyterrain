@@ -18,7 +18,7 @@ import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainStory } from "@/lib/i18n-stories";
-import { getTerrainEntry } from "@/lib/terrain-registry";
+import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
@@ -27,7 +27,7 @@ import {
 } from "@/lib/routes";
 import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries, type WordBoundary } from "@/lib/speech";
 import { narrationManager } from "@/lib/narration-manager";
-import { getAllTerrains, getTerrainsByCategory } from "@/lib/terrain";
+import { getAllTerrains, getTerrainsByCategory, getTerrainById } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -45,17 +45,22 @@ const allTerrains = getAllTerrains();
 const routes = getAllRoutes();
 
 /** Sidebar 统一分类类型 */
-type SidebarCategory = "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "plain" | "landscape";
+type SidebarCategory =
+  | "mountain" | "plateau" | "basin" | "plain" | "hill"
+  | "lake" | "desert" | "river" | "gorge" | "island" | "landscape";
 
 /** 分类翻译 key 映射 */
 const CATEGORY_I18N_KEY: Record<SidebarCategory, string> = {
   mountain: "sidebar.mountains",
+  plateau: "sidebar.plateaus",
+  basin: "sidebar.basins",
+  plain: "sidebar.plains",
+  hill: "sidebar.hills",
   lake: "sidebar.lakes",
   desert: "sidebar.deserts",
-  basin: "sidebar.basins",
   river: "sidebar.rivers",
-  plateau: "sidebar.plateaus",
-  plain: "sidebar.plains",
+  gorge: "sidebar.gorges",
+  island: "sidebar.islands",
   landscape: "sidebar.landscape",
 };
 
@@ -77,7 +82,10 @@ function normalizeType(raw: string, name?: string): SidebarCategory | null {
     case "basin":
       return "basin";
     case "plain":
+    case "delta":
       return "plain";
+    case "hills":
+      return "hill";
     case "lake":
       return "lake";
     case "desert":
@@ -85,6 +93,10 @@ function normalizeType(raw: string, name?: string): SidebarCategory | null {
     case "river":
     case "valley":
       return "river";
+    case "gorge":
+      return "gorge";
+    case "island":
+      return "island";
     case "scenic":
     case "oasis":
     case "city":
@@ -95,35 +107,27 @@ function normalizeType(raw: string, name?: string): SidebarCategory | null {
   }
 }
 
-/** 统一 Feature Registry — 新疆 + 全国 */
-const ALL_FEATURES = [
-  ...allTerrains.map(t => ({
-    id: t.id,
-    name: t.name,
-    type: normalizeType(t.category, t.name),
-    source: "xinjiang" as const,
-    terrain: t,
-    feature: null as GeographicFeature | null,
-  })),
-  ...CHINA_CORE_FEATURES.map(f => ({
-    id: f.id,
-    name: f.name,
-    type: normalizeType(f.featureType, f.name),
-    source: "china" as const,
-    terrain: null as TerrainPoint | null,
-    feature: f,
-  })),
-].filter(f => f.type !== null);
+/** 统一 Feature Registry — 以 terrain-registry 为单一真实源 */
+const ALL_FEATURES = TERRAIN_REGISTRY.map((e) => ({
+  id: e.id,
+  name: e.nameZh,
+  type: normalizeType(e.category, e.nameZh),
+  terrain: getTerrainById(e.id) ?? null,                       // 新疆 json（含讲解内容）
+  feature: CHINA_CORE_FEATURES.find((f) => f.id === e.id) ?? null,
+})).filter((f) => f.type !== null);
 
 /** Sidebar 分类定义 */
 const SIDEBAR_CATEGORIES: { type: SidebarCategory; label: string }[] = [
   { type: "mountain", label: "山脉" },
+  { type: "plateau", label: "高原" },
+  { type: "basin", label: "盆地" },
+  { type: "plain", label: "平原" },
+  { type: "hill", label: "丘陵" },
+  { type: "gorge", label: "峡谷" },
+  { type: "river", label: "河谷" },
   { type: "lake", label: "湖泊" },
   { type: "desert", label: "沙漠" },
-  { type: "basin", label: "盆地" },
-  { type: "river", label: "河谷" },
-  { type: "plateau", label: "高原" },
-  { type: "plain", label: "平原" },
+  { type: "island", label: "岛屿" },
   { type: "landscape", label: "景观" },
 ];
 
@@ -155,6 +159,38 @@ const ROUTE_END_LESSON: TerrainLesson = {
 };
 
 const SPEECH_RATE = 0.88;
+
+/** 尚无权威讲解内容的地形，面板占位（文字为下一阶段任务）*/
+const PLACEHOLDER_LESSON: TerrainLesson = {
+  seeing: "该地形的权威讲解内容正在整理中。你仍可从飞机视角观察它的范围、走向和与周边地貌的关系。",
+  formation: "",
+  history: "",
+  observation: "",
+};
+
+const ZERO_INTERACTION_STYLE = {
+  outlineAlpha: 0, outlineWidth: 0, outlineColor: [255, 255, 255] as [number, number, number],
+  brightnessAdjust: 0, labelOpacityMultiplier: 1,
+};
+
+/** registry 分类 → GeographicFeature.featureType（合成用）*/
+function registryCatToFeatureType(cat: string): import("@/features/types").FeatureType {
+  switch (cat) {
+    case "mountain_system": return "mountain_system";
+    case "plateau": return "plateau";
+    case "basin": return "basin";
+    case "plain":
+    case "delta":
+    case "hills":
+    case "island": return "plain";
+    case "desert": return "desert";
+    case "lake": return "lake";
+    case "river":
+    case "valley":
+    case "gorge": return "valley";
+    default: return "poi";
+  }
+}
 
 /** 叙述后的停留时间（毫秒） — 让用户消化内容 */
 const POST_NARRATION_DWELL_MS = 2000;
@@ -584,20 +620,22 @@ export default function ExplorerApp() {
           history: storySource.history,
           observation: storySource.observation,
         };
-        setLesson(effectiveLesson);
-        setActiveTerrain({
-          id: feature.id,
-          name: feature.name,
-          lat: entry?.landmark.lat ?? 0,
-          lon: entry?.landmark.lon ?? 0,
-          elevation: feature.elevation,
-          category: feature.featureType as any,
-          description: "",
-          cards: { location: "", peak: "", feature: "" },
-          lesson: effectiveLesson,
-          knowledge: { terrainFeatures: [], climateFeatures: [], historicalTopics: [], cultureTopics: [], interestingFacts: [], sources: [] },
-        } as any);
       }
+      // 面板始终更新（无讲解内容时显示占位，文字下一阶段补）
+      const panelLesson = effectiveLesson ?? PLACEHOLDER_LESSON;
+      setLesson(panelLesson);
+      setActiveTerrain({
+        id: feature.id,
+        name: feature.name,
+        lat: entry?.landmark.lat ?? 0,
+        lon: entry?.landmark.lon ?? 0,
+        elevation: feature.elevation,
+        category: feature.featureType as any,
+        description: "",
+        cards: { location: "", peak: "", feature: "" },
+        lesson: panelLesson,
+        knowledge: { terrainFeatures: [], climateFeatures: [], historicalTopics: [], cultureTopics: [], interestingFacts: [], sources: [] },
+      } as any);
 
       // 飞向目标 — Auto Camera 或 fallback
       console.log("[Narration] handleSelectFeature before flyTo");
@@ -650,6 +688,34 @@ export default function ExplorerApp() {
       }
     },
     [stopHighlight, speakLessonWithHighlight, language]
+  );
+
+  /** 统一选择入口（侧边栏 + 地图标签都走这里）*/
+  const handleSelectById = useCallback(
+    (id: string) => {
+      const xj = getTerrainById(id);
+      if (xj) { void handleSelectTerrain(xj); return; }
+      const cf = CHINA_CORE_FEATURES.find((f) => f.id === id);
+      if (cf) { void handleSelectFeature(cf); return; }
+      // 新增地形：暂无讲解内容，用 registry 合成一个最小 Feature
+      const e = getTerrainEntry(id);
+      if (!e) return;
+      void handleSelectFeature({
+        id: e.id,
+        name: e.nameZh,
+        featureType: registryCatToFeatureType(e.category),
+        elevation: e.landmark.elevation,
+        maturityLevel: 1,
+        label: { labelText: e.nameZh, labelType: "region", rotation: 0, priority: 60, minZoom: 1, maxZoom: 20 },
+        visibility: { hierarchyLevel: 1 },
+        interaction: {
+          hoverable: false, selectable: true,
+          idleStyle: ZERO_INTERACTION_STYLE, hoverStyle: ZERO_INTERACTION_STYLE,
+          focusStyle: ZERO_INTERACTION_STYLE, selectedStyle: ZERO_INTERACTION_STYLE,
+        },
+      } as GeographicFeature);
+    },
+    [handleSelectTerrain, handleSelectFeature]
   );
 
   const handleStartRoute = useCallback(
@@ -760,11 +826,8 @@ export default function ExplorerApp() {
         {mode === "explore" && (
           <CesiumOverlayLabels
             mapRef={mapRef}
-            terrains={allTerrains}
-            features={CHINA_CORE_FEATURES}
             isRouteFlying={isRouteFlying}
-            onSelectTerrain={handleSelectTerrain}
-            onSelectFeature={handleSelectFeature}
+            onSelect={handleSelectById}
             hoveredTerrainId={hoveredTerrainId}
             focusedTerrainId={activeTerrain?.id ?? null}
             activeRegion={activeRegion}
@@ -892,13 +955,7 @@ export default function ExplorerApp() {
                           <button
                             key={f.id}
                             type="button"
-                            onClick={() => {
-                              if (f.source === "xinjiang" && f.terrain) {
-                                handleSelectTerrain(f.terrain);
-                              } else if (f.source === "china" && f.feature) {
-                                handleSelectFeature(f.feature);
-                              }
-                            }}
+                            onClick={() => handleSelectById(f.id)}
                             className={`w-full text-left px-3 py-2 rounded-lg transition-all ${
                               activeTerrain?.id === f.id
                                 ? "text-white/80 bg-white/[0.06]"

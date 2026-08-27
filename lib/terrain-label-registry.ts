@@ -14,11 +14,15 @@ export type LandformCategory =
   | "mountain"
   | "plateau"
   | "basin"
+  | "plain"
+  | "hills"
   | "desert"
   | "lake"
   | "peak"
   | "river"
-  | "plain"
+  | "gorge"
+  | "delta"
+  | "island"
   | "scenic"
   | "oasis"
   | "city";
@@ -42,10 +46,14 @@ const CATEGORY_MAP: Record<TerrainCategory, LandformCategory> = {
   plateau: "plateau",
   basin: "basin",
   plain: "plain",
+  hills: "hills",
   desert: "desert",
   lake: "lake",
   river: "river",
   valley: "river",
+  gorge: "gorge",
+  delta: "delta",
+  island: "island",
   scenic: "scenic",
   oasis: "oasis",
   city: "city",
@@ -75,6 +83,12 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   northeast: "national",
   "north-china": "national",
   yangtze: "national",
+  changbai: "national",
+  nanling: "national",
+  wuyi: "national",
+  taiwan: "national",
+  hainan: "national",
+  altun: "national",
   // 区域尺度
   "junggar-basin": "regional",
   "tarim-basin": "regional",
@@ -88,11 +102,47 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "ili-valley": "regional",
   "tarim-river": "regional",
   ertis: "regional",
+  yinshan: "regional",
+  luliang: "regional",
+  helan: "regional",
+  liupan: "regional",
+  dabashan: "regional",
+  xuefeng: "regional",
+  dabie: "regional",
+  dalou: "regional",
+  xiaoxinganling: "regional",
+  "hexi-corridor": "regional",
+  "yangtze-gorges": "regional",
+  "tsangpo-gorge": "regional",
+  "chengdu-plain": "regional",
+  "guanzhong-plain": "regional",
+  "hetao-plain": "regional",
+  "yangtze-delta": "regional",
+  "pearl-delta": "regional",
+  "liaodong-hills": "regional",
+  "shandong-hills": "regional",
+  "jiangnan-hills": "regional",
+  "liangguang-hills": "regional",
+  "badain-jaran": "regional",
+  tengger: "regional",
+  gobi: "regional",
+  "qinghai-lake": "regional",
+  namtso: "regional",
+  poyang: "regional",
+  dongting: "regional",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
   if (IMPORTANCE_BY_ID[id]) return IMPORTANCE_BY_ID[id];
-  if (category === "mountain_system" || category === "plateau" || category === "basin" || category === "plain")
+  if (
+    category === "mountain_system" ||
+    category === "plateau" ||
+    category === "basin" ||
+    category === "plain" ||
+    category === "hills" ||
+    category === "delta" ||
+    category === "island"
+  )
     return "regional";
   return "poi";
 }
