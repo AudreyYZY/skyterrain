@@ -71,10 +71,17 @@ features/
 
 **地图/交互已完成**：88 个地形注册表 + 数据驱动相机 + 标签分级 + 地形抬升高亮 + 自然语音 + 逐句高亮。
 
-**下一阶段 — 权威文字内容**：每个地形的讲解（具体特征 / 观测点 / 与相似地形的区分 /
-地理知识解释，如"云贵高原海拔低但仍是高原"）需从中国国家地理、中科院、国测局等权威来源总结，
-非 AI 生成。当前无内容的地形面板显示 `PLACEHOLDER_LESSON` 占位（`ExplorerApp.tsx`）。
-内容结构对应 `TerrainLesson` 的 seeing / formation / history / observation 四段。
+**权威文字内容 — 进行中**：讲解改为 6 个通用板块（`TerrainLesson`，顺序见 `lib/lesson.ts`
+`LESSON_SECTION_ORDER`）：
+`seeing 概述` → `formation 地貌特征` → `observation 从空中怎么看` →
+`distinguish 与相似地形的区分` → `concept 地理知识（为何算这类地形/常见误区）` →
+`history 历史与人文`。
+内容写在 `lib/terrain-content.ts`（`getTerrainContent(id)`，按注册表 id 索引），
+依据中国国家地理 / 中科院 / 自然资源部等公认地理事实总结，非文学化旁白、非凭空生成。
+已收录 34 个（20 个一级地形 + 长白山/南岭/贺兰山/河西走廊/长江三峡/雅鲁藏布大峡谷/
+青海湖/鄱阳湖/海南岛/台湾岛等）。未收录地形面板显示 `PLACEHOLDER_LESSON` 占位。
+内容优先级：`getTerrainContent(id)`（zh-CN）> `i18n-stories` 英译 > 新疆 json `lesson` /
+`china-core` story > 占位。
 
 ## Camera 推导链路
 
