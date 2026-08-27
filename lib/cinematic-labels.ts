@@ -182,6 +182,15 @@ export class CinematicLabelManager {
     this.focusedTerrainId = null;
   }
 
+  /** 清除除指定图层外的所有图层（保留常驻的地形标注层），并重置聚焦状态 */
+  clearExcept(keepLayerIds: string[]): void {
+    for (const id of [...this.layers.keys()]) {
+      if (!keepLayerIds.includes(id)) this.layers.delete(id);
+    }
+    this.activeLabelId = null;
+    this.focusedTerrainId = null;
+  }
+
   /** 获取活跃标注 */
   getActiveLabel(): CinematicLabel | null {
     if (!this.activeLabelId) return null;

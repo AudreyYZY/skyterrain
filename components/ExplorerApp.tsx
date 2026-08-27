@@ -19,8 +19,8 @@ import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainStory } from "@/lib/i18n-stories";
-import { getTerrainFOI } from "@/lib/foi-registry";
-import { computeCameraFromPolygon, computeCameraFromRidge, extractPolygonCoords, extractLineCoords, type CameraParams } from "@/lib/auto-camera";
+import { getTerrainEntry } from "@/lib/terrain-registry";
+import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
 import {
   getAllRoutes,
@@ -77,6 +77,8 @@ function normalizeType(raw: string, name?: string): SidebarCategory | null {
       return "plateau";
     case "basin":
       return "basin";
+    case "plain":
+      return "plain";
     case "lake":
       return "lake";
     case "desert":
@@ -174,7 +176,7 @@ export default function ExplorerApp() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
   const [sidebarCategory, setSidebarCategory] = useState<string | null>(null);
   const [showDetailDrawer, setShowDetailDrawer] = useState(false);
-  const [hoveredBoundary, setHoveredBoundary] = useState<string | null>(null);
+  const [hoveredTerrainId, setHoveredTerrainId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
   const [activeRegion, setActiveRegionState] = useState<string>(() => {
     try {
@@ -485,27 +487,35 @@ export default function ExplorerApp() {
       // 重置取消标志
       narrationCancelledRef.current = false;
 
-      // 更新标注层 — 只清除探索层，保留地形标注层
-      labelManager.removeLayer("explore-labels");
-      const layerId = "explore-labels";
-      labelManager.createLayer(layerId, "探索标注", 5);
-      labelManager.addLabel(layerId, createTerrainLabel(
-        terrain.id, terrain.name, terrain.lat, terrain.lon, 100
-      ));
+      // 聚焦当前地形（标签 + 地图区域高亮）— 标签由 terrain-labels 层统一提供，不再另加
       labelManager.setFocusedTerrain(terrain.id);
-
-      // 高亮地貌边界
-      const boundaryId = `${terrain.id}-boundary`;
-      mapRef.current?.highlightBoundary(boundaryId);
+      mapRef.current?.focusTerrain(terrain.id);
 
       try {
-        // 1) 镜头飞到目标地貌，等待飞行动画完成
+        // 1) 镜头飞到目标地貌 — 数据驱动相机（与全国路径统一）
         console.log("[ExplorerApp] fly start:", terrain.id);
-        await (mapRef.current?.flyToTerrainAndWait(terrain) ?? Promise.resolve());
+        const entry = getTerrainEntry(terrain.id);
+        if (entry) {
+          const cam = computeTerrainCamera(entry);
+          console.log(`[TerrainCamera] ${terrain.name}: landmark=${entry.landmark.name} → target=[${cam.target[0].toFixed(2)}, ${cam.target[1].toFixed(2)}] heading=${cam.heading.toFixed(0)}° pitch=${cam.pitch.toFixed(0)}° range=${(cam.range / 1000).toFixed(0)}km`);
+          const flyPayload: TerrainPoint = {
+            ...terrain,
+            lat: cam.target[1],
+            lon: cam.target[0],
+            elevation: 0,
+            cameraHeight: cam.range,
+          };
+          await (mapRef.current?.flyToTerrainAndWait(flyPayload, {
+            heading: cam.heading,
+            pitch: cam.pitch,
+          }) ?? Promise.resolve());
+        } else {
+          await (mapRef.current?.flyToTerrainAndWait(terrain) ?? Promise.resolve());
+        }
         console.log("[ExplorerApp] fly complete:", terrain.id);
 
-        // Debug Mode: 显示边界 + FOI + Camera Target + Range
-        mapRef.current?.debugBoundaries(terrain.id);
+        // 边界/FOI 调试标记（红黄十字）默认关闭；如需排查取景，
+        // 在控制台执行 window.debugCesium.debugAutoCamera(id) 手动查看。
 
         // 检查是否被取消（用户在飞行中点击了停止）
         if (narrationCancelledRef.current) {
@@ -551,34 +561,18 @@ export default function ExplorerApp() {
       stopHighlight();
       narrationCancelledRef.current = false;
 
-      // 计算 Camera 参数 — 优先使用 Auto Camera (FOI + Geometry)
-      const foi = getTerrainFOI(feature.id);
+      // 计算 Camera 参数 — 数据驱动 (lib/terrain-registry + lib/terrain-camera)
+      const entry = getTerrainEntry(feature.id);
       let cameraParams: CameraParams | null = null;
 
-      if (foi) {
-        // Auto Camera: 从 Geometry + FOI 计算
-        if (foi.featureType === "mountain_system") {
-          cameraParams = computeCameraFromRidge(foi.geometryCoords, foi.primary);
-        } else {
-          cameraParams = computeCameraFromPolygon(foi.geometryCoords, foi.primary);
-        }
-        console.log(`[AutoCamera] ${feature.name}: target=[${cameraParams.target[0].toFixed(2)}, ${cameraParams.target[1].toFixed(2)}] heading=${cameraParams.heading.toFixed(0)}° pitch=${cameraParams.pitch.toFixed(0)}° range=${(cameraParams.range/1000).toFixed(0)}km`);
-      } else if (feature.cameraGeometry) {
-        // Fallback: 手工 cameraGeometry
-        const cg = feature.cameraGeometry;
-        cameraParams = { target: cg.target, heading: cg.heading, pitch: cg.pitch, range: cg.range };
+      if (entry) {
+        cameraParams = computeTerrainCamera(entry);
+        console.log(`[TerrainCamera] ${feature.name}: landmark=${entry.landmark.name} [${entry.landmark.lon}, ${entry.landmark.lat}] → target=[${cameraParams.target[0].toFixed(2)}, ${cameraParams.target[1].toFixed(2)}] heading=${cameraParams.heading.toFixed(0)}° pitch=${cameraParams.pitch.toFixed(0)}° range=${(cameraParams.range/1000).toFixed(0)}km`);
       }
 
-      // 更新标注层
-      labelManager.removeLayer("explore-labels");
-      const layerId = "explore-labels";
-      labelManager.createLayer(layerId, "探索标注", 5);
-      if (cameraParams) {
-        labelManager.addLabel(layerId, createTerrainLabel(
-          feature.id, feature.name, cameraParams.target[1], cameraParams.target[0], 100
-        ));
-      }
+      // 聚焦当前地形（标签 + 地图区域高亮）— 标签由 terrain-labels 层统一提供
       labelManager.setFocusedTerrain(feature.id);
+      mapRef.current?.focusTerrain(feature.id);
 
       // 设置当前 Feature 状态 — 驱动右侧面板更新
       const translatedStory = getTerrainStory(feature.name, language);
@@ -595,8 +589,8 @@ export default function ExplorerApp() {
         setActiveTerrain({
           id: feature.id,
           name: feature.name,
-          lat: cameraParams?.target[1] ?? 0,
-          lon: cameraParams?.target[0] ?? 0,
+          lat: entry?.landmark.lat ?? 0,
+          lon: entry?.landmark.lon ?? 0,
           elevation: feature.elevation,
           category: feature.featureType as any,
           description: "",
@@ -610,7 +604,7 @@ export default function ExplorerApp() {
       console.log("[Narration] handleSelectFeature before flyTo");
       if (cameraParams) {
         console.log("[CameraChain] INPUT feature:", feature.id, feature.name);
-        console.log("[CameraChain] FOI primary:", foi?.primary.name, `[${foi?.primary.lon}, ${foi?.primary.lat}]`);
+        console.log("[CameraChain] landmark:", entry?.landmark.name, `[${entry?.landmark.lon}, ${entry?.landmark.lat}]`);
         console.log("[CameraChain] cameraParams.target:", `[${cameraParams.target[0].toFixed(4)}, ${cameraParams.target[1].toFixed(4)}]`);
         console.log("[CameraChain] cameraParams.heading:", cameraParams.heading.toFixed(1) + "°");
         console.log("[CameraChain] cameraParams.pitch:", cameraParams.pitch.toFixed(1) + "°");
@@ -642,8 +636,7 @@ export default function ExplorerApp() {
         return;
       }
 
-      // Debug Mode: 显示边界 + FOI + Camera Target + Range
-      mapRef.current?.debugBoundaries(feature.id);
+      // 边界/FOI 调试标记默认关闭（见 handleSelectTerrain 注释）
 
       // 再次检查取消状态 — 用户可能在飞行中点击了停止按钮
       if (narrationCancelledRef.current) {
@@ -681,8 +674,9 @@ export default function ExplorerApp() {
         setActiveTerrain(null);
         setDisplayCards(null);
 
-        // 初始化航线标注层
-        labelManager.clear();
+        // 初始化航线标注层 — 保留常驻地形标注层
+        labelManager.clearExcept(["terrain-labels"]);
+        mapRef.current?.focusTerrain(null);
         const layerId = "route-waypoints";
         labelManager.createLayer(layerId, "航线航点", 10);
 
@@ -729,13 +723,13 @@ export default function ExplorerApp() {
     narrationCancelledRef.current = true;
     narrationQueue.cancel();
     mapRef.current?.stopFlight();
-    mapRef.current?.resetBoundaries();
+    mapRef.current?.focusTerrain(null);
     setIsRouteFlying(false);
     setRoutePreparing(false);
     setActiveRouteId(null);
     activeRouteRef.current = null;
     stopSpeaking();
-    labelManager.clear();
+    labelManager.clearExcept(["terrain-labels"]);
   }, [stopSpeaking]);
 
   const terrainCount = terrainGroups.reduce(
@@ -762,7 +756,7 @@ export default function ExplorerApp() {
         <CesiumMap
           ref={mapRef}
           onTerrainMode={setTerrainMode}
-          onBoundaryHover={setHoveredBoundary}
+          onTerrainHover={setHoveredTerrainId}
         />
         {mode === "explore" && (
           <CesiumOverlayLabels
@@ -772,7 +766,8 @@ export default function ExplorerApp() {
             isRouteFlying={isRouteFlying}
             onSelectTerrain={handleSelectTerrain}
             onSelectFeature={handleSelectFeature}
-            hoveredBoundary={hoveredBoundary}
+            hoveredTerrainId={hoveredTerrainId}
+            focusedTerrainId={activeTerrain?.id ?? null}
             activeRegion={activeRegion}
           />
         )}

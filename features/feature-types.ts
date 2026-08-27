@@ -8,6 +8,7 @@ import type { FeatureType, LabelType } from "./types";
 export const FEATURE_TYPE_LABEL: Record<FeatureType, string> = {
   mountain_system: "山系",
   basin: "盆地",
+  plain: "平原",
   desert: "沙漠",
   plateau: "高原",
   lake: "湖泊",
@@ -20,6 +21,7 @@ export const FEATURE_TYPE_LABEL: Record<FeatureType, string> = {
 export const FEATURE_TYPE_DEFAULT_LABEL: Record<FeatureType, LabelType> = {
   mountain_system: "ridge",
   basin: "region",
+  plain: "region",
   desert: "region",
   plateau: "region",
   lake: "lake",
@@ -35,6 +37,7 @@ export const FEATURE_TYPE_GEOMETRY: Record<
 > = {
   mountain_system: { identity: "LineString", interaction: "Polygon" },
   basin: { identity: "Polygon", interaction: "Polygon" },
+  plain: { identity: "Polygon", interaction: "Polygon" },
   desert: { identity: "Polygon", interaction: "Polygon" },
   plateau: { identity: "Polygon", interaction: "Polygon" },
   lake: { identity: "Polygon", interaction: "Polygon" },

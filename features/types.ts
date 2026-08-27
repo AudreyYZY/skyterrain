@@ -16,6 +16,7 @@
 export type FeatureType =
   | "mountain_system"
   | "basin"
+  | "plain"
   | "desert"
   | "plateau"
   | "lake"

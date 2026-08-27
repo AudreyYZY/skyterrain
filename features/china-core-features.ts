@@ -357,7 +357,7 @@ const QAIDAM: GeographicFeature = {
 const NORTHEAST: GeographicFeature = {
   id: "northeast",
   name: "东北平原",
-  featureType: "basin",
+  featureType: "plain",
   elevation: 150, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [125.0, 46.0], heading: 0, pitch: -35, range: 300000 },
@@ -385,7 +385,7 @@ const NORTHEAST: GeographicFeature = {
 const NORTH_CHINA: GeographicFeature = {
   id: "north-china",
   name: "华北平原",
-  featureType: "basin",
+  featureType: "plain",
   elevation: 50, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [116.0, 37.0], heading: 0, pitch: -35, range: 300000 },
@@ -413,7 +413,7 @@ const NORTH_CHINA: GeographicFeature = {
 const YANGTZE: GeographicFeature = {
   id: "yangtze",
   name: "长江中下游平原",
-  featureType: "basin",
+  featureType: "plain",
   elevation: 50, // 平均海拔
   maturityLevel: 1,
   cameraGeometry: { target: [115.0, 29.5], heading: 0, pitch: -35, range: 300000 },
