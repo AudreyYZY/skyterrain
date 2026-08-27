@@ -46,7 +46,7 @@ ProvenanceRecord       — 数据溯源（来源、精度、获取时间）
 ```
 components/
   ExplorerApp.tsx        — 主编排器
-  CesiumMap.tsx          — 3D 地球、Camera 系统、地形区域椭圆（hover/选中高亮）
+  CesiumMap.tsx          — 3D 地球、Camera 系统、地形区域抬升高亮（hover/选中）
   CesiumOverlayLabels.tsx — HTML 地形标签层（zoom 自适应、hover/focus 高亮）
   NarrationPanel.tsx     — 右侧面板（i18n 支持）
   StructuredLesson.tsx   — 讲解内容渲染
@@ -104,13 +104,27 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 ## 地形标签 / 区域高亮
 
 - 标签数据全部来自 `TERRAIN_REGISTRY`（47 个），位置 = 锚点，无其它标记源。
-- `CesiumOverlayLabels.tsx`：HTML 标签，随 zoom 分级显示 + 字号缩放（`dynamicFontSize`）。
-- `CesiumMap.tsx`：每个地形一个贴地椭圆（bbox 推导），idle 近乎不可见；
-  hover → 白色淡染 + 标签描边；点击/跳转 → `focusTerrain(id)` → 琥珀色淡染 + 标签琥珀胶囊。
-- hover 走 `ScreenSpaceEventHandler` MOUSE_MOVE → `scene.pick` 取 `terrainId`。
-- 高亮配色/透明度常量在 `CesiumMap.tsx` 顶部（REGION_*_ALPHA）。
-- 字体：`lib/terrain-label-theme.ts` 的 `LABEL_FONT_FAMILY`（通用系统字体栈，
-  待整体 UI 大修时统一替换）。
+- `CesiumOverlayLabels.tsx`：HTML 标签。
+  - `projectToScreen` 用 `EllipsoidalOccluder` 剔除地球背面的点（否则缩小看地球会堆叠）。
+  - zoom ≤ 3 不显示；importance→LOD 1:1，按 zoom 分级（大陆/国家/区域/POI）逐级展开。
+  - `dynamicFontSize` 随 zoom 缩放，下限 0.8。
+- `CesiumMap.tsx` 地形区域：每个地形两个多边形——
+  - `pick`：贴地、透明，仅作 `scene.pick` 命中目标（形状用 GeoJSON 或 bbox 八边形）；
+  - `lift`：同形状的挤出体，hover/focus 时 `extrudedHeight` 动画抬升
+    （白色 ≈9km / 琥珀 ≈16km），像整块地形升起。动画由 `tickTerrainRegions` rAF 推进。
+  - 形状优先 `data/gis/exports/{id}.geojson`（13 个），否则 bbox 八边形。
+  - 配色/抬升高度/透明度常量在 `CesiumMap.tsx` 顶部（`REGION_*`）。
+- hover 走 `ScreenSpaceEventHandler` MOUSE_MOVE → `scene.pick` 取 `terrainId`；
+  点击/跳转走 `focusTerrain(id)`；标签同步高亮（琥珀胶囊 / 白色描边）。
+- 字体：`lib/terrain-label-theme.ts` 的 `LABEL_FONT_FAMILY`（通用系统字体栈）。
+
+## 语音播报
+
+- `app/api/tts/route.ts`：Edge TTS，默认 `zh-CN-XiaoxiaoNeural`（最自然的中文女声），
+  `PROSODY` 常量控制 rate/pitch（大幅放缓会有机械感，保持 -6% 左右）。
+- 逐句高亮：Edge TTS 成功 → `startHighlightWithTiming`（word boundary 精确同步）；
+  失败回退浏览器 TTS → `speakBrowserAndWait` 在 `utterance.onstart` 触发 `onPlaying`
+  （不是等播完），`startHighlightSections` 按字数估时推进。
 
 ## 禁止事项
 
@@ -119,7 +133,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 - `cameraGeometry`（china/xinjiang-core-features 中的字段，已停止读取）
 - `lib/foi-registry.ts` / `lib/auto-camera.ts`（仅 CesiumMap debug 残留引用，待清理）
 - Feature hoverGeometry/RidgeCorridor 渲染、`data/gis/exports/*.geojson` 边界线
-  （已由 terrain-registry 的椭圆区域取代）
+  （geojson 现只用于地形区域抬升体的形状，不再画常驻边界）
 - 手工 `target` / `heading` / `pitch` / `range`
 - 逐个修补秦岭、大兴安岭等 Camera 参数
 - 分散在 data/*.json、cameraGeometry、terrain-label-registry 的重复坐标
