@@ -56,11 +56,18 @@ export function getFontSize(importance: Importance): number {
   return Math.round(BASE_FONT_SIZE * TERRAIN_THEME[importance].fontScale);
 }
 
+/**
+ * 通用字体栈 — 直接用系统 UI 字体（中英文都走各平台默认无衬线体）。
+ * 不锁定具体字重/字形，方便后续整体 UI 大修时替换。
+ */
+export const LABEL_FONT_FAMILY =
+  'system-ui, -apple-system, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif';
+
 /** 文字样式常量 */
 export const LABEL_TEXT_STYLE = {
   color: "#ffffff",
   stroke: "rgba(0, 0, 0, 0.6)",
   strokeWidth: 0.5,
   shadow: "0 0 3px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)",
-  fontFamily: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+  fontFamily: LABEL_FONT_FAMILY,
 } as const;

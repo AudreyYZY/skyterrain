@@ -7,6 +7,7 @@ import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { getTerrainFOI } from "@/lib/foi-registry";
 import { computeCameraFromPolygon, computeCameraFromRidge } from "@/lib/auto-camera";
+import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 
 /** 所有 Feature (新疆 + 全国) */
 const ALL_FEATURES: GeographicFeature[] = [...XINJIANG_CORE_FEATURES, ...CHINA_CORE_FEATURES];
@@ -41,10 +42,8 @@ export interface CesiumMapHandle {
   projectToScreen: (lat: number, lon: number) => { x: number; y: number } | null;
   /** 获取当前相机状态 */
   getCameraState: () => CameraState | null;
-  /** 高亮指定地貌边界 */
-  highlightBoundary: (boundaryId: string) => void;
-  /** 重置所有边界为默认样式 */
-  resetBoundaries: () => void;
+  /** 高亮指定地形区域（传 null 清除）— 用于点击跳转后标出地形范围 */
+  focusTerrain: (terrainId: string | null) => void;
   /** 显示指定地形的 Debug 信息（FOI + 边界 + Camera Target + Range） */
   debugBoundaries: (boundaryId: string) => void;
 }
@@ -66,7 +65,8 @@ export type TerrainMode = "world" | "ellipsoid";
 interface CesiumMapProps {
   onReady?: () => void;
   onTerrainMode?: (mode: TerrainMode) => void;
-  onBoundaryHover?: (boundaryName: string | null) => void;
+  /** 鼠标 hover 到某地形区域时回调其 id（移出时 null） */
+  onTerrainHover?: (terrainId: string | null) => void;
 }
 
 /** 飞机舷窗俯角 — 更低角度，模拟真实客机窗口 */
@@ -157,15 +157,141 @@ function waitForTilesSettled(
   });
 }
 
-/** 根据地貌类型返回理想观看高度 */
+/**
+ * 返回理想观看高度（米，离地）
+ *
+ * 优先级：显式 cameraHeight（地形点击时 = 数据驱动相机推导的 range）
+ *   > 地貌类型默认值（仅航线巡航等未指定高度的场景）
+ *   > 巡航高度
+ *
+ * 注意：地形点击路径不再传 category，因此 TERRAIN_VIEW_HEIGHTS 只作为
+ * 航线飞行的兜底，不会覆盖 computeTerrainCamera 的 range。
+ */
 function viewHeightForTerrain(
   terrain: { category?: string; cameraHeight?: number } | undefined,
   cruiseHeight: number
 ): number {
+  if (typeof terrain?.cameraHeight === "number") return terrain.cameraHeight;
   if (terrain?.category && TERRAIN_VIEW_HEIGHTS[terrain.category]) {
     return TERRAIN_VIEW_HEIGHTS[terrain.category]!;
   }
-  return terrain?.cameraHeight ?? cruiseHeight;
+  return cruiseHeight;
+}
+
+/** 有精确 Natural Earth 轮廓的地形（data/gis/exports/*.geojson）*/
+const TERRAIN_RING_FILES = new Set([
+  "tianshan", "kunlun", "altai", "junggar-basin", "tarim-basin", "taklamakan",
+  "pamir", "qinling", "qilian", "taihang", "loess", "sichuan", "inner-mongolia",
+]);
+
+/** 取地形轮廓外环 [lon,lat][]，无文件返回 null */
+async function loadTerrainRing(id: string): Promise<[number, number][] | null> {
+  if (!TERRAIN_RING_FILES.has(id)) return null;
+  try {
+    const res = await fetch(`/data/gis/exports/${id}.geojson`);
+    if (!res.ok) return null;
+    const gj = await res.json();
+    const g = gj.geometry ?? gj;
+    if (g.type === "Polygon") return g.coordinates[0] as [number, number][];
+    if (g.type === "MultiPolygon") {
+      // 取顶点最多的那个环
+      let best: [number, number][] = [];
+      for (const poly of g.coordinates as [number, number][][][]) {
+        if (poly[0] && poly[0].length > best.length) best = poly[0] as [number, number][];
+      }
+      return best.length ? best : null;
+    }
+  } catch {
+    /* ignore */
+  }
+  return null;
+}
+
+/** bbox → 八边形环（比矩形更像"一块地形"）*/
+function bboxOctagon(bbox: [number, number, number, number]): [number, number][] {
+  const [w, s, e, n] = bbox;
+  const cx = (w + e) / 2;
+  const cy = (s + n) / 2;
+  const rx = (e - w) / 2;
+  const ry = (n - s) / 2;
+  const k = 0.42; // 斜切比例
+  return [
+    [cx - rx, cy - ry * k], [cx - rx * k, cy - ry], [cx + rx * k, cy - ry],
+    [cx + rx, cy - ry * k], [cx + rx, cy + ry * k], [cx + rx * k, cy + ry],
+    [cx - rx * k, cy + ry], [cx - rx, cy + ry * k], [cx - rx, cy - ry * k],
+  ];
+}
+
+/** 地形区域高亮 — hover / focus 时该地形整体"抬升"一个半透明体 */
+const REGION_FOCUS_CSS = "#fbbf24";
+const REGION_LIFT_HOVER_M = 9_000;    // hover 抬升高度（米）
+const REGION_LIFT_FOCUS_M = 16_000;   // focus 抬升高度（米）
+const REGION_ALPHA_HOVER = 0.16;
+const REGION_ALPHA_FOCUS = 0.24;
+
+interface RegionEntry {
+  /** 贴地多边形 — hover 拾取目标，idle 近乎不可见 */
+  pick: import("cesium").Entity;
+  /** 抬升的半透明体 — hover / focus 时升起 */
+  lift: import("cesium").Entity;
+  /** 抬升体底面海拔（米），约等于该地形地表高度 */
+  baseElev: number;
+  /** 当前抬升高度（米），动画插值用 */
+  cur: number;
+  /** 目标抬升高度（米） */
+  target: number;
+  state: "idle" | "hover" | "focus";
+}
+
+/** 设置 hover / focus 目标，动画由 tickTerrainRegions 推进 */
+function applyTerrainRegionStyles(
+  Cesium: typeof import("cesium") | null,
+  viewer: import("cesium").Viewer | null,
+  regions: Map<string, RegionEntry>,
+  hoveredId: string | null,
+  focusedId: string | null
+): void {
+  if (!Cesium || !viewer || viewer.isDestroyed()) return;
+  for (const [id, r] of regions) {
+    const state: RegionEntry["state"] =
+      id === focusedId ? "focus" : id === hoveredId ? "hover" : "idle";
+    r.state = state;
+    r.target =
+      state === "focus" ? REGION_LIFT_FOCUS_M : state === "hover" ? REGION_LIFT_HOVER_M : 0;
+  }
+}
+
+/** 每帧推进所有地形区域的抬升动画，返回是否仍在动画中 */
+function tickTerrainRegions(
+  Cesium: typeof import("cesium"),
+  regions: Map<string, RegionEntry>
+): boolean {
+  let animating = false;
+  for (const r of regions.values()) {
+    const diff = r.target - r.cur;
+    if (Math.abs(diff) < 60) {
+      if (r.cur !== r.target) {
+        r.cur = r.target;
+      } else if (r.target === 0) {
+        continue;
+      }
+    } else {
+      r.cur += diff * 0.18; // 指数缓动
+      animating = true;
+    }
+    const maxLift = r.state === "focus" ? REGION_LIFT_FOCUS_M : REGION_LIFT_HOVER_M;
+    const t = Math.min(1, r.cur / maxLift);
+    const cssBase = r.state === "focus" ? REGION_FOCUS_CSS : "#ffffff";
+    const alpha = (r.state === "focus" ? REGION_ALPHA_FOCUS : REGION_ALPHA_HOVER) * t;
+    const poly = r.lift.polygon!;
+    poly.extrudedHeight = new Cesium.ConstantProperty(r.baseElev + Math.max(r.cur, 1));
+    poly.material = new Cesium.ColorMaterialProperty(
+      Cesium.Color.fromCssColorString(cssBase).withAlpha(alpha)
+    );
+    // 不用 polygon.outline —— 它会懒加载 createPolygonOutlineGeometry worker，
+    // 网络异常时会导致整个渲染崩溃；半透明挤出体 + 标签高亮已足够。
+  }
+  return animating;
 }
 
 /** 在 Canvas 上绘制调试标记图（红十字/黄十字）—— billboard 用 */
@@ -205,15 +331,37 @@ function makeDebugMarkerImage(Cesium: typeof import("cesium"), color: import("ce
 }
 
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
-  function CesiumMap({ onReady, onTerrainMode, onBoundaryHover }, ref) {
+  function CesiumMap({ onReady, onTerrainMode, onTerrainHover }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
     const flightCancelledRef = useRef(false);
     const routeEntityRef = useRef<import("cesium").Entity | null>(null);
-    const featureEntitiesRef = useRef<Map<string, import("cesium").Entity[]>>(new Map());
-    const featureHaloRef = useRef<Map<string, import("cesium").Entity[]>>(new Map());
+    /** 地形区域高亮实体（每个 terrain：贴地拾取多边形 + 抬升体）*/
+    const terrainRegionRef = useRef<Map<string, RegionEntry>>(new Map());
+    const hoveredTerrainRef = useRef<string | null>(null);
+    const focusedTerrainRef = useRef<string | null>(null);
+    const regionAnimRef = useRef<number | null>(null);
+
+    /** 启动/维持地形区域抬升动画的 rAF 循环 */
+    const pokeRegionAnim = useRef(() => {
+      const Cesium = cesiumRef.current;
+      const viewer = viewerRef.current;
+      if (!Cesium || !viewer || viewer.isDestroyed()) return;
+      if (regionAnimRef.current != null) return;
+      const step = () => {
+        if (!viewerRef.current || viewerRef.current.isDestroyed()) {
+          regionAnimRef.current = null;
+          return;
+        }
+        const more = tickTerrainRegions(Cesium, terrainRegionRef.current);
+        viewerRef.current.scene.requestRender();
+        regionAnimRef.current = more ? requestAnimationFrame(step) : null;
+      };
+      regionAnimRef.current = requestAnimationFrame(step);
+    }).current;
+
     const [status, setStatus] = useState<"loading" | "ready" | "error">(
       "loading"
     );
@@ -229,6 +377,22 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         if (canvas.width === 0 || canvas.height === 0) return null;
         try {
           const cartesian = Cesium.Cartesian3.fromDegrees(lon, lat);
+
+          // 遮挡剔除：地球背面 / 地平线以下的点不返回坐标，
+          // 否则缩小看地球时背面标签会投影到屏幕上堆在一起。
+          // (@types/cesium 版本较旧，EllipsoidalOccluder 需 any 断言)
+          const OccluderCtor = (Cesium as unknown as {
+            EllipsoidalOccluder: new (
+              e: unknown,
+              p: unknown
+            ) => { isPointVisible: (pt: unknown) => boolean };
+          }).EllipsoidalOccluder;
+          const occluder = new OccluderCtor(
+            Cesium.Ellipsoid.WGS84,
+            viewer.scene.camera.positionWC
+          );
+          if (!occluder.isPointVisible(cartesian)) return null;
+
           const canvasPos = Cesium.SceneTransforms.worldToWindowCoordinates(
             viewer.scene,
             cartesian
@@ -296,69 +460,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         });
       },
 
-      highlightBoundary(boundaryId: string) {
-        const viewer = viewerRef.current;
-        const Cesium = cesiumRef.current;
-        if (!viewer || !Cesium) return;
-
-        for (const [id, entities] of featureEntitiesRef.current) {
-          const feature = ALL_FEATURES.find((f) => f.id === id);
-          if (!feature) continue;
-          const isTarget = id === boundaryId;
-          const s = isTarget ? feature.interaction.selectedStyle : feature.interaction.idleStyle;
-
-          for (const entity of entities) {
-            if (entity.polygon) {
-              if (isTarget && s.brightnessAdjust > 0) {
-                entity.polygon.material = new Cesium.ColorMaterialProperty(
-                  Cesium.Color.WHITE.withAlpha(s.brightnessAdjust)
-                );
-              } else {
-                entity.polygon.material = Cesium.Color.TRANSPARENT as any;
-              }
-              entity.polygon.outlineColor = new Cesium.ConstantProperty(
-                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
-              );
-              entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.outlineWidth);
-            }
-            if (entity.polyline) {
-              entity.polyline.width = new Cesium.ConstantProperty(s.outlineWidth);
-              (entity.polyline as any).material = new Cesium.ColorMaterialProperty(
-                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
-              );
-            }
-          }
-        }
-        viewer.scene.requestRender();
-      },
-
-      resetBoundaries() {
-        const viewer = viewerRef.current;
-        const Cesium = cesiumRef.current;
-        if (!viewer || !Cesium) return;
-
-        for (const [id, entities] of featureEntitiesRef.current) {
-          const feature = ALL_FEATURES.find((f) => f.id === id);
-          if (!feature) continue;
-          const s = feature.interaction.idleStyle;
-
-          for (const entity of entities) {
-            if (entity.polygon) {
-              entity.polygon.material = Cesium.Color.TRANSPARENT as any;
-              entity.polygon.outlineColor = new Cesium.ConstantProperty(
-                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
-              );
-              entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.outlineWidth);
-            }
-            if (entity.polyline) {
-              entity.polyline.width = new Cesium.ConstantProperty(s.outlineWidth);
-              (entity.polyline as any).material = new Cesium.ColorMaterialProperty(
-                Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
-              );
-            }
-          }
-        }
-        viewer.scene.requestRender();
+      focusTerrain(terrainId: string | null) {
+        focusedTerrainRef.current = terrainId;
+        applyTerrainRegionStyles(cesiumRef.current, viewerRef.current, terrainRegionRef.current, hoveredTerrainRef.current, terrainId);
+        pokeRegionAnim();
       },
 
       debugBoundaries(boundaryId: string) {
@@ -1130,118 +1235,26 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             }
           });
 
-          // 地貌 Feature Hover 效果
+          // 地形区域 Hover — pick terrainId，高亮该地形区域椭圆 + 通知标签系统
           const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
-          let hoveredFeatureId: string | null = null;
 
           handler.setInputAction((movement: any) => {
             if (viewer.isDestroyed()) return;
             const picked = viewer.scene.pick(movement.endPosition);
             let newHoveredId: string | null = null;
-
             if (Cesium.defined(picked) && picked.id?.properties) {
-              const props = picked.id.properties;
-              const val = props?.getValue?.();
-              const featureId = val?.featureId;
-              const boundaryId = val?.boundaryId;
-              if (featureId) {
-                newHoveredId = featureId;
-              } else if (boundaryId) {
-                newHoveredId = boundaryId;
-              }
+              const val = picked.id.properties?.getValue?.();
+              newHoveredId = val?.terrainId ?? null;
             }
 
-            // Hover Pick 调试
-            if ((window as any).__debugHover) {
-              const feature = newHoveredId ? ALL_FEATURES.find(f => f.id === newHoveredId) : null;
-              console.log("[hover]", {
-                feature: feature?.name ?? "none",
-                id: newHoveredId ?? "none",
-                type: feature?.featureType ?? "-",
-                maturity: feature?.maturityLevel ?? "-",
-              });
-            }
-
-            // 检查 maturityLevel — Level 0-1 不支持 hover
-            // GeoJSON 边界 (boundaryId) 始终支持 hover
-            const hoveredFeature = newHoveredId ? ALL_FEATURES.find(f => f.id === newHoveredId) : null;
-            const isGeoJsonBoundary = newHoveredId && !hoveredFeature;
-            if (hoveredFeature && hoveredFeature.maturityLevel < 2 && !isGeoJsonBoundary) {
-              newHoveredId = null; // 不支持 hover
-            }
-
-            if (newHoveredId !== hoveredFeatureId) {
-              const prevHoveredId = hoveredFeatureId;
-              hoveredFeatureId = newHoveredId;
-
-              // Region Halo: fade-in 动画
-              const HALO_ALPHA = 0.07;
-              const FADE_DURATION = 300; // ms
-              const startTime = performance.now();
-
-              // 立即隐藏之前的 halo
-              if (prevHoveredId) {
-                const prevHalos = featureHaloRef.current.get(prevHoveredId);
-                if (prevHalos) {
-                  for (const h of prevHalos) {
-                    if (h.polygon) {
-                      h.polygon.material = Cesium.Color.WHITE.withAlpha(0.0) as any;
-                    }
-                  }
-                }
-              }
-
-              // Fade-in 新的 halo
-              if (newHoveredId) {
-                const newHalos = featureHaloRef.current.get(newHoveredId);
-                if (newHalos) {
-                  const animate = () => {
-                    const elapsed = performance.now() - startTime;
-                    const progress = Math.min(1, elapsed / FADE_DURATION);
-                    const alpha = HALO_ALPHA * progress;
-                    for (const h of newHalos) {
-                      if (h.polygon) {
-                        h.polygon.material = Cesium.Color.WHITE.withAlpha(alpha) as any;
-                      }
-                    }
-                    viewer.scene.requestRender();
-                    if (progress < 1) {
-                      requestAnimationFrame(animate);
-                    }
-                  };
-                  requestAnimationFrame(animate);
-                }
-              }
-
-              // 更新 outline 样式
-              for (const [id, entities] of featureEntitiesRef.current) {
-                const feature = ALL_FEATURES.find((f) => f.id === id);
-                if (!feature) continue;
-                const isHovered = id === newHoveredId;
-                const s = isHovered ? feature.interaction.hoverStyle : feature.interaction.idleStyle;
-
-                for (const entity of entities) {
-                  if (entity.polygon) {
-                    entity.polygon.material = Cesium.Color.TRANSPARENT as any;
-                    entity.polygon.outlineColor = new Cesium.ConstantProperty(
-                      Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
-                    );
-                    entity.polygon.outlineWidth = new Cesium.ConstantProperty(s.outlineWidth);
-                  }
-                  if (entity.polyline) {
-                    entity.polyline.width = new Cesium.ConstantProperty(s.outlineWidth);
-                    (entity.polyline as any).material = new Cesium.ColorMaterialProperty(
-                      Cesium.Color.fromBytes(s.outlineColor[0], s.outlineColor[1], s.outlineColor[2], Math.round(s.outlineAlpha * 255))
-                    );
-                  }
-                }
-              }
-              // 通知标签系统高亮对应标签
-              const hoveredName = newHoveredId
-                ? ALL_FEATURES.find((f) => f.id === newHoveredId)?.name ?? null
-                : null;
-              onBoundaryHover?.(hoveredName);
-              viewer.scene.requestRender();
+            if (newHoveredId !== hoveredTerrainRef.current) {
+              hoveredTerrainRef.current = newHoveredId;
+              applyTerrainRegionStyles(
+                Cesium, viewer, terrainRegionRef.current,
+                newHoveredId, focusedTerrainRef.current
+              );
+              pokeRegionAnim();
+              onTerrainHover?.(newHoveredId);
             }
           }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
@@ -1267,190 +1280,37 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
           resizeObserver.observe(containerRef.current);
 
-          // 绘制地貌 Feature — 严格按 maturityLevel
-          for (const feature of ALL_FEATURES) {
-            const entities: import("cesium").Entity[] = [];
-            const idle = feature.interaction.idleStyle;
+          // 地形区域 — 每个地形：贴地拾取多边形 + 抬升体。
+          // 形状优先用 Natural Earth GeoJSON（data/gis/exports），否则用 bbox 八边形。
+          terrainRegionRef.current.clear();
+          for (const entry of TERRAIN_REGISTRY) {
+            let ring = await loadTerrainRing(entry.id);
+            if (!ring) ring = bboxOctagon(entry.bbox);
+            const positions = ring.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+            const hierarchy = new Cesium.PolygonHierarchy(positions);
+            // 抬升体底面：地形低处附近，让它像从地面整体升起
+            const baseElev = Math.max(0, (entry.landmark.elevation ?? 0) - 2500);
 
-            const featureProps = {
-              featureId: feature.id,
-              featureName: feature.name,
-              featureType: feature.featureType,
-              maturityLevel: feature.maturityLevel,
-            };
-
-            // Level 0: 仅 Label，不渲染任何 Geometry
-            // Level 1: Identity Geometry (标签放置)
-            // Level 2+: Hover Geometry (交互)
-            if (feature.maturityLevel < 2) continue;
-
-            const geo = feature.hoverGeometry;
-            if (!geo) continue;
-
-            if (geo.type === "Polygon" || geo.type === "MultiPolygon") {
-              // 盆地/沙漠/湖泊: 渲染 Polygon 边界
-              const coords = geo.type === "Polygon"
-                ? (geo.coordinates[0] as [number, number][])
-                : (geo.coordinates[0]?.[0] as [number, number][] | undefined);
-              if (coords) {
-                const positions = coords.map(([lon, lat]) =>
-                  Cesium.Cartesian3.fromDegrees(lon, lat)
-                );
-                const entity = viewer.entities.add({
-                  polygon: {
-                    hierarchy: new Cesium.PolygonHierarchy(positions),
-                    material: Cesium.Color.TRANSPARENT,
-                    outline: true,
-                    outlineColor: Cesium.Color.fromBytes(
-                      idle.outlineColor[0], idle.outlineColor[1], idle.outlineColor[2],
-                      Math.round(idle.outlineAlpha * 255)
-                    ),
-                    outlineWidth: idle.outlineWidth,
-                  },
-                  properties: featureProps,
-                });
-                entities.push(entity);
-              }
-            } else if (geo.type === "RidgeCorridor") {
-              // 山脉: 渲染山脊线 + 局部山体区域
-              const ridgePositions = geo.ridgeLine.map(([lon, lat]) =>
-                Cesium.Cartesian3.fromDegrees(lon, lat)
-              );
-              const ridgeEntity = viewer.entities.add({
-                polyline: {
-                  positions: ridgePositions,
-                  width: 1.5,
-                  material: Cesium.Color.fromBytes(
-                    idle.outlineColor[0], idle.outlineColor[1], idle.outlineColor[2],
-                    Math.round(idle.outlineAlpha * 255)
-                  ),
-                  clampToGround: true,
-                },
-                properties: featureProps,
-              });
-              entities.push(ridgeEntity);
-
-              // 渲染山体区域轮廓
-              for (const segment of geo.segments) {
-                const ring = segment[0] as [number, number][] | undefined;
-                if (!ring) continue;
-                const positions = ring.map(([lon, lat]) =>
-                  Cesium.Cartesian3.fromDegrees(lon, lat)
-                );
-                const entity = viewer.entities.add({
-                  polygon: {
-                    hierarchy: new Cesium.PolygonHierarchy(positions),
-                    material: Cesium.Color.TRANSPARENT,
-                    outline: true,
-                    outlineColor: Cesium.Color.fromBytes(
-                      idle.outlineColor[0], idle.outlineColor[1], idle.outlineColor[2],
-                      Math.round(idle.outlineAlpha * 0.6 * 255)
-                    ),
-                    outlineWidth: 1,
-                  },
-                  properties: featureProps,
-                });
-                entities.push(entity);
-              }
-            }
-
-            featureEntitiesRef.current.set(feature.id, entities);
-
-            // Region Halo: 极淡填充，Hover 时显示
-            const haloEntities: import("cesium").Entity[] = [];
-            if (geo.type === "Polygon" || geo.type === "MultiPolygon") {
-              const coords = geo.type === "Polygon"
-                ? (geo.coordinates[0] as [number, number][])
-                : (geo.coordinates[0]?.[0] as [number, number][] | undefined);
-              if (coords) {
-                const positions = coords.map(([lon, lat]) =>
-                  Cesium.Cartesian3.fromDegrees(lon, lat)
-                );
-                const haloEntity = viewer.entities.add({
-                  polygon: {
-                    hierarchy: new Cesium.PolygonHierarchy(positions),
-                    material: Cesium.Color.WHITE.withAlpha(0.0),
-                    outline: false,
-                  },
-                  properties: featureProps,
-                });
-                haloEntities.push(haloEntity);
-              }
-            } else if (geo.type === "RidgeCorridor") {
-              for (const segment of geo.segments) {
-                const ring = segment[0] as [number, number][] | undefined;
-                if (!ring) continue;
-                const positions = ring.map(([lon, lat]) =>
-                  Cesium.Cartesian3.fromDegrees(lon, lat)
-                );
-                const haloEntity = viewer.entities.add({
-                  polygon: {
-                    hierarchy: new Cesium.PolygonHierarchy(positions),
-                    material: Cesium.Color.WHITE.withAlpha(0.0),
-                    outline: false,
-                  },
-                  properties: featureProps,
-                });
-                haloEntities.push(haloEntity);
-              }
-            }
-            if (haloEntities.length > 0) {
-              featureHaloRef.current.set(feature.id, haloEntities);
-            }
-          }
-
-          // 加载 Natural Earth GeoJSON 边界
-          const BOUNDARY_FILES = [
-            "tianshan", "kunlun", "altai", "junggar-basin", "tarim-basin",
-            "taklamakan", "pamir", "qinling", "qilian", "taihang",
-            "loess", "sichuan", "inner-mongolia",
-          ];
-          for (const id of BOUNDARY_FILES) {
-            try {
-              const res = await fetch(`/data/gis/exports/${id}.geojson`);
-              if (!res.ok) continue;
-              const geojson = await res.json();
-              const geometry = geojson.geometry;
-              if (!geometry) continue;
-
-              if (geometry.type === "Polygon") {
-                const ring = geometry.coordinates[0];
-                if (!ring) continue;
-                const positions = ring.map(([lon, lat]: [number, number]) =>
-                  Cesium.Cartesian3.fromDegrees(lon, lat)
-                );
-                positions.push(positions[0]);
-                viewer.entities.add({
-                  polyline: {
-                    positions,
-                    width: 1,
-                    material: Cesium.Color.WHITE.withAlpha(0.12),
-                    clampToGround: true,
-                  },
-                  properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
-                });
-              } else if (geometry.type === "MultiPolygon") {
-                for (const poly of geometry.coordinates) {
-                  const ring = poly[0];
-                  if (!ring) continue;
-                  const positions = ring.map(([lon, lat]: [number, number]) =>
-                    Cesium.Cartesian3.fromDegrees(lon, lat)
-                  );
-                  positions.push(positions[0]);
-                  viewer.entities.add({
-                    polyline: {
-                      positions,
-                      width: 1,
-                      material: Cesium.Color.WHITE.withAlpha(0.12),
-                      clampToGround: true,
-                    },
-                    properties: { boundaryId: id, boundaryName: id, boundaryType: "geojson" },
-                  });
-                }
-              }
-            } catch (e) {
-              // 静默跳过加载失败的文件
-            }
+            const pick = viewer.entities.add({
+              polygon: {
+                hierarchy,
+                material: Cesium.Color.TRANSPARENT, // 不可见，仅作 scene.pick 命中目标
+              },
+              properties: { terrainId: entry.id, terrainName: entry.nameZh },
+            });
+            const lift = viewer.entities.add({
+              polygon: {
+                hierarchy,
+                height: baseElev,
+                extrudedHeight: baseElev + 1,
+                material: Cesium.Color.WHITE.withAlpha(0),
+                perPositionHeight: false,
+              },
+              properties: { terrainId: entry.id },
+            });
+            terrainRegionRef.current.set(entry.id, {
+              pick, lift, baseElev, cur: 0, target: 0, state: "idle",
+            });
           }
 
           onTerrainMode?.(terrainMode);
@@ -1472,6 +1332,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         cancelled = true;
         flightCancelledRef.current = true;
         resizeObserver?.disconnect();
+        if (regionAnimRef.current != null) {
+          cancelAnimationFrame(regionAnimRef.current);
+          regionAnimRef.current = null;
+        }
+        terrainRegionRef.current.clear();
         viewerRef.current?.destroy();
         viewerRef.current = null;
       };

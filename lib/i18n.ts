@@ -207,7 +207,7 @@ export function t(key: string, lang: Language): string {
 
 /** TTS 语音 ID */
 export const TTS_VOICE_IDS: Record<Language, string> = {
-  "zh-CN": "zh-CN-XiaoyiNeural",
+  "zh-CN": "zh-CN-XiaoxiaoNeural",
   "en-US": "en-US-JennyNeural",
 };
 

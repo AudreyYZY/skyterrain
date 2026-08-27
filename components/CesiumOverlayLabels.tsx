@@ -1,7 +1,7 @@
 "use client";
 
 import { labelManager, type CinematicLabel } from "@/lib/cinematic-labels";
-import { TERRAIN_THEME, getFontSize, LABEL_TEXT_STYLE, type Importance } from "@/lib/terrain-label-theme";
+import { TERRAIN_THEME, getFontSize, LABEL_FONT_FAMILY, type Importance } from "@/lib/terrain-label-theme";
 import type { CesiumMapHandle } from "@/components/CesiumMap";
 import type { TerrainPoint } from "@/types/terrain";
 import type { GeographicFeature } from "@/features/types";
@@ -23,8 +23,10 @@ interface CesiumOverlayLabelsProps {
   terrains?: TerrainPoint[];
   features?: GeographicFeature[];
   isRouteFlying?: boolean;
-  /** 当前 hover 的边界名称 — 对应标签高亮 */
-  hoveredBoundary?: string | null;
+  /** 当前鼠标 hover 的地形 id — 对应标签高亮 */
+  hoveredTerrainId?: string | null;
+  /** 当前选中/聚焦的地形 id — 对应标签常驻高亮 */
+  focusedTerrainId?: string | null;
   /** 当前激活的区域 ID — 用于过滤标签 */
   activeRegion?: string;
 }
@@ -41,10 +43,9 @@ const POLL_INTERVAL_MS = 500;
  * zoomLevel 越小（看得越远），重要性阈值越高
  */
 function zoomLevelToImportance(zoomLevel: number): Importance | null {
-  if (zoomLevel <= 2) return null;        // 太空视角：不显示任何标签
-  if (zoomLevel <= 4) return "continental";
-  if (zoomLevel <= 6) return "national";
-  if (zoomLevel <= 9) return "regional";
+  if (zoomLevel <= 3) return null;        // 太空 / 看整个地球：不显示任何标签
+  if (zoomLevel <= 5) return "national";
+  if (zoomLevel <= 8) return "regional";
   return "poi";
 }
 
@@ -54,8 +55,8 @@ function zoomLevelToImportance(zoomLevel: number): Importance | null {
  */
 function dynamicFontSize(importance: Importance, zoomLevel: number): number {
   const base = getFontSize(importance);
-  // zoomLevel 4-20，线性缩放
-  const scaleFactor = Math.max(0.5, Math.min(1.5, (zoomLevel - 3) / 17));
+  // 常见观看区间约 zoom 6–13，此区间内字号平滑放大；两端夹紧保证可读且不过大
+  const scaleFactor = Math.max(0.8, Math.min(1.35, (zoomLevel - 4) / 9));
   return Math.round(base * scaleFactor);
 }
 
@@ -125,7 +126,8 @@ export default function CesiumOverlayLabels({
   terrains = [],
   features = [],
   isRouteFlying = false,
-  hoveredBoundary,
+  hoveredTerrainId,
+  focusedTerrainId,
   activeRegion = "china",
 }: CesiumOverlayLabelsProps) {
   const [screenLabels, setScreenLabels] = useState<ScreenLabel[]>([]);
@@ -146,8 +148,8 @@ export default function CesiumOverlayLabels({
 
     const zoomLevel = cameraState.zoomLevel;
 
-    // 太远的视角：不渲染任何标签
-    if (zoomLevel <= 2) {
+    // 太远的视角（太空 / 看整个地球）：不渲染任何标签
+    if (zoomLevel <= 3) {
       setScreenLabels([]);
       return;
     }
@@ -248,7 +250,9 @@ export default function CesiumOverlayLabels({
           letterSpacing: TERRAIN_THEME[lodImportance].letterSpacing,
         };
         const rotation = label.rotation ?? 0;
-        const isHovered = hoveredBoundary === label.text;
+        const isHovered = !!label.terrainId && label.terrainId === hoveredTerrainId;
+        const isFocused = !!label.terrainId && label.terrainId === focusedTerrainId;
+        const isActive = isHovered || isFocused;
 
         return (
           <button
@@ -259,9 +263,10 @@ export default function CesiumOverlayLabels({
               left: x,
               top: y,
               transform: `translate(-50%, -50%) rotate(${rotation}deg)`,
-              opacity: isHovered ? Math.min(1, visibility * 1.8) : visibility,
-              transition: "opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), left 0.5s ease-out, top 0.5s ease-out",
+              opacity: isActive ? 1 : visibility,
+              transition: "opacity 0.25s ease-out, left 0.5s ease-out, top 0.5s ease-out",
               willChange: "opacity, left, top",
+              zIndex: isFocused ? 3 : isHovered ? 2 : 1,
             }}
             onClick={() => {
               if (terrain && onSelectTerrain) {
@@ -274,14 +279,26 @@ export default function CesiumOverlayLabels({
             <span
               className="whitespace-nowrap select-none"
               style={{
+                display: "inline-block",
                 color: "#ffffff",
-                fontSize: `${isHovered ? Math.round(fontSize * 1.1) : fontSize}px`,
-                fontWeight: lodStyle.fontWeight,
+                fontSize: `${Math.round(fontSize * (isFocused ? 1.15 : isHovered ? 1.08 : 1))}px`,
+                fontWeight: isActive ? Math.max(lodStyle.fontWeight, 500) : lodStyle.fontWeight,
                 letterSpacing: lodStyle.letterSpacing,
                 lineHeight: 1.2,
+                padding: isActive ? "2px 8px" : "0",
+                borderRadius: "6px",
+                background: isFocused
+                  ? "rgba(251, 191, 36, 0.16)"
+                  : isHovered
+                    ? "rgba(255, 255, 255, 0.10)"
+                    : "transparent",
+                boxShadow: isFocused ? "0 0 0 1px rgba(251,191,36,0.35)" : "none",
                 WebkitTextStroke: "0.5px rgba(0,0,0,0.6)",
-                textShadow: "0 0 3px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.8)",
-                fontFamily: "'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+                textShadow: isActive
+                  ? "0 0 4px rgba(0,0,0,0.95), 0 0 12px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.9)"
+                  : "0 0 3px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.8)",
+                fontFamily: LABEL_FONT_FAMILY,
+                transition: "background 0.2s ease-out, font-size 0.2s ease-out, padding 0.2s ease-out",
               }}
             >
               {label.text}
@@ -306,12 +323,9 @@ function lodToImportance(lod: number): Importance {
  * zoomLevel 越小（看得越远），只有更高重要性的标签可见
  */
 function importanceVisibleAtZoom(importance: Importance, zoomLevel: number): boolean {
-  // continental: zoomLevel >= 4
   if (importance === "continental") return zoomLevel >= 4;
-  // national: zoomLevel >= 6
-  if (importance === "national") return zoomLevel >= 6;
-  // regional: zoomLevel >= 9
-  if (importance === "regional") return zoomLevel >= 9;
-  // poi: zoomLevel >= 12
-  return zoomLevel >= 12;
+  if (importance === "national") return zoomLevel >= 4;
+  if (importance === "regional") return zoomLevel >= 6;
+  return zoomLevel >= 9; // poi
+
 }

@@ -34,6 +34,7 @@ import {
   TERRAIN_CATEGORY_LABEL,
   TERRAIN_CATEGORY_ORDER,
 } from "@/lib/terrain-categories";
+import { getTerrainEntry } from "@/lib/terrain-registry";
 import type { TerrainCategory, TerrainPoint } from "@/types/terrain";
 
 const RAW_TERRAINS = [
@@ -79,10 +80,19 @@ const RAW_TERRAINS = [
   maigaiti,
 ] as TerrainPoint[];
 
-const TERRAINS: TerrainPoint[] = RAW_TERRAINS.map((t) => ({
-  ...t,
-  region: t.region ?? "xinjiang",
-}));
+/**
+ * 位置以 lib/terrain-registry.ts 为单一真实源：
+ * 用注册表锚点覆盖 JSON 里的 lat/lon（JSON 仅保留讲解内容与巡航高度 cameraHeight）。
+ */
+const TERRAINS: TerrainPoint[] = RAW_TERRAINS.map((t) => {
+  const entry = getTerrainEntry(t.id);
+  return {
+    ...t,
+    region: t.region ?? "xinjiang",
+    lat: entry?.landmark.lat ?? t.lat,
+    lon: entry?.landmark.lon ?? t.lon,
+  };
+});
 
 export interface TerrainCategoryGroup {
   category: TerrainCategory;

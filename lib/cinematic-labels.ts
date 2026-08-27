@@ -155,13 +155,13 @@ export class CinematicLabelManager {
         return true;
       case "zoom-adaptive":
         if (zoomLevel === undefined) return true;
-        // China 尺度 (zoomLevel <= 4): 只显示 LOD 1 的标签
-        if (zoomLevel <= 4) return label.lodLevel === 1;
-        // Xinjiang 尺度 (zoomLevel <= 7): 显示 LOD 1-2 的标签
-        if (zoomLevel <= 7) return (label.lodLevel ?? 4) <= 2;
-        // Regional 尺度 (zoomLevel <= 12): 显示 LOD 1-3 的标签
-        if (zoomLevel <= 12) return (label.lodLevel ?? 4) <= 3;
-        // Explore 尺度 (zoomLevel > 12): 显示所有标签
+        // 看整个地球 / 太空：不显示
+        if (zoomLevel <= 3) return false;
+        // 全国概览 (4-5): 大陆 + 国家级 (LOD 1-2)
+        if (zoomLevel <= 5) return (label.lodLevel ?? 4) <= 2;
+        // 区域尺度 (6-8): + 区域级 (LOD 1-3)
+        if (zoomLevel <= 8) return (label.lodLevel ?? 4) <= 3;
+        // 更近：全部
         return true;
       case "focus-only":
         return label.terrainId === this.focusedTerrainId;
@@ -178,6 +178,15 @@ export class CinematicLabelManager {
   /** 清除所有标注 */
   clear(): void {
     this.layers.clear();
+    this.activeLabelId = null;
+    this.focusedTerrainId = null;
+  }
+
+  /** 清除除指定图层外的所有图层（保留常驻的地形标注层），并重置聚焦状态 */
+  clearExcept(keepLayerIds: string[]): void {
+    for (const id of [...this.layers.keys()]) {
+      if (!keepLayerIds.includes(id)) this.layers.delete(id);
+    }
     this.activeLabelId = null;
     this.focusedTerrainId = null;
   }
