@@ -226,8 +226,8 @@ function bboxOctagon(bbox: [number, number, number, number]): [number, number][]
 const REGION_FOCUS_CSS = "#fbbf24";
 const REGION_LIFT_HOVER_M = 9_000;    // hover 抬升高度（米）
 const REGION_LIFT_FOCUS_M = 16_000;   // focus 抬升高度（米）
-const REGION_ALPHA_HOVER = 0.12;
-const REGION_ALPHA_FOCUS = 0.18;
+const REGION_ALPHA_HOVER = 0.16;
+const REGION_ALPHA_FOCUS = 0.24;
 
 interface RegionEntry {
   /** 贴地多边形 — hover 拾取目标，idle 近乎不可见 */
@@ -288,10 +288,8 @@ function tickTerrainRegions(
     poly.material = new Cesium.ColorMaterialProperty(
       Cesium.Color.fromCssColorString(cssBase).withAlpha(alpha)
     );
-    poly.outline = new Cesium.ConstantProperty(t > 0.02);
-    poly.outlineColor = new Cesium.ConstantProperty(
-      Cesium.Color.fromCssColorString(cssBase).withAlpha(0.75 * t)
-    );
+    // 不用 polygon.outline —— 它会懒加载 createPolygonOutlineGeometry worker，
+    // 网络异常时会导致整个渲染崩溃；半透明挤出体 + 标签高亮已足够。
   }
   return animating;
 }
@@ -1306,8 +1304,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 height: baseElev,
                 extrudedHeight: baseElev + 1,
                 material: Cesium.Color.WHITE.withAlpha(0),
-                outline: false,
-                outlineColor: Cesium.Color.WHITE.withAlpha(0),
+                perPositionHeight: false,
               },
               properties: { terrainId: entry.id },
             });
