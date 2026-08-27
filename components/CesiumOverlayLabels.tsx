@@ -43,10 +43,9 @@ const POLL_INTERVAL_MS = 500;
  * zoomLevel 越小（看得越远），重要性阈值越高
  */
 function zoomLevelToImportance(zoomLevel: number): Importance | null {
-  if (zoomLevel <= 2) return null;        // 太空视角：不显示任何标签
-  if (zoomLevel <= 4) return "continental";
-  if (zoomLevel <= 6) return "national";
-  if (zoomLevel <= 9) return "regional";
+  if (zoomLevel <= 3) return null;        // 太空 / 看整个地球：不显示任何标签
+  if (zoomLevel <= 5) return "national";
+  if (zoomLevel <= 8) return "regional";
   return "poi";
 }
 
@@ -149,8 +148,8 @@ export default function CesiumOverlayLabels({
 
     const zoomLevel = cameraState.zoomLevel;
 
-    // 太远的视角：不渲染任何标签
-    if (zoomLevel <= 2) {
+    // 太远的视角（太空 / 看整个地球）：不渲染任何标签
+    if (zoomLevel <= 3) {
       setScreenLabels([]);
       return;
     }
@@ -324,12 +323,9 @@ function lodToImportance(lod: number): Importance {
  * zoomLevel 越小（看得越远），只有更高重要性的标签可见
  */
 function importanceVisibleAtZoom(importance: Importance, zoomLevel: number): boolean {
-  // continental: zoomLevel >= 4
   if (importance === "continental") return zoomLevel >= 4;
-  // national: zoomLevel >= 6
-  if (importance === "national") return zoomLevel >= 6;
-  // regional: zoomLevel >= 9
-  if (importance === "regional") return zoomLevel >= 9;
-  // poi: zoomLevel >= 12
-  return zoomLevel >= 12;
+  if (importance === "national") return zoomLevel >= 4;
+  if (importance === "regional") return zoomLevel >= 6;
+  return zoomLevel >= 9; // poi
+
 }

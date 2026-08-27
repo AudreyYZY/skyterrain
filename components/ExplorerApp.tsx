@@ -13,7 +13,6 @@ import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
 import { TERRAIN_LABELS } from "@/lib/terrain-label-registry";
-import { TERRAIN_THEME, getFontSize, LABEL_TEXT_STYLE, type Importance } from "@/lib/terrain-label-theme";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
@@ -199,9 +198,9 @@ export default function ExplorerApp() {
     const layerId = "terrain-labels";
     labelManager.createLayer(layerId, "地形标注", 1);
 
+    // importance → LOD 1:1，缩放分级才准确（continental=1 … poi=4）
+    const LOD_BY_IMPORTANCE = { continental: 1, national: 2, regional: 3, poi: 4 } as const;
     for (const label of TERRAIN_LABELS) {
-      const theme = TERRAIN_THEME[label.importance];
-      const fontSize = getFontSize(label.importance);
       const priority = label.importance === "continental" ? 110 :
                        label.importance === "national" ? 100 :
                        label.importance === "regional" ? 80 : 60;
@@ -209,7 +208,7 @@ export default function ExplorerApp() {
       labelManager.addLabel(layerId, createTerrainLabel(
         label.id, label.name, label.lat, label.lon, priority,
         {
-          lodLevel: theme.minZoom <= 3 ? 1 : theme.minZoom <= 5 ? 2 : theme.minZoom <= 7 ? 3 : 4,
+          lodLevel: LOD_BY_IMPORTANCE[label.importance],
           rotation: label.rotation,
           terrainType: label.category as any,
         }
