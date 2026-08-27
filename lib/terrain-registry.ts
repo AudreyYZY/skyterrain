@@ -19,10 +19,14 @@ export type TerrainCategory =
   | "plateau"
   | "basin"
   | "plain"
+  | "hills"
   | "desert"
   | "lake"
   | "river"
   | "valley"
+  | "gorge"
+  | "delta"
+  | "island"
   | "scenic"
   | "oasis"
   | "city";
@@ -39,7 +43,9 @@ export type LandmarkKind =
   | "oasis"
   | "dune"
   | "grassland"
-  | "meander";
+  | "meander"
+  | "island"
+  | "corridor";
 
 /** 观察锚点 — 相机对准的地物，落在画面中心 */
 export interface Landmark {
@@ -832,6 +838,617 @@ const YANGTZE: TerrainEntry = {
 };
 
 // ============================================================
+// 全国 — 山脉（补充）
+// ============================================================
+
+const XIAOXINGANLING: TerrainEntry = {
+  id: "xiaoxinganling",
+  nameZh: "小兴安岭",
+  nameEn: "Lesser Khingan Range",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "平顶山", lon: 128.9, lat: 48.1, elevation: 1429, kind: "peak" },
+  bbox: [124.4, 46.4, 131.0, 51.7],
+  axis: [[125.5, 51.0], [130.0, 46.8]],
+  viewFrom: 225,
+  label: { lon: 128.5, lat: 48.5, rotation: -55 },
+  source: "小兴安岭 NE 多边形；平顶山 ≈1429m",
+};
+
+const CHANGBAI: TerrainEntry = {
+  id: "changbai",
+  nameZh: "长白山",
+  nameEn: "Changbai Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "长白山天池（白云峰）", lon: 128.06, lat: 42.01, elevation: 2691, kind: "peak" },
+  bbox: [126.5, 41.0, 129.5, 43.3],
+  axis: [[127.0, 43.0], [129.0, 41.3]],
+  viewFrom: 90,
+  label: { lon: 128.0, lat: 42.0, rotation: -40 },
+  pois: [{ name: "长白山天池", lon: 128.06, lat: 42.01, note: "火山口湖，中朝界湖，海拔2189m" }],
+  source: "长白山天池 ≈42.0N 128.06E；主峰将军峰(朝)2749m / 白云峰2691m",
+};
+
+const YINSHAN: TerrainEntry = {
+  id: "yinshan",
+  nameZh: "阴山",
+  nameEn: "Yin Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "大青山主峰", lon: 111.2, lat: 41.0, elevation: 2338, kind: "peak" },
+  bbox: [105.7, 40.8, 111.7, 42.4],
+  axis: [[106.0, 41.4], [111.5, 41.4]],
+  viewFrom: 180,
+  label: { lon: 109.0, lat: 41.4, rotation: -3 },
+  pois: [{ name: "阴山岩画", lon: 106.8, lat: 41.2, note: "狼山—色尔腾山岩刻，史前至历代" }],
+  source: "阴山 NE 多边形；大青山 ≈2338m，分内蒙古高原与河套平原",
+};
+
+const LULIANG: TerrainEntry = {
+  id: "luliang",
+  nameZh: "吕梁山",
+  nameEn: "Lüliang Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "关帝山（孝文山）", lon: 111.4, lat: 37.9, elevation: 2831, kind: "peak" },
+  bbox: [111.1, 34.7, 113.0, 41.0],
+  axis: [[111.9, 40.5], [111.2, 35.2]],
+  viewFrom: 90,
+  label: { lon: 111.6, lat: 37.5, rotation: -80 },
+  source: "吕梁山 NE 多边形；孝文山 ≈2831m，黄河与汾河分水岭",
+};
+
+const HELAN: TerrainEntry = {
+  id: "helan",
+  nameZh: "贺兰山",
+  nameEn: "Helan Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "敖包疙瘩", lon: 105.88, lat: 38.72, elevation: 3556, kind: "peak" },
+  bbox: [105.5, 37.8, 106.5, 39.5],
+  axis: [[105.9, 39.3], [105.8, 37.9]],
+  viewFrom: 90,
+  label: { lon: 105.9, lat: 38.7, rotation: -85 },
+  pois: [{ name: "贺兰山岩画", lon: 106.05, lat: 38.72, note: "贺兰口，万余幅史前岩画" }],
+  source: "贺兰山主峰敖包疙瘩 ≈3556m；隔开宁夏平原与阿拉善沙漠（无 NE 多边形，用 bbox）",
+};
+
+const LIUPAN: TerrainEntry = {
+  id: "liupan",
+  nameZh: "六盘山",
+  nameEn: "Liupan Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "米缸山", lon: 106.2, lat: 35.7, elevation: 2942, kind: "peak" },
+  bbox: [105.8, 34.5, 106.7, 36.5],
+  axis: [[106.3, 36.4], [106.1, 34.6]],
+  viewFrom: 90,
+  label: { lon: 106.2, lat: 35.7, rotation: -82 },
+  source: "六盘山（陇山）米缸山 ≈2942m；红军长征翻越（无 NE 多边形）",
+};
+
+const DABASHAN: TerrainEntry = {
+  id: "dabashan",
+  nameZh: "大巴山",
+  nameEn: "Daba Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "化龙山", lon: 109.3, lat: 32.1, elevation: 2917, kind: "peak" },
+  bbox: [106.0, 31.2, 112.5, 32.9],
+  axis: [[106.5, 31.9], [112.0, 31.9]],
+  viewFrom: 0,
+  label: { lon: 109.5, lat: 32.0, rotation: -5 },
+  source: "大巴山化龙山 ≈2917m；秦岭以南、四川盆地北缘（无 NE 多边形）",
+};
+
+const XUEFENG: TerrainEntry = {
+  id: "xuefeng",
+  nameZh: "雪峰山",
+  nameEn: "Xuefeng Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "苏宝顶", lon: 110.6, lat: 27.3, elevation: 1934, kind: "peak" },
+  bbox: [109.5, 25.5, 111.6, 29.5],
+  axis: [[110.2, 29.3], [110.9, 25.7]],
+  viewFrom: 90,
+  label: { lon: 110.5, lat: 27.4, rotation: -75 },
+  source: "雪峰山苏宝顶 ≈1934m；云贵高原与江南丘陵分界（无 NE 多边形）",
+};
+
+const WUYI: TerrainEntry = {
+  id: "wuyi",
+  nameZh: "武夷山",
+  nameEn: "Wuyi Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "黄岗山", lon: 117.65, lat: 27.75, elevation: 2160.8, kind: "peak" },
+  bbox: [115.8, 25.4, 118.3, 28.5],
+  axis: [[117.0, 28.4], [117.9, 25.6]],
+  viewFrom: 90,
+  label: { lon: 117.6, lat: 27.4, rotation: -70 },
+  pois: [{ name: "九曲溪丹霞", lon: 117.97, lat: 27.7, note: "碧水丹山，世界文化与自然双遗产" }],
+  source: "黄岗山 27°33′–27°54′N 117°27′–117°51′E ≈2160.8m: WebSearch 2026（维基/中新网）",
+};
+
+const NANLING: TerrainEntry = {
+  id: "nanling",
+  nameZh: "南岭",
+  nameEn: "Nan Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "石坑崆（广东最高峰）", lon: 113.0, lat: 24.55, elevation: 1902, kind: "peak" },
+  bbox: [109.4, 23.3, 114.1, 25.9],
+  axis: [[109.6, 24.8], [113.9, 24.6]],
+  viewFrom: 180,
+  label: { lon: 111.7, lat: 24.7, rotation: -3 },
+  pois: [{ name: "越城岭（猫儿山）", lon: 110.4, lat: 25.9, note: "华南最高峰 2141m" }],
+  source: "南岭 NE 多边形；石坑崆 ≈1902m；长江与珠江水系分水岭",
+};
+
+const DABIE: TerrainEntry = {
+  id: "dabie",
+  nameZh: "大别山",
+  nameEn: "Dabie Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "白马尖", lon: 116.1, lat: 31.1, elevation: 1777, kind: "peak" },
+  bbox: [112.8, 30.0, 117.2, 32.6],
+  axis: [[113.2, 32.3], [116.8, 30.3]],
+  viewFrom: 45,
+  label: { lon: 115.2, lat: 31.3, rotation: -35 },
+  source: "大别山白马尖 ≈1777m（安徽最高）；NE 多边形；鄂豫皖交界",
+};
+
+const DALOU: TerrainEntry = {
+  id: "dalou",
+  nameZh: "大娄山",
+  nameEn: "Dalou Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "金佛山", lon: 107.2, lat: 29.02, elevation: 2238, kind: "peak" },
+  bbox: [103.9, 26.4, 108.3, 29.6],
+  axis: [[104.5, 27.0], [107.8, 28.9]],
+  viewFrom: 90,
+  label: { lon: 106.5, lat: 28.2, rotation: -50 },
+  pois: [{ name: "娄山关", lon: 106.83, lat: 28.13, note: "川黔要隘，红军长征" }],
+  source: "大娄山金佛山 ≈2238m；NE 多边形；四川盆地与云贵高原之间",
+};
+
+const ALTUN: TerrainEntry = {
+  id: "altun",
+  nameZh: "阿尔金山",
+  nameEn: "Altun Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "阿尔金山主峰", lon: 90.0, lat: 38.4, elevation: 5798, kind: "peak" },
+  bbox: [86.5, 37.5, 94.1, 39.5],
+  axis: [[87.0, 38.9], [93.8, 38.0]],
+  viewFrom: 0,
+  label: { lon: 90.5, lat: 38.5, rotation: -6 },
+  pois: [{ name: "阿尔金山无人区", lon: 89.5, lat: 38.0, note: "国家级自然保护区，藏羚羊/野牦牛" }],
+  source: "阿尔金山 NE 多边形；主峰 ≈5798m；塔里木盆地与青藏高原之间",
+};
+
+const TARBAGATAY: TerrainEntry = {
+  id: "tarbagatay",
+  nameZh: "塔尔巴哈台山",
+  nameEn: "Tarbagatay Range",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "塔尔巴哈台山脊", lon: 83.5, lat: 47.1, elevation: 2980, kind: "peak" },
+  bbox: [82.5, 46.3, 85.8, 48.2],
+  axis: [[82.7, 47.0], [85.6, 47.2]],
+  viewFrom: 180,
+  label: { lon: 84.0, lat: 47.1, rotation: -5 },
+  source: "塔尔巴哈台山 NE 多边形（中国段）；塔城地区北部界山",
+};
+
+const BOROHORO: TerrainEntry = {
+  id: "borohoro",
+  nameZh: "博罗科努山",
+  nameEn: "Borohoro Mountains",
+  category: "mountain_system",
+  regionId: "china",
+  landmark: { name: "博罗科努主脊", lon: 84.3, lat: 44.0, elevation: 4200, kind: "peak" },
+  bbox: [81.1, 42.9, 86.9, 45.0],
+  axis: [[81.5, 43.6], [86.5, 44.2]],
+  viewFrom: 0,
+  label: { lon: 84.0, lat: 44.0, rotation: -8 },
+  source: "博罗科努山 NE 多边形；天山北支，伊犁河谷与准噶尔盆地之间",
+};
+
+// ============================================================
+// 全国 — 平原 / 三角洲（补充）
+// ============================================================
+
+const CHENGDU_PLAIN: TerrainEntry = {
+  id: "chengdu-plain",
+  nameZh: "成都平原",
+  nameEn: "Chengdu Plain",
+  category: "plain",
+  regionId: "china",
+  landmark: { name: "都江堰渠首", lon: 103.62, lat: 31.0, elevation: 600, kind: "city" },
+  bbox: [103.3, 30.0, 104.9, 31.5],
+  label: { lon: 104.0, lat: 30.7, rotation: 0 },
+  pois: [{ name: "成都", lon: 104.07, lat: 30.66, note: "平原中心，天府之国" }],
+  source: "成都平原（川西平原）；岷江冲积扇，都江堰灌溉（无 NE 多边形，用 bbox）",
+};
+
+const GUANZHONG_PLAIN: TerrainEntry = {
+  id: "guanzhong-plain",
+  nameZh: "关中平原",
+  nameEn: "Guanzhong Plain",
+  category: "plain",
+  regionId: "china",
+  landmark: { name: "西安", lon: 108.94, lat: 34.27, elevation: 400, kind: "city" },
+  bbox: [106.3, 33.9, 110.5, 35.0],
+  axis: [[106.5, 34.3], [110.3, 34.5]],
+  label: { lon: 108.5, lat: 34.4, rotation: 0 },
+  pois: [{ name: "渭河", lon: 109.5, lat: 34.6, note: "关中平原主河，八百里秦川" }],
+  source: "关中平原（渭河平原）；西安 ≈34.27N 108.94E（无 NE 多边形，用 bbox）",
+};
+
+const HETAO_PLAIN: TerrainEntry = {
+  id: "hetao-plain",
+  nameZh: "河套平原",
+  nameEn: "Hetao Plain",
+  category: "plain",
+  regionId: "china",
+  landmark: { name: "临河（后套）", lon: 107.4, lat: 40.75, elevation: 1030, kind: "city" },
+  bbox: [106.0, 40.2, 112.0, 41.4],
+  axis: [[106.2, 40.7], [111.8, 40.6]],
+  label: { lon: 109.0, lat: 40.7, rotation: 0 },
+  pois: [{ name: "黄河“几”字弯", lon: 110.5, lat: 40.3, note: "黄河北流转东，冲积成套" }],
+  source: "河套平原（前套/后套/西套）；“黄河百害，唯富一套”（无 NE 多边形，用 bbox）",
+};
+
+const YANGTZE_DELTA: TerrainEntry = {
+  id: "yangtze-delta",
+  nameZh: "长江三角洲",
+  nameEn: "Yangtze River Delta",
+  category: "delta",
+  regionId: "china",
+  landmark: { name: "长江入海口（崇明岛）", lon: 121.8, lat: 31.6, elevation: 5, kind: "delta" },
+  bbox: [119.0, 30.0, 122.5, 32.6],
+  label: { lon: 120.8, lat: 31.4, rotation: 0 },
+  pois: [
+    { name: "上海", lon: 121.47, lat: 31.23, note: "三角洲核心城市" },
+    { name: "太湖", lon: 120.2, lat: 31.2, note: "三角洲上的大型浅水湖" },
+  ],
+  source: "长江三角洲；崇明岛为长江泥沙淤积成的世界最大河口冲积岛（无 NE 多边形，用 bbox）",
+};
+
+const PEARL_DELTA: TerrainEntry = {
+  id: "pearl-delta",
+  nameZh: "珠江三角洲",
+  nameEn: "Pearl River Delta",
+  category: "delta",
+  regionId: "china",
+  landmark: { name: "珠江口（虎门）", lon: 113.6, lat: 22.8, elevation: 5, kind: "delta" },
+  bbox: [112.4, 21.7, 114.5, 23.6],
+  label: { lon: 113.3, lat: 22.9, rotation: 0 },
+  pois: [
+    { name: "广州", lon: 113.26, lat: 23.13, note: "三角洲顶点城市" },
+    { name: "伶仃洋", lon: 113.7, lat: 22.4, note: "港珠澳大桥跨越处" },
+  ],
+  source: "珠江三角洲；西江/北江/东江复合三角洲，河网密布（无 NE 多边形，用 bbox）",
+};
+
+// ============================================================
+// 全国 — 丘陵
+// ============================================================
+
+const LIAODONG_HILLS: TerrainEntry = {
+  id: "liaodong-hills",
+  nameZh: "辽东丘陵",
+  nameEn: "Liaodong Hills",
+  category: "hills",
+  regionId: "china",
+  landmark: { name: "千山", lon: 122.96, lat: 41.0, elevation: 708, kind: "peak" },
+  bbox: [121.1, 38.7, 124.3, 41.2],
+  label: { lon: 122.6, lat: 40.2, rotation: 0 },
+  source: "辽东丘陵 NE 多边形（辽东半岛）；千山为代表",
+};
+
+const SHANDONG_HILLS: TerrainEntry = {
+  id: "shandong-hills",
+  nameZh: "山东丘陵",
+  nameEn: "Shandong Hills",
+  category: "hills",
+  regionId: "china",
+  landmark: { name: "泰山", lon: 117.1, lat: 36.25, elevation: 1532.7, kind: "peak" },
+  bbox: [117.0, 35.0, 122.7, 37.9],
+  label: { lon: 119.5, lat: 36.6, rotation: 0 },
+  pois: [{ name: "崂山", lon: 120.6, lat: 36.15, note: "海上第一名山，胶东丘陵" }],
+  source: "山东丘陵；NE 多边形仅胶东半岛，锚点用泰山（鲁中南山地，海拔1532.7m）",
+};
+
+const JIANGNAN_HILLS: TerrainEntry = {
+  id: "jiangnan-hills",
+  nameZh: "江南丘陵",
+  nameEn: "Jiangnan Hills",
+  category: "hills",
+  regionId: "china",
+  landmark: { name: "黄山", lon: 118.17, lat: 30.13, elevation: 1864, kind: "peak" },
+  bbox: [110.0, 25.0, 120.0, 30.5],
+  label: { lon: 115.0, lat: 27.5, rotation: 0 },
+  pois: [
+    { name: "庐山", lon: 115.98, lat: 29.55, note: "鄱阳湖畔断块山" },
+    { name: "衡山", lon: 112.7, lat: 27.25, note: "南岳，湘中丘陵" },
+  ],
+  source: "江南丘陵（长江以南、南岭以北）；黄山/庐山为代表（无 NE 多边形，用 bbox）",
+};
+
+const LIANGGUANG_HILLS: TerrainEntry = {
+  id: "liangguang-hills",
+  nameZh: "两广丘陵",
+  nameEn: "Liangguang Hills",
+  category: "hills",
+  regionId: "china",
+  landmark: { name: "桂林峰林", lon: 110.3, lat: 25.28, elevation: 400, kind: "peak" },
+  bbox: [105.5, 21.5, 116.5, 25.0],
+  label: { lon: 111.5, lat: 23.5, rotation: 0 },
+  pois: [{ name: "云开大山", lon: 111.0, lat: 22.3, note: "粤桂交界，大田顶1704m" }],
+  source: "两广丘陵（南岭以南）；桂林塔状峰林为最典型（无 NE 多边形，用 bbox）",
+};
+
+// ============================================================
+// 全国 — 沙漠（补充）
+// ============================================================
+
+const BADAIN_JARAN: TerrainEntry = {
+  id: "badain-jaran",
+  nameZh: "巴丹吉林沙漠",
+  nameEn: "Badain Jaran Desert",
+  category: "desert",
+  regionId: "china",
+  landmark: { name: "必鲁图沙峰", lon: 102.4, lat: 39.78, elevation: 1600, kind: "dune" },
+  bbox: [99.5, 39.0, 104.5, 42.0],
+  label: { lon: 102.0, lat: 40.0, rotation: 0 },
+  pois: [{ name: "沙漠湖泊群", lon: 102.5, lat: 39.7, note: "百余个咸水湖点缀高大沙山之间" }],
+  source: "巴丹吉林沙漠（中国第三大）；世界最高沙山（相对高度500m）（无 NE 多边形，用 bbox）",
+};
+
+const TENGGER: TerrainEntry = {
+  id: "tengger",
+  nameZh: "腾格里沙漠",
+  nameEn: "Tengger Desert",
+  category: "desert",
+  regionId: "china",
+  landmark: { name: "沙坡头", lon: 104.95, lat: 37.45, elevation: 1300, kind: "dune" },
+  bbox: [102.5, 37.0, 106.0, 39.5],
+  label: { lon: 104.3, lat: 38.2, rotation: 0 },
+  pois: [{ name: "沙坡头治沙", lon: 104.95, lat: 37.45, note: "包兰铁路草方格固沙" }],
+  source: "腾格里沙漠（中国第四大）；东南缘沙坡头（无 NE 多边形，用 bbox）",
+};
+
+const KUBUQI: TerrainEntry = {
+  id: "kubuqi",
+  nameZh: "库布齐沙漠",
+  nameEn: "Kubuqi Desert",
+  category: "desert",
+  regionId: "china",
+  landmark: { name: "库布齐沙漠中段", lon: 108.5, lat: 40.3, elevation: 1100, kind: "dune" },
+  bbox: [107.0, 39.9, 111.5, 40.6],
+  axis: [[107.2, 40.2], [111.2, 40.4]],
+  label: { lon: 109.0, lat: 40.3, rotation: 0 },
+  source: "库布齐沙漠（中国第七大）；黄河“几”字弯内、鄂尔多斯高原北缘（无 NE 多边形，用 bbox）",
+};
+
+const MUUS: TerrainEntry = {
+  id: "muus",
+  nameZh: "毛乌素沙地",
+  nameEn: "Mu Us Sandy Land",
+  category: "desert",
+  regionId: "china",
+  landmark: { name: "毛乌素沙地", lon: 108.5, lat: 38.5, elevation: 1300, kind: "dune" },
+  bbox: [107.0, 37.2, 111.3, 39.5],
+  label: { lon: 109.0, lat: 38.5, rotation: 0 },
+  pois: [{ name: "榆林治沙", lon: 109.7, lat: 38.3, note: "几十年造林，沙地大部“绿了”" }],
+  source: "毛乌素沙地 NE 多边形（Mu Us Desert）；鄂尔多斯高原南部、长城沿线",
+};
+
+const LEIZHOU: TerrainEntry = {
+  id: "leizhou",
+  nameZh: "雷州半岛",
+  nameEn: "Leizhou Peninsula",
+  category: "hills",
+  regionId: "china",
+  landmark: { name: "雷州半岛", lon: 110.1, lat: 20.9, elevation: 40, kind: "peak" },
+  bbox: [109.6, 20.2, 110.6, 21.6],
+  label: { lon: 110.1, lat: 20.9, rotation: 0 },
+  pois: [{ name: "湖光岩玛珥湖", lon: 110.28, lat: 21.15, note: "火山口湖，玄武岩台地" }],
+  source: "雷州半岛 NE 多边形；中国大陆最南、玄武岩台地与火山地貌",
+};
+
+const ULAN_BUH: TerrainEntry = {
+  id: "ulan-buh",
+  nameZh: "乌兰布和沙漠",
+  nameEn: "Ulan Buh Desert",
+  category: "desert",
+  regionId: "china",
+  landmark: { name: "乌兰布和沙漠", lon: 106.6, lat: 39.8, elevation: 1050, kind: "dune" },
+  bbox: [105.5, 39.0, 107.2, 40.9],
+  label: { lon: 106.5, lat: 40.0, rotation: 0 },
+  source: "乌兰布和沙漠；黄河西岸、贺兰山北（无 NE 多边形，用 bbox）",
+};
+
+const GOBI: TerrainEntry = {
+  id: "gobi",
+  nameZh: "戈壁（内蒙古）",
+  nameEn: "Gobi Desert",
+  category: "desert",
+  regionId: "china",
+  landmark: { name: "额济纳戈壁", lon: 101.0, lat: 41.9, elevation: 1000, kind: "dune" },
+  bbox: [95.0, 39.5, 111.0, 43.5],
+  label: { lon: 103.0, lat: 42.0, rotation: 0 },
+  pois: [{ name: "居延海", lon: 101.15, lat: 42.3, note: "黑河尾闾湖" }],
+  source: "戈壁 NE 多边形（大部在蒙古，锚点取中国段额济纳）；砾漠，非沙漠",
+};
+
+// ============================================================
+// 全国 — 河谷 / 峡谷 / 走廊（补充）
+// ============================================================
+
+const HEXI_CORRIDOR: TerrainEntry = {
+  id: "hexi-corridor",
+  nameZh: "河西走廊",
+  nameEn: "Hexi Corridor",
+  category: "valley",
+  regionId: "china",
+  landmark: { name: "张掖丹霞", lon: 100.1, lat: 38.95, elevation: 1500, kind: "corridor" },
+  bbox: [95.6, 37.7, 103.7, 41.2],
+  axis: [[96.0, 39.8], [103.5, 37.9]],
+  viewFrom: 45,
+  label: { lon: 99.5, lat: 39.0, rotation: -30 },
+  pois: [
+    { name: "嘉峪关", lon: 98.29, lat: 39.8, note: "明长城西端起点" },
+    { name: "武威 / 张掖 / 酒泉", lon: 101.0, lat: 38.6, note: "河西四郡绿洲城市链" },
+  ],
+  source: "河西走廊 NE 多边形；祁连山与北山之间的狭长绿洲廊道，丝路要道",
+};
+
+const YANGTZE_GORGES: TerrainEntry = {
+  id: "yangtze-gorges",
+  nameZh: "长江三峡",
+  nameEn: "Yangtze Gorges",
+  category: "gorge",
+  regionId: "china",
+  landmark: { name: "瞿塘峡夔门", lon: 109.55, lat: 31.05, elevation: 150, kind: "gorge" },
+  bbox: [107.4, 30.0, 111.9, 31.7],
+  axis: [[108.5, 31.1], [111.5, 30.7]],
+  viewFrom: 0,
+  label: { lon: 110.0, lat: 31.0, rotation: -10 },
+  pois: [
+    { name: "巫峡", lon: 109.9, lat: 31.05, note: "神女峰，最幽深" },
+    { name: "三峡大坝", lon: 111.0, lat: 30.82, note: "西陵峡口，世界最大水电站" },
+  ],
+  source: "长江三峡 NE 多边形；瞿塘峡/巫峡/西陵峡，长江切穿巫山",
+};
+
+const TSANGPO_GORGE: TerrainEntry = {
+  id: "tsangpo-gorge",
+  nameZh: "雅鲁藏布大峡谷",
+  nameEn: "Yarlung Tsangpo Grand Canyon",
+  category: "gorge",
+  regionId: "china",
+  landmark: { name: "南迦巴瓦峰", lon: 95.0, lat: 29.6, elevation: 7782, kind: "peak" },
+  bbox: [94.5, 27.7, 96.0, 30.2],
+  axis: [[94.8, 30.0], [95.4, 28.0]],
+  viewFrom: 90,
+  label: { lon: 95.1, lat: 29.4, rotation: -20 },
+  pois: [{ name: "大峡谷马蹄形大拐弯", lon: 94.95, lat: 29.78, note: "雅江绕南迦巴瓦峰急转向南" }],
+  source: "南迦巴瓦峰 ≈29.6N 95.0E 7782m: WebSearch 2026；世界最深大峡谷（峰谷高差5000–6000m）",
+};
+
+const TIGER_LEAPING_GORGE: TerrainEntry = {
+  id: "tiger-leaping-gorge",
+  nameZh: "虎跳峡",
+  nameEn: "Tiger Leaping Gorge",
+  category: "gorge",
+  regionId: "china",
+  landmark: { name: "虎跳峡", lon: 100.1, lat: 27.2, elevation: 1800, kind: "gorge" },
+  bbox: [99.9, 27.0, 100.3, 27.35],
+  label: { lon: 100.1, lat: 27.1, rotation: 0 },
+  pois: [{ name: "玉龙雪山 / 哈巴雪山", lon: 100.15, lat: 27.1, note: "夹峙金沙江，谷深3900m" }],
+  source: "虎跳峡；金沙江在玉龙与哈巴雪山间深切，世界最深峡谷之一（无 NE 多边形，用 bbox）",
+};
+
+// ============================================================
+// 全国 — 湖泊（补充）
+// ============================================================
+
+const QINGHAI_LAKE: TerrainEntry = {
+  id: "qinghai-lake",
+  nameZh: "青海湖",
+  nameEn: "Qinghai Lake",
+  category: "lake",
+  regionId: "china",
+  landmark: { name: "青海湖", lon: 100.2, lat: 36.9, elevation: 3196, kind: "lake" },
+  bbox: [99.5, 36.5, 100.9, 37.4],
+  label: { lon: 100.2, lat: 36.9, rotation: 0 },
+  pois: [{ name: "鸟岛", lon: 99.75, lat: 37.0, note: "斑头雁/棕头鸥繁殖地" }],
+  source: "青海湖；中国最大湖、最大咸水湖，面积约4500km²，海拔3196m（无 NE 多边形，用 bbox）",
+};
+
+const NAMTSO: TerrainEntry = {
+  id: "namtso",
+  nameZh: "纳木错",
+  nameEn: "Nam Co",
+  category: "lake",
+  regionId: "china",
+  landmark: { name: "纳木错", lon: 90.6, lat: 30.72, elevation: 4718, kind: "lake" },
+  bbox: [89.9, 30.5, 91.4, 31.1],
+  label: { lon: 90.6, lat: 30.72, rotation: 0 },
+  pois: [{ name: "念青唐古拉峰", lon: 90.6, lat: 30.38, note: "湖南岸雪墙，7162m" }],
+  source: "纳木错；世界海拔最高的大型湖之一，湖面4718m，藏语“天湖”（无 NE 多边形，用 bbox）",
+};
+
+const POYANG: TerrainEntry = {
+  id: "poyang",
+  nameZh: "鄱阳湖",
+  nameEn: "Poyang Lake",
+  category: "lake",
+  regionId: "china",
+  landmark: { name: "鄱阳湖", lon: 116.3, lat: 29.1, elevation: 15, kind: "lake" },
+  bbox: [115.8, 28.4, 117.0, 29.8],
+  label: { lon: 116.3, lat: 29.1, rotation: 0 },
+  pois: [{ name: "鄱阳湖候鸟", lon: 116.0, lat: 29.25, note: "白鹤越冬地，丰枯水位差极大" }],
+  source: "鄱阳湖；中国最大淡水湖（丰水期），长江汛期调蓄（无 NE 多边形，用 bbox）",
+};
+
+const DONGTING: TerrainEntry = {
+  id: "dongting",
+  nameZh: "洞庭湖",
+  nameEn: "Dongting Lake",
+  category: "lake",
+  regionId: "china",
+  landmark: { name: "洞庭湖", lon: 112.95, lat: 29.31, elevation: 34, kind: "lake" },
+  bbox: [111.8, 28.6, 113.3, 29.9],
+  label: { lon: 112.95, lat: 29.31, rotation: 0 },
+  pois: [{ name: "岳阳楼", lon: 113.09, lat: 29.37, note: "“先天下之忧而忧”" }],
+  source: "洞庭湖；第二大淡水湖，长江与湘资沅澧四水吞吐（无 NE 多边形，用 bbox）",
+};
+
+// ============================================================
+// 全国 — 岛屿
+// ============================================================
+
+const HAINAN: TerrainEntry = {
+  id: "hainan",
+  nameZh: "海南岛",
+  nameEn: "Hainan Island",
+  category: "island",
+  regionId: "china",
+  landmark: { name: "五指山", lon: 109.68, lat: 18.9, elevation: 1867, kind: "island" },
+  bbox: [108.6, 18.1, 111.1, 20.2],
+  label: { lon: 109.7, lat: 19.2, rotation: 0 },
+  pois: [
+    { name: "海口", lon: 110.35, lat: 20.03, note: "琼北，火山熔岩台地" },
+    { name: "三亚", lon: 109.51, lat: 18.25, note: "琼南滨海" },
+  ],
+  source: "海南岛 NE 多边形；中国第二大岛，中央山地（五指山1867m）向四周环状递降",
+};
+
+const TAIWAN: TerrainEntry = {
+  id: "taiwan",
+  nameZh: "台湾岛",
+  nameEn: "Taiwan Island",
+  category: "island",
+  regionId: "china",
+  landmark: { name: "玉山", lon: 120.96, lat: 23.47, elevation: 3952, kind: "island" },
+  bbox: [120.0, 21.9, 122.0, 25.3],
+  axis: [[121.3, 25.2], [120.8, 22.0]],
+  label: { lon: 121.0, lat: 23.6, rotation: -12 },
+  pois: [
+    { name: "中央山脉", lon: 121.1, lat: 23.8, note: "纵贯全岛，东岸陡、西岸平原" },
+    { name: "台北 / 台南", lon: 121.0, lat: 24.2, note: "西部冲积平原城市" },
+  ],
+  source: "台湾岛 NE 多边形；玉山3952m 为中国东部及东亚岛屿最高峰",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -850,12 +1467,28 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   FLAMING_MOUNTAINS, NARAT, KUCHE, BAYANBULAK, KASHGAR, HOTAN, TURPAN_CITY, BACHU, MAIGAITI,
   // 全国 — 山脉
   QINLING, QILIAN, TAIHANG, DAXINGANLING, HENGDUAN, HIMALAYA,
+  XIAOXINGANLING, CHANGBAI, YINSHAN, LULIANG, HELAN, LIUPAN,
+  DABASHAN, XUEFENG, WUYI, NANLING, DABIE, DALOU, ALTUN,
+  TARBAGATAY, BOROHORO,
   // 全国 — 高原
   QINGHAI_TIBET, LOESS, INNER_MONGOLIA, YUNNAN_GUIZHOU,
   // 全国 — 盆地
   SICHUAN, QAIDAM,
-  // 全国 — 平原
+  // 全国 — 平原 / 三角洲
   NORTHEAST, NORTH_CHINA, YANGTZE,
+  CHENGDU_PLAIN, GUANZHONG_PLAIN, HETAO_PLAIN, YANGTZE_DELTA, PEARL_DELTA,
+  // 全国 — 丘陵
+  LIAODONG_HILLS, SHANDONG_HILLS, JIANGNAN_HILLS, LIANGGUANG_HILLS,
+  // 全国 — 沙漠
+  BADAIN_JARAN, TENGGER, KUBUQI, ULAN_BUH, MUUS, GOBI,
+  // 全国 — 丘陵（半岛）
+  LEIZHOU,
+  // 全国 — 河谷 / 峡谷 / 走廊
+  HEXI_CORRIDOR, YANGTZE_GORGES, TSANGPO_GORGE, TIGER_LEAPING_GORGE,
+  // 全国 — 湖泊
+  QINGHAI_LAKE, NAMTSO, POYANG, DONGTING,
+  // 全国 — 岛屿
+  HAINAN, TAIWAN,
 ];
 
 const REGISTRY_BY_ID: Map<string, TerrainEntry> = new Map(

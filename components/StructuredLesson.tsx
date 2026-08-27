@@ -1,4 +1,5 @@
 import { stripEmojis } from "@/lib/strip-emojis";
+import { LESSON_SECTION_ORDER, LESSON_SECTION_HEADING } from "@/lib/lesson";
 import type { TerrainLesson } from "@/types/terrain";
 import { useEffect, useRef } from "react";
 
@@ -15,12 +16,11 @@ const SECTIONS: {
   key: keyof TerrainLesson;
   heading: string;
   primary?: boolean;
-}[] = [
-  { key: "seeing", heading: "飞机窗外", primary: true },
-  { key: "formation", heading: "地貌形成" },
-  { key: "history", heading: "历史与人文" },
-  { key: "observation", heading: "飞机上如何区分" },
-];
+}[] = LESSON_SECTION_ORDER.map((key, i) => ({
+  key: key as keyof TerrainLesson,
+  heading: LESSON_SECTION_HEADING[key]!,
+  primary: i === 0,
+}));
 
 /**
  * 将文本按中文/英文句号、问号、感叹号分割成句子

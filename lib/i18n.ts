@@ -63,6 +63,18 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "平原",
     "en-US": "Plains",
   },
+  "sidebar.hills": {
+    "zh-CN": "丘陵",
+    "en-US": "Hills",
+  },
+  "sidebar.gorges": {
+    "zh-CN": "峡谷",
+    "en-US": "Gorges",
+  },
+  "sidebar.islands": {
+    "zh-CN": "岛屿",
+    "en-US": "Islands",
+  },
   "sidebar.back": {
     "zh-CN": "返回",
     "en-US": "Back",

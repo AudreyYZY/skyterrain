@@ -52,7 +52,7 @@ components/
   StructuredLesson.tsx   — 讲解内容渲染
 
 lib/
-  terrain-registry.ts    — 【单一真实源】47 个地形的位置/锚点/范围/走向
+  terrain-registry.ts    — 【单一真实源】88 个地形的位置/锚点/范围/走向
   terrain-camera.ts      — 数据驱动相机推导 computeTerrainCamera()
   terrain-label-registry.ts — 标签（由 terrain-registry 生成，位置=锚点）
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
@@ -69,18 +69,19 @@ features/
 
 ## 当前阶段
 
-**Phase B — FOI Validation**
+**地图/交互已完成**：88 个地形注册表 + 数据驱动相机 + 标签分级 + 地形抬升高亮 + 自然语音 + 逐句高亮。
 
-目标: 针对 5 个样本地形，建立 3~5 个 FeatureOfInterest，验证 FOI → Camera → Cesium 是否正确。
-
-样本地形:
-- 秦岭 (mountain_system)
-- 祁连山 (mountain_system)
-- 四川盆地 (basin)
-- 柴达木盆地 (basin)
-- 云贵高原 (plateau)
-
-Geometry 验证已完成: Natural Earth `ne_10m_geography_regions_polys` (5/5 地形 Polygon 存在)
+**权威文字内容 — 进行中**：讲解改为 6 个通用板块（`TerrainLesson`，顺序见 `lib/lesson.ts`
+`LESSON_SECTION_ORDER`）：
+`seeing 概述` → `formation 地貌特征` → `observation 从空中怎么看` →
+`distinguish 与相似地形的区分` → `concept 地理知识（为何算这类地形/常见误区）` →
+`history 历史与人文`。
+内容写在 `lib/terrain-content.ts`（`getTerrainContent(id)`，按注册表 id 索引），
+依据中国国家地理 / 中科院 / 自然资源部等公认地理事实总结，非文学化旁白、非凭空生成。
+已收录 34 个（20 个一级地形 + 长白山/南岭/贺兰山/河西走廊/长江三峡/雅鲁藏布大峡谷/
+青海湖/鄱阳湖/海南岛/台湾岛等）。未收录地形面板显示 `PLACEHOLDER_LESSON` 占位。
+内容优先级：`getTerrainContent(id)`（zh-CN）> `i18n-stories` 英译 > 新疆 json `lesson` /
+`china-core` story > 占位。
 
 ## Camera 推导链路
 
@@ -101,22 +102,28 @@ TerrainEntry（registry: 锚点 landmark + bbox + axis + viewFrom）
 调参常量集中在 `lib/terrain-camera.ts` 顶部（FRAME_HALF_ANGLE_DEG / PITCH_* /
 SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏览器中校准。
 
-## 地形标签 / 区域高亮
+## 地形集 / 标签 / 区域高亮
 
-- 标签数据全部来自 `TERRAIN_REGISTRY`（47 个），位置 = 锚点，无其它标记源。
+- **`TERRAIN_REGISTRY`（88 个）= 单一真实源**：全国主要地貌（山脉/高原/盆地/平原/丘陵/
+  峡谷/河谷/湖泊/沙漠/岛屿）。分类见 `TerrainCategory`。坐标逐个查权威来源，`source` 留痕。
+- **侧边栏 + 地图标签都由注册表驱动**：`ExplorerApp.ALL_FEATURES` = `TERRAIN_REGISTRY.map`；
+  `handleSelectById(id)` 统一入口（新疆 json / china-core 有内容则讲解，否则占位）。
+- 精确边界：`scripts/extract-ne-landforms.mjs` 从 `data/gis/ne_10m_geography_regions_polys`
+  提取 42 个 → `public/data/gis/exports/{id}.geojson`。`CesiumMap.TERRAIN_RING_FILES` 列出这 42
+  个 id，其余用 bbox 八边形。
 - `CesiumOverlayLabels.tsx`：HTML 标签。
   - `projectToScreen` 用 `EllipsoidalOccluder` 剔除地球背面的点（否则缩小看地球会堆叠）。
   - zoom ≤ 3 不显示；importance→LOD 1:1，按 zoom 分级（大陆/国家/区域/POI）逐级展开。
-  - `dynamicFontSize` 随 zoom 缩放，下限 0.8。
-- `CesiumMap.tsx` 地形区域：每个地形两个多边形——
-  - `pick`：贴地、透明，仅作 `scene.pick` 命中目标（形状用 GeoJSON 或 bbox 八边形）；
-  - `lift`：同形状的挤出体，hover/focus 时 `extrudedHeight` 动画抬升
-    （白色 ≈9km / 琥珀 ≈16km），像整块地形升起。动画由 `tickTerrainRegions` rAF 推进。
-  - 形状优先 `data/gis/exports/{id}.geojson`（13 个），否则 bbox 八边形。
+  - `dynamicFontSize` 随 zoom 缩放，下限 0.8。字体 `LABEL_FONT_FAMILY`（通用系统字体栈）。
+- **地形区域抬升高亮**（`CesiumMap.tsx`，每个地形两个多边形）：
+  - `pick`：贴地透明，仅作 `scene.pick` 命中目标。
+  - `lift`：`perPositionHeight` 多边形，顶面**跟随真实地形高程**（首次交互时
+    `sampleTerrainMostDetailed` 采样并缓存），hover/focus 时整块 ease 抬升 ≈4.5km / 7km；
+    侧壁 = 地块切面。材质极淡（α .11 / .17，暖白 / 琥珀），保留原色。`tickTerrainRegions` rAF 推进。
+  - **不要用 `polygon.outline`** —— 会懒加载 `createPolygonOutlineGeometry` worker，网络异常时崩溃。
   - 配色/抬升高度/透明度常量在 `CesiumMap.tsx` 顶部（`REGION_*`）。
 - hover 走 `ScreenSpaceEventHandler` MOUSE_MOVE → `scene.pick` 取 `terrainId`；
   点击/跳转走 `focusTerrain(id)`；标签同步高亮（琥珀胶囊 / 白色描边）。
-- 字体：`lib/terrain-label-theme.ts` 的 `LABEL_FONT_FAMILY`（通用系统字体栈）。
 
 ## 语音播报
 

@@ -180,8 +180,13 @@ function viewHeightForTerrain(
 
 /** 有精确 Natural Earth 轮廓的地形（data/gis/exports/*.geojson）*/
 const TERRAIN_RING_FILES = new Set([
-  "tianshan", "kunlun", "altai", "junggar-basin", "tarim-basin", "taklamakan",
-  "pamir", "qinling", "qilian", "taihang", "loess", "sichuan", "inner-mongolia",
+  "alataw", "altai", "altun", "borohoro", "dabie", "dalou", "daxinganling",
+  "gobi", "hainan", "hexi-corridor", "himalaya", "inner-mongolia", "junggar-basin",
+  "karakoram", "kunlun", "leizhou", "liaodong-hills", "loess", "luliang", "muus",
+  "nanling", "north-china", "northeast", "pamir", "qaidam", "qilian", "qinghai-tibet",
+  "qinling", "shandong-hills", "sichuan", "taihang", "taiwan", "taklamakan",
+  "tarbagatay", "tarim-basin", "tianshan", "tsangpo-gorge", "wuyi", "xiaoxinganling",
+  "yangtze-gorges", "yinshan", "yunnan-guizhou",
 ]);
 
 /** 取地形轮廓外环 [lon,lat][]，无文件返回 null */
@@ -222,42 +227,80 @@ function bboxOctagon(bbox: [number, number, number, number]): [number, number][]
   ];
 }
 
-/** 地形区域高亮 — hover / focus 时该地形整体"抬升"一个半透明体 */
-const REGION_FOCUS_CSS = "#fbbf24";
-const REGION_LIFT_HOVER_M = 9_000;    // hover 抬升高度（米）
-const REGION_LIFT_FOCUS_M = 16_000;   // focus 抬升高度（米）
-const REGION_ALPHA_HOVER = 0.16;
-const REGION_ALPHA_FOCUS = 0.24;
+/**
+ * 地形区域高亮 —— hover / focus 时把该地形「整块地表」按真实起伏轻微抬起
+ * （perPositionHeight：顶面跟随地形高程，侧壁 = 地块切面），保留原色（材质极淡）。
+ */
+const REGION_FOCUS_CSS = "#fbbf24"; // 琥珀
+const REGION_HOVER_CSS = "#fff2d9"; // 暖白
+const REGION_LIFT_HOVER_M = 4_500; // hover 抬升高度（米）
+const REGION_LIFT_FOCUS_M = 7_000; // focus 抬升高度（米）
+const REGION_ALPHA_HOVER = 0.11; // 顶面淡染，影像仍透出；侧壁形成"地块切面"
+const REGION_ALPHA_FOCUS = 0.17;
 
 interface RegionEntry {
-  /** 贴地多边形 — hover 拾取目标，idle 近乎不可见 */
+  /** 贴地透明多边形 — 仅作 scene.pick 命中目标 */
   pick: import("cesium").Entity;
-  /** 抬升的半透明体 — hover / focus 时升起 */
+  /** 抬升体 — hover/focus 时升起，idle 隐藏 */
   lift: import("cesium").Entity;
-  /** 抬升体底面海拔（米），约等于该地形地表高度 */
-  baseElev: number;
-  /** 当前抬升高度（米），动画插值用 */
+  /** 轮廓环顶点经纬度 */
+  ringDeg: [number, number][];
+  /** 采样前的近似地表高度（锚点海拔）*/
+  landmarkElev: number;
+  /** 采样后每个顶点的地表高度（米）；null = 未采样 */
+  groundHeights: number[] | null;
+  sampling: boolean;
+  /** 当前抬升高度（米），动画插值 */
   cur: number;
-  /** 目标抬升高度（米） */
   target: number;
   state: "idle" | "hover" | "focus";
 }
 
-/** 设置 hover / focus 目标，动画由 tickTerrainRegions 推进 */
+/** 采样地形轮廓顶点的地表高度（懒加载，一次）*/
+async function sampleRegionGround(
+  Cesium: typeof import("cesium"),
+  viewer: import("cesium").Viewer,
+  r: RegionEntry,
+  onDone: () => void
+): Promise<void> {
+  if (r.groundHeights || r.sampling) return;
+  r.sampling = true;
+  try {
+    if (viewer.terrainProvider instanceof Cesium.EllipsoidTerrainProvider) {
+      r.groundHeights = r.ringDeg.map(() => r.landmarkElev);
+    } else {
+      const carto = r.ringDeg.map(([lon, lat]) => Cesium.Cartographic.fromDegrees(lon, lat));
+      const sampled = await Cesium.sampleTerrainMostDetailed(viewer.terrainProvider, carto);
+      r.groundHeights = sampled.map((c) =>
+        Number.isFinite(c.height) ? (c.height as number) : r.landmarkElev
+      );
+    }
+  } catch {
+    r.groundHeights = r.ringDeg.map(() => r.landmarkElev);
+  } finally {
+    r.sampling = false;
+    onDone();
+  }
+}
+
+/** 设置 hover / focus 目标 + 触发地表采样；动画由 tickTerrainRegions 推进 */
 function applyTerrainRegionStyles(
   Cesium: typeof import("cesium") | null,
   viewer: import("cesium").Viewer | null,
   regions: Map<string, RegionEntry>,
   hoveredId: string | null,
-  focusedId: string | null
+  focusedId: string | null,
+  poke: () => void
 ): void {
   if (!Cesium || !viewer || viewer.isDestroyed()) return;
   for (const [id, r] of regions) {
     const state: RegionEntry["state"] =
       id === focusedId ? "focus" : id === hoveredId ? "hover" : "idle";
     r.state = state;
-    r.target =
-      state === "focus" ? REGION_LIFT_FOCUS_M : state === "hover" ? REGION_LIFT_HOVER_M : 0;
+    r.target = state === "focus" ? REGION_LIFT_FOCUS_M : state === "hover" ? REGION_LIFT_HOVER_M : 0;
+    if (state !== "idle" && !r.groundHeights && !r.sampling) {
+      void sampleRegionGround(Cesium, viewer, r, poke);
+    }
   }
 }
 
@@ -269,27 +312,40 @@ function tickTerrainRegions(
   let animating = false;
   for (const r of regions.values()) {
     const diff = r.target - r.cur;
-    if (Math.abs(diff) < 60) {
+    if (Math.abs(diff) < 40) {
       if (r.cur !== r.target) {
         r.cur = r.target;
       } else if (r.target === 0) {
+        if (r.lift.show) r.lift.show = false;
         continue;
       }
     } else {
-      r.cur += diff * 0.18; // 指数缓动
+      r.cur += diff * 0.16; // 指数缓动
       animating = true;
     }
-    const maxLift = r.state === "focus" ? REGION_LIFT_FOCUS_M : REGION_LIFT_HOVER_M;
-    const t = Math.min(1, r.cur / maxLift);
-    const cssBase = r.state === "focus" ? REGION_FOCUS_CSS : "#ffffff";
-    const alpha = (r.state === "focus" ? REGION_ALPHA_FOCUS : REGION_ALPHA_HOVER) * t;
-    const poly = r.lift.polygon!;
-    poly.extrudedHeight = new Cesium.ConstantProperty(r.baseElev + Math.max(r.cur, 1));
-    poly.material = new Cesium.ColorMaterialProperty(
-      Cesium.Color.fromCssColorString(cssBase).withAlpha(alpha)
+
+    if (!r.lift.show) r.lift.show = true;
+
+    const heights = r.groundHeights ?? r.ringDeg.map(() => r.landmarkElev);
+    let minH = Infinity;
+    for (const h of heights) if (h < minH) minH = h;
+    const positions = r.ringDeg.map(([lon, lat], i) =>
+      Cesium.Cartesian3.fromDegrees(lon, lat, heights[i]! + r.cur)
     );
-    // 不用 polygon.outline —— 它会懒加载 createPolygonOutlineGeometry worker，
-    // 网络异常时会导致整个渲染崩溃；半透明挤出体 + 标签高亮已足够。
+
+    const maxLift = r.state === "focus" ? REGION_LIFT_FOCUS_M : REGION_LIFT_HOVER_M;
+    const t = Math.min(1, Math.max(0, r.cur / maxLift));
+    const css = r.state === "focus" ? REGION_FOCUS_CSS : REGION_HOVER_CSS;
+    const alpha = (r.state === "focus" ? REGION_ALPHA_FOCUS : REGION_ALPHA_HOVER) * t;
+
+    const poly = r.lift.polygon!;
+    poly.hierarchy = new Cesium.ConstantProperty(new Cesium.PolygonHierarchy(positions));
+    poly.perPositionHeight = new Cesium.ConstantProperty(true);
+    poly.extrudedHeight = new Cesium.ConstantProperty(minH - 400);
+    poly.material = new Cesium.ColorMaterialProperty(
+      Cesium.Color.fromCssColorString(css).withAlpha(alpha)
+    );
+    // 不用 polygon.outline —— 会懒加载 createPolygonOutlineGeometry worker，网络异常时崩溃。
   }
   return animating;
 }
@@ -462,7 +518,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
       focusTerrain(terrainId: string | null) {
         focusedTerrainRef.current = terrainId;
-        applyTerrainRegionStyles(cesiumRef.current, viewerRef.current, terrainRegionRef.current, hoveredTerrainRef.current, terrainId);
+        applyTerrainRegionStyles(
+          cesiumRef.current, viewerRef.current, terrainRegionRef.current,
+          hoveredTerrainRef.current, terrainId, pokeRegionAnim
+        );
         pokeRegionAnim();
       },
 
@@ -1251,7 +1310,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               hoveredTerrainRef.current = newHoveredId;
               applyTerrainRegionStyles(
                 Cesium, viewer, terrainRegionRef.current,
-                newHoveredId, focusedTerrainRef.current
+                newHoveredId, focusedTerrainRef.current, pokeRegionAnim
               );
               pokeRegionAnim();
               onTerrainHover?.(newHoveredId);
@@ -1280,36 +1339,40 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           });
           resizeObserver.observe(containerRef.current);
 
-          // 地形区域 — 每个地形：贴地拾取多边形 + 抬升体。
+          // 地形区域 — 每个地形：贴地透明拾取多边形 + 隐藏的抬升体。
           // 形状优先用 Natural Earth GeoJSON（data/gis/exports），否则用 bbox 八边形。
+          // 抬升体的几何在首次 hover/focus 时按真实地表高程重建（见 tickTerrainRegions）。
           terrainRegionRef.current.clear();
           for (const entry of TERRAIN_REGISTRY) {
             let ring = await loadTerrainRing(entry.id);
             if (!ring) ring = bboxOctagon(entry.bbox);
-            const positions = ring.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-            const hierarchy = new Cesium.PolygonHierarchy(positions);
-            // 抬升体底面：地形低处附近，让它像从地面整体升起
-            const baseElev = Math.max(0, (entry.landmark.elevation ?? 0) - 2500);
+            const flat = ring.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
+            const hierarchy = new Cesium.PolygonHierarchy(flat);
 
             const pick = viewer.entities.add({
-              polygon: {
-                hierarchy,
-                material: Cesium.Color.TRANSPARENT, // 不可见，仅作 scene.pick 命中目标
-              },
+              polygon: { hierarchy, material: Cesium.Color.TRANSPARENT },
               properties: { terrainId: entry.id, terrainName: entry.nameZh },
             });
             const lift = viewer.entities.add({
+              show: false,
               polygon: {
                 hierarchy,
-                height: baseElev,
-                extrudedHeight: baseElev + 1,
+                perPositionHeight: true,
+                extrudedHeight: 0,
                 material: Cesium.Color.WHITE.withAlpha(0),
-                perPositionHeight: false,
               },
               properties: { terrainId: entry.id },
             });
             terrainRegionRef.current.set(entry.id, {
-              pick, lift, baseElev, cur: 0, target: 0, state: "idle",
+              pick,
+              lift,
+              ringDeg: ring,
+              landmarkElev: entry.landmark.elevation ?? 500,
+              groundHeights: null,
+              sampling: false,
+              cur: 0,
+              target: 0,
+              state: "idle",
             });
           }
 
