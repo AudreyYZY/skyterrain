@@ -76,7 +76,11 @@ function pickBrowserChineseVoice(): SpeechSynthesisVoice | null {
   return voices.find((v) => v.lang.toLowerCase().startsWith("zh")) ?? null;
 }
 
-function speakBrowserAndWait(text: string, rate = 0.92): Promise<void> {
+function speakBrowserAndWait(
+  text: string,
+  rate = 0.92,
+  onPlaying?: () => void
+): Promise<void> {
   if (typeof window === "undefined" || !window.speechSynthesis) {
     return Promise.resolve();
   }
@@ -91,9 +95,18 @@ function speakBrowserAndWait(text: string, rate = 0.92): Promise<void> {
     utterance.pitch = 1;
     const voice = pickBrowserChineseVoice();
     if (voice) utterance.voice = voice;
+    let started = false;
+    const markStarted = () => {
+      if (started) return;
+      started = true;
+      onPlaying?.(); // 语音真正开始时才触发逐句高亮
+    };
+    utterance.onstart = markStarted;
     utterance.onend = () => resolve();
     utterance.onerror = () => resolve();
     window.speechSynthesis.speak(utterance);
+    // 部分浏览器不触发 onstart，兜底：短延迟后视为已开始
+    setTimeout(markStarted, 250);
   });
 }
 
@@ -184,8 +197,10 @@ export async function speakAndWait(
     /* 回退 */
   }
 
-  await speakBrowserAndWait(text, rate);
-  onPlaying?.();
+  // Edge 失败 → 浏览器 TTS。onPlaying 在语音真正开始时触发（不是等播完），
+  // 否则逐句高亮会等到播报结束才启动 → 看起来"卡在第一句"。
+  currentWordBoundaries = [];
+  await speakBrowserAndWait(text, rate, onPlaying);
   return { wordBoundaries: [] };
 }
 
