@@ -46,13 +46,24 @@ export interface TerrainCards {
   feature: string;
 }
 
-/** 四层地理讲解（固定结构，避免文学化旁白） */
+/**
+ * 地理讲解（固定通用板块，避免文学化旁白）
+ * 顺序即朗读顺序：概述 → 地貌特征 → 从空中怎么看 → 与相似地形的区分 → 地理知识 → 历史与人文
+ * seeing / formation / history 为必填（兼容旧内容）；其余可选。
+ */
 export interface TerrainLesson {
+  /** 概述 — 是什么、在哪、为什么重要、从空中的整体印象 */
   seeing: string;
+  /** 地貌特征 — 形态、尺度、组成、成因 */
   formation: string;
-  history: string;
-  /** 飞机上如何区分 — 观察教育 */
+  /** 从空中怎么看 — 关键观测点、标志物、颜色与纹理 */
   observation?: string;
+  /** 与相似地形的区分 — 对比要点 */
+  distinguish?: string;
+  /** 地理知识 — 为什么算这类地形、常见误区、关键概念 */
+  concept?: string;
+  /** 历史与人文 */
+  history: string;
 }
 
 export interface TerrainPoint {

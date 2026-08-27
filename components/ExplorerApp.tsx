@@ -15,7 +15,8 @@ import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
 import { TERRAIN_LABELS } from "@/lib/terrain-label-registry";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
-import { lessonToSpeech, lessonToSSML } from "@/lib/lesson";
+import { lessonToSpeech, lessonToSSML, lessonSections } from "@/lib/lesson";
+import { getTerrainContent } from "@/lib/terrain-content";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainStory } from "@/lib/i18n-stories";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
@@ -346,12 +347,7 @@ export default function ExplorerApp() {
       console.log("[Narration] speakLessonWithHighlight called");
       const session = narrationManager.createSession();
       const ssml = lessonToSSML(lesson);
-      const sections = [
-        { key: "seeing", text: lesson.seeing },
-        { key: "formation", text: lesson.formation },
-        { key: "history", text: lesson.history },
-        { key: "observation", text: lesson.observation ?? "" },
-      ].filter(s => s.text.trim().length > 0);
+      const sections = lessonSections(lesson);
 
       await speakText(ssml, () => {
         if (!session.active) return;
@@ -372,11 +368,15 @@ export default function ExplorerApp() {
 
   const showTerrainLesson = useCallback(
     async (terrain: TerrainPoint, options?: { flyoverOnly?: boolean }): Promise<void> => {
-      // 使用翻译后的故事内容
+      // 内容优先级：terrain-content > i18n-stories 英译 > 新疆 json 自带 lesson
+      const authored = getTerrainContent(terrain.id);
       const translatedStory = getTerrainStory(terrain.name, language);
-      const effectiveLesson = translatedStory
-        ? { ...terrain.lesson, seeing: translatedStory.seeing, formation: translatedStory.formation, history: translatedStory.history, observation: translatedStory.observation }
-        : terrain.lesson;
+      const effectiveLesson: TerrainLesson =
+        authored && language === "zh-CN"
+          ? authored
+          : translatedStory
+          ? { ...terrain.lesson, seeing: translatedStory.seeing, formation: translatedStory.formation, observation: translatedStory.observation, history: translatedStory.history }
+          : authored ?? terrain.lesson;
 
       setActiveTerrain(terrain);
       setDisplayCards(terrain.cards);
@@ -430,12 +430,7 @@ export default function ExplorerApp() {
         const ssmlScript = `${terrain.flyoverCue} ${plainLesson}`;
 
         // 全 section 高亮 — 与 StructuredLesson 渲染顺序一致
-        const highlightSections = [
-          { key: "seeing", text: terrain.lesson.seeing },
-          { key: "formation", text: terrain.lesson.formation },
-          { key: "history", text: terrain.lesson.history },
-          { key: "observation", text: terrain.lesson.observation ?? "" },
-        ].filter(s => s.text.trim().length > 0);
+        const highlightSections = lessonSections(terrain.lesson);
 
         // 等待叙述完成 — 高亮在音频真正播放时启动
         const session = narrationManager.createSession();
@@ -470,12 +465,7 @@ export default function ExplorerApp() {
         setError(null);
 
         const ssmlScript = lessonToSSML(cityLesson);
-        const citySections = [
-          { key: "seeing", text: cityLesson.seeing },
-          { key: "formation", text: cityLesson.formation },
-          { key: "history", text: cityLesson.history },
-          { key: "observation", text: cityLesson.observation ?? "" },
-        ].filter(s => s.text.trim().length > 0);
+        const citySections = lessonSections(cityLesson);
         const session = narrationManager.createSession();
         setIsSpeaking(true);
         try {
@@ -610,18 +600,24 @@ export default function ExplorerApp() {
       mapRef.current?.focusTerrain(feature.id);
 
       // 设置当前 Feature 状态 — 驱动右侧面板更新
+      // 内容优先级：terrain-content（权威·结构化）> i18n-stories（英译）> feature.story（旧）
+      const authored = getTerrainContent(feature.id);
       const translatedStory = getTerrainStory(feature.name, language);
       const storySource = translatedStory ?? feature.story;
       let effectiveLesson: TerrainLesson | null = null;
-      if (storySource) {
+      if (authored && language === "zh-CN") {
+        effectiveLesson = authored;
+      } else if (storySource) {
         effectiveLesson = {
           seeing: storySource.seeing,
           formation: storySource.formation,
-          history: storySource.history,
           observation: storySource.observation,
+          history: storySource.history,
         };
+      } else if (authored) {
+        effectiveLesson = authored; // 无英译时中文兜底
       }
-      // 面板始终更新（无讲解内容时显示占位，文字下一阶段补）
+      // 面板始终更新（无讲解内容时显示占位）
       const panelLesson = effectiveLesson ?? PLACEHOLDER_LESSON;
       setLesson(panelLesson);
       setActiveTerrain({

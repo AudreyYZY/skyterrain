@@ -14,20 +14,49 @@ function wrapSSML(sections: string[]): string {
 }
 
 /**
- * 讲解文本（纯文本，用于 UI 显示）
+ * 讲解板块的固定顺序（朗读 + 面板 + 高亮同步都用这个）
+ * 概述 → 地貌特征 → 从空中怎么看 → 与相似地形的区分 → 地理知识 → 历史与人文
+ */
+export const LESSON_SECTION_ORDER = [
+  "seeing",
+  "formation",
+  "observation",
+  "distinguish",
+  "concept",
+  "history",
+] as const;
+
+export const LESSON_SECTION_HEADING: Record<string, string> = {
+  seeing: "概述",
+  formation: "地貌特征",
+  observation: "从空中怎么看",
+  distinguish: "与相似地形的区分",
+  concept: "地理知识",
+  history: "历史与人文",
+};
+
+/** 按固定顺序返回非空板块 [{key,text}] */
+export function lessonSections(lesson: TerrainLesson): { key: string; text: string }[] {
+  return LESSON_SECTION_ORDER.map((key) => ({
+    key,
+    text: (lesson[key as keyof TerrainLesson] as string | undefined) ?? "",
+  })).filter((s) => s.text.trim().length > 0);
+}
+
+/**
+ * 讲解文本（纯文本，用于 UI 显示 / 浏览器 TTS）
  */
 export function lessonToSpeech(lesson: TerrainLesson): string {
-  return [lesson.seeing, lesson.formation, lesson.history, lesson.observation]
-    .filter((s) => s && s.trim().length > 0)
+  return lessonSections(lesson)
+    .map((s) => s.text)
     .join(" ");
 }
 
 /**
- * 讲解文本（SSML 格式，用于语音合成）
- * 段落之间有 1.2 秒自然停顿
+ * 讲解文本（用于 Edge TTS）—— 见 wrapSSML 说明，实际是纯文本拼接
  */
 export function lessonToSSML(lesson: TerrainLesson): string {
-  return wrapSSML([lesson.seeing, lesson.formation, lesson.history, lesson.observation ?? ""]);
+  return wrapSSML(lessonSections(lesson).map((s) => s.text));
 }
 
 /**
