@@ -65,6 +65,7 @@ lib/
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
   lesson.ts              — 板块顺序 / 标题（中英）/ 拼接
   routes.ts              — 4 条真实商业航线（data/routes/*.json），机场航点 + 地形航点
+  route-narration.ts     — 每条航线一段 ~2.5 分钟连贯解说（中英），CesiumMap.flyRoute 播放
   i18n.ts                — UI 国际化；getTerrainName 查注册表
   i18n-stories.ts        — 早期 6 个双语故事（resolveLesson 的次级来源）
   terrain.ts             — 新疆地形注册（坐标由 terrain-registry 覆盖）
@@ -148,6 +149,17 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 - 逐句高亮：Edge TTS 成功 → `startHighlightWithTiming`（word boundary 精确同步）；
   失败回退浏览器 TTS → `speakBrowserAndWait` 在 `utterance.onstart` 触发 `onPlaying`
   （不是等播完），`startHighlightSections` 按字数估时推进。
+
+## 航线飞行
+
+- 每条航线一次 ≤3 分钟：`CesiumMap.flyRoute` 把镜头立即摆到起点机场上空 → 立刻开始播
+  `route-narration.ts` 里这条航线专属的连贯解说 → 同时镜头沿航点匀速飞完
+  （总时长 `ROUTE_FLIGHT_SEC ≈165s`，`LINEAR_NONE` 缓动）。
+- **不再逐个航点念地形讲解**。`onFlyoverWaypoint` 只把当前飞越的地形名同步到右侧面板，
+  面板显示整条解说 + 逐句高亮。
+- `RouteFlyCallbacks`：`onNarrate`（返回 Promise，播解说）/ `onFlyoverWaypoint` / `onComplete` / `onCancelled`。
+- 弃用：`flyLeg` / `flyToRouteOverview` / `legDurationSec`；`FlightRoute` 的
+  `minLegDurationSec` 等逐段计时字段改为可选、不再读取。
 
 ## 禁止事项
 

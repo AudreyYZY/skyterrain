@@ -39,14 +39,13 @@ export interface FlightRoute {
   waypoints: RouteWaypoint[];
   /** 巡航高度（米，离地） */
   cruiseHeight: number;
-  /** 航段最短飞行时间（秒），模拟真实客机航速 */
-  minLegDurationSec: number;
-  /** 抵达航点后至少停留时间（秒），与语音取较长者 */
-  dwellSecAtWaypoint: number;
-  /** 巡航地速（米/秒），约 220 m/s ≈ 792 km/h */
-  cruiseSpeedMps: number;
-  /** 航线概览停留时间（秒）：起飞前展示全航线 */
-  overviewDwellSec: number;
-  /** 飞越航点时停留时间（秒）：镜头停留，讲解同时播放 */
-  dwellDuringFlightSec: number;
+  /**
+   * 以下几个逐段计时参数已弃用：现在整条航线镜头匀速飞完，总时长固定
+   * （见 CesiumMap `ROUTE_FLIGHT_SEC`），与解说并行。保留为可选，兼容旧 JSON。
+   */
+  minLegDurationSec?: number;
+  dwellSecAtWaypoint?: number;
+  cruiseSpeedMps?: number;
+  overviewDwellSec?: number;
+  dwellDuringFlightSec?: number;
 }

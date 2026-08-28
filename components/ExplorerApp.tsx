@@ -9,21 +9,18 @@ import IndexRail, { type RailGroup } from "@/components/IndexRail";
 import IntroOverlay from "@/components/IntroOverlay";
 import JourneyBar from "@/components/JourneyBar";
 import ReadingPanel from "@/components/ReadingPanel";
-import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
 import { TERRAIN_LABELS } from "@/lib/terrain-label-registry";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
-import { lessonToSpeech, lessonToSSML, lessonSections } from "@/lib/lesson";
+import { lessonToSSML, lessonSections } from "@/lib/lesson";
 import { resolveLesson } from "@/lib/terrain-lesson";
+import { getRouteNarration } from "@/lib/route-narration";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
-import {
-  getAllRoutes,
-  type ResolvedWaypoint,
-} from "@/lib/routes";
+import { getAllRoutes } from "@/lib/routes";
 import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries } from "@/lib/speech";
 import { narrationManager } from "@/lib/narration-manager";
 import { getTerrainById } from "@/lib/terrain";
@@ -149,20 +146,6 @@ const FEATURE_GROUPS = SIDEBAR_CATEGORIES.map(g => ({
   features: ALL_FEATURES.filter(f => f.type === g.type),
 })).filter(g => g.features.length > 0);
 
-const CITY_CARDS: Record<string, TerrainCards> = {
-  urumqi: URUMQI_CARDS,
-  kashgar: KASHGAR_CARDS,
-  hotan: HOTAN_CARDS,
-  "turpan-city": TURPAN_CITY_CARDS,
-};
-
-const CITY_LESSONS: Record<string, TerrainLesson> = {
-  urumqi: URUMQI_LESSON,
-  kashgar: KASHGAR_LESSON,
-  hotan: HOTAN_LESSON,
-  "turpan-city": TURPAN_CITY_LESSON,
-};
-
 const routeEndLesson = (lang: Language): TerrainLesson => ({
   seeing:
     lang === "zh-CN"
@@ -223,7 +206,10 @@ export default function ExplorerApp() {
   const [isRouteFlying, setIsRouteFlying] = useState(false);
   const [routePreparing, setRoutePreparing] = useState(false);
   const [activeRouteId, setActiveRouteId] = useState<string | null>(null);
-  const [isFlyover, setIsFlyover] = useState(false);
+  /** 航线飞行中：整条航线的解说稿 */
+  const [routeNarration, setRouteNarration] = useState<string | null>(null);
+  /** 航线飞行中：当前正飞越的地形名（本地化）*/
+  const [flyoverName, setFlyoverName] = useState<string | null>(null);
   const [showIntro, setShowIntro] = useState(true);
   const [hoveredTerrainId, setHoveredTerrainId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
@@ -329,7 +315,6 @@ export default function ExplorerApp() {
       setActiveTerrain(null);
       setLesson(null);
       setDisplayCards(null);
-      setIsFlyover(false);
       narrationCancelledRef.current = false;
 
       // 先拉高到初始高度，再飞向区域中心
@@ -424,104 +409,6 @@ export default function ExplorerApp() {
     [speakText, startHighlight, speakLessonWithHighlight, stopHighlight, language]
   );
 
-  /**
-   * 航点叙述 — 等待叙述完成后再返回
-   * 关键：这里返回 Promise，CesiumMap 的 flyRoute 会 await 它
-   */
-  const narrateWaypoint = useCallback(
-    async (waypoint: ResolvedWaypoint): Promise<void> => {
-      if (narrationCancelledRef.current) return;
-
-      // 起降机场 — 镜头飞过，不讲解
-      if (waypoint.kind === "airport") return;
-
-      // 讲解内容与面板地形
-      let panelLesson: TerrainLesson | null;
-      let flyoverCue = "";
-      let cards: TerrainCards | null = null;
-
-      if (waypoint.terrain) {
-        panelLesson =
-          resolveLesson(waypoint.id, language, {
-            nameZh: waypoint.name,
-            fallback: waypoint.terrain.lesson,
-          }) ?? waypoint.terrain.lesson;
-        flyoverCue = waypoint.terrain.flyoverCue ?? "";
-        cards = waypoint.terrain.cards ?? null;
-      } else if (CITY_LESSONS[waypoint.id]) {
-        panelLesson = CITY_LESSONS[waypoint.id]!;
-        cards = CITY_CARDS[waypoint.id] ?? null;
-      } else {
-        panelLesson = resolveLesson(waypoint.id, language, { nameZh: waypoint.name });
-      }
-
-      const stub = {
-        id: waypoint.id,
-        name: waypoint.name,
-        elevation: waypoint.elevation ?? waypoint.terrain?.elevation ?? 0,
-      } as unknown as TerrainPoint;
-
-      setIsFlyover(true);
-      setActiveTerrain(waypoint.terrain ?? stub);
-      setDisplayCards(cards);
-      setLesson(panelLesson ?? placeholderLesson(language));
-      setError(null);
-
-      // 地形标注
-      const layerId = "route-waypoints";
-      if (!labelManager.getLayers().find((l) => l.id === layerId)) {
-        labelManager.createLayer(layerId, "航线航点", 10);
-      }
-      labelManager.addLabel(
-        layerId,
-        createTerrainLabel(waypoint.id, waypoint.name, waypoint.lat, waypoint.lon, 80, {
-          nameEn: waypoint.nameEn,
-        }),
-      );
-      labelManager.setFocusedTerrain(waypoint.id);
-
-      if (!panelLesson) {
-        // 无讲解内容 — 只停留展示
-        if (!narrationCancelledRef.current) {
-          await new Promise((r) => setTimeout(r, POST_NARRATION_DWELL_MS));
-        }
-        return;
-      }
-
-      const plainLesson = lessonToSpeech(panelLesson);
-      const ssmlScript = flyoverCue ? `${flyoverCue} ${plainLesson}` : plainLesson;
-      const highlightSections = lessonSections(panelLesson);
-
-      const session = narrationManager.createSession();
-      setIsSpeaking(true);
-      try {
-        await speakAndWait(
-          ssmlScript,
-          SPEECH_RATE,
-          () => {
-            if (!session.active) return;
-            const wordBoundaries = getCurrentWordBoundaries();
-            const audio = getCurrentAudio();
-            if (wordBoundaries.length > 0 && audio) {
-              startHighlightWithTiming(highlightSections, wordBoundaries, audio);
-            } else {
-              startHighlightSections(highlightSections);
-            }
-          },
-          language,
-        );
-      } finally {
-        setIsSpeaking(false);
-        if (session.active) stopHighlight();
-      }
-
-      if (!narrationCancelledRef.current) {
-        await new Promise((r) => setTimeout(r, POST_NARRATION_DWELL_MS));
-      }
-    },
-    [language, startHighlightSections, startHighlightWithTiming, stopHighlight]
-  );
-
   const handleSelectTerrain = useCallback(
     async (terrain: TerrainPoint): Promise<void> => {
       console.log("[ExplorerApp] handleSelectTerrain:", terrain.id, terrain.name);
@@ -534,7 +421,6 @@ export default function ExplorerApp() {
       setRoutePreparing(false);
       setActiveRouteId(null);
       activeRouteRef.current = null;
-      setIsFlyover(false);
       setError(null);
 
       // 重置取消标志
@@ -609,7 +495,6 @@ export default function ExplorerApp() {
       setRoutePreparing(false);
       setActiveRouteId(null);
       activeRouteRef.current = null;
-      setIsFlyover(false);
       setError(null);
       stopHighlight();
       narrationCancelledRef.current = false;
@@ -752,7 +637,6 @@ export default function ExplorerApp() {
         setIsRouteFlying(true);
         setRoutePreparing(true);
         setActiveRouteId(route.id);
-        setIsFlyover(false);
         setError(null);
         setLesson(null);
         setActiveTerrain(null);
@@ -764,43 +648,60 @@ export default function ExplorerApp() {
         const layerId = "route-waypoints";
         labelManager.createLayer(layerId, "航线航点", 10);
 
+        setRouteNarration(null);
+        setFlyoverName(null);
+
         mapRef.current?.flyRoute(route, {
           onPreparingRoute: () => setRoutePreparing(true),
           onRouteReady: () => setRoutePreparing(false),
-          onWaypointArrival: async (waypoint) => {
-            // 关键：await 叙述完成，镜头在航点等待
-            await narrateWaypoint(waypoint);
+          // 整条航线一段解说，与镜头飞行并行
+          onNarrate: async () => {
+            const text =
+              getRouteNarration(route.id, language) ?? routeEndLesson(language).seeing;
+            setRouteNarration(text);
+            const session = narrationManager.createSession();
+            setIsSpeaking(true);
+            try {
+              await speakAndWait(
+                text,
+                SPEECH_RATE,
+                () => {
+                  if (session.active) startHighlight(text, "seeing");
+                },
+                language,
+              );
+            } finally {
+              setIsSpeaking(false);
+              if (session.active) stopHighlight();
+            }
           },
-          onComplete: async () => {
+          // 镜头经过某地形 — 仅同步面板显示名字
+          onFlyoverWaypoint: (wp) => {
+            setFlyoverName(getTerrainName(wp.name, language));
+          },
+          onComplete: () => {
             setIsRouteFlying(false);
             setRoutePreparing(false);
             setActiveRouteId(null);
             activeRouteRef.current = null;
-            setActiveTerrain(null);
-            setDisplayCards(null);
-            setLesson(routeEndLesson(language));
-
-            // 等待结束语叙述完成（SSML 格式）
-            const endSSML = routeEndLesson(language).seeing;
-            setIsSpeaking(true);
-            try {
-              await speakAndWait(endSSML, SPEECH_RATE, undefined, language);
-            } finally {
-              setIsSpeaking(false);
-            }
+            setRouteNarration(null);
+            setFlyoverName(null);
           },
           onCancelled: () => {
             narrationCancelledRef.current = true;
             narrationQueue.cancel();
+            stopSpeaking();
             setIsRouteFlying(false);
             setRoutePreparing(false);
             setActiveRouteId(null);
             activeRouteRef.current = null;
+            setRouteNarration(null);
+            setFlyoverName(null);
           },
         });
       }, 50);
     },
-    [narrateWaypoint, language]
+    [language, startHighlight, stopHighlight, stopSpeaking]
   );
 
   const handleStopRoute = useCallback(() => {
@@ -812,6 +713,8 @@ export default function ExplorerApp() {
     setRoutePreparing(false);
     setActiveRouteId(null);
     activeRouteRef.current = null;
+    setRouteNarration(null);
+    setFlyoverName(null);
     stopSpeaking();
     labelManager.clearExcept(["terrain-labels"]);
   }, [stopSpeaking]);
@@ -834,7 +737,6 @@ export default function ExplorerApp() {
     setActiveTerrain(null);
     setLesson(null);
     setDisplayCards(null);
-    setIsFlyover(false);
   };
 
   return (
@@ -924,6 +826,8 @@ export default function ExplorerApp() {
         knowledge={activeTerrain?.knowledge ?? null}
         isSpeaking={isSpeaking}
         isRouteFlying={isRouteFlying}
+        routeNarration={routeNarration}
+        flyoverName={flyoverName}
         activeSentenceIndex={activeSentenceIndex}
         activeSection={activeSection}
         onPlay={() => {
