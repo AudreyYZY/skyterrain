@@ -155,17 +155,10 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
   if (IMPORTANCE_BY_ID[id]) return IMPORTANCE_BY_ID[id];
-  if (
-    category === "mountain_system" ||
-    category === "plateau" ||
-    category === "basin" ||
-    category === "plain" ||
-    category === "hills" ||
-    category === "delta" ||
-    category === "island"
-  )
-    return "regional";
-  return "poi";
+  // 大类地貌默认至少「区域级」——否则常规缩放看不到标签，
+  // 只有 city / oasis / 小景点默认为 poi
+  if (category === "city" || category === "oasis" || category === "scenic") return "poi";
+  return "regional";
 }
 
 export const TERRAIN_LABELS: TerrainLabel[] = TERRAIN_REGISTRY.map((e) => {

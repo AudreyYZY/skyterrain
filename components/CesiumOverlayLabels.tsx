@@ -12,6 +12,8 @@ interface ScreenLabel {
   visibility: number;
   fontSize: number;
   opacity: number;
+  /** hover / 选中 —— 不被碰撞剔除 */
+  forced?: boolean;
 }
 
 interface CesiumOverlayLabelsProps {
@@ -82,6 +84,20 @@ function resolveOverlaps(labels: ScreenLabel[]): ScreenLabel[] {
   const result: ScreenLabel[] = [];
 
   for (const sl of labels) {
+    // hover / 选中的标签永远显示，并抢占网格
+    if (sl.forced) {
+      const span = Math.max(1, Math.ceil(sl.fontSize / GRID_CELL_SIZE));
+      for (let dx = 0; dx < span; dx++) {
+        for (let dy = 0; dy < span; dy++) {
+          const gx = Math.round((sl.x + dx * GRID_CELL_SIZE * 0.5) / GRID_CELL_SIZE);
+          const gy = Math.round((sl.y + dy * GRID_CELL_SIZE * 0.5) / GRID_CELL_SIZE);
+          occupied.add(`${gx},${gy}`);
+        }
+      }
+      result.push(sl);
+      continue;
+    }
+
     // 标签占据多个网格单元（根据字号估算）
     const cellSpan = Math.max(1, Math.ceil(sl.fontSize / GRID_CELL_SIZE));
     let blocked = false;
@@ -166,9 +182,14 @@ export default function CesiumOverlayLabels({
     const canvasH = canvas?.height ?? window.innerHeight;
 
     for (const label of labels) {
+      // hover / 选中的地形 —— 标签强制显示，绕过 zoom 分级与碰撞剔除
+      const forced =
+        !!label.terrainId &&
+        (label.terrainId === hoveredTerrainId || label.terrainId === focusedTerrainId);
+
       // 检查标签的重要性是否在当前 zoomLevel 的可见范围内
       const labelImportance = label.lodLevel ? lodToImportance(label.lodLevel) : "poi";
-      if (!importanceVisibleAtZoom(labelImportance, zoomLevel)) {
+      if (!forced && !importanceVisibleAtZoom(labelImportance, zoomLevel)) {
         continue;
       }
 
@@ -183,7 +204,7 @@ export default function CesiumOverlayLabels({
 
       // 边缘淡出
       const fade = edgeFade(pos.x, pos.y, canvasW, canvasH);
-      if (fade < 0.05) continue;
+      if (!forced && fade < 0.05) continue;
 
       // 动态字号：随 zoomLevel 缩放
       const lodLevel = (label.lodLevel ?? 4) as 1 | 2 | 3 | 4;
@@ -200,14 +221,16 @@ export default function CesiumOverlayLabels({
         label,
         x: pos.x,
         y: pos.y,
-        visibility: finalOpacity,
+        visibility: forced ? 1 : finalOpacity,
         fontSize: dynamicSize,
-        opacity: finalOpacity,
+        opacity: forced ? 1 : finalOpacity,
+        forced,
       });
     }
 
-    // 碰撞检测: 按 LOD 级别排序 (1 > 2 > 3), 同级按优先级排序
+    // 碰撞检测: forced 优先，其次按 LOD 级别 (1 > 2 > 3)，同级按优先级
     result.sort((a, b) => {
+      if (!!a.forced !== !!b.forced) return a.forced ? -1 : 1;
       const lodA = a.label.lodLevel ?? 3;
       const lodB = b.label.lodLevel ?? 3;
       if (lodA !== lodB) return lodA - lodB;
@@ -216,7 +239,7 @@ export default function CesiumOverlayLabels({
 
     const resolved = resolveOverlaps(result);
     setScreenLabels(resolved);
-  }, [mapRef, activeRegion]);
+  }, [mapRef, activeRegion, hoveredTerrainId, focusedTerrainId]);
 
   useEffect(() => {
     updateLabels();
