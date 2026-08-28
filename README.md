@@ -76,12 +76,7 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 
 ### 航线飞行
 
-3 条预设航线（`data/routes/`）：北疆经典航线、帕米尔高原航线、吐鲁番火焰山航线。
-自动沿途飞行 + 经过地形自动播报。
-
-### 舷窗照片模式（可选）
-
-上传舷窗照片，调用兼容 OpenAI 的多模态模型（默认 DeepSeek）推测拍到的地形。需配置 `MIMO_*` 环境变量。
+预设航线（`data/routes/`）：自动沿途飞行 + 经过地形自动播报。
 
 ---
 
@@ -111,8 +106,6 @@ npm run dev
 | 变量 | 必填 | 说明 |
 |---|---|---|
 | `NEXT_PUBLIC_CESIUM_ION_TOKEN` | 强烈建议 | Cesium Ion Token（[免费注册](https://ion.cesium.com/tokens)）。不填时地球为平坦椭球，无山脊起伏。 |
-| `MIMO_API_KEY` / `MIMO_BASE_URL` / `MIMO_MODEL` | 可选 | 舷窗照片识别（兼容 OpenAI 的多模态 API） |
-| `MIMO_VISION_MODEL` | 可选 | 指定支持识图的模型 |
 
 ### 常用命令
 
@@ -131,8 +124,6 @@ node scripts/extract-ne-landforms.mjs                             # 重新提取
 ```
 app/
   api/tts/            — Edge TTS
-  api/narration/      — 讲解脚本生成
-  api/photo-identify/ — 舷窗照片识别
   page.tsx layout.tsx globals.css
 
 components/
@@ -143,7 +134,6 @@ components/
   NarrationPanel.tsx       — 右侧讲解面板
   StructuredLesson.tsx     — 6 板块讲解渲染
   RouteControls.tsx        — 航线控制
-  PhotoModePanel.tsx       — 舷窗照片模式
   VoiceSelector.tsx        — 语音包选择
 
 lib/

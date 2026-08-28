@@ -92,13 +92,7 @@ Each lesson has **6 universal sections** ([`lib/lesson.ts`](lib/lesson.ts) `LESS
 
 ### Route flights
 
-3 preset routes (`data/routes/`): North Xinjiang Classic, Pamir Plateau, Turpan Flaming
-Mountains. Auto-fly along the path with narration triggered at each terrain.
-
-### Window-photo mode (optional)
-
-Upload a window-seat photo and an OpenAI-compatible multimodal model (DeepSeek by default)
-guesses the terrain. Requires the `MIMO_*` environment variables.
+Preset routes (`data/routes/`): auto-fly along the path with narration triggered at each terrain.
 
 ---
 
@@ -128,8 +122,6 @@ Open http://localhost:3000
 | Variable | Required | Notes |
 |---|---|---|
 | `NEXT_PUBLIC_CESIUM_ION_TOKEN` | strongly recommended | Cesium Ion token ([free signup](https://ion.cesium.com/tokens)). Without it the globe is a flat ellipsoid with no relief. |
-| `MIMO_API_KEY` / `MIMO_BASE_URL` / `MIMO_MODEL` | optional | Window-photo identification (OpenAI-compatible multimodal API) |
-| `MIMO_VISION_MODEL` | optional | Pin a vision-capable model |
 
 ### Common commands
 
@@ -148,8 +140,6 @@ node scripts/extract-ne-landforms.mjs                             # re-extract t
 ```
 app/
   api/tts/            — Edge TTS
-  api/narration/      — lesson script generation
-  api/photo-identify/ — window-photo identification
   page.tsx layout.tsx globals.css
 
 components/
@@ -160,7 +150,6 @@ components/
   NarrationPanel.tsx       — right-side lesson panel
   StructuredLesson.tsx     — 6-section lesson renderer
   RouteControls.tsx        — route controls
-  PhotoModePanel.tsx       — window-photo mode
   VoiceSelector.tsx        — voice pack selector
 
 lib/

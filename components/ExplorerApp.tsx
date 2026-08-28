@@ -7,7 +7,6 @@ import CesiumMap, {
 import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
 import FlightControls from "@/components/FlightControls";
 import NarrationPanel from "@/components/NarrationPanel";
-import PhotoModePanel from "@/components/PhotoModePanel";
 import ResizablePanel from "@/components/ResizablePanel";
 import RouteControls from "@/components/RouteControls";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
@@ -137,8 +136,6 @@ const FEATURE_GROUPS = SIDEBAR_CATEGORIES.map(g => ({
   features: ALL_FEATURES.filter(f => f.type === g.type),
 })).filter(g => g.features.length > 0);
 
-type AppMode = "explore" | "photo";
-
 const CITY_CARDS: Record<string, TerrainCards> = {
   urumqi: URUMQI_CARDS,
   kashgar: KASHGAR_CARDS,
@@ -154,7 +151,7 @@ const CITY_LESSONS: Record<string, TerrainLesson> = {
 };
 
 const ROUTE_END_LESSON: TerrainLesson = {
-  seeing: "北疆经典航线飞行结束。你已从乌鲁木齐飞越天山、赛里木湖至伊犁河谷。欢迎继续探索左侧其他地貌，或使用照片模式识别舷窗实景。",
+  seeing: "北疆经典航线飞行结束。你已从乌鲁木齐飞越天山、赛里木湖至伊犁河谷。欢迎继续探索左侧其他地貌，或选择另一条航线。",
   formation: "",
   history: "",
 };
@@ -198,7 +195,6 @@ const POST_NARRATION_DWELL_MS = 2000;
 
 export default function ExplorerApp() {
   const mapRef = useRef<CesiumMapHandle>(null);
-  const [mode, setMode] = useState<AppMode>("explore");
   const [activeTerrain, setActiveTerrain] = useState<TerrainPoint | null>(null);
   const [displayCards, setDisplayCards] = useState<TerrainCards | null>(null);
   const [lesson, setLesson] = useState<TerrainLesson | null>(null);
@@ -819,17 +815,15 @@ export default function ExplorerApp() {
           onTerrainMode={setTerrainMode}
           onTerrainHover={setHoveredTerrainId}
         />
-        {mode === "explore" && (
-          <CesiumOverlayLabels
-            mapRef={mapRef}
-            isRouteFlying={isRouteFlying}
-            onSelect={handleSelectById}
-            hoveredTerrainId={hoveredTerrainId}
-            focusedTerrainId={activeTerrain?.id ?? null}
-            activeRegion={activeRegion}
-          />
-        )}
-        {terrainMode === "ellipsoid" && mode === "explore" && (
+        <CesiumOverlayLabels
+          mapRef={mapRef}
+          isRouteFlying={isRouteFlying}
+          onSelect={handleSelectById}
+          hoveredTerrainId={hoveredTerrainId}
+          focusedTerrainId={activeTerrain?.id ?? null}
+          activeRegion={activeRegion}
+        />
+        {terrainMode === "ellipsoid" && (
           <div className="pointer-events-none absolute bottom-4 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-lg border border-amber-500/20 bg-[#0a0e12]/80 px-4 py-2 text-center text-[11px] text-amber-200/60">
             未启用 Cesium 全球地形。请配置{" "}
             <code className="text-amber-300/70">NEXT_PUBLIC_CESIUM_ION_TOKEN</code>
@@ -863,8 +857,6 @@ export default function ExplorerApp() {
           >
             {language === "zh-CN" ? "EN" : "中"}
           </button>
-          <ModeTab active={mode === "explore"} onClick={() => setMode("explore")} label={t("header.exploration", language)} />
-          <ModeTab active={mode === "photo"} onClick={() => setMode("photo")} label={t("header.photo", language)} />
         </div>
       </header>
 
@@ -879,12 +871,11 @@ export default function ExplorerApp() {
       </div>
 
       {/* Left sidebar — collapsible terrain browser */}
-      {mode === "explore" && (
-        <div
-          className={`absolute top-10 bottom-0 left-0 z-20 flex flex-col transition-all duration-300 ease-out ${
-            sidebarCollapsed ? "w-[60px]" : "w-[280px]"
-          }`}
-        >
+      <div
+        className={`absolute top-10 bottom-0 left-0 z-20 flex flex-col transition-all duration-300 ease-out ${
+          sidebarCollapsed ? "w-[60px]" : "w-[280px]"
+        }`}
+      >
           {/* Sidebar background */}
           <div className="absolute inset-0 bg-[#0a0e12]/50 backdrop-blur-md border-r border-white/[0.04]" />
 
@@ -1004,10 +995,9 @@ export default function ExplorerApp() {
             </div>
           </div>
         </div>
-      )}
 
       {/* Welcome guide — first-time entry */}
-      {mode === "explore" && !activeTerrain && !isRouteFlying && (
+      {!activeTerrain && !isRouteFlying && (
         <div className="absolute top-10 right-3 z-20 w-[280px] pointer-events-auto">
           <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
             <h3 className="text-[14px] font-medium text-white/75 mb-1">
@@ -1034,7 +1024,7 @@ export default function ExplorerApp() {
       )}
 
       {/* Right summary card — top-right, documentary entry */}
-      {mode === "explore" && activeTerrain && !showDetailDrawer && (
+      {activeTerrain && !showDetailDrawer && (
         <div className="absolute top-10 right-3 z-20 w-[300px] pointer-events-auto">
           <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
             {/* 地貌名称 + 海拔 */}
@@ -1080,7 +1070,7 @@ export default function ExplorerApp() {
       )}
 
       {/* Detail drawer — right side, full height */}
-      {mode === "explore" && showDetailDrawer && activeTerrain && (
+      {showDetailDrawer && activeTerrain && (
         <div className="absolute top-0 right-0 bottom-0 z-20 w-[400px] pointer-events-auto">
           <div className="h-full bg-[#0a0e12]/60 backdrop-blur-lg border-l border-white/[0.04] flex flex-col">
             {/* Drawer header */}
@@ -1124,39 +1114,6 @@ export default function ExplorerApp() {
         </div>
       )}
 
-      {/* Photo mode overlay */}
-      {mode === "photo" && (
-        <div className="absolute top-10 right-3 bottom-3 z-20 w-[300px] pointer-events-auto">
-          <div className="h-full rounded-xl bg-[#0a0e12]/40 backdrop-blur-md border border-white/[0.04] p-4 overflow-y-auto">
-            <PhotoModePanel onSpeak={speakText} embedded />
-          </div>
-        </div>
-      )}
     </div>
-  );
-}
-
-function ModeTab({
-  active,
-  onClick,
-  label,
-}: {
-  active: boolean;
-  onClick: () => void;
-  label: string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={[
-        "rounded-md px-2 py-0.5 text-[10px] font-medium transition-all duration-200",
-        active
-          ? "bg-white/[0.08] text-white/70"
-          : "text-white/20 hover:text-white/40",
-      ].join(" ")}
-    >
-      {label}
-    </button>
   );
 }

@@ -52,3 +52,6 @@ terrain-dataset/
 *.shx
 *.prj
 *.zip
+
+# zread wiki drafts (local tool output)
+.zread/
