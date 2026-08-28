@@ -547,7 +547,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "australian-alps": {
     seeing:
-      "The Australian Alps are the highest part of the continent, straddling the New South Wales–Victoria border at the southern end of the Great Dividing Range. Mount Kosciuszko, at 2,228 m, is the highest point in mainland Australia. This is the only substantial area of the country that holds a reliable winter snowpack.",
+      "The Australian Alps are the highest part of the continent, straddling the New South Wales–Victoria border at the southern end of the Great Dividing Range. Mount Kosciuszko, at 2,228 m, is the highest point in mainland Australia. It is the only substantial area of the Australian mainland that holds a reliable winter snowpack.",
     formation:
       "The Alps are an uplifted block of very old rock, planed nearly flat and then raised — which is why the summit area is a broad, gently rounded plateau rather than jagged peaks. Ice-age glaciers were small here, but they left cirques and moraine-dammed lakes near Kosciuszko, the only glacial lakes on the Australian mainland.",
     observation:
@@ -579,7 +579,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Flinders Ranges are South Australia's largest mountain range, running about 430 km north from near Adelaide into the arid outback. Their signature is Wilpena Pound (Ikara), a huge natural amphitheatre of rock ringed by cliffs. St Mary Peak, on its rim, reaches 1,171 m.",
     formation:
-      "The rock was laid down in a sinking basin around 800–500 million years ago, then folded into a great arch. Erosion has stripped the soft core, leaving the hard, upturned rims standing as ridges — Wilpena Pound is simply the eroded centre of one such fold, enclosed by its own resistant edges. The rocks here hold some of the world's earliest animal fossils (the Ediacaran).",
+      "The rock was laid down in a sinking basin around 800–500 million years ago, then folded into a great arch. Erosion has stripped the soft core, leaving the hard, upturned rims standing as ridges — Wilpena Pound is simply the eroded centre of one such fold, enclosed by its own resistant edges. The rocks here hold some of the earliest known complex-animal fossils (the Ediacaran biota).",
     observation:
       "From the air Wilpena Pound looks like a footprint or a cupped hand: an oval basin walled by a continuous ridge, with a single narrow gap where a creek escapes. The ridges elsewhere run in long curved lines, following the folds. Red rock, blue-grey native pine and cypress, and the dry ochre plains around.",
     distinguish:
@@ -592,7 +592,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "blue-mountains": {
     seeing:
-      "The Blue Mountains rise just west of Sydney — not really mountains but a deeply dissected sandstone plateau, standing about 1,100 m and slashed by sheer-walled valleys. The famous view is of the Three Sisters and the Jamison Valley from the escarpment at Katoomba. The blue haze that names them comes from fine droplets of eucalyptus oil scattering light.",
+      "The Blue Mountains rise just west of Sydney — not really mountains but a deeply dissected sandstone plateau, standing about 1,100 m and slashed by sheer-walled valleys. The famous view is of the Three Sisters and the Jamison Valley from the escarpment at Katoomba. The blue haze that names them is generally attributed to fine oil droplets from the eucalypts, together with the air itself, scattering sunlight.",
     formation:
       "The plateau is a thick, flat-lying layer of quartz sandstone laid down by ancient rivers, later uplifted with the Great Dividing Range. Streams have since cut down through it along joints, carving canyons with vertical walls and leaving flat-topped ridges and isolated pillars like the Three Sisters where harder caps protect the rock beneath.",
     observation:
@@ -622,7 +622,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   kimberley: {
     seeing:
-      "The Kimberley is a remote sandstone plateau in Australia's far north-west, about the size of Germany, with a deeply indented coast of tidal gorges and a monsoon climate. Its best-known feature is the Bungle Bungle Range in Purnululu — a maze of orange-and-grey banded beehive domes. The tides here are among the largest in the world, over 10 m.",
+      "The Kimberley is a remote sandstone plateau in Australia's far north-west, about 420,000 km² — larger than Germany — with a deeply indented coast of tidal gorges and a monsoon climate. Its best-known feature is the Bungle Bungle Range in Purnululu — a maze of orange-and-grey banded beehive domes. The tides here are among the largest in the world, over 10 m.",
     formation:
       "The plateau is very old, flat-lying sandstone, dissected by rivers into gorges and mesas. The Bungle Bungles' domes are what remains after weathering along a grid of vertical cracks in the sandstone; the grey bands are a thin skin of cyanobacteria protecting the softer, orange, iron-stained layers between more clay-rich grey bands. The huge tides drown the river mouths, making \"horizontal waterfalls\" where water is forced through narrow gaps.",
     observation:
@@ -632,12 +632,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The banded domes are a rare case of biology shaping a landform: the dark stripes are living cyanobacterial crust that armours the rock. The plateau also shows \"antecedent drainage\" — rivers older than the present relief, cutting gorges as the land rose. The giant tides come from the shape of the continental shelf funnelling and amplifying the tidal wave.",
     history:
-      "The Kimberley holds Gwion Gwion and Wandjina rock art, some of the oldest figurative art known. It was one of the last parts of the continent settled by Europeans, from the 1880s, and remains sparsely populated, with large Aboriginal-owned lands.",
+      "The Kimberley holds Gwion Gwion (Bradshaw) and Wandjina rock art, among the world's very old figurative rock art. It was one of the last parts of the continent settled by Europeans, from the 1880s, and remains sparsely populated, with large Aboriginal-owned lands.",
   },
 
   "simpson-desert": {
     seeing:
-      "The Simpson Desert covers about 176,000 km² of central Australia, spanning three states. It is famous for its dunes: more than 1,100 parallel sand ridges running NNW–SSE, some over 200 km long without a break — the longest parallel dunes on Earth. \"Big Red,\" near Birdsville, is the best-known.",
+      "The Simpson Desert covers about 176,000 km² of central Australia, spanning three states. It is famous for its dunes: more than 1,100 parallel sand ridges running NNW–SSE, some over 200 km long without a break — among the longest parallel dunes on Earth. \"Big Red,\" near Birdsville, is the best-known.",
     formation:
       "The sand was carried in by rivers from the surrounding ranges and then reworked by the prevailing south-easterly winds into long, straight ridges that all line up with the wind. The dune crests still shift, but the flanks are held by spinifex and other plants, so the pattern is stable. Clay pans and salt lakes lie in the swales between ridges.",
     observation:
@@ -692,7 +692,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "\"Basin\" here is a geological structure: a downwarp holding tilted, layered rock, where a porous aquifer is confined between seals so the water is under pressure. It made pastoral settlement of arid inland Australia possible after the 1870s. Over-tapping dropped the pressure, and capping wild bores is now a major conservation effort.",
     history:
-      "For Aboriginal peoples the mound springs were reliable water and important sites on trade routes across the desert. The first flowing bore was drilled in 1878; within decades thousands of uncontrolled bores were wasting water, and the artesian pressure has been falling ever since.",
+      "For Aboriginal peoples the mound springs were reliable water and important sites on trade routes across the desert. The first flowing bore was drilled about 1878; within decades thousands of uncontrolled bores were wasting water, and the artesian pressure has been falling ever since.",
   },
 
   "lake-eyre": {
@@ -757,7 +757,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "twelve-apostles": {
     seeing:
-      "The Twelve Apostles are a group of tall limestone stacks standing in the Southern Ocean just off the Great Ocean Road in Victoria. They rise up to about 45 m out of the surf, a short way from sheer coastal cliffs. Despite the name there were never twelve; today about seven remain standing.",
+      "The Twelve Apostles are a group of tall limestone stacks standing in the Southern Ocean just off the Great Ocean Road in Victoria. They rise up to about 45 m out of the surf, a short way from sheer coastal cliffs. Despite the name there were never twelve; today only seven or eight remain standing.",
     formation:
       "The cliffs are soft limestone, laid down on a sea floor 10–20 million years ago. The Southern Ocean's waves attack the base of the cliff, cutting caves, then arches, then — when an arch collapses — leaving an isolated pillar, or stack. The stacks are slowly undercut in turn and fall; one dropped in 2005. New ones are being cut from the retreating cliff.",
     observation:
@@ -774,7 +774,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "Tasmania is Australia's island state, about 240 km south of the mainland across Bass Strait. It is small but mountainous and wet, with a rugged, glacier-carved western wilderness, cool temperate rainforest, and a jagged coastline. Nearly half the island is national park or reserve.",
     formation:
-      "Tasmania is a piece of continental crust that was joined to the mainland until rising seas flooded Bass Strait about 12,000 years ago. Much of its high country is capped by dolerite, a hard volcanic rock that forms columned cliffs and boulder fields. Ice-age glaciers scoured the west, gouging U-shaped valleys, cirques and hundreds of lakes.",
+      "Tasmania is a piece of continental crust that was joined to the mainland until rising seas flooded Bass Strait about 12,000 years ago. Much of its high country is capped by dolerite, a hard dark igneous rock that forms columned cliffs and boulder fields. Ice-age glaciers scoured the west, gouging U-shaped valleys, cirques and hundreds of lakes.",
     observation:
       "From the air western Tasmania is a tangle of sharp quartzite ridges, dark rainforest, buttongrass moorland and lakes, often under cloud. The centre has the dolerite plateau and peaks like Cradle Mountain; the east is drier, gentler farmland. The coast is deeply indented with bays and islands.",
     distinguish:
@@ -798,6 +798,66 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The system shows what a very low gradient does to a river: extreme meandering, slow flood travel, and heavy reliance on floodplain wetlands. It also illustrates over-allocation — more water was licensed for irrigation than the rivers reliably carry, and balancing farms, towns and the environment is the point of the Murray–Darling Basin Plan.",
     history:
       "The rivers were travel routes and rich food sources for dozens of Aboriginal nations, whose fish traps and scarred canoe trees line the banks. Paddle steamers carried wool and supplies from the 1850s. Water sharing between the states has been disputed since Federation and remains so.",
+  },
+
+  kgari: {
+    seeing:
+      "K'gari (Fraser Island), off the south-east coast of Queensland, is about 123 km long and the largest sand island in the world. It is made almost entirely of quartz sand, yet grows rainforest over 30 m tall — the only place on Earth where rainforest grows on pure sand. World Heritage-listed in 1992; \"K'gari\" means \"paradise\" in the local language.",
+    formation:
+      "The island is a set of parallel dune ridges built over hundreds of thousands of years, as currents and wind carried continental-shelf sand northward and piled it up. Some of the dune sequences are among the oldest known on Earth. Wind keeps blowing fresh sand up onto older dunes, generation over generation, and the dunes are still creeping inland and north.",
+    observation:
+      "From the air K'gari is a long green island running north–south: an almost unbroken beach over 100 km long on the east, deep-green rainforest and a string of lakes (some tea-brown, some bright green) through the centre and west, and more than 40 km of coloured sand cliffs on the west. White \"sand blowouts\" show where moving dunes are pushing through the forest.",
+    distinguish:
+      "Unlike a coral cay (the sand islets of the Great Barrier Reef) or a volcanic island, K'gari is a \"sand island\" built of pure sand. Most of its lakes are \"perched\": organic matter in the dune hollows cements the sand into an impermeable pan, so rainwater pools partway up the dune, not connected to the water table. About half the world's perched lakes are here, and Lake Boomanjin is the largest perched lake on Earth.",
+    concept:
+      "K'gari is the counter-intuitive case of \"rainforest on sand\": pure sand holds almost no nutrients, but over hundreds of thousands of years leaf litter and a fungal mycorrhizal network recycle nutrients again and again, supporting tall rainforest. It also shows that dune landforms are not static — the whole island is slowly moving and growing.",
+    history:
+      "K'gari is the home of the Butchulla people, who have lived here for thousands of years. After the wreck of the Stirling Castle in 1836, the ordeal of the captain's wife Eliza Fraser led Europeans to call it \"Fraser Island.\" It was logged for prized timbers such as kauri pine until 1991, then World Heritage-listed the next year; the Aboriginal name K'gari was officially restored in 2023.",
+  },
+
+  kakadu: {
+    seeing:
+      "Kakadu, in Australia's Northern Territory, covers about 20,000 km² — Australia's largest terrestrial national park, and one of the few places listed as World Heritage for both natural and cultural value. Its frame is the Arnhem Land sandstone plateau and, along its western edge, an escarpment running about 500 km and 30–330 m high, with vast seasonally flooded wetlands below it.",
+    formation:
+      "About 140 million years ago this area was a shallow sea: the sandstone plateau was the sea floor and the escarpment was the coastline. The plateau is mostly hard Kombolgie sandstone. Since then the escarpment has retreated eastward by roughly a metre every thousand years, its debris building the lowland plains, and wet-season floods have laid down the wetlands.",
+    observation:
+      "From the air Kakadu is layered: red, broken, gorge-cut sandstone \"stone country\" on the east; sloping woodland in the middle; floodplains on the west that merge into a sheet of water in the wet and shrink to chains of billabongs in the dry; and tidal mudflats and mangroves at the outer edge. Jim Jim and Twin Falls drop straight off the escarpment.",
+    distinguish:
+      "Kakadu's sandstone plateau and escarpment form much as the Blue Mountains and the Kimberley do (flat-lying sandstone uplifted and dissected), but Kakadu has a tropical monsoon climate, and the huge dry-season/wet-season swing drives everything. Its floodplains resemble the Murray–Darling's, but Kakadu's water is entirely monsoon-controlled, going from cracked mud to inland sea within a year.",
+    concept:
+      "Kakadu shows how a \"monsoon switch\" shapes landform and life: the November–April monsoon sends rivers into flood, turns the wetlands into a sea and concentrates waterbirds (up to about 2 million by the late dry); May–October brings almost no rain and the wetlands shrink to pools. The steady backward retreat of the escarpment is a living lesson in scarp-retreat landscape evolution.",
+    history:
+      "Aboriginal people have lived in the Kakadu region for tens of thousands of years; the Madjedbebe rock shelter has been dated by some studies to about 65,000 years. The rock art at Ubirr and Nourlangie records a long history from prehistoric animals to European sailing ships. The land is owned by Bininj/Mungguy traditional owners and leased back for joint management. Uranium found nearby in the 1970s brought years of controversy over mining.",
+  },
+
+  grampians: {
+    seeing:
+      "The Grampians (Aboriginal name Gariwerd), in western Victoria, are a set of sandstone cuestas tilted up out of the plain, made of several roughly parallel ranges; the highest, Mount William, is about 1,167 m. They are known for their cliffs, rock lookouts and the richest concentration of Aboriginal rock art in Victoria.",
+    formation:
+      "About 400 million years ago (the Devonian) an inland basin filled with several kilometres of sandstone and siltstone, which was later folded and tilted as a whole toward the west. Because the beds dip west, every range is a cuesta — a steep cliff facing east, a gentle slope running west. Granite intruded the pile about 395 million years ago.",
+    observation:
+      "From the air the Grampians are several dark, parallel ridge lines standing above pale farmland: each range has a sheer sandstone cliff on its east side and a gentle wooded slope on the west. The ridge tops are bare sandstone benches with lookouts such as the Pinnacles and Boroka. Long narrow valleys and reservoirs lie between the ranges.",
+    distinguish:
+      "The Grampians' cuestas are different from the body of the Great Dividing Range (a low, gentle upwarp) — they are clear \"cliff-plus-slope\" asymmetric ridges. Their sandstone is older than the Blue Mountains' and much more folded: the Blue Mountains beds are still roughly horizontal, the Grampians beds are visibly tilted.",
+    concept:
+      "A cuesta is the textbook landform of \"differential erosion on tilted beds\": soft layers are stripped to a gentle slope, the cut edge of a hard sandstone layer stands as a cliff, and the cliff faces the up-dip direction. A whole set of parallel cuestas like the Grampians is the best outcrop for reading the dip of the rock in the field.",
+    history:
+      "Gariwerd is deeply significant to the Jardwadjali and Djab Wurrung peoples, and holds about 80% of Victoria's known Aboriginal rock art sites. The explorer Thomas Mitchell named the range in 1836 after the Grampian Mountains of Scotland. \"Gariwerd\" has recently been restored as an official dual name.",
+  },
+
+  ningaloo: {
+    seeing:
+      "Ningaloo Reef, on the north-west coast of Western Australia, is about 300 km long and Australia's largest fringing reef — a coral reef growing right against the shore, in places only a hundred metres or two out. It is World Heritage-listed together with the inland Cape Range (2011). Between March and August one of the world's largest aggregations of whale sharks gathers here.",
+    formation:
+      "A fringing reef grows directly on the rocky shallows at the edge of the land, without the wide lagoon of a barrier reef. The coast at Ningaloo is slowly rising, and the neighbouring Cape Range is a limestone anticline that has been lifted and then cut into gorges by old rivers. The present reef is coral growing upward on older reef foundations since sea level rose after the last ice age.",
+    observation:
+      "From the air Ningaloo is a pale reef line hugging the coast: only a narrow band of turquoise shallow water lies between reef and shore, and deep-blue Indian Ocean starts immediately outside. Onshore is the red-brown Cape Range, with dry gorges (such as Yardie Creek) cut right down to the sea.",
+    distinguish:
+      "Ningaloo is a fringing reef; the Great Barrier Reef is a barrier reef — the key difference is how far the reef sits from shore: a fringing reef is against the land with almost no lagoon; a barrier reef lies tens of kilometres offshore behind a wide lagoon, along the shelf edge. At Ningaloo you can swim to the coral straight from the beach; the Great Barrier Reef needs a boat.",
+    concept:
+      "A fringing reef is the \"youngest\" and simplest of the three basic reef types (fringing–barrier–atoll): coral starts in place in the shallows at the edge of the land. Darwin's classic model holds that if the land keeps subsiding a fringing reef grades into a barrier reef and finally an atoll; Ningaloo stays at the fringing stage because its coast is rising.",
+    history:
+      "The Ningaloo coast is the traditional sea country of the Yinigudura and other Aboriginal groups, with shell middens and rock art thousands of years old. There was a whaling station here in the 19th century (Norwegian Bay). A marine park was declared in 1987 and the area was World Heritage-listed in 2011.",
   },
 
   // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
