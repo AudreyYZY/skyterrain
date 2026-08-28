@@ -212,7 +212,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Plateaus ============
   "qinghai-tibet": {
     seeing:
-      "The Tibetan Plateau (Qinghai–Tibet Plateau) is the highest, largest and youngest plateau on Earth, averaging above 4,000 m and covering about 2.5 million km² — the \"roof of the world\" and \"third pole.\" The Yangtze, Yellow, Lancang–Mekong, Yarlung Tsangpo–Brahmaputra and Indus all rise here.",
+      "The Tibetan Plateau (Qinghai–Tibet Plateau) is the highest and largest plateau on Earth and also a geologically young one, averaging above 4,000 m and covering about 2.5 million km² within China — the \"roof of the world\" and \"third pole.\" The Yangtze, Yellow, Lancang–Mekong, Yarlung Tsangpo–Brahmaputra and Indus all rise here.",
     formation:
       "The plateau is the result of the Indian plate driving north into Eurasia; the crust has been thickened to about 70 km (normal continental crust is about 35 km) and lifted as a whole. It carries several roughly east–west ranges (Gangdise, Nyainqentanglha, Tanggula, Kunlun) with broad lake basins and grasslands between them.",
     observation:
@@ -252,14 +252,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Inner Mongolian Plateau is \"as flat as a plain,\" so why call it a plateau? Because it meets two conditions: a fairly high elevation (above 1,000 m) and clear scarps at its edges. It lies roughly west of China's 400 mm annual-rainfall line, in the semi-arid to arid zone, naturally suited to grazing rather than crops.",
     history:
-      "The plateau is traditional Mongol pasture and the stage for the Xiongnu, Turks, Khitan and Mongols in turn. The Xilingol and Hulunbuir grasslands are famous natural pastures. Grazing bans and rest-grazing in recent years have allowed some degraded grassland to recover.",
+      "The plateau is traditional Mongol pasture and the stage for the Xiongnu, Turks, Khitan and Mongols in turn. The Xilingol and Hulunbuir grasslands are among China's largest and most important natural pastures. Grazing bans and rest-grazing in recent years have allowed some degraded grassland to recover.",
   },
 
   "yunnan-guizhou": {
     seeing:
       "The Yunnan–Guizhou Plateau, in south-west China, covers eastern Yunnan and most of Guizhou at 1,000–2,000 m. It is best known for karst: limestone dissolved by water into stone forests, caves, sinkholes and underground rivers, leaving a surface where \"there are not three feet of level ground.\"",
     formation:
-      "This was shallow sea in the geological past, which laid down thick limestone; it was later uplifted with the Tibetan Plateau. Limestone dissolves slowly in carbon-dioxide-charged water, and over millions of years both surface and underground have been \"hollowed out\" into fantastic shapes. The Yunnan part is higher with gentler relief (more basins, bazi); the Guizhou part is more deeply cut and broken.",
+      "This was shallow sea for long stretches of the geological past, which laid down thick limestone; it was later uplifted in the Cenozoic along with the wider south-west. Limestone dissolves slowly in carbon-dioxide-charged water, and over millions of years both surface and underground have been \"hollowed out\" into fantastic shapes. The Yunnan part is higher with gentler relief (more basins, bazi); the Guizhou part is more deeply cut and broken.",
     observation:
       "From the air the Yunnan–Guizhou Plateau is a rolling green highland studded with cones and domes of small hills (peak forests, peak clusters), with enclosed hollows and small basins between them (bazi) where farmland and towns crowd in. Surface rivers often \"dive underground\" and re-emerge. The Stone Forest and Huangguoshu Falls are the landmarks.",
     distinguish:
@@ -272,7 +272,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   pamir: {
     seeing:
-      "The Pamirs, at the far west of China, are the \"knot\" where the Tianshan, Kunlun, Karakoram and Hindu Kush meet, averaging above 4,000 m — the ancient \"Congling\" (Onion Range). Muztagh Ata (7,546 m), with its rounded form and glaciers running from summit to foot, is called the \"father of ice mountains.\"",
+      "The Pamirs, at the far west of China, are the \"knot\" where the Tianshan, Kunlun, Karakoram and Hindu Kush meet, averaging above 4,000 m — the ancient \"Congling\" (Onion Range). Muztagh Ata (about 7,546 m), with its rounded form and large glaciers running from near the summit down to its foot, is called the \"father of ice mountains.\"",
     formation:
       "The Pamirs are the western extension of the Tibetan Plateau, a plateau raised where several mountain systems are pressed together, its surface a broad high plain with snow peaks and widespread glaciers rising from it.",
     observation:
@@ -282,7 +282,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Pamirs are \"the mountain knot of Asia\" — several great ranges converge here — and a watershed for several large rivers (the Amu Darya, some tributaries feeding the Tarim, tributaries of the Indus). High and not at especially high latitude, it is one of the most heavily glaciated regions in China.",
     history:
-      "The Pamirs were the pass that the Silk Road had to cross to reach Central Asia and beyond; Xuanzang crossed the \"Congling\" on both his westward journey and his return. Tashkurgan is the highland gateway county, home for generations to the Tajik people.",
+      "The Pamirs were the barrier the Silk Road had to cross to link Central and South Asia; the monk Xuanzang came back over the \"Congling\" to Khotan on his return from India. Tashkurgan is the highland gateway county, home for generations to the Tajik people.",
   },
 
   // ============ Basins ============
