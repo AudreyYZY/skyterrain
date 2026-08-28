@@ -389,12 +389,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The most characteristic idea of the North China Plain is the \"suspended river\": the Yellow River carries the world's highest sediment load, which builds up its lower bed until it stands several to more than ten metres above the land (most dramatically at Kaifeng), so a breach is a disaster. The Yellow River has changed course many times through history, and the range of those floods is roughly the outline of today's North China Plain. The plain is also one of China's most water-short, supplied by the South-to-North Water Diversion.",
     history:
-      "The North China Plain has been the centre of Chinese civilisation since the Xia, Shang and Zhou. The Grand Canal runs north–south across it, linking the Hai, Yellow, Huai and Yangtze river systems. Every great change of course of the Yellow River has profoundly shaped the people on this land.",
+      "The North China Plain has been the centre of Chinese civilisation since the Xia, Shang and Zhou. The Grand Canal runs north–south across it, linking the Hai, Yellow, Huai, Yangtze and Qiantang river systems. Every great change of course of the Yellow River has profoundly shaped the people on this land.",
   },
 
   yangtze: {
     seeing:
-      "The Middle-Lower Yangtze Plain runs from Yichang in Hubei to the mouth of the Yangtze — a string of alluvial plains along the river (the Two-Lakes Plain, the Poyang Lake Plain, the Wanjiang Plain, the Yangtze Delta). It is water-netted and lake-rich, home to China's largest group of freshwater lakes, and has been a \"land of fish and rice\" since ancient times.",
+      "The Middle-Lower Yangtze Plain runs from Yichang in Hubei to the mouth of the Yangtze — a string of alluvial plains along the river (the Two-Lakes Plain, the Poyang Lake Plain, the Chaohu Plain, the Yangtze Delta). It is water-netted and lake-rich, home to China's largest group of freshwater lakes, and has been a \"land of fish and rice\" since ancient times.",
     formation:
       "The Yangtze and its tributaries built the plains by long alluviation, and structural hollows along the way filled with water to form the many lakes. Poyang and Dongting act as natural \"flood-control reservoirs\" for the Yangtze: in flood season river water backs into the lakes, in the dry season the lakes feed the river, so both are \"a sheet of water in flood, a thread in drought,\" with huge seasonal area changes.",
     observation:
