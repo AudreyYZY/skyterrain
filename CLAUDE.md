@@ -90,15 +90,18 @@ features/
 ③`lib/terrain-content.{zh,en}.ts` 写双语 6 板块 ④`lib/terrain-label-registry.ts`
 `IMPORTANCE_BY_ID` 补重要度 ⑤`check-terrain-camera.ts` 通过。
 
-**权威文字内容 — 进行中**：讲解改为 6 个通用板块（`TerrainLesson`，顺序见 `lib/lesson.ts`
+**权威文字内容**：讲解改为 6 个通用板块（`TerrainLesson`，顺序见 `lib/lesson.ts`
 `LESSON_SECTION_ORDER`）：
 `seeing 概述` → `formation 地貌特征` → `observation 从空中怎么看` →
 `distinguish 与相似地形的区分` → `concept 地理知识（为何算这类地形/常见误区）` →
 `history 历史与人文`。
-内容写在 `lib/terrain-content.ts`（`getTerrainContent(id)`，按注册表 id 索引），
-依据中国国家地理 / 中科院 / 自然资源部等公认地理事实总结，非文学化旁白、非凭空生成。
-已收录 34 个（20 个一级地形 + 长白山/南岭/贺兰山/河西走廊/长江三峡/雅鲁藏布大峡谷/
-青海湖/鄱阳湖/海南岛/台湾岛等）。未收录地形面板显示 `PLACEHOLDER_LESSON` 占位。
+内容写在 `lib/terrain-content.{zh,en}.ts`（`getTerrainContent(id, lang)`，按注册表 id 索引），
+依据中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
+等公认地理事实总结，非文学化旁白、非凭空生成。
+**已逐句核源（Block D，2026-08）**：中国 34 + 澳大利亚 22 + 新疆绿洲聚落 5 = 61 篇双语。
+核源标准：去比较性/主观评价，有争议的加限定或并列，查不到宁可删，数字统一到权威口径。
+`settlement`（绿洲·聚落）只用 概述/从空中怎么看/历史与人文 三段（`formation` 留空自动跳过）。
+未收录地形面板显示占位文案（`namtso`/`dongting`/次级山脉/内蒙古各沙漠等仍待补）。
 内容优先级：`getTerrainContent(id)`（zh-CN）> `i18n-stories` 英译 > 新疆 json `lesson` /
 `china-core` story > 占位。
 
