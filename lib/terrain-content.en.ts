@@ -16,13 +16,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Mountain systems ============
   qinling: {
     seeing:
-      "The Qinling Mountains run east–west across the exact middle of China for about 1,600 km. They are the country's single most important natural dividing line: warm-temperate dry farming to the north, subtropical rice country to the south. From the air the range splits the palette in two — the yellow Guanzhong Plain and Loess Plateau on the north side, the deep green Hanzhong and Sichuan basins on the south.",
+      "The Qinling Mountains run east–west across the exact middle of China; the range system as a whole is about 1,600 km long. They are one of the country's most important natural dividing lines: warm-temperate dry farming to the north, subtropical rice country to the south. From the air the range splits the palette in two — the yellow Guanzhong Plain and Loess Plateau on the north side, the deep green Hanzhong and Sichuan basins on the south.",
     formation:
-      "The Qinling was raised by the collision of the North China and Yangtze blocks and is built of hard granite and metamorphic rock. Ongoing uplift along a major fault on its northern edge makes the north slope steep — it drops almost straight onto the Guanzhong Plain — while the south slope descends gently. The summit, Mount Taibai (3,771 m), is the highest point in mainland China east of the Tibetan Plateau and carries horns and cirques left by Quaternary glaciers.",
+      "The Qinling was raised by the collision of the North China and Yangtze blocks and is built mainly of granite and of metamorphic rock such as gneiss and schist. Ongoing uplift along a major fault on its northern edge makes the north slope steep — it drops almost straight onto the Guanzhong Plain — while the south slope descends gently. The summit, Mount Taibai (3,771 m), is generally regarded as the highest point in mainland China east of the Tibetan Plateau; its upper slopes keep horns, cirques and glacial lakes from the Quaternary ice ages, and Taibai is one of the few mountains in eastern China with confirmed glacial traces.",
     observation:
-      "Identify the Qinling by its trend first: one continuous east–west ridge, not the scattered blocks of other ranges. Then look at the north face — it stands like a wall at the edge of the plain, with almost no foothills. In winter the crest holds snow while the basins to the south do not; that snow line is itself the north–south divide. Mount Taibai and Mount Hua (a granite fault block, one of the Five Great Mountains) are the two clearest landmarks.",
+      "Identify the Qinling by its trend first: one continuous east–west ridge, not the scattered blocks of other ranges. Then look at the north face — it stands like a wall at the edge of the plain, with almost no foothills. In winter the crest holds snow, and snow on the summit often lasts into early summer, while the basins to the south stay bare. Mount Taibai and Mount Hua (a granite fault block, one of the Five Great Mountains) are the two clearest landmarks.",
     distinguish:
-      "The Qinling and the Nanling are both east–west watershed ranges and are easy to confuse. The Qinling is high, continuous, snow-capped, and marks the climate boundary between warm-temperate and subtropical China; the Nanling is low and broken, mostly around 1,000 m, snow-free, and only separates the Yangtze and Pearl river systems. Compared with the Qilian to the west: the Qilian runs on a slant (NW–SE) with continuous summit glaciers, while the Qinling runs true east–west with only a few relict glaciers.",
+      "The Qinling and the Nanling are both east–west watershed ranges and are easy to confuse. The Qinling is high and continuous, holds summer snow on its highest peaks, and marks the climate boundary between warm-temperate and subtropical China; the Nanling is low and broken, mostly around 1,000 m, snow-free, and only separates the Yangtze and Pearl river systems. Compared with the Qilian: the Qilian runs on a slant (NW–SE) and has large modern glaciers on its summits, while the Qinling runs true east–west and has only Quaternary glacial traces, no modern glaciers.",
     concept:
       "The Qinling is often called \"China's central air conditioner.\" It blocks cold air pushing south in winter and traps moisture moving north in summer, so rainfall, coldest-month temperature, vegetation and farming all differ across it — roughly the 800 mm annual-rainfall line and the 0 °C January isotherm. It is also the drainage divide between the Yangtze and the Yellow River, and the popular boundary between north and south China.",
     history:
@@ -31,24 +31,24 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   qilian: {
     seeing:
-      "The Qilian Mountains lie on the Gansu–Qinghai border and are the water tower and natural shield of the Hexi Corridor. Their summits carry permanent snow and some 2,000 glaciers, whose meltwater feeds a string of oasis cities — Wuwei, Zhangye, Jiuquan. From the air they sit as a white band between the arid corridor and gobi to the north and the moist grasslands of Qinghai to the south.",
+      "The Qilian Mountains lie on the Gansu–Qinghai border and are the water tower and natural shield of the Hexi Corridor. Their summits carry permanent snow and thousands of glaciers, whose meltwater feeds a string of oasis cities — Wuwei, Zhangye, Jiuquan. From the air they sit as a white band between the arid corridor and gobi to the north and the moist grasslands of Qinghai to the south.",
     formation:
-      "The Qilian is the north-eastern edge of the Tibetan Plateau, still rising under the northward push of the Indian plate. It is a set of parallel ridges and valleys trending NW–SE, built of Palaeozoic metamorphic rock and granite. Its 2,000-odd glaciers make it China's second-largest glacier region; the highest summit, Tuanjie (Kangze'gyai) Peak, reaches about 5,808 m.",
+      "The Qilian is the north-eastern edge of the Tibetan Plateau, still rising under the northward push of the Indian plate. It is a set of parallel ridges and valleys trending NW–SE, built of Palaeozoic metamorphic rock and granite. China's second glacier inventory counts about 2,680 glaciers here, roughly 1,600 km² of ice — the solid reservoir of the Hexi Corridor. The highest summit, Tuanjie (Kangze'gyai) Peak, is about 5,800 m, with survey figures ranging from 5,808 to 5,827 m.",
     observation:
       "The easiest tell is the slant — the crest runs NW–SE, clearly different from the true east–west Qinling. Snow and ice run together along the summits, and a row of triangular alluvial fans spreads out at the foot, each fan edge turning green as an oasis. The dead-straight Hexi Corridor lies below the north slope; the open grasslands of Qinghai below the south — one side yellow, the other green.",
     distinguish:
-      "The Qilian and the Qinling are both large ranges east of the Tibetan Plateau, but the Qilian is farther west, higher and colder, with connected glaciers and a snow line above 4,500 m; the Qinling runs true east–west with only scattered glaciers. Versus the Kunlun: the Kunlun is longer and farther south, the border range between the Tarim Basin and the plateau; the Qilian is shorter, wedged between the Tibetan and Inner Mongolian plateaus.",
+      "The Qilian and the Qinling are both large ranges east of the Tibetan Plateau, but the Qilian is farther west, higher and colder, with connected glaciers and a snow line above 4,500 m; the Qinling runs true east–west and has no modern glaciers at all. Versus the Kunlun: the Kunlun is longer and farther south, the border range between the Tarim Basin and the plateau; the Qilian is shorter, wedged between the Tibetan and Inner Mongolian plateaus.",
     concept:
       "The Qilian is a textbook block-faulted range — not one arch but several parallel ridges sliced by faults, ridge and valley alternating. Its glaciers and snow feed the three inland rivers of the Hexi Corridor (the Shiyang, Hei and Shule). Without the Qilian there would be no corridor oases and no Silk Road route through here.",
     history:
-      "In the Xiongnu language qilian meant \"heaven,\" so Qilian is literally \"Heaven Mountain.\" The Han general Huo Qubing broke the Xiongnu here, leaving them the lament \"lose our Qilian Mountains and our herds will not thrive.\" The Hexi Corridor then entered the Central Plains realm and became the throat of the Silk Road.",
+      "Han-dynasty commentary records that in the Xiongnu language qilian meant \"heaven,\" making Qilian literally \"Heaven Mountain.\" The Han general Huo Qubing broke the Xiongnu here, and the histories preserve their lament: \"lose our Qilian Mountains and our herds will not thrive.\" The Hexi Corridor then entered the Central Plains realm and became the throat of the Silk Road.",
   },
 
   tianshan: {
     seeing:
-      "The Tianshan crosses central Xinjiang and splits the region into a southern and a northern half. About 2,500 km long, it is one of the largest mountain systems on Earth that stands far from any ocean. From the air you see white peaks and glaciers, a ring of yellow-green alluvial fans and oases at the foot, and beyond them the Taklamakan and Gurbantunggut deserts.",
+      "The Tianshan crosses central Xinjiang and splits the region into a southern and a northern half. The whole system runs about 2,500 km east–west, some 1,700 km of it inside China, and is one of the largest independent latitudinal (east–west) mountain systems on Earth. From the air you see white peaks and glaciers, a ring of yellow-green alluvial fans and oases at the foot, and beyond them the Taklamakan and Gurbantunggut deserts.",
     formation:
-      "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Tomur Peak (7,443 m) is the highest point; Bogda Peak (5,445 m), just beside Ürümqi, is the best-known landmark.",
+      "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — geomorphologists call it a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Its highest point, Tomur Peak (about 7,443 m), sits on the China–Kyrgyzstan border; Bogda Peak (5,445 m), just beside Ürümqi, is the best-known landmark.",
     observation:
       "Three things identify the Tianshan: a continuous set of parallel east–west ridges; large modern glaciers and permanent snow on the summits; and a row of huge alluvial fans at the foot, each fan edge holding an oasis city (Ürümqi, Shihezi, Korla). Heavenly Lake (Tianchi), a glacial lake below Bogda Peak, is deep blue and the easiest single point to pick out.",
     distinguish:
@@ -61,39 +61,39 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   altai: {
     seeing:
-      "The Altai Mountains sit at the far north of Xinjiang, the border range shared by China, Kazakhstan, Russia and Mongolia. \"Altai\" means \"gold mountain\" in Mongolian, and the range has yielded gold since ancient times. It holds emerald glacial lakes and dense conifer forest — Kanas Lake is the most famous.",
+      "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, of which Kanas Lake is the best known.",
     formation:
-      "The Altai is a Palaeozoic fold range strongly reworked by Quaternary glaciation, which left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. China's highest point here, Youyi (Friendship) Peak, reaches 4,374 m at the China–Russia–Mongolia junction. Kanas Lake is a landslide-and-moraine-dammed lake formed by glacial scour.",
+      "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak, reaches 4,374 m at the China–Russia–Mongolia junction. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
     observation:
-      "The Altai is lower and greener than the Tianshan: its slopes carry unbroken stands of Siberian larch and Schrenk's spruce, the densest mountain forest in Xinjiang. Winding glacial lakes lie in the valley floors, their water tinged green (Kanas is famous for changing colour). The trend is on a slant (NW–SE), unlike the true east–west Tianshan.",
+      "The Altai's forest is denser than the Tianshan's: its slopes carry taiga — Siberian larch, Siberian spruce, Siberian fir and Siberian pine — a conifer forest that in China is found only here and in the northern Greater Khingan. Winding glacial lakes lie in the valley floors, their water tinged green (Kanas is known as a \"colour-changing lake\"). The range runs on a slant (NW–SE), unlike the true east–west Tianshan.",
     distinguish:
-      "See the Tianshan entry: the Altai is high-latitude, with a low snow line, dense forest, a short range body and a slanted trend. It is also the only part of China draining to the Arctic Ocean — the Irtysh River rises here and reaches the Arctic via Russia, whereas Xinjiang's other rivers cannot leave the region (internal drainage).",
+      "Against the Tianshan: the Altai is at higher latitude, its snow line is lower, its forest is denser, the Chinese section of the range is shorter, and it runs on a slant. It is also the only part of China draining to the Arctic Ocean — the Irtysh River rises here and reaches the Arctic via Russia, whereas Xinjiang's other rivers cannot leave the region (internal drainage).",
     concept:
-      "At its high latitude (about 47–49° N) the Altai is not especially tall but its snow line is low, and its vertical zones are complete: from piedmont desert-steppe up through mountain forest and subalpine meadow to alpine snow and ice. It is also one of China's most heavily forested mountain regions.",
+      "At its high latitude (about 47–49° N) the Altai's lowest snow line drops to around 2,800 m — the lowest in China. Because the latitude is high and temperatures low, its vertical zones are complete: from piedmont desert-steppe up through mountain forest (tree line around 1,800 m) and subalpine meadow to alpine snow and ice.",
     history:
-      "The Altai has been pasture for nomadic peoples for millennia, and Kazakh herders still move their flocks here seasonally. Rock art and deer stones in the mountains record thousands of years of steppe culture. The Tuvan villages around Kanas keep a distinctive log-cabin architecture and folk life.",
+      "The Altai has long been pasture for nomadic peoples, and Kazakh herders still move their flocks here seasonally. Rock art and deer stones in the mountains record the activity of steppe peoples. Tuvan villages around Kanas keep log-cabin architecture and distinctive folk customs.",
   },
 
   kunlun: {
     seeing:
       "The Kunlun is one of China's longest ranges — about 2,500 km from the Pamirs in the west to Qinghai in the east — and is called the \"ancestor of ten thousand mountains.\" It is the great barrier between the Tarim Basin and the Tibetan Plateau: the north slope drops steeply to desert, the south slope grades gently onto the plateau.",
     formation:
-      "The Kunlun rose with the Tibetan Plateau under the India–Eurasia collision. It is built mainly of metamorphic rock and granite and trends roughly east–west. The western section carries 7,000 m peaks such as Kongur (7,649 m) and Muztagh Ata (7,546 m); the eastern section lowers gradually and joins the Altun and Qilian ranges.",
+      "The Kunlun rose with the Tibetan Plateau under the India–Eurasia collision. It is built mainly of metamorphic rock and granite and trends roughly east–west. Where its western section meets the Pamirs it carries 7,000 m peaks such as Kongur (about 7,649 m) and Muztagh Ata (about 7,546 m); the eastern section lowers gradually and joins the Altun and Qilian ranges.",
     observation:
       "From the air the Kunlun is an extremely long, extremely continuous east–west wall of snow mountains. To the north lies the yellow sand sea of the Tarim Basin (the Taklamakan), with almost no transition; to the south, the smoothly rolling high country of the Tibetan Plateau. Yuzhu Peak and the Kunlun Pass (4,768 m, where the Qinghai–Tibet Highway crosses) are good reference points.",
     distinguish:
       "The Kunlun and the Karakoram sound alike and lie next to each other, but they are not the same: the Karakoram is south-west of the Kunlun, closer to Pakistan, steeper, with denser glaciers and K2 (Qogir, 8,611 m, the world's second-highest peak). The Kunlun is broader, longer, older, with a higher snow line.",
     concept:
-      "The Kunlun is the divide between two great geographic units — the internally drained, arid Tarim Basin and the cold, high Tibetan Plateau. Its glacier meltwater waters the oases of Hotan, Ruoqiang and others along the southern rim of the Tarim. Because the north slope drops straight to desert with no transition, the northern foot of the Kunlun is one of the most abrupt relief contrasts in China.",
+      "The Kunlun is the divide between two great geographic units — the internally drained, arid Tarim Basin and the cold, high Tibetan Plateau. Its glacier meltwater waters the oases of Hotan, Ruoqiang and others along the southern rim of the Tarim. Because the north slope drops straight to desert with almost no transition, the northern foot of the Kunlun is one of the most abrupt relief contrasts in China.",
     history:
-      "In Chinese myth the Kunlun is the home of the gods and the Queen Mother of the West, the source of \"Kunlun culture.\" The southern Silk Road ran along its northern foot, stringing together the oasis kingdoms of Loulan, Yutian (Khotan) and Qiemo.",
+      "In Chinese myth the Kunlun is the home of the gods and the Queen Mother of the West, the source of \"Kunlun culture.\" The southern Silk Road ran along its northern foot, stringing together the oasis kingdoms of Yutian (Khotan), Qiemo (Cherchen) and Jingjue.",
   },
 
   karakoram: {
     seeing:
       "The Karakoram sits at the far south-west of Xinjiang on the China–Pakistan border, one of the densest concentrations of extreme peaks on Earth. It has four 8,000 m summits, including K2 (Qogir, 8,611 m), the world's second-highest mountain. \"Karakoram\" means \"black gravel mountains.\"",
     formation:
-      "Like the Himalaya, the Karakoram belongs to the belt of the India–Eurasia collision; it rises fast and is deeply cut, making the terrain exceptionally steep. It holds the largest mountain glaciers of the middle latitudes — the Siachen Glacier is about 70 km long. The Karakoram Pass between China and Pakistan sits at about 4,700 m.",
+      "Like the Himalaya, the Karakoram belongs to the belt of the India–Eurasia collision; it rises fast and is deeply cut, making the terrain exceptionally steep. It holds some of the largest glaciers outside the polar regions — the Siachen is about 70 km long, the Biafo about 63 km. The China–Pakistan Highway crosses at the Khunjerab Pass, about 4,700 m (the true Karakoram Pass lies to the east at about 5,575 m, with no road).",
     observation:
       "From the air the Karakoram is a dense field of sharp black rock peaks and white glaciers, with peak-to-valley relief often 3,000–4,000 m — more jagged than the main Kunlun crest. K2 is a near-perfect pyramid rising as an isolated peak.",
     distinguish:
@@ -101,14 +101,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Karakoram is the classic case of \"why glaciers can exist in a dry region\": precipitation is low, but the altitude is so great and temperatures so low that both evaporation and melting are slow, so the glaciers are actually more massive than in wetter ranges. It is also an important source of the Indus.",
     history:
-      "The Karakoram Highway, built jointly by China and Pakistan in 1978 (the China–Pakistan Friendship Highway), crosses here and is one of the highest paved international roads in the world. K2, remote and severe, is regarded by climbers as a harder ascent than Everest.",
+      "The Karakoram Highway, built jointly by China and Pakistan in the 1970s (the China–Pakistan Friendship Highway), crosses here and is one of the highest paved international roads in the world. K2 — remote, storm-prone and technically hard — has a markedly higher climbing death rate than Everest and is regarded as a more dangerous 8,000 m peak.",
   },
 
   taihang: {
     seeing:
       "The Taihang Mountains run through north China as the dividing line between the Loess Plateau and the North China Plain, trending NE–SW for about 400 km. Their signature is \"steep east, gentle west\": the east slope is a line of cliffs dropping straight onto the plain, while the west slope grades up onto the plateau.",
     formation:
-      "The Taihang is a fault block of the North China platform, sharply uplifted along a fault on its eastern edge, which produced the steep east face. The upper rock is flat-lying red sandstone and limestone, cut by streams into the layered red cliffs of the \"Zhangshiyan landform.\" The high point, Xiaowutai Shan, reaches 2,882 m; Wutai Shan (near the Northern Great Mountain, Hengshan) lies in its northern section.",
+      "The Taihang is a fault block of the North China platform, sharply uplifted along a fault on its eastern edge, which produced the steep east face. The upper rock is gently dipping red quartz sandstone and limestone, cut by streams into the layered red cliffs of the \"Zhangshiyan landform.\" The main peak is usually taken to be Xiaowutai Shan in Hebei, at 2,882 m; Wutai Shan and the sacred Hengshan, both in Shanxi, are sometimes counted in the northern Taihang.",
     observation:
       "Identify the Taihang by its east face: a near-vertical red rock wall with the endless North China Plain right at its foot and almost no hill transition. The mountains hold many \"cliff-hanging roads\" and villages perched on the escarpment (Guoliang, Xiyaigou). To the west the land steps up onto the gullied Loess Plateau.",
     distinguish:
@@ -121,7 +121,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   daxinganling: {
     seeing:
-      "The Greater Khingan Range runs through north-east China, trending NE–SW, the divide between the Inner Mongolian Plateau and the Northeast (Songnen) Plain and China's largest tract of natural forest. It is not high — mostly 1,100–1,400 m — with rounded, gentle summits, but the forest is so dense the whole range reads as one dark green mass.",
+      "The Greater Khingan Range runs through north-east China, trending NE–SW, the divide between the Inner Mongolian Plateau and the Northeast (Songnen) Plain and one of China's largest state forest regions. It is not high — mostly 1,100–1,400 m — with rounded, gentle summits, but the forest is so dense the whole range reads as one dark green mass.",
     formation:
       "The Greater Khingan is a Palaeozoic fold range long worn down and then tilted and uplifted as a block: the west slope grades gently onto the Inner Mongolian Plateau, the east slope drops along a fault to the Songnen Plain — clearly asymmetric. The southern section had volcanic activity, and cones and crater lakes survive around Arxan. The high point, Huanggang Peak, reaches 2,029 m.",
     observation:
@@ -129,7 +129,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "The Greater and Lesser Khingan: the Greater Khingan is the long north–south body dividing the Inner Mongolian Plateau from the Northeast Plain; the Lesser Khingan lies to its north-east, trends NW–SE, and sits between the Songnen and Sanjiang plains, lower still. Versus Changbai Shan: Changbai is an isolated volcanic dome with a crater lake and greater height (2,691 m); the Greater Khingan is a continuous, rounded fold range.",
     concept:
-      "The Greater Khingan roughly follows China's 400 mm annual-rainfall line and is the boundary between semi-humid and semi-arid China, and between forest and steppe. To the west is the Hulunbuir grassland; to the east, farmland and forest. It is also one of China's most important \"green lungs\" and timber regions.",
+      "The Greater Khingan roughly follows China's 400 mm annual-rainfall line and is the boundary between semi-humid and semi-arid China, and between forest and steppe. To the west is the Hulunbuir grassland; to the east, farmland and forest. It is also one of China's important \"green lungs\" and timber-forest bases.",
     history:
       "The Greater Khingan is traditional hunting ground for the Oroqen and Ewenki peoples. The catastrophic fire of May 1987 burned about 1.01 million hectares, the worst forest fire since 1949, after which the state greatly changed how the forest region is managed.",
   },
@@ -138,20 +138,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "Changbai Shan sits in south-eastern Jilin on the China–North Korea border, a large dormant volcano and the source of three great rivers — the Songhua, the Tumen and the Yalu. Its summit crater lake, Heaven Lake (Tianchi), is a near-circular caldera lake at 2,189 m, one of the highest and deepest lakes in China.",
     formation:
-      "Changbai Shan is a shield volcano built by repeated Cenozoic eruptions. Its most recent large eruption, around 946 CE (the \"Millennium Eruption\"), was one of the largest on Earth in the past two thousand years. The crater then filled to form Heaven Lake; the edifice is basalt and volcanic debris, ringed by lava plateaus.",
+      "Changbai Shan is a composite stratovolcano built by repeated Cenozoic eruptions: basaltic lava first spread a broad shield-shaped plateau, then a steeper cone of trachyte and pyroclastic rock rose on top. Its most recent large eruption, around 946 CE (the \"Millennium Eruption\"), was one of the largest on Earth in the past two thousand years; the summit then collapsed into a caldera that filled to form Heaven Lake.",
     observation:
       "Amid the low, gentle hills of the north-east, Changbai Shan stands out sharply: an isolated, massive, nearly symmetrical cone, its top a jagged ring of crater wall around the deep blue circular lake. The slopes show clean vertical vegetation belts, from Korean pine forest at the foot to alpine tundra at the top.",
     distinguish:
       "Changbai versus the Greater Khingan: Changbai is an isolated volcano with a crater lake, high and symmetrical; the Greater Khingan is a continuous rounded fold range with no crater lake. Changbai's Heaven Lake versus the Tianshan's Heaven Lake: the former is a crater lake (circular, deep, at the summit), the latter a glacially scoured, moraine-dammed lake (elongated, on the mountainside).",
     concept:
-      "Changbai Shan is the model of \"volcanic landforms\": a crater lake at the centre, then lava plateaus, then volcanic-debris slopes outward. Heaven Lake is a classic crater (maar-type) lake. Though called dormant, there is still a magma chamber below, and it is an active volcano requiring long-term monitoring.",
+      "Changbai Shan is the model of \"volcanic landforms\": a crater lake at the centre, then lava plateaus, then volcanic-debris slopes outward. Heaven Lake is a classic caldera lake — formed by summit collapse after the eruption, not the low, flat maar type. Though often called dormant, there is still a magma chamber below, and it is an active volcano requiring long-term monitoring.",
     history:
-      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also a sacred mountain to the Korean people. Under the 1960 border agreement, about 54.5% of the Heaven Lake surface is on the Chinese side.",
+      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also a sacred mountain to the Korean people. Under the 1962 China–North Korea boundary treaty, about 54.5% of the Heaven Lake surface is on the Chinese side.",
   },
 
   hengduan: {
     seeing:
-      "The Hengduan Mountains, in south-west China, are the only belt of high ranges that runs north–south, \"cutting across\" (heng duan) the connection between the Tibetan Plateau and the Sichuan Basin and Yunnan–Guizhou Plateau. The Jinsha (upper Yangtze), Lancang (Mekong) and Nu (Salween) rivers are squeezed here into parallel southward courses — the \"Three Parallel Rivers\" World Natural Heritage site.",
+      "The Hengduan Mountains, in south-west China, are the country's largest belt of ranges running north–south, \"cutting across\" (heng duan) the connection between the Tibetan Plateau and the Sichuan Basin and Yunnan–Guizhou Plateau. The Jinsha (upper Yangtze), Lancang (Mekong) and Nu (Salween) rivers are squeezed here into parallel southward courses — the \"Three Parallel Rivers\" World Natural Heritage site.",
     formation:
       "The Hengduan Mountains result from the northward push of the Indian plate forcing crust to \"escape\" toward the south-east, so a series of ranges and deep gorges line up north–south. Uplift is fast and river downcutting is fierce, producing enormous relief. Gongga Shan (7,509 m) is the highest peak in Sichuan and in the Hengduan system.",
     observation:
@@ -168,7 +168,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Himalaya is the highest mountain range on Earth, a great arc more than 2,400 km long along the southern edge of the Tibetan Plateau between China and India and Nepal. Of the world's fourteen 8,000 m peaks, ten lie in or near this range. Mount Everest (Qomolangma), at 8,848.86 m, is the highest point on the planet.",
     formation:
-      "About 50 million years ago the Indian plate struck Eurasia; sea-floor sediments were squeezed and lifted into mountains, and the range is still rising about 1 cm a year. That is why marine fossils can be found near the summit of Everest. The rock is sedimentary and metamorphic.",
+      "About 50 million years ago the Indian plate struck Eurasia; sea-floor sediments were squeezed and lifted into mountains, and the range is still slowly rising, on the order of a few millimetres a year. That is why Ordovician marine fossils can be found in the limestone near the summit of Everest. The rock is sedimentary and metamorphic.",
     observation:
       "From the air the Himalaya is a row of sharp pyramid peaks forming a white arc-wall. The south slope is steep and wet — facing the Indian Ocean monsoon, cloud-wrapped, densely forested — while the north slope is gentle and dry, up on the Tibetan Plateau, clear and rain-shadowed. Everest, Lhotse and Makalu cluster along the China–Nepal border.",
     distinguish:
@@ -200,7 +200,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The Helan is a fault-block range faulted on both the east and west sides, with the central block lifted as a whole, so it is steep-sided with large relief. It is built mainly of gneiss and limestone. The high point, Aobao Geda, reaches 3,556 m.",
     observation:
-      "From the air the Helan is a north–south, grey, almost bare rock crest standing abruptly between two expanses of yellow: to the east the green Ningxia (Yinchuan) Plain, irrigated by diverted Yellow River water; to the west the deserts and gobi of Alxa. Large alluvial fans spread at the mountain mouths.",
+      "From the air the Helan is a north–south, grey rock crest standing abruptly between two expanses of yellow: to the east the green Ningxia (Yinchuan) Plain, irrigated by diverted Yellow River water; to the west the deserts and gobi of Alxa. The lower slopes are bare rock, while shaded slopes at middle elevations carry stands of Qinghai spruce. Large alluvial fans spread at the mountain mouths.",
     distinguish:
       "The Helan versus the Liupan Mountains (both in Ningxia): the Helan is in the north, north–south, arid bare rock, blocking sand and wind; the Liupan is in the south, also north–south but wetter and forested, the divide between the Wei and Jing rivers. Versus the Yin Shan: both are boundaries between monsoon and non-monsoon, farming and herding, but the Yin Shan runs east–west across central Inner Mongolia.",
     concept:
