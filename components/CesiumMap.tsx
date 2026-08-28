@@ -517,7 +517,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT,
           orientation: {
             heading: 0,
-            pitch: Cesium.Math.toRadians(-30),
+            // 高空俯视整片区域（-30° 会看向地平线 / 太空）
+            pitch: Cesium.Math.toRadians(-78),
             roll: 0,
           },
         });

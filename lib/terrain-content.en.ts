@@ -528,4 +528,275 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Taiwan has been Chinese territory since ancient times; Sun Quan of the Three Kingdoms and Emperor Yang of Sui sent people there, and the Yuan set up the Penghu Inspectorate. It became a province in 1885. After the Treaty of Shimonoseki it was occupied by Japan, and it returned to China in 1945 after victory in the war of resistance.",
   },
+
+  // ================= AUSTRALIA =================
+  "great-dividing-range": {
+    seeing:
+      "The Great Dividing Range runs more than 3,500 km down the eastern edge of Australia, from far north Queensland through New South Wales and Victoria — the third-longest land-based range on Earth. It is Australia's main watershed: rivers on the east flow a short way to the Pacific, rivers on the west drain inland toward the Murray–Darling. From the air it reads as a long, low, forested rampart set back from the coast.",
+    formation:
+      "Despite the name, it is not a single alpine chain but a broad belt of plateaus, escarpments and low ranges — the uplifted and dissected eastern margin of the continent, worn down over more than 100 million years. Most of it is 300–1,500 m; the highest ground is in the Australian Alps at its southern end. Eastward-flowing rivers have cut deep gorges into its seaward side.",
+    observation:
+      "The clearest feature is the eastern escarpment: a step where the tableland breaks away toward the coastal plain, often with waterfalls where rivers pour over the edge. West of the crest the land tilts gently down into dry inland plains; east of it, a narrow green coastal strip holds most of Australia's people. There is no line of snow peaks — it is a rolling, eucalypt-covered upland.",
+    distinguish:
+      "Unlike the Andes or the Himalaya, the Great Dividing Range is old, low and passive — no active mountain-building, few earthquakes. Compared with the Australian Alps (its highest section): the Alps hold snow in winter and true alpine country; the rest of the range does not. It is a divide by drainage, not by climate.",
+    concept:
+      "\"Range\" here means a continental drainage divide, not a wall of peaks. Its importance is hydrological: it separates the well-watered east coast from the arid interior, and its western slopes feed the Murray–Darling, the basin that grows much of Australia's food. Early colonists were penned to the coast for 25 years until a route through the Blue Mountains escarpment was found in 1813.",
+    history:
+      "For tens of thousands of years the range's passes and river valleys were travel and trade routes for Aboriginal nations. The 1813 crossing of the Blue Mountains opened the inland to European settlement. Today the range carries most of eastern Australia's national parks, catchments and hill towns.",
+  },
+
+  "australian-alps": {
+    seeing:
+      "The Australian Alps are the highest part of the continent, straddling the New South Wales–Victoria border at the southern end of the Great Dividing Range. Mount Kosciuszko, at 2,228 m, is the highest point in mainland Australia. This is the only substantial area of the country that holds a reliable winter snowpack.",
+    formation:
+      "The Alps are an uplifted block of very old rock, planed nearly flat and then raised — which is why the summit area is a broad, gently rounded plateau rather than jagged peaks. Ice-age glaciers were small here, but they left cirques and moraine-dammed lakes near Kosciuszko, the only glacial lakes on the Australian mainland.",
+    observation:
+      "From the air the high country looks like a rolling, treeless upland — alpine herbfield and snow gum woodland — not a spiky range. In winter it is white; in summer, tawny gold with dark bands of forest in the valleys. The Snowy, Murray and Murrumbidgee rivers all rise here.",
+    distinguish:
+      "Against the European Alps or New Zealand's Southern Alps, the Australian Alps are far lower, older and more subdued — rounded summits, no permanent ice, no sharp relief. Against the rest of the Great Dividing Range, this is the one section with genuine alpine climate and vegetation.",
+    concept:
+      "\"Alps\" here is about climate and vegetation zones, not altitude in the Swiss sense: above roughly 1,800 m the trees stop and true alpine plant communities take over — a rare environment on a hot, flat continent. The snowpack also matters economically: meltwater feeds the Snowy Mountains Scheme, a major hydro-electric and irrigation system.",
+    history:
+      "The high country is the land of the Ngarigo, Walgalu and other peoples, who travelled up in summer to feast on Bogong moths. Cattle grazing ran from the 1830s until it was largely ended to protect the fragile catchments. The Snowy Mountains Scheme (1949–1974) reshaped the region's rivers.",
+  },
+
+  "macdonnell-ranges": {
+    seeing:
+      "The MacDonnell Ranges run east–west across the centre of Australia for about 640 km, with Alice Springs sitting in a gap near their middle. They are a set of sharp parallel ridges rising a few hundred metres above the surrounding desert plain, cut through by dramatic gorges. Mount Zeil (1,531 m) is the highest peak in the Northern Territory.",
+    formation:
+      "The ridges are the upturned edges of hard quartzite beds, folded about 300–400 million years ago and then exposed as the softer rock around them eroded away. Ancient rivers, older than the ranges' present relief, kept cutting down as the land rose, slicing the narrow chasms of Standley Chasm, Ormiston and Glen Helen.",
+    observation:
+      "From the air the MacDonnells are unmistakable: long, straight, parallel red ridgelines running east–west across an otherwise flat landscape, like the grain in a plank. The gorges show as thin dark notches; permanent waterholes in them are green dots. The colour is deep rust-red rock against pale spinifex.",
+    distinguish:
+      "Unlike a folded belt such as the Appalachians, the MacDonnells are a single narrow ridge system in the middle of a continent, with no coast or plain beyond — desert on both sides. Compared with the Flinders Ranges to the south, the MacDonnells are straighter, more strictly east–west, and drier.",
+    concept:
+      "This is a textbook \"ridge-and-valley\" landscape produced by differential erosion: hard quartzite stands up as ridges, soft rock is stripped to valleys. The gorges are \"antecedent\" — the rivers were there first and cut down as the ridges rose. Their permanent waterholes made the ranges a lifeline across the desert.",
+    history:
+      "The ranges are Arrernte country, rich in sacred sites and Dreaming tracks. Alice Springs grew at a gap where the Overland Telegraph Line crossed in the 1870s. The Larapinta Trail now follows the range's spine for walkers.",
+  },
+
+  "flinders-ranges": {
+    seeing:
+      "The Flinders Ranges are South Australia's largest mountain range, running about 430 km north from near Adelaide into the arid outback. Their signature is Wilpena Pound (Ikara), a huge natural amphitheatre of rock ringed by cliffs. St Mary Peak, on its rim, reaches 1,171 m.",
+    formation:
+      "The rock was laid down in a sinking basin around 800–500 million years ago, then folded into a great arch. Erosion has stripped the soft core, leaving the hard, upturned rims standing as ridges — Wilpena Pound is simply the eroded centre of one such fold, enclosed by its own resistant edges. The rocks here hold some of the world's earliest animal fossils (the Ediacaran).",
+    observation:
+      "From the air Wilpena Pound looks like a footprint or a cupped hand: an oval basin walled by a continuous ridge, with a single narrow gap where a creek escapes. The ridges elsewhere run in long curved lines, following the folds. Red rock, blue-grey native pine and cypress, and the dry ochre plains around.",
+    distinguish:
+      "Compared with the strictly east–west MacDonnell Ranges, the Flinders curve and swing, following folded structure, and are somewhat wetter and more vegetated. Wilpena Pound is often mistaken for a crater or a meteorite scar; it is neither — it is an erosional basin inside a fold.",
+    concept:
+      "The Pound shows how folding plus erosion can build an enclosed basin ringed by high ground — \"high all around, low in the middle\" produced without any impact or volcano. The Flinders are also a key site for understanding the dawn of complex life: the Ediacara Hills nearby give their name to a whole geological period.",
+    history:
+      "The ranges are Adnyamathanha country; Ikara means \"meeting place.\" Pastoralists pushed in from the 1850s, and the ruins of failed wheat farms north of Goyder's Line record where farming hit the limits of the dry.",
+  },
+
+  "blue-mountains": {
+    seeing:
+      "The Blue Mountains rise just west of Sydney — not really mountains but a deeply dissected sandstone plateau, standing about 1,100 m and slashed by sheer-walled valleys. The famous view is of the Three Sisters and the Jamison Valley from the escarpment at Katoomba. The blue haze that names them comes from fine droplets of eucalyptus oil scattering light.",
+    formation:
+      "The plateau is a thick, flat-lying layer of quartz sandstone laid down by ancient rivers, later uplifted with the Great Dividing Range. Streams have since cut down through it along joints, carving canyons with vertical walls and leaving flat-topped ridges and isolated pillars like the Three Sisters where harder caps protect the rock beneath.",
+    observation:
+      "From the air the Blue Mountains are a green tableland split by a maze of cliff-lined gorges — the plateau surface stays roughly level while the valleys drop hundreds of metres straight down. Waterfalls hang off the escarpment edges. The forest is unbroken eucalypt, hazed blue in the distance.",
+    distinguish:
+      "It is a plateau, not a fold or volcanic range: the skyline is flat, and the drama is in the canyons cut into it. Compared with the Loess Plateau's soft, yellow, gullied slopes, the Blue Mountains are hard sandstone with vertical cliffs. The Grand Canyon (USA) is a closer analogue in process, at smaller scale.",
+    concept:
+      "\"Mountains\" here really means \"dissected plateau\": relief comes from downcutting into a raised flat layer, not from anything pushed up into peaks. The escarpment was also a 25-year barrier to the early Sydney colony — the ridge-and-canyon maze had no easy through route until 1813.",
+    history:
+      "The area is the country of the Gundungurra and Darug peoples. The 1813 crossing by Blaxland, Lawson and Wentworth opened the western plains to settlement. The Greater Blue Mountains was inscribed as World Heritage in 2000 for its eucalypt diversity.",
+  },
+
+  pilbara: {
+    seeing:
+      "The Pilbara is a vast, ancient, iron-rich region of north-western Australia. Its heart is the Hamersley Range, whose banded rocks are cut by the deep red gorges of Karijini National Park; Mount Meharry (1,249 m) is the highest point in Western Australia. This is one of the oldest, most stable pieces of land on the planet — and the source of most of Australia's iron ore.",
+    formation:
+      "The Pilbara craton is over 3 billion years old. Its famous banded iron formations formed on an early sea floor 2.5 billion years ago, when the first photosynthetic microbes released oxygen that reacted with dissolved iron and settled out in layers. Later uplift and river erosion sliced the Karijini gorges into these iron-hard beds.",
+    observation:
+      "From the air the Pilbara is deep rust-red rock and spinifex, with the Hamersley Range as a broad dark upland. The gorges are narrow slots of red-and-blue banded rock hundreds of metres deep, with permanent green pools. Enormous open-cut iron mines and dead-straight ore railways stand out as pale scars.",
+    distinguish:
+      "Unlike a young alpine range, the Pilbara has almost no tectonic relief — it is an eroded plateau on ancient crust. Its gorges resemble those of the MacDonnell Ranges but are cut into iron formation rather than quartzite, giving the striking layered red-and-blue walls.",
+    concept:
+      "The Pilbara is a window into the early Earth: its stromatolite fossils are among the oldest evidence of life (about 3.5 billion years), and its banded iron formations record the \"Great Oxidation\" of the atmosphere. It also shows how the oldest, most stable continental cores (\"cratons\") survive as low, worn-down land, not high mountains.",
+    history:
+      "The Pilbara is home to many Aboriginal groups; Murujuga (the Burrup Peninsula) holds over a million petroglyphs, one of the world's densest rock-art sites. Large-scale iron mining began in the 1960s and now drives much of Australia's export economy.",
+  },
+
+  kimberley: {
+    seeing:
+      "The Kimberley is a remote sandstone plateau in Australia's far north-west, about the size of Germany, with a deeply indented coast of tidal gorges and a monsoon climate. Its best-known feature is the Bungle Bungle Range in Purnululu — a maze of orange-and-grey banded beehive domes. The tides here are among the largest in the world, over 10 m.",
+    formation:
+      "The plateau is very old, flat-lying sandstone, dissected by rivers into gorges and mesas. The Bungle Bungles' domes are what remains after weathering along a grid of vertical cracks in the sandstone; the grey bands are a thin skin of cyanobacteria protecting the softer, orange, iron-stained layers between more clay-rich grey bands. The huge tides drown the river mouths, making \"horizontal waterfalls\" where water is forced through narrow gaps.",
+    observation:
+      "From the air the Kimberley is red-and-black rock, savanna woodland, and a coast that looks bitten out — long fjord-like inlets, reefs and islands. Purnululu's beehive domes cluster like a hive; Mitchell Falls steps down a tiered gorge. In the wet season the rivers flood brown and huge.",
+    distinguish:
+      "Compared with the Blue Mountains (also a sandstone plateau), the Kimberley is tropical, monsoonal, and coastal, with tidal gorges the Blue Mountains lack. The Bungle Bungles are sometimes taken for wind-sculpted dunes; they are solid rock, shaped by water and biology along joints.",
+    concept:
+      "The banded domes are a rare case of biology shaping a landform: the dark stripes are living cyanobacterial crust that armours the rock. The plateau also shows \"antecedent drainage\" — rivers older than the present relief, cutting gorges as the land rose. The giant tides come from the shape of the continental shelf funnelling and amplifying the tidal wave.",
+    history:
+      "The Kimberley holds Gwion Gwion and Wandjina rock art, some of the oldest figurative art known. It was one of the last parts of the continent settled by Europeans, from the 1880s, and remains sparsely populated, with large Aboriginal-owned lands.",
+  },
+
+  "simpson-desert": {
+    seeing:
+      "The Simpson Desert covers about 176,000 km² of central Australia, spanning three states. It is famous for its dunes: more than 1,100 parallel sand ridges running NNW–SSE, some over 200 km long without a break — the longest parallel dunes on Earth. \"Big Red,\" near Birdsville, is the best-known.",
+    formation:
+      "The sand was carried in by rivers from the surrounding ranges and then reworked by the prevailing south-easterly winds into long, straight ridges that all line up with the wind. The dune crests still shift, but the flanks are held by spinifex and other plants, so the pattern is stable. Clay pans and salt lakes lie in the swales between ridges.",
+    observation:
+      "From the air the Simpson is one of the most orderly landscapes on the planet: endless parallel red lines, evenly spaced, all pointing the same way, to the horizon. After rare rain the swales turn green and the claypans fill silver. The dunes are red where iron-stained, paler where fresh sand is exposed on the crests.",
+    distinguish:
+      "Against the Taklamakan's shifting crescent dunes, the Simpson's dunes are mostly fixed linear ridges, vegetated on their flanks, set by a steady wind. Against the Great Victoria Desert to the west, the Simpson has far more regular, longer, more continuous dunes.",
+    concept:
+      "Linear (longitudinal) dunes form where sand is limited and the wind blows from a consistent direction — the ridges grow parallel to the net wind, not across it. The Simpson is the classic example. Its very regularity is the point: it records thousands of years of one prevailing wind.",
+    history:
+      "The desert is Wangkangurru and other peoples' country; they survived here using \"mikiri,\" hand-dug wells in the swales. It was the last major Australian desert crossed by Europeans (1936, then by vehicle in 1962). Today it is a national park and a four-wheel-drive destination.",
+  },
+
+  "great-victoria-desert": {
+    seeing:
+      "The Great Victoria Desert is the largest desert in Australia, about 350,000 km², sprawling across Western Australia and South Australia. It is a mix of long sand dunes, gravel plains and dry salt lakes, sparsely covered with spinifex, mulga and desert oak. It is one of the least-populated regions on Earth.",
+    formation:
+      "The desert sits on very old, flat, weathered crust, blanketed by wind-blown sand and ancient river deposits. Its linear dunes, like the Simpson's, were built and aligned by prevailing winds, but they are lower, more broken and more vegetated. Chains of salt lakes mark the courses of rivers that no longer flow.",
+    observation:
+      "From the air it is a subtle, mottled landscape rather than a sea of dunes — patchy scrub, reddish sand, pale salt pans, low ridges — stretching unbroken to the horizon in every direction. There are almost no roads, towns or landmarks.",
+    distinguish:
+      "Unlike the Simpson (dominated by very regular, long dunes) or the Nullarbor (flat, treeless limestone), the Great Victoria is a varied, scrubby desert with irregular dunes and no single strong pattern. It is bigger than any of them.",
+    concept:
+      "\"Desert\" here is defined by aridity, not by sand seas: much of the Great Victoria is vegetated. It illustrates that Australia's deserts are mostly old, stable, and only partly sandy — the continent is dry because it sits under the subtropical high-pressure belt, far from moist air.",
+    history:
+      "It is the country of the Anangu, Pila Nguru (\"Spinifex People\") and others, some of whom lived a traditional desert life into the 1980s. Part of it was used for British nuclear tests at Maralinga in the 1950s and 1960s, with lasting harm to Aboriginal communities.",
+  },
+
+  "nullarbor-plain": {
+    seeing:
+      "The Nullarbor is a vast, flat, treeless plain on the southern edge of Australia — its name is Latin-derived for \"no trees.\" It is the world's largest single slab of limestone, about 200,000 km², and it ends abruptly at the Bunda Cliffs, which drop straight into the Great Australian Bight for hundreds of kilometres.",
+    formation:
+      "The limestone formed on a shallow sea floor 15–40 million years ago and was lifted, almost perfectly flat, above the sea. Rain sinks straight into it, so there are no surface rivers — instead the rock is riddled with caves, sinkholes and blowholes. The southern edge has been trimmed back by the ocean into the sheer Bunda Cliffs.",
+    observation:
+      "From the air the Nullarbor is astonishingly featureless — a pale, level plain with saltbush and bluebush but no trees, running dead flat to the horizon. The one dramatic line is the coastal cliff, where the plain simply stops and the Southern Ocean begins. The Trans-Australian Railway crosses it in a 478 km dead-straight stretch, the longest in the world.",
+    distinguish:
+      "Unlike a sandy desert, the Nullarbor is bare rock and thin soil, not dunes. Compared with the Yunnan–Guizhou Plateau (also limestone karst), the Nullarbor is flat and dry with underground caves but no peak forest — arid karst rather than humid karst.",
+    concept:
+      "This is karst — limestone dissolved by water — but arid karst: the drainage is all underground, so the surface stays a featureless plain while huge caves develop below. The flatness records how gently and evenly the sea floor was lifted. \"Nullarbor\" also disproves a common assumption that deserts must be sandy.",
+    history:
+      "The plain is Mirning and Wangai country, with songlines running along the coast. Edward John Eyre made the first recorded European crossing in 1841, nearly dying of thirst. The railway (1917) and later the Eyre Highway made it a crossing point rather than a barrier.",
+  },
+
+  "great-artesian-basin": {
+    seeing:
+      "The Great Artesian Basin is not a landform you can see as a shape — it is a vast underground reservoir of water beneath about one-fifth of Australia, roughly 1.7 million km². Rain that fell on the eastern highlands hundreds of thousands to a million years ago slowly seeps through porous rock and emerges, sometimes hot, at natural springs and bores far out in the dry inland.",
+    formation:
+      "Layers of water-bearing sandstone were laid down in a shallow sea and swamps 100–250 million years ago, then buried and tilted, with the porous layers sandwiched between impermeable clays. Water enters where the sandstone outcrops along the Great Dividing Range, is trapped under pressure, and rises on its own wherever a bore or fault reaches the aquifer — hence \"artesian.\"",
+    observation:
+      "On the surface you see the basin only indirectly: mound springs — low cones of minerals and green wetland built by water pushing up in the middle of gibber desert — and the old free-flowing bores that turned the country around them into channels of reeds. From the air these are bright anomalies in a bare landscape.",
+    distinguish:
+      "Unlike the Tarim or Sichuan basins, which are topographic hollows ringed by mountains, the Great Artesian Basin is defined by geology and groundwater, not by shape — the ground above it is mostly flat plain. Its \"low point\" is underground.",
+    concept:
+      "\"Basin\" here is a geological structure: a downwarp holding tilted, layered rock, where a porous aquifer is confined between seals so the water is under pressure. It made pastoral settlement of arid inland Australia possible after the 1870s. Over-tapping dropped the pressure, and capping wild bores is now a major conservation effort.",
+    history:
+      "For Aboriginal peoples the mound springs were reliable water and important sites on trade routes across the desert. The first flowing bore was drilled in 1878; within decades thousands of uncontrolled bores were wasting water, and the artesian pressure has been falling ever since.",
+  },
+
+  "lake-eyre": {
+    seeing:
+      "Kati Thanda–Lake Eyre, in the South Australian outback, is the lowest point in Australia — its floor lies about 15 m below sea level. It is the country's largest lake, but it is usually a blinding white salt pan; it fills completely only a few times a century, when monsoon rains far to the north drain down into it.",
+    formation:
+      "The lake sits in a large, low, closed basin with no outlet to the sea. Rivers from Queensland — Cooper Creek, the Diamantina — carry occasional floods hundreds of kilometres across the desert into it. The water then evaporates entirely, leaving its dissolved salt behind, so a thick salt crust has built up over tens of thousands of years.",
+    observation:
+      "From the air, dry, it is a dead-flat, glaring white sheet ringed by red dunes and gibber plain. When it floods it becomes a huge inland sea, pink and green with algae and brine shrimp, drawing enormous flocks of waterbirds within weeks — one of the great boom-and-bust spectacles on Earth.",
+    distinguish:
+      "Like Qinghai Lake it is an internal-drainage salt lake, but Lake Eyre is far more extreme: it is below sea level, and it is dry most of the time rather than permanently full. The Turpan Basin's Lake Aydingkol is a close analogue — both are the salt floor of a below-sea-level basin.",
+    concept:
+      "Lake Eyre is the endpoint of an entire internal-drainage system: whatever water reaches it cannot leave except by evaporation, so salt accumulates and the lake is normally a playa (dry salt pan). Its rare fillings depend on rain a thousand kilometres away, which is why it is a barometer of the northern monsoon.",
+    history:
+      "The lake is central to the traditions of the Arabana people, who hold native title over it; \"Kati Thanda\" is their name. Donald Campbell set a world land-speed record on the dry lakebed in 1964. Its floods are now closely tracked for the birdlife they trigger.",
+  },
+
+  uluru: {
+    seeing:
+      "Uluṟu is a single massive block of sandstone rising 348 m out of the flat desert of central Australia, about 9 km around the base. It is one of the largest exposed rocks in the world and the best-known natural landmark in Australia. To its Anangu traditional owners it is a living cultural landscape, dense with law and story.",
+    formation:
+      "Uluṟu is the tilted, upturned edge of a thick bed of hard sandstone (arkose), laid down by rivers about 550 million years ago, then folded almost vertical and buried. As the softer surrounding rock eroded away over hundreds of millions of years, this resistant slab was left standing — most of it is still underground. Its surface is grey; the famous red is a thin skin of iron oxide.",
+    observation:
+      "From the air Uluṟu is an isolated, smooth, elongated dome with steep sides and parallel grooves running down its flanks, marking the near-vertical rock layers. It glows deep red at sunrise and sunset because low-angle light passes through more dust and air. Waterholes and shady gorges hide at its base.",
+    distinguish:
+      "Uluṟu is an inselberg — an \"island mountain\" — not a plateau or a volcano. Nearby Kata Tjuṯa is made of coarse conglomerate and forms many separate domes, whereas Uluṟu is one continuous block of fine sandstone. It is not a meteorite and not hollow.",
+    concept:
+      "An inselberg is what is left when erosion strips a plain but a body of especially hard rock resists and stands proud. Uluṟu's near-vertical layering — you can see the bedding running up its sides — shows how far the rock has been tilted from its original flat-lying position.",
+    history:
+      "Uluṟu has been a focus of Anangu life and ceremony for tens of thousands of years. It was returned to its traditional owners in 1985 and is jointly managed as a national park. Climbing the rock was permanently closed in 2019 at the owners' request.",
+  },
+
+  "kata-tjuta": {
+    seeing:
+      "Kata Tjuṯa (\"many heads\"), also called the Olgas, is a cluster of 36 steep-sided rock domes rising from the desert about 30 km west of Uluṟu. The tallest, Mount Olga, stands about 546 m above the plain — higher than Uluṟu. Deep, sheer-walled gorges run between the domes.",
+    formation:
+      "Kata Tjuṯa is made of conglomerate — pebbles and boulders of granite and basalt cemented in sandstone — deposited by fast rivers pouring off a mountain range that once stood to the south, around 550 million years ago. Weathering has since worked along cracks in this coarse rock, rounding it into separate domes rather than one block.",
+    observation:
+      "From the air Kata Tjuṯa looks like a group of giant red loaves or knuckles set close together, with dark chasms between them — the Valley of the Winds threading through the middle. The rock surface is knobbly with embedded cobbles, unlike Uluṟu's smoother sandstone.",
+    distinguish:
+      "Uluṟu and Kata Tjuṯa share an origin — both are the eroded remains of sediment shed off the same vanished mountains — but Uluṟu is fine sandstone tilted almost vertical and eroded into one mass, while Kata Tjuṯa is coarse conglomerate, less steeply tilted, broken into many domes.",
+    concept:
+      "The pair is a lesson in how rock type controls landform: same age, same setting, different sediment — and one becomes a single monolith, the other a field of domes. The pebbles in Kata Tjuṯa's rock are direct evidence of the ancient mountains that supplied them.",
+    history:
+      "Kata Tjuṯa is a men's sacred site of deep importance to Anangu, and much of its detailed story is restricted. It lies within Uluṟu-Kata Tjuṯa National Park, World Heritage-listed for both its geology and its living Aboriginal culture.",
+  },
+
+  "great-barrier-reef": {
+    seeing:
+      "The Great Barrier Reef stretches about 2,300 km along the north-east coast of Australia — the largest coral reef system in the world and the largest structure built by living organisms. It is made of roughly 3,000 individual reefs and 900 islands, and is visible from space.",
+    formation:
+      "The reef is built by tiny coral animals that grow their skeletons on the remains of earlier corals, over thousands of years, in warm, clear, shallow water. The present reef has grown since the last ice age, as rising seas flooded a former coastal plain; it sits on the foundations of much older reefs. It runs parallel to the coast along the edge of the continental shelf.",
+    observation:
+      "From the air the reef is a broken ribbon of turquoise and jade set in deep blue, following the coast far offshore — individual reefs show as pale patches, some ring-shaped around lagoons, with sand cays as bright dots. Between the reef and the mainland lies a calmer, shallower lagoon.",
+    distinguish:
+      "This is a barrier reef — separated from the shore by a wide lagoon and following the shelf edge — as opposed to a fringing reef attached to the coast, or an atoll ringing a sunken island. It is a biological structure, not rock uplifted by earth movements.",
+    concept:
+      "A reef is a landform made by life: the coral framework is the accumulated skeleton of colonial animals, and it can only build where the water is warm, clear and shallow enough for the corals' symbiotic algae to photosynthesise. That makes reefs acutely sensitive to warming and murky water — mass \"bleaching\" events have hit the reef repeatedly since the 1990s.",
+    history:
+      "Sea Country here has been central to the lives of Aboriginal and Torres Strait Islander peoples for millennia. James Cook's Endeavour ran aground on the reef in 1770. It became a marine park in 1975 and World Heritage in 1981, and is now a focus of global concern over climate change.",
+  },
+
+  "twelve-apostles": {
+    seeing:
+      "The Twelve Apostles are a group of tall limestone stacks standing in the Southern Ocean just off the Great Ocean Road in Victoria. They rise up to about 45 m out of the surf, a short way from sheer coastal cliffs. Despite the name there were never twelve; today about seven remain standing.",
+    formation:
+      "The cliffs are soft limestone, laid down on a sea floor 10–20 million years ago. The Southern Ocean's waves attack the base of the cliff, cutting caves, then arches, then — when an arch collapses — leaving an isolated pillar, or stack. The stacks are slowly undercut in turn and fall; one dropped in 2005. New ones are being cut from the retreating cliff.",
+    observation:
+      "From the air the coast is a straight line of yellow cliffs with the stacks standing just offshore, wave trains wrapping around them, and the flat green farmland running right to the cliff edge. Gorges, blowholes and half-collapsed arches (London Bridge, the Grotto) punctuate the cliff line.",
+    distinguish:
+      "These are sea stacks — erosional remnants of a retreating cliff — not reefs, not volcanic plugs, not deposited features. The process is the same one that made chalk stacks like the Old Man of Hoy, in softer, younger rock.",
+    concept:
+      "Sea stacks record coastal erosion in progress: cliff → cave → arch → stack → stump. The \"Twelve Apostles\" are a snapshot of a coastline eating landward at roughly 2 cm a year. The number will keep changing as old stacks fall and new ones are isolated.",
+    history:
+      "This is the Sea Country of the Eastern Maar people. The stacks were long known as the \"Sow and Piglets\"; the grander name was adopted for tourism in the 1920s. The Great Ocean Road, built by returned WWI soldiers, made the coast accessible.",
+  },
+
+  tasmania: {
+    seeing:
+      "Tasmania is Australia's island state, about 240 km south of the mainland across Bass Strait. It is small but mountainous and wet, with a rugged, glacier-carved western wilderness, cool temperate rainforest, and a jagged coastline. Nearly half the island is national park or reserve.",
+    formation:
+      "Tasmania is a piece of continental crust that was joined to the mainland until rising seas flooded Bass Strait about 12,000 years ago. Much of its high country is capped by dolerite, a hard volcanic rock that forms columned cliffs and boulder fields. Ice-age glaciers scoured the west, gouging U-shaped valleys, cirques and hundreds of lakes.",
+    observation:
+      "From the air western Tasmania is a tangle of sharp quartzite ridges, dark rainforest, buttongrass moorland and lakes, often under cloud. The centre has the dolerite plateau and peaks like Cradle Mountain; the east is drier, gentler farmland. The coast is deeply indented with bays and islands.",
+    distinguish:
+      "Like Hainan and Taiwan, Tasmania is a continental island cut off by rising sea level — its rocks and (former) wildlife are mainland stock. Unlike them it is cool, wet and heavily glaciated, with landforms closer to New Zealand's South Island than to tropical China.",
+    concept:
+      "Tasmania shows what glaciation does to a landscape even at modest altitude: at these latitudes ice-age glaciers reached low, leaving lake-filled cirques and troughs across the highlands. Its isolation also preserved species lost on the mainland — it was the last stronghold of the thylacine.",
+    history:
+      "Tasmanian Aboriginal people lived on the island for tens of thousands of years, cut off after the land bridge drowned; colonisation from 1803 was catastrophic for them. The Tasmanian Wilderness World Heritage Area, secured after the Franklin Dam campaign of the early 1980s, covers about a fifth of the state.",
+  },
+
+  "murray-darling": {
+    seeing:
+      "The Murray–Darling is Australia's largest river system, draining about one-seventh of the continent across four states. The Murray runs about 2,500 km and the Darling about 2,700 km; they meet at Wentworth in far western New South Wales and reach the sea in South Australia. It is the country's most important farming region — and its most fought-over water.",
+    formation:
+      "The rivers flow across the Murray Basin, a very large, very flat lowland floored by river sediments. Because the gradient is so gentle, the Murray winds in tight meanders, cutting off billabongs (oxbow lakes), and the Darling can take weeks to move a flood pulse downstream. The system ends in the Coorong lagoon and a set of barrages at the Murray Mouth.",
+    observation:
+      "From the air the rivers are dark, hugely sinuous green lines — river red gum forest tracing every bend — winding across pale, dead-flat plains, with old cut-off loops as crescent lakes alongside. In dry years the channels shrink to strings of pools; in floods the water spreads for tens of kilometres.",
+    distinguish:
+      "Unlike the Yangtze or the Yellow River, the Murray–Darling carries little water for its size — much of its catchment is arid, and a lot of the flow never reaches the sea. Its rhythm is boom-and-bust, driven by episodic inland rain, more like an outback creek scaled up than a monsoon river.",
+    concept:
+      "The system shows what a very low gradient does to a river: extreme meandering, slow flood travel, and heavy reliance on floodplain wetlands. It also illustrates over-allocation — more water was licensed for irrigation than the rivers reliably carry, and balancing farms, towns and the environment is the point of the Murray–Darling Basin Plan.",
+    history:
+      "The rivers were travel routes and rich food sources for dozens of Aboriginal nations, whose fish traps and scarred canoe trees line the banks. Paddle steamers carried wool and supplies from the 1850s. Water sharing between the states has been disputed since Federation and remains so.",
+  },
 };

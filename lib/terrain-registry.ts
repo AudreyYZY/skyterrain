@@ -1449,6 +1449,237 @@ const TAIWAN: TerrainEntry = {
 };
 
 // ============================================================
+// 澳大利亚（regionId: "australia"）
+// 坐标据 Geoscience Australia / Parks Australia / 地名委员会
+// ============================================================
+
+const GREAT_DIVIDING_RANGE: TerrainEntry = {
+  id: "great-dividing-range",
+  nameZh: "大分水岭",
+  nameEn: "Great Dividing Range",
+  category: "mountain_system",
+  regionId: "australia",
+  landmark: { name: "新英格兰断崖", lon: 152.4, lat: -30.0, elevation: 1300, kind: "escarpment" },
+  bbox: [144.5, -37.5, 153.0, -16.0],
+  axis: [[145.5, -37.0], [145.5, -17.0]],
+  viewFrom: 90, // 相机在东侧海岸一侧，看陡峭的东坡断崖
+  label: { lon: 151.5, lat: -31.5, rotation: -78 },
+  source: "大分水岭沿澳大利亚东缘 ~3500km；锚点取新英格兰台地东缘断崖",
+};
+
+const AUSTRALIAN_ALPS: TerrainEntry = {
+  id: "australian-alps",
+  nameZh: "澳大利亚阿尔卑斯山脉",
+  nameEn: "Australian Alps",
+  category: "mountain_system",
+  regionId: "australia",
+  landmark: { name: "科修斯科山", lon: 148.263, lat: -36.456, elevation: 2228, kind: "peak" },
+  bbox: [146.0, -37.5, 149.3, -35.3],
+  axis: [[147.0, -37.2], [148.6, -35.6]],
+  label: { lon: 148.3, lat: -36.6, rotation: -30 },
+  source: "科修斯科山 2228m 为澳大利亚大陆最高峰（Geoscience Australia）",
+};
+
+const MACDONNELL_RANGES: TerrainEntry = {
+  id: "macdonnell-ranges",
+  nameZh: "麦克唐奈山脉",
+  nameEn: "MacDonnell Ranges",
+  category: "mountain_system",
+  regionId: "australia",
+  landmark: { name: "齐尔山", lon: 132.36, lat: -23.40, elevation: 1531, kind: "peak" },
+  bbox: [131.5, -24.2, 135.0, -23.0],
+  axis: [[131.6, -23.6], [134.8, -23.5]],
+  label: { lon: 133.0, lat: -23.5, rotation: -4 },
+  source: "齐尔山 1531m；麦克唐奈山脉横贯澳大利亚中部，爱丽斯泉一带",
+};
+
+const FLINDERS_RANGES: TerrainEntry = {
+  id: "flinders-ranges",
+  nameZh: "弗林德斯山脉",
+  nameEn: "Flinders Ranges",
+  category: "mountain_system",
+  regionId: "australia",
+  landmark: { name: "圣玛丽峰（威尔佩纳凹地）", lon: 138.59, lat: -31.53, elevation: 1171, kind: "peak" },
+  bbox: [137.8, -33.5, 139.6, -30.0],
+  axis: [[138.4, -33.3], [138.8, -30.3]],
+  label: { lon: 138.6, lat: -31.8, rotation: -80 },
+  source: "圣玛丽峰 1171m；威尔佩纳凹地（Ikara）为标志性天然圆形山围",
+};
+
+const BLUE_MOUNTAINS: TerrainEntry = {
+  id: "blue-mountains",
+  nameZh: "蓝山",
+  nameEn: "Blue Mountains",
+  category: "plateau",
+  regionId: "australia",
+  landmark: { name: "三姊妹岩（卡通巴）", lon: 150.312, lat: -33.732, elevation: 1000, kind: "escarpment" },
+  bbox: [150.0, -34.1, 150.7, -33.3],
+  label: { lon: 150.3, lat: -33.6, rotation: 0 },
+  source: "蓝山：悉尼以西的砂岩台地，深切峡谷；三姊妹岩、世界遗产区",
+};
+
+const PILBARA: TerrainEntry = {
+  id: "pilbara",
+  nameZh: "哈默斯利岭（皮尔巴拉）",
+  nameEn: "Hamersley Range (Pilbara)",
+  category: "mountain_system",
+  regionId: "australia",
+  landmark: { name: "梅哈里山", lon: 118.59, lat: -22.98, elevation: 1249, kind: "peak" },
+  bbox: [116.5, -23.8, 120.5, -21.0],
+  axis: [[116.8, -22.3], [120.2, -22.6]],
+  label: { lon: 118.3, lat: -22.4, rotation: -6 },
+  source: "梅哈里山 1249m（西澳最高）；皮尔巴拉太古宙铁矿区、卡里吉尼峡谷",
+};
+
+const KIMBERLEY: TerrainEntry = {
+  id: "kimberley",
+  nameZh: "金伯利高原",
+  nameEn: "The Kimberley",
+  category: "plateau",
+  regionId: "australia",
+  landmark: { name: "班古鲁班古鲁岭（普努鲁鲁）", lon: 128.40, lat: -17.50, elevation: 578, kind: "escarpment" },
+  bbox: [124.5, -18.7, 129.0, -14.0],
+  label: { lon: 126.5, lat: -16.5, rotation: 0 },
+  source: "普努鲁鲁 / 班古鲁班古鲁蜂窝状砂岩塔；金伯利古老砂岩高原、深切峡湾",
+};
+
+const SIMPSON_DESERT: TerrainEntry = {
+  id: "simpson-desert",
+  nameZh: "辛普森沙漠",
+  nameEn: "Simpson Desert",
+  category: "desert",
+  regionId: "australia",
+  landmark: { name: "大红丘（Nappanerica）", lon: 139.35, lat: -25.90, elevation: 40, kind: "dune" },
+  bbox: [135.5, -27.5, 140.0, -23.0],
+  axis: [[137.5, -27.0], [137.6, -23.5]],
+  label: { lon: 137.5, lat: -25.2, rotation: -88 },
+  source: "辛普森沙漠：世界最长平行沙垄，NNW–SSE 走向，最长逾200km",
+};
+
+const GREAT_VICTORIA_DESERT: TerrainEntry = {
+  id: "great-victoria-desert",
+  nameZh: "大维多利亚沙漠",
+  nameEn: "Great Victoria Desert",
+  category: "desert",
+  regionId: "australia",
+  landmark: { name: "沙漠中心", lon: 128.5, lat: -29.0, elevation: 250, kind: "dune" },
+  bbox: [124.5, -31.0, 132.5, -27.0],
+  label: { lon: 128.5, lat: -29.0, rotation: 0 },
+  source: "大维多利亚沙漠：澳大利亚最大沙漠，约35万km²，横跨西澳与南澳",
+};
+
+const NULLARBOR_PLAIN: TerrainEntry = {
+  id: "nullarbor-plain",
+  nameZh: "纳拉伯平原",
+  nameEn: "Nullarbor Plain",
+  category: "plain",
+  regionId: "australia",
+  landmark: { name: "邦达断崖（大澳大利亚湾）", lon: 130.30, lat: -31.62, elevation: 90, kind: "escarpment" },
+  bbox: [126.0, -32.3, 132.5, -30.0],
+  label: { lon: 129.5, lat: -31.0, rotation: -3 },
+  source: "纳拉伯：世界最大单块石灰岩，几乎无树；邦达断崖直落大澳大利亚湾",
+};
+
+const GREAT_ARTESIAN_BASIN: TerrainEntry = {
+  id: "great-artesian-basin",
+  nameZh: "大自流盆地",
+  nameEn: "Great Artesian Basin",
+  category: "basin",
+  regionId: "australia",
+  landmark: { name: "朗里奇（渠沟之乡）", lon: 144.25, lat: -23.44, elevation: 190, kind: "grassland" },
+  bbox: [138.0, -30.0, 148.0, -18.0],
+  label: { lon: 143.0, lat: -24.0, rotation: 0 },
+  source: "大自流盆地：世界最大最深的自流地下水盆地，占澳大利亚约1/5面积",
+};
+
+const LAKE_EYRE: TerrainEntry = {
+  id: "lake-eyre",
+  nameZh: "埃尔湖（卡蒂坦达）",
+  nameEn: "Lake Eyre (Kati Thanda)",
+  category: "lake",
+  regionId: "australia",
+  landmark: { name: "湖心", lon: 137.36, lat: -28.37, elevation: -15, kind: "salt-lake" },
+  bbox: [136.0, -29.6, 138.6, -27.4],
+  label: { lon: 137.3, lat: -28.4, rotation: 0 },
+  source: "卡蒂坦达-埃尔湖：澳大利亚最低点 -15m，最大盐湖，多数年份干涸",
+};
+
+const ULURU: TerrainEntry = {
+  id: "uluru",
+  nameZh: "乌鲁鲁（艾尔斯岩）",
+  nameEn: "Uluṟu",
+  category: "scenic",
+  regionId: "australia",
+  landmark: { name: "乌鲁鲁", lon: 131.036, lat: -25.345, elevation: 863, kind: "peak" },
+  bbox: [130.9, -25.45, 131.15, -25.24],
+  label: { lon: 131.04, lat: -25.30, rotation: 0 },
+  source: "乌鲁鲁：巨型砂岩残丘（岛山），高出周围平原约348m；原住民阿南古圣地",
+};
+
+const KATA_TJUTA: TerrainEntry = {
+  id: "kata-tjuta",
+  nameZh: "卡塔丘塔（奥尔加山）",
+  nameEn: "Kata Tjuṯa",
+  category: "scenic",
+  regionId: "australia",
+  landmark: { name: "奥尔加山", lon: 130.74, lat: -25.30, elevation: 1066, kind: "peak" },
+  bbox: [130.65, -25.40, 130.83, -25.22],
+  label: { lon: 130.74, lat: -25.28, rotation: 0 },
+  source: "卡塔丘塔：36 座砾岩圆丘，最高奥尔加山出露约546m；与乌鲁鲁同属国家公园",
+};
+
+const GREAT_BARRIER_REEF: TerrainEntry = {
+  id: "great-barrier-reef",
+  nameZh: "大堡礁",
+  nameEn: "Great Barrier Reef",
+  category: "scenic",
+  regionId: "australia",
+  landmark: { name: "凯恩斯外礁", lon: 146.2, lat: -16.5, elevation: 0, kind: "island" },
+  bbox: [143.0, -24.0, 152.0, -10.0],
+  axis: [[145.0, -22.0], [147.0, -11.5]],
+  label: { lon: 147.5, lat: -18.0, rotation: -70 },
+  source: "大堡礁：世界最大珊瑚礁系统，约2300km、3000座礁体；世界自然遗产",
+};
+
+const TWELVE_APOSTLES: TerrainEntry = {
+  id: "twelve-apostles",
+  nameZh: "十二门徒岩",
+  nameEn: "Twelve Apostles",
+  category: "scenic",
+  regionId: "australia",
+  landmark: { name: "十二门徒岩", lon: 143.104, lat: -38.665, elevation: 45, kind: "escarpment" },
+  bbox: [142.9, -38.75, 143.5, -38.55],
+  label: { lon: 143.1, lat: -38.62, rotation: 0 },
+  source: "十二门徒岩：大洋路石灰岩海蚀柱，最高约45m；波特坎贝尔国家公园",
+};
+
+const TASMANIA: TerrainEntry = {
+  id: "tasmania",
+  nameZh: "塔斯马尼亚岛",
+  nameEn: "Tasmania",
+  category: "island",
+  regionId: "australia",
+  landmark: { name: "摇篮山", lon: 145.95, lat: -41.68, elevation: 1545, kind: "island" },
+  bbox: [144.5, -43.7, 148.5, -40.6],
+  axis: [[146.0, -43.5], [147.5, -40.8]],
+  label: { lon: 146.5, lat: -42.0, rotation: 0 },
+  source: "塔斯马尼亚：岛屿州，冰川刨蚀的荒野高地；摇篮山、圣克莱尔湖",
+};
+
+const MURRAY_DARLING: TerrainEntry = {
+  id: "murray-darling",
+  nameZh: "墨累-达令河",
+  nameEn: "Murray–Darling",
+  category: "river",
+  regionId: "australia",
+  landmark: { name: "墨累河与达令河汇流处（温特沃斯）", lon: 141.92, lat: -34.11, elevation: 30, kind: "meander" },
+  bbox: [138.5, -37.0, 149.5, -25.0],
+  axis: [[149.0, -30.0], [139.5, -35.5]],
+  label: { lon: 143.5, lat: -34.0, rotation: -20 },
+  source: "墨累-达令水系：澳大利亚最大河系（>3500km），横贯东南部内陆",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -1489,6 +1720,17 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   QINGHAI_LAKE, NAMTSO, POYANG, DONGTING,
   // 全国 — 岛屿
   HAINAN, TAIWAN,
+  // ===== 澳大利亚 =====
+  GREAT_DIVIDING_RANGE, AUSTRALIAN_ALPS, MACDONNELL_RANGES, FLINDERS_RANGES,
+  PILBARA,
+  BLUE_MOUNTAINS, KIMBERLEY,
+  SIMPSON_DESERT, GREAT_VICTORIA_DESERT,
+  NULLARBOR_PLAIN,
+  GREAT_ARTESIAN_BASIN,
+  LAKE_EYRE,
+  ULURU, KATA_TJUTA, GREAT_BARRIER_REEF, TWELVE_APOSTLES,
+  TASMANIA,
+  MURRAY_DARLING,
 ];
 
 const REGISTRY_BY_ID: Map<string, TerrainEntry> = new Map(

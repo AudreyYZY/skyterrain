@@ -26,7 +26,7 @@ import {
 } from "@/lib/routes";
 import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries } from "@/lib/speech";
 import { narrationManager } from "@/lib/narration-manager";
-import { getAllTerrains, getTerrainsByCategory, getTerrainById } from "@/lib/terrain";
+import { getTerrainById } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -38,8 +38,6 @@ import {
   type Region,
 } from "@/lib/regions";
 
-const terrainGroups = getTerrainsByCategory();
-const allTerrains = getAllTerrains();
 const routes = getAllRoutes();
 
 /** Sidebar 统一分类类型 */
@@ -125,6 +123,8 @@ const ALL_FEATURES = TERRAIN_REGISTRY.map((e) => ({
   id: e.id,
   name: e.nameZh,
   type: normalizeType(e.category, e.nameZh),
+  // 区域过滤用：新疆地形归入「中国」视图
+  region: e.regionId === "xinjiang" ? "china" : e.regionId,
   terrain: getTerrainById(e.id) ?? null,                       // 新疆 json（含讲解内容）
   feature: CHINA_CORE_FEATURES.find((f) => f.id === e.id) ?? null,
 })).filter((f) => f.type !== null);
@@ -262,6 +262,7 @@ export default function ExplorerApp() {
           rotation: label.rotation,
           terrainType: label.category as any,
           nameEn: label.nameEn,
+          regionId: label.regionId,
         }
       ));
     }
@@ -359,6 +360,19 @@ export default function ExplorerApp() {
   useEffect(() => {
     warmupSpeechVoices();
   }, []);
+
+  // 地图就绪：若上次停留的区域不是中国，飞过去（INTRO_VIEW 默认对准中国）
+  const handleMapReady = useCallback(() => {
+    if (activeRegion === "china") return;
+    const region = REGIONS.find((r) => r.id === activeRegion);
+    if (!region) return;
+    mapRef.current?.flyToRegion({
+      lon: region.center.lon,
+      lat: region.center.lat,
+      height: region.center.height,
+      duration: 1.5,
+    });
+  }, [activeRegion]);
 
   /** 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用 */
   const speakLessonWithHighlight = useCallback(
@@ -802,21 +816,17 @@ export default function ExplorerApp() {
     labelManager.clearExcept(["terrain-labels"]);
   }, [stopSpeaking]);
 
-  const terrainCount = terrainGroups.reduce(
-    (n, g) => n + g.terrains.length,
-    0
-  );
-
-  /** 左侧目录分组 — 分类与地形名都按当前语言本地化 */
+  /** 左侧目录分组 — 按当前区域过滤，分类与地形名按当前语言本地化 */
   const railGroups: RailGroup[] = FEATURE_GROUPS.map((g) => ({
     type: g.type,
     label: t(CATEGORY_I18N_KEY[g.type as SidebarCategory] ?? g.label, language),
     glyph: CATEGORY_GLYPH[g.type as SidebarCategory] ?? "·",
-    items: g.features.map((f) => ({
-      id: f.id,
-      name: getTerrainName(f.name, language),
-    })),
-  }));
+    items: g.features
+      .filter((f) => f.region === activeRegion)
+      .map((f) => ({ id: f.id, name: getTerrainName(f.name, language) })),
+  })).filter((g) => g.items.length > 0);
+
+  const terrainCount = railGroups.reduce((n, g) => n + g.items.length, 0);
 
   /** 关闭讲解面板 — 停止播报并清空当前地形 */
   const closePanel = () => {
@@ -833,6 +843,7 @@ export default function ExplorerApp() {
       <div className="absolute inset-0 z-0">
         <CesiumMap
           ref={mapRef}
+          onReady={handleMapReady}
           onTerrainMode={setTerrainMode}
           onTerrainHover={setHoveredTerrainId}
         />
@@ -922,7 +933,7 @@ export default function ExplorerApp() {
         onClose={closePanel}
       />
 
-      {!showIntro && !activeTerrain && (
+      {!showIntro && !activeTerrain && activeRegion === "china" && (
         <JourneyBar
           language={language}
           routes={routes}

@@ -50,20 +50,20 @@ export const REGIONS: Region[] = [
       lat: 35.0,
       height: 8000000,      // 8,000km — 飞行高度，能看到整个中国
     },
-    terrainCount: 32,
+    terrainCount: 88,
     available: true,
   },
   {
     id: "australia",
-    name: "Australia",
+    name: "澳大利亚",
     nameEn: "Australia",
     center: {
-      lon: 135.0,
-      lat: -25.0,
-      height: 10000000,
+      lon: 134.0,
+      lat: -27.0,
+      height: 4300000,
     },
-    terrainCount: 0,
-    available: false,
+    terrainCount: 18,
+    available: true,
   },
 ];
 
