@@ -236,20 +236,27 @@ function bboxOctagon(bbox: [number, number, number, number]): [number, number][]
  * 地形区域高亮 —— hover / focus 时把该地形「整块地表」按真实起伏轻微抬起
  * （perPositionHeight：顶面跟随地形高程，侧壁 = 地块切面），保留原色（材质极淡）。
  */
-const REGION_FOCUS_CSS = "#fbbf24"; // 琥珀
-const REGION_HOVER_CSS = "#fff2d9"; // 暖白
-const REGION_LIFT_HOVER_M = 4_500; // hover 抬升高度（米）
-const REGION_LIFT_FOCUS_M = 7_000; // focus 抬升高度（米）
-const REGION_ALPHA_HOVER = 0.11; // 顶面淡染，影像仍透出；侧壁形成"地块切面"
-const REGION_ALPHA_FOCUS = 0.17;
+// 统一暖琥珀 —— hover / focus 只是强弱不同，始终一眼可辨"这是被高亮的地块"
+const REGION_CSS = "#f5b544";
+const REGION_LIFT_HOVER_M = 3_000; // hover 抬升高度（米）
+const REGION_LIFT_FOCUS_M = 5_500; // focus 抬升高度（米）
+const REGION_ALPHA_HOVER = 0.2; // 顶面染色，影像仍透出
+const REGION_ALPHA_FOCUS = 0.34;
+const REGION_RIM_ALPHA_HOVER = 0.6; // 顶面边框（亮线，俯视也看得清）
+const REGION_RIM_ALPHA_FOCUS = 0.95;
+const REGION_RIM_WIDTH = 2.5;
 
 interface RegionEntry {
   /** 贴地透明多边形 — 仅作 scene.pick 命中目标 */
   pick: import("cesium").Entity;
   /** 抬升体 — hover/focus 时升起，idle 隐藏 */
   lift: import("cesium").Entity;
+  /** 顶面亮边框 polyline —— 任意视角都能看清地块轮廓 */
+  rim: import("cesium").Entity;
   /** 轮廓环顶点经纬度 */
   ringDeg: [number, number][];
+  /** 环面积（度²，近似）—— 重叠拾取时取最小者（最具体）*/
+  areaDeg2: number;
   /** 采样前的近似地表高度（锚点海拔）*/
   landmarkElev: number;
   /** 采样后每个顶点的地表高度（米）；null = 未采样 */
@@ -259,6 +266,17 @@ interface RegionEntry {
   cur: number;
   target: number;
   state: "idle" | "hover" | "focus";
+}
+
+/** 多边形环面积（度²，shoelace，仅用于比较大小）*/
+function ringAreaDeg2(ring: [number, number][]): number {
+  let a = 0;
+  for (let i = 0, n = ring.length; i < n; i++) {
+    const [x1, y1] = ring[i]!;
+    const [x2, y2] = ring[(i + 1) % n]!;
+    a += x1 * y2 - x2 * y1;
+  }
+  return Math.abs(a) / 2;
 }
 
 /** 采样地形轮廓顶点的地表高度（懒加载，一次）*/
@@ -322,6 +340,7 @@ function tickTerrainRegions(
         r.cur = r.target;
       } else if (r.target === 0) {
         if (r.lift.show) r.lift.show = false;
+        if (r.rim.show) r.rim.show = false;
         continue;
       }
     } else {
@@ -330,26 +349,37 @@ function tickTerrainRegions(
     }
 
     if (!r.lift.show) r.lift.show = true;
+    if (!r.rim.show) r.rim.show = true;
 
     const heights = r.groundHeights ?? r.ringDeg.map(() => r.landmarkElev);
     let minH = Infinity;
     for (const h of heights) if (h < minH) minH = h;
-    const positions = r.ringDeg.map(([lon, lat], i) =>
+    // 顶面顶点（跟随地表 + 当前抬升）
+    const top = r.ringDeg.map(([lon, lat], i) =>
       Cesium.Cartesian3.fromDegrees(lon, lat, heights[i]! + r.cur)
+    );
+    // 边框略高于顶面，避免与顶面 z-fighting
+    const rimPts = r.ringDeg.map(([lon, lat], i) =>
+      Cesium.Cartesian3.fromDegrees(lon, lat, heights[i]! + r.cur + 200)
     );
 
     const maxLift = r.state === "focus" ? REGION_LIFT_FOCUS_M : REGION_LIFT_HOVER_M;
     const t = Math.min(1, Math.max(0, r.cur / maxLift));
-    const css = r.state === "focus" ? REGION_FOCUS_CSS : REGION_HOVER_CSS;
-    const alpha = (r.state === "focus" ? REGION_ALPHA_FOCUS : REGION_ALPHA_HOVER) * t;
+    const focus = r.state === "focus";
+    const fillAlpha = (focus ? REGION_ALPHA_FOCUS : REGION_ALPHA_HOVER) * Math.max(0.35, t);
+    const rimAlpha = (focus ? REGION_RIM_ALPHA_FOCUS : REGION_RIM_ALPHA_HOVER) * Math.max(0.35, t);
+    const color = Cesium.Color.fromCssColorString(REGION_CSS);
 
     const poly = r.lift.polygon!;
-    poly.hierarchy = new Cesium.ConstantProperty(new Cesium.PolygonHierarchy(positions));
+    poly.hierarchy = new Cesium.ConstantProperty(new Cesium.PolygonHierarchy(top));
     poly.perPositionHeight = new Cesium.ConstantProperty(true);
     poly.extrudedHeight = new Cesium.ConstantProperty(minH - 400);
-    poly.material = new Cesium.ColorMaterialProperty(
-      Cesium.Color.fromCssColorString(css).withAlpha(alpha)
-    );
+    poly.material = new Cesium.ColorMaterialProperty(color.withAlpha(fillAlpha));
+
+    const line = r.rim.polyline!;
+    line.positions = new Cesium.ConstantProperty(rimPts);
+    line.width = new Cesium.ConstantProperty(REGION_RIM_WIDTH);
+    line.material = new Cesium.ColorMaterialProperty(color.withAlpha(rimAlpha));
     // 不用 polygon.outline —— 会懒加载 createPolygonOutlineGeometry worker，网络异常时崩溃。
   }
   return animating;
@@ -1336,11 +1366,18 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           handler.setInputAction((movement: any) => {
             if (viewer.isDestroyed()) return;
-            const picked = viewer.scene.pick(movement.endPosition);
+            // drillPick：重叠地块里取面积最小（最具体）的那个
+            const hits = viewer.scene.drillPick(movement.endPosition, 8);
             let newHoveredId: string | null = null;
-            if (Cesium.defined(picked) && picked.id?.properties) {
-              const val = picked.id.properties?.getValue?.();
-              newHoveredId = val?.terrainId ?? null;
+            let bestArea = Infinity;
+            for (const h of hits) {
+              const tid = h?.id?.properties?.getValue?.()?.terrainId;
+              if (!tid) continue;
+              const area = terrainRegionRef.current.get(tid)?.areaDeg2 ?? Infinity;
+              if (area < bestArea) {
+                bestArea = area;
+                newHoveredId = tid;
+              }
             }
 
             if (newHoveredId !== hoveredTerrainRef.current) {
@@ -1400,10 +1437,22 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               },
               properties: { terrainId: entry.id },
             });
+            const rim = viewer.entities.add({
+              show: false,
+              polyline: {
+                positions: flat,
+                width: REGION_RIM_WIDTH,
+                material: Cesium.Color.WHITE.withAlpha(0),
+                arcType: Cesium.ArcType.GEODESIC,
+              },
+              properties: { terrainId: entry.id },
+            });
             terrainRegionRef.current.set(entry.id, {
               pick,
               lift,
+              rim,
               ringDeg: ring,
+              areaDeg2: ringAreaDeg2(ring),
               landmarkElev: entry.landmark.elevation ?? 500,
               groundHeights: null,
               sampling: false,

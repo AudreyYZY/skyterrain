@@ -132,15 +132,16 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   - `projectToScreen` 用 `EllipsoidalOccluder` 剔除地球背面的点（否则缩小看地球会堆叠）。
   - zoom ≤ 3 不显示；importance→LOD 1:1，按 zoom 分级（大陆/国家/区域/POI）逐级展开。
   - `dynamicFontSize` 随 zoom 缩放，下限 0.8。字体 `LABEL_FONT_FAMILY`（通用系统字体栈）。
-- **地形区域抬升高亮**（`CesiumMap.tsx`，每个地形两个多边形）：
-  - `pick`：贴地透明，仅作 `scene.pick` 命中目标。
+- **地形区域抬升高亮**（`CesiumMap.tsx`，每个地形三个实体）：
+  - `pick`：贴地透明多边形，仅作拾取命中目标。
   - `lift`：`perPositionHeight` 多边形，顶面**跟随真实地形高程**（首次交互时
-    `sampleTerrainMostDetailed` 采样并缓存），hover/focus 时整块 ease 抬升 ≈4.5km / 7km；
-    侧壁 = 地块切面。材质极淡（α .11 / .17，暖白 / 琥珀），保留原色。`tickTerrainRegions` rAF 推进。
+    `sampleTerrainMostDetailed` 采样并缓存），hover/focus 时整块 ease 抬升 3km / 5.5km。
+  - `rim`：顶面亮边框 polyline（定高度、非 clampToGround）——**任意视角（含俯视）都能看清地块轮廓**。
+  - 统一暖琥珀 `REGION_CSS`，hover / focus 只是强弱不同（α .20/.34，rim α .6/.95）。
   - **不要用 `polygon.outline`** —— 会懒加载 `createPolygonOutlineGeometry` worker，网络异常时崩溃。
-  - 配色/抬升高度/透明度常量在 `CesiumMap.tsx` 顶部（`REGION_*`）。
-- hover 走 `ScreenSpaceEventHandler` MOUSE_MOVE → `scene.pick` 取 `terrainId`；
-  点击/跳转走 `focusTerrain(id)`；标签同步高亮（琥珀胶囊 / 白色描边）。
+  - `tickTerrainRegions` rAF 推进；配色/高度/透明度常量在 `CesiumMap.tsx` 顶部（`REGION_*`）。
+- hover 走 `ScreenSpaceEventHandler` MOUSE_MOVE → **`scene.drillPick`**，在重叠命中的地块里
+  取 `areaDeg2` 最小（最具体）的那个；点击/跳转走 `focusTerrain(id)`。
 
 ## 语音播报
 
