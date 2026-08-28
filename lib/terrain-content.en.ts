@@ -410,9 +410,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Deserts / corridors / canyons ============
   taklamakan: {
     seeing:
-      "The Taklamakan Desert lies in the centre of the Tarim Basin, about 330,000 km² — the largest desert in China and the second-largest shifting-sand desert in the world. \"Taklamakan\" is often glossed as \"go in and you won't come out.\" Almost all of it is tall moving dunes, dune chain after dune chain.",
+      "The Taklamakan Desert lies in the centre of the Tarim Basin, about 330,000 km² — the largest desert in China and often called the second-largest shifting-sand desert in the world. The meaning of \"Taklamakan\" is disputed; it is popularly glossed as \"go in and you won't come out,\" while scholars propose \"old abandoned place\" or \"vineyard place.\" Almost all of it is tall moving dunes, dune chain after dune chain.",
     formation:
-      "The sand comes from weathered debris off the surrounding ranges, carried and piled by the wind. The basin is closed and extremely arid (under 50 mm of rain a year, and the centre gets essentially none), vegetation is minimal, and the dunes are pushed along by the wind, the tallest sand mountains reaching 100–200 m of relative height.",
+      "The sand comes from weathered debris off the surrounding ranges, carried and piled by the wind. The basin is closed and extremely arid (under 100 mm of rain a year at the edges, essentially none in the centre), vegetation is minimal, and the dunes are pushed along by the wind, the tallest sand mountains reaching 100–300 m of relative height.",
     observation:
       "From the air the Taklamakan is a pure golden-to-tan sand sea, its surface regular crescent dunes and sand ridges like frozen waves. A dead-straight road runs through the middle (the Tarim Desert Highway), flanked by narrow drip-irrigated shelterbelts. The Tarim and Hotan rivers run along the desert's edge or across it.",
     distinguish:
@@ -425,7 +425,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "hexi-corridor": {
     seeing:
-      "The Hexi Corridor, in western Gansu, is a long narrow strip of level ground, about 1,000 km long and tens to just over a hundred kilometres wide, between the Qilian Mountains and the Heli and Longshou ranges to the north. \"Hexi\" means \"west of the (Yellow) River.\" It is a corridor that links the Central Plains with the Western Regions, the single most important section of the ancient Silk Road.",
+      "The Hexi Corridor, in western Gansu, is a long narrow strip of level ground, about 1,000 km long and anywhere from a few to over a hundred kilometres wide, between the Qilian Mountains and the Heli and Longshou ranges to the north. \"Hexi\" means \"west of the (Yellow) River.\" It is a corridor that links the Central Plains with the Western Regions, the single most important section of the ancient Silk Road.",
     formation:
       "The Hexi Corridor is a string of piedmont sloping plains (alluvial fans) along the northern foot of the Qilian, built of debris carried down by Qilian snowmelt. Three inland rivers (the Shiyang, the Hei and the Shule) cross the corridor and form a chain of oases at the fan edges: Wuwei, Zhangye, Jiuquan, Dunhuang.",
     observation:
@@ -440,30 +440,30 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "yangtze-gorges": {
     seeing:
-      "The Three Gorges of the Yangtze are the great canyon where the river cuts through the Wu Shan range, from Baidicheng at Fengjie in Chongqing to Nanjinguan at Yichang in Hubei — about 190 km, made up of the Qutang, Wu and Xiling gorges with wider valleys between. It is the most rugged and magnificent stretch of the Yangtze, cliffs squeezing the river between them.",
+      "The Three Gorges of the Yangtze are the great canyon where the river cuts through the Wu Shan range, from Baidicheng at Fengjie in Chongqing to Nanjinguan at Yichang in Hubei — about 190 km, made up of the Qutang, Wu and Xiling gorges with wider valleys between. It is the most rugged stretch of the Yangtze, cliffs squeezing the river between them.",
     formation:
       "The Wu Shan is a roughly north–south fold range. The Yangtze already existed; as the Wu Shan rose, the river cut down at the same rate (the classic case in the \"antecedent river\" debate), sawing the range open into a deep trough — a beaded course of gorges alternating with open valleys.",
     observation:
-      "From the air the Three Gorges are a deep, narrow, twisting canyon cut by the Yangtze through the mountains: in the gorge sections the walls stand sheer and the river narrows; in the open-valley sections it widens out with towns and fields. The Kui Gate at the mouth of Qutang Gorge, two mountains facing off, is the most dramatic; the Three Gorges Dam is at the mouth of Xiling Gorge.",
+      "From the air the Three Gorges are a deep, narrow, twisting canyon cut by the Yangtze through the mountains: in the gorge sections the walls stand sheer, several hundred metres above the river, and the channel narrows; in the open-valley sections it widens out with towns and fields. The Kui Gate at the mouth of Qutang Gorge, two mountains facing off, is the most dramatic; the Three Gorges Dam is inside Xiling Gorge.",
     distinguish:
-      "The Three Gorges versus the Yarlung Tsangpo Grand Canyon: the Three Gorges is a V-shaped canyon cut by the Yangtze through a fold range, about a thousand metres deep, famous for ruggedness and grandeur; the Yarlung Tsangpo Grand Canyon is a horseshoe-shaped hairpin of the Yarlung Tsangpo around Namcha Barwa, with peak-to-valley relief of 5,000–6,000 m — the deepest and longest canyon in the world. Versus Tiger Leaping Gorge: Tiger Leaping Gorge is where the Jinsha cuts between the Jade Dragon and Haba snow mountains, about 3,900 m deep, deeper and narrower than the Three Gorges.",
+      "The Three Gorges versus the Yarlung Tsangpo Grand Canyon: the Three Gorges is a canyon cut by the Yangtze through a fold range, its walls several hundred metres above the river, famed for ruggedness; the Yarlung Tsangpo Grand Canyon is a horseshoe-shaped hairpin of the Yarlung Tsangpo around Namcha Barwa, with peak-to-valley relief reaching five to six thousand metres. Versus Tiger Leaping Gorge: Tiger Leaping Gorge is where the Jinsha cuts between the Jade Dragon and Haba snow mountains, about 3,900 m from river to the Jade Dragon summit, deeper and narrower than the Three Gorges.",
     concept:
       "The Three Gorges is a textbook of \"river downcutting\": it proves that as long as uplift is slow enough and the river's discharge large enough, a river can \"saw through\" a mountain. The Three Gorges Project uses the drop and the gorge terrain to build the world's largest hydropower station, and it has also changed the water and sediment rhythm downstream and the water regime of the lower lakes.",
     history:
-      "Baidicheng, Qu Yuan's hometown and Wang Zhaojun's hometown all lie along the Three Gorges; Li Bai's \"at dawn I left Baidi amid coloured clouds\" is about this stretch. The Three Gorges Project began in 1994 and was completed in 2009, involving the relocation of over a million people and a large heritage-rescue effort.",
+      "Baidicheng, Qu Yuan's hometown and Wang Zhaojun's hometown all lie along the Three Gorges; Li Bai's \"at dawn I left Baidi amid coloured clouds\" is about this stretch. The Three Gorges Project began in 1994 and its main structure was finished in 2009, involving the relocation of about 1.3 million people and a large heritage-rescue effort.",
   },
 
   "tsangpo-gorge": {
     seeing:
-      "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). It averages about 2,268 m deep, reaches 6,009 m at its deepest, and runs 504 km — the deepest and longest canyon in the world.",
+      "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the 1994 measurements of Chinese scientists it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — the deepest and longest canyon in the world.",
     formation:
       "The Yarlung Tsangpo flows west to east across the Tibetan Plateau; here it meets Namcha Barwa, a mountain rising fast, and is forced into a nearly 180° bend before cutting south through the Himalaya and off the plateau into India. The mountain rises fast and the river cuts hard, producing the extreme peak-to-valley relief.",
     observation:
-      "From the air the Yarlung Tsangpo Grand Canyon is a bottomless slot wrapped in a great loop around the snow peak of Namcha Barwa. Because Indian Ocean moisture pours up the river valley, almost every vegetation belt on Earth is stacked here, from tropical rainforest on the valley floor to snow and ice on the summit. Namcha Barwa is usually veiled in cloud — the \"shy girl peak.\"",
+      "From the air the Yarlung Tsangpo Grand Canyon is a bottomless slot wrapped in a great loop around the snow peak of Namcha Barwa. Because Indian Ocean moisture pours up the river valley, a near-complete sequence of vegetation belts is stacked here, from tropical rainforest on the valley floor to snow and ice on the summit. Namcha Barwa is usually veiled in cloud — the \"shy girl peak.\"",
     distinguish:
       "See the Three Gorges entry. What makes the Yarlung Tsangpo Grand Canyon special: it is the \"gate\" for moisture to enter the Tibetan Plateau — warm, moist air from the Indian Ocean travels north up this deep valley, making south-eastern Tibet the wettest, greenest corner of the plateau. Neither the Three Gorges nor Tiger Leaping Gorge has this moisture-carrying function.",
     concept:
-      "The Yarlung Tsangpo Grand Canyon is an extreme case of terrain–climate coupling: a deeply cut river valley becomes a moisture channel, carrying outside humidity into the closed interior of the plateau, so the valley gets two or three thousand millimetres of rain a year while the plateau interior gets only one or two hundred. Its hydropower potential also ranks first among the world's great rivers.",
+      "The Yarlung Tsangpo Grand Canyon is an extreme case of terrain–climate coupling: a deeply cut river valley becomes a moisture channel, carrying outside humidity into the closed interior of the plateau, so the valley gets two or three thousand millimetres of rain a year while the plateau interior gets only one or two hundred. Around the Great Bend the river drops some two thousand metres in a short distance, giving it enormous hydropower potential.",
     history:
       "Downstream of the canyon the Yarlung Tsangpo enters India and becomes the Brahmaputra, finally joining the Ganges and emptying into the Bay of Bengal. The core of the canyon is almost untrodden; a Chinese scientific team first traversed the entire canyon on foot only in 1998.",
   },
@@ -503,7 +503,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "Hainan Island is China's second-largest island (after Taiwan), in the northern South China Sea, facing the Leizhou Peninsula of Guangdong across the Qiongzhou Strait. It is China's only fully tropical island province, shaped like an oval \"bun\": high in the middle, low around the edges.",
     formation:
-      "Hainan was once connected to the mainland; the Qiongzhou Strait later dropped along faults and the sea flooded in, making it an island. The centre is mountains of granite and metamorphic rock (Wuzhi Shan, 1,867 m; Yinggeling), grading outward through hills, terraces and plains to the coast. The north has extensive basalt volcanic plateaus and craters (Huguangyan, Ma'anling volcano).",
+      "Hainan was once connected to the mainland; the Qiongzhou Strait later dropped along faults and the sea flooded in, making it an island. The centre is mountains of granite and metamorphic rock (Wuzhi Shan, 1,867 m; Yinggeling), grading outward through hills, terraces and plains to the coast. The north around Haikou has extensive basalt volcanic plateaus and craters (the Shishan volcanic cluster, Ma'anling volcano).",
     observation:
       "From the air Hainan is a ring structure: deep green mountains at the centre (tropical rainforest), a belt of pale-green terraces and farmland around them (rubber, coconut, tropical fruit), then white beaches and coral reefs at the edge. The north around Haikou is flat, and dark lava plateaus can be seen.",
     distinguish:
@@ -516,13 +516,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   taiwan: {
     seeing:
-      "Taiwan is China's largest island, off the south-east of the mainland at the western edge of the Pacific, facing Fujian across the Taiwan Strait. It is a long, narrow, mountainous island: a Central Range runs the length of it from north to south, splitting the island into an eastern and a western half, and the main summit, Yushan, at 3,952 m, is the highest point in eastern China and on the western Pacific island arc.",
+      "Taiwan is China's largest island, off the south-east of the mainland at the western edge of the Pacific, facing Fujian across the Taiwan Strait. It is a long, narrow, mountainous island: a Central Range runs the length of it from north to south, splitting the island into an eastern and a western half, and the main summit, Yushan, at 3,952 m, is the highest point in south-eastern China and in north-east Asia (higher than Japan's Mount Fuji).",
     formation:
       "Taiwan sits exactly on the collision belt between the Eurasian plate and the Philippine Sea plate; the collision squeezes sea-floor sediments up into mountains, and the island is still rising fast (about 0.5–1 cm a year), with frequent earthquakes and many hot springs. The Central, Xueshan, Yushan, Alishan and Coastal ranges run roughly parallel.",
     observation:
       "From the air: the east side is steep mountains dropping straight to the coast (the Qingshui Cliffs), with almost no plain; the west side steps down from mountains to hills, terraces and then alluvial plains (the Jianan Plain), where the cities and farmland are concentrated. Continuous high mountains run down the centre, and the high peaks hold snow in winter.",
     distinguish:
-      "Taiwan versus Hainan: both are continental islands with a range running the length. But Taiwan's mountains are higher, steeper and earthquake-prone (an active collision belt), and range from subtropical to cool-temperate; Hainan's mountains are low, the geology stable, the whole island tropical, and the terrain a ring.",
+      "Taiwan versus Hainan: both are continental islands with a range running the length. But Taiwan's mountains are higher, steeper and earthquake-prone (an active collision belt), and span tropical and subtropical lowlands up to an alpine cold zone; Hainan's mountains are low, the geology stable, the whole island tropical, and the terrain a ring.",
     concept:
       "Taiwan is a living specimen of \"young collision mountain-building\": it shows that building mountains does not take tens of millions of years — under fierce plate collision, near-4,000 m mountains can be piled up in a few million years, and they are still growing. The steep-east, gentle-west asymmetry is exactly the direction of the collision squeeze.",
     history:
