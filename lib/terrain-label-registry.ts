@@ -155,18 +155,10 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
   if (IMPORTANCE_BY_ID[id]) return IMPORTANCE_BY_ID[id];
-  if (
-    category === "mountain_system" ||
-    category === "plateau" ||
-    category === "basin" ||
-    category === "plain" ||
-    category === "hills" ||
-    category === "grassland" ||
-    category === "island"
-  )
-    return "regional";
-  // coast / inselberg / gorge / settlement / lake / river / valley / desert → poi 级
-  return "poi";
+  // 大类地貌默认至少「区域级」——否则常规缩放看不到标签（见 PR #9）。
+  // 只有点状小地物（绿洲聚落 / 单体岛山）默认为 poi。
+  if (category === "settlement" || category === "inselberg") return "poi";
+  return "regional";
 }
 
 export const TERRAIN_LABELS: TerrainLabel[] = TERRAIN_REGISTRY.map((e) => {
