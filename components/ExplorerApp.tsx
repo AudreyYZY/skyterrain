@@ -5,10 +5,10 @@ import CesiumMap, {
   type TerrainMode,
 } from "@/components/CesiumMap";
 import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
-import FlightControls from "@/components/FlightControls";
-import NarrationPanel from "@/components/NarrationPanel";
-import ResizablePanel from "@/components/ResizablePanel";
-import RouteControls from "@/components/RouteControls";
+import IndexRail, { type RailGroup } from "@/components/IndexRail";
+import IntroOverlay from "@/components/IntroOverlay";
+import JourneyBar from "@/components/JourneyBar";
+import ReadingPanel from "@/components/ReadingPanel";
 import { URUMQI_CARDS, URUMQI_LESSON, KASHGAR_CARDS, KASHGAR_LESSON, HOTAN_CARDS, HOTAN_LESSON, TURPAN_CITY_CARDS, TURPAN_CITY_LESSON } from "@/lib/city-lessons";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
 import { TERRAIN_LABELS } from "@/lib/terrain-label-registry";
@@ -25,7 +25,7 @@ import {
   getAllRoutes,
   type ResolvedWaypoint,
 } from "@/lib/routes";
-import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries, type WordBoundary } from "@/lib/speech";
+import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries } from "@/lib/speech";
 import { narrationManager } from "@/lib/narration-manager";
 import { getAllTerrains, getTerrainsByCategory, getTerrainById } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
@@ -35,7 +35,6 @@ import { useSentenceHighlight } from "@/components/useSentenceHighlight";
 import RegionSelector from "@/components/RegionSelector";
 import {
   REGIONS,
-  getActiveRegion,
   setActiveRegion,
   type Region,
 } from "@/lib/regions";
@@ -48,6 +47,21 @@ const routes = getAllRoutes();
 type SidebarCategory =
   | "mountain" | "plateau" | "basin" | "plain" | "hill"
   | "lake" | "desert" | "river" | "gorge" | "island" | "landscape";
+
+/** 分类字形（左侧 rail 用，中英通用的几何符号）*/
+const CATEGORY_GLYPH: Record<SidebarCategory, string> = {
+  mountain: "▲",
+  plateau: "◨",
+  basin: "▽",
+  plain: "▬",
+  hill: "⌒",
+  lake: "◉",
+  desert: "∴",
+  river: "≈",
+  gorge: "⋁",
+  island: "⬠",
+  landscape: "✦",
+};
 
 /** 分类翻译 key 映射 */
 const CATEGORY_I18N_KEY: Record<SidebarCategory, string> = {
@@ -205,9 +219,7 @@ export default function ExplorerApp() {
   const [routePreparing, setRoutePreparing] = useState(false);
   const [activeRouteId, setActiveRouteId] = useState<string | null>(null);
   const [isFlyover, setIsFlyover] = useState(false);
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(true);
-  const [sidebarCategory, setSidebarCategory] = useState<string | null>(null);
-  const [showDetailDrawer, setShowDetailDrawer] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
   const [hoveredTerrainId, setHoveredTerrainId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
   const [activeRegion, setActiveRegionState] = useState<string>(() => {
@@ -251,6 +263,11 @@ export default function ExplorerApp() {
     // 暴露 labelManager 到 window 供调试
     (window as any).labelManager = labelManager;
   }, []);
+
+  // 选中地形 / 开始航线后，收起初始标题卡
+  useEffect(() => {
+    if (activeTerrain || isRouteFlying) setShowIntro(false);
+  }, [activeTerrain, isRouteFlying]);
 
   // 注册叙述队列的语音函数
   useEffect(() => {
@@ -794,20 +811,28 @@ export default function ExplorerApp() {
     0
   );
 
-  const panelTitle =
-    activeTerrain?.name ??
-    (displayCards ? "乌鲁木齐" : isRouteFlying ? "航线飞行中" : "等待飞越");
+  /** 左侧目录分组 — 分类与地形名都按当前语言本地化 */
+  const railGroups: RailGroup[] = FEATURE_GROUPS.map((g) => ({
+    type: g.type,
+    label: t(CATEGORY_I18N_KEY[g.type as SidebarCategory] ?? g.label, language),
+    glyph: CATEGORY_GLYPH[g.type as SidebarCategory] ?? "·",
+    items: g.features.map((f) => ({
+      id: f.id,
+      name: getTerrainName(f.name, language),
+    })),
+  }));
 
-  const panelSubtitle = activeTerrain
-    ? `海拔约 ${activeTerrain.elevation.toLocaleString("zh-CN")} 米`
-    : routePreparing
-      ? "正在预加载航线地形…"
-      : undefined;
-
-  const cardsForPanel = activeTerrain?.cards ?? displayCards;
+  /** 关闭讲解面板 — 停止播报并清空当前地形 */
+  const closePanel = () => {
+    stopSpeaking();
+    setActiveTerrain(null);
+    setLesson(null);
+    setDisplayCards(null);
+    setIsFlyover(false);
+  };
 
   return (
-    <div className="relative flex h-screen w-screen overflow-hidden bg-[#0a0e12]">
+    <div className="relative h-screen w-screen overflow-hidden bg-[color:var(--bg)] font-sans">
       {/* Map layer — full bleed, always behind everything */}
       <div className="absolute inset-0 z-0">
         <CesiumMap
@@ -824,296 +849,92 @@ export default function ExplorerApp() {
           activeRegion={activeRegion}
         />
         {terrainMode === "ellipsoid" && (
-          <div className="pointer-events-none absolute bottom-4 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-lg border border-amber-500/20 bg-[#0a0e12]/80 px-4 py-2 text-center text-[11px] text-amber-200/60">
-            未启用 Cesium 全球地形。请配置{" "}
-            <code className="text-amber-300/70">NEXT_PUBLIC_CESIUM_ION_TOKEN</code>
+          <div className="pointer-events-none absolute bottom-20 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-full border border-[color:var(--accent-line)] bg-[color:var(--panel-solid)] px-4 py-2 text-center text-[11px] text-[color:var(--ink-dim)]">
+            {language === "zh-CN"
+              ? "未启用 Cesium 全球地形，请配置 "
+              : "Cesium world terrain not enabled — set "}
+            <code className="text-[color:var(--accent)]">NEXT_PUBLIC_CESIUM_ION_TOKEN</code>
           </div>
         )}
       </div>
 
-      {/* Header — ultra minimal, floating */}
-      <header className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between px-4 py-2 pointer-events-none">
-        <div className="flex items-center gap-2 pointer-events-auto">
-          <p className="text-[8px] font-medium uppercase tracking-[0.25em] text-amber-300/25">
-            Flight Geography Explorer
-          </p>
-          <span className="text-white/[0.04]">|</span>
-          <p className="text-[9px] text-white/15 tracking-wide">
-            {language === "zh-CN" ? `${activeRegionName} · ${terrainCount}` : `${activeRegionNameEn} · ${terrainCount}`}
-          </p>
+      {showIntro && (
+        <IntroOverlay
+          language={language}
+          regionName={activeRegionName}
+          regionNameEn={activeRegionNameEn}
+          onDismiss={() => setShowIntro(false)}
+        />
+      )}
+
+      {/* Header — editorial masthead */}
+      <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between px-4 py-2.5">
+        <div className={`pointer-events-auto flex items-baseline gap-2.5 transition-opacity duration-300 ${showIntro ? "opacity-0" : "opacity-100"}`}>
+          <span className="editorial-title text-[15px] text-[color:var(--ink)]">
+            {language === "zh-CN" ? activeRegionName : activeRegionNameEn}
+          </span>
+          <span className="text-[10px] tabular-nums text-[color:var(--ink-faint)]">
+            {terrainCount}
+          </span>
         </div>
-        <div className="flex items-center gap-2 pointer-events-auto">
-          {/* Region Selector — 桌面端显示在 Header 内 */}
-          <div className="hidden sm:flex">
-            <RegionSelector
-              activeRegion={activeRegion}
-              onRegionChange={handleRegionChange}
-            />
-          </div>
+        <div className={`pointer-events-auto flex items-center gap-3 transition-opacity duration-300 ${showIntro ? "opacity-0" : "opacity-100"}`}>
+          <RegionSelector
+            activeRegion={activeRegion}
+            onRegionChange={handleRegionChange}
+          />
           <button
             type="button"
             onClick={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
-            className="rounded-md px-2 py-0.5 text-[10px] font-medium transition-all duration-200 text-white/30 hover:text-white/60"
+            className="rounded-full border border-[color:var(--hairline)] px-2.5 py-1 text-[11px] font-medium text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
           >
             {language === "zh-CN" ? "EN" : "中"}
           </button>
         </div>
       </header>
 
-      {/* Region Selector — 移动端显示在底部 */}
-      <div className="sm:hidden absolute bottom-4 left-0 right-0 z-30 flex justify-center pointer-events-none">
-        <div className="pointer-events-auto">
-          <RegionSelector
-            activeRegion={activeRegion}
-            onRegionChange={handleRegionChange}
-          />
-        </div>
-      </div>
-
-      {/* Left sidebar — collapsible terrain browser */}
-      <div
-        className={`absolute top-10 bottom-0 left-0 z-20 flex flex-col transition-all duration-300 ease-out ${
-          sidebarCollapsed ? "w-[60px]" : "w-[280px]"
-        }`}
-      >
-          {/* Sidebar background */}
-          <div className="absolute inset-0 bg-[#0a0e12]/50 backdrop-blur-md border-r border-white/[0.04]" />
-
-          {/* Sidebar content */}
-          <div className="relative flex flex-col h-full">
-            {/* Toggle button */}
-            <button
-              type="button"
-              onClick={() => setSidebarCollapsed(!sidebarCollapsed)}
-              className="flex items-center justify-center h-10 shrink-0 text-white/30 hover:text-white/60 transition-colors"
-            >
-              <span className="text-[11px]">{sidebarCollapsed ? "▸" : "◂"}</span>
-            </button>
-
-            {/* Category list */}
-            <div className="flex-1 overflow-y-auto overscroll-contain">
-              {sidebarCollapsed ? (
-                /* Collapsed: single characters */
-                <div className="flex flex-col items-center gap-1 py-2">
-                  {terrainGroups.map((group) => (
-                    <button
-                      key={group.category}
-                      type="button"
-                      onClick={() => {
-                        setSidebarCollapsed(false);
-                      }}
-                      className="flex h-9 w-9 items-center justify-center rounded-md text-[13px] text-white/40 hover:text-white/70 hover:bg-white/[0.04] transition-all"
-                      title={group.label}
-                    >
-                      {group.label.charAt(0)}
-                    </button>
-                  ))}
-                  <div className="my-2 h-px w-6 bg-white/[0.06]" />
-                  <button
-                    type="button"
-                    onClick={() => setSidebarCollapsed(false)}
-                    className="flex h-9 w-9 items-center justify-center rounded-md text-[13px] text-white/40 hover:text-white/70 hover:bg-white/[0.04] transition-all"
-                    title="飞行路线"
-                  >
-                    航
-                  </button>
-                </div>
-              ) : (
-                /* Expanded: explorer mode */
-                <div className="px-3 py-2">
-                  {sidebarCategory ? (
-                    /* Category selected — show features from unified registry */
-                    <div>
-                      <button
-                        type="button"
-                        onClick={() => setSidebarCategory(null)}
-                        className="flex items-center gap-1 mb-3 text-[11px] text-white/40 hover:text-white/60 transition-colors"
-                      >
-                        <span>←</span>
-                        <span>返回</span>
-                      </button>
-
-                      <p className="text-[12px] font-medium text-white/60 mb-3">
-                        {FEATURE_GROUPS.find(g => g.type === sidebarCategory)?.label}
-                      </p>
-
-                      <div className="space-y-1">
-                        {FEATURE_GROUPS.find(g => g.type === sidebarCategory)?.features.map((f) => (
-                          <button
-                            key={f.id}
-                            type="button"
-                            onClick={() => handleSelectById(f.id)}
-                            className={`w-full text-left px-3 py-2 rounded-lg transition-all ${
-                              activeTerrain?.id === f.id
-                                ? "text-white/80 bg-white/[0.06]"
-                                : "text-white/40 hover:text-white/65 hover:bg-white/[0.03]"
-                            }`}
-                          >
-                            <p className="text-[12px]">{getTerrainName(f.name, language)}</p>
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    /* Category list — unified registry */
-                    <div>
-                      <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-3">
-                        {t("sidebar.terrain_exploration", language)}
-                      </p>
-
-                      <div className="space-y-1">
-                        {FEATURE_GROUPS.map((group) => (
-                          <button
-                            key={group.type}
-                            type="button"
-                            onClick={() => setSidebarCategory(group.type)}
-                            className="w-full text-left px-3 py-2.5 rounded-lg bg-white/[0.02] hover:bg-white/[0.05] transition-all"
-                          >
-                            <div className="flex items-center justify-between">
-                              <span className="text-[12px] text-white/50">
-                                {t(CATEGORY_I18N_KEY[group.type] ?? group.label, language)}
-                              </span>
-                              <span className="text-[10px] text-white/20">{group.features.length}</span>
-                            </div>
-                          </button>
-                        ))}
-                      </div>
-
-                      <div className="my-3 h-px bg-white/[0.06]" />
-                      <p className="text-[10px] font-medium text-white/20 uppercase tracking-wider mb-2">飞行路线</p>
-                      <RouteControls
-                        routes={routes}
-                        activeRouteId={activeRouteId}
-                        isFlying={isRouteFlying || routePreparing}
-                        onStartRoute={handleStartRoute}
-                        onStopRoute={handleStopRoute}
-                      />
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-
-      {/* Welcome guide — first-time entry */}
-      {!activeTerrain && !isRouteFlying && (
-        <div className="absolute top-10 right-3 z-20 w-[280px] pointer-events-auto">
-          <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
-            <h3 className="text-[14px] font-medium text-white/75 mb-1">
-              {t("welcome.title", language)}
-            </h3>
-            <p className="text-[11px] text-white/30 mb-3">
-              {t("welcome.subtitle", language)}
-            </p>
-            <p className="text-[10px] text-white/20 mb-3">
-              {t("welcome.click_to_explore", language)}
-            </p>
-            <button
-              type="button"
-              onClick={() => {
-                const firstTerrain = allTerrains.find(t => t.id === "tianshan");
-                if (firstTerrain) handleSelectTerrain(firstTerrain);
-              }}
-              className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[11px] font-medium text-amber-300/70 transition hover:bg-amber-500/20 hover:text-amber-300"
-            >
-              {t("welcome.start_tour", language)}
-            </button>
-          </div>
-        </div>
+      {!showIntro && (
+        <IndexRail
+          language={language}
+          groups={railGroups}
+          activeId={activeTerrain?.id ?? null}
+          onSelect={handleSelectById}
+        />
       )}
 
-      {/* Right summary card — top-right, documentary entry */}
-      {activeTerrain && !showDetailDrawer && (
-        <div className="absolute top-10 right-3 z-20 w-[300px] pointer-events-auto">
-          <div className="rounded-xl bg-[#0a0e12]/50 backdrop-blur-md border border-white/[0.05] p-4">
-            {/* 地貌名称 + 海拔 */}
-            <div className="mb-2">
-              <h3 className="text-[15px] font-medium text-white/85">{getTerrainName(activeTerrain.name, language)}</h3>
-              <p className="text-[10px] text-white/25 mt-0.5">
-                {t("card.elevation", language)} {activeTerrain.elevation.toLocaleString(language === "zh-CN" ? "zh-CN" : "en-US")}{t("card.meters", language)}
-              </p>
-            </div>
+      <ReadingPanel
+        language={language}
+        terrain={
+          activeTerrain
+            ? {
+                name: getTerrainName(activeTerrain.name, language),
+                elevation: activeTerrain.elevation,
+              }
+            : null
+        }
+        lesson={lesson}
+        knowledge={activeTerrain?.knowledge ?? null}
+        isSpeaking={isSpeaking}
+        isRouteFlying={isRouteFlying}
+        activeSentenceIndex={activeSentenceIndex}
+        activeSection={activeSection}
+        onPlay={() => {
+          if (lesson) void speakLessonWithHighlight(lesson);
+        }}
+        onStop={stopSpeaking}
+        onClose={closePanel}
+      />
 
-            {/* 飞机窗外 — 纪录片第一视角 */}
-            {lesson?.seeing && (
-              <p className="text-[11px] leading-relaxed text-white/35 mb-3 line-clamp-2">
-                {lesson.seeing.slice(0, 50)}...
-              </p>
-            )}
-
-            {/* 主按钮: 开始/停止讲解 — 统一逻辑：播报中点击=停止，否则=开始 */}
-            <button
-              type="button"
-              onClick={() => {
-                if (isSpeaking && lesson) {
-                  stopSpeaking();
-                } else if (lesson) {
-                  void speakLessonWithHighlight(lesson);
-                }
-              }}
-              className="w-full rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-2 text-[12px] font-medium text-amber-300/80 transition hover:bg-amber-500/20 hover:text-amber-300 mb-2"
-            >
-              {isSpeaking ? t("card.stop_narration", language) : t("card.start_narration", language)}
-            </button>
-
-            {/* 次按钮: 查看详情 */}
-            <button
-              type="button"
-              onClick={() => setShowDetailDrawer(true)}
-              className="w-full rounded-lg bg-white/[0.03] px-3 py-1.5 text-[11px] text-white/30 transition hover:bg-white/[0.06] hover:text-white/50"
-            >
-              {t("card.view_details", language)}
-            </button>
-          </div>
-        </div>
+      {!showIntro && !activeTerrain && (
+        <JourneyBar
+          language={language}
+          routes={routes}
+          activeRouteId={activeRouteId}
+          isFlying={isRouteFlying}
+          preparing={routePreparing}
+          onStart={handleStartRoute}
+          onStop={handleStopRoute}
+        />
       )}
-
-      {/* Detail drawer — right side, full height */}
-      {showDetailDrawer && activeTerrain && (
-        <div className="absolute top-0 right-0 bottom-0 z-20 w-[400px] pointer-events-auto">
-          <div className="h-full bg-[#0a0e12]/60 backdrop-blur-lg border-l border-white/[0.04] flex flex-col">
-            {/* Drawer header */}
-            <div className="flex items-center justify-between px-5 py-3 border-b border-white/[0.04]">
-              <div>
-                <h3 className="text-[15px] font-medium text-white/85">{getTerrainName(activeTerrain.name, language)}</h3>
-                <p className="text-[10px] text-white/25">
-                  {t("card.elevation", language)} {activeTerrain.elevation.toLocaleString(language === "zh-CN" ? "zh-CN" : "en-US")}{t("card.meters", language)}
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={() => setShowDetailDrawer(false)}
-                className="text-white/30 hover:text-white/60 transition-colors text-[14px]"
-              >
-                ✕
-              </button>
-            </div>
-
-            {/* Drawer content */}
-            <div className="flex-1 overflow-y-auto overscroll-contain px-5 py-4">
-              <NarrationPanel
-                title={panelTitle}
-                subtitle={panelSubtitle}
-                cards={cardsForPanel}
-                lesson={lesson}
-                knowledge={activeTerrain?.knowledge ?? null}
-                error={error}
-                isFlyover={isFlyover}
-                isRouteFlying={isRouteFlying}
-                isSpeaking={isSpeaking}
-                onSpeak={() => { if (lesson) void speakLessonWithHighlight(lesson); }}
-                onStopSpeak={stopSpeaking}
-                activeSentenceIndex={activeSentenceIndex}
-                activeSection={activeSection}
-                language={language}
-                embedded
-              />
-            </div>
-          </div>
-        </div>
-      )}
-
     </div>
   );
 }

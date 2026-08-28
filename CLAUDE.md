@@ -45,11 +45,14 @@ ProvenanceRecord       — 数据溯源（来源、精度、获取时间）
 
 ```
 components/
-  ExplorerApp.tsx        — 主编排器
-  CesiumMap.tsx          — 3D 地球、Camera 系统、地形区域抬升高亮（hover/选中）
+  ExplorerApp.tsx        — 主编排器（状态 + 讲解/航线/语音链路 + 组合下面几个 UI）
+  CesiumMap.tsx          — 3D 地球、Camera 系统、地形区域抬升高亮（hover/选中）、INTRO_VIEW 初始构图
   CesiumOverlayLabels.tsx — HTML 地形标签层（zoom 自适应、hover/focus 高亮）
-  NarrationPanel.tsx     — 右侧面板（i18n 支持）
-  StructuredLesson.tsx   — 讲解内容渲染
+  IntroOverlay.tsx       — 初始编辑式标题卡（localStorage 记住已看过）
+  IndexRail.tsx          — 左侧地貌目录（窄条 → 浮出分类/地形两级）
+  ReadingPanel.tsx       — 右侧单一阅读面板（卡片态 ⇄ 文章态，逐句高亮）
+  JourneyBar.tsx         — 底部航线胶片条
+  StructuredLesson.tsx   — 6 板块讲解渲染（editorial 衬线排版）
 
 lib/
   terrain-registry.ts    — 【单一真实源】88 个地形的位置/锚点/范围/走向

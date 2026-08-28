@@ -75,10 +75,17 @@ const WINDOW_PITCH_DEG = -42;
 /** 巡航时的微滚转角（弧度），模拟轻微气流颠簸 */
 const CRUISE_ROLL_DEG = 0.8;
 
-const GLOBAL_VIEW = {
-  lon: 90.0,
-  lat: 30.0,
-  height: 35_000_000, // 35,000km — 太空视角，能看到整块大陆
+/**
+ * 初始画面 — 电影级构图，不是远处的小地球。
+ * 相机停在当前区域（默认中国）南侧上空，向北俯视，
+ * 让整片大陆以 3/4 视角铺满画面。
+ */
+const INTRO_VIEW = {
+  lon: 102.0,
+  lat: 24.0,          // 锚点偏南 → 相机在南、镜头朝北看整片中国
+  height: 4_600_000,  // ~4,600km
+  heading: 0,
+  pitch: -1.257,      // ≈ -72°，高空俯视，地平线与大气弧留在画面上缘
 };
 
 /** 不同地貌类型的理想观看高度（米，离地） */
@@ -963,13 +970,17 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           controller.inertiaZoom = 0.9;
           controller.inertiaTranslate = 0.9;
 
-          viewer.camera.flyTo({
+          viewer.camera.setView({
             destination: Cesium.Cartesian3.fromDegrees(
-              GLOBAL_VIEW.lon,
-              GLOBAL_VIEW.lat,
-              GLOBAL_VIEW.height
+              INTRO_VIEW.lon,
+              INTRO_VIEW.lat,
+              INTRO_VIEW.height
             ),
-            duration: 0,
+            orientation: {
+              heading: INTRO_VIEW.heading,
+              pitch: INTRO_VIEW.pitch,
+              roll: 0,
+            },
           });
 
           viewerRef.current = viewer;
