@@ -292,7 +292,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The Tarim Basin is an old, stable block (the Tarim craton); debris shed from the surrounding rising ranges has long accumulated in it, forming thick sediments that also hold rich oil and gas. The basin floor is about 800–1,300 m.",
     observation:
-      "From the air the Tarim Basin is a huge yellow oval: the moving dunes of the Taklamakan in the centre (rows of crescent sand ridges), a ring of snowmelt-fed oasis cities around it (Kashgar, Hotan, Aksu, Korla), and grey gobi and white snow mountains beyond. The Tarim River skirts the desert along the northern rim.",
+      "From the air the Tarim Basin is a huge yellow oval: the moving dunes of the Taklamakan in the centre (tall compound sand ridges and crescent dunes), a ring of snowmelt-fed oasis cities around it (Kashgar, Hotan, Aksu, Korla), and grey gobi and white snow mountains beyond. The Tarim River skirts the desert along the northern rim.",
     distinguish:
       "The Tarim versus the Junggar Basin: the Tarim is fully enclosed, extremely arid, with moving dunes and only internal-drainage rivers; the Junggar has a gap in the north-west (the Alataw Pass), is wetter, and its desert is fixed to semi-fixed and smaller. Versus the Sichuan Basin: both are mountain-ringed, but the Tarim is arid yellow sand sea, Sichuan is humid with red sandstone and dense farmland.",
     concept:
@@ -307,7 +307,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     formation:
       "The Junggar Basin has been a subsidence zone since the Palaeozoic, continually filled with debris from the surrounding ranges, and holds rich oil (the Karamay field) and coal. The basin floor is about 500 m; the lowest point, Lake Ebi, is only about 190 m.",
     observation:
-      "From the air the Junggar Basin is roughly triangular: the Gurbantunggut Desert in the centre, but its dunes are mostly fixed by saxaul, so it reads as mottled yellow-green rather than the pure moving yellow of the Taklamakan. Lakes such as Aibi and Manas lie in the north, and the piedmont oasis belt of the northern Tianshan (Ürümqi, Shihezi, Karamay) rings the edge.",
+      "From the air the Junggar Basin is roughly triangular: the Gurbantunggut Desert in the centre, but its dunes are mostly fixed by saxaul, so it reads as mottled yellow-green rather than the pure moving yellow of the Taklamakan. Lake Ulungur lies on the northern rim and Lake Ebi on the west (Lake Manas has largely dried up), and the piedmont oasis belt of the northern Tianshan (Ürümqi, Shihezi, Karamay) rings the southern edge.",
     distinguish:
       "See the Tarim entry. The core difference: the Junggar is \"half-open, wetter, fixed dunes, small,\" the Tarim is \"fully closed, extremely arid, moving dunes, large.\" In winter the Junggar Basin develops a very thick temperature inversion and the floor becomes bitterly cold.",
     concept:
@@ -358,7 +358,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Why is Turpan so hot? The basin is closed, the elevation is low (compressed air heats up), skies are usually clear, and the dark gobi surface absorbs heat strongly, so the heat cannot escape. The extreme dry heat plus abundant sunshine and a large day–night temperature range is exactly what makes Turpan's grapes and Hami melons so sweet. Water comes from the karez — Tianshan snowmelt tapped as groundwater and carried in covered channels to cut evaporation.",
     history:
-      "Turpan was a Silk Road hub; the ruined cities of Jiaohe and Gaochang attest to more than two thousand years of prosperity here. The karez, the local answer to the dry heat, is ranked with the Great Wall and the Grand Canal as one of ancient China's three great works.",
+      "Turpan was a Silk Road hub; the ruined cities of Jiaohe and Gaochang attest to more than two thousand years of prosperity here. The karez, the local answer to the dry heat, is often ranked with the Great Wall and the Grand Canal as one of ancient China's three great works.",
   },
 
   // ============ Plains ============
