@@ -7,7 +7,14 @@
  * TTS 语言跟随当前语言设置
  */
 
+import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
+
 export type Language = "zh-CN" | "en-US";
+
+/** 中文名 → 英文名，由单一真实源 terrain-registry 生成（覆盖全部 88 个地形）*/
+const REGISTRY_NAME_EN: Record<string, string> = Object.fromEntries(
+  TERRAIN_REGISTRY.map((e) => [e.nameZh, e.nameEn]),
+);
 
 /** UI 文本翻译 */
 const UI_TEXTS: Record<string, Record<Language, string>> = {
@@ -143,6 +150,86 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "停止讲解",
     "en-US": "Stop Narration",
   },
+
+  // Intro overlay
+  "intro.kicker": {
+    "zh-CN": "地貌志",
+    "en-US": "A Field Guide to Landforms",
+  },
+  "intro.line": {
+    "zh-CN": "从三万英尺的舷窗，认识脚下这片土地。",
+    "en-US": "Read the land beneath you from a window seat at 30,000 feet.",
+  },
+  "intro.enter": {
+    "zh-CN": "开始探索",
+    "en-US": "Begin",
+  },
+
+  // Reading panel
+  "panel.narrating": {
+    "zh-CN": "正在讲解",
+    "en-US": "Narrating",
+  },
+  "panel.play": {
+    "zh-CN": "播放讲解",
+    "en-US": "Play narration",
+  },
+  "panel.pause": {
+    "zh-CN": "停止",
+    "en-US": "Stop",
+  },
+  "panel.expand": {
+    "zh-CN": "展开全文",
+    "en-US": "Read the full entry",
+  },
+  "panel.collapse": {
+    "zh-CN": "收起",
+    "en-US": "Collapse",
+  },
+  "panel.close": {
+    "zh-CN": "关闭",
+    "en-US": "Close",
+  },
+  "panel.flyover_hint": {
+    "zh-CN": "飞越途中，自动讲解",
+    "en-US": "Narrating as you fly over",
+  },
+  "panel.empty_title": {
+    "zh-CN": "选择一处地貌",
+    "en-US": "Pick a landform",
+  },
+  "panel.empty_hint": {
+    "zh-CN": "点击地图上的名称，或从左侧目录开始。",
+    "en-US": "Tap a name on the map, or open the index on the left.",
+  },
+
+  // Index rail
+  "rail.title": {
+    "zh-CN": "地貌目录",
+    "en-US": "Index",
+  },
+
+  // Journey bar
+  "journey.routes": {
+    "zh-CN": "航线",
+    "en-US": "Flights",
+  },
+  "journey.start": {
+    "zh-CN": "开始飞行",
+    "en-US": "Take off",
+  },
+  "journey.stop": {
+    "zh-CN": "停止",
+    "en-US": "Stop",
+  },
+  "journey.preparing": {
+    "zh-CN": "航线加载中…",
+    "en-US": "Loading route…",
+  },
+  "journey.collapse": {
+    "zh-CN": "收起",
+    "en-US": "Hide",
+  },
 };
 
 /** 地形名称翻译 */
@@ -199,9 +286,14 @@ export const TERRAIN_NAMES: Record<string, Record<Language, string>> = {
   "长江中下游平原": { "zh-CN": "长江中下游平原", "en-US": "Middle-Lower Yangtze Plain" },
 };
 
-/** 获取地形名称翻译 */
+/**
+ * 获取地形名称翻译。
+ * 优先级：terrain-registry（单一真实源，全 88 个）→ TERRAIN_NAMES（城市 / 新疆细节等
+ * 不在注册表里的名字）→ 原名。
+ */
 export function getTerrainName(name: string, lang: Language): string {
-  return TERRAIN_NAMES[name]?.[lang] ?? name;
+  if (lang === "zh-CN") return name;
+  return REGISTRY_NAME_EN[name] ?? TERRAIN_NAMES[name]?.[lang] ?? name;
 }
 
 /** 获取翻译文本 */

@@ -35,6 +35,23 @@ export const LESSON_SECTION_HEADING: Record<string, string> = {
   history: "历史与人文",
 };
 
+export const LESSON_SECTION_HEADING_EN: Record<string, string> = {
+  seeing: "Overview",
+  formation: "The landform",
+  observation: "From the air",
+  distinguish: "Telling it apart",
+  concept: "Geography note",
+  history: "History & people",
+};
+
+/** 按语言取板块标题 */
+export function sectionHeading(key: string, lang: "zh-CN" | "en-US"): string {
+  return (
+    (lang === "en-US" ? LESSON_SECTION_HEADING_EN[key] : LESSON_SECTION_HEADING[key]) ??
+    key
+  );
+}
+
 /** 按固定顺序返回非空板块 [{key,text}] */
 export function lessonSections(lesson: TerrainLesson): { key: string; text: string }[] {
   return LESSON_SECTION_ORDER.map((key) => ({

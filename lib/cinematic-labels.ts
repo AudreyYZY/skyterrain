@@ -15,8 +15,10 @@ export type LabelVisibility = "always" | "zoom-adaptive" | "focus-only";
 export interface CinematicLabel {
   /** 唯一标识 */
   id: string;
-  /** 显示文本 */
+  /** 显示文本（中文） */
   text: string;
+  /** 显示文本（英文）— 缺省回退到 text */
+  textEn?: string;
   /** 地理位置 */
   position: { lat: number; lon: number };
   /** 标注类型 */
@@ -217,11 +219,13 @@ export function createTerrainLabel(
     rotation?: number;
     terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
     regionId?: string;
+    nameEn?: string;
   }
 ): CinematicLabel {
   return {
     id: `terrain-${terrainId}`,
     text: name,
+    textEn: options?.nameEn,
     position: { lat, lon },
     type: "terrain",
     visibility: "zoom-adaptive",

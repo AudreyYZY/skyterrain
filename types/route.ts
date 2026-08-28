@@ -2,8 +2,11 @@ export interface RouteCityWaypoint {
   kind: "city";
   id: string;
   name: string;
+  nameEn?: string;
   lat: number;
   lon: number;
+  /** 该点是机场（出发/到达），用于飞行起降处理 */
+  airport?: boolean;
 }
 
 export interface RouteTerrainWaypoint {
@@ -13,10 +16,26 @@ export interface RouteTerrainWaypoint {
 
 export type RouteWaypoint = RouteCityWaypoint | RouteTerrainWaypoint;
 
+/** 真实航班信息（展示用；航班号 / 机型以实际时刻表为准）*/
+export interface FlightInfo {
+  airline: string;
+  airlineEn: string;
+  flightNo: string;
+  aircraft: string;
+  /** 出发 / 到达机场 IATA 三字码 */
+  depIata: string;
+  arrIata: string;
+  /** 大致航程（分钟）*/
+  durationMin: number;
+}
+
 export interface FlightRoute {
   id: string;
   name: string;
+  nameEn?: string;
   description: string;
+  descriptionEn?: string;
+  flight?: FlightInfo;
   waypoints: RouteWaypoint[];
   /** 巡航高度（米，离地） */
   cruiseHeight: number;

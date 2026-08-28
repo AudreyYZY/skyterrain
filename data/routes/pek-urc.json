@@ -1,0 +1,31 @@
+{
+  "id": "pek-urc",
+  "name": "北京 — 乌鲁木齐",
+  "nameEn": "Beijing — Ürümqi",
+  "description": "太行山 · 黄土高原 · 河西走廊 · 祁连山 · 天山",
+  "descriptionEn": "Taihang · Loess Plateau · Hexi Corridor · Qilian · Tianshan",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1287",
+    "aircraft": "Airbus A330-300",
+    "depIata": "PEK",
+    "arrIata": "URC",
+    "durationMin": 245
+  },
+  "cruiseHeight": 11000,
+  "minLegDurationSec": 42,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 230,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 10,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.08, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "taihang" },
+    { "kind": "terrain", "terrainId": "loess" },
+    { "kind": "terrain", "terrainId": "hexi-corridor" },
+    { "kind": "terrain", "terrainId": "qilian" },
+    { "kind": "terrain", "terrainId": "tianshan" },
+    { "kind": "city", "id": "urc", "name": "乌鲁木齐地窝堡", "nameEn": "Ürümqi Diwopu", "lat": 43.907, "lon": 87.474, "airport": true }
+  ]
+}

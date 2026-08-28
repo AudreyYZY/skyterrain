@@ -51,35 +51,37 @@ function stripSSML(ssml: string): string {
     .trim();
 }
 
-function pickBrowserChineseVoice(): SpeechSynthesisVoice | null {
+function pickBrowserVoice(lang: Language): SpeechSynthesisVoice | null {
   if (typeof window === "undefined" || !window.speechSynthesis) return null;
 
   const voices = window.speechSynthesis.getVoices();
-  const preferredNames = [
-    "tingting",
-    "meijia",
-    "sin-ji",
-    "yunxi",
-    "xiaoxiao",
-    "zh-cn",
-  ];
 
+  if (lang === "en-US") {
+    const preferred = ["samantha", "jenny", "aria", "en-us"];
+    for (const key of preferred) {
+      const hit = voices.find(
+        (v) => v.lang.toLowerCase().startsWith("en") && v.name.toLowerCase().includes(key),
+      );
+      if (hit) return hit;
+    }
+    return voices.find((v) => v.lang.toLowerCase().startsWith("en")) ?? null;
+  }
+
+  const preferredNames = ["tingting", "meijia", "sin-ji", "yunxi", "xiaoxiao", "zh-cn"];
   for (const key of preferredNames) {
     const hit = voices.find(
-      (v) =>
-        v.lang.toLowerCase().includes("zh") &&
-        v.name.toLowerCase().includes(key)
+      (v) => v.lang.toLowerCase().includes("zh") && v.name.toLowerCase().includes(key),
     );
     if (hit) return hit;
   }
-
   return voices.find((v) => v.lang.toLowerCase().startsWith("zh")) ?? null;
 }
 
 function speakBrowserAndWait(
   text: string,
   rate = 0.92,
-  onPlaying?: () => void
+  onPlaying?: () => void,
+  lang: Language = "zh-CN"
 ): Promise<void> {
   if (typeof window === "undefined" || !window.speechSynthesis) {
     return Promise.resolve();
@@ -90,10 +92,10 @@ function speakBrowserAndWait(
 
   return new Promise((resolve) => {
     const utterance = new SpeechSynthesisUtterance(plainText);
-    utterance.lang = "zh-CN";
+    utterance.lang = lang;
     utterance.rate = rate;
     utterance.pitch = 1;
-    const voice = pickBrowserChineseVoice();
+    const voice = pickBrowserVoice(lang);
     if (voice) utterance.voice = voice;
     let started = false;
     const markStarted = () => {
@@ -200,7 +202,7 @@ export async function speakAndWait(
   // Edge 失败 → 浏览器 TTS。onPlaying 在语音真正开始时触发（不是等播完），
   // 否则逐句高亮会等到播报结束才启动 → 看起来"卡在第一句"。
   currentWordBoundaries = [];
-  await speakBrowserAndWait(text, rate, onPlaying);
+  await speakBrowserAndWait(text, rate, onPlaying, language ?? "zh-CN");
   return { wordBoundaries: [] };
 }
 

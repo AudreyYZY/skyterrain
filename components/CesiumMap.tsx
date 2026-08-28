@@ -75,10 +75,17 @@ const WINDOW_PITCH_DEG = -42;
 /** 巡航时的微滚转角（弧度），模拟轻微气流颠簸 */
 const CRUISE_ROLL_DEG = 0.8;
 
-const GLOBAL_VIEW = {
-  lon: 90.0,
-  lat: 30.0,
-  height: 35_000_000, // 35,000km — 太空视角，能看到整块大陆
+/**
+ * 初始画面 — 电影级构图，不是远处的小地球。
+ * 相机停在当前区域（默认中国）南侧上空，向北俯视，
+ * 让整片大陆以 3/4 视角铺满画面。
+ */
+const INTRO_VIEW = {
+  lon: 102.0,
+  lat: 24.0,          // 锚点偏南 → 相机在南、镜头朝北看整片中国
+  height: 4_600_000,  // ~4,600km
+  heading: 0,
+  pitch: -1.257,      // ≈ -72°，高空俯视，地平线与大气弧留在画面上缘
 };
 
 /** 不同地貌类型的理想观看高度（米，离地） */
@@ -510,7 +517,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           easingFunction: Cesium.EasingFunction.CUBIC_IN_OUT,
           orientation: {
             heading: 0,
-            pitch: Cesium.Math.toRadians(-30),
+            // 高空俯视整片区域（-30° 会看向地平线 / 太空）
+            pitch: Cesium.Math.toRadians(-78),
             roll: 0,
           },
         });
@@ -963,13 +971,17 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           controller.inertiaZoom = 0.9;
           controller.inertiaTranslate = 0.9;
 
-          viewer.camera.flyTo({
+          viewer.camera.setView({
             destination: Cesium.Cartesian3.fromDegrees(
-              GLOBAL_VIEW.lon,
-              GLOBAL_VIEW.lat,
-              GLOBAL_VIEW.height
+              INTRO_VIEW.lon,
+              INTRO_VIEW.lat,
+              INTRO_VIEW.height
             ),
-            duration: 0,
+            orientation: {
+              heading: INTRO_VIEW.heading,
+              pitch: INTRO_VIEW.pitch,
+              roll: 0,
+            },
           });
 
           viewerRef.current = viewer;
@@ -1620,14 +1632,17 @@ function drawRouteLine(
     entityRef.current = null;
   }
 
+  // 固定高度 + 大圆弧段 —— 不用 clampToGround（会懒加载 createGroundPolylineGeometry
+  // worker，网络异常时崩溃，与 polygon.outline 同类问题）。
+  const ROUTE_LINE_HEIGHT_M = 120_000;
   entityRef.current = viewer.entities.add({
     polyline: {
-      positions: Cesium.Cartesian3.fromDegreesArray(
-        waypoints.flatMap((w) => [w.lon, w.lat])
+      positions: Cesium.Cartesian3.fromDegreesArrayHeights(
+        waypoints.flatMap((w) => [w.lon, w.lat, ROUTE_LINE_HEIGHT_M])
       ),
-      width: 3,
-      material: Cesium.Color.fromCssColorString("#fbbf24").withAlpha(0.85),
-      clampToGround: true,
+      width: 2.5,
+      material: Cesium.Color.fromCssColorString("#f5b544").withAlpha(0.9),
+      arcType: Cesium.ArcType.GEODESIC,
     },
   });
 }

@@ -25,6 +25,8 @@ interface CesiumOverlayLabelsProps {
   focusedTerrainId?: string | null;
   /** 当前激活的区域 ID — 用于过滤标签 */
   activeRegion?: string;
+  /** 界面语言 — 决定标签显示中文还是英文 */
+  language?: "zh-CN" | "en-US";
 }
 
 /** 屏幕边缘安全距离（px） */
@@ -122,6 +124,7 @@ export default function CesiumOverlayLabels({
   hoveredTerrainId,
   focusedTerrainId,
   activeRegion = "china",
+  language = "zh-CN",
 }: CesiumOverlayLabelsProps) {
   const [screenLabels, setScreenLabels] = useState<ScreenLabel[]>([]);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -240,7 +243,8 @@ export default function CesiumOverlayLabels({
           fontWeight: TERRAIN_THEME[lodImportance].fontWeight,
           letterSpacing: TERRAIN_THEME[lodImportance].letterSpacing,
         };
-        const rotation = label.rotation ?? 0;
+        // 英文名较长，旋转后很难读 —— 英文标签一律水平
+        const rotation = language === "en-US" ? 0 : (label.rotation ?? 0);
         const isHovered = !!label.terrainId && label.terrainId === hoveredTerrainId;
         const isFocused = !!label.terrainId && label.terrainId === focusedTerrainId;
         const isActive = isHovered || isFocused;
@@ -288,7 +292,7 @@ export default function CesiumOverlayLabels({
                 transition: "background 0.2s ease-out, font-size 0.2s ease-out, padding 0.2s ease-out",
               }}
             >
-              {label.text}
+              {language === "en-US" ? label.textEn ?? label.text : label.text}
             </span>
           </button>
         );

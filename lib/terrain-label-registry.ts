@@ -30,6 +30,7 @@ export type LandformCategory =
 export interface TerrainLabel {
   id: string;
   name: string;
+  nameEn: string;
   importance: Importance;
   category: LandformCategory;
   lat: number;
@@ -130,6 +131,26 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   namtso: "regional",
   poyang: "regional",
   dongting: "regional",
+
+  // 澳大利亚
+  "great-dividing-range": "national",
+  "australian-alps": "national",
+  "great-barrier-reef": "national",
+  uluru: "national",
+  "nullarbor-plain": "national",
+  "great-artesian-basin": "national",
+  "simpson-desert": "national",
+  "murray-darling": "national",
+  tasmania: "national",
+  "macdonnell-ranges": "regional",
+  "flinders-ranges": "regional",
+  "blue-mountains": "regional",
+  pilbara: "regional",
+  kimberley: "regional",
+  "great-victoria-desert": "regional",
+  "lake-eyre": "regional",
+  "kata-tjuta": "regional",
+  "twelve-apostles": "regional",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
@@ -152,13 +173,13 @@ export const TERRAIN_LABELS: TerrainLabel[] = TERRAIN_REGISTRY.map((e) => {
   return {
     id: e.id,
     name: e.nameZh,
+    nameEn: e.nameEn,
     importance: importanceOf(e.id, e.category),
     category: CATEGORY_MAP[e.category],
     lat: pos.lat,
     lon: pos.lon,
     rotation: pos.rotation,
-    // 目前只有「中国」这一个可选区域（新疆地形也在中国视图内展示）。
-    // 待引入独立的新疆子区域时再按 e.regionId 细分。
-    regionId: "china",
+    // 新疆地形也在「中国」视图内展示；其余区域按 e.regionId。
+    regionId: e.regionId === "xinjiang" ? "china" : e.regionId,
   };
 });

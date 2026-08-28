@@ -1,0 +1,29 @@
+{
+  "id": "can-lxa",
+  "name": "广州 — 拉萨",
+  "nameEn": "Guangzhou — Lhasa",
+  "description": "南岭 · 云贵高原 · 横断山脉",
+  "descriptionEn": "Nanling · Yunnan–Guizhou Plateau · Hengduan Mountains",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3463",
+    "aircraft": "Airbus A330-200",
+    "depIata": "CAN",
+    "arrIata": "LXA",
+    "durationMin": 240
+  },
+  "cruiseHeight": 11600,
+  "minLegDurationSec": 44,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 225,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 10,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
+    { "kind": "terrain", "terrainId": "hengduan" },
+    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+  ]
+}

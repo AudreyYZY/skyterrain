@@ -4,8 +4,12 @@ import { NextResponse } from "next/server";
 const MAX_CHARS = 6000;
 // 晓晓：Azure 中文旗舰女声，最自然流畅
 const DEFAULT_VOICE = "zh-CN-XiaoxiaoNeural";
-// 轻微放缓 + 自然音高（大幅放缓会引入机械感）
-const PROSODY = { rate: "-6%", pitch: "+0Hz" } as const;
+// 轻微放缓 + 自然音高（大幅放缓会引入机械感）；英文语速无需放缓
+const PROSODY_ZH = { rate: "-6%", pitch: "+0Hz" } as const;
+const PROSODY_EN = { rate: "+0%", pitch: "+0Hz" } as const;
+function prosodyFor(voice: string) {
+  return voice.toLowerCase().startsWith("en-") ? PROSODY_EN : PROSODY_ZH;
+}
 const SYNTHESIS_TIMEOUT_MS = 15_000;
 const MAX_RETRIES = 2;
 
@@ -78,7 +82,7 @@ export async function POST(request: Request) {
       if (!stripped) {
         return NextResponse.json({ error: "SSML 内容为空" }, { status: 400 });
       }
-      const tts = new EdgeTTS(stripped, voice, { ...PROSODY });
+      const tts = new EdgeTTS(stripped, voice, { ...prosodyFor(voice) });
       const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
       return new Response(JSON.stringify({ audio: audio.toString("base64"), wordBoundaries }), {
         headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
@@ -89,7 +93,7 @@ export async function POST(request: Request) {
     let lastError: Error | null = null;
     for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
       try {
-        const tts = new EdgeTTS(clipped, voice, { ...PROSODY });
+        const tts = new EdgeTTS(clipped, voice, { ...prosodyFor(voice) });
 
         const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
         const elapsed = Date.now() - startTime;

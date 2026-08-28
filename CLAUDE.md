@@ -15,9 +15,11 @@
 
 ## 范围
 
-- **当前**: 中国全境地貌（新疆 + 全国核心地形）
-- **近期**: 亚洲扩展（澳大利亚等）
+- **已有**: 中国全境地貌（88 个）+ 澳大利亚（18 个），中英双语
+- **进行中**: 美国、英国，之后按旅游热度扩展其它安全国家
 - **远期**: 全球地貌探索
+
+区域由 `lib/regions.ts` 驱动，注册表条目按 `regionId` 归属；顶栏区域切换器 `RegionSelector`。
 
 ## 技术栈
 
@@ -45,21 +47,28 @@ ProvenanceRecord       — 数据溯源（来源、精度、获取时间）
 
 ```
 components/
-  ExplorerApp.tsx        — 主编排器
-  CesiumMap.tsx          — 3D 地球、Camera 系统、地形区域抬升高亮（hover/选中）
+  ExplorerApp.tsx        — 主编排器（状态 + 讲解/航线/语音链路 + 组合下面几个 UI）
+  CesiumMap.tsx          — 3D 地球、Camera 系统、地形区域抬升高亮（hover/选中）、INTRO_VIEW 初始构图
   CesiumOverlayLabels.tsx — HTML 地形标签层（zoom 自适应、hover/focus 高亮）
-  NarrationPanel.tsx     — 右侧面板（i18n 支持）
-  StructuredLesson.tsx   — 讲解内容渲染
+  IntroOverlay.tsx       — 初始编辑式标题卡（localStorage 记住已看过）
+  IndexRail.tsx          — 左侧地貌目录（窄条 → 浮出分类/地形两级）
+  ReadingPanel.tsx       — 右侧单一阅读面板（卡片态 ⇄ 文章态，逐句高亮）
+  JourneyBar.tsx         — 底部航线胶片条
+  StructuredLesson.tsx   — 6 板块讲解渲染（editorial 衬线排版）
 
 lib/
-  terrain-registry.ts    — 【单一真实源】88 个地形的位置/锚点/范围/走向
+  terrain-registry.ts    — 【单一真实源】88 个地形的位置/锚点/范围/走向/中英名
   terrain-camera.ts      — 数据驱动相机推导 computeTerrainCamera()
-  terrain-label-registry.ts — 标签（由 terrain-registry 生成，位置=锚点）
+  terrain-content.{zh,en}.ts — 权威 6 板块讲解内容（中/英）；terrain-content.ts = 索引
+  terrain-lesson.ts      — resolveLesson(id, lang)：一处决定用哪份讲解（内容→stories→兜底）
+  terrain-label-registry.ts — 标签（由 terrain-registry 生成，含 nameEn）
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
-  i18n.ts                — UI 国际化
-  i18n-stories.ts        — 讲解故事翻译
+  lesson.ts              — 板块顺序 / 标题（中英）/ 拼接
+  routes.ts              — 4 条真实商业航线（data/routes/*.json），机场航点 + 地形航点
+  i18n.ts                — UI 国际化；getTerrainName 查注册表
+  i18n-stories.ts        — 早期 6 个双语故事（resolveLesson 的次级来源）
   terrain.ts             — 新疆地形注册（坐标由 terrain-registry 覆盖）
-  speech.ts              — TTS 系统（Edge TTS + 浏览器回退）
+  speech.ts              — TTS 系统（Edge TTS + 浏览器回退，跟随 language）
 
 features/
   china-core-features.ts — 全国核心地形定义
@@ -69,7 +78,14 @@ features/
 
 ## 当前阶段
 
-**地图/交互已完成**：88 个地形注册表 + 数据驱动相机 + 标签分级 + 地形抬升高亮 + 自然语音 + 逐句高亮。
+**地图/交互/双语已完成**：106 个地形注册表（中国 88 + 澳大利亚 18）+ 数据驱动相机 +
+标签分级（双语）+ 地形抬升高亮 + 自然语音（跟随语言）+ 逐句高亮 + 真实航班航线 +
+纪录片编辑式界面。
+
+**多国扩展进行中**：新增国家的步骤 =
+① `lib/terrain-registry.ts` 加条目（`regionId`）②`lib/regions.ts` 加/开启 region
+③`lib/terrain-content.{zh,en}.ts` 写双语 6 板块 ④`lib/terrain-label-registry.ts`
+`IMPORTANCE_BY_ID` 补重要度 ⑤`check-terrain-camera.ts` 通过。
 
 **权威文字内容 — 进行中**：讲解改为 6 个通用板块（`TerrainLesson`，顺序见 `lib/lesson.ts`
 `LESSON_SECTION_ORDER`）：
