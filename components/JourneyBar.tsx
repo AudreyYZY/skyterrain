@@ -58,21 +58,30 @@ export default function JourneyBar({
             {routes.map((route) => {
               const wps = resolveRouteWaypoints(route);
               const active = activeRouteId === route.id && (isFlying || preparing);
+              const en = language === "en-US";
+              const terrainNames = wps
+                .filter((w) => w.kind === "terrain")
+                .map((w) => (en ? w.nameEn : w.name));
               return (
                 <div
                   key={route.id}
                   className={[
-                    "flex w-[240px] shrink-0 flex-col rounded-xl border p-3",
+                    "flex w-[248px] shrink-0 flex-col rounded-xl border p-3",
                     active
                       ? "border-[color:var(--accent-line)] bg-[color:var(--accent-soft)]"
                       : "border-[color:var(--hairline)] bg-white/[0.02]",
                   ].join(" ")}
                 >
                   <p className="editorial-title text-[14px] text-[color:var(--ink)]">
-                    {route.name}
+                    {en ? route.nameEn ?? route.name : route.name}
                   </p>
+                  {route.flight && (
+                    <p className="mt-0.5 text-[10px] text-[color:var(--ink-dim)]">
+                      {(en ? route.flight.airlineEn : route.flight.airline)} · {route.flight.flightNo} · {route.flight.aircraft}
+                    </p>
+                  )}
                   <p className="mt-1 line-clamp-1 text-[10px] text-[color:var(--ink-faint)]">
-                    {wps.map((w) => w.name).join(" · ")}
+                    {terrainNames.join(" · ")}
                   </p>
                   <button
                     type="button"

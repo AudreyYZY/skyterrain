@@ -1,0 +1,28 @@
+{
+  "id": "urc-khg",
+  "name": "乌鲁木齐 — 喀什",
+  "nameEn": "Ürümqi — Kashgar",
+  "description": "天山 · 塔里木盆地 · 塔克拉玛干沙漠",
+  "descriptionEn": "Tianshan · Tarim Basin · Taklamakan Desert",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ6801",
+    "aircraft": "Boeing 737-800",
+    "depIata": "URC",
+    "arrIata": "KHG",
+    "durationMin": 105
+  },
+  "cruiseHeight": 10400,
+  "minLegDurationSec": 40,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 210,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 10,
+  "waypoints": [
+    { "kind": "city", "id": "urc", "name": "乌鲁木齐地窝堡", "nameEn": "Ürümqi Diwopu", "lat": 43.907, "lon": 87.474, "airport": true },
+    { "kind": "terrain", "terrainId": "tianshan" },
+    { "kind": "terrain", "terrainId": "taklamakan" },
+    { "kind": "city", "id": "khg", "name": "喀什", "nameEn": "Kashgar", "lat": 39.543, "lon": 76.02, "airport": true }
+  ]
+}

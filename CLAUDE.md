@@ -62,6 +62,7 @@ lib/
   terrain-label-registry.ts — 标签（由 terrain-registry 生成，含 nameEn）
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
   lesson.ts              — 板块顺序 / 标题（中英）/ 拼接
+  routes.ts              — 4 条真实商业航线（data/routes/*.json），机场航点 + 地形航点
   i18n.ts                — UI 国际化；getTerrainName 查注册表
   i18n-stories.ts        — 早期 6 个双语故事（resolveLesson 的次级来源）
   terrain.ts             — 新疆地形注册（坐标由 terrain-registry 覆盖）

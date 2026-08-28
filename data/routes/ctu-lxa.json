@@ -1,0 +1,28 @@
+{
+  "id": "ctu-lxa",
+  "name": "成都 — 拉萨",
+  "nameEn": "Chengdu — Lhasa",
+  "description": "横断山脉 · 青藏高原",
+  "descriptionEn": "Hengduan Mountains · Tibetan Plateau",
+  "flight": {
+    "airline": "四川航空",
+    "airlineEn": "Sichuan Airlines",
+    "flightNo": "3U8633",
+    "aircraft": "Airbus A319",
+    "depIata": "CTU",
+    "arrIata": "LXA",
+    "durationMin": 130
+  },
+  "cruiseHeight": 11900,
+  "minLegDurationSec": 46,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 210,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 11,
+  "waypoints": [
+    { "kind": "city", "id": "ctu", "name": "成都双流", "nameEn": "Chengdu Shuangliu", "lat": 30.578, "lon": 103.947, "airport": true },
+    { "kind": "terrain", "terrainId": "hengduan" },
+    { "kind": "terrain", "terrainId": "qinghai-tibet" },
+    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+  ]
+}

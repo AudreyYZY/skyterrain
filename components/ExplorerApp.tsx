@@ -418,47 +418,73 @@ export default function ExplorerApp() {
     async (waypoint: ResolvedWaypoint): Promise<void> => {
       if (narrationCancelledRef.current) return;
 
-      const terrain = waypoint.terrain;
-      const cityLesson = CITY_LESSONS[waypoint.id];
-      const cityCards = CITY_CARDS[waypoint.id];
+      // 起降机场 — 镜头飞过，不讲解
+      if (waypoint.kind === "airport") return;
 
-      // 更新 UI 状态
-      if (terrain) {
-        const wpLesson =
-          resolveLesson(terrain.id, language, {
-            nameZh: terrain.name,
-            fallback: terrain.lesson,
-          }) ?? terrain.lesson;
+      // 讲解内容与面板地形
+      let panelLesson: TerrainLesson | null;
+      let flyoverCue = "";
+      let cards: TerrainCards | null = null;
 
-        setIsFlyover(true);
-        setActiveTerrain(terrain);
-        setDisplayCards(terrain.cards);
-        setLesson(wpLesson);
-        setError(null);
+      if (waypoint.terrain) {
+        panelLesson =
+          resolveLesson(waypoint.id, language, {
+            nameZh: waypoint.name,
+            fallback: waypoint.terrain.lesson,
+          }) ?? waypoint.terrain.lesson;
+        flyoverCue = waypoint.terrain.flyoverCue ?? "";
+        cards = waypoint.terrain.cards ?? null;
+      } else if (CITY_LESSONS[waypoint.id]) {
+        panelLesson = CITY_LESSONS[waypoint.id]!;
+        cards = CITY_CARDS[waypoint.id] ?? null;
+      } else {
+        panelLesson = resolveLesson(waypoint.id, language, { nameZh: waypoint.name });
+      }
 
-        // 添加地形标注到电影级标注层
-        const layerId = "route-waypoints";
-        if (!labelManager.getLayers().find(l => l.id === layerId)) {
-          labelManager.createLayer(layerId, "航线航点", 10);
+      const stub = {
+        id: waypoint.id,
+        name: waypoint.name,
+        elevation: waypoint.elevation ?? waypoint.terrain?.elevation ?? 0,
+      } as unknown as TerrainPoint;
+
+      setIsFlyover(true);
+      setActiveTerrain(waypoint.terrain ?? stub);
+      setDisplayCards(cards);
+      setLesson(panelLesson ?? placeholderLesson(language));
+      setError(null);
+
+      // 地形标注
+      const layerId = "route-waypoints";
+      if (!labelManager.getLayers().find((l) => l.id === layerId)) {
+        labelManager.createLayer(layerId, "航线航点", 10);
+      }
+      labelManager.addLabel(
+        layerId,
+        createTerrainLabel(waypoint.id, waypoint.name, waypoint.lat, waypoint.lon, 80, {
+          nameEn: waypoint.nameEn,
+        }),
+      );
+      labelManager.setFocusedTerrain(waypoint.id);
+
+      if (!panelLesson) {
+        // 无讲解内容 — 只停留展示
+        if (!narrationCancelledRef.current) {
+          await new Promise((r) => setTimeout(r, POST_NARRATION_DWELL_MS));
         }
-        labelManager.addLabel(layerId, createTerrainLabel(
-          terrain.id, terrain.name, terrain.lat, terrain.lon, 80,
-          { nameEn: getTerrainEntry(terrain.id)?.nameEn }
-        ));
-        labelManager.setFocusedTerrain(terrain.id);
+        return;
+      }
 
-        // 生成 SSML 叙述脚本（飞越提示 + 详细讲解，含自然停顿）
-        const plainLesson = lessonToSpeech(wpLesson);
-        const ssmlScript = `${terrain.flyoverCue} ${plainLesson}`;
+      const plainLesson = lessonToSpeech(panelLesson);
+      const ssmlScript = flyoverCue ? `${flyoverCue} ${plainLesson}` : plainLesson;
+      const highlightSections = lessonSections(panelLesson);
 
-        // 全 section 高亮 — 与 StructuredLesson 渲染顺序一致
-        const highlightSections = lessonSections(wpLesson);
-
-        // 等待叙述完成 — 高亮在音频真正播放时启动
-        const session = narrationManager.createSession();
-        setIsSpeaking(true);
-        try {
-          await speakAndWait(ssmlScript, SPEECH_RATE, () => {
+      const session = narrationManager.createSession();
+      setIsSpeaking(true);
+      try {
+        await speakAndWait(
+          ssmlScript,
+          SPEECH_RATE,
+          () => {
             if (!session.active) return;
             const wordBoundaries = getCurrentWordBoundaries();
             const audio = getCurrentAudio();
@@ -467,53 +493,19 @@ export default function ExplorerApp() {
             } else {
               startHighlightSections(highlightSections);
             }
-          }, language);
-        } finally {
-          setIsSpeaking(false);
-          if (session.active) {
-            stopHighlight();
-          }
-        }
+          },
+          language,
+        );
+      } finally {
+        setIsSpeaking(false);
+        if (session.active) stopHighlight();
+      }
 
-        // 叙述后停留 — 让用户消化
-        if (!narrationCancelledRef.current) {
-          await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
-        }
-      } else if (cityLesson && cityCards) {
-        setActiveTerrain(null);
-        setDisplayCards(cityCards);
-        setLesson(cityLesson);
-        setIsFlyover(true);
-        setError(null);
-
-        const ssmlScript = lessonToSSML(cityLesson);
-        const citySections = lessonSections(cityLesson);
-        const session = narrationManager.createSession();
-        setIsSpeaking(true);
-        try {
-          await speakAndWait(ssmlScript, SPEECH_RATE, () => {
-            if (!session.active) return;
-            const wordBoundaries = getCurrentWordBoundaries();
-            const audio = getCurrentAudio();
-            if (wordBoundaries.length > 0 && audio) {
-              startHighlightWithTiming(citySections, wordBoundaries, audio);
-            } else {
-              startHighlightSections(citySections);
-            }
-          }, language);
-        } finally {
-          setIsSpeaking(false);
-          if (session.active) {
-            stopHighlight();
-          }
-        }
-
-        if (!narrationCancelledRef.current) {
-          await new Promise(r => setTimeout(r, POST_NARRATION_DWELL_MS));
-        }
+      if (!narrationCancelledRef.current) {
+        await new Promise((r) => setTimeout(r, POST_NARRATION_DWELL_MS));
       }
     },
-    [language, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight]
+    [language, startHighlightSections, startHighlightWithTiming, stopHighlight]
   );
 
   const handleSelectTerrain = useCallback(

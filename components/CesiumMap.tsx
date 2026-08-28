@@ -1631,14 +1631,17 @@ function drawRouteLine(
     entityRef.current = null;
   }
 
+  // 固定高度 + 大圆弧段 —— 不用 clampToGround（会懒加载 createGroundPolylineGeometry
+  // worker，网络异常时崩溃，与 polygon.outline 同类问题）。
+  const ROUTE_LINE_HEIGHT_M = 120_000;
   entityRef.current = viewer.entities.add({
     polyline: {
-      positions: Cesium.Cartesian3.fromDegreesArray(
-        waypoints.flatMap((w) => [w.lon, w.lat])
+      positions: Cesium.Cartesian3.fromDegreesArrayHeights(
+        waypoints.flatMap((w) => [w.lon, w.lat, ROUTE_LINE_HEIGHT_M])
       ),
-      width: 3,
-      material: Cesium.Color.fromCssColorString("#fbbf24").withAlpha(0.85),
-      clampToGround: true,
+      width: 2.5,
+      material: Cesium.Color.fromCssColorString("#f5b544").withAlpha(0.9),
+      arcType: Cesium.ArcType.GEODESIC,
     },
   });
 }
