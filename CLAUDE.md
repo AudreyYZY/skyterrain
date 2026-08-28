@@ -55,14 +55,17 @@ components/
   StructuredLesson.tsx   — 6 板块讲解渲染（editorial 衬线排版）
 
 lib/
-  terrain-registry.ts    — 【单一真实源】88 个地形的位置/锚点/范围/走向
+  terrain-registry.ts    — 【单一真实源】88 个地形的位置/锚点/范围/走向/中英名
   terrain-camera.ts      — 数据驱动相机推导 computeTerrainCamera()
-  terrain-label-registry.ts — 标签（由 terrain-registry 生成，位置=锚点）
+  terrain-content.{zh,en}.ts — 权威 6 板块讲解内容（中/英）；terrain-content.ts = 索引
+  terrain-lesson.ts      — resolveLesson(id, lang)：一处决定用哪份讲解（内容→stories→兜底）
+  terrain-label-registry.ts — 标签（由 terrain-registry 生成，含 nameEn）
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
-  i18n.ts                — UI 国际化
-  i18n-stories.ts        — 讲解故事翻译
+  lesson.ts              — 板块顺序 / 标题（中英）/ 拼接
+  i18n.ts                — UI 国际化；getTerrainName 查注册表
+  i18n-stories.ts        — 早期 6 个双语故事（resolveLesson 的次级来源）
   terrain.ts             — 新疆地形注册（坐标由 terrain-registry 覆盖）
-  speech.ts              — TTS 系统（Edge TTS + 浏览器回退）
+  speech.ts              — TTS 系统（Edge TTS + 浏览器回退，跟随 language）
 
 features/
   china-core-features.ts — 全国核心地形定义

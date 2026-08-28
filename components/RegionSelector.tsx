@@ -17,6 +17,7 @@ import {
   type Region,
   hasTerrainData,
 } from "@/lib/regions";
+import type { Language } from "@/lib/i18n";
 import { useCallback, useState } from "react";
 
 interface RegionSelectorProps {
@@ -26,12 +27,15 @@ interface RegionSelectorProps {
   onRegionChange: (region: Region) => void;
   /** 是否隐藏（由父组件控制显隐） */
   hidden?: boolean;
+  /** 界面语言 */
+  language?: Language;
 }
 
 export default function RegionSelector({
   activeRegion,
   onRegionChange,
   hidden = false,
+  language = "zh-CN",
 }: RegionSelectorProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -82,7 +86,9 @@ export default function RegionSelector({
             ].join(" ")}
           >
             {/* 区域名称 */}
-            <span className="truncate">{region.name}</span>
+            <span className="truncate">
+              {language === "en-US" ? region.nameEn ?? region.name : region.name}
+            </span>
 
             {/* 地貌计数 */}
             {hasData && region.terrainCount > 0 && (

@@ -30,6 +30,7 @@ export type LandformCategory =
 export interface TerrainLabel {
   id: string;
   name: string;
+  nameEn: string;
   importance: Importance;
   category: LandformCategory;
   lat: number;
@@ -152,6 +153,7 @@ export const TERRAIN_LABELS: TerrainLabel[] = TERRAIN_REGISTRY.map((e) => {
   return {
     id: e.id,
     name: e.nameZh,
+    nameEn: e.nameEn,
     importance: importanceOf(e.id, e.category),
     category: CATEGORY_MAP[e.category],
     lat: pos.lat,

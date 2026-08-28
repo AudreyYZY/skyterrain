@@ -18,6 +18,20 @@ interface HighlightSection {
   text: string;
 }
 
+/**
+ * 估算一句话的朗读时长（毫秒）—— 仅用于浏览器 TTS 回退（Edge TTS 有精确 word boundary）。
+ * 中文按字数，英文按词数，两种语速差异很大。
+ */
+function estimateSentenceMs(sentence: string): number {
+  const hasCJK = /[一-鿿]/.test(sentence);
+  if (hasCJK) {
+    const chars = sentence.replace(/\s/g, "").length;
+    return chars * 280 + 300;
+  }
+  const words = sentence.trim().split(/\s+/).filter(Boolean).length;
+  return words * 360 + 300;
+}
+
 interface SentenceTimeRange {
   sectionKey: string;
   /** 开始时间（秒） */
@@ -148,8 +162,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
         const currentSentence = sentences[currentIndexRef.current];
         if (!currentSentence) return;
 
-        const chars = currentSentence.replace(/\s/g, "").length;
-        const duration = chars * 280 + 300;
+        const duration = estimateSentenceMs(currentSentence);
 
         timerRef.current = setTimeout(() => {
           currentIndexRef.current += 1;
@@ -196,8 +209,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
         const currentSentence = allSentences[currentIndexRef.current];
         if (!currentSentence) return;
 
-        const chars = currentSentence.replace(/\s/g, "").length;
-        const duration = chars * 280 + 300;
+        const duration = estimateSentenceMs(currentSentence);
 
         timerRef.current = setTimeout(() => {
           currentIndexRef.current += 1;

@@ -15,9 +15,8 @@ import { TERRAIN_LABELS } from "@/lib/terrain-label-registry";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { lessonToSpeech, lessonToSSML, lessonSections } from "@/lib/lesson";
-import { getTerrainContent } from "@/lib/terrain-content";
+import { resolveLesson } from "@/lib/terrain-lesson";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
-import { getTerrainStory } from "@/lib/i18n-stories";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
@@ -164,21 +163,27 @@ const CITY_LESSONS: Record<string, TerrainLesson> = {
   "turpan-city": TURPAN_CITY_LESSON,
 };
 
-const ROUTE_END_LESSON: TerrainLesson = {
-  seeing: "北疆经典航线飞行结束。你已从乌鲁木齐飞越天山、赛里木湖至伊犁河谷。欢迎继续探索左侧其他地貌，或选择另一条航线。",
+const routeEndLesson = (lang: Language): TerrainLesson => ({
+  seeing:
+    lang === "zh-CN"
+      ? "航线飞行结束。欢迎继续探索左侧目录里的其他地貌，或选择另一条航线。"
+      : "The flight is over. Explore other landforms from the index on the left, or pick another route.",
   formation: "",
   history: "",
-};
+});
 
 const SPEECH_RATE = 0.88;
 
-/** 尚无权威讲解内容的地形，面板占位（文字为下一阶段任务）*/
-const PLACEHOLDER_LESSON: TerrainLesson = {
-  seeing: "该地形的权威讲解内容正在整理中。你仍可从飞机视角观察它的范围、走向和与周边地貌的关系。",
+/** 尚无权威讲解内容的地形，面板占位 */
+const placeholderLesson = (lang: Language): TerrainLesson => ({
+  seeing:
+    lang === "zh-CN"
+      ? "这处地形的权威讲解正在整理中。你仍可从飞机视角观察它的范围、走向和与周边地貌的关系。"
+      : "An authoritative entry for this landform is still being written. You can still study its extent, trend and relationship to nearby terrain from the air.",
   formation: "",
   history: "",
   observation: "",
-};
+});
 
 const ZERO_INTERACTION_STYLE = {
   outlineAlpha: 0, outlineWidth: 0, outlineColor: [255, 255, 255] as [number, number, number],
@@ -256,6 +261,7 @@ export default function ExplorerApp() {
           lodLevel: LOD_BY_IMPORTANCE[label.importance],
           rotation: label.rotation,
           terrainType: label.category as any,
+          nameEn: label.nameEn,
         }
       ));
     }
@@ -381,15 +387,11 @@ export default function ExplorerApp() {
 
   const showTerrainLesson = useCallback(
     async (terrain: TerrainPoint, options?: { flyoverOnly?: boolean }): Promise<void> => {
-      // 内容优先级：terrain-content > i18n-stories 英译 > 新疆 json 自带 lesson
-      const authored = getTerrainContent(terrain.id);
-      const translatedStory = getTerrainStory(terrain.name, language);
       const effectiveLesson: TerrainLesson =
-        authored && language === "zh-CN"
-          ? authored
-          : translatedStory
-          ? { ...terrain.lesson, seeing: translatedStory.seeing, formation: translatedStory.formation, observation: translatedStory.observation, history: translatedStory.history }
-          : authored ?? terrain.lesson;
+        resolveLesson(terrain.id, language, {
+          nameZh: terrain.name,
+          fallback: terrain.lesson,
+        }) ?? terrain.lesson;
 
       setActiveTerrain(terrain);
       setDisplayCards(terrain.cards);
@@ -422,10 +424,16 @@ export default function ExplorerApp() {
 
       // 更新 UI 状态
       if (terrain) {
+        const wpLesson =
+          resolveLesson(terrain.id, language, {
+            nameZh: terrain.name,
+            fallback: terrain.lesson,
+          }) ?? terrain.lesson;
+
         setIsFlyover(true);
         setActiveTerrain(terrain);
         setDisplayCards(terrain.cards);
-        setLesson(terrain.lesson);
+        setLesson(wpLesson);
         setError(null);
 
         // 添加地形标注到电影级标注层
@@ -434,16 +442,17 @@ export default function ExplorerApp() {
           labelManager.createLayer(layerId, "航线航点", 10);
         }
         labelManager.addLabel(layerId, createTerrainLabel(
-          terrain.id, terrain.name, terrain.lat, terrain.lon, 80
+          terrain.id, terrain.name, terrain.lat, terrain.lon, 80,
+          { nameEn: getTerrainEntry(terrain.id)?.nameEn }
         ));
         labelManager.setFocusedTerrain(terrain.id);
 
         // 生成 SSML 叙述脚本（飞越提示 + 详细讲解，含自然停顿）
-        const plainLesson = lessonToSpeech(terrain.lesson);
+        const plainLesson = lessonToSpeech(wpLesson);
         const ssmlScript = `${terrain.flyoverCue} ${plainLesson}`;
 
         // 全 section 高亮 — 与 StructuredLesson 渲染顺序一致
-        const highlightSections = lessonSections(terrain.lesson);
+        const highlightSections = lessonSections(wpLesson);
 
         // 等待叙述完成 — 高亮在音频真正播放时启动
         const session = narrationManager.createSession();
@@ -458,7 +467,7 @@ export default function ExplorerApp() {
             } else {
               startHighlightSections(highlightSections);
             }
-          });
+          }, language);
         } finally {
           setIsSpeaking(false);
           if (session.active) {
@@ -491,7 +500,7 @@ export default function ExplorerApp() {
             } else {
               startHighlightSections(citySections);
             }
-          });
+          }, language);
         } finally {
           setIsSpeaking(false);
           if (session.active) {
@@ -504,7 +513,7 @@ export default function ExplorerApp() {
         }
       }
     },
-    [startHighlight, startHighlightSections, stopHighlight]
+    [language, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight]
   );
 
   const handleSelectTerrain = useCallback(
@@ -613,25 +622,20 @@ export default function ExplorerApp() {
       mapRef.current?.focusTerrain(feature.id);
 
       // 设置当前 Feature 状态 — 驱动右侧面板更新
-      // 内容优先级：terrain-content（权威·结构化）> i18n-stories（英译）> feature.story（旧）
-      const authored = getTerrainContent(feature.id);
-      const translatedStory = getTerrainStory(feature.name, language);
-      const storySource = translatedStory ?? feature.story;
-      let effectiveLesson: TerrainLesson | null = null;
-      if (authored && language === "zh-CN") {
-        effectiveLesson = authored;
-      } else if (storySource) {
-        effectiveLesson = {
-          seeing: storySource.seeing,
-          formation: storySource.formation,
-          observation: storySource.observation,
-          history: storySource.history,
-        };
-      } else if (authored) {
-        effectiveLesson = authored; // 无英译时中文兜底
-      }
+      const featureFallback: TerrainLesson | null = feature.story
+        ? {
+            seeing: feature.story.seeing,
+            formation: feature.story.formation,
+            observation: feature.story.observation ?? "",
+            history: feature.story.history,
+          }
+        : null;
+      const effectiveLesson = resolveLesson(feature.id, language, {
+        nameZh: feature.name,
+        fallback: featureFallback,
+      });
       // 面板始终更新（无讲解内容时显示占位）
-      const panelLesson = effectiveLesson ?? PLACEHOLDER_LESSON;
+      const panelLesson = effectiveLesson ?? placeholderLesson(language);
       setLesson(panelLesson);
       setActiveTerrain({
         id: feature.id,
@@ -768,13 +772,13 @@ export default function ExplorerApp() {
             activeRouteRef.current = null;
             setActiveTerrain(null);
             setDisplayCards(null);
-            setLesson(ROUTE_END_LESSON);
+            setLesson(routeEndLesson(language));
 
             // 等待结束语叙述完成（SSML 格式）
-            const endSSML = ROUTE_END_LESSON.seeing;
+            const endSSML = routeEndLesson(language).seeing;
             setIsSpeaking(true);
             try {
-              await speakAndWait(endSSML, SPEECH_RATE);
+              await speakAndWait(endSSML, SPEECH_RATE, undefined, language);
             } finally {
               setIsSpeaking(false);
             }
@@ -790,7 +794,7 @@ export default function ExplorerApp() {
         });
       }, 50);
     },
-    [narrateWaypoint]
+    [narrateWaypoint, language]
   );
 
   const handleStopRoute = useCallback(() => {
@@ -847,6 +851,7 @@ export default function ExplorerApp() {
           hoveredTerrainId={hoveredTerrainId}
           focusedTerrainId={activeTerrain?.id ?? null}
           activeRegion={activeRegion}
+          language={language}
         />
         {terrainMode === "ellipsoid" && (
           <div className="pointer-events-none absolute bottom-20 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-full border border-[color:var(--accent-line)] bg-[color:var(--panel-solid)] px-4 py-2 text-center text-[11px] text-[color:var(--ink-dim)]">
@@ -881,6 +886,7 @@ export default function ExplorerApp() {
           <RegionSelector
             activeRegion={activeRegion}
             onRegionChange={handleRegionChange}
+            language={language}
           />
           <button
             type="button"

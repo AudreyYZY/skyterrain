@@ -120,6 +120,7 @@ export default function ReadingPanel({
                 hideEmptySections
                 activeSentenceIndex={activeSentenceIndex}
                 activeSection={activeSection}
+                language={language}
               />
             )}
             {knowledge && (

@@ -1,5 +1,6 @@
 import { stripEmojis } from "@/lib/strip-emojis";
-import { LESSON_SECTION_ORDER, LESSON_SECTION_HEADING } from "@/lib/lesson";
+import { LESSON_SECTION_ORDER, sectionHeading } from "@/lib/lesson";
+import type { Language } from "@/lib/i18n";
 import type { TerrainLesson } from "@/types/terrain";
 import { useEffect, useRef } from "react";
 
@@ -10,17 +11,12 @@ interface StructuredLessonProps {
   activeSentenceIndex?: number | null;
   /** 当前朗读的 section key */
   activeSection?: string | null;
+  language?: Language;
 }
 
-const SECTIONS: {
-  key: keyof TerrainLesson;
-  heading: string;
-  primary?: boolean;
-}[] = LESSON_SECTION_ORDER.map((key, i) => ({
-  key: key as keyof TerrainLesson,
-  heading: LESSON_SECTION_HEADING[key]!,
-  primary: i === 0,
-}));
+const SECTION_KEYS: (keyof TerrainLesson)[] = LESSON_SECTION_ORDER.map(
+  (k) => k as keyof TerrainLesson,
+);
 
 /**
  * 将文本按中文/英文句号、问号、感叹号分割成句子
@@ -36,8 +32,15 @@ export default function StructuredLesson({
   hideEmptySections = false,
   activeSentenceIndex,
   activeSection,
+  language = "zh-CN",
 }: StructuredLessonProps) {
   const activeRef = useRef<HTMLSpanElement>(null);
+
+  const SECTIONS = SECTION_KEYS.map((key, i) => ({
+    key,
+    heading: sectionHeading(key, language),
+    primary: i === 0,
+  }));
 
   // 当前高亮句变化时，滚动到可见区域
   useEffect(() => {

@@ -7,7 +7,14 @@
  * TTS 语言跟随当前语言设置
  */
 
+import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
+
 export type Language = "zh-CN" | "en-US";
+
+/** 中文名 → 英文名，由单一真实源 terrain-registry 生成（覆盖全部 88 个地形）*/
+const REGISTRY_NAME_EN: Record<string, string> = Object.fromEntries(
+  TERRAIN_REGISTRY.map((e) => [e.nameZh, e.nameEn]),
+);
 
 /** UI 文本翻译 */
 const UI_TEXTS: Record<string, Record<Language, string>> = {
@@ -279,9 +286,14 @@ export const TERRAIN_NAMES: Record<string, Record<Language, string>> = {
   "长江中下游平原": { "zh-CN": "长江中下游平原", "en-US": "Middle-Lower Yangtze Plain" },
 };
 
-/** 获取地形名称翻译 */
+/**
+ * 获取地形名称翻译。
+ * 优先级：terrain-registry（单一真实源，全 88 个）→ TERRAIN_NAMES（城市 / 新疆细节等
+ * 不在注册表里的名字）→ 原名。
+ */
 export function getTerrainName(name: string, lang: Language): string {
-  return TERRAIN_NAMES[name]?.[lang] ?? name;
+  if (lang === "zh-CN") return name;
+  return REGISTRY_NAME_EN[name] ?? TERRAIN_NAMES[name]?.[lang] ?? name;
 }
 
 /** 获取翻译文本 */
