@@ -37,12 +37,19 @@ const LANDMARK_SCREEN_FRAC = 0.52;
 /** 偏移距离修正系数（几何值 = range / tan(角)，此系数吸收 Cesium pitch 语义差异）*/
 const OFFSET_K = 1.0;
 
-/** 展示尺度上下限（km）——上限即"超大地形只看代表性区段" */
+/** 展示尺度上下限（km）——普通上限即"超大地形只看代表性区段" */
 const SHOW_KM_MIN = 18;
 const SHOW_KM_MAX = 120;
-/** range 上下限（米）——上限保留舷窗视角，不无限拉远 */
+/**
+ * 加宽上限：仅当条目显式给了 `viewScale > 1`（大面积高原/盆地/平原/沙漠，
+ * 需要拉远才能看出地貌本身特征，而非一个局部景物）时才可达到。
+ */
+const SHOW_KM_MAX_WIDE = 320;
+/** range 上下限（米）——普通上限保留舷窗视角 */
 const RANGE_MIN = 14_000;
 const RANGE_MAX = 135_000;
+/** 加宽 range 上限（配合 viewScale）*/
+const RANGE_MAX_WIDE = 340_000;
 /** pitch 范围（度）：小地形更俯冲看细节，大地形更接近舷窗斜视 */
 const PITCH_STEEP = -55;
 const PITCH_SHALLOW = -38;
@@ -190,7 +197,11 @@ function deriveShowKm(entry: TerrainEntry): number {
   } else {
     raw = Math.hypot(widthKm, heightKm) * 0.72;
   }
-  return clamp(raw, SHOW_KM_MIN, SHOW_KM_MAX);
+  // 先按普通上限夹紧，再按 viewScale 放大到加宽上限
+  const base = clamp(raw, SHOW_KM_MIN, SHOW_KM_MAX);
+  const scale = entry.viewScale ?? 1;
+  if (scale <= 1) return base;
+  return clamp(base * scale, SHOW_KM_MIN, SHOW_KM_MAX_WIDE);
 }
 
 /**
@@ -200,7 +211,9 @@ export function computeTerrainCamera(entry: TerrainEntry): CameraParams {
   const landmark: [number, number] = [entry.landmark.lon, entry.landmark.lat];
 
   const showKm = deriveShowKm(entry);
-  const t = norm(showKm, SHOW_KM_MIN, SHOW_KM_MAX);
+  const wide = (entry.viewScale ?? 1) > 1;
+  // pitch 由普通尺度档位决定（加宽视角仍保持舷窗斜视，不因超大而更平）
+  const t = norm(Math.min(showKm, SHOW_KM_MAX), SHOW_KM_MIN, SHOW_KM_MAX);
 
   // pitch: 小地形俯冲、大地形斜视
   const pitch = lerp(PITCH_STEEP, PITCH_SHALLOW, t);
@@ -208,7 +221,7 @@ export function computeTerrainCamera(entry: TerrainEntry): CameraParams {
   // range: 使 showKm 在半视角 FRAME_HALF_ANGLE_DEG 内充满；斜视做前景拉伸修正
   const obliqueStretch = lerp(0.78, 1.0, norm(Math.abs(pitch), Math.abs(PITCH_SHALLOW), Math.abs(PITCH_STEEP)));
   let range = (showKm * 1000 * 0.5) / Math.tan(FRAME_HALF_ANGLE_DEG * DEG);
-  range = clamp(range * obliqueStretch, RANGE_MIN, RANGE_MAX);
+  range = clamp(range * obliqueStretch, RANGE_MIN, wide ? RANGE_MAX_WIDE : RANGE_MAX);
 
   // 相机位置：从锚点沿"观察反方向"（viewFrom）偏移，
   // 使锚点落在画面纵向 LANDMARK_SCREEN_FRAC 处

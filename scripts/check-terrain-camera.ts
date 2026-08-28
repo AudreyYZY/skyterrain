@@ -29,7 +29,9 @@ for (const e of TERRAIN_REGISTRY) {
 
   if (!Number.isFinite(cam.range) || !Number.isFinite(cam.pitch) || !Number.isFinite(cam.heading))
     problems.push("NaN");
-  if (cam.range < 14_000 || cam.range > 135_000) problems.push(`range=${cam.range}`);
+  // viewScale>1 的大面积地形允许更大的 range（加宽取景）
+  const rangeMax = (e as { viewScale?: number }).viewScale ? 345_000 : 135_000;
+  if (cam.range < 14_000 || cam.range > rangeMax) problems.push(`range=${cam.range}`);
   if (cam.pitch < -55.5 || cam.pitch > -31.5) problems.push(`pitch=${cam.pitch}`);
   if (!Number.isFinite(cam.target[0]) || !Number.isFinite(cam.target[1]))
     problems.push("target NaN");

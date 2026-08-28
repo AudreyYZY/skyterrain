@@ -89,6 +89,12 @@ export interface TerrainEntry {
    * 只在自动推导选错侧时设置；range/pitch/偏移距离仍全部由数据推导。
    */
   viewFrom?: number;
+  /**
+   * 取景放大系数（默认 1）。大面积高原 / 盆地 / 平原 / 沙漠设 >1，
+   * 让相机拉远到能看出"这是一整片高地 / 盆地 / 平原"的地貌特征，
+   * 而不是锚点周边一个局部景物。见 lib/terrain-camera.ts SHOW_KM_MAX_WIDE。
+   */
+  viewScale?: number;
   /** 标签放置点，缺省用 bbox 中心 */
   label?: { lon: number; lat: number; rotation: number };
   pois?: TerrainPoi[];
@@ -1297,10 +1303,12 @@ const HEXI_CORRIDOR: TerrainEntry = {
   nameEn: "Hexi Corridor",
   category: "valley",
   regionId: "china",
-  landmark: { name: "张掖丹霞", lon: 100.1, lat: 38.95, elevation: 1500, kind: "corridor" },
+  // 锚点取张掖绿洲本身（走廊廊道 + 南侧祁连雪山 + 北侧荒山），
+  // 而非张掖丹霞这一处局部彩色岩层
+  landmark: { name: "张掖绿洲", lon: 100.45, lat: 38.93, elevation: 1480, kind: "corridor" },
   bbox: [95.6, 37.7, 103.7, 41.2],
   axis: [[96.0, 39.8], [103.5, 37.9]],
-  viewFrom: 45,
+  viewFrom: 20, // 相机在走廊北侧，向南看祁连山雪线 + 山前绿洲带
   label: { lon: 99.5, lat: 39.0, rotation: -30 },
   pois: [
     { name: "嘉峪关", lon: 98.29, lat: 39.8, note: "明长城西端起点" },
@@ -1732,6 +1740,62 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   TASMANIA,
   MURRAY_DARLING,
 ];
+
+/**
+ * 大面积地形取景放大系数（见 lib/terrain-camera.ts `SHOW_KM_MAX_WIDE`）。
+ * 只给"拉近看只会看到一个局部景物、看不出地貌本身"的高原 / 大盆地 / 大平原 / 大沙漠。
+ * 集中在这里维护，避免逐条改。
+ */
+const WIDE_VIEW: Record<string, number> = {
+  // 看出"一整片"的超大地貌
+  "qinghai-tibet": 2.7,
+  "inner-mongolia": 2.5,
+  "tarim-basin": 2.6,
+  "junggar-basin": 2.4,
+  taklamakan: 2.5,
+  gobi: 2.6,
+  northeast: 2.4,
+  "great-artesian-basin": 2.6,
+  "great-victoria-desert": 2.5,
+  "great-dividing-range": 2.4,
+  "murray-darling": 2.4,
+  kimberley: 2.2,
+  // 大高原 / 大盆地 / 大平原
+  loess: 1.9,
+  "yunnan-guizhou": 1.9,
+  qaidam: 1.9,
+  sichuan: 1.8,
+  "north-china": 2.0,
+  yangtze: 2.0,
+  "hexi-corridor": 1.9,
+  "simpson-desert": 2.0,
+  "nullarbor-plain": 1.9,
+  "badain-jaran": 1.8,
+  "lake-eyre": 1.8,
+  "jiangnan-hills": 1.8,
+  "liangguang-hills": 1.9,
+  pilbara: 1.7,
+  "great-barrier-reef": 1.8,
+  // 中等
+  pamir: 1.5,
+  "turpan-basin": 1.5,
+  gurbantunggut: 1.6,
+  tengger: 1.6,
+  "ulan-buh": 1.5,
+  kubuqi: 1.6,
+  muus: 1.5,
+  "guanzhong-plain": 1.5,
+  "hetao-plain": 1.5,
+  "yangtze-delta": 1.5,
+  "pearl-delta": 1.5,
+  ertis: 1.5,
+  "tarim-river": 1.7,
+  "yarkant-river": 1.6,
+};
+for (const e of TERRAIN_REGISTRY) {
+  const s = WIDE_VIEW[e.id];
+  if (s && e.viewScale === undefined) e.viewScale = s;
+}
 
 const REGISTRY_BY_ID: Map<string, TerrainEntry> = new Map(
   TERRAIN_REGISTRY.map((e) => [e.id, e])

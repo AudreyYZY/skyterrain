@@ -111,9 +111,12 @@ TerrainEntry（registry: 锚点 landmark + bbox + axis + viewFrom）
 
 - **锚点 landmark** = 该地形最标志性的地物（主峰/主湖/枢纽城市），相机对准这里。
 - **heading/pitch/range** 全部由 bbox 规模 + axis 走向推导，不写死。
-  仅 `viewFrom`（相机在锚点的哪一侧，编辑决策）可按地形显式给定。
+  仅 `viewFrom`（相机在锚点的哪一侧）、`viewScale`（取景放大系数）可按地形显式给定。
 - **相机位置 target** = 从锚点沿 viewFrom 反方向按几何偏移，使锚点落在画面中部。
-- 超大地形（青藏/昆仑/喜马拉雅）：`showKm` 封顶 → 聚焦锚点周边代表性区段。
+- 普通地形：`showKm` 封顶 120km。**大面积高原/大盆地/大平原/大沙漠**（青藏/内蒙古/塔里木/
+  云贵/华北平原…）在 `terrain-registry.ts` 的 `WIDE_VIEW` 里给 `viewScale`（1.5–2.7），
+  `showKm` 放宽到 320km、range 到 340km —— 让画面看出"一整片高地/盆地/平原"的地貌特征，
+  而不是锚点周边一个局部景物（湖 / 城市）。
 - 自检: `node --experimental-strip-types scripts/check-terrain-camera.ts`
 
 调参常量集中在 `lib/terrain-camera.ts` 顶部（FRAME_HALF_ANGLE_DEG / PITCH_* /
