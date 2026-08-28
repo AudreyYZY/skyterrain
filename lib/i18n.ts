@@ -15,14 +15,6 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "Flight Geography Explorer",
     "en-US": "Flight Geography Explorer",
   },
-  "header.exploration": {
-    "zh-CN": "探索",
-    "en-US": "Explore",
-  },
-  "header.photo": {
-    "zh-CN": "照片",
-    "en-US": "Photo",
-  },
   "sidebar.terrain_exploration": {
     "zh-CN": "地貌探索",
     "en-US": "Terrain Exploration",
