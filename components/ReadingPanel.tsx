@@ -4,7 +4,7 @@ import SourceAttribution from "@/components/SourceAttribution";
 import StructuredLesson from "@/components/StructuredLesson";
 import { t, type Language } from "@/lib/i18n";
 import type { TerrainKnowledge, TerrainLesson } from "@/types/terrain";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface ReadingPanelProps {
   language: Language;
@@ -13,11 +13,23 @@ interface ReadingPanelProps {
   knowledge?: TerrainKnowledge | null;
   isSpeaking: boolean;
   isRouteFlying?: boolean;
+  /** 航线飞行中：整条航线的解说稿 */
+  routeNarration?: string | null;
+  /** 航线飞行中：当前飞越的地形名 */
+  flyoverName?: string | null;
   activeSentenceIndex?: number | null;
   activeSection?: string | null;
   onPlay: () => void;
   onStop: () => void;
   onClose: () => void;
+}
+
+/** 按中英标点分句 */
+function splitSentences(text: string): string[] {
+  return text
+    .split(/(?<=[。！？.!?])/g)
+    .map((s) => s.trim())
+    .filter(Boolean);
 }
 
 /**
@@ -32,6 +44,8 @@ export default function ReadingPanel({
   knowledge,
   isSpeaking,
   isRouteFlying,
+  routeNarration,
+  flyoverName,
   activeSentenceIndex,
   activeSection,
   onPlay,
@@ -39,6 +53,7 @@ export default function ReadingPanel({
   onClose,
 }: ReadingPanelProps) {
   const [expanded, setExpanded] = useState(false);
+  const activeRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     if (isSpeaking) setExpanded(true);
@@ -49,15 +64,55 @@ export default function ReadingPanel({
     setExpanded(false);
   }, [terrain?.name]);
 
-  // route flying, nothing selected yet
-  if (!terrain && isRouteFlying) {
+  useEffect(() => {
+    activeRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, [activeSentenceIndex]);
+
+  // ---- 航线飞行中：一段连贯解说 + 当前飞越地形 ----
+  if (isRouteFlying) {
+    const sentences = routeNarration ? splitSentences(routeNarration) : [];
     return (
-      <aside className="absolute right-3 top-14 z-30 w-[290px] panel-slide-in">
-        <div className="glass-panel rounded-2xl px-5 py-4">
-          <p className="editorial-kicker mb-1">{t("journey.routes", language)}</p>
-          <p className="reading-body text-[0.95rem] text-[color:var(--ink-dim)]">
-            {t("panel.flyover_hint", language)}
-          </p>
+      <aside className="absolute right-0 top-0 bottom-0 z-30 w-full max-w-[420px] panel-slide-in">
+        <div className="flex h-full flex-col border-l border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl">
+          <div className="border-b border-[color:var(--hairline)] px-6 py-4">
+            <span className="editorial-kicker text-[color:var(--accent)]">
+              {t("journey.routes", language)}
+            </span>
+            {flyoverName && (
+              <h2 className="editorial-title mt-1 text-[20px] leading-tight">
+                {flyoverName}
+              </h2>
+            )}
+          </div>
+          <div className="reading-scroll flex-1 overflow-y-auto px-6 py-5">
+            {sentences.length > 0 ? (
+              <p className="reading-body">
+                {sentences.map((s, i) => {
+                  const isActive = activeSentenceIndex === i;
+                  const isPast =
+                    activeSentenceIndex != null && i < activeSentenceIndex;
+                  return (
+                    <span
+                      key={i}
+                      ref={isActive ? activeRef : undefined}
+                      className={[
+                        "transition-colors duration-500",
+                        isActive ? "text-[color:var(--ink)]" : "",
+                        isPast ? "text-[color:var(--ink-faint)]" : "",
+                        !isActive && !isPast ? "text-[color:var(--ink-dim)]" : "",
+                      ].join(" ")}
+                    >
+                      {s}
+                    </span>
+                  );
+                })}
+              </p>
+            ) : (
+              <p className="reading-body text-[color:var(--ink-dim)]">
+                {t("panel.flyover_hint", language)}
+              </p>
+            )}
+          </div>
         </div>
       </aside>
     );

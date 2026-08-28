@@ -49,16 +49,18 @@ export interface CesiumMapHandle {
 }
 
 export interface RouteFlyCallbacks {
-  /** 飞抵航点：触发讲解（非阻塞，镜头继续飞行） */
-  onWaypointArrival: (
-    waypoint: ResolvedWaypoint,
-    index: number
-  ) => Promise<void> | void;
+  /** 飞行开始：播放整条航线的解说，返回 Promise（解说结束时 resolve）。非阻塞 —— 镜头同时飞行。 */
+  onNarrate: () => Promise<void>;
+  /** 镜头经过某航点（非阻塞，仅用于同步面板显示当前地形名） */
+  onFlyoverWaypoint?: (waypoint: ResolvedWaypoint, index: number) => void;
   onPreparingRoute?: () => void;
   onRouteReady?: () => void;
   onComplete: () => void;
   onCancelled?: () => void;
 }
+
+/** 一条航线的镜头飞行总时长（秒）—— 与 ~700 字解说大致对齐，控制在 3 分钟内 */
+const ROUTE_FLIGHT_SEC = 165;
 
 export type TerrainMode = "world" | "ellipsoid";
 
@@ -115,10 +117,6 @@ function quarticEaseOut(t: number): number {
   return 1 - (1 - t) ** 4;
 }
 
-/** 缓入缓出 — 用于概览和过渡，平滑起停 */
-function smoothStep(t: number): number {
-  return t * t * (3 - 2 * t);
-}
 
 /**
  * 等待地形/影像瓦片收敛
@@ -791,68 +789,95 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
         void import("cesium").then(async (Cesium) => {
           const waypoints = resolveRouteWaypoints(route);
-          if (waypoints.length < 1) return;
+          if (waypoints.length < 2) return;
 
           callbacks.onPreparingRoute?.();
           setRoutePreparing(true);
 
+          // 轻量准备：采样航点地表高程（用于镜头高度）+ 画航线
           await preloadRoute(Cesium, viewer, waypoints, heightCacheRef.current);
-
           if (flightCancelledRef.current) {
             setRoutePreparing(false);
             callbacks.onCancelled?.();
             return;
           }
+          drawRouteLine(Cesium, viewer, waypoints, routeEntityRef);
+
+          // 立刻把镜头摆到起点机场上空、朝向航线方向（不做慢飞概览）
+          const start = waypoints[0]!;
+          const next = waypoints[1]!;
+          const startDest = await cameraAt(
+            Cesium, viewer, start.lat, start.lon,
+            route.cruiseHeight ?? 11000, start.elevation ?? 200,
+            heightCacheRef.current
+          );
+          viewer.camera.setView({
+            destination: startDest,
+            orientation: {
+              heading: bearingRadians(start.lat, start.lon, next.lat, next.lon),
+              pitch: Cesium.Math.toRadians(WINDOW_PITCH_DEG),
+              roll: Cesium.Math.toRadians(CRUISE_ROLL_DEG),
+            },
+          });
+          viewer.scene.requestRender();
 
           setRoutePreparing(false);
           callbacks.onRouteReady?.();
+          await sleep(600);
+          if (flightCancelledRef.current) { callbacks.onCancelled?.(); return; }
 
-          drawRouteLine(Cesium, viewer, waypoints, routeEntityRef);
+          // 解说与镜头飞行并行
+          const narrationDone = Promise.resolve(callbacks.onNarrate()).catch(() => {});
 
-          // Phase 1: Show route overview — let the user see the full route
-          await flyToRouteOverview(Cesium, viewer, waypoints);
-          await sleep((route.overviewDwellSec ?? 4) * 1000);
-
-          if (flightCancelledRef.current) {
-            callbacks.onCancelled?.();
-            return;
+          // 镜头沿航线匀速飞完，总时长 ROUTE_FLIGHT_SEC；各段按距离分配时间
+          const segDist: number[] = [];
+          let totalDist = 0;
+          for (let i = 1; i < waypoints.length; i++) {
+            const d = haversineMeters(
+              waypoints[i - 1]!.lat, waypoints[i - 1]!.lon,
+              waypoints[i]!.lat, waypoints[i]!.lon
+            );
+            segDist.push(d);
+            totalDist += d;
           }
 
-          // Phase 2: Sequential flight — fly to waypoint, narrate, then continue
-          for (let i = 0; i < waypoints.length; i++) {
-            if (flightCancelledRef.current) {
-              callbacks.onCancelled?.();
-              return;
-            }
+          for (let i = 1; i < waypoints.length; i++) {
+            if (flightCancelledRef.current) { callbacks.onCancelled?.(); return; }
+            const from = waypoints[i - 1]!;
+            const to = waypoints[i]!;
+            const legSec = Math.max(6, ROUTE_FLIGHT_SEC * (segDist[i - 1]! / totalDist));
 
-            const wp = waypoints[i]!;
+            const targetHeight = viewHeightForTerrain(to.terrain, route.cruiseHeight ?? 11000);
+            const dest = await cameraAt(
+              Cesium, viewer, to.lat, to.lon, targetHeight,
+              to.elevation ?? to.terrain?.elevation ?? 500,
+              heightCacheRef.current
+            );
 
-            // Fly to this waypoint (camera moves)
-            if (i > 0) {
-              const from = waypoints[i - 1]!;
-              await flyLeg(Cesium, viewer, from, wp, route, heightCacheRef.current);
-            }
+            await new Promise<void>((resolve) => {
+              viewer.camera.flyTo({
+                destination: dest,
+                duration: legSec,
+                easingFunction: Cesium.EasingFunction.LINEAR_NONE,
+                orientation: {
+                  heading: bearingRadians(from.lat, from.lon, to.lat, to.lon),
+                  pitch: Cesium.Math.toRadians(WINDOW_PITCH_DEG),
+                  roll: Cesium.Math.toRadians(CRUISE_ROLL_DEG),
+                },
+                complete: () => resolve(),
+                cancel: () => resolve(),
+              });
+            });
 
-            if (flightCancelledRef.current) {
-              callbacks.onCancelled?.();
-              return;
-            }
-
-            // 关键：await 叙述完成 — 镜头在航点等待，叙述完成后再继续
-            await callbacks.onWaypointArrival(wp, i);
-
-            if (flightCancelledRef.current) {
-              callbacks.onCancelled?.();
-              return;
-            }
-
-            // 短暂停留 — 让用户消化内容后镜头再移动
-            await sleep((route.dwellDuringFlightSec ?? 8) * 1000);
+            if (flightCancelledRef.current) { callbacks.onCancelled?.(); return; }
+            // 非阻塞：同步面板显示当前飞越的地形
+            if (to.kind === "terrain") callbacks.onFlyoverWaypoint?.(to, i);
           }
 
-          if (!flightCancelledRef.current) {
-            callbacks.onComplete();
-          }
+          // 镜头到终点后，等解说播完（封顶 60s，避免异常时卡住）
+          await Promise.race([narrationDone, sleep(60000)]);
+
+          if (!flightCancelledRef.current) callbacks.onComplete();
         });
       },
     }));
@@ -1538,87 +1563,6 @@ async function preloadRoute(
 
   await sleep(300);
   viewer.scene.requestRender();
-}
-
-async function flyToRouteOverview(
-  Cesium: typeof import("cesium"),
-  viewer: import("cesium").Viewer,
-  waypoints: ResolvedWaypoint[]
-): Promise<void> {
-  const lons = waypoints.map((w) => w.lon);
-  const lats = waypoints.map((w) => w.lat);
-  const west = Math.min(...lons) - 0.8;
-  const east = Math.max(...lons) + 0.8;
-  const south = Math.min(...lats) - 0.5;
-  const north = Math.max(...lats) + 0.5;
-
-  // 先快速拉高到全景
-  return new Promise((resolve) => {
-    viewer.camera.flyTo({
-      destination: Cesium.Rectangle.fromDegrees(west, south, east, north),
-      duration: 5,
-      easingFunction: smoothStep,
-      orientation: {
-        heading: 0,
-        pitch: Cesium.Math.toRadians(-30), // 概览时角度稍平，看更广
-        roll: 0,
-      },
-      complete: () => resolve(),
-      cancel: () => resolve(),
-    });
-  });
-}
-
-function legDurationSec(
-  route: FlightRoute,
-  distanceM: number
-): number {
-  const bySpeed = distanceM / route.cruiseSpeedMps;
-  return Math.min(140, Math.max(route.minLegDurationSec, bySpeed));
-}
-
-async function flyLeg(
-  Cesium: typeof import("cesium"),
-  viewer: import("cesium").Viewer,
-  from: ResolvedWaypoint,
-  to: ResolvedWaypoint,
-  route: FlightRoute,
-  cache: Map<string, number>
-): Promise<void> {
-  const distance = haversineMeters(from.lat, from.lon, to.lat, to.lon);
-  const duration = legDurationSec(route, distance);
-  const heading = bearingRadians(from.lat, from.lon, to.lat, to.lon);
-
-  // 地形感知高度：山脉和河谷降低，沙漠升高
-  const targetHeight = viewHeightForTerrain(to.terrain, route.cruiseHeight);
-
-  const dest = await cameraAt(
-    Cesium,
-    viewer,
-    to.lat,
-    to.lon,
-    targetHeight,
-    to.terrain?.elevation ?? 500,
-    cache
-  );
-
-  return new Promise((resolve) => {
-    viewer.camera.flyTo({
-      destination: dest,
-      duration,
-      easingFunction: quarticEaseOut,
-      orientation: {
-        heading,
-        pitch: Cesium.Math.toRadians(WINDOW_PITCH_DEG),
-        roll: Cesium.Math.toRadians(CRUISE_ROLL_DEG),
-      },
-      complete: () => {
-        viewer.scene.requestRender();
-        resolve();
-      },
-      cancel: () => resolve(),
-    });
-  });
 }
 
 function drawRouteLine(

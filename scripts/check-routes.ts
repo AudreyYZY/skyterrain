@@ -11,6 +11,7 @@
  */
 
 import { TERRAIN_REGISTRY } from "../lib/terrain-registry.ts";
+import { ROUTE_NARRATION } from "../lib/route-narration.ts";
 import pekUrc from "../data/routes/pek-urc.json" with { type: "json" };
 import ctuLxa from "../data/routes/ctu-lxa.json" with { type: "json" };
 import canLxa from "../data/routes/can-lxa.json" with { type: "json" };
@@ -48,6 +49,10 @@ for (const r of ROUTES) {
     fail(r.id, "flight 字段不完整");
   }
   if (!r.nameEn || !r.descriptionEn) fail(r.id, "缺少英文名/描述");
+
+  const narr = (ROUTE_NARRATION as any)[r.id];
+  if (!narr?.["zh-CN"] || !narr?.["en-US"]) fail(r.id, "缺少航线解说 route-narration");
+  else if (narr["zh-CN"].length < 200) fail(r.id, "中文解说过短");
 
   // 解析坐标序列
   const coords: [number, number][] = [];
