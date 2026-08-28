@@ -2,7 +2,6 @@ import aibi from "@/data/aibi.json";
 import altai from "@/data/altai.json";
 import bachu from "@/data/bachu.json";
 import bayanbulak from "@/data/bayanbulak.json";
-import bogda from "@/data/bogda.json";
 import bosten from "@/data/bosten.json";
 import ertis from "@/data/ertis.json";
 import flamingMountains from "@/data/flaming-mountains.json";
@@ -18,7 +17,6 @@ import kumtag from "@/data/kumtag.json";
 import kunlun from "@/data/kunlun.json";
 import lopNur from "@/data/lop-nur.json";
 import maigaiti from "@/data/maigaiti.json";
-import muztaghAta from "@/data/muztagh-ata.json";
 import narat from "@/data/narat.json";
 import pamir from "@/data/pamir.json";
 import sayram from "@/data/sayram.json";
@@ -43,9 +41,7 @@ const RAW_TERRAINS = [
   altai,
   kunlun,
   karakoram,
-  bogda,
   pamir,
-  muztaghAta,
   // Lakes
   kanas,
   sayram,

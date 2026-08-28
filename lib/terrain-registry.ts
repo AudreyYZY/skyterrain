@@ -25,11 +25,14 @@ export type TerrainCategory =
   | "river"
   | "valley"
   | "gorge"
-  | "delta"
   | "island"
-  | "scenic"
-  | "oasis"
-  | "city";
+  | "grassland"
+  | "coast"
+  | "inselberg"
+  | "settlement";
+
+// 分类定义与选取标准见 docs/terrain-taxonomy.md
+// `delta` 已并入 `plain`；`scenic` 已拆分；`city` + `oasis` 已合并为 `settlement`。
 
 export type LandmarkKind =
   | "peak"
@@ -89,6 +92,12 @@ export interface TerrainEntry {
    * 只在自动推导选错侧时设置；range/pitch/偏移距离仍全部由数据推导。
    */
   viewFrom?: number;
+  /**
+   * 取景放大系数（默认 1）。大面积高原 / 盆地 / 平原 / 沙漠设 >1，
+   * 让相机拉远到能看出"这是一整片高地 / 盆地 / 平原"的地貌特征，
+   * 而不是锚点周边一个局部景物。见 lib/terrain-camera.ts SHOW_KM_MAX_WIDE。
+   */
+  viewScale?: number;
   /** 标签放置点，缺省用 bbox 中心 */
   label?: { lon: number; lat: number; rotation: number };
   pois?: TerrainPoi[];
@@ -113,8 +122,11 @@ const TIANSHAN: TerrainEntry = {
   label: { lon: 88.13, lat: 43.88, rotation: -8 },
   pois: [
     { name: "托木尔峰", lon: 80.12, lat: 42.03, note: "天山最高峰，海拔7443m（国测局）" },
-    { name: "天池", lon: 88.12, lat: 43.88, note: "天山冰蚀湖，海拔1910m" },
+    { name: "博格达峰", lon: 88.35, lat: 43.83, note: "天山东段主峰，海拔5445m，乌鲁木齐旁" },
+    { name: "天池", lon: 88.12, lat: 43.88, note: "博格达峰北坡冰蚀湖，海拔1910m" },
     { name: "伊犁河谷", lon: 81.6, lat: 43.6, note: "天山西段绿洲谷地" },
+    { name: "博罗科努山", lon: 84.3, lat: 44.0, note: "天山北支，伊犁河谷与准噶尔盆地之间" },
+    { name: "塔尔巴哈台山", lon: 83.5, lat: 47.1, note: "天山山系北缘界山，塔城地区北部" },
   ],
   source: "博格达峰: 维基/百科; 托木尔峰 42°02′N 80°07′E: 国测局(WebSearch 2026)",
 };
@@ -172,20 +184,6 @@ const KARAKORAM: TerrainEntry = {
   source: "乔戈里峰 K2: 维基 35°52′57″N 76°30′48″E",
 };
 
-const BOGDA: TerrainEntry = {
-  id: "bogda",
-  nameZh: "博格达峰",
-  nameEn: "Bogda Peak",
-  category: "mountain_system",
-  regionId: "xinjiang",
-  landmark: { name: "博格达峰", lon: 88.35, lat: 43.83, elevation: 5445, kind: "peak" },
-  bbox: [87.9, 43.6, 88.8, 44.05],
-  label: { lon: 88.3, lat: 43.8, rotation: 0 },
-  pois: [
-    { name: "天池", lon: 88.12, lat: 43.88, note: "博格达峰北坡冰蚀湖" },
-  ],
-  source: "博格达峰: 维基/百科",
-};
 
 const PAMIR: TerrainEntry = {
   id: "pamir",
@@ -204,21 +202,6 @@ const PAMIR: TerrainEntry = {
   source: "慕士塔格峰 38°16′32″N 75°06′57″E: 维基(WebSearch 2026)",
 };
 
-const MUZTAGH_ATA: TerrainEntry = {
-  id: "muztagh-ata",
-  nameZh: "慕士塔格峰",
-  nameEn: "Muztagh Ata",
-  category: "mountain_system",
-  regionId: "xinjiang",
-  landmark: { name: "慕士塔格峰", lon: 75.116, lat: 38.276, elevation: 7509, kind: "peak" },
-  bbox: [74.8, 38.0, 75.5, 38.6],
-  viewFrom: 90, // 相机在喀拉库勒湖东侧
-  label: { lon: 75.06, lat: 38.28, rotation: 0 },
-  pois: [
-    { name: "喀拉库勒湖", lon: 75.05, lat: 38.44, note: "冰川融水湖，倒映峰体" },
-  ],
-  source: "慕士塔格峰: 维基(WebSearch 2026)",
-};
 
 // ============================================================
 // 新疆 — 湖泊
@@ -462,7 +445,7 @@ const FLAMING_MOUNTAINS: TerrainEntry = {
   id: "flaming-mountains",
   nameZh: "火焰山",
   nameEn: "Flaming Mountains",
-  category: "scenic",
+  category: "hills",
   regionId: "xinjiang",
   landmark: { name: "胜金口—吐峪沟段", lon: 89.62, lat: 42.93, elevation: 500, kind: "escarpment" },
   bbox: [88.9, 42.8, 90.3, 43.02],
@@ -474,7 +457,7 @@ const NARAT: TerrainEntry = {
   id: "narat",
   nameZh: "那拉提草原",
   nameEn: "Nalati Grassland",
-  category: "scenic",
+  category: "grassland",
   regionId: "xinjiang",
   landmark: { name: "那拉提空中草原", lon: 84.0, lat: 43.32, elevation: 1800, kind: "grassland" },
   bbox: [83.6, 43.1, 84.6, 43.5],
@@ -486,7 +469,7 @@ const KUCHE: TerrainEntry = {
   id: "kuche",
   nameZh: "库车大峡谷",
   nameEn: "Kuqa Grand Canyon",
-  category: "scenic",
+  category: "gorge",
   regionId: "xinjiang",
   landmark: { name: "天山神秘大峡谷", lon: 83.05, lat: 42.23, elevation: 1600, kind: "gorge" },
   bbox: [82.6, 42.0, 83.5, 42.5],
@@ -498,7 +481,7 @@ const BAYANBULAK: TerrainEntry = {
   id: "bayanbulak",
   nameZh: "巴音布鲁克草原",
   nameEn: "Bayanbulak Grassland",
-  category: "scenic",
+  category: "grassland",
   regionId: "xinjiang",
   landmark: { name: "九曲十八弯（开都河曲流）", lon: 84.13, lat: 43.0, elevation: 2500, kind: "meander" },
   bbox: [83.5, 42.7, 85.0, 43.4],
@@ -510,7 +493,7 @@ const KASHGAR: TerrainEntry = {
   id: "kashgar",
   nameZh: "喀什",
   nameEn: "Kashgar",
-  category: "city",
+  category: "settlement",
   regionId: "xinjiang",
   landmark: { name: "艾提尕尔—喀什老城", lon: 75.99, lat: 39.47, elevation: 1290, kind: "city" },
   bbox: [75.8, 39.3, 76.2, 39.65],
@@ -522,7 +505,7 @@ const HOTAN: TerrainEntry = {
   id: "hotan",
   nameZh: "和田",
   nameEn: "Hotan",
-  category: "city",
+  category: "settlement",
   regionId: "xinjiang",
   landmark: { name: "和田市中心", lon: 79.93, lat: 37.11, elevation: 1370, kind: "city" },
   bbox: [79.7, 36.9, 80.2, 37.3],
@@ -534,7 +517,7 @@ const TURPAN_CITY: TerrainEntry = {
   id: "turpan-city",
   nameZh: "吐鲁番",
   nameEn: "Turpan",
-  category: "city",
+  category: "settlement",
   regionId: "xinjiang",
   landmark: { name: "吐鲁番高昌区中心", lon: 89.18, lat: 42.95, elevation: 30, kind: "city" },
   bbox: [89.0, 42.8, 89.4, 43.1],
@@ -546,7 +529,7 @@ const BACHU: TerrainEntry = {
   id: "bachu",
   nameZh: "巴楚",
   nameEn: "Bachu",
-  category: "oasis",
+  category: "settlement",
   regionId: "xinjiang",
   landmark: { name: "巴楚绿洲", lon: 78.55, lat: 39.79, elevation: 1150, kind: "oasis" },
   bbox: [78.3, 39.6, 78.9, 40.0],
@@ -558,7 +541,7 @@ const MAIGAITI: TerrainEntry = {
   id: "maigaiti",
   nameZh: "麦盖提",
   nameEn: "Makit",
-  category: "oasis",
+  category: "settlement",
   regionId: "xinjiang",
   landmark: { name: "麦盖提绿洲（刀郎文化）", lon: 77.65, lat: 38.9, elevation: 1200, kind: "oasis" },
   bbox: [77.4, 38.7, 77.9, 39.1],
@@ -1030,33 +1013,7 @@ const ALTUN: TerrainEntry = {
   source: "阿尔金山 NE 多边形；主峰 ≈5798m；塔里木盆地与青藏高原之间",
 };
 
-const TARBAGATAY: TerrainEntry = {
-  id: "tarbagatay",
-  nameZh: "塔尔巴哈台山",
-  nameEn: "Tarbagatay Range",
-  category: "mountain_system",
-  regionId: "china",
-  landmark: { name: "塔尔巴哈台山脊", lon: 83.5, lat: 47.1, elevation: 2980, kind: "peak" },
-  bbox: [82.5, 46.3, 85.8, 48.2],
-  axis: [[82.7, 47.0], [85.6, 47.2]],
-  viewFrom: 180,
-  label: { lon: 84.0, lat: 47.1, rotation: -5 },
-  source: "塔尔巴哈台山 NE 多边形（中国段）；塔城地区北部界山",
-};
 
-const BOROHORO: TerrainEntry = {
-  id: "borohoro",
-  nameZh: "博罗科努山",
-  nameEn: "Borohoro Mountains",
-  category: "mountain_system",
-  regionId: "china",
-  landmark: { name: "博罗科努主脊", lon: 84.3, lat: 44.0, elevation: 4200, kind: "peak" },
-  bbox: [81.1, 42.9, 86.9, 45.0],
-  axis: [[81.5, 43.6], [86.5, 44.2]],
-  viewFrom: 0,
-  label: { lon: 84.0, lat: 44.0, rotation: -8 },
-  source: "博罗科努山 NE 多边形；天山北支，伊犁河谷与准噶尔盆地之间",
-};
 
 // ============================================================
 // 全国 — 平原 / 三角洲（补充）
@@ -1107,7 +1064,7 @@ const YANGTZE_DELTA: TerrainEntry = {
   id: "yangtze-delta",
   nameZh: "长江三角洲",
   nameEn: "Yangtze River Delta",
-  category: "delta",
+  category: "plain",
   regionId: "china",
   landmark: { name: "长江入海口（崇明岛）", lon: 121.8, lat: 31.6, elevation: 5, kind: "delta" },
   bbox: [119.0, 30.0, 122.5, 32.6],
@@ -1123,7 +1080,7 @@ const PEARL_DELTA: TerrainEntry = {
   id: "pearl-delta",
   nameZh: "珠江三角洲",
   nameEn: "Pearl River Delta",
-  category: "delta",
+  category: "plain",
   regionId: "china",
   landmark: { name: "珠江口（虎门）", lon: 113.6, lat: 22.8, elevation: 5, kind: "delta" },
   bbox: [112.4, 21.7, 114.5, 23.6],
@@ -1253,7 +1210,7 @@ const LEIZHOU: TerrainEntry = {
   id: "leizhou",
   nameZh: "雷州半岛",
   nameEn: "Leizhou Peninsula",
-  category: "hills",
+  category: "coast",
   regionId: "china",
   landmark: { name: "雷州半岛", lon: 110.1, lat: 20.9, elevation: 40, kind: "peak" },
   bbox: [109.6, 20.2, 110.6, 21.6],
@@ -1297,10 +1254,12 @@ const HEXI_CORRIDOR: TerrainEntry = {
   nameEn: "Hexi Corridor",
   category: "valley",
   regionId: "china",
-  landmark: { name: "张掖丹霞", lon: 100.1, lat: 38.95, elevation: 1500, kind: "corridor" },
+  // 锚点取张掖绿洲本身（走廊廊道 + 南侧祁连雪山 + 北侧荒山），
+  // 而非张掖丹霞这一处局部彩色岩层
+  landmark: { name: "张掖绿洲", lon: 100.45, lat: 38.93, elevation: 1480, kind: "corridor" },
   bbox: [95.6, 37.7, 103.7, 41.2],
   axis: [[96.0, 39.8], [103.5, 37.9]],
-  viewFrom: 45,
+  viewFrom: 20, // 相机在走廊北侧，向南看祁连山雪线 + 山前绿洲带
   label: { lon: 99.5, lat: 39.0, rotation: -30 },
   pois: [
     { name: "嘉峪关", lon: 98.29, lat: 39.8, note: "明长城西端起点" },
@@ -1608,7 +1567,7 @@ const ULURU: TerrainEntry = {
   id: "uluru",
   nameZh: "乌鲁鲁（艾尔斯岩）",
   nameEn: "Uluṟu",
-  category: "scenic",
+  category: "inselberg",
   regionId: "australia",
   landmark: { name: "乌鲁鲁", lon: 131.036, lat: -25.345, elevation: 863, kind: "peak" },
   bbox: [130.9, -25.45, 131.15, -25.24],
@@ -1620,7 +1579,7 @@ const KATA_TJUTA: TerrainEntry = {
   id: "kata-tjuta",
   nameZh: "卡塔丘塔（奥尔加山）",
   nameEn: "Kata Tjuṯa",
-  category: "scenic",
+  category: "inselberg",
   regionId: "australia",
   landmark: { name: "奥尔加山", lon: 130.74, lat: -25.30, elevation: 1066, kind: "peak" },
   bbox: [130.65, -25.40, 130.83, -25.22],
@@ -1632,7 +1591,7 @@ const GREAT_BARRIER_REEF: TerrainEntry = {
   id: "great-barrier-reef",
   nameZh: "大堡礁",
   nameEn: "Great Barrier Reef",
-  category: "scenic",
+  category: "coast",
   regionId: "australia",
   landmark: { name: "凯恩斯外礁", lon: 146.2, lat: -16.5, elevation: 0, kind: "island" },
   bbox: [143.0, -24.0, 152.0, -10.0],
@@ -1645,7 +1604,7 @@ const TWELVE_APOSTLES: TerrainEntry = {
   id: "twelve-apostles",
   nameZh: "十二门徒岩",
   nameEn: "Twelve Apostles",
-  category: "scenic",
+  category: "coast",
   regionId: "australia",
   landmark: { name: "十二门徒岩", lon: 143.104, lat: -38.665, elevation: 45, kind: "escarpment" },
   bbox: [142.9, -38.75, 143.5, -38.55],
@@ -1679,13 +1638,67 @@ const MURRAY_DARLING: TerrainEntry = {
   source: "墨累-达令水系：澳大利亚最大河系（>3500km），横贯东南部内陆",
 };
 
+// —— 分类标准审定后补录（docs/terrain-taxonomy.md §4）——
+
+const KGARI: TerrainEntry = {
+  id: "kgari",
+  nameZh: "弗雷泽岛（K'gari）",
+  nameEn: "K'gari (Fraser Island)",
+  category: "island",
+  regionId: "australia",
+  landmark: { name: "麦肯锡湖", lon: 153.055, lat: -25.443, elevation: 100, kind: "lake" },
+  bbox: [152.9, -25.95, 153.42, -24.68],
+  axis: [[153.15, -25.9], [153.05, -24.75]],
+  label: { lon: 153.2, lat: -25.3, rotation: 0 },
+  source: "K'gari：世界最大沙岛（约123km、1660km²），沙丘上生长雨林；世界自然遗产（Parks Australia / UNESCO）",
+};
+
+const KAKADU: TerrainEntry = {
+  id: "kakadu",
+  nameZh: "卡卡杜",
+  nameEn: "Kakadu",
+  category: "plain",
+  regionId: "australia",
+  landmark: { name: "阿纳姆地崖线（吉姆吉姆瀑布）", lon: 132.83, lat: -13.27, elevation: 250, kind: "escarpment" },
+  bbox: [131.6, -13.9, 133.1, -12.3],
+  label: { lon: 132.3, lat: -12.9, rotation: 0 },
+  viewScale: 1.6,
+  source: "卡卡杜：热带季风湿地 + 阿纳姆地砂岩崖线，约2万km²；世界自然与文化双遗产（Parks Australia）",
+};
+
+const GRAMPIANS: TerrainEntry = {
+  id: "grampians",
+  nameZh: "格兰坪山（Gariwerd）",
+  nameEn: "Grampians (Gariwerd)",
+  category: "mountain_system",
+  regionId: "australia",
+  landmark: { name: "威廉山（Duwul）", lon: 142.604, lat: -37.297, elevation: 1167, kind: "peak" },
+  bbox: [141.9, -37.65, 142.75, -36.8],
+  axis: [[142.4, -37.6], [142.5, -36.85]],
+  label: { lon: 142.5, lat: -37.2, rotation: -6 },
+  source: "格兰坪山：维多利亚州西部翘起的砂岩单面山群，最高威廉山1167m（Parks Victoria / Geoscience Australia）",
+};
+
+const NINGALOO: TerrainEntry = {
+  id: "ningaloo",
+  nameZh: "宁格罗礁",
+  nameEn: "Ningaloo",
+  category: "coast",
+  regionId: "australia",
+  landmark: { name: "珊瑚湾外礁", lon: 113.77, lat: -23.14, elevation: 0, kind: "escarpment" },
+  bbox: [113.4, -23.7, 114.25, -21.8],
+  axis: [[113.9, -23.6], [113.65, -21.9]],
+  label: { lon: 113.6, lat: -22.6, rotation: 0 },
+  source: "宁格罗礁：西澳裾礁（fringing reef，紧贴海岸，长约260km），与大堡礁的堡礁形成对比；世界自然遗产（Parks Australia）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
 
 export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // 新疆 — 山脉
-  TIANSHAN, ALTAI, KUNLUN, KARAKORAM, BOGDA, PAMIR, MUZTAGH_ATA,
+  TIANSHAN, ALTAI, KUNLUN, KARAKORAM, PAMIR,
   // 新疆 — 湖泊
   KANAS, SAYRAM, TIANCHI, BOSTEN, AIBI, LOP_NUR,
   // 新疆 — 沙漠
@@ -1694,13 +1707,12 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   JUNGGAR_BASIN, TARIM_BASIN, TURPAN_BASIN,
   // 新疆 — 河谷 / 河流
   ILI_VALLEY, TARIM_RIVER, ERTIS, YARKANT_RIVER,
-  // 新疆 — 景观 / 绿洲 / 城市
+  // 新疆 — 草原 / 峡谷 / 丘陵 / 绿洲聚落
   FLAMING_MOUNTAINS, NARAT, KUCHE, BAYANBULAK, KASHGAR, HOTAN, TURPAN_CITY, BACHU, MAIGAITI,
   // 全国 — 山脉
   QINLING, QILIAN, TAIHANG, DAXINGANLING, HENGDUAN, HIMALAYA,
   XIAOXINGANLING, CHANGBAI, YINSHAN, LULIANG, HELAN, LIUPAN,
   DABASHAN, XUEFENG, WUYI, NANLING, DABIE, DALOU, ALTUN,
-  TARBAGATAY, BOROHORO,
   // 全国 — 高原
   QINGHAI_TIBET, LOESS, INNER_MONGOLIA, YUNNAN_GUIZHOU,
   // 全国 — 盆地
@@ -1729,9 +1741,66 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   GREAT_ARTESIAN_BASIN,
   LAKE_EYRE,
   ULURU, KATA_TJUTA, GREAT_BARRIER_REEF, TWELVE_APOSTLES,
-  TASMANIA,
+  TASMANIA, KGARI,
   MURRAY_DARLING,
+  KAKADU, GRAMPIANS, NINGALOO,
 ];
+
+/**
+ * 大面积地形取景放大系数（见 lib/terrain-camera.ts `SHOW_KM_MAX_WIDE`）。
+ * 只给"拉近看只会看到一个局部景物、看不出地貌本身"的高原 / 大盆地 / 大平原 / 大沙漠。
+ * 集中在这里维护，避免逐条改。
+ */
+const WIDE_VIEW: Record<string, number> = {
+  // 看出"一整片"的超大地貌
+  "qinghai-tibet": 2.7,
+  "inner-mongolia": 2.5,
+  "tarim-basin": 2.6,
+  "junggar-basin": 2.4,
+  taklamakan: 2.5,
+  gobi: 2.6,
+  northeast: 2.4,
+  "great-artesian-basin": 2.6,
+  "great-victoria-desert": 2.5,
+  "great-dividing-range": 2.4,
+  "murray-darling": 2.4,
+  kimberley: 2.2,
+  // 大高原 / 大盆地 / 大平原
+  loess: 1.9,
+  "yunnan-guizhou": 1.9,
+  qaidam: 1.9,
+  sichuan: 1.8,
+  "north-china": 2.0,
+  yangtze: 2.0,
+  "hexi-corridor": 1.9,
+  "simpson-desert": 2.0,
+  "nullarbor-plain": 1.9,
+  "badain-jaran": 1.8,
+  "lake-eyre": 1.8,
+  "jiangnan-hills": 1.8,
+  "liangguang-hills": 1.9,
+  pilbara: 1.7,
+  "great-barrier-reef": 1.8,
+  // 中等
+  pamir: 1.5,
+  "turpan-basin": 1.5,
+  gurbantunggut: 1.6,
+  tengger: 1.6,
+  "ulan-buh": 1.5,
+  kubuqi: 1.6,
+  muus: 1.5,
+  "guanzhong-plain": 1.5,
+  "hetao-plain": 1.5,
+  "yangtze-delta": 1.5,
+  "pearl-delta": 1.5,
+  ertis: 1.5,
+  "tarim-river": 1.7,
+  "yarkant-river": 1.6,
+};
+for (const e of TERRAIN_REGISTRY) {
+  const s = WIDE_VIEW[e.id];
+  if (s && e.viewScale === undefined) e.viewScale = s;
+}
 
 const REGISTRY_BY_ID: Map<string, TerrainEntry> = new Map(
   TERRAIN_REGISTRY.map((e) => [e.id, e])

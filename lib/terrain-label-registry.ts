@@ -21,11 +21,11 @@ export type LandformCategory =
   | "peak"
   | "river"
   | "gorge"
-  | "delta"
   | "island"
-  | "scenic"
-  | "oasis"
-  | "city";
+  | "grassland"
+  | "coast"
+  | "inselberg"
+  | "settlement";
 
 export interface TerrainLabel {
   id: string;
@@ -53,11 +53,11 @@ const CATEGORY_MAP: Record<TerrainCategory, LandformCategory> = {
   river: "river",
   valley: "river",
   gorge: "gorge",
-  delta: "delta",
   island: "island",
-  scenic: "scenic",
-  oasis: "oasis",
-  city: "city",
+  grassland: "grassland",
+  coast: "coast",
+  inselberg: "inselberg",
+  settlement: "settlement",
 };
 
 /**
@@ -155,9 +155,9 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
   if (IMPORTANCE_BY_ID[id]) return IMPORTANCE_BY_ID[id];
-  // 大类地貌默认至少「区域级」——否则常规缩放看不到标签，
-  // 只有 city / oasis / 小景点默认为 poi
-  if (category === "city" || category === "oasis" || category === "scenic") return "poi";
+  // 大类地貌默认至少「区域级」——否则常规缩放看不到标签（见 PR #9）。
+  // 只有点状小地物（绿洲聚落 / 单体岛山）默认为 poi。
+  if (category === "settlement" || category === "inselberg") return "poi";
   return "regional";
 }
 

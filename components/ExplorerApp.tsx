@@ -40,7 +40,8 @@ const routes = getAllRoutes();
 /** Sidebar 统一分类类型 */
 type SidebarCategory =
   | "mountain" | "plateau" | "basin" | "plain" | "hill"
-  | "lake" | "desert" | "river" | "gorge" | "island" | "landscape";
+  | "lake" | "desert" | "river" | "gorge" | "island"
+  | "grassland" | "coast" | "inselberg" | "settlement";
 
 /** 分类字形（左侧 rail 用，中英通用的几何符号）*/
 const CATEGORY_GLYPH: Record<SidebarCategory, string> = {
@@ -54,7 +55,10 @@ const CATEGORY_GLYPH: Record<SidebarCategory, string> = {
   river: "≈",
   gorge: "⋁",
   island: "⬠",
-  landscape: "✦",
+  grassland: "≋",
+  coast: "⌇",
+  inselberg: "◮",
+  settlement: "⌂",
 };
 
 /** 分类翻译 key 映射 */
@@ -69,7 +73,10 @@ const CATEGORY_I18N_KEY: Record<SidebarCategory, string> = {
   river: "sidebar.rivers",
   gorge: "sidebar.gorges",
   island: "sidebar.islands",
-  landscape: "sidebar.landscape",
+  grassland: "sidebar.grasslands",
+  coast: "sidebar.coasts",
+  inselberg: "sidebar.inselbergs",
+  settlement: "sidebar.settlements",
 };
 
 /**
@@ -105,11 +112,14 @@ function normalizeType(raw: string, name?: string): SidebarCategory | null {
       return "gorge";
     case "island":
       return "island";
-    case "scenic":
-    case "oasis":
-    case "city":
-    case "silk_road":
-      return "landscape";
+    case "grassland":
+      return "grassland";
+    case "coast":
+      return "coast";
+    case "inselberg":
+      return "inselberg";
+    case "settlement":
+      return "settlement";
     default:
       return null;
   }
@@ -137,8 +147,11 @@ const SIDEBAR_CATEGORIES: { type: SidebarCategory; label: string }[] = [
   { type: "river", label: "河谷" },
   { type: "lake", label: "湖泊" },
   { type: "desert", label: "沙漠" },
+  { type: "grassland", label: "草原" },
+  { type: "coast", label: "海岸" },
   { type: "island", label: "岛屿" },
-  { type: "landscape", label: "景观" },
+  { type: "inselberg", label: "岛山" },
+  { type: "settlement", label: "绿洲·聚落" },
 ];
 
 const FEATURE_GROUPS = SIDEBAR_CATEGORIES.map(g => ({
@@ -182,7 +195,10 @@ function registryCatToFeatureType(cat: string): import("@/features/types").Featu
     case "plain":
     case "delta":
     case "hills":
+    case "grassland":
+    case "coast":
     case "island": return "plain";
+    case "inselberg": return "mountain_system";
     case "desert": return "desert";
     case "lake": return "lake";
     case "river":
