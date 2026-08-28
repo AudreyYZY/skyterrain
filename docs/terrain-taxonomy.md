@@ -259,7 +259,13 @@ history` 三段并在 `resolveLesson` 里对 `settlement` 类跳过其余段。�
 
 ---
 
-## 11. 注册表改动清单（审定后执行）
+## 11. 注册表改动清单
+
+> 状态：**11.1–11.3 + 11.4 已实施**（分支 `refactor/taxonomy-apply`，2026-08-29）。
+> 例外：`types/terrain.ts` 旧 `TerrainCategory`（`mountain_range`/`silk_road`…）属另一个
+> 濒死子系统（`lib/terrain.ts` / `terrain-categories.ts` 的新疆 JSON 层），本轮**未动**，
+> 留待单独清理；注册表 `TerrainCategory` 已按下表更新。已删 `lib/terrain-hierarchy.ts`、
+> `lib/city-lessons.ts`（死代码）。
 
 ### 11.1 重分类（不增删条目）
 

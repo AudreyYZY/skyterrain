@@ -50,7 +50,7 @@ export const REGIONS: Region[] = [
       lat: 35.0,
       height: 8000000,      // 8,000km — 飞行高度，能看到整个中国
     },
-    terrainCount: 88,
+    terrainCount: 84, // = TERRAIN_REGISTRY 中 regionId china|xinjiang（见 docs/terrain-taxonomy.md）
     available: true,
   },
   {
@@ -62,7 +62,7 @@ export const REGIONS: Region[] = [
       lat: -27.0,
       height: 4300000,
     },
-    terrainCount: 18,
+    terrainCount: 22,
     available: true,
   },
 ];

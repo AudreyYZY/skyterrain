@@ -15,7 +15,9 @@
 
 ## 范围
 
-- **已有**: 中国全境地貌（88 个）+ 澳大利亚（18 个），中英双语
+- **已有**: 中国全境地貌（84 个，含新疆）+ 澳大利亚（22 个），中英双语
+  - 地形集选取标准与分类定义见 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点；
+    分类判据；`settlement` 人文层的收录方法）
 - **进行中**: 美国、英国，之后按旅游热度扩展其它安全国家
 - **远期**: 全球地貌探索
 
@@ -57,7 +59,7 @@ components/
   StructuredLesson.tsx   — 6 板块讲解渲染（editorial 衬线排版）
 
 lib/
-  terrain-registry.ts    — 【单一真实源】88 个地形的位置/锚点/范围/走向/中英名
+  terrain-registry.ts    — 【单一真实源】106 个地形的位置/锚点/范围/走向/中英名（选取标准见 docs/terrain-taxonomy.md）
   terrain-camera.ts      — 数据驱动相机推导 computeTerrainCamera()
   terrain-content.{zh,en}.ts — 权威 6 板块讲解内容（中/英）；terrain-content.ts = 索引
   terrain-lesson.ts      — resolveLesson(id, lang)：一处决定用哪份讲解（内容→stories→兜底）
@@ -79,7 +81,7 @@ features/
 
 ## 当前阶段
 
-**地图/交互/双语已完成**：106 个地形注册表（中国 88 + 澳大利亚 18）+ 数据驱动相机 +
+**地图/交互/双语已完成**：106 个地形注册表（中国 84 + 澳大利亚 22）+ 数据驱动相机 +
 标签分级（双语）+ 地形抬升高亮 + 自然语音（跟随语言）+ 逐句高亮 + 真实航班航线 +
 纪录片编辑式界面。
 
@@ -124,8 +126,13 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 
 ## 地形集 / 标签 / 区域高亮
 
-- **`TERRAIN_REGISTRY`（88 个）= 单一真实源**：全国主要地貌（山脉/高原/盆地/平原/丘陵/
-  峡谷/河谷/湖泊/沙漠/岛屿）。分类见 `TerrainCategory`。坐标逐个查权威来源，`source` 留痕。
+- **`TERRAIN_REGISTRY`（106 个）= 单一真实源**：主要地貌 + 少量人文聚落。
+  `TerrainCategory`：mountain_system / plateau / basin / plain / hills / desert / lake /
+  river / valley / gorge / island / grassland / coast / inselberg / settlement。
+  **选取标准与分类判据见 `docs/terrain-taxonomy.md`**（勿凭感觉加条目/改分类）。
+  坐标逐个查权威来源，`source` 留痕。
+  `settlement`（绿洲·聚落）= 人文-地貌交界层，讲解只用「概述 / 从空中怎么看 / 历史与人文」
+  三段（`formation` 留空自动跳过）；收录需满足 H1 区域锚点 / H2 航线沿途 / H3 地貌样本之一。
 - **侧边栏 + 地图标签都由注册表驱动**：`ExplorerApp.ALL_FEATURES` = `TERRAIN_REGISTRY.map`；
   `handleSelectById(id)` 统一入口（新疆 json / china-core 有内容则讲解，否则占位）。
 - 精确边界：`scripts/extract-ne-landforms.mjs` 从 `data/gis/ne_10m_geography_regions_polys`

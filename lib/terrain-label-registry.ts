@@ -21,11 +21,11 @@ export type LandformCategory =
   | "peak"
   | "river"
   | "gorge"
-  | "delta"
   | "island"
-  | "scenic"
-  | "oasis"
-  | "city";
+  | "grassland"
+  | "coast"
+  | "inselberg"
+  | "settlement";
 
 export interface TerrainLabel {
   id: string;
@@ -53,11 +53,11 @@ const CATEGORY_MAP: Record<TerrainCategory, LandformCategory> = {
   river: "river",
   valley: "river",
   gorge: "gorge",
-  delta: "delta",
   island: "island",
-  scenic: "scenic",
-  oasis: "oasis",
-  city: "city",
+  grassland: "grassland",
+  coast: "coast",
+  inselberg: "inselberg",
+  settlement: "settlement",
 };
 
 /**
@@ -161,10 +161,11 @@ function importanceOf(id: string, category: TerrainCategory): Importance {
     category === "basin" ||
     category === "plain" ||
     category === "hills" ||
-    category === "delta" ||
+    category === "grassland" ||
     category === "island"
   )
     return "regional";
+  // coast / inselberg / gorge / settlement / lake / river / valley / desert → poi 级
   return "poi";
 }
 

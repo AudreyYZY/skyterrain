@@ -799,4 +799,56 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The rivers were travel routes and rich food sources for dozens of Aboriginal nations, whose fish traps and scarred canoe trees line the banks. Paddle steamers carried wool and supplies from the 1850s. Water sharing between the states has been disputed since Federation and remains so.",
   },
+
+  // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
+
+  kashgar: {
+    seeing:
+      "Kashgar (Kashi) sits at the far western edge of the Tarim Basin, on the piedmont plain where the Pamir, Tian Shan and Kunlun ranges meet. Rivers such as the Kizil and the Gez spread into alluvial fans here, and groundwater and canal water at the fan edges support a large oasis, with the city at its centre.",
+    formation: "",
+    observation:
+      "From the air Kashgar is a big block of checkerboard green — fields, shelter-belts and canals — ringed by brown gobi and desert, with the dense old and new city at the centre. To the west the oasis ends quickly and the land climbs into the brown Pamir; to the east lies the sand sea of the Taklamakan.",
+    history:
+      "Kashgar is the gateway where the southern and central Silk Road met before crossing the Pamir into Central and South Asia — a trading city for over two thousand years, part of the kingdom of Shule in Han times. It is mainly Uyghur today; the Id Kah Mosque is China's largest, and the old town's terraced earthen houses are a living traditional quarter. A National Historic and Cultural City.",
+  },
+
+  hotan: {
+    seeing:
+      "Hotan lies at the northern foot of the Kunlun and the southern edge of the Taklamakan, on a narrow oasis strip squeezed between high mountains and desert. The White Jade River (Yurungkash) and Black Jade River (Karakash) descend from the Kunlun and build alluvial fans at the mountain front, and the oasis grows along their water.",
+    formation: "",
+    observation:
+      "From the air Hotan is a broken string of green dots along the desert's southern rim, hard against the pale grey shadow of the Kunlun. The fans at the two river mouths are the greenest; the oasis narrows and frays toward the desert. On dusty days the whole oasis vanishes into haze.",
+    history:
+      "Hotan was the ancient kingdom of Khotan, a major Silk Road town and once an important Buddhist centre (the Niya and Rawak sites). Its two rivers have yielded nephrite jade since antiquity — the \"Jade Road\" predates the Silk Road. It is mainly Uyghur today, known for jade, atlas silk and carpets.",
+  },
+
+  "turpan-city": {
+    seeing:
+      "The city of Turpan sits inside the Turpan Depression at the southern foot of Bogda Peak, not far north of Lake Ayding at about -154 m — the lowest land in China. It lies among the Flaming Mountains, gobi, and karez-fed oasis.",
+    formation: "",
+    observation:
+      "From the air Turpan is a deep-green oasis surrounded by red-brown gobi and the Flaming Mountains, with vine trellises and shelter-belts covering the basin floor. Look closely and you see neat rows of small earth mounds across the oasis — the shafts of the karez, underground channels that carry Tian Shan snowmelt here and keep the oasis alive.",
+    history:
+      "This was successively the centre of Jushi, the Gaochang kingdom and the Qocho Uyghurs; the ruined cities of Jiaohe and Gaochang and the Bezeklik caves are all nearby. Extreme heat (among the hottest places in China) plus karez water made it famous for grapes and Hami melons. It is mainly Uyghur today.",
+  },
+
+  bachu: {
+    seeing:
+      "Bachu lies on the western edge of the Tarim Basin, on the alluvial plain of the lower Yarkand River, on the corridor between Kashgar and Aksu, with the Taklamakan to its east. It is a little-known farming county where oasis, desert steppe and natural poplar forest interlace.",
+    formation: "",
+    observation:
+      "From the air Bachu is a broken patchwork of green along the tail of the Yarkand River: dark belts of wild poplar (Populus euphratica) line the channel, pale desert steppe and salt flats lie beyond, and then the sand. The river's flow swings widely between wet and dry years, and the green expands and shrinks with it.",
+    history:
+      "In Han times the area belonged to small Western-Regions states such as Weitou. It is mainly Uyghur today, growing cotton, wheat and fruit on Yarkand River irrigation; wild poplar forest and Bachu mushrooms are local specialities. It is a textbook case of the Tarim rim, where the oasis reaches exactly as far as the river.",
+  },
+
+  maigaiti: {
+    seeing:
+      "Makit (Maigaiti) lies in the south-west of the Tarim Basin on the east bank of the Yarkand River. It is described as the only county town in China set inside the desert — the town is wrapped on three sides by the Taklamakan, and desert once made up about 90% of the county's area. A single oasis is held together by Yarkand River water.",
+    formation: "",
+    observation:
+      "From the air Makit is a small strip of riverside green in a yellow sand sea, its edge held by belts of wild and planted poplar that block the drifting sand. Just beyond the oasis run the long linear dunes typical of the Taklamakan. There is sea-buckthorn wetland along the Donghe flats.",
+    history:
+      "Makit is the heartland of the Dolan people; Dolan muqam and Dolan meshrep are both national intangible-heritage items (the muqam is also on the UNESCO list). Dolan culture grew up along the Yarkand River at the desert's edge, and the drums and dance of the meshrep are its sharpest expression.",
+  },
 };

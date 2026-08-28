@@ -94,14 +94,16 @@ const INTRO_VIEW = {
 
 /** 不同地貌类型的理想观看高度（米，离地） */
 const TERRAIN_VIEW_HEIGHTS: Record<string, number> = {
-  mountain_range: 8000,   // 山脉：降低高度以感受山体规模
+  mountain_system: 8000,  // 山脉：降低高度以感受山体规模
   lake: 6000,             // 湖泊：近距离俯瞰湖面
   desert: 16000,          // 沙漠：升高以感受荒漠辽阔
   basin: 12000,           // 盆地：中等高度
   valley: 6000,           // 河谷：低飞穿越
   river: 8000,            // 河流：中低高度
-  city: 5000,             // 城市：近距离观看
-  scenic: 7000,           // 景观：适中距离
+  grassland: 12000,       // 草原：中等高度看开阔
+  coast: 6000,            // 海岸：近距离看海蚀地貌
+  inselberg: 5000,        // 岛山：贴近看单体
+  settlement: 5000,       // 绿洲聚落：近距离观看
 };
 
 function heightCacheKey(lon: number, lat: number): string {
@@ -185,12 +187,12 @@ function viewHeightForTerrain(
 
 /** 有精确 Natural Earth 轮廓的地形（data/gis/exports/*.geojson）*/
 const TERRAIN_RING_FILES = new Set([
-  "alataw", "altai", "altun", "borohoro", "dabie", "dalou", "daxinganling",
+  "alataw", "altai", "altun", "dabie", "dalou", "daxinganling",
   "gobi", "hainan", "hexi-corridor", "himalaya", "inner-mongolia", "junggar-basin",
   "karakoram", "kunlun", "leizhou", "liaodong-hills", "loess", "luliang", "muus",
   "nanling", "north-china", "northeast", "pamir", "qaidam", "qilian", "qinghai-tibet",
   "qinling", "shandong-hills", "sichuan", "taihang", "taiwan", "taklamakan",
-  "tarbagatay", "tarim-basin", "tianshan", "tsangpo-gorge", "wuyi", "xiaoxinganling",
+  "tarim-basin", "tianshan", "tsangpo-gorge", "wuyi", "xiaoxinganling",
   "yangtze-gorges", "yinshan", "yunnan-guizhou",
 ]);
 

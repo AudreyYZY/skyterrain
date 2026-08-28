@@ -58,6 +58,22 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "景观",
     "en-US": "Landscape",
   },
+  "sidebar.grasslands": {
+    "zh-CN": "草原",
+    "en-US": "Grasslands",
+  },
+  "sidebar.coasts": {
+    "zh-CN": "海岸",
+    "en-US": "Coasts",
+  },
+  "sidebar.inselbergs": {
+    "zh-CN": "岛山",
+    "en-US": "Inselbergs",
+  },
+  "sidebar.settlements": {
+    "zh-CN": "绿洲·聚落",
+    "en-US": "Oases & Towns",
+  },
   "sidebar.plains": {
     "zh-CN": "平原",
     "en-US": "Plains",
