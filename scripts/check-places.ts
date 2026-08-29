@@ -15,11 +15,11 @@ import { REGIONS } from "../lib/regions.ts";
 import { TRAVEL_CONTENT_ZH } from "../lib/travel-content.zh.ts";
 import { TRAVEL_CONTENT_EN } from "../lib/travel-content.en.ts";
 
-const hasZh = (id: string) => Boolean(TRAVEL_CONTENT_ZH[id] ?? TRAVEL_CONTENT_EN[id]);
-const hasEn = (id: string) => Boolean(TRAVEL_CONTENT_EN[id] ?? TRAVEL_CONTENT_ZH[id]);
+const hasZh = (id: string) => Boolean(TRAVEL_CONTENT_ZH[id]);
+const hasEn = (id: string) => Boolean(TRAVEL_CONTENT_EN[id]);
 
-/** Task 11 完成后改为 true —— 缺 travel-content 视为硬失败 */
-const CONTENT_REQUIRED = false;
+/** 缺 travel-content 视为硬失败 */
+const CONTENT_REQUIRED = true;
 
 let failures = 0;
 const fail = (m: string) => {
