@@ -1102,6 +1102,157 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The desert edge was a segment of the ancient Silk Road, with old beacon towers nearby. The name Shanshan (anciently Loulan, later the kingdom of Shanshan) comes from a Western-Regions kingdom of this area. It is now a desert scenic area whose feature is the town meeting the sand.",
   },
 
+
+  xiaoxinganling: {
+    seeing:
+      "The Lesser Khingan Range runs through north-central Heilongjiang, trending NW–SE between the Songnen Plain and the Sanjiang Plain, and dividing the two. It is lower than the Greater Khingan, mostly 500–800 m, with rounded, gentle summits and a dense mixed conifer-broadleaf forest.",
+    formation:
+      "The Lesser Khingan is a low, worn fold range that was later slowly uplifted; it is mostly granite and metamorphic rock, with basalt plateaus and volcanic landforms among it (the Wudalianchi volcanic group sits on its south-western edge). Rivers have cut the range into broad, shallow valleys.",
+    observation:
+      "From the air the Lesser Khingan is a rounded, continuous, dark-green sea of low forested hills, with no sharp peaks or bare rock. The Tangwang and Hulan rivers wind through the woods. The Songnen and Sanjiang plains on either side are checkerboard farmland, with a sharp edge against the forest.",
+    distinguish:
+      "The Lesser and Greater Khingan: the Greater Khingan is the long north–south body dividing the Inner Mongolian Plateau from the Northeast Plain, grassland on its west; the Lesser Khingan lies to the north-east, trends more east–west (NW–SE), divides the Songnen and Sanjiang plains, and is lower, farther east and moister. Versus Changbai Shan: Changbai is an isolated high volcano, the Lesser Khingan a continuous low fold range.",
+    concept:
+      "The Lesser Khingan is an example of \"a low range as an important geographic line\": it is not high, but as a watershed it separates two great plains of the Songhua system, and it is the northern limit of the Korean pine forest. With the Greater Khingan and Changbai Shan it forms the \"green screen\" on three sides of the Northeast Plain.",
+    history:
+      "The Lesser Khingan is traditional hunting ground of the Oroqen and Ewenki, and was once one of China's most important logging regions (the Yichun area was called \"the home of Korean pine\"). Commercial logging of natural forest has now stopped entirely, replaced by conservation and eco-tourism.",
+  },
+
+  yinshan: {
+    seeing:
+      "The Yin Mountains run east–west across the central Inner Mongolian Plateau for about 1,000 km, made up of the Lang Shan, Wula Shan, Daqing Shan and other sections. The south slope is steep and drops onto the Hetao Plain and the Loess Plateau; the north slope is gentle and merges into the Inner Mongolian Plateau. The summit area is about 2,300–2,400 m.",
+    formation:
+      "The Yin Shan is a fault-block range, sharply uplifted along a fault on its southern edge, giving the steep south face, with a gentler north slope; the rock is mostly old metamorphic rock and granite. It roughly blocks moist air on its southern side, so the landscape north and south of it is markedly different.",
+    observation:
+      "From the air the Yin Shan is an east–west grey-brown rock wall across the Inner Mongolian Plateau: green Hetao Plain irrigated from the Yellow River to the south, arid steppe and gobi to the north — a strong contrast. Cities such as Hohhot and Baotou lie along the southern foot of the Daqing Shan.",
+    distinguish:
+      "The Yin Shan and the Helan Shan: both are boundary ranges between the monsoon and non-monsoon zones, and between farming and herding, but the Yin Shan is in central Inner Mongolia, east–west and longer; the Helan Shan is in Ningxia, north–south and shorter, and blocks sand and wind from the north-west. The Yin Shan and the Qinling: the Qinling is the climate line between north and south China, higher and moister; the Yin Shan is the line through the farming–herding transition belt, drier.",
+    concept:
+      "The Yin Shan roughly marks one of China's boundaries between the monsoon and non-monsoon zones, exterior and interior drainage, and farming and herding, and lies close to the 400 mm annual-rainfall line. Powers to its north and south fought back and forth across this line through history — \"Yin Shan\" is almost a byword for the farming–herding divide.",
+    history:
+      "The land north and south of the Yin Shan was long contested between the Central Plains dynasties and the Xiongnu, Turks and others; the Zhao and Qin walls were both built along the Yin Shan. Yin Shan rock art records thousands of years of hunting and life among the steppe peoples. The Northern Wei set the \"six garrisons\" along the Yin Shan.",
+  },
+
+  luliang: {
+    seeing:
+      "The Lüliang Mountains run north–south through western Shanxi and are the watershed between the Yellow River (west) and the Fen River (east). The range is buried under thick loess, with rolling ridges and hills cut by a maze of gullies and severe soil erosion. The main peak, Guandi (Xiaowen) Shan, is about 2,831 m.",
+    formation:
+      "At its core the Lüliang is an old fold-and-fault range, later covered over large areas by loess. Loess is loose and erodes easily, and with steep slopes and vegetation once stripped, running water has cut the slopes into dense branching gullies — one significant source of the middle Yellow River's silt.",
+    observation:
+      "From the air the Lüliang Mountains are a yellow, gully-shredded north–south highland in the eastern Loess Plateau, the ridge line still fairly continuous, the Yellow River and Fen River valleys on either side holding ribbons of farmland and towns. Conversion of farmland to forest has re-greened some slopes in recent years.",
+    distinguish:
+      "The Lüliang and the Taihang: both are in Shanxi and both run north–south, but the Taihang is on the east, the boundary between the Loess Plateau and the North China Plain, with a cliff on its east face; the Lüliang is on the west, inside the Loess Plateau, the divide between the Yellow and Fen rivers, covered in loess throughout.",
+    concept:
+      "The Lüliang is a classic \"loess-covered range\": a hard rock range at the base, wrapped in a hundred metres of loess, so from a distance it is a range and up close it is loess gullies everywhere. It also shows that a watershed need not be a lofty peak — a low ridge buried in loess can still keep two great river systems apart.",
+    history:
+      "The Lüliang area is an old revolutionary base and was the core of the Shanxi–Suiyuan base during the war against Japan. It is also an important home of Chinese folk song and wheat-flour food culture. Its long record of soil-erosion control and farmland-to-forest conversion is a microcosm of ecological repair on the Loess Plateau.",
+  },
+
+  liupan: {
+    seeing:
+      "The Liupan Mountains lie in southern Ningxia and eastern Gansu, a rocky north–south range in the western Loess Plateau. It is higher and far moister than the loess hills around it, with stands of forest on its slopes — a \"green island\" on the Loess Plateau. The main peak, Migang Shan, is about 2,942 m.",
+    formation:
+      "The Liupan is a fault-and-fold range strongly uplifted since the Cenozoic, built of hard sandstone and conglomerate and not wholly buried by loess. Because it is high and windward, it catches more rain and has developed forest and alpine meadow, in sharp contrast with the arid loess around it.",
+    observation:
+      "From the air the Liupan is a dark-green north–south ridge on the western edge of the Loess Plateau, standing out above the pale-yellow loess hills. The Jing and Qingshui rivers rise here. Cloud and mist are common, and the road climbs the mountain in coils — hence the name \"six coils.\"",
+    distinguish:
+      "The Liupan and the Helan Shan: both in Ningxia and both north–south, but the Helan is in the north, arid bare rock, blocking sand and wind; the Liupan is in the south, moist and forested, the divide between the Wei and Jing rivers. The Liupan and the Lüliang: the Lüliang is loess-covered and known for soil erosion; the Liupan is a rock range known as the \"green island of the plateau.\"",
+    concept:
+      "The Liupan shows how uplift makes a \"wet island\": on an arid loess plateau, a range that is high and windward enough will catch extra rain and turn a small patch of the dry country into forest. Such wet islands matter greatly for regional water supply and ecology.",
+    history:
+      "In 1935 the Central Red Army crossed the Liupan Mountains on the Long March — the last big mountain of the March — and Mao Zedong wrote the poem \"Qingpingyue: Mount Liupan\" here (\"you are no hero until you reach the Great Wall\"). The Liupan is now a national nature reserve and a site of \"red\" tourism.",
+  },
+
+  dabashan: {
+    seeing:
+      "The Daba Mountains straddle the borders of Shaanxi, Sichuan, Chongqing and Hubei, lying across the northern rim of the Sichuan Basin and trending roughly NW–SE. With the Qinling to the north they form a double screen against north–south air movement. The main peak, Hualong Shan, is about 2,917 m. The Micang Shan to the west is part of the range.",
+    formation:
+      "The Daba Shan is a range strongly folded and thrust up between the North China and Yangtze blocks, its rock mostly limestone and sandstone. The limestone areas develop gorges, caves and sinkholes; the range is deeply cut by tributaries of the Han and Jialing rivers, with deep valleys and steep slopes.",
+    observation:
+      "From the air the Daba Shan is a continuous, clearly folded dark-green rock wall on the northern rim of the Sichuan Basin, its ridges arcing in rows and cut across by deep valleys. Its south slope drops onto the red hills of the Sichuan Basin; its north slope meets the Hanzhong Basin. Cloud and mist are constant.",
+    distinguish:
+      "The Daba Shan and the Qinling: parallel, both east–west, both north of the Sichuan Basin, but the Qinling is farther north, more continuous, the main north–south divide; the Daba Shan is farther south, more broken, mainly the northern screen of the Sichuan Basin. Together they are called the \"Qinling–Daba mountains.\" The Daba Shan and the Hengduan: the Daba Shan is east–west and a fold range; the Hengduan is north–south with fault-block deep gorges.",
+    concept:
+      "The Daba Shan and the Qinling together show what a \"double wall\" means for climate: in winter a cold wave has to cross two ranges to reach the Sichuan Basin, and most of it is blocked, so the basin's winters are mild; in summer moisture is lifted and drops as rain on the windward side. The gentle climate of the \"land of abundance\" is largely a gift of these two ranges.",
+    history:
+      "The Daba Shan is so high and gorge-cut that travel was historically extremely hard, crossed by parts of the ancient \"roads to Shu\" (the Lizhi and Micang routes). It held several revolutionary base areas and is an important water-conservation zone for the middle route of the South-to-North Water Diversion (the Han River).",
+  },
+
+  xuefeng: {
+    seeing:
+      "The Xuefeng Mountains run NE–SW through western Hunan, a range on the eastern edge of the Yunnan–Guizhou Plateau where it grades into the Hunan hills and the Dongting Lake plain. Within Hunan it roughly marks the boundary between China's second and third topographic steps. The main peak, Subaoding, is about 1,934 m.",
+    formation:
+      "The Xuefeng is an old fold range, uplifted and eroded over a long time, built mainly of metamorphic rock and sandstone. It is the watershed between the Zi and Yuan rivers; the rivers on either side cut down into deep gorges, while the ridge crest is comparatively gentle.",
+    observation:
+      "From the air the Xuefeng is a continuous NE–SW dark-green ridge in western Hunan, the land clearly higher to the west toward the Yunnan–Guizhou Plateau and stepping down to the east into hills and the lake plain. The Zi and Yuan rivers wind in deep cuts on either side. The summit sees occasional snow in winter, hence the name (\"snow peak\").",
+    distinguish:
+      "The Xuefeng and the Nanling: both are southern watershed ranges, but the Nanling runs roughly east–west, divides the Yangtze and Pearl river systems, and marks the central–south China transition; the Xuefeng runs NE–SW, divides the Zi and Yuan rivers, and marks the transition from the Yunnan–Guizhou Plateau to the Hunan hills. The Xuefeng and the Wuyi: one is in western Hunan and a step boundary; the other is on the Fujian–Jiangxi border, known for Danxia and biodiversity.",
+    concept:
+      "The Xuefeng shows that \"a step boundary need not be very high\": it is under 2,000 m, but as the line of the second/third topographic steps through Hunan, the elevation, the depth of river incision and the climate all differ noticeably on either side. It is also a secondary barrier to cold air pushing south.",
+    history:
+      "In 1945 the last large-scale battle of the war against Japan — the Battle of West Hunan (Xuefeng Mountains Campaign) — was fought here and ended in a Chinese victory. The mountains are home to Miao, Dong and Yao peoples, whose terraced fields and stilt houses are adaptations to steep terrain.",
+  },
+
+  wuyi: {
+    seeing:
+      "The Wuyi Mountains straddle the Fujian–Jiangxi border, trending NE–SW, an important range of south-east China. The main peak, Huanggang Shan, is about 2,161 m, the highest point in mainland south-east China. The range is known for two things: the Danxia landform around the Nine-Bend Stream, and well-preserved mid-subtropical forest.",
+    formation:
+      "The body of the Wuyi is Yanshanian granite and volcanic rock, uplifted into mountains; the Nine-Bend Stream area is Cretaceous red sandstone and conglomerate, cut and collapsed by running water into flat-topped, steep-sided, gently-based red peaks and peak clusters — Danxia landform.",
+    observation:
+      "From the air the Wuyi is a continuous stretch of dark-green mid-elevation mountains between Fujian and Jiangxi, gullies running down both sides of the main ridge. The Nine-Bend Stream stands out: a jade-green stream winding in nine great bends among ochre-red mesas and rock pillars, tea gardens on the banks.",
+    distinguish:
+      "The Wuyi's Danxia and the Yunnan–Guizhou Plateau's karst: Danxia is red sandstone and conglomerate eroded and collapsed by running water into mesas and peak clusters (reddish); karst is limestone dissolved by water into peak forests and caves (greyish, with underground rivers). The Wuyi and the Nanling: the Wuyi is farther east and known for Danxia and forest; the Nanling is farther west and is the Yangtze–Pearl watershed.",
+    concept:
+      "The Wuyi is one of the type areas of \"Danxia landform\": the key is the rock — horizontal or gently dipping red sandstone and conglomerate, cut by vertical joints, which running water and gravity carve along the joints into isolated mesas and pillars. It also preserves a complete mid-subtropical mountain vertical vegetation sequence and is rich in species.",
+    history:
+      "The Wuyi was inscribed as a mixed World Cultural and Natural Heritage site in 1999. It is one of the birthplaces of Zhu Xi's neo-Confucianism (Zhu Xi taught here) and a famous tea region — Wuyi rock tea (such as Da Hong Pao) is grown among these rock walls.",
+  },
+
+  dabie: {
+    seeing:
+      "The Dabie Mountains straddle the borders of Hubei, Henan and Anhui, trending NW–SE, and are the watershed between the Yangtze and the Huai, roughly also the transition between the northern subtropics and the warm temperate zone. They are not high — the main peak, Baima Jian, is about 1,777 m — with a heavy, rounded profile.",
+    formation:
+      "The Dabie Shan is part of the collision belt between the North China and Yangtze blocks and has undergone intense metamorphism; the rock is mostly gneiss and other metamorphic rock, and it also exposes special rocks that record deep geological processes (such as eclogite), making it an important area for geological research. Long erosion has left it as rounded low-to-mid mountains.",
+    observation:
+      "From the air the Dabie Shan is a continuous, rounded, dark-green stretch of low-to-mid mountains between the Yangtze and the Huai, its ridge line not prominent, cut up by many reservoirs and streams. Water off its north slope goes to the Huai, off its south slope to the Yangtze. Tea gardens and farmland lie in the intermontane basins and valleys.",
+    distinguish:
+      "The Dabie Shan and the Qinling: both are watersheds between the Yangtze and another great river and both lie in the north–south transition belt, but the Qinling is higher, farther west and the main divide; the Dabie is lower, farther east and the divide between the Yangtze and the Huai. The Dabie and the Nanling: one divides the Yangtze and the Huai, the other the Yangtze and the Pearl.",
+    concept:
+      "The Dabie Shan is another example of \"a low range as a great watershed\": it is not high, yet it separates the drainage of two of China's great rivers in the east, and roughly marks a north–south climate transition line. Geologically it is one of the key windows into continental deep subduction.",
+    history:
+      "The Dabie area is a well-known old revolutionary base — the centre of the Hubei–Henan–Anhui Soviet during the land-revolution period; the Liu–Deng army's 1947 thrust into the Dabie Mountains was a turning point in the civil war. The area produces tea, chestnuts and medicinal herbs.",
+  },
+
+  dalou: {
+    seeing:
+      "The Dalou Mountains lie in northern Guizhou and southern Chongqing, trending NE–SW, the boundary range between the Yunnan–Guizhou Plateau and the Sichuan Basin. They separate the Guizhou plateau from the Chongqing basin and are the watershed of rivers such as the Wu and the Chishui. The main peak, Jinfo Shan, is about 2,238 m.",
+    formation:
+      "The Dalou Shan is a folded, uplifted range that exposes large amounts of limestone and develops classic karst: peak clusters, closed depressions, caves, sinkholes and underground rivers. Its north side drops steeply toward the Sichuan Basin, where rivers cut down hard into deep gorges (such as the Chishui valley).",
+    observation:
+      "From the air the Dalou Shan is a rolling dark-green highland on the northern rim of the Yunnan–Guizhou Plateau, dense with cone-shaped hills and closed hollows. The north slope is cut into deep gorges by rivers like the Chishui, the walls layered in red and grey rock. The pass at Loushan is a strategic gap.",
+    distinguish:
+      "The Dalou Shan and the body of the Yunnan–Guizhou Plateau: the Dalou Shan is the northern edge of the plateau, more deeply cut and gorge-filled, the \"scarp\" from plateau down to the Sichuan Basin; the plateau interior is comparatively gentle. The Dalou Shan and the Daba Shan: both are on the rim of the Sichuan Basin, but the Daba Shan is on the north rim and mainly a fold range; the Dalou Shan is on the south rim and known for karst.",
+    concept:
+      "The Dalou Shan shows the \"scarp\" character of the Yunnan–Guizhou Plateau's edge: the plateau surface itself is fairly gentle, but at the margin rivers plunge from plateau toward basin, cut down fiercely and carve deep gorges and waterfalls (the Danxia waterfalls around Chishui are here). The drop at the edge is one of the tests of whether a highland counts as a \"plateau.\"",
+    history:
+      "In 1935 the Red Army won a battle at the Loushan Pass in the Dalou Mountains on the Long March, and Mao Zedong wrote the poem \"Yi Qin'e: Loushan Pass\" here. The Chishui valley is a famous liquor-producing region. The area is also a concentration of Danxia and karst scenery.",
+  },
+
+  altun: {
+    seeing:
+      "The Altun Mountains lie in south-eastern Xinjiang and north-western Qinghai, trending roughly NE–SW, across the gap between the Tarim Basin and the Qaidam Basin and the Tibetan Plateau. They are the link between the Kunlun and the Qilian; the range is high, extremely arid and almost uninhabited, with summits over 6,000 m.",
+    formation:
+      "The Altun Mountains run along a huge strike-slip fault (the Altyn Tagh Fault) — one of the important tectonic boundaries along which the Tibetan Plateau spreads north and material \"escapes\" eastward, still active today. The range has been uplifted and strongly eroded, its north slope dropping steeply onto the southern rim of the Tarim Basin.",
+    observation:
+      "From the air the Altun Mountains are a straight, continuous brown rock wall between the Tarim Basin and the Tibetan Plateau, with scattered snow on the crest. To the north is the yellow sand sea of the Taklamakan, with almost no transition; to the south is a gently rolling, lake-dotted cold desert (the Altun Mountains Nature Reserve).",
+    distinguish:
+      "The Altun Mountains and the Kunlun and Qilian: the three are connected, with the Altun as the middle link — shorter than the Kunlun, drier than the Qilian. Its landform story belongs largely to the Kunlun and Qilian, and its \"character\" as an independent range is weak; its main significance is the great fault it follows.",
+    concept:
+      "The Altun Mountains are an example of \"strike-slip fault mountain-building\": not simple compressional uplift, but two blocks sliding past each other along a fault and being lifted along the slip zone. The Altyn Tagh Fault is one of the largest strike-slip faults in the world, and studying it helps show how the Tibetan Plateau both grows taller and spreads outward.",
+    history:
+      "The Altun Mountains area is barely peopled; the Altun Mountains National Nature Reserve, established in 1983, is important habitat for Tibetan antelope, wild yak and kiang, and one of China's largest reserves of the high cold-desert type. Some branch routes of the ancient Silk Road skirted its northern foot.",
+  },
+
   // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
 
   kashgar: {
