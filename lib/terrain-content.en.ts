@@ -860,6 +860,687 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ningaloo coast is the traditional sea country of the Yinigudura and other Aboriginal groups, with shell middens and rock art thousands of years old. There was a whaling station here in the 19th century (Norwegian Bay). A marine park was declared in 1987 and the area was World Heritage-listed in 2011.",
   },
 
+
+  kanas: {
+    seeing:
+      "Kanas Lake lies deep in the Altai Mountains at the far northern tip of China, at about 1,370 m — a long, narrow alpine lake. Its water changes colour with the weather, the season and the amount of suspended silt, from jade green to near-black blue, which is why it is called the \"colour-changing lake.\" It is ringed by dense Siberian conifer forest.",
+    formation:
+      "Kanas is a glacial-scour lake: a Quaternary glacier gouged a U-shaped valley, and after the ice retreated a terminal moraine (a ridge of glacier-carried gravel) dammed the valley mouth, so meltwater and rain pooled behind it. The lake is about 24 km long and around 190 m deep — one of the deepest lakes in China.",
+    observation:
+      "From the air Kanas is a curving blue ribbon set in a dark green sea of forest, held between two ridges, connected to snow mountains at one end and draining into the Kanas River at the other. The colour is uneven — greener and paler where the inflow carries silt, bluer downstream. Wolong Bay and Moon Bay to the west are large meanders of the river.",
+    distinguish:
+      "Compared with Sayram Lake in the Tianshan: Kanas is a glacial-scour lake gouged by ice and dammed by a moraine — long and narrow, boxed into a valley, ringed by conifer forest; Sayram is a fault-depression tectonic lake — rounded, sitting in an open mountain basin, ringed by grassland. Kanas is far lower, and drains to the Arctic Ocean via the Irtysh; Sayram is closed, internal drainage.",
+    concept:
+      "Kanas's \"colour change\" is not mysterious: extremely fine \"rock flour\" ground up by the glaciers upstream stays suspended in the water and scatters light green; when there is less silt the water is clear and deep blue. Many glacier-fed lakes do this. The Irtysh, which drains Kanas, is the only river system in China that flows to the Arctic Ocean.",
+    history:
+      "The lake area is traditional grazing land of the Tuvan people; the three Tuvan villages of Kanas, Hemu and Baihaba keep their log houses and transhumant herding. Winters are long and severe, and this is one of the few places in China where you see stands of Siberian larch, spruce and fir.",
+  },
+
+  sayram: {
+    seeing:
+      "Sayram Lake sits on the northern slope of the Tianshan at the south-western edge of the Junggar Basin, at about 2,070 m — the largest alpine lake in Xinjiang. It is a closed, internal-drainage lake, walled in by Tianshan mountain country, with deep blue, highly transparent water.",
+    formation:
+      "Sayram is generally taken to be a tectonic lake in a fault-depression mountain basin, later modified by glaciers. It is fed by snowmelt and rain off the surrounding mountains, has no outlet, and balances by evaporation, so it is slightly saline. Several old shorelines around the lake show that the water once stood higher than it does now.",
+    observation:
+      "From the air Sayram is a near-oval of deep blue, ringed by a band of green alpine meadow and then by the snow ranges of the Tianshan. A road runs around the east shore; strong winds blow constantly at the north-west. Because it is high and the water is deep and clear, it is bluer than any other water body around it.",
+    distinguish:
+      "See the Kanas entry. The core difference: Sayram is a tectonic lake in a down-faulted basin — rounded, ringed by grassland, closed and slightly saline; Kanas is a glacial-scour lake — long and narrow, ringed by conifer forest, part of an Arctic-draining river system.",
+    concept:
+      "Sayram shows why a large lake can persist in a high mountain basin: the basin is closed, snowmelt supply is steady, and inflow and evaporation are roughly in balance. With no outlet, minerals slowly accumulate and the water turns slightly salty — the common fate of every closed lake, and Sayram is still at an early stage of it.",
+    history:
+      "Sayram Lake was on the northern Silk Road route that crossed the Tianshan into the Ili valley. Kazakh and Mongol herders have moved stock through the lakeside pastures for generations. The lake had almost no fish until cold-water species were introduced in the 20th century.",
+  },
+
+  tianchi: {
+    seeing:
+      "Tianchi (Heavenly Lake) of the Tianshan lies on the northern slope of Bogda Peak, about 100 km east of Ürümqi, at around 1,900 m — a glacial-scour lake hung partway up the mountainside. From the window you can see the deep-blue lake, the spruce forest at its shore and the permanently snow-capped Bogda Peak behind it all at once. It was anciently called \"Yaochi.\"",
+    formation:
+      "Tianchi is a lake where a Quaternary glacier gouged a U-shaped valley, then a moraine ridge dammed the valley mouth after the ice retreated and meltwater pooled behind it. The lake is about 3 km long and around 100 m deep. Glacial striations, roches moutonnées and several moraine ridges around it record repeated advances and retreats of the ice.",
+    observation:
+      "From the air Tianchi is a crescent of deep blue on the north side of the Tianshan crest, boxed into a steep valley and standing higher than the valley floor below it. Above the lake is bare rock and the glaciers of Bogda; below it, spruce forest runs down the valley.",
+    distinguish:
+      "The Tianshan's Tianchi and Changbai Shan's Tianchi share a name but form completely differently: the Tianshan one is a glacial-scour lake dammed by a moraine — long and narrow, partway up the mountain; the Changbai one is a caldera lake formed by summit collapse after an eruption — near-circular, at the summit. The Tianshan Tianchi and Kanas are both glacial-scour lakes, but Tianchi is smaller, higher and closer to the snow peaks.",
+    concept:
+      "Tianchi is a close-up sample of \"how a glacier makes a lake\": the ice first gouges a deep valley like a bulldozer, then piles a dam of its own carried rubble across the valley mouth; the ice melts, the dam stays, and the water is held. Lakes of this \"scour-plus-moraine-dam\" type are common high in the Tianshan and Altai.",
+    history:
+      "Tianchi was anciently called \"Yaochi\" and appears in Tang-dynasty texts; legend makes it the place where the Queen Mother of the West feasted King Mu of Zhou. Local Kazakh herders graze the lakeside pastures in summer and move down the mountain in winter. It was named in China's first group of key national scenic areas in 1982.",
+  },
+
+  bosten: {
+    seeing:
+      "Bosten Lake lies in the Yanqi Basin at the southern foot of the Tianshan, at about 1,050 m, and is often called China's largest inland freshwater lake. The Kaidu River enters from the north-west and the Konqi River leaves to the south-west — it is an unusual inland lake with both an inflow and an outflow. Its west shore has extensive reed wetlands. It was anciently called the \"Western Sea.\"",
+    formation:
+      "Bosten Lake fills a fault-depression basin. Tianshan snowmelt reaches it via the Kaidu River, and the surplus leaves via the Konqi River toward the southern Tarim Basin (finally lost in the desert, never reaching the sea). Because there is an outlet, salt does not build up as it does in a purely closed lake, so the body of the lake is fresh, with only the eastern part slightly brackish.",
+    observation:
+      "From the air Bosten is an irregular sheet of turquoise at the southern foot of the Tianshan, mountains to the north and oasis farmland to the south. The west shore is a spread of pale reed marsh and small lakes (the \"small-lake district\"); the main body is open and deep blue. The Kaidu River has built a delta where it enters.",
+    distinguish:
+      "Bosten and Lake Ebi both sit low in a basin, but Bosten has an outlet, is mostly fresh, and is ringed by oasis farmland; Ebi has no outlet, is saline, and is ringed by salt flats and desert. Versus Qinghai Lake: Qinghai Lake is closed, saline and on the plateau; Bosten takes in and lets out, is fresh, and is in a basin.",
+    concept:
+      "Bosten shows that whether an inland lake has an outlet decides its fate: with an outlet, salt can leave with the water and the lake stays fresh; without one, evaporation removes only water and leaves salt, and the lake eventually turns salty. In recent decades increased upstream water use has made Bosten's level and water quality fluctuate considerably.",
+    history:
+      "Bosten Lake, anciently the \"Western Sea,\" was an important water source on the northern Silk Road, with the ancient kingdom of Yanqi on its shore. The lake produces reeds and freshwater fish.",
+  },
+
+  aibi: {
+    seeing:
+      "Lake Ebi sits in the south-western corner of the Junggar Basin, just inside the Alataw Pass — the largest saltwater lake in Xinjiang. It is the lowest collecting point of the western Junggar Basin, at about 190 m. Its area swings widely with the season and the inflow, and it is ringed by broad white salt flats and desert.",
+    formation:
+      "Several rivers — the Bortala, the Jing and others — bring salt into this closed hollow, which has no outlet, and strong evaporation leaves the salt behind, building a salt lake over a long time. In recent decades upstream water use has shrunk the lake noticeably, and the exposed lake bed has become one source of regional dust.",
+    observation:
+      "From the air Lake Ebi is an irregular, whitish sheet of shallow water or salt pan in the desert, facing straight into the Alataw Pass to the north — a gap between the Tianshan and the Alatau, where strong winds blow all year. You can see the wind carrying salt dust and sand off the surface in long plumes.",
+    distinguish:
+      "Lake Ebi and Lop Nur are both salt lakes at the low point of a basin, but Lake Ebi still has a seasonal water surface while Lop Nur is completely dry. Lake Ebi versus Bosten Lake: one is closed, salty and shrinking; the other takes in and lets out, is fresh, and is ringed by farmland.",
+    concept:
+      "Lake Ebi is a classic case of \"closed-lake shrinkage\": upstream river water is diverted for irrigation, less water reaches the lake, the lake contracts, and the dried lake bed's salt dust is lifted by the strong winds, affecting ecology and transport downwind. The same problem is common across the arid heart of Central Asia (the Aral Sea, for instance).",
+    history:
+      "The Alataw Pass is a famous wind gap with many gale days a year; the Jing–Yi–Huo railway and the China–Europe freight trains leave the country here. The lakeside was historically Mongol and Kazakh grazing land. The Ebi Lake wetland reserve was raised to national level in 2007.",
+  },
+
+  "lop-nur": {
+    seeing:
+      "Lop Nur lies at the far eastern end of the Tarim Basin. It was once the terminal lake of the Tarim, Konqi and other rivers, and one of the largest lakes of the Western Regions. It dried out completely in the mid-to-late 20th century and is now a plain of salt crust and yardangs. In satellite images, rings of former shoreline make the dry lake bed look like an ear — the \"ear of the Earth.\"",
+    formation:
+      "Lop Nur is the lowest collecting area of the Tarim Basin, and historically it \"wandered\" around the basin as the rivers changed course, growing and shrinking. In modern times heavy upstream irrigation plus a drying climate cut the inflow sharply, and the lake dried out completely around the 1970s, leaving a salt crust tens of centimetres thick. Wind erosion has carved fields of yardangs across the dry bed and its surroundings.",
+    observation:
+      "From the air Lop Nur is a large, stark-white salt-crust plain in the eastern basin, with concentric pale stripes (the \"big ear\") marking shorelines of different ages. To the north-west is a field of yardang mounds; to the south, the gobi of the Altun Mountains. In recent years large, regular blue-green ponds have appeared in the lake area — artificial brine ponds for mining potash.",
+    distinguish:
+      "Lop Nur and Lake Aydingkol in the Turpan Basin are both salt pans at the low point of a basin, but Aydingkol is below sea level and still holds a little seasonal water, while Lop Nur is above sea level and essentially all dry. Versus Qinghai Lake: one was once vast and is now gone; the other is still China's largest lake.",
+    concept:
+      "Lop Nur is an extreme case of the fate of a \"terminal lake\": the water of an inland river all ends up at the lowest point of the basin, with nowhere to go but evaporation, and salt keeps accumulating; as soon as the upstream water is taken, the terminal lake is the first thing to dry up. It is a reminder that in a dry region, water used upstream often means the loss of the lakes and oases downstream.",
+    history:
+      "Lop Nur was a key node of the ancient Silk Road, and the kingdom of Loulan was built on its shore and abandoned when its water failed. In 1964 China's first atomic bomb was tested in the Lop Nur area. In 1980 the scientist Peng Jiamu disappeared here on an expedition, and in 1996 the trekker Yu Chunshun died nearby. The area now holds an important national potash-production base.",
+  },
+
+
+  "tarim-river": {
+    seeing:
+      "The Tarim River runs west to east along the northern rim of the Tarim Basin for about 2,000 km — China's longest inland river. It has no outlet to the sea and finally dies away in the desert and terminal lakes of the south-eastern basin. From the air it is a curving line at the edge of the yellow sand sea, fringed with dark-green wild poplar and farmland.",
+    formation:
+      "The Tarim forms where three source rivers — the Aksu, the Yarkand and the Hotan — meet near Alar, carrying snowmelt from the Tianshan, Kunlun and Pamirs. The basin floor is extremely flat and the water is silt-laden, so the channel keeps silting up and shifting — a classic \"wandering river\" — and its floodplain grows salt- and drought-tolerant wild poplar.",
+    observation:
+      "From the air the Tarim's channel looks like a braid that splits and rejoins, swinging left and right across flat desert. Hugging the channel is a belt of poplar, dark green in summer or gold in autumn; grey gobi lies beyond. The river's tail spreads out and seeps away near Lake Taitema.",
+    distinguish:
+      "The Tarim and the Irtysh are both in northern Xinjiang, but the Tarim is an inland river that cannot get out, its flow swinging sharply with the season, its banks desert poplar; the Irtysh is an exterior-drainage river (to the Arctic via Russia), its flow steady, its banks dense poplar woods and meadow.",
+    concept:
+      "The Tarim is the best example of an \"inland river\": fed entirely by mountain snowmelt, it loses water all the way to evaporation, seepage and irrigation, so there is less and less of it downstream until it dries in the sand. In the 20th century the lower river ran dry for years and poplars died in swathes; since 2000, deliberate ecological water releases have restored the lower channel and some of the forest.",
+    history:
+      "The Tarim's oases string together the towns of Korla, Alar and Yuli. Its terminal lake was once Lop Nur, and as the flow shrank the end point kept retreating upstream. Its rise and fall is a mirror of thousands of years of the relationship between people and an arid land.",
+  },
+
+  ertis: {
+    seeing:
+      "The Irtysh rises on the southern slope of the Altai and flows from south-east to north-west across northern Xinjiang; beyond the border it runs through Kazakhstan and Russia and finally reaches the Arctic Ocean — the only river in China belonging to an Arctic drainage. From the air it meanders in a broad, flat valley lined with continuous poplar woods and green meadow.",
+    formation:
+      "The Irtysh follows the fault zone along the front of the Altai, giving it a wide, flat valley. It is fed mainly by Altai snowmelt and relatively generous rain, and as an exterior-drainage river its flow is far steadier than Xinjiang's inland rivers, so dense valley forest can grow along it.",
+    observation:
+      "From the air the Irtysh is a full, blue ribbon at the southern foot of the Altai, its channel meandering freely in a broad valley with many oxbow lakes and mid-channel bars. The \"Five-Colour Bluff\" near Burqin is a coloured rock bank eroded on one side of the river. The poplar and willow belts along the banks are darker than the surrounding grassland.",
+    distinguish:
+      "See the Tarim River entry. What makes the Irtysh special: it is Xinjiang's only exterior-drainage river, its water eventually reaching an ocean, so its regime is steady and its valley green; Xinjiang's other rivers either drain internally or end in the inland lakes of Central Asia.",
+    concept:
+      "The Irtysh shows what the interior/exterior-drainage divide means for a river: a river that can reach an ocean flushes its silt and salt away with the water, and its valley stays fertile and moist; an inland river that cannot get out grows saltier and weaker downstream. China's interior/exterior drainage boundary runs right through the Irtysh valley in this stretch.",
+    history:
+      "The Irtysh valley has long been Kazakh grazing land and an important route from Xinjiang into Central Asia. The river holds cold-water fish such as taimen. In recent decades water diverted from the Irtysh has eased shortages elsewhere in northern Xinjiang.",
+  },
+
+  "yarkant-river": {
+    seeing:
+      "The Yarkand River rises on the northern slope of the Karakoram and flows from south-west to north-east through the western parts of the Kashgar and Hotan areas — the largest single source of the Tarim River. From the air it comes out of the brown mountains toward the Kunlun and spreads into a huge alluvial fan at the mountain front, with a string of oases along the fan edge.",
+    formation:
+      "The Yarkand's water is glacial meltwater from the Karakoram and the Pamirs. It carries a heavy silt load and builds a very large alluvial fan on the south-western rim of the Tarim Basin; the oases of Yarkand, Makit and Bachu all sit on this fan. Its lower channel wanders and shifts.",
+    observation:
+      "From the air the river's mouth is a radiating spread of channels and a fan of oasis, greenest near the mountain gap where there is most water and narrowing toward the desert. When the glaciers melt hard in summer the river runs high and muddy yellow.",
+    distinguish:
+      "The Yarkand River versus the Tarim main stem: the Yarkand is farther south and farther upstream, one of the Tarim's main sources; it becomes the \"Tarim\" only after the sources join. Versus the Ili River: the Yarkand is in an extremely arid zone, fed by glaciers, its banks oasis farming; the Ili is in a semi-humid zone, fed by westerly rain, its banks continuous farmland and grassland.",
+    concept:
+      "The Yarkand River is a textbook case of \"glacial meltwater feeding oases\": the oases are not sited at random but locked onto the edge of the alluvial fan, where the water table is high and canal water reaches. Off that water line it is barren. In years with more glacial melt the river is fuller and the harvests good; as the glaciers retreat, the future of the oases is in question.",
+    history:
+      "The Yarkand valley is the lifeline of the south-western Tarim oases. The Yarkand Khanate of the 16th–17th centuries had its capital here and was a political and cultural centre of the Western Regions. Dolan culture also grew up along this river at the desert's edge.",
+  },
+
+  "ili-valley": {
+    seeing:
+      "The Ili Valley, in western Xinjiang, is a triangular valley in the Tianshan that opens to the west. The Ili River winds along its floor between farmland, orchards and grassland, with the snow peaks of the Tianshan to the north. Greener and moister than anywhere else in Xinjiang, it is called \"the Jiangnan beyond the passes.\"",
+    formation:
+      "The valley mouth faces west, straight into the prevailing westerlies, so moisture from the Atlantic and Central Asia is funnelled in and drops more rain on the windward slopes (locally over 500 mm a year, far more than southern Xinjiang). River alluvium has laid a flat, fertile plain on the valley floor, and the flanking mountains carry vertical belts of forest and meadow.",
+    observation:
+      "From the air the Ili Valley is an unusually broad, vivid-green lowland among the Tianshan ranges: the Ili River's meanders and a spread of checkerboard fields (wheat, maize, lavender) down the middle, dark spruce forest and alpine meadow on the flanking slopes, and the western end open, merging into the plains on the Kazakhstan side.",
+    distinguish:
+      "The Ili Valley is the opposite of the Tarim and Yarkand valleys of southern Xinjiang: it opens west and catches westerly moisture, so it is moist, rainy and given to dryland farming and natural grassland; the southern valleys are boxed in by mountains and desert, extremely arid, and can only support glacier-fed oasis farming. The Ili River flows west into Lake Balkhash in Kazakhstan — an exterior-drainage river.",
+    concept:
+      "The Ili Valley is a classic case of \"terrain deciding climate\": both are in the Tianshan, both in Xinjiang, yet only because the valley mouths face different ways, one catches the rain and one lies in the rain shadow. This is also why Xinjiang's oases and population are so concentrated on the northern slope of the Tianshan and in places like Ili — windward and near water.",
+    history:
+      "Ili has long been an important farming and grazing region of the Western Regions. In the Qing it was the seat of the \"General of Ili,\" the top military-civil authority for Xinjiang. The Khorgos port is an important land crossing into Central Asia. Today the Ili Valley is a major grain and specialty-crop region of Xinjiang.",
+  },
+
+  narat: {
+    seeing:
+      "The Nalati grassland lies in the heart of the Tianshan, along the Kunes valley at the eastern end of the Ili Valley, mostly above about 1,800 m. It is classic mountain meadow steppe: gently rolling ground, a thick green sward, stands of Tianshan spruce along the valley sides, and the snow peaks of the Tianshan beyond.",
+    formation:
+      "Nalati lies in a down-faulted valley within the Tianshan. Its mouth catches some westerly moisture, so it gets far more rain than the surrounding desert, and the high elevation, low temperature and weak evaporation together support a well-watered alpine meadow. Deep winter snow feeds the pasture in spring and summer.",
+    observation:
+      "From the air Nalati is a rolling green slope between Tianshan snow peaks, white Kazakh felt tents scattered across it, dark spruce forest running in bands down the shady slopes and valleys. The Kunes River winds along the valley floor. It is deep green in summer, with the spruce edges turning gold in autumn.",
+    distinguish:
+      "Nalati and Bayanbulak are both in valleys or basins within the Tianshan, but Nalati is lower, warmer, its meadow lusher, with large areas of spruce forest; Bayanbulak is higher (above about 2,400 m), colder, flatter, with more marsh wetland and almost no forest.",
+    concept:
+      "Nalati shows how a mountain meadow comes about: high enough that forest cannot grow, not yet so high that only bare rock and ice remain, plus steady rain and snowmelt — the result is this meadow belt between the forest belt and the alpine belt. It is one link in the vertical zonation of the Tianshan, and its best summer pasture.",
+    history:
+      "Nalati is traditional Kazakh summer pasture; each summer the herders move stock up the mountain along fixed routes. The name \"Nalati\" is usually explained as \"the place where the sun is.\" In 2013 the Xinjiang Tianshan (including the Nalati area) was inscribed as World Natural Heritage for its glaciers, snow peaks and vertical natural zones.",
+  },
+
+  bayanbulak: {
+    seeing:
+      "The Bayanbulak grassland lies in a mountain-ringed high basin in the central Tianshan, above about 2,400 m. The basin floor is very flat and poorly drained, with wide areas of marsh and meandering channels. The Kaidu River loops through it in countless tight bends — the famous \"Nine Bends and Eighteen Turns.\"",
+    formation:
+      "Bayanbulak is a down-faulted basin within the Tianshan. Walled in by mountains, its floor is flat with a tiny gradient, so the river runs slowly, erodes sideways, and develops dense free meanders and oxbow lakes. The high, cold climate has weak evaporation, the ground stays wet year-round, and it is a broad expanse of cold alpine meadow and marsh.",
+    observation:
+      "From the air Bayanbulak is a flat grass bowl held by snow mountains, the Kaidu River coiled across it in row after row of close silver hairpins that fill with reflected light at sunset. Pools and marshes are scattered through the basin — a breeding ground for swans and other waterbirds.",
+    distinguish:
+      "See the Nalati grassland entry. Bayanbulak's key traits: high, flat and wet — so it is a combination of meanders, marsh and cold alpine meadow, not the forested rolling slopes of Nalati.",
+    concept:
+      "Bayanbulak is a living lesson in why a river makes big bends: on a valley floor with almost no gradient the water has no drive to cut down, so it erodes sideways instead — cutting the concave bank, building the convex bank — and the bends grow until the river cuts them off as oxbow lakes. This extreme free meandering needs exactly such a closed, flat high basin.",
+    history:
+      "\"Bayanbulak\" means \"abundant springs\" in Mongolian; it was historically pasture of the Mongol Torghut people. One of China's earlier swan nature reserves is here, and large numbers of whooper, tundra and mute swans breed on it each year. It is also part of the Xinjiang Tianshan World Natural Heritage.",
+  },
+
+  kuche: {
+    seeing:
+      "The Kuqa (Kizilya) Grand Canyon lies in the mountains north of Kuqa city, on the southern slope of the Tianshan. It is a narrow canyon cut into red rock, with sheer walls, a slot at its narrowest that admits only one or two people abreast, and only a strip of sky overhead. The rock is an intense ochre-red in the sun.",
+    formation:
+      "The canyon is cut into Mesozoic–Cenozoic red sandstone and mudstone on the southern Tianshan. These beds are fairly soft, and Tianshan floods and snowmelt working down the joints over a long time, plus wind erosion, have cut this deep narrow slot, leaving water- and wind-worn pillars and niches on the walls.",
+    observation:
+      "From the air the Kuqa Grand Canyon is a winding deep slit in the brown-red mountains of the southern Tianshan, the main gorge flanked by many smaller side slits. The red walls contrast sharply with the sparse grey-green desert plants on top. Just outside the southern mouth is the farmland of the Kuqa oasis.",
+    distinguish:
+      "The Kuqa Grand Canyon and the Flaming Mountains are both erosion of Mesozoic red beds in the Turpan–Kuqa region, but the Kuqa canyon is a narrow, deep, downcut gorge — you look at enclosed walls; the Flaming Mountains are a low ridge cut to pieces — spread out east–west, you look at a continuous ochre-red massif. Against the Three Gorges of the Yangtze it is far smaller and has no great river running through it.",
+    concept:
+      "The Kuqa Grand Canyon shows that an arid region can also have dramatic running-water landforms: rain is scarce all year, but short-lived floods from Tianshan snowmelt and occasional storms, carrying gravel and concentrated in narrow gullies, cut down powerfully and can saw a deep canyon into soft rock within a few hundred thousand years.",
+    history:
+      "Kuqa was the site of the ancient kingdom of Qiuci (Kucha), an important Buddhist centre on the Silk Road, with large cave-temple complexes such as the Kizil Caves nearby. Ancient beacon towers and cave sites survive around the canyon. It is now a national geopark.",
+  },
+
+  "flaming-mountains": {
+    seeing:
+      "The Flaming Mountains run along the northern rim of the Turpan Basin for about 100 km — a bare, ochre-red low range. At noon in summer the sun-baked red rock shimmers in the heat haze and, from a distance, looks like it is burning, hence the name. It is one of the hottest places in China in summer.",
+    formation:
+      "The Flaming Mountains are an anticline on the northern rim of the Turpan Basin that has been lifted and then eroded, built mainly of Mesozoic red sandstone, mudstone and conglomerate; iron and manganese oxides in the rock give it its red colour. Water working down the joints has cut a set of near-parallel deep gullies, and the range is almost bare of plants. The basin is closed and low, so heat cannot escape and ground temperatures are extreme.",
+    observation:
+      "From the air the Flaming Mountains are a continuous red rock ridge with regularly spaced gullies on the north side of the Turpan Basin, gobi and karez oasis to the south, the brown mountains of the Tianshan to the north. Several streams (such as Mutou Gully and Grape Valley) cut straight across the range, and those gullies are green strips.",
+    distinguish:
+      "See the Kuqa Grand Canyon entry. The Flaming Mountains are \"broad and low, regularly gullied, continuous as a ridge\" — you look at the continuous red massif and its sharp contrast with the oasis to the south; the Kuqa Grand Canyon is a single \"narrow and deep\" gorge.",
+    concept:
+      "The Flaming Mountains are a combination of \"anticline ridge plus dry heat\": the beds were arched into an anticline, the exposed soft red layers were cut by water into regular gullies; add a closed, low basin, clear skies and dark rock that absorbs heat strongly, and you get the extreme ground temperatures here. The actual temperature records come from nearby weather stations, not from the range itself.",
+    history:
+      "The Flaming Mountains are known to every Chinese reader from Journey to the West, where the Monkey King borrows a banana-leaf fan. Historically they lay on the northern Silk Road, with the ruined city of Gaochang and the Bezeklik caves at their foot. Grape Valley on the southern side uses Tianshan snowmelt and is a well-known grape-growing area.",
+  },
+
+  gurbantunggut: {
+    seeing:
+      "The Gurbantunggut Desert lies in the centre of the Junggar Basin, about 48,000 km² — China's second-largest desert and its largest fixed and semi-fixed desert. Its dunes are lower and gentler than the Taklamakan's; the surface carries drought-tolerant saxaul and large numbers of spring ephemerals, and snow can be seen in winter.",
+    formation:
+      "The Junggar Basin has gaps in the north-west (the Irtysh valley, the Alataw Pass) that let in some westerly moisture, and steady winter snowmelt on top of that, so annual rainfall is higher than in the Tarim Basin. That moisture lets plants root on the dunes and hold the sand, so this is mostly fixed and semi-fixed dunes rather than a pure sea of moving sand.",
+    observation:
+      "From the air the Gurbantunggut is a mottled grey-yellow-and-green sand sheet, its ridges mostly long north–south strips with a network of shrubs in the troughs and on the flanks. When the ephemerals green up in spring the surface briefly flushes pale green. The basin rim is the oasis belt along the northern foot of the Tianshan and Altai.",
+    distinguish:
+      "The Gurbantunggut and the Taklamakan: one is fixed and semi-fixed, vegetated, its dunes low and gentle, with winter snow, and smaller; the other is moving, almost bare, its dunes tall, extremely arid, and far larger. The reason is that the Junggar Basin is half-open and gets a little moisture, while the Tarim Basin is sealed on all sides.",
+    concept:
+      "The Gurbantunggut shows that \"a little water can lock down the sand\": as long as rainfall and snowmelt are enough for xerophytes like saxaul to survive, their roots and litter fix the dune surface and the sand stops moving freely. It is China's highest-latitude desert (about 44–46° N), cold and snow-covered in winter — unusual among the world's deserts.",
+    history:
+      "The desert holds relict wild poplar and saxaul woodland and is habitat for animals such as Przewalski's horse and the goitered gazelle. Oilfields such as Karamay and transport lines lie around the basin rim, while the desert interior is little peopled and ecologically fragile.",
+  },
+
+  kumtag: {
+    seeing:
+      "The Kumtag Desert (this entry refers to the patch south of Shanshan) lies in the eastern Turpan Basin, at the southern foot of the eastern Tianshan. \"Kumtag\" is simply \"sand mountain\" in Turkic. What is most striking here is that the desert runs right up to the edge of Shanshan town, with almost no transition — a few steps out of town and you are at dunes tens of metres high.",
+    formation:
+      "The sand of this patch is fine sand blown from the surrounding gobi and dry riverbeds by the prevailing north-east wind and piled in the lee at the southern foot of the Tianshan. It is extremely arid, with little rain and very strong evaporation, and the dunes are mostly tall moving dunes — crescent, linear, and tall pyramidal sand mountains.",
+    observation:
+      "From the air the Kumtag is a field of golden dunes on the southern edge of the Shanshan oasis, town and vineyard checkerboard on one side, a run of rolling sand mountains on the other, the line between them very sharp. The surface carries clear, regular wind ripples.",
+    distinguish:
+      "The Kumtag (this Shanshan patch) versus the Gurbantunggut: the Kumtag is moving dunes, almost bare, drier; the Gurbantunggut is fixed and semi-fixed, with saxaul, and snowy in winter. Against the Taklamakan it is far smaller, but likewise tall moving dunes. (A larger, separate Kumtag Desert, a wild-camel reserve, lies east of Lop Nur and shares the name.)",
+    concept:
+      "The Kumtag is a good place to watch \"how wind shapes dunes\": different wind regimes make different dune forms — crescent under a single dominant wind, linear under two alternating directions, tall pyramidal sand mountains where winds from several directions converge. Here several forms sit close together and are easy to read.",
+    history:
+      "The desert edge was a segment of the ancient Silk Road, with old beacon towers nearby. The name Shanshan (anciently Loulan, later the kingdom of Shanshan) comes from a Western-Regions kingdom of this area. It is now a desert scenic area whose feature is the town meeting the sand.",
+  },
+
+
+  xiaoxinganling: {
+    seeing:
+      "The Lesser Khingan Range runs through north-central Heilongjiang, trending NW–SE between the Songnen Plain and the Sanjiang Plain, and dividing the two. It is lower than the Greater Khingan, mostly 500–800 m, with rounded, gentle summits and a dense mixed conifer-broadleaf forest.",
+    formation:
+      "The Lesser Khingan is a low, worn fold range that was later slowly uplifted; it is mostly granite and metamorphic rock, with basalt plateaus and volcanic landforms among it (the Wudalianchi volcanic group sits on its south-western edge). Rivers have cut the range into broad, shallow valleys.",
+    observation:
+      "From the air the Lesser Khingan is a rounded, continuous, dark-green sea of low forested hills, with no sharp peaks or bare rock. The Tangwang and Hulan rivers wind through the woods. The Songnen and Sanjiang plains on either side are checkerboard farmland, with a sharp edge against the forest.",
+    distinguish:
+      "The Lesser and Greater Khingan: the Greater Khingan is the long north–south body dividing the Inner Mongolian Plateau from the Northeast Plain, grassland on its west; the Lesser Khingan lies to the north-east, trends more east–west (NW–SE), divides the Songnen and Sanjiang plains, and is lower, farther east and moister. Versus Changbai Shan: Changbai is an isolated high volcano, the Lesser Khingan a continuous low fold range.",
+    concept:
+      "The Lesser Khingan is an example of \"a low range as an important geographic line\": it is not high, but as a watershed it separates two great plains of the Songhua system, and it is the northern limit of the Korean pine forest. With the Greater Khingan and Changbai Shan it forms the \"green screen\" on three sides of the Northeast Plain.",
+    history:
+      "The Lesser Khingan is traditional hunting ground of the Oroqen and Ewenki, and was once one of China's most important logging regions (the Yichun area was called \"the home of Korean pine\"). Commercial logging of natural forest has now stopped entirely, replaced by conservation and eco-tourism.",
+  },
+
+  yinshan: {
+    seeing:
+      "The Yin Mountains run east–west across the central Inner Mongolian Plateau for about 1,000 km, made up of the Lang Shan, Wula Shan, Daqing Shan and other sections. The south slope is steep and drops onto the Hetao Plain and the Loess Plateau; the north slope is gentle and merges into the Inner Mongolian Plateau. The summit area is about 2,300–2,400 m.",
+    formation:
+      "The Yin Shan is a fault-block range, sharply uplifted along a fault on its southern edge, giving the steep south face, with a gentler north slope; the rock is mostly old metamorphic rock and granite. It roughly blocks moist air on its southern side, so the landscape north and south of it is markedly different.",
+    observation:
+      "From the air the Yin Shan is an east–west grey-brown rock wall across the Inner Mongolian Plateau: green Hetao Plain irrigated from the Yellow River to the south, arid steppe and gobi to the north — a strong contrast. Cities such as Hohhot and Baotou lie along the southern foot of the Daqing Shan.",
+    distinguish:
+      "The Yin Shan and the Helan Shan: both are boundary ranges between the monsoon and non-monsoon zones, and between farming and herding, but the Yin Shan is in central Inner Mongolia, east–west and longer; the Helan Shan is in Ningxia, north–south and shorter, and blocks sand and wind from the north-west. The Yin Shan and the Qinling: the Qinling is the climate line between north and south China, higher and moister; the Yin Shan is the line through the farming–herding transition belt, drier.",
+    concept:
+      "The Yin Shan roughly marks one of China's boundaries between the monsoon and non-monsoon zones, exterior and interior drainage, and farming and herding, and lies close to the 400 mm annual-rainfall line. Powers to its north and south fought back and forth across this line through history — \"Yin Shan\" is almost a byword for the farming–herding divide.",
+    history:
+      "The land north and south of the Yin Shan was long contested between the Central Plains dynasties and the Xiongnu, Turks and others; the Zhao and Qin walls were both built along the Yin Shan. Yin Shan rock art records thousands of years of hunting and life among the steppe peoples. The Northern Wei set the \"six garrisons\" along the Yin Shan.",
+  },
+
+  luliang: {
+    seeing:
+      "The Lüliang Mountains run north–south through western Shanxi and are the watershed between the Yellow River (west) and the Fen River (east). The range is buried under thick loess, with rolling ridges and hills cut by a maze of gullies and severe soil erosion. The main peak, Guandi (Xiaowen) Shan, is about 2,831 m.",
+    formation:
+      "At its core the Lüliang is an old fold-and-fault range, later covered over large areas by loess. Loess is loose and erodes easily, and with steep slopes and vegetation once stripped, running water has cut the slopes into dense branching gullies — one significant source of the middle Yellow River's silt.",
+    observation:
+      "From the air the Lüliang Mountains are a yellow, gully-shredded north–south highland in the eastern Loess Plateau, the ridge line still fairly continuous, the Yellow River and Fen River valleys on either side holding ribbons of farmland and towns. Conversion of farmland to forest has re-greened some slopes in recent years.",
+    distinguish:
+      "The Lüliang and the Taihang: both are in Shanxi and both run north–south, but the Taihang is on the east, the boundary between the Loess Plateau and the North China Plain, with a cliff on its east face; the Lüliang is on the west, inside the Loess Plateau, the divide between the Yellow and Fen rivers, covered in loess throughout.",
+    concept:
+      "The Lüliang is a classic \"loess-covered range\": a hard rock range at the base, wrapped in a hundred metres of loess, so from a distance it is a range and up close it is loess gullies everywhere. It also shows that a watershed need not be a lofty peak — a low ridge buried in loess can still keep two great river systems apart.",
+    history:
+      "The Lüliang area is an old revolutionary base and was the core of the Shanxi–Suiyuan base during the war against Japan. It is also an important home of Chinese folk song and wheat-flour food culture. Its long record of soil-erosion control and farmland-to-forest conversion is a microcosm of ecological repair on the Loess Plateau.",
+  },
+
+  liupan: {
+    seeing:
+      "The Liupan Mountains lie in southern Ningxia and eastern Gansu, a rocky north–south range in the western Loess Plateau. It is higher and far moister than the loess hills around it, with stands of forest on its slopes — a \"green island\" on the Loess Plateau. The main peak, Migang Shan, is about 2,942 m.",
+    formation:
+      "The Liupan is a fault-and-fold range strongly uplifted since the Cenozoic, built of hard sandstone and conglomerate and not wholly buried by loess. Because it is high and windward, it catches more rain and has developed forest and alpine meadow, in sharp contrast with the arid loess around it.",
+    observation:
+      "From the air the Liupan is a dark-green north–south ridge on the western edge of the Loess Plateau, standing out above the pale-yellow loess hills. The Jing and Qingshui rivers rise here. Cloud and mist are common, and the road climbs the mountain in coils — hence the name \"six coils.\"",
+    distinguish:
+      "The Liupan and the Helan Shan: both in Ningxia and both north–south, but the Helan is in the north, arid bare rock, blocking sand and wind; the Liupan is in the south, moist and forested, the divide between the Wei and Jing rivers. The Liupan and the Lüliang: the Lüliang is loess-covered and known for soil erosion; the Liupan is a rock range known as the \"green island of the plateau.\"",
+    concept:
+      "The Liupan shows how uplift makes a \"wet island\": on an arid loess plateau, a range that is high and windward enough will catch extra rain and turn a small patch of the dry country into forest. Such wet islands matter greatly for regional water supply and ecology.",
+    history:
+      "In 1935 the Central Red Army crossed the Liupan Mountains on the Long March — the last big mountain of the March — and Mao Zedong wrote the poem \"Qingpingyue: Mount Liupan\" here (\"you are no hero until you reach the Great Wall\"). The Liupan is now a national nature reserve and a site of \"red\" tourism.",
+  },
+
+  dabashan: {
+    seeing:
+      "The Daba Mountains straddle the borders of Shaanxi, Sichuan, Chongqing and Hubei, lying across the northern rim of the Sichuan Basin and trending roughly NW–SE. With the Qinling to the north they form a double screen against north–south air movement. The main peak, Hualong Shan, is about 2,917 m. The Micang Shan to the west is part of the range.",
+    formation:
+      "The Daba Shan is a range strongly folded and thrust up between the North China and Yangtze blocks, its rock mostly limestone and sandstone. The limestone areas develop gorges, caves and sinkholes; the range is deeply cut by tributaries of the Han and Jialing rivers, with deep valleys and steep slopes.",
+    observation:
+      "From the air the Daba Shan is a continuous, clearly folded dark-green rock wall on the northern rim of the Sichuan Basin, its ridges arcing in rows and cut across by deep valleys. Its south slope drops onto the red hills of the Sichuan Basin; its north slope meets the Hanzhong Basin. Cloud and mist are constant.",
+    distinguish:
+      "The Daba Shan and the Qinling: parallel, both east–west, both north of the Sichuan Basin, but the Qinling is farther north, more continuous, the main north–south divide; the Daba Shan is farther south, more broken, mainly the northern screen of the Sichuan Basin. Together they are called the \"Qinling–Daba mountains.\" The Daba Shan and the Hengduan: the Daba Shan is east–west and a fold range; the Hengduan is north–south with fault-block deep gorges.",
+    concept:
+      "The Daba Shan and the Qinling together show what a \"double wall\" means for climate: in winter a cold wave has to cross two ranges to reach the Sichuan Basin, and most of it is blocked, so the basin's winters are mild; in summer moisture is lifted and drops as rain on the windward side. The gentle climate of the \"land of abundance\" is largely a gift of these two ranges.",
+    history:
+      "The Daba Shan is so high and gorge-cut that travel was historically extremely hard, crossed by parts of the ancient \"roads to Shu\" (the Lizhi and Micang routes). It held several revolutionary base areas and is an important water-conservation zone for the middle route of the South-to-North Water Diversion (the Han River).",
+  },
+
+  xuefeng: {
+    seeing:
+      "The Xuefeng Mountains run NE–SW through western Hunan, a range on the eastern edge of the Yunnan–Guizhou Plateau where it grades into the Hunan hills and the Dongting Lake plain. Within Hunan it roughly marks the boundary between China's second and third topographic steps. The main peak, Subaoding, is about 1,934 m.",
+    formation:
+      "The Xuefeng is an old fold range, uplifted and eroded over a long time, built mainly of metamorphic rock and sandstone. It is the watershed between the Zi and Yuan rivers; the rivers on either side cut down into deep gorges, while the ridge crest is comparatively gentle.",
+    observation:
+      "From the air the Xuefeng is a continuous NE–SW dark-green ridge in western Hunan, the land clearly higher to the west toward the Yunnan–Guizhou Plateau and stepping down to the east into hills and the lake plain. The Zi and Yuan rivers wind in deep cuts on either side. The summit sees occasional snow in winter, hence the name (\"snow peak\").",
+    distinguish:
+      "The Xuefeng and the Nanling: both are southern watershed ranges, but the Nanling runs roughly east–west, divides the Yangtze and Pearl river systems, and marks the central–south China transition; the Xuefeng runs NE–SW, divides the Zi and Yuan rivers, and marks the transition from the Yunnan–Guizhou Plateau to the Hunan hills. The Xuefeng and the Wuyi: one is in western Hunan and a step boundary; the other is on the Fujian–Jiangxi border, known for Danxia and biodiversity.",
+    concept:
+      "The Xuefeng shows that \"a step boundary need not be very high\": it is under 2,000 m, but as the line of the second/third topographic steps through Hunan, the elevation, the depth of river incision and the climate all differ noticeably on either side. It is also a secondary barrier to cold air pushing south.",
+    history:
+      "In 1945 the last large-scale battle of the war against Japan — the Battle of West Hunan (Xuefeng Mountains Campaign) — was fought here and ended in a Chinese victory. The mountains are home to Miao, Dong and Yao peoples, whose terraced fields and stilt houses are adaptations to steep terrain.",
+  },
+
+  wuyi: {
+    seeing:
+      "The Wuyi Mountains straddle the Fujian–Jiangxi border, trending NE–SW, an important range of south-east China. The main peak, Huanggang Shan, is about 2,161 m, the highest point in mainland south-east China. The range is known for two things: the Danxia landform around the Nine-Bend Stream, and well-preserved mid-subtropical forest.",
+    formation:
+      "The body of the Wuyi is Yanshanian granite and volcanic rock, uplifted into mountains; the Nine-Bend Stream area is Cretaceous red sandstone and conglomerate, cut and collapsed by running water into flat-topped, steep-sided, gently-based red peaks and peak clusters — Danxia landform.",
+    observation:
+      "From the air the Wuyi is a continuous stretch of dark-green mid-elevation mountains between Fujian and Jiangxi, gullies running down both sides of the main ridge. The Nine-Bend Stream stands out: a jade-green stream winding in nine great bends among ochre-red mesas and rock pillars, tea gardens on the banks.",
+    distinguish:
+      "The Wuyi's Danxia and the Yunnan–Guizhou Plateau's karst: Danxia is red sandstone and conglomerate eroded and collapsed by running water into mesas and peak clusters (reddish); karst is limestone dissolved by water into peak forests and caves (greyish, with underground rivers). The Wuyi and the Nanling: the Wuyi is farther east and known for Danxia and forest; the Nanling is farther west and is the Yangtze–Pearl watershed.",
+    concept:
+      "The Wuyi is one of the type areas of \"Danxia landform\": the key is the rock — horizontal or gently dipping red sandstone and conglomerate, cut by vertical joints, which running water and gravity carve along the joints into isolated mesas and pillars. It also preserves a complete mid-subtropical mountain vertical vegetation sequence and is rich in species.",
+    history:
+      "The Wuyi was inscribed as a mixed World Cultural and Natural Heritage site in 1999. It is one of the birthplaces of Zhu Xi's neo-Confucianism (Zhu Xi taught here) and a famous tea region — Wuyi rock tea (such as Da Hong Pao) is grown among these rock walls.",
+  },
+
+  dabie: {
+    seeing:
+      "The Dabie Mountains straddle the borders of Hubei, Henan and Anhui, trending NW–SE, and are the watershed between the Yangtze and the Huai, roughly also the transition between the northern subtropics and the warm temperate zone. They are not high — the main peak, Baima Jian, is about 1,777 m — with a heavy, rounded profile.",
+    formation:
+      "The Dabie Shan is part of the collision belt between the North China and Yangtze blocks and has undergone intense metamorphism; the rock is mostly gneiss and other metamorphic rock, and it also exposes special rocks that record deep geological processes (such as eclogite), making it an important area for geological research. Long erosion has left it as rounded low-to-mid mountains.",
+    observation:
+      "From the air the Dabie Shan is a continuous, rounded, dark-green stretch of low-to-mid mountains between the Yangtze and the Huai, its ridge line not prominent, cut up by many reservoirs and streams. Water off its north slope goes to the Huai, off its south slope to the Yangtze. Tea gardens and farmland lie in the intermontane basins and valleys.",
+    distinguish:
+      "The Dabie Shan and the Qinling: both are watersheds between the Yangtze and another great river and both lie in the north–south transition belt, but the Qinling is higher, farther west and the main divide; the Dabie is lower, farther east and the divide between the Yangtze and the Huai. The Dabie and the Nanling: one divides the Yangtze and the Huai, the other the Yangtze and the Pearl.",
+    concept:
+      "The Dabie Shan is another example of \"a low range as a great watershed\": it is not high, yet it separates the drainage of two of China's great rivers in the east, and roughly marks a north–south climate transition line. Geologically it is one of the key windows into continental deep subduction.",
+    history:
+      "The Dabie area is a well-known old revolutionary base — the centre of the Hubei–Henan–Anhui Soviet during the land-revolution period; the Liu–Deng army's 1947 thrust into the Dabie Mountains was a turning point in the civil war. The area produces tea, chestnuts and medicinal herbs.",
+  },
+
+  dalou: {
+    seeing:
+      "The Dalou Mountains lie in northern Guizhou and southern Chongqing, trending NE–SW, the boundary range between the Yunnan–Guizhou Plateau and the Sichuan Basin. They separate the Guizhou plateau from the Chongqing basin and are the watershed of rivers such as the Wu and the Chishui. The main peak, Jinfo Shan, is about 2,238 m.",
+    formation:
+      "The Dalou Shan is a folded, uplifted range that exposes large amounts of limestone and develops classic karst: peak clusters, closed depressions, caves, sinkholes and underground rivers. Its north side drops steeply toward the Sichuan Basin, where rivers cut down hard into deep gorges (such as the Chishui valley).",
+    observation:
+      "From the air the Dalou Shan is a rolling dark-green highland on the northern rim of the Yunnan–Guizhou Plateau, dense with cone-shaped hills and closed hollows. The north slope is cut into deep gorges by rivers like the Chishui, the walls layered in red and grey rock. The pass at Loushan is a strategic gap.",
+    distinguish:
+      "The Dalou Shan and the body of the Yunnan–Guizhou Plateau: the Dalou Shan is the northern edge of the plateau, more deeply cut and gorge-filled, the \"scarp\" from plateau down to the Sichuan Basin; the plateau interior is comparatively gentle. The Dalou Shan and the Daba Shan: both are on the rim of the Sichuan Basin, but the Daba Shan is on the north rim and mainly a fold range; the Dalou Shan is on the south rim and known for karst.",
+    concept:
+      "The Dalou Shan shows the \"scarp\" character of the Yunnan–Guizhou Plateau's edge: the plateau surface itself is fairly gentle, but at the margin rivers plunge from plateau toward basin, cut down fiercely and carve deep gorges and waterfalls (the Danxia waterfalls around Chishui are here). The drop at the edge is one of the tests of whether a highland counts as a \"plateau.\"",
+    history:
+      "In 1935 the Red Army won a battle at the Loushan Pass in the Dalou Mountains on the Long March, and Mao Zedong wrote the poem \"Yi Qin'e: Loushan Pass\" here. The Chishui valley is a famous liquor-producing region. The area is also a concentration of Danxia and karst scenery.",
+  },
+
+  altun: {
+    seeing:
+      "The Altun Mountains lie in south-eastern Xinjiang and north-western Qinghai, trending roughly NE–SW, across the gap between the Tarim Basin and the Qaidam Basin and the Tibetan Plateau. They are the link between the Kunlun and the Qilian; the range is high, extremely arid and almost uninhabited, with summits over 6,000 m.",
+    formation:
+      "The Altun Mountains run along a huge strike-slip fault (the Altyn Tagh Fault) — one of the important tectonic boundaries along which the Tibetan Plateau spreads north and material \"escapes\" eastward, still active today. The range has been uplifted and strongly eroded, its north slope dropping steeply onto the southern rim of the Tarim Basin.",
+    observation:
+      "From the air the Altun Mountains are a straight, continuous brown rock wall between the Tarim Basin and the Tibetan Plateau, with scattered snow on the crest. To the north is the yellow sand sea of the Taklamakan, with almost no transition; to the south is a gently rolling, lake-dotted cold desert (the Altun Mountains Nature Reserve).",
+    distinguish:
+      "The Altun Mountains and the Kunlun and Qilian: the three are connected, with the Altun as the middle link — shorter than the Kunlun, drier than the Qilian. Its landform story belongs largely to the Kunlun and Qilian, and its \"character\" as an independent range is weak; its main significance is the great fault it follows.",
+    concept:
+      "The Altun Mountains are an example of \"strike-slip fault mountain-building\": not simple compressional uplift, but two blocks sliding past each other along a fault and being lifted along the slip zone. The Altyn Tagh Fault is one of the largest strike-slip faults in the world, and studying it helps show how the Tibetan Plateau both grows taller and spreads outward.",
+    history:
+      "The Altun Mountains area is barely peopled; the Altun Mountains National Nature Reserve, established in 1983, is important habitat for Tibetan antelope, wild yak and kiang, and one of China's largest reserves of the high cold-desert type. Some branch routes of the ancient Silk Road skirted its northern foot.",
+  },
+
+
+  "chengdu-plain": {
+    seeing:
+      "The Chengdu Plain occupies the western Sichuan Basin — the largest and flattest plain in the basin, about 19,000 km², at 450–750 m. It was built by the Min, Tuo and other rivers as they left the mountains, and its fertile, easily irrigated land is the core of the \"land of abundance.\"",
+    formation:
+      "The Chengdu Plain is a compound fan plain made of the alluvial fans of several rivers merged together. The Min River leaves the Longmen Mountains to the west and, below the mountain gap, spreads out the gravel and silt it carries, finer downstream. The Dujiangyan works split the Min River at the fan head into a self-flowing irrigation network covering the whole plain.",
+    observation:
+      "From the air the Chengdu Plain is a neat green lowland on the west side of the Sichuan Basin, backed by the steep Longmen Mountains and ringed on the other three sides by the basin's red hills. The fields are regular, the canals a dense grid, Chengdu in the centre. Because the basin is closed and moisture abundant, it is cloudy and low in sunshine year-round.",
+    distinguish:
+      "The Chengdu Plain and the Sichuan Basin: the Chengdu Plain is a distinct alluvial-fan plain inside the basin, which is the mountain-ringed regional unit — the former is part of the latter. The Chengdu Plain and the Guanzhong Plain: both are river-alluvial plains in mountain-walled fault basins, but the Chengdu Plain is moister and cloudier; the Guanzhong Plain is drier and sunnier.",
+    concept:
+      "The Chengdu Plain is a model of \"alluvial-fan plain plus ancient waterworks\": a river leaving the mountains naturally builds a fan plain, and the Dujiangyan works, built in 256 BCE, tamed the Min River into a controllable irrigation network that has run for over two thousand years, turning a drought- and flood-prone fan into a reliable granary.",
+    history:
+      "The Chengdu Plain was the centre of the ancient Shu civilisation; the Sanxingdui and Jinsha sites are here. Dujiangyan was built under Li Bing, the Qin governor of Shu commandery, and still irrigates today. Prosperous and relatively stable, the plain often served as a \"rear area\" in times of war.",
+  },
+
+  "guanzhong-plain": {
+    seeing:
+      "The Guanzhong Plain, also called the Wei River Plain, lies in central Shaanxi between the Qinling to the south and the Weibei uplands (the Northern Mountains) to the north, built by the Wei River and its tributaries. It is long east–west and narrow north–south, anciently called \"the eight hundred li of Qin.\" Xi'an sits in the middle of it.",
+    formation:
+      "The Guanzhong Plain is a graben — a down-dropped rift basin: the sides were uplifted into mountains (the Qinling, the Northern Mountains) along faults while the middle block sank, and silt from the Wei River filled the hollow into a plain. The plain slopes gently from both sides toward the Wei River valley, with several river terraces.",
+    observation:
+      "From the air the Guanzhong Plain is an east–west yellow-green flat at the northern foot of the Qinling, with the wall-like Qinling scarp to the south and the gullied loess tablelands to the north. The Wei River crosses the middle from west to east, its banks dense with farmland and towns, Xi'an, Xianyang and Baoji in a line.",
+    distinguish:
+      "The Guanzhong Plain and the North China Plain: both are river-alluvial and both are cradles of civilisation, but the Guanzhong Plain is a fault basin pinched between the Qinling and the Northern Mountains and is small; the North China Plain is a great plain built by the Yellow and other rivers in open country and is far larger. The Guanzhong Plain and the Chengdu Plain: one is drier and sunny, the other moist and cloudy.",
+    concept:
+      "The Guanzhong Plain is a classic graben basin: the crust is pulled apart, a block in the middle drops while the sides rise, and river silt fills the dropped part flat — a plain held between two ranges. This terrain — ringed by mountains, easy to defend, and watered by the Wei — is why it was a capital region for so long.",
+    history:
+      "The Guanzhong Plain was the capital region of the Zhou, Qin, Han, Tang and a dozen other dynasties — \"who holds Guanzhong holds the realm.\" The Zheng Guo Canal of the Warring States and the grain-transport canals of the Han and Tang were the basis of Guanzhong farming. \"Guanzhong\" means \"within the passes\" — it is ringed by passes such as Hangu and Dasan.",
+  },
+
+  "hetao-plain": {
+    seeing:
+      "The Hetao Plain lies inside the great \"几\"-shaped bend of the Yellow River, south of the Yin Mountains — a string of plains laid down by the Yellow River as it flows through Ningxia and Inner Mongolia. It is conventionally divided into the West Tao (the Ningxia Plain), the Rear Tao (around Bayannur) and the Front Tao (the Tumochuan around Hohhot). There is a saying: \"the Yellow River brings a hundred harms and enriches only the one Tao.\"",
+    formation:
+      "The Hetao Plain is a down-faulted zone between the Yin Mountains and the Ordos Plateau. Entering this hollow the Yellow River slows and drops much of its silt, filling it into a plain. The ground is very flat, and the river has swung across it, leaving old channels, marshes and salt flats.",
+    observation:
+      "From the air the Hetao Plain is a green belt along the Yellow River on the arid Inner Mongolian Plateau, backed by the grey-brown Yin Mountains to the north and meeting the Ordos uplands and deserts to the south. It is checkerboard farmland irrigated from the Yellow River, laced with trunk canals, and turns back into desert steppe just beyond the oasis.",
+    distinguish:
+      "The Hetao Plain and the North China Plain: both are Yellow River alluvium, but the Hetao Plain is on the upper-middle river, pinched between the Yin Mountains and the plateau, and depends on diversion irrigation; the North China Plain is on the lower river, in open country, and is the great plain of the \"suspended river\" and acute water shortage. The Hetao Plain and the Guanzhong Plain: both are river-alluvial plains in fault basins; the Hetao is drier and farther north.",
+    concept:
+      "The Hetao Plain shows that \"the same river does opposite things in different reaches\": on the Loess Plateau the Yellow River picks up silt; on the lower course it raises its bed and floods; but through the Hetao its water and silt built a belt of good oasis farmland — because here the land is flat enough to be irrigated and the Yin Mountains block the sand and wind from the north.",
+    history:
+      "The Hetao Plain has long been a farming–herding frontier; the Qin and Han set up commanderies and military farms here, and it changed hands repeatedly afterward. In modern times large-scale digging of Yellow River trunk canals (such as the \"eight great canals of the Rear Tao\") made it one of Inner Mongolia's most important grain regions.",
+  },
+
+  "yangtze-delta": {
+    seeing:
+      "The Yangtze Delta is the huge alluvial plain the Yangtze has built at its mouth, spreading east from around Zhenjiang and Yangzhou in Jiangsu to the sea, about 50,000 km². The land is extremely low and flat and water-netted; Lake Tai is its central lake, and Shanghai, Suzhou, Wuxi and Nantong are all on it.",
+    formation:
+      "The Yangtze carries huge amounts of silt to its mouth each year, and under tides and waves the silt keeps building up and prograding on both sides of the mouth and underwater, pushing the coastline far to the east over thousands of years. Sandbars in the channel gradually join the shore or grow — that is how Chongming Island formed, now the largest estuary alluvial island in the world.",
+    observation:
+      "From the air the Yangtze Delta is a very flat, very dense water country at the river mouth: channels, lakes, fish ponds and polders woven into a net, with almost no natural relief. Where the Yangtze meets the sea, muddy yellow silt fans out into the blue water as a plume. Chongming Island is a large oval green sand island at the mouth.",
+    distinguish:
+      "The Yangtze Delta and the Pearl River Delta: both are compound deltas at the mouths of great rivers, both water-netted, both economically developed, but the Yangtze Delta is built mainly on the Lake Tai plain and is more uniformly flat; the Pearl River Delta is three rivers meeting, with many bedrock hills scattered among it (an \"island delta\"). The Yangtze Delta and the North China Plain: one is shaped by the Yangtze, mainly paddy; the other by the Yellow River, mainly dryland.",
+    concept:
+      "The Yangtze Delta is a \"river-and-tide-built\" delta: the river supplies the silt, and tides and waves sort and shape it. In recent decades upstream reservoirs and vegetation recovery have sharply cut the Yangtze's silt load, and the delta's natural growth has slowed markedly, with some shore sections even eroding back — a reminder that a delta needs a continuing supply of silt to be maintained.",
+    history:
+      "The Yangtze Delta was developed early and has been the economic and tax centre of the country since the Tang and Song — \"when Suzhou and Huzhou are ripe, the realm has enough.\" Its dense network of canals, polders and market towns is the basis of the old Jiangnan water country. Today it is one of the most densely peopled and economically dense regions in China.",
+  },
+
+  "pearl-delta": {
+    seeing:
+      "The Pearl River Delta, in south-central Guangdong, is the compound delta built where the West, North and East rivers meet near Guangzhou and reach the sea together, about 11,000 km². Its features are an especially dense river network and many isolated small hills scattered through it. Guangzhou, Shenzhen, Foshan, Dongguan, Hong Kong and Macau are all here.",
+    formation:
+      "The Pearl River Delta grew in a drowned, island-studded former bay. Silt from the three rivers accumulated in the shallow water between the islands, gradually joining island to island and filling the bay into a plain — which is why many bedrock hills still stand in the plain, hence \"island delta\" or \"hilly delta.\"",
+    observation:
+      "From the air the Pearl River Delta is a green water-net shredded by countless channels, its meshes full of farmland, fish ponds and towns, with rounded small hills dotted among them. The West, North and East rivers interweave in the net, and several mouths deliver water and silt into Lingding Bay and Huangmao Sea.",
+    distinguish:
+      "See the Yangtze Delta entry. What makes the Pearl River Delta distinctive: first, three rivers meet, so the network is more complex; second, the plain keeps many bedrock hills, rather than the flat expanse of the Yangtze Delta. It is at lower latitude, in the southern subtropics, and can grow three crops a year.",
+    concept:
+      "The Pearl River Delta is a classic \"island delta\": the silt did not spread over an open coast but \"filled in\" an island-studded former bay, silting the water between islands into land. The mulberry-dyke-and-fish-pond system — dig ponds for fish, plant mulberry on the dyke, feed silkworms with the leaves, feed the fish with the silkworm waste — is the cyclical farming the locals developed in this low water country.",
+    history:
+      "The Pearl River Delta was reclaimed into farmland on a large scale from the Song onward, and grew rich on silk, sericulture and foreign trade in the Ming and Qing. Guangzhou was long an important port for China's foreign trade. Since the 1980s the region has been a front line of reform and opening and a major world manufacturing base.",
+  },
+
+
+  "badain-jaran": {
+    seeing:
+      "The Badain Jaran Desert lies in the western Alxa Plateau of Inner Mongolia, about 49,000 km² — China's third-largest desert. It is best known for its tall sand mountains — many two or three hundred metres of relative height, the highest, Bilutu, about 460 m, among the tallest sand mountains in the world — with more than a hundred interdune lakes scattered between them.",
+    formation:
+      "The sand comes from weathered material off the surrounding mountains and dry riverbeds, piled up by wind over a long time. Why the sand mountains here are so tall is still discussed by researchers; it may involve the shape of the underlying bedrock, a fairly steady wind regime, and groundwater cementing the sand grains. In the interdune hollows groundwater emerges as lakes, mostly saline, a few fed by fresh springs.",
+    observation:
+      "From the air the Badain Jaran is a field of golden sand mountains in violent relief, like frozen giant waves, with small deep-blue or jade-green lakes set in the troughs, often with a patch of green and a temple beside them. Sliding down the steep dune faces makes a roaring sound (\"singing sand\").",
+    distinguish:
+      "The Badain Jaran and the Taklamakan: both are moving-sand deserts, but the Badain Jaran's sand mountains are far taller and it holds many lakes; the Taklamakan is far larger, drier and almost lakeless. The Badain Jaran and the Tengger (both in Alxa): the Badain Jaran is to the west, with tall sand mountains and many lakes; the Tengger is to the east, its dunes lower, and is closer to the Yellow River and the railway.",
+    concept:
+      "The Badain Jaran is a sample of \"why there are lakes in a desert\": the hollows between the dunes cut down to the water table, so groundwater seeps out and pools. Why the sand mountains grow so tall and are not blown flat is a not-yet-fully-solved problem in desert geomorphology. In 2024 the sand-mountain-and-lake complex of the Badain Jaran was inscribed as World Natural Heritage.",
+    history:
+      "Herders have long settled by the desert's lakes, with small temples (such as the Badain Jaran temple). Thinly peopled and hard to reach, the area has long been a natural laboratory for studying arid-zone dunes and groundwater.",
+  },
+
+  tengger: {
+    seeing:
+      "The Tengger Desert straddles Alxa Left Banner in Inner Mongolia and the borders of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
+    formation:
+      "The Tengger's sand is debris from the surrounding mountains and old Yellow River channels, moved and piled by the wind. Some of the hollows between the dunes reach groundwater or hold seasonal water, forming lakes and salt marshes of various sizes (locally \"grass lakes\") — the green points in the desert.",
+    observation:
+      "From the air the Tengger is a rolling yellow sea of dunes, its south-eastern edge right against the Yellow River and the Ningxia Plain. Around Shapotou near Zhongwei you can see the railway and road crossing the sand, the surface laid with a grid of straw checkerboards — a sand-fixing net made by pressing wheat straw into the sand.",
+    distinguish:
+      "See the Badain Jaran entry. The Tengger's traits: its dunes are lower than the Badain Jaran's but it likewise has lake basins; it is farther south-east and directly threatens the Yellow River and the Baotou–Lanzhou railway, so it is one of the earliest and most concentrated sites of sand-control engineering in China.",
+    concept:
+      "Shapotou in the Tengger is the birthplace of \"straw-checkerboard sand fixing\": wheat or rice straw is pressed upright into the sand, left sticking up ten-odd centimetres, in one-metre squares, which block the near-surface wind and hold the drifting sand so plants have a chance to root. This simple method has protected the Baotou–Lanzhou railway since the 1950s and has since been used in many sand regions worldwide.",
+    history:
+      "The Baotou–Lanzhou railway, opened in 1958, crosses the Tengger Desert twice. To keep trains running safely, Chinese researchers set up a sand-control station at Shapotou and tested and spread a whole set of sand-fixing techniques including straw checkerboards. Shapotou is now both a showcase of sand-control results and a tourist area.",
+  },
+
+  kubuqi: {
+    seeing:
+      "The Kubuqi Desert lies on the northern rim of the Ordos Plateau in Inner Mongolia, on the south bank of the great \"几\"-bend of the Yellow River, about 18,600 km² — China's seventh-largest desert and the closest desert to Beijing. \"Kubuqi\" means \"bowstring\" in Mongolian — the desert runs along the Yellow River like a string on a bow.",
+    formation:
+      "The Kubuqi's sand comes partly from Yellow River silt and partly from weathered material off the Ordos Plateau, blown by the prevailing north-west wind and piled on the south bank of the river. Historic overgrazing and cultivation stripped the vegetation and sped up the sand's spread. The dunes are mostly moving to semi-fixed.",
+    observation:
+      "From the air the Kubuqi is an east–west yellow sand belt on the south bank of the Yellow River, with the green farmland of the Hetao Plain just across the river to the north — a sharp contrast. In the last twenty years large planted edge-locking shelterbelts, solar farms and grids of straw checkerboards have appeared in the desert, and its margin has clearly greened.",
+    distinguish:
+      "The Kubuqi and the Mu Us Sandy Land (both around Ordos): the Kubuqi is on the northern plateau rim, along the Yellow River, mostly moving dunes; the Mu Us is in the southern plateau, a semi-arid \"sandy land\" with a better vegetation base, mostly fixed and semi-fixed. The Kubuqi and the Tengger: one hugs the Yellow River, the other hugs the river and the railway, both key sand-control areas.",
+    concept:
+      "The Kubuqi is a case of sand control moving from engineering to industry: combining straw-checkerboard fixing, drought-tolerant planting, solar power and desert cash crops so that fixing the sand also produces income. It also shows that much sand-land expansion has human causes, and that easing grazing and cultivation pressure plus planted measures can reverse part of it.",
+    history:
+      "The Kubuqi desert edge was historically a farming–herding frontier. In the late 20th century it was badly desertified and a frequent dust source. Since the 1990s local companies and residents have kept building roads, planting trees and developing desert industries; in 2017 the Kubuqi sand-control experience was presented at the conference of the UN Convention to Combat Desertification.",
+  },
+
+  "ulan-buh": {
+    seeing:
+      "The Ulan Buh Desert lies in eastern Alxa Left Banner and around Dengkou in Bayannur, Inner Mongolia, about 10,000 km². \"Ulan Buh\" means \"red bull\" in Mongolian. It sits on the west bank of the Yellow River, right next to the Hetao Plain to the north-east — the desert closest to the river and its farmland.",
+    formation:
+      "The Ulan Buh area held a large lake in the geological past (called \"Tushen Marsh\" in the Han dynasty); after the lake dried, its bed sand was lifted by the wind and re-piled into dunes. Historic reclamation and firewood-cutting stripped the vegetation, and the desert gradually spread, at one point trending toward the Yellow River and the Hetao Plain.",
+    observation:
+      "From the air the Ulan Buh is a patch of yellow dunes and sand-degraded grassland on the west bank of the Yellow River, with the river and broad farmland to the east and the gobi of Alxa to the west. In recent years belts of shelterbelt forest and solar bases along the river and farmland side have formed an \"edge-locking\" green strip.",
+    distinguish:
+      "The Ulan Buh and the Kubuqi: both hug the Yellow River, but the Kubuqi is on the south bank (inside the bend), in central Inner Mongolia; the Ulan Buh is on the west bank, farther west, pressing directly against the Hetao Plain. The Ulan Buh and the Tengger: the Ulan Buh is smaller and farther north-east, with a more direct threat to the river channel and the irrigation district.",
+    concept:
+      "The Ulan Buh is an example of \"a dried lake leaving a sand source\": a former lake bed, with the climate drying and the water gone, exposes its fine sand, which the wind moves and piles into dunes in place or downwind. It is also a classic stretch where desert, river and farmland lie next to each other and the boundary must be held with shelterbelts and sand-fixing works.",
+    history:
+      "The Han dynasty farmed and set up counties around the Ulan Buh, which were later abandoned and turned to sand. In modern times Dengkou and other areas resumed Yellow River irrigation and built shelterbelt forest (part of the \"Three-North\" shelterbelt), pushing the desert back and saving the farmland along the river.",
+  },
+
+  muus: {
+    seeing:
+      "The Mu Us Sandy Land straddles northern Shaanxi, southern Ordos in Inner Mongolia and eastern Ningxia, about 42,000 km². Note that it is a \"sandy land,\" not a \"desert\": it is in a semi-arid zone with more rainfall than a true desert, has a base of grassland and vegetation, and its dunes are mostly fixed and semi-fixed.",
+    formation:
+      "The Mu Us area was historically grassland with fairly good water and grass. Climate swings, shrinking rivers and lakes, and long overgrazing, cultivation and war damage to the vegetation let drifting sand gradually expand, producing a \"sandy land\" of dunes alternating with flats and lake basins. Its desertification is largely reversible.",
+    observation:
+      "From the air the Mu Us is a mottled landscape on the northern edge of the Loess Plateau: fixed dunes carrying shrubs and planted forest, with grassy flats, farmland and small lakes between them, and only patches of moving dune left. After decades of management most of the area is now green.",
+    distinguish:
+      "The Mu Us (sandy land) and the Badain Jaran or Taklamakan (deserts): a desert is in an arid zone, almost without vegetation, mostly moving dunes, hard to change fundamentally; a sandy land is in a semi-arid zone, with a vegetation base, mostly fixed and semi-fixed, and can be reversed over large areas by management. The Mu Us and the Kubuqi: the Kubuqi is farther north, drier and has more drifting sand.",
+    concept:
+      "The Mu Us represents \"a sandy land is not a desert, and desertification can be reversed\": in a semi-arid zone with some rainfall, simply stopping overgrazing and cultivation, plus planting grass and trees and laying straw checkerboards, can re-fix the dunes and bring the vegetation back. By around 2020 most of the Mu Us Sandy Land in Shaanxi had been brought under control.",
+    history:
+      "The Mu Us area was once an important base of the Xiongnu (the city of Tongwancheng was built here), when the vegetation was far better than in modern times. In recent decades Yulin in Shaanxi, Ordos in Inner Mongolia and others have kept planting forest and grass and spreading straw checkerboards, turning this sandy land from expanding to shrinking — a model of China's desertification control.",
+  },
+
+  gobi: {
+    seeing:
+      "\"Gobi\" here means the large gravel desert of western Inner Mongolia (around Alxa and Ejin). \"Gobi\" is Mongolian for land that can barely grow plants, its surface covered with gravel and coarse sand. It differs from a sand desert — a sand desert's surface is sand, a gobi's surface is stone.",
+    formation:
+      "A gobi forms by the wind's \"sorting\" action: the wind blows away the fine sand and dust from the surface and carries it elsewhere (piling it as sand desert or loess), leaving behind the gravel it cannot move, which over time forms a tight surface layer — a \"desert pavement.\" That pavement in turn protects the finer soil beneath from further wind erosion.",
+    observation:
+      "From the air a gobi is a broad, grey-brown, mottled, almost plant-free flat of gravel, with sparse camelthorn, saxaul or wild poplar only along seasonal channels and where groundwater is shallow. The lower Hei River at Ejin is a rare green corridor through the gobi, ending at the Juyan lakes.",
+    distinguish:
+      "Gobi and sand desert: a gobi's surface is gravel, relatively stable, and can be driven over; a sand desert's surface is moving sand, hard for vehicles and animals. The two are often adjacent — the same wind blows the fine sand to one place as sand desert and leaves the coarse gravel in place as gobi. Gobi and desert steppe: a gobi is almost bare, desert steppe still has sparse xerophytic grass.",
+    concept:
+      "The gobi is the best example for understanding \"how wind sorts surface material\": the wind's carrying power depends on grain size — dust and fine sand can be blown far, coarse sand only hops along, gravel barely moves. So a region's surface is \"sieved\" by the wind into different zones: where material is blown away becomes gobi, where it piles up becomes sand desert or the Loess Plateau.",
+    history:
+      "The gobi has always been a belt crossed by the Silk Road and the steppe route, and a front line of frontier defence through the dynasties. The Juyan area at Ejin was an important Han garrison, where large numbers of \"Juyan Han bamboo slips\" have been excavated. Today the Jiuquan Satellite Launch Centre (Dongfeng space city) is set in this gobi.",
+  },
+
+
+  "liaodong-hills": {
+    seeing:
+      "The Liaodong Hills occupy the Liaodong Peninsula in south-eastern Liaoning — the south-westward spur of the Changbai mountain system, surrounded by the Yellow and Bohai seas on three sides. They are not high, mostly below 500 m, with the main peak Buyun Shan about 1,130 m, rounded and gentle, covered in forest and orchards.",
+    formation:
+      "The base of the Liaodong Hills is old granite and metamorphic rock, worn down by long erosion from higher mountains into hills. The peninsula keeps rising slightly, and its coast is cut into many bays and headlands. The granite around Qian Shan, weathered and split, has formed many strange peaks and rocks.",
+    observation:
+      "From the air the Liaodong Hills are a sea-ringed, gently rolling stretch of dark-green low mountains, with apple, chestnut and other orchards and farmland in the valleys and coastal flats. Laotie Shan at the peninsula's tip faces the Bohai Strait — the boundary between the Bohai and Yellow seas, and an important corridor for migrating birds.",
+    distinguish:
+      "The Liaodong Hills and the Shandong Hills: they face each other across the Bohai Strait, both low hills ringed by plain and sea, both mainly granite, both apple country, but the Shandong Hills contain a large fault-block mountain like Tai Shan, while the Liaodong Hills are lower overall and closer to the Changbai system.",
+    concept:
+      "The Liaodong Hills show that \"hills\" are what mountains become after long erosion: a once-higher mountain area, without strong uplift, is gradually worn down and rounded by weathering and running water until its relief drops within a few hundred metres and it becomes hills. Being sea-ringed on three sides also makes its climate milder and moister than inland at the same latitude.",
+    history:
+      "The Liaodong Peninsula sits at a land–sea crossroads and was historically a route between the Central Plains, the north-east and the Korean Peninsula, and in modern times a focus of great-power contention. Port cities such as Dalian and Dandong were built on the hills, facing the sea. The peninsula's apples and cherries are well-known local products.",
+  },
+
+  "shandong-hills": {
+    seeing:
+      "The Shandong Hills include the mountains of central-southern Shandong and the hills of the Jiaodong Peninsula, ringed on three sides by the North China Plain and the Yellow River delta. They are a low mountain-and-hill area bulging up in the middle of the plain, mostly around 500 m, with the main peak of Tai Shan about 1,533 m — the highest here.",
+    formation:
+      "The Shandong Hills are mostly old granite and gneiss. Tai Shan, Lu Shan, Yi Shan and Meng Shan in central-southern Shandong are fault-block mountains uplifted along faults — steep, often with clear fault scarps; the hills of the Jiaodong Peninsula were uplifted less and are lower and more rounded. The surrounding plains were filled in by the silt of the Yellow and other rivers.",
+    observation:
+      "From the air the Shandong Hills are a rolling green highland in the centre of the great North China Plain, with a few main peaks like Tai Shan standing out abruptly above the hills. The hills lower toward all sides into flat farmland plain; the Jiaodong Peninsula reaches into the Bohai and Yellow seas with an indented, bay-filled coast.",
+    distinguish:
+      "The Shandong Hills and the Liaodong Hills: both are granite low mountains ringed by plain and sea, but the Shandong Hills have a fault-block mountain like Tai Shan and lie closer to the heart of the North China Plain; the Liaodong Hills are lower overall and are a spur of the Changbai system. The Shandong Hills and the Loess Plateau: one is rock hills bulging up within the North China Plain, the other a coherent loess-covered highland.",
+    concept:
+      "Tai Shan is a good example of a \"fault-block mountain\": it is not the edge of a whole plateau, but a block of rock lifted as a whole along the faults around it, with steep fault scarps on the sides (especially the south). Because it rises abruptly from the plain with large relief, the ancients saw it as a link to heaven, and it became the first of the Five Great Mountains.",
+    history:
+      "Tai Shan was where dynasties held the feng and shan sacrifices and is an important symbol of Confucian culture; it was inscribed as a mixed World Cultural and Natural Heritage site in 1987. The Shandong Hills are the heartland of Qi–Lu culture, and the hometowns of Confucius and Mencius are here.",
+  },
+
+  "jiangnan-hills": {
+    seeing:
+      "The Jiangnan Hills lie south of the Yangtze and north of the Nanling, mainly across Hunan, Jiangxi and Zhejiang — a gently rolling area of low mountains and hills with basins and river valleys of all sizes among them. The surface is mostly a red weathering crust (red earth), and the hills carry Masson pine, tea gardens and oil-tea groves.",
+    formation:
+      "The Jiangnan Hills have varied rock — granite, sandstone, slate and more — deeply weathered by a long hot, wet climate into a thick red crust. Differential uplift has pushed some rock bodies up into mountains: the granite of Huang Shan, the fault block of Lu Shan, the sandstone-conglomerate of Longhu Shan (Danxia) and others are scattered through the hills.",
+    observation:
+      "From the air the Jiangnan Hills are a continuous, ridge-less, rolling stretch of green low mountains south of the Yangtze, with red-earth slopes and terraces between and paddy fields, towns in the basins. A few famous peaks such as Huang Shan and Lu Shan stand out with sheer rock above the surrounding gentle hills. Seas of cloud often flow among the hills after rain.",
+    distinguish:
+      "The Jiangnan Hills and the Liangguang Hills: both are southern hills, but the Jiangnan Hills are north of the Nanling and mainly red earth with granite/sandstone landforms; the Liangguang Hills are south of the Nanling, with limestone karst (peak forest) most typical. The Jiangnan Hills and the Yunnan–Guizhou Plateau: the plateau is a coherently uplifted highland with scarped edges; the Jiangnan Hills have no clear coherent uplift or edge scarp, and are lower.",
+    concept:
+      "The Jiangnan Hills are \"hills in a hot, wet climate\": ample rain and heat weather the rock deeply into red earth — iron and aluminium oxides make it red, and the same process leaches out the nutrients, so red earth needs improvement to be productive. This \"red hill\" landscape is the typical face of southern China's low-mountain country.",
+    history:
+      "The basins and valleys of the Jiangnan Hills have long been important farming areas, and are the home of tea, oil-tea and citrus. Famous mountains such as Lu Shan and Huang Shan rank high in Chinese cultural history. The hills around Jinggang Shan and Ruijin were base areas of the early Chinese revolution.",
+  },
+
+  "liangguang-hills": {
+    seeing:
+      "The Liangguang Hills lie south of the Nanling, across Guangdong and Guangxi — an area of low mountains, hills and basins. Its most typical landform is limestone karst — the \"peak forest\" and \"peak cluster\" rising straight from flat ground around Guilin and Yangshuo are its emblem; there is also Danxia formed from red sandstone-conglomerate (such as Danxia Shan).",
+    formation:
+      "Guangdong and Guangxi have large areas of limestone, dissolved over a long time by carbon-dioxide-charged water in a hot, wet, rainy climate: the surface is \"dissolved\" into isolated rock peaks, peak clusters and closed hollows, while underground it develops many caves and rivers. Where the rock is not limestone, there are gentle low hills under red earth.",
+    observation:
+      "From the air the Liangguang Hills are most distinctive around Guilin: on a flat paddy plain stand densely packed cone- and dome-shaped isolated limestone peaks, with the Li River winding among the peak forest. Elsewhere are continuous gentle red-earth hills and towns and farmland in basins.",
+    distinguish:
+      "The Liangguang Hills' karst and the Yunnan–Guizhou Plateau's karst: the landform types are similar (peak forest, caves), but the Yunnan–Guizhou Plateau is high overall (1,000–2,000 m), an uplifted highland; the Liangguang Hills are far lower, and the peak forest mostly rises from plains. The Liangguang Hills and the Jiangnan Hills: one is marked by karst peak forest, the other by red-earth low hills and famous granite mountains.",
+    concept:
+      "The Guilin peak forest of the Liangguang Hills is a classic of \"tropical–subtropical karst\": the hotter and wetter the climate, the stronger and faster the limestone dissolves, until a continuous limestone surface is \"eaten\" down to isolated rock peaks standing on a dissolution plain. This \"peak-forest plain\" is a late stage of karst development.",
+    history:
+      "The scenery of Guilin has long been called \"the finest under heaven\" and appears again and again in Chinese landscape painting and travel writing. The Lingqu Canal links the Xiang and Li rivers, letting the Central Plains reach the Pearl system by water — a key work in the Qin unification of the far south.",
+  },
+
+  namtso: {
+    seeing:
+      "Nam Co lies in central Tibet at the northern foot of the Nyainqentanglha range, at about 4,718 m — one of the highest large lakes in the world, and the second-largest lake in Tibet (after Serling Co). It is a closed saltwater lake with intensely deep-blue water, and one of the three great sacred lakes of Tibetan Buddhism.",
+    formation:
+      "Nam Co sits in a down-faulted tectonic basin on the Tibetan Plateau, walled in by fault-block mountains. It is fed by Nyainqentanglha snowmelt and rain, has no outlet, and balances by strong evaporation, so salt has accumulated over a long time into a saltwater lake. Several old shorelines around the lake show that the water once stood higher and the lake was larger.",
+    observation:
+      "From the air Nam Co is a large, saturated patch of deep blue on the plateau, its southern shore hard against a line of permanently snow-capped Nyainqentanglha peaks, lake and snow mountains mirroring each other. Peninsulas and small limestone hills reach into the lake in the south-west. Around it is open cold-steppe, with herders' tents scattered here and there.",
+    distinguish:
+      "Nam Co and Qinghai Lake: both are closed saltwater tectonic lakes on a plateau, but Nam Co is far higher (4,718 m against 3,196 m), deeper into the Tibetan Plateau, and colder. Nam Co and the Tianshan's Tianchi: one is a large saltwater lake in a fault depression, the other a small freshwater lake gouged by ice and dammed by moraine.",
+    concept:
+      "Nam Co is a sample of \"why the plateau has so many salt lakes\": the Tibetan Plateau is full of down-faulted basins, which fill with water into lakes, but the climate is cold and dry and most lakes have no outlet, so evaporation keeps concentrating them and salt builds up. In recent decades a warming climate and more glacial meltwater have made a number of plateau lakes, Nam Co among them, still grow.",
+    history:
+      "Nam Co is a sacred lake of Tibetan Buddhism; the Tashi Peninsula on its shore has many caves and hermitage sites, and pilgrims circle the lake (\"lake kora\"). Nyainqentanglha is regarded as a guardian mountain. The area is part of the northern Tibetan pastoral region.",
+  },
+
+  dongting: {
+    seeing:
+      "Dongting Lake lies in northern Hunan on the south bank of the middle Yangtze. It was historically China's largest freshwater lake, and heavy silt accumulation and lake-to-farmland reclamation have dropped it to second (behind Poyang). Like Poyang it \"changes face\" sharply: a vast lake in flood, and in the dry season a set of winding channels plus wide areas of exposed flats.",
+    formation:
+      "Dongting Lake fills a down-faulted, subsiding basin. The \"four rivers\" — the Xiang, Zi, Yuan and Li — enter from the south; in flood season Yangtze floodwater diverts into the lake through several \"mouths\" on the north, cutting the Yangtze's flood peak; the lake water finally rejoins the Yangtze at Chenglingji in the north-east. Silt from the Yangtze and the four rivers has kept building up in the lake for centuries.",
+    observation:
+      "From the air Dongting Lake in high water is a large connected sheet of water on the south bank of the Yangtze, cut by dykes and polders into eastern, southern and western parts; in low water it shrinks to a hanging \"tree\" — a main trunk plus the branches where the four rivers enter, with yellow-green flats between the branches, a wintering ground for migratory birds.",
+    distinguish:
+      "Dongting Lake and Poyang Lake: both are on the south bank of the middle Yangtze, both connected to the river, both \"a sheet of water in flood, a thread in drought\"; Dongting was historically larger and dropped to second through silting and reclamation. Dongting Lake and Qinghai Lake: one is exterior-drainage, fresh, and swings sharply with the season; the other interior-drainage, saline, and relatively stable.",
+    concept:
+      "The key ideas for Dongting Lake are the \"river–lake relationship\" and the double pressure of \"silting and reclamation\": it cuts the Yangtze's flood peak and stores water, but silt from the Yangtze and the four rivers keeps shoaling it, and historically people then diked the new flats into farmland (\"reclaiming the lake for fields\"), so the lake shrank and its storage capacity weakened. After the great flood of 1998, \"returning farmland to lake\" was promoted.",
+    history:
+      "\"Dongting holds the finest water under heaven, Yueyang the finest tower\" — the Yueyang Tower, famous from Fan Zhongyan's essay, stands on the lake shore. The Dongting Lake plain is an important \"land of fish and rice.\" The lake's finless porpoises and wintering birds are a focus of recent conservation.",
+  },
+
+  "tiger-leaping-gorge": {
+    seeing:
+      "Tiger Leaping Gorge, in north-western Yunnan, is an extremely deep, extremely narrow gorge the Jinsha River has cut between the Jade Dragon Snow Mountain (about 5,596 m) and the Haba Snow Mountain (about 5,396 m), roughly 16 km long. From the river to the Jade Dragon summit is about 3,900 m — one of the deepest gorges in the world. Legend says a tiger once leaped the river using a boulder in mid-channel, hence the name.",
+    formation:
+      "The two snow mountains here are rising fast while the Jinsha River, which already existed, cuts down at almost the same rate, sawing a narrow slot between them. The gorge has an upper, middle and lower section; the river is only about 30 m wide at its narrowest, with violent rapids and whirlpools among the boulders.",
+    observation:
+      "From the air Tiger Leaping Gorge is a straight deep slit between the Jade Dragon and Haba snow mountains, the muddy-yellow Jinsha a thread on the floor. The walls are near-vertical, and a full sequence of vegetation belts is stacked from the subtropical valley floor to the snow and ice on top. Just outside the southern mouth, the Jinsha makes the famous \"First Bend of the Yangtze\" at Shigu.",
+    distinguish:
+      "Tiger Leaping Gorge and the Three Gorges of the Yangtze: both are canyons where the Yangtze system cuts through mountains, but Tiger Leaping Gorge is on the upper river (the Jinsha reach), held between two snow mountains, and far deeper and narrower; the Three Gorges are on the middle river, cutting a lower fold range, and known for ruggedness and the dam. Tiger Leaping Gorge and the Yarlung Tsangpo Grand Canyon: the latter is longer, with greater peak-to-valley relief — the deepest and longest canyon in the world.",
+    concept:
+      "Tiger Leaping Gorge is an extreme sample of \"river downcutting keeping pace with uplift\": as long as uplift is not too fast and the river's discharge and gradient are enough, the water keeps sawing down at its original level — the higher the mountains grow, the deeper the gorge cuts. This narrow deep slot between Jade Dragon and Haba was \"sawn\" this way over a few million years.",
+    history:
+      "Tiger Leaping Gorge was a dangerous stretch of the Tea Horse Road and is now a classic trekking route. The Jinsha here has rich hydropower potential, and whether to build a dam near Tiger Leaping Gorge has long been debated. The slopes on both sides are home to Naxi and Yi people.",
+  },
+
+  leizhou: {
+    seeing:
+      "The Leizhou Peninsula, in south-western Guangdong, is the southernmost peninsula of the Chinese mainland, facing Hainan Island across the Qiongzhou Strait. It is broadly a low basalt platform, mostly below 100 m, with a red weathering soil, an indented coast, and abundant volcanic landforms.",
+    formation:
+      "The Leizhou Peninsula was formed by repeated Cenozoic volcanic eruptions: basalt lava spread layer on layer into a large low lava platform, and some of the eruption craters filled with water into lakes. Huguangyan near Zhanjiang is a classic maar lake — a near-circular deep pit blasted out when rising magma met groundwater, then filled with water.",
+    observation:
+      "From the air the Leizhou Peninsula is a dark-red, low, flat piece of land reaching into the sea, almost without hills, its platform surface cut by shallow valleys and gullies, its coast fringed with mangroves and mudflats. Round craters and maar lakes are scattered across it. Xuwen at the southern tip faces the Qiongzhou Strait.",
+    distinguish:
+      "The Leizhou Peninsula and Hainan Island: they face each other across the strait and both have volcanic landforms, but the Leizhou Peninsula is attached to the mainland, broadly a low flat basalt platform with no high mountains; Hainan is a fault-formed continental island with granite mountains in the middle and a ring terrain. The Leizhou maar (Huguangyan) differs from the volcanic lakes of Changbai Shan and the Tianshan: a maar is a low, wide explosion pit filled with water, not a crater lake high on a mountain.",
+    concept:
+      "The Leizhou Peninsula is a combination of \"basalt platform plus maar-type volcanism\": low-viscosity, free-flowing basaltic magma spreads into broad flat platforms when it erupts, rather than piling up steep cones; when rising magma meets groundwater it explodes with steam, blasting a shallow wide pit at the surface, and water in it is a maar lake. Such landforms are direct evidence for reading the character of a region's volcanic activity.",
+    history:
+      "The Leizhou Peninsula is named for its frequent thunderstorms (\"Leizhou\" — thunder prefecture). Historically remote, it was a place of banishment for demoted officials. Hot, wet and typhoon-prone, it grows sugarcane, pineapple, sisal and other tropical crops, and is the mainland's gateway to Hainan.",
+  },
+
   // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
 
   kashgar: {
