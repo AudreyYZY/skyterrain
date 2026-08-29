@@ -183,6 +183,26 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "lough-neagh": "national",
   "isle-of-skye": "national",
   "outer-hebrides": "national",
+
+  // 冰岛
+  hekla: "national",
+  katla: "national",
+  eyjafjallajokull: "national",
+  thingvellir: "national",
+  askja: "national",
+  vatnajokull: "national",
+  langjokull: "national",
+  hofsjokull: "national",
+  laki: "national",
+  gullfoss: "national",
+  dettifoss: "national",
+  "haukadalur-geysir": "national",
+  krafla: "national",
+  myvatn: "national",
+  "reykjanes-peninsula": "national",
+  vestmannaeyjar: "national",
+  thjorsa: "national",
+  "jokulsa-a-fjollum": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {

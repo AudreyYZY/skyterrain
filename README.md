@@ -11,14 +11,14 @@
 
 | 模式 | 面向的问题 | 内容 |
 |---|---|---|
-| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 246 处地貌 + 6 板块权威讲解 |
+| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 274 处地貌 + 6 板块权威讲解 |
 | **旅游出行模式** | "到了这个陌生城市，衣食住行要注意什么？" | 城市概览 —— 地理格局 / 衣食住行 / 人文习俗 / 出行提示 |
 
 两套内容系统平行、互不影响。
 
 **当前范围**：
 - 学习模式 —— 亚洲（中国 84 含新疆 + 日本 26）· 大洋洲（澳大利亚 22 + 新西兰 30）·
-  北美洲（美国 26 + 加拿大 25）· 欧洲（英国 33），共 246 处，中英双语
+  北美洲（美国 26 + 加拿大 25）· 欧洲（英国 33 + 冰岛 28），共 274 处，中英双语
 - 旅游模式 —— 澳大利亚（国家概览 + 7 城市）+ 中国（11 城市），中英双语
 
 **规划**：中国旅游模式 → 全球主要地形（学习模式）→ 按旅游热度扩展各国旅游模式。
@@ -29,7 +29,7 @@
 
 ### 地形集 —— 单一真实源
 
-- **246 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，15 类：
+- **274 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，15 类：
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
   `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`。
 - 每处记录**锚点**（主峰 / 主湖 / 枢纽城市 + 经纬度 + 海拔）、**边界框**、**走向轴**、
@@ -57,7 +57,7 @@
 - 朝向由地形走向 + 可选的 `viewFrom`（相机在锚点哪一侧，编辑决策）推导。
 - 俯角 / 距离由地形尺度推导；大面积高原 / 大盆地 / 大平原 / 大沙漠在注册表的 `WIDE_VIEW` 里
   给 `viewScale`，取景放宽到能看出"一整片高地 / 盆地"的地貌特征，而非锚点周边一个局部景物。
-- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（246/246）。
+- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（274/274）。
 
 ### 区域高亮 —— 克制的轮廓
 
@@ -101,7 +101,7 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 - 内容写在 [`lib/terrain-content.{zh,en}.ts`](lib/terrain-content.zh.ts)（`getTerrainContent(id, lang)`），
   依据中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
   等公认地理事实总结，非文学化旁白、非凭空生成。
-- **246 处全部有中英双语讲解**。核源标准：去比较性 / 主观评价，有争议的加限定或并列，
+- **274 处全部有中英双语讲解**。核源标准：去比较性 / 主观评价，有争议的加限定或并列，
   查不到宁可删，数字统一到权威口径；新增国家一律查该国官方地质 / 国家公园 / 地名机构口径。
 - `settlement`（绿洲·聚落）只用「概述 / 从空中怎么看 / 历史与人文」三段。
 - [`lib/terrain-lesson.ts`](lib/terrain-lesson.ts) `resolveLesson(id, lang)` 一处决定用哪份讲解。
@@ -152,7 +152,7 @@ npm run dev      # 开发（webpack）
 npm run build    # 生产构建
 npm run lint     # ESLint
 
-node --experimental-strip-types scripts/check-terrain-camera.ts   # 相机几何自检（246/246）
+node --experimental-strip-types scripts/check-terrain-camera.ts   # 相机几何自检（274/274）
 node --experimental-strip-types scripts/check-routes.ts           # 航线自检
 node --experimental-strip-types scripts/check-places.ts           # 旅游地点自检
 node scripts/extract-ne-landforms.mjs                             # 重新提取地形边界
@@ -181,7 +181,7 @@ components/
   RegionSelector.tsx       — 顶栏区域切换
 
 lib/
-  terrain-registry.ts       — 【单一真实源】246 处地形的锚点/范围/走向/中英名/来源
+  terrain-registry.ts       — 【单一真实源】274 处地形的锚点/范围/走向/中英名/来源
   terrain-camera.ts         — computeTerrainCamera() 数据驱动相机推导
   terrain-content.{zh,en}.ts— 权威 6 板块讲解内容（中/英）
   terrain-lesson.ts         — resolveLesson(id, lang)：一处决定用哪份讲解
