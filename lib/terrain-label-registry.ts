@@ -190,6 +190,10 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   eyjafjallajokull: "national",
   thingvellir: "national",
   askja: "national",
+  vatnajokull: "national",
+  langjokull: "national",
+  hofsjokull: "national",
+  laki: "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {

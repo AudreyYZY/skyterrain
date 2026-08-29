@@ -3815,4 +3815,109 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Alþingi met in the open air at Þingvellir for nearly nine centuries (930–1798), passing laws, settling disputes and making major decisions here — for instance around the year 1000 Iceland voted here to adopt Christianity collectively. In 1944 Iceland formally declared its separation from Denmark and the founding of the republic at Þingvellir. It is a national park today.",
   },
+
+  "vatnajokull": {
+    seeing:
+      "Vatnajökull, in south-eastern Iceland, is the largest ice cap in Iceland and, by volume, the largest in Europe — about 7,700 km², covering roughly 8% of Iceland, and nearly a kilometre thick at its thickest. It is not a small glacier on a mountain but a whole ice sheet lying on a plateau, sending dozens of outlet glaciers down all around. Hvannadalshnúkur, on its southern rim, is 2,110 m — the highest point in Iceland.",
+    formation:
+      "Vatnajökull exists because Iceland is at a high latitude and has heavy precipitation: the snow that falls on the plateau in winter does not melt off in summer, and year on year it accumulates and compacts into ice, which flows slowly downhill under its own weight. Beneath the ice cap are several active volcanoes (Grímsvötn, Bárðarbunga and others), whose geothermal heat and eruptions melt subglacial lakes and trigger glacial floods. In recent decades warming has thinned and shrunk Vatnajökull markedly, and its outlet-glacier snouts have generally retreated.",
+    observation:
+      "From the air Vatnajökull is a large white, slightly domed ice sheet, its surface streaked with blue meltwater channels and arcuate crevasses; dozens of outlet glaciers reach out like fingers into the surrounding black valleys and plains, with grey-green proglacial lakes and black outwash gravel plains often in front of them. Where the subglacial volcanoes lie on the southern part, the ice surface shows slightly depressed circular areas.",
+    distinguish:
+      "Vatnajökull differs from the \"valley glaciers\" of the Alps and Himalaya that flow along mountain valleys: it is an \"ice cap / ice sheet\" lying on a plateau and flowing outward from the centre, on a far larger scale. Compared with the continental ice sheets of Greenland and Antarctica it is much smaller, and it has active volcanoes beneath it — a place where \"ice and fire\" are in direct contact.",
+    concept:
+      "Vatnajökull is a case study in an ice cap: when snow accumulates faster than it melts over a relatively flat highland, the ice piles up into a dome, thick in the centre and thin at the edges, flowing outward from the centre in all directions under gravity, with little relation to the underlying terrain. To recognise an ice cap, look at whether it covers the underlying terrain as one body and flows radially from the centre. A common misconception is to conflate an ice cap with a valley glacier.",
+    history:
+      "For centuries, glacial floods from eruptions beneath Vatnajökull repeatedly destroyed farmland and transport routes on the south coast — the reason the last section of Iceland's Ring Road (across Skeiðarársandur) was only completed in 1974. Vatnajökull National Park was established in 2008 and later expanded to become the largest national park in Europe (about 14% of Iceland); in 2019 it was inscribed as a World Heritage Site for its \"dynamic nature of fire and ice\".",
+  },
+
+  "langjokull": {
+    seeing:
+      "Langjökull (\"long glacier\"), in Iceland's western highlands, is the second-largest ice cap in Iceland, about 900 km², fairly gentle and elongated in form. It is not far from Reykjavík or the \"Golden Circle\" attractions. Part of its meltwater feeds, through underground flow, Iceland's largest natural lake Þingvallavatn, and part joins the Hvítá river and finally pours over Gullfoss.",
+    formation:
+      "Langjökull, like other ice caps, formed from year-round snow on the western highlands compacting and flowing slowly outward. Beneath it are mainly basaltic volcanic rocks and several fissure zones, with subglacial eruptions in the past. Langjökull is thinner than Vatnajökull, slightly lower in altitude, and more exposed to a maritime climate, so it is especially sensitive to warming — at the present melt rate, some studies estimate it could largely disappear within about a century and a half.",
+    observation:
+      "From the air Langjökull is a north-south, smooth-edged white ice sheet on the western highlands, its surface relatively flat, with crevasses and meltwater channels only near the edges. On its eastern side lie two geothermally active, brightly coloured volcanic areas (Kerlingarfjöll and Hveravellir). To the south, the Hvítá flows out from the ice cap, crosses grassland and races toward Gullfoss.",
+    distinguish:
+      "Langjökull and Vatnajökull are both ice caps, but Vatnajökull is far thicker and its volcanoes far more active; Langjökull is thinner, flatter and retreating faster, and is regarded as the \"most vulnerable\" of Iceland's ice caps to climate change. It is similar in size to Hofsjökull, but Hofsjökull hides a large caldera beneath.",
+    concept:
+      "Langjökull is a case study in an ice cap's sensitivity to climate: a thin, not very high ice cap, once mean annual temperature rises a little, has summer melt exceed winter accumulation, and it shrinks continuously and at an accelerating rate until it disappears. To judge an ice cap's \"vulnerability\", look mainly at its thickness and surface altitude — the thinner and lower, the more at risk. A common misconception is that all glaciers melt at about the same rate.",
+    history:
+      "The area around Langjökull was historically summer grazing and a route across the highlands. From the 20th century the ice cap has been a site for snowmobiling and ice-cave tourism — in 2015 an artificial ice tunnel was cut into the ice cap for visitors. The ice cap's meltwater, recharging Þingvallavatn through an underground aquifer, is one reason for that lake's exceptionally clear water.",
+  },
+
+  "hofsjokull": {
+    seeing:
+      "Hofsjökull, right in the centre of Iceland, is the third-largest ice cap in Iceland, about 800 km², shield-shaped in form. It is not as famous as Vatnajökull, but it is a key place: Iceland's longest river, the Þjórsá, and another large river, the Blanda, both rise on this ice cap. It lies roughly at the geographic centre of Iceland.",
+    formation:
+      "Hofsjökull sits on a shield volcano, with an active caldera about 7 km across hidden beneath the ice. The ice cap itself formed from highland snow compacting and flowing outward from the centre. Because there is volcanic geothermal heat below, the base of the ice cap is not frozen everywhere and there is local meltwater; there have also been subglacial eruptions and small glacial floods in the past. The ice cap has likewise been retreating in recent decades.",
+    observation:
+      "From the air Hofsjökull is a near-circular, smooth-edged white ice sheet in Iceland's interior, surrounded by an endless grey-black volcanic highland desert and a few oasis-like patches of grassland (such as the old highland pastures around Nýidalur and Kerlingarfjöll). Several glacial rivers radiate out from the edge of the ice cap, and the one running south is the source of the Þjórsá.",
+    distinguish:
+      "Hofsjökull and Langjökull are similar in size and both on the highlands, but Hofsjökull is a \"shield volcano plus ice cap\" combination with an active caldera beneath; Langjökull is underlain mainly by fissure zones. Compared with Vatnajökull, Hofsjökull is much smaller and stands more in isolation in the middle of the highland desert.",
+    concept:
+      "Hofsjökull is a case study in a volcano beneath an ice cap: if a shield volcano is covered by an ice cap, the volcano's circular outline and the position of its caldera can often be inferred from slight depressions and crevasse patterns in the ice surface, and volcanic activity shows itself through subglacial meltwater and sudden floods. To recognise this system, look at whether the ice cap is an unusually regular circle and whether its edge shows signs of periodic drainage. A common misconception is that the ground beneath an ice cap must be an ordinary rock plateau.",
+    history:
+      "The highlands around Hofsjökull are traditional Icelandic summer pastures and the site of routes across the interior, recorded in the old sagas. After rising here, the Þjórsá is heavily used downstream for hydropower — several of Iceland's largest hydro stations are in the Þjórsá basin. Iceland's hydrological service maintains long-term mass-balance monitoring points on Hofsjökull.",
+  },
+
+  "myrdalsjokull": {
+    seeing:
+      "Mýrdalsjökull, on Iceland's south coast, is the fourth-largest ice cap in Iceland, about 590 km². Its most important \"identity\" is that directly beneath it lies the Katla volcano's large caldera, about 10 km across. The Sólheimajökull outlet glacier flowing from its south-western edge is one of the easiest glaciers in Iceland to reach and one of the most used for glacier walks.",
+    formation:
+      "Mýrdalsjökull sits on a volcano cut through by a caldera. The ice cap formed from the abundant snow on the south-coast highlands compacting and flowing outward; being at low latitude, near the sea and with heavy precipitation, it is one of Iceland's ice caps with the most vigorous accumulation and melt. The Katla volcano below gives the base of the ice cap geothermal heat, and an eruption would rapidly melt ice and trigger a glacial flood. Sólheimajökull has retreated hundreds of metres in recent decades, its snout forming a steadily growing proglacial lake.",
+    observation:
+      "From the air Mýrdalsjökull is a white ice sheet on the south coast, right next to the smaller Eyjafjallajökull ice cap to the west (a snow-linked saddle between them). Several grey-black outlet glaciers (their surfaces covered in volcanic ash) reach out from its southern edge, with black glacial-flood plains (Mýrdalssandur, Sólheimasandur) in front of them.",
+    distinguish:
+      "Mýrdalsjökull and inland Vatnajökull to the north both cover active volcanoes, but Mýrdalsjökull is small, coastal and at low latitude, with fast accumulation and melt; and the Katla beneath it directly threatens south-coast communities. Sólheimajökull and Skeiðarárjökull are both outlet glaciers, but Sólheimajökull is smaller and more accessible.",
+    concept:
+      "Mýrdalsjökull is a case study in an outlet glacier: an ice cap \"squeezes out\" faster-flowing tongues from low points on its edge, along hollows in the underlying terrain, like water overflowing a notch in the rim of a basin. The snout positions of these outlet glaciers respond most sensitively to climate change and are a focus of glacier-retreat monitoring. A common misconception is to treat an outlet glacier as an independent valley glacier.",
+    history:
+      "The glacial floods from Katla eruptions are recorded in detail in Iceland's sagas and parish records, and have repeatedly changed the landforms and settlement pattern of the south coast. There is long-term monitoring of mass balance and snout positions on Mýrdalsjökull. Because it is so accessible, Sólheimajökull is Iceland's most visible \"showcase window\" of glacier retreat and a frequent site for climate education.",
+  },
+
+  "skeidararsandur": {
+    seeing:
+      "Skeiðarársandur, on Iceland's south-east coast, lies between the Skeiðarárjökull outlet glacier of Vatnajökull and the sea — the largest glacial outwash plain (Icelandic sandur, \"sand plain\") in the world, about 1,000 km². It is an almost perfectly flat, vegetation-free black gravel desert cut by countless braided channels — a long straight section of Iceland's Ring Road runs right across it.",
+    formation:
+      "Skeiðarársandur was \"built up\" by glacial rivers. The base of the glacier grinds up huge amounts of rock, and the meltwater, laden with this gravel, sand and mud, comes out of the mountains; where the slope suddenly flattens and the flow splits into many strands (braided), its carrying capacity drops and the sediment is spread out layer by layer, filling the space between the glacier snout and the sea into a large plain. Besides the everyday glacial rivers, the glacial flood from Grímsvötn every few years brings a sudden, enormous pulse of water and sediment that can reshape the channels of the whole sandur in one event.",
+    observation:
+      "From the air Skeiðarársandur is a vast pale-grey-to-black, geometrically flat gravel expanse between the ice cap and the sea, carrying a constantly shifting braided river network, bright silver channels weaving and splitting across the dark gravel. To the north is the snout of Skeiðarárjökull and the moraine ridge in front of it, and to the south a dead-straight coastline.",
+    distinguish:
+      "Skeiðarársandur is similar to an ordinary river delta or alluvial fan, all formed where flow slows and drops its sediment, but the sandur's source is a glacier, the climate is cold, and it is overprinted by periodic glacial floods, so it is flatter, more \"barren\" and its channels shift more violently. Compared with a gravel plain like the Canterbury Plains, built during the ice ages, Skeiðarársandur is forming right now, in front of your eyes.",
+    concept:
+      "Skeiðarársandur is a case study in an outwash plain (sandur) and a braided river: when a river carrying a lot of coarse sediment has its slope suddenly flatten, it splits into many shallow, wide, constantly migrating, interweaving channels (braided), and spreads its sediment over a large area, forming a flat gravel plain. To recognise a braided river, look at whether the channels are many-stranded, full of sandbars and frequently shifting. A common misconception is to take the sandbars of a braided river for stable islands.",
+    history:
+      "In 1996, the meltwater from the Gjálp fissure eruption beside Grímsvötn gathered and then burst out suddenly, and an exceptional glacial flood (peak flow about 50,000 cubic metres per second) swept across Skeiðarársandur, destroying several large bridges on the Ring Road; the twisted girders are still kept by the roadside as a monument. Iceland then reinforced the bridges and designed them to \"be washed away rather than dam up\". Deliberately sown sand-stabilising grassland has been slowly spreading over the sandur in recent years.",
+  },
+
+  "jokulsarlon": {
+    seeing:
+      "Jökulsárlón, on Iceland's south-east coast at the southern edge of Vatnajökull, is one of the most famous natural attractions in Iceland: a lake full of floating icebergs, which calve from the Breiðamerkurjökull glacier behind, drift slowly toward the outlet, and some of which are washed back to shore by the waves and stranded on the black sand beach (\"Diamond Beach\").",
+    formation:
+      "This lake was \"given up\" by a retreating glacier. Before the 1930s, Breiðamerkurjökull reached almost to the sea, and there was no lake. As the climate warmed, the glacier retreated fast, and the deep trough its snout had gouged (below sea level) gradually filled with meltwater and seawater, forming a proglacial lake that keeps growing — it is now the deepest lake in Iceland, about 248 m at its deepest. A short channel connects the lake to the sea, and seawater enters on the flood tide.",
+    observation:
+      "From the air Jökulsárlón is a deep-blue lake at the edge of the ice cap, dotted with white and pale-blue ice blocks, the crevassed snout of the glacier on its inner side constantly calving ice into it; on the outer side a narrow channel crosses the black beach to the sea, with clear ice blocks washed ashore scattered on the black sand on either side. Beside it is a smaller, more \"clogged\" sister lake (Fjallsárlón).",
+    distinguish:
+      "Jökulsárlón and the proglacial lake at the snout of the Tasman Glacier in New Zealand are the same kind of \"proglacial lake\", both formed by meltwater filling an over-deepened trough after the glacier retreated. The difference is that Jökulsárlón connects directly to the sea, with tides and seals, and its icebergs can drift all the way out to sea.",
+    concept:
+      "Jökulsárlón is a case study in a proglacial lake accelerating glacier retreat: when a glacier snout retreats into a trough below the sea or lake surface, water ponds in front of it; the lake water (especially warmer water that can circulate) constantly undercuts the snout and buoys it up, making it more likely to break off, so the glacier retreats faster than it would on land alone. To recognise this positive feedback, look at whether the glacier snout is \"soaking\" in a lake of its own meltwater. A common misconception is that a lake makes a glacier \"more stable\".",
+    history:
+      "Jökulsárlón went from nothing to its present size in only a few decades — one of the most vivid records of rapid glacier retreat in Iceland. Around 1934 the site was still largely land; today the lake covers about 25 km². Its distinctive scenery has made it a filming location for several films. In recent years Iceland has been debating how to protect the section of coast road leading to the lagoon — the waves are steadily eroding the road base along the outlet.",
+  },
+
+  "laki": {
+    seeing:
+      "Laki (Icelandic: Lakagígar), in Iceland's southern interior, is a fissure about 25 km long made of around 130 craters strung together. It is now a volcanic landscape covered in grey-green moss, looking almost gently peaceful, but it is the site of one of the largest basaltic lava eruptions in recorded history on Earth — the 1783–84 eruption (the \"Skaftá Fires\") lasted about eight months and produced about 14–15 cubic kilometres of lava.",
+    formation:
+      "The Laki fissure lies on the rift zone between the Grímsvötn and Katla volcanic systems. In 1783 basaltic magma rose along this fissure in segments, opening vent after vent, forming a long line of scoria cones and lava fountains, the lava filling two river valleys downstream and covering about 600 km². The eruption's real lethality was in its gases: the huge amounts of sulphur dioxide and fluorine released formed a poisonous haze over Iceland, and fluorine-bearing ash landing on pastures poisoned the livestock.",
+    observation:
+      "From the air Laki is a dead-straight \"seam\" of dozens of red-brown-to-black scoria cones joined end to end, running obliquely across the southern highlands of Iceland, flanked by the lava field spread out in 1783 (\"Eldhraun\") and now covered in thick moss. A mountain called Laki, in the middle of the fissure, is split in two by it.",
+    distinguish:
+      "Laki, like Hekla and Fagradalsfjall, is a fissure eruption, but the scale, duration and gas output of this one far exceeded any eruption of modern Iceland; it is closer to a small-scale re-run of an ancient large \"flood basalt\" event. Compared with the explosive Eyjafjallajökull, Laki erupted lava and gas, with almost no far-travelling fine ash.",
+    concept:
+      "Laki is a case study in the lethality of volcanic gas: even if a lava eruption is far from people and the lava itself does not reach the villages, the sulphur dioxide it releases (forming acid haze that damages lungs and plants) and the fluorine (concentrating on the grass and causing fluorosis in livestock) can bring about widespread agricultural collapse and famine. To assess this kind of risk, look at whether the eruption is long-lasting, basaltic and high in gas output. A common misconception is to focus only on lava and ash and ignore the gas.",
+    history:
+      "The 1783–84 Laki eruption caused the \"Mist Hardships\" (Móðuharðindin) in Iceland: the poisonous haze and the severe cold that followed killed about half the livestock, and the ensuing famine killed roughly a fifth of Iceland's population — the worst natural disaster in Iceland's history. The sulphur haze from the eruption also caused abnormal weather and crop failures in many parts of the Northern Hemisphere that year. Today Lakagígar is within Vatnajökull National Park, its moss landscape extremely fragile, with access only on marked paths.",
+  },
 };

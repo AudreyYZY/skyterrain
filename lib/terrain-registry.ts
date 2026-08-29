@@ -4179,6 +4179,113 @@ const THINGVELLIR: TerrainEntry = {
   source: "辛格维利尔：北美与欧亚两大板块拉张、地壳下陷形成的地堑（裂谷）；930年起在此召开“阿尔庭”议会——世界现存最古老的议会之一；世界文化遗产（UNESCO / Þingvellir NP）",
 };
 
+const VATNAJOKULL: TerrainEntry = {
+  id: "vatnajokull",
+  nameZh: "瓦特纳冰原",
+  nameEn: "Vatnajökull",
+  category: "plateau",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "华纳达尔斯赫努克（Hvannadalshnúkur，冰原南缘）", lon: -16.678, lat: 64.016, elevation: 2110, kind: "peak" },
+  bbox: [-18.60, 63.85, -15.30, 64.95],
+  viewScale: 2.5,
+  label: { lon: -17.0, lat: 64.4, rotation: 0 },
+  pois: [
+    { name: "冰河湖（Breiðárlón / 布雷达默克冰舌）", lon: -16.30, lat: 64.10, note: "南缘退缩的冰舌前形成的冰河湖" },
+  ],
+  source: "瓦特纳冰原：冰岛最大、按体积计欧洲最大的冰帽，约7700km²（占冰岛约8%），最厚近1km；冰下有多座活火山，南缘华纳达尔斯赫努克2110m 为冰岛最高点；世界遗产（UNESCO / Vatnajökull NP）",
+};
+
+const LANGJOKULL: TerrainEntry = {
+  id: "langjokull",
+  nameZh: "朗格冰原",
+  nameEn: "Langjökull",
+  category: "plateau",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "朗格冰原（西部高地）", lon: -20.00, lat: 64.65, elevation: 1300, kind: "escarpment" },
+  bbox: [-20.60, 64.38, -19.35, 64.92],
+  viewScale: 1.8,
+  label: { lon: -20.00, lat: 64.65, rotation: 0 },
+  source: "朗格冰原：冰岛第二大冰帽（约900km²），位于西部高地，形态较平缓；融水补给辛格瓦德拉湖的地下泉、以及经黄金瀑布下泄的白河（Hvítá）；近年退缩很快（Institute of Earth Sciences）",
+};
+
+const HOFSJOKULL: TerrainEntry = {
+  id: "hofsjokull",
+  nameZh: "霍夫斯冰原",
+  nameEn: "Hofsjökull",
+  category: "plateau",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "霍夫斯冰原（冰岛中部）", lon: -18.80, lat: 64.80, elevation: 1600, kind: "escarpment" },
+  bbox: [-19.30, 64.60, -18.30, 65.02],
+  viewScale: 1.7,
+  label: { lon: -18.80, lat: 64.80, rotation: 0 },
+  source: "霍夫斯冰原：冰岛第三大冰帽（约800km²），盾状，冰下藏着一个大型活动破火山口；冰岛最长的河雷神河（Þjórsá）和布兰达河都发源于此；大致位于冰岛地理中心（Institute of Earth Sciences）",
+};
+
+const MYRDALSJOKULL: TerrainEntry = {
+  id: "myrdalsjokull",
+  nameZh: "米尔达斯冰盖",
+  nameEn: "Mýrdalsjökull",
+  category: "plateau",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "米尔达斯冰盖", lon: -19.10, lat: 63.65, elevation: 1450, kind: "escarpment" },
+  bbox: [-19.55, 63.48, -18.70, 63.82],
+  viewScale: 1.5,
+  label: { lon: -19.10, lat: 63.65, rotation: 0 },
+  pois: [
+    { name: "索尔海马冰舌（Sólheimajökull）", lon: -19.37, lat: 63.53, note: "西南缘的出口冰川，近几十年退缩数百米" },
+  ],
+  source: "米尔达斯冰盖：冰岛第四大冰帽（约590km²），直接盖在卡特拉火山之上；西南缘的索尔海马冰舌是热门的冰川徒步点、退缩明显（Icelandic Met Office）",
+};
+
+const SKEIDARARSANDUR: TerrainEntry = {
+  id: "skeidararsandur",
+  nameZh: "斯凯扎拉桑德",
+  nameEn: "Skeiðarársandur",
+  category: "plain",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "斯凯扎拉桑德（斯凯扎拉冰舌与海之间）", lon: -17.50, lat: 63.95, elevation: 20, kind: "delta" },
+  bbox: [-18.20, 63.78, -16.90, 64.12],
+  viewScale: 2.2,
+  label: { lon: -17.50, lat: 63.95, rotation: 0 },
+  source: "斯凯扎拉桑德：世界上最大的冰川外冲平原（sandur），约1000km²，由辫状冰川河和格里姆火山的冰川洪水堆积；1996年的特大冰川洪水冲毁了这里环岛公路的多座桥梁（Vatnajökull NP / Icelandic Met Office）",
+};
+
+const JOKULSARLON: TerrainEntry = {
+  id: "jokulsarlon",
+  nameZh: "杰古沙龙冰河湖",
+  nameEn: "Jökulsárlón",
+  category: "lake",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "杰古沙龙冰河湖", lon: -16.180, lat: 64.048, elevation: 5, kind: "lake" },
+  bbox: [-16.35, 63.95, -16.00, 64.13],
+  label: { lon: -16.18, lat: 64.05, rotation: 0 },
+  pois: [
+    { name: "钻石冰沙滩（Breiðamerkursandur）", lon: -16.23, lat: 64.03, note: "冰山碎块被冲上黑沙滩" },
+  ],
+  source: "杰古沙龙冰河湖：瓦特纳冰原布雷达默克冰舌退缩后、约1935年起形成并快速扩大的冰前湖；现为冰岛最深的湖（约248m），与海相通，冰山从湖里漂向大海（Vatnajökull NP）",
+};
+
+const LAKI: TerrainEntry = {
+  id: "laki",
+  nameZh: "拉基火山口列",
+  nameEn: "Laki / Lakagígar",
+  category: "hills",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "拉基火山口列", lon: -18.230, lat: 64.070, elevation: 800, kind: "escarpment" },
+  bbox: [-18.55, 63.92, -17.95, 64.22],
+  axis: [[-18.45, 63.95], [-18.05, 64.20]],
+  viewScale: 1.6,
+  label: { lon: -18.23, lat: 64.07, rotation: -35 },
+  source: "拉基火山口列（Lakagígar）：1783—84年沿约25km裂隙喷发形成的约130个火山口，是有记载以来最大的玄武质熔岩喷发之一；释放的气体导致牲畜大批死亡和随后的大饥荒（“迷雾之灾”）（Institute of Earth Sciences）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -4276,6 +4383,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 欧洲 / 冰岛 =====
   HEKLA, KATLA, EYJAFJALLAJOKULL, GRIMSVOTN, FAGRADALSFJALL, SNAEFELLSJOKULL,
   ASKJA, THINGVELLIR,
+  VATNAJOKULL, LANGJOKULL, HOFSJOKULL, MYRDALSJOKULL,
+  SKEIDARARSANDUR, JOKULSARLON, LAKI,
 ];
 
 /**
@@ -4376,6 +4485,11 @@ const WIDE_VIEW: Record<string, number> = {
   // 欧洲 / 冰岛
   askja: 1.5,
   thingvellir: 1.6,
+  langjokull: 1.9,
+  hofsjokull: 1.8,
+  myrdalsjokull: 1.6,
+  skeidararsandur: 2.0,
+  laki: 1.7,
   // 欧洲 / 英国
   "scottish-highlands": 2.4,
   cairngorms: 1.8,
