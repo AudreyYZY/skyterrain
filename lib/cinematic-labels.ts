@@ -235,7 +235,7 @@ export function createTerrainLabel(
     lodLevel: options?.lodLevel ?? 3,
     rotation: options?.rotation ?? 0,
     terrainType: options?.terrainType,
-    regionId: options?.regionId ?? "china",
+    regionId: options?.regionId ?? "asia",
     style: {
       fontSize: 14,
       color: "rgba(255, 255, 255, 0.7)",

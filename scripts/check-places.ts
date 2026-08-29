@@ -4,13 +4,17 @@
  *
  * 校验:
  *   - 城市 / 机场坐标合法
- *   - country 在 REGIONS 中
+ *   - country 在 COUNTRY_TO_CONTINENT 中，且其大洲 ∈ REGIONS
  *   - id 唯一、有 source
  *   - 机场 IATA 三字码
- *   - 每个城市有 zh + en travel-content（Task 11 前为警告，之后为硬失败）
+ *   - 每个城市 + 每个国家概览有 zh + en travel-content
  */
 
-import { CITY_REGISTRY, COUNTRY_OVERVIEWS } from "../lib/places-registry.ts";
+import {
+  CITY_REGISTRY,
+  COUNTRY_OVERVIEWS,
+  COUNTRY_TO_CONTINENT,
+} from "../lib/places-registry.ts";
 import { REGIONS } from "../lib/regions.ts";
 import { TRAVEL_CONTENT_ZH } from "../lib/travel-content.zh.ts";
 import { TRAVEL_CONTENT_EN } from "../lib/travel-content.en.ts";
@@ -31,10 +35,17 @@ const warn = (m: string) => console.log("· " + m);
 const regionIds = new Set(REGIONS.map((r) => r.id));
 const seen = new Set<string>();
 
+const checkCountry = (label: string, country: string) => {
+  const continent = COUNTRY_TO_CONTINENT[country];
+  if (!continent) fail(`${label}: country "${country}" 不在 COUNTRY_TO_CONTINENT`);
+  else if (!regionIds.has(continent))
+    fail(`${label}: country "${country}" → 大洲 "${continent}" 不在 REGIONS`);
+};
+
 for (const c of CITY_REGISTRY) {
   if (seen.has(c.id)) fail(`duplicate id ${c.id}`);
   seen.add(c.id);
-  if (!regionIds.has(c.country)) fail(`${c.id}: country "${c.country}" not in REGIONS`);
+  checkCountry(c.id, c.country);
   if (c.lat < -90 || c.lat > 90 || c.lon < -180 || c.lon > 180)
     fail(`${c.id}: bad coord ${c.lat},${c.lon}`);
   if (c.airport) {
@@ -50,7 +61,7 @@ for (const c of CITY_REGISTRY) {
 }
 
 for (const o of COUNTRY_OVERVIEWS) {
-  if (!regionIds.has(o.country)) fail(`overview: country "${o.country}" not in REGIONS`);
+  checkCountry(`${o.country}-overview`, o.country);
   const id = `${o.country}-overview`;
   if (!hasZh(id)) (CONTENT_REQUIRED ? fail : warn)(`${id}: no zh content`);
   if (!hasEn(id)) (CONTENT_REQUIRED ? fail : warn)(`${id}: no en content`);

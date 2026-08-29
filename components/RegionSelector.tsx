@@ -1,33 +1,21 @@
 "use client";
 
 /**
- * Region Selector — 区域选择器
+ * Region Selector — 大洲切换（下拉菜单）
  *
- * 浮层组件，显示在地图右上角（桌面端）或底部（移动端）。
- * 用户点击区域按钮后，Cesium 地球平滑飞向该区域中心。
- *
- * 设计原则:
- * - 数据驱动: 新增地区只需改 lib/regions.ts
- * - 渐进展示: 未填充内容的区域显示为"即将推出"
- * - 响应式: 桌面端水平排列，移动端底部横排
+ * 顶栏右侧。点当前大洲名 → 展开大洲列表；选中后 Cesium 平滑飞向该大洲中心。
+ * 数据驱动：新增 / 开启大洲只需改 lib/regions.ts。
+ * 未填充内容的大洲显示为禁用（"Soon"）。
  */
 
-import {
-  REGIONS,
-  type Region,
-  hasTerrainData,
-} from "@/lib/regions";
+import { REGIONS, type Region, hasTerrainData } from "@/lib/regions";
 import type { Language } from "@/lib/i18n";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 
 interface RegionSelectorProps {
-  /** 当前激活的区域 ID */
   activeRegion: string;
-  /** 切换区域回调 */
   onRegionChange: (region: Region) => void;
-  /** 是否隐藏（由父组件控制显隐） */
   hidden?: boolean;
-  /** 界面语言 */
   language?: Language;
 }
 
@@ -37,80 +25,110 @@ export default function RegionSelector({
   hidden = false,
   language = "zh-CN",
 }: RegionSelectorProps) {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement | null>(null);
+  const listId = useId();
+
+  const nameOf = useCallback(
+    (r: Region) => (language === "en-US" ? r.nameEn ?? r.name : r.name),
+    [language],
+  );
 
   const handleSelect = useCallback(
     (region: Region) => {
-      onRegionChange(region);
+      setOpen(false);
+      if (region.id !== activeRegion) onRegionChange(region);
     },
-    [onRegionChange],
+    [activeRegion, onRegionChange],
   );
 
-  if (hidden || REGIONS.length === 0) {
-    return null;
-  }
+  // 点击外部 / Esc 关闭
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (rootRef.current && !rootRef.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  if (hidden || REGIONS.length === 0) return null;
+
+  const current = REGIONS.find((r) => r.id === activeRegion);
+  const currentName = current ? nameOf(current) : language === "en-US" ? "Asia" : "亚洲";
 
   return (
-    <div className="flex items-center gap-2">
-      {REGIONS.map((region, index) => {
-        const isActive = activeRegion === region.id;
-        const isHovered = hoveredIndex === index;
-        const hasData = hasTerrainData(region);
+    <div ref={rootRef} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-controls={listId}
+        className={[
+          "pointer-events-auto flex items-center gap-1.5 rounded-full px-3 py-1.5",
+          "min-h-[32px] text-[11px] font-medium transition-colors duration-200",
+          "border border-[color:var(--hairline)] bg-[color:var(--panel)] backdrop-blur-xl",
+          "text-[color:var(--ink-body)] hover:text-[color:var(--ink)]",
+        ].join(" ")}
+      >
+        <span className="truncate">{currentName}</span>
+        {current && current.terrainCount > 0 && (
+          <span className="text-[9px] tabular-nums opacity-50">{current.terrainCount}</span>
+        )}
+        <span aria-hidden className="text-[9px] opacity-60">{open ? "▴" : "▾"}</span>
+      </button>
 
-        return (
-          <button
-            key={region.id}
-            type="button"
-            onClick={() => hasData && handleSelect(region)}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-            disabled={!hasData}
-            aria-pressed={isActive}
-            aria-label={`${region.name} ${!hasData ? "coming soon" : ""}`}
-            className={[
-              "relative flex items-center gap-1.5 rounded-full px-3 py-1.5",
-              "text-[11px] font-medium transition-all duration-300 ease-out",
-              "pointer-events-auto",
-              // 状态样式
-              isActive
-                ? "bg-amber-500/15 text-amber-300/90 border border-amber-500/25"
-                : isHovered && hasData
-                  ? "bg-white/[0.06] text-white/60 border border-white/[0.08]"
-                  : !hasData
-                    ? "text-white/15 border border-transparent cursor-default"
-                    : "text-white/30 border border-transparent hover:text-white/50",
-              // 触控区域
-              "min-h-[32px]",
-              // 禁用状态
-              !hasData ? "opacity-40" : "opacity-100",
-            ].join(" ")}
-          >
-            {/* 区域名称 */}
-            <span className="truncate">
-              {language === "en-US" ? region.nameEn ?? region.name : region.name}
-            </span>
-
-            {/* 地貌计数 */}
-            {hasData && region.terrainCount > 0 && (
-              <span className="text-[9px] tabular-nums opacity-50">
-                {region.terrainCount}
-              </span>
-            )}
-
-            {/* 未填充内容的提示 */}
-            {!hasData && (
-              <span className="text-[9px] opacity-40">
-                Soon
-              </span>
-            )}
-
-            {/* 活跃指示器 — 脉冲动画 */}
-            {isActive && (
-              <span className="absolute -bottom-px left-1/2 h-px -translate-x-1/2 w-[60%] rounded-full bg-amber-400/50" />
-            )}
-          </button>
-        );
-      })}
+      {open && (
+        <ul
+          id={listId}
+          role="listbox"
+          className={[
+            "absolute right-0 top-[calc(100%+6px)] z-50 min-w-[150px] overflow-hidden rounded-xl py-1",
+            "border border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl shadow-xl",
+          ].join(" ")}
+        >
+          {REGIONS.map((region) => {
+            const isActive = activeRegion === region.id;
+            const hasData = hasTerrainData(region);
+            return (
+              <li key={region.id} role="option" aria-selected={isActive}>
+                <button
+                  type="button"
+                  disabled={!hasData}
+                  onClick={() => hasData && handleSelect(region)}
+                  className={[
+                    "flex w-full items-center justify-between gap-3 px-3 py-2 text-left text-[12px] transition-colors",
+                    isActive
+                      ? "text-[color:var(--accent)]"
+                      : hasData
+                        ? "text-[color:var(--ink-body)] hover:bg-white/[0.05] hover:text-[color:var(--ink)]"
+                        : "cursor-default text-[color:var(--ink-faint)]",
+                  ].join(" ")}
+                >
+                  <span className="truncate">{nameOf(region)}</span>
+                  {hasData ? (
+                    region.terrainCount > 0 && (
+                      <span className="text-[9px] tabular-nums opacity-50">
+                        {region.terrainCount}
+                      </span>
+                    )
+                  ) : (
+                    <span className="text-[9px] opacity-50">Soon</span>
+                  )}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }
