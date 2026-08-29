@@ -676,7 +676,7 @@ export default function ExplorerApp() {
           // 整条航线一段解说，与镜头飞行并行
           onNarrate: async () => {
             const text =
-              getRouteNarration(route.id, language) ?? routeEndLesson(language).seeing;
+              getRouteNarration(route.id, language, mode) ?? routeEndLesson(language).seeing;
             setRouteNarration(text);
             const session = narrationManager.createSession();
             setIsSpeaking(true);
@@ -720,7 +720,7 @@ export default function ExplorerApp() {
         });
       }, 50);
     },
-    [language, startHighlight, stopHighlight, stopSpeaking]
+    [language, mode, startHighlight, stopHighlight, stopSpeaking]
   );
 
   const handleStopRoute = useCallback(() => {
