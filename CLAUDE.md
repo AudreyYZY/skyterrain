@@ -20,13 +20,19 @@
 
 ## 范围
 
-- **已有**: 中国全境地貌（84 个，含新疆）+ 澳大利亚（22 个），中英双语
+- **已有**: 亚洲（中国全境 84，含新疆）+ 大洋洲（澳大利亚 22），中英双语
   - 地形集选取标准与分类定义见 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点；
     分类判据；`settlement` 人文层的收录方法）
-- **进行中**: 美国、英国，之后按旅游热度扩展其它安全国家
+- **进行中**: 全球主要地形（按大洲分组，逐国推进，每国 ≥25 个），见
+  `docs/superpowers/specs/2026-08-30-world-terrain-expansion-design.md`
 - **远期**: 全球地貌探索
 
-区域由 `lib/regions.ts` 驱动，注册表条目按 `regionId` 归属；顶栏区域切换器 `RegionSelector`。
+**区域 = 大洲**（`lib/regions.ts`：`asia` / `europe` / `africa` / `north-america` /
+`south-america` / `oceania`；`DEFAULT_REGION_ID = "asia"`）。注册表条目 `regionId` 填大洲、
+`country` 填国家 slug。顶栏 `RegionSelector` 是大洲下拉菜单；`localStorage fge-active-region`
+读时把旧值 `china`/`xinjiang`/`australia` 迁移到大洲。
+自检：`node --experimental-strip-types scripts/check-regions.ts`（regionId/country 完整性 +
+terrainCount 核对）。
 
 ## 技术栈
 
@@ -66,7 +72,8 @@ components/
   CityMarkers.tsx        — 【旅游模式】地图上的城市点（轮询相机 zoom，按 tier 分级显示）
 
 lib/
-  terrain-registry.ts    — 【单一真实源】106 个地形的位置/锚点/范围/走向/中英名（选取标准见 docs/terrain-taxonomy.md）
+  terrain-registry.ts    — 【单一真实源】地形的位置/锚点/范围/走向/中英名/regionId(大洲)/country（选取标准见 docs/terrain-taxonomy.md）
+  regions.ts             — 大洲配置（asia/europe/africa/north-america/south-america/oceania）+ DEFAULT_REGION_ID
   terrain-camera.ts      — 数据驱动相机推导 computeTerrainCamera()
   terrain-content.{zh,en}.ts — 权威 6 板块讲解内容（中/英）；terrain-content.ts = 索引
   terrain-lesson.ts      — resolveLesson(id, lang)：一处决定用哪份讲解（内容→stories→兜底）
@@ -98,10 +105,12 @@ features/
 标签分级（双语）+ 地形抬升高亮 + 自然语音（跟随语言）+ 逐句高亮 + 真实航班航线 +
 纪录片编辑式界面。
 
-**多国扩展进行中**：新增国家的步骤 =
-① `lib/terrain-registry.ts` 加条目（`regionId`）②`lib/regions.ts` 加/开启 region
+**多国扩展进行中**：新增一个国家的地形（学习模式）=
+① `lib/terrain-registry.ts` 加条目（`regionId` 填大洲、`country` 填国家 slug）
+②该大洲若此前 `available:false` → 改 true；`terrainCount` 由 `check-regions.ts` 核对
 ③`lib/terrain-content.{zh,en}.ts` 写双语 6 板块 ④`lib/terrain-label-registry.ts`
-`IMPORTANCE_BY_ID` 补重要度 ⑤`check-terrain-camera.ts` 通过。
+`IMPORTANCE_BY_ID` 只对特别重要的补（默认已是 regional）
+⑤`check-terrain-camera.ts` + `check-regions.ts` 通过。
 
 **权威文字内容**：讲解改为 6 个通用板块（`TerrainLesson`，顺序见 `lib/lesson.ts`
 `LESSON_SECTION_ORDER`）：
@@ -148,9 +157,16 @@ features/
 
 ## 全球地形扩展（学习模式，进行中）
 
-目标：把全世界主要地形准确、完整地加入学习模式（`regionId` 按洲/大区归属；
-每处坐标查权威来源，`source` 留痕；6 板块双语，逐句核源标准同中国/澳大利亚）。
-选取标准沿用 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点）。
+设计见 `docs/superpowers/specs/2026-08-30-world-terrain-expansion-design.md`。
+
+- **Phase A（已完成）**：区域重构为大洲。中国并入亚洲、澳大利亚并入大洋洲，顶栏改下拉，
+  行为与之前等价。
+- **Phase B 起**：逐国加地形，每国 ≥25 个 T1/T2/T3。优先序：美国 → 加拿大 → 日本 →
+  新西兰 → 英国 → 冰岛 → 瑞士 → 挪威 → 法国 → 意大利 → …
+- **零争议红线**（本轮特别强调）：所有文字查该国官方来源（地质调查局 / 国家公园管理局 /
+  官方地名机构 / UNESCO / 官方统计或旅游机构）；地名用中性通用名、有并用名以事实并列、
+  不表述主权；`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → 删或换中性表述。
+- 广度优先：先把注册表 + 双语 6 板块写全；真实边界多边形、相机逐个精校之后再补。
 
 ## Camera 推导链路
 
