@@ -32,13 +32,20 @@ import RegionSelector from "@/components/RegionSelector";
 import ModeToggle from "@/components/ModeToggle";
 import CityMarkers from "@/components/CityMarkers";
 import { type AppMode, getStoredMode, setStoredMode } from "@/lib/app-mode";
-import { getCitiesForCountry, getCityById } from "@/lib/places-registry";
+import {
+  getCitiesForContinent,
+  getCityById,
+  getCountryOverview,
+} from "@/lib/places-registry";
 import { resolveTravelGuide, travelGuideToSections } from "@/lib/travel-lesson";
 import { travelRailGroups } from "@/lib/travel-rail";
+import { createTravelNarration } from "@/lib/travel-speak";
+import TravelPoiMarkers from "@/components/TravelPoiMarkers";
 import type { PanelSection } from "@/components/ReadingPanel";
 import {
   REGIONS,
   setActiveRegion,
+  DEFAULT_REGION_ID,
   type Region,
 } from "@/lib/regions";
 
@@ -137,8 +144,8 @@ const ALL_FEATURES = TERRAIN_REGISTRY.map((e) => ({
   id: e.id,
   name: e.nameZh,
   type: normalizeType(e.category, e.nameZh),
-  // 区域过滤用：新疆地形归入「中国」视图
-  region: e.regionId === "xinjiang" ? "china" : e.regionId,
+  // 区域过滤用：regionId 已是大洲
+  region: e.regionId,
   terrain: getTerrainById(e.id) ?? null,                       // 新疆 json（含讲解内容）
   feature: CHINA_CORE_FEATURES.find((f) => f.id === e.id) ?? null,
 })).filter((f) => f.type !== null);
@@ -237,19 +244,31 @@ export default function ExplorerApp() {
   const [hoveredTerrainId, setHoveredTerrainId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
   // mode / activeRegion 首帧用 SSR 默认值，挂载后再从 localStorage 恢复
-  // （避免 server "study"/"china" 与 client 存储值不一致导致 hydration mismatch）
+  // （避免 server 默认值与 client 存储值不一致导致 hydration mismatch）
   const [mode, setMode] = useState<AppMode>("study");
   /** 旅游模式：当前选中的城市 / 概览 id */
   const [travelId, setTravelId] = useState<string | null>(null);
   const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);
   const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);
-  const [activeRegion, setActiveRegionState] = useState<string>("china");
+  /** 旅游播报：正在合成首段（“准备中”按钮态） */
+  const [travelPreparing, setTravelPreparing] = useState(false);
+  const travelNarrationRef = useRef<ReturnType<typeof createTravelNarration> | null>(null);
+  const [activeRegion, setActiveRegionState] = useState<string>(DEFAULT_REGION_ID);
 
   useEffect(() => {
     setMode(getStoredMode());
     try {
-      const storedRegion = localStorage.getItem("fge-active-region");
-      if (storedRegion) setActiveRegionState(storedRegion);
+      // 旧值（china / xinjiang / australia）迁移到大洲
+      const LEGACY: Record<string, string> = {
+        china: "asia",
+        xinjiang: "asia",
+        australia: "oceania",
+      };
+      const stored = localStorage.getItem("fge-active-region");
+      const resolved = stored ? LEGACY[stored] ?? stored : null;
+      if (resolved && REGIONS.some((r) => r.id === resolved)) {
+        setActiveRegionState(resolved);
+      }
     } catch {
       /* ignore */
     }
@@ -257,11 +276,11 @@ export default function ExplorerApp() {
 
   // 当前区域名称（用于 Header 显示）
   const activeRegionObj = REGIONS.find((r) => r.id === activeRegion);
-  const activeRegionName = activeRegionObj?.name ?? "中国";
-  const activeRegionNameEn = activeRegionObj?.nameEn ?? activeRegionObj?.name ?? "China";
+  const activeRegionName = activeRegionObj?.name ?? "亚洲";
+  const activeRegionNameEn = activeRegionObj?.nameEn ?? activeRegionObj?.name ?? "Asia";
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
-  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
+  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, startHighlightChunkEstimated, stopHighlight } = useSentenceHighlight();
 
   // 初始化地形标注 — 从 TERRAIN_LABELS 注册
   useEffect(() => {
@@ -325,6 +344,9 @@ export default function ExplorerApp() {
   const stopSpeaking = useCallback(() => {
     console.log("[Narration] stopSpeaking");
     narrationManager.cancelCurrent();
+    travelNarrationRef.current?.cancel();
+    travelNarrationRef.current = null;
+    setTravelPreparing(false);
     stopAudio();
     stopHighlight();
   }, [stopAudio, stopHighlight]);
@@ -383,9 +405,9 @@ export default function ExplorerApp() {
     warmupSpeechVoices();
   }, []);
 
-  // 地图就绪：若上次停留的区域不是中国，飞过去（INTRO_VIEW 默认对准中国）
+  // 地图就绪：若上次停留的区域不是默认大洲，飞过去（INTRO_VIEW 默认对准亚洲）
   const handleMapReady = useCallback(() => {
-    if (activeRegion === "china") return;
+    if (activeRegion === DEFAULT_REGION_ID) return;
     const region = REGIONS.find((r) => r.id === activeRegion);
     if (!region) return;
     mapRef.current?.flyToRegion({
@@ -420,6 +442,50 @@ export default function ExplorerApp() {
     },
     [speakText, startHighlightSections, startHighlightWithTiming, stopHighlight]
   );
+
+  /** 旅游模式：分段播报攻略 + 逐句高亮（点城市自动、点播放手动共用） */
+  const speakTravelGuide = useCallback(
+    (sections: PanelSection[]) => {
+      if (!sections || sections.length === 0) return;
+      travelNarrationRef.current?.cancel();
+      stopSpeech();
+      stopHighlight();
+
+      const ctrl = createTravelNarration();
+      travelNarrationRef.current = ctrl;
+      setTravelPreparing(true);
+      setIsSpeaking(true);
+
+      void ctrl.run(
+        sections.map((s) => ({ key: s.key, text: s.text })),
+        language,
+        {
+          onFirstAudio: () => setTravelPreparing(false),
+          onSectionStart: ({ key, baseIndex, text, wordBoundaries, audio }) => {
+            if (wordBoundaries.length > 0 && audio) {
+              startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex);
+            } else {
+              startHighlightChunkEstimated(key, text, baseIndex);
+            }
+          },
+          onDone: (wasCancelled) => {
+            setTravelPreparing(false);
+            setIsSpeaking(false);
+            if (!wasCancelled) stopHighlight();
+          },
+        },
+      );
+    },
+    [language, startHighlightWithTiming, startHighlightChunkEstimated, stopHighlight],
+  );
+
+  const stopTravelNarration = useCallback(() => {
+    travelNarrationRef.current?.cancel();
+    travelNarrationRef.current = null;
+    setTravelPreparing(false);
+    setIsSpeaking(false);
+    stopHighlight();
+  }, [stopHighlight]);
 
   const showTerrainLesson = useCallback(
     async (terrain: TerrainPoint, options?: { flyoverOnly?: boolean }): Promise<void> => {
@@ -789,10 +855,15 @@ export default function ExplorerApp() {
   }, [activeRegion]);
 
   const clearTravelSelection = useCallback(() => {
+    travelNarrationRef.current?.cancel();
+    travelNarrationRef.current = null;
+    setTravelPreparing(false);
+    setIsSpeaking(false);
+    stopHighlight();
     setTravelId(null);
     setTravelSections(null);
     setTravelPlace(null);
-  }, []);
+  }, [stopHighlight]);
 
   const handleModeChange = useCallback(
     (m: AppMode) => {
@@ -811,30 +882,39 @@ export default function ExplorerApp() {
     [mode, flyToCountryOverview, stopSpeaking, clearTravelSelection],
   );
 
+  const travelNameOf = useCallback(
+    (id: string): string => {
+      if (id.endsWith("-overview")) {
+        const ov = getCountryOverview(id.replace(/-overview$/, ""));
+        if (ov) return language === "zh-CN" ? ov.nameZh : ov.nameEn;
+        return language === "zh-CN" ? activeRegionName : activeRegionNameEn;
+      }
+      const city = getCityById(id);
+      if (city) return language === "zh-CN" ? city.nameZh : city.nameEn;
+      return id;
+    },
+    [language, activeRegionName, activeRegionNameEn],
+  );
+
   const handleSelectCity = useCallback(
     (id: string) => {
       const guide = resolveTravelGuide(id, language);
       if (!guide) return;
-      const isOverview = id.endsWith("-overview");
       const city = getCityById(id);
-      const name = isOverview
-        ? language === "zh-CN"
-          ? activeRegionName
-          : activeRegionNameEn
-        : city
-          ? language === "zh-CN"
-            ? city.nameZh
-            : city.nameEn
-          : id;
+      const sections = travelGuideToSections(guide, language);
+      travelNarrationRef.current?.cancel();
+      stopHighlight();
       setTravelId(id);
-      setTravelPlace({ name });
-      setTravelSections(travelGuideToSections(guide, language));
+      setTravelPlace({ name: travelNameOf(id) });
+      setTravelSections(sections);
       setActiveTerrain(null);
       setLesson(null);
       if (city) mapRef.current?.focusCity(city.lon, city.lat, city.view);
       else flyToCountryOverview();
+      // 跳转的同时开始播报（合成首段期间镜头正在飞）
+      speakTravelGuide(sections);
     },
-    [language, activeRegionName, activeRegionNameEn, flyToCountryOverview],
+    [language, travelNameOf, flyToCountryOverview, speakTravelGuide, stopHighlight],
   );
 
   // 语言切换时，重新解析当前旅游内容
@@ -842,17 +922,7 @@ export default function ExplorerApp() {
     if (mode !== "travel" || !travelId) return;
     const guide = resolveTravelGuide(travelId, language);
     if (!guide) return;
-    const city = getCityById(travelId);
-    const name = travelId.endsWith("-overview")
-      ? language === "zh-CN"
-        ? activeRegionName
-        : activeRegionNameEn
-      : city
-        ? language === "zh-CN"
-          ? city.nameZh
-          : city.nameEn
-        : travelId;
-    setTravelPlace({ name });
+    setTravelPlace({ name: travelNameOf(travelId) });
     setTravelSections(travelGuideToSections(guide, language));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language, mode, travelId]);
@@ -882,10 +952,17 @@ export default function ExplorerApp() {
         {mode === "travel" && (
           <CityMarkers
             mapRef={mapRef}
-            cities={getCitiesForCountry(activeRegion)}
+            cities={getCitiesForContinent(activeRegion)}
             activeId={travelId}
             language={language}
             onSelect={handleSelectCity}
+          />
+        )}
+        {mode === "travel" && (
+          <TravelPoiMarkers
+            mapRef={mapRef}
+            city={travelId ? getCityById(travelId) ?? null : null}
+            language={language}
           />
         )}
         {terrainMode === "ellipsoid" && (
@@ -961,6 +1038,7 @@ export default function ExplorerApp() {
         sections={mode === "travel" ? travelSections : null}
         knowledge={mode === "travel" ? null : (activeTerrain?.knowledge ?? null)}
         isSpeaking={isSpeaking}
+        isPreparing={travelPreparing}
         isRouteFlying={isRouteFlying}
         routeNarration={routeNarration}
         flyoverName={flyoverName}
@@ -968,19 +1046,16 @@ export default function ExplorerApp() {
         activeSection={activeSection}
         onPlay={() => {
           if (mode === "travel") {
-            if (travelSections) {
-              const txt = travelSections.map((s) => s.text).join(" ");
-              void speakText(txt);
-            }
+            if (travelSections) speakTravelGuide(travelSections);
           } else if (lesson) {
             void speakLessonWithHighlight(lesson);
           }
         }}
-        onStop={stopSpeaking}
+        onStop={mode === "travel" ? stopTravelNarration : stopSpeaking}
         onClose={mode === "travel" ? clearTravelSelection : closePanel}
       />
 
-      {!showIntro && mode === "study" && !activeTerrain && activeRegion === "china" && (
+      {!showIntro && mode === "study" && !activeTerrain && activeRegion === DEFAULT_REGION_ID && (
         <JourneyBar
           language={language}
           routes={routes}

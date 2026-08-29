@@ -139,7 +139,7 @@ export default function CesiumOverlayLabels({
   isRouteFlying = false,
   hoveredTerrainId,
   focusedTerrainId,
-  activeRegion = "china",
+  activeRegion = "asia",
   language = "zh-CN",
 }: CesiumOverlayLabelsProps) {
   const [screenLabels, setScreenLabels] = useState<ScreenLabel[]>([]);

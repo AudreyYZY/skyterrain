@@ -103,8 +103,10 @@ interface UseSentenceHighlightReturn {
   activeSection: string | null;
   startHighlight: (text: string, sectionKey?: string) => void;
   startHighlightSections: (sections: HighlightSection[]) => void;
-  /** 基于 word boundaries 启动时间同步高亮 */
-  startHighlightWithTiming: (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement) => void;
+  /** 基于 word boundaries 启动时间同步高亮。baseIndex：本段第一句的全局索引（分段播放用）。 */
+  startHighlightWithTiming: (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement, baseIndex?: number) => void;
+  /** 分段播放的估时高亮（无 word boundary 时）：只高亮 sectionKey 段，全局索引从 baseIndex 起。 */
+  startHighlightChunkEstimated: (sectionKey: string, text: string, baseIndex: number) => void;
   stopHighlight: () => void;
 }
 
@@ -235,7 +237,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
    * 通过 requestAnimationFrame 持续跟踪音频播放进度
    */
   const startHighlightWithTiming = useCallback(
-    (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement) => {
+    (sections: HighlightSection[], wordBoundaries: WordBoundary[], audio: HTMLAudioElement, baseIndex = 0) => {
       stopHighlight();
 
       const timeMap = buildSentenceTimeMap(sections, wordBoundaries);
@@ -244,9 +246,9 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
       timeMapRef.current = timeMap;
       audioRef.current = audio;
 
-      // 找到全局索引对应的 section
+      // 找到全局索引对应的 section（全局索引 = baseIndex + 段内偏移）
       const allSections: { key: string; start: number; end: number }[] = [];
-      let offset = 0;
+      let offset = baseIndex;
       for (const section of sections) {
         const cleaned = stripEmojis(section.text);
         const count = splitSentences(cleaned).length;
@@ -284,17 +286,20 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
           }
         }
 
-        // 如果超过最后一句的结束时间，清除高亮
+        // 如果超过最后一句的结束时间：分段播放（baseIndex>0）时不清，等下一段接力
         if (idx === -1 && currentTime >= (timeMap[timeMap.length - 1]?.endSec ?? 0)) {
-          setActiveSentenceIndex(null);
-          setActiveSection(null);
+          if (baseIndex === 0) {
+            setActiveSentenceIndex(null);
+            setActiveSection(null);
+          }
           return;
         }
 
         if (idx !== -1 && idx !== lastIdx) {
           lastIdx = idx;
-          setActiveSentenceIndex(idx);
-          const sectionKey = findSectionForIndex(idx, allSections);
+          const globalIdx = baseIndex + idx;
+          setActiveSentenceIndex(globalIdx);
+          const sectionKey = findSectionForIndex(globalIdx, allSections);
           setActiveSection(sectionKey);
         }
 
@@ -304,6 +309,34 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
       animFrameRef.current = requestAnimationFrame(tick);
     },
     [stopHighlight, findSectionForIndex]
+  );
+
+  /** 分段估时高亮：只处理一段，全局索引从 baseIndex 起。Edge TTS 无 boundary 或浏览器回退时用。 */
+  const startHighlightChunkEstimated = useCallback(
+    (sectionKey: string, text: string, baseIndex: number) => {
+      stopHighlight();
+      const sentences = splitSentences(stripEmojis(text));
+      if (sentences.length === 0) return;
+
+      setActiveSection(sectionKey);
+      setActiveSentenceIndex(baseIndex);
+      currentIndexRef.current = 0;
+
+      const advance = () => {
+        const cur = sentences[currentIndexRef.current];
+        if (!cur) return;
+        timerRef.current = setTimeout(() => {
+          currentIndexRef.current += 1;
+          if (currentIndexRef.current < sentences.length) {
+            setActiveSentenceIndex(baseIndex + currentIndexRef.current);
+            advance();
+          }
+          // 段末不清高亮，等编排器调用下一段（或 stopHighlight）
+        }, estimateSentenceMs(cur));
+      };
+      advance();
+    },
+    [stopHighlight]
   );
 
   // 清理
@@ -320,6 +353,7 @@ export function useSentenceHighlight(): UseSentenceHighlightReturn {
     startHighlight,
     startHighlightSections,
     startHighlightWithTiming,
+    startHighlightChunkEstimated,
     stopHighlight,
   };
 }

@@ -5,6 +5,17 @@
 
 export type PlaceTier = "capital" | "major" | "notable";
 
+export type PoiKind = "landmark" | "district" | "nature" | "transport";
+
+/** 攻略里提到的地点 —— 选中城市时在地图上标注（非导航精度，城市尺度取景够用） */
+export interface CityPoi {
+  nameZh: string;
+  nameEn: string;
+  lon: number;
+  lat: number;
+  kind: PoiKind;
+}
+
 export interface CityEntry {
   id: string;
   nameZh: string;
@@ -14,6 +25,8 @@ export interface CityEntry {
   lon: number;
   lat: number;
   airport?: { iata: string; nameZh: string; nameEn: string; lon: number; lat: number };
+  /** 攻略正文提到的主要地点（选中该城市时标注在地图上） */
+  pois?: CityPoi[];
   /** 相机：城市上空斜视角。缺省用 DEFAULT_CITY_VIEW。 */
   view?: { heightM?: number; pitchDeg?: number; headingDeg?: number };
   source: string;
@@ -141,9 +154,48 @@ export const CITY_REGISTRY: CityEntry[] = [
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
 
+/** 国家 slug → 大洲 id（regionId）。新增国家时补一行。 */
+export const COUNTRY_TO_CONTINENT: Record<string, string> = {
+  china: "asia",
+  australia: "oceania",
+};
+
+export function continentOfCountry(country: string): string | undefined {
+  return COUNTRY_TO_CONTINENT[country];
+}
+
 export function getCitiesForCountry(country: string): CityEntry[] {
   return CITY_REGISTRY.filter((c) => c.country === country);
 }
+
+/** 某大洲下所有城市（按 country→continent 映射） */
+export function getCitiesForContinent(continent: string): CityEntry[] {
+  return CITY_REGISTRY.filter((c) => COUNTRY_TO_CONTINENT[c.country] === continent);
+}
+
+/** 某大洲下有内容（城市或国家概览）的国家 slug 列表，按 CITY_REGISTRY / COUNTRY_OVERVIEWS 出现顺序 */
+export function getCountriesForContinent(continent: string): string[] {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const o of COUNTRY_OVERVIEWS) {
+    if (COUNTRY_TO_CONTINENT[o.country] === continent && !seen.has(o.country)) {
+      seen.add(o.country);
+      out.push(o.country);
+    }
+  }
+  for (const c of CITY_REGISTRY) {
+    if (COUNTRY_TO_CONTINENT[c.country] === continent && !seen.has(c.country)) {
+      seen.add(c.country);
+      out.push(c.country);
+    }
+  }
+  return out;
+}
+
+export function getCountryOverview(country: string): CountryOverviewEntry | undefined {
+  return COUNTRY_OVERVIEWS.find((o) => o.country === country);
+}
+
 export function getCityById(id: string): CityEntry | undefined {
   return BY_ID.get(id);
 }

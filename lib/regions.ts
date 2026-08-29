@@ -32,43 +32,71 @@ export interface Region {
 }
 
 /**
- * 区域配置
+ * 区域 = 大洲。中国并入亚洲、澳大利亚并入大洋洲（见
+ * docs/superpowers/specs/2026-08-30-world-terrain-expansion-design.md）。
  *
- * 新增地区步骤：
- * 1. 在此数组添加配置对象
- * 2. 创建 data/<region>/ 存放地形 JSON
- * 3. 创建 features/<region>-features.ts 定义 GeographicFeature
- * 4. ExplorerApp 自动注册（通过 getAllTerrains + CHINA_CORE_FEATURES 模式）
+ * 新增一个国家的地形：
+ * 1. `lib/terrain-registry.ts` 加条目，`regionId` 填所属大洲、`country` 填国家 slug
+ * 2. 若该大洲此前 available:false，改为 true
+ * 3. `terrainCount` 由 `scripts/check-regions.ts` 核对（不要手填错）
+ * 4. `lib/terrain-content.{zh,en}.ts` 写双语 6 板块
  */
 export const REGIONS: Region[] = [
   {
-    id: "china",
-    name: "中国",
-    nameEn: "China",
-    center: {
-      lon: 104.0,
-      lat: 35.0,
-      height: 8000000,      // 8,000km — 飞行高度，能看到整个中国
-    },
-    terrainCount: 84, // = TERRAIN_REGISTRY 中 regionId china|xinjiang（见 docs/terrain-taxonomy.md）
+    id: "asia",
+    name: "亚洲",
+    nameEn: "Asia",
+    center: { lon: 90.0, lat: 40.0, height: 14000000 },
+    terrainCount: 84,
     available: true,
   },
   {
-    id: "australia",
-    name: "澳大利亚",
-    nameEn: "Australia",
-    center: {
-      lon: 134.0,
-      lat: -27.0,
-      height: 4300000,
-    },
+    id: "europe",
+    name: "欧洲",
+    nameEn: "Europe",
+    center: { lon: 15.0, lat: 52.0, height: 6500000 },
+    terrainCount: 0,
+    available: false,
+  },
+  {
+    id: "africa",
+    name: "非洲",
+    nameEn: "Africa",
+    center: { lon: 19.0, lat: 3.0, height: 13000000 },
+    terrainCount: 0,
+    available: false,
+  },
+  {
+    id: "north-america",
+    name: "北美洲",
+    nameEn: "North America",
+    center: { lon: -100.0, lat: 45.0, height: 12000000 },
+    terrainCount: 0,
+    available: false,
+  },
+  {
+    id: "south-america",
+    name: "南美洲",
+    nameEn: "South America",
+    center: { lon: -60.0, lat: -20.0, height: 11000000 },
+    terrainCount: 0,
+    available: false,
+  },
+  {
+    id: "oceania",
+    name: "大洋洲",
+    nameEn: "Oceania",
+    center: { lon: 140.0, lat: -25.0, height: 6500000 },
     terrainCount: 22,
     available: true,
   },
 ];
 
+/** 默认大洲 —— 取代散落的 activeRegion === "china" 硬编码 */
+export const DEFAULT_REGION_ID = "asia";
+
 /** 当前激活的区域 ID */
-export let activeRegionId = "china";
+export let activeRegionId: string = DEFAULT_REGION_ID;
 
 /** 设置当前激活区域 */
 export function setActiveRegion(id: string): void {

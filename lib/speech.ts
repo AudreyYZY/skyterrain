@@ -78,7 +78,7 @@ function pickBrowserVoice(lang: Language): SpeechSynthesisVoice | null {
   return voices.find((v) => v.lang.toLowerCase().startsWith("zh")) ?? null;
 }
 
-function speakBrowserAndWait(
+export function speakBrowserAndWait(
   text: string,
   rate = 0.92,
   onPlaying?: () => void,
@@ -209,6 +209,67 @@ export async function speakAndWait(
 
 export async function speak(text: string, rate = 0.92): Promise<void> {
   await speakAndWait(text, rate);
+}
+
+// ── 分段播报（旅游模式攻略）：先合成再播放，可并行预取，首段更快出声 ──
+
+/** 仅调用 Edge TTS 合成，返回可播放的 blob url + word boundaries。失败返回 null（调用方回退浏览器 TTS）。 */
+export async function synthesizeSpeech(
+  text: string,
+  language?: Language
+): Promise<{ url: string; wordBoundaries: WordBoundary[] } | null> {
+  if (typeof window === "undefined") return null;
+  const voice = language ? (getTTSVoice(language) as EdgeTtsVoiceId) : getPreferredEdgeVoice();
+  try {
+    const res = await fetch("/api/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, voice }),
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const wordBoundaries: WordBoundary[] = data.wordBoundaries ?? [];
+    const audioBytes = Uint8Array.from(atob(data.audio), (c) => c.charCodeAt(0));
+    const blob = new Blob([audioBytes], { type: "audio/mpeg" });
+    return { url: URL.createObjectURL(blob), wordBoundaries };
+  } catch {
+    return null;
+  }
+}
+
+/** 播放一段已合成的音频。设置 module currentAudio / currentWordBoundaries，供高亮同步。 */
+export function playSynthesized(
+  url: string,
+  wordBoundaries: WordBoundary[],
+  onPlaying?: () => void
+): Promise<{ ok: boolean }> {
+  return new Promise((resolve) => {
+    // 上一段已 onended，这里不再 stopSpeech（避免打断）；只接管 module 引用
+    currentWordBoundaries = wordBoundaries;
+    const audio = new Audio(url);
+    currentAudio = audio;
+    currentObjectUrl = url;
+
+    const cleanup = () => {
+      URL.revokeObjectURL(url);
+      if (currentObjectUrl === url) currentObjectUrl = null;
+      if (currentAudio === audio) currentAudio = null;
+    };
+
+    audio.onplaying = () => onPlaying?.();
+    audio.onended = () => {
+      cleanup();
+      resolve({ ok: true });
+    };
+    audio.onerror = () => {
+      cleanup();
+      resolve({ ok: false });
+    };
+    void audio.play().catch(() => {
+      cleanup();
+      resolve({ ok: false });
+    });
+  });
 }
 
 /** 预加载系统语音列表（Safari 需要） */

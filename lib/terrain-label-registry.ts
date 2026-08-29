@@ -172,7 +172,7 @@ export const TERRAIN_LABELS: TerrainLabel[] = TERRAIN_REGISTRY.map((e) => {
     lat: pos.lat,
     lon: pos.lon,
     rotation: pos.rotation,
-    // 新疆地形也在「中国」视图内展示；其余区域按 e.regionId。
-    regionId: e.regionId === "xinjiang" ? "china" : e.regionId,
+    // regionId 已是大洲（asia / oceania / …）
+    regionId: e.regionId,
   };
 });
