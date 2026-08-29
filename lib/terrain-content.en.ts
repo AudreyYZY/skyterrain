@@ -2074,4 +2074,109 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The west coast of Newfoundland is the land of the Mi'kmaq and, historically, the Beothuk. Around AD 1000, Norse (Viking) people built a short-lived settlement at L'Anse aux Meadows at the northern tip of Newfoundland — the earliest confirmed European foothold in the Americas. From the 18th century, French and English fishermen worked this coast for cod. Gros Morne was inscribed as a World Heritage site in 1987.",
   },
+
+  "interior-plains-ca": {
+    seeing:
+      "The Interior Plains of Canada lie between the Rocky Mountains to the west and the Canadian Shield to the east, reaching north all the way to the Arctic Ocean. Their southern part is the Prairies of Alberta, Saskatchewan and Manitoba, Canada's grain belt; further north the grassland gives way to aspen parkland, then boreal forest, and finally the lowlands of the lower Mackenzie. The surface is near-horizontal sedimentary rock, cut into broad shallow valleys by rivers.",
+    formation:
+      "The sedimentary rock of the Interior Plains was laid down in shallow seas and in rivers and lakes inside the continent over hundreds of millions of years, then hardened; it thins eastward toward the Shield. Quaternary ice sheets covered the region repeatedly, leaving thick till on retreat, lakes dammed by ice (Lake Winnipeg is the remnant of glacial Lake Agassiz), and some deep glacially scoured troughs (today's major valleys). Beneath the plains lie large deposits of oil, natural gas, potash and coal.",
+    observation:
+      "From the air the southern Interior Plains are a vast area cut into regular squares of wheat and canola, colour changing with the season and crop, with rivers winding through and cutting ribbons of valley woodland. Northward the field grid fades and gives way to patchy woodland, marsh and thousands of round and oval small lakes (\"potholes\"), all left by the glaciers.",
+    distinguish:
+      "The Canadian Interior Plains and the U.S. Great Plains are the northern and southern halves of the same great plain, continuous in geology and landform; the difference is climate and land use — the Canadian stretch is at higher latitude and colder, its south a short-season spring-wheat area, its north forest and marsh. Versus the Canadian Shield: the Shield is ancient crystalline rock, lake-strewn, with almost no farming; the Interior Plains are younger sedimentary rock with deep soil and are the main farming region.",
+    concept:
+      "The Canadian Interior Plains remind us that a \"plain\" comes in several kinds by origin: this is a \"cratonic cover plain\" — the stable interior of a continent that received sediment for a long time and was then smoothed by glaciers — different from a piedmont apron (the western Great Plains) or a river-alluvial plain (the North China Plain). The small round lakes all over the southern prairie are a mark of glacial till, not sinkholes or craters.",
+    history:
+      "The southern Interior Plains were the bison-based territory of the Blackfoot, Cree, Assiniboine, Métis and other peoples. After the bison were nearly exterminated and the Canadian Pacific Railway was completed in the 19th century, the government pushed large-scale settlement and wheat farming, and the grid of fields and towns of the three Prairie provinces dates from then. Today the region is the core of Canadian agriculture and oil and gas.",
+  },
+
+  "hudson-bay-lowlands": {
+    seeing:
+      "The Hudson Bay Lowlands wrap around the southern shores of Hudson Bay and James Bay — an extremely flat lowland of bog and shallow pool, stretching a few hundred kilometres inland where it is widest. It is one of the largest continuous wetlands in the world, and an important area (around Churchill) where polar bears wait on land for the sea ice to form. The ground has almost no perceptible slope, and the rivers are wide, shallow and meandering to the sea.",
+    formation:
+      "The Hudson Bay Lowlands were once part of the floor of Hudson Bay. In the last ice age a very thick ice sheet pressed this crust down by hundreds of metres; after the ice melted about 8,000 years ago the unloaded land began to \"rebound\" fast — the area is still rising at roughly a metre per century, the coastline keeps advancing into the bay, and the newly exposed flat seabed becomes new bog. The bedrock is limestone with poor drainage, and with weak evaporation and permafrost blocking the way, the water cannot escape and forms vast peat bog.",
+    observation:
+      "From the air the Hudson Bay Lowlands are a grey-green, waterlogged flat — countless tiny pools and winding channels woven into a net, and on the seaward side a series of roughly parallel, curved low sand ridges (former shorelines) recording the land rising and the coast retreating. There is no relief, no forest (only scattered black spruce); tundra and bog in summer, all white in winter.",
+    distinguish:
+      "The Hudson Bay Lowlands and the U.S. Everglades are both very flat, wide wetlands, but the Everglades are on a subtropical limestone platform fed by rainwater sheet flow; the Hudson Bay Lowlands are subarctic, formed by post-glacial crustal rebound turning seabed into land, plus permafrost and peat. Compared with the great bogs of Siberia: both are large peat wetlands in a high-latitude, permafrost setting, by a similar mechanism.",
+    concept:
+      "The Hudson Bay Lowlands are a good place to see \"post-glacial isostatic rebound\": an ice sheet is a heavy load that presses the crust down; when the ice melts, the crust springs slowly back like an unloaded spring. The curved sand ridges here are the \"footprints\" of the coast retreating step by step as the land rose. A common misconception is that a retreating coastline always means falling sea level — here it is the land that is rising.",
+    history:
+      "The Hudson Bay Lowlands are the traditional land of the Cree and the Inuit. In 1670 the English Hudson's Bay Company received a charter and built fur-trade posts on the bay shore (York Factory, Prince of Wales Fort and others); for over two centuries this coast was one of the main gateways for Europeans into the Canadian interior. Today Churchill is known as the \"polar bear capital\" and is an important place for ecotourism and Arctic research.",
+  },
+
+  "saint-lawrence-lowlands": {
+    seeing:
+      "The St. Lawrence Lowlands are a comparatively narrow, flat valley between the eastern Great Lakes and the mouth of the St. Lawrence River, hemmed in by the Canadian Shield to the north and the Appalachian uplands to the south. With fertile soil, a relatively mild climate and easy water transport, it is the most densely populated and industrially and agriculturally concentrated belt in Canada — Toronto, Ottawa, Montreal and Quebec City are all on this corridor.",
+    formation:
+      "The St. Lawrence Lowlands are a fault-bounded sedimentary trough between the Shield and the Appalachians, filled with Palaeozoic limestone and shale. Ice sheets pushed along this lowland in the ice ages; on retreat, seawater flooded up the ice-depressed valley to form the \"Champlain Sea\", which withdrew to leave a flat, fertile plain of marine clay. The isolated small hills near Montreal (the \"Monteregian Hills\") are old magma bodies that never reached the surface, later exposed by erosion.",
+    observation:
+      "From the air the St. Lawrence Lowlands are a flat green corridor between two uplands, covered by dense farmland and cities, with the wide, island-studded St. Lawrence River as its main axis. Around Quebec you can see French-style \"long lots\" — each field narrow and long, set at right angles to the riverbank. On both sides of the lowland the land rises abruptly (the rocky hills of the Shield to the north, the long ridges of the Appalachians to the south).",
+    distinguish:
+      "The St. Lawrence Lowlands and the U.S. Atlantic Coastal Plain are both densely populated eastern lowlands, but the Atlantic Coastal Plain is emerged, loose marine sediment spread along the coast; the St. Lawrence Lowlands are an inland, fault-bounded sedimentary valley along a great river. Versus the Canadian Interior Plains: the Interior Plains are far larger and more given to farming and ranching; the St. Lawrence Lowlands are small, concentrated and highly urbanised.",
+    concept:
+      "The St. Lawrence Lowlands show how landform shapes where people live: they are a small fraction of Canada's area, yet because they are flat, warm and navigable, they hold a large share of the country's population and economy. A common misconception is to take Montreal's Mount Royal and the other isolated hills for volcanoes — they are intrusive rock bodies that never erupted, exposed after the overlying rock eroded away.",
+    history:
+      "The St. Lawrence Lowlands are the land of the St. Lawrence Iroquoians and later of the Algonquin, Mohawk and other Native nations, with the St. Lawrence River as their travel artery. In the 17th century the French built Quebec City and Montreal along the river, forming the core of \"New France\"; the region passed to Britain after 1763. This corridor has been the centre of Canada's politics, economy and population ever since, and is the meeting zone of English- and French-speaking Canada.",
+  },
+
+  "great-slave-lake": {
+    seeing:
+      "Great Slave Lake is in the Northwest Territories, the deepest lake in North America, about 614 m at its deepest. It is very irregular in shape: the western half is wide and shallow, sitting on sedimentary rock; the East Arm is deep and narrow, cut into the hard Canadian Shield, its shores bare rock and countless small islands. The territorial capital, Yellowknife, is on the north shore of the East Arm. The lake is frozen for about eight months of the year.",
+    formation:
+      "The basin of Great Slave Lake straddles the boundary between two kinds of rock. The western half formed where faulting dropped a block of sedimentary rock; the East Arm is a deep trough gouged by glaciers repeatedly scouring along a weak zone in the Shield. After the last ice age the area was part of a much larger ice-margin lake (glacial Lake McConnell); the level later fell, leaving today's Great Slave Lake. The Slave River flows in from the south, and the Mackenzie River flows out from the western end.",
+    observation:
+      "From the air the western half of Great Slave Lake is an open expanse of water with a straight shoreline, surrounded by forest and marsh; the East Arm is entirely different — the arms of the lake reach like branches into grey bare Shield rock, and the water is full of long thin rocky islands and peninsulas, all of consistent trend (following the structure of the bedrock). In winter the lake ice is thick, and \"ice roads\" are built across it.",
+    distinguish:
+      "Great Slave Lake and Great Bear Lake to the north are the two largest lakes in the Canadian Northwest, similar in form (both straddling the Shield–sedimentary boundary); Great Bear is larger in area, further north and colder; Great Slave is deeper, with a city and roads on its southern shore. Versus Lake Baikal: Baikal formed by a crustal rift dropping down and is far deeper; Great Slave's depth comes mainly from glacial scouring plus faulting.",
+    concept:
+      "The depth of Great Slave Lake (about 600 m) shows the power of glacial excavation: a continuous ice sheet advancing repeatedly along a weak zone in the rock can dig a valley floor hundreds of metres below the surrounding ground. A common misconception is that all high-latitude big lakes are shallow — Great Slave and Great Bear are both deep, because part of their basins was deeply excavated by glaciers, not just low ground holding water.",
+    history:
+      "The Great Slave Lake area is the home of the Chipewyan, Tłı̨chǫ, Yellowknives and other First Nations and later the Métis. The name \"Slave\" comes from an old term used by a neighbouring people for the local Dene; it is now regarded as derogatory, and some place names are being changed to Dene-language names. Gold was found on the north shore of the East Arm in the 1930s, and Yellowknife was founded because of it. Today the lake area has fishing, tourism and a winter ice road toward the Arctic.",
+  },
+
+  "great-bear-lake": {
+    seeing:
+      "Great Bear Lake is in the Northwest Territories, straddling the Arctic Circle — the largest lake entirely within Canada and one of the largest lakes in the world. It is made of five large arms and shaped like an open hand; the water is extremely clear and cold, frozen for about nine months a year, and the only community on it is the small settlement of Délı̨nę.",
+    formation:
+      "Great Bear Lake's basin sits half on the ancient Canadian Shield and half on younger sedimentary rock, the boundary running roughly through the lake. It is mainly the work of continental ice sheets scouring and then glacial debris damming: the ice dug several arms along weak zones in the rock, and meltwater filled them after the ice retreated. Because it is at high latitude, deep and very large, the water stays near-freezing almost year round, and its clarity is among the highest of the great lakes.",
+    observation:
+      "From the air Great Bear Lake is a huge deep-blue sheet of water, its arms reaching in different directions, separated by bare rock peninsulas. The eastern and northern shores are the bare rock and tundra of the Shield, with rocky islands in the lake; the south-western shore is gentler, with scattered conifer forest. The lake only opens up in summer, and its water is exceptionally deep-coloured and clear.",
+    distinguish:
+      "Great Bear Lake and Great Slave Lake to the south are the two giant lakes of the Canadian Northwest: Great Bear is larger in area, further north (across the Arctic Circle), colder and almost uninhabited; Great Slave is deeper, with a city on its south shore. Versus the Great Lakes: the Great Lakes are in the temperate zone, densely populated and busy shipping lanes; Great Bear Lake is on the edge of the Arctic and close to a natural state.",
+    concept:
+      "Great Bear Lake shows that a \"large lake\" is not the same as a \"warm lake\" or a \"peopled lake\": it is among the ten largest in the world by area, but being high-latitude and deep it is frozen most of the year with very few people around. Its high water clarity is partly because there is almost no farming or industry in the watershed adding nutrients and silt.",
+    history:
+      "Great Bear Lake is the home of the Sahtú Dene (the \"Great Bear Lake people\"). In the 1930s a pitchblende deposit was found at Eldorado on the eastern shore, and for a time this was one of the few places in the world producing uranium and radium, the ore hauled out along a long water-and-land route; the associated health and environmental problems have received attention ever since. Today the lake area is mainly wilderness tourism and traditional fishing and hunting.",
+  },
+
+  "mackenzie-river": {
+    seeing:
+      "The Mackenzie River is the longest river in Canada. Measured from its farthest headwater, the Finlay, the whole system is about 4,200 km long. It flows out of Great Slave Lake, north-west through the subarctic forest and lowlands, and into the Beaufort Sea of the Arctic Ocean. Its lower reach is one of the largest Arctic deltas in North America, dense with tens of thousands of small lakes. The whole river is frozen for much of the year and is a winter \"ice road\" for the communities along it.",
+    formation:
+      "The Mackenzie runs in the structural lowland between the Rocky Mountains and the Canadian Shield, its direction set by that lowland. It strings together a chain of large glacial lakes (Great Bear, Great Slave and others act as its reservoirs). Carrying sediment from upstream, at its mouth — where the current slows sharply and sea ice and permafrost come into play — it has built a wide, extremely broken-up delta: the permafrost stops the channels cutting down, the arms keep shifting, and countless \"thermokarst\" lakes are left ringed by abandoned channels.",
+    observation:
+      "From the air the Mackenzie is a wide brown band winding through dark green conifer forest, with braided arms and sandbars. At the delta the river splits into a spider-web of channels, between them tens of thousands of round-edged lakes of every size — from above it looks like a waterlogged green sponge. The Beaufort Sea beyond the delta carries sea ice year round.",
+    distinguish:
+      "The Mackenzie, like Siberia's Ob and Lena, is a great river flowing to the Arctic Ocean: the headwaters thaw first in the warm season while the lower river is still frozen, so ice jams and spring floods form easily. Versus the Mississippi: the Mississippi flows south, its lower river warm, managed mostly for navigation; the Mackenzie flows north, frozen most of the year, and matters mostly as a lifeline for northern communities and an ecological corridor.",
+    concept:
+      "The Mackenzie shows the character of a \"north-flowing great river\": because the upper river thaws before the lower river, meltwater often runs into ice that has not yet broken up downstream, building ice jams and sudden floods. Its delta full of round lakes is a classic \"thermokarst\" landform on permafrost — local thawing of frozen ground, the surface subsiding and filling with water.",
+    history:
+      "The Mackenzie and its tributaries have long been the travel and subsistence artery of the Dene and the Inuvialuit. In 1789 Alexander Mackenzie, working for a rival of the Hudson's Bay Company, travelled down the river to the Arctic Ocean, and the river was later named for him (its Dene name means \"big river\"). In the 20th century oil and gas were found along the river, and the debate over whether to build a gas pipeline ran for decades, helping drive negotiations over Indigenous land rights in Canada.",
+  },
+
+  "hudson-bay": {
+    seeing:
+      "Hudson Bay is a huge inland sea reaching deep into Canada — larger than many countries, yet only a little over a hundred metres deep on average, so it is a very shallow sea. It sits in a depression in the centre of the Canadian Shield, connected to the Atlantic through Hudson Strait to the north, and is covered by sea ice for much of the year. It acts as a giant \"cold source\" that strongly affects the climate of the surrounding region.",
+    formation:
+      "There are several ideas about the origin of the Hudson Bay depression: part of it may be linked to a large meteorite impact about 3.9 billion years ago (the curved arc of coastline in the south-east may be a remnant of an impact structure), but more importantly the Shield here has sagged slowly and as a whole over a long time. In the last ice age the centre of the North American ice sheet sat over the Hudson Bay area, pressing the crust down by hundreds of metres; since the ice melted the crust has been rebounding fast, and the bay is slowly shrinking.",
+    observation:
+      "From the air Hudson Bay is a nearly circular pale expanse of water, covered with broken sea ice in winter and spring and only clearing by late summer. The south-eastern shore is a smooth great arc, and the bay holds some low flat islands (the Belcher Islands and others). All around is the extremely flat marshy lowland (the Hudson Bay Lowlands), with curved former shorelines running from the present coast tens of kilometres inland.",
+    distinguish:
+      "Hudson Bay and the Baltic Sea are both high-latitude, fairly shallow inland seas that freeze in winter and were pressed down by ice sheets and are now rebounding, by a similar mechanism. Versus the Great Lakes: Hudson Bay is salt water, connected to the ocean, and has tides; the Great Lakes are freshwater lakes. Versus the Caspian Sea: the Caspian is a fully enclosed internally drained salt \"sea\"; Hudson Bay is connected to the Atlantic through a strait.",
+    concept:
+      "Hudson Bay shows that \"sea\" versus \"bay\" is not simply about size: it is enormous, but because it is enclosed on three sides by land and joined to the ocean only by one strait, it is conventionally a \"bay\". It is also a key area for understanding post-glacial rebound — the thickest part of the North American ice sheet was here, so the land is rising fastest here now, and the bay floor keeps emerging as new land.",
+    history:
+      "The shores of Hudson Bay are where the Cree and the Inuit have lived for generations. In 1610 Henry Hudson's ship entered these waters (he was cast adrift in the bay by a mutiny the following year), and the bay is named for him. The Hudson's Bay Company, founded in 1670 with the whole drainage basin as its trading territory, ran fur-trade posts on the bay shore for over two centuries and was one of the most far-reaching commercial institutions in Canadian history.",
+  },
 };

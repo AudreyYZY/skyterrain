@@ -2368,6 +2368,111 @@ const LONG_RANGE_MOUNTAINS: TerrainEntry = {
   source: "长岭山脉：纽芬兰岛西缘的阿巴拉契亚山脉北端；格罗莫讷国家公园因出露的地幔岩和峡湾式湖被列为世界自然遗产（Parks Canada）",
 };
 
+const INTERIOR_PLAINS_CA: TerrainEntry = {
+  id: "interior-plains-ca",
+  nameZh: "加拿大内陆平原",
+  nameEn: "Interior Plains",
+  category: "plain",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "萨斯喀彻温省麦田带", lon: -106.0, lat: 51.5, elevation: 500, kind: "grassland" },
+  bbox: [-114.0, 49.0, -97.0, 60.0],
+  axis: [[-106.0, 49.2], [-116.0, 60.0]],
+  viewFrom: 90,
+  label: { lon: -106.0, lat: 52.5, rotation: -80 },
+  source: "加拿大内陆平原：落基山脉与加拿大地盾之间的沉积岩平原，南部是草原三省的“大草原”，向北进入北方森林和马更些低地（Natural Resources Canada）",
+};
+
+const HUDSON_BAY_LOWLANDS: TerrainEntry = {
+  id: "hudson-bay-lowlands",
+  nameZh: "哈得孙湾低地",
+  nameEn: "Hudson Bay Lowlands",
+  category: "plain",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "波拉尔贝尔（丘吉尔一带）", lon: -85.0, lat: 54.5, elevation: 60, kind: "grassland" },
+  bbox: [-92.5, 51.0, -78.0, 59.0],
+  axis: [[-90.0, 51.5], [-80.0, 58.0]],
+  viewFrom: 200,
+  label: { lon: -85.0, lat: 54.5, rotation: 0 },
+  source: "哈得孙湾低地：环哈得孙湾南岸的一片极平坦的沼泽平原，是世界上最大的连续湿地之一；因冰盖融化后地面持续回弹而不断加宽（Natural Resources Canada）",
+};
+
+const SAINT_LAWRENCE_LOWLANDS: TerrainEntry = {
+  id: "saint-lawrence-lowlands",
+  nameZh: "圣劳伦斯低地",
+  nameEn: "St. Lawrence Lowlands",
+  category: "plain",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "蒙特利尔平原", lon: -73.55, lat: 45.5, elevation: 30, kind: "grassland" },
+  bbox: [-79.5, 43.5, -70.0, 47.5],
+  axis: [[-79.0, 43.7], [-71.0, 47.2]],
+  viewFrom: 200,
+  label: { lon: -74.5, lat: 45.7, rotation: -30 },
+  source: "圣劳伦斯低地：五大湖与圣劳伦斯河之间一条狭长的低平沉积岩谷地，是加拿大人口最密集、农业最集中的地带之一（Natural Resources Canada）",
+};
+
+const GREAT_SLAVE_LAKE: TerrainEntry = {
+  id: "great-slave-lake",
+  nameZh: "大奴湖",
+  nameEn: "Great Slave Lake",
+  category: "lake",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "大奴湖东臂", lon: -111.0, lat: 62.5, elevation: 156, kind: "lake" },
+  bbox: [-117.5, 60.8, -108.5, 63.2],
+  axis: [[-116.5, 61.3], [-109.5, 62.9]],
+  viewFrom: 200,
+  label: { lon: -113.5, lat: 62.0, rotation: 0 },
+  source: "大奴湖：北美最深的湖（最深约614m）；西半部在沉积岩上、较浅，东臂切进加拿大地盾、又深又多岛，是马更些河的源头之一（Natural Resources Canada）",
+};
+
+const GREAT_BEAR_LAKE: TerrainEntry = {
+  id: "great-bear-lake",
+  nameZh: "大熊湖",
+  nameEn: "Great Bear Lake",
+  category: "lake",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "大熊湖", lon: -120.8, lat: 65.9, elevation: 186, kind: "lake" },
+  bbox: [-125.5, 64.7, -117.0, 67.2],
+  axis: [[-124.5, 65.2], [-118.5, 66.8]],
+  viewFrom: 200,
+  label: { lon: -121.0, lat: 65.9, rotation: 0 },
+  source: "大熊湖：完全在加拿大境内的最大湖，横跨北极圈；湖盆一半在地盾、一半在沉积岩上，一年中大部分时间封冻（Natural Resources Canada）",
+};
+
+const MACKENZIE_RIVER: TerrainEntry = {
+  id: "mackenzie-river",
+  nameZh: "马更些河",
+  nameEn: "Mackenzie River",
+  category: "river",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "马更些河三角洲", lon: -134.8, lat: 68.7, elevation: 5, kind: "delta" },
+  bbox: [-136.0, 61.0, -116.0, 69.5],
+  axis: [[-117.0, 61.5], [-134.5, 68.9]],
+  viewFrom: 90,
+  label: { lon: -125.0, lat: 65.0, rotation: -60 },
+  source: "马更些河：加拿大最长的河（连同上源约4200km），从大奴湖流向北冰洋波弗特海；下游是北美最大的北极三角洲之一，冬季长期封冻（Natural Resources Canada）",
+};
+
+const HUDSON_BAY: TerrainEntry = {
+  id: "hudson-bay",
+  nameZh: "哈得孙湾",
+  nameEn: "Hudson Bay",
+  category: "coast",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "哈得孙湾中部", lon: -85.0, lat: 59.0, elevation: 0, kind: "escarpment" },
+  bbox: [-95.0, 51.0, -76.0, 64.0],
+  axis: [[-90.0, 52.0], [-80.0, 63.0]],
+  viewFrom: 200,
+  label: { lon: -85.0, lat: 59.0, rotation: 0 },
+  source: "哈得孙湾：坐落在加拿大地盾中央凹陷里的一片巨大、很浅的内海，通过哈得孙海峡与大西洋相连；曾被冰盖压低，如今周边地面正快速回弹（Natural Resources Canada）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -2431,6 +2536,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 北美洲 / 加拿大 =====
   CANADIAN_SHIELD, CANADIAN_ROCKIES, COAST_MOUNTAINS, SAINT_ELIAS_MOUNTAINS,
   TORNGAT_MOUNTAINS, LONG_RANGE_MOUNTAINS,
+  INTERIOR_PLAINS_CA, HUDSON_BAY_LOWLANDS, SAINT_LAWRENCE_LOWLANDS,
+  GREAT_SLAVE_LAKE, GREAT_BEAR_LAKE, MACKENZIE_RIVER, HUDSON_BAY,
 ];
 
 /**
@@ -2498,6 +2605,13 @@ const WIDE_VIEW: Record<string, number> = {
   "coast-mountains": 2.5,
   "saint-elias-mountains": 2.0,
   "long-range-mountains": 1.8,
+  "interior-plains-ca": 2.6,
+  "hudson-bay-lowlands": 2.5,
+  "saint-lawrence-lowlands": 2.0,
+  "great-slave-lake": 2.0,
+  "great-bear-lake": 2.0,
+  "mackenzie-river": 2.6,
+  "hudson-bay": 2.7,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
