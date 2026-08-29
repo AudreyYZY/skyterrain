@@ -222,6 +222,16 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   vestmannaeyjar: "national",
   thjorsa: "national",
   "jokulsa-a-fjollum": "national",
+
+  // 挪威
+  "scandinavian-mountains-norway": "national",
+  jotunheimen: "national",
+  hardangervidda: "national",
+  finnmarksvidda: "national",
+  sognefjord: "national",
+  glomma: "national",
+  lofoten: "national",
+  jaeren: "national",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

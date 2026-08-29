@@ -4881,6 +4881,143 @@ const RUINAULTA: TerrainEntry = {
 };
 
 // ============================================================
+// 挪威（regionId: "europe"，country: "norway"）
+// 坐标据 NGU（挪威地质调查局）/ Miljødirektoratet（环境署·国家公园）/
+// Kartverket（地图与地名局）/ NVE（水资源能源局）/ UNESCO；只做挪威本土，
+// 不含斯瓦尔巴与扬马延；地名挪威语为主，北萨米语并列
+// ============================================================
+
+const SCANDINAVIAN_MOUNTAINS_NORWAY: TerrainEntry = {
+  id: "scandinavian-mountains-norway",
+  nameZh: "斯堪的纳维亚山脉（挪威段）",
+  nameEn: "Scandinavian Mountains (Norway)",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "加尔赫皮根峰（Galdhøpiggen，2469m，全脉最高点）", lon: 8.3125, lat: 61.6364, elevation: 2469, kind: "peak" },
+  bbox: [4.5, 58.3, 25.5, 69.8],
+  axis: [[6.0, 58.5], [24.0, 69.5]],
+  viewScale: 2.6,
+  label: { lon: 12.0, lat: 64.5, rotation: -38 },
+  source: "斯堪的纳维亚山脉（挪威语 Kjølen / Den skandinaviske fjellkjede）：纵贯挪威全境的山脉骨架，由约4亿年前加里东造山带的岩石构成，其上是长期夷平的古夷平面（paleic surface）；今日高度部分由新近纪以来的抬升重新塑造，具体机制学界仍有讨论；与瑞典共有（NGU）",
+};
+
+const JOTUNHEIMEN: TerrainEntry = {
+  id: "jotunheimen",
+  nameZh: "尤通黑门山",
+  nameEn: "Jotunheimen",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "耶恩湖与贝赛根山脊（Gjende / Besseggen）", lon: 8.790, lat: 61.497, elevation: 984, kind: "lake" },
+  bbox: [7.55, 61.20, 8.95, 61.80],
+  axis: [[7.65, 61.35], [8.85, 61.65]],
+  viewFrom: 200,
+  viewScale: 1.5,
+  label: { lon: 8.30, lat: 61.55, rotation: -12 },
+  pois: [
+    { name: "加尔赫皮根峰（Galdhøpiggen，2469m）", lon: 8.3125, lat: 61.6364, note: "挪威与北欧最高峰" },
+    { name: "斯卡加斯特山（Store Skagastølstind，2405m）", lon: 7.812, lat: 61.475, note: "许伦加内群峰，北欧第三高" },
+  ],
+  source: "尤通黑门（挪威语意为“巨人之家”，1862年诗人 Aasmund Olavsson Vinje 定名）：挪威最高的一片山地，含全国29座最高峰、逾250座逾1900m 的山峰；主要由坚硬的辉长岩构成，加里东造山期成山、后经冰川深切；冰川多在西坡；尤通黑门国家公园1980年设立（Miljødirektoratet / NGU）",
+};
+
+const HARDANGERVIDDA: TerrainEntry = {
+  id: "hardangervidda",
+  nameZh: "哈当厄高原",
+  nameEn: "Hardangervidda",
+  category: "plateau",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "哈当厄冰帽（Hardangerjøkulen）", lon: 7.167, lat: 60.548, elevation: 1863, kind: "escarpment" },
+  bbox: [6.75, 59.80, 8.20, 60.75],
+  viewScale: 2.2,
+  label: { lon: 7.50, lat: 60.25, rotation: 0 },
+  source: "哈当厄高原：面积约6500 km²、平均海拔约1100m 的山地高原，是北欧最大的同类高原；地表是一片抬升的古夷平面，最高点桑德弗洛加（Sandfloegga）1721m；西缘有哈当厄冰帽，边坡被瀑布与冰蚀谷切割；欧洲最大的野生驯鹿群之一在此活动；哈当厄高原国家公园（Miljødirektoratet）",
+};
+
+const FINNMARKSVIDDA: TerrainEntry = {
+  id: "finnmarksvidda",
+  nameZh: "芬马克高原",
+  nameEn: "Finnmarksvidda / Finnmárkkoduottar",
+  category: "plateau",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "考托凯诺一带（Kautokeino / Guovdageaidnu）", lon: 23.040, lat: 69.011, elevation: 307, kind: "escarpment" },
+  bbox: [21.8, 68.5, 26.6, 70.0],
+  axis: [[22.0, 68.7], [26.2, 69.8]],
+  viewScale: 2.4,
+  label: { lon: 24.0, lat: 69.2, rotation: -20 },
+  source: "芬马克高原（北萨米语 Finnmárkkoduottar）：挪威最大的高原，面积逾22000 km²、海拔约300—500m，是前寒武纪基岩长期风化剥蚀形成的低缓磨蚀面，散布大量湖泊与沼泽；广泛记载的土地利用是萨米人的驯鹿放牧；冬季严寒、盛夏多蚊（NGU / Britannica）",
+};
+
+const SOGNEFJORD: TerrainEntry = {
+  id: "sognefjord",
+  nameZh: "松恩峡湾",
+  nameEn: "Sognefjorden",
+  category: "coast",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "松恩峡湾内段（巴莱斯特兰 / 维克一带）", lon: 6.75, lat: 61.16, elevation: 0, kind: "escarpment" },
+  bbox: [4.75, 60.85, 7.85, 61.40],
+  axis: [[4.90, 61.05], [7.30, 61.18]],
+  viewScale: 1.8,
+  label: { lon: 6.10, lat: 61.20, rotation: -6 },
+  pois: [
+    { name: "纳柔依峡湾（Nærøyfjorden）", lon: 6.90, lat: 60.90, note: "松恩峡湾的一条支汊，世界遗产" },
+  ],
+  source: "松恩峡湾：挪威最长（约205km）、最深（约1308m）的峡湾，有“峡湾之王”之称；冰川沿断裂带与古河谷反复下切、过度加深而成，内段仍深逾1000m；两侧支汊延伸入尤通黑门与约斯特达尔冰川脚下（Kartverket / NGU）",
+};
+
+const GLOMMA: TerrainEntry = {
+  id: "glomma",
+  nameZh: "格洛马河",
+  nameEn: "Glomma",
+  category: "river",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "格洛马河·厄斯特达尔段（埃尔沃吕姆一带）", lon: 11.56, lat: 60.88, elevation: 185, kind: "meander" },
+  bbox: [10.3, 59.20, 11.95, 62.70],
+  axis: [[11.30, 62.55], [10.95, 59.25]],
+  viewScale: 2.0,
+  label: { lon: 11.10, lat: 61.0, rotation: -78 },
+  source: "格洛马河（挪威语 Glomma / Glåma）：挪威最长、水量最大的河，长约620km，流域约42000 km²、约占本土面积13%；从勒罗斯附近的奥尔松湖流出，沿厄斯特达尔南下，经厄耶伦湖在弗雷德里克斯塔注入奥斯陆峡湾（NVE / Kartverket）",
+};
+
+const LOFOTEN: TerrainEntry = {
+  id: "lofoten",
+  nameZh: "罗弗敦群岛",
+  nameEn: "Lofoten",
+  category: "island",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "莫斯克内斯岛·雷讷一带（“罗弗敦墙”）", lon: 13.10, lat: 67.94, elevation: 400, kind: "island" },
+  bbox: [12.0, 67.70, 16.6, 68.50],
+  axis: [[12.9, 67.85], [16.3, 68.40]],
+  viewFrom: 200,
+  viewScale: 1.6,
+  label: { lon: 14.4, lat: 68.25, rotation: -30 },
+  pois: [
+    { name: "莫斯克流（Moskstraumen）", lon: 12.95, lat: 67.89, note: "群岛南端的强潮流，历史上“大漩涡 Maelstrom”一词即源于此" },
+  ],
+  source: "罗弗敦群岛：挪威海中一列陡峭山岛，是一条大体被海水淹没、经强烈剥蚀的山脊出露的顶部，岩石以前寒武纪片麻岩、花岗岩为主，沿加里东造山期的断层抬升；山峰常直逼海面形成“罗弗敦墙”；南端有莫斯克流（NGU）",
+};
+
+const JAEREN: TerrainEntry = {
+  id: "jaeren",
+  nameZh: "耶伦",
+  nameEn: "Jæren",
+  category: "plain",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "耶伦低地（克莱普 / 奥勒一带）", lon: 5.55, lat: 58.77, elevation: 20, kind: "escarpment" },
+  bbox: [5.35, 58.42, 6.10, 59.10],
+  viewScale: 1.6,
+  label: { lon: 5.60, lat: 58.72, rotation: 0 },
+  source: "耶伦：挪威最大的一片低平陆地，位于西南端；坐落在一道延入海中的大终碛之上，下伏片麻岩与花岗岩，表层是冰川带来的砂与黏土，土壤肥沃、是挪威主要农牧区之一；海岸“耶伦海滩”（Jærstrendene）长约70km，砂滩、砾滩与碛石海岸相间，为景观保护区（NGU / Miljødirektoratet）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -4990,6 +5127,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   LAKE_GENEVA, LAKE_CONSTANCE, LAKE_LUCERNE, LAKE_ZURICH, LAKE_MAGGIORE,
   CREUX_DU_VAN, EMMENTAL_HILLS,
   AARE_RIVER, ALPINE_RHINE, RHINE_FALLS, AARESCHLUCHT, RUINAULTA,
+  // ===== 欧洲 / 挪威 =====
+  SCANDINAVIAN_MOUNTAINS_NORWAY, JOTUNHEIMEN, HARDANGERVIDDA, FINNMARKSVIDDA,
+  SOGNEFJORD, GLOMMA, LOFOTEN, JAEREN,
 ];
 
 /**
