@@ -3440,4 +3440,139 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Chilterns' beech woods historically supplied timber for the furniture trade of the surrounding towns (especially High Wycombe), where \"bodgers\" turned chair parts on the spot in the woods. The ancient trackway the Icknield Way runs along the hills. From the 19th century the area became a commuter belt for London (\"Metro-land\"). Most of it is an Area of Outstanding Natural Beauty (AONB), redesignated a National Landscape from 2024.",
   },
+
+  "white-cliffs-of-dover": {
+    seeing:
+      "The White Cliffs of Dover, at the south-eastern corner of England, face the narrowest part of the English Channel — France is only about 34 km away here, and visible on a clear day. The cliff face is a brilliant white, about 110 m high, and because it is the first sight of Britain from a ship or ferry, it has long been one of the country's emblems.",
+    formation:
+      "The cliffs are chalk: an almost pure calcium carbonate soft rock, formed when countless tiny planktonic algae (coccoliths) in the warm, clear shallow sea of the Cretaceous (about 100 to 66 million years ago) died and their skeletons settled and compacted on the sea floor. The sea floor was later uplifted into land, and waves constantly beat against and undercut the cliff foot, so that the upper rock loses support and falls away in large blocks — which is why the cliff stays steep and white (a fresh fall has not yet grown plants and lichen).",
+    observation:
+      "From the air the White Cliffs of Dover are a near-vertical white band along the coast, the cliff top a gentle green grassland with a few lighthouses and disused gun batteries, the cliff foot a narrow boulder shore with constantly falling chalk blocks. Dover harbour is set into the cliffs, and the French coast is faintly visible across the Channel.",
+    distinguish:
+      "The White Cliffs of Dover and the Seven Sisters are the same chalk and the same kind of sea cliff, but the Dover stretch is more continuous and closer to the European mainland; the Seven Sisters undulate. Compared with the dark sandstone cliffs of Exmoor, chalk cliffs are whiter, softer and collapse more often.",
+    concept:
+      "The White Cliffs of Dover are a case study in cliff retreat: waves can only directly attack the cliff foot, and after cutting a notch there, the rock above collapses for lack of support, so the cliff line as a whole retreats inland, leaving a debris \"wave-cut platform\" in front. To tell whether a cliff is active, look at whether the face is fresh and bare of plants and whether there are freshly fallen blocks at the foot. A common misconception is that a sea cliff is \"carved\" by waves — it is mainly gravity collapse after the foot is undercut.",
+    history:
+      "Extensive tunnels are dug in the chalk beneath the cliffs, used in both world wars as command posts, hospitals and artillery observation points. Facing the shortest sea crossing, Dover has always been a key point of Britain's coastal defence, and it was the starting point for the first successful swim of the English Channel in 1875. Today most of the cliffs are managed by the National Trust.",
+  },
+
+  "jurassic-coast": {
+    seeing:
+      "The Jurassic Coast is a roughly 155 km stretch of coast in southern England, between Devon and Dorset, inscribed as a World Heritage Site in 2001. Walking it is like turning the pages of a geology book: from west to east the cliff rocks are in turn Triassic, Jurassic and Cretaceous, recording about 185 million years of Earth history in unbroken sequence, and it is rich in ammonite and other fossils.",
+    formation:
+      "The strata of this coast were originally laid down roughly horizontally, layer by layer, in the seas, estuaries and deserts of different ages. The whole succession was later tilted gently to the east, so the coastline cuts across progressively younger rock from west to east. Rocks of different hardness erode differently — waves have hollowed the soft mudstones into bays and left the hard limestones as headlands, shaping features such as Lulworth Cove (an almost enclosed round bay), Durdle Door (a limestone sea arch) and Chesil Beach (a shingle barrier 29 km long).",
+    observation:
+      "From the air the Jurassic Coast is a cliff line whose colour and form keep changing: the western section is red Triassic sandstone, the middle is grey-and-yellow Jurassic mudstone and limestone (much of it landslipped), and the eastern section is white chalk. A round enclosed cove, an isolated sea arch and a long shingle bank separating a lagoon from the sea all stand out along the shore.",
+    distinguish:
+      "The Jurassic Coast and the White Cliffs of Dover are both cliffs of southern England, but the Dover cliffs are chalk only; the value of the Jurassic Coast is the \"continuous sequence\" of strata — seeing the rocks of three geological periods in one stretch of coast. Compared with a coast of hard ancient rock as in Scotland, the strata here are young, soft, fossil-rich and prone to landslips.",
+    concept:
+      "The Jurassic Coast is a case study in a tilted succession plus a differential-erosion coast: when a gently dipping set of strata is cut across by the coast, the coastline passes in turn through rock of different ages and hardness, the soft beds retreating into bays and the hard beds standing out as headlands, so the coast becomes indented. To recognise this kind of coast, look at whether adjacent bays and headlands correspond to different strata. A common misconception is to treat all these bays as river mouths.",
+    history:
+      "In the early 19th century Mary Anning excavated complete marine-reptile fossils — ichthyosaurs, plesiosaurs — from the Jurassic cliffs around Lyme Regis, work that had a deep influence on early palaeontology. The limestones of this coast (Portland stone, Purbeck stone) have been quarried extensively for London landmarks such as St Paul's Cathedral.",
+  },
+
+  "giants-causeway": {
+    seeing:
+      "The Giant's Causeway, on the north coast of Northern Ireland, is about 40,000 tightly packed polygonal basalt columns, most of them six-sided, running from the cliff foot out into the sea like a giant stone staircase. It became Northern Ireland's first World Heritage Site in 1986. Local legend has it that the causeway was built by the giant Finn McCool for a fight across the sea.",
+    formation:
+      "About 60 million years ago, as the North Atlantic was rifting, there were large fissure eruptions of flood basalt around Antrim (part of the North Atlantic Igneous Province, contemporaneous with Iceland and western Scotland). One thick lava flow cooled and contracted slowly and evenly at the surface, and, like drying mud cracks, produced regular tension fractures inward from the cooling surface, splitting the whole layer into near-vertical columns — the slower and more even the cooling, the more regular the columns.",
+    observation:
+      "From the air the Giant's Causeway is a honeycomb rock platform of countless polygonal column tops at the foot of the dark Antrim basalt cliffs, sloping gently into the sea. The cliff above shows several horizontal lava flows, with red palaeosols between them (weathered during the pauses between eruptions).",
+    distinguish:
+      "The Giant's Causeway's columnar jointing is completely different in origin from Punakaiki's limestone \"pancakes\": the Causeway is lava cooling and contracting, splitting vertically; the pancake rocks are horizontally bedded sedimentary rock, differentially weathered. There are many similar columnar-basalt sites in the world (Iceland, the island of Staffa in Scotland), and the Giant's Causeway is the most famous because its columns are so regular and so completely exposed.",
+    concept:
+      "The Giant's Causeway is a case study in columnar jointing: a thick lava flow (or any evenly cooling rock body), as it cools and contracts, develops a set of regular tension cracks perpendicular to the cooling surface, dividing the rock into polygonal columns; ideally hexagonal (the lowest-energy shape). To recognise columnar jointing, look at whether the columns are roughly perpendicular to the original cooling surface (a horizontal lava flow gives vertical columns). A common misconception is that the columns were chiselled by people or grew as crystals.",
+    history:
+      "The Giant's Causeway became known to European science after a report to the Royal Society in 1693, and in the 18th and 19th centuries it was a famous example in the geological debate between \"Neptunists\" and \"Plutonists\". This coast was also an early tourist destination from the 1740s, and from 1883 an electric tramway ran to it. It is managed today by the National Trust.",
+  },
+
+  "seven-sisters": {
+    seeing:
+      "The Seven Sisters, on the south coast of England at the eastern end of the South Downs, are a stretch of undeveloped, undulating chalk sea cliff, one cliff top rising and falling after another (there are more than seven if you count). To the west is the mouth of the Cuckmere — a rare natural river mouth on England's south coast with no engineering and no harbour. This stretch often stands in for the more famous White Cliffs of Dover in films.",
+    formation:
+      "The rock of the Seven Sisters is also chalk. The South Downs are a chalk cuesta, and originally had many small valleys (dry valleys) running south from the hills toward the sea. The sea cliff has been retreating steadily and has \"cut off\" these dry valleys one by one: where a valley floor meets the cliff, the cliff top is lower; where the high ground between valleys meets the cliff, the cliff top is higher — so the cliff-top line has this wave-like undulation.",
+    observation:
+      "From the air the Seven Sisters are a white sea cliff with a wave-like rising-and-falling top line, the cliff top open green grassland, a series of shallow dry valleys reaching from inland toward the cliff edge and stopping abruptly at the cliff. At the western end the Cuckmere meanders freely to the sea across a floodplain with no embankments.",
+    distinguish:
+      "The Seven Sisters and the White Cliffs of Dover are the same chalk and the same kind of sea cliff; the difference is that the Dover stretch has a fairly straight cliff top and a large port, while the Seven Sisters' top clearly undulates because it cuts across a string of dry valleys, and there is almost no built development.",
+    concept:
+      "The Seven Sisters are a case study in a sea cliff truncating dry valleys: when a piece of land with relief is cut through by a retreating sea cliff, the former valleys and ridges leave a high-low pattern on the cliff face — the cliff is low at the valleys and high at the ridges. To recognise this, check whether the wavelength of the cliff-top undulation matches the spacing of the inland valleys and ridges. A common misconception is that the high-low pattern of the cliff top is caused by differences in rock hardness.",
+    history:
+      "The mouth of the Cuckmere was historically a landing place for smugglers. In the early 20th century there were plans to develop this stretch of coast as a seaside resort, dropped after local opposition, so the coast kept its natural form. Today the Seven Sisters and neighbouring Beachy Head are part of the South Downs National Park, jointly managed by local government and conservation bodies.",
+  },
+
+  "cornwall-coast": {
+    seeing:
+      "The Cornwall coast, at the south-western tip of the island of Great Britain, has sea on three sides, and is known for its high granite and slate cliffs, hidden sandy coves, and the disused mine chimneys scattered along the cliff tops. Land's End, at the far west, is the westernmost point of mainland Britain. This is also one of the sunniest and earliest-spring parts of Britain.",
+    formation:
+      "Cornwall's skeleton is a large granite body intruded about 280 million years ago (the \"Cornubian batholith\"), several rises of which reach the surface as granite uplands such as Bodmin Moor and Penwith; between and around them, and along the coast, is older, baked slate and sandstone. Both granite and hard slate resist erosion, and the strong Atlantic swell has cut them into high, steep cliffs; hydrothermal fluids released as the granite cooled concentrated tin, copper and other metals in the fractures.",
+    observation:
+      "From the air the Cornwall coast is a dark, jagged, almost continuous line of high cliff, with the occasional golden beach tucked into a valley mouth between two headlands. The cliff tops are wind-flattened grass and heather, dotted with stone mine engine houses and tall thin chimneys. Land's End at the western end is a group of granite reefs, with the open Atlantic beyond.",
+    distinguish:
+      "Cornwall's granite cliffs are different from the chalk cliffs of Dover and the sandstone cliffs of Exmoor: granite is the hardest and most erosion-resistant, the cliff retreats very slowly, and the face is mostly grey massive blocks and vertical fractures. It resembles the rocky coast of western Scotland, but Cornwall's granite body and mining landscape are more prominent.",
+    concept:
+      "The Cornwall coast is a case study in a granite batholith and its ore: as a large body of granite magma cools in the crust, the last residual fluid, rich in volatiles and metals, rises along the fractures of the body and the country rock and precipitates as ore veins. So granite areas often have associated tin, tungsten and copper. To recognise such an area, look for large areas of uniform coarse-grained granite and ore veins along the fractures. A common misconception is to treat an ore vein as part of the rock itself.",
+    history:
+      "Tin mining in Cornwall goes back to the Bronze Age, and in the 18th and 19th centuries this was one of the world's main sources of tin and copper, developing deep-shaft mining and steam pumping; the associated \"Cornwall and West Devon Mining Landscape\" was inscribed as a World Heritage Site in 2006. After the mines declined, large numbers of Cornish miners emigrated to mining regions in the Americas, Australia and South Africa.",
+  },
+
+  "pembrokeshire-coast": {
+    seeing:
+      "The Pembrokeshire Coast, at the south-western corner of Wales, is the only national park in Britain designated mainly to protect a coastline. Its coast changes enormously over short distances: steep limestone cliffs, black volcanic-rock headlands, drowned-valley inlets reaching far inland, raised ancient beaches, and a string of offshore islands. St Davids is the smallest \"city\" in Britain.",
+    formation:
+      "Pembrokeshire's rocks span a huge range of ages, from Precambrian through to Carboniferous, with Ordovician volcanic rocks among them. These strata were strongly folded and faulted in the Variscan orogeny. Milford Haven is a large river valley drowned by the sea (a ria) — deep and sheltered, a natural harbour. In many places along the coast you can see platforms a few metres above the present sea — wave-cut platforms from higher sea levels in past interglacials, left behind as the land rose relatively.",
+    observation:
+      "From the air the Pembrokeshire Coast is a ring of intricate rocky cliff with a few sandy bays; in the south Milford Haven is a long narrow waterway driven deep inland, with oil refineries and jetties on its banks; off the western end, the St Davids peninsula has several small islands such as Ramsey, with white tide races often visible on the sea.",
+    distinguish:
+      "The Pembrokeshire Coast and the Cornwall coast are both rocky coasts of south-west Britain, but Cornwall is dominated by a single large granite body and its mining landscape; Pembrokeshire's rock types and ages are far more mixed, and the coastal forms (cliff, bay, ria, island) are more varied. Like western Scotland it has rias, but on a smaller scale.",
+    concept:
+      "The Pembrokeshire Coast is a case study in a raised wave-cut platform: waves cut a near-horizontal rock platform at a given sea level over a long time; if the land then rises relative to the sea (or sea level falls), that old platform is lifted above the present sea as a step hanging at or partway up the cliff. To recognise a raised platform, look for a flat step on the cliff face, often covered with old beach gravel. A common misconception is to take it for an artificial road embankment.",
+    history:
+      "St Davids is the burial place of the patron saint of Wales, and its medieval cathedral gave this small place \"city\" status. Southern Pembrokeshire, because of large numbers of English and Flemish settlers in the Middle Ages, is called \"Little England beyond Wales\", with a language and place names different from the north. The national park was established in 1952, and its 186-mile coast path is one of the best-known long-distance walks in Britain.",
+  },
+
+  "gower-peninsula": {
+    seeing:
+      "The Gower Peninsula (Welsh: Y Gŵyr), reaching into the Bristol Channel west of Swansea, is a small peninsula only about twenty kilometres long, but in 1956 it became the first formally designated \"Area of Outstanding Natural Beauty\" in the whole of Britain. It packs limestone sea cliffs, an Old Red Sandstone ridge, large sandy bays and dunes, and salt marsh into a very small area.",
+    formation:
+      "Gower's rocks are mostly Carboniferous limestone, folded into a series of east-west anticlines and synclines. The limestone sea cliffs have caves, arches and stacks (such as Worm's Head). The central spine of the peninsula, Cefn Bryn, is made of more erosion-resistant Old Red Sandstone and stands a little above its surroundings. Rhossili Bay at the western end is a continuous sandy beach about five kilometres long, backed by large wind-blown dunes.",
+    observation:
+      "From the air the south coast of Gower is a run of pale grey limestone cliffs with a few golden sandy bays between them; at the western end Rhossili Bay is a straight long beach, ending in the rocky \"dragon's tail\" of Worm's Head, which can be walked to at low tide. The north coast of the peninsula is large salt marsh and tidal flats. Down the centre runs a low red-brown sandstone ridge.",
+    distinguish:
+      "Gower and the Pembrokeshire Coast are both in south Wales and both dominated by limestone sea cliffs, but Gower is smaller and more concentrated, walkable in a day, with several coastal landforms packed together; Pembrokeshire is a whole national-park-scale coast.",
+    concept:
+      "Gower is a case study in the evolutionary sequence of coastal erosion landforms: a sea cave is hollowed at a weakness in a headland first, the cave breaks through the headland to become an arch, the arch roof collapses to leave a stack separated from the shore, and the stack is then worn down to a stump — around Worm's Head you can see the stages of this sequence at once. A common misconception is to treat these as unrelated isolated features.",
+    history:
+      "Gower's Paviland Cave yielded the \"Red Lady of Paviland\" in 1823 — in fact the remains of a man about 33,000 years old, one of the earliest known formal human burials in western Europe. The peninsula has many prehistoric chambered tombs and Iron Age hillforts. In the 20th century the growth of Swansea threatened the peninsula, and development has been restricted since its AONB designation.",
+  },
+
+  "cheddar-gorge": {
+    seeing:
+      "Cheddar Gorge, in the Mendip Hills of south-west England, is a limestone gorge with sheer walls, its highest cliff about 135 m — the deepest gorge in England. A road runs along the floor, climbers are on the walls, and large caves such as Gough's Cave are hidden in the sides. The town at its mouth is the origin of cheddar cheese — traditionally matured in the caves.",
+    formation:
+      "The Mendip Hills are an upland of Carboniferous limestone. Cheddar Gorge is generally thought to have formed during the ice ages: the Mendips then lay in a zone of permafrost, the underground fractures were frozen and impermeable, so summer meltwater and heavy rain could only gather into powerful rivers on the surface, which cut down hard along a fault line and carved this deep gorge. After the ice ages ended and the permafrost thawed, the water went back underground (draining away through caves in the gorge floor), and the gorge became the near-riverless \"dry valley\" it is today.",
+    observation:
+      "From the air Cheddar Gorge is a winding deep notch in the southern edge of the Mendip Hills, its walls bare grey-white limestone with scattered trees, the gorge mouth opening toward the Somerset Levels. The gorge itself has no obvious river; the floor is road and car parks. Upstream is a gentle limestone upland dotted with sinkholes.",
+    distinguish:
+      "Cheddar Gorge is different from an ordinary gorge cut by a river over a long time: it was carved fast by surface water under the special conditions of the ice ages (permafrost temporarily making the limestone impermeable), and now has no surface river. Compared with the glacially widened valleys of the Yorkshire Dales, Cheddar Gorge is narrow, deep and winding — the form of direct fluvial downcutting.",
+    concept:
+      "Cheddar Gorge is a case study in a surface river on limestone during a permafrost period: limestone is normally permeable and dry at the surface; but under permafrost the fractures are sealed with ice, water cannot seep away and can only flow and erode strongly on the surface. So a dry valley in some limestone areas is evidence of \"a surface river in the past, none now\". A common misconception is that a limestone dry valley never had a river.",
+    history:
+      "Cheddar Gorge's Gough's Cave yielded \"Cheddar Man\" in 1903 — a complete human skeleton about 9,000 years old, the oldest near-complete human remains known in Britain, whose mitochondrial DNA has been widely studied. The gorge's caves have been a paid tourist attraction since the 19th century.",
+  },
+
+  "great-glen": {
+    seeing:
+      "The Great Glen (Scottish Gaelic: Glen Mòr) is a dead-straight valley slicing diagonally across the Scottish Highlands, from Fort William in the south-west to Inverness in the north-east, dividing the Highlands in two. A run of deep, narrow lochs lies end to end along it, of which Loch Ness is the most famous — by volume it is the largest freshwater body in Britain. The Caledonian Canal links these lochs into a navigable waterway.",
+    formation:
+      "The Great Glen is so straight because it follows a major strike-slip fault — the Great Glen Fault. Around the end of the Caledonian orogeny, the rock on the two sides of the fault slid horizontally past each other by about 100 km (sinistral). The rock in the fault zone was badly shattered and is especially easy to erode, so rivers and later glaciers cut down along this weakness, and the glaciers gouged the valley floor very deep (the deepest part of Loch Ness's bed is well below sea level).",
+    observation:
+      "From the air the Great Glen is a near-perfectly straight valley running right through the Scottish Highlands, its floor strung with several deep-blue long lochs; on either side are mountains cut by the valley, with straight fault-controlled gullies visible on the slopes. At the two ends are the towns of Fort William and Inverness, with Ben Nevis near the south-western end.",
+    distinguish:
+      "The Great Glen is different from an ordinary glacial valley in the Highlands: it is first of all a fault valley — straight, through-going and deep — and the glaciers merely worked along an existing weakness. Its origin is similar to some large strike-slip fault valleys in North America (such as the San Andreas valley in California), only this fault is now barely active.",
+    concept:
+      "The Great Glen is a case study in fault-controlled topography: a large fault grinds the rock into a belt of weakness, and later rivers and glaciers erode preferentially along that belt, eventually forming a valley that is unusually straight and runs right across a whole mountain area. To recognise a fault valley, look at whether it is unusually straight, ignores the surrounding rock structure and offsets geological units that were once continuous on the two sides. A common misconception is that a valley this straight was dug by people or formed naturally by a river.",
+    history:
+      "The Caledonian Canal, designed by the engineer Thomas Telford and completed in 1822, uses the natural lochs of the Great Glen, plus dug channels and a series of locks, to let ships cross the Highlands without going round the dangerous seas of northern Scotland. The Loch Ness \"monster\" legend has made this a tourist hotspot since the 1930s.",
+  },
 };

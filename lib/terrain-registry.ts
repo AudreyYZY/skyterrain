@@ -3814,6 +3814,133 @@ const CHILTERNS: TerrainEntry = {
   source: "奇尔特恩丘陵：伦敦西北的白垩单面山，西北坡陡（陡崖上挂着山毛榉林）、东南坡缓；泰晤士河在戈灵一带切穿它（Natural England / BGS）",
 };
 
+const WHITE_CLIFFS_OF_DOVER: TerrainEntry = {
+  id: "white-cliffs-of-dover",
+  nameZh: "多佛白崖",
+  nameEn: "White Cliffs of Dover",
+  category: "coast",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "多佛白崖", lon: 1.360, lat: 51.130, elevation: 110, kind: "escarpment" },
+  bbox: [1.26, 51.08, 1.46, 51.18],
+  label: { lon: 1.36, lat: 51.13, rotation: 0 },
+  source: "多佛白崖：英吉利海峡最窄处（距法国约34km）的白垩海崖，白垩为白垩纪球石藻骨骼堆积而成的近纯碳酸钙软岩（BGS）",
+};
+
+const JURASSIC_COAST: TerrainEntry = {
+  id: "jurassic-coast",
+  nameZh: "侏罗纪海岸",
+  nameEn: "Jurassic Coast",
+  category: "coast",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "杜德尔门（Durdle Door）", lon: -2.276, lat: 50.621, elevation: 20, kind: "escarpment" },
+  bbox: [-3.50, 50.55, -1.90, 50.78],
+  axis: [[-3.40, 50.62], [-1.95, 50.63]],
+  viewFrom: 0,
+  viewScale: 1.9,
+  label: { lon: -2.60, lat: 50.65, rotation: -6 },
+  source: "侏罗纪海岸：从德文郡到多塞特郡约155km，海崖岩层连续记录三叠纪、侏罗纪、白垩纪约1.85亿年；含拉尔沃思湾、切西尔滩等；世界遗产（UNESCO / BGS）",
+};
+
+const GIANTS_CAUSEWAY: TerrainEntry = {
+  id: "giants-causeway",
+  nameZh: "巨人堤道",
+  nameEn: "Giant's Causeway",
+  category: "coast",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "巨人堤道柱状玄武岩", lon: -6.511, lat: 55.241, elevation: 15, kind: "escarpment" },
+  bbox: [-6.55, 55.22, -6.46, 55.26],
+  label: { lon: -6.511, lat: 55.241, rotation: 0 },
+  source: "巨人堤道：北爱尔兰安特里姆海岸，约6000万年前熔岩冷却收缩形成的约4万根多边形玄武岩柱；世界遗产（UNESCO / Geological Survey of Northern Ireland）",
+};
+
+const SEVEN_SISTERS: TerrainEntry = {
+  id: "seven-sisters",
+  nameZh: "七姊妹崖",
+  nameEn: "Seven Sisters",
+  category: "coast",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "七姊妹崖与库克米尔河口", lon: 0.155, lat: 50.752, elevation: 80, kind: "escarpment" },
+  bbox: [0.09, 50.72, 0.26, 50.80],
+  label: { lon: 0.16, lat: 50.75, rotation: 0 },
+  source: "七姊妹崖：南唐斯东端一段起伏的白垩海崖，波状起伏是被海崖后退截断的一串干谷；南唐斯国家公园（Natural England / BGS）",
+};
+
+const CORNWALL_COAST: TerrainEntry = {
+  id: "cornwall-coast",
+  nameZh: "康沃尔海岸",
+  nameEn: "Cornwall Coast",
+  category: "coast",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "兰兹角（Land's End）", lon: -5.713, lat: 50.066, elevation: 60, kind: "escarpment" },
+  bbox: [-5.75, 49.95, -4.55, 50.55],
+  axis: [[-5.70, 50.10], [-4.60, 50.35]],
+  viewFrom: 180,
+  viewScale: 1.8,
+  label: { lon: -5.30, lat: 50.15, rotation: -25 },
+  source: "康沃尔海岸：不列颠西南尖端，约2.8亿年前侵位的花岗岩（康沃尔岩基）出露形成的高海崖；历史上采锡、采铜，采矿景观列入世界遗产（BGS / UNESCO）",
+};
+
+const PEMBROKESHIRE_COAST: TerrainEntry = {
+  id: "pembrokeshire-coast",
+  nameZh: "彭布罗克郡海岸",
+  nameEn: "Pembrokeshire Coast",
+  category: "coast",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "圣戴维兹半岛", lon: -5.27, lat: 51.88, elevation: 40, kind: "escarpment" },
+  bbox: [-5.45, 51.58, -4.65, 52.12],
+  viewScale: 1.7,
+  label: { lon: -5.05, lat: 51.85, rotation: 0 },
+  source: "彭布罗克郡海岸：威尔士唯一的海岸型国家公园，岩石从前寒武纪到石炭纪；含米尔福德港这条大溺谷、火山岬角和抬升海滩（Natural Resources Wales / BGS）",
+};
+
+const GOWER_PENINSULA: TerrainEntry = {
+  id: "gower-peninsula",
+  nameZh: "高尔半岛",
+  nameEn: "Gower Peninsula / Y Gŵyr",
+  category: "coast",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "沃姆斯角（Worm's Head）", lon: -4.334, lat: 51.567, elevation: 30, kind: "escarpment" },
+  bbox: [-4.35, 51.53, -3.95, 51.63],
+  label: { lon: -4.15, lat: 51.57, rotation: 0 },
+  source: "高尔半岛：斯旺西以西的小半岛，1956年成为英国第一个“杰出自然风景区”；石炭纪石灰岩海崖 + 老红砂岩山脊 + 罗西利大沙湾（Natural Resources Wales）",
+};
+
+const CHEDDAR_GORGE: TerrainEntry = {
+  id: "cheddar-gorge",
+  nameZh: "切达峡谷",
+  nameEn: "Cheddar Gorge",
+  category: "gorge",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "切达峡谷", lon: -2.765, lat: 51.281, elevation: 120, kind: "gorge" },
+  bbox: [-2.80, 51.26, -2.71, 51.30],
+  axis: [[-2.79, 51.275], [-2.72, 51.285]],
+  label: { lon: -2.765, lat: 51.281, rotation: -20 },
+  source: "切达峡谷：门迪普丘陵里的石炭纪石灰岩峡谷，崖高约135m，为英格兰最深的峡谷；一般认为由冰期融雪水在冻土上冲刷而成；古夫洞出土约9000年前的“切达人”（BGS / Natural England）",
+};
+
+const GREAT_GLEN: TerrainEntry = {
+  id: "great-glen",
+  nameZh: "大峡谷",
+  nameEn: "Great Glen / Glen Mòr",
+  category: "valley",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "尼斯湖", lon: -4.42, lat: 57.32, elevation: 16, kind: "meander" },
+  bbox: [-5.15, 56.75, -4.20, 57.50],
+  axis: [[-5.10, 56.82], [-4.25, 57.48]],
+  viewScale: 1.7,
+  label: { lon: -4.7, lat: 57.1, rotation: -55 },
+  source: "大峡谷：沿“大峡谷断层”（一条大型走滑断层，左行错移约100km）发育的笔直谷地，后经冰川深挖；串起尼斯湖等，喀里多尼亚运河把它们连通（BGS）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -3904,6 +4031,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   BRECON_BEACONS, LAKE_DISTRICT, PENNINES, MOURNE_MOUNTAINS,
   PEAK_DISTRICT, YORKSHIRE_DALES, NORTH_YORK_MOORS, DARTMOOR,
   EXMOOR, CHEVIOT_HILLS, SOUTH_DOWNS, CHILTERNS,
+  WHITE_CLIFFS_OF_DOVER, JURASSIC_COAST, GIANTS_CAUSEWAY, SEVEN_SISTERS,
+  CORNWALL_COAST, PEMBROKESHIRE_COAST, GOWER_PENINSULA, CHEDDAR_GORGE, GREAT_GLEN,
 ];
 
 /**
@@ -4017,6 +4146,10 @@ const WIDE_VIEW: Record<string, number> = {
   "cheviot-hills": 1.6,
   "south-downs": 2.0,
   chilterns: 1.8,
+  "jurassic-coast": 2.0,
+  "cornwall-coast": 2.0,
+  "pembrokeshire-coast": 1.8,
+  "great-glen": 1.9,
   // 大洋洲 / 新西兰
   "aoraki-southern-alps": 2.4,
   "kaikoura-ranges": 1.7,

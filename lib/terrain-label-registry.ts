@@ -173,6 +173,10 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   pennines: "national",
   snowdonia: "national",
   cairngorms: "national",
+  "jurassic-coast": "national",
+  "giants-causeway": "national",
+  "white-cliffs-of-dover": "national",
+  "great-glen": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
