@@ -13,6 +13,11 @@
 
 是一个让用户从飞机舷窗视角，认知地球地貌的纪录片式 Web 应用。
 
+**两种模式**（顶栏切换，`localStorage` 记住 `fge-app-mode`）：
+- **学习模式** `study` —— 地形地貌图鉴（默认；下文绝大部分内容都是这条链路，未改动）。
+- **旅游出行模式** `travel` —— 城市 / 衣食住行 / 人文习俗 / 出行提示的概览。
+  两套内容系统平行、互不影响：travel 只新增文件，study 链路原样保留。
+
 ## 范围
 
 - **已有**: 中国全境地貌（84 个，含新疆）+ 澳大利亚（22 个），中英双语
@@ -56,7 +61,9 @@ components/
   IndexRail.tsx          — 左侧地貌目录（窄条 → 浮出分类/地形两级）
   ReadingPanel.tsx       — 右侧单一阅读面板（卡片态 ⇄ 文章态，逐句高亮）
   JourneyBar.tsx         — 底部航线胶片条
-  StructuredLesson.tsx   — 6 板块讲解渲染（editorial 衬线排版）
+  StructuredLesson.tsx   — 板块讲解渲染（editorial 衬线排版）；lesson=6 板块 / sections=通用段列表
+  ModeToggle.tsx         — 顶栏 学习 / 旅游 切换
+  CityMarkers.tsx        — 【旅游模式】地图上的城市点（轮询相机 zoom，按 tier 分级显示）
 
 lib/
   terrain-registry.ts    — 【单一真实源】106 个地形的位置/锚点/范围/走向/中英名（选取标准见 docs/terrain-taxonomy.md）
@@ -67,7 +74,13 @@ lib/
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
   lesson.ts              — 板块顺序 / 标题（中英）/ 拼接
   routes.ts              — 4 条真实商业航线（data/routes/*.json），机场航点 + 地形航点
-  route-narration.ts     — 每条航线一段 ~2.5 分钟连贯解说（中英），CesiumMap.flyRoute 播放
+  route-narration.ts     — 每条航线两套 ~2.5 分钟连贯解说：ROUTE_NARRATION[id].{study,travel}（中英）；
+                           getRouteNarration(id, lang, mode)；CesiumMap.flyRoute 播放
+  app-mode.ts            — AppMode 类型 + getStoredMode/setStoredMode（localStorage fge-app-mode）
+  places-registry.ts     — 【旅游模式单一真实源】城市 CityEntry（经纬度/tier/机场）+ 国家概览
+  travel-content.{zh,en}.ts — 【旅游模式】城市 / 国家概览的 6 段 TravelGuide 中英内容
+  travel-lesson.ts       — TravelGuide 类型 + resolveTravelGuide(id, lang) + travelGuideToSections
+  travel-rail.ts         — 旅游模式左侧目录（国家概览置顶 + 城市列表）
   i18n.ts                — UI 国际化；getTerrainName 查注册表
   i18n-stories.ts        — 早期 6 个双语故事（resolveLesson 的次级来源）
   terrain.ts             — 新疆地形注册（坐标由 terrain-registry 覆盖）
@@ -105,6 +118,29 @@ features/
 沙漠/丘陵等）也写了完整 6 板块双语 —— 至此 106 个地形 100% 有讲解，不再出现占位文案。
 内容优先级：`getTerrainContent(id)`（zh-CN）> `i18n-stories` 英译 > 新疆 json `lesson` /
 `china-core` story > 占位。
+
+## 双模式（学习 / 旅游）
+
+**Approach A：顶层模式开关 + 平行内容系统。** `ExplorerApp` 持 `mode: AppMode`，
+分支只在 ~5 个渲染点；travel 全部是新文件，study 链路一行没动。
+
+- **状态**：`mode` / `activeRegion` 首帧用 SSR 默认（`study` / `china`），
+  挂载后 `useEffect` 从 `localStorage` 恢复（避免 hydration mismatch）。
+- **学习模式**：`CesiumOverlayLabels` 地形标签 + `railGroups`（14 分类）+ `ReadingPanel`
+  接 `resolveLesson` 6 板块 + `JourneyBar` 航线。地图 hover 拾取地形（`modeRef` 门控，
+  travel 时禁用并清掉高亮）。
+- **旅游模式**：`CityMarkers` 城市点（`places-registry`）+ `travelRailGroups`（国家概览 + 城市）+
+  `ReadingPanel` 接 `travelGuideToSections`（通用段列表，走 `StructuredLesson` 的 `sections` 分支）。
+  点城市 → `CesiumMap.focusCity(lon, lat)` 飞过去；点国家概览 → `flyToCountryOverview()`。
+- **航线**：一条航线两套解说，跟随当前 `mode`（`getRouteNarration(id, lang, mode)`）；
+  travel 解说为空时该模式下航线不播（目前 travel 解说待写）。
+- **新增国家两个模式都要做**：study = 地形注册表 + 6 板块讲解；travel = `places-registry`
+  加城市 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide + `COUNTRY_OVERVIEWS` 加概览。
+  自检 `node --experimental-strip-types scripts/check-places.ts`（城市坐标/IATA/来源/双语内容齐全）。
+- **进度**：Phase 1 = 架构 + 澳大利亚（1 国家概览 + 7 城市，中英）。
+  下一步：中国旅游模式（~15–25 城）+ 4 条国内航线补 travel 解说 + 加国内候选航线。
+  设计与计划见 `docs/superpowers/specs/2026-08-29-two-mode-travel-study-design.md`、
+  `docs/superpowers/plans/2026-08-29-two-mode-phase-1.md`。
 
 ## Camera 推导链路
 

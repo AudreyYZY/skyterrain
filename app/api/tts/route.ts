@@ -4,9 +4,10 @@ import { NextResponse } from "next/server";
 const MAX_CHARS = 6000;
 // 晓晓：Azure 中文旗舰女声，最自然流畅
 const DEFAULT_VOICE = "zh-CN-XiaoxiaoNeural";
-// 轻微放缓 + 自然音高（大幅放缓会引入机械感）；英文语速无需放缓
+// 轻微放缓 + 自然音高（大幅放缓会引入机械感）
 const PROSODY_ZH = { rate: "-6%", pitch: "+0Hz" } as const;
-const PROSODY_EN = { rate: "+0%", pitch: "+0Hz" } as const;
+// Ava 多语种女声本身节奏自然，轻微放缓贴合纪录片旁白
+const PROSODY_EN = { rate: "-4%", pitch: "+0Hz" } as const;
 function prosodyFor(voice: string) {
   return voice.toLowerCase().startsWith("en-") ? PROSODY_EN : PROSODY_ZH;
 }

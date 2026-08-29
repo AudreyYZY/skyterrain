@@ -146,7 +146,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Changbai Shan is the model of \"volcanic landforms\": a crater lake at the centre, then lava plateaus, then volcanic-debris slopes outward. Heaven Lake is a classic caldera lake — formed by summit collapse after the eruption, not the low, flat maar type. Though often called dormant, there is still a magma chamber below, and it is an active volcano requiring long-term monitoring.",
     history:
-      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also a sacred mountain to the Korean people. Under the 1962 China–North Korea boundary treaty, about 54.5% of the Heaven Lake surface is on the Chinese side.",
+      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also regarded as a sacred mountain on the Korean Peninsula. A 1962 China–North Korea boundary treaty set the border, dividing Heaven Lake between the two countries, with a little over half on the Chinese side.",
   },
 
   hengduan: {
@@ -166,7 +166,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   himalaya: {
     seeing:
-      "The Himalaya is the highest mountain range on Earth, a great arc more than 2,400 km long along the southern edge of the Tibetan Plateau between China and India and Nepal. Of the world's fourteen 8,000 m peaks, ten lie in or near this range. Mount Everest (Qomolangma), at 8,848.86 m, is the highest point on the planet.",
+      "The Himalaya is the highest mountain range on Earth, a great arc more than 2,400 km long along the southern edge of the Tibetan Plateau — the vast boundary range between China and South Asia. Of the world's fourteen 8,000 m peaks, ten lie in or near this range. Mount Everest (Qomolangma), at 8,848.86 m, on the China–Nepal border, is the highest point on the planet.",
     formation:
       "About 50 million years ago the Indian plate struck Eurasia; sea-floor sediments were squeezed and lifted into mountains, and the range is still slowly rising, on the order of a few millimetres a year. That is why Ordovician marine fossils can be found in the limestone near the summit of Everest. The rock is sedimentary and metamorphic.",
     observation:
@@ -189,7 +189,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "The Nanling versus the Qinling: both are east–west watershed ranges, but the Nanling is low and broken, snow-free, and divides two river systems (a hydrological boundary); the Qinling is high and continuous, snow-capped, and divides warm-temperate from subtropical China (a climate boundary). The Nanling is only a weak barrier to climate — cold waves occasionally spill over into south China.",
     concept:
-      "Low as it is, the Nanling is still an important geographic line: it roughly marks the boundary between the middle and southern subtropical zones, so double-cropped rice and tropical crops grow on the south side and not the north. It is also a world-class metallogenic belt for non-ferrous metals and rare earths (the \"Nanling belt\").",
+      "Low as it is, the Nanling is still an important geographic line: it roughly marks the boundary between the middle and southern subtropical zones, so double-cropped rice and tropical crops grow on the south side and not the north. It is also one of China's — and the world's — important tungsten, tin and rare-earth metallogenic belts (the \"Nanling belt\").",
     history:
       "The First Emperor of Qin had the Lingqu Canal dug to link the Xiang and Li rivers, so that Central Plains boats could cross the Nanling into the Pearl system. In the Tang, Zhang Jiuling opened the Dayu Ridge road, and the Meiguan pass became a key north–south artery.",
   },
@@ -457,15 +457,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the 1994 measurements of Chinese scientists it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — the deepest and longest canyon in the world.",
     formation:
-      "The Yarlung Tsangpo flows west to east across the Tibetan Plateau; here it meets Namcha Barwa, a mountain rising fast, and is forced into a nearly 180° bend before cutting south through the Himalaya and off the plateau into India. The mountain rises fast and the river cuts hard, producing the extreme peak-to-valley relief.",
+      "The Yarlung Tsangpo flows west to east across the Tibetan Plateau; here it meets Namcha Barwa, a mountain rising fast, and is forced into a nearly 180° bend, then turns south, cutting through the Himalaya and off the plateau toward South Asia. The mountain rises fast and the river cuts hard, producing the extreme peak-to-valley relief.",
     observation:
-      "From the air the Yarlung Tsangpo Grand Canyon is a bottomless slot wrapped in a great loop around the snow peak of Namcha Barwa. Because Indian Ocean moisture pours up the river valley, a near-complete sequence of vegetation belts is stacked here, from tropical rainforest on the valley floor to snow and ice on the summit. Namcha Barwa is usually veiled in cloud — the \"shy girl peak.\"",
+      "From the air the Yarlung Tsangpo Grand Canyon is a bottomless slot wrapped in a great loop around the snow peak of Namcha Barwa. Because Indian Ocean moisture pours up the river valley, a near-complete sequence of vegetation belts is stacked here, from subtropical and tropical vegetation on the valley floor to snow and ice on the summit. Namcha Barwa is usually veiled in cloud — the \"shy girl peak.\"",
     distinguish:
       "See the Three Gorges entry. What makes the Yarlung Tsangpo Grand Canyon special: it is the \"gate\" for moisture to enter the Tibetan Plateau — warm, moist air from the Indian Ocean travels north up this deep valley, making south-eastern Tibet the wettest, greenest corner of the plateau. Neither the Three Gorges nor Tiger Leaping Gorge has this moisture-carrying function.",
     concept:
       "The Yarlung Tsangpo Grand Canyon is an extreme case of terrain–climate coupling: a deeply cut river valley becomes a moisture channel, carrying outside humidity into the closed interior of the plateau, so the valley gets two or three thousand millimetres of rain a year while the plateau interior gets only one or two hundred. Around the Great Bend the river drops some two thousand metres in a short distance, giving it enormous hydropower potential.",
     history:
-      "Downstream of the canyon the Yarlung Tsangpo enters India and becomes the Brahmaputra, finally joining the Ganges and emptying into the Bay of Bengal. The core of the canyon is almost untrodden; a Chinese scientific team first traversed the entire canyon on foot only in 1998.",
+      "After leaving China the Yarlung Tsangpo is known downstream as the Brahmaputra, and after joining the Ganges it empties into the Bay of Bengal. The core of the canyon is almost untrodden; a Chinese scientific team first traversed the entire canyon on foot only in 1998.",
   },
 
   // ============ Lakes / islands ============
@@ -526,7 +526,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Taiwan is a living specimen of \"young collision mountain-building\": it shows that building mountains does not take tens of millions of years — under fierce plate collision, near-4,000 m mountains can be piled up in a few million years, and they are still growing. The steep-east, gentle-west asymmetry is exactly the direction of the collision squeeze.",
     history:
-      "Taiwan has been Chinese territory since ancient times; Sun Quan of the Three Kingdoms and Emperor Yang of Sui sent people there, and the Yuan set up the Penghu Inspectorate. It became a province in 1885. After the Treaty of Shimonoseki it was occupied by Japan, and it returned to China in 1945 after victory in the war of resistance.",
+      "Taiwan has been Chinese territory since ancient times. The histories record that both the Three Kingdoms and the Sui dynasty sent people there; the Yuan set up the Penghu Inspectorate; and it formally became a province in 1885. After the Treaty of Shimonoseki it was occupied by Japan for fifty years, and it returned to China in 1945 after victory in the war of resistance.",
   },
 
   // ================= AUSTRALIA =================
@@ -977,7 +977,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "See the Tarim River entry. What makes the Irtysh special: it is Xinjiang's only exterior-drainage river, its water eventually reaching an ocean, so its regime is steady and its valley green; Xinjiang's other rivers either drain internally or end in the inland lakes of Central Asia.",
     concept:
-      "The Irtysh shows what the interior/exterior-drainage divide means for a river: a river that can reach an ocean flushes its silt and salt away with the water, and its valley stays fertile and moist; an inland river that cannot get out grows saltier and weaker downstream. China's interior/exterior drainage boundary runs right through the Irtysh valley in this stretch.",
+      "The Irtysh shows what the interior/exterior-drainage divide means for a river: a river that can reach an ocean flushes its silt and salt away with the water, and its valley stays fertile and moist; an inland river that cannot get out grows saltier and weaker downstream. In this part of Xinjiang, China's interior/exterior drainage boundary lies along the southern edge of the Irtysh basin.",
     history:
       "The Irtysh valley has long been Kazakh grazing land and an important route from Xinjiang into Central Asia. The river holds cold-water fish such as taimen. In recent decades water diverted from the Irtysh has eased shortages elsewhere in northern Xinjiang.",
   },
@@ -1286,7 +1286,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   "hetao-plain": {
     seeing:
-      "The Hetao Plain lies inside the great \"几\"-shaped bend of the Yellow River, south of the Yin Mountains — a string of plains laid down by the Yellow River as it flows through Ningxia and Inner Mongolia. It is conventionally divided into the West Tao (the Ningxia Plain), the Rear Tao (around Bayannur) and the Front Tao (the Tumochuan around Hohhot). There is a saying: \"the Yellow River brings a hundred harms and enriches only the one Tao.\"",
+      "The Hetao Plain lies inside the great \"几\"-shaped bend of the Yellow River, south of the Yin Mountains — a string of plains laid down by the Yellow River as it flows through Ningxia and Inner Mongolia. In the narrow sense it is the Rear Tao (around Bayannur) and the Front Tao (the Tumochuan around Hohhot) inside Inner Mongolia; in a broader sense the Ningxia Plain (the West Tao) upstream is sometimes counted in as well. There is a saying: \"the Yellow River brings a hundred harms and enriches only the one Tao.\"",
     formation:
       "The Hetao Plain is a down-faulted zone between the Yin Mountains and the Ordos Plateau. Entering this hollow the Yellow River slows and drops much of its silt, filling it into a plain. The ground is very flat, and the river has swung across it, leaving old channels, marshes and salt flats.",
     observation:
@@ -1347,7 +1347,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   tengger: {
     seeing:
-      "The Tengger Desert straddles Alxa Left Banner in Inner Mongolia and the borders of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
+      "The Tengger Desert lies mostly in Alxa Left Banner in Inner Mongolia, extending south to the edges of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
     formation:
       "The Tengger's sand is debris from the surrounding mountains and old Yellow River channels, moved and piled by the wind. Some of the hollows between the dunes reach groundwater or hold seasonal water, forming lakes and salt marshes of various sizes (locally \"grass lakes\") — the green points in the desert.",
     observation:
@@ -1523,7 +1523,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "Tiger Leaping Gorge is an extreme sample of \"river downcutting keeping pace with uplift\": as long as uplift is not too fast and the river's discharge and gradient are enough, the water keeps sawing down at its original level — the higher the mountains grow, the deeper the gorge cuts. This narrow deep slot between Jade Dragon and Haba was \"sawn\" this way over a few million years.",
     history:
-      "Tiger Leaping Gorge was a dangerous stretch of the Tea Horse Road and is now a classic trekking route. The Jinsha here has rich hydropower potential, and whether to build a dam near Tiger Leaping Gorge has long been debated. The slopes on both sides are home to Naxi and Yi people.",
+      "Tiger Leaping Gorge was a dangerous stretch of the Tea Horse Road and is now a classic trekking route. The Jinsha has a large drop and rich hydropower potential here. The slopes on both sides are home to Naxi and Yi people.",
   },
 
   leizhou: {

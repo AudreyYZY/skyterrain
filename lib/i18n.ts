@@ -74,6 +74,17 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "绿洲·聚落",
     "en-US": "Oases & Towns",
   },
+  "mode.study": { "zh-CN": "学习", "en-US": "Study" },
+  "mode.travel": { "zh-CN": "旅游", "en-US": "Travel" },
+  "rail.countryOverview": { "zh-CN": "国家概览", "en-US": "Country overview" },
+  "travel.identity": { "zh-CN": "概览", "en-US": "Overview" },
+  "travel.layout": { "zh-CN": "地理与格局", "en-US": "Layout" },
+  "travel.gettingAround": { "zh-CN": "衣食住行", "en-US": "Getting around" },
+  "travel.culture": { "zh-CN": "人文与习俗", "en-US": "Culture" },
+  "travel.seeAndDo": { "zh-CN": "看什么·体验什么", "en-US": "See & do" },
+  "travel.whenAndTips": { "zh-CN": "何时去·提示", "en-US": "When to go & tips" },
+  "travel.cities": { "zh-CN": "城市", "en-US": "Cities" },
+  "travel.underConstruction": { "zh-CN": "旅游模式 —— 建设中", "en-US": "Travel mode — under construction" },
   "sidebar.plains": {
     "zh-CN": "平原",
     "en-US": "Plains",
@@ -320,7 +331,8 @@ export function t(key: string, lang: Language): string {
 /** TTS 语音 ID */
 export const TTS_VOICE_IDS: Record<Language, string> = {
   "zh-CN": "zh-CN-XiaoxiaoNeural",
-  "en-US": "en-US-JennyNeural",
+  // Ava（2024 多语种旗舰女声）—— 比 Jenny/Aria 自然得多，接近真人纪录片旁白
+  "en-US": "en-US-AvaMultilingualNeural",
 };
 
 /** 获取 TTS 语音 ID */

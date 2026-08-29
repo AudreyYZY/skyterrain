@@ -57,7 +57,8 @@ function pickBrowserVoice(lang: Language): SpeechSynthesisVoice | null {
   const voices = window.speechSynthesis.getVoices();
 
   if (lang === "en-US") {
-    const preferred = ["samantha", "jenny", "aria", "en-us"];
+    // 优先挑更自然的系统/在线语音；Samantha(macOS)、Ava/Aria(Edge)、Google
+    const preferred = ["ava", "samantha", "google us english", "aria", "jenny", "en-us"];
     for (const key of preferred) {
       const hit = voices.find(
         (v) => v.lang.toLowerCase().startsWith("en") && v.name.toLowerCase().includes(key),

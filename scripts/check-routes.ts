@@ -50,9 +50,9 @@ for (const r of ROUTES) {
   }
   if (!r.nameEn || !r.descriptionEn) fail(r.id, "缺少英文名/描述");
 
-  const narr = (ROUTE_NARRATION as any)[r.id];
-  if (!narr?.["zh-CN"] || !narr?.["en-US"]) fail(r.id, "缺少航线解说 route-narration");
-  else if (narr["zh-CN"].length < 200) fail(r.id, "中文解说过短");
+  const narr = (ROUTE_NARRATION as any)[r.id]?.study;
+  if (!narr?.["zh-CN"] || !narr?.["en-US"]) fail(r.id, "缺少航线学习模式解说 route-narration.study");
+  else if (narr["zh-CN"].length < 200) fail(r.id, "中文学习模式解说过短");
 
   // 解析坐标序列
   const coords: [number, number][] = [];

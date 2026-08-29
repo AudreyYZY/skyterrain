@@ -1,15 +1,19 @@
 "use client";
 
 import SourceAttribution from "@/components/SourceAttribution";
-import StructuredLesson from "@/components/StructuredLesson";
+import StructuredLesson, { type GenericSection } from "@/components/StructuredLesson";
 import { t, type Language } from "@/lib/i18n";
 import type { TerrainKnowledge, TerrainLesson } from "@/types/terrain";
 import { useEffect, useRef, useState } from "react";
+
+export type PanelSection = GenericSection;
 
 interface ReadingPanelProps {
   language: Language;
   terrain: { name: string; elevation: number } | null;
   lesson: TerrainLesson | null;
+  /** 通用分节内容（旅游模式攻略）。非空时优先于 lesson 渲染。 */
+  sections?: PanelSection[] | null;
   knowledge?: TerrainKnowledge | null;
   isSpeaking: boolean;
   isRouteFlying?: boolean;
@@ -41,6 +45,7 @@ export default function ReadingPanel({
   language,
   terrain,
   lesson,
+  sections = null,
   knowledge,
   isSpeaking,
   isRouteFlying,
@@ -120,11 +125,15 @@ export default function ReadingPanel({
 
   if (!terrain) return null;
 
-  const elev = terrain.elevation.toLocaleString(
-    language === "zh-CN" ? "zh-CN" : "en-US",
-  );
-  const elevLabel = `${t("card.elevation", language)} ${elev}${t("card.meters", language)}`;
-  const summary = lesson?.seeing?.trim() ?? "";
+  const hasElevation = Number.isFinite(terrain.elevation);
+  const elev = hasElevation
+    ? terrain.elevation.toLocaleString(language === "zh-CN" ? "zh-CN" : "en-US")
+    : "";
+  const elevLabel = hasElevation
+    ? `${t("card.elevation", language)} ${elev}${t("card.meters", language)}`
+    : "";
+  const summary =
+    (sections && sections.length > 0 ? sections[0].text : lesson?.seeing)?.trim() ?? "";
 
   // ---- Article state ----
   if (expanded) {
@@ -143,9 +152,11 @@ export default function ReadingPanel({
               <h2 className="editorial-title truncate text-[22px] leading-tight">
                 {terrain.name}
               </h2>
-              <p className="mt-0.5 text-[11px] text-[color:var(--ink-faint)]">
-                {elevLabel}
-              </p>
+              {elevLabel && (
+                <p className="mt-0.5 text-[11px] text-[color:var(--ink-faint)]">
+                  {elevLabel}
+                </p>
+              )}
             </div>
             <div className="flex shrink-0 items-center gap-1">
               <button
@@ -169,9 +180,10 @@ export default function ReadingPanel({
 
           {/* article */}
           <div className="reading-scroll flex-1 overflow-y-auto px-6 py-5">
-            {lesson && (
+            {(lesson || (sections && sections.length > 0)) && (
               <StructuredLesson
                 lesson={lesson}
+                sections={sections}
                 hideEmptySections
                 activeSentenceIndex={activeSentenceIndex}
                 activeSection={activeSection}
@@ -204,7 +216,9 @@ export default function ReadingPanel({
         <div className="flex items-start justify-between gap-2">
           <div className="min-w-0">
             <h2 className="editorial-title text-[24px] leading-tight">{terrain.name}</h2>
-            <p className="mt-1 text-[11px] text-[color:var(--ink-faint)]">{elevLabel}</p>
+            {elevLabel && (
+              <p className="mt-1 text-[11px] text-[color:var(--ink-faint)]">{elevLabel}</p>
+            )}
           </div>
           <button
             type="button"
