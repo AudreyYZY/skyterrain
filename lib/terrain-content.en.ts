@@ -1420,6 +1420,127 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The gobi has always been a belt crossed by the Silk Road and the steppe route, and a front line of frontier defence through the dynasties. The Juyan area at Ejin was an important Han garrison, where large numbers of \"Juyan Han bamboo slips\" have been excavated. Today the Jiuquan Satellite Launch Centre (Dongfeng space city) is set in this gobi.",
   },
 
+
+  "liaodong-hills": {
+    seeing:
+      "The Liaodong Hills occupy the Liaodong Peninsula in south-eastern Liaoning — the south-westward spur of the Changbai mountain system, surrounded by the Yellow and Bohai seas on three sides. They are not high, mostly below 500 m, with the main peak Buyun Shan about 1,130 m, rounded and gentle, covered in forest and orchards.",
+    formation:
+      "The base of the Liaodong Hills is old granite and metamorphic rock, worn down by long erosion from higher mountains into hills. The peninsula keeps rising slightly, and its coast is cut into many bays and headlands. The granite around Qian Shan, weathered and split, has formed many strange peaks and rocks.",
+    observation:
+      "From the air the Liaodong Hills are a sea-ringed, gently rolling stretch of dark-green low mountains, with apple, chestnut and other orchards and farmland in the valleys and coastal flats. Laotie Shan at the peninsula's tip faces the Bohai Strait — the boundary between the Bohai and Yellow seas, and an important corridor for migrating birds.",
+    distinguish:
+      "The Liaodong Hills and the Shandong Hills: they face each other across the Bohai Strait, both low hills ringed by plain and sea, both mainly granite, both apple country, but the Shandong Hills contain a large fault-block mountain like Tai Shan, while the Liaodong Hills are lower overall and closer to the Changbai system.",
+    concept:
+      "The Liaodong Hills show that \"hills\" are what mountains become after long erosion: a once-higher mountain area, without strong uplift, is gradually worn down and rounded by weathering and running water until its relief drops within a few hundred metres and it becomes hills. Being sea-ringed on three sides also makes its climate milder and moister than inland at the same latitude.",
+    history:
+      "The Liaodong Peninsula sits at a land–sea crossroads and was historically a route between the Central Plains, the north-east and the Korean Peninsula, and in modern times a focus of great-power contention. Port cities such as Dalian and Dandong were built on the hills, facing the sea. The peninsula's apples and cherries are well-known local products.",
+  },
+
+  "shandong-hills": {
+    seeing:
+      "The Shandong Hills include the mountains of central-southern Shandong and the hills of the Jiaodong Peninsula, ringed on three sides by the North China Plain and the Yellow River delta. They are a low mountain-and-hill area bulging up in the middle of the plain, mostly around 500 m, with the main peak of Tai Shan about 1,533 m — the highest here.",
+    formation:
+      "The Shandong Hills are mostly old granite and gneiss. Tai Shan, Lu Shan, Yi Shan and Meng Shan in central-southern Shandong are fault-block mountains uplifted along faults — steep, often with clear fault scarps; the hills of the Jiaodong Peninsula were uplifted less and are lower and more rounded. The surrounding plains were filled in by the silt of the Yellow and other rivers.",
+    observation:
+      "From the air the Shandong Hills are a rolling green highland in the centre of the great North China Plain, with a few main peaks like Tai Shan standing out abruptly above the hills. The hills lower toward all sides into flat farmland plain; the Jiaodong Peninsula reaches into the Bohai and Yellow seas with an indented, bay-filled coast.",
+    distinguish:
+      "The Shandong Hills and the Liaodong Hills: both are granite low mountains ringed by plain and sea, but the Shandong Hills have a fault-block mountain like Tai Shan and lie closer to the heart of the North China Plain; the Liaodong Hills are lower overall and are a spur of the Changbai system. The Shandong Hills and the Loess Plateau: one is rock hills bulging up within the North China Plain, the other a coherent loess-covered highland.",
+    concept:
+      "Tai Shan is a good example of a \"fault-block mountain\": it is not the edge of a whole plateau, but a block of rock lifted as a whole along the faults around it, with steep fault scarps on the sides (especially the south). Because it rises abruptly from the plain with large relief, the ancients saw it as a link to heaven, and it became the first of the Five Great Mountains.",
+    history:
+      "Tai Shan was where dynasties held the feng and shan sacrifices and is an important symbol of Confucian culture; it was inscribed as a mixed World Cultural and Natural Heritage site in 1987. The Shandong Hills are the heartland of Qi–Lu culture, and the hometowns of Confucius and Mencius are here.",
+  },
+
+  "jiangnan-hills": {
+    seeing:
+      "The Jiangnan Hills lie south of the Yangtze and north of the Nanling, mainly across Hunan, Jiangxi and Zhejiang — a gently rolling area of low mountains and hills with basins and river valleys of all sizes among them. The surface is mostly a red weathering crust (red earth), and the hills carry Masson pine, tea gardens and oil-tea groves.",
+    formation:
+      "The Jiangnan Hills have varied rock — granite, sandstone, slate and more — deeply weathered by a long hot, wet climate into a thick red crust. Differential uplift has pushed some rock bodies up into mountains: the granite of Huang Shan, the fault block of Lu Shan, the sandstone-conglomerate of Longhu Shan (Danxia) and others are scattered through the hills.",
+    observation:
+      "From the air the Jiangnan Hills are a continuous, ridge-less, rolling stretch of green low mountains south of the Yangtze, with red-earth slopes and terraces between and paddy fields, towns in the basins. A few famous peaks such as Huang Shan and Lu Shan stand out with sheer rock above the surrounding gentle hills. Seas of cloud often flow among the hills after rain.",
+    distinguish:
+      "The Jiangnan Hills and the Liangguang Hills: both are southern hills, but the Jiangnan Hills are north of the Nanling and mainly red earth with granite/sandstone landforms; the Liangguang Hills are south of the Nanling, with limestone karst (peak forest) most typical. The Jiangnan Hills and the Yunnan–Guizhou Plateau: the plateau is a coherently uplifted highland with scarped edges; the Jiangnan Hills have no clear coherent uplift or edge scarp, and are lower.",
+    concept:
+      "The Jiangnan Hills are \"hills in a hot, wet climate\": ample rain and heat weather the rock deeply into red earth — iron and aluminium oxides make it red, and the same process leaches out the nutrients, so red earth needs improvement to be productive. This \"red hill\" landscape is the typical face of southern China's low-mountain country.",
+    history:
+      "The basins and valleys of the Jiangnan Hills have long been important farming areas, and are the home of tea, oil-tea and citrus. Famous mountains such as Lu Shan and Huang Shan rank high in Chinese cultural history. The hills around Jinggang Shan and Ruijin were base areas of the early Chinese revolution.",
+  },
+
+  "liangguang-hills": {
+    seeing:
+      "The Liangguang Hills lie south of the Nanling, across Guangdong and Guangxi — an area of low mountains, hills and basins. Its most typical landform is limestone karst — the \"peak forest\" and \"peak cluster\" rising straight from flat ground around Guilin and Yangshuo are its emblem; there is also Danxia formed from red sandstone-conglomerate (such as Danxia Shan).",
+    formation:
+      "Guangdong and Guangxi have large areas of limestone, dissolved over a long time by carbon-dioxide-charged water in a hot, wet, rainy climate: the surface is \"dissolved\" into isolated rock peaks, peak clusters and closed hollows, while underground it develops many caves and rivers. Where the rock is not limestone, there are gentle low hills under red earth.",
+    observation:
+      "From the air the Liangguang Hills are most distinctive around Guilin: on a flat paddy plain stand densely packed cone- and dome-shaped isolated limestone peaks, with the Li River winding among the peak forest. Elsewhere are continuous gentle red-earth hills and towns and farmland in basins.",
+    distinguish:
+      "The Liangguang Hills' karst and the Yunnan–Guizhou Plateau's karst: the landform types are similar (peak forest, caves), but the Yunnan–Guizhou Plateau is high overall (1,000–2,000 m), an uplifted highland; the Liangguang Hills are far lower, and the peak forest mostly rises from plains. The Liangguang Hills and the Jiangnan Hills: one is marked by karst peak forest, the other by red-earth low hills and famous granite mountains.",
+    concept:
+      "The Guilin peak forest of the Liangguang Hills is a classic of \"tropical–subtropical karst\": the hotter and wetter the climate, the stronger and faster the limestone dissolves, until a continuous limestone surface is \"eaten\" down to isolated rock peaks standing on a dissolution plain. This \"peak-forest plain\" is a late stage of karst development.",
+    history:
+      "The scenery of Guilin has long been called \"the finest under heaven\" and appears again and again in Chinese landscape painting and travel writing. The Lingqu Canal links the Xiang and Li rivers, letting the Central Plains reach the Pearl system by water — a key work in the Qin unification of the far south.",
+  },
+
+  namtso: {
+    seeing:
+      "Nam Co lies in central Tibet at the northern foot of the Nyainqentanglha range, at about 4,718 m — one of the highest large lakes in the world, and the second-largest lake in Tibet (after Serling Co). It is a closed saltwater lake with intensely deep-blue water, and one of the three great sacred lakes of Tibetan Buddhism.",
+    formation:
+      "Nam Co sits in a down-faulted tectonic basin on the Tibetan Plateau, walled in by fault-block mountains. It is fed by Nyainqentanglha snowmelt and rain, has no outlet, and balances by strong evaporation, so salt has accumulated over a long time into a saltwater lake. Several old shorelines around the lake show that the water once stood higher and the lake was larger.",
+    observation:
+      "From the air Nam Co is a large, saturated patch of deep blue on the plateau, its southern shore hard against a line of permanently snow-capped Nyainqentanglha peaks, lake and snow mountains mirroring each other. Peninsulas and small limestone hills reach into the lake in the south-west. Around it is open cold-steppe, with herders' tents scattered here and there.",
+    distinguish:
+      "Nam Co and Qinghai Lake: both are closed saltwater tectonic lakes on a plateau, but Nam Co is far higher (4,718 m against 3,196 m), deeper into the Tibetan Plateau, and colder. Nam Co and the Tianshan's Tianchi: one is a large saltwater lake in a fault depression, the other a small freshwater lake gouged by ice and dammed by moraine.",
+    concept:
+      "Nam Co is a sample of \"why the plateau has so many salt lakes\": the Tibetan Plateau is full of down-faulted basins, which fill with water into lakes, but the climate is cold and dry and most lakes have no outlet, so evaporation keeps concentrating them and salt builds up. In recent decades a warming climate and more glacial meltwater have made a number of plateau lakes, Nam Co among them, still grow.",
+    history:
+      "Nam Co is a sacred lake of Tibetan Buddhism; the Tashi Peninsula on its shore has many caves and hermitage sites, and pilgrims circle the lake (\"lake kora\"). Nyainqentanglha is regarded as a guardian mountain. The area is part of the northern Tibetan pastoral region.",
+  },
+
+  dongting: {
+    seeing:
+      "Dongting Lake lies in northern Hunan on the south bank of the middle Yangtze. It was historically China's largest freshwater lake, and heavy silt accumulation and lake-to-farmland reclamation have dropped it to second (behind Poyang). Like Poyang it \"changes face\" sharply: a vast lake in flood, and in the dry season a set of winding channels plus wide areas of exposed flats.",
+    formation:
+      "Dongting Lake fills a down-faulted, subsiding basin. The \"four rivers\" — the Xiang, Zi, Yuan and Li — enter from the south; in flood season Yangtze floodwater diverts into the lake through several \"mouths\" on the north, cutting the Yangtze's flood peak; the lake water finally rejoins the Yangtze at Chenglingji in the north-east. Silt from the Yangtze and the four rivers has kept building up in the lake for centuries.",
+    observation:
+      "From the air Dongting Lake in high water is a large connected sheet of water on the south bank of the Yangtze, cut by dykes and polders into eastern, southern and western parts; in low water it shrinks to a hanging \"tree\" — a main trunk plus the branches where the four rivers enter, with yellow-green flats between the branches, a wintering ground for migratory birds.",
+    distinguish:
+      "Dongting Lake and Poyang Lake: both are on the south bank of the middle Yangtze, both connected to the river, both \"a sheet of water in flood, a thread in drought\"; Dongting was historically larger and dropped to second through silting and reclamation. Dongting Lake and Qinghai Lake: one is exterior-drainage, fresh, and swings sharply with the season; the other interior-drainage, saline, and relatively stable.",
+    concept:
+      "The key ideas for Dongting Lake are the \"river–lake relationship\" and the double pressure of \"silting and reclamation\": it cuts the Yangtze's flood peak and stores water, but silt from the Yangtze and the four rivers keeps shoaling it, and historically people then diked the new flats into farmland (\"reclaiming the lake for fields\"), so the lake shrank and its storage capacity weakened. After the great flood of 1998, \"returning farmland to lake\" was promoted.",
+    history:
+      "\"Dongting holds the finest water under heaven, Yueyang the finest tower\" — the Yueyang Tower, famous from Fan Zhongyan's essay, stands on the lake shore. The Dongting Lake plain is an important \"land of fish and rice.\" The lake's finless porpoises and wintering birds are a focus of recent conservation.",
+  },
+
+  "tiger-leaping-gorge": {
+    seeing:
+      "Tiger Leaping Gorge, in north-western Yunnan, is an extremely deep, extremely narrow gorge the Jinsha River has cut between the Jade Dragon Snow Mountain (about 5,596 m) and the Haba Snow Mountain (about 5,396 m), roughly 16 km long. From the river to the Jade Dragon summit is about 3,900 m — one of the deepest gorges in the world. Legend says a tiger once leaped the river using a boulder in mid-channel, hence the name.",
+    formation:
+      "The two snow mountains here are rising fast while the Jinsha River, which already existed, cuts down at almost the same rate, sawing a narrow slot between them. The gorge has an upper, middle and lower section; the river is only about 30 m wide at its narrowest, with violent rapids and whirlpools among the boulders.",
+    observation:
+      "From the air Tiger Leaping Gorge is a straight deep slit between the Jade Dragon and Haba snow mountains, the muddy-yellow Jinsha a thread on the floor. The walls are near-vertical, and a full sequence of vegetation belts is stacked from the subtropical valley floor to the snow and ice on top. Just outside the southern mouth, the Jinsha makes the famous \"First Bend of the Yangtze\" at Shigu.",
+    distinguish:
+      "Tiger Leaping Gorge and the Three Gorges of the Yangtze: both are canyons where the Yangtze system cuts through mountains, but Tiger Leaping Gorge is on the upper river (the Jinsha reach), held between two snow mountains, and far deeper and narrower; the Three Gorges are on the middle river, cutting a lower fold range, and known for ruggedness and the dam. Tiger Leaping Gorge and the Yarlung Tsangpo Grand Canyon: the latter is longer, with greater peak-to-valley relief — the deepest and longest canyon in the world.",
+    concept:
+      "Tiger Leaping Gorge is an extreme sample of \"river downcutting keeping pace with uplift\": as long as uplift is not too fast and the river's discharge and gradient are enough, the water keeps sawing down at its original level — the higher the mountains grow, the deeper the gorge cuts. This narrow deep slot between Jade Dragon and Haba was \"sawn\" this way over a few million years.",
+    history:
+      "Tiger Leaping Gorge was a dangerous stretch of the Tea Horse Road and is now a classic trekking route. The Jinsha here has rich hydropower potential, and whether to build a dam near Tiger Leaping Gorge has long been debated. The slopes on both sides are home to Naxi and Yi people.",
+  },
+
+  leizhou: {
+    seeing:
+      "The Leizhou Peninsula, in south-western Guangdong, is the southernmost peninsula of the Chinese mainland, facing Hainan Island across the Qiongzhou Strait. It is broadly a low basalt platform, mostly below 100 m, with a red weathering soil, an indented coast, and abundant volcanic landforms.",
+    formation:
+      "The Leizhou Peninsula was formed by repeated Cenozoic volcanic eruptions: basalt lava spread layer on layer into a large low lava platform, and some of the eruption craters filled with water into lakes. Huguangyan near Zhanjiang is a classic maar lake — a near-circular deep pit blasted out when rising magma met groundwater, then filled with water.",
+    observation:
+      "From the air the Leizhou Peninsula is a dark-red, low, flat piece of land reaching into the sea, almost without hills, its platform surface cut by shallow valleys and gullies, its coast fringed with mangroves and mudflats. Round craters and maar lakes are scattered across it. Xuwen at the southern tip faces the Qiongzhou Strait.",
+    distinguish:
+      "The Leizhou Peninsula and Hainan Island: they face each other across the strait and both have volcanic landforms, but the Leizhou Peninsula is attached to the mainland, broadly a low flat basalt platform with no high mountains; Hainan is a fault-formed continental island with granite mountains in the middle and a ring terrain. The Leizhou maar (Huguangyan) differs from the volcanic lakes of Changbai Shan and the Tianshan: a maar is a low, wide explosion pit filled with water, not a crater lake high on a mountain.",
+    concept:
+      "The Leizhou Peninsula is a combination of \"basalt platform plus maar-type volcanism\": low-viscosity, free-flowing basaltic magma spreads into broad flat platforms when it erupts, rather than piling up steep cones; when rising magma meets groundwater it explodes with steam, blasting a shallow wide pit at the surface, and water in it is a maar lake. Such landforms are direct evidence for reading the character of a region's volcanic activity.",
+    history:
+      "The Leizhou Peninsula is named for its frequent thunderstorms (\"Leizhou\" — thunder prefecture). Historically remote, it was a place of banishment for demoted officials. Hot, wet and typhoon-prone, it grows sugarcane, pineapple, sisal and other tropical crops, and is the mainland's gateway to Hainan.",
+  },
+
   // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
 
   kashgar: {
