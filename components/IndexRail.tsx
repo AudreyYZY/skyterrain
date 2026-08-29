@@ -12,6 +12,8 @@ export interface RailGroup {
   label: string;
   glyph: string;
   items: RailItem[];
+  /** 次区域标题（该组是所属次区域里的第一个国家时给出）— 目录里作分隔小标题 */
+  divider?: string;
 }
 
 interface IndexRailProps {
@@ -135,21 +137,27 @@ export default function IndexRail({
                 {groups.map((g) => {
                   const isDirect = g.type === "overview" && g.items.length === 1;
                   return (
-                    <button
-                      key={g.type}
-                      type="button"
-                      onClick={() => (isDirect ? pick(g.items[0].id) : setCat(g.type))}
-                      className="flex items-center justify-between border-b border-[color:var(--hairline)] py-2.5 text-left transition-colors hover:text-[color:var(--ink)]"
-                    >
-                      <span className="editorial-title text-[15px] text-[color:var(--ink-body)]">
-                        {g.label}
-                      </span>
-                      {!isDirect && (
-                        <span className="text-[11px] tabular-nums text-[color:var(--ink-faint)]">
-                          {g.items.length}
-                        </span>
+                    <div key={g.type} className="flex flex-col">
+                      {g.divider && (
+                        <p className="editorial-kicker mt-3 mb-1 first:mt-0 text-[color:var(--ink-faint)]">
+                          {g.divider}
+                        </p>
                       )}
-                    </button>
+                      <button
+                        type="button"
+                        onClick={() => (isDirect ? pick(g.items[0].id) : setCat(g.type))}
+                        className="flex items-center justify-between border-b border-[color:var(--hairline)] py-2.5 text-left transition-colors hover:text-[color:var(--ink)]"
+                      >
+                        <span className="editorial-title text-[15px] text-[color:var(--ink-body)]">
+                          {g.label}
+                        </span>
+                        {!isDirect && (
+                          <span className="text-[11px] tabular-nums text-[color:var(--ink-faint)]">
+                            {g.items.length}
+                          </span>
+                        )}
+                      </button>
+                    </div>
                   );
                 })}
               </div>

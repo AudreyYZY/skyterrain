@@ -92,6 +92,139 @@ export const REGIONS: Region[] = [
   },
 ];
 
+// ============================================================
+// 次区域（大洲 → 次区域两级地理分区，按联合国 M49 地理方案）
+// 大洲仍是顶层（RegionSelector / 相机 / 标签过滤）；次区域用于目录分组和国家排序，
+// 也是「六大洲」之外更完整的地理依据。
+// ============================================================
+
+export interface Subregion {
+  id: string;
+  /** 所属大洲 id（= REGIONS[*].id） */
+  continentId: string;
+  name: string;
+  nameEn: string;
+}
+
+/** M49 全部次区域（覆盖完整，无数据的也列出）。同一大洲内按大致地理顺序排列。 */
+export const SUBREGIONS: Subregion[] = [
+  // 亚洲
+  { id: "eastern-asia", continentId: "asia", name: "东亚", nameEn: "Eastern Asia" },
+  { id: "central-asia", continentId: "asia", name: "中亚", nameEn: "Central Asia" },
+  { id: "western-asia", continentId: "asia", name: "西亚", nameEn: "Western Asia" },
+  { id: "southern-asia", continentId: "asia", name: "南亚", nameEn: "Southern Asia" },
+  { id: "south-eastern-asia", continentId: "asia", name: "东南亚", nameEn: "South-Eastern Asia" },
+  // 欧洲
+  { id: "northern-europe", continentId: "europe", name: "北欧", nameEn: "Northern Europe" },
+  { id: "western-europe", continentId: "europe", name: "西欧", nameEn: "Western Europe" },
+  { id: "southern-europe", continentId: "europe", name: "南欧", nameEn: "Southern Europe" },
+  { id: "eastern-europe", continentId: "europe", name: "东欧", nameEn: "Eastern Europe" },
+  // 非洲
+  { id: "northern-africa", continentId: "africa", name: "北非", nameEn: "Northern Africa" },
+  { id: "western-africa", continentId: "africa", name: "西非", nameEn: "Western Africa" },
+  { id: "middle-africa", continentId: "africa", name: "中非", nameEn: "Middle Africa" },
+  { id: "eastern-africa", continentId: "africa", name: "东非", nameEn: "Eastern Africa" },
+  { id: "southern-africa", continentId: "africa", name: "南部非洲", nameEn: "Southern Africa" },
+  // 北美洲
+  { id: "northern-america", continentId: "north-america", name: "北美", nameEn: "Northern America" },
+  { id: "central-america", continentId: "north-america", name: "中美洲", nameEn: "Central America" },
+  { id: "caribbean", continentId: "north-america", name: "加勒比", nameEn: "Caribbean" },
+  // 南美洲
+  { id: "south-america", continentId: "south-america", name: "南美", nameEn: "South America" },
+  // 大洋洲
+  { id: "australia-and-new-zealand", continentId: "oceania", name: "澳大利亚和新西兰", nameEn: "Australia and New Zealand" },
+  { id: "melanesia", continentId: "oceania", name: "美拉尼西亚", nameEn: "Melanesia" },
+  { id: "micronesia", continentId: "oceania", name: "密克罗尼西亚", nameEn: "Micronesia" },
+  { id: "polynesia", continentId: "oceania", name: "波利尼西亚", nameEn: "Polynesia" },
+];
+
+/**
+ * 国家 slug → 次区域 id。新增国家时补一行（次区域的 continentId 必须与该国地形的 regionId 一致）。
+ * 大洲归属由此派生（见 continentOfCountry）。
+ */
+export const COUNTRY_TO_SUBREGION: Record<string, string> = {
+  china: "eastern-asia",
+  japan: "eastern-asia",
+  usa: "northern-america",
+  canada: "northern-america",
+  australia: "australia-and-new-zealand",
+  "new-zealand": "australia-and-new-zealand",
+  uk: "northern-europe",
+  iceland: "northern-europe",
+  switzerland: "western-europe",
+};
+
+export interface CountryMeta {
+  slug: string;
+  name: string;
+  nameEn: string;
+}
+
+/**
+ * 已有地形的国家及显示名。数组顺序 = 目录里同一大洲内国家的先后（大致按次区域 + 地理）。
+ * 新增国家时在对应位置补一行，并在 COUNTRY_TO_SUBREGION 补映射。
+ */
+export const COUNTRIES: CountryMeta[] = [
+  // 东亚
+  { slug: "china", name: "中国", nameEn: "China" },
+  { slug: "japan", name: "日本", nameEn: "Japan" },
+  // 北美
+  { slug: "canada", name: "加拿大", nameEn: "Canada" },
+  { slug: "usa", name: "美国", nameEn: "United States" },
+  // 北欧
+  { slug: "iceland", name: "冰岛", nameEn: "Iceland" },
+  { slug: "uk", name: "英国", nameEn: "United Kingdom" },
+  // 西欧
+  { slug: "switzerland", name: "瑞士", nameEn: "Switzerland" },
+  // 澳大利亚和新西兰
+  { slug: "australia", name: "澳大利亚", nameEn: "Australia" },
+  { slug: "new-zealand", name: "新西兰", nameEn: "New Zealand" },
+];
+
+const COUNTRY_BY_SLUG = new Map(COUNTRIES.map((c) => [c.slug, c]));
+const COUNTRY_INDEX = new Map(COUNTRIES.map((c, i) => [c.slug, i]));
+
+export function getCountryMeta(slug: string): CountryMeta | undefined {
+  return COUNTRY_BY_SLUG.get(slug);
+}
+
+/** 某大洲下的国家 slug，按（次区域地理顺序 → COUNTRIES 顺序）排列 */
+export function countriesForContinent(continentId: string): string[] {
+  const subOrder = new Map(
+    SUBREGIONS.filter((s) => s.continentId === continentId).map((s, i) => [s.id, i]),
+  );
+  return COUNTRIES.filter((c) => COUNTRY_TO_SUBREGION[c.slug] && subregionOfCountry(c.slug)?.continentId === continentId)
+    .map((c) => c.slug)
+    .sort((a, b) => {
+      const sa = subOrder.get(COUNTRY_TO_SUBREGION[a]!) ?? 99;
+      const sb = subOrder.get(COUNTRY_TO_SUBREGION[b]!) ?? 99;
+      if (sa !== sb) return sa - sb;
+      return (COUNTRY_INDEX.get(a) ?? 99) - (COUNTRY_INDEX.get(b) ?? 99);
+    });
+}
+
+const SUBREGION_BY_ID = new Map(SUBREGIONS.map((s) => [s.id, s]));
+
+export function getSubregion(id: string): Subregion | undefined {
+  return SUBREGION_BY_ID.get(id);
+}
+
+/** 某国家所属次区域 */
+export function subregionOfCountry(country: string): Subregion | undefined {
+  const id = COUNTRY_TO_SUBREGION[country];
+  return id ? SUBREGION_BY_ID.get(id) : undefined;
+}
+
+/** 某国家所属大洲 id（经次区域派生） */
+export function continentOfCountrySlug(country: string): string | undefined {
+  return subregionOfCountry(country)?.continentId;
+}
+
+/** 某大洲下的所有次区域，按 SUBREGIONS 顺序（= 地理顺序） */
+export function subregionsForContinent(continentId: string): Subregion[] {
+  return SUBREGIONS.filter((s) => s.continentId === continentId);
+}
+
 /** 默认大洲 —— 取代散落的 activeRegion === "china" 硬编码 */
 export const DEFAULT_REGION_ID = "asia";
 
