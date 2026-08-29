@@ -29,6 +29,8 @@ import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain"
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useSentenceHighlight } from "@/components/useSentenceHighlight";
 import RegionSelector from "@/components/RegionSelector";
+import ModeToggle from "@/components/ModeToggle";
+import { type AppMode, getStoredMode, setStoredMode } from "@/lib/app-mode";
 import {
   REGIONS,
   setActiveRegion,
@@ -229,6 +231,7 @@ export default function ExplorerApp() {
   const [showIntro, setShowIntro] = useState(true);
   const [hoveredTerrainId, setHoveredTerrainId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
+  const [mode, setMode] = useState<AppMode>(getStoredMode);
   const [activeRegion, setActiveRegionState] = useState<string>(() => {
     try {
       return (typeof window !== "undefined" && localStorage.getItem("fge-active-region")) || "china";
@@ -755,6 +758,34 @@ export default function ExplorerApp() {
     setDisplayCards(null);
   };
 
+  const flyToCountryOverview = useCallback(() => {
+    const r = REGIONS.find((x) => x.id === activeRegion);
+    if (r) {
+      mapRef.current?.flyToRegion({
+        lon: r.center.lon,
+        lat: r.center.lat,
+        height: r.center.height,
+        duration: 1.5,
+      });
+    }
+  }, [activeRegion]);
+
+  const handleModeChange = useCallback(
+    (m: AppMode) => {
+      if (m === mode) return;
+      setMode(m);
+      setStoredMode(m);
+      stopSpeaking();
+      setActiveTerrain(null);
+      setLesson(null);
+      setDisplayCards(null);
+      setRouteNarration(null);
+      setFlyoverName(null);
+      flyToCountryOverview();
+    },
+    [mode, flyToCountryOverview, stopSpeaking],
+  );
+
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-[color:var(--bg)] font-sans">
       {/* Map layer — full bleed, always behind everything */}
@@ -765,15 +796,22 @@ export default function ExplorerApp() {
           onTerrainMode={setTerrainMode}
           onTerrainHover={setHoveredTerrainId}
         />
-        <CesiumOverlayLabels
-          mapRef={mapRef}
-          isRouteFlying={isRouteFlying}
-          onSelect={handleSelectById}
-          hoveredTerrainId={hoveredTerrainId}
-          focusedTerrainId={activeTerrain?.id ?? null}
-          activeRegion={activeRegion}
-          language={language}
-        />
+        {mode === "study" && (
+          <CesiumOverlayLabels
+            mapRef={mapRef}
+            isRouteFlying={isRouteFlying}
+            onSelect={handleSelectById}
+            hoveredTerrainId={hoveredTerrainId}
+            focusedTerrainId={activeTerrain?.id ?? null}
+            activeRegion={activeRegion}
+            language={language}
+          />
+        )}
+        {mode === "travel" && !showIntro && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-24 z-30 text-center text-[12px] text-[color:var(--ink-dim)]">
+            {t("travel.underConstruction", language)}
+          </div>
+        )}
         {terrainMode === "ellipsoid" && (
           <div className="pointer-events-none absolute bottom-20 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-full border border-[color:var(--accent-line)] bg-[color:var(--panel-solid)] px-4 py-2 text-center text-[11px] text-[color:var(--ink-dim)]">
             {language === "zh-CN"
@@ -804,6 +842,7 @@ export default function ExplorerApp() {
           </span>
         </div>
         <div className={`pointer-events-auto flex items-center gap-3 transition-opacity duration-300 ${showIntro ? "opacity-0" : "opacity-100"}`}>
+          <ModeToggle mode={mode} onChange={handleModeChange} language={language} />
           <RegionSelector
             activeRegion={activeRegion}
             onRegionChange={handleRegionChange}
@@ -819,7 +858,7 @@ export default function ExplorerApp() {
         </div>
       </header>
 
-      {!showIntro && (
+      {!showIntro && mode === "study" && (
         <IndexRail
           language={language}
           groups={railGroups}
@@ -853,7 +892,7 @@ export default function ExplorerApp() {
         onClose={closePanel}
       />
 
-      {!showIntro && !activeTerrain && activeRegion === "china" && (
+      {!showIntro && mode === "study" && !activeTerrain && activeRegion === "china" && (
         <JourneyBar
           language={language}
           routes={routes}
