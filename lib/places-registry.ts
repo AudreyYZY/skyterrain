@@ -157,6 +157,7 @@ const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
 /** 国家 slug → 大洲 id（regionId）。新增国家时补一行。 */
 export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   china: "asia",
+  japan: "asia",
   australia: "oceania",
   usa: "north-america",
   canada: "north-america",
