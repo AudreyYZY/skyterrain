@@ -320,7 +320,8 @@ export function t(key: string, lang: Language): string {
 /** TTS 语音 ID */
 export const TTS_VOICE_IDS: Record<Language, string> = {
   "zh-CN": "zh-CN-XiaoxiaoNeural",
-  "en-US": "en-US-JennyNeural",
+  // Ava（2024 多语种旗舰女声）—— 比 Jenny/Aria 自然得多，接近真人纪录片旁白
+  "en-US": "en-US-AvaMultilingualNeural",
 };
 
 /** 获取 TTS 语音 ID */

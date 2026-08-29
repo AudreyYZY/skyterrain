@@ -239,14 +239,14 @@ function bboxOctagon(bbox: [number, number, number, number]): [number, number][]
  * （perPositionHeight：顶面跟随地形高程，侧壁 = 地块切面），保留原色（材质极淡）。
  */
 // 统一暖琥珀 —— hover / focus 只是强弱不同，始终一眼可辨"这是被高亮的地块"
-const REGION_CSS = "#f5b544";
-const REGION_LIFT_HOVER_M = 3_000; // hover 抬升高度（米）
-const REGION_LIFT_FOCUS_M = 5_500; // focus 抬升高度（米）
-const REGION_ALPHA_HOVER = 0.2; // 顶面染色，影像仍透出
-const REGION_ALPHA_FOCUS = 0.34;
-const REGION_RIM_ALPHA_HOVER = 0.6; // 顶面边框（亮线，俯视也看得清）
-const REGION_RIM_ALPHA_FOCUS = 0.95;
-const REGION_RIM_WIDTH = 2.5;
+// 地形选中指示 —— 只是一条细淡的 UI 描边，帮用户知道"选了哪块 / 悬停在哪块"，
+// 不代表任何官方地理边界（形状本身是概略的），也刻意不抢眼、不遮挡地形影像。
+// 不再做染色填充和 3D 抬升。
+const REGION_CSS = "#d7dee8"; // 冷淡浅灰蓝，读作"界面选择线"而非"地物"
+const REGION_RIM_ALPHA_HOVER = 0.3;
+const REGION_RIM_ALPHA_FOCUS = 0.45;
+const REGION_RIM_WIDTH = 1.4;
+const REGION_RIM_GROUND_OFFSET_M = 80; // 描边略高于地表，避免被地形遮住
 
 interface RegionEntry {
   /** 贴地透明多边形 — 仅作 scene.pick 命中目标 */
@@ -322,7 +322,8 @@ function applyTerrainRegionStyles(
     const state: RegionEntry["state"] =
       id === focusedId ? "focus" : id === hoveredId ? "hover" : "idle";
     r.state = state;
-    r.target = state === "focus" ? REGION_LIFT_FOCUS_M : state === "hover" ? REGION_LIFT_HOVER_M : 0;
+    // target 现在是"描边可见度" 0/1（不再是抬升高度）
+    r.target = state === "idle" ? 0 : 1;
     if (state !== "idle" && !r.groundHeights && !r.sampling) {
       void sampleRegionGround(Cesium, viewer, r, poke);
     }
@@ -336,47 +337,31 @@ function tickTerrainRegions(
 ): boolean {
   let animating = false;
   for (const r of regions.values()) {
-    const diff = r.target - r.cur;
-    if (Math.abs(diff) < 40) {
-      if (r.cur !== r.target) {
-        r.cur = r.target;
-      } else if (r.target === 0) {
+    const diff = r.target - r.cur; // target/cur ∈ [0,1]：描边淡入淡出
+    if (Math.abs(diff) < 0.02) {
+      r.cur = r.target;
+      if (r.target === 0) {
         if (r.lift.show) r.lift.show = false;
         if (r.rim.show) r.rim.show = false;
         continue;
       }
     } else {
-      r.cur += diff * 0.16; // 指数缓动
+      r.cur += diff * 0.22;
       animating = true;
     }
 
-    if (!r.lift.show) r.lift.show = true;
+    // 抬升体/填充已停用 —— 只保留一条贴地的细描边
+    if (r.lift.show) r.lift.show = false;
     if (!r.rim.show) r.rim.show = true;
 
     const heights = r.groundHeights ?? r.ringDeg.map(() => r.landmarkElev);
-    let minH = Infinity;
-    for (const h of heights) if (h < minH) minH = h;
-    // 顶面顶点（跟随地表 + 当前抬升）
-    const top = r.ringDeg.map(([lon, lat], i) =>
-      Cesium.Cartesian3.fromDegrees(lon, lat, heights[i]! + r.cur)
-    );
-    // 边框略高于顶面，避免与顶面 z-fighting
     const rimPts = r.ringDeg.map(([lon, lat], i) =>
-      Cesium.Cartesian3.fromDegrees(lon, lat, heights[i]! + r.cur + 200)
+      Cesium.Cartesian3.fromDegrees(lon, lat, heights[i]! + REGION_RIM_GROUND_OFFSET_M)
     );
 
-    const maxLift = r.state === "focus" ? REGION_LIFT_FOCUS_M : REGION_LIFT_HOVER_M;
-    const t = Math.min(1, Math.max(0, r.cur / maxLift));
     const focus = r.state === "focus";
-    const fillAlpha = (focus ? REGION_ALPHA_FOCUS : REGION_ALPHA_HOVER) * Math.max(0.35, t);
-    const rimAlpha = (focus ? REGION_RIM_ALPHA_FOCUS : REGION_RIM_ALPHA_HOVER) * Math.max(0.35, t);
+    const rimAlpha = (focus ? REGION_RIM_ALPHA_FOCUS : REGION_RIM_ALPHA_HOVER) * r.cur;
     const color = Cesium.Color.fromCssColorString(REGION_CSS);
-
-    const poly = r.lift.polygon!;
-    poly.hierarchy = new Cesium.ConstantProperty(new Cesium.PolygonHierarchy(top));
-    poly.perPositionHeight = new Cesium.ConstantProperty(true);
-    poly.extrudedHeight = new Cesium.ConstantProperty(minH - 400);
-    poly.material = new Cesium.ColorMaterialProperty(color.withAlpha(fillAlpha));
 
     const line = r.rim.polyline!;
     line.positions = new Cesium.ConstantProperty(rimPts);
