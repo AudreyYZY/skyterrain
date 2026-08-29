@@ -1,5 +1,11 @@
 # Phase B — 挪威地形（≥25 个 T1/T2/T3）
 
+> **状态：完成（2026-08-30）。** 28 个条目、4 个 commit（批 1 `a1f89cf` / 批 2 `4acc6d6` /
+> 批 3 `6b3de92` / 批 4 `63165be`），分支 `feat/terrain-norway`。europe 88→116，全站 329。
+> `check-regions` / `check-terrain-camera` 通过，浏览器逐批抽查。
+> 计划里 `preikestolen` / `kjerag` 未单列，作为 `lysefjord` 的 `pois`；`hornindalsvatnet`
+> （欧洲最深湖）替补进第 28 个。
+
 > 分支 `feat/terrain-norway`，stack 在 `feat/terrain-switzerland` 上。
 > `regionId: "europe"`，`country: "norway"`，次区域 `northern-europe`（`lib/regions.ts` 已加映射）。
 > 口径：NGU（挪威地质调查局）/ Miljødirektoratet（环境署，国家公园）/ Kartverket（地名）/
