@@ -1592,4 +1592,305 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Makit is the heartland of the Dolan people; Dolan muqam and Dolan meshrep are both national intangible-heritage items (the muqam is also on the UNESCO list). Dolan culture grew up along the Yarkand River at the desert's edge, and the drums and dance of the meshrep are its sharpest expression.",
   },
+
+  // ============ North America · United States ============
+  "rocky-mountains": {
+    seeing:
+      "The Rocky Mountains are the backbone of western North America, running about 4,800 km from British Columbia in Canada to New Mexico in the United States. They carry the Continental Divide — rivers on the two sides of the crest drain to the Pacific and (via the Gulf of Mexico) to the Atlantic. The highest peak on the U.S. side is Mount Elbert in Colorado, about 4,401 m.",
+    formation:
+      "The Rockies largely formed in the Laramide orogeny, roughly 80 to 55 million years ago. The general view is that an oceanic plate then subducted at a very shallow angle beneath North America, buckling continental crust far inland. The core of the ranges is ancient Precambrian crystalline rock; once uplifted it was carved by rivers and Quaternary glaciers into today's spires, cirques and U-shaped valleys. Colorado alone has more than fifty peaks above 4,267 m (14,000 ft).",
+    observation:
+      "From the air the Rockies are a broad, roughly north–south belt of high mountains of uneven width, with a sharp edge against the Great Plains to the east — plain on one side, peaks on the other, with almost no foothill transition. In summer, bare grey rock and lingering snow lie above the tree line and dark conifer forest below it; many of the intermontane basins are open high country, known locally as \"parks\". The volcanic and fault-block country around Yellowstone and the Tetons is a distinctive stretch.",
+    distinguish:
+      "The Rockies and the Appalachians to the east both run broadly north–south, but the Rockies are young and high, with modern glaciers and peaks over 4,000 m; the Appalachians are old, low and rounded, topping out below 2,100 m. Versus the Sierra Nevada: the Sierra is a single tilted granite fault block along the edge of California, gentle on the west and steep on the east; the Rockies are a collection of parallel ranges with high basins between them.",
+    concept:
+      "The Rockies are a mountain system, not a single range — dozens of roughly parallel ranges with broad valleys and high country between them. A common misconception is to call all of the mountainous American West \"the Rockies\": the Pacific-side Coast ranges, the Sierra Nevada and the Cascades are not part of the Rockies, and arid uplands such as the Great Basin lie between them.",
+    history:
+      "The Rockies were long home to, and a travel corridor for, many Native American nations. The 19th-century fur trade, the Colorado gold rush and the building of the transcontinental railroad drove the growth of mountain settlements. The ranges hold Yellowstone (established 1872, among the first national parks in the world), Rocky Mountain and Grand Teton national parks.",
+  },
+
+  "appalachian-mountains": {
+    seeing:
+      "The Appalachian Mountains run about 2,400 km along the eastern edge of North America, from Newfoundland in Canada to Alabama in the United States. They are not high — the highest, Mount Mitchell, is about 2,037 m — but they are continuous, parallel and heavily forested, the main topographic barrier of eastern North America, and long an obstacle to European settlers moving inland.",
+    formation:
+      "The Appalachians are an ancient fold mountain belt, raised mainly in a series of continental collisions between about 480 and 260 million years ago that ultimately assembled the supercontinent Pangaea; they are generally thought to have stood as high then as the Alps do today. Hundreds of millions of years of erosion since have worn them down and rounded them, so that what is seen now is the resistant rock layers of a stripped-down old range — a set of parallel long ridges with valleys between them, the \"Ridge and Valley\".",
+    observation:
+      "From the air the Appalachians are a set of rounded, parallel ridges trending south-west to north-east, of similar crest height, with no standout peaks; the range is forested almost end to end in mixed hardwood and conifer, turning colour widely in autumn. A wide valley (the Great Valley) runs the length of the belt through its middle. In the south, the Great Smoky Mountains often carry a blue-grey haze over the ridgetops.",
+    distinguish:
+      "Among \"American mountains\" the Appalachians are most easily confused with the Rockies. The test: the Appalachians are old, low, rounded, continuous, forested almost throughout, and have no modern glaciers; the Rockies are young, high, with bare rock spires, peaks over 4,000 m and modern glaciers. The Appalachians are comparable to Europe's Ural Mountains — both are ancient fold ranges planed down by long erosion.",
+    concept:
+      "The Appalachians are a classic old fold mountain range: their significance is not in height but in the record of a continental collision. A common misconception is that \"low means unimportant\" — they set the river drainage divide, the climate zones and the early population pattern of eastern North America. \"Appalachia\" is also used for a larger cultural-geographic region that does not exactly match the mountains as a landform.",
+    history:
+      "The Appalachians are the traditional homeland of the Cherokee and many other Native American nations. From the 18th century, a few passes such as the Cumberland Gap became the routes by which settlers crossed the mountains into the Ohio Valley. Appalachian coal underpinned U.S. industrialisation in the 19th and 20th centuries. The roughly 3,500 km Appalachian National Scenic Trail follows the crest through 14 states.",
+  },
+
+  "sierra-nevada-us": {
+    seeing:
+      "The Sierra Nevada is a range in eastern California about 640 km long, running north–south. Its western slope rises gently from the Central Valley; its eastern side drops as a steep fault scarp into the Owens Valley, a fall of up to about 3,000 m. The high point, Mount Whitney, is about 4,421 m — the highest peak in the 48 contiguous United States. Winter moisture off the Pacific falls here as heavy snow, making the range an important natural reservoir for California.",
+    formation:
+      "The core of the Sierra Nevada is a large body of granite that cooled deep underground more than 100 million years ago (the Sierra Nevada batholith). A few million years ago, crustal extension tilted the whole block up along a fault on its eastern edge and westward, producing today's fault-block mountain, gentle west and steep east. Quaternary glaciers carved the upper range into spires, cirques and U-shaped valleys; Yosemite Valley is the best-known glacial valley.",
+    observation:
+      "From the air the Sierra Nevada is a straight north–south wall, its eastern fault scarp standing knife-cut above the flat Owens Valley with a very clear boundary; the western side is a long series of steadily descending forested slopes. Broad exposures of pale granite and alpine lakes lie along the crest, with giant sequoia and pine forest lower down. Lake Tahoe is a large deep-blue lake at the northern end of the crest.",
+    distinguish:
+      "The Sierra Nevada and the Rockies to the east are both \"mountains of the American West\"; the difference is that the Sierra is a single granite fault block — one continuous crest, gentle west and steep east — while the Rockies are a collection of parallel ranges. Versus the Cascades: the Cascades are a line of separate volcanic cones (Rainier, St. Helens and others); the Sierra Nevada has no active volcanoes and is the product of fault-block uplift and glacial carving. It shares its name with Spain's Sierra Nevada but is unrelated.",
+    concept:
+      "The Sierra Nevada is a classic fault-block mountain — not folded up, but a single slab of crust lifted and tilted along a fault. A common misconception is to group it with volcanic ranges: there has been almost no Quaternary volcanic activity in the range. \"Sierra\" is Spanish for a jagged, saw-toothed ridge — a description of its skyline.",
+    history:
+      "The Sierra Nevada is the traditional homeland of the Paiute, Maidu and other Native American nations. Gold was found in the western foothills in 1848, setting off the California Gold Rush and a large influx of people. The range holds Yosemite, Sequoia and Kings Canyon national parks, which protect the giant sequoia — the largest tree in the world by volume.",
+  },
+
+  "cascade-range": {
+    seeing:
+      "The Cascade Range is a volcanic mountain range in the Pacific Northwest of North America, running from southern British Columbia in Canada into northern California. Its signature is a line of widely spaced, steep-sided stratovolcano cones, of which Mount Rainier, about 4,392 m, is the highest and is an active volcano. The range separates the wet coastal region from the dry interior plateau.",
+    formation:
+      "The Cascades are a subduction-zone volcanic arc: the Juan de Fuca plate subducts beneath North America from the west, melting at about 100 km depth to produce magma that rises to build volcanoes. The range has two parts — an older, eroded base of volcanic rock in the west, and a line of young stratovolcanoes sitting on it (Rainier, Adams, St. Helens, Hood, Shasta and others). Mount St. Helens had a major lateral eruption in 1980.",
+    observation:
+      "From the air the bulk of the Cascades is a forested belt of moderate height; what stands out is the handful of symmetrical, permanently snow-capped volcanic cones rising alone out of that belt — one or two thousand metres above the surrounding ridges, and easy to pick out. Dense temperate rainforest lies west of the crest; east of it the land turns quickly to dry open woodland and shrub. Crater Lake in Oregon is a deep-blue caldera lake in a collapsed volcano.",
+    distinguish:
+      "The Cascades meet the Sierra Nevada in the American West (around Mount Shasta in northern California), but their origins are entirely different: the Cascades are an active subduction-zone volcanic arc, with symmetrical cones and eruptive histories; the Sierra Nevada is an inactive granite fault block. Versus the Rockies: the Cascades are near the coast and volcanic; the Rockies are interior and have no active volcanoes.",
+    concept:
+      "The Cascades are a classic volcanic arc — the peaks were not squeezed up but built one volcano at a time, which is why they stand isolated and symmetrical. A common misconception is to treat the range as an ordinary fold mountain: several of its main peaks are active volcanoes with eruption potential, monitored continuously by the U.S. Geological Survey.",
+    history:
+      "The Cascade volcanoes appear in the oral traditions of many Native American nations. In the 19th century, emigrant wagon trains had to cross the range's passes to reach the Willamette Valley in Oregon. The range holds Mount Rainier, Crater Lake and North Cascades national parks; after its 1980 eruption Mount St. Helens was set aside as a national volcanic monument for the study of ecological recovery.",
+  },
+
+  "alaska-range": {
+    seeing:
+      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (U.S. Geological Survey figure; the federal official name is also given as Mount McKinley). Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
+    formation:
+      "The Alaska Range runs along a large strike-slip fault (the Denali Fault) and is the result of the Pacific-side plate pushing north, compressing and displacing crust upward; it is still slowly rising and is seismically active. The rock is mostly sedimentary and granitic, and the upper range is covered by huge valley glaciers — the Kahiltna and others flow tens of kilometres down from around Denali.",
+    observation:
+      "From the air the Alaska Range is a continuous white wall of snow mountains lying between the green interior lowland and the coast to the south. Denali and neighbouring Mount Foraker stand well above the main crest, their upper parts under permanent snow and threaded with glaciers, many of which end in the lowland as grey meltwater rivers and braided channels. North of the range is open tundra and boreal forest, and beyond that no more high mountains.",
+    distinguish:
+      "The Alaska Range and the Rockies are both major North American mountain systems, but the Alaska Range is at high latitude and far more heavily glaciated — the whole upper range is under ice, whereas the Rockies carry only small glaciers on a few high summits. It runs parallel to the coastal Chugach and Wrangell ranges and is the more inland one.",
+    concept:
+      "Two figures for Denali's height are often confused: an elevation of about 6,190 m (above sea level), and a base-to-summit rise of about 5,500 m measured from lowland at roughly 600 m. The first makes it the highest point in North America by elevation; the second explains why it looks so tall from below. The mountain has two names in use: Denali (from a local Native language, meaning \"the high one\") and Mount McKinley.",
+    history:
+      "The Alaska Range area is the traditional land of several Athabaskan-speaking Native nations. Denali National Park and Preserve, established in 1917, covers about 24,000 km² and is an important area for observing northern ecosystems and for mountaineering.",
+  },
+
+  "colorado-plateau": {
+    seeing:
+      "The Colorado Plateau spans the meeting point of Colorado, Utah, Arizona and New Mexico (the \"Four Corners\"), an area of about 337,000 km². It is a high, arid tableland, averaging roughly 1,500 to 2,100 m, cut into countless deep canyons by the Colorado River and its tributaries. It concentrates a set of national parks famous for bare rock layers and red landforms — the Grand Canyon, Monument Valley, Arches, Zion, Bryce.",
+    formation:
+      "The Colorado Plateau is built of roughly flat-lying sedimentary rock (sandstone, shale, limestone) recording hundreds of millions of years of deposition. Since the start of the Cenozoic the whole plateau has been raised about 1,500 to 2,000 m fairly evenly, without the layers being folded — they stay horizontal. After uplift, rivers cut down hard, carving the tableland into mesas, buttes and canyons; the dry climate keeps the colour and bedding of the layers clearly visible.",
+    observation:
+      "From the air the Colorado Plateau is a large, reddish-brown upland of low relief, its surface split by a branching network of dark canyons — the Colorado River system. The plateau's edges are often stepped, retreating cliffs (a \"staircase\"); isolated mesas and volcanic necks dot the surface. Vegetation is sparse and rock is exposed — it is one of the easiest landscapes anywhere to \"read\" rock structure from above.",
+    distinguish:
+      "The Colorado Plateau and the Tibetan Plateau are both \"plateaus\", but the Tibetan Plateau was squeezed up by continental collision, sits above 4,000 m and has strongly deformed rock; the Colorado Plateau is only 1,500 to 2,100 m, its layers are essentially flat, and it was raised evenly as a block. Versus the neighbouring Great Basin: the Great Basin has been pulled apart into a set of fault troughs and parallel ranges; the Colorado Plateau is one intact block that was not torn.",
+    concept:
+      "The Colorado Plateau shows that what matters for a \"plateau\" is a large area raised relatively intact — not necessarily great height. A common misconception is that canyons were \"ripped open\": the Grand Canyon was sawn down over millions of years by the Colorado River, faster where the plateau rose faster. Flat layers plus a dry climate make this a classic region worldwide for studying sedimentary rock and river erosion.",
+    history:
+      "The Colorado Plateau is home to the Navajo, Hopi, Ute and other Native nations; the Navajo Nation is the largest Indian reservation in the United States, and places such as Monument Valley are managed by Navajo Parks. The plateau also holds many Ancestral Puebloan cliff-dwelling sites, such as Mesa Verde. Today it is dominated by its cluster of national parks and outdoor tourism.",
+  },
+
+  "grand-canyon": {
+    seeing:
+      "The Grand Canyon is the vast canyon the Colorado River cut through the Colorado Plateau, in northern Arizona — about 446 km long, up to about 29 km wide, and up to about 1,857 m deep. Its walls of clearly bedded red and yellow rock record nearly 1.8 billion years of Earth history. Most visitors look out from the South Rim, at about 2,100 m.",
+    formation:
+      "The Grand Canyon formed mainly over the past 5 to 6 million years, as the Colorado River kept cutting down while the Colorado Plateau was being raised. The river does the \"cutting deeper\"; wall retreat and side gullies do the \"widening\"; and the dry climate slows collapse and plant cover, keeping the layers sharp. The Vishnu Schist exposed at the bottom is about 1.8 billion years old, among the oldest rock in North America; the Kaibab Limestone at the top is about 270 million years old.",
+    observation:
+      "From the air the Grand Canyon is an extremely deep, wide, crook-edged gash in the plateau surface; inside are stepped-back terraces and cliffs, colours shading from pale at the top to deep, from yellow to red to grey-black going down. A deep-green ribbon of river runs along the bottom. The North Rim is clearly higher than the South Rim and more forested. Low sun at sunrise and sunset makes the layering most three-dimensional.",
+    distinguish:
+      "The Grand Canyon and China's Yangtze Three Gorges are both canyons cut by a big river, but the Three Gorges is the Yangtze cutting across a mountain belt, with steep V-shaped rock walls; the Grand Canyon is the Colorado cutting into a plateau of flat layers, so its walls are stepped, wider and paler. Versus the Yarlung Tsangpo Grand Canyon: that one is deeper, narrower, wetter and more forested; the Grand Canyon is wider, drier and bare-rock.",
+    concept:
+      "The Grand Canyon is often wrongly called the \"deepest\" or \"largest\" canyon — by depth and length it is neither first (the Yarlung Tsangpo Grand Canyon is deeper and longer). What is genuinely special is its width, its continuous exposure of rock layers, and the way the dry climate makes about 1.8 billion years of geology legible at a glance. It is a classic case of river down-cutting combined with block uplift.",
+    history:
+      "The Grand Canyon and its surroundings have long been home to the Havasupai, Hualapai, Navajo, Hopi, Ute and other Native nations, and tribal communities still live in and around the canyon. Grand Canyon National Park was established in 1919 and listed as a World Heritage site in 1979. Grand Canyon Village on the South Rim is the main visitor hub.",
+  },
+
+  "great-plains-us": {
+    seeing:
+      "The Great Plains are a broad, gently sloping plain east of the Rocky Mountains, running from the Prairie provinces of Canada down to Texas and several hundred kilometres wide. They fall from about 1,800 m in the west to about 500 m in the east so gradually that the slope is barely perceptible. Once continuous tall- and short-grass prairie with huge bison herds, they are now a major U.S. wheat, corn and cattle belt.",
+    formation:
+      "The material of the Great Plains came mostly from the Rocky Mountains — as the ranges rose, wind and rivers carried large amounts of debris and silt out onto the mountain front and spread it flat, building an east-tilted apron of sediment. Quaternary glaciers left till and loess in the north; the central-south has wind-blown dune fields (such as the Nebraska Sandhills). Beneath lies the vast Ogallala Aquifer, which supports the region's irrigated farming.",
+    observation:
+      "From the air the Great Plains are an endless, near-level pale yellow-green surface; what stands out is the regular grid of fields and the green discs left by centre-pivot irrigation. Rivers are among the few landform clues — they run out from the Rockies in the west and cut shallow, broad valleys across the plain. Near the mountains in the west there are flat-topped erosion remnants and badlands.",
+    distinguish:
+      "The Great Plains and China's North China Plain are both plains built by rivers moving sediment, but the North China Plain is the alluvial fans and floodplains of the Yellow River and others — extremely flat and densely populated; the Great Plains are mostly a piedmont \"alluvial-aeolian\" apron with a clear but gentle overall westward-to-eastward tilt, and are thinly populated. Compared with the wetter Central Lowland to the east, the Great Plains are higher, drier and more given to grazing.",
+    concept:
+      "The Great Plains remind us that a \"plain\" need not be near sea level. Their western edge reaches 1,800 m, yet because the surface is flat, continuous and built of sediment, it is still a plain, not a plateau. A common misconception is to lump them with the wetter \"Midwest farmland\" further east — the boundary between the two runs roughly along the 500 mm rainfall line (about the 100th meridian).",
+    history:
+      "The Great Plains were long the territory of the Cheyenne, Lakota (Sioux), Comanche, Blackfeet and other bison-based Native nations. The 19th-century railroads, the Homestead Act, and the near-extermination of the bison brought large-scale farming and ranching settlement. Poor farming practice plus drought in the 1930s produced the Dust Bowl. Today the region's agriculture is highly mechanised and many counties continue to lose population.",
+  },
+
+  "great-basin": {
+    seeing:
+      "The Great Basin is a large area of \"internal drainage\" between the Sierra Nevada and the Wasatch Range — rivers and snowmelt here never reach the ocean, ending instead in salt lakes, salt flats or by soaking into the ground. It covers about 500,000 km², filling almost all of Nevada and spilling into neighbouring states, and is one of the driest parts of North America. The Great Salt Lake is the remnant water body at its lowest point.",
+    formation:
+      "The Great Basin is the result of the crust being stretched east–west: blocks break along north–south normal faults, half rising into parallel ranges and half dropping into the valleys between, producing classic \"Basin and Range\" topography — dozens of north–south ranges lined up like a row of caterpillars. During the ice ages the basins held large lakes such as Lake Bonneville; most are now dry, leaving the Great Salt Lake and broad salt flats.",
+    observation:
+      "From the air the Great Basin is a strikingly regular set of north–south stripes: brown ranges alternating with pale, flat valleys, one after another. The valley centres often hold white salt flats or dry lake beds (playas). Vegetation is mostly grey-green sagebrush, thinning toward the basin floors. The Great Salt Lake is a shallow, salty, pinkish-white sheet of water in the north-east corner.",
+    distinguish:
+      "The Great Basin and the Tarim Basin are both dry, internally drained basins, but the Tarim is a single large basin ringed by high mountains with one continuous desert in the middle; the Great Basin is not a basin at all but a whole \"Basin and Range\" province of dozens of small basins and small ranges. Versus the Colorado Plateau: the plateau is an intact block that was not torn; the Great Basin is a block that was stretched apart.",
+    concept:
+      "The name \"Great Basin\" is misleading — it is not one bowl-shaped hollow but an area where all water is trapped inland, made of many small basins. The test is the drainage: any region whose rivers ultimately do not reach the sea and vanish inland is an area of internal drainage. It is at once a landform region (Basin and Range), a hydrologic region (internal drainage) and a desert region (the Great Basin Desert), and the three do not match exactly.",
+    history:
+      "The Great Basin is the traditional homeland of the Western Shoshone, Paiute, Washoe, Ute and other Native nations, who developed gathering and hunting practices suited to extreme drought. In the 19th century emigrant trains had to struggle across the basin to reach California; Mormon settlers established themselves by the Great Salt Lake in 1847. Today it holds Great Basin National Park, protecting ancient bristlecone pines and limestone caves.",
+  },
+
+  "death-valley": {
+    seeing:
+      "Death Valley is a deep north–south valley in eastern California, part of the Great Basin. Its floor at Badwater Basin lies at −86 m, the lowest point in North America, while Telescope Peak on its western side rises to 3,366 m — only about 30 km apart horizontally. Summers are extremely hot, among the hottest recorded anywhere on Earth, and it is the driest place in the contiguous United States.",
+    formation:
+      "Death Valley is a \"pull-apart basin\" — the crust has been stretched along faults so that the whole valley floor keeps dropping relative to the ranges on either side, while receiving debris washed down from the mountains. With almost no outlet and very strong evaporation, the floor has accumulated thick salt, mud and sand, forming large salt flats, cracked salt crust and seasonal shallow salt lakes. The alluvial fans along the valley edge are large and steep.",
+    observation:
+      "From the air Death Valley is a long, narrow trough between two brown ranges; the lowest part of the floor is a glaring white salt flat, edged by pale alluvial fans spreading out from the mountain mouths. In places there are wind-eroded yellow dunes and multi-coloured oxidised rock faces (the \"Artist's Palette\"). Almost no green shows along the valley, only small patches of vegetation near springs.",
+    distinguish:
+      "Death Valley and China's Turpan Basin are both hot, dry basins below sea level, but Turpan is a structural basin ringed by the Tianshan, kept as an oasis by karez channels bringing snowmelt; Death Valley is a fault-opened graben with almost no oasis, hotter and lower. Versus the Qaidam Basin: Qaidam is high, cold and dry; Death Valley is below sea level and extremely hot.",
+    concept:
+      "Death Valley shows that a \"basin\" is defined by form and drainage, not elevation — it lies below sea level and is still a basin (an internally drained one). A common misconception is to equate \"lowest\" with \"deepest\": Badwater is the lowest point relative to sea level, but the roughly 3,400 m difference between the valley floor and the adjacent summit is a better measure of how deep it is. Hiking on the valley floor in summer carries a real health risk.",
+    history:
+      "Death Valley is home to the Timbisha Shoshone, who still have a community within the valley. The name comes from a group of emigrants who became trapped here in the mid-19th century while looking for a shortcut. Borax was briefly mined here in the late 19th century and hauled out of the desert by twenty-mule teams. Death Valley National Park was established in 1994 and is one of the largest national parks in the contiguous United States.",
+  },
+
+  "mojave-desert": {
+    seeing:
+      "The Mojave Desert lies in south-eastern California, southern Nevada and the neighbouring corners of Arizona and Utah, wedged between the Great Basin to the north and the Sonoran Desert to the south. It is a relatively high desert, mostly 600 to 1,200 m. Its signature plant is the Joshua tree, a tall yucca that grows only in the Mojave. Las Vegas, Death Valley and Joshua Tree National Park are all within it.",
+    formation:
+      "The Mojave's dryness comes from rain shadow: Pacific moisture is stripped out by the Sierra Nevada and other ranges, leaving little by the time it reaches here. In landform terms it is part of the Basin and Range — broad basins between low fault-block ranges, the basins holding dry lake beds, salt flats and dunes. It too had lakes during the ice ages, now reduced to traces.",
+    observation:
+      "From the air the Mojave is an open surface of pale brown to pale red, dotted with isolated dark ranges and white dry lake beds. Around Joshua Tree National Park the ground is strewn with piles of dark granite boulders. Overall it is emptier than the Sonoran Desert to the south, with lower, sparser vegetation. Large solar power plants and dead-straight highways are conspicuous human marks.",
+    distinguish:
+      "The Mojave, Great Basin and Sonoran deserts meet in the American South-West. The test is mostly plants and rainfall season: the Great Basin is a \"cold desert\", with winter snow and dominated by sagebrush; the Sonoran is a \"hot desert\", with summer and winter rain and giant columnar saguaro cactus; the Mojave is in between, its rain concentrated in winter, marked by the Joshua tree.",
+    concept:
+      "The Mojave shows that desert boundaries are set mainly by climate and vegetation, not by a clear landform line. In landform terms the Mojave and the Great Basin are both Basin and Range — the Mojave is simply warmer and further south. A common misconception is that deserts are all low: most of the Mojave floor is above 600 m, higher than many humid regions.",
+    history:
+      "The Mojave Desert is the traditional land of the Mojave, Chemehuevi, Southern Paiute and other Native nations, and old trade routes crossed it linking the Colorado River with the Pacific coast. The 19th-century \"Old Spanish Trail\" and later Route 66 and the railroads all crossed on similar lines. Today it holds Joshua Tree and Mojave National Preserve, and the parts near Las Vegas are developing quickly.",
+  },
+
+  "great-lakes": {
+    seeing:
+      "The Great Lakes are a set of connected large freshwater lakes in the middle of North America — Superior, Michigan, Huron, Erie and Ontario, running from west to east across the U.S.–Canada border. Their combined area is about 244,000 km², and they hold roughly a fifth of the world's surface liquid fresh water. Their water eventually reaches the Atlantic via the St. Lawrence River. Chicago, Toronto and Detroit are among the big cities on their shores.",
+    formation:
+      "The Great Lakes basins were mainly gouged out by Quaternary glaciers. As the ice sheet advanced south again and again, it scoured the ground deeper along belts of softer rock and piled up the sides; after the ice withdrew about 14,000 years ago, meltwater and the ice-depressed land together formed today's lakes. The crust is still slowly rebounding, so the shorelines are still adjusting.",
+    observation:
+      "From the air the Great Lakes are several huge, complex-edged sheets of deep-blue water, strung together like a chain opening to the south-east. Short channels and falls connect them (Niagara Falls sits between Erie and Ontario). In winter the lakes partly freeze and the downwind shores get heavy \"lake-effect\" snow. At night the shoreline cities run together in a band of light.",
+    distinguish:
+      "The Great Lakes and the African Great Lakes are both clusters of large freshwater lakes, but the African lakes mostly sit in crustal rifts and are deep and narrow; the Great Lakes were scraped out by glaciers and are relatively wide, shallow and irregular. Versus the Caspian Sea: the Caspian is an internally drained salt \"lake\" (really an enclosed sea); the Great Lakes are freshwater lakes with an outlet, linked to the ocean by the St. Lawrence.",
+    concept:
+      "The Great Lakes are named together but are not one lake: the five stand at different levels and drain step by step through connecting channels. Lakes Michigan and Huron are at the same surface elevation and joined by the wide Straits of Mackinac, so hydrologically they are one body (\"Lake Michigan–Huron\"), just conventionally counted as two. What makes a \"Great Lake\" is not whether it is connected but its area and volume.",
+    history:
+      "The shores of the Great Lakes are home to the Anishinaabe, Haudenosaunee (Iroquois), Huron and other Native nations, and the lakes were an important water route. The fur trade spread along them from the 17th century; in the 19th century canals (the Erie Canal and others) linked the Great Lakes to the Atlantic and the Mississippi system, driving the industrialisation of the American Midwest. Today the lakes are a major shipping, water-supply and fishing region, and face pressure from pollution and invasive species.",
+  },
+
+  yellowstone: {
+    seeing:
+      "The Yellowstone Plateau lies in the northern Rockies across Wyoming, Montana and Idaho, at about 2,400 m. It sits on top of a large active volcano — an underground magma chamber has domed the surface into an upland — and in the past 2.1 million years it has had three enormous eruptions, the most recent about 640,000 years ago, which collapsed a caldera about 72 by 55 km. As a result the surface has the densest concentration of geysers, hot springs and mud pots in the world, and Yellowstone (1872) was one of the first national parks anywhere.",
+    formation:
+      "The energy of the Yellowstone volcano comes from a roughly fixed mantle hot spot. As the North American plate moves south-west, it has left a line of older eruptive centres trailing north-east (the Snake River Plain). The current magma chamber is still there, heating the surface: rain and snowmelt sink underground, are heated, and rise back along fractures; where they pass through travertine or silica plumbing they build geysers. The Grand Canyon of the Yellowstone is where the Yellowstone River has cut into volcanic rock stained yellow by hydrothermal alteration.",
+    observation:
+      "From the air the Yellowstone Plateau is a relatively gentle, forested upland among the peaks of the Rockies, with the shallow saucer outline of the giant caldera in the middle and ring-fracture ridges around the edge. The thermal areas are patches of white, grey and coloured bare ground in the sea of forest, steaming; Yellowstone Lake is a large water body inside the caldera. The Yellowstone River cuts a bright yellow canyon at the northern edge. Large fires have left stands of dead standing trees.",
+    distinguish:
+      "The Yellowstone Plateau and the Colorado Plateau are both \"plateaus\", but the Colorado Plateau is flat-lying sedimentary rock raised as a block — dry, known for canyons; the Yellowstone Plateau was pushed up by volcanism, is covered in volcanic rock and forest, and is known for hot springs and geysers. Versus Hawaii's shield volcanoes: Hawaii is an oceanic hot spot beneath thin plate, erupting mostly fluid lava; Yellowstone is a hot spot beneath thick continental crust, and its big eruptions are explosive.",
+    concept:
+      "Yellowstone is often called a \"supervolcano\", which can suggest a catastrophic eruption is imminent. The scientific statement is that it is an active volcano with a history of very large eruptions, currently in a quiet interval, monitored continuously by the U.S. Geological Survey's Yellowstone Volcano Observatory, with no sign of an eruption in the near future. The geysers and hot springs are the normal expression of residual magmatic heat, not a warning sign.",
+    history:
+      "The Yellowstone area was used for thousands of years for hunting and gathering by the Shoshone, Crow, Blackfeet, Nez Perce and other Native nations. In 1872 the U.S. Congress set it aside as a national park — the starting point of the national-park idea, later copied by many countries. Today Yellowstone is a World Heritage site and an important place for the study of volcanism, geothermal systems and wildlife (grizzly bears, wolves, bison).",
+  },
+
+  "yosemite-valley": {
+    seeing:
+      "Yosemite Valley is a deep valley about 11 km long in the Sierra Nevada, its floor at about 1,200 m, walled by nearly vertical pale granite cliffs — El Capitan, Half Dome, Sentinel Rock. The Merced River runs through it, and side streams drop straight off the rim as high waterfalls including Yosemite Falls. The valley is the heart of Yosemite National Park and one of the birthplaces of rock climbing.",
+    formation:
+      "Yosemite Valley was first cut by the Merced River along a structural weakness into a V-shape, then repeatedly scraped, deepened and widened into today's U-shape by valley glaciers over the Quaternary ice ages. Granite breaks apart along sets of parallel joints, producing single cliff faces like El Capitan and domes like Half Dome (Half Dome was not \"sliced in half\" by a glacier — the missing side's rock was never complete, and fell away as the joints allowed). After the ice retreated the valley floor was a lake, which filled with sediment to become the flat meadows.",
+    observation:
+      "From the air Yosemite Valley is a straight, flat-bottomed cleft in a sea of conifer forest, its walls bare, whitish granite, its floor green meadow and a winding river. El Capitan is a nearly vertical single face on the north side at the valley mouth; Half Dome is a round-topped dome with one side sheared flat at the eastern end. The falls run hardest at spring snowmelt, and some dry up by late summer.",
+    distinguish:
+      "Yosemite Valley and Norway's Sognefjord are both glacier-cut U-shaped valleys; the difference is that Sognefjord's floor is drowned by the sea to make a fjord, while Yosemite Valley is in the interior highlands with a river and meadows on its floor. Versus an ordinary river valley: a river valley is V-shaped in cross-section with slopes descending all the way; a glacial valley is U-shaped with steep straight walls and a flat floor, and often \"hanging valleys\" (side valleys left high on the main wall, from which waterfalls drop).",
+    concept:
+      "Yosemite Valley is a textbook glacial U-shaped valley. A common misconception explains Half Dome's shape as a glacier having \"cut off half\" of it — the geological evidence shows glaciers never overtopped Half Dome, and its shape is controlled mainly by granite jointing. Another misconception is that the granite here is volcanic: it is an intrusive rock that crystallised slowly deep underground, and was only later uplifted, exposed and glaciated.",
+    history:
+      "Yosemite Valley is the home of the Ahwahneechee (a group of the Southern Miwok); the name \"Yosemite\" comes from a neighbouring people's term for them. It became known to outsiders after gold seekers entered the mountains in the mid-19th century. In 1864 the U.S. federal government set Yosemite Valley aside for protection — one of the earliest acts anywhere by a government to reserve a natural landscape for the public; a national park followed in 1890. Today it is a World Heritage site.",
+  },
+
+  "mississippi-river": {
+    seeing:
+      "The Mississippi River is the main stem of the largest river system in North America, rising at Lake Itasca in Minnesota and flowing about 3,700 km south to the Gulf of Mexico; measured from its longest tributary, the Missouri, the system is about 6,000 km long. Together with its tributaries it drains roughly 40% of the surface runoff of the contiguous United States. Its lower reaches run through a broad, flat floodplain, and its mouth is a \"bird's-foot\" delta reaching into the sea.",
+    formation:
+      "The plain the lower Mississippi crosses was itself built, layer by layer, by this river and its predecessors over millions of years, and by the sediment carried in Quaternary glacial meltwater. The channel swings freely across the plain, leaving many oxbow lakes and natural levees. At the mouth the current slows sharply, sediment drops out, and a branching delta builds seaward; because the sediment leaves through a few fixed passes, the shape resembles a bird's foot.",
+    observation:
+      "From the air the middle and lower Mississippi is a wide brown band looping back and forth across flat farmland, flanked by crescent oxbow lakes and abandoned channels, with built levees running along the banks. Toward the mouth the channel splits into several arms, edged by broad wetlands and mudflats sinking into the sea. Offshore of the delta the water is often stained yellow-brown for a large area.",
+    distinguish:
+      "The Mississippi Delta and the Yellow River Delta are both built by a heavily silt-laden river, but the Yellow River Delta is fan-shaped and its channel shifts drastically and often; the Mississippi's \"bird's-foot\" delta is a set of long fingers extended seaward along fixed passes, kept from shifting mainly by engineering. Compared with the Nile Delta, which is a classic triangle, the Mississippi is bird's-foot shaped.",
+    concept:
+      "The Mississippi shows that a large river has two sides to its landform work: erosion and transport dominate the upper and middle river, deposition dominates the lower river and mouth. A common misconception is that a delta only ever grows — in recent decades the Mississippi Delta has been shrinking, because upstream dams trap sediment, the channel is fixed for navigation and flood control, and the ground is subsiding, so the coastal wetlands are being lost.",
+    history:
+      "The Mississippi was long a central axis of life and travel for many Native nations, and its valley holds large earthwork-mound cities such as Cahokia. It served in turn as a border and trade route for France, Spain and the United States; 19th-century steamboats and later barge traffic made it the economic artery of the American interior. Today the U.S. Army Corps of Engineers manages the river with an extensive system of locks, levees and floodways.",
+  },
+
+  "central-valley-ca": {
+    seeing:
+      "The Central Valley is a flat lowland about 650 km long and 80 to 100 km wide between the Sierra Nevada and the Coast Ranges of California. Its northern half is drained by the Sacramento River and its southern half by the San Joaquin River; the two meet in a delta that reaches the sea through San Francisco Bay. The climate is dry summers and wet winters, the soil is deep, and it is one of the most productive agricultural regions in the United States.",
+    formation:
+      "The Central Valley is a structural trough — with the Sierra Nevada rising on one side and the Coast Ranges on the other, the block between sank relatively and has long received debris and river sediment from the mountains on both sides, filling in to several kilometres of sediment. The valley once held large seasonal lakes and marshes (such as Tulare Lake), most of them drained since the late 19th century and turned into farmland.",
+    observation:
+      "From the air the Central Valley is an extremely flat green-to-brown ribbon among mountains, almost entirely covered by regular fields whose colour changes with the crop and the season. The Sacramento and San Joaquin rivers are among the few natural curves; the delta in the middle is a grid of leveed islands and channels. At the edges of the valley the mountains rise abruptly, with a clear boundary.",
+    distinguish:
+      "The Central Valley and China's Chengdu Plain are both structural basin-plains ringed by mountains and filled by river sediment, but the Chengdu Plain is the alluvial fan of the Min River — small, irrigated from the Dujiangyan works for over two thousand years; the Central Valley is much longer and relies on inter-basin water transfers and groundwater. Versus the Great Plains: the Great Plains are a gently tilted piedmont apron given to dryland farming and grazing; the Central Valley is a closed trough given to irrigated agriculture.",
+    concept:
+      "The Central Valley is a reminder that a \"plain\" can be the result of structural sinking plus sediment fill, not just a river spreading out over open ground. A recurring concern is groundwater: long-term over-pumping has caused parts of the valley floor to keep subsiding (locally by several metres), making it one of the best-known cases of land subsidence in the world.",
+    history:
+      "The Central Valley is the traditional home of the Yokuts, Miwok, Wintun and other Native nations. Gold was found at the valley's eastern edge in 1848, and California's population surged. From the late 19th century, large-scale drainage, irrigation canals and later the Central Valley Project and State Water Project turned it into an intensively farmed belt. Today the valley is also one of California's faster-growing and more air-quality-challenged regions.",
+  },
+
+  everglades: {
+    seeing:
+      "The Everglades are a very broad, very gently sloping wetland at the southern end of the Florida peninsula. In the wet season, water spills from Lake Okeechobee in the centre and forms a sheet tens of centimetres deep and over a hundred kilometres wide, creeping south across sawgrass prairie at a few hundred metres a day and finally spreading into Florida Bay — which is why it is called the \"river of grass\". It is the only place where the American alligator and the American crocodile live side by side.",
+    formation:
+      "The Everglades sit on a nearly level limestone platform, the ground falling only a few metres from Lake Okeechobee to the coast. A thin layer of peat and marl over the limestone holds the seasonal shallow water. Its \"river\" has no defined channel — it is one wide, shallow sheet flow. Along the coast it becomes mangrove swamp; sawgrass prairie, tree islands (hammocks) and mangrove alternate with differences of only a few centimetres in ground height.",
+    observation:
+      "From the air the Everglades are a huge expanse of yellow-green grass, cut by countless narrow water tracks and dotted with oval tree islands, both the tracks and the islands stretched out along the direction of flow. In the wet season it is a sheet of water; in the dry season it retreats to scattered pools. Near the southern coast the prairie gives way to a dark-green maze of mangrove and winding tidal estuaries. Dead-straight canals and levee roads stand out sharply.",
+    distinguish:
+      "The Everglades are unlike an ordinary delta or estuarine wetland: they were not built by one large river carrying sediment, but are rainwater spreading over a flat limestone platform, carrying almost no sediment. Compared with an inland marsh such as Zoigê: Zoigê is a cold-climate peat bog on a poorly drained plateau; the Everglades are a warm, wide, shallow sheet-flow wetland.",
+    concept:
+      "The Everglades are a classic example of a \"flowing wetland\" — the water moves slowly as a whole, rather than sitting still. In the 20th century, canals and levees built for flood control and development changed the paths and volume of the flow, markedly shrinking the wetland and its ecosystem; a large \"Everglades restoration\" programme has since aimed to return the natural pattern of water movement.",
+    history:
+      "The Everglades and their surroundings are home to Seminole peoples including the Miccosukee, and after repeated 19th-century conflicts between the U.S. Army and the Seminole, some Seminole people remained deep in the wetland. Everglades National Park was established in 1947 — the first U.S. national park set aside chiefly to protect an ecosystem rather than scenery; it is also a World Heritage site and a Wetland of International Importance.",
+  },
+
+  "sonoran-desert": {
+    seeing:
+      "The Sonoran Desert covers southern Arizona, a small part of south-eastern California, and the Mexican states of Sonora and Baja California — one of the lowest-latitude and hottest deserts in North America. Its signature is the saguaro cactus, which can grow more than ten metres tall and live over a century, and grows only in the Sonoran Desert. Phoenix and Tucson are both within it.",
+    formation:
+      "The Sonoran Desert's dryness comes from the sinking air of the subtropical high-pressure belt, plus the rain shadow of the peninsular ranges to the west. In landform terms it is the southern extension of the Basin and Range — broad basins between low fault-block ranges, with large gravel alluvial fans at the mountain feet. Unlike the Mojave and Great Basin to the north, the Sonoran has two rainy seasons: winter frontal rain off the Pacific, and summer \"monsoon\" thunderstorms from the south-east.",
+    observation:
+      "From the air the Sonoran Desert looks \"greener\" than the Mojave — the basin floors are densely covered with dark shrubs and cactus of various heights, and the alluvial fans at the mountain feet are pale spreading cones. Between isolated brown ranges run dead-straight highways and grids of irrigated fields and cities. Dry washes (arroyos) show as pale branching lines, carrying water only after storms.",
+    distinguish:
+      "The Sonoran, Mojave, Chihuahuan and Great Basin deserts are the four great deserts of North America and meet one another. The test is vegetation and rainfall: the Great Basin is a cold desert dominated by sagebrush; the Mojave is between cold and hot, marked by the Joshua tree; the Sonoran is a hot desert with saguaro and tree-like plants and two rainy seasons; the Chihuahuan is further inland and east, dominated by yucca and desert scrub.",
+    concept:
+      "The Sonoran Desert shows that \"desert\" does not mean \"barren\" — because it has two rainy seasons, it is one of the most plant- and animal-rich deserts in the world. A common misconception is to picture all deserts as sand dunes: most of the Sonoran surface is gravel, shrub and cactus, and true dune fields (such as the Algodones Dunes) are only local.",
+    history:
+      "The Sonoran Desert is home to the O'odham, Cocopah and other Native nations, who developed farming that relies on the summer monsoon rains. It also holds the remains of large irrigation canals built by the Hohokam. In the 18th century Spanish missionaries built a string of mission villages along the rivers. Today the Phoenix–Tucson area of Arizona is one of the faster-growing regions in the United States, its water supply heavily dependent on transfers from the Colorado River and on groundwater.",
+  },
+
+  "monument-valley": {
+    seeing:
+      "Monument Valley lies on the Colorado Plateau at the Utah–Arizona border — a group of red sandstone mesas and buttes standing on a flat red desert, with a relief of about 100 to 300 m. Classic forms such as the East and West Mitten Buttes and the Merrick Butte appear often in films and photographs. It is managed by the Navajo Nation as a tribal park and is part of the Navajo reservation.",
+    formation:
+      "The rock of Monument Valley is Permian to Triassic red sandstone and shale that was once a single continuous set of layers. After the Colorado Plateau was uplifted, water and wind eroded away the softer beds, leaving columns and tables only where a hard \"cap rock\" protects them: a continuous cliff wastes back into a mesa, the mesa shrinks to a pointed butte, the butte thins to a spire, and finally it collapses. Iron oxide in the sandstone gives it its deep red colour.",
+    observation:
+      "From the air Monument Valley is a large, nearly level pale-red desert floor, out of which stand a dozen or so red rock bodies with steep sides and flat tops, widely spaced and not connected to one another. Each usually has a gentle apron of collapsed debris at its base. The floor carries sparse shrub and a few dirt roads, and casts very long shadows — the place is known for its light at sunrise and sunset.",
+    distinguish:
+      "The mesas and buttes of Monument Valley and the sandstone pinnacles of Zhangjiajie are both sandstone shaped by erosion, but Zhangjiajie is a humid climate cutting hundreds of dense, slender, vegetation-covered columns along closely spaced vertical joints; Monument Valley is a dry climate leaving a few isolated, stout, bare red rock bodies from flat layers.",
+    concept:
+      "Monument Valley is a viewing window on the \"mesa–butte–spire\" erosion sequence: the same set of flat layers, cut and worn back to different degrees, shows different forms. A common misconception is to treat it as a \"canyon\" — it is not a river-cut valley but a broad low area between erosion remnants on a former plateau surface.",
+    history:
+      "Monument Valley has long been Navajo land for living and grazing, and Navajo families still live within it. From the mid-20th century it was filmed extensively as a location for American Westerns, becoming one of the visual symbols of \"the American West\" in global popular culture. Entering the core area requires a ticket from the Navajo tribal park, and some areas may be visited only with a Navajo guide.",
+  },
+
+  "hawaiian-islands": {
+    seeing:
+      "The Hawaiian Islands are a chain of volcanic islands in the middle of the Pacific, forming the U.S. state of Hawaii. There are 8 main inhabited islands; the largest and youngest is the Island of Hawaii (the \"Big Island\") at the south-east end, where Mauna Loa and Kīlauea are active volcanoes. Toward the north-west the islands get older, lower and smaller, and finally sink below the surface as reefs and seamounts.",
+    formation:
+      "The Hawaiian Islands sit above a roughly fixed mantle hot spot. The Pacific plate moves north-west at about 7 to 10 cm a year, carrying away, one by one like a conveyor belt, the volcanoes that form over the hot spot — leaving a chain of volcanoes that gets progressively younger from north-west to south-east. Each island above the surface is one or several shield volcanoes, built up gradually by layer on layer of very fluid basalt lava, with gentle slopes and a shield-like outline.",
+    observation:
+      "From the air the Hawaiian Islands are a line of green islands in the deep-blue ocean, aligned north-west to south-east. The Big Island is largest, showing the gentle rounded outlines of several shield volcanoes and the craters at their summits; the windward north-east slopes are lush and cloudy, the leeward south-west slopes dry and yellow. The older islands (such as Kauai) are deeply eroded into ridges and gorges, with tall cliffs along the coast. Pale coral reefs fringe the islands.",
+    distinguish:
+      "The Hawaiian Islands are \"hot spot volcanic islands\", different from the \"island arcs\" of Japan or Indonesia: an island arc sits on a subduction zone, is made of a row of andesitic volcanoes, and has explosive eruptions and earthquakes; Hawaii sits on a hot spot in the middle of a plate, erupts mostly fluid basalt, is relatively gentle, and is strung out in a line with age changing regularly along it.",
+    concept:
+      "The Hawaiian Islands are classic evidence for \"plate motion plus a fixed hot spot\" — if the hot spot is still and the plate moves, it should leave a chain of volcanoes with ages changing along it, and the Hawaiian–Emperor chain does exactly that; the bend in the chain even records a change in the plate's direction of motion about 47 million years ago. A common misconception is that Hawaii is on a plate boundary: it is far from any plate boundary, in the interior of the Pacific plate.",
+    history:
+      "Polynesian voyagers reached and settled the Hawaiian Islands more than a thousand years ago and developed an independent Hawaiian Kingdom. After Europeans arrived in 1778, disease, trade and outside powers deeply changed the society; the islands were annexed by the United States in 1898 and became the 50th state in 1959. Today the Hawaiian language and culture are undergoing a revival, and volcanic activity, tourism and military bases are focal points of the islands' economy and land questions.",
+  },
 };
