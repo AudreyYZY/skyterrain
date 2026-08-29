@@ -2473,6 +2473,198 @@ const HUDSON_BAY: TerrainEntry = {
   source: "哈得孙湾：坐落在加拿大地盾中央凹陷里的一片巨大、很浅的内海，通过哈得孙海峡与大西洋相连；曾被冰盖压低，如今周边地面正快速回弹（Natural Resources Canada）",
 };
 
+const BAFFIN_ISLAND: TerrainEntry = {
+  id: "baffin-island",
+  nameZh: "巴芬岛",
+  nameEn: "Baffin Island",
+  category: "island",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "奥丁山（奥尤伊图克国家公园）", lon: -65.35, lat: 67.05, elevation: 2143, kind: "peak" },
+  bbox: [-83.0, 61.0, -61.0, 74.0],
+  axis: [[-79.0, 62.0], [-63.0, 73.0]],
+  viewFrom: 90,
+  label: { lon: -70.0, lat: 68.0, rotation: -40 },
+  source: "巴芬岛：加拿大最大、世界第五大岛；东缘是地盾岩石构成的高山，有花岗岩大崖壁、峡湾和冰帽，西侧是低平的地台（Natural Resources Canada）",
+};
+
+const ELLESMERE_ISLAND: TerrainEntry = {
+  id: "ellesmere-island",
+  nameZh: "埃尔斯米尔岛",
+  nameEn: "Ellesmere Island",
+  category: "island",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "巴伯峰（库蒂尼尔帕克国家公园）", lon: -75.9, lat: 81.9, elevation: 2616, kind: "peak" },
+  bbox: [-90.0, 76.0, -60.0, 83.5],
+  axis: [[-85.0, 77.0], [-65.0, 82.5]],
+  viewFrom: 200,
+  label: { lon: -78.0, lat: 80.0, rotation: 0 },
+  source: "埃尔斯米尔岛：加拿大最北的大岛，世界第十大岛；含加拿大东部最高峰巴伯峰（2616m）和大片冰帽，是极地荒漠（几乎不降水）（Parks Canada）",
+};
+
+const VANCOUVER_ISLAND: TerrainEntry = {
+  id: "vancouver-island",
+  nameZh: "温哥华岛",
+  nameEn: "Vancouver Island",
+  category: "island",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "金背山（斯特拉思科纳省立公园）", lon: -125.75, lat: 49.66, elevation: 2195, kind: "peak" },
+  bbox: [-128.5, 48.3, -123.0, 51.1],
+  axis: [[-123.5, 48.5], [-128.0, 50.9]],
+  viewFrom: 270,
+  label: { lon: -125.5, lat: 49.7, rotation: -55 },
+  source: "温哥华岛：不列颠哥伦比亚外海的大岛，山脊纵贯全岛，西岸多峡湾和温带雨林，东岸较平缓，省会维多利亚在南端（Natural Resources Canada）",
+};
+
+const PRINCE_EDWARD_ISLAND: TerrainEntry = {
+  id: "prince-edward-island",
+  nameZh: "爱德华王子岛",
+  nameEn: "Prince Edward Island",
+  category: "island",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "北岸沙丘（爱德华王子岛国家公园）", lon: -63.1, lat: 46.42, elevation: 10, kind: "dune" },
+  bbox: [-64.5, 45.9, -62.0, 47.1],
+  axis: [[-64.2, 46.2], [-62.2, 46.5]],
+  viewScale: 1.5,
+  label: { lon: -63.2, lat: 46.4, rotation: -20 },
+  source: "爱德华王子岛：圣劳伦斯湾里一座低平的岛，加拿大面积最小的省；基岩是红色砂岩，岸边有红土崖、沙嘴和沙丘（Natural Resources Canada）",
+};
+
+const BAY_OF_FUNDY: TerrainEntry = {
+  id: "bay-of-fundy",
+  nameZh: "芬迪湾",
+  nameEn: "Bay of Fundy",
+  category: "coast",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "霍普韦尔礁石（米纳斯湾一侧）", lon: -64.58, lat: 45.82, elevation: 0, kind: "escarpment" },
+  bbox: [-67.2, 44.5, -63.3, 46.2],
+  axis: [[-67.0, 44.7], [-63.7, 46.0]],
+  viewFrom: 200,
+  label: { lon: -65.5, lat: 45.3, rotation: -35 },
+  source: "芬迪湾：新斯科舍与新不伦瑞克之间的漏斗形海湾，潮差在湾顶米纳斯湾可达约16m，是世界上最大的潮差之一（Natural Resources Canada / 加拿大海洋局）",
+};
+
+const GASPE_PENINSULA: TerrainEntry = {
+  id: "gaspe-peninsula",
+  nameZh: "加斯佩半岛",
+  nameEn: "Gaspé Peninsula",
+  category: "coast",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "佩尔塞岩", lon: -64.212, lat: 48.523, elevation: 0, kind: "escarpment" },
+  bbox: [-67.5, 48.0, -64.0, 49.4],
+  axis: [[-67.2, 48.3], [-64.2, 49.0]],
+  viewFrom: 20,
+  label: { lon: -65.7, lat: 48.7, rotation: -20 },
+  pois: [
+    { name: "佩尔塞岩", lon: -64.212, lat: 48.523, note: "一整块带天然拱门的石灰岩海蚀柱" },
+    { name: "希克-乔克山（雅克-卡蒂埃山）", lon: -65.94, lat: 48.99, note: "阿巴拉契亚山脉在加拿大的最高点之一，1268m" },
+  ],
+  source: "加斯佩半岛：魁北克东端伸入圣劳伦斯湾的半岛，是阿巴拉契亚山脉的北端；海岸多断崖，佩尔塞岩是标志（Parks Canada / 魁北克）",
+};
+
+const NIAGARA_ESCARPMENT: TerrainEntry = {
+  id: "niagara-escarpment",
+  nameZh: "尼亚加拉断崖",
+  nameEn: "Niagara Escarpment",
+  category: "hills",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "尼亚加拉瀑布", lon: -79.0747, lat: 43.0828, elevation: 100, kind: "escarpment" },
+  bbox: [-84.0, 43.0, -78.0, 46.3],
+  axis: [[-79.0, 43.1], [-82.0, 46.0]],
+  viewFrom: 110,
+  label: { lon: -80.5, lat: 44.5, rotation: -55 },
+  pois: [
+    { name: "尼亚加拉瀑布", lon: -79.0747, lat: 43.0828, note: "河水从坚硬的白云岩崖顶跌下断崖" },
+    { name: "布鲁斯半岛", lon: -81.5, lat: 45.2, note: "断崖伸进休伦湖的一段，两侧水色不同" },
+  ],
+  source: "尼亚加拉断崖：一条长约725km的单面山（cuesta），从尼亚加拉延伸到布鲁斯半岛和马尼图林岛；坚硬的白云岩“帽岩”托住崖顶，尼亚加拉瀑布就跌落在这条崖上（联合国教科文组织生物圈保护区）",
+};
+
+const ALBERTA_BADLANDS: TerrainEntry = {
+  id: "alberta-badlands",
+  nameZh: "艾伯塔荒地",
+  nameEn: "Alberta Badlands",
+  category: "hills",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "恐龙省立公园（红鹿河谷）", lon: -111.49, lat: 50.76, elevation: 700, kind: "escarpment" },
+  bbox: [-113.5, 49.7, -110.0, 51.7],
+  axis: [[-112.5, 50.0], [-110.5, 51.5]],
+  viewScale: 1.5,
+  label: { lon: -111.5, lat: 50.8, rotation: 0 },
+  source: "艾伯塔荒地：草原平原被红鹿河及其支流切出的一带侵蚀沟壑地，出露晚白垩世岩层，是世界上最丰富的恐龙化石产地之一（恐龙省立公园为世界自然遗产）",
+};
+
+const MANICOUAGAN_RESERVOIR: TerrainEntry = {
+  id: "manicouagan-reservoir",
+  nameZh: "曼尼古根环形湖",
+  nameEn: "Manicouagan Reservoir",
+  category: "lake",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "勒内-勒瓦瑟尔岛", lon: -68.72, lat: 51.38, elevation: 350, kind: "lake" },
+  bbox: [-69.5, 50.6, -68.0, 52.1],
+  axis: [[-69.2, 50.8], [-68.3, 51.9]],
+  viewScale: 1.4,
+  label: { lon: -68.7, lat: 51.4, rotation: 0 },
+  source: "曼尼古根环形湖（“魁北克之眼”）：约2.14亿年前一次大陨石撞击留下的环形构造，被水库淹没后呈标志性的环状湖，中央是勒内-勒瓦瑟尔岛（加拿大地质调查局）",
+};
+
+const ATHABASCA_SAND_DUNES: TerrainEntry = {
+  id: "athabasca-sand-dunes",
+  nameZh: "阿萨巴斯卡沙丘",
+  nameEn: "Athabasca Sand Dunes",
+  category: "desert",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "威廉河沙丘", lon: -108.9, lat: 59.28, elevation: 220, kind: "dune" },
+  bbox: [-110.2, 59.0, -107.5, 59.6],
+  axis: [[-109.8, 59.1], [-108.0, 59.4]],
+  viewScale: 1.4,
+  label: { lon: -108.9, lat: 59.3, rotation: 0 },
+  source: "阿萨巴斯卡沙丘：萨斯喀彻温省阿萨巴斯卡湖南岸约100km的活动沙丘带，是世界上纬度最高的大型活动沙丘；沙来自冰期湖相沉积（萨斯喀彻温省立公园）",
+};
+
+const LAKE_WINNIPEG: TerrainEntry = {
+  id: "lake-winnipeg",
+  nameZh: "温尼伯湖",
+  nameEn: "Lake Winnipeg",
+  category: "lake",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "温尼伯湖", lon: -97.2, lat: 52.1, elevation: 217, kind: "lake" },
+  bbox: [-99.5, 50.3, -96.0, 54.0],
+  axis: [[-98.3, 50.6], [-97.2, 53.8]],
+  viewFrom: 90,
+  label: { lon: -97.5, lat: 52.3, rotation: -78 },
+  source: "温尼伯湖：曼尼托巴省一片面积很大但很浅的湖（平均水深约12m），是冰期巨大的阿加西湖的残留；纳凯湖东岸是地盾、西岸是平原（Natural Resources Canada）",
+};
+
+const NAHANNI: TerrainEntry = {
+  id: "nahanni",
+  nameZh: "南纳汉尼河峡谷",
+  nameEn: "Nahanni Canyons",
+  category: "gorge",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "弗吉尼亚瀑布（纳伊利乔）", lon: -125.755, lat: 61.603, elevation: 500, kind: "gorge" },
+  bbox: [-127.5, 60.7, -123.0, 62.3],
+  axis: [[-126.8, 61.0], [-123.5, 62.0]],
+  viewFrom: 20,
+  label: { lon: -125.5, lat: 61.6, rotation: -20 },
+  pois: [
+    { name: "弗吉尼亚瀑布", lon: -125.755, lat: 61.603, note: "南纳汉尼河上的大瀑布，落差约96m" },
+    { name: "第一峡谷", lon: -124.5, lat: 61.3, note: "南纳汉尼河切穿山脉、深逾千米的峡谷" },
+  ],
+  source: "南纳汉尼河峡谷：南纳汉尼河横切马更些山脉切出的一系列深逾千米的峡谷，含落差约96m的弗吉尼亚瀑布；纳汉尼国家公园保护区是1978年首批世界自然遗产之一（Parks Canada）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -2538,6 +2730,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   TORNGAT_MOUNTAINS, LONG_RANGE_MOUNTAINS,
   INTERIOR_PLAINS_CA, HUDSON_BAY_LOWLANDS, SAINT_LAWRENCE_LOWLANDS,
   GREAT_SLAVE_LAKE, GREAT_BEAR_LAKE, MACKENZIE_RIVER, HUDSON_BAY,
+  BAFFIN_ISLAND, ELLESMERE_ISLAND, VANCOUVER_ISLAND, PRINCE_EDWARD_ISLAND,
+  BAY_OF_FUNDY, GASPE_PENINSULA, NIAGARA_ESCARPMENT, ALBERTA_BADLANDS,
+  MANICOUAGAN_RESERVOIR, ATHABASCA_SAND_DUNES, LAKE_WINNIPEG, NAHANNI,
 ];
 
 /**
@@ -2612,6 +2807,14 @@ const WIDE_VIEW: Record<string, number> = {
   "great-bear-lake": 2.0,
   "mackenzie-river": 2.6,
   "hudson-bay": 2.7,
+  "baffin-island": 2.6,
+  "ellesmere-island": 2.5,
+  "vancouver-island": 2.0,
+  "bay-of-fundy": 1.9,
+  "gaspe-peninsula": 1.9,
+  "niagara-escarpment": 2.2,
+  "lake-winnipeg": 2.3,
+  "nahanni": 1.7,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,

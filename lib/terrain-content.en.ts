@@ -2179,4 +2179,184 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The shores of Hudson Bay are where the Cree and the Inuit have lived for generations. In 1610 Henry Hudson's ship entered these waters (he was cast adrift in the bay by a mutiny the following year), and the bay is named for him. The Hudson's Bay Company, founded in 1670 with the whole drainage basin as its trading territory, ran fur-trade posts on the bay shore for over two centuries and was one of the most far-reaching commercial institutions in Canadian history.",
   },
+
+  "baffin-island": {
+    seeing:
+      "Baffin Island is in the Canadian Arctic Archipelago in the north-east — Canada's largest island and the fifth largest in the world. Its eastern edge is a high mountain belt of hard Shield rock, with large ice caps, deep fjords and several granite cliff faces over a kilometre high (Mount Thor, well known to climbers, is here); the western half of the island is low, flat sedimentary platform. The capital, Iqaluit, is in the south-east.",
+    formation:
+      "The mountain belt of Baffin Island is the eastern edge of the Canadian Shield, raised and then repeatedly scoured by glaciers. Quaternary ice sheets cut hard down the old river valleys, shaping the mountains into horns and arêtes and hollowing the valleys into U-shapes cut below sea level to make fjords. The mountains still hold remnant ice such as the Barnes Ice Cap. The western lowland is unraised platform, covered by near-horizontal Palaeozoic rock.",
+    observation:
+      "From the air the east coast of Baffin Island is a high mountain belt in white and grey-black — ice caps, snowfields and bare black peaks — its coastline cut to pieces by long deep fjords. Inland and westward the mountains drop quickly to a rolling, lake-strewn brown tundra platform. The whole island is essentially treeless, tundra in summer and snow in winter.",
+    distinguish:
+      "Baffin Island and Ellesmere Island further north are both large Arctic Archipelago islands characterised by Shield mountains and ice caps; Ellesmere is further north, drier (a polar desert), and more ice-capped; Baffin is a bit lower in latitude with better-developed fjords and cliffs. Versus Greenland: Greenland's centre is a single huge ice sheet covering the whole island; Baffin Island has only scattered ice caps.",
+    concept:
+      "The big cliff faces of eastern Baffin Island show the power of glaciers to carve hard rock: a face like Mount Thor's — nearly vertical and over a kilometre high — is where a glacier removed one whole side of a rock body along its joints. A common misconception is to picture all Arctic islands as low, flat ice fields — the eastern edge of Baffin Island is genuinely rugged alpine country.",
+    history:
+      "Baffin Island is the home of the Inuit; the name comes from William Baffin, an English navigator who searched for the Northwest Passage nearby in the early 17th century. The area also has earlier Dorset and Thule culture sites. In 1999 the territory of Nunavut was created out of the Northwest Territories as a majority-Inuit self-governing region, with Iqaluit as its capital. Today the island's economy is traditional fishing and hunting, government, and a growing tourism sector.",
+  },
+
+  "ellesmere-island": {
+    seeing:
+      "Ellesmere Island is Canada's northernmost large island and the tenth largest in the world; its northern tip is the closest land to the North Pole apart from Greenland. It has the highest peak in eastern North America, Barbeau Peak (2,616 m), large ice caps, and Quttinirpaaq National Park. Precipitation is extremely low year-round — this is a \"polar desert\" — but it is so cold that the little snow that falls does not melt and builds up into ice over the years.",
+    formation:
+      "The mountains of northern Ellesmere Island (the Innuitian Mountains) are an ancient fold belt, connected to the mountains of northern Greenland; raised, then heavily reworked by glaciers. The centre and south have sedimentary platform and structural basins. The large ice caps, and the \"fjord glaciers\" that flow through passes right down into the fjords, are ice that has never fully disappeared since the last ice age. In recent years several large \"ice shelves\" (thick ice attached to the shore and floating on the sea) have broken up.",
+    observation:
+      "From the air Ellesmere Island is white, grey and black: continuous ice caps and snowfields, black bare ridges poking out of the ice, glacier tongues reaching into deep-blue fjords. Because it hardly ever snows, many slopes are dry, shattered bare rock (\"polar desert\"), a grey-brown colour. Sea ice offshore is present year-round. In summer there is 24-hour daylight, in winter 24-hour night.",
+    distinguish:
+      "Ellesmere Island and Baffin Island to the south are both large Arctic Archipelago islands: Ellesmere is further north, colder, drier, more ice-capped, and almost unpopulated; Baffin is a bit lower in latitude, with better-developed fjords and cliffs, and a capital city. Versus northern Greenland: their mountains are the two halves of the same fold belt, later separated by a strait.",
+    concept:
+      "Ellesmere Island shows that a \"desert\" is defined by precipitation, not temperature: annual precipitation here is about as low as parts of the Sahara, making it a true desert — just a cold one. A common misconception is that the polar regions are \"all ice everywhere\" — much of a polar desert is dry gravel and bare rock, and ice exists only where it can accumulate.",
+    history:
+      "Ellesmere Island has seasonal-camp sites of the Inuit and earlier Palaeo-Eskimo cultures; today there are only a very few outposts (Grise Fiord, an Inuit community, and Eureka, a weather and research station). In the early 20th century it was a jumping-off point for expeditions to the North Pole. Quttinirpaaq National Park (\"top of the world\") protects the far north of the island.",
+  },
+
+  "vancouver-island": {
+    seeing:
+      "Vancouver Island lies off the coast of British Columbia and is the largest island on the west coast of North America. A mountain spine runs the length of it, dividing it in two: the west coast faces the open Pacific, with fjords, heavy rain and tall temperate rainforest; the east coast is in the lee, gentler, drier and where most people live, with the provincial capital, Victoria, at the southern tip. The Strait of Georgia separates the island from the mainland.",
+    formation:
+      "Vancouver Island is an accreted terrane \"pasted\" onto the western edge of North America — it began as a volcanic island arc and submarine plateau in the ocean and was carried into North America by plate motion and shoved up. The island's mountains are made of volcanic and sedimentary rock, later carved by glaciers into horns, U-shaped valleys and the west-coast fjords. The lower ground on the eastern side is covered by glacial and marine loose sediment.",
+    observation:
+      "From the air Vancouver Island is a long island trending north-west to south-east, high in the middle and low on both sides. The west coast is extremely intricate, with fjords reaching into forested mountains and many small islands and reefs offshore; the east coast is far straighter, with towns, farmland and harbours visible. There is remnant snow and a few alpine lakes along the spine.",
+    distinguish:
+      "Vancouver Island faces the mainland Coast Mountains across the strait and looks similar (both have fjords and rainforest), but the Coast Mountains are an uplifted granite batholith, higher and more continuous; Vancouver Island is an accreted terrane and its mountains are lower. Versus the islands of Japan: both are islands near a subduction zone, but Japan's islands are dominated by active volcanoes and earthquakes, while Vancouver Island has no active volcanoes (though it is on a major earthquake zone).",
+    concept:
+      "Vancouver Island is an example for understanding \"terrane accretion\": the western edge of North America is not original — over the past 200 million years it has grown westward as island arcs and submarine plateaus drifted in from the Pacific and welded on, one after another, and Vancouver Island is one of the later additions. A common misconception is that a continental margin has always been where it is now — it has actually been \"growing\" seaward.",
+    history:
+      "Vancouver Island is home to the Nuu-chah-nulth, Kwakwaka'wakw and Coast Salish peoples, who built rich carving and seafaring cultures around cedar and marine resources. In the 18th century Spanish and British navigators (including George Vancouver) reached and surveyed the coast. Coal mining and logging grew along the east coast in the 19th century. Today the island's economy is forestry, fishing, tourism and the service sector around Victoria.",
+  },
+
+  "prince-edward-island": {
+    seeing:
+      "Prince Edward Island is a crescent-shaped, low, flat island in the Gulf of St. Lawrence, the smallest and most densely populated province of Canada. Its bedrock is red sandstone, so the soil, the cliffs and even some of the beaches are a distinct rust-red. There are no hills; the highest point is only a few tens of metres, and the surface is covered with farmland (especially potato fields) and small patches of woodland.",
+    formation:
+      "The red sandstone of Prince Edward Island was deposited about 300 million years ago in rivers and floodplains under a hot, dry climate, stained red by iron oxide, and then hardened. This rock is soft and easily eroded by waves and wind — the north shore has red-clay sea cliffs, and the eroded sand is carried by longshore currents into long spits and dunes that close off some bays into lagoons. Ice-age ice sheets planed the island's surface smooth, and after they retreated rising sea level separated the island from the mainland.",
+    observation:
+      "From the air Prince Edward Island is a long, thin green land cut into many small bays, its edges rimmed with a striking red — red-clay cliffs and red beaches. The north shore has a nearly continuous white-gold dune belt, with narrow blue lagoons on its inner side. Inland is a neat grid of fields, dark-red tilled ground alternating with green crops.",
+    distinguish:
+      "Prince Edward Island and its neighbours Nova Scotia and New Brunswick are all in the Appalachian geological region, but those two have hills and hard-rock coasts; Prince Edward Island is all soft red sandstone, extremely low and flat, its coast dominated by erosion and deposition landforms. Compared with the red-clay coasts of the Shandong Peninsula: a similar mechanism (soft rock + wave erosion + spits), but Prince Edward Island's red comes from the ancient red-bed sandstone itself.",
+    concept:
+      "Prince Edward Island shows how the colour and hardness of rock decide the look of a coast: the soft red sandstone gives both the colour and, because it erodes easily, a north shore that keeps retreating while building spits and dunes downdrift. A common misconception is that the red beaches are pollution or man-made — it is the natural result of iron oxide from the sandstone being ground up and mixed into the sand.",
+    history:
+      "Prince Edward Island is the traditional land of the Mi'kmaq, who call it \"Epekwitk\". French (Acadian) settlers arrived in the 18th century; it passed to Britain after 1763 and took its present name. In 1864 the conference to discuss uniting the British North American colonies was held at Charlottetown on the island, seen as one of the starting points of Canadian Confederation. Today the island's economy is potato farming, fishing (lobster, mussels) and tourism.",
+  },
+
+  "bay-of-fundy": {
+    seeing:
+      "The Bay of Fundy, between Nova Scotia and New Brunswick, is a long, narrow, funnel-shaped bay that gets shallower toward its head. It is known for having among the largest tides in the world — at the Minas Basin at the head of the bay, the water level can change by about 16 metres between low and high tide, the height of a five-storey building. At low tide broad red-brown mudflats are exposed; at high tide the same ground is deep water.",
+    formation:
+      "The funnel shape of the Bay of Fundy, combined with its length, happens to be close to the natural oscillation period of the tide in the North Atlantic, producing \"resonance\" — each tidal pulse is amplified, and rises higher toward the head of the bay. This is a classic case of tidal range magnified by shape. The bay's red cliffs are Triassic red sandstone and basalt; the Hopewell Rocks are stacks left where waves hollowed out the soft rock, leaving isolated pillars capped with vegetation.",
+    observation:
+      "From the air the same stretch of Fundy coast looks completely different at different times: at low tide, endless water-sheened red-brown mudflat with tidal creeks branching across it; at high tide, the mudflat is drowned and only the cliffs and rock pillars stand above the water. The water in the bay is turbid (strong tidal currents stir up sediment), and a clear scoured intertidal zone is visible on shore.",
+    distinguish:
+      "The large tides of the Bay of Fundy have the same cause as those of the Severn Estuary in Britain and the Bay of Saint-Malo in France — a funnel-shaped bay plus tidal resonance. Compared with an ordinary bay: most bays have a tidal range of a metre or two; the Bay of Fundy reaches a dozen or more metres, the result of shape \"focusing\" tidal energy. Tidal power generation has been tested here for this reason.",
+    concept:
+      "The Bay of Fundy shows that tidal range is not fixed: it depends on whether the shape and size of a bay is \"in tune\" with the tidal wave. A common misconception is that tidal range is set directly by the Moon and Sun — the bodies provide the basic tidal force, but the actual range at a given place is set mainly by how the local coast and seafloor amplify or damp the tidal wave.",
+    history:
+      "The shores of the Bay of Fundy are the traditional territory of the Mi'kmaq and the Wolastoqiyik (Maliseet). In the 17th century French (Acadian) settlers built dykes to reclaim the salt marshes along the bay, creating a distinctive farming landscape; in 1755 the British authorities carried out a mass deportation of the Acadians (the \"Grand Dérangement\"). Today the Bay of Fundy is known for its tides, whale watching, its fossil coast (Joggins Fossil Cliffs, a World Heritage site), and tidal-energy research.",
+  },
+
+  "gaspe-peninsula": {
+    seeing:
+      "The Gaspé Peninsula is a piece of land at the eastern end of Quebec reaching into the Gulf of St. Lawrence, the northernmost stretch of the Appalachian Mountains on the North American mainland. Its interior is the Chic-Choc Mountains (among the highest parts of the Appalachians in Canada), with a rare patch of alpine tundra above the tree line and caribou in summer. At the tip of the peninsula is the landmark Percé Rock — a single block of limestone with a natural arch, standing in the sea.",
+    formation:
+      "The rock of the Gaspé Peninsula is folded and thrust-faulted layers squeezed up in the Appalachian orogeny (a series of continental collisions between about 500 and 300 million years ago), mostly marine limestone, sandstone and shale, rich in Palaeozoic fossils (the fish fossils of Miguasha are a World Heritage site). The mountains were then long eroded to a middle-height range, and Quaternary glaciers rounded and steepened the valleys and coast. Percé Rock is what is left where waves cut through a limestone ridge section by section along its joints.",
+    observation:
+      "From the air the Gaspé Peninsula is a forested, valley-cut range of middle height, dropping eastward toward the sea. The north coast is a straight, steep cliff coast, with the highway hugging the base of the cliffs; the south and east coasts are more intricate, with spits (such as the Barachois de Malbaie) and sea-erosion landforms like Percé Rock. The highest summits of the Chic-Chocs are pale, treeless tundra.",
+    distinguish:
+      "The Gaspé Peninsula, Nova Scotia and Newfoundland's Long Range Mountains are different stretches of the Appalachians in Canada. Gaspé is characterised by folded-and-thrust sedimentary mountains, fossils and Percé Rock; the Long Range by exposed mantle rock and fjord lakes. Compared with the main body of the U.S. Appalachians: Gaspé is further north, more reworked by glaciers, and has alpine tundra.",
+    concept:
+      "The Gaspé Peninsula (especially Miguasha) is important because its Devonian rock preserves many fossils from the transition \"from fish toward four-limbed animals\" — a key step in vertebrates moving from water onto land. A common misconception is to take the arch of Percé Rock for something carved by people: it was cut naturally by waves along cracks in the rock, and one day the arch will collapse.",
+    history:
+      "The Gaspé Peninsula is the traditional land of the Mi'kmaq; the word \"Gaspé\" comes from the Mi'kmaq language and means \"land's end\". In 1534 Jacques Cartier raised a cross at Gaspé Bay claiming the land for the King of France, usually taken as the start of French colonisation in North America. From the 18th to the 20th century the peninsula's coast lived by cod fishing and processing. Today its tourism centres on Forillon National Park, Percé, and the scenic road around the peninsula.",
+  },
+
+  "niagara-escarpment": {
+    seeing:
+      "The Niagara Escarpment is a continuous slope about 725 km long, running from around Niagara on the U.S.–Canada border, curving north-west across southern Ontario, out to the Bruce Peninsula and Manitoulin Island in Lake Huron. It has a gentle slope on one side and a cliff tens to over a hundred metres high on the other — a classic \"cuesta\". Niagara Falls is where the Niagara River drops over this escarpment.",
+    formation:
+      "The Niagara Escarpment is the result of differential erosion of a set of Palaeozoic rock layers that dip gently inland: the top layer is hard dolostone \"cap rock\", underlain by softer shale. The soft rock erodes and retreats faster, the hard cap rock loses support and falls away in blocks, so the cliff stays vertical and slowly retreats inland as a whole. The lip of Niagara Falls is \"eating\" its way upstream at less than a metre a year.",
+    observation:
+      "From the air the Niagara Escarpment is a clear curved \"step\" in the flat farmland and lake shores of southern Ontario — tableland and woodland on the top side, lowland, orchards (the vineyards of the Niagara Peninsula) and towns on the base side. At the Bruce Peninsula the escarpment forms the peninsula's east coast directly, a white cliff plunging into Georgian Bay, with very pale blue-green water at its foot.",
+    distinguish:
+      "The Niagara Escarpment has the same origin as many \"cuestas\" in North America — an asymmetric slope eroded out of gently dipping hard rock; the U.S. Midwest has several parallel cuestas. Versus a fault scarp (such as the eastern face of the Sierra Nevada): a fault scarp forms directly from a block moving along a fault; the Niagara Escarpment has no major fault and is purely differential erosion plus cap-rock retreat.",
+    concept:
+      "The Niagara Escarpment is a living sample of \"cap-rock-controlled cliff retreat\", and Niagara Falls is one point where the process is happening now. A common misconception is that the falls' position is fixed — it is continuously retreating upstream, and in a few thousand years it will reach Lake Erie, at which point the falls will disappear. The escarpment is a UNESCO Biosphere Reserve, because its cliff strip preserves old-growth forest that has vanished from the surrounding plain.",
+    history:
+      "Along the Niagara Escarpment is the land of the Neutral, Huron, Anishinaabe and other Native nations, and the gaps between the top and base of the escarpment were old travel routes. In the 19th century people used the falls and other drops on the escarpment for mills and early hydroelectric plants — Niagara was one of the first places in North America to develop hydropower on a large scale. Today the roughly 900 km Bruce Trail follows the escarpment, the longest continuous trail in Canada.",
+  },
+
+  "alberta-badlands": {
+    seeing:
+      "The Alberta Badlands are a stretch of eroded, gullied, barely vegetated \"bad land\" on the Canadian prairie, mainly along the Red Deer River and its tributaries, with Drumheller and Dinosaur Provincial Park at its core. Where the flat prairie surface is cut open, it exposes banded grey, brown and white rock walls, pointed \"hoodoos\", and bare rounded knolls. This is one of the richest sources of dinosaur fossils in the world.",
+    formation:
+      "The rock of the Alberta Badlands was laid down about 70 million years ago in Late Cretaceous rivers, deltas and coasts — mudstone, sandstone and coal seams, with the bones of the dinosaurs, turtles and crocodiles of the time buried in it. At the end of the ice age, glacial meltwater cut hard down a few channels, carving deep valleys into the flat prairie; the semi-arid climate and sparse vegetation since then have let rain and snowmelt keep scouring the exposed soft rock into gullies, ridges and hoodoos, and keep exposing fresh fossils.",
+    observation:
+      "From the air the Alberta Badlands are a set of brown-grey \"scars\" suddenly cut into an endless green-gold plain — on both sides of a winding river valley are dense erosion gullies, striped rock walls and clusters of pointed hoodoos. On the valley floor is a meandering river and a thin oasis-like strip of poplar woodland. Driving across the prairie, you often don't see this hidden world until you reach the edge.",
+    distinguish:
+      "The Alberta Badlands and the U.S. Badlands National Park (South Dakota), and China's Yuanmou earth forest, form by a similar process — soft sedimentary rock intensely eroded by rain in a semi-arid climate with little plant cover. The main difference is the age and content of the rock: the Alberta Badlands' Cretaceous layers are known for dinosaur fossils; the Yuanmou forest is younger river-and-lake sediment. Versus the Grand Canyon: the Grand Canyon is one big river cutting deep into hard rock; the badlands are large areas of soft rock cut to pieces by sheet and gully erosion.",
+    concept:
+      "\"Badlands\" is a landform term for dense gully terrain eroded by water in soft sedimentary rock without protective vegetation — the name comes from early travellers finding such ground \"hard to cross and useless\". A common misconception is to take a hoodoo for a carved sculpture: it is a natural pillar left where a harder rock on top protects the soft rock beneath while everything around washes away.",
+    history:
+      "This area is the territory of the Blackfoot Confederacy and other prairie Native nations. In the late 19th century, geological surveys and railway building turned up large numbers of dinosaur bones, followed by fossil excavation that continues today — many dinosaur skeletons in museums around the world came from here. Coal was also mined around Drumheller in the early 20th century. Today Dinosaur Provincial Park (a World Heritage site) and the Royal Tyrrell Museum of Palaeontology are the focus.",
+  },
+
+  "manicouagan-reservoir": {
+    seeing:
+      "Manicouagan Reservoir is in central Quebec — from the air or from orbit it is a nearly perfect ring-shaped lake, about 70 km across, with a large round island (René-Levasseur Island) in the middle, which is why it is called the \"Eye of Quebec\". It is the structure left by a huge meteorite impact about 214 million years ago; a later reservoir dam raised the water level and flooded the ring of low ground into this circle of lake.",
+    formation:
+      "About 214 million years ago, an asteroid roughly 5 km across struck here, blasting out a crater about 100 km wide. The heat and pressure of the impact melted rock and made the crater floor \"rebound\" upward into a central high. Hundreds of millions of years of erosion since (especially Quaternary glaciers) have planed the crater down a great deal, leaving only a ring of lower, softer rock in the impact structure. When a dam was built in the 1970s, the water collected in this ring of low ground and the central high became an island.",
+    observation:
+      "From the air Manicouagan is, among the countless irregular lakes of the Canadian Shield, one abrupt, smooth-edged circle — a ring of blue water in dark forest, with a large dark landmass (the island) in the middle. The ring is so large you have to zoom out to see all of it. The other lakes of the surrounding Shield are chaotic in shape, in sharp contrast with this circle.",
+    distinguish:
+      "Manicouagan, like other large impact structures on Earth (Vredefort in South Africa, the Chesapeake Bay crater in the U.S.), can only be recognised as a \"ring structure\" and not as an actual crater, because of its great age and heavy erosion. Versus a crater lake: a crater lake is water in a round pit made by a volcanic eruption or collapse; Manicouagan is a ring lake made by impact plus erosion plus an artificial reservoir.",
+    concept:
+      "Manicouagan shows that ancient meteorite craters mostly do not look like \"craters\" at the surface — hundreds of millions of years of erosion strips away the crater rim and floor, leaving only the deformed rock underneath (an \"impact structure\") and a ring of landform difference. Its perfect circle appears only because the reservoir water happens to flood the ring of low ground and the central uplift stands as an island — a coincidence of natural structure and human engineering.",
+    history:
+      "The Manicouagan area is the traditional land of the Quebec Innu. The chain of hydroelectric stations on the Manicouagan River (especially Daniel-Johnson Dam, a huge multiple-arch dam) is an important part of Quebec's hydropower system, and building it in the 1970s created today's reservoir. The impact crater itself was confirmed by geologists in the 1960s, and has since been an important site for studying impact structures and dating (it is often used to mark an end-Triassic extinction event).",
+  },
+
+  "athabasca-sand-dunes": {
+    seeing:
+      "The Athabasca Sand Dunes are on the south shore of Lake Athabasca in northern Saskatchewan — a belt of active dunes about 100 km long, and the highest-latitude large active dune field in the world (about 59°N). All around is boreal conifer forest and Shield rock, and in the middle is a field of moving sand hills, some up to 30 m high, with unusual \"gushing sand\" features and several plant species found nowhere else.",
+    formation:
+      "The sand comes from the last ice age. A large lake at the front of the ice sheet (glacial Lake Athabasca) accumulated a great deal of fine sand; when the ice retreated and the lake level dropped, the sand was exposed and then carried and piled into dunes by strong winds blowing off the lake. The dunes are still slowly moving south-east under the wind, burying the forest at their edge a little at a time. Being remote and roadless, the dune field is essentially in a natural state.",
+    observation:
+      "From the air the Athabasca Sand Dunes are a striking pale-yellow band between dark-green forest and blue lake — crescent and transverse dunes lined up along the prevailing wind, a gentle windward slope and a steep lee slope. Between the dunes are half-buried conifers and small streams and wetlands where groundwater emerges. Along the north edge the sand runs straight into Lake Athabasca, forming beaches and spits.",
+    distinguish:
+      "The dune forms of the Athabasca Sand Dunes are similar to those of most great deserts (the Sahara, the Taklamakan), but the origin and setting are entirely different: those are the product of long wind erosion and deposition in a dry climate; the Athabasca dunes are a \"periglacial aeolian\" landform of glacial-lake sediment reworked by wind, sitting in a humid forest belt, sustained by limited but steady wind plus the fact that no vegetation can take root on moving sand.",
+    concept:
+      "The Athabasca Sand Dunes show that \"desert landform\" is not the same as \"desert climate\": there is plenty of rain here and forest all around, yet because there is abundant loose sand to move and a steady wind, classic active dunes form. A common misconception is that seeing dunes means the local area is extremely dry — judging a dune means looking at \"sand supply plus wind\", not necessarily at rainfall.",
+    history:
+      "This area is the traditional land of the Denesuline (Chipewyan), who hunt and fish along Lake Athabasca. Being remote, the dunes were not systematically studied until the 20th century, and in 1992 they were made a provincial park (reached only by floatplane or boat). They are a point of botanical interest for their endemic plants (such as Athabasca campion).",
+  },
+
+  "lake-winnipeg": {
+    seeing:
+      "Lake Winnipeg is in central Manitoba, a lake that is very large in area but very shallow (average depth only about 12 m). It is long and narrow north–south, pinched in the middle by a narrows into a north and a south basin. It is the remnant of a much larger ice-age lake, glacial Lake Agassiz. Today its water finally reaches Hudson Bay by way of the Nelson River.",
+    formation:
+      "At the end of the last ice age, meltwater at the south-western edge of the North American ice sheet was dammed by ice and ponded up across what is now Manitoba, Minnesota and North Dakota into \"glacial Lake Agassiz\", larger in area than all today's Great Lakes combined. The ice dam burst and released water many times, and the lake level rose and fell repeatedly. About 8,000 to 9,000 years ago the ice finally retreated and the land rebounded, Lake Agassiz drained, and only a few lowest spots kept remnant lakes — Lake Winnipeg, Lake Manitoba, Lake Winnipegosis. The thick lake clay on the lakebed and the surrounding plain is what Lake Agassiz left behind.",
+    observation:
+      "From the air Lake Winnipeg is a north–south, relatively straight-edged sheet of pale blue water, with the rock and forest of the Canadian Shield on the east shore (an intricate shoreline with many small islands and rock points) and the flat farming plain on the west shore (a straight shoreline with beaches and lagoons). The lake is so shallow that a strong wind stirs up the bottom sediment, and from the air it is often a turbid yellow-green.",
+    distinguish:
+      "Lake Winnipeg, Great Slave Lake and Great Bear Lake are all large Canadian lakes, but the latter two are deep and cold and in the Shield; Lake Winnipeg is extremely shallow, warmer, straddling the boundary between the Shield and the plain, surrounded by farmland. Versus the Great Lakes: Lake Winnipeg is the remnant of Lake Agassiz, the Great Lakes are basins gouged directly by glaciers — both connected to glaciation, by different mechanisms; Lake Winnipeg is far shallower.",
+    concept:
+      "Lake Winnipeg reminds us that many large lakes we see today are just a small remnant of a bigger ice-age water body that \"shrank\". To identify such a remnant lake, look for a wide area of flat lake clay and rings of former shorelines on the surrounding plain — Lake Agassiz's old shorelines are still clearly visible on the Manitoba plain. Lake Winnipeg's shallowness is one reason its water quality is especially sensitive to nutrient input from farming in the watershed.",
+    history:
+      "The Lake Winnipeg area is home to the Anishinaabe, Cree, Dakota and Métis, and the lake and connecting rivers were a north–south travel artery. In the 18th and 19th centuries the fur trade's \"York boats\" ran this water route between the prairies and Hudson Bay. In the 20th century hydro development on the Nelson River regulated the lake's outflow. Today the lake area has commercial fishing and resorts, and has long faced problems with blue-green algae blooms.",
+  },
+
+  nahanni: {
+    seeing:
+      "The South Nahanni River flows out of the Mackenzie Mountains in the Northwest Territories, cutting straight across several mountain ranges and carving a series of canyons over a kilometre deep. On the river is Virginia Falls (Náįlįcho in the local Dene language), about 96 m high — twice the height of Niagara Falls. The area also has limestone caves, hot springs and nodular \"karst towers\". Nahanni National Park Reserve became one of the first four natural World Heritage sites in the world in 1978.",
+    formation:
+      "The canyons of the South Nahanni have an unusual feature: the river existed and followed its course before the mountains rose; the ranges then rose slowly along faults, and the river held its line by cutting down hard, sawing straight through the rising mountains to make canyons that cross the ridges (an \"antecedent river\"). The cut layers are visible on the canyon walls. The karst comes from soluble limestone exposed in the area.",
+    observation:
+      "From the air the South Nahanni is a deeply incised meandering river in forested mountains — the valley is narrow and deep, and the river swings back and forth strongly on its floor (\"incised meanders\", meaning it kept its bends while cutting down through slow uplift). At Virginia Falls the river is split into two streams by a rock pillar as it drops into a deep pool, and immediately downstream enters the deepest canyon (\"Fourth Canyon\").",
+    distinguish:
+      "The Nahanni canyons and the Grand Canyon in the U.S. are both cut by a big river, but the Grand Canyon is a river cutting into a plateau of little-deformed flat layers; the Nahanni is an antecedent river cutting straight through folded mountains as they rise, so its canyon walls are tilted and folded, and the valley keeps its incised meanders. Compared with the Yangtze Three Gorges: the Three Gorges is also a river cutting across a mountain belt, by a similar mechanism, but wider and with far more water.",
+    concept:
+      "The South Nahanni is a classic case of an \"antecedent river\": to tell whether a river predates the mountains, see whether it cuts \"unreasonably\" straight through a range rather than going around it — if a river can cut through a ridge that is rising, it usually means its rate of down-cutting kept pace with the uplift, and its course was set before the mountains rose.",
+    history:
+      "The Nahanni watershed is the traditional land of the Dene Nahʔą people, and \"Nahanni\" comes from their name for themselves. In the early 20th century, several mysterious disappearances and deaths of gold prospectors in the valley gave the area legends like \"Headless Valley\" and drew explorers. In 1976, at the urging of Indigenous people, the national park reserve was created, and it was inscribed as a World Heritage site in 1978; in 2009 the park was greatly enlarged to protect the whole upper South Nahanni watershed.",
+  },
 };
