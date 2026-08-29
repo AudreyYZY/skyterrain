@@ -3575,4 +3575,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Caledonian Canal, designed by the engineer Thomas Telford and completed in 1822, uses the natural lochs of the Great Glen, plus dug channels and a series of locks, to let ships cross the Highlands without going round the dangerous seas of northern Scotland. The Loch Ness \"monster\" legend has made this a tourist hotspot since the 1930s.",
   },
+
+  "loch-lomond": {
+    seeing:
+      "Loch Lomond, not far north-west of Glasgow, is the largest lake by surface area in Great Britain. Its distinctive feature is being \"one loch across two worlds\": the northern half is boxed into the Scottish Highlands, narrow and deep with steep mountains on both sides; the southern half enters the Lowlands, the loch suddenly widening, shallow, dotted with dozens of small islands. \"The bonnie banks of Loch Lomond\" is a famous Scottish song.",
+    formation:
+      "Loch Lomond straddles the Highland Boundary Fault — the point where the hard ancient metamorphic rock of the Highlands meets the softer sedimentary rock of the Lowlands. During the ice ages a large glacier flowed south along this line of weakness: in the northern Highland section it gouged a narrow valley deep and straight; on reaching the softer rock of the southern section it spread out fan-wise, gouging a broad shallow basin, and the drumlin ridges and erosion-resistant rock knolls it left as it retreated became the islands in the loch.",
+    observation:
+      "From the air Loch Lomond looks like a long-handled ladle with its bowl to the north — actually the other way: a deep-blue narrow loch to the north, driving straight into the mountains, and to the south an open, island-studded, pale-blue sheet of water with gentle farmland shores. The Highland Boundary Fault runs across the loch roughly through its southern part.",
+    distinguish:
+      "Loch Lomond is different from the purely glacial narrow lochs of the Scottish Highlands: half of it is in the Highlands and half in the Lowlands, and in the one loch you see two completely different lake forms — \"deep narrow trough\" and \"broad shallow island-studded\". This is precisely because it straddles a major geological boundary.",
+    concept:
+      "Loch Lomond is a case study in a geological boundary controlling landform: glaciers and rivers often erode along the contact between two rock types (often also a fault), because the contact zone is shattered and there is an abrupt change in hardness. So if a lake or valley \"looks different on each half\", it is probably straddling a geological boundary. A common misconception is to attribute the abrupt change in lake form to later human engineering.",
+    history:
+      "The fault line Loch Lomond lies on has historically been roughly the divide, in language and social structure, between the Scottish \"Highlands\" and \"Lowlands\". From the 18th century, being close to Glasgow and scenic, it became one of the earliest destinations for mass tourism. In 2002 Loch Lomond and the Trossachs became Scotland's first national park.",
+  },
+
+  "lough-neagh": {
+    seeing:
+      "Lough Neagh, in the centre of Northern Ireland, is about 392 km² in area — the largest lake by area in the UK and in the whole of the British Isles. But it is very shallow, only about 9 m deep on average, and you cannot see the far shore from any bank. Rivers from five of Northern Ireland's six counties eventually flow into this lake, which is drained by the River Bann to the north.",
+    formation:
+      "Lough Neagh sits in a large structural basin. About 60 million years ago thick flood basalt was erupted around Antrim (the same lavas that form the Giant's Causeway); the weight of this lava on the crust, together with regional downwarping, made the central area subside slowly into a saucer-shaped basin. Water gathered in the basin to form this large, shallow lake.",
+    observation:
+      "From the air Lough Neagh is a near-circular large body of water with a smooth outline right in the middle of Northern Ireland, surrounded by low flat farmland and a few small towns, with rivers flowing in from all sides. The shores are mostly reed and wet grassland, with no cliffs. Off the south-western shore you can see large areas of active lake-sand extraction.",
+    distinguish:
+      "Lough Neagh and Loch Lomond in Scotland are both large, but completely different in origin: Loch Lomond is a deep, long lake gouged by a glacier along a fault; Lough Neagh is a saucer-shaped shallow basin lake formed by large-scale crustal subsidence — round, shallow and flat. It is more like Lake Chad in Africa, a \"structural basin filled with water\".",
+    concept:
+      "Lough Neagh is a case study in load subsidence: when a thick, heavy mass of material is piled onto the surface in a short time (here, hundreds of metres of basalt), the crust beneath bends down slowly, like a compressed spring cushion, forming a basin. To recognise such a lake, look at whether it is large, round and shallow, with thick volcanic rock or sediment around it and no obvious glacial or fault marks. A common misconception is that a large lake must have been gouged by a glacier.",
+    history:
+      "Lough Neagh's eel fishery has continued for centuries and is one of the largest wild-eel fisheries in Europe, long run by a co-operative of local fishers. In Irish legend the lake is the hole left when the giant Finn McCool tore up a lump of earth to throw at a rival (the lump landing in the sea to form the Isle of Man). Large-scale sand extraction from the lake has drawn environmental controversy in recent years.",
+  },
+
+  "river-thames": {
+    seeing:
+      "The River Thames is about 346 km long, rising in the Cotswold Hills of south-west England and flowing south-east and then east through Oxford and London, finally reaching the North Sea through a wide funnel-shaped estuary. London is built on this river — specifically at the furthest point ships could reach upstream, which was also the lowest point at which the river could be bridged in early times.",
+    formation:
+      "The present course of the Thames formed step by step over hundreds of thousands of years. In several Pleistocene ice ages, the ice sheet advancing from the north blocked its earlier, more northerly course and pushed it onto today's more southerly line. On the soft rock it flows over (clay, sand) the river shaped a broad valley and a series of \"river terraces\" — much of the City of London stands on these gravel terraces a few metres above the present river, with drier ground. Below Teddington the river is affected by ocean tides, rising and falling twice a day.",
+    observation:
+      "From the air the upper Thames is a small river winding quietly through green pasture; on entering London the channel widens, held between stone embankments and swinging in big S-bends, dense city on both banks; below London the estuary opens quickly into a broad expanse of shallow water and mudflats, with large salt marshes and port facilities on either side. The Thames Barrier spanning the river in east London stands out.",
+    distinguish:
+      "By length, the Severn is the longest river in Britain; the Thames is the longest river entirely within England. Compared with the Severn Estuary, the Thames estuary has a far smaller tidal range and no bore, but its shipping and historical importance are greater.",
+    concept:
+      "The Thames valley's \"river terraces\" are a case study in a river leaving steps as it cuts down: a river builds a floodplain at a certain level in a certain period; then, because sea level falls or the land rises, the river cuts down again, leaving the old floodplain up high as a terrace; repeated, this makes a flight of steps on each side of the valley. To recognise terraces, look for a few near-horizontal benches on the valley sides, covered with river gravel. A common misconception is to take a terrace for an artificial embankment or road.",
+    history:
+      "The Thames is the axis of London's two thousand years of history: the Romans built Londinium (the forerunner of London) at the fordable/bridgeable point here. From the Middle Ages into modern times the Port of London was for a while the busiest port in the world. In the 19th century the river was extremely polluted (the \"Great Stink\" of 1858), prompting Bazalgette's large sewer system. The Thames Barrier, completed in 1982, protects London from flooding by storm surge on top of a high tide.",
+  },
+
+  "river-severn": {
+    seeing:
+      "The River Severn (Welsh: Afon Hafren) is about 354 km long — the longest river in the United Kingdom. It rises on Plynlimon in mid-Wales, winds through the Welsh hills, and on entering England passes through Shropshire, Worcester and Gloucester before reaching the Severn Estuary. This estuary has one of the highest tidal ranges in the world, up to about 15 m at spring tides, and a phenomenon called the \"Severn Bore\" — a wall of water travelling upstream on the flood tide.",
+    formation:
+      "The Severn's original upper course flowed north into the Irish Sea. In the last ice age, the ice sheet coming from the north blocked its way around Shropshire, the water ponded up as a lake against the ice dam, and finally overflowed through a low col and cut down hard to the south — this is today's Ironbridge Gorge, a young, steep gorge out of keeping with the gentle land on either side. After the ice retreated the river did not return to its old course but kept to this newly cut line to the sea. The Severn Estuary is a large funnel narrowing inland, so the incoming tide is squeezed higher and higher, producing the great tidal range and the bore.",
+    observation:
+      "From the air the upper Severn is a clear stream in the Welsh hills; at Shropshire it suddenly enters a stretch of steep-walled, wooded gorge (Ironbridge Gorge), with a famous iron bridge across it; below the gorge the river meanders broadly across the plains of western England; below Gloucester the channel widens quickly into a funnel-shaped estuary full of sandbanks and mudflats.",
+    distinguish:
+      "The Severn and the Thames are the two longest rivers in Britain: the Severn is longer, rises in Wales, and its estuary has a huge tidal range and a bore; the Thames is entirely in England, its estuary gentle, but it passes through the capital. The Severn's Ironbridge Gorge and the Great Glen are both unusual valleys, but the Great Glen is a fault valley while Ironbridge Gorge was cut by the overflow of an ice-dammed lake.",
+    concept:
+      "The Severn's Ironbridge Gorge is a case study in a valley cut by an ice-dammed lake overflow: when an ice sheet blocks a river, the water ponds up as a lake against the ice, and once it overflows at a low point it cuts down fast and hard along the new line, carving a deep, young gorge; after the ice retreats the river often \"sticks with\" the new course. To recognise this kind of valley, look at whether it is young and steep, cuts across high ground it should have gone around, and has old lake sediments upstream. A common misconception is that all gorges were cut slowly by a river over millions of years.",
+    history:
+      "Ironbridge Gorge is regarded as one of the birthplaces of the Industrial Revolution: in the early 18th century Abraham Darby first smelted iron on a large scale with coke rather than charcoal here; in 1779 the world's first cast-iron bridge crossed the Severn here. The gorge and its industrial remains were inscribed as a World Heritage Site in 1986. Two large bridges were later built across the Severn Estuary linking England and Wales.",
+  },
+
+  "the-fens": {
+    seeing:
+      "The Fens, in eastern England around the Wash, are the largest area of low flat land in Britain — much of it only a metre or two above sea level, some of it below. Today it is endless arable fields cut by dead-straight ditches, one of the most fertile farming regions in Britain. But before it was drained, this was a vast reed marsh and seasonally flooded wetland.",
+    formation:
+      "The Fens are a shallow basin subsiding slowly; when sea level rose after the ice age the sea came in for a time, and river silt and thick accumulations of peat then filled it to a near-horizontal wetland: marine clay on the seaward side, thick freshwater peat inland. From the 17th century people (initially under a Dutch engineer) dug dead-straight main drains, built embankments and pumped the water away with windmills (later steam engines, then diesel and electric pumps). Once the peat is drained and exposed to air it oxidises and shrinks, so the ground sinks further — which is why many fields today are lower than the water in the ditches beside them, kept dry only by the pumps.",
+    observation:
+      "From the air the Fens are absolutely flat, dark arable land divided into large blocks by geometrically straight ditches and roads, with almost no relief; two near-parallel artificial rivers (the Old and New Bedford Rivers) run dead straight across. Here and there is an isolated low mound — an \"island\" in the former marsh, on which medieval towns (such as Ely, literally \"eel island\") were built.",
+    distinguish:
+      "The Fens and the polders of the Netherlands are almost the same landform and the same technology: farmland below sea level kept going by artificial drainage and embankment. Unlike a natural delta plain (the Nile, the Yangtze delta), the \"dryness\" of the Fens today is entirely artificial — stop pumping and it would turn back into marsh.",
+    concept:
+      "The Fens are a case study in subsidence of peatland after drainage: peat is undecomposed plant remains with a very high water content; once drained and aerated, microbes rapidly break it down to carbon dioxide, its volume shrinks sharply and the ground sinks with it, and the more it is drained the lower it goes. To recognise this land, look at whether the fields are lower than the river beside them and whether wooden posts once driven into the peat now \"stand\" above the ground. A common misconception is that low land was always this low.",
+    history:
+      "The draining of the Fens began with projects funded by the Earl of Bedford and others in the 17th century, and over centuries completely transformed this land and the society of the \"Fen people\" who lived by fishing, fowling and reed-cutting. In the 20th century almost all the natural wetland became farmland; in recent years some areas (such as the Great Fen) are being deliberately restored from farmland to wetland, as carbon stores and nature reserves.",
+  },
+
+  "the-broads": {
+    seeing:
+      "The Broads, in Norfolk and Suffolk in eastern England, are a network of about sixty shallow lakes (locally \"broads\") and the slow rivers that connect them. The land is extremely low and flat, the water open, and it is the largest protected wetland in Britain, managed as the equivalent of a national park, and a popular area for boating holidays.",
+    formation:
+      "The shallow lakes of the Broads were long taken for natural lakes, until in the 1950s researchers confirmed, from the dead-straight edges and vertical banks of the lake floors and from historical documents, that they are in fact deep pits left by large-scale medieval peat digging (about the 12th to 14th centuries). At that time the area was densely populated and short of firewood, and peat was the main fuel. Later, as the land sank relative to the sea and after several storm surges, the water table rose and these abandoned peat pits were flooded and joined into today's group of shallow lakes.",
+    observation:
+      "From the air the Broads are an expanse of shallow water, reed bed and wet grassland strung together by countless ditches and a few winding slow rivers, with dozens of squarish, regular-edged shallow lakes scattered through it — it is exactly this \"too regular\" shape that gives away their artificial origin. The water's edge is dotted with windmills (mostly drainage \"wind pumps\") and boat moorings.",
+    distinguish:
+      "The Broads and the Fens are both low-lying wetlands of eastern England, but the Fens were \"pumped dry\" into farmland, while the Broads were \"flooded\" into a group of lakes and kept as wetland. The shallow lakes of the Broads are flooded man-made pits, clearly different in shape from natural oxbow or glacial lakes.",
+    concept:
+      "The Broads are a case study in landforms created by human activity: medieval peat digging was a purely economic activity, yet centuries later it left a whole system of lakes and waterways on the surface, which became an important ecosystem and a national park. To recognise this kind of \"man-made lake\", look at whether the edges are unusually straight, the depth uniform, and whether there is a historical record of digging or mining. A common misconception is to treat all lakes as naturally formed.",
+    history:
+      "The confirmation that the Broads are of artificial origin came mainly from the research of the historian Joyce Lambert and colleagues in the 1950s. In the Middle Ages the area belonged to large estates such as Norwich Cathedral, and peat extraction was on a huge scale. From the 19th century the Broads became a resort for sailing and river holidays. The Broads Authority was established in 1989, giving it status equivalent to a national park.",
+  },
+
+  "isle-of-skye": {
+    seeing:
+      "The Isle of Skye, in north-west Scotland, is the largest island of the Inner Hebrides, known for extremely rugged mountains and changeable weather (the name may relate to \"cloud\" or \"mist\" in Old Norse). The island has two groups of mountains of completely opposite character: the Black Cuillin, a ring of sharp, dark, near-vertical rock peaks; and the Red Cuillin, a set of rounded pink hills.",
+    formation:
+      "About 58 million years ago, during the rifting of the North Atlantic, there was a large magma chamber beneath Skye. The gabbro (a dark, coarse-grained, very hard rock) that crystallised earlier and deeper in the chamber was later uplifted and exposed, and glaciers cut it into sharp peaks and deep valleys — the Black Cuillin; the later, more acidic part of the chamber crystallised as granite, which weathers differently and was worn into the rounded Red Cuillin. The north of the island is a large basalt lava plateau, and on the Trotternish peninsula the basalt cap sits on weak Jurassic mudstone and has slid slowly down the dip as a whole, forming the longest landslip landscape in Britain (the Old Man of Storr, the Quiraing and other strange features are on the landslip).",
+    observation:
+      "From the air the Isle of Skye has an extremely broken outline, with several long deep sea inlets cutting it into peninsulas. In the south-centre is the ring of jagged dark rock walls of the Black Cuillin around a glacial valley, with the rounded Red Cuillin hills beside it. The north is tiered green basalt plateau, and on the east side of the Trotternish ridge in the north-east is an area of collapsed, jumbled rock blocks and isolated pinnacles.",
+    distinguish:
+      "Skye's Cuillin mountains are different from the gneiss and greywacke mountains of the Scottish Highlands: they are Palaeogene igneous rock (gabbro, granite), young, hard and unusual in composition, cut especially sharp by glaciers. Compared with the Mournes of Northern Ireland (also Palaeogene granite), Skye's gabbro Black Cuillin are more precipitous.",
+    concept:
+      "Skye's Trotternish ridge is a case study in large landslide (rock-slide) landforms: a hard, heavy rock layer (basalt) sits on a weak, deformable one (Jurassic mudstone), and if the lower one tilts slightly or is undercut by erosion, the hard layer above slides down as a whole, slowly, breaking into blocks, leaving rows of back-tilted rock steps, isolated pinnacles and hollows on the slope. To recognise this, look at whether there is a large area of \"jumbled\", blocky, stepped ground below a cliff. A common misconception is to take a pinnacle left by a landslip for a volcanic neck or an erosion remnant.",
+    history:
+      "Skye was long the country of the MacLeod and MacDonald clans, with clan strongholds such as Dunvegan Castle on the island. In 1746 the fugitive \"Young Pretender\", Prince Charles, escaped via Skye with the help of Flora MacDonald, a story told in the \"Skye Boat Song\". The 19th-century Highland Clearances greatly reduced the island's population, and the \"Land League\" struggles of the late 19th century helped drive legislation to protect small tenants. Tourism is Skye's mainstay industry today.",
+  },
+
+  "outer-hebrides": {
+    seeing:
+      "The Outer Hebrides (Gaelic: Na h-Eileanan Siar) are a chain of islands about 200 km long off the north-west of Scotland, from Lewis and Harris in the north, through North Uist, Benbecula and South Uist, to Barra in the south. This is the main area where Scottish Gaelic is spoken in daily life, and one of the places where some of the oldest rocks in Europe come to the surface.",
+    formation:
+      "The main body of the islands is \"Lewisian gneiss\" — a suite of metamorphic rock formed about 3 billion years ago (Archaean) and repeatedly deeply buried and reworked under heat and pressure, among the oldest known rocks in Europe. It is extremely hard and erosion-resistant. Ice-age ice sheets polished this ancient low rock land and gouged countless shallow hollows, which filled with water — creating the distinctive \"knock and lochan\" surface of bare rock knolls alternating with small lochs, with hardly a tree in sight. On the western Atlantic coast, shell sand blown ashore forms a fertile low grassland called \"machair\".",
+    observation:
+      "From the air the Outer Hebrides are a low, pitted island land covered in countless small lochs, almost treeless, with an extremely intricate coastline; the east coast is rocky with fiord-like inlets, the west coast a continuous white sand beach, dunes and, behind them, the flat bright-green machair grassland. Southern Harris has a stretch of almost entirely bare rock, a \"lunar surface\".",
+    distinguish:
+      "The Outer Hebrides and Skye are neighbours but completely different in landform: Skye is a high mountainous island of Palaeogene igneous rock; the Outer Hebrides are a low flat rock land of Archaean gneiss, characterised by \"countless small lochs plus Atlantic beach grassland\". The rock here is far older than anywhere else in Britain.",
+    concept:
+      "The Outer Hebrides are a case study in ice-scoured rock surface (knock and lochan): when an ice sheet flows over a low-relief hard bedrock, it rounds off the rises (knocks) and gouges the more closely jointed, slightly softer spots into a scatter of shallow disordered hollows, which fill with water after the ice retreats. To recognise this, look for many small lochs with random orientation and no connection between them, separated by bare rounded rock knolls. A common misconception is that so many lakes must be river-cut or man-made.",
+    history:
+      "The Calanais standing stones on Lewis are one of the most important Neolithic megalithic sites in Britain, older than Stonehenge. In the Middle Ages the Outer Hebrides belonged to the \"Kingdom of the Isles\", closely tied to Norway, and only passed to Scotland in 1266. Harris Tweed, the local hand-woven cloth, is protected by law and must be hand-woven in islanders' homes.",
+  },
 };

@@ -3941,6 +3941,125 @@ const GREAT_GLEN: TerrainEntry = {
   source: "大峡谷：沿“大峡谷断层”（一条大型走滑断层，左行错移约100km）发育的笔直谷地，后经冰川深挖；串起尼斯湖等，喀里多尼亚运河把它们连通（BGS）",
 };
 
+const LOCH_LOMOND: TerrainEntry = {
+  id: "loch-lomond",
+  nameZh: "洛蒙德湖",
+  nameEn: "Loch Lomond",
+  category: "lake",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "洛蒙德湖（南部宽湖面）", lon: -4.60, lat: 56.08, elevation: 8, kind: "lake" },
+  bbox: [-4.78, 55.98, -4.53, 56.43],
+  axis: [[-4.62, 56.42], [-4.58, 56.00]],
+  viewScale: 1.6,
+  label: { lon: -4.60, lat: 56.15, rotation: -6 },
+  source: "洛蒙德湖：大不列颠岛面积最大的湖（约71km²），跨“高地边界断层”——北段窄深（在高地里），南段宽浅、多岛（在低地沉积区）；苏格兰第一个国家公园（NatureScot / BGS）",
+};
+
+const LOUGH_NEAGH: TerrainEntry = {
+  id: "lough-neagh",
+  nameZh: "内伊湖",
+  nameEn: "Lough Neagh",
+  category: "lake",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "内伊湖", lon: -6.42, lat: 54.63, elevation: 12, kind: "lake" },
+  bbox: [-6.58, 54.47, -6.28, 54.79],
+  viewScale: 1.6,
+  label: { lon: -6.42, lat: 54.63, rotation: 0 },
+  source: "内伊湖：面积约392km²，是英国和不列颠群岛面积最大的湖，但很浅（平均约9m）；位于安特里姆玄武岩下沉形成的构造洼地里，由班恩河排水（Geological Survey of Northern Ireland）",
+};
+
+const RIVER_THAMES: TerrainEntry = {
+  id: "river-thames",
+  nameZh: "泰晤士河",
+  nameEn: "River Thames",
+  category: "river",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "伦敦市中心河段", lon: -0.12, lat: 51.508, elevation: 2, kind: "meander" },
+  bbox: [-2.05, 51.30, 0.95, 51.95],
+  axis: [[-1.95, 51.68], [0.85, 51.46]],
+  viewScale: 2.2,
+  label: { lon: -0.6, lat: 51.55, rotation: -12 },
+  source: "泰晤士河：约346km，发源于科茨沃尔德丘陵，向东经伦敦注入北海；泰丁顿以下受潮汐影响，伦敦建在河的最下游可架桥处、也是潮汐河口的顶端（Ordnance Survey / BGS）",
+};
+
+const RIVER_SEVERN: TerrainEntry = {
+  id: "river-severn",
+  nameZh: "塞文河",
+  nameEn: "River Severn / Afon Hafren",
+  category: "river",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "铁桥峡（Ironbridge Gorge）", lon: -2.485, lat: 52.627, elevation: 40, kind: "meander" },
+  bbox: [-3.95, 51.55, -2.10, 52.65],
+  axis: [[-3.78, 52.47], [-2.55, 51.60]],
+  viewScale: 2.0,
+  label: { lon: -2.9, lat: 52.1, rotation: -60 },
+  source: "塞文河：约354km，是英国最长的河，发源于中威尔士的普林利蒙山，经铁桥峡注入塞文河口；河口潮差居世界前列（大潮约15m），有“塞文涌潮”（BGS / Ordnance Survey）",
+};
+
+const THE_FENS: TerrainEntry = {
+  id: "the-fens",
+  nameZh: "沼泽地",
+  nameEn: "The Fens",
+  category: "plain",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "伊利一带（沼泽地中部）", lon: 0.10, lat: 52.40, elevation: 1, kind: "delta" },
+  bbox: [-0.45, 52.20, 0.55, 53.10],
+  viewScale: 2.2,
+  label: { lon: 0.10, lat: 52.55, rotation: 0 },
+  source: "沼泽地：英格兰东部沃什湾周围的一大片低平湿地，很多地方接近或低于海平面；自17世纪起被人工排水开垦、至今靠泵站维持，是英国最肥沃的耕地之一（Ordnance Survey / BGS）",
+};
+
+const THE_BROADS: TerrainEntry = {
+  id: "the-broads",
+  nameZh: "布罗兹湿地",
+  nameEn: "The Broads",
+  category: "plain",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "威罗比一带（布罗兹湿地）", lon: 1.50, lat: 52.68, elevation: 2, kind: "meander" },
+  bbox: [1.28, 52.55, 1.78, 52.88],
+  viewScale: 1.7,
+  label: { lon: 1.50, lat: 52.68, rotation: 0 },
+  source: "布罗兹湿地：诺福克—萨福克的一片浅湖与河道网络，1950年代查明这些浅湖是中世纪挖泥炭的坑、后因水位相对上升而被淹没形成；英国最大的受保护湿地（Broads Authority / BGS）",
+};
+
+const ISLE_OF_SKYE: TerrainEntry = {
+  id: "isle-of-skye",
+  nameZh: "斯凯岛",
+  nameEn: "Isle of Skye / An t-Eilean Sgitheanach",
+  category: "island",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "库林山（黑库林）", lon: -6.220, lat: 57.211, elevation: 992, kind: "island" },
+  bbox: [-6.80, 57.00, -5.85, 57.70],
+  viewScale: 1.6,
+  label: { lon: -6.25, lat: 57.35, rotation: 0 },
+  pois: [
+    { name: "特罗特尼什山脊（老人峰 / Quiraing）", lon: -6.18, lat: 57.53, note: "英国最长的滑坡体——玄武岩盖层沿软弱的侏罗纪岩层下滑" },
+  ],
+  source: "斯凯岛：内赫布里底最大的岛。黑库林是约5800万年前岩浆房的辉长岩（尖锐），红库林是花岗岩（浑圆）；特罗特尼什是英国最长的滑坡地貌（NatureScot / BGS）",
+};
+
+const OUTER_HEBRIDES: TerrainEntry = {
+  id: "outer-hebrides",
+  nameZh: "外赫布里底群岛",
+  nameEn: "Outer Hebrides / Na h-Eileanan Siar",
+  category: "island",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "刘易斯岛与哈里斯岛", lon: -6.85, lat: 58.00, elevation: 60, kind: "island" },
+  bbox: [-7.75, 56.75, -6.15, 58.55],
+  axis: [[-7.30, 56.90], [-6.30, 58.45]],
+  viewScale: 1.9,
+  label: { lon: -7.1, lat: 57.7, rotation: -30 },
+  source: "外赫布里底群岛：长约200km的岛链，主体是刘易斯片麻岩——约30亿年前的太古宙岩石，是欧洲最古老的岩石之一；冰川刨蚀出“岩丘-小湖”地貌，大西洋岸有贝壳沙草原“machair”（NatureScot / BGS）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -4033,6 +4152,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   EXMOOR, CHEVIOT_HILLS, SOUTH_DOWNS, CHILTERNS,
   WHITE_CLIFFS_OF_DOVER, JURASSIC_COAST, GIANTS_CAUSEWAY, SEVEN_SISTERS,
   CORNWALL_COAST, PEMBROKESHIRE_COAST, GOWER_PENINSULA, CHEDDAR_GORGE, GREAT_GLEN,
+  LOCH_LOMOND, LOUGH_NEAGH, RIVER_THAMES, RIVER_SEVERN,
+  THE_FENS, THE_BROADS, ISLE_OF_SKYE, OUTER_HEBRIDES,
 ];
 
 /**
@@ -4150,6 +4271,13 @@ const WIDE_VIEW: Record<string, number> = {
   "cornwall-coast": 2.0,
   "pembrokeshire-coast": 1.8,
   "great-glen": 1.9,
+  "river-thames": 2.3,
+  "river-severn": 2.2,
+  "the-fens": 2.1,
+  "loch-lomond": 1.5,
+  "lough-neagh": 1.5,
+  "outer-hebrides": 2.0,
+  "isle-of-skye": 1.6,
   // 大洋洲 / 新西兰
   "aoraki-southern-alps": 2.4,
   "kaikoura-ranges": 1.7,

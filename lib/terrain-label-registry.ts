@@ -177,6 +177,12 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "giants-causeway": "national",
   "white-cliffs-of-dover": "national",
   "great-glen": "national",
+  "river-thames": "national",
+  "river-severn": "national",
+  "loch-lomond": "national",
+  "lough-neagh": "national",
+  "isle-of-skye": "national",
+  "outer-hebrides": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
