@@ -21,7 +21,7 @@
 ## 范围
 
 - **已有**: 亚洲（中国 84 + 日本 26）+ 大洋洲（澳大利亚 22 + 新西兰 30）+
-  北美洲（美国 26 + 加拿大 25）+ 欧洲（英国 33 + 冰岛 28），中英双语，共 274 个
+  北美洲（美国 26 + 加拿大 25）+ 欧洲（英国 33 + 冰岛 28 + 瑞士 27），中英双语，共 301 个
   - 地形集选取标准与分类定义见 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点；
     分类判据；`settlement` 人文层的收录方法）
 - **进行中**: 全球主要地形（按大洲分组，逐国推进，每国 ≥25 个），见
@@ -105,7 +105,7 @@ features/
 
 ## 当前阶段
 
-**地图/交互/双语已完成**：地形注册表（见 §范围，当前 274 个）+ 数据驱动相机 +
+**地图/交互/双语已完成**：地形注册表（见 §范围，当前 301 个）+ 数据驱动相机 +
 标签分级（双语）+ 地形抬升高亮 + 自然语音（跟随语言）+ 逐句高亮 + 真实航班航线 +
 纪录片编辑式界面。
 
@@ -174,8 +174,13 @@ features/
   行为与之前等价。
 - **Phase B 逐国加地形，每国 ≥25 个 T1/T2/T3**：
   - ✅ 美国 26 · ✅ 加拿大 25（`north-america` 共 51）· ✅ 日本 26（`asia` 84→110）
-    · ✅ 新西兰 30（`oceania` 22→52）· ✅ 英国 33（`europe` 0→33，首个欧洲国家）· ✅ 冰岛 28（`europe` 33→61）
-  - 优先序（待做）：瑞士 → 挪威 → 法国 → 意大利 → 西班牙 → 德国 → …
+    · ✅ 新西兰 30（`oceania` 22→52）· ✅ 英国 33（`europe` 0→33，首个欧洲国家）
+    · ✅ 冰岛 28（`europe` 33→61）· ✅ 瑞士 27（`europe` 61→88）
+  - 优先序（待做）：挪威 → 法国 → 意大利 → 西班牙 → 德国 → …
+  - **瑞士**：`country: "switzerland"`；多语地名按 swisstopo 用法并列（DE/FR/IT）。
+    山峰/山系→`mountain_system`（含孤峰马特洪峰、逆冲断层构造区）、冰川→`valley`、
+    冰蚀谷→`valley`、湖→`lake`、瀑布/隘谷→`gorge`、中央高地→`hills`。博登湖主湖区无
+    正式国界，按中性事实表述。
   - **冰岛**：`country: "iceland"`；无主权争议。火山锥→`mountain_system`、破火山口/地热盆地→`basin`、
     裂谷→`valley`、冰帽→`plateau`、外冲平原→`plain`、瀑布/峡谷→`gorge`。近年火山活动
     （雷克雅内斯/格林达维克）按 IMO 口径事实性简述。
@@ -218,7 +223,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 
 ## 地形集 / 标签 / 区域高亮
 
-- **`TERRAIN_REGISTRY`（当前 274 个，见 §范围）= 单一真实源**：主要地貌 + 少量人文聚落。
+- **`TERRAIN_REGISTRY`（当前 301 个，见 §范围）= 单一真实源**：主要地貌 + 少量人文聚落。
   `TerrainCategory`：mountain_system / plateau / basin / plain / hills / desert / lake /
   river / valley / gorge / island / grassland / coast / inselberg / settlement。
   **选取标准与分类判据见 `docs/terrain-taxonomy.md`**（勿凭感觉加条目/改分类）。
