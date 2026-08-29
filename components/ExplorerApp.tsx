@@ -40,6 +40,7 @@ import {
 import { resolveTravelGuide, travelGuideToSections } from "@/lib/travel-lesson";
 import { travelRailGroups } from "@/lib/travel-rail";
 import { createTravelNarration } from "@/lib/travel-speak";
+import TravelPoiMarkers from "@/components/TravelPoiMarkers";
 import type { PanelSection } from "@/components/ReadingPanel";
 import {
   REGIONS,
@@ -955,6 +956,13 @@ export default function ExplorerApp() {
             activeId={travelId}
             language={language}
             onSelect={handleSelectCity}
+          />
+        )}
+        {mode === "travel" && (
+          <TravelPoiMarkers
+            mapRef={mapRef}
+            city={travelId ? getCityById(travelId) ?? null : null}
+            language={language}
           />
         )}
         {terrainMode === "ellipsoid" && (

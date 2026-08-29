@@ -5,6 +5,17 @@
 
 export type PlaceTier = "capital" | "major" | "notable";
 
+export type PoiKind = "landmark" | "district" | "nature" | "transport";
+
+/** 攻略里提到的地点 —— 选中城市时在地图上标注（非导航精度，城市尺度取景够用） */
+export interface CityPoi {
+  nameZh: string;
+  nameEn: string;
+  lon: number;
+  lat: number;
+  kind: PoiKind;
+}
+
 export interface CityEntry {
   id: string;
   nameZh: string;
@@ -14,6 +25,8 @@ export interface CityEntry {
   lon: number;
   lat: number;
   airport?: { iata: string; nameZh: string; nameEn: string; lon: number; lat: number };
+  /** 攻略正文提到的主要地点（选中该城市时标注在地图上） */
+  pois?: CityPoi[];
   /** 相机：城市上空斜视角。缺省用 DEFAULT_CITY_VIEW。 */
   view?: { heightM?: number; pitchDeg?: number; headingDeg?: number };
   source: string;

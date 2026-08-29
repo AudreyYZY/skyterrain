@@ -15,6 +15,7 @@ import {
   COUNTRY_OVERVIEWS,
   COUNTRY_TO_CONTINENT,
 } from "../lib/places-registry.ts";
+import { POIS_BY_CITY } from "../lib/travel-pois.ts";
 import { REGIONS } from "../lib/regions.ts";
 import { TRAVEL_CONTENT_ZH } from "../lib/travel-content.zh.ts";
 import { TRAVEL_CONTENT_EN } from "../lib/travel-content.en.ts";
@@ -58,6 +59,22 @@ for (const c of CITY_REGISTRY) {
 
   if (!hasZh(c.id)) (CONTENT_REQUIRED ? fail : warn)(`${c.id}: no zh travel-content`);
   if (!hasEn(c.id)) (CONTENT_REQUIRED ? fail : warn)(`${c.id}: no en travel-content`);
+
+  // POI：坐标合法 + 大致落在城市附近（±3.5°，容纳周边一日游景点）
+  const pois = POIS_BY_CITY[c.id] ?? [];
+  for (const p of pois) {
+    if (!p.nameZh || !p.nameEn) fail(`${c.id} POI: 缺中/英名`);
+    if (p.lat < -90 || p.lat > 90 || p.lon < -180 || p.lon > 180)
+      fail(`${c.id} POI "${p.nameEn}": bad coord ${p.lat},${p.lon}`);
+    else if (Math.abs(p.lat - c.lat) > 3.5 || Math.abs(p.lon - c.lon) > 3.5)
+      fail(`${c.id} POI "${p.nameEn}": 离城市中心过远 (${p.lat},${p.lon} vs ${c.lat},${c.lon})`);
+  }
+}
+
+let poiCount = 0;
+for (const [cityId, pois] of Object.entries(POIS_BY_CITY)) {
+  poiCount += pois.length;
+  if (!seen.has(cityId)) fail(`POIS_BY_CITY "${cityId}" 不在 CITY_REGISTRY`);
 }
 
 for (const o of COUNTRY_OVERVIEWS) {
@@ -68,6 +85,6 @@ for (const o of COUNTRY_OVERVIEWS) {
 }
 
 console.log(
-  `\n${CITY_REGISTRY.length} 城市, ${COUNTRY_OVERVIEWS.length} 概览, ${failures} 项异常`,
+  `\n${CITY_REGISTRY.length} 城市, ${COUNTRY_OVERVIEWS.length} 概览, ${poiCount} POI, ${failures} 项异常`,
 );
 process.exit(failures > 0 ? 1 : 0);
