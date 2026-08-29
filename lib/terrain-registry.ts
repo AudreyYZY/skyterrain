@@ -4061,6 +4061,125 @@ const OUTER_HEBRIDES: TerrainEntry = {
 };
 
 // ============================================================
+// 冰岛（regionId: "europe"，country: "iceland"）
+// 坐标据 Icelandic Meteorological Office（Veðurstofa Íslands）/
+// National Land Survey of Iceland / Institute of Earth Sciences /
+// Vatnajökull National Park / UNESCO
+// ============================================================
+
+const HEKLA: TerrainEntry = {
+  id: "hekla",
+  nameZh: "海克拉火山",
+  nameEn: "Hekla",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "海克拉主脊", lon: -19.667, lat: 63.983, elevation: 1491, kind: "peak" },
+  bbox: [-19.85, 63.88, -19.45, 64.08],
+  axis: [[-19.78, 63.90], [-19.55, 64.05]],
+  viewFrom: 200,
+  label: { lon: -19.67, lat: 63.98, rotation: -35 },
+  source: "海克拉：冰岛最活跃的火山之一，一座沿裂隙发育的脊状层状火山（约1491m）；1104年以来多次喷发，中世纪欧洲称之为“地狱之门”（Icelandic Meteorological Office）",
+};
+
+const KATLA: TerrainEntry = {
+  id: "katla",
+  nameZh: "卡特拉火山",
+  nameEn: "Katla",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "卡特拉破火山口（米尔达斯冰盖下）", lon: -19.05, lat: 63.63, elevation: 1490, kind: "escarpment" },
+  bbox: [-19.30, 63.50, -18.75, 63.75],
+  label: { lon: -19.05, lat: 63.63, rotation: 0 },
+  source: "卡特拉：位于米尔达斯冰盖之下的大型破火山口（直径约10km），冰下爆发常引发巨大的冰川洪水（jökulhlaup）；上一次大喷发在1918年（Icelandic Meteorological Office）",
+};
+
+const EYJAFJALLAJOKULL: TerrainEntry = {
+  id: "eyjafjallajokull",
+  nameZh: "埃亚菲亚德拉冰盖火山",
+  nameEn: "Eyjafjallajökull",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "埃亚菲亚德拉冰盖火山顶", lon: -19.613, lat: 63.633, elevation: 1651, kind: "peak" },
+  bbox: [-19.80, 63.55, -19.42, 63.70],
+  label: { lon: -19.61, lat: 63.63, rotation: 0 },
+  source: "埃亚菲亚德拉冰盖火山：冰帽覆盖的层状火山（约1651m）；2010年4—5月的喷发产生大量细火山灰，加上盛行风向，一度使欧洲大部分空域关闭数日（Icelandic Meteorological Office）",
+};
+
+const GRIMSVOTN: TerrainEntry = {
+  id: "grimsvotn",
+  nameZh: "格里姆火山",
+  nameEn: "Grímsvötn",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "格里姆火山冰下湖（瓦特纳冰原西北）", lon: -17.33, lat: 64.42, elevation: 1725, kind: "escarpment" },
+  bbox: [-17.60, 64.32, -17.05, 64.52],
+  label: { lon: -17.33, lat: 64.42, rotation: 0 },
+  source: "格里姆火山：瓦特纳冰原西北部冰下的破火山口，是冰岛喷发最频繁的火山；冰下湖会周期性溃决、沿斯凯扎拉河形成冰川洪水（Icelandic Meteorological Office / Vatnajökull NP）",
+};
+
+const FAGRADALSFJALL: TerrainEntry = {
+  id: "fagradalsfjall",
+  nameZh: "法格拉达尔火山",
+  nameEn: "Fagradalsfjall",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "法格拉达尔火山（雷克雅内斯半岛）", lon: -22.27, lat: 63.90, elevation: 385, kind: "peak" },
+  bbox: [-22.42, 63.83, -22.10, 63.97],
+  label: { lon: -22.27, lat: 63.90, rotation: 0 },
+  source: "法格拉达尔火山：雷克雅内斯半岛沉寂约800年后于2021、2022、2023年发生的一系列以熔岩溢流为主的裂隙喷发地点；标志雷克雅内斯进入新的活动期（Icelandic Meteorological Office）",
+};
+
+const SNAEFELLSJOKULL: TerrainEntry = {
+  id: "snaefellsjokull",
+  nameZh: "斯奈山冰川火山",
+  nameEn: "Snæfellsjökull",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "斯奈山冰川火山顶", lon: -23.767, lat: 64.808, elevation: 1446, kind: "peak" },
+  bbox: [-23.95, 64.72, -23.55, 64.88],
+  label: { lon: -23.77, lat: 64.81, rotation: 0 },
+  source: "斯奈山冰川火山：斯奈山半岛尖端一座约70万年、冰帽覆盖的层状火山（约1446m），上一次喷发约在1800年前；儒勒·凡尔纳《地心游记》的入口；斯奈山国家公园（Icelandic Met Office / 环境署）",
+};
+
+const ASKJA: TerrainEntry = {
+  id: "askja",
+  nameZh: "阿斯基亚破火山口",
+  nameEn: "Askja",
+  category: "basin",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "厄斯丘湖（Öskjuvatn）", lon: -16.75, lat: 65.03, elevation: 1050, kind: "lake" },
+  bbox: [-16.95, 64.92, -16.55, 65.12],
+  viewScale: 1.5,
+  label: { lon: -16.75, lat: 65.03, rotation: 0 },
+  source: "阿斯基亚：中部高地丁久山（Dyngjufjöll）里的破火山口群；1875年喷发的火山灰迫使冰岛东北部大量居民外迁；口内的厄斯丘湖是冰岛最深的湖，NASA 阿波罗宇航员曾在此训练（Institute of Earth Sciences）",
+};
+
+const THINGVELLIR: TerrainEntry = {
+  id: "thingvellir",
+  nameZh: "辛格维利尔",
+  nameEn: "Þingvellir",
+  category: "valley",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "阿尔曼纳陷谷（Almannagjá）", lon: -21.128, lat: 64.256, elevation: 110, kind: "gorge" },
+  bbox: [-21.30, 64.10, -20.95, 64.40],
+  axis: [[-21.15, 64.10], [-21.10, 64.40]],
+  viewScale: 1.5,
+  label: { lon: -21.13, lat: 64.28, rotation: 0 },
+  pois: [
+    { name: "辛格瓦德拉湖（Þingvallavatn）", lon: -21.10, lat: 64.18, note: "冰岛最大的天然湖" },
+  ],
+  source: "辛格维利尔：北美与欧亚两大板块拉张、地壳下陷形成的地堑（裂谷）；930年起在此召开“阿尔庭”议会——世界现存最古老的议会之一；世界文化遗产（UNESCO / Þingvellir NP）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -4154,6 +4273,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   CORNWALL_COAST, PEMBROKESHIRE_COAST, GOWER_PENINSULA, CHEDDAR_GORGE, GREAT_GLEN,
   LOCH_LOMOND, LOUGH_NEAGH, RIVER_THAMES, RIVER_SEVERN,
   THE_FENS, THE_BROADS, ISLE_OF_SKYE, OUTER_HEBRIDES,
+  // ===== 欧洲 / 冰岛 =====
+  HEKLA, KATLA, EYJAFJALLAJOKULL, GRIMSVOTN, FAGRADALSFJALL, SNAEFELLSJOKULL,
+  ASKJA, THINGVELLIR,
 ];
 
 /**
@@ -4251,6 +4373,9 @@ const WIDE_VIEW: Record<string, number> = {
   "ryukyu-islands": 2.6,
   "shinano-river": 2.0,
   "tone-river": 2.1,
+  // 欧洲 / 冰岛
+  askja: 1.5,
+  thingvellir: 1.6,
   // 欧洲 / 英国
   "scottish-highlands": 2.4,
   cairngorms: 1.8,

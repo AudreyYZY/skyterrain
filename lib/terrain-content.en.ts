@@ -3695,4 +3695,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Calanais standing stones on Lewis are one of the most important Neolithic megalithic sites in Britain, older than Stonehenge. In the Middle Ages the Outer Hebrides belonged to the \"Kingdom of the Isles\", closely tied to Norway, and only passed to Scotland in 1266. Harris Tweed, the local hand-woven cloth, is protected by law and must be hand-woven in islanders' homes.",
   },
+
+  "hekla": {
+    seeing:
+      "Hekla is an active volcano in southern Iceland, about 1,491 m high, and one of the most frequently erupting volcanoes in Iceland's history. It is not a cone but a ridge-shaped mountain growing along a fissure, looking from a distance like an overturned boat. After a large eruption in 1104, medieval Europeans imagined Hekla as a \"gateway to Hell\", where the souls of the damned were thrown into its crater.",
+    formation:
+      "Hekla sits astride one of Iceland's volcanic fissure zones. Its magma is intermediate between rhyolitic and basaltic in composition, so an eruption begins with a violent explosive phase (throwing out ash and pumice) and then shifts to relatively quiet lava effusion. Because the magma conduit does not fully seal after each eruption, Hekla's warning time from \"dormant\" to \"erupting\" is often only tens of minutes to an hour or two — among the shortest of any volcano in the world.",
+    observation:
+      "From the air Hekla is a dark, elongated, slightly arched ridge at the junction of the southern lowland and the highlands, its body covered in layers of black lava and pale pumice of different ages, with almost no vegetation; a row of fissure craters runs along the ridge crest. Around it is heath buried under successive ashfalls and several glacial rivers.",
+    distinguish:
+      "Hekla differs from southern Iceland's ice-covered volcanoes such as Eyjafjallajökull and Katla: those have ice caps and their eruptions bring glacial floods; Hekla has no ice, and its main hazards are ash, volcanic bombs and lava flows. Compared with the purely basaltic shield volcanoes of Hawaii, Hekla's magma is more viscous and more explosive.",
+    concept:
+      "Hekla is a case study in a fissure volcano: the magma does not erupt from one fixed round crater but rises along a tensional fracture in the crust, so an eruption is often a whole row of craters erupting at once, joined into a \"curtain of fire\". To recognise a fissure volcano, look at whether it is a linear ridge with craters in a row. A common misconception is that all volcanoes are symmetrical cones.",
+    history:
+      "Hekla's eruptions are recorded in detail in Iceland's sagas and annals, an important source for the history of volcanic activity. The 1104 eruption destroyed nearby settlements. In the 20th century it was quite active (eruptions in 1947, 1970, 1980, 1991, 2000). Because the warning time is so short, Iceland's civil protection authority issues specific warnings for hikers around Hekla.",
+  },
+
+  "katla": {
+    seeing:
+      "Katla is a volcano in southern Iceland buried under the Mýrdalsjökull ice cap, with a large caldera about 10 km across beneath the ice. It is inconspicuous — all you see at the surface is a large white ice cap — but historically it is one of the most feared volcanoes in Iceland: a violent subglacial eruption melts a huge amount of ice in moments, producing an enormous flood that races down the glacial river valleys.",
+    formation:
+      "Katla's magma is basaltic. When it erupts under hundreds of metres of ice, the hot magma meeting ice and meltwater causes violent \"phreatomagmatic\" explosions, blasting the magma into fine black ash, and at the same time melting hundreds of millions of tonnes of ice within hours. The meltwater, together with ice blocks and sediment, bursts out from under the ice cap at flows of tens of thousands to over a hundred thousand cubic metres a second — a glacial flood, called a jökulhlaup in Iceland. Historically these floods have dumped so much sediment on the south coast that the coastline has advanced several kilometres.",
+    observation:
+      "From the air Katla is simply Mýrdalsjökull — Iceland's fourth-largest ice cap — with a slightly depressed area of ice in the centre, the caldera beneath almost invisible from the surface. Several outlet glaciers reach out from the southern edge of the ice cap, and in front of them is a large black flood-outwash plain (Mýrdalssandur), a maze of channels with no vegetation at all.",
+    distinguish:
+      "Katla and Grímsvötn are both subglacial volcanoes and both produce glacial floods, but Katla is on Iceland's south coast near populated areas, and its floods drive straight down toward the Ring Road; Grímsvötn is deep in the interior within Vatnajökull, and its floods discharge mainly across the uninhabited sandur plains. Compared with Hekla, Katla's main hazard is not ash but flood.",
+    concept:
+      "Katla is a case study in a subglacial volcano and a jökulhlaup: the volcano's heat rapidly melts the overlying ice, and the meltwater may pond up as a lake under the ice and then burst out suddenly, or burst out directly, at a flow that can exceed that of the world's great rivers for a short time. To assess this risk, look at whether the volcano is covered by thick ice and whether there are glacial river valleys downstream. A common misconception is that an ice-covered volcano is relatively \"safe\".",
+    history:
+      "Katla has historically erupted about twice a century, most recently in a large eruption in 1918, whose flood pushed the south coastline out by about 3 km. Katla has had no large eruption since, and is one of the most closely monitored volcanoes in Iceland. The town of Vík has a specific evacuation plan for volcanic floods.",
+  },
+
+  "eyjafjallajokull": {
+    seeing:
+      "Eyjafjallajökull, on Iceland's south coast, is an ice-capped stratovolcano about 1,651 m high. Its awkward Icelandic name (\"the glacier of the island mountains\") became known around the world overnight in 2010 — that April and May a not-especially-large eruption produced fine ash that drifted toward mainland Europe on the wind, closing most of European airspace for nearly a week and stranding millions of travellers.",
+    formation:
+      "Eyjafjallajökull's magma is intermediate to acidic in composition and fairly viscous. The 2010 eruption had two phases: first a fissure on the mountain's flank quietly effused lava; weeks later the main crater erupted under the ice cap, the magma shattering violently on contact with ice into large amounts of fine, hard, angular ash. This fine ash can be lofted high and carried far on high-altitude winds, and it abrades and can even melt and clog jet engines — which is why it shut down aviation.",
+    observation:
+      "From the air Eyjafjallajökull is a blunt, white ice-capped volcano on the south coast, right next to the larger Mýrdalsjökull ice cap (Katla is under that). The mountain's south slope is steep, with several glaciers and waterfalls (the famous Seljalandsfoss and Skógafoss are along the line of the old sea cliff at its foot). Since 2010 the summit crater has been ringed by new black eruptive material.",
+    distinguish:
+      "Eyjafjallajökull and neighbouring Katla are often mentioned together, but Katla is far larger and far more dangerous; Eyjafjallajökull's ice cap is small and its eruption was of moderate size. The scale of the 2010 impact was due less to the vigour of the eruption itself than to the fact that the fine ash from magma-ice interaction coincided with winds blowing it toward Europe.",
+    concept:
+      "Eyjafjallajökull 2010 is a case study in volcanic ash and aviation: fine, hard, angular ash particles entering a jet engine melt in the hot combustion chamber and then solidify as a crust on the turbine, which can cause the engine to fail. So flights must be grounded wherever an ash cloud reaches. A common misconception is to picture volcanic ash as soft like wood ash — it is in fact abrasive crushed glass and rock.",
+    history:
+      "Eyjafjallajökull's earlier eruptions (such as 1821–1823) are also recorded, and its eruptions have often been followed soon after by activity at neighbouring Katla — whether Katla would \"follow\" after 2010 has been watched closely, but it has not so far. The 2010 event prompted more rigorous ash-dispersal forecasting and graduated airspace-management rules.",
+  },
+
+  "grimsvotn": {
+    seeing:
+      "Grímsvötn is a volcano in Iceland's interior, beneath the north-western part of the Vatnajökull ice cap — the most frequently erupting volcano in Iceland (more than a dozen eruptions in the last century). It is almost invisible at the surface — just a slightly depressed area of the ice cap, often with crevasses and collapse pits, with a geothermally maintained subglacial lake beneath.",
+    formation:
+      "Grímsvötn sits at one of the most active points of the Iceland hotspot (mantle upwelling). Constant geothermal heat melts the ice above, and the meltwater collects in the caldera as a subglacial lake, \"sealed\" in by the surrounding and overlying ice. When the lake fills to the point where buoyancy lifts the ice dam, the lake water drains suddenly along the base of the glacier as a glacial flood, delivering large amounts of water, sediment and ice blocks to the Skeiðarársandur plain to the south within a few days. Sometimes an eruption itself triggers a flood directly.",
+    observation:
+      "From the air the site of Grímsvötn is a clear depression and ice cliff in the Vatnajökull ice cap, with arcuate crevasses and pits where the lake has drained and the ice has collapsed. During an eruption a dark ash column rises straight out of the white ice cap. To the south, the Skeiðará river emerges from under the ice cap and crosses a large braided black sand plain.",
+    distinguish:
+      "Grímsvötn and Katla are both subglacial volcanoes and both produce glacial floods, but Grímsvötn is in the uninhabited interior and has a stable subglacial lake, so its floods are more \"regular\"; Katla is near south-coast communities and has no permanent subglacial lake, so its floods are more sudden. Grímsvötn was also the site of Iceland's most recent larger eruption (2011).",
+    concept:
+      "Grímsvötn is a case study in a subglacial lake outburst: volcanic geothermal heat constantly melts ice, the meltwater is sealed in a hollow by ice, and when the water level rises enough, buoyancy lifts the ice dam and the lake drains out along the glacier base — a glacial flood that can recur, and can sometimes even be predicted. To recognise this system, look for a hollow in the ice cap that periodically collapses and refills. A common misconception is that the ice cap is solid ice underneath.",
+    history:
+      "The drainage of Grímsvötn's subglacial lake has centuries of observation and folklore in Iceland. In 1996 the nearby Gjálp fissure eruption melted a large volume of water that flowed into the Grímsvötn lake, and the resulting exceptional flood destroyed several bridges of the Ring Road on Skeiðarársandur. Today Iceland monitors the water level of the Grímsvötn lake in real time.",
+  },
+
+  "fagradalsfjall": {
+    seeing:
+      "Fagradalsfjall is on the Reykjanes Peninsula in south-west Iceland, not far from the capital Reykjavík or from Keflavík International Airport. After lying quiet for about 800 years, this area began erupting again from 2021 — once each in 2021, 2022 and 2023, all relatively quiet fissure eruptions of flowing lava. Because they were easy to reach and essentially free of explosions and ash, these eruptions drew large numbers of visitors watching from close up.",
+    formation:
+      "The Reykjanes Peninsula is a section of the Mid-Atlantic Ridge come ashore in Iceland — the two plates pulling apart here at about 2 cm a year. The crust is stretched and thinned, and basaltic magma from depth rises along sets of parallel fractures. The 2021-onward series of eruptions began with magma first intruding sideways a few kilometres down, jacking the ground apart (accompanied by tens of thousands of small earthquakes), then effusing from the fissures as slow-moving lava flows and low lava mounds.",
+    observation:
+      "From the air the Fagradalsfjall area is a gently rolling hill country on the Reykjanes Peninsula, covered in moss and old lava; during an eruption there is an orange-red fissure with lava flowing from it, gradually spreading and darkening, filling the nearby valleys (such as Geldingadalir and Meradalir). Around it are old and new lava fields, geothermal steam and several small cones.",
+    distinguish:
+      "Fagradalsfjall's eruptions are completely different from southern Iceland's subglacial volcanoes (Katla, Grímsvötn): there is no ice, no big explosion, no ash cloud, mainly lava flowing quietly; it is more like a small-scale version of the large fissure effusion at Holuhraun north of Vatnajökull in 2014–2015.",
+    concept:
+      "Fagradalsfjall is a case study in fissure eruption at a plate-rifting zone: where two plates pull apart, the crust is continually thinned and torn, and basaltic magma comes up along these tensional fractures, often not building a large cone but effusing lava along a line and gradually building new ground. To recognise this kind of eruption, look at whether the vent is a fissure rather than a round hole and whether the lava is very fluid and travels far. A common misconception is to picture every volcanic eruption as explosive.",
+    history:
+      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). The new activity from 2021 is thought likely to continue for decades or longer. From late 2023 the centre of activity shifted toward the town of Grindavík, where magma intrusion cracked the ground and the town was evacuated for a time, and lava approached the town and a geothermal power plant — prompting Iceland to accelerate protective works such as barrier walls.",
+  },
+
+  "snaefellsjokull": {
+    seeing:
+      "Snæfellsjökull, at the very tip of the Snæfellsnes peninsula in western Iceland, is an about 700,000-year-old stratovolcano with a small ice cap on its summit, about 1,446 m high. On a clear day it can be seen from Reykjavík across Faxaflói bay, its symmetrical white summit standing out. In Jules Verne's novel Journey to the Center of the Earth, the entrance to the centre of the Earth is set in this volcano's crater.",
+    formation:
+      "Snæfellsjökull lies on a secondary volcanic belt that runs oblique to the main rift zone. It was built up layer by layer by successive explosive and lava eruptions into a fairly symmetrical cone; its last eruption was about 1,800 years ago. Because of the altitude and latitude the summit snow never fully melts and has compacted into a small ice cap a few kilometres across, which has thinned markedly in recent decades.",
+    observation:
+      "From the air Snæfellsjökull is an isolated, symmetrical, ice-capped cone at the tip of the peninsula, with radial gullies on its slopes and several later small craters and lava flows. Around its foot is a ring of black lava field, scoria cones and moss-covered old lava reaching to a jagged sea cliff.",
+    distinguish:
+      "Snæfellsjökull and southern Iceland's Eyjafjallajökull and Katla are all ice-capped stratovolcanoes, but Snæfellsjökull is more symmetrical and \"more like the textbook picture of a volcano\", and it is far from the main rift zone and far less active. Its ice cap is also much smaller than those in the south.",
+    concept:
+      "Snæfellsjökull is a case study in a stratovolcano: more viscous magma gives eruptions that are both explosive and effusive, and the ejecta pile up in alternating layers of ash and lava into a fairly steep, symmetrical cone. To recognise a stratovolcano, look at whether it is tall and symmetrical, with fairly steep slopes, made of alternating fragmental and lava layers. A common misconception is to treat every volcano as this type — Iceland is in fact dominated by gently sloping fissure and shield volcanoes.",
+    history:
+      "The Snæfellsnes peninsula appears frequently in Iceland's saga literature, and the mountain has been regarded as a place of spiritual power, drawing mystics even in the 20th century. Snæfellsjökull National Park was established in 2001, the first national park in Iceland to include the coast.",
+  },
+
+  "askja": {
+    seeing:
+      "Askja, in the Dyngjufjöll mountains of Iceland's central highlands, is a set of nested calderas. The most striking feature is Öskjuvatn, the lake formed by collapse after a large eruption in 1875 — the deepest lake in Iceland, its water icy cold; beside it is a much smaller crater called Víti (\"Hell\"), holding a pool of warm, milky-blue water that visitors can climb down to bathe in. It is over a hundred kilometres from any settlement, one of the remotest places in Iceland.",
+    formation:
+      "Askja sits on Iceland's northern rift zone. Successive eruptions have emptied the magma chamber below, and the surface has collapsed repeatedly, nesting several calderas of different sizes. The 1875 eruption was a large rhyolitic explosion, whose pumice and ash blanketed the farming districts of north-east Iceland; after it, a block of ground dropped into the emptied magma chamber and filled with water to become Öskjuvatn. Askja also had a basaltic lava eruption in 1961.",
+    observation:
+      "From the air Askja is a ring-shaped depression surrounded by dark lava and pale pumice, with the near-circular, deep-blue Öskjuvatn in it and a small round pit — Víti — on its shore. Around it the Dyngjufjöll are steep dark rock walls. Beyond, an endless black volcanic desert (Ódáðahraun) stretches away, almost lifeless.",
+    distinguish:
+      "Askja resembles the rhyolitic calderas of Taupō and Rotorua, all formed by surface collapse after eruption; but Askja is smaller and \"fresher\", nests several generations of calderas, and is overprinted by later basaltic lava. Compared with Grímsvötn beneath Vatnajökull, Askja has no ice cap and its calderas are open and visible.",
+    concept:
+      "Askja is a case study in nested calderas: if a volcanic centre repeatedly goes through the cycle of \"magma chamber emptied — surface collapse\", it forms a set of calderas of different ages nested one inside another, like a set of concentric bowls. To recognise this, look for several arcuate collapse scarps nested together. A common misconception is to confuse a caldera with a large volcanic crater (the latter is built by ejecta and is far smaller).",
+    history:
+      "Askja's 1875 eruption and the crop failures that followed were an important push behind the large-scale emigration of Icelanders to North America (especially Canada) in the late 19th century. In 1965 and 1967, NASA twice brought Apollo astronauts to the Askja area for geology training in this Moon-like volcanic desert.",
+  },
+
+  "thingvellir": {
+    seeing:
+      "Þingvellir (\"assembly plains\"), a short way east of Reykjavík, is a broad rift valley. It is both a geological wonder — you can walk between the fractures where the North American and Eurasian plates are being pulled apart — and Iceland's historic sacred site: from 930 CE the chieftains of Iceland met here each summer for the \"Alþingi\" assembly, one of the oldest surviving parliaments in the world. It is Iceland's first World Heritage Site.",
+    formation:
+      "Þingvellir sits astride the Mid-Atlantic Ridge. The two plates pull apart at about 2 cm a year, and the whole block of crust in between, losing support on both sides and softened by magmatic activity below, has subsided as a whole, forming a graben — parallel fault cliffs on either side with a stepped, dropped block in the middle. The Almannagjá on the west is the fault scarp along the western edge of the graben, tens of metres high and several kilometres long. New fissures keep opening on the valley floor and old lava is being pulled apart.",
+    observation:
+      "From the air Þingvellir is a lowland held between two roughly parallel, north-south fault cliffs, the lowland full of fissures parallel to the cliffs (some filled with crystal-clear groundwater), a river winding through it, and at the south end Þingvallavatn, Iceland's largest natural lake. The block as a whole is lower than the highland on either side and still slowly sinking.",
+    distinguish:
+      "Þingvellir is the same kind of structure as the East African Rift and the Rhine Graben — a graben (rift valley), all formed by crustal stretching and the central block dropping. The difference is that Þingvellir lies right on an active mid-ocean ridge, and that ridge has risen above the sea here, so you can see \"an ocean rifting apart\" directly on land.",
+    concept:
+      "Þingvellir is a case study in a graben / rift valley: when the crust is stretched by forces pulling in opposite directions, it breaks along a set of parallel normal faults, and the central block slides down the fault surfaces, forming a valley with steep walls, a flat floor, and ongoing subsidence. To recognise a graben, look at whether the two sides of the valley are parallel fault cliffs and whether the valley floor is full of tension fissures. A common misconception is to take a rift valley for a gorge cut down by a river.",
+    history:
+      "The Alþingi met in the open air at Þingvellir for nearly nine centuries (930–1798), passing laws, settling disputes and making major decisions here — for instance around the year 1000 Iceland voted here to adopt Christianity collectively. In 1944 Iceland formally declared its separation from Denmark and the founding of the republic at Þingvellir. It is a national park today.",
+  },
 };
