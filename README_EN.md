@@ -191,13 +191,14 @@ components/
   CesiumMap.tsx            — 3D globe, camera, region outline highlight, appMode / focusCity
   CesiumOverlayLabels.tsx  — HTML terrain label layer (zoom-adaptive, study mode)
   CityMarkers.tsx          — map city points (travel mode, revealed by camera altitude)
-  IntroOverlay.tsx         — opening editorial title card (localStorage remembers "seen")
-  IndexRail.tsx            — left index (study: category/terrain two-level; travel: overview + cities)
+  IntroOverlay.tsx         — travel-mode opening title card (localStorage remembers "seen")
+  ContinentIntro.tsx       — study-mode opening: shuffled swipe carousel of continents, pick one to fly in
+  IndexRail.tsx            — left index (study: sub-region → country → terrain; travel: overview + cities)
   ReadingPanel.tsx         — single right-side reading panel (card ⇄ article, sentence highlight)
   JourneyBar.tsx           — bottom route filmstrip
   StructuredLesson.tsx     — section renderer (6-section lesson / generic section array)
   ModeToggle.tsx           — header Study / Travel switch
-  RegionSelector.tsx       — header region switch
+  RegionSelector.tsx       — header continent / sub-region two-level switch
 
 lib/
   terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 301 terrains
@@ -212,7 +213,9 @@ lib/
   travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
   travel-lesson.ts          — resolveTravelGuide + travelGuideToSections
   travel-rail.ts            — travel-mode left index
-  regions.ts                — continent config (asia / oceania / north-america …) + DEFAULT_REGION_ID
+  regions.ts                — continent + sub-region (M49) config + country mapping + helpers + DEFAULT_REGION_ID
+  subregion-geo.ts          — per-sub-region terrain count / geographic centroid (for the 2-level dropdown fly-to)
+  terrain-tier.ts           — terrainTier(id) → T1/T2/T3 + categoryOrder (catalog sort)
   speech.ts                 — TTS system (Edge TTS + browser fallback, follows language)
   i18n.ts / i18n-stories.ts — UI i18n / early lesson translations
 

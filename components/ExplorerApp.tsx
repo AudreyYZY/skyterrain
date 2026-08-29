@@ -7,6 +7,7 @@ import CesiumMap, {
 import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
 import IndexRail, { type RailGroup } from "@/components/IndexRail";
 import IntroOverlay from "@/components/IntroOverlay";
+import ContinentIntro, { type ContinentCard } from "@/components/ContinentIntro";
 import JourneyBar from "@/components/JourneyBar";
 import ReadingPanel from "@/components/ReadingPanel";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
@@ -16,7 +17,7 @@ import type { GeographicFeature } from "@/features/types";
 import { lessonSections } from "@/lib/lesson";
 import { resolveLesson } from "@/lib/terrain-lesson";
 import { getRouteNarration } from "@/lib/route-narration";
-import { t, getTerrainName, type Language } from "@/lib/i18n";
+import { getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
@@ -26,7 +27,7 @@ import { narrationManager } from "@/lib/narration-manager";
 import { getTerrainById } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
 import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSentenceHighlight } from "@/components/useSentenceHighlight";
 import RegionSelector from "@/components/RegionSelector";
 import ModeToggle from "@/components/ModeToggle";
@@ -46,10 +47,22 @@ import {
   REGIONS,
   setActiveRegion,
   DEFAULT_REGION_ID,
+  countriesForContinent,
+  getCountryMeta,
+  subregionOfCountry,
   type Region,
 } from "@/lib/regions";
+import { terrainTier, categoryOrder } from "@/lib/terrain-tier";
 
 const routes = getAllRoutes();
+
+/** 国家在窄 rail 上的两字母字形：多词取首字母缩写，单词取前两字母 */
+function countryGlyph(slug: string, nameEn?: string): string {
+  const name = nameEn ?? slug;
+  const words = name.split(/[\s-]+/).filter(Boolean);
+  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
+  return name.replace(/[^A-Za-z]/g, "").slice(0, 2).toUpperCase();
+}
 
 /** Sidebar 统一分类类型 */
 type SidebarCategory =
@@ -57,41 +70,6 @@ type SidebarCategory =
   | "lake" | "desert" | "river" | "gorge" | "island"
   | "grassland" | "coast" | "inselberg" | "settlement";
 
-/** 分类字形（左侧 rail 用，中英通用的几何符号）*/
-const CATEGORY_GLYPH: Record<SidebarCategory, string> = {
-  mountain: "▲",
-  plateau: "◨",
-  basin: "▽",
-  plain: "▬",
-  hill: "⌒",
-  lake: "◉",
-  desert: "∴",
-  river: "≈",
-  gorge: "⋁",
-  island: "⬠",
-  grassland: "≋",
-  coast: "⌇",
-  inselberg: "◮",
-  settlement: "⌂",
-};
-
-/** 分类翻译 key 映射 */
-const CATEGORY_I18N_KEY: Record<SidebarCategory, string> = {
-  mountain: "sidebar.mountains",
-  plateau: "sidebar.plateaus",
-  basin: "sidebar.basins",
-  plain: "sidebar.plains",
-  hill: "sidebar.hills",
-  lake: "sidebar.lakes",
-  desert: "sidebar.deserts",
-  river: "sidebar.rivers",
-  gorge: "sidebar.gorges",
-  island: "sidebar.islands",
-  grassland: "sidebar.grasslands",
-  coast: "sidebar.coasts",
-  inselberg: "sidebar.inselbergs",
-  settlement: "sidebar.settlements",
-};
 
 /**
  * 将原始 category/featureType 统一映射为 Sidebar 分类
@@ -140,38 +118,19 @@ function normalizeType(raw: string, name?: string): SidebarCategory | null {
 }
 
 /** 统一 Feature Registry — 以 terrain-registry 为单一真实源 */
-const ALL_FEATURES = TERRAIN_REGISTRY.map((e) => ({
+const ALL_FEATURES = TERRAIN_REGISTRY.map((e, idx) => ({
   id: e.id,
   name: e.nameZh,
   type: normalizeType(e.category, e.nameZh),
+  category: e.category,
   // 区域过滤用：regionId 已是大洲
   region: e.regionId,
+  country: e.country,
+  registryIndex: idx,
+  tier: terrainTier(e.id, e.category),
   terrain: getTerrainById(e.id) ?? null,                       // 早期地形 JSON（部分条目自带讲解内容）
   feature: CHINA_CORE_FEATURES.find((f) => f.id === e.id) ?? null,
 })).filter((f) => f.type !== null);
-
-/** Sidebar 分类定义 */
-const SIDEBAR_CATEGORIES: { type: SidebarCategory; label: string }[] = [
-  { type: "mountain", label: "山脉" },
-  { type: "plateau", label: "高原" },
-  { type: "basin", label: "盆地" },
-  { type: "plain", label: "平原" },
-  { type: "hill", label: "丘陵" },
-  { type: "gorge", label: "峡谷" },
-  { type: "river", label: "河谷" },
-  { type: "lake", label: "湖泊" },
-  { type: "desert", label: "沙漠" },
-  { type: "grassland", label: "草原" },
-  { type: "coast", label: "海岸" },
-  { type: "island", label: "岛屿" },
-  { type: "inselberg", label: "岛山" },
-  { type: "settlement", label: "绿洲·聚落" },
-];
-
-const FEATURE_GROUPS = SIDEBAR_CATEGORIES.map(g => ({
-  ...g,
-  features: ALL_FEATURES.filter(f => f.type === g.type),
-})).filter(g => g.features.length > 0);
 
 const routeEndLesson = (lang: Language): TerrainLesson => ({
   seeing:
@@ -387,6 +346,80 @@ export default function ExplorerApp() {
       });
     },
     [],
+  );
+
+  /** 初始大陆卡片数据（含建设中的大洲，供选择器完整呈现） */
+  const introContinents: ContinentCard[] = useMemo(
+    () =>
+      REGIONS.map((r) => ({
+        id: r.id,
+        name: r.name,
+        nameEn: r.nameEn ?? r.name,
+        terrainCount: r.terrainCount,
+        available: r.available,
+      })),
+    [],
+  );
+
+  /** 初始卡片滑动预览 —— 地球飞过去，但不切换 activeRegion */
+  const handleIntroPreview = useCallback((continentId: string) => {
+    const r = REGIONS.find((x) => x.id === continentId);
+    if (!r) return;
+    mapRef.current?.flyToRegion({
+      lon: r.center.lon,
+      lat: r.center.lat,
+      height: r.center.height,
+      duration: 1.4,
+    });
+  }, []);
+
+  /** 初始卡片选定 —— 进入该大陆的学习模式 */
+  const handleIntroEnter = useCallback(
+    (continentId: string) => {
+      const r = REGIONS.find((x) => x.id === continentId);
+      if (!r) return;
+      setActiveRegionState(r.id);
+      setActiveRegion(r.id);
+      try {
+        localStorage.setItem("fge-active-region", r.id);
+      } catch {
+        /* ignore */
+      }
+      mapRef.current?.flyToRegion({
+        lon: r.center.lon,
+        lat: r.center.lat,
+        height: r.center.height,
+        duration: 2.4,
+      });
+    },
+    [],
+  );
+
+  /** 次区域切换 —— 切到其大洲（若需要）并飞向该次区域地形的重心 */
+  const handleSubregionChange = useCallback(
+    (geo: { id: string; continentId: string; lon: number; lat: number }) => {
+      if (geo.continentId !== activeRegion) {
+        setActiveRegionState(geo.continentId);
+        setActiveRegion(geo.continentId);
+        try {
+          localStorage.setItem("fge-active-region", geo.continentId);
+        } catch {
+          /* ignore */
+        }
+      }
+      mapRef.current?.stopFlight();
+      setActiveTerrain(null);
+      setLesson(null);
+      setDisplayCards(null);
+      const continent = REGIONS.find((r) => r.id === geo.continentId);
+      mapRef.current?.flyToRegion({
+        lon: geo.lon,
+        lat: geo.lat,
+        height: Math.round((continent?.center.height ?? 6_000_000) * 0.55),
+        duration: 2.4,
+      });
+    },
+    [activeRegion],
   );
 
   const speakText = useCallback(
@@ -743,6 +776,24 @@ export default function ExplorerApp() {
     [handleSelectTerrain, handleSelectFeature]
   );
 
+  /** 地图上直接点某地形 — 若属于其它大洲，先切过去再选中 */
+  const handleMapTerrainSelect = useCallback(
+    (id: string) => {
+      const e = getTerrainEntry(id);
+      if (e && e.regionId !== activeRegion && REGIONS.some((r) => r.id === e.regionId)) {
+        setActiveRegionState(e.regionId);
+        setActiveRegion(e.regionId);
+        try {
+          localStorage.setItem("fge-active-region", e.regionId);
+        } catch {
+          /* ignore */
+        }
+      }
+      handleSelectById(id);
+    },
+    [activeRegion, handleSelectById]
+  );
+
   const handleStartRoute = useCallback(
     (route: FlightRoute) => {
       // 取消之前的叙述
@@ -840,15 +891,44 @@ export default function ExplorerApp() {
     labelManager.clearExcept(["terrain-labels"]);
   }, [stopSpeaking]);
 
-  /** 左侧目录分组 — 按当前区域过滤，分类与地形名按当前语言本地化 */
-  const railGroups: RailGroup[] = FEATURE_GROUPS.map((g) => ({
-    type: g.type,
-    label: t(CATEGORY_I18N_KEY[g.type as SidebarCategory] ?? g.label, language),
-    glyph: CATEGORY_GLYPH[g.type as SidebarCategory] ?? "·",
-    items: g.features
-      .filter((f) => f.region === activeRegion)
-      .map((f) => ({ id: f.id, name: getTerrainName(f.name, language) })),
-  })).filter((g) => g.items.length > 0);
+  /**
+   * 左侧目录分组 — 按当前大洲下的国家分栏。
+   * 国家顺序：次区域地理顺序 → COUNTRIES 顺序（见 lib/regions.ts）。
+   * 国家内地形顺序：T1 骨架 → T2 → T3，同级按骨架类地貌优先、再按注册表顺序。
+   */
+  const railGroups: RailGroup[] = useMemo(() => {
+    const slugs = countriesForContinent(activeRegion);
+    let prevSub: string | null = null;
+    return slugs
+      .map((slug) => {
+        const meta = getCountryMeta(slug);
+        const items = ALL_FEATURES.filter((f) => f.country === slug)
+          .slice()
+          .sort(
+            (a, b) =>
+              a.tier - b.tier ||
+              categoryOrder(a.category) - categoryOrder(b.category) ||
+              a.registryIndex - b.registryIndex,
+          )
+          .map((f) => ({ id: f.id, name: getTerrainName(f.name, language) }));
+        const sub = subregionOfCountry(slug);
+        const divider =
+          sub && sub.id !== prevSub
+            ? language === "zh-CN"
+              ? sub.name
+              : sub.nameEn
+            : undefined;
+        prevSub = sub?.id ?? prevSub;
+        return {
+          type: slug,
+          label: meta ? (language === "zh-CN" ? meta.name : meta.nameEn) : slug,
+          glyph: countryGlyph(slug, meta?.nameEn),
+          divider,
+          items,
+        };
+      })
+      .filter((g) => g.items.length > 0);
+  }, [activeRegion, language]);
 
   const terrainCount = railGroups.reduce((n, g) => n + g.items.length, 0);
 
@@ -954,6 +1034,7 @@ export default function ExplorerApp() {
           onReady={handleMapReady}
           onTerrainMode={setTerrainMode}
           onTerrainHover={setHoveredTerrainId}
+          onTerrainSelect={mode === "study" ? handleMapTerrainSelect : undefined}
           appMode={mode}
         />
         {mode === "study" && (
@@ -993,14 +1074,23 @@ export default function ExplorerApp() {
         )}
       </div>
 
-      {showIntro && (
-        <IntroOverlay
-          language={language}
-          regionName={activeRegionName}
-          regionNameEn={activeRegionNameEn}
-          onDismiss={() => setShowIntro(false)}
-        />
-      )}
+      {showIntro &&
+        (mode === "study" ? (
+          <ContinentIntro
+            language={language}
+            continents={introContinents}
+            onPreview={handleIntroPreview}
+            onEnter={handleIntroEnter}
+            onDismiss={() => setShowIntro(false)}
+          />
+        ) : (
+          <IntroOverlay
+            language={language}
+            regionName={activeRegionName}
+            regionNameEn={activeRegionNameEn}
+            onDismiss={() => setShowIntro(false)}
+          />
+        ))}
 
       {/* Header — editorial masthead */}
       <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between px-4 py-2.5">
@@ -1017,6 +1107,7 @@ export default function ExplorerApp() {
           <RegionSelector
             activeRegion={activeRegion}
             onRegionChange={handleRegionChange}
+            onSubregionChange={handleSubregionChange}
             language={language}
           />
           <button

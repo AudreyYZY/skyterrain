@@ -172,13 +172,14 @@ components/
   CesiumMap.tsx            — 三维地球、相机、区域轮廓高亮、appMode / focusCity
   CesiumOverlayLabels.tsx  — HTML 地形标签层（zoom 自适应，学习模式）
   CityMarkers.tsx          — 地图城市点（旅游模式，按相机高度分级）
-  IntroOverlay.tsx         — 初始编辑式标题卡（localStorage 记住已看过）
-  IndexRail.tsx            — 左侧目录（学习：分类/地形两级；旅游：国家概览 + 城市）
+  IntroOverlay.tsx         — 旅游模式初始标题卡（localStorage 记住已看过）
+  ContinentIntro.tsx       — 学习模式初始：shuffle 的大陆滑动卡片，选定即飞入
+  IndexRail.tsx            — 左侧目录（学习：次区域 → 国家 → 地形；旅游：国家概览 + 城市）
   ReadingPanel.tsx         — 右侧单一阅读面板（卡片态 ⇄ 文章态，逐句高亮）
   JourneyBar.tsx           — 底部航线胶片条
   StructuredLesson.tsx     — 板块讲解渲染（6 板块 lesson / 通用段列表 sections）
   ModeToggle.tsx           — 顶栏 学习 / 旅游 切换
-  RegionSelector.tsx       — 顶栏区域切换
+  RegionSelector.tsx       — 顶栏大洲 / 次区域两级切换
 
 lib/
   terrain-registry.ts       — 【单一真实源】301 处地形的锚点/范围/走向/中英名/来源
@@ -193,7 +194,9 @@ lib/
   travel-content.{zh,en}.ts — 旅游模式 6 段 TravelGuide 中英内容
   travel-lesson.ts          — resolveTravelGuide + travelGuideToSections
   travel-rail.ts            — 旅游模式左侧目录
-  regions.ts                — 大洲配置（asia / oceania / north-america …）+ DEFAULT_REGION_ID
+  regions.ts                — 大洲 + 次区域(M49) 配置 + 国家归属 + 辅助函数 + DEFAULT_REGION_ID
+  subregion-geo.ts          — 次区域地形数量 / 地理重心（供顶栏二级下拉飞行）
+  terrain-tier.ts           — terrainTier(id) → T1/T2/T3 + categoryOrder（目录排序）
   speech.ts                 — TTS 系统（Edge TTS + 浏览器回退，跟随 language）
   i18n.ts / i18n-stories.ts — UI 国际化 / 早期讲解翻译
 

@@ -15,6 +15,24 @@ let currentAudio: HTMLAudioElement | null = null;
 let currentObjectUrl: string | null = null;
 let currentWordBoundaries: WordBoundary[] = [];
 
+/**
+ * 播报“代次”。每次 stopSpeech() 或新的 speakAndWait() 开始时 +1。
+ * 合成请求（/api/tts）可能耗时数秒（尤其含外语词的文本），期间用户若切换到别的地形，
+ * 旧请求返回后不能再 play —— 否则会和新地形的音频重叠，听感变“糊/小”，且 currentAudio
+ * 引用错乱导致后续 stopSpeech() 停不掉。这里用代次令牌把过期请求丢弃。
+ */
+let speakGen = 0;
+let inflightFetch: AbortController | null = null;
+
+function bumpGen(): number {
+  speakGen += 1;
+  if (inflightFetch) {
+    inflightFetch.abort();
+    inflightFetch = null;
+  }
+  return speakGen;
+}
+
 /** 获取当前正在播放的 Audio 元素（用于外部同步） */
 export function getCurrentAudio(): HTMLAudioElement | null {
   return currentAudio;
@@ -104,29 +122,51 @@ export function speakBrowserAndWait(
       started = true;
       onPlaying?.(); // 语音真正开始时才触发逐句高亮
     };
+    let done = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      resolve();
+    };
     utterance.onstart = markStarted;
-    utterance.onend = () => resolve();
-    utterance.onerror = () => resolve();
+    utterance.onend = finish;
+    utterance.onerror = finish;
     window.speechSynthesis.speak(utterance);
     // 部分浏览器不触发 onstart，兜底：短延迟后视为已开始
     setTimeout(markStarted, 250);
+    // Chrome 对长文本的 speechSynthesis 有时不触发 onend（会在 ~15s 处静默截断）。
+    // 按字数估时兜底 resolve，避免 Promise 永久挂起、后续播报卡住。
+    setTimeout(finish, (estimateSpeechDurationSec(plainText, rate) + 5) * 1000);
   });
 }
 
 async function speakEdgeAndWait(
   text: string,
   voice: EdgeTtsVoiceId,
-  onPlaying?: () => void
+  onPlaying: (() => void) | undefined,
+  gen: number
 ): Promise<{ ok: boolean; wordBoundaries: WordBoundary[] }> {
-  const res = await fetch("/api/tts", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text, voice }),
-  });
+  const ac = new AbortController();
+  inflightFetch = ac;
+  let res: Response;
+  try {
+    res = await fetch("/api/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, voice }),
+      signal: ac.signal,
+    });
+  } catch {
+    return { ok: false, wordBoundaries: [] }; // abort 或网络错误
+  } finally {
+    if (inflightFetch === ac) inflightFetch = null;
+  }
 
   if (!res.ok) return { ok: false, wordBoundaries: [] };
 
   const data = await res.json();
+  // 请求返回时已被更新的播报取代 → 丢弃，不播放
+  if (gen !== speakGen) return { ok: true, wordBoundaries: [] };
   const wordBoundaries: WordBoundary[] = data.wordBoundaries ?? [];
 
   // 存储 word boundaries 到模块变量，供 onPlaying 回调时使用
@@ -138,6 +178,7 @@ async function speakEdgeAndWait(
 
   return new Promise((resolve) => {
     const audio = new Audio(url);
+    audio.volume = 1;
     currentAudio = audio;
     currentObjectUrl = url;
 
@@ -168,6 +209,7 @@ async function speakEdgeAndWait(
 }
 
 export function stopSpeech(): void {
+  bumpGen();
   if (currentAudio) {
     currentAudio.pause();
     currentAudio = null;
@@ -189,16 +231,20 @@ export async function speakAndWait(
   language?: Language
 ): Promise<SpeakResult> {
   stopSpeech();
+  const gen = speakGen; // stopSpeech() 刚 bump 过，这是本次播报的代次
 
   if (typeof window === "undefined") return { wordBoundaries: [] };
 
   const voice = language ? getTTSVoice(language) as EdgeTtsVoiceId : getPreferredEdgeVoice();
   try {
-    const result = await speakEdgeAndWait(text, voice, onPlaying);
+    const result = await speakEdgeAndWait(text, voice, onPlaying, gen);
     if (result.ok) return { wordBoundaries: result.wordBoundaries };
   } catch {
     /* 回退 */
   }
+
+  // 已被新的播报取代 → 不再回退浏览器 TTS
+  if (gen !== speakGen) return { wordBoundaries: [] };
 
   // Edge 失败 → 浏览器 TTS。onPlaying 在语音真正开始时触发（不是等播完），
   // 否则逐句高亮会等到播报结束才启动 → 看起来"卡在第一句"。
@@ -219,6 +265,7 @@ export async function synthesizeSpeech(
   language?: Language
 ): Promise<{ url: string; wordBoundaries: WordBoundary[] } | null> {
   if (typeof window === "undefined") return null;
+  const gen = speakGen;
   const voice = language ? (getTTSVoice(language) as EdgeTtsVoiceId) : getPreferredEdgeVoice();
   try {
     const res = await fetch("/api/tts", {
@@ -228,6 +275,7 @@ export async function synthesizeSpeech(
     });
     if (!res.ok) return null;
     const data = await res.json();
+    if (gen !== speakGen) return null; // 期间被 stopSpeech()/新播报取代
     const wordBoundaries: WordBoundary[] = data.wordBoundaries ?? [];
     const audioBytes = Uint8Array.from(atob(data.audio), (c) => c.charCodeAt(0));
     const blob = new Blob([audioBytes], { type: "audio/mpeg" });
@@ -247,6 +295,7 @@ export function playSynthesized(
     // 上一段已 onended，这里不再 stopSpeech（避免打断）；只接管 module 引用
     currentWordBoundaries = wordBoundaries;
     const audio = new Audio(url);
+    audio.volume = 1;
     currentAudio = audio;
     currentObjectUrl = url;
 
