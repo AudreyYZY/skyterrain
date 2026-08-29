@@ -70,6 +70,7 @@ components/
   StructuredLesson.tsx   — 板块讲解渲染（editorial 衬线排版）；lesson=6 板块 / sections=通用段列表
   ModeToggle.tsx         — 顶栏 学习 / 旅游 切换
   CityMarkers.tsx        — 【旅游模式】地图上的城市点（轮询相机 zoom，按 tier 分级显示）
+  TravelPoiMarkers.tsx   — 【旅游模式】选中城市时标注机场 + 攻略提到的地标
 
 lib/
   terrain-registry.ts    — 【单一真实源】地形的位置/锚点/范围/走向/中英名/regionId(大洲)/country（选取标准见 docs/terrain-taxonomy.md）
@@ -87,7 +88,9 @@ lib/
   places-registry.ts     — 【旅游模式单一真实源】城市 CityEntry（经纬度/tier/机场）+ 国家概览
   travel-content.{zh,en}.ts — 【旅游模式】城市 / 国家概览的 6 段 TravelGuide 中英内容
   travel-lesson.ts       — TravelGuide 类型 + resolveTravelGuide(id, lang) + travelGuideToSections
-  travel-rail.ts         — 旅游模式左侧目录（国家概览置顶 + 城市列表）
+  travel-rail.ts         — 旅游模式左侧目录（当前大洲下按国家分组）
+  travel-speak.ts        — 旅游攻略分段合成 + 预取播报编排（首段先出声）
+  travel-pois.ts         — 每城市攻略提到的地标概略坐标（POIS_BY_CITY）
   i18n.ts                — UI 国际化；getTerrainName 查注册表
   i18n-stories.ts        — 早期 6 个双语故事（resolveLesson 的次级来源）
   terrain.ts             — 新疆地形注册（坐标由 terrain-registry 覆盖）
@@ -138,13 +141,20 @@ features/
 - **学习模式**：`CesiumOverlayLabels` 地形标签 + `railGroups`（14 分类）+ `ReadingPanel`
   接 `resolveLesson` 6 板块 + `JourneyBar` 航线。地图 hover 拾取地形（`modeRef` 门控，
   travel 时禁用并清掉高亮）。
-- **旅游模式**：`CityMarkers` 城市点（`places-registry`）+ `travelRailGroups`（国家概览 + 城市）+
+- **旅游模式**：`CityMarkers` 城市点（`places-registry`）+ `travelRailGroups`（当前大洲下按国家分组）+
   `ReadingPanel` 接 `travelGuideToSections`（通用段列表，走 `StructuredLesson` 的 `sections` 分支）。
-  点城市 → `CesiumMap.focusCity(lon, lat)` 飞过去；点国家概览 → `flyToCountryOverview()`。
+  点城市 → `CesiumMap.focusCity(lon, lat)` 飞过去 **+ 自动开始播报**；点国家概览 → 飞大洲中心。
+- **旅游播报（`lib/travel-speak.ts`）**：分段合成 + 预取管线（播第 i 段时合成第 i+1 段），
+  首段先出声，不等整篇。`useSentenceHighlight` 逐句高亮（`startHighlightWithTiming` 带 `baseIndex`，
+  无 word boundary 时 `startHighlightChunkEstimated` 估时）。按钮有"准备语音…"态（`ReadingPanel.isPreparing`）。
+- **旅游 POI 标注**：`lib/travel-pois.ts`（每城市攻略提到的地标概略坐标）+ `TravelPoiMarkers`：
+  选中城市时在地图上标机场（✈）+ 地标。只是静态标注，不做与播报同步的高亮（文本↔坐标匹配不可靠）。
+  **之后每个国家的旅游模式都要保持这套行为一致。**
 - **航线**：一条航线两套解说，跟随当前 `mode`（`getRouteNarration(id, lang, mode)`）；
   某模式解说为空时该模式下航线不播。4 条国内航线 study + travel 解说均已写。
 - **新增国家两个模式都要做**：study = 地形注册表 + 6 板块讲解；travel = `places-registry`
-  加城市 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide + `COUNTRY_OVERVIEWS` 加概览。
+  加城市 + `COUNTRY_TO_CONTINENT` 补映射 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide +
+  `COUNTRY_OVERVIEWS` 加概览 + `travel-pois.ts` 补该城市攻略提到的地标坐标。
   自检 `node --experimental-strip-types scripts/check-places.ts`（城市坐标/IATA/来源/双语内容齐全）。
 - **进度**：
   - 澳大利亚旅游模式：1 国家概览 + 7 城市（悉尼/墨尔本/布里斯班/珀斯/阿德莱德/凯恩斯/达尔文）。
