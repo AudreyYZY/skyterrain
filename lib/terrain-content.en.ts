@@ -860,6 +860,248 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ningaloo coast is the traditional sea country of the Yinigudura and other Aboriginal groups, with shell middens and rock art thousands of years old. There was a whaling station here in the 19th century (Norwegian Bay). A marine park was declared in 1987 and the area was World Heritage-listed in 2011.",
   },
 
+
+  kanas: {
+    seeing:
+      "Kanas Lake lies deep in the Altai Mountains at the far northern tip of China, at about 1,370 m — a long, narrow alpine lake. Its water changes colour with the weather, the season and the amount of suspended silt, from jade green to near-black blue, which is why it is called the \"colour-changing lake.\" It is ringed by dense Siberian conifer forest.",
+    formation:
+      "Kanas is a glacial-scour lake: a Quaternary glacier gouged a U-shaped valley, and after the ice retreated a terminal moraine (a ridge of glacier-carried gravel) dammed the valley mouth, so meltwater and rain pooled behind it. The lake is about 24 km long and around 190 m deep — one of the deepest lakes in China.",
+    observation:
+      "From the air Kanas is a curving blue ribbon set in a dark green sea of forest, held between two ridges, connected to snow mountains at one end and draining into the Kanas River at the other. The colour is uneven — greener and paler where the inflow carries silt, bluer downstream. Wolong Bay and Moon Bay to the west are large meanders of the river.",
+    distinguish:
+      "Compared with Sayram Lake in the Tianshan: Kanas is a glacial-scour lake gouged by ice and dammed by a moraine — long and narrow, boxed into a valley, ringed by conifer forest; Sayram is a fault-depression tectonic lake — rounded, sitting in an open mountain basin, ringed by grassland. Kanas is far lower, and drains to the Arctic Ocean via the Irtysh; Sayram is closed, internal drainage.",
+    concept:
+      "Kanas's \"colour change\" is not mysterious: extremely fine \"rock flour\" ground up by the glaciers upstream stays suspended in the water and scatters light green; when there is less silt the water is clear and deep blue. Many glacier-fed lakes do this. The Irtysh, which drains Kanas, is the only river system in China that flows to the Arctic Ocean.",
+    history:
+      "The lake area is traditional grazing land of the Tuvan people; the three Tuvan villages of Kanas, Hemu and Baihaba keep their log houses and transhumant herding. Winters are long and severe, and this is one of the few places in China where you see stands of Siberian larch, spruce and fir.",
+  },
+
+  sayram: {
+    seeing:
+      "Sayram Lake sits on the northern slope of the Tianshan at the south-western edge of the Junggar Basin, at about 2,070 m — the largest alpine lake in Xinjiang. It is a closed, internal-drainage lake, walled in by Tianshan mountain country, with deep blue, highly transparent water.",
+    formation:
+      "Sayram is generally taken to be a tectonic lake in a fault-depression mountain basin, later modified by glaciers. It is fed by snowmelt and rain off the surrounding mountains, has no outlet, and balances by evaporation, so it is slightly saline. Several old shorelines around the lake show that the water once stood higher than it does now.",
+    observation:
+      "From the air Sayram is a near-oval of deep blue, ringed by a band of green alpine meadow and then by the snow ranges of the Tianshan. A road runs around the east shore; strong winds blow constantly at the north-west. Because it is high and the water is deep and clear, it is bluer than any other water body around it.",
+    distinguish:
+      "See the Kanas entry. The core difference: Sayram is a tectonic lake in a down-faulted basin — rounded, ringed by grassland, closed and slightly saline; Kanas is a glacial-scour lake — long and narrow, ringed by conifer forest, part of an Arctic-draining river system.",
+    concept:
+      "Sayram shows why a large lake can persist in a high mountain basin: the basin is closed, snowmelt supply is steady, and inflow and evaporation are roughly in balance. With no outlet, minerals slowly accumulate and the water turns slightly salty — the common fate of every closed lake, and Sayram is still at an early stage of it.",
+    history:
+      "Sayram Lake was on the northern Silk Road route that crossed the Tianshan into the Ili valley. Kazakh and Mongol herders have moved stock through the lakeside pastures for generations. The lake had almost no fish until cold-water species were introduced in the 20th century.",
+  },
+
+  tianchi: {
+    seeing:
+      "Tianchi (Heavenly Lake) of the Tianshan lies on the northern slope of Bogda Peak, about 100 km east of Ürümqi, at around 1,900 m — a glacial-scour lake hung partway up the mountainside. From the window you can see the deep-blue lake, the spruce forest at its shore and the permanently snow-capped Bogda Peak behind it all at once. It was anciently called \"Yaochi.\"",
+    formation:
+      "Tianchi is a lake where a Quaternary glacier gouged a U-shaped valley, then a moraine ridge dammed the valley mouth after the ice retreated and meltwater pooled behind it. The lake is about 3 km long and around 100 m deep. Glacial striations, roches moutonnées and several moraine ridges around it record repeated advances and retreats of the ice.",
+    observation:
+      "From the air Tianchi is a crescent of deep blue on the north side of the Tianshan crest, boxed into a steep valley and standing higher than the valley floor below it. Above the lake is bare rock and the glaciers of Bogda; below it, spruce forest runs down the valley.",
+    distinguish:
+      "The Tianshan's Tianchi and Changbai Shan's Tianchi share a name but form completely differently: the Tianshan one is a glacial-scour lake dammed by a moraine — long and narrow, partway up the mountain; the Changbai one is a caldera lake formed by summit collapse after an eruption — near-circular, at the summit. The Tianshan Tianchi and Kanas are both glacial-scour lakes, but Tianchi is smaller, higher and closer to the snow peaks.",
+    concept:
+      "Tianchi is a close-up sample of \"how a glacier makes a lake\": the ice first gouges a deep valley like a bulldozer, then piles a dam of its own carried rubble across the valley mouth; the ice melts, the dam stays, and the water is held. Lakes of this \"scour-plus-moraine-dam\" type are common high in the Tianshan and Altai.",
+    history:
+      "Tianchi was anciently called \"Yaochi\" and appears in Tang-dynasty texts; legend makes it the place where the Queen Mother of the West feasted King Mu of Zhou. Local Kazakh herders graze the lakeside pastures in summer and move down the mountain in winter. It was named in China's first group of key national scenic areas in 1982.",
+  },
+
+  bosten: {
+    seeing:
+      "Bosten Lake lies in the Yanqi Basin at the southern foot of the Tianshan, at about 1,050 m, and is often called China's largest inland freshwater lake. The Kaidu River enters from the north-west and the Konqi River leaves to the south-west — it is an unusual inland lake with both an inflow and an outflow. Its west shore has extensive reed wetlands. It was anciently called the \"Western Sea.\"",
+    formation:
+      "Bosten Lake fills a fault-depression basin. Tianshan snowmelt reaches it via the Kaidu River, and the surplus leaves via the Konqi River toward the southern Tarim Basin (finally lost in the desert, never reaching the sea). Because there is an outlet, salt does not build up as it does in a purely closed lake, so the body of the lake is fresh, with only the eastern part slightly brackish.",
+    observation:
+      "From the air Bosten is an irregular sheet of turquoise at the southern foot of the Tianshan, mountains to the north and oasis farmland to the south. The west shore is a spread of pale reed marsh and small lakes (the \"small-lake district\"); the main body is open and deep blue. The Kaidu River has built a delta where it enters.",
+    distinguish:
+      "Bosten and Lake Ebi both sit low in a basin, but Bosten has an outlet, is mostly fresh, and is ringed by oasis farmland; Ebi has no outlet, is saline, and is ringed by salt flats and desert. Versus Qinghai Lake: Qinghai Lake is closed, saline and on the plateau; Bosten takes in and lets out, is fresh, and is in a basin.",
+    concept:
+      "Bosten shows that whether an inland lake has an outlet decides its fate: with an outlet, salt can leave with the water and the lake stays fresh; without one, evaporation removes only water and leaves salt, and the lake eventually turns salty. In recent decades increased upstream water use has made Bosten's level and water quality fluctuate considerably.",
+    history:
+      "Bosten Lake, anciently the \"Western Sea,\" was an important water source on the northern Silk Road, with the ancient kingdom of Yanqi on its shore. The lake produces reeds and freshwater fish.",
+  },
+
+  aibi: {
+    seeing:
+      "Lake Ebi sits in the south-western corner of the Junggar Basin, just inside the Alataw Pass — the largest saltwater lake in Xinjiang. It is the lowest collecting point of the western Junggar Basin, at about 190 m. Its area swings widely with the season and the inflow, and it is ringed by broad white salt flats and desert.",
+    formation:
+      "Several rivers — the Bortala, the Jing and others — bring salt into this closed hollow, which has no outlet, and strong evaporation leaves the salt behind, building a salt lake over a long time. In recent decades upstream water use has shrunk the lake noticeably, and the exposed lake bed has become one source of regional dust.",
+    observation:
+      "From the air Lake Ebi is an irregular, whitish sheet of shallow water or salt pan in the desert, facing straight into the Alataw Pass to the north — a gap between the Tianshan and the Alatau, where strong winds blow all year. You can see the wind carrying salt dust and sand off the surface in long plumes.",
+    distinguish:
+      "Lake Ebi and Lop Nur are both salt lakes at the low point of a basin, but Lake Ebi still has a seasonal water surface while Lop Nur is completely dry. Lake Ebi versus Bosten Lake: one is closed, salty and shrinking; the other takes in and lets out, is fresh, and is ringed by farmland.",
+    concept:
+      "Lake Ebi is a classic case of \"closed-lake shrinkage\": upstream river water is diverted for irrigation, less water reaches the lake, the lake contracts, and the dried lake bed's salt dust is lifted by the strong winds, affecting ecology and transport downwind. The same problem is common across the arid heart of Central Asia (the Aral Sea, for instance).",
+    history:
+      "The Alataw Pass is a famous wind gap with many gale days a year; the Jing–Yi–Huo railway and the China–Europe freight trains leave the country here. The lakeside was historically Mongol and Kazakh grazing land. The Ebi Lake wetland reserve was raised to national level in 2007.",
+  },
+
+  "lop-nur": {
+    seeing:
+      "Lop Nur lies at the far eastern end of the Tarim Basin. It was once the terminal lake of the Tarim, Konqi and other rivers, and one of the largest lakes of the Western Regions. It dried out completely in the mid-to-late 20th century and is now a plain of salt crust and yardangs. In satellite images, rings of former shoreline make the dry lake bed look like an ear — the \"ear of the Earth.\"",
+    formation:
+      "Lop Nur is the lowest collecting area of the Tarim Basin, and historically it \"wandered\" around the basin as the rivers changed course, growing and shrinking. In modern times heavy upstream irrigation plus a drying climate cut the inflow sharply, and the lake dried out completely around the 1970s, leaving a salt crust tens of centimetres thick. Wind erosion has carved fields of yardangs across the dry bed and its surroundings.",
+    observation:
+      "From the air Lop Nur is a large, stark-white salt-crust plain in the eastern basin, with concentric pale stripes (the \"big ear\") marking shorelines of different ages. To the north-west is a field of yardang mounds; to the south, the gobi of the Altun Mountains. In recent years large, regular blue-green ponds have appeared in the lake area — artificial brine ponds for mining potash.",
+    distinguish:
+      "Lop Nur and Lake Aydingkol in the Turpan Basin are both salt pans at the low point of a basin, but Aydingkol is below sea level and still holds a little seasonal water, while Lop Nur is above sea level and essentially all dry. Versus Qinghai Lake: one was once vast and is now gone; the other is still China's largest lake.",
+    concept:
+      "Lop Nur is an extreme case of the fate of a \"terminal lake\": the water of an inland river all ends up at the lowest point of the basin, with nowhere to go but evaporation, and salt keeps accumulating; as soon as the upstream water is taken, the terminal lake is the first thing to dry up. It is a reminder that in a dry region, water used upstream often means the loss of the lakes and oases downstream.",
+    history:
+      "Lop Nur was a key node of the ancient Silk Road, and the kingdom of Loulan was built on its shore and abandoned when its water failed. In 1964 China's first atomic bomb was tested in the Lop Nur area. In 1980 the scientist Peng Jiamu disappeared here on an expedition, and in 1996 the trekker Yu Chunshun died nearby. The area now holds an important national potash-production base.",
+  },
+
+
+  "tarim-river": {
+    seeing:
+      "The Tarim River runs west to east along the northern rim of the Tarim Basin for about 2,000 km — China's longest inland river. It has no outlet to the sea and finally dies away in the desert and terminal lakes of the south-eastern basin. From the air it is a curving line at the edge of the yellow sand sea, fringed with dark-green wild poplar and farmland.",
+    formation:
+      "The Tarim forms where three source rivers — the Aksu, the Yarkand and the Hotan — meet near Alar, carrying snowmelt from the Tianshan, Kunlun and Pamirs. The basin floor is extremely flat and the water is silt-laden, so the channel keeps silting up and shifting — a classic \"wandering river\" — and its floodplain grows salt- and drought-tolerant wild poplar.",
+    observation:
+      "From the air the Tarim's channel looks like a braid that splits and rejoins, swinging left and right across flat desert. Hugging the channel is a belt of poplar, dark green in summer or gold in autumn; grey gobi lies beyond. The river's tail spreads out and seeps away near Lake Taitema.",
+    distinguish:
+      "The Tarim and the Irtysh are both in northern Xinjiang, but the Tarim is an inland river that cannot get out, its flow swinging sharply with the season, its banks desert poplar; the Irtysh is an exterior-drainage river (to the Arctic via Russia), its flow steady, its banks dense poplar woods and meadow.",
+    concept:
+      "The Tarim is the best example of an \"inland river\": fed entirely by mountain snowmelt, it loses water all the way to evaporation, seepage and irrigation, so there is less and less of it downstream until it dries in the sand. In the 20th century the lower river ran dry for years and poplars died in swathes; since 2000, deliberate ecological water releases have restored the lower channel and some of the forest.",
+    history:
+      "The Tarim's oases string together the towns of Korla, Alar and Yuli. Its terminal lake was once Lop Nur, and as the flow shrank the end point kept retreating upstream. Its rise and fall is a mirror of thousands of years of the relationship between people and an arid land.",
+  },
+
+  ertis: {
+    seeing:
+      "The Irtysh rises on the southern slope of the Altai and flows from south-east to north-west across northern Xinjiang; beyond the border it runs through Kazakhstan and Russia and finally reaches the Arctic Ocean — the only river in China belonging to an Arctic drainage. From the air it meanders in a broad, flat valley lined with continuous poplar woods and green meadow.",
+    formation:
+      "The Irtysh follows the fault zone along the front of the Altai, giving it a wide, flat valley. It is fed mainly by Altai snowmelt and relatively generous rain, and as an exterior-drainage river its flow is far steadier than Xinjiang's inland rivers, so dense valley forest can grow along it.",
+    observation:
+      "From the air the Irtysh is a full, blue ribbon at the southern foot of the Altai, its channel meandering freely in a broad valley with many oxbow lakes and mid-channel bars. The \"Five-Colour Bluff\" near Burqin is a coloured rock bank eroded on one side of the river. The poplar and willow belts along the banks are darker than the surrounding grassland.",
+    distinguish:
+      "See the Tarim River entry. What makes the Irtysh special: it is Xinjiang's only exterior-drainage river, its water eventually reaching an ocean, so its regime is steady and its valley green; Xinjiang's other rivers either drain internally or end in the inland lakes of Central Asia.",
+    concept:
+      "The Irtysh shows what the interior/exterior-drainage divide means for a river: a river that can reach an ocean flushes its silt and salt away with the water, and its valley stays fertile and moist; an inland river that cannot get out grows saltier and weaker downstream. China's interior/exterior drainage boundary runs right through the Irtysh valley in this stretch.",
+    history:
+      "The Irtysh valley has long been Kazakh grazing land and an important route from Xinjiang into Central Asia. The river holds cold-water fish such as taimen. In recent decades water diverted from the Irtysh has eased shortages elsewhere in northern Xinjiang.",
+  },
+
+  "yarkant-river": {
+    seeing:
+      "The Yarkand River rises on the northern slope of the Karakoram and flows from south-west to north-east through the western parts of the Kashgar and Hotan areas — the largest single source of the Tarim River. From the air it comes out of the brown mountains toward the Kunlun and spreads into a huge alluvial fan at the mountain front, with a string of oases along the fan edge.",
+    formation:
+      "The Yarkand's water is glacial meltwater from the Karakoram and the Pamirs. It carries a heavy silt load and builds a very large alluvial fan on the south-western rim of the Tarim Basin; the oases of Yarkand, Makit and Bachu all sit on this fan. Its lower channel wanders and shifts.",
+    observation:
+      "From the air the river's mouth is a radiating spread of channels and a fan of oasis, greenest near the mountain gap where there is most water and narrowing toward the desert. When the glaciers melt hard in summer the river runs high and muddy yellow.",
+    distinguish:
+      "The Yarkand River versus the Tarim main stem: the Yarkand is farther south and farther upstream, one of the Tarim's main sources; it becomes the \"Tarim\" only after the sources join. Versus the Ili River: the Yarkand is in an extremely arid zone, fed by glaciers, its banks oasis farming; the Ili is in a semi-humid zone, fed by westerly rain, its banks continuous farmland and grassland.",
+    concept:
+      "The Yarkand River is a textbook case of \"glacial meltwater feeding oases\": the oases are not sited at random but locked onto the edge of the alluvial fan, where the water table is high and canal water reaches. Off that water line it is barren. In years with more glacial melt the river is fuller and the harvests good; as the glaciers retreat, the future of the oases is in question.",
+    history:
+      "The Yarkand valley is the lifeline of the south-western Tarim oases. The Yarkand Khanate of the 16th–17th centuries had its capital here and was a political and cultural centre of the Western Regions. Dolan culture also grew up along this river at the desert's edge.",
+  },
+
+  "ili-valley": {
+    seeing:
+      "The Ili Valley, in western Xinjiang, is a triangular valley in the Tianshan that opens to the west. The Ili River winds along its floor between farmland, orchards and grassland, with the snow peaks of the Tianshan to the north. Greener and moister than anywhere else in Xinjiang, it is called \"the Jiangnan beyond the passes.\"",
+    formation:
+      "The valley mouth faces west, straight into the prevailing westerlies, so moisture from the Atlantic and Central Asia is funnelled in and drops more rain on the windward slopes (locally over 500 mm a year, far more than southern Xinjiang). River alluvium has laid a flat, fertile plain on the valley floor, and the flanking mountains carry vertical belts of forest and meadow.",
+    observation:
+      "From the air the Ili Valley is an unusually broad, vivid-green lowland among the Tianshan ranges: the Ili River's meanders and a spread of checkerboard fields (wheat, maize, lavender) down the middle, dark spruce forest and alpine meadow on the flanking slopes, and the western end open, merging into the plains on the Kazakhstan side.",
+    distinguish:
+      "The Ili Valley is the opposite of the Tarim and Yarkand valleys of southern Xinjiang: it opens west and catches westerly moisture, so it is moist, rainy and given to dryland farming and natural grassland; the southern valleys are boxed in by mountains and desert, extremely arid, and can only support glacier-fed oasis farming. The Ili River flows west into Lake Balkhash in Kazakhstan — an exterior-drainage river.",
+    concept:
+      "The Ili Valley is a classic case of \"terrain deciding climate\": both are in the Tianshan, both in Xinjiang, yet only because the valley mouths face different ways, one catches the rain and one lies in the rain shadow. This is also why Xinjiang's oases and population are so concentrated on the northern slope of the Tianshan and in places like Ili — windward and near water.",
+    history:
+      "Ili has long been an important farming and grazing region of the Western Regions. In the Qing it was the seat of the \"General of Ili,\" the top military-civil authority for Xinjiang. The Khorgos port is an important land crossing into Central Asia. Today the Ili Valley is a major grain and specialty-crop region of Xinjiang.",
+  },
+
+  narat: {
+    seeing:
+      "The Nalati grassland lies in the heart of the Tianshan, along the Kunes valley at the eastern end of the Ili Valley, mostly above about 1,800 m. It is classic mountain meadow steppe: gently rolling ground, a thick green sward, stands of Tianshan spruce along the valley sides, and the snow peaks of the Tianshan beyond.",
+    formation:
+      "Nalati lies in a down-faulted valley within the Tianshan. Its mouth catches some westerly moisture, so it gets far more rain than the surrounding desert, and the high elevation, low temperature and weak evaporation together support a well-watered alpine meadow. Deep winter snow feeds the pasture in spring and summer.",
+    observation:
+      "From the air Nalati is a rolling green slope between Tianshan snow peaks, white Kazakh felt tents scattered across it, dark spruce forest running in bands down the shady slopes and valleys. The Kunes River winds along the valley floor. It is deep green in summer, with the spruce edges turning gold in autumn.",
+    distinguish:
+      "Nalati and Bayanbulak are both in valleys or basins within the Tianshan, but Nalati is lower, warmer, its meadow lusher, with large areas of spruce forest; Bayanbulak is higher (above about 2,400 m), colder, flatter, with more marsh wetland and almost no forest.",
+    concept:
+      "Nalati shows how a mountain meadow comes about: high enough that forest cannot grow, not yet so high that only bare rock and ice remain, plus steady rain and snowmelt — the result is this meadow belt between the forest belt and the alpine belt. It is one link in the vertical zonation of the Tianshan, and its best summer pasture.",
+    history:
+      "Nalati is traditional Kazakh summer pasture; each summer the herders move stock up the mountain along fixed routes. The name \"Nalati\" is usually explained as \"the place where the sun is.\" In 2013 the Xinjiang Tianshan (including the Nalati area) was inscribed as World Natural Heritage for its glaciers, snow peaks and vertical natural zones.",
+  },
+
+  bayanbulak: {
+    seeing:
+      "The Bayanbulak grassland lies in a mountain-ringed high basin in the central Tianshan, above about 2,400 m. The basin floor is very flat and poorly drained, with wide areas of marsh and meandering channels. The Kaidu River loops through it in countless tight bends — the famous \"Nine Bends and Eighteen Turns.\"",
+    formation:
+      "Bayanbulak is a down-faulted basin within the Tianshan. Walled in by mountains, its floor is flat with a tiny gradient, so the river runs slowly, erodes sideways, and develops dense free meanders and oxbow lakes. The high, cold climate has weak evaporation, the ground stays wet year-round, and it is a broad expanse of cold alpine meadow and marsh.",
+    observation:
+      "From the air Bayanbulak is a flat grass bowl held by snow mountains, the Kaidu River coiled across it in row after row of close silver hairpins that fill with reflected light at sunset. Pools and marshes are scattered through the basin — a breeding ground for swans and other waterbirds.",
+    distinguish:
+      "See the Nalati grassland entry. Bayanbulak's key traits: high, flat and wet — so it is a combination of meanders, marsh and cold alpine meadow, not the forested rolling slopes of Nalati.",
+    concept:
+      "Bayanbulak is a living lesson in why a river makes big bends: on a valley floor with almost no gradient the water has no drive to cut down, so it erodes sideways instead — cutting the concave bank, building the convex bank — and the bends grow until the river cuts them off as oxbow lakes. This extreme free meandering needs exactly such a closed, flat high basin.",
+    history:
+      "\"Bayanbulak\" means \"abundant springs\" in Mongolian; it was historically pasture of the Mongol Torghut people. One of China's earlier swan nature reserves is here, and large numbers of whooper, tundra and mute swans breed on it each year. It is also part of the Xinjiang Tianshan World Natural Heritage.",
+  },
+
+  kuche: {
+    seeing:
+      "The Kuqa (Kizilya) Grand Canyon lies in the mountains north of Kuqa city, on the southern slope of the Tianshan. It is a narrow canyon cut into red rock, with sheer walls, a slot at its narrowest that admits only one or two people abreast, and only a strip of sky overhead. The rock is an intense ochre-red in the sun.",
+    formation:
+      "The canyon is cut into Mesozoic–Cenozoic red sandstone and mudstone on the southern Tianshan. These beds are fairly soft, and Tianshan floods and snowmelt working down the joints over a long time, plus wind erosion, have cut this deep narrow slot, leaving water- and wind-worn pillars and niches on the walls.",
+    observation:
+      "From the air the Kuqa Grand Canyon is a winding deep slit in the brown-red mountains of the southern Tianshan, the main gorge flanked by many smaller side slits. The red walls contrast sharply with the sparse grey-green desert plants on top. Just outside the southern mouth is the farmland of the Kuqa oasis.",
+    distinguish:
+      "The Kuqa Grand Canyon and the Flaming Mountains are both erosion of Mesozoic red beds in the Turpan–Kuqa region, but the Kuqa canyon is a narrow, deep, downcut gorge — you look at enclosed walls; the Flaming Mountains are a low ridge cut to pieces — spread out east–west, you look at a continuous ochre-red massif. Against the Three Gorges of the Yangtze it is far smaller and has no great river running through it.",
+    concept:
+      "The Kuqa Grand Canyon shows that an arid region can also have dramatic running-water landforms: rain is scarce all year, but short-lived floods from Tianshan snowmelt and occasional storms, carrying gravel and concentrated in narrow gullies, cut down powerfully and can saw a deep canyon into soft rock within a few hundred thousand years.",
+    history:
+      "Kuqa was the site of the ancient kingdom of Qiuci (Kucha), an important Buddhist centre on the Silk Road, with large cave-temple complexes such as the Kizil Caves nearby. Ancient beacon towers and cave sites survive around the canyon. It is now a national geopark.",
+  },
+
+  "flaming-mountains": {
+    seeing:
+      "The Flaming Mountains run along the northern rim of the Turpan Basin for about 100 km — a bare, ochre-red low range. At noon in summer the sun-baked red rock shimmers in the heat haze and, from a distance, looks like it is burning, hence the name. It is one of the hottest places in China in summer.",
+    formation:
+      "The Flaming Mountains are an anticline on the northern rim of the Turpan Basin that has been lifted and then eroded, built mainly of Mesozoic red sandstone, mudstone and conglomerate; iron and manganese oxides in the rock give it its red colour. Water working down the joints has cut a set of near-parallel deep gullies, and the range is almost bare of plants. The basin is closed and low, so heat cannot escape and ground temperatures are extreme.",
+    observation:
+      "From the air the Flaming Mountains are a continuous red rock ridge with regularly spaced gullies on the north side of the Turpan Basin, gobi and karez oasis to the south, the brown mountains of the Tianshan to the north. Several streams (such as Mutou Gully and Grape Valley) cut straight across the range, and those gullies are green strips.",
+    distinguish:
+      "See the Kuqa Grand Canyon entry. The Flaming Mountains are \"broad and low, regularly gullied, continuous as a ridge\" — you look at the continuous red massif and its sharp contrast with the oasis to the south; the Kuqa Grand Canyon is a single \"narrow and deep\" gorge.",
+    concept:
+      "The Flaming Mountains are a combination of \"anticline ridge plus dry heat\": the beds were arched into an anticline, the exposed soft red layers were cut by water into regular gullies; add a closed, low basin, clear skies and dark rock that absorbs heat strongly, and you get the extreme ground temperatures here. The actual temperature records come from nearby weather stations, not from the range itself.",
+    history:
+      "The Flaming Mountains are known to every Chinese reader from Journey to the West, where the Monkey King borrows a banana-leaf fan. Historically they lay on the northern Silk Road, with the ruined city of Gaochang and the Bezeklik caves at their foot. Grape Valley on the southern side uses Tianshan snowmelt and is a well-known grape-growing area.",
+  },
+
+  gurbantunggut: {
+    seeing:
+      "The Gurbantunggut Desert lies in the centre of the Junggar Basin, about 48,000 km² — China's second-largest desert and its largest fixed and semi-fixed desert. Its dunes are lower and gentler than the Taklamakan's; the surface carries drought-tolerant saxaul and large numbers of spring ephemerals, and snow can be seen in winter.",
+    formation:
+      "The Junggar Basin has gaps in the north-west (the Irtysh valley, the Alataw Pass) that let in some westerly moisture, and steady winter snowmelt on top of that, so annual rainfall is higher than in the Tarim Basin. That moisture lets plants root on the dunes and hold the sand, so this is mostly fixed and semi-fixed dunes rather than a pure sea of moving sand.",
+    observation:
+      "From the air the Gurbantunggut is a mottled grey-yellow-and-green sand sheet, its ridges mostly long north–south strips with a network of shrubs in the troughs and on the flanks. When the ephemerals green up in spring the surface briefly flushes pale green. The basin rim is the oasis belt along the northern foot of the Tianshan and Altai.",
+    distinguish:
+      "The Gurbantunggut and the Taklamakan: one is fixed and semi-fixed, vegetated, its dunes low and gentle, with winter snow, and smaller; the other is moving, almost bare, its dunes tall, extremely arid, and far larger. The reason is that the Junggar Basin is half-open and gets a little moisture, while the Tarim Basin is sealed on all sides.",
+    concept:
+      "The Gurbantunggut shows that \"a little water can lock down the sand\": as long as rainfall and snowmelt are enough for xerophytes like saxaul to survive, their roots and litter fix the dune surface and the sand stops moving freely. It is China's highest-latitude desert (about 44–46° N), cold and snow-covered in winter — unusual among the world's deserts.",
+    history:
+      "The desert holds relict wild poplar and saxaul woodland and is habitat for animals such as Przewalski's horse and the goitered gazelle. Oilfields such as Karamay and transport lines lie around the basin rim, while the desert interior is little peopled and ecologically fragile.",
+  },
+
+  kumtag: {
+    seeing:
+      "The Kumtag Desert (this entry refers to the patch south of Shanshan) lies in the eastern Turpan Basin, at the southern foot of the eastern Tianshan. \"Kumtag\" is simply \"sand mountain\" in Turkic. What is most striking here is that the desert runs right up to the edge of Shanshan town, with almost no transition — a few steps out of town and you are at dunes tens of metres high.",
+    formation:
+      "The sand of this patch is fine sand blown from the surrounding gobi and dry riverbeds by the prevailing north-east wind and piled in the lee at the southern foot of the Tianshan. It is extremely arid, with little rain and very strong evaporation, and the dunes are mostly tall moving dunes — crescent, linear, and tall pyramidal sand mountains.",
+    observation:
+      "From the air the Kumtag is a field of golden dunes on the southern edge of the Shanshan oasis, town and vineyard checkerboard on one side, a run of rolling sand mountains on the other, the line between them very sharp. The surface carries clear, regular wind ripples.",
+    distinguish:
+      "The Kumtag (this Shanshan patch) versus the Gurbantunggut: the Kumtag is moving dunes, almost bare, drier; the Gurbantunggut is fixed and semi-fixed, with saxaul, and snowy in winter. Against the Taklamakan it is far smaller, but likewise tall moving dunes. (A larger, separate Kumtag Desert, a wild-camel reserve, lies east of Lop Nur and shares the name.)",
+    concept:
+      "The Kumtag is a good place to watch \"how wind shapes dunes\": different wind regimes make different dune forms — crescent under a single dominant wind, linear under two alternating directions, tall pyramidal sand mountains where winds from several directions converge. Here several forms sit close together and are easy to read.",
+    history:
+      "The desert edge was a segment of the ancient Silk Road, with old beacon towers nearby. The name Shanshan (anciently Loulan, later the kingdom of Shanshan) comes from a Western-Regions kingdom of this area. It is now a desert scenic area whose feature is the town meeting the sand.",
+  },
+
   // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
 
   kashgar: {
