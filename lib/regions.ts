@@ -55,8 +55,8 @@ export const REGIONS: Region[] = [
     name: "欧洲",
     nameEn: "Europe",
     center: { lon: 15.0, lat: 52.0, height: 6500000 },
-    terrainCount: 0,
-    available: false,
+    terrainCount: 8,
+    available: true,
   },
   {
     id: "africa",

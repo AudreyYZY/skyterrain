@@ -3564,6 +3564,140 @@ const BANKS_PENINSULA: TerrainEntry = {
 };
 
 // ============================================================
+// 英国（regionId: "europe"，country: "uk"）
+// 坐标据 British Geological Survey（BGS）/ Ordnance Survey /
+// NatureScot / Natural England / Natural Resources Wales / UNESCO
+// ============================================================
+
+const SCOTTISH_HIGHLANDS: TerrainEntry = {
+  id: "scottish-highlands",
+  nameZh: "苏格兰高地",
+  nameEn: "Scottish Highlands",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "本尼维斯山（Ben Nevis）", lon: -5.0037, lat: 56.7969, elevation: 1345, kind: "peak" },
+  bbox: [-6.5, 56.3, -3.3, 58.6],
+  axis: [[-5.8, 56.6], [-4.2, 58.4]],
+  viewFrom: 135,
+  viewScale: 2.2,
+  label: { lon: -4.8, lat: 57.3, rotation: -40 },
+  pois: [
+    { name: "大峡谷（Great Glen）", lon: -4.7, lat: 57.1, note: "沿大峡谷断层的直线谷地，串起尼斯湖等" },
+  ],
+  source: "苏格兰高地：加里东造山运动（约4.9–3.9亿年前）形成、后经反复冰川作用的古老山地；本尼维斯山1345m 为英国最高峰（BGS / Ordnance Survey）",
+};
+
+const CAIRNGORMS: TerrainEntry = {
+  id: "cairngorms",
+  nameZh: "凯恩戈姆山",
+  nameEn: "Cairngorms",
+  category: "plateau",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "本麦克杜伊山（Ben Macdui）", lon: -3.6690, lat: 57.0703, elevation: 1309, kind: "peak" },
+  bbox: [-4.0, 56.9, -3.3, 57.25],
+  viewScale: 1.7,
+  label: { lon: -3.65, lat: 57.08, rotation: 0 },
+  source: "凯恩戈姆山：约4.27亿年前侵位的花岗岩被抬升、剥露形成的高原，含英国多座最高峰；顶面接近苔原环境，冰斗发育；英国面积最大的国家公园（BGS / NatureScot）",
+};
+
+const SOUTHERN_UPLANDS: TerrainEntry = {
+  id: "southern-uplands",
+  nameZh: "南部高地",
+  nameEn: "Southern Uplands",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "梅里克山（Merrick）", lon: -4.4700, lat: 55.1400, elevation: 843, kind: "peak" },
+  bbox: [-5.1, 54.6, -2.0, 55.7],
+  axis: [[-4.8, 54.8], [-2.3, 55.5]],
+  viewScale: 2.0,
+  label: { lon: -3.6, lat: 55.3, rotation: -60 },
+  source: "南部高地：南部高地断层与英格兰边界之间的浑圆丘陵，由奥陶纪—志留纪硬砂岩、页岩组成的增生楔抬升而成（BGS）",
+};
+
+const SNOWDONIA: TerrainEntry = {
+  id: "snowdonia",
+  nameZh: "斯诺登尼亚",
+  nameEn: "Snowdonia / Eryri",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "斯诺登峰（Yr Wyddfa / Snowdon）", lon: -4.0765, lat: 53.0685, elevation: 1085, kind: "peak" },
+  bbox: [-4.35, 52.75, -3.75, 53.20],
+  axis: [[-4.15, 52.85], [-3.85, 53.15]],
+  viewFrom: 90,
+  viewScale: 1.5,
+  label: { lon: -4.05, lat: 53.05, rotation: -50 },
+  source: "斯诺登尼亚 / Eryri：威尔士西北部，寒武纪—奥陶纪沉积岩与火山岩强烈冰蚀的山地；斯诺登峰1085m 为威尔士暨英格兰-威尔士最高峰（BGS / Natural Resources Wales）",
+};
+
+const BRECON_BEACONS: TerrainEntry = {
+  id: "brecon-beacons",
+  nameZh: "布雷肯比肯斯",
+  nameEn: "Brecon Beacons / Bannau Brycheiniog",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "彭伊范山（Pen y Fan）", lon: -3.4360, lat: 51.8842, elevation: 886, kind: "escarpment" },
+  bbox: [-3.9, 51.75, -3.0, 52.05],
+  axis: [[-3.8, 51.90], [-3.1, 51.88]],
+  viewFrom: 180,
+  viewScale: 1.6,
+  label: { lon: -3.44, lat: 51.90, rotation: -6 },
+  source: "布雷肯比肯斯 / Bannau Brycheiniog：南威尔士的老红砂岩（泥盆纪）陡崖，北坡有冰蚀凹地；彭伊范山886m 为南不列颠最高点；国际暗夜保护区（Natural Resources Wales / BGS）",
+};
+
+const LAKE_DISTRICT: TerrainEntry = {
+  id: "lake-district",
+  nameZh: "湖区",
+  nameEn: "Lake District",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "斯科费尔峰（Scafell Pike）", lon: -3.2116, lat: 54.4542, elevation: 978, kind: "peak" },
+  bbox: [-3.45, 54.35, -2.80, 54.70],
+  viewScale: 1.7,
+  label: { lon: -3.1, lat: 54.52, rotation: 0 },
+  pois: [
+    { name: "温德米尔湖", lon: -2.94, lat: 54.36, note: "英格兰最大的天然湖，冰蚀带状湖" },
+  ],
+  source: "湖区：英格兰西北部，奥陶纪火山岩（Borrowdale 火山群）与板岩组成的穹隆，被冰川刻成放射状谷地和带状湖；斯科费尔峰978m 为英格兰最高峰；世界遗产（UNESCO / BGS）",
+};
+
+const PENNINES: TerrainEntry = {
+  id: "pennines",
+  nameZh: "奔宁山脉",
+  nameEn: "Pennines",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "克罗斯费尔（Cross Fell）", lon: -2.4869, lat: 54.7020, elevation: 893, kind: "escarpment" },
+  bbox: [-2.7, 53.0, -1.6, 55.5],
+  axis: [[-2.2, 53.2], [-2.3, 55.4]],
+  viewFrom: 90,
+  viewScale: 2.4,
+  label: { lon: -2.1, lat: 54.3, rotation: -80 },
+  source: "奔宁山脉：常被称为“英格兰的脊梁”，是石炭纪石灰岩、砂岩和煤系组成的一条南北向背斜隆起，构成英格兰东、西流向河流的分水岭（BGS / Ordnance Survey）",
+};
+
+const MOURNE_MOUNTAINS: TerrainEntry = {
+  id: "mourne-mountains",
+  nameZh: "莫恩山",
+  nameEn: "Mourne Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "多纳德山（Slieve Donard）", lon: -5.9214, lat: 54.1803, elevation: 850, kind: "peak" },
+  bbox: [-6.15, 54.08, -5.75, 54.25],
+  axis: [[-6.05, 54.12], [-5.80, 54.20]],
+  viewFrom: 180,
+  label: { lon: -5.95, lat: 54.16, rotation: -20 },
+  source: "莫恩山：北爱尔兰东南部，约5600万年前（古近纪）侵位的花岗岩被剥露形成的紧凑山群，紧邻海岸；多纳德山850m 为北爱尔兰最高峰（BGS / Geological Survey of Northern Ireland）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -3648,6 +3782,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   BAY_OF_ISLANDS, ABEL_TASMAN_COAST, COROMANDEL_PENINSULA, PUNAKAIKI, MARLBOROUGH_SOUNDS,
   WHAKAARI_WHITE_ISLAND, STEWART_ISLAND,
   WAITOMO, AUCKLAND_VOLCANIC_FIELD, BANKS_PENINSULA,
+  // ===== 欧洲 / 英国 =====
+  SCOTTISH_HIGHLANDS, CAIRNGORMS, SOUTHERN_UPLANDS, SNOWDONIA,
+  BRECON_BEACONS, LAKE_DISTRICT, PENNINES, MOURNE_MOUNTAINS,
 ];
 
 /**
@@ -3745,6 +3882,14 @@ const WIDE_VIEW: Record<string, number> = {
   "ryukyu-islands": 2.6,
   "shinano-river": 2.0,
   "tone-river": 2.1,
+  // 欧洲 / 英国
+  "scottish-highlands": 2.4,
+  cairngorms: 1.8,
+  "southern-uplands": 2.2,
+  snowdonia: 1.6,
+  "brecon-beacons": 1.7,
+  "lake-district": 1.8,
+  pennines: 2.5,
   // 大洋洲 / 新西兰
   "aoraki-southern-alps": 2.4,
   "kaikoura-ranges": 1.7,

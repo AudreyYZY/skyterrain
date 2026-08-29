@@ -3200,4 +3200,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Banks Peninsula (Māori: Horomaka) was an important area of settlement and resources for Ngāi Tahu, with several settlements around the two harbours. In the 1830s Akaroa Harbour was the target of French and British settlement schemes, and the town of Akaroa still keeps French place names and buildings. In the 19th century the peninsula's native forest was extensively felled for timber and pasture, and from the 20th century there has been sustained replanting.",
   },
+
+  "scottish-highlands": {
+    seeing:
+      "The Scottish Highlands are a large area of ancient mountains in the north of the island of Great Britain, separated from the Lowlands to the south by the Highland Boundary Fault. They are not high overall, but rugged, harsh in climate and sparsely populated — the wildest region in Britain. The highest peak, Ben Nevis, is 1,345 m, the highest point in the whole of the United Kingdom.",
+    formation:
+      "The skeleton of the Highlands formed in the Caledonian orogeny about 490 to 390 million years ago — an ancient ocean (the Iapetus) closed, two land masses collided, and the rocks were compressed, metamorphosed and pushed up into a great mountain range. Over the following hundreds of millions of years that range was eroded down, and over the last ~2.6 million years it was re-carved by repeated glaciations, leaving today's deep glens, corries and fiord-like sea inlets. A dead-straight fault, the Great Glen Fault, slices the Highlands diagonally into a north-eastern and a south-western half.",
+    observation:
+      "From the air the Highlands are a dark brown and deep green mountain land cut to pieces by countless lochs and long narrow sea inlets, the summits rounded or sharp-ridged, the glens often holding a long thin loch. The west coast is especially broken, drowned glacial valleys; along the Great Glen an almost perfectly straight valley strings several long lochs, including Loch Ness, in a line. Snow lies on the tops through winter.",
+    distinguish:
+      "The Scottish Highlands and the Alps have both been reshaped by glaciers, but the Alps are young fold mountains from tens of millions of years ago and are still rising; the Highlands are an old range from 400 million years ago that stopped growing long ago and has been stripped down to its \"roots\". They are higher, more continuous and wilder than the Pennines or the Lake District of England.",
+    concept:
+      "The Scottish Highlands are a case study in an old range levelled and then \"revived\" by glaciers: a mountain range eroded for hundreds of millions of years would normally become a gentle upland, but the Quaternary glaciers cut deep along the old river valleys, re-carving the smooth plateau into deep glens and steep peaks. To recognise this, look for large gentle \"remnant plateau surfaces\" on the summits while the valleys are deep and steep. A common misconception is that rugged mountains must be young.",
+    history:
+      "The Highlands were long a Gaelic-speaking society organised by clan. In the Highland Clearances of the 18th and 19th centuries, large numbers of smallholding tenants were moved off the land in favour of sheep, and many emigrated overseas — a major reason the Highlands are so thinly populated today. From the 20th century the Highlands have relied on hydroelectricity, forestry, tourism and whisky distilling.",
+  },
+
+  "cairngorms": {
+    seeing:
+      "The Cairngorms, in the eastern Scottish Highlands, are a granite plateau and the largest area of high ground in Britain — five of the six highest mountains in Britain are here, and Ben Macdui, at 1,309 m, is the second-highest peak in the whole country. The plateau surface is close to an arctic-tundra environment, bitterly cold and windy in winter, an important area for British skiing and mountaineering, and the largest national park in the UK.",
+    formation:
+      "The Cairngorm granite cooled deep in the crust as a large body of magma about 427 million years ago, and was later exposed as the overlying rock eroded away and the granite mass was uplifted. Granite is fairly uniform and erosion-resistant, so it was worn to a gently rolling plateau surface; during the ice ages, glaciers gouged a ring of steep round corries into the plateau edge, while the plateau centre, protected under a cold-based ice cap, kept much of its ancient gentle surface.",
+    observation:
+      "From the air the Cairngorms are a broad, pale-brown upland with almost no sharp peaks, the top flat and dotted with boulder fields and small lochs; but the edge of the plateau suddenly drops away into a ring of deep-cut corries and U-shaped valleys holding deep lochs (such as Loch Avon). The lower slopes around them carry large stands of native Scots pine forest.",
+    distinguish:
+      "The Cairngorms and the western Highlands around Ben Nevis are both part of the Scottish Highlands, but the Cairngorms are a \"plateau type\" — a large gentle granite surface with steep corries at the edge; the western Highlands are more of a \"peak type\", with sharp ridges and deeper glens. Compared with the high Alps, the Cairngorms have no permanent glaciers, but the climate and landforms of the plateau top are near-subarctic.",
+    concept:
+      "The Cairngorms are a case study in selective glacial erosion: in the same upland, glaciers flowing fast at the edge erode strongly, gouging corries and deep valleys; in the centre, the base of the ice cap is frozen and barely moves, so it \"freezes in\" and preserves the ancient gentle surface. A common misconception is that ice-covered ground must be scoured flat — a cold-based ice cap is in fact the best \"protective cover\".",
+    history:
+      "The Cairngorms area has long been a place for hunting (deer, grouse) and grazing, and the old pine forest in the hills is the largest surviving stand of native forest in Scotland. In the 20th century roads and ski tows were built into the mountains. The Cairngorms National Park was established in 2003, and after a boundary extension in 2010 it became the largest national park in the UK, focused on protecting the alpine ecology and the old pinewoods.",
+  },
+
+  "southern-uplands": {
+    seeing:
+      "The Southern Uplands are a belt of hill country in southern Scotland, between the Southern Upland Fault and the border with England, separating the Central Lowlands of Scotland from England. The hills are lower and more rounded than the northern Highlands, covered in grass and pasture, with the highest, the Merrick, at 843 m. Historically this was the country that people and armies had to cross between Scotland and England.",
+    formation:
+      "The rocks of the Southern Uplands are Ordovician to Silurian greywacke and shale (about 490 to 420 million years old), originally sediment on the floor of the Iapetus Ocean. In the Caledonian orogeny, as the ocean closed, these sea-floor sediments were scraped up layer by layer and stacked, imbricate, onto the continental margin, forming an accretionary wedge, then uplifted and folded. Long erosion and glaciation then wore it to today's gentle hills.",
+    observation:
+      "From the air the Southern Uplands are a rolling, rounded, largely rock-free green-brown hill country, divided by a few broad valleys (the Tweed, the Nith and others); the slopes carry large conifer plantations and sheep farms, and the valley floors hold towns and roads. It has none of the deep lochs and fiord-like inlets of the northern Highlands.",
+    distinguish:
+      "The Southern Uplands and the Highlands to the north both come from the Caledonian orogeny, but the Southern Uplands' rocks are \"softer\", the structure is an accretionary wedge, and the hills are worn rounder and lower; the northern Highlands' rocks are older and harder and the mountains are higher and more rugged. Compared with the Pennines of England, the two are similar in height, but the Pennines are an anticline of limestone and sandstone while the Southern Uplands are folded greywacke and shale.",
+    concept:
+      "The Southern Uplands are a case study in an accretionary wedge: when an ocean is subducting and closing, the sediment on its floor is scraped off in slices and thrust, one over another, onto the edge of the continent, forming a thick stack of beds all dipping the same way. To recognise an accretionary wedge, look at whether the beds repeat in sets, run in the same direction and are cut into strips by faults. A common misconception is to read these parallel rock belts as a single depositional sequence.",
+    history:
+      "The Southern Uplands were the Anglo-Scottish border country, known in the late medieval period for the feuding families of the Border Reivers. From the 18th century the area became an important region for Scottish sheep (especially coarse-woolled breeds) and woollen textiles. In the 20th century large areas were planted with fast-growing conifers, and in recent years some of Britain's largest onshore wind farms have been built here.",
+  },
+
+  "snowdonia": {
+    seeing:
+      "Snowdonia (Welsh: Eryri), in north-west Wales, is the highest and most rugged mountain area in Wales. Its highest peak, Snowdon (Welsh: Yr Wyddfa), is 1,085 m — the highest mountain in Wales and in England-and-Wales — with a mountain railway to the summit. This is a classic teaching area for glacial landforms in Britain, and a heartland of the Welsh language and culture.",
+    formation:
+      "Snowdonia's rocks are Cambrian to Ordovician marine sedimentary and volcanic rocks (about 540 to 440 million years old) — in the Ordovician this was an active volcanic arc, and the erupted tuffs and lavas are interbedded with shale and sandstone. The Caledonian orogeny folded and uplifted them. During the ice ages, glaciers cut deep along the valleys, gouging round corries (Welsh: cwm), knife-edged arêtes and a string of corrie lakes and ribbon lakes.",
+    observation:
+      "From the air Snowdonia is a set of dark, bare-rock mountain blocks split by deep valleys, the valley floors strung with inky-blue glacial lakes (such as Llyn Llydaw below Snowdon). On the slopes you can see the grey, giant stepped workings and spoil heaps of slate quarries. The valley mouths are green farmland and stone villages.",
+    distinguish:
+      "Snowdonia and the Lake District of England are both old volcanic-rock uplands strongly reshaped by glaciers, both with corries and ribbon lakes, but Snowdonia is more compact, its cliffs steeper, and it is slightly higher. Compared with the Scottish Highlands, Snowdonia is far smaller — an isolated block of high ground.",
+    concept:
+      "Snowdonia is a case study in the corrie (cwm / corrie): snow accumulates first in a shaded hollow on the mountainside and turns to ice, and the ice, rotating under its own weight, scoops the hollow out into a round basin with a steep back wall, a deep floor often holding a lake, and a low rock lip. To recognise a corrie, look at whether it faces the shaded side (north-east in the northern hemisphere) and has a steep back wall and a low rock threshold. A common misconception is to take a corrie lake for a volcanic crater lake.",
+    history:
+      "Snowdonia was the last stronghold of the medieval Principality of Wales. From the 19th century its slate quarrying roofed buildings around the world and was for a time the mainstay of the Welsh economy; the associated quarry landscape was inscribed as a World Heritage Site in 2021. Snowdonia National Park was established in 1951, the third national park in England and Wales.",
+  },
+
+  "brecon-beacons": {
+    seeing:
+      "The Brecon Beacons (Welsh: Bannau Brycheiniog), in south Wales, are a line of flat-topped hills of Old Red Sandstone, with a clean escarpment facing north. The highest, Pen y Fan, is 886 m — the highest point in southern Britain. Close to the cities of south Wales, they are a popular walking area, and the sky is very dark: it is an International Dark Sky Reserve.",
+    formation:
+      "The main body of the Brecon Beacons is Devonian Old Red Sandstone — a suite of red sandstone and mudstone laid down on rivers and floodplains about 400 million years ago. The beds are roughly horizontal, the hard sandstone layers forming flat summits that dip gently south. Erosion and glaciation cut a steep \"cuesta\" escarpment on the north side, with several small corries and corrie lakes below it. The southern edge of the range is Carboniferous Limestone, with cave systems.",
+    observation:
+      "From the air the Brecon Beacons are several table-topped, turf-covered hills, gentle on the south slope and with a continuous dark escarpment on the north, a line of small lakes and corries at the foot of the cliff. The summits have almost no bare rock — they are broad acid grassland and peat. On the southern foot you can see the sinkholes and quarries of the limestone country.",
+    distinguish:
+      "The Brecon Beacons and Snowdonia are both in Wales, but Snowdonia is hard volcanic rock, gouged by glaciers into sharp peaks and deep valleys; the Brecon Beacons are near-horizontal sandstone, characterised by flat tops and long escarpments, with much weaker glaciation. This kind of hill, steep on one side and gentle on the other, is a cuesta.",
+    concept:
+      "The Brecon Beacons are a case study in a cuesta: when a suite of gently dipping, alternating hard and soft beds is eroded, the surface of a hard bed becomes the gentle slope (following the dip), and its cut-off end becomes the escarpment, so the hill is gentle on one side and steep on the other. To recognise a cuesta, check whether the gentle slope's angle matches the dip of the beds. A common misconception is to read the escarpment as a fault scarp.",
+    history:
+      "The Brecon Beacons have long been upland grazing country (sheep, Welsh mountain ponies) and border-fortress country, with Roman roads and medieval castle remains in the hills. In the 19th century the southern edge of the range was the fringe of the south Wales coalfield and iron industry, with canals and railways cut through the hills. The national park was established in 1957.",
+  },
+
+  "lake-district": {
+    seeing:
+      "The Lake District, in north-west England, is a region of mountains and long narrow lakes arranged radially. England's highest peak, Scafell Pike (978 m), and its largest natural lake, Windermere, are both here. Known for its pastoral \"lake and mountain\" scenery and the Romantic poets (Wordsworth and others), it is a World Heritage Site and one of the most-visited national parks in Britain.",
+    formation:
+      "The Lake District's rocks form three belts from north to south: softer slates in the north (the Skiddaw Group), rugged Ordovician volcanic rocks in the middle (the Borrowdale Volcanic Group, forming the roughest central peaks), and Silurian slates and sandstones in the south. The whole area was uplifted into a dome, and rivers flow radially out from the centre. Quaternary glaciers cut down and deepened these radial valleys, and after the ice retreated they filled with ribbon lakes — from the air they look like the spokes of a wheel.",
+    observation:
+      "From the air the Lake District is a set of dark, craggy mountains with valleys reaching out in every direction from a central upland, each main valley holding a long thin lake (Windermere, Ullswater, Coniston Water and others), the lake shores green pasture and drystone-walled fields, the valley slopes carrying sheep and small woods. The crags are steepest around Scafell in the centre.",
+    distinguish:
+      "The Lake District, the Scottish Highlands and Snowdonia are all old rock reshaped by glaciers, but the Lake District's \"radial drainage plus ribbon lakes\" pattern is especially clear because it is a near-circular dome. Compared with the Scottish Highlands, the Lake District is small and slightly lower, but the relief and density of lakes per unit area is very high.",
+    concept:
+      "The Lake District is a case study in radial drainage and ribbon lakes: once the surface is uplifted into a dome, rivers flow down the steepest line, out from the centre, in a spoke pattern; ice-age glaciers deepen these valleys and leave transverse moraine dams in them, so after the ice retreats they fill with long, narrow lakes. A common misconception is to take a ribbon lake for a stretch of river.",
+    history:
+      "The Lake District's \"pastoral landscape\" is in fact shaped by centuries of grazing — the open grassland on the fells, the drystone walls, the sheepfolds are all agricultural heritage. From the late 18th to the 19th century, Wordsworth and the other \"Lake Poets\" made it a symbol of Romanticism and of the early conservation movement, and the National Trust began here. In 2017 it was inscribed as a World Heritage Site as a \"cultural landscape\".",
+  },
+
+  "pennines": {
+    seeing:
+      "The Pennines are a north-south upland in the north of England, running from the Scottish border down to the Peak District in the middle of the country, often called the \"backbone of England\". Overall it is an open moorland, mostly 400 to 700 m high, with the highest point, Cross Fell, at 893 m. It is the watershed between the east- and west-flowing rivers of England, and it separates the cities on the two sides.",
+    formation:
+      "The Pennines are a large north-south anticline (an upfold of the rock), cored by Carboniferous strata: limestone at the base, then sandstone (\"Millstone Grit\") and coal-bearing strata above. After the anticline was uplifted, the top beds were eroded away, exposing older rocks in rings. The hard grit forms flat moorland plateaus, and the limestone areas have cave systems and dry valleys. The coal seams on either side were the fuel base of Britain's Industrial Revolution.",
+    observation:
+      "From the air the Pennines are a dark-brown, almost treeless open upland covered in peat bog and grass, cut across by glacial broad valleys (\"dales\"); the dales are green pasture, drystone walls and stone villages, and the tops are open moor. The west slope is steep, the east slope gentle. Where the limestone is exposed (the Yorkshire Dales, the White Peak) the ground is pale and bare-rock.",
+    distinguish:
+      "The Pennines and the Southern Uplands of Scotland are similar in height, but the Pennines are an anticline of Carboniferous limestone and sandstone while the Southern Uplands are an accretionary wedge of older greywacke and shale. The Pennines are lower and gentler than the Lake District or Snowdonia, and their glaciation mainly \"widened the valleys\" without so many sharp peaks and corries.",
+    concept:
+      "The Pennines are a case study in an anticlinal upland and a watershed: rock folded up into an anticline and then uplifted remains a high ground even after the top is eroded, and that high ground becomes the divide between the drainage on the two sides — rain on one side flows to the North Sea, on the other to the Irish Sea. A common misconception is that a watershed must be a sharp ridge — the Pennine watershed is a broad, gentle expanse of moor.",
+    history:
+      "The coalfields on either side of the Pennines, and the water power and water supply the range provided, were key to the rise of the Lancashire and Yorkshire cotton and wool textile cities (Manchester, Leeds and others) in the 18th and 19th centuries. The ridge itself was sheep-grazing and quarrying country. In 1965 Britain's first National Trail, the Pennine Way, opened along the ridge.",
+  },
+
+  "mourne-mountains": {
+    seeing:
+      "The Mourne Mountains, in the south-east of Northern Ireland in County Down, are a compact group of granite mountains that rise a short distance in from the shore of the Irish Sea. The highest, Slieve Donard, is 850 m — the highest peak in Northern Ireland. The mountains are not high but tightly packed and steep, and the Mourne Wall, about 35 km long, runs over the summits and is the emblem of the range.",
+    formation:
+      "The Mourne granite was intruded about 56 million years ago (Palaeogene) — at a time when the North Atlantic was rifting and there was widespread igneous activity (the North Atlantic Igneous Province), with volcanoes and intrusions of this age in Iceland, western Scotland and Northern Ireland. After the granite body cooled, the softer overlying rock was stripped away and the hard granite stood out as mountains. Ice-age glaciers then cut it into steep valleys and rock steps.",
+    observation:
+      "From the air the Mournes are a cluster of grey, round- or cone-topped, sparsely vegetated granite peaks packed into a small area near the coast; the valleys hold reservoirs (such as the Silent Valley), and the grey Mourne Wall winds across the slopes like a contour line. The foot of the mountains passes quickly into green farmland and seaside towns.",
+    distinguish:
+      "The Mournes and the Cairngorms of Scotland are both granite mountains, but the Cairngorms are much older granite (over 400 million years), worn to a broad plateau; the Mournes are young granite (56 million years), compact and steep, more \"fresh\". Right by the coast, the Mournes go from sea level to 850 m in only a few kilometres, a strong land-sea contrast.",
+    concept:
+      "The Mournes are a case study in the exhumation of a granite intrusion: granite cools a few kilometres down and does not itself make a mountain; only when the rock above it is eroded away over a long time and the granite body is \"floated\" up to the surface does it stand out as a mountain, because it resists erosion better than the surrounding rock. To recognise this kind of mountain, look at whether the massif is one uniform body of coarse-grained rock with baked older rock around it. A common misconception is to take a granite mountain for a volcano.",
+    history:
+      "The Mourne Wall is a dry-stone wall built between 1904 and 1922 to enclose the catchment that supplies water to Belfast, running about 35 km over fifteen summits. The granite of this area was quarried extensively for kerbstones and building in Britain and Ireland. The scenery of the Mournes is said to have inspired Narnia in the writing of C.S. Lewis.",
+  },
 };

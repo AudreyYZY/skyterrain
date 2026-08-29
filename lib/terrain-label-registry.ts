@@ -166,6 +166,13 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "stewart-island": "national",
   "auckland-volcanic-field": "national",
   "whakaari-white-island": "regional",
+
+  // 英国
+  "scottish-highlands": "national",
+  "lake-district": "national",
+  pennines: "national",
+  snowdonia: "national",
+  cairngorms: "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
