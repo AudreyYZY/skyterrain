@@ -2259,6 +2259,116 @@ const CHIHUAHUAN_DESERT_US: TerrainEntry = {
 };
 
 // ============================================================
+// 北美洲 — 加拿大（regionId: "north-america", country: "canada"）
+// 坐标 / 高程据 Natural Resources Canada、Parks Canada、The Canadian Encyclopedia
+// ============================================================
+
+const CANADIAN_SHIELD: TerrainEntry = {
+  id: "canadian-shield",
+  nameZh: "加拿大地盾",
+  nameEn: "Canadian Shield",
+  category: "plateau",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "苏必利尔湖北岸（地盾出露）", lon: -87.0, lat: 48.7, elevation: 300, kind: "escarpment" },
+  bbox: [-102.0, 46.0, -66.0, 63.0],
+  axis: [[-95.0, 48.0], [-72.0, 60.0]],
+  viewFrom: 200,
+  label: { lon: -85.0, lat: 52.0, rotation: 0 },
+  source: "加拿大地盾：环绕哈得孙湾的一大片前寒武纪结晶岩，约占加拿大面积一半；被冰川刨蚀成低缓、湖沼密布的古老岩石地形（Natural Resources Canada）",
+};
+
+const CANADIAN_ROCKIES: TerrainEntry = {
+  id: "canadian-rockies",
+  nameZh: "加拿大落基山脉",
+  nameEn: "Canadian Rockies",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "罗布森山", lon: -119.156, lat: 53.111, elevation: 3954, kind: "peak" },
+  bbox: [-120.0, 49.0, -114.0, 54.5],
+  axis: [[-114.8, 49.2], [-119.5, 54.2]],
+  viewFrom: 90,
+  label: { lon: -116.5, lat: 51.5, rotation: -70 },
+  pois: [
+    { name: "罗布森山", lon: -119.156, lat: 53.111, note: "加拿大落基山脉最高峰，海拔3954m" },
+    { name: "哥伦比亚冰原", lon: -117.26, lat: 52.15, note: "落基山脉最大的冰原，是三大洋分水的水源" },
+    { name: "路易斯湖", lon: -116.22, lat: 51.42, note: "冰川作用形成的湖，班夫国家公园" },
+  ],
+  source: "加拿大落基山脉：落基山系在加拿大不列颠哥伦比亚和艾伯塔的一段，以沉积岩层理和大型冰原著称；含班夫、贾斯珀等国家公园（Parks Canada）",
+};
+
+const COAST_MOUNTAINS: TerrainEntry = {
+  id: "coast-mountains",
+  nameZh: "海岸山脉",
+  nameEn: "Coast Mountains",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "沃丁顿山", lon: -125.263, lat: 51.373, elevation: 4019, kind: "peak" },
+  bbox: [-132.0, 48.5, -122.0, 60.0],
+  axis: [[-123.0, 49.0], [-131.0, 59.5]],
+  viewFrom: 270,
+  label: { lon: -127.0, lat: 54.0, rotation: -80 },
+  pois: [
+    { name: "沃丁顿山", lon: -125.263, lat: 51.373, note: "完全在不列颠哥伦比亚境内的最高峰，海拔4019m" },
+  ],
+  source: "海岸山脉：沿北美太平洋岸从不列颠哥伦比亚南部延伸到阿拉斯加边界约1600km，多深切的峡湾和大量冰川（Natural Resources Canada）",
+};
+
+const SAINT_ELIAS_MOUNTAINS: TerrainEntry = {
+  id: "saint-elias-mountains",
+  nameZh: "圣伊莱亚斯山脉",
+  nameEn: "Saint Elias Mountains",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "洛根山", lon: -140.405, lat: 60.567, elevation: 5959, kind: "peak" },
+  bbox: [-142.5, 59.3, -136.5, 62.2],
+  axis: [[-141.5, 59.8], [-137.5, 61.8]],
+  viewFrom: 200,
+  label: { lon: -139.5, lat: 60.6, rotation: -20 },
+  pois: [
+    { name: "洛根山", lon: -140.405, lat: 60.567, note: "加拿大最高峰，海拔5959m；山体基座周长很大" },
+  ],
+  source: "圣伊莱亚斯山脉：育空西南与阿拉斯加交界，含加拿大最高峰洛根山（5959m）和非极地地区最大的一片冰原（克卢恩国家公园，世界自然遗产）",
+};
+
+const TORNGAT_MOUNTAINS: TerrainEntry = {
+  id: "torngat-mountains",
+  nameZh: "托恩加特山脉",
+  nameEn: "Torngat Mountains",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "考布维克山（伊贝维尔峰）", lon: -63.724, lat: 58.873, elevation: 1652, kind: "peak" },
+  bbox: [-65.5, 57.5, -62.5, 60.4],
+  axis: [[-64.5, 57.8], [-63.0, 60.2]],
+  viewFrom: 90,
+  label: { lon: -63.8, lat: 59.2, rotation: -75 },
+  source: "托恩加特山脉：拉布拉多半岛北端、纽芬兰与拉布拉多和魁北克交界，加拿大大陆东部最高的山地；由古老地盾岩石构成，被冰川刻出峡湾和角峰（Parks Canada）",
+};
+
+const LONG_RANGE_MOUNTAINS: TerrainEntry = {
+  id: "long-range-mountains",
+  nameZh: "长岭山脉",
+  nameEn: "Long Range Mountains",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "canada",
+  landmark: { name: "台地山（格罗莫讷）", lon: -57.960, lat: 49.473, elevation: 700, kind: "escarpment" },
+  bbox: [-58.7, 47.5, -56.3, 51.5],
+  axis: [[-57.5, 47.8], [-57.5, 51.3]],
+  viewFrom: 90,
+  label: { lon: -57.6, lat: 49.6, rotation: -84 },
+  pois: [
+    { name: "台地山", lon: -57.960, lat: 49.473, note: "格罗莫讷国家公园；地表出露的是本应在地下几十公里深的地幔橄榄岩" },
+    { name: "西布鲁克塘峡湾", lon: -57.83, lat: 49.55, note: "被冰川刻出、后与海隔断的内陆峡湾式湖" },
+  ],
+  source: "长岭山脉：纽芬兰岛西缘的阿巴拉契亚山脉北端；格罗莫讷国家公园因出露的地幔岩和峡湾式湖被列为世界自然遗产（Parks Canada）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -2318,6 +2428,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   SONORAN_DESERT, MONUMENT_VALLEY, HAWAIIAN_ISLANDS,
   COLUMBIA_PLATEAU, GREAT_SALT_LAKE, COLORADO_RIVER, ATLANTIC_COASTAL_PLAIN,
   FLORIDA_PENINSULA, CHIHUAHUAN_DESERT_US,
+  // ===== 北美洲 / 加拿大 =====
+  CANADIAN_SHIELD, CANADIAN_ROCKIES, COAST_MOUNTAINS, SAINT_ELIAS_MOUNTAINS,
+  TORNGAT_MOUNTAINS, LONG_RANGE_MOUNTAINS,
 ];
 
 /**
@@ -2379,6 +2492,12 @@ const WIDE_VIEW: Record<string, number> = {
   "atlantic-coastal-plain": 2.5,
   "florida-peninsula": 2.2,
   "chihuahuan-desert-us": 2.2,
+  // 北美 / 加拿大
+  "canadian-shield": 2.7,
+  "canadian-rockies": 2.4,
+  "coast-mountains": 2.5,
+  "saint-elias-mountains": 2.0,
+  "long-range-mountains": 1.8,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,

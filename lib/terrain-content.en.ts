@@ -1983,4 +1983,95 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Chihuahuan Desert is the traditional land of the Mescalero Apache and other Native nations. The Rio Grande valley has had irrigated farming for a very long time, and Spanish settlers built a string of towns along the river in the 17th century. In the 20th century the region's open space and clear skies made it a site for U.S. military testing and spaceflight (the White Sands Missile Range is next to the dunes). Today Big Bend, Guadalupe Mountains and White Sands national parks protect its core landforms.",
   },
+
+  // ============ North America · Canada ============
+  "canadian-shield": {
+    seeing:
+      "The Canadian Shield is a large area of ancient crystalline rock wrapped around Hudson Bay, shaped like a huge shallow saucer, covering about half of Canada and extending into parts of the United States. Its rock is among the oldest on Earth (some more than 3 billion years), but the surface is not high — repeated glaciation has scraped it into a low, hard land dense with lakes and bogs. Most of Canada's forest, mineral wealth and hydropower is on the Shield.",
+    formation:
+      "The Canadian Shield is North America's \"craton\" — the most stable ancient core of the continent. It was assembled from older blocks of crust billions of years ago, and since then it has had no strong mountain building, only slow wearing down. In the past two or three million years, continental ice sheets repeatedly spread out from its centre and retreated, stripping off the soil and loose material, rounding the rock, and leaving countless ice-scoured hollows and lakes dammed by glacial debris.",
+    observation:
+      "From the air the Canadian Shield is a surface of dark green (conifer forest) interwoven with countless bright patches (lakes); rock is often bare, worn into smooth rounded backs. The lakes are irregular and randomly oriented, many lined up along cracks in the bedrock and glacial scratches. Relief is very low, with no obvious mountains — only low rock knobs and long glacially moulded ridges. Toward the north near the Arctic Circle, forest gives way to tundra.",
+    distinguish:
+      "The Canadian Shield and the Brazilian Highlands are both ancient cratons of a continent and geologically similar; but the Brazilian Highlands lie in the tropics, are raised higher, and are marked by red soil and mesas; the Canadian Shield is lower, at high latitude, and marked by glacial scouring and lakes. Versus a true \"plateau\": the Shield was not raised as a block — it is simply a large area of ancient rock long exposed and then planed by glaciers, and is named by its geological region (a shield), not by elevation.",
+    concept:
+      "A \"shield\" is a geological concept, not a landform one — it means a large area of a continent where Precambrian crystalline rock is exposed and has been stable for a long time, and its elevation can be high or low. A common misconception is to picture it as a shield-shaped highland: most of the Canadian Shield is only a few hundred metres above sea level, and Hudson Bay in its centre is actually sea. It is still slowly rising by \"isostatic rebound\" now that the ice sheets have melted.",
+    history:
+      "The Canadian Shield has been home for thousands of years to the Cree, Inuit, Anishinaabe, Innu and other Native nations, whose travel network was the rivers and lakes. From the 17th century the fur trade reached inland along the Shield's river and lake systems. In the 20th century the Shield's rich nickel, copper, gold, uranium and iron ores, and hydroelectric stations on its large rivers, became mainstays of the Canadian economy.",
+  },
+
+  "canadian-rockies": {
+    seeing:
+      "The Canadian Rockies are the stretch of the Rocky Mountain system along the British Columbia–Alberta border. They are closer to the west coast and more heavily glaciated than the U.S. Rockies. They are known for clearly bedded sedimentary rock, jagged peaks, large icefields and a string of glacial lakes; Banff, Jasper, Yoho and Kootenay national parks form a connected block that is a World Heritage site. The highest peak, Mount Robson, is 3,954 m.",
+    formation:
+      "The rock of the Canadian Rockies is mostly limestone, dolomite and shale deposited in shallow seas over hundreds of millions of years. About 100 to 60 million years ago, compression from the west stacked these layers up along a series of near-parallel thrust faults — like pushing a stack of books — forming ranges of consistent trend. Glaciers then carved the upper mountains into horns, arêtes, cirques and U-shaped valleys; the Columbia Icefield is a large surviving alpine icefield whose meltwater flows to the Pacific, the Atlantic and the Arctic oceans.",
+    observation:
+      "From the air the Canadian Rockies are a set of parallel ranges of consistent trend, with layer upon layer of horizontal or tilted sedimentary rock clearly visible on the mountainsides; many peaks are \"cuesta\" forms, a steep cliff on one side and a gentler dip slope on the other. The valleys are wide and flat (glacial U-shapes), with turquoise glacial lakes on their floors (rock flour in the water scatters the light) such as Lake Louise and Moraine Lake. The Columbia Icefield is a white plateau-like ice surface on the main crest.",
+    distinguish:
+      "The Canadian Rockies and the U.S. Rockies are different stretches of the same system: the Canadian stretch is at higher latitude, has far more glaciers and icefields, and is mostly unmetamorphosed sedimentary rock with very clear bedding; the U.S. stretch (especially around Colorado) has a core of ancient crystalline rock, more peaks over 4,000 m, and very few modern glaciers. Versus the Coast Mountains: the Coast Mountains are on the Pacific with granite and fjords; the Rockies are inland and are stacked, thrust-faulted sedimentary layers.",
+    concept:
+      "The Canadian Rockies are a clear example of a \"thrust-and-fold mountain range\" — not simply squeezed into folds, but layers pushed up along faults and stacked on top of one another. A common misconception is to take the blue-green colour of the glacial lakes for pollution or mineral staining: it is very fine \"rock flour\" suspended in the water, scattering the blue-green part of sunlight.",
+    history:
+      "The Canadian Rockies are the traditional territory and seasonal hunting grounds of the Stoney Nakoda, Cree, Ktunaxa and other Native nations. The Canadian Pacific Railway crossed the mountains in 1885, and in the same year a reserve was set aside around the hot springs at Banff — Canada's first national park. Today this mountain area is one of Canada's most important tourism destinations, and is dealing with visitor numbers, wildlife corridors and glacier retreat.",
+  },
+
+  "coast-mountains": {
+    seeing:
+      "The Coast Mountains run along the Pacific coast of North America, from southern British Columbia to the Alaska border, about 1,600 km. They rise straight out of the sea, their body cut by countless long, deep fjords, and are covered in temperate rainforest and many glaciers. The highest peak entirely within British Columbia is Mount Waddington, 4,019 m. Vancouver and Whistler are on the southern edge.",
+    formation:
+      "The core of the Coast Mountains is a large body of granite (the Coast Plutonic Complex) that crystallised deep underground from subduction-zone magma in the Mesozoic and Cenozoic. Continued subduction of the Pacific-side plate keeps raising the crust. During the ice ages, glaciers coming off the mountains cut hard down the existing river valleys, right below present sea level; when the ice retreated and the sea rose, seawater flooded these U-shaped valleys to make fjords. The mountains still hold many valley glaciers and small icefields.",
+    observation:
+      "From the air the Coast Mountains are a belt of snow mountains hugging the coast and broken into pieces — the coastline is extremely intricate, and straight fjords driving far inland cut the range into peninsulas and islands. The lower slopes are dense dark-green rainforest; the upper slopes are bare rock and sheets of glacier and snowfield. There is a lot of cloud and rain; on clear days you can see pale granite cliffs and hanging glaciers.",
+    distinguish:
+      "The Coast Mountains and the inland Canadian Rockies run parallel but are entirely different: the Coast Mountains are coastal, marked by granite and fjords, wetter, with glaciers reaching the sea; the Rockies are inland, marked by sedimentary bedding and thrust-faulted ranges. Versus Norway's Scandinavian Mountains: both are coastal ranges cut into fjords by glaciers, with different origins (a rising granite batholith versus an ancient mountain belt) and rock types, but a similar fjord landscape.",
+    concept:
+      "The Coast Mountains are a good example for understanding \"fjords\": a fjord is a U-shaped inlet formed where a glacier cut a coastal river valley below sea level and the sea flooded it after the ice retreated — steep walls, deep water, often deeper inside than at the mouth (a glacial \"sill\" at the entrance). A common misconception is to take a fjord for an ordinary river mouth or bay — a fjord is always tied to glacial action.",
+    history:
+      "The Coast Mountains and their fjords are home to the Coast Salish, Kwakwaka'wakw, Haida, Tsimshian and other Pacific Northwest Native nations, who built complex societies and art (totem poles and more) around cedar, salmon and travel by sea. The 19th-century fur trade and later logging, fishing and mining spread along the fjords. Today the area holds large protected areas such as the Great Bear Rainforest, and is an important shipping and cruising waterway.",
+  },
+
+  "saint-elias-mountains": {
+    seeing:
+      "The Saint Elias Mountains are in the south-western corner of Yukon on the Alaska border — the highest mountain country in North America. Canada's highest peak, Mount Logan, is here at 5,959 m, and its base has one of the largest circumferences of any mountain on Earth. The range holds the largest non-polar icefield in the world, with glaciers flowing down to the lowlands and the sea. Kluane National Park, together with the adjacent U.S. parks, is a World Heritage site.",
+    formation:
+      "The Saint Elias Mountains are where the Pacific plate is running obliquely and fast into North America — some far-travelled terranes (accreted blocks of crust) have been \"bulldozed\" onto the continental edge and strongly uplifted, and the range is still rising fast and is very seismically active. High latitude plus high elevation puts the snowline very low, so snow that falls on the mountains cannot melt and is compressed year after year into huge icefields and valley glaciers tens of kilometres long.",
+    observation:
+      "From the air the Saint Elias Mountains are a vast field of white — almost no bare rock, only black horns and arêtes poking out of a continuous icefield. Wide valley glaciers wind downslope like frozen rivers, striped with dark \"medial moraines\" (debris carried down from where two glaciers merge), breaking into a maze of ice pinnacles and meltwater lakes at their lowland ends.",
+    distinguish:
+      "The Saint Elias Mountains and the adjacent Alaska Range (with Denali) are both high mountains of north-western North America and both intensely glaciated; the Saint Elias are closer to the sea, rising faster, with a larger icefield, and nearer the coast. Versus the Himalaya: the Himalaya are higher, longer, and formed by two continents meeting head-on; the Saint Elias are an oceanic plate hitting a continent obliquely and shoving accreted terranes up.",
+    concept:
+      "The Saint Elias Mountains show that huge icefields can form outside the poles — as long as it is high and cold and snowy enough, ice can build up over a large area. A common misconception is that these glaciers are static, unchanging ice: they flow continuously, and some \"surge\" periodically (advancing several kilometres in a few years), making them an important site for the study of glacier dynamics.",
+    history:
+      "The Saint Elias area is the traditional land of the Southern Tutchone, Tlingit and other Native nations, and the mountain passes were trade routes between the coast and the interior. In the 18th century European navigators saw and named Mount Saint Elias from the sea. In 1993 this mountain area (with the Alaska side) was inscribed as a World Heritage site, chiefly for its glaciers and ecosystems.",
+  },
+
+  "torngat-mountains": {
+    seeing:
+      "The Torngat Mountains are at the far northern tip of the Labrador Peninsula, the boundary range between the provinces of Newfoundland and Labrador and Quebec, and the highest mountain country in mainland eastern Canada. \"Torngait\" means \"spirits\" in Inuktitut. There are no trees, roads or permanent residents; the coast is a series of deep glacier-cut fjords; and in summer there are polar bears and caribou. It became a national park reserve in 2005.",
+    formation:
+      "The Torngat Mountains are made of very old crystalline rock of the Canadian Shield (some of it close to 4 billion years old, among the oldest known on Earth). This ancient block was raised somewhat as a whole, then strongly scoured in successive ice ages by continental ice sheets and valley glaciers — the summits cut into horns and arêtes, the valleys hollowed into U-shapes, and the coastal valleys cut below sea level to become fjords. The land is still slowly rebounding since the ice left.",
+    observation:
+      "From the air the Torngat Mountains are a grey-brown, almost entirely bare rock highland rising straight out of the sea and the fjords. The ridges are sharp and the valleys deep and wide, with patches of remnant snow and a few small glaciers on the slopes. The coastline is extremely intricate, with long fjords reaching into the mountains, often ending in braided meltwater rivers. There is no forest, only low tundra plants clinging to sheltered spots.",
+    distinguish:
+      "The Torngat Mountains and the Canadian Rockies to the west are both Canadian mountains, but the Rockies are relatively young thrust-faulted sedimentary mountains with big icefields and tourist infrastructure; the Torngats are extremely ancient Shield rock, worn low by glaciers, remote and roadless. Compared with the mountains of northern Norway: both are ancient rock plus glacial fjords plus tundra, with a similar look.",
+    concept:
+      "The Torngat Mountains show that \"ancient does not mean tall\": their rock is among the oldest on Earth, but billions of years of erosion and glacial scouring have left them only a bit over a thousand metres high. A common misconception is to attribute all sharp peaks and steep valleys to \"young uplift\" — here the rugged terrain is mainly glaciers carving into ancient, hard rock.",
+    history:
+      "The Torngat Mountains are the traditional land of the Labrador Inuit (Nunatsiavut) and the Quebec Inuit (Nunavik), and the fjord mouths along the coast hold camps and sites used for generations. Moravian missionaries built stations along the Labrador coast in the 19th century. Today the national park is co-managed with the Inuit, reached mainly by boat or small plane, and the park base station employs Inuit guides and bear guards.",
+  },
+
+  "long-range-mountains": {
+    seeing:
+      "The Long Range Mountains are a north–south highland on the western side of the island of Newfoundland, the north-easternmost stretch of the Appalachian Mountains in mainland North America. They are essentially a raised, then glacier-cut plateau, flat on top and steep-edged. Gros Morne National Park is here — best known for \"the Tablelands\", a bare orange-brown mountain whose surface rock should be tens of kilometres down in the mantle.",
+    formation:
+      "The Long Range Mountains record an ancient continental collision. About 500 million years ago an old ocean closed, and crust and mantle rock from the ocean floor were thrust up onto the edge of the continent — the mantle peridotite of the Tablelands was carried up this way. The range was then eroded into a low, flat plateau. Quaternary glaciers cut cliffs into the plateau edge and deepened the valleys below sea level — Western Brook Pond is a glacier-cut inland \"fjord\" later cut off from the sea.",
+    observation:
+      "From the air the Long Range Mountains are a flat-topped highland belt along Newfoundland's west coast, its surface bare rock and tundra dotted with countless small ponds, its edges a continuous cliff hundreds of metres high. At the foot of the cliffs, long, straight, steep-walled deep lakes (fjord-form lakes) reach inland, looking almost exactly like Norwegian fjords except that they are closed off from the sea. The Tablelands is one block that is distinctly orange-brown and almost bare of plants.",
+    distinguish:
+      "The Long Range Mountains and the main body of the U.S. Appalachians are the two ends of the same ancient fold belt: the U.S. stretch is longer, more continuous and heavily forested; the Long Range is its northern end in Newfoundland, more thoroughly reworked by glaciers, with fjord-form lakes and exposed mantle rock. Versus Norwegian fjords: Western Brook Pond and the others are \"fjord lakes\" — the form of a glacial fjord, but now cut off from the sea and freshwater.",
+    concept:
+      "The Long Range Mountains (Gros Morne) were inscribed as a World Heritage site because they lay the process of \"plate collision\" open to view: mantle rock that normally sits tens of kilometres underground is exposed here at the surface, and the boundary between ocean crust and mantle can be seen. A common misconception is that all surface rock comes from the crust — the Tablelands peridotite is from the mantle, and its chemistry is toxic to most plants, which is why it is bare.",
+    history:
+      "The west coast of Newfoundland is the land of the Mi'kmaq and, historically, the Beothuk. Around AD 1000, Norse (Viking) people built a short-lived settlement at L'Anse aux Meadows at the northern tip of Newfoundland — the earliest confirmed European foothold in the Americas. From the 18th century, French and English fishermen worked this coast for cod. Gros Morne was inscribed as a World Heritage site in 1987.",
+  },
 };
