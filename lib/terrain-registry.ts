@@ -3421,6 +3421,148 @@ const CLUTHA_RIVER: TerrainEntry = {
   source: "克卢萨河 / Mata-Au：新西兰水量最大、长度第二（约338km）的河；从瓦纳卡湖流出，穿过中奥塔哥的峡谷和水库，在巴尔克卢萨附近分汊入海（LINZ / NIWA）",
 };
 
+const BAY_OF_ISLANDS: TerrainEntry = {
+  id: "bay-of-islands",
+  nameZh: "岛屿湾",
+  nameEn: "Bay of Islands / Ipipiri",
+  category: "coast",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "岛屿湾（派希亚 / 拉塞尔一带）", lon: 174.12, lat: -35.24, elevation: 0, kind: "island" },
+  bbox: [173.95, -35.42, 174.35, -35.05],
+  viewScale: 1.5,
+  label: { lon: 174.12, lat: -35.24, rotation: 0 },
+  source: "岛屿湾：北岛北部亚热带海岸，河谷被海水淹没形成的“溺谷”海湾，散布约140余个小岛（LINZ / DOC）",
+};
+
+const ABEL_TASMAN_COAST: TerrainEntry = {
+  id: "abel-tasman-coast",
+  nameZh: "阿贝尔·塔斯曼海岸",
+  nameEn: "Abel Tasman Coast",
+  category: "coast",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "阿贝尔·塔斯曼海岸（托伦特湾一带）", lon: 173.03, lat: -40.88, elevation: 0, kind: "island" },
+  bbox: [172.88, -41.05, 173.15, -40.68],
+  label: { lon: 173.03, lat: -40.88, rotation: 0 },
+  source: "阿贝尔·塔斯曼海岸：新西兰面积最小的国家公园，风化的金黄色花岗岩岬角与弧形海滩、潮汐河口相间（DOC）",
+};
+
+const COROMANDEL_PENINSULA: TerrainEntry = {
+  id: "coromandel-peninsula",
+  nameZh: "科罗曼德半岛",
+  nameEn: "Coromandel Peninsula",
+  category: "coast",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "科罗曼德山脉主脊", lon: 175.62, lat: -36.78, elevation: 700, kind: "escarpment" },
+  bbox: [175.32, -37.15, 175.95, -36.35],
+  axis: [[175.55, -37.05], [175.75, -36.45]],
+  viewFrom: 90,
+  viewScale: 1.6,
+  label: { lon: 175.62, lat: -36.78, rotation: -75 },
+  source: "科罗曼德半岛：中新世—上新世火山岩被侵蚀后留下的崎岖山脊，两侧是曲折海岸；历史上采金、伐贝壳杉（GNS Science / DOC）",
+};
+
+const PUNAKAIKI: TerrainEntry = {
+  id: "punakaiki",
+  nameZh: "普纳凯基（薄饼岩）",
+  nameEn: "Punakaiki (Pancake Rocks)",
+  category: "coast",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "薄饼岩与喷水孔", lon: 171.336, lat: -42.114, elevation: 10, kind: "escarpment" },
+  bbox: [171.28, -42.20, 171.42, -42.03],
+  label: { lon: 171.34, lat: -42.11, rotation: 0 },
+  source: "普纳凯基：西海岸帕帕罗瓦国家公园，层状石灰岩经差异风化形成“千层饼”状海崖，涨潮时有喷水孔（DOC / GNS Science）",
+};
+
+const MARLBOROUGH_SOUNDS: TerrainEntry = {
+  id: "marlborough-sounds",
+  nameZh: "马尔堡峡湾",
+  nameEn: "Marlborough Sounds / Te Tau Ihu",
+  category: "coast",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "夏洛特女王湾（Tōtaranui）", lon: 174.10, lat: -41.15, elevation: 0, kind: "island" },
+  bbox: [173.7, -41.45, 174.45, -40.75],
+  viewScale: 1.8,
+  label: { lon: 174.05, lat: -41.15, rotation: -30 },
+  source: "马尔堡峡湾：南岛北端一片被海水淹没的河谷网络（“溺谷”），因当地陆块沉降与冰后海面上升共同作用而成（GNS Science / LINZ）",
+};
+
+const WHAKAARI_WHITE_ISLAND: TerrainEntry = {
+  id: "whakaari-white-island",
+  nameZh: "怀特岛",
+  nameEn: "Whakaari / White Island",
+  category: "island",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "怀特岛火山口", lon: 177.182, lat: -37.521, elevation: 321, kind: "island" },
+  bbox: [177.14, -37.55, 177.22, -37.49],
+  label: { lon: 177.182, lat: -37.521, rotation: 0 },
+  source: "怀特岛 / Whakaari：丰盛湾外海的安山—英安质火山岛，是新西兰最活跃的火山，大部分位于海面以下；2019年喷发造成人员伤亡，现登岛受限（GNS Science）",
+};
+
+const STEWART_ISLAND: TerrainEntry = {
+  id: "stewart-island",
+  nameZh: "斯图尔特岛",
+  nameEn: "Stewart Island / Rakiura",
+  category: "island",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "帕特森湾与哈夫穆恩湾（Oban）", lon: 168.13, lat: -46.90, elevation: 100, kind: "island" },
+  bbox: [167.6, -47.30, 168.35, -46.55],
+  viewScale: 1.6,
+  label: { lon: 167.95, lat: -46.95, rotation: 0 },
+  source: "斯图尔特岛 / Rakiura：新西兰第三大岛，约85%为拉基乌拉国家公园，花岗岩与老沉积岩，气候凉湿，常见南极光和野生几维鸟（DOC）",
+};
+
+const WAITOMO: TerrainEntry = {
+  id: "waitomo",
+  nameZh: "怀托摩",
+  nameEn: "Waitomo",
+  category: "hills",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "怀托摩萤火虫洞一带", lon: 175.103, lat: -38.261, elevation: 60, kind: "gorge" },
+  bbox: [175.0, -38.35, 175.25, -38.15],
+  label: { lon: 175.10, lat: -38.26, rotation: 0 },
+  source: "怀托摩：渐新世石灰岩喀斯特区，发育溶洞、天生桥、落水洞；洞内有新西兰特有的发光蕈蚊（“萤火虫”）（DOC / GNS Science）",
+};
+
+const AUCKLAND_VOLCANIC_FIELD: TerrainEntry = {
+  id: "auckland-volcanic-field",
+  nameZh: "奥克兰火山区",
+  nameEn: "Auckland Volcanic Field",
+  category: "hills",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "朗伊托托岛", lon: 174.860, lat: -36.786, elevation: 260, kind: "island" },
+  bbox: [174.63, -37.02, 175.0, -36.68],
+  viewScale: 1.6,
+  label: { lon: 174.80, lat: -36.87, rotation: 0 },
+  pois: [
+    { name: "伊甸山 / Maungawhau", lon: 174.764, lat: -36.877, note: "市中心的火山锥，顶部有火口" },
+    { name: "普普科湖 / Pupuke", lon: 174.767, lat: -36.783, note: "爆裂形成的圆形“低平火山口”湖" },
+  ],
+  source: "奥克兰火山区：约50余座单成因玄武质火山散布在城区之下，仍属活动状态；最年轻、最大的朗伊托托岛约在600年前喷发形成（GNS Science）",
+};
+
+const BANKS_PENINSULA: TerrainEntry = {
+  id: "banks-peninsula",
+  nameZh: "班克斯半岛",
+  nameEn: "Banks Peninsula",
+  category: "hills",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "阿卡罗阿港（淹没的火山口）", lon: 172.80, lat: -43.80, elevation: 200, kind: "escarpment" },
+  bbox: [172.55, -43.92, 173.12, -43.55],
+  viewScale: 1.5,
+  label: { lon: 172.80, lat: -43.78, rotation: 0 },
+  source: "班克斯半岛：两座中新世盾状火山被侵蚀后相叠的残体，原为岛屿，后被坎特伯雷平原砾石连到陆地；利特尔顿港、阿卡罗阿港是被海水淹没的火山谷（GNS Science）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -3503,6 +3645,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   LAKE_TAUPO, LAKE_WAKATIPU, LAKE_TEKAPO, LAKE_WANAKA,
   CANTERBURY_PLAINS, MACKENZIE_BASIN, CENTRAL_OTAGO, ROTORUA_CALDERA,
   WAIKATO_RIVER, CLUTHA_RIVER,
+  BAY_OF_ISLANDS, ABEL_TASMAN_COAST, COROMANDEL_PENINSULA, PUNAKAIKI, MARLBOROUGH_SOUNDS,
+  WHAKAARI_WHITE_ISLAND, STEWART_ISLAND,
+  WAITOMO, AUCKLAND_VOLCANIC_FIELD, BANKS_PENINSULA,
 ];
 
 /**
@@ -3616,6 +3761,11 @@ const WIDE_VIEW: Record<string, number> = {
   "rotorua-caldera": 1.6,
   "waikato-river": 2.3,
   "clutha-river": 2.1,
+  "marlborough-sounds": 1.8,
+  "stewart-island": 1.7,
+  "auckland-volcanic-field": 1.6,
+  "banks-peninsula": 1.5,
+  "coromandel-peninsula": 1.6,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,

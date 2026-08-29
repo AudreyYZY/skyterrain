@@ -3050,4 +3050,154 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Mata-Au was an important route for South Island Māori travelling inland for pounamu, with a chain of seasonal camps along the valley. During the Central Otago gold rush of the 1860s the Clutha and its tributaries were the centre of gold mining and, later, large gold dredges, which turned over the riverbed and left broad gravel tailings. In the 20th century large hydro stations were built at Clyde and Roxburgh.",
   },
+
+  "bay-of-islands": {
+    seeing:
+      "The Bay of Islands, in the north of the North Island, is a subtropical coast with about 140-odd small islands scattered through the bay. The climate is warm and the water clear, and this was one of the earliest areas of European settlement in New Zealand; the Treaty of Waitangi was signed here in 1840. Today it is known for sailing, dolphins and the historic towns of Paihia and Russell.",
+    formation:
+      "The Bay of Islands is a drowned-valley (ria) coast: this was once a set of river valleys running to the sea, and when sea level rose after the last ice age the sea flooded the valleys, so the hills and ridge tops between them became islands and peninsulas, giving an unusually intricate, branching coastline. The bedrock is mostly older sandstone and volcanic rock, fairly erosion-resistant, so many islands survive.",
+    observation:
+      "From the air the Bay of Islands is a scatter of green islands over deep-blue water, with winding channels and sheltered coves between them; on the land side, river mouths reach inland and mangroves line the mudflats. There are no large beaches or plains along this coast — it is \"half-drowned hill country\".",
+    distinguish:
+      "The Bay of Islands and the Marlborough Sounds are both drowned-valley coasts, but the Bay of Islands is subtropical, with more and smaller islands and lower relief; the Marlborough Sounds, at the top of the South Island, have deeper, longer waterways. Unlike the glacier-carved fiords of Fiordland, the Bay of Islands is drowned river valleys, with no sheer glacial cliffs.",
+    concept:
+      "The Bay of Islands is a case study in a ria coast: when sea level rises and floods a hilly area, the valley floors become inlets and the high ground between becomes islands and headlands, greatly increasing the length and intricacy of the coastline. To recognise this kind of coast, check whether the islands and peninsulas line up with the direction of the inland valleys. A common misconception is to see the islands as having \"risen\" from the sea, when in fact the land \"sank\" and was surrounded by water.",
+    history:
+      "The Bay of Islands area is the heartland of the Ngāpuhi people. From the late 18th century it was a base for whaling ships and missionaries, and Russell (formerly Kororāreka) was a rowdy port. In February 1840 representatives of the British Crown and many Māori chiefs signed the Treaty of Waitangi here, a document that remains the basis of New Zealand's constitutional relationship.",
+  },
+
+  "abel-tasman-coast": {
+    seeing:
+      "The Abel Tasman Coast, at the top of the South Island, is the smallest national park in New Zealand. Its characteristic scene is weathered golden granite headlands, curving soft golden beaches, tidal estuary flats that look completely different at high and low water, and evergreen native forest behind. The coast track and sea kayaking are its signature.",
+    formation:
+      "The bedrock of this coast is mostly granite and marble. In the warm, wet climate the granite weathers along its joints — the feldspar breaks down to clay and the quartz grains are left, forming that warm gold-orange coarse sand; hard, unweathered granite stands out as rounded headlands and reefs. The coastline is the drowned edge of hill country, and the small rivers form broad tidal flats at their mouths.",
+    observation:
+      "From the air the Abel Tasman Coast is a string of north-east-facing arc-shaped coves, each with a golden beach, dark rock headlands between them; at low tide several river mouths expose large pale-yellow sand-and-mud flats with winding channels, and at high tide they become water again. The land is dense green low hills.",
+    distinguish:
+      "The Abel Tasman Coast's golden sand comes from weathered granite and is warmer in colour than ordinary quartz sand; this is different from both the black volcanic ironsand of New Zealand's West Coast and the grey gravel beaches of the east coast. Its scale is small — it is a \"delicate\" rather than a \"grand\" coast.",
+    concept:
+      "The Abel Tasman Coast is a case study in granite coastal weathering: in the same body of granite, the weathered-through parts crumble to golden sand that waves pile into beaches, and the unweathered parts remain as headlands and reefs, so the coast has a \"beach – rock headland – beach\" rhythm. A common misconception is that sand colour just reflects how \"clean\" it is, when it mainly reflects the parent rock.",
+    history:
+      "This coast is named after the Dutch navigator Abel Tasman — in 1642 he led the first known European expedition to reach New Zealand, and a clash with local Māori occurred in nearby waters. Along the coast there were Māori settlements, and in the 19th century granite quarrying and logging. The national park was established in 1942.",
+  },
+
+  "coromandel-peninsula": {
+    seeing:
+      "The Coromandel Peninsula extends north from the north-east of the North Island as a narrow, rugged, mountainous peninsula. Down its centre runs a forest-covered volcanic-rock ridge, and both coasts are intricate, with rocky bays, arches and hot-water beaches. It is close to Auckland and a popular holiday and tramping area.",
+    formation:
+      "The Coromandel's mountains are left by Miocene-to-Pliocene volcanic activity: there was then a chain of andesitic, dacitic and rhyolitic volcanoes here, whose lavas and volcanic rocks were later uplifted and long eroded, leaving the hard volcanic skeleton that forms today's ridge. The volcanism also concentrated gold and silver veins in the rock, and there is still geothermal heat beneath parts of some beaches (dig a hole in the sand and hot water wells up).",
+    observation:
+      "From the air the Coromandel Peninsula is a dark-green ridge with a sharp crest and almost no flat land; the east coast faces the Pacific, with beaches, rock stacks and arches alternating; the west coast faces the Hauraki Gulf, with muddy shallows and mangroves. A string of small islands lies off the peninsula's tip.",
+    distinguish:
+      "The Coromandel Peninsula and Banks Peninsula are both eroded old volcanoes, but the Coromandel is a long, narrow \"ridge\" from a whole chain of uplifted, eroded volcanoes; Banks Peninsula is a round \"block\" of two overlapping shield volcanoes with drowned craters for harbours. The Coromandel's volcanoes are far older than the currently active Taupō Volcanic Zone and are completely extinct.",
+    concept:
+      "The Coromandel Peninsula is a case study in differential erosion of volcanic rock: in the same volcanic area, hard lava flows and plugs resist erosion and are left as peaks and sea arches, while soft volcanic debris and hydrothermally altered zones erode easily and are hollowed into bays and gullies. A common misconception is to read this rugged country as always having been mountains — it is in fact the interior of volcanoes \"stripped\" out.",
+    history:
+      "The name Coromandel comes from a Royal Navy ship that came here in 1820 to buy kauri spars. In the 19th century the area went through large-scale kauri logging and gold rushes in turn, and the hills still hold mine adits, dams and timber chutes. In the 20th century much of the forest land was returned to reserves and the peninsula turned to tourism.",
+  },
+
+  "punakaiki": {
+    seeing:
+      "Punakaiki, on the West Coast of the South Island, is part of Paparoa National Park, and is best known for the \"Pancake Rocks\" — a stretch of sea cliff where the limestone has weathered into stacked thin layers, like piles of pancakes. At high tide with the right swell, several blowholes in the rock send seawater spouting high into the air.",
+    formation:
+      "The Pancake Rocks limestone formed on the sea floor about 30 million years ago, from alternating layers of fine calcium carbonate and weaker marl. After it was uplifted above the sea, waves and rain eroded it differentially along these bedding planes — the weaker layers were hollowed out and cut back, the harder layers stood out, giving the \"layered\" look (this layered weathering is generally called stylobedding). Waves have cut caves and vertical fissures at the cliff base, and seawater forced in spouts out of the openings above.",
+    observation:
+      "From the air Punakaiki is a small stretch of grey-white, heavily cut limestone sea cliff between the green rainforest of the West Coast and the blue of the Tasman Sea, with a platform walkway on top and wave-cut caves, blowholes and surging white water below. To the north are the limestone hills running down from the Paparoa Range.",
+    distinguish:
+      "Punakaiki's \"pancakes\" are differential layered weathering of limestone, quite different in origin from the columnar jointing of basalt (as at the Giant's Causeway) or the bedding of shale. Compared with the underground limestone caves of Waitomo, Punakaiki is a surface feature where coastal limestone has been \"cross-cut\" by the sea.",
+    concept:
+      "Punakaiki is a case study in differential weathering: a stack of alternating hard and soft layers erodes so that the soft layers retreat faster and the hard layers hold, and after tens of thousands of years this carves regular ridges and grooves into the cliff face. To check the origin, look at whether the ridges follow the rock's bedding planes exactly rather than following fractures. A common misconception is that the \"pancakes\" are separate slabs of stone stacked on top of each other.",
+    history:
+      "Punakaiki in Māori relates to a local river and spring. During the West Coast gold and coal era of the 19th century there were small settlements along this coast. Paparoa National Park was established in 1987, protecting the Pancake Rocks, the limestone gorges and the inland native forest together; this is also the only breeding ground of the rare Westland petrel.",
+  },
+
+  "marlborough-sounds": {
+    seeing:
+      "The Marlborough Sounds, at the very top of the South Island, are a maze-like coast of many inlets, waterways and peninsulas reaching far inland. They are not glacial fiords but a whole network of river valleys flooded by the sea. The waterways are so intricate and roads so difficult that many places can only be reached by boat; it is an area for green-lipped mussel farming and holidays.",
+    formation:
+      "The Marlborough Sounds are a drowned-valley coast: this block of land at the top of the South Island has slowly tilted and subsided toward the north through long tectonic movement, and at the same time sea level rose after the last ice age; the two together let the sea flood a whole dendritic system of river valleys, so the valley floors became long narrow inlets (locally \"sounds\") and the ridges between them became peninsulas and islands.",
+    observation:
+      "From the air the Marlborough Sounds are an extremely intricate set of deep-blue waterways in green hill country, like water-filled branches or blood vessels, with almost no straight coastline; the hillsides drop straight into the water and there is very little flat land. Queen Charlotte Sound and Pelorus Sound are the two longest main waterways.",
+    distinguish:
+      "Although \"Sound\" is in the English name, the Marlborough Sounds differ in origin from the glacial fiords of Fiordland: they are drowned river valleys, V-shaped in cross-section and branching like a tree; glacial fiords are U-shaped, deep and straight, with a sill at the mouth. They are of the same kind as the North Island's Bay of Islands, only with higher hills and longer, deeper waterways.",
+    concept:
+      "The Marlborough Sounds are a case study in a drowned dendritic drainage: a system of tributaries feeding into a main stem, once flooded by the sea, becomes a system of side-arms feeding into a main waterway — the plan shape is still that \"tree\". A common misconception is to see a \"Sound\" and assume it was carved by a glacier.",
+    history:
+      "The area (Māori: Te Tau Ihu, \"the prow of the island\") is the traditional territory of several Māori iwi, and the waterways were important canoe routes. In 1770 Cook anchored repeatedly at Ship Cove in Queen Charlotte Sound to repair and resupply his ship. From the 19th century there was scattered logging, whaling and farming; today large areas of water are green-lipped mussel and salmon farms.",
+  },
+
+  "whakaari-white-island": {
+    seeing:
+      "Whakaari / White Island lies about 48 km offshore in the Bay of Plenty, off the North Island, and is an active volcano that rises above the sea. It is the most active volcano in New Zealand — steam and volcanic gas rise from it constantly, and its crater holds a strongly acidic hot lake. Because of the continuing volcanic hazard, access to the island has been strictly limited since an eruption in 2019 caused loss of life.",
+    formation:
+      "Whakaari is the part of the Taupō Volcanic Zone that extends north-east out to sea: the Pacific plate subducts beneath New Zealand here, driving magma up to build an andesitic-to-dacitic stratovolcano. The volcano is actually large — most of it is below sea level, and what shows above is only the crater area, about 320 m high. The crater wall has collapsed several times.",
+    observation:
+      "From the air Whakaari is a near-circular small island on deep-blue water, with a horseshoe-shaped crater open to the sea in the middle, its floor yellow-white sulphurous ground, a grey-green hot lake and a constantly rising plume of steam; the island's outer slopes are steep volcanic debris with almost no vegetation.",
+    distinguish:
+      "Whakaari and Ruapehu are both andesitic volcanoes of the Taupō Volcanic Zone, but Whakaari is almost entirely under the sea with only its crater showing, and has no snow; Ruapehu is a high mountain volcano on land, with both a crater lake and snow. Whakaari's \"island\" is nothing like the granite continental island of Stewart Island — it is a volcano itself.",
+    concept:
+      "Whakaari shows that many volcanoes are really \"seamounts\": measured from the sea floor, a volcano may be over a kilometre high and huge in volume, and the \"island\" we see is only the tip above the water. To judge the true size of a volcanic island, you have to look at the sea-floor topography, not the coastline. A common misconception is to estimate a volcano's size from the part above the water.",
+    history:
+      "The full Māori name Te Puia o Whakaari means \"the dramatic volcano\". In the early 20th century sulphur was mined on the island; in 1914 a lahar from a crater-wall collapse killed miners, and the mining camp was later abandoned. Whakaari has since long been a privately owned nature reserve, with only guided short visits allowed; the December 2019 eruption occurred while visitors were on the island, causing major loss of life, after which access was tightened further.",
+  },
+
+  "stewart-island": {
+    seeing:
+      "Stewart Island (Māori: Rakiura, \"glowing skies\", for the aurora australis often seen here) lies off the southern end of the South Island across Foveaux Strait, and is the third-largest island in New Zealand. About 85% of it is Rakiura National Park, and its population of only a few hundred is concentrated in the small town of Oban at Halfmoon Bay. It is cool and wet, densely forested, and one of the easiest places to see kiwi in the wild.",
+    formation:
+      "Stewart Island is made mostly of granite and old metamorphosed sedimentary rock, part of the southward continuation of the New Zealand continental block, and was once joined to the South Island — during low sea level in the ice ages you could walk across, and it was only cut off by Foveaux Strait when sea level rose. The island's relief is low and gentle, and the coast has many granite headlands and drowned valley inlets (such as Paterson Inlet).",
+    observation:
+      "From the air Stewart Island is a low island almost entirely covered in dark-green forest, with an intricate coastline and several large bays such as Paterson Inlet cutting deep inland; only a few dune areas and bare granite hilltops show above the forest. The surrounding sea is often swell-washed, and open water leading to the Southern Ocean lies to the south.",
+    distinguish:
+      "Stewart Island is a \"continental island\" — originally part of the mainland, separated by rising sea level, with rock, plants and animals shared with the South Island; this is completely different from a volcanic island like Whakaari, or a coral island. It is closer to the pole than any of the islands to the north, with a climate and ecology closer to subantarctic.",
+    concept:
+      "Stewart Island is a case study in a continental island: to judge whether an island is continental, look at whether its rock and biology are continuous with the nearby mainland and whether the strait between is shallow (perhaps exposed during ice ages). A continental island's species are \"left behind\"; a volcanic or coral island's species arrived later by \"drifting across\". A common misconception is to treat all near-shore islands as having the same origin.",
+    history:
+      "Rakiura has long been a place where South Island Māori (Ngāi Tahu) seasonally take muttonbird chicks (tītī), a customary harvesting right still held today, with some nearby islands still managed by custom. In the 19th century there was whaling, boatbuilding, logging and tin mining on the island. From the late 20th century, through sustained conservation work such as rat eradication, Stewart Island and its satellite islands have become an important refuge for New Zealand's native birds.",
+  },
+
+  "waitomo": {
+    seeing:
+      "Waitomo, in a belt of limestone hill country in the western North Island, is known for its underground cave system. Besides stalactites and stalagmites, the caves are famous for tens of thousands of blue-green points of light — \"glowworms\", actually the larvae of a fungus gnat found only in New Zealand, which hang sticky threads from the cave roof and glow to lure insects.",
+    formation:
+      "The Waitomo limestone formed in a warm shallow sea about 20–30 million years ago, from the accumulated calcium-carbonate remains of marine organisms. After it was uplifted into land, rainwater carrying carbon dioxide seeped down through the rock's fractures and slowly dissolved the limestone, over millions of years hollowing out tiers of cave passages, underground rivers, shafts (sinkholes) and natural bridges — this is karst.",
+    observation:
+      "From the air Waitomo is gently rolling green pasture hill country, its surface dotted with round hollows (sinkholes) and streams that suddenly disappear and reappear, with bare grey-white limestone \"pavements\" and natural arches in places. The cave system underground is invisible from the surface, showing only at cave entrances and collapses.",
+    distinguish:
+      "Waitomo and Punakaiki are both limestone landscapes in New Zealand, but Waitomo is cave karst formed by rainwater dissolving downward; Punakaiki is a \"pancake\" sea cliff where coastal limestone has been cross-cut and differentially weathered by the sea. Compared with the large-scale tower karst of Guilin in China, Waitomo is small and cave-dominated.",
+    concept:
+      "Waitomo is a case study in karst: limestone can be dissolved by mildly acidic water, so the water does not flow at the surface but goes underground, hollowing the rock into caves and underground rivers, while the surface collapses into hollows and beheaded streams. To recognise a karst area, look at whether the surface is \"waterless\", with many round hollows and streams that come and go. A common misconception is that all caves are \"cut\" by underground rivers — limestone caves are mainly \"dissolved\" out.",
+    history:
+      "Waitomo means \"the hole (tomo) where the water (wai) enters\" in Māori. In 1887 the local Māori chief Tāne Tinorau, together with the English surveyor Fred Mace, first systematically explored the glowworm cave on a raft of flax stems. The cave opened to the public in 1889, becoming one of New Zealand's earliest nature tourism attractions, long co-managed by and sharing revenue with the local Māori family.",
+  },
+
+  "auckland-volcanic-field": {
+    seeing:
+      "Auckland is built on a \"volcanic field\" — more than fifty small volcanoes scattered across the city area, with scoria cones, crater lakes and lava plateaus. Individually they are small, but the whole field is still considered active: the youngest, Rangitoto Island, formed in an eruption about 600 years ago, when Māori were already living nearby and witnessed the whole event.",
+    formation:
+      "The Auckland Volcanic Field is a \"monogenetic volcanic field\": basaltic magma from deep in the mantle comes up at a new location every so often, erupts once (weeks to years) and stops permanently, with the next one somewhere else. So this is not one large volcano erupting repeatedly, but dozens of small volcanoes each erupting once, spread over about 360 km². Where magma meets groundwater there are violent steam explosions that blast out round shallow craters (maars), such as Lake Pupuke.",
+    observation:
+      "From the air the Auckland Volcanic Field is a set of green conical hills rising within the city (many with a bowl-shaped crater on top, some still showing the terraces of Māori ring settlements), plus several round crater lakes and parks. Rangitoto Island in the harbour is a near-perfectly symmetrical low shield cone, more complete in shape than any of the volcanoes on land.",
+    distinguish:
+      "The Auckland Volcanic Field is completely different from the large rhyolitic calderas of Taupō and Rotorua: Auckland is basaltic, monogenetic, many small volcanoes; Taupō is rhyolitic, repeated giant eruptions, one large caldera. The Auckland volcanoes are also not subduction-zone magma like Ruapehu — their magma comes from deeper, \"cleaner\" mantle melting.",
+    concept:
+      "The Auckland Volcanic Field is a case study in a monogenetic volcanic field: to judge whether a volcanic area is a monogenetic field, look at whether it consists of many small volcanoes of different ages that each erupted once, with no repeatedly active main volcano. The risk in such a field is not that one mountain will erupt again, but that the next eruption will appear at a new site where there was no volcano before. A common misconception is to ask \"which Auckland volcano will erupt again\" — the question is \"where will the next volcano appear\".",
+    history:
+      "The Auckland isthmus (Māori: Tāmaki Makaurau) — with fertile soil, sea on two sides and easily defended volcanic cones — was long a densely populated core area contested by several Māori iwi, and many cones still show the terraces and ditches of large defended settlements (pā). In the colonial 19th century many cones were quarried away in large part; those that remain are mostly protected parks and memorial sites today.",
+  },
+
+  "banks-peninsula": {
+    seeing:
+      "Banks Peninsula, on the east coast of the South Island next to Christchurch, is a hilly block jutting out into the sea, with two large deep harbours in its middle — Lyttelton Harbour and Akaroa Harbour. It was originally an island, later joined to the mainland by the gravels of the Canterbury Plains on its western side. The peninsula is pasture, remnant native forest and an intricate volcanic coast.",
+    formation:
+      "Banks Peninsula is the eroded remains of two overlapping Miocene shield volcanoes (about 11 to 8 million years old). After the volcanoes died, waves and rivers stripped away the softer parts, leaving the hard lava-flow layers as radiating ridges; the central collapse of each volcano and the eroded valleys were later flooded by the sea, becoming the two near-circular deep harbours of Lyttelton and Akaroa.",
+    observation:
+      "From the air Banks Peninsula is a dark-green, roughly circular hill block at the end of the great Canterbury Plains, with the two large harbours cutting deep into it as if two bites had been taken out, their shores a ring of steep slopes; radiating ridges and valleys spread from the centre outward, with cliffs and small bays around the rim. The contact with the plains on the west is a straight coastline.",
+    distinguish:
+      "Banks Peninsula and the Coromandel Peninsula are both products of eroded old volcanoes, but Banks is a round \"block\" of two overlapping shield volcanoes with drowned volcanic centres for harbours; the Coromandel is a long, narrow \"ridge\" from a chain of uplifted, eroded volcanoes. Banks Peninsula is joined to the mainland by the build-up of plains gravel, a \"land-tied island\" structure that is uncommon in New Zealand.",
+    concept:
+      "Banks Peninsula is a case study in a land-tied island and a drowned volcanic crater: a near-shore island, if a large river keeps depositing sediment beside it, can be joined to the mainland by that sediment; and after a shield volcano dies, its central hollow is deepened by erosion and then flooded by the sea, forming a near-circular harbour. A common misconception is to read such a round deep harbour as an impact crater or an artificial port.",
+    history:
+      "Banks Peninsula (Māori: Horomaka) was an important area of settlement and resources for Ngāi Tahu, with several settlements around the two harbours. In the 1830s Akaroa Harbour was the target of French and British settlement schemes, and the town of Akaroa still keeps French place names and buildings. In the 19th century the peninsula's native forest was extensively felled for timber and pasture, and from the 20th century there has been sustained replanting.",
+  },
 };

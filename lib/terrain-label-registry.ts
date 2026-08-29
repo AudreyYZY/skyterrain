@@ -161,6 +161,11 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "canterbury-plains": "national",
   "waikato-river": "national",
   "clutha-river": "national",
+  "bay-of-islands": "national",
+  "marlborough-sounds": "national",
+  "stewart-island": "national",
+  "auckland-volcanic-field": "national",
+  "whakaari-white-island": "regional",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
