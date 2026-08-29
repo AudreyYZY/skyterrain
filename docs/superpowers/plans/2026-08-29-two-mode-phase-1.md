@@ -59,12 +59,12 @@ Unblocks travel content rendering without touching the study path.
 **Interfaces:**
 - Produces: `export interface PanelSection { key: string; heading: string; text: string }` (add to `ReadingPanel.tsx`, export it). New optional prop `sections?: PanelSection[] | null` on `ReadingPanelProps`. When `sections` is non-null it is rendered (name from `terrain.name`, elevation row hidden if `terrain.elevation` is `NaN`); when null, current behaviour is unchanged.
 
-- [ ] **Step 1: Read the current article-state renderer**
+- [x] **Step 1: Read the current article-state renderer**
 
 Run: `sed -n '60,220p' components/ReadingPanel.tsx`
 Note how `lesson` is turned into sections today (it uses `<StructuredLesson>` and/or `lessonSections`). The goal: when `sections` prop is passed, render those `{heading, text}` blocks with the same sentence-highlight markup used for `lesson`.
 
-- [ ] **Step 2: Add the type + prop**
+- [x] **Step 2: Add the type + prop**
 
 In `components/ReadingPanel.tsx`, after the imports:
 
@@ -85,7 +85,7 @@ Add to `ReadingPanelProps`:
 
 Add `sections` to the destructured props (default `null`).
 
-- [ ] **Step 3: Branch the render**
+- [x] **Step 3: Branch the render**
 
 Find the block that renders the expanded/article state from `lesson`. Wrap it:
 
@@ -118,11 +118,11 @@ Find the block that renders the expanded/article state from `lesson`. Wrap it:
 
 Match the existing classNames actually used in this file (inspect first — `editorial-kicker`, `reading-body`, `--accent-wash` are examples; use whatever the current article render uses).
 
-- [ ] **Step 4: Card-state fallback**
+- [x] **Step 4: Card-state fallback**
 
 Where the collapsed "card" state shows `lesson.seeing` as the one-line summary, also handle `sections`: use `sections[0].text` truncated. Keep it simple — one ternary.
 
-- [ ] **Step 5: Verify**
+- [x] **Step 5: Verify**
 
 ```bash
 npx tsc --noEmit
@@ -132,7 +132,7 @@ Expected: `✓ Compiled successfully`. No behaviour change yet (nothing passes `
 
 Browser: `npx next start -p 3011`, open `http://localhost:3011`, `localStorage.setItem("fge-active-region","china")`, `localStorage.setItem("fge-intro-seen","1")`, reload. Click a terrain (e.g. 秦岭) from the left rail → panel opens, 6 sections render as before. Confirm study panel unchanged.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add components/ReadingPanel.tsx
@@ -152,7 +152,7 @@ git commit -m "feat(panel): ReadingPanel can render a generic section array"
 **Interfaces:**
 - Produces: `export type AppMode = "study" | "travel"`; `export function getStoredMode(): AppMode`; `export function setStoredMode(m: AppMode): void`. `ModeToggle` props: `{ mode: AppMode; onChange: (m: AppMode) => void; language: Language }`. `ExplorerApp` gains `const [mode, setMode] = useState<AppMode>(getStoredMode)`.
 
-- [ ] **Step 1: `lib/app-mode.ts`**
+- [x] **Step 1: `lib/app-mode.ts`**
 
 ```ts
 export type AppMode = "study" | "travel";
@@ -175,7 +175,7 @@ export function setStoredMode(m: AppMode): void {
 }
 ```
 
-- [ ] **Step 2: i18n keys**
+- [x] **Step 2: i18n keys**
 
 In `lib/i18n.ts` `UI_TEXTS`, add:
 
@@ -185,7 +185,7 @@ In `lib/i18n.ts` `UI_TEXTS`, add:
   "rail.countryOverview": { "zh-CN": "国家概览", "en-US": "Country overview" },
 ```
 
-- [ ] **Step 3: `components/ModeToggle.tsx`**
+- [x] **Step 3: `components/ModeToggle.tsx`**
 
 ```tsx
 "use client";
@@ -223,7 +223,7 @@ export default function ModeToggle({ mode, onChange, language }: Props) {
 
 (Match the actual accent/hairline token names in `app/globals.css` — inspect if `--accent` / `--bg` differ.)
 
-- [ ] **Step 4: Wire into ExplorerApp**
+- [x] **Step 4: Wire into ExplorerApp**
 
 `components/ExplorerApp.tsx`:
 - Add imports: `import ModeToggle from "@/components/ModeToggle";` and `import { type AppMode, getStoredMode, setStoredMode } from "@/lib/app-mode";`
@@ -255,7 +255,7 @@ Verified against the codebase: `closePanel` is `const closePanel = () => {…}` 
 
 - In the header's right-side `<div>`, put `<ModeToggle mode={mode} onChange={handleModeChange} language={language} />` before `<RegionSelector>`.
 
-- [ ] **Step 5: Temporary travel placeholder**
+- [x] **Step 5: Temporary travel placeholder**
 
 For this task only, guard the study-specific overlays so travel mode isn't broken-looking. Change the render conditions:
 - `<CesiumOverlayLabels …/>` → wrap with `{mode === "study" && ( … )}`
@@ -271,7 +271,7 @@ For this task only, guard the study-specific overlays so travel mode isn't broke
 )}
 ```
 
-- [ ] **Step 6: Verify**
+- [x] **Step 6: Verify**
 
 ```bash
 npx tsc --noEmit && rm -rf .next && npm run build 2>&1 | grep -E "Compiled|Failed"
@@ -281,7 +281,7 @@ Expected: build OK, `106 项, 0 项异常`.
 
 Browser: reload with china region. Header shows `学习 | 旅游`. Click 旅游 → labels/rail/journey vanish, "旅游模式 —— 建设中" shows, globe stays. Reload → still travel. Click 学习 → everything back, click 秦岭 works. Switch language → toggle text follows.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add lib/app-mode.ts components/ModeToggle.tsx components/ExplorerApp.tsx lib/i18n.ts
@@ -313,7 +313,7 @@ export function getCitiesForCountry(country: string): CityEntry[];
 export function getCityById(id: string): CityEntry | undefined;
 ```
 
-- [ ] **Step 1: Write the file**
+- [x] **Step 1: Write the file**
 
 ```ts
 /**
@@ -404,7 +404,7 @@ export function getCityById(id: string): CityEntry | undefined {
 }
 ```
 
-- [ ] **Step 2: Verify**
+- [x] **Step 2: Verify**
 
 ```bash
 npx tsc --noEmit
@@ -412,7 +412,7 @@ node --experimental-strip-types -e 'import("./lib/places-registry.ts").then(m=>c
 ```
 Expected: `7 cities; sydney,melbourne,brisbane,perth,adelaide,cairns,darwin`
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add lib/places-registry.ts
@@ -429,7 +429,7 @@ git commit -m "feat(places): places-registry schema + 7 Australian cities"
 **Interfaces:**
 - Consumes: `CITY_REGISTRY`, `COUNTRY_OVERVIEWS` from `lib/places-registry.ts`; `REGIONS` from `lib/regions.ts`.
 
-- [ ] **Step 1: Write it (following `scripts/check-routes.ts` style — no framework)**
+- [x] **Step 1: Write it (following `scripts/check-routes.ts` style — no framework)**
 
 ```ts
 /**
@@ -465,12 +465,12 @@ console.log(`\n${CITY_REGISTRY.length} 城市, ${COUNTRY_OVERVIEWS.length} 概�
 process.exit(failures > 0 ? 1 : 0);
 ```
 
-- [ ] **Step 2: Verify**
+- [x] **Step 2: Verify**
 
 Run: `node --experimental-strip-types scripts/check-places.ts`
 Expected: `7 城市, 1 概览, 0 项异常`, exit 0.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add scripts/check-places.ts
@@ -500,7 +500,7 @@ export function resolveTravelGuide(id: string, lang: Language): TravelGuide | nu
 export function travelGuideToSections(g: TravelGuide, lang: Language): { key: string; heading: string; text: string }[];
 ```
 
-- [ ] **Step 1: i18n section-heading keys**
+- [x] **Step 1: i18n section-heading keys**
 
 `lib/i18n.ts` `UI_TEXTS`:
 
@@ -513,7 +513,7 @@ export function travelGuideToSections(g: TravelGuide, lang: Language): { key: st
   "travel.whenAndTips":   { "zh-CN": "何时去·提示",    "en-US": "When to go & tips" },
 ```
 
-- [ ] **Step 2: `lib/travel-lesson.ts`**
+- [x] **Step 2: `lib/travel-lesson.ts`**
 
 ```ts
 import type { Language } from "@/lib/i18n";
@@ -551,7 +551,7 @@ export function travelGuideToSections(g: TravelGuide, lang: Language) {
 }
 ```
 
-- [ ] **Step 3: `lib/travel-content.zh.ts` (Sydney + Australia overview only for now)**
+- [x] **Step 3: `lib/travel-content.zh.ts` (Sydney + Australia overview only for now)**
 
 ```ts
 import type { TravelGuide } from "@/lib/travel-lesson";
@@ -589,11 +589,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 };
 ```
 
-- [ ] **Step 4: `lib/travel-content.en.ts` (parallel, same two ids)**
+- [x] **Step 4: `lib/travel-content.en.ts` (parallel, same two ids)**
 
 Write `TRAVEL_CONTENT_EN` with `australia-overview` and `sydney`, English, same 6 keys, ~150–220 words per section, faithful to the zh meaning but idiomatic English (not machine translation). Follow the tone of `lib/terrain-content.en.ts`.
 
-- [ ] **Step 5: Verify**
+- [x] **Step 5: Verify**
 
 ```bash
 npx tsc --noEmit
@@ -601,7 +601,7 @@ node --experimental-strip-types -e 'import("./lib/travel-lesson.ts").then(m=>{co
 ```
 Expected: `6 sections` then `概览 / 地理与格局 / 衣食住行 / 人文与习俗 / 看什么·体验什么 / 何时去·提示`
 
-- [ ] **Step 6: Extend `check-places.ts`**
+- [x] **Step 6: Extend `check-places.ts`**
 
 Add near the top: `import { resolveTravelGuide } from "../lib/travel-lesson.ts";` and inside the city loop:
 
@@ -612,7 +612,7 @@ Add near the top: `import { resolveTravelGuide } from "../lib/travel-lesson.ts";
 
 Run it — expect failures for the 6 cities without content yet (that's fine, those land in Task 11). To keep CI-style green in the meantime, make the travel-content check a **warning** (print, do not `failures++`) until Task 11, then flip to hard fail in Task 11.
 
-- [ ] **Step 7: Commit**
+- [x] **Step 7: Commit**
 
 ```bash
 git add lib/travel-lesson.ts lib/travel-content.zh.ts lib/travel-content.en.ts lib/i18n.ts scripts/check-places.ts
@@ -631,7 +631,7 @@ git commit -m "feat(travel): TravelGuide schema + resolver + Sydney & AU overvie
 **Interfaces:**
 - Produces: `export function getRouteNarration(routeId: string, lang: Language, mode: "study" | "travel"): string | null`. `ROUTE_NARRATION: Record<string, { study: Record<Language, string>; travel: Record<Language, string> }>`.
 
-- [ ] **Step 1: Restructure the data**
+- [x] **Step 1: Restructure the data**
 
 In `lib/route-narration.ts`, wrap each existing `{ "zh-CN": …, "en-US": … }` as the `study` value and add an empty `travel`:
 
@@ -660,7 +660,7 @@ export function getRouteNarration(
 }
 ```
 
-- [ ] **Step 2: Update ExplorerApp call site**
+- [x] **Step 2: Update ExplorerApp call site**
 
 `components/ExplorerApp.tsx` around line 676 — change:
 
@@ -672,7 +672,7 @@ to:
 getRouteNarration(route.id, language, mode) ?? routeEndLesson(language).seeing;
 ```
 
-- [ ] **Step 3: Update `scripts/check-routes.ts`**
+- [x] **Step 3: Update `scripts/check-routes.ts`**
 
 Find the `ROUTE_NARRATION` check. Change it to look at `.study`:
 
@@ -682,7 +682,7 @@ if (!narr?.study?.["zh-CN"] || !narr?.study?.["en-US"]) fail(`${r.id}: missing s
 else if (narr.study["zh-CN"].length < 200) fail(`${r.id}: study zh narration too short`);
 ```
 
-- [ ] **Step 4: Verify**
+- [x] **Step 4: Verify**
 
 ```bash
 npx tsc --noEmit
@@ -693,7 +693,7 @@ Expected: `4 条航线, 0 项异常`; build OK.
 
 Browser (study mode, china): click 北京—乌鲁木齐 "开始飞行" → narration plays as before.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add lib/route-narration.ts components/ExplorerApp.tsx scripts/check-routes.ts
@@ -711,7 +711,7 @@ git commit -m "refactor(routes): route narration keyed by mode (study/travel)"
 - Consumes: `CesiumMapHandle` — verified: `projectToScreen(lat, lon): {x,y}|null` and `getCameraState(): { altitude, zoomLevel, lon, lat } | null` (zoomLevel is `20 - log2(altitude/50)` clamped 1–20). `CityEntry`, `PlaceTier` from `lib/places-registry.ts`.
 - Produces: default export `CityMarkers`. Props `{ mapRef: React.RefObject<CesiumMapHandle | null>; cities: CityEntry[]; activeId: string | null; language: Language; onSelect: (id: string) => void }`.
 
-- [ ] **Step 1: Write the component (mirror `CesiumOverlayLabels` structure)**
+- [x] **Step 1: Write the component (mirror `CesiumOverlayLabels` structure)**
 
 ```tsx
 "use client";
@@ -789,14 +789,14 @@ export default function CityMarkers({ mapRef, cities, activeId, language, onSele
 }
 ```
 
-- [ ] **Step 2: Verify (compile only — wired in Task 8)**
+- [x] **Step 2: Verify (compile only — wired in Task 8)**
 
 ```bash
 npx tsc --noEmit
 ```
 Expected: clean.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add components/CityMarkers.tsx
@@ -813,7 +813,7 @@ git commit -m "feat(travel): CityMarkers overlay component"
 **Interfaces:**
 - Produces: `CesiumMap` gains prop `mode?: "study" | "travel"` (default `"study"`). Handle gains `focusCity(lon: number, lat: number, view?: { heightM?: number; pitchDeg?: number; headingDeg?: number }): void`.
 
-- [ ] **Step 1: Add the prop + gate terrain work**
+- [x] **Step 1: Add the prop + gate terrain work**
 
 In `CesiumMapProps` add `mode?: "study" | "travel";`. Default it in the component: `const activeMode = mode ?? "study";`
 
@@ -824,7 +824,7 @@ Find where terrain labels are synced to `labelManager` and where the `terrainReg
 
 Do NOT remove the entities; just keep them hidden. Keep `check-terrain-camera` passing (it imports the registry + camera math, not this component — unaffected).
 
-- [ ] **Step 2: Add `focusCity` to the imperative handle**
+- [x] **Step 2: Add `focusCity` to the imperative handle**
 
 In the `useImperativeHandle` block:
 
@@ -844,7 +844,7 @@ focusCity(lon: number, lat: number, view?: { heightM?: number; pitchDeg?: number
 
 (Match the real viewer ref name — grep `viewerRef` / `viewer` in the handle.)
 
-- [ ] **Step 3: Verify**
+- [x] **Step 3: Verify**
 
 ```bash
 npx tsc --noEmit && rm -rf .next && npm run build 2>&1 | grep -E "Compiled|Failed"
@@ -854,7 +854,7 @@ Expected: build OK; `106 项, 0 项异常`.
 
 Browser: study mode still fully works (labels, hover highlight, click). Travel mode: no crash, globe spins, no terrain labels.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add components/CesiumMap.tsx
@@ -873,7 +873,7 @@ git commit -m "feat(map): CesiumMap mode prop + focusCity; gate terrain layer in
 - Consumes: `getCitiesForCountry`, `getCityById` (places-registry); `resolveTravelGuide`, `travelGuideToSections` (travel-lesson); `CityMarkers`; `CesiumMap.focusCity`.
 - Produces: `lib/travel-rail.ts` → `export function travelRailGroups(country: string, language: Language): RailGroup[]`. `ExplorerApp` gains `handleSelectCity(id: string)` and `const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null)`.
 
-- [ ] **Step 1: `lib/travel-rail.ts`**
+- [x] **Step 1: `lib/travel-rail.ts`**
 
 ```ts
 import type { Language } from "@/lib/i18n";
@@ -902,7 +902,7 @@ export function travelRailGroups(country: string, language: Language): RailGroup
 }
 ```
 
-- [ ] **Step 2: ExplorerApp — imports + state**
+- [x] **Step 2: ExplorerApp — imports + state**
 
 ```ts
 import CityMarkers from "@/components/CityMarkers";
@@ -915,7 +915,7 @@ import type { PanelSection } from "@/components/ReadingPanel";
 State: `const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);`
 Also a `travelPlace` for the panel header: `const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);`
 
-- [ ] **Step 3: `handleSelectCity`**
+- [x] **Step 3: `handleSelectCity`**
 
 ```ts
 const handleSelectCity = useCallback((id: string) => {
@@ -940,7 +940,7 @@ const handleSelectCity = useCallback((id: string) => {
 
 Recompute `travelSections` on language change: add an effect that, if `travelPlace` is set, re-resolves. Simplest — key the current selection id in state and re-run `handleSelectCity(currentId)` when `language` changes.
 
-- [ ] **Step 4: Branch the render**
+- [x] **Step 4: Branch the render**
 
 Replace the Task-2 temporary placeholder and guards:
 
@@ -982,7 +982,7 @@ Replace the Task-2 temporary placeholder and guards:
 
 Track the current travel selection id in state (`const [travelId, setTravelId] = useState<string | null>(null)`) and set it in `handleSelectCity`; use it for `activeId` above.
 
-- [ ] **Step 5: Verify**
+- [x] **Step 5: Verify**
 
 ```bash
 npx tsc --noEmit && rm -rf .next && npm run build 2>&1 | grep -E "Compiled|Failed"
@@ -997,7 +997,7 @@ Browser (prod server, australia region — set `localStorage.setItem("fge-active
 4. Toggle back to 学习 → China terrain atlas intact, click 秦岭 works.
 5. Switch language mid-travel → panel + rail + markers follow.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add lib/travel-rail.ts components/ExplorerApp.tsx
@@ -1016,22 +1016,22 @@ git commit -m "feat(travel): wire travel mode into ExplorerApp (markers, rail, p
 **Interfaces:**
 - `JourneyBar` gains `mode: "study" | "travel"`.
 
-- [ ] **Step 1: IndexRail — pin the overview entry**
+- [x] **Step 1: IndexRail — pin the overview entry**
 
 In `IndexRail.tsx`, if a group has `type === "overview"`, render its single item as a top-level pinned button above the category strip (not nested under a category). Small conditional in the render. No prop change needed — detect `type === "overview"`.
 
-- [ ] **Step 2: JourneyBar — mode subtitle**
+- [x] **Step 2: JourneyBar — mode subtitle**
 
 Add `mode` prop. When `mode === "travel"`, the chip subtitle uses the city string (dep → arr) instead of the terrain string. Since travel routes are Phase 2, JourneyBar is still only rendered in study mode — so this is a no-op guard for now; add the prop and the branch so Phase 2 needs no JourneyBar change. Pass `mode={mode}` from ExplorerApp.
 
-- [ ] **Step 3: Verify**
+- [x] **Step 3: Verify**
 
 ```bash
 npx tsc --noEmit && rm -rf .next && npm run build 2>&1 | grep -E "Compiled|Failed"
 ```
 Browser: travel rail shows "国家概览" as a distinct pinned entry at the top; study rail unchanged.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add components/IndexRail.tsx components/JourneyBar.tsx components/ExplorerApp.tsx
@@ -1047,7 +1047,7 @@ git commit -m "feat(travel): pinned overview entry in rail; JourneyBar mode prop
 - Modify: `lib/travel-content.en.ts`
 - Modify: `scripts/check-places.ts`
 
-- [ ] **Step 1: Write the guides**
+- [x] **Step 1: Write the guides**
 
 Add to both `TRAVEL_CONTENT_ZH` and `TRAVEL_CONTENT_EN`, using the exact 6-key `TravelGuide` shape (`identity / layout / gettingAround / culture / seeAndDo / whenAndTips`), ~150–220 words per section per language:
 
@@ -1060,11 +1060,11 @@ Add to both `TRAVEL_CONTENT_ZH` and `TRAVEL_CONTENT_EN`, using the exact 6-key `
 
 Source discipline: Tourism Australia / state boards / BoM climate normals / Home Affairs entry rules. Climate months, transit systems, visa basics = stated as fact. "Best time", "worth seeing" = general guidance, hedged.
 
-- [ ] **Step 2: Flip travel-content check to hard fail**
+- [x] **Step 2: Flip travel-content check to hard fail**
 
 In `scripts/check-places.ts`, change the two travel-content lines from warning to `fail(...)` (i.e. `failures++`).
 
-- [ ] **Step 3: Verify**
+- [x] **Step 3: Verify**
 
 ```bash
 npx tsc --noEmit && rm -rf .next && npm run build 2>&1 | grep -E "Compiled|Failed"
@@ -1074,7 +1074,7 @@ Expected: `7 城市, 1 概览, 0 项异常`.
 
 Browser (australia, travel): click 墨尔本, 珀斯, 达尔文 — each opens a full 6-section guide; switch to EN, re-check 2 of them read as native English.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add lib/travel-content.zh.ts lib/travel-content.en.ts scripts/check-places.ts
@@ -1089,7 +1089,7 @@ git commit -m "content(travel): Australia — 6 more city guides (zh + en)"
 - Modify: `CLAUDE.md`
 - Modify: memory (`content-audit` / new `two-mode` memory)
 
-- [ ] **Step 1: CLAUDE.md**
+- [x] **Step 1: CLAUDE.md**
 
 Under 核心架构 / 关键文件, add the travel-mode files and the `AppMode` concept:
 - `lib/app-mode.ts` — `AppMode` study|travel, localStorage
@@ -1100,7 +1100,7 @@ Under 核心架构 / 关键文件, add the travel-mode files and the `AppMode` c
 
 Under 当前阶段, add: 两模式 Phase 1 完成（架构 + 澳洲国家概览 + 7 城）；Phase 2 = 中国旅游 + 补中国航线。
 
-- [ ] **Step 2: Verify + commit**
+- [x] **Step 2: Verify + commit**
 
 ```bash
 git add CLAUDE.md
