@@ -84,7 +84,7 @@ const TERRAINS: TerrainPoint[] = RAW_TERRAINS.map((t) => {
   const entry = getTerrainEntry(t.id);
   return {
     ...t,
-    region: t.region ?? "xinjiang",
+    region: t.region ?? "china",
     lat: entry?.landmark.lat ?? t.lat,
     lon: entry?.landmark.lon ?? t.lon,
   };

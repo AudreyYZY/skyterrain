@@ -4,7 +4,7 @@
  * 取代原来散落在 ExplorerApp 三处的内联优先级逻辑。
  *
  * 优先级
- *   zh-CN: 权威内容(zh) → i18n-stories(zh) → 传入的兜底(新疆 json / feature story) → null
+ *   zh-CN: 权威内容(zh) → i18n-stories(zh) → 传入的兜底(早期地形 JSON / feature story) → null
  *   en-US: 权威内容(en) → i18n-stories(en) → 权威内容(zh，至少是结构化的) → 兜底 → null
  */
 
@@ -16,7 +16,7 @@ import { getTerrainStory } from "@/lib/i18n-stories";
 interface ResolveOpts {
   /** 中文名 —— 用于查 i18n-stories（它以中文名为 key）*/
   nameZh?: string;
-  /** 兜底讲解（新疆 json 自带 lesson / CHINA_CORE_FEATURES story），通常是中文 */
+  /** 兜底讲解（早期地形 JSON 自带 lesson / core-features story），通常是中文 */
   fallback?: TerrainLesson | null;
 }
 

@@ -319,7 +319,7 @@ export const TERRAIN_NAMES: Record<string, Record<Language, string>> = {
 
 /**
  * 获取地形名称翻译。
- * 优先级：terrain-registry（单一真实源，全 88 个）→ TERRAIN_NAMES（城市 / 新疆细节等
+ * 优先级：terrain-registry（单一真实源）→ TERRAIN_NAMES（城市 / 早期地名等
  * 不在注册表里的名字）→ 原名。
  */
 export function getTerrainName(name: string, lang: Language): string {

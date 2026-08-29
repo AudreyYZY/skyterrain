@@ -184,6 +184,25 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "isle-of-skye": "national",
   "outer-hebrides": "national",
 
+  // 瑞士
+  "bernese-alps": "national",
+  "pennine-alps": "national",
+  matterhorn: "national",
+  "rhaetian-alps": "national",
+  "gotthard-massif": "national",
+  "jura-mountains": "national",
+  saentis: "national",
+  "aletsch-glacier": "national",
+  "rhone-valley": "national",
+  "swiss-plateau": "national",
+  "lake-geneva": "national",
+  "lake-constance": "national",
+  "lake-lucerne": "national",
+  "lake-maggiore": "national",
+  "aare-river": "national",
+  "alpine-rhine": "national",
+  "rhine-falls": "national",
+
   // 冰岛
   hekla: "national",
   katla: "national",
