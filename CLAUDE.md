@@ -28,12 +28,23 @@
   `docs/superpowers/specs/2026-08-30-world-terrain-expansion-design.md`
 - **远期**: 全球地貌探索
 
-**区域 = 大洲**（`lib/regions.ts`：`asia` / `europe` / `africa` / `north-america` /
-`south-america` / `oceania`；`DEFAULT_REGION_ID = "asia"`）。注册表条目 `regionId` 填大洲、
-`country` 填国家 slug。顶栏 `RegionSelector` 是大洲下拉菜单；`localStorage fge-active-region`
-读时把旧值 `china`/`xinjiang`/`australia` 迁移到大洲。
+**区域 = 大洲 → 次区域两级**（`lib/regions.ts`）。大洲 `REGIONS`：`asia` / `europe` / `africa` /
+`north-america` / `south-america` / `oceania`；`DEFAULT_REGION_ID = "asia"`。次区域按联合国 M49
+（`SUBREGIONS` 全量 + `COUNTRY_TO_SUBREGION` 每国一行 + `COUNTRIES` 显示名/目录顺序；
+辅助 `countriesForContinent` / `subregionOfCountry` / `subregionsForContinent` / `getCountryMeta`）。
+注册表条目 `regionId` 填大洲、`country` 填国家 slug（大洲由 `COUNTRY_TO_SUBREGION` 派生，必须一致）。
+- 顶栏 `RegionSelector` = 大洲下拉，多次区域的大洲展开二级（点次区域→飞该次区域地形重心，
+  重心由 `lib/subregion-geo.ts` 从注册表算）。
+- 左侧 `IndexRail` 目录按**当前大洲下的国家**分栏（不再按分类/添加顺序）：国家序 = 次区域地理序 →
+  `COUNTRIES` 序；国家内地形序 = T1→T2→T3（`lib/terrain-tier.ts`）再骨架类地貌优先再注册表序；
+  次区域名作分隔小标题。
+- `ContinentIntro`（学习模式首屏）= shuffle 的大陆滑动卡片，滑到哪片地球飞哪片，「开始探索」进入；
+  `localStorage fge-intro-seen` 记住后跳过。旅游模式仍用 `IntroOverlay`。
+- 地图任意点击：`CesiumMap` LEFT_CLICK→`drillPick`→最小面积地形→`onTerrainSelect`；
+  `ExplorerApp.handleMapTerrainSelect` 自动切到该地形所在大洲再讲解（跨洲可用）。
+- `localStorage fge-active-region` 读时把旧值 `china`/`xinjiang`/`australia` 迁移到大洲。
 自检：`node --experimental-strip-types scripts/check-regions.ts`（regionId/country 完整性 +
-terrainCount 核对）。
+terrainCount 核对 + 次区域↔大洲↔地形一致性）。
 
 ## 技术栈
 
@@ -64,8 +75,9 @@ components/
   ExplorerApp.tsx        — 主编排器（状态 + 讲解/航线/语音链路 + 组合下面几个 UI）
   CesiumMap.tsx          — 3D 地球、Camera 系统、地形区域抬升高亮（hover/选中）、INTRO_VIEW 初始构图
   CesiumOverlayLabels.tsx — HTML 地形标签层（zoom 自适应、hover/focus 高亮）
-  IntroOverlay.tsx       — 初始编辑式标题卡（localStorage 记住已看过）
-  IndexRail.tsx          — 左侧地貌目录（窄条 → 浮出分类/地形两级）
+  IntroOverlay.tsx       — 旅游模式初始标题卡（localStorage 记住已看过）
+  ContinentIntro.tsx     — 学习模式初始：shuffle 的大陆滑动卡片，选定即飞入该大洲
+  IndexRail.tsx          — 左侧地貌目录（窄条 → 浮出「次区域 → 国家 → 地形」，divider 分隔次区域）
   ReadingPanel.tsx       — 右侧单一阅读面板（卡片态 ⇄ 文章态，逐句高亮）
   JourneyBar.tsx         — 底部航线胶片条
   StructuredLesson.tsx   — 板块讲解渲染（editorial 衬线排版）；lesson=6 板块 / sections=通用段列表
@@ -75,7 +87,9 @@ components/
 
 lib/
   terrain-registry.ts    — 【单一真实源】地形的位置/锚点/范围/走向/中英名/regionId(大洲)/country（选取标准见 docs/terrain-taxonomy.md）
-  regions.ts             — 大洲配置（asia/europe/africa/north-america/south-america/oceania）+ DEFAULT_REGION_ID
+  regions.ts             — 大洲配置 + 次区域(M49) SUBREGIONS/COUNTRY_TO_SUBREGION/COUNTRIES + 辅助函数 + DEFAULT_REGION_ID
+  subregion-geo.ts       — 每个次区域的地形数量与地理重心（由 terrain-registry 派生，供顶栏二级下拉飞行）
+  terrain-tier.ts        — terrainTier(id) → T1/T2/T3（由标签重要性派生）+ categoryOrder（目录排序用）
   terrain-camera.ts      — 数据驱动相机推导 computeTerrainCamera()
   terrain-content.{zh,en}.ts — 权威 6 板块讲解内容（中/英）；terrain-content.ts = 索引
   terrain-lesson.ts      — resolveLesson(id, lang)：一处决定用哪份讲解（内容→stories→兜底）
@@ -248,7 +262,10 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   - **不要用 `polygon.outline`** —— 会懒加载 `createPolygonOutlineGeometry` worker，网络异常时崩溃。
   - `tickTerrainRegions` rAF 推进；配色/高度/透明度常量在 `CesiumMap.tsx` 顶部（`REGION_*`）。
 - hover 走 `ScreenSpaceEventHandler` MOUSE_MOVE → **`scene.drillPick`**，在重叠命中的地块里
-  取 `areaDeg2` 最小（最具体）的那个；点击/跳转走 `focusTerrain(id)`。
+  取 `areaDeg2` 最小（最具体）的那个；LEFT_CLICK 同样 drillPick 取最小面积 → `onTerrainSelect(id)`
+  → `ExplorerApp.handleMapTerrainSelect` 自动切大洲再讲解（跨洲直接点地图也能跳）。
+  已知：`CesiumOverlayLabels` 仍只渲染当前大洲的文字标签，非当前洲的地形有 hover 抬升高亮但无标签，
+  点一下才切过去。
 
 ## 语音播报
 
