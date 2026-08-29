@@ -1329,6 +1329,97 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Pearl River Delta was reclaimed into farmland on a large scale from the Song onward, and grew rich on silk, sericulture and foreign trade in the Ming and Qing. Guangzhou was long an important port for China's foreign trade. Since the 1980s the region has been a front line of reform and opening and a major world manufacturing base.",
   },
 
+
+  "badain-jaran": {
+    seeing:
+      "The Badain Jaran Desert lies in the western Alxa Plateau of Inner Mongolia, about 49,000 km² — China's third-largest desert. It is best known for its tall sand mountains — many two or three hundred metres of relative height, the highest, Bilutu, about 460 m, among the tallest sand mountains in the world — with more than a hundred interdune lakes scattered between them.",
+    formation:
+      "The sand comes from weathered material off the surrounding mountains and dry riverbeds, piled up by wind over a long time. Why the sand mountains here are so tall is still discussed by researchers; it may involve the shape of the underlying bedrock, a fairly steady wind regime, and groundwater cementing the sand grains. In the interdune hollows groundwater emerges as lakes, mostly saline, a few fed by fresh springs.",
+    observation:
+      "From the air the Badain Jaran is a field of golden sand mountains in violent relief, like frozen giant waves, with small deep-blue or jade-green lakes set in the troughs, often with a patch of green and a temple beside them. Sliding down the steep dune faces makes a roaring sound (\"singing sand\").",
+    distinguish:
+      "The Badain Jaran and the Taklamakan: both are moving-sand deserts, but the Badain Jaran's sand mountains are far taller and it holds many lakes; the Taklamakan is far larger, drier and almost lakeless. The Badain Jaran and the Tengger (both in Alxa): the Badain Jaran is to the west, with tall sand mountains and many lakes; the Tengger is to the east, its dunes lower, and is closer to the Yellow River and the railway.",
+    concept:
+      "The Badain Jaran is a sample of \"why there are lakes in a desert\": the hollows between the dunes cut down to the water table, so groundwater seeps out and pools. Why the sand mountains grow so tall and are not blown flat is a not-yet-fully-solved problem in desert geomorphology. In 2024 the sand-mountain-and-lake complex of the Badain Jaran was inscribed as World Natural Heritage.",
+    history:
+      "Herders have long settled by the desert's lakes, with small temples (such as the Badain Jaran temple). Thinly peopled and hard to reach, the area has long been a natural laboratory for studying arid-zone dunes and groundwater.",
+  },
+
+  tengger: {
+    seeing:
+      "The Tengger Desert straddles Alxa Left Banner in Inner Mongolia and the borders of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
+    formation:
+      "The Tengger's sand is debris from the surrounding mountains and old Yellow River channels, moved and piled by the wind. Some of the hollows between the dunes reach groundwater or hold seasonal water, forming lakes and salt marshes of various sizes (locally \"grass lakes\") — the green points in the desert.",
+    observation:
+      "From the air the Tengger is a rolling yellow sea of dunes, its south-eastern edge right against the Yellow River and the Ningxia Plain. Around Shapotou near Zhongwei you can see the railway and road crossing the sand, the surface laid with a grid of straw checkerboards — a sand-fixing net made by pressing wheat straw into the sand.",
+    distinguish:
+      "See the Badain Jaran entry. The Tengger's traits: its dunes are lower than the Badain Jaran's but it likewise has lake basins; it is farther south-east and directly threatens the Yellow River and the Baotou–Lanzhou railway, so it is one of the earliest and most concentrated sites of sand-control engineering in China.",
+    concept:
+      "Shapotou in the Tengger is the birthplace of \"straw-checkerboard sand fixing\": wheat or rice straw is pressed upright into the sand, left sticking up ten-odd centimetres, in one-metre squares, which block the near-surface wind and hold the drifting sand so plants have a chance to root. This simple method has protected the Baotou–Lanzhou railway since the 1950s and has since been used in many sand regions worldwide.",
+    history:
+      "The Baotou–Lanzhou railway, opened in 1958, crosses the Tengger Desert twice. To keep trains running safely, Chinese researchers set up a sand-control station at Shapotou and tested and spread a whole set of sand-fixing techniques including straw checkerboards. Shapotou is now both a showcase of sand-control results and a tourist area.",
+  },
+
+  kubuqi: {
+    seeing:
+      "The Kubuqi Desert lies on the northern rim of the Ordos Plateau in Inner Mongolia, on the south bank of the great \"几\"-bend of the Yellow River, about 18,600 km² — China's seventh-largest desert and the closest desert to Beijing. \"Kubuqi\" means \"bowstring\" in Mongolian — the desert runs along the Yellow River like a string on a bow.",
+    formation:
+      "The Kubuqi's sand comes partly from Yellow River silt and partly from weathered material off the Ordos Plateau, blown by the prevailing north-west wind and piled on the south bank of the river. Historic overgrazing and cultivation stripped the vegetation and sped up the sand's spread. The dunes are mostly moving to semi-fixed.",
+    observation:
+      "From the air the Kubuqi is an east–west yellow sand belt on the south bank of the Yellow River, with the green farmland of the Hetao Plain just across the river to the north — a sharp contrast. In the last twenty years large planted edge-locking shelterbelts, solar farms and grids of straw checkerboards have appeared in the desert, and its margin has clearly greened.",
+    distinguish:
+      "The Kubuqi and the Mu Us Sandy Land (both around Ordos): the Kubuqi is on the northern plateau rim, along the Yellow River, mostly moving dunes; the Mu Us is in the southern plateau, a semi-arid \"sandy land\" with a better vegetation base, mostly fixed and semi-fixed. The Kubuqi and the Tengger: one hugs the Yellow River, the other hugs the river and the railway, both key sand-control areas.",
+    concept:
+      "The Kubuqi is a case of sand control moving from engineering to industry: combining straw-checkerboard fixing, drought-tolerant planting, solar power and desert cash crops so that fixing the sand also produces income. It also shows that much sand-land expansion has human causes, and that easing grazing and cultivation pressure plus planted measures can reverse part of it.",
+    history:
+      "The Kubuqi desert edge was historically a farming–herding frontier. In the late 20th century it was badly desertified and a frequent dust source. Since the 1990s local companies and residents have kept building roads, planting trees and developing desert industries; in 2017 the Kubuqi sand-control experience was presented at the conference of the UN Convention to Combat Desertification.",
+  },
+
+  "ulan-buh": {
+    seeing:
+      "The Ulan Buh Desert lies in eastern Alxa Left Banner and around Dengkou in Bayannur, Inner Mongolia, about 10,000 km². \"Ulan Buh\" means \"red bull\" in Mongolian. It sits on the west bank of the Yellow River, right next to the Hetao Plain to the north-east — the desert closest to the river and its farmland.",
+    formation:
+      "The Ulan Buh area held a large lake in the geological past (called \"Tushen Marsh\" in the Han dynasty); after the lake dried, its bed sand was lifted by the wind and re-piled into dunes. Historic reclamation and firewood-cutting stripped the vegetation, and the desert gradually spread, at one point trending toward the Yellow River and the Hetao Plain.",
+    observation:
+      "From the air the Ulan Buh is a patch of yellow dunes and sand-degraded grassland on the west bank of the Yellow River, with the river and broad farmland to the east and the gobi of Alxa to the west. In recent years belts of shelterbelt forest and solar bases along the river and farmland side have formed an \"edge-locking\" green strip.",
+    distinguish:
+      "The Ulan Buh and the Kubuqi: both hug the Yellow River, but the Kubuqi is on the south bank (inside the bend), in central Inner Mongolia; the Ulan Buh is on the west bank, farther west, pressing directly against the Hetao Plain. The Ulan Buh and the Tengger: the Ulan Buh is smaller and farther north-east, with a more direct threat to the river channel and the irrigation district.",
+    concept:
+      "The Ulan Buh is an example of \"a dried lake leaving a sand source\": a former lake bed, with the climate drying and the water gone, exposes its fine sand, which the wind moves and piles into dunes in place or downwind. It is also a classic stretch where desert, river and farmland lie next to each other and the boundary must be held with shelterbelts and sand-fixing works.",
+    history:
+      "The Han dynasty farmed and set up counties around the Ulan Buh, which were later abandoned and turned to sand. In modern times Dengkou and other areas resumed Yellow River irrigation and built shelterbelt forest (part of the \"Three-North\" shelterbelt), pushing the desert back and saving the farmland along the river.",
+  },
+
+  muus: {
+    seeing:
+      "The Mu Us Sandy Land straddles northern Shaanxi, southern Ordos in Inner Mongolia and eastern Ningxia, about 42,000 km². Note that it is a \"sandy land,\" not a \"desert\": it is in a semi-arid zone with more rainfall than a true desert, has a base of grassland and vegetation, and its dunes are mostly fixed and semi-fixed.",
+    formation:
+      "The Mu Us area was historically grassland with fairly good water and grass. Climate swings, shrinking rivers and lakes, and long overgrazing, cultivation and war damage to the vegetation let drifting sand gradually expand, producing a \"sandy land\" of dunes alternating with flats and lake basins. Its desertification is largely reversible.",
+    observation:
+      "From the air the Mu Us is a mottled landscape on the northern edge of the Loess Plateau: fixed dunes carrying shrubs and planted forest, with grassy flats, farmland and small lakes between them, and only patches of moving dune left. After decades of management most of the area is now green.",
+    distinguish:
+      "The Mu Us (sandy land) and the Badain Jaran or Taklamakan (deserts): a desert is in an arid zone, almost without vegetation, mostly moving dunes, hard to change fundamentally; a sandy land is in a semi-arid zone, with a vegetation base, mostly fixed and semi-fixed, and can be reversed over large areas by management. The Mu Us and the Kubuqi: the Kubuqi is farther north, drier and has more drifting sand.",
+    concept:
+      "The Mu Us represents \"a sandy land is not a desert, and desertification can be reversed\": in a semi-arid zone with some rainfall, simply stopping overgrazing and cultivation, plus planting grass and trees and laying straw checkerboards, can re-fix the dunes and bring the vegetation back. By around 2020 most of the Mu Us Sandy Land in Shaanxi had been brought under control.",
+    history:
+      "The Mu Us area was once an important base of the Xiongnu (the city of Tongwancheng was built here), when the vegetation was far better than in modern times. In recent decades Yulin in Shaanxi, Ordos in Inner Mongolia and others have kept planting forest and grass and spreading straw checkerboards, turning this sandy land from expanding to shrinking — a model of China's desertification control.",
+  },
+
+  gobi: {
+    seeing:
+      "\"Gobi\" here means the large gravel desert of western Inner Mongolia (around Alxa and Ejin). \"Gobi\" is Mongolian for land that can barely grow plants, its surface covered with gravel and coarse sand. It differs from a sand desert — a sand desert's surface is sand, a gobi's surface is stone.",
+    formation:
+      "A gobi forms by the wind's \"sorting\" action: the wind blows away the fine sand and dust from the surface and carries it elsewhere (piling it as sand desert or loess), leaving behind the gravel it cannot move, which over time forms a tight surface layer — a \"desert pavement.\" That pavement in turn protects the finer soil beneath from further wind erosion.",
+    observation:
+      "From the air a gobi is a broad, grey-brown, mottled, almost plant-free flat of gravel, with sparse camelthorn, saxaul or wild poplar only along seasonal channels and where groundwater is shallow. The lower Hei River at Ejin is a rare green corridor through the gobi, ending at the Juyan lakes.",
+    distinguish:
+      "Gobi and sand desert: a gobi's surface is gravel, relatively stable, and can be driven over; a sand desert's surface is moving sand, hard for vehicles and animals. The two are often adjacent — the same wind blows the fine sand to one place as sand desert and leaves the coarse gravel in place as gobi. Gobi and desert steppe: a gobi is almost bare, desert steppe still has sparse xerophytic grass.",
+    concept:
+      "The gobi is the best example for understanding \"how wind sorts surface material\": the wind's carrying power depends on grain size — dust and fine sand can be blown far, coarse sand only hops along, gravel barely moves. So a region's surface is \"sieved\" by the wind into different zones: where material is blown away becomes gobi, where it piles up becomes sand desert or the Loess Plateau.",
+    history:
+      "The gobi has always been a belt crossed by the Silk Road and the steppe route, and a front line of frontier defence through the dynasties. The Juyan area at Ejin was an important Han garrison, where large numbers of \"Juyan Han bamboo slips\" have been excavated. Today the Jiuquan Satellite Launch Centre (Dongfeng space city) is set in this gobi.",
+  },
+
   // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
 
   kashgar: {
