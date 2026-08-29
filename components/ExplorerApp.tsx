@@ -39,6 +39,7 @@ import {
 } from "@/lib/places-registry";
 import { resolveTravelGuide, travelGuideToSections } from "@/lib/travel-lesson";
 import { travelRailGroups } from "@/lib/travel-rail";
+import { createTravelNarration } from "@/lib/travel-speak";
 import type { PanelSection } from "@/components/ReadingPanel";
 import {
   REGIONS,
@@ -248,6 +249,9 @@ export default function ExplorerApp() {
   const [travelId, setTravelId] = useState<string | null>(null);
   const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);
   const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);
+  /** 旅游播报：正在合成首段（“准备中”按钮态） */
+  const [travelPreparing, setTravelPreparing] = useState(false);
+  const travelNarrationRef = useRef<ReturnType<typeof createTravelNarration> | null>(null);
   const [activeRegion, setActiveRegionState] = useState<string>(DEFAULT_REGION_ID);
 
   useEffect(() => {
@@ -275,7 +279,7 @@ export default function ExplorerApp() {
   const activeRegionNameEn = activeRegionObj?.nameEn ?? activeRegionObj?.name ?? "Asia";
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
-  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, stopHighlight } = useSentenceHighlight();
+  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, startHighlightChunkEstimated, stopHighlight } = useSentenceHighlight();
 
   // 初始化地形标注 — 从 TERRAIN_LABELS 注册
   useEffect(() => {
@@ -339,6 +343,9 @@ export default function ExplorerApp() {
   const stopSpeaking = useCallback(() => {
     console.log("[Narration] stopSpeaking");
     narrationManager.cancelCurrent();
+    travelNarrationRef.current?.cancel();
+    travelNarrationRef.current = null;
+    setTravelPreparing(false);
     stopAudio();
     stopHighlight();
   }, [stopAudio, stopHighlight]);
@@ -434,6 +441,50 @@ export default function ExplorerApp() {
     },
     [speakText, startHighlightSections, startHighlightWithTiming, stopHighlight]
   );
+
+  /** 旅游模式：分段播报攻略 + 逐句高亮（点城市自动、点播放手动共用） */
+  const speakTravelGuide = useCallback(
+    (sections: PanelSection[]) => {
+      if (!sections || sections.length === 0) return;
+      travelNarrationRef.current?.cancel();
+      stopSpeech();
+      stopHighlight();
+
+      const ctrl = createTravelNarration();
+      travelNarrationRef.current = ctrl;
+      setTravelPreparing(true);
+      setIsSpeaking(true);
+
+      void ctrl.run(
+        sections.map((s) => ({ key: s.key, text: s.text })),
+        language,
+        {
+          onFirstAudio: () => setTravelPreparing(false),
+          onSectionStart: ({ key, baseIndex, text, wordBoundaries, audio }) => {
+            if (wordBoundaries.length > 0 && audio) {
+              startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex);
+            } else {
+              startHighlightChunkEstimated(key, text, baseIndex);
+            }
+          },
+          onDone: (wasCancelled) => {
+            setTravelPreparing(false);
+            setIsSpeaking(false);
+            if (!wasCancelled) stopHighlight();
+          },
+        },
+      );
+    },
+    [language, startHighlightWithTiming, startHighlightChunkEstimated, stopHighlight],
+  );
+
+  const stopTravelNarration = useCallback(() => {
+    travelNarrationRef.current?.cancel();
+    travelNarrationRef.current = null;
+    setTravelPreparing(false);
+    setIsSpeaking(false);
+    stopHighlight();
+  }, [stopHighlight]);
 
   const showTerrainLesson = useCallback(
     async (terrain: TerrainPoint, options?: { flyoverOnly?: boolean }): Promise<void> => {
@@ -803,10 +854,15 @@ export default function ExplorerApp() {
   }, [activeRegion]);
 
   const clearTravelSelection = useCallback(() => {
+    travelNarrationRef.current?.cancel();
+    travelNarrationRef.current = null;
+    setTravelPreparing(false);
+    setIsSpeaking(false);
+    stopHighlight();
     setTravelId(null);
     setTravelSections(null);
     setTravelPlace(null);
-  }, []);
+  }, [stopHighlight]);
 
   const handleModeChange = useCallback(
     (m: AppMode) => {
@@ -844,15 +900,20 @@ export default function ExplorerApp() {
       const guide = resolveTravelGuide(id, language);
       if (!guide) return;
       const city = getCityById(id);
+      const sections = travelGuideToSections(guide, language);
+      travelNarrationRef.current?.cancel();
+      stopHighlight();
       setTravelId(id);
       setTravelPlace({ name: travelNameOf(id) });
-      setTravelSections(travelGuideToSections(guide, language));
+      setTravelSections(sections);
       setActiveTerrain(null);
       setLesson(null);
       if (city) mapRef.current?.focusCity(city.lon, city.lat, city.view);
       else flyToCountryOverview();
+      // 跳转的同时开始播报（合成首段期间镜头正在飞）
+      speakTravelGuide(sections);
     },
-    [language, travelNameOf, flyToCountryOverview],
+    [language, travelNameOf, flyToCountryOverview, speakTravelGuide, stopHighlight],
   );
 
   // 语言切换时，重新解析当前旅游内容
@@ -969,6 +1030,7 @@ export default function ExplorerApp() {
         sections={mode === "travel" ? travelSections : null}
         knowledge={mode === "travel" ? null : (activeTerrain?.knowledge ?? null)}
         isSpeaking={isSpeaking}
+        isPreparing={travelPreparing}
         isRouteFlying={isRouteFlying}
         routeNarration={routeNarration}
         flyoverName={flyoverName}
@@ -976,15 +1038,12 @@ export default function ExplorerApp() {
         activeSection={activeSection}
         onPlay={() => {
           if (mode === "travel") {
-            if (travelSections) {
-              const txt = travelSections.map((s) => s.text).join(" ");
-              void speakText(txt);
-            }
+            if (travelSections) speakTravelGuide(travelSections);
           } else if (lesson) {
             void speakLessonWithHighlight(lesson);
           }
         }}
-        onStop={stopSpeaking}
+        onStop={mode === "travel" ? stopTravelNarration : stopSpeaking}
         onClose={mode === "travel" ? clearTravelSelection : closePanel}
       />
 

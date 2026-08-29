@@ -16,6 +16,8 @@ interface ReadingPanelProps {
   sections?: PanelSection[] | null;
   knowledge?: TerrainKnowledge | null;
   isSpeaking: boolean;
+  /** 旅游模式：正在合成首段语音 */
+  isPreparing?: boolean;
   isRouteFlying?: boolean;
   /** 航线飞行中：整条航线的解说稿 */
   routeNarration?: string | null;
@@ -48,6 +50,7 @@ export default function ReadingPanel({
   sections = null,
   knowledge,
   isSpeaking,
+  isPreparing = false,
   isRouteFlying,
   routeNarration,
   flyoverName,
@@ -61,8 +64,8 @@ export default function ReadingPanel({
   const activeRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
-    if (isSpeaking) setExpanded(true);
-  }, [isSpeaking]);
+    if (isSpeaking || isPreparing) setExpanded(true);
+  }, [isSpeaking, isPreparing]);
 
   useEffect(() => {
     // reset to card state on terrain change
@@ -143,10 +146,10 @@ export default function ReadingPanel({
           {/* sticky header */}
           <div className="flex items-start justify-between gap-3 border-b border-[color:var(--hairline)] px-6 py-4">
             <div className="min-w-0">
-              {isSpeaking && (
+              {(isSpeaking || isPreparing) && (
                 <span className="editorial-kicker mb-1 flex items-center gap-1.5 text-[color:var(--accent)]">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[color:var(--accent)]" />
-                  {t("panel.narrating", language)}
+                  {isPreparing ? t("panel.preparing", language) : t("panel.narrating", language)}
                 </span>
               )}
               <h2 className="editorial-title truncate text-[22px] leading-tight">
@@ -161,11 +164,19 @@ export default function ReadingPanel({
             <div className="flex shrink-0 items-center gap-1">
               <button
                 type="button"
-                onClick={isSpeaking ? onStop : onPlay}
+                onClick={isSpeaking || isPreparing ? onStop : onPlay}
                 className="flex h-8 w-8 items-center justify-center rounded-full border border-[color:var(--accent-line)] text-[color:var(--accent)] transition-colors hover:bg-[color:var(--accent-soft)]"
-                aria-label={isSpeaking ? t("panel.pause", language) : t("panel.play", language)}
+                aria-label={
+                  isPreparing
+                    ? t("panel.preparing", language)
+                    : isSpeaking
+                      ? t("panel.pause", language)
+                      : t("panel.play", language)
+                }
               >
-                <span className="text-[11px]">{isSpeaking ? "■" : "▶"}</span>
+                <span className={`text-[11px] ${isPreparing ? "animate-pulse" : ""}`}>
+                  {isPreparing ? "◌" : isSpeaking ? "■" : "▶"}
+                </span>
               </button>
               <button
                 type="button"
@@ -237,11 +248,17 @@ export default function ReadingPanel({
         <div className="mt-5 flex items-center gap-2">
           <button
             type="button"
-            onClick={isSpeaking ? onStop : onPlay}
+            onClick={isSpeaking || isPreparing ? onStop : onPlay}
             className="flex flex-1 items-center justify-center gap-2 rounded-full border border-[color:var(--accent-line)] px-4 py-2 text-[0.8125rem] font-medium text-[color:var(--accent)] transition-colors hover:bg-[color:var(--accent-soft)]"
           >
-            <span className="text-[10px]">{isSpeaking ? "■" : "▶"}</span>
-            {isSpeaking ? t("panel.pause", language) : t("panel.play", language)}
+            <span className={`text-[10px] ${isPreparing ? "animate-pulse" : ""}`}>
+              {isPreparing ? "◌" : isSpeaking ? "■" : "▶"}
+            </span>
+            {isPreparing
+              ? t("panel.preparing", language)
+              : isSpeaking
+                ? t("panel.pause", language)
+                : t("panel.play", language)}
           </button>
           <button
             type="button"

@@ -201,6 +201,10 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "播放讲解",
     "en-US": "Play narration",
   },
+  "panel.preparing": {
+    "zh-CN": "准备语音…",
+    "en-US": "Preparing audio…",
+  },
   "panel.pause": {
     "zh-CN": "停止",
     "en-US": "Stop",
