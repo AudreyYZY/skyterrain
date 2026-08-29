@@ -1,15 +1,27 @@
 # Flight Geography Explorer
 
-> Learn the Earth's landforms from an airplane window · [中文](./README.md)
+> Understand the Earth from an airplane window · [中文](./README.md)
 
-A documentary-style web app for understanding terrain from a passenger's window seat.
+A documentary-style web app for understanding places from a passenger's window seat.
 
 Not a GIS dashboard, not a flight simulator, not a game — it drops you onto a 3D globe at
-cruising altitude looking down at one landform, frames its most iconic feature, and pairs it
+cruising altitude looking down at one place, frames its most telling feature, and pairs it
 with authoritative, easy-to-remember narration so you actually *understand* what you're seeing.
 
-**Current scope:** all of China (all of Xinjiang + national core terrain).
-**Roadmap:** Asia → global.
+**Two modes** (one-click switch in the header, remembered in `localStorage`):
+
+| Mode | The question it answers | Content |
+|---|---|---|
+| **Study** | "What landform is that? How did it form?" | Terrain atlas — 106 landforms + authoritative 6-section lessons |
+| **Travel** | "I've landed in an unfamiliar city — what do I need to know?" | City overviews — layout / getting around / culture / when to go |
+
+The two content systems run in parallel and don't interfere.
+
+**Current scope:**
+- Study — all of China (84, incl. all of Xinjiang) + Australia (22), bilingual, line-by-line source-verified
+- Travel — Australia (country overview + 7 cities), bilingual
+
+**Roadmap:** China travel mode → the world's major landforms (study mode) → travel mode for more countries by tourism demand.
 
 ---
 
@@ -17,14 +29,28 @@ with authoritative, easy-to-remember narration so you actually *understand* what
 
 ### Terrain set — single source of truth
 
-- **88 national landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts):
-  mountain systems / plateaus / basins / plains / hills / deserts / lakes / valleys / gorges /
-  deltas / islands.
+- **106 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
+  `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
+  `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`.
 - Each entry records an **anchor** (main peak / lake / hub city + lon/lat + elevation), a
-  **bounding box**, a **trend axis**, and a **data source**. The sidebar, map labels, camera,
-  and region highlight are all driven by this one registry.
-- **32-location detailed Xinjiang dataset** (`data/*.json`) with full lessons, glance cards,
-  and knowledge entries.
+  **bounding box**, a **trend axis**, **Chinese & English names**, and a **data source**. The
+  sidebar, map labels, camera, and region highlight are all driven by this one registry.
+- Selection standard and category criteria: [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md)
+  (T1 skeleton / T2 physiographic province / T3 landmark; the `settlement` human-geography layer)
+  — don't add entries by gut feel.
+
+### Travel mode — cities, not landforms
+
+- Cities and country overviews are registered in [`lib/places-registry.ts`](lib/places-registry.ts):
+  lon/lat, tier (capital / major / notable), airport, source.
+- Each guide has **6 `TravelGuide` sections** ([`lib/travel-lesson.ts`](lib/travel-lesson.ts)):
+  overview / layout / getting around / culture / see & do / when to go & tips.
+- Content lives in [`lib/travel-content.{zh,en}.ts`](lib/travel-content.zh.ts), summarized from
+  national tourism boards / meteorological-agency climate normals / entry information /
+  established guidebook consensus — comparative and subjective claims removed.
+- The map shows only **city points + airports** ([`CityMarkers.tsx`](components/CityMarkers.tsx),
+  revealed by tier as the camera descends).
+- Self-check: `node --experimental-strip-types scripts/check-places.ts`.
 
 ### Data-driven camera — nothing hardcoded
 
@@ -35,22 +61,23 @@ window shot.
 
 - Heading comes from the terrain's trend plus an optional editorial `viewFrom` hint (which
   side of the anchor the camera sits on).
-- Pitch / range scale with terrain size; for huge terrains (Tibetan Plateau, Kunlun,
-  Himalaya) the camera focuses on a representative section around the anchor.
-- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (88/88).
+- Pitch / range scale with terrain size; large plateaus / basins / plains / deserts get a
+  `viewScale` in the registry's `WIDE_VIEW` so the shot pulls back far enough to read as
+  "a whole upland / basin," not one local feature (a lake, a city) near the anchor.
+- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (106/106).
 
-### Tectonic-lift highlight
+### Region highlight — a restrained outline
 
-On hover or selection, **the ground within the terrain's outline rises as one block,
-following the real elevation profile** (sampled once via `sampleTerrainMostDetailed` and
-cached) — like a tectonic plate lifting, not a floating frame drawn on a static layer. The
-material is very faint and keeps the original surface colors; the side walls are the block's
-cross-section.
+On hover or selection, a **thin, faint warm outline** is drawn over the terrain's extent
+(a fixed-height polyline, not clamped to ground, so the block reads from any angle including
+straight down). It is not an official geographic boundary — just a "this is the block you're
+looking at" cue, deliberately kept subtle so it doesn't obscure surface detail.
 
 - 42 terrains use **real boundary polygons** extracted from Natural Earth
   (`public/data/gis/exports/*.geojson`); the rest fall back to a bbox octagon.
-- Extraction script: `node scripts/extract-ne-landforms.mjs` (zero-dependency, hand-written
-  shp/dbf parser).
+- Hover hit-testing uses `scene.drillPick` and picks the smallest (most specific) block among
+  overlapping hits.
+- In travel mode, terrain picking and highlighting are turned off entirely.
 
 ### Zoom-adaptive map labels
 
@@ -60,19 +87,20 @@ HTML label layer ([`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx
   zoomed out.
 - Labels reveal by tier as you zoom in (continental → national → regional → POI); font size
   scales with zoom.
-- Labels light up in sync with the block highlight on hover / selection (amber pill + outline).
+- Labels light up in sync with the block highlight on hover / selection; Chinese / English
+  follows the language toggle.
 
 ### Natural voice · sentence highlight
 
-- Edge TTS (default `zh-CN-XiaoxiaoNeural`, the most natural Mandarin female voice) with
-  word-boundary-accurate sentence highlighting.
+- Edge TTS (`zh-CN-XiaoxiaoNeural` for Chinese, `en-US-AvaMultilingualNeural` for English)
+  with word-boundary-accurate sentence highlighting.
 - Falls back to browser TTS if Edge TTS fails, advancing the highlight on a character-count
   estimate.
 - One-click Chinese / English switch; voice and lesson text switch together.
 
 ### Structured lessons — authoritative, not AI-generated
 
-Each lesson has **6 universal sections** ([`lib/lesson.ts`](lib/lesson.ts) `LESSON_SECTION_ORDER`):
+Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.ts) `LESSON_SECTION_ORDER`):
 
 | Section | Content |
 |---|---|
@@ -83,16 +111,29 @@ Each lesson has **6 universal sections** ([`lib/lesson.ts`](lib/lesson.ts) `LESS
 | Geography note | why it counts as this landform type, common misconceptions (a low-elevation plateau is still a plateau; a high-elevation basin is still a basin…) |
 | History & people | — |
 
-- Content lives in [`lib/terrain-content.ts`](lib/terrain-content.ts) (`getTerrainContent(id)`),
-  summarized from widely-accepted geography facts (China National Geographic, CAS, Ministry of
-  Natural Resources) — not documentary voiceover, not free-form generation.
-- **34 terrains** written so far (20 first-tier terrains plus Changbai, Hengduan, Nanling,
-  Hexi Corridor, Yangtze Gorges, Yarlung Tsangpo Grand Canyon, Qinghai Lake, Poyang Lake,
-  Hainan Island, Taiwan Island, and more). Others show a placeholder.
+- Content lives in [`lib/terrain-content.{zh,en}.ts`](lib/terrain-content.zh.ts)
+  (`getTerrainContent(id, lang)`), summarized from widely-accepted geography facts (China
+  National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks
+  Australia, UNESCO) — not documentary voiceover, not free-form generation.
+- **All 106 have lessons.** 61 of them (China 34 + Australia 22 + Xinjiang oasis settlements 5)
+  are line-by-line source-verified: comparative / subjective judgments removed, disputed points
+  qualified or given side by side, anything unverifiable dropped, figures normalized to
+  authoritative sources.
+- `settlement` (oasis · settlement) uses only overview / from the air / history & people.
+- [`lib/terrain-lesson.ts`](lib/terrain-lesson.ts) `resolveLesson(id, lang)` decides which
+  lesson to use, in one place.
 
 ### Route flights
 
-Preset routes (`data/routes/`): auto-fly along the path with narration triggered at each terrain.
+- 4 **real commercial routes** (`data/routes/*.json`): Beijing–Ürümqi / Chengdu–Lhasa /
+  Guangzhou–Lhasa / Ürümqi–Kashgar, with airline / flight number / aircraft, departure and
+  arrival airports, and terrain waypoints along the way.
+- Under 3 minutes each: the camera jumps to a slanted view over the departure airport →
+  immediately starts a **single continuous narration written for that route**
+  ([`lib/route-narration.ts`](lib/route-narration.ts), bilingual, regional-geography-textbook
+  register) → and flies the waypoints at a steady pace.
+- Each route has two narrations, following the current mode: `ROUTE_NARRATION[id].{study, travel}`.
+- Self-check: `node --experimental-strip-types scripts/check-routes.ts`.
 
 ---
 
@@ -100,7 +141,7 @@ Preset routes (`data/routes/`): auto-fly along the path with narration triggered
 
 - **Next.js 16** (App Router, `--webpack`) + **React 19** + **TypeScript 5**
 - **CesiumJS 1.141** — 3D globe, camera system, terrain elevation sampling
-- **Tailwind CSS v4**
+- **Tailwind CSS v4** · **Newsreader** serif (editorial typography)
 - **edge-tts-universal** — Edge TTS
 
 ---
@@ -129,7 +170,10 @@ Open http://localhost:3000
 npm run dev      # dev (webpack)
 npm run build    # production build
 npm run lint     # ESLint
-node --experimental-strip-types scripts/check-terrain-camera.ts   # camera geometry self-check
+
+node --experimental-strip-types scripts/check-terrain-camera.ts   # camera geometry self-check (106/106)
+node --experimental-strip-types scripts/check-routes.ts           # route self-check
+node --experimental-strip-types scripts/check-places.ts           # travel-place self-check
 node scripts/extract-ne-landforms.mjs                             # re-extract terrain boundaries
 ```
 
@@ -139,46 +183,54 @@ node scripts/extract-ne-landforms.mjs                             # re-extract t
 
 ```
 app/
-  api/tts/            — Edge TTS
+  api/tts/            — Edge TTS (per-language PROSODY)
   page.tsx layout.tsx globals.css
 
 components/
-  ExplorerApp.tsx          — main orchestrator
-  CesiumMap.tsx            — 3D globe, camera, tectonic-lift highlight
-  CesiumOverlayLabels.tsx  — HTML terrain label layer (zoom-adaptive)
-  TerrainSidebar.tsx       — sidebar (category navigation)
-  NarrationPanel.tsx       — right-side lesson panel
-  StructuredLesson.tsx     — 6-section lesson renderer
-  RouteControls.tsx        — route controls
-  VoiceSelector.tsx        — voice pack selector
+  ExplorerApp.tsx          — main orchestrator (mode / lesson / route / voice + UI composition)
+  CesiumMap.tsx            — 3D globe, camera, region outline highlight, appMode / focusCity
+  CesiumOverlayLabels.tsx  — HTML terrain label layer (zoom-adaptive, study mode)
+  CityMarkers.tsx          — map city points (travel mode, revealed by camera altitude)
+  IntroOverlay.tsx         — opening editorial title card (localStorage remembers "seen")
+  IndexRail.tsx            — left index (study: category/terrain two-level; travel: overview + cities)
+  ReadingPanel.tsx         — single right-side reading panel (card ⇄ article, sentence highlight)
+  JourneyBar.tsx           — bottom route filmstrip
+  StructuredLesson.tsx     — section renderer (6-section lesson / generic section array)
+  ModeToggle.tsx           — header Study / Travel switch
+  RegionSelector.tsx       — header region switch
 
 lib/
-  terrain-registry.ts       — [single source of truth] anchor/extent/axis/source for 88 terrains
+  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 106 terrains
   terrain-camera.ts         — computeTerrainCamera() data-driven camera derivation
-  terrain-content.ts        — authoritative structured lesson content (getTerrainContent)
-  lesson.ts                 — lesson section order / assembly / speech text
-  terrain-label-registry.ts — labels (generated from the registry)
-  terrain-label-theme.ts    — label visual tokens
-  terrain.ts                — Xinjiang terrain registration (coords overridden by the registry)
-  speech.ts                 — TTS system (Edge TTS + browser fallback)
-  i18n.ts / i18n-stories.ts — UI i18n / lesson translations
-  routes.ts                 — flight routes
-  narration-*.ts            — lesson script engine / queue / session manager
+  terrain-content.{zh,en}.ts— authoritative 6-section lesson content (zh / en)
+  terrain-lesson.ts         — resolveLesson(id, lang): one place decides which lesson to use
+  terrain-label-registry.ts — labels (generated from the registry, with nameEn)
+  lesson.ts                 — lesson section order / headings / assembly
+  routes.ts / route-narration.ts — 4 real routes + two continuous narrations each
+  app-mode.ts               — AppMode type + localStorage read/write
+  places-registry.ts        — [travel-mode single source of truth] cities + country overviews
+  travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
+  travel-lesson.ts          — resolveTravelGuide + travelGuideToSections
+  travel-rail.ts            — travel-mode left index
+  regions.ts                — region config (China / Australia)
+  speech.ts                 — TTS system (Edge TTS + browser fallback, follows language)
+  i18n.ts / i18n-stories.ts — UI i18n / early lesson translations
 
 features/
   china-core-features.ts    — national core terrain definitions
   xinjiang-core-features.ts — Xinjiang terrain definitions
-  types.ts                  — GeographicFeature types
 
 data/
-  *.json                    — Xinjiang terrain data (32 locations)
-  routes/                   — route definitions
+  *.json                    — Xinjiang terrain data
+  routes/                   — 4 real route definitions
   gis/                      — raw Natural Earth shp/dbf (git-ignored)
 
 public/data/gis/exports/    — 42 extracted terrain-boundary geojson files
 
 scripts/
   check-terrain-camera.ts   — camera geometry self-check
+  check-routes.ts           — route self-check
+  check-places.ts           — travel-place self-check
   extract-ne-landforms.mjs  — extract terrain boundaries from Natural Earth
   copy-cesium.mjs           — copy Cesium static assets (postinstall)
 ```
@@ -200,16 +252,22 @@ framing must be calibrated in a real browser.
 
 ---
 
-## Data model
+## Adding a new country
 
-```
-TerrainEntity     — terrain entity (Tianshan, Qinling, Sichuan Basin…)
-GeometryRecord    — geometry record (Polygon / LineString / bbox)
-FeatureOfInterest — narration point of interest (Mt. Taibai, Chengdu, Golmud…)
-Story             — lesson content (6 sections)
-KnowledgeLink     — knowledge link (terrain ↔ concept)
-ProvenanceRecord  — data provenance (source, precision, retrieval time)
-```
+**Study mode:**
+1. Add terrain entries to `lib/terrain-registry.ts` (`regionId`); look up each coordinate from
+   an authoritative source and record it in `source`
+2. Add / enable the region in `lib/regions.ts`
+3. Write bilingual 6-section lessons in `lib/terrain-content.{zh,en}.ts`
+4. Fill in importance in `lib/terrain-label-registry.ts`
+5. `scripts/check-terrain-camera.ts` passes
+
+**Travel mode:**
+1. Add cities to `lib/places-registry.ts` and a country overview to `COUNTRY_OVERVIEWS`
+2. Write 6-section `TravelGuide` content in `lib/travel-content.{zh,en}.ts`
+3. `scripts/check-places.ts` passes (coords / IATA / source / bilingual content complete)
+
+Selection standard: [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md).
 
 ---
 
@@ -218,7 +276,8 @@ ProvenanceRecord  — data provenance (source, precision, retrieval time)
 | Doc | Content |
 |---|---|
 | [`CLAUDE.md`](CLAUDE.md) | product positioning, architecture, dev conventions, do-not list |
-| [`docs/architecture.md`](docs/architecture.md) | layers, modules, data flows, architecture smells |
+| [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md) | terrain-set selection standard and category definitions |
+| [`docs/routes.md`](docs/routes.md) | route selection rationale and coverage analysis |
 | [`docs/architecture-metrics.md`](docs/architecture-metrics.md) | project health metrics, module coupling |
 | [`DESIGN.md`](DESIGN.md) | UI / visual design spec |
 
@@ -231,7 +290,8 @@ ProvenanceRecord  — data provenance (source, precision, retrieval time)
 | Terrain boundaries | Natural Earth 10m Geography Regions |
 | Satellite imagery | Bing Maps (Cesium Ion) |
 | Terrain elevation | Cesium World Terrain |
-| Terrain lessons | Widely-accepted geography facts (China National Geographic, CAS, Ministry of Natural Resources), hand-summarized |
+| Terrain lessons | Widely-accepted geography facts (China National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks Australia, UNESCO), hand-summarized and line-by-line source-verified |
+| Travel guides | National tourism boards / meteorological-agency climate normals / entry information / established guidebook consensus, hand-summarized |
 
 ---
 
