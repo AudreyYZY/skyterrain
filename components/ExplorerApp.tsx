@@ -7,6 +7,7 @@ import CesiumMap, {
 import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
 import IndexRail, { type RailGroup } from "@/components/IndexRail";
 import IntroOverlay from "@/components/IntroOverlay";
+import ContinentIntro, { type ContinentCard } from "@/components/ContinentIntro";
 import JourneyBar from "@/components/JourneyBar";
 import ReadingPanel from "@/components/ReadingPanel";
 import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
@@ -342,6 +343,53 @@ export default function ExplorerApp() {
         lat: center.lat,
         height: center.height,
         duration: 3,
+      });
+    },
+    [],
+  );
+
+  /** 初始大陆卡片数据（含建设中的大洲，供选择器完整呈现） */
+  const introContinents: ContinentCard[] = useMemo(
+    () =>
+      REGIONS.map((r) => ({
+        id: r.id,
+        name: r.name,
+        nameEn: r.nameEn ?? r.name,
+        terrainCount: r.terrainCount,
+        available: r.available,
+      })),
+    [],
+  );
+
+  /** 初始卡片滑动预览 —— 地球飞过去，但不切换 activeRegion */
+  const handleIntroPreview = useCallback((continentId: string) => {
+    const r = REGIONS.find((x) => x.id === continentId);
+    if (!r) return;
+    mapRef.current?.flyToRegion({
+      lon: r.center.lon,
+      lat: r.center.lat,
+      height: r.center.height,
+      duration: 1.4,
+    });
+  }, []);
+
+  /** 初始卡片选定 —— 进入该大陆的学习模式 */
+  const handleIntroEnter = useCallback(
+    (continentId: string) => {
+      const r = REGIONS.find((x) => x.id === continentId);
+      if (!r) return;
+      setActiveRegionState(r.id);
+      setActiveRegion(r.id);
+      try {
+        localStorage.setItem("fge-active-region", r.id);
+      } catch {
+        /* ignore */
+      }
+      mapRef.current?.flyToRegion({
+        lon: r.center.lon,
+        lat: r.center.lat,
+        height: r.center.height,
+        duration: 2.4,
       });
     },
     [],
@@ -999,14 +1047,23 @@ export default function ExplorerApp() {
         )}
       </div>
 
-      {showIntro && (
-        <IntroOverlay
-          language={language}
-          regionName={activeRegionName}
-          regionNameEn={activeRegionNameEn}
-          onDismiss={() => setShowIntro(false)}
-        />
-      )}
+      {showIntro &&
+        (mode === "study" ? (
+          <ContinentIntro
+            language={language}
+            continents={introContinents}
+            onPreview={handleIntroPreview}
+            onEnter={handleIntroEnter}
+            onDismiss={() => setShowIntro(false)}
+          />
+        ) : (
+          <IntroOverlay
+            language={language}
+            regionName={activeRegionName}
+            regionNameEn={activeRegionNameEn}
+            onDismiss={() => setShowIntro(false)}
+          />
+        ))}
 
       {/* Header — editorial masthead */}
       <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between px-4 py-2.5">

@@ -191,6 +191,18 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "开始探索",
     "en-US": "Begin",
   },
+  "intro.pick": {
+    "zh-CN": "左右滑动，选择一片大陆",
+    "en-US": "Swipe to choose a continent",
+  },
+  "intro.building": {
+    "zh-CN": "建设中",
+    "en-US": "Coming soon",
+  },
+  "intro.count": {
+    "zh-CN": "个地貌",
+    "en-US": "landforms",
+  },
 
   // Reading panel
   "panel.narrating": {
