@@ -13,7 +13,7 @@ import { labelManager, createTerrainLabel } from "@/lib/cinematic-labels";
 import { TERRAIN_LABELS } from "@/lib/terrain-label-registry";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
-import { lessonToSSML, lessonSections } from "@/lib/lesson";
+import { lessonSections } from "@/lib/lesson";
 import { resolveLesson } from "@/lib/terrain-lesson";
 import { getRouteNarration } from "@/lib/route-narration";
 import { t, getTerrainName, type Language } from "@/lib/i18n";
@@ -21,7 +21,7 @@ import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
 import { getAllRoutes } from "@/lib/routes";
-import { speakAndWait, stopSpeech, warmupSpeechVoices, getCurrentAudio, getCurrentWordBoundaries } from "@/lib/speech";
+import { speakAndWait, stopSpeech, warmupSpeechVoices } from "@/lib/speech";
 import { narrationManager } from "@/lib/narration-manager";
 import { getTerrainById } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
@@ -39,7 +39,7 @@ import {
 } from "@/lib/places-registry";
 import { resolveTravelGuide, travelGuideToSections } from "@/lib/travel-lesson";
 import { travelRailGroups } from "@/lib/travel-rail";
-import { createTravelNarration } from "@/lib/travel-speak";
+import { createSectionNarration } from "@/lib/section-narration";
 import TravelPoiMarkers from "@/components/TravelPoiMarkers";
 import type { PanelSection } from "@/components/ReadingPanel";
 import {
@@ -250,9 +250,9 @@ export default function ExplorerApp() {
   const [travelId, setTravelId] = useState<string | null>(null);
   const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);
   const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);
-  /** 旅游播报：正在合成首段（“准备中”按钮态） */
-  const [travelPreparing, setTravelPreparing] = useState(false);
-  const travelNarrationRef = useRef<ReturnType<typeof createTravelNarration> | null>(null);
+  /** 讲解 / 攻略播报：正在合成首段（“准备中”按钮态） */
+  const [narrationPreparing, setNarrationPreparing] = useState(false);
+  const narrationRef = useRef<ReturnType<typeof createSectionNarration> | null>(null);
   const [activeRegion, setActiveRegionState] = useState<string>(DEFAULT_REGION_ID);
 
   useEffect(() => {
@@ -280,7 +280,7 @@ export default function ExplorerApp() {
   const activeRegionNameEn = activeRegionObj?.nameEn ?? activeRegionObj?.name ?? "Asia";
   const activeRouteRef = useRef<FlightRoute | null>(null);
   const narrationCancelledRef = useRef(false);
-  const { activeSentenceIndex, activeSection, startHighlight, startHighlightSections, startHighlightWithTiming, startHighlightChunkEstimated, stopHighlight } = useSentenceHighlight();
+  const { activeSentenceIndex, activeSection, startHighlight, startHighlightWithTiming, startHighlightChunkEstimated, stopHighlight } = useSentenceHighlight();
 
   // 初始化地形标注 — 从 TERRAIN_LABELS 注册
   useEffect(() => {
@@ -344,9 +344,9 @@ export default function ExplorerApp() {
   const stopSpeaking = useCallback(() => {
     console.log("[Narration] stopSpeaking");
     narrationManager.cancelCurrent();
-    travelNarrationRef.current?.cancel();
-    travelNarrationRef.current = null;
-    setTravelPreparing(false);
+    narrationRef.current?.cancel();
+    narrationRef.current = null;
+    setNarrationPreparing(false);
     stopAudio();
     stopHighlight();
   }, [stopAudio, stopHighlight]);
@@ -418,49 +418,29 @@ export default function ExplorerApp() {
     });
   }, [activeRegion]);
 
-  /** 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用 */
+  /**
+   * 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用。
+   * 与旅游攻略同一套分段播报编排（`createSectionNarration`）：逐段合成+播放、
+   * 前一段播放时预取下一段 → 首段出声只需 ~2s，而非等整篇合成 ~6s。
+   * 分段小请求也基本不会触发浏览器 TTS 回退（回退会把"6000"逐位念成"六零零零"）。
+   */
   const speakLessonWithHighlight = useCallback(
-    async (lesson: TerrainLesson): Promise<void> => {
-      console.log("[Narration] speakLessonWithHighlight called");
-      const session = narrationManager.createSession();
-      const ssml = lessonToSSML(lesson);
+    (lesson: TerrainLesson): Promise<void> => {
       const sections = lessonSections(lesson);
+      if (sections.length === 0) return Promise.resolve();
 
-      await speakText(ssml, () => {
-        if (!session.active) return;
-        const wordBoundaries = getCurrentWordBoundaries();
-        const audio = getCurrentAudio();
-        if (wordBoundaries.length > 0 && audio) {
-          startHighlightWithTiming(sections, wordBoundaries, audio);
-        } else {
-          startHighlightSections(sections);
-        }
-      });
-      if (session.active) {
-        stopHighlight();
-      }
-    },
-    [speakText, startHighlightSections, startHighlightWithTiming, stopHighlight]
-  );
-
-  /** 旅游模式：分段播报攻略 + 逐句高亮（点城市自动、点播放手动共用） */
-  const speakTravelGuide = useCallback(
-    (sections: PanelSection[]) => {
-      if (!sections || sections.length === 0) return;
-      travelNarrationRef.current?.cancel();
+      narrationRef.current?.cancel();
       stopSpeech();
       stopHighlight();
 
-      const ctrl = createTravelNarration();
-      travelNarrationRef.current = ctrl;
-      setTravelPreparing(true);
+      const ctrl = createSectionNarration();
+      narrationRef.current = ctrl;
+      setNarrationPreparing(true);
       setIsSpeaking(true);
 
-      void ctrl.run(
-        sections.map((s) => ({ key: s.key, text: s.text })),
-        language,
-        {
-          onFirstAudio: () => setTravelPreparing(false),
+      return new Promise<void>((resolve) => {
+        void ctrl.run(sections, language, {
+          onFirstAudio: () => setNarrationPreparing(false),
           onSectionStart: ({ key, baseIndex, text, wordBoundaries, audio }) => {
             if (wordBoundaries.length > 0 && audio) {
               startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex);
@@ -469,7 +449,44 @@ export default function ExplorerApp() {
             }
           },
           onDone: (wasCancelled) => {
-            setTravelPreparing(false);
+            setNarrationPreparing(false);
+            setIsSpeaking(false);
+            if (!wasCancelled) stopHighlight();
+            resolve();
+          },
+        });
+      });
+    },
+    [language, startHighlightWithTiming, startHighlightChunkEstimated, stopHighlight]
+  );
+
+  /** 旅游模式：分段播报攻略 + 逐句高亮（点城市自动、点播放手动共用） */
+  const speakTravelGuide = useCallback(
+    (sections: PanelSection[]) => {
+      if (!sections || sections.length === 0) return;
+      narrationRef.current?.cancel();
+      stopSpeech();
+      stopHighlight();
+
+      const ctrl = createSectionNarration();
+      narrationRef.current = ctrl;
+      setNarrationPreparing(true);
+      setIsSpeaking(true);
+
+      void ctrl.run(
+        sections.map((s) => ({ key: s.key, text: s.text })),
+        language,
+        {
+          onFirstAudio: () => setNarrationPreparing(false),
+          onSectionStart: ({ key, baseIndex, text, wordBoundaries, audio }) => {
+            if (wordBoundaries.length > 0 && audio) {
+              startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex);
+            } else {
+              startHighlightChunkEstimated(key, text, baseIndex);
+            }
+          },
+          onDone: (wasCancelled) => {
+            setNarrationPreparing(false);
             setIsSpeaking(false);
             if (!wasCancelled) stopHighlight();
           },
@@ -480,9 +497,9 @@ export default function ExplorerApp() {
   );
 
   const stopTravelNarration = useCallback(() => {
-    travelNarrationRef.current?.cancel();
-    travelNarrationRef.current = null;
-    setTravelPreparing(false);
+    narrationRef.current?.cancel();
+    narrationRef.current = null;
+    setNarrationPreparing(false);
     setIsSpeaking(false);
     stopHighlight();
   }, [stopHighlight]);
@@ -855,9 +872,9 @@ export default function ExplorerApp() {
   }, [activeRegion]);
 
   const clearTravelSelection = useCallback(() => {
-    travelNarrationRef.current?.cancel();
-    travelNarrationRef.current = null;
-    setTravelPreparing(false);
+    narrationRef.current?.cancel();
+    narrationRef.current = null;
+    setNarrationPreparing(false);
     setIsSpeaking(false);
     stopHighlight();
     setTravelId(null);
@@ -902,7 +919,7 @@ export default function ExplorerApp() {
       if (!guide) return;
       const city = getCityById(id);
       const sections = travelGuideToSections(guide, language);
-      travelNarrationRef.current?.cancel();
+      narrationRef.current?.cancel();
       stopHighlight();
       setTravelId(id);
       setTravelPlace({ name: travelNameOf(id) });
@@ -1038,7 +1055,7 @@ export default function ExplorerApp() {
         sections={mode === "travel" ? travelSections : null}
         knowledge={mode === "travel" ? null : (activeTerrain?.knowledge ?? null)}
         isSpeaking={isSpeaking}
-        isPreparing={travelPreparing}
+        isPreparing={narrationPreparing}
         isRouteFlying={isRouteFlying}
         routeNarration={routeNarration}
         flyoverName={flyoverName}

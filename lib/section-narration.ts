@@ -1,5 +1,5 @@
 /**
- * 旅游模式攻略的分段播报编排。
+ * 分段播报编排（学习模式讲解 + 旅游模式攻略共用）。
  *
  * 一次合成整篇要等好几秒；这里按段（identity / layout / …）分别合成，
  * 播第 i 段时预取第 i+1 段 —— 首段只等一小段合成就出声。
@@ -29,7 +29,7 @@ function splitSentences(text: string): string[] {
     .filter(Boolean);
 }
 
-export interface TravelSpeakHooks {
+export interface SectionSpeakHooks {
   /** 首段音频真正开始（用于收起“准备中”状态） */
   onFirstAudio?: () => void;
   /** 每段开始播放：交给高亮系统 */
@@ -44,12 +44,12 @@ export interface TravelSpeakHooks {
   onDone: (cancelled: boolean) => void;
 }
 
-export interface TravelNarration {
+export interface SectionNarration {
   cancel: () => void;
-  run: (sections: SpeakSection[], language: Language, hooks: TravelSpeakHooks) => Promise<void>;
+  run: (sections: SpeakSection[], language: Language, hooks: SectionSpeakHooks) => Promise<void>;
 }
 
-export function createTravelNarration(): TravelNarration {
+export function createSectionNarration(): SectionNarration {
   let cancelled = false;
   return {
     cancel() {
