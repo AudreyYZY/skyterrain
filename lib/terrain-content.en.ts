@@ -4445,4 +4445,79 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Emmental was historically the land of independent freehold farmers, the deep valleys keeping villages apart and producing a scattered, self-contained settlement pattern and dialect. In the 19th century people panned for gold (flakes of gold in the Alpine gravel) in the streams of the Napf valleys, and a few still do it as a tradition. Emmental cheese has been made since the Middle Ages and is now a protected designation-of-origin product.",
   },
+
+  "aare-river": {
+    seeing:
+      "The Aare is the longest river entirely within Switzerland, about 288 km (the Rhine and Rhône are longer but leave the country). It starts at the Aar glaciers in the Bernese Alps, passes through Lake Brienz and Lake Thun, loops almost all the way around the old city of Bern in a meander, then flows past Solothurn and Aarau and finally joins the Rhine. Notably, at the confluence the Aare actually carries more water than the Rhine.",
+    formation:
+      "The upper Aare is in the high Alps, its valley a glacially deepened trough; Lake Brienz and Lake Thun are two glacial lakes in that trough separated by a moraine dam, with Interlaken a patch of alluvial flat between them. Beyond the mountains, on the Swiss Plateau, the Aare meanders over soft molasse and glacial deposits, shaping a broad valley, meanders and river terraces — the old city of Bern is built on a terrace inside a meander loop, wrapped by the river on three sides and raised above it, easy to defend.",
+    observation:
+      "From the air the upper Aare is a grey-green (glacially silty) river in a mountain valley, threading two large turquoise lakes; the middle and lower reaches are a strongly meandering river on the Swiss Plateau, between farmland, towns and forest, with Bern's almost complete meander loop especially striking. Where it joins the Rhine, the two rivers differ visibly in colour and volume.",
+    distinguish:
+      "The Aare differs from the Rhône and the Rhine in \"whether it leaves the country\": the Aare is Swiss from source to mouth, one of Switzerland's \"mother rivers\"; the other two only flow through Switzerland for a stretch. The case of \"the tributary being bigger than the main river\" (Aare vs Rhine) is not uncommon among the world's rivers, depending on which has the larger, wetter basin.",
+    concept:
+      "Bern's meander loop is a case study in meanders and defended town sites: a river on a gentle valley floor swings freely, the bends growing larger, sometimes almost closing into a loop with only a narrow \"neck\" left. People often choose such a place — wrapped by the river on three sides and raised above it — to build a town: a natural moat plus high ground, easy to defend. To recognise this kind of site, look at whether the old town sits on high ground inside a meander loop. A common misconception is that a meander loop is dug by people.",
+    history:
+      "Bern was founded (1191) taking advantage of the natural defence of the Aare meander loop. In the Middle Ages the Aare and its canals were an important route for water transport and water power on the Swiss Plateau. The 19th-century \"Jura water correction\" diverted part of the Aare's water into Lake Biel and other lakes for storage, greatly reducing flooding on the Seeland plain — one of the earlier large-scale river-basin regulation schemes in Europe.",
+  },
+
+  "alpine-rhine": {
+    seeing:
+      "The Alpine Rhine is the upper course of the Rhine within Switzerland. It forms from the meeting of the \"Vorderrhein\" and the \"Hinterrhein\" at Reichenau near Chur, then flows north through a straight, broad valley (this reach is the border between Switzerland and Liechtenstein and Austria) and into Lake Constance. The river you see today is dead straight, held between high embankments — the result of large-scale engineering since the 19th century.",
+    formation:
+      "The Alpine Rhine valley is a large U-shaped trough gouged by a glacier; after the ice retreated the river braided across the broad flat floor and flooded frequently, the floor a wide expanse of marsh and gravel bar. From the late 19th into the 20th century Switzerland and Austria together straightened the channel, embanked it, reinforced the bed (including cutting an artificial new mouth into Lake Constance), turning the valley floor into farmland and towns. The upstream Vorderrhein, meanwhile, cut a deep gorge at the Ruinaulta (given its own entry).",
+    observation:
+      "From the air the lower Alpine Rhine is an unusually straight grey river between the Alps, held between two parallel embankments, with a grid of farmland, industrial areas and towns on either side, the valley floor as flat as if it were engineered. The high mountains on the two sides of the valley belong to three countries. At the mouth into Lake Constance you can see a growing delta. Around Reichenau upstream you can see the two source rivers (one turbid, one clear) meeting.",
+    distinguish:
+      "The Alpine Rhine and the Aare are both large Swiss rivers, but the Aare is entirely in Switzerland and known for its natural big meanders; the Alpine Rhine is a border river whose lower reach is almost completely straightened and embanked. It belongs to the same category as the engineering of the Po in Italy and the Rhône in Switzerland — \"taming\" a braided, flooding mountain-front river into a single fixed channel.",
+    concept:
+      "The Alpine Rhine is a case study in river channelisation (straightening and embanking): a river braiding across a broad valley can be compressed by people into a straight, deep single channel by cutting off bends, building embankments and fixing the bed — the benefits are flood control, freed-up farmland and easier navigation; the costs are the river losing contact with its floodplain, ecological decline, and sediment possibly building up downstream or at the mouth. To recognise a channelised river, look at whether it is unusually straight, with continuous artificial embankments and a uniform width. A common misconception is to take such a straight river for a natural one.",
+    history:
+      "The engineering of the Alpine Rhine has been a long-running joint project between Switzerland and Austria, beginning with the first state treaty in 1892. The valley was historically severely flood-prone, and a great flood in 1868 prompted the transnational works. In recent years projects such as \"Rhesi\" (Rhine – Future) are discussing widening the channel to give floods more space.",
+  },
+
+  "rhine-falls": {
+    seeing:
+      "The Rhine Falls, near Schaffhausen in northern Switzerland, are about 150 m wide with a drop of about 23 m and an average flow of about 370 m³/s. By the combination of flow and width, they are one of the largest waterfalls in Europe. In the middle of the falls stands a rock worn down to a single stack, which visitors can reach by boat and climb. The flow is greatest in the snowmelt season (early summer), and the roar and spray can be felt from far off.",
+    formation:
+      "The Rhine Falls are a \"young\" waterfall. In the ice ages the Rhine Glacier from the Alps pushed the Rhine off its earlier, more southerly course, and after the ice retreated the river flowed along a new line that happens to cut straight across a bar of hard Jurassic limestone. The soft riverbed was undercut and retreated, the hard limestone bar was left as a step, and a waterfall formed. All of this happened over the last ten or twenty thousand years — very recent in geological time.",
+    observation:
+      "From the air the Rhine Falls are where the Rhine suddenly narrows from a gentle broad channel and drops over a white curtain of water spanning the whole river; above the falls is green water and the outskirts of Schaffhausen, below them the water churns in a deep pool ringed by rock walls and then broadens again to flow east. The isolated rock stack in the middle of the falls and the castles on both banks (Laufen and Schloss Wörth) stand out.",
+    distinguish:
+      "The Rhine Falls and Dettifoss in Iceland are both often called \"Europe's largest / most powerful waterfall\" — by different measures: Dettifoss has a bigger drop, is on a glacial river, and is desolate; the Rhine Falls have a smaller drop but are very wide, high-flow, and in a densely populated area with many visitors. Like Niagara Falls, both are young waterfalls formed where an ice-age-diverted river cuts across hard rock, and both are slowly retreating upstream.",
+    concept:
+      "The Rhine Falls are a case study in \"ice-age diversion plus cutting across hard rock equals a young waterfall\": a glacier pushes a river off its old course, and where the new course cuts straight across a layer of hard rock, a step and a fall form at the hard rock. To recognise this kind of waterfall, look at whether it sits on a \"new\" stretch of channel out of keeping with the surrounding terrain, right where a hard rock outcrop crosses it. A common misconception is that big waterfalls are all ancient.",
+    history:
+      "The Rhine Falls have been an obstacle since the Middle Ages — goods had to be unloaded here, carried past the falls by land, and reloaded. In the 19th century the falls became a must-see of Romantic travel, visited by Goethe, Byron and others. The water power was harnessed early (mills, later a hydro station). Today they are one of the most-visited natural attractions in Switzerland.",
+  },
+
+  "aareschlucht": {
+    seeing:
+      "The Aare Gorge (Aareschlucht), near Meiringen in central Switzerland, is an extremely narrow, deep limestone gorge the Aare cut through a bar of hard rock called the \"Kirchet\" — about 1.4 km long, up to about 200 m deep, and at its narrowest only about 1 m between the walls. A boardwalk hung against the rock wall was built here in 1888, making it one of the first gorges in Switzerland opened to visitors.",
+    formation:
+      "The Aare Gorge formed in a slightly unusual way, and the details are still debated. The basic picture: where the Aare comes out of the Hasli valley upstream, the Kirchet — a bar of hard limestone — lay across its path, and the river (very likely during or after the last ice age, helped by glaciers and large volumes of meltwater) cut down hard along a fracture in this bar, sawing straight through it and carving this narrow, deep slot. There are potholes and water-carved rounded hollows in the gorge, marks of fast-flowing erosion.",
+    observation:
+      "From the air the Aare Gorge is almost invisible — it is too narrow, showing from above only as a thin black seam in the valley, flanked by the forest-covered Kirchet knoll. Only inside the gorge can you see the Aare churning in a dark, sunless cleft of limestone, the boardwalk winding along the wet rock. Upstream is the broad Hasli valley; downstream the river opens out again.",
+    distinguish:
+      "The Aare Gorge and the Lauterbrunnen Valley are both in the Bernese Alps, but Lauterbrunnen is a broad U-shaped glacial trough known for its hanging-valley waterfalls; the Aare Gorge is a V-shaped (almost I-shaped) slot cut down by a river into hard rock — an extreme form of fluvial erosion. It is similar to Cheddar Gorge — both are water cutting fast through hard rock under special conditions.",
+    concept:
+      "The Aare Gorge is a case study in the vertical versus lateral cutting of a river: when a river cuts down concentratedly along a fracture and the rock on both sides is hard enough that there is almost no lateral erosion, the valley grows deep and narrow — depth far greater than width, forming a slot gorge. To recognise this kind of valley, look at whether the ratio of valley depth to width is extreme and whether the walls are hard solid rock. A common misconception is that all river valleys widen over time.",
+    history:
+      "The Hasli valley on the two sides of the Kirchet bar was historically the route toward the Grimsel Pass and into Valais. The Aare Gorge was opened by locals with a boardwalk in 1888, a walking route of a little over a kilometre of planks and iron bridges hung against the rock wall, maintained for over a century. The \"Reichenbach Falls\" of the Sherlock Holmes stories are near Meiringen, close by.",
+  },
+
+  "ruinaulta": {
+    seeing:
+      "The Ruinaulta (Romansh, roughly \"the high landslide\"), also called the \"Rhine Gorge\" or the \"Swiss Grand Canyon\", is in eastern Switzerland west of Chur. The Vorderrhein has cut a gorge about 13 km long and up to about 350 m deep here, its walls bright white limestone and dolomite, the floor a turquoise river and white gravel bars. The Rhaetian Railway and a footpath run through the gorge; there is no road.",
+    formation:
+      "The \"raw material\" of the Ruinaulta is a huge landslide. About 10,000 years ago the mountainside around Flims collapsed, and about 8 to 12 cubic kilometres of rock slid down the valley — one of the largest known landslides in the Alps. The debris dammed the Vorderrhein, forming a lake upstream. Since then the river has overtopped the debris dam and cut down through the debris, over roughly 10,000 years carving today's deep gorge — its walls are actually landslide debris (compacted, partly cemented breccia), not bedrock in place.",
+    observation:
+      "From the air the Ruinaulta is a winding white slash cut deep into a forest-covered upland in Graubünden, the Vorderrhein meandering strongly along the gorge floor with white gravel bars of varying width beside it. Around Flims and Laax upstream, the terrain is visibly \"jumbled\" — chaotic hills, closed hollows and a few small lakes — the surface of the landslide body.",
+    distinguish:
+      "The Ruinaulta and the Aare Gorge are both deep Swiss gorges, but the Aare Gorge is a narrow slot cut by a river into hard bedrock; the Ruinaulta is a valley cut by a river into a huge mass of landslide debris, its walls \"rubble\" rather than solid rock, so it collapses more easily and the gorge is wider. Like Jökulsárgljúfur in Iceland, it is a river cutting fast down through \"not-in-place\" loose material (a debris dam / lava).",
+    concept:
+      "The Ruinaulta is a case study in a landslide dam and post-breach downcutting: a large landslide blocks a valley, water ponds upstream as a lake; once the dam is overtopped or fails by seepage, the river cuts down hard through the dam body, often carving a deep gorge over a few thousand to ten thousand years, with the gorge walls made of landslide debris. To recognise this kind of gorge, look at whether the walls are chaotic breccia, whether there are old lake sediments upstream, and whether the surrounding terrain is a large \"jumbled\" area. A common misconception is to take the debris in the gorge walls for in-place sedimentary rock.",
+    history:
+      "The debris of the Flims landslide still forms the local ground — resorts such as Flims and Laax are built on the landslide body, and springs such as Caumasee's emerge from the debris. Because the Ruinaulta has no road and can only be entered by train, boat or on foot, it has stayed relatively pristine, and has been a nationally protected landscape since the 2000s.",
+  },
 };

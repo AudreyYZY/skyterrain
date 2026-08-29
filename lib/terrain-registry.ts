@@ -4808,6 +4808,78 @@ const EMMENTAL_HILLS: TerrainEntry = {
   source: "埃门塔尔丘陵：瑞士高原南缘、由坚硬的“纳普夫砾岩”（Nagelfluh，胶结的古代阿尔卑斯河流砾石扇）构成、被众多小溪呈放射状深切的丘陵；纳普夫山1408米为最高点（swisstopo）",
 };
 
+const AARE_RIVER: TerrainEntry = {
+  id: "aare-river",
+  nameZh: "阿勒河",
+  nameEn: "Aare",
+  category: "river",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "伯尔尼老城的阿勒河曲流环", lon: 7.451, lat: 46.948, elevation: 500, kind: "meander" },
+  bbox: [7.10, 46.55, 8.35, 47.60],
+  axis: [[8.25, 46.60], [8.20, 47.55]],
+  viewScale: 2.2,
+  label: { lon: 7.6, lat: 47.1, rotation: -55 },
+  source: "阿勒河：完全在瑞士境内最长的河（约288公里），发源于伯尔尼阿尔卑斯的阿勒冰川，穿过布里恩茨湖、图恩湖，绕过伯尔尼老城的曲流环，最后在科布伦茨（阿尔高州）汇入莱茵河——汇合处阿勒河的水量比莱茵河还大（swisstopo）",
+};
+
+const ALPINE_RHINE: TerrainEntry = {
+  id: "alpine-rhine",
+  nameZh: "阿尔卑斯莱茵河",
+  nameEn: "Alpine Rhine / Alpenrhein",
+  category: "river",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "前后莱茵河汇流处（赖兴瑙，库尔附近）", lon: 9.406, lat: 46.851, elevation: 585, kind: "meander" },
+  bbox: [8.70, 46.50, 9.65, 47.55],
+  axis: [[9.20, 46.60], [9.55, 47.50]],
+  viewScale: 2.0,
+  label: { lon: 9.4, lat: 47.1, rotation: -75 },
+  source: "阿尔卑斯莱茵河：前莱茵河与后莱茵河在赖兴瑙汇合后，向北流过莱茵河谷（这一段是瑞士与列支敦士登、奥地利的界河），注入博登湖；河道19世纪以来经大规模裁弯、束堤治理（swisstopo）",
+};
+
+const RHINE_FALLS: TerrainEntry = {
+  id: "rhine-falls",
+  nameZh: "莱茵瀑布",
+  nameEn: "Rhine Falls / Rheinfall",
+  category: "gorge",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "莱茵瀑布（沙夫豪森附近）", lon: 8.6155, lat: 47.6779, elevation: 390, kind: "gorge" },
+  bbox: [8.58, 47.66, 8.66, 47.70],
+  label: { lon: 8.6155, lat: 47.6779, rotation: 0 },
+  source: "莱茵瀑布：宽约150米、落差约23米，平均流量约370立方米/秒，按水量与宽度算是欧洲最大的瀑布之一；冰期冰川把莱茵河逼离旧河道，新河道横切一道坚硬的侏罗纪石灰岩，才形成这道年轻的瀑布（swisstopo）",
+};
+
+const AARESCHLUCHT: TerrainEntry = {
+  id: "aareschlucht",
+  nameZh: "阿勒峡（阿勒河峡谷）",
+  nameEn: "Aare Gorge / Aareschlucht",
+  category: "gorge",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "阿勒峡（迈林根附近，基尔谢特岩坎）", lon: 8.201, lat: 46.719, elevation: 630, kind: "gorge" },
+  bbox: [8.17, 46.70, 8.24, 46.74],
+  axis: [[8.185, 46.712], [8.22, 46.725]],
+  label: { lon: 8.201, lat: 46.719, rotation: -25 },
+  source: "阿勒峡：迈林根附近，阿勒河横切一道叫“基尔谢特”的坚硬岩坎形成的窄深峡谷，长约1.4公里、最深约200米、最窄处仅约1米；1888年架起栈道对外开放（swisstopo）",
+};
+
+const RUINAULTA: TerrainEntry = {
+  id: "ruinaulta",
+  nameZh: "鲁伊瑙尔塔峡谷（莱茵峡谷）",
+  nameEn: "Ruinaulta (Rhine Gorge)",
+  category: "gorge",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "鲁伊瑙尔塔（前莱茵河峡谷）", lon: 9.283, lat: 46.797, elevation: 650, kind: "gorge" },
+  bbox: [9.20, 46.76, 9.42, 46.84],
+  axis: [[9.22, 46.79], [9.40, 46.80]],
+  viewScale: 1.3,
+  label: { lon: 9.30, lat: 46.80, rotation: -6 },
+  source: "鲁伊瑙尔塔（也称“莱茵峡谷”“瑞士大峡谷”）：约一万年前的弗利姆斯大滑坡（体积约8—12立方公里，阿尔卑斯山最大的滑坡之一）堵住前莱茵河、形成湖；此后河水切穿滑坡碎屑，掏出一条长约13公里、深达约350米的白色峡谷（Swiss Geological Survey / swisstopo）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -4917,6 +4989,7 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   LAUTERBRUNNEN_VALLEY, RHONE_VALLEY, SWISS_PLATEAU,
   LAKE_GENEVA, LAKE_CONSTANCE, LAKE_LUCERNE, LAKE_ZURICH, LAKE_MAGGIORE,
   CREUX_DU_VAN, EMMENTAL_HILLS,
+  AARE_RIVER, ALPINE_RHINE, RHINE_FALLS, AARESCHLUCHT, RUINAULTA,
 ];
 
 /**
@@ -5026,6 +5099,9 @@ const WIDE_VIEW: Record<string, number> = {
   "lake-geneva": 1.7,
   "lake-constance": 1.6,
   "emmental-hills": 1.6,
+  "aare-river": 2.2,
+  "alpine-rhine": 2.0,
+  ruinaulta: 1.3,
   // 欧洲 / 冰岛
   askja: 1.5,
   thingvellir: 1.6,

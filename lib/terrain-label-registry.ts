@@ -199,6 +199,9 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "lake-constance": "national",
   "lake-lucerne": "national",
   "lake-maggiore": "national",
+  "aare-river": "national",
+  "alpine-rhine": "national",
+  "rhine-falls": "national",
 
   // 冰岛
   hekla: "national",
