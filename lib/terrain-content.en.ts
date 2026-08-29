@@ -3320,4 +3320,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Mourne Wall is a dry-stone wall built between 1904 and 1922 to enclose the catchment that supplies water to Belfast, running about 35 km over fifteen summits. The granite of this area was quarried extensively for kerbstones and building in Britain and Ireland. The scenery of the Mournes is said to have inspired Narnia in the writing of C.S. Lewis.",
   },
+
+  "peak-district": {
+    seeing:
+      "The Peak District, in the middle of England at the southern end of the Pennines, is ringed by big cities — Manchester, Sheffield and others. It divides clearly in two: the \"Dark Peak\" of the north and the eastern and western wings is dark sandstone moorland plateau; the \"White Peak\" of the south and centre is pale limestone plateau and deep-cut dales. The Peak District was the first national park in Britain (1951).",
+    formation:
+      "The Peak District's rocks are all Carboniferous. At the bottom is limestone laid down in a shallow sea (the White Peak); above it is deltaic \"Millstone Grit\" sandstone and coal-bearing strata (the Dark Peak). The whole area was uplifted into a north-south dome, the sandstone and coal on top were eroded away, and the older limestone was exposed in the centre. The hard grit forms flat-topped moors and \"edge\" escarpments, and the limestone areas have dry valleys, sinkholes and caves.",
+    observation:
+      "From the air the centre of the Peak District is a pale, largely treeless limestone upland divided into small walled pastures, with a few green deep dales (such as Dovedale) cut into it; around it and to the north is dark-brown, flat, peat-covered gritstone moor plateau, often edged by a dark line of gritstone cliff. The cities press right up to the national park boundary.",
+    distinguish:
+      "The Peak District is simply the southern end of the Pennines — same rocks, same structure — only lower and surrounded by cities. The \"Dark Peak vs White Peak\" contrast within it is exactly the contrast between sandstone moorland and limestone karst: one wet, acidic and dark, the other short of surface water, alkaline and pale.",
+    concept:
+      "The Peak District is a case study in rock type controlling landform: the same dome, the same uplift and climate, and yet the sandstone areas form flat-topped acid bogs while the limestone areas form dry valleys and caves — the whole difference is in whether the rock can be dissolved by water and whether it lets water through. To tell which you are standing on, look for surface rivers and whether the soil is acid or alkaline. A common misconception is that adjacent areas with different landforms must owe the difference to different climates.",
+    history:
+      "The Peak District has long been a crossing of the Pennines and an area of quarrying (lime, lead). In 1932 a group of walkers staged a \"mass trespass\" on Kinder Scout in protest at landowners closing off the moors, helping to drive the \"right to roam\" legislation and the national park system in Britain. Today the Peak District is one of the most-visited national parks in Britain.",
+  },
+
+  "yorkshire-dales": {
+    seeing:
+      "The Yorkshire Dales, in the northern Pennines, are a limestone upland cut by broad glacial valleys (\"dales\"). They are known for classic limestone landforms: bare \"limestone pavements\", white cliffs (\"scars\") tens of metres high such as Malham Cove, deep vertical shafts and huge underground cave systems. On the surface there are drystone walls, stone barns and grazing sheep.",
+    formation:
+      "The main body of the Yorkshire Dales is Carboniferous limestone, built from the calcium carbonate of organisms in a warm shallow sea over 300 million years ago, in near-horizontal beds. After uplift, rainwater carrying carbon dioxide dissolved the limestone strongly along its joints and bedding planes: the surface is etched into grooves (forming \"limestone pavement\"), water quickly goes underground and hollows out shafts and caves, and the surface is left \"short of water\". Ice-age glaciers then widened and flattened the main dales, exposing the white scars.",
+    observation:
+      "From the air the Yorkshire Dales are a pale grey-green upland, with several flat-floored, steep-sided glacial valleys cutting across, tiers of white limestone scars running along the valley slopes on contour; on the high plateaus you can see gleaming bare limestone pavement and round sinkholes. The valley floors are green pasture, a grid of drystone walls and riverside villages.",
+    distinguish:
+      "The Yorkshire Dales and the Peak District's White Peak are the same Carboniferous limestone and the same kind of karst, but the Dales have been more thoroughly reworked by glaciers — broad flat valleys, rows of scars, many shafts. Compared with the tower karst of Guilin in China, this is a cold-climate, weakly uplifted, temperate karst of \"plateau plus deep valley plus underground drainage\", with no rock towers rising from the ground.",
+    concept:
+      "The Yorkshire Dales are a case study in karst being short of surface water: limestone can be dissolved by rain and also lets water through, so water does not gather into rivers on the surface but seeps down the joints to form underground streams, leaving dry valleys, sinkholes and beheaded streams on top. To recognise a karst area, look at whether surface streams often \"flow along and then disappear into the ground\". A common misconception is that a rainy place must have a well-developed surface drainage.",
+    history:
+      "The Yorkshire Dales' drystone walls, barns and monastic sheep granges (such as the estates of Fountains Abbey) are the legacy of centuries of upland sheep farming. Lead was mined here in the 18th and 19th centuries. The national park was established in 1954. The \"Yorkshire Three Peaks\" walk and caving in the dales are classics of British outdoor recreation.",
+  },
+
+  "north-york-moors": {
+    seeing:
+      "The North York Moors, in the north-east of England, are a sandstone plateau whose top carries the largest continuous expanse of heather moorland in England and Wales — when it flowers in late summer the whole upland turns purple. The plateau is cut by several deep dales, and its eastern edge drops straight into the North Sea as the highest stretch of sea cliff on England's east coast.",
+    formation:
+      "The rocks of the North York Moors are Jurassic (about 180 to 150 million years old) sandstones, shales and thin limestones, laid down in shallow-sea and deltaic settings, in near-horizontal beds dipping gently south. After uplift, the hard sandstone beds form the flat plateau surface, and rivers cut deep dales along the weaker zones. The plateau is poorly drained and the climate cool and wet, so over thousands of years thick acid peat has formed, and only heather, cotton-grass and the like can grow.",
+    observation:
+      "From the air the North York Moors are a dark-brown (or, in late summer, purple) flat open upland cut into finger shapes by several green deep dales (Farndale, Rosedale and others); the dales are farmland and villages, the dale slopes carrying woodland. On the east is a straight line of sea cliff and the coastal towns of Whitby and Robin Hood's Bay. On the plateau you can see the trackbeds of the narrow-gauge railways that once carried ironstone.",
+    distinguish:
+      "The North York Moors, Dartmoor and Exmoor are all English \"moors\" covered in heather and peat, but the North York Moors' bedrock is Jurassic sandstone and the land form is a dissected plateau; Dartmoor is granite, Exmoor Devonian sandstone. The \"bog\" of all three is acid peat, a product of climate plus poor drainage, not a natural desert.",
+    concept:
+      "The North York Moors are a case study in blanket bog / moorland: on a cool, wet, poorly drained upland, plant remains decompose more slowly than they build up, so an acid peat layer accumulates year on year, locking up the nutrients, and only plants that tolerate poverty and acidity such as heather can grow — hence the large, monotonous purple-brown moor. A common misconception is to treat moorland as \"barren wasteland\" — it is in fact an important carbon store and a special habitat.",
+    history:
+      "The North York Moors were historically worked for alum (one of Britain's earliest chemical industries, from the 17th century), ironstone and good building stone. Medieval abbeys such as Rievaulx ran large sheep farms here. Today the moors are managed by private estates, traditionally burnt in patches for grouse shooting. The national park was established in 1952.",
+  },
+
+  "dartmoor": {
+    seeing:
+      "Dartmoor, in Devon in south-west England, is a granite upland and the largest area of open wild country in southern England. Its signature is the \"tor\" — piles of granite weathered into blocks and stacked in layers, standing alone on the bare moor like natural stone castles. Dartmoor also has the densest concentration of Bronze Age remains in Britain.",
+    formation:
+      "Dartmoor's granite cooled underground as a large body of magma about 295 million years ago, and was later exposed as the overlying rock was stripped away and the granite as a whole was uplifted. The granite weathers along its internal horizontal and vertical joints: where the joints are close-spaced the rock is hollowed into hollows, where they are widely spaced the rock is left, forming the layered tors. The plateau is poorly drained and carries thick peat bog; the slopes are strewn with frost-shattered granite blocks (\"clitter\").",
+    observation:
+      "From the air Dartmoor is a pale-brown, almost treeless, gently domed upland, ringed by green deep valleys and farmland. Dark tors are dotted across it, along with waterlogged peat bogs and grazing ponies and sheep. Several Devon rivers (the Dart, the Teign and others) run radially out from the centre.",
+    distinguish:
+      "Dartmoor, the Cairngorms of Scotland and the Mournes of Northern Ireland are all granite uplands, but Dartmoor's \"tor plus peat bog\" combination is the most typical, and glaciation here was very weak (in the ice ages it sat at the ice-sheet margin, with only periglacial frost weathering). Compared with the North York Moors, both are moorland, but Dartmoor's bedrock is granite and it has tors.",
+    concept:
+      "Dartmoor is a case study in the tor: as granite cools it forms a regular network of joints, groundwater along the close-spaced joints rots the rock into loose debris, and blocks bounded by widely-spaced joints survive relatively intact; when the debris above is stripped away, these intact blocks stand out as tors. To recognise a tor, look at whether it is a pile of blocky rock with horizontal cracks, surrounded by a slope of loose stones. A common misconception is that tors are stacked by people or carried in by glaciers.",
+    history:
+      "Dartmoor's upland has the densest prehistoric remains in Britain — stone rows, stone circles and the foundations of thousands of Bronze Age round houses. Tin has been mined here since the Middle Ages, leaving extensive workings in the valleys. In the 19th century a prison and quarries were built. Today large parts of the upland are used as military training ground, and it is also a national park.",
+  },
+
+  "exmoor": {
+    seeing:
+      "Exmoor, spanning Devon and Somerset, is a sandstone moorland whose most distinctive feature is its northern edge: the moor does not slope gently to the sea but drops straight into the Bristol Channel as steep sea cliffs hundreds of metres high, among the highest in England. The moor carries the semi-wild Exmoor pony and the last herds of wild red deer in England. It is also an International Dark Sky Reserve.",
+    formation:
+      "Exmoor's rocks are Devonian (about 400 to 360 million years old) sandstones and slates, folded and uplifted in the Caledonian and Variscan orogenies. The hard sandstone beds form the gently rolling moorland plateau; the plateau is cool and wet and poorly drained, covered in acid peat and heather. Rivers (the Exe, the Lyn and others) cut steep deep combes north from the plateau straight into the sea — it is precisely because the rivers are short and steep and the coast is retreating fast that the moor \"meets the cliff edge\" as high sea cliffs.",
+    observation:
+      "From the air Exmoor is a gently rolling brown-and-green upland cut by narrow wooded combes; the northern edge is an almost continuous dark line of sea cliff, with open moor right up to the cliff top and a narrow boulder shore below. The south side grades into green farmland and hedgerows.",
+    distinguish:
+      "Exmoor and Dartmoor are two neighbouring south-west English moors, but Dartmoor is granite, higher, with tors; Exmoor is Devonian sandstone, a little lower, and its defining feature is the high sea cliffs. Compared with the chalk cliffs of Dover, Exmoor's cliffs are dark sandstone, higher and steeper.",
+    concept:
+      "Exmoor's northern edge is a case study in \"moor meeting sea\": when the edge of an upland is also a coast being eroded and retreating fast, rivers have no time to build gentle flats at their mouths, and the upland is \"sliced\" into a steep cliff standing straight against the sea. To recognise this kind of cliff, look at whether the cliff top runs straight into open upland and there is almost no marine flat at the foot. A common misconception is that a higher sea cliff means stronger waves — here it is mainly because the land was already high.",
+    history:
+      "Exmoor was a royal hunting \"forest\", with its own management and law in the Middle Ages. In the 19th century there was an attempt to reclaim the moor as farmland and to mine iron ore (with an aerial ropeway to carry the ore down). The national park was established in 1954. R.D. Blackmore's novel Lorna Doone made this moor widely known.",
+  },
+
+  "cheviot-hills": {
+    seeing:
+      "The Cheviot Hills straddle the border between England and Scotland — a range of rounded, turf-covered, thinly populated hills. The highest, The Cheviot, is 815 m. This is the core of Northumberland National Park in England and the northern end of Britain's first National Trail, the Pennine Way.",
+    formation:
+      "The core of the Cheviot Hills is the andesitic lava and volcanic debris left by a large volcano — the \"Cheviot volcano\" — active about 390 million years ago (early Devonian), with a later granite body intruded at the centre. After the volcanism ended, this hard volcanic rock resisted erosion better than the surrounding sedimentary rock, and was uplifted and long worn down into today's smooth rounded hills. Ice-age ice sheets polished it further.",
+    observation:
+      "From the air the Cheviot Hills are a run of continuous, dome-topped hills almost entirely covered in grass and bog, with very little bare rock; the broad shallow valleys hold streams and scattered sheep farms and almost no villages. The hilltops are wet and boggy year-round. The border line (England-Scotland) roughly follows the watershed.",
+    distinguish:
+      "The Cheviot Hills are next to the Southern Uplands and look like them — both rounded border hills — but the Cheviot rock is Devonian volcanic rock and granite, while the Southern Uplands are older Ordovician-Silurian greywacke and shale. The Cheviot is further north and more desolate than the northern end of the Pennines.",
+    concept:
+      "The Cheviot Hills are a case study in a levelled old volcano: after hundreds of millions of years of erosion a volcano has long lost its cone and crater, and what remains is the hardest rock from its underground and surface parts (lava, volcanic neck, intrusion), which, being erosion-resistant, stands a little above its surroundings as a gentle upland. A common misconception is that a \"volcano\" must be a cone-shaped mountain — most ancient volcanoes are now just an ordinary hill or upland.",
+    history:
+      "The Cheviot Hills were one of the most fiercely contested stretches of the Anglo-Scottish border, with medieval \"bastle\" border towers and battlefield sites in the hills (such as Otterburn, 1388). This has long been border grazing country, and gave rise to the hardy Cheviot breed of sheep. Today most of it is national park and military training area.",
+  },
+
+  "south-downs": {
+    seeing:
+      "The South Downs are a line of chalk hills in south-east England, running from Hampshire to the coast of East Sussex, where at Beachy Head they meet the sea as dazzling white cliffs. They have a steep escarpment on the north side and a gentle slope dipping toward the sea on the south, with open grassland and wheat fields and almost no trees on top. They are the newest national park in England (2010/2011).",
+    formation:
+      "The rock of the South Downs is chalk — an almost pure calcium carbonate soft rock built from the skeletons of tiny marine organisms (coccoliths), formed in a warm shallow sea about 100 to 66 million years ago. The far ripples of the Alpine orogeny then gently folded and uplifted the strata of south-east England into a large anticline; the top of the anticline was eroded away, and the chalk beds of the two limbs now dip outward, the cut-off face (toward the centre of the anticline) forming the escarpment and the gently dipping bedding surface forming the slope — this is a cuesta.",
+    observation:
+      "From the air the South Downs are an east-west, smoothly rolling, largely treeless green (or, after harvest, golden) belt of hills; on the north a continuous steep slope with lowland and villages below, on the south a gentle descent to the coastal plain. Several rivers (the Arun, the Ouse and others) cut across the hills, forming gaps. The eastern end at Beachy Head and the Seven Sisters is a wavy line of white cliffs.",
+    distinguish:
+      "The South Downs, the North Downs to the north and the Chiltern Hills are all chalk cuestas, different limbs of the same eroded anticline. Unlike the Carboniferous limestone of the Pennines, chalk is softer, purer and younger, and the landform is rounded \"dry valleys plus escarpment\", with no caves or rock towers.",
+    concept:
+      "The South Downs are a case study in cuesta landscape after an anticline is eroded: strata arched into an anticline and uplifted are breached at the top first, leaving the two limbs of hard rock dipping outward, the cut-off side forming an escarpment and the bedding side a gentle slope. To recognise this, look for two lines of hills running parallel with their escarpments facing each other — they are often the two limbs of one anticline. A common misconception is to read the escarpment as a fault.",
+    history:
+      "The South Downs have been grazed for thousands of years into open \"chalk grassland\", one of the most biodiverse grassland types in Britain. On the hills are Neolithic \"causewayed enclosures\", Bronze Age barrows and Iron Age hillforts. In the Second World War the south slope of the Downs was used for war preparation. In recent decades over-cultivation has greatly shrunk the chalk grassland, and the national park is working to restore it.",
+  },
+
+  "chilterns": {
+    seeing:
+      "The Chiltern Hills, north-west of London, are a line of chalk hills with a clear escarpment on the north-west overlooking the lowland below, and a gentle dip slope toward the London Basin on the south-east. Large beech woods hanging on the escarpment are their signature. The Thames cuts through the range at Goring, leaving a distinct gap (the \"Goring Gap\").",
+    formation:
+      "The Chilterns' rock is chalk, like the South Downs, and is likewise a limb of a large upfold (the northern edge of the \"London-Hampshire Basin\") created by the far effects of the Alpine orogeny in south-east England. The chalk dips gently south-east, and the cut-off north-west end forms the escarpment. Chalk lets water through, so there are almost no permanent surface rivers, only some seasonal \"winterbourne\" streams; the slopes are covered by a younger layer of clay and flint gravel (\"clay-with-flints\"), which suits beech.",
+    observation:
+      "From the air the Chilterns are a south-west-to-north-east green wooded belt of hills, with a continuous steep slope on the north-west (the dark green beech woods on the slope contrasting sharply with the pale farmland below) and, on the south-east, a gentle descent broken up by dry valleys, merging into the suburbs of London. At Goring you can see the gap where the Thames passes through the middle of the hills.",
+    distinguish:
+      "The Chilterns and the South Downs are almost a \"mirror image\" pair of chalk cuestas, belonging to the south and north limbs of the same breached upfold: the Chilterns' escarpment faces north-west, the South Downs' faces north, with the London Basin between them. Because of the clay-with-flints on its slopes, the Chilterns are much more wooded than the grassy South Downs.",
+    concept:
+      "The Chilterns' \"Goring Gap\" is a case study in an antecedent river: the Thames was already flowing there before the hills were uplifted, or while they rose only slowly, and as the chalk was slowly domed up the river cut down fast enough to keep pace, \"sawing\" through the rising hills and leaving a transverse gorge-gap that does not fit the present landscape. A common misconception is that a river always goes around high ground — some rivers are \"older\" than the high ground.",
+    history:
+      "The Chilterns' beech woods historically supplied timber for the furniture trade of the surrounding towns (especially High Wycombe), where \"bodgers\" turned chair parts on the spot in the woods. The ancient trackway the Icknield Way runs along the hills. From the 19th century the area became a commuter belt for London (\"Metro-land\"). Most of it is an Area of Outstanding Natural Beauty (AONB), redesignated a National Landscape from 2024.",
+  },
 };

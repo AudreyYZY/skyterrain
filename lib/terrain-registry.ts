@@ -3697,6 +3697,123 @@ const MOURNE_MOUNTAINS: TerrainEntry = {
   source: "莫恩山：北爱尔兰东南部，约5600万年前（古近纪）侵位的花岗岩被剥露形成的紧凑山群，紧邻海岸；多纳德山850m 为北爱尔兰最高峰（BGS / Geological Survey of Northern Ireland）",
 };
 
+const PEAK_DISTRICT: TerrainEntry = {
+  id: "peak-district",
+  nameZh: "峰区",
+  nameEn: "Peak District",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "金德斯科特高原（Kinder Scout）", lon: -1.871, lat: 53.385, elevation: 636, kind: "escarpment" },
+  bbox: [-2.10, 53.00, -1.55, 53.55],
+  viewScale: 1.7,
+  label: { lon: -1.80, lat: 53.30, rotation: 0 },
+  source: "峰区：奔宁山脉南端。北部“暗峰”是磨石粗砂岩的马蹄形沼地高原，南部“白峰”是石炭纪石灰岩台地和干谷；英国第一个国家公园（1951）（BGS / Natural England）",
+};
+
+const YORKSHIRE_DALES: TerrainEntry = {
+  id: "yorkshire-dales",
+  nameZh: "约克郡谷地",
+  nameEn: "Yorkshire Dales",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "马勒姆湾（Malham Cove）", lon: -2.155, lat: 54.070, elevation: 250, kind: "escarpment" },
+  bbox: [-2.65, 53.95, -1.90, 54.40],
+  viewScale: 1.8,
+  label: { lon: -2.25, lat: 54.15, rotation: 0 },
+  source: "约克郡谷地：石炭纪石灰岩喀斯特——石灰岩铺面、崖坎、竖井和溶洞发育，冰川又把谷地拓宽；含“约克郡三峰”（Natural England / BGS）",
+};
+
+const NORTH_YORK_MOORS: TerrainEntry = {
+  id: "north-york-moors",
+  nameZh: "北约克沼原",
+  nameEn: "North York Moors",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "北约克沼原（丹比高沼一带）", lon: -0.90, lat: 54.37, elevation: 300, kind: "escarpment" },
+  bbox: [-1.35, 54.20, -0.40, 54.55],
+  viewScale: 1.7,
+  label: { lon: -0.90, lat: 54.37, rotation: 0 },
+  source: "北约克沼原：侏罗纪砂岩台地，覆盖英格兰-威尔士最大的连片欧石南沼地，东缘是英格兰东海岸最高的海崖（Natural England / BGS）",
+};
+
+const DARTMOOR: TerrainEntry = {
+  id: "dartmoor",
+  nameZh: "达特穆尔",
+  nameEn: "Dartmoor",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "海威尔黑斯（High Willhays）", lon: -4.010, lat: 50.681, elevation: 621, kind: "escarpment" },
+  bbox: [-4.15, 50.44, -3.70, 50.78],
+  viewScale: 1.6,
+  label: { lon: -3.90, lat: 50.58, rotation: 0 },
+  source: "达特穆尔：德文郡的一片花岗岩高地（约2.9亿年前侵位），顶面覆泥炭沼、点缀风化残丘“突岩”（tor）；南英格兰最大的开阔荒野，青铜时代遗迹密集（BGS / Natural England）",
+};
+
+const EXMOOR: TerrainEntry = {
+  id: "exmoor",
+  nameZh: "埃克斯穆尔",
+  nameEn: "Exmoor",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "邓克里灯塔山（Dunkery Beacon）", lon: -3.585, lat: 51.161, elevation: 519, kind: "escarpment" },
+  bbox: [-3.95, 51.02, -3.35, 51.28],
+  viewFrom: 0,
+  viewScale: 1.5,
+  label: { lon: -3.65, lat: 51.13, rotation: 0 },
+  source: "埃克斯穆尔：德文—萨默塞特的泥盆纪砂岩沼地，北缘直接以高海崖跌入布里斯托尔湾（含英格兰最高海崖之一）；国际暗夜保护区（Natural England / BGS）",
+};
+
+const CHEVIOT_HILLS: TerrainEntry = {
+  id: "cheviot-hills",
+  nameZh: "切维厄特丘陵",
+  nameEn: "Cheviot Hills",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "切维厄特山（The Cheviot）", lon: -2.145, lat: 55.478, elevation: 815, kind: "peak" },
+  bbox: [-2.60, 55.25, -2.00, 55.62],
+  viewScale: 1.6,
+  label: { lon: -2.30, lat: 55.42, rotation: 0 },
+  source: "切维厄特丘陵：跨英格兰-苏格兰边界，核心是约3.9亿年前的“切维厄特火山”留下的安山岩与花岗岩，被侵蚀成浑圆草坡；诺森伯兰国家公园（BGS）",
+};
+
+const SOUTH_DOWNS: TerrainEntry = {
+  id: "south-downs",
+  nameZh: "南唐斯丘陵",
+  nameEn: "South Downs",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "比奇角（Beachy Head）", lon: 0.245, lat: 50.735, elevation: 162, kind: "escarpment" },
+  bbox: [-1.40, 50.72, 0.30, 51.05],
+  axis: [[-1.30, 50.95], [0.25, 50.74]],
+  viewFrom: 180,
+  viewScale: 1.8,
+  label: { lon: -0.55, lat: 50.90, rotation: -12 },
+  source: "南唐斯丘陵：从汉普郡延伸到东萨塞克斯海岸的白垩单面山，北坡陡、南坡缓；东端在比奇角以白垩海崖入海；英格兰最新的国家公园（2010/2011）（Natural England / BGS）",
+};
+
+const CHILTERNS: TerrainEntry = {
+  id: "chilterns",
+  nameZh: "奇尔特恩丘陵",
+  nameEn: "Chiltern Hills",
+  category: "hills",
+  regionId: "europe",
+  country: "uk",
+  landmark: { name: "库姆山（Coombe Hill）", lon: -0.720, lat: 51.732, elevation: 267, kind: "escarpment" },
+  bbox: [-1.10, 51.55, -0.35, 51.92],
+  axis: [[-1.05, 51.60], [-0.40, 51.88]],
+  viewFrom: 315,
+  viewScale: 1.7,
+  label: { lon: -0.72, lat: 51.72, rotation: -50 },
+  source: "奇尔特恩丘陵：伦敦西北的白垩单面山，西北坡陡（陡崖上挂着山毛榉林）、东南坡缓；泰晤士河在戈灵一带切穿它（Natural England / BGS）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -3785,6 +3902,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 欧洲 / 英国 =====
   SCOTTISH_HIGHLANDS, CAIRNGORMS, SOUTHERN_UPLANDS, SNOWDONIA,
   BRECON_BEACONS, LAKE_DISTRICT, PENNINES, MOURNE_MOUNTAINS,
+  PEAK_DISTRICT, YORKSHIRE_DALES, NORTH_YORK_MOORS, DARTMOOR,
+  EXMOOR, CHEVIOT_HILLS, SOUTH_DOWNS, CHILTERNS,
 ];
 
 /**
@@ -3890,6 +4009,14 @@ const WIDE_VIEW: Record<string, number> = {
   "brecon-beacons": 1.7,
   "lake-district": 1.8,
   pennines: 2.5,
+  "peak-district": 1.6,
+  "yorkshire-dales": 1.7,
+  "north-york-moors": 1.7,
+  dartmoor: 1.5,
+  exmoor: 1.5,
+  "cheviot-hills": 1.6,
+  "south-downs": 2.0,
+  chilterns: 1.8,
   // 大洋洲 / 新西兰
   "aoraki-southern-alps": 2.4,
   "kaikoura-ranges": 1.7,
