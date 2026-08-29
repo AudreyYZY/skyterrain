@@ -2480,4 +2480,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Kii Mountains have been a centre of mountain worship and of Shugendō (a fusion of Buddhist and Shinto training) since the Nara period. Kōyasan is the head temple of the Shingon school, founded by Kūkai in the 9th century; the Kumano Sanzan were pilgrimage destinations for emperors and commoners alike; and the \"Kumano Kodō\" routes linking the sacred sites have been walked by countless pilgrims over a thousand years. In 2004 this whole set of \"Sacred Sites and Pilgrimage Routes in the Kii Mountain Range\" was inscribed as a World Heritage cultural site.",
   },
+
+  "kanto-plain": {
+    seeing:
+      "The Kanto Plain is the largest plain in Japan, about 17,000 km², in central Honshu on the Pacific side. Japan's largest metropolitan area — Tokyo, Yokohama, Saitama and Chiba running together — is built on it, home to about 40 million people. The plain is enclosed by mountains on three sides (the Kanto Mountains to the west, the Ashio and Echigo ranges to the north) and opens south-east onto Tokyo Bay and the Pacific.",
+    formation:
+      "The Kanto Plain is a slowly subsiding structural basin that has long received sediment carried down from the surrounding mountains by the Tone, Ara, Tama and other rivers. It is not a single lowland at one level: near the rivers is low alluvial ground, and between them rise several river-cut terraces (such as the Musashino Terrace), capped by a thick layer of wind-blown volcanic ash from Mount Fuji, Hakone and other volcanoes (the \"Kanto loam\").",
+    observation:
+      "From the air the Kanto Plain is one nearly continuous grey city held in the arms of the mountains — the built-up area covers almost the whole plain, with strips of green and farmland surviving only along the rivers and at the terrace edges. The Tone, Ara and other large rivers wind through the urban grid, their channels held by high levees. On a clear day the isolated cone of Mount Fuji is visible to the south-west from the plain.",
+    distinguish:
+      "The Kanto Plain and China's North China Plain are both large, densely populated river-alluvial plains, but the North China Plain is far larger and shaped by frequently shifting rivers such as the Yellow River; the Kanto Plain is small, ringed by mountains, built by several rivers that stay in their own sectors, and overlain by volcanic-ash terraces. Versus the Osaka Plain: the Kanto Plain is much larger, while the Osaka Plain is cut to pieces by fault-block mountains.",
+    concept:
+      "The Kanto Plain shows that a \"plain\" has internal structure: it has both low river-alluvial ground and higher, volcanic-ash-covered terraces, and the two differ in ground conditions, groundwater and hazard risk. A common misconception is that all of a big city sits on solid ground — the Tokyo Bay shore has large areas of modern reclamation and soft alluvium, which amplify shaking and can liquefy in an earthquake.",
+    history:
+      "The Kanto Plain has long been the agricultural and population centre of the Kanto region. In 1590 Tokugawa Ieyasu moved his base to Edo, then a small town, and Edo (renamed Tokyo after 1868) grew into Japan's largest city. In the 20th century the plain's fields and woodlots were swallowed by rapid urbanisation into today's continuous metropolis; flood control (especially the rerouting and levee works on the Tone River) is what allows the plain to hold so many people.",
+  },
+
+  "nobi-plain": {
+    seeing:
+      "The Nōbi Plain is in central Honshu on the northern shore of Ise Bay, the alluvial plain of the Nagoya area. Three large rivers — the Kiso, the Nagara and the Ibi — cross the plain almost side by side and empty together into Ise Bay. The south-western part of the plain is very low, with a substantial area of ground below sea level (below high tide), and it has always fought with floods.",
+    formation:
+      "The Nōbi Plain sits on a tilting block that is sinking on the west and rising on the east — the west keeps dropping along a fault at the foot of the Yōrō Mountains, so all three rivers are pushed to the western side of the plain and crowded together, and the south-western corner keeps getting lower. The rivers' sediment fills this sinking area into a plain, but not as fast as it subsides, so the lowland is kept only by ever-raised levees.",
+    observation:
+      "From the air the Nōbi Plain is a lowland covered in regular fields and towns, its most striking feature the three big rivers running in parallel on the west side, separated only by narrow belts of levee. In the south-west you can see ring levees (\"wajū\") enclosing villages and fields one by one, the ground inside clearly lower than the river. Nagoya's built-up area is on slightly higher ground in the east of the plain.",
+    distinguish:
+      "The Nōbi Plain is like the low country of the Netherlands — a delta below sea level kept habitable by levees and drainage. Versus the Kanto Plain: the Kanto Plain is larger, has volcanic-ash terraces and little subsidence; the Nōbi Plain is small, almost all low alluvium, with the south-western half continuously subsiding and flood pressure more concentrated.",
+    concept:
+      "The \"wajū\" of the Nōbi Plain are a classic case of \"living with water\": in lowland where floods cannot be fully kept out, each settlement is enclosed by its own ring levee, and inside there is a hierarchy — houses and shrines on the highest spots, plus purpose-built raised platforms (\"mizuya\") as flood refuges. A common misconception is that building levees solves flooding for good — the higher the levee, the greater the head and the damage if it breaks.",
+    history:
+      "The Nōbi Plain has long been a strategic corridor linking eastern and western Japan, and battles that changed Japanese history — Sekigahara, Okehazama — were fought here. In the Edo period the shogunate organised large flood-control projects (such as the 1750s \"Hōreki\" works carried out by the Satsuma domain) to separate the three rivers and build levees. The Isewan Typhoon of 1959 caused a storm surge here that killed or left missing over 5,000 people, after which Japan greatly strengthened coastal disaster defences.",
+  },
+
+  "osaka-plain": {
+    seeing:
+      "The Osaka Plain is in western Honshu, on the eastern and northern shores of Osaka Bay — the core of the Kansai region. The three big cities of Osaka, Kyoto and Kobe and the continuous urban area between them lie on this plain and in the valleys around it. The plain is not large (about 1,600 km²) and is tightly hemmed in by rows of fault-block mountains such as Ikoma and Rokkō, with a very clear boundary between mountain and plain.",
+    formation:
+      "The Osaka Plain is a relatively subsiding area \"framed\" by the uplift of the surrounding fault-block mountains, filled by the alluvium of the Yodo, Yamato and other rivers. Thousands of years ago the sea reached deep into what is now central Osaka (\"Kawachi Bay\"), later turned to land by Yodo River sediment and by human reclamation. In modern times the Osaka Bay shore has been extended further by large-scale reclamation, creating ports, an airport (Kansai International Airport is on an artificial island) and industrial zones.",
+    observation:
+      "From the air the Osaka Plain is a grey urban hollow between rows of steep ranges — the built-up area almost fills the plain, with the Yodo River cutting diagonally across from north-east to south-west and splitting into arms at its mouth. Rokkō stands like a wall behind the city of Kobe, dense housing right at its foot. Squared artificial islands are visible in Osaka Bay. Kyoto sits at the northern end of the plain in a small basin enclosed by hills on three sides.",
+    distinguish:
+      "The Osaka Plain and the Kanto Plain are both big-city plains of Japan, but the Kanto Plain is open and has volcanic-ash terraces; the Osaka Plain is cut to pieces by fault-block mountains, assembled from a string of small plains and basins, with a closer relationship between mountain and city. Versus the Nōbi Plain: the Osaka Plain does not have the large below-sea-level area that Nōbi does, so its flood problem is less extreme.",
+    concept:
+      "The Osaka Plain shows how block movement shapes settlement: the surrounding mountains are lifted along faults, the block between drops and is filled flat by rivers, and the cities grow in these dropped lowlands — with the fault often right at the mountain foot. There is an active fault at the base of Rokkō, and the 1995 Great Hanshin earthquake came from it. A common misconception is to take the mountain foot for the safest \"backed-by-mountain\" spot — in fault-block mountain country, the mountain foot often faces an active fault.",
+    history:
+      "The Osaka Plain was one of the centres of ancient Japanese civilisation — Naniwa, Asuka, Heijō-kyō (Nara) and Heian-kyō (Kyoto) were all in this area. Osaka became \"the nation's kitchen\" through water transport in the Edo period, a commercial and logistics hub for the whole country. In modern times Osaka grew into an industrial city, Kyoto kept its old-capital character, and Kobe is a major port — together with their surroundings they form Japan's second-largest metropolitan area.",
+  },
+
+  "ishikari-plain": {
+    seeing:
+      "The Ishikari Plain is the largest plain in Hokkaido, in the south-west of the island, on the lower Ishikari River. Sapporo, the capital of Hokkaido, is built on the southern edge of the plain, which also holds cities such as Asahikawa and large areas of rice paddy. It is enclosed by mountains and hills on three sides and opens north-west through Ishikari Bay to the Sea of Japan.",
+    formation:
+      "The Ishikari Plain formed by long alluvial deposition of the Ishikari River and its tributaries in a relatively subsiding lowland. The Ishikari River was originally extremely sinuous across the plain, leaving many oxbow lakes; the centre of the plain was once a large poorly drained peat bog (the \"Ishikari peatland\"). From the Meiji era, to develop Hokkaido as an agricultural base, the government organised large-scale drainage, channel straightening and \"soil dressing\" (covering the peat with mineral soil) to turn the bog into paddy.",
+    observation:
+      "From the air the Ishikari Plain is a large area of regular grid fields ringed by mountains, with the Ishikari River winding through it — along the river you can see many crescent oxbow lakes and abandoned old channels left after straightening. Sapporo's built-up area is at the southern end of the plain against the mountains, its streets a neat checkerboard (planned in the Meiji era). In winter the whole plain is under deep snow.",
+    distinguish:
+      "The Ishikari Plain and the Kanto and Nōbi plains of Honshu are all river-alluvial plains, but the Ishikari Plain is at high latitude, with cold snowy winters, and was originally mostly peat bog — one of the most heavily \"modernly engineered\" plains in Japan. Compared with the Interior Plains of Canada: both are high-latitude, with peat, given to grain or rice farming on a large scale, by a similar mechanism.",
+    concept:
+      "The Ishikari Plain is a sample of \"peatland reclamation\": peat is plant remains accumulated by incomplete decomposition under waterlogged, oxygen-poor conditions — soft, acidic, with poor bearing strength and unsuited to cropping. Turning it into farmland needs drainage to lower the water table plus a cover of mineral soil — but once drained, the peat oxidises and decomposes and the ground subsides, a long-term problem for such areas.",
+    history:
+      "The Ishikari Plain is the traditional land of the Ainu, and the Ishikari River was their main artery for salmon fishing and travel. In 1869 the Meiji government set up the \"Colonisation Commission\", chose Sapporo as the centre of Hokkaido's development, laid the city out on a grid, and brought in American-style large-scale agriculture and a militia-settler system. The northern limit of rice growing on the Ishikari Plain is the result of Japanese rice varieties and techniques being pushed steadily into colder country.",
+  },
+
+  "tokachi-plain": {
+    seeing:
+      "The Tokachi Plain is in south-eastern Hokkaido, a fan-shaped plain built out from the surrounding mountains by the Tokachi River and its tributaries, enclosed by the Hidaka Mountains to the west, Daisetsuzan to the north and the Shiranuka Hills to the east. With plenty of sunshine and dry summers, it is one of the few areas in Japan given over to large-scale, mechanised dryland farming and dairying — potatoes, sugar beet, beans and wide hayfields. The central city is Obihiro.",
+    formation:
+      "The Tokachi Plain is made mainly of a set of overlapping alluvial fans and volcanic-ash terraces. The surrounding volcanoes (Daisetsuzan, Mount Tokachi and others) have erupted repeatedly, and the ash blown onto the plain has formed a thick, well-drained terrace soil; the Tokachi River and its tributaries have cut valleys between the terraces and built fan-shaped alluvial ground. This \"mostly volcanic-ash terrace\" foundation, plus low rainfall, makes the area better for dryland crops than for paddy.",
+    observation:
+      "From the air the Tokachi Plain is a large area of unusually regular, large-parcelled fields in a half-ring of mountains — completely unlike the small fragmented paddies elsewhere in Japan, this is big dryland fields divided into a checkerboard by shelterbelts, with rows of barns and cattle sheds. Rivers run radially out of the Hidaka Mountains to the west, cutting ribbons of riparian woodland.",
+    distinguish:
+      "The Tokachi Plain and the Ishikari Plain are both in Hokkaido, but the Ishikari Plain was originally peat bog and after reclamation is mostly rice; the Tokachi Plain is volcanic-ash terrace, low-rainfall, given to dryland crops and livestock, with large fields and a high degree of mechanisation, looking more like a North American or European farming region. Versus the plains of Honshu: those are dominated by paddy and dense small-holdings; Tokachi is a different type.",
+    concept:
+      "The Tokachi Plain shows how foundation (here, volcanic-ash terrace) and climate (low rainfall) together decide the kind of farming: land that drains well but is short of water is hard to grow rice on, but good for dryland crops like potatoes and sugar beet and for grazing. A common misconception is that Japanese farming is all \"small and intensive paddy\" — Tokachi is a large-scale, low-density, mechanised counterexample.",
+    history:
+      "The Tokachi Plain is the traditional land of the Ainu; the name \"Tokachi\" comes from the Ainu language. In the Meiji era, private settlement groups such as the Banseisha and militia settlers moved into what was then forest and open country. In the 20th century Tokachi built up a farming belt centred on Obihiro and developed processing industries in sugar, dairy and confectionery (\"Tokachi\" is often used as a food brand).",
+  },
+
+  "lake-biwa": {
+    seeing:
+      "Lake Biwa is the largest lake in Japan, about 670 km², in central Honshu in Shiga Prefecture, north-east of Kyoto. It is long and narrow, named for its resemblance to a biwa lute. It is more than just a large body of water: at about 4 million years old it is one of the very few \"ancient lakes\" in the world, with over fifty species that live only in Lake Biwa. It also supplies water to about 14 million people downstream in Kyoto, Osaka and Kobe.",
+    formation:
+      "Lake Biwa is a fault-depression lake: the block its basin sits on keeps dropping along faults, forming an ever-deepening hollow that collects water from the surrounding mountains. Its position has actually been migrating north over the past few million years — the earliest \"proto-Biwa\" was around present-day Mie Prefecture, and with fault activity the basin gradually moved to its current site. Continuous subsidence has kept it from filling with sediment and disappearing like an ordinary lake, and it has instead \"lived\" for millions of years.",
+    observation:
+      "From the air Lake Biwa is a long, narrow sheet of blue among the mountains of central Honshu, the north end narrow and deep, tightly clasped by mountains, the south end wide and shallow, ringed by plain and cities (Ōtsu and others). The Hira Mountains stand like a screen on the west shore; the east shore is the more open Ōmi Plain and farmland. The lake's water leaves through its one outlet, the Seta River (called the Uji, then the Yodo, downstream), flowing south-west to Osaka Bay.",
+    distinguish:
+      "Lake Biwa, like Lake Baikal and Lake Tanganyika, is a fault-depression \"ancient lake\" — in common, the basin keeps subsiding, the lifespan is extremely long, and many endemic species evolve. It is far smaller and shallower than those two. Versus China's Lake Taihu: Taihu is a shallow, young hollow holding water; Lake Biwa is a deep, ancient fault-depression lake, entirely different in biological distinctiveness.",
+    concept:
+      "Lake Biwa is a representative \"ancient lake\": the great majority of lakes live only a few thousand to a few tens of thousands of years before filling with sediment or draining; only a very few (about 20 worldwide) last more than a few million years because their basins keep subsiding, becoming \"islands of life\" that evolve on their own. To identify an ancient lake, look for many locally endemic fish, molluscs and shrimp.",
+    history:
+      "Lake Biwa has long been a land-and-water hub linking Kyoto with the Hokuriku region and eastern Japan, with very busy lake ports and ferry crossings. Canals were dug several times through history to bring lake water toward Kyoto; the \"Lake Biwa Canal\", completed in 1890, still supplies water to Kyoto and generates power. In the 20th century the lake suffered serious eutrophication (\"freshwater red tide\") from domestic and agricultural pollution, after which Shiga Prefecture enacted relatively strict environmental legislation.",
+  },
+
+  "lake-towada": {
+    seeing:
+      "Lake Towada is in the mountains at the far northern end of Honshu, on the border of Aomori and Akita — a caldera lake. It is a double nested caldera, its shores the cliffs left by the collapse, and it is about 327 m at its deepest. The water is clear and cold year-round, and its one natural outlet is the Oirase Stream on the eastern shore — a valley famous for its continuous waterfalls and rapids.",
+    formation:
+      "Towada is an active volcano. Two giant eruptions, about 55,000 and 15,000 years ago, in turn emptied the underground magma chamber and collapsed the ground, forming an outer and an inner caldera; the water that collected is today's Lake Towada, and the jutting \"Nakanoumi\" peninsula in the middle is part of a volcanic cone that later grew inside the caldera. Its most recent eruption, around AD 915, was the largest in Japan in the past two thousand years.",
+    observation:
+      "From the air Lake Towada is a deep-blue sheet of water with a complex outline in dense forest — the edges of the two calderas and the central peninsula make it look as if it has several arms. The shores are almost all steep cliff, with hardly any gentle beach. There is a gap in the east shore where the Oirase Stream comes out, cutting a narrow green valley eastward, waterfall after waterfall.",
+    distinguish:
+      "Lake Towada, like Lake Ashi at Hakone and Lake Tōya in Hokkaido, is a caldera lake — in common, deep, with steep shores, and often a central island. Versus an ordinary tectonic or glacial lake: a caldera lake's outline is closer to circular or double-ringed, and the lakebed is often the former eruptive centre. China's Tianchi on Changbai Mountain is a caldera lake of the same kind, younger and higher.",
+    concept:
+      "Lake Towada is a reminder that a scenic, seemingly quiet lake may itself be an active volcano. The AD 915 Towada eruption was the largest in recorded Japanese history, covering the Tōhoku region thickly in ash and changing the local rivers and land. To tell whether a round deep lake is a caldera lake, look for a ring of cliffs (an outer rim) and eruptive deposits around it.",
+    history:
+      "The Lake Towada area was a hunting ground for the Ainu and later Tōhoku mountain people, long regarded as a sacred realm, with a long-told legend that the lake \"has no fish\" (salmonids came later by stocking). In the early 20th century, promotion of Oirase and Towada by writers and poets, together with new roads and railways, made this a representative sightseeing area of Tōhoku, and it was included in Towada-Hachimantai National Park in 1936.",
+  },
+
+  "shikotsu-toya": {
+    seeing:
+      "Shikotsu-Tōya is an area in south-western Hokkaido centred on volcanoes and caldera lakes, named for its two large lakes — Lake Shikotsu and Lake Tōya. Active volcanoes are dense here: Mount Usu has erupted four times in the 20th century, and in 1943–1945 a brand-new volcano (Shōwa-shinzan) \"grew\" out of a wheat field; Mount Tarumae and Mount Eniwa are active too. The Tōya Caldera–Usu Volcano area is a UNESCO Global Geopark.",
+    formation:
+      "Both Lake Shikotsu and Lake Tōya are caldera lakes: giant eruptions tens of thousands of years ago emptied underground magma chambers and collapsed the ground, and water filled the hollows; the islands in the middle (Nakajima in Lake Tōya, a volcano by Lake Shikotsu) are volcanoes that grew later inside the caldera. Mount Usu is a young active volcano on the southern rim of the Tōya caldera, known for eruptions that \"lift the ground\": the 1910, 1943, 1977 and 2000 eruptions all came with clear ground uplift, and Shōwa-shinzan formed when the 1943 eruption's rising magma raised a small patch of farmland as a block by about 170 m.",
+    observation:
+      "From the air Shikotsu-Tōya is a volcanic landscape of interlocking forest and lakes: Lake Tōya is nearly circular with an island in the middle, and Mount Usu's grey-white eruption scars and the red-brown Shōwa-shinzan sit right against its southern shore; Lake Shikotsu has a more irregular outline, enclosed on three sides by Mount Eniwa, Mount Fuppushi and Mount Tarumae, and Mount Tarumae carries a conspicuous lava dome on its summit like an upturned bowl.",
+    distinguish:
+      "Shikotsu-Tōya, like Aso and Hakone, is a combination of \"caldera plus later volcanoes\". Its distinctive feature is exceptionally frequent activity, and eruptions of the \"ground-uplift\" type — Mount Usu clearly bulges before each eruption, giving warning time; the 2000 eruption was evacuated in advance and no one was hurt, a model case of successful volcanic warning.",
+    concept:
+      "Shikotsu-Tōya (especially Mount Usu) shows the value of volcano monitoring: Mount Usu always has clear crustal deformation and increased earthquakes before an eruption, and scientists can issue a warning days ahead on that basis. Shōwa-shinzan is a vivid teaching example — it records the whole process of magma rising underground and lifting the surface as a block, documented day by day by a local postmaster (Masao Mimatsu).",
+    history:
+      "This area is Ainu land. In the 20th century Lake Tōya developed into a resort on its hot springs, and the 2008 G8 summit was held on its shore. With Mount Usu's repeated eruptions, the area has built a whole system for living with an active volcano: detailed volcanic hazard maps, designated evacuation routes, and roads and buildings damaged in the 2000 eruption preserved in place as \"ruins\" for visits and disaster education.",
+  },
 };

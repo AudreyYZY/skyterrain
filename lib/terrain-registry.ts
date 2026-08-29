@@ -2802,6 +2802,131 @@ const KII_MOUNTAINS: TerrainEntry = {
   source: "纪伊山地：纪伊半岛内部一片陡峭、多雨、森林茂密的山地，是本州岛降水最多的地区之一；熊野古道等宗教朝圣路线作为文化景观列入世界遗产（环境省 / UNESCO）",
 };
 
+const KANTO_PLAIN: TerrainEntry = {
+  id: "kanto-plain",
+  nameZh: "关东平原",
+  nameEn: "Kanto Plain",
+  category: "plain",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "东京湾北岸", lon: 139.80, lat: 35.68, elevation: 10, kind: "city" },
+  bbox: [138.9, 34.9, 140.9, 36.9],
+  axis: [[139.0, 35.2], [140.4, 36.6]],
+  viewFrom: 200,
+  label: { lon: 139.6, lat: 36.0, rotation: 0 },
+  source: "关东平原：日本最大的平原，约17000km²，由利根川、荒川等河流冲积和台地组成；东京都市圈就建在这片平原上（日本国土地理院）",
+};
+
+const NOBI_PLAIN: TerrainEntry = {
+  id: "nobi-plain",
+  nameZh: "浓尾平原",
+  nameEn: "Nōbi Plain",
+  category: "plain",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "木曾三川汇流处", lon: 136.68, lat: 35.10, elevation: 3, kind: "delta" },
+  bbox: [136.3, 34.8, 137.1, 35.6],
+  axis: [[136.7, 34.9], [136.9, 35.5]],
+  viewScale: 1.5,
+  label: { lon: 136.7, lat: 35.2, rotation: 0 },
+  source: "浓尾平原：名古屋一带的冲积平原，木曾川、长良川、揖斐川三条大河在这里并流入海；西南部低于海平面，历史上靠环形堤（“轮中”）防洪（日本国土地理院）",
+};
+
+const OSAKA_PLAIN: TerrainEntry = {
+  id: "osaka-plain",
+  nameZh: "大阪平原",
+  nameEn: "Osaka Plain",
+  category: "plain",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "大阪湾东岸", lon: 135.50, lat: 34.67, elevation: 5, kind: "city" },
+  bbox: [135.2, 34.4, 135.8, 35.0],
+  axis: [[135.3, 34.5], [135.7, 34.9]],
+  viewScale: 1.5,
+  label: { lon: 135.5, lat: 34.7, rotation: 0 },
+  source: "大阪平原：淀川、大和川冲积、加上人工填海形成的平原，被生驹山、六甲山等断块山围住；关西的核心城市带（大阪、京都、神户）分布其上（日本国土地理院）",
+};
+
+const ISHIKARI_PLAIN: TerrainEntry = {
+  id: "ishikari-plain",
+  nameZh: "石狩平原",
+  nameEn: "Ishikari Plain",
+  category: "plain",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "札幌一带", lon: 141.35, lat: 43.06, elevation: 20, kind: "city" },
+  bbox: [141.0, 42.7, 141.9, 43.7],
+  axis: [[141.3, 42.8], [141.5, 43.6]],
+  viewFrom: 200,
+  label: { lon: 141.4, lat: 43.2, rotation: 0 },
+  source: "石狩平原：北海道最大的平原，石狩川冲积形成；曾是大片湿地和泥炭地，明治以后大规模排水、开垦为稻田，札幌建在平原南缘（北海道 / 日本国土地理院）",
+};
+
+const TOKACHI_PLAIN: TerrainEntry = {
+  id: "tokachi-plain",
+  nameZh: "十胜平原",
+  nameEn: "Tokachi Plain",
+  category: "plain",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "带广一带", lon: 143.20, lat: 42.92, elevation: 90, kind: "grassland" },
+  bbox: [142.7, 42.3, 143.7, 43.4],
+  axis: [[143.1, 42.4], [143.3, 43.3]],
+  viewFrom: 200,
+  label: { lon: 143.2, lat: 42.9, rotation: 0 },
+  source: "十胜平原：北海道东南部由十胜川及其支流的冲积扇拼成的平原，被日高山脉和大雪山围在内侧；是日本大规模、机械化旱作农业和乳业的代表地区（北海道）",
+};
+
+const LAKE_BIWA: TerrainEntry = {
+  id: "lake-biwa",
+  nameZh: "琵琶湖",
+  nameEn: "Lake Biwa",
+  category: "lake",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "琵琶湖", lon: 136.08, lat: 35.25, elevation: 85, kind: "lake" },
+  bbox: [135.85, 34.95, 136.35, 35.55],
+  axis: [[136.15, 35.05], [136.10, 35.50]],
+  viewFrom: 90,
+  label: { lon: 136.10, lat: 35.30, rotation: -80 },
+  source: "琵琶湖：日本最大的湖，面积约670km²；约400万年前形成，是全球少数几个“古湖”之一，有大量特有物种；为京都、大阪、神户约1400万人供水（滋贺县 / 日本国土地理院）",
+};
+
+const LAKE_TOWADA: TerrainEntry = {
+  id: "lake-towada",
+  nameZh: "十和田湖",
+  nameEn: "Lake Towada",
+  category: "lake",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "十和田湖", lon: 140.88, lat: 40.46, elevation: 400, kind: "lake" },
+  bbox: [140.75, 40.38, 141.02, 40.55],
+  axis: [[140.80, 40.42], [140.98, 40.50]],
+  viewScale: 1.3,
+  label: { lon: 140.88, lat: 40.46, rotation: 0 },
+  source: "十和田湖：本州北端的破火山口湖，两重破火山口套叠，湖最深约327m；奥入濑溪流从湖的东岸流出，一带是十和田八幡平国立公园（环境省）",
+};
+
+const SHIKOTSU_TOYA: TerrainEntry = {
+  id: "shikotsu-toya",
+  nameZh: "支笏洞爷火山区",
+  nameEn: "Shikotsu-Tōya Volcanic Area",
+  category: "lake",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "洞爷湖与有珠山", lon: 140.84, lat: 42.60, elevation: 84, kind: "lake" },
+  bbox: [140.7, 42.4, 141.5, 42.9],
+  axis: [[140.85, 42.5], [141.4, 42.8]],
+  viewScale: 1.4,
+  label: { lon: 141.1, lat: 42.65, rotation: 0 },
+  pois: [
+    { name: "洞爷湖", lon: 140.84, lat: 42.60, note: "破火山口湖，湖中有中岛" },
+    { name: "有珠山 / 昭和新山", lon: 140.84, lat: 42.53, note: "20世纪多次喷发、并从麦田里长出一座新山的活火山" },
+    { name: "支笏湖", lon: 141.35, lat: 42.75, note: "日本第二深的湖，冬天不结冰" },
+  ],
+  source: "支笏洞爷：北海道西南部一片以两个破火山口湖（支笏湖、洞爷湖）和多座活火山（有珠山、樽前山等）为核心的地区；洞爷湖有珠山是联合国教科文组织世界地质公园（环境省）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -2873,6 +2998,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 亚洲 / 日本 =====
   MOUNT_FUJI, JAPANESE_ALPS, MOUNT_ASO, SAKURAJIMA, MOUNT_UNZEN,
   HAKONE_CALDERA, DAISETSUZAN, KII_MOUNTAINS,
+  KANTO_PLAIN, NOBI_PLAIN, OSAKA_PLAIN, ISHIKARI_PLAIN, TOKACHI_PLAIN,
+  LAKE_BIWA, LAKE_TOWADA, SHIKOTSU_TOYA,
 ];
 
 /**
@@ -2960,6 +3087,9 @@ const WIDE_VIEW: Record<string, number> = {
   "mount-aso": 1.6,
   daisetsuzan: 1.8,
   "kii-mountains": 1.8,
+  "kanto-plain": 1.9,
+  "ishikari-plain": 1.8,
+  "tokachi-plain": 1.8,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
