@@ -12,14 +12,14 @@ with authoritative, easy-to-remember narration so you actually *understand* what
 
 | Mode | The question it answers | Content |
 |---|---|---|
-| **Study** | "What landform is that? How did it form?" | Terrain atlas — 106 landforms + authoritative 6-section lessons |
+| **Study** | "What landform is that? How did it form?" | Terrain atlas — 213 landforms + authoritative 6-section lessons |
 | **Travel** | "I've landed in an unfamiliar city — what do I need to know?" | City overviews — layout / getting around / culture / when to go |
 
 The two content systems run in parallel and don't interfere.
 
 **Current scope:**
-- Study — all of China (84, incl. all of Xinjiang) + Australia (22), bilingual, line-by-line source-verified
-- Travel — Australia (country overview + 7 cities), bilingual
+- Study — Asia (China 84 incl. Xinjiang + Japan 26), Oceania (Australia 22 + New Zealand 30), North America (USA 26 + Canada 25) — 213 total, bilingual
+- Travel — Australia (country overview + 7 cities) + China (11 cities), bilingual
 
 **Roadmap:** China travel mode → the world's major landforms (study mode) → travel mode for more countries by tourism demand.
 
@@ -29,7 +29,7 @@ The two content systems run in parallel and don't interfere.
 
 ### Terrain set — single source of truth
 
-- **106 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
+- **213 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
   `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`.
 - Each entry records an **anchor** (main peak / lake / hub city + lon/lat + elevation), a
@@ -64,7 +64,7 @@ window shot.
 - Pitch / range scale with terrain size; large plateaus / basins / plains / deserts get a
   `viewScale` in the registry's `WIDE_VIEW` so the shot pulls back far enough to read as
   "a whole upland / basin," not one local feature (a lake, a city) near the anchor.
-- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (106/106).
+- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (213/213).
 
 ### Region highlight — a restrained outline
 
@@ -115,7 +115,7 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   (`getTerrainContent(id, lang)`), summarized from widely-accepted geography facts (China
   National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks
   Australia, UNESCO) — not documentary voiceover, not free-form generation.
-- **All 106 have lessons.** 61 of them (China 34 + Australia 22 + Xinjiang oasis settlements 5)
+- **All 213 have bilingual lessons.** 61 of them (China 34 + Australia 22 + Xinjiang oasis settlements 5)
   are line-by-line source-verified: comparative / subjective judgments removed, disputed points
   qualified or given side by side, anything unverifiable dropped, figures normalized to
   authoritative sources.
@@ -171,7 +171,7 @@ npm run dev      # dev (webpack)
 npm run build    # production build
 npm run lint     # ESLint
 
-node --experimental-strip-types scripts/check-terrain-camera.ts   # camera geometry self-check (106/106)
+node --experimental-strip-types scripts/check-terrain-camera.ts   # camera geometry self-check (213/213)
 node --experimental-strip-types scripts/check-routes.ts           # route self-check
 node --experimental-strip-types scripts/check-places.ts           # travel-place self-check
 node scripts/extract-ne-landforms.mjs                             # re-extract terrain boundaries
@@ -200,7 +200,7 @@ components/
   RegionSelector.tsx       — header region switch
 
 lib/
-  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 106 terrains
+  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 213 terrains
   terrain-camera.ts         — computeTerrainCamera() data-driven camera derivation
   terrain-content.{zh,en}.ts— authoritative 6-section lesson content (zh / en)
   terrain-lesson.ts         — resolveLesson(id, lang): one place decides which lesson to use
@@ -212,7 +212,7 @@ lib/
   travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
   travel-lesson.ts          — resolveTravelGuide + travelGuideToSections
   travel-rail.ts            — travel-mode left index
-  regions.ts                — region config (China / Australia)
+  regions.ts                — continent config (asia / oceania / north-america …) + DEFAULT_REGION_ID
   speech.ts                 — TTS system (Edge TTS + browser fallback, follows language)
   i18n.ts / i18n-stories.ts — UI i18n / early lesson translations
 
