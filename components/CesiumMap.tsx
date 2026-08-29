@@ -44,6 +44,12 @@ export interface CesiumMapHandle {
   getCameraState: () => CameraState | null;
   /** 高亮指定地形区域（传 null 清除）— 用于点击跳转后标出地形范围 */
   focusTerrain: (terrainId: string | null) => void;
+  /** 相机飞到城市上空的斜视角（旅游模式）*/
+  focusCity: (
+    lon: number,
+    lat: number,
+    view?: { heightM?: number; pitchDeg?: number; headingDeg?: number },
+  ) => void;
   /** 显示指定地形的 Debug 信息（FOI + 边界 + Camera Target + Range） */
   debugBoundaries: (boundaryId: string) => void;
 }
@@ -69,6 +75,8 @@ interface CesiumMapProps {
   onTerrainMode?: (mode: TerrainMode) => void;
   /** 鼠标 hover 到某地形区域时回调其 id（移出时 null） */
   onTerrainHover?: (terrainId: string | null) => void;
+  /** 应用模式：travel 时不做地形 hover / 区域高亮 */
+  appMode?: "study" | "travel";
 }
 
 /** 飞机舷窗俯角 — 更低角度，模拟真实客机窗口 */
@@ -409,8 +417,9 @@ function makeDebugMarkerImage(Cesium: typeof import("cesium"), color: import("ce
 }
 
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
-  function CesiumMap({ onReady, onTerrainMode, onTerrainHover }, ref) {
+  function CesiumMap({ onReady, onTerrainMode, onTerrainHover, appMode = "study" }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
+    const modeRef = useRef(appMode);
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
@@ -546,6 +555,27 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           hoveredTerrainRef.current, terrainId, pokeRegionAnim
         );
         pokeRegionAnim();
+      },
+
+      focusCity(
+        lon: number,
+        lat: number,
+        view?: { heightM?: number; pitchDeg?: number; headingDeg?: number },
+      ) {
+        const viewer = viewerRef.current;
+        const Cesium = cesiumRef.current;
+        if (!viewer || !Cesium || viewer.isDestroyed()) return;
+        const height = view?.heightM ?? 26_000;
+        const pitchDeg = view?.pitchDeg ?? -45;
+        const heading = Cesium.Math.toRadians(view?.headingDeg ?? 0);
+        // 从城市点沿 pitch 反方向后退，让城市落在画面中部（1° 纬度 ≈ 111km）
+        const groundKm = height / 1000 / Math.tan(Math.abs(Cesium.Math.toRadians(pitchDeg)));
+        const dest = Cesium.Cartesian3.fromDegrees(lon, lat - groundKm / 111, height);
+        viewer.camera.flyTo({
+          destination: dest,
+          orientation: { heading, pitch: Cesium.Math.toRadians(pitchDeg), roll: 0 },
+          duration: 1.6,
+        });
       },
 
       debugBoundaries(boundaryId: string) {
@@ -898,6 +928,25 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         });
       },
     }));
+
+    // 模式切换：travel 时清掉地形区域高亮 + hover
+    useEffect(() => {
+      modeRef.current = appMode;
+      if (appMode === "travel") {
+        hoveredTerrainRef.current = null;
+        focusedTerrainRef.current = null;
+        applyTerrainRegionStyles(
+          cesiumRef.current,
+          viewerRef.current,
+          terrainRegionRef.current,
+          null,
+          null,
+          pokeRegionAnim,
+        );
+        pokeRegionAnim();
+        onTerrainHover?.(null);
+      }
+    }, [appMode, onTerrainHover, pokeRegionAnim]);
 
     useEffect(() => {
       let cancelled = false;
@@ -1352,7 +1401,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
 
           handler.setInputAction((movement: any) => {
-            if (viewer.isDestroyed()) return;
+            if (viewer.isDestroyed() || modeRef.current !== "study") return;
             // drillPick：重叠地块里取面积最小（最具体）的那个
             const hits = viewer.scene.drillPick(movement.endPosition, 8);
             let newHoveredId: string | null = null;

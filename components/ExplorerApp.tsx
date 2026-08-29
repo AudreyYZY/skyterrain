@@ -795,6 +795,7 @@ export default function ExplorerApp() {
           onReady={handleMapReady}
           onTerrainMode={setTerrainMode}
           onTerrainHover={setHoveredTerrainId}
+          appMode={mode}
         />
         {mode === "study" && (
           <CesiumOverlayLabels
