@@ -2024,6 +2024,142 @@ const GREAT_LAKES: TerrainEntry = {
   source: "五大湖（苏必利尔/密歇根/休伦/伊利/安大略）：北美中部的冰川湖群，总面积约24.4万km²，约占全球地表淡水的两成（NOAA / USGS）。跨美加两国，此条目归美国",
 };
 
+const YELLOWSTONE: TerrainEntry = {
+  id: "yellowstone",
+  nameZh: "黄石高原",
+  nameEn: "Yellowstone Plateau",
+  category: "plateau",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "老忠实喷泉", lon: -110.8281, lat: 44.4605, elevation: 2240, kind: "escarpment" },
+  bbox: [-111.2, 44.1, -109.8, 45.1],
+  axis: [[-111.0, 44.3], [-110.0, 45.0]],
+  viewFrom: 200,
+  label: { lon: -110.5, lat: 44.6, rotation: 0 },
+  pois: [
+    { name: "老忠实喷泉", lon: -110.8281, lat: 44.4605, note: "定时喷发的间歇泉" },
+    { name: "黄石大峡谷（下瀑布）", lon: -110.4962, lat: 44.7180, note: "黄石河切出的黄色岩壁峡谷" },
+  ],
+  source: "黄石高原：落基山脉中的火山高原，一座巨型破火山口约72×55km；世界上间歇泉最集中的地区（USGS / NPS）。1872年设立为国家公园",
+};
+
+const YOSEMITE_VALLEY: TerrainEntry = {
+  id: "yosemite-valley",
+  nameZh: "优胜美地谷",
+  nameEn: "Yosemite Valley",
+  category: "valley",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "酋长岩", lon: -119.6379, lat: 37.7339, elevation: 2308, kind: "escarpment" },
+  bbox: [-119.68, 37.70, -119.50, 37.78],
+  axis: [[-119.66, 37.72], [-119.53, 37.75]],
+  viewFrom: 200,
+  label: { lon: -119.58, lat: 37.745, rotation: -6 },
+  pois: [
+    { name: "酋长岩", lon: -119.6379, lat: 37.7339, note: "单块花岗岩崖壁，海拔约2308m，崖面高约900m" },
+    { name: "半圆顶", lon: -119.5332, lat: 37.7460, note: "被冰川削去一半的花岗岩穹丘，海拔约2696m" },
+  ],
+  source: "优胜美地谷：内华达山脉中默塞德河与冰川刻出的U形花岗岩谷，谷底海拔约1200m（NPS）；世界自然遗产",
+};
+
+const MISSISSIPPI_RIVER: TerrainEntry = {
+  id: "mississippi-river",
+  nameZh: "密西西比河",
+  nameEn: "Mississippi River",
+  category: "river",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "密西西比河三角洲（鸟足）", lon: -89.25, lat: 29.15, elevation: 0, kind: "delta" },
+  bbox: [-95.0, 29.0, -89.0, 47.5],
+  axis: [[-90.2, 47.2], [-89.4, 29.3]],
+  viewFrom: 90,
+  label: { lon: -91.0, lat: 35.0, rotation: -80 },
+  pois: [
+    { name: "河源（艾塔斯卡湖）", lon: -95.2075, lat: 47.2419, note: "明尼苏达州，公认的密西西比河源头" },
+    { name: "“鸟足”三角洲", lon: -89.25, lat: 29.15, note: "河流带着泥沙冲进墨西哥湾形成的分汊三角洲" },
+  ],
+  source: "密西西比河：北美最大水系的干流，与密苏里河合计长约6000km；下游是大型泛滥平原和鸟足状三角洲（USGS）",
+};
+
+const CENTRAL_VALLEY_CA: TerrainEntry = {
+  id: "central-valley-ca",
+  nameZh: "中央谷地",
+  nameEn: "Central Valley",
+  category: "plain",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "萨克拉门托-圣华金三角洲", lon: -121.6, lat: 38.05, elevation: 3, kind: "delta" },
+  bbox: [-122.3, 35.0, -118.9, 40.5],
+  axis: [[-121.9, 40.2], [-119.3, 35.2]],
+  viewFrom: 110,
+  label: { lon: -120.5, lat: 37.5, rotation: -70 },
+  source: "中央谷地：加州内华达山脉与海岸山脉之间约650km长的构造凹陷冲积平原；美国重要的农业区（USGS）",
+};
+
+const EVERGLADES: TerrainEntry = {
+  id: "everglades",
+  nameZh: "大沼泽地",
+  nameEn: "Everglades",
+  category: "plain",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "沙河（大沼泽腹地）", lon: -80.85, lat: 25.75, elevation: 1, kind: "grassland" },
+  bbox: [-81.6, 25.1, -80.3, 27.2],
+  axis: [[-80.9, 27.0], [-80.9, 25.2]],
+  viewFrom: 90,
+  label: { lon: -80.9, lat: 25.9, rotation: -84 },
+  source: "大沼泽地：佛罗里达南部一片极缓的宽阔湿地，雨季从奥基乔比湖向南极慢地漫流入海，被称为“草之河”（NPS）；世界自然遗产",
+};
+
+const SONORAN_DESERT: TerrainEntry = {
+  id: "sonoran-desert",
+  nameZh: "索诺兰沙漠",
+  nameEn: "Sonoran Desert",
+  category: "desert",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "巨柱仙人掌（萨瓜罗国家公园）", lon: -110.90, lat: 32.25, elevation: 900, kind: "dune" },
+  bbox: [-114.5, 31.3, -109.5, 34.5],
+  axis: [[-113.5, 31.6], [-110.0, 34.2]],
+  viewFrom: 200,
+  label: { lon: -112.0, lat: 32.8, rotation: 0 },
+  source: "索诺兰沙漠：横跨美国亚利桑那/加州与墨西哥的热荒漠，夏冬两次降水，以巨柱仙人掌（saguaro）为标志（NPS）。此条目取美国部分",
+};
+
+const MONUMENT_VALLEY: TerrainEntry = {
+  id: "monument-valley",
+  nameZh: "纪念碑谷",
+  nameEn: "Monument Valley",
+  category: "inselberg",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "东、西手套峰", lon: -110.1096, lat: 36.9980, elevation: 1900, kind: "peak" },
+  bbox: [-110.3, 36.85, -109.9, 37.15],
+  axis: [[-110.2, 36.9], [-109.95, 37.1]],
+  viewScale: 1.4,
+  label: { lon: -110.1, lat: 37.0, rotation: 0 },
+  source: "纪念碑谷：科罗拉多高原上一群红色砂岩方山和孤峰，相对高差约100–300m，由纳瓦霍部落公园管理（Navajo Nation Parks & Recreation）",
+};
+
+const HAWAIIAN_ISLANDS: TerrainEntry = {
+  id: "hawaiian-islands",
+  nameZh: "夏威夷群岛",
+  nameEn: "Hawaiian Islands",
+  category: "island",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "冒纳罗亚火山", lon: -155.6076, lat: 19.4753, elevation: 4169, kind: "peak" },
+  bbox: [-160.3, 18.9, -154.8, 22.3],
+  axis: [[-159.6, 22.0], [-155.3, 19.3]],
+  viewFrom: 200,
+  label: { lon: -157.0, lat: 20.6, rotation: -30 },
+  pois: [
+    { name: "冒纳罗亚火山", lon: -155.6076, lat: 19.4753, note: "按体积计地球上最大的盾状火山之一，海拔约4169m，活火山" },
+    { name: "基拉韦厄火山", lon: -155.2870, lat: 19.4211, note: "夏威夷岛上最活跃的火山" },
+  ],
+  source: "夏威夷群岛：太平洋中部的火山岛链，由一个地幔热点上方板块移动形成，越往西北岛越老、越低（USGS）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -2080,6 +2216,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   ROCKY_MOUNTAINS, APPALACHIAN_MOUNTAINS, SIERRA_NEVADA_US, CASCADE_RANGE, ALASKA_RANGE,
   COLORADO_PLATEAU, GRAND_CANYON, GREAT_PLAINS_US, GREAT_BASIN, DEATH_VALLEY,
   MOJAVE_DESERT, GREAT_LAKES,
+  YELLOWSTONE, YOSEMITE_VALLEY, MISSISSIPPI_RIVER, CENTRAL_VALLEY_CA, EVERGLADES,
+  SONORAN_DESERT, MONUMENT_VALLEY, HAWAIIAN_ISLANDS,
 ];
 
 /**
@@ -2130,6 +2268,12 @@ const WIDE_VIEW: Record<string, number> = {
   "mojave-desert": 2.0,
   "great-lakes": 2.6,
   "death-valley": 1.6,
+  yellowstone: 1.8,
+  "mississippi-river": 2.6,
+  "central-valley-ca": 2.2,
+  everglades: 2.0,
+  "sonoran-desert": 2.2,
+  "hawaiian-islands": 2.4,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,

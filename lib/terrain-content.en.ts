@@ -1773,4 +1773,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The shores of the Great Lakes are home to the Anishinaabe, Haudenosaunee (Iroquois), Huron and other Native nations, and the lakes were an important water route. The fur trade spread along them from the 17th century; in the 19th century canals (the Erie Canal and others) linked the Great Lakes to the Atlantic and the Mississippi system, driving the industrialisation of the American Midwest. Today the lakes are a major shipping, water-supply and fishing region, and face pressure from pollution and invasive species.",
   },
+
+  yellowstone: {
+    seeing:
+      "The Yellowstone Plateau lies in the northern Rockies across Wyoming, Montana and Idaho, at about 2,400 m. It sits on top of a large active volcano — an underground magma chamber has domed the surface into an upland — and in the past 2.1 million years it has had three enormous eruptions, the most recent about 640,000 years ago, which collapsed a caldera about 72 by 55 km. As a result the surface has the densest concentration of geysers, hot springs and mud pots in the world, and Yellowstone (1872) was one of the first national parks anywhere.",
+    formation:
+      "The energy of the Yellowstone volcano comes from a roughly fixed mantle hot spot. As the North American plate moves south-west, it has left a line of older eruptive centres trailing north-east (the Snake River Plain). The current magma chamber is still there, heating the surface: rain and snowmelt sink underground, are heated, and rise back along fractures; where they pass through travertine or silica plumbing they build geysers. The Grand Canyon of the Yellowstone is where the Yellowstone River has cut into volcanic rock stained yellow by hydrothermal alteration.",
+    observation:
+      "From the air the Yellowstone Plateau is a relatively gentle, forested upland among the peaks of the Rockies, with the shallow saucer outline of the giant caldera in the middle and ring-fracture ridges around the edge. The thermal areas are patches of white, grey and coloured bare ground in the sea of forest, steaming; Yellowstone Lake is a large water body inside the caldera. The Yellowstone River cuts a bright yellow canyon at the northern edge. Large fires have left stands of dead standing trees.",
+    distinguish:
+      "The Yellowstone Plateau and the Colorado Plateau are both \"plateaus\", but the Colorado Plateau is flat-lying sedimentary rock raised as a block — dry, known for canyons; the Yellowstone Plateau was pushed up by volcanism, is covered in volcanic rock and forest, and is known for hot springs and geysers. Versus Hawaii's shield volcanoes: Hawaii is an oceanic hot spot beneath thin plate, erupting mostly fluid lava; Yellowstone is a hot spot beneath thick continental crust, and its big eruptions are explosive.",
+    concept:
+      "Yellowstone is often called a \"supervolcano\", which can suggest a catastrophic eruption is imminent. The scientific statement is that it is an active volcano with a history of very large eruptions, currently in a quiet interval, monitored continuously by the U.S. Geological Survey's Yellowstone Volcano Observatory, with no sign of an eruption in the near future. The geysers and hot springs are the normal expression of residual magmatic heat, not a warning sign.",
+    history:
+      "The Yellowstone area was used for thousands of years for hunting and gathering by the Shoshone, Crow, Blackfeet, Nez Perce and other Native nations. In 1872 the U.S. Congress set it aside as a national park — the starting point of the national-park idea, later copied by many countries. Today Yellowstone is a World Heritage site and an important place for the study of volcanism, geothermal systems and wildlife (grizzly bears, wolves, bison).",
+  },
+
+  "yosemite-valley": {
+    seeing:
+      "Yosemite Valley is a deep valley about 11 km long in the Sierra Nevada, its floor at about 1,200 m, walled by nearly vertical pale granite cliffs — El Capitan, Half Dome, Sentinel Rock. The Merced River runs through it, and side streams drop straight off the rim as high waterfalls including Yosemite Falls. The valley is the heart of Yosemite National Park and one of the birthplaces of rock climbing.",
+    formation:
+      "Yosemite Valley was first cut by the Merced River along a structural weakness into a V-shape, then repeatedly scraped, deepened and widened into today's U-shape by valley glaciers over the Quaternary ice ages. Granite breaks apart along sets of parallel joints, producing single cliff faces like El Capitan and domes like Half Dome (Half Dome was not \"sliced in half\" by a glacier — the missing side's rock was never complete, and fell away as the joints allowed). After the ice retreated the valley floor was a lake, which filled with sediment to become the flat meadows.",
+    observation:
+      "From the air Yosemite Valley is a straight, flat-bottomed cleft in a sea of conifer forest, its walls bare, whitish granite, its floor green meadow and a winding river. El Capitan is a nearly vertical single face on the north side at the valley mouth; Half Dome is a round-topped dome with one side sheared flat at the eastern end. The falls run hardest at spring snowmelt, and some dry up by late summer.",
+    distinguish:
+      "Yosemite Valley and Norway's Sognefjord are both glacier-cut U-shaped valleys; the difference is that Sognefjord's floor is drowned by the sea to make a fjord, while Yosemite Valley is in the interior highlands with a river and meadows on its floor. Versus an ordinary river valley: a river valley is V-shaped in cross-section with slopes descending all the way; a glacial valley is U-shaped with steep straight walls and a flat floor, and often \"hanging valleys\" (side valleys left high on the main wall, from which waterfalls drop).",
+    concept:
+      "Yosemite Valley is a textbook glacial U-shaped valley. A common misconception explains Half Dome's shape as a glacier having \"cut off half\" of it — the geological evidence shows glaciers never overtopped Half Dome, and its shape is controlled mainly by granite jointing. Another misconception is that the granite here is volcanic: it is an intrusive rock that crystallised slowly deep underground, and was only later uplifted, exposed and glaciated.",
+    history:
+      "Yosemite Valley is the home of the Ahwahneechee (a group of the Southern Miwok); the name \"Yosemite\" comes from a neighbouring people's term for them. It became known to outsiders after gold seekers entered the mountains in the mid-19th century. In 1864 the U.S. federal government set Yosemite Valley aside for protection — one of the earliest acts anywhere by a government to reserve a natural landscape for the public; a national park followed in 1890. Today it is a World Heritage site.",
+  },
+
+  "mississippi-river": {
+    seeing:
+      "The Mississippi River is the main stem of the largest river system in North America, rising at Lake Itasca in Minnesota and flowing about 3,700 km south to the Gulf of Mexico; measured from its longest tributary, the Missouri, the system is about 6,000 km long. Together with its tributaries it drains roughly 40% of the surface runoff of the contiguous United States. Its lower reaches run through a broad, flat floodplain, and its mouth is a \"bird's-foot\" delta reaching into the sea.",
+    formation:
+      "The plain the lower Mississippi crosses was itself built, layer by layer, by this river and its predecessors over millions of years, and by the sediment carried in Quaternary glacial meltwater. The channel swings freely across the plain, leaving many oxbow lakes and natural levees. At the mouth the current slows sharply, sediment drops out, and a branching delta builds seaward; because the sediment leaves through a few fixed passes, the shape resembles a bird's foot.",
+    observation:
+      "From the air the middle and lower Mississippi is a wide brown band looping back and forth across flat farmland, flanked by crescent oxbow lakes and abandoned channels, with built levees running along the banks. Toward the mouth the channel splits into several arms, edged by broad wetlands and mudflats sinking into the sea. Offshore of the delta the water is often stained yellow-brown for a large area.",
+    distinguish:
+      "The Mississippi Delta and the Yellow River Delta are both built by a heavily silt-laden river, but the Yellow River Delta is fan-shaped and its channel shifts drastically and often; the Mississippi's \"bird's-foot\" delta is a set of long fingers extended seaward along fixed passes, kept from shifting mainly by engineering. Compared with the Nile Delta, which is a classic triangle, the Mississippi is bird's-foot shaped.",
+    concept:
+      "The Mississippi shows that a large river has two sides to its landform work: erosion and transport dominate the upper and middle river, deposition dominates the lower river and mouth. A common misconception is that a delta only ever grows — in recent decades the Mississippi Delta has been shrinking, because upstream dams trap sediment, the channel is fixed for navigation and flood control, and the ground is subsiding, so the coastal wetlands are being lost.",
+    history:
+      "The Mississippi was long a central axis of life and travel for many Native nations, and its valley holds large earthwork-mound cities such as Cahokia. It served in turn as a border and trade route for France, Spain and the United States; 19th-century steamboats and later barge traffic made it the economic artery of the American interior. Today the U.S. Army Corps of Engineers manages the river with an extensive system of locks, levees and floodways.",
+  },
+
+  "central-valley-ca": {
+    seeing:
+      "The Central Valley is a flat lowland about 650 km long and 80 to 100 km wide between the Sierra Nevada and the Coast Ranges of California. Its northern half is drained by the Sacramento River and its southern half by the San Joaquin River; the two meet in a delta that reaches the sea through San Francisco Bay. The climate is dry summers and wet winters, the soil is deep, and it is one of the most productive agricultural regions in the United States.",
+    formation:
+      "The Central Valley is a structural trough — with the Sierra Nevada rising on one side and the Coast Ranges on the other, the block between sank relatively and has long received debris and river sediment from the mountains on both sides, filling in to several kilometres of sediment. The valley once held large seasonal lakes and marshes (such as Tulare Lake), most of them drained since the late 19th century and turned into farmland.",
+    observation:
+      "From the air the Central Valley is an extremely flat green-to-brown ribbon among mountains, almost entirely covered by regular fields whose colour changes with the crop and the season. The Sacramento and San Joaquin rivers are among the few natural curves; the delta in the middle is a grid of leveed islands and channels. At the edges of the valley the mountains rise abruptly, with a clear boundary.",
+    distinguish:
+      "The Central Valley and China's Chengdu Plain are both structural basin-plains ringed by mountains and filled by river sediment, but the Chengdu Plain is the alluvial fan of the Min River — small, irrigated from the Dujiangyan works for over two thousand years; the Central Valley is much longer and relies on inter-basin water transfers and groundwater. Versus the Great Plains: the Great Plains are a gently tilted piedmont apron given to dryland farming and grazing; the Central Valley is a closed trough given to irrigated agriculture.",
+    concept:
+      "The Central Valley is a reminder that a \"plain\" can be the result of structural sinking plus sediment fill, not just a river spreading out over open ground. A recurring concern is groundwater: long-term over-pumping has caused parts of the valley floor to keep subsiding (locally by several metres), making it one of the best-known cases of land subsidence in the world.",
+    history:
+      "The Central Valley is the traditional home of the Yokuts, Miwok, Wintun and other Native nations. Gold was found at the valley's eastern edge in 1848, and California's population surged. From the late 19th century, large-scale drainage, irrigation canals and later the Central Valley Project and State Water Project turned it into an intensively farmed belt. Today the valley is also one of California's faster-growing and more air-quality-challenged regions.",
+  },
+
+  everglades: {
+    seeing:
+      "The Everglades are a very broad, very gently sloping wetland at the southern end of the Florida peninsula. In the wet season, water spills from Lake Okeechobee in the centre and forms a sheet tens of centimetres deep and over a hundred kilometres wide, creeping south across sawgrass prairie at a few hundred metres a day and finally spreading into Florida Bay — which is why it is called the \"river of grass\". It is the only place where the American alligator and the American crocodile live side by side.",
+    formation:
+      "The Everglades sit on a nearly level limestone platform, the ground falling only a few metres from Lake Okeechobee to the coast. A thin layer of peat and marl over the limestone holds the seasonal shallow water. Its \"river\" has no defined channel — it is one wide, shallow sheet flow. Along the coast it becomes mangrove swamp; sawgrass prairie, tree islands (hammocks) and mangrove alternate with differences of only a few centimetres in ground height.",
+    observation:
+      "From the air the Everglades are a huge expanse of yellow-green grass, cut by countless narrow water tracks and dotted with oval tree islands, both the tracks and the islands stretched out along the direction of flow. In the wet season it is a sheet of water; in the dry season it retreats to scattered pools. Near the southern coast the prairie gives way to a dark-green maze of mangrove and winding tidal estuaries. Dead-straight canals and levee roads stand out sharply.",
+    distinguish:
+      "The Everglades are unlike an ordinary delta or estuarine wetland: they were not built by one large river carrying sediment, but are rainwater spreading over a flat limestone platform, carrying almost no sediment. Compared with an inland marsh such as Zoigê: Zoigê is a cold-climate peat bog on a poorly drained plateau; the Everglades are a warm, wide, shallow sheet-flow wetland.",
+    concept:
+      "The Everglades are a classic example of a \"flowing wetland\" — the water moves slowly as a whole, rather than sitting still. In the 20th century, canals and levees built for flood control and development changed the paths and volume of the flow, markedly shrinking the wetland and its ecosystem; a large \"Everglades restoration\" programme has since aimed to return the natural pattern of water movement.",
+    history:
+      "The Everglades and their surroundings are home to Seminole peoples including the Miccosukee, and after repeated 19th-century conflicts between the U.S. Army and the Seminole, some Seminole people remained deep in the wetland. Everglades National Park was established in 1947 — the first U.S. national park set aside chiefly to protect an ecosystem rather than scenery; it is also a World Heritage site and a Wetland of International Importance.",
+  },
+
+  "sonoran-desert": {
+    seeing:
+      "The Sonoran Desert covers southern Arizona, a small part of south-eastern California, and the Mexican states of Sonora and Baja California — one of the lowest-latitude and hottest deserts in North America. Its signature is the saguaro cactus, which can grow more than ten metres tall and live over a century, and grows only in the Sonoran Desert. Phoenix and Tucson are both within it.",
+    formation:
+      "The Sonoran Desert's dryness comes from the sinking air of the subtropical high-pressure belt, plus the rain shadow of the peninsular ranges to the west. In landform terms it is the southern extension of the Basin and Range — broad basins between low fault-block ranges, with large gravel alluvial fans at the mountain feet. Unlike the Mojave and Great Basin to the north, the Sonoran has two rainy seasons: winter frontal rain off the Pacific, and summer \"monsoon\" thunderstorms from the south-east.",
+    observation:
+      "From the air the Sonoran Desert looks \"greener\" than the Mojave — the basin floors are densely covered with dark shrubs and cactus of various heights, and the alluvial fans at the mountain feet are pale spreading cones. Between isolated brown ranges run dead-straight highways and grids of irrigated fields and cities. Dry washes (arroyos) show as pale branching lines, carrying water only after storms.",
+    distinguish:
+      "The Sonoran, Mojave, Chihuahuan and Great Basin deserts are the four great deserts of North America and meet one another. The test is vegetation and rainfall: the Great Basin is a cold desert dominated by sagebrush; the Mojave is between cold and hot, marked by the Joshua tree; the Sonoran is a hot desert with saguaro and tree-like plants and two rainy seasons; the Chihuahuan is further inland and east, dominated by yucca and desert scrub.",
+    concept:
+      "The Sonoran Desert shows that \"desert\" does not mean \"barren\" — because it has two rainy seasons, it is one of the most plant- and animal-rich deserts in the world. A common misconception is to picture all deserts as sand dunes: most of the Sonoran surface is gravel, shrub and cactus, and true dune fields (such as the Algodones Dunes) are only local.",
+    history:
+      "The Sonoran Desert is home to the O'odham, Cocopah and other Native nations, who developed farming that relies on the summer monsoon rains. It also holds the remains of large irrigation canals built by the Hohokam. In the 18th century Spanish missionaries built a string of mission villages along the rivers. Today the Phoenix–Tucson area of Arizona is one of the faster-growing regions in the United States, its water supply heavily dependent on transfers from the Colorado River and on groundwater.",
+  },
+
+  "monument-valley": {
+    seeing:
+      "Monument Valley lies on the Colorado Plateau at the Utah–Arizona border — a group of red sandstone mesas and buttes standing on a flat red desert, with a relief of about 100 to 300 m. Classic forms such as the East and West Mitten Buttes and the Merrick Butte appear often in films and photographs. It is managed by the Navajo Nation as a tribal park and is part of the Navajo reservation.",
+    formation:
+      "The rock of Monument Valley is Permian to Triassic red sandstone and shale that was once a single continuous set of layers. After the Colorado Plateau was uplifted, water and wind eroded away the softer beds, leaving columns and tables only where a hard \"cap rock\" protects them: a continuous cliff wastes back into a mesa, the mesa shrinks to a pointed butte, the butte thins to a spire, and finally it collapses. Iron oxide in the sandstone gives it its deep red colour.",
+    observation:
+      "From the air Monument Valley is a large, nearly level pale-red desert floor, out of which stand a dozen or so red rock bodies with steep sides and flat tops, widely spaced and not connected to one another. Each usually has a gentle apron of collapsed debris at its base. The floor carries sparse shrub and a few dirt roads, and casts very long shadows — the place is known for its light at sunrise and sunset.",
+    distinguish:
+      "The mesas and buttes of Monument Valley and the sandstone pinnacles of Zhangjiajie are both sandstone shaped by erosion, but Zhangjiajie is a humid climate cutting hundreds of dense, slender, vegetation-covered columns along closely spaced vertical joints; Monument Valley is a dry climate leaving a few isolated, stout, bare red rock bodies from flat layers.",
+    concept:
+      "Monument Valley is a viewing window on the \"mesa–butte–spire\" erosion sequence: the same set of flat layers, cut and worn back to different degrees, shows different forms. A common misconception is to treat it as a \"canyon\" — it is not a river-cut valley but a broad low area between erosion remnants on a former plateau surface.",
+    history:
+      "Monument Valley has long been Navajo land for living and grazing, and Navajo families still live within it. From the mid-20th century it was filmed extensively as a location for American Westerns, becoming one of the visual symbols of \"the American West\" in global popular culture. Entering the core area requires a ticket from the Navajo tribal park, and some areas may be visited only with a Navajo guide.",
+  },
+
+  "hawaiian-islands": {
+    seeing:
+      "The Hawaiian Islands are a chain of volcanic islands in the middle of the Pacific, forming the U.S. state of Hawaii. There are 8 main inhabited islands; the largest and youngest is the Island of Hawaii (the \"Big Island\") at the south-east end, where Mauna Loa and Kīlauea are active volcanoes. Toward the north-west the islands get older, lower and smaller, and finally sink below the surface as reefs and seamounts.",
+    formation:
+      "The Hawaiian Islands sit above a roughly fixed mantle hot spot. The Pacific plate moves north-west at about 7 to 10 cm a year, carrying away, one by one like a conveyor belt, the volcanoes that form over the hot spot — leaving a chain of volcanoes that gets progressively younger from north-west to south-east. Each island above the surface is one or several shield volcanoes, built up gradually by layer on layer of very fluid basalt lava, with gentle slopes and a shield-like outline.",
+    observation:
+      "From the air the Hawaiian Islands are a line of green islands in the deep-blue ocean, aligned north-west to south-east. The Big Island is largest, showing the gentle rounded outlines of several shield volcanoes and the craters at their summits; the windward north-east slopes are lush and cloudy, the leeward south-west slopes dry and yellow. The older islands (such as Kauai) are deeply eroded into ridges and gorges, with tall cliffs along the coast. Pale coral reefs fringe the islands.",
+    distinguish:
+      "The Hawaiian Islands are \"hot spot volcanic islands\", different from the \"island arcs\" of Japan or Indonesia: an island arc sits on a subduction zone, is made of a row of andesitic volcanoes, and has explosive eruptions and earthquakes; Hawaii sits on a hot spot in the middle of a plate, erupts mostly fluid basalt, is relatively gentle, and is strung out in a line with age changing regularly along it.",
+    concept:
+      "The Hawaiian Islands are classic evidence for \"plate motion plus a fixed hot spot\" — if the hot spot is still and the plate moves, it should leave a chain of volcanoes with ages changing along it, and the Hawaiian–Emperor chain does exactly that; the bend in the chain even records a change in the plate's direction of motion about 47 million years ago. A common misconception is that Hawaii is on a plate boundary: it is far from any plate boundary, in the interior of the Pacific plate.",
+    history:
+      "Polynesian voyagers reached and settled the Hawaiian Islands more than a thousand years ago and developed an independent Hawaiian Kingdom. After Europeans arrived in 1778, disease, trade and outside powers deeply changed the society; the islands were annexed by the United States in 1898 and became the 50th state in 1959. Today the Hawaiian language and culture are undergoing a revival, and volcanic activity, tourism and military bases are focal points of the islands' economy and land questions.",
+  },
 };
