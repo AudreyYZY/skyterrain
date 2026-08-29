@@ -232,6 +232,8 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   glomma: "national",
   lofoten: "national",
   jaeren: "national",
+  trolltunga: "poi",
+  saltstraumen: "poi",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

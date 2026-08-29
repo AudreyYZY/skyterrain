@@ -4805,4 +4805,139 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Trondheim (Nidaros) has been an important port and royal seat since the Viking Age, and in the Middle Ages a religious centre of Scandinavia, with Nidaros Cathedral an important medieval building. The fjord has always been a shipping route. The land around it is agriculturally rich thanks to the marine clay terraces; this clay also brings landslide risk, and an 1888 submarine slide in the fjord caused a local tsunami. Today the fjord is an important area for aquaculture and marine research.",
   },
+
+  romsdalen: {
+    seeing:
+      "Romsdalen in western Norway, at the head of the Romsdalsfjord, is a deep U-shaped valley cut by the Rauma River. On its west side stands Trollveggen (the Troll Wall) — the tallest vertical rock face in Europe, a drop of about 1,700 m from the valley floor to the summits of the Troll Peaks above, with the upper part of the wall overhanging its base by nearly 50 m. The valley floor is flat, carrying the Rauma River, European route E136 and the Rauma Line railway side by side, between near-vertical walls and peaks.",
+    formation:
+      "Romsdalen was originally a river valley; Quaternary glaciers flowed down it repeatedly and dug it deep, widening the V-shaped river valley into a broad, deep U-shaped trough. The walls stand so steep and high because the rock here (gneiss) is very hard and has near-vertical joints — the ice carried away whole blocks outside the joint planes, leaving near-vertical and even overhanging faces. The overhang at the top of the Troll Wall is the result of collapse along a set of joints dipping out of the valley.",
+    observation:
+      "From the air Romsdalen is a straight green flat-floored valley between grey high walls, with a row of jagged peaks (the Troll Peaks) along the top of the west wall. The Rauma on the floor is a grey-green braided river, with road and railway running beside it. Along the Troll Wall stretch, the cliff meets the valley floor almost vertically, with large aprons of rockfall debris at its foot.",
+    distinguish:
+      "Romsdalen and Norway's fjords are \"relatives\" — both are U-shaped troughs dug by ice, except the fjords were drowned by the sea and this valley was not. It differs from an ordinary mountain river valley: a river valley is V-shaped with gentler slopes, a glacial valley is U-shaped with steep walls and a flat floor. To tell whether a valley is glacial, look at whether the cross-section is U or V, and whether the walls show glacial polish and hanging valleys.",
+    concept:
+      "The Troll Wall is an extreme example of \"joints decide how steep a cliff can be\": how vertical a cliff can stand depends on the orientation of the fractures inside the rock. If the rock has a set of near-vertical or even out-dipping joints, then once ice or rockfall removes the outer rock mass in blocks, a vertical or even overhanging cliff can be left. To understand why a cliff is so steep, look at its rock type and joint orientation. A common misconception is that the steeper a cliff, the \"newer\" and less stable it is — stability depends on the joints and rock strength, not just the slope angle.",
+    history:
+      "Romsdalen has long been a route between the west coast and the eastern interior, and the Rauma Line opened in 1924. The Troll Wall was first climbed in 1965 by British and Norwegian teams and has since been a classic objective for European big-wall climbing. Since the 1980s, after several accidents, BASE jumping from the Troll Wall has been banned in Norway.",
+  },
+
+  gudbrandsdalen: {
+    seeing:
+      "Gudbrandsdalen in eastern Norway is one of the country's main valleys; the Lågen River (Gudbrandsdalslågen) flows out from the mountains and runs about 230 km southeast down the valley into Lake Mjøsa. The valley is wide and flat, its floor farmland, villages, the E6 highway and the railway, its sides forested slopes tiered with farms and summer dairies. It has been the most important north–south route in eastern Norway.",
+    formation:
+      "Gudbrandsdalen broadly follows a north–south structural low; Quaternary glaciers flowed along this low, widening and deepening it into a broad U-shaped valley. After the ice retreated, meltwater piled thick sand and gravel on the valley floor, and the river then shaped meanders and river terraces in this loose material — villages and fields are mostly built on the terraces, above the flood level. At the valley mouth around Lake Mjøsa the river builds a delta.",
+    observation:
+      "From the air Gudbrandsdalen is a wide, flat-floored valley with a steady direction, the Lågen meandering strongly on the floor and leaving oxbow lakes and bars. The valley sides step down in several clear benches (river terraces), the lowest a floodplain, higher ones cropland and settlement. Coniferous forested mountains run along both sides.",
+    distinguish:
+      "Gudbrandsdalen and Romsdalen are both glacial U-shaped valleys, but Gudbrandsdalen is wider, longer and gentler in gradient — a \"great valley\", not a \"gorge\" — while Romsdalen is short and steep, famous for its great wall. It also differs from the short west-coast valleys that plunge straight into fjords — Gudbrandsdalen is inland, gentle and arable. To recognise this \"wide valley, big river\", look at its length, floor width and the development of terraces.",
+    concept:
+      "Gudbrandsdalen is a good place to understand \"river terraces\": the valley floor was once filled with sand and gravel from glacial meltwater, then the river cut down, leaving the old floor stranded in steps on the sides — flat benches. Each terrace marks a former river level. To tell whether a bench on a valley slope is a river terrace, look at whether it runs horizontally, is made of river sand and gravel, and has matching levels along the valley. A common misconception is to mistake river terraces for man-made agricultural terraces.",
+    history:
+      "Gudbrandsdalen is the \"granary\" and transport lifeline of eastern Norway; the medieval track-way and the 19th-century road and railway all follow the valley. It preserves many traditional timber farmsteads and grain stores (stabbur). Historical events such as the Battle of Kringen (1612) took place at defensible points in the valley. The valley is also a classic setting in Norwegian folk tales and painting.",
+  },
+
+  "lyngen-alps": {
+    seeing:
+      "The Lyngen Alps in northern Norway, northeast of Tromsø on the Lyngen Peninsula, are a north–south, roughly 90 km ridge of sharp peaks and glaciers, flanked by the Lyngenfjord to the east and the Ullsfjord to the west. The high point, Jiehkkevárri, is 1,834 m. The elevation is modest, but the high latitude, closeness to the sea and very heavy snowfall have grown dozens of small glaciers, with horns and arêtes rising straight from the fjord water — the sense of drop \"from sea level to glacier\" is strong.",
+    formation:
+      "The Lyngen Alps' rock belongs to sheets stacked up in the Caledonian orogeny, including harder gabbro and peridotite. After uplift, abundant maritime snowfall grew many valley and cirque glaciers, and the ice dug deep along the rock's joints, cutting the ridge into a series of sharp horns, arêtes and cirques, ice still hanging in the cirques today. The fjords are the result of the same glacial action scouring seaward.",
+    observation:
+      "From the air the Lyngen Alps are a white-and-grey jagged ridge between two deep-blue fjords. Round hollows (cirques) along the ridge hold blue-white ice, with glacier snouts hanging partway down. At the foot is a narrow green shore strip with scattered villages. In winter and spring the whole ridge is a well-known ski-touring venue.",
+    distinguish:
+      "The Lyngen Alps and Jotunheimen are both sharp-peaked, glaciered mountains, but Lyngen is far lower (1,800 m class versus 2,400 m class), with its glaciers at lower elevations — because the latitude is high and the snowline low. It also differs from the mountain islands of Lofoten: Lofoten is a drowned chain of ancient gneiss, Lyngen a continuous ridge of Caledonian sheets carved by ice. To recognise this \"low but heavily glaciered\" kind of mountain, look at its latitude and distance from the sea.",
+    concept:
+      "The Lyngen Alps show that \"the snowline falls with latitude\": at low latitudes glaciers only appear at 4,000–5,000 m; near the Arctic Circle 800–900 m is enough to sustain a glacier. So a mountain only 1,800 m high can be hung with ice here. To understand why a mountain area is \"low but glaciered\", look at the snowline elevation there — set by temperature (latitude, altitude) and snowfall together. A common misconception is that a mountain with large glaciers must be very high.",
+    history:
+      "The Sámi and Norwegian settlements along the Lyngen Peninsula lived by fishing and small-scale farming and herding. At the end of the Second World War the retreating German forces carried out a \"scorched earth\" policy in Finnmark and northern Troms, and the Lyngen line was a fortified zone; remains of fortifications are still in the mountains, kept as war heritage. From the late 20th century the Lyngen Alps became an internationally known ski-touring destination.",
+  },
+
+  mjosa: {
+    seeing:
+      "Lake Mjøsa in eastern Norway is the country's largest lake — about 365 km² in area, up to about 450 m deep, about 117 km long — lying like a wide north–south ribbon in the lower part of Gudbrandsdalen. Hamar is on its east shore, Gjøvik on the west, Lillehammer at the south end; this is a densely settled, agriculturally rich \"lake district\" of Norway. The deepest point of the lake bed lies below sea level — a cryptodepression.",
+    formation:
+      "Lake Mjøsa occupies a stretch of the north–south structural low of Gudbrandsdalen that was dug deep by ice. In the ice age the ice flowed along this low and cut the valley floor below sea level; after the ice retreated, both ends of the valley were blocked by moraine and river sediment, and the deep basin in between filled with water. So Mjøsa is essentially a \"glacial–fault valley lake\", long and narrow and deep, quite unlike the shallow round lakes of the lowlands.",
+    observation:
+      "From the air Lake Mjøsa is a smooth deep-blue strip, its shores gently rolling farmland, forest and towns, with almost no cliffs. It contains Helgøya, Norway's largest freshwater island. The Lågen enters at the north end carrying sediment and building a delta, and the nutrients the river carried once made the lake eutrophic.",
+    distinguish:
+      "Lake Mjøsa is unlike the shallow lake groups of the Finnish and Swedish lowlands scoured by ice — those are shallow, numerous and irregular; Mjøsa is a single, long-narrow, very deep structural-valley lake, more like a \"freshwater fjord\". To tell whether a lake is this \"deep long valley lake\" type, look at its length-to-width ratio, its depth, and whether it follows a clear valley or fault line.",
+    concept:
+      "Lake Mjøsa is a sample of a \"cryptodepression\": the lake surface is above sea level (about 123 m), but the lake bed is below it — only ice can dig an inland valley floor below sea level. To tell whether a lake has a cryptodepression, check whether its surface elevation minus its maximum depth is negative. A common misconception is that an inland lake bed cannot be below sea level.",
+    history:
+      "Lake Mjøsa has long been a shipping route; the 19th-century paddle steamer Skibladner (launched 1856) still sails in summer, one of the oldest paddle steamers still in operation in the world. In the mid-20th century industrial, agricultural and domestic wastewater made the lake severely eutrophic; the \"Mjøsa Campaign\" of the 1970s–80s, by treating sewage and limiting agricultural runoff, brought the water clearly back within a decade or so — an internationally cited success in lake restoration.",
+  },
+
+  femund: {
+    seeing:
+      "Lake Femunden in eastern Norway, on the highland near the Swedish border, sits at 662 m, covers about 204 km², and is Norway's third-largest lake and its largest that is essentially unregulated for water level — most large Norwegian lakes have dams for hydropower, but Femunden's level is still close to natural. Its east shore is Femundsmarka National Park, a wilderness of erratic boulders, dwarf pine and mire.",
+    formation:
+      "Lake Femunden sits on a glacially abraded old bedrock upland, its basin a string of hollows scoured by ice along weak zones in the bedrock and joined up. After the ice retreated the hollows filled with water, and the surrounding moraine and meltwater deposits, regulating inflow and outflow, gave today's shallow, clear, ragged-shored, island-strewn lake. Its water drains eastward, via the Trysil river system into the Klarälven in Sweden and finally to the sea — one of the few places where Norway's drainage runs east across the divide.",
+    observation:
+      "From the air Lake Femunden is a dark lake with an extremely ragged shoreline, scattered with many small islands and peninsulas, surrounded by low coniferous forest and mire upland with almost no mountains. Femundsmarka on the east shore is a \"stone wilderness\" — glacial boulders everywhere, dwarf pine and lichen growing in the gaps.",
+    distinguish:
+      "Lake Femunden and Lake Mjøsa are both large Norwegian lakes, but Femunden is far shallower (150 m versus 450 m), sits on the highland, and has a broken, island-strewn shore — it is a \"glacially scoured bedrock-hollow lake\", while Mjøsa is a \"deep long structural-valley lake\". Femunden is also almost unregulated, keeping a natural rhythm of rise and fall. To tell whether a lake is a \"scoured bedrock lake\", look at whether it is shallow, island-rich and very irregular in shore, sitting on polished old bedrock.",
+    concept:
+      "Lake Femunden is a sample for understanding \"the two sides of a divide\": the great majority of Norway's rivers flow west and south into the Atlantic, but Lake Femunden lies east of the main Scandinavian divide, and its water flows east into Sweden and reaches the sea from the Swedish coast. Which sea a lake's water ends up in depends on which side of the divide it falls on, not which country it is in. A common misconception is that a country's rivers all drain to that country's coast.",
+    history:
+      "The Femunden area has long been a zone of reindeer herding, hunting and fishing for Sámi and Norwegians, and in the 17th–18th centuries a source of timber and charcoal for the Røros copper mines, which cleared much of the surrounding forest. The wooden-hulled steamer Fæmund II (launched 1905) still carries passengers in summer. Femundsmarka National Park was established in 1971.",
+  },
+
+  hornindalsvatnet: {
+    seeing:
+      "Hornindalsvatnet in western Norway is the deepest lake in Europe — about 514 m deep. Its surface is only about 53 m above sea level, so the lake bed is about 460 m below sea level. The lake is about 22 km long and narrow, set between steep slopes, shaped like a straightened-out fjord. Because no river carrying glacial sediment enters it, the water is exceptionally clear, ink-blue at depth.",
+    formation:
+      "Hornindalsvatnet's basin is the result of a glacier strongly overdeepening a valley. In the ice age an ice stream held between hard rock in this narrow valley eroded especially strongly downward, cutting the valley floor hundreds of metres below sea level; the west end of the valley was later closed by moraine and sediment, and the deep basin filled with water. It has the same origin as Norway's fjords, only without a connection to the sea — think of it as a \"freshwater fjord\".",
+    observation:
+      "From the air Hornindalsvatnet is a deep-blue, near-black narrow strip of water, its banks steep deep-green slopes with only a thin strip of habitable flat land at their foot. The water is still, with no obvious delta or turbid inflow. A short river at the west end leads its water toward the fjord.",
+    distinguish:
+      "Hornindalsvatnet and Lake Mjøsa are both very deep valley lakes, but Hornindalsvatnet is narrower and its bed lower relative to sea level — an extreme product of glacial \"confined-flow overdeepening\", in the same class as the Nærøyfjord, only without a sea connection. To recognise this \"freshwater fjord\", look at its length-to-width ratio, its depth, whether its bed is far below sea level, and whether its shores are fjord-steep.",
+    concept:
+      "Hornindalsvatnet is a plain sample of \"how low a glacier can dig a valley floor\": a river is limited by sea level and can barely cut a valley floor below it, but a glacier, as long as it is thick and long-lasting, can dig a hollow hundreds of metres below sea level. To tell whether an inland lake's basin was dug by ice, check whether its maximum depth exceeds its surface elevation (i.e. the bed is below sea level). A common misconception is that the deepest lakes must be in high mountains.",
+    history:
+      "The area around Hornindalsvatnet is traditional farming and forestry country, with the lakeside villages linked by small boats. The lake is known for its clarity and for large brown trout, and is an important local fishing water. Because it is very deep and does not freeze, it has historically been a reliable waterway.",
+  },
+
+  trolltunga: {
+    seeing:
+      "Trolltunga in western Norway, near Odda on the western edge of the Hardangervidda plateau, is a thin, almost horizontal slab of rock jutting out into the air about 700 m above Lake Ringedalsvatnet. The slab is roughly a dozen metres long, with several hundred metres of vertical space straight down off its end. It is one of Norway's most popular hikes of recent years, about a dozen kilometres each way from the valley with about 800 m of climb.",
+    formation:
+      "Trolltunga is a product of a set of horizontal joints in granite-gneiss. In the ice age the ice sheet covering the plateau flowed over its western edge and, along these horizontal fractures, plucked away the rock below in whole blocks (glacial plucking), leaving a horizontal \"step\" in the cliff; after the ice retreated, freeze–thaw kept prying and stripping the rock loose sheet by sheet along the fractures, and one top slab, undermined below but not yet broken off, was left as this jutting \"tongue\".",
+    observation:
+      "From the air the cliff Trolltunga sits on is a scarp along the western edge of the Hardangervidda facing Lake Ringedalsvatnet, with the flat plateau surface on top and a deep valley and the dammed long lake below. Trolltunga itself is a small horizontal ledge along the cliff edge, not easy to pick out from above — it shows best from the side or below. Parallel horizontal fracture lines can be seen on the surrounding cliff face.",
+    distinguish:
+      "Trolltunga and Preikestolen are both jutting platforms formed by horizontal joints in granite (gneiss), both in western Norway. The difference is that Preikestolen is a single square platform (large in area, thick), while Trolltunga is a thin, long ledge (more \"cantilevered\", more fragile). They differ from ledges in limestone country, which are often linked to dissolution. To recognise this \"horizontal ledge\", look for a set of horizontal fractures on the cliff face and whether the rock is blocky crystalline rock.",
+    concept:
+      "Trolltunga shows the chain of \"joints plus glacial plucking plus freeze–thaw\" clearly: first there is a horizontal fracture plane, the ice plucks away large blocks along it and leaves a step, and freeze–thaw then slowly widens the separation along the fracture. This kind of cantilevered landform is essentially rock \"partway through collapsing\" — only on a timescale of hundreds to a thousand years. To judge how long a ledge can \"hold\", look at how open the fractures are and how strong the rock is. A common misconception is that such a form is stable and permanent.",
+    history:
+      "Lake Ringedalsvatnet below Trolltunga was dammed and raised in the early 1900s to power an aluminium plant at Odda, and the building of the dam and its water tunnels gave the area its first paths. Trolltunga itself went viral on social media around 2010, and visitor numbers rose dozens of times over in a few years, forcing the managers to build new trail, set emergency points and impose seasonal limits.",
+  },
+
+  saltstraumen: {
+    seeing:
+      "Saltstraumen in northern Norway, near Bodø, is a strait connecting the Saltfjord with the inner Skjerstadfjord, about 3 km long and only about 150 m wide at its narrowest. On each rising or falling tide, as much as about 400 million cubic metres of seawater must squeeze through this narrow gap in six hours, at speeds up to about 20 knots (about 10 m/s), with whirlpools up to about 10 m across churning on the surface — the strongest tidal current known in the world.",
+    formation:
+      "The Skjerstadfjord is a deep, long fjord, but its outlet is nearly closed by a shallow submarine sill, leaving only the Saltstraumen strait as a narrow connection to the open sea. The tide rises and falls twice a day, and the whole water level of the Skjerstadfjord has to follow the open sea, so the huge volume of water going in and out is all forced through this one narrow slot, producing very high speeds and strong turbulence and whirlpools. The strength of the current follows the phase of the moon, and is fiercest around new and full moon (spring tides).",
+    observation:
+      "From the air Saltstraumen is a channel that clearly narrows between two open bodies of water, with an arch bridge (the Saltstraumen Bridge) across the narrowest point. On a rising or falling tide the water in the strait looks quite different from the calm fjords on either side — covered with white surge lines, tumbling water masses and spinning whirlpools, its colour changed by the churning. Only in the brief slack-water period does the surface calm down.",
+    distinguish:
+      "Saltstraumen is a tidal current, not a river, and not a permanently one-way flow — it reverses every six hours. It looks like narrow features such as the Nærøyfjord, but the origin is completely different: a fjord is narrow because ice dug it, while Saltstraumen is fierce because a large body of water can only exchange through one small opening. To recognise a strong tidal current, look at whether there is a large, semi-enclosed bay behind it with an especially narrow, shallow mouth.",
+    concept:
+      "Saltstraumen is a classic sample for understanding \"tidal prism plus flow constriction\": the volume of water a bay must take in and let out each tidal cycle (the tidal prism) is set by the bay's area and the tidal range; if that water can only enter and leave through a very narrow opening, the flow speed in that opening becomes very high. To judge whether a strait will form a strong tidal current, look at how large the inner bay it connects is, how big the tidal range is, and how narrow the mouth is. A common misconception is to take a strong tidal current for an ocean current or a river.",
+    history:
+      "The Saltstraumen area has been inhabited since the Stone Age, its people living on the abundant fish it brings (the current sweeps nutrients and small fish to the narrow gap, where larger fish gather); rock carvings nearby are thousands of years old. The Saltstraumen Bridge was completed in 1978; before that the two sides were linked by ferry. Today small boats are allowed through around slack water, and there are dedicated current-watching boats.",
+  },
+
+  varangerhalvoya: {
+    seeing:
+      "The Varanger Peninsula in Norway's far northeast juts into the Barents Sea, with the Varangerfjord to its south. It is the only place on mainland Norway with true Arctic tundra and permafrost — the interior of the peninsula is a low, gently rolling upland, large expanses of unvegetated block field, its climate and landscape closer to an Arctic island than to the rest of Norway. Most of the peninsula is Varangerhalvøya National Park.",
+    formation:
+      "The Varanger Peninsula's surface is to a large extent pre-last-ice-age — during the ice age the ice sheet lay over the peninsula essentially without flowing and did almost nothing to the terrain, so it keeps its old, slowly weathered upland surface and block field (felsenmeer, a \"sea of stones\"). The bedrock is weakly metamorphosed Neoproterozoic to Early Cambrian sedimentary rock with clear bedding. The peninsula's edges have raised coastal terraces in steps, recording post-glacial land rebound.",
+    observation:
+      "From the air the interior of the Varanger Peninsula is a vast brown-grey, almost unvegetated low upland, its surface endless broken rock, with a little green only along river valleys and lake shores. The coastline is ragged, with sand and gravel beaches, sea cliffs and stepped coastal terraces. The north and east coasts face the open Barents Sea and are windy year-round.",
+    distinguish:
+      "The biggest difference between the Varanger Peninsula and the rest of Norway is that it was \"barely reworked by ice\" — elsewhere there are U-shaped valleys, fjords and cirques everywhere, here there is a gentle old land surface and a sea of stones. It is more like a piece of Svalbard or the Canadian Arctic islands. To tell whether a landscape is \"pre-glacial\", look at whether it lacks glacial-erosion landforms, whether the surface is deeply weathered broken rock, and whether the terrain is unusually gentle and old.",
+    concept:
+      "The Varanger Peninsula holds a special place in geological history: its rock strata contain Neoproterozoic (about 600–700 million year old) tillites — this is the area the \"Varangian glaciation\" is named after, and one of the important lines of evidence for the \"Snowball Earth\" hypothesis, showing that even low latitudes were once ice-covered. To tell whether an old rock layer is glacial in origin, look for chaotic, unsorted gravel (diamictite), for surfaces scratched by ice, and for dropstones fallen into the layering. A common misconception is that Earth's climate has always been much as it is now.",
+    history:
+      "The coast of the Varanger Peninsula has dwelling sites going back over ten thousand years — places such as Mortensnes on the outer peninsula preserve house sites, graves and Sámi sacred places from the Stone Age to the Iron Age. Historically this was a meeting point of Sámi, Norwegians and traders arriving by sea, living by fishing, seabirds and reindeer. Varangerhalvøya National Park was established in 2006.",
+  },
 };

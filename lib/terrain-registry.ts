@@ -5192,6 +5192,140 @@ const TRONDHEIMSFJORD: TerrainEntry = {
   source: "特隆赫姆峡湾：挪威第三长的峡湾，长约130km、最深约617m；比西部的峡湾宽阔得多，主段全年不冻；生物生产力居挪威峡湾之首，记录鱼类逾90种、深水有冷水珊瑚（Lophelia），沿岸有多条挪威顶级鲑鱼河；自维京时代就是重要水道（Kartverket / 海洋研究所）",
 };
 
+const ROMSDALEN: TerrainEntry = {
+  id: "romsdalen",
+  nameZh: "罗姆斯达尔谷",
+  nameEn: "Romsdalen",
+  category: "valley",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "巨魔墙（Trollveggen）与劳马河谷底", lon: 7.760, lat: 62.503, elevation: 120, kind: "escarpment" },
+  bbox: [7.55, 62.30, 8.10, 62.62],
+  axis: [[7.68, 62.58], [7.95, 62.32]],
+  viewFrom: 270,
+  viewScale: 1.4,
+  label: { lon: 7.80, lat: 62.48, rotation: -70 },
+  source: "罗姆斯达尔谷：劳马河切过的一条深 U 形谷，西侧的巨魔墙（Trollveggen）是欧洲最高的垂直岩壁，从谷底到巨魔诸峰顶落差约1700m、崖面上部外倾近50m；谷底并行着劳马河、E136 公路和劳马铁路（NGU）",
+};
+
+const GUDBRANDSDALEN: TerrainEntry = {
+  id: "gudbrandsdalen",
+  nameZh: "古德布兰河谷",
+  nameEn: "Gudbrandsdalen",
+  category: "valley",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "古德布兰河谷·劳根河中段（南弗龙 / 温斯特拉一带）", lon: 9.75, lat: 61.55, elevation: 250, kind: "meander" },
+  bbox: [9.10, 61.10, 10.30, 62.20],
+  axis: [[9.30, 61.20], [10.00, 62.10]],
+  viewScale: 1.9,
+  label: { lon: 9.60, lat: 61.65, rotation: -55 },
+  source: "古德布兰河谷：挪威东部主干河谷之一，劳根河（Gudbrandsdalslågen）自约特山地流向姆约萨湖，谷长约230km；冰川把一条构造低谷拓宽成宽 U 形谷，谷底有厚层冰川与河流沉积、多级河流阶地，是历史上东挪威南北往来的主通道（Kartverket / NGU）",
+};
+
+const LYNGEN_ALPS: TerrainEntry = {
+  id: "lyngen-alps",
+  nameZh: "林根阿尔卑斯山",
+  nameEn: "Lyngen Alps / Lyngsalpan",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "耶克瓦里峰（Jiehkkevárri，1834m）", lon: 19.980, lat: 69.475, elevation: 1834, kind: "peak" },
+  bbox: [19.55, 69.30, 20.40, 69.85],
+  axis: [[19.70, 69.35], [20.20, 69.80]],
+  viewScale: 1.5,
+  label: { lon: 20.00, lat: 69.60, rotation: -18 },
+  source: "林根阿尔卑斯（林根半岛，特罗姆瑟东北）：夹在乌尔峡湾和林根峡湾之间的一条尖峰-冰川山脊，最高点耶克瓦里峰1834m；角峰、刀脊和几十条小冰川直逼峡湾水面；林根阿尔卑斯景观保护区（Miljødirektoratet）",
+};
+
+const MJOSA: TerrainEntry = {
+  id: "mjosa",
+  nameZh: "姆约萨湖",
+  nameEn: "Mjøsa",
+  category: "lake",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "姆约萨湖（哈马尔 / 耶维克一带）", lon: 10.95, lat: 60.75, elevation: 123, kind: "lake" },
+  bbox: [10.60, 60.35, 11.30, 61.15],
+  axis: [[10.75, 60.40], [11.20, 61.10]],
+  viewScale: 1.7,
+  label: { lon: 10.95, lat: 60.75, rotation: -60 },
+  source: "姆约萨湖：挪威最大的湖，面积约365 km²、最深约450m、长约117km；沿古德布兰河谷的构造低带发育、被冰川深挖，湖底低于海平面（冰蚀-断裂谷湖）；1970—80年代的“姆约萨行动”是挪威著名的湖泊治污案例（NVE / 环境署）",
+};
+
+const FEMUNDEN: TerrainEntry = {
+  id: "femund",
+  nameZh: "费蒙湖",
+  nameEn: "Femunden",
+  category: "lake",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "费蒙湖（费蒙斯马卡一侧）", lon: 11.870, lat: 62.150, elevation: 662, kind: "lake" },
+  bbox: [11.60, 61.85, 12.15, 62.45],
+  axis: [[11.75, 61.90], [12.00, 62.40]],
+  viewScale: 1.6,
+  label: { lon: 11.87, lat: 62.15, rotation: -70 },
+  source: "费蒙湖：挪威第三大湖、第二大天然（几乎未受水位调节）湖，面积约204 km²、最深约150m，海拔662m；东岸是费蒙斯马卡国家公园，湖水部分向东经特吕西尔河系流入瑞典（Kartverket / Miljødirektoratet）",
+};
+
+const HORNINDALSVATNET: TerrainEntry = {
+  id: "hornindalsvatnet",
+  nameZh: "霍宁达尔湖",
+  nameEn: "Hornindalsvatnet",
+  category: "lake",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "霍宁达尔湖", lon: 6.350, lat: 61.920, elevation: 53, kind: "lake" },
+  bbox: [6.00, 61.86, 6.75, 61.99],
+  axis: [[6.05, 61.90], [6.70, 61.94]],
+  viewScale: 1.4,
+  label: { lon: 6.35, lat: 61.92, rotation: -4 },
+  source: "霍宁达尔湖：欧洲最深的湖，深约514m（湖面海拔约53m，湖底远低于海平面）；由冰川沿一条谷强烈过度加深而成；不受冰川河补给，水质格外清澈（NVE）",
+};
+
+const TROLLTUNGA: TerrainEntry = {
+  id: "trolltunga",
+  nameZh: "巨魔舌",
+  nameEn: "Trolltunga",
+  category: "gorge",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "巨魔舌（林厄达尔湖上方约700m 的水平悬挑岩台）", lon: 6.740, lat: 60.124, elevation: 1100, kind: "escarpment" },
+  bbox: [6.66, 60.08, 6.84, 60.17],
+  label: { lon: 6.74, lat: 60.124, rotation: 0 },
+  source: "巨魔舌：奥达附近、哈当厄高原西缘一块水平伸出的薄岩台，悬在林厄达尔湖上方约700m；岩石沿一组水平节理被冰川拔蚀和冻融作用一层层剥离，留下这条悬挑的“舌头”（NGU）",
+};
+
+const SALTSTRAUMEN: TerrainEntry = {
+  id: "saltstraumen",
+  nameZh: "萨尔特急流",
+  nameEn: "Saltstraumen",
+  category: "gorge",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "萨尔特海峡（萨尔特桥一带）", lon: 14.625, lat: 67.232, elevation: 0, kind: "escarpment" },
+  bbox: [14.55, 67.19, 14.72, 67.27],
+  axis: [[14.58, 67.21], [14.70, 67.25]],
+  viewScale: 1.2,
+  label: { lon: 14.63, lat: 67.235, rotation: -30 },
+  source: "萨尔特急流：博德附近连接萨尔特峡湾与谢尔斯塔峡湾的一条约3km 长、最窄约150m 的海峡；每6小时约4亿 m³ 海水涌过，流速可达约20节（约10m/s），形成直径达约10m 的漩涡，是世界上最强的潮流（Kartverket）",
+};
+
+const VARANGERHALVOYA: TerrainEntry = {
+  id: "varangerhalvoya",
+  nameZh: "瓦朗厄尔半岛",
+  nameEn: "Varangerhalvøya / Várnjárga",
+  category: "coast",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "瓦朗厄尔半岛内陆苔原高地", lon: 29.60, lat: 70.35, elevation: 300, kind: "escarpment" },
+  bbox: [28.4, 69.95, 31.0, 70.95],
+  axis: [[28.7, 70.10], [30.6, 70.80]],
+  viewScale: 2.0,
+  label: { lon: 29.8, lat: 70.5, rotation: -22 },
+  source: "瓦朗厄尔半岛（北萨米语 Várnjárga）：挪威最东北的半岛，是本土唯一有真正北极苔原和多年冻土的地方；地表大体是末次冰期之前就形成的低缓高地和无植被的碎石原（felsenmeer），冰期冰盖在此几乎静止、少有改造；弱变质的新元古代—早寒武纪岩层里保存有著名的“瓦兰吉尔冰期”冰碛岩；瓦朗厄尔半岛国家公园（NGU / Miljødirektoratet）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -5307,6 +5441,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   SOGNEFJORD, GLOMMA, LOFOTEN, JAEREN,
   DOVREFJELL, RONDANE, TROLLHEIMEN, JOSTEDALSBREEN, FOLGEFONNA, SVARTISEN,
   GEIRANGERFJORD, NAEROYFJORD, HARDANGERFJORD, LYSEFJORD, TRONDHEIMSFJORD,
+  ROMSDALEN, GUDBRANDSDALEN, LYNGEN_ALPS, MJOSA, FEMUNDEN, HORNINDALSVATNET,
+  TROLLTUNGA, SALTSTRAUMEN, VARANGERHALVOYA,
 ];
 
 /**
