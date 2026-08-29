@@ -4340,4 +4340,109 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The \"erratic boulders\" of the Swiss Plateau — huge isolated rocks lying far from the Alps but made of Alpine rock — helped scientists such as Agassiz in the 19th century propose and prove the \"ice age\" theory: only huge glaciers could have carried such large rocks so far. Today the plateau is the economic, demographic and transport core of Switzerland, and also where the conflict between farmland and urban growth is most concentrated.",
   },
+
+  "lake-geneva": {
+    seeing:
+      "Lake Geneva (French: Lac Léman), in south-western Switzerland, is one of the largest lakes in Western Europe, shaped like a crescent moon, about 580 km² in area and up to about 310 m deep. Its southern shore is in France, its northern shore in Switzerland, with Lausanne, Montreux and Geneva strung along the north. The Rhône enters at the east end (carrying grey glacial silt) and leaves at Geneva already clear and green — the lake acts as a huge settling basin.",
+    formation:
+      "Lake Geneva was gouged by a glacier. In the last ice age the Rhône Glacier reached from Valais as far as Lyon in France, flowing back and forth between the mountains and the Swiss Plateau and carving here a deep, long basin whose floor is below sea level. After the ice retreated the basin filled with water. The crescent shape roughly reflects the glacier flowing around a hard block of Jurassic limestone along softer rock. At the east end the Rhône is building a delta into the lake.",
+    observation:
+      "From the air Lake Geneva is a long narrow blue sheet of water between the Alps and the Jura; the north shore has vineyards on gentle slopes (the Lavaux terraces are a World Heritage Site), cities and railways, and the south shore rises abruptly into the Savoy Alps on the French side. At the east end you can see the grey turbid water of the Rhône entering the clear lake water, with a sharp line between the two colours.",
+    distinguish:
+      "Lake Geneva, Lake Zurich and Lake Lucerne are all Swiss glacial lakes, but Lake Geneva is far larger, sits further out (between the foot of the Alps and the Jura), and straddles Switzerland and France. Like Lake Garda and Lake Maggiore in northern Italy, it is a deep large lake gouged by a glacier at the mountain front.",
+    concept:
+      "Lake Geneva is a case study in a lake settling and clearing a river: when a turbid river enters a lake the flow suddenly slows and the sediment it carries settles to the lake bed, so years and decades later the water leaving the lake outlet is clear. A river regulated by a large lake tends to have clear, steady water downstream. To recognise this effect, look at the colour and sediment load of the water entering and leaving the lake. A common misconception is that a river's clarity is set only by its upstream reach.",
+    history:
+      "The shores of Lake Geneva have had towns and vineyards since Roman times. In the 18th century Rousseau, Voltaire, Byron and Shelley lived and wrote by the lake, making it a landmark on the literary map of Europe. From the 19th century the north shore developed as a spa and tourist region. Today the lake area is the economic centre of French-speaking Switzerland and a hub of international organisations.",
+  },
+
+  "lake-constance": {
+    seeing:
+      "Lake Constance (German: Bodensee), in the north-eastern corner of Switzerland, is one of the large lakes of Central Europe, about 536 km² in area. Its shores belong to Switzerland, Germany and Austria, and the main basin (the Obersee) has no formally agreed border on the water — the three countries use the lake according to their own practices. The Rhine enters at the east end and leaves at the west, and along this stretch it barely mixes with the lake water, keeping its upstream green colour.",
+    formation:
+      "Lake Constance was gouged by the Rhine Glacier. In the ice ages the Rhine Glacier from the Alps spread out here into a large lobe, scooping the ground into a broad shallow basin; after the ice retreated it filled with water. Because it was formed by ice \"spreading out\" rather than \"cutting deep\", Lake Constance is shallower and more open than Lake Geneva. Sediment brought down by the Rhine is building a large delta at the east end (which splits the eastern end of the lake in two).",
+    observation:
+      "From the air Lake Constance is a broad open blue sheet of water at the northern foot of the Alps and the eastern end of the Swiss Plateau, its shores gentle, with orchards and towns (Konstanz, Bregenz, Romanshorn and others). At the east end you can see the grey-green turbid water of the Rhine fanning in, and the growing Rhine delta; at the west end the lake narrows and drains through a river reach (the Untersee) toward the Rhine Falls.",
+    distinguish:
+      "Lake Constance versus Lake Geneva: Lake Geneva is narrow, deep and curved (a glacier cutting deep); Lake Constance is broad, shallow and gentle (a glacier spreading out). Lake Constance being \"used by three countries with no border on the main basin\" is unusual among the large lakes of Europe.",
+    concept:
+      "Lake Constance is a case study in a through-flowing river not mixing with a lake: when a large river crosses a lake, if its temperature, density and flow differ enough from the lake water, the river water threads through the lake like a ribbon and exchanges little with the lake on either side. The Rhine crossing Lake Constance does roughly this. To recognise it, look at whether the water entering and leaving the lake is nearly the same in colour and temperature. A common misconception is that a river merges completely with a lake the moment it enters.",
+    history:
+      "The prehistoric pile-dwelling sites (Neolithic to Bronze Age) on the shores of Lake Constance are part of the World Heritage Site of prehistoric pile dwellings around the Alps. The lake area was historically a transport and trade hub for southern Germany, and the Council of Constance (1414–1418) met here. Today there are frequent ferries between the towns of the three countries around the lake.",
+  },
+
+  "lake-lucerne": {
+    seeing:
+      "Lake Lucerne (German: Vierwaldstättersee, \"lake of the four forest cantons\"), in central Switzerland, is a lake of extremely intricate shape — several fjord-like arms and basins joined by narrow straits, looking from the air like a sprawling monster. The Rigi, Pilatus, Bürgenstock and other mountains rise straight from its shores. The Rütli meadow at its south-eastern corner is the traditional site where representatives of a few cantons are said to have sworn an alliance in 1291.",
+    formation:
+      "Lake Lucerne formed as glaciers cut down along several structural valleys running in different directions, and the resulting basins were separated by narrow rock sills (harder rock or moraine). In the ice ages glaciers from the Gotthard, Engelberg and other directions met here, each gouging a deep trough; after the ice retreated these troughs filled with water and joined at the sills, making today's multi-armed complex lake. The Urnersee (the southernmost arm) has sheer walls and looks especially like a Norwegian fjord.",
+    observation:
+      "From the air Lake Lucerne is a broken-shaped, deep-blue body of water at the front of the central Alps, with several \"arms\" reaching in different directions; each arm is boxed in by steep mountains, and only the north-western corner where the city of Lucerne sits has much flat land. Old paddle-steamers ply the lake; the Rigi and Pilatus each have a mountain railway to the summit.",
+    distinguish:
+      "Lake Lucerne and Lake Zurich are both on the edge of the Swiss Plateau, but Lake Zurich is a smooth banana shape; Lake Lucerne reaches deep into the Alps and is cut into a maze by several steep valleys — wilder. Its Urnersee arm, like Norwegian fjords and Milford Sound in New Zealand, is a flooded (here lake-flooded) deep glacial trough.",
+    concept:
+      "Lake Lucerne is a case study in a multi-basin compound lake: when a mountain area has several glacial valleys of different orientation meeting at one place, each is gouged into a deep basin, with shallower rock sills left between them; once the water level rises, the basins connect through the sills into one large lake, but the lake bed is really a string of separate deep pits. To recognise such a lake, look at whether it is highly irregular in shape, with several deep arms and clear shallow stretches between them. A common misconception is to take a compound lake for one single basin.",
+    history:
+      "The Lake Lucerne area is the \"founding heartland\" of Switzerland — Uri, Schwyz and Unterwalden, the three \"forest cantons\", live around the lake, and the country's name \"Schweiz\" comes from Schwyz. The Axenstrasse road along the lake and the Gotthard route head south from here over the Alps. From the 19th century Lucerne and the lake became one of the earliest international tourist destinations, and the Rigi was nicknamed the \"Queen of the Mountains\".",
+  },
+
+  "lake-zurich": {
+    seeing:
+      "Lake Zurich (German: Zürichsee), on the Swiss Plateau, is a long, slightly curved, banana-shaped glacial lake about 88 km² in area. The city of Zurich is at its north-western end. Its shores are prosperous towns, vineyards and orchards on gentle slopes — the sunny north-eastern shore is nicknamed the \"Gold Coast\", the other the \"Silver Coast\". Near Rapperswil a causeway called the \"Seedamm\" crosses the lake.",
+    formation:
+      "Lake Zurich was gouged by the Linth Glacier. In the ice ages the Linth Glacier from the Glarus Alps flowed north-west along this valley, cutting the floor into a deep, straight trough; after the ice retreated it filled with water. The glacier also left a transverse moraine ridge around Rapperswil, splitting the lake into the larger Lower Lake and the smaller, shallower Upper Lake — the \"Seedamm\" is built on this natural shoal.",
+    observation:
+      "From the air Lake Zurich is a smooth south-east-to-north-west blue band of water on the Swiss Plateau, both shores lined with dense towns, villas and railways, with vineyards on the slopes. The Seedamm causeway and railway bridge at Rapperswil \"pinch\" the lake into a narrow waist; the Upper Lake east of the waist is shallow, with reeds and wetland.",
+    distinguish:
+      "Lake Zurich versus Lake Lucerne: Lake Zurich is a single, straight glacial trough filled with water, simple in form; Lake Lucerne reaches into the mountains and is cut into several arms. Lake Zurich is similar in form to Lake Geneva (both crescent/banana-shaped large glacial lakes), only smaller and further into the plateau.",
+    concept:
+      "Lake Zurich's \"Seedamm shoal\" is a case study in a moraine dam splitting a lake: as a glacier flows it drops a transverse moraine ridge somewhere (often where the slope changes); after the ice retreats, if this ridge stands above the later water level it splits one lake into two, and if it is only an underwater shoal it forms a narrow \"waist\" in the middle of the lake. To recognise a moraine dam, look at whether the lake's narrow waist has a transverse rise or shoal made of gravel. A common misconception is to take it for an artificial embankment.",
+    history:
+      "The prehistoric pile-dwelling sites on the shores of Lake Zurich are part of the World Heritage Site of prehistoric pile dwellings. From the Middle Ages Zurich controlled the trade of the lake area. After 19th-century industrialisation the sunny, well-connected north-eastern shore grew into one of the wealthiest residential belts in Switzerland. The lake is the main drinking-water source for the city of Zurich and its quality is strictly protected.",
+  },
+
+  "lake-maggiore": {
+    seeing:
+      "Lake Maggiore is a deep, long lake at the southern foot of the Alps, mostly in Italy, with about the northernmost fifth in the Swiss canton of Ticino, where the towns of Locarno and Ascona sit on the shore. The shore around Ascona is only 193 m above sea level — the lowest point in the whole of Switzerland. Being south of the Alps and moderated by the deep lake, the climate here is mild, and the shores grow palms, camellias and citrus.",
+    formation:
+      "Lake Maggiore, like the neighbouring Lake Lugano and Lake Como, is a deep trough gouged by large glaciers coming down the southern slope of the Alps in the ice ages. These glaciers flowed south along a belt of weak rock near an important geological line at the southern edge of the Alps (the \"Insubric Line\", one of the sutures between two plates), cutting the valley very deep — Lake Maggiore is up to about 370 m deep, its floor well below sea level. After the ice retreated it filled with water, forming this string of \"Insubric lakes\".",
+    observation:
+      "From the air Lake Maggiore is a north-south, deep-blue, long narrow body of water in southern Ticino, its shores steep slopes covered in broadleaf forest and towns and villages; at the Swiss end in the north are the city of Locarno and a flat delta (the Magadino plain) built where the Maggia and the Ticino enter the lake. There are a few small islands (the Brissago Islands on the Swiss side).",
+    distinguish:
+      "Lake Maggiore and the Swiss Plateau glacial lakes (Geneva, Zurich, Lucerne) are all deep lakes gouged by glaciers, but Lake Maggiore is on the southern side of the Alps, with a clearly warmer climate and Mediterranean-type vegetation; the northern lakes are Central-European. It is a \"sister lake\" of Lake Lugano and Lake Como.",
+    concept:
+      "Lake Maggiore is a case study in terrain and local climate: at the same latitude, the climate on the north and south sides of the Alps can differ greatly — the south side is sheltered from northern cold air by the mountains, faces toward the Mediterranean, and has a deep lake storing heat and moderating temperature, so winters are mild and subtropical plants grow. To recognise this kind of warm microclimate on a leeward shore, look at whether it is on the south (leeward) side of high mountains, next to a large deep body of water. A common misconception is that climate is similar everywhere at the same latitude.",
+    history:
+      "Locarno, on the Swiss side of Lake Maggiore, is where the Locarno Treaties were signed in 1925. From the late 19th century the lake area (especially Monte Verità near Ascona) drew many artists, reformers and followers of alternative lifestyles. Today it is Switzerland's \"sunny corner\" and a transport node between Switzerland and Italy.",
+  },
+
+  "creux-du-van": {
+    seeing:
+      "The Creux du Van (French, roughly \"the hollow of the rock\"), in the Jura Mountains of western Switzerland, is a natural rock amphitheatre: a horseshoe of limestone cliff about 160 m high and 1.4 km long, wrapping around a forested hollow below. The view down from the cliff edge is dramatic, and wild ibex and chamois are often seen on the cliffs and in the hollow.",
+    formation:
+      "The Creux du Van was \"gnawed\" into an anticline (an upfold) of the Jura Mountains. After the crest of this limestone anticline was eroded open, the floor of the hollow has softer rock and abundant groundwater; through the ice ages and after, repeated freeze-thaw broke the cliff rock away block by block, and springs at the cliff foot kept carrying the debris away and undercutting the base, so the cliff collapsed and retreated inward (toward the core of the anticline), gradually enclosing today's semicircular hollow.",
+    observation:
+      "From the air the Creux du Van is a big bite taken out of the southern end of a Jura ridge — an arc of pale-grey cliff, gentle pasture and woodland on the clifftop, dense forest and scree at the foot, and a small stream flowing out of the hollow. The whole hollow opens toward the south-west.",
+    distinguish:
+      "The Creux du Van's horseshoe is not a glacial cirque (though it looks a little like one): a cirque is scooped by a glacier rotating in a shaded hollow on a mountainside; the Creux du Van is an erosional hollow (French reculée or cirque) formed by running water, freeze-thaw and spring undercutting acting on a fold anticline over a long time. Its origin is also different from Ásbyrgi in Iceland (a horseshoe valley cut by a flood).",
+    concept:
+      "The Creux du Van is a case study in spring sapping: when groundwater emerges as springs at the base of a cliff, the spring water keeps dissolving and hollowing out the rock at the cliff foot and carrying away the debris, so the cliff loses support, collapses and retreats toward the water source, eventually carving a semicircular hollow into the cliff. To recognise this landform, look at whether the hollow wraps around a spring, opens downstream, and has sheer cliffs. A common misconception is to take it for a cirque or an impact crater.",
+    history:
+      "The Creux du Van became a Swiss nature reserve in 1972. Ibex were reintroduced here in 1965 (having once died out in Switzerland), and the cliffs now hold a stable population. Place names on the clifftop such as \"Le Purgatoire\" (Purgatory), and local legends, reflect how much this hazardous place has weighed on the local imagination.",
+  },
+
+  "emmental-hills": {
+    seeing:
+      "The Emmental Hills, on the southern edge of the Swiss Plateau east of Bern, are a stretch of green hill country deeply cut by countless small streams, with pasture and big-roofed timber farmhouses on the ridges and streams and villages in the valleys. Its high point, the Napf, is 1,408 m. The Emmental (\"valley of the Emme\") is also the home of the large-holed cheese known abroad as \"Swiss cheese\".",
+    formation:
+      "The Emmental Hills and the Napf are the part of the Swiss Plateau's \"Molasse\" that lies closest to the Alps and is the coarsest and hardest — the \"Napf conglomerate\" (locally Nagelfluh, naturally cemented gravel). Millions of years ago a large river from the Alps built a huge gravel fan here; the fan was later uplifted, and the hard conglomerate, more erosion-resistant than the softer rock around it, stood out as high ground — then it was deeply cut by the many small streams that rise radially from the Napf, forming today's dense \"comb-tooth\" pattern of hills and deep valleys.",
+    observation:
+      "From the air the Emmental is a dark-green, very finely textured hill country between the Swiss Plateau and the Alps — a set of parallel deep valleys radiating from the Napf, cutting the upland into finger-like ridges. The ridges carry open pasture and isolated large farmhouses, the valley floors streams, roads and strings of villages. There is almost no large flat land.",
+    distinguish:
+      "The Emmental Hills differ from the rest of the Swiss Plateau: most of the plateau is gentle, glacially reworked hill country, while the Emmental is \"youthful\" hill country of hard conglomerate strongly and deeply cut by running water, with far more relief and deeper valleys. Neither the Emmental nor the Jura is high, but the Jura is folded limestone ridges while the Emmental is radial hills cut from conglomerate.",
+    concept:
+      "The Emmental Hills are a case study in radial drainage: when an upland slopes away from one centre (here the Napf), rivers flow down the steepest line, out from the centre, cutting the upland into ridges and valleys radiating from that centre, like the spokes of a wheel. To recognise radial drainage, look at whether all the main valleys point toward or away from one high point. A common misconception is to take this kind of terrain for fault-controlled.",
+    history:
+      "The Emmental was historically the land of independent freehold farmers, the deep valleys keeping villages apart and producing a scattered, self-contained settlement pattern and dialect. In the 19th century people panned for gold (flakes of gold in the Alpine gravel) in the streams of the Napf valleys, and a few still do it as a tradition. Emmental cheese has been made since the Middle Ages and is now a protected designation-of-origin product.",
+  },
 };

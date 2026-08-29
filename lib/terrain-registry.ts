@@ -4705,6 +4705,109 @@ const SWISS_PLATEAU: TerrainEntry = {
   source: "瑞士高原：夹在汝拉山脉和阿尔卑斯山之间、约300公里长的低地带，海拔多在400—600米；基岩是阿尔卑斯剥蚀下来堆积的“磨拉石”，表层是冰期冰川留下的冰碛丘（drumlin）、砾石平原和漂砾；集中了瑞士约三分之二人口和大多数城市（swisstopo）",
 };
 
+const LAKE_GENEVA: TerrainEntry = {
+  id: "lake-geneva",
+  nameZh: "日内瓦湖",
+  nameEn: "Lake Geneva / Lac Léman",
+  category: "lake",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "日内瓦湖（洛桑—埃维昂之间的宽湖面）", lon: 6.55, lat: 46.42, elevation: 372, kind: "lake" },
+  bbox: [6.13, 46.18, 6.95, 46.55],
+  axis: [[6.15, 46.36], [6.90, 46.40]],
+  viewScale: 1.8,
+  label: { lon: 6.55, lat: 46.42, rotation: -10 },
+  source: "日内瓦湖（法语 Lac Léman）：西欧最大的湖之一，弯月形，面积约580平方公里、最深约310米；南岸属法国、北岸属瑞士；罗讷河从东端流入、在日内瓦流出（swisstopo）",
+};
+
+const LAKE_CONSTANCE: TerrainEntry = {
+  id: "lake-constance",
+  nameZh: "博登湖",
+  nameEn: "Lake Constance / Bodensee",
+  category: "lake",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "博登湖上湖（Obersee）", lon: 9.35, lat: 47.60, elevation: 395, kind: "lake" },
+  bbox: [9.00, 47.48, 9.75, 47.78],
+  axis: [[9.05, 47.53], [9.72, 47.55]],
+  viewScale: 1.7,
+  label: { lon: 9.35, lat: 47.62, rotation: -4 },
+  source: "博登湖：由莱茵冰川挖掘、面积约536平方公里的大湖，湖岸分属瑞士、德国、奥地利，主湖区没有正式划定的国界；莱茵河从东端流入、西端流出（swisstopo / 联邦地形局）",
+};
+
+const LAKE_LUCERNE: TerrainEntry = {
+  id: "lake-lucerne",
+  nameZh: "卢塞恩湖（四林州湖）",
+  nameEn: "Lake Lucerne / Vierwaldstättersee",
+  category: "lake",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "卢塞恩湖（毕尔根山—里吉山之间）", lon: 8.50, lat: 47.00, elevation: 434, kind: "lake" },
+  bbox: [8.28, 46.85, 8.78, 47.10],
+  viewScale: 1.5,
+  label: { lon: 8.50, lat: 47.00, rotation: 0 },
+  pois: [
+    { name: "吕特利草地（Rütli）", lon: 8.594, lat: 46.968, note: "瑞士建国传说中1291年结盟宣誓的地方" },
+  ],
+  source: "卢塞恩湖（德语 Vierwaldstättersee，“四林州湖”）：一个由多个峡湾状湖汊和湖盆经狭窄水道相连的复杂湖，面积约114平方公里；里吉山、皮拉图斯山等直接从湖边拔起（swisstopo）",
+};
+
+const LAKE_ZURICH: TerrainEntry = {
+  id: "lake-zurich",
+  nameZh: "苏黎世湖",
+  nameEn: "Lake Zurich / Zürichsee",
+  category: "lake",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "苏黎世湖（拉珀斯维尔—苏黎世之间）", lon: 8.72, lat: 47.23, elevation: 406, kind: "lake" },
+  bbox: [8.53, 47.13, 8.92, 47.32],
+  axis: [[8.90, 47.20], [8.55, 47.30]],
+  viewScale: 1.4,
+  label: { lon: 8.72, lat: 47.23, rotation: -30 },
+  source: "苏黎世湖：瑞士高原上一个香蕉形的冰蚀湖，面积约88平方公里；拉珀斯维尔附近的“湖堤”（Seedamm）建在一道天然冰碛浅滩上，把湖分成上下两段（swisstopo）",
+};
+
+const LAKE_MAGGIORE: TerrainEntry = {
+  id: "lake-maggiore",
+  nameZh: "马焦雷湖",
+  nameEn: "Lake Maggiore / Lago Maggiore",
+  category: "lake",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "马焦雷湖北端（洛迦诺 / 阿斯科纳）", lon: 8.78, lat: 46.02, elevation: 193, kind: "lake" },
+  bbox: [8.60, 45.88, 8.98, 46.18],
+  viewScale: 1.5,
+  label: { lon: 8.80, lat: 46.05, rotation: 0 },
+  source: "马焦雷湖：一个又深又长的“因苏布里克”冰蚀湖（最深约370米，湖底低于海平面），大部分在意大利，北端约五分之一在瑞士提契诺州；阿斯科纳一带的湖岸海拔193米，是瑞士的最低点（swisstopo）",
+};
+
+const CREUX_DU_VAN: TerrainEntry = {
+  id: "creux-du-van",
+  nameZh: "凡岩谷（Creux du Van）",
+  nameEn: "Creux du Van",
+  category: "gorge",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "凡岩谷岩壁圆弧", lon: 6.728, lat: 46.933, elevation: 1400, kind: "escarpment" },
+  bbox: [6.68, 46.90, 6.78, 46.97],
+  label: { lon: 6.728, lat: 46.933, rotation: 0 },
+  source: "凡岩谷：汝拉山脉里一个天然的岩石“圆形剧场”——一道高约160米、弧长约1.4公里的马蹄形石灰岩崖壁；由冻融风化和泉水掏蚀在一个背斜里“啃”出来的凹谷（swisstopo / 纳沙泰尔州）",
+};
+
+const EMMENTAL_HILLS: TerrainEntry = {
+  id: "emmental-hills",
+  nameZh: "埃门塔尔丘陵（纳普夫）",
+  nameEn: "Emmental Hills / Napf",
+  category: "hills",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "纳普夫山（Napf，1408m）", lon: 7.939, lat: 47.005, elevation: 1408, kind: "grassland" },
+  bbox: [7.60, 46.85, 8.15, 47.15],
+  viewScale: 1.7,
+  label: { lon: 7.9, lat: 47.0, rotation: 0 },
+  source: "埃门塔尔丘陵：瑞士高原南缘、由坚硬的“纳普夫砾岩”（Nagelfluh，胶结的古代阿尔卑斯河流砾石扇）构成、被众多小溪呈放射状深切的丘陵；纳普夫山1408米为最高点（swisstopo）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -4812,6 +4915,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   JURA_MOUNTAINS, GLARUS_THRUST, MONTE_SAN_GIORGIO,
   SAENTIS, ALETSCH_GLACIER, RHONE_GLACIER, GORNER_GLACIER,
   LAUTERBRUNNEN_VALLEY, RHONE_VALLEY, SWISS_PLATEAU,
+  LAKE_GENEVA, LAKE_CONSTANCE, LAKE_LUCERNE, LAKE_ZURICH, LAKE_MAGGIORE,
+  CREUX_DU_VAN, EMMENTAL_HILLS,
 ];
 
 /**
@@ -4918,6 +5023,9 @@ const WIDE_VIEW: Record<string, number> = {
   "glarus-thrust": 1.4,
   "rhone-valley": 2.0,
   "swiss-plateau": 2.4,
+  "lake-geneva": 1.7,
+  "lake-constance": 1.6,
+  "emmental-hills": 1.6,
   // 欧洲 / 冰岛
   askja: 1.5,
   thingvellir: 1.6,
