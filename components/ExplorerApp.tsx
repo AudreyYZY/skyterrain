@@ -395,6 +395,33 @@ export default function ExplorerApp() {
     [],
   );
 
+  /** 次区域切换 —— 切到其大洲（若需要）并飞向该次区域地形的重心 */
+  const handleSubregionChange = useCallback(
+    (geo: { id: string; continentId: string; lon: number; lat: number }) => {
+      if (geo.continentId !== activeRegion) {
+        setActiveRegionState(geo.continentId);
+        setActiveRegion(geo.continentId);
+        try {
+          localStorage.setItem("fge-active-region", geo.continentId);
+        } catch {
+          /* ignore */
+        }
+      }
+      mapRef.current?.stopFlight();
+      setActiveTerrain(null);
+      setLesson(null);
+      setDisplayCards(null);
+      const continent = REGIONS.find((r) => r.id === geo.continentId);
+      mapRef.current?.flyToRegion({
+        lon: geo.lon,
+        lat: geo.lat,
+        height: Math.round((continent?.center.height ?? 6_000_000) * 0.55),
+        duration: 2.4,
+      });
+    },
+    [activeRegion],
+  );
+
   const speakText = useCallback(
     async (text: string, onPlaying?: () => void): Promise<void> => {
       stopAudio();
@@ -1080,6 +1107,7 @@ export default function ExplorerApp() {
           <RegionSelector
             activeRegion={activeRegion}
             onRegionChange={handleRegionChange}
+            onSubregionChange={handleSubregionChange}
             language={language}
           />
           <button

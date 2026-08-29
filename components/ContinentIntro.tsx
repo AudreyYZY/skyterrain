@@ -46,7 +46,9 @@ export default function ContinentIntro({
   onEnter,
   onDismiss,
 }: ContinentIntroProps) {
-  const cards = useMemo(() => shuffle(continents.filter((c) => c.available)), [continents]);
+  const available = useMemo(() => continents.filter((c) => c.available), [continents]);
+  // 首帧（含 SSR）用注册表顺序，避免 hydration mismatch；挂载后再 shuffle。
+  const [cards, setCards] = useState<ContinentCard[]>(available);
   const [idx, setIdx] = useState(0);
   const [leaving, setLeaving] = useState(false);
   const [mounted, setMounted] = useState(true);
@@ -54,17 +56,19 @@ export default function ContinentIntro({
   const dragStart = useRef<number | null>(null);
   const [drag, setDrag] = useState(0);
 
-  // 已看过则直接跳过
+  // 已看过则直接跳过；否则挂载后打乱顺序
   useEffect(() => {
     try {
       if (localStorage.getItem(SEEN_KEY)) {
         setMounted(false);
         onDismiss();
+        return;
       }
     } catch {
       /* ignore */
     }
-  }, [onDismiss]);
+    setCards(shuffle(available));
+  }, [onDismiss, available]);
 
   const current = cards[idx];
 

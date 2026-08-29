@@ -1,27 +1,33 @@
 "use client";
 
 /**
- * Region Selector — 大洲切换（下拉菜单）
+ * Region Selector — 大洲 / 次区域两级切换（下拉菜单）
  *
- * 顶栏右侧。点当前大洲名 → 展开大洲列表；选中后 Cesium 平滑飞向该大洲中心。
- * 数据驱动：新增 / 开启大洲只需改 lib/regions.ts。
- * 未填充内容的大洲显示为禁用（"Soon"）。
+ * 顶栏右侧。点当前大洲名 → 展开：一级＝大洲，二级＝该大洲下有地形的次区域
+ * （按联合国 M49 地理方案）。选大洲 → 飞向大洲中心；选次区域 → 飞向该次区域
+ * 地形的地理重心。数据驱动：新增 / 开启大洲只需改 lib/regions.ts。
  */
 
-import { REGIONS, type Region, hasTerrainData } from "@/lib/regions";
+import { REGIONS, SUBREGIONS, type Region, hasTerrainData } from "@/lib/regions";
+import { subregionGeosForContinent, type SubregionGeo } from "@/lib/subregion-geo";
 import type { Language } from "@/lib/i18n";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 
 interface RegionSelectorProps {
   activeRegion: string;
   onRegionChange: (region: Region) => void;
+  /** 选中某次区域 —— 切到其大洲（若需要）并飞向其重心 */
+  onSubregionChange?: (geo: SubregionGeo) => void;
   hidden?: boolean;
   language?: Language;
 }
 
+const SUB_NAME = new Map(SUBREGIONS.map((s) => [s.id, s]));
+
 export default function RegionSelector({
   activeRegion,
   onRegionChange,
+  onSubregionChange,
   hidden = false,
   language = "zh-CN",
 }: RegionSelectorProps) {
@@ -33,6 +39,13 @@ export default function RegionSelector({
     (r: Region) => (language === "en-US" ? r.nameEn ?? r.name : r.name),
     [language],
   );
+  const subNameOf = useCallback(
+    (id: string) => {
+      const s = SUB_NAME.get(id);
+      return s ? (language === "en-US" ? s.nameEn : s.name) : id;
+    },
+    [language],
+  );
 
   const handleSelect = useCallback(
     (region: Region) => {
@@ -40,6 +53,14 @@ export default function RegionSelector({
       if (region.id !== activeRegion) onRegionChange(region);
     },
     [activeRegion, onRegionChange],
+  );
+
+  const handleSub = useCallback(
+    (geo: SubregionGeo) => {
+      setOpen(false);
+      onSubregionChange?.(geo);
+    },
+    [onSubregionChange],
   );
 
   // 点击外部 / Esc 关闭
@@ -91,13 +112,14 @@ export default function RegionSelector({
           id={listId}
           role="listbox"
           className={[
-            "absolute right-0 top-[calc(100%+6px)] z-50 min-w-[150px] overflow-hidden rounded-xl py-1",
+            "absolute right-0 top-[calc(100%+6px)] z-50 min-w-[180px] overflow-hidden rounded-xl py-1",
             "border border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl shadow-xl",
           ].join(" ")}
         >
           {REGIONS.map((region) => {
             const isActive = activeRegion === region.id;
             const hasData = hasTerrainData(region);
+            const subs = hasData ? subregionGeosForContinent(region.id) : [];
             return (
               <li key={region.id} role="option" aria-selected={isActive}>
                 <button
@@ -124,6 +146,25 @@ export default function RegionSelector({
                     <span className="text-[9px] opacity-50">Soon</span>
                   )}
                 </button>
+
+                {subs.length > 1 && (
+                  <div className="pb-1">
+                    {subs.map((g) => (
+                      <button
+                        key={g.id}
+                        type="button"
+                        onClick={() => handleSub(g)}
+                        className={[
+                          "flex w-full items-center justify-between gap-3 py-1.5 pl-6 pr-3 text-left text-[11px] transition-colors",
+                          "text-[color:var(--ink-dim)] hover:bg-white/[0.05] hover:text-[color:var(--ink)]",
+                        ].join(" ")}
+                      >
+                        <span className="truncate">{subNameOf(g.id)}</span>
+                        <span className="text-[9px] tabular-nums opacity-50">{g.count}</span>
+                      </button>
+                    ))}
+                  </div>
+                )}
               </li>
             );
           })}
