@@ -2840,4 +2840,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Mount Taranaki is a revered ancestor and a core of identity for the local iwi (such as Taranaki and Te Āti Awa). In 2025 New Zealand passed legislation making Taranaki Maunga the mountain's official name and granting it legal personhood, represented by an entity called Te Kāhui Tupua, with iwi and the Crown jointly speaking for its interests. Egmont National Park is the second-oldest national park in New Zealand.",
   },
+
+  "tasman-glacier": {
+    seeing:
+      "The Tasman Glacier is the largest glacier in New Zealand, about 23 km long, flowing down from the high snowfields on the eastern side of Aoraki / Mount Cook, within Aoraki / Mount Cook National Park. Its lower part is buried under thick rock debris and looks like a grey-black river of rubble; at its end is a terminal lake that appeared in the 1970s and is still growing, with icebergs calved from the glacier floating in it.",
+    formation:
+      "The Tasman Glacier forms from snow that piles up high in the Southern Alps, compacts into ice, and flows slowly down the valley under gravity. As it moves it scrapes the valley walls and floor and carries rock from the slopes onto its surface; in its lower, warmer reach the ice melts out and the debris is left behind and thickens into a debris-covered tongue. In recent decades warming has meant more melt at the end than input, opening the terminal lake.",
+    observation:
+      "From the air the upper Tasman Glacier is a broad, crevassed white ice stream fed by tributary glaciers from both sides; the middle and lower reaches turn grey, the ice hidden under lengthwise medial-moraine stripes and a full cover of rubble, so it is easily mistaken for an ordinary scree valley; at the very end is a grey-green glacial lake ringed by high moraine ridges.",
+    distinguish:
+      "The Tasman and the Franz Josef and Fox glaciers are all in the Southern Alps, but the Tasman is on the drier eastern side, low-gradient, its lower part smothered in surface debris, ending in a lake; Franz Josef is on the wet western side, steep, its ice clean blue-white, pushing into rainforest. Debris-covered ice melts more slowly, which is why the Tasman's tongue can stretch so far.",
+    concept:
+      "The Tasman is a case study in debris cover and glacial lakes: a thick enough layer of rock on the ice acts like a blanket, slowing the melt of the ice beneath and letting the tongue stretch further and dirtier; but once the terminus thins past a point, meltwater ponds behind the moraine as a lake, and the lake then undercuts the tongue and speeds its break-up. A common misconception is to read a rubble-covered glacier terminus as having no ice left.",
+    history:
+      "The high country the Tasman Glacier lies in is the traditional area of the South Island iwi Ngāi Tahu. From the late 19th century the Mount Cook village became the centre of New Zealand mountaineering and alpine guiding. In the 20th century the flat upper Tasman was used for a time as a landing ground for ski-planes; today there are boat trips on the terminal lake to see the icebergs up close.",
+  },
+
+  "franz-josef-glacier": {
+    seeing:
+      "Franz Josef Glacier (Māori: Kā Roimata o Hine Hukatere, \"the tears of Hine Hukatere\") is on the western slope of the Southern Alps, dropping steeply from its high snowfield to only a few hundred metres above sea level, near the temperate rainforest of the West Coast. Like the neighbouring Fox Glacier, it is one of the few glaciers in the world that reaches down into rainforest. It has retreated markedly since the late 2000s.",
+    formation:
+      "The westerlies drive large amounts of moisture up the western slope of the Southern Alps, and tens of metres of snow can accumulate high up in a year, quickly compacting into ice. The ice flows fast down the steep valley, delivering a large volume of ice to low elevations — so low that it only fully melts at rainforest level. Because its input and flow are so vigorous, the glacier responds very sensitively to temperature and precipitation, advancing or retreating a kilometre in just a few years.",
+    observation:
+      "From the air Franz Josef Glacier is a blue-white, heavily crevassed icefall wedged in a dark green rainforest valley, a striking contrast; the end of the tongue is a spread of grey rubble and a milky meltwater river that soon joins the braided rivers of the West Coast and flows into the Tasman Sea. Upstream is a broad snowfield ringed by snowy peaks.",
+    distinguish:
+      "The difference between Franz Josef and the Tasman Glacier is textbook: Franz Josef is on the windward western slope — steep, fast, clean ice, plunging into rainforest, advancing and retreating dramatically; the Tasman is on the leeward eastern side — low-angle, slow, its lower part buried in rubble, its end retreated into a lake. Compared with the high-altitude glaciers of the Alps or Himalaya, this glacier's terminus is remarkably low.",
+    concept:
+      "Franz Josef Glacier is a case study in a glacier as a climate amplifier: its input and flow speed are both large, so a few years of snowfall or temperature change can move the tongue a kilometre, far faster than most glaciers respond. A common misconception is that glaciers only ever retreat — in the 20th century Franz Josef made several clear re-advances before shifting to rapid retreat.",
+    history:
+      "The glacier's Māori name comes from a legend: the lover of the maiden Hine Hukatere died in the mountains, and her tears froze into the glacier as they ran down the valley. In 1865 the geologist Julius von Haast named it after the Austrian emperor. Hotels and tourism developed here from the early 20th century; today most visitors reach the ice by helicopter, because the terminus has retreated beyond easy walking distance.",
+  },
+
+  "fiordland": {
+    seeing:
+      "Fiordland, in the south-western corner of the South Island, is the largest national park in New Zealand and part of the Te Wāhipounamu World Heritage Area. It is almost roadless and unpopulated — a block of high mountains cut to pieces by glaciers, where 14 long, deep fiords run inland from the Tasman Sea, the mountains are densely forested, waterfalls are everywhere, and it is one of the wettest places on Earth.",
+    formation:
+      "Fiordland's bedrock is hard granite and gneiss. During the ice ages huge glaciers flowed down pre-existing river valleys toward the sea, gouging the valley floors below sea level and grinding the walls to sheer U-shapes. After the ice melted and sea level rose, the sea flooded these over-deepened glacial valleys to make the fiords — often with a shallower \"sill\" at the mouth where glacial deposition or weaker erosion left a rise.",
+    observation:
+      "From the air Fiordland is a near-black expanse of green mountains sliced by straight, narrow, deep-blue fiords; the fiord walls are nearly vertical, hung with countless waterfalls, especially after rain. The tops are bare pale granite with small remnant glaciers, and the forest clings thinly to the rock — heavy rain often strips whole sheets of it away, leaving pale \"tree avalanche\" scars.",
+    distinguish:
+      "A fiord is not an ordinary bay: it is a drowned glacial valley — deep, straight, steep-walled, with a sill at the mouth. The origin is the same as Norway's fiords, but this southern block is far more remote and almost uninhabited. Compared with a single fiord like Milford, \"Fiordland\" refers to the whole mountain block that holds all 14 fiords.",
+    concept:
+      "Fiordland is a case study in what a fiord is: not carved by a river or by waves, but a river valley deepened by a glacier below sea level and then flooded by the sea after the ice went. To tell whether a waterway is a fiord, look at whether it is deep and straight with steep walls and a mouth that actually shallows. A common misconception is to call any long narrow inlet a fiord.",
+    history:
+      "Fiordland's fiords were long a seasonal destination for South Island Māori gathering pounamu (greenstone), sealing and taking birds, and Dusky Sound has a rich oral history. Cook's ship anchored for a long resupply in Dusky Sound in the 1770s. The 19th century saw brief attempts at settlement and whaling here, all defeated by the remoteness and the rain. Today places like Doubtful Sound can only be reached by crossing Lake Te Anau and transferring.",
+  },
+
+  "milford-sound": {
+    seeing:
+      "Milford Sound (Māori: Piopiotahi), in the north of Fiordland, is the only fiord in the region reachable by road, and so one of the best-known natural attractions in New Zealand. The fiord is about 15 km long, walled by near-vertical cliffs; the most prominent feature, Mitre Peak / Rahotu, rises straight from the water to about 1,683 m. It rains here on more than 200 days a year, and after rain the cliffs run with rows of waterfalls.",
+    formation:
+      "Milford Sound is a glacial valley flooded by the sea. During the ice ages a glacier flowed north-west down this valley toward the Tasman Sea, gouging the hard-granite floor below sea level and grinding the walls to cliffs. After the ice retreated and the sea rose it became a fiord. Large amounts of fresh water (rain and waterfalls) float on top of the salt water, forming a dark, tannin-stained surface layer that gives the deep water an unusual \"deep sea in shallow water\" ecology.",
+    observation:
+      "From the air Milford Sound is a deep-blue waterway running straight from the inland mountains to the open sea, flanked by knife-edge cliffs and hanging valleys pouring waterfalls, with Mitre Peak standing like an isolated fang on the south side. The mouth faces the Tasman Sea, open and often swell-washed; the inner end has the boat wharf and a small patch of flat ground.",
+    distinguish:
+      "Milford Sound and Doubtful Sound are both in Fiordland and both drowned glacial valleys, but Milford is narrow, short, steeper-walled and road-accessible, with the most visitors; Doubtful is longer, more branched and quieter. Unlike an ordinary river-mouth bay, Milford has no sediment or delta from a large river — the water is deep right at the entrance.",
+    concept:
+      "Milford Sound shows the freshwater cap that is characteristic of fiords: high mountains, heavy rain and fast runoff put so much fresh water in that it floats on the seawater before it can mix, forming a layer a few metres thick that is dark and dimly lit, letting some animals that normally live in the deep sea appear in very shallow water. A common misconception is that the water in a fiord is as salty and clear as the open sea.",
+    history:
+      "The Māori name Piopiotahi (\"a single piopio bird\") comes from local tradition. The fiord was long a place Māori came to gather pounamu, and because of its narrow entrance early European navigators passed it repeatedly without noticing it. In the late 19th century a walking track over the Mackinnon Pass linked it to the Te Anau side (today's Milford Track); after the Homer Tunnel opened in 1954 the road reached the fiord and tourism grew quickly.",
+  },
+
+  "lake-taupo": {
+    seeing:
+      "Lake Taupō sits at the centre of the North Island, about 616 km² in area — the largest lake in New Zealand. Its shape and its lake-bed topography still carry the marks of a volcano — because it fills a large volcanic caldera. The Waikato River, New Zealand's longest, flows out of the lake's north-eastern corner. The lake district is an important place for recreation and trout fishing.",
+    formation:
+      "Lake Taupō formed when the Taupō volcano erupted enormously and repeatedly, emptied its underground magma chamber, and the ground surface collapsed over a wide area to make a caldera that then filled with water. The Oruanui eruption about 25,500 years ago was one of the largest volcanic events on Earth in the last 100,000 years, blanketing the central North Island; an eruption around 232 CE was also among the most violent anywhere in the last few thousand years, destroying the surrounding forest in one event. The lake bed still has geothermal activity and slow ground movement.",
+    observation:
+      "From the air Lake Taupō is a nearly circular large lake on the volcanic plateau, with several straight-edged sections of shore controlled by faults, and shores that are mostly pale pumice cliffs and beaches. To the south, across a stretch of plateau, are the snow-capped volcanoes Ruapehu and its neighbours; at the north-eastern outlet is the town of Taupō and the first rapids of the Waikato River.",
+    distinguish:
+      "Lake Taupō is completely unlike the glacial ribbon lakes of the South Island (Wakatipu, Wānaka): the South Island lakes are gouged by glaciers — deep and narrow, boxed in by high mountains; Lake Taupō is a volcanic collapse — round and wide, ringed by fairly gentle volcanic plateau. Compared with an ordinary volcanic crater lake, Taupō's caldera is far larger — it is what a \"super-eruption\" leaves behind.",
+    concept:
+      "Lake Taupō is a case study in a caldera: when an eruption drains the magma chamber below, the overlying surface loses its support and subsides as a whole, dropping a basin far larger than any crater, which fills with water. To tell whether a lake is a caldera lake, look for a large round shape ringed by arc-shaped faults and volcanic-debris terraces. A common misconception is to treat Lake Taupō as a \"dead crater\" — the magma system beneath it is still active.",
+    history:
+      "The lake's full Māori name, Taupō-nui-a-Tia, means \"the great cloak of Tia\", Tia being the ancestor of the Ngāti Tūwharetoa people said to have discovered the lake. The lake district has long been the heartland of that iwi, and rights to the lake bed and water are held by the iwi under agreement. Trout introduced in the 19th century made this a world-famous fishing destination; today the shores have geothermal power stations and many holiday homes.",
+  },
+
+  "lake-wakatipu": {
+    seeing:
+      "Lake Wakatipu is a Z-shaped (or \"lightning-bolt\") glacial ribbon lake in the South Island, about 80 km long, with Queenstown on one of its bends. It is up to about 380 m deep, and its floor lies below sea level. The water is clear and cold, and it is ringed by steep schist mountains such as the Remarkables.",
+    formation:
+      "Lake Wakatipu was gouged out by a huge valley glacier during the ice ages. The glacier followed structural weaknesses between the schist mountains, gouging the floor deep and irregular — the bends are where ice streams merged and cut down hardest — and after the ice retreated the hollow filled with water. Because it was gouged below sea level, it is a classic over-deepened glacial lake.",
+    observation:
+      "From the air Lake Wakatipu is a deep-blue, sharply double-bending ribbon of water between mountains, its shores brown-grey schist slopes dropping almost straight to the water, with flat land and deltas only at a few places such as Queenstown and Glenorchy. The north-western end opens into the broad gravel valleys of the Dart and Rees rivers, leading up toward the Southern Alps.",
+    distinguish:
+      "Lake Wakatipu and the North Island's Lake Taupō are both large lakes, but Wakatipu was gouged by a glacier — narrow, deep, bent, boxed in by high mountains; Taupō is a volcanic collapse — round, wide, gently surrounded. Wakatipu is of the same kind as Wānaka and Te Anau, only its Z-shaped bends are especially pronounced.",
+    concept:
+      "Lake Wakatipu is a case study in an over-deepened glacial lake: unlike a river, which can only flow downhill, a glacier can gouge its valley floor below sea level under its own weight, making a closed deep hollow; once the ice melts the hollow becomes a lake, and the floor being below sea level does not let the sea in, because it is ringed by mountains and not connected to the ocean. A common misconception is that a lake floor must be higher than the nearby sea.",
+    history:
+      "In Māori tradition the Z-shaped hollow of Lake Wakatipu is the curled body of the giant Matau, burned to death, and the lake's periodic rise and fall is his heart still beating — this is in fact a seiche, a whole-lake oscillation with a period of about 27 minutes. Gold was found by the lake in 1862, and Queenstown grew from that; today it is the centre of adventure tourism in New Zealand.",
+  },
+
+  "lake-tekapo": {
+    seeing:
+      "Lake Tekapo, in the Mackenzie Basin of the South Island interior, is a lake dammed by a glacier and its moraine. It is best known for its colour — an opaque milky blue-turquoise. The Church of the Good Shepherd on its southern shore is one of the most photographed buildings in New Zealand. The area is the Aoraki Mackenzie International Dark Sky Reserve, with very dark, clear night skies.",
+    formation:
+      "The valley Lake Tekapo lies in was once occupied by a large glacier from the Southern Alps. The glacier ground the bedrock into extremely fine \"rock flour\"; after the ice retreated this rock flour was carried into the lake by meltwater, and it stays suspended for a long time without settling, scattering the blue-green light of sunlight back out, so the lake looks milky blue. The glacier also left a moraine ridge across the valley mouth, acting as a natural dam.",
+    observation:
+      "From the air Lake Tekapo is a vivid blue-green sheet of water in a tawny tussock-grass basin, in strong contrast with its surroundings; the northern end connects to braided rivers and snow mountains higher up, the southern end to the moraine ridge and the town. The neighbouring Lake Pukaki is larger and even more vividly coloured, with Aoraki / Mount Cook at the head of the lake.",
+    distinguish:
+      "Lake Tekapo and Queenstown's Lake Wakatipu are both South Island glacial lakes, but Tekapo is in an open, dry high basin — shallow, its colour especially vivid from rock flour; Wakatipu is boxed between steep high mountains, extremely deep, its water a darker blue. Tekapo's milky blue is only pronounced in lakes that have an active glacier still supplying the \"flour\".",
+    concept:
+      "Lake Tekapo is a case study in glacial rock flour: a glacier grinds bedrock like sandpaper, producing particles fine enough (micron-scale) to stay suspended for months once in the water, selectively scattering blue-green light, so the lake seems to \"glow\". To tell whether a lake's colour is from rock flour, look at whether there is an active glacier upstream and whether the colour has that opaque, milky quality. A common misconception is that the colour is from dissolved minerals or algae.",
+    history:
+      "The Mackenzie Basin is named after James Mackenzie, a shepherd who in the 1850s grazed stolen sheep here. It is dry, with large day-night temperature swings, and has been high-country sheep-station land since the 19th century. In the 20th century Tekapo, Pukaki and other lakes were incorporated into the Waitaki hydro scheme and their levels are regulated. In 2012 the area was designated a Dark Sky Reserve and astro-tourism grew.",
+  },
+
+  "lake-wanaka": {
+    seeing:
+      "Lake Wānaka, in Central Otago in the South Island, is a glacier-carved ribbon lake — the fourth-largest lake in New Zealand — with the resort town of Wānaka on its shore, second only to Queenstown as a holiday base. Its water drains south via the Clutha River / Mata-Au. It is separated from Lake Hāwea to the east by a very narrow isthmus (locally \"the Neck\"), yet the two lake surfaces differ by tens of metres in height.",
+    formation:
+      "Lake Wānaka and Lake Hāwea are two parallel troughs gouged by separate glaciers under the same icefield, each filling with water after the ice retreated. The narrow isthmus between them is a ridge of moraine and bedrock that was never cut through between the two glaciers. Gravel brought in by the Matukituki and other rivers at the north end is building deltas into the lake.",
+    observation:
+      "From the air Lake Wānaka is a deep-blue, several-armed ribbon lake between brown schist mountains, its shoreline irregular with several peninsulas and small islands (the \"lone willow tree\" standing in the lake is a popular photo spot). To the north the lake arms reach up into the high mountains toward Mount Aspiring / Tititea; to the south, the lake outlet is the head of the Clutha River and the town of Wānaka.",
+    distinguish:
+      "Lake Wānaka and Queenstown's Lake Wakatipu are neighbours and both glacial ribbon lakes, but Wānaka has more arms, slightly gentler surrounding mountains and feels more open; Wakatipu is a single Z-shaped deep trough. Wānaka and Hāwea being \"one isthmus apart but at different levels\" is a good example of glacial valley division.",
+    concept:
+      "The \"twin lakes\" Wānaka and Hāwea show that glaciers work along separate individual troughs: two neighbouring glaciers each gouge their own valley to different depths, and the narrow ridge left between them separates the two lakes, so two large lakes at different levels can lie within a few hundred metres of each other. A common misconception is that neighbouring lakes must be at the same level and connected underground.",
+    history:
+      "The Wānaka area was a node on the Māori routes to and from the interior for gathering pounamu. The 1860s gold rush and the large sheep stations that followed brought European settlers. From the mid-20th century Wānaka grew from a quiet farming town into a resort town for skiing, climbing and skydiving; a hydro station was later built on the upper Clutha.",
+  },
 };

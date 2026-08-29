@@ -156,6 +156,8 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "aoraki-southern-alps": "national",
   "mount-ruapehu": "national",
   "mount-taranaki": "national",
+  fiordland: "national",
+  "lake-taupo": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {

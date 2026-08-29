@@ -3192,6 +3192,137 @@ const MOUNT_TARANAKI: TerrainEntry = {
   source: "塔拉纳基山：近乎对称的安山质层状火山，2518m；官方名2025年定为Taranaki Maunga（此前作Mount Taranaki或Mount Egmont）（GNS Science / DOC / LINZ）",
 };
 
+const TASMAN_GLACIER: TerrainEntry = {
+  id: "tasman-glacier",
+  nameZh: "塔斯曼冰川",
+  nameEn: "Tasman Glacier / Haupapa",
+  category: "valley",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "塔斯曼冰川末端冰湖", lon: 170.176, lat: -43.712, elevation: 730, kind: "gorge" },
+  bbox: [170.05, -43.80, 170.42, -43.45],
+  axis: [[170.30, -43.48], [170.17, -43.72]],
+  viewScale: 1.4,
+  label: { lon: 170.23, lat: -43.60, rotation: -55 },
+  source: "塔斯曼冰川：新西兰最大的冰川，长约23km，位于奥拉基／库克山国家公园；下段覆满岩屑，末端自1970年代起退缩、形成并扩大的冰川湖（DOC / GNS Science）",
+};
+
+const FRANZ_JOSEF_GLACIER: TerrainEntry = {
+  id: "franz-josef-glacier",
+  nameZh: "弗朗茨·约瑟夫冰川",
+  nameEn: "Franz Josef Glacier / Kā Roimata o Hine Hukatere",
+  category: "valley",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "弗朗茨·约瑟夫冰川舌", lon: 170.183, lat: -43.435, elevation: 400, kind: "gorge" },
+  bbox: [170.10, -43.55, 170.30, -43.35],
+  axis: [[170.22, -43.40], [170.17, -43.47]],
+  viewScale: 1.2,
+  label: { lon: 170.19, lat: -43.44, rotation: -30 },
+  pois: [
+    { name: "福克斯冰川 / Te Moeka o Tuawe", lon: 170.170, lat: -43.530, note: "相邻的另一条陡降到雨林里的冰川" },
+  ],
+  source: "弗朗茨·约瑟夫冰川：从南阿尔卑斯粒雪盆陡降到西海岸温带雨林边缘（约400m海拔）；与福克斯冰川同为少见的“伸进雨林”的冰川，2000年代末以来明显退缩（DOC / GNS Science）",
+};
+
+const FIORDLAND: TerrainEntry = {
+  id: "fiordland",
+  nameZh: "峡湾地区",
+  nameEn: "Fiordland / Te Rua-o-te-moko",
+  category: "coast",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "神奇峡湾（Doubtful Sound / Patea）", lon: 167.15, lat: -45.30, elevation: 0, kind: "island" },
+  bbox: [166.5, -46.2, 167.9, -44.5],
+  axis: [[167.0, -46.0], [167.3, -44.6]],
+  viewScale: 2.0,
+  label: { lon: 167.0, lat: -45.4, rotation: -70 },
+  pois: [
+    { name: "蒂阿瑙湖", lon: 167.72, lat: -45.20, note: "峡湾东缘的大冰蚀湖，进出峡湾的门户" },
+  ],
+  source: "峡湾地区：新西兰面积最大的国家公园，属蒂瓦希普纳穆世界自然遗产；冰川刻蚀出的14条峡湾深切进山，是全球降水最多的地区之一（DOC）",
+};
+
+const MILFORD_SOUND: TerrainEntry = {
+  id: "milford-sound",
+  nameZh: "米尔福德峡湾",
+  nameEn: "Milford Sound / Piopiotahi",
+  category: "coast",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "教冠峰（Mitre Peak / Rahotu）", lon: 167.900, lat: -44.638, elevation: 1683, kind: "peak" },
+  bbox: [167.75, -44.72, 168.05, -44.55],
+  axis: [[167.85, -44.67], [168.02, -44.60]],
+  label: { lon: 167.92, lat: -44.64, rotation: -20 },
+  source: "米尔福德峡湾 / Piopiotahi：峡湾地区唯一有公路直达的峡湾；教冠峰约1683m，近乎垂直地从海面升起（DOC / LINZ）",
+};
+
+const LAKE_TAUPO: TerrainEntry = {
+  id: "lake-taupo",
+  nameZh: "陶波湖",
+  nameEn: "Lake Taupō / Taupōmoana",
+  category: "lake",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "陶波湖面（湖心）", lon: 175.90, lat: -38.80, elevation: 357, kind: "lake" },
+  bbox: [175.72, -39.05, 176.10, -38.63],
+  viewScale: 1.9,
+  label: { lon: 175.90, lat: -38.80, rotation: 0 },
+  pois: [
+    { name: "陶波镇", lon: 176.078, lat: -38.685, note: "湖东北角、怀卡托河出湖口" },
+  ],
+  source: "陶波湖：新西兰面积最大的湖（约616km²），是陶波火山破火山口积水而成；约2.55万年前的欧鲁阿努伊喷发、以及公元232年前后的一次喷发都是全球近数千年最猛烈的火山事件之一（GNS Science）",
+};
+
+const LAKE_WAKATIPU: TerrainEntry = {
+  id: "lake-wakatipu",
+  nameZh: "瓦卡蒂普湖",
+  nameEn: "Lake Wakatipu",
+  category: "lake",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "瓦卡蒂普湖（皇后镇湾）", lon: 168.66, lat: -45.03, elevation: 310, kind: "lake" },
+  bbox: [168.30, -45.55, 168.85, -44.75],
+  axis: [[168.35, -45.20], [168.75, -44.80]],
+  viewScale: 1.7,
+  label: { lon: 168.55, lat: -45.15, rotation: -35 },
+  source: "瓦卡蒂普湖：南岛冰川刻蚀的“Z”字形长湖，长约80km、最深约380m（湖底低于海平面）；湖面有周期约27分钟的小幅“定振”涨落（LINZ / NIWA）",
+};
+
+const LAKE_TEKAPO: TerrainEntry = {
+  id: "lake-tekapo",
+  nameZh: "特卡波湖",
+  nameEn: "Lake Tekapo / Takapō",
+  category: "lake",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "特卡波湖南岸（好牧人教堂一带）", lon: 170.516, lat: -44.004, elevation: 710, kind: "lake" },
+  bbox: [170.40, -44.10, 170.62, -43.70],
+  label: { lon: 170.51, lat: -43.90, rotation: 0 },
+  pois: [
+    { name: "普卡基湖", lon: 170.19, lat: -44.10, note: "相邻的更大冰蚀湖，湖尽头正对库克山" },
+  ],
+  source: "特卡波湖：麦肯齐盆地里的冰蚀-冰碛堰塞湖，湖水因冰川“岩粉”呈乳蓝色；属奥拉基·麦肯齐国际暗夜保护区（DOC / LINZ）",
+};
+
+const LAKE_WANAKA: TerrainEntry = {
+  id: "lake-wanaka",
+  nameZh: "瓦纳卡湖",
+  nameEn: "Lake Wānaka",
+  category: "lake",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "瓦纳卡湖南岸（瓦纳卡镇）", lon: 169.15, lat: -44.70, elevation: 277, kind: "lake" },
+  bbox: [168.90, -44.75, 169.35, -44.25],
+  axis: [[169.10, -44.72], [169.20, -44.30]],
+  viewScale: 1.5,
+  label: { lon: 169.17, lat: -44.55, rotation: -20 },
+  pois: [
+    { name: "哈威亚湖与“the Neck”", lon: 169.25, lat: -44.55, note: "隔一道狭窄地峡的姊妹湖" },
+  ],
+  source: "瓦纳卡湖：南岛冰川刻蚀的长湖，新西兰第四大湖，经克卢萨河 / Mata-Au 外流；与哈威亚湖仅隔一道窄地峡（LINZ / DOC）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -3270,6 +3401,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 大洋洲 / 新西兰 =====
   AORAKI_SOUTHERN_ALPS, KAIKOURA_RANGES, THE_REMARKABLES, TARARUA_RANGE,
   MOUNT_RUAPEHU, MOUNT_TARANAKI,
+  TASMAN_GLACIER, FRANZ_JOSEF_GLACIER, FIORDLAND, MILFORD_SOUND,
+  LAKE_TAUPO, LAKE_WAKATIPU, LAKE_TEKAPO, LAKE_WANAKA,
 ];
 
 /**
@@ -3372,6 +3505,11 @@ const WIDE_VIEW: Record<string, number> = {
   "kaikoura-ranges": 1.7,
   "tararua-range": 1.8,
   "mount-ruapehu": 1.7,
+  fiordland: 2.2,
+  "lake-taupo": 1.9,
+  "lake-wakatipu": 1.8,
+  "lake-wanaka": 1.6,
+  "tasman-glacier": 1.5,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
