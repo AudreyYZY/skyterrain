@@ -236,18 +236,24 @@ export default function ExplorerApp() {
   const [showIntro, setShowIntro] = useState(true);
   const [hoveredTerrainId, setHoveredTerrainId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
-  const [mode, setMode] = useState<AppMode>(getStoredMode);
+  // mode / activeRegion 首帧用 SSR 默认值，挂载后再从 localStorage 恢复
+  // （避免 server "study"/"china" 与 client 存储值不一致导致 hydration mismatch）
+  const [mode, setMode] = useState<AppMode>("study");
   /** 旅游模式：当前选中的城市 / 概览 id */
   const [travelId, setTravelId] = useState<string | null>(null);
   const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);
   const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);
-  const [activeRegion, setActiveRegionState] = useState<string>(() => {
+  const [activeRegion, setActiveRegionState] = useState<string>("china");
+
+  useEffect(() => {
+    setMode(getStoredMode());
     try {
-      return (typeof window !== "undefined" && localStorage.getItem("fge-active-region")) || "china";
+      const storedRegion = localStorage.getItem("fge-active-region");
+      if (storedRegion) setActiveRegionState(storedRegion);
     } catch {
-      return "china";
+      /* ignore */
     }
-  });
+  }, []);
 
   // 当前区域名称（用于 Header 显示）
   const activeRegionObj = REGIONS.find((r) => r.id === activeRegion);
