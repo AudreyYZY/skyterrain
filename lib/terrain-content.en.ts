@@ -1668,4 +1668,109 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Alaska Range area is the traditional land of several Athabaskan-speaking Native nations. Denali National Park and Preserve, established in 1917, covers about 24,000 km² and is an important area for observing northern ecosystems and for mountaineering.",
   },
+
+  "colorado-plateau": {
+    seeing:
+      "The Colorado Plateau spans the meeting point of Colorado, Utah, Arizona and New Mexico (the \"Four Corners\"), an area of about 337,000 km². It is a high, arid tableland, averaging roughly 1,500 to 2,100 m, cut into countless deep canyons by the Colorado River and its tributaries. It concentrates a set of national parks famous for bare rock layers and red landforms — the Grand Canyon, Monument Valley, Arches, Zion, Bryce.",
+    formation:
+      "The Colorado Plateau is built of roughly flat-lying sedimentary rock (sandstone, shale, limestone) recording hundreds of millions of years of deposition. Since the start of the Cenozoic the whole plateau has been raised about 1,500 to 2,000 m fairly evenly, without the layers being folded — they stay horizontal. After uplift, rivers cut down hard, carving the tableland into mesas, buttes and canyons; the dry climate keeps the colour and bedding of the layers clearly visible.",
+    observation:
+      "From the air the Colorado Plateau is a large, reddish-brown upland of low relief, its surface split by a branching network of dark canyons — the Colorado River system. The plateau's edges are often stepped, retreating cliffs (a \"staircase\"); isolated mesas and volcanic necks dot the surface. Vegetation is sparse and rock is exposed — it is one of the easiest landscapes anywhere to \"read\" rock structure from above.",
+    distinguish:
+      "The Colorado Plateau and the Tibetan Plateau are both \"plateaus\", but the Tibetan Plateau was squeezed up by continental collision, sits above 4,000 m and has strongly deformed rock; the Colorado Plateau is only 1,500 to 2,100 m, its layers are essentially flat, and it was raised evenly as a block. Versus the neighbouring Great Basin: the Great Basin has been pulled apart into a set of fault troughs and parallel ranges; the Colorado Plateau is one intact block that was not torn.",
+    concept:
+      "The Colorado Plateau shows that what matters for a \"plateau\" is a large area raised relatively intact — not necessarily great height. A common misconception is that canyons were \"ripped open\": the Grand Canyon was sawn down over millions of years by the Colorado River, faster where the plateau rose faster. Flat layers plus a dry climate make this a classic region worldwide for studying sedimentary rock and river erosion.",
+    history:
+      "The Colorado Plateau is home to the Navajo, Hopi, Ute and other Native nations; the Navajo Nation is the largest Indian reservation in the United States, and places such as Monument Valley are managed by Navajo Parks. The plateau also holds many Ancestral Puebloan cliff-dwelling sites, such as Mesa Verde. Today it is dominated by its cluster of national parks and outdoor tourism.",
+  },
+
+  "grand-canyon": {
+    seeing:
+      "The Grand Canyon is the vast canyon the Colorado River cut through the Colorado Plateau, in northern Arizona — about 446 km long, up to about 29 km wide, and up to about 1,857 m deep. Its walls of clearly bedded red and yellow rock record nearly 1.8 billion years of Earth history. Most visitors look out from the South Rim, at about 2,100 m.",
+    formation:
+      "The Grand Canyon formed mainly over the past 5 to 6 million years, as the Colorado River kept cutting down while the Colorado Plateau was being raised. The river does the \"cutting deeper\"; wall retreat and side gullies do the \"widening\"; and the dry climate slows collapse and plant cover, keeping the layers sharp. The Vishnu Schist exposed at the bottom is about 1.8 billion years old, among the oldest rock in North America; the Kaibab Limestone at the top is about 270 million years old.",
+    observation:
+      "From the air the Grand Canyon is an extremely deep, wide, crook-edged gash in the plateau surface; inside are stepped-back terraces and cliffs, colours shading from pale at the top to deep, from yellow to red to grey-black going down. A deep-green ribbon of river runs along the bottom. The North Rim is clearly higher than the South Rim and more forested. Low sun at sunrise and sunset makes the layering most three-dimensional.",
+    distinguish:
+      "The Grand Canyon and China's Yangtze Three Gorges are both canyons cut by a big river, but the Three Gorges is the Yangtze cutting across a mountain belt, with steep V-shaped rock walls; the Grand Canyon is the Colorado cutting into a plateau of flat layers, so its walls are stepped, wider and paler. Versus the Yarlung Tsangpo Grand Canyon: that one is deeper, narrower, wetter and more forested; the Grand Canyon is wider, drier and bare-rock.",
+    concept:
+      "The Grand Canyon is often wrongly called the \"deepest\" or \"largest\" canyon — by depth and length it is neither first (the Yarlung Tsangpo Grand Canyon is deeper and longer). What is genuinely special is its width, its continuous exposure of rock layers, and the way the dry climate makes about 1.8 billion years of geology legible at a glance. It is a classic case of river down-cutting combined with block uplift.",
+    history:
+      "The Grand Canyon and its surroundings have long been home to the Havasupai, Hualapai, Navajo, Hopi, Ute and other Native nations, and tribal communities still live in and around the canyon. Grand Canyon National Park was established in 1919 and listed as a World Heritage site in 1979. Grand Canyon Village on the South Rim is the main visitor hub.",
+  },
+
+  "great-plains-us": {
+    seeing:
+      "The Great Plains are a broad, gently sloping plain east of the Rocky Mountains, running from the Prairie provinces of Canada down to Texas and several hundred kilometres wide. They fall from about 1,800 m in the west to about 500 m in the east so gradually that the slope is barely perceptible. Once continuous tall- and short-grass prairie with huge bison herds, they are now a major U.S. wheat, corn and cattle belt.",
+    formation:
+      "The material of the Great Plains came mostly from the Rocky Mountains — as the ranges rose, wind and rivers carried large amounts of debris and silt out onto the mountain front and spread it flat, building an east-tilted apron of sediment. Quaternary glaciers left till and loess in the north; the central-south has wind-blown dune fields (such as the Nebraska Sandhills). Beneath lies the vast Ogallala Aquifer, which supports the region's irrigated farming.",
+    observation:
+      "From the air the Great Plains are an endless, near-level pale yellow-green surface; what stands out is the regular grid of fields and the green discs left by centre-pivot irrigation. Rivers are among the few landform clues — they run out from the Rockies in the west and cut shallow, broad valleys across the plain. Near the mountains in the west there are flat-topped erosion remnants and badlands.",
+    distinguish:
+      "The Great Plains and China's North China Plain are both plains built by rivers moving sediment, but the North China Plain is the alluvial fans and floodplains of the Yellow River and others — extremely flat and densely populated; the Great Plains are mostly a piedmont \"alluvial-aeolian\" apron with a clear but gentle overall westward-to-eastward tilt, and are thinly populated. Compared with the wetter Central Lowland to the east, the Great Plains are higher, drier and more given to grazing.",
+    concept:
+      "The Great Plains remind us that a \"plain\" need not be near sea level. Their western edge reaches 1,800 m, yet because the surface is flat, continuous and built of sediment, it is still a plain, not a plateau. A common misconception is to lump them with the wetter \"Midwest farmland\" further east — the boundary between the two runs roughly along the 500 mm rainfall line (about the 100th meridian).",
+    history:
+      "The Great Plains were long the territory of the Cheyenne, Lakota (Sioux), Comanche, Blackfeet and other bison-based Native nations. The 19th-century railroads, the Homestead Act, and the near-extermination of the bison brought large-scale farming and ranching settlement. Poor farming practice plus drought in the 1930s produced the Dust Bowl. Today the region's agriculture is highly mechanised and many counties continue to lose population.",
+  },
+
+  "great-basin": {
+    seeing:
+      "The Great Basin is a large area of \"internal drainage\" between the Sierra Nevada and the Wasatch Range — rivers and snowmelt here never reach the ocean, ending instead in salt lakes, salt flats or by soaking into the ground. It covers about 500,000 km², filling almost all of Nevada and spilling into neighbouring states, and is one of the driest parts of North America. The Great Salt Lake is the remnant water body at its lowest point.",
+    formation:
+      "The Great Basin is the result of the crust being stretched east–west: blocks break along north–south normal faults, half rising into parallel ranges and half dropping into the valleys between, producing classic \"Basin and Range\" topography — dozens of north–south ranges lined up like a row of caterpillars. During the ice ages the basins held large lakes such as Lake Bonneville; most are now dry, leaving the Great Salt Lake and broad salt flats.",
+    observation:
+      "From the air the Great Basin is a strikingly regular set of north–south stripes: brown ranges alternating with pale, flat valleys, one after another. The valley centres often hold white salt flats or dry lake beds (playas). Vegetation is mostly grey-green sagebrush, thinning toward the basin floors. The Great Salt Lake is a shallow, salty, pinkish-white sheet of water in the north-east corner.",
+    distinguish:
+      "The Great Basin and the Tarim Basin are both dry, internally drained basins, but the Tarim is a single large basin ringed by high mountains with one continuous desert in the middle; the Great Basin is not a basin at all but a whole \"Basin and Range\" province of dozens of small basins and small ranges. Versus the Colorado Plateau: the plateau is an intact block that was not torn; the Great Basin is a block that was stretched apart.",
+    concept:
+      "The name \"Great Basin\" is misleading — it is not one bowl-shaped hollow but an area where all water is trapped inland, made of many small basins. The test is the drainage: any region whose rivers ultimately do not reach the sea and vanish inland is an area of internal drainage. It is at once a landform region (Basin and Range), a hydrologic region (internal drainage) and a desert region (the Great Basin Desert), and the three do not match exactly.",
+    history:
+      "The Great Basin is the traditional homeland of the Western Shoshone, Paiute, Washoe, Ute and other Native nations, who developed gathering and hunting practices suited to extreme drought. In the 19th century emigrant trains had to struggle across the basin to reach California; Mormon settlers established themselves by the Great Salt Lake in 1847. Today it holds Great Basin National Park, protecting ancient bristlecone pines and limestone caves.",
+  },
+
+  "death-valley": {
+    seeing:
+      "Death Valley is a deep north–south valley in eastern California, part of the Great Basin. Its floor at Badwater Basin lies at −86 m, the lowest point in North America, while Telescope Peak on its western side rises to 3,366 m — only about 30 km apart horizontally. Summers are extremely hot, among the hottest recorded anywhere on Earth, and it is the driest place in the contiguous United States.",
+    formation:
+      "Death Valley is a \"pull-apart basin\" — the crust has been stretched along faults so that the whole valley floor keeps dropping relative to the ranges on either side, while receiving debris washed down from the mountains. With almost no outlet and very strong evaporation, the floor has accumulated thick salt, mud and sand, forming large salt flats, cracked salt crust and seasonal shallow salt lakes. The alluvial fans along the valley edge are large and steep.",
+    observation:
+      "From the air Death Valley is a long, narrow trough between two brown ranges; the lowest part of the floor is a glaring white salt flat, edged by pale alluvial fans spreading out from the mountain mouths. In places there are wind-eroded yellow dunes and multi-coloured oxidised rock faces (the \"Artist's Palette\"). Almost no green shows along the valley, only small patches of vegetation near springs.",
+    distinguish:
+      "Death Valley and China's Turpan Basin are both hot, dry basins below sea level, but Turpan is a structural basin ringed by the Tianshan, kept as an oasis by karez channels bringing snowmelt; Death Valley is a fault-opened graben with almost no oasis, hotter and lower. Versus the Qaidam Basin: Qaidam is high, cold and dry; Death Valley is below sea level and extremely hot.",
+    concept:
+      "Death Valley shows that a \"basin\" is defined by form and drainage, not elevation — it lies below sea level and is still a basin (an internally drained one). A common misconception is to equate \"lowest\" with \"deepest\": Badwater is the lowest point relative to sea level, but the roughly 3,400 m difference between the valley floor and the adjacent summit is a better measure of how deep it is. Hiking on the valley floor in summer carries a real health risk.",
+    history:
+      "Death Valley is home to the Timbisha Shoshone, who still have a community within the valley. The name comes from a group of emigrants who became trapped here in the mid-19th century while looking for a shortcut. Borax was briefly mined here in the late 19th century and hauled out of the desert by twenty-mule teams. Death Valley National Park was established in 1994 and is one of the largest national parks in the contiguous United States.",
+  },
+
+  "mojave-desert": {
+    seeing:
+      "The Mojave Desert lies in south-eastern California, southern Nevada and the neighbouring corners of Arizona and Utah, wedged between the Great Basin to the north and the Sonoran Desert to the south. It is a relatively high desert, mostly 600 to 1,200 m. Its signature plant is the Joshua tree, a tall yucca that grows only in the Mojave. Las Vegas, Death Valley and Joshua Tree National Park are all within it.",
+    formation:
+      "The Mojave's dryness comes from rain shadow: Pacific moisture is stripped out by the Sierra Nevada and other ranges, leaving little by the time it reaches here. In landform terms it is part of the Basin and Range — broad basins between low fault-block ranges, the basins holding dry lake beds, salt flats and dunes. It too had lakes during the ice ages, now reduced to traces.",
+    observation:
+      "From the air the Mojave is an open surface of pale brown to pale red, dotted with isolated dark ranges and white dry lake beds. Around Joshua Tree National Park the ground is strewn with piles of dark granite boulders. Overall it is emptier than the Sonoran Desert to the south, with lower, sparser vegetation. Large solar power plants and dead-straight highways are conspicuous human marks.",
+    distinguish:
+      "The Mojave, Great Basin and Sonoran deserts meet in the American South-West. The test is mostly plants and rainfall season: the Great Basin is a \"cold desert\", with winter snow and dominated by sagebrush; the Sonoran is a \"hot desert\", with summer and winter rain and giant columnar saguaro cactus; the Mojave is in between, its rain concentrated in winter, marked by the Joshua tree.",
+    concept:
+      "The Mojave shows that desert boundaries are set mainly by climate and vegetation, not by a clear landform line. In landform terms the Mojave and the Great Basin are both Basin and Range — the Mojave is simply warmer and further south. A common misconception is that deserts are all low: most of the Mojave floor is above 600 m, higher than many humid regions.",
+    history:
+      "The Mojave Desert is the traditional land of the Mojave, Chemehuevi, Southern Paiute and other Native nations, and old trade routes crossed it linking the Colorado River with the Pacific coast. The 19th-century \"Old Spanish Trail\" and later Route 66 and the railroads all crossed on similar lines. Today it holds Joshua Tree and Mojave National Preserve, and the parts near Las Vegas are developing quickly.",
+  },
+
+  "great-lakes": {
+    seeing:
+      "The Great Lakes are a set of connected large freshwater lakes in the middle of North America — Superior, Michigan, Huron, Erie and Ontario, running from west to east across the U.S.–Canada border. Their combined area is about 244,000 km², and they hold roughly a fifth of the world's surface liquid fresh water. Their water eventually reaches the Atlantic via the St. Lawrence River. Chicago, Toronto and Detroit are among the big cities on their shores.",
+    formation:
+      "The Great Lakes basins were mainly gouged out by Quaternary glaciers. As the ice sheet advanced south again and again, it scoured the ground deeper along belts of softer rock and piled up the sides; after the ice withdrew about 14,000 years ago, meltwater and the ice-depressed land together formed today's lakes. The crust is still slowly rebounding, so the shorelines are still adjusting.",
+    observation:
+      "From the air the Great Lakes are several huge, complex-edged sheets of deep-blue water, strung together like a chain opening to the south-east. Short channels and falls connect them (Niagara Falls sits between Erie and Ontario). In winter the lakes partly freeze and the downwind shores get heavy \"lake-effect\" snow. At night the shoreline cities run together in a band of light.",
+    distinguish:
+      "The Great Lakes and the African Great Lakes are both clusters of large freshwater lakes, but the African lakes mostly sit in crustal rifts and are deep and narrow; the Great Lakes were scraped out by glaciers and are relatively wide, shallow and irregular. Versus the Caspian Sea: the Caspian is an internally drained salt \"lake\" (really an enclosed sea); the Great Lakes are freshwater lakes with an outlet, linked to the ocean by the St. Lawrence.",
+    concept:
+      "The Great Lakes are named together but are not one lake: the five stand at different levels and drain step by step through connecting channels. Lakes Michigan and Huron are at the same surface elevation and joined by the wide Straits of Mackinac, so hydrologically they are one body (\"Lake Michigan–Huron\"), just conventionally counted as two. What makes a \"Great Lake\" is not whether it is connected but its area and volume.",
+    history:
+      "The shores of the Great Lakes are home to the Anishinaabe, Haudenosaunee (Iroquois), Huron and other Native nations, and the lakes were an important water route. The fur trade spread along them from the 17th century; in the 19th century canals (the Erie Canal and others) linked the Great Lakes to the Atlantic and the Mississippi system, driving the industrialisation of the American Midwest. Today the lakes are a major shipping, water-supply and fishing region, and face pressure from pollution and invasive species.",
+  },
 };

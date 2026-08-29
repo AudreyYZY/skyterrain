@@ -1900,6 +1900,130 @@ const ALASKA_RANGE: TerrainEntry = {
   source: "阿拉斯加山脉：阿拉斯加中南部约650km的弧形山脉，含北美最高峰迪纳利（USGS：20310ft）",
 };
 
+const COLORADO_PLATEAU: TerrainEntry = {
+  id: "colorado-plateau",
+  nameZh: "科罗拉多高原",
+  nameEn: "Colorado Plateau",
+  category: "plateau",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "大峡谷南缘", lon: -112.1130, lat: 36.0575, elevation: 2100, kind: "escarpment" },
+  bbox: [-114.0, 35.0, -107.0, 39.5],
+  axis: [[-113.0, 35.5], [-108.5, 39.0]],
+  viewFrom: 200,
+  label: { lon: -110.5, lat: 37.2, rotation: 0 },
+  pois: [
+    { name: "大峡谷", lon: -112.1130, lat: 36.0575, note: "科罗拉多河切入高原约1800m深" },
+    { name: "纪念碑谷", lon: -110.1096, lat: 36.9980, note: "红色砂岩方山与孤峰群（纳瓦霍公园）" },
+  ],
+  source: "科罗拉多高原：约34万km²，跨科罗拉多/犹他/亚利桑那/新墨西哥四州交界，平均海拔约1500–2100m（USGS）",
+};
+
+const GRAND_CANYON: TerrainEntry = {
+  id: "grand-canyon",
+  nameZh: "大峡谷",
+  nameEn: "Grand Canyon",
+  category: "gorge",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "光明天使点（南缘）", lon: -112.1401, lat: 36.0575, elevation: 2100, kind: "gorge" },
+  bbox: [-114.0, 35.9, -111.8, 36.6],
+  axis: [[-113.9, 36.2], [-111.85, 36.1]],
+  viewFrom: 20,
+  label: { lon: -112.4, lat: 36.25, rotation: -12 },
+  pois: [
+    { name: "南缘（大峡谷村）", lon: -112.1130, lat: 36.0544, note: "游客主要出入口，海拔约2100m" },
+    { name: "北缘", lon: -112.0526, lat: 36.1978, note: "海拔约2500m，比南缘更高更凉" },
+  ],
+  source: "大峡谷：科罗拉多河切穿科罗拉多高原，长约446km、最宽约29km、最深约1857m；岩层记录约18亿年（NPS）",
+};
+
+const GREAT_PLAINS_US: TerrainEntry = {
+  id: "great-plains-us",
+  nameZh: "北美大平原",
+  nameEn: "Great Plains",
+  category: "plain",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "内布拉斯加沙丘", lon: -101.5, lat: 41.8, elevation: 900, kind: "grassland" },
+  bbox: [-105.0, 32.0, -97.0, 49.0],
+  axis: [[-100.0, 32.5], [-100.5, 48.5]],
+  viewFrom: 100,
+  label: { lon: -100.5, lat: 40.5, rotation: -84 },
+  source: "北美大平原：落基山脉以东的广阔缓坡平原，从加拿大草原省份到美国得州；自西向东由约1800m降到约500m（USGS）。此条目取美国部分",
+};
+
+const GREAT_BASIN: TerrainEntry = {
+  id: "great-basin",
+  nameZh: "大盆地",
+  nameEn: "Great Basin",
+  category: "basin",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "大盐湖", lon: -112.6, lat: 41.15, elevation: 1280, kind: "salt-lake" },
+  bbox: [-120.0, 37.0, -111.5, 42.0],
+  axis: [[-119.0, 38.0], [-112.5, 41.5]],
+  viewFrom: 200,
+  label: { lon: -116.0, lat: 39.5, rotation: 0 },
+  pois: [
+    { name: "大盐湖", lon: -112.6, lat: 41.15, note: "西半球最大的咸水湖，无出海口" },
+    { name: "惠勒峰（大盆地国家公园）", lon: -114.3142, lat: 38.9858, note: "海拔约3982m" },
+  ],
+  source: "大盆地：内华达山脉与瓦萨奇山脉之间的内流区（河水不流入海洋），约50万km²，典型的盆岭地貌（USGS / NPS）",
+};
+
+const DEATH_VALLEY: TerrainEntry = {
+  id: "death-valley",
+  nameZh: "死亡谷",
+  nameEn: "Death Valley",
+  category: "basin",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "巴德沃特盆地", lon: -116.7669, lat: 36.2295, elevation: -86, kind: "salt-lake" },
+  bbox: [-117.3, 35.9, -116.4, 37.1],
+  axis: [[-117.0, 36.1], [-116.7, 37.0]],
+  viewFrom: 100,
+  label: { lon: -116.9, lat: 36.5, rotation: -75 },
+  pois: [
+    { name: "巴德沃特盆地", lon: -116.7669, lat: 36.2295, note: "北美最低点，海拔-86m（-282ft，NPS）；盐滩约520km²" },
+  ],
+  source: "死亡谷：加州东部的断陷地堑，含北美最低点巴德沃特盆地（-86m，NPS）；夏季极端高温",
+};
+
+const MOJAVE_DESERT: TerrainEntry = {
+  id: "mojave-desert",
+  nameZh: "莫哈韦沙漠",
+  nameEn: "Mojave Desert",
+  category: "desert",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "约书亚树", lon: -116.1, lat: 34.1, elevation: 900, kind: "dune" },
+  bbox: [-118.2, 33.0, -114.0, 37.2],
+  axis: [[-117.5, 33.5], [-114.5, 37.0]],
+  viewFrom: 200,
+  label: { lon: -116.0, lat: 35.2, rotation: 0 },
+  source: "莫哈韦沙漠：加州东南/内华达/亚利桑那/犹他交界的高地荒漠，约上万km²，介于大盆地与索诺兰沙漠之间，以约书亚树为标志植物（NPS）",
+};
+
+const GREAT_LAKES: TerrainEntry = {
+  id: "great-lakes",
+  nameZh: "五大湖",
+  nameEn: "Great Lakes",
+  category: "lake",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "休伦湖", lon: -82.4, lat: 44.8, elevation: 176, kind: "lake" },
+  bbox: [-92.5, 41.0, -76.0, 49.0],
+  axis: [[-91.0, 46.5], [-77.0, 43.0]],
+  viewFrom: 200,
+  label: { lon: -84.0, lat: 45.0, rotation: 0 },
+  pois: [
+    { name: "苏必利尔湖", lon: -87.5, lat: 47.7, note: "按面积计世界最大的淡水湖" },
+    { name: "尼亚加拉瀑布", lon: -79.0747, lat: 43.0828, note: "伊利湖与安大略湖之间的落差" },
+  ],
+  source: "五大湖（苏必利尔/密歇根/休伦/伊利/安大略）：北美中部的冰川湖群，总面积约24.4万km²，约占全球地表淡水的两成（NOAA / USGS）。跨美加两国，此条目归美国",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -1954,6 +2078,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   KAKADU, GRAMPIANS, NINGALOO,
   // ===== 北美洲 / 美国 =====
   ROCKY_MOUNTAINS, APPALACHIAN_MOUNTAINS, SIERRA_NEVADA_US, CASCADE_RANGE, ALASKA_RANGE,
+  COLORADO_PLATEAU, GRAND_CANYON, GREAT_PLAINS_US, GREAT_BASIN, DEATH_VALLEY,
+  MOJAVE_DESERT, GREAT_LAKES,
 ];
 
 /**
@@ -1997,6 +2123,13 @@ const WIDE_VIEW: Record<string, number> = {
   "sierra-nevada-us": 2.0,
   "cascade-range": 2.2,
   "alaska-range": 1.9,
+  // 北美 / 美国 —— 大面积高原 / 平原 / 盆地 / 沙漠 / 湖群
+  "colorado-plateau": 2.3,
+  "great-plains-us": 2.6,
+  "great-basin": 2.5,
+  "mojave-desert": 2.0,
+  "great-lakes": 2.6,
+  "death-valley": 1.6,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
