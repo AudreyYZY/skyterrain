@@ -4115,4 +4115,124 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Floods on the Jökulsá á Fjöllum have left traces in Iceland's place names and folklore (Goðafoss, the \"waterfall of the gods\", is on a neighbouring river). Because it is wide, fast, cold and liable to rise suddenly, this river was historically one of the most dangerous obstacles to crossing Iceland's interior, and the old highland routes had to detour far or ford at particular shallows. Today its middle and lower course is within Vatnajökull National Park.",
   },
+
+  "bernese-alps": {
+    seeing:
+      "The Bernese Alps, in west-central Switzerland, are the most heavily glaciated part of the whole Alps. On the north side the Eiger, Mönch and Jungfrau stand in a row directly above the green valleys below; further in are the Finsteraarhorn (4,274 m, the highest peak of the range) and a set of large glaciers. The Jungfrau–Aletsch region was the first natural World Heritage Site in the Alps.",
+    formation:
+      "The Alps were squeezed up by the collision of the African and European plates: from about 35 to 5 million years ago, the sedimentary rock between the two land masses was scraped off in slices and thrust northward, one lying flat on top of another, forming \"nappes\" (recumbent folds). The Bernese Alps' framework is a stack of such nappes, plus older crystalline rock exposed beneath. In the Quaternary ice ages, huge glaciers cut deep along the valleys, sharpening the peaks and gouging the valleys into U-shapes, leaving stepped hanging valleys and waterfalls after the ice retreated.",
+    observation:
+      "From the air the Bernese Alps are an east-west, permanently snow-capped high wall: the northern edge is steep, a row of grey-black rock faces (the Eiger north face especially prominent) topped by white peaks; inside the range are large snowfields and glaciers reaching out in all directions, the Aletsch to the south the longest. The green deep valleys at the foot hold villages and stepped meadows.",
+    distinguish:
+      "The Bernese Alps and the Pennine Alps to the south are both part of the high Swiss Alps, but the Bernese range is known for \"big snowfields plus long glaciers\" and has relatively few 4,000 m peaks; the Pennine Alps hold most of the Alps' 4,000 m summits. Compared with the Himalaya, the Alps are far lower and far younger, but the marks of glaciation are just as textbook.",
+    concept:
+      "The Bernese Alps are a case study in nappe tectonics: in mountain-building, rock layers are not simply crumpled — they are scraped off along near-horizontal faults in whole sheets, pushed flat tens of kilometres, and stacked on top of other layers. Many of the mountains you see were \"carried in\" this way. To recognise a nappe, look at whether the rock layers in the massif are inverted over a wide area, or old rock lies on young. A common misconception is that mountain-building just means squeezing rock into upright folds.",
+    history:
+      "Jungfraujoch station (3,454 m) below the Jungfrau is the highest railway station in Europe, opened in 1912 and marketed as the \"Top of Europe\". The Eiger north face was first climbed in 1938, after several fatal attempts, and remains a famous problem in mountaineering history. The whole Jungfrau–Aletsch region was inscribed as a World Heritage Site in 2001 and extended in 2007.",
+  },
+
+  "pennine-alps": {
+    seeing:
+      "The Pennine Alps run along the border between Switzerland and Italy and are the stretch of the Alps with the densest concentration of 4,000 m peaks — most of the Alps' roughly 80 summits over 4,000 m are here. Among them, the Dufourspitze, the main peak of the Monte Rosa massif, is 4,634 m — the highest point in Switzerland and the second-highest in the Alps after Mont Blanc. The Matterhorn is also on this range (given its own entry).",
+    formation:
+      "The rock of the Pennine Alps belongs to the \"Penninic nappes\" — the slices of rock pushed furthest north during Alpine mountain-building, mostly metamorphosed marine sediments and fragments of oceanic crust (which represent an ocean that once existed between the plates and later closed). After these slices were stacked and uplifted, glaciers strongly carved them into a set of sharp rock peaks, deep cirques and long glaciers. The northern valley (the Rhône valley) is one of the driest places in the Alps, shut off from moisture by the high mountains.",
+    observation:
+      "From the air the Pennine Alps are a high mountain region packed with sharp peaks, glaciers and deep valleys, the crest running roughly east-west as the Swiss-Italian border. The northern side drops abruptly to the dead-straight Rhône valley (towns, vineyards and industry on the floor); the southern side descends toward Italy. Valley villages such as Zermatt and Saas-Fee sit at the heads of the deep valleys.",
+    distinguish:
+      "The Pennine Alps versus the Bernese Alps: the Pennine range has many 4,000 m peaks with sharp rock summits and glaciers \"hanging\" on steep faces; the Bernese range has big snowfields and long glaciers. Between them lies the Rhône valley, a great fault-like structural trough.",
+    concept:
+      "The Pennine Alps are a case study in evidence of a closed ocean: some of the rock here (ophiolite, deep-sea sediment) formed on an ocean floor, yet now sits on 4,000 m peaks — showing that an ocean once lay between the two continents, and its crust was scraped off and jammed into the mountains during the collision. To recognise such a \"suture zone\", look for marine rock and oceanic-crust fragments caught in a continent-continent collision belt. A common misconception is that all rock on high mountains is continental rock.",
+    history:
+      "The high peaks of the Pennine Alps were climbed one by one in the mid-19th-century \"golden age of alpinism\". Zermatt is a car-free mountain resort, and the Gornergrat railway, opened in 1898, was one of the first electrified rack railways in Europe. Vineyards in the Rhône valley go back to Roman times.",
+  },
+
+  "matterhorn": {
+    seeing:
+      "The Matterhorn (Italian: Cervino; French: Cervin) is 4,478 m high, standing on the border between Switzerland and Italy — the most recognisable mountain in the Alps, a near-isolated rock pyramid steep on all four faces. Its outline is printed on Swiss chocolate wrappers and countless postcards, and has become almost a symbol of the Alps.",
+    formation:
+      "The Matterhorn is a \"horn\": an originally rounded mountain into which glaciers gouged cirques on the shaded sides from three or four directions, the cirque back walls retreating inward until they met in the centre, whittling the mountain into a sharp pyramid whose faces are the cirque walls. Its rock is also unusual — the summit block is a small slice of the African plate, lifted by nappe thrusting and lying on rock from the European plate below, with a clear boundary between them.",
+    observation:
+      "From the air the Matterhorn is a dark four-sided rock pyramid at the head of the Zermatt valley, its four ridges (edges) pointing roughly north-east, south-east, south-west and north-west, the four faces between them; the north and east faces are permanently shaded and iced. Around its foot is a ring of glaciers and scree, and below that the town of Zermatt.",
+    distinguish:
+      "The Matterhorn and Mount Fuji are both highly recognisable isolated peaks, but Fuji is a symmetrical cone built by volcanic accumulation; the Matterhorn is a horn of hard rock \"gnawed\" out from four sides by glaciers — asymmetrical, with sheer faces. The Alps have several famous horns (the Grossglockner, for one), and the Matterhorn is the most photogenic because it is so isolated and steep on every side.",
+    concept:
+      "The Matterhorn is a case study in a horn: to tell whether a mountain is a horn, look at whether it is made of several back-to-back cirque walls meeting at a point, with sharp ridges and each face corresponding to a cirque. It is a member of the same family of glacial erosion landforms as the arête (the narrow ridge between two cirques) and the tarn (cirque lake). A common misconception is to take a horn for a volcano or a fault block.",
+    history:
+      "The Matterhorn was first climbed in 1865 by a party led by Edward Whymper (from the Swiss side); on the descent the rope broke and four of the seven fell to their deaths, a tragedy that made the Matterhorn and this first ascent known worldwide. Today it is the heart of Zermatt's tourism and a classic goal for mountaineers.",
+  },
+
+  "rhaetian-alps": {
+    seeing:
+      "The Rhaetian Alps (also called the Bernina range), in the canton of Graubünden in south-eastern Switzerland near Italy, contain Piz Bernina — 4,049 m, the only 4,000 m peak in the whole Eastern Alps and the easternmost 4,000er in the Alps. East of here the Alps have no mountains this high. The range holds several glaciers, and below it are the Engadine valley and high resorts such as St Moritz.",
+    formation:
+      "The rock of the Rhaetian Alps belongs to the \"Austroalpine nappes\" — the slices pushed to the very top of the stack during mountain-building, lying over the Penninic nappes, mostly crystalline and metamorphic rock. The rock around Piz Bernina is fairly hard and erosion-resistant, and its south-easterly position makes it relatively dry with less snow, so it can keep this height and sharp form. Quaternary glaciers carved it too, into cirques, arêtes and horns.",
+    observation:
+      "From the air the Rhaetian Alps are a small patch of the Eastern Alps that is unusually high and white, with glaciers hanging between Piz Bernina and the snow peaks beside it; on the north side of the range is the broad, open, pine-forested Engadine valley (an inner-alpine climate, dry and sunny). A railway (the Rhaetian Railway) spirals up out of the valley and crosses the Bernina Pass.",
+    distinguish:
+      "The Rhaetian Alps, like the Pennine and Bernese Alps, are part of the high Swiss Alps, but they stand alone in the Eastern Alps (where most mountains are only two or three thousand metres), so they stand out sharply; and they belong to the \"Austroalpine nappes\", a higher structural level than the high mountains to the west.",
+    concept:
+      "The Rhaetian Alps are a case study in the nappe stacking of the Alps: the Alpine rock slices are like a stack of upturned plates, from bottom to top roughly \"external crystalline — Penninic — Austroalpine\", the higher ones pushed the furthest. Piz Bernina is in the top set. To read the structural level, look at the rock type and what it lies on. A common misconception is that the Alpine strata are simply arranged old-to-young upward.",
+    history:
+      "St Moritz is one of the birthplaces of modern alpine winter tourism, host of the 1928 and 1948 Winter Olympics. The Albula and Bernina lines of the Rhaetian Railway crossing the Rhaetian Alps — with their spiral tunnels, viaducts and the way they cross high mountains without a rack — were inscribed as a World Heritage Site in 2008.",
+  },
+
+  "gotthard-massif": {
+    seeing:
+      "The Gotthard Massif, right in the centre of Switzerland, is the \"water-parting hub\" of Europe: the Rhine, the Rhône, the Reuss and the Ticino all rise around it and then flow to the North Sea, the Mediterranean and the Adriatic. It is not the highest of mountains, but because it sits at the throat of north-south travel, the Gotthard Pass has been one of the most important routes across the Alps since the Middle Ages.",
+    formation:
+      "The Gotthard Massif is a \"crystalline massif\" — a block of ancient granite and gneiss lifted and pushed up as a whole during Alpine mountain-building. Such blocks of old hard rock are strung out along the \"external\" belt of the Alps (also Mont Blanc, the Aar Massif and others). It happens to lie where the main crest of the Alps meets the boundaries of several major river basins, so it forms a watershed. In the ice ages glaciers flowed out from here in different directions.",
+    observation:
+      "From the air the Gotthard Massif is a rolling stretch of high mountains in the middle of the Alps, with no especially prominent peaks, but with valleys radiating out from it in several directions — north the Reuss valley (with the famous Schöllenen Gorge and \"Devil's Bridge\"), south-west the head of the Rhône valley, east one headwater of the Rhine, south the Ticino valley. The pass area is a place dense with roads, railways and tunnel portals.",
+    distinguish:
+      "The Gotthard Massif differs from other stretches of the high Alps not in altitude or form but in its role as a \"water-parting hub\" — where a raindrop falls decides which sea it ends up in. Such a \"three-seas divide point\" is rare in Europe.",
+    concept:
+      "The Gotthard Massif is a case study in watersheds and routes: the main crest of a mountain range is both the divide between river systems and a barrier to travel; and a low col (pass) on the divide becomes a natural route across the mountains, fought over by armies and used by trade routes through history. To judge a pass's importance, look at whether the valleys on both sides lead to prosperous regions and whether there is a lower alternative route. A common misconception is that the highest mountain is the most important geographic node.",
+    history:
+      "The Gotthard Pass was opened around the early 13th century when the Schöllenen Gorge was bridged, and thereafter became a key north-south route within the Holy Roman Empire, with a bearing on the early alliances of the Swiss cantons. From the 19th century road and rail tunnels were built here; the Gotthard Base Tunnel, opened in 2016, is 57 km long and one of the longest rail tunnels in the world.",
+  },
+
+  "jura-mountains": {
+    seeing:
+      "The Jura Mountains run in an arc along Switzerland's north-western border (and into France) — a set of parallel ridges of moderate height, covered in forest and pasture, the highest (Mont Tendre, on the Swiss side) only 1,679 m. They are far lower and gentler than the Alps, the \"local mountains\" where the Swiss go walking and skiing at weekends. The geological period \"Jurassic\" is named after the limestone here.",
+    formation:
+      "The Jura Mountains were made by the \"aftershock\" of Alpine mountain-building: as the Alpine slices pushed north-west, a wedge of sedimentary rock ahead of them (mainly Jurassic limestone) was pushed along and slid as a whole over a slippery layer of Triassic salt and marl at its base, being folded into a set of parallel anticlines and synclines — the anticlines rising as ridges (locally crêts), the synclines dropping as valleys (combes, vals). Limestone is permeable and soluble, so the Jura has many caves, dry valleys and karst springs.",
+    observation:
+      "From the air the Jura Mountains are a set of north-east-to-south-west, parallel elongated ridges and valleys, like a stack of cloth pushed from the south-west and rucked up into folds. The ridges carry pasture and fir forest, the valleys hold villages, small towns and a few long narrow lakes. In places the top of an anticline has been eroded open to expose older rock beneath, giving \"relief inversion\" (a valley where a mountain should be).",
+    distinguish:
+      "The Jura Mountains and the Alps are \"parent and child\" — the same episode of mountain-building, with the Alps the main body (large-scale slice-stacking) and the Jura the fold belt \"kneaded\" out of the sedimentary cover pushed ahead — smaller in scale, shallower in structure, lower in altitude. Compared with an anticlinal upland like the Pennines, the Jura's folds are younger, more regular and clearly show the \"sliding over a detachment\" character.",
+    concept:
+      "The Jura Mountains are a case study in a thin-skinned fold-and-thrust belt: when a stack of sedimentary rock has a very slippery layer beneath it (salt, gypsum, marl), the rock above can slide as a whole over that \"lubricating layer\" and be squeezed into a set of regular folds ahead, while the basement below takes no part. To recognise this structure, look at whether the folds are in a row, regular and traceable to a basal detachment. A common misconception is that a range's folds must reach deep into the crust.",
+    history:
+      "The Jura has long been known for watchmaking — in winter, when farm work was slack, households made watch parts at home, and this grew into \"watch towns\" such as La Chaux-de-Fonds and Le Locle, whose town planning was inscribed as a World Heritage Site in 2009 for reflecting the division of labour in watch manufacture. The high pastures graze cattle in summer and produce cheeses such as Gruyère.",
+  },
+
+  "glarus-thrust": {
+    seeing:
+      "The Glarus Thrust (the mountains around it are called the \"Tectonic Arena Sardona\", a World Heritage Site), in eastern Switzerland around the canton of Glarus. Its most striking feature: on the mid-slopes of several mountains there is a near-horizontal, sharp line running right across the hillside — above the line, dark red old rock; below it, grey young rock. This line is the thrust fault itself — the surface along which a large slice of crust was pushed — cut open and displayed on the mountainside.",
+    formation:
+      "During Alpine mountain-building, a large sheet of rock about 250–300 million years old (the Permian \"Verrucano\") was pushed about 35 km northward along a near-horizontal thrust fault, over rock only about 35 to 50 million years old (flysch). The fault surface itself was ground into a thin layer of ductilely deformed carbonate rock (the \"Lochseiten line\"). The result is the counter-intuitive \"old rock on top, young rock below\", with a line so straight it can be traced continuously across many mountains.",
+    observation:
+      "From the air the Sardona area is a stretch of the Eastern Alps whose most conspicuous feature is that horizontal line of colour change on the slopes — especially on the Tschingelhörner, where an eroded natural hole (\"Martin's Hole\") pierces the rock wall near the line. The reddish old rock above tends to form steep summits; the grey young rock below is softer and gentler in slope.",
+    distinguish:
+      "The Glarus Thrust works on the same principle as any thrust fault (old rock pushed over young), but its scale, displacement and clarity of exposure are world-class — the fault surface is near-horizontal, exposed continuously for tens of kilometres, with a rock-age difference of over 100 million years across it. It was the key example through which 19th-century geologists (Escher, Heim and others) gradually understood, and finally accepted, mountain-building by thrust nappes.",
+    concept:
+      "The Glarus Thrust is a case study in thrusting old rock over young: normally rock gets younger upward; if on a hillside you see a line with rock above much older than rock below, it is almost certainly a thrust (or nappe) fault — old rock pushed horizontally from elsewhere and laid on top of younger rock. To recognise a thrust, look for an \"upside-down\" rock-age sequence and a near-horizontal line that runs on and on. A common misconception is that \"the rock on top must be younger\".",
+    history:
+      "In the 19th century geologists were puzzled for decades by this \"old on young\" — some proposed it was two giant folds facing each other (the \"Glarus double fold\"). The puzzle was only solved once it was accepted that rock can be pushed tens of kilometres along a near-horizontal fault. This history of understanding made Sardona a \"holy site\" of structural geology, inscribed as a World Heritage Site in 2008.",
+  },
+
+  "monte-san-giorgio": {
+    seeing:
+      "Monte San Giorgio, in the canton of Ticino in southern Switzerland on Lake Lugano, is a small, densely wooded, pyramid-shaped mountain only about 1,097 m high. It looks unremarkable, but it is a World Heritage Site — because the rock inside it preserves the world's most complete record of Middle Triassic (about 240 million years ago) marine life.",
+    formation:
+      "About 240 million years ago this was a warm shallow sea on the edge of the Tethys Ocean, with a closed, anoxic lagoon on the sea floor. Marine animals that died and sank to the lagoon bed, in the absence of oxygen and scavengers, were completely covered and preserved by very fine black mud (later bituminous shale). The rock was then uplifted and folded by Alpine mountain-building into today's Monte San Giorgio; slope erosion and over a century of scientific excavation have kept exposing the fossils.",
+    observation:
+      "From the air Monte San Giorgio is an isolated conical forested hill between two arms of Lake Lugano, water on three sides; it is not high but steep-sided and fully vegetated. Quarries and excavation sites on its northern slope and on the Italian side are where the fossils come from. Around it is the classic Ticino scenery of lake and mountain with hillside villages.",
+    distinguish:
+      "Monte San Giorgio is unlike an ordinary mountain — its value is not in its landform (an unremarkable hill) but in the \"time capsule\" in its rock. Like other famous fossil sites (Chengjiang in China, the Burgess Shale in Canada), a special anoxic setting allowed soft parts to be preserved; Monte San Giorgio's distinction is a complete record of one Triassic marine ecosystem.",
+    concept:
+      "Monte San Giorgio is a case study in a Lagerstätte (a site of exceptional preservation): most organisms are decomposed after death and leave only hard shells; only in special settings — anoxic, rapidly buried, undisturbed — can skin, muscle and fin outlines be preserved, opening a \"window\" onto an ancient ecosystem. To recognise such a site, look at whether the fossils are numerous, diverse and include soft-bodied forms. A common misconception is that fossils form everywhere.",
+    history:
+      "Fossil excavation at Monte San Giorgio began in the 1850s, and over more than a century tens of thousands of specimens have been recovered, including marine reptiles such as Ticinosuchus and Besanosaurus, now in museums in Zurich, Milan and elsewhere. The Swiss side was inscribed as a World Heritage Site in 2003, extended to the Italian side in 2010.",
+  },
 };

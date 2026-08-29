@@ -184,6 +184,14 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "isle-of-skye": "national",
   "outer-hebrides": "national",
 
+  // 瑞士
+  "bernese-alps": "national",
+  "pennine-alps": "national",
+  matterhorn: "national",
+  "rhaetian-alps": "national",
+  "gotthard-massif": "national",
+  "jura-mountains": "national",
+
   // 冰岛
   hekla: "national",
   katla: "national",

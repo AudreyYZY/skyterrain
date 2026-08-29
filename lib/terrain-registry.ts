@@ -4476,6 +4476,133 @@ const JOKULSA_A_FJOLLUM: TerrainEntry = {
 };
 
 // ============================================================
+// 瑞士（regionId: "europe"，country: "switzerland"）
+// 坐标据 swisstopo（联邦地形局）/ Swiss Geological Survey /
+// SLF·WSL / 瑞士国家公园 / UNESCO；多语地名按 swisstopo 用法并列
+// ============================================================
+
+const BERNESE_ALPS: TerrainEntry = {
+  id: "bernese-alps",
+  nameZh: "伯尔尼阿尔卑斯山脉",
+  nameEn: "Bernese Alps / Berner Alpen",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "少女峰（Jungfrau，4158m）与僧侣峰、艾格峰", lon: 7.962, lat: 46.537, elevation: 4158, kind: "peak" },
+  bbox: [7.35, 46.30, 8.55, 46.70],
+  axis: [[7.45, 46.45], [8.45, 46.55]],
+  viewFrom: 0,
+  viewScale: 1.6,
+  label: { lon: 7.95, lat: 46.55, rotation: -8 },
+  pois: [
+    { name: "芬斯特拉尔峰（Finsteraarhorn，4274m）", lon: 8.126, lat: 46.537, note: "伯尔尼阿尔卑斯最高峰" },
+    { name: "艾格峰北壁（Eigernordwand）", lon: 8.005, lat: 46.577, note: "约1800m 的著名岩壁" },
+  ],
+  source: "伯尔尼阿尔卑斯：阿尔卑斯山内冰川覆盖面积最大的一片；少女峰-阿莱奇地区（少女峰、僧侣峰、艾格峰、芬斯特拉尔峰、阿莱奇冰川）是阿尔卑斯山第一处世界自然遗产（UNESCO / swisstopo）",
+};
+
+const PENNINE_ALPS: TerrainEntry = {
+  id: "pennine-alps",
+  nameZh: "瓦莱阿尔卑斯山脉",
+  nameEn: "Pennine Alps / Walliser Alpen",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "杜富尔峰（Dufourspitze / 罗莎峰主峰，4634m）", lon: 7.867, lat: 45.937, elevation: 4634, kind: "peak" },
+  bbox: [7.30, 45.88, 8.35, 46.25],
+  axis: [[7.40, 46.05], [8.25, 46.05]],
+  viewFrom: 0,
+  viewScale: 1.5,
+  label: { lon: 7.85, lat: 46.05, rotation: -6 },
+  source: "瓦莱阿尔卑斯：集中了阿尔卑斯山大多数4000米级山峰；杜富尔峰（罗莎峰主峰）4634米，是瑞士的最高点、阿尔卑斯第二高峰（swisstopo）",
+};
+
+const MATTERHORN: TerrainEntry = {
+  id: "matterhorn",
+  nameZh: "马特洪峰",
+  nameEn: "Matterhorn / Cervino / Cervin",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "马特洪峰", lon: 7.6586, lat: 45.9763, elevation: 4478, kind: "peak" },
+  bbox: [7.58, 45.92, 7.74, 46.03],
+  label: { lon: 7.659, lat: 45.976, rotation: 0 },
+  source: "马特洪峰（意/法语作 Cervino / Cervin）：海拔4478米，在瑞士与意大利边界上；从三四个方向的冰斗同时向内侵蚀一条山脊，把它削成锥形的“角峰”；峰顶岩体是非洲板块的一片、叠在欧洲基底之上（swisstopo / Swiss Geological Survey）",
+};
+
+const RHAETIAN_ALPS: TerrainEntry = {
+  id: "rhaetian-alps",
+  nameZh: "雷蒂亚阿尔卑斯山脉",
+  nameEn: "Rhaetian Alps / Berninagruppe",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "伯尔尼纳峰（Piz Bernina，4049m）", lon: 9.9083, lat: 46.3828, elevation: 4049, kind: "peak" },
+  bbox: [9.65, 46.28, 10.15, 46.52],
+  axis: [[9.75, 46.35], [10.05, 46.45]],
+  viewScale: 1.4,
+  label: { lon: 9.91, lat: 46.40, rotation: -20 },
+  source: "雷蒂亚阿尔卑斯（伯尔尼纳山群）：伯尔尼纳峰4049米，是东阿尔卑斯山唯一、也是阿尔卑斯最东端的4000米级山峰；穿越它的雷蒂亚铁路（阿尔布拉线 / 伯尔尼纳线）是世界遗产（swisstopo / UNESCO）",
+};
+
+const GOTTHARD_MASSIF: TerrainEntry = {
+  id: "gotthard-massif",
+  nameZh: "圣哥达山地",
+  nameEn: "Gotthard Massif",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "圣哥达山口（Gotthardpass，2106m）", lon: 8.5665, lat: 46.5566, elevation: 2106, kind: "pass" },
+  bbox: [8.30, 46.42, 8.85, 46.72],
+  viewScale: 1.5,
+  label: { lon: 8.57, lat: 46.56, rotation: 0 },
+  source: "圣哥达山地：欧洲的分水中枢——莱茵河、罗讷河、罗伊斯河、提契诺河都发源于它周围，水分别流向北海、地中海和亚得里亚海；圣哥达山口自13世纪起是阿尔卑斯南北交通要道（swisstopo）",
+};
+
+const JURA_MOUNTAINS: TerrainEntry = {
+  id: "jura-mountains",
+  nameZh: "汝拉山脉",
+  nameEn: "Jura Mountains",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "汝拉山脉瑞士段（Mont Tendre，1679m）", lon: 6.312, lat: 46.601, elevation: 1679, kind: "peak" },
+  bbox: [5.95, 46.15, 8.55, 47.55],
+  axis: [[6.10, 46.25], [8.40, 47.45]],
+  viewFrom: 315,
+  viewScale: 2.0,
+  label: { lon: 6.9, lat: 47.0, rotation: -35 },
+  source: "汝拉山脉：一条褶皱-逆冲带——随着阿尔卑斯向北推进，一楔形的沉积岩（主要是侏罗纪石灰岩，“侏罗纪”一名即源自此）沿底部的三叠纪岩盐/泥岩滑脱面被褶皱、推挤成一列列平行的山脊与谷（swisstopo / Swiss Geological Survey）",
+};
+
+const GLARUS_THRUST: TerrainEntry = {
+  id: "glarus-thrust",
+  nameZh: "格拉鲁斯逆冲断层（萨多纳构造区）",
+  nameEn: "Glarus Thrust / Tectonic Arena Sardona",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "青格尔峰（Tschingelhörner）与“马丁洞”", lon: 9.264, lat: 46.902, elevation: 2846, kind: "escarpment" },
+  bbox: [9.00, 46.78, 9.55, 47.02],
+  viewScale: 1.4,
+  label: { lon: 9.26, lat: 46.90, rotation: 0 },
+  source: "格拉鲁斯逆冲断层（萨多纳构造区，世界遗产）：一条近水平的逆冲面，约2.5—3亿年前的岩石沿它被向北推了约35公里、叠在约3500—5000万年前的岩层之上——“老岩在上、新岩在下”，山坡上是一条清晰的界线（“洛克塞滕线”）；19世纪以来的经典造山研究地（UNESCO / Swiss Geological Survey）",
+};
+
+const MONTE_SAN_GIORGIO: TerrainEntry = {
+  id: "monte-san-giorgio",
+  nameZh: "圣乔治山",
+  nameEn: "Monte San Giorgio",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "圣乔治山", lon: 8.919, lat: 45.918, elevation: 1097, kind: "peak" },
+  bbox: [8.86, 45.87, 8.97, 45.96],
+  label: { lon: 8.919, lat: 45.918, rotation: 0 },
+  source: "圣乔治山：卢加诺湖边一座林木覆盖的金字塔形小山，世界遗产——出土了全球保存最好的中三叠世（约2.4亿年前）海洋生物化石群（鱼龙类爬行动物、鱼类、无脊椎动物），保存在缺氧潟湖沉积的黑色沥青质页岩里（UNESCO）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -4577,6 +4704,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   GULLFOSS, DETTIFOSS, JOKULSARGLJUFUR, SKOGAFOSS, HAUKADALUR_GEYSIR, KRAFLA,
   MYVATN, REYKJANES_PENINSULA, REYNISFJARA, LATRABJARG, VESTMANNAEYJAR,
   THJORSA, JOKULSA_A_FJOLLUM,
+  // ===== 欧洲 / 瑞士 =====
+  BERNESE_ALPS, PENNINE_ALPS, MATTERHORN, RHAETIAN_ALPS, GOTTHARD_MASSIF,
+  JURA_MOUNTAINS, GLARUS_THRUST, MONTE_SAN_GIORGIO,
 ];
 
 /**
@@ -4674,6 +4804,13 @@ const WIDE_VIEW: Record<string, number> = {
   "ryukyu-islands": 2.6,
   "shinano-river": 2.0,
   "tone-river": 2.1,
+  // 欧洲 / 瑞士
+  "bernese-alps": 1.6,
+  "pennine-alps": 1.5,
+  "rhaetian-alps": 1.4,
+  "gotthard-massif": 1.5,
+  "jura-mountains": 2.2,
+  "glarus-thrust": 1.4,
   // 欧洲 / 冰岛
   askja: 1.5,
   thingvellir: 1.6,
