@@ -30,7 +30,12 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useSentenceHighlight } from "@/components/useSentenceHighlight";
 import RegionSelector from "@/components/RegionSelector";
 import ModeToggle from "@/components/ModeToggle";
+import CityMarkers from "@/components/CityMarkers";
 import { type AppMode, getStoredMode, setStoredMode } from "@/lib/app-mode";
+import { getCitiesForCountry, getCityById } from "@/lib/places-registry";
+import { resolveTravelGuide, travelGuideToSections } from "@/lib/travel-lesson";
+import { travelRailGroups } from "@/lib/travel-rail";
+import type { PanelSection } from "@/components/ReadingPanel";
 import {
   REGIONS,
   setActiveRegion,
@@ -232,6 +237,10 @@ export default function ExplorerApp() {
   const [hoveredTerrainId, setHoveredTerrainId] = useState<string | null>(null);
   const [language, setLanguage] = useState<Language>("zh-CN");
   const [mode, setMode] = useState<AppMode>(getStoredMode);
+  /** 旅游模式：当前选中的城市 / 概览 id */
+  const [travelId, setTravelId] = useState<string | null>(null);
+  const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);
+  const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);
   const [activeRegion, setActiveRegionState] = useState<string>(() => {
     try {
       return (typeof window !== "undefined" && localStorage.getItem("fge-active-region")) || "china";
@@ -334,6 +343,9 @@ export default function ExplorerApp() {
       setActiveTerrain(null);
       setLesson(null);
       setDisplayCards(null);
+      setTravelId(null);
+      setTravelSections(null);
+      setTravelPlace(null);
       narrationCancelledRef.current = false;
 
       // 先拉高到初始高度，再飞向区域中心
@@ -770,6 +782,12 @@ export default function ExplorerApp() {
     }
   }, [activeRegion]);
 
+  const clearTravelSelection = useCallback(() => {
+    setTravelId(null);
+    setTravelSections(null);
+    setTravelPlace(null);
+  }, []);
+
   const handleModeChange = useCallback(
     (m: AppMode) => {
       if (m === mode) return;
@@ -781,10 +799,57 @@ export default function ExplorerApp() {
       setDisplayCards(null);
       setRouteNarration(null);
       setFlyoverName(null);
+      clearTravelSelection();
       flyToCountryOverview();
     },
-    [mode, flyToCountryOverview, stopSpeaking],
+    [mode, flyToCountryOverview, stopSpeaking, clearTravelSelection],
   );
+
+  const handleSelectCity = useCallback(
+    (id: string) => {
+      const guide = resolveTravelGuide(id, language);
+      if (!guide) return;
+      const isOverview = id.endsWith("-overview");
+      const city = getCityById(id);
+      const name = isOverview
+        ? language === "zh-CN"
+          ? activeRegionName
+          : activeRegionNameEn
+        : city
+          ? language === "zh-CN"
+            ? city.nameZh
+            : city.nameEn
+          : id;
+      setTravelId(id);
+      setTravelPlace({ name });
+      setTravelSections(travelGuideToSections(guide, language));
+      setActiveTerrain(null);
+      setLesson(null);
+      if (city) mapRef.current?.focusCity(city.lon, city.lat, city.view);
+      else flyToCountryOverview();
+    },
+    [language, activeRegionName, activeRegionNameEn, flyToCountryOverview],
+  );
+
+  // 语言切换时，重新解析当前旅游内容
+  useEffect(() => {
+    if (mode !== "travel" || !travelId) return;
+    const guide = resolveTravelGuide(travelId, language);
+    if (!guide) return;
+    const city = getCityById(travelId);
+    const name = travelId.endsWith("-overview")
+      ? language === "zh-CN"
+        ? activeRegionName
+        : activeRegionNameEn
+      : city
+        ? language === "zh-CN"
+          ? city.nameZh
+          : city.nameEn
+        : travelId;
+    setTravelPlace({ name });
+    setTravelSections(travelGuideToSections(guide, language));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [language, mode, travelId]);
 
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-[color:var(--bg)] font-sans">
@@ -808,10 +873,14 @@ export default function ExplorerApp() {
             language={language}
           />
         )}
-        {mode === "travel" && !showIntro && (
-          <div className="pointer-events-none absolute inset-x-0 bottom-24 z-30 text-center text-[12px] text-[color:var(--ink-dim)]">
-            {t("travel.underConstruction", language)}
-          </div>
+        {mode === "travel" && (
+          <CityMarkers
+            mapRef={mapRef}
+            cities={getCitiesForCountry(activeRegion)}
+            activeId={travelId}
+            language={language}
+            onSelect={handleSelectCity}
+          />
         )}
         {terrainMode === "ellipsoid" && (
           <div className="pointer-events-none absolute bottom-20 left-1/2 z-20 max-w-md -translate-x-1/2 rounded-full border border-[color:var(--accent-line)] bg-[color:var(--panel-solid)] px-4 py-2 text-center text-[11px] text-[color:var(--ink-dim)]">
@@ -859,27 +928,32 @@ export default function ExplorerApp() {
         </div>
       </header>
 
-      {!showIntro && mode === "study" && (
+      {!showIntro && (
         <IndexRail
           language={language}
-          groups={railGroups}
-          activeId={activeTerrain?.id ?? null}
-          onSelect={handleSelectById}
+          groups={mode === "travel" ? travelRailGroups(activeRegion, language) : railGroups}
+          activeId={mode === "travel" ? travelId : (activeTerrain?.id ?? null)}
+          onSelect={mode === "travel" ? handleSelectCity : handleSelectById}
         />
       )}
 
       <ReadingPanel
         language={language}
         terrain={
-          activeTerrain
-            ? {
-                name: getTerrainName(activeTerrain.name, language),
-                elevation: activeTerrain.elevation,
-              }
-            : null
+          mode === "travel"
+            ? travelPlace
+              ? { name: travelPlace.name, elevation: NaN }
+              : null
+            : activeTerrain
+              ? {
+                  name: getTerrainName(activeTerrain.name, language),
+                  elevation: activeTerrain.elevation,
+                }
+              : null
         }
-        lesson={lesson}
-        knowledge={activeTerrain?.knowledge ?? null}
+        lesson={mode === "travel" ? null : lesson}
+        sections={mode === "travel" ? travelSections : null}
+        knowledge={mode === "travel" ? null : (activeTerrain?.knowledge ?? null)}
         isSpeaking={isSpeaking}
         isRouteFlying={isRouteFlying}
         routeNarration={routeNarration}
@@ -887,10 +961,17 @@ export default function ExplorerApp() {
         activeSentenceIndex={activeSentenceIndex}
         activeSection={activeSection}
         onPlay={() => {
-          if (lesson) void speakLessonWithHighlight(lesson);
+          if (mode === "travel") {
+            if (travelSections) {
+              const txt = travelSections.map((s) => s.text).join(" ");
+              void speakText(txt);
+            }
+          } else if (lesson) {
+            void speakLessonWithHighlight(lesson);
+          }
         }}
         onStop={stopSpeaking}
-        onClose={closePanel}
+        onClose={mode === "travel" ? clearTravelSelection : closePanel}
       />
 
       {!showIntro && mode === "study" && !activeTerrain && activeRegion === "china" && (
