@@ -5017,6 +5017,103 @@ const JAEREN: TerrainEntry = {
   source: "耶伦：挪威最大的一片低平陆地，位于西南端；坐落在一道延入海中的大终碛之上，下伏片麻岩与花岗岩，表层是冰川带来的砂与黏土，土壤肥沃、是挪威主要农牧区之一；海岸“耶伦海滩”（Jærstrendene）长约70km，砂滩、砾滩与碛石海岸相间，为景观保护区（NGU / Miljødirektoratet）",
 };
 
+const DOVREFJELL: TerrainEntry = {
+  id: "dovrefjell",
+  nameZh: "多夫勒山",
+  nameEn: "Dovrefjell",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "斯诺赫塔峰（Snøhetta，2286m）", lon: 9.267, lat: 62.332, elevation: 2286, kind: "peak" },
+  bbox: [8.30, 62.05, 9.95, 62.70],
+  axis: [[8.45, 62.25], [9.85, 62.45]],
+  viewScale: 1.7,
+  label: { lon: 9.10, lat: 62.40, rotation: -14 },
+  source: "多夫勒山：挪威中部一片东西向约160km 的山地高原，是东挪威与特伦德拉格之间的天然屏障，也横跨斯堪的纳维亚主分水岭；最高点斯诺赫塔峰2286m；麝牛1930年代从格陵兰引入、二战后重新引入，多夫勒是挪威唯一能见到麝牛的地方；多夫勒山-松达尔山国家公园是挪威最大的连片保护区（Miljødirektoratet）",
+};
+
+const RONDANE: TerrainEntry = {
+  id: "rondane",
+  nameZh: "龙达讷山",
+  nameEn: "Rondane",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "龙达讷宫（Rondeslottet，2178m）", lon: 9.816, lat: 61.906, elevation: 2178, kind: "peak" },
+  bbox: [9.55, 61.70, 10.15, 62.10],
+  axis: [[9.65, 61.78], [10.05, 62.02]],
+  viewScale: 1.6,
+  label: { lon: 9.85, lat: 61.95, rotation: -20 },
+  source: "龙达讷山：1962年设立、挪威第一个国家公园，10 座逾2000m 的山峰围着大片高原；基岩是约5—6亿年前浅海沉积后变质的石英岩类，冰期的冰川刻出圆缓的峰顶、冰斗和 U 形谷；重要的野生驯鹿栖息地；易卜生《培尔·金特》部分场景设在龙达讷（Miljødirektoratet）",
+};
+
+const TROLLHEIMEN: TerrainEntry = {
+  id: "trollheimen",
+  nameZh: "巨魔山",
+  nameEn: "Trollheimen",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "因讷达尔谷与因讷达尔塔（Innerdalstårnet，1394m）", lon: 8.870, lat: 62.716, elevation: 900, kind: "escarpment" },
+  bbox: [8.60, 62.55, 9.55, 62.90],
+  axis: [[8.75, 62.62], [9.40, 62.82]],
+  viewScale: 1.5,
+  label: { lon: 9.10, lat: 62.78, rotation: -16 },
+  source: "巨魔山：特伦德拉格与诺尔穆勒之间的山地，处在海洋性与大陆性气候的过渡带，岩性多变——西部岩石坚硬、山形尖峭（如“大教堂”般的因讷达尔塔），东部多片岩、山形浑圆；最高点大特罗拉峰约1850m；因讷达尔1967年成为挪威第一个自然保护区；巨魔山景观保护区（Miljødirektoratet）",
+};
+
+const JOSTEDALSBREEN: TerrainEntry = {
+  id: "jostedalsbreen",
+  nameZh: "约斯特达尔冰川",
+  nameEn: "Jostedalsbreen",
+  category: "valley",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "约斯特达尔冰原（尼加冰舌 Nigardsbreen 上方）", lon: 7.050, lat: 61.660, elevation: 1900, kind: "escarpment" },
+  bbox: [6.65, 61.30, 7.55, 61.95],
+  axis: [[6.85, 61.40], [7.25, 61.90]],
+  viewScale: 1.7,
+  label: { lon: 7.05, lat: 61.62, rotation: -70 },
+  pois: [
+    { name: "尼加冰舌（Nigardsbreen）", lon: 7.133, lat: 61.717, note: "最著名的冰舌之一，下伸至谷底湖" },
+    { name: "布里克斯达尔冰舌（Briksdalsbreen）", lon: 6.895, lat: 61.664, note: "1990年代曾一度前进、后快速退缩" },
+  ],
+  source: "约斯特达尔冰川：欧洲大陆最大的冰川，冰盖面积约458 km²（2022年），呈南北向的高原冰帽，向四周谷地伸出几十条冰舌（尼加、布里克斯达尔等）；它并非上一次冰期的残留——约8000年前曾完全消融，之后在全新世重新形成；约斯特达尔冰川国家公园；NVE 长期监测其物质平衡（NVE / Norsk Polarinstitutt）",
+};
+
+const FOLGEFONNA: TerrainEntry = {
+  id: "folgefonna",
+  nameZh: "佛尔格冰川",
+  nameEn: "Folgefonna",
+  category: "valley",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "南佛尔格冰帽（Søndre Folgefonna）", lon: 6.350, lat: 60.030, elevation: 1550, kind: "escarpment" },
+  bbox: [6.10, 59.80, 6.60, 60.35],
+  axis: [[6.30, 59.85], [6.40, 60.30]],
+  viewScale: 1.6,
+  label: { lon: 6.35, lat: 60.05, rotation: -78 },
+  source: "佛尔格冰川：佛尔格半岛上的三块温冰帽（北、中、南），合计面积约207 km²、最厚近400m，是挪威本土第三大冰川；夹在哈当厄峡湾和挪威海之间，属海洋性冰川，降雪极丰；佛尔格冰川国家公园（NVE / Miljødirektoratet）",
+};
+
+const SVARTISEN: TerrainEntry = {
+  id: "svartisen",
+  nameZh: "斯瓦蒂森冰川",
+  nameEn: "Svartisen",
+  category: "valley",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "西斯瓦蒂森（Vestisen）与恩加冰舌（Engabreen）", lon: 13.800, lat: 66.640, elevation: 1200, kind: "escarpment" },
+  bbox: [13.45, 66.35, 14.30, 66.90],
+  axis: [[13.60, 66.45], [14.10, 66.85]],
+  viewScale: 1.7,
+  label: { lon: 13.85, lat: 66.68, rotation: -60 },
+  pois: [
+    { name: "恩加冰舌（Engabreen）", lon: 13.720, lat: 66.660, note: "冰舌前缘一度下伸到近海平面，是欧洲大陆位置最低的冰川末端之一；NVE 在其下设有冰下实验室" },
+  ],
+  source: "斯瓦蒂森（“黑冰”）：挪威本土第二大冰川，分为西斯瓦蒂森与东斯瓦蒂森两片，合计约370 km²，位于诺尔兰郡；北极圈从冰川南部穿过；恩加冰舌一度下伸到近海平面；NVE 自1970年代监测，并在恩加冰舌下设有冰下实验室（NVE）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -5130,6 +5227,7 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 欧洲 / 挪威 =====
   SCANDINAVIAN_MOUNTAINS_NORWAY, JOTUNHEIMEN, HARDANGERVIDDA, FINNMARKSVIDDA,
   SOGNEFJORD, GLOMMA, LOFOTEN, JAEREN,
+  DOVREFJELL, RONDANE, TROLLHEIMEN, JOSTEDALSBREEN, FOLGEFONNA, SVARTISEN,
 ];
 
 /**

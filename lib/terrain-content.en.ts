@@ -4640,4 +4640,94 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The fertile soil and mild winters have made Jæren one of Norway's most densely populated and agriculturally developed regions for thousands of years, with many Bronze Age burials and Iron Age stone farmsteads. Drainage and land clearance in the 19th century turned large mires into farmland. Today Jæren is Norway's most important dairy and meat region and supplies most of Stavanger's milk; the Jæren beaches have been a protected landscape since 1977.",
   },
+
+  dovrefjell: {
+    seeing:
+      "Dovrefjell in central Norway is a mountain plateau running about 160 km east–west, a natural barrier between eastern Norway and the Trøndelag region, and it straddles the main watershed of the Scandinavian Mountains — rainfall here parts, some toward the Atlantic and some the other way. The high point, Snøhetta, is 2,286 m. The landform is open plateau tundra with a few rounded or partly sharp peaks standing above it, cut by deep glacial valleys. The west is coastal and wetter, the east lies in a rain shadow, dry with little snow.",
+    formation:
+      "Dovrefjell's rock consists of sheets stacked and thrust up during the Caledonian orogeny, then eroded down over long time into a plateau surface. Harder rock around Snøhetta was left as high mountains, and Quaternary glaciers dug deep along the joints, cutting deep valleys and cirques into the plateau, with small glaciers and large permanent snowfields left on the summits. The plateau surface today shows classic periglacial forms — stone circles, frost heave mounds and freeze–thaw churned ground.",
+    observation:
+      "From the air Dovrefjell is a vast pale, gently undulating plateau tundra running to the horizon, with a few dark, snow-topped high mountains (Snøhetta most prominent) standing on it like islands. The plateau is cut by two or three deep valleys (Drivdalen, Sunndalen and others) whose floors hold forest, road and railway. In winter the whole area is white, with only the lines of the valleys and the wind-scoured rock.",
+    distinguish:
+      "Dovrefjell borders Jotunheimen and both belong to the Scandinavian Mountains, but Dovrefjell is more \"a plateau carrying a few high mountains\" while Jotunheimen is \"a dense cluster of peaks\"; Dovrefjell's plateau surface is more intact and open. It differs from Hardangervidda in that Dovrefjell is higher and has distinct isolated peaks (Snøhetta), whereas Hardangervidda has almost none.",
+    concept:
+      "Dovrefjell is a good place to grasp the idea of a \"watershed\": the highest belt of a mountain range is often the divide between neighbouring river systems, precipitation on one side draining to one sea and the other side elsewhere. The main Scandinavian divide broadly follows the range but is not always on the highest peaks — it depends on the trend of the valleys and the slight tilt of the plateau surface. To locate a divide, follow the direction rivers flow rather than just the height of the mountains. A common misconception is that a divide must follow one clear ridge line.",
+    history:
+      "Dovrefjell has always been the route between eastern Norway and Trøndelag; the King's Road (Kongevegen) and later the railway and highway all cross here, and the plateau holds prehistoric reindeer trapping pits. Musk oxen were brought to Dovre from Greenland in the 1930s, nearly died out during the Second World War, and were reintroduced afterwards; this is now the only place in Norway, and one of few in Europe, to see wild musk oxen. In Norwegian culture Dovrefjell is a symbol of permanence — the 1814 constitutional oath used the phrase \"united and loyal until Dovre falls\". The Dovrefjell–Sunndalsfjella National Park is Norway's largest continuous protected area.",
+  },
+
+  rondane: {
+    seeing:
+      "Rondane in inland southern Norway, between Dovrefjell and Jotunheimen, was made Norway's first national park in 1962. It has ten peaks over 2,000 m around a broad plateau, the highest, Rondeslottet, 2,178 m. The summits are generally rounded, with deep cirques and U-shaped valleys between them and emerald tarns on the valley floors. Vegetation is sparse; much of the ground is grey-white scree and lichen tundra, giving a clean, empty, almost lunar feel.",
+    formation:
+      "Rondane's bedrock is quartzite-type rock, metamorphosed from shallow-marine sediments about 500 to 600 million years old, very hard and resistant. After the whole block was uplifted, Quaternary ice sheets and valley glaciers dug deep along its joints and weak zones, scooping out rings of cirques and cutting the massif into radially arranged deep valleys, while the summits were ground rounded. After the ice, freeze–thaw broke the surface rock into large scree slopes — the source of Rondane's \"dusty\" look.",
+    observation:
+      "From the air Rondane is a cluster of pale, round-topped high mountains, with several deep valleys radiating from the centre and blue-green tarns set in them. Large areas of the slopes are bare scree, with sparse birch and tundra only low down and on the valley floors. It stands clearly above the surrounding plateau, its outline compact and distinct.",
+    distinguish:
+      "Rondane and Jotunheimen are both 2,000 m peak clusters, but Jotunheimen is dark gabbro with sharp shapes and large glaciers, while Rondane is pale quartzite, rounded, with almost no present-day glaciers. Rondane borders Dovrefjell, but Rondane is more compact with greater relief, Dovrefjell more of an open plateau. To recognise these \"rounded quartzite mountains\", look for the pale colour, the large scree slopes and the lack of sharp summits.",
+    concept:
+      "Rondane is another sample of \"rock type controls mountain shape\": quartzite is hard but well jointed, and glaciers and freeze–thaw break and round it along the joints, giving a combination of rounded tops and scree slopes rather than the knife-edge spires of gabbro. To tell what rock a mountain is built of, look at its colour, its summit form, and the size and shape of the debris. A common misconception is that all high mountains should be sharp — shape actually depends on rock properties and the mode of erosion.",
+    history:
+      "Rondane has been a reindeer hunting ground since the Stone Age, with many trapping pits and guiding walls on the plateau, and it is still an important wild-reindeer area (the 2003 enlargement of the national park was specifically to protect reindeer migration). In the 19th century painters and writers made Rondane a symbol of the Norwegian mountains — part of Ibsen's Peer Gynt is set here, and Harald Sohlberg's famous painting Winter Night in the Mountains shows the Rondane skyline.",
+  },
+
+  trollheimen: {
+    seeing:
+      "Trollheimen in central Norway, on the border of Trøndelag and Nordmøre, is a hiking area. It sits right in the transition between a maritime and a continental climate, and with its varied rock types it shows very different landforms over a small area — from rounded, vegetated fells to sharp rock spires and deeply cut valleys. The high point, Store Trolla, is about 1,850 m. Place names like \"Trollhetta\" (troll's hat) and \"Litjhelvete\" (Little Hell) reflect the hold this range has on the folk imagination.",
+    formation:
+      "Trollheimen's rock includes both hard plutonic rock and softer schist. After uplift, Quaternary glaciers carved the two very differently: the hard rock was cut into sharp horns and spires (Innerdalstårnet stands like a stone cathedral spire), while the softer schist was ground into rounded fells. The west is coastal and wet, its mountains sharper and greener; the east is drier, its mountains gentler.",
+    observation:
+      "From the air Trollheimen is a mixed-texture mountain area — sharp, small-glaciered rock peaks on one side, rounded, well-vegetated fells on the other, with a few deep valleys between. The best known, Innerdalen, is a broad glacially carved U-shaped valley with a flat floor and pasture, ringed by sharp peaks, with the spire of Innerdalstårnet especially striking.",
+    distinguish:
+      "Trollheimen, Jotunheimen and Rondane are all central-Norway mountain areas, but Trollheimen's distinctive feature is \"many mountain forms in one place\" — because it straddles a double transition of both climate and rock type. Jotunheimen is almost all gabbro spires, Rondane almost all quartzite domes, Trollheimen has both. To recognise this \"transition-zone mountain area\", look for large changes in landform type over a short distance.",
+    concept:
+      "Trollheimen shows that landforms are the joint result of \"rock plus climate plus erosion\": the same glacial action produces spires on hard rock and rounded fells on soft rock; and the same range is carved deeper on its wetter side, where the glaciers are more active. To understand why a mountain area \"looks messy\", look separately at its geology and its rainfall pattern. A common misconception is that a mountain region's landforms should be uniform throughout.",
+    history:
+      "Innerdalen became Norway's first nature reserve in 1967; it was mountain summer pasture (seter), livestock driven up into the valley in summer, and it still keeps its traditional huts, open to hikers. Trollheimen carries one of the classic hut-to-hut circuits of the Norwegian Trekking Association (DNT). The many \"troll\" place names here are a typical example of Norwegian folklore personifying rugged terrain.",
+  },
+
+  jostedalsbreen: {
+    seeing:
+      "Jostedalsbreen in western Norway, between the Sognefjord and the Nordfjord, is the largest glacier on mainland Europe, with an ice cap area of about 458 km² (2022). It is a north–south, gently domed plateau ice cap, sending dozens of outlet glaciers down into the surrounding valleys, the best known being Nigardsbreen and Briksdalsbreen; some outlets reach right down into forested low valleys, making a stark \"orchard at the foot of the glacier\" contrast.",
+    formation:
+      "Jostedalsbreen is not leftover ice from the last ice age. About 8,000 years ago the Scandinavian ice sheet was long gone and this plateau too was completely ice-free and grew birch. The climate then cooled and snowfall increased, and ice built up again on the plateau to form today's ice cap — a clear \"re-glaciation\" within the Holocene (the last roughly 10,000 years). The ice cap is 400–500 m thick in places and flows slowly outward under its own weight, the outlet glaciers planing valley floors into U-shapes and leaving polished rock and moraine.",
+    observation:
+      "From the air Jostedalsbreen is a white, gently undulating plateau ice sheet lying across the deep-green fjord mountains, its edges broken into icefalls and outlet tongues dropping into the valleys on either side. Below Nigardsbreen is a milky-blue glacial lake; around Briksdalsbreen the tongue ends among green valley and waterfalls. Arc-shaped crevasse patterns and wind-drifted snow ridges show on the ice cap's surface.",
+    distinguish:
+      "Jostedalsbreen is a \"plateau ice cap\", unlike the \"valley glaciers\" of Jotunheimen wedged between peaks — an ice cap forms its own continuous upland ice sheet and sends outlets in all directions, while a valley glacier is confined to one valley by the terrain. It is the same kind of thing as Vatnajökull in Iceland (an ice cap), except that Iceland's ice cap also sits on volcanoes. To recognise an \"ice cap\", look for one large continuous, gently domed body of ice rather than separate tongues.",
+    concept:
+      "Jostedalsbreen is a good example of \"a glacier is not the same as an ice-age relic\": as long as its \"income\" (snowfall) exceeds its \"expenditure\" (melt, evaporation) over the long term, a glacier can form and persist, and can even regrow in the warm Holocene. To judge a glacier's \"health\", look at its mass balance — the budget of the accumulation and ablation zones. A common misconception is that today's glaciers are all direct remnants of the ice ages tens of thousands of years ago.",
+    history:
+      "The glacier's outlet tongues advanced strongly during the \"Little Ice Age\" (roughly the 16th–19th centuries), overrunning farmland in the valleys; parish records preserve farmers' petitions for tax relief on damaged land, a valuable source for historical climate. In the late 20th century tongues such as Briksdalsbreen briefly re-advanced on heavy snow and became internationally famous tourist sites; since 2000 Jostedalsbreen's glaciers have generally been retreating fast. Jostedalsbreen National Park was established in 1991, and the NVE monitors the glacier's mass balance over the long term.",
+  },
+
+  folgefonna: {
+    seeing:
+      "Folgefonna, on the Folgefonna peninsula between the Hardangerfjord and the Norwegian Sea in southwestern Norway, is in fact three separate ice caps (north, middle, south) totalling about 207 km² — the third-largest glacier on mainland Norway. The southern ice cap is the largest, nearly 400 m thick at most. Wedged between fjord and open sea, with very heavy snowfall, Folgefonna is a classic \"maritime glacier\" — near the melting point, fast-flowing and sensitive to climate change.",
+    formation:
+      "Folgefonna sits on a fairly flat plateau surface, itself an uplifted paleic surface. Abundant maritime snowfall builds up and compacts into ice on the plateau, and the ice caps send short, steep outlet tongues toward the surrounding fjords. Through the Quaternary the glaciers here have repeatedly expanded and shrunk, polishing the surrounding rock and deepening the valleys; the kilometre-high walls on either side of the fjords are the result of long glacial scour.",
+    observation:
+      "From the air Folgefonna is several conspicuous white domes along the spine of the Folgefonna peninsula, flanked by the deep blue of the Hardangerfjord and the Norwegian Sea. The ice-cap edges break into icefalls, below them steep deep-green slopes, waterfalls and fjord. From the ice cap you can see both fjord and open sea at once — this stacked \"glacier–fjord–sea\" view is a typical composition of Norway's west coast.",
+    distinguish:
+      "Folgefonna and Jostedalsbreen are both maritime plateau ice caps, but Folgefonna is smaller, further south, and split into three; it flows faster and varies more seasonally than inland glaciers. It differs from an Alpine valley glacier — Folgefonna is a self-contained ice cap, not attached to any one peak. To recognise a \"maritime glacier\", look at whether its location has very heavy snowfall, whether its ice is near 0 °C, and whether its outlet tongues are short and active.",
+    concept:
+      "Folgefonna is a sample for understanding \"maritime versus continental glaciers\": a coastal glacier gets a lot of snow and also melts a lot, turning its mass over fast, like a high-revving machine, and responds quickly to climate swings; an inland cold-dry glacier turns over slowly and responds sluggishly. To tell which kind a glacier is, look at its annual accumulation and its ice temperature. A common misconception is that all glaciers respond to warming at the same speed.",
+    history:
+      "The valleys around Folgefonna have a tradition of summer pasture. From the 18th century the paths over the ice cap were a short cut between the fjord villages on either side, and among the earliest \"glacier tourism\" routes. Meltwater from the ice cap is now used for hydropower. Folgefonna National Park was established in 2005.",
+  },
+
+  svartisen: {
+    seeing:
+      "Svartisen (\"the black ice\") in Nordland county in northern Norway is the second-largest glacier on mainland Norway, split into western and eastern Svartisen, together about 370 km². The Arctic Circle runs across the southern part of the glacier. Its best-known outlet is Engabreen — historically its snout reached down close to sea level, one of the lowest-lying glacier fronts on mainland Europe, and you can walk to the ice from the fjord shore.",
+    formation:
+      "Svartisen is a plateau ice cap sitting on a rolling bedrock upland, split into east and west halves by a deep valley (Vesterdalen). Heavy snowfall accumulates into ice on the plateau and sends outlet tongues down into the lowlands. As the glacier has advanced and retreated repeatedly, it has polished the limestone and gneiss beneath it into smooth rock, deep grooves and marble caves (some of Norway's longest caves are in this area). The recently exposed ground in front of Engabreen is a textbook site for watching \"a glacier just retreated, plants not yet arrived\".",
+    observation:
+      "From the air Svartisen is two large white ice sheets lying over the dark mountains of northern Norway, a deep-green valley between them. On the west side Engabreen hangs like a blue-white tongue from the ice cap, almost reaching the Holandsfjord, with a milky-blue proglacial lake and a band of freshly bared pale rock in front of it. Crevasses and dirt bands show clearly on the ice-cap surface.",
+    distinguish:
+      "Svartisen and Jostedalsbreen are both large Norwegian plateau ice caps, but Svartisen is further north, straddles the Arctic Circle, and is split in two by a deep valley. It differs from the glaciers of the dry cold interior — Svartisen is near the coast with heavy snowfall and is still fairly maritime. To recognise this kind of \"ice cap split by a deep valley\", look at whether it was originally one sheet, separated by a valley cut later.",
+    concept:
+      "Svartisen's Engabreen is a sample for understanding \"glacier snout elevation\": how low a tongue can reach depends on the amount of ice \"supplied\" from upstream and the rate of melt along the way — with good supply, a steep gradient and fast flow, a tongue can push far below the snowline, even close to sea level. To judge a tongue's vigour, look at the gap between its snout elevation and the snowline. A common misconception is that a high-latitude glacier's snout must be lower than a low-latitude one's — it depends more on snowfall and terrain.",
+    history:
+      "Because it is easy to reach, Engabreen has been a subject of glacier research and tourism since the 19th century, and the moraine ridges of different years in front of it clearly record the tongue's advances and retreats. The NVE has monitored Svartisen's mass balance since the 1970s and has driven a tunnel beneath Engabreen to build a subglacial laboratory, studying the sliding and erosion at the base of the glacier directly — one of only a handful of such facilities in the world. The glacier's meltwater is used on a large scale for hydropower.",
+  },
 };
