@@ -63,11 +63,16 @@ export default function IndexRail({
         </button>
         {groups.map((g) => {
           const isActiveCat = activeGroup?.type === g.type;
+          const isDirect = g.type === "overview" && g.items.length === 1;
           return (
             <button
               key={g.type}
               type="button"
               onClick={() => {
+                if (isDirect) {
+                  pick(g.items[0].id);
+                  return;
+                }
                 setPinned(true);
                 setCat(g.type);
               }}
@@ -127,21 +132,26 @@ export default function IndexRail({
             <>
               <p className="editorial-kicker mb-4">{t("rail.title", language)}</p>
               <div className="flex flex-col">
-                {groups.map((g) => (
-                  <button
-                    key={g.type}
-                    type="button"
-                    onClick={() => setCat(g.type)}
-                    className="flex items-center justify-between border-b border-[color:var(--hairline)] py-2.5 text-left transition-colors hover:text-[color:var(--ink)]"
-                  >
-                    <span className="editorial-title text-[15px] text-[color:var(--ink-body)]">
-                      {g.label}
-                    </span>
-                    <span className="text-[11px] tabular-nums text-[color:var(--ink-faint)]">
-                      {g.items.length}
-                    </span>
-                  </button>
-                ))}
+                {groups.map((g) => {
+                  const isDirect = g.type === "overview" && g.items.length === 1;
+                  return (
+                    <button
+                      key={g.type}
+                      type="button"
+                      onClick={() => (isDirect ? pick(g.items[0].id) : setCat(g.type))}
+                      className="flex items-center justify-between border-b border-[color:var(--hairline)] py-2.5 text-left transition-colors hover:text-[color:var(--ink)]"
+                    >
+                      <span className="editorial-title text-[15px] text-[color:var(--ink-body)]">
+                        {g.label}
+                      </span>
+                      {!isDirect && (
+                        <span className="text-[11px] tabular-nums text-[color:var(--ink-faint)]">
+                          {g.items.length}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </>
           )}
