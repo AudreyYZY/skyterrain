@@ -166,6 +166,23 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "stewart-island": "national",
   "auckland-volcanic-field": "national",
   "whakaari-white-island": "regional",
+
+  // 英国
+  "scottish-highlands": "national",
+  "lake-district": "national",
+  pennines: "national",
+  snowdonia: "national",
+  cairngorms: "national",
+  "jurassic-coast": "national",
+  "giants-causeway": "national",
+  "white-cliffs-of-dover": "national",
+  "great-glen": "national",
+  "river-thames": "national",
+  "river-severn": "national",
+  "loch-lomond": "national",
+  "lough-neagh": "national",
+  "isle-of-skye": "national",
+  "outer-hebrides": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
