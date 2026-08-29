@@ -4010,4 +4010,109 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The \"Mývatn Fires\" of 1724–1729 destroyed farms nearby. In 1975, just as the Krafla geothermal power station began drilling, the \"Krafla Fires\" began, and drilling and eruptions went on at the same time, with the project repeatedly disrupted. This complete observational dataset was later widely used to build physical models of dike intrusion and rift spreading. The Krafla geothermal power station is still operating today, and the nearby Víti crater and lava fields are a popular hiking area.",
   },
+
+  "myvatn": {
+    seeing:
+      "Mývatn (Icelandic for \"midge lake\"), in north-eastern Iceland, is a shallow, nutrient-rich lake only about 2.5 m deep on average. Around it is a concentrated museum of volcanic landforms: a cluster of small cones (\"pseudocraters\") on the shore, a maze of black lava nearby, a tuff ring, and steaming geothermal areas. The \"midge\" of the name refers to the clouds of non-biting midges that swarm out of the lake in summer — and it is these insects that feed the most species-rich community of waterbirds in Europe.",
+    formation:
+      "Today's Mývatn formed about 2,300 years ago: a large basaltic lava flow came from the east and dammed the valley of the Laxá river, and the water ponded behind the lava barrier into a lake. As the scorching lava flowed over the lake bed and the surrounding wetland, it instantly vaporised the water in the ground and mud, and the steam blasted the lava above it apart into a cluster of small cones with no magma conduit — these are \"pseudocraters\" (rootless cones), and the group at Skútustaðir on the lake shore is the classic example.",
+    observation:
+      "From the air Mývatn is an irregular pale-blue sheet of water full of islands and peninsulas, with dozens of green cones a few metres to tens of metres high (pseudocraters) packed along its southern shore, looking from above like a field of impact craters. East of the lake is black lava field, a near-perfectly circular tuff ring (Hverfjall), and further east the white-steaming Krafla geothermal area.",
+    distinguish:
+      "Mývatn's \"pseudocraters\" look like real volcanic cones, but they have no magma conduit beneath and were not erupted from magma — they were built by steam explosions where a lava flow \"pressed\" onto wet ground — hence \"pseudocraters\" or \"rootless cones\". To recognise pseudocraters, look at whether they occur in a large group, all on one lava flow, with no fissures connecting them.",
+    concept:
+      "Mývatn's pseudocraters are a case study in lava-water interaction: when a lava flow moves over water-bearing ground (wetland, lake bed, riverbank), the water below is rapidly heated and vaporised, and the steam builds up pressure within the lava and then bursts out explosively, throwing lava fragments up into a cone. The key difference from a true volcano is that the heat source is \"above\" (the lava flow), not \"below\" (a magma conduit). A common misconception is that all volcanic cones are built by magma erupting from below.",
+    history:
+      "Diatomite (the shells of diatoms deposited on the lake bed) was mined at Mývatn for filtration and abrasive materials until 2004, when it stopped because of environmental impact. Since 1974 the area has been managed under a specific \"Mývatn-Laxá Conservation Act\". The area's geothermal heat is also used in film and tourism (such as the geothermal bath at Grjótagjá), but over-development and visitor pressure have been ongoing local issues.",
+  },
+
+  "reykjanes-peninsula": {
+    seeing:
+      "The Reykjanes Peninsula, at the south-western corner of Iceland, has Keflavík International Airport on it and is the first piece of Iceland most visitors set foot on. It is geologically remarkable: the Mid-Atlantic Ridge comes \"ashore\" here, the only place in the world where this mid-ocean ridge can be clearly seen on land. The peninsula is covered in young black lava, open ground fissures, and large high-temperature geothermal areas (the famous Blue Lagoon is the outflow lagoon of the Svartsengi geothermal power station).",
+    formation:
+      "The Reykjanes Peninsula has four en-echelon (offset parallel) fissure swarms, corresponding to four volcanic systems. The North American and Eurasian plates separate here at about 2 cm a year, the crust is repeatedly thinned and torn, and basaltic magma rises along the fissures and effuses lava, while heat at depth turns groundwater (much of it infiltrated seawater) into high-temperature geothermal fluid. The peninsula's rock is almost all volcanic rock formed in the last ten-odd thousand years.",
+    observation:
+      "From the air the Reykjanes Peninsula is a gently rolling lowland patched together from lava flows of varying age (new ones black, old ones covered in grey-green moss), crossed by ground fissures and fault scarps parallel to the peninsula's long axis, a line of low scoria cones and shield volcanoes, and several geothermal fields sending up white steam columns. At the western tip the ridge's rift zone drives straight into the Atlantic, with surf breaking on the sea cliffs.",
+    distinguish:
+      "The Reykjanes Peninsula, Þingvellir and Krafla are all on the Mid-Atlantic Ridge: Þingvellir is a large graben, Krafla is the site of a single rifting episode, and Reykjanes is a whole corridor of \"the mid-ocean ridge come ashore\", where you can follow the ridge and see fissures, geothermal areas and shield volcanoes in sequence. The \"Bridge Between Continents\" footbridge on the peninsula spans a sand-filled fissure, symbolising the two plates.",
+    concept:
+      "The Reykjanes Peninsula is a case study in a mid-ocean ridge: the great majority of the world's mid-ocean ridges are two or three kilometres down on the sea floor and cannot be seen; only where a mantle hotspot is superimposed on a ridge, as in Iceland, pushing the sea floor above the surface, can you observe the ridge's rift, parallel fissures, ridge-parallel volcanoes and geothermal areas directly on land. A common misconception is that a \"plate boundary\" is an abstract line on a map — here it is real fissures under your feet, still opening.",
+    history:
+      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). From 2020 large numbers of earthquakes and magma movement began beneath the peninsula, and there have been repeated eruptions since 2021 around Fagradalsfjall and near the town of Grindavík; magma intrusion in late 2023 cracked the ground in Grindavík and the residents were evacuated, and Iceland built barrier walls to protect the town and the Svartsengi power plant. In 2015 it was designated a UNESCO Global Geopark.",
+  },
+
+  "reynisfjara": {
+    seeing:
+      "Reynisfjara, on Iceland's south coast near the town of Vík, is a beach of pure black sand, backed by a cliff of neat hexagonal basalt columns, with black rock stacks (Reynisdrangar) standing offshore. Nearby, Dyrhólaey is a promontory about 120 m high with a large natural sea arch — big enough for a small boat (and, in calm weather, even a small plane) to pass through. This is the southernmost point of mainland Iceland.",
+    formation:
+      "The black sand comes from a basaltic volcano: lava (especially lava that shattered on rapid contact with water) is ground and sorted by the waves and glacial rivers, and what is left is the hard black mineral grains piled up as a beach. The columnar basalt of the cliff formed as a lava body cooled and contracted slowly and evenly and split vertically (the same process as the Giant's Causeway). The Reynisdrangar stacks and the Dyrhólaey arch are the result of waves hollowing out and breaking through fractures along the headlands.",
+    observation:
+      "From the air the Reynisfjara area is a stretch of deep-black beach on the south coast, hard against dark columnar basalt cliffs and a green-topped headland; offshore, a few pointed stacks stand alone in the white surf. On the Dyrhólaey headland to the west there is an obvious \"doorway\", through which you can see the sea on the other side. The beach has strong year-round swell from the open Southern Ocean.",
+    distinguish:
+      "Reynisfjara and Iceland's other black-sand beaches (such as Skeiðarársandur) are all from basaltic volcanic debris, but Reynisfjara is a \"beach\", washed over and finely sorted by the waves, while a sandur is a coarse gravel plain spread out in one go by glacial rivers. Its columnar basalt cliff is the same kind as the Giant's Causeway, only on a smaller scale.",
+    concept:
+      "Reynisfjara's sea arch and stacks are a case study in the evolutionary sequence of coastal erosion landforms: waves first hollow a sea cave along a weakness in a headland, the cave breaks through both sides into an arch, the arch roof collapses to leave a stack separated from the shore, and the stack is then worn down to a low skerry. To recognise this sequence, look at whether the seaward side of a headland has caves, arches and stacks all at once. A common misconception is to take these stacks for rocks that have always stood isolated in the sea.",
+    history:
+      "Because of its striking scenery, Reynisfjara is a popular filming location and photo stop. But the \"sneaker waves\" here — waves that appear suddenly after a long interval, far larger than usual and running far up the beach — have caused several fatal accidents to visitors over the years, and the beach has graduated wave-condition warning signs, with the authorities repeatedly urging visitors to stay well back from the waterline.",
+  },
+
+  "latrabjarg": {
+    seeing:
+      "Látrabjarg, in the Westfjords region of north-western Iceland, is a sea cliff about 14 km long and up to about 440 m high — one of the largest bird cliffs in Europe. In summer, millions of seabirds — Atlantic puffin, razorbill, common guillemot, northern fulmar and others — crowd every ledge of the cliff to nest, an overwhelming sight and sound. Bjargtangar, at the cliff's western end, is the westernmost point of Iceland.",
+    formation:
+      "The cliff face of Látrabjarg is a stack of horizontal basalt lava flows (formed about 15 to 10 million years ago), with softer volcanic debris and palaeosols between the layers. Waves constantly undercut the cliff foot, the hard lava layers collapse to leave a sheer face, and the soft layers are hollowed into horizontal ledges — and these ledges are ideal nesting platforms for seabirds. The whole coast has risen slightly with post-glacial rebound.",
+    observation:
+      "From the air Látrabjarg is a dead-straight, dark, near-vertical high cliff driving into the Atlantic at the westernmost end of the Westfjords, its top gentle green grassland, its face lined with horizontal rock ledges packed with white specks (seabirds). At the cliff foot is a narrow boulder shore and churning surf, with no beach.",
+    distinguish:
+      "Látrabjarg differs from the White Cliffs of Dover and the columnar cliff of Reynisfjara: the White Cliffs are chalk and Reynisfjara is columnar basalt, while Látrabjarg is stacked horizontal basalt lava flows, and its horizontal ledge structure is precisely why it became a giant bird cliff. Iceland has several other large bird cliffs (such as Hornstrandir and Dyrhólaey), and Látrabjarg is the largest.",
+    concept:
+      "Látrabjarg is a case study in rock structure determining ecology: whether a sea cliff can become a large seabird colony depends on whether it has plenty of horizontal ledges of the right width and relative safety (out of reach of land predators) — and that is set directly by the alternation of hard and soft rock layers and the way they weather. To recognise this kind of cliff, look at whether the face is distinctly bedded, with continuous horizontal grooves. A common misconception is that seabirds simply choose cliffs at random.",
+    history:
+      "Westfjords farmers historically lowered themselves on ropes from the cliff top to collect seabird eggs and birds (\"egging\"), an important local food source that also honed great cliff-climbing skill. In 1947, a British trawler ran aground below Látrabjarg, and the locals used their egging rope-descent techniques to rescue the stranded crew from the foot of the cliff — a rescue later made into a documentary film.",
+  },
+
+  "vestmannaeyjar": {
+    seeing:
+      "Vestmannaeyjar lies about 10–30 km off Iceland's south coast, a group of a dozen or so volcanic islands and skerries, all formed by volcanic eruption and all young. Two of the islands are especially famous: Surtsey rose from the sea in an eruption between 1963 and 1967, and has since been strictly protected, with only scientists allowed to land, to study how life (plants, insects, seabirds) colonises brand-new land step by step; Heimaey, the only permanently inhabited island, had the sudden Eldfell eruption in 1973.",
+    formation:
+      "Vestmannaeyjar sits on a seaward extension of Iceland's southern volcanic zone, and the whole group is the product of a young submarine volcanic system less than about 12,000 years old. When magma erupts into shallow water on the sea floor, it explodes violently on contact with water, piling ash and debris into an island (Surtsey formed this way, as a \"phreatomagmatic\" volcanic island); later, quieter lava \"welds\" the island together into something firmer and more erosion-resistant.",
+    observation:
+      "From the air Vestmannaeyjar is a cluster of steep green-topped black-cliffed small islands on the deep-blue sea off the south coast, Heimaey the largest, with a natural harbour and a town on it, the town flanked by the black scoria cone (Eldfell) left by the 1973 eruption and by the new lava that narrowed the harbour mouth by half. The relatively bare island alone to the south-west is Surtsey.",
+    distinguish:
+      "Vestmannaeyjar is a group of \"volcanic islands\", completely different from a \"continental island\" of ancient rock like the Outer Hebrides of Scotland: these islands were erupted from the sea floor and piled up directly in the sea, and are still \"growing\" (Surtsey) or have just \"grown\" (Heimaey).",
+    concept:
+      "Surtsey is a case study in primary succession: an island that rose from the sea, initially entirely lifeless, then has seeds, spores and insects brought by wind, ocean currents and birds; pioneer plants first gain a foothold in the bare rock cracks, seabirds come to nest, bringing nutrients and more seeds, soil gradually forms, and the community steadily becomes more complex. To recognise primary succession, look at whether the ground is \"starting from zero\", with no pre-existing soil or seed bank. A common misconception is that vegetation is always \"just there\".",
+    history:
+      "In the early hours of 23 January 1973, an eruptive fissure suddenly opened at the edge of the town on Heimaey, and all roughly 5,300 residents were evacuated to mainland Iceland that night on the fishing boats moored in the harbour. Over the following months lava buried about 400 buildings and advanced on, and threatened to close, the harbour — people pumped seawater continuously onto the lava front to cool and harden it and slow it down, and the harbour was saved (its mouth in fact became more sheltered). The excavated houses are now the \"Pompeii of the North\" museum (Eldheimar). Surtsey was inscribed as a World Heritage Site in 2008.",
+  },
+
+  "thjorsa": {
+    seeing:
+      "The Þjórsá is the longest river in Iceland, about 230 km. It is a glacial river, rising on the Hofsjökull ice cap in central Iceland, crossing the highland desert, joining the Hvítá and other rivers in the southern lowland, and finally reaching the sea on Iceland's south coast. Its lower course has a large drop and a steady flow, and it is the most heavily developed river for hydropower in Iceland.",
+    formation:
+      "The Þjórsá's water comes mainly from meltwater off Hofsjökull and precipitation and snowmelt on the highlands. The valley it flows through was once filled by a huge lava flow: about 8,600 years ago, the \"Great Þjórsá lava\" erupted from the Bárðarbunga volcanic system and flowed about 130 km down this valley all the way to the sea, covering about 900 km² — by volume the largest single lava flow on Earth in the Holocene (the last ~11,600 years). Today many reaches of the Þjórsá flow over this old lava.",
+    observation:
+      "From the air the upper Þjórsá is a pale-grey, many-stranded braided glacial river in the highland desert; the middle course crosses a broad valley paved with old lava, the channel held in a chain of reservoirs by several dams (Búrfell, Sultartangi and others), with power stations and transmission lines below the dams; the lower course meanders broadly across the southern lowland between green pasture, finally splitting into several channels across a black beach to the sea. One tributary has Háifoss, one of the highest waterfalls in Iceland.",
+    distinguish:
+      "The Þjórsá and the Jökulsá á Fjöllum are the two longest rivers in Iceland, both glacial rivers rising from ice caps; but the Þjórsá is in the relatively populated south and is heavily dammed for power, while the Jökulsá á Fjöllum is in the uninhabited north-eastern highlands and remains essentially natural. The Þjórsá valley having been filled by a giant lava flow is also notable among Iceland's large rivers.",
+    concept:
+      "The Great Þjórsá lava is a case study in lava flowing long distances down a river valley: very fluid basaltic lava, if the eruption volume is large enough and it finds an existing river valley as a channel, can flow out over a hundred kilometres like a flood, filling the whole valley and \"driving\" the river onto the lava surface to cut a new course. To recognise this kind of lava, look at whether it follows a valley, is continuous, huge in volume, and reaches the sea at its end. A common misconception is that lava cannot flow very far.",
+    history:
+      "The Þjórsá basin has had settlements since the 10th century, and the river's name may relate to \"bull\". In the 20th century the Þjórsá became one of the pillars of Iceland's national electricity supply, with several large hydro stations built in succession, supporting energy-intensive industry such as aluminium smelting. Whether to build more hydro stations on the lower river (the \"Lower Þjórsá scheme\") has been debated for years in Iceland, because of salmon migration, farmland and landscape.",
+  },
+
+  "jokulsa-a-fjollum": {
+    seeing:
+      "The Jökulsá á Fjöllum (Icelandic for \"glacial river in the mountains\") is the second-longest river in Iceland, about 206 km. It rises at the Dyngjujökull outlet of the Vatnajökull ice cap, runs north through the almost uninhabited volcanic desert of Iceland's interior, drops over Selfoss, Dettifoss, Hafragilsfoss and other large waterfalls in the Jökulsárgljúfur canyon on its lower course, and finally reaches the sea at Öxarfjörður on the north coast.",
+    formation:
+      "This river's water comes from the Vatnajökull ice cap, carries large amounts of glacial debris, and is grey-white and turbid year-round. It flows across the youngest, most desolate lava plateau in Iceland. Historically, eruptions of the volcanoes beneath Vatnajökull (especially the Bárðarbunga system) melted ice and repeatedly triggered catastrophic glacial floods on this river; these floods, with carrying power far exceeding the everyday flow, are the main sculptors of the Jökulsárgljúfur canyon and the Dettifoss step. The river's upper valley (around Holuhraun) was the site of the 2014–15 fissure eruption, Iceland's largest effusive eruption since Laki.",
+    observation:
+      "From the air the Jökulsá á Fjöllum is a pale-grey ribbon of water running dead straight north from the ice cap in the south across an endless black-brown volcanic desert, with almost no vegetation or settlement along it; on entering the lava plateau of the lower course it cuts into the deep, straight Jökulsárgljúfur canyon, dropping over several waterfalls within it; below the canyon it splits into channels across a wetland delta at Öxarfjörður.",
+    distinguish:
+      "The Jökulsá á Fjöllum and the Þjórsá are the two longest glacial rivers in Iceland, but the Jökulsá á Fjöllum is almost entirely in the uninhabited highlands, with no hydro stations, keeping its natural braided form and flood dynamics; the Þjórsá is in the south and heavily developed. The canyon-and-waterfall system on the lower Jökulsá á Fjöllum, shaped by catastrophic floods, is more pronounced than on the Þjórsá.",
+    concept:
+      "The Jökulsá á Fjöllum is a case study in a glacier-volcano river system: a river rising from an ice cap that covers active volcanoes has its flow and its landform-shaping driven by three overlapping processes — everyday glacial meltwater, seasonal snowmelt, and sudden glacial floods triggered by volcanic eruptions. The one that really does the \"work\" is often the last: the geomorphic work of a few days of catastrophic flood can exceed that of thousands of years of everyday runoff. A common misconception is to understand its canyon using only the river you see in normal times.",
+    history:
+      "Floods on the Jökulsá á Fjöllum have left traces in Iceland's place names and folklore (Goðafoss, the \"waterfall of the gods\", is on a neighbouring river). Because it is wide, fast, cold and liable to rise suddenly, this river was historically one of the most dangerous obstacles to crossing Iceland's interior, and the old highland routes had to detour far or ford at particular shallows. Today its middle and lower course is within Vatnajökull National Park.",
+  },
 };

@@ -198,6 +198,11 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   dettifoss: "national",
   "haukadalur-geysir": "national",
   krafla: "national",
+  myvatn: "national",
+  "reykjanes-peninsula": "national",
+  vestmannaeyjar: "national",
+  thjorsa: "national",
+  "jokulsa-a-fjollum": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {

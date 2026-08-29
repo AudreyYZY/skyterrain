@@ -4369,6 +4369,113 @@ const KRAFLA: TerrainEntry = {
   source: "克拉夫拉火山：米湖附近一个直径约10km 的破火山口，附带一条裂隙带；1975—84年的“克拉夫拉之火”是九幕裂谷张裂-喷发，地面沿裂隙带累计拉开数米，是研究离散板块边界的经典地点（Icelandic Met Office / Institute of Earth Sciences）",
 };
 
+const MYVATN: TerrainEntry = {
+  id: "myvatn",
+  nameZh: "米湖",
+  nameEn: "Mývatn",
+  category: "lake",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "米湖（斯库图斯塔济尔假火山群一带）", lon: -17.03, lat: 65.57, elevation: 278, kind: "lake" },
+  bbox: [-17.18, 65.50, -16.85, 65.70],
+  viewScale: 1.5,
+  label: { lon: -17.03, lat: 65.60, rotation: 0 },
+  source: "米湖（Mývatn，意为“蚊虫之湖”）：约2300年前一次玄武岩熔岩流堵住河谷形成的浅水营养湖；湖畔的“假火山”是熔岩流过湿地时的蒸汽爆炸锥；水鸟种类居欧洲之首（Institute of Earth Sciences / 环境署）",
+};
+
+const REYKJANES_PENINSULA: TerrainEntry = {
+  id: "reykjanes-peninsula",
+  nameZh: "雷克雅内斯半岛",
+  nameEn: "Reykjanes Peninsula",
+  category: "coast",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "格纳胡佛地热区与瓦拉赫努克海崖（半岛西端）", lon: -22.68, lat: 63.82, elevation: 30, kind: "escarpment" },
+  bbox: [-22.75, 63.78, -21.80, 64.08],
+  axis: [[-22.70, 63.83], [-21.90, 64.00]],
+  viewScale: 1.7,
+  label: { lon: -22.3, lat: 63.9, rotation: -20 },
+  source: "雷克雅内斯半岛：大西洋中脊在陆地上出露的唯一一段——一组雁行排列的裂隙带和年轻熔岩原；含斯瓦特森吉、克里苏维克等高温地热区、“大陆桥”步行桥；雷克雅内斯世界地质公园（Icelandic Met Office）",
+};
+
+const REYNISFJARA: TerrainEntry = {
+  id: "reynisfjara",
+  nameZh: "雷尼斯黑沙滩",
+  nameEn: "Reynisfjara / Dyrhólaey",
+  category: "coast",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "雷尼斯黑沙滩与柱状玄武岩崖", lon: -19.045, lat: 63.404, elevation: 15, kind: "escarpment" },
+  bbox: [-19.16, 63.38, -18.95, 63.46],
+  label: { lon: -19.05, lat: 63.41, rotation: 0 },
+  pois: [
+    { name: "迪尔霍拉里海蚀拱（Dyrhólaey）", lon: -19.128, lat: 63.402, note: "120m 高岬角上的大海蚀拱，冰岛本土最南点" },
+  ],
+  source: "雷尼斯黑沙滩：维克镇附近的玄武质黑沙海滩，衬着柱状玄武岩崖和外海的雷尼斯德朗格岩柱；以突发的“疯狗浪”危险著称，海边设有警示（National Land Survey of Iceland）",
+};
+
+const LATRABJARG: TerrainEntry = {
+  id: "latrabjarg",
+  nameZh: "拉特拉尔角海鸟崖",
+  nameEn: "Látrabjarg",
+  category: "coast",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "拉特拉尔角海崖（Bjargtangar）", lon: -24.532, lat: 65.501, elevation: 440, kind: "escarpment" },
+  bbox: [-24.56, 65.46, -24.05, 65.53],
+  axis: [[-24.53, 65.50], [-24.10, 65.50]],
+  viewFrom: 180,
+  label: { lon: -24.35, lat: 65.50, rotation: -3 },
+  source: "拉特拉尔角：西峡湾一段长约14km、高达约440m 的海崖，是欧洲最大的海鸟崖之一（海鹦、刀嘴海雀、崖海鸦等数以百万计）；西端的比雅尔唐加是冰岛最西点（Icelandic Institute of Natural History）",
+};
+
+const VESTMANNAEYJAR: TerrainEntry = {
+  id: "vestmannaeyjar",
+  nameZh: "韦斯特曼纳群岛",
+  nameEn: "Vestmannaeyjar",
+  category: "island",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "海梅岛与埃尔德费尔火山（1973年）", lon: -20.253, lat: 63.432, elevation: 200, kind: "island" },
+  bbox: [-20.60, 63.25, -20.10, 63.52],
+  viewScale: 1.5,
+  label: { lon: -20.28, lat: 63.42, rotation: 0 },
+  pois: [
+    { name: "叙尔特塞岛（Surtsey）", lon: -20.604, lat: 63.303, note: "1963—67年从海里喷发形成，此后作为“生命如何定居新陆地”的自然实验室受严格保护" },
+  ],
+  source: "韦斯特曼纳群岛：冰岛南岸外一组年轻的火山岛；叙尔特塞1963—67年从海中升起（世界遗产）；有人居住的海梅岛1973年埃尔德费尔喷发，居民一夜乘渔船撤离、熔岩被海水冷却阻挡以保住港口（UNESCO / Icelandic Met Office）",
+};
+
+const THJORSA: TerrainEntry = {
+  id: "thjorsa",
+  nameZh: "雷神河",
+  nameEn: "Þjórsá",
+  category: "river",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "雷神河中游（布尔费德一带）", lon: -19.75, lat: 64.10, elevation: 200, kind: "meander" },
+  bbox: [-20.90, 63.80, -18.60, 64.75],
+  axis: [[-19.10, 64.65], [-20.75, 63.85]],
+  viewScale: 2.0,
+  label: { lon: -20.0, lat: 64.2, rotation: -55 },
+  source: "雷神河（Þjórsá）：冰岛最长的河（约230km），冰川河，源自霍夫斯冰原；约8600年前的“雷神河大熔岩”沿河谷流了约130km，是全新世体积最大的单次熔岩流；下游梯级水电开发（National Land Survey of Iceland）",
+};
+
+const JOKULSA_A_FJOLLUM: TerrainEntry = {
+  id: "jokulsa-a-fjollum",
+  nameZh: "菲厄德尔冰川河",
+  nameEn: "Jökulsá á Fjöllum",
+  category: "river",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "菲厄德尔冰川河中游（高地荒漠段）", lon: -16.55, lat: 65.20, elevation: 400, kind: "meander" },
+  bbox: [-16.95, 64.55, -16.30, 66.20],
+  axis: [[-16.55, 64.60], [-16.45, 66.15]],
+  viewScale: 2.0,
+  label: { lon: -16.7, lat: 65.3, rotation: -80 },
+  source: "菲厄德尔冰川河（Jökulsá á Fjöllum）：冰岛第二长的河（约206km），源自瓦特纳冰原的丁久冰舌，穿过高地荒漠，在约克尔萨峡谷跌下黛提等瀑布，注入厄克萨峡湾；易发冰川洪水（Vatnajökull NP）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -4469,6 +4576,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   VATNAJOKULL, LANGJOKULL, HOFSJOKULL, MYRDALSJOKULL,
   SKEIDARARSANDUR, JOKULSARLON, LAKI,
   GULLFOSS, DETTIFOSS, JOKULSARGLJUFUR, SKOGAFOSS, HAUKADALUR_GEYSIR, KRAFLA,
+  MYVATN, REYKJANES_PENINSULA, REYNISFJARA, LATRABJARG, VESTMANNAEYJAR,
+  THJORSA, JOKULSA_A_FJOLLUM,
 ];
 
 /**
@@ -4576,6 +4685,10 @@ const WIDE_VIEW: Record<string, number> = {
   laki: 1.7,
   jokulsargljufur: 1.6,
   krafla: 1.5,
+  "reykjanes-peninsula": 1.8,
+  latrabjarg: 1.6,
+  thjorsa: 2.1,
+  "jokulsa-a-fjollum": 2.1,
   // 欧洲 / 英国
   "scottish-highlands": 2.4,
   cairngorms: 1.8,
