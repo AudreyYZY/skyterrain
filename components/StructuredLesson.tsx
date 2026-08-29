@@ -4,8 +4,17 @@ import type { Language } from "@/lib/i18n";
 import type { TerrainLesson } from "@/types/terrain";
 import { useEffect, useRef } from "react";
 
+/** 通用分节内容（旅游模式攻略等），可替代 lesson */
+export interface GenericSection {
+  key: string;
+  heading: string;
+  text: string;
+}
+
 interface StructuredLessonProps {
-  lesson: TerrainLesson;
+  lesson?: TerrainLesson | null;
+  /** 传入则按通用分节渲染，忽略 lesson */
+  sections?: GenericSection[] | null;
   hideEmptySections?: boolean;
   /** 当前高亮的句子索引（用于朗读同步） */
   activeSentenceIndex?: number | null;
@@ -29,6 +38,7 @@ function splitSentences(text: string): string[] {
 
 export default function StructuredLesson({
   lesson,
+  sections,
   hideEmptySections = false,
   activeSentenceIndex,
   activeSection,
@@ -36,11 +46,19 @@ export default function StructuredLesson({
 }: StructuredLessonProps) {
   const activeRef = useRef<HTMLSpanElement>(null);
 
-  const SECTIONS = SECTION_KEYS.map((key, i) => ({
-    key,
-    heading: sectionHeading(key, language),
-    primary: i === 0,
-  }));
+  // 通用分节模式：把 {key,heading,text}[] 变成和 lesson 一样的结构
+  const generic = sections && sections.length > 0;
+  const SECTIONS = generic
+    ? sections.map((s, i) => ({ key: s.key, heading: s.heading, primary: i === 0 }))
+    : SECTION_KEYS.map((key, i) => ({
+        key: key as string,
+        heading: sectionHeading(key, language),
+        primary: i === 0,
+      }));
+  const textFor = (key: string): string =>
+    generic
+      ? sections!.find((s) => s.key === key)?.text ?? ""
+      : ((lesson?.[key as keyof TerrainLesson] as string) ?? "");
 
   // 当前高亮句变化时，滚动到可见区域
   useEffect(() => {
@@ -53,7 +71,7 @@ export default function StructuredLesson({
   }, [activeSentenceIndex, activeSection]);
 
   const visible = SECTIONS.filter((s) => {
-    const text = stripEmojis(lesson[s.key] ?? "");
+    const text = stripEmojis(textFor(s.key));
     return !hideEmptySections || text.length > 0;
   });
 
@@ -62,7 +80,7 @@ export default function StructuredLesson({
   const sectionOffsets = new Map<string, number>();
   let cumulativeOffset = 0;
   for (const s of SECTIONS) {
-    const text = stripEmojis((lesson[s.key] as string) ?? "");
+    const text = stripEmojis(textFor(s.key));
     if (text.length === 0) continue;
     sectionOffsets.set(s.key, cumulativeOffset);
     cumulativeOffset += splitSentences(text).length;
@@ -71,7 +89,7 @@ export default function StructuredLesson({
   return (
     <div className="space-y-6">
       {visible.map(({ key, heading, primary }) => {
-        const body = stripEmojis((lesson[key] as string) ?? "");
+        const body = stripEmojis(textFor(key));
         if (!body) return null;
 
         const sentences = splitSentences(body);
