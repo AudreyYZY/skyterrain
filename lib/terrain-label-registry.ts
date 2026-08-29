@@ -158,6 +158,9 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "mount-taranaki": "national",
   fiordland: "national",
   "lake-taupo": "national",
+  "canterbury-plains": "national",
+  "waikato-river": "national",
+  "clutha-river": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {

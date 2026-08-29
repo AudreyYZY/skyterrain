@@ -2960,4 +2960,94 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Wānaka area was a node on the Māori routes to and from the interior for gathering pounamu. The 1860s gold rush and the large sheep stations that followed brought European settlers. From the mid-20th century Wānaka grew from a quiet farming town into a resort town for skiing, climbing and skydiving; a hydro station was later built on the upper Clutha.",
   },
+
+  "canterbury-plains": {
+    seeing:
+      "The Canterbury Plains, on the east coast of the South Island, are the largest continuous area of flat land in New Zealand, running from the foothills of the Southern Alps to the Pacific, about 50 km wide. They are an important farming region and the site of Christchurch, one of the country's largest cities. Several braided rivers rising in the mountains cut straight across the plains to the sea.",
+    formation:
+      "The Canterbury Plains are built of gravel carried down by several rivers from the Southern Alps (the Rakaia, Waimakariri, Rangitata and others): each river spreads a huge alluvial fan at its mountain mouth, and the neighbouring fans coalesce into one broad gravel plain sloping gently to the sea. The ice ages produced especially large amounts of glacially ground debris, the main source of the plains' gravel.",
+    observation:
+      "From the air the Canterbury Plains are a large, flat, gridded patchwork of farmland, split by several wide, pale, braided river channels — rivers that divide into many strands over the gravel and constantly shift course. The western edge rises abruptly into the Southern Alps, the eastern edge is a straight coastline; the Christchurch area, once swamp and lagoon, has soft ground.",
+    distinguish:
+      "The Canterbury Plains are unlike the great silt plains of the Yellow River or Ganges: they are a gravel alluvial-fan plain — coarse-grained, highly permeable, with braided rather than meandering rivers; groundwater is abundant but the surface dries out easily. Compared with New Zealand's other small coastal plains, they are far larger — a true \"great plain\".",
+    concept:
+      "The Canterbury Plains are a case study in a coalesced alluvial-fan plain: each river spreads its own gravel fan at the mountain front, the fans join sideways, and together they form one seaward-sloping plain. To recognise this kind of plain, look at whether it slopes evenly from the foothills to the sea, whether the rivers are braided, and whether digging in turns up all gravel. A common misconception is to assume every large plain is built of fine silt.",
+    history:
+      "The Canterbury Plains were a place where South Island Māori hunted moa and gathered, and there was extensive dry, flammable grassland. In 1850 the Canterbury Association organised a large planned settlement of British migrants here for sheep and wheat farming. From the 20th century large-scale irrigation turned the dry grassland into dairy pasture. The 2010–2011 Christchurch earthquake sequence caused severe damage, linked to the soft, liquefaction-prone estuarine sediments there.",
+  },
+
+  "mackenzie-basin": {
+    seeing:
+      "The Mackenzie Basin (Māori: Te Manahuna), on the eastern side of the Southern Alps, is a high basin ringed by mountains, at about 500–700 m elevation. It lies in the rain shadow of the mountains — dry and open, its floor covered in tawny tussock grassland dotted with the milky-blue glacial lakes Tekapo, Pukaki and Ōhau. Its night sky is very dark: it is the Aoraki Mackenzie International Dark Sky Reserve.",
+    formation:
+      "The Mackenzie Basin is a structural basin where the crust has dropped relatively along faults around its edges, and it was then repeatedly occupied and reworked by large glaciers from the Southern Alps during the ice ages. The glaciers gouged the lake basins, left large moraine ridges and outwash gravels across the floor, and after the ice retreated meltwater ponded in the hollows as a string of lakes. Ringed by high mountains, the basin gets only a few hundred millimetres of rain a year.",
+    observation:
+      "From the air the Mackenzie Basin is a pale-yellow open expanse ringed by snow mountains, with braided rivers and milky-blue lakes forming vivid blocks of colour; the ground shows parallel moraine ridges and dry former channels. The western side faces Aoraki / Mount Cook directly, with the head of Lake Pukaki looking straight up the highest part of the Southern Alps.",
+    distinguish:
+      "The Mackenzie Basin and Central Otago are both dry interior basins of the South Island, but the Mackenzie has been heavily reworked by glaciers — it has large lakes and moraine landforms and is higher and colder; Central Otago is a series of basins between schist fault blocks, with a more mature \"basin-and-range\" structure. The Mackenzie's lakes are milky blue because active glaciers upstream still supply rock flour.",
+    concept:
+      "The Mackenzie Basin is a case study in a rain-shadow basin: a moist airstream is lifted over the surrounding mountains and rained out on the windward slope, and by the time it crosses into the basin it is dry and warming as it descends — so within one country, annual rainfall can differ several-fold over a few tens of kilometres. A common misconception is that it must rain a lot near high mountains — the leeward side can be semi-desert.",
+    history:
+      "The Mackenzie is named after James Mackenzie, a shepherd who in the 1850s drove stolen sheep across the basin. It has long been high-country station land grazed with merino sheep. In the 20th century Tekapo, Pukaki and other lakes were incorporated into the Waitaki hydro scheme, with regulated levels and some water diverted between catchments. In 2012 the basin was designated a Dark Sky Reserve.",
+  },
+
+  "central-otago": {
+    seeing:
+      "Central Otago, in the interior of the South Island, is a dry region made of parallel schist mountain blocks and the down-faulted basins between them. It is known for the most \"continental\" climate in New Zealand — it can be very hot in summer and very cold in winter, and it has the country's lowest rainfall. Historically a goldfield, it is known today for stone fruit (apricots, cherries) and Pinot Noir wine.",
+    formation:
+      "Central Otago's bedrock is schist. Under crustal compression the schist broke along a series of parallel faults; some blocks were lifted into long, narrow ranges (the Dunstan, Pisa, Old Man and others), and the blocks between them dropped relatively into basins (the Manuherikia, Maniototo and others) — a range, then a basin, then a range: this alternating structure is called basin-and-range. The range tops still carry remnants of an ancient, gently rolling plateau surface.",
+    observation:
+      "From the air Central Otago is a set of long parallel ridges and wide valleys running north-east to south-west, the ranges pale-brown dry grass slopes often topped by bare schist tors, the valleys green with irrigated orchards and vineyards and a few winding rivers. The Clutha River and its tributaries string together several reservoirs.",
+    distinguish:
+      "Central Otago's basin-and-range is the same kind of structure as the Basin and Range province of the western United States, only on a smaller scale and in schist. Compared with the Mackenzie Basin, Central Otago is more of a \"mature fault-block landscape\" with a whole series of ranges and basins; the Mackenzie is a single large basin deeply reworked by glaciers.",
+    concept:
+      "Central Otago is a case study in basin-and-range: when the crust is stretched or compressed it breaks into parallel blocks along faults, one rising into a range and the next dropping into a basin, giving alternating ranges and basins. To recognise this landscape, look at whether the ridges and basins are long, parallel and aligned in the same direction. A common misconception is to read these parallel valleys as river-cut — they are mainly fault-controlled.",
+    history:
+      "Central Otago was a route area for Māori travelling inland to gather pounamu and take birds. Gold found at Gabriels Gully in 1861 set off New Zealand's largest gold rush, with tens of thousands arriving within a few years and leaving many stone buildings and water-race remains. After the gold it became sheep-station country; by the late 20th century irrigation and the climate made it an important stone-fruit and wine region.",
+  },
+
+  "rotorua-caldera": {
+    seeing:
+      "The Rotorua Caldera, on the North Island's volcanic plateau, is a circular basin formed by the collapse that followed a large eruption, about 22 km across, with Lake Rotorua occupying part of it. Around it is one of the most active geothermal areas in New Zealand — geysers, boiling mud pools, coloured silica terraces and steaming ground, which you can see and smell (the rotten-egg smell of hydrogen sulphide) right in the city.",
+    formation:
+      "The Rotorua Caldera is a rhyolitic volcanic centre within the Taupō Volcanic Zone. About 240,000 years ago a large eruption of pumice and ash emptied the magma chamber below and the surface collapsed into a caldera; the hollow later filled with water, and Mokoia Island in the middle of the lake is a rhyolite dome pushed up after the eruption ended. Hot rock still lies beneath the caldera, and groundwater heated by it rises along fractures to make the surface geothermal features.",
+    observation:
+      "From the air Rotorua is a near-circular shallow basin on the volcanic plateau, with Lake Rotorua and Mokoia Island in the centre and white steam columns rising from the southern shore and several bays. The city spreads along the southern shore, with the geothermal areas (Whakarewarewa and others) at and within its edge, showing bare pale silica ground and steam vents.",
+    distinguish:
+      "Rotorua and Taupō are both rhyolitic calderas of the Taupō Volcanic Zone, but Taupō is larger, younger and erupted more violently, and its lake is far bigger; Rotorua is smaller with an especially concentrated geothermal display. Compared with a built-up andesitic cone like Ruapehu, Rotorua is a rhyolitic caldera that dropped down rather than built up.",
+    concept:
+      "Rotorua is a case study in a geothermal system: the un-cooled rock body beneath the caldera is the heat source, rainwater seeps down and is heated, becomes less dense and rises, dissolving minerals on the way and depositing them as silica at the surface, forming a geyser where the channel is open and a mud pool where it meets a shallow pond. A common misconception is to read geothermal activity as a sign of imminent eruption — it is the normal, slow way a volcanic system sheds heat.",
+    history:
+      "Rotorua is the heartland of the Te Arawa confederation of iwi, whose people have used the geothermal heat for cooking, warmth and bathing for centuries. Mokoia Island is the setting of the well-known love story of Hinemoa and Tūtānekai. In the late 19th century the nearby Pink and White Terraces were a famous attraction in the southern hemisphere, destroyed by the 1886 Tarawera eruption. In the 20th century Rotorua became one of New Zealand's earliest spa and geothermal tourism towns.",
+  },
+
+  "waikato-river": {
+    seeing:
+      "The Waikato River is the longest river in New Zealand, about 425 km. It flows out of Lake Taupō in the central North Island, passes first through a chain of hydro stations and reservoirs, then across the lowland basin around Hamilton, and finally reaches the Tasman Sea at Port Waikato, south of Auckland. The name Waikato means \"flowing water\" in Māori. It is an important source of water and electricity for the North Island.",
+    formation:
+      "The upper Waikato runs over the volcanic rock of the Taupō Volcanic Zone, and where hard rock narrows the channel it forms rapids and falls (Huka Falls is the river squeezing through a hard, pale volcanic-rock trough). The middle and lower river enter softer sedimentary rock and ash-covered lowland, where the channel broadens and meanders between fertile farmland. The Waikato has changed course in the past — a large volcanic mudflow and lava activity switched it from flowing north-east (through what is now the Hauraki Plains) to its present north-westerly course to the sea.",
+    observation:
+      "From the air the upper Waikato is a string of long narrow blue reservoirs held between dams, set in the volcanic plateau; below Huka Falls is a stretch of white rapids; entering the Hamilton basin it becomes a strongly meandering brown river between green pasture; at its mouth it splits into several channels crossing black ironsand beaches to the sea.",
+    distinguish:
+      "The Waikato and the South Island's Clutha are the two longest rivers in New Zealand: the Waikato is longer, on the North Island, with a volcanic lake and volcanic rock upstream, and heavily dammed; the Clutha has a greater flow, on the South Island, with glacial lakes upstream. Compared with a sediment-laden river like the Yellow River, the Waikato does not carry much silt — its main \"resource\" is a steady flow and fall (for power).",
+    concept:
+      "The Waikato is a case study in river diversion: the direction a large river reaches the sea is not permanent — volcanic mudflows, lava and tectonic uplift can all block the old channel and force a new one. To tell whether a river has been diverted, look for a broad former valley that does not match the present drainage. A common misconception is to assume a large river has always followed its current course.",
+    history:
+      "The Waikato is the ancestral river of the Waikato-Tainui confederation of iwi, held in the highest regard and seen as a living whole (\"Te Awa o Waikato\"). In the 19th century the river was a front line of the colonial wars, with gunboats on it. A 2010 settlement established the Waikato River Authority, jointly involving iwi and local government, responsible for the river's health. Today there are eight hydro stations on the river, supplying power to the North Island.",
+  },
+
+  "clutha-river": {
+    seeing:
+      "The Clutha River (Māori: Mata-Au) has the greatest flow of any river in New Zealand and is the second longest (about 338 km). It flows out of Lake Wānaka, runs south through the dry schist gorges and several large reservoirs of Central Otago, and finally splits into two branches with a small delta to reach the Pacific near Balclutha in the south-east of the South Island.",
+    formation:
+      "The Clutha's water comes mainly from three large glacial lakes — Wānaka, Hāwea and Wakatipu — which act like reservoirs, smoothing out snowmelt and rain and releasing it steadily, so the Clutha's flow is large and steady. In Central Otago the river has to cut through a series of uplifted schist fault blocks, carving narrow deep rock reaches such as the Cromwell and Roxburgh gorges; only after leaving the hills for the coastal lowland does it widen and branch.",
+    observation:
+      "From the air the upper Clutha is a clear fast stream flowing out of Lake Wānaka, soon entering Lake Dunstan, held back by the Clyde Dam around Cromwell; then the Roxburgh reservoir; below the gorges the river widens to a blue-grey colour and near Balclutha splits into a north and a south branch enclosing a delta of farmland called Inch Clutha.",
+    distinguish:
+      "The Clutha and the Waikato are the two largest rivers in New Zealand: the Clutha has the greater flow (because three large glacial lakes regulate it), a shorter course, and more gorge sections; the Waikato is longer, on the North Island, with a volcanic lake upstream. The Clutha's delta is one of the few true branching river mouths in New Zealand.",
+    concept:
+      "The Clutha is a case study in lake regulation of a river: when there are large lakes upstream, snowmelt and storms enter the lake first and are \"flattened out\", then released steadily from the outlet, so the downstream flow varies much less within and between years than a river without lakes. A common misconception is that a high-flow river must also have big swings in level — a lake-regulated river is in fact very steady.",
+    history:
+      "The Mata-Au was an important route for South Island Māori travelling inland for pounamu, with a chain of seasonal camps along the valley. During the Central Otago gold rush of the 1860s the Clutha and its tributaries were the centre of gold mining and, later, large gold dredges, which turned over the riverbed and left broad gravel tailings. In the 20th century large hydro stations were built at Clyde and Roxburgh.",
+  },
 };

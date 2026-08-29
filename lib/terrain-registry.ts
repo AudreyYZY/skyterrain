@@ -3323,6 +3323,104 @@ const LAKE_WANAKA: TerrainEntry = {
   source: "瓦纳卡湖：南岛冰川刻蚀的长湖，新西兰第四大湖，经克卢萨河 / Mata-Au 外流；与哈威亚湖仅隔一道窄地峡（LINZ / DOC）",
 };
 
+const CANTERBURY_PLAINS: TerrainEntry = {
+  id: "canterbury-plains",
+  nameZh: "坎特伯雷平原",
+  nameEn: "Canterbury Plains",
+  category: "plain",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "坎特伯雷平原（拉凯亚河一带）", lon: 172.0, lat: -43.7, elevation: 120, kind: "delta" },
+  bbox: [171.3, -44.3, 172.9, -42.9],
+  viewScale: 2.2,
+  label: { lon: 172.0, lat: -43.7, rotation: -30 },
+  pois: [
+    { name: "克赖斯特彻奇", lon: 172.636, lat: -43.532, note: "平原东缘、太平洋岸的城市" },
+  ],
+  source: "坎特伯雷平原：新西兰最大的连片平地，宽约50km，由南阿尔卑斯多条河流的砾石冲积扇并合而成；辫状河横穿（GNS Science / LINZ）",
+};
+
+const MACKENZIE_BASIN: TerrainEntry = {
+  id: "mackenzie-basin",
+  nameZh: "麦肯齐盆地",
+  nameEn: "Mackenzie Basin / Te Manahuna",
+  category: "basin",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "麦肯齐盆地（普卡基湖一带）", lon: 170.25, lat: -44.05, elevation: 520, kind: "grassland" },
+  bbox: [169.8, -44.5, 170.7, -43.6],
+  viewScale: 2.0,
+  label: { lon: 170.25, lat: -44.05, rotation: 0 },
+  source: "麦肯齐盆地：南阿尔卑斯东侧的山间盆地，处在雨影区、半干旱，遍布黄色针茅草原和乳蓝色冰蚀湖；属奥拉基·麦肯齐国际暗夜保护区（DOC / LINZ）",
+};
+
+const CENTRAL_OTAGO: TerrainEntry = {
+  id: "central-otago",
+  nameZh: "中奥塔哥",
+  nameEn: "Central Otago",
+  category: "basin",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "中奥塔哥（克伦威尔 / 克卢萨河谷）", lon: 169.20, lat: -45.05, elevation: 220, kind: "grassland" },
+  bbox: [168.7, -45.6, 170.2, -44.5],
+  axis: [[169.0, -45.5], [169.6, -44.6]],
+  viewScale: 2.0,
+  label: { lon: 169.4, lat: -45.1, rotation: -35 },
+  source: "中奥塔哥：一系列平行的片岩断块山和它们之间的断陷盆地（“盆岭地貌”）；新西兰最“大陆性”的气候，降水最少（GNS Science / NIWA）",
+};
+
+const ROTORUA_CALDERA: TerrainEntry = {
+  id: "rotorua-caldera",
+  nameZh: "罗托鲁瓦破火山口",
+  nameEn: "Rotorua Caldera",
+  category: "basin",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "罗托鲁瓦湖", lon: 176.27, lat: -38.08, elevation: 280, kind: "lake" },
+  bbox: [176.0, -38.25, 176.5, -37.9],
+  viewScale: 1.6,
+  label: { lon: 176.27, lat: -38.08, rotation: 0 },
+  pois: [
+    { name: "华卡雷瓦雷瓦地热区", lon: 176.253, lat: -38.165, note: "间歇泉、沸泥塘、硅华台地" },
+    { name: "莫科亚岛", lon: 176.283, lat: -38.078, note: "湖心的流纹岩穹丘" },
+  ],
+  source: "罗托鲁瓦破火山口：约24万年前一次大喷发塌陷形成，直径约22km，罗托鲁瓦湖占据其中一部分；周边是新西兰最活跃的地热区之一（GNS Science）",
+};
+
+const WAIKATO_RIVER: TerrainEntry = {
+  id: "waikato-river",
+  nameZh: "怀卡托河",
+  nameEn: "Waikato River",
+  category: "river",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "怀卡托河中游（汉密尔顿一带）", lon: 175.28, lat: -37.78, elevation: 40, kind: "meander" },
+  bbox: [174.7, -38.70, 176.20, -37.35],
+  axis: [[176.08, -38.65], [174.75, -37.38]],
+  viewScale: 2.2,
+  label: { lon: 175.4, lat: -37.9, rotation: -55 },
+  pois: [
+    { name: "胡卡瀑布", lon: 176.090, lat: -38.649, note: "陶波湖出口不远处，河水挤过窄硬岩槽" },
+    { name: "怀卡托河口（Port Waikato）", lon: 174.72, lat: -37.38, note: "在奥克兰以南注入塔斯曼海" },
+  ],
+  source: "怀卡托河：新西兰最长的河（约425km），从陶波湖流出，经一连串水电站和汉密尔顿盆地，在奥克兰以南注入塔斯曼海（LINZ / NIWA）",
+};
+
+const CLUTHA_RIVER: TerrainEntry = {
+  id: "clutha-river",
+  nameZh: "克卢萨河",
+  nameEn: "Clutha River / Mata-Au",
+  category: "river",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "克卢萨河（罗克斯堡一带）", lon: 169.32, lat: -45.55, elevation: 100, kind: "meander" },
+  bbox: [168.9, -46.35, 169.85, -44.45],
+  axis: [[169.15, -44.70], [169.75, -46.30]],
+  viewScale: 2.0,
+  label: { lon: 169.4, lat: -45.5, rotation: -75 },
+  source: "克卢萨河 / Mata-Au：新西兰水量最大、长度第二（约338km）的河；从瓦纳卡湖流出，穿过中奥塔哥的峡谷和水库，在巴尔克卢萨附近分汊入海（LINZ / NIWA）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -3403,6 +3501,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MOUNT_RUAPEHU, MOUNT_TARANAKI,
   TASMAN_GLACIER, FRANZ_JOSEF_GLACIER, FIORDLAND, MILFORD_SOUND,
   LAKE_TAUPO, LAKE_WAKATIPU, LAKE_TEKAPO, LAKE_WANAKA,
+  CANTERBURY_PLAINS, MACKENZIE_BASIN, CENTRAL_OTAGO, ROTORUA_CALDERA,
+  WAIKATO_RIVER, CLUTHA_RIVER,
 ];
 
 /**
@@ -3510,6 +3610,12 @@ const WIDE_VIEW: Record<string, number> = {
   "lake-wakatipu": 1.8,
   "lake-wanaka": 1.6,
   "tasman-glacier": 1.5,
+  "canterbury-plains": 2.3,
+  "mackenzie-basin": 2.0,
+  "central-otago": 2.0,
+  "rotorua-caldera": 1.6,
+  "waikato-river": 2.3,
+  "clutha-river": 2.1,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
