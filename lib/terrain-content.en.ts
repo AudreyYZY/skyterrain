@@ -1592,4 +1592,80 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Makit is the heartland of the Dolan people; Dolan muqam and Dolan meshrep are both national intangible-heritage items (the muqam is also on the UNESCO list). Dolan culture grew up along the Yarkand River at the desert's edge, and the drums and dance of the meshrep are its sharpest expression.",
   },
+
+  // ============ North America · United States ============
+  "rocky-mountains": {
+    seeing:
+      "The Rocky Mountains are the backbone of western North America, running about 4,800 km from British Columbia in Canada to New Mexico in the United States. They carry the Continental Divide — rivers on the two sides of the crest drain to the Pacific and (via the Gulf of Mexico) to the Atlantic. The highest peak on the U.S. side is Mount Elbert in Colorado, about 4,401 m.",
+    formation:
+      "The Rockies largely formed in the Laramide orogeny, roughly 80 to 55 million years ago. The general view is that an oceanic plate then subducted at a very shallow angle beneath North America, buckling continental crust far inland. The core of the ranges is ancient Precambrian crystalline rock; once uplifted it was carved by rivers and Quaternary glaciers into today's spires, cirques and U-shaped valleys. Colorado alone has more than fifty peaks above 4,267 m (14,000 ft).",
+    observation:
+      "From the air the Rockies are a broad, roughly north–south belt of high mountains of uneven width, with a sharp edge against the Great Plains to the east — plain on one side, peaks on the other, with almost no foothill transition. In summer, bare grey rock and lingering snow lie above the tree line and dark conifer forest below it; many of the intermontane basins are open high country, known locally as \"parks\". The volcanic and fault-block country around Yellowstone and the Tetons is a distinctive stretch.",
+    distinguish:
+      "The Rockies and the Appalachians to the east both run broadly north–south, but the Rockies are young and high, with modern glaciers and peaks over 4,000 m; the Appalachians are old, low and rounded, topping out below 2,100 m. Versus the Sierra Nevada: the Sierra is a single tilted granite fault block along the edge of California, gentle on the west and steep on the east; the Rockies are a collection of parallel ranges with high basins between them.",
+    concept:
+      "The Rockies are a mountain system, not a single range — dozens of roughly parallel ranges with broad valleys and high country between them. A common misconception is to call all of the mountainous American West \"the Rockies\": the Pacific-side Coast ranges, the Sierra Nevada and the Cascades are not part of the Rockies, and arid uplands such as the Great Basin lie between them.",
+    history:
+      "The Rockies were long home to, and a travel corridor for, many Native American nations. The 19th-century fur trade, the Colorado gold rush and the building of the transcontinental railroad drove the growth of mountain settlements. The ranges hold Yellowstone (established 1872, among the first national parks in the world), Rocky Mountain and Grand Teton national parks.",
+  },
+
+  "appalachian-mountains": {
+    seeing:
+      "The Appalachian Mountains run about 2,400 km along the eastern edge of North America, from Newfoundland in Canada to Alabama in the United States. They are not high — the highest, Mount Mitchell, is about 2,037 m — but they are continuous, parallel and heavily forested, the main topographic barrier of eastern North America, and long an obstacle to European settlers moving inland.",
+    formation:
+      "The Appalachians are an ancient fold mountain belt, raised mainly in a series of continental collisions between about 480 and 260 million years ago that ultimately assembled the supercontinent Pangaea; they are generally thought to have stood as high then as the Alps do today. Hundreds of millions of years of erosion since have worn them down and rounded them, so that what is seen now is the resistant rock layers of a stripped-down old range — a set of parallel long ridges with valleys between them, the \"Ridge and Valley\".",
+    observation:
+      "From the air the Appalachians are a set of rounded, parallel ridges trending south-west to north-east, of similar crest height, with no standout peaks; the range is forested almost end to end in mixed hardwood and conifer, turning colour widely in autumn. A wide valley (the Great Valley) runs the length of the belt through its middle. In the south, the Great Smoky Mountains often carry a blue-grey haze over the ridgetops.",
+    distinguish:
+      "Among \"American mountains\" the Appalachians are most easily confused with the Rockies. The test: the Appalachians are old, low, rounded, continuous, forested almost throughout, and have no modern glaciers; the Rockies are young, high, with bare rock spires, peaks over 4,000 m and modern glaciers. The Appalachians are comparable to Europe's Ural Mountains — both are ancient fold ranges planed down by long erosion.",
+    concept:
+      "The Appalachians are a classic old fold mountain range: their significance is not in height but in the record of a continental collision. A common misconception is that \"low means unimportant\" — they set the river drainage divide, the climate zones and the early population pattern of eastern North America. \"Appalachia\" is also used for a larger cultural-geographic region that does not exactly match the mountains as a landform.",
+    history:
+      "The Appalachians are the traditional homeland of the Cherokee and many other Native American nations. From the 18th century, a few passes such as the Cumberland Gap became the routes by which settlers crossed the mountains into the Ohio Valley. Appalachian coal underpinned U.S. industrialisation in the 19th and 20th centuries. The roughly 3,500 km Appalachian National Scenic Trail follows the crest through 14 states.",
+  },
+
+  "sierra-nevada-us": {
+    seeing:
+      "The Sierra Nevada is a range in eastern California about 640 km long, running north–south. Its western slope rises gently from the Central Valley; its eastern side drops as a steep fault scarp into the Owens Valley, a fall of up to about 3,000 m. The high point, Mount Whitney, is about 4,421 m — the highest peak in the 48 contiguous United States. Winter moisture off the Pacific falls here as heavy snow, making the range an important natural reservoir for California.",
+    formation:
+      "The core of the Sierra Nevada is a large body of granite that cooled deep underground more than 100 million years ago (the Sierra Nevada batholith). A few million years ago, crustal extension tilted the whole block up along a fault on its eastern edge and westward, producing today's fault-block mountain, gentle west and steep east. Quaternary glaciers carved the upper range into spires, cirques and U-shaped valleys; Yosemite Valley is the best-known glacial valley.",
+    observation:
+      "From the air the Sierra Nevada is a straight north–south wall, its eastern fault scarp standing knife-cut above the flat Owens Valley with a very clear boundary; the western side is a long series of steadily descending forested slopes. Broad exposures of pale granite and alpine lakes lie along the crest, with giant sequoia and pine forest lower down. Lake Tahoe is a large deep-blue lake at the northern end of the crest.",
+    distinguish:
+      "The Sierra Nevada and the Rockies to the east are both \"mountains of the American West\"; the difference is that the Sierra is a single granite fault block — one continuous crest, gentle west and steep east — while the Rockies are a collection of parallel ranges. Versus the Cascades: the Cascades are a line of separate volcanic cones (Rainier, St. Helens and others); the Sierra Nevada has no active volcanoes and is the product of fault-block uplift and glacial carving. It shares its name with Spain's Sierra Nevada but is unrelated.",
+    concept:
+      "The Sierra Nevada is a classic fault-block mountain — not folded up, but a single slab of crust lifted and tilted along a fault. A common misconception is to group it with volcanic ranges: there has been almost no Quaternary volcanic activity in the range. \"Sierra\" is Spanish for a jagged, saw-toothed ridge — a description of its skyline.",
+    history:
+      "The Sierra Nevada is the traditional homeland of the Paiute, Maidu and other Native American nations. Gold was found in the western foothills in 1848, setting off the California Gold Rush and a large influx of people. The range holds Yosemite, Sequoia and Kings Canyon national parks, which protect the giant sequoia — the largest tree in the world by volume.",
+  },
+
+  "cascade-range": {
+    seeing:
+      "The Cascade Range is a volcanic mountain range in the Pacific Northwest of North America, running from southern British Columbia in Canada into northern California. Its signature is a line of widely spaced, steep-sided stratovolcano cones, of which Mount Rainier, about 4,392 m, is the highest and is an active volcano. The range separates the wet coastal region from the dry interior plateau.",
+    formation:
+      "The Cascades are a subduction-zone volcanic arc: the Juan de Fuca plate subducts beneath North America from the west, melting at about 100 km depth to produce magma that rises to build volcanoes. The range has two parts — an older, eroded base of volcanic rock in the west, and a line of young stratovolcanoes sitting on it (Rainier, Adams, St. Helens, Hood, Shasta and others). Mount St. Helens had a major lateral eruption in 1980.",
+    observation:
+      "From the air the bulk of the Cascades is a forested belt of moderate height; what stands out is the handful of symmetrical, permanently snow-capped volcanic cones rising alone out of that belt — one or two thousand metres above the surrounding ridges, and easy to pick out. Dense temperate rainforest lies west of the crest; east of it the land turns quickly to dry open woodland and shrub. Crater Lake in Oregon is a deep-blue caldera lake in a collapsed volcano.",
+    distinguish:
+      "The Cascades meet the Sierra Nevada in the American West (around Mount Shasta in northern California), but their origins are entirely different: the Cascades are an active subduction-zone volcanic arc, with symmetrical cones and eruptive histories; the Sierra Nevada is an inactive granite fault block. Versus the Rockies: the Cascades are near the coast and volcanic; the Rockies are interior and have no active volcanoes.",
+    concept:
+      "The Cascades are a classic volcanic arc — the peaks were not squeezed up but built one volcano at a time, which is why they stand isolated and symmetrical. A common misconception is to treat the range as an ordinary fold mountain: several of its main peaks are active volcanoes with eruption potential, monitored continuously by the U.S. Geological Survey.",
+    history:
+      "The Cascade volcanoes appear in the oral traditions of many Native American nations. In the 19th century, emigrant wagon trains had to cross the range's passes to reach the Willamette Valley in Oregon. The range holds Mount Rainier, Crater Lake and North Cascades national parks; after its 1980 eruption Mount St. Helens was set aside as a national volcanic monument for the study of ecological recovery.",
+  },
+
+  "alaska-range": {
+    seeing:
+      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (U.S. Geological Survey figure; the federal official name is also given as Mount McKinley). Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
+    formation:
+      "The Alaska Range runs along a large strike-slip fault (the Denali Fault) and is the result of the Pacific-side plate pushing north, compressing and displacing crust upward; it is still slowly rising and is seismically active. The rock is mostly sedimentary and granitic, and the upper range is covered by huge valley glaciers — the Kahiltna and others flow tens of kilometres down from around Denali.",
+    observation:
+      "From the air the Alaska Range is a continuous white wall of snow mountains lying between the green interior lowland and the coast to the south. Denali and neighbouring Mount Foraker stand well above the main crest, their upper parts under permanent snow and threaded with glaciers, many of which end in the lowland as grey meltwater rivers and braided channels. North of the range is open tundra and boreal forest, and beyond that no more high mountains.",
+    distinguish:
+      "The Alaska Range and the Rockies are both major North American mountain systems, but the Alaska Range is at high latitude and far more heavily glaciated — the whole upper range is under ice, whereas the Rockies carry only small glaciers on a few high summits. It runs parallel to the coastal Chugach and Wrangell ranges and is the more inland one.",
+    concept:
+      "Two figures for Denali's height are often confused: an elevation of about 6,190 m (above sea level), and a base-to-summit rise of about 5,500 m measured from lowland at roughly 600 m. The first makes it the highest point in North America by elevation; the second explains why it looks so tall from below. The mountain has two names in use: Denali (from a local Native language, meaning \"the high one\") and Mount McKinley.",
+    history:
+      "The Alaska Range area is the traditional land of several Athabaskan-speaking Native nations. Denali National Park and Preserve, established in 1917, covers about 24,000 km² and is an important area for observing northern ecosystems and for mountaineering.",
+  },
 };

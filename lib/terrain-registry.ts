@@ -1801,6 +1801,106 @@ const NINGALOO: TerrainEntry = {
 };
 
 // ============================================================
+// 北美洲 — 美国（regionId: "north-america", country: "usa"）
+// 坐标 / 高程据 USGS、NPS、NOAA、Encyclopædia Britannica
+// ============================================================
+
+const ROCKY_MOUNTAINS: TerrainEntry = {
+  id: "rocky-mountains",
+  nameZh: "落基山脉",
+  nameEn: "Rocky Mountains",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "埃尔伯特山", lon: -106.4453, lat: 39.1178, elevation: 4401, kind: "peak" },
+  bbox: [-116.5, 33.0, -104.0, 49.0],
+  axis: [[-110.0, 33.5], [-113.5, 49.0]],
+  viewFrom: 90, // 从东侧大平原一侧看山墙
+  label: { lon: -106.5, lat: 40.5, rotation: -70 },
+  pois: [
+    { name: "埃尔伯特山", lon: -106.4453, lat: 39.1178, note: "美国落基山脉最高峰，海拔约4401m（14440ft，USGS）" },
+    { name: "派克斯峰", lon: -105.0442, lat: 38.8409, note: "科罗拉多前岭标志性山峰，海拔约4302m" },
+  ],
+  source: "落基山脉沿北美西部约4800km，从加拿大不列颠哥伦比亚到美国新墨西哥；锚点取美国境内最高峰埃尔伯特山（USGS 14440ft）",
+};
+
+const APPALACHIAN_MOUNTAINS: TerrainEntry = {
+  id: "appalachian-mountains",
+  nameZh: "阿巴拉契亚山脉",
+  nameEn: "Appalachian Mountains",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "米切尔山", lon: -82.2652, lat: 35.7648, elevation: 2037, kind: "peak" },
+  bbox: [-84.5, 33.5, -70.0, 46.5],
+  axis: [[-84.0, 34.0], [-71.0, 45.5]],
+  viewFrom: 135,
+  label: { lon: -80.0, lat: 38.5, rotation: -40 },
+  pois: [
+    { name: "米切尔山", lon: -82.2652, lat: 35.7648, note: "阿巴拉契亚山脉与密西西比河以东最高峰，海拔约2037m（6684ft）" },
+    { name: "大烟山", lon: -83.4985, lat: 35.6118, note: "大烟山国家公园，克林曼斯山穹顶约2025m" },
+  ],
+  source: "阿巴拉契亚山脉沿北美东缘约2400km（从加拿大纽芬兰到美国阿拉巴马）；锚点取米切尔山（NPS / USGS，6684ft）",
+};
+
+const SIERRA_NEVADA_US: TerrainEntry = {
+  id: "sierra-nevada-us",
+  nameZh: "内华达山脉",
+  nameEn: "Sierra Nevada",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "惠特尼山", lon: -118.2921, lat: 36.5786, elevation: 4421, kind: "peak" },
+  bbox: [-121.0, 35.4, -118.0, 40.2],
+  axis: [[-118.3, 35.6], [-120.6, 40.0]],
+  viewFrom: 100, // 从东侧欧文斯谷一侧看陡峭东坡
+  label: { lon: -119.4, lat: 37.6, rotation: -60 },
+  pois: [
+    { name: "惠特尼山", lon: -118.2921, lat: 36.5786, note: "美国本土48州最高峰，海拔约4421m（14505ft，NAVD88）" },
+    { name: "优胜美地谷", lon: -119.5383, lat: 37.7456, note: "冰川刻蚀的花岗岩峡谷" },
+  ],
+  source: "内华达山脉（Sierra Nevada）：加利福尼亚东部约640km的花岗岩断块山，西缓东陡；锚点取惠特尼山（USGS，14505ft NAVD88）",
+};
+
+const CASCADE_RANGE: TerrainEntry = {
+  id: "cascade-range",
+  nameZh: "喀斯喀特山脉",
+  nameEn: "Cascade Range",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "雷尼尔山", lon: -121.7603, lat: 46.8523, elevation: 4392, kind: "peak" },
+  bbox: [-122.6, 40.3, -120.0, 49.0],
+  axis: [[-121.6, 40.5], [-121.3, 49.0]],
+  viewFrom: 270, // 从西侧普吉特低地一侧看
+  label: { lon: -121.6, lat: 44.5, rotation: -82 },
+  pois: [
+    { name: "雷尼尔山", lon: -121.7603, lat: 46.8523, note: "喀斯喀特火山弧最高峰，活火山，海拔约4392m（14410ft，NPS）" },
+    { name: "圣海伦斯山", lon: -122.1944, lat: 46.1912, note: "1980年剧烈喷发的活火山" },
+    { name: "火山口湖", lon: -122.1685, lat: 42.9446, note: "马扎马火山塌陷成的破火山口湖，美国最深湖" },
+  ],
+  source: "喀斯喀特山脉：北美西北的火山山脉，从加拿大不列颠哥伦比亚到美国北加州，多座层状火山；锚点取雷尼尔山（NPS，14410ft）",
+};
+
+const ALASKA_RANGE: TerrainEntry = {
+  id: "alaska-range",
+  nameZh: "阿拉斯加山脉",
+  nameEn: "Alaska Range",
+  category: "mountain_system",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "迪纳利峰", lon: -151.0064, lat: 63.0692, elevation: 6190, kind: "peak" },
+  bbox: [-153.5, 61.8, -144.5, 63.8],
+  axis: [[-152.5, 62.3], [-145.5, 63.4]],
+  viewFrom: 180, // 从南侧（安克雷奇方向）看北美最高峰
+  label: { lon: -149.5, lat: 62.9, rotation: -12 },
+  pois: [
+    { name: "迪纳利峰", lon: -151.0064, lat: 63.0692, note: "北美最高峰，海拔约6190m（20310ft，USGS）；联邦官方名亦作麦金利山（Mount McKinley）" },
+  ],
+  source: "阿拉斯加山脉：阿拉斯加中南部约650km的弧形山脉，含北美最高峰迪纳利（USGS：20310ft）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -1852,6 +1952,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   TASMANIA, KGARI,
   MURRAY_DARLING,
   KAKADU, GRAMPIANS, NINGALOO,
+  // ===== 北美洲 / 美国 =====
+  ROCKY_MOUNTAINS, APPALACHIAN_MOUNTAINS, SIERRA_NEVADA_US, CASCADE_RANGE, ALASKA_RANGE,
 ];
 
 /**
@@ -1889,6 +1991,12 @@ const WIDE_VIEW: Record<string, number> = {
   "liangguang-hills": 1.9,
   pilbara: 1.7,
   "great-barrier-reef": 1.8,
+  // 北美 / 美国 —— 大型线状山系
+  "rocky-mountains": 2.6,
+  "appalachian-mountains": 2.5,
+  "sierra-nevada-us": 2.0,
+  "cascade-range": 2.2,
+  "alaska-range": 1.9,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
