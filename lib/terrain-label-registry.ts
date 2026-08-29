@@ -191,6 +191,10 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "rhaetian-alps": "national",
   "gotthard-massif": "national",
   "jura-mountains": "national",
+  saentis: "national",
+  "aletsch-glacier": "national",
+  "rhone-valley": "national",
+  "swiss-plateau": "national",
 
   // 冰岛
   hekla: "national",

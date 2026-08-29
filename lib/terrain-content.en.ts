@@ -4235,4 +4235,109 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Fossil excavation at Monte San Giorgio began in the 1850s, and over more than a century tens of thousands of specimens have been recovered, including marine reptiles such as Ticinosuchus and Besanosaurus, now in museums in Zurich, Milan and elsewhere. The Swiss side was inscribed as a World Heritage Site in 2003, extended to the Italian side in 2010.",
   },
+
+  "saentis": {
+    seeing:
+      "Säntis, in north-eastern Switzerland, is the highest peak of the Alpstein limestone massif, 2,502 m. It is not very high, but because it stands isolated between the Swiss Plateau and the main Alps with no higher mountains around it, it is very prominent — on an exceptionally clear day the summit is said to give views into six countries (Switzerland, Germany, Austria, Liechtenstein, France, Italy). A weather station has stood on the summit since 1882.",
+    formation:
+      "The Alpstein, which Säntis belongs to, is a piece of the \"Helvetic nappes\" pushed to the northern edge of the Alps during mountain-building — made of Mesozoic shallow-marine limestone. These beds were strongly folded into several near-parallel rock ridges (such as the famous Kreuzberge), the bending of the strata plain to see on the slopes. Limestone is soluble, so the massif has karst — solution grooves, shafts, an underground drainage system — and the summit barely holds any surface water.",
+    observation:
+      "From the air Säntis is a relatively isolated pale-grey limestone massif in north-eastern Switzerland, its slopes clearly showing folded, then erosion-cut, rock ridges; the summit has a prominent weather radar tower and a cable-car station. Its northern side drops abruptly to the rolling Swiss Plateau, and its southern side connects to the more interior Alps. Among the ridges are a few green lakes (such as the Seealpsee).",
+    distinguish:
+      "Säntis differs from the interior high Alps (the Bernese and Pennine Alps): it is a small massif of limestone pushed out on its own to the northern edge, much lower and smaller, but because it is isolated and next to lowland, it has an outsized visual \"presence\". Like the Jura it is limestone with karst, but the Jura is a fold belt while Säntis is a fragment of a nappe.",
+    concept:
+      "Säntis is a case study in topographic prominence: how \"big\" a mountain looks depends not only on its altitude but on how far it rises above the surrounding saddle and whether higher mountains block the view. Säntis's altitude is unremarkable for the Alps, but its prominence and its views are among the best in Switzerland. A common misconception is to judge a mountain's \"standing\" by altitude alone.",
+    history:
+      "The weather station on the Säntis summit is one of the oldest high-mountain observatories in Switzerland; when it was built in 1882 all its supplies were carried up by hand. A cable car was built in the early 20th century. It is also an important site for lightning research — the tall tower on the summit is struck by lightning throughout the year and is used to study it.",
+  },
+
+  "aletsch-glacier": {
+    seeing:
+      "The Great Aletsch Glacier, in the Bernese Alps, is the largest glacier in the whole Alps — about 20 km long and around 78 km² in area. It flows from the high snowfields around the Jungfrau, three ice streams merging at \"Konkordiaplatz\" into one broad ice river, where the ice is about 800 m thick. Dark \"medial moraine\" stripes run along its surface, especially clear from the air. It is the heart of the Jungfrau–Aletsch World Heritage Site.",
+    formation:
+      "The Aletsch Glacier forms from snow high in the mountains that accumulates faster than it melts, compacting into ice year by year and flowing down the valley under its own weight. Its accumulation area (firn basin) is large and high, which is why it can form such a long tongue. As it flows it scrapes the valley walls and floor, and lines the debris from its tributary glaciers into lengthwise \"medial moraine\" bands. In recent decades warming has clearly retreated its terminus and thinned its surface.",
+    observation:
+      "From the air the Aletsch Glacier is a broad, white ice river with several parallel dark stripes (medial moraines), winding south from the snow peaks in the north; on either side are steep rock walls and hanging tributary glaciers; the terminus is grey rubble, a meltwater river and \"fresh\" bare rock only exposed from under the ice in recent decades. The Aletsch Forest on the glacier's eastern side is a study site for how vegetation colonises ground after glacier retreat.",
+    distinguish:
+      "The Aletsch Glacier differs from Iceland's Vatnajökull: Vatnajökull is an \"ice cap\" lying on a plateau and flowing outward from the centre; the Aletsch is a \"valley glacier\" flowing along one mountain valley, elongated in form. It is longer and \"cleaner\" (less surface debris) than the Tasman Glacier in New Zealand.",
+    concept:
+      "The Aletsch Glacier is a case study in a valley glacier and medial moraine: when two glaciers merge, the inner \"lateral moraine\" (the debris band along each bank) of each combines and is carried in the middle of the merged glacier, moving downstream with the ice as a dark stripe. Count the medial moraines on a glacier and you roughly know how many tributaries formed it. A common misconception is to take a medial moraine for a crevasse or a path on the ice.",
+    history:
+      "In the 19th century the Aletsch Glacier was much longer than it is now; comparing old photographs, old maps and the present position shows the extent of over a century of retreat at a glance. The Jungfrau–Aletsch region was inscribed as a World Heritage Site in 2001. Viewpoints beside the glacier (such as the Aletsch Arena and the Eggishorn) are popular Swiss hiking and glacier-watching spots.",
+  },
+
+  "rhone-glacier": {
+    seeing:
+      "The Rhône Glacier, in central Switzerland near the Furka Pass, is the source of the Rhône — the meltwater that flows from its terminus runs south-west through the canton of Valais, into Lake Geneva, then via Lyon in France and finally to the Mediterranean. It is famous for a blue ice grotto carved into it each summer for visitors, and it is one of the most vivid \"showcase windows\" of Alpine glacier retreat.",
+    formation:
+      "The Rhône Glacier, like other valley glaciers, forms from mountain snow compacting and flowing down the valley. In the ice ages it was much larger — during the last ice age the Rhône Glacier reached as far as present-day Lyon in France, gouging the whole Rhône valley into a deep trough. After the ice retreated, the glacier drew back all the way up to its present high position. Over the last century and more its terminus has retreated about 1,300 m and its body has thinned dramatically; in recent years white insulating blankets are laid over part of the ice in summer to slow the melt.",
+    observation:
+      "From the air the Rhône Glacier is a body of ice hanging on the mountainside at the head of the Goms valley, its terminus grey rubble and a small proglacial lake of ponded meltwater, from which the water flows out as the first stretch of the Rhône. Between the terminus and the valley road (the Furka Pass road) is a large expanse of smooth, near-vegetation-free rock exposed from under the ice only in recent decades — still carrying the scratches ground by the glacier.",
+    distinguish:
+      "The Rhône Glacier and the Aletsch Glacier are both in the Swiss high Alps, but the Aletsch is the largest glacier in the Alps and still relatively \"healthy\"; the Rhône Glacier is much smaller and has retreated more completely, its terminus now drawn back onto a very steep slope. Its value is more in being \"comparable\" — from 18th-century engravings to today's photographs, its change of position is unmistakable.",
+    concept:
+      "The smooth bare rock in front of the Rhône Glacier is a case study in glacial polishing: the debris carried at the base of the glacier acts like sandpaper, polishing the bedrock it flows over and cutting scratches and grooves aligned with the ice flow (a \"roche moutonnée\"). A smooth rock surface with parallel scratches and little soil or vegetation is almost certainly ground that was under the ice not long ago. A common misconception is to take a glacially polished surface for artificial polishing or water erosion.",
+    history:
+      "The Rhône Glacier's changes of position have nearly three centuries of record — 18th- and 19th-century painters and early photographers left many images, an important resource for studying how Alpine glaciers respond to climate. The ice grotto has been a paid attraction since the late 19th century, run by one local family for generations.",
+  },
+
+  "gorner-glacier": {
+    seeing:
+      "The Gorner Glacier, south-east of Zermatt between the Matterhorn and Monte Rosa, is a whole system of several glaciers merged together — by area the second-largest glacier area in the Alps after the Aletsch. The Gornergrat railway (3,089 m) faces it directly and is a classic spot for viewing this glacier and the ring of 4,000 m peaks around it. In recent decades the Gorner Glacier has retreated fast, and the confluence of its tributary glaciers has separated.",
+    formation:
+      "The ice of the Gorner Glacier comes from the firn basins of a ring of 4,000 m peaks — Monte Rosa, the Lyskamm, the Breithorn and others — several ice streams converging to the north-west and flowing down. The high mountains here have hard rock, high altitude and heavy snow, so a large glacier area can persist. Like other glaciers it scrapes the valley and carries debris as it flows; several medial moraines run between the merged ice streams.",
+    observation:
+      "From the air the Gorner Glacier is a white network of ice with several \"tributaries\" at the head of the Zermatt valley, ringed by the dark rock peaks of the Matterhorn, Monte Rosa and others; several parallel dark medial-moraine stripes run along the ice, and the terminus is grey rubble and a steadily growing proglacial lake. The little red rack-railway train and viewing platform on the Gornergrat ridge face this ice directly.",
+    distinguish:
+      "The Gorner Glacier and the Aletsch Glacier are both large Alpine glaciers, but the Aletsch is a long tongue dominated by one main ice stream; the Gorner is a \"tree-branch\" system of several ice streams merging, ringed by 4,000 m peaks. Being able to see the glacier and its headwater peaks at the same time from a railway is rare in the Alps.",
+    concept:
+      "The Gorner Glacier is a case study in a glacier system / dendritic glacier: the several glaciers of a mountain area merge stage by stage into one main tongue, like the tributaries of a river forming a main stem, the whole thing shaped like an upside-down tree. Count the medial moraines on the main tongue and each roughly corresponds to one tributary joining. A common misconception is to take a merged system for one single glacier.",
+    history:
+      "The Gornergrat railway, opened in 1898, was one of the first electrified rack railways in Europe and for over a century has been a fixed vantage point for watching the Gorner Glacier change. In the 19th century the Gorner Glacier repeatedly dammed a side valley, ponding \"Lake Gorner\" behind the ice, which drained periodically and swept down toward Zermatt — an early subject of glacial-flood research.",
+  },
+
+  "lauterbrunnen-valley": {
+    seeing:
+      "The Lauterbrunnen Valley, south of Interlaken on the northern edge of the Bernese Alps, is a deep, straight valley walled by near-vertical grey rock hundreds of metres high. It is best known for its waterfalls — about 72 of them, large and small, plunge from the hanging valleys on either side, among them the Staubbach Fall (about 300 m, one of the highest free-falling waterfalls in Europe) and the Trümmelbach Falls, hidden inside the mountain, draining the meltwater of the Eiger, Mönch and Jungfrau glaciers down through a series of falls.",
+    formation:
+      "The Lauterbrunnen Valley is a classic glacial U-shaped trough: in the ice ages a thick main glacier cut down hard along this valley, gouging the floor deep and flat and grinding the walls into sheer cliffs. The tributary glaciers on either side were small and cut down weakly, so after the ice retreated their valley mouths were left \"hanging\" high on the main-valley wall (\"hanging valleys\"), and their streams can only enter the main valley as waterfalls — which is why there are so many here.",
+    observation:
+      "From the air the Lauterbrunnen Valley is a north-south, dead-straight, flat-floored deep trough (villages, fields and a railway on the floor), its walls a continuous grey vertical cliff topped by green alpine pasture and higher snow peaks. The white water lines down the cliff are the waterfalls from the hanging valleys; there are most of them after rain and in the snowmelt season.",
+    distinguish:
+      "The Lauterbrunnen Valley differs from Skógafoss in Iceland (an old sea cliff): Skógar's cliff is a former coastline from sea-level change; Lauterbrunnen's cliffs and hanging valleys come from a main glacier cutting down hard while the tributaries fell behind. It is the same kind of U-shaped glacial trough as Milford Sound in New Zealand, only not flooded by the sea.",
+    concept:
+      "The Lauterbrunnen Valley is a case study in hanging valleys and waterfalls: the main glacier is thicker, higher-volume and cuts down harder than its tributaries, so the main valley is gouged much deeper than the side valleys; after the ice retreats the tributary valley mouths hang high on the main-valley wall and the tributaries drop in as waterfalls. To recognise a hanging valley, look at whether the waterfall is fed from above by a gentle small valley, with the fall right at the junction of that valley and the main one. A common misconception is that a waterfall is just a step in the riverbed.",
+    history:
+      "The name Lauterbrunnen means \"many springs (waterfalls)\". In the 19th century writers such as Byron and Goethe came here, and the Staubbach Fall appears in a poem of Goethe's. Tolkien is said to have visited this area in 1911 and to have based the elf-valley Rivendell in The Lord of the Rings on the Lauterbrunnen Valley. Today the valley floor is the gateway to the Jungfrau region (Mürren, the Schilthorn, Jungfraujoch).",
+  },
+
+  "rhone-valley": {
+    seeing:
+      "The Rhône Valley (in Switzerland this mainly means the stretch within the canton of Valais) is a deep trough the Rhône has cut west from its glacier source, walled by the high Alps on both sides. It is narrow in the upper Goms, then opens into a broad flat floor past Brig, Visp, Sierre and Sion to Martigny, where it turns sharply north (\"the elbow of the Rhône\") and flows into Lake Geneva. The valley slopes are terraced with vineyards — this is Switzerland's largest wine region.",
+    formation:
+      "The Rhône Valley was gouged by a glacier: in the last ice age the Rhône Glacier reached as far as Lyon in France, deepening and widening this valley into a huge U-shaped trough. After the ice retreated, the Rhône braided across the broad valley floor as marshland; from the 19th century people straightened the channel and confined it between embankments (the \"Rhône corrections\"), turning the floor into farmland and towns. Because the high mountains on both sides shut out moisture from north and south, the valley floor is in a rain shadow — one of the driest and sunniest places in Switzerland — and the slopes are irrigated by old water channels (locally bisses or Suonen).",
+    observation:
+      "From the air the Rhône Valley is a broad, flat, dead-straight valley between the high Alps, its floor holding the embanked Rhône, a grid of farmland, several towns and the motorway and railway; the south-facing slope (a north-facing hillside faces south — plenty of sun) is covered in terraced vineyards, the north-facing slope more forested. Near Martigny you can see the valley turn 90 degrees.",
+    distinguish:
+      "The Rhône Valley and the Lauterbrunnen Valley are both U-shaped glacial troughs, but Lauterbrunnen is narrow and deep and known for its hanging-valley waterfalls; the Rhône Valley is a large trunk valley running the length of Valais — broad, straight, dry, with a large river and towns. It is a dead-straight large valley like the Great Glen in Scotland, but the Great Glen is fault-controlled while the Rhône Valley was mainly a glacier working along a pre-existing structural valley.",
+    concept:
+      "The Rhône Valley is a case study in an inner-alpine dry valley (rain shadow): moist air is lifted over the surrounding high mountains and rained out on the windward slopes, and by the time it crosses into a large interior valley ringed by high mountains it is dry and warming as it descends — so within rainy Switzerland this valley is dry enough to need artificial irrigation. To recognise this kind of valley, look at whether it is ringed by high mountains, has clearly lower rainfall than its surroundings, and has irrigation works on the slopes. A common misconception is that the Alps are wet and rainy everywhere.",
+    history:
+      "The Rhône Valley has been a route across the Alps since ancient times (several passes to Italy branch off it). The Valais irrigation-channel system is centuries old, an ingenious way of bringing high-mountain snowmelt to dry slopes, partly still in use. The Rhône corrections of the 19th and 20th centuries were carried out in phases; the most recent (the \"Third Rhône Correction\") is widening the channel and restoring some natural riverbank.",
+  },
+
+  "swiss-plateau": {
+    seeing:
+      "The Swiss Plateau (German: Mittelland; French: Plateau suisse — \"midland / central plateau\") is a belt of lowland between the Jura Mountains to the north-west and the Alps to the south-east, running from Lake Geneva to Lake Constance, about 300 km long and 30–40 km wide, mostly 400–600 m in altitude. It is only about 30% of Switzerland's area but holds about two-thirds of its population — Zurich, Bern, Lausanne, Geneva and most of the farmland and industry are here.",
+    formation:
+      "The bedrock of the Swiss Plateau is \"Molasse\" — sand and gravel eroded from the rising Alps, carried to a foreland basin at the mountain front and deposited and cemented, recording the \"growth history\" of the Alps. During the Quaternary ice ages, glaciers from the Alps spread again and again across the whole plateau, leaving moraine ridges, drumlins (streamlined hills shaped under the ice), gravel plains, and huge \"erratic\" boulders carried from the Alps and dropped on the plateau. The large lakes around its margins sit in basins overdeepened by the glaciers.",
+    observation:
+      "From the air the Swiss Plateau is a gently rolling green belt of hill farmland between the parallel ridges of the Jura and the snow peaks of the Alps, broken up by forest, rivers and several large lakes; look closely and you can pick out many streamlined hills (drumlins) all aligned the same way — their blunt ends pointing toward the direction the glacier came from. Cities, roads and railways form a dense network.",
+    distinguish:
+      "The Swiss Plateau is called a \"plateau\", but it is not an uplifted high land like Tibet — it is the \"midland lowland\" relative to the higher Jura and Alps on either side; its surface is glacially reworked hill country, not a flat table. It is part of the same foreland basin as the \"Molasse Basin\" of southern Germany.",
+    concept:
+      "The Swiss Plateau is a case study in a foreland basin: when a large mountain range rises, its weight bends the crust beside it down into a long trough; the debris eroded from the range fills that trough, building a thick pile of molasse. To recognise a foreland basin, look at whether it runs right along an orogenic belt, is filled with the debris eroded from that range, and subsided as the range rose. A common misconception is to take this kind of hill country for an ancient stable craton.",
+    history:
+      "The \"erratic boulders\" of the Swiss Plateau — huge isolated rocks lying far from the Alps but made of Alpine rock — helped scientists such as Agassiz in the 19th century propose and prove the \"ice age\" theory: only huge glaciers could have carried such large rocks so far. Today the plateau is the economic, demographic and transport core of Switzerland, and also where the conflict between farmland and urban growth is most concentrated.",
+  },
 };

@@ -4602,6 +4602,109 @@ const MONTE_SAN_GIORGIO: TerrainEntry = {
   source: "圣乔治山：卢加诺湖边一座林木覆盖的金字塔形小山，世界遗产——出土了全球保存最好的中三叠世（约2.4亿年前）海洋生物化石群（鱼龙类爬行动物、鱼类、无脊椎动物），保存在缺氧潟湖沉积的黑色沥青质页岩里（UNESCO）",
 };
 
+const SAENTIS: TerrainEntry = {
+  id: "saentis",
+  nameZh: "森蒂斯山",
+  nameEn: "Säntis",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "森蒂斯山顶（气象站）", lon: 9.343, lat: 47.249, elevation: 2502, kind: "peak" },
+  bbox: [9.20, 47.14, 9.50, 47.34],
+  viewScale: 1.3,
+  label: { lon: 9.343, lat: 47.249, rotation: 0 },
+  source: "森蒂斯山：瑞士东北部阿尔普施泰因（Alpstein）石灰岩山群的最高峰，2502米；孤立、地形突出，天气好时能望见周边多国；山顶自1882年起设有重要气象站（swisstopo / MeteoSwiss）",
+};
+
+const ALETSCH_GLACIER: TerrainEntry = {
+  id: "aletsch-glacier",
+  nameZh: "阿莱奇冰川",
+  nameEn: "Great Aletsch Glacier / Grosser Aletschgletscher",
+  category: "valley",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "康科迪亚广场（三条粒雪流汇合处）", lon: 8.028, lat: 46.502, elevation: 2760, kind: "gorge" },
+  bbox: [7.92, 46.35, 8.20, 46.56],
+  axis: [[8.05, 46.53], [8.08, 46.40]],
+  viewScale: 1.3,
+  label: { lon: 8.07, lat: 46.46, rotation: -80 },
+  source: "阿莱奇冰川：阿尔卑斯山最大的冰川，长约20公里、面积约78平方公里；三条粒雪流在康科迪亚广场汇合，那里冰厚约800米；属少女峰-阿莱奇世界遗产；退缩明显（swisstopo / UNESCO）",
+};
+
+const RHONE_GLACIER: TerrainEntry = {
+  id: "rhone-glacier",
+  nameZh: "罗讷冰川",
+  nameEn: "Rhône Glacier / Rhonegletscher",
+  category: "valley",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "罗讷冰川末端（罗讷河源头，富尔卡山口附近）", lon: 8.388, lat: 46.612, elevation: 2200, kind: "gorge" },
+  bbox: [8.33, 46.56, 8.45, 46.68],
+  label: { lon: 8.388, lat: 46.612, rotation: 0 },
+  source: "罗讷冰川：罗讷河的源头，在戈姆斯谷上端、富尔卡山口附近；以每年夏天开凿的蓝色冰洞闻名；自1856年以来末端退缩约1300米、冰体明显变薄（swisstopo / SLF）",
+};
+
+const GORNER_GLACIER: TerrainEntry = {
+  id: "gorner-glacier",
+  nameZh: "戈尔纳冰川",
+  nameEn: "Gorner Glacier / Gornergletscher",
+  category: "valley",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "戈尔纳冰川（策马特以东）", lon: 7.815, lat: 45.980, elevation: 2500, kind: "gorge" },
+  bbox: [7.72, 45.90, 7.92, 46.03],
+  axis: [[7.88, 45.92], [7.75, 46.00]],
+  viewScale: 1.2,
+  label: { lon: 7.81, lat: 45.97, rotation: -40 },
+  source: "戈尔纳冰川：策马特东南的冰川系统，是阿尔卑斯山仅次于阿莱奇的第二大冰川区，由罗莎峰、利斯卡姆等的冰汇成；戈尔内格拉特观景铁路正对着它；退缩很快（swisstopo）",
+};
+
+const LAUTERBRUNNEN_VALLEY: TerrainEntry = {
+  id: "lauterbrunnen-valley",
+  nameZh: "劳特布龙嫩谷",
+  nameEn: "Lauterbrunnen Valley",
+  category: "valley",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "施陶河瀑布（Staubbachfall）与谷底", lon: 7.909, lat: 46.593, elevation: 800, kind: "gorge" },
+  bbox: [7.85, 46.50, 7.96, 46.66],
+  axis: [[7.90, 46.50], [7.91, 46.64]],
+  viewScale: 1.2,
+  label: { lon: 7.91, lat: 46.58, rotation: 0 },
+  source: "劳特布龙嫩谷：伯尔尼阿尔卑斯北缘一条典型的冰蚀“U”形槽谷，两壁近乎垂直、高数百米；约72条瀑布从两侧的悬谷跌下，施陶河瀑布约300米、特吕默尔巴赫瀑布在山体内部（swisstopo）",
+};
+
+const RHONE_VALLEY: TerrainEntry = {
+  id: "rhone-valley",
+  nameZh: "罗讷河谷（瓦莱）",
+  nameEn: "Rhône Valley / Vallée du Rhône (Valais)",
+  category: "valley",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "锡永一带（罗讷河谷中段）", lon: 7.359, lat: 46.233, elevation: 500, kind: "meander" },
+  bbox: [6.90, 46.05, 8.45, 46.42],
+  axis: [[8.35, 46.55], [7.05, 46.15]],
+  viewFrom: 0,
+  viewScale: 2.0,
+  label: { lon: 7.5, lat: 46.25, rotation: -20 },
+  source: "罗讷河谷（瓦莱州）：罗讷河从冰川源头向西切出的深槽谷，两侧是阿尔卑斯高山；处在雨影里，是瑞士最干、日照最多的地方之一，谷坡靠灌溉渠（“bisses / Suonen”）种葡萄，是瑞士最大的葡萄酒产区（swisstopo）",
+};
+
+const SWISS_PLATEAU: TerrainEntry = {
+  id: "swiss-plateau",
+  nameZh: "瑞士高原（中央高地）",
+  nameEn: "Swiss Plateau / Mittelland / Plateau suisse",
+  category: "hills",
+  regionId: "europe",
+  country: "switzerland",
+  landmark: { name: "伯尔尼—苏黎世之间的丘陵湖区", lon: 7.9, lat: 47.05, elevation: 550, kind: "grassland" },
+  bbox: [6.10, 46.30, 9.50, 47.60],
+  axis: [[6.30, 46.45], [9.30, 47.55]],
+  viewScale: 2.4,
+  label: { lon: 7.7, lat: 47.1, rotation: -30 },
+  source: "瑞士高原：夹在汝拉山脉和阿尔卑斯山之间、约300公里长的低地带，海拔多在400—600米；基岩是阿尔卑斯剥蚀下来堆积的“磨拉石”，表层是冰期冰川留下的冰碛丘（drumlin）、砾石平原和漂砾；集中了瑞士约三分之二人口和大多数城市（swisstopo）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -4707,6 +4810,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 欧洲 / 瑞士 =====
   BERNESE_ALPS, PENNINE_ALPS, MATTERHORN, RHAETIAN_ALPS, GOTTHARD_MASSIF,
   JURA_MOUNTAINS, GLARUS_THRUST, MONTE_SAN_GIORGIO,
+  SAENTIS, ALETSCH_GLACIER, RHONE_GLACIER, GORNER_GLACIER,
+  LAUTERBRUNNEN_VALLEY, RHONE_VALLEY, SWISS_PLATEAU,
 ];
 
 /**
@@ -4811,6 +4916,8 @@ const WIDE_VIEW: Record<string, number> = {
   "gotthard-massif": 1.5,
   "jura-mountains": 2.2,
   "glarus-thrust": 1.4,
+  "rhone-valley": 2.0,
+  "swiss-plateau": 2.4,
   // 欧洲 / 冰岛
   askja: 1.5,
   thingvellir: 1.6,
