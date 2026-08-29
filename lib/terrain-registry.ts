@@ -4286,6 +4286,89 @@ const LAKI: TerrainEntry = {
   source: "拉基火山口列（Lakagígar）：1783—84年沿约25km裂隙喷发形成的约130个火山口，是有记载以来最大的玄武质熔岩喷发之一；释放的气体导致牲畜大批死亡和随后的大饥荒（“迷雾之灾”）（Institute of Earth Sciences）",
 };
 
+const GULLFOSS: TerrainEntry = {
+  id: "gullfoss",
+  nameZh: "黄金瀑布",
+  nameEn: "Gullfoss",
+  category: "gorge",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "黄金瀑布", lon: -20.123, lat: 64.327, elevation: 100, kind: "gorge" },
+  bbox: [-20.22, 64.29, -20.02, 64.37],
+  axis: [[-20.15, 64.30], [-20.08, 64.36]],
+  label: { lon: -20.12, lat: 64.33, rotation: -30 },
+  source: "黄金瀑布：白河（Hvítá，源自朗格冰原）分两级、成直角跌入古维斯河谷（Gullfossgljúfur）——一条冰期末冰川洪水冲刷、向上游后退切成的峡谷；20世纪初曾险被筑坝发电（National Land Survey of Iceland）",
+};
+
+const DETTIFOSS: TerrainEntry = {
+  id: "dettifoss",
+  nameZh: "黛提瀑布",
+  nameEn: "Dettifoss",
+  category: "gorge",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "黛提瀑布", lon: -16.385, lat: 65.815, elevation: 330, kind: "gorge" },
+  bbox: [-16.48, 65.78, -16.30, 65.86],
+  axis: [[-16.40, 65.80], [-16.37, 65.84]],
+  label: { lon: -16.385, lat: 65.815, rotation: 0 },
+  source: "黛提瀑布：菲厄德尔冰川河（Jökulsá á Fjöllum，源自瓦特纳冰原）上、宽约100m、落差约44m 的瀑布，按平均流量是冰岛最大、常被列为欧洲最强的瀑布之一（Vatnajökull NP）",
+};
+
+const JOKULSARGLJUFUR: TerrainEntry = {
+  id: "jokulsargljufur",
+  nameZh: "约克尔萨峡谷",
+  nameEn: "Jökulsárgljúfur",
+  category: "gorge",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "阿斯比吉马蹄形峡谷（Ásbyrgi）", lon: -16.510, lat: 66.020, elevation: 60, kind: "gorge" },
+  bbox: [-16.62, 65.80, -16.35, 66.10],
+  axis: [[-16.42, 65.82], [-16.52, 66.08]],
+  viewScale: 1.6,
+  label: { lon: -16.52, lat: 65.95, rotation: -70 },
+  source: "约克尔萨峡谷：菲厄德尔冰川河下切的峡谷，长约25km、深达约100m；主要由全新世多次冰下喷发引发的特大冰川洪水冲刷而成；北端的阿斯比吉是一处马蹄形的天然峡湾（Vatnajökull NP）",
+};
+
+const SKOGAFOSS: TerrainEntry = {
+  id: "skogafoss",
+  nameZh: "斯科加瀑布",
+  nameEn: "Skógafoss",
+  category: "gorge",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "斯科加瀑布", lon: -19.511, lat: 63.532, elevation: 60, kind: "escarpment" },
+  bbox: [-19.58, 63.50, -19.44, 63.57],
+  label: { lon: -19.51, lat: 63.53, rotation: 0 },
+  source: "斯科加瀑布：斯科加河从一道约60m高的陡崖跌下——这道横贯冰岛南部的陡崖是过去的海岸线，如今海岸已因陆地抬升和外冲平原向前推进而南移数公里（National Land Survey of Iceland）",
+};
+
+const HAUKADALUR_GEYSIR: TerrainEntry = {
+  id: "haukadalur-geysir",
+  nameZh: "盖歇尔间歇泉区",
+  nameEn: "Haukadalur (Geysir)",
+  category: "basin",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "斯特罗库尔间歇泉（Strokkur）", lon: -20.301, lat: 64.313, elevation: 110, kind: "escarpment" },
+  bbox: [-20.35, 64.29, -20.25, 64.34],
+  label: { lon: -20.30, lat: 64.313, rotation: 0 },
+  source: "豪卡达鲁尔地热谷：含“大盖歇尔”（Geysir，英文 geyser 一词的词源，现基本休眠）和每5—10分钟喷发一次的斯特罗库尔；“黄金圈”景区之一（Institute of Earth Sciences）",
+};
+
+const KRAFLA: TerrainEntry = {
+  id: "krafla",
+  nameZh: "克拉夫拉火山",
+  nameEn: "Krafla",
+  category: "basin",
+  regionId: "europe",
+  country: "iceland",
+  landmark: { name: "维提火口与克拉夫拉破火山口", lon: -16.755, lat: 65.716, elevation: 500, kind: "escarpment" },
+  bbox: [-16.95, 65.60, -16.55, 65.80],
+  viewScale: 1.5,
+  label: { lon: -16.76, lat: 65.72, rotation: 0 },
+  source: "克拉夫拉火山：米湖附近一个直径约10km 的破火山口，附带一条裂隙带；1975—84年的“克拉夫拉之火”是九幕裂谷张裂-喷发，地面沿裂隙带累计拉开数米，是研究离散板块边界的经典地点（Icelandic Met Office / Institute of Earth Sciences）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -4385,6 +4468,7 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   ASKJA, THINGVELLIR,
   VATNAJOKULL, LANGJOKULL, HOFSJOKULL, MYRDALSJOKULL,
   SKEIDARARSANDUR, JOKULSARLON, LAKI,
+  GULLFOSS, DETTIFOSS, JOKULSARGLJUFUR, SKOGAFOSS, HAUKADALUR_GEYSIR, KRAFLA,
 ];
 
 /**
@@ -4490,6 +4574,8 @@ const WIDE_VIEW: Record<string, number> = {
   myrdalsjokull: 1.6,
   skeidararsandur: 2.0,
   laki: 1.7,
+  jokulsargljufur: 1.6,
+  krafla: 1.5,
   // 欧洲 / 英国
   "scottish-highlands": 2.4,
   cairngorms: 1.8,

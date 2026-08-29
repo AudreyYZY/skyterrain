@@ -3920,4 +3920,94 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The 1783–84 Laki eruption caused the \"Mist Hardships\" (Móðuharðindin) in Iceland: the poisonous haze and the severe cold that followed killed about half the livestock, and the ensuing famine killed roughly a fifth of Iceland's population — the worst natural disaster in Iceland's history. The sulphur haze from the eruption also caused abnormal weather and crop failures in many parts of the Northern Hemisphere that year. Today Lakagígar is within Vatnajökull National Park, its moss landscape extremely fragile, with access only on marked paths.",
   },
+
+  "gullfoss": {
+    seeing:
+      "Gullfoss (\"golden falls\"), in south-western Iceland, is one of the three big stops of the \"Golden Circle\" day trip. Here the Hvítá river first drops a step of about 11 m, then turns at a right angle and drops about 21 m more, plunging into a narrow steep gorge in a cloud of spray, with rainbows common on sunny days. The \"golden\" of the name refers to the yellow-brown tone the turbid glacial water takes in sunlight.",
+    formation:
+      "The gorge below Gullfoss (Gullfossgljúfur) was not cut slowly by the Hvítá over millions of years, but scoured out in a short time by large glacial floods at the end of the ice age. The flood cut a step in the hard basalt; the rock below the step was undercut by the flow and by cavitation and collapsed, so the step retreated steadily upstream — today's waterfall is the current position of that retreating step, and the gorge is the \"trail\" it has left behind.",
+    observation:
+      "From the air Gullfoss is the Hvítá suddenly \"disappearing\", on a gentle grassy plain, into a winding deep gorge — from upstream you can barely see the falls themselves, only the river turning a corner, throwing up spray and vanishing. The gorge walls are dark basalt in horizontal beds interlayered with volcanic ash, and the gorge floor is churning brown rapids.",
+    distinguish:
+      "Gullfoss and Dettifoss are both large Icelandic waterfalls, both on glacial rivers, and both with gorges shaped by glacial floods, but Gullfoss has a \"two-step plus right-angle turn plus plunge into a gorge\" form, while Dettifoss is a single wide step spanning the whole river. Like Niagara Falls, both waterfalls are retreating upstream along their rivers.",
+    concept:
+      "Gullfoss is a case study in the upstream retreat of a waterfall step: at a step the flow concentrates its energy, undercutting the rock at the foot, and the rock above loses support and collapses, so the step (waterfall) moves upstream year by year, leaving a gorge behind it. To recognise this kind of waterfall, look at whether it is immediately followed downstream by a deep narrow gorge whose width matches that of the falls. A common misconception is that a waterfall's position is fixed.",
+    history:
+      "In the early 20th century foreign investors wanted to build a hydro station on Gullfoss. Sigríður Tómasdóttir, the daughter of the farmer who rented the land the falls are on, campaigned against it for years — reportedly walking to Reykjavík on foot and even threatening to throw herself into the falls. The scheme was never carried out, and she is remembered as one of Iceland's earliest environmentalists, with a memorial stone by the falls. Gullfoss is a protected natural monument today.",
+  },
+
+  "dettifoss": {
+    seeing:
+      "Dettifoss, in north-eastern Iceland on the Jökulsá á Fjöllum river, is about 100 m wide with a drop of about 44 m. By average flow it is the largest waterfall in Iceland, and it is often listed as one of the most powerful in Europe. Its water comes from the Vatnajökull ice cap, carrying large amounts of fine glacial silt, so it is grey-white, and its roar and the spray it throws up can be felt kilometres away.",
+    formation:
+      "Dettifoss is at a large step in the middle of Jökulsárgljúfur canyon. Like Gullfoss, this step was scoured and undercut in hard basalt by repeated catastrophic Holocene glacial floods (from volcanic eruptions beneath Vatnajökull), and it is retreating upstream. Selfoss is a short way upstream and Hafragilsfoss a short way downstream — the three are the same retreating step showing on different rock layers.",
+    observation:
+      "From the air Dettifoss is a grey-white curtain of water spanning the whole river across a black basalt desert, plunging into the roughly 100 m deep, sheer-walled Jökulsárgljúfur below; the canyon runs on north from here all the way to the sea. Both banks are almost vegetation-free — black columnar basalt and rock surfaces kept permanently wet by the spray.",
+    distinguish:
+      "Dettifoss versus Gullfoss: Dettifoss is in the north-east, its water \"wilder\" (grey-white, desolate, few visitor facilities), a single wide step; Gullfoss is in the south-west, a two-step drop with a road and visitor centre beside it. Dettifoss's flow at high water is enormous, but as its drop is not especially high, its \"power\" is mainly in the volume.",
+    concept:
+      "Dettifoss is a case study in flow versus drop: to measure how \"powerful\" (how much power) a waterfall is, you have to consider both the flow of water and the height it falls — Dettifoss has a moderate drop but a huge flow, so its total energy is among the highest in Europe; some waterfalls are very tall but carry little water, spectacular to look at but not high in \"power\". A common misconception is to compare waterfalls by height alone.",
+    history:
+      "The Jökulsárgljúfur canyon and the Dettifoss area were designated Jökulsárgljúfur National Park in 1973, absorbed into Vatnajökull National Park in 2008. Roads here were built late and are rough, and this has long been one of the more pristine, less developed parts of Iceland. Because of its desolate character, Dettifoss was used as the opening location of the film Prometheus.",
+  },
+
+  "jokulsargljufur": {
+    seeing:
+      "Jökulsárgljúfur (\"canyon of the glacial river\"), in north-eastern Iceland, is a large canyon cut by the Jökulsá á Fjöllum river, about 25 km long and up to about 100 m deep. At the northern end is a place called Ásbyrgi, which is especially strange: a horseshoe-shaped hollow about 3.5 km long, walled on three sides by 100 m cliffs, its floor covered in birch woodland — as if a bite had been taken out of the plateau.",
+    formation:
+      "Jökulsárgljúfur was not cut bit by bit by the river over tens of thousands of years, but mainly scoured out within a few days by several catastrophic Holocene glacial floods (triggered by ice melted in eruptions beneath Vatnajökull). Each flood's enormous flow and carrying power prised whole blocks of columnar basalt out of the riverbed and swept them away, driving the step violently upstream. Ásbyrgi is generally thought to be a \"temporary\" side channel that one or two of these floods cut beside the main channel; when the flood passed and the water fell, it left this dead-end horseshoe canyon.",
+    observation:
+      "From the air Jökulsárgljúfur is a deep, straight, sheer-walled slash across a black lava plateau, with the grey-white glacial river tumbling along the floor past several waterfalls (Dettifoss, Selfoss, Hafragilsfoss). At the northern end Ásbyrgi is an isolated, three-sided, greenery-filled horseshoe pit, in sharp contrast with the bare plateau around it.",
+    distinguish:
+      "Jökulsárgljúfur is similar in origin to the Channeled Scablands of eastern Washington State in the USA — both scoured fast in hard lava by catastrophic ice-age or post-glacial floods rather than by a steady river. Compared with a canyon eroded by an ordinary river, it formed in far less time and its step retreated far faster.",
+    concept:
+      "Jökulsárgljúfur is a case study in catastrophic-flood landforms: a flood far larger than the everyday flow has an erosive power that does not rise linearly with discharge but is amplified sharply — it can prise up and move boulders an ordinary river could never budge, cutting deep canyons, drilling giant potholes and pushing a step far upstream in a very short time. To recognise this landform, look at whether the scale of the canyon is \"out of proportion\" to the flow in the river now. A common misconception is to explain every canyon by the present river.",
+    history:
+      "In Norse mythology, Ásbyrgi is the hoofprint left by one hoof of Sleipnir, Odin's eight-legged horse. Icelandic folklore says the \"hidden people\" (huldufólk) live here. A national park was established here in 1973, absorbed into Vatnajökull National Park in 2008. The birch-and-rowan woodland on the floor of Ásbyrgi is a rare stretch of continuous forest in Iceland and is carefully protected.",
+  },
+
+  "skogafoss": {
+    seeing:
+      "Skógafoss, on Iceland's south coast, is where the Skógá river drops straight over a cliff about 60 m high and 25 m wide, with a big flow and heavy spray, and there is almost always a rainbow (sometimes a double) on sunny days. What makes it special is not the waterfall itself but the cliff — it is the former coastline.",
+    formation:
+      "In the ice age the weight of the ice sheet pressed the Icelandic crust down, and the sea reached several kilometres inland of the present coast, cutting a sea cliff along the edge of the low hills of the south. After the ice melted, the land, relieved of its load, slowly rebounded and rose; at the same time glacial rivers kept dumping sediment in front of the cliff, building the large flat outwash plains. Together these pushed the coastline several kilometres south, leaving the old sea cliff \"stranded\" inland — Skógafoss is where the Skógá river drops over this old sea cliff. A string of other waterfalls (Seljalandsfoss and others) drop over the same cliff.",
+    observation:
+      "From the air, southern Iceland has a roughly east-west cliff running continuously for tens of kilometres, separating the highland to the north from the flat farmland and outwash plains to the south. Skógafoss is the highest-flow point on this cliff, and the Skógá river above it has about 20 more small falls upstream; below the cliff is green pasture and black-sand beach, with the coastline several kilometres away.",
+    distinguish:
+      "Skógafoss is different from Gullfoss and Dettifoss: those are glacial rivers on lava plateaus, where a flood cut a step and the step keeps retreating upstream; Skógafoss's step is a largely fixed old sea cliff, formed by sea-level change and land uplift, not by headward erosion.",
+    concept:
+      "The old sea cliff at Skógafoss is a case study in post-glacial rebound (isostatic adjustment): a heavy ice sheet presses the crust down, and after the ice melts the crust, freed of its load, rebounds and rises slowly, like a released spring, so former coastlines, beaches and sea cliffs are lifted above the present sea, or even moved inland. To recognise this landform, look for a cliff or terrace inland that runs parallel to the coast but lies far from the sea. A common misconception is to take an old sea cliff for a fault scarp or a river-cut cliff.",
+    history:
+      "Legend says the first Viking to settle at Skógar hid a chest of treasure behind the waterfall. Skógar is an old settlement on Iceland's south coast, with an open-air folk museum. The Fimmvörðuháls hiking trail, which starts beside the falls, crosses the pass between the Eyjafjallajökull and Mýrdalsjökull ice caps — the first-phase fissure of the 2010 Eyjafjallajökull eruption opened near this trail.",
+  },
+
+  "haukadalur-geysir": {
+    seeing:
+      "Haukadalur is a small geothermally active valley in south-western Iceland, one of the \"Golden Circle\" attractions. In the valley is the \"Great Geysir\" — the English word \"geyser\" comes from its name (from the Old Norse geysa, \"to gush\"). The Great Geysir is now largely dormant, occasionally active after earthquakes; the one that actually erupts regularly, every 5 to 10 minutes, sending a column of water 15–20 m up, is a spring beside it called Strokkur (\"the churn\").",
+    formation:
+      "Magma or hot rock at depth heats the deep groundwater. In a geyser's plumbing, the water at the bottom, though already above the surface boiling point, cannot boil for the moment because of the pressure of the water column above it (superheated). When the bottom water finally begins to vaporise, the steam bubbles push the water above them up, which reduces the pressure, so the whole column boils violently almost at once and erupts water and steam. After the eruption the pressure recovers, the conduit refills and reheats, and the cycle repeats. The erupted water is rich in silica, which deposits as pale sinter terraces around the vent.",
+    observation:
+      "From the air Haukadalur is an area of pale, steaming ground dotted with round, silica-rimmed pools of turquoise hot water, plus boiling mud pots and steam vents. Strokkur's vent periodically first swells into a blue dome of water, then \"pops\" open into a white column. Around it are green grassy slopes and a small river.",
+    distinguish:
+      "A geyser differs from an ordinary hot spring or boiling spring in being \"intermittent\" — it needs a particular underground plumbing geometry that periodically builds up pressure and then suddenly releases it. There are not many places in the world with active geysers (Iceland, Yellowstone in the USA, New Zealand, Chile and a few others), all in volcanic areas with very strong geothermal anomalies and abundant groundwater.",
+    concept:
+      "Strokkur is a case study in the geyser mechanism: the key is \"superheating plus sudden depressurisation\" — water at depth is held from boiling by pressure, and once a trigger drops the pressure at the top sharply, a large amount of superheated water below flashes to steam in an instant, blasting the water column out of the ground. To recognise a geyser, look at whether it erupts water in regular, periodic bursts rather than steaming continuously. A common misconception is that a geyser erupts all the time.",
+    history:
+      "The Great Geysir's eruptions have centuries of record in Iceland, and its activity has risen and fallen with nearby earthquakes — in some years it reached 70–80 m, in others it did nothing. In the 19th century soap powder was thrown into it to force eruptions for tourists, later banned. Strokkur resumed regular eruptions after its vent was cleared out in 1963.",
+  },
+
+  "krafla": {
+    seeing:
+      "Krafla, in north-eastern Iceland east of Lake Mývatn, is a caldera about 10 km across with a fissure swarm running through it. It is not high and its outline is not obvious, but it is very famous in geology: from 1975 to 1984 a sequence of nine \"rifting-eruption\" episodes happened here (the \"Krafla Fires\"), the ground pulling apart along the fissure swarm a total of several metres — a classic place to observe \"plates in the act of separating\".",
+    formation:
+      "Krafla sits right on the Mid-Atlantic Ridge. Between 1975 and 1984, magma from depth repeatedly flowed into the magma chamber beneath the caldera and then injected sideways along the fissure swarm, like inserting sheets of \"dike\" into the ground — each injection pushed the ground apart by tens of centimetres to over a metre, while the centre first bulged up and then subsided, and several times the magma broke through the surface and erupted as lava. The whole process was recorded by dense seismometers, distance measurement and levelling, making it a textbook case of rift spreading. The caldera also contains \"Víti\", a crater lake formed by a steam explosion in 1724.",
+    observation:
+      "From the air Krafla is a gently rolling volcanic area east of Lake Mývatn, covered in black fresh lava flows and pale pumice, with ground fissures, fault scarps and scoria cones parallel to the fissure swarm arranged in a north-south belt. In the caldera is Víti, a round green crater lake, next to a steaming geothermal field and a geothermal power station. The 1975–84 lava flows are still clearly visible on the surface.",
+    distinguish:
+      "Krafla and Þingvellir are both on the Mid-Atlantic Ridge and both show plate rifting, but Þingvellir is mainly the large-scale graben landform (one big rift valley), while Krafla shows the \"dynamic process\" of rifting — dike intrusion, ground pulling apart, periodic eruption. Compared with a caldera like Askja, Krafla's rifting character is more prominent.",
+    concept:
+      "The Krafla Fires are a case study in a rifting episode: at a divergent plate boundary, spreading is not steady and continuous but \"held back\" for long periods and then released in a burst over a few years through a series of dike intrusions and eruptions — in one episode the ground can suddenly pull apart by several metres, then be quiet for decades or centuries. To recognise this activity, look at whether the ground fissures are fresh, in parallel sets, and accompanied by dike-like magma intrusion. A common misconception is that plates move at a steady rate every year.",
+    history:
+      "The \"Mývatn Fires\" of 1724–1729 destroyed farms nearby. In 1975, just as the Krafla geothermal power station began drilling, the \"Krafla Fires\" began, and drilling and eruptions went on at the same time, with the project repeatedly disrupted. This complete observational dataset was later widely used to build physical models of dike intrusion and rift spreading. The Krafla geothermal power station is still operating today, and the nearby Víti crater and lava fields are a popular hiking area.",
+  },
 };
