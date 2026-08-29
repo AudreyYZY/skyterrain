@@ -1253,6 +1253,82 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Altun Mountains area is barely peopled; the Altun Mountains National Nature Reserve, established in 1983, is important habitat for Tibetan antelope, wild yak and kiang, and one of China's largest reserves of the high cold-desert type. Some branch routes of the ancient Silk Road skirted its northern foot.",
   },
 
+
+  "chengdu-plain": {
+    seeing:
+      "The Chengdu Plain occupies the western Sichuan Basin — the largest and flattest plain in the basin, about 19,000 km², at 450–750 m. It was built by the Min, Tuo and other rivers as they left the mountains, and its fertile, easily irrigated land is the core of the \"land of abundance.\"",
+    formation:
+      "The Chengdu Plain is a compound fan plain made of the alluvial fans of several rivers merged together. The Min River leaves the Longmen Mountains to the west and, below the mountain gap, spreads out the gravel and silt it carries, finer downstream. The Dujiangyan works split the Min River at the fan head into a self-flowing irrigation network covering the whole plain.",
+    observation:
+      "From the air the Chengdu Plain is a neat green lowland on the west side of the Sichuan Basin, backed by the steep Longmen Mountains and ringed on the other three sides by the basin's red hills. The fields are regular, the canals a dense grid, Chengdu in the centre. Because the basin is closed and moisture abundant, it is cloudy and low in sunshine year-round.",
+    distinguish:
+      "The Chengdu Plain and the Sichuan Basin: the Chengdu Plain is a distinct alluvial-fan plain inside the basin, which is the mountain-ringed regional unit — the former is part of the latter. The Chengdu Plain and the Guanzhong Plain: both are river-alluvial plains in mountain-walled fault basins, but the Chengdu Plain is moister and cloudier; the Guanzhong Plain is drier and sunnier.",
+    concept:
+      "The Chengdu Plain is a model of \"alluvial-fan plain plus ancient waterworks\": a river leaving the mountains naturally builds a fan plain, and the Dujiangyan works, built in 256 BCE, tamed the Min River into a controllable irrigation network that has run for over two thousand years, turning a drought- and flood-prone fan into a reliable granary.",
+    history:
+      "The Chengdu Plain was the centre of the ancient Shu civilisation; the Sanxingdui and Jinsha sites are here. Dujiangyan was built under Li Bing, the Qin governor of Shu commandery, and still irrigates today. Prosperous and relatively stable, the plain often served as a \"rear area\" in times of war.",
+  },
+
+  "guanzhong-plain": {
+    seeing:
+      "The Guanzhong Plain, also called the Wei River Plain, lies in central Shaanxi between the Qinling to the south and the Weibei uplands (the Northern Mountains) to the north, built by the Wei River and its tributaries. It is long east–west and narrow north–south, anciently called \"the eight hundred li of Qin.\" Xi'an sits in the middle of it.",
+    formation:
+      "The Guanzhong Plain is a graben — a down-dropped rift basin: the sides were uplifted into mountains (the Qinling, the Northern Mountains) along faults while the middle block sank, and silt from the Wei River filled the hollow into a plain. The plain slopes gently from both sides toward the Wei River valley, with several river terraces.",
+    observation:
+      "From the air the Guanzhong Plain is an east–west yellow-green flat at the northern foot of the Qinling, with the wall-like Qinling scarp to the south and the gullied loess tablelands to the north. The Wei River crosses the middle from west to east, its banks dense with farmland and towns, Xi'an, Xianyang and Baoji in a line.",
+    distinguish:
+      "The Guanzhong Plain and the North China Plain: both are river-alluvial and both are cradles of civilisation, but the Guanzhong Plain is a fault basin pinched between the Qinling and the Northern Mountains and is small; the North China Plain is a great plain built by the Yellow and other rivers in open country and is far larger. The Guanzhong Plain and the Chengdu Plain: one is drier and sunny, the other moist and cloudy.",
+    concept:
+      "The Guanzhong Plain is a classic graben basin: the crust is pulled apart, a block in the middle drops while the sides rise, and river silt fills the dropped part flat — a plain held between two ranges. This terrain — ringed by mountains, easy to defend, and watered by the Wei — is why it was a capital region for so long.",
+    history:
+      "The Guanzhong Plain was the capital region of the Zhou, Qin, Han, Tang and a dozen other dynasties — \"who holds Guanzhong holds the realm.\" The Zheng Guo Canal of the Warring States and the grain-transport canals of the Han and Tang were the basis of Guanzhong farming. \"Guanzhong\" means \"within the passes\" — it is ringed by passes such as Hangu and Dasan.",
+  },
+
+  "hetao-plain": {
+    seeing:
+      "The Hetao Plain lies inside the great \"几\"-shaped bend of the Yellow River, south of the Yin Mountains — a string of plains laid down by the Yellow River as it flows through Ningxia and Inner Mongolia. It is conventionally divided into the West Tao (the Ningxia Plain), the Rear Tao (around Bayannur) and the Front Tao (the Tumochuan around Hohhot). There is a saying: \"the Yellow River brings a hundred harms and enriches only the one Tao.\"",
+    formation:
+      "The Hetao Plain is a down-faulted zone between the Yin Mountains and the Ordos Plateau. Entering this hollow the Yellow River slows and drops much of its silt, filling it into a plain. The ground is very flat, and the river has swung across it, leaving old channels, marshes and salt flats.",
+    observation:
+      "From the air the Hetao Plain is a green belt along the Yellow River on the arid Inner Mongolian Plateau, backed by the grey-brown Yin Mountains to the north and meeting the Ordos uplands and deserts to the south. It is checkerboard farmland irrigated from the Yellow River, laced with trunk canals, and turns back into desert steppe just beyond the oasis.",
+    distinguish:
+      "The Hetao Plain and the North China Plain: both are Yellow River alluvium, but the Hetao Plain is on the upper-middle river, pinched between the Yin Mountains and the plateau, and depends on diversion irrigation; the North China Plain is on the lower river, in open country, and is the great plain of the \"suspended river\" and acute water shortage. The Hetao Plain and the Guanzhong Plain: both are river-alluvial plains in fault basins; the Hetao is drier and farther north.",
+    concept:
+      "The Hetao Plain shows that \"the same river does opposite things in different reaches\": on the Loess Plateau the Yellow River picks up silt; on the lower course it raises its bed and floods; but through the Hetao its water and silt built a belt of good oasis farmland — because here the land is flat enough to be irrigated and the Yin Mountains block the sand and wind from the north.",
+    history:
+      "The Hetao Plain has long been a farming–herding frontier; the Qin and Han set up commanderies and military farms here, and it changed hands repeatedly afterward. In modern times large-scale digging of Yellow River trunk canals (such as the \"eight great canals of the Rear Tao\") made it one of Inner Mongolia's most important grain regions.",
+  },
+
+  "yangtze-delta": {
+    seeing:
+      "The Yangtze Delta is the huge alluvial plain the Yangtze has built at its mouth, spreading east from around Zhenjiang and Yangzhou in Jiangsu to the sea, about 50,000 km². The land is extremely low and flat and water-netted; Lake Tai is its central lake, and Shanghai, Suzhou, Wuxi and Nantong are all on it.",
+    formation:
+      "The Yangtze carries huge amounts of silt to its mouth each year, and under tides and waves the silt keeps building up and prograding on both sides of the mouth and underwater, pushing the coastline far to the east over thousands of years. Sandbars in the channel gradually join the shore or grow — that is how Chongming Island formed, now the largest estuary alluvial island in the world.",
+    observation:
+      "From the air the Yangtze Delta is a very flat, very dense water country at the river mouth: channels, lakes, fish ponds and polders woven into a net, with almost no natural relief. Where the Yangtze meets the sea, muddy yellow silt fans out into the blue water as a plume. Chongming Island is a large oval green sand island at the mouth.",
+    distinguish:
+      "The Yangtze Delta and the Pearl River Delta: both are compound deltas at the mouths of great rivers, both water-netted, both economically developed, but the Yangtze Delta is built mainly on the Lake Tai plain and is more uniformly flat; the Pearl River Delta is three rivers meeting, with many bedrock hills scattered among it (an \"island delta\"). The Yangtze Delta and the North China Plain: one is shaped by the Yangtze, mainly paddy; the other by the Yellow River, mainly dryland.",
+    concept:
+      "The Yangtze Delta is a \"river-and-tide-built\" delta: the river supplies the silt, and tides and waves sort and shape it. In recent decades upstream reservoirs and vegetation recovery have sharply cut the Yangtze's silt load, and the delta's natural growth has slowed markedly, with some shore sections even eroding back — a reminder that a delta needs a continuing supply of silt to be maintained.",
+    history:
+      "The Yangtze Delta was developed early and has been the economic and tax centre of the country since the Tang and Song — \"when Suzhou and Huzhou are ripe, the realm has enough.\" Its dense network of canals, polders and market towns is the basis of the old Jiangnan water country. Today it is one of the most densely peopled and economically dense regions in China.",
+  },
+
+  "pearl-delta": {
+    seeing:
+      "The Pearl River Delta, in south-central Guangdong, is the compound delta built where the West, North and East rivers meet near Guangzhou and reach the sea together, about 11,000 km². Its features are an especially dense river network and many isolated small hills scattered through it. Guangzhou, Shenzhen, Foshan, Dongguan, Hong Kong and Macau are all here.",
+    formation:
+      "The Pearl River Delta grew in a drowned, island-studded former bay. Silt from the three rivers accumulated in the shallow water between the islands, gradually joining island to island and filling the bay into a plain — which is why many bedrock hills still stand in the plain, hence \"island delta\" or \"hilly delta.\"",
+    observation:
+      "From the air the Pearl River Delta is a green water-net shredded by countless channels, its meshes full of farmland, fish ponds and towns, with rounded small hills dotted among them. The West, North and East rivers interweave in the net, and several mouths deliver water and silt into Lingding Bay and Huangmao Sea.",
+    distinguish:
+      "See the Yangtze Delta entry. What makes the Pearl River Delta distinctive: first, three rivers meet, so the network is more complex; second, the plain keeps many bedrock hills, rather than the flat expanse of the Yangtze Delta. It is at lower latitude, in the southern subtropics, and can grow three crops a year.",
+    concept:
+      "The Pearl River Delta is a classic \"island delta\": the silt did not spread over an open coast but \"filled in\" an island-studded former bay, silting the water between islands into land. The mulberry-dyke-and-fish-pond system — dig ponds for fish, plant mulberry on the dyke, feed silkworms with the leaves, feed the fish with the silkworm waste — is the cyclical farming the locals developed in this low water country.",
+    history:
+      "The Pearl River Delta was reclaimed into farmland on a large scale from the Song onward, and grew rich on silk, sericulture and foreign trade in the Ming and Qing. Guangzhou was long an important port for China's foreign trade. Since the 1980s the region has been a front line of reform and opening and a major world manufacturing base.",
+  },
+
   // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
 
   kashgar: {
