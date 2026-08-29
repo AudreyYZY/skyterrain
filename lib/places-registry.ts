@@ -159,6 +159,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   china: "asia",
   australia: "oceania",
   usa: "north-america",
+  canada: "north-america",
 };
 
 export function continentOfCountry(country: string): string | undefined {
