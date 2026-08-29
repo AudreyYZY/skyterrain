@@ -2750,4 +2750,94 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The \"Tone River eastward diversion\" was one of the largest civil-engineering projects of the Edo shogunate, spanning most of the 17th century. It freed Edo from the direct threat of the Tone, turned the downstream reed marshes into new fields, and established an inland shipping network from Edo via the Tone and Lake Kasumigaura to the north-east. In the 20th century, as Tokyo's water demand surged, a series of reservoirs were built on the upper Tone; in the 1947 Kathleen Typhoon the Tone breached its banks and flooded a large part of the Kanto Plain, after which flood-control standards were greatly raised.",
   },
+
+  "aoraki-southern-alps": {
+    seeing:
+      "The Southern Alps (Māori: Kā Tiritiri o te Moana) run for about 500 km along the western side of New Zealand's South Island, separating the wet West Coast from the drier eastern interior. The highest peak, Aoraki / Mount Cook, is 3,724 m — the highest mountain in New Zealand — and the range holds almost all of the country's 3,000 m peaks and glaciers. Its south-western part lies within the Te Wāhipounamu World Heritage Area.",
+    formation:
+      "The Southern Alps are being pushed up by the oblique collision of the Pacific and Australian plates along the Alpine Fault, which runs along the western foot of the range. Uplift reaches around 10 mm a year in places, among the fastest of any mountain belt, and is roughly balanced by equally rapid erosion driven by heavy rain from the westerlies. The rock is mostly greywacke and schist.",
+    observation:
+      "From the air the Southern Alps are a continuous, jagged white wall: the western side is cloudy and steep, with glaciers reaching down into coastal temperate rainforest; the eastern side is in rain shadow, dry, with pale tussock grassland and braided rivers at its foot. The Aoraki area concentrates the highest, sharpest peaks and large glaciers such as the Tasman; the crest is the island's main divide.",
+    distinguish:
+      "The Southern Alps look like the European Alps but formed differently: the European Alps are fold mountains from continent-continent compression, while the Southern Alps are a young range shoved up along one large strike-slip fault. Compared with the Andes they have no volcanoes, and the contrast between their two sides is more extreme — metres of rain a year on the west, only a few hundred millimetres on the east.",
+    concept:
+      "The Southern Alps are a textbook case of tectonic uplift and erosion in balance: the mountains are not getting steadily higher — as fast as they rise, they are worn down, holding a roughly steady height over the long term. A common misconception is that Aoraki has a fixed height — a 1991 rock avalanche removed part of the summit, the official figure was lowered, and it was later re-surveyed.",
+    history:
+      "For Ngāi Tahu, the main South Island iwi, Aoraki is the most important ancestral mountain and is deeply revered. Settlement legislation in 1998 gave the peak the dual name \"Aoraki / Mount Cook\" and returned Aoraki / Mount Cook to the iwi, who then gifted it back to the nation. The area is also the birthplace of New Zealand mountaineering; Edmund Hillary, who first climbed Everest in 1953, trained here.",
+  },
+
+  "kaikoura-ranges": {
+    seeing:
+      "The Kaikōura Ranges, in the north-east of the South Island, are two parallel greywacke ranges that rise very steeply a short distance inland from the Pacific. Tapuae-o-Uenuku, in the Inland Kaikōura Range, is 2,885 m — the highest mountain in New Zealand outside the main Southern Alps. The town of Kaikōura and its small peninsula are known for sperm whales that can be seen year-round because deep water lies close to shore.",
+    formation:
+      "The Kaikōura Ranges sit on a belt of active faults where the Pacific and Australian plates meet, and are being uplifted and offset continuously. The November 2016 Kaikōura earthquake (magnitude 7.8) ruptured more than a dozen faults at once and lifted parts of the coast by up to about 6 m, raising broad areas of former seabed permanently above the water.",
+    observation:
+      "From the air the Kaikōura Ranges are a steep wall hard against the coastline: wide inland valleys on the west, and on the east the mountains drop almost straight into the Pacific, with snow on the tops in winter and green pasture, road and rail squeezed onto a narrow coastal terrace below. Offshore the sea colour deepens quickly over the Kaikōura Canyon.",
+    distinguish:
+      "The Kaikōura Ranges and the main Southern Alps are both greywacke and both rising fast, but the Kaikōura ranges sit further east and closer to the sea — a branch thrown off to the east of the main mountain belt. Because they are so near the coast, they go from sea level to nearly 3,000 m in only a few tens of kilometres, an even more abrupt land-sea contrast than the main divide.",
+    concept:
+      "Kaikōura is a case study in coseismic uplift: normally the fault belt raises the coast a few millimetres a year, but a single large earthquake can lift it several metres in seconds. The flights of raised shore platforms along the coast are a record of many such past earthquakes. A common misconception is that shoreline height is set only by sea level — here, the land itself is moving.",
+    history:
+      "Kaikōura means \"the place to eat crayfish (kōura)\" in Māori and has long been a place of fishing and settlement. In the 19th century it was a shore-based whaling station; by the late 20th century it had shifted to ecotourism built around watching whales, dolphins and albatrosses. After the 2016 earthquake the road and rail links to Kaikōura were cut for a long time and extensively rebuilt.",
+  },
+
+  "the-remarkables": {
+    seeing:
+      "The Remarkables (Māori: Kawarau) rise on the eastern shore of Lake Wakatipu, south-east of Queenstown, as a fault-block range that climbs almost sheer from the lake. The highest point, Double Cone, is 2,319 m. Their sharp saw-toothed skyline above Queenstown is one of the most photographed mountain views in New Zealand, and there is a ski field on the range.",
+    formation:
+      "The Remarkables are a schist fault-block: compression of the crust lifted a block along faults and tilted it, giving a steep face (west, above the lake) and a gentler back slope (east). Schist is South Island greywacke recrystallised deep in the crust under heat and pressure; it splits readily along its foliation, which gives the range its ribbed, angular profile.",
+    observation:
+      "From the air the Remarkables are a north-south rock wall with a sheer western face plunging into the deep blue of Lake Wakatipu, and an eastern side that steps down more gently to alpine tussock and a few small cirque tarns. The shaded western face holds deep snow in winter and shows grey-blue schist in summer.",
+    distinguish:
+      "The Remarkables and the main Southern Alps are both schist, but the Remarkables are one especially high block within the basin-and-range country of Central Otago — a fairly self-contained massif ringed by down-faulted basins and lakes — whereas the main divide is a continuous watershed. Their steep west face comes from fault tilting, not glacial plucking.",
+    concept:
+      "The Remarkables show how a fault block produces an asymmetric mountain: one side is an uplifted fault scarp, very steep, and the other is the gently back-tilted former land surface. Central Otago has a series of these parallel schist blocks with basins between them. A common misconception is to read every steep rock face as glacial — here the steepness is tectonic.",
+    history:
+      "The Wakatipu basin below the Remarkables was one of the routes Māori used to gather pounamu (greenstone) and to travel. The Otago gold rush of the 1860s brought many miners to Queenstown and the Kawarau River. Today the area, centred on Queenstown, is New Zealand's most concentrated outdoor and adventure tourism region, and the Remarkables have appeared as a film location several times.",
+  },
+
+  "tararua-range": {
+    seeing:
+      "The Tararua Range is part of the North Island's axial mountain chain, north of Wellington, dividing the Kāpiti Coast on the west from the Wairarapa on the east. The mountains are not very high — Mitre, the highest, is 1,571 m — but because they face straight into the wind funnel of Cook Strait and the weather changes fast, they have long been a proving ground for New Zealand tramping and mountain training.",
+    formation:
+      "The Tararua Range is made of hard greywacke and is the strongly folded, faulted axial belt of the North Island, uplifted along faults under oblique plate compression. Dense faulting shatters the rock, and rivers cutting down the shatter zones have carved deep, steep gorges; the Manawatū Gorge is a river that was there before the mountains rose and has sawn straight through the rising range.",
+    observation:
+      "From the air the Tararua Range is a north-south ridge cloaked in dense native forest, its tops usually wrapped in cloud with only a short stretch of alpine herbfield showing above the bushline. The western slope faces the prevailing westerlies and is heavy with cloud and rain; the Wairarapa on the east is visibly drier, given over to pasture and vineyards.",
+    distinguish:
+      "The Tararua Range and the South Island's Southern Alps are both greywacke axial divides, but the Tararua has no glaciers and is far lower; it is \"known\" mainly for its dense forest and its severe weather. Unlike the volcanic Ruapehu and Taranaki, it is an entirely non-volcanic range built by compression and folding.",
+    concept:
+      "The Tararua Range is a case study in how terrain amplifies weather: a modest mountain range, if it sits square across a strong wind gap and faces a moist airstream, has its ridge-top wind, rainfall and cooling all magnified far beyond what the same altitude would see on flat ground. A common misconception is that a low range is not dangerous — the wind chill here can cause hypothermia even in summer.",
+    history:
+      "The Tararua Range and its passes were long a route for Māori travelling between the east and west coasts of the North Island. In the 19th century settlers drove road and rail through the Manawatū Gorge to link the two sides. Today most of the range is forest park — the back-country hills for the people of Wellington and Manawatū to tramp and hunt in, and a stronghold for North Island native birds.",
+  },
+
+  "mount-ruapehu": {
+    seeing:
+      "Mount Ruapehu stands on the volcanic plateau of the central North Island at 2,797 m — the highest peak in the North Island and an active volcano, with a summit Crater Lake that heats up and changes colour with volcanic activity. Together with the young cone of Ngāuruhoe and the older, multi-craered Tongariro alongside it, it makes up Tongariro National Park — New Zealand's first national park (established 1887) and a dual natural and cultural World Heritage Site.",
+    formation:
+      "Ruapehu is an andesitic stratovolcano at the southern end of the Taupō Volcanic Zone, built by magma rising where the Pacific plate subducts beneath the North Island. Repeated eruptions and collapses have given it several overlapping cones. Its Crater Lake is the key to its behaviour: the water connects to the hot volcanic conduit, and an eruption or a collapse of the lake rim can send a volcanic mudflow (lahar) racing down the valleys.",
+    observation:
+      "From the air Ruapehu is a broad, ragged, permanently snow-capped volcano on the plateau, with a grey-green Crater Lake in the summit hollow and deep channels cut radially by lahars and snowmelt. Immediately to the north is the near-perfect cone of Ngāuruhoe, and beyond it the low, multi-craered Tongariro. The three mountains are surrounded by dark lava flows and alpine desert.",
+    distinguish:
+      "Ruapehu and Taranaki are both North Island andesitic stratovolcanoes, but Ruapehu is a cluster of overlapping cones with a summit crater lake and year-round skiable snow, while Taranaki is an isolated, symmetrical single cone. Compared with the collapsed rhyolitic calderas of Taupō and Rotorua, Ruapehu is a volcano built up rather than dropped down.",
+    concept:
+      "Ruapehu is a classic place to understand lahars: a volcano need not erupt to be deadly — once the summit lake water and snow are disturbed, they mix with volcanic debris and pour down fixed valleys at speed, reaching the lower slopes in tens of minutes. The national park has a lahar warning system for this reason. A common misconception is to treat a snow-covered volcano as an ordinary snow mountain.",
+    history:
+      "In 1887 the paramount chief of Ngāti Tūwharetoa, Horonuku Te Heuheu Tūkino IV, placed these sacred mountains in the care of the nation on condition that a national park protect them — making this one of the earliest national parks in New Zealand and the world. On Christmas Eve 1953 a lahar from Ruapehu's Crater Lake destroyed a rail bridge, causing the Tangiwai disaster. Today there are ski fields on the mountain, and the Tongariro Alpine Crossing below it is New Zealand's most popular day walk.",
+  },
+
+  "mount-taranaki": {
+    seeing:
+      "Mount Taranaki (official name Taranaki Maunga; formerly Mount Taranaki or Mount Egmont) stands alone on the Taranaki peninsula of the western North Island at 2,518 m — a near-perfectly symmetrical volcanic cone, visible in full from the streets of New Plymouth on a clear day. Its resemblance to Mount Fuji has made it a filming location for several productions.",
+    formation:
+      "Taranaki is an andesitic stratovolcano, built up by successive eruptions of lava and volcanic debris, and is the youngest of a chain of volcanoes in the district that get progressively younger from north to south. It has undergone several large collapses whose debris blankets the lower slopes as a gently sloping ring plain; geologists generally regard it as capable of erupting again.",
+    observation:
+      "From the air the most striking thing about Taranaki is the near-circular line at its foot: a forest boundary drawn in 1881 at a radius of about 9.6 km from the summit, with dark native forest inside and neat dairy pasture outside, the edge as sharp as if drawn with a compass. The summit usually carries a small patch of snow and a shallow crater, with rivers running evenly off the slopes in a radial pattern.",
+    distinguish:
+      "Taranaki and Ruapehu are both North Island andesitic volcanoes, but Taranaki is an isolated, symmetrical single cone well away from the main axis of the Taupō Volcanic Zone, whereas Ruapehu sits near the axis and is a cluster of overlapping cones with a summit crater lake. Taranaki's symmetry reflects its youth — it has not yet been deeply eroded.",
+    concept:
+      "The circular forest boundary at Taranaki's foot is an extreme example of a hard land-use edge: a line drawn purely for administrative reasons that, decades later, shows up on the ground — and from satellites — as an abrupt change in vegetation. A common misconception is to read that circle as a natural treeline; it is the park boundary set in 1881.",
+    history:
+      "Mount Taranaki is a revered ancestor and a core of identity for the local iwi (such as Taranaki and Te Āti Awa). In 2025 New Zealand passed legislation making Taranaki Maunga the mountain's official name and granting it legal personhood, represented by an entity called Te Kāhui Tupua, with iwi and the Crown jointly speaking for its interests. Egmont National Park is the second-oldest national park in New Zealand.",
+  },
 };

@@ -87,7 +87,7 @@ export const REGIONS: Region[] = [
     name: "大洋洲",
     nameEn: "Oceania",
     center: { lon: 140.0, lat: -25.0, height: 6500000 },
-    terrainCount: 22,
+    terrainCount: 28,
     available: true,
   },
 ];

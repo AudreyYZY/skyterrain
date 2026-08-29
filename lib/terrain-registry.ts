@@ -3082,6 +3082,117 @@ const TONE_RIVER: TerrainEntry = {
 };
 
 // ============================================================
+// 新西兰（regionId: "oceania"）
+// 坐标据 GNS Science / Land Information NZ（LINZ）/ NZ Geographic Board /
+// Department of Conservation（DOC）；官方双语地名按 NZGB 用法并列
+// ============================================================
+
+const AORAKI_SOUTHERN_ALPS: TerrainEntry = {
+  id: "aoraki-southern-alps",
+  nameZh: "南阿尔卑斯山脉",
+  nameEn: "Southern Alps / Kā Tiritiri o te Moana",
+  category: "mountain_system",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "库克山 / 奥拉基（Aoraki / Mount Cook）", lon: 170.1416, lat: -43.5951, elevation: 3724, kind: "peak" },
+  bbox: [168.0, -45.2, 172.6, -42.0],
+  axis: [[168.4, -44.7], [171.9, -42.3]],
+  viewFrom: 135,
+  label: { lon: 170.2, lat: -43.6, rotation: -40 },
+  pois: [
+    { name: "库克山 / 奥拉基", lon: 170.1416, lat: -43.5951, note: "新西兰最高峰，3724m（1991年一次岩崩削去部分峰顶后测定）" },
+    { name: "阿尔卑斯断层", lon: 169.9, lat: -43.8, note: "太平洋板块与澳大利亚板块的边界断层，沿山脉西麓延伸" },
+  ],
+  source: "南阿尔卑斯：沿阿尔卑斯断层隆起、长约500km；西南段属蒂瓦希普纳穆（Te Wāhipounamu）世界自然遗产（GNS Science / DOC）",
+};
+
+const KAIKOURA_RANGES: TerrainEntry = {
+  id: "kaikoura-ranges",
+  nameZh: "凯库拉山脉",
+  nameEn: "Kaikōura Ranges",
+  category: "mountain_system",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "塔普阿埃奥乌埃努库山（Tapuae-o-Uenuku）", lon: 173.663, lat: -42.005, elevation: 2885, kind: "peak" },
+  bbox: [173.2, -42.6, 174.2, -41.6],
+  axis: [[173.4, -42.5], [173.9, -41.7]],
+  viewFrom: 90,
+  label: { lon: 173.7, lat: -42.1, rotation: -60 },
+  pois: [
+    { name: "凯库拉半岛", lon: 173.70, lat: -42.42, note: "山脚下伸入海中的小半岛，外海是凯库拉海底峡谷" },
+  ],
+  source: "凯库拉的内、外两列硬砂岩山脉，从海岸约40km内升到2885m；2016年凯库拉地震使部分海岸抬升数米（GNS Science / LINZ）",
+};
+
+const THE_REMARKABLES: TerrainEntry = {
+  id: "the-remarkables",
+  nameZh: "卓越山脉",
+  nameEn: "The Remarkables / Kawarau",
+  category: "mountain_system",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "双锥峰（Double Cone）", lon: 168.808, lat: -45.061, elevation: 2319, kind: "peak" },
+  bbox: [168.68, -45.32, 168.93, -44.92],
+  axis: [[168.80, -45.30], [168.82, -44.95]],
+  viewFrom: 270,
+  label: { lon: 168.83, lat: -45.05, rotation: -80 },
+  pois: [
+    { name: "皇后镇", lon: 168.662, lat: -45.031, note: "山脉西侧、瓦卡蒂普湖畔的旅游城镇" },
+  ],
+  source: "卓越山脉：瓦卡蒂普湖东岸的断块山，片岩，西坡近乎笔直地从湖面升起到2319m（LINZ / DOC）",
+};
+
+const TARARUA_RANGE: TerrainEntry = {
+  id: "tararua-range",
+  nameZh: "塔拉鲁瓦山脉",
+  nameEn: "Tararua Range",
+  category: "mountain_system",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "米特雷峰（Mitre）", lon: 175.480, lat: -40.752, elevation: 1571, kind: "peak" },
+  bbox: [175.0, -41.35, 176.05, -40.35],
+  axis: [[175.25, -41.25], [175.75, -40.45]],
+  viewFrom: 90,
+  label: { lon: 175.4, lat: -40.85, rotation: -55 },
+  source: "塔拉鲁瓦山脉：北岛中轴硬砂岩山脉的一段，隔开惠灵顿与马纳瓦图，以天气骤变和强风著称（GNS Science / DOC）",
+};
+
+const MOUNT_RUAPEHU: TerrainEntry = {
+  id: "mount-ruapehu",
+  nameZh: "鲁阿佩胡火山",
+  nameEn: "Mount Ruapehu",
+  category: "mountain_system",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "鲁阿佩胡主峰与火口湖", lon: 175.565, lat: -39.281, elevation: 2797, kind: "peak" },
+  bbox: [175.35, -39.42, 175.80, -38.95],
+  axis: [[175.57, -39.40], [175.62, -39.00]],
+  viewFrom: 200,
+  label: { lon: 175.57, lat: -39.28, rotation: 0 },
+  pois: [
+    { name: "瑙鲁霍伊火山（Ngāuruhoe）", lon: 175.632, lat: -39.157, note: "汤加里罗火山群里最年轻的火山锥，2291m" },
+    { name: "汤加里罗山（Tongariro）", lon: 175.642, lat: -39.133, note: "多火口的老火山，汤加里罗越山步道经过" },
+  ],
+  source: "鲁阿佩胡：北岛最高峰、活火山，山顶有火口湖；与瑙鲁霍伊、汤加里罗同属汤加里罗国家公园——新西兰第一个国家公园（1887年），自然与文化双重世界遗产（GNS Science / DOC）",
+};
+
+const MOUNT_TARANAKI: TerrainEntry = {
+  id: "mount-taranaki",
+  nameZh: "塔拉纳基山",
+  nameEn: "Taranaki Maunga / Mount Taranaki",
+  category: "mountain_system",
+  regionId: "oceania",
+  country: "new-zealand",
+  landmark: { name: "塔拉纳基主峰", lon: 174.064, lat: -39.296, elevation: 2518, kind: "peak" },
+  bbox: [173.85, -39.52, 174.28, -39.07],
+  label: { lon: 174.064, lat: -39.296, rotation: 0 },
+  pois: [
+    { name: "埃格蒙特国家公园圆形边界", lon: 174.09, lat: -39.30, note: "1881年沿距峰顶约9.6km画的近乎正圆的森林保护线，空中看林、牧分明" },
+  ],
+  source: "塔拉纳基山：近乎对称的安山质层状火山，2518m；官方名2025年定为Taranaki Maunga（此前作Mount Taranaki或Mount Egmont）（GNS Science / DOC / LINZ）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -3156,6 +3267,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   LAKE_BIWA, LAKE_TOWADA, SHIKOTSU_TOYA,
   KUROBE_GORGE, KAMIKOCHI, SETO_INLAND_SEA, SANRIKU_COAST, SHIRETOKO_PENINSULA,
   TOTTORI_SAND_DUNES, YAKUSHIMA, RYUKYU_ISLANDS, SHINANO_RIVER, TONE_RIVER,
+  // ===== 大洋洲 / 新西兰 =====
+  AORAKI_SOUTHERN_ALPS, KAIKOURA_RANGES, THE_REMARKABLES, TARARUA_RANGE,
+  MOUNT_RUAPEHU, MOUNT_TARANAKI,
 ];
 
 /**
@@ -3253,6 +3367,11 @@ const WIDE_VIEW: Record<string, number> = {
   "ryukyu-islands": 2.6,
   "shinano-river": 2.0,
   "tone-river": 2.1,
+  // 大洋洲 / 新西兰
+  "aoraki-southern-alps": 2.4,
+  "kaikoura-ranges": 1.7,
+  "tararua-range": 1.8,
+  "mount-ruapehu": 1.7,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,

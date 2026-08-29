@@ -151,6 +151,11 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "lake-eyre": "regional",
   "kata-tjuta": "regional",
   "twelve-apostles": "regional",
+
+  // 新西兰
+  "aoraki-southern-alps": "national",
+  "mount-ruapehu": "national",
+  "mount-taranaki": "national",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
