@@ -2,15 +2,15 @@
 
 import { bearingRadians, haversineMeters } from "@/lib/geo";
 import { resolveRouteWaypoints, type ResolvedWaypoint } from "@/lib/routes";
-import { XINJIANG_CORE_FEATURES } from "@/features/xinjiang-core-features";
+import { CHINA_NORTHWEST_FEATURES } from "@/features/china-northwest-features";
 import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
 import type { GeographicFeature } from "@/features/types";
 import { getTerrainFOI } from "@/lib/foi-registry";
 import { computeCameraFromPolygon, computeCameraFromRidge } from "@/lib/auto-camera";
 import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 
-/** 所有 Feature (新疆 + 全国) */
-const ALL_FEATURES: GeographicFeature[] = [...XINJIANG_CORE_FEATURES, ...CHINA_CORE_FEATURES];
+/** 所有早期 GeographicFeature（中国核心地形） */
+const ALL_FEATURES: GeographicFeature[] = [...CHINA_NORTHWEST_FEATURES, ...CHINA_CORE_FEATURES];
 import type { FlightRoute } from "@/types/route";
 import type { TerrainPoint } from "@/types/terrain";
 import {

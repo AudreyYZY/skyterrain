@@ -22,7 +22,7 @@ export interface ResolvedWaypoint {
   lon: number;
   /** airport = 起降机场；terrain = 地形航点；city = 其它城市 */
   kind: "airport" | "terrain" | "city";
-  /** 新疆 json 里带完整讲解的地形（仅部分地形有）*/
+  /** 早期地形 JSON 里自带完整讲解的地形（仅部分地形有）*/
   terrain?: TerrainPoint;
   /** 地形海拔（米），用于面板显示 */
   elevation?: number;
@@ -54,7 +54,7 @@ function resolveWaypoint(wp: RouteWaypoint): ResolvedWaypoint | null {
     };
   }
 
-  // 优先用新疆 json（含完整讲解 / cards / flyoverCue）
+  // 优先用早期地形 JSON（含完整讲解 / cards / flyoverCue）
   const terrain = getTerrainById(wp.terrainId);
   if (terrain) {
     return {

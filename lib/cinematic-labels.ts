@@ -31,7 +31,7 @@ export interface CinematicLabel {
   priority: number;
   /** 关联的地形 ID */
   terrainId?: string;
-  /** LOD 级别: 1=中国尺度, 2=新疆尺度, 3=区域尺度, 4=探索尺度 */
+  /** LOD 级别: 1=大陆尺度, 2=国家尺度, 3=区域尺度, 4=探索尺度 */
   lodLevel?: 1 | 2 | 3 | 4;
   /** 标签旋转角度（度） — 用于沿山脊/河道方向 */
   rotation?: number;

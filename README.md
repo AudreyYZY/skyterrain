@@ -17,7 +17,7 @@
 两套内容系统平行、互不影响。
 
 **当前范围**：
-- 学习模式 —— 亚洲（中国 84 含新疆 + 日本 26）· 大洋洲（澳大利亚 22 + 新西兰 30）·
+- 学习模式 —— 亚洲（中国 84 + 日本 26）· 大洋洲（澳大利亚 22 + 新西兰 30）·
   北美洲（美国 26 + 加拿大 25）· 欧洲（英国 33 + 冰岛 28），共 274 处，中英双语
 - 旅游模式 —— 澳大利亚（国家概览 + 7 城市）+ 中国（11 城市），中英双语
 
@@ -198,11 +198,11 @@ lib/
   i18n.ts / i18n-stories.ts — UI 国际化 / 早期讲解翻译
 
 features/
-  china-core-features.ts    — 全国核心地形定义
-  xinjiang-core-features.ts — 新疆地形定义
+  china-core-features.ts       — 早期核心地形定义（GeographicFeature）
+  china-northwest-features.ts  — 早期核心地形定义（中国西北：天山 / 昆仑 / 阿尔泰 等）
 
 data/
-  *.json                    — 新疆地形数据
+  *.json                    — 早期地形数据（坐标现由 terrain-registry 覆盖）
   routes/                   — 4 条真实航线定义
   gis/                      — Natural Earth 原始 shp/dbf（不入库）
 

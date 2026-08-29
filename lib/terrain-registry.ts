@@ -3,8 +3,7 @@
  *
  * 取代分散在以下位置的重复/矛盾坐标：
  *   - data/*.json 的 lat/lon/cameraHeight
- *   - features/china-core-features.ts 的 cameraGeometry.target
- *   - features/xinjiang-core-features.ts 的 cameraGeometry
+ *   - features/china-core-features.ts / china-northwest-features.ts 的 cameraGeometry
  *   - lib/foi-registry.ts 的 primary/secondary
  *   - lib/terrain-label-registry.ts 的 lat/lon
  *
@@ -108,7 +107,7 @@ export interface TerrainEntry {
 }
 
 // ============================================================
-// 新疆 — 山脉
+// 中国西北 — 山脉
 // ============================================================
 
 const TIANSHAN: TerrainEntry = {
@@ -211,7 +210,7 @@ const PAMIR: TerrainEntry = {
 
 
 // ============================================================
-// 新疆 — 湖泊
+// 中国西北 — 湖泊
 // ============================================================
 
 const KANAS: TerrainEntry = {
@@ -297,7 +296,7 @@ const LOP_NUR: TerrainEntry = {
 };
 
 // ============================================================
-// 新疆 — 沙漠
+// 中国西北 — 沙漠
 // ============================================================
 
 const TAKLAMAKAN: TerrainEntry = {
@@ -343,7 +342,7 @@ const KUMTAG: TerrainEntry = {
 };
 
 // ============================================================
-// 新疆 — 盆地
+// 中国西北 — 盆地
 // ============================================================
 
 const JUNGGAR_BASIN: TerrainEntry = {
@@ -397,7 +396,7 @@ const TURPAN_BASIN: TerrainEntry = {
 };
 
 // ============================================================
-// 新疆 — 河谷 / 河流
+// 中国西北 — 河谷 / 河流
 // ============================================================
 
 const ILI_VALLEY: TerrainEntry = {
@@ -461,7 +460,7 @@ const YARKANT_RIVER: TerrainEntry = {
 };
 
 // ============================================================
-// 新疆 — 景观 / 绿洲 / 城市
+// 中国西北 — 景观 / 绿洲 / 城市
 // ============================================================
 
 const FLAMING_MOUNTAINS: TerrainEntry = {
@@ -582,7 +581,7 @@ const MAIGAITI: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 山脉
+// 中国 — 山脉
 // ============================================================
 
 const QINLING: TerrainEntry = {
@@ -701,7 +700,7 @@ const HIMALAYA: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 高原
+// 中国 — 高原
 // ============================================================
 
 const QINGHAI_TIBET: TerrainEntry = {
@@ -775,7 +774,7 @@ const YUNNAN_GUIZHOU: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 盆地
+// 中国 — 盆地
 // ============================================================
 
 const SICHUAN: TerrainEntry = {
@@ -813,7 +812,7 @@ const QAIDAM: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 平原
+// 中国 — 平原
 // ============================================================
 
 const NORTHEAST: TerrainEntry = {
@@ -868,7 +867,7 @@ const YANGTZE: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 山脉（补充）
+// 中国 — 山脉（补充）
 // ============================================================
 
 const XIAOXINGANLING: TerrainEntry = {
@@ -1076,7 +1075,7 @@ const ALTUN: TerrainEntry = {
 
 
 // ============================================================
-// 全国 — 平原 / 三角洲（补充）
+// 中国 — 平原 / 三角洲（补充）
 // ============================================================
 
 const CHENGDU_PLAIN: TerrainEntry = {
@@ -1158,7 +1157,7 @@ const PEARL_DELTA: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 丘陵
+// 中国 — 丘陵
 // ============================================================
 
 const LIAODONG_HILLS: TerrainEntry = {
@@ -1220,7 +1219,7 @@ const LIANGGUANG_HILLS: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 沙漠（补充）
+// 中国 — 沙漠（补充）
 // ============================================================
 
 const BADAIN_JARAN: TerrainEntry = {
@@ -1321,7 +1320,7 @@ const GOBI: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 河谷 / 峡谷 / 走廊（补充）
+// 中国 — 河谷 / 峡谷 / 走廊（补充）
 // ============================================================
 
 const HEXI_CORRIDOR: TerrainEntry = {
@@ -1395,7 +1394,7 @@ const TIGER_LEAPING_GORGE: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 湖泊（补充）
+// 中国 — 湖泊（补充）
 // ============================================================
 
 const QINGHAI_LAKE: TerrainEntry = {
@@ -1455,7 +1454,7 @@ const DONGTING: TerrainEntry = {
 };
 
 // ============================================================
-// 全国 — 岛屿
+// 中国 — 岛屿
 // ============================================================
 
 const HAINAN: TerrainEntry = {
@@ -4481,40 +4480,40 @@ const JOKULSA_A_FJOLLUM: TerrainEntry = {
 // ============================================================
 
 export const TERRAIN_REGISTRY: TerrainEntry[] = [
-  // 新疆 — 山脉
+  // 中国西北 — 山脉
   TIANSHAN, ALTAI, KUNLUN, KARAKORAM, PAMIR,
-  // 新疆 — 湖泊
+  // 中国西北 — 湖泊
   KANAS, SAYRAM, TIANCHI, BOSTEN, AIBI, LOP_NUR,
-  // 新疆 — 沙漠
+  // 中国西北 — 沙漠
   TAKLAMAKAN, GURBANTUNGGUT, KUMTAG,
-  // 新疆 — 盆地
+  // 中国西北 — 盆地
   JUNGGAR_BASIN, TARIM_BASIN, TURPAN_BASIN,
-  // 新疆 — 河谷 / 河流
+  // 中国西北 — 河谷 / 河流
   ILI_VALLEY, TARIM_RIVER, ERTIS, YARKANT_RIVER,
-  // 新疆 — 草原 / 峡谷 / 丘陵 / 绿洲聚落
+  // 中国西北 — 草原 / 峡谷 / 丘陵 / 绿洲聚落
   FLAMING_MOUNTAINS, NARAT, KUCHE, BAYANBULAK, KASHGAR, HOTAN, TURPAN_CITY, BACHU, MAIGAITI,
-  // 全国 — 山脉
+  // 中国 — 山脉
   QINLING, QILIAN, TAIHANG, DAXINGANLING, HENGDUAN, HIMALAYA,
   XIAOXINGANLING, CHANGBAI, YINSHAN, LULIANG, HELAN, LIUPAN,
   DABASHAN, XUEFENG, WUYI, NANLING, DABIE, DALOU, ALTUN,
-  // 全国 — 高原
+  // 中国 — 高原
   QINGHAI_TIBET, LOESS, INNER_MONGOLIA, YUNNAN_GUIZHOU,
-  // 全国 — 盆地
+  // 中国 — 盆地
   SICHUAN, QAIDAM,
-  // 全国 — 平原 / 三角洲
+  // 中国 — 平原 / 三角洲
   NORTHEAST, NORTH_CHINA, YANGTZE,
   CHENGDU_PLAIN, GUANZHONG_PLAIN, HETAO_PLAIN, YANGTZE_DELTA, PEARL_DELTA,
-  // 全国 — 丘陵
+  // 中国 — 丘陵
   LIAODONG_HILLS, SHANDONG_HILLS, JIANGNAN_HILLS, LIANGGUANG_HILLS,
-  // 全国 — 沙漠
+  // 中国 — 沙漠
   BADAIN_JARAN, TENGGER, KUBUQI, ULAN_BUH, MUUS, GOBI,
-  // 全国 — 丘陵（半岛）
+  // 中国 — 丘陵（半岛）
   LEIZHOU,
-  // 全国 — 河谷 / 峡谷 / 走廊
+  // 中国 — 河谷 / 峡谷 / 走廊
   HEXI_CORRIDOR, YANGTZE_GORGES, TSANGPO_GORGE, TIGER_LEAPING_GORGE,
-  // 全国 — 湖泊
+  // 中国 — 湖泊
   QINGHAI_LAKE, NAMTSO, POYANG, DONGTING,
-  // 全国 — 岛屿
+  // 中国 — 岛屿
   HAINAN, TAIWAN,
   // ===== 澳大利亚 =====
   GREAT_DIVIDING_RANGE, AUSTRALIAN_ALPS, MACDONNELL_RANGES, FLINDERS_RANGES,

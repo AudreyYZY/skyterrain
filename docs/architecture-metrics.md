@@ -19,7 +19,7 @@
 | **1,707** | `components/CesiumMap.tsx` | 🔴 God Component |
 | 1,183 | `lib/foi-registry.ts` | 🟡 Large data file |
 | 1,114 | `components/ExplorerApp.tsx` | 🟡 Large orchestrator |
-| 672 | `features/xinjiang-core-features.ts` | 🟢 Static data |
+| 672 | `features/china-northwest-features.ts` | 🟢 Static data |
 | 461 | `features/china-core-features.ts` | 🟢 Static data |
 | 313 | `components/useSentenceHighlight.ts` | 🟡 Complex hook |
 | 261 | `components/CesiumOverlayLabels.tsx` | 🟢 Acceptable |

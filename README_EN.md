@@ -18,7 +18,7 @@ with authoritative, easy-to-remember narration so you actually *understand* what
 The two content systems run in parallel and don't interfere.
 
 **Current scope:**
-- Study — Asia (China 84 incl. Xinjiang + Japan 26), Oceania (Australia 22 + New Zealand 30), North America (USA 26 + Canada 25), Europe (UK 33 + Iceland 28) — 274 total, bilingual
+- Study — Asia (China 84 + Japan 26), Oceania (Australia 22 + New Zealand 30), North America (USA 26 + Canada 25), Europe (UK 33 + Iceland 28) — 274 total, bilingual
 - Travel — Australia (country overview + 7 cities) + China (11 cities), bilingual
 
 **Roadmap:** China travel mode → the world's major landforms (study mode) → travel mode for more countries by tourism demand.
@@ -115,7 +115,7 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   (`getTerrainContent(id, lang)`), summarized from widely-accepted geography facts (China
   National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks
   Australia, UNESCO) — not documentary voiceover, not free-form generation.
-- **All 274 have bilingual lessons.** 61 of them (China 34 + Australia 22 + Xinjiang oasis settlements 5)
+- **All 274 have bilingual lessons.** 61 of them (China 39 + Australia 22)
   are line-by-line source-verified: comparative / subjective judgments removed, disputed points
   qualified or given side by side, anything unverifiable dropped, figures normalized to
   authoritative sources.
@@ -217,11 +217,11 @@ lib/
   i18n.ts / i18n-stories.ts — UI i18n / early lesson translations
 
 features/
-  china-core-features.ts    — national core terrain definitions
-  xinjiang-core-features.ts — Xinjiang terrain definitions
+  china-core-features.ts       — early core terrain definitions (GeographicFeature)
+  china-northwest-features.ts  — early core terrain definitions (NW China: Tianshan / Kunlun / Altai …)
 
 data/
-  *.json                    — Xinjiang terrain data
+  *.json                    — early terrain data (coordinates now superseded by terrain-registry)
   routes/                   — 4 real route definitions
   gis/                      — raw Natural Earth shp/dbf (git-ignored)
 

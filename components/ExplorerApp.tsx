@@ -146,7 +146,7 @@ const ALL_FEATURES = TERRAIN_REGISTRY.map((e) => ({
   type: normalizeType(e.category, e.nameZh),
   // 区域过滤用：regionId 已是大洲
   region: e.regionId,
-  terrain: getTerrainById(e.id) ?? null,                       // 新疆 json（含讲解内容）
+  terrain: getTerrainById(e.id) ?? null,                       // 早期地形 JSON（部分条目自带讲解内容）
   feature: CHINA_CORE_FEATURES.find((f) => f.id === e.id) ?? null,
 })).filter((f) => f.type !== null);
 
@@ -258,7 +258,8 @@ export default function ExplorerApp() {
   useEffect(() => {
     setMode(getStoredMode());
     try {
-      // 旧值（china / xinjiang / australia）迁移到大洲
+      // 早期版本把区域拆得更细（如 china / xinjiang 分列），现统一为大洲；
+      // 这里把 localStorage 里可能残留的旧值迁移过去
       const LEGACY: Record<string, string> = {
         china: "asia",
         xinjiang: "asia",

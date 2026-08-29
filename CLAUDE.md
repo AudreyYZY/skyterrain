@@ -20,7 +20,7 @@
 
 ## 范围
 
-- **已有**: 亚洲（中国 84 含新疆 + 日本 26）+ 大洋洲（澳大利亚 22 + 新西兰 30）+
+- **已有**: 亚洲（中国 84 + 日本 26）+ 大洋洲（澳大利亚 22 + 新西兰 30）+
   北美洲（美国 26 + 加拿大 25）+ 欧洲（英国 33 + 冰岛 28），中英双语，共 274 个
   - 地形集选取标准与分类定义见 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点；
     分类判据；`settlement` 人文层的收录方法）
@@ -94,18 +94,18 @@ lib/
   travel-pois.ts         — 每城市攻略提到的地标概略坐标（POIS_BY_CITY）
   i18n.ts                — UI 国际化；getTerrainName 查注册表
   i18n-stories.ts        — 早期 6 个双语故事（resolveLesson 的次级来源）
-  terrain.ts             — 新疆地形注册（坐标由 terrain-registry 覆盖）
+  terrain.ts             — 早期地形 JSON 数据的注册入口（坐标由 terrain-registry 覆盖）
   speech.ts              — TTS 系统（Edge TTS + 浏览器回退，跟随 language）
 
 features/
-  china-core-features.ts — 全国核心地形定义
-  xinjiang-core-features.ts — 新疆地形定义
-  types.ts               — GeographicFeature 类型
+  china-core-features.ts       — 早期核心地形定义（GeographicFeature）
+  china-northwest-features.ts  — 早期核心地形定义（中国西北：天山 / 昆仑 / 阿尔泰 等）
+  types.ts                     — GeographicFeature 类型
 ```
 
 ## 当前阶段
 
-**地图/交互/双语已完成**：106 个地形注册表（中国 84 + 澳大利亚 22）+ 数据驱动相机 +
+**地图/交互/双语已完成**：地形注册表（见 §范围，当前 274 个）+ 数据驱动相机 +
 标签分级（双语）+ 地形抬升高亮 + 自然语音（跟随语言）+ 逐句高亮 + 真实航班航线 +
 纪录片编辑式界面。
 
@@ -124,13 +124,13 @@ features/
 内容写在 `lib/terrain-content.{zh,en}.ts`（`getTerrainContent(id, lang)`，按注册表 id 索引），
 依据中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
 等公认地理事实总结，非文学化旁白、非凭空生成。
-**已逐句核源（Block D，2026-08）**：中国 34 + 澳大利亚 22 + 新疆绿洲聚落 5 = 61 篇双语。
+**已逐句核源（Block D，2026-08）**：中国 39 + 澳大利亚 22 = 61 篇双语。
 核源标准：去比较性/主观评价，有争议的加限定或并列，查不到宁可删，数字统一到权威口径。
 `settlement`（绿洲·聚落）只用 概述/从空中怎么看/历史与人文 三段（`formation` 留空自动跳过）。
-**占位地形已全部补齐（2026-08-29）**：其余 45 个（新疆湖河草原、中国次级山脉/平原三角洲/
-沙漠/丘陵等）也写了完整 6 板块双语 —— 至此 106 个地形 100% 有讲解，不再出现占位文案。
-内容优先级：`getTerrainContent(id)`（zh-CN）> `i18n-stories` 英译 > 新疆 json `lesson` /
-`china-core` story > 占位。
+**占位地形已全部补齐（2026-08-29）**：中国其余的次级山脉、丘陵、湖泊、河流、草原、沙漠等
+也写了完整 6 板块双语 —— 至此所有地形 100% 有讲解，不再出现占位文案。
+内容优先级：`getTerrainContent(id)`（zh-CN）> `i18n-stories` 英译 > 早期地形 JSON `lesson` /
+`core-features` story > 占位。
 
 ## 双模式（学习 / 旅游）
 
@@ -218,7 +218,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 
 ## 地形集 / 标签 / 区域高亮
 
-- **`TERRAIN_REGISTRY`（106 个）= 单一真实源**：主要地貌 + 少量人文聚落。
+- **`TERRAIN_REGISTRY`（当前 274 个，见 §范围）= 单一真实源**：主要地貌 + 少量人文聚落。
   `TerrainCategory`：mountain_system / plateau / basin / plain / hills / desert / lake /
   river / valley / gorge / island / grassland / coast / inselberg / settlement。
   **选取标准与分类判据见 `docs/terrain-taxonomy.md`**（勿凭感觉加条目/改分类）。
@@ -226,7 +226,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
   `settlement`（绿洲·聚落）= 人文-地貌交界层，讲解只用「概述 / 从空中怎么看 / 历史与人文」
   三段（`formation` 留空自动跳过）；收录需满足 H1 区域锚点 / H2 航线沿途 / H3 地貌样本之一。
 - **侧边栏 + 地图标签都由注册表驱动**：`ExplorerApp.ALL_FEATURES` = `TERRAIN_REGISTRY.map`；
-  `handleSelectById(id)` 统一入口（新疆 json / china-core 有内容则讲解，否则占位）。
+  `handleSelectById(id)` 统一入口（早期地形 JSON / core-features 有内容则讲解，否则占位）。
 - 精确边界：`scripts/extract-ne-landforms.mjs` 从 `data/gis/ne_10m_geography_regions_polys`
   提取 42 个 → `public/data/gis/exports/{id}.geojson`。`CesiumMap.TERRAIN_RING_FILES` 列出这 42
   个 id，其余用 bbox 八边形。
@@ -268,7 +268,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 
 以下内容不再维护:
 
-- `cameraGeometry`（china/xinjiang-core-features 中的字段，已停止读取）
+- `cameraGeometry`（china-core-features / china-northwest-features 中的字段，已停止读取）
 - `lib/foi-registry.ts` / `lib/auto-camera.ts`（仅 CesiumMap debug 残留引用，待清理）
 - Feature hoverGeometry/RidgeCorridor 渲染、`data/gis/exports/*.geojson` 边界线
   （geojson 现只用于地形区域抬升体的形状，不再画常驻边界）

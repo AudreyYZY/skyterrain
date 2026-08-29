@@ -9,7 +9,7 @@
  *   distinguish 与相似地形的区分 · concept 地理知识 · history 历史与人文
  *
  * 中文在 terrain-content.zh.ts，英文在 terrain-content.en.ts，均按注册表 id 索引。
- * 未收录的地形由 resolveLesson 回退到 i18n-stories / 新疆 json / 占位。
+ * 未收录的地形由 resolveLesson 回退到 i18n-stories / 早期地形 JSON / 占位。
  */
 
 import type { TerrainLesson } from "@/types/terrain";

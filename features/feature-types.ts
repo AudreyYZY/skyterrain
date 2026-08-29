@@ -48,7 +48,8 @@ export const FEATURE_TYPE_GEOMETRY: Record<
 
 /** 层级标签 */
 export const HIERARCHY_LABEL: Record<number, string> = {
-  2: "新疆尺度",
+  1: "大陆尺度",
+  2: "国家尺度",
   3: "区域尺度",
   4: "探索尺度",
 };

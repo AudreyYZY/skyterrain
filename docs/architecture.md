@@ -403,7 +403,7 @@ ExplorerApp → CesiumMap.flyRoute(route, callbacks)
 - `strip-emojis.ts` (8 lines)
 
 ### features (5)
-- `xinjiang-core-features.ts` (672 lines)
+- `china-northwest-features.ts` (672 lines)
 - `china-core-features.ts` (461 lines)
 - `types.ts` (211 lines)
 - `feature-schema.ts` (88 lines)

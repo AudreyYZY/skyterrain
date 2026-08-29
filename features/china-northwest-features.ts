@@ -1,5 +1,5 @@
 /**
- * 新疆 8 个核心 GeographicFeature
+ * 中国西北 8 个核心 GeographicFeature（天山 / 昆仑 / 阿尔泰 / 塔里木 等）
  *
  * 每个 Feature 拥有 4 种 Geometry:
  *   identityGeometry    → 标签放置、走向、LOD
@@ -660,7 +660,7 @@ const SAYRAM: GeographicFeature = {
 };
 
 /** 所有核心 Feature */
-export const XINJIANG_CORE_FEATURES: GeographicFeature[] = [
+export const CHINA_NORTHWEST_FEATURES: GeographicFeature[] = [
   TIANSHAN,
   KUNLUN,
   ALTAI,
