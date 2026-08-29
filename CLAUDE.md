@@ -133,14 +133,24 @@ features/
   `ReadingPanel` 接 `travelGuideToSections`（通用段列表，走 `StructuredLesson` 的 `sections` 分支）。
   点城市 → `CesiumMap.focusCity(lon, lat)` 飞过去；点国家概览 → `flyToCountryOverview()`。
 - **航线**：一条航线两套解说，跟随当前 `mode`（`getRouteNarration(id, lang, mode)`）；
-  travel 解说为空时该模式下航线不播（目前 travel 解说待写）。
+  某模式解说为空时该模式下航线不播。4 条国内航线 study + travel 解说均已写。
 - **新增国家两个模式都要做**：study = 地形注册表 + 6 板块讲解；travel = `places-registry`
   加城市 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide + `COUNTRY_OVERVIEWS` 加概览。
   自检 `node --experimental-strip-types scripts/check-places.ts`（城市坐标/IATA/来源/双语内容齐全）。
-- **进度**：Phase 1 = 架构 + 澳大利亚（1 国家概览 + 7 城市，中英）。
-  下一步：中国旅游模式（~15–25 城）+ 4 条国内航线补 travel 解说 + 加国内候选航线。
+- **进度**：
+  - 澳大利亚旅游模式：1 国家概览 + 7 城市（悉尼/墨尔本/布里斯班/珀斯/阿德莱德/凯恩斯/达尔文）。
+  - 中国旅游模式：1 国家概览 + 10 城市（北京/上海/广州/深圳/成都/重庆/西安/杭州/昆明/桂林）；
+    可继续补南京/三亚/拉萨/哈尔滨/青岛/张家界等。
+  - 中国政策类内容口径：签证/免签天数不写死，只说"近年放宽、以国家移民管理局最新公布为准"；
+    进藏航线务必写"外国游客需西藏旅行许可 + 随有资质旅行社结伴出行"。
   设计与计划见 `docs/superpowers/specs/2026-08-29-two-mode-travel-study-design.md`、
   `docs/superpowers/plans/2026-08-29-two-mode-phase-1.md`。
+
+## 全球地形扩展（学习模式，进行中）
+
+目标：把全世界主要地形准确、完整地加入学习模式（`regionId` 按洲/大区归属；
+每处坐标查权威来源，`source` 留痕；6 板块双语，逐句核源标准同中国/澳大利亚）。
+选取标准沿用 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点）。
 
 ## Camera 推导链路
 
