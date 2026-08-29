@@ -2160,6 +2160,104 @@ const HAWAIIAN_ISLANDS: TerrainEntry = {
   source: "夏威夷群岛：太平洋中部的火山岛链，由一个地幔热点上方板块移动形成，越往西北岛越老、越低（USGS）",
 };
 
+const COLUMBIA_PLATEAU: TerrainEntry = {
+  id: "columbia-plateau",
+  nameZh: "哥伦比亚高原",
+  nameEn: "Columbia Plateau",
+  category: "plateau",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "德赖瀑布（干瀑布）", lon: -119.3536, lat: 47.6070, elevation: 500, kind: "escarpment" },
+  bbox: [-121.0, 43.8, -116.0, 47.7],
+  axis: [[-120.0, 44.2], [-117.0, 47.3]],
+  viewFrom: 200,
+  label: { lon: -119.0, lat: 46.0, rotation: 0 },
+  pois: [
+    { name: "哥伦比亚河峡谷", lon: -121.4, lat: 45.7, note: "哥伦比亚河切穿玄武岩和喀斯喀特山脉" },
+    { name: "河道疤地", lon: -118.2, lat: 47.0, note: "冰期米苏拉大洪水冲刷出的裸岩沟谷群" },
+  ],
+  source: "哥伦比亚高原：美国西北部由中新世（约1700–600万年前）溢流玄武岩堆成的高原，玄武岩总覆盖约21万km²（USGS）；冰期米苏拉大洪水冲出“河道疤地”",
+};
+
+const GREAT_SALT_LAKE: TerrainEntry = {
+  id: "great-salt-lake",
+  nameZh: "大盐湖",
+  nameEn: "Great Salt Lake",
+  category: "lake",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "大盐湖", lon: -112.5, lat: 41.15, elevation: 1280, kind: "salt-lake" },
+  bbox: [-113.2, 40.6, -111.9, 41.75],
+  axis: [[-112.9, 41.6], [-112.2, 40.7]],
+  viewFrom: 200,
+  label: { lon: -112.5, lat: 41.2, rotation: 0 },
+  source: "大盐湖：西半球最大的咸水湖，冰期邦纳维尔湖的残留；无出海口，靠蒸发平衡，水位和面积随降水大幅波动，近年偏低（USGS / 犹他州）",
+};
+
+const COLORADO_RIVER: TerrainEntry = {
+  id: "colorado-river",
+  nameZh: "科罗拉多河",
+  nameEn: "Colorado River",
+  category: "river",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "格伦峡谷（马蹄湾）", lon: -111.5104, lat: 36.8791, elevation: 1130, kind: "gorge" },
+  bbox: [-115.5, 31.8, -105.5, 40.5],
+  axis: [[-105.8, 40.2], [-114.6, 32.0]],
+  viewFrom: 20,
+  label: { lon: -111.5, lat: 36.5, rotation: -20 },
+  pois: [
+    { name: "米德湖（胡佛水坝）", lon: -114.7377, lat: 36.0161, note: "美国库容最大的水库之一" },
+    { name: "鲍威尔湖（格伦峡谷水坝）", lon: -111.4837, lat: 36.9375, note: "淹没了格伦峡谷" },
+  ],
+  source: "科罗拉多河：从落基山流向加利福尼亚湾，长约2330km；切出大峡谷，被胡佛、格伦峡谷等大坝分段拦蓄，近几十年多数年份不再入海（USGS）",
+};
+
+const ATLANTIC_COASTAL_PLAIN: TerrainEntry = {
+  id: "atlantic-coastal-plain",
+  nameZh: "大西洋沿岸平原",
+  nameEn: "Atlantic Coastal Plain",
+  category: "plain",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "切萨皮克湾", lon: -76.1, lat: 37.8, elevation: 2, kind: "delta" },
+  bbox: [-82.5, 30.0, -72.0, 40.5],
+  axis: [[-74.0, 40.0], [-81.5, 30.5]],
+  viewFrom: 110,
+  label: { lon: -77.5, lat: 35.5, rotation: -55 },
+  source: "大西洋沿岸平原：北美东缘一条自北向南加宽的低平地带，由抬升出海面的松散沉积构成；与阿巴拉契亚山麓之间以“瀑布线”为界（USGS）",
+};
+
+const FLORIDA_PENINSULA: TerrainEntry = {
+  id: "florida-peninsula",
+  nameZh: "佛罗里达半岛",
+  nameEn: "Florida Peninsula",
+  category: "coast",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "银泉（喀斯特泉）", lon: -82.0578, lat: 29.2108, elevation: 12, kind: "escarpment" },
+  bbox: [-83.5, 24.5, -80.0, 30.7],
+  axis: [[-81.6, 30.4], [-81.2, 25.2]],
+  viewFrom: 90,
+  label: { lon: -81.6, lat: 28.3, rotation: -84 },
+  source: "佛罗里达半岛：一块巨大的石灰岩台地露出海面的部分，地势极低平，多喀斯特天坑、地下河和大泉；沿岸有障壁岛（USGS / 佛州地质调查）",
+};
+
+const CHIHUAHUAN_DESERT_US: TerrainEntry = {
+  id: "chihuahuan-desert-us",
+  nameZh: "奇瓦瓦沙漠",
+  nameEn: "Chihuahuan Desert",
+  category: "desert",
+  regionId: "north-america",
+  country: "usa",
+  landmark: { name: "白沙（石膏沙丘）", lon: -106.1746, lat: 32.7872, elevation: 1200, kind: "dune" },
+  bbox: [-107.8, 28.8, -102.8, 34.2],
+  axis: [[-106.8, 29.2], [-103.5, 33.8]],
+  viewFrom: 200,
+  label: { lon: -105.0, lat: 31.5, rotation: 0 },
+  source: "奇瓦瓦沙漠：北美按面积最大的荒漠，主体在墨西哥，美国部分在西得州、新墨西哥南部和亚利桑那东南；海拔较高的雨影荒漠，以丝兰和沙漠灌丛为主（NPS）。此条目取美国部分",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -2218,6 +2316,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MOJAVE_DESERT, GREAT_LAKES,
   YELLOWSTONE, YOSEMITE_VALLEY, MISSISSIPPI_RIVER, CENTRAL_VALLEY_CA, EVERGLADES,
   SONORAN_DESERT, MONUMENT_VALLEY, HAWAIIAN_ISLANDS,
+  COLUMBIA_PLATEAU, GREAT_SALT_LAKE, COLORADO_RIVER, ATLANTIC_COASTAL_PLAIN,
+  FLORIDA_PENINSULA, CHIHUAHUAN_DESERT_US,
 ];
 
 /**
@@ -2274,6 +2374,11 @@ const WIDE_VIEW: Record<string, number> = {
   everglades: 2.0,
   "sonoran-desert": 2.2,
   "hawaiian-islands": 2.4,
+  "columbia-plateau": 2.2,
+  "colorado-river": 2.6,
+  "atlantic-coastal-plain": 2.5,
+  "florida-peninsula": 2.2,
+  "chihuahuan-desert-us": 2.2,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,

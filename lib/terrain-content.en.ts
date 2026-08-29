@@ -1893,4 +1893,94 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Polynesian voyagers reached and settled the Hawaiian Islands more than a thousand years ago and developed an independent Hawaiian Kingdom. After Europeans arrived in 1778, disease, trade and outside powers deeply changed the society; the islands were annexed by the United States in 1898 and became the 50th state in 1959. Today the Hawaiian language and culture are undergoing a revival, and volcanic activity, tourism and military bases are focal points of the islands' economy and land questions.",
   },
+
+  "columbia-plateau": {
+    seeing:
+      "The Columbia Plateau is in the north-western United States, across eastern Washington, eastern Oregon and western Idaho — a broad upland built of basalt. In the Miocene (about 17 to 6 million years ago) large volumes of very fluid lava poured out of a set of fissures and spread across the region in sheet after sheet; the basalt covers a total of about 210,000 km². The Columbia and Snake rivers have cut deep canyons into the plateau.",
+    formation:
+      "The Columbia Plateau is a \"flood basalt\" landscape: the lava did not erupt from a cone but flowed quietly in huge volumes from long cracks in the crust, spread out like water, cooled into a layer, and was buried by the next flow — stacked several kilometres thick in places. During the ice ages, repeated bursting of ice dams sent the \"Missoula floods\" across the eastern plateau, stripping off the topsoil and carving a maze of bare-rock coulees into the basalt — the \"Channeled Scablands\". Dry Falls is the dry bed left by one enormous former waterfall.",
+    observation:
+      "From the air the Columbia Plateau is a gently rolling, yellow-brown upland, split by a few deeply cut river valleys (the Columbia, the Snake) whose walls often show layer upon layer of horizontal dark basalt steps. The Channeled Scablands in the east are an unusual terrain — a crisscross of dry coulees, bare rock islands and dry waterfalls. In the south-west the loess-covered Palouse Hills have been turned into wheat fields.",
+    distinguish:
+      "The Columbia Plateau and the Colorado Plateau are both \"plateaus\", but the Colorado Plateau is flat-lying sedimentary rock raised as a block; the Columbia Plateau was built up by lava piling on lava. Versus the Yellowstone Plateau: Yellowstone was domed up by a hot spot and its big eruptions are explosive; the Columbia Plateau's flood basalts came out quietly and on a far larger, flatter scale.",
+    concept:
+      "The Columbia Plateau shows that a \"plateau\" can be built up, not only pushed up. It is one of the youngest and best-preserved large continental flood-basalt provinces on Earth. A common misconception is to picture flood basalt as one great eruption — it was actually hundreds of separate lava flows laid down over two or three million years.",
+    history:
+      "The Columbia Plateau is home to the Nez Perce, Yakama, Cayuse and other Plateau Native nations, for whom the salmon runs were central to life. The 19th-century Oregon Trail crossed the region. In the 20th century, dams on the Columbia such as Grand Coulee turned it into an irrigated farming region and also deeply affected the salmon populations.",
+  },
+
+  "great-salt-lake": {
+    seeing:
+      "The Great Salt Lake is in north-western Utah, the largest saltwater lake in the Western Hemisphere. It has no outlet — rivers flow in and water leaves only by evaporation, so salt keeps concentrating, and salinity ranges from a little above seawater to near-saturation in different parts of the lake. The lake is shallow, only a few metres deep over much of its area, so a small change in level moves the shoreline a long way. In recent years, sustained drought and upstream water use have kept it low.",
+    formation:
+      "The Great Salt Lake is the remnant of a much larger freshwater lake of the ice ages, Lake Bonneville. About 14,000 years ago the climate dried, Bonneville shrank drastically, and only the Great Salt Lake was left in the lowest ground; the old shorelines are still cut into the hillsides around it like contour lines. The south-east shore has river deltas and wetlands; the rest is mostly flat salt flat.",
+    observation:
+      "From the air the Great Salt Lake is a shallow, broad sheet of water, pinkish-white or blue-green — a causeway splits it in two, and the northern half, which gets almost no fresh water and is saltier, is stained a distinct pink by salt-loving microbes, in contrast with the blue-green southern half. Around the lake are broad white salt flats and plains, and beyond them the brown parallel ranges of the Basin and Range.",
+    distinguish:
+      "The Great Salt Lake and China's Qinghai Lake are both internally drained salt lakes and both remnants of larger ice-age lakes, but Qinghai Lake sits high on the Tibetan Plateau, is deeper, and is about half as salty as seawater; the Great Salt Lake is lower, extremely shallow, much saltier, and swings widely with rainfall. Compared with the Dead Sea, the Dead Sea is smaller, deeper, saltier and falling fast and steadily.",
+    concept:
+      "The Great Salt Lake is a classic \"terminal lake\" — water only enters and leaves by evaporation. Its area and level have no \"normal\" value, only a range that shifts with the climate. A common misconception is to read its shrinking as permanent loss — it has risen and fallen many times; but if upstream use stays above the inflow, dust from the exposed lakebed affects the region's air, which is a current real concern.",
+    history:
+      "The Great Salt Lake area is the traditional land of the Shoshone, Ute, Goshute and other Native nations. Mormon settlers established Salt Lake City on the south-east shore in 1847. In the 19th century some emigrants tried to cut across the salt flats west of the lake as a shortcut and became stranded repeatedly. Today the lake area has brine extraction, salt works and migratory-bird refuges, and the lake level is a matter of active public discussion in Utah.",
+  },
+
+  "colorado-river": {
+    seeing:
+      "The Colorado River rises in the Rocky Mountains and flows south-west through seven states for about 2,330 km to the Gulf of California. It cut the Grand Canyon, Glen Canyon and a series of other deep gorges, and is the most important water source in the arid South-West. The Hoover Dam, Glen Canyon Dam and others built in the 20th century divide it into a chain of reservoirs, and its water is so fully allocated that in most years of recent decades the Colorado runs dry before reaching its mouth.",
+    formation:
+      "The Colorado's landform work is known for down-cutting: as the Colorado Plateau rose over the past few million years, the river cut down to keep its gradient, sawing the flat layers into deep canyons, the Grand Canyon being the deepest stretch. The river originally carried a heavy sediment load (\"Colorado\" is Spanish for \"red\"); since the dams, much of that sediment is trapped in reservoirs, the water downstream runs clear, and the supply to the riverbed and delta has fallen.",
+    observation:
+      "From the air the upper Colorado is an ordinary mountain river in the Rockies; on entering the Colorado Plateau it becomes a deep, winding green thread set in red rock, with stepped-back canyon walls on either side. Lake Mead and Lake Powell are two artificial blue sheets on the river's course, shaped like drowned branching canyons. Downstream in the Sonoran Desert the channel is canalised and the banks are irrigated fields.",
+    distinguish:
+      "The Colorado and the Yellow River are both heavily silt-laden, heavily dammed rivers with strained downstream water supplies, but the lower Yellow River is a \"suspended river\", its bed raised above the plain by silt and held in by levees; the lower Colorado is a canyon river cut into rock, and its problem is mainly that the water is fully divided and it barely reaches the sea. Compared with the Mississippi, the Mississippi carries far more water and is managed mostly for navigation and flood control; the Colorado is managed mostly for water supply and power.",
+    concept:
+      "The Colorado shows that river landforms are shaped not only by natural processes but deeply by human engineering. A common misconception is that a big river always reaches the sea — because of interstate water allocation and a chain of large dams, the Colorado's natural delta has largely dried and turned saline, recovering only briefly in occasional release years. It is also a classic case of canyon-cutting by river down-cutting plus block uplift.",
+    history:
+      "The Colorado River and its canyons have long been home to many Native nations, and dozens of federally recognised tribes are in the basin today. In the early 20th century seven states signed the Colorado River Compact allocating water rights, later layered with a treaty with Mexico and a series of court rulings into a complex body of \"river law\". Today about 40 million people use its water, and the long drought under climate change has made the allocation an ongoing public issue.",
+  },
+
+  "atlantic-coastal-plain": {
+    seeing:
+      "The Atlantic Coastal Plain is a low, flat belt along the eastern edge of North America, beginning around New York and New Jersey and widening southward all the way to Florida and around into the Gulf coast. It is relatively recently emerged sea floor, made of loose sand, mud and shell material, very gently sloping, with a coast of barrier islands, lagoons and drowned river mouths. Cities such as Washington and Richmond sit roughly along its boundary with the Appalachian foothills.",
+    formation:
+      "The Atlantic Coastal Plain is essentially the landward extension of the continental shelf — over the past tens of millions of years, sea level has risen and fallen repeatedly, flooding and exposing this shallow sea floor, each time leaving a nearly horizontal, seaward-tilted layer of sediment. When sea level was low in the ice ages, rivers cut valleys across the plain; when it rose afterward, the valley mouths were drowned into wide bays (such as Chesapeake Bay). The plain's edge against the foothills is the \"Fall Line\", where rivers drop from hard old rock onto soft sediment in a set of small falls and rapids.",
+    observation:
+      "From the air the Atlantic Coastal Plain is an extremely flat, water-laced lowland of alternating forest and farmland, wider toward the south. The coastline is not a solid line but a string of long thin barrier islands, with narrow lagoons and salt marsh between them and the mainland; several large rivers open into funnel-shaped bays reaching inland. There is no visible high ground, only very gentle undulation.",
+    distinguish:
+      "The Atlantic Coastal Plain and the Great Plains are both flat, but the Great Plains lie east of the Rockies, are high (up to 1,800 m), are built of mountain debris, and are relatively dry; the Atlantic Coastal Plain hugs the sea, is only tens of metres above sea level, is built of marine sediment, and is humid. Compared with the North China Plain, that is an inland river-alluvial plain; the Atlantic Coastal Plain was shaped by marine transgression and regression along a coast.",
+    concept:
+      "The Atlantic Coastal Plain reminds us that a \"plain\" can be a \"former sea floor\". The test is the material and the history — it is made of loose marine sediment in near-horizontal, seaward-dipping beds, different in origin from a river-alluvial plain or a structural-basin plain. The \"Fall Line\" is one of its important geographic boundaries: many early cities were built on it, because it offered both water power and the head of navigation.",
+    history:
+      "The Atlantic Coastal Plain is home to the Powhatan, Lenni-Lenape, Creek and many other Native nations. From the 17th century, Europeans built some of the earliest colonial settlements along its bays and river mouths (Jamestown, Charleston and others). The warm, humid lowlands of the southern part developed a plantation economy based on enslaved labour. Today the region is city-dense and heavily populated, and its low coast makes it especially sensitive to sea-level rise and storm surge.",
+  },
+
+  "florida-peninsula": {
+    seeing:
+      "The Florida Peninsula is a low, flat strip of land reaching south-east into the sea from North America, about 650 km long. It is really the emerged part of a huge limestone platform; even its highest point is only about 100 m above sea level. Limestone dissolves easily in water, so the peninsula is full of sinkholes, underground rivers and clear large springs; the southern end is the Everglades, and the coast is fringed with barrier islands and coral reefs (the Florida Keys).",
+    formation:
+      "The Florida Peninsula's foundation is a thick layer of limestone built up over tens of millions of years in warm shallow seas and by the accumulation of the remains of organisms. When sea level fell, the platform emerged as land, and rain and groundwater dissolved the limestone along cracks, forming caves; where a cave roof collapses, a sinkhole forms, some filling with water to make round lakes. Beneath the peninsula lies a huge aquifer, and the springs are simply where that groundwater emerges in low places.",
+    observation:
+      "From the air the Florida Peninsula is an extremely flat, extremely green, lake-dotted lowland — the many round lakes scattered across the centre are mostly water-filled sinkholes. The coastline is edged by a nearly continuous string of thin barrier islands, with narrow lagoons between them and the land. At the southern end the grass-green Everglades spread toward Florida Bay, and beyond that is an arc of reef islands.",
+    distinguish:
+      "The Florida Peninsula and China's Leizhou Peninsula are both low, flat coastal peninsulas, but Leizhou is capped with basalt and has volcanic landforms; the Florida Peninsula is a limestone platform with karst features (sinkholes, underground rivers, springs). Compared with the Atlantic Coastal Plain, the Florida Peninsula is the section of that plain that juts furthest south and is surrounded by sea, where the limestone base is nearer the surface and karst is better developed.",
+    concept:
+      "The Florida Peninsula shows that \"coast\" landforms can be governed by rock type: a soluble rock like limestone lets water hollow out both the surface and the subsurface into a distinctive form. A common misconception is to take the round lakes here for volcanic craters or artificial ponds — most are sinkholes. Because the ground is porous limestone and the land is low, groundwater, land subsidence and saltwater intrusion are long-standing management problems.",
+    history:
+      "The Florida Peninsula is home to the Tequesta, Calusa and later the Seminole and other Native nations. Spain reached and named \"La Florida\" in 1513; Spanish and then British control followed, and it passed to the United States in 1821. In the 20th century, drainage works, air conditioning and railways and highways turned this hot, wet lowland into one of the fastest-growing regions in the United States, with an ongoing tension between wetland protection and urban expansion.",
+  },
+
+  "chihuahuan-desert-us": {
+    seeing:
+      "The Chihuahuan Desert is the largest desert in North America by area; its main body is in Mexico, and the part in the United States is in west Texas, southern New Mexico and south-eastern Arizona. It is a relatively high rain-shadow desert (mostly 1,100 to 1,500 m), with ranges on the east and west blocking the moisture. The vegetation is dominated by yucca, agave and creosote bush, and the large gypsum dune field of White Sands National Park is its most distinctive corner.",
+    formation:
+      "The Chihuahuan Desert's dryness is mainly topographic: the Sierra Madre to the west and a series of mountains to the east strip out the moisture from the seas on either side. It is the southern extension of the Basin and Range — broad basins between north–south fault-block ranges, the basins holding dry salt lakes. The gypsum at White Sands comes from the surrounding mountains, dissolved by rain, carried into a closed basin, and left as gypsum crystals when the water evaporates, then blown by the wind into the largest gypsum dune field in the world.",
+    observation:
+      "From the air the Chihuahuan Desert is an open, pale-brown, shrub-dotted set of basins, separated by rows of isolated brown ranges. White Sands is a glaring pure-white sand sea within it, in sharp contrast with the surrounding brown. The Rio Grande cuts a deep canyon around Big Bend National Park — an uncommon landform clue in the desert. Unlike the Sonoran Desert further west, there are no giant saguaro cactus here.",
+    distinguish:
+      "The Chihuahuan, Sonoran, Mojave and Great Basin are the four great deserts of North America. The test is elevation, temperature and vegetation: the Great Basin is a cold desert dominated by sagebrush; the Mojave is marked by the Joshua tree; the Sonoran is a low, hot desert with giant saguaro; the Chihuahuan is higher, further inland and east, colder in winter, and dominated by yucca, agave and desert scrub.",
+    concept:
+      "The Chihuahuan Desert shows that \"largest desert\" is not the same as \"hottest desert\" — it is the largest by area, but because it is high it gets frost and even snow in winter. A common misconception is to take White Sands for ordinary quartz dunes: it is water-soluble gypsum, which barely absorbs heat, so it is not hot underfoot even at midday, and it hardens briefly after rain.",
+    history:
+      "The Chihuahuan Desert is the traditional land of the Mescalero Apache and other Native nations. The Rio Grande valley has had irrigated farming for a very long time, and Spanish settlers built a string of towns along the river in the 17th century. In the 20th century the region's open space and clear skies made it a site for U.S. military testing and spaceflight (the White Sands Missile Range is next to the dunes). Today Big Bend, Guadalupe Mountains and White Sands national parks protect its core landforms.",
+  },
 };
