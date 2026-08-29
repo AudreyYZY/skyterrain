@@ -743,6 +743,24 @@ export default function ExplorerApp() {
     [handleSelectTerrain, handleSelectFeature]
   );
 
+  /** 地图上直接点某地形 — 若属于其它大洲，先切过去再选中 */
+  const handleMapTerrainSelect = useCallback(
+    (id: string) => {
+      const e = getTerrainEntry(id);
+      if (e && e.regionId !== activeRegion && REGIONS.some((r) => r.id === e.regionId)) {
+        setActiveRegionState(e.regionId);
+        setActiveRegion(e.regionId);
+        try {
+          localStorage.setItem("fge-active-region", e.regionId);
+        } catch {
+          /* ignore */
+        }
+      }
+      handleSelectById(id);
+    },
+    [activeRegion, handleSelectById]
+  );
+
   const handleStartRoute = useCallback(
     (route: FlightRoute) => {
       // 取消之前的叙述
@@ -954,6 +972,7 @@ export default function ExplorerApp() {
           onReady={handleMapReady}
           onTerrainMode={setTerrainMode}
           onTerrainHover={setHoveredTerrainId}
+          onTerrainSelect={mode === "study" ? handleMapTerrainSelect : undefined}
           appMode={mode}
         />
         {mode === "study" && (

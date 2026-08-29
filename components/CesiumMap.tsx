@@ -75,6 +75,8 @@ interface CesiumMapProps {
   onTerrainMode?: (mode: TerrainMode) => void;
   /** 鼠标 hover 到某地形区域时回调其 id（移出时 null） */
   onTerrainHover?: (terrainId: string | null) => void;
+  /** 点击地图上某地形区域时回调其 id（不受当前大洲限制） */
+  onTerrainSelect?: (terrainId: string) => void;
   /** 应用模式：travel 时不做地形 hover / 区域高亮 */
   appMode?: "study" | "travel";
 }
@@ -417,9 +419,11 @@ function makeDebugMarkerImage(Cesium: typeof import("cesium"), color: import("ce
 }
 
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
-  function CesiumMap({ onReady, onTerrainMode, onTerrainHover, appMode = "study" }, ref) {
+  function CesiumMap({ onReady, onTerrainMode, onTerrainHover, onTerrainSelect, appMode = "study" }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
     const modeRef = useRef(appMode);
+    const onTerrainSelectRef = useRef(onTerrainSelect);
+    onTerrainSelectRef.current = onTerrainSelect;
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
@@ -1426,6 +1430,24 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               onTerrainHover?.(newHoveredId);
             }
           }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+          // 地形区域点击 — 命中最具体的地块即选中（不受当前大洲限制，可跨洲跳转）
+          handler.setInputAction((click: any) => {
+            if (viewer.isDestroyed() || modeRef.current !== "study") return;
+            const hits = viewer.scene.drillPick(click.position, 8);
+            let hitId: string | null = null;
+            let bestArea = Infinity;
+            for (const h of hits) {
+              const tid = h?.id?.properties?.getValue?.()?.terrainId;
+              if (!tid) continue;
+              const area = terrainRegionRef.current.get(tid)?.areaDeg2 ?? Infinity;
+              if (area < bestArea) {
+                bestArea = area;
+                hitId = tid;
+              }
+            }
+            if (hitId) onTerrainSelectRef.current?.(hitId);
+          }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
           // 瓦片加载完成后触发渲染 — 确保高分辨率瓦片显示
           viewer.scene.globe.tileLoadProgressEvent.addEventListener((e) => {
