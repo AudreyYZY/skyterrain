@@ -4730,4 +4730,79 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Because it is easy to reach, Engabreen has been a subject of glacier research and tourism since the 19th century, and the moraine ridges of different years in front of it clearly record the tongue's advances and retreats. The NVE has monitored Svartisen's mass balance since the 1970s and has driven a tunnel beneath Engabreen to build a subglacial laboratory, studying the sliding and erosion at the base of the glacier directly — one of only a handful of such facilities in the world. The glacier's meltwater is used on a large scale for hydropower.",
   },
+
+  geirangerfjord: {
+    seeing:
+      "The Geirangerfjord in western Norway is a roughly 15 km arm of the Storfjord, inscribed with the Nærøyfjord in 2005 as the \"West Norwegian Fjords\" World Heritage Site. It is very narrow and very deep — crystalline rock walls rising about 1,400 m on either side, another about 500 m of water below the surface, with rows of waterfalls falling free from the walls (the \"Seven Sisters\", the \"Suitor\", the \"Bridal Veil\" and others). The fjord makes several bends, each opening onto new walls and waterfalls.",
+    formation:
+      "The Geirangerfjord is a textbook case of glacial overdeepening: in the ice age an ice stream flowed seaward along a pre-existing river valley, digging the main valley floor ever deeper — in places to several hundred metres below sea level. In the small side valleys the ice was thin and cut shallow, so after the ice retreated and the sea came in, the mouths of those side valleys were left \"hanging\" partway up the main fjord wall, their streams entering only as waterfalls — hanging-valley falls. The fjord bends because the ice followed several differently oriented sets of joints in the rock.",
+    observation:
+      "From the air the Geirangerfjord is a deep-green, repeatedly bending narrow channel set between near-vertical dark walls. On top of the walls is a gentle plateau surface and some abandoned cliff-side farms (historically reached by rope). Several waterfalls drop straight from hanging-valley mouths partway down the walls, throwing up spray in the fjord. The village of Geiranger at the head is squeezed onto a small delta.",
+    distinguish:
+      "The Geirangerfjord and the Sognefjord have the same origin (glacial scour), but Geiranger is an arm — narrower and shorter, with an especially dense set of hanging-valley falls, so it looks more \"dramatic\". Its waterfalls are unlike ordinary mountain falls — they are so high and so sheer because they drop in one step from a hanging valley into a glacially overdeepened main fjord.",
+    concept:
+      "A hanging valley is a reliable sign that \"this valley was strongly reworked by ice\": a river tributary always joins its trunk smoothly (same water level), but a glacial trunk is thick and cuts deep while its tributaries are thin and cut shallow, so after the ice melts the tributary mouths hang high on the trunk-valley wall. When you see a side valley whose mouth is tens to a hundred metres above the main valley floor, with its stream falling as a waterfall, you can be fairly sure the place has seen strong glacial action. A common misconception is that every high waterfall means a fault or a rock step.",
+    history:
+      "The cliff-side farms on either side of the Geirangerfjord (Skageflå, Knivsflå and others) are an extreme example of Norwegian mountain farming — households farmed and grazed on rock ledges hundreds of metres up, and children were roped for safety on the way to school. These farms were abandoned through the 20th century and are protected as a cultural landscape. The fjord has been a centre of \"fjord tourism\" since the 19th century and is now a popular cruise-ship call, with local limits set on ship emissions.",
+  },
+
+  naeroyfjord: {
+    seeing:
+      "The Nærøyfjord in western Norway is the innermost arm of the Sognefjord, about 17 km long, only about 250 m wide at its narrowest while the walls on either side rise over 1,600 m — an extreme width-to-depth ratio, a fjord like a \"slit\". It is often taken as the \"type example\" of the fjord landform, and was inscribed with the Geirangerfjord as a World Heritage Site in 2005. The name comes from Njord, the wind god of Norse mythology.",
+    formation:
+      "The Nærøyfjord follows a pre-existing structural weakness; in the ice age the ice stream cut down concentrated along this narrow zone, digging it into a deep, narrow trough. Because the ice was held tightly between hard rock on both sides, its energy went into cutting down, so the fjord is narrow and deep. After the ice retreated and the sea came in, water filled the trough, leaving today's channel almost pinched between its walls; the small side valleys likewise hang partway up and enter as waterfalls.",
+    observation:
+      "From the air the Nærøyfjord is an almost straight dark slit cutting south from the main Sognefjord into snow mountains, its walls so high and steep that it stays in shadow much of the day. There are only scattered footholds of flat ground at the bottom, with small villages and farms such as Gudvangen on them. In winter frozen waterfalls hang on the walls.",
+    distinguish:
+      "The Nærøyfjord and the Geirangerfjord are both World Heritage arms, but the Nærøyfjord is narrower and straighter, like a \"knife-cut slit\", while the Geirangerfjord bends more and has denser waterfalls. It differs from the main Sognefjord only in scale — the trunk is wide and deep, and the Nærøyfjord is the most extreme short stretch of it.",
+    concept:
+      "The Nærøyfjord shows that \"the more tightly confined, the deeper it is cut\": when an ice stream is held in a narrow band between hard rock, it cannot spread sideways and its vertical erosion is especially strong, forming a fjord with an extreme width-to-depth ratio. To tell whether a fjord is this \"confined\" type, look at the ratio of its width to its wall height, and whether it follows a clear straight line (a structural zone). A common misconception is that a narrower fjord means shallower water — the opposite is true.",
+    history:
+      "The farms on the floor and wall ledges of the Nærøyfjord are likewise an extreme example of mountain farming. The fjord was a stretch of the old track-way between Bergen and eastern Norway — travellers sailed through the Nærøyfjord and then crossed a pass into the interior. Today only small vessels are allowed in, with speed and emission limits on motor craft, to protect the site.",
+  },
+
+  hardangerfjord: {
+    seeing:
+      "The Hardangerfjord in southwestern Norway is Norway's second-longest fjord, reaching about 179 km inland from the Atlantic to the foot of the Hardangervidda plateau. It is not a knife-slit like the Geirangerfjord but fairly open, branching into several arms (the Sørfjord, the Eidfjord and others). Its inner slopes have a mild, sunny climate and it is a well-known fruit-growing district — in spring the shores are banks of apple and cherry blossom.",
+    formation:
+      "The Hardangerfjord is likewise glacial scour seaward along pre-existing valleys and fault lines, overdeepened. It is long and relatively wide because the ice pathway itself was wide. Its innermost end faces the kilometre-high scarp along the western edge of the Hardangervidda — ice spilling off the plateau gathered and cut down here, gnawing this deep bay into the plateau edge. The side valleys on either side likewise hang with waterfalls, the best known being Vøringsfossen.",
+    observation:
+      "From the air the Hardangerfjord is a wide blue channel running inland to the northeast, its shores deep-green steep slopes tiered with orchards and small white farms. It branches a lot, and its head faces the white Hardangerjøkulen ice cap and the plateau scarp. Compared with the Geiranger fjord, the Hardanger shoreline is more \"friendly\", with more gentle habitable slopes.",
+    distinguish:
+      "The Hardangerfjord and the Sognefjord are both large Norwegian fjords; the Hardanger is a little shorter, more open, more branched, and milder in climate (hence the orchards). It differs from the \"extremely narrow and deep\" arm-type fjords like the Geiranger and Nærøy — the Hardanger is a wide trunk-type fjord. To judge the \"class\" of a fjord, look at its length, depth and the complexity of its branching.",
+    concept:
+      "The Hardangerfjord is a sample for understanding \"the microclimate inside a fjord\": a deep, narrow body of water stores heat well, so it does not freeze in winter and moderates the cold on its shores; the steep south-facing slope catches more sun. This combination of \"water buffering plus aspect warming\" lets apples and cherries grow in a high-latitude fjord. To judge whether a fjord's inner slope can grow fruit, look at its aspect, its steepness and the depth of the fjord water. A common misconception is that a high latitude rules out orchard farming.",
+    history:
+      "Orchard growing in the Hardanger district goes back to fruit trees introduced by medieval monasteries. The fjord was a waterway between the interior and the coast of western Norway, with medieval stave churches on its shores. From the 19th century the Hardangerfjord's spring blossom and folk culture (the Hardanger fiddle, the traditional bunad costume) became key images of Norwegian national romanticism, and it was one of the first districts developed for \"fjord tourism\".",
+  },
+
+  lysefjord: {
+    seeing:
+      "The Lysefjord in southwestern Norway, northeast of Stavanger, is about 42 km long and up to about 400 m deep below sea level. The name \"Lyse\" means \"bright\", said to come from the sheen of the pale granite on its walls in sunlight. The fjord itself is not large, but two places have made it world-famous: Preikestolen (the Pulpit Rock) on the north side — a level rock platform about 604 m high and roughly 25 m square — and, on the south side, the roughly 1,000 m Kjerag wall with the \"Kjeragbolten\" boulder wedged in a crack.",
+    formation:
+      "The Lysefjord's rock is hard granite-gneiss. In the ice age an ice stream scoured seaward along a structural line in the rock, cutting the fjord deep and straight with near-vertical walls. Preikestolen's flat top comes from a set of horizontal joints in the granite — the ice, and later freeze–thaw, stripped away the rock above the joint plane sheet by sheet, leaving a level platform; there is also a prominent vertical crack along the platform's edge, which it will one day collapse along, though geological surveys show it stable in the short term.",
+    observation:
+      "From the air the Lysefjord is a straight dark channel between pale-grey, near-vertical granite walls. On the north side, in the middle stretch, a small square rock platform juts from the wall and hangs about 600 m above the fjord water — that is Preikestolen. At the eastern end, around Kjerag, the walls are higher and more intact, with a rounded plateau surface on top.",
+    distinguish:
+      "Compared with the Geiranger and Nærøy fjords, the Lysefjord is smaller with fewer waterfalls, but its walls are \"cleaner\" — large intact expanses of pale granite with almost no vegetation or scree. A level platform like Preikestolen is a product of horizontal jointing in granite, unlike the flat benches of limestone or sandstone country. To recognise this \"granite fjord\", look for pale walls, large intact faces and regular joint directions.",
+    concept:
+      "Preikestolen is a sample for understanding \"joints control the shape of rockfall\": pre-existing fracture planes (joints) in the rock decide along what direction and in what shape a block will break off. Granite often has a set of near-horizontal \"sheeting joints\" (unloading fractures), and weathering and freeze–thaw strip the overlying rock along them in sheets, leaving platforms and squared-off blocks. To tell whether a flat-topped cliff formed this way, look for a set of parallel horizontal fractures beneath it. A common misconception is that so regular a platform must have been cut by people.",
+    history:
+      "Historically the shores of the Lysefjord had scattered cliff farms and quarrying. Around 1900 local people began climbing onto Preikestolen, and the name \"Preikestolen\" (the Pulpit) was roughly then popularised by tourism promoters. Today Preikestolen and Kjerag are among Norway's most-visited hiking destinations, and the managers have done extensive trail reinforcement to handle the crowds and for safety.",
+  },
+
+  trondheimsfjord: {
+    seeing:
+      "The Trondheimsfjord in central Norway is Norway's third-longest fjord, about 130 km long and up to about 617 m deep. It is very unlike the narrow deep fjords of the west — wide and open, with large areas of shallow water and tidal flats, and its main body ice-free all year. Norway's third-largest city, Trondheim (medieval Nidaros), sits on its middle reach. The fjord is exceptionally rich in life: over 90 recorded fish species, cold-water coral reefs in the deep water, and several of Norway's top salmon rivers entering along its shores.",
+    formation:
+      "The Trondheimsfjord developed in an area of relatively soft, low rock (the Devonian strata of Trøndelag and older schists), and the ice here was more dispersed, not held in a narrow valley, so the glacier dug it into a wide fjord with a shallow sill rather than a western-style slit. After the ice retreated, the sea stood relatively higher against the land, leaving large marine clay terraces around the fjord (later fertile farmland); the land is still slowly rebounding and rising.",
+    observation:
+      "From the air the Trondheimsfjord is a broad body of water shaped like a hand with two arms outstretched, its shoreline gentle, with bars, tidal flats and a few low islands (Tautra, Ytterøya and others). Around it are the rolling farmland and forest of Trøndelag, with the city of Trondheim and its Nidaros Cathedral on the south shore. Compared with the western fjords, there are almost no vertical rock walls here.",
+    distinguish:
+      "The Trondheimsfjord, the Sognefjord and the Hardangerfjord are all counted as \"fjords\", but the Trondheimsfjord is wider, with a shallower sill and gentler shores — in origin \"dispersed ice plus softer bedrock\" rather than \"concentrated ice plus hard crystalline rock\". To decide whether a wide bay counts as a fjord, look for a glacially overdeepened deep basin — the Trondheimsfjord has a deep basin over 600 m inside, which fits the definition.",
+    concept:
+      "The Trondheimsfjord is a sample for understanding \"fjord form depends on rock type and ice pathway\": both are bays dug by ice, but hard rock plus confined flow gives a slit (Nærøy), soft rock plus dispersed flow gives a wide bay (Trondheim). To understand why a fjord looks the way it does, look at both its bedrock and the shape of the ice pathway at the time. A common misconception is that a \"fjord\" must mean a narrow slit with towering walls.",
+    history:
+      "Trondheim (Nidaros) has been an important port and royal seat since the Viking Age, and in the Middle Ages a religious centre of Scandinavia, with Nidaros Cathedral an important medieval building. The fjord has always been a shipping route. The land around it is agriculturally rich thanks to the marine clay terraces; this clay also brings landslide risk, and an 1888 submarine slide in the fjord caused a local tsunami. Today the fjord is an important area for aquaculture and marine research.",
+  },
 };

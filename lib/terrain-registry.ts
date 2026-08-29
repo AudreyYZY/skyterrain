@@ -5114,6 +5114,84 @@ const SVARTISEN: TerrainEntry = {
   source: "斯瓦蒂森（“黑冰”）：挪威本土第二大冰川，分为西斯瓦蒂森与东斯瓦蒂森两片，合计约370 km²，位于诺尔兰郡；北极圈从冰川南部穿过；恩加冰舌一度下伸到近海平面；NVE 自1970年代监测，并在恩加冰舌下设有冰下实验室（NVE）",
 };
 
+const GEIRANGERFJORD: TerrainEntry = {
+  id: "geirangerfjord",
+  nameZh: "盖朗厄尔峡湾",
+  nameEn: "Geirangerfjorden",
+  category: "coast",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "盖朗厄尔峡湾（“七姊妹”瀑布一带）", lon: 7.100, lat: 62.105, elevation: 0, kind: "escarpment" },
+  bbox: [6.95, 62.02, 7.30, 62.18],
+  axis: [[7.00, 62.10], [7.28, 62.10]],
+  viewScale: 1.3,
+  label: { lon: 7.14, lat: 62.11, rotation: -4 },
+  source: "盖朗厄尔峡湾：松恩峡湾支系斯托尔峡湾的一条约15km 长的支汊，两侧结晶岩壁高达约1400m、水深达约海平面下500m，悬谷瀑布（“七姊妹”“求婚者”等）成排跌下；与纳柔依峡湾同列“西挪威峡湾”世界遗产（UNESCO / 2005）",
+};
+
+const NAEROYFJORD: TerrainEntry = {
+  id: "naeroyfjord",
+  nameZh: "纳柔依峡湾",
+  nameEn: "Nærøyfjorden",
+  category: "coast",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "纳柔依峡湾（古德旺恩一带）", lon: 6.900, lat: 60.905, elevation: 0, kind: "escarpment" },
+  bbox: [6.78, 60.83, 7.02, 61.10],
+  axis: [[6.87, 60.86], [6.93, 61.08]],
+  viewScale: 1.3,
+  label: { lon: 6.86, lat: 60.97, rotation: -78 },
+  source: "纳柔依峡湾：松恩峡湾的一条支汊，长约17km，最窄处仅约250m，两岸岩壁高逾1600m；被视为峡湾景观的“原型”，与盖朗厄尔峡湾同列“西挪威峡湾”世界遗产（UNESCO / 2005）",
+};
+
+const HARDANGERFJORD: TerrainEntry = {
+  id: "hardangerfjord",
+  nameZh: "哈当厄峡湾",
+  nameEn: "Hardangerfjorden",
+  category: "coast",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "哈当厄峡湾内段（艾德峡湾 / 金萨维克，背靠哈当厄高原）", lon: 6.720, lat: 60.420, elevation: 0, kind: "escarpment" },
+  bbox: [5.30, 59.70, 7.15, 60.60],
+  axis: [[5.45, 59.85], [7.05, 60.45]],
+  viewScale: 1.9,
+  label: { lon: 6.20, lat: 60.20, rotation: -30 },
+  source: "哈当厄峡湾：挪威第二长的峡湾，自大西洋向内陆伸约179km，直抵哈当厄高原脚下；主干分出瑟尔峡湾、艾德峡湾等支汊；峡湾内坡因气候温和多果园，是挪威著名的水果产区（Kartverket / NGU）",
+};
+
+const LYSEFJORD: TerrainEntry = {
+  id: "lysefjord",
+  nameZh: "吕瑟峡湾",
+  nameEn: "Lysefjorden",
+  category: "coast",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "布道石（Preikestolen，峡湾北岸约604m 高的水平岩台）", lon: 6.190, lat: 58.986, elevation: 604, kind: "escarpment" },
+  bbox: [6.05, 58.90, 6.80, 59.08],
+  axis: [[6.10, 58.98], [6.75, 59.03]],
+  viewScale: 1.4,
+  label: { lon: 6.40, lat: 59.02, rotation: -6 },
+  pois: [
+    { name: "谢拉格（Kjerag）与卡石（Kjeragbolten）", lon: 6.593, lat: 59.035, note: "峡湾南岸约1000m 的岩壁，卡石是卡在裂缝里的一块巨砾" },
+  ],
+  source: "吕瑟峡湾：斯塔万格东北一条长约42km、深达约海平面下400m 的花岗-片麻岩峡湾，两岸岩壁陡直、局部逾1000m；北岸的布道石是一块水平节理花岗岩形成的平顶悬崖，约在海平面上604m（Kartverket / NGU）",
+};
+
+const TRONDHEIMSFJORD: TerrainEntry = {
+  id: "trondheimsfjord",
+  nameZh: "特隆赫姆峡湾",
+  nameEn: "Trondheimsfjorden",
+  category: "coast",
+  regionId: "europe",
+  country: "norway",
+  landmark: { name: "特隆赫姆峡湾（特隆赫姆与蒙克岛一带）", lon: 10.35, lat: 63.47, elevation: 0, kind: "escarpment" },
+  bbox: [9.55, 63.30, 11.45, 64.20],
+  axis: [[9.70, 63.60], [11.35, 64.05]],
+  viewScale: 1.9,
+  label: { lon: 10.60, lat: 63.75, rotation: -34 },
+  source: "特隆赫姆峡湾：挪威第三长的峡湾，长约130km、最深约617m；比西部的峡湾宽阔得多，主段全年不冻；生物生产力居挪威峡湾之首，记录鱼类逾90种、深水有冷水珊瑚（Lophelia），沿岸有多条挪威顶级鲑鱼河；自维京时代就是重要水道（Kartverket / 海洋研究所）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -5228,6 +5306,7 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   SCANDINAVIAN_MOUNTAINS_NORWAY, JOTUNHEIMEN, HARDANGERVIDDA, FINNMARKSVIDDA,
   SOGNEFJORD, GLOMMA, LOFOTEN, JAEREN,
   DOVREFJELL, RONDANE, TROLLHEIMEN, JOSTEDALSBREEN, FOLGEFONNA, SVARTISEN,
+  GEIRANGERFJORD, NAEROYFJORD, HARDANGERFJORD, LYSEFJORD, TRONDHEIMSFJORD,
 ];
 
 /**
