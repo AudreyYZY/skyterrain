@@ -2359,4 +2359,125 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Nahanni watershed is the traditional land of the Dene Nahʔą people, and \"Nahanni\" comes from their name for themselves. In the early 20th century, several mysterious disappearances and deaths of gold prospectors in the valley gave the area legends like \"Headless Valley\" and drew explorers. In 1976, at the urging of Indigenous people, the national park reserve was created, and it was inscribed as a World Heritage site in 1978; in 2009 the park was greatly enlarged to protect the whole upper South Nahanni watershed.",
   },
+
+  // ============ Asia · Japan ============
+  "mount-fuji": {
+    seeing:
+      "Mount Fuji is the highest mountain in Japan, 3,776 m, in the centre of Honshu about 100 km from Tokyo. It is a near-perfect cone-shaped active volcano, standing alone above the lowlands and lakes around it and visible from far away. It has a high place in Japanese culture, religion and art, and in 2013 was inscribed as a World Heritage cultural site as an \"object of worship and wellspring of art\".",
+    formation:
+      "Mount Fuji is a stratovolcano: over roughly the past 100,000 years, successive layers of basalt-to-andesite lava and pyroclastic material have piled up into today's cone, which actually sits on top of several older volcanoes. Its most recent eruption was the Hōei eruption of 1707, which blasted a crater still visible on the south-eastern flank and dropped ash as far as Edo (now Tokyo). The Japan Meteorological Agency lists it as an active volcano under continuous monitoring.",
+    observation:
+      "From the air Mount Fuji is an isolated, symmetrical cone rising from low ground, with a crater about 700 m across at the summit. For the colder half of the year the upper mountain is snow-covered; below the snowline are dark forest and the brown scar of the 1707 crater. Five lakes (the Fuji Five Lakes) are strung along the northern foot, formed where lava flows dammed river valleys. The mountain sends no ridge in any direction — exactly the difference between a single volcano and a mountain range.",
+    distinguish:
+      "Mount Fuji, like Kilimanjaro and Mayon, is an isolated, symmetrical stratovolcano cone built by repeated eruptions, and so belongs to no mountain range. It is unlike the Japanese Alps: the Alps are a continuous range raised by crustal compression and carved by glaciers, with many peaks and ridges; Mount Fuji is one mountain and one crater.",
+    concept:
+      "Mount Fuji shows that the \"highest mountain\" need not be in a range — a well-placed volcano with enough eruptions can stand higher than the squeezed-up ranges around it. A common misconception is that it is extinct: it has simply not erupted for a long time and is still an active volcano in a quiet interval. Its symmetrical cone is well preserved because its main building phase is relatively young and not yet destroyed by erosion.",
+    history:
+      "Mount Fuji has long been an object of mountain worship, with a shrine at the summit and, historically, large-scale pilgrimage climbs (the \"Fuji-kō\"). It was painted again and again in ukiyo-e prints such as Hokusai's \"Thirty-six Views of Mount Fuji\" and became one of Japan's visual symbols. Today a summer climbing season of about two months draws many climbers, and the foot of the mountain is an important tourism and resort area.",
+  },
+
+  "japanese-alps": {
+    seeing:
+      "The Japanese Alps is the collective name for the Hida, Kiso and Akaishi ranges — three roughly parallel ranges in central Honshu that hold most of Japan's peaks over 3,000 m. The highest, Mount Kita, is 3,193 m, the second-highest mountain in Japan. This is the most rugged, sharp-crested part of Japan, where its glacial landforms are best preserved and where mountaineering is most developed.",
+    formation:
+      "The uplift of the Japanese Alps is quite young — mainly in the past one to two million years, the result of the Pacific and Philippine Sea plates pressing Honshu from the east and south, strongly shortening and raising the crust; it is still rising fast and is seismically active. During the ice ages, valley glaciers formed on the higher ground, carving the summits into cirques and arêtes; today a few very small modern glaciers survive in shaded spots in the Hida range.",
+    observation:
+      "From the air the Japanese Alps are a belt of high mountains cut by deep valleys and lined with continuous ridges, standing well above the surrounding hills and plains. The crest line is around 3,000 m and carries deep snow for the colder half of the year. Cirques (semicircular hollows below the summits) and arêtes can be picked out. Kamikōchi in the Northern Alps is a broad valley enclosed by high peaks, with the Azusa River on its floor.",
+    distinguish:
+      "The Japanese Alps and Mount Fuji are often mentioned together but are entirely different: the Alps are a continuous fold-and-fault range raised by plate compression and carved by glaciers, with dozens of high peaks; Mount Fuji is a single volcanic cone. Versus the European Alps: the name was borrowed by foreigners in the 19th century, and both are rugged with glacial landforms, but the European Alps are far larger with far more modern glaciers.",
+    concept:
+      "The Japanese Alps show that even at a modest latitude, if mountains are high enough, glaciers form in the ice ages and leave glacial landforms. A common misconception is that Japan has no glaciers: the Northern Alps do have a few confirmed modern glaciers, just very small ones. The \"Alps\" name is an analogy and does not imply a geological connection to the European Alps.",
+    history:
+      "This mountain country was thinly peopled and regarded as a realm of the gods. In the late 19th century the Englishman William Gowland and the missionary Walter Weston brought European-style mountaineering here and spread the name \"Japanese Alps\"; Weston is called the \"father of modern mountaineering in Japan\". Today the Chūbu-Sangaku National Park covers most of the area, and the Kamikōchi and Tateyama–Kurobe routes are important mountain-tourism destinations.",
+  },
+
+  "mount-aso": {
+    seeing:
+      "Mount Aso is in central Kyushu — one of the largest calderas in the world. A ring of surrounding mountains (the outer rim) encloses a basin about 25 km north–south and 18 km east–west, home to some 50,000 people, planted with rice, and crossed by a railway. In the middle of the basin is a group of still-active volcanoes (Nakadake and others) that steam constantly and erupt on a small scale from time to time.",
+    formation:
+      "This huge caldera was made by four giant eruptions between about 270,000 and 90,000 years ago: each poured out a great volume of magma, and the ground above the emptied magma chamber collapsed. The largest of the four (about 90,000 years ago) covered all of Kyushu in ash and blew it as far as Honshu and even the Korean Peninsula. After the collapse, a new group of central volcanoes grew inside the caldera, and Nakadake's crater is still active.",
+    observation:
+      "From the air Mount Aso is a complete ring of mountains, enclosing a large flat lowland covered in fields and roads (the caldera floor), with a group of black volcanic cones rising from its centre, one of them steaming white. The outer rim is cut on its outer side by radiating valleys. There is a gap in the west of the rim, through which the Shira River flows out.",
+    distinguish:
+      "Mount Aso, like Yellowstone in the U.S. and Toba in Indonesia, is a caldera formed by collapse after a giant eruption, far larger than an ordinary volcanic crater. It is the opposite of a stratovolcano like Mount Fuji: Fuji is \"built up\", Aso \"collapsed into a pit\". To tell whether a volcano is a caldera, see whether it is a ring-shaped depression much larger than the volcano itself.",
+    concept:
+      "Mount Aso shows the difference between a \"caldera\" and a \"crater\" as directly as anywhere: a crater is the vent of an eruption, usually a few hundred metres across; a caldera is a depression formed when the ground collapses over an emptied magma chamber, and can be tens of kilometres across, with room for people and farms inside. A common misconception is to treat the whole of Mount Aso as one big crater — that is the collapse basin; the actual eruptive vents are on the central volcanoes.",
+    history:
+      "The Aso area has had volcano worship since ancient times, and Aso Shrine is an important local shrine. The flat land of the caldera floor was cleared for farming early, and the grasslands of the outer rim have a thousand-year tradition of grazing, maintained by regular burning. Today Aso is the core of Aso-Kujū National Park and a UNESCO Global Geopark, and Nakadake's crater can be visited up close during quiet periods.",
+  },
+
+  sakurajima: {
+    seeing:
+      "Sakurajima is in Kagoshima Bay at the southern tip of Kyushu, directly across from the city of Kagoshima — one of the most active volcanoes in Japan. It erupts on a small scale nearly year-round, and ash often falls on the city, where clearing and coping with ash is routine. It was once an island; a large eruption in 1914 poured out lava that joined it to the Ōsumi Peninsula to the east, so it is no longer truly an \"island\".",
+    formation:
+      "Sakurajima is a stratovolcano that has grown on the southern rim of the Aira caldera. The Aira caldera itself formed by collapse after a giant eruption about 29,000 years ago, and the northern half of Kagoshima Bay today is that caldera. Magma activity then concentrated on the caldera's southern rim and built Sakurajima. It has two main peaks, Kitadake and Minamidake; the currently active one is Minamidake and its crater.",
+    observation:
+      "From the air Sakurajima is a black volcano reaching into a long narrow bay, with one or two summit craters steaming, and dark tongue-shaped scars of nearly bare rock down its slopes from the 1914 and later lava flows. The 1914 lava completely filled the strait, a few hundred metres wide, between the island and the peninsula, and that stretch is now land. On the far side of the bay is the built-up area of Kagoshima, only a few kilometres away.",
+    distinguish:
+      "Sakurajima resembles Stromboli in Italy — an active volcano that erupts frequently on a small scale, so eruptions can be watched almost on schedule. It differs from Mount Fuji in its state of activity: Fuji has not erupted for over three hundred years, while Sakurajima erupts almost daily. Sitting on the rim of the Aira caldera, it is also like the central volcanoes of Aso — a new volcano growing on or in a large caldera after it collapsed.",
+    concept:
+      "Sakurajima shows that an active volcano and a city can coexist for the long term: a volcano erupting constantly right next to a city of several hundred thousand people is managed with dense monitoring, warnings, and everyday preparation (designated shelters, ash helmets for children). A common misconception is that \"active volcano\" means constant disaster — most of the time it is just steady low-level activity, and what has to be guarded against is the occasional large eruption.",
+    history:
+      "Kagoshima (formerly Satsuma), where Sakurajima sits, was historically the centre of the Satsuma domain. The 1914 eruption (the \"Taishō eruption\") was the largest volcanic eruption in Japan in the 20th century, killing dozens, forcing the whole island to evacuate, and leaving relics such as the \"Kurokami buried torii\", a shrine gate buried in ash to its top. Today Sakurajima is a symbol and main attraction of Kagoshima, and residents live normally with the volcano's routine activity.",
+  },
+
+  "mount-unzen": {
+    seeing:
+      "Mount Unzen is a group of active volcanoes on the Shimabara Peninsula in Kyushu. From 1990 to 1995 it went through a sustained eruption: the vent extruded viscous lava that piled up into a new lava dome, named \"Heisei-shinzan\", now the highest point in Nagasaki Prefecture (1,483 m). The eruption repeatedly produced pyroclastic flows (hot gas carrying debris rushing downslope at high speed); one in 1991 killed 43 people, including several volcanologists and journalists who were observing.",
+    formation:
+      "Mount Unzen sits in a graben (the Shimabara graben) that is being pulled apart and dropping, and magma rises along the graben's faults. Its magma is highly viscous and does not release its gas easily, so it erupts by slowly \"squeezing out\" lava into a dome rather than by violent jetting. When the dome grows too steep and tall, its edges collapse, and the hot fragments and gas mix into a pyroclastic flow that rushes down the valleys.",
+    observation:
+      "From the air Mount Unzen is a group of forested mountains in the middle of the Shimabara Peninsula, the most conspicuous being Heisei-shinzan — a grey, jagged, nearly bare new rock mass still giving off a little steam. From Heisei-shinzan a clear channel runs east (toward Shimabara city and the Ariake Sea), swept by the 1991 pyroclastic flows, filled with pyroclastic debris with vegetation still recovering. The peninsula has many hot springs.",
+    distinguish:
+      "Mount Unzen, like Mont Pelée in the Caribbean and Mount St. Helens in the U.S., is a volcano known for pyroclastic flows — in common, its magma is viscous, tends to build a dome, and dome collapse produces deadly high-speed hot flows. It differs from Sakurajima: Sakurajima has frequent small explosive eruptions (throwing ash and rock), while Unzen has intermittent \"dome-building plus pyroclastic flows\".",
+    concept:
+      "Mount Unzen (especially the 1991 event) is a key case for understanding the danger of \"pyroclastic flows\": this hot flow moves along the ground at high speed and cannot be outrun, one of the deadliest volcanic phenomena, and it often strikes suddenly during a seemingly quiet \"lava-squeezing\" phase. A common misconception is that standing upstream of a lava flow, or to the side, is safe — a pyroclastic flow can suddenly change direction and top topographic obstacles.",
+    history:
+      "Unzen has been known for its hot springs since ancient times, and Unzen Onsen was one of the earlier hot-spring resorts developed in Japan; in 1934 the area became one of Japan's first national parks. In 1792 volcanic activity at Unzen triggered a huge landslide of Mount Mayuyama, whose debris rushed into the Ariake Sea and caused a tsunami, killing about 15,000 people — the deadliest volcanic disaster in Japanese history. After the 1990s eruption a dedicated disaster memorial hall and monitoring system were established.",
+  },
+
+  "hakone-caldera": {
+    seeing:
+      "Hakone is east of Mount Fuji, about 80 km from Tokyo — a multiple-caldera volcano. A ring of outer mountains encloses a central cone and a caldera lake, Lake Ashi. Geothermal activity is still lively, with sulphurous steam venting from the slopes around Ōwakudani. Being close to the capital, and having hot springs, mountains and a lake, Hakone is one of the best-known resort areas in Japan.",
+    formation:
+      "Volcanic activity at Hakone goes back a few hundred thousand years. It has been through several eruptions and collapses, forming two nested calderas, a larger and a smaller. About 3,000 years ago an explosion caused the central Mount Kamiyama to collapse, and the debris dammed the river draining the caldera, ponding up Lake Ashi. Today's geothermal activity and steam venting are residual magmatic heat warming groundwater.",
+    observation:
+      "From the air Hakone is a ring of undulating mountains, enclosing forested hills and a central cone, with the long narrow Lake Ashi on the cone's south-west side. On the north slope of Mount Kamiyama is a grey-white, plant-free slope giving off white steam — Ōwakudani. There is a gap in the west of the caldera rim, from which the Haya River flows out east into Sagami Bay.",
+    distinguish:
+      "Hakone, Mount Fuji to its west, and the Izu Islands to its south-east are all on the same volcanic belt, but Fuji is a single stratovolcano (built up) and Hakone is a caldera volcano (collapse plus a central cone). Versus Aso: both are calderas, but Aso's is far larger, with tens of thousands of people living on its floor; Hakone's is smaller and centred on a lake and hot springs.",
+    concept:
+      "Hakone shows that a caldera need not be empty wasteland — a moderately sized caldera with stable geothermal activity can be heavily developed because of its hot springs, flat land and scenery. A common misconception is to read the steam venting at Ōwakudani as a sign of an imminent eruption: steady geothermal venting is normal for this kind of volcano; Ōwakudani was briefly closed in 2015 when activity increased, but monitoring showed it did not reach eruptive levels.",
+    history:
+      "In the Edo period Hakone was an important checkpoint on the Tōkaidō highway (the Hakone Sekisho), controlling traffic in and out of Edo, with strict inspections. After railways and roads were built in the late 19th century, Hakone used its hot springs and closeness to Tokyo to become a resort favoured by the imperial family and writers. Today it has a classic sightseeing loop of mountain railway, cable car and lake boat, and several art museums.",
+  },
+
+  daisetsuzan: {
+    seeing:
+      "Daisetsuzan is a group of volcanoes in central Hokkaido, including Hokkaido's highest peak, Asahidake (2,291 m). Although not especially high by Japanese standards, the high latitude and cold climate make its environment equivalent to alpine country above 3,000 m further south — the mountains carry large areas of alpine tundra, permafrost and patterned ground, and snowfields and alpine flower meadows survive into July. It is Japan's largest national park.",
+    formation:
+      "Daisetsuzan is a volcanic group built by overlapping Quaternary volcanic activity, with a caldera about 2 km across (Ohachidaira) in the centre, ringed by cones such as Asahidake. There are active fumaroles on the western slope of Asahidake. Glaciers formed here during the ice ages, and with present-day freeze–thaw action, the flat summit plateaus have developed \"patterned ground\" such as stone circles and stone stripes — rare elsewhere in Japan.",
+    observation:
+      "From the air Daisetsuzan is a rounded, open highland in central Hokkaido, with generally gentle summits (a volcanic-plateau trait) and the shallow saucer outline of the central caldera. White fumaroles show on one side of Asahidake. In the warmer half of the year the summits are patchy tundra and snow, the mid-slopes dense conifer forest that turns colour earliest in autumn. In winter this is one of the mountain areas in Japan with the earliest and longest snow.",
+    distinguish:
+      "Daisetsuzan and the Japanese Alps are both high mountains of Japan, but the Alps are a fold-and-fault range raised by plate compression, dominated by rock peaks and steep valleys; Daisetsuzan is a volcanic group with gentle summits, dominated by volcanic plateau and alpine tundra. Its alpine environment is closer to the mountains of Siberia or northern Europe than to the mountains of central Honshu.",
+    concept:
+      "Daisetsuzan shows that an \"alpine environment\" is set not only by elevation but also by latitude: in Hokkaido, a height of just over 2,000 m produces the permafrost, patterned ground and tundra that on Honshu require over 3,000 m. A common misconception is that tundra and permafrost occur only in the polar regions and the Himalaya — given enough cold, mid-latitude mountains of modest height have them too.",
+    history:
+      "The Daisetsuzan area is the traditional land of the Ainu, who call it \"Kamuy Mintar\", the \"playground of the gods\". This mountain country was long little visited, and became a national park in 1934. Today a cable car runs partway up Asahidake, and it is an important destination for alpine ecotourism and skiing in Japan; the core area remains fairly pristine, and winter travel carries avalanche and cold risk.",
+  },
+
+  "kii-mountains": {
+    seeing:
+      "The Kii Mountains occupy the interior of the Kii Peninsula, the large peninsula at the southern end of Honshu — a steep, rainy, densely forested range of middle height, its highest point Hakkyōgatake at 1,915 m. Facing the Pacific, it is one of the wettest parts of Honshu, with local annual rainfall over 4,000 mm. It has long been regarded as a sacred place of religious training, and the Kumano Sanzan, Kōyasan and Yoshino shrines and temples, and the \"Kumano Kodō\" pilgrimage routes linking them, are inscribed as a World Heritage cultural landscape.",
+    formation:
+      "The rock of the Kii Mountains is mostly uplifted marine sediment plus some granitic rock. It lies south of a major fault (the Median Tectonic Line), in the \"outer zone\" accretionary wedge — built where a subducting oceanic plate scraped seafloor sediment off, layer by layer, onto the continental margin. After uplift, the heavy rainfall let rivers cut hard down, slicing the range into dense deep V-shaped valleys, and vegetation covers almost every slope.",
+    observation:
+      "From the air the Kii Mountains are a continuous, rolling range covered almost entirely in dark-green forest, with no bare rock peaks — ridge and valley alike are hidden under the canopy. Countless rivers run radially out of the mountains to the coasts all around, cutting deep gorges, the water clear. The heavy rain keeps cloud and mist wrapped around the slopes. The southern coast of the peninsula is a cliff coast.",
+    distinguish:
+      "The Kii Mountains and the Japanese Alps are both mountains of Honshu, but the Alps are high, with rock peaks and glacial landforms, in the core of plate compression; the Kii Mountains are lower, without bare rock or glaciers, the result of the outer accretionary wedge being uplifted and eroded, characterised by extreme rainfall and dense forest. Compared with Yakushima: both are extremely rainy and densely forested, but Yakushima is a granite-dome island.",
+    concept:
+      "The Kii Mountains are a display of the \"accretionary wedge\" idea: a subducting oceanic plate acts like a scraper, shaving seafloor sediment off and stacking it onto the continental margin, and many mountains on Japan's Pacific side formed this way. A common misconception is to class all mountains as \"squeezed up by continental collision\" — an accretionary wedge is \"scraped\" off during subduction (one plate sliding under another), a different mechanism.",
+    history:
+      "The Kii Mountains have been a centre of mountain worship and of Shugendō (a fusion of Buddhist and Shinto training) since the Nara period. Kōyasan is the head temple of the Shingon school, founded by Kūkai in the 9th century; the Kumano Sanzan were pilgrimage destinations for emperors and commoners alike; and the \"Kumano Kodō\" routes linking the sacred sites have been walked by countless pilgrims over a thousand years. In 2004 this whole set of \"Sacred Sites and Pilgrimage Routes in the Kii Mountain Range\" was inscribed as a World Heritage cultural site.",
+  },
 };

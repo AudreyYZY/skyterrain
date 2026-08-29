@@ -2666,6 +2666,143 @@ const NAHANNI: TerrainEntry = {
 };
 
 // ============================================================
+// 亚洲 — 日本（regionId: "asia", country: "japan"）
+// 坐标 / 高程据 日本国土地理院（GSI）、气象厅（JMA）、环境省国立公园、UNESCO
+// ============================================================
+
+const MOUNT_FUJI: TerrainEntry = {
+  id: "mount-fuji",
+  nameZh: "富士山",
+  nameEn: "Mount Fuji",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "富士山顶（剑峰）", lon: 138.7274, lat: 35.3606, elevation: 3776, kind: "peak" },
+  bbox: [138.55, 35.20, 138.90, 35.50],
+  axis: [[138.60, 35.30], [138.85, 35.42]],
+  viewFrom: 135,
+  label: { lon: 138.73, lat: 35.36, rotation: 0 },
+  source: "富士山：日本最高峰，海拔3776m，是一座近乎完美圆锥形的活火山（日本国土地理院 / 气象厅）；2013年作为文化景观列入世界遗产",
+};
+
+const JAPANESE_ALPS: TerrainEntry = {
+  id: "japanese-alps",
+  nameZh: "日本阿尔卑斯山脉",
+  nameEn: "Japanese Alps",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "北岳", lon: 138.2394, lat: 35.6745, elevation: 3193, kind: "peak" },
+  bbox: [137.2, 35.2, 138.6, 37.0],
+  axis: [[138.0, 35.4], [137.6, 36.8]],
+  viewFrom: 90,
+  label: { lon: 137.7, lat: 36.1, rotation: -75 },
+  pois: [
+    { name: "北岳", lon: 138.2394, lat: 35.6745, note: "南阿尔卑斯（赤石山脉）最高峰，也是日本第二高峰，3193m" },
+    { name: "穗高岳", lon: 137.648, lat: 36.289, note: "北阿尔卑斯（飞驒山脉）标志性岩峰" },
+  ],
+  source: "日本阿尔卑斯：本州中部的飞驒、木曾、赤石三条平行山脉的总称，含日本多数3000m级山峰；有小规模的现代冰川和典型的冰川地貌（日本国土地理院）",
+};
+
+const MOUNT_ASO: TerrainEntry = {
+  id: "mount-aso",
+  nameZh: "阿苏山",
+  nameEn: "Mount Aso",
+  category: "basin",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "中岳火口", lon: 131.104, lat: 32.884, elevation: 1506, kind: "escarpment" },
+  bbox: [130.85, 32.75, 131.30, 33.05],
+  axis: [[130.95, 32.80], [131.20, 33.00]],
+  viewFrom: 200,
+  label: { lon: 131.10, lat: 32.88, rotation: 0 },
+  pois: [
+    { name: "中岳", lon: 131.104, lat: 32.884, note: "阿苏火山群里持续活动的火口" },
+    { name: "外轮山与破火山口平原", lon: 131.05, lat: 32.95, note: "南北约25km的巨型破火山口，里面住着人、种着田" },
+  ],
+  source: "阿苏山：世界上规模最大的破火山口之一，南北约25km；约27万到9万年前四次巨型喷发塌陷形成，火口原内有城镇和农田，中央火山群仍在活动（气象厅 / 环境省）",
+};
+
+const SAKURAJIMA: TerrainEntry = {
+  id: "sakurajima",
+  nameZh: "樱岛",
+  nameEn: "Sakurajima",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "南岳山顶", lon: 130.657, lat: 31.593, elevation: 1117, kind: "peak" },
+  bbox: [130.58, 31.53, 130.74, 31.66],
+  axis: [[130.60, 31.56], [130.72, 31.62]],
+  viewScale: 1.4,
+  label: { lon: 130.66, lat: 31.59, rotation: 0 },
+  source: "樱岛：鹿儿岛湾内的一座活火山，是日本最活跃的火山之一，常有小规模爆发式喷发；1914年的大喷发把它和大隅半岛连在了一起（气象厅）",
+};
+
+const MOUNT_UNZEN: TerrainEntry = {
+  id: "mount-unzen",
+  nameZh: "云仙岳",
+  nameEn: "Mount Unzen",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "平成新山", lon: 130.299, lat: 32.761, elevation: 1483, kind: "peak" },
+  bbox: [130.20, 32.70, 130.40, 32.82],
+  axis: [[130.24, 32.72], [130.36, 32.80]],
+  viewScale: 1.3,
+  label: { lon: 130.30, lat: 32.76, rotation: 0 },
+  source: "云仙岳：岛原半岛上的活火山群；1990—1995年的喷发形成了熔岩穹丘“平成新山”，并多次发生火山碎屑流，是研究火山碎屑流的重要地点（气象厅）",
+};
+
+const HAKONE_CALDERA: TerrainEntry = {
+  id: "hakone-caldera",
+  nameZh: "箱根",
+  nameEn: "Hakone",
+  category: "basin",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "芦之湖", lon: 139.017, lat: 35.205, elevation: 723, kind: "escarpment" },
+  bbox: [138.92, 35.15, 139.12, 35.30],
+  axis: [[138.97, 35.18], [139.07, 35.27]],
+  viewScale: 1.3,
+  label: { lon: 139.02, lat: 35.22, rotation: 0 },
+  pois: [
+    { name: "芦之湖", lon: 139.017, lat: 35.205, note: "破火山口内积水成的湖" },
+    { name: "大涌谷", lon: 139.021, lat: 35.245, note: "冒着硫磺蒸汽的活跃喷气地" },
+  ],
+  source: "箱根：一座多重破火山口火山，外轮山围着芦之湖和中央火山锥；地热活动仍然活跃（大涌谷），距东京很近（气象厅 / 箱根地质公园）",
+};
+
+const DAISETSUZAN: TerrainEntry = {
+  id: "daisetsuzan",
+  nameZh: "大雪山",
+  nameEn: "Daisetsuzan",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "旭岳", lon: 142.854, lat: 43.663, elevation: 2291, kind: "peak" },
+  bbox: [142.55, 43.40, 143.20, 43.85],
+  axis: [[142.70, 43.45], [143.05, 43.80]],
+  viewFrom: 200,
+  label: { lon: 142.90, lat: 43.63, rotation: 0 },
+  source: "大雪山：北海道中部的火山群，含北海道最高峰旭岳（2291m）；纬度高加上海拔，山上有大面积的高山苔原和永久冻土（环境省 / 大雪山国立公园）",
+};
+
+const KII_MOUNTAINS: TerrainEntry = {
+  id: "kii-mountains",
+  nameZh: "纪伊山地",
+  nameEn: "Kii Mountains",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "八经岳（大峰山）", lon: 135.905, lat: 34.176, elevation: 1915, kind: "peak" },
+  bbox: [135.4, 33.7, 136.4, 34.4],
+  axis: [[135.5, 33.8], [136.2, 34.3]],
+  viewFrom: 200,
+  label: { lon: 135.9, lat: 34.05, rotation: 0 },
+  source: "纪伊山地：纪伊半岛内部一片陡峭、多雨、森林茂密的山地，是本州岛降水最多的地区之一；熊野古道等宗教朝圣路线作为文化景观列入世界遗产（环境省 / UNESCO）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -2733,6 +2870,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   BAFFIN_ISLAND, ELLESMERE_ISLAND, VANCOUVER_ISLAND, PRINCE_EDWARD_ISLAND,
   BAY_OF_FUNDY, GASPE_PENINSULA, NIAGARA_ESCARPMENT, ALBERTA_BADLANDS,
   MANICOUAGAN_RESERVOIR, ATHABASCA_SAND_DUNES, LAKE_WINNIPEG, NAHANNI,
+  // ===== 亚洲 / 日本 =====
+  MOUNT_FUJI, JAPANESE_ALPS, MOUNT_ASO, SAKURAJIMA, MOUNT_UNZEN,
+  HAKONE_CALDERA, DAISETSUZAN, KII_MOUNTAINS,
 ];
 
 /**
@@ -2815,6 +2955,11 @@ const WIDE_VIEW: Record<string, number> = {
   "niagara-escarpment": 2.2,
   "lake-winnipeg": 2.3,
   "nahanni": 1.7,
+  // 亚洲 / 日本
+  "japanese-alps": 2.0,
+  "mount-aso": 1.6,
+  daisetsuzan: 1.8,
+  "kii-mountains": 1.8,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
