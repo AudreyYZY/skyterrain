@@ -2927,6 +2927,160 @@ const SHIKOTSU_TOYA: TerrainEntry = {
   source: "支笏洞爷：北海道西南部一片以两个破火山口湖（支笏湖、洞爷湖）和多座活火山（有珠山、樽前山等）为核心的地区；洞爷湖有珠山是联合国教科文组织世界地质公园（环境省）",
 };
 
+const KUROBE_GORGE: TerrainEntry = {
+  id: "kurobe-gorge",
+  nameZh: "黑部峡谷",
+  nameEn: "Kurobe Gorge",
+  category: "gorge",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "黑部峡谷（宇奈月一带）", lon: 137.66, lat: 36.57, elevation: 600, kind: "gorge" },
+  bbox: [137.55, 36.45, 137.75, 36.68],
+  axis: [[137.68, 36.48], [137.60, 36.66]],
+  viewScale: 1.3,
+  label: { lon: 137.66, lat: 36.57, rotation: -30 },
+  source: "黑部峡谷：黑部川在北阿尔卑斯（飞驒山脉）里切出的V形深峡谷，是日本落差和深度最大的峡谷之一；上游有黑部水坝（日本最高的拱坝）（环境省 / 中部山岳国立公园）",
+};
+
+const KAMIKOCHI: TerrainEntry = {
+  id: "kamikochi",
+  nameZh: "上高地",
+  nameEn: "Kamikōchi",
+  category: "valley",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "河童桥（梓川谷）", lon: 137.634, lat: 36.251, elevation: 1500, kind: "gorge" },
+  bbox: [137.55, 36.20, 137.75, 36.35],
+  axis: [[137.60, 36.22], [137.70, 36.33]],
+  viewScale: 1.3,
+  label: { lon: 137.63, lat: 36.25, rotation: -25 },
+  pois: [
+    { name: "大正池", lon: 137.626, lat: 36.234, note: "1915年烧岳喷发的泥石流堵住梓川形成的湖" },
+    { name: "穗高连峰", lon: 137.648, lat: 36.289, note: "谷东侧的3000m级岩峰群" },
+  ],
+  source: "上高地：北阿尔卑斯里梓川上游一段海拔约1500m的宽谷，被穗高、烧岳等高山围住；谷底平坦，是冰川和河流共同作用的结果（环境省 / 中部山岳国立公园）",
+};
+
+const SETO_INLAND_SEA: TerrainEntry = {
+  id: "seto-inland-sea",
+  nameZh: "濑户内海",
+  nameEn: "Seto Inland Sea",
+  category: "coast",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "备赞濑户（濑户大桥一带）", lon: 133.80, lat: 34.35, elevation: 0, kind: "island" },
+  bbox: [130.9, 33.0, 135.4, 34.8],
+  axis: [[131.5, 33.6], [135.0, 34.5]],
+  viewScale: 2.2,
+  label: { lon: 133.2, lat: 34.2, rotation: -12 },
+  source: "濑户内海：本州、四国、九州之间的一片半封闭内海，散布着约700座岛屿；是被海水淹没的山地-谷地地形，1934年成为日本最早的国立公园之一（环境省）",
+};
+
+const SANRIKU_COAST: TerrainEntry = {
+  id: "sanriku-coast",
+  nameZh: "三陆海岸",
+  nameEn: "Sanriku Coast",
+  category: "coast",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "北山崎断崖", lon: 141.95, lat: 40.02, elevation: 0, kind: "escarpment" },
+  bbox: [141.4, 37.8, 142.2, 40.5],
+  axis: [[141.9, 38.0], [141.9, 40.4]],
+  viewFrom: 90,
+  label: { lon: 141.7, lat: 39.2, rotation: -80 },
+  source: "三陆海岸：本州东北部太平洋岸约600km的岸段，北段是抬升的海岸阶地和断崖，南段是溺谷式的锯齿状里亚海岸；2011年东日本大地震海啸在这里最为严重（环境省 / 三陆复兴国立公园）",
+};
+
+const SHIRETOKO_PENINSULA: TerrainEntry = {
+  id: "shiretoko-peninsula",
+  nameZh: "知床半岛",
+  nameEn: "Shiretoko Peninsula",
+  category: "coast",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "知床岳一带", lon: 145.30, lat: 44.20, elevation: 1254, kind: "escarpment" },
+  bbox: [144.9, 43.85, 145.55, 44.42],
+  axis: [[145.05, 43.95], [145.40, 44.35]],
+  viewScale: 1.5,
+  label: { lon: 145.2, lat: 44.15, rotation: -35 },
+  source: "知床半岛：北海道东北端伸进鄂霍次克海的火山半岛，冬季有全球北半球最南的季节性海冰（流冰）上岸；因海陆生态系统的完整性2005年列入世界自然遗产（环境省 / UNESCO）",
+};
+
+const TOTTORI_SAND_DUNES: TerrainEntry = {
+  id: "tottori-sand-dunes",
+  nameZh: "鸟取沙丘",
+  nameEn: "Tottori Sand Dunes",
+  category: "desert",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "鸟取沙丘", lon: 134.232, lat: 35.539, elevation: 30, kind: "dune" },
+  bbox: [134.18, 35.51, 134.30, 35.56],
+  axis: [[134.19, 35.53], [134.29, 35.54]],
+  viewScale: 1.6,
+  label: { lon: 134.23, lat: 35.54, rotation: 0 },
+  source: "鸟取沙丘：日本最大的沙丘群，东西约16km、局部高差约47m；千代川带来的泥沙入海后，被日本海的风重新吹上岸堆积而成（鸟取县 / 山阴海岸地质公园）",
+};
+
+const YAKUSHIMA: TerrainEntry = {
+  id: "yakushima",
+  nameZh: "屋久岛",
+  nameEn: "Yakushima",
+  category: "island",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "宫之浦岳", lon: 130.505, lat: 30.343, elevation: 1936, kind: "peak" },
+  bbox: [130.35, 30.20, 130.68, 30.48],
+  axis: [[130.40, 30.25], [130.62, 30.43]],
+  viewScale: 1.4,
+  label: { lon: 130.50, lat: 30.34, rotation: 0 },
+  source: "屋久岛：九州南方海上一座近乎圆形的花岗岩岛，中央是九州以南最高峰宫之浦岳（1936m）；极端多雨、垂直自然带完整、有树龄数千年的柳杉，1993年列入世界自然遗产（环境省 / UNESCO）",
+};
+
+const RYUKYU_ISLANDS: TerrainEntry = {
+  id: "ryukyu-islands",
+  nameZh: "琉球群岛",
+  nameEn: "Ryukyu Islands",
+  category: "island",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "冲绳岛", lon: 127.80, lat: 26.35, elevation: 30, kind: "island" },
+  bbox: [122.9, 24.0, 131.0, 28.5],
+  axis: [[130.5, 28.2], [123.5, 24.3]],
+  viewScale: 2.4,
+  label: { lon: 127.5, lat: 26.5, rotation: -35 },
+  source: "琉球群岛（南西诸岛）：从九州向西南延伸约1000km的岛弧，多珊瑚礁和隆起的琉球石灰岩（喀斯特、钟乳洞）；奄美、冲绳等岛因亚热带照叶林生态2021年列入世界自然遗产（环境省 / UNESCO）",
+};
+
+const SHINANO_RIVER: TerrainEntry = {
+  id: "shinano-river",
+  nameZh: "信浓川",
+  nameEn: "Shinano River",
+  category: "river",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "越后平原（新潟一带）", lon: 139.02, lat: 37.85, elevation: 5, kind: "meander" },
+  bbox: [138.0, 35.9, 139.3, 38.0],
+  axis: [[138.4, 36.0], [139.05, 37.9]],
+  viewScale: 1.8,
+  label: { lon: 138.7, lat: 37.0, rotation: -70 },
+  source: "信浓川：日本最长的河（约367km），发源于关东山地，穿过长野盆地，在新潟的越后平原注入日本海；下游靠“大河津分水”等分洪工程防洪（日本国土地理院）",
+};
+
+const TONE_RIVER: TerrainEntry = {
+  id: "tone-river",
+  nameZh: "利根川",
+  nameEn: "Tone River",
+  category: "river",
+  regionId: "asia",
+  country: "japan",
+  landmark: { name: "利根川下游（铫子一带）", lon: 140.83, lat: 35.73, elevation: 3, kind: "meander" },
+  bbox: [138.7, 35.6, 141.0, 37.1],
+  axis: [[139.0, 36.8], [140.8, 35.75]],
+  viewScale: 1.9,
+  label: { lon: 139.9, lat: 36.2, rotation: -35 },
+  source: "利根川：流域面积日本最大的河（约16800km²），横贯关东平原；江户时代经过约60年的“利根川东迁”工程，把原本注入东京湾的河道改向东、从铫子入太平洋（日本国土地理院）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -3000,6 +3154,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   HAKONE_CALDERA, DAISETSUZAN, KII_MOUNTAINS,
   KANTO_PLAIN, NOBI_PLAIN, OSAKA_PLAIN, ISHIKARI_PLAIN, TOKACHI_PLAIN,
   LAKE_BIWA, LAKE_TOWADA, SHIKOTSU_TOYA,
+  KUROBE_GORGE, KAMIKOCHI, SETO_INLAND_SEA, SANRIKU_COAST, SHIRETOKO_PENINSULA,
+  TOTTORI_SAND_DUNES, YAKUSHIMA, RYUKYU_ISLANDS, SHINANO_RIVER, TONE_RIVER,
 ];
 
 /**
@@ -3090,6 +3246,13 @@ const WIDE_VIEW: Record<string, number> = {
   "kanto-plain": 1.9,
   "ishikari-plain": 1.8,
   "tokachi-plain": 1.8,
+  "seto-inland-sea": 2.4,
+  "sanriku-coast": 2.2,
+  "shiretoko-peninsula": 1.6,
+  yakushima: 1.4,
+  "ryukyu-islands": 2.6,
+  "shinano-river": 2.0,
+  "tone-river": 2.1,
   // 中等
   pamir: 1.5,
   "turpan-basin": 1.5,
