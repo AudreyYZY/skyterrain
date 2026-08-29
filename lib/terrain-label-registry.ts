@@ -151,6 +151,21 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "lake-eyre": "regional",
   "kata-tjuta": "regional",
   "twelve-apostles": "regional",
+
+  // 新西兰
+  "aoraki-southern-alps": "national",
+  "mount-ruapehu": "national",
+  "mount-taranaki": "national",
+  fiordland: "national",
+  "lake-taupo": "national",
+  "canterbury-plains": "national",
+  "waikato-river": "national",
+  "clutha-river": "national",
+  "bay-of-islands": "national",
+  "marlborough-sounds": "national",
+  "stewart-island": "national",
+  "auckland-volcanic-field": "national",
+  "whakaari-white-island": "regional",
 };
 
 function importanceOf(id: string, category: TerrainCategory): Importance {
