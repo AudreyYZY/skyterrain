@@ -1,0 +1,25 @@
+{
+  "id": "mel-syd",
+  "name": "墨尔本 — 悉尼",
+  "nameEn": "Melbourne — Sydney",
+  "description": "澳大利亚阿尔卑斯山脉 · 大分水岭 · 蓝山",
+  "descriptionEn": "Australian Alps · Great Dividing Range · Blue Mountains",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "澳洲航空",
+    "airlineEn": "Qantas",
+    "flightNo": "QF400",
+    "aircraft": "Boeing 737-800",
+    "depIata": "MEL",
+    "arrIata": "SYD",
+    "durationMin": 95
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
+    { "kind": "terrain", "terrainId": "australian-alps" },
+    { "kind": "terrain", "terrainId": "blue-mountains" },
+    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true }
+  ]
+}

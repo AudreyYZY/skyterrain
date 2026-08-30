@@ -1,0 +1,26 @@
+{
+  "id": "mel-per",
+  "name": "墨尔本 — 珀斯",
+  "nameEn": "Melbourne — Perth",
+  "description": "格兰坪山 · 纳拉伯平原 · 大维多利亚沙漠",
+  "descriptionEn": "Grampians (Gariwerd) · Nullarbor Plain · Great Victoria Desert",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "维珍澳洲航空",
+    "airlineEn": "Virgin Australia",
+    "flightNo": "VA697",
+    "aircraft": "Boeing 737-800",
+    "depIata": "MEL",
+    "arrIata": "PER",
+    "durationMin": 240
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
+    { "kind": "terrain", "terrainId": "grampians" },
+    { "kind": "terrain", "terrainId": "nullarbor-plain" },
+    { "kind": "terrain", "terrainId": "great-victoria-desert" },
+    { "kind": "city", "id": "per", "name": "珀斯", "nameEn": "Perth", "lat": -31.940, "lon": 115.967, "airport": true }
+  ]
+}

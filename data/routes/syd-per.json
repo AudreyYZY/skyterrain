@@ -1,0 +1,27 @@
+{
+  "id": "syd-per",
+  "name": "悉尼 — 珀斯",
+  "nameEn": "Sydney — Perth",
+  "description": "蓝山 · 墨累-达令河 · 大维多利亚沙漠 · 纳拉伯平原",
+  "descriptionEn": "Blue Mountains · Murray–Darling · Great Victoria Desert · Nullarbor Plain",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "澳洲航空",
+    "airlineEn": "Qantas",
+    "flightNo": "QF575",
+    "aircraft": "Airbus A330-200",
+    "depIata": "SYD",
+    "arrIata": "PER",
+    "durationMin": 300
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true },
+    { "kind": "terrain", "terrainId": "blue-mountains" },
+    { "kind": "terrain", "terrainId": "murray-darling" },
+    { "kind": "terrain", "terrainId": "great-victoria-desert" },
+    { "kind": "terrain", "terrainId": "nullarbor-plain" },
+    { "kind": "city", "id": "per", "name": "珀斯", "nameEn": "Perth", "lat": -31.940, "lon": 115.967, "airport": true }
+  ]
+}

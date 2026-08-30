@@ -805,6 +805,192 @@ export const ROUTE_NARRATION: Record<
       "Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs. Kansai is busiest during the cherry blossom (early April) and autumn leaves (November) — visit the popular Kyoto temples early.",
     },
   },
+
+  "syd-per": {
+    study: {
+    "zh-CN":
+      "悉尼飞珀斯，是横穿整个澳大利亚大陆，从东海岸飞到西海岸，是世界上最长的国内航线之一。起飞后不久，西边出现一道被深谷切开的砂岩台地，那是蓝山——大分水岭的一段，尤加利树林在阳光下泛出蓝色的雾气。" +
+      "翻过大分水岭，地面转为开阔平缓的内陆平原。飞机会飞越墨累-达令河的水系——澳大利亚最大的河流系统，在干旱的平原上蜿蜒，河边是一串灌溉农田和小镇。" +
+      "再往西，绿色渐渐消失，进入大维多利亚沙漠：红褐色的沙垄和大片低矮灌丛，几乎没有道路和居民点。接着地面变得异常平坦，这就是纳拉伯平原——一整块石灰岩台地，几乎不长树，南缘是笔直的悬崖直插南大洋，横贯大陆的铁路和公路在这里走一条几百公里的直线。" +
+      "越过纳拉伯，重新出现农田和小麦带，飞机在印度洋边的珀斯降落。珀斯是世界上最孤立的大城市之一，离最近的大城市有几千公里。",
+    "en-US":
+      "Sydney to Perth crosses the whole Australian continent, east coast to west, and is one of the longest domestic flights in the world. Soon after take-off, a sandstone plateau cut by deep valleys appears to the west: the Blue Mountains, part of the Great Dividing Range, where the eucalypt forest gives off a blue haze in the sun." +
+      "Over the range, the land opens out into flat inland plains. The route crosses the Murray–Darling system — the largest river system in Australia — winding across the dry plains, with a string of irrigated farms and small towns along the water." +
+      "Farther west the green fades into the Great Victoria Desert: red-brown sand ridges and low scrub, with almost no roads or settlements. Then the ground becomes remarkably flat — the Nullarbor Plain, a single slab of limestone that grows almost no trees, its southern edge a straight line of cliffs dropping into the Southern Ocean, where the trans-continental railway and highway run dead straight for hundreds of kilometres." +
+      "Past the Nullarbor, farmland and the wheatbelt return, and the plane lands at Perth on the Indian Ocean — one of the most isolated large cities in the world, thousands of kilometres from the next.",
+    },
+    travel: {
+    "zh-CN":
+      "悉尼到珀斯飞约五小时，加上2–3小时时差（珀斯比悉尼晚），实际是大半天。澳大利亚是南半球国家，季节与北半球相反——12月至2月是夏天。" +
+      "珀斯是西澳的首府，气候是地中海式：夏季干热、冬季温和多雨。城市沿天鹅河展开，国王公园、弗里曼特尔的港口老城、往北的尖峰石阵、往南玛格丽特河的酒庄和海岸是主要去处。" +
+      "跨州基本靠飞机，城市之间距离极大。全澳紫外线都很强，防晒是常识。入境对食品、木制品、动植物制品检查极严，务必如实申报；多数国家公民需提前在线申请电子旅行许可（ETA），落地不能补办。",
+    "en-US":
+      "Sydney to Perth is about five hours, plus a 2–3 hour time difference (Perth is behind), so it takes most of a day. Australia is in the southern hemisphere, so the seasons are reversed — December to February is summer." +
+      "Perth is the capital of Western Australia, with a Mediterranean climate: dry, hot summers and mild, wet winters. The city runs along the Swan River; Kings Park, the port old town of Fremantle, the Pinnacles to the north, and the wineries and coast of Margaret River to the south are the main draws." +
+      "Travel between states is essentially by air, and the distances are huge. UV is strong everywhere in Australia — sun protection is basic sense. Border checks on food, wood and plant and animal products are strict, so declare honestly; citizens of most countries need to apply online for an ETA before departure, which cannot be arranged on arrival.",
+    },
+  },
+
+  "syd-cns": {
+    study: {
+    "zh-CN":
+      "悉尼飞凯恩斯，是沿着澳大利亚东海岸往北，从温带飞到热带。起飞后一直有一道山脉在飞机左侧相伴，那是大分水岭——澳大利亚最长的山系，从东南一直延伸到约克角半岛，把湿润的沿海和干旱的内陆分开，也是众多河流的分水岭。" +
+      "沿途海岸线外有一座巨大的沙岛，那是弗雷泽岛（K'gari）——世界上最大的沙岛，整座岛由沙构成，上面却长着雨林、有淡水湖，是原住民布奇拉·布奇拉人的传统土地。" +
+      "越往北，海水越蓝，珊瑚礁越密。快到凯恩斯时，右侧海面上出现深浅斑驳的一大片浅蓝，那是大堡礁——世界上最大的珊瑚礁系统，由几千个独立的礁体和岛屿组成，沿昆士兰海岸延伸两千多公里，从飞机上能清楚看到礁盘、潟湖和深水航道的分界。凯恩斯就是进入大堡礁的主要门户。",
+    "en-US":
+      "Sydney to Cairns runs north up the east coast of Australia, from the temperate zone into the tropics. Soon after take-off a range of mountains keeps pace on the left: the Great Dividing Range, the longest mountain system in Australia, running from the south-east all the way to Cape York, separating the humid coast from the dry interior and forming the divide for many rivers." +
+      "Off the coast along the way is a huge sand island: K'gari (Fraser Island), the largest sand island in the world — the whole island is made of sand, yet it carries rainforest and freshwater lakes, and it is the traditional Country of the Butchulla people." +
+      "The farther north, the bluer the sea and the denser the reefs. Near Cairns, a mottled expanse of pale blue appears on the sea to the right: the Great Barrier Reef, the largest coral reef system in the world, made up of thousands of separate reefs and islands, running more than 2,000 km along the Queensland coast; from the plane you can clearly see the line between reef flats, lagoons and the deep-water channels. Cairns is the main gateway to the reef.",
+    },
+    travel: {
+    "zh-CN":
+      "悉尼到凯恩斯飞约三小时。凯恩斯在热带，全年炎热潮湿、分旱季雨季：5–10月旱季天气最稳定、也是旺季；11–4月湿季闷热多雨，还有热带气旋和刺水母（海黄蜂），海滩游泳要看季节和防护网。" +
+      "凯恩斯是进入大堡礁和昆士兰热带雨林的门户：坐船或飞机上礁看珊瑚，往北去道格拉斯港和戴恩树雨林，往西上高原（库兰达、阿瑟顿）。城市本身不大，海滨有一个人工泻湖泳池。" +
+      "上礁浮潜、潜水选有资质的经营者，检查装备和保险。全年强防晒，雨林里注意防蚊、别碰不认识的植物（有会蜇人的刺树）。",
+    "en-US":
+      "Sydney to Cairns is about three hours. Cairns is in the tropics, hot and humid all year with a dry and a wet season: the dry season (May–October) has the most settled weather and is high season; the wet (November–April) is muggy and rainy, with tropical cyclones and marine stingers (box jellyfish), so beach swimming depends on the season and the stinger nets." +
+      "Cairns is the gateway to the Great Barrier Reef and the Queensland tropical rainforest: out to the reef by boat or plane for the coral, north to Port Douglas and the Daintree, west up to the Tablelands (Kuranda, Atherton). The city itself is small, with an artificial lagoon pool on the esplanade." +
+      "For snorkelling and diving on the reef, choose licensed operators and check equipment and insurance. Use strong sun protection year-round, and in the rainforest guard against mosquitoes and do not touch unfamiliar plants (there is a stinging tree).",
+    },
+  },
+
+  "mel-syd": {
+    study: {
+    "zh-CN":
+      "墨尔本飞悉尼，是澳大利亚最繁忙的航线，也是世界上客运量最大的航线之一。虽然只有一个多小时，却飞越了澳大利亚东南部最高的山地。" +
+      "起飞后向东北，很快看到一片带雪的高地，那是澳大利亚阿尔卑斯山脉——大分水岭的最高一段，主峰科修斯科山是澳大利亚大陆的最高点。这里冬季积雪，是澳大利亚少有的滑雪区；雪水汇成墨累河等大河，从这里流向内陆。" +
+      "沿着大分水岭的走向继续往北，山势不高但连续，把东边狭窄的沿海平原和西边的内陆分开。接近悉尼时，右前方出现被深谷切开的砂岩台地，那是蓝山，尤加利林在阳光下泛蓝。飞机越过蓝山，沿海岸下降到悉尼——这座城市建在一个巨大的天然深水港周围。",
+    "en-US":
+      "Melbourne to Sydney is the busiest route in Australia and one of the busiest in the world by passenger numbers. It takes only a little over an hour, but it flies over the highest mountains in south-eastern Australia." +
+      "Heading north-east after take-off, a snow-streaked upland soon appears: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland. Snow lies here in winter, in one of the few skiing areas in Australia; the meltwater feeds the Murray and other big rivers that flow inland from here." +
+      "Following the line of the Great Dividing Range north, the mountains are not high but continuous, separating the narrow coastal plain in the east from the interior in the west. Approaching Sydney, a sandstone plateau cut by deep valleys shows ahead to the right: the Blue Mountains, the eucalypt forest hazed blue in the sun. The plane crosses them and descends along the coast to Sydney, a city built around a huge natural deep-water harbour.",
+    },
+    travel: {
+    "zh-CN":
+      "墨尔本到悉尼飞约一个半小时，两地在同一时区。两座城市气质不同：墨尔本文艺、以咖啡和小巷闻名，天气“一天有四季”、变化快；悉尼外向、以港湾和海滩为中心。" +
+      "悉尼的看点集中在港湾：歌剧院、海港大桥、坐渡轮去曼利或塔龙加动物园；邦迪到库吉的海崖步道；往西约90分钟到蓝山。海滩游泳只在插着红黄旗的区域、听从救生员，注意离岸流。" +
+      "南半球季节相反，12–2月是盛夏、海滩旺季，价格最高；春秋（9–11月、3–5月）气候最舒服。入境海关对食品和动植物制品查得严，如实申报。",
+    "en-US":
+      "Melbourne to Sydney is about an hour and a half, and the two cities are in the same time zone. They have different characters: Melbourne is arty, known for coffee and laneways, with \"four seasons in one day\" and fast-changing weather; Sydney is outgoing and centred on its harbour and beaches." +
+      "Sydney's sights cluster around the harbour: the Opera House, the Harbour Bridge, ferries to Manly or Taronga Zoo; the Bondi-to-Coogee clifftop walk; and about 90 minutes west, the Blue Mountains. Swim only between the red and yellow flags, follow the lifeguards, and watch for rip currents." +
+      "In the southern hemisphere the seasons are reversed — December to February is high summer and beach high season, the most expensive; spring and autumn (September–November, March–May) have the most comfortable weather. Customs checks on food and plant and animal products are strict — declare honestly.",
+    },
+  },
+
+  "mel-per": {
+    study: {
+    "zh-CN":
+      "墨尔本飞珀斯，是从澳大利亚东南角飞到西南角，跨越大陆南部的干旱地带。起飞后向西，很快看到一列孤立的砂岩山脊从平原上凸起，那是格兰坪山（Gariwerd）——大分水岭西端的一段，陡直的岩壁和岩画使它成为原住民的重要文化地。" +
+      "过了格兰坪，地面转为开阔的麦田和牧场，再往西绿色消失，进入纳拉伯平原：一整块几乎不长树的石灰岩台地，异常平坦，南缘是笔直的悬崖对着南大洋。飞机沿海岸线以内飞过这段。" +
+      "纳拉伯以北是大维多利亚沙漠，红褐色的沙垄和低矮灌丛一直铺到地平线，几乎没有人烟。越过沙漠西缘，重新出现小麦带和农田，飞机在印度洋边的珀斯降落。整条航线，大部分时间脚下是澳大利亚人口最稀、最干旱的地带。",
+    "en-US":
+      "Melbourne to Perth flies from the south-eastern corner of Australia to the south-western, across the dry country of the continent's south. Heading west after take-off, an isolated line of sandstone ridges soon rises from the plain: the Grampians (Gariwerd), part of the western end of the Great Dividing Range, whose steep rock walls and rock art make it an important cultural place for Aboriginal people." +
+      "Past the Grampians the land becomes open wheat fields and grazing country, then the green fades into the Nullarbor Plain: a single slab of limestone that grows almost no trees, remarkably flat, its southern edge a straight line of cliffs facing the Southern Ocean. The route flies over this stretch just inland of the coast." +
+      "North of the Nullarbor is the Great Victoria Desert, red-brown sand ridges and low scrub to the horizon, almost unpeopled. Over the desert's western edge, the wheatbelt and farmland return, and the plane lands at Perth on the Indian Ocean. For most of the flight, the ground below is the driest, least-peopled belt of Australia.",
+    },
+    travel: {
+    "zh-CN":
+      "墨尔本到珀斯飞约四小时，加上2–3小时时差（珀斯晚），实际是大半天。珀斯气候是地中海式：夏季干热、冬季温和多雨；墨尔本天气多变。" +
+      "珀斯沿天鹅河展开，国王公园、弗里曼特尔、罗特尼斯岛（看短尾矮袋鼠）、往北的尖峰石阵、往南玛格丽特河是主要去处。西澳幅员极广，跨区域动辄几百上千公里，多坐飞机。" +
+      "全澳紫外线强，防晒是常识。入境对食品、木制品、动植物制品查得严，如实申报；西澳州内跨境（如去往北部）有时也有农产品检查。",
+    "en-US":
+      "Melbourne to Perth is about four hours, plus a 2–3 hour time difference (Perth is behind), so it takes most of a day. Perth has a Mediterranean climate — dry hot summers, mild wet winters — while Melbourne's weather is changeable." +
+      "Perth runs along the Swan River; Kings Park, Fremantle, Rottnest Island (for the quokkas), the Pinnacles to the north and Margaret River to the south are the main draws. Western Australia is vast, with hundreds or thousands of kilometres between regions, mostly covered by air." +
+      "UV is strong everywhere in Australia — sun protection is basic sense. Border checks on food, wood and plant and animal products are strict, so declare honestly; there are sometimes produce checks within WA too (for example heading north).",
+    },
+  },
+
+  "mel-adl": {
+    study: {
+    "zh-CN":
+      "墨尔本飞阿德莱德，是沿着澳大利亚南岸往西的一段短程航线。起飞后向西南到达海岸，右下方是维多利亚州的大洋路一带——海浪把石灰岩海崖侵蚀成一根根孤立的石柱，站在海里，这就是十二门徒岩。石柱会因为海蚀不断倒塌、也会有新的形成。" +
+      "转向西，内陆出现那列孤立的砂岩山脊——格兰坪山（Gariwerd），陡壁和岩画。" +
+      "再往西是墨累河的下游河段：这条澳大利亚最大的河在这里已经流了很远，在平原上绕出大弯，最后穿过一串潟湖（库容湖）注入南大洋，河口是一片沙洲和湿地。飞机越过墨累河口一带，沿海岸下降到阿德莱德——一座三面被丘陵和葡萄园环抱、朝向海湾的规划城市。",
+    "en-US":
+      "Melbourne to Adelaide is a short flight west along the southern coast of Australia. Heading south-west after take-off to the coast, below to the right is the Great Ocean Road area of Victoria — waves have eroded the limestone sea cliffs into a line of isolated stacks standing in the sea, the Twelve Apostles. The stacks keep collapsing to erosion, and new ones form." +
+      "Turning west, the isolated line of sandstone ridges appears inland: the Grampians (Gariwerd), with their steep walls and rock art." +
+      "Farther west is the lower Murray River: Australia's largest river has already run a long way by here, looping across the plain in big bends and finally passing through a chain of lagoons (the Coorong) into the Southern Ocean, its mouth a spread of sandbars and wetland. The plane crosses the Murray mouth area and descends along the coast to Adelaide — a planned city ringed on three sides by hills and vineyards and facing a gulf.",
+    },
+    travel: {
+    "zh-CN":
+      "墨尔本到阿德莱德飞约一个多小时，阿德莱德比墨尔本晚半小时。阿德莱德生活节奏舒缓，被叫作“20分钟城市”。周边是澳大利亚重要的葡萄酒产区（巴罗萨谷、麦克拉伦谷、阿德莱德山）。" +
+      "城里有中央市场、植物园、北阶文化区；往南是袋鼠岛（另安排两天，坐轮渡或小飞机），往东是墨累河与库容湖。" +
+      "南半球季节相反，夏季（12–2月）干热、有热浪，注意补水防晒。入境和跨州对农产品有检查，如实申报。",
+    "en-US":
+      "Melbourne to Adelaide is a little over an hour, and Adelaide is half an hour behind Melbourne. Adelaide has an unhurried pace and is called a \"20-minute city\". Around it are important Australian wine regions (the Barossa Valley, McLaren Vale, the Adelaide Hills)." +
+      "In the city there is the Central Market, the Botanic Garden and the North Terrace cultural precinct; south is Kangaroo Island (a separate two days, by ferry or light plane), and east are the Murray River and the Coorong lagoons." +
+      "In the southern hemisphere the seasons are reversed; summer (December–February) is dry and hot with heatwaves, so drink plenty of water and use sun protection. There are produce checks on entry and between states — declare honestly.",
+    },
+  },
+
+  "adl-ayq": {
+    study: {
+    "zh-CN":
+      "阿德莱德飞乌鲁鲁，是从南岸的葡萄酒乡，一路往北飞进澳大利亚的“红色中心”。起飞后不久，右侧出现一列锯齿状的红色山脊，那是弗林德斯山脉——一片被强烈褶皱和侵蚀的古老山地，威尔潘那凹地是一个环形的天然山谷。" +
+      "再往北，地面越来越干，出现一大片白色的盐壳，那是埃尔湖（卡蒂坦达）——澳大利亚最大的湖，也是大陆的最低点，多数年份是干的盐滩，只有大雨后才短暂积水成湖、引来大批水鸟。" +
+      "继续往北进入沙漠腹地。快到目的地时，两组孤立的红色岩体从平坦的沙原上拔起：先是卡塔丘塔（奥尔加山）一簇圆丘状的巨岩，然后是乌鲁鲁——一整块砂岩，周长约十公里，边坡陡直，随日光变换颜色。它们是当地阿南古人的圣地，按传统不攀爬。飞机在旁边的尤拉拉降落。",
+    "en-US":
+      "Adelaide to Uluṟu flies from the wine country of the south coast straight north into the \"Red Centre\" of Australia. Soon after take-off, a jagged line of red ridges appears to the right: the Flinders Ranges, ancient mountains strongly folded and eroded, with Wilpena Pound a ring-shaped natural basin." +
+      "Farther north the land dries out and a great white salt crust appears: Kati Thanda–Lake Eyre, the largest lake in Australia and the lowest point of the continent — a dry salt flat in most years, filling with water only briefly after heavy rain, when it draws great numbers of waterbirds." +
+      "Continuing north into the desert interior, near the destination two isolated groups of red rock rise from the flat sand plain: first Kata Tjuta (the Olgas), a cluster of dome-shaped monoliths, then Uluṟu — a single block of sandstone about ten kilometres round, steep-sided, changing colour with the light. They are sacred places to the Aṉangu traditional owners and, by their wishes, are not climbed. The plane lands at Yulara beside them.",
+    },
+    travel: {
+    "zh-CN":
+      "阿德莱德到乌鲁鲁飞约两个多小时。这里是沙漠气候：白天极热（夏季常超40°C）、夜里凉甚至冷，昼夜温差大，几乎不下雨，苍蝇多（可备防蝇头网）。" +
+      "游客住在尤拉拉的度假村，看日出日落时乌鲁鲁的颜色变化、沿岩石基部步行、去卡塔丘塔的风之谷徒步。乌鲁鲁是阿南古人的圣地，请遵守园区规定：不攀爬、部分区域不拍照。" +
+      "带足水（每人每天数升）、防晒、遮阳帽和结实的鞋。夏季正午不宜户外活动，多数徒步要一早出发。",
+    "en-US":
+      "Adelaide to Uluṟu is a little over two hours. This is desert climate: extremely hot by day (often above 40°C in summer), cool or cold at night, a wide day-to-night range, almost no rain, and many flies (a fly net helps)." +
+      "Visitors stay at the Yulara resort, watch Uluṟu change colour at sunrise and sunset, walk around the base of the rock, and hike the Valley of the Winds at Kata Tjuta. Uluṟu is a sacred place to the Aṉangu — follow the park's rules: no climbing, and no photography in some areas." +
+      "Carry plenty of water (several litres per person per day), sun protection, a sun hat and sturdy shoes. Midday in summer is not for outdoor activity, and most walks should start early.",
+    },
+  },
+
+  "bne-drw": {
+    study: {
+    "zh-CN":
+      "布里斯班飞达尔文，是从东海岸的亚热带城市，斜穿昆士兰的内陆，飞到大陆最北端的“顶端地区”。起飞后往西北，很快离开沿海的山地和农田，进入大自流盆地上方——这是世界上最大的地下水盆地之一，地表是大片平坦的干旱牧场，靠钻井取深层地下水维持牧业，地面上能看到一个个圆形的蓄水池和放射状的畜道。" +
+      "越往北越接近热带，草原上散布着白蚁丘和成片的桉树疏林。飞机掠过卡奔塔利亚湾一带，海岸线是大片红树林和潮滩。" +
+      "接近达尔文时，右下方是卡卡杜——一大片季节性泛滥的湿地和石头高地。旱季是一条条干河道和水潭，湿季整片被水淹没；石壁上有数万年的原住民岩画。卡卡杜由传统所有者与国家公园共同管理。达尔文就在它西边的海岸上。",
+    "en-US":
+      "Brisbane to Darwin flies from a subtropical east-coast city diagonally across the Queensland interior to the \"Top End\" at the northern tip of the continent. Heading north-west after take-off, the route soon leaves the coastal hills and farmland and passes over the Great Artesian Basin — one of the largest groundwater basins in the world, its surface flat, dry grazing country kept in use for stock by bores tapping deep groundwater, with round tanks and radiating stock tracks visible on the ground." +
+      "The farther north, the more tropical: termite mounds and open eucalypt woodland dot the plains. The route clips the Gulf of Carpentaria area, its coast broad mangrove and tidal flats." +
+      "Approaching Darwin, below to the right is Kakadu — a large area of seasonally flooded wetland and stone country. In the dry season it is strings of dry channels and pools; in the wet the whole area floods. There is Aboriginal rock art on the escarpments going back tens of thousands of years. Kakadu is jointly managed by its traditional owners and the national park. Darwin is on the coast just to its west.",
+    },
+    travel: {
+    "zh-CN":
+      "布里斯班到达尔文飞约四小时，达尔文比布里斯班晚半小时。达尔文在热带，全年炎热，分旱季（约5–10月，天气稳定、是旺季）和湿季（约11–4月，闷热、雷暴、可能有热带气旋）。" +
+      "达尔文是进入卡卡杜、利奇菲尔德国家公园和阿纳姆地方向的门户。北领地的水域（河口、部分水潭）有咸水鳄，只在标示安全的地方下水、听从当地指示。" +
+      "全年强防晒、多补水，湿季注意防蚊（有蚊媒疾病）。进国家公园按传统所有者和园方的规定，部分区域不能进入或不能拍照。",
+    "en-US":
+      "Brisbane to Darwin is about four hours, and Darwin is half an hour behind Brisbane. Darwin is in the tropics, hot all year, with a dry season (about May–October, settled weather, high season) and a wet season (about November–April, muggy, thunderstorms, possible tropical cyclones)." +
+      "Darwin is the gateway to Kakadu, Litchfield National Park and the Arnhem Land direction. Waters in the Northern Territory (estuaries, some pools) have saltwater crocodiles — only enter the water where it is signed safe and follow local advice." +
+      "Use strong sun protection and drink plenty of water year-round, and in the wet season guard against mosquitoes (there are mosquito-borne diseases). In the national parks follow the rules of the traditional owners and the park; some areas cannot be entered or photographed.",
+    },
+  },
+
+  "mel-hba": {
+    study: {
+    "zh-CN":
+      "墨尔本飞霍巴特，是越过巴斯海峡，到隔海的岛屿州塔斯马尼亚。起飞后向南到达维多利亚海岸，下面是巴斯海峡——把塔斯马尼亚和澳大利亚大陆分开的一片浅海，历史上曾是连接两地的陆桥，海面上有金岛、弗林德斯岛等散落的小岛。" +
+      "很快看到塔斯马尼亚岛的北岸。这座岛地形起伏、森林茂密，中西部是几乎无路的荒野和高原湖泊，被列为世界自然遗产；纬度更高、气候凉湿，冬季山上有雪。岛上很多地方保留着温带雨林和古老的树种。" +
+      "飞机沿岛的东侧南下，越过中部的山地，在德文特河口的霍巴特降落。霍巴特背靠威灵顿山（kunanyi），是澳大利亚第二古老的首府城市。",
+    "en-US":
+      "Melbourne to Hobart crosses Bass Strait to Tasmania, the island state across the water. Heading south after take-off to the Victorian coast, below is Bass Strait — a shallow sea separating Tasmania from the mainland that was once a land bridge between them, with scattered islands such as King Island and Flinders Island on it." +
+      "The north coast of Tasmania soon comes into view. The island is hilly and densely forested, and its central-west is almost roadless wilderness and highland lakes, listed as a World Heritage Area; it is at a higher latitude, cool and wet, with snow on the mountains in winter. Temperate rainforest and ancient tree species survive in many places." +
+      "The plane runs south down the eastern side of the island, crosses the central mountains, and lands at Hobart on the mouth of the Derwent. Hobart sits below Mount Wellington (kunanyi) and is the second-oldest capital city in Australia.",
+    },
+    travel: {
+    "zh-CN":
+      "墨尔本到霍巴特飞约一个多小时，同一时区。塔斯马尼亚纬度高、气候凉：夏季（12–2月）温和宜人，是旺季；冬季冷、山上有雪，昼夜和天气变化快，四季都要带保暖和防水衣物。" +
+      "霍巴特的看点有萨拉曼卡集市（周六）、威灵顿山看城市与河口、MONA 美术馆（坐船去）。往北是酒杯湾、摇篮山，往南是塔斯曼半岛和亚瑟港历史遗址。" +
+      "岛上自驾方便但距离比看地图远、路多弯，注意夜间和黄昏的野生动物。徒步进荒野区要看天气、留行程给管理部门。入境和从大陆过来对农产品有严格检查。",
+    "en-US":
+      "Melbourne to Hobart is a little over an hour, in the same time zone. Tasmania is at a higher latitude and cool: summers (December–February) are mild and pleasant and are high season; winters are cold with snow on the mountains, and the weather and the day-to-night range change fast, so bring warm and waterproof clothing in every season." +
+      "Hobart's draws include the Salamanca Market (Saturdays), Mount Wellington for the view over the city and river mouth, and MONA (reached by boat). North are Wineglass Bay and Cradle Mountain; south are the Tasman Peninsula and the Port Arthur historic site." +
+      "Driving on the island is easy but distances are longer than they look and roads are winding — watch for wildlife at dusk and at night. Hiking into the wilderness needs weather checks and leaving your plans with the authorities. Produce checks on entry and from the mainland are strict.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

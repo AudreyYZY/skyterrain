@@ -46,6 +46,15 @@ import hndTtj from "./hnd-ttj.json" with { type: "json" };
 import pvgHnd from "./pvg-hnd.json" with { type: "json" };
 import pekHnd from "./pek-hnd.json" with { type: "json" };
 import pvgKix from "./pvg-kix.json" with { type: "json" };
+// 澳大利亚国内
+import sydPer from "./syd-per.json" with { type: "json" };
+import sydCns from "./syd-cns.json" with { type: "json" };
+import melSyd from "./mel-syd.json" with { type: "json" };
+import melPer from "./mel-per.json" with { type: "json" };
+import melAdl from "./mel-adl.json" with { type: "json" };
+import adlAyq from "./adl-ayq.json" with { type: "json" };
+import bneDrw from "./bne-drw.json" with { type: "json" };
+import melHba from "./mel-hba.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -81,4 +90,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   pvgHnd,
   pekHnd,
   pvgKix,
+  sydPer,
+  sydCns,
+  melSyd,
+  melPer,
+  melAdl,
+  adlAyq,
+  bneDrw,
+  melHba,
 ] as unknown as FlightRoute[];
