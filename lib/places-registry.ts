@@ -150,6 +150,54 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "KWL", nameZh: "桂林两江国际机场", nameEn: "Guilin Liangjiang Int'l", lon: 110.039, lat: 25.219 },
     source: "桂林市中心 25.2736,110.2907；KWL 机场：公开资料",
   },
+  {
+    id: "nanjing", nameZh: "南京", nameEn: "Nanjing", country: "china", tier: "major",
+    lon: 118.7969, lat: 32.0603,
+    airport: { iata: "NKG", nameZh: "南京禄口国际机场", nameEn: "Nanjing Lukou Int'l", lon: 118.862, lat: 31.742 },
+    source: "南京新街口 32.0603,118.7969；NKG 机场：公开资料",
+  },
+  {
+    id: "sanya", nameZh: "三亚", nameEn: "Sanya", country: "china", tier: "notable",
+    lon: 109.5119, lat: 18.2528,
+    airport: { iata: "SYX", nameZh: "三亚凤凰国际机场", nameEn: "Sanya Phoenix Int'l", lon: 109.412, lat: 18.303 },
+    source: "三亚市中心 18.2528,109.5119；SYX 机场：公开资料",
+  },
+  {
+    id: "lhasa", nameZh: "拉萨", nameEn: "Lhasa", country: "china", tier: "notable",
+    lon: 91.1409, lat: 29.6456,
+    airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.912, lat: 29.298 },
+    source: "拉萨市中心 29.6456,91.1409；LXA 机场：公开资料",
+  },
+  {
+    id: "harbin", nameZh: "哈尔滨", nameEn: "Harbin", country: "china", tier: "major",
+    lon: 126.5350, lat: 45.8038,
+    airport: { iata: "HRB", nameZh: "哈尔滨太平国际机场", nameEn: "Harbin Taiping Int'l", lon: 126.250, lat: 45.623 },
+    source: "哈尔滨市中心 45.8038,126.5350；HRB 机场：公开资料",
+  },
+  {
+    id: "qingdao", nameZh: "青岛", nameEn: "Qingdao", country: "china", tier: "major",
+    lon: 120.3826, lat: 36.0671,
+    airport: { iata: "TAO", nameZh: "青岛胶东国际机场", nameEn: "Qingdao Jiaodong Int'l", lon: 120.086, lat: 36.366 },
+    source: "青岛市南区 36.0671,120.3826；TAO 机场：公开资料",
+  },
+  {
+    id: "zhangjiajie", nameZh: "张家界", nameEn: "Zhangjiajie", country: "china", tier: "notable",
+    lon: 110.4796, lat: 29.1170,
+    airport: { iata: "DYG", nameZh: "张家界荷花国际机场", nameEn: "Zhangjiajie Hehua Int'l", lon: 110.443, lat: 29.103 },
+    source: "张家界市区 29.1170,110.4796；DYG 机场：公开资料",
+  },
+  {
+    id: "lijiang", nameZh: "丽江", nameEn: "Lijiang", country: "china", tier: "notable",
+    lon: 100.2270, lat: 26.8721,
+    airport: { iata: "LJG", nameZh: "丽江三义国际机场", nameEn: "Lijiang Sanyi Int'l", lon: 100.246, lat: 26.680 },
+    source: "丽江古城 26.8721,100.2270；LJG 机场：公开资料",
+  },
+  {
+    id: "dunhuang", nameZh: "敦煌", nameEn: "Dunhuang", country: "china", tier: "notable",
+    lon: 94.6618, lat: 40.1421,
+    airport: { iata: "DNH", nameZh: "敦煌莫高国际机场", nameEn: "Dunhuang Mogao Int'l", lon: 94.809, lat: 40.161 },
+    source: "敦煌市区 40.1421,94.6618；DNH 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));

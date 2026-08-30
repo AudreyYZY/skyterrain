@@ -126,6 +126,83 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "遇龙河", nameEn: "Yulong River", lon: 110.4300, lat: 24.7400, kind: "nature" },
     { nameZh: "龙脊梯田", nameEn: "Longji Rice Terraces", lon: 110.1180, lat: 25.7560, kind: "nature" },
   ],
+
+  nanjing: [
+    { nameZh: "中山陵", nameEn: "Sun Yat-sen Mausoleum", lon: 118.850, lat: 32.062, kind: "landmark" },
+    { nameZh: "明孝陵", nameEn: "Ming Xiaoling Tomb", lon: 118.833, lat: 32.058, kind: "landmark" },
+    { nameZh: "夫子庙 · 秦淮河", nameEn: "Confucius Temple & Qinhuai River", lon: 118.789, lat: 32.021, kind: "district" },
+    { nameZh: "中华门", nameEn: "Zhonghua Gate", lon: 118.778, lat: 32.008, kind: "landmark" },
+    { nameZh: "玄武湖", nameEn: "Xuanwu Lake", lon: 118.797, lat: 32.075, kind: "nature" },
+    { nameZh: "侵华日军南京大屠杀遇难同胞纪念馆", nameEn: "Nanjing Massacre Memorial Hall", lon: 118.740, lat: 32.038, kind: "landmark" },
+    { nameZh: "总统府", nameEn: "Presidential Palace", lon: 118.797, lat: 32.045, kind: "landmark" },
+  ],
+
+  sanya: [
+    { nameZh: "亚龙湾", nameEn: "Yalong Bay", lon: 109.638, lat: 18.222, kind: "nature" },
+    { nameZh: "大东海", nameEn: "Dadonghai", lon: 109.523, lat: 18.227, kind: "nature" },
+    { nameZh: "海棠湾", nameEn: "Haitang Bay", lon: 109.720, lat: 18.300, kind: "nature" },
+    { nameZh: "蜈支洲岛", nameEn: "Wuzhizhou Island", lon: 109.762, lat: 18.311, kind: "nature" },
+    { nameZh: "天涯海角", nameEn: "Tianya Haijiao", lon: 109.420, lat: 18.300, kind: "landmark" },
+    { nameZh: "南山文化旅游区", nameEn: "Nanshan", lon: 109.190, lat: 18.290, kind: "landmark" },
+    { nameZh: "鹿回头", nameEn: "Luhuitou", lon: 109.500, lat: 18.220, kind: "nature" },
+  ],
+
+  lhasa: [
+    { nameZh: "布达拉宫", nameEn: "Potala Palace", lon: 91.117, lat: 29.655, kind: "landmark" },
+    { nameZh: "大昭寺", nameEn: "Jokhang Temple", lon: 91.131, lat: 29.653, kind: "landmark" },
+    { nameZh: "八廓街", nameEn: "Barkhor Street", lon: 91.133, lat: 29.653, kind: "district" },
+    { nameZh: "罗布林卡", nameEn: "Norbulingka", lon: 91.096, lat: 29.657, kind: "landmark" },
+    { nameZh: "哲蚌寺", nameEn: "Drepung Monastery", lon: 91.049, lat: 29.671, kind: "landmark" },
+    { nameZh: "色拉寺", nameEn: "Sera Monastery", lon: 91.135, lat: 29.694, kind: "landmark" },
+    { nameZh: "羊卓雍错", nameEn: "Yamdrok Lake", lon: 90.700, lat: 28.940, kind: "nature" },
+  ],
+
+  harbin: [
+    { nameZh: "中央大街", nameEn: "Central Street", lon: 126.617, lat: 45.775, kind: "district" },
+    { nameZh: "圣索菲亚教堂", nameEn: "St Sophia Cathedral", lon: 126.629, lat: 45.769, kind: "landmark" },
+    { nameZh: "防洪纪念塔", nameEn: "Flood Control Monument", lon: 126.612, lat: 45.784, kind: "landmark" },
+    { nameZh: "太阳岛", nameEn: "Sun Island", lon: 126.580, lat: 45.800, kind: "nature" },
+    { nameZh: "冰雪大世界", nameEn: "Ice and Snow World", lon: 126.585, lat: 45.815, kind: "landmark" },
+    { nameZh: "老道外中华巴洛克街区", nameEn: "Laodaowai Chinese Baroque quarter", lon: 126.650, lat: 45.790, kind: "district" },
+  ],
+
+  qingdao: [
+    { nameZh: "栈桥", nameEn: "Zhanqiao Pier", lon: 120.316, lat: 36.056, kind: "landmark" },
+    { nameZh: "八大关", nameEn: "Badaguan", lon: 120.345, lat: 36.055, kind: "district" },
+    { nameZh: "五四广场", nameEn: "May Fourth Square", lon: 120.384, lat: 36.062, kind: "landmark" },
+    { nameZh: "奥帆中心", nameEn: "Olympic Sailing Centre", lon: 120.394, lat: 36.058, kind: "district" },
+    { nameZh: "信号山", nameEn: "Signal Hill", lon: 120.328, lat: 36.068, kind: "nature" },
+    { nameZh: "青岛啤酒博物馆", nameEn: "Tsingtao Beer Museum", lon: 120.338, lat: 36.075, kind: "landmark" },
+    { nameZh: "崂山", nameEn: "Mount Lao", lon: 120.620, lat: 36.150, kind: "nature" },
+  ],
+
+  zhangjiajie: [
+    { nameZh: "张家界国家森林公园", nameEn: "Zhangjiajie National Forest Park", lon: 110.430, lat: 29.320, kind: "nature" },
+    { nameZh: "袁家界", nameEn: "Yuanjiajie", lon: 110.430, lat: 29.335, kind: "nature" },
+    { nameZh: "天子山", nameEn: "Tianzi Mountain", lon: 110.440, lat: 29.375, kind: "nature" },
+    { nameZh: "金鞭溪", nameEn: "Golden Whip Stream", lon: 110.440, lat: 29.320, kind: "nature" },
+    { nameZh: "天门山", nameEn: "Tianmen Mountain", lon: 110.480, lat: 29.050, kind: "nature" },
+    { nameZh: "武陵源", nameEn: "Wulingyuan", lon: 110.550, lat: 29.350, kind: "district" },
+  ],
+
+  lijiang: [
+    { nameZh: "大研古城 · 四方街", nameEn: "Dayan Old Town & Sifang Street", lon: 100.234, lat: 26.877, kind: "district" },
+    { nameZh: "木府", nameEn: "Mu Mansion", lon: 100.233, lat: 26.870, kind: "landmark" },
+    { nameZh: "束河古镇", nameEn: "Shuhe Old Town", lon: 100.213, lat: 26.918, kind: "district" },
+    { nameZh: "白沙古镇", nameEn: "Baisha Old Town", lon: 100.200, lat: 26.950, kind: "district" },
+    { nameZh: "玉龙雪山", nameEn: "Jade Dragon Snow Mountain", lon: 100.180, lat: 27.100, kind: "nature" },
+    { nameZh: "蓝月谷", nameEn: "Blue Moon Valley", lon: 100.200, lat: 27.080, kind: "nature" },
+    { nameZh: "拉市海", nameEn: "Lashi Lake", lon: 100.130, lat: 26.900, kind: "nature" },
+  ],
+
+  dunhuang: [
+    { nameZh: "莫高窟", nameEn: "Mogao Caves", lon: 94.813, lat: 40.038, kind: "landmark" },
+    { nameZh: "鸣沙山 · 月牙泉", nameEn: "Singing Sand Dunes & Crescent Lake", lon: 94.660, lat: 40.090, kind: "nature" },
+    { nameZh: "敦煌夜市", nameEn: "Dunhuang Night Market", lon: 94.662, lat: 40.142, kind: "district" },
+    { nameZh: "玉门关", nameEn: "Yumen Pass", lon: 93.870, lat: 40.360, kind: "landmark" },
+    { nameZh: "汉长城遗址", nameEn: "Han Great Wall ruins", lon: 93.870, lat: 40.370, kind: "landmark" },
+    { nameZh: "雅丹国家地质公园", nameEn: "Yardang National Geopark", lon: 93.100, lat: 40.500, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
