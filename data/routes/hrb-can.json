@@ -1,0 +1,28 @@
+{
+  "id": "hrb-can",
+  "name": "哈尔滨 — 广州",
+  "nameEn": "Harbin — Guangzhou",
+  "description": "东北平原 · 华北平原 · 长江中下游平原 · 南岭 · 珠江三角洲",
+  "descriptionEn": "Northeast Plain · North China Plain · Lower Yangtze Plain · Nanling Mts · Pearl Delta",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3608",
+    "aircraft": "Airbus A330-300",
+    "depIata": "HRB",
+    "arrIata": "CAN",
+    "durationMin": 240
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "hrb", "name": "哈尔滨太平", "nameEn": "Harbin Taiping", "lat": 45.623, "lon": 126.250, "airport": true },
+    { "kind": "terrain", "terrainId": "northeast" },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "yangtze" },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "pearl-delta" },
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true }
+  ]
+}

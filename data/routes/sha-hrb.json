@@ -1,0 +1,25 @@
+{
+  "id": "sha-hrb",
+  "name": "上海 — 哈尔滨",
+  "nameEn": "Shanghai — Harbin",
+  "description": "黄海 · 辽东丘陵 · 松辽平原 · 东北平原",
+  "descriptionEn": "Yellow Sea · Liaodong Hills · Song–Liao plain · Northeast China Plain",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU5620",
+    "aircraft": "Airbus A321",
+    "depIata": "SHA",
+    "arrIata": "HRB",
+    "durationMin": 175
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true },
+    { "kind": "terrain", "terrainId": "liaodong-hills" },
+    { "kind": "terrain", "terrainId": "northeast" },
+    { "kind": "city", "id": "hrb", "name": "哈尔滨太平", "nameEn": "Harbin Taiping", "lat": 45.623, "lon": 126.250, "airport": true }
+  ]
+}

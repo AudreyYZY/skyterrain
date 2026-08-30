@@ -1,0 +1,55 @@
+{
+  "id": "pek-inc",
+  "name": "北京 — 银川",
+  "nameEn": "Beijing — Yinchuan",
+  "description": "华北平原 · 太行山 · 黄土高原 · 毛乌素沙地 · 贺兰山",
+  "descriptionEn": "North China Plain · Taihang Mts · Loess Plateau · Mu Us Sandy Land · Helan Mts",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1303",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PEK",
+    "arrIata": "INC",
+    "durationMin": 130
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "taihang"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "loess"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "muus"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "helan"
+    },
+    {
+      "kind": "city",
+      "id": "inc",
+      "name": "银川河东",
+      "nameEn": "Yinchuan Hedong",
+      "lat": 38.322,
+      "lon": 106.393,
+      "airport": true
+    }
+  ]
+}

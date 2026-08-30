@@ -1,0 +1,28 @@
+{
+  "id": "xiy-urc",
+  "name": "西安 — 乌鲁木齐",
+  "nameEn": "Xi'an — Ürümqi",
+  "description": "关中平原 · 六盘山 · 河西走廊 · 祁连山 · 天山",
+  "descriptionEn": "Guanzhong Plain · Liupan Mts · Hexi Corridor · Qilian Mts · Tianshan",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU2103",
+    "aircraft": "Airbus A330-200",
+    "depIata": "XIY",
+    "arrIata": "URC",
+    "durationMin": 210
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "xiy", "name": "西安咸阳", "nameEn": "Xi'an Xianyang", "lat": 34.447, "lon": 108.752, "airport": true },
+    { "kind": "terrain", "terrainId": "guanzhong-plain" },
+    { "kind": "terrain", "terrainId": "liupan" },
+    { "kind": "terrain", "terrainId": "hexi-corridor" },
+    { "kind": "terrain", "terrainId": "qilian" },
+    { "kind": "terrain", "terrainId": "tianshan" },
+    { "kind": "city", "id": "urc", "name": "乌鲁木齐地窝堡", "nameEn": "Ürümqi Diwopu", "lat": 43.907, "lon": 87.474, "airport": true }
+  ]
+}

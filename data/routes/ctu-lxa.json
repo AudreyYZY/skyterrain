@@ -4,6 +4,8 @@
   "nameEn": "Chengdu — Lhasa",
   "description": "横断山脉 · 青藏高原",
   "descriptionEn": "Hengduan Mountains · Tibetan Plateau",
+  "depCountry": "china",
+  "arrCountry": "china",
   "flight": {
     "airline": "四川航空",
     "airlineEn": "Sichuan Airlines",
@@ -20,9 +22,31 @@
   "overviewDwellSec": 5,
   "dwellDuringFlightSec": 11,
   "waypoints": [
-    { "kind": "city", "id": "ctu", "name": "成都双流", "nameEn": "Chengdu Shuangliu", "lat": 30.578, "lon": 103.947, "airport": true },
-    { "kind": "terrain", "terrainId": "hengduan" },
-    { "kind": "terrain", "terrainId": "qinghai-tibet" },
-    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+    {
+      "kind": "city",
+      "id": "ctu",
+      "name": "成都双流",
+      "nameEn": "Chengdu Shuangliu",
+      "lat": 30.578,
+      "lon": 103.947,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hengduan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qinghai-tibet"
+    },
+    {
+      "kind": "city",
+      "id": "lxa",
+      "name": "拉萨贡嘎",
+      "nameEn": "Lhasa Gonggar",
+      "lat": 29.298,
+      "lon": 90.912,
+      "airport": true
+    }
   ]
 }

@@ -1,18 +1,11 @@
-import pekUrc from "@/data/routes/pek-urc.json";
-import ctuLxa from "@/data/routes/ctu-lxa.json";
-import canLxa from "@/data/routes/can-lxa.json";
-import urcKhg from "@/data/routes/urc-khg.json";
+import { ALL_ROUTES } from "@/data/routes/manifest";
 import { getTerrainById } from "@/lib/terrain";
 import { getTerrainEntry } from "@/lib/terrain-registry";
+import { getCountryMeta } from "@/lib/regions";
 import type { FlightRoute, RouteWaypoint } from "@/types/route";
 import type { TerrainPoint } from "@/types/terrain";
 
-const ROUTES: FlightRoute[] = [
-  pekUrc as FlightRoute,
-  ctuLxa as FlightRoute,
-  canLxa as FlightRoute,
-  urcKhg as FlightRoute,
-];
+const ROUTES: FlightRoute[] = ALL_ROUTES;
 
 export interface ResolvedWaypoint {
   id: string;
@@ -34,6 +27,49 @@ export function getAllRoutes(): FlightRoute[] {
 
 export function getRouteById(id: string): FlightRoute | undefined {
   return ROUTES.find((r) => r.id === id);
+}
+
+export function isDomesticRoute(route: FlightRoute): boolean {
+  return route.depCountry === route.arrCountry;
+}
+
+/** 某国家相关的航线，分国内 / 国际两组（各自按名称排序）*/
+export function routesForCountry(countrySlug: string): {
+  domestic: FlightRoute[];
+  international: FlightRoute[];
+} {
+  const domestic: FlightRoute[] = [];
+  const international: FlightRoute[] = [];
+  for (const r of ROUTES) {
+    const involvesDep = r.depCountry === countrySlug;
+    const involvesArr = r.arrCountry === countrySlug;
+    if (!involvesDep && !involvesArr) continue;
+    if (isDomesticRoute(r)) domestic.push(r);
+    else international.push(r);
+  }
+  const byName = (a: FlightRoute, b: FlightRoute) => a.name.localeCompare(b.name, "zh-Hans-CN");
+  return { domestic: domestic.sort(byName), international: international.sort(byName) };
+}
+
+/** 某大洲下所有有航线的国家 slug（按 COUNTRIES 顺序由调用方决定，这里只去重）*/
+export function routeCountriesForContinent(
+  continentSlugs: string[],
+): string[] {
+  const withRoutes = new Set<string>();
+  for (const r of ROUTES) {
+    withRoutes.add(r.depCountry);
+    withRoutes.add(r.arrCountry);
+  }
+  return continentSlugs.filter((s) => withRoutes.has(s));
+}
+
+/** 航线在界面上显示的「出发国 → 到达国」标签（国际航线用）*/
+export function routeCountryLabel(route: FlightRoute, lang: "zh-CN" | "en-US"): string {
+  const dep = getCountryMeta(route.depCountry);
+  const arr = getCountryMeta(route.arrCountry);
+  const nm = (m: ReturnType<typeof getCountryMeta>) =>
+    m ? (lang === "zh-CN" ? m.name : m.nameEn) : "";
+  return `${nm(dep)} → ${nm(arr)}`;
 }
 
 export function resolveRouteWaypoints(route: FlightRoute): ResolvedWaypoint[] {

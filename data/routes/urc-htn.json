@@ -1,26 +1,21 @@
 {
-  "id": "urc-khg",
-  "name": "乌鲁木齐 — 喀什",
-  "nameEn": "Ürümqi — Kashgar",
-  "description": "天山 · 塔里木盆地 · 塔克拉玛干沙漠",
-  "descriptionEn": "Tianshan · Tarim Basin · Taklamakan Desert",
+  "id": "urc-htn",
+  "name": "乌鲁木齐 — 和田",
+  "nameEn": "Ürümqi — Hotan",
+  "description": "天山 · 塔里木盆地 · 塔克拉玛干沙漠 · 昆仑山北麓",
+  "descriptionEn": "Tianshan · Tarim Basin · Taklamakan Desert · northern foot of the Kunlun",
   "depCountry": "china",
   "arrCountry": "china",
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ6801",
+    "flightNo": "CZ6829",
     "aircraft": "Boeing 737-800",
     "depIata": "URC",
-    "arrIata": "KHG",
-    "durationMin": 105
+    "arrIata": "HTN",
+    "durationMin": 100
   },
-  "cruiseHeight": 10400,
-  "minLegDurationSec": 40,
-  "dwellSecAtWaypoint": 6,
-  "cruiseSpeedMps": 210,
-  "overviewDwellSec": 5,
-  "dwellDuringFlightSec": 10,
+  "cruiseHeight": 10500,
   "waypoints": [
     {
       "kind": "city",
@@ -41,11 +36,11 @@
     },
     {
       "kind": "city",
-      "id": "khg",
-      "name": "喀什",
-      "nameEn": "Kashgar",
-      "lat": 39.543,
-      "lon": 76.02,
+      "id": "htn",
+      "name": "和田",
+      "nameEn": "Hotan",
+      "lat": 37.039,
+      "lon": 79.865,
       "airport": true
     }
   ]

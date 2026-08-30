@@ -1,0 +1,27 @@
+{
+  "id": "ckg-lxa",
+  "name": "重庆 — 拉萨",
+  "nameEn": "Chongqing — Lhasa",
+  "description": "四川盆地 · 横断山脉 · 藏东南 · 雅鲁藏布大峡谷",
+  "descriptionEn": "Sichuan Basin · Hengduan Mts · south-east Tibet · Yarlung Tsangpo Grand Canyon",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "西藏航空",
+    "airlineEn": "Tibet Airlines",
+    "flightNo": "TV9882",
+    "aircraft": "Airbus A319",
+    "depIata": "CKG",
+    "arrIata": "LXA",
+    "durationMin": 165
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "ckg", "name": "重庆江北", "nameEn": "Chongqing Jiangbei", "lat": 29.719, "lon": 106.642, "airport": true },
+    { "kind": "terrain", "terrainId": "sichuan" },
+    { "kind": "terrain", "terrainId": "hengduan" },
+    { "kind": "terrain", "terrainId": "tsangpo-gorge" },
+    { "kind": "terrain", "terrainId": "qinghai-tibet" },
+    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "pek-kwl",
+  "name": "北京 — 桂林",
+  "nameEn": "Beijing — Guilin",
+  "description": "华北平原 · 洞庭湖 · 南岭 · 两广丘陵喀斯特",
+  "descriptionEn": "North China Plain · Dongting Lake · Nanling Mts · Guangxi karst hills",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1223",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PEK",
+    "arrIata": "KWL",
+    "durationMin": 195
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "dongting" },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "liangguang-hills" },
+    { "kind": "city", "id": "kwl", "name": "桂林两江", "nameEn": "Guilin Liangjiang", "lat": 25.219, "lon": 110.039, "airport": true }
+  ]
+}

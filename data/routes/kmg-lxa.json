@@ -1,0 +1,28 @@
+{
+  "id": "kmg-lxa",
+  "name": "昆明 — 拉萨",
+  "nameEn": "Kunming — Lhasa",
+  "description": "云贵高原 · 横断山脉 · 虎跳峡 · 藏东南 · 雅鲁藏布大峡谷",
+  "descriptionEn": "Yunnan–Guizhou Plateau · Hengduan Mts · Tiger Leaping Gorge · Yarlung Tsangpo Grand Canyon",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU5937",
+    "aircraft": "Airbus A319",
+    "depIata": "KMG",
+    "arrIata": "LXA",
+    "durationMin": 165
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "kmg", "name": "昆明长水", "nameEn": "Kunming Changshui", "lat": 25.102, "lon": 102.929, "airport": true },
+    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
+    { "kind": "terrain", "terrainId": "tiger-leaping-gorge" },
+    { "kind": "terrain", "terrainId": "hengduan" },
+    { "kind": "terrain", "terrainId": "tsangpo-gorge" },
+    { "kind": "terrain", "terrainId": "qinghai-tibet" },
+    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+  ]
+}
