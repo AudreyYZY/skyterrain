@@ -1,0 +1,27 @@
+{
+  "id": "adl-ayq",
+  "name": "阿德莱德 — 乌鲁鲁",
+  "nameEn": "Adelaide — Uluru",
+  "description": "弗林德斯山脉 · 埃尔湖 · 卡塔丘塔 · 乌鲁鲁",
+  "descriptionEn": "Flinders Ranges · Kati Thanda–Lake Eyre · Kata Tjuta · Uluṟu",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "澳洲航空",
+    "airlineEn": "Qantas",
+    "flightNo": "QF737",
+    "aircraft": "Boeing 737-800",
+    "depIata": "ADL",
+    "arrIata": "AYQ",
+    "durationMin": 150
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "adl", "name": "阿德莱德", "nameEn": "Adelaide", "lat": -34.945, "lon": 138.531, "airport": true },
+    { "kind": "terrain", "terrainId": "flinders-ranges" },
+    { "kind": "terrain", "terrainId": "lake-eyre" },
+    { "kind": "terrain", "terrainId": "kata-tjuta" },
+    { "kind": "terrain", "terrainId": "uluru" },
+    { "kind": "city", "id": "ayq", "name": "乌鲁鲁（尤拉拉）", "nameEn": "Uluṟu (Yulara)", "lat": -25.186, "lon": 131.117, "airport": true }
+  ]
+}

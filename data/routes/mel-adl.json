@@ -1,0 +1,26 @@
+{
+  "id": "mel-adl",
+  "name": "墨尔本 — 阿德莱德",
+  "nameEn": "Melbourne — Adelaide",
+  "description": "十二门徒岩 · 格兰坪山 · 墨累河下游",
+  "descriptionEn": "Twelve Apostles · Grampians · lower Murray River",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "澳洲航空",
+    "airlineEn": "Qantas",
+    "flightNo": "QF680",
+    "aircraft": "Boeing 717",
+    "depIata": "MEL",
+    "arrIata": "ADL",
+    "durationMin": 80
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
+    { "kind": "terrain", "terrainId": "twelve-apostles" },
+    { "kind": "terrain", "terrainId": "grampians" },
+    { "kind": "terrain", "terrainId": "murray-darling" },
+    { "kind": "city", "id": "adl", "name": "阿德莱德", "nameEn": "Adelaide", "lat": -34.945, "lon": 138.531, "airport": true }
+  ]
+}

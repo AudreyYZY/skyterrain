@@ -1,0 +1,24 @@
+{
+  "id": "mel-hba",
+  "name": "墨尔本 — 霍巴特",
+  "nameEn": "Melbourne — Hobart",
+  "description": "巴斯海峡 · 塔斯马尼亚岛",
+  "descriptionEn": "Bass Strait · Tasmania",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "捷星航空",
+    "airlineEn": "Jetstar",
+    "flightNo": "JQ711",
+    "aircraft": "Airbus A320",
+    "depIata": "MEL",
+    "arrIata": "HBA",
+    "durationMin": 80
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
+    { "kind": "terrain", "terrainId": "tasmania" },
+    { "kind": "city", "id": "hba", "name": "霍巴特", "nameEn": "Hobart", "lat": -42.836, "lon": 147.510, "airport": true }
+  ]
+}

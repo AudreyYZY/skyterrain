@@ -1,0 +1,26 @@
+{
+  "id": "syd-cns",
+  "name": "悉尼 — 凯恩斯",
+  "nameEn": "Sydney — Cairns",
+  "description": "大分水岭 · 弗雷泽岛 · 大堡礁",
+  "descriptionEn": "Great Dividing Range · K'gari (Fraser Island) · Great Barrier Reef",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "澳洲航空",
+    "airlineEn": "Qantas",
+    "flightNo": "QF920",
+    "aircraft": "Boeing 737-800",
+    "depIata": "SYD",
+    "arrIata": "CNS",
+    "durationMin": 180
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true },
+    { "kind": "terrain", "terrainId": "great-dividing-range" },
+    { "kind": "terrain", "terrainId": "kgari" },
+    { "kind": "terrain", "terrainId": "great-barrier-reef" },
+    { "kind": "city", "id": "cns", "name": "凯恩斯", "nameEn": "Cairns", "lat": -16.885, "lon": 145.755, "airport": true }
+  ]
+}

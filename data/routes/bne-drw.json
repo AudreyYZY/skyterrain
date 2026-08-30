@@ -1,0 +1,25 @@
+{
+  "id": "bne-drw",
+  "name": "布里斯班 — 达尔文",
+  "nameEn": "Brisbane — Darwin",
+  "description": "大自流盆地 · 卡奔塔利亚湾 · 卡卡杜",
+  "descriptionEn": "Great Artesian Basin · Gulf of Carpentaria · Kakadu",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "澳洲航空",
+    "airlineEn": "Qantas",
+    "flightNo": "QF824",
+    "aircraft": "Boeing 737-800",
+    "depIata": "BNE",
+    "arrIata": "DRW",
+    "durationMin": 235
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "bne", "name": "布里斯班", "nameEn": "Brisbane", "lat": -27.384, "lon": 153.117, "airport": true },
+    { "kind": "terrain", "terrainId": "great-artesian-basin" },
+    { "kind": "terrain", "terrainId": "kakadu" },
+    { "kind": "city", "id": "drw", "name": "达尔文", "nameEn": "Darwin", "lat": -12.415, "lon": 130.877, "airport": true }
+  ]
+}
