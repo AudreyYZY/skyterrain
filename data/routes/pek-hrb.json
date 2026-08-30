@@ -1,0 +1,43 @@
+{
+  "id": "pek-hrb",
+  "name": "北京 — 哈尔滨",
+  "nameEn": "Beijing — Harbin",
+  "description": "华北平原 · 燕山 · 东北平原",
+  "descriptionEn": "North China Plain · Yan Mts · Northeast China Plain",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1601",
+    "aircraft": "Airbus A321",
+    "depIata": "PEK",
+    "arrIata": "HRB",
+    "durationMin": 135
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "northeast"
+    },
+    {
+      "kind": "city",
+      "id": "hrb",
+      "name": "哈尔滨太平",
+      "nameEn": "Harbin Taiping",
+      "lat": 45.623,
+      "lon": 126.25,
+      "airport": true
+    }
+  ]
+}

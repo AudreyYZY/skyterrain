@@ -1,0 +1,27 @@
+{
+  "id": "xnn-lxa",
+  "name": "西宁 — 拉萨",
+  "nameEn": "Xining — Lhasa",
+  "description": "青海湖 · 昆仑山 · 可可西里 · 青藏高原 · 念青唐古拉",
+  "descriptionEn": "Qinghai Lake · Kunlun Mts · Hoh Xil · Tibetan Plateau · Nyainqêntanglha",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA4213",
+    "aircraft": "Airbus A319",
+    "depIata": "XNN",
+    "arrIata": "LXA",
+    "durationMin": 145
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "xnn", "name": "西宁曹家堡", "nameEn": "Xining Caojiabao", "lat": 36.528, "lon": 102.043, "airport": true },
+    { "kind": "terrain", "terrainId": "qinghai-lake" },
+    { "kind": "terrain", "terrainId": "kunlun" },
+    { "kind": "terrain", "terrainId": "qinghai-tibet" },
+    { "kind": "terrain", "terrainId": "namtso" },
+    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+  ]
+}

@@ -16,6 +16,11 @@ import shaKmg from "./sha-kmg.json" with { type: "json" };
 import ctuSha from "./ctu-sha.json" with { type: "json" };
 import canPek from "./can-pek.json" with { type: "json" };
 import xiyUrc from "./xiy-urc.json" with { type: "json" };
+// 中国 · 批 2（青藏 / 华北 / 东北）
+import xnnLxa from "./xnn-lxa.json" with { type: "json" };
+import ckgLxa from "./ckg-lxa.json" with { type: "json" };
+import pekInc from "./pek-inc.json" with { type: "json" };
+import pekHrb from "./pek-hrb.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -26,4 +31,8 @@ export const ALL_ROUTES: FlightRoute[] = [
   ctuSha,
   canPek,
   xiyUrc,
+  xnnLxa,
+  ckgLxa,
+  pekInc,
+  pekHrb,
 ] as unknown as FlightRoute[];
