@@ -1,0 +1,18 @@
+{
+  "id": "lhr-inv",
+  "name": "伦敦 — 因弗内斯",
+  "nameEn": "London — Inverness",
+  "description": "奇尔特恩丘陵 · 奔宁山脉 · 凯恩戈姆山",
+  "descriptionEn": "Chilterns · Pennines · Cairngorms",
+  "depCountry": "uk",
+  "arrCountry": "uk",
+  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1476", "aircraft": "Airbus A320", "depIata": "LHR", "arrIata": "INV", "durationMin": 110 },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
+    { "kind": "terrain", "terrainId": "chilterns" },
+    { "kind": "terrain", "terrainId": "pennines" },
+    { "kind": "terrain", "terrainId": "cairngorms" },
+    { "kind": "city", "id": "inv", "name": "因弗内斯", "nameEn": "Inverness", "lat": 57.5425, "lon": -4.0475, "airport": true }
+  ]
+}

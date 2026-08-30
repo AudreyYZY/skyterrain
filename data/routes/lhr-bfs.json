@@ -1,0 +1,19 @@
+{
+  "id": "lhr-bfs",
+  "name": "伦敦 — 贝尔法斯特",
+  "nameEn": "London — Belfast",
+  "description": "奇尔特恩丘陵 · 塞文河 · 斯诺登尼亚 · 莫恩山",
+  "descriptionEn": "Chilterns · River Severn · Snowdonia · Mourne Mountains",
+  "depCountry": "uk",
+  "arrCountry": "uk",
+  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1416", "aircraft": "Airbus A320", "depIata": "LHR", "arrIata": "BFS", "durationMin": 85 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
+    { "kind": "terrain", "terrainId": "chilterns" },
+    { "kind": "terrain", "terrainId": "river-severn" },
+    { "kind": "terrain", "terrainId": "snowdonia" },
+    { "kind": "terrain", "terrainId": "mourne-mountains" },
+    { "kind": "city", "id": "bfs", "name": "贝尔法斯特", "nameEn": "Belfast", "lat": 54.6575, "lon": -6.2158, "airport": true }
+  ]
+}

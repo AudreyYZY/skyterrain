@@ -1,0 +1,17 @@
+{
+  "id": "edi-bfs",
+  "name": "爱丁堡 — 贝尔法斯特",
+  "nameEn": "Edinburgh — Belfast",
+  "description": "南部高地 · 莫恩山",
+  "descriptionEn": "Southern Uplands · Mourne Mountains",
+  "depCountry": "uk",
+  "arrCountry": "uk",
+  "flight": { "airline": "易捷航空", "airlineEn": "easyJet", "flightNo": "EZY63", "aircraft": "Airbus A319", "depIata": "EDI", "arrIata": "BFS", "durationMin": 50 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "edi", "name": "爱丁堡", "nameEn": "Edinburgh", "lat": 55.9500, "lon": -3.3725, "airport": true },
+    { "kind": "terrain", "terrainId": "southern-uplands" },
+    { "kind": "terrain", "terrainId": "mourne-mountains" },
+    { "kind": "city", "id": "bfs", "name": "贝尔法斯特", "nameEn": "Belfast", "lat": 54.6575, "lon": -6.2158, "airport": true }
+  ]
+}

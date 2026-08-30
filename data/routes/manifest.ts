@@ -78,6 +78,14 @@ import yhzYyt from "./yhz-yyt.json" with { type: "json" };
 import yvrYyc from "./yvr-yyc.json" with { type: "json" };
 import yycYwg from "./yyc-ywg.json" with { type: "json" };
 import yegYyz from "./yeg-yyz.json" with { type: "json" };
+// 英国国内
+import lhrEdi from "./lhr-edi.json" with { type: "json" };
+import lhrGla from "./lhr-gla.json" with { type: "json" };
+import lhrInv from "./lhr-inv.json" with { type: "json" };
+import lhrBfs from "./lhr-bfs.json" with { type: "json" };
+import brsEdi from "./brs-edi.json" with { type: "json" };
+import ediBfs from "./edi-bfs.json" with { type: "json" };
+import lhrAbz from "./lhr-abz.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -141,4 +149,11 @@ export const ALL_ROUTES: FlightRoute[] = [
   yvrYyc,
   yycYwg,
   yegYyz,
+  lhrEdi,
+  lhrGla,
+  lhrInv,
+  lhrBfs,
+  brsEdi,
+  ediBfs,
+  lhrAbz,
 ] as unknown as FlightRoute[];

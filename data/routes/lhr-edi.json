@@ -1,0 +1,19 @@
+{
+  "id": "lhr-edi",
+  "name": "伦敦 — 爱丁堡",
+  "nameEn": "London — Edinburgh",
+  "description": "奇尔特恩丘陵 · 峰区 · 奔宁山脉 · 南部高地",
+  "descriptionEn": "Chilterns · Peak District · Pennines · Southern Uplands",
+  "depCountry": "uk",
+  "arrCountry": "uk",
+  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1442", "aircraft": "Airbus A320", "depIata": "LHR", "arrIata": "EDI", "durationMin": 85 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
+    { "kind": "terrain", "terrainId": "chilterns" },
+    { "kind": "terrain", "terrainId": "peak-district" },
+    { "kind": "terrain", "terrainId": "pennines" },
+    { "kind": "terrain", "terrainId": "southern-uplands" },
+    { "kind": "city", "id": "edi", "name": "爱丁堡", "nameEn": "Edinburgh", "lat": 55.9500, "lon": -3.3725, "airport": true }
+  ]
+}
