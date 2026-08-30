@@ -1,0 +1,18 @@
+{
+  "id": "brs-edi",
+  "name": "布里斯托尔 — 爱丁堡",
+  "nameEn": "Bristol — Edinburgh",
+  "description": "塞文河 · 奔宁山脉 · 南部高地",
+  "descriptionEn": "River Severn · Pennines · Southern Uplands",
+  "depCountry": "uk",
+  "arrCountry": "uk",
+  "flight": { "airline": "易捷航空", "airlineEn": "easyJet", "flightNo": "EZY6021", "aircraft": "Airbus A320", "depIata": "BRS", "arrIata": "EDI", "durationMin": 80 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "brs", "name": "布里斯托尔", "nameEn": "Bristol", "lat": 51.3827, "lon": -2.7191, "airport": true },
+    { "kind": "terrain", "terrainId": "river-severn" },
+    { "kind": "terrain", "terrainId": "pennines" },
+    { "kind": "terrain", "terrainId": "southern-uplands" },
+    { "kind": "city", "id": "edi", "name": "爱丁堡", "nameEn": "Edinburgh", "lat": 55.9500, "lon": -3.3725, "airport": true }
+  ]
+}

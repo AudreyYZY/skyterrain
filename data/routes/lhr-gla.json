@@ -1,0 +1,19 @@
+{
+  "id": "lhr-gla",
+  "name": "伦敦 — 格拉斯哥",
+  "nameEn": "London — Glasgow",
+  "description": "奇尔特恩丘陵 · 峰区 · 湖区 · 南部高地",
+  "descriptionEn": "Chilterns · Peak District · Lake District · Southern Uplands",
+  "depCountry": "uk",
+  "arrCountry": "uk",
+  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1470", "aircraft": "Airbus A319", "depIata": "LHR", "arrIata": "GLA", "durationMin": 85 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
+    { "kind": "terrain", "terrainId": "chilterns" },
+    { "kind": "terrain", "terrainId": "peak-district" },
+    { "kind": "terrain", "terrainId": "lake-district" },
+    { "kind": "terrain", "terrainId": "southern-uplands" },
+    { "kind": "city", "id": "gla", "name": "格拉斯哥", "nameEn": "Glasgow", "lat": 55.8719, "lon": -4.4331, "airport": true }
+  ]
+}

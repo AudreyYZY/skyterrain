@@ -83,6 +83,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "ca-prairies": { zh: "草原三省", en: "Prairies", order: 52 },
   "ca-west-coast": { zh: "西海岸", en: "West Coast", order: 53 },
   "ca-north": { zh: "北方", en: "The North", order: 54 },
+  // 英国（英格兰南→中→北→苏格兰→威尔士→北爱尔兰）
+  "uk-england-south": { zh: "英格兰南部", en: "Southern England", order: 60 },
+  "uk-england-midlands": { zh: "英格兰中部", en: "The Midlands", order: 61 },
+  "uk-england-north": { zh: "英格兰北部", en: "Northern England", order: 62 },
+  "uk-scotland": { zh: "苏格兰", en: "Scotland", order: 63 },
+  "uk-wales": { zh: "威尔士", en: "Wales", order: 64 },
+  "uk-northern-ireland": { zh: "北爱尔兰", en: "Northern Ireland", order: 65 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -104,6 +111,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "new-zealand", nameZh: "新西兰", nameEn: "New Zealand" },
   { country: "usa", nameZh: "美国", nameEn: "United States" },
   { country: "canada", nameZh: "加拿大", nameEn: "Canada" },
+  { country: "uk", nameZh: "英国", nameEn: "United Kingdom" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -610,6 +618,79 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "YVR", nameZh: "温哥华国际机场", nameEn: "Vancouver Int'l", lon: -123.1815, lat: 49.1967 },
     source: "温哥华市中心 49.2827,-123.1207；YVR 机场：公开资料",
   },
+
+  // ── 英国 ──
+  {
+    id: "london", nameZh: "伦敦", nameEn: "London", country: "uk", tier: "capital", zone: "uk-england-south",
+    lon: -0.1278, lat: 51.5074,
+    airport: { iata: "LHR", nameZh: "希思罗机场", nameEn: "Heathrow", lon: -0.4543, lat: 51.4700 },
+    source: "伦敦市中心 51.5074,-0.1278；LHR 机场：公开资料",
+  },
+  {
+    id: "bristol", nameZh: "布里斯托尔", nameEn: "Bristol", country: "uk", tier: "notable", zone: "uk-england-south",
+    lon: -2.5879, lat: 51.4545,
+    airport: { iata: "BRS", nameZh: "布里斯托尔机场", nameEn: "Bristol Airport", lon: -2.7191, lat: 51.3827 },
+    source: "布里斯托尔市中心 51.4545,-2.5879；BRS 机场：公开资料",
+  },
+  {
+    id: "birmingham", nameZh: "伯明翰", nameEn: "Birmingham", country: "uk", tier: "major", zone: "uk-england-midlands",
+    lon: -1.8904, lat: 52.4862,
+    airport: { iata: "BHX", nameZh: "伯明翰机场", nameEn: "Birmingham Airport", lon: -1.7480, lat: 52.4539 },
+    source: "伯明翰市中心 52.4862,-1.8904；BHX 机场：公开资料",
+  },
+  {
+    id: "manchester", nameZh: "曼彻斯特", nameEn: "Manchester", country: "uk", tier: "major", zone: "uk-england-north",
+    lon: -2.2426, lat: 53.4808,
+    airport: { iata: "MAN", nameZh: "曼彻斯特机场", nameEn: "Manchester Airport", lon: -2.2750, lat: 53.3537 },
+    source: "曼彻斯特市中心 53.4808,-2.2426；MAN 机场：公开资料",
+  },
+  {
+    id: "liverpool", nameZh: "利物浦", nameEn: "Liverpool", country: "uk", tier: "notable", zone: "uk-england-north",
+    lon: -2.9916, lat: 53.4084,
+    airport: { iata: "LPL", nameZh: "利物浦约翰·列侬机场", nameEn: "Liverpool John Lennon", lon: -2.8497, lat: 53.3336 },
+    source: "利物浦市中心 53.4084,-2.9916；LPL 机场：公开资料",
+  },
+  {
+    id: "york", nameZh: "约克", nameEn: "York", country: "uk", tier: "notable", zone: "uk-england-north",
+    lon: -1.0873, lat: 53.9600,
+    source: "约克市中心 53.9600,-1.0873：公开资料（无自有机场，就近用利兹或曼彻斯特）",
+  },
+  {
+    id: "edinburgh", nameZh: "爱丁堡", nameEn: "Edinburgh", country: "uk", tier: "notable", zone: "uk-scotland",
+    lon: -3.1883, lat: 55.9533,
+    airport: { iata: "EDI", nameZh: "爱丁堡机场", nameEn: "Edinburgh Airport", lon: -3.3725, lat: 55.9500 },
+    source: "爱丁堡市中心 55.9533,-3.1883；EDI 机场：公开资料",
+  },
+  {
+    id: "glasgow", nameZh: "格拉斯哥", nameEn: "Glasgow", country: "uk", tier: "major", zone: "uk-scotland",
+    lon: -4.2518, lat: 55.8642,
+    airport: { iata: "GLA", nameZh: "格拉斯哥机场", nameEn: "Glasgow Airport", lon: -4.4331, lat: 55.8719 },
+    source: "格拉斯哥市中心 55.8642,-4.2518；GLA 机场：公开资料",
+  },
+  {
+    id: "aberdeen", nameZh: "阿伯丁", nameEn: "Aberdeen", country: "uk", tier: "notable", zone: "uk-scotland",
+    lon: -2.0943, lat: 57.1497,
+    airport: { iata: "ABZ", nameZh: "阿伯丁机场", nameEn: "Aberdeen Airport", lon: -2.1978, lat: 57.2019 },
+    source: "阿伯丁市中心 57.1497,-2.0943；ABZ 机场：公开资料",
+  },
+  {
+    id: "inverness", nameZh: "因弗内斯", nameEn: "Inverness", country: "uk", tier: "notable", zone: "uk-scotland",
+    lon: -4.2247, lat: 57.4778,
+    airport: { iata: "INV", nameZh: "因弗内斯机场", nameEn: "Inverness Airport", lon: -4.0475, lat: 57.5425 },
+    source: "因弗内斯市中心 57.4778,-4.2247；INV 机场：公开资料",
+  },
+  {
+    id: "cardiff", nameZh: "卡迪夫", nameEn: "Cardiff", country: "uk", tier: "notable", zone: "uk-wales",
+    lon: -3.1791, lat: 51.4816,
+    airport: { iata: "CWL", nameZh: "卡迪夫机场", nameEn: "Cardiff Airport", lon: -3.3433, lat: 51.3967 },
+    source: "卡迪夫市中心 51.4816,-3.1791；CWL 机场：公开资料",
+  },
+  {
+    id: "belfast", nameZh: "贝尔法斯特", nameEn: "Belfast", country: "uk", tier: "notable", zone: "uk-northern-ireland",
+    lon: -5.9301, lat: 54.5973,
+    airport: { iata: "BFS", nameZh: "贝尔法斯特国际机场", nameEn: "Belfast Int'l", lon: -6.2158, lat: 54.6575 },
+    source: "贝尔法斯特市中心 54.5973,-5.9301；BFS 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -622,6 +703,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   "new-zealand": "oceania",
   usa: "north-america",
   canada: "north-america",
+  uk: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

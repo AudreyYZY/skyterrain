@@ -1331,4 +1331,199 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–September is best — dry and mild; the rest of the year is wet, with snow for skiing in the mountains. In summer there is occasional smoke haze from interior wildfires — watch air quality. Housing and prices are high. The Sea-to-Sky Highway to Whistler is spectacular but winding, and needs winter tyres in winter.",
   },
+
+  "uk-overview": {
+    identity:
+      "The United Kingdom — in full, the United Kingdom of Great Britain and Northern Ireland — is made up of England, Scotland, Wales and Northern Ireland, with a population of about 68 million. The main body is the island of Great Britain, plus Northern Ireland in the north-east of the island of Ireland. The land is broadly high in the north-west and low in the south-east: the mountains and uplands are in Scotland, Wales, northern England and the south-west, all long-eroded old hills; the south-east is low, gentle hills and plains. It is surrounded by sea, and nowhere is more than about 120 km from the coast.",
+    layout:
+      "It helps to divide the UK into: Southern England (London, the southern hills, the south-west peninsula); the Midlands (the industrial cities around Birmingham); Northern England (Manchester, Liverpool, York, and the Lake District and the Pennines); Scotland (Edinburgh and Glasgow in the Central Belt, the Highlands to the north); Wales (Cardiff in the south, mountains in the mid and north); and Northern Ireland (Belfast). The country is small, and trains are often more convenient than flights between cities — flying is mainly for northern Scotland, Northern Ireland and some islands.",
+    gettingAround:
+      "Intercity travel is mostly by train — a dense network, but fares vary a lot and are cheaper booked early; long-distance coaches are cheaper and slower. Domestic flights mainly link London with Scotland, Northern Ireland and the islands. Big cities have a metro or tram (the London Underground is the most developed), and public transport is generally usable. Drive on the left. Restaurant tipping is usually 10–12.5% (many bills already include a service charge — check before adding more). Tap water is drinkable. Power is 230V with a three-pin British plug (bring an adapter).",
+    culture:
+      "English is universal; Welsh is co-official in Wales (bilingual signs), Scottish Gaelic is used in parts of Scotland, and Irish has some use in Northern Ireland. The four parts each have a strong local identity and different symbols, teams and holidays. Queuing is a deeply held social norm. The weather is changeable and generally cool and wet — carrying an umbrella or a waterproof is common sense.",
+    seeAndDo:
+      "Cities: the museums of London (the British Museum, Tate, National Gallery are mostly free), the old town and castle of Edinburgh, the walls of York, the Roman baths of Bath. Nature: the Scottish Highlands and the Isle of Skye, the English Lake District, Snowdonia in Wales, the white cliffs and the Jurassic Coast in the south, the Giant's Causeway in Northern Ireland. The network of public footpaths across the countryside is extensive.",
+    whenAndTips:
+      "May–September is the most comfortable, with long daylight (it gets dark very late in June in Scotland); winter is not extremely cold but is damp and dark, with short days. It can rain in any season — dress in layers and carry a waterproof. Most foreign visitors travel visa-free for short tourism or need an Electronic Travel Authorisation (ETA) — check the latest UK government guidance. Train tickets booked early save a lot; public transport in the Highlands and the islands is sparse, so driving is easier (on the left, narrow roads).",
+  },
+
+  london: {
+    identity:
+      "London is the capital of the United Kingdom and of England, with a metro area of about 14 million, and one of the world's centres of finance, culture and transport. The city straddles the River Thames and has grown from the Roman 'Londinium' over two thousand years as the centre of this region. It is made up of the City of London (the square-mile old core) and 32 surrounding boroughs, with no single town-hall-style centre.",
+    layout:
+      "London is built in the broad valley of the Thames and is fairly flat. The river runs broadly west to east, dividing the city into north and south; the historic core (the City, Westminster) is on the north bank, and the river winds east through the city to the North Sea. The central royal parks form a green belt. The Underground map is the key to finding your way, and many place names correspond to a station.",
+    gettingAround:
+      "Five airports: Heathrow (LHR, the largest, on the Underground and the Elizabeth line), Gatwick (LGW, by train), Stansted (STN), Luton (LTN) and London City (LCY). The Tube, buses, Overground and Elizabeth line all take a contactless bank card or phone directly (with a daily cap). Walking plus the Tube is the most efficient way around the centre. The climate is temperate maritime: mild all year, with occasional summer heatwaves, and winters that rarely see snow but are grey, cold and wet, with changeable weather within a day.",
+    culture:
+      "English is universal, and this is one of the most linguistically diverse cities in the world, with very different neighbourhoods. Stand on the right on escalators and leave the left for people walking; queuing is strict. Restaurant tipping is about 12.5% (often already included). The British Museum, the National Gallery, Tate Modern and other national museums are mostly free (special exhibitions charge).",
+    seeAndDo:
+      "Westminster (the Houses of Parliament, Big Ben, Westminster Abbey) and the Changing of the Guard at Buckingham Palace; the London Eye, Tower Bridge and the Tower of London; the British Museum, the Natural History Museum, the V&A, the National Gallery, Tate Modern; a West End musical; the South Bank walk, Borough Market, Greenwich (the Prime Meridian); Hyde Park and Regent's Park.",
+    whenAndTips:
+      "May–September is the most comfortable; Christmas to New Year has lovely lights but is crowded and expensive. Carry an umbrella any time. Book popular attractions and theatre performances online in advance. The Tube is very crowded in the peaks (8–9 am, 5–6 pm). Tap one contactless bank card for all public transport — it has a daily cap and beats paper tickets.",
+  },
+
+  bristol: {
+    identity:
+      "Bristol is in south-west England on the lower River Avon, with a city population of about 470,000, historically an important port and shipbuilding city, now known for creative industries, street art (the home of the artist Banksy) and independent culture. Several cities in the USA are named after it. Bristol is right by the Welsh border and is a gateway to south Wales and the south-west peninsula.",
+    layout:
+      "Bristol is built on the gorge the Avon has cut and the surrounding hills, so the ground is steep. The old harbour (Harbourside) has been redeveloped into a museum and dining area; the Georgian terraces of Clifton stand on the edge of the gorge, and the famous Clifton Suspension Bridge spans the Avon Gorge. The centre is compact but hilly.",
+    gettingAround:
+      "Bristol Airport (BRS) is about 13 km south of the city, with an airport bus. The city relies on buses; the train to London is about 1.5 hours. The centre is walkable, but hilly and hard work to cycle. The climate is temperate maritime, slightly warmer and wetter than eastern England, and wet all year.",
+    culture:
+      "English is universal, with a distinctive local accent. The city's culture leans independent, green and artistic — independent cafés, second-hand shops, live music. Restaurant tipping is about 10–12.5%. The city's history is deeply tied to Atlantic trade (including the slave trade), and in recent years there has been open reflection and related exhibits (a sombre subject).",
+    seeAndDo:
+      "The Clifton Suspension Bridge and gorge viewpoints; the SS Great Britain (a 19th-century iron-hulled ocean liner); the M Shed city museum; the old harbour and Wapping Wharf; street-art walks (Stokes Croft, Bedminster); the Balloon Fiesta in early August. An hour north is Bath and its Roman baths.",
+    whenAndTips:
+      "May–September is best; the Balloon Fiesta in early August is crowded and lodging is expensive, so book early. It rains all year — carry an umbrella. Getting to town from the airport is by bus — allow time. The city is hilly — wear comfortable shoes.",
+  },
+
+  birmingham: {
+    identity:
+      "Birmingham is the second-largest city in England, on a low ridge in the Midlands, with a metro area of about 2.9 million. It grew fast during the Industrial Revolution on metalworking and manufacturing, and once had more miles of canal than Venice. Today it is the commercial, exhibition and transport centre of the Midlands. Birmingham, Alabama, in the USA is named after this 'city of iron'.",
+    layout:
+      "Birmingham is not on a large river but on the watershed between several small streams, connected by a dense canal network. The centre is a rebuilt commercial and cultural district (the Bullring shopping centre, the library, Symphony Hall), and the canal area (Brindleyplace, Gas Street Basin) is a dining and bar belt. The city sprawls in all directions and is the hub of the UK motorway network.",
+    gettingAround:
+      "Birmingham Airport (BHX) is south-east of the city, next to a railway station (with a monorail link). The city has trams, buses and local trains, taken with a contactless card. The train to London is about 1 hour 20 minutes (faster once new lines open). The centre is compact and walkable, with flat towpaths along the canals. The climate is temperate maritime, and this is one of the cities furthest from the sea in the UK, with a slightly larger seasonal range than the coast.",
+    culture:
+      "English is universal, with a very recognisable local accent ('Brummie'). The city is very ethnically diverse, with a large South Asian community, and is regarded as the birthplace of the British 'Balti' curry. Restaurant tipping is about 10–12.5%. The city identifies with its canals, its Jewellery Quarter of craftspeople, and its music (one of the birthplaces of heavy metal).",
+    seeAndDo:
+      "A walk around the canal area (Gas Street Basin, Brindleyplace); the Birmingham Museum and Art Gallery (with a large Pre-Raphaelite collection); the Jewellery Quarter and its museum; the Barber Institute; the Bullring and markets; Cadbury World (a chocolate factory, in suburban Bournville).",
+    whenAndTips:
+      "May–September is the most comfortable. The city is business- and exhibition-focused, and hotels are tight during major trade shows. The canal area is lively at night but mind your belongings. The train is the easiest way to and from London and Manchester.",
+  },
+
+  manchester: {
+    identity:
+      "Manchester is in north-west England, on the plain at the western foot of the Pennines, with a metro area of about 2.8 million — the emblematic city of the Industrial Revolution, the world's first industrial city, and the 19th-century centre of cotton manufacturing ('Cottonopolis'). Today it is the economic, media, music and sporting centre of northern England. There are several cities of the same name in the USA, such as Manchester, New Hampshire.",
+    layout:
+      "Manchester is built on the plain where several small rivers meet, with the Cheshire plain to the west and, to the east, ground that soon rises into the hills and moors of the Pennines. The centre is made of former warehouses and factories converted into districts; Salford Quays (MediaCityUK) to the west is a new media and culture area. The city extends outward along a tram network.",
+    gettingAround:
+      "Manchester Airport (MAN) is south of the city, the largest airport in northern England, with a rail station straight to the centre and other cities. The city has the Metrolink tram plus buses, taken with a contactless card or app. The train to London is about 2 hours, to Edinburgh about 3 hours. The centre is walkable. The climate is temperate maritime and famously rainy (the Pennines block moist air from the west), mild all year.",
+    culture:
+      "English is universal, with a distinctive local accent ('Manc'). The city identifies strongly with football (two major clubs) and pop music (several hugely influential bands came from here). It is ethnically diverse, with a well-known Chinatown and 'curry mile' (Rusholme). Restaurant tipping is about 10–12.5%.",
+    seeAndDo:
+      "The Science and Industry Museum (on the site of the world's oldest passenger railway station); the Manchester Museum and Art Gallery; the independent shops and murals of the Northern Quarter; the two football clubs' stadiums and museums; Salford Quays and the Imperial War Museum North; Castlefield (the old industrial canal area). East is the Peak District National Park.",
+    whenAndTips:
+      "May–September is the most comfortable, but it can rain at any time — carry a waterproof. On match days the centre and transport are crowded and hotels expensive. The airport rail station connects directly to major cities, making transfers easy. An hour east you can walk in the Peak District.",
+  },
+
+  liverpool: {
+    identity:
+      "Liverpool is in north-west England on the north bank of the Mersey estuary, with a city population of about 500,000, historically a great Atlantic shipping port (migrants, goods, and also the slave trade), with docks running for miles along the river. Today it is known for music (a world-famous band came from here), two football clubs, and a waterfront that was made a World Heritage Site and later delisted.",
+    layout:
+      "Liverpool spreads along a gentle slope on the east bank of the Mersey, which is wide, with a ferry across to Birkenhead. The 'Three Graces' buildings and the Albert Dock are on the waterfront and are the city's face; the commercial centre and the two cathedrals (one modern, one Gothic Revival) are up the slope. Tunnels run under the Mersey to the far side.",
+    gettingAround:
+      "Liverpool John Lennon Airport (LPL) is south of the city on the Mersey, with a bus into town. The city has local trains (Merseyrail, including a line under the river) and buses, taken with a contactless card. The train to Manchester is about 50 minutes, to London about 2 hours 10 minutes. The centre and dock area are walkable. The climate is temperate maritime, windy and wet, with especially strong wind at the estuary.",
+    culture:
+      "English is universal, with a very recognisable local accent ('Scouse') — locals call themselves Scousers. The city identifies strongly with music and football, and its humour is well known. It is ethnically diverse and has one of the oldest Chinese communities in the UK. Restaurant tipping is about 10–12.5%.",
+    seeAndDo:
+      "The Albert Dock (Tate Liverpool, The Beatles Story, the Merseyside Maritime Museum and the International Slavery Museum — a sombre subject); the Three Graces and the Royal Liver Building; the two cathedrals; Beatles sites (the Cavern Club, childhood homes); the Mersey ferry for the skyline; the two football stadiums.",
+    whenAndTips:
+      "May–September is the most comfortable. Lodging is tight on match days or during big concerts. The waterfront is windy — bring a windproof jacket. There are many paid Beatles and football tours — choose by interest.",
+  },
+
+  york: {
+    identity:
+      "York is in northern England, where the River Ouse meets the Foss, with a city population of about 200,000 — one of the best-preserved medieval cities in England, with nearly complete medieval walls, narrow old streets and a huge Gothic minster. It was founded by the Romans ('Eboracum') and called 'Jorvik' in the Viking age. After the English took the North American colony from the Dutch in 1664, they renamed New Amsterdam 'New York' — today's New York — for the then Duke of York.",
+    layout:
+      "York's old town is enclosed by the walls on both banks of the Ouse, and you can walk the full circuit (about 3.4 km). York Minster is the high point and landmark of the old town; 'The Shambles' is the most famous of its narrow medieval lanes. The low ground by the river has historically flooded. Outside the walls are the districts that grew with the Victorian railway.",
+    gettingAround:
+      "York has no airport of its own; the nearest is Leeds Bradford (about 45 minutes by road), or about 1.5 hours by direct train from Manchester Airport. York station is a major stop on the East Coast Main Line — about 2 hours to London, about 2.5 hours to Edinburgh. The old town is entirely walkable (small, and largely pedestrianised). The climate is temperate maritime, drier than the west.",
+    culture:
+      "English is universal, with a Yorkshire accent. The city is heavily geared to heritage tourism, with railway, Viking and chocolate museums. Yorkshire people are proud of their identity. Restaurant tipping is about 10–12.5%. There are many 'ghost walk' tours in the old town at night.",
+    seeAndDo:
+      "Walking the full circuit of the medieval walls; York Minster (you can climb the tower); the Shambles and the old town's narrow lanes; the Jorvik Viking Centre; the National Railway Museum (free, with many iconic steam locomotives); the Yorkshire Museum and Gardens; a boat trip on the Ouse.",
+    whenAndTips:
+      "May–September and the Christmas market period are the busiest; in peak season the old town is very crowded and lodging is expensive. The old town is small and walkable — if you have luggage, stay near the station. The low ground by the river can flood and close roads in the wet season — watch the weather.",
+  },
+
+  edinburgh: {
+    identity:
+      "Edinburgh is the capital of Scotland, with a population of about 550,000, built on several plugs of volcanic rock and glacier-carved terrain, with the Old Town and New Town together a World Heritage Site. The city is known for its castle, the August festivals (the International Festival and the Military Tattoo), and its Enlightenment history. It is not the UK capital, but it has its own parliament.",
+    layout:
+      "Edinburgh's terrain is distinctive: the castle sits on a volcanic plug, and from the plug a slope of glacial debris trails east, along which the medieval Old Town is laid out on the 'Royal Mile', ending at the Palace of Holyroodhouse and an extinct volcano called Arthur's Seat. North, across a filled-in valley, is the planned Georgian New Town of the 18th century — a grid of wide streets.",
+    gettingAround:
+      "Edinburgh Airport (EDI) is west of the city, with a tram and airport buses about 30 minutes to the centre. The city has buses and a tram, taken with a contactless card. The Old Town and New Town are walkable, but hilly with many steps. The train to Glasgow is about 50 minutes, to London about 4.5 hours. The climate is temperate maritime, windy and changeable, with cool summers and winters that are not extreme but damp.",
+    culture:
+      "English is universal, with a Scottish accent; Scottish Gaelic appears on signs. In August the whole city is taken over by the festivals (the Fringe is the largest arts festival in the world) — crowded, with lodging prices several times higher. Restaurant tipping is about 10–12.5%. It is windy — don't bring a big umbrella.",
+    seeAndDo:
+      "Edinburgh Castle and the Royal Mile; the Palace of Holyroodhouse, and a climb up Arthur's Seat for the city view; the National Museum of Scotland (free) and the National Gallery; the Georgian New Town and Princes Street Gardens; Calton Hill for the skyline; the August festivals and the Tattoo. Day trips into the Highlands are possible.",
+    whenAndTips:
+      "May–September is best. During the August festivals the city is thrilling but crowded and expensive — either come specifically for it or avoid it. It is windy and changeable all year — dress in layers. The Old Town has many steps and cobbles — wear grippy shoes. Highland day trips involve long drives — choose a well-reviewed tour.",
+  },
+
+  glasgow: {
+    identity:
+      "Glasgow is the largest city in Scotland, on the River Clyde in the Central Belt, with a metro area of about 1.2 million. It was once the shipbuilding and heavy-industry centre of the British Empire ('the workshop of the world'), and is now known for its Victorian architecture, the Art Nouveau design of Charles Rennie Mackintosh, its live-music scene and its museums; the UN climate conference was held here in 2021.",
+    layout:
+      "Glasgow straddles the Clyde, with the centre on the north bank in a regular grid (influenced by American planning), full of sandstone Victorian buildings. The West End is the university, museum and park district; the East End has the old town and the cathedral. The former shipyards along the river have been redeveloped into exhibition and cultural venues.",
+    gettingAround:
+      "Glasgow Airport (GLA) is about 13 km west of the city, with an airport bus about 25 minutes to the centre; Prestwick (PIK) is a budget airport further out. The city has one of the oldest metros in the world (a single loop), local trains and buses, taken with a contactless card. The train to Edinburgh is about 50 minutes. The centre is walkable. The climate is temperate maritime, and this is one of the rainiest big cities in the UK.",
+    culture:
+      "English is universal, with a strong, fast Glasgow accent; locals are known for being friendly and talkative. The city identifies with football (two rival major clubs), live music and civic culture. Most municipal museums are free. Restaurant tipping is about 10–12.5%.",
+    seeAndDo:
+      "Kelvingrove Art Gallery and Museum (free, a city landmark); the Riverside Museum of transport (ships, trains, cars) and the tall ship Glenlee moored outside; Mackintosh buildings (the Art School, his house, the Willow Tea Rooms); the cathedral and the adjacent Necropolis; Byres Road and the Botanic Gardens in the West End; the live-music venues (King Tut's and others).",
+    whenAndTips:
+      "May–September is the most comfortable, but Glasgow is rainy — carry a waterproof. On match days the centre is lively but avoid crowd flashpoints. The metro is small and handy, covering the centre and the West End. An hour north are Loch Lomond and the southern edge of the Highlands.",
+  },
+
+  aberdeen: {
+    identity:
+      "Aberdeen is a port city in north-east Scotland, where the Rivers Dee and Don reach the sea, with a metro area of about 230,000. Because so many local buildings use the local grey granite, it is called the 'Granite City', and on a sunny day the mica sparkles. After the North Sea oil fields were developed in the 1970s, it became Europe's 'oil capital' and a supply and helicopter base for offshore work.",
+    layout:
+      "Aberdeen is built on a granite terrace between two rivers, and the main street, Union Street, is a long, straight run of granite. The city has a long beach right on its edge, and a busy harbour dominated by offshore-supply vessels and fishing boats. The Old Town (Old Aberdeen) is to the north by the Don, keeping its medieval university and cathedral.",
+    gettingAround:
+      "Aberdeen Airport (ABZ) is to the north-west, and is also one of the busiest civilian heliports in the world (to and from the offshore platforms), with a bus into town. The city relies on buses. The train along the East Coast line is about 2.5 hours to Edinburgh, about 2 hours 15 minutes to Inverness. The centre is walkable. The climate is temperate maritime, drier, colder and windier than the west coast, with sea fog in winter (locally, 'haar').",
+    culture:
+      "English is universal, and north-east Scotland has its own dialect (Doric). The city is closely tied to oil, fishing and farming, with a practical pace. Restaurant tipping is about 10–12.5%. The granite architecture looks grey and cold on an overcast day and sparkles on a sunny one — the city's distinctive impression.",
+    seeAndDo:
+      "Union Street and the granite centre; Aberdeen Art Gallery; the Maritime Museum (North Sea oil and seafaring history); the beachfront and the harbour for boat-watching; King's College and St Machar's Cathedral in Old Aberdeen; out of town, Royal Deeside (around Balmoral) and its many castles.",
+    whenAndTips:
+      "May–September is best, with very long daylight. Winter is cold and windy, and sea fog can affect flights. Hotels are tight and expensive during oil-industry conferences. Seeing the castles and scenery of Deeside usually needs a car or a tour.",
+  },
+
+  inverness: {
+    identity:
+      "Inverness is the capital of the Scottish Highlands, where the River Ness meets the Moray Firth at the north-eastern end of the Great Glen, with a city population of about 60,000 — one of the northernmost cities in the UK, and the gateway to the Highlands, the Isle of Skye and the northern coast. The name means 'mouth of the Ness' in Gaelic.",
+    layout:
+      "Inverness is small, with the River Ness running through it and a set of linked wooded islands in the river. A red-sandstone castle (now a courthouse) stands on high ground by the river. South-west of the city is the Great Glen — a valley slicing straight across Scotland along a fault line, stringing together long, deep lochs including Loch Ness, which the Caledonian Canal connects for navigation.",
+    gettingAround:
+      "Inverness Airport (INV) is about 13 km east of the city, with a bus into town. This is the hub of Highland rail and road, with scenic trains about 3.5 hours to Edinburgh and Glasgow. Seeing the Highlands and the coast essentially needs a car (narrow roads, often single-track with passing places) or a local tour. The climate is temperate maritime, milder than you might expect (warmed by the Gulf Stream), but changeable and windy.",
+    culture:
+      "English is universal, and Gaelic has a cultural presence here (bilingual signs, a Gaelic school and media). The city is the administrative and shopping centre of the Highlands, with a slower pace than the south. Restaurant tipping is about 10–12.5%. Summer daylight is very long (near midnight in June), and winter days are very short.",
+    seeAndDo:
+      "Walks along the River Ness and the islands; the market and the Victorian Market arcade; out of town, Loch Ness (the ruins of Urquhart Castle, boat trips); the locks of the Caledonian Canal; Culloden Battlefield and the Clava Cairns (sombre historic sites); using Inverness as a base to drive to Skye, the North Coast 500 (NC500) and the north-east coast.",
+    whenAndTips:
+      "May–September is best, with very long daylight. From May to September the lowlands and woods have biting midges — take repellent, worst at dusk. Driving in the Highlands means learning the single-track road etiquette and keeping the tank topped up. In winter road conditions and daylight are both limited, and passes may close.",
+  },
+
+  cardiff: {
+    identity:
+      "Cardiff is the capital of Wales, in south Wales where the River Taff reaches the sea, with a metro area of about 480,000. In the 19th century it was one of the largest coal-exporting ports in the world; today it is the political, media and sporting centre of Wales, with the Welsh parliament (the Senedd) and a stadium that often hosts major events in the centre of the city. The name Wales has also travelled the world — for example New South Wales in Australia, named by James Cook in 1770.",
+    layout:
+      "Cardiff is built on low ground where several rivers meet Bristol Bay, and is fairly flat, rising to the north into the Valleys (the historic coal-mining valleys). The centre is compact, with the castle right in the middle; to the south is the redeveloped Cardiff Bay (the former docklands), with the Wales Millennium Centre and the Senedd. The city has many parks.",
+    gettingAround:
+      "Cardiff Airport (CWL) is about 19 km south-west, with bus and train connections; many people also come by train from Bristol or the London airports. The city has local trains (linking the Valleys) and buses, taken with a contactless card. The train to London is about 2 hours. The centre and Cardiff Bay are walkable, with a water bus between them. The climate is temperate maritime, and it is one of the rainier cities in the UK.",
+    culture:
+      "English is universal, and Welsh is co-official — signs and public information are bilingual, schools teach Welsh, and there is a Welsh-language TV channel. The city identifies strongly with rugby (the national sport of Wales), and match days fill the whole city. Restaurant tipping is about 10–12.5%.",
+    seeAndDo:
+      "Cardiff Castle (with Roman wall footings and Victorian Gothic Revival interiors); the National Museum (free, with Impressionist works and Welsh natural history); Cardiff Bay, the Wales Millennium Centre and the Senedd; St Fagans National Museum of History (an open-air museum of Welsh buildings and life, free); a match at the Principality Stadium; north into the Brecon Beacons.",
+    whenAndTips:
+      "May–September is the most comfortable. On rugby match days or big concert days the centre is packed and trains and hotels are very tight — check the fixture list ahead. It rains all year — carry an umbrella. A day trip to the Brecon Beacons needs a car or a tour.",
+  },
+
+  belfast: {
+    identity:
+      "Belfast is the capital of Northern Ireland, in the north-east of the island of Ireland where the River Lagan meets Belfast Lough, with a metro area of about 670,000. From the late 19th to the early 20th century it was a world-class centre of shipbuilding, linen and tobacco, and the Titanic was built here. After decades of conflict, the city's fabric and economy have changed a great deal over the last two or three decades.",
+    layout:
+      "Belfast is built on estuary lowland ringed by hills, with the centre focused on the Victorian City Hall. The east bank of the Lagan is the redeveloped 'Titanic Quarter' (the former shipyards). Parts of west and north Belfast have neighbourhoods distinguished by signs, murals and peace walls, where the history is a sensitive subject. The surrounding hills (such as Cave Hill) are visible from the city.",
+    gettingAround:
+      "Two airports: Belfast International (BFS, about 24 km north-west, mostly budget and long-haul) and George Best Belfast City (BHD, close to the centre, mostly UK domestic). Airport buses run into town. The city has the Glider rapid-transit bus and ordinary buses, taken with a contactless card. There are also ferries to Scotland and England. The climate is temperate maritime — mild, wet and windy.",
+    culture:
+      "English is universal; Irish and Ulster Scots are used in some communities and on signs. Most of the city is very welcoming to visitors, but topics touching on history, politics, religion and community belonging are sensitive, and it is best not to volunteer opinions in conversation. Restaurant tipping is about 10–12.5%.",
+    seeAndDo:
+      "Titanic Belfast (built beside the original slipways, a sombre subject) and the SS Nomadic; the Victorian City Hall (free tours); the Ulster Museum and the Botanic Gardens; St George's Market (weekends); a 'murals and history' tour by taxi or bus (choose a licensed operator that gives a balanced account); an hour north to the Giant's Causeway and the coast road.",
+    whenAndTips:
+      "May–September is best. Around mid-July Northern Ireland has a traditional marching season, and on the day some areas may have traffic controls or a tense atmosphere — read up in advance and simply avoid the relevant routes. It rains all year — carry an umbrella. Popular sites like the Giant's Causeway and the Dark Hedges are best visited early or on a tour.",
+  },
 };

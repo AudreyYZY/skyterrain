@@ -1,0 +1,19 @@
+{
+  "id": "lhr-abz",
+  "name": "伦敦 — 阿伯丁",
+  "nameEn": "London — Aberdeen",
+  "description": "奇尔特恩丘陵 · 沼泽地 · 北约克沼原 · 切维厄特山",
+  "descriptionEn": "Chilterns · The Fens · North York Moors · Cheviot Hills",
+  "depCountry": "uk",
+  "arrCountry": "uk",
+  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1306", "aircraft": "Airbus A321", "depIata": "LHR", "arrIata": "ABZ", "durationMin": 95 },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
+    { "kind": "terrain", "terrainId": "chilterns" },
+    { "kind": "terrain", "terrainId": "the-fens" },
+    { "kind": "terrain", "terrainId": "north-york-moors" },
+    { "kind": "terrain", "terrainId": "cheviot-hills" },
+    { "kind": "city", "id": "abz", "name": "阿伯丁", "nameEn": "Aberdeen", "lat": 57.2019, "lon": -2.1978, "airport": true }
+  ]
+}
