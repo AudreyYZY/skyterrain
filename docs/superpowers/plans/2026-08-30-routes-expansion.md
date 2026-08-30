@@ -9,10 +9,14 @@
 - `data/routes/manifest.ts` 统一注册所有航线 JSON —— **新增航线只改这一处**
   （`lib/routes.ts` 和 `scripts/check-routes.ts` 都从这里 import）。
 - `lib/routes.ts`：`routesForCountry(slug)` → `{domestic, international}`；
-  `routeCountriesForContinent`、`routeCountryLabel`、`isDomesticRoute`。
-- `components/JourneyBar.tsx`：大洲下有航线的国家做切换 pill（>1 国才显示）；
-  国内 / 国际两个分区，网格平铺不横滚；只显示聚焦国家的航线。
+  `routeCountriesForContinent`、`routeCountryLabel`、`isDomesticRoute`、
+  `routeSearchText` / `routeMatches`（按起点/终点/航班号/沿途地形搜索）。
+- `components/JourneyBar.tsx`（PR #42 重做）：平时窄条（已选航线 + 开始/停止）；
+  点开 = 搜索框 + 国家 pill + 国内/国际列表；选中一条即收起。
   `ExplorerApp` 的 `routeCountry` state：选某国地形 → 自动切到该国航线。
+- `CesiumMap.flyRoute`（PR #42 重写）：预取全部航点镜头位置，一条 rAF 曲线一次飞完
+  （Catmull-Rom + smoothstep + 切向朝向），恒定巡航高度；用户滚轮/拖动即交还镜头。
+  地图底部「✈ 正在飞越 · {地形}」浮层；ReadingPanel 航线态可 ✕（停止）/ ▾（折叠）。
 
 ## 每条航线的做法
 
@@ -52,9 +56,13 @@
 `ExplorerApp.handleStartRoute` 的 `onComplete` 已预留：`arrCountry !== depCountry`
 时可切大洲 + `setRouteCountry(arrCountry)`（当前未接，接的时候加 `continentOfCountrySlug`）。
 
-### 其它国家 —— ⬜ 逐国国内航线
-日本 · 澳大利亚 · 新西兰 · 美国 · 加拿大 · 英国 · 冰岛 · 瑞士 · 挪威 · 法国 · 意大利。
-每国 4–8 条国内航线，同一套做法。
+### 其它国家 —— ⬜ 逐国国内航线 + 旅游城市（一个国家一起做）
+顺序：**日本** → 澳大利亚 → 新西兰 → 美国 → 加拿大 → 英国 → 冰岛 → 瑞士 → 挪威 → 法国 → 意大利。
+每国：国内航线（真实航班，覆盖代表性地形，双语解说 ≤3 分钟）+ 旅游城市
+（4–6 座，places-registry + travel-content 6 段 + travel-pois）。
+分支 `feat/routes-<country>`，stack 在上一个上。
+
+PR 栈：main ← #39 ← #40 ← #41 ← #42 ←（日本…）。按序合并，合并后把下一个 PR base 改 main。
 
 ## 相关：旅游城市扩充
 

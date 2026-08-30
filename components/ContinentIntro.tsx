@@ -14,15 +14,15 @@ export interface ContinentCard {
 interface ContinentIntroProps {
   language: Language;
   continents: ContinentCard[];
+  /** 上次停留的大洲 —— 作为轮播的初始定位（仍需用户确认才进入） */
+  initialContinentId?: string;
   /** 落到某张卡时把地球飞过去（预览用，不切换 activeRegion） */
   onPreview: (continentId: string) => void;
   /** 选定某片大陆，进入学习模式 */
   onEnter: (continentId: string) => void;
-  /** 已看过 / 已选定后淡出 */
+  /** 已选定后淡出 */
   onDismiss: () => void;
 }
-
-const SEEN_KEY = "fge-intro-seen";
 
 /** Fisher–Yates，每次加载顺序不固定 */
 function shuffle<T>(arr: T[]): T[] {
@@ -35,13 +35,14 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 /**
- * 初始画面：左右滑动的大陆选择卡片。
- * 顺序 shuffle；滑到哪张卡地球就飞到哪片大陆；点「开始探索」进入该大陆的学习模式。
- * localStorage 记住已看过 —— 之后访问直接跳过（回到上次停留的大洲）。
+ * 初始画面：左右滑动的大陆选择卡片。每次加载都出现，等用户操作。
+ * 顺序 shuffle，初始定位对准上次停留的大洲；只有用户翻卡后地球才跟着飞，
+ * 只有点「开始探索」/ 点选中卡 / 回车才进入。加载时不自动动、不自动进入。
  */
 export default function ContinentIntro({
   language,
   continents,
+  initialContinentId,
   onPreview,
   onEnter,
   onDismiss,
@@ -51,33 +52,28 @@ export default function ContinentIntro({
   const [cards, setCards] = useState<ContinentCard[]>(available);
   const [idx, setIdx] = useState(0);
   const [leaving, setLeaving] = useState(false);
-  const [mounted, setMounted] = useState(true);
   const dragX = useRef(0);
   const dragStart = useRef<number | null>(null);
   const [drag, setDrag] = useState(0);
-  // 用户是否真的翻过卡片 —— 在此之前不动地球（加载时不自动跳大洲）
+  // 用户是否真的翻过卡片 —— 在此之前不动地球（加载时绝不自动跳大洲、也不自动进入）
   const [navigated, setNavigated] = useState(false);
 
-  // 已看过则直接跳过；否则挂载后打乱顺序
+  // 挂载后打乱顺序，并把初始定位对准上次停留的大洲（仍不自动进入）
   useEffect(() => {
-    try {
-      if (localStorage.getItem(SEEN_KEY)) {
-        setMounted(false);
-        onDismiss();
-        return;
-      }
-    } catch {
-      /* ignore */
+    const shuffled = shuffle(available);
+    setCards(shuffled);
+    if (initialContinentId) {
+      const i = shuffled.findIndex((c) => c.id === initialContinentId);
+      if (i >= 0) setIdx(i);
     }
-    setCards(shuffle(available));
-  }, [onDismiss, available]);
+  }, [available, initialContinentId]);
 
   const current = cards[idx];
 
   // 用户翻卡后：落到某张卡 → 地球飞过去。加载时（navigated=false）不动。
   useEffect(() => {
-    if (navigated && mounted && !leaving && current) onPreview(current.id);
-  }, [idx, navigated, mounted, leaving, current, onPreview]);
+    if (navigated && !leaving && current) onPreview(current.id);
+  }, [idx, navigated, leaving, current, onPreview]);
 
   const go = useCallback(
     (dir: number) => {
@@ -94,16 +90,8 @@ export default function ContinentIntro({
   const enter = useCallback(() => {
     if (leaving || !current) return;
     setLeaving(true);
-    try {
-      localStorage.setItem(SEEN_KEY, "1");
-    } catch {
-      /* ignore */
-    }
     onEnter(current.id);
-    window.setTimeout(() => {
-      setMounted(false);
-      onDismiss();
-    }, 520);
+    window.setTimeout(() => onDismiss(), 520);
   }, [leaving, current, onEnter, onDismiss]);
 
   useEffect(() => {
@@ -116,7 +104,7 @@ export default function ContinentIntro({
     return () => window.removeEventListener("keydown", onKey);
   }, [go, enter]);
 
-  if (!mounted || cards.length === 0) return null;
+  if (cards.length === 0) return null;
 
   const onPointerDown = (e: React.PointerEvent) => {
     dragStart.current = e.clientX;
