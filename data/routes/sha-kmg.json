@@ -17,12 +17,50 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true },
-    { "kind": "terrain", "terrainId": "yangtze-delta" },
-    { "kind": "terrain", "terrainId": "jiangnan-hills" },
-    { "kind": "terrain", "terrainId": "poyang" },
-    { "kind": "terrain", "terrainId": "xuefeng" },
-    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
-    { "kind": "city", "id": "kmg", "name": "昆明长水", "nameEn": "Kunming Changshui", "lat": 25.102, "lon": 102.929, "airport": true }
+    {
+      "kind": "city",
+      "id": "sha",
+      "name": "上海虹桥",
+      "nameEn": "Shanghai Hongqiao",
+      "lat": 31.198,
+      "lon": 121.336,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-delta"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jiangnan-hills"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "poyang"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "xuefeng"
+    },
+    {
+      "kind": "feature",
+      "name": "沅江与湘西丘陵",
+      "nameEn": "the Yuan River and western Hunan hills",
+      "lon": 109.6,
+      "lat": 27.9
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yunnan-guizhou"
+    },
+    {
+      "kind": "city",
+      "id": "kmg",
+      "name": "昆明长水",
+      "nameEn": "Kunming Changshui",
+      "lat": 25.102,
+      "lon": 102.929,
+      "airport": true
+    }
   ]
 }

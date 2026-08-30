@@ -17,12 +17,50 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "itm", "name": "大阪伊丹", "nameEn": "Osaka Itami", "lat": 34.786, "lon": 135.438, "airport": true },
-    { "kind": "terrain", "terrainId": "osaka-plain" },
-    { "kind": "terrain", "terrainId": "lake-biwa" },
-    { "kind": "terrain", "terrainId": "japanese-alps" },
-    { "kind": "terrain", "terrainId": "lake-towada" },
-    { "kind": "terrain", "terrainId": "ishikari-plain" },
-    { "kind": "city", "id": "cts", "name": "札幌新千岁", "nameEn": "Sapporo New Chitose", "lat": 42.775, "lon": 141.692, "airport": true }
+    {
+      "kind": "city",
+      "id": "itm",
+      "name": "大阪伊丹",
+      "nameEn": "Osaka Itami",
+      "lat": 34.786,
+      "lon": 135.438,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "osaka-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-biwa"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "japanese-alps"
+    },
+    {
+      "kind": "feature",
+      "name": "东北地方",
+      "nameEn": "Tohoku",
+      "lon": 140,
+      "lat": 38.6
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-towada"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ishikari-plain"
+    },
+    {
+      "kind": "city",
+      "id": "cts",
+      "name": "札幌新千岁",
+      "nameEn": "Sapporo New Chitose",
+      "lat": 42.775,
+      "lon": 141.692,
+      "airport": true
+    }
   ]
 }

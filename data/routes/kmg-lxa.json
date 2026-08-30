@@ -39,6 +39,13 @@
       "terrainId": "tiger-leaping-gorge"
     },
     {
+      "kind": "feature",
+      "name": "怒江与梅里雪山",
+      "nameEn": "the Nu River and Meili Snow Mountains",
+      "lon": 98.6,
+      "lat": 28.3
+    },
+    {
       "kind": "terrain",
       "terrainId": "tsangpo-gorge"
     },

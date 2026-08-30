@@ -36,6 +36,13 @@
       "terrainId": "hengduan"
     },
     {
+      "kind": "feature",
+      "name": "念青唐古拉山",
+      "nameEn": "Nyainqêntanglha Range",
+      "lon": 92.8,
+      "lat": 30.3
+    },
+    {
       "kind": "terrain",
       "terrainId": "qinghai-tibet"
     },

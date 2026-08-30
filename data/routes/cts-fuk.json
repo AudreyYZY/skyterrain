@@ -17,11 +17,46 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "cts", "name": "札幌新千岁", "nameEn": "Sapporo New Chitose", "lat": 42.775, "lon": 141.692, "airport": true },
-    { "kind": "terrain", "terrainId": "ishikari-plain" },
-    { "kind": "terrain", "terrainId": "japanese-alps" },
-    { "kind": "terrain", "terrainId": "lake-biwa" },
-    { "kind": "terrain", "terrainId": "seto-inland-sea" },
-    { "kind": "city", "id": "fuk", "name": "福冈", "nameEn": "Fukuoka", "lat": 33.586, "lon": 130.451, "airport": true }
+    {
+      "kind": "city",
+      "id": "cts",
+      "name": "札幌新千岁",
+      "nameEn": "Sapporo New Chitose",
+      "lat": 42.775,
+      "lon": 141.692,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ishikari-plain"
+    },
+    {
+      "kind": "feature",
+      "name": "日本海",
+      "nameEn": "Sea of Japan",
+      "lon": 139,
+      "lat": 40
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "japanese-alps"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-biwa"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "seto-inland-sea"
+    },
+    {
+      "kind": "city",
+      "id": "fuk",
+      "name": "福冈",
+      "nameEn": "Fukuoka",
+      "lat": 33.586,
+      "lon": 130.451,
+      "airport": true
+    }
   ]
 }

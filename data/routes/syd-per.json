@@ -17,11 +17,46 @@
   },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true },
-    { "kind": "terrain", "terrainId": "blue-mountains" },
-    { "kind": "terrain", "terrainId": "murray-darling" },
-    { "kind": "terrain", "terrainId": "great-victoria-desert" },
-    { "kind": "terrain", "terrainId": "nullarbor-plain" },
-    { "kind": "city", "id": "per", "name": "珀斯", "nameEn": "Perth", "lat": -31.940, "lon": 115.967, "airport": true }
+    {
+      "kind": "city",
+      "id": "syd",
+      "name": "悉尼",
+      "nameEn": "Sydney",
+      "lat": -33.946,
+      "lon": 151.177,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "blue-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "murray-darling"
+    },
+    {
+      "kind": "feature",
+      "name": "澳大利亚内陆干旱区",
+      "nameEn": "the arid Australian interior",
+      "lon": 132,
+      "lat": -31.5
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-victoria-desert"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nullarbor-plain"
+    },
+    {
+      "kind": "city",
+      "id": "per",
+      "name": "珀斯",
+      "nameEn": "Perth",
+      "lat": -31.94,
+      "lon": 115.967,
+      "airport": true
+    }
   ]
 }

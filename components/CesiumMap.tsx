@@ -860,10 +860,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             return;
           }
 
-          // 飞行途中把地形细节调粗一档 —— 大幅减少切片加载，过洋 / 长途不再卡顿发糊。
+          // 飞行途中把地形细节稍微调粗 —— 减少切片加载，过洋 / 长途更顺、少抖。
           // 结束后恢复（见下方 restoreDetail）。
           const prevSSE = viewer.scene.globe.maximumScreenSpaceError;
-          viewer.scene.globe.maximumScreenSpaceError = 6;
+          viewer.scene.globe.maximumScreenSpaceError = 4;
           const restoreDetail = () => {
             viewer.scene.globe.maximumScreenSpaceError = prevSSE;
             viewer.scene.requestRender();
