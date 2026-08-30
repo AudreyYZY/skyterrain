@@ -1,0 +1,17 @@
+{
+  "id": "yyz-yul",
+  "name": "多伦多 — 蒙特利尔",
+  "nameEn": "Toronto — Montreal",
+  "description": "尼亚加拉断崖 · 圣劳伦斯低地",
+  "descriptionEn": "Niagara Escarpment · St. Lawrence Lowlands",
+  "depCountry": "canada",
+  "arrCountry": "canada",
+  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC410", "aircraft": "Airbus A220-300", "depIata": "YYZ", "arrIata": "YUL", "durationMin": 75 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true },
+    { "kind": "terrain", "terrainId": "niagara-escarpment" },
+    { "kind": "terrain", "terrainId": "saint-lawrence-lowlands" },
+    { "kind": "city", "id": "yul", "name": "蒙特利尔", "nameEn": "Montreal", "lat": 45.4706, "lon": -73.7408, "airport": true }
+  ]
+}

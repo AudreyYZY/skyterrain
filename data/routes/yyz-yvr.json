@@ -1,0 +1,19 @@
+{
+  "id": "yyz-yvr",
+  "name": "多伦多 — 温哥华",
+  "nameEn": "Toronto — Vancouver",
+  "description": "加拿大地盾 · 温尼伯湖 · 中部内陆平原 · 加拿大落基山",
+  "descriptionEn": "Canadian Shield · Lake Winnipeg · Interior Plains · Canadian Rockies",
+  "depCountry": "canada",
+  "arrCountry": "canada",
+  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC103", "aircraft": "Boeing 787-9", "depIata": "YYZ", "arrIata": "YVR", "durationMin": 300 },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true },
+    { "kind": "terrain", "terrainId": "canadian-shield" },
+    { "kind": "terrain", "terrainId": "lake-winnipeg" },
+    { "kind": "terrain", "terrainId": "interior-plains-ca" },
+    { "kind": "terrain", "terrainId": "canadian-rockies" },
+    { "kind": "city", "id": "yvr", "name": "温哥华", "nameEn": "Vancouver", "lat": 49.1967, "lon": -123.1815, "airport": true }
+  ]
+}

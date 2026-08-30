@@ -77,6 +77,12 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "us-mountain-west": { zh: "山区西部", en: "Mountain West", order: 43 },
   "us-southwest": { zh: "西南部", en: "Southwest", order: 44 },
   "us-west-coast": { zh: "西海岸", en: "West Coast", order: 45 },
+  // 加拿大（大致由东到西再到北）
+  "ca-atlantic": { zh: "大西洋省份", en: "Atlantic Canada", order: 50 },
+  "ca-central": { zh: "中部（安大略·魁北克）", en: "Central Canada", order: 51 },
+  "ca-prairies": { zh: "草原三省", en: "Prairies", order: 52 },
+  "ca-west-coast": { zh: "西海岸", en: "West Coast", order: 53 },
+  "ca-north": { zh: "北方", en: "The North", order: 54 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -97,6 +103,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "japan", nameZh: "日本", nameEn: "Japan" },
   { country: "new-zealand", nameZh: "新西兰", nameEn: "New Zealand" },
   { country: "usa", nameZh: "美国", nameEn: "United States" },
+  { country: "canada", nameZh: "加拿大", nameEn: "Canada" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -540,6 +547,68 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -118.2437, lat: 34.0522,
     airport: { iata: "LAX", nameZh: "洛杉矶国际机场", nameEn: "Los Angeles Int'l", lon: -118.408, lat: 33.942 },
     source: "洛杉矶市中心 34.0522,-118.2437；LAX 机场：公开资料",
+  },
+
+  // ── 加拿大 ──
+  {
+    id: "toronto", nameZh: "多伦多", nameEn: "Toronto", country: "canada", tier: "major", zone: "ca-central",
+    lon: -79.3832, lat: 43.6532,
+    airport: { iata: "YYZ", nameZh: "多伦多皮尔逊国际机场", nameEn: "Toronto Pearson Int'l", lon: -79.6248, lat: 43.6777 },
+    source: "多伦多市中心 43.6532,-79.3832；YYZ 机场：公开资料",
+  },
+  {
+    id: "ottawa", nameZh: "渥太华", nameEn: "Ottawa", country: "canada", tier: "capital", zone: "ca-central",
+    lon: -75.6972, lat: 45.4215,
+    airport: { iata: "YOW", nameZh: "渥太华麦克唐纳-卡蒂埃国际机场", nameEn: "Ottawa Macdonald–Cartier Int'l", lon: -75.6692, lat: 45.3225 },
+    source: "渥太华市中心 45.4215,-75.6972；YOW 机场：公开资料",
+  },
+  {
+    id: "montreal", nameZh: "蒙特利尔", nameEn: "Montreal", country: "canada", tier: "major", zone: "ca-central",
+    lon: -73.5674, lat: 45.5019,
+    airport: { iata: "YUL", nameZh: "蒙特利尔特鲁多国际机场", nameEn: "Montréal–Trudeau Int'l", lon: -73.7408, lat: 45.4706 },
+    source: "蒙特利尔市中心 45.5019,-73.5674；YUL 机场：公开资料",
+  },
+  {
+    id: "quebec-city", nameZh: "魁北克市", nameEn: "Quebec City", country: "canada", tier: "notable", zone: "ca-central",
+    lon: -71.2080, lat: 46.8139,
+    airport: { iata: "YQB", nameZh: "让·勒萨热国际机场", nameEn: "Québec City Jean Lesage Int'l", lon: -71.3933, lat: 46.7911 },
+    source: "魁北克市中心 46.8139,-71.2080；YQB 机场：公开资料",
+  },
+  {
+    id: "halifax", nameZh: "哈利法克斯", nameEn: "Halifax", country: "canada", tier: "notable", zone: "ca-atlantic",
+    lon: -63.5752, lat: 44.6488,
+    airport: { iata: "YHZ", nameZh: "哈利法克斯斯坦菲尔德国际机场", nameEn: "Halifax Stanfield Int'l", lon: -63.5086, lat: 44.8808 },
+    source: "哈利法克斯市中心 44.6488,-63.5752；YHZ 机场：公开资料",
+  },
+  {
+    id: "st-johns", nameZh: "圣约翰斯", nameEn: "St. John's", country: "canada", tier: "notable", zone: "ca-atlantic",
+    lon: -52.7126, lat: 47.5615,
+    airport: { iata: "YYT", nameZh: "圣约翰斯国际机场", nameEn: "St. John's Int'l", lon: -52.7519, lat: 47.6186 },
+    source: "圣约翰斯市中心 47.5615,-52.7126；YYT 机场：公开资料",
+  },
+  {
+    id: "winnipeg", nameZh: "温尼伯", nameEn: "Winnipeg", country: "canada", tier: "notable", zone: "ca-prairies",
+    lon: -97.1384, lat: 49.8951,
+    airport: { iata: "YWG", nameZh: "温尼伯理查森国际机场", nameEn: "Winnipeg Richardson Int'l", lon: -97.2399, lat: 49.9100 },
+    source: "温尼伯市中心 49.8951,-97.1384；YWG 机场：公开资料",
+  },
+  {
+    id: "calgary", nameZh: "卡尔加里", nameEn: "Calgary", country: "canada", tier: "major", zone: "ca-prairies",
+    lon: -114.0719, lat: 51.0447,
+    airport: { iata: "YYC", nameZh: "卡尔加里国际机场", nameEn: "Calgary Int'l", lon: -114.0106, lat: 51.1315 },
+    source: "卡尔加里市中心 51.0447,-114.0719；YYC 机场：公开资料",
+  },
+  {
+    id: "edmonton", nameZh: "埃德蒙顿", nameEn: "Edmonton", country: "canada", tier: "notable", zone: "ca-prairies",
+    lon: -113.4938, lat: 53.5461,
+    airport: { iata: "YEG", nameZh: "埃德蒙顿国际机场", nameEn: "Edmonton Int'l", lon: -113.5797, lat: 53.3097 },
+    source: "埃德蒙顿市中心 53.5461,-113.4938；YEG 机场：公开资料",
+  },
+  {
+    id: "vancouver", nameZh: "温哥华", nameEn: "Vancouver", country: "canada", tier: "major", zone: "ca-west-coast",
+    lon: -123.1207, lat: 49.2827,
+    airport: { iata: "YVR", nameZh: "温哥华国际机场", nameEn: "Vancouver Int'l", lon: -123.1815, lat: 49.1967 },
+    source: "温哥华市中心 49.2827,-123.1207；YVR 机场：公开资料",
   },
 ];
 

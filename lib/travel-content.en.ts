@@ -1166,4 +1166,169 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "March–May and September–November are the most pleasant. Late summer into autumn is wildfire season — adjust plans to official information and watch air quality. Traffic is heavy — plan by district and avoid the morning and evening peaks. The coast is cool morning and evening while inland is hot by day — carry a jacket. Attractions are far apart — allow travel time.",
   },
+
+  "canada-overview": {
+    identity:
+      "Canada is the world's second-largest country, spanning northern North America from the Atlantic to the Pacific and up to the Arctic Ocean, with a population of about 40 million — most of it in a narrow southern belt not far from the US border. The official languages are English and French (French mainly in Quebec). From east to west the land runs roughly: the old low mountains of the Atlantic coast, the St Lawrence valley, the Canadian Shield covering most of the country, the interior prairies, the Rockies and the western ranges, and the Coast Mountains on the Pacific; to the north are vast tundra and the Arctic islands.",
+    layout:
+      "It helps to divide Canada into regions: Atlantic Canada (Newfoundland, Nova Scotia and others — fishing and coast); Central Canada (Ontario and Quebec, the population and economic core, with Toronto, Montreal, Ottawa and Quebec City); the Prairie provinces (Manitoba, Saskatchewan, Alberta — wheat and oil, with Calgary, Edmonton and Winnipeg); the West Coast (British Columbia, Vancouver, between mountains and sea); and the thinly peopled northern territories. Distances between cities are huge, and crossing the country is almost always done by air.",
+    gettingAround:
+      "The domestic air network is extensive, with frequent service between major cities; VIA Rail runs an intercity train in the eastern corridor (Quebec City–Windsor), and other lines are sparse and slow. Big cities have a subway or light rail (Toronto, Montreal, Vancouver, Ottawa); public transport overall is a little better than in the US but driving still dominates (on the right). In winter roads ice over and are ploughed often; check conditions in the north and the mountains. Tipping is close to US practice: 15–20% for table service. Tap water is generally drinkable. Power is 120V with two flat pins.",
+    culture:
+      "English and French are the official languages, and federal institutions, packaging and road signs are usually bilingual; Quebec is French-first, with signage and service in French first. Canada identifies as a multicultural, immigrant society, with many ethnic communities in the big cities. Indigenous (First Nations, Inuit, Métis) place names and cultures are present everywhere, and many places open events with an acknowledgement of 'unceded Indigenous territory'. People are generally polite and orderly in queues.",
+    seeAndDo:
+      "Nature: Banff and Jasper national parks in the Rockies, the Icefields Parkway, Lake Louise; the Bay of Fundy tides, the Gaspé Peninsula and Gros Morne in the east; autumn maple colour (Quebec, Ontario); the northern lights. Cities: the CN Tower and diverse neighbourhoods of Toronto, the old town and French culture of Montreal, the walls of Quebec City, Stanley Park and the coastline of Vancouver. Winter brings skiing, ice sports and winter carnivals.",
+    whenAndTips:
+      "June–September is the travel high season, with the most comfortable weather and long daylight; late September to mid-October is the eastern maple-colour period. Winters are long and cold (often below −20°C inland) but are also the season for skiing and the northern lights — bring proper cold-weather gear. Citizens of most countries need an electronic travel authorisation (eTA) or a visa arranged online before travelling to Canada. The country is vast — don't over-pack the itinerary, and allow flying and connection time between cities.",
+  },
+
+  toronto: {
+    identity:
+      "Toronto is the most populous city in Canada, with a metro area of about 6.6 million, on the north-western shore of Lake Ontario, and the country's financial, media and immigration centre — about half the city's residents were born abroad, making it one of the most diverse cities in the world. It is not the capital (that is Ottawa), but it is the capital of the province of Ontario. The name comes from a Mohawk word meaning roughly 'where there are trees standing in the water', originally for a spot further north at Lake Simcoe.",
+    layout:
+      "Toronto is built on a plain sloping gently down to the north shore of Lake Ontario, with a regular street grid. Downtown is right on the lake, and the CN Tower and the financial-district towers define the skyline; Yonge Street runs north–south. Along the city's northern edge is a low wooded slope — a stretch of the Niagara Escarpment. An hour to the south-west along the lake are Niagara Falls.",
+    gettingAround:
+      "Pearson International Airport (YYZ) is north-west of the city, with the UP Express train about 25 minutes to Union Station downtown; Billy Bishop Airport (YTZ) is on the island, close to downtown. The city has a subway, streetcars and buses, using a Presto card; downtown is walkable. The climate is humid continental with four clear seasons: warm, sometimes muggy summers, cold snowy winters, wind off the lake, and short spring and autumn.",
+    culture:
+      "English is universal, with sizeable Chinatown, Little Italy, Little Portugal and Little India neighbourhoods. Torontonians identify strongly with local sport and with the CN Tower as one of the world's tallest structures. Tip 15–20% for table service. In winter pavements ice over — dress warm and watch your footing; summer brings many street festivals.",
+    seeAndDo:
+      "The CN Tower (observation deck / glass floor); the waterfront and the Toronto Islands (a ferry across for the skyline view); the Royal Ontario Museum and the Art Gallery of Ontario; St Lawrence Market; Kensington Market and Chinatown; the Hockey Hall of Fame; an hour out of town, Niagara Falls (the Canadian-side viewpoints and the Maid of the Mist boat).",
+    whenAndTips:
+      "May–October has the best weather, with many summer festivals. Winter is cold and windy off the lake, often well below freezing from December to February. The Niagara Falls day trip is well established but crowded in peak season — book the boat ahead. The UP Express from the airport is faster and cheaper than a taxi.",
+  },
+
+  ottawa: {
+    identity:
+      "Ottawa is the capital of Canada, in eastern Ontario on the south bank of the Ottawa River, facing the city of Gatineau in Quebec across the water, with a metro area of about 1.5 million. Britain made it the capital in the mid-19th century precisely because it sits on the boundary between English Ontario and French Quebec, is well back from the US border, and was easier to defend. The city and the river are named for the Odawa (Ottawa) Indigenous nation.",
+    layout:
+      "The core of Ottawa is Parliament Hill — a group of Gothic parliament buildings on a cliff above the Ottawa River. The Rideau Canal runs from beside Parliament Hill through the city toward the lake system to the south; it was a 19th-century military canal and is now used for boating in summer and, in winter, becomes one of the longest natural skating rinks in the world. Downtown is compact and walkable, and the ByWard Market is the old quarter.",
+    gettingAround:
+      "Macdonald–Cartier International Airport (YOW) is south of the city, with bus and light-rail connections. The city has the O-Train light rail and buses, using a Presto card; the core is walkable. The climate is humid continental, and this is one of the coldest capital cities in the world: winters are long and hard (the Rideau Canal freezes thick), summers are warm and sometimes muggy, with tulips in May and autumn colour in October.",
+    culture:
+      "English and French are both used, with bilingual federal institutions and signs; across the river in Gatineau, French dominates. It is a city of civil servants and museums, slower-paced than Toronto or Montreal. Most national museums need a timed-entry ticket booked online. Tip 15–20% for table service. Skating on the canal in winter is a local tradition, with stalls selling hot drinks and 'BeaverTails' pastries.",
+    seeAndDo:
+      "Parliament Hill (the summer Changing of the Guard, building tours); the National Gallery of Canada, the Canadian Museum of History (across the river in Gatineau, looking back at Parliament), the War Museum, the Museum of Nature; the Rideau Canal (boat in summer, skating in winter); the ByWard Market; the Tulip Festival in May (marking Canada's wartime shelter of the Dutch royal family).",
+    whenAndTips:
+      "May (tulips), June–September and late September to mid-October (autumn colour) are best. Winter is bitterly cold but distinctive — canal skating usually opens in January–February, depending on the ice notices. The national museums are numerous and often have free periods — planning your route can save a lot.",
+  },
+
+  montreal: {
+    identity:
+      "Montreal is the largest city in Quebec and the second-largest in Canada, with a metro area of about 4.3 million, and one of the largest French-speaking cities in North America (French is the dominant everyday language, and most people also speak English). The city is built on a large island in the St Lawrence River, centred on a small hill called Mont Réal ('Mount Royal') — Jacques Cartier climbed it in 1535 and named it, and the name later became Montréal.",
+    layout:
+      "The island of Montreal is wrapped by the St Lawrence, with Mount Royal in the middle and a park on top overlooking the whole city. Old Montreal (Vieux-Montréal) is by the river, with cobbled streets and 17th–19th-century stone houses and the Notre-Dame Basilica. Beneath the downtown towers is a large 'Underground City' pedestrian network that lets you walk a long way without going outside in winter. The streets are broadly a grid, with some French-style diagonals.",
+    gettingAround:
+      "Trudeau International Airport (YUL) is west of the city, with the 747 express bus straight to downtown (a light-rail line, the REM, is being added). The city has a four-line métro plus buses, using an OPUS card; downtown and the old town are walkable, and BIXI bikeshare is handy in summer. The climate is humid continental: warm, humid summers packed with festivals, and long, cold, snowy winters, with a muddy thaw in spring.",
+    culture:
+      "French is the dominant language, and shops and restaurants usually greet you in French (bonjour) — a word of French is welcome; most of the service industry also speaks English. Quebec has a distinct French–North American culture — music, comedy, circus (the home of Cirque du Soleil), café life. Tip 15–20% for table service (about 15% of the pre-tax total). In summer there is a free outdoor festival almost every week.",
+    seeAndDo:
+      "Old Montreal and the Old Port, the Notre-Dame Basilica; the summit of Mount Royal for the city view; the Jean-Talon and Atwater markets; the Museum of Fine Arts; the métro to the Olympic Park and Botanical Garden; poutine (fries with cheese curds and gravy), smoked-meat sandwiches, bagels. In summer the Jazz Festival and the fireworks festival; in winter a light festival.",
+    whenAndTips:
+      "June–September is the best season, with the most festivals; late September to mid-October for autumn colour. Winters are cold and snowy, but the Underground City and indoor attractions keep winter workable. A word of French smooths interactions. Around 1 July is the traditional Quebec moving day — transport and lodging are tight.",
+  },
+
+  "quebec-city": {
+    identity:
+      "Quebec City is the capital of the province of Quebec, set on a cliff (Cap Diamant) where the St Lawrence River suddenly narrows, with a metro area of about 850,000. The name comes from an Algonquin word, 'kébec', meaning exactly 'where the river narrows'. Its old town is the only walled city in North America with its walls intact; it was founded by the French in 1608 and is one of the earliest European settlements in North America.",
+    layout:
+      "Quebec City has an Upper Town and a Lower Town: the Upper Town is on top of the cliff, with the walls, the star-shaped Citadelle and the landmark Château Frontenac hotel; the Lower Town is by the river, the earliest settlement, with Place Royale and the stone lanes of Rue du Petit-Champlain. A funicular and steep stairs connect the two.",
+    gettingAround:
+      "Jean Lesage International Airport (YQB) is west of the city, with buses and taxis. The city is small and the old town is entirely walkable (hilly, with cobbles — wear comfortable shoes). The climate is humid continental, with cold, snowy winters (the season of the Winter Carnival and an ice hotel) and mild summers with long daylight.",
+    culture:
+      "French is the overwhelmingly dominant language, more so than in Montreal — a French greeting helps; the tourist areas mostly speak English. There is a strong French-Canadian tradition — traditional food (tourtière meat pie, maple), folk music, Catholic churches. Tip 15–20% for table service. The Winter Carnival (January–February) has ice sculptures, parades and the 'Bonhomme' snowman mascot.",
+    seeAndDo:
+      "Walk the walls and see the Citadelle changing of the guard; the Château Frontenac and Dufferin Terrace; Place Royale, Rue du Petit-Champlain and the murals in the Lower Town; the Museum of Civilisation; the ferry to Lévis for the view back at the old town; Montmorency Falls (higher than Niagara); in autumn, Île d'Orléans for orchards and sugar shacks.",
+    whenAndTips:
+      "June–October has pleasant weather, with the best maple colour late September to mid-October. Winter is bitterly cold but full of atmosphere (the Carnival, the ice hotel). The old town is steep and cobbled and very slippery in winter — wear grippy shoes. In peak periods (summer, leaf season, Carnival) lodging is tight — book early.",
+  },
+
+  halifax: {
+    identity:
+      "Halifax is the capital of Nova Scotia and the largest city in Atlantic Canada, with a metro area of about 500,000, a natural-harbour city that was historically a major British naval base in North America. The name comes from an 18th-century British politician, the Earl of Halifax (there is also a town called Halifax in Yorkshire, England).",
+    layout:
+      "Halifax is built on a hillside on the west side of a long, deep harbour, with the city of Dartmouth on the far side, linked by ferries and bridges. Downtown is right on the water, and on the hilltop is the star-shaped Citadel fort overlooking the whole harbour. A waterfront boardwalk runs from the casino to the pier markets.",
+    gettingAround:
+      "Stanfield International Airport (YHZ) is well out of town (about 35 km), with an airport bus. City buses and the harbour ferry (one of the oldest ferry routes in North America) use one fare. Downtown is compact and walkable, but steep. The climate is maritime and milder than inland: cool, foggy summers, autumn storms from the remains of hurricanes, and damp winters with a rain–snow mix.",
+    culture:
+      "English is universal. This is a seafaring and musical city, with Celtic-style live folk music in the pubs. Seafood is a staple (lobster rolls, mussels, Atlantic salmon). Tip 15–20% for table service. The city has deep ties to two disasters: many victims of the 1912 Titanic are buried here; and a 1917 munitions-ship explosion in the harbour was one of the largest human-made explosions before the nuclear age, with a dedicated exhibit at the maritime museum (a sombre subject).",
+    seeAndDo:
+      "The Citadel fort (noon gun); the Maritime Museum of the Atlantic (Titanic and the 1917 explosion); the waterfront boardwalk and pier markets; the Public Gardens; the ferry to Dartmouth and back; south along the coast to Peggys Cove for the lighthouse and granite shore; the Annapolis Valley for vineyards.",
+    whenAndTips:
+      "June–October is best, with seafood and music festivals in September. Watch the forecast for hurricane remnants in September–October (they can cause flight delays). The airport is far from town — plan the transfer. Driving the coast for lighthouses is a classic route — the rocky shore is slippery, so keep away from the surf zone.",
+  },
+
+  "st-johns": {
+    identity:
+      "St. John's is the capital of Newfoundland and Labrador, at the far eastern tip of the island of Newfoundland, with a metro area of a bit over 200,000 — the easternmost city in North America, and one of the earliest European settlements on the continent. The name is traditionally said to come from the feast of St John the Baptist (24 June 1497, the date John Cabot is traditionally said to have arrived).",
+    layout:
+      "St. John's hugs a nearly landlocked harbour with a single narrow channel (The Narrows) out to the Atlantic, cliffs on either side, and Signal Hill on the northern headland. Downtown houses climb steep slopes and are painted bright candy colours ('Jellybean Row'). Beyond the city, open rocky barrens and coast begin quickly.",
+    gettingAround:
+      "St. John's International Airport (YYT) is very close to town (about 10 minutes). The city has buses, but it is steep and attractions are scattered — a rental car is easiest, and is really needed for the coast and lighthouses. The climate is maritime — foggy, windy and very changeable, with cool summers (rarely above 20°C) and damp winters with rain, snow and freezing rain. This is one of the foggiest, windiest and wettest cities in Canada.",
+    culture:
+      "English is universal, with a distinctive Newfoundland accent and vocabulary (influenced by Ireland and the west of England). The city is known for hospitality, folk music and pub culture, and George Street claims one of the highest densities of bars anywhere. Seafood and traditional food (cod, Jiggs' dinner) are staples. Visitors sometimes take part in a half-joking 'screech-in' welcome ceremony (kiss a cod, take a shot of rum). Tip 15–20% for table service.",
+    seeAndDo:
+      "Signal Hill (where Marconi received the first transatlantic radio signal) and Cape Spear (the easternmost point of North America, for whales and icebergs); the candy-coloured houses and Water Street downtown; The Rooms (the provincial museum); hiking the East Coast Trail; May–June for drifting icebergs, June–July for humpback whales and one of the world's largest puffin colonies.",
+    whenAndTips:
+      "June–September is best: May–June is iceberg season on 'Iceberg Alley', June–August for whales and seabirds. The weather changes fast and it is often foggy and windy — carry a windproof, waterproof jacket and keep the itinerary flexible (flights are often fog-delayed). At the coastal cliffs stay well back from the edge — the wind is strong.",
+  },
+
+  winnipeg: {
+    identity:
+      "Winnipeg is the capital of Manitoba, on the eastern edge of the Canadian prairies at the meeting of the Red and Assiniboine rivers, with a metro area of about 850,000. This has long been a meeting point for Indigenous peoples and the fur trade, and became the 'gateway to the West' with the railway in the late 19th century. The name comes from the Cree 'wīnipēk', meaning 'muddy water', for Lake Winnipeg to the north.",
+    layout:
+      "Winnipeg is built on an extremely flat lake plain (the bed of glacial Lake Agassiz), with no hills at all. The river junction, The Forks, is the historic and present-day centre, with a market and paths. The streets are a large grid, and downtown has one of the widest intersections in Canada (Portage and Main).",
+    gettingAround:
+      "Richardson International Airport (YWG) is very close to downtown (about 10 minutes). The city relies on buses, is spread out, and most people drive. The climate is a classic continental prairie one with a huge annual range: warm summers with thunderstorms and mosquitoes, and extreme cold and wind in winter (a January wind-chill often below −30°C), with plenty of sunshine.",
+    culture:
+      "English is universal, with large Ukrainian, Filipino and Indigenous communities — one of the higher urban Indigenous population shares among Canada's big cities. Locals are proud of their cultural institutions (the Royal Winnipeg Ballet, the human-rights museum). Tip 15–20% for table service. Winter is extremely cold, with a big indoor–outdoor gap — bring full cold-weather gear.",
+    seeAndDo:
+      "The Canadian Museum for Human Rights (a striking landmark building); The Forks market and riverside paths (the river becomes a long skating trail in winter); the Manitoba Museum; the French quarter of St Boniface and its cathedral ruins; Assiniboine Park and Zoo (with a polar-bear exhibit); the beaches on Lake Winnipeg in summer, and the northern lights in winter.",
+    whenAndTips:
+      "June–September is the most comfortable (and the festival season). Winter is severe — if you come in winter, prepare for −30°C and exposed skin can get frostbite within minutes. Summer evenings bring mosquitoes — take repellent. Attractions are scattered — rent a car or plan the buses.",
+  },
+
+  calgary: {
+    identity:
+      "Calgary is the largest city in Alberta, on the eastern foot of the Rockies where the prairies meet the mountains, with a metro area of about 1.6 million. It is Canada's oil-and-gas centre and the gateway to Banff, the Rockies and cowboy culture. The name comes from Calgary on the Isle of Mull in Scotland, given by an early North-West Mounted Police commissioner.",
+    layout:
+      "Calgary is built on the prairie at the junction of two rivers (the Bow and the Elbow), at about 1,045 m, with the jagged Rockies on the western skyline. Downtown has a dense cluster of towers and one of Canada's most complete indoor skywalk systems (the +15 network) for the cold winters. The city sprawls in all directions and depends heavily on its ring road.",
+    gettingAround:
+      "Calgary International Airport (YYC) is north-east of the city, with buses and an airport coach to downtown and Banff. The city has the CTrain light rail (free in the downtown section) and buses, using a Connect card; outside downtown you basically need to drive. The climate is semi-arid and high: lots of sun, dry air, big day–night swings, and in winter the 'chinook' — a warm wind off the Rockies that can raise the temperature 15–20°C in a day.",
+    culture:
+      "English is universal. Calgary is proud of its cowboy culture; the Calgary Stampede each July is one of North America's largest rodeos and fairs, and the whole city dresses in western wear. The city is young, with a strong outdoor culture. Tip 15–20% for table service. Chinooks come and go fast in winter — dress in layers you can add or shed.",
+    seeAndDo:
+      "The Calgary Tower observation deck; the Glenbow Museum and Studio Bell (the National Music Centre); Prince's Island Park and the Bow River paths; Heritage Park historical village; the Stampede in July. Most people use Calgary as a base, driving 1.5 hours west into Banff National Park, Lake Louise and Canmore.",
+    whenAndTips:
+      "June–September is best; during the Stampede in July the whole city is booked out — reserve early. Driving into the mountains in winter needs winter tyres and a check of the pass conditions. The altitude and strong sun call for hydration and sunscreen. Banff is a full-day trip, and the national park needs a park pass.",
+  },
+
+  edmonton: {
+    identity:
+      "Edmonton is the capital of Alberta, in the centre of the province on both banks of the North Saskatchewan River valley, with a metro area of about 1.5 million — one of the northernmost large cities in Canada, and the supply base for the northern oil-sands region and the territories. The name comes from Edmonton, a district of London, England, via a Hudson's Bay Company official's home town.",
+    layout:
+      "Edmonton straddles the North Saskatchewan River, whose banks hold one of the largest connected urban park systems in North America (the 'river valley'). Downtown is on the plain on the north bank; south across the river are the historic Old Strathcona district and the university. The city is flat, gridded and very spread out.",
+    gettingAround:
+      "Edmonton International Airport (YEG) is well south of the city, with an airport bus. The city has LRT and buses, using an Arc card; overall it is very car-dependent. The climate is continental, with long, hard winters (colder than Calgary, less affected by chinooks) and warm summers with very long daylight (it gets dark late in June), good for the outdoors.",
+    culture:
+      "English is universal. Edmonton calls itself the 'Festival City', with a festival almost every week in summer (a folk festival, a Fringe theatre festival that is one of the largest in North America). It is also known for hockey and for big shopping malls. Tip 15–20% for table service. Winter is extremely cold — dress warm.",
+    seeAndDo:
+      "West Edmonton Mall (once the world's largest, with a water park and an indoor roller coaster); the Alberta Legislature and the river-valley paths and bridges; the Royal Alberta Museum; Elk Island National Park (for bison, very close to the city); summer festivals, and the northern lights in winter. Many people use Edmonton as a starting point for the Rockies to the south or nature areas beyond Calgary.",
+    whenAndTips:
+      "June–August is the most comfortable, with very long daylight and dense festivals. Winter is very cold — prepare for below −25°C. The city is spread out with limited transit — a rental car is easier. For the Rockies, people usually go via Calgary or drive directly, a fair distance.",
+  },
+
+  vancouver: {
+    identity:
+      "Vancouver is the largest city in British Columbia, in the south-western corner of Canada between a river delta and an ocean inlet, with a metro area of about 2.7 million — backed by the Coast Mountains and facing the sea, and known for its mountains-meet-ocean setting and its mild, rainy climate. The name comes from the 18th-century British naval officer George Vancouver (there is also a city called Vancouver in Washington State, USA).",
+    layout:
+      "The city of Vancouver is mostly on a peninsula: downtown and the towers are at the eastern end, Stanley Park takes up a large tract of original forest at the western tip, and False Creek separates downtown from the south side. South of the city is the flat farmland of the Fraser River delta and the airport; north across the inlet are North and West Vancouver and the steep Coast Mountains (with ski areas).",
+    gettingAround:
+      "Vancouver International Airport (YVR) is on an island in the delta, with the Canada Line light rail about 25 minutes to downtown. The city has the driverless SkyTrain, buses and a SeaBus, using a Compass card; downtown and Stanley Park are good for walking and cycling. The climate is temperate maritime: mild, rainy winters (rarely snow in the city, snow in the mountains), and dry, warm summers, never extreme.",
+    culture:
+      "English is universal, and this is one of the most heavily Asian-Canadian big cities in the country, with large Cantonese-, Mandarin- and Punjabi-speaking communities and extremely diverse food. Life revolves around the outdoors — hiking, skiing, kayaking, running. The city is on the traditional territory of the Musqueam, Squamish and Tsleil-Waututh nations. Tip 15–20% for table service. It rains a lot — a waterproof jacket is essential.",
+    seeAndDo:
+      "Stanley Park (the seawall, totem poles, old-growth forest); Granville Island market; the steam clock in Gastown; the Capilano Suspension Bridge; the gondola up Grouse Mountain for the city view; cycling the seawall around False Creek; an hour north to Whistler (the Winter Olympics venue, a year-round resort), or south to Richmond for Asian food.",
+    whenAndTips:
+      "June–September is best — dry and mild; the rest of the year is wet, with snow for skiing in the mountains. In summer there is occasional smoke haze from interior wildfires — watch air quality. Housing and prices are high. The Sea-to-Sky Highway to Whistler is spectacular but winding, and needs winter tyres in winter.",
+  },
 };

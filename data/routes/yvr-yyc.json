@@ -1,0 +1,16 @@
+{
+  "id": "yvr-yyc",
+  "name": "温哥华 — 卡尔加里",
+  "nameEn": "Vancouver — Calgary",
+  "description": "加拿大落基山",
+  "descriptionEn": "Canadian Rockies",
+  "depCountry": "canada",
+  "arrCountry": "canada",
+  "flight": { "airline": "西捷航空", "airlineEn": "WestJet", "flightNo": "WS210", "aircraft": "Boeing 737-800", "depIata": "YVR", "arrIata": "YYC", "durationMin": 85 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "yvr", "name": "温哥华", "nameEn": "Vancouver", "lat": 49.1967, "lon": -123.1815, "airport": true },
+    { "kind": "terrain", "terrainId": "canadian-rockies" },
+    { "kind": "city", "id": "yyc", "name": "卡尔加里", "nameEn": "Calgary", "lat": 51.1315, "lon": -114.0106, "airport": true }
+  ]
+}

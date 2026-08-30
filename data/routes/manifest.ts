@@ -69,6 +69,15 @@ import denLas from "./den-las.json" with { type: "json" };
 import sfoLas from "./sfo-las.json" with { type: "json" };
 import miaJfk from "./mia-jfk.json" with { type: "json" };
 import msyLax from "./msy-lax.json" with { type: "json" };
+// 加拿大国内
+import yyzYvr from "./yyz-yvr.json" with { type: "json" };
+import yulYvr from "./yul-yvr.json" with { type: "json" };
+import yyzYul from "./yyz-yul.json" with { type: "json" };
+import yyzYhz from "./yyz-yhz.json" with { type: "json" };
+import yhzYyt from "./yhz-yyt.json" with { type: "json" };
+import yvrYyc from "./yvr-yyc.json" with { type: "json" };
+import yycYwg from "./yyc-ywg.json" with { type: "json" };
+import yegYyz from "./yeg-yyz.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -124,4 +133,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   sfoLas,
   miaJfk,
   msyLax,
+  yyzYvr,
+  yulYvr,
+  yyzYul,
+  yyzYhz,
+  yhzYyt,
+  yvrYyc,
+  yycYwg,
+  yegYyz,
 ] as unknown as FlightRoute[];
