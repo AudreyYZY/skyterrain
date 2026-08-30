@@ -70,6 +70,15 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   // 新西兰
   "nz-north": { zh: "北岛", en: "North Island", order: 30 },
   "nz-south": { zh: "南岛", en: "South Island", order: 31 },
+  // 澳大利亚（州 / 领地，大致由东南向外）
+  "au-nsw": { zh: "新南威尔士", en: "New South Wales", order: 40 },
+  "au-act": { zh: "首都领地", en: "Australian Capital Territory", order: 41 },
+  "au-vic": { zh: "维多利亚", en: "Victoria", order: 42 },
+  "au-tas": { zh: "塔斯马尼亚", en: "Tasmania", order: 43 },
+  "au-qld": { zh: "昆士兰", en: "Queensland", order: 44 },
+  "au-sa": { zh: "南澳大利亚", en: "South Australia", order: 45 },
+  "au-wa": { zh: "西澳大利亚", en: "Western Australia", order: 46 },
+  "au-nt": { zh: "北领地", en: "Northern Territory", order: 47 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -93,46 +102,106 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
 
 export const CITY_REGISTRY: CityEntry[] = [
   {
-    id: "sydney", nameZh: "悉尼", nameEn: "Sydney", country: "australia", tier: "major",
+    id: "sydney", nameZh: "悉尼", nameEn: "Sydney", country: "australia", tier: "major", zone: "au-nsw",
     lon: 151.2093, lat: -33.8688,
     airport: { iata: "SYD", nameZh: "悉尼金斯福德·史密斯机场", nameEn: "Sydney Kingsford Smith", lon: 151.177, lat: -33.946 },
     source: "悉尼市中心 -33.8688,151.2093；SYD 机场坐标：公开资料",
   },
   {
-    id: "melbourne", nameZh: "墨尔本", nameEn: "Melbourne", country: "australia", tier: "major",
+    id: "melbourne", nameZh: "墨尔本", nameEn: "Melbourne", country: "australia", tier: "major", zone: "au-vic",
     lon: 144.9631, lat: -37.8136,
     airport: { iata: "MEL", nameZh: "墨尔本机场（图拉马林）", nameEn: "Melbourne (Tullamarine)", lon: 144.843, lat: -37.669 },
     source: "墨尔本 CBD -37.8136,144.9631；MEL 机场：公开资料",
   },
   {
-    id: "brisbane", nameZh: "布里斯班", nameEn: "Brisbane", country: "australia", tier: "major",
+    id: "brisbane", nameZh: "布里斯班", nameEn: "Brisbane", country: "australia", tier: "major", zone: "au-qld",
     lon: 153.0251, lat: -27.4698,
     airport: { iata: "BNE", nameZh: "布里斯班机场", nameEn: "Brisbane", lon: 153.117, lat: -27.384 },
     source: "布里斯班 CBD -27.4698,153.0251；BNE 机场：公开资料",
   },
   {
-    id: "perth", nameZh: "珀斯", nameEn: "Perth", country: "australia", tier: "major",
+    id: "perth", nameZh: "珀斯", nameEn: "Perth", country: "australia", tier: "major", zone: "au-wa",
     lon: 115.8605, lat: -31.9523,
     airport: { iata: "PER", nameZh: "珀斯机场", nameEn: "Perth", lon: 115.967, lat: -31.940 },
     source: "珀斯 CBD -31.9523,115.8605；PER 机场：公开资料",
   },
   {
-    id: "adelaide", nameZh: "阿德莱德", nameEn: "Adelaide", country: "australia", tier: "major",
+    id: "adelaide", nameZh: "阿德莱德", nameEn: "Adelaide", country: "australia", tier: "major", zone: "au-sa",
     lon: 138.6007, lat: -34.9285,
     airport: { iata: "ADL", nameZh: "阿德莱德机场", nameEn: "Adelaide", lon: 138.531, lat: -34.945 },
     source: "阿德莱德 CBD -34.9285,138.6007；ADL 机场：公开资料",
   },
   {
-    id: "cairns", nameZh: "凯恩斯", nameEn: "Cairns", country: "australia", tier: "notable",
+    id: "cairns", nameZh: "凯恩斯", nameEn: "Cairns", country: "australia", tier: "notable", zone: "au-qld",
     lon: 145.7710, lat: -16.9203,
     airport: { iata: "CNS", nameZh: "凯恩斯机场", nameEn: "Cairns", lon: 145.755, lat: -16.885 },
     source: "凯恩斯 -16.9203,145.7710；CNS 机场：公开资料",
   },
   {
-    id: "darwin", nameZh: "达尔文", nameEn: "Darwin", country: "australia", tier: "notable",
+    id: "darwin", nameZh: "达尔文", nameEn: "Darwin", country: "australia", tier: "notable", zone: "au-nt",
     lon: 130.8456, lat: -12.4634,
     airport: { iata: "DRW", nameZh: "达尔文机场", nameEn: "Darwin", lon: 130.877, lat: -12.415 },
     source: "达尔文 -12.4634,130.8456；DRW 机场：公开资料",
+  },
+  {
+    id: "canberra", nameZh: "堪培拉", nameEn: "Canberra", country: "australia", tier: "capital", zone: "au-act",
+    lon: 149.1300, lat: -35.2809,
+    airport: { iata: "CBR", nameZh: "堪培拉机场", nameEn: "Canberra", lon: 149.195, lat: -35.307 },
+    source: "堪培拉市中心 -35.2809,149.1300；CBR 机场：公开资料",
+  },
+  {
+    id: "newcastle", nameZh: "纽卡斯尔", nameEn: "Newcastle", country: "australia", tier: "major", zone: "au-nsw",
+    lon: 151.7817, lat: -32.9283,
+    airport: { iata: "NTL", nameZh: "纽卡斯尔机场（威廉敦）", nameEn: "Newcastle (Williamtown)", lon: 151.834, lat: -32.795 },
+    source: "纽卡斯尔 CBD -32.9283,151.7817；NTL 机场：公开资料",
+  },
+  {
+    id: "gold-coast", nameZh: "黄金海岸", nameEn: "Gold Coast", country: "australia", tier: "major", zone: "au-qld",
+    lon: 153.4000, lat: -28.0167,
+    airport: { iata: "OOL", nameZh: "黄金海岸机场（库兰加塔）", nameEn: "Gold Coast (Coolangatta)", lon: 153.505, lat: -28.164 },
+    source: "黄金海岸冲浪者天堂一带 -28.0167,153.4000；OOL 机场：公开资料",
+  },
+  {
+    id: "hobart", nameZh: "霍巴特", nameEn: "Hobart", country: "australia", tier: "major", zone: "au-tas",
+    lon: 147.3272, lat: -42.8821,
+    airport: { iata: "HBA", nameZh: "霍巴特机场", nameEn: "Hobart", lon: 147.510, lat: -42.836 },
+    source: "霍巴特 CBD -42.8821,147.3272；HBA 机场：公开资料",
+  },
+  {
+    id: "launceston", nameZh: "朗塞斯顿", nameEn: "Launceston", country: "australia", tier: "notable", zone: "au-tas",
+    lon: 147.1441, lat: -41.4332,
+    airport: { iata: "LST", nameZh: "朗塞斯顿机场", nameEn: "Launceston", lon: 147.214, lat: -41.545 },
+    source: "朗塞斯顿 CBD -41.4332,147.1441；LST 机场：公开资料",
+  },
+  {
+    id: "alice-springs", nameZh: "爱丽斯泉", nameEn: "Alice Springs", country: "australia", tier: "notable", zone: "au-nt",
+    lon: 133.8807, lat: -23.6980,
+    airport: { iata: "ASP", nameZh: "爱丽斯泉机场", nameEn: "Alice Springs", lon: 133.902, lat: -23.807 },
+    source: "爱丽斯泉 -23.6980,133.8807；ASP 机场：公开资料",
+  },
+  {
+    id: "katherine", nameZh: "凯瑟琳", nameEn: "Katherine", country: "australia", tier: "notable", zone: "au-nt",
+    lon: 132.2635, lat: -14.4652,
+    airport: { iata: "KTR", nameZh: "凯瑟琳机场（廷达尔）", nameEn: "Katherine (Tindal)", lon: 132.378, lat: -14.521 },
+    source: "凯瑟琳 -14.4652,132.2635；KTR/廷达尔 机场：公开资料",
+  },
+  {
+    id: "broome", nameZh: "布鲁姆", nameEn: "Broome", country: "australia", tier: "notable", zone: "au-wa",
+    lon: 122.2359, lat: -17.9614,
+    airport: { iata: "BME", nameZh: "布鲁姆机场", nameEn: "Broome", lon: 122.232, lat: -17.945 },
+    source: "布鲁姆 -17.9614,122.2359；BME 机场：公开资料",
+  },
+  {
+    id: "exmouth", nameZh: "埃克斯茅斯", nameEn: "Exmouth", country: "australia", tier: "notable", zone: "au-wa",
+    lon: 114.1281, lat: -21.9316,
+    airport: { iata: "LEA", nameZh: "勒尔蒙斯机场", nameEn: "Learmonth", lon: 114.089, lat: -22.235 },
+    source: "埃克斯茅斯镇 -21.9316,114.1281；LEA/勒尔蒙斯 机场（镇南约35km）：公开资料",
+  },
+  {
+    id: "coober-pedy", nameZh: "库伯佩迪", nameEn: "Coober Pedy", country: "australia", tier: "notable", zone: "au-sa",
+    lon: 134.7544, lat: -29.0139,
+    airport: { iata: "CPD", nameZh: "库伯佩迪机场", nameEn: "Coober Pedy", lon: 134.721, lat: -29.040 },
+    source: "库伯佩迪 -29.0139,134.7544；CPD 机场：公开资料",
   },
 
   // ── 中国 ──────────────────────────────────────────────

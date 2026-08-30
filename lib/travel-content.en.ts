@@ -132,6 +132,156 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The dry season (May–October, especially June–August) is the only comfortable time and the only good time for the national parks; accommodation in peak season needs booking ahead. The wet season is hot, stormy and floods some roads, and while the waterfalls are full some sites close. Never swim in water that may hold saltwater crocodiles (many calm-looking rivers and pools do) — swim only where it is clearly signed safe. Sun protection, insect repellent, and drink plenty of water. Quarantine checks on entry are strict. Citizens of most countries need an electronic visa or ETA arranged in advance.",
   },
 
+  canberra: {
+    identity:
+      "Canberra is Australia's capital, in a purpose-set-aside \"Australian Capital Territory\" within New South Wales, inland between Sydney and Melbourne, with about 470,000 people. It is not an organically grown city but a planned one built from 1913 onward to settle the rivalry between Sydney and Melbourne over which should be capital. Its streets are laid out around the artificial Lake Burley Griffin and several radiating axes.",
+    layout:
+      "The city centres on the lake: the south shore holds the Parliamentary Triangle (Parliament House and several national museums and memorials), the north shore the Civic centre and commercial district. Around them is a ring of satellite residential districts with a great deal of green space, and the encircling hills are visible from town. The scale is designed for driving, with walkable areas concentrated inside a few precincts.",
+    gettingAround:
+      "The airport is about 10 minutes from the centre, with a bus into town, though most people use a taxi or rideshare. There is one north–south light rail line plus buses, but service is not dense, so a rental car or bike is more flexible. At about 580 m elevation Canberra has the coldest winters of Australia's larger cities: July nights are often around 0 °C with frost, while summer days are about 28 °C and dry. Spring and autumn (March–April, September–October) are the most comfortable.",
+    culture:
+      "Public servants, diplomats and university staff and students make up a large share of the population; the pace is quieter than Sydney or Melbourne, and many places are quiet on evenings and weekends. It has the country's greatest concentration of national cultural institutions, most of them free. The city is friendly to cycling and the outdoors. Tipping is not required.",
+    seeAndDo:
+      "The Australian War Memorial, National Gallery, National Museum, Parliament House (open to visitors) and National Portrait Gallery; walking and cycling around the lake; the Floriade flower festival in September–October; climbing Red Hill or Mount Ainslie for a city panorama; the mountains of nearby Namadgi National Park.",
+    whenAndTips:
+      "Spring and autumn have the best weather and cover Floriade and several major events. Winter is cold, so bring warm clothing; use sun protection in summer. The city is spread out, so without a car keep to the Parliamentary Triangle and Civic. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  newcastle: {
+    identity:
+      "Newcastle is about 160 km north of Sydney, the second-largest city in New South Wales (metropolitan population about 500,000), at the mouth of the Hunter River. It was historically a coal-export port — its name comes from the English coal city of Newcastle upon Tyne, and the Australian city was formally named in 1804. Today it has shifted from heavy industry toward its university, beaches and culture.",
+    layout:
+      "The centre sits on a peninsula between the Hunter River and the beaches, compact and walkable. A string of east-facing city beaches (Newcastle, Nobbys, Merewether) runs along the coast, linked by a shoreline walk. Inland is the Hunter Valley, one of Australia's oldest wine regions.",
+    gettingAround:
+      "The airport is about 25 km north at Williamtown (shared with an air force base), with a bus into town; you can also take a train from Sydney (about 2.5–3 hours). The centre is walkable, with light rail and buses (use a transport card or contactless bank card). Reaching the Hunter Valley wineries needs a rental car or tour. The climate is mild: summer about 19–27 °C with fairly high humidity, winter about 9–18 °C and sunny. The sea is swimmable year-round; swim only in flagged patrolled areas.",
+    culture:
+      "Newcastle is more relaxed than Sydney and cheaper to live in, with a strong surf and beach culture and a lively independent music and arts scene. The surrounding area is the country of the Awabakal and Worimi peoples. Tipping is not required.",
+    seeAndDo:
+      "The lighthouse, fort and coastal walk at Nobbys Head and Fort Scratchley; Nobbys Beach and the ocean baths (rock sea pools); Newcastle Museum and Art Gallery; a day trip to the Hunter Valley wineries; the large sand dunes around Stockton to the north.",
+    whenAndTips:
+      "Autumn (March–May) is usually the most settled and comfortable; summer has more thunderstorms but warm water. Swim only between the red and yellow flags. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  "gold-coast": {
+    identity:
+      "The Gold Coast is in south-east Queensland, about an hour's drive south of Brisbane — a continuous belt of beachside resort city with about 700,000 people. It is known for a long run of east-facing beaches, a dense high-rise apartment skyline, and a cluster of theme parks inland. It is warm year-round.",
+    layout:
+      "The city stretches a long way north–south along the coast, with \"Surfers Paradise\" the central, tallest section. Behind the beaches are canal-estate suburbs, and further inland the land rises quickly into rainforest mountains (Springbrook, the Border Ranges). The airport is at the far south, near the New South Wales border.",
+    gettingAround:
+      "Gold Coast Airport (Coolangatta) is about 25 minutes from Surfers Paradise; Brisbane Airport is also used, with a train plus light rail between them. There is a coastal light rail line plus buses (use a transport card or contactless bank card). Reaching the inland national parks needs a rental car or tour. The subtropical climate: summer (December–February) about 21–29 °C, humid with thunderstorms; winter (June–August) about 12–21 °C, sunny and dry, and very pleasant. The sea is swimmable year-round; watch for rip currents and swim only in flagged patrolled areas.",
+    culture:
+      "The Gold Coast is one of Australia's most typical holiday and retirement cities, with a relaxed, visitor-facing atmosphere and nightlife concentrated around Surfers Paradise and Broadbeach. Tipping is not required.",
+    seeAndDo:
+      "A string of beaches (Surfers Paradise, Broadbeach, Coolangatta, Burleigh Heads); theme parks (Warner Bros. Movie World, Sea World, Dreamworld, Wet'n'Wild); rainforest and waterfalls in Lamington and Springbrook national parks inland; the glow-worms at Springbrook. A popular place to learn to surf.",
+    whenAndTips:
+      "Winter (June–August) has the most settled, comfortable weather; summer is hotter and wetter but the water is warm. Late September to early October is Australian school holidays and crowded. Swim only between the red and yellow flags and follow the lifeguards. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  hobart: {
+    identity:
+      "Hobart is the capital of Tasmania and, founded in 1804, Australia's second-oldest capital city after Sydney, with about 250,000 people. It sits at the mouth of the Derwent River below Mount Wellington (kunanyi) and keeps a great deal of early stone architecture. The city is named after Robert Hobart, then the British colonial secretary.",
+    layout:
+      "The centre is compact, along the west bank of the Derwent, with the old sandstone warehouses around Salamanca now a dining and market district. Mount Wellington (about 1,270 m) is visible behind the city and occasionally holds snow. Across the river to the north is the MONA art museum. The city gives way quickly to mountains and coast.",
+    gettingAround:
+      "The airport is about 20 minutes from the city with no airport rail — use an airport bus or a taxi/rideshare. The centre is walkable; a dedicated ferry runs to MONA; reaching the surroundings (Mount Wellington, wineries, Bruny Island, Port Arthur) needs a rental car or tour. Tasmania's climate is cool and changeable: summer (December–February) about 12–22 °C with long daylight; winter about 4–12 °C, cold, wet and rainy; the weather can change several times in a day, so carry a windproof, waterproof jacket in any season.",
+    culture:
+      "Tasmania is slow-paced with a strong sense of community and a focus on local produce (oysters, salmon, cheese, whisky, cider). Tasmanian Aboriginal people (palawa) have lived on the island for tens of thousands of years, and some place names have been restored to Aboriginal forms (such as kunanyi for Mount Wellington). Tipping is not required.",
+    seeAndDo:
+      "Salamanca Market (Saturdays), the surrounding historic buildings, and the MONA art museum; driving up Mount Wellington for the panorama; south to the Port Arthur Historic Site (a solemn former penal site) and Bruny Island; the Dark Mofo winter arts festival in June. Hobart is also a resupply port for Antarctic research ships.",
+    whenAndTips:
+      "Summer (December–February) has the longest daylight and the most events and is the peak season, so book accommodation ahead; winter is cold and wet but has Dark Mofo. The weather is very changeable, so dress in layers. The island has many mountain roads and abundant wildlife, so drive slowly after dusk. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  launceston: {
+    identity:
+      "Launceston is in northern Tasmania, the state's second-largest city (about 87,000 people) and one of Australia's earlier inland cities. It sits at the junction of three rivers, right beside a rocky gorge called Cataract Gorge. The city is named after Launceston in Cornwall, England.",
+    layout:
+      "The centre keeps a great deal of Victorian and Edwardian architecture, arranged around several squares and easy to walk. The Tamar River runs past the edge of town, and to the north is the Tamar Valley wine region. Cataract Gorge is within walking distance of the centre.",
+    gettingAround:
+      "The airport is about 15 minutes from the city — use an airport bus or a taxi/rideshare. The centre is walkable, and the gorge is a short walk or drive; reaching the Tamar Valley wineries or Cradle Mountain needs a rental car or tour. The climate is like Hobart's but more inland: summer days can exceed 25 °C, winter nights often bring frost, and the daily temperature range is large.",
+    culture:
+      "Launceston is the farming and food centre of northern Tasmania, driven in recent years by dining, wine and a regional university campus, and is slower-paced than Hobart. Tipping is not required.",
+    seeAndDo:
+      "Cataract Gorge (trails, a suspension bridge, a long single-span chairlift); the historic buildings and parks of the centre; the Queen Victoria Museum and Art Gallery; a day of Tamar Valley wineries; about 2.5 hours west is Cradle Mountain–Lake St Clair National Park (part of the Tasmanian Wilderness).",
+    whenAndTips:
+      "Summer and autumn (December–April) are best for the outdoors and wineries; winter is cold with short days. Cradle Mountain's weather is very changeable and snow is possible any time of year, so check road and weather conditions before going. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  "alice-springs": {
+    identity:
+      "Alice Springs (Mparntwe in the Arrernte language) is at the very centre of Australia, among the MacDonnell Ranges, with about 25,000 people — the largest settlement and supply base of the \"Red Centre,\" roughly 1,500 km from the nearest large city. It is the base for visiting Uluṟu, Kata Tjuṯa, Kings Canyon and the MacDonnell Ranges.",
+    layout:
+      "The small town is hemmed in by a gap in the MacDonnell Ranges (Heavitree Gap), with the Todd River (a dry bed most of the time) running through it; the centre is a few blocks. Red ranges and desert begin immediately around it. Uluṟu is in fact about 450 km away, roughly a 5-hour drive — not a nearby suburb.",
+    gettingAround:
+      "The airport is about 15 minutes from town — use a taxi/rideshare or an accommodation transfer. The town is small and walkable; the West and East MacDonnell gorges are day trips, while Uluṟu and Kings Canyon need an overnight stay or a flight. The inland desert climate: summer (December–February) days often exceed 38 °C, winter (June–August) days about 20 °C with nights that can fall below 0 °C; the daily range is extreme, so carry plenty of water in any season.",
+    culture:
+      "Alice Springs is a centre of Central Australian Aboriginal art, with several Aboriginal-run galleries; large areas of surrounding land are Aboriginal-owned, and entering some areas or leaving the main roads needs a permit. Follow local guidance when visiting sacred sites and taking photos — some places may not be photographed. Tipping is not required.",
+    seeAndDo:
+      "The West MacDonnell gorges (Simpsons Gap, Standley Chasm, Ormiston Gorge, Glen Helen) and the East MacDonnell (Trephina Gorge); the Telegraph Station Historical Reserve, the Royal Flying Doctor Service base, and the Desert Park; a starting point for Uluṟu–Kata Tjuṯa and Kings Canyon. The Larapinta Trail is a long-distance ridge walk.",
+    whenAndTips:
+      "May–September (winter) is the only season comfortable for daytime outdoors and is the peak season, so book Uluṟu-area accommodation far ahead. Summer is extremely hot and midday is no time to hike. Driving into the desert means carrying plenty of fuel and water, logging your route, and watching for livestock and wild camels on the road. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  katherine: {
+    identity:
+      "Katherine is in the Northern Territory, about a 3-hour drive south of Darwin, with about 6,000 people — the largest settlement in the Territory's \"Top End\" after Darwin, and the crossroads of the north–south Stuart Highway and east–west routes. It is right beside Nitmiluk (Katherine Gorge) National Park; the local Jawoyn people call the area Nitmiluk.",
+    layout:
+      "The town runs along the Katherine River and the highway and is only a few streets. The Nitmiluk gorges are about 30 km east, Edith Falls is to the north, and open wilderness and, further on, Western Australia lie to the south-west.",
+    gettingAround:
+      "Katherine's civilian flights use nearby Tindal (also an air force base), with few services; most people drive from Darwin or take a coach. The town is walkable; reaching the gorge and falls needs a rental car or tour. The tropical climate has only a dry and a wet season: the dry (May–October) is sunny, about 14–32 °C, and is the tourist season; the wet (November–April) is hot and stormy, the river rises sharply, and some trails and roads close.",
+    culture:
+      "There are large areas of Jawoyn and other Aboriginal land around Katherine, and Nitmiluk National Park is jointly managed by the traditional owners and the NT parks agency. Entering Aboriginal land or leaving the main roads needs a permit. Tipping is not required.",
+    seeAndDo:
+      "Nitmiluk Gorge — by boat, kayak or the gorge walking tracks; swimming at Edith Falls (Leliyn); Katherine Hot Springs; the Cutta Cutta caves. Further south are the Mataranka thermal pools and the Roper River area.",
+    whenAndTips:
+      "The dry season (especially June–August) is the only comfortable time and the only time for water activities. In the wet the river runs too fast and crocodile range expands, so most water activities stop. Do not enter any water that may hold saltwater crocodiles — swim only where it is clearly signed safe. Sun protection and insect repellent. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  broome: {
+    identity:
+      "Broome is on the Kimberley coast of north-western Western Australia, with about 15,000 people — a remote seaside town known for its red rock coast, long beaches and pearling history, about 2,200 km from Perth. It is the gateway to the Kimberley region by sea.",
+    layout:
+      "Broome is on a peninsula: the west side is the roughly 22-km Cable Beach (facing the Indian Ocean, for sunsets), the east side the mangroves and big tidal mudflats of Roebuck Bay. The Chinatown area is the old town centre, now a dining and shopping district. The town is small in scale.",
+    gettingAround:
+      "The airport is almost within the town — use a taxi/rideshare or an accommodation transfer. In town you can rent a car or cycle, and Cable Beach has a bus. Kimberley inland roads (such as the Gibb River Road) are mostly unsealed and close in the wet, so driving them needs a 4WD and full preparation, or a tour. The tropical climate: the dry (May–October) is sunny, about 20–30 °C, and is the peak season; the wet (November–April) is hot and stormy with frequent tropical cyclones, and many trips stop running.",
+    culture:
+      "Broome historically drew Aboriginal people and pearling workers from across Asia, so its population is very mixed. The surrounding area is the country of the Yawuru and other Aboriginal peoples, and places like Cable Beach are jointly managed. The tidal range is huge (up to about 9 m), so tide-pooling and viewing the dinosaur footprints go by the tide table. Tipping is not required.",
+    seeAndDo:
+      "Sunset and camel rides on Cable Beach; the \"Staircase to the Moon\" (a band of light the moon makes on the mudflats at low tide on certain dates); the dinosaur footprints at Gantheaume Point (visible at low tide); the pearling history and the Japanese cemetery (a solemn historic site); a starting point for the Kimberley by land or by sea.",
+    whenAndTips:
+      "The dry season (May–September) has the best weather and is the peak season, with expensive accommodation that needs booking ahead. The wet is hot, roads often close, and cyclone risk is high. The tidal range is huge, so check the tide before going in the sea, tide-pooling or walking the mudflats; northern waters have dangerous jellyfish in the wet season. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  exmouth: {
+    identity:
+      "Exmouth is on a peninsula in north-western Western Australia, with about 2,800 people — the gateway town to Ningaloo Reef, one of the few places in the world where you can swim to a coral reef straight from the beach. The town is named after Viscount Exmouth, a British admiral (there is also a town of Exmouth in Devon, England). Cape Range National Park is alongside it.",
+    layout:
+      "The town is on the east side of the peninsula, on Exmouth Gulf, and is only a few streets. Ningaloo Reef and Cape Range National Park are on the west side — Coral Bay, Turquoise Bay and Yardie Creek gorge are all over there, about 40 minutes to an hour's drive from town. Learmonth Airport is at the southern tip.",
+    gettingAround:
+      "Flights use Learmonth Airport about 35 km south of town, with few services; you can also drive from Perth (about two days). Getting around town and to the park needs your own car, and some park areas require pre-booking parking or snorkelling slots online. The peninsula is hot and dry: summer (December–March) often exceeds 38 °C with cyclone risk; winter (June–August) is about 10–25 °C and the most comfortable. The water is swimmable year-round.",
+    culture:
+      "The small town revolves around ocean activities and is very slow-paced. The Ningaloo coast is the traditional sea country of the Yinigudura and other Aboriginal groups. Tides and currents strongly affect snorkelling safety, so follow local and park guidance. Tipping is not required.",
+    seeAndDo:
+      "Snorkelling on Ningaloo Reef (the \"drift snorkel\" at Turquoise Bay and Coral Bay); swimming with whale sharks from March to August (licensed, tightly regulated trips), with humpback whales visible in late winter and early spring; a boat trip up Yardie Creek gorge to see black-footed rock wallabies; driving up Cape Range for views of the peninsula and the Coral Sea.",
+    whenAndTips:
+      "April–October has the best weather and sea conditions; the whale shark season (about March–August) is the peak and trips need booking ahead. Summer is extremely hot and November–April has cyclones. When snorkelling, watch for rips and tides, and never stand on or touch the coral. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
+  "coober-pedy": {
+    identity:
+      "Coober Pedy is in the desert of northern South Australia, halfway along the road and rail line between Adelaide and Alice Springs, with about 1,800 people — one of the world's main sources of opal. Because the surface is so hot, many homes, hotels and churches here are dug underground. The name comes from the Aboriginal Kokatha term kupa piti.",
+    layout:
+      "On the surface it is a brown plain covered with mining spoil heaps (like small cones), with fuel stations, shops and mine entrances along a few main streets. A good part of the real \"town\" is underground — the temperature-stable dugout hotels and homes are cool in summer and warm in winter. The surrounding desert is often used as a film location for science fiction.",
+    gettingAround:
+      "There is a small airport with very few flights; most people drive the Stuart Highway or take a coach. The town is small and walkable; reaching the surroundings (the Moon Plain, the Dog Fence, the Painted Desert) needs a rental car or tour, and some roads are unsealed. The climate is extreme desert: summer days often exceed 40 °C, winter days about 20 °C with nights near 0 °C, and almost no rain.",
+    culture:
+      "Coober Pedy's residents come from dozens of countries (many descended from migrants who came to mine), and it is a practical, rough-edged mining town. There is Aboriginal land around it, and areas off the main roads need a permit to enter. The mine fields are full of unfenced vertical shafts — never walk backwards or wander at night outside marked areas. Tipping is not required.",
+    seeAndDo:
+      "Touring the underground homes, underground churches and an opal mine museum; \"noodling\" through mine tailings to try your luck; the \"Moon Plain\" and a section of the Dog Fence (the wild-dog barrier fence); the Painted Desert mesa country to the north-east.",
+    whenAndTips:
+      "April–September (winter) is the only season for daytime outdoors. Summer is extremely hot and no time for outdoor activity. Driving unsealed roads means carrying a spare tyre, water and a communication device, and logging your route. Never go near an unfenced old shaft. Citizens of most countries need an electronic visa or ETA arranged in advance.",
+  },
+
   "china-overview": {
     identity:
       "China covers about as much land as the whole of Europe and has a population of roughly 1.4 billion, one of the largest in the world. The land is broadly high in the west and low in the east: the west is the Tibetan Plateau plus large mountain and desert country, thinly populated; the east is plains, hills and great rivers, where most of the people and big cities are. It has thousands of years of continuous written history; dialects vary widely, but Mandarin is the common language.",
