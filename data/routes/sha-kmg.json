@@ -1,0 +1,28 @@
+{
+  "id": "sha-kmg",
+  "name": "上海 — 昆明",
+  "nameEn": "Shanghai — Kunming",
+  "description": "长江中下游平原 · 江南丘陵 · 鄱阳湖 · 雪峰山 · 云贵高原",
+  "descriptionEn": "Lower Yangtze Plain · Jiangnan Hills · Poyang Lake · Xuefeng Mts · Yunnan–Guizhou Plateau",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU5843",
+    "aircraft": "Airbus A320",
+    "depIata": "SHA",
+    "arrIata": "KMG",
+    "durationMin": 200
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true },
+    { "kind": "terrain", "terrainId": "yangtze-delta" },
+    { "kind": "terrain", "terrainId": "jiangnan-hills" },
+    { "kind": "terrain", "terrainId": "poyang" },
+    { "kind": "terrain", "terrainId": "xuefeng" },
+    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
+    { "kind": "city", "id": "kmg", "name": "昆明长水", "nameEn": "Kunming Changshui", "lat": 25.102, "lon": 102.929, "airport": true }
+  ]
+}

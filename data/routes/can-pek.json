@@ -1,0 +1,27 @@
+{
+  "id": "can-pek",
+  "name": "广州 — 北京",
+  "nameEn": "Guangzhou — Beijing",
+  "description": "南岭 · 长江中下游平原 · 大别山 · 华北平原",
+  "descriptionEn": "Nanling Mts · Lower Yangtze Plain · Dabie Mts · North China Plain",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3101",
+    "aircraft": "Boeing 777-300ER",
+    "depIata": "CAN",
+    "arrIata": "PEK",
+    "durationMin": 190
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "yangtze" },
+    { "kind": "terrain", "terrainId": "dabie" },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true }
+  ]
+}

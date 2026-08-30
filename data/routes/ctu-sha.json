@@ -1,0 +1,27 @@
+{
+  "id": "ctu-sha",
+  "name": "成都 — 上海",
+  "nameEn": "Chengdu — Shanghai",
+  "description": "四川盆地 · 长江三峡 · 长江中下游平原 · 长江三角洲",
+  "descriptionEn": "Sichuan Basin · Yangtze Gorges · Lower Yangtze Plain · Yangtze Delta",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA4519",
+    "aircraft": "Airbus A321",
+    "depIata": "TFU",
+    "arrIata": "SHA",
+    "durationMin": 150
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "tfu", "name": "成都天府", "nameEn": "Chengdu Tianfu", "lat": 30.312, "lon": 104.441, "airport": true },
+    { "kind": "terrain", "terrainId": "sichuan" },
+    { "kind": "terrain", "terrainId": "yangtze-gorges" },
+    { "kind": "terrain", "terrainId": "yangtze" },
+    { "kind": "terrain", "terrainId": "yangtze-delta" },
+    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true }
+  ]
+}

@@ -35,6 +35,10 @@ export interface FlightRoute {
   nameEn?: string;
   description: string;
   descriptionEn?: string;
+  /** 出发国家 slug（= COUNTRIES[*].slug）*/
+  depCountry: string;
+  /** 到达国家 slug。与 depCountry 相同 → 国内航线；不同 → 国际航线 */
+  arrCountry: string;
   flight?: FlightInfo;
   waypoints: RouteWaypoint[];
   /** 巡航高度（米，离地） */

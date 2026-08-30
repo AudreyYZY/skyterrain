@@ -273,6 +273,14 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "收起",
     "en-US": "Hide",
   },
+  "journey.domestic": {
+    "zh-CN": "国内航线",
+    "en-US": "Domestic",
+  },
+  "journey.international": {
+    "zh-CN": "国际航线",
+    "en-US": "International",
+  },
 };
 
 /** 地形名称翻译 */

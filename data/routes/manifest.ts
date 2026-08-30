@@ -1,0 +1,29 @@
+/**
+ * 航线清单 —— 所有航线 JSON 的唯一注册点。
+ * lib/routes.ts 与 scripts/check-routes.ts 都从这里取，新增航线只改这一处。
+ *
+ * 相对路径 + import attributes，兼容 `node --experimental-strip-types`。
+ */
+
+import type { FlightRoute } from "../../types/route.ts";
+
+import pekUrc from "./pek-urc.json" with { type: "json" };
+import ctuLxa from "./ctu-lxa.json" with { type: "json" };
+import canLxa from "./can-lxa.json" with { type: "json" };
+import urcKhg from "./urc-khg.json" with { type: "json" };
+// 中国 · 批 1（长江 / 华东 / 西北）
+import shaKmg from "./sha-kmg.json" with { type: "json" };
+import ctuSha from "./ctu-sha.json" with { type: "json" };
+import canPek from "./can-pek.json" with { type: "json" };
+import xiyUrc from "./xiy-urc.json" with { type: "json" };
+
+export const ALL_ROUTES: FlightRoute[] = [
+  pekUrc,
+  ctuLxa,
+  canLxa,
+  urcKhg,
+  shaKmg,
+  ctuSha,
+  canPek,
+  xiyUrc,
+] as unknown as FlightRoute[];

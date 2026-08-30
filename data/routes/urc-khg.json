@@ -4,6 +4,8 @@
   "nameEn": "Ürümqi — Kashgar",
   "description": "天山 · 塔里木盆地 · 塔克拉玛干沙漠",
   "descriptionEn": "Tianshan · Tarim Basin · Taklamakan Desert",
+  "depCountry": "china",
+  "arrCountry": "china",
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
@@ -20,9 +22,31 @@
   "overviewDwellSec": 5,
   "dwellDuringFlightSec": 10,
   "waypoints": [
-    { "kind": "city", "id": "urc", "name": "乌鲁木齐地窝堡", "nameEn": "Ürümqi Diwopu", "lat": 43.907, "lon": 87.474, "airport": true },
-    { "kind": "terrain", "terrainId": "tianshan" },
-    { "kind": "terrain", "terrainId": "taklamakan" },
-    { "kind": "city", "id": "khg", "name": "喀什", "nameEn": "Kashgar", "lat": 39.543, "lon": 76.02, "airport": true }
+    {
+      "kind": "city",
+      "id": "urc",
+      "name": "乌鲁木齐地窝堡",
+      "nameEn": "Ürümqi Diwopu",
+      "lat": 43.907,
+      "lon": 87.474,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tianshan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "taklamakan"
+    },
+    {
+      "kind": "city",
+      "id": "khg",
+      "name": "喀什",
+      "nameEn": "Kashgar",
+      "lat": 39.543,
+      "lon": 76.02,
+      "airport": true
+    }
   ]
 }

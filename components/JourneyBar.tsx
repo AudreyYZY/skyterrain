@@ -1,13 +1,24 @@
 "use client";
 
-import { resolveRouteWaypoints } from "@/lib/routes";
+import { resolveRouteWaypoints, routeCountryLabel } from "@/lib/routes";
 import { t, type Language } from "@/lib/i18n";
 import type { FlightRoute } from "@/types/route";
 import { useState } from "react";
 
+export interface JourneyCountry {
+  slug: string;
+  name: string;
+}
+
 interface JourneyBarProps {
   language: Language;
-  routes: FlightRoute[];
+  /** 当前大洲下有航线的国家（>1 时显示国家切换）*/
+  countries: JourneyCountry[];
+  activeCountry: string | null;
+  onCountryChange: (slug: string) => void;
+  /** 已按 activeCountry 过滤好的两组航线 */
+  domestic: FlightRoute[];
+  international: FlightRoute[];
   activeRouteId: string | null;
   isFlying: boolean;
   preparing: boolean;
@@ -16,11 +27,18 @@ interface JourneyBarProps {
 }
 
 /**
- * 底部航线胶片条。横向滚动的航线卡片，可整条收起。
+ * 底部航线面板。
+ * - 顶部：大洲下各国切换（当地图在某国 / 选了某国地形时自动定位到该国）
+ * - 国内航线 / 国际航线两个分区，网格平铺、一次看全，不横向滚动
+ * - 只显示与 activeCountry 相关的航线
  */
 export default function JourneyBar({
   language,
-  routes,
+  countries,
+  activeCountry,
+  onCountryChange,
+  domestic,
+  international,
   activeRouteId,
   isFlying,
   preparing,
@@ -28,8 +46,58 @@ export default function JourneyBar({
   onStop,
 }: JourneyBarProps) {
   const [collapsed, setCollapsed] = useState(false);
+  const en = language === "en-US";
 
-  if (routes.length === 0) return null;
+  if (domestic.length === 0 && international.length === 0) return null;
+
+  const renderRoute = (route: FlightRoute, showCountries: boolean) => {
+    const wps = resolveRouteWaypoints(route);
+    const active = activeRouteId === route.id && (isFlying || preparing);
+    const terrainNames = wps
+      .filter((w) => w.kind === "terrain")
+      .map((w) => (en ? w.nameEn : w.name));
+    return (
+      <button
+        key={route.id}
+        type="button"
+        onClick={() => (active ? onStop() : onStart(route))}
+        disabled={preparing && !active}
+        className={[
+          "flex flex-col rounded-lg border p-2.5 text-left transition-colors disabled:opacity-40",
+          active
+            ? "border-[color:var(--accent-line)] bg-[color:var(--accent-soft)]"
+            : "border-[color:var(--hairline)] bg-white/[0.02] hover:bg-white/[0.05]",
+        ].join(" ")}
+      >
+        <span className="flex items-center justify-between gap-2">
+          <span className="editorial-title text-[13px] text-[color:var(--ink)]">
+            {en ? route.nameEn ?? route.name : route.name}
+          </span>
+          <span
+            className={[
+              "shrink-0 text-[10px] font-medium",
+              active ? "text-[color:var(--ink-body)]" : "text-[color:var(--accent)]",
+            ].join(" ")}
+          >
+            {active
+              ? preparing
+                ? t("journey.preparing", language)
+                : t("journey.stop", language)
+              : t("journey.start", language)}
+          </span>
+        </span>
+        {showCountries && (
+          <span className="mt-0.5 text-[10px] text-[color:var(--ink-dim)]">
+            {routeCountryLabel(route, language)}
+          </span>
+        )}
+        <span className="mt-0.5 line-clamp-1 text-[10px] text-[color:var(--ink-faint)]">
+          {route.flight ? `${route.flight.flightNo} · ` : ""}
+          {terrainNames.join(" · ")}
+        </span>
+      </button>
+    );
+  };
 
   return (
     <div className="absolute bottom-0 left-[52px] right-0 z-20 flex flex-col items-center pb-3">
@@ -42,7 +110,7 @@ export default function JourneyBar({
           {t("journey.routes", language)}
         </button>
       ) : (
-        <div className="glass-panel w-full max-w-[900px] rounded-2xl px-3 py-2.5">
+        <div className="glass-panel max-h-[46vh] w-full max-w-[960px] overflow-y-auto rounded-2xl px-3.5 py-3">
           <div className="mb-2 flex items-center justify-between px-1">
             <span className="editorial-kicker">{t("journey.routes", language)}</span>
             <button
@@ -54,56 +122,47 @@ export default function JourneyBar({
             </button>
           </div>
 
-          <div className="filmstrip-scroll flex gap-2 overflow-x-auto">
-            {routes.map((route) => {
-              const wps = resolveRouteWaypoints(route);
-              const active = activeRouteId === route.id && (isFlying || preparing);
-              const en = language === "en-US";
-              const terrainNames = wps
-                .filter((w) => w.kind === "terrain")
-                .map((w) => (en ? w.nameEn : w.name));
-              return (
-                <div
-                  key={route.id}
+          {countries.length > 1 && (
+            <div className="mb-2.5 flex flex-wrap gap-1.5 px-1">
+              {countries.map((c) => (
+                <button
+                  key={c.slug}
+                  type="button"
+                  onClick={() => onCountryChange(c.slug)}
                   className={[
-                    "flex w-[248px] shrink-0 flex-col rounded-xl border p-3",
-                    active
-                      ? "border-[color:var(--accent-line)] bg-[color:var(--accent-soft)]"
-                      : "border-[color:var(--hairline)] bg-white/[0.02]",
+                    "rounded-full px-2.5 py-1 text-[11px] transition-colors",
+                    c.slug === activeCountry
+                      ? "bg-[color:var(--accent-soft)] text-[color:var(--accent)]"
+                      : "text-[color:var(--ink-dim)] hover:text-[color:var(--ink)]",
                   ].join(" ")}
                 >
-                  <p className="editorial-title text-[14px] text-[color:var(--ink)]">
-                    {en ? route.nameEn ?? route.name : route.name}
-                  </p>
-                  {route.flight && (
-                    <p className="mt-0.5 text-[10px] text-[color:var(--ink-dim)]">
-                      {(en ? route.flight.airlineEn : route.flight.airline)} · {route.flight.flightNo} · {route.flight.aircraft}
-                    </p>
-                  )}
-                  <p className="mt-1 line-clamp-1 text-[10px] text-[color:var(--ink-faint)]">
-                    {terrainNames.join(" · ")}
-                  </p>
-                  <button
-                    type="button"
-                    onClick={() => (active ? onStop() : onStart(route))}
-                    disabled={preparing && !active}
-                    className={[
-                      "mt-2.5 rounded-full px-3 py-1.5 text-[11px] font-medium transition-colors disabled:opacity-40",
-                      active
-                        ? "border border-[color:var(--hairline)] text-[color:var(--ink-body)] hover:bg-white/[0.06]"
-                        : "border border-[color:var(--accent-line)] text-[color:var(--accent)] hover:bg-[color:var(--accent-soft)]",
-                    ].join(" ")}
-                  >
-                    {active
-                      ? preparing
-                        ? t("journey.preparing", language)
-                        : t("journey.stop", language)
-                      : t("journey.start", language)}
-                  </button>
-                </div>
-              );
-            })}
-          </div>
+                  {c.name}
+                </button>
+              ))}
+            </div>
+          )}
+
+          {domestic.length > 0 && (
+            <section className="mb-2 px-1">
+              <p className="editorial-kicker mb-1.5 text-[color:var(--ink-faint)]">
+                {t("journey.domestic", language)}
+              </p>
+              <div className="grid grid-cols-2 gap-1.5 md:grid-cols-3">
+                {domestic.map((r) => renderRoute(r, false))}
+              </div>
+            </section>
+          )}
+
+          {international.length > 0 && (
+            <section className="px-1">
+              <p className="editorial-kicker mb-1.5 text-[color:var(--ink-faint)]">
+                {t("journey.international", language)}
+              </p>
+              <div className="grid grid-cols-2 gap-1.5 md:grid-cols-3">
+                {international.map((r) => renderRoute(r, true))}
+              </div>
+            </section>
+          )}
         </div>
       )}
     </div>

@@ -21,7 +21,7 @@ import { getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
-import { getAllRoutes } from "@/lib/routes";
+import { routesForCountry, routeCountriesForContinent } from "@/lib/routes";
 import { speakAndWait, stopSpeech, warmupSpeechVoices } from "@/lib/speech";
 import { narrationManager } from "@/lib/narration-manager";
 import { getTerrainById } from "@/lib/terrain";
@@ -53,8 +53,6 @@ import {
   type Region,
 } from "@/lib/regions";
 import { terrainTier, categoryOrder, categoryLabel } from "@/lib/terrain-tier";
-
-const routes = getAllRoutes();
 
 /** Sidebar 统一分类类型 */
 type SidebarCategory =
@@ -187,6 +185,8 @@ export default function ExplorerApp() {
   const [isRouteFlying, setIsRouteFlying] = useState(false);
   const [routePreparing, setRoutePreparing] = useState(false);
   const [activeRouteId, setActiveRouteId] = useState<string | null>(null);
+  /** 底部航线面板当前聚焦的国家（选某国地形 / 点国家切换时更新）*/
+  const [routeCountry, setRouteCountry] = useState<string | null>(null);
   /** 航线飞行中：整条航线的解说稿 */
   const [routeNarration, setRouteNarration] = useState<string | null>(null);
   /** 航线飞行中：当前正飞越的地形名（本地化）*/
@@ -743,6 +743,8 @@ export default function ExplorerApp() {
   /** 统一选择入口（侧边栏 + 地图标签都走这里）*/
   const handleSelectById = useCallback(
     (id: string) => {
+      const ent = getTerrainEntry(id);
+      if (ent?.country) setRouteCountry(ent.country);
       const xj = getTerrainById(id);
       if (xj) { void handleSelectTerrain(xj); return; }
       const cf = CHINA_CORE_FEATURES.find((f) => f.id === id);
@@ -934,6 +936,31 @@ export default function ExplorerApp() {
   }, [activeRegion, language]);
 
   const terrainCount = railGroups.reduce((n, g) => n + g.items.length, 0);
+
+  /** 底部航线面板：当前大洲下有航线的国家 + 聚焦国家 + 两组航线 */
+  const journeyCountrySlugs = useMemo(
+    () => routeCountriesForContinent(countriesForContinent(activeRegion)),
+    [activeRegion],
+  );
+  const journeyCountries = useMemo(
+    () =>
+      journeyCountrySlugs.map((slug) => {
+        const m = getCountryMeta(slug);
+        return { slug, name: m ? (language === "zh-CN" ? m.name : m.nameEn) : slug };
+      }),
+    [journeyCountrySlugs, language],
+  );
+  const effectiveRouteCountry =
+    routeCountry && journeyCountrySlugs.includes(routeCountry)
+      ? routeCountry
+      : journeyCountrySlugs[0] ?? null;
+  const journeyRoutes = useMemo(
+    () =>
+      effectiveRouteCountry
+        ? routesForCountry(effectiveRouteCountry)
+        : { domestic: [], international: [] },
+    [effectiveRouteCountry],
+  );
 
   /** 关闭讲解面板 — 停止播报并清空当前地形 */
   const closePanel = () => {
@@ -1167,10 +1194,14 @@ export default function ExplorerApp() {
         onClose={mode === "travel" ? clearTravelSelection : closePanel}
       />
 
-      {!showIntro && mode === "study" && !activeTerrain && activeRegion === DEFAULT_REGION_ID && (
+      {!showIntro && mode === "study" && !activeTerrain && (
         <JourneyBar
           language={language}
-          routes={routes}
+          countries={journeyCountries}
+          activeCountry={effectiveRouteCountry}
+          onCountryChange={setRouteCountry}
+          domestic={journeyRoutes.domestic}
+          international={journeyRoutes.international}
           activeRouteId={activeRouteId}
           isFlying={isRouteFlying}
           preparing={routePreparing}
