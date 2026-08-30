@@ -13,8 +13,8 @@ export interface ResolvedWaypoint {
   nameEn: string;
   lat: number;
   lon: number;
-  /** airport = 起降机场；terrain = 地形航点；city = 其它城市 */
-  kind: "airport" | "terrain" | "city";
+  /** airport = 起降机场；terrain = 地形航点；city = 其它城市；feature = 途中名字标注（海/海峡/河口…）*/
+  kind: "airport" | "terrain" | "city" | "feature";
   /** 早期地形 JSON 里自带完整讲解的地形（仅部分地形有）*/
   terrain?: TerrainPoint;
   /** 地形海拔（米），用于面板显示 */
@@ -80,6 +80,8 @@ export function routeSearchText(route: FlightRoute): string {
     if (wp.kind === "city") {
       parts.push(wp.name);
       if (wp.nameEn) parts.push(wp.nameEn);
+    } else if (wp.kind === "feature") {
+      parts.push(wp.name, wp.nameEn);
     } else {
       const e = getTerrainEntry(wp.terrainId);
       if (e) parts.push(e.nameZh, e.nameEn);
@@ -119,6 +121,17 @@ function resolveWaypoint(wp: RouteWaypoint): ResolvedWaypoint | null {
       lat: wp.lat,
       lon: wp.lon,
       kind: wp.airport ? "airport" : "city",
+    };
+  }
+
+  if (wp.kind === "feature") {
+    return {
+      id: `feature:${wp.name}`,
+      name: wp.name,
+      nameEn: wp.nameEn,
+      lat: wp.lat,
+      lon: wp.lon,
+      kind: "feature",
     };
   }
 

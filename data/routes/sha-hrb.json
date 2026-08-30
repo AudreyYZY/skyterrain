@@ -17,9 +17,38 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true },
-    { "kind": "terrain", "terrainId": "liaodong-hills" },
-    { "kind": "terrain", "terrainId": "northeast" },
-    { "kind": "city", "id": "hrb", "name": "哈尔滨太平", "nameEn": "Harbin Taiping", "lat": 45.623, "lon": 126.250, "airport": true }
+    {
+      "kind": "city",
+      "id": "sha",
+      "name": "上海虹桥",
+      "nameEn": "Shanghai Hongqiao",
+      "lat": 31.198,
+      "lon": 121.336,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "黄海",
+      "nameEn": "Yellow Sea",
+      "lon": 123,
+      "lat": 34.5
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "liaodong-hills"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "northeast"
+    },
+    {
+      "kind": "city",
+      "id": "hrb",
+      "name": "哈尔滨太平",
+      "nameEn": "Harbin Taiping",
+      "lat": 45.623,
+      "lon": 126.25,
+      "airport": true
+    }
   ]
 }

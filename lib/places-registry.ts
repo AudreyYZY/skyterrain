@@ -67,6 +67,9 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "jp-shikoku": { zh: "四国", en: "Shikoku", order: 26 },
   "jp-kyushu": { zh: "九州", en: "Kyushu", order: 27 },
   "jp-okinawa": { zh: "冲绳", en: "Okinawa", order: 28 },
+  // 新西兰
+  "nz-north": { zh: "北岛", en: "North Island", order: 30 },
+  "nz-south": { zh: "南岛", en: "South Island", order: 31 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -85,6 +88,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "australia", nameZh: "澳大利亚", nameEn: "Australia" },
   { country: "china", nameZh: "中国", nameEn: "China" },
   { country: "japan", nameZh: "日本", nameEn: "Japan" },
+  { country: "new-zealand", nameZh: "新西兰", nameEn: "New Zealand" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -435,6 +439,44 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "NGS", nameZh: "长崎机场", nameEn: "Nagasaki", lon: 129.914, lat: 32.917 },
     source: "长崎站一带 32.7503,129.8737；NGS 机场：公开资料",
   },
+
+  // ── 新西兰 ──────────────────────────────────────────────
+  {
+    id: "auckland", nameZh: "奥克兰", nameEn: "Auckland", country: "new-zealand", tier: "major", zone: "nz-north",
+    lon: 174.7633, lat: -36.8485,
+    airport: { iata: "AKL", nameZh: "奥克兰机场", nameEn: "Auckland", lon: 174.792, lat: -37.008 },
+    source: "奥克兰市中心 -36.8485,174.7633；AKL 机场：公开资料",
+  },
+  {
+    id: "wellington", nameZh: "惠灵顿", nameEn: "Wellington", country: "new-zealand", tier: "capital", zone: "nz-north",
+    lon: 174.7762, lat: -41.2865,
+    airport: { iata: "WLG", nameZh: "惠灵顿机场", nameEn: "Wellington", lon: 174.805, lat: -41.327 },
+    source: "惠灵顿市中心 -41.2865,174.7762；WLG 机场：公开资料",
+  },
+  {
+    id: "rotorua", nameZh: "罗托鲁瓦", nameEn: "Rotorua", country: "new-zealand", tier: "notable", zone: "nz-north",
+    lon: 176.2514, lat: -38.1368,
+    airport: { iata: "ROT", nameZh: "罗托鲁瓦机场", nameEn: "Rotorua", lon: 176.317, lat: -38.109 },
+    source: "罗托鲁瓦市中心 -38.1368,176.2514；ROT 机场：公开资料",
+  },
+  {
+    id: "christchurch", nameZh: "基督城", nameEn: "Christchurch", country: "new-zealand", tier: "major", zone: "nz-south",
+    lon: 172.6362, lat: -43.5321,
+    airport: { iata: "CHC", nameZh: "基督城机场", nameEn: "Christchurch", lon: 172.532, lat: -43.489 },
+    source: "基督城大教堂广场 -43.5321,172.6362；CHC 机场：公开资料",
+  },
+  {
+    id: "queenstown", nameZh: "皇后镇", nameEn: "Queenstown", country: "new-zealand", tier: "notable", zone: "nz-south",
+    lon: 168.6626, lat: -45.0312,
+    airport: { iata: "ZQN", nameZh: "皇后镇机场", nameEn: "Queenstown", lon: 168.739, lat: -45.021 },
+    source: "皇后镇市中心 -45.0312,168.6626；ZQN 机场：公开资料",
+  },
+  {
+    id: "dunedin", nameZh: "达尼丁", nameEn: "Dunedin", country: "new-zealand", tier: "notable", zone: "nz-south",
+    lon: 170.5028, lat: -45.8788,
+    airport: { iata: "DUD", nameZh: "达尼丁机场", nameEn: "Dunedin", lon: 170.198, lat: -45.928 },
+    source: "达尼丁八角广场 -45.8788,170.5028；DUD 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -444,6 +486,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   china: "asia",
   japan: "asia",
   australia: "oceania",
+  "new-zealand": "oceania",
   usa: "north-america",
   canada: "north-america",
 };

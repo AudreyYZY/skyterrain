@@ -14,7 +14,22 @@ export interface RouteTerrainWaypoint {
   terrainId: string;
 }
 
-export type RouteWaypoint = RouteCityWaypoint | RouteTerrainWaypoint;
+/**
+ * 只作飞行途中的名字标注（解说里提到、但不在地形注册表里的地点：
+ * 海 / 海峡 / 河口 / 小地物）。不停镜头、不进目录，纯粹让飞行途中「知道在哪」。
+ */
+export interface RouteFeatureWaypoint {
+  kind: "feature";
+  name: string;
+  nameEn: string;
+  lat: number;
+  lon: number;
+}
+
+export type RouteWaypoint =
+  | RouteCityWaypoint
+  | RouteTerrainWaypoint
+  | RouteFeatureWaypoint;
 
 /** 真实航班信息（展示用；航班号 / 机型以实际时刻表为准）*/
 export interface FlightInfo {

@@ -1,0 +1,19 @@
+{
+  "id": "akl-chc",
+  "name": "奥克兰 — 基督城",
+  "nameEn": "Auckland — Christchurch",
+  "description": "陶波湖 · 库克海峡 · 马尔堡峡湾 · 凯库拉山脉 · 坎特伯雷平原",
+  "descriptionEn": "Lake Taupō · Cook Strait · Marlborough Sounds · Kaikōura Ranges · Canterbury Plains",
+  "depCountry": "new-zealand",
+  "arrCountry": "new-zealand",
+  "flight": { "airline": "新西兰航空", "airlineEn": "Air New Zealand", "flightNo": "NZ505", "aircraft": "Airbus A321neo", "depIata": "AKL", "arrIata": "CHC", "durationMin": 85 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "akl", "name": "奥克兰", "nameEn": "Auckland", "lat": -37.008, "lon": 174.792, "airport": true },
+    { "kind": "terrain", "terrainId": "lake-taupo" },
+    { "kind": "terrain", "terrainId": "marlborough-sounds" },
+    { "kind": "terrain", "terrainId": "kaikoura-ranges" },
+    { "kind": "terrain", "terrainId": "canterbury-plains" },
+    { "kind": "city", "id": "chc", "name": "基督城", "nameEn": "Christchurch", "lat": -43.489, "lon": 172.532, "airport": true }
+  ]
+}

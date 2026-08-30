@@ -17,10 +17,42 @@
   },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "pvg", "name": "上海浦东", "nameEn": "Shanghai Pudong", "lat": 31.143, "lon": 121.805, "airport": true },
-    { "kind": "terrain", "terrainId": "yangtze-delta" },
-    { "kind": "terrain", "terrainId": "mount-fuji" },
-    { "kind": "terrain", "terrainId": "kanto-plain" },
-    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true }
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-delta"
+    },
+    {
+      "kind": "feature",
+      "name": "东海",
+      "nameEn": "East China Sea",
+      "lon": 127,
+      "lat": 32
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-fuji"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kanto-plain"
+    },
+    {
+      "kind": "city",
+      "id": "hnd",
+      "name": "东京羽田",
+      "nameEn": "Tokyo Haneda",
+      "lat": 35.552,
+      "lon": 139.78,
+      "airport": true
+    }
   ]
 }

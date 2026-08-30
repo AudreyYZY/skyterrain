@@ -297,6 +297,18 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "没有匹配的航线",
     "en-US": "No matching flights",
   },
+  "journey.title": {
+    "zh-CN": "航线飞行",
+    "en-US": "Fly a route",
+  },
+  "journey.hint": {
+    "zh-CN": "选一条真实航线，从舷窗看这片区域的地貌",
+    "en-US": "Pick a real flight and watch this region's terrain from the window",
+  },
+  "journey.all": {
+    "zh-CN": "全部",
+    "en-US": "All",
+  },
 };
 
 /** 地形名称翻译 */
