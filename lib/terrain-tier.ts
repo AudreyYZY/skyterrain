@@ -44,3 +44,28 @@ const CATEGORY_ORDER: Record<string, number> = {
 export function categoryOrder(category: string): number {
   return CATEGORY_ORDER[category] ?? 99;
 }
+
+/** 分类显示名（目录里按类别分组时的小标题）*/
+const CATEGORY_LABEL: Record<string, { zh: string; en: string }> = {
+  mountain_system: { zh: "山系", en: "Mountains" },
+  plateau: { zh: "高原", en: "Plateaus" },
+  basin: { zh: "盆地", en: "Basins" },
+  plain: { zh: "平原", en: "Plains" },
+  valley: { zh: "谷地", en: "Valleys" },
+  river: { zh: "河流", en: "Rivers" },
+  gorge: { zh: "峡谷", en: "Gorges" },
+  hills: { zh: "丘陵", en: "Hills" },
+  desert: { zh: "沙漠", en: "Deserts" },
+  lake: { zh: "湖泊", en: "Lakes" },
+  grassland: { zh: "草原", en: "Grasslands" },
+  coast: { zh: "海岸", en: "Coasts" },
+  island: { zh: "岛屿", en: "Islands" },
+  inselberg: { zh: "岛山", en: "Inselbergs" },
+  settlement: { zh: "绿洲·聚落", en: "Settlements" },
+};
+
+export function categoryLabel(category: string, lang: "zh-CN" | "en-US"): string {
+  const l = CATEGORY_LABEL[category];
+  if (!l) return category;
+  return lang === "zh-CN" ? l.zh : l.en;
+}

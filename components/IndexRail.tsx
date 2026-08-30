@@ -6,6 +6,10 @@ import { useState } from "react";
 export interface RailItem {
   id: string;
   name: string;
+  /** 所属分类（用于二级面板里按类别分组）*/
+  category?: string;
+  /** 分类显示名（该分类下第一个地形时给出，作组内小标题）*/
+  categoryLabel?: string;
 }
 export interface RailGroup {
   type: string;
@@ -114,19 +118,25 @@ export default function IndexRail({
               <p className="editorial-kicker mb-3">{activeGroup.label}</p>
               <div className="flex flex-col">
                 {activeGroup.items.map((it) => (
-                  <button
-                    key={it.id}
-                    type="button"
-                    onClick={() => pick(it.id)}
-                    className={[
-                      "editorial-title border-b border-[color:var(--hairline)] py-2.5 text-left text-[15px] transition-colors",
-                      activeId === it.id
-                        ? "text-[color:var(--accent)]"
-                        : "text-[color:var(--ink-body)] hover:text-[color:var(--ink)]",
-                    ].join(" ")}
-                  >
-                    {it.name}
-                  </button>
+                  <div key={it.id} className="flex flex-col">
+                    {it.categoryLabel && (
+                      <p className="editorial-kicker mt-3 mb-1 first:mt-0 text-[color:var(--ink-faint)]">
+                        {it.categoryLabel}
+                      </p>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => pick(it.id)}
+                      className={[
+                        "editorial-title border-b border-[color:var(--hairline)] py-2.5 text-left text-[15px] transition-colors",
+                        activeId === it.id
+                          ? "text-[color:var(--accent)]"
+                          : "text-[color:var(--ink-body)] hover:text-[color:var(--ink)]",
+                      ].join(" ")}
+                    >
+                      {it.name}
+                    </button>
+                  </div>
                 ))}
               </div>
             </>

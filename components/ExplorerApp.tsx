@@ -52,17 +52,9 @@ import {
   subregionOfCountry,
   type Region,
 } from "@/lib/regions";
-import { terrainTier, categoryOrder } from "@/lib/terrain-tier";
+import { terrainTier, categoryOrder, categoryLabel } from "@/lib/terrain-tier";
 
 const routes = getAllRoutes();
-
-/** 国家在窄 rail 上的两字母字形：多词取首字母缩写，单词取前两字母 */
-function countryGlyph(slug: string, nameEn?: string): string {
-  const name = nameEn ?? slug;
-  const words = name.split(/[\s-]+/).filter(Boolean);
-  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
-  return name.replace(/[^A-Za-z]/g, "").slice(0, 2).toUpperCase();
-}
 
 /** Sidebar 统一分类类型 */
 type SidebarCategory =
@@ -902,15 +894,26 @@ export default function ExplorerApp() {
     return slugs
       .map((slug) => {
         const meta = getCountryMeta(slug);
+        let prevCat: string | null = null;
         const items = ALL_FEATURES.filter((f) => f.country === slug)
           .slice()
           .sort(
             (a, b) =>
-              a.tier - b.tier ||
               categoryOrder(a.category) - categoryOrder(b.category) ||
+              a.tier - b.tier ||
               a.registryIndex - b.registryIndex,
           )
-          .map((f) => ({ id: f.id, name: getTerrainName(f.name, language) }));
+          .map((f) => {
+            const catLabel =
+              f.category !== prevCat ? categoryLabel(f.category, language) : undefined;
+            prevCat = f.category;
+            return {
+              id: f.id,
+              name: getTerrainName(f.name, language),
+              category: f.category,
+              categoryLabel: catLabel,
+            };
+          });
         const sub = subregionOfCountry(slug);
         const divider =
           sub && sub.id !== prevSub
@@ -922,7 +925,7 @@ export default function ExplorerApp() {
         return {
           type: slug,
           label: meta ? (language === "zh-CN" ? meta.name : meta.nameEn) : slug,
-          glyph: countryGlyph(slug, meta?.nameEn),
+          glyph: meta?.code ?? slug.slice(0, 2).toUpperCase(),
           divider,
           items,
         };
