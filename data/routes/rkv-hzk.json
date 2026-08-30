@@ -1,0 +1,17 @@
+{
+  "id": "rkv-hzk",
+  "name": "雷克雅未克 — 胡萨维克",
+  "nameEn": "Reykjavík — Húsavík",
+  "description": "朗格冰原 · 霍夫斯冰原",
+  "descriptionEn": "Langjökull · Hofsjökull",
+  "depCountry": "iceland",
+  "arrCountry": "iceland",
+  "flight": { "airline": "北方航空", "airlineEn": "Norlandair", "flightNo": "FNA211", "aircraft": "DHC-6 Twin Otter", "depIata": "RKV", "arrIata": "HZK", "durationMin": 45 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
+    { "kind": "terrain", "terrainId": "langjokull" },
+    { "kind": "terrain", "terrainId": "hofsjokull" },
+    { "kind": "city", "id": "hzk", "name": "胡萨维克", "nameEn": "Húsavík", "lat": 65.9522, "lon": -17.4260, "airport": true }
+  ]
+}
