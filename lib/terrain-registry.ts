@@ -1799,6 +1799,174 @@ const NINGALOO: TerrainEntry = {
   source: "宁格罗礁：西澳裾礁（fringing reef，紧贴海岸，长约260km），与大堡礁的堡礁形成对比；世界自然遗产（Parks Australia）",
 };
 
+// —— 澳大利亚补录（2026-08，Geoscience Australia / Parks Australia / 各州公园管理局 / UNESCO）——
+
+const SHARK_BAY: TerrainEntry = {
+  id: "shark-bay",
+  nameZh: "鲨鱼湾（Gathaagudu）",
+  nameEn: "Shark Bay (Gathaagudu)",
+  category: "coast",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "哈梅林池叠层石", lon: 114.163, lat: -26.405, elevation: 0, kind: "escarpment" },
+  bbox: [112.9, -27.0, 114.5, -24.8],
+  axis: [[113.3, -26.8], [113.6, -24.9]],
+  label: { lon: 113.5, lat: -25.7, rotation: 0 },
+  viewScale: 1.4,
+  source: "鲨鱼湾：澳大利亚大陆最西端的海湾群，世界自然遗产（UNESCO 1991）；哈梅林池因海水盐度约为普通海水两倍而保存现代叠层石；贝壳滩由鸟蛤壳堆积、长约100km、厚可达约10m（UNESCO / DBCA WA）",
+};
+
+const PURNULULU: TerrainEntry = {
+  id: "purnululu",
+  nameZh: "普努鲁鲁（邦格尔邦格尔山）",
+  nameEn: "Purnululu (Bungle Bungle Range)",
+  category: "hills",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "邦格尔邦格尔山南缘蜂窝状塔群", lon: 128.383, lat: -17.53, elevation: 578, kind: "escarpment" },
+  bbox: [128.2, -17.68, 128.55, -17.32],
+  label: { lon: 128.28, lat: -17.42, rotation: 0 },
+  source: "普努鲁鲁国家公园：泥盆纪石英砂岩与砾岩经约2000万年侵蚀而成的蜂窝状锥丘，橙灰相间的横向条纹分别是含铁锰的结壳与蓝藻结壳；UNESCO 称其为“砂岩锥状喀斯特的典范”；世界自然遗产（UNESCO 2003 / Parks Australia）",
+};
+
+const WAVE_ROCK: TerrainEntry = {
+  id: "wave-rock",
+  nameZh: "波浪岩",
+  nameEn: "Wave Rock",
+  category: "inselberg",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "波浪岩（海登岩北壁）", lon: 118.897, lat: -32.443, elevation: 350, kind: "escarpment" },
+  bbox: [118.83, -32.49, 118.96, -32.39],
+  label: { lon: 118.9, lat: -32.38, rotation: 0 },
+  source: "波浪岩：海登岩（Hyden Rock）岛山北侧一段高约15m、长约110m的凹形坡（flared slope）；岩体属伊尔冈克拉通花岗岩、约26亿年；凹面由地下水在基岩根部的化学风化形成，后随土层剥蚀而出露（Wikipedia 引 Twidale；WA DBCA）",
+};
+
+const KARLU_KARLU: TerrainEntry = {
+  id: "karlu-karlu",
+  nameZh: "卡尔卢卡尔卢（魔鬼大理石）",
+  nameEn: "Karlu Karlu (Devils Marbles)",
+  category: "inselberg",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "卡尔卢卡尔卢巨砾群", lon: 134.267, lat: -20.565, elevation: 400, kind: "escarpment" },
+  bbox: [134.19, -20.63, 134.34, -20.49],
+  label: { lon: 134.32, lat: -20.48, rotation: 0 },
+  source: "卡尔卢卡尔卢／魔鬼大理石保护区：约16亿年的花岗岩体经抬升、节理切割成方块，再经球状风化（沿棱角风化更快）磨圆，巨砾直径约0.5—6m；瓦鲁蒙古／凯特泰／阿利亚瓦拉／瓦尔皮里人的圣地（NT Parks and Wildlife）",
+};
+
+const KINGS_CANYON: TerrainEntry = {
+  id: "kings-canyon",
+  nameZh: "国王峡谷（瓦塔卡）",
+  nameEn: "Kings Canyon (Watarrka)",
+  category: "gorge",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "国王峡谷砂岩崖壁", lon: 131.573, lat: -24.251, elevation: 700, kind: "gorge" },
+  bbox: [131.45, -24.35, 131.70, -24.14],
+  axis: [[131.52, -24.30], [131.62, -24.20]],
+  label: { lon: 131.60, lat: -24.13, rotation: 0 },
+  source: "瓦塔卡国家公园国王峡谷：切入约4亿年前（泥盆纪）风成沙丘沉积的梅里尼砂岩（Mereenie Sandstone），崖壁高约100m；砂岩下有页岩隔水层，托起“伊甸园”水潭；河流沿垂直节理下切，顶面被切成“失落之城”圆丘（NT Parks — Watarrka Geology）",
+};
+
+const NITMILUK: TerrainEntry = {
+  id: "nitmiluk",
+  nameZh: "尼特米卢克（凯瑟琳峡谷）",
+  nameEn: "Nitmiluk (Katherine Gorge)",
+  category: "gorge",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "凯瑟琳河第一峡谷", lon: 132.438, lat: -14.313, elevation: 120, kind: "gorge" },
+  bbox: [132.33, -14.46, 132.62, -14.20],
+  axis: [[132.40, -14.42], [132.55, -14.24]],
+  label: { lon: 132.36, lat: -14.30, rotation: 0 },
+  source: "尼特米卢克国家公园：凯瑟琳河切穿约16.5亿年的孔博尔吉砂岩（Kombolgie Sandstone），沿节理与断层形成一串相互成角的直线状峡谷，共13段；由贾沃因（Jawoyn）人拥有、共同管理，“Nitmiluk”意为“蝉之地”（NT Parks / northernterritory.com）",
+};
+
+const GLASSHOUSE_MOUNTAINS: TerrainEntry = {
+  id: "glasshouse-mountains",
+  nameZh: "玻璃屋山",
+  nameEn: "Glass House Mountains",
+  category: "inselberg",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "比尔瓦山（Beerwah）", lon: 152.886, lat: -26.856, elevation: 556, kind: "peak" },
+  bbox: [152.80, -27.02, 153.02, -26.72],
+  label: { lon: 152.78, lat: -26.72, rotation: 0 },
+  source: "玻璃屋山：昆士兰东南部一组孤立的火山颈，约2500—2700万年前（中新世）由粗面岩、流纹岩岩浆在浅部凝固，周围较软的砂岩被剥蚀后留存；1770 年由詹姆斯·库克命名；吉尼巴拉（Jinibara）人的重要文化景观（QLD Parks / Oregon State Volcano World）",
+};
+
+const GREAT_SANDY_DESERT: TerrainEntry = {
+  id: "great-sandy-desert",
+  nameZh: "大沙沙漠",
+  nameEn: "Great Sandy Desert",
+  category: "desert",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "沙脊与丘间走廊", lon: 124.5, lat: -20.6, elevation: 300, kind: "dune" },
+  bbox: [121.5, -23.0, 129.0, -18.0],
+  axis: [[122.0, -20.8], [128.5, -20.4]],
+  label: { lon: 124.5, lat: -20.0, rotation: 0 },
+  viewScale: 1.9,
+  source: "大沙沙漠：西澳东北部、跨皮尔巴拉与南金伯利并延入北领地，Geoscience Australia 命名沙漠面积约26.7万km²；以低矮沙原与近东西向的纵向（线状）沙丘为主，部分沙脊连续超过40km、丘间走廊有黏土坑与盐湖；沙丘因铁氧化物包膜而呈红色（Geoscience Australia）",
+};
+
+const GREAT_AUSTRALIAN_BIGHT: TerrainEntry = {
+  id: "great-australian-bight",
+  nameZh: "大澳大利亚湾（邦达崖）",
+  nameEn: "Great Australian Bight (Bunda Cliffs)",
+  category: "coast",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "邦达崖", lon: 131.2, lat: -31.63, elevation: 90, kind: "escarpment" },
+  bbox: [128.8, -32.4, 133.6, -31.4],
+  axis: [[129.0, -31.7], [133.4, -31.6]],
+  label: { lon: 131.0, lat: -31.9, rotation: 0 },
+  viewScale: 1.5,
+  source: "大澳大利亚湾：南大洋一段开阔海湾，北缘的邦达崖（又称纳拉伯崖）沿岸连续约210km、高约60—120m，由始新世威尔逊崖石灰岩（Wilson Bluff Limestone，尤克拉盆地）组成，是澳大利亚与南极分离后残留的古海底边缘；比海（Head of Bight）是南露脊鲸重要的繁育海域（Wikipedia 引 Bunda Cliffs；澳大利亚政府 DCCEEW）",
+};
+
+const WILLANDRA_LAKES: TerrainEntry = {
+  id: "willandra-lakes",
+  nameZh: "威兰德拉湖区（芒戈湖）",
+  nameEn: "Willandra Lakes Region (Lake Mungo)",
+  category: "lake",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "芒戈湖东岸月牙形沙垄（“中国墙”）", lon: 143.05, lat: -33.72, elevation: 60, kind: "lake" },
+  bbox: [142.7, -34.1, 143.4, -33.1],
+  axis: [[142.9, -34.0], [143.15, -33.3]],
+  label: { lon: 142.8, lat: -33.4, rotation: 0 },
+  viewScale: 1.4,
+  source: "威兰德拉湖区：新南威尔士西南部约17处更新世干涸湖床，由威兰德拉溪（古拉克伦河汊道）补给，约1.85万年前彻底干涸；各湖东岸留有新月形“月牙沙垄”（lunette）；世界自然与文化双遗产（UNESCO 1981）；芒戈湖出土约4万年前的人类遗骸与约460处化石足迹，均有科学发表并经 UNESCO 收录（DCCEEW / UNESCO）",
+};
+
+const NAMBUNG_PINNACLES: TerrainEntry = {
+  id: "nambung-pinnacles",
+  nameZh: "尖峰石阵（南邦）",
+  nameEn: "The Pinnacles (Nambung)",
+  category: "coast",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "尖峰石阵石灰岩柱群", lon: 115.158, lat: -30.604, elevation: 20, kind: "dune" },
+  bbox: [115.08, -30.70, 115.28, -30.49],
+  label: { lon: 115.06, lat: -30.5, rotation: 0 },
+  source: "南邦国家公园尖峰石阵：黄色石英砂中成千上万根石灰岩柱，最高约3.5m；成岩母质是更新世风成钙质砂岩（塔马拉石灰岩，Tamala Limestone）——由海滩贝屑砂被风吹成沙丘后胶结而成；石柱一般认为是溶蚀管道扩大、合并后残留的产物，具体过程学界仍有讨论（WA DBCA；Lipar & Webb 2014）",
+};
+
+const MOUNT_GAMBIER: TerrainEntry = {
+  id: "mount-gambier",
+  nameZh: "甘比尔山（蓝湖）",
+  nameEn: "Mount Gambier (Blue Lake)",
+  category: "lake",
+  regionId: "oceania",
+  country: "australia",
+  landmark: { name: "蓝湖（Warwar）", lon: 140.782, lat: -37.845, elevation: 100, kind: "lake" },
+  bbox: [140.72, -37.90, 140.85, -37.79],
+  label: { lon: 140.7, lat: -37.79, rotation: 0 },
+  source: "甘比尔山火山复合体：四个相互叠置的低平火山口（maar），由岩浆与地下水相互作用的爆发形成，蓝湖是其中最大的一个；对最近一次喷发的年代有不同测定（约2.8万年前、约6000年前等），近年一项基于放射性碳的测定认为在约6000年前，若成立则可能是澳大利亚大陆已知最近的一次火山喷发；蓝湖水色在每年11月至次年3月转为钴蓝、其余时间偏灰（SA Dept for Environment and Water）",
+};
+
 // ============================================================
 // 北美洲 — 美国（regionId: "north-america", country: "usa"）
 // 坐标 / 高程据 USGS、NPS、NOAA、Encyclopædia Britannica
@@ -6278,6 +6446,12 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   TASMANIA, KGARI,
   MURRAY_DARLING,
   KAKADU, GRAMPIANS, NINGALOO,
+  SHARK_BAY, PURNULULU, GLASSHOUSE_MOUNTAINS,
+  WAVE_ROCK, KARLU_KARLU,
+  KINGS_CANYON, NITMILUK,
+  GREAT_SANDY_DESERT,
+  GREAT_AUSTRALIAN_BIGHT, NAMBUNG_PINNACLES,
+  WILLANDRA_LAKES, MOUNT_GAMBIER,
   // ===== 北美洲 / 美国 =====
   ROCKY_MOUNTAINS, APPALACHIAN_MOUNTAINS, SIERRA_NEVADA_US, CASCADE_RANGE, ALASKA_RANGE,
   COLORADO_PLATEAU, GRAND_CANYON, GREAT_PLAINS_US, GREAT_BASIN, DEATH_VALLEY,

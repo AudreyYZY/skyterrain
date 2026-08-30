@@ -54,6 +54,71 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "卡卡杜国家公园", nameEn: "Kakadu National Park", lon: 132.9550, lat: -12.4090, kind: "nature" },
     { nameZh: "利奇菲尔德国家公园", nameEn: "Litchfield National Park", lon: 130.8000, lat: -13.1700, kind: "nature" },
   ],
+  canberra: [
+    { nameZh: "伯利·格里芬湖", nameEn: "Lake Burley Griffin", lon: 149.1200, lat: -35.2930, kind: "nature" },
+    { nameZh: "国会大厦", nameEn: "Parliament House", lon: 149.1245, lat: -35.3080, kind: "landmark" },
+    { nameZh: "澳大利亚战争纪念馆", nameEn: "Australian War Memorial", lon: 149.1490, lat: -35.2810, kind: "landmark" },
+    { nameZh: "澳大利亚国家美术馆", nameEn: "National Gallery of Australia", lon: 149.1355, lat: -35.3000, kind: "landmark" },
+    { nameZh: "安斯利山瞭望台", nameEn: "Mount Ainslie Lookout", lon: 149.1655, lat: -35.2720, kind: "nature" },
+  ],
+  newcastle: [
+    { nameZh: "诺比斯灯塔", nameEn: "Nobbys Lighthouse", lon: 151.7960, lat: -32.9180, kind: "landmark" },
+    { nameZh: "斯克拉奇利要塞", nameEn: "Fort Scratchley", lon: 151.7920, lat: -32.9260, kind: "landmark" },
+    { nameZh: "梅里韦瑟海洋浴场", nameEn: "Merewether Ocean Baths", lon: 151.7620, lat: -32.9430, kind: "nature" },
+    { nameZh: "猎人谷（葡萄酒产区）", nameEn: "Hunter Valley wine region", lon: 151.3300, lat: -32.7800, kind: "nature" },
+    { nameZh: "斯托克顿沙丘", nameEn: "Stockton Sand Dunes", lon: 151.8300, lat: -32.8800, kind: "nature" },
+  ],
+  "gold-coast": [
+    { nameZh: "冲浪者天堂", nameEn: "Surfers Paradise", lon: 153.4300, lat: -28.0020, kind: "district" },
+    { nameZh: "伯利角", nameEn: "Burleigh Heads", lon: 153.4530, lat: -28.0900, kind: "nature" },
+    { nameZh: "华纳电影世界", nameEn: "Warner Bros. Movie World", lon: 153.3130, lat: -27.9130, kind: "landmark" },
+    { nameZh: "雷明顿国家公园", nameEn: "Lamington National Park", lon: 153.1300, lat: -28.2300, kind: "nature" },
+    { nameZh: "斯普林布鲁克国家公园", nameEn: "Springbrook National Park", lon: 153.2750, lat: -28.2300, kind: "nature" },
+  ],
+  hobart: [
+    { nameZh: "萨拉曼卡广场", nameEn: "Salamanca Place", lon: 147.3320, lat: -42.8850, kind: "district" },
+    { nameZh: "威灵顿山（kunanyi）", nameEn: "Mount Wellington (kunanyi)", lon: 147.2370, lat: -42.8960, kind: "nature" },
+    { nameZh: "MONA 古今艺术博物馆", nameEn: "MONA", lon: 147.2570, lat: -42.8100, kind: "landmark" },
+    { nameZh: "亚瑟港历史遗址", nameEn: "Port Arthur Historic Site", lon: 147.8510, lat: -43.1480, kind: "landmark" },
+    { nameZh: "布鲁尼岛", nameEn: "Bruny Island", lon: 147.2500, lat: -43.3900, kind: "nature" },
+  ],
+  launceston: [
+    { nameZh: "卡塔拉克特峡谷", nameEn: "Cataract Gorge", lon: 147.1250, lat: -41.4420, kind: "nature" },
+    { nameZh: "女王维多利亚博物馆与美术馆", nameEn: "Queen Victoria Museum and Art Gallery", lon: 147.1200, lat: -41.4260, kind: "landmark" },
+    { nameZh: "塔马河谷（葡萄酒产区）", nameEn: "Tamar Valley wine region", lon: 146.9900, lat: -41.2500, kind: "nature" },
+    { nameZh: "摇篮山—圣克莱尔湖国家公园", nameEn: "Cradle Mountain–Lake St Clair National Park", lon: 145.9410, lat: -41.6840, kind: "nature" },
+  ],
+  "alice-springs": [
+    { nameZh: "希维特里峡口", nameEn: "Heavitree Gap", lon: 133.8720, lat: -23.7350, kind: "nature" },
+    { nameZh: "电报站历史保护区", nameEn: "Telegraph Station Historical Reserve", lon: 133.8700, lat: -23.6700, kind: "landmark" },
+    { nameZh: "辛普森峡", nameEn: "Simpsons Gap", lon: 133.7150, lat: -23.6870, kind: "nature" },
+    { nameZh: "瓮峡（斯坦利峡）", nameEn: "Standley Chasm", lon: 133.5330, lat: -23.7160, kind: "nature" },
+    { nameZh: "三边峡", nameEn: "Trephina Gorge", lon: 134.3600, lat: -23.5400, kind: "nature" },
+  ],
+  katherine: [
+    { nameZh: "尼特米卢克（凯瑟琳峡谷）", nameEn: "Nitmiluk (Katherine Gorge)", lon: 132.4380, lat: -14.3130, kind: "nature" },
+    { nameZh: "伊迪丝瀑布（Leliyn）", nameEn: "Edith Falls (Leliyn)", lon: 132.1750, lat: -14.1770, kind: "nature" },
+    { nameZh: "凯瑟琳温泉", nameEn: "Katherine Hot Springs", lon: 132.2620, lat: -14.4780, kind: "nature" },
+    { nameZh: "坎宁安钟乳石洞", nameEn: "Cutta Cutta Caves", lon: 132.4600, lat: -14.6000, kind: "nature" },
+  ],
+  broome: [
+    { nameZh: "凯布尔海滩", nameEn: "Cable Beach", lon: 122.1900, lat: -17.9600, kind: "nature" },
+    { nameZh: "中国城", nameEn: "Chinatown", lon: 122.2380, lat: -17.9560, kind: "district" },
+    { nameZh: "加坦黑姆角（恐龙足迹）", nameEn: "Gantheaume Point", lon: 122.1830, lat: -17.9880, kind: "landmark" },
+    { nameZh: "罗巴克湾", nameEn: "Roebuck Bay", lon: 122.3000, lat: -18.0300, kind: "nature" },
+  ],
+  exmouth: [
+    { nameZh: "松石湾", nameEn: "Turquoise Bay", lon: 113.8200, lat: -22.1000, kind: "nature" },
+    { nameZh: "亚迪溪峡谷", nameEn: "Yardie Creek Gorge", lon: 113.7900, lat: -22.3200, kind: "nature" },
+    { nameZh: "凯普山脉国家公园", nameEn: "Cape Range National Park", lon: 113.9000, lat: -22.0500, kind: "nature" },
+    { nameZh: "珊瑚湾", nameEn: "Coral Bay", lon: 113.7700, lat: -23.1400, kind: "district" },
+  ],
+  "coober-pedy": [
+    { nameZh: "地下教堂", nameEn: "Underground churches", lon: 134.7530, lat: -29.0100, kind: "landmark" },
+    { nameZh: "月亮景观", nameEn: "Moon Plain", lon: 134.8500, lat: -28.9000, kind: "nature" },
+    { nameZh: "防野狗围栏（一段）", nameEn: "Dog Fence (section)", lon: 134.7000, lat: -29.0600, kind: "landmark" },
+    { nameZh: "断栅栏观景台", nameEn: "The Breakaways", lon: 134.6700, lat: -28.8500, kind: "nature" },
+  ],
 
   // ── 中国 ──
   beijing: [
