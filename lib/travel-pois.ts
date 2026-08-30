@@ -1340,6 +1340,72 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "特内里费音乐厅", nameEn: "Auditorio de Tenerife", lon: -16.2450, lat: 28.4600, kind: "landmark" },
     { nameZh: "阿纳加山地", nameEn: "Anaga Mountains", lon: -16.2200, lat: 28.5500, kind: "nature" },
   ],
+
+  // ── 德国 ──
+  berlin: [
+    { nameZh: "博物馆岛", nameEn: "Museum Island", lon: 13.3969, lat: 52.5169, kind: "landmark" },
+    { nameZh: "勃兰登堡门", nameEn: "Brandenburg Gate", lon: 13.3777, lat: 52.5163, kind: "landmark" },
+    { nameZh: "东区画廊", nameEn: "East Side Gallery", lon: 13.4394, lat: 52.5054, kind: "landmark" },
+    { nameZh: "查理检查站", nameEn: "Checkpoint Charlie", lon: 13.3903, lat: 52.5076, kind: "landmark" },
+    { nameZh: "波茨坦无忧宫", nameEn: "Sanssouci Palace, Potsdam", lon: 13.0384, lat: 52.4041, kind: "landmark" },
+  ],
+  munich: [
+    { nameZh: "玛丽恩广场", nameEn: "Marienplatz", lon: 11.5755, lat: 48.1374, kind: "landmark" },
+    { nameZh: "宁芬堡宫", nameEn: "Nymphenburg Palace", lon: 11.5030, lat: 48.1583, kind: "landmark" },
+    { nameZh: "英国花园", nameEn: "English Garden", lon: 11.6047, lat: 48.1642, kind: "nature" },
+    { nameZh: "楚格峰", nameEn: "Zugspitze", lon: 10.9866, lat: 47.4211, kind: "nature" },
+  ],
+  hamburg: [
+    { nameZh: "仓库城", nameEn: "Speicherstadt", lon: 9.9954, lat: 53.5441, kind: "landmark" },
+    { nameZh: "易北爱乐音乐厅", nameEn: "Elbphilharmonie", lon: 9.9837, lat: 53.5412, kind: "landmark" },
+    { nameZh: "圣保利渔市", nameEn: "St. Pauli Fish Market", lon: 9.9539, lat: 53.5460, kind: "district" },
+    { nameZh: "阿尔斯特湖", nameEn: "Alster Lakes", lon: 9.9950, lat: 53.5580, kind: "nature" },
+  ],
+  cologne: [
+    { nameZh: "科隆大教堂", nameEn: "Cologne Cathedral", lon: 6.9583, lat: 50.9413, kind: "landmark" },
+    { nameZh: "霍亨索伦桥", nameEn: "Hohenzollern Bridge", lon: 6.9614, lat: 50.9432, kind: "landmark" },
+    { nameZh: "路德维希博物馆", nameEn: "Museum Ludwig", lon: 6.9600, lat: 50.9407, kind: "landmark" },
+  ],
+  frankfurt: [
+    { nameZh: "罗马广场", nameEn: "Römerberg", lon: 8.6821, lat: 50.1106, kind: "landmark" },
+    { nameZh: "施泰德美术馆", nameEn: "Städel Museum", lon: 8.6746, lat: 50.1041, kind: "landmark" },
+    { nameZh: "法兰克福大教堂", nameEn: "Frankfurt Cathedral", lon: 8.6837, lat: 50.1106, kind: "landmark" },
+    { nameZh: "萨克森豪森区", nameEn: "Sachsenhausen", lon: 8.6800, lat: 50.1030, kind: "district" },
+  ],
+  dresden: [
+    { nameZh: "茨温格宫", nameEn: "Zwinger Palace", lon: 13.7350, lat: 51.0526, kind: "landmark" },
+    { nameZh: "圣母教堂", nameEn: "Frauenkirche", lon: 13.7433, lat: 51.0518, kind: "landmark" },
+    { nameZh: "德累斯顿城堡", nameEn: "Dresden Castle", lon: 13.7396, lat: 51.0522, kind: "landmark" },
+    { nameZh: "巴斯泰岩", nameEn: "Bastei", lon: 14.0956, lat: 50.9683, kind: "nature" },
+  ],
+  nuremberg: [
+    { nameZh: "纽伦堡城堡", nameEn: "Nuremberg Castle", lon: 11.0775, lat: 49.4577, kind: "landmark" },
+    { nameZh: "圣劳伦茨教堂", nameEn: "St. Lorenz Church", lon: 11.0775, lat: 49.4527, kind: "landmark" },
+    { nameZh: "日耳曼国家博物馆", nameEn: "Germanic National Museum", lon: 11.0722, lat: 49.4478, kind: "landmark" },
+    { nameZh: "索伦霍芬化石产地", nameEn: "Solnhofen Fossil Site", lon: 10.9167, lat: 48.9167, kind: "nature" },
+  ],
+  freiburg: [
+    { nameZh: "弗赖堡大教堂", nameEn: "Freiburg Minster", lon: 7.8525, lat: 47.9955, kind: "landmark" },
+    { nameZh: "施罗斯山", nameEn: "Schlossberg", lon: 7.8578, lat: 47.9958, kind: "nature" },
+    { nameZh: "费尔德山", nameEn: "Feldberg", lon: 7.9836, lat: 47.8744, kind: "nature" },
+    { nameZh: "蒂蒂湖", nameEn: "Lake Titisee", lon: 8.1500, lat: 47.9000, kind: "nature" },
+  ],
+  heidelberg: [
+    { nameZh: "海德堡城堡", nameEn: "Heidelberg Castle", lon: 8.7157, lat: 49.4106, kind: "landmark" },
+    { nameZh: "老桥", nameEn: "Old Bridge", lon: 8.7089, lat: 49.4127, kind: "landmark" },
+    { nameZh: "哲学家小径", nameEn: "Philosophers' Walk", lon: 8.7050, lat: 49.4160, kind: "nature" },
+  ],
+  trier: [
+    { nameZh: "黑门", nameEn: "Porta Nigra", lon: 6.6425, lat: 49.7583, kind: "landmark" },
+    { nameZh: "古罗马大浴场", nameEn: "Imperial Baths", lon: 6.6472, lat: 49.7517, kind: "landmark" },
+    { nameZh: "圆形剧场", nameEn: "Roman Amphitheatre", lon: 6.6553, lat: 49.7517, kind: "landmark" },
+    { nameZh: "马克思故居", nameEn: "Karl Marx House", lon: 6.6444, lat: 49.7558, kind: "landmark" },
+  ],
+  stralsund: [
+    { nameZh: "圣尼古拉教堂", nameEn: "St. Nicholas Church", lon: 13.0928, lat: 54.3153, kind: "landmark" },
+    { nameZh: "海洋博物馆", nameEn: "Ozeaneum", lon: 13.0894, lat: 54.3167, kind: "landmark" },
+    { nameZh: "吕根岛白垩崖", nameEn: "Rügen Chalk Cliffs", lon: 13.6461, lat: 54.5578, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

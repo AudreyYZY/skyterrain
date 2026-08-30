@@ -146,6 +146,15 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "es-northeast": { zh: "东北部（阿拉贡）", en: "Northeast (Aragon)", order: 126 },
   "es-balearic": { zh: "巴利阿里群岛", en: "Balearic Islands", order: 127 },
   "es-canary": { zh: "加那利群岛", en: "Canary Islands", order: 128 },
+  // 德国（柏林→巴伐利亚→北部→西部→中部→东部→西南→东北）
+  "de-berlin": { zh: "柏林", en: "Berlin", order: 130 },
+  "de-bavaria": { zh: "巴伐利亚", en: "Bavaria", order: 131 },
+  "de-north": { zh: "北部", en: "Northern Germany", order: 132 },
+  "de-west": { zh: "西部", en: "Western Germany", order: 133 },
+  "de-central": { zh: "中部", en: "Central Germany", order: 134 },
+  "de-east": { zh: "东部", en: "Eastern Germany", order: 135 },
+  "de-southwest": { zh: "西南部", en: "Southwest Germany", order: 136 },
+  "de-northeast": { zh: "东北部", en: "Northeast Germany", order: 137 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -174,6 +183,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "france", nameZh: "法国", nameEn: "France" },
   { country: "italy", nameZh: "意大利", nameEn: "Italy" },
   { country: "spain", nameZh: "西班牙", nameEn: "Spain" },
+  { country: "germany", nameZh: "德国", nameEn: "Germany" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1189,6 +1199,74 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "TFN", nameZh: "特内里费北机场", nameEn: "Tenerife North Airport", lon: -16.341, lat: 28.483 },
     source: "圣克鲁斯-德特内里费市中心 28.4636,-16.2518；TFN 机场：公开资料",
   },
+
+  // ── 德国 ────────────────────────────────────────────
+  {
+    id: "berlin", nameZh: "柏林", nameEn: "Berlin", country: "germany", tier: "capital", zone: "de-berlin",
+    lon: 13.4050, lat: 52.5200,
+    airport: { iata: "BER", nameZh: "柏林勃兰登堡机场", nameEn: "Berlin Brandenburg", lon: 13.5033, lat: 52.3667 },
+    source: "柏林市中心 52.5200,13.4050；BER 机场：公开资料",
+  },
+  {
+    id: "munich", nameZh: "慕尼黑", nameEn: "Munich", country: "germany", tier: "major", zone: "de-bavaria",
+    lon: 11.5820, lat: 48.1351,
+    airport: { iata: "MUC", nameZh: "慕尼黑机场", nameEn: "Munich Airport", lon: 11.7861, lat: 48.3538 },
+    source: "慕尼黑市中心 48.1351,11.5820；MUC 机场：公开资料",
+  },
+  {
+    id: "hamburg", nameZh: "汉堡", nameEn: "Hamburg", country: "germany", tier: "major", zone: "de-north",
+    lon: 9.9937, lat: 53.5511,
+    airport: { iata: "HAM", nameZh: "汉堡机场", nameEn: "Hamburg Airport", lon: 9.9882, lat: 53.6304 },
+    source: "汉堡市中心 53.5511,9.9937；HAM 机场：公开资料",
+  },
+  {
+    id: "cologne", nameZh: "科隆", nameEn: "Cologne", country: "germany", tier: "major", zone: "de-west",
+    lon: 6.9603, lat: 50.9375,
+    airport: { iata: "CGN", nameZh: "科隆-波恩机场", nameEn: "Cologne Bonn Airport", lon: 7.1427, lat: 50.8659 },
+    source: "科隆市中心 50.9375,6.9603；CGN 机场：公开资料",
+  },
+  {
+    id: "frankfurt", nameZh: "法兰克福", nameEn: "Frankfurt", country: "germany", tier: "major", zone: "de-central",
+    lon: 8.6821, lat: 50.1109,
+    airport: { iata: "FRA", nameZh: "法兰克福机场", nameEn: "Frankfurt Airport", lon: 8.5622, lat: 50.0379 },
+    source: "法兰克福市中心 50.1109,8.6821；FRA 机场：公开资料",
+  },
+  {
+    id: "dresden", nameZh: "德累斯顿", nameEn: "Dresden", country: "germany", tier: "notable", zone: "de-east",
+    lon: 13.7373, lat: 51.0504,
+    airport: { iata: "DRS", nameZh: "德累斯顿机场", nameEn: "Dresden Airport", lon: 13.7672, lat: 51.1328 },
+    source: "德累斯顿市中心 51.0504,13.7373；DRS 机场：公开资料",
+  },
+  {
+    id: "nuremberg", nameZh: "纽伦堡", nameEn: "Nuremberg", country: "germany", tier: "notable", zone: "de-bavaria",
+    lon: 11.0767, lat: 49.4521,
+    airport: { iata: "NUE", nameZh: "纽伦堡机场", nameEn: "Nuremberg Airport", lon: 11.0669, lat: 49.4987 },
+    source: "纽伦堡市中心 49.4521,11.0767；NUE 机场：公开资料",
+  },
+  {
+    id: "freiburg", nameZh: "弗赖堡", nameEn: "Freiburg", country: "germany", tier: "notable", zone: "de-southwest",
+    lon: 7.8421, lat: 47.9990,
+    airport: { iata: "EAP", nameZh: "巴塞尔-米卢斯-弗赖堡欧洲机场", nameEn: "EuroAirport Basel-Mulhouse-Freiburg", lon: 7.5299, lat: 47.5896 },
+    source: "弗赖堡市中心 47.9990,7.8421；弗赖堡本地无商业机场，最近的欧洲机场（巴塞尔-米卢斯-弗赖堡）距市区约70km：公开资料",
+  },
+  {
+    id: "heidelberg", nameZh: "海德堡", nameEn: "Heidelberg", country: "germany", tier: "notable", zone: "de-southwest",
+    lon: 8.6724, lat: 49.3988,
+    airport: { iata: "FRA", nameZh: "法兰克福机场", nameEn: "Frankfurt Airport", lon: 8.5622, lat: 50.0379 },
+    source: "海德堡市中心 49.3988,8.6724；海德堡本地无商业机场，多数旅客经法兰克福机场（距市区约85km）转乘：公开资料",
+  },
+  {
+    id: "trier", nameZh: "特里尔", nameEn: "Trier", country: "germany", tier: "notable", zone: "de-west",
+    lon: 6.6428, lat: 49.7596,
+    airport: { iata: "HHN", nameZh: "法兰克福哈恩机场", nameEn: "Frankfurt-Hahn Airport", lon: 7.2639, lat: 49.9487 },
+    source: "特里尔市中心 49.7596,6.6428；最近商业机场为法兰克福哈恩机场（距市区约50km）：公开资料",
+  },
+  {
+    id: "stralsund", nameZh: "施特拉尔松", nameEn: "Stralsund", country: "germany", tier: "notable", zone: "de-northeast",
+    lon: 13.0930, lat: 54.3153,
+    airport: { iata: "RLG", nameZh: "罗斯托克-拉格机场", nameEn: "Rostock-Laage Airport", lon: 12.2783, lat: 53.9182 },
+    source: "施特拉尔松市中心 54.3153,13.0930；最近商业机场为罗斯托克-拉格机场（距市区约70km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1208,6 +1286,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   france: "europe",
   italy: "europe",
   spain: "europe",
+  germany: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {
