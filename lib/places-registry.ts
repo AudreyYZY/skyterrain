@@ -129,6 +129,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "fr-southwest": { zh: "西南部", en: "Southwest France", order: 105 },
   "fr-west": { zh: "西部", en: "Western France", order: 106 },
   "fr-corsica": { zh: "科西嘉", en: "Corsica", order: 107 },
+  // 意大利（中部→西北→东北→南部→西西里→撒丁）
+  "it-central": { zh: "中部", en: "Central Italy", order: 110 },
+  "it-northwest": { zh: "西北部", en: "Northwest Italy", order: 111 },
+  "it-northeast": { zh: "东北部", en: "Northeast Italy", order: 112 },
+  "it-south": { zh: "南部", en: "Southern Italy", order: 113 },
+  "it-sicily": { zh: "西西里", en: "Sicily", order: 114 },
+  "it-sardinia": { zh: "撒丁岛", en: "Sardinia", order: 115 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -155,6 +162,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "switzerland", nameZh: "瑞士", nameEn: "Switzerland" },
   { country: "norway", nameZh: "挪威", nameEn: "Norway" },
   { country: "france", nameZh: "法国", nameEn: "France" },
+  { country: "italy", nameZh: "意大利", nameEn: "Italy" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1034,6 +1042,74 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "AJA", nameZh: "阿雅克肖机场", nameEn: "Ajaccio Airport", lon: 8.8029, lat: 41.9236 },
     source: "阿雅克肖市中心 41.9192,8.7386；AJA 机场：公开资料",
   },
+
+  // ── 意大利 ──
+  {
+    id: "rome", nameZh: "罗马", nameEn: "Rome", country: "italy", tier: "capital", zone: "it-central",
+    lon: 12.4964, lat: 41.9028,
+    airport: { iata: "FCO", nameZh: "菲乌米奇诺机场", nameEn: "Rome Fiumicino Airport", lon: 12.2389, lat: 41.8003 },
+    source: "罗马市中心 41.9028,12.4964；FCO 机场：公开资料",
+  },
+  {
+    id: "florence", nameZh: "佛罗伦萨", nameEn: "Florence", country: "italy", tier: "major", zone: "it-central",
+    lon: 11.2558, lat: 43.7696,
+    airport: { iata: "FLR", nameZh: "佛罗伦萨机场", nameEn: "Florence Airport", lon: 11.2051, lat: 43.8100 },
+    source: "佛罗伦萨市中心 43.7696,11.2558；FLR 机场：公开资料",
+  },
+  {
+    id: "milan", nameZh: "米兰", nameEn: "Milan", country: "italy", tier: "major", zone: "it-northwest",
+    lon: 9.1900, lat: 45.4642,
+    airport: { iata: "LIN", nameZh: "米兰利纳特机场", nameEn: "Milan Linate Airport", lon: 9.2767, lat: 45.4451 },
+    source: "米兰市中心 45.4642,9.1900；LIN 机场：公开资料",
+  },
+  {
+    id: "turin", nameZh: "都灵", nameEn: "Turin", country: "italy", tier: "notable", zone: "it-northwest",
+    lon: 7.6869, lat: 45.0703,
+    airport: { iata: "TRN", nameZh: "都灵机场", nameEn: "Turin Airport", lon: 7.6497, lat: 45.2008 },
+    source: "都灵市中心 45.0703,7.6869；TRN 机场：公开资料",
+  },
+  {
+    id: "venice", nameZh: "威尼斯", nameEn: "Venice", country: "italy", tier: "major", zone: "it-northeast",
+    lon: 12.3155, lat: 45.4408,
+    airport: { iata: "VCE", nameZh: "威尼斯马可波罗机场", nameEn: "Venice Marco Polo Airport", lon: 12.3519, lat: 45.5053 },
+    source: "威尼斯市中心 45.4408,12.3155；VCE 机场：公开资料",
+  },
+  {
+    id: "bologna", nameZh: "博洛尼亚", nameEn: "Bologna", country: "italy", tier: "notable", zone: "it-northeast",
+    lon: 11.3426, lat: 44.4949,
+    airport: { iata: "BLQ", nameZh: "博洛尼亚机场", nameEn: "Bologna Airport", lon: 11.2887, lat: 44.5354 },
+    source: "博洛尼亚市中心 44.4949,11.3426；BLQ 机场：公开资料",
+  },
+  {
+    id: "naples", nameZh: "那不勒斯", nameEn: "Naples", country: "italy", tier: "major", zone: "it-south",
+    lon: 14.2681, lat: 40.8518,
+    airport: { iata: "NAP", nameZh: "那不勒斯机场", nameEn: "Naples Airport", lon: 14.2908, lat: 40.8860 },
+    source: "那不勒斯市中心 40.8518,14.2681；NAP 机场：公开资料",
+  },
+  {
+    id: "bari", nameZh: "巴里", nameEn: "Bari", country: "italy", tier: "notable", zone: "it-south",
+    lon: 16.8719, lat: 41.1171,
+    airport: { iata: "BRI", nameZh: "巴里机场", nameEn: "Bari Airport", lon: 16.7606, lat: 41.1389 },
+    source: "巴里市中心 41.1171,16.8719；BRI 机场：公开资料",
+  },
+  {
+    id: "palermo", nameZh: "巴勒莫", nameEn: "Palermo", country: "italy", tier: "notable", zone: "it-sicily",
+    lon: 13.3615, lat: 38.1157,
+    airport: { iata: "PMO", nameZh: "巴勒莫机场", nameEn: "Palermo Airport", lon: 13.0910, lat: 38.1760 },
+    source: "巴勒莫市中心 38.1157,13.3615；PMO 机场：公开资料",
+  },
+  {
+    id: "catania", nameZh: "卡塔尼亚", nameEn: "Catania", country: "italy", tier: "notable", zone: "it-sicily",
+    lon: 15.0830, lat: 37.5079,
+    airport: { iata: "CTA", nameZh: "卡塔尼亚机场", nameEn: "Catania Airport", lon: 15.0664, lat: 37.4668 },
+    source: "卡塔尼亚市中心 37.5079,15.0830；CTA 机场：公开资料",
+  },
+  {
+    id: "cagliari", nameZh: "卡利亚里", nameEn: "Cagliari", country: "italy", tier: "notable", zone: "it-sardinia",
+    lon: 9.1217, lat: 39.2238,
+    airport: { iata: "CAG", nameZh: "卡利亚里机场", nameEn: "Cagliari Airport", lon: 9.0543, lat: 39.2515 },
+    source: "卡利亚里市中心 39.2238,9.1217；CAG 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1051,6 +1127,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   switzerland: "europe",
   norway: "europe",
   france: "europe",
+  italy: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

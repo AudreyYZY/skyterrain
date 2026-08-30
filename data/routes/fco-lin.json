@@ -1,0 +1,18 @@
+{
+  "id": "fco-lin",
+  "name": "罗马 — 米兰",
+  "nameEn": "Rome — Milan",
+  "description": "特拉西梅诺湖 · 托斯卡纳丘陵 · 波河平原",
+  "descriptionEn": "Lake Trasimeno · Tuscan Hills · Po Valley",
+  "depCountry": "italy",
+  "arrCountry": "italy",
+  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ2011", "aircraft": "Airbus A320", "depIata": "FCO", "arrIata": "LIN", "durationMin": 70 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
+    { "kind": "terrain", "terrainId": "lake-trasimeno" },
+    { "kind": "terrain", "terrainId": "tuscan-hills" },
+    { "kind": "terrain", "terrainId": "po-valley" },
+    { "kind": "city", "id": "lin", "name": "米兰", "nameEn": "Milan", "lat": 45.4451, "lon": 9.2767, "airport": true }
+  ]
+}

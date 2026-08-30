@@ -1198,6 +1198,85 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "桑基那里群岛", nameEn: "Sanguinaires Islands", lon: 8.5900, lat: 41.9200, kind: "nature" },
     { nameZh: "皮亚纳红色花岗岩海岸", nameEn: "Calanques de Piana", lon: 8.6330, lat: 42.2440, kind: "nature" },
   ],
+
+  // ── 意大利 ──
+  rome: [
+    { nameZh: "斗兽场", nameEn: "Colosseum", lon: 12.4924, lat: 41.8902, kind: "landmark" },
+    { nameZh: "古罗马广场", nameEn: "Roman Forum", lon: 12.4853, lat: 41.8925, kind: "landmark" },
+    { nameZh: "梵蒂冈博物馆与西斯廷礼拜堂", nameEn: "Vatican Museums & Sistine Chapel", lon: 12.4534, lat: 41.9065, kind: "landmark" },
+    { nameZh: "圣彼得大教堂", nameEn: "St Peter's Basilica", lon: 12.4534, lat: 41.9022, kind: "landmark" },
+    { nameZh: "万神殿", nameEn: "Pantheon", lon: 12.4768, lat: 41.8986, kind: "landmark" },
+    { nameZh: "特雷维喷泉", nameEn: "Trevi Fountain", lon: 12.4833, lat: 41.9009, kind: "landmark" },
+    { nameZh: "特拉斯提弗列区", nameEn: "Trastevere", lon: 12.4694, lat: 41.8896, kind: "district" },
+  ],
+  florence: [
+    { nameZh: "百花圣母大教堂", nameEn: "Florence Cathedral", lon: 11.2560, lat: 43.7731, kind: "landmark" },
+    { nameZh: "乌菲兹美术馆", nameEn: "Uffizi Gallery", lon: 11.2559, lat: 43.7687, kind: "landmark" },
+    { nameZh: "学院美术馆（大卫像）", nameEn: "Accademia Gallery (David)", lon: 11.2588, lat: 43.7766, kind: "landmark" },
+    { nameZh: "老桥", nameEn: "Ponte Vecchio", lon: 11.2531, lat: 43.7680, kind: "landmark" },
+    { nameZh: "米开朗基罗广场", nameEn: "Piazzale Michelangelo", lon: 11.2650, lat: 43.7629, kind: "nature" },
+  ],
+  milan: [
+    { nameZh: "米兰主教座堂", nameEn: "Milan Cathedral", lon: 9.1900, lat: 45.4642, kind: "landmark" },
+    { nameZh: "埃马努埃莱二世拱廊", nameEn: "Galleria Vittorio Emanuele II", lon: 9.1896, lat: 45.4656, kind: "landmark" },
+    { nameZh: "斯卡拉歌剧院", nameEn: "La Scala", lon: 9.1897, lat: 45.4676, kind: "landmark" },
+    { nameZh: "感恩圣母教堂（最后的晚餐）", nameEn: "Santa Maria delle Grazie (Last Supper)", lon: 9.1706, lat: 45.4655, kind: "landmark" },
+    { nameZh: "斯福尔扎城堡", nameEn: "Sforza Castle", lon: 9.1794, lat: 45.4703, kind: "landmark" },
+  ],
+  turin: [
+    { nameZh: "城堡广场", nameEn: "Piazza Castello", lon: 7.6858, lat: 45.0710, kind: "district" },
+    { nameZh: "埃及博物馆", nameEn: "Egyptian Museum", lon: 7.6836, lat: 45.0693, kind: "landmark" },
+    { nameZh: "国立电影博物馆（莫勒大厦）", nameEn: "National Cinema Museum (Mole Antonelliana)", lon: 7.6928, lat: 45.0691, kind: "landmark" },
+    { nameZh: "苏佩尔加圣殿", nameEn: "Basilica of Superga", lon: 7.7614, lat: 45.0819, kind: "nature" },
+  ],
+  venice: [
+    { nameZh: "圣马可广场", nameEn: "Piazza San Marco", lon: 12.3388, lat: 45.4341, kind: "district" },
+    { nameZh: "圣马可大教堂", nameEn: "St Mark's Basilica", lon: 12.3397, lat: 45.4345, kind: "landmark" },
+    { nameZh: "总督宫", nameEn: "Doge's Palace", lon: 12.3406, lat: 45.4337, kind: "landmark" },
+    { nameZh: "里亚尔托桥", nameEn: "Rialto Bridge", lon: 12.3358, lat: 45.4380, kind: "landmark" },
+    { nameZh: "布拉诺岛", nameEn: "Burano", lon: 12.4160, lat: 45.4850, kind: "nature" },
+    { nameZh: "穆拉诺岛", nameEn: "Murano", lon: 12.3540, lat: 45.4590, kind: "nature" },
+  ],
+  bologna: [
+    { nameZh: "阿西内利塔与加里森达塔", nameEn: "Asinelli & Garisenda towers", lon: 11.3467, lat: 44.4942, kind: "landmark" },
+    { nameZh: "马焦雷广场", nameEn: "Piazza Maggiore", lon: 11.3428, lat: 44.4938, kind: "district" },
+    { nameZh: "圣白托略圣殿", nameEn: "Basilica of San Petronio", lon: 11.3426, lat: 44.4931, kind: "landmark" },
+    { nameZh: "博洛尼亚大学老校区", nameEn: "University of Bologna (old campus)", lon: 11.3489, lat: 44.4935, kind: "landmark" },
+  ],
+  naples: [
+    { nameZh: "斯帕卡那波利街", nameEn: "Spaccanapoli", lon: 14.2536, lat: 40.8494, kind: "district" },
+    { nameZh: "那不勒斯国家考古博物馆", nameEn: "National Archaeological Museum of Naples", lon: 14.2504, lat: 40.8531, kind: "landmark" },
+    { nameZh: "庞贝古城遗址", nameEn: "Pompeii", lon: 14.4849, lat: 40.7509, kind: "landmark" },
+    { nameZh: "维苏威火山", nameEn: "Mount Vesuvius", lon: 14.4260, lat: 40.8210, kind: "nature" },
+    { nameZh: "卡普里岛", nameEn: "Capri", lon: 14.2429, lat: 40.5532, kind: "nature" },
+  ],
+  bari: [
+    { nameZh: "老城迷宫巷弄", nameEn: "Bari Vecchia lanes", lon: 16.8710, lat: 41.1290, kind: "district" },
+    { nameZh: "圣尼古拉圣殿", nameEn: "Basilica of San Nicola", lon: 16.8695, lat: 41.1294, kind: "landmark" },
+    { nameZh: "阿尔贝罗贝洛（石屋之城）", nameEn: "Alberobello (trulli houses)", lon: 17.2380, lat: 40.7826, kind: "district" },
+    { nameZh: "阿尔塔穆尔杰石灰岩台地", nameEn: "Alta Murgia plateau", lon: 16.4000, lat: 40.8500, kind: "nature" },
+  ],
+  palermo: [
+    { nameZh: "诺曼王宫与巴拉丁礼拜堂", nameEn: "Norman Palace & Palatine Chapel", lon: 13.3540, lat: 38.1114, kind: "landmark" },
+    { nameZh: "巴勒莫大教堂", nameEn: "Palermo Cathedral", lon: 13.3556, lat: 38.1150, kind: "landmark" },
+    { nameZh: "四角路口", nameEn: "Quattro Canti", lon: 13.3600, lat: 38.1157, kind: "district" },
+    { nameZh: "巴拉罗市场", nameEn: "Ballarò Market", lon: 13.3560, lat: 38.1123, kind: "district" },
+    { nameZh: "蒙雷阿莱大教堂", nameEn: "Monreale Cathedral", lon: 13.2895, lat: 38.0798, kind: "landmark" },
+  ],
+  catania: [
+    { nameZh: "主教座堂广场与大象喷泉", nameEn: "Cathedral square & Elephant Fountain", lon: 15.0873, lat: 37.5024, kind: "landmark" },
+    { nameZh: "本笃会修道院", nameEn: "Benedictine Monastery", lon: 15.0836, lat: 37.5075, kind: "landmark" },
+    { nameZh: "鱼市", nameEn: "La Pescheria", lon: 15.0870, lat: 37.5030, kind: "district" },
+    { nameZh: "埃特纳火山", nameEn: "Mount Etna", lon: 14.9930, lat: 37.7510, kind: "nature" },
+    { nameZh: "陶尔米纳", nameEn: "Taormina", lon: 15.2870, lat: 37.8520, kind: "district" },
+  ],
+  cagliari: [
+    { nameZh: "城堡区城墙", nameEn: "Castello district walls", lon: 9.1180, lat: 39.2170, kind: "landmark" },
+    { nameZh: "卡利亚里国家考古博物馆", nameEn: "Cagliari National Archaeological Museum", lon: 9.1160, lat: 39.2175, kind: "landmark" },
+    { nameZh: "莫尔塔湖（火烈鸟）", nameEn: "Molentargius Lake (flamingos)", lon: 9.1350, lat: 39.2350, kind: "nature" },
+    { nameZh: "波艾托海滩", nameEn: "Poetto Beach", lon: 9.1500, lat: 39.2100, kind: "nature" },
+    { nameZh: "巴鲁米尼努拉吉遗址", nameEn: "Su Nuraxi di Barumini", lon: 8.9910, lat: 39.7050, kind: "landmark" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

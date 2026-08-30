@@ -116,6 +116,16 @@ import cdgNte from "./cdg-nte.json" with { type: "json" };
 import lysMrs from "./lys-mrs.json" with { type: "json" };
 import mrsAja from "./mrs-aja.json" with { type: "json" };
 import nceAja from "./nce-aja.json" with { type: "json" };
+// 意大利国内
+import fcoLin from "./fco-lin.json" with { type: "json" };
+import fcoVce from "./fco-vce.json" with { type: "json" };
+import fcoNap from "./fco-nap.json" with { type: "json" };
+import fcoCta from "./fco-cta.json" with { type: "json" };
+import fcoCag from "./fco-cag.json" with { type: "json" };
+import linVce from "./lin-vce.json" with { type: "json" };
+import linNap from "./lin-nap.json" with { type: "json" };
+import napCta from "./nap-cta.json" with { type: "json" };
+import fcoBri from "./fco-bri.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -212,4 +222,13 @@ export const ALL_ROUTES: FlightRoute[] = [
   lysMrs,
   mrsAja,
   nceAja,
+  fcoLin,
+  fcoVce,
+  fcoNap,
+  fcoCta,
+  fcoCag,
+  linVce,
+  linNap,
+  napCta,
+  fcoBri,
 ] as unknown as FlightRoute[];

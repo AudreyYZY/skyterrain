@@ -1,0 +1,18 @@
+{
+  "id": "lin-nap",
+  "name": "米兰 — 那不勒斯",
+  "nameEn": "Milan — Naples",
+  "description": "波河平原 · 亚平宁山脉 · 坎皮弗莱格瑞",
+  "descriptionEn": "Po Valley · Apennines · Campi Flegrei",
+  "depCountry": "italy",
+  "arrCountry": "italy",
+  "flight": { "airline": "易捷航空", "airlineEn": "easyJet", "flightNo": "EZY6220", "aircraft": "Airbus A320", "depIata": "LIN", "arrIata": "NAP", "durationMin": 80 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "lin", "name": "米兰", "nameEn": "Milan", "lat": 45.4451, "lon": 9.2767, "airport": true },
+    { "kind": "terrain", "terrainId": "po-valley" },
+    { "kind": "terrain", "terrainId": "apennines" },
+    { "kind": "terrain", "terrainId": "campi-flegrei" },
+    { "kind": "city", "id": "nap", "name": "那不勒斯", "nameEn": "Naples", "lat": 40.8860, "lon": 14.2908, "airport": true }
+  ]
+}

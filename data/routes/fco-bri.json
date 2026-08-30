@@ -1,0 +1,19 @@
+{
+  "id": "fco-bri",
+  "name": "罗马 — 巴里",
+  "nameEn": "Rome — Bari",
+  "description": "台伯河 · 亚平宁山脉 · 加尔加诺半岛 · 阿尔塔穆尔杰",
+  "descriptionEn": "Tiber · Apennines · Gargano Promontory · Alta Murgia",
+  "depCountry": "italy",
+  "arrCountry": "italy",
+  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ1521", "aircraft": "Airbus A319", "depIata": "FCO", "arrIata": "BRI", "durationMin": 55 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
+    { "kind": "terrain", "terrainId": "tiber-river" },
+    { "kind": "terrain", "terrainId": "apennines" },
+    { "kind": "terrain", "terrainId": "gargano-promontory" },
+    { "kind": "terrain", "terrainId": "alta-murgia" },
+    { "kind": "city", "id": "bri", "name": "巴里", "nameEn": "Bari", "lat": 41.1389, "lon": 16.7606, "airport": true }
+  ]
+}

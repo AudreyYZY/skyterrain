@@ -1,0 +1,18 @@
+{
+  "id": "nap-cta",
+  "name": "那不勒斯 — 卡塔尼亚",
+  "nameEn": "Naples — Catania",
+  "description": "维苏威火山 · 利帕里群岛 · 西西里岛",
+  "descriptionEn": "Mount Vesuvius · Aeolian Islands · Sicily",
+  "depCountry": "italy",
+  "arrCountry": "italy",
+  "flight": { "airline": "瑞安航空", "airlineEn": "Ryanair", "flightNo": "FR1234", "aircraft": "Boeing 737-800", "depIata": "NAP", "arrIata": "CTA", "durationMin": 45 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "nap", "name": "那不勒斯", "nameEn": "Naples", "lat": 40.8860, "lon": 14.2908, "airport": true },
+    { "kind": "terrain", "terrainId": "mount-vesuvius" },
+    { "kind": "terrain", "terrainId": "aeolian-islands" },
+    { "kind": "terrain", "terrainId": "sicily" },
+    { "kind": "city", "id": "cta", "name": "卡塔尼亚", "nameEn": "Catania", "lat": 37.4668, "lon": 15.0664, "airport": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "lin-vce",
+  "name": "米兰 — 威尼斯",
+  "nameEn": "Milan — Venice",
+  "description": "波河平原 · 威尼斯潟湖",
+  "descriptionEn": "Po Valley · Venetian Lagoon",
+  "depCountry": "italy",
+  "arrCountry": "italy",
+  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ1234", "aircraft": "Airbus A220-300", "depIata": "LIN", "arrIata": "VCE", "durationMin": 35 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "lin", "name": "米兰", "nameEn": "Milan", "lat": 45.4451, "lon": 9.2767, "airport": true },
+    { "kind": "terrain", "terrainId": "po-valley" },
+    { "kind": "terrain", "terrainId": "venetian-lagoon" },
+    { "kind": "city", "id": "vce", "name": "威尼斯", "nameEn": "Venice", "lat": 45.5053, "lon": 12.3519, "airport": true }
+  ]
+}
