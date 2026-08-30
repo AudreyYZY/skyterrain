@@ -2516,4 +2516,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–June and September–October are the most comfortable; July–August is hot but is also the high season for Sardinia's beaches, with more people and higher prices. Inland transport is limited — driving is recommended for the nuraghi sites and the south-west coast. There is no high-speed rail link between Sardinia and mainland Italy — travel between them is by air or ferry, so plan timing and schedules.",
   },
+
+  "spain-overview": {
+    identity:
+      "Spain occupies about four-fifths of the Iberian Peninsula and also includes the Balearic Islands in the Mediterranean and the Canary Islands in the Atlantic; mainland area is about 500,000 km², population about 48 million. The terrain is dominated by plateau and mountains — the Meseta plateau covers nearly half the country in the centre, ringed by younger or older ranges such as the Pyrenees, the Cantabrian Mountains and the Sierra Nevada, with a long coastline that spans both Atlantic and Mediterranean climates.",
+    layout:
+      "Roughly: the centre (Madrid on the Meseta plateau, the historical and administrative core); north-east Catalonia (Barcelona, a major Mediterranean economic hub); southern Andalusia (Seville, Granada, Málaga — Moorish heritage and the Costa del Sol); the eastern Mediterranean coast (Valencia, rice and citrus country); the north (Bilbao, San Sebastián — Basque Country and the green Cantabrian coast); north-western Galicia (Santiago de Compostela, the end of the pilgrimage route); and two offshore island groups — the Balearics (Palma) and the volcanic Canary Islands in the Atlantic, mild year-round.",
+    gettingAround:
+      "Spain's AVE high-speed rail network is one of the most developed in Europe; the main lines from Madrid to Barcelona, Seville and elsewhere are fast and comfortable, often more convenient than flying. Domestic flights are used mainly for quick inter-regional connections and for reaching the Balearic and Canary Islands. Big cities have metros; in most cities walking and buses are enough. Driving is on the right. Meals run late (lunch after 2pm, dinner after 9pm are common), and many small shops close for a long midday siesta. Tap water is drinkable in most cities; the electrical standard is 230V with the European two-round-pin plug.",
+    culture:
+      "The official national language is Spanish (Castilian); Catalonia, the Basque Country, Galicia and other regions also have their own co-official languages, and signs and menus are often bilingual. Spanish life runs late and is highly social; an evening paseo (a stroll after dinner) is a common way of life. Dress modestly when visiting churches, covering shoulders and knees. Restaurant bills usually include service; tipping is not required, though rounding up is appreciated.",
+    seeAndDo:
+      "Monuments and art: the Prado in Madrid, Gaudí's buildings in Barcelona, the Alhambra in Granada, the Camino de Santiago pilgrimage route. Nature: the Ordesa Canyon in the Pyrenees, the snow peaks of the Sierra Nevada, Teide and the Timanfaya lava fields in the Canary Islands, the Rías Baixas in Galicia. Beaches and food: distinctive beaches along both the Mediterranean and Atlantic coasts, and tapas and paella that vary widely by region.",
+    whenAndTips:
+      "Spring and autumn (April–June, September–October) have the most comfortable weather and are the best seasons for the inland cities; midsummer (July–August) is very hot in the south and interior, while the coast and islands are the peak season for European holidaymakers, with more people and higher prices; the Canary Islands stay mild year-round, one of the few good winter-sun destinations nearby. Spain is in the Schengen area; citizens of most countries can visit short-term visa-free or under Schengen rules. Many small shops in various cities close for the whole of August; check opening hours before you go.",
+  },
+
+  madrid: {
+    identity:
+      "Madrid, Spain's capital, has a city population of about 3.4 million and is one of Europe's highest-elevation capitals (about 650 m), sitting right in the centre of the Meseta plateau. Capital of the kingdom since the 16th century, the city preserves layers of history from the Habsburg to the Bourbon eras and is Spain's financial and political centre.",
+    layout:
+      "The centre radiates out from the Puerta del Sol; the Habsburg-era old town has narrow streets, while the Bourbon-era area around Gran Vía is broader and more modern. Along the Paseo del Prado sit the Prado Museum, the Thyssen-Bornemisza Museum and the Reina Sofía — together called the \"Golden Triangle of Art\". El Retiro Park is the city centre's largest green space.",
+    gettingAround:
+      "The airport is about 15 km from the centre, with a metro line running directly there. The city's dense metro network is the main way to get around; walking and cycling also work well. Madrid sits high and has a continental climate: summer (June–August) is unusually hot and dry, often over 35 °C; winter is cold with occasional frost; spring and autumn are most comfortable.",
+    culture:
+      "Madrid is known for its lively nightlife; dinner often starts after 9pm, and the tapas-bar culture is strong. The El Rastro flea market near Sol on Sundays is a local tradition. Tipping is not required. Dress modestly when visiting the Royal Palace, churches and similar sites.",
+    seeAndDo:
+      "The Prado (Velázquez, Goya and other masters); the Reina Sofía (Picasso's Guernica); the Royal Palace; boating in El Retiro; the theatres and shopping of Gran Vía; tapas at the Mercado de San Miguel. Day trips can reach Toledo (an old capital on the edge of the Meseta) or Segovia (the Roman aqueduct).",
+    whenAndTips:
+      "Spring and autumn (April–June, September–October) have the most comfortable weather; midsummer is scorching, so indoor museums and air-conditioned venues are a good way to cool off. Many local restaurants close in August. Book popular museum tickets online in advance. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  barcelona: {
+    identity:
+      "Barcelona, capital of Catalonia and Spain's second-largest city, has a city population of about 1.6 million, sits on the Mediterranean with Tibidabo hill behind it. It is known for Gaudí's Modernist architecture, a strong Catalan cultural identity and a long port history.",
+    layout:
+      "The old town's Gothic Quarter has narrow lanes, with La Rambla running through it to the sea; the 19th-century \"Eixample\" district is laid out in a strict grid and holds Gaudí's Sagrada Família and Casa Milà; Montjuïc hill has a castle and the old Olympic facilities; Barceloneta is the seaside beach district.",
+    gettingAround:
+      "The airport is about 15 km from the centre, with an airport bus and a train. The city's metro network is extensive, and it is also good for walking and cycling (with a public bike-share system). Mediterranean climate: summer (June–August) is hot but more humid than inland Spain, winter mild and fairly dry, spring and autumn most comfortable.",
+    culture:
+      "Catalan and Spanish are both official here, and signs and menus are often bilingual. Local pride in Catalan identity runs deep, expressed in distinctive festivals such as human-tower building (castells). Tipping is not required. Pickpocketing is a known issue in peak season, so watch your belongings.",
+    seeAndDo:
+      "Gaudí's buildings — the Sagrada Família, Casa Milà, Casa Batlló; wandering the Gothic Quarter; La Boqueria market; Montjuïc for city and harbour views; Barceloneta beach. Day trips can reach Montserrat (a jagged mountain topped by a monastery) or La Garrotxa Volcanic Zone.",
+    whenAndTips:
+      "Spring and autumn have the most comfortable weather; summer beach season is crowded. Book Sagrada Família and other popular sites online well in advance, or you often cannot get in same-day. Pickpockets operate around the metro and sights, so keep bags in front. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  seville: {
+    identity:
+      "Seville, capital of Andalusia and Spain's fourth-largest city, sits on the Guadalquivir River, historically the only Spanish river port navigable by ocean-going ships all the way inland — Seville was Spain's monopoly port for trade with the Americas during the Age of Discovery.",
+    layout:
+      "The old town centres on Seville Cathedral (one of the largest Gothic cathedrals in the world) and the Real Alcázar palace; the Santa Cruz quarter is the old Jewish quarter with Moorish-style narrow lanes; Triana, across the Guadalquivir, is a traditional home of pottery and one of the birthplaces of flamenco; the Plaza de España was built for the 1929 Ibero-American Exposition.",
+    gettingAround:
+      "The airport is about 10 km from the centre, with an airport bus. The old town is best explored on foot; the city also has trams and buses. Summer (June–September) makes Seville one of the hottest cities on mainland Spain, often over 40 °C; spring and autumn are the pleasant, best-to-visit seasons; winter is mild.",
+    culture:
+      "Seville is a major birthplace of flamenco, and locals hold two major annual festivals dear — the April Fair (Feria de Abril) and Holy Week (Semana Santa). Tipping is not required. Summer days are brutally hot, so local life shifts to the evening.",
+    seeAndDo:
+      "Seville Cathedral and the Giralda tower (a former minaret); the Real Alcázar (a palace and gardens blending Moorish and Christian styles); Plaza de España; flamenco in Triana; strolling along the Guadalquivir.",
+    whenAndTips:
+      "March–May and October–November have the most comfortable weather and also cover festival season, so book accommodation ahead; July–August is scorching — avoid long stretches outdoors at midday and drink plenty of water. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  valencia: {
+    identity:
+      "Valencia, Spain's third-largest city, sits on the Mediterranean as capital of the Valencian Community, known as the birthplace of paella and for the futuristic City of Arts and Sciences complex. Valencia, Venezuela was named after this city by 16th-century Spanish colonists.",
+    layout:
+      "The old centre is the Gothic quarter around the Silk Exchange and the Central Market; the old bed of the Turia River, diverted after a 1957 flood, has been turned into a green ribbon park running across the whole city; at its eastern end is the City of Arts and Sciences, designed by Santiago Calatrava, with an opera house, a science museum and an aquarium.",
+    gettingAround:
+      "The airport is about 8 km from the centre, with a direct metro line. The city's metro and tram network is convenient, and the flat terrain also makes it great for cycling. Mediterranean climate: hot but not scorching summers, mild winters, plenty of sun year-round.",
+    culture:
+      "Valencian and Spanish are both official. The Las Fallas festival each March is the city's biggest event, when neighbourhoods build giant papier-mâché figures and burn them on the final night. Tipping is not required.",
+    seeAndDo:
+      "The City of Arts and Sciences; the Central Market and Silk Exchange (a World Heritage Site); cycling the Turia riverbed park; the old-town cathedral; trying authentic paella (Valencia is its birthplace). Nearby, the Albufera lagoon shows rice paddies and wetland.",
+    whenAndTips:
+      "Las Fallas in March is exciting but crowded and loud with fireworks; spring and autumn have the most comfortable weather. Summer beach season brings higher prices. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  granada: {
+    identity:
+      "Granada, in Andalusia at the foot of the Sierra Nevada, is known for the Alhambra — the best-preserved Islamic-era palace complex on the Iberian Peninsula and, in 1492, the last Moorish stronghold in Spain. The Caribbean island nation of Grenada takes its name from \"Granada\", given by Columbus in 1498.",
+    layout:
+      "The Alhambra sits on a hill on the city's east side, overlooking the whole town; the Albaicín, on the old town's north-west, is a whitewashed quarter of Moorish-style narrow lanes facing the Alhambra across a valley; the area around the cathedral in the centre is the main commercial district.",
+    gettingAround:
+      "The airport is about 15 km from the centre, with an airport bus. The old town's many slopes make it walkable but tiring, especially in the Albaicín. In winter snow peaks of the nearby Sierra Nevada are visible; the city itself has a mild climate, while summer is hot and dry with a large day-to-night temperature swing.",
+    culture:
+      "Granada keeps a strong Moorish-Andalusian blended culture; ordering a drink at many small bars comes with a free tapa, a local tradition. Tipping is not required. Visiting the Alhambra requires advance booking, and slots are limited.",
+    seeAndDo:
+      "The Alhambra and the Generalife gardens (book well ahead); watching the sunset over the Alhambra from the Albaicín; the cathedral and Royal Chapel; driving up into the Sierra Nevada for skiing or hiking (skiing in winter, hiking in summer).",
+    whenAndTips:
+      "Alhambra tickets must be booked weeks in advance online and often sell out in peak season; spring and autumn have the most comfortable weather, and while the mountains are cold in winter the city itself stays mild. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  malaga: {
+    identity:
+      "Málaga, a Mediterranean port city in Andalusia, is the gateway to the Costa del Sol and the birthplace of the painter Pablo Picasso. Its history goes back to Phoenician times, making it one of the oldest cities on the Iberian Peninsula.",
+    layout:
+      "The old town centres on the Picasso Museum and the Moorish Alcazaba fortress, with the Gibralfaro castle above overlooking the city and port; Malagueta beach sits right at the edge of the old town, an unusually central city beach; new museums such as the Centre Pompidou Málaga have opened in the port district in recent years.",
+    gettingAround:
+      "The airport is about 8 km from the centre, with a suburban train straight into town. The old town is walkable, and coastal towns nearby are reachable by the Cercanías suburban rail line. Mediterranean climate, mild year-round — the winter average stays above 15 °C, making it one of Europe's few good winter-sun destinations close by.",
+    culture:
+      "Málaga's pace is relaxed, with a strong beachside chiringuito (beach-bar) culture; grilled sardines on skewers (espetos) are a local specialty. Tipping is not required.",
+    seeAndDo:
+      "The Picasso Museum and his birthplace house; the Alcazaba and Gibralfaro castle; Malagueta beach; the Centre Pompidou branch. Nearby, the white hill town of Mihas, or inland to the Caminito del Rey gorge walkway.",
+    whenAndTips:
+      "Winter's mild weather makes it a sun-seeking high season; midsummer is crowded on the coast with higher prices; spring and autumn are best for touring the old town. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  bilbao: {
+    identity:
+      "Bilbao, the largest city in the Basque Country in northern Spain, straddles the Nervión River. Historically an industrial and port city, it transformed after the Guggenheim Museum opened in 1997 into a landmark of contemporary architecture and art — the origin of the term \"the Bilbao effect\".",
+    layout:
+      "The old town (Casco Viejo) sits on the east bank of the Nervión, its seven historic streets the old commercial core; across the river, the Abandoibarra district — a former port and industrial zone — has been redeveloped into a modern riverside area, home to the titanium-clad curves of the Guggenheim; Plaza Circular / Federico Moyúa area is the main commercial district.",
+    gettingAround:
+      "The airport is about 12 km from the centre, with an airport bus. The city has a metro (designed by Norman Foster) and a tram, and the old town is walkable. Temperate maritime climate — cooler and wetter than most of Spain, with summers that are not especially hot.",
+    culture:
+      "Basque and Spanish are both official here, and Basque identity runs deep. Local food is known for pintxos — elaborate small bites, the Basque cousin of tapas. Tipping is not required.",
+    seeAndDo:
+      "The Guggenheim Museum; pintxos-hopping along the old town's seven streets; the Bilbao Fine Arts Museum (a rich collection); the funicular up Mount Artxanda for a city panorama. Nearby, San Sebastián (a bay-front beach city) or the Cantabrian mountains.",
+    whenAndTips:
+      "Summer (June–September) has the most comfortable weather, though rain is still possible — carry something waterproof; winter is cold and damp. Book Guggenheim tickets online in advance to skip the queue. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  "santiago-de-compostela": {
+    identity:
+      "Santiago de Compostela, capital of Galicia in north-west Spain, is the endpoint of the Camino de Santiago, one of Catholicism's three great pilgrimage routes, drawing pilgrims from across Europe on foot for hundreds of kilometres since the Middle Ages.",
+    layout:
+      "The old town centres on Santiago Cathedral, said to hold the remains of the Apostle James; cobbled lanes, monasteries and Romanesque-to-Baroque buildings interlace through it, and the whole old town was World Heritage-listed in 1985; the Praza do Obradoiro in front of the cathedral is the symbolic finish line after hundreds of kilometres on foot.",
+    gettingAround:
+      "The airport is about 10 km from the centre, with an airport bus. The old town is small and entirely walkable. Temperate maritime climate — Galicia is one of the wettest regions in Spain, so carry rain gear year-round; summer is relatively cool and pleasant.",
+    culture:
+      "Galician and Spanish are both official here. Pilgrimage culture runs through daily life, and pilgrims who have just finished hundreds of kilometres on foot are a common sight in front of the cathedral. Tipping is not required.",
+    seeAndDo:
+      "Santiago Cathedral and the Pilgrimage Museum; wandering the old town's cobbled streets; Galician seafood and octopus (pulpo à feira); nearby coastal towns around the Rías Baixas to see the drowned-valley coastline.",
+    whenAndTips:
+      "Summer (June–September) is relatively dry and pleasant, the high season for walking the Camino and sightseeing; other seasons are rainy, so bring rain gear. Around 25 July, the Feast of St James, is the peak of religious celebration, with more pilgrims and visitors than usual. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  zaragoza: {
+    identity:
+      "Zaragoza, capital of Aragon and Spain's fifth-largest city, sits where the Ebro River meets its tributaries. It has been the core city of the Ebro Basin since Roman times and is a transport hub toward the Pyrenees and the northern coast.",
+    layout:
+      "The old town centres on the Basilica of Our Lady of the Pillar (Baroque, on the banks of the Ebro) and Roman-era wall remains; Mudéjar architecture — Christian buildings that incorporate Islamic decorative techniques — is a local hallmark, World Heritage-listed in 2001.",
+    gettingAround:
+      "The airport is about 10 km from the centre. The old town is walkable, and the city has a tram. Continental climate — hot and dry summers, occasional hard cold in winter, and windy year-round (the region's north-westerly \"cierzo\" wind, shaped by the Ebro Basin's topography, is well known).",
+    culture:
+      "Zaragoza's biggest annual event is the October Fiestas del Pilar. Tipping is not required.",
+    seeAndDo:
+      "The Basilica of Our Lady of the Pillar; the Aljafería Palace (a Mudéjar-style royal palace, World Heritage-listed); the Roman theatre ruins and museum. A day trip can reach the Bardenas Reales badlands.",
+    whenAndTips:
+      "Spring and autumn have the most comfortable weather; summer is hot and dry, so use sun protection and drink water; the whole city celebrates during the October Pilar festival, so book accommodation ahead. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  palma: {
+    identity:
+      "Palma is the capital of Mallorca, the largest of the Balearic Islands, on the Bay of Palma with the Serra de Tramuntana behind it — one of the most popular Mediterranean holiday destinations, with a historic old town of real depth.",
+    layout:
+      "The old town centres on Palma Cathedral (Gothic, built right on the water), with Bellver Castle overlooking the city; the Bay of Palma is lined with beach resort development; the Serra de Tramuntana in the island's north-west is prime hiking and cycling country, while the east coast has numerous sea caves and small coves.",
+    gettingAround:
+      "The airport is about 8 km from the centre, with a direct bus. The old town is walkable; getting around the island means renting a car or taking a bus, and there is a scenic vintage train along part of the coast. Mediterranean climate — hot, dry summers, mild winters, a good destination year-round.",
+    culture:
+      "Catalan (in its Mallorcan dialect) and Spanish are both official. Island life is relaxed, with a strong beachside-restaurant culture. Tipping is not required.",
+    seeAndDo:
+      "Palma Cathedral; Bellver Castle; wandering the old town; hiking or cycling the Serra de Tramuntana (a famous round-island cycling route); the Caves of Drach and other sea caves on the east coast; a wide range of beaches around the island, each with its own character.",
+    whenAndTips:
+      "May–June and September are pleasant and relatively uncrowded; July–August is Europe's peak holiday season, with higher prices and more people; winter is mild, good for hiking and cultural sightseeing. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  "santa-cruz-de-tenerife": {
+    identity:
+      "Santa Cruz de Tenerife is the capital of Tenerife, the largest of the Canary Islands, on the Atlantic and the gateway to Teide. The Canary Islands sit near the north-west African coast but are Spanish territory throughout, with a mild year-round climate that makes them a popular winter destination for Europeans.",
+    layout:
+      "The centre runs along the bay, with Plaza de España as the city landmark; about 40 minutes' drive inland reaches the entrance to Teide National Park, elevation climbing quickly, with vegetation changing from coastal subtropical growth to high-altitude volcanic desert along the way; the island's north coast is cloudier and wetter, the south dry and sunny, a marked climate contrast.",
+    gettingAround:
+      "The island has two airports, north and south; Tenerife North is closer to the city, with an airport bus and taxis. The city has a tram; getting around the island means renting a car or taking a long-distance bus. Mild year-round — coastal daytime temperatures mostly run 18–28 °C, while the high mountain areas can see snow in winter.",
+    culture:
+      "Tenerife's Carnaval is one of the largest carnival celebrations in the world, second only to Rio de Janeiro's. Tipping is not required.",
+    seeAndDo:
+      "Teide National Park (a cable car runs close to the summit); the contemporary Auditorio de Tenerife concert hall in central Santa Cruz; hiking in the Anaga mountains nearby; the island's black volcanic-sand beaches and the resort beaches of the south coast.",
+    whenAndTips:
+      "Good year-round; winter (December–February) is peak season for sun-seeking Europeans. The Teide summit cable car is weather-dependent, so check conditions before heading up; the mountains have a large day-to-night temperature swing and strong UV, so dress warmly and use sun protection. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
 };
