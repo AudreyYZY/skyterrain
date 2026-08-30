@@ -2876,4 +2876,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September has the most comfortable weather, the best season for touring Rügen and the coast; winters are windy with changeable weather. Citizens of most countries follow Schengen-area rules for short visits.",
   },
+
+  "greece-overview": {
+    identity:
+      "Greece occupies the southern tip of the Balkan Peninsula in south-eastern Europe, covering about 132,000 km² with a population of roughly 10.4 million. About 80% of the country is mountainous, with the Pindus range running the length of the western mainland; the coast is scattered with some 6,000 islands and islets, of which about 227 are inhabited, giving Greece an unusually long and intricate coastline.",
+    layout:
+      "Broadly divided into: Attica (Athens, the capital and largest city), Macedonia (Thessaloniki, Greece's second city), Thessaly (Volos, home to Meteora), Epirus (Ioannina, gateway to the Pindus mountains), the Peloponnese (Nafplio and Kalamata, dense with classical sites), Crete (Heraklion and Chania, Greece's largest island), the Ionian Islands (Corfu), and the Aegean Islands (Rhodes, Santorini and others).",
+    gettingAround:
+      "A dense domestic flight network links Athens and Thessaloniki with the main islands and is a common way to cover long distances quickly; Piraeus is the country's largest ferry hub, connecting the Aegean and Ionian islands. Intercity travel on the mainland relies mainly on long-distance coaches (KTEL); the rail network is comparatively limited, covering mainly the Athens–Thessaloniki line. Driving is on the right. The climate is Mediterranean — hot, dry summers and mild, wetter winters, with cold, snowy winters in the mountains. Power is 230V, with the European two-round-pin plug.",
+    culture:
+      "The official language is Greek; English is widely spoken in tourist areas. Meal times run late, with dinner often starting after 9pm; tipping around 5–10% of the bill, or rounding up, is customary. Most residents are Greek Orthodox, and major festivals follow the Orthodox calendar; Orthodox Easter often falls on a different date from the Catholic/Protestant Easter.",
+    seeAndDo:
+      "Classical sites: the Acropolis of Athens, Delphi, Mycenae, Olympia. Natural landforms: the Santorini caldera, the Meteora pinnacles, the Samaria and Vikos gorges. Islands: Crete, the medieval old town of Rhodes, Corfu's old town. Ferry island-hopping is a classic way to experience the Aegean islands.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather and fewer crowds, the best season for touring the mainland and islands; July–August is hot and the peak tourist season, with accommodation prices rising sharply on popular islands. In winter (November–March), tourist facilities on many islands close seasonally and ferry schedules are reduced, so check current flight and ferry timetables before travelling. Greece is a Schengen-area member; citizens of most countries follow Schengen rules for short visits — check the Greek Ministry of Foreign Affairs and current Schengen regulations for specifics.",
+  },
+
+  athens: {
+    identity:
+      "Athens is Greece's capital and largest city, the centre of the Attica region, with a metropolitan population of over 3 million. It is one of Europe's oldest cities and an important birthplace of classical democracy, philosophy and drama.",
+    layout:
+      "The Acropolis hill is the city's geographic and historic centre, with the Parthenon crowning it above the city; below lies the old Plaka quarter, dense with narrow streets and neoclassical buildings. Syntagma Square anchors the modern city centre, home to the Greek Parliament and the Tomb of the Unknown Soldier. Piraeus is Athens's gateway port, from which most ferries to the mainland and Aegean islands depart.",
+    gettingAround:
+      "The airport lies about 20 km south-east of the centre, linked by metro and suburban rail. Athens's metro, tram and bus network covers the main districts, and the old town around the Acropolis is walkable. The climate is Mediterranean — hot, dry summers (June–August) and mild, wetter winters, with occasional brief snowfall. Power is 230V, European two-round-pin plug.",
+    culture:
+      "The official language is Greek; English is widely spoken in tourist areas. Meal times run late, with dinner often starting after 9pm; tipping around 5–10% of the bill, or rounding up, is customary. Most residents are Greek Orthodox, and major festivals follow the Orthodox calendar.",
+    seeAndDo:
+      "The Acropolis, the Parthenon and the Acropolis Museum; the Plaka old quarter; Syntagma Square and the changing of the guard; the National Archaeological Museum; day trips from Piraeus to Aegean islands such as Hydra and Poros.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather and fewer crowds; July–August is hot and the peak season — visit sites like the Acropolis early in the morning to avoid the heat and crowds. Athens is the main transport hub for exploring mainland Greece and for onward travel to the Aegean islands and Crete.",
+  },
+
+  thessaloniki: {
+    identity:
+      "Thessaloniki is Greece's second-largest city and the centre of the Macedonia region, with a metropolitan population of about 800,000. Set on the Thermaic Gulf, it is an important port and cultural centre in northern Greece and was, for much of the Byzantine period, the empire's second city after Constantinople.",
+    layout:
+      "The White Tower is the city's seafront landmark, and the waterfront promenade running along the coast is the main gathering place for locals. Aristotelous Square anchors the commercial centre; Roman-era remains such as the Roman Forum and the Arch of Galerius are scattered through the old town. The upper town (Ano Poli) preserves traditional stone houses and stretches of Byzantine walls.",
+    gettingAround:
+      "The airport lies about 16 km south-east of the centre, linked by bus and taxi. The city bus network covers the main districts, and the seafront area is good for walking and cycling. The climate is Mediterranean, with hot summers and winters slightly cooler than Athens, with occasional snow.",
+    culture:
+      "The official language is Greek. As a major university city, Thessaloniki has a lively youth and café culture. Meal times run late, with dinner often after 9pm; tipping around 5–10% of the bill is customary. The city has long been a crossroads of cultures, still visible in its Byzantine- and Ottoman-era architecture.",
+    seeAndDo:
+      "The White Tower and the seafront promenade; the Arch of Galerius and the Rotunda; the Paleochristian and Byzantine Monuments of Thessaloniki, including the Church of Saint Demetrius (a UNESCO World Heritage site); the traditional streets of the upper town; day trips to the beaches of the Halkidiki Peninsula.",
+    whenAndTips:
+      "May–September is best for outdoor and waterfront activities. As the hub of northern Greece, Thessaloniki is an important stop en route to Meteora, the Halkidiki Peninsula, and the wider Macedonia and Thessaly regions.",
+  },
+
+  heraklion: {
+    identity:
+      "Heraklion is Crete's largest city and capital, with a population of about 140,000. It is the island's transport and economic hub, and was an important Mediterranean trading port under Venetian rule.",
+    layout:
+      "The Venetian harbour and the Koules Fortress are the seafront landmarks; 1866 Street in the old town is the main shopping street. The Palace of Knossos, Crete's most important archaeological site, lies about 5 km south of the city.",
+    gettingAround:
+      "The airport lies about 5 km east of the city. City buses connect the main sights, and the old town is walkable. The climate is Mediterranean, with hot, dry summers and mild, wetter winters — among the warmer regions of Greece.",
+    culture:
+      "The official language is Greek. Cretans take particular pride in the island's traditional food (olive oil, dakos salad) and customs. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "The Palace of Knossos; the Heraklion Archaeological Museum, home to major Minoan artefacts; the Venetian harbour and Koules Fortress; day trips to the Lasithi Plateau, the White Mountains and the Samaria Gorge.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather; July–August is hot but the peak island season. Heraklion is the main gateway for exploring the rest of Crete, including Chania and the Lasithi Plateau.",
+  },
+
+  chania: {
+    identity:
+      "Chania is the main city of western Crete, with a population of about 50,000. Its Venetian-era harbour and buildings are well preserved, and it is often considered one of Crete's most atmospheric cities.",
+    layout:
+      "The Venetian harbour is the heart of the city, its ring of coloured buildings, lighthouse and mosque forming an iconic view. The old town's narrow, winding lanes preserve a mix of Venetian and Ottoman architecture; the area west of the old town is a mainly residential quarter.",
+    gettingAround:
+      "The airport lies about 14 km north-east of the centre. The old town is best explored on foot, with bus and taxi links to the airport and harbour. The climate is Mediterranean, with hot, dry summers and mild, wetter winters.",
+    culture:
+      "The official language is Greek. Chania preserves Crete's traditional market culture — the central market hall near the old harbour, built in 1913, is still in use today. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "The Venetian harbour and lighthouse; Chania's central market; the old town lanes and the remains of the old synagogue; day trips for hiking the Samaria Gorge, or to the White Mountains and Balos Beach.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather, and are also good months for hiking the Samaria Gorge (typically open May–October, subject to the national park's yearly announcement). Chania is the gateway to western Crete and the White Mountains.",
+  },
+
+  "rhodes-town": {
+    identity:
+      "Rhodes Town is the capital of Rhodes, with a population of about 50,000. Its medieval old town was fortified by the Knights Hospitaller between the 14th and 16th centuries and is one of Europe's best-preserved medieval walled towns.",
+    layout:
+      "The medieval old town is fully enclosed by walls, with the Street of the Knights running through it, lined with buildings from the era of the Knights; the Palace of the Grand Master stands at the town's highest point. The new town, around Mandraki Harbour, is the modern commercial and port district.",
+    gettingAround:
+      "The airport lies about 14 km south-west of the centre. The old town is pedestrian, its narrow streets closed to vehicles; buses connect the new town. The climate is Mediterranean, one of the sunniest regions of Greece, with hot, dry summers and mild winters.",
+    culture:
+      "The official language is Greek. Rhodes was ruled successively by the Byzantines, the Knights Hospitaller, the Ottomans and Italy, and this layered history is visible throughout the town's architecture. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "The medieval old town and the Palace of the Grand Master; the Street of the Knights; Mandraki Harbour, traditionally associated with the site of the Colossus of Rhodes; day trips to the Acropolis of Lindos and Mount Attavyros.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather; July–August is hot but the peak beach season. Rhodes Town is an important gateway to the Dodecanese islands.",
+  },
+
+  santorini: {
+    identity:
+      "Santorini (Thira) is one of the most iconic islands of the Cyclades, famous for the crescent-shaped caldera formed by a massive eruption around 1600 BCE; towns such as Fira and Oia sit atop caldera-rim cliffs about 300 m high.",
+    layout:
+      "Fira is the island's main town and administrative centre, its white-walled, blue-domed traditional Cycladic buildings strung along the caldera rim; Oia, at the island's north-western tip, is famed for its sunset views. The island's eastern coast is comparatively gentle, lined with black and red volcanic-sand beaches.",
+    gettingAround:
+      "The airport sits on the island's eastern side, about 7 km from Fira. Getting around relies mainly on buses, taxis or rental cars; the road between Fira and Oia winds along the caldera cliffs. The climate is Mediterranean, with hot, dry, windy summers and mild, wetter winters, when visitor numbers drop sharply and some facilities close seasonally.",
+    culture:
+      "The official language is Greek; tourism is highly developed on the island, and English is widely spoken. In peak season, crowds are dense, and the sunset viewpoints in Fira and Oia can get very busy. Tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "The caldera-rim footpath from Fira to Oia (about 10 km); sunset viewing at Oia; the Bronze Age site at Akrotiri; the Red Beach and Black Beach; boat trips to the resurgent volcanic islet of Nea Kameni in the centre of the caldera.",
+    whenAndTips:
+      "April–June and September–October bring pleasant weather and comparatively fewer crowds; July–August is peak season, with high accommodation prices requiring advance booking. In winter (November–March) many tourist facilities close seasonally and ferry schedules are reduced accordingly.",
+  },
+
+  "corfu-town": {
+    identity:
+      "Corfu Town is the capital of Corfu, with a population of about 30,000. Its Venetian-era fortifications were built in stages between 1386 and 1797 and were inscribed as a UNESCO World Heritage site in 2007.",
+    layout:
+      "The old town sits between two Venetian fortresses, the Old Fortress and the New Fortress, with a dense network of old-town streets in between. The Liston promenade, built in the style of Paris's Rue de Rivoli, is a city landmark; the Spianada is one of the largest squares in Europe, bordering the old town to the east.",
+    gettingAround:
+      "The airport lies about 3 km south of the centre. The old town is best explored on foot, with buses or rental cars covering the rest of the island. The climate is Mediterranean; being on the Ionian side, Corfu receives markedly more rainfall than the Aegean islands, keeping its vegetation green year-round.",
+    culture:
+      "The official language is Greek. Corfu was under Venetian rule for centuries, a history still visible in the town's architectural style and in some Italian loanwords. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "The old town and its two Venetian fortresses; the Liston promenade and the Spianada; the Achilleion Palace; day trips to Paleokastritsa Bay and Mount Pantokrator.",
+    whenAndTips:
+      "May–September brings the most pleasant weather, when Corfu's lush greenery is especially appealing. Corfu Town is an important gateway to the Ionian Islands and a port for ferry routes to Italy and Albania.",
+  },
+
+  nafplio: {
+    identity:
+      "Nafplio lies in the north-eastern Peloponnese, with a population of about 14,000. It served as the first capital of the modern Greek state from 1829 to 1834 and is one of Greece's best-preserved neoclassical towns.",
+    layout:
+      "The old town sits between hill and sea, with the Palamidi Fortress towering on the hill above, reached by several hundred steps; the Bourtzi Fortress, a Venetian stronghold, sits on a small island in the bay. The old town's streets preserve a mix of Venetian and neoclassical architecture.",
+    gettingAround:
+      "There is no commercial airport locally; visitors usually connect via Athens airport and travel overland (about a 2-hour drive). The old town is walkable. The climate is Mediterranean, with hot summers and mild, wetter winters.",
+    culture:
+      "The official language is Greek. Nafplio is a popular weekend getaway for mainland Greeks. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "The Palamidi Fortress; the Bourtzi Fortress (reachable by small boat); the old town streets and Syntagma Square; day trips to the archaeological site of Mycenae and the ancient theatre of Epidaurus.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Nafplio is an ideal base for exploring the eastern Peloponnese, including Mycenae, Epidaurus and Taygetus.",
+  },
+
+  ioannina: {
+    identity:
+      "Ioannina is the centre of the Epirus region, with a population of about 70,000, set on the shore of Lake Pamvotis — the gateway city to Greece's north-western Pindus mountains.",
+    layout:
+      "The old town sits on a promontory by the lake and preserves an Ottoman-era castle and mosques. A small island in the lake holds several monasteries. The newer town extends along the lakeshore and forms the administrative and commercial centre.",
+    gettingAround:
+      "The airport lies about 5 km south-east of the centre. City buses cover the main districts, the old town is walkable, and the lake island is reached by boat. The climate is continental, unlike coastal Greek cities — winters are cold, influenced by the surrounding mountains, while summers are comparatively mild.",
+    culture:
+      "The official language is Greek. Ioannina was long the administrative centre of the Ottoman-era Pashalik of Yanina, and traces of this period remain in the town's architecture. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "Ioannina Castle and the Aslan Pasha Mosque; Lake Pamvotis and its island monasteries; day trips to the Vikos Gorge and the ancient oracle site of Dodona.",
+    whenAndTips:
+      "May–September brings comparatively mild weather, a good season for hiking the Vikos Gorge and other Pindus mountain activities; winters in the mountains are cold and snowy, and some mountain roads may be affected by snow.",
+  },
+
+  kalamata: {
+    identity:
+      "Kalamata is the main city of the southern Peloponnese, with a population of about 55,000, set on the Messenian Gulf at the foot of Taygetus — famous for the olives and olive oil that share its name.",
+    layout:
+      "The castle district occupies the highest point of the old town, overlooking the city and the gulf; the waterfront promenade runs along the Messenian Gulf and is the city's main leisure area. The old town centre preserves Byzantine churches and neoclassical buildings.",
+    gettingAround:
+      "The airport lies about 8 km west of the centre. City buses cover the main districts, and the old town is walkable. The climate is Mediterranean, with hot, dry summers and mild, wetter winters — among the warmer regions of Greece.",
+    culture:
+      "The official language is Greek. Kalamata olives and olive oil are an important local product and a source of local identity. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "Kalamata Castle; the waterfront promenade; the archaeological and Byzantine museums; day trips to the Mani Peninsula, the Diros Caves, and hiking on Taygetus.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Kalamata is an ideal base for exploring the Mani Peninsula and the Taygetus mountains.",
+  },
+
+  volos: {
+    identity:
+      "Volos is the main port city of Thessaly, with a population of about 86,000, set on the Pagasetic Gulf at the foot of Mount Pelion — the gateway city for exploring the Pelion peninsula.",
+    layout:
+      "The waterfront promenade runs along the gulf and is the city's main leisure area; the old town centre preserves neoclassical buildings, and the traditional stone-built villages of Mount Pelion lie on the hillsides east of the city.",
+    gettingAround:
+      "The airport lies about 25 km south-west of the centre. City buses cover the main districts; a rental car or local transport is recommended for reaching the villages of Mount Pelion. The climate is Mediterranean along the coast, while the higher, wetter Pelion mountains are comparatively cool and humid.",
+    culture:
+      "The official language is Greek. Volos and the surrounding Pelion region preserve much of traditional Greek rural life. Meal times run late; tipping around 5–10% of the bill is customary.",
+    seeAndDo:
+      "The waterfront promenade and the archaeological museum; the traditional villages of Mount Pelion, such as Makrinitsa and Portaria; day trips to Meteora and the Thessalian Plain.",
+    whenAndTips:
+      "May–September brings the most pleasant weather. Volos is an important gateway to Meteora and the Pelion mountains, and also serves as a ferry port for the Sporades islands in the Aegean.",
+  },
 };
