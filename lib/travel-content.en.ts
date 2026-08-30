@@ -1811,4 +1811,169 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–September has reliable roads and is the hiking season; the rest of the year has a high risk of heavy snow and avalanches, passes may close for days, and the itinerary needs plenty of flexibility. Flying saves time over driving but is cancelled in bad weather — have a plan B. Puffins and Hornstrandir are summer only.",
   },
+
+  "switzerland-overview": {
+    identity:
+      "Switzerland is a landlocked federal country in central Europe, about 41,000 sq km, with a population of about 8.8 million, made up of 26 cantons. It has four official languages: German (about 60%), French (about 20%, in the west), Italian (about 10%, in the southern canton of Ticino) and Romansh (in parts of Graubünden). The land is a belt of hills and lakes in the middle (the Mittelland), with the Jura Mountains to the north-west and the Alps — covering 60% of the country — to the south and east.",
+    layout:
+      "The population and cities are mainly on the central plateau, strung from Lake Geneva to Lake Constance: Geneva and Lausanne (French-speaking), Bern (the capital), Basel (on the tri-border), Zürich, Lucerne. South into the mountains are the Alpine valleys — the Bernese Oberland (Interlaken, the Jungfrau), the Rhône valley in Valais (Zermatt, the Matterhorn), the Engadin in Graubünden (St. Moritz). Over the main Alpine crest, the southern slope is Italian-speaking, mild-climate Ticino (Lugano).",
+    gettingAround:
+      "Swiss public transport is generally reckoned the densest and most punctual in the world: trains, postbuses, lake boats, mountain rack railways and cable cars share one timetable and ticketing, with frequent service and easy connections. Intercity travel is by train, and there are almost no scheduled domestic flights (the country is small and the train is faster). The Swiss Travel Pass covers most transport and many museums. Driving on the motorways needs an annual sticker (vignette). Drive on the right. Prices are very high. Tap water is drinkable. Power is 230V with Switzerland's own three-round-pin plug (most European two-pin plugs also fit).",
+    culture:
+      "Four languages coexist, and the German-, French- and Italian-speaking regions have slightly different lifestyles and hours; most people speak good English. The Swiss are punctual and rule-abiding, and value privacy and quiet (many apartment buildings have rules on midday and night quiet hours). Rubbish must be sorted as required. Restaurants do not require tipping (rounding up is common). Neutrality, federalism and direct democracy are the political bedrock.",
+    seeAndDo:
+      "Mountains: the Jungfrau region (Interlaken, the Lauterbrunnen waterfall valley, the Jungfrau railway), Zermatt and the Matterhorn, St. Moritz and the Engadin, the Aletsch Glacier (the longest in the Alps). Cities and lakes: Lake Zürich, Lake Lucerne and the Chapel Bridge, the Geneva fountain, Montreux and Chillon Castle. Scenic trains: the Glacier Express, the Bernina Express, the GoldenPass.",
+    whenAndTips:
+      "June–September suits high-mountain hiking (the trails only clear of snow in July), December–March is ski season, and the shoulder seasons are quiet with some mountain facilities closed. Mountain weather changes fast and the temperature drops sharply with altitude — carry warm and waterproof layers. Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Popular scenic-train departures need a seat reservation. Rack railways and cable cars are not included in ordinary train tickets — buy separately or use a pass.",
+  },
+
+  zurich: {
+    identity:
+      "Zürich is the largest city in Switzerland, with a metro area of about 1.4 million, at the northern end of Lake Zürich where the Limmat river leaves the lake — the country's financial, commercial and transport centre and the core of the German-speaking region. It is not the capital (that is Bern), but it is consistently near the top of 'most liveable city' rankings, and its prices are among the highest in the world.",
+    layout:
+      "Zürich is built on gentle slopes on both banks of the Limmat at the northern end of Lake Zürich, and in good weather you can see the Alps across the lake. The Old Town (Altstadt) straddles the river, with medieval churches and guild halls; Bahnhofstrasse is the upmarket shopping street from the station to the lake. Behind the city is the Uetliberg, reached by a small train, with a view over the city and lake.",
+    gettingAround:
+      "Zürich Airport (ZRH) is north of the city, with a train about 10 minutes to the main station. The city has trams, buses, an S-Bahn and lake boats on one ZVV ticket; the centre is walkable. Zürich is the hub of the Swiss rail network, with easy access everywhere. The climate is temperate with four clear seasons, winter fog ('lake fog'), and warm summers.",
+    culture:
+      "German (locally a Swiss-German dialect, written in standard German), with widespread English. Zürich people are punctual and value efficiency and privacy. On Sundays almost all shops are closed. Restaurants do not require tipping. The city has an active art, design and nightlife scene (Zürich-West is a converted industrial area). Dadaism was born in 1916 at the Cabaret Voltaire in the Old Town.",
+    seeAndDo:
+      "The Old Town and both banks of the Limmat (the Grossmünster, the Fraumünster, the Lindenhof); shopping on Bahnhofstrasse; the Swiss National Museum and the Kunsthaus (with many works by Giacometti and Hodler); the lakefront promenade and the summer swimming areas (Badi); a boat on Lake Zürich; the Uetliberg for the panorama.",
+    whenAndTips:
+      "May–September is the most comfortable. Winter is foggy but the Christmas market is lovely. Shops close on Sundays — plan your supplies. Prices are high — bring a water bottle (there are many drinking fountains). The train from the airport is far cheaper than a taxi. Day trips to the mountains are easy (the Jungfrau, Lucerne and the Rhine Falls are all within 1–1.5 hours).",
+  },
+
+  bern: {
+    identity:
+      "Bern is the capital of Switzerland and of the canton of Bern, with a city population of about 130,000, its Old Town built inside a deep meander loop of the Aare river, hemmed in on three sides by water and cliffs, its medieval layout almost intact — a World Heritage Site. The city is said to be named for a bear (Bär) the founder caught, and the bear is still the city emblem and mascot.",
+    layout:
+      "Bern's Old Town is on the peninsula formed by the Aare meander, with a main axis running from the station down to the 'Bear Park' by the river, lined with six kilometres of arcades (covered shopping walkways). The clock tower (Zytglogge) is halfway along the main street. On the high ground across the river is the Rose Garden, with a view over the whole red-roofed Old Town and the Alps behind.",
+    gettingAround:
+      "Bern Airport (BRN) is very small with few flights; most people arrive by train, and the station is right by the Old Town. The city has trams and buses, and the Old Town is walkable (with arcades against the rain). Bern is a hub between the French- and German-speaking regions, with easy access to Interlaken, Lucerne and Geneva. The climate is temperate, with some winter snow.",
+    culture:
+      "German (the local Swiss-German dialect is spoken relatively slowly), and close to the French-speaking area. Bern is the political centre but has a relaxed feel, and is teased for its slow pace. Einstein lived in the Old Town in 1903–05 and developed special relativity while working at the patent office; his flat is now a museum. Restaurants do not require tipping.",
+    seeAndDo:
+      "The Old Town arcades and fountains (16th-century painted figure fountains), and the clock tower's chimes on the hour; the Federal Palace (tours by reservation, fountains on the square in summer); Einstein's house; the Kunstmuseum (with many works by Klee) and the Zentrum Paul Klee; the bears at the Bear Park by the river; the Rose Garden for the Old Town view; in summer, locals float down the Aare.",
+    whenAndTips:
+      "May–September is the most comfortable. People gather on the west side of the clock tower a few minutes before the hour. The Aare is fast and cold, and floating it is a local sport — don't get in unless you know the water. Bern is the change point for the Bernese Oberland (Interlaken, the Jungfrau), an easy day trip.",
+  },
+
+  basel: {
+    identity:
+      "Basel is in the north-western corner of Switzerland at the 'Rhine knee', where the Rhine turns from flowing east–west to flowing north, exactly at the meeting of Switzerland, France and Germany, with a city population of about 170,000. It is Switzerland's pharmaceutical and chemical centre, and also the country's art capital — an extremely high density of museums, and Art Basel each June is a major event on the global art market.",
+    layout:
+      "Basel straddles the Rhine: Grossbasel on the south-west bank has the Old Town, the cathedral and the university; Kleinbasel is on the north-east bank. The Rhine here is already a large river, and in summer locals pack their clothes into a waterproof bag as a float and swim downstream. The city merges seamlessly into Germany to the north and France to the west, with trams running into both countries.",
+    gettingAround:
+      "EuroAirport Basel-Mulhouse (BSL/EAP) is shared by Switzerland, France and Germany and physically in France, with a bus to the city (use the 'Swiss exit'). The city has two stations (the Swiss SBB station and the German Badischer Bahnhof). The tram network is dense, and some lines run into France and Germany. The Old Town is walkable. It is one of the warmer parts of Switzerland.",
+    culture:
+      "German (the local dialect, Baseldytsch); being on the tri-border, French and German accents are also common, and English is widespread. Basel people are intensely proud of their carnival (Basler Fasnacht, a UNESCO-listed intangible heritage, which starts at 4 am in February or March with a lantern procession). Restaurants do not require tipping.",
+    seeAndDo:
+      "The Kunstmuseum Basel (one of the oldest public art collections in the world), the Fondation Beyeler, the Tinguely Museum, the Museum der Kulturen; the red-sandstone cathedral and town hall in the Old Town; the Rhine ferries (small boats driven by the current) and swimming downstream in summer; the zoo; the citywide museum programme during Art Basel in June.",
+    whenAndTips:
+      "May–September is good; during Art Basel in June lodging is extremely tight and prices double — come specifically for it or avoid it. The carnival in February/March is also a peak. Rhine swimming is only for warm summer days with enough fitness — always use an official float bag and watch for boats. From the airport bus, use the Swiss-side exit.",
+  },
+
+  lucerne: {
+    identity:
+      "Lucerne is in central Switzerland at the western end of Lake Lucerne (in German, Vierwaldstättersee, 'Lake of the Four Forest Cantons') where the Reuss river leaves the lake, with a city population of about 80,000 — the most visited city in the central German-speaking region, ringed by snow mountains, with lake-and-mountain scenery as its signature. The first cantons of the Swiss confederation were around this lake, and the 1291 alliance legend takes place at the Rütli meadow on its shore.",
+    layout:
+      "Lucerne's Old Town is on the north bank of the Reuss, keeping its painted old houses and two medieval covered wooden bridges — the Chapel Bridge (one of the oldest covered wooden bridges in Europe, its tower once a water tower) and the Spreuer Bridge. The city walls and towers are on the hillside. The lakefront has the large station, the KKL culture and convention centre, and the boat piers. South is Mount Pilatus, east is the Rigi, both reached by rack railway or cable car.",
+    gettingAround:
+      "Lucerne has no airport; the train from Zürich is about 45 minutes, from Zürich Airport about 1 hour 10 minutes. The station is next to the lake and the Old Town, and everything is walkable. Pilatus, the Rigi and Stanserhorn are reached by rack railway and cable car (not included in ordinary tickets). Lake boats are part of local transport. The climate is temperate, with fast-changing mountain weather.",
+    culture:
+      "German (the local Swiss-German), with a well-developed tourist trade and widespread multilingual service. The Old Town carnival (Luzerner Fasnacht) is in February/March and lively. Restaurants do not require tipping. The KKL concert hall has excellent acoustics, and the Lucerne Festival is held in summer.",
+    seeAndDo:
+      "The Chapel Bridge and its octagonal water tower, and the Spreuer Bridge; the Old Town squares and painted houses; the Lion Monument (which Mark Twain called 'the most mournful and moving piece of stone in the world') and the Glacier Garden; a boat on Lake Lucerne; up Pilatus (one of the steepest rack railways in the world, in summer) or the Rigi ('Queen of the Mountains'); the Swiss Museum of Transport.",
+    whenAndTips:
+      "May–September is best for the mountain views. Lucerne is a very tour-group-heavy city, and the Chapel Bridge area is crowded by day — go early or in the evening. Decide on the mountain cable cars by the weather (you see nothing in cloud). A Swiss Travel Pass can save a lot on mountain transport — do the maths first.",
+  },
+
+  geneva: {
+    identity:
+      "Geneva (in French, Genève) is at the far western end of Switzerland where Lake Geneva (Lac Léman) drains and the Rhône becomes a river again, almost surrounded on three sides by French territory, with a city population of about 200,000. It is the largest city in the French-speaking region and the seat of many international organisations — the UN's European headquarters, the WHO, the International Committee of the Red Cross (founded here in 1863), and the Large Hadron Collider (CERN, across the Swiss–French border).",
+    layout:
+      "Geneva is at the south-western tip of the lake, with the Rhône flowing out and dividing the city into two banks. The left bank has the Old Town (the cathedral, the old walls, the watch shops) and the shopping area; the right bank has the station and most of the international organisations. The landmark Jet d'Eau fountain on the lake throws water 140 m up. Mont Blanc is visible in the distance across the lake.",
+    gettingAround:
+      "Geneva Airport (GVA) is north-west of the city, with a train about 7 minutes to the main station; a free 80-minute transit ticket is available at baggage claim. The city has trams, buses, a regional rail (the Léman Express, running into France) and small yellow lake shuttles. The Old Town is walkable. Accommodation usually comes with a Geneva Transport Card. The climate is temperate, with a dry, cold 'bise' wind at times in winter.",
+    culture:
+      "French is the main language; because of the international institutions, English is nearly universal and you hear every language on the street. Geneva is known for watchmaking, diplomacy and understated wealth, and feels more 'Swiss' than French cities — quiet and orderly. Restaurants do not require tipping. It was a centre of the Reformation under Calvin, and the Old Town has the Reformation Wall.",
+    seeAndDo:
+      "The Jet d'Eau and the flower clock in the English Garden; the Old Town's St Pierre Cathedral (you can climb the tower), the Reformation Museum, the Reformation Wall; the international district: the Palais des Nations (the UN, tours by reservation), the Red Cross and Red Crescent Museum, the Broken Chair sculpture; the Patek Philippe watch museum; a lake boat, east to Montreux and Chillon Castle; a visit to CERN (book well ahead).",
+    whenAndTips:
+      "May–September is the most comfortable. Geneva's prices are high even by Swiss standards. Many museums are free on the first Sunday of the month. Collect the free airport transit ticket and the accommodation transport card to save money. Book CERN and Palais des Nations tours well in advance. Montreux and Lausanne are easy day trips by train or lake boat.",
+  },
+
+  lausanne: {
+    identity:
+      "Lausanne (in French, Lausanne) is on the north shore of Lake Geneva on a steep slope, with a city population of about 140,000 — the capital of the canton of Vaud and the second-largest city in the French-speaking region. It is the seat of the International Olympic Committee (which moved here in 1915), is called the 'Olympic Capital', and has the Olympic Museum and several international sports bodies. It is also a university city.",
+    layout:
+      "Lausanne climbs from the lake up the hillside, a drop of about 500 m — one of the few European cities built on such a steep slope, with a fully automatic metro (the m2) that works like a funicular, linking the lakefront, the centre and the upper town. The Old Town and the Gothic cathedral are up high; Ouchy on the lake has the parks, the piers and the Olympic Museum.",
+    gettingAround:
+      "Lausanne has no airport; the nearest is Geneva Airport, about 40 minutes by direct train. The city has two metro lines (m1, m2), buses and funicular-style shuttles; the m2 solves most of the climbing. Trains to Geneva and Montreux are quick. The climate is temperate, warmer by the lake than up the hill.",
+    culture:
+      "French is the main language; the university and the international sports bodies bring many foreigners, and English is fairly widespread. Lausanne feels young and lively, with more nightlife than most Swiss cities (the Flon district). Restaurants do not require tipping. There is an annual city music festival.",
+    seeAndDo:
+      "The Gothic Lausanne Cathedral (one of the few churches still keeping a night-watchman calling the hours; you can climb the tower); the Olympic Museum and the Ouchy lakefront parks; the Old Town and the covered wooden Escaliers du Marché; the Plateforme 10 arts district (three museums in one); riding the m2 up and down; a lake boat to Montreux, Chillon Castle, or Yvoire (a medieval village on the French side).",
+    whenAndTips:
+      "May–September is the most comfortable. The city is steep — use the m2 and wear comfortable shoes. The Olympic Museum and the Lavaux terraced vineyards (a World Heritage Site, east along the lake) are worth half a day. The lakeshore train and lake boats toward Montreux are both scenic.",
+  },
+
+  interlaken: {
+    identity:
+      "Interlaken (German for 'between the lakes') is the gateway town to the Bernese Oberland, on an alluvial plain between Lake Thun and Lake Brienz, with a resident population of about 5,600, yet one of the most concentrated bases for Swiss mountain tourism. In good weather you can see the three famous peaks — the Jungfrau, the Mönch and the Eiger — directly from the meadow (the Höhematte) in the middle of town.",
+    layout:
+      "Interlaken is small, with the main street, Höheweg, along an open meadow and a station at each end (Ost and West). On either side are the two differently coloured glacial lakes: Lake Thun to the west is greener, Lake Brienz to the east is bluer. The narrow-gauge railways into the mountains start here, going up to the Jungfrau region via Lauterbrunnen or Grindelwald.",
+    gettingAround:
+      "Interlaken has no airport; the train from Zürich or Geneva is about 2 hours, from Bern about 50 minutes. The town is walkable. The Jungfrau region is reached by a whole system of narrow-gauge rack railways and cable cars (not included in ordinary tickets, and not cheap — a Jungfrau pass or the Swiss Travel Pass helps). Lake boats connect the villages on the two lakes. The climate is mountain weather, changing fast.",
+    culture:
+      "German (the local Swiss-German), tourism-dominated, with widespread multilingual service and many seasonal staff from around the world. The town has many outdoor-adventure companies (paragliding, skydiving, canyoning, rafting) — choose licensed, well-reviewed operators. Restaurants do not require tipping.",
+    seeAndDo:
+      "From Interlaken as a base: the Lauterbrunnen waterfall valley (dozens of waterfalls hang from the cliffs, Staubbach the most famous), Mürren and the Schilthorn; Grindelwald and First; the Jungfrau railway up to the 'Top of Europe' station (3,454 m, with a viewing terrace and an ice palace); the Harder Kulm cable car for the three-peak panorama; boats on Lake Thun and Lake Brienz, and the Giessbach falls.",
+    whenAndTips:
+      "June–September the high trails are clear of snow and best for hiking; December–March for skiing. Before going up the Jungfrau, check the live summit webcams and weather — in cloud you see only white, and it is expensive. Always work out whether a pass is worth it for the rack railways and cable cars. For paragliding and similar, pick licensed operators and check the insurance.",
+  },
+
+  zermatt: {
+    identity:
+      "Zermatt is in the Swiss canton of Valais at the end of a deep valley, facing the Matterhorn (in German, Matterhorn; Italian, Cervino; French, Cervin; 4,478 m) — this near-perfect pyramid of an isolated peak is the most famous mountain in Switzerland and arguably the Alps. The town has about 5,800 residents at about 1,600 m, and to keep the air clean and quiet, combustion vehicles are banned in the town — only electric carts and horse carriages.",
+    layout:
+      "Zermatt is built on the floor of a deep north–south valley with steep slopes on both sides, the Matterhorn due south, toward the mouth of the valley. The main street, Bahnhofstrasse, runs from the station, lined with hotels, restaurants and mountaineering shops. The old quarter has a cluster of old granaries roofed with stone slabs and raised on wooden piles (to keep out mice). Around it are some of the highest cable cars and ski areas in Europe.",
+    gettingAround:
+      "Zermatt has no car access. By car you can only reach Täsch down the valley, then a shuttle rack train about 12 minutes into town (or the narrow-gauge train from Visp). In town it is walking, electric taxis or hotel electric buses. Up the mountains: the Gornergrat rack railway, the metro-style cable car (the Matterhorn Glacier Paradise, Europe's highest cable station at 3,883 m) and several other cable cars. The climate is alpine, with sharp day–night and weather swings.",
+    culture:
+      "German (the Valais dialect), thoroughly tourism-dominated, with universal English and multilingual service. Zermatt has a large place in mountaineering history: the first ascent of the Matterhorn in 1865 ended in disaster on the descent, with four deaths, and the accident and the stories of the early climbers are told at the Matterhorn Museum (a sombre subject). Restaurants do not require tipping.",
+    seeAndDo:
+      "The Gornergrat rack railway up to 3,089 m for the Matterhorn and the Gorner Glacier panorama (the sunrise service is popular); the Matterhorn Glacier Paradise cable car (year-round skiing, an ice palace); the Five Lakes hike (the Matterhorn reflected in the lakes); the old granaries and the Matterhorn Museum in the old quarter; the church and the climbers' cemetery north of the town.",
+    whenAndTips:
+      "July–September for high hiking, December–April for skiing; late April–June and October–November many cable cars are closed for maintenance and restaurants shut. Seeing the Matterhorn is a matter of luck — the summit often wears a cap of cloud, and early morning is usually clearest. UV is strong and temperatures low at altitude — bring sun protection and warm layers. Park at Täsch and do not drive into the town.",
+  },
+
+  "st-moritz": {
+    identity:
+      "St. Moritz is in the Swiss canton of Graubünden, in the Engadin valley by a high mountain lake, at about 1,800 m, with a resident population of about 5,000. It is one of the birthplaces of the modern winter holiday — in 1864 a hotelier bet some English guests that winter here would be fun too, launching Alpine winter tourism, and the town has twice hosted the Winter Olympics. It has exceptional sunshine, and its trademarked slogan is 'Top of the World'.",
+    layout:
+      "St. Moritz has a 'village' (Dorf, on the hillside above the lake, where the luxury hotels and boutiques cluster) and a 'spa' (Bad, at the western end of the lake, named for its mineral springs). Around it are the broad U-shaped Engadin valley, a chain of glacial lakes and peaks over 3,000 m. In winter the lake freezes and hosts horse racing, polo and cricket.",
+    gettingAround:
+      "St. Moritz has no scheduled flights (Samedan has a general-aviation airport). Most people come by train: about 3 hours 15 minutes from Zürich (changing at Chur onto the Rhaetian Railway), and the Bernina Express and the Glacier Express start or end here, on a route that is a World Heritage Site. In town it is walking and buses, with several cable cars. The climate is alpine — dry, sunny and very cold in winter.",
+    culture:
+      "German and Romansh are both used (the Engadin is a core area of Romansh), and Italian is common too (Italy is close), with multilingual tourist service. St. Moritz is upmarket, and in the winter peak both prices and atmosphere lean toward the luxurious. Restaurants do not require tipping. Traditional houses are thick-walled Engadin buildings with sgraffito (scratched plaster) decoration.",
+    seeAndDo:
+      "The Bernina Express over the Bernina Pass to Tirano in Italy (glaciers, a spiral viaduct on the way), or the Glacier Express to Zermatt; hiking and cycling the Engadin lakes, Muottas Muragl for the whole-valley view; the Muottas, Corvatsch and Diavolezza cable cars for the glaciers; sgraffito-decorated houses in nearby Romansh villages (such as Guarda); skiing in winter and the white-lawn events on the lake.",
+    whenAndTips:
+      "December–March for skiing and July–September for hiking are the two peaks, with a quiet shoulder season between when many facilities close. Book seats well ahead on the scenic trains (the Bernina, the Glacier Express); the panorama carriages go first. The altitude and strong sun mean sun protection is essential. Prices are in the top tier even for Switzerland.",
+  },
+
+  lugano: {
+    identity:
+      "Lugano is in southern Switzerland, in the canton of Ticino, on Lake Lugano, with a city population of about 60,000 — the largest city in Switzerland's Italian-speaking region. Over the main Alpine crest on the southern slope, the climate, architecture, food and pace of life feel more like northern Italy — palm trees, arcaded squares, the evening passeggiata — but it is still Switzerland.",
+    layout:
+      "Lugano is in a bend of the lake, hemmed in by two conical mountains — Monte San Salvatore and Monte Brè. The Old Town is a car-free area of Italian-style stone lanes and arcaded squares, and the lakefront is a long park and palm promenade. Villas and villages are scattered on the surrounding hillsides. The lake extends south into Italy.",
+    gettingAround:
+      "Lugano Airport (LUG) is small, with a few domestic and neighbouring-country flights; most people come by train: about 2 hours from Zürich through the Gotthard Base Tunnel, about 1 hour from Milan. The city has buses and two funiculars (up Monte San Salvatore, and from the station down to the centre). The Old Town is walkable. It is the mildest corner of Switzerland — hot summers, mild winters with little snow.",
+    culture:
+      "Italian is the main language, with German and English also used in tourism and business. The pace is more relaxed than the German-speaking region, with a longer midday break. Lugano is a Swiss financial centre, with Italian cultural spillover (many Italians cross the border to work and shop). Restaurants do not require tipping, though leaving some coins is common in the Italian style.",
+    seeAndDo:
+      "The Old Town's Piazza della Riforma and its arcades, and the Renaissance frescoes in Santa Maria degli Angioli; the LAC cultural centre and the cantonal art museum; the funicular up Monte San Salvatore for the lake and Alpine panorama; a boat on Lake Lugano to Gandria (a car-free lakeside village) and Morcote; north to Bellinzona and its three World Heritage castles; the Swissminiatur miniature park.",
+    whenAndTips:
+      "April–October is the most comfortable, with hot summers. This is the rare place in Switzerland to sit in the sun, eat pasta and see palm trees, and it makes a good southern base after crossing the Alps. The Gotthard Base Tunnel makes Zürich–Lugano fast, but the scenery is on the old mountain line (the Gotthard Panorama Express).",
+    },
 };

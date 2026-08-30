@@ -1760,6 +1760,79 @@ export const ROUTE_NARRATION: Record<
       "The town also has the GeoSea cliff baths. South you can drive the 'Diamond Circle': Goðafoss, Mývatn, Dettifoss and the Ásbyrgi canyon.",
     },
   },
+
+  "zrh-lug": {
+    study: {
+    "zh-CN":
+      "苏黎世飞卢加诺，是一趟很短的航班，却把整条阿尔卑斯山脉从北到南横切了一遍，从德语区飞到意大利语区。起飞后先掠过苏黎世湖——一条冰川挖出、细长弯曲的湖，湖两岸是富裕的“黄金海岸”。" +
+      "往南很快到卢塞恩湖：一个形状极不规则、被陡峭山壁夹住的湖，瑞士联邦最早的几个州就在它周围。" +
+      "接着地面猛然升高，进入阿尔卑斯主脊：圣哥达山块是这里的关键——它是欧洲的一处分水岭，罗讷河、莱茵河、提契诺河都从这一带发源，历史上翻越圣哥达山口是连接南北欧的要道，如今山下有世界最长的铁路隧道（戈特哈德基线隧道，约 57 公里）。" +
+      "翻过主脊，气候和植被立刻变了：南坡是温暖湿润的提契诺，出现栗树和棕榈。马焦雷湖和卢加诺湖是几条伸进意大利的狭长湖，卢加诺就在湖湾里、两座锥形山之间。",
+    "en-US":
+      "Zürich to Lugano is a short flight that cuts across the whole Alpine chain from north to south, from the German-speaking region to the Italian-speaking one. After take-off you skim Lake Zürich — a long, curving lake gouged by a glacier, its shores the wealthy 'Gold Coast'." +
+      "South you soon reach Lake Lucerne: a very irregular lake hemmed in by steep walls, around which the first cantons of the Swiss confederation lay." +
+      "Then the ground rises sharply into the main Alpine crest, where the Gotthard Massif is key — a watershed of Europe, where the Rhône, the Rhine and the Ticino all rise, historically a vital pass between northern and southern Europe, and now with the world's longest rail tunnel (the Gotthard Base Tunnel, about 57 km) beneath it." +
+      "Over the crest the climate and vegetation change at once: the southern slope is warm, humid Ticino, with chestnut trees and palms. Lake Maggiore and Lake Lugano are long lakes reaching into Italy, and Lugano is in a bend of its lake between two conical mountains.",
+    },
+    travel: {
+    "zh-CN":
+      "苏黎世到卢加诺飞约 40 分钟，同一时区、同一国家。其实瑞士几乎没有国内定期航班——火车太方便了：经戈特哈德基线隧道约 2 小时，票价通常比飞机划算，而且风景（走老山线的 Gotthard Panorama Express）好得多。" +
+      "卢加诺说意大利语、气候温和，是瑞士难得能晒太阳吃意面看棕榈的地方，常作为翻越阿尔卑斯的南端落脚点。" +
+      "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
+    "en-US":
+      "Zürich to Lugano is about 40 minutes, same time zone, same country. In fact Switzerland has almost no scheduled domestic flights — the train is so convenient: about 2 hours through the Gotthard Base Tunnel, usually cheaper than flying, and with far better scenery on the old mountain line (the Gotthard Panorama Express)." +
+      "Lugano is Italian-speaking and mild, the rare place in Switzerland to sit in the sun, eat pasta and see palm trees, and a good southern base after crossing the Alps." +
+      "Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+    },
+  },
+
+  "zrh-gva": {
+    study: {
+    "zh-CN":
+      "苏黎世飞日内瓦，是瑞士两大城市之间的连线，几乎全程在阿尔卑斯山以北的“中部高原”上飞——瑞士的人口、城市和农田都集中在这条从东北到西南的丘陵湖泊带里。" +
+      "起飞后先经过卢塞恩湖一带的湖山交界，然后是典型的高原景观：一片片牧场和麦田、散落的村镇、几个中等大小的湖（比尔湖、纳沙泰尔湖），背景是南面阿尔卑斯的雪墙。" +
+      "接近终点，出现一个巨大的新月形湖——日内瓦湖（法语 Lac Léman），是阿尔卑斯北缘最大的湖，罗讷河从东端流入、西端的日内瓦流出。城市几乎被法国领土包住，湖对岸远处是勃朗峰。",
+    "en-US":
+      "Zürich to Geneva links Switzerland's two largest cities, flown almost entirely over the 'Swiss Plateau' north of the Alps — where the country's population, cities and farmland are concentrated, in this belt of hills and lakes running north-east to south-west." +
+      "After take-off you pass the lake-and-mountain junction around Lake Lucerne, then the typical plateau landscape: patchwork pasture and wheat fields, scattered towns, a few medium lakes (Biel, Neuchâtel), with the wall of the Alps to the south." +
+      "Near the end a huge crescent lake appears — Lake Geneva (Lac Léman), the largest lake on the northern edge of the Alps, with the Rhône flowing in at the east end and out at Geneva in the west. The city is almost surrounded by French territory, and Mont Blanc is visible in the distance across the lake.",
+    },
+    travel: {
+    "zh-CN":
+      "苏黎世到日内瓦飞约 45 分钟，同一时区。瑞士国内基本靠火车（约 2 小时 45 分、直达、市中心到市中心），SWISS 飞这条线主要是为转机旅客。" +
+      "苏黎世是德语区、日内瓦是法语区，两地生活方式略不同、都英语通用。日内瓦国际组织多、物价在瑞士也偏高，很多博物馆每月第一个周日免费。" +
+      "机场取行李处可领 80 分钟市内交通票，住宿通常送交通卡。",
+    "en-US":
+      "Zürich to Geneva is about 45 minutes, in the same time zone. Domestic travel in Switzerland is essentially by train (about 2 hours 45 minutes, direct, city centre to city centre), and SWISS flies this route mainly for connecting passengers." +
+      "Zürich is German-speaking and Geneva French-speaking, with slightly different lifestyles, and English works in both. Geneva has many international organisations and high prices even for Switzerland, and many museums are free on the first Sunday of the month." +
+      "At baggage claim you can collect an 80-minute transit ticket, and accommodation usually includes a transport card.",
+    },
+  },
+
+  "gva-lug": {
+    study: {
+    "zh-CN":
+      "日内瓦飞卢加诺，从瑞士最西南飞到最东南，几乎全程贴着阿尔卑斯主脊飞，是这几条线里景观最壮的一条。起飞后沿日内瓦湖北岸——湖边是拉沃的梯田葡萄园，一层层石墙从水边爬到山上。" +
+      "往东进山，脚下是伯尔尼阿尔卑斯：少女峰、僧侣峰、艾格峰一列雪峰，山谷里挂满瀑布（劳特布龙嫩谷）。" +
+      "再往东是阿莱奇冰川——阿尔卑斯最长的冰川，约 20 公里长，三条粒雪流在“康科迪亚广场”汇成一条宽阔的冰河，缓缓向南流。" +
+      "越过圣哥达山块（欧洲的分水岭、戈特哈德基线隧道所在），气候突然转暖，进入说意大利语的提契诺，栗树和棕榈出现，卢加诺就在一个伸向意大利的狭长湖畔。",
+    "en-US":
+      "Geneva to Lugano flies from the far south-west of Switzerland to the far south-east, almost entirely along the main Alpine crest — the most spectacular of these routes. After take-off you follow the north shore of Lake Geneva, lined by the terraced Lavaux vineyards, their stone walls climbing from the water up the hillside." +
+      "East into the mountains, below are the Bernese Alps: the Jungfrau, the Mönch and the Eiger in a row of snow peaks, with waterfalls hanging in the valleys (the Lauterbrunnen valley)." +
+      "Farther east is the Aletsch Glacier — the longest glacier in the Alps, about 20 km, where three firn streams meet at 'Konkordiaplatz' to form one broad river of ice flowing slowly south." +
+      "Over the Gotthard Massif (a watershed of Europe, and the site of the Gotthard Base Tunnel) the climate suddenly warms into Italian-speaking Ticino, with chestnut trees and palms, and Lugano lies on a long lake reaching toward Italy.",
+    },
+    travel: {
+    "zh-CN":
+      "日内瓦到卢加诺飞约 50 分钟，同一时区。火车走这条线要换乘、约 5 小时，所以这条是瑞士少数有点意义的国内航线。" +
+      "从法语区飞到意大利语区，气候和气质都变了：卢加诺温和、松弛、更“意式”。以它为基地可去贝林佐纳看三座世界遗产城堡、坐船游卢加诺湖。" +
+      "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
+    "en-US":
+      "Geneva to Lugano is about 50 minutes, in the same time zone. The train on this route needs changes and takes about 5 hours, so this is one of the few Swiss domestic flights that makes some sense." +
+      "Flying from the French-speaking region to the Italian-speaking one, the climate and feel change: Lugano is mild, relaxed and more 'Italian'. From it you can visit Bellinzona and its three World Heritage castles, or take a boat on Lake Lugano." +
+      "Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

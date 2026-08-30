@@ -1,0 +1,19 @@
+{
+  "id": "zrh-lug",
+  "name": "苏黎世 — 卢加诺",
+  "nameEn": "Zürich — Lugano",
+  "description": "苏黎世湖 · 卢塞恩湖 · 圣哥达山块 · 马焦雷湖",
+  "descriptionEn": "Lake Zürich · Lake Lucerne · Gotthard Massif · Lake Maggiore",
+  "depCountry": "switzerland",
+  "arrCountry": "switzerland",
+  "flight": { "airline": "瑞士国际航空", "airlineEn": "SWISS", "flightNo": "LX2810", "aircraft": "Saab 2000", "depIata": "ZRH", "arrIata": "LUG", "durationMin": 32 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "zrh", "name": "苏黎世", "nameEn": "Zürich", "lat": 47.4647, "lon": 8.5492, "airport": true },
+    { "kind": "terrain", "terrainId": "lake-zurich" },
+    { "kind": "terrain", "terrainId": "lake-lucerne" },
+    { "kind": "terrain", "terrainId": "gotthard-massif" },
+    { "kind": "terrain", "terrainId": "lake-maggiore" },
+    { "kind": "city", "id": "lug", "name": "卢加诺", "nameEn": "Lugano", "lat": 46.0043, "lon": 8.9106, "airport": true }
+  ]
+}

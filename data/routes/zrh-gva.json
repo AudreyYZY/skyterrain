@@ -1,0 +1,18 @@
+{
+  "id": "zrh-gva",
+  "name": "苏黎世 — 日内瓦",
+  "nameEn": "Zürich — Geneva",
+  "description": "卢塞恩湖 · 瑞士中部高原 · 日内瓦湖",
+  "descriptionEn": "Lake Lucerne · Swiss Plateau · Lake Geneva",
+  "depCountry": "switzerland",
+  "arrCountry": "switzerland",
+  "flight": { "airline": "瑞士国际航空", "airlineEn": "SWISS", "flightNo": "LX2802", "aircraft": "Airbus A220-100", "depIata": "ZRH", "arrIata": "GVA", "durationMin": 45 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "zrh", "name": "苏黎世", "nameEn": "Zürich", "lat": 47.4647, "lon": 8.5492, "airport": true },
+    { "kind": "terrain", "terrainId": "lake-lucerne" },
+    { "kind": "terrain", "terrainId": "swiss-plateau" },
+    { "kind": "terrain", "terrainId": "lake-geneva" },
+    { "kind": "city", "id": "gva", "name": "日内瓦", "nameEn": "Geneva", "lat": 46.2381, "lon": 6.1090, "airport": true }
+  ]
+}
