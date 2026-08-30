@@ -1,0 +1,17 @@
+{
+  "id": "ath-skg",
+  "name": "雅典 — 塞萨洛尼基",
+  "nameEn": "Athens — Thessaloniki",
+  "description": "色萨利平原 · 奥林匹斯山",
+  "descriptionEn": "Thessalian Plain · Mount Olympus",
+  "depCountry": "greece",
+  "arrCountry": "greece",
+  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3301", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "SKG", "durationMin": 50 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
+    { "kind": "terrain", "terrainId": "thessaly-plain" },
+    { "kind": "terrain", "terrainId": "mount-olympus" },
+    { "kind": "city", "id": "thessaloniki", "name": "塞萨洛尼基", "nameEn": "Thessaloniki", "lat": 40.5197, "lon": 22.9709, "airport": true }
+  ]
+}

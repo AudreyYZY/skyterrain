@@ -144,6 +144,15 @@ import fraMuc from "./fra-muc.json" with { type: "json" };
 import fraDrs from "./fra-drs.json" with { type: "json" };
 import mucDrs from "./muc-drs.json" with { type: "json" };
 import fraHam from "./fra-ham.json" with { type: "json" };
+// 希腊
+import athSkg from "./ath-skg.json" with { type: "json" };
+import athHer from "./ath-her.json" with { type: "json" };
+import athChq from "./ath-chq.json" with { type: "json" };
+import athRho from "./ath-rho.json" with { type: "json" };
+import athCfu from "./ath-cfu.json" with { type: "json" };
+import athIoa from "./ath-ioa.json" with { type: "json" };
+import athJtr from "./ath-jtr.json" with { type: "json" };
+import athKlx from "./ath-klx.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -265,4 +274,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   fraDrs,
   mucDrs,
   fraHam,
+  athSkg,
+  athHer,
+  athChq,
+  athRho,
+  athCfu,
+  athIoa,
+  athJtr,
+  athKlx,
 ] as unknown as FlightRoute[];

@@ -1,0 +1,17 @@
+{
+  "id": "ath-her",
+  "name": "雅典 — 伊拉克利翁",
+  "nameEn": "Athens — Heraklion",
+  "description": "米洛斯岛 · 圣托里尼火山口",
+  "descriptionEn": "Milos · Santorini Caldera",
+  "depCountry": "greece",
+  "arrCountry": "greece",
+  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3350", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "HER", "durationMin": 50 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
+    { "kind": "terrain", "terrainId": "milos" },
+    { "kind": "terrain", "terrainId": "santorini-caldera" },
+    { "kind": "city", "id": "heraklion", "name": "伊拉克利翁", "nameEn": "Heraklion", "lat": 35.3397, "lon": 25.1803, "airport": true }
+  ]
+}

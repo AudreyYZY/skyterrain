@@ -1,0 +1,17 @@
+{
+  "id": "ath-klx",
+  "name": "雅典 — 卡拉马塔",
+  "nameEn": "Athens — Kalamata",
+  "description": "科林斯湾 · 泰格特斯山",
+  "descriptionEn": "Gulf of Corinth · Taygetus",
+  "depCountry": "greece",
+  "arrCountry": "greece",
+  "flight": { "airline": "奥林匹克航空", "airlineEn": "Olympic Air", "flightNo": "OA134", "aircraft": "ATR 72-600", "depIata": "ATH", "arrIata": "KLX", "durationMin": 40 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
+    { "kind": "terrain", "terrainId": "gulf-of-corinth" },
+    { "kind": "terrain", "terrainId": "taygetus" },
+    { "kind": "city", "id": "kalamata", "name": "卡拉马塔", "nameEn": "Kalamata", "lat": 37.0683, "lon": 22.0257, "airport": true }
+  ]
+}
