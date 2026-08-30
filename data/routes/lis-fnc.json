@@ -1,0 +1,18 @@
+{
+  "id": "lis-fnc",
+  "name": "里斯本 — 丰沙尔",
+  "nameEn": "Lisbon — Funchal",
+  "description": "阿拉比达海岸 · 维森特角海岸 · 马德拉山地",
+  "descriptionEn": "Arrábida Coast · Costa Vicentina · Madeira Mountains",
+  "depCountry": "portugal",
+  "arrCountry": "portugal",
+  "flight": { "airline": "葡萄牙航空", "airlineEn": "TAP Air Portugal", "flightNo": "TP1740", "aircraft": "Airbus A321neo", "depIata": "LIS", "arrIata": "FNC", "durationMin": 110 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "lis", "name": "里斯本", "nameEn": "Lisbon", "lat": 38.7813, "lon": -9.1359, "airport": true },
+    { "kind": "terrain", "terrainId": "arrabida-coast" },
+    { "kind": "terrain", "terrainId": "costa-vicentina" },
+    { "kind": "terrain", "terrainId": "madeira-mountains" },
+    { "kind": "city", "id": "fnc", "name": "丰沙尔", "nameEn": "Funchal", "lat": 32.6979, "lon": -16.7745, "airport": true }
+  ]
+}

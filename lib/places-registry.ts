@@ -164,6 +164,14 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "gr-crete": { zh: "克里特", en: "Crete", order: 145 },
   "gr-ionian": { zh: "伊奥尼亚群岛", en: "Ionian Islands", order: 146 },
   "gr-aegean": { zh: "爱琴海诸岛", en: "Aegean Islands", order: 147 },
+  // 葡萄牙（里斯本大区→北部→中部→阿连特茹→阿尔加维→马德拉→亚速尔）
+  "pt-lisbon-region": { zh: "里斯本大区", en: "Lisbon Region", order: 150 },
+  "pt-north": { zh: "北部", en: "Northern Portugal", order: 151 },
+  "pt-central": { zh: "中部", en: "Central Portugal", order: 152 },
+  "pt-alentejo": { zh: "阿连特茹", en: "Alentejo", order: 153 },
+  "pt-algarve": { zh: "阿尔加维", en: "Algarve", order: 154 },
+  "pt-madeira": { zh: "马德拉", en: "Madeira", order: 155 },
+  "pt-azores": { zh: "亚速尔", en: "Azores", order: 156 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -194,6 +202,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "spain", nameZh: "西班牙", nameEn: "Spain" },
   { country: "germany", nameZh: "德国", nameEn: "Germany" },
   { country: "greece", nameZh: "希腊", nameEn: "Greece" },
+  { country: "portugal", nameZh: "葡萄牙", nameEn: "Portugal" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1344,6 +1353,68 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "VOL", nameZh: "内阿安希阿洛斯国家机场", nameEn: "Nea Anchialos National Airport", lon: 22.7943, lat: 39.2197 },
     source: "沃洛斯市中心 39.3622,22.9444；VOL 机场：公开资料",
   },
+
+  // ── 葡萄牙 ──
+  {
+    id: "lisbon", nameZh: "里斯本", nameEn: "Lisbon", country: "portugal", tier: "capital", zone: "pt-lisbon-region",
+    lon: -9.1393, lat: 38.7223,
+    airport: { iata: "LIS", nameZh: "里斯本机场", nameEn: "Lisbon Airport", lon: -9.1359, lat: 38.7813 },
+    source: "里斯本市中心 38.7223,-9.1393；LIS 机场：公开资料",
+  },
+  {
+    id: "sintra", nameZh: "辛特拉", nameEn: "Sintra", country: "portugal", tier: "notable", zone: "pt-lisbon-region",
+    lon: -9.3899, lat: 38.7975,
+    source: "辛特拉 38.7975,-9.3899：公开资料（无机场，就近用里斯本；山中王室夏宫小镇）",
+  },
+  {
+    id: "porto", nameZh: "波尔图", nameEn: "Porto", country: "portugal", tier: "major", zone: "pt-north",
+    lon: -8.6291, lat: 41.1579,
+    airport: { iata: "OPO", nameZh: "波尔图机场", nameEn: "Porto Airport", lon: -8.6814, lat: 41.2481 },
+    source: "波尔图市中心 41.1579,-8.6291；OPO 机场：公开资料",
+  },
+  {
+    id: "braga", nameZh: "布拉加", nameEn: "Braga", country: "portugal", tier: "notable", zone: "pt-north",
+    lon: -8.4265, lat: 41.5454,
+    source: "布拉加 41.5454,-8.4265：公开资料（无机场，就近用波尔图；葡萄牙宗教中心）",
+  },
+  {
+    id: "guimaraes", nameZh: "吉马良斯", nameEn: "Guimarães", country: "portugal", tier: "notable", zone: "pt-north",
+    lon: -8.2918, lat: 41.4425,
+    source: "吉马良斯 41.4425,-8.2918：公开资料（无机场，就近用波尔图；葡萄牙王国发祥地）",
+  },
+  {
+    id: "aveiro", nameZh: "阿威罗", nameEn: "Aveiro", country: "portugal", tier: "notable", zone: "pt-north",
+    lon: -8.6538, lat: 40.6405,
+    source: "阿威罗 40.6405,-8.6538：公开资料（无定期商业航班，就近用波尔图；运河小城）",
+  },
+  {
+    id: "coimbra", nameZh: "科英布拉", nameEn: "Coimbra", country: "portugal", tier: "notable", zone: "pt-central",
+    lon: -8.4103, lat: 40.2033,
+    source: "科英布拉 40.2033,-8.4103：公开资料（无定期商业航班，就近用里斯本或波尔图；1290年建校，葡萄牙最古老大学所在地）",
+  },
+  {
+    id: "evora", nameZh: "埃武拉", nameEn: "Évora", country: "portugal", tier: "notable", zone: "pt-alentejo",
+    lon: -7.9096, lat: 38.5714,
+    source: "埃武拉 38.5714,-7.9096：公开资料（无定期商业航班，就近用里斯本；阿连特茹历史中心）",
+  },
+  {
+    id: "faro", nameZh: "法鲁", nameEn: "Faro", country: "portugal", tier: "major", zone: "pt-algarve",
+    lon: -7.9304, lat: 37.0194,
+    airport: { iata: "FAO", nameZh: "法鲁机场", nameEn: "Faro Airport", lon: -7.9659, lat: 37.0144 },
+    source: "法鲁市中心 37.0194,-7.9304；FAO 机场：公开资料",
+  },
+  {
+    id: "funchal", nameZh: "丰沙尔", nameEn: "Funchal", country: "portugal", tier: "notable", zone: "pt-madeira",
+    lon: -16.9241, lat: 32.6669,
+    airport: { iata: "FNC", nameZh: "马德拉机场", nameEn: "Madeira Airport", lon: -16.7745, lat: 32.6979 },
+    source: "丰沙尔市中心 32.6669,-16.9241；FNC 机场：公开资料",
+  },
+  {
+    id: "ponta-delgada", nameZh: "蓬塔德尔加达", nameEn: "Ponta Delgada", country: "portugal", tier: "notable", zone: "pt-azores",
+    lon: -25.6756, lat: 37.7412,
+    airport: { iata: "PDL", nameZh: "蓬塔德尔加达机场", nameEn: "Ponta Delgada Airport", lon: -25.6979, lat: 37.7412 },
+    source: "蓬塔德尔加达市中心 37.7412,-25.6756；PDL 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1365,6 +1436,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   spain: "europe",
   germany: "europe",
   greece: "europe",
+  portugal: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

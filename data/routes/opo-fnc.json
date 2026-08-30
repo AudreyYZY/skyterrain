@@ -1,0 +1,17 @@
+{
+  "id": "opo-fnc",
+  "name": "波尔图 — 丰沙尔",
+  "nameEn": "Porto — Funchal",
+  "description": "杜罗河谷 · 马德拉山地",
+  "descriptionEn": "Douro Valley · Madeira Mountains",
+  "depCountry": "portugal",
+  "arrCountry": "portugal",
+  "flight": { "airline": "葡萄牙航空", "airlineEn": "TAP Air Portugal", "flightNo": "TP1854", "aircraft": "Airbus A320", "depIata": "OPO", "arrIata": "FNC", "durationMin": 130 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "opo", "name": "波尔图", "nameEn": "Porto", "lat": 41.2481, "lon": -8.6814, "airport": true },
+    { "kind": "terrain", "terrainId": "douro-valley" },
+    { "kind": "terrain", "terrainId": "madeira-mountains" },
+    { "kind": "city", "id": "fnc", "name": "丰沙尔", "nameEn": "Funchal", "lat": 32.6979, "lon": -16.7745, "airport": true }
+  ]
+}

@@ -3056,4 +3056,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September brings the most pleasant weather. Volos is an important gateway to Meteora and the Pelion mountains, and also serves as a ferry port for the Sporades islands in the Aegean.",
   },
+
+  "portugal-overview": {
+    identity:
+      "Portugal is the westernmost country on the European mainland, on the western side of the Iberian Peninsula, about 92,000 sq km (excluding the overseas autonomous regions) with a population of about 10.3 million; including the Atlantic autonomous regions of Madeira and the Azores, the total area is about 93,000 sq km. The land is higher in the north and lower in the south: the north and centre are mountainous and hilly, with rivers such as the Douro and Mondego cutting north-east to south-west through old crystalline plateau rock; the south (Alentejo) is a broad rolling plain; the south-western tip (the Algarve) is a limestone coast. Travel mode covers mainland Portugal plus the overseas autonomous regions of Madeira and the Azores.",
+    layout:
+      "It helps to divide Portugal into: the Lisbon region (the capital and surroundings, including Sintra); the north (Porto, Braga, Guimarães, and the Douro Valley wine region); the centre (Coimbra, its university and the Mondego); the Alentejo (Évora, oak savanna and wine); the Algarve (Faro, the southern coastal resort region); and, in the Atlantic, the Madeira and Azores archipelagos.",
+    gettingAround:
+      "Portugal is long and narrow; rail and long-distance coach networks cover the main cities, with Lisbon–Porto about 2.5–3 hours. Domestic flights mainly link the mainland with the overseas island groups, Madeira and the Azores (there are very few flights within the mainland — the train is more commonly used). Lisbon and Porto have a metro; historic centres are mostly narrow old lanes, some steep. Drive on the right; motorways are mostly tolled. Restaurant tipping is not required (rounding up is fine). Tap water is drinkable. Power is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is Portuguese; English is fairly common in tourist areas and among younger people. The Portuguese are generally mild-mannered and a touch slower-paced than Spain; fado music is an important cultural symbol, inscribed as UNESCO intangible heritage in 2011. Tipping is not required — rounding up or leaving 5–10% is fine.",
+    seeAndDo:
+      "The tram-served old town and Belém district of Lisbon; the riverside wine cellars of Porto; the terraced vineyards of the Douro Valley; the Romantic palaces of Sintra; the oak savanna and old town of Évora in the Alentejo; the limestone coast of the Algarve; the laurel forest and cliff roads of Madeira; the volcanic lakes and geothermal areas of the Azores.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is peak season on the southern coast and islands, with higher temperatures. Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. The old towns of Lisbon and Porto are steep and slippery — wear comfortable, grippy shoes. Book flights and ferries to Madeira and the Azores ahead of time.",
+  },
+
+  lisbon: {
+    identity:
+      "Lisbon is the capital of Portugal, with a metro area of about 2.8 million, on the north bank of the broad estuary where the Tagus meets the Atlantic — one of the oldest cities in Europe. Built on seven hills, its Baixa district, rebuilt on a regular grid after the 1755 earthquake, contrasts sharply with the medieval lanes of the old Alfama quarter.",
+    layout:
+      "Lisbon's core is three old districts: Alfama (the oldest, by the river, keeping its Moorish-era layout, overlooked by São Jorge Castle); Baixa (rebuilt on a grid plan after the 1755 earthquake, the commercial centre); and Chiado/Bairro Alto (arts and nightlife). Belém, to the west along the river, holds the monuments of the Age of Discovery.",
+    gettingAround:
+      "Lisbon Airport (LIS) is close to the city, with a metro straight into the centre (about 20 minutes). The city has a metro, buses, the old yellow trams (route 28 through the old town's narrow lanes is a classic experience) and three funiculars. The old town is steep and cobbled. The climate is Mediterranean: hot, dry summers and mild, rainy winters.",
+    culture:
+      "Portuguese is the main language, with widespread English in tourist areas. Fado houses (casas de fado) cluster in Alfama and Bairro Alto — dinner with live fado is a classic experience. Restaurant tipping is not required. Watch for pickpockets on trams, funiculars and around the sights.",
+    seeAndDo:
+      "The old town of Alfama and São Jorge Castle; Belém's Jerónimos Monastery, Belém Tower and the Monument to the Discoveries (landmarks of the Age of Discovery, World Heritage or under consideration); a ride on the old tram 28; the Santa Justa Lift; live fado; a day trip by train to Sintra.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable. The old town is steep and slippery, especially the cobbles when wet — wear grippy shoes. Jerónimos Monastery and Belém Tower have long queues in peak season — book online ahead or go early. Watch for pickpockets on trams and near sights.",
+  },
+
+  sintra: {
+    identity:
+      "Sintra is about 30 km north-west of Lisbon, on the northern slope of the Serra de Sintra; because of near-constant Atlantic mist, its cool, humid climate has made it a retreat from summer heat since Moorish times. In the 19th century the Portuguese royal family built extensive palaces and gardens here, with the brightly coloured Pena Palace the most iconic.",
+    layout:
+      "Sintra town itself is small, with an old historic centre; the palaces and castles are scattered through the surrounding Serra de Sintra: Pena Palace at the summit, Quinta da Regaleira halfway up, and the ruins of the Moorish Castle running along the ridge — the sites are somewhat spread out, usually linked by shuttle bus.",
+    gettingAround:
+      "Sintra has no airport; the train from Lisbon takes about 40 minutes direct. Bus 434 (the 'Sintra circuit') loops between the palaces from the town centre and up the hill; you can also walk (steep) or take a taxi. The climate is a distinct Atlantic-moderated microclimate, cooler and damper than Lisbon, often misty.",
+    culture:
+      "Portuguese is the main language; tourism dominates, with widespread English. Sintra is a popular day trip and gets crowded in peak season. Restaurant tipping is not required.",
+    seeAndDo:
+      "Pena Palace (a brightly coloured Romantic palace — climb the tower for the view); Quinta da Regaleira (a neo-Gothic estate with the mysterious spiral 'Initiation Well'); the ruins of the Moorish Castle (walls along the ridge, overlooking Sintra); the National Palace of Sintra (in the town centre, with its iconic twin conical chimneys).",
+    whenAndTips:
+      "Start early from Lisbon to beat the tour-group crowds. Book Pena Palace and other popular sites online ahead — on-the-day queues often exceed an hour in peak season. The sites are a fair distance apart — plan for two or three in a day at most. The hills are often foggy and wet — bring a jacket.",
+  },
+
+  porto: {
+    identity:
+      "Porto is Portugal's second-largest city, with a metro area of about 1.7 million, on the north bank of the Douro estuary just before it reaches the Atlantic — the namesake city of Port wine and its main export port. Its well-preserved medieval riverside quarter was inscribed as a whole as a UNESCO World Heritage Site in 1996.",
+    layout:
+      "Porto's old Ribeira quarter climbs the steep north bank of the Douro, houses stacked in colourful layers. Across the river, Vila Nova de Gaia is the traditional home of the Port wine cellars, linked to Ribeira by the 19th-century Dom Luís I Bridge.",
+    gettingAround:
+      "Porto Airport (OPO) is north-west of the city, with a metro straight into the centre (about 35 minutes). The city has a metro, buses and a funicular (linking the upper and lower levels of Vila Nova de Gaia). The old town is steep and walkable but requires stamina. The climate is temperate maritime, cooler and wetter than Lisbon.",
+    culture:
+      "Portuguese is the main language, with widespread English in tourist areas. Porto people are proud of their local identity and Port wine tradition, and the city is often seen as more down-to-earth and lived-in than Lisbon. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Ribeira riverfront and the Dom Luís I Bridge; Port wine cellar tours and tastings in Vila Nova de Gaia (several need booking); Livraria Lello (neo-Gothic, often called one of the world's most beautiful bookshops); São Bento railway station (blue-and-white tile murals); the Clérigos Tower (climb for the city view); a Douro river cruise.",
+    whenAndTips:
+      "May–September is the most comfortable; winter is wet. Book cellar tours ahead — popular slots (weekend afternoons) are busy. Livraria Lello requires a ticket (redeemable against in-store purchases) — book a time slot online ahead in peak season. The old town is steep — wear comfortable shoes.",
+  },
+
+  braga: {
+    identity:
+      "Braga is about 50 km north-east of Porto, one of Portugal's oldest cities (founded in Roman times) and the country's Catholic religious centre, with an exceptionally high density of churches — sometimes called 'the Portuguese Rome'. The Bom Jesus do Monte pilgrimage church on the outskirts, with its Baroque staircase, is its best-known landmark.",
+    layout:
+      "Braga's old town centres on the cathedral, with Baroque churches and squares densely packed into the pedestrian core. Bom Jesus do Monte, east of the city, is an important pilgrimage site, its zigzagging Baroque staircase running from the foot of the hill up to the church at the summit.",
+    gettingAround:
+      "Braga has no airport; the nearest is Porto (about 50 minutes by car), or take the train/coach to and from Porto (about 1 hour). The city is mainly walkable; a bus or a century-old funicular reaches Bom Jesus do Monte. The climate is temperate, cooler and wetter than Lisbon.",
+    culture:
+      "Portuguese is the main language, with fairly common English in tourist areas. Braga has a relatively young population (a well-known university), and its Holy Week religious processions are among the largest in the country. Restaurant tipping is not required.",
+    seeAndDo:
+      "Braga Cathedral (Portugal's oldest surviving cathedral); Bom Jesus do Monte and its Baroque staircase (climb it or take the funicular); the old town squares and Baroque architecture; the Sameiro pilgrimage sanctuary (another hilltop pilgrimage church); east to Peneda-Gerês National Park.",
+    whenAndTips:
+      "May–September is the most comfortable; during Holy Week religious activity is intense and lodging is tight. The Bom Jesus staircase has over 500 steps — pace yourself or take the funicular. As one gateway to Peneda-Gerês National Park, a car or tour is needed.",
+  },
+
+  guimaraes: {
+    identity:
+      "Guimarães is about 20 km east of Braga, called Portugal's 'cradle city' — tradition holds that Afonso I, the founding king of the Kingdom of Portugal, was born here and declared independence, and the old town is inscribed as a whole as a UNESCO World Heritage Site. A 10th-century castle still stands on high ground above the city.",
+    layout:
+      "Guimarães's old town is arranged around a main square, its medieval stone buildings well preserved, with timber-framed overhanging houses a local feature. The castle and the Palace of the Dukes of Braganza stand on high ground at the north of the old town, overlooking the city.",
+    gettingAround:
+      "Guimarães has no airport; the nearest is Porto (about 1 hour by car), or take the train/coach to and from Porto (about 1 hour). The old town is walkable, with a climb to the castle. The climate is temperate, similar to Braga.",
+    culture:
+      "Portuguese is the main language, with fairly common English in tourist areas. Locals are intensely proud of the city's identity as the 'birthplace of Portugal', with related commemorative markers throughout. Restaurant tipping is not required.",
+    seeAndDo:
+      "Guimarães Castle (10th century, traditionally the birthplace of Afonso I); the Palace of the Dukes of Braganza (a 15th-century noble residence, now a museum); the old town's main square and Largo de Santiago; the Church of Our Lady of Oliveira; a cable car up Penha Hill for the city and mountain panorama.",
+    whenAndTips:
+      "May–September is the most comfortable. The old town is small — half a day to a day is enough, often visited as a day trip from Porto. A combined ticket for the castle and palace is better value. The Penha Hill cable car has good views — plan for clear weather.",
+  },
+
+  aveiro: {
+    identity:
+      "Aveiro is about 60 km south of Porto, called the 'Venice of Portugal' for its crisscrossing canals plied by traditional painted flat-bottomed boats (moliceiros). Historically the city lived on seaweed harvesting and salt production, and is now a university and tourist town.",
+    layout:
+      "Aveiro's centre has a few connected canals, lined with colourful Art Nouveau buildings. The city sits right beside the Ria de Aveiro — the largest lagoon wetland system in northern Portugal, dotted with traditional salt pans and seaweed-harvesting grounds.",
+    gettingAround:
+      "Aveiro has no scheduled commercial flights; the nearest airport is Porto (about 1 hour by car). The train to Porto takes about 45 minutes, to Lisbon about 2.5 hours. The city is walkable, and a canal boat ride is a popular experience. The climate is temperate maritime, moderated by the lagoon.",
+    culture:
+      "Portuguese is the main language, with widespread English in tourist areas. Aveiro's traditional sweet, ovos moles (egg-yolk sugar filling wrapped in a thin wafer), is a nationally known local speciality. Restaurant tipping is not required.",
+    seeAndDo:
+      "A painted-boat canal cruise; the Art Nouveau Museum and the Art Nouveau buildings along the canals; Aveiro Cathedral; the striped, brightly painted fishing village of Costa Nova (about 20 minutes away, wooden houses with bold stripes); a visit to the traditional salt pans.",
+    whenAndTips:
+      "May–September is the most comfortable. Check the canal boat schedule ahead — quieter times are more pleasant. Costa Nova's striped houses are a popular photo spot — mornings and evenings have fewer people and better light. The city is small — half a day to a day is enough.",
+  },
+
+  coimbra: {
+    identity:
+      "Coimbra is between Lisbon and Porto on the Mondego, with a metro area of about 150,000, once the capital of Portugal (12th–13th centuries); the University of Coimbra, founded in 1290, is Portugal's oldest and one of Europe's oldest universities, its university quarter inscribed as a whole as a World Heritage Site in 2013.",
+    layout:
+      "Coimbra's old town climbs the hillside on the north bank of the Mondego, with the university quarter at the top, overlooked by the landmark university bell tower (Torre da Universidade). The old town slopes down to the riverside, the commercial and everyday-life district.",
+    gettingAround:
+      "Coimbra has no scheduled commercial flights; the nearest airports are Lisbon (about 2 hours by car) or Porto (about 1 hour). Trains to both cities are convenient (about 1–2 hours). The old town is steep and mainly walked. The climate is temperate with four clear seasons.",
+    culture:
+      "Portuguese is the main language; the university-town character brings a strong student atmosphere and relatively common English. The 'Burning of the Ribbons' (Queima das Fitas) graduation festival in May is nationally known. Restaurant tipping is not required.",
+    seeAndDo:
+      "The old university campus and the Joanina Library (Baroque, with an extremely ornate collection); the site of the old Convent of Santa Clara (across the river, with a view over the old town); the old cathedral; a Mondego river cruise or riverside walk; fado music (Coimbra fado differs from the Lisbon style, traditionally sung by students).",
+    whenAndTips:
+      "May–September is the most comfortable; May's graduation season is lively but lodging is tight. Visitor numbers to the Joanina Library are limited — book online ahead. The old town is steep — wear comfortable shoes.",
+  },
+
+  evora: {
+    identity:
+      "Évora is the capital of the Alentejo region, with a metro area of about 57,000; its old town preserves layered remains from Roman, Moorish and medieval periods, inscribed as a whole as a UNESCO World Heritage Site in 1986 and often called a 'museum city'.",
+    layout:
+      "Évora's old town is ringed by medieval walls, with the ruins of a Roman temple right beside the central square; traditional white-and-yellow-trimmed Alentejo houses line the narrow lanes. The compact old core is entirely walkable for the main sights.",
+    gettingAround:
+      "Évora has no scheduled commercial flights; the nearest airport is Lisbon (about 1.5 hours by car). Coach or train to and from Lisbon takes about 1.5–2 hours. The old town is walkable; surrounding olive groves and estates need a car or a tour. The climate is Mediterranean, hot and dry in summer.",
+    culture:
+      "Portuguese is the main language, with widespread English in tourist areas. Évora is a centre of the Alentejo wine region, and local food is known for bread-thickened stews (açorda) and black-pig charcuterie. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Roman Temple ruins (the Temple of Diana, 1st century AD); Évora Cathedral; the Chapel of Bones (walls lined with thousands of human bones — a sombre subject; learn the background before visiting); the old walls and main square; nearby Alentejo estate wine tastings (mostly by appointment); south to the Alqueva Reservoir.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is hot. The Chapel of Bones is small — go early in peak season. Visiting the surrounding olive groves and estates is best with a car or a hired driver, as public transport is limited.",
+  },
+
+  faro: {
+    identity:
+      "Faro is the capital of the Algarve region, with a metro area of about 64,000, and the site of the gateway airport for tourism on Portugal's southern coast. The old town keeps its walls and Moorish-era layout intact, right beside the Ria Formosa Natural Park.",
+    layout:
+      "Faro's old town is ringed by walls, centred on the cathedral square, with cobbled lanes preserving their Moorish and medieval layout. Outside the walls is a more modern commercial district and seafront promenade; the Ria Formosa lagoon lies just south of the city, reached by boat.",
+    gettingAround:
+      "Faro Airport (FAO) is west of the city, about 6 km from the old town, with a connecting bus. The city is mainly walked; reaching Algarve coastal resort towns (Lagos, Albufeira and others) needs a car, train or coach. The climate is Mediterranean, hot and dry in summer — one of Portugal's sunniest regions.",
+    culture:
+      "Portuguese is the main language; because tourism is so developed, English (also often German and Dutch) is widespread. Faro itself is relatively quiet, with most visitors using it as a gateway to nearby beach towns. Restaurant tipping is not required.",
+    seeAndDo:
+      "Faro's old town and cathedral (climb the tower); Ria Formosa Natural Park (a boat through the sandbars and lagoons to see birdlife); an hour west to Ponta da Piedade at Lagos for the sea-carved rocks; nearby beach towns (Albufeira, Vilamoura and others); Ilha Deserta, a sandbar-beach island in the lagoon reached by boat.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is peak season, hot with crowded beaches and sights. Check tides and schedules ahead for the Ria Formosa boat trips. Renting a car from Faro is convenient for touring the Algarve coast, as public transport coverage is limited.",
+  },
+
+  funchal: {
+    identity:
+      "Funchal is the capital of the Madeira archipelago, with a metro area of about 110,000, on a natural bay on the south coast of Madeira Island, called the 'Garden of the Atlantic' for its year-round mild climate. The city climbs the hillside from the sea in layers, with a classic clifftop-style toboggan run.",
+    layout:
+      "Funchal spreads around the bay: the old town, with long-established wine lodges and markets, is to the east; the modern hotel resort area is to the west. The steep mountains behind the city rise to Monte, halfway up, the terminus of a cable car and the starting point of the traditional wicker toboggan run.",
+    gettingAround:
+      "Madeira Airport (FNC) is about 18 km east of the city, its runway built out over a cliff and notoriously challenging to approach, with a connecting bus into town. The city has buses and a cable car; reaching other parts of the island (such as Pico Ruivo, Cabo Girão) mostly needs a car or a tour. The climate is subtropical maritime, mild year-round, rarely extreme.",
+    culture:
+      "Portuguese is the main language, with widespread English in tourist areas. Madeira wine (a fortified wine) is the local signature product, and many Funchal wine lodges can be visited and tasted. The New Year's Eve fireworks display has been recognised as one of the largest firework shows in the world. Restaurant tipping is not required.",
+    seeAndDo:
+      "The old town's lanes and markets (taste Madeira wine and tropical fruit); the Monte cable car and traditional wicker toboggan run (an experiential way down the hill); the Monte Palace Tropical Garden; a hike up Pico Ruivo (the island's highest peak, needing a car to the trailhead); the suspended glass viewing platform at Cabo Girão (one of Europe's highest sea cliffs).",
+    whenAndTips:
+      "Year-round is possible; April–October is warmer and better for hiking. The toboggan ride is short but very popular — expect a queue in peak season. Mountain trails such as Pico Ruivo have changeable weather — check the forecast and bring warm layers. Book flights to and from the mainland and New Year lodging well ahead.",
+  },
+
+  "ponta-delgada": {
+    identity:
+      "Ponta Delgada is the capital of the Azores, on the south coast of São Miguel (the largest Azorean island), with a metro area of about 68,000. The city rose after a 1522 earthquake destroyed the original capital, and is now the gateway for exploring São Miguel's volcanic landscape.",
+    layout:
+      "Ponta Delgada's old town spreads along the bay, with the iconic three black-and-white arches standing at the waterfront square. The city itself is small, most sights near the harbour, while the island's volcanic lakes and geothermal areas (Sete Cidades, Furnas) lie in different directions out of town, reached by car.",
+    gettingAround:
+      "Ponta Delgada Airport (PDL) is right by the city (about 3 km), with bus and taxi connections. The city is walkable; reaching other island sights (Sete Cidades, Furnas and others) needs a car or a tour, as island public transport is limited. The climate is temperate maritime, mild and rainy year-round, with fast-changing weather.",
+    culture:
+      "Portuguese is the main language, with widespread English in tourist areas. Being far from the mainland, the Azores keep a distinct island culture and cuisine (such as Furnas's geothermally cooked stew, local cheese and tea — one of the few commercial tea-growing areas in Europe). Restaurant tipping is not required.",
+    seeAndDo:
+      "The old town's seafront arches and cathedral; Sete Cidades caldera (a two-tone crater lake, with a viewpoint over the whole basin); the Furnas geothermal area (fumaroles, hot springs, geothermally cooked stew); São Miguel's tea plantations (one of Europe's few commercial tea-growing areas); whale watching (the waters around the island are an important whale-observation site).",
+    whenAndTips:
+      "May–September has relatively stable weather and is also whale-watching season. Weather on the island is changeable and rain can come at any time — bring a waterproof jacket. It's about an hour's drive between Sete Cidades and Furnas — plan a full day for a driving loop of the island. Book flights and ferries to and from the mainland ahead; some winter flights are weather-sensitive.",
+  },
 };
