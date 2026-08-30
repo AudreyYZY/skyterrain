@@ -266,6 +266,13 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "tiber-river": "national",
   sicily: "national",
   sardinia: "national",
+  "gran-paradiso": "national",
+  "gran-sasso": "national",
+  pollino: "national",
+  gennargentu: "national",
+  "lake-garda": "national",
+  "lake-como": "national",
+  "venetian-lagoon": "national",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

@@ -5902,6 +5902,110 @@ const SARDINIA: TerrainEntry = {
   source: "撒丁岛：地中海第二大岛，是一块古老的地块——主体是海西造山的花岗岩和更老的古生代基岩，只在东部有石灰岩高地（苏普拉蒙泰）；它和科西嘉曾是同一块“撒丁-科西嘉”微陆块，在地中海张开时被转动、分开；地震和火山活动都很弱（ISPRA）",
 };
 
+const GRAN_PARADISO: TerrainEntry = {
+  id: "gran-paradiso",
+  nameZh: "大帕拉迪索山群",
+  nameEn: "Gran Paradiso",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "大帕拉迪索峰（4061m）", lon: 7.2686, lat: 45.5167, elevation: 4061, kind: "peak" },
+  bbox: [6.98, 45.33, 7.58, 45.68],
+  axis: [[7.05, 45.40], [7.50, 45.62]],
+  viewScale: 1.5,
+  label: { lon: 7.28, lat: 45.55, rotation: -20 },
+  source: "大帕拉迪索山群：意大利阿尔卑斯的一片片麻岩穹隆状高山（“内部结晶岩体”之一），最高峰4061米，是完全在意大利境内的最高峰；1922年在这里设立意大利第一个国家公园——由原王室猎场改建，目的之一是保护当时几乎被猎绝的阿尔卑斯羱羊，与法国的瓦努瓦兹国家公园接壤（Parco Nazionale Gran Paradiso / ISPRA）",
+};
+
+const GRAN_SASSO: TerrainEntry = {
+  id: "gran-sasso",
+  nameZh: "大萨索山",
+  nameEn: "Gran Sasso d'Italia",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "大角峰（Corno Grande，2912m）与坎波因佩拉托雷高原", lon: 13.564, lat: 42.469, elevation: 2912, kind: "peak" },
+  bbox: [13.28, 42.33, 13.92, 42.62],
+  axis: [[13.35, 42.40], [13.85, 42.55]],
+  viewScale: 1.6,
+  label: { lon: 13.56, lat: 42.50, rotation: -20 },
+  source: "大萨索山：亚平宁中段的一片石灰岩高山，最高峰大角峰2912米，是亚平宁的最高点；山上的卡尔代罗内冰川自1913年起是欧洲纬度最南的冰川、现已萎缩到只剩薄薄一层冰；南坡的坎波因佩拉托雷是一片被称作“小西藏”的高山草原（ISPRA / INGV）",
+};
+
+const POLLINO: TerrainEntry = {
+  id: "pollino",
+  nameZh: "波利诺山",
+  nameEn: "Pollino",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "多尔切多尔梅峰（Serra Dolcedorme，2267m）", lon: 16.200, lat: 39.900, elevation: 2267, kind: "peak" },
+  bbox: [15.88, 39.74, 16.48, 40.06],
+  axis: [[15.95, 39.80], [16.40, 40.00]],
+  viewScale: 1.7,
+  label: { lon: 16.15, lat: 39.90, rotation: -20 },
+  source: "波利诺山：亚平宁南段、巴西利卡塔与卡拉布里亚交界的一片石灰岩-白云岩高山，最高峰多尔切多尔梅2267米；波利诺国家公园约1925平方公里，是意大利面积最大的国家公园，以孑遗针叶树“波斯尼亚松”（pino loricato）为标志——园内一株经科学定年约1230岁的波斯尼亚松是欧洲已知最老的树（Parco Nazionale del Pollino）",
+};
+
+const GENNARGENTU: TerrainEntry = {
+  id: "gennargentu",
+  nameZh: "真纳尔真图山",
+  nameEn: "Gennargentu",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "拉马莫拉峰（Punta La Marmora，1834m，撒丁岛最高点）", lon: 9.312, lat: 39.992, elevation: 1834, kind: "peak" },
+  bbox: [9.10, 39.84, 9.56, 40.16],
+  axis: [[9.18, 39.90], [9.45, 40.12]],
+  viewScale: 1.5,
+  label: { lon: 9.31, lat: 39.99, rotation: -20 },
+  source: "真纳尔真图山：撒丁岛中东部的高地，撒丁岛的最高点拉马莫拉峰1834米；岩石是海西造山的古生代片岩、板岩，山形浑圆、林线以上是牧场，是撒丁岛几条主要河流的源头，也是传统牧羊文化区“巴尔巴贾”的核心（ISPRA）",
+};
+
+const LAKE_GARDA: TerrainEntry = {
+  id: "lake-garda",
+  nameZh: "加尔达湖",
+  nameEn: "Lake Garda / Lago di Garda",
+  category: "lake",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "加尔达湖（北段峡谷段 / 南段冰碛丘一带）", lon: 10.65, lat: 45.65, elevation: 65, kind: "lake" },
+  bbox: [10.48, 45.38, 10.92, 45.92],
+  axis: [[10.72, 45.42], [10.60, 45.88]],
+  viewScale: 1.5,
+  label: { lon: 10.65, lat: 45.65, rotation: -75 },
+  source: "加尔达湖：按面积是意大利最大的湖（约370平方公里）；一条阿尔卑斯的冰川沿构造谷向南流、把谷底刨深（北段最深约346m、两岸是峭壁），在谷口一带堆出一圈同心的终碛丘（南段因此宽浅、四周是低缓的葡萄园）——是典型的“冰蚀-冰碛”湖（ISPRA）",
+};
+
+const LAKE_COMO: TerrainEntry = {
+  id: "lake-como",
+  nameZh: "科莫湖",
+  nameEn: "Lake Como / Lago di Como",
+  category: "lake",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "科莫湖·三汊口（贝拉焦一带）", lon: 9.263, lat: 45.985, elevation: 199, kind: "lake" },
+  bbox: [9.04, 45.78, 9.44, 46.22],
+  axis: [[9.25, 45.82], [9.28, 46.18]],
+  viewScale: 1.5,
+  label: { lon: 9.26, lat: 45.99, rotation: -78 },
+  source: "科莫湖：阿尔卑斯脚下一个倒“Y”字形的深湖，最深约410m、湖底远低于海平面（隐洼地）；“Y”形来自末次冰期的阿达冰川——冰流被山体分成三股、各刨出一条深槽，三槽在贝拉焦一带交汇（ISPRA）",
+};
+
+const VENETIAN_LAGOON: TerrainEntry = {
+  id: "venetian-lagoon",
+  nameZh: "威尼斯潟湖",
+  nameEn: "Venetian Lagoon / Laguna di Venezia",
+  category: "coast",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "威尼斯潟湖（威尼斯本岛与利多沙洲一带）", lon: 12.35, lat: 45.42, elevation: 0, kind: "escarpment" },
+  bbox: [12.13, 45.18, 12.62, 45.62],
+  viewScale: 1.5,
+  label: { lon: 12.35, lat: 45.42, rotation: 0 },
+  source: "威尼斯潟湖：亚得里亚海北端一片约550平方公里的浅水潟湖，被一列沙坝岛（利多）和三个潮汐口与外海隔开；冰后期海面上升淹没波河平原东缘、加上布伦塔、锡莱等河带来的泥沙，共同塑造了潟湖；地面因自然沉降和20世纪抽取地下水，近百年相对海面下降约20多厘米，现有 MOSE 活动闸防潮（ISPRA）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -6028,6 +6132,7 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MONT_SAINT_MICHEL_BAY, CIRQUE_DE_GAVARNIE,
   // ===== 欧洲 / 意大利 =====
   ITALIAN_ALPS, APENNINES, DOLOMITES, PO_VALLEY, PO_RIVER, TIBER_RIVER, SICILY, SARDINIA,
+  GRAN_PARADISO, GRAN_SASSO, POLLINO, GENNARGENTU, LAKE_GARDA, LAKE_COMO, VENETIAN_LAGOON,
 ];
 
 /**
