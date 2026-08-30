@@ -1,0 +1,16 @@
+{
+  "id": "bcn-agp",
+  "name": "巴塞罗那 — 马拉加",
+  "nameEn": "Barcelona — Málaga",
+  "description": "加塔角",
+  "descriptionEn": "Cabo de Gata",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "伏林航空", "airlineEn": "Vueling", "flightNo": "VY3401", "aircraft": "Airbus A320", "depIata": "BCN", "arrIata": "AGP", "durationMin": 95 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "bcn", "name": "巴塞罗那", "nameEn": "Barcelona", "lat": 41.297, "lon": 2.078, "airport": true },
+    { "kind": "terrain", "terrainId": "cabo-de-gata" },
+    { "kind": "city", "id": "agp", "name": "马拉加", "nameEn": "Málaga", "lat": 36.675, "lon": -4.499, "airport": true }
+  ]
+}

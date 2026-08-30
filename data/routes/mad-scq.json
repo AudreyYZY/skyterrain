@@ -1,0 +1,17 @@
+{
+  "id": "mad-scq",
+  "name": "马德里 — 圣地亚哥-德孔波斯特拉",
+  "nameEn": "Madrid — Santiago de Compostela",
+  "description": "梅塞塔中央高原 · 杜罗河",
+  "descriptionEn": "Meseta Central · Duero River",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2708", "aircraft": "Airbus A320", "depIata": "MAD", "arrIata": "SCQ", "durationMin": 75 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
+    { "kind": "terrain", "terrainId": "meseta-central" },
+    { "kind": "terrain", "terrainId": "duero-river" },
+    { "kind": "city", "id": "scq", "name": "圣地亚哥-德孔波斯特拉", "nameEn": "Santiago de Compostela", "lat": 42.896, "lon": -8.415, "airport": true }
+  ]
+}

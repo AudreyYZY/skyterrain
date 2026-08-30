@@ -1,0 +1,18 @@
+{
+  "id": "mad-grx",
+  "name": "马德里 — 格拉纳达",
+  "nameEn": "Madrid — Granada",
+  "description": "拉曼恰平原 · 莫雷纳山脉 · 内华达山脉",
+  "descriptionEn": "La Mancha Plain · Sierra Morena · Sierra Nevada",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "西班牙欧罗巴航空", "airlineEn": "Air Europa", "flightNo": "UX8901", "aircraft": "ATR 72-600", "depIata": "MAD", "arrIata": "GRX", "durationMin": 70 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
+    { "kind": "terrain", "terrainId": "la-mancha-plain" },
+    { "kind": "terrain", "terrainId": "sierra-morena" },
+    { "kind": "terrain", "terrainId": "sierra-nevada-es" },
+    { "kind": "city", "id": "grx", "name": "格拉纳达", "nameEn": "Granada", "lat": 37.189, "lon": -3.777, "airport": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mad-bio",
+  "name": "马德里 — 毕尔巴鄂",
+  "nameEn": "Madrid — Bilbao",
+  "description": "梅塞塔中央高原 · 欧罗巴峰",
+  "descriptionEn": "Meseta Central · Picos de Europa",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2724", "aircraft": "Airbus A320", "depIata": "MAD", "arrIata": "BIO", "durationMin": 65 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
+    { "kind": "terrain", "terrainId": "meseta-central" },
+    { "kind": "terrain", "terrainId": "picos-de-europa" },
+    { "kind": "city", "id": "bio", "name": "毕尔巴鄂", "nameEn": "Bilbao", "lat": 43.301, "lon": -2.911, "airport": true }
+  ]
+}

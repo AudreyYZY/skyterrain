@@ -1277,6 +1277,69 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "波艾托海滩", nameEn: "Poetto Beach", lon: 9.1500, lat: 39.2100, kind: "nature" },
     { nameZh: "巴鲁米尼努拉吉遗址", nameEn: "Su Nuraxi di Barumini", lon: 8.9910, lat: 39.7050, kind: "landmark" },
   ],
+
+  // ── 西班牙 ──
+  madrid: [
+    { nameZh: "普拉多博物馆", nameEn: "Prado Museum", lon: -3.6926, lat: 40.4138, kind: "landmark" },
+    { nameZh: "王宫", nameEn: "Royal Palace", lon: -3.7141, lat: 40.4180, kind: "landmark" },
+    { nameZh: "丽池公园", nameEn: "El Retiro Park", lon: -3.6844, lat: 40.4153, kind: "nature" },
+    { nameZh: "格兰大道", nameEn: "Gran Vía", lon: -3.7038, lat: 40.4200, kind: "district" },
+    { nameZh: "托莱多", nameEn: "Toledo", lon: -4.0273, lat: 39.8628, kind: "district" },
+  ],
+  barcelona: [
+    { nameZh: "圣家堂", nameEn: "Sagrada Família", lon: 2.1744, lat: 41.4036, kind: "landmark" },
+    { nameZh: "米拉之家", nameEn: "Casa Milà", lon: 2.1619, lat: 41.3954, kind: "landmark" },
+    { nameZh: "哥特区", nameEn: "Gothic Quarter", lon: 2.1770, lat: 41.3833, kind: "district" },
+    { nameZh: "蒙锥克山", nameEn: "Montjuïc", lon: 2.1490, lat: 41.3641, kind: "nature" },
+    { nameZh: "巴塞罗内塔海滩", nameEn: "Barceloneta Beach", lon: 2.1925, lat: 41.3785, kind: "nature" },
+  ],
+  seville: [
+    { nameZh: "塞维利亚主教座堂", nameEn: "Seville Cathedral", lon: -5.9930, lat: 37.3860, kind: "landmark" },
+    { nameZh: "阿尔卡萨尔王宫", nameEn: "Real Alcázar", lon: -5.9903, lat: 37.3838, kind: "landmark" },
+    { nameZh: "西班牙广场", nameEn: "Plaza de España", lon: -5.9878, lat: 37.3772, kind: "landmark" },
+    { nameZh: "特里亚纳区", nameEn: "Triana", lon: -6.0020, lat: 37.3850, kind: "district" },
+  ],
+  valencia: [
+    { nameZh: "艺术科学城", nameEn: "City of Arts and Sciences", lon: -0.3487, lat: 39.4540, kind: "landmark" },
+    { nameZh: "中央市场", nameEn: "Central Market", lon: -0.3789, lat: 39.4746, kind: "landmark" },
+    { nameZh: "丝绸交易所", nameEn: "Silk Exchange", lon: -0.3785, lat: 39.4749, kind: "landmark" },
+    { nameZh: "阿尔布费拉湖", nameEn: "Albufera", lon: -0.3200, lat: 39.3300, kind: "nature" },
+  ],
+  granada: [
+    { nameZh: "阿尔罕布拉宫", nameEn: "Alhambra", lon: -3.5881, lat: 37.1761, kind: "landmark" },
+    { nameZh: "阿尔拜辛区", nameEn: "Albaicín", lon: -3.5942, lat: 37.1820, kind: "district" },
+    { nameZh: "格拉纳达主教座堂", nameEn: "Granada Cathedral", lon: -3.5994, lat: 37.1765, kind: "landmark" },
+  ],
+  malaga: [
+    { nameZh: "毕加索博物馆", nameEn: "Picasso Museum", lon: -4.4204, lat: 36.7215, kind: "landmark" },
+    { nameZh: "阿尔卡萨巴", nameEn: "Alcazaba", lon: -4.4160, lat: 36.7215, kind: "landmark" },
+    { nameZh: "希布拉法罗城堡", nameEn: "Gibralfaro Castle", lon: -4.4130, lat: 36.7238, kind: "landmark" },
+    { nameZh: "马拉格塔海滩", nameEn: "Malagueta Beach", lon: -4.4100, lat: 36.7200, kind: "nature" },
+  ],
+  bilbao: [
+    { nameZh: "古根海姆博物馆", nameEn: "Guggenheim Museum Bilbao", lon: -2.9340, lat: 43.2686, kind: "landmark" },
+    { nameZh: "老城七条街", nameEn: "Casco Viejo (Siete Calles)", lon: -2.9230, lat: 43.2580, kind: "district" },
+    { nameZh: "阿尔恰恩达山", nameEn: "Mount Artxanda", lon: -2.9370, lat: 43.2760, kind: "nature" },
+  ],
+  "santiago-de-compostela": [
+    { nameZh: "圣地亚哥主教座堂", nameEn: "Santiago Cathedral", lon: -8.5443, lat: 42.8805, kind: "landmark" },
+    { nameZh: "奥夫拉多依罗广场", nameEn: "Praza do Obradoiro", lon: -8.5450, lat: 42.8809, kind: "landmark" },
+  ],
+  zaragoza: [
+    { nameZh: "皮拉尔圣母大教堂", nameEn: "Basilica of Our Lady of the Pillar", lon: -0.8896, lat: 41.6561, kind: "landmark" },
+    { nameZh: "阿尔哈费里亚宫", nameEn: "Aljafería Palace", lon: -0.9080, lat: 41.6470, kind: "landmark" },
+    { nameZh: "罗马剧场遗址", nameEn: "Roman Theatre ruins", lon: -0.8790, lat: 41.6510, kind: "landmark" },
+  ],
+  palma: [
+    { nameZh: "帕尔马主教座堂", nameEn: "Palma Cathedral", lon: 2.6475, lat: 39.5674, kind: "landmark" },
+    { nameZh: "贝尔维尔城堡", nameEn: "Bellver Castle", lon: 2.6250, lat: 39.5680, kind: "landmark" },
+    { nameZh: "德拉阿洞穴", nameEn: "Caves of Drach", lon: 3.3300, lat: 39.4230, kind: "nature" },
+  ],
+  "santa-cruz-de-tenerife": [
+    { nameZh: "泰德国家公园", nameEn: "Teide National Park", lon: -16.6425, lat: 28.2717, kind: "nature" },
+    { nameZh: "特内里费音乐厅", nameEn: "Auditorio de Tenerife", lon: -16.2450, lat: 28.4600, kind: "landmark" },
+    { nameZh: "阿纳加山地", nameEn: "Anaga Mountains", lon: -16.2200, lat: 28.5500, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

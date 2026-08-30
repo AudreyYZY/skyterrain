@@ -136,6 +136,16 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "it-south": { zh: "南部", en: "Southern Italy", order: 113 },
   "it-sicily": { zh: "西西里", en: "Sicily", order: 114 },
   "it-sardinia": { zh: "撒丁岛", en: "Sardinia", order: 115 },
+  // 西班牙（中部→加泰罗尼亚→安达卢西亚→东部→北部→西北→东北→巴利阿里→加那利）
+  "es-central": { zh: "中部", en: "Central Spain", order: 120 },
+  "es-catalonia": { zh: "加泰罗尼亚", en: "Catalonia", order: 121 },
+  "es-andalusia": { zh: "安达卢西亚", en: "Andalusia", order: 122 },
+  "es-east": { zh: "东部海岸", en: "Eastern Coast", order: 123 },
+  "es-north": { zh: "北部", en: "Northern Spain", order: 124 },
+  "es-northwest": { zh: "西北部（加利西亚）", en: "Northwest (Galicia)", order: 125 },
+  "es-northeast": { zh: "东北部（阿拉贡）", en: "Northeast (Aragon)", order: 126 },
+  "es-balearic": { zh: "巴利阿里群岛", en: "Balearic Islands", order: 127 },
+  "es-canary": { zh: "加那利群岛", en: "Canary Islands", order: 128 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -163,6 +173,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "norway", nameZh: "挪威", nameEn: "Norway" },
   { country: "france", nameZh: "法国", nameEn: "France" },
   { country: "italy", nameZh: "意大利", nameEn: "Italy" },
+  { country: "spain", nameZh: "西班牙", nameEn: "Spain" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1110,6 +1121,74 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "CAG", nameZh: "卡利亚里机场", nameEn: "Cagliari Airport", lon: 9.0543, lat: 39.2515 },
     source: "卡利亚里市中心 39.2238,9.1217；CAG 机场：公开资料",
   },
+
+  // ── 西班牙 ────────────────────────────────────────────
+  {
+    id: "madrid", nameZh: "马德里", nameEn: "Madrid", country: "spain", tier: "capital", zone: "es-central",
+    lon: -3.7038, lat: 40.4168,
+    airport: { iata: "MAD", nameZh: "马德里巴拉哈斯机场", nameEn: "Madrid–Barajas", lon: -3.561, lat: 40.472 },
+    source: "马德里市中心 40.4168,-3.7038；MAD 机场：公开资料",
+  },
+  {
+    id: "barcelona", nameZh: "巴塞罗那", nameEn: "Barcelona", country: "spain", tier: "major", zone: "es-catalonia",
+    lon: 2.1686, lat: 41.3874,
+    airport: { iata: "BCN", nameZh: "巴塞罗那机场（埃尔普拉特）", nameEn: "Barcelona–El Prat", lon: 2.078, lat: 41.297 },
+    source: "巴塞罗那市中心 41.3874,2.1686；BCN 机场：公开资料",
+  },
+  {
+    id: "seville", nameZh: "塞维利亚", nameEn: "Seville", country: "spain", tier: "major", zone: "es-andalusia",
+    lon: -5.9845, lat: 37.3891,
+    airport: { iata: "SVQ", nameZh: "塞维利亚机场", nameEn: "Seville Airport", lon: -5.893, lat: 37.418 },
+    source: "塞维利亚市中心 37.3891,-5.9845；SVQ 机场：公开资料",
+  },
+  {
+    id: "valencia", nameZh: "瓦伦西亚", nameEn: "Valencia", country: "spain", tier: "major", zone: "es-east",
+    lon: -0.3763, lat: 39.4699,
+    airport: { iata: "VLC", nameZh: "瓦伦西亚机场", nameEn: "Valencia Airport", lon: -0.481, lat: 39.489 },
+    source: "瓦伦西亚市中心 39.4699,-0.3763；VLC 机场：公开资料",
+  },
+  {
+    id: "granada", nameZh: "格拉纳达", nameEn: "Granada", country: "spain", tier: "notable", zone: "es-andalusia",
+    lon: -3.5986, lat: 37.1773,
+    airport: { iata: "GRX", nameZh: "格拉纳达机场", nameEn: "Granada Airport", lon: -3.777, lat: 37.189 },
+    source: "格拉纳达市中心 37.1773,-3.5986；GRX 机场：公开资料",
+  },
+  {
+    id: "malaga", nameZh: "马拉加", nameEn: "Málaga", country: "spain", tier: "notable", zone: "es-andalusia",
+    lon: -4.4214, lat: 36.7213,
+    airport: { iata: "AGP", nameZh: "马拉加机场", nameEn: "Málaga Airport", lon: -4.499, lat: 36.675 },
+    source: "马拉加市中心 36.7213,-4.4214；AGP 机场：公开资料",
+  },
+  {
+    id: "bilbao", nameZh: "毕尔巴鄂", nameEn: "Bilbao", country: "spain", tier: "notable", zone: "es-north",
+    lon: -2.9350, lat: 43.2630,
+    airport: { iata: "BIO", nameZh: "毕尔巴鄂机场", nameEn: "Bilbao Airport", lon: -2.911, lat: 43.301 },
+    source: "毕尔巴鄂市中心 43.2630,-2.9350；BIO 机场：公开资料",
+  },
+  {
+    id: "santiago-de-compostela", nameZh: "圣地亚哥-德孔波斯特拉", nameEn: "Santiago de Compostela", country: "spain", tier: "notable", zone: "es-northwest",
+    lon: -8.5448, lat: 42.8782,
+    airport: { iata: "SCQ", nameZh: "圣地亚哥机场", nameEn: "Santiago Airport", lon: -8.415, lat: 42.896 },
+    source: "圣地亚哥-德孔波斯特拉市中心 42.8782,-8.5448；SCQ 机场：公开资料",
+  },
+  {
+    id: "zaragoza", nameZh: "萨拉戈萨", nameEn: "Zaragoza", country: "spain", tier: "notable", zone: "es-northeast",
+    lon: -0.8891, lat: 41.6488,
+    airport: { iata: "ZAZ", nameZh: "萨拉戈萨机场", nameEn: "Zaragoza Airport", lon: -1.041, lat: 41.666 },
+    source: "萨拉戈萨市中心 41.6488,-0.8891；ZAZ 机场：公开资料",
+  },
+  {
+    id: "palma", nameZh: "帕尔马", nameEn: "Palma de Mallorca", country: "spain", tier: "notable", zone: "es-balearic",
+    lon: 2.6502, lat: 39.5696,
+    airport: { iata: "PMI", nameZh: "帕尔马机场（松波恩）", nameEn: "Palma de Mallorca Airport", lon: 2.739, lat: 39.551 },
+    source: "帕尔马市中心 39.5696,2.6502；PMI 机场：公开资料",
+  },
+  {
+    id: "santa-cruz-de-tenerife", nameZh: "圣克鲁斯-德特内里费", nameEn: "Santa Cruz de Tenerife", country: "spain", tier: "notable", zone: "es-canary",
+    lon: -16.2518, lat: 28.4636,
+    airport: { iata: "TFN", nameZh: "特内里费北机场", nameEn: "Tenerife North Airport", lon: -16.341, lat: 28.483 },
+    source: "圣克鲁斯-德特内里费市中心 28.4636,-16.2518；TFN 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1128,6 +1207,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   norway: "europe",
   france: "europe",
   italy: "europe",
+  spain: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

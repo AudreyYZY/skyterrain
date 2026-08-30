@@ -1,0 +1,17 @@
+{
+  "id": "mad-bcn",
+  "name": "马德里 — 巴塞罗那",
+  "nameEn": "Madrid — Barcelona",
+  "description": "伊比利亚山系 · 埃布罗盆地",
+  "descriptionEn": "Sistema Ibérico · Ebro Basin",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2620", "aircraft": "Airbus A321neo", "depIata": "MAD", "arrIata": "BCN", "durationMin": 85 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
+    { "kind": "terrain", "terrainId": "sistema-iberico" },
+    { "kind": "terrain", "terrainId": "ebro-basin" },
+    { "kind": "city", "id": "bcn", "name": "巴塞罗那", "nameEn": "Barcelona", "lat": 41.297, "lon": 2.078, "airport": true }
+  ]
+}
