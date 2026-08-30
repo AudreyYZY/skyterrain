@@ -261,6 +261,61 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "冲绳县立博物馆·美术馆", nameEn: "Okinawa Prefectural Museum & Art Museum", lon: 127.719, lat: 26.226, kind: "landmark" },
     { nameZh: "和平祈念公园", nameEn: "Peace Memorial Park", lon: 127.727, lat: 26.096, kind: "landmark" },
   ],
+
+  tianjin: [
+    { nameZh: "意大利风情区", nameEn: "Italian-style Quarter", lon: 117.202, lat: 39.135, kind: "district" },
+    { nameZh: "五大道", nameEn: "Five Great Avenues", lon: 117.203, lat: 39.115, kind: "district" },
+    { nameZh: "古文化街 · 天后宫", nameEn: "Ancient Culture Street & Tianhou Temple", lon: 117.196, lat: 39.146, kind: "landmark" },
+    { nameZh: "天津之眼", nameEn: "Tianjin Eye", lon: 117.183, lat: 39.153, kind: "landmark" },
+    { nameZh: "西开教堂", nameEn: "Xikai Church", lon: 117.196, lat: 39.118, kind: "landmark" },
+    { nameZh: "盘山", nameEn: "Pan Shan", lon: 117.290, lat: 40.050, kind: "nature" },
+  ],
+
+  shijiazhuang: [
+    { nameZh: "正定隆兴寺", nameEn: "Longxing Temple, Zhengding", lon: 114.577, lat: 38.148, kind: "landmark" },
+    { nameZh: "正定古城", nameEn: "Zhengding Old Town", lon: 114.570, lat: 38.147, kind: "district" },
+    { nameZh: "苍岩山", nameEn: "Cangyan Shan", lon: 114.050, lat: 37.650, kind: "nature" },
+    { nameZh: "嶂石岩", nameEn: "Zhangshiyan", lon: 114.020, lat: 37.530, kind: "nature" },
+    { nameZh: "赵州桥", nameEn: "Zhaozhou Bridge", lon: 114.770, lat: 37.720, kind: "landmark" },
+    { nameZh: "西柏坡", nameEn: "Xibaipo", lon: 113.930, lat: 38.350, kind: "landmark" },
+  ],
+
+  taiyuan: [
+    { nameZh: "晋祠", nameEn: "Jinci Temple", lon: 112.470, lat: 37.710, kind: "landmark" },
+    { nameZh: "山西博物院", nameEn: "Shanxi Museum", lon: 112.530, lat: 37.860, kind: "landmark" },
+    { nameZh: "双塔寺", nameEn: "Twin Pagoda Temple", lon: 112.600, lat: 37.850, kind: "landmark" },
+    { nameZh: "天龙山石窟", nameEn: "Tianlong Shan Grottoes", lon: 112.350, lat: 37.710, kind: "landmark" },
+    { nameZh: "蒙山大佛", nameEn: "Mengshan Buddha", lon: 112.420, lat: 37.750, kind: "landmark" },
+    { nameZh: "纯阳宫", nameEn: "Chunyang Palace", lon: 112.560, lat: 37.870, kind: "landmark" },
+  ],
+
+  hohhot: [
+    { nameZh: "大召", nameEn: "Dazhao Temple", lon: 111.658, lat: 40.808, kind: "landmark" },
+    { nameZh: "席力图召", nameEn: "Xilituzhao", lon: 111.660, lat: 40.808, kind: "landmark" },
+    { nameZh: "五塔寺", nameEn: "Five-Pagoda Temple", lon: 111.669, lat: 40.806, kind: "landmark" },
+    { nameZh: "将军衙署", nameEn: "General's Government Office", lon: 111.664, lat: 40.816, kind: "landmark" },
+    { nameZh: "内蒙古博物院", nameEn: "Inner Mongolia Museum", lon: 111.700, lat: 40.827, kind: "landmark" },
+    { nameZh: "昭君墓", nameEn: "Zhaojun Tomb", lon: 111.660, lat: 40.720, kind: "landmark" },
+    { nameZh: "希拉穆仁草原", nameEn: "Xilamuren Grassland", lon: 111.200, lat: 41.300, kind: "nature" },
+  ],
+
+  shenyang: [
+    { nameZh: "沈阳故宫", nameEn: "Mukden Palace", lon: 123.454, lat: 41.799, kind: "landmark" },
+    { nameZh: "张氏帅府", nameEn: "Marshal Zhang Mansion", lon: 123.457, lat: 41.793, kind: "landmark" },
+    { nameZh: "北陵公园（昭陵）", nameEn: "Northern Tomb Park (Zhaoling)", lon: 123.418, lat: 41.833, kind: "nature" },
+    { nameZh: "东陵（福陵）", nameEn: "Eastern Tomb (Fuling)", lon: 123.581, lat: 41.828, kind: "landmark" },
+    { nameZh: "中国工业博物馆", nameEn: "China Industrial Museum", lon: 123.300, lat: 41.790, kind: "landmark" },
+    { nameZh: "棋盘山", nameEn: "Qipan Shan", lon: 123.720, lat: 41.940, kind: "nature" },
+  ],
+
+  changchun: [
+    { nameZh: "净月潭国家森林公园", nameEn: "Jingyuetan National Forest Park", lon: 125.470, lat: 43.750, kind: "nature" },
+    { nameZh: "伪满皇宫博物院", nameEn: "Museum of the Former Manchukuo Palace", lon: 125.376, lat: 43.906, kind: "landmark" },
+    { nameZh: "长影旧址博物馆", nameEn: "Former Changchun Film Studio Museum", lon: 125.300, lat: 43.870, kind: "landmark" },
+    { nameZh: "长影世纪城", nameEn: "Changying Century City", lon: 125.480, lat: 43.750, kind: "landmark" },
+    { nameZh: "南湖公园", nameEn: "Nanhu Park", lon: 125.300, lat: 43.850, kind: "nature" },
+    { nameZh: "红旗街", nameEn: "Hongqi Street", lon: 125.300, lat: 43.870, kind: "district" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
