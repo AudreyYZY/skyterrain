@@ -12,6 +12,12 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // public/cesium is a vendored copy of the CesiumJS package (populated at
+    // postinstall by scripts/copy-cesium.mjs), not our source. Without this,
+    // `eslint` (no path args) tries to lint its multi-MB minified bundles and
+    // reliably OOMs the default V8 heap — this is why `npm run lint` used to
+    // crash instead of finishing.
+    "public/cesium/**",
   ]),
 ]);
 
