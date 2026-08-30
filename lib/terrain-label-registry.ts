@@ -244,6 +244,13 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "paris-basin": "national",
   "aquitaine-basin": "national",
   corsica: "national",
+  "loire-river": "national",
+  "rhone-river": "national",
+  "seine-river": "national",
+  ecrins: "national",
+  vanoise: "national",
+  "mer-de-glace": "national",
+  camargue: "national",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

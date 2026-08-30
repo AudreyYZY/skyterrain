@@ -5455,6 +5455,110 @@ const CORSICA: TerrainEntry = {
   source: "科西嘉岛：地中海西部一座多山的岛，一条南北向的中央山脊纵贯全岛、最高点钦托山2706米；西部和主体是海西期的花岗岩，东北的科西嘉角、卡斯塔尼恰一带是阿尔卑斯造山期变质的片岩（“片岩科西嘉”）；GR20 长距离山径沿脊而行（BRGM）",
 };
 
+const LOIRE_RIVER: TerrainEntry = {
+  id: "loire-river",
+  nameZh: "卢瓦尔河",
+  nameEn: "Loire",
+  category: "river",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "卢瓦尔河中游（奥尔良 / 布卢瓦一带的辫状河段）", lon: 1.35, lat: 47.60, elevation: 90, kind: "meander" },
+  bbox: [-2.35, 44.7, 4.35, 48.0],
+  axis: [[4.20, 44.85], [-2.20, 47.30]],
+  viewScale: 2.2,
+  label: { lon: 1.0, lat: 47.4, rotation: -35 },
+  source: "卢瓦尔河：法国最长的河（约1006km），源出中央高原东缘的热尔比耶德容克山，向北再折向西，经奥尔良、图尔、南特在圣纳泽尔注入大西洋；下游河道调节程度低、沙洲密布，是法国大河里最接近自然状态的一条；中游一段（“卢瓦尔河谷”，苏利至沙隆讷）作为文化景观列入世界遗产（IGN / UNESCO）",
+};
+
+const RHONE_RIVER: TerrainEntry = {
+  id: "rhone-river",
+  nameZh: "罗讷河",
+  nameEn: "Rhône",
+  category: "river",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "罗讷河谷（里昂以南、瓦朗斯一带）", lon: 4.83, lat: 45.10, elevation: 120, kind: "meander" },
+  bbox: [4.0, 43.3, 6.2, 46.4],
+  axis: [[4.85, 46.20], [4.60, 43.40]],
+  viewScale: 2.0,
+  label: { lon: 4.7, lat: 44.7, rotation: -80 },
+  source: "罗讷河：按水量是法国最大的河；上游发源于瑞士阿尔卑斯、穿日内瓦湖，进入法国后在里昂接纳索恩河，再沿阿尔卑斯与中央高原之间一条南北向的深谷南下，在阿尔勒分叉、围出卡马尔格三角洲，注入地中海；法国段梯级水电、航运开发充分（IGN / CNR）",
+};
+
+const SEINE_RIVER: TerrainEntry = {
+  id: "seine-river",
+  nameZh: "塞纳河",
+  nameEn: "Seine",
+  category: "river",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "塞纳河·巴黎曲流段", lon: 2.32, lat: 48.85, elevation: 28, kind: "meander" },
+  bbox: [0.0, 48.25, 5.0, 49.55],
+  axis: [[4.70, 47.70], [0.10, 49.45]],
+  viewScale: 2.0,
+  label: { lon: 2.0, lat: 49.0, rotation: -40 },
+  source: "塞纳河：法国第三长的河（约775km），完全在巴黎盆地内发育，源出勃艮第高地，呈树枝状汇聚马恩河、瓦兹河等支流，穿巴黎、经鲁昂一段深切的曲流谷在勒阿弗尔注入英吉利海峡；坡降极小、水量稳定，历史上是通往巴黎的黄金水道（IGN）",
+};
+
+const ECRINS: TerrainEntry = {
+  id: "ecrins",
+  nameZh: "埃克兰山群",
+  nameEn: "Massif des Écrins",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "埃克兰峰（Barre des Écrins，4102m）", lon: 6.3647, lat: 44.9217, elevation: 4102, kind: "peak" },
+  bbox: [6.0, 44.7, 6.6, 45.1],
+  axis: [[6.1, 44.78], [6.5, 45.05]],
+  viewScale: 1.5,
+  label: { lon: 6.32, lat: 44.97, rotation: -20 },
+  source: "埃克兰山群：法国阿尔卑斯的一片结晶岩高山（花岗岩、片麻岩），最高峰埃克兰峰4102米，是勃朗峰山群之外全法国唯一的四千米峰、也是完全在法国境内的最高点；埃克兰国家公园（1973年设立，法国面积最大的国家公园之一）（IGN / 埃克兰国家公园）",
+};
+
+const VANOISE: TerrainEntry = {
+  id: "vanoise",
+  nameZh: "瓦努瓦兹山群",
+  nameEn: "Vanoise",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "大卡斯峰（Grande Casse，3855m）", lon: 6.803, lat: 45.402, elevation: 3855, kind: "peak" },
+  bbox: [6.45, 45.2, 7.1, 45.6],
+  axis: [[6.55, 45.28], [7.0, 45.52]],
+  viewScale: 1.5,
+  label: { lon: 6.78, lat: 45.45, rotation: -22 },
+  source: "瓦努瓦兹山群：法国阿尔卑斯塔朗泰斯谷和莫里耶讷谷之间的一片山地，最高点大卡斯峰3855米，有阿尔卑斯法国一侧较大的一片冰川群；瓦努瓦兹国家公园1963年设立，是法国第一个国家公园，与意大利的大帕拉迪索国家公园接壤（法国国家公园 / IGN）",
+};
+
+const MER_DE_GLACE: TerrainEntry = {
+  id: "mer-de-glace",
+  nameZh: "冰海冰川",
+  nameEn: "Mer de Glace",
+  category: "valley",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "冰海冰川（蒙唐维尔一侧）", lon: 6.940, lat: 45.905, elevation: 1900, kind: "escarpment" },
+  bbox: [6.87, 45.83, 7.02, 45.97],
+  axis: [[6.95, 45.86], [6.92, 45.95]],
+  viewScale: 1.3,
+  label: { lon: 6.94, lat: 45.90, rotation: -75 },
+  source: "冰海冰川：勃朗峰山群北坡的一条山谷冰川，主体长约7.5km、厚约200m；把上游几条支冰川合起来算，是法国最长、最大的冰川，也是阿尔卑斯山第二长（次于阿莱奇冰川）；蒙唐维尔齿轨列车通到冰川旁，20世纪以来退缩显著（IUGS / IGN）",
+};
+
+const CAMARGUE: TerrainEntry = {
+  id: "camargue",
+  nameZh: "卡马尔格",
+  nameEn: "Camargue",
+  category: "plain",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "卡马尔格（瓦卡雷斯潟湖一带，罗讷河三角洲）", lon: 4.55, lat: 43.52, elevation: 0, kind: "delta" },
+  bbox: [4.10, 43.30, 4.95, 43.78],
+  viewScale: 1.6,
+  label: { lon: 4.55, lat: 43.52, rotation: 0 },
+  source: "卡马尔格：罗讷河在阿尔勒分成大、小两支，两支之间围出的三角洲，约850平方公里的沼泽、潟湖（瓦卡雷斯）和盐田，是西欧最大的三角洲之一；水鸟众多（大红鹳在此繁殖）、产稻和海盐；1971年列入《拉姆萨尔公约》湿地、设地区自然公园（Ramsar / 卡马尔格地区自然公园）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -5575,6 +5679,7 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 欧洲 / 法国 =====
   FRENCH_ALPS, PYRENEES, MASSIF_CENTRAL, VOSGES, ARMORICAN_MASSIF,
   PARIS_BASIN, AQUITAINE_BASIN, CORSICA,
+  LOIRE_RIVER, RHONE_RIVER, SEINE_RIVER, ECRINS, VANOISE, MER_DE_GLACE, CAMARGUE,
 ];
 
 /**
