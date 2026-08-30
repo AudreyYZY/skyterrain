@@ -11,17 +11,21 @@
 
 | 模式 | 面向的问题 | 内容 |
 |---|---|---|
-| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 388 处地貌 + 6 板块权威讲解 |
+| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 478 处地貌 + 6 板块权威讲解 |
 | **旅游出行模式** | "到了这个陌生城市，衣食住行要注意什么？" | 城市概览 —— 地理格局 / 衣食住行 / 人文习俗 / 出行提示 |
 
 两套内容系统平行、互不影响。
 
-**当前范围**：
-- 学习模式 —— 亚洲（中国 84 + 日本 26）· 大洋洲（澳大利亚 22 + 新西兰 30）·
-  北美洲（美国 26 + 加拿大 25）· 欧洲（英国 33 + 冰岛 28 + 瑞士 27 + 挪威 28 + 法国 29 + 意大利 30），共 388 处，中英双语
-- 旅游模式 —— 澳大利亚（国家概览 + 7 城市）+ 中国（11 城市），中英双语
+**当前范围**（`node --experimental-strip-types scripts/check-regions.ts` /
+`check-places.ts` 每次运行都会打印准确计数，这里的数字如果对不上，以脚本输出为准）：
+- 学习模式 —— 亚洲（中国 84 + 日本 26 = 110）· 大洋洲（澳大利亚 34 + 新西兰 30 = 64）·
+  北美洲（美国 26 + 加拿大 25 = 51）· 欧洲（英国 33 + 冰岛 28 + 瑞士 27 + 挪威 28 + 法国 29 +
+  意大利 30 + 西班牙 26 + 德国 26 + 希腊 26 = 253），共 478 处，中英双语
+- 旅游模式 —— 14 个国家（澳大利亚/中国/日本/新西兰/美国/加拿大/英国/冰岛/瑞士/挪威/
+  法国/意大利/西班牙/德国/希腊），共 15 个国家概览 + 188 座城市，中英双语；
+  127 条国内商业航线（每条附机场/地形航点 + 学习/旅游两套双语解说）
 
-**规划**：中国旅游模式 → 全球主要地形（学习模式）→ 按旅游热度扩展各国旅游模式。
+**规划**：继续扩展学习模式地形覆盖（下一个国家待定）+ 按旅游热度扩展各国旅游模式覆盖城市。
 
 ---
 
@@ -29,7 +33,7 @@
 
 ### 地形集 —— 单一真实源
 
-- **388 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，15 类：
+- **478 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，15 类：
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
   `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`。
 - 每处记录**锚点**（主峰 / 主湖 / 枢纽城市 + 经纬度 + 海拔）、**边界框**、**走向轴**、
@@ -57,7 +61,7 @@
 - 朝向由地形走向 + 可选的 `viewFrom`（相机在锚点哪一侧，编辑决策）推导。
 - 俯角 / 距离由地形尺度推导；大面积高原 / 大盆地 / 大平原 / 大沙漠在注册表的 `WIDE_VIEW` 里
   给 `viewScale`，取景放宽到能看出"一整片高地 / 盆地"的地貌特征，而非锚点周边一个局部景物。
-- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（388/388）。
+- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（478/478）。
 
 ### 区域高亮 —— 克制的轮廓
 
@@ -101,8 +105,11 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 - 内容写在 [`lib/terrain-content.{zh,en}.ts`](lib/terrain-content.zh.ts)（`getTerrainContent(id, lang)`），
   依据中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
   等公认地理事实总结，非文学化旁白、非凭空生成。
-- **388 处全部有中英双语讲解**。核源标准：去比较性 / 主观评价，有争议的加限定或并列，
+- **478 处全部有中英双语讲解**。核源标准：去比较性 / 主观评价，有争议的加限定或并列，
   查不到宁可删，数字统一到权威口径；新增国家一律查该国官方地质 / 国家公园 / 地名机构口径。
+  **核实程度不均**：`source` 字段留了痕，但截至目前只有部分条目点名了可复核的具体来源
+  （维基百科词条、国测局公告等），其余写的是"概略"或笼统的机构名；个别条目明确标注
+  "概略坐标 / 待实测"。这些字段是审计线索、不是质检认证——引用具体数字前建议自行复核。
 - `settlement`（绿洲·聚落）只用「概述 / 从空中怎么看 / 历史与人文」三段。
 - [`lib/terrain-lesson.ts`](lib/terrain-lesson.ts) `resolveLesson(id, lang)` 一处决定用哪份讲解。
 
@@ -148,14 +155,18 @@ npm run dev
 ### 常用命令
 
 ```bash
-npm run dev      # 开发（webpack）
-npm run build    # 生产构建
-npm run lint     # ESLint
+npm run dev        # 开发（webpack）
+npm run build      # 生产构建
+npm run lint       # ESLint
+npm run typecheck  # tsc --noEmit
 
-node --experimental-strip-types scripts/check-terrain-camera.ts   # 相机几何自检（388/388）
-node --experimental-strip-types scripts/check-routes.ts           # 航线自检
-node --experimental-strip-types scripts/check-places.ts           # 旅游地点自检
-node scripts/extract-ne-landforms.mjs                             # 重新提取地形边界
+npm run check:regions   # 大洲/次区域/国家地形计数一致性自检
+npm run check:camera    # 相机几何自检（478/478）
+npm run check:places    # 旅游地点自检（城市坐标/IATA/来源/双语内容齐全）
+npm run check:routes    # 航线自检（waypoint 单调性、双语解说字数、机场等）
+npm run check            # 依次跑完上面全部（typecheck + lint + 4 个自检）
+
+node scripts/extract-ne-landforms.mjs   # 重新提取地形边界
 ```
 
 ---
@@ -182,13 +193,13 @@ components/
   RegionSelector.tsx       — 顶栏大洲 / 次区域两级切换
 
 lib/
-  terrain-registry.ts       — 【单一真实源】388 处地形的锚点/范围/走向/中英名/来源
+  terrain-registry.ts       — 【单一真实源】478 处地形的锚点/范围/走向/中英名/来源
   terrain-camera.ts         — computeTerrainCamera() 数据驱动相机推导
   terrain-content.{zh,en}.ts— 权威 6 板块讲解内容（中/英）
   terrain-lesson.ts         — resolveLesson(id, lang)：一处决定用哪份讲解
   terrain-label-registry.ts — 标签（由注册表生成，含 nameEn）
   lesson.ts                 — 讲解板块顺序 / 标题 / 拼接
-  routes.ts / route-narration.ts — 4 条真实航线 + 每条两套连贯解说
+  routes.ts / route-narration.ts — 真实商业航线（当前 127 条）+ 每条学习/旅游两套连贯解说
   app-mode.ts               — AppMode 类型 + localStorage 读写
   places-registry.ts        — 【旅游模式单一真实源】城市 + 国家概览
   travel-content.{zh,en}.ts — 旅游模式 6 段 TravelGuide 中英内容
@@ -206,7 +217,7 @@ features/
 
 data/
   *.json                    — 早期地形数据（坐标现由 terrain-registry 覆盖）
-  routes/                   — 4 条真实航线定义
+  routes/                   — 真实航线定义（当前 127 条）
   gis/                      — Natural Earth 原始 shp/dbf（不入库）
 
 public/data/gis/exports/    — 提取出的 42 个地形边界 geojson
