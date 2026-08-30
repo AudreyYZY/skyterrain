@@ -1,0 +1,17 @@
+{
+  "id": "yhz-yyt",
+  "name": "哈利法克斯 — 圣约翰斯",
+  "nameEn": "Halifax — St. John's",
+  "description": "爱德华王子岛 · 长岭山脉",
+  "descriptionEn": "Prince Edward Island · Long Range Mountains",
+  "depCountry": "canada",
+  "arrCountry": "canada",
+  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC1662", "aircraft": "Airbus A220-100", "depIata": "YHZ", "arrIata": "YYT", "durationMin": 95 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "yhz", "name": "哈利法克斯", "nameEn": "Halifax", "lat": 44.8808, "lon": -63.5086, "airport": true },
+    { "kind": "terrain", "terrainId": "prince-edward-island" },
+    { "kind": "terrain", "terrainId": "long-range-mountains" },
+    { "kind": "city", "id": "yyt", "name": "圣约翰斯", "nameEn": "St. John's", "lat": 47.6186, "lon": -52.7519, "airport": true }
+  ]
+}

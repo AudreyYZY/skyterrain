@@ -1,0 +1,18 @@
+{
+  "id": "yyc-ywg",
+  "name": "卡尔加里 — 温尼伯",
+  "nameEn": "Calgary — Winnipeg",
+  "description": "艾伯塔荒地 · 中部内陆平原 · 温尼伯湖",
+  "descriptionEn": "Alberta Badlands · Interior Plains · Lake Winnipeg",
+  "depCountry": "canada",
+  "arrCountry": "canada",
+  "flight": { "airline": "西捷航空", "airlineEn": "WestJet", "flightNo": "WS548", "aircraft": "Boeing 737-700", "depIata": "YYC", "arrIata": "YWG", "durationMin": 135 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "yyc", "name": "卡尔加里", "nameEn": "Calgary", "lat": 51.1315, "lon": -114.0106, "airport": true },
+    { "kind": "terrain", "terrainId": "alberta-badlands" },
+    { "kind": "terrain", "terrainId": "interior-plains-ca" },
+    { "kind": "terrain", "terrainId": "lake-winnipeg" },
+    { "kind": "city", "id": "ywg", "name": "温尼伯", "nameEn": "Winnipeg", "lat": 49.9100, "lon": -97.2399, "airport": true }
+  ]
+}

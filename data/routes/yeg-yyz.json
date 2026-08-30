@@ -1,0 +1,18 @@
+{
+  "id": "yeg-yyz",
+  "name": "埃德蒙顿 — 多伦多",
+  "nameEn": "Edmonton — Toronto",
+  "description": "中部内陆平原 · 温尼伯湖 · 加拿大地盾",
+  "descriptionEn": "Interior Plains · Lake Winnipeg · Canadian Shield",
+  "depCountry": "canada",
+  "arrCountry": "canada",
+  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC168", "aircraft": "Airbus A321", "depIata": "YEG", "arrIata": "YYZ", "durationMin": 230 },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "yeg", "name": "埃德蒙顿", "nameEn": "Edmonton", "lat": 53.3097, "lon": -113.5797, "airport": true },
+    { "kind": "terrain", "terrainId": "interior-plains-ca" },
+    { "kind": "terrain", "terrainId": "lake-winnipeg" },
+    { "kind": "terrain", "terrainId": "canadian-shield" },
+    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true }
+  ]
+}
