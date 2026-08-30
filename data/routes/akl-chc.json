@@ -11,9 +11,11 @@
   "waypoints": [
     { "kind": "city", "id": "akl", "name": "奥克兰", "nameEn": "Auckland", "lat": -37.008, "lon": 174.792, "airport": true },
     { "kind": "terrain", "terrainId": "lake-taupo" },
+    { "kind": "feature", "name": "库克海峡", "nameEn": "Cook Strait", "lon": 174.5, "lat": -40.9 },
     { "kind": "terrain", "terrainId": "marlborough-sounds" },
     { "kind": "terrain", "terrainId": "kaikoura-ranges" },
     { "kind": "terrain", "terrainId": "canterbury-plains" },
+    { "kind": "feature", "name": "班克斯半岛", "nameEn": "Banks Peninsula", "lon": 172.88, "lat": -43.75 },
     { "kind": "city", "id": "chc", "name": "基督城", "nameEn": "Christchurch", "lat": -43.489, "lon": 172.532, "airport": true }
   ]
 }

@@ -14,6 +14,7 @@
     { "kind": "terrain", "terrainId": "mackenzie-basin" },
     { "kind": "terrain", "terrainId": "aoraki-southern-alps" },
     { "kind": "terrain", "terrainId": "lake-wakatipu" },
+    { "kind": "feature", "name": "卓越山脉", "nameEn": "The Remarkables", "lon": 168.82, "lat": -45.06 },
     { "kind": "city", "id": "zqn", "name": "皇后镇", "nameEn": "Queenstown", "lat": -45.021, "lon": 168.739, "airport": true }
   ]
 }
