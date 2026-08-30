@@ -1,0 +1,18 @@
+{
+  "id": "ord-sfo",
+  "name": "芝加哥 — 旧金山",
+  "nameEn": "Chicago — San Francisco",
+  "description": "大平原 · 大盐湖 · 加州中央谷地",
+  "descriptionEn": "Great Plains · Great Salt Lake · Central Valley",
+  "depCountry": "usa",
+  "arrCountry": "usa",
+  "flight": { "airline": "联合航空", "airlineEn": "United Airlines", "flightNo": "UA349", "aircraft": "Boeing 737-900", "depIata": "ORD", "arrIata": "SFO", "durationMin": 255 },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "ord", "name": "芝加哥", "nameEn": "Chicago", "lat": 41.9742, "lon": -87.9073, "airport": true },
+    { "kind": "terrain", "terrainId": "great-plains-us" },
+    { "kind": "terrain", "terrainId": "great-salt-lake" },
+    { "kind": "terrain", "terrainId": "central-valley-ca" },
+    { "kind": "city", "id": "sfo", "name": "旧金山", "nameEn": "San Francisco", "lat": 37.6213, "lon": -122.3790, "airport": true }
+  ]
+}

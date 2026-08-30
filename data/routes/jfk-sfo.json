@@ -1,0 +1,19 @@
+{
+  "id": "jfk-sfo",
+  "name": "纽约 — 旧金山",
+  "nameEn": "New York — San Francisco",
+  "description": "五大湖 · 大平原 · 大盆地 · 加州中央谷地",
+  "descriptionEn": "Great Lakes · Great Plains · Great Basin · Central Valley",
+  "depCountry": "usa",
+  "arrCountry": "usa",
+  "flight": { "airline": "联合航空", "airlineEn": "United Airlines", "flightNo": "UA523", "aircraft": "Boeing 757-200", "depIata": "JFK", "arrIata": "SFO", "durationMin": 370 },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "jfk", "name": "纽约", "nameEn": "New York", "lat": 40.6413, "lon": -73.7781, "airport": true },
+    { "kind": "terrain", "terrainId": "great-lakes" },
+    { "kind": "terrain", "terrainId": "great-plains-us" },
+    { "kind": "terrain", "terrainId": "great-basin" },
+    { "kind": "terrain", "terrainId": "central-valley-ca" },
+    { "kind": "city", "id": "sfo", "name": "旧金山", "nameEn": "San Francisco", "lat": 37.6213, "lon": -122.3790, "airport": true }
+  ]
+}
