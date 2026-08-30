@@ -23,6 +23,6 @@
     { "kind": "terrain", "terrainId": "hexi-corridor" },
     { "kind": "terrain", "terrainId": "qilian" },
     { "kind": "terrain", "terrainId": "tianshan" },
-    { "kind": "city", "id": "urc", "name": "乌鲁木齐地窝堡", "nameEn": "Ürümqi Diwopu", "lat": 43.907, "lon": 87.474, "airport": true }
+    { "kind": "city", "id": "urc", "name": "乌鲁木齐天山", "nameEn": "Ürümqi Tianshan", "lat": 43.907, "lon": 87.474, "airport": true }
   ]
 }

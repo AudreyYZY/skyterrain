@@ -1188,6 +1188,7 @@ export default function ExplorerApp() {
             onPreview={handleIntroPreview}
             onEnter={handleIntroEnter}
             onDismiss={() => setShowIntro(false)}
+            onToggleLanguage={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
           />
         ) : (
           <IntroOverlay
@@ -1195,6 +1196,7 @@ export default function ExplorerApp() {
             regionName={activeRegionName}
             regionNameEn={activeRegionNameEn}
             onDismiss={() => setShowIntro(false)}
+            onToggleLanguage={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
           />
         ))}
 

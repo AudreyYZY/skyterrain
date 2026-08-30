@@ -8,6 +8,7 @@ interface IntroOverlayProps {
   regionName: string;
   regionNameEn: string;
   onDismiss: () => void;
+  onToggleLanguage: () => void;
 }
 
 const SEEN_KEY = "fge-intro-seen";
@@ -22,6 +23,7 @@ export default function IntroOverlay({
   regionName,
   regionNameEn,
   onDismiss,
+  onToggleLanguage,
 }: IntroOverlayProps) {
   const [leaving, setLeaving] = useState(false);
   const [mounted, setMounted] = useState(true);
@@ -65,6 +67,14 @@ export default function IntroOverlay({
     >
       {/* vignette so the title reads over any terrain */}
       <div className="absolute inset-0 bg-[#070a0f]/78 backdrop-blur-[2px]" />
+
+      <button
+        type="button"
+        onClick={onToggleLanguage}
+        className="absolute right-4 top-4 z-10 rounded-full border border-[color:var(--hairline)] px-2.5 py-1 text-[11px] font-medium text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
+      >
+        {language === "zh-CN" ? "EN" : "中"}
+      </button>
 
       <div className="relative max-w-lg text-center editorial-enter">
         <p className="editorial-kicker mb-5">{t("intro.kicker", language)}</p>

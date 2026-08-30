@@ -22,6 +22,8 @@ interface ContinentIntroProps {
   onEnter: (continentId: string) => void;
   /** 已选定后淡出 */
   onDismiss: () => void;
+  /** 首屏语言切换 */
+  onToggleLanguage: () => void;
 }
 
 /** Fisher–Yates，每次加载顺序不固定 */
@@ -46,6 +48,7 @@ export default function ContinentIntro({
   onPreview,
   onEnter,
   onDismiss,
+  onToggleLanguage,
 }: ContinentIntroProps) {
   const available = useMemo(() => continents.filter((c) => c.available), [continents]);
   // 首帧（含 SSR）用注册表顺序，避免 hydration mismatch；挂载后再 shuffle。
@@ -134,6 +137,14 @@ export default function ContinentIntro({
       ].join(" ")}
     >
       <div className="absolute inset-0 bg-[#070a0f]/78 backdrop-blur-[2px]" />
+
+      <button
+        type="button"
+        onClick={onToggleLanguage}
+        className="absolute right-4 top-4 z-10 rounded-full border border-[color:var(--hairline)] px-2.5 py-1 text-[11px] font-medium text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
+      >
+        {language === "zh-CN" ? "EN" : "中"}
+      </button>
 
       <div className="relative w-full max-w-3xl text-center editorial-enter">
         <p className="editorial-kicker mb-6">{t("intro.pick", language)}</p>
