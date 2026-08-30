@@ -611,4 +611,94 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June to September is cool and pleasant, good for escaping the heat and for Changbai Shan. Winters are severe but the snow is good; the ice-and-snow season runs December to February, so bring full cold-weather and anti-slip gear. Parts of Changbai Shan close in winter and Heaven Lake is often not visible, so check conditions before going.",
   },
+
+  nanchang: {
+    identity:
+      "Nanchang is the capital of Jiangxi, a city on the lower Gan River and the Poyang Lake plain, with an urban population of about 4 million. It is a historic city — home to the Tengwang Pavilion — and the hub for Lushan, Wuyuan, Jinggangshan and Jingdezhen.",
+    layout:
+      "Nanchang straddles the Gan River; the east bank holds the old town and commercial district (around the Tengwang Pavilion and Bayi Square) and the west bank the Honggutan new area. The land is low and flat, cut by the Gan and several city lakes. North down the Gan lie Poyang Lake and Lushan; north-east are Jingdezhen and Wuyuan; south-west is Jinggangshan.",
+    gettingAround:
+      "Changbei Airport is north-west of the city, with intercity trains and buses. Nanchang is where the Shanghai–Kunming and Beijing–Kowloon high-speed lines cross: about 40 minutes to Lushan station, 1.5 hours to Jingdezhen, 2 hours to Wuhan. The city has several metro lines plus buses; pay by QR code. The climate is subtropical monsoon: wet, grey springs; hot summers (one of the \"furnace\" cities); clear autumns; and damp cold winters.",
+    culture:
+      "The Nanchang variety of Gan Chinese is spoken, with Mandarin widely used. The food is spicy and strongly flavoured — clay-pot soup, tossed rice noodles, and cured pork with artemisia are everyday dishes. The pace is easy. No tipping.",
+    seeAndDo:
+      "The Tengwang Pavilion (climb for the Gan River view, lit at night); the August 1st Uprising Memorial Hall and Bayi Square; the Shengjin Pagoda and the Wanshou Palace heritage quarter; the Star of Nanchang ferris wheel; the fountains at Qiushui Square. From Nanchang: Lushan (Hankou, the Five Old Men Peaks, Guling town), the Hui-style villages and rape flowers of Wuyuan, the porcelain of Jingdezhen, and Jinggangshan, each a day or two.",
+    whenAndTips:
+      "March–April (rape flowers in Wuyuan) and October–November have the best weather. The plum-rain season (about June) and high summer are muggy — take heat precautions. Lushan is cool in summer as a hill retreat, with pricey rooms in high season, often foggy, so bring a light jacket. Wuyuan and Lushan are very crowded at Qingming, May Day and National Day.",
+  },
+
+  hefei: {
+    identity:
+      "Hefei is the capital of Anhui, a city between the Yangtze and Huai rivers on the northern shore of Lake Chao, with an urban population of about 5 million. Once a small town, it has grown fast in recent decades and is known for science, education and manufacturing; it is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
+    layout:
+      "Hefei sits on gently rolling ground between the Jianghuai hills and Lake Chao. The old town is ringed by the Huancheng Park (a green belt on the former moat); the government district is to the south-west and the Binhu new area is on the lake. South is Lake Chao and then Huangshan (Huangshan, Hongcun, Xidi, Tunxi old street); south-west are Lu'an and the Dabie Mountains; east is Nanjing.",
+    gettingAround:
+      "Xinqiao Airport is west of the city, with buses. Hefei is a hub on the Beijing–Fuzhou and Shanghai–Chengdu high-speed lines: about an hour to Huangshan North, an hour to Nanjing, 1.5 hours to Wuhan, 2.5 hours to Shanghai. The city has several metro lines plus buses; pay by QR code. The climate is monsoon, transitional between subtropical and warm-temperate: four clear seasons, hot muggy summers with plum rains in June–July, and damp cold winters.",
+    culture:
+      "The Hefei variety of Jianghuai Mandarin is spoken, with Mandarin widely used. Anhui cuisine (stinky mandarin fish, mao tofu, ham-stewed soft-shell turtle) and Jianghuai snacks are all available here. The pace is average. No tipping.",
+    seeAndDo:
+      "Baogong Park (the Bao River, the Bao Zheng shrine, the Qingfeng Pavilion); the former residence of Li Hongzhang and the Xiaoyaojin park; the Anhui Museum; the wetlands and Zhongmiao on Lake Chao. Hefei itself has few sights, so most people use it as a hub: Huangshan (with Hongcun, Xidi and the Tunxi old street), Jiuhuashan, and Tiantangzhai in the Dabie Mountains, each a day or two.",
+    whenAndTips:
+      "Spring and autumn (March–May, September–November) are the most comfortable and the best seasons for Huangshan. The plum rains and high summer are muggy; Huangshan is cool in summer but thundery, and seeing the sunrise is a matter of luck. Huangshan tickets and mountain-top rooms are tight in high season (summer holiday, National Day) — book ahead. Climbing Huangshan involves a lot of walking and steps.",
+  },
+
+  xiamen: {
+    identity:
+      "Xiamen is a city on the south-east coast of Fujian, made up of Xiamen Island and several mainland districts, with a resident population of about 5 million. It is known for its islands, the old villas of Gulangyu, its tidy streets and its relaxed pace, and is the gateway to travel in Fujian, near the tulou earth buildings and Wuyishan.",
+    layout:
+      "The core of Xiamen is Xiamen Island; the old town and the ferry pier (facing Gulangyu) are in the south-west, and the scenic Round-the-Island Road follows the coast. Bridges and tunnels connect to Jimei, Haicang and Tong'an on the mainland. West toward Longyan are the Hakka tulou of Yongding and Nanjing; north is Wuyishan.",
+    gettingAround:
+      "Gaoqi Airport is on the island itself, close to the centre. Xiamen has high-speed rail to Fuzhou (about 1.5 hours), Longyan (about 2 hours, for the tulou) and Wuyishan (about 3 hours). The city has a metro, BRT and buses; pay by QR code. Gulangyu is reached only by ferry (book online with ID in advance); there are no cars on the island, so it is walked. The climate is a southern subtropical maritime monsoon: warm and humid all year, muggy summers, a typhoon season July–September, and mild winters.",
+    culture:
+      "Southern Min (Hokkien) is spoken, with Mandarin widely used. Gongfu tea, seafood and snacks (satay noodles, oyster omelette, ginger duck, misua soup) are everyday food. Xiamen life is slow, with a lot of tea-drinking and conversation. No tipping.",
+    seeAndDo:
+      "Gulangyu (old villas, Sunlight Rock, the Shuzhuang Garden, the piano museum — book the ferry and an island slot in advance); cycling and sea views on the Round-the-Island Road; the Nanputuo Temple and the Xiamen University area; the everyday life of Shapowei and the Eighth Market; the Tan Kah Kee architecture of the Jimei school village. Farther out: the Hakka tulou of Yongding and Nanjing, a day or two.",
+    whenAndTips:
+      "October to April has the most comfortable weather and is high season. In the typhoon season (July–September) ferries stop and flights are delayed when storms hit, so leave slack in your plans. Gulangyu slots are tight in high season — book several days ahead. UV is strong all year, so use sun protection.",
+  },
+
+  zhengzhou: {
+    identity:
+      "Zhengzhou is the capital of Henan, a railway-hub city on the North China Plain south of the Yellow River, with an urban population of about 7 million. It grew up where the Beijing–Hankou and Longhai railways crossed and is young in itself, but the area around it is the heartland of early Chinese civilisation — Songshan and the Shaolin Temple, Kaifeng and Luoyang are all within an hour by high-speed rail.",
+    layout:
+      "Zhengzhou is built on the plain south of the Yellow River, on flat ground. The old town centres on Erqi Square and the Erqi (February 7th) Memorial Tower; the Zhengdong new area to the east has a CBD and several artificial lakes. South-west toward Dengfeng are Songshan and the Shaolin Temple; east is Kaifeng (about 30 minutes by high-speed rail); west is Luoyang. The Yellow River scenic area is north of the city.",
+    gettingAround:
+      "Xinzheng Airport is south-east of the city, linked by intercity rail. Zhengzhou is one of the \"hearts\" of the Chinese rail network: about 30 minutes to Kaifeng, 40 minutes to Luoyang, an hour to the Shaolin Temple (Dengfeng), 2 hours to Xi'an, 2.5 hours to Beijing. The city has several metro lines plus buses; pay by QR code. The climate is temperate monsoon: four clear seasons, dry dusty springs, hot summers with rain in July–August, and dry cold winters with some hazy days.",
+    culture:
+      "The Zhengzhou variety of Central Plains Mandarin is spoken, with no barrier to standard Mandarin. The food is wheat-based — huimian noodles, spicy hulatang soup and soup dumplings are typical. The pace is average. No tipping.",
+    seeAndDo:
+      "The Henan Museum (fine bronzes and ceramics, a solemn place); the Yellow River scenic area and the Yellow River Museum; the Erqi Memorial Tower; the Shang city ruins. From Zhengzhou: the Shaolin Temple and the Zhongyue Temple on Songshan (Dengfeng); Kaifeng (the Qingming Riverside Park, the Iron Pagoda, the Xiangguo Temple, the night markets); and Luoyang (the Longmen Grottoes, the White Horse Temple), each a day.",
+    whenAndTips:
+      "Spring and autumn (April–May, September–October) are the most comfortable; autumn colour on Songshan is good, and the Luoyang peony season is in April. High summer is muggy — take heat precautions; Zhengzhou saw extreme rainfall in 2021, so watch the weather in the flood season. Henan is about history and relics, so leave time for visits, and book popular museums in advance with ID.",
+  },
+
+  wuhan: {
+    identity:
+      "Wuhan is the capital of Hubei, a very large city where the Yangtze meets the Han River, with an urban population of about 9 million. It is made up of the \"three towns\" of Wuchang, Hankou and Hanyang across the water, and is the transport, industrial and educational centre of central China and the hub of the middle Yangtze.",
+    layout:
+      "The Yangtze and the Han meet here and split the city into three: Hankou (the old concession area, the riverfront, commerce), Hanyang (industry, Guishan, the ancient Guqin Terrace) and Wuchang (the Yellow Crane Tower, East Lake, many universities, the provincial government). Bridges, tunnels and ferries cross the rivers. East Lake is one of the largest urban lakes in China, with a long greenway.",
+    gettingAround:
+      "Tianhe Airport is north of the city, linked by metro line 2. Wuhan is a crossroads hub on the Beijing–Guangzhou and Shanghai–Chengdu high-speed lines: about 4–5 hours to Beijing, Guangzhou or Shanghai, 1.5 hours to Changsha, 2 hours to Yichang (the Three Gorges). The city has several metro lines plus buses and ferries (the Wuhan Guan to Zhonghua Lu ferry is a classic way to see the two rivers). The climate is subtropical monsoon: fierce summer heat (a famous \"furnace\"), with July–August the worst, damp cold winters, and short springs and autumns.",
+    culture:
+      "The Wuhan variety of Southwestern Mandarin is spoken — fast and loud — with Mandarin widely used. The \"early food\" breakfast culture is strong, with hot-dry noodles, doupi, mianwo and hutang fen the signatures. Wuhan people are direct. No tipping.",
+    seeAndDo:
+      "The Yellow Crane Tower and She Shan and the Simenkou area; the East Lake greenway (cycling, cherry blossom in March) and the Hubei Provincial Museum (the Zeng Hou Yi bells and the sword of Goujian, a solemn place); the Hankou riverfront and old concession buildings and the Jianghan Road pedestrian street; the snacks of Hubu Alley and Jiqing Street; the old streets of Tanhualin. Take the ferry to see the confluence.",
+    whenAndTips:
+      "March–April (East Lake and university-campus cherry blossom) and October–November have the best weather. High summer is fiercely hot — avoid midday outdoor activity and drink plenty of water. The plum-rain season is wet. The Provincial Museum is free but needs advance ID-based booking, and slots are tight in high season.",
+  },
+
+  guiyang: {
+    identity:
+      "Guiyang is the capital of Guizhou, a basin city ringed by mountains in the eastern part of the Yunnan–Guizhou Plateau, with an urban population of about 4 million. At about 1,100 m, it has cool summers and is nicknamed the \"summer capital\"; it is also the transfer centre for Guizhou's karst scenery (Huangguoshu, Libo, Fanjingshan) and ethnic-minority villages.",
+    layout:
+      "Guiyang is built in a pocket of flat land among several mountains, with the Nanming River through the centre; the city is hilly, with winding, bridge-heavy roads. The old town centres on the Jiaxiu Pavilion and the Dashizi area; Guanshanhu is the new district. South-west are Anshun and Huangguoshu; south are Libo and the Small Seven Arches; north-east are Kaili, the Xijiang Miao village and Fanjingshan.",
+    gettingAround:
+      "Longdongbao Airport is south-east of the city, with metro and buses. Guiyang is a hub on the Shanghai–Kunming and Guiyang–Guangzhou high-speed lines: about 30 minutes to Anshun, 40 minutes to Kaili, 1.5 hours to Libo, 2 hours to Chongqing, 4 hours to Guangzhou. The city has two metro lines plus buses (routes wind around the hills); pay by QR code. The climate is subtropical highland monsoon: cool summers (about 24°C in July), raw winters, and a lot of cloud, rain and fog year-round with little sun.",
+    culture:
+      "The Guiyang variety of Southwestern Mandarin is spoken, with Mandarin widely used. The area around is home to Miao, Buyi and Dong communities. The food is sour-and-spicy (sour-soup fish, siwawa, changwang noodles, tofu balls), with fermented chilli and houttuynia (\"fish-mint\") as local features. The pace is slow. No tipping.",
+    seeAndDo:
+      "The Jiaxiu Pavilion and the Nanming River, and the Cuiwei Garden; Qianling Shan Park (wild macaques — do not feed or provoke them); the Guizhou Provincial Museum; the Colourful Guizhou City. From Guiyang: Huangguoshu Falls and Tianxingqiao (Anshun), the clear-water gorges of the Small Seven Arches at Libo, the Xijiang Miao village (Kaili), and Fanjingshan, each a day or two.",
+    whenAndTips:
+      "June to September is cool and pleasant, the best time for escaping the heat and for the highest water at the falls — also the busiest and most expensive. Other seasons are grey and wet, so bring an umbrella. Mountain roads are winding and prone to landslides in the rainy season, so a tour or hired car is safer. The Fanjingshan cable car is capacity-limited and usually needs booking.",
+  },
 };

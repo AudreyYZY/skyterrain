@@ -316,6 +316,62 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "南湖公园", nameEn: "Nanhu Park", lon: 125.300, lat: 43.850, kind: "nature" },
     { nameZh: "红旗街", nameEn: "Hongqi Street", lon: 125.300, lat: 43.870, kind: "district" },
   ],
+
+  nanchang: [
+    { nameZh: "滕王阁", nameEn: "Tengwang Pavilion", lon: 115.874, lat: 28.681, kind: "landmark" },
+    { nameZh: "八一起义纪念馆", nameEn: "August 1st Uprising Memorial Hall", lon: 115.891, lat: 28.683, kind: "landmark" },
+    { nameZh: "八一广场", nameEn: "Bayi Square", lon: 115.895, lat: 28.674, kind: "district" },
+    { nameZh: "绳金塔", nameEn: "Shengjin Pagoda", lon: 115.876, lat: 28.667, kind: "landmark" },
+    { nameZh: "万寿宫历史文化街区", nameEn: "Wanshou Palace Heritage Quarter", lon: 115.895, lat: 28.686, kind: "district" },
+    { nameZh: "秋水广场", nameEn: "Qiushui Square", lon: 115.858, lat: 28.700, kind: "district" },
+  ],
+
+  hefei: [
+    { nameZh: "包公园", nameEn: "Baogong Park", lon: 117.293, lat: 31.855, kind: "nature" },
+    { nameZh: "李鸿章故居", nameEn: "Former Residence of Li Hongzhang", lon: 117.291, lat: 31.862, kind: "landmark" },
+    { nameZh: "逍遥津", nameEn: "Xiaoyaojin Park", lon: 117.293, lat: 31.873, kind: "nature" },
+    { nameZh: "安徽博物院", nameEn: "Anhui Museum", lon: 117.200, lat: 31.860, kind: "landmark" },
+    { nameZh: "环城公园", nameEn: "Huancheng Park", lon: 117.290, lat: 31.860, kind: "nature" },
+    { nameZh: "巢湖中庙", nameEn: "Zhongmiao, Lake Chao", lon: 117.520, lat: 31.600, kind: "landmark" },
+  ],
+
+  xiamen: [
+    { nameZh: "鼓浪屿", nameEn: "Gulangyu", lon: 118.067, lat: 24.447, kind: "district" },
+    { nameZh: "日光岩", nameEn: "Sunlight Rock", lon: 118.066, lat: 24.443, kind: "nature" },
+    { nameZh: "环岛路", nameEn: "Round-the-Island Road", lon: 118.150, lat: 24.440, kind: "nature" },
+    { nameZh: "南普陀寺", nameEn: "Nanputuo Temple", lon: 118.087, lat: 24.442, kind: "landmark" },
+    { nameZh: "厦门大学", nameEn: "Xiamen University", lon: 118.093, lat: 24.436, kind: "landmark" },
+    { nameZh: "沙坡尾", nameEn: "Shapowei", lon: 118.082, lat: 24.437, kind: "district" },
+    { nameZh: "集美学村", nameEn: "Jimei School Village", lon: 118.103, lat: 24.573, kind: "landmark" },
+  ],
+
+  zhengzhou: [
+    { nameZh: "河南博物院", nameEn: "Henan Museum", lon: 113.660, lat: 34.795, kind: "landmark" },
+    { nameZh: "黄河风景名胜区", nameEn: "Yellow River Scenic Area", lon: 113.470, lat: 34.920, kind: "nature" },
+    { nameZh: "二七纪念塔", nameEn: "Erqi Memorial Tower", lon: 113.652, lat: 34.751, kind: "landmark" },
+    { nameZh: "少林寺", nameEn: "Shaolin Temple", lon: 112.935, lat: 34.508, kind: "landmark" },
+    { nameZh: "中岳庙", nameEn: "Zhongyue Temple", lon: 113.100, lat: 34.490, kind: "landmark" },
+    { nameZh: "郑州商城遗址", nameEn: "Zhengzhou Shang City Ruins", lon: 113.680, lat: 34.750, kind: "landmark" },
+  ],
+
+  wuhan: [
+    { nameZh: "黄鹤楼", nameEn: "Yellow Crane Tower", lon: 114.303, lat: 30.545, kind: "landmark" },
+    { nameZh: "东湖绿道", nameEn: "East Lake Greenway", lon: 114.400, lat: 30.550, kind: "nature" },
+    { nameZh: "湖北省博物馆", nameEn: "Hubei Provincial Museum", lon: 114.383, lat: 30.567, kind: "landmark" },
+    { nameZh: "汉口江滩", nameEn: "Hankou Riverfront", lon: 114.295, lat: 30.585, kind: "nature" },
+    { nameZh: "江汉路步行街", nameEn: "Jianghan Road Pedestrian Street", lon: 114.288, lat: 30.583, kind: "district" },
+    { nameZh: "户部巷", nameEn: "Hubu Alley", lon: 114.310, lat: 30.548, kind: "district" },
+    { nameZh: "昙华林", nameEn: "Tanhualin", lon: 114.310, lat: 30.552, kind: "district" },
+  ],
+
+  guiyang: [
+    { nameZh: "甲秀楼", nameEn: "Jiaxiu Pavilion", lon: 106.708, lat: 26.567, kind: "landmark" },
+    { nameZh: "黔灵山公园", nameEn: "Qianling Shan Park", lon: 106.685, lat: 26.590, kind: "nature" },
+    { nameZh: "贵州省博物馆", nameEn: "Guizhou Provincial Museum", lon: 106.650, lat: 26.600, kind: "landmark" },
+    { nameZh: "多彩贵州城", nameEn: "Colourful Guizhou City", lon: 106.550, lat: 26.620, kind: "district" },
+    { nameZh: "黄果树瀑布", nameEn: "Huangguoshu Falls", lon: 105.710, lat: 25.990, kind: "nature" },
+    { nameZh: "西江千户苗寨", nameEn: "Xijiang Miao Village", lon: 108.180, lat: 26.500, kind: "district" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
