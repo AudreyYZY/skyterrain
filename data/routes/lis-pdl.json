@@ -1,0 +1,16 @@
+{
+  "id": "lis-pdl",
+  "name": "里斯本 — 蓬塔德尔加达",
+  "nameEn": "Lisbon — Ponta Delgada",
+  "description": "七城破火山口",
+  "descriptionEn": "Sete Cidades Caldera",
+  "depCountry": "portugal",
+  "arrCountry": "portugal",
+  "flight": { "airline": "亚速尔航空", "airlineEn": "SATA Azores Airlines", "flightNo": "S4104", "aircraft": "Airbus A320neo", "depIata": "LIS", "arrIata": "PDL", "durationMin": 150 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "lis", "name": "里斯本", "nameEn": "Lisbon", "lat": 38.7813, "lon": -9.1359, "airport": true },
+    { "kind": "terrain", "terrainId": "sete-cidades-caldera" },
+    { "kind": "city", "id": "pdl", "name": "蓬塔德尔加达", "nameEn": "Ponta Delgada", "lat": 37.7412, "lon": -25.6979, "airport": true }
+  ]
+}

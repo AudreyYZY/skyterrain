@@ -1,0 +1,17 @@
+{
+  "id": "opo-pdl",
+  "name": "波尔图 — 蓬塔德尔加达",
+  "nameEn": "Porto — Ponta Delgada",
+  "description": "杜罗河谷 · 七城破火山口",
+  "descriptionEn": "Douro Valley · Sete Cidades Caldera",
+  "depCountry": "portugal",
+  "arrCountry": "portugal",
+  "flight": { "airline": "亚速尔航空", "airlineEn": "SATA Azores Airlines", "flightNo": "S4204", "aircraft": "Airbus A320neo", "depIata": "OPO", "arrIata": "PDL", "durationMin": 175 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "opo", "name": "波尔图", "nameEn": "Porto", "lat": 41.2481, "lon": -8.6814, "airport": true },
+    { "kind": "terrain", "terrainId": "douro-valley" },
+    { "kind": "terrain", "terrainId": "sete-cidades-caldera" },
+    { "kind": "city", "id": "pdl", "name": "蓬塔德尔加达", "nameEn": "Ponta Delgada", "lat": 37.7412, "lon": -25.6979, "airport": true }
+  ]
+}

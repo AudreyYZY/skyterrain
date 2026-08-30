@@ -153,6 +153,13 @@ import athCfu from "./ath-cfu.json" with { type: "json" };
 import athIoa from "./ath-ioa.json" with { type: "json" };
 import athJtr from "./ath-jtr.json" with { type: "json" };
 import athKlx from "./ath-klx.json" with { type: "json" };
+// 葡萄牙
+import lisFao from "./lis-fao.json" with { type: "json" };
+import lisFnc from "./lis-fnc.json" with { type: "json" };
+import lisPdl from "./lis-pdl.json" with { type: "json" };
+import opoFnc from "./opo-fnc.json" with { type: "json" };
+import opoPdl from "./opo-pdl.json" with { type: "json" };
+import opoFao from "./opo-fao.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -282,4 +289,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   athIoa,
   athJtr,
   athKlx,
+  lisFao,
+  lisFnc,
+  lisPdl,
+  opoFnc,
+  opoPdl,
+  opoFao,
 ] as unknown as FlightRoute[];

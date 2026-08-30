@@ -1,0 +1,19 @@
+{
+  "id": "lis-fao",
+  "name": "里斯本 — 法鲁",
+  "nameEn": "Lisbon — Faro",
+  "description": "阿拉比达海岸 · 阿连特茹平原 · 阿尔克瓦水库 · 阿尔加维海岸",
+  "descriptionEn": "Arrábida Coast · Alentejo Plain · Alqueva Reservoir · Algarve Coast",
+  "depCountry": "portugal",
+  "arrCountry": "portugal",
+  "flight": { "airline": "葡萄牙航空", "airlineEn": "TAP Air Portugal", "flightNo": "TP1926", "aircraft": "Airbus A320", "depIata": "LIS", "arrIata": "FAO", "durationMin": 55 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "lis", "name": "里斯本", "nameEn": "Lisbon", "lat": 38.7813, "lon": -9.1359, "airport": true },
+    { "kind": "terrain", "terrainId": "arrabida-coast" },
+    { "kind": "terrain", "terrainId": "alentejo-plain" },
+    { "kind": "terrain", "terrainId": "alqueva-reservoir" },
+    { "kind": "terrain", "terrainId": "algarve-coast" },
+    { "kind": "city", "id": "fao", "name": "法鲁", "nameEn": "Faro", "lat": 37.0144, "lon": -7.9659, "airport": true }
+  ]
+}
