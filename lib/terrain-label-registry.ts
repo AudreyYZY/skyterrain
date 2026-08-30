@@ -281,6 +281,13 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "cinque-terre": "national",
   stromboli: "poi",
   capri: "poi",
+  "tuscan-hills": "national",
+  "carso-karst": "national",
+  "alta-murgia": "national",
+  "gargano-promontory": "national",
+  "lake-trasimeno": "national",
+  marmolada: "poi",
+  "dune-di-piscinas": "poi",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

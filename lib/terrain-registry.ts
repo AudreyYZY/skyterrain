@@ -6124,6 +6124,108 @@ const CINQUE_TERRE: TerrainEntry = {
   source: "五渔村：利古里亚东海岸一段陡峭的砂岩-片岩崖岸，五个村子挤在少有的几处溪口小平地上，村后的陡坡被几百公里长的干砌石墙修成一级级葡萄梯田；1997年作为文化景观列入世界遗产，1999年设国家公园；石墙年久失修引发的滑坡是主要威胁（ISPRA / UNESCO）",
 };
 
+const TUSCAN_HILLS: TerrainEntry = {
+  id: "tuscan-hills",
+  nameZh: "托斯卡纳丘陵",
+  nameEn: "Tuscan Hills",
+  category: "hills",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "锡耶纳黏土丘陵（Crete Senesi）与奥尔恰谷", lon: 11.55, lat: 43.20, elevation: 300, kind: "escarpment" },
+  bbox: [10.95, 42.85, 11.95, 43.55],
+  viewScale: 1.9,
+  label: { lon: 11.45, lat: 43.20, rotation: 0 },
+  source: "托斯卡纳丘陵：亚平宁西侧一片起伏和缓的丘陵，底子是上新世一片古海留下的黏土、泥灰岩，夹着盐和石膏；锡耶纳以南的“黏土丘陵”几乎无树，被流水冲成沟壑（calanchi）和白色的泥丘（biancane），像月球表面；奥尔恰谷 2004 年作为文化景观列入世界遗产（ISPRA / UNESCO）",
+};
+
+const CARSO_KARST: TerrainEntry = {
+  id: "carso-karst",
+  nameZh: "卡尔索高原",
+  nameEn: "The Carso / Karst Plateau",
+  category: "plateau",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "的里雅斯特北面的卡尔索石灰岩高原", lon: 13.85, lat: 45.70, elevation: 300, kind: "escarpment" },
+  bbox: [13.58, 45.58, 14.02, 45.86],
+  viewScale: 1.5,
+  label: { lon: 13.82, lat: 45.72, rotation: 0 },
+  source: "卡尔索高原：的里雅斯特北面一片石灰岩台地，跨意大利与斯洛文尼亚——“喀斯特”（karst）一词就来自这里的地名；地表几乎没有河流、遍布落水洞和溶蚀洼地（doline），地下发育大量洞穴和暗河，蒂马沃河在此“钻”入地下、几十公里后又在海边涌出（ISPRA）",
+};
+
+const ALTA_MURGIA: TerrainEntry = {
+  id: "alta-murgia",
+  nameZh: "上穆尔杰高原",
+  nameEn: "Alta Murgia",
+  category: "plateau",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "上穆尔杰石灰岩台地（阿尔塔穆拉 / 格拉维纳一带）", lon: 16.40, lat: 40.85, elevation: 500, kind: "escarpment" },
+  bbox: [15.95, 40.48, 16.85, 41.12],
+  viewScale: 1.9,
+  label: { lon: 16.40, lat: 40.80, rotation: 0 },
+  pois: [
+    { name: "马泰拉峡谷与“萨西”窑洞城区（Gravina di Matera）", lon: 16.612, lat: 40.665, note: "台地被切出的干峡谷，谷壁上凿出的窑洞聚落是世界遗产" },
+  ],
+  source: "上穆尔杰：普利亚中部一片海拔几百米的石灰岩喀斯特台地，地表是一片碎石、矮草的“石漠草原”，被几条只在暴雨时过水的干峡谷（gravina）切开；峡谷壁上从旧石器时代起就有人凿洞居住，马泰拉的“萨西”窑洞城区是延续到20世纪的例子（世界遗产）；上穆尔杰国家公园2004年设立（Parco Nazionale dell'Alta Murgia）",
+};
+
+const GARGANO_PROMONTORY: TerrainEntry = {
+  id: "gargano-promontory",
+  nameZh: "加尔加诺半岛",
+  nameEn: "Gargano Promontory",
+  category: "hills",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "加尔加诺半岛内陆的翁布拉森林一带", lon: 16.00, lat: 41.80, elevation: 700, kind: "escarpment" },
+  bbox: [15.58, 41.55, 16.28, 42.02],
+  viewScale: 1.6,
+  label: { lon: 16.00, lat: 41.78, rotation: 0 },
+  source: "加尔加诺半岛：意大利“靴子”的“马刺”，一块石灰岩地垒，原本是亚得里亚海里的一座岛，后来被塔沃利耶雷平原的泥沙连到大陆上；台地上是喀斯特和一片古老的山毛榉-栎树混交林（翁布拉森林，世界遗产），沿海是沙坝拦出的潟湖（莱西纳湖、瓦拉诺湖）和海蚀崖、海蚀柱；加尔加诺国家公园1991年设立（Parco Nazionale del Gargano）",
+};
+
+const MARMOLADA: TerrainEntry = {
+  id: "marmolada",
+  nameZh: "马莫拉达峰",
+  nameEn: "Marmolada",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "马莫拉达峰（Punta Penia，3343m）与马莫拉达冰川", lon: 11.851, lat: 46.434, elevation: 3343, kind: "peak" },
+  bbox: [11.77, 46.40, 11.93, 46.48],
+  viewScale: 1.3,
+  label: { lon: 11.851, lat: 46.434, rotation: 0 },
+  source: "马莫拉达峰：多洛米蒂的最高峰（顶峰佩尼亚峰3343m），也是这片山里唯一一座“像样”的山峰——它不是白云岩，而是灰色石灰岩；北坡的马莫拉达冰川是多洛米蒂唯一的冰川，面积已缩到约1.6 km²、退缩极快，可能在本世纪中叶前后消失；2022年一次冰崩造成人员伤亡（ISPRA / Dolomiti UNESCO）",
+};
+
+const LAKE_TRASIMENO: TerrainEntry = {
+  id: "lake-trasimeno",
+  nameZh: "特拉西梅诺湖",
+  nameEn: "Lake Trasimeno / Lago Trasimeno",
+  category: "lake",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "特拉西梅诺湖", lon: 12.10, lat: 43.13, elevation: 257, kind: "lake" },
+  bbox: [11.95, 43.03, 12.27, 43.24],
+  viewScale: 1.4,
+  label: { lon: 12.10, lat: 43.13, rotation: 0 },
+  source: "特拉西梅诺湖：翁布里亚一个约128平方公里的浅湖，是亚平宁半岛上最大的湖，但最深只有约6米；它坐落在一个构造洼地里、没有天然出水口（古罗马时代起就靠人工隧道排水），水位随降水大幅波动；公元前217年汉尼拔在此湖畔伏击并大败罗马军队（ISPRA）",
+};
+
+const DUNE_DI_PISCINAS: TerrainEntry = {
+  id: "dune-di-piscinas",
+  nameZh: "皮西纳斯沙丘",
+  nameEn: "Dune di Piscinas",
+  category: "coast",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "皮西纳斯海岸沙丘（撒丁岛西南“绿色海岸”）", lon: 8.440, lat: 39.550, elevation: 30, kind: "dune" },
+  bbox: [8.39, 39.49, 8.51, 39.62],
+  axis: [[8.46, 39.51], [8.42, 39.60]],
+  viewScale: 1.3,
+  label: { lon: 8.44, lat: 39.55, rotation: -70 },
+  source: "皮西纳斯沙丘：撒丁岛西南“绿色海岸”上一片欧洲少见的大型海岸沙丘，最高处近百米、向内陆延伸数公里；沙来自后方几条河（其中带着19世纪蒙泰韦基奥矿区冲下的物质），被盛行的西风堆上岸、正缓慢埋没后面的刺柏丛，被称作“撒丁岛的撒哈拉”（ISPRA）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -6253,6 +6355,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   GRAN_PARADISO, GRAN_SASSO, POLLINO, GENNARGENTU, LAKE_GARDA, LAKE_COMO, VENETIAN_LAGOON,
   MOUNT_VESUVIUS, MOUNT_ETNA, CAMPI_FLEGREI, AEOLIAN_ISLANDS, STROMBOLI,
   AMALFI_COAST, CAPRI, CINQUE_TERRE,
+  TUSCAN_HILLS, CARSO_KARST, ALTA_MURGIA, GARGANO_PROMONTORY, MARMOLADA,
+  LAKE_TRASIMENO, DUNE_DI_PISCINAS,
 ];
 
 /**
