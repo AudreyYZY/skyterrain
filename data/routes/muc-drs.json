@@ -1,0 +1,16 @@
+{
+  "id": "muc-drs",
+  "name": "慕尼黑 — 德累斯顿",
+  "nameEn": "Munich — Dresden",
+  "description": "厄尔士山脉",
+  "descriptionEn": "Erzgebirge",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH1176", "aircraft": "Embraer 190", "depIata": "MUC", "arrIata": "DRS", "durationMin": 55 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "muc", "name": "慕尼黑", "nameEn": "Munich", "lat": 48.3538, "lon": 11.7861, "airport": true },
+    { "kind": "terrain", "terrainId": "erzgebirge" },
+    { "kind": "city", "id": "drs", "name": "德累斯顿", "nameEn": "Dresden", "lat": 51.1328, "lon": 13.7672, "airport": true }
+  ]
+}

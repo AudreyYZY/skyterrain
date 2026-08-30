@@ -1,0 +1,17 @@
+{
+  "id": "fra-drs",
+  "name": "法兰克福 — 德累斯顿",
+  "nameEn": "Frankfurt — Dresden",
+  "description": "罗恩山 · 图林根森林",
+  "descriptionEn": "Rhön Mountains · Thuringian Forest",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH1148", "aircraft": "Embraer 190", "depIata": "FRA", "arrIata": "DRS", "durationMin": 65 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "fra", "name": "法兰克福", "nameEn": "Frankfurt", "lat": 50.0379, "lon": 8.5622, "airport": true },
+    { "kind": "terrain", "terrainId": "rhon-mountains" },
+    { "kind": "terrain", "terrainId": "thuringian-forest" },
+    { "kind": "city", "id": "drs", "name": "德累斯顿", "nameEn": "Dresden", "lat": 51.1328, "lon": 13.7672, "airport": true }
+  ]
+}

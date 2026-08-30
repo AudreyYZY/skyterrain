@@ -1,0 +1,16 @@
+{
+  "id": "ber-muc",
+  "name": "柏林 — 慕尼黑",
+  "nameEn": "Berlin — Munich",
+  "description": "图林根森林",
+  "descriptionEn": "Thuringian Forest",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH2018", "aircraft": "Airbus A321", "depIata": "BER", "arrIata": "MUC", "durationMin": 65 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "ber", "name": "柏林", "nameEn": "Berlin", "lat": 52.3667, "lon": 13.5033, "airport": true },
+    { "kind": "terrain", "terrainId": "thuringian-forest" },
+    { "kind": "city", "id": "muc", "name": "慕尼黑", "nameEn": "Munich", "lat": 48.3538, "lon": 11.7861, "airport": true }
+  ]
+}

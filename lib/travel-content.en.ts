@@ -2696,4 +2696,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Good year-round; winter (December–February) is peak season for sun-seeking Europeans. The Teide summit cable car is weather-dependent, so check conditions before heading up; the mountains have a large day-to-night temperature swing and strong UV, so dress warmly and use sun protection. Citizens of most countries follow Schengen-area rules for short visits.",
   },
+
+  "germany-overview": {
+    identity:
+      "Germany, in Central Europe, covers about 358,000 km² with a population of about 84 million, one of Europe's most populous countries. The terrain rises gradually from north to south — a lowland plain in the north shaped by Quaternary glaciation, a belt of old low mountains and hills in the centre, and the Bavarian Alps in the south, home to Germany's highest point, the Zugspitze (2,962 m).",
+    layout:
+      "Roughly: Berlin (the capital, on the north-eastern plain); Bavaria (Munich, Nuremberg — the Alps and traditional beer culture); the north (Hamburg — port city on the North Sea and Baltic coasts); the west (Cologne, Trier — the Rhine and Moselle valleys); the centre (Frankfurt — the financial hub); the east (Dresden — the Elbe and the sandstone landforms of Saxon Switzerland); the south-west (Freiburg, Heidelberg — the Black Forest and the Neckar valley); the north-east (Stralsund — the Baltic coast and Rügen).",
+    gettingAround:
+      "Germany's rail network is extensive; the ICE high-speed trains link major cities quickly and frequently, and rail is often more convenient than flying between many city pairs. Domestic flights are mainly for quick cross-regional connections. Public transport (metro, tram, bus) in big cities is well developed, usable with a single transport card. Driving is on the right; some motorway stretches have no speed limit. The climate transitions from temperate maritime toward continental — the north is wet and rainy, the south (especially the Bavarian Alps) has cold, snowy winters. The electrical standard is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is German, with high English proficiency in big cities and tourist areas. Germans value punctuality and order; restaurant and shop hours tend to be fixed, and many shops close on Sundays. Beer culture runs deep in daily life, with distinct traditional styles by region. Restaurant bills usually don't include a tip; rounding up or adding about 10% is customary.",
+    seeAndDo:
+      "Monuments and architecture: Berlin's Museum Island and Brandenburg Gate, Cologne Cathedral, Dresden's Baroque old town. Nature: the Zugspitze in the Bavarian Alps, the castles and vineyards of the Rhine Gorge, the spa towns of the Black Forest, the sandstone table mountains of Saxon Switzerland. Beer and food: Munich's Oktoberfest, and regionally distinct German breads and sausages.",
+    whenAndTips:
+      "May–September has the most comfortable weather, the best season for outdoor sights and city touring; December's Christmas markets are a winter highlight, cold but full of atmosphere; the Bavarian Alps ski season runs December to March. Germany is in the Schengen area; citizens of most countries can visit short-term visa-free or under Schengen rules. Most shops are closed on Sundays, so plan shopping accordingly.",
+  },
+
+  berlin: {
+    identity:
+      "Berlin, Germany's capital, has a population of about 3.7 million, the country's largest city, on the north-eastern plain. Before reunification in 1990, Berlin was divided by the Berlin Wall into east and west for nearly 30 years — that history is visible everywhere today, in the city's museums, memorials and surviving sections of the wall.",
+    layout:
+      "Museum Island (an island in the Spree holding five national museums) and the Brandenburg Gate are the central landmarks; the area around Checkpoint Charlie preserves remnants of the Cold War border crossing; the East Side Gallery is a surviving stretch of the Berlin Wall covered in murals. The city covers a large area, and its districts (such as Kreuzberg and Friedrichshain) each have a distinct character.",
+    gettingAround:
+      "The airport is about 20 km from the centre, with a rail line and metro running directly there. Berlin's public transport network (metro, tram, bus) is extensive and covers the whole city. The terrain is flat, making it good for cycling. Temperate climate: summer (June–August) is warm, winter is cold, with snow common in December.",
+    culture:
+      "Berlin is Germany's cultural and creative-industries hub, with a lively nightlife and contemporary-art scene. Berliners tend to be fairly relaxed and open to diverse cultures. Tipping is customary at around 10% or rounding up, not required.",
+    seeAndDo:
+      "Museum Island (the Pergamon Museum and others); the Brandenburg Gate and the Reichstag; the Berlin Wall Memorial and East Side Gallery; Checkpoint Charlie; a boat trip on the Spree. Day trips can reach Potsdam (Sanssouci Palace).",
+    whenAndTips:
+      "May–September has the most comfortable weather, peak season for outdoor activities and al fresco dining; December's Christmas markets are atmospheric but cold. Berlin's sights are spread out, so plan your transport route. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  munich: {
+    identity:
+      "Munich, capital of Bavaria and Germany's third-largest city, has a population of about 1.5 million, on the Isar river at the northern foot of the Bavarian Alps. It is known for its traditional beer culture, Oktoberfest, and a well-preserved Bavarian old town.",
+    layout:
+      "Marienplatz is the old town's centre, with the glockenspiel show on the New Town Hall's tower a signature scene; Nymphenburg Palace, the Bavarian royal family's summer residence, lies to the west; the English Garden is one of Europe's largest urban parks, where a branch of the Isar draws river surfers.",
+    gettingAround:
+      "The airport is about 30 km from the centre, with a rail line running directly there. The city's metro, tram and bus network is extensive, and the old town is walkable. Continental climate: warm summers, cold and snowy winters; being near the Alps, weather can change quickly, with an occasional Föhn wind bringing brief warm spells.",
+    culture:
+      "Bavarians take pride in traditional dress (lederhosen for men, dirndls for women) and local festivals, and Oktoberfest is the year's biggest event. Beer-hall culture is a key part of daily life in Munich. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "Marienplatz and the New Town Hall; Nymphenburg Palace; the English Garden; Oktoberfest (mid-September to early October); beer-hall visits (such as the Hofbräuhaus). Day trips can reach the Zugspitze or Neuschwanstein Castle.",
+    whenAndTips:
+      "Oktoberfest (mid-September to early October) is the liveliest and most crowded time of year — book accommodation months ahead; May–September is best for the outdoors and day trips; winter is good for skiing. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  hamburg: {
+    identity:
+      "Hamburg, Germany's second-largest city, has a population of about 1.9 million, on the Elbe river — Germany's largest seaport and historically a core Hanseatic League city, still carrying a strong port-trade tradition today.",
+    layout:
+      "The port district's Speicherstadt (a World Heritage Site) is known for its red-brick warehouse complex and criss-crossing canals; the Elbphilharmonie concert hall is the port district's new landmark; the Inner and Outer Alster lakes are two open stretches of water in the city centre, with the main commercial district around their shores.",
+    gettingAround:
+      "The airport is about 10 km from the centre, with a metro line running directly there. The city's metro, S-Bahn and bus network is extensive, and the port district can be toured by boat. Temperate maritime climate, mild and rainy year-round — summers are not especially hot, winters not especially cold; carry rain gear.",
+    culture:
+      "Hamburgers are known for being practical and understated, with commerce and port culture running through the city's character. St. Pauli is a well-known nightlife district. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "The Speicherstadt and Elbphilharmonie; a harbour boat tour; the St. Pauli Fish Market (Sunday mornings); a walk along the Alster lakes; the Rathaus (city hall) square.",
+    whenAndTips:
+      "May–September is relatively dry and mild, the best travel season; it rains year-round, so carry rain gear. Book ahead for popular slots at the port district and Elbphilharmonie. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  cologne: {
+    identity:
+      "Cologne, a large city on the Rhine in western Germany, has a population of about 1.1 million, known for Cologne Cathedral (one of Europe's tallest Gothic cathedrals, a World Heritage Site) and one of Germany's oldest cities, dating back to Roman times.",
+    layout:
+      "Cologne Cathedral sits right next to the main train station, the city's most striking landmark; the old town runs along the Rhine, and the Hohenzollern Bridge is covered in \"love locks\"; the museum district clusters around the cathedral, with the Museum Ludwig known for its modern-art collection.",
+    gettingAround:
+      "The airport is about 15 km from the centre, with a rail line and S-Bahn running directly there. The old town is walkable, and the city has a metro and tram network. Temperate maritime climate, mild year-round — summers not especially hot, winters not especially cold.",
+    culture:
+      "Cologne is known for its easy-going humour and Karneval culture — the Cologne Carnival each February–March is one of Germany's largest carnival celebrations. The local Kölsch beer, served in small glasses, is a local tradition. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "Cologne Cathedral (climb the tower for a city view); a walk or boat trip along the Rhine; the old town and the Hohenzollern Bridge; the Museum Ludwig. A day trip along the Rhine can reach Bonn or the Rhine Gorge stretch.",
+    whenAndTips:
+      "Carnival (February–March) is lively but accommodation is tight; May–September has the most comfortable weather. Cologne Cathedral is open year-round; mornings are quieter and better for visiting. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  frankfurt: {
+    identity:
+      "Frankfurt, Germany's financial hub and home to the European Central Bank, has a population of about 770,000, known for a high-rise skyline unusual in Germany, jokingly nicknamed \"Mainhattan\" (a play on the river Main and Manhattan).",
+    layout:
+      "The financial district's towers cluster on the north bank of the Main; the Sachsenhausen district on the south bank keeps traditional apple-wine taverns and old-town character; Goethe's birthplace house and the Römerberg (the rebuilt historic square) are the historic and cultural landmarks.",
+    gettingAround:
+      "Frankfurt Airport is Germany's largest international airport, about 12 km from the centre, with an S-Bahn line running directly there, and it's also a major hub of the German rail network. The city's metro and tram network is extensive. Temperate climate with four distinct seasons — warm summers, cold winters.",
+    culture:
+      "Frankfurt is one of Germany's most international cities, with heavy business traffic. Local apple wine (Apfelwein) is most popular in the traditional taverns of Sachsenhausen. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "The Römerberg old town square; the museums along the Main (the Städel Museum and others); Frankfurt Cathedral; apple wine in Sachsenhausen. Day trips can reach Heidelberg or the Rhine valley.",
+    whenAndTips:
+      "As a transport hub, Frankfurt is often the first stop or a connecting point on a German itinerary; May–September has the most comfortable weather; hotels are tight during the Frankfurt Book Fair (October). Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  dresden: {
+    identity:
+      "Dresden, capital of Saxony, sits on the Elbe, known for its well-preserved Baroque old town and rich art collections, historically nicknamed \"Florence on the Elbe.\" It is the gateway to the sandstone landforms of Saxon Switzerland.",
+    layout:
+      "The Zwinger Palace, the Frauenkirche and Dresden Castle cluster in the old-town core along the Elbe, one of Germany's most complete surviving Baroque cityscapes; the Neustadt across the river is a younger, livelier district.",
+    gettingAround:
+      "The airport is about 9 km from the centre, with an S-Bahn line running directly there. The old town is walkable, and the city has a tram network. Temperate continental climate, warm summers and cold winters, with a fairly large day-to-night temperature swing along the Elbe valley.",
+    culture:
+      "Dresden values its art and music traditions, and the Semperoper is one of Germany's major opera houses. The traditional Christmas cake Stollen originated here, and its Christmas market has a long history. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "The Zwinger Palace and the Old Masters Gallery; the Frauenkirche; the Green Vault treasury in Dresden Castle; a walk along the Elbe. A day trip can reach Saxon Switzerland National Park (the Bastei).",
+    whenAndTips:
+      "May–September has the most comfortable weather; December's Christmas market (one of Germany's oldest) is full of atmosphere. Start early for a Saxon Switzerland day trip. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  nuremberg: {
+    identity:
+      "Nuremberg, Bavaria's second-largest city, preserves one of Germany's most typical medieval old towns, the gateway to the Franconian Jura and the Franconian wine region, and one of the cities most associated with Germany's traditional Christmas-market culture.",
+    layout:
+      "The old town is ringed by medieval walls, with the Pegnitz river running through it; Nuremberg Castle overlooks the whole old town; St. Lorenz and St. Sebaldus churches are the old town's two great Gothic landmarks; the central market square hosts one of Germany's most famous Christmas markets each November–December.",
+    gettingAround:
+      "The airport is about 6 km from the centre, with a metro line running directly there. The old town is walkable, and the city has a metro and tram. Continental climate — warm summers, cold winters.",
+    culture:
+      "Nuremberg is known for traditional gingerbread (Lebkuchen) and its small grilled sausages (Nürnberger Rostbratwürste); its Christmas-market tradition goes back centuries. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "Nuremberg Castle overlooking the old town; St. Lorenz Church; the central-square Christmas market (November–December); the Germanic National Museum. Day trips can reach the Franconian Jura (the Solnhofen fossil site).",
+    whenAndTips:
+      "Late November to December, during the Christmas market, is the busiest time of year, so book accommodation ahead; May–September is best for touring the old town and nearby nature. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  freiburg: {
+    identity:
+      "Freiburg, at the foot of the Black Forest in Germany's south-west corner, is one of Baden-Württemberg's mildest, sunniest cities, known as Germany's \"eco-capital\" and the main gateway to the Black Forest.",
+    layout:
+      "The old-town centre preserves the medieval \"Bächle\" — shallow open water channels running along the streets, said to bring good luck in marriage if you step in one; Freiburg Minster's spire is the old town's high point; the old town is ringed by vineyards and the hills of the Black Forest.",
+    gettingAround:
+      "Freiburg has no large commercial airport of its own; most visitors connect via EuroAirport Basel-Mulhouse-Freiburg (about 70 km) or Frankfurt Airport and continue by train. The city has a main rail station, the old town is walkable, and there's an extensive tram network. One of Germany's mildest climates — warm summers, comparatively less cold winters.",
+    culture:
+      "Freiburg is an important German university town and a pioneer of environmental design (solar architecture, bike-friendly planning). Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "Strolling past the old town's Bächle; Freiburg Minster; the Schlossberg funicular for a city view; a Black Forest day trip (hiking the Feldberg, Lake Titisee); nearby wine-region tastings.",
+    whenAndTips:
+      "May–September has the most comfortable weather and is also the peak season for hiking in the Black Forest; winter is good for skiing in the Black Forest mountains. Freiburg has no direct flights, so build in connection time when planning. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  heidelberg: {
+    identity:
+      "Heidelberg, on the Neckar river, is known for the ruins of Heidelberg Castle and Germany's oldest university (Heidelberg University, founded 1386); a favourite subject for poets and artists of the Romantic era, it still keeps a well-preserved old town.",
+    layout:
+      "The ruins of Heidelberg Castle overlook the whole old town and the Neckar valley; the Old Bridge connects both banks of the Neckar, offering a classic view back toward the castle and old town; the old town's main street is one of the longest pedestrian streets in Europe, lined with Baroque buildings.",
+    gettingAround:
+      "Heidelberg has no commercial airport of its own; most visitors connect via Frankfurt Airport (about 85 km) by train or coach, about an hour's journey. The old town is walkable, and the city has a tram network. Temperate climate; the Neckar valley, sheltered by hills on both sides, is comparatively warm in summer.",
+    culture:
+      "Heidelberg is a classic German university town with a lively student culture, and many old-town taverns have histories going back centuries. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "Heidelberg Castle and its gardens; the Old Bridge and the Philosophers' Walk (the classic path across the Neckar with the best view of the castle); a stroll down the old-town main street; the old campus of Heidelberg University.",
+    whenAndTips:
+      "May–September has the most comfortable weather, the best season for the castle and the Philosophers' Walk; Heidelberg is a popular day-trip destination, with more visitors during the day in peak season, so start early. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  trier: {
+    identity:
+      "Trier, on the Moselle, is Germany's oldest city, founded by the Romans in 16 BC, preserving the richest group of Roman remains north of the Alps, and the gateway to the Moselle wine valley.",
+    layout:
+      "The Porta Nigra (a Roman city gate, a World Heritage Site) is the old town's most striking landmark; the old-town centre also preserves Roman imperial baths and an amphitheatre; the banks of the Moselle are lined with terraced vineyards.",
+    gettingAround:
+      "The nearest commercial airport is Frankfurt-Hahn (about 50 km), with a connecting coach; the city has a train station, the old town is walkable, and there's a bus network. Temperate climate; the Moselle valley, sheltered by terrain, has a comparatively mild climate well suited to viticulture.",
+    culture:
+      "Trier is the birthplace of philosopher Karl Marx, and his birthplace house is now a museum. Riesling wine culture runs deep locally, with many traditional wineries along the valley. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "The Porta Nigra; the Roman imperial baths; the amphitheatre; the Karl Marx House museum; a Moselle valley day trip (wine tasting, hiking the steep vineyards).",
+    whenAndTips:
+      "May–September has the most comfortable weather and is also peak season for hiking and tasting in the Moselle valley; autumn (September–October) is harvest season, when the valley is especially scenic. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
+
+  stralsund: {
+    identity:
+      "Stralsund, on Germany's north-eastern Baltic coast, is a well-preserved historic Hanseatic town, its old town World Heritage-listed as a whole in the 1990s, and the main gateway to Rügen's chalk cliffs.",
+    layout:
+      "The old town sits on a peninsula surrounded by water on three sides, with brick Gothic churches such as St. Nicholas's defining the skyline; the Ozeaneum, in the port district, is a well-known German marine-life museum; across the Strelasund strait lies the island of Rügen.",
+    gettingAround:
+      "The nearest commercial airport is Rostock-Laage (about 70 km); the city has a train station, and the old town is walkable. Temperate maritime climate — cool, pleasant summers and windy winters, changeable year-round, so carry a jacket.",
+    culture:
+      "Stralsund is a classic northern German Hanseatic town, and brick Gothic architecture is the local hallmark style. Local fishing and Baltic seafood are culinary specialties. Tipping is customary — round up or give 5–10%.",
+    seeAndDo:
+      "The old town's brick Gothic churches; the Ozeaneum; a walk through the port district. A day trip can reach Rügen (the Königsstuhl chalk cliffs, Jasmund National Park).",
+    whenAndTips:
+      "May–September has the most comfortable weather, the best season for touring Rügen and the coast; winters are windy with changeable weather. Citizens of most countries follow Schengen-area rules for short visits.",
+  },
 };
