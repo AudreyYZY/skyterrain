@@ -2963,6 +2963,57 @@ export const ROUTE_NARRATION: Record<
       "Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
+
+  "vie-inn": {
+    study: {
+    "zh-CN":
+      "维也纳飞因斯布鲁克，是一趟自东向西横贯奥地利全境的航线，从维也纳盆地一路飞越阿尔卑斯山脉，抵达蒂罗尔州的山间城市因斯布鲁克。起飞后不久，脚下展开维也纳盆地开阔平坦的地势——这是阿尔卑斯山与喀尔巴阡山之间一处年轻的构造沉降盆地。" +
+      "飞机继续向西，进入维也纳森林——阿尔卑斯山脉向东延伸的最后一段石灰岩丘陵，森林覆盖率极高。越过维也纳森林后，飞机跨越奥地利中部大片山地，抵达达赫斯坦山上空——山顶终年积雪的哈尔施塔特冰川清晰可见，喀斯特地貌发育的灰白色山体格外醒目。飞机继续向西，最后掠过卡尔文德尔山陡峭的石灰岩崖壁，沿因河谷下降，降落在四周被阿尔卑斯山环绕的因斯布鲁克。",
+    "en-US":
+      "Flying from Vienna to Innsbruck crosses the whole of Austria from east to west, from the Vienna Basin over the Alps to the mountain city of Innsbruck in Tyrol. Soon after take-off, the broad, flat expanse of the Vienna Basin unfolds below — a young tectonic subsidence basin between the Alps and the Carpathians." +
+      " The flight continues west into the Wienerwald, the easternmost limestone hill range where the Alps taper off, densely forested throughout. Beyond the Wienerwald the plane crosses a wide swath of central Austrian mountains and passes over the Dachstein, where the year-round snow of the Hallstatt Glacier is clearly visible against the pale grey karst massif below. Continuing west, the flight skirts the steep limestone cliffs of the Karwendel before descending along the Inn Valley into Innsbruck, ringed on all sides by the Alps.",
+    },
+    travel: {
+    "zh-CN":
+      "维也纳到因斯布鲁克飞约55分钟，两地同一时区，也可选择约4-5小时的城际列车（奥地利铁路 ÖBB 网络便捷，很多本地人更倾向于坐火车）。因斯布鲁克机场离市区约4公里。因斯布鲁克是蒂罗尔州首府，也是探索厄茨塔尔阿尔卑斯山、齐勒河谷滑雪区的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Vienna to Innsbruck is about 55 minutes, same time zone; an intercity train (about 4-5 hours on the ÖBB rail network) is another option many locals prefer. Innsbruck Airport is about 4 km from the centre. Innsbruck is the capital of Tyrol and an ideal base for exploring the Ötztal Alps and the Zillertal ski areas. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "vie-grz": {
+    study: {
+    "zh-CN":
+      "维也纳飞格拉茨，是一趟深入奥地利东南部施泰尔马克州的短途航线。起飞后不久，脚下出现维也纳盆地开阔平坦的地势，随后飞机进入维也纳森林——阿尔卑斯山脉向东延伸的最后一段石灰岩丘陵地带，森林覆盖率极高。" +
+      "飞机继续向西南，一片相对平缓的喀斯特高原出现在下方——拉克斯—施内山，海拔2076米的施内山是阿尔卑斯山脉向东延伸中最后一座超过2000米的山峰，也是维也纳市民熟悉的“后山”。越过这片山地后，飞机降落在穆尔河畔的格拉茨——奥地利第二大城市。",
+    "en-US":
+      "Flying from Vienna to Graz is a short hop deep into Styria in south-eastern Austria. Soon after take-off, the broad, flat Vienna Basin appears below, and the flight then enters the Wienerwald, the easternmost, densely forested stretch of limestone hills where the Alps taper off." +
+      " Continuing south-west, a comparatively gentle karst highland comes into view — the Rax-Schneeberg Group, whose Schneeberg, at 2,076 m, is the easternmost peak in the Alps to exceed 2,000 m and a familiar \"local mountain\" for Vienna's residents. Past this highland, the flight descends into Graz on the Mur River, Austria's second-largest city.",
+    },
+    travel: {
+    "zh-CN":
+      "维也纳到格拉茨飞约40分钟，两地同一时区，也可选择约2.5小时的城际列车。格拉茨机场离市区约10公里。格拉茨是施泰尔马克州首府，老城2000年列入联合国教科文组织世界遗产名录，也是探索穆尔河上游河漫滩森林的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Vienna to Graz is about 40 minutes, same time zone; an intercity train (about 2.5 hours) is another option. Graz Airport is about 10 km from the centre. Graz is the capital of Styria, its old town a UNESCO World Heritage site since 2000, and an ideal base for exploring the floodplain forests of the upper Mur. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "vie-klu": {
+    study: {
+    "zh-CN":
+      "维也纳飞克拉根福，是一趟从维也纳盆地飞向奥地利南部克恩顿州湖区的航线。起飞后不久，脚下展开维也纳盆地开阔平坦的地势，随后飞机跨越拉克斯—施内山——阿尔卑斯山脉最东端的喀斯特高原，海拔2076米的施内山是这一带的最高点。" +
+      "飞机继续向西南，一片面积广阔的喀斯特高原出现在下方——陶滕山，中欧面积最大的喀斯特高原，山体崖壁陡峭、顶部相对平坦，散布着大量圆形溶蚀洼地。越过陶滕山后，飞机降落在沃尔特湖东端的克拉根福——奥地利南部重要的湖区旅游城市。",
+    "en-US":
+      "Flying from Vienna to Klagenfurt heads from the Vienna Basin toward the lake district of Carinthia in southern Austria. Soon after take-off, the broad, flat Vienna Basin unfolds below, and the flight then crosses the Rax-Schneeberg Group, the karst highland at the easternmost tip of the Alps, whose Schneeberg (2,076 m) is the area's highest point." +
+      " Continuing south-west, an extensive karst plateau comes into view — the Totes Gebirge, Central Europe's largest karst plateau, its cliffs steep and its summit comparatively flat, scattered with numerous circular dissolution hollows. Past the Totes Gebirge, the flight descends into Klagenfurt at the eastern end of Wörthersee, an important lake-resort city in southern Austria.",
+    },
+    travel: {
+    "zh-CN":
+      "维也纳到克拉根福飞约50分钟，两地同一时区，也可选择约4小时的城际列车。克拉根福机场离市区约3公里。克拉根福是克恩顿州首府，坐落在沃尔特湖东端，是探索克恩顿州湖区（沃尔特湖、米尔施塔特湖）的理想基地。奥地利属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Vienna to Klagenfurt is about 50 minutes, same time zone; an intercity train (about 4 hours) is another option. Klagenfurt Airport is about 3 km from the centre. Klagenfurt, the capital of Carinthia, sits at the eastern end of Wörthersee and is an ideal base for exploring Carinthia's lake district (Wörthersee, Millstätter See). Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */
