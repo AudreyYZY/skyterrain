@@ -55,6 +55,8 @@ export default function ContinentIntro({
   const dragX = useRef(0);
   const dragStart = useRef<number | null>(null);
   const [drag, setDrag] = useState(0);
+  // 用户是否真的翻过卡片 —— 在此之前不动地球（加载时不自动跳大洲）
+  const [navigated, setNavigated] = useState(false);
 
   // 已看过则直接跳过；否则挂载后打乱顺序
   useEffect(() => {
@@ -72,16 +74,17 @@ export default function ContinentIntro({
 
   const current = cards[idx];
 
-  // 落到某张卡 → 地球飞过去
+  // 用户翻卡后：落到某张卡 → 地球飞过去。加载时（navigated=false）不动。
   useEffect(() => {
-    if (mounted && !leaving && current) onPreview(current.id);
-  }, [idx, mounted, leaving, current, onPreview]);
+    if (navigated && mounted && !leaving && current) onPreview(current.id);
+  }, [idx, navigated, mounted, leaving, current, onPreview]);
 
   const go = useCallback(
     (dir: number) => {
       setIdx((i) => {
         const n = i + dir;
         if (n < 0 || n >= cards.length) return i;
+        setNavigated(true);
         return n;
       });
     },
@@ -175,7 +178,7 @@ export default function ContinentIntro({
                 <div key={c.id} className="flex h-full w-full shrink-0 flex-col items-center justify-center">
                   <button
                     type="button"
-                    onClick={() => (i === idx ? enter() : setIdx(i))}
+                    onClick={() => (i === idx ? enter() : (setNavigated(true), setIdx(i)))}
                     className={[
                       "flex flex-col items-center gap-2 rounded-2xl px-10 py-6 transition-all",
                       i === idx ? "scale-100 opacity-100" : "scale-90 opacity-40",
@@ -210,7 +213,10 @@ export default function ContinentIntro({
               key={c.id}
               type="button"
               aria-label={c.nameEn}
-              onClick={() => setIdx(i)}
+              onClick={() => {
+                setNavigated(true);
+                setIdx(i);
+              }}
               className={[
                 "h-1.5 rounded-full transition-all",
                 i === idx ? "w-5 bg-[color:var(--accent)]" : "w-1.5 bg-white/20 hover:bg-white/40",

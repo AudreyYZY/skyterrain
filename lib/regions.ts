@@ -161,6 +161,8 @@ export interface CountryMeta {
   slug: string;
   name: string;
   nameEn: string;
+  /** 左侧窄 rail 上的两字母字形。取常用国家代码（ISO 3166-1 alpha-2，英国用惯称 UK）。 */
+  code: string;
 }
 
 /**
@@ -169,23 +171,23 @@ export interface CountryMeta {
  */
 export const COUNTRIES: CountryMeta[] = [
   // 东亚
-  { slug: "china", name: "中国", nameEn: "China" },
-  { slug: "japan", name: "日本", nameEn: "Japan" },
+  { slug: "china", name: "中国", nameEn: "China", code: "CN" },
+  { slug: "japan", name: "日本", nameEn: "Japan", code: "JP" },
   // 北美
-  { slug: "canada", name: "加拿大", nameEn: "Canada" },
-  { slug: "usa", name: "美国", nameEn: "United States" },
+  { slug: "canada", name: "加拿大", nameEn: "Canada", code: "CA" },
+  { slug: "usa", name: "美国", nameEn: "United States", code: "US" },
   // 北欧
-  { slug: "iceland", name: "冰岛", nameEn: "Iceland" },
-  { slug: "norway", name: "挪威", nameEn: "Norway" },
-  { slug: "uk", name: "英国", nameEn: "United Kingdom" },
+  { slug: "iceland", name: "冰岛", nameEn: "Iceland", code: "IS" },
+  { slug: "norway", name: "挪威", nameEn: "Norway", code: "NO" },
+  { slug: "uk", name: "英国", nameEn: "United Kingdom", code: "UK" },
   // 西欧
-  { slug: "france", name: "法国", nameEn: "France" },
-  { slug: "switzerland", name: "瑞士", nameEn: "Switzerland" },
+  { slug: "france", name: "法国", nameEn: "France", code: "FR" },
+  { slug: "switzerland", name: "瑞士", nameEn: "Switzerland", code: "CH" },
   // 南欧
-  { slug: "italy", name: "意大利", nameEn: "Italy" },
+  { slug: "italy", name: "意大利", nameEn: "Italy", code: "IT" },
   // 澳大利亚和新西兰
-  { slug: "australia", name: "澳大利亚", nameEn: "Australia" },
-  { slug: "new-zealand", name: "新西兰", nameEn: "New Zealand" },
+  { slug: "australia", name: "澳大利亚", nameEn: "Australia", code: "AU" },
+  { slug: "new-zealand", name: "新西兰", nameEn: "New Zealand", code: "NZ" },
 ];
 
 const COUNTRY_BY_SLUG = new Map(COUNTRIES.map((c) => [c.slug, c]));
