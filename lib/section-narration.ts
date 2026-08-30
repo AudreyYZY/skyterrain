@@ -7,6 +7,7 @@
  */
 
 import type { Language } from "@/lib/i18n";
+import { splitSentences } from "@/lib/sentences";
 import {
   synthesizeSpeech,
   playSynthesized,
@@ -19,14 +20,6 @@ import {
 export interface SpeakSection {
   key: string;
   text: string;
-}
-
-function splitSentences(text: string): string[] {
-  if (!text.trim()) return [];
-  return text
-    .split(/(?<=[。！？.!?])/g)
-    .map((s) => s.trim())
-    .filter(Boolean);
 }
 
 export interface SectionSpeakHooks {

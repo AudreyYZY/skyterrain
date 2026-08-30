@@ -21,8 +21,16 @@ import { getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
-import { routesForCountry, routeCountriesForContinent } from "@/lib/routes";
-import { speakAndWait, stopSpeech, warmupSpeechVoices } from "@/lib/speech";
+import { routesForCountry, routeCountriesForContinent, resolveRouteWaypoints } from "@/lib/routes";
+import { splitSentences } from "@/lib/sentences";
+import {
+  speakAndWait,
+  stopSpeech,
+  warmupSpeechVoices,
+  getCurrentAudio,
+  getCurrentWordBoundaries,
+  estimateSpeechDurationSec,
+} from "@/lib/speech";
 import { narrationManager } from "@/lib/narration-manager";
 import { getTerrainById } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
@@ -50,6 +58,7 @@ import {
   countriesForContinent,
   getCountryMeta,
   subregionOfCountry,
+  continentOfCountrySlug,
   type Region,
 } from "@/lib/regions";
 import { terrainTier, categoryOrder, categoryLabel } from "@/lib/terrain-tier";
@@ -271,6 +280,34 @@ export default function ExplorerApp() {
   useEffect(() => {
     showIntroRef.current = showIntro;
   }, [showIntro]);
+
+  // 航线飞行中：解说读到某个地名时，「正在飞越」立刻切到那处地形（比按里程推算更准）
+  useEffect(() => {
+    if (!isRouteFlying || activeSentenceIndex == null || !routeNarration) return;
+    const route = activeRouteRef.current;
+    if (!route) return;
+    const sentence = splitSentences(routeNarration)[activeSentenceIndex];
+    if (!sentence) return;
+    const en = language === "en-US";
+    const hay = en ? sentence.toLowerCase() : sentence;
+    const terrainWps = resolveRouteWaypoints(route).filter((w) => w.kind === "terrain");
+    // 一句里提到多个地名时取靠后的那个（飞行方向上更新的）
+    for (let i = terrainWps.length - 1; i >= 0; i--) {
+      const w = terrainWps[i]!;
+      const nm = en ? w.nameEn : w.name;
+      const core = nm.replace(
+        /(沙漠|沙地|山脉|山地|群山|走廊|谷地|河谷|大峡谷|峡谷|三角洲|半岛|群岛|列岛|诸岛|海岸|草原|盆地|高原|平原|火山区|火山|破火山口|山|湖|河|江|海|岛)$/,
+        "",
+      );
+      const hit = en
+        ? hay.includes(nm.toLowerCase())
+        : sentence.includes(nm) || (core.length >= 2 && sentence.includes(core));
+      if (hit) {
+        setFlyoverName(nm);
+        return;
+      }
+    }
+  }, [isRouteFlying, activeSentenceIndex, routeNarration, language]);
 
   // 注册叙述队列的语音函数
   useEffect(() => {
@@ -824,22 +861,30 @@ export default function ExplorerApp() {
         setRouteNarration(null);
         setFlyoverName(null);
 
+        const narrText =
+          getRouteNarration(route.id, language, mode) ?? routeEndLesson(language).seeing;
+
         mapRef.current?.flyRoute(route, {
           onPreparingRoute: () => setRoutePreparing(true),
           onRouteReady: () => setRoutePreparing(false),
           // 整条航线一段解说，与镜头飞行并行
           onNarrate: async () => {
-            const text =
-              getRouteNarration(route.id, language, mode) ?? routeEndLesson(language).seeing;
-            setRouteNarration(text);
+            setRouteNarration(narrText);
             const session = narrationManager.createSession();
             setIsSpeaking(true);
             try {
               await speakAndWait(
-                text,
+                narrText,
                 SPEECH_RATE,
                 () => {
-                  if (session.active) startHighlight(text, "seeing");
+                  if (!session.active) return;
+                  const audio = getCurrentAudio();
+                  const wb = getCurrentWordBoundaries();
+                  if (audio && wb.length > 0) {
+                    startHighlightWithTiming([{ key: "seeing", text: narrText }], wb, audio, 0);
+                  } else {
+                    startHighlight(narrText, "seeing");
+                  }
                 },
                 language,
               );
@@ -848,7 +893,16 @@ export default function ExplorerApp() {
               if (session.active) stopHighlight();
             }
           },
-          // 镜头经过某地形 — 仅同步面板显示名字
+          // 镜头飞行以解说进度为节拍 —— 解说播完时航线也飞完
+          narrationProgress: () => {
+            const a = getCurrentAudio();
+            if (a && Number.isFinite(a.duration) && a.duration > 0) {
+              return Math.min(1, a.currentTime / a.duration);
+            }
+            return null;
+          },
+          estNarrationSec: estimateSpeechDurationSec(narrText, SPEECH_RATE),
+          // 镜头经过某地形 — 作为地形名的兜底（解说里提到地名时由高亮同步覆盖，见下方 effect）
           onFlyoverWaypoint: (wp) => {
             setFlyoverName(getTerrainName(wp.name, language));
           },
@@ -859,6 +913,20 @@ export default function ExplorerApp() {
             activeRouteRef.current = null;
             setRouteNarration(null);
             setFlyoverName(null);
+            // 国际航线：飞完后把地图 / 航线聚焦切到到达国（可跳到别的大洲）
+            if (route.arrCountry !== route.depCountry) {
+              const cont = continentOfCountrySlug(route.arrCountry);
+              if (cont && cont !== activeRegion && REGIONS.some((r) => r.id === cont)) {
+                setActiveRegionState(cont);
+                setActiveRegion(cont);
+                try {
+                  localStorage.setItem("fge-active-region", cont);
+                } catch {
+                  /* ignore */
+                }
+              }
+              setRouteCountry(route.arrCountry);
+            }
           },
           onCancelled: () => {
             narrationCancelledRef.current = true;
@@ -874,7 +942,7 @@ export default function ExplorerApp() {
         });
       }, 50);
     },
-    [language, mode, startHighlight, stopHighlight, stopSpeaking]
+    [language, mode, activeRegion, startHighlight, startHighlightWithTiming, stopHighlight, stopSpeaking]
   );
 
   const handleStopRoute = useCallback(() => {

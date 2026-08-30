@@ -3,6 +3,7 @@
 import SourceAttribution from "@/components/SourceAttribution";
 import StructuredLesson, { type GenericSection } from "@/components/StructuredLesson";
 import { t, type Language } from "@/lib/i18n";
+import { splitSentences } from "@/lib/sentences";
 import type { TerrainKnowledge, TerrainLesson } from "@/types/terrain";
 import { useEffect, useRef, useState } from "react";
 
@@ -28,14 +29,6 @@ interface ReadingPanelProps {
   onPlay: () => void;
   onStop: () => void;
   onClose: () => void;
-}
-
-/** 按中英标点分句 */
-function splitSentences(text: string): string[] {
-  return text
-    .split(/(?<=[。！？.!?])/g)
-    .map((s) => s.trim())
-    .filter(Boolean);
 }
 
 /**
@@ -80,19 +73,28 @@ export default function ReadingPanel({
   // ---- 航线飞行中：一段连贯解说 + 当前飞越地形 ----
   if (isRouteFlying) {
     const sentences = routeNarration ? splitSentences(routeNarration) : [];
-    return (
-      <aside
-        className={[
-          "absolute right-0 top-0 z-30 w-full panel-slide-in transition-[max-width] duration-300",
-          routeCollapsed ? "max-w-[280px] bottom-auto" : "max-w-[420px] bottom-0",
-        ].join(" ")}
-      >
-        <div
-          className={[
-            "flex flex-col border-l border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl",
-            routeCollapsed ? "h-auto rounded-bl-2xl" : "h-screen",
-          ].join(" ")}
+
+    // 最小化：右上角一个小条，点开恢复内容（解说不受影响，一直在播）
+    if (routeCollapsed) {
+      return (
+        <button
+          type="button"
+          onClick={() => setRouteCollapsed(false)}
+          className="glass-panel absolute right-3 top-14 z-30 flex items-center gap-2 rounded-full px-3.5 py-2 text-left panel-slide-in"
+          aria-label={t("panel.expand", language)}
         >
+          <span className="text-[color:var(--accent)]">✈</span>
+          <span className="editorial-title max-w-[160px] truncate text-[13px] text-[color:var(--ink)]">
+            {flyoverName ?? t("journey.routes", language)}
+          </span>
+          <span className="text-[10px] text-[color:var(--ink-faint)]">▸</span>
+        </button>
+      );
+    }
+
+    return (
+      <aside className="absolute right-0 top-0 bottom-0 z-30 w-full max-w-[420px] panel-slide-in">
+        <div className="flex h-full flex-col border-l border-[color:var(--hairline)] bg-[color:var(--panel-solid)] backdrop-blur-xl">
           <div className="flex items-start justify-between gap-3 border-b border-[color:var(--hairline)] px-6 py-4">
             <div className="min-w-0">
               <span className="editorial-kicker text-[color:var(--accent)]">
@@ -104,31 +106,16 @@ export default function ReadingPanel({
                 </h2>
               )}
             </div>
-            <div className="flex shrink-0 items-center gap-1">
-              <button
-                type="button"
-                onClick={() => setRouteCollapsed((v) => !v)}
-                className="flex h-8 w-8 items-center justify-center rounded-full text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
-                aria-label={routeCollapsed ? t("panel.play", language) : t("panel.close", language)}
-              >
-                <span className="text-[13px]">{routeCollapsed ? "▸" : "▾"}</span>
-              </button>
-              <button
-                type="button"
-                onClick={onClose}
-                className="flex h-8 w-8 items-center justify-center rounded-full text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
-                aria-label={t("panel.close", language)}
-              >
-                <span className="text-[13px]">✕</span>
-              </button>
-            </div>
+            <button
+              type="button"
+              onClick={() => setRouteCollapsed(true)}
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
+              aria-label={t("panel.minimize", language)}
+            >
+              <span className="text-[15px]">–</span>
+            </button>
           </div>
-          <div
-            className={[
-              "reading-scroll flex-1 overflow-y-auto px-6 py-5",
-              routeCollapsed ? "hidden" : "",
-            ].join(" ")}
-          >
+          <div className="reading-scroll flex-1 overflow-y-auto px-6 py-5">
             {sentences.length > 0 ? (
               <p className="reading-body">
                 {sentences.map((s, i) => {

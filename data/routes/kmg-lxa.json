@@ -17,12 +17,43 @@
   },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "kmg", "name": "昆明长水", "nameEn": "Kunming Changshui", "lat": 25.102, "lon": 102.929, "airport": true },
-    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
-    { "kind": "terrain", "terrainId": "tiger-leaping-gorge" },
-    { "kind": "terrain", "terrainId": "hengduan" },
-    { "kind": "terrain", "terrainId": "tsangpo-gorge" },
-    { "kind": "terrain", "terrainId": "qinghai-tibet" },
-    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+    {
+      "kind": "city",
+      "id": "kmg",
+      "name": "昆明长水",
+      "nameEn": "Kunming Changshui",
+      "lat": 25.102,
+      "lon": 102.929,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yunnan-guizhou"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hengduan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tiger-leaping-gorge"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tsangpo-gorge"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qinghai-tibet"
+    },
+    {
+      "kind": "city",
+      "id": "lxa",
+      "name": "拉萨贡嘎",
+      "nameEn": "Lhasa Gonggar",
+      "lat": 29.298,
+      "lon": 90.912,
+      "airport": true
+    }
   ]
 }

@@ -94,6 +94,22 @@ for (const r of ROUTES) {
     if (d <= 0) fail(r.id, `第 ${i} 段距离为 0`);
     total += d;
   }
+
+  // 航点应沿「起点→终点」方向大致单调推进（投影参数递增），否则镜头会来回折
+  if (coords.length >= 3) {
+    const A = coords[0]!;
+    const B = coords[coords.length - 1]!;
+    const ux = B[0] - A[0], uy = B[1] - A[1];
+    const L2 = ux * ux + uy * uy || 1e-9;
+    const params = coords.map(([x, y]) => ((x - A[0]) * ux + (y - A[1]) * uy) / L2);
+    for (let i = 1; i < params.length; i++) {
+      if (params[i]! < params[i - 1]! - 0.08) {
+        const label = wps[i - 1]!.kind === "city" ? wps[i - 1]!.id : wps[i - 1]!.terrainId;
+        const label2 = wps[i]!.kind === "city" ? wps[i]!.id : wps[i]!.terrainId;
+        fail(r.id, `航点回退：${label}(${params[i - 1]!.toFixed(2)}) → ${label2}(${params[i]!.toFixed(2)})`);
+      }
+    }
+  }
   const cruiseKmh = ((r.flight?.durationMin ?? 120) / 60) * 800; // 粗略 800 km/h
   const ratio = total / cruiseKmh;
   const flag = ratio < 0.4 || ratio > 1.8 ? " ⚠ 航程与时长不匹配" : "";

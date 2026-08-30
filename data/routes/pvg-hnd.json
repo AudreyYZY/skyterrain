@@ -1,0 +1,26 @@
+{
+  "id": "pvg-hnd",
+  "name": "上海 — 东京",
+  "nameEn": "Shanghai — Tokyo",
+  "description": "长江三角洲 · 东海 · 富士山 · 关东平原",
+  "descriptionEn": "Yangtze Delta · East China Sea · Mount Fuji · Kanto Plain",
+  "depCountry": "china",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU523",
+    "aircraft": "Airbus A330-300",
+    "depIata": "PVG",
+    "arrIata": "HND",
+    "durationMin": 180
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "pvg", "name": "上海浦东", "nameEn": "Shanghai Pudong", "lat": 31.143, "lon": 121.805, "airport": true },
+    { "kind": "terrain", "terrainId": "yangtze-delta" },
+    { "kind": "terrain", "terrainId": "mount-fuji" },
+    { "kind": "terrain", "terrainId": "kanto-plain" },
+    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true }
+  ]
+}

@@ -1,17 +1,7 @@
 import type { WordBoundary } from "@/lib/speech";
 import { stripEmojis } from "@/lib/strip-emojis";
+import { splitSentences } from "@/lib/sentences";
 import { useCallback, useEffect, useRef, useState } from "react";
-
-/**
- * 将文本按中文句号、问号、感叹号分割成句子
- */
-function splitSentences(text: string): string[] {
-  if (!text.trim()) return [];
-  return text
-    .split(/(?<=[。！？.!?])/g)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0);
-}
 
 interface HighlightSection {
   key: string;
