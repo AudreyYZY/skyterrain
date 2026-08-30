@@ -17,11 +17,46 @@
   },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "ckg", "name": "重庆江北", "nameEn": "Chongqing Jiangbei", "lat": 29.719, "lon": 106.642, "airport": true },
-    { "kind": "terrain", "terrainId": "sichuan" },
-    { "kind": "terrain", "terrainId": "hengduan" },
-    { "kind": "terrain", "terrainId": "tsangpo-gorge" },
-    { "kind": "terrain", "terrainId": "qinghai-tibet" },
-    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+    {
+      "kind": "city",
+      "id": "ckg",
+      "name": "重庆江北",
+      "nameEn": "Chongqing Jiangbei",
+      "lat": 29.719,
+      "lon": 106.642,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sichuan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hengduan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tsangpo-gorge"
+    },
+    {
+      "kind": "feature",
+      "name": "念青唐古拉山",
+      "nameEn": "Nyainqêntanglha Range",
+      "lon": 92,
+      "lat": 30.1
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qinghai-tibet"
+    },
+    {
+      "kind": "city",
+      "id": "lxa",
+      "name": "拉萨贡嘎",
+      "nameEn": "Lhasa Gonggar",
+      "lat": 29.298,
+      "lon": 90.912,
+      "airport": true
+    }
   ]
 }

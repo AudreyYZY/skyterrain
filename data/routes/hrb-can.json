@@ -42,6 +42,13 @@
       "terrainId": "north-china"
     },
     {
+      "kind": "feature",
+      "name": "江汉平原",
+      "nameEn": "Jianghan Plain",
+      "lon": 113.3,
+      "lat": 30.6
+    },
+    {
       "kind": "terrain",
       "terrainId": "yangtze"
     },

@@ -17,11 +17,46 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "dongting" },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "terrain", "terrainId": "liangguang-hills" },
-    { "kind": "city", "id": "kwl", "name": "桂林两江", "nameEn": "Guilin Liangjiang", "lat": 25.219, "lon": 110.039, "airport": true }
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "feature",
+      "name": "大别山",
+      "nameEn": "Dabie Mountains",
+      "lon": 115.6,
+      "lat": 31.6
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dongting"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "liangguang-hills"
+    },
+    {
+      "kind": "city",
+      "id": "kwl",
+      "name": "桂林两江",
+      "nameEn": "Guilin Liangjiang",
+      "lat": 25.219,
+      "lon": 110.039,
+      "airport": true
+    }
   ]
 }

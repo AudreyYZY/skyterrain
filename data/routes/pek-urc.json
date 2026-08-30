@@ -40,6 +40,13 @@
       "terrainId": "loess"
     },
     {
+      "kind": "feature",
+      "name": "阿拉善戈壁",
+      "nameEn": "Alxa gobi",
+      "lon": 104,
+      "lat": 39.6
+    },
+    {
       "kind": "terrain",
       "terrainId": "hexi-corridor"
     },

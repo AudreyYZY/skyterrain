@@ -17,10 +17,42 @@
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "shandong-hills" },
-    { "kind": "terrain", "terrainId": "yangtze-delta" },
-    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true }
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "shandong-hills"
+    },
+    {
+      "kind": "feature",
+      "name": "苏北平原",
+      "nameEn": "northern Jiangsu plain",
+      "lon": 118.6,
+      "lat": 33.8
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-delta"
+    },
+    {
+      "kind": "city",
+      "id": "sha",
+      "name": "上海虹桥",
+      "nameEn": "Shanghai Hongqiao",
+      "lat": 31.198,
+      "lon": 121.336,
+      "airport": true
+    }
   ]
 }

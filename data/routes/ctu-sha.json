@@ -17,11 +17,46 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "tfu", "name": "成都天府", "nameEn": "Chengdu Tianfu", "lat": 30.312, "lon": 104.441, "airport": true },
-    { "kind": "terrain", "terrainId": "sichuan" },
-    { "kind": "terrain", "terrainId": "yangtze-gorges" },
-    { "kind": "terrain", "terrainId": "yangtze" },
-    { "kind": "terrain", "terrainId": "yangtze-delta" },
-    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true }
+    {
+      "kind": "city",
+      "id": "tfu",
+      "name": "成都天府",
+      "nameEn": "Chengdu Tianfu",
+      "lat": 30.312,
+      "lon": 104.441,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sichuan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-gorges"
+    },
+    {
+      "kind": "feature",
+      "name": "洞庭湖",
+      "nameEn": "Dongting Lake",
+      "lon": 112.95,
+      "lat": 29.4
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-delta"
+    },
+    {
+      "kind": "city",
+      "id": "sha",
+      "name": "上海虹桥",
+      "nameEn": "Shanghai Hongqiao",
+      "lat": 31.198,
+      "lon": 121.336,
+      "airport": true
+    }
   ]
 }

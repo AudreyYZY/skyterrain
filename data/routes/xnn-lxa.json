@@ -17,11 +17,46 @@
   },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "xnn", "name": "西宁曹家堡", "nameEn": "Xining Caojiabao", "lat": 36.528, "lon": 102.043, "airport": true },
-    { "kind": "terrain", "terrainId": "qinghai-lake" },
-    { "kind": "terrain", "terrainId": "kunlun" },
-    { "kind": "terrain", "terrainId": "qinghai-tibet" },
-    { "kind": "terrain", "terrainId": "namtso" },
-    { "kind": "city", "id": "lxa", "name": "拉萨贡嘎", "nameEn": "Lhasa Gonggar", "lat": 29.298, "lon": 90.912, "airport": true }
+    {
+      "kind": "city",
+      "id": "xnn",
+      "name": "西宁曹家堡",
+      "nameEn": "Xining Caojiabao",
+      "lat": 36.528,
+      "lon": 102.043,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qinghai-lake"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kunlun"
+    },
+    {
+      "kind": "feature",
+      "name": "可可西里",
+      "nameEn": "Hoh Xil",
+      "lon": 92.5,
+      "lat": 34.6
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qinghai-tibet"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "namtso"
+    },
+    {
+      "kind": "city",
+      "id": "lxa",
+      "name": "拉萨贡嘎",
+      "nameEn": "Lhasa Gonggar",
+      "lat": 29.298,
+      "lon": 90.912,
+      "airport": true
+    }
   ]
 }
