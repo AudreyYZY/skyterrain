@@ -373,6 +373,83 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "西江千户苗寨", nameEn: "Xijiang Miao Village", lon: 108.180, lat: 26.500, kind: "district" },
   ],
 
+  sendai: [
+    { nameZh: "青叶城迹", nameEn: "Aoba Castle Site", lon: 140.856, lat: 38.253, kind: "landmark" },
+    { nameZh: "瑞凤殿", nameEn: "Zuihoden", lon: 140.858, lat: 38.247, kind: "landmark" },
+    { nameZh: "大崎八幡宫", nameEn: "Osaki Hachimangu", lon: 140.842, lat: 38.281, kind: "landmark" },
+    { nameZh: "定禅寺通", nameEn: "Jozenji-dori", lon: 140.868, lat: 38.263, kind: "district" },
+    { nameZh: "松岛 · 瑞岩寺", nameEn: "Matsushima · Zuiganji", lon: 141.060, lat: 38.370, kind: "nature" },
+    { nameZh: "山寺（立石寺）", nameEn: "Yamadera (Risshakuji)", lon: 140.440, lat: 38.310, kind: "landmark" },
+    { nameZh: "秋保温泉", nameEn: "Akiu Onsen", lon: 140.730, lat: 38.230, kind: "nature" },
+  ],
+
+  yokohama: [
+    { nameZh: "港未来21", nameEn: "Minato Mirai 21", lon: 139.632, lat: 35.457, kind: "district" },
+    { nameZh: "红砖仓库", nameEn: "Red Brick Warehouses", lon: 139.643, lat: 35.453, kind: "landmark" },
+    { nameZh: "横滨中华街", nameEn: "Yokohama Chinatown", lon: 139.645, lat: 35.443, kind: "district" },
+    { nameZh: "山手西式洋馆", nameEn: "Yamate Western Houses", lon: 139.653, lat: 35.435, kind: "landmark" },
+    { nameZh: "港见丘公园", nameEn: "Harbour View Park", lon: 139.652, lat: 35.437, kind: "nature" },
+    { nameZh: "三溪园", nameEn: "Sankeien Garden", lon: 139.657, lat: 35.417, kind: "nature" },
+    { nameZh: "八景岛海岛乐园", nameEn: "Hakkeijima Sea Paradise", lon: 139.643, lat: 35.336, kind: "landmark" },
+  ],
+
+  nagoya: [
+    { nameZh: "名古屋城", nameEn: "Nagoya Castle", lon: 136.899, lat: 35.185, kind: "landmark" },
+    { nameZh: "热田神宫", nameEn: "Atsuta Shrine", lon: 136.909, lat: 35.128, kind: "landmark" },
+    { nameZh: "德川美术馆 · 德川园", nameEn: "Tokugawa Art Museum & Garden", lon: 136.945, lat: 35.194, kind: "landmark" },
+    { nameZh: "大须商店街", nameEn: "Osu Shopping District", lon: 136.900, lat: 35.159, kind: "district" },
+    { nameZh: "名古屋港水族馆", nameEn: "Port of Nagoya Public Aquarium", lon: 136.876, lat: 35.090, kind: "landmark" },
+    { nameZh: "磁悬浮·铁道馆", nameEn: "SCMaglev and Railway Park", lon: 136.802, lat: 35.055, kind: "landmark" },
+  ],
+
+  kanazawa: [
+    { nameZh: "兼六园", nameEn: "Kenrokuen", lon: 136.663, lat: 36.562, kind: "nature" },
+    { nameZh: "金泽城公园", nameEn: "Kanazawa Castle Park", lon: 136.658, lat: 36.565, kind: "landmark" },
+    { nameZh: "金泽21世纪美术馆", nameEn: "21st Century Museum of Contemporary Art", lon: 136.658, lat: 36.559, kind: "landmark" },
+    { nameZh: "东茶屋街", nameEn: "Higashi Chaya District", lon: 136.667, lat: 36.572, kind: "district" },
+    { nameZh: "长町武家屋敷", nameEn: "Nagamachi Samurai District", lon: 136.653, lat: 36.567, kind: "district" },
+    { nameZh: "近江町市场", nameEn: "Omicho Market", lon: 136.657, lat: 36.571, kind: "district" },
+  ],
+
+  nara: [
+    { nameZh: "东大寺", nameEn: "Todaiji", lon: 135.840, lat: 34.689, kind: "landmark" },
+    { nameZh: "春日大社", nameEn: "Kasuga Taisha", lon: 135.848, lat: 34.681, kind: "landmark" },
+    { nameZh: "兴福寺", nameEn: "Kofukuji", lon: 135.831, lat: 34.683, kind: "landmark" },
+    { nameZh: "奈良国立博物馆", nameEn: "Nara National Museum", lon: 135.842, lat: 34.685, kind: "landmark" },
+    { nameZh: "若草山", nameEn: "Wakakusayama", lon: 135.849, lat: 34.694, kind: "nature" },
+    { nameZh: "唐招提寺", nameEn: "Toshodaiji", lon: 135.785, lat: 34.676, kind: "landmark" },
+    { nameZh: "法隆寺", nameEn: "Horyuji", lon: 135.734, lat: 34.614, kind: "landmark" },
+  ],
+
+  hiroshima: [
+    { nameZh: "和平纪念公园 · 原爆圆顶", nameEn: "Peace Memorial Park · Atomic Bomb Dome", lon: 132.453, lat: 34.395, kind: "landmark" },
+    { nameZh: "广岛和平纪念资料馆", nameEn: "Hiroshima Peace Memorial Museum", lon: 132.452, lat: 34.391, kind: "landmark" },
+    { nameZh: "广岛城", nameEn: "Hiroshima Castle", lon: 132.459, lat: 34.403, kind: "landmark" },
+    { nameZh: "缩景园", nameEn: "Shukkeien Garden", lon: 132.469, lat: 34.400, kind: "nature" },
+    { nameZh: "严岛神社（宫岛）", nameEn: "Itsukushima Shrine (Miyajima)", lon: 132.320, lat: 34.296, kind: "landmark" },
+    { nameZh: "弥山", nameEn: "Mount Misen", lon: 132.317, lat: 34.278, kind: "nature" },
+  ],
+
+  takamatsu: [
+    { nameZh: "栗林公园", nameEn: "Ritsurin Garden", lon: 134.043, lat: 34.329, kind: "nature" },
+    { nameZh: "屋岛", nameEn: "Yashima", lon: 134.107, lat: 34.360, kind: "nature" },
+    { nameZh: "高松城迹（玉藻公园）", nameEn: "Takamatsu Castle Site (Tamamo Park)", lon: 134.052, lat: 34.354, kind: "landmark" },
+    { nameZh: "直岛 · 地中美术馆", nameEn: "Naoshima · Chichu Art Museum", lon: 133.995, lat: 34.452, kind: "landmark" },
+    { nameZh: "丰岛美术馆", nameEn: "Teshima Art Museum", lon: 134.075, lat: 34.494, kind: "landmark" },
+    { nameZh: "小豆岛寒霞溪", nameEn: "Kankakei Gorge, Shodoshima", lon: 134.278, lat: 34.503, kind: "nature" },
+  ],
+
+  nagasaki: [
+    { nameZh: "哥拉巴园", nameEn: "Glover Garden", lon: 129.869, lat: 32.734, kind: "landmark" },
+    { nameZh: "大浦天主堂", nameEn: "Oura Church", lon: 129.870, lat: 32.735, kind: "landmark" },
+    { nameZh: "出岛", nameEn: "Dejima", lon: 129.874, lat: 32.744, kind: "landmark" },
+    { nameZh: "新地中华街", nameEn: "Shinchi Chinatown", lon: 129.872, lat: 32.742, kind: "district" },
+    { nameZh: "眼镜桥", nameEn: "Spectacles Bridge", lon: 129.882, lat: 32.746, kind: "landmark" },
+    { nameZh: "稻佐山", nameEn: "Mount Inasa", lon: 129.860, lat: 32.746, kind: "nature" },
+    { nameZh: "长崎原爆资料馆 · 和平公园", nameEn: "Nagasaki Atomic Bomb Museum · Peace Park", lon: 129.865, lat: 32.771, kind: "landmark" },
+    { nameZh: "军舰岛（端岛）", nameEn: "Gunkanjima (Hashima)", lon: 129.738, lat: 32.628, kind: "landmark" },
+  ],
+
   xining: [
     { nameZh: "塔尔寺", nameEn: "Kumbum Monastery", lon: 101.578, lat: 36.489, kind: "landmark" },
     { nameZh: "东关清真大寺", nameEn: "Dongguan Grand Mosque", lon: 101.800, lat: 36.617, kind: "landmark" },

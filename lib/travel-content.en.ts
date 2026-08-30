@@ -791,4 +791,124 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "October to December and March–April have relatively settled weather, good for the outdoors. May–June brings plum rains and July–September is the typhoon season with a lot of rain, so have a backup for outdoor plans when a typhoon is coming. Winters are damp and cool, and the mountains (Yangmingshan) are colder, so bring a waterproof jacket. Popular museums such as the Palace Museum are crowded in high season — buy tickets ahead and avoid the peak tour-group hours.",
   },
+
+  sendai: {
+    identity:
+      "Sendai is the largest city of the Tohoku region and the capital of Miyagi Prefecture, with a metropolitan population of about 1.5 million. Ringed by mountains on three sides and facing the Pacific, its tree-lined centre earns it the name \"City of Trees\"; it is also the hub for Matsushima, Yamadera, the Naruko hot springs and the rest of Tohoku.",
+    layout:
+      "Sendai is built on the valley plain cut by the Hirose River, backed by the Ou Mountains and facing the Sendai plain and the Pacific. The centre is west of Sendai Station, and the ruins of Aoba Castle (Sendai Castle) stand on high ground to the west. North-east along the coast is Matsushima Bay; south-west into the hills are the Sakunami and Akiu hot springs; north is Naruko. The 2011 earthquake and tsunami hit the coast hard, and some rebuilt areas now have memorial facilities.",
+    gettingAround:
+      "Sendai Airport is south-east of the city, about 25 minutes to Sendai Station on the airport line. Sendai is a main stop on the Tohoku Shinkansen: about 1.5 hours to Tokyo, 40 minutes to Morioka. The city has two subway lines plus buses and the Loople Sendai sightseeing bus. The climate is Pacific-side temperate: summers that are not too hot and fairly humid, cold winters with little snow in the city, and comfortable springs and autumns.",
+    culture:
+      "Standard Japanese with a slight Tohoku accent is spoken, and tourist facilities have full multilingual signage. Local specialities include grilled beef tongue, sasa-kamaboko fish cake and zunda (sweet edamame paste) desserts. The Sendai Tanabata Festival in summer is one of the three great festivals of Tohoku. The pace is easier than Tokyo's. No tipping.",
+    seeAndDo:
+      "The Aoba Castle site with the equestrian statue of Date Masamune and a city panorama; the Zuihoden (the Date family mausoleum); the Osaki Hachimangu shrine; the trees of Jozenji-dori and the Pageant of Starlight (December). Nearby: the islands of Matsushima Bay and the Zuiganji temple (by sightseeing boat), Yamadera (the Risshakuji, up stone steps) in Yamagata, and the Akiu and Sakunami hot springs. The tsunami memorial sites and museums along the coast (solemn places).",
+    whenAndTips:
+      "May–June and September–October have the most comfortable weather; the Tanabata Festival in early August is the liveliest but rooms are tight. Winters are cold and mountain roads can ice up. Matsushima boat trips and the Yamadera climb depend on the weather — watch for slippery paths in rain or snow. Be quiet and respectful at the disaster memorial sites.",
+  },
+
+  yokohama: {
+    identity:
+      "Yokohama is the capital of Kanagawa Prefecture, a port city on Tokyo Bay just south of Tokyo, and the second most populous city in Japan (about 3.7 million). It opened as a port in the mid-19th century, one of Japan's first cities for foreign trade, and now mixes a Chinatown, Western-era buildings and a modernised port district; many people visit it as a day trip from Tokyo.",
+    layout:
+      "Yokohama runs along the western shore of Tokyo Bay. The core is the towers and ferris wheel of Minato Mirai 21 and the waterfront around the Red Brick Warehouses; south are the Western-style old houses of Yamate and the Harbour View Park, with Japan's largest Chinatown below; farther south are Honmoku and Kanazawa Ward. North it quickly joins the Tokyo metropolitan area.",
+    gettingAround:
+      "From Haneda Airport, an airport bus or train reaches Yokohama Station in about 30 minutes. Trains between Yokohama and Tokyo are frequent (JR, Tokyu, Keikyu), about 30 minutes, with a single Suica or PASMO card. The city has a subway and the Minatomirai Line, and the waterfront is walkable. The climate is almost the same as Tokyo's: muggy summers, clear cold winters with little snow, and plum rains in June.",
+    culture:
+      "Standard Japanese is spoken, with multilingual signage in the tourist areas. Chinatown is a Chinese community and Yokohama's liveliest dining district. The port area has many museums and galleries. The pace is like Tokyo's but with a more relaxed seaside feel. Restaurants do not expect an extra tip.",
+    seeAndDo:
+      "Minato Mirai 21: the Landmark Tower observatory, the Cosmo Clock 21 ferris wheel, the Red Brick Warehouses and the waterfront promenade past the car museum; dim sum in Yokohama Chinatown; the Western houses and foreigners' cemetery of Yamate and the Harbour View Park; the Japanese garden of Sankeien; the Sea Paradise amusement park on Hakkeijima (for families).",
+    whenAndTips:
+      "Spring and autumn (April–May, October–November) are the most comfortable, and the Minato Mirai night view is good all year. The plum rains and high summer are muggy. Chinatown and the Red Brick Warehouses are crowded on weekends and holidays. Yokohama works as a half-day to full-day part of a Tokyo trip, with an easy train ride each way.",
+  },
+
+  nagoya: {
+    identity:
+      "Nagoya is the capital of Aichi Prefecture and the central city of Japan's Chubu region, with a metropolitan population of about 9 million. It is a manufacturing centre, especially for cars; the city is regular with wide roads, known in itself for Nagoya Castle and its miso-based \"Nagoya food\", and it is also the hub for Shirakawa-go, Takayama, the Tateyama–Kurobe route and Ise.",
+    layout:
+      "Nagoya is built on the Nobi Plain, flat, with streets on a regular grid. The centre has two hubs, Nagoya Station (\"Meieki\") and Sakae; Nagoya Castle is to the north and the Atsuta Shrine to the south. North lie Gifu, Takayama and Shirakawa-go; east are the Central Alps and the Kiso valley; south is the Chita Peninsula; west are Ise and Toba.",
+    gettingAround:
+      "Chubu Centrair International Airport is on a man-made island, about 30 minutes to Nagoya Station on the Meitetsu express. Nagoya is a main stop on the Tokaido Shinkansen: about 1.5 hours to Tokyo and to Osaka. The city has several subway lines plus buses; use a manaca or other IC card. The climate is Pacific-side temperate — muggy summers (often hotter than Tokyo) and clear cold winters with little snow in the city.",
+    culture:
+      "The Nagoya dialect is spoken, with standard Japanese used. Nagoya's food is its own school: miso katsu, miso-simmered udon, hitsumabushi (eel rice three ways), tenmusu, and grilled chicken wings (tebasaki). Locals have a strong sense of local identity. No tipping.",
+    seeAndDo:
+      "Nagoya Castle (the golden shachihoko, the reconstructed Honmaru Palace); the Atsuta Shrine; the Tokugawa Art Museum and Tokugawa Garden; the arcades and secondhand shops of Osu; the Port of Nagoya Public Aquarium and the JR Central Maglev and Railway Park. From Nagoya: the old streets and Hida beef of Takayama, the gassho-zukuri villages of Shirakawa-go, the Tateyama–Kurobe Alpine Route (open April–November), and the Ise Grand Shrine.",
+    whenAndTips:
+      "Spring and autumn (March–May, October–November) are the most comfortable. High summer is hot — take heat precautions — and the plum rains are wet. The Shirakawa-go winter light-up (January–February, booking required) is very popular. The Tateyama–Kurobe route runs from mid-April to late November, with the snow corridor most impressive in April–May; book transport ahead in high season.",
+  },
+
+  kanazawa: {
+    identity:
+      "Kanazawa is the capital of Ishikawa Prefecture, the central city of the Kaga area on the Sea of Japan side, with an urban population of about 450,000. It was the castle town of the Kaga domain in the Edo period — long wealthy and devoted to crafts (gold leaf, lacquer, Kaga yuzen dyeing, Kutani ware) — and, spared major war damage, it keeps large old quarters and a famous garden, earning it the nickname \"Little Kyoto\".",
+    layout:
+      "Kanazawa is built on hills and flat ground between the Sai and Asano rivers. The centre is around Kanazawa Castle and Kenrokuen; north across the Asano is the Higashi Chaya district (an old geisha quarter); south-west across the Sai are the Nishi Chaya district and the temples of Teramachi; the Nagamachi area still has samurai residences behind earthen walls. Kanazawa Station is the modern gateway, with a large wooden Tsuzumi Gate.",
+    gettingAround:
+      "Komatsu Airport is about 30 km south-west of the city, about 40 minutes to Kanazawa Station by airport bus; you can also take the Hokuriku Shinkansen from Tokyo (about 2.5 hours). Kanazawa's sights are compact, walked plus the castle-town loop bus. The climate is Sea-of-Japan side: cloudy, snowy, humid winters (locals say you can forget your lunch but not your umbrella), muggy summers, and comfortable springs and autumns.",
+    culture:
+      "The Kanazawa dialect is spoken, with standard Japanese used. Kanazawa is known for traditional crafts and for tea-ceremony and wagashi culture, and gold leaf is used on buildings, objects and even food. The food is Kaga cuisine, jibuni, and seafood at the Omicho Market. The pace is unhurried. No tipping.",
+    seeAndDo:
+      "Kenrokuen (one of the three great gardens of Japan, different in each season, with \"yukitsuri\" snow ropes in winter); Kanazawa Castle Park; the 21st Century Museum of Contemporary Art (the \"swimming pool\" work); the tea-house buildings and gold-leaf shops of the Higashi Chaya district; the samurai residences of Nagamachi; seafood at the Omicho Market; the D.T. Suzuki Museum. From Kanazawa: Shirakawa-go, Gokayama, the Noto Peninsula and the Kaga hot-spring resorts.",
+    whenAndTips:
+      "April–May and September–November have the best weather. Winters are grey and snowy, so bring an umbrella and waterproof shoes for outdoor plans, though the snow scenery at Kenrokuen is lovely. The plum rains and high summer are muggy. The Omicho Market and Kenrokuen are crowded on weekends — go in the morning.",
+  },
+
+  nara: {
+    identity:
+      "Nara is the capital of Nara Prefecture, about 40 km south of Kyoto, and was the capital of Japan (as Heijo-kyo) in the 8th century — earlier than Kyoto. The city is small; several huge old temples and shrines and a large park where wild deer roam are all close together, making Nara the place to feel the Nara period and early Buddhist art.",
+    layout:
+      "The core of Nara is Nara Park — a broad expanse of grass and woodland holding Todaiji, Kasuga Taisha, Kofukuji, the National Museum and several hundred wild deer, walkable from Kintetsu Nara Station. West of the centre are the Heijo Palace site and the Toshodaiji and Yakushiji temples (Nishi-no-kyo); farther south-west is Horyuji (Ikaruga). The rest of the city is quiet residential streets.",
+    gettingAround:
+      "Nara has no airport; people usually arrive from Kansai Airport by limousine bus or train (via Osaka or Kyoto), or from Kyoto or Osaka on the Kintetsu line (about 40 minutes to Kintetsu Nara Station). The central sights are compact, on foot plus buses, and Nishi-no-kyo and Ikaruga are reached by train and a short walk. The climate is that of an inland basin: muggy summers, damp cold winters, and short springs and autumns.",
+    culture:
+      "Kansai-dialect Japanese is spoken, with multilingual signage at the sights. The deer of Nara Park are treated as protected wild animals: you may feed them the special \"deer crackers\", but do not tease them or give other food, and note that they will butt people for food. Most temples require removing shoes and forbid photography indoors. The pace is even slower than Kyoto's. No tipping.",
+    seeAndDo:
+      "Todaiji (the Great Buddha Hall and the Vairocana Buddha, the guardian figures at the Nandaimon); Kasuga Taisha (stone lanterns, vermilion corridors); the five-storey pagoda of Kofukuji and the Ashura figure in its treasure hall; the Nara National Museum (the annual autumn Shosoin exhibition); Wakakusayama for sunset; Toshodaiji and Yakushiji at Nishi-no-kyo; Horyuji at Ikaruga (one of the oldest groups of wooden buildings anywhere).",
+    whenAndTips:
+      "Cherry blossom (early April), fresh green (May) and autumn leaves (late November) are the most beautiful. High summer and the plum rains are uncomfortable. Most people day-trip from Kyoto or Osaka, but an overnight lets you catch Nara Park before the crowds. Take care feeding the deer, and keep valuables and paper bags away (the deer will grab them).",
+  },
+
+  hiroshima: {
+    identity:
+      "Hiroshima is the capital of Hiroshima Prefecture and the largest city of the Chugoku region, with a metropolitan population of about 1.4 million. It sits on the delta of the Ota River on the Seto Inland Sea; it was destroyed by an atomic bomb in August 1945 and rebuilt, and is now known for its peace memorial sites, the Itsukushima Shrine on Miyajima and the scenery of the Inland Sea.",
+    layout:
+      "Hiroshima is built on the delta split by the many channels of the Ota River, cut into blocks by water. The centre is around Kamiyacho and Hatchobori; the Peace Memorial Park and the Atomic Bomb Dome are on the Motoyasu River just west of the centre, with Hiroshima Castle to the north. South-west by boat or train is Miyajima (Itsukushima); east along the Inland Sea are Kure, Onomichi and the islands.",
+    gettingAround:
+      "Hiroshima Airport is about 50 km east of the city, about 45 minutes to Hiroshima Station by limousine bus. Hiroshima is a main stop on the Sanyo Shinkansen: about 1.5 hours to Osaka, an hour to Fukuoka. The city has trams (\"Hiroden\") plus buses and water buses. The climate is Seto Inland Sea style: mild all year with relatively little rain and many clear days, muggy summers and winters that are not very cold.",
+    culture:
+      "The Hiroshima dialect is spoken, with standard Japanese used. The local speciality is Hiroshima-style okonomiyaki (batter, cabbage and noodles cooked in layers, different from the Osaka style), plus oysters and small Inland Sea fish. Baseball (the Hiroshima Toyo Carp) is very popular locally. The pace is easy. No tipping.",
+    seeAndDo:
+      "The Peace Memorial Park, the Atomic Bomb Dome (a World Heritage Site) and the Hiroshima Peace Memorial Museum — a solemn place; be quiet and follow the museum's rules. Miyajima: the Itsukushima Shrine (the great torii that \"floats\" at high tide) and Mount Misen, with wild deer on the island; Hiroshima Castle and the Shukkeien garden; farther out, the Yamato Museum at Kure, the hillside old streets of Onomichi, and the Shimanami Kaido island-hopping cycle route.",
+    whenAndTips:
+      "Spring and autumn (March–May, October–November) are the most comfortable, and the Momijidani valley on Miyajima is lovely in November. The plum rains (June–July) and high summer are muggy. To see the torii, match the tide (walk close at low tide, photograph the \"floating\" effect at high tide) — check that day's tide times before going. Be respectful in word and manner at the peace memorial sites.",
+  },
+
+  takamatsu: {
+    identity:
+      "Takamatsu is the capital of Kagawa Prefecture, a city on the north coast of Shikoku on the Seto Inland Sea, with an urban population of about 420,000. It is the sea gateway to Shikoku, known for Ritsurin Garden, Sanuki udon and the Inland Sea islands (the contemporary art of Naoshima and Teshima).",
+    layout:
+      "Takamatsu is built on a narrow strip of flat land by the Inland Sea, backed by Yashima, the plateau-topped hill that is the city's symbol. The centre is around Takamatsu Station and the Marugamemachi arcade, with Ritsurin Garden to the south. Takamatsu Port has ferries to Naoshima, Shodoshima, Megijima and other islands. West are Marugame and Kotohira (the Kotohiragu shrine); east is Tokushima.",
+    gettingAround:
+      "Takamatsu Airport is about 15 km south of the city, about 40 minutes to the centre by airport bus. Takamatsu is linked to Honshu by the Seto Ohashi bridge — about an hour to Okayama by JR, then the Shinkansen. The city has buses and the Kotoden (Kotohira Electric Railway). The climate is Seto Inland Sea style: mild all year with little rain and many clear days, muggy summers and mild winters.",
+    culture:
+      "The Sanuki dialect is spoken, with standard Japanese used. Sanuki udon is the local pride, with many self-service \"noodle workshops\" where you serve your own noodles, add toppings and pay — cheap and quick. Bone-in grilled chicken thigh is a Marugame speciality. The pace is slow. No tipping.",
+    seeAndDo:
+      "Ritsurin Garden (a large stroll garden of the daimyo, highly rated among Japanese gardens); Yashima for a panorama of the Inland Sea and the Yashimaji temple; the Takamatsu Castle site (Tamamo Park, with a seawater moat); ferries to Naoshima (the Chichu Art Museum, the pumpkin, Benesse House), the Teshima Art Museum and Shodoshima (olives, the Kankakei gorge). The Setouchi Triennale art festival is held around here.",
+    whenAndTips:
+      "Spring and autumn (March–May, October–November) are the most comfortable. The art-island museums mostly need advance booking and often close on Mondays, and ferry sailings are limited, so check schedules and opening days before planning. Summer is muggy and there is little shade on the islands, so carry water and sun protection.",
+  },
+
+  nagasaki: {
+    identity:
+      "Nagasaki is the capital of Nagasaki Prefecture, a port city at the western end of Kyushu facing the East China Sea, with an urban population of about 400,000. In the Edo period it was Japan's only port open to the outside world (to the Dutch and the Chinese), leaving Dejima, the Chinese quarter and blocks of Western and Chinese architecture built up the hillsides; it was struck by an atomic bomb in August 1945 and also has peace memorial facilities.",
+    layout:
+      "Nagasaki is a classic harbour city, its districts running up the hillsides on both sides of a bay that reaches inland, with stacked houses and many slopes and stone steps. The centre runs from Nagasaki Station to the Hamamachi arcade; Dejima is to its south; the Glover Garden and Oura Church are on the Minamiyamate side on the east of the bay; Mount Inasa is on the west. North is the hypocentre and Peace Park.",
+    gettingAround:
+      "Nagasaki Airport is built on a man-made island in Omura Bay, about 45 minutes to the city by airport bus. The West Kyushu Shinkansen runs to Nagasaki, changing at Takeo-Onsen, about 1.5 hours to Hakata. In the city, trams are the main transport (a one-day pass is good value), and the hillside neighbourhoods use inclined lifts and a ropeway. The climate is western-Kyushu maritime: mild and rainy all year, muggy summers with typhoons to watch July–September, and winters that are not very cold.",
+    culture:
+      "The Nagasaki dialect is spoken, with standard Japanese used. Nagasaki's food mixes Chinese, Dutch and Portuguese influences: champon, sara-udon, shippoku cuisine, castella sponge cake and kakuni-manju. The Nagasaki Lantern Festival, a Chinese-style lantern event, is held around the Spring Festival. The pace is easy. No tipping.",
+    seeAndDo:
+      "The Glover Garden and Oura Church (Western residences of the late Edo period, with harbour views); Dejima (the reconstructed Dutch trading post); the Shinchi Chinatown; the Spectacles Bridge; Mount Inasa for the night view (by ropeway); the Hypocentre Park, the Nagasaki Atomic Bomb Museum and the Peace Park — solemn places; be quiet and follow the rules. Farther out: Gunkanjima (Hashima, by boat, weather-dependent), Unzen and Shimabara.",
+    whenAndTips:
+      "Spring and autumn (March–May, October–November) are the most comfortable. The plum rains (June–July) are heavy — Nagasaki is one of the wetter cities in Japan, so carry an umbrella. Boats to Gunkanjima are often cancelled at short notice for wind and swell, so have a backup. Be respectful in word and manner at the atomic-bomb sites.",
+  },
 };
