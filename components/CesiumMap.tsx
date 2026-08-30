@@ -59,14 +59,22 @@ export interface RouteFlyCallbacks {
   onNarrate: () => Promise<void>;
   /** 镜头经过某航点（非阻塞，仅用于同步面板显示当前地形名） */
   onFlyoverWaypoint?: (waypoint: ResolvedWaypoint, index: number) => void;
+  /**
+   * 当前解说进度 0..1（由解说音频 currentTime/duration 得出）。
+   * 返回 null = 音频还没开始 / 无法测量（浏览器 TTS）→ 用时长估算兜底。
+   * 镜头飞行以此为节拍，保证「解说播完时航线也飞完」。
+   */
+  narrationProgress?: () => number | null;
+  /** 解说时长估算（秒），仅在 narrationProgress 不可用时作兜底节拍 */
+  estNarrationSec?: number;
   onPreparingRoute?: () => void;
   onRouteReady?: () => void;
   onComplete: () => void;
   onCancelled?: () => void;
 }
 
-/** 一条航线的镜头飞行总时长（秒）—— 与 ~700 字解说大致对齐，控制在 3 分钟内 */
-const ROUTE_FLIGHT_SEC = 165;
+/** 兜底：无法测量解说进度时的镜头飞行总时长（秒） */
+const ROUTE_FLIGHT_SEC = 150;
 
 export type TerrainMode = "world" | "ellipsoid";
 
@@ -905,7 +913,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           if (flightCancelledRef.current) { callbacks.onCancelled?.(); return; }
 
           // 解说与镜头飞行并行
-          const narrationDone = Promise.resolve(callbacks.onNarrate()).catch(() => {});
+          let narrationOver = false;
+          const narrationDone = Promise.resolve(callbacks.onNarrate())
+            .catch(() => {})
+            .finally(() => { narrationOver = true; });
 
           // 用户一旦自己滚轮/拖动地图 → 交还控制权（解说与地形名继续同步）
           let userTookOver = false;
@@ -934,16 +945,31 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             return a + d * t;
           };
 
-          const T = ROUTE_FLIGHT_SEC * 1000;
+          // 兜底节拍：无法测量解说进度时用估算时长
+          const fallbackMs = Math.max(45, callbacks.estNarrationSec ?? ROUTE_FLIGHT_SEC) * 1000;
           const startMs = performance.now();
           let firedUpTo = 0;
+          let smoothP = 0; // 平滑后的进度，防止解说进度回跳/抖动
           if (waypoints[0]!.kind === "terrain") callbacks.onFlyoverWaypoint?.(waypoints[0]!, 0);
 
           await new Promise<void>((resolve) => {
             const tick = () => {
               if (flightCancelledRef.current) { resolve(); return; }
-              const raw = Math.min(1, (performance.now() - startMs) / T);
-              const p = raw * raw * (3 - 2 * raw); // 全程 smoothstep 缓入缓出
+
+              // 进度以解说为准（解说播完时航线也飞完）
+              const np = callbacks.narrationProgress?.();
+              const elapsed = performance.now() - startMs;
+              if (narrationOver) {
+                // 解说已结束：从当前位置指数平滑收到终点（~1.5s）
+                smoothP = Math.min(1, smoothP + (1 - smoothP) * 0.06 + 0.003);
+              } else if (np != null) {
+                // 跟随解说进度（currentTime/duration 本身平滑单调）——镜头与地形名不落后
+                smoothP = Math.max(smoothP, np);
+              } else {
+                // 解说还没出声 / 浏览器 TTS 不可测 → 按估算时长走
+                smoothP = Math.max(smoothP, Math.min(0.97, elapsed / fallbackMs));
+              }
+              const p = smoothP;
               const targetDist = p * total;
 
               let j = 0;
@@ -968,7 +994,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 if (w.kind === "terrain") callbacks.onFlyoverWaypoint?.(w, firedUpTo);
               }
 
-              if (raw >= 1) { resolve(); return; }
+              // 收尾条件：解说结束且已到终点，或（无解说）估算时长到
+              if (p >= 0.999 && (narrationOver || np == null)) { resolve(); return; }
               requestAnimationFrame(tick);
             };
             requestAnimationFrame(tick);

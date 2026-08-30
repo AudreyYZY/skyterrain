@@ -229,6 +229,10 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "收起",
     "en-US": "Collapse",
   },
+  "panel.minimize": {
+    "zh-CN": "最小化",
+    "en-US": "Minimize",
+  },
   "panel.close": {
     "zh-CN": "关闭",
     "en-US": "Close",
