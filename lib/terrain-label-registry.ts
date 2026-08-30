@@ -151,6 +151,18 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "lake-eyre": "regional",
   "kata-tjuta": "regional",
   "twelve-apostles": "regional",
+  "shark-bay": "national",
+  purnululu: "national",
+  "willandra-lakes": "national",
+  "great-australian-bight": "regional",
+  "great-sandy-desert": "regional",
+  "glasshouse-mountains": "regional",
+  "kings-canyon": "regional",
+  nitmiluk: "regional",
+  "wave-rock": "regional",
+  "karlu-karlu": "regional",
+  "nambung-pinnacles": "regional",
+  "mount-gambier": "regional",
 
   // 新西兰
   "aoraki-southern-alps": "national",

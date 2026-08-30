@@ -860,6 +860,185 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Ningaloo coast is the traditional sea country of the Yinigudura and other Aboriginal groups, with shell middens and rock art thousands of years old. There was a whaling station here in the 19th century (Norwegian Bay). A marine park was declared in 1987 and the area was World Heritage-listed in 2011.",
   },
 
+  "shark-bay": {
+    seeing:
+      "Shark Bay is a large embayment on the mid-west coast of Western Australia, at the westernmost point of the Australian mainland, where north–south peninsulas and islands divide the water into a series of shallow gulfs. It is World Heritage-listed for three things: its vast seagrass beds, its dugong population, and the living stromatolites of Hamelin Pool.",
+    formation:
+      "The parallel peninsulas (Peron and others) are drowned former coastal sand dunes now standing as ridges. Hamelin Pool lies behind a shallow underwater bar at the south of the bay, so seawater exchange is slow; with strong evaporation the water is about twice as saline as normal seawater. Shell Beach is built from the shells of a small cockle that thrives in the low-diversity water, washed ashore over a stretch about 100 km long and up to about 10 m deep.",
+    observation:
+      "From the air Shark Bay looks like an open hand: red-brown peninsulas reach into pale-green shallows, with channels of varying depth between them. The water around Hamelin Pool is whitish-green, and dark bands of stromatolite reef show close to shore. Shell Beach is a glaring line of pure white.",
+    distinguish:
+      "The Shark Bay stromatolites are not a coral reef. Coral reefs are built from animal skeletons; stromatolites are rock mounds built up layer by layer as cyanobacteria trap sediment — among the structures left by Earth's earliest life. Like the Great Barrier Reef it is World Heritage-listed, but one is about \"the oldest life\" and the other about \"the largest living structure.\"",
+    concept:
+      "Living stromatolites are very rare, because in normal seawater grazing animals eat them away. The extreme salinity of Hamelin Pool keeps those animals out, so its stromatolites can grow as they did in the distant past — a living analogue for studying early life on Earth.",
+    history:
+      "Shark Bay is the traditional sea country of the Malgana people; \"Gathaagudu\" means \"two waters.\" In 1616 the Dutch navigator Dirk Hartog landed on an island at the bay's mouth and left an inscribed pewter plate — the first recorded European landing on the Western Australian coast. It was World Heritage-listed in 1991.",
+  },
+
+  purnululu: {
+    seeing:
+      "Purnululu National Park is in the Kimberley region of north-eastern Western Australia. Its centrepiece is the Bungle Bungle Range — a mass of orange-and-grey, beehive-shaped sandstone cones rising about 200–300 m above flat surrounding grassland. It came to wide public notice only in the 1980s.",
+    formation:
+      "The cones are Devonian (about 350-million-year-old) quartz sandstone and conglomerate laid down by rivers, later uplifted and cut by a grid of joints. Over roughly 20 million years rainwater eroded down along the joints, carving the rock into rounded towers. The orange bands are iron- and manganese-rich clay crusts on the more porous, water-absorbing layers; the grey bands are a crust of cyanobacteria on layers that hold moisture.",
+    observation:
+      "From the air the southern half of the range is a dense field of round-topped towers, like a swarm of beehives or upturned egg cartons separated by deep gorges; the northern half is dissected sandstone plateau and canyon. The dead-flat dark grassland all around makes the orange-grey rock stand out sharply.",
+    distinguish:
+      "Purnululu's cones, Uluṟu and Kata Tjuṯa are all sandstone remnants, but Uluṟu is one near-vertical tilted slab, Kata Tjuṯa is a few dozen big conglomerate domes, and Purnululu is hundreds of small towers cut into flat-lying sandstone — UNESCO calls it \"cone karst in sandstone.\"",
+    concept:
+      "\"Karst\" usually means landforms dissolved by water in limestone, but Purnululu develops in sandstone: the sandstone here is weakly cemented, so long-term rainwater scouring along joints can also produce pinnacle- and cone-like forms. The surface crust of cyanobacteria and clay is fragile; once it is broken and washed away, the towers decay faster.",
+    history:
+      "Purnululu is the home of the Jaru and Gija peoples; \"Purnululu\" means \"sandstone\" in the Gija language. Local people have always known it; a 1983 documentary brought the Bungle Bungle Range to wider attention. The national park was declared in 1987 and World Heritage-listed in 2003.",
+  },
+
+  "wave-rock": {
+    seeing:
+      "Wave Rock, beside the town of Hyden in the Western Australian wheatbelt, is a granite slope about 15 m high and 110 m long shaped like a breaking ocean wave \"frozen\" in place. It is in fact just a small part of the north side of a large inselberg called Hyden Rock.",
+    formation:
+      "This granite belongs to the Yilgarn Craton and is about 2.6 billion years old. It was once deep underground, covered by a thick, deeply weathered mantle of rock. Groundwater seeping along the base of the rock body slowly weathered the contact surface into a concave curve. Later the soft cover was stripped by erosion, exposing this underground-formed hollow as the \"wave.\"",
+    observation:
+      "You cannot see the \"wave\" from the air — that needs a ground-level view from the foot of the cliff. From above you see Hyden Rock: a grey-white, rounded dome of bare granite set among red-earth farmland, with a low wall along its top built to collect rainwater. Wave Rock is the north edge of this dome.",
+    distinguish:
+      "This kind of hollowed-out base is called a flared slope, a common foot form on inselbergs — not made by waves, rivers or wind. Like Uluṟu it is an inselberg, but Uluṟu is tilted sandstone while Hyden Rock is granite, an old flat-lying body being exhumed.",
+    concept:
+      "Granite forms underground and, once exposed, weathers along pre-existing joints and contacts. The strongest weathering is often below the soil, at the base of the rock where moisture lingers — which is why many inselbergs have a concave arc around their foot. The dark vertical streaks on Wave Rock are from mineral-rich rainwater running down the slope, plus algae and lichen.",
+    history:
+      "The Hyden Rock area is the country of the Ballardong Noongar people. A retaining wall was built along the top in 1928 to supply water to Hyden. A photograph of Wave Rock won an international photography award in the 1960s, and it has been a Western Australian landmark ever since.",
+  },
+
+  "karlu-karlu": {
+    seeing:
+      "Karlu Karlu, south of Tennant Creek in the Northern Territory, is a field of huge rounded granite boulders scattered across pale-red flat ground — some sitting alone, some balanced two-high as if about to roll — ranging from half a metre to six metres across. It is an important sacred site to the Warumungu and other peoples.",
+    formation:
+      "The boulders come from a large body of granite that solidified underground about 1.6 billion years ago. During uplift the rock split along three near-vertical sets of joints into rectangular blocks. Once raised to the surface, the corners weathered faster than the flat faces (attacked from three sides) and peeled away layer by layer, like an onion, rounding the blocks into spheres.",
+    observation:
+      "From the air Karlu Karlu is a small patch of dark specks on a pale-red shrub plain, gathered in a shallow valley. The rock is grey with rusty tints, a three-colour contrast against the red soil and green shrubs. The area is small; only up close can you see it is made of separate giant boulders.",
+    distinguish:
+      "The \"marbles\" in the common name Devils Marbles is only a figure of speech — this is granite, not marble. Like Wave Rock it is a granite inselberg landform, but Wave Rock is a single dome while Karlu Karlu is a field of boulders thoroughly cut by joints and then rounded one by one.",
+    concept:
+      "This is a textbook example of spheroidal weathering: once hard rock with regular joints is cut into blocks, the corners — where heat loss, water uptake and stress are all more severe than on flat faces — break down first, turning cubes into spheres. The same process occurs in many granite areas worldwide; it is just unusually well preserved and concentrated here.",
+    history:
+      "Karlu Karlu is significant to the Warumungu, Kaytetye, Alyawarre and Warlpiri peoples and is linked to several traditional routes. In 1953 one boulder was removed for use as a headstone; it was returned to its place in 2008. The reserve is now jointly managed by the traditional owners and the NT parks agency.",
+  },
+
+  "kings-canyon": {
+    seeing:
+      "Kings Canyon, in Watarrka National Park in the Northern Territory, is a deep valley cut by a creek through the George Gill Range, walled by near-vertical red-and-white sandstone cliffs about 100 m high. A permanent waterhole on the canyon floor is known as the \"Garden of Eden.\"",
+    formation:
+      "The canyon cuts into the roughly 400-million-year-old Mereenie Sandstone — then a field of wind-blown dunes, whose sand was compacted and cemented with silica into a hard, brittle quartz sandstone; the old dune cross-bedding is still visible on the cliff faces. Below it is the softer Carmichael Sandstone, with an impermeable shale layer between. The creek cut down along two vertical joint sets in the sandstone, deepening on one side and shedding large blocks along the joints on the other, producing the squared-off gorge.",
+    observation:
+      "From the air Kings Canyon is a straight deep slot in a red plateau, with a flat clifftop on one side and, on the other, a field of round-topped sandstone domes — where two joint sets cross, the surface is divided into blocks that weather into domes, known as the \"Lost City.\" The canyon floor bends along the joint directions.",
+    distinguish:
+      "Kings Canyon is a joint-controlled sandstone gorge, unlike the Yangtze's Three Gorges where a river cuts across folded mountains: here the beds are essentially flat and the trend of the valley and the squareness of the cliffs are set by the joint network in the rock. It is far smaller than the Yarlung Tsangpo Grand Canyon but its walls are more regular.",
+    concept:
+      "The shale aquiclude is the key here: rainwater soaks into the upper sandstone, is stopped by the shale, flows sideways along the bedding and seeps out halfway up the canyon wall, sustaining the \"Garden of Eden\" waterhole and a small stand of cycads and ferns — a moist island in the desert. It shows how differences in a rock unit's permeability can create local oases in dry country.",
+    history:
+      "Watarrka is significant to the local Luritja people, a refuge for many plants and animals, and a place of traditional stories. \"Watarrka\" is the local name for a species of acacia. The national park was declared in 1989.",
+  },
+
+  nitmiluk: {
+    seeing:
+      "Nitmiluk, north-east of the town of Katherine in the Northern Territory, is a chain of gorges where the Katherine River cuts through a sandstone plateau — at low water in the dry season it breaks into 13 separate deep pools divided by rock bars; when the wet season raises the river it joins back into one continuous flow.",
+    formation:
+      "The gorges cut the roughly 1.65-billion-year-old Kombolgie Sandstone, a very hard quartz sandstone. This sandstone is cut by two sets of joints and faults, and the Katherine River eroded down along those lines of weakness — so the gorge is not a straight line but a series of straight reaches meeting at sharp angles.",
+    observation:
+      "From the air Nitmiluk is a zig-zag green slot cut into a deep-red sandstone plateau: the water is dark green, the walls are vertical orange-red sandstone, and sparse eucalypt woodland on the plateau surface runs right to the cliff edge. Every bend of the gorge follows the direction of a joint in the rock.",
+    distinguish:
+      "Nitmiluk and Kings Canyon are both gorges cut into flat-lying hard sandstone under joint control, and form in similar ways; but Nitmiluk is a large, permanently watered valley you can travel by boat, while Kings Canyon is a short, dry side gorge. It is the same Arnhem Land sandstone as Kakadu's \"stone country,\" expressed here as a river valley.",
+    concept:
+      "When a river meets a large body of hard, sparsely jointed rock, it cannot meander freely and must follow the joints and faults already in the rock — the result is this \"angular\" gorge made of straight segments with abrupt turns. The plan of the gorge is almost a map of the joint system in the sandstone.",
+    history:
+      "Nitmiluk is the country of the Jawoyn people; the name means \"Cicada Place.\" The land was returned to the Jawoyn in 1989, and the national park is jointly managed by them and the NT parks agency. Edith Falls (Leliyn in Jawoyn) upstream is also within the park.",
+  },
+
+  "glasshouse-mountains": {
+    seeing:
+      "The Glass House Mountains, in south-east Queensland about 70 km north of Brisbane, are a group of steep peaks rising abruptly and alone from a flat coastal plain, the highest being Mount Beerwah at about 556 m. Their shapes are striking — some like round towers, some like knife-backs — and they do not connect to each other.",
+    formation:
+      "Each peak is a volcanic plug: about 25–27 million years ago, viscous magma such as trachyte and rhyolite rose to near the surface and solidified in its vent. Since then the softer surrounding sandstone has been eroded away by hundreds of metres, leaving only the especially hard volcanic plugs standing as today's isolated peaks.",
+    observation:
+      "From the air the Glass House Mountains are a dozen or so dark rock peaks rising suddenly among green plantations and towns, each separate and a few kilometres apart. Their walls are near-vertical, often with bare pale rock faces, and the lower slopes are gentle woodland. Seen from the sea or the plain they look like a row of towers on the horizon.",
+    distinguish:
+      "The Glass House Mountains are volcanic plugs (the remains of magma conduits), not complete volcanic cones and not sandstone remnants. Compared with Uluṟu: Uluṟu is sedimentary sandstone, the Glass House Mountains are igneous rock; Uluṟu is one mass, the Glass House Mountains are a dozen scattered plugs.",
+    concept:
+      "A volcanic plug is the clearest display of differential erosion: on one piece of land, hard volcanic rock and soft sedimentary rock are eroded together, and after millions of years the soft rock is lowered by hundreds of metres while the hard plugs stand almost in place. It records not how the volcano looked when it erupted, but how the conduit looks after being \"washed out.\"",
+    history:
+      "The Glass House Mountains are an important cultural landscape for the Jinibara and other peoples, with several peaks being sacred sites. James Cook sailed past in 1770 and named them because their shapes reminded him of glass furnaces in England. Several peaks are now national park, with strict rules on climbing.",
+  },
+
+  "great-sandy-desert": {
+    seeing:
+      "The Great Sandy Desert is in north-eastern Western Australia, straddling the Pilbara and southern Kimberley and extending east into the Northern Territory — the second-largest desert in Australia. It is mostly not tall dunes but endless low sand plains, crossed by long, near-parallel sand ridges trending roughly east–west.",
+    formation:
+      "The ridges are longitudinal dunes — their long axis parallel to the prevailing wind, which moves sand along the ridge and shapes it long and straight, some running unbroken for over 40 km and mostly 10–25 m high. Between the ridges are flat interdune corridors, often with claypans and seasonal salt lakes (such as the Percival Lakes). The red colour of the sand comes from a thin coating of iron oxide on the grains.",
+    observation:
+      "From the air the Great Sandy Desert is an orange-red \"comb\": countless parallel dark sand ridges, evenly spaced, running to the horizon; white salt lakes and pale claypans dot the corridors. Near its northern edge you can see a circular pit — Wolfe Creek Crater (Kandimalal), a well-preserved meteorite impact crater.",
+    distinguish:
+      "The Great Sandy Desert is dominated by longitudinal dunes, similar to the Simpson Desert (whose parallel ridges are more regular and redder); the tall pyramidal sand mountains in the centre of the Badain Jaran or Taklamakan are a different type. It is slightly smaller than the Great Victoria Desert, sits further north, and gets a little rain from the edge of the monsoon in summer.",
+    concept:
+      "Longitudinal dunes tell you the prevailing wind direction of a sand sea: whichever way the ridges point, that is the direction the main wind blows year-round. Once fixed by sparse vegetation, such dunes can stay essentially still for thousands of years — so the set of parallel ridges seen from the air is a fairly stable \"record of ancient wind direction.\"",
+    history:
+      "The Great Sandy Desert is the traditional land of the Martu and other Aboriginal peoples, who for generations moved through it between water sources and seasonal foods. In the mid-20th century many families moved to settlements on the desert's edge; in recent decades parts have been declared Indigenous Protected Areas managed by traditional owners.",
+  },
+
+  "great-australian-bight": {
+    seeing:
+      "The Great Australian Bight is a huge, open, curved gulf on the central southern coast of Australia, facing the Southern Ocean. Its best-known stretch of coast is the Bunda Cliffs: a straight limestone cliff line running about 210 km, some 60–120 m high, with the edge of the Nullarbor Plain at the top and deep sea directly below.",
+    formation:
+      "The Bunda Cliffs are Eocene Wilson Bluff Limestone, then a shallow sea floor. About 50 million years ago Australia separated from Antarctica and drifted north; this continental margin was uplifted and then cut back by the constant pounding of the Southern Ocean's swell into this near-vertical cliff line. The clifftop is almost featureless because the Nullarbor itself is one uncut slab of limestone.",
+    observation:
+      "From the air there are three parallel bands — plain, cliff, sea: inland is the pale-yellow, treeless Nullarbor Plain, then abruptly a white cliff wall, and immediately below it the deep-blue Southern Ocean, with almost no beach in between. The cliff line is extremely straight, notched only here and there by small bays. Around the Head of Bight, southern right whales with calves appear close inshore from about May to October.",
+    distinguish:
+      "The Bunda Cliffs are a vertical cliff formed by marine cliff retreat, unlike the broken \"cliff–cave–arch–stack\" coast of the Twelve Apostles — here the beds are horizontal and uniform, so the whole cliff retreats evenly and leaves no stacks. It is also not a fault scarp: the cliff's position is set by wave erosion, not by a break in the crust.",
+    concept:
+      "This cliff is a direct exposure of a continental margin: the rupture surface left when Australia and Antarctica split, now trimmed by waves into a cross-section. Looking into the cliff you can read a stack of Eocene shallow-sea limestone full of the marine fossils of the time — an ancient sea floor lifted out of the water and sliced open for display.",
+    history:
+      "This area is a boundary zone between several Aboriginal peoples of the south coast, and travel across the Nullarbor depended heavily on a few limited water holes. In 1841 Edward Eyre walked across this coast, the first recorded overland crossing. The later transcontinental telegraph line, railway and highway all skirt the northern edge of the plain, because the cliff coast is impassable.",
+  },
+
+  "nambung-pinnacles": {
+    seeing:
+      "The Pinnacles, in Nambung National Park north of Perth in Western Australia, are dense fields of limestone pillars standing in yellow sand — from a few tens of centimetres to about 3.5 m tall, numbering in the thousands. Around them is drifting yellow sand and low heath, with the Indian Ocean a few kilometres to the west.",
+    formation:
+      "The pillars' parent rock is the Tamala Limestone — formed from shell-fragment beach sand blown inland into dunes and gradually cemented. Rainwater soaking down along plant-root channels and cracks in the dunes dissolved vertical \"solution pipes\" in the limestone, whose walls became re-cemented and harder. Later the soft sand on top was blown away, leaving these erosion-resistant hard pillars. The exact process is still debated among researchers.",
+    observation:
+      "From the air the Pinnacles are a darker, rougher-textured patch within the coastal dune belt; only close up can you resolve the shadows of countless pillars. The pillar field contrasts with the smooth yellow drifting dunes around it and the bright white coastline further out. As the dunes move in the windy season, one set of pillars is buried and another exposed.",
+    distinguish:
+      "The Pinnacles are residual bodies left by dissolution plus differential erosion — not stalagmites (they do not grow by dripping water) and not fossil tree trunks. They are similar in form and related in origin to Purnululu's sandstone cones (both shaped by water eroding along cracks), but the Pinnacles are far smaller individually and develop in young coastal limestone.",
+    concept:
+      "This pillar field shows that a coastal dune is not just an inert pile of sand: given enough rainfall, seeping water can, over tens of thousands of years, rework the interior of a calcareous dune into alternating hard pillars and soft sand — and once the wind removes the soft part, the underground form is turned up to the surface.",
+    history:
+      "The Nambung area is the country of the Yued Noongar people. A 17th-century Dutch chart already marked \"limestone pinnacles\" near this coast. The pillar field was long covered by drifting sand and only came to wide notice in the 1960s; it was added to the national park in 1994.",
+  },
+
+  "willandra-lakes": {
+    seeing:
+      "The Willandra Lakes Region, in the dry interior of south-western New South Wales, is a chain of about 17 long-dry Pleistocene lake beds. Today there is no water — only flat lake floors and, on the eastern shore of each, a crescent-shaped ridge of sand and clay. Lake Mungo is the most thoroughly studied of them.",
+    formation:
+      "The lakes were once fed by Willandra Creek, formerly a branch of the Lachlan River. In wetter glacial times the lakes joined into one sheet of water; about 18,500 years ago the river shifted course and the climate dried, and the lakes dried out for good. While the lakes existed, prevailing westerly winds carried sand and clay from the lake shores to the eastern side and piled them into crescent-shaped \"lunettes\"; the one at Lake Mungo is known as the \"Walls of China.\"",
+    observation:
+      "From the air Willandra is a set of pale round and oval basins on a dry red-earth plain, each with a crescent of pale sand ridge hugging its eastern side. The Lake Mungo lunette is eroded by rain into a stretch of white gullied badlands. The whole region has no rivers and no open water — a \"fossil drainage map.\"",
+    distinguish:
+      "Willandra's basins are dry lakes left behind after the climate dried, unlike Lake Eyre, an \"active salt lake that fills only occasionally\": Lake Eyre still fills in big flood years, whereas the Willandra lakes have held no water for more than ten thousand years. Its lunettes are the key evidence for \"there was once a lake here, and this is the wind that blew then.\"",
+    concept:
+      "A lunette is the \"fingerprint\" of an ancient lake: it always sits on the downwind shore, and within it a layer of quartz sand marks a time when the lake held water, a layer of clay a time when the lake shrank to a salt flat. Reading a section through a lunette reconstructs the wet–dry history of that lake over tens of thousands of years.",
+    history:
+      "Willandra is the country of the Mutthi Mutthi, Ngiyampaa and Paakantyi (Barkindji) peoples, continuously occupied for at least tens of thousands of years. In 1968 and 1974, geologists found in the Lake Mungo lunette two sets of human remains about 40,000 years old (known as \"Mungo Lady\" and \"Mungo Man\"), and later about 460 fossil footprints; these findings are all scientifically published and are central to the area's 1981 World Heritage listing. The remains were returned to the local community and reburied in 2022.",
+  },
+
+  "mount-gambier": {
+    seeing:
+      "Mount Gambier, in the far south-east corner of South Australia near the Victorian border, is a city built on a volcano. The town sits on several overlapping shallow craters, the largest of which holds the Blue Lake — a near-circular deep lake that turns vivid cobalt blue in the warmer half of the year and grey in the cooler half.",
+    formation:
+      "These craters are called maars: rising magma met groundwater, the water flashed to steam and drove a series of explosions that blasted broad shallow pits into the ground, ringed by low rims of debris. The crater floors lie below the water table, so they hold lakes. It belongs to a young volcanic province in south-eastern Australia.",
+    observation:
+      "From the air Mount Gambier is a set of nested circular hollows among farmland and town, each holding a lake: the Blue Lake is the deepest and most evenly coloured; nearby Valley Lake and Brownes Lake are shallower and partly wetland. The city streets run right around the crater rims.",
+    distinguish:
+      "The Blue Lake is a crater lake, entirely different in origin from a glacially scoured lake like Kanas or a fault-subsidence lake like Qinghai Lake. It also differs from a Hawaiian-style shield volcano that pours out sheets of lava — this was an explosive eruption where magma met groundwater, and the product is a pit, not a lava flow.",
+    concept:
+      "The Blue Lake's summer colour is generally attributed to warming of the surface water and the crystallisation of tiny calcium carbonate crystals in the lake, which scatter the blue light in sunlight so the water looks blue; when it cools the crystals dissolve and the blue fades. The exact mechanism is still under study. It is a reminder that a lake's colour can be a physical phenomenon that changes with the season, not a dye.",
+    history:
+      "This area is the country of the Boandik people. Different methods give ages for the last eruption ranging from about 28,000 to about 6,000 years ago; if the most recent figure of about 6,000 years is correct, this may be the most recent volcanic eruption known on the Australian mainland. The Blue Lake has been Mount Gambier's drinking-water supply since 1884.",
+  },
 
   kanas: {
     seeing:
