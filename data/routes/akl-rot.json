@@ -1,0 +1,47 @@
+{
+  "id": "akl-rot",
+  "name": "奥克兰 — 罗托鲁瓦",
+  "nameEn": "Auckland — Rotorua",
+  "description": "怀卡托河 · 罗托鲁瓦破火山口",
+  "descriptionEn": "Waikato River · Rotorua Caldera",
+  "depCountry": "new-zealand",
+  "arrCountry": "new-zealand",
+  "flight": {
+    "airline": "新西兰航空",
+    "airlineEn": "Air New Zealand",
+    "flightNo": "NZ8215",
+    "aircraft": "Bombardier Q300",
+    "depIata": "AKL",
+    "arrIata": "ROT",
+    "durationMin": 35
+  },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "akl",
+      "name": "奥克兰",
+      "nameEn": "Auckland",
+      "lat": -37.008,
+      "lon": 174.792,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "waikato-river"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rotorua-caldera"
+    },
+    {
+      "kind": "city",
+      "id": "rot",
+      "name": "罗托鲁瓦",
+      "nameEn": "Rotorua",
+      "lat": -38.109,
+      "lon": 176.317,
+      "airport": true
+    }
+  ]
+}

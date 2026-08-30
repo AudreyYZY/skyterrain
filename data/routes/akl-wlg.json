@@ -1,0 +1,19 @@
+{
+  "id": "akl-wlg",
+  "name": "奥克兰 — 惠灵顿",
+  "nameEn": "Auckland — Wellington",
+  "description": "怀卡托河 · 陶波湖 · 鲁阿佩胡火山 · 塔拉鲁瓦山脉",
+  "descriptionEn": "Waikato River · Lake Taupō · Mount Ruapehu · Tararua Range",
+  "depCountry": "new-zealand",
+  "arrCountry": "new-zealand",
+  "flight": { "airline": "新西兰航空", "airlineEn": "Air New Zealand", "flightNo": "NZ409", "aircraft": "Airbus A320", "depIata": "AKL", "arrIata": "WLG", "durationMin": 65 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "akl", "name": "奥克兰", "nameEn": "Auckland", "lat": -37.008, "lon": 174.792, "airport": true },
+    { "kind": "terrain", "terrainId": "waikato-river" },
+    { "kind": "terrain", "terrainId": "lake-taupo" },
+    { "kind": "terrain", "terrainId": "mount-ruapehu" },
+    { "kind": "terrain", "terrainId": "tararua-range" },
+    { "kind": "city", "id": "wlg", "name": "惠灵顿", "nameEn": "Wellington", "lat": -41.327, "lon": 174.805, "airport": true }
+  ]
+}

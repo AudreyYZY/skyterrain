@@ -17,10 +17,42 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "pvg", "name": "上海浦东", "nameEn": "Shanghai Pudong", "lat": 31.143, "lon": 121.805, "airport": true },
-    { "kind": "terrain", "terrainId": "yangtze-delta" },
-    { "kind": "terrain", "terrainId": "seto-inland-sea" },
-    { "kind": "terrain", "terrainId": "osaka-plain" },
-    { "kind": "city", "id": "kix", "name": "大阪关西", "nameEn": "Osaka Kansai", "lat": 34.427, "lon": 135.244, "airport": true }
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-delta"
+    },
+    {
+      "kind": "feature",
+      "name": "东海",
+      "nameEn": "East China Sea",
+      "lon": 126,
+      "lat": 31.2
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "seto-inland-sea"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "osaka-plain"
+    },
+    {
+      "kind": "city",
+      "id": "kix",
+      "name": "大阪关西",
+      "nameEn": "Osaka Kansai",
+      "lat": 34.427,
+      "lon": 135.244,
+      "airport": true
+    }
   ]
 }

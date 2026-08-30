@@ -436,7 +436,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
     const flightCancelledRef = useRef(false);
-    const routeEntityRef = useRef<import("cesium").Entity | null>(null);
     /** 地形区域高亮实体（每个 terrain：贴地拾取多边形 + 抬升体）*/
     const terrainRegionRef = useRef<Map<string, RegionEntry>>(new Map());
     const hoveredTerrainRef = useRef<string | null>(null);
@@ -860,7 +859,15 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             callbacks.onCancelled?.();
             return;
           }
-          drawRouteLine(Cesium, viewer, waypoints, routeEntityRef);
+
+          // 飞行途中把地形细节调粗一档 —— 大幅减少切片加载，过洋 / 长途不再卡顿发糊。
+          // 结束后恢复（见下方 restoreDetail）。
+          const prevSSE = viewer.scene.globe.maximumScreenSpaceError;
+          viewer.scene.globe.maximumScreenSpaceError = 6;
+          const restoreDetail = () => {
+            viewer.scene.globe.maximumScreenSpaceError = prevSSE;
+            viewer.scene.requestRender();
+          };
 
           const n = waypoints.length;
 
@@ -880,7 +887,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               heightCacheRef.current,
             ));
           }
-          if (flightCancelledRef.current) { setRoutePreparing(false); callbacks.onCancelled?.(); return; }
+          if (flightCancelledRef.current) { restoreDetail(); setRoutePreparing(false); callbacks.onCancelled?.(); return; }
 
           // 每个航点的朝向 = 前后航点连线的切向（端点用相邻段）
           const headings = waypoints.map((_, i) => {
@@ -909,8 +916,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           setRoutePreparing(false);
           callbacks.onRouteReady?.();
-          await sleep(500);
-          if (flightCancelledRef.current) { callbacks.onCancelled?.(); return; }
+          // 起飞前停一下，让人看清「从哪起飞」
+          callbacks.onFlyoverWaypoint?.(waypoints[0]!, 0);
+          await sleep(2200);
+          if (flightCancelledRef.current) { restoreDetail(); callbacks.onCancelled?.(); return; }
 
           // 解说与镜头飞行并行
           let narrationOver = false;
@@ -950,7 +959,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           const startMs = performance.now();
           let firedUpTo = 0;
           let smoothP = 0; // 平滑后的进度，防止解说进度回跳/抖动
-          if (waypoints[0]!.kind === "terrain") callbacks.onFlyoverWaypoint?.(waypoints[0]!, 0);
 
           await new Promise<void>((resolve) => {
             const tick = () => {
@@ -991,7 +999,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               while (firedUpTo < j) {
                 firedUpTo++;
                 const w = waypoints[firedUpTo]!;
-                if (w.kind === "terrain") callbacks.onFlyoverWaypoint?.(w, firedUpTo);
+                if (w.kind === "terrain" || w.kind === "feature") callbacks.onFlyoverWaypoint?.(w, firedUpTo);
               }
 
               // 收尾条件：解说结束且已到终点，或（无解说）估算时长到
@@ -1003,12 +1011,11 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           canvas.removeEventListener("wheel", relinquish);
           canvas.removeEventListener("pointerdown", relinquish);
+          restoreDetail();
           if (flightCancelledRef.current) { callbacks.onCancelled?.(); return; }
 
-          // 收尾：确保面板显示到最后一处地形
-          for (let k = n - 1; k > firedUpTo; k--) {
-            if (waypoints[k]!.kind === "terrain") { callbacks.onFlyoverWaypoint?.(waypoints[k]!, k); break; }
-          }
+          // 收尾：抵达到达机场
+          callbacks.onFlyoverWaypoint?.(waypoints[n - 1]!, n - 1);
 
           // 等解说播完（封顶 60s，避免异常时卡住）
           await Promise.race([narrationDone, sleep(60000)]);
@@ -1755,32 +1762,6 @@ async function preloadRoute(
 
   await sleep(300);
   viewer.scene.requestRender();
-}
-
-function drawRouteLine(
-  Cesium: typeof import("cesium"),
-  viewer: import("cesium").Viewer,
-  waypoints: ResolvedWaypoint[],
-  entityRef: { current: import("cesium").Entity | null }
-) {
-  if (entityRef.current) {
-    viewer.entities.remove(entityRef.current);
-    entityRef.current = null;
-  }
-
-  // 固定高度 + 大圆弧段 —— 不用 clampToGround（会懒加载 createGroundPolylineGeometry
-  // worker，网络异常时崩溃，与 polygon.outline 同类问题）。
-  const ROUTE_LINE_HEIGHT_M = 120_000;
-  entityRef.current = viewer.entities.add({
-    polyline: {
-      positions: Cesium.Cartesian3.fromDegreesArrayHeights(
-        waypoints.flatMap((w) => [w.lon, w.lat, ROUTE_LINE_HEIGHT_M])
-      ),
-      width: 2.5,
-      material: Cesium.Color.fromCssColorString("#f5b544").withAlpha(0.9),
-      arcType: Cesium.ArcType.GEODESIC,
-    },
-  });
 }
 
 export default CesiumMap;

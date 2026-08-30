@@ -27,6 +27,13 @@
       "airport": true
     },
     {
+      "kind": "feature",
+      "name": "燕山",
+      "nameEn": "Yan Mountains",
+      "lon": 118.2,
+      "lat": 40.6
+    },
+    {
       "kind": "terrain",
       "terrainId": "northeast"
     },
