@@ -372,6 +372,64 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "黄果树瀑布", nameEn: "Huangguoshu Falls", lon: 105.710, lat: 25.990, kind: "nature" },
     { nameZh: "西江千户苗寨", nameEn: "Xijiang Miao Village", lon: 108.180, lat: 26.500, kind: "district" },
   ],
+
+  xining: [
+    { nameZh: "塔尔寺", nameEn: "Kumbum Monastery", lon: 101.578, lat: 36.489, kind: "landmark" },
+    { nameZh: "东关清真大寺", nameEn: "Dongguan Grand Mosque", lon: 101.800, lat: 36.617, kind: "landmark" },
+    { nameZh: "青海省博物馆", nameEn: "Qinghai Provincial Museum", lon: 101.750, lat: 36.650, kind: "landmark" },
+    { nameZh: "南山公园", nameEn: "Nanshan Park", lon: 101.770, lat: 36.600, kind: "nature" },
+    { nameZh: "莫家街", nameEn: "Mojia Street", lon: 101.790, lat: 36.620, kind: "district" },
+    { nameZh: "青海湖 · 二郎剑", nameEn: "Qinghai Lake · Erlangjian", lon: 100.500, lat: 36.550, kind: "nature" },
+  ],
+
+  yinchuan: [
+    { nameZh: "西夏陵", nameEn: "Western Xia Tombs", lon: 105.980, lat: 38.480, kind: "landmark" },
+    { nameZh: "贺兰山岩画", nameEn: "Helan Mountain Rock Art", lon: 106.070, lat: 38.720, kind: "landmark" },
+    { nameZh: "镇北堡西部影城", nameEn: "Zhenbeibu Western Film Studios", lon: 106.010, lat: 38.610, kind: "landmark" },
+    { nameZh: "水洞沟", nameEn: "Shuidonggou", lon: 106.520, lat: 38.320, kind: "landmark" },
+    { nameZh: "宁夏博物馆", nameEn: "Ningxia Museum", lon: 106.220, lat: 38.500, kind: "landmark" },
+    { nameZh: "沙坡头", nameEn: "Shapotou", lon: 104.950, lat: 37.450, kind: "nature" },
+  ],
+
+  urumqi: [
+    { nameZh: "新疆国际大巴扎", nameEn: "Xinjiang International Grand Bazaar", lon: 87.617, lat: 43.775, kind: "district" },
+    { nameZh: "新疆维吾尔自治区博物馆", nameEn: "Xinjiang Uygur Autonomous Region Museum", lon: 87.590, lat: 43.815, kind: "landmark" },
+    { nameZh: "红山公园", nameEn: "Hong Shan Park", lon: 87.610, lat: 43.810, kind: "nature" },
+    { nameZh: "水磨沟", nameEn: "Shuimogou", lon: 87.660, lat: 43.830, kind: "nature" },
+    { nameZh: "天山天池", nameEn: "Tianchi of the Tianshan", lon: 88.120, lat: 43.880, kind: "nature" },
+    { nameZh: "南山（菊花台）", nameEn: "Nanshan (Juhuatai)", lon: 87.300, lat: 43.400, kind: "nature" },
+  ],
+
+  hongkong: [
+    { nameZh: "太平山顶", nameEn: "Victoria Peak", lon: 114.150, lat: 22.271, kind: "nature" },
+    { nameZh: "天星小轮", nameEn: "Star Ferry", lon: 114.161, lat: 22.287, kind: "transport" },
+    { nameZh: "尖沙咀海滨 · 星光大道", nameEn: "Tsim Sha Tsui Promenade · Avenue of Stars", lon: 114.174, lat: 22.293, kind: "district" },
+    { nameZh: "香港历史博物馆", nameEn: "Hong Kong Museum of History", lon: 114.177, lat: 22.302, kind: "landmark" },
+    { nameZh: "旺角", nameEn: "Mong Kok", lon: 114.170, lat: 22.319, kind: "district" },
+    { nameZh: "天坛大佛（大屿山）", nameEn: "Tian Tan Buddha (Lantau)", lon: 113.905, lat: 22.254, kind: "landmark" },
+    { nameZh: "龙脊", nameEn: "Dragon's Back", lon: 114.243, lat: 22.226, kind: "nature" },
+  ],
+
+  macao: [
+    { nameZh: "大三巴牌坊", nameEn: "Ruins of St Paul's", lon: 113.540, lat: 22.198, kind: "landmark" },
+    { nameZh: "议事亭前地", nameEn: "Senado Square", lon: 113.540, lat: 22.194, kind: "district" },
+    { nameZh: "妈阁庙", nameEn: "A-Ma Temple", lon: 113.531, lat: 22.186, kind: "landmark" },
+    { nameZh: "大炮台 · 澳门博物馆", nameEn: "Mount Fortress · Macao Museum", lon: 113.541, lat: 22.197, kind: "landmark" },
+    { nameZh: "氹仔官也街", nameEn: "Rua do Cunha, Taipa", lon: 113.556, lat: 22.156, kind: "district" },
+    { nameZh: "路环圣方济各教堂", nameEn: "St Francis Xavier's Church, Coloane", lon: 113.564, lat: 22.117, kind: "landmark" },
+    { nameZh: "黑沙海滩", nameEn: "Hac Sa Beach", lon: 113.567, lat: 22.126, kind: "nature" },
+  ],
+
+  taipei: [
+    { nameZh: "故宫博物院", nameEn: "Palace Museum", lon: 121.548, lat: 25.102, kind: "landmark" },
+    { nameZh: "台北101", nameEn: "Taipei 101", lon: 121.565, lat: 25.034, kind: "landmark" },
+    { nameZh: "大稻埕 · 迪化街", nameEn: "Dadaocheng · Dihua Street", lon: 121.510, lat: 25.056, kind: "district" },
+    { nameZh: "龙山寺", nameEn: "Longshan Temple", lon: 121.500, lat: 25.037, kind: "landmark" },
+    { nameZh: "阳明山", nameEn: "Yangmingshan", lon: 121.560, lat: 25.155, kind: "nature" },
+    { nameZh: "北投温泉", nameEn: "Beitou Hot Springs", lon: 121.507, lat: 25.137, kind: "nature" },
+    { nameZh: "士林夜市", nameEn: "Shilin Night Market", lon: 121.524, lat: 25.088, kind: "district" },
+    { nameZh: "淡水老街", nameEn: "Tamsui Old Street", lon: 121.443, lat: 25.169, kind: "district" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

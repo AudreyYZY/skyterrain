@@ -701,4 +701,94 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June to September is cool and pleasant, the best time for escaping the heat and for the highest water at the falls — also the busiest and most expensive. Other seasons are grey and wet, so bring an umbrella. Mountain roads are winding and prone to landslides in the rainy season, so a tour or hired car is safer. The Fanjingshan cable car is capacity-limited and usually needs booking.",
   },
+
+  xining: {
+    identity:
+      "Xining is the capital of Qinghai, a city in the Huangshui valley at about 2,260 m, with an urban population of about 1.5 million. It is the gateway to the north-eastern edge of the Tibetan Plateau — cool in summer as a hill retreat, the base for Qinghai Lake, the Kumbum Monastery, the Qilian range and Hoh Xil, and a stop to acclimatise before Tibet.",
+    layout:
+      "Xining lies in the narrow Huangshui valley, ringed by hills of loess and rock. The city runs east–west along the valley, with the centre around the Dashizi and Shuijing Alley; the Kumbum (Ta'er) Monastery is about 25 km south-west at Huangzhong. West are Qinghai Lake and the Qilian; south over the Sun-and-Moon Mountain is herding country; east is Lanzhou.",
+    gettingAround:
+      "Caojiabao Airport is east of the city, with intercity trains and buses. Xining is where the Lanzhou–Xinjiang high-speed line meets the Qinghai–Tibet railway: about an hour to Lanzhou, about three hours by road to the Heimahe area of Qinghai Lake, and trains toward Golmud and Lhasa. Getting around the city is mostly by bus. The climate is highland continental: cool all year, with summer days in the low-to-mid 20s and cool nights, cold but often clear winters, strong sun and dry air — sun protection is needed year-round.",
+    culture:
+      "The Xining variety of Lanyin Mandarin is spoken, with Mandarin widely used. This is a multi-ethnic area, and the food is wheat noodles, beef and mutton, liangpi, tianpei and thick set yoghurt. The Kumbum is an important Gelug monastery of Tibetan Buddhism; when visiting, dress modestly, remove hats, keep quiet, walk clockwise, and note that photography is usually forbidden inside the halls. No tipping.",
+    seeAndDo:
+      "The Kumbum Monastery (its \"three arts\": yak-butter sculpture, murals and appliqué); the Dongguan Grand Mosque; the Qinghai Provincial Museum; Nanshan Park for a city panorama; snacks on Mojia Street and Shuijing Alley. From Xining: Qinghai Lake (the loop road, Erlangjian, Bird Island, summer rape flowers), the rape fields of Menyuan (July), the Qilian grasslands, Kanbula, and the Yellow River at Guide, each a day or two.",
+    whenAndTips:
+      "June to September is high season; in mid-to-late July the rape flowers at Menyuan and Qinghai Lake are at their peak and rooms are tightest, so book well ahead. At just over 2,000 m most people have only mild effects — for the first day or two avoid hard exertion and drink plenty of water. If you continue toward Golmud or Lhasa, use Xining as an acclimatisation stop. Strong sun protection and warm layers are needed year-round.",
+  },
+
+  yinchuan: {
+    identity:
+      "Yinchuan is the capital of the Ningxia Hui Autonomous Region, a city on the Yinchuan Plain of the Yellow River at about 1,100 m, with an urban population of about 1.8 million. Hemmed in by the Helan Mountains, the Yellow River and desert, it is an oasis fed by Yellow River irrigation; it was the capital of the Western Xia, and locals call the area \"the Jiangnan beyond the passes\".",
+    layout:
+      "Yinchuan is built on the plain at the eastern foot of the Helan Mountains, west of the Yellow River, flat and netted with irrigation canals. The old town (Xingqing) is the core; Jinfeng and Xixia are newer districts. West at the Helan Mountains are the rock art, Suyukou and Zhenbeibu; east across the Yellow River is Shuidonggou; south are Zhongwei and Shapotou, where desert meets the river.",
+    gettingAround:
+      "Hedong Airport is east of the city across the Yellow River, with buses into town. Yinchuan has high-speed rail toward Lanzhou and Xi'an, about 1.5 hours to Zhongwei. Getting around the city is by bus and BRT. Reaching the Helan Mountains, Shuidonggou and Shapotou is mostly by hired car or tour. The climate is temperate continental arid: little rain year-round, very strong sun, a wide day-to-night range, comfortable late spring to autumn (May–October), cold winters, hot summers, and dusty windy springs.",
+    culture:
+      "The Yinchuan variety of Lanyin Mandarin is spoken, with no barrier to standard Mandarin. This is a Hui area, and the food is halal — hand-grabbed lamb, offal stew, lamb-mince noodles, liangpi and youxiang are common, and most restaurants are halal. The pace is easy. No tipping.",
+    seeAndDo:
+      "The Western Xia Tombs (rammed-earth mausoleum mounds below the Helan Mountains, called \"the Oriental pyramids\"); the Helan Mountain rock art and the Suyukou National Forest Park; the Zhenbeibu Western Film Studios (many films were shot here); Shuidonggou (a Palaeolithic site plus Ming Great Wall); the Ningxia Museum. South: Shapotou, where the Yellow River meets the Tengger Desert, with sandboarding.",
+    whenAndTips:
+      "May to October is the more comfortable window and the best time for the irrigated fields and fruit. In summer use strong sun protection and drink plenty of water, and for the desert and the Helan Mountains bring a windproof jacket and a sun hat. Spring dust days cut visibility and delay flights. The sights are spread out, so a hired car or tour is easier.",
+  },
+
+  urumqi: {
+    identity:
+      "Ürümqi is the capital of the Xinjiang Uygur Autonomous Region, a city on the northern foot of the Tianshan at the southern edge of the Junggar Basin, at about 800 m, with an urban population of about 3.5 million. It is one of the cities farthest from any ocean, and the gateway and transfer point for the rest of Xinjiang — north to Altay and Kanas, west to the Ili valley, south across the Tianshan to Turpan and the southern oases.",
+    layout:
+      "Ürümqi is built on an alluvial fan at the foot of the Tianshan, higher in the south and lower in the north, cut by ravines and hills (Hong Shan, Yamalike Shan). The Erdaoqiao and Grand Bazaar area is the core of Uyghur life and commerce; the newer districts are to the north. South over the Tianshan lie Dabancheng and Turpan; north-east are the Junggar Basin and the Gurbantunggut Desert.",
+    gettingAround:
+      "Diwopu Airport is north-west of the city, with an airport bus and metro line 1. Ürümqi is the western hub of the Lanzhou–Xinjiang high-speed line: about an hour to Turpan, 2.5 hours to Hami; for Ili, Altay and Kashgar, most people fly or take long-distance trains and buses. Xinjiang runs on Beijing time, but daily life follows the daylight, so business and meals happen about two hours later than in eastern China. The climate is temperate continental, extremely dry, with wide day-to-night and seasonal swings: hot summers and severe, snowy winters.",
+    culture:
+      "This is a multi-ethnic city; Mandarin is spoken, with Uyghur used in some settings and bilingual signage. The food is wheat noodles, beef and mutton, pilaf, baked buns, laghman and a wide range of fruit. At Islamic sites, mind your dress and the etiquette. No tipping.",
+    seeAndDo:
+      "The Xinjiang International Grand Bazaar (food, crafts, song and dance); the Xinjiang Uygur Autonomous Region Museum (mummies and Silk Road relics, a solemn place); Hong Shan Park for a city panorama; Shuimogou and Nanshan (Juhuatai, the Tianshan Grand Canyon) for a cool summer retreat; Tianchi (Heavenly Lake) of the Tianshan, about two hours away. Ürümqi is mostly a transfer point for reaching the rest of Xinjiang.",
+    whenAndTips:
+      "The most comfortable season is roughly early summer to mid-autumn (May to early October), which is also when the fruit is best. Xinjiang is vast — cities are often hundreds or over a thousand kilometres apart, so plan in days. Some areas near the borders have extra registration or border-permit requirements for foreign visitors; confirm the current rules with your organiser or accommodation before you go and leave time to arrange them. Winters are severe, so bring full cold-weather gear.",
+  },
+
+  hongkong: {
+    identity:
+      "Hong Kong is a Special Administrative Region of China on the eastern side of the Pearl River estuary, made up of Hong Kong Island, the Kowloon Peninsula, the New Territories and more than 200 outlying islands, with a population of about 7.5 million — one of the most densely populated places in the world. It is a major international centre for finance, trade and shipping, with skyscrapers, a harbour and country parks packed into a small area.",
+    layout:
+      "Victoria Harbour divides Hong Kong into a north side and a south side: the north shore of Hong Kong Island holds the business and financial districts of Central, Admiralty, Wan Chai and Causeway Bay, with Victoria Peak behind them; across the water, Kowloon (Tsim Sha Tsui, Mong Kok, Yau Ma Tei) is more densely peopled. North of Kowloon are the New Territories with new towns and large country parks and hills. Lantau, Lamma and other islands are reached by ferry.",
+    gettingAround:
+      "Hong Kong International Airport is at Chek Lap Kok on Lantau, about 24 minutes to Central on the Airport Express. In the city, the MTR (metro) is the backbone, with buses, trams (the \"ding ding\", on Hong Kong Island only), the Star Ferry and taxis; a single Octopus card covers all of them. Drive and walk on the left. The climate is subtropical monsoon: hot, humid, rainy summers (May–September) that are also the typhoon season, and mild, dry winters (December–February) that can occasionally turn raw.",
+    culture:
+      "Cantonese is spoken, with English used in business and public settings and Mandarin also common. The pace is fast and efficient; sharing tables (\"daap toi\") is common in restaurants, and cha chaan teng and yum cha (dim sum) are central to the local food culture. Pay by Octopus, credit card or e-payment; restaurants usually add a 10% service charge and no further tip is expected. Mainland residents need an Exit-Entry Permit and endorsement for Hong Kong; arrangements for visitors from other countries and regions follow the latest rules published by the Hong Kong SAR government, so check before you travel.",
+    seeAndDo:
+      "Victoria Peak (the Peak Tram up, harbour night views); the Star Ferry across the harbour, the Central–Mid-Levels escalator, the old streets and temples of Sheung Wan; the Tsim Sha Tsui waterfront promenade, the Avenue of Stars, the Hong Kong Museum of History; the markets of Mong Kok and Sham Shui Po; the outlying islands (the Big Buddha and cable car on Lantau, Lamma, Cheung Chau); country-park hikes such as the MacLehose Trail and the Dragon's Back.",
+    whenAndTips:
+      "October to December has the most comfortable weather and is best for the outdoors. March–April is foggy and humid; May–September is hot and wet, and June–October is the typhoon season — when a Signal No. 8 or above is up, transport and most shops shut down, so leave slack in your plans. On hikes take water and sun protection; indoor air-conditioning is strong, so carry a light layer.",
+  },
+
+  macao: {
+    identity:
+      "Macao is a Special Administrative Region of China on the western side of the Pearl River estuary, about 60 km west of Hong Kong, made up of the Macao Peninsula, Taipa, Cotai and Coloane, with a population of about 680,000 in a very small area. It was long a Portuguese-administered port and mixes Chinese and Portuguese architecture, food and customs; its historic centre is a World Heritage Site.",
+    layout:
+      "The Macao Peninsula holds the old town and historic centre (around the Ruins of St Paul's, Senado Square and the A-Ma Temple) and is the most densely peopled part; Taipa, across the water, has the old street of Rua do Cunha and many newer resort complexes (along the Cotai Strip); Coloane, farthest south, still keeps a fishing village and natural coast. Several bridges link the peninsula and Taipa.",
+    gettingAround:
+      "Macao International Airport is on Taipa. From Hong Kong you can take a shuttle bus over the Hong Kong–Zhuhai–Macao Bridge or a ferry from Hong Kong's piers (about an hour). Macao is small and mostly walked, plus buses, and the big resorts run free shuttle buses. The climate is subtropical monsoon, close to Hong Kong's: hot, humid, typhoon-prone summers and mild winters.",
+    culture:
+      "The official languages are Chinese and Portuguese; Cantonese is spoken, with Mandarin and English usable in the tourist areas. Macao blends Chinese and Portuguese culture naturally: Macanese food (Portuguese chicken, bacalhau, African chicken), Portuguese egg tarts and pork-chop buns are signatures, and temples and churches often stand a street apart. The gaming industry is an important part of Macao's economy; minors are not allowed in casino areas. Mainland residents need an Exit-Entry Permit and endorsement for Macao.",
+    seeAndDo:
+      "The historic-centre walking route: the Ruins of St Paul's, the Mount Fortress and the Macao Museum, Senado Square and the Leal Senado, St Dominic's Church, the Dom Pedro V Theatre, the A-Ma Temple, the Mandarin's House; Rua do Cunha and the Taipa Houses on Taipa; St Francis Xavier's Church, Hac Sa Beach and Lord Stow's on Coloane. The shows and shopping inside the resort complexes are another kind of experience.",
+    whenAndTips:
+      "October to December is the most comfortable. Summers are muggy, and in the typhoon season (about July–September) transport and border crossings close temporarily when storms hit. Macao's sights are concentrated and mostly walked, with slopes and cobbled lanes in the old town, so wear comfortable shoes. The historic centre is very crowded in high season (weekends, holidays), especially around the Ruins of St Paul's.",
+  },
+
+  taipei: {
+    identity:
+      "Taipei is the largest city of China's Taiwan Province, set in the Taipei Basin in the north of the island of Taiwan, with a metropolitan population of about seven million. The city is ringed by mountains on three sides and open to a river on the fourth; it is warm and rainy, and night markets, hot springs, museums and convenient public transport are the first impressions it gives.",
+    layout:
+      "The Taipei Basin is enclosed by the Datun volcano group, the Nangang hills and other ranges, with the Tamsui River and its tributaries the Keelung and Xindian rivers running through it. The centre is in the middle of the basin; the Xinyi district has Taipei 101 and its shopping area, while Dadaocheng and Wanhua to the west are the old town. North is the volcanic terrain of Yangmingshan and the Beitou hot springs; the river mouth is at Tamsui; south-east over the mountains is Yilan.",
+    gettingAround:
+      "Taoyuan International Airport is about 40 km south-west of the city, about 40 minutes to Taipei Main Station on the Airport MRT; Songshan Airport, within the city, mainly serves flights within the island and to nearby areas. In the city the MRT (metro) is the backbone, with buses and YouBike public bicycles; a single EasyCard covers them. A high-speed rail line runs down the western corridor of the island linking the main cities. The climate is subtropical monsoon: hot, humid summers with plum rains in May–June and a typhoon season July–September, and mild but damp, grey winters.",
+    culture:
+      "Mandarin (called \"Guoyu\" locally) and Southern Min are spoken, with Hakka and several indigenous languages also in use. The night-market culture is strong (Shilin, Raohe Street, Ningxia Road), with snacks such as braised pork rice, beef noodle soup, oyster omelette and bubble tea. The pace is fairly relaxed, and there is a no-eating rule inside MRT cars. Pay by EasyCard, credit card or e-payment. Restaurants generally do not expect an extra tip.",
+    seeAndDo:
+      "The Palace Museum (a large collection of Chinese painting, calligraphy, ceramics and bronzes across the dynasties — a solemn place, half a day to a day); the Taipei 101 observatory for a basin panorama; the old streets and dried-goods shops of Dadaocheng and Dihua Street; the Longshan Temple; the sulphur fumaroles and flower seasons of Yangmingshan and the Beitou hot springs; the river mouth and old street at Tamsui; the Shilin and Raohe Street night markets.",
+    whenAndTips:
+      "October to December and March–April have relatively settled weather, good for the outdoors. May–June brings plum rains and July–September is the typhoon season with a lot of rain, so have a backup for outdoor plans when a typhoon is coming. Winters are damp and cool, and the mountains (Yangmingshan) are colder, so bring a waterproof jacket. Popular museums such as the Palace Museum are crowded in high season — buy tickets ahead and avoid the peak tour-group hours.",
+  },
 };
