@@ -521,4 +521,274 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "March–May and October–November have the most settled weather for the outdoors. July–September brings frequent typhoons, which stop flights, ferries and some facilities when they hit, so leave slack in your plans. The summer sun is very strong — use sun protection year-round. Choose licensed operators for water activities and check equipment and insurance; outer-island boat schedules depend heavily on sea conditions.",
   },
+
+  tianjin: {
+    identity:
+      "Tianjin is a municipality in North China, a port city on the western shore of Bohai Bay, with an urban population of about 11 million. It grew up on the Grand Canal and the Hai River as a major industrial and port hub for the north, and blocks of Western architecture survive from the concession era; the local street culture is strong in xiangsheng (crosstalk) and clapper-talk.",
+    layout:
+      "Tianjin is built on the alluvial plain of the lower Hai River, which runs through the city with the core districts on both banks. South-east down the river to Bohai are the Binhai new area and the port of Tianjin; north are the mountains of Jizhou (Pan Shan, the Huangyaguan Great Wall). The land is extremely flat, organised by rivers and interchanges.",
+    gettingAround:
+      "Binhai Airport is on the east side of the city, linked by metro line 2. Tianjin is the terminus of the Beijing–Tianjin intercity line, about 30 minutes to Beijing, and many people day-trip. The city has several metro lines plus buses; pay by QR code. The climate is temperate monsoon with four clear seasons: dry, windy springs; hot, wet summers; short, crisp autumns; and cold, dry winters. The food is known for baozi, mahua fried dough, jianbing guozi and Hai River snacks.",
+    culture:
+      "The Tianjin dialect, with its distinctive intonation, is spoken, with Mandarin widely used. People here enjoy crosstalk and morning food stalls, and the pace is more relaxed than Beijing's. The Italian- and British-style old quarters along the Hai River are walkable. Tipping is not customary.",
+    seeAndDo:
+      "A Hai River night cruise, the Italian-style quarter, the small mansions of the Five Great Avenues; the Ancient Culture Street and the Tianhou Temple; the Tianjin Eye ferris wheel; the Porcelain House and Xikai Church; on the outskirts, Pan Shan, the Dule Temple (Jizhou) and the Huangyaguan Great Wall. Crosstalk teahouses (around Mingliu and Qianxiangyi) for northern folk performance.",
+    whenAndTips:
+      "Spring and autumn (April–May, September–October) are the most comfortable. High summer is muggy with thunderstorms; winters are dry and cold, so dress warmly. Crosstalk shows and popular restaurants fill up on weekends — book ahead. High-speed trains between Beijing and Tianjin are frequent, so plans are flexible.",
+  },
+
+  shijiazhuang: {
+    identity:
+      "Shijiazhuang is the capital of Hebei, a transport-hub city on the North China Plain, with an urban population of about 5 million. It rose quickly where the Beijing–Hankou and Zhengtai railways crossed, so its history is not long, but it sits where the Taihang Mountains meet the plain and is the gateway to Hebei's mountain scenery.",
+    layout:
+      "Shijiazhuang is built on the plain at the eastern foot of the Taihang, a regular, flat city. West into the Taihang are the mountain areas of Jingxing, Zanhuang and Pingshan (Cangyan Shan, Zhangshiyan, Tuoliang); north is the old town of Zhengding; farther north are Baoding and Beijing. The city itself is organised by railways and a few main avenues.",
+    gettingAround:
+      "Zhengding Airport is north-east of the city, linked by intercity rail. Shijiazhuang is an important stop on the Beijing–Guangzhou high-speed line, about an hour to Beijing. The city has two metro lines plus buses; pay by QR code. The climate is temperate monsoon with four clear seasons: dry, dusty springs; hot summers with rain concentrated in July–August; clear autumns; and cold winters with some hazy days.",
+    culture:
+      "The Shijiazhuang variety of Ji–Lu Mandarin is spoken, with no barrier to standard Mandarin. The food is wheat-based northern cooking — Anhui beef banmian noodles, Zhengding beng gan and Jinfeng smoked chicken are typical. The pace is unhurried. No tipping.",
+    seeAndDo:
+      "The old town of Zhengding (the Longxing Temple, the Kaiyuan Temple's Sumeru pagoda, the \"four pagodas\"); the gorges and red cliffs of Cangyan Shan, Zhangshiyan and Tuoliang in the western Taihang; Xibaipo; the Zhaozhou Bridge (in Zhao county, one of the oldest surviving open-spandrel stone arch bridges in China). Use Shijiazhuang as a base for the Taihang scenic areas over one or two days.",
+    whenAndTips:
+      "Spring and autumn (April–May, September–October) are the most comfortable, and autumn is best for the Taihang leaves. In summer, watch for thunderstorms and flash floods in the mountains; in winter, mountain roads can ice up. Zhengding and the Zhaozhou Bridge are both within an hour of the city and make half- to full-day trips.",
+  },
+
+  taiyuan: {
+    identity:
+      "Taiyuan is the capital of Shanxi, an old industrial city in the Fen River valley, with an urban population of about 4 million. It has more than two thousand years of history as a northern military town, and with the Jinci temple complex nearby and Pingyao, Datong and Mount Wutai not far off, Taiyuan is the base for a tour of Shanxi's historic architecture and relics.",
+    layout:
+      "Taiyuan lies in the narrow Fen River valley, hemmed in by the East and West mountains. The Fen River and its riverside road form the north–south axis; Jinci is at the foot of Xuanweng Shan in the south-western suburbs. North is Xinzhou and Mount Wutai; south are Pingyao and Jinzhong; north-east is Datong.",
+    gettingAround:
+      "Wusu Airport is south-east of the city, with buses and intercity trains. Taiyuan is a hub on the Datong–Xi'an and Shijiazhuang–Taiyuan high-speed lines: about 30 minutes to Pingyao, 1.5 hours to Datong, 3 hours to Beijing. The city has one metro line plus buses; pay by QR code. The climate is temperate continental monsoon at about 800 m: dusty springs, summers that are not too hot with rain in July–August, clear autumns, and cold, dry winters.",
+    culture:
+      "The Taiyuan variety of Jin Chinese is spoken, with Mandarin widely used. Shanxi has a huge range of wheat dishes (knife-cut noodles, tijian, cat's-ear pasta, oat flour) and a strong preference for aged vinegar. The pace is easy. No tipping.",
+    seeAndDo:
+      "Jinci (the Zhou-dynasty cypress, the Nanlao Spring, the Song-dynasty painted figures in the Sacred Mother Hall); the Shanxi Museum; the Twin Pagoda Temple and Chunyang Palace; the Tianlong Shan grottoes and the Mengshan Buddha. From Taiyuan: the old town of Pingyao, the Qiao family compound (Jinzhong), the Yungang grottoes and the Hanging Temple (Datong), and Mount Wutai, each a day or two.",
+    whenAndTips:
+      "May–June and September–October have the best weather and are the seasons for the architecture and autumn colour. Winter is cold, and some roads on Mount Wutai close then. Pingyao and Wutai fill up in high season (summer holiday, National Day) — book ahead. Shanxi is about historic buildings and relics, so leave time for visits and guiding.",
+  },
+
+  hohhot: {
+    identity:
+      "Hohhot is the capital of the Inner Mongolia Autonomous Region, a city on the Tumochuan plain at the southern foot of the Yin Mountains, with an urban population of about 3.5 million. It is the gateway from North China to the Mongolian Plateau; the name means \"blue-green city\" in Mongolian, the city has clusters of Tibetan Buddhist temples, and grassland begins not far outside it.",
+    layout:
+      "Hohhot is built on the plain at the foot of the Daqing Shan, with mountains to the north and the farmland of the Tumochuan to the south. The old town centres on the temples and market streets around the Dazhao and Xilituzhao; the new town is the administrative and commercial area. North over the Daqing Shan are the Xilamuren and Huitengxile grasslands; west are Baotou and the Hetao.",
+    gettingAround:
+      "Baita Airport is on the east side of the city, with buses. Hohhot has high-speed rail to Beijing (about 2.5 hours), Datong and Baotou. Getting around the city is mostly by bus, with one metro line. Reaching the grasslands (about 1.5 hours to Xilamuren, 2 hours to Huitengxile) is mostly by hired car or tour. The climate is temperate continental — dry, with strong sun and a wide day-to-night range: cool summers (a place to escape the heat), severe winters, and dusty, windy springs.",
+    culture:
+      "Mandarin is spoken, with Mongolian used in some settings and bilingual signage. There is a long tradition of Mongol herding here, and the Nadam fair (around summer) has wrestling, horse racing and archery. The food is beef and mutton, dairy (milk tea, dried curd, milk skin), oat flour and shaomai. No tipping.",
+    seeAndDo:
+      "The Dazhao, Xilituzhao and the Five-Pagoda Temple (the Vajra-throne stupa); the General's Government Office; the Inner Mongolia Museum; the Zhaojun Tomb. Outside the city, the Xilamuren and Huitengxile grasslands (horse riding, staying in a yurt, stargazing — best in summer); farther out, the Kubuqi Desert and Xiangshawan.",
+    whenAndTips:
+      "June to September is the grassland season, with July–August the greenest and most comfortable — also the time of the Nadam and the busiest, so book grassland accommodation ahead. The day-to-night range is wide; even summer nights on the grassland are cold, so bring a jacket. Choose licensed operators for horse riding and desert activities. Winters are severe and most grassland sites are closed.",
+  },
+
+  shenyang: {
+    identity:
+      "Shenyang is the capital of Liaoning and one of the largest cities in the north-east, with an urban population of about 7 million. It sits in the southern part of the Northeast Plain, was the capital of the Qing dynasty before it moved south of the Great Wall, and has since been a centre of heavy industry, so a palace, imperial tombs and a large industrial heritage exist side by side.",
+    layout:
+      "Shenyang is built on the Northeast Plain on the north bank of the Hun River, on flat ground. The old town centres on the Mukden Palace and the Marshal Zhang Mansion, within the trace of a square old wall; the Northern Tomb (Zhaoling) is to the north and the Eastern Tomb (Fuling) to the east. Tiexi is the old industrial district, now home to an industrial museum.",
+    gettingAround:
+      "Taoxian Airport is south of the city, linked by metro line 2. Shenyang is a hub on the Harbin–Dalian and Beijing–Harbin high-speed lines: about 2.5 hours to Beijing, 2 hours to Dalian, an hour to Changchun. The city has several metro lines plus buses; pay by QR code. The climate is mid-temperate monsoon: warm summers with rain in July–August, and long, severe winters (often around -15°C in January), with short springs and autumns.",
+    culture:
+      "Northeastern Mandarin is spoken, with no barrier to standard Mandarin. The food shows Manchu and mixed influences — pickled-cabbage-and-pork stew, guo bao rou, Laobian dumplings and grilled chicken frames are typical. The north-eastern errenzhuan and comedy-sketch traditions are influential. The pace is unhurried. No tipping.",
+    seeAndDo:
+      "The Mukden Palace (a relatively complete pre-1644 Qing palace), the Northern Tomb park (Zhaoling), the Eastern Tomb (Fuling), the Marshal Zhang Mansion; the China Industrial Museum and the 1905 Cultural and Creative Park in Tiexi; Qipan Shan (skiing in winter). From Shenyang: the Benxi Water Cave, Liaoyang, and Anshan (Qian Shan).",
+    whenAndTips:
+      "May–June and September–October are the most comfortable, and autumn colour is good at the imperial tombs. Winters are severe and pavements icy, so bring full cold-weather gear. The summer holiday and National Day are peak season. The palace, the mansion and other sites close some galleries on Mondays and require advance ID-based booking.",
+  },
+
+  changchun: {
+    identity:
+      "Changchun is the capital of Jilin, a city on the Song–Liao plain in the centre of the north-east, with an urban population of about 4.5 million. It is known for its car industry and film studio, is green with wide streets and many roundabouts, keeps a number of early-20th-century buildings, and is one of the transfer cities on the way to Changbai Shan.",
+    layout:
+      "Changchun is built on the plain along the Yitong River, on flat ground. The city is laid out on a radial-and-ring plan, with People's Square and Culture Square at the centre; the Jingyuetan forest park, the FAW works and the film city are in the south; the former Manchukuo palace is in the north-east. South-east lie Jilin city and Changbai Shan.",
+    gettingAround:
+      "Longjia Airport is east of the city, with intercity rail and a metro link. Changchun is an important stop on the Beijing–Harbin high-speed line: about an hour to Shenyang, an hour to Harbin, 30 minutes to Jilin city. The city has metro and light rail plus buses; pay by QR code. The climate is mid-temperate monsoon: cool, pleasant summers (a place to escape the heat) and long, severe, snowy winters, often around -20°C in January and February.",
+    culture:
+      "Northeastern Mandarin is spoken, with no barrier to standard Mandarin. The food is close to that of the rest of the north-east, with sauced bones, \"kill-the-pig\" stew, and the Korean-Chinese cold noodles and rice cakes also common. The pace is easy. No tipping.",
+    seeAndDo:
+      "The Jingyuetan National Forest Park (cycling in summer, the Vasa ski festival in winter); the Museum of the former Manchukuo palace (for this period of history, a solemn place); the former Changchun Film Studio museum and Changying Century City; Nanhu Park; the car culture of Hongqi Street. In winter, ski areas nearby, and east to Jilin city for the rime frost and on to Changbai Shan.",
+    whenAndTips:
+      "June to September is cool and pleasant, good for escaping the heat and for Changbai Shan. Winters are severe but the snow is good; the ice-and-snow season runs December to February, so bring full cold-weather and anti-slip gear. Parts of Changbai Shan close in winter and Heaven Lake is often not visible, so check conditions before going.",
+  },
+
+  nanchang: {
+    identity:
+      "Nanchang is the capital of Jiangxi, a city on the lower Gan River and the Poyang Lake plain, with an urban population of about 4 million. It is a historic city — home to the Tengwang Pavilion — and the hub for Lushan, Wuyuan, Jinggangshan and Jingdezhen.",
+    layout:
+      "Nanchang straddles the Gan River; the east bank holds the old town and commercial district (around the Tengwang Pavilion and Bayi Square) and the west bank the Honggutan new area. The land is low and flat, cut by the Gan and several city lakes. North down the Gan lie Poyang Lake and Lushan; north-east are Jingdezhen and Wuyuan; south-west is Jinggangshan.",
+    gettingAround:
+      "Changbei Airport is north-west of the city, with intercity trains and buses. Nanchang is where the Shanghai–Kunming and Beijing–Kowloon high-speed lines cross: about 40 minutes to Lushan station, 1.5 hours to Jingdezhen, 2 hours to Wuhan. The city has several metro lines plus buses; pay by QR code. The climate is subtropical monsoon: wet, grey springs; hot summers (one of the \"furnace\" cities); clear autumns; and damp cold winters.",
+    culture:
+      "The Nanchang variety of Gan Chinese is spoken, with Mandarin widely used. The food is spicy and strongly flavoured — clay-pot soup, tossed rice noodles, and cured pork with artemisia are everyday dishes. The pace is easy. No tipping.",
+    seeAndDo:
+      "The Tengwang Pavilion (climb for the Gan River view, lit at night); the August 1st Uprising Memorial Hall and Bayi Square; the Shengjin Pagoda and the Wanshou Palace heritage quarter; the Star of Nanchang ferris wheel; the fountains at Qiushui Square. From Nanchang: Lushan (Hankou, the Five Old Men Peaks, Guling town), the Hui-style villages and rape flowers of Wuyuan, the porcelain of Jingdezhen, and Jinggangshan, each a day or two.",
+    whenAndTips:
+      "March–April (rape flowers in Wuyuan) and October–November have the best weather. The plum-rain season (about June) and high summer are muggy — take heat precautions. Lushan is cool in summer as a hill retreat, with pricey rooms in high season, often foggy, so bring a light jacket. Wuyuan and Lushan are very crowded at Qingming, May Day and National Day.",
+  },
+
+  hefei: {
+    identity:
+      "Hefei is the capital of Anhui, a city between the Yangtze and Huai rivers on the northern shore of Lake Chao, with an urban population of about 5 million. Once a small town, it has grown fast in recent decades and is known for science, education and manufacturing; it is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
+    layout:
+      "Hefei sits on gently rolling ground between the Jianghuai hills and Lake Chao. The old town is ringed by the Huancheng Park (a green belt on the former moat); the government district is to the south-west and the Binhu new area is on the lake. South is Lake Chao and then Huangshan (Huangshan, Hongcun, Xidi, Tunxi old street); south-west are Lu'an and the Dabie Mountains; east is Nanjing.",
+    gettingAround:
+      "Xinqiao Airport is west of the city, with buses. Hefei is a hub on the Beijing–Fuzhou and Shanghai–Chengdu high-speed lines: about an hour to Huangshan North, an hour to Nanjing, 1.5 hours to Wuhan, 2.5 hours to Shanghai. The city has several metro lines plus buses; pay by QR code. The climate is monsoon, transitional between subtropical and warm-temperate: four clear seasons, hot muggy summers with plum rains in June–July, and damp cold winters.",
+    culture:
+      "The Hefei variety of Jianghuai Mandarin is spoken, with Mandarin widely used. Anhui cuisine (stinky mandarin fish, mao tofu, ham-stewed soft-shell turtle) and Jianghuai snacks are all available here. The pace is average. No tipping.",
+    seeAndDo:
+      "Baogong Park (the Bao River, the Bao Zheng shrine, the Qingfeng Pavilion); the former residence of Li Hongzhang and the Xiaoyaojin park; the Anhui Museum; the wetlands and Zhongmiao on Lake Chao. Hefei itself has few sights, so most people use it as a hub: Huangshan (with Hongcun, Xidi and the Tunxi old street), Jiuhuashan, and Tiantangzhai in the Dabie Mountains, each a day or two.",
+    whenAndTips:
+      "Spring and autumn (March–May, September–November) are the most comfortable and the best seasons for Huangshan. The plum rains and high summer are muggy; Huangshan is cool in summer but thundery, and seeing the sunrise is a matter of luck. Huangshan tickets and mountain-top rooms are tight in high season (summer holiday, National Day) — book ahead. Climbing Huangshan involves a lot of walking and steps.",
+  },
+
+  xiamen: {
+    identity:
+      "Xiamen is a city on the south-east coast of Fujian, made up of Xiamen Island and several mainland districts, with a resident population of about 5 million. It is known for its islands, the old villas of Gulangyu, its tidy streets and its relaxed pace, and is the gateway to travel in Fujian, near the tulou earth buildings and Wuyishan.",
+    layout:
+      "The core of Xiamen is Xiamen Island; the old town and the ferry pier (facing Gulangyu) are in the south-west, and the scenic Round-the-Island Road follows the coast. Bridges and tunnels connect to Jimei, Haicang and Tong'an on the mainland. West toward Longyan are the Hakka tulou of Yongding and Nanjing; north is Wuyishan.",
+    gettingAround:
+      "Gaoqi Airport is on the island itself, close to the centre. Xiamen has high-speed rail to Fuzhou (about 1.5 hours), Longyan (about 2 hours, for the tulou) and Wuyishan (about 3 hours). The city has a metro, BRT and buses; pay by QR code. Gulangyu is reached only by ferry (book online with ID in advance); there are no cars on the island, so it is walked. The climate is a southern subtropical maritime monsoon: warm and humid all year, muggy summers, a typhoon season July–September, and mild winters.",
+    culture:
+      "Southern Min (Hokkien) is spoken, with Mandarin widely used. Gongfu tea, seafood and snacks (satay noodles, oyster omelette, ginger duck, misua soup) are everyday food. Xiamen life is slow, with a lot of tea-drinking and conversation. No tipping.",
+    seeAndDo:
+      "Gulangyu (old villas, Sunlight Rock, the Shuzhuang Garden, the piano museum — book the ferry and an island slot in advance); cycling and sea views on the Round-the-Island Road; the Nanputuo Temple and the Xiamen University area; the everyday life of Shapowei and the Eighth Market; the Tan Kah Kee architecture of the Jimei school village. Farther out: the Hakka tulou of Yongding and Nanjing, a day or two.",
+    whenAndTips:
+      "October to April has the most comfortable weather and is high season. In the typhoon season (July–September) ferries stop and flights are delayed when storms hit, so leave slack in your plans. Gulangyu slots are tight in high season — book several days ahead. UV is strong all year, so use sun protection.",
+  },
+
+  zhengzhou: {
+    identity:
+      "Zhengzhou is the capital of Henan, a railway-hub city on the North China Plain south of the Yellow River, with an urban population of about 7 million. It grew up where the Beijing–Hankou and Longhai railways crossed and is young in itself, but the area around it is the heartland of early Chinese civilisation — Songshan and the Shaolin Temple, Kaifeng and Luoyang are all within an hour by high-speed rail.",
+    layout:
+      "Zhengzhou is built on the plain south of the Yellow River, on flat ground. The old town centres on Erqi Square and the Erqi (February 7th) Memorial Tower; the Zhengdong new area to the east has a CBD and several artificial lakes. South-west toward Dengfeng are Songshan and the Shaolin Temple; east is Kaifeng (about 30 minutes by high-speed rail); west is Luoyang. The Yellow River scenic area is north of the city.",
+    gettingAround:
+      "Xinzheng Airport is south-east of the city, linked by intercity rail. Zhengzhou is one of the \"hearts\" of the Chinese rail network: about 30 minutes to Kaifeng, 40 minutes to Luoyang, an hour to the Shaolin Temple (Dengfeng), 2 hours to Xi'an, 2.5 hours to Beijing. The city has several metro lines plus buses; pay by QR code. The climate is temperate monsoon: four clear seasons, dry dusty springs, hot summers with rain in July–August, and dry cold winters with some hazy days.",
+    culture:
+      "The Zhengzhou variety of Central Plains Mandarin is spoken, with no barrier to standard Mandarin. The food is wheat-based — huimian noodles, spicy hulatang soup and soup dumplings are typical. The pace is average. No tipping.",
+    seeAndDo:
+      "The Henan Museum (fine bronzes and ceramics, a solemn place); the Yellow River scenic area and the Yellow River Museum; the Erqi Memorial Tower; the Shang city ruins. From Zhengzhou: the Shaolin Temple and the Zhongyue Temple on Songshan (Dengfeng); Kaifeng (the Qingming Riverside Park, the Iron Pagoda, the Xiangguo Temple, the night markets); and Luoyang (the Longmen Grottoes, the White Horse Temple), each a day.",
+    whenAndTips:
+      "Spring and autumn (April–May, September–October) are the most comfortable; autumn colour on Songshan is good, and the Luoyang peony season is in April. High summer is muggy — take heat precautions; Zhengzhou saw extreme rainfall in 2021, so watch the weather in the flood season. Henan is about history and relics, so leave time for visits, and book popular museums in advance with ID.",
+  },
+
+  wuhan: {
+    identity:
+      "Wuhan is the capital of Hubei, a very large city where the Yangtze meets the Han River, with an urban population of about 9 million. It is made up of the \"three towns\" of Wuchang, Hankou and Hanyang across the water, and is the transport, industrial and educational centre of central China and the hub of the middle Yangtze.",
+    layout:
+      "The Yangtze and the Han meet here and split the city into three: Hankou (the old concession area, the riverfront, commerce), Hanyang (industry, Guishan, the ancient Guqin Terrace) and Wuchang (the Yellow Crane Tower, East Lake, many universities, the provincial government). Bridges, tunnels and ferries cross the rivers. East Lake is one of the largest urban lakes in China, with a long greenway.",
+    gettingAround:
+      "Tianhe Airport is north of the city, linked by metro line 2. Wuhan is a crossroads hub on the Beijing–Guangzhou and Shanghai–Chengdu high-speed lines: about 4–5 hours to Beijing, Guangzhou or Shanghai, 1.5 hours to Changsha, 2 hours to Yichang (the Three Gorges). The city has several metro lines plus buses and ferries (the Wuhan Guan to Zhonghua Lu ferry is a classic way to see the two rivers). The climate is subtropical monsoon: fierce summer heat (a famous \"furnace\"), with July–August the worst, damp cold winters, and short springs and autumns.",
+    culture:
+      "The Wuhan variety of Southwestern Mandarin is spoken — fast and loud — with Mandarin widely used. The \"early food\" breakfast culture is strong, with hot-dry noodles, doupi, mianwo and hutang fen the signatures. Wuhan people are direct. No tipping.",
+    seeAndDo:
+      "The Yellow Crane Tower and She Shan and the Simenkou area; the East Lake greenway (cycling, cherry blossom in March) and the Hubei Provincial Museum (the Zeng Hou Yi bells and the sword of Goujian, a solemn place); the Hankou riverfront and old concession buildings and the Jianghan Road pedestrian street; the snacks of Hubu Alley and Jiqing Street; the old streets of Tanhualin. Take the ferry to see the confluence.",
+    whenAndTips:
+      "March–April (East Lake and university-campus cherry blossom) and October–November have the best weather. High summer is fiercely hot — avoid midday outdoor activity and drink plenty of water. The plum-rain season is wet. The Provincial Museum is free but needs advance ID-based booking, and slots are tight in high season.",
+  },
+
+  guiyang: {
+    identity:
+      "Guiyang is the capital of Guizhou, a basin city ringed by mountains in the eastern part of the Yunnan–Guizhou Plateau, with an urban population of about 4 million. At about 1,100 m, it has cool summers and is nicknamed the \"summer capital\"; it is also the transfer centre for Guizhou's karst scenery (Huangguoshu, Libo, Fanjingshan) and ethnic-minority villages.",
+    layout:
+      "Guiyang is built in a pocket of flat land among several mountains, with the Nanming River through the centre; the city is hilly, with winding, bridge-heavy roads. The old town centres on the Jiaxiu Pavilion and the Dashizi area; Guanshanhu is the new district. South-west are Anshun and Huangguoshu; south are Libo and the Small Seven Arches; north-east are Kaili, the Xijiang Miao village and Fanjingshan.",
+    gettingAround:
+      "Longdongbao Airport is south-east of the city, with metro and buses. Guiyang is a hub on the Shanghai–Kunming and Guiyang–Guangzhou high-speed lines: about 30 minutes to Anshun, 40 minutes to Kaili, 1.5 hours to Libo, 2 hours to Chongqing, 4 hours to Guangzhou. The city has two metro lines plus buses (routes wind around the hills); pay by QR code. The climate is subtropical highland monsoon: cool summers (about 24°C in July), raw winters, and a lot of cloud, rain and fog year-round with little sun.",
+    culture:
+      "The Guiyang variety of Southwestern Mandarin is spoken, with Mandarin widely used. The area around is home to Miao, Buyi and Dong communities. The food is sour-and-spicy (sour-soup fish, siwawa, changwang noodles, tofu balls), with fermented chilli and houttuynia (\"fish-mint\") as local features. The pace is slow. No tipping.",
+    seeAndDo:
+      "The Jiaxiu Pavilion and the Nanming River, and the Cuiwei Garden; Qianling Shan Park (wild macaques — do not feed or provoke them); the Guizhou Provincial Museum; the Colourful Guizhou City. From Guiyang: Huangguoshu Falls and Tianxingqiao (Anshun), the clear-water gorges of the Small Seven Arches at Libo, the Xijiang Miao village (Kaili), and Fanjingshan, each a day or two.",
+    whenAndTips:
+      "June to September is cool and pleasant, the best time for escaping the heat and for the highest water at the falls — also the busiest and most expensive. Other seasons are grey and wet, so bring an umbrella. Mountain roads are winding and prone to landslides in the rainy season, so a tour or hired car is safer. The Fanjingshan cable car is capacity-limited and usually needs booking.",
+  },
+
+  xining: {
+    identity:
+      "Xining is the capital of Qinghai, a city in the Huangshui valley at about 2,260 m, with an urban population of about 1.5 million. It is the gateway to the north-eastern edge of the Tibetan Plateau — cool in summer as a hill retreat, the base for Qinghai Lake, the Kumbum Monastery, the Qilian range and Hoh Xil, and a stop to acclimatise before Tibet.",
+    layout:
+      "Xining lies in the narrow Huangshui valley, ringed by hills of loess and rock. The city runs east–west along the valley, with the centre around the Dashizi and Shuijing Alley; the Kumbum (Ta'er) Monastery is about 25 km south-west at Huangzhong. West are Qinghai Lake and the Qilian; south over the Sun-and-Moon Mountain is herding country; east is Lanzhou.",
+    gettingAround:
+      "Caojiabao Airport is east of the city, with intercity trains and buses. Xining is where the Lanzhou–Xinjiang high-speed line meets the Qinghai–Tibet railway: about an hour to Lanzhou, about three hours by road to the Heimahe area of Qinghai Lake, and trains toward Golmud and Lhasa. Getting around the city is mostly by bus. The climate is highland continental: cool all year, with summer days in the low-to-mid 20s and cool nights, cold but often clear winters, strong sun and dry air — sun protection is needed year-round.",
+    culture:
+      "The Xining variety of Lanyin Mandarin is spoken, with Mandarin widely used. This is a multi-ethnic area, and the food is wheat noodles, beef and mutton, liangpi, tianpei and thick set yoghurt. The Kumbum is an important Gelug monastery of Tibetan Buddhism; when visiting, dress modestly, remove hats, keep quiet, walk clockwise, and note that photography is usually forbidden inside the halls. No tipping.",
+    seeAndDo:
+      "The Kumbum Monastery (its \"three arts\": yak-butter sculpture, murals and appliqué); the Dongguan Grand Mosque; the Qinghai Provincial Museum; Nanshan Park for a city panorama; snacks on Mojia Street and Shuijing Alley. From Xining: Qinghai Lake (the loop road, Erlangjian, Bird Island, summer rape flowers), the rape fields of Menyuan (July), the Qilian grasslands, Kanbula, and the Yellow River at Guide, each a day or two.",
+    whenAndTips:
+      "June to September is high season; in mid-to-late July the rape flowers at Menyuan and Qinghai Lake are at their peak and rooms are tightest, so book well ahead. At just over 2,000 m most people have only mild effects — for the first day or two avoid hard exertion and drink plenty of water. If you continue toward Golmud or Lhasa, use Xining as an acclimatisation stop. Strong sun protection and warm layers are needed year-round.",
+  },
+
+  yinchuan: {
+    identity:
+      "Yinchuan is the capital of the Ningxia Hui Autonomous Region, a city on the Yinchuan Plain of the Yellow River at about 1,100 m, with an urban population of about 1.8 million. Hemmed in by the Helan Mountains, the Yellow River and desert, it is an oasis fed by Yellow River irrigation; it was the capital of the Western Xia, and locals call the area \"the Jiangnan beyond the passes\".",
+    layout:
+      "Yinchuan is built on the plain at the eastern foot of the Helan Mountains, west of the Yellow River, flat and netted with irrigation canals. The old town (Xingqing) is the core; Jinfeng and Xixia are newer districts. West at the Helan Mountains are the rock art, Suyukou and Zhenbeibu; east across the Yellow River is Shuidonggou; south are Zhongwei and Shapotou, where desert meets the river.",
+    gettingAround:
+      "Hedong Airport is east of the city across the Yellow River, with buses into town. Yinchuan has high-speed rail toward Lanzhou and Xi'an, about 1.5 hours to Zhongwei. Getting around the city is by bus and BRT. Reaching the Helan Mountains, Shuidonggou and Shapotou is mostly by hired car or tour. The climate is temperate continental arid: little rain year-round, very strong sun, a wide day-to-night range, comfortable late spring to autumn (May–October), cold winters, hot summers, and dusty windy springs.",
+    culture:
+      "The Yinchuan variety of Lanyin Mandarin is spoken, with no barrier to standard Mandarin. This is a Hui area, and the food is halal — hand-grabbed lamb, offal stew, lamb-mince noodles, liangpi and youxiang are common, and most restaurants are halal. The pace is easy. No tipping.",
+    seeAndDo:
+      "The Western Xia Tombs (rammed-earth mausoleum mounds below the Helan Mountains, called \"the Oriental pyramids\"); the Helan Mountain rock art and the Suyukou National Forest Park; the Zhenbeibu Western Film Studios (many films were shot here); Shuidonggou (a Palaeolithic site plus Ming Great Wall); the Ningxia Museum. South: Shapotou, where the Yellow River meets the Tengger Desert, with sandboarding.",
+    whenAndTips:
+      "May to October is the more comfortable window and the best time for the irrigated fields and fruit. In summer use strong sun protection and drink plenty of water, and for the desert and the Helan Mountains bring a windproof jacket and a sun hat. Spring dust days cut visibility and delay flights. The sights are spread out, so a hired car or tour is easier.",
+  },
+
+  urumqi: {
+    identity:
+      "Ürümqi is the capital of the Xinjiang Uygur Autonomous Region, a city on the northern foot of the Tianshan at the southern edge of the Junggar Basin, at about 800 m, with an urban population of about 3.5 million. It is one of the cities farthest from any ocean, and the gateway and transfer point for the rest of Xinjiang — north to Altay and Kanas, west to the Ili valley, south across the Tianshan to Turpan and the southern oases.",
+    layout:
+      "Ürümqi is built on an alluvial fan at the foot of the Tianshan, higher in the south and lower in the north, cut by ravines and hills (Hong Shan, Yamalike Shan). The Erdaoqiao and Grand Bazaar area is the core of Uyghur life and commerce; the newer districts are to the north. South over the Tianshan lie Dabancheng and Turpan; north-east are the Junggar Basin and the Gurbantunggut Desert.",
+    gettingAround:
+      "Diwopu Airport is north-west of the city, with an airport bus and metro line 1. Ürümqi is the western hub of the Lanzhou–Xinjiang high-speed line: about an hour to Turpan, 2.5 hours to Hami; for Ili, Altay and Kashgar, most people fly or take long-distance trains and buses. Xinjiang runs on Beijing time, but daily life follows the daylight, so business and meals happen about two hours later than in eastern China. The climate is temperate continental, extremely dry, with wide day-to-night and seasonal swings: hot summers and severe, snowy winters.",
+    culture:
+      "This is a multi-ethnic city; Mandarin is spoken, with Uyghur used in some settings and bilingual signage. The food is wheat noodles, beef and mutton, pilaf, baked buns, laghman and a wide range of fruit. At Islamic sites, mind your dress and the etiquette. No tipping.",
+    seeAndDo:
+      "The Xinjiang International Grand Bazaar (food, crafts, song and dance); the Xinjiang Uygur Autonomous Region Museum (mummies and Silk Road relics, a solemn place); Hong Shan Park for a city panorama; Shuimogou and Nanshan (Juhuatai, the Tianshan Grand Canyon) for a cool summer retreat; Tianchi (Heavenly Lake) of the Tianshan, about two hours away. Ürümqi is mostly a transfer point for reaching the rest of Xinjiang.",
+    whenAndTips:
+      "The most comfortable season is roughly early summer to mid-autumn (May to early October), which is also when the fruit is best. Xinjiang is vast — cities are often hundreds or over a thousand kilometres apart, so plan in days. Some areas near the borders have extra registration or border-permit requirements for foreign visitors; confirm the current rules with your organiser or accommodation before you go and leave time to arrange them. Winters are severe, so bring full cold-weather gear.",
+  },
+
+  hongkong: {
+    identity:
+      "Hong Kong is a Special Administrative Region of China on the eastern side of the Pearl River estuary, made up of Hong Kong Island, the Kowloon Peninsula, the New Territories and more than 200 outlying islands, with a population of about 7.5 million — one of the most densely populated places in the world. It is a major international centre for finance, trade and shipping, with skyscrapers, a harbour and country parks packed into a small area.",
+    layout:
+      "Victoria Harbour divides Hong Kong into a north side and a south side: the north shore of Hong Kong Island holds the business and financial districts of Central, Admiralty, Wan Chai and Causeway Bay, with Victoria Peak behind them; across the water, Kowloon (Tsim Sha Tsui, Mong Kok, Yau Ma Tei) is more densely peopled. North of Kowloon are the New Territories with new towns and large country parks and hills. Lantau, Lamma and other islands are reached by ferry.",
+    gettingAround:
+      "Hong Kong International Airport is at Chek Lap Kok on Lantau, about 24 minutes to Central on the Airport Express. In the city, the MTR (metro) is the backbone, with buses, trams (the \"ding ding\", on Hong Kong Island only), the Star Ferry and taxis; a single Octopus card covers all of them. Drive and walk on the left. The climate is subtropical monsoon: hot, humid, rainy summers (May–September) that are also the typhoon season, and mild, dry winters (December–February) that can occasionally turn raw.",
+    culture:
+      "Cantonese is spoken, with English used in business and public settings and Mandarin also common. The pace is fast and efficient; sharing tables (\"daap toi\") is common in restaurants, and cha chaan teng and yum cha (dim sum) are central to the local food culture. Pay by Octopus, credit card or e-payment; restaurants usually add a 10% service charge and no further tip is expected. Mainland residents need an Exit-Entry Permit and endorsement for Hong Kong; arrangements for visitors from other countries and regions follow the latest rules published by the Hong Kong SAR government, so check before you travel.",
+    seeAndDo:
+      "Victoria Peak (the Peak Tram up, harbour night views); the Star Ferry across the harbour, the Central–Mid-Levels escalator, the old streets and temples of Sheung Wan; the Tsim Sha Tsui waterfront promenade, the Avenue of Stars, the Hong Kong Museum of History; the markets of Mong Kok and Sham Shui Po; the outlying islands (the Big Buddha and cable car on Lantau, Lamma, Cheung Chau); country-park hikes such as the MacLehose Trail and the Dragon's Back.",
+    whenAndTips:
+      "October to December has the most comfortable weather and is best for the outdoors. March–April is foggy and humid; May–September is hot and wet, and June–October is the typhoon season — when a Signal No. 8 or above is up, transport and most shops shut down, so leave slack in your plans. On hikes take water and sun protection; indoor air-conditioning is strong, so carry a light layer.",
+  },
+
+  macao: {
+    identity:
+      "Macao is a Special Administrative Region of China on the western side of the Pearl River estuary, about 60 km west of Hong Kong, made up of the Macao Peninsula, Taipa, Cotai and Coloane, with a population of about 680,000 in a very small area. It was long a Portuguese-administered port and mixes Chinese and Portuguese architecture, food and customs; its historic centre is a World Heritage Site.",
+    layout:
+      "The Macao Peninsula holds the old town and historic centre (around the Ruins of St Paul's, Senado Square and the A-Ma Temple) and is the most densely peopled part; Taipa, across the water, has the old street of Rua do Cunha and many newer resort complexes (along the Cotai Strip); Coloane, farthest south, still keeps a fishing village and natural coast. Several bridges link the peninsula and Taipa.",
+    gettingAround:
+      "Macao International Airport is on Taipa. From Hong Kong you can take a shuttle bus over the Hong Kong–Zhuhai–Macao Bridge or a ferry from Hong Kong's piers (about an hour). Macao is small and mostly walked, plus buses, and the big resorts run free shuttle buses. The climate is subtropical monsoon, close to Hong Kong's: hot, humid, typhoon-prone summers and mild winters.",
+    culture:
+      "The official languages are Chinese and Portuguese; Cantonese is spoken, with Mandarin and English usable in the tourist areas. Macao blends Chinese and Portuguese culture naturally: Macanese food (Portuguese chicken, bacalhau, African chicken), Portuguese egg tarts and pork-chop buns are signatures, and temples and churches often stand a street apart. The gaming industry is an important part of Macao's economy; minors are not allowed in casino areas. Mainland residents need an Exit-Entry Permit and endorsement for Macao.",
+    seeAndDo:
+      "The historic-centre walking route: the Ruins of St Paul's, the Mount Fortress and the Macao Museum, Senado Square and the Leal Senado, St Dominic's Church, the Dom Pedro V Theatre, the A-Ma Temple, the Mandarin's House; Rua do Cunha and the Taipa Houses on Taipa; St Francis Xavier's Church, Hac Sa Beach and Lord Stow's on Coloane. The shows and shopping inside the resort complexes are another kind of experience.",
+    whenAndTips:
+      "October to December is the most comfortable. Summers are muggy, and in the typhoon season (about July–September) transport and border crossings close temporarily when storms hit. Macao's sights are concentrated and mostly walked, with slopes and cobbled lanes in the old town, so wear comfortable shoes. The historic centre is very crowded in high season (weekends, holidays), especially around the Ruins of St Paul's.",
+  },
+
+  taipei: {
+    identity:
+      "Taipei is the largest city of China's Taiwan Province, set in the Taipei Basin in the north of the island of Taiwan, with a metropolitan population of about seven million. The city is ringed by mountains on three sides and open to a river on the fourth; it is warm and rainy, and night markets, hot springs, museums and convenient public transport are the first impressions it gives.",
+    layout:
+      "The Taipei Basin is enclosed by the Datun volcano group, the Nangang hills and other ranges, with the Tamsui River and its tributaries the Keelung and Xindian rivers running through it. The centre is in the middle of the basin; the Xinyi district has Taipei 101 and its shopping area, while Dadaocheng and Wanhua to the west are the old town. North is the volcanic terrain of Yangmingshan and the Beitou hot springs; the river mouth is at Tamsui; south-east over the mountains is Yilan.",
+    gettingAround:
+      "Taoyuan International Airport is about 40 km south-west of the city, about 40 minutes to Taipei Main Station on the Airport MRT; Songshan Airport, within the city, mainly serves flights within the island and to nearby areas. In the city the MRT (metro) is the backbone, with buses and YouBike public bicycles; a single EasyCard covers them. A high-speed rail line runs down the western corridor of the island linking the main cities. The climate is subtropical monsoon: hot, humid summers with plum rains in May–June and a typhoon season July–September, and mild but damp, grey winters.",
+    culture:
+      "Mandarin (called \"Guoyu\" locally) and Southern Min are spoken, with Hakka and several indigenous languages also in use. The night-market culture is strong (Shilin, Raohe Street, Ningxia Road), with snacks such as braised pork rice, beef noodle soup, oyster omelette and bubble tea. The pace is fairly relaxed, and there is a no-eating rule inside MRT cars. Pay by EasyCard, credit card or e-payment. Restaurants generally do not expect an extra tip.",
+    seeAndDo:
+      "The Palace Museum (a large collection of Chinese painting, calligraphy, ceramics and bronzes across the dynasties — a solemn place, half a day to a day); the Taipei 101 observatory for a basin panorama; the old streets and dried-goods shops of Dadaocheng and Dihua Street; the Longshan Temple; the sulphur fumaroles and flower seasons of Yangmingshan and the Beitou hot springs; the river mouth and old street at Tamsui; the Shilin and Raohe Street night markets.",
+    whenAndTips:
+      "October to December and March–April have relatively settled weather, good for the outdoors. May–June brings plum rains and July–September is the typhoon season with a lot of rain, so have a backup for outdoor plans when a typhoon is coming. Winters are damp and cool, and the mountains (Yangmingshan) are colder, so bring a waterproof jacket. Popular museums such as the Palace Museum are crowded in high season — buy tickets ahead and avoid the peak tour-group hours.",
+  },
 };
