@@ -1,0 +1,17 @@
+{
+  "id": "cdg-nte",
+  "name": "巴黎 — 南特",
+  "nameEn": "Paris — Nantes",
+  "description": "巴黎盆地 · 卢瓦尔河",
+  "descriptionEn": "Paris Basin · Loire",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7602", "aircraft": "Airbus A319", "depIata": "CDG", "arrIata": "NTE", "durationMin": 55 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
+    { "kind": "terrain", "terrainId": "paris-basin" },
+    { "kind": "terrain", "terrainId": "loire-river" },
+    { "kind": "city", "id": "nte", "name": "南特", "nameEn": "Nantes", "lat": 47.1532, "lon": -1.6108, "airport": true }
+  ]
+}

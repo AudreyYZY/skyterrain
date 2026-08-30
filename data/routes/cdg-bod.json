@@ -1,0 +1,17 @@
+{
+  "id": "cdg-bod",
+  "name": "巴黎 — 波尔多",
+  "nameEn": "Paris — Bordeaux",
+  "description": "巴黎盆地 · 阿基坦盆地",
+  "descriptionEn": "Paris Basin · Aquitaine Basin",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7508", "aircraft": "Airbus A320", "depIata": "CDG", "arrIata": "BOD", "durationMin": 70 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
+    { "kind": "terrain", "terrainId": "paris-basin" },
+    { "kind": "terrain", "terrainId": "aquitaine-basin" },
+    { "kind": "city", "id": "bod", "name": "波尔多", "nameEn": "Bordeaux", "lat": 44.8283, "lon": -0.7156, "airport": true }
+  ]
+}

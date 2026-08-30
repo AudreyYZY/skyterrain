@@ -2156,4 +2156,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "For the aurora: late September–March; inland Alta has a high chance of clear skies and is often used as an aurora base. For the midnight sun: mid-May–July. Winter is very cold (often below −20°C) — prepare for extreme cold. When driving in spring and autumn, watch for migrating reindeer herds — slow down and do not sound the horn. Parts of the rock-art museum's boardwalk close for snow in winter.",
   },
+
+  "france-overview": {
+    identity:
+      "Metropolitan France covers about 550,000 sq km with a population of about 68 million, the largest country by area in Western Europe. The land is very varied: the north-west and west are old, low blocks (the Armorican Massif) and coastal plains; the centre-south is the Massif Central (extinct volcanoes and plateaus); the south-east and south have the young, high Alps and Pyrenees; in between are the two big sedimentary basins, the Paris Basin and the Aquitaine Basin. On the Mediterranean is Corsica — a mountainous island. Travel mode covers only metropolitan France and Corsica, not the overseas departments and territories.",
+    layout:
+      "It helps to divide France into: the Paris region (the capital and surroundings), the north (the plains around Lille), Alsace (Strasbourg, the Rhine valley, a historically Franco-German border area), Rhône-Alpes (Lyon, Grenoble, toward the high Alps), Provence (Marseille, Nice, the Mediterranean coast), the south-west (Toulouse, Bordeaux, the Pyrenees and wine country), the west (Nantes, the Loire estuary), and the island of Corsica.",
+    gettingAround:
+      "France's high-speed rail (TGV) network is extensive — Paris to Lyon, Marseille, Strasbourg, Bordeaux and other big cities is all within 2–4 hours, often more convenient than flying (city centre to city centre). Domestic flights are mainly for fast links between distant regions or to Corsica. Big cities have a metro, and suburbs have regional rail (RER/TER). Drive on the right; motorways are mostly tolled. Restaurant bills usually already include a service charge; rounding up is polite but not required. Tap water is drinkable. Power is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is French; English is fairly common in tourist areas and among younger people but not universal — a few words of French greeting are well received. The French value dining etiquette and conversational discretion, and it's customary to say bonjour on entering a shop and au revoir on leaving. Many small shops close on Sundays and at midday. Tipping is not required (the bill already includes a service charge; rounding up or leaving small change is fine).",
+    seeAndDo:
+      "The museums and landmarks of Paris; Mont Blanc, the Barre des Écrins and skiing in the Alps; the Calanques coast and lavender fields of Provence; the chain of extinct volcanoes and gorges of the Massif Central (the Gorges du Tarn, the Gorges de l'Ardèche); the Cirque de Gavarnie in the Pyrenees; the château country of the Loire valley; Mont-Saint-Michel and the chalk cliffs of Normandy; the mountains and sea of Corsica. Wine-region tours (Bordeaux, Burgundy and others) are popular.",
+    whenAndTips:
+      "May–June and September–October are quieter with good weather; July–August is peak season, hot in the south with crowded beaches and popular sights — also the French summer holiday, when many small shops close. The ski season in the Alps is December–April. France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Book ahead for popular sights and restaurants; the south has strong summer UV, so use sun protection.",
+  },
+
+  paris: {
+    identity:
+      "Paris is the capital of France, with a city population of about 2.1 million and a metro area of about 13 million, in a bend of the Seine in the north of the country. For over two thousand years it has been the political and cultural centre of the region, and Baron Haussmann's 19th-century rebuilding shaped the broad boulevards and stone terraces seen today — one of the cities with the densest concentration of museums and art collections in the world.",
+    layout:
+      "Paris is organised around the Seine, with the Left Bank (south, traditionally more academic and artistic, the Latin Quarter, Montparnasse) and the Right Bank (north, the commercial and administrative centre, the Louvre, the Champs-Élysées). The city is 20 spiralling arrondissements numbered outward from the centre. The Eiffel Tower is in the south-west and the Sacré-Cœur is on the Montmartre hill in the north, both high points. On the outer ring is the modern tower district of La Défense.",
+    gettingAround:
+      "Two main airports: Charles de Gaulle (CDG, with the RER B line or an airport express, about 35–50 minutes into town) and Orly (ORY, with rail links). The metro network is extremely dense (14 lines), plus buses and the RER suburban rail, taken with a Navigo pass or paper/phone tickets; the centre is also very walkable. The climate is temperate maritime, four clear but not extreme seasons, occasional summer heatwaves, and winters with little snow but grey and chilly.",
+    culture:
+      "French is the main language; English is fairly common among the young and in tourist areas. Saying bonjour on entering a shop and au revoir on leaving is basic manners and is better received than starting straight in. Dining is unhurried, with dinner usually starting after 7–8 pm. Restaurant bills already include a service charge, so no extra tip is required. The metro is very crowded at peak times, and pickpocketing occasionally occurs at popular sights and on the metro — watch your belongings.",
+    seeAndDo:
+      "The Louvre, the Musée d'Orsay, the Centre Pompidou; the Eiffel Tower and the Champ de Mars; Notre-Dame (under restoration/partly reopened — check official announcements); the Arc de Triomphe and the Champs-Élysées; Montmartre and the Sacré-Cœur; a Seine river cruise; the Jardin du Luxembourg; the Palace of Versailles (out of town, needs most of a day).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable. In August many local shops and restaurants close for holidays; the main sights stay open but the local atmosphere is quieter. Book timed tickets online in advance for popular museums (the Louvre, Orsay) to skip the queues. Be alert for pickpockets on the metro and keep bags to the front.",
+  },
+
+  lille: {
+    identity:
+      "Lille is at the far north of France, near the Belgian border, with a metro area of about 1.2 million, historically the textile and industrial centre of French Flanders, its architecture marked by Flemish brick gables quite different from Paris. It is the largest city in northern France and a hub of the London–Paris–Brussels high-speed rail triangle.",
+    layout:
+      "Lille's old town (Vieux-Lille) keeps a well-preserved area of 17th-century Flemish brick streets, with the Grand Place as the central landmark. The city was once a thriving textile-industry area, and many old mills have been converted into cultural spaces. The land is flat, part of the great plain of northern France.",
+    gettingAround:
+      "Lille Airport (LIL) is south of the city, with an airport bus. Lille is more often reached by high-speed rail: about 1 hour from Paris, about 1.5 hours from London, about 40 minutes from Brussels (Eurostar and Thalys both stop here). The city has a metro (one of the earliest fully automatic metro systems in France) and trams. The climate is temperate maritime, cloudy and rainy, cooler and wetter than Paris.",
+    culture:
+      "French is the main language; being close to Belgium, Flemish culture and beer culture have a visible influence (a wide range of local beers). Lille people are known for being warm and direct, and the September 'Braderie de Lille' is one of the largest flea markets in Europe, with stalls across the whole city. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "The Flemish streets and Grand Place of the old town; the Palais des Beaux-Arts (one of France's most important painting collections after the Louvre); the old stock exchange (converted into a book market and cafés); the September Braderie; the local dish carbonnade (beef stewed in beer) with fries. An hour south to Paris, or a day trip north to London or Brussels.",
+    whenAndTips:
+      "May–September is the most comfortable; during the September Braderie the whole city is packed and lodging should be booked early. Lille is a good stopover between Paris, London and Brussels, with high-speed rail far more convenient than flying. It rains a lot — carry an umbrella.",
+  },
+
+  strasbourg: {
+    identity:
+      "Strasbourg is in north-eastern France on the Ill river, a tributary of the Rhine, right on the German border, with a metro area of about 780,000, the centre of the Alsace region. Historically it changed hands between France and Germany several times, so its architecture, language (Alsatian, close to a German dialect) and food all show a clear Franco-German blend. It is one of the seats of the European Parliament and the headquarters of the Council of Europe.",
+    layout:
+      "The core of Strasbourg's old town, the Grande Île, is wrapped by two branches of the Ill and was the first entire old town to be listed as a World Heritage Site. The cathedral (pink sandstone, one tower) is the old town's high point. La Petite France, with its half-timbered houses along the canals, is the most photographed corner. The European district (the European Parliament and other institutions) is east of the old town.",
+    gettingAround:
+      "Strasbourg Airport (SXB) is south of the city, with a train link. High-speed rail from Paris is about 1.8 hours, and Zürich is also easily reached. The city has one of the largest tram networks in France and extensive cycle lanes (local cycling rates are among the highest in France). The climate is continental, cold winters and hot summers, with a bigger seasonal range than other French cities.",
+    culture:
+      "French is the main language; Alsatian (a German dialect) is still used by older generations and in some contexts, and German often appears on restaurant menus and signs. The food has a German character (choucroute with sausage, onion tart, Alsace white wine). The Christmas market (December) is one of the most famous in France, said to date back to 1570. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "Strasbourg Cathedral (climb the tower for the old town and Rhine plain); a walk or boat trip along the canals of La Petite France; the European district for the European Parliament building (viewable from outside, open days allow entry); the Alsatian Museum; the December Christmas market; day trips to Alsace wine-route towns (such as Colmar).",
+    whenAndTips:
+      "May–October is good for sightseeing; December's Christmas market is the busiest and most crowded time of year, so book lodging early. Winters are cold and summers hot — pack for the season. Cycling is a normal way to get around locally — consider renting a bike for the old town.",
+  },
+
+  lyon: {
+    identity:
+      "Lyon is in south-eastern France, where the Saône meets the Rhône, with a metro area of about 2.2 million — France's second- or third-largest city (roughly tied with Marseille), an important city of Roman Gaul. It is widely regarded as the gastronomic capital of France, was a centre of the Renaissance silk trade, and its old town is a UNESCO World Heritage Site as a whole.",
+    layout:
+      "Lyon sits between two rivers (the Saône and the Rhône) and the surrounding hills. The old town (Vieux Lyon) is on the west bank of the Saône at the foot of Fourvière hill, a Renaissance ensemble; the Basilica of Notre-Dame de Fourvière is on the hilltop, overlooking the whole city. Between the two rivers is the 'Presqu'île' (peninsula), the main commercial district. The old town has unique 'traboules' — hidden passages linking building courtyards, historically used to carry silk.",
+    gettingAround:
+      "Lyon–Saint-Exupéry Airport (LYS) is east of the city, with a rail express (Rhônexpress) about 30 minutes into town. High-speed rail from Paris is about 2 hours. The city has a dense metro, tram and bus network; the old town and the Presqu'île are walkable. The climate is temperate continental, hot summers and cooler winters, with more sun than Paris.",
+    culture:
+      "French is the main language. Lyon people are intensely proud of their culinary tradition — a 'bouchon' (a traditional Lyon bistro) serves hearty dishes like offal and sausage, with Beaujolais wine. The 'Fête des Lumières' in early December is one of France's grandest light-art festivals. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "The Basilica of Notre-Dame de Fourvière and its funicular; the Renaissance buildings and traboules of the old town; the Roman theatre ruins; the Musée des Beaux-Arts; the central square and shopping streets of the Presqu'île; a meal at a traditional bouchon; the early-December light festival; from Lyon, 1–1.5 hours to Grenoble, the Alps or the Beaujolais wine region.",
+    whenAndTips:
+      "May–June and September–October are the most comfortable; during the early-December light festival the whole city is packed and lodging is tight. Bouchon portions are large and rich (be selective about offal dishes) — check the menu ahead. Lyon is a hub for onward travel to the Alps and Provence, with excellent high-speed rail connections.",
+  },
+
+  grenoble: {
+    identity:
+      "Grenoble is in south-eastern France in the Isère valley, ringed by three mountain ranges (the Vercors, the Chartreuse and the Belledonne), with a metro area of about 450,000 — the research and high-tech centre of the French Alps (sometimes called 'France's Silicon Valley') and host of the 1968 Winter Olympics. The city itself is flat, and looking up to see snow mountains all around is its most distinctive impression.",
+    layout:
+      "Grenoble is built on the flat valley floor where the Isère and Drac rivers meet, with a narrow-streeted old town inside the old walls. In the north of the city a cable car (the iconic 'bubble' spherical cars) rises from the site of the old Bastille fortress, a few minutes to a viewpoint over the city and the mountains on three sides. University campuses and research institutes are scattered around the city.",
+    gettingAround:
+      "Grenoble–Isère Airport (GNB) is about 40 km from the city, mainly served by winter ski charter flights; day-to-day access is more often by high-speed rail (about 3 hours from Paris) or a bus transfer from Lyon airport (about 1 hour). The city has an extensive tram network, and the old town is walkable. The climate is mountain: cold, snowy winters and hot summers with cool evenings; being ringed by mountains, air circulation is poorer, and winter temperature inversions can bring haze.",
+    culture:
+      "French is the main language; because of the universities and research institutes, English is relatively common. Grenoble people live an outdoor-oriented lifestyle — skiing, climbing and mountaineering are everyday activities. Walnuts are a local speciality with a protected designation of origin. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "The Bastille fortress and the 'bubble' cable car for the city-and-mountains panorama; the old town's Musée Dauphinois and Musée de Grenoble; a day trip to hike the Vercors plateau or the Chartreuse range; skiing in the Alps in winter (resorts such as Alpe d'Huez and Les Deux Alpes are about 1–1.5 hours by car); the Écrins National Park to the south for summer mountaineering.",
+    whenAndTips:
+      "June–September suits hiking, December–April is ski season. Winter can bring temperature-inversion haze in the valley, while the mountains above are often clearer. Grenoble's own airport has few, seasonal flights — most visitors come via high-speed rail to Paris or a transfer from Lyon airport. Check mountain weather and avalanche warnings for hiking and skiing nearby.",
+  },
+
+  marseille: {
+    identity:
+      "Marseille is on the Mediterranean coast of south-eastern France, with a metro area of about 1.9 million — France's oldest city (founded by Greeks around 600 BC) and its largest commercial port. The city is known for the Old Port, Mediterranean food (bouillabaisse fish soup) and a limestone fjord-like coastline called the Calanques, and is an important gateway to Corsica and North Africa.",
+    layout:
+      "Marseille is built around the Old Port (Vieux-Port), the historic core, with yachts and fishing boats moored and cafés and a fish market around it. The Basilica of Notre-Dame de la Garde stands on a hill to the south, the city's high point, with a view over the whole bay and the islands offshore (the Frioul archipelago, home to the Château d'If). South-east along the coast is the Calanques National Park — a limestone fjord coastline between Marseille and Cassis.",
+    gettingAround:
+      "Marseille Provence Airport (MRS) is north-west of the city, with an airport bus. High-speed rail from Paris is about 3.2 hours. The city has a metro, trams and buses; the Old Port and main sights are walkable. The climate is Mediterranean: hot, dry summers and mild winters, often with a dry, cold north wind called the Mistral.",
+    culture:
+      "French is the main language; because of successive waves of migration (from Italy, North Africa, the Comoros and elsewhere), Marseille is one of the most ethnically diverse cities in France, with a correspondingly rich food and neighbourhood culture. Marseille people are known for being direct, warm and strongly locally identified. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "The Old Port and Notre-Dame de la Garde; a boat to the Château d'If (the setting of Dumas's 'The Count of Monte Cristo'); hiking or a boat trip in the Calanques National Park (strong summer UV and no shade on the trails); the Museum of European and Mediterranean Civilisations (MuCEM); the narrow lanes of Le Panier old quarter; an authentic bouillabaisse (a proper one is usually booked ahead and served in two courses).",
+    whenAndTips:
+      "May–June and September–October are the most comfortable; July–August is very hot — avoid midday for Calanques hikes and carry plenty of water. The Mistral is dry and cold and can affect boat trips — check the forecast ahead. Some Calanques trails are restricted or closed in summer for fire risk — check official notices before setting out.",
+  },
+
+  nice: {
+    identity:
+      "Nice is on the Mediterranean coast of south-eastern France, close to the Italian border, with a metro area of about 1 million — the centre of the Côte d'Azur. Since the 19th century it has been a winter resort for European high society, and the seafront 'Promenade des Anglais', built by the English, is still the city's emblem.",
+    layout:
+      "Nice is built along a broad bay, with the Promenade des Anglais running the length of the seafront and a pebble beach behind it. The old town (Vieux Nice) is to the east, narrow Italian-style lanes and coloured buildings (the area was historically under Savoyard/Italian rule, joining France only in 1860). Castle Hill (no castle, now a ruined park) is at the eastern end of the old town, overlooking the whole bay.",
+    gettingAround:
+      "Nice Côte d'Azur Airport (NCE) is west of the city, right on the coast, France's third-busiest airport, with a tram about 30 minutes to the centre. High-speed rail from Paris is about 5.5 hours (most people fly). The city has trams and buses; the seafront and old town are walkable. The climate is Mediterranean: mild, humid winters and hot, dry summers — one of the sunniest regions of France.",
+    culture:
+      "French is the main language; because of its history and many visitors, Italian and English are also often heard. Nice people are proud of their local identity ('Niçois') and dishes like salade niçoise and pissaladière (onion tart). The Nice Carnival each February is one of the largest in France. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "The Promenade des Anglais and the pebble beach; the old town's narrow lanes and the Cours Saleya market; Castle Hill for the panorama; the Matisse Museum and the Chagall Museum; the coastal train to Monaco, the clifftop village of Èze, or Cannes (each about 30–40 minutes); the February carnival.",
+    whenAndTips:
+      "May–June and September–October are the most comfortable; July–August is hot with crowded beaches and sights; lodging is tight during the February carnival. The coastal train line (toward Monaco and Menton) is very scenic and inexpensive — a popular experience. UV is strong in summer, and the beaches are mostly pebble rather than sand — water shoes help.",
+  },
+
+  toulouse: {
+    identity:
+      "Toulouse is in south-western France on the Garonne, with a metro area of about 1 million — the centre of France's aerospace industry (Airbus's headquarters is here) and an important European Space Agency base. Because of the widespread use of locally fired pink brick and tile, it is called 'la Ville Rose' (the Pink City).",
+    layout:
+      "Toulouse's old town spreads along the east bank of the Garonne, with the town hall (the Capitole) fronting the main square, pink-brick buildings throughout the city. The Canal du Midi (a historic canal linking the Atlantic and the Mediterranean, a World Heritage Site) passes the edge of the city, lined with tree-shaded paths. Around the city are Airbus's final-assembly plants and aerospace industrial parks.",
+    gettingAround:
+      "Toulouse–Blagnac Airport (TLS) is west of the city, with a tram (Line T2) about 20 minutes to the centre. High-speed rail from Paris is about 4.5 hours (many people fly instead). The city has a metro (two fully automatic lines), trams and buses. The climate is temperate, influenced by both the Atlantic and the Mediterranean, hot and dry in summer, mild in winter.",
+    culture:
+      "French is the main language, with a south-western accent and Occitan/Gascon cultural roots (some signs pair French with Occitan). Toulouse is one of France's largest student cities, young and lively. Local food is known for cassoulet (a white-bean-and-meat stew) and violet-flavoured sweets. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "Capitole square and the pink-brick old town; the Basilica of Saint-Sernin (one of the largest surviving Romanesque churches); the Musée des Augustins; the Cité de l'Espace (a space-themed park) and an Airbus factory tour (book ahead); a walk or cycle along the Canal du Midi; an hour south to the northern foothills of the Pyrenees.",
+    whenAndTips:
+      "May–June and September–October are the most comfortable; July–August is hot and dry. Airbus factory tours need booking well ahead online, with ID required. Toulouse is a common starting point for driving or touring to the Pyrenees (such as the Cirque de Gavarnie).",
+  },
+
+  bordeaux: {
+    identity:
+      "Bordeaux is in south-western France on the lower Garonne, with a metro area of about 1 million — the centre of one of the world's most prestigious wine regions. Its 18th-century stone terraces are well preserved and the whole old town is a World Heritage Site; over the last decade or two, extensive riverfront redevelopment has turned it from an industrial port into a popular tourist city.",
+    layout:
+      "Bordeaux is built along a crescent-shaped bend of the Garonne (hence 'the Port of the Moon'), with the old town on the west bank, a continuous run of 18th-century classical stone buildings. The riverside Miroir d'Eau (Water Mirror) is a landmark shallow reflecting pool. Around the city are the vineyards of the Bordeaux region (the Médoc on the left bank, Saint-Émilion on the right, among others), 30–60 minutes by car.",
+    gettingAround:
+      "Bordeaux–Mérignac Airport (BOD) is west of the city, with a rail express (about 30 minutes) to the centre. High-speed rail from Paris is about 2 hours (much shorter since the TGV Atlantic line opened). The city has an extensive tram network and buses; the old town is walkable. The climate is temperate maritime, moderated by the Atlantic, mild and humid.",
+    culture:
+      "French is the main language. Bordeaux's city life is closely tied to the wine industry, and many locals work at or with an estate. The city has an elegant, unhurried feel. Restaurant bills already include a service charge, and sommelier recommendations when ordering wine are usually reliable.",
+    seeAndDo:
+      "The Miroir d'Eau and the Saint-Pierre old quarter; La Cité du Vin (an interactive wine museum); Bordeaux Cathedral; out of town, Saint-Émilion (a medieval stone village, itself a World Heritage Site) or a Médoc estate visit and tasting (mostly by appointment); the Dune du Pilat (Europe's tallest sand dune, about an hour by car).",
+    whenAndTips:
+      "May–June and September–October are the most comfortable; September–October is the grape harvest, with related events at some estates. Book estate visits and tastings ahead; if driving between tastings, arrange a designated driver or drink little or nothing. The sand at the Dune du Pilat gets very hot — avoid walking barefoot for long at midday in summer.",
+  },
+
+  nantes: {
+    identity:
+      "Nantes is in western France near the mouth of the Loire, with a metro area of about 960,000, historically an important Atlantic port and shipbuilding centre (also once a port in the transatlantic slave trade, a history now presented candidly at a dedicated memorial). Its 18th-century stone buildings and bold recent contemporary public art (such as a giant mechanical elephant) give the city a distinctive character, and it has repeatedly been rated one of France's most liveable cities.",
+    layout:
+      "Nantes is built where the Loire meets several tributaries, its old town centred on the Château des Ducs de Bretagne. The Île de Nantes (the former shipyard district) has been redeveloped for contemporary art and creative industries, and the giant mechanical elephant and carousel of Les Machines de l'île are here. West along the Loire, the river leads to the Atlantic.",
+    gettingAround:
+      "Nantes Atlantique Airport (NTE) is south-west of the city, with an airport bus. High-speed rail from Paris is about 2 hours. The city has an extensive tram network (a pioneer of the modern French tram revival) and buses; the old town is walkable. The climate is temperate maritime, mild and humid, moderated by the Atlantic, rarely extreme.",
+    culture:
+      "French is the main language. Nantes shows traces of both Breton and Anjou/Loire culture (it was historically the capital of the Duchy of Brittany). The city invests heavily in contemporary art and creative industries, and the mechanical elephant is its best-known cultural symbol. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "The Château des Ducs de Bretagne and its moat; the giant mechanical elephant (you can ride it) and carousel on the Île de Nantes; the Cathedral of St Peter and St Paul; the contemporary-art walking route (Le Voyage à Nantes, with a green line in summer); west along the Loire to Saint-Nazaire for the Atlantic, or a day trip east to the Loire valley châteaux (Amboise, Chambord and others, mostly near Tours).",
+    whenAndTips:
+      "May–September is the most comfortable; the mechanical elephant runs longer hours in summer — book online ahead to skip queues. The Loire château cluster is a fair drive from Nantes; if châteaux are the sole focus, Tours or Blois make a closer base. The transatlantic-slave-trade memorial site is a place for quiet, respectful visiting.",
+  },
+
+  ajaccio: {
+    identity:
+      "Ajaccio is on the west coast of Corsica, the island's capital, with a city population of about 70,000, and the birthplace of Napoleon Bonaparte (his childhood home is now a national museum). Corsica is mountainous, with a central spine of granite peaks over 2,000 m and a very indented coastline combining beaches, fjord-like inlets and cliffs; historically influenced by several Mediterranean powers in turn, it joined France in 1768.",
+    layout:
+      "Ajaccio is built around a broad bay, the old town at its north-eastern corner, with Napoleon's childhood home and the cathedral at its core. The western side of the bay has a breakwater and marina, with beaches along the shore. Not far behind the city, Corsica's mountainous terrain begins, and on a clear day the inland high peaks are visible.",
+    gettingAround:
+      "Ajaccio Airport (AJA) is about 8 km south of the city, with a bus link. There are also ferries to mainland France (Marseille, Nice, Toulon) and Italy. Getting around the island is mostly by car (mountain roads with many bends), and there is also a scenic railway linking Ajaccio, Corte and Bastia. The climate is Mediterranean: hot, dry summers and mild, rainy winters, with snow in the inland mountains in winter.",
+    culture:
+      "French is the main language; Corsican (a Romance language close to Italian) is still used day to day on the island, and signs are often bilingual French/Corsican. Islanders have a strong Corsican identity, and the food (Corsican charcuterie, chestnut products, AOC cheeses) forms its own tradition. Restaurant bills already include a service charge.",
+    seeAndDo:
+      "Napoleon's childhood home museum and the cathedral; the old town's narrow lanes and market; a drive along the coast to the Sanguinaires Islands reserve or Pointe de la Parata for the Genoese towers; a summer boat trip to the Scandola Nature Reserve (a World Heritage coastline); a day trip inland to Corte (the old capital, a mountain town) or the red-granite coast of Piana north of Ajaccio (a World Heritage Site).",
+    whenAndTips:
+      "May–June and September–October are the most comfortable; July–August is peak season, with crowded beaches and ferries. Inland mountain roads have many bends — bring motion-sickness medication if needed. Book boat tickets to reserves like Scandola ahead in peak season. Inland mountains have a large day–night temperature range — a jacket for evenings is worth carrying even in summer.",
+  },
 };

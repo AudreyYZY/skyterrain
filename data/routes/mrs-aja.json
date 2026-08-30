@@ -1,0 +1,17 @@
+{
+  "id": "mrs-aja",
+  "name": "马赛 — 阿雅克肖",
+  "nameEn": "Marseille — Ajaccio",
+  "description": "卡朗格峡湾岸 · 科西嘉岛",
+  "descriptionEn": "Calanques · Corsica",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7834", "aircraft": "Airbus A319", "depIata": "MRS", "arrIata": "AJA", "durationMin": 50 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "mrs", "name": "马赛", "nameEn": "Marseille", "lat": 43.4393, "lon": 5.2214, "airport": true },
+    { "kind": "terrain", "terrainId": "calanques" },
+    { "kind": "terrain", "terrainId": "corsica" },
+    { "kind": "city", "id": "aja", "name": "阿雅克肖", "nameEn": "Ajaccio", "lat": 41.9236, "lon": 8.8029, "airport": true }
+  ]
+}

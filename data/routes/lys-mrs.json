@@ -1,0 +1,18 @@
+{
+  "id": "lys-mrs",
+  "name": "里昂 — 马赛",
+  "nameEn": "Lyon — Marseille",
+  "description": "韦科尔高原 · 阿尔代什峡谷 · 卡马尔格",
+  "descriptionEn": "Vercors · Gorges de l'Ardèche · Camargue",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7724", "aircraft": "Embraer E190", "depIata": "LYS", "arrIata": "MRS", "durationMin": 40 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "lys", "name": "里昂", "nameEn": "Lyon", "lat": 45.7256, "lon": 5.0811, "airport": true },
+    { "kind": "terrain", "terrainId": "vercors" },
+    { "kind": "terrain", "terrainId": "ardeche-gorge" },
+    { "kind": "terrain", "terrainId": "camargue" },
+    { "kind": "city", "id": "mrs", "name": "马赛", "nameEn": "Marseille", "lat": 43.4393, "lon": 5.2214, "airport": true }
+  ]
+}

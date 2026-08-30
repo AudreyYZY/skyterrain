@@ -1,0 +1,17 @@
+{
+  "id": "cdg-tls",
+  "name": "巴黎 — 图卢兹",
+  "nameEn": "Paris — Toulouse",
+  "description": "巴黎盆地 · 中央高原",
+  "descriptionEn": "Paris Basin · Massif Central",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7304", "aircraft": "Airbus A220-300", "depIata": "CDG", "arrIata": "TLS", "durationMin": 75 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
+    { "kind": "terrain", "terrainId": "paris-basin" },
+    { "kind": "terrain", "terrainId": "massif-central" },
+    { "kind": "city", "id": "tls", "name": "图卢兹", "nameEn": "Toulouse", "lat": 43.6293, "lon": 1.3638, "airport": true }
+  ]
+}

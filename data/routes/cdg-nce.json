@@ -1,0 +1,19 @@
+{
+  "id": "cdg-nce",
+  "name": "巴黎 — 尼斯",
+  "nameEn": "Paris — Nice",
+  "description": "巴黎盆地 · 中央高原 · 罗讷河 · 凡尔登峡谷",
+  "descriptionEn": "Paris Basin · Massif Central · Rhône · Gorges du Verdon",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF6592", "aircraft": "Airbus A320", "depIata": "CDG", "arrIata": "NCE", "durationMin": 90 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
+    { "kind": "terrain", "terrainId": "paris-basin" },
+    { "kind": "terrain", "terrainId": "massif-central" },
+    { "kind": "terrain", "terrainId": "rhone-river" },
+    { "kind": "terrain", "terrainId": "verdon-gorge" },
+    { "kind": "city", "id": "nce", "name": "尼斯", "nameEn": "Nice", "lat": 43.6584, "lon": 7.2159, "airport": true }
+  ]
+}
