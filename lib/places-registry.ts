@@ -104,6 +104,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "ch-valais": { zh: "瓦莱州", en: "Valais", order: 83 },
   "ch-graubunden": { zh: "格劳宾登州", en: "Graubünden", order: 84 },
   "ch-ticino": { zh: "提契诺州", en: "Ticino", order: 85 },
+  // 挪威（东→南→西部峡湾→中部→北部→北极挪威）
+  "no-eastern": { zh: "东部", en: "Eastern Norway", order: 90 },
+  "no-southern": { zh: "南部", en: "Southern Norway", order: 91 },
+  "no-western": { zh: "西部（峡湾区）", en: "Western Norway (Fjords)", order: 92 },
+  "no-central": { zh: "中部（特伦德拉格）", en: "Trøndelag", order: 93 },
+  "no-northern": { zh: "北部", en: "Northern Norway", order: 94 },
+  "no-arctic": { zh: "北极挪威", en: "Arctic Norway", order: 95 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -128,6 +135,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "uk", nameZh: "英国", nameEn: "United Kingdom" },
   { country: "iceland", nameZh: "冰岛", nameEn: "Iceland" },
   { country: "switzerland", nameZh: "瑞士", nameEn: "Switzerland" },
+  { country: "norway", nameZh: "挪威", nameEn: "Norway" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -813,6 +821,72 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "LUG", nameZh: "卢加诺-阿尼奥机场", nameEn: "Lugano Airport", lon: 8.9106, lat: 46.0043 },
     source: "卢加诺市中心 46.0037,8.9511；LUG 机场：公开资料",
   },
+
+  // ── 挪威 ──
+  {
+    id: "oslo", nameZh: "奥斯陆", nameEn: "Oslo", country: "norway", tier: "capital", zone: "no-eastern",
+    lon: 10.7522, lat: 59.9139,
+    airport: { iata: "OSL", nameZh: "奥斯陆加勒穆恩机场", nameEn: "Oslo Gardermoen", lon: 11.1004, lat: 60.1939 },
+    source: "奥斯陆市中心 59.9139,10.7522；OSL 机场：公开资料",
+  },
+  {
+    id: "lillehammer", nameZh: "利勒哈默尔", nameEn: "Lillehammer", country: "norway", tier: "notable", zone: "no-eastern",
+    lon: 10.4662, lat: 61.1153,
+    source: "利勒哈默尔 61.1153,10.4662：公开资料（无机场，铁路进入，1994 冬奥会举办地）",
+  },
+  {
+    id: "kristiansand", nameZh: "克里斯蒂安桑", nameEn: "Kristiansand", country: "norway", tier: "notable", zone: "no-southern",
+    lon: 7.9956, lat: 58.1467,
+    airport: { iata: "KRS", nameZh: "谢维克机场", nameEn: "Kristiansand Airport, Kjevik", lon: 8.0853, lat: 58.2042 },
+    source: "克里斯蒂安桑市中心 58.1467,7.9956；KRS 机场：公开资料",
+  },
+  {
+    id: "stavanger", nameZh: "斯塔万格", nameEn: "Stavanger", country: "norway", tier: "major", zone: "no-western",
+    lon: 5.7331, lat: 58.9700,
+    airport: { iata: "SVG", nameZh: "索拉机场", nameEn: "Stavanger Airport, Sola", lon: 5.6378, lat: 58.8767 },
+    source: "斯塔万格市中心 58.9700,5.7331；SVG 机场：公开资料",
+  },
+  {
+    id: "bergen", nameZh: "卑尔根", nameEn: "Bergen", country: "norway", tier: "major", zone: "no-western",
+    lon: 5.3221, lat: 60.3913,
+    airport: { iata: "BGO", nameZh: "弗莱斯兰机场", nameEn: "Bergen Airport, Flesland", lon: 5.2181, lat: 60.2934 },
+    source: "卑尔根市中心 60.3913,5.3221；BGO 机场：公开资料",
+  },
+  {
+    id: "alesund", nameZh: "奥勒松", nameEn: "Ålesund", country: "norway", tier: "notable", zone: "no-western",
+    lon: 6.1495, lat: 62.4722,
+    airport: { iata: "AES", nameZh: "维格拉机场", nameEn: "Ålesund Airport, Vigra", lon: 6.1197, lat: 62.5625 },
+    source: "奥勒松市中心 62.4722,6.1495；AES 机场：公开资料",
+  },
+  {
+    id: "trondheim", nameZh: "特隆赫姆", nameEn: "Trondheim", country: "norway", tier: "major", zone: "no-central",
+    lon: 10.3951, lat: 63.4305,
+    airport: { iata: "TRD", nameZh: "韦讷斯机场", nameEn: "Trondheim Airport, Værnes", lon: 10.9240, lat: 63.4578 },
+    source: "特隆赫姆市中心 63.4305,10.3951；TRD 机场：公开资料",
+  },
+  {
+    id: "bodo", nameZh: "博德", nameEn: "Bodø", country: "norway", tier: "notable", zone: "no-northern",
+    lon: 14.4049, lat: 67.2804,
+    airport: { iata: "BOO", nameZh: "博德机场", nameEn: "Bodø Airport", lon: 14.3653, lat: 67.2692 },
+    source: "博德市中心 67.2804,14.4049；BOO 机场：公开资料",
+  },
+  {
+    id: "narvik", nameZh: "纳尔维克", nameEn: "Narvik", country: "norway", tier: "notable", zone: "no-northern",
+    lon: 17.4272, lat: 68.4385,
+    source: "纳尔维克 68.4385,17.4272：公开资料（无就近机场，Ofoten 铁路终点、深水不冻港）",
+  },
+  {
+    id: "tromso", nameZh: "特罗姆瑟", nameEn: "Tromsø", country: "norway", tier: "major", zone: "no-arctic",
+    lon: 18.9553, lat: 69.6492,
+    airport: { iata: "TOS", nameZh: "朗内斯机场", nameEn: "Tromsø Airport, Langnes", lon: 18.9189, lat: 69.6833 },
+    source: "特罗姆瑟市中心 69.6492,18.9553；TOS 机场：公开资料",
+  },
+  {
+    id: "alta", nameZh: "阿尔塔", nameEn: "Alta", country: "norway", tier: "notable", zone: "no-arctic",
+    lon: 23.2716, lat: 69.9689,
+    airport: { iata: "ALF", nameZh: "阿尔塔机场", nameEn: "Alta Airport", lon: 23.3717, lat: 69.9761 },
+    source: "阿尔塔 69.9689,23.2716；ALF 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -828,6 +902,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   uk: "europe",
   iceland: "europe",
   switzerland: "europe",
+  norway: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

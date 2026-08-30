@@ -1,0 +1,17 @@
+{
+  "id": "tos-alf",
+  "name": "特罗姆瑟 — 阿尔塔",
+  "nameEn": "Tromsø — Alta",
+  "description": "林根阿尔卑斯 · 芬马克高原",
+  "descriptionEn": "Lyngen Alps · Finnmarksvidda",
+  "depCountry": "norway",
+  "arrCountry": "norway",
+  "flight": { "airline": "维德罗航空", "airlineEn": "Widerøe", "flightNo": "WF976", "aircraft": "Bombardier Q400", "depIata": "TOS", "arrIata": "ALF", "durationMin": 40 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "tos", "name": "特罗姆瑟", "nameEn": "Tromsø", "lat": 69.6833, "lon": 18.9189, "airport": true },
+    { "kind": "terrain", "terrainId": "lyngen-alps" },
+    { "kind": "terrain", "terrainId": "finnmarksvidda" },
+    { "kind": "city", "id": "alf", "name": "阿尔塔", "nameEn": "Alta", "lat": 69.9761, "lon": 23.3717, "airport": true }
+  ]
+}

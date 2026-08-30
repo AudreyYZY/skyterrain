@@ -1825,5 +1825,185 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The Old Town's Piazza della Riforma and its arcades, and the Renaissance frescoes in Santa Maria degli Angioli; the LAC cultural centre and the cantonal art museum; the funicular up Monte San Salvatore for the lake and Alpine panorama; a boat on Lake Lugano to Gandria (a car-free lakeside village) and Morcote; north to Bellinzona and its three World Heritage castles; the Swissminiatur miniature park.",
     whenAndTips:
       "April–October is the most comfortable, with hot summers. This is the rare place in Switzerland to sit in the sun, eat pasta and see palm trees, and it makes a good southern base after crossing the Alps. The Gotthard Base Tunnel makes Zürich–Lugano fast, but the scenery is on the old mountain line (the Gotthard Panorama Express).",
-    },
+  },
+
+  "norway-overview": {
+    identity:
+      "Norway is a country in western Scandinavia, about 320,000 sq km (not counting Svalbard and other dependencies), with a population of about 5.5 million. It stretches about 1,750 km north to south, with an extremely broken coastline of countless fjords and islands. The land is mostly mountains and plateaus: an old range worn by ice (the Scandinavian Mountains, shared with Sweden) runs up the east, and the western side is cut into deep fjords reaching inland. Because of the warm North Atlantic current, Norway's winters are far milder than at similar latitudes elsewhere.",
+    layout:
+      "The population is concentrated in the southern half: the east (the lowlands and valleys around Oslo, nearly half the country's people), the southern coast (Kristiansand), the western fjord region (Bergen, Stavanger, Ålesund — mountains meeting sea, and wet), and central Trøndelag (Trondheim). The further north, the fewer people: northern Norway (Bodø, Narvik, the Lofoten Islands), and 'Arctic Norway' north of the Arctic Circle (Tromsø, Alta), the place for the northern lights and the midnight sun, and an area where the Sámi (Sápmi) have traditionally herded reindeer.",
+    gettingAround:
+      "Norway's domestic air network is one of the densest in Europe (the terrain makes roads long), with Widerøe, SAS and Norwegian linking towns large and small. Railways reach only the centre and south (Oslo–Bergen and Oslo–Trondheim–Bodø are scenic lines). The west coast has coastal ships (such as Hurtigruten) that double as scheduled transport. Between fjords you often take a car ferry. Drive on the right; mountain roads are narrow with many tunnels, and winter tyres are needed. Prices are very high (alcohol and eating out especially). Tap water is excellent and drinkable. Power is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is Norwegian (with two written standards, Bokmål and Nynorsk); in parts of the north, Northern Sámi is also official, with bilingual signs; almost everyone speaks fluent English. Society is egalitarian, high-trust and safe. Norwegians value the outdoors (friluftsliv) and not disturbing others. The 'right to roam' (allemannsretten) allows hiking and camping in uncultivated wild land, subject to rules and leaving no trace. Restaurants do not require tipping.",
+    seeAndDo:
+      "Fjords: the Sognefjord, the Geirangerfjord, the Nærøyfjord (the last two are World Heritage Sites), Preikestolen and Kjeragbolten on the Lysefjord. Mountains and plateaus: Jotunheimen (with Norway's highest peaks), the Hardangervidda, Dovrefjell. Glaciers: Jostedalsbreen (the largest on mainland Europe). Cities: the wharf houses of Bergen (a World Heritage Site), the museums and opera house of Oslo, the cathedral of Trondheim. The north: the Lofoten Islands, the northern lights at Tromsø. Scenic trains: the Bergen Railway, the Flåm Railway.",
+    whenAndTips:
+      "June–August has the longest daylight (the midnight sun in the north), with all mountain roads and ferries open — best for fjords and hiking; September–March is aurora season in the north but cold, dark and with some roads closed. Mountain and fjord weather is changeable — dress in layers and carry a waterproof. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Book scenic trains and popular ferries ahead in peak season. Prices are high, and supermarkets and the alcohol monopoly (Vinmonopolet) have limited hours and mostly close on Sundays.",
+  },
+
+  oslo: {
+    identity:
+      "Oslo is the capital and largest city of Norway, with a metro area of about 1 million, at the innermost end of the Oslofjord, ringed on three sides by forested hills. It is one of the older Scandinavian capitals (its founding goes back to the 11th century), and it has changed a great deal in the last two or three decades with a new waterfront district, an opera house and a set of new museums.",
+    layout:
+      "Oslo is on flat ground at the head of the fjord, with the centre running from the central station along Karl Johans gate to the Royal Palace, past the parliament, the university and the national theatre. The Bjørvika waterfront district has the opera house (you can walk up the roof), the Munch Museum and the public library. Behind the city is the great forest, the Marka, reached by metro for hiking or cross-country skiing, and small islands in the fjord are reachable by ferry.",
+    gettingAround:
+      "Oslo Gardermoen Airport (OSL) is north of the city, with the airport express (Flytoget) or an ordinary train about 20–25 minutes to the central station. The city has a metro, trams, buses and fjord ferries on one Ruter ticket; the centre is walkable. Oslo is the hub of the Norwegian rail network. The climate is temperate, moderated by the fjord and forest: winters have snow but are not extreme, and summers are mild with very long daylight.",
+    culture:
+      "Norwegian (Bokmål), with near-universal English. Oslo people value the outdoors and equality, and socialising is more reserved than in southern Europe. Prices are high, eating out and alcohol especially; many museums have free periods. Most shops close on Sundays. Restaurants do not require tipping.",
+    seeAndDo:
+      "The opera house (walk up the sloping marble roof) and the Bjørvika district; the Munch Museum (The Scream); the National Museum; the Vigeland Sculpture Park (free, over 200 figure sculptures); Akershus Fortress; the museums on the Bygdøy peninsula (the Fram polar ship, the Kon-Tiki; the Viking Ship Museum is being rebuilt); the metro up to the Holmenkollen ski jump for the city view; a fjord ferry to the islands.",
+    whenAndTips:
+      "May–September is the most comfortable, with long daylight. In winter you can cross-country ski and toboggan. The Oslo Pass includes public transport and most museums and pays off for a busy itinerary. The fjord ferries are part of public transport — an ordinary ticket works. The train toward Bergen is a world-famous scenic line — book ahead.",
+  },
+
+  lillehammer: {
+    identity:
+      "Lillehammer is about 180 km north of Oslo at the northern end of Norway's largest lake, Mjøsa, at the mouth of the Gudbrandsdalen valley, with a town population of about 28,000. It is known worldwide for hosting the 1994 Winter Olympics, and still keeps the ski jump, the bobsleigh track and the ski areas — one of the centres of inland Norwegian winter sport.",
+    layout:
+      "Lillehammer is built on the hillside on the north-west shore of Mjøsa, with a paved pedestrian main street (Storgata) lined with coloured wooden houses. On the hill north of town is the Olympic ski jump, with a view over the lake and valley. North the town leads into the long, narrow Gudbrandsdalen — a large valley along a fault, farms and forest on either side, the historic route from Oslo to the north-western fjords and Trondheim.",
+    gettingAround:
+      "Lillehammer has no airport; the train from Oslo is about 2 hours (the Dovre Line), from Oslo Airport about 1.5 hours. The town is small and walkable, with buses to the ski areas and Olympic venues. The climate is more inland: cold with a long snow season and more sun than the coast; summers are mild.",
+    culture:
+      "Norwegian, with widespread English. The town identifies with its Olympic legacy and winter sport. The surrounding Gudbrandsdalen is one of the core areas of Norwegian folk tradition, stave churches (stavkirke) and farm culture. Restaurants do not require tipping.",
+    seeAndDo:
+      "The Maihaugen open-air museum (over a hundred old farmhouses and cabins from Gudbrandsdalen moved and reassembled — one of the largest open-air museums in Europe); the Olympic Park ski jump (a chairlift up, ski-jump simulator in summer) and the bobsleigh track (you can ride it); the Norwegian Olympic Museum; skiing at Hafjell and Kvitfjell in winter; driving north up Gudbrandsdalen for the stave churches.",
+    whenAndTips:
+      "December–March is ski season and the town's liveliest time; June–September suits hiking and the open-air museum. The Olympic venues are mostly on the edge of town and need transport. The Gudbrandsdalen valley and its stave churches are best strung together by car heading north.",
+  },
+
+  kristiansand: {
+    identity:
+      "Kristiansand is at the southern tip of Norway, facing the Skagerrak strait, with a city population of about 110,000 — the largest city on the southern coast (Sørlandet) and the ferry port to Denmark. The city was founded in 1641 by King Christian IV on a grid plan, and the old quarter, 'Kvadraturen', is still a regular grid. In summer it is Norwegians' own holiday spot — white wooden houses, smooth rock coastline, relatively warm sea.",
+    layout:
+      "Kristiansand is built on a flat sand-and-rock coast, the old town a royal grid of white wooden houses. The centre has a fish market, a fortress and an old wooden-house quarter (Posebyen). Along the shore is a long beach (Bystranda) and a pier. Around the city is the typical southern landscape of low hills, pine forest and countless small islands.",
+    gettingAround:
+      "Kjevik Airport (KRS) is about 16 km north-east, with an airport bus. The city has buses, and the old town is walkable. The train on the Sørland Line is about 4.5 hours to Oslo, about 3 hours to Stavanger. There is a ferry to Denmark (about 3.25 hours). The climate is among the milder in Norway, relatively warm in summer and not extreme in winter, with wind and rain possible all year.",
+    culture:
+      "Norwegian (the softer southern accent), with widespread English. Life on the southern coast revolves around boats, cabins and summer. Kristiansand identifies with its zoo (one of Norway's most popular family attractions) and its summer music festival. Restaurants do not require tipping.",
+    seeAndDo:
+      "The white wooden houses of Posebyen and the grid streets of Kvadraturen; Christiansholm Fortress and the fish market; Bystranda city beach; boat trips among the islands and out to lighthouses; the Kristiansand Zoo and amusement park (Dyreparken, east of the city); driving the southern coast to white-house towns (Lillesand, Grimstad).",
+    whenAndTips:
+      "June–August is high season, and the busiest time for Norwegian domestic tourists — coastal-town lodging is tight, so book early. The sea is warm by Norwegian standards but still cool. The rock coast is slippery at low tide. Driving the coast toward Stavanger is scenic but narrow and winding, with several ferry crossings.",
+  },
+
+  stavanger: {
+    identity:
+      "Stavanger is in south-western Norway on a peninsula cut up by fjords and islands, with a city population of about 140,000. It was a small town living on herring and sardine canning until oil was found in the North Sea in 1969, when it became Norway's 'oil capital' and the headquarters and supply base for offshore work. The old town has one of the most complete areas of 18th–19th-century white wooden houses in northern Europe.",
+    layout:
+      "Stavanger wraps around a small harbour (Vågen), with a dining and bar strip on one side (Øvre Holmegate is a street painted in bright colours) and, on the hillside opposite, 'Old Stavanger' (Gamle Stavanger) with its blocks of white wooden houses. Beyond the city are the low farmland of Jæren and a series of deep fjords. The Petroleum Museum, shaped like an offshore platform, stands at the water's edge.",
+    gettingAround:
+      "Sola Airport (SVG) is about 11 km south, with an airport bus and local buses. The city has buses, and the old town and harbour are walkable. Coastal ships and ferries run to the fjords and islands. The climate is west-coast maritime: mild, wet and windy, rarely severely cold in winter but damp.",
+    culture:
+      "Norwegian (the local dialect), with widespread English and, because of the oil industry, many foreigners. The city is practical and closely tied to oil and gas, and is also investing in the energy transition. Stavanger was a European Capital of Culture (2008) and has an active street-art scene (the Nuart festival). Restaurants do not require tipping.",
+    seeAndDo:
+      "The white-house lanes of Old Stavanger; the Norwegian Petroleum Museum (candid, and discussing the environmental cost); the harbour and the coloured street; a boat to the Lysefjord to hike Preikestolen (Pulpit Rock, a flat ledge about 600 m above the fjord, about 4 hours round trip) or the harder Kjeragbolten; the beaches and lighthouses of Jæren; a street-art walk.",
+    whenAndTips:
+      "May–September suits fjord hiking. The Preikestolen trail is very crowded in peak season — start early or go on a weekday; the path is rocky and slippery, so wear hiking boots, know your limits and stay behind the safety line. The weather is changeable — carry rain gear and warm layers. The coastal road toward Bergen (with ferries and the world's longest subsea road tunnel) is interesting.",
+  },
+
+  bergen: {
+    identity:
+      "Bergen is the second-largest city in Norway and the centre of the western fjord region, with a city population of about 290,000, ringed by seven mountains and facing a fjord out to the open sea. In the Middle Ages it was an important Hanseatic League trading post in northern Europe, prospering on dried-cod trade, and the row of coloured wooden merchant houses on the wharf (Bryggen) is a World Heritage Site. It is also the rainiest big city in Norway, with about 240 rainy days a year.",
+    layout:
+      "Bergen's old town wraps around the Vågen harbour, with the gabled wooden houses of Bryggen on the east side and the fish market at the head. The city is hemmed in by mountains and can only spread along valleys and the shore. The funicular station for Mount Fløyen is right by the centre, a few minutes up to a view over the city and fjord. The higher Mount Ulriken has a cable car.",
+    gettingAround:
+      "Flesland Airport (BGO) is south of the city, with a light rail (Bybanen) about 45 minutes to the centre. The city has light rail and buses, and the old town is walkable (with hills). Bergen is the end of the Bergen Railway (about 6.5 hours to Oslo, a scenic line) and the start of the Hurtigruten coastal ships and several fjord cruises. The climate is west-coast maritime: very wet, windy, and mild but damp in winter.",
+    culture:
+      "Norwegian (the Bergen dialect has a distinctive guttural r), with widespread English. Bergen people identify with 'not being Oslo', with the rain, with the local football team and with the composer Grieg. The city has a musical and literary tradition (Grieg, the Bergen International Festival). Restaurants do not require tipping. Carrying an umbrella is almost a way of life.",
+    seeAndDo:
+      "The Hanseatic wooden houses of Bryggen and the Hanseatic Museum; the fish market; the Fløibanen funicular for a walk on the mountain; a cruise into the Sognefjord and the Nærøyfjord (the 'Norway in a Nutshell' day trip); Grieg's home (Troldhaugen), with lunchtime concerts in summer; the Flåm Railway (a steep descent from Myrdal to the fjord, world-famous); the Ulriken cable car.",
+    whenAndTips:
+      "May–September is relatively drier with long daylight, but it can rain at any time — a waterproof jacket and shoes are essential. Bryggen is crowded by day — early morning has better light and fewer people. Book 'Norway in a Nutshell' and the Flåm Railway ahead in peak season. Bergen is often the start of a fjord cruise or a road trip.",
+  },
+
+  alesund: {
+    identity:
+      "Ålesund is on the western coast of Norway among several small islands, with a city population of about 50,000, and an important fishing and seafood-processing port. In 1904 a great fire destroyed almost the entire town, which was then rebuilt over a few years in the then-fashionable Art Nouveau (Jugendstil) style — so the whole centre is a rare unbroken ensemble of Art Nouveau buildings, with turrets, spires and carved flowers and plants, its defining feature.",
+    layout:
+      "Ålesund is built on several islands connected by bridges, the centre straddling an inner harbour canal, Art Nouveau stone buildings side by side. The town's Aksla hill has 418 steps (or a road) up to a viewpoint over the city, the islands and the distant snow peaks of Sunnmøre. East, the town is the gateway to the Geirangerfjord.",
+    gettingAround:
+      "Vigra Airport (AES) is on an island north of the city, with an airport bus over the bridges into town. The centre is walkable, and ferries and fast boats reach the surrounding islands and fjords. The climate is west-coast maritime — wet, windy and mild in winter.",
+    culture:
+      "Norwegian (the Sunnmøre dialect), with widespread English. The town is closely tied to the seafood industry. It is proud of its Art Nouveau heritage, with a dedicated Art Nouveau Centre telling the story of the fire and the rebuilding. Restaurants do not require tipping.",
+    seeAndDo:
+      "An Art Nouveau walk through the centre, and the Art Nouveau Centre (Jugendstilsenteret, in a preserved old pharmacy); the Aksla viewpoint for sunset over the islands; a boat to the Geirangerfjord (a World Heritage Site, the Seven Sisters waterfall, the Eagle Road); the Atlantic Road (a road winding between rocks and islets) on Averøy; the mountaineering town of Rønndal.",
+    whenAndTips:
+      "May–September is best, and Geirangerfjord cruises run from late April to October. Ålesund is often the start of a west-coast driving loop (the Atlantic Road + Geiranger + the Trollstigen hairpin road); the mountain roads only open in May and may close in October. It is wet — bring a waterproof.",
+  },
+
+  trondheim: {
+    identity:
+      "Trondheim is the centre of the Trøndelag region of central Norway and the country's third-largest city, with a metro area of about 200,000, where the Nidelva river meets the Trondheimsfjord. It was Norway's first capital and the most important medieval pilgrimage destination — Nidaros Cathedral is built over the grave of King Olav II, venerated as a saint, and is the largest medieval church in northern Europe. Today it is a university and technology city.",
+    layout:
+      "Trondheim's old town is in a meander loop of the Nidelva, with a row of coloured old warehouses (Bryggene) along the river. The cathedral and the Archbishop's Palace are on the south side of the loop. The centre has wide, regular streets (planned after a fire in 1681, for fire safety). The Old Town Bridge (Gamle Bybro) links the old town to Bakklandet on the east bank — an old workers' quarter of coloured wooden houses, now a café district. A 17th-century star fort stands on the edge of the city.",
+    gettingAround:
+      "Værnes Airport (TRD) is about 35 km east, with a train and airport bus about 35–40 minutes. The city has buses (including a 'bicycle lift' up a hill), and the old town is walkable. Trondheim is a rail hub: south to Oslo, north to Bodø (the Nordland Line, scenic). The climate is fairly northern but moderated by the fjord — snow in winter, cool summers, long daylight.",
+    culture:
+      "Norwegian (the Trøndelag dialect), with widespread English. The city is young and full of students thanks to NTNU. It identifies with Nidaros Cathedral and the 'first capital' history. Restaurants do not require tipping.",
+    seeAndDo:
+      "Nidaros Cathedral (the sculpture-covered west front, you can climb the tower; also the end of the St Olav pilgrimage route) and the Archbishop's Palace Museum; the Old Town Bridge and the coloured wooden houses and cafés of Bakklandet; the old warehouses along the river; Kristiansten Fortress for the city view; the Rockheim popular-music museum; a boat to the Munkholmen islet.",
+    whenAndTips:
+      "June–August is the most comfortable, with very long daylight. In late July the St Olav Festival has a medieval market and concerts. The Nordland Line north (to Bodø, crossing the Arctic Circle) is a classic scenic ride. The city is small — two or three days is enough — and is often a stop on the way north to Lofoten or west to the fjords.",
+  },
+
+  bodo: {
+    identity:
+      "Bodø is in northern Norway about 80 km north of the Arctic Circle, the capital of Nordland county and the end of the northern railway, with a city population of about 50,000. The city was bombed flat in the Second World War and rebuilt afterwards, so it looks fairly modern. It is the gateway to the Lofoten Islands, and just outside town is one of the strongest tidal maelstroms in the world, the Saltstraumen. In 2024 it was a European Capital of Culture.",
+    layout:
+      "Bodø is built on the tip of a peninsula reaching into the sea, water on three sides, mountains behind. The centre is compact, focused on the station and the harbour. South of the city, the Saltstraumen is a narrow channel where, four times a day at the turn of the tide, hundreds of millions of cubic metres of water force through, forming huge whirlpools and rapids. Around the city are the typical sharp granite peaks of Nordland.",
+    gettingAround:
+      "Bodø Airport (BOO) is right by the centre (walkable) and is a northern air hub. The train to Trondheim is about 10 hours (the Nordland Line, crossing the Arctic Circle). Ferries and fast boats go to Lofoten (about 3.5 hours by car ferry to Moskenes). The climate is maritime, moderated by the warm current despite being inside the Arctic Circle: milder in winter than the latitude suggests, but windy with rain and snow; the midnight sun from late May to mid-July, polar night and the aurora in winter.",
+    culture:
+      "Norwegian (the Nordland dialect), with widespread English. Life in the north is closely tied to the sea, the mountains and the weather, with large distances between communities. Sámi culture is more concentrated further inland. Restaurants do not require tipping.",
+    seeAndDo:
+      "The Saltstraumen maelstrom (check the tide table for the strongest window; from the bridge or by fast boat); the Nordland Museum and the Aviation Museum; a hike up Keiservarden for the panorama; a car ferry to the Lofoten Islands; sea fishing and puffins in summer; the aurora in winter.",
+    whenAndTips:
+      "May–August is good, with the midnight sun; September–March for the aurora but with poor weather and short days. To see the Saltstraumen whirlpools, go strictly by the tide table — the strongest flow is around the spring tides. The Lofoten car ferry has long queues in peak season — arrive early or reserve. Northern weather changes very fast — keep the itinerary flexible.",
+  },
+
+  narvik: {
+    identity:
+      "Narvik is in northern Norway at the end of a deep fjord (the Ofotfjord), north of the Arctic Circle, with a town population of about 14,000. It exists almost entirely because of a railway: in the late 19th century, to ship iron ore from Kiruna in Sweden to an ice-free deep-water port, the cross-border Ofoten Line was built, and Narvik grew up as its terminus. The town is hemmed in by high mountains, and there was fierce mountain and naval fighting here early in the Second World War.",
+    layout:
+      "Narvik is built on a steep slope on the north shore of the fjord, with the railway and the ore-loading quays at the water and the town on the hillside. Sharp snow mountains rise across and behind the fjord, and the town's Narvikfjellet mountain has a cable car — in winter you can ski from the top down to near sea level with the fjord in view. East, the railway and road climb over the mountains into Sweden.",
+    gettingAround:
+      "Narvik has no large airport nearby (Harstad/Narvik Airport, EVE, is about 1.5 hours away by road, with an airport bus). The Ofoten Line runs east to Kiruna and Abisko in Sweden (a stretch rated a world-class scenic railway) and connects to the Swedish network. There are buses and ferries/coaches toward Lofoten. The climate is Arctic mountain-maritime: snowy, with polar night and the aurora in winter.",
+    culture:
+      "Norwegian, with widespread English; being close to Sweden, Swedish is also often heard. The town is closely tied to the railway, the ore and the Second World War, with a dedicated war museum (a sombre subject) and a railway workers' museum. Restaurants do not require tipping.",
+    seeAndDo:
+      "Ride the Ofoten Line toward Abisko for the fjord, snow mountains and ore trains (a day trip is possible); the Narvikfjellet cable car for the fjord panorama (skiing in winter, hiking in summer); the Narvik War Museum and the war sites around Ankenes; boat or car trips to the surrounding fjords; using Narvik as a stepping stone to Lofoten or Swedish Lapland.",
+    whenAndTips:
+      "June–August has the midnight sun, with all mountain roads and trails open; December–January is polar night, and February–March is best for the aurora and skiing. The cable car and the railway views depend heavily on the weather. EVE airport is a 1.5-hour drive — plan the transfer. In winter, do mountain activities with a local guide and watch the avalanche forecast.",
+  },
+
+  tromso: {
+    identity:
+      "Tromsø is in northern Norway about 350 km north of the Arctic Circle, the largest city in Arctic Norway, with a metro area of about 77,000, on a small island in a fjord. Historically it was the departure port for Arctic exploration and hunting, and it is called the 'Paris of the North', with one of the world's northernmost universities, cathedrals, botanic gardens and breweries. It is one of the most convenient cities for seeing the northern lights and the midnight sun.",
+    layout:
+      "Tromsø's old town is on the east side of Tromsø Island, wooden houses and shops along the shore, with a long bridge and a subsea tunnel to the mainland side. On the mainland side a cable car (Fjellheisen) goes up in a few minutes to 420 m for a panorama of the city, fjord and mountains. The landmark 'Arctic Cathedral' is actually a modern triangular church on the mainland side. Around the city are sharp snow peaks and fjords.",
+    gettingAround:
+      "Langnes Airport (TOS) is on the west side of Tromsø Island, with an airport bus about 15 minutes to the centre. The city has buses, and the old town is walkable. Long-distance coaches and the Hurtigruten coastal ships go north to Alta and south to Narvik. The climate is maritime, strongly moderated by the warm current: winters far milder than the latitude (often around 0°C) but windy and snowy; polar night from late November to mid-January, the midnight sun from mid-May to mid-July.",
+    culture:
+      "Norwegian, with Northern Sámi also official in this area and seen on signs; widespread English. The city is international and young thanks to the university and Arctic research. The Sámi (Sápmi) have traditionally herded reindeer around Tromsø and further inland, and the city has exhibits on Sámi culture. Restaurants do not require tipping.",
+    seeAndDo:
+      "The Fjellheisen cable car for the panorama (open in the evenings in aurora season); the Arctic Cathedral; the Polaria aquarium and the Tromsø University Museum (Sámi culture, aurora science); the world's northernmost brewery; in winter, aurora tours (chasing clear skies inland), dog sledding, a reindeer camp; in summer, midnight-sun hikes and whale watching (the whale season is in the colder months, in the fjords nearby).",
+    whenAndTips:
+      "For the aurora: late September–March — allow at least 3–4 nights and go with a mobile guide chasing clear skies. For the midnight sun and hiking: late May–July. During the polar night (about late November–mid-January) the sun stays below the horizon, but there are a few hours of blue light around midday. Winter roads ice over — bring proper gear. Prices are high even for Norway.",
+  },
+
+  alta: {
+    identity:
+      "Alta is in Norway's northernmost county, Finnmark (Northern Sámi: Finnmárku), at the end of a fjord where the Alta river reaches the sea, with a town population of about 15,000 — the most populous town in Finnmark. Outside the town, a group of rock carvings records the life of local hunting, fishing and reindeer peoples from about 5,000 to 2,000 years ago, and was Norway's first cultural site inscribed as a World Heritage Site. The Finnmark plateau (Finnmarksvidda / Finnmárkkoduottar) has long been an area where the Sámi herd reindeer.",
+    layout:
+      "Alta is spread across the head of the fjord and several river valleys, with some distance between its centres (Bossekop, Elvebakken, Bukta). The landmark modern building is the 'Northern Lights Cathedral', a spiral of titanium panels. South of the town is the canyon the Alta river has cut (one of the largest in northern Europe) and the road up to the interior Finnmark plateau — dwarf birch, lakes and reindeer.",
+    gettingAround:
+      "Alta Airport (ALF) is near the centre, with buses. The town is spread out and most people drive. The E6 road, and roads inland to Karasjok and Kautokeino (centres of Sámi culture), branch here. The climate is inland Arctic: colder and drier than coastal Tromsø, with many clear days in winter — it is billed as one of the most reliable aurora spots in the Nordic countries — with polar night and the midnight sun.",
+    culture:
+      "Norwegian and Northern Sámi are both official, with bilingual signs; widespread English. Alta and its surroundings are a core area of Sámi culture, where reindeer herding is a continuing, widely documented form of land use, and reindeer cross the roads on the spring and autumn migrations. Restaurants do not require tipping.",
+    seeAndDo:
+      "The Alta rock carvings and the World Heritage Rock Art Museum (boardwalks past deer, boats and people carved into the rock); the Northern Lights Cathedral; in winter, the ice hotel (Sorrisniva, rebuilt each year) and aurora tours and dog sledding; hiking the Alta canyon; inland to Kautokeino and Karasjok to learn about Sámi culture (Sámi festivals and reindeer races around Easter).",
+    whenAndTips:
+      "For the aurora: late September–March; inland Alta has a high chance of clear skies and is often used as an aurora base. For the midnight sun: mid-May–July. Winter is very cold (often below −20°C) — prepare for extreme cold. When driving in spring and autumn, watch for migrating reindeer herds — slow down and do not sound the horn. Parts of the rock-art museum's boardwalk close for snow in winter.",
+  },
 };

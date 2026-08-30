@@ -1,0 +1,17 @@
+{
+  "id": "svg-bgo",
+  "name": "斯塔万格 — 卑尔根",
+  "nameEn": "Stavanger — Bergen",
+  "description": "佛尔格冰帽 · 哈当厄峡湾",
+  "descriptionEn": "Folgefonna · Hardangerfjord",
+  "depCountry": "norway",
+  "arrCountry": "norway",
+  "flight": { "airline": "维德罗航空", "airlineEn": "Widerøe", "flightNo": "WF608", "aircraft": "Bombardier Q400", "depIata": "SVG", "arrIata": "BGO", "durationMin": 40 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "svg", "name": "斯塔万格", "nameEn": "Stavanger", "lat": 58.8767, "lon": 5.6378, "airport": true },
+    { "kind": "terrain", "terrainId": "folgefonna" },
+    { "kind": "terrain", "terrainId": "hardangerfjord" },
+    { "kind": "city", "id": "bgo", "name": "卑尔根", "nameEn": "Bergen", "lat": 60.2934, "lon": 5.2181, "airport": true }
+  ]
+}

@@ -97,6 +97,15 @@ import rkvHzk from "./rkv-hzk.json" with { type: "json" };
 import zrhLug from "./zrh-lug.json" with { type: "json" };
 import zrhGva from "./zrh-gva.json" with { type: "json" };
 import gvaLug from "./gva-lug.json" with { type: "json" };
+// 挪威国内
+import oslBgo from "./osl-bgo.json" with { type: "json" };
+import oslTrd from "./osl-trd.json" with { type: "json" };
+import oslSvg from "./osl-svg.json" with { type: "json" };
+import oslTos from "./osl-tos.json" with { type: "json" };
+import trdBoo from "./trd-boo.json" with { type: "json" };
+import tosAlf from "./tos-alf.json" with { type: "json" };
+import bgoTrd from "./bgo-trd.json" with { type: "json" };
+import svgBgo from "./svg-bgo.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -176,4 +185,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   zrhLug,
   zrhGva,
   gvaLug,
+  oslBgo,
+  oslTrd,
+  oslSvg,
+  oslTos,
+  trdBoo,
+  tosAlf,
+  bgoTrd,
+  svgBgo,
 ] as unknown as FlightRoute[];

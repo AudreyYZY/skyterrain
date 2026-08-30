@@ -1,0 +1,20 @@
+{
+  "id": "bgo-trd",
+  "name": "卑尔根 — 特隆赫姆",
+  "nameEn": "Bergen — Trondheim",
+  "description": "松恩峡湾 · 约斯特达尔冰原 · 盖朗厄尔峡湾 · 龙斯达尔 · 特罗尔海门",
+  "descriptionEn": "Sognefjord · Jostedalsbreen · Geirangerfjord · Romsdalen · Trollheimen",
+  "depCountry": "norway",
+  "arrCountry": "norway",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK4188", "aircraft": "Boeing 737-700", "depIata": "BGO", "arrIata": "TRD", "durationMin": 55 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "bgo", "name": "卑尔根", "nameEn": "Bergen", "lat": 60.2934, "lon": 5.2181, "airport": true },
+    { "kind": "terrain", "terrainId": "sognefjord" },
+    { "kind": "terrain", "terrainId": "jostedalsbreen" },
+    { "kind": "terrain", "terrainId": "geirangerfjord" },
+    { "kind": "terrain", "terrainId": "romsdalen" },
+    { "kind": "terrain", "terrainId": "trollheimen" },
+    { "kind": "city", "id": "trd", "name": "特隆赫姆", "nameEn": "Trondheim", "lat": 63.4578, "lon": 10.9240, "airport": true }
+  ]
+}
