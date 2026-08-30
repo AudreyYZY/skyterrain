@@ -267,6 +267,11 @@ export default function ExplorerApp() {
     if (activeTerrain || isRouteFlying) setShowIntro(false);
   }, [activeTerrain, isRouteFlying]);
 
+  const showIntroRef = useRef(showIntro);
+  useEffect(() => {
+    showIntroRef.current = showIntro;
+  }, [showIntro]);
+
   // 注册叙述队列的语音函数
   useEffect(() => {
     narrationQueue.register(
@@ -431,8 +436,10 @@ export default function ExplorerApp() {
     warmupSpeechVoices();
   }, []);
 
-  // 地图就绪：若上次停留的区域不是默认大洲，飞过去（INTRO_VIEW 默认对准亚洲）
+  // 地图就绪：若上次停留的区域不是默认大洲，飞过去（INTRO_VIEW 默认对准亚洲）。
+  // 学习模式初始轮播还开着时不动地球 —— 等用户点「开始探索」由 handleIntroEnter 处理。
   const handleMapReady = useCallback(() => {
+    if (showIntroRef.current && mode === "study") return;
     if (activeRegion === DEFAULT_REGION_ID) return;
     const region = REGIONS.find((r) => r.id === activeRegion);
     if (!region) return;
@@ -442,7 +449,7 @@ export default function ExplorerApp() {
       height: region.center.height,
       duration: 1.5,
     });
-  }, [activeRegion]);
+  }, [activeRegion, mode]);
 
   /**
    * 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用。
@@ -1109,6 +1116,7 @@ export default function ExplorerApp() {
           <ContinentIntro
             language={language}
             continents={introContinents}
+            initialContinentId={activeRegion}
             onPreview={handleIntroPreview}
             onEnter={handleIntroEnter}
             onDismiss={() => setShowIntro(false)}
@@ -1191,8 +1199,27 @@ export default function ExplorerApp() {
           }
         }}
         onStop={mode === "travel" ? stopTravelNarration : stopSpeaking}
-        onClose={mode === "travel" ? clearTravelSelection : closePanel}
+        onClose={
+          isRouteFlying
+            ? handleStopRoute
+            : mode === "travel"
+              ? clearTravelSelection
+              : closePanel
+        }
       />
+
+      {/* 航线飞行中：地图上显示当前飞越的地形 */}
+      {isRouteFlying && flyoverName && (
+        <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2">
+          <div className="glass-panel flex items-center gap-2 rounded-full px-4 py-2 text-[13px]">
+            <span className="text-[color:var(--accent)]">✈</span>
+            <span className="text-[color:var(--ink-dim)]">
+              {language === "zh-CN" ? "正在飞越" : "Now over"}
+            </span>
+            <span className="editorial-title text-[color:var(--ink)]">{flyoverName}</span>
+          </div>
+        </div>
+      )}
 
       {!showIntro && mode === "study" && !activeTerrain && (
         <JourneyBar

@@ -63,6 +63,38 @@ export function routeCountriesForContinent(
   return continentSlugs.filter((s) => withRoutes.has(s));
 }
 
+/**
+ * 航线的可搜索文本（航线名 / 城市 / 航班号 / IATA / 沿途地形），全部小写。
+ * 供 JourneyBar 的搜索框按「起点终点 / 航班号 / 地形」匹配。
+ */
+export function routeSearchText(route: FlightRoute): string {
+  const parts: string[] = [route.id, route.name];
+  if (route.nameEn) parts.push(route.nameEn);
+  if (route.description) parts.push(route.description);
+  if (route.descriptionEn) parts.push(route.descriptionEn);
+  if (route.flight) {
+    parts.push(route.flight.flightNo, route.flight.depIata, route.flight.arrIata);
+    parts.push(route.flight.airline, route.flight.airlineEn);
+  }
+  for (const wp of route.waypoints) {
+    if (wp.kind === "city") {
+      parts.push(wp.name);
+      if (wp.nameEn) parts.push(wp.nameEn);
+    } else {
+      const e = getTerrainEntry(wp.terrainId);
+      if (e) parts.push(e.nameZh, e.nameEn);
+    }
+  }
+  return parts.join(" ").toLowerCase();
+}
+
+export function routeMatches(route: FlightRoute, query: string): boolean {
+  const q = query.trim().toLowerCase();
+  if (!q) return true;
+  const hay = routeSearchText(route);
+  return q.split(/\s+/).every((tok) => hay.includes(tok));
+}
+
 /** 航线在界面上显示的「出发国 → 到达国」标签（国际航线用）*/
 export function routeCountryLabel(route: FlightRoute, lang: "zh-CN" | "en-US"): string {
   const dep = getCountryMeta(route.depCountry);
