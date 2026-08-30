@@ -252,6 +252,10 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "mer-de-glace": "national",
   camargue: "national",
   "chaine-des-puys": "national",
+  "mont-saint-michel-bay": "national",
+  "dune-du-pilat": "poi",
+  etretat: "poi",
+  "cirque-de-gavarnie": "poi",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

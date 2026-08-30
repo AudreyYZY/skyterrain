@@ -5662,6 +5662,112 @@ const VERDON_GORGE: TerrainEntry = {
   source: "凡尔登峡谷：凡尔登河在阿尔卑斯和普罗旺斯之间的石灰岩高地上切出的峡谷，长约25km、最深处约700m，常被称为欧洲最大的峡谷；石灰岩里溶蚀出大量洞穴（如史前的博姆博纳洞）；下游被圣克鲁瓦水库拦蓄；凡尔登地区自然公园（BRGM / 凡尔登地区自然公园）",
 };
 
+const ARDECHE_GORGE: TerrainEntry = {
+  id: "ardeche-gorge",
+  nameZh: "阿尔代什峡谷",
+  nameEn: "Gorges de l'Ardèche",
+  category: "gorge",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "阿尔克桥（Pont d'Arc，天生桥，跨度约59m、高约34m）", lon: 4.4133, lat: 44.3808, elevation: 100, kind: "gorge" },
+  bbox: [4.35, 44.26, 4.68, 44.42],
+  axis: [[4.40, 44.38], [4.65, 44.32]],
+  viewScale: 1.4,
+  label: { lon: 4.50, lat: 44.34, rotation: -25 },
+  source: "阿尔代什峡谷：阿尔代什河在中央高原东南缘的石灰岩台地上切出的一段约30km 长、深达约300m 的峡谷；入口处的阿尔克桥是河流截穿一个曲流的窄颈、留下的天生桥；附近的肖维洞里有约3.6万年前的旧石器时代壁画（2014年列入世界遗产）；阿尔代什峡谷自然保护区（BRGM / UNESCO）",
+};
+
+const LANDES_DE_GASCOGNE: TerrainEntry = {
+  id: "landes-de-gascogne",
+  nameZh: "加斯科涅朗德",
+  nameEn: "Landes de Gascogne",
+  category: "plain",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "朗德松林沙地（萨巴尔 / 皮索一带）", lon: -0.70, lat: 44.30, elevation: 60, kind: "escarpment" },
+  bbox: [-1.45, 43.70, 0.25, 44.95],
+  viewScale: 2.0,
+  label: { lon: -0.55, lat: 44.30, rotation: 0 },
+  source: "加斯科涅朗德：阿基坦盆地西部一大片近乎水平的砂质低地，约1万平方公里，上覆末次冰期以来的风成砂和一层不透水的“铁磐”（alios），历史上排水不畅、多沼泽；19世纪立法排水、种下大片海岸松，成为欧洲最大的人工林之一；加斯科涅朗德地区自然公园（BRGM / 地区自然公园）",
+};
+
+const CALANQUES: TerrainEntry = {
+  id: "calanques",
+  nameZh: "卡朗格峡湾岸",
+  nameEn: "Calanques",
+  category: "coast",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "卡朗格国家公园（马赛与卡西斯之间的石灰岩峡湾岸）", lon: 5.44, lat: 43.21, elevation: 250, kind: "escarpment" },
+  bbox: [5.33, 43.17, 5.58, 43.28],
+  axis: [[5.35, 43.22], [5.56, 43.20]],
+  viewFrom: 180,
+  viewScale: 1.4,
+  label: { lon: 5.46, lat: 43.20, rotation: -6 },
+  source: "卡朗格：马赛和卡西斯之间一段白色石灰岩海岸，被溶蚀和河流切出一条条又窄又深的入海裂口（“calanque”），两侧是近乎垂直的崖壁，谷底是透亮的海水；成因是被淹没的岩溶谷 + 海侵；卡朗格国家公园2012年设立，是欧洲少见的“陆-海-城”一体的国家公园（BRGM / 卡朗格国家公园）",
+};
+
+const DUNE_DU_PILAT: TerrainEntry = {
+  id: "dune-du-pilat",
+  nameZh: "皮拉沙丘",
+  nameEn: "Dune du Pilat",
+  category: "coast",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "皮拉大沙丘（阿卡雄湾南口）", lon: -1.213, lat: 44.588, elevation: 100, kind: "dune" },
+  bbox: [-1.26, 44.55, -1.17, 44.63],
+  axis: [[-1.21, 44.56], [-1.21, 44.62]],
+  viewScale: 1.3,
+  label: { lon: -1.21, lat: 44.59, rotation: -84 },
+  source: "皮拉沙丘：阿卡雄湾南口的一座沙丘，高逾100m、长约2.7km，是欧洲最高的沙丘；大西洋的沙被西风堆上岸、缓慢向内陆移动（每年约1—5m），正把后面的朗德松林一点点埋掉；沙丘剖面里夹着几层古土壤，记录了它的分期生长（BRGM / 皮拉大沙丘管理机构）",
+};
+
+const ETRETAT: TerrainEntry = {
+  id: "etretat",
+  nameZh: "埃特勒塔海崖",
+  nameEn: "Étretat",
+  category: "coast",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "埃特勒塔（阿瓦尔门海蚀拱与“针尖”岩柱）", lon: 0.204, lat: 49.707, elevation: 80, kind: "escarpment" },
+  bbox: [0.14, 49.68, 0.27, 49.74],
+  axis: [[0.17, 49.73], [0.24, 49.69]],
+  viewFrom: 270,
+  viewScale: 1.3,
+  label: { lon: 0.21, lat: 49.70, rotation: -35 },
+  source: "埃特勒塔：上诺曼底“雪花石海岸”上一段白垩海崖，白垩里夹着黑色的燧石条带；海浪沿岩石的裂隙掏蚀，形成三座海蚀拱（阿蒙门、阿瓦尔门、大门）和一根约70m 高的“针尖”岩柱；崖壁每年后退约20cm；莫奈、库尔贝等反复描绘（BRGM）",
+};
+
+const MONT_SAINT_MICHEL_BAY: TerrainEntry = {
+  id: "mont-saint-michel-bay",
+  nameZh: "圣米歇尔山湾",
+  nameEn: "Bay of Mont-Saint-Michel",
+  category: "coast",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "圣米歇尔山与大潮滩", lon: -1.511, lat: 48.636, elevation: 0, kind: "escarpment" },
+  bbox: [-1.90, 48.52, -1.30, 48.78],
+  viewScale: 1.7,
+  label: { lon: -1.55, lat: 48.65, rotation: 0 },
+  source: "圣米歇尔山湾：布列塔尼与诺曼底之间一个宽浅的海湾，潮差可达约14—15m，是欧洲大陆最大的潮差之一；退潮时露出大片砂泥质潮滩（“tangue”），涨潮很快、有涌潮（mascaret）；花岗岩残丘上的圣米歇尔山修道院1979年列入世界遗产，2010年代拆坝清淤恢复了海岛周围的潮汐冲刷（UNESCO / BRGM）",
+};
+
+const CIRQUE_DE_GAVARNIE: TerrainEntry = {
+  id: "cirque-de-gavarnie",
+  nameZh: "加瓦尔尼冰蚀圆谷",
+  nameEn: "Cirque de Gavarnie",
+  category: "gorge",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "加瓦尔尼圆谷与大瀑布（落差约420m）", lon: -0.009, lat: 42.696, elevation: 1400, kind: "gorge" },
+  bbox: [-0.09, 42.65, 0.06, 42.75],
+  axis: [[-0.05, 42.68], [0.03, 42.73]],
+  viewFrom: 0,
+  viewScale: 1.4,
+  label: { lon: -0.01, lat: 42.70, rotation: 0 },
+  source: "加瓦尔尼冰蚀圆谷：比利牛斯中段、法国与西班牙交界一带一个巨大的半圆形冰斗，三级台阶状的岩壁高出谷底达约1500m；由冰川强烈的挖蚀 + 褶皱的石灰岩/大理岩地层共同造就；壁上跌下加瓦尔尼大瀑布（约420m，欧洲落差最大的瀑布之一）；“比利牛斯-珀杜山”世界遗产的一部分（UNESCO / 比利牛斯国家公园）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -5784,6 +5890,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   PARIS_BASIN, AQUITAINE_BASIN, CORSICA,
   LOIRE_RIVER, RHONE_RIVER, SEINE_RIVER, ECRINS, VANOISE, MER_DE_GLACE, CAMARGUE,
   CHAINE_DES_PUYS, CANTAL_VOLCANO, MONTS_DORE, GRANDS_CAUSSES, VERCORS, CEVENNES, VERDON_GORGE,
+  ARDECHE_GORGE, LANDES_DE_GASCOGNE, CALANQUES, DUNE_DU_PILAT, ETRETAT,
+  MONT_SAINT_MICHEL_BAY, CIRQUE_DE_GAVARNIE,
 ];
 
 /**
