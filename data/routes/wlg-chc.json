@@ -1,0 +1,47 @@
+{
+  "id": "wlg-chc",
+  "name": "惠灵顿 — 基督城",
+  "nameEn": "Wellington — Christchurch",
+  "description": "库克海峡 · 马尔堡峡湾 · 凯库拉山脉",
+  "descriptionEn": "Cook Strait · Marlborough Sounds · Kaikōura Ranges",
+  "depCountry": "new-zealand",
+  "arrCountry": "new-zealand",
+  "flight": {
+    "airline": "新西兰航空",
+    "airlineEn": "Air New Zealand",
+    "flightNo": "NZ541",
+    "aircraft": "ATR 72-600",
+    "depIata": "WLG",
+    "arrIata": "CHC",
+    "durationMin": 50
+  },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "wlg",
+      "name": "惠灵顿",
+      "nameEn": "Wellington",
+      "lat": -41.327,
+      "lon": 174.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "marlborough-sounds"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kaikoura-ranges"
+    },
+    {
+      "kind": "city",
+      "id": "chc",
+      "name": "基督城",
+      "nameEn": "Christchurch",
+      "lat": -43.489,
+      "lon": 172.532,
+      "airport": true
+    }
+  ]
+}

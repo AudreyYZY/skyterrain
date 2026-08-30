@@ -911,4 +911,109 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Spring and autumn (March–May, October–November) are the most comfortable. The plum rains (June–July) are heavy — Nagasaki is one of the wetter cities in Japan, so carry an umbrella. Boats to Gunkanjima are often cancelled at short notice for wind and swell, so have a backup. Be respectful in word and manner at the atomic-bomb sites.",
   },
+
+  "new-zealand-overview": {
+    identity:
+      "New Zealand lies in the south-west Pacific, made up of the North Island, the South Island and some smaller islands, with a population of about 5.2 million, most of it on the North Island. In Māori the country is called Aotearoa (\"land of the long white cloud\"). The official languages are English, Māori and New Zealand Sign Language. It sits on a plate boundary — mountainous, with volcanoes, geothermal areas and earthquakes — and faces Australia across the Tasman Sea.",
+    layout:
+      "The North Island is comparatively gentle, with large areas of pasture, the central volcanic plateau (Ruapehu, Lake Taupō) and the geothermal country around Rotorua; the largest city, Auckland, and the capital, Wellington, are both here. The South Island is split lengthwise by the Southern Alps, with fiords and glaciers on the west, the Canterbury Plains on the east, the largest city being Christchurch, and Queenstown as the tourism centre of the south. Cook Strait separates the islands, with a car ferry across it.",
+    gettingAround:
+      "Distances between towns are not huge but the roads are winding; travel is mainly by air (Air New Zealand, Jetstar and others) and by car. Self-drive is common — drive on the left, expect winding roads and many one-lane bridges, and in winter parts of the South Island need care for ice and snow. Intercity coaches and scenic trains are limited. The climate is temperate maritime; in the southern hemisphere the seasons are reversed (December–February is summer); the weather changes fast, you can get \"four seasons in one day\", and windproof, waterproof clothing is worth carrying year-round. UV is strong — sun protection is basic sense.",
+    culture:
+      "English is universal; Māori language and culture (the marae meeting house, the haka, the hāngī earth-oven meal) are part of the national identity, and many place names are Māori or dual English–Māori (per the New Zealand Geographic Board, NZGB). The pace is relaxed, with a strong value on the outdoors and on conservation. Border checks on food, soil, and camping and hiking gear are very strict (to keep out biosecurity threats), so declare honestly and clean your boot soles. Tipping is not customary.",
+    seeAndDo:
+      "On the South Island, the Southern Alps, the fiords, the glaciers and the night sky (the Tekapo area is a dark-sky reserve); adventure sports at Queenstown; on the North Island, the volcanoes and geothermal areas, the Waitomo glow-worm caves and the Bay of Islands. Hiking (the \"Great Walks\"), whale watching, penguins and albatross, and Lord of the Rings locations are common themes. The seasons are distinct, and skiing is July–September.",
+    whenAndTips:
+      "December–March is the summer high season with the best weather and long daylight; June–August is winter, with skiing on the South Island and a milder North Island. Citizens of most countries need to apply online for an NZeTA and pay a visitor levy before arrival, which cannot be arranged on arrival. Popular tracks (such as the Milford Track) need booking far ahead in peak season. The weather is changeable — check forecasts for mountain hikes and leave your plans with the authorities.",
+  },
+
+  auckland: {
+    identity:
+      "Auckland is the largest city in New Zealand, with a metropolitan population of about 1.7 million — a third of the country. It is built on a narrow isthmus with a harbour on each side and dozens of low extinct volcanic cones scattered through it, hence \"City of Sails\". It is not the capital — that is Wellington. The city is named after the Earl of Auckland, a 19th-century British politician.",
+    layout:
+      "Auckland straddles the isthmus between the Waitematā Harbour (east) and the Manukau Harbour (west); the city centre and the Sky Tower are on the eastern harbour. The whole city sits on the Auckland Volcanic Field — about 50 extinct cones through the suburbs, and Maungawhau (Mt Eden) and Maungakiekie (One Tree Hill) can both be climbed for a panorama. North over the Harbour Bridge is the North Shore and the way to the Bay of Islands; east are the Hauraki Gulf islands such as Waiheke; south is the Waikato farm country.",
+    gettingAround:
+      "Auckland Airport is south of the city, with airport buses (SkyDrive/SkyBus) and public buses into town; a rail link is under construction. The city has buses, trains and ferries with a single AT HOP card; ferries go to Devonport and Waiheke. The city is spread out and many people hire a car (drive on the left). The climate is temperate maritime, mild and humid all year — about 23°C in summer (December–February), about 14°C in winter — with rain possible in any season and often windy.",
+    culture:
+      "English is universal. Auckland has one of the largest Pacific Islander populations of any city (sometimes called the largest Polynesian city in the world), with big Māori, Samoan, Tongan and Asian communities and very diverse food and markets. The pace is slower than a European or American big city, and weekends centre on the coast and the outdoors. Tipping is not expected.",
+    seeAndDo:
+      "The Sky Tower for the city and harbour; Mt Eden and One Tree Hill for the volcanic landforms; the Viaduct waterfront and the old streets of Parnell; the Auckland War Memorial Museum (Māori and Pacific taonga, war remembrance — a solemn place) and the Maritime Museum; ferries to Devonport for the coastal forts, and to Waiheke for the wineries and beaches. An hour west are the black-sand beaches such as Piha and the Waitākere rainforest (parts are managed to slow kauri dieback disease).",
+    whenAndTips:
+      "November–April has the best weather. Auckland is known for \"four seasons in one day\", so carry a windproof, waterproof layer. The black-sand beaches (Piha, Bethells) have big surf and rip currents — swim only between the flags where there are lifeguards. Border checks on hiking boots, tents and food are very strict, so clean and declare.",
+  },
+
+  wellington: {
+    identity:
+      "Wellington is the capital of New Zealand, at the southern tip of the North Island on Cook Strait, with a metropolitan population of about 420,000. Hills on three sides and the sea on the fourth make the centre compact — it is called one of the smallest capitals in the world — and it is famously windy (\"Windy Wellington\"). The city is named after the Duke of Wellington, who defeated Napoleon; there is also a Wellington in Somerset, England, and one in New South Wales, Australia.",
+    layout:
+      "Wellington is built on the steep western shore of an almost enclosed harbour (Lambton Harbour), with little flat land — houses climb the slopes in layers, linked by a cable car and steep steps. The centre and Parliament (the \"Beehive\") are by the harbour; south are the Botanic Garden at the top of the cable car and the Zealandia sanctuary; at the harbour mouth to the north is the ferry terminal (the South Island ferries leave from here).",
+    gettingAround:
+      "Wellington Airport is just south of the city, close to the centre, with an airport bus. The city has buses and a commuter rail network, paid with a Snapper card or bank card. The Cable Car links the centre with the Botanic Garden on the hill. For the South Island, take the inter-island ferry (about 3–3.5 hours to Picton). The climate is temperate maritime, mild all year but very windy, especially in spring, and the weather changes fast — always carry a windproof jacket.",
+    culture:
+      "Wellington is New Zealand's political, cultural and film centre (Wētā Workshop, and the post-production for the Lord of the Rings and Avatar films is done here), with a high density of cafés and small theatres — it is called the \"coffee capital\". The pace is unhurried and the centre is walkable. Tipping is not expected.",
+    seeAndDo:
+      "Te Papa, the national museum (free, Māori and natural history — a solemn place); the cable car up to the Botanic Garden; Zealandia, an urban ecosanctuary for native birds; the independent shops and restaurants of Cuba Street and the surrounding quarter; the harbour waterfront walk; the Mount Victoria lookout by cable car or car. The ferry across Cook Strait into the Marlborough Sounds is a classic piece of scenery.",
+    whenAndTips:
+      "December–March has the most settled weather. Wind is normal in Wellington, especially in spring, and stronger by the sea and up high — hats and light items blow away easily. The Cook Strait ferry is delayed or cancelled in high wind and swell, so leave flexibility if you have a South Island connection. Border checks on outdoor gear and food are strict.",
+  },
+
+  rotorua: {
+    identity:
+      "Rotorua is in the volcanic country of the central North Island, on the shore of Lake Rotorua, with an urban population of about 60,000. It sits in an old caldera with strong geothermal activity — geysers, boiling mud pools and coloured hot springs are everywhere, and the air often smells of sulphur. It is also one of the centres of Māori culture, especially that of the Te Arawa people.",
+    layout:
+      "The town is on the southern shore of Lake Rotorua, around the Government Gardens. Geothermal areas are in and around it: Kuirau Park is in town, while Wai-O-Tapu (\"thermal wonderland\"), Te Puia and Waimangu are to the south; the Whakarewarewa Forest (the Redwoods) to the south-east is for cycling and running. There are a dozen or so volcanic lakes around.",
+    gettingAround:
+      "Rotorua Airport is on the eastern shore of the lake, with flights to Auckland, Wellington and Christchurch. Most people drive from Auckland (about 3 hours). The town is small and walkable; the surrounding geothermal areas and the Redwoods need a car or a tour. The climate is temperate maritime — mild summers, cool winters, rain year-round, and high humidity near the geothermal areas.",
+    culture:
+      "English is universal, and Māori culture is part of daily life here: you can visit a marae, see kapa haka performance, and try hāngī (an earth-oven meal). At geothermal areas and Māori villages, stay on the paths and follow instructions — the ground crust is thin and scalding, and leaving the path is dangerous. Tipping is not customary.",
+    seeAndDo:
+      "The Wai-O-Tapu geothermal area (the Champagne Pool, the Artist's Palette, the Lady Knox Geyser, which erupts at a set time each day); Te Puia for geysers and the Māori arts institute; walking or cycling the Redwoods and the treewalk (lit at night); the lake-view hot pools of the Polynesian Spa; the mud baths of Hell's Gate; nearby Mount Tarawera and the Blue and Green lakes.",
+    whenAndTips:
+      "It is a year-round destination, most comfortable December–March. The sulphur smell tarnishes silver jewellery, so sensitive people can take it off. The geothermal crust is dangerous — stay on the paths and mind children. Geysers erupt at set times, so plan around them. It is rainy, so bring an umbrella and waterproof shoes.",
+  },
+
+  christchurch: {
+    identity:
+      "Christchurch is the largest city on the South Island and the centre of the Canterbury region, with a metropolitan population of about 400,000. It is built on the eastern edge of the Canterbury Plains at the foot of Banks Peninsula; it began as a planned Church of England settlement, laid out on a grid around a cathedral, and is named after Christ Church, a college of Oxford — there is also a Christchurch in Dorset, England. The 2010–2011 earthquakes badly damaged the centre, which has been rebuilding since.",
+    layout:
+      "Christchurch is built on the flat Canterbury Plains, with the Avon River winding through the grid of the centre and Cathedral Square at the heart. South-east are the port of Lyttelton and Banks Peninsula (an old extinct volcano with a broken coast of small bays); the Port Hills on the peninsula's edge give views over Lyttelton Harbour. West are the plains and the foot of the Southern Alps.",
+    gettingAround:
+      "Christchurch Airport is north-west of the city, with an airport bus and public buses into town. Christchurch is the main gateway to the South Island: west over Arthur's Pass to the West Coast (with the TranzAlpine scenic train), south to Tekapo, Aoraki/Mount Cook and Queenstown, north to Kaikōura for whales. The city has buses (Metrocard); the centre is flat and good for cycling (there are public bikes). The climate is temperate maritime, with dry summers, frosty winters, and occasional hot, dry föhn winds (\"norwesters\").",
+    culture:
+      "English is universal; Christchurch is called the most English of New Zealand's cities, with large parks, cricket grounds and Edwardian buildings. Since the earthquakes, the centre has filled with transitional spaces made of shipping containers and street art, and feels younger than before. The pace is slow. Tipping is not expected.",
+    seeAndDo:
+      "Punting on the Avon, the Botanic Gardens and Hagley Park; the rebuilding Cathedral Square, the Cardboard Cathedral and the earthquake memorial wall (a solemn place); the Canterbury Museum and the Bridge of Remembrance; the gondola up the Port Hills for the view over Lyttelton Harbour; the International Antarctic Centre. Drive out to Akaroa (a French-flavoured town on Banks Peninsula), Tekapo for the night sky, and Aoraki/Mount Cook.",
+    whenAndTips:
+      "December–March has the best weather. On norwester days (dry, hot north-west wind) the temperature jumps and fire risk is high. The TranzAlpine train and the routes to Aoraki/Mount Cook and Tekapo need booking in high season. The inland South Island has snow in winter — check road conditions and carry chains. Border checks on outdoor gear and food are very strict.",
+  },
+
+  queenstown: {
+    identity:
+      "Queenstown is in the south of the South Island on the shore of Lake Wakatipu, ringed by mountains including The Remarkables, with a resident population of only about 50,000 but as the tourism and outdoor-sports centre of New Zealand. It is known as the \"adventure capital\" — bungy jumping (the first commercial bungy site is nearby), skydiving, jetboating and skiing are all here. The origin of the name is uncertain, with several accounts.",
+    layout:
+      "Queenstown is built on a bay at a Z-shaped bend in Lake Wakatipu; the centre is compact and walkable, and the Skyline Gondola runs straight from town to a hilltop lookout. Across the lake are The Remarkables; the lake's north-west arm leads to Glenorchy and the valleys used for Lord of the Rings. North-east over the hills are Arrowtown (an old gold-rush town) and Wānaka; south are Te Anau and the fiords.",
+    gettingAround:
+      "Queenstown Airport is at Frankton, east of town, about 10 minutes from the centre, with flights to Auckland, Christchurch, Wellington and some Australian cities. There are buses in town and to the airport, but most sights, tracks and ski fields need a car or a tour. In winter, mountain roads need care for ice and snow and may require chains. The climate is temperate semi-arid (in the mountains' rain shadow): warm, dry summers, cold, snowy winters, and a wide day-to-night range.",
+    culture:
+      "English is universal; Queenstown has one of the highest shares of international visitors in New Zealand, with a well-developed service industry and high prices. Life revolves around the outdoors and the lake and mountains. Tipping is not expected.",
+    seeAndDo:
+      "The Skyline Gondola for the view over Lake Wakatipu and The Remarkables, plus the summit luge; a cruise on the historic steamship TSS Earnslaw; bungy, skydiving and jetboating (choose licensed operators); drives to Glenorchy, Arrowtown and Wānaka; a long day trip or overnight to Milford Sound (a long, winding drive, mostly done by tour or with a stay). Skiing in winter at Coronet Peak and The Remarkables.",
+    whenAndTips:
+      "December–February is the summer high season (hiking, water activities); June–August is the ski season; both are expensive for accommodation and need early booking. The Milford Sound day trip is about a 4-hour drive each way, on a winding road with changeable weather. For adventure activities, use licensed operators and read the insurance and safety briefings.",
+  },
+
+  dunedin: {
+    identity:
+      "Dunedin is on the south-eastern coast of the South Island at the base of the Otago Peninsula, with a metropolitan population of about 130,000 — the fourth-largest city in New Zealand. It was founded by Scottish Presbyterian settlers in the mid-19th century, and the name Dunedin is the old Scots Gaelic name for Edinburgh (Dùn Èideann); the street names, churches and university carry a strong Scottish stamp. The wildlife nearby — albatross, yellow-eyed penguins, sea lions — is a major draw.",
+    layout:
+      "Dunedin is built in a valley and on steep slopes at the head of a long harbour (Otago Harbour), with The Octagon as the centre. The University of Otago (the oldest in New Zealand) is just north of the centre. East along the harbour is the Otago Peninsula — a hilly peninsula whose tip, Taiaroa Head, has the only mainland breeding colony of royal albatross in the world. Baldwin Street, in the suburbs, was long considered one of the steepest streets in the world.",
+    gettingAround:
+      "Dunedin Airport is about 30 km south-west of the city, with an airport bus. Intercity travel is by car or coach. The city has buses; the centre is walkable but hilly. Seeing the Otago Peninsula wildlife needs a car or a tour (the peninsula road is narrow and winding). The climate is temperate maritime — cooler than the North Island, with four clear seasons, frosts and occasional snow in winter, and fast-changing weather.",
+    culture:
+      "English is universal, with a strong Scottish heritage (a Scottish festival, bagpipes, a statue of Robert Burns). It is a university city, young and lively in term time. The pace is slow. Tipping is not expected.",
+    seeAndDo:
+      "The Octagon and the surrounding Edwardian buildings, and the Dunedin Railway Station (one of the most-photographed buildings in New Zealand); the Otago Museum and the Toitū Otago Settlers Museum; Taiaroa Head on the Otago Peninsula for the royal albatross, and a penguin reserve for yellow-eyed penguins (they come ashore in the evening — go with a licensed guide and keep quiet); Larnach Castle; Baldwin Street. North are the Moeraki Boulders.",
+    whenAndTips:
+      "December–March has the best weather and is a good time to see albatross chicks and penguins. To watch wildlife, always go with a licensed guide, keep your distance and do not use flash. The Otago Peninsula road is narrow and winding — drive slowly and watch for oncoming traffic. Inland and the passes have snow in winter — check road conditions.",
+  },
 };

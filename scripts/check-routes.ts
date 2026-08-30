@@ -67,15 +67,18 @@ for (const r of ROUTES) {
   // 解析坐标序列
   const coords: [number, number][] = [];
   for (const wp of wps) {
-    if (wp.kind === "city") {
+    if (wp.kind === "city" || wp.kind === "feature") {
       if (
         typeof wp.lat !== "number" ||
         typeof wp.lon !== "number" ||
         Math.abs(wp.lat) > 90 ||
         Math.abs(wp.lon) > 180
       ) {
-        fail(r.id, `城市 ${wp.id} 坐标非法`);
+        fail(r.id, `${wp.kind === "city" ? "城市" : "标注点"} ${wp.id ?? wp.name} 坐标非法`);
         continue;
+      }
+      if (wp.kind === "feature" && (!wp.name || !wp.nameEn)) {
+        fail(r.id, `标注点 ${wp.name ?? "?"} 缺中/英名`);
       }
       coords.push([wp.lon, wp.lat]);
     } else {

@@ -290,13 +290,15 @@ export default function ExplorerApp() {
     if (!sentence) return;
     const en = language === "en-US";
     const hay = en ? sentence.toLowerCase() : sentence;
-    const terrainWps = resolveRouteWaypoints(route).filter((w) => w.kind === "terrain");
+    const namedWps = resolveRouteWaypoints(route).filter(
+      (w) => w.kind === "terrain" || w.kind === "feature",
+    );
     // 一句里提到多个地名时取靠后的那个（飞行方向上更新的）
-    for (let i = terrainWps.length - 1; i >= 0; i--) {
-      const w = terrainWps[i]!;
+    for (let i = namedWps.length - 1; i >= 0; i--) {
+      const w = namedWps[i]!;
       const nm = en ? w.nameEn : w.name;
       const core = nm.replace(
-        /(沙漠|沙地|山脉|山地|群山|走廊|谷地|河谷|大峡谷|峡谷|三角洲|半岛|群岛|列岛|诸岛|海岸|草原|盆地|高原|平原|火山区|火山|破火山口|山|湖|河|江|海|岛)$/,
+        /(沙漠|沙地|山脉|山地|群山|走廊|谷地|河谷|大峡谷|峡谷|三角洲|半岛|群岛|列岛|诸岛|海岸|海峡|草原|盆地|高原|平原|火山区|火山|破火山口|山|湖|河|江|海|岛)$/,
         "",
       );
       const hit = en
@@ -902,9 +904,20 @@ export default function ExplorerApp() {
             return null;
           },
           estNarrationSec: estimateSpeechDurationSec(narrText, SPEECH_RATE),
-          // 镜头经过某地形 — 作为地形名的兜底（解说里提到地名时由高亮同步覆盖，见下方 effect）
-          onFlyoverWaypoint: (wp) => {
-            setFlyoverName(getTerrainName(wp.name, language));
+          // 镜头经过某航点 — 更新「当前在哪」（解说里提到地名时由高亮同步更精确，见上方 effect）
+          onFlyoverWaypoint: (wp, index) => {
+            const en = language === "en-US";
+            const wpCount = resolveRouteWaypoints(route).length;
+            if (wp.kind === "airport") {
+              const nm = en ? wp.nameEn : wp.name;
+              setFlyoverName(
+                index === 0
+                  ? en ? `Departing ${nm}` : `从 ${nm} 起飞`
+                  : en ? `Landing at ${nm}` : `抵达 ${nm}`,
+              );
+            } else {
+              setFlyoverName(en ? wp.nameEn : getTerrainName(wp.name, language));
+            }
           },
           onComplete: () => {
             setIsRouteFlying(false);
@@ -1017,25 +1030,23 @@ export default function ExplorerApp() {
     () => routeCountriesForContinent(countriesForContinent(activeRegion)),
     [activeRegion],
   );
-  const journeyCountries = useMemo(
+  const journeyGroups = useMemo(
     () =>
       journeyCountrySlugs.map((slug) => {
         const m = getCountryMeta(slug);
-        return { slug, name: m ? (language === "zh-CN" ? m.name : m.nameEn) : slug };
+        const { domestic, international } = routesForCountry(slug);
+        return {
+          slug,
+          name: m ? (language === "zh-CN" ? m.name : m.nameEn) : slug,
+          domestic,
+          international,
+        };
       }),
     [journeyCountrySlugs, language],
   );
+  // routeCountry 为 null → 显示全部国家；选某国地形后聚焦到该国
   const effectiveRouteCountry =
-    routeCountry && journeyCountrySlugs.includes(routeCountry)
-      ? routeCountry
-      : journeyCountrySlugs[0] ?? null;
-  const journeyRoutes = useMemo(
-    () =>
-      effectiveRouteCountry
-        ? routesForCountry(effectiveRouteCountry)
-        : { domestic: [], international: [] },
-    [effectiveRouteCountry],
-  );
+    routeCountry && journeyCountrySlugs.includes(routeCountry) ? routeCountry : null;
 
   /** 关闭讲解面板 — 停止播报并清空当前地形 */
   const closePanel = () => {
@@ -1278,15 +1289,22 @@ export default function ExplorerApp() {
         }
       />
 
-      {/* 航线飞行中：地图上显示当前飞越的地形 */}
+      {/* 航线飞行中：地图上显示当前在哪 */}
       {isRouteFlying && flyoverName && (
         <div className="pointer-events-none absolute bottom-24 left-1/2 z-20 -translate-x-1/2">
           <div className="glass-panel flex items-center gap-2 rounded-full px-4 py-2 text-[13px]">
             <span className="text-[color:var(--accent)]">✈</span>
-            <span className="text-[color:var(--ink-dim)]">
-              {language === "zh-CN" ? "正在飞越" : "Now over"}
-            </span>
-            <span className="editorial-title text-[color:var(--ink)]">{flyoverName}</span>
+            {/* 起飞 / 抵达 的文字自带动词，其余前面加「正在飞越」 */}
+            {/(起飞|抵达|Departing|Landing at)/.test(flyoverName) ? (
+              <span className="editorial-title text-[color:var(--ink)]">{flyoverName}</span>
+            ) : (
+              <>
+                <span className="text-[color:var(--ink-dim)]">
+                  {language === "zh-CN" ? "正在飞越" : "Now over"}
+                </span>
+                <span className="editorial-title text-[color:var(--ink)]">{flyoverName}</span>
+              </>
+            )}
           </div>
         </div>
       )}
@@ -1294,11 +1312,9 @@ export default function ExplorerApp() {
       {!showIntro && mode === "study" && !activeTerrain && (
         <JourneyBar
           language={language}
-          countries={journeyCountries}
+          groups={journeyGroups}
           activeCountry={effectiveRouteCountry}
           onCountryChange={setRouteCountry}
-          domestic={journeyRoutes.domestic}
-          international={journeyRoutes.international}
           activeRouteId={activeRouteId}
           isFlying={isRouteFlying}
           preparing={routePreparing}

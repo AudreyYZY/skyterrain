@@ -17,9 +17,38 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "bne", "name": "布里斯班", "nameEn": "Brisbane", "lat": -27.384, "lon": 153.117, "airport": true },
-    { "kind": "terrain", "terrainId": "great-artesian-basin" },
-    { "kind": "terrain", "terrainId": "kakadu" },
-    { "kind": "city", "id": "drw", "name": "达尔文", "nameEn": "Darwin", "lat": -12.415, "lon": 130.877, "airport": true }
+    {
+      "kind": "city",
+      "id": "bne",
+      "name": "布里斯班",
+      "nameEn": "Brisbane",
+      "lat": -27.384,
+      "lon": 153.117,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-artesian-basin"
+    },
+    {
+      "kind": "feature",
+      "name": "卡奔塔利亚湾",
+      "nameEn": "Gulf of Carpentaria",
+      "lon": 140,
+      "lat": -15.8
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kakadu"
+    },
+    {
+      "kind": "city",
+      "id": "drw",
+      "name": "达尔文",
+      "nameEn": "Darwin",
+      "lat": -12.415,
+      "lon": 130.877,
+      "airport": true
+    }
   ]
 }

@@ -17,10 +17,42 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true },
-    { "kind": "terrain", "terrainId": "great-dividing-range" },
-    { "kind": "terrain", "terrainId": "kgari" },
-    { "kind": "terrain", "terrainId": "great-barrier-reef" },
-    { "kind": "city", "id": "cns", "name": "凯恩斯", "nameEn": "Cairns", "lat": -16.885, "lon": 145.755, "airport": true }
+    {
+      "kind": "city",
+      "id": "syd",
+      "name": "悉尼",
+      "nameEn": "Sydney",
+      "lat": -33.946,
+      "lon": 151.177,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-dividing-range"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kgari"
+    },
+    {
+      "kind": "feature",
+      "name": "圣灵群岛",
+      "nameEn": "Whitsunday Islands",
+      "lon": 149,
+      "lat": -20.3
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-barrier-reef"
+    },
+    {
+      "kind": "city",
+      "id": "cns",
+      "name": "凯恩斯",
+      "nameEn": "Cairns",
+      "lat": -16.885,
+      "lon": 145.755,
+      "airport": true
+    }
   ]
 }

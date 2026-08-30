@@ -507,6 +507,67 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "士林夜市", nameEn: "Shilin Night Market", lon: 121.524, lat: 25.088, kind: "district" },
     { nameZh: "淡水老街", nameEn: "Tamsui Old Street", lon: 121.443, lat: 25.169, kind: "district" },
   ],
+
+  auckland: [
+    { nameZh: "天空塔", nameEn: "Sky Tower", lon: 174.762, lat: -36.848, kind: "landmark" },
+    { nameZh: "伊甸山（Maungawhau）", nameEn: "Maungawhau / Mt Eden", lon: 174.764, lat: -36.877, kind: "nature" },
+    { nameZh: "独树山（Maungakiekie）", nameEn: "Maungakiekie / One Tree Hill", lon: 174.783, lat: -36.900, kind: "nature" },
+    { nameZh: "奥克兰博物馆", nameEn: "Auckland War Memorial Museum", lon: 174.778, lat: -36.860, kind: "landmark" },
+    { nameZh: "高架桥海港区", nameEn: "Viaduct Harbour", lon: 174.762, lat: -36.843, kind: "district" },
+    { nameZh: "德文波特", nameEn: "Devonport", lon: 174.796, lat: -36.829, kind: "district" },
+    { nameZh: "怀希基岛", nameEn: "Waiheke Island", lon: 175.090, lat: -36.800, kind: "nature" },
+    { nameZh: "皮哈海滩", nameEn: "Piha Beach", lon: 174.468, lat: -36.955, kind: "nature" },
+  ],
+
+  wellington: [
+    { nameZh: "蒂帕帕国家博物馆", nameEn: "Te Papa", lon: 174.782, lat: -41.290, kind: "landmark" },
+    { nameZh: "缆车", nameEn: "Cable Car", lon: 174.777, lat: -41.283, kind: "transport" },
+    { nameZh: "植物园", nameEn: "Botanic Garden", lon: 174.767, lat: -41.281, kind: "nature" },
+    { nameZh: "Zealandia 生态保护区", nameEn: "Zealandia", lon: 174.752, lat: -41.290, kind: "nature" },
+    { nameZh: "古巴街", nameEn: "Cuba Street", lon: 174.775, lat: -41.294, kind: "district" },
+    { nameZh: "国会（蜂巢）", nameEn: "Parliament (the Beehive)", lon: 174.777, lat: -41.278, kind: "landmark" },
+    { nameZh: "维多利亚山", nameEn: "Mount Victoria", lon: 174.794, lat: -41.297, kind: "nature" },
+  ],
+
+  rotorua: [
+    { nameZh: "政府花园", nameEn: "Government Gardens", lon: 176.256, lat: -38.136, kind: "nature" },
+    { nameZh: "库伊劳公园", nameEn: "Kuirau Park", lon: 176.240, lat: -38.132, kind: "nature" },
+    { nameZh: "怀奥塔普地热区", nameEn: "Wai-O-Tapu", lon: 176.366, lat: -38.357, kind: "nature" },
+    { nameZh: "蒂普亚（Te Puia）", nameEn: "Te Puia", lon: 176.252, lat: -38.163, kind: "landmark" },
+    { nameZh: "红木森林", nameEn: "The Redwoods (Whakarewarewa Forest)", lon: 176.283, lat: -38.157, kind: "nature" },
+    { nameZh: "波利尼西亚温泉", nameEn: "Polynesian Spa", lon: 176.257, lat: -38.138, kind: "landmark" },
+    { nameZh: "蓝湖", nameEn: "Blue Lake (Tikitapu)", lon: 176.340, lat: -38.190, kind: "nature" },
+  ],
+
+  christchurch: [
+    { nameZh: "大教堂广场", nameEn: "Cathedral Square", lon: 172.637, lat: -43.531, kind: "landmark" },
+    { nameZh: "植物园 · 海格利公园", nameEn: "Botanic Gardens · Hagley Park", lon: 172.625, lat: -43.531, kind: "nature" },
+    { nameZh: "纸板教堂", nameEn: "Cardboard Cathedral", lon: 172.645, lat: -43.532, kind: "landmark" },
+    { nameZh: "坎特伯雷博物馆", nameEn: "Canterbury Museum", lon: 172.628, lat: -43.531, kind: "landmark" },
+    { nameZh: "港丘缆车", nameEn: "Christchurch Gondola (Port Hills)", lon: 172.700, lat: -43.581, kind: "nature" },
+    { nameZh: "国际南极中心", nameEn: "International Antarctic Centre", lon: 172.541, lat: -43.492, kind: "landmark" },
+    { nameZh: "阿卡罗阿", nameEn: "Akaroa", lon: 172.966, lat: -43.804, kind: "district" },
+  ],
+
+  queenstown: [
+    { nameZh: "天际缆车", nameEn: "Skyline Gondola", lon: 168.657, lat: -45.028, kind: "nature" },
+    { nameZh: "瓦卡蒂普湖滨", nameEn: "Lake Wakatipu waterfront", lon: 168.661, lat: -45.033, kind: "nature" },
+    { nameZh: "TSS 厄恩斯劳号", nameEn: "TSS Earnslaw", lon: 168.663, lat: -45.031, kind: "landmark" },
+    { nameZh: "箭镇", nameEn: "Arrowtown", lon: 168.834, lat: -44.943, kind: "district" },
+    { nameZh: "卓越山滑雪场", nameEn: "The Remarkables ski field", lon: 168.813, lat: -45.058, kind: "nature" },
+    { nameZh: "格林诺奇", nameEn: "Glenorchy", lon: 168.383, lat: -44.847, kind: "nature" },
+    { nameZh: "瓦纳卡", nameEn: "Wānaka", lon: 169.153, lat: -44.700, kind: "nature" },
+  ],
+
+  dunedin: [
+    { nameZh: "八角广场", nameEn: "The Octagon", lon: 170.503, lat: -45.874, kind: "district" },
+    { nameZh: "达尼丁火车站", nameEn: "Dunedin Railway Station", lon: 170.508, lat: -45.874, kind: "landmark" },
+    { nameZh: "奥塔哥博物馆", nameEn: "Otago Museum", lon: 170.510, lat: -45.865, kind: "landmark" },
+    { nameZh: "泰亚罗阿角（信天翁中心）", nameEn: "Taiaroa Head (Royal Albatross Centre)", lon: 170.727, lat: -45.775, kind: "nature" },
+    { nameZh: "拉纳克城堡", nameEn: "Larnach Castle", lon: 170.669, lat: -45.850, kind: "landmark" },
+    { nameZh: "鲍德温街", nameEn: "Baldwin Street", lon: 170.535, lat: -45.851, kind: "landmark" },
+    { nameZh: "摩拉基大圆石", nameEn: "Moeraki Boulders", lon: 170.826, lat: -45.346, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

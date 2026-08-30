@@ -1,0 +1,19 @@
+{
+  "id": "chc-zqn",
+  "name": "基督城 — 皇后镇",
+  "nameEn": "Christchurch — Queenstown",
+  "description": "坎特伯雷平原 · 麦肯齐盆地 · 南阿尔卑斯山脉 · 瓦卡蒂普湖",
+  "descriptionEn": "Canterbury Plains · Mackenzie Basin · Southern Alps · Lake Wakatipu",
+  "depCountry": "new-zealand",
+  "arrCountry": "new-zealand",
+  "flight": { "airline": "新西兰航空", "airlineEn": "Air New Zealand", "flightNo": "NZ5623", "aircraft": "ATR 72-600", "depIata": "CHC", "arrIata": "ZQN", "durationMin": 60 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "chc", "name": "基督城", "nameEn": "Christchurch", "lat": -43.489, "lon": 172.532, "airport": true },
+    { "kind": "terrain", "terrainId": "canterbury-plains" },
+    { "kind": "terrain", "terrainId": "mackenzie-basin" },
+    { "kind": "terrain", "terrainId": "aoraki-southern-alps" },
+    { "kind": "terrain", "terrainId": "lake-wakatipu" },
+    { "kind": "city", "id": "zqn", "name": "皇后镇", "nameEn": "Queenstown", "lat": -45.021, "lon": 168.739, "airport": true }
+  ]
+}

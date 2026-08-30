@@ -31,8 +31,22 @@
       "terrainId": "pearl-delta"
     },
     {
+      "kind": "feature",
+      "name": "粤西海岸",
+      "nameEn": "western Guangdong coast",
+      "lon": 110.6,
+      "lat": 21.5
+    },
+    {
       "kind": "terrain",
       "terrainId": "leizhou"
+    },
+    {
+      "kind": "feature",
+      "name": "琼州海峡",
+      "nameEn": "Qiongzhou Strait",
+      "lon": 110.2,
+      "lat": 20.15
     },
     {
       "kind": "city",

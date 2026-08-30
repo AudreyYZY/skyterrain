@@ -17,12 +17,50 @@
   },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "hrb", "name": "哈尔滨太平", "nameEn": "Harbin Taiping", "lat": 45.623, "lon": 126.250, "airport": true },
-    { "kind": "terrain", "terrainId": "northeast" },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "yangtze" },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "terrain", "terrainId": "pearl-delta" },
-    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true }
+    {
+      "kind": "city",
+      "id": "hrb",
+      "name": "哈尔滨太平",
+      "nameEn": "Harbin Taiping",
+      "lat": 45.623,
+      "lon": 126.25,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "northeast"
+    },
+    {
+      "kind": "feature",
+      "name": "渤海",
+      "nameEn": "Bohai Sea",
+      "lon": 119.5,
+      "lat": 38.8
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pearl-delta"
+    },
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    }
   ]
 }

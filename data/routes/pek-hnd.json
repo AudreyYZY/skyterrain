@@ -31,6 +31,20 @@
       "terrainId": "shandong-hills"
     },
     {
+      "kind": "feature",
+      "name": "黄海",
+      "nameEn": "Yellow Sea",
+      "lon": 124,
+      "lat": 36.3
+    },
+    {
+      "kind": "feature",
+      "name": "日本海",
+      "nameEn": "Sea of Japan",
+      "lon": 134.5,
+      "lat": 37.2
+    },
+    {
       "kind": "terrain",
       "terrainId": "kanto-plain"
     },
