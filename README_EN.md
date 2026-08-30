@@ -12,16 +12,21 @@ with authoritative, easy-to-remember narration so you actually *understand* what
 
 | Mode | The question it answers | Content |
 |---|---|---|
-| **Study** | "What landform is that? How did it form?" | Terrain atlas — 388 landforms + authoritative 6-section lessons |
+| **Study** | "What landform is that? How did it form?" | Terrain atlas — 478 landforms + authoritative 6-section lessons |
 | **Travel** | "I've landed in an unfamiliar city — what do I need to know?" | City overviews — layout / getting around / culture / when to go |
 
 The two content systems run in parallel and don't interfere.
 
-**Current scope:**
-- Study — Asia (China 84 + Japan 26), Oceania (Australia 22 + New Zealand 30), North America (USA 26 + Canada 25), Europe (UK 33 + Iceland 28 + Switzerland 27 + Norway 28 + France 29 + Italy 30) — 388 total, bilingual
-- Travel — Australia (country overview + 7 cities) + China (11 cities), bilingual
+**Current scope** (`check-regions.ts` / `check-places.ts` print exact counts on every run —
+trust those over this paragraph if they ever disagree):
+- Study — Asia (China 84 + Japan 26 = 110), Oceania (Australia 34 + New Zealand 30 = 64),
+  North America (USA 26 + Canada 25 = 51), Europe (UK 33 + Iceland 28 + Switzerland 27 +
+  Norway 28 + France 29 + Italy 30 + Spain 26 + Germany 26 + Greece 26 = 253) — 478 total, bilingual
+- Travel — 14 countries (Australia/China/Japan/New Zealand/USA/Canada/UK/Iceland/Switzerland/
+  Norway/France/Italy/Spain/Germany/Greece), 15 country overviews + 188 cities, bilingual;
+  127 domestic routes with bilingual study/travel narration each
 
-**Roadmap:** China travel mode → the world's major landforms (study mode) → travel mode for more countries by tourism demand.
+**Roadmap:** keep expanding study-mode terrain coverage (next country TBD) + expand travel-mode city coverage by tourism demand.
 
 ---
 
@@ -29,7 +34,7 @@ The two content systems run in parallel and don't interfere.
 
 ### Terrain set — single source of truth
 
-- **388 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
+- **478 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
   `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`.
 - Each entry records an **anchor** (main peak / lake / hub city + lon/lat + elevation), a
@@ -64,7 +69,7 @@ window shot.
 - Pitch / range scale with terrain size; large plateaus / basins / plains / deserts get a
   `viewScale` in the registry's `WIDE_VIEW` so the shot pulls back far enough to read as
   "a whole upland / basin," not one local feature (a lake, a city) near the anchor.
-- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (388/388).
+- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (478/478).
 
 ### Region highlight — a restrained outline
 
@@ -115,25 +120,38 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   (`getTerrainContent(id, lang)`), summarized from widely-accepted geography facts (China
   National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks
   Australia, UNESCO) — not documentary voiceover, not free-form generation.
-- **All 388 have bilingual lessons.** 61 of them (China 39 + Australia 22)
-  are line-by-line source-verified: comparative / subjective judgments removed, disputed points
+- **All 478 have bilingual lessons.** An early batch of 61 (China 39 + Australia 22, back when
+  those were the only two countries in the registry) went through a dedicated line-by-line
+  source-verification pass: comparative / subjective judgments removed, disputed points
   qualified or given side by side, anything unverifiable dropped, figures normalized to
-  authoritative sources.
+  authoritative sources. **Verification depth is uneven across the registry**: the `source`
+  field is populated on every entry, but only a fraction cite a specific, checkable source
+  (a named Wikipedia article, a national survey bulletin, etc.) — the rest say something more
+  general like "approximate" or just name an agency, and a handful explicitly flag themselves
+  as "approximate coordinates / unverified in the field." Treat `source` as an audit trail, not
+  a quality certification — double-check any figure you plan to rely on.
 - `settlement` (oasis · settlement) uses only overview / from the air / history & people.
 - [`lib/terrain-lesson.ts`](lib/terrain-lesson.ts) `resolveLesson(id, lang)` decides which
   lesson to use, in one place.
 
 ### Route flights
 
-- 4 **real commercial routes** (`data/routes/*.json`): Beijing–Ürümqi / Chengdu–Lhasa /
-  Guangzhou–Lhasa / Ürümqi–Kashgar, with airline / flight number / aircraft, departure and
-  arrival airports, and terrain waypoints along the way.
+- **127 real commercial routes** (`data/routes/*.json`) across the countries listed above
+  (the first 4 — Beijing–Ürümqi / Chengdu–Lhasa / Guangzhou–Lhasa / Ürümqi–Kashgar — were the
+  original set), each with airline / flight number / aircraft, departure and arrival airports,
+  and terrain waypoints along the way.
 - Under 3 minutes each: the camera jumps to a slanted view over the departure airport →
   immediately starts a **single continuous narration written for that route**
   ([`lib/route-narration.ts`](lib/route-narration.ts), bilingual, regional-geography-textbook
   register) → and flies the waypoints at a steady pace.
 - Each route has two narrations, following the current mode: `ROUTE_NARRATION[id].{study, travel}`.
 - Self-check: `node --experimental-strip-types scripts/check-routes.ts`.
+- **The city pairs, airlines, and terrain waypoints are researched** (the route genuinely
+  exists, and the terrain it flies over genuinely lies along that path); **the specific flight
+  number / aircraft type is a real example captured at the time the route was written, not a
+  live timetable** — airlines renumber routes, swap aircraft, and drop seasonal service
+  constantly, so these figures aren't guaranteed still accurate. Check the airline's own site
+  or an OTA for current schedules before you fly.
 
 ---
 
@@ -167,14 +185,18 @@ Open http://localhost:3000
 ### Common commands
 
 ```bash
-npm run dev      # dev (webpack)
-npm run build    # production build
-npm run lint     # ESLint
+npm run dev        # dev (webpack)
+npm run build      # production build
+npm run lint       # ESLint
+npm run typecheck  # tsc --noEmit
 
-node --experimental-strip-types scripts/check-terrain-camera.ts   # camera geometry self-check (388/388)
-node --experimental-strip-types scripts/check-routes.ts           # route self-check
-node --experimental-strip-types scripts/check-places.ts           # travel-place self-check
-node scripts/extract-ne-landforms.mjs                             # re-extract terrain boundaries
+npm run check:regions   # continent/sub-region/country terrain-count consistency
+npm run check:camera    # camera geometry self-check (478/478)
+npm run check:places    # travel-place self-check (city coords/IATA/sources/bilingual content)
+npm run check:routes    # route self-check (waypoint monotonicity, narration length, airports, …)
+npm run check            # runs all of the above (typecheck + lint + 4 checks)
+
+node scripts/extract-ne-landforms.mjs   # re-extract terrain boundaries
 ```
 
 ---
@@ -201,13 +223,13 @@ components/
   RegionSelector.tsx       — header continent / sub-region two-level switch
 
 lib/
-  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 388 terrains
+  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 478 terrains
   terrain-camera.ts         — computeTerrainCamera() data-driven camera derivation
   terrain-content.{zh,en}.ts— authoritative 6-section lesson content (zh / en)
   terrain-lesson.ts         — resolveLesson(id, lang): one place decides which lesson to use
   terrain-label-registry.ts — labels (generated from the registry, with nameEn)
   lesson.ts                 — lesson section order / headings / assembly
-  routes.ts / route-narration.ts — 4 real routes + two continuous narrations each
+  routes.ts / route-narration.ts — real commercial routes (127 currently) + two continuous narrations each
   app-mode.ts               — AppMode type + localStorage read/write
   places-registry.ts        — [travel-mode single source of truth] cities + country overviews
   travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
@@ -225,7 +247,7 @@ features/
 
 data/
   *.json                    — early terrain data (coordinates now superseded by terrain-registry)
-  routes/                   — 4 real route definitions
+  routes/                   — real route definitions (127 currently)
   gis/                      — raw Natural Earth shp/dbf (git-ignored)
 
 public/data/gis/exports/    — 42 extracted terrain-boundary geojson files

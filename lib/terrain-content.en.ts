@@ -6784,4 +6784,395 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Helgoland's history has passed between Danish, British and German control several times; an 1890 treaty placed it under German administration. The Düne sandbar is one of the North Sea's most important breeding grounds for grey and harbour seals.",
   },
+
+  // ============ Greece ============
+  "mount-olympus": {
+    seeing:
+      "Mount Olympus rises near the Aegean coast of eastern Greece; its highest peak, Mytikas, reaches 2,917 m — the highest point in Greece. Seen from the air the massif seems to rise almost straight out of the sea, its summit snow-capped year-round in sharp contrast to the olive groves and villages below.",
+    formation:
+      "Olympus is built mainly of limestone and marble, a folded range raised by mountain-building forces; well-developed karst features — caves and steep cliffs — mark its slopes, and Quaternary ice-age glacial traces survive near the summit.",
+    observation:
+      "From the air, identify Olympus by its coastal, isolated bulk — unlike the Pindus range's continuous chain, Olympus stands as a single massive block above the Aegean; a cluster of peaks above 2,500 m crowds the summit, with Mytikas the sharpest.",
+    distinguish:
+      "Both Olympus and the Pindus range are limestone-dominated, but Olympus is a relatively isolated massif standing alone by the sea, while the Pindus is a continuous chain running for hundreds of kilometres; the two face each other across the northern edge of the Thessalian Plain.",
+    concept:
+      "Olympus became Greece's first national park in 1938 and was designated a UNESCO Biosphere Reserve in 1981; its slopes carry vegetation zones from Mediterranean scrub to alpine meadow, recording over 1,700 plant species.",
+    history:
+      "In Greek mythology Olympus was held to be the home of the gods, a widely recorded tradition that has profoundly shaped how the mountain is understood in Western culture; the range still carries several long-established climbing routes.",
+  },
+
+  "pindus-mountains": {
+    seeing:
+      "The Pindus range runs the length of western mainland Greece, from the Albanian border south-east to the Gulf of Corinth over roughly 200 km, earning the name \"the spine of Greece\". From the air it is a continuous, undulating limestone ridge, wet and forested to the west, drier to the east.",
+    formation:
+      "The range is built of Mesozoic to Cenozoic marine limestone raised by mountain-building and intensely folded; karst is widespread, with deep gorges, caves and underground rivers — the Vikos Gorge is the range's best-known example.",
+    observation:
+      "From the air, identify the Pindus by its unbroken, roughly north-west to south-east ridge line, unlike the isolated bulks of Olympus or Taygetus; the western slope carries noticeably denser vegetation, a direct expression of Epirus's wetter climate.",
+    distinguish:
+      "Both the Pindus and Olympus are limestone systems, but the Pindus is a continuous chain hundreds of kilometres long while Olympus is a single, relatively isolated massif; the Pindus belongs to the same Mediterranean orogenic belt as the Alps, though far smaller in scale and height.",
+    concept:
+      "The Pindus is mainland Greece's key climatic and hydrological divide: the western Epirus side receives abundant rainfall and fast-flowing rivers, while Thessaly and Macedonia to the east are comparatively dry; the Vikos-Aoos National Park protects this karst mountain ecosystem.",
+    history:
+      "The rugged Pindus terrain historically left the region relatively isolated; areas such as Zagori retain many traditional stone bridges and stone-built villages, an important record of Greek mountain vernacular architecture.",
+  },
+
+  taygetus: {
+    seeing:
+      "Taygetus rises over the southern Peloponnese; its highest peak, Profitis Ilias, reaches 2,407 m, and the massif climbs almost directly from the sea — among the steepest terrain on the Greek mainland.",
+    formation:
+      "The range is built mainly of marble and limestone, an extension of the Alpine orogenic belt into the Peloponnese; sustained tectonic uplift has left the slopes exceptionally steep, with almost no transitional lowland between the mountain foot and the coastline.",
+    observation:
+      "From the air, Taygetus looks like a steep grey-white wall along the western side of the Laconian Gulf, narrowing at its southern end as it runs into the sea to form the rugged base of the Mani Peninsula; snow caps the summit in winter, sharply banded above the olive groves and vineyards below.",
+    distinguish:
+      "Taygetus and the Pindus range are both limestone-and-marble systems, but Taygetus is a relatively isolated, north-south ridge with markedly steeper slopes; Taygetus and the White Mountains of Crete face each other across the sea, both part of the Peloponnese-Crete arc.",
+    concept:
+      "Taygetus's steep terrain is a typical example of Peloponnesian block-mountain landscape, with the massif facing the Mycenaean plain on one side and the Laconian Gulf on the other — a useful case study in Mediterranean fault-block mountains.",
+    history:
+      "The southern flank of Taygetus has long served as a natural barrier around the Sparta region; the mountain still holds several ancient monasteries and traditional stone-built villages.",
+  },
+
+  "mount-parnassus": {
+    seeing:
+      "Mount Parnassus is a limestone massif in central Greece; its highest peak, Liakoura, reaches 2,457 m, with the ancient sanctuary of Delphi set on its southern slope — one of Greece's most historically significant mountains.",
+    formation:
+      "The massif is built mainly of Triassic to Cretaceous marine limestone interbedded with red shale, cut by thrust faults; several shallow, north-south aligned karst basins lie within the mountain, and it also holds bauxite deposits.",
+    observation:
+      "From the air, Parnassus shows classic karst-highland form — a rounded, open summit rather than a sharp ridge, its flanks scattered with dissolution hollows and sinkholes; snow covers the mountain in winter, and it carries a ski area.",
+    distinguish:
+      "Both Parnassus and Olympus are limestone-dominated, but Parnassus has a comparatively rounded summit with many karst basins, while Olympus's ridgeline is sharper and steeper; unlike Mount Athos, Parnassus lies inland and does not meet the sea.",
+    concept:
+      "Parnassus's karst landscape is a textbook example of limestone terrain shaped by dissolution over long geological time; the Corycian Cave within the mountain is one of Greece's well-known karst caves.",
+    history:
+      "Delphi, on the mountain's southern flank, was one of ancient Greece's most important oracular sanctuaries and was inscribed as a UNESCO World Heritage site in 1987; the Corycian Cave is widely recorded in ancient tradition as associated with the god Pan and the Muses.",
+  },
+
+  "mount-athos": {
+    seeing:
+      "Mount Athos forms the easternmost of the three prongs of the Halkidiki Peninsula, a narrow mountainous spur; its peak reaches 2,033 m and the massif drops steeply into the Aegean — a distinctive mountain-and-monastery landscape in northern Greece.",
+    formation:
+      "The peninsula is built of crystalline rock and limestone, rising steeply straight from the coastline with an intricate, cape-studded shoreline — an extension of the southern Aegean orogenic belt along the peninsula's northern edge.",
+    observation:
+      "From the air, the Athos peninsula is a slender ridge running out into the Aegean, sharp at the summit, its slopes dotted with monastery complexes in sharp contrast with the gentler farmland and villages nearby.",
+    distinguish:
+      "Both Athos and Mount Pelion are mountainous peninsulas reaching into the Aegean, but Athos is far steeper and narrower, its summit permanently marked by monastic settlements, while Pelion is defined by dense forest and scattered villages.",
+    concept:
+      "Athos illustrates the classic form of a steep, sea-facing mountain peninsula in the eastern Mediterranean, its extreme coastal-ridge slope the product of substantial tectonic uplift combined with strong marine erosion.",
+    history:
+      "Orthodox monks began settling on Mount Athos from the 9th century; a 10th-century Byzantine imperial chrysobull established the monastic tradition there, and twenty monasteries were built over the following millennium; Athos was inscribed as a mixed natural and cultural UNESCO World Heritage site in 1988.",
+  },
+
+  "white-mountains-crete": {
+    seeing:
+      "The White Mountains rise over western Crete; the highest peak, Pachnes, reaches 2,453 m, named for snow that lingers into early summer and gives the range its pale, distant colour.",
+    formation:
+      "The massif is built of thick limestone with extensive karst development — numerous high mountain hollows and dissolution basins, cut through by deep gorges, including the Samaria Gorge, which originates here.",
+    observation:
+      "From the air, the White Mountains form a folded, grey-white highland across western Crete, with year-round snow patches still visible in summer; the southern flank drops abruptly to the Libyan Sea in steep coastal cliffs.",
+    distinguish:
+      "Both the White Mountains and Mount Ida (Psiloritis) to the east are limestone massifs, but the White Mountains carry denser, more deeply cut karst gorges, while Ida is characterised by a single rounded, isolated bulk.",
+    concept:
+      "The persistence of snow into early summer on the White Mountains reflects both their high elevation and the way limestone surfaces retain meltwater — a useful case study in the relationship between Mediterranean alpine karst and snow cover.",
+    history:
+      "The Samaria Gorge on the southern flank of the White Mountains has been a national park since 1962, an important area for mountain conservation and ecotourism on Crete.",
+  },
+
+  "mount-pilio": {
+    seeing:
+      "Mount Pelion is a forested mountain peninsula reaching into the Aegean from eastern Thessaly; its highest point, Pliasidi, reaches 1,624 m, and its slopes are covered in beech and chestnut forest.",
+    formation:
+      "The massif is built mainly of schist and limestone, an eastward extension of the Pindus orogenic belt; comparatively high rainfall has produced dense forest and numerous streams, making Pelion one of Greece's more heavily forested mountains.",
+    observation:
+      "From the air, Pelion shows a deep-green forest cover in sharp contrast with the open farmland of the Thessalian Plain and the blue Aegean beyond; traditional stone-built villages are scattered through the hills.",
+    distinguish:
+      "Both Pelion and Athos are mountain peninsulas reaching into the Aegean, but Pelion is densely forested with comparatively gentle terrain, while Athos is steep and largely without continuous forest.",
+    concept:
+      "Pelion's comparatively high rainfall and forest cover stand in contrast with Greece's generally drier coastal mountains — a useful case study in climatic variation among Greek coastal ranges.",
+    history:
+      "In Greek mythology Pelion was widely held to be the home of the Centaurs; the mountain still holds several traditional stone-built villages dating from around the Ottoman period.",
+  },
+
+  methana: {
+    seeing:
+      "Methana is a volcanic peninsula on the north-eastern Peloponnese, built up from several coalesced lava domes — the westernmost active centre of the South Aegean Volcanic Arc.",
+    formation:
+      "The peninsula is built of andesite lava domes formed over several eruptive episodes, producing broken, hummocky terrain between the domes; the most recent known eruption, around 230 BCE, formed the Fleves islet lava dome.",
+    observation:
+      "From the air, Methana shows a classic lava-dome landscape — a cluster of rounded, rough-surfaced highs, in clear contrast with the gentler Peloponnesian coastline around it.",
+    distinguish:
+      "Methana, Nisyros and Santorini all belong to the South Aegean Volcanic Arc, but Methana is distinguished by its cluster of small lava domes, Nisyros by its near-circular stratovolcano form, and Santorini by its large caldera.",
+    concept:
+      "Methana still hosts hot springs and sulphurous fumarole activity, making it one of the sites illustrating ongoing geothermal activity along the South Aegean Volcanic Arc.",
+    history:
+      "Methana's hot springs have long been used for therapeutic bathing, and the area remains known today for thermal-spa tourism.",
+  },
+
+  "lasithi-plateau": {
+    seeing:
+      "The Lasithi Plateau is an enclosed highland basin in eastern Crete at about 850 m elevation, ringed by mountains; thousands of white canvas-sailed windmills once pumped water for irrigation here.",
+    formation:
+      "The plateau is a karst polje, formed by long dissolution of the surrounding limestone massifs and local subsidence; Quaternary alluvium covers the basin floor, providing land suitable for farming.",
+    observation:
+      "From the air, the plateau is a neat expanse of flat green farmland enclosed by mountains, sharply set off against the bare limestone slopes around it; on clear days the white windmills scattered across the fields are an easily recognisable marker.",
+    distinguish:
+      "Both the Lasithi Plateau and the Thessalian Plain are agricultural land, but Lasithi is a small, high-elevation karst basin surrounded by mountains, while the Thessalian Plain is a broad, low-elevation floodplain built by a major river.",
+    concept:
+      "The Lasithi Plateau is a textbook example of a karst polje — dissolution of the surrounding limestone forms an enclosed hollow, and its sediment floor provides flat, farmable ground.",
+    history:
+      "The Dikteon Cave on the plateau's south-eastern edge is widely recorded in Greek mythology as the birthplace of Zeus; the plateau has long been an important agricultural district of Crete.",
+  },
+
+  "thessaly-plain": {
+    seeing:
+      "The Thessalian Plain is mainland Greece's largest and most important agricultural plain, built up by the Pineios River and its tributaries — known as \"the breadbasket of Greece\".",
+    formation:
+      "The plain has accumulated from Quaternary alluvium carried by the Pineios and its tributaries, flat and open with deep, fertile soil; it is ringed by the Pindus range, Mount Othrys, Mount Pelion, Mount Ossa and Mount Olympus.",
+    observation:
+      "From the air, the Thessalian Plain appears as a neat patchwork of farmland set sharply against the surrounding mountains; the Pineios River winds across the plain, and the Vale of Tempe in the north-east forms a natural passage toward Macedonia.",
+    distinguish:
+      "Both the Thessalian Plain and the Lasithi Plateau are agricultural land, but the Thessalian Plain is a broad, low-elevation floodplain built by a major river, while Lasithi is a small, high-elevation karst basin ringed by mountains.",
+    concept:
+      "The Thessalian Plain is Greece's most important grain-producing region, with more than half its land under cultivation — wheat, cotton and maize are the main crops — illustrating how deep alluvial soils support intensive agriculture.",
+    history:
+      "The Thessalian Plain has been an important agricultural region since ancient Greek times, and the area was historically noted for raising fine horses.",
+  },
+
+  "santorini-caldera": {
+    seeing:
+      "The Santorini caldera is a vast collapse crater in the Aegean, formed when a massive Late Bronze Age eruption around 1600 BCE caused the island's centre to collapse; the surviving arc of islands forms today's Thira.",
+    formation:
+      "The eruption ranks among the largest in recorded human history (estimated VEI 7); after ejecting huge volumes of ash and pumice, the emptied magma chamber caused the surface to collapse, forming a caldera roughly 12 km across, later flooded by the sea to form today's caldera bay.",
+    observation:
+      "From the air, Santorini shows a distinctive crescent outline, with the towns of Fira and Oia perched atop caldera-rim cliffs about 300 m high, overlooking the deep-blue bay below; Nea Kameni and Palea Kameni, the dark resurgent lava domes at the centre, rose after the eruption.",
+    distinguish:
+      "Both Santorini and Nisyros are calderas on the South Aegean Volcanic Arc, but Santorini's caldera is far larger and mostly submerged, while Nisyros's crater is entirely on land and much smaller.",
+    concept:
+      "Santorini illustrates the full process by which a large eruption empties a magma chamber and causes surface collapse into a caldera — an important case study in volcanic collapse mechanisms and hazard; the Bronze Age settlement at Akrotiri, buried by the eruption, has been systematically excavated and is sometimes called \"the Pompeii of the Aegean\".",
+    history:
+      "The caldera's formation is often popularly linked to Plato's account of \"Atlantis\", though this remains a speculative later association rather than an established historical fact; the frescoes and buildings recovered at Akrotiri provide important material for the study of Aegean civilisation.",
+  },
+
+  nisyros: {
+    seeing:
+      "Nisyros is a near-circular stratovolcano island in the Dodecanese; its central Stefanos crater is about 260 m across and still hosts active fumaroles and geothermal activity.",
+    formation:
+      "The volcanic island is built up from andesite and dacite erupted over several episodes; the central crater formed through a more recent phreatic eruption — explosive but without a large fresh-magma outflow — and its floor remains bare to this day.",
+    observation:
+      "From the air, Nisyros shows a near-circular island outline with a clearly visible central depression; the pale crater floor contrasts sharply with the green vegetation around it, and white steam can be seen rising from fumaroles along the crater rim.",
+    distinguish:
+      "Both Nisyros and Santorini are volcanic islands on the South Aegean Volcanic Arc, but Nisyros's crater is small and entirely on land, while Santorini's caldera is vast and mostly submerged.",
+    concept:
+      "Nisyros's crater is a textbook example of a phreatic eruption — groundwater contacting a magmatic heat source flashes to steam and produces an explosive eruption without necessarily ejecting large volumes of fresh magma.",
+    history:
+      "Nisyros's hot springs and geothermal resources have long been put to use, and the island remains known today for geothermal and spa tourism.",
+  },
+
+  "gulf-of-corinth": {
+    seeing:
+      "The Gulf of Corinth is a long, narrow inlet separating the Peloponnese from mainland Greece — essentially an active rift graben where the two shores continue to pull apart.",
+    formation:
+      "The gulf sits within a rift basin formed by crustal extension, with both flanks subsiding along normal faults as the sea has flooded in to form today's inlet; geologists regard it as one of the world's faster-extending continental rifts, though the precise rate varies with the measurement method used.",
+    observation:
+      "From the air, the Gulf of Corinth is a long, narrow east-west band, its mountainous shores rising steeply close to the water; the cable-stayed bridge at the narrowest point, the Rio-Antirrio strait, is a distinctive landmark.",
+    distinguish:
+      "The Gulf of Corinth and a fjord such as those in Norway are both long, narrow inlets, but the Gulf of Corinth formed as a tectonic rift graben, while fjords are carved by glacial erosion — the two differ entirely in shoreline form and formation mechanism.",
+    concept:
+      "The Gulf of Corinth is a classic case study in continental rift evolution; the continuous extension and subsidence of both shores makes the region one of the more seismically active in Greece.",
+    history:
+      "The Isthmus of Corinth has long served as a key land route linking the Peloponnese to mainland Greece; the Corinth Canal, cut in the late 19th century, connects the Gulf of Corinth to the Saronic Gulf.",
+  },
+
+  "vikos-gorge": {
+    seeing:
+      "The Vikos Gorge is a deeply incised limestone gorge in the Zagori area of Epirus, part of the Pindus range, carved by the Voidomatis River.",
+    formation:
+      "The gorge developed in thick limestone through long-term river downcutting combined with karst dissolution, producing steep gorge walls; its ratio of depth to width is exceptionally high among comparable gorges.",
+    observation:
+      "From the air, the Vikos Gorge is a winding, dark, steep-walled cleft set into the pale limestone plateau, its densely forested floor in sharp contrast with the bare rock walls above.",
+    distinguish:
+      "Both Vikos and Samaria are well-known Greek limestone gorges, but Vikos lies in the Pindus range on the Greek mainland, while Samaria lies in the White Mountains of Crete — the two belong to entirely different mountain systems and islands.",
+    concept:
+      "Vikos has been listed by Guinness World Records among the world's deepest gorges by relative depth — an important case study in the erosion of limestone gorges.",
+    history:
+      "The Vikos-Aoos National Park surrounding the gorge preserves numerous traditional stone bridges and stone-built villages of the Zagori area, an important record of Greek mountain vernacular architecture.",
+  },
+
+  "samaria-gorge": {
+    seeing:
+      "The Samaria Gorge is a roughly 16 km limestone gorge on the southern flank of the White Mountains in Crete, one of the longest gorges in Europe.",
+    formation:
+      "The gorge was cut by long-term river downcutting through the White Mountains' thick limestone; at its narrowest point, the \"Iron Gates\", the walls stand only about 3-4 m apart and rise roughly 300 m — a classic karst gorge landform.",
+    observation:
+      "From the air, the Samaria Gorge is a narrow, deeply incised cleft winding through the southern flank of the White Mountains, its floor sparsely vegetated and its walls exposed rock, in sharp contrast with the highland around it.",
+    distinguish:
+      "Both Samaria and Vikos are limestone karst gorges, but Samaria is narrower and steeper-sided, pinching to only a few metres wide at its narrowest, while Vikos is generally broader throughout.",
+    concept:
+      "Samaria is a textbook example of a karst gorge cut into an extremely narrow floor by sustained river downcutting; it has been a national park since 1962 and is an important habitat for the Cretan wild goat, the kri-kri.",
+    history:
+      "The rugged terrain of the Samaria Gorge and its surroundings has historically served as a refuge for local inhabitants; today it is a major ecotourism and hiking destination on Crete.",
+  },
+
+  "zakynthos-navagio": {
+    seeing:
+      "Navagio Beach is a small cove on the north-western coast of Zakynthos, enclosed by steep white limestone cliffs and reachable only by boat or from a clifftop viewpoint.",
+    formation:
+      "The cove formed as limestone cliffs retreated under long-term wave erosion; the cliff faces are nearly vertical, and the beach sand is made up of cliff debris and marine sediment.",
+    observation:
+      "From the air, Navagio shows a striking contrast of colours — brilliant white limestone cliffs, deep-blue water and a golden-sand beach, with the wreck of a stranded ship on the beach as an unmistakable landmark.",
+    distinguish:
+      "Navagio and coastlines such as the Amalfi Coast are both known for their limestone cliffs, but Navagio is small in scale and forms a nearly enclosed cove, with the surrounding cliffs largely shutting out the view of the open sea.",
+    concept:
+      "Navagio illustrates how differential wave erosion of a limestone coast can carve out a localised, indented cove — a useful case study in Mediterranean limestone coastal landforms.",
+    history:
+      "The wrecked vessel on the beach is believed to be a smuggling ship stranded in the 1980s, and it has since become one of the cove's most recognisable features.",
+  },
+
+  "mani-peninsula": {
+    seeing:
+      "The Mani Peninsula is a rugged mountainous cape at the southern tip of the Peloponnese, a continuation of Taygetus southward, with rough terrain and much exposed limestone.",
+    formation:
+      "The peninsula is built of limestone and marble, a continuation of Taygetus's tectonic uplift; the Diros Caves on the west coast contain an underground lake system, a classic product of karst dissolution.",
+    observation:
+      "From the air, Mani shows rugged, rocky terrain, bare grey-white limestone interspersed with sparse scrub, and a deeply indented, cape-studded coastline; Cape Tainaron at the peninsula's southern tip, reaching into the sea, is often regarded as the southernmost point of mainland Greece.",
+    distinguish:
+      "Both the Mani Peninsula and the White Mountains of Crete belong to the Taygetus-Crete arc, but Mani sits at a lower elevation and meets the sea directly, while the White Mountains are higher and lie further inland to the west on Crete.",
+    concept:
+      "Mani's rugged terrain and thin soils shaped the region's distinctive tower-house architecture — a case study in how Mediterranean communities adapted to rugged limestone terrain.",
+    history:
+      "Traces of prehistoric human activity have been found inside the Diros Caves; the peninsula's rugged terrain historically kept it relatively isolated, and it retains extensive traditional stone tower-house complexes.",
+  },
+
+  crete: {
+    seeing:
+      "Crete is Greece's largest island, its terrain rising and falling from west to east across several mountain ranges — the White Mountains, Mount Ida (Psiloritis, 2,456 m, the island's highest point) — with the Messara Plain in the south-central part of the island.",
+    formation:
+      "Crete sits on the Hellenic Arc, formed where the African Plate subducts beneath the Aegean microplate, and has been steadily uplifted overall; the island's mountains are predominantly limestone, with extensive karst development.",
+    observation:
+      "From the air, Crete forms a long, narrow east-west shape with alternating mountains and plains — the White Mountains rise tall and rugged in the west, Mount Ida stands as a rounded, isolated bulk in the centre, the Messara Plain opens flat and broad in the south, and the northern coast is dotted with bays and harbours.",
+    distinguish:
+      "Both Crete and Rhodes are large islands in southern Greece, but Crete is far larger with more rugged, higher mountains, while Rhodes is smaller with gentler terrain.",
+    concept:
+      "Crete's sustained uplift is directly linked to subduction along the Hellenic Arc, making it an important case study in eastern Mediterranean plate subduction and island-arc landform evolution.",
+    history:
+      "The Idaean Cave on Mount Ida is widely recorded in Greek mythology as the place where Zeus grew up; Crete has long been an important centre of civilisation in the Aegean.",
+  },
+
+  samothraki: {
+    seeing:
+      "Samothrace is a predominantly granite island in the northern Aegean; its central peak, Mount Fengari, reaches 1,611 m — the highest point of any Aegean island.",
+    formation:
+      "The island is built of granite, with steep terrain and numerous waterfalls and streams — among the most dramatically relieved of the Aegean islands despite its modest area, with striking relative relief.",
+    observation:
+      "From the air, Samothrace shows a strikingly tall profile compared with the generally low Aegean islands around it — Mount Fengari rises abruptly at the centre, its slopes densely vegetated and cut by deep stream valleys.",
+    distinguish:
+      "Both Samothrace and Milos are Aegean islands, but Samothrace is dominated by granite highland terrain, while Milos is volcanic in origin, low-lying, and marked by colourful, varied surface rock.",
+    concept:
+      "Samothrace's relative relief stands out among Aegean islands — a case study in how a small island with hard bedrock can retain pronounced topography.",
+    history:
+      "The ancient Sanctuary of the Great Gods, site of the Samothracian Mysteries, stood on the island; the excavated statue known as the Winged Victory of Samothrace, now in the Louvre, is an important surviving artefact of ancient Aegean civilisation.",
+  },
+
+  corfu: {
+    seeing:
+      "Corfu is the northernmost major island of the Ionian Islands; its highest point, Mount Pantokrator, reaches 906 m, and its vegetation stays green year-round thanks to rainfall notably higher than the Aegean islands receive.",
+    formation:
+      "The island is predominantly limestone with karst development; its position on the Ionian Sea brings comparatively abundant rainfall, producing dense vegetation cover unlike the drier Aegean islands.",
+    observation:
+      "From the air, Corfu shows a clearly green cast, with olive groves and forest covering much of its hills and highlands, a sharp contrast with the bare, tawny surfaces typical of many Aegean islands.",
+    distinguish:
+      "Compared with an Aegean island such as Milos, Corfu has markedly higher vegetation cover and a greener surface, a difference driven mainly by the higher rainfall on the Ionian side of Greece.",
+    concept:
+      "Corfu's lush vegetation is a direct expression of the comparatively humid climate along Greece's western Ionian coast, contrasting with the dry Mediterranean climate of the Aegean islands to the east and south.",
+    history:
+      "The Venetian-era fortifications of Corfu's Old Town were built in stages between 1386 and 1797 and were inscribed as a UNESCO World Heritage site in 2007.",
+  },
+
+  milos: {
+    seeing:
+      "Milos is a volcanic island on the South Aegean Volcanic Arc, its varied and colourful volcanic rock layers forming a distinctive landscape, most striking at the Sarakiniko coast.",
+    formation:
+      "The island is built of tuff, pumice, lava and other rock types from several eruptive episodes; at Sarakiniko, white pumice and tuff have been carved by wave and wind erosion into a moon-like landscape.",
+    observation:
+      "From the air, Milos shows a strikingly multicoloured surface — the white Sarakiniko coast alternating with reddish-brown and yellow volcanic rock layers — set off sharply against the surrounding blue sea.",
+    distinguish:
+      "Both Milos and Nisyros are islands on the South Aegean Volcanic Arc, but Milos is known for its colourful, varied volcanic rock and mineral resources, while Nisyros is defined by its well-preserved crater landform.",
+    concept:
+      "Milos's colourful landscape reflects successive layers of volcanic material from different eruptive episodes and rock types — a textbook case in the surface lithological diversity of volcanic islands; the island still produces kaolin, perlite and bentonite.",
+    history:
+      "Milos has traded obsidian since the Neolithic era; the statue known as the Venus de Milo, discovered on the island in 1820, is now held in the Louvre.",
+  },
+
+  rhodes: {
+    seeing:
+      "Rhodes is the largest island of the Dodecanese, predominantly limestone terrain, with its highest point, Mount Attavyros, reaching 1,215 m.",
+    formation:
+      "The island is built mainly of limestone, its central highlands descending gently outward in a series of terraces and hills, with an intricate, naturally sheltered coastline.",
+    observation:
+      "From the air, Rhodes shows an oval outline with highlands rising at its centre, surrounded by terraced fields and olive groves; the medieval fortifications of Rhodes town, at the north-eastern tip, are clearly visible.",
+    distinguish:
+      "Both Rhodes and Crete are large limestone islands in southern Greece, but Rhodes is far smaller with gentler terrain, while Crete's mountains are considerably higher and more rugged.",
+    concept:
+      "Rhodes's gently sloping terraced terrain has provided favourable conditions for terraced farming and olive cultivation — a case study in agricultural adaptation to Mediterranean limestone island landscapes.",
+    history:
+      "The medieval old town of Rhodes was fortified by the Knights Hospitaller between the 14th and 16th centuries and is one of Europe's best-preserved medieval fortified towns, inscribed as a UNESCO World Heritage site in 1988.",
+  },
+
+  "lake-trichonida": {
+    seeing:
+      "Lake Trichonida lies in the Aetolia-Acarnania region of western mainland Greece and is Greece's largest natural lake by surface area, covering about 96 km².",
+    formation:
+      "The lake basin is tectonic in origin, formed by subsidence along a regional fault zone, with comparatively great depth; it is fed mainly by runoff and groundwater from the surrounding hills.",
+    observation:
+      "From the air, Lake Trichonida forms a long, narrow oval of calm open water, ringed by low hills and farmland, a contrast with Greece's generally mountainous terrain.",
+    distinguish:
+      "Both Lake Trichonida and Lake Prespa are important Greek natural lakes, but Trichonida lies entirely within Greece and is larger, while Prespa spans Greece, Albania and North Macedonia and sits at a higher elevation.",
+    concept:
+      "Lake Trichonida is a representative tectonic lake basin of mainland Greece, its formation closely tied to regional crustal fault activity.",
+    history:
+      "The area around Lake Trichonida has long supported agriculture and fishing, with the lake providing an important water resource for the surrounding region.",
+  },
+
+  "lake-prespa": {
+    seeing:
+      "Lake Prespa comprises Great Prespa and Small Prespa, spanning Greece, Albania and North Macedonia at an elevation of about 853 m.",
+    formation:
+      "The lake basin is a karst tectonic lake, formed by regional subsidence combined with karst dissolution; part of its water connects to Lake Ohrid through underground karst channels.",
+    observation:
+      "From the air, Lake Prespa is a bright blue, high-elevation expanse of water ringed by mountains, its shoreline irregular and dotted with small islands and wetlands, in sharp contrast with the bare mountains around it.",
+    distinguish:
+      "Both Lake Prespa and Lake Trichonida are important Greek lakes, but Prespa sits at higher elevation and spans three national borders, while Trichonida lies entirely within Greece at lower elevation.",
+    concept:
+      "Lake Prespa is an important high-altitude karst lake ecosystem in the Balkans and a key habitat for the Dalmatian pelican and other rare waterbirds.",
+    history:
+      "Greece, Albania and North Macedonia jointly established the transboundary Prespa Park in 2000 for cooperative lake conservation (\"North Macedonia\" is the country's current official name following the 2019 Prespa Agreement).",
+  },
+
+  "acheloos-river": {
+    seeing:
+      "The Acheloos is mainland Greece's longest river, about 220 km, rising in the southern Pindus range and flowing out into the Ionian Sea.",
+    formation:
+      "The upper river runs through limestone gorges in the Pindus, its middle and lower reaches passing reservoirs and lowlands, with a delta and lagoon wetlands developing at its mouth — an important river system of western Greece.",
+    observation:
+      "From the air, the upper Acheloos winds through mountain gorges, its water colour shifting with the seasons; downstream the channel widens, and the delta and surrounding lagoons at its mouth form extensive wetlands meeting the blue Ionian Sea.",
+    distinguish:
+      "Both the Acheloos and the Pineios rise in the Pindus range, but the Acheloos flows west into the Ionian Sea while the Pineios flows east across the Thessalian Plain into the Aegean — their catchments run in opposite directions.",
+    concept:
+      "The delta and lagoon wetlands at the Acheloos's mouth form an important wetland ecosystem in western Greece, providing key habitat for migratory birds.",
+    history:
+      "In Greek mythology the Acheloos was personified as the river god Achelous, a widely recorded tradition reflecting the reverence ancient Greeks held for major rivers.",
+  },
+
+  meteora: {
+    seeing:
+      "Meteora is a cluster of steep, isolated sandstone and conglomerate pinnacles on the north-western edge of the Thessalian Plain, atop which Orthodox monks began building monasteries from the 14th century.",
+    formation:
+      "The pinnacles formed from sandstone-conglomerate layers deposited by an ancient river delta roughly 60 million years ago, later uplifted regionally and shaped by differential erosion from water and weathering, in which softer material wore away while harder rock survived as today's towering pillars.",
+    observation:
+      "From the air, Meteora appears as a cluster of grey-brown pinnacles thrust abruptly upward at the edge of the Thessalian Plain, in stark contrast with the open, flat farmland around it; monastery buildings are visible atop some of the pillars.",
+    distinguish:
+      "Meteora's pinnacles differ from Crete's karst landscape — Meteora is an inselberg formed by differential erosion of sandstone-conglomerate, while karst forms through the dissolution of limestone; the two differ entirely in rock type and erosion mechanism.",
+    concept:
+      "Meteora is a classic case study in how continental sedimentary rock, following regional uplift and differential erosion, can be left standing as isolated rock pinnacles — an illustration of how hard rock layers survive as high points through long erosional processes.",
+    history:
+      "At its peak more than twenty monasteries stood at Meteora; six remain in use today. Meteora was inscribed as a mixed natural and cultural UNESCO World Heritage site in 1988.",
+  },
 };

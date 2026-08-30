@@ -1,0 +1,17 @@
+{
+  "id": "ath-ioa",
+  "name": "雅典 — 约阿尼纳",
+  "nameEn": "Athens — Ioannina",
+  "description": "科林斯湾 · 迈泰奥拉",
+  "descriptionEn": "Gulf of Corinth · Meteora",
+  "depCountry": "greece",
+  "arrCountry": "greece",
+  "flight": { "airline": "奥林匹克航空", "airlineEn": "Olympic Air", "flightNo": "OA166", "aircraft": "ATR 72-600", "depIata": "ATH", "arrIata": "IOA", "durationMin": 50 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
+    { "kind": "terrain", "terrainId": "gulf-of-corinth" },
+    { "kind": "terrain", "terrainId": "meteora" },
+    { "kind": "city", "id": "ioannina", "name": "约阿尼纳", "nameEn": "Ioannina", "lat": 39.6964, "lon": 20.8225, "airport": true }
+  ]
+}

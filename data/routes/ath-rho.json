@@ -1,0 +1,17 @@
+{
+  "id": "ath-rho",
+  "name": "雅典 — 罗德城",
+  "nameEn": "Athens — Rhodes Town",
+  "description": "米洛斯岛 · 尼西罗斯火山",
+  "descriptionEn": "Milos · Nisyros",
+  "depCountry": "greece",
+  "arrCountry": "greece",
+  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3345", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "RHO", "durationMin": 55 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
+    { "kind": "terrain", "terrainId": "milos" },
+    { "kind": "terrain", "terrainId": "nisyros" },
+    { "kind": "city", "id": "rhodes-town", "name": "罗德城", "nameEn": "Rhodes Town", "lat": 36.4054, "lon": 28.0862, "airport": true }
+  ]
+}

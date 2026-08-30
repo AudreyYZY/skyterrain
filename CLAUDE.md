@@ -20,8 +20,11 @@
 
 ## 范围
 
-- **已有**: 亚洲（中国 84 + 日本 26）+ 大洋洲（澳大利亚 22 + 新西兰 30）+
-  北美洲（美国 26 + 加拿大 25）+ 欧洲（英国 33 + 冰岛 28 + 瑞士 27 + 挪威 28 + 法国 29 + 意大利 30），中英双语，共 388 个
+- **已有**: 亚洲（中国 84 + 日本 26 = 110）+ 大洋洲（澳大利亚 34 + 新西兰 30 = 64）+
+  北美洲（美国 26 + 加拿大 25 = 51）+ 欧洲（英国 33 + 冰岛 28 + 瑞士 27 + 挪威 28 + 法国 29 +
+  意大利 30 + 西班牙 26 + 德国 26 + 希腊 26 = 253），中英双语，共 478 个
+  （`node --experimental-strip-types scripts/check-regions.ts` 每次运行都会打印准确计数，
+  这份汇总数字如果又和它对不上，以脚本输出为准并回来改这一行）
   - 地形集选取标准与分类定义见 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点；
     分类判据；`settlement` 人文层的收录方法）
 - **进行中**: 全球主要地形（按大洲分组，逐国推进，每国 ≥25 个），见
@@ -96,7 +99,7 @@ lib/
   terrain-label-registry.ts — 标签（由 terrain-registry 生成，含 nameEn）
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
   lesson.ts              — 板块顺序 / 标题（中英）/ 拼接
-  routes.ts              — 4 条真实商业航线（data/routes/*.json），机场航点 + 地形航点
+  routes.ts              — 真实商业航线（data/routes/*.json，当前 127 条），机场航点 + 地形航点
   route-narration.ts     — 每条航线两套 ~2.5 分钟连贯解说：ROUTE_NARRATION[id].{study,travel}（中英）；
                            getRouteNarration(id, lang, mode)；CesiumMap.flyRoute 播放
   app-mode.ts            — AppMode 类型 + getStoredMode/setStoredMode（localStorage fge-app-mode）
@@ -166,7 +169,9 @@ features/
   选中城市时在地图上标机场（✈）+ 地标。只是静态标注，不做与播报同步的高亮（文本↔坐标匹配不可靠）。
   **之后每个国家的旅游模式都要保持这套行为一致。**
 - **航线**：一条航线两套解说，跟随当前 `mode`（`getRouteNarration(id, lang, mode)`）；
-  某模式解说为空时该模式下航线不播。4 条国内航线 study + travel 解说均已写。
+  某模式解说为空时该模式下航线不播。当前 127 条国内航线 study + travel 解说均已写。
+  **航班号/机型是写入时的真实示例，不是实时时刻表**——没有随航司改期自动更新的机制，
+  引用具体航班号前建议自行核对。
 - **新增国家两个模式都要做**：study = 地形注册表 + 6 板块讲解；travel = `places-registry`
   加城市 + `COUNTRY_TO_CONTINENT` 补映射 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide +
   `COUNTRY_OVERVIEWS` 加概览 + `travel-pois.ts` 补该城市攻略提到的地标坐标。
@@ -188,9 +193,13 @@ features/
   行为与之前等价。
 - **Phase B 逐国加地形，每国 ≥25 个 T1/T2/T3**：
   - ✅ 美国 26 · ✅ 加拿大 25（`north-america` 共 51）· ✅ 日本 26（`asia` 84→110）
-    · ✅ 新西兰 30（`oceania` 22→52）· ✅ 英国 33（`europe` 0→33，首个欧洲国家）
-    · ✅ 冰岛 28（`europe` 33→61）· ✅ 瑞士 27（`europe` 61→88）· ✅ 挪威 28（`europe` 88→116）· ✅ 法国 29（`europe` 116→145）· ✅ 意大利 30（`europe` 145→175，首个南欧国家）
-  - 优先序（待做）：西班牙 → 德国 → 希腊 → …
+    · ✅ 新西兰 30（`oceania` 首批 22→52，之后澳大利亚自身又补 12 条 → oceania 现为 64）
+    · ✅ 英国 33（`europe` 0→33，首个欧洲国家）
+    · ✅ 冰岛 28（`europe` 33→61）· ✅ 瑞士 27（`europe` 61→88）· ✅ 挪威 28（`europe` 88→116）
+    · ✅ 法国 29（`europe` 116→145）· ✅ 意大利 30（`europe` 145→175，首个南欧国家）
+    · ✅ 西班牙 26（`europe` 175→201）· ✅ 德国 26（`europe` 201→227）
+    · ✅ 希腊 26（`europe` 227→253，PR #65）
+  - 优先序（待做）：CLAUDE.md 里原先列到希腊为止；下一个国家待定（南欧候选：葡萄牙）
   - **意大利**：`country: "italy"`（首个南欧国家）；只做本土 + 西西里 + 撒丁，海外无。
     阿尔卑斯跨境按「意大利与法国 / 瑞士交界」中性表述、不涉主权、不描述边界线；勃朗峰 / 马特洪峰 /
     罗莎峰如实标注在交界一带。南蒂罗尔 / 多洛米蒂的 `history` 只写地质 + 广泛记载的史前 + 一战山地战

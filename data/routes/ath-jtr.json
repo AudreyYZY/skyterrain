@@ -1,0 +1,16 @@
+{
+  "id": "ath-jtr",
+  "name": "雅典 — 圣托里尼",
+  "nameEn": "Athens — Santorini",
+  "description": "米洛斯岛",
+  "descriptionEn": "Milos",
+  "depCountry": "greece",
+  "arrCountry": "greece",
+  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3390", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "JTR", "durationMin": 45 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
+    { "kind": "terrain", "terrainId": "milos" },
+    { "kind": "city", "id": "santorini", "name": "圣托里尼", "nameEn": "Santorini", "lat": 36.3992, "lon": 25.4793, "airport": true }
+  ]
+}

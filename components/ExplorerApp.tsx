@@ -267,8 +267,10 @@ export default function ExplorerApp() {
       ));
     }
 
-    // 暴露 labelManager 到 window 供调试
-    (window as any).labelManager = labelManager;
+    // 暴露 labelManager 到 window 供调试 —— 仅开发环境
+    if (process.env.NODE_ENV !== "production") {
+      (window as any).labelManager = labelManager;
+    }
   }, []);
 
   // 选中地形 / 开始航线后，收起初始标题卡

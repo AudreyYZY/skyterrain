@@ -432,6 +432,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     const modeRef = useRef(appMode);
     const onTerrainSelectRef = useRef(onTerrainSelect);
     onTerrainSelectRef.current = onTerrainSelect;
+    /**
+     * onReady 必须走 ref，不能进 init effect 的依赖数组——它在 ExplorerApp 里依赖
+     * [activeRegion, mode]，每次切大洲/切模式都会拿到新的函数引用，若留在依赖数组里
+     * 会导致整个 Viewer 被销毁重建（重新 fetch GeoJSON、重建全部地形高亮实体），
+     * 同时打断刚发起的 flyToRegion 动画。
+     */
+    const onReadyRef = useRef(onReady);
+    onReadyRef.current = onReady;
     const viewerRef = useRef<import("cesium").Viewer | null>(null);
     const cesiumRef = useRef<typeof import("cesium") | null>(null);
     const heightCacheRef = useRef<Map<string, number>>(new Map());
@@ -1174,12 +1182,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           viewerRef.current = viewer;
           cesiumRef.current = Cesium;
 
-          // 暴露 viewer 和 Cesium 到 window 供调试
+          // 暴露 viewer / Cesium / debugCesium 到 window 供调试 —— 仅开发环境，
+          // 生产环境不挂载这个调试面（避免任意访客能拿到 viewer 引用 / 触发 debug 方法）。
+          if (process.env.NODE_ENV !== "production") {
           (window as any).viewer = viewer;
           (window as any).Cesium = Cesium;
           (window as any).__ALL_FEATURES = ALL_FEATURES;
 
-          // Debug panel — 暴露到 window 供生产环境诊断
+          // Debug panel — 暴露到 window 供开发环境诊断
           const origTerrain = viewer.terrainProvider;
           const ellipsoidTerrain = new Cesium.EllipsoidTerrainProvider();
 
@@ -1485,6 +1495,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             },
           };
           console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugGeometry(), debugAutoCamera(id)");
+          } // NODE_ENV guard end
 
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
           viewer.camera.moveEnd.addEventListener(() => {
@@ -1614,7 +1625,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           onTerrainMode?.(terrainMode);
           setStatus("ready");
-          onReady?.();
+          onReadyRef.current?.();
         } catch (err) {
           if (!cancelled) {
             setStatus("error");
@@ -1639,7 +1650,9 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         viewerRef.current?.destroy();
         viewerRef.current = null;
       };
-    }, [onReady, onTerrainMode]);
+      // onReady 走 onReadyRef（见上），故意不放进依赖数组——见 onReadyRef 声明处注释。
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [onTerrainMode]);
 
     return (
       <div className="relative h-full w-full">

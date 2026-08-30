@@ -1,0 +1,17 @@
+{
+  "id": "ath-cfu",
+  "name": "雅典 — 科孚城",
+  "nameEn": "Athens — Corfu Town",
+  "description": "科林斯湾 · 品都斯山脉",
+  "descriptionEn": "Gulf of Corinth · Pindus Mountains",
+  "depCountry": "greece",
+  "arrCountry": "greece",
+  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3320", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "CFU", "durationMin": 65 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
+    { "kind": "terrain", "terrainId": "gulf-of-corinth" },
+    { "kind": "terrain", "terrainId": "pindus-mountains" },
+    { "kind": "city", "id": "corfu-town", "name": "科孚城", "nameEn": "Corfu Town", "lat": 39.6019, "lon": 19.9117, "airport": true }
+  ]
+}

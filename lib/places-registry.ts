@@ -155,6 +155,15 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "de-east": { zh: "东部", en: "Eastern Germany", order: 135 },
   "de-southwest": { zh: "西南部", en: "Southwest Germany", order: 136 },
   "de-northeast": { zh: "东北部", en: "Northeast Germany", order: 137 },
+  // 希腊（阿提卡→马其顿→色萨利→伊庇鲁斯→伯罗奔尼撒→克里特→伊奥尼亚→爱琴海诸岛）
+  "gr-attica": { zh: "阿提卡（雅典地区）", en: "Attica (Athens Region)", order: 140 },
+  "gr-macedonia": { zh: "马其顿", en: "Macedonia", order: 141 },
+  "gr-thessaly": { zh: "色萨利", en: "Thessaly", order: 142 },
+  "gr-epirus": { zh: "伊庇鲁斯", en: "Epirus", order: 143 },
+  "gr-peloponnese": { zh: "伯罗奔尼撒", en: "Peloponnese", order: 144 },
+  "gr-crete": { zh: "克里特", en: "Crete", order: 145 },
+  "gr-ionian": { zh: "伊奥尼亚群岛", en: "Ionian Islands", order: 146 },
+  "gr-aegean": { zh: "爱琴海诸岛", en: "Aegean Islands", order: 147 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -184,6 +193,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "italy", nameZh: "意大利", nameEn: "Italy" },
   { country: "spain", nameZh: "西班牙", nameEn: "Spain" },
   { country: "germany", nameZh: "德国", nameEn: "Germany" },
+  { country: "greece", nameZh: "希腊", nameEn: "Greece" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1267,6 +1277,73 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "RLG", nameZh: "罗斯托克-拉格机场", nameEn: "Rostock-Laage Airport", lon: 12.2783, lat: 53.9182 },
     source: "施特拉尔松市中心 54.3153,13.0930；最近商业机场为罗斯托克-拉格机场（距市区约70km）：公开资料",
   },
+  // ===== 希腊 =====
+  {
+    id: "athens", nameZh: "雅典", nameEn: "Athens", country: "greece", tier: "capital", zone: "gr-attica",
+    lon: 23.7275, lat: 37.9838,
+    airport: { iata: "ATH", nameZh: "雅典埃莱夫塞里奥斯·韦尼泽洛斯国际机场", nameEn: "Athens Eleftherios Venizelos International Airport", lon: 23.9445, lat: 37.9364 },
+    source: "雅典市中心 37.9838,23.7275；ATH 机场：公开资料",
+  },
+  {
+    id: "thessaloniki", nameZh: "塞萨洛尼基", nameEn: "Thessaloniki", country: "greece", tier: "major", zone: "gr-macedonia",
+    lon: 22.9444, lat: 40.6401,
+    airport: { iata: "SKG", nameZh: "塞萨洛尼基马其顿机场", nameEn: "Thessaloniki Macedonia Airport", lon: 22.9709, lat: 40.5197 },
+    source: "塞萨洛尼基市中心 40.6401,22.9444；SKG 机场：公开资料",
+  },
+  {
+    id: "heraklion", nameZh: "伊拉克利翁", nameEn: "Heraklion", country: "greece", tier: "major", zone: "gr-crete",
+    lon: 25.1442, lat: 35.3387,
+    airport: { iata: "HER", nameZh: "伊拉克利翁尼科斯·卡赞扎基斯机场", nameEn: "Heraklion Nikos Kazantzakis Airport", lon: 25.1803, lat: 35.3397 },
+    source: "伊拉克利翁市中心 35.3387,25.1442；HER 机场：公开资料",
+  },
+  {
+    id: "chania", nameZh: "哈尼亚", nameEn: "Chania", country: "greece", tier: "notable", zone: "gr-crete",
+    lon: 24.0180, lat: 35.5138,
+    airport: { iata: "CHQ", nameZh: "哈尼亚国际机场", nameEn: "Chania International Airport", lon: 24.1497, lat: 35.5317 },
+    source: "哈尼亚市中心 35.5138,24.0180；CHQ 机场：公开资料",
+  },
+  {
+    id: "rhodes-town", nameZh: "罗德城", nameEn: "Rhodes Town", country: "greece", tier: "notable", zone: "gr-aegean",
+    lon: 28.2276, lat: 36.4341,
+    airport: { iata: "RHO", nameZh: "罗德国际机场（迪亚戈拉斯）", nameEn: "Rhodes International Airport (Diagoras)", lon: 28.0862, lat: 36.4054 },
+    source: "罗德城市中心 36.4341,28.2276；RHO 机场：公开资料",
+  },
+  {
+    id: "santorini", nameZh: "圣托里尼（费拉）", nameEn: "Santorini (Fira)", country: "greece", tier: "notable", zone: "gr-aegean",
+    lon: 25.4315, lat: 36.4166,
+    airport: { iata: "JTR", nameZh: "圣托里尼（锡拉）国家机场", nameEn: "Santorini (Thira) National Airport", lon: 25.4793, lat: 36.3992 },
+    source: "费拉市中心 36.4166,25.4315；JTR 机场：公开资料",
+  },
+  {
+    id: "corfu-town", nameZh: "科孚城", nameEn: "Corfu Town", country: "greece", tier: "notable", zone: "gr-ionian",
+    lon: 19.9203, lat: 39.6243,
+    airport: { iata: "CFU", nameZh: "科孚约安尼斯·卡波季斯特里亚斯国际机场", nameEn: "Corfu Ioannis Kapodistrias International Airport", lon: 19.9117, lat: 39.6019 },
+    source: "科孚城市中心 39.6243,19.9203；CFU 机场：公开资料",
+  },
+  {
+    id: "nafplio", nameZh: "纳夫普利翁", nameEn: "Nafplio", country: "greece", tier: "notable", zone: "gr-peloponnese",
+    lon: 22.8075, lat: 37.5673,
+    airport: { iata: "ATH", nameZh: "雅典埃莱夫塞里奥斯·韦尼泽洛斯国际机场", nameEn: "Athens Eleftherios Venizelos International Airport", lon: 23.9445, lat: 37.9364 },
+    source: "纳夫普利翁市中心 37.5673,22.8075；本地无商业机场，最近机场为雅典机场（公路距离约140km）：公开资料",
+  },
+  {
+    id: "ioannina", nameZh: "约阿尼纳", nameEn: "Ioannina", country: "greece", tier: "notable", zone: "gr-epirus",
+    lon: 20.8537, lat: 39.6650,
+    airport: { iata: "IOA", nameZh: "约阿尼纳国家机场", nameEn: "Ioannina National Airport", lon: 20.8225, lat: 39.6964 },
+    source: "约阿尼纳市中心 39.6650,20.8537；IOA 机场：公开资料",
+  },
+  {
+    id: "kalamata", nameZh: "卡拉马塔", nameEn: "Kalamata", country: "greece", tier: "notable", zone: "gr-peloponnese",
+    lon: 22.1109, lat: 37.0389,
+    airport: { iata: "KLX", nameZh: "卡拉马塔国际机场", nameEn: "Kalamata International Airport", lon: 22.0257, lat: 37.0683 },
+    source: "卡拉马塔市中心 37.0389,22.1109；KLX 机场：公开资料",
+  },
+  {
+    id: "volos", nameZh: "沃洛斯", nameEn: "Volos", country: "greece", tier: "notable", zone: "gr-thessaly",
+    lon: 22.9444, lat: 39.3622,
+    airport: { iata: "VOL", nameZh: "内阿安希阿洛斯国家机场", nameEn: "Nea Anchialos National Airport", lon: 22.7943, lat: 39.2197 },
+    source: "沃洛斯市中心 39.3622,22.9444；VOL 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1287,6 +1364,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   italy: "europe",
   spain: "europe",
   germany: "europe",
+  greece: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {
