@@ -273,6 +273,14 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "lake-garda": "national",
   "lake-como": "national",
   "venetian-lagoon": "national",
+  "mount-vesuvius": "national",
+  "mount-etna": "national",
+  "campi-flegrei": "national",
+  "aeolian-islands": "national",
+  "amalfi-coast": "national",
+  "cinque-terre": "national",
+  stromboli: "poi",
+  capri: "poi",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

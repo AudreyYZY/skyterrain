@@ -6006,6 +6006,124 @@ const VENETIAN_LAGOON: TerrainEntry = {
   source: "威尼斯潟湖：亚得里亚海北端一片约550平方公里的浅水潟湖，被一列沙坝岛（利多）和三个潮汐口与外海隔开；冰后期海面上升淹没波河平原东缘、加上布伦塔、锡莱等河带来的泥沙，共同塑造了潟湖；地面因自然沉降和20世纪抽取地下水，近百年相对海面下降约20多厘米，现有 MOSE 活动闸防潮（ISPRA）",
 };
 
+const MOUNT_VESUVIUS: TerrainEntry = {
+  id: "mount-vesuvius",
+  nameZh: "维苏威火山",
+  nameEn: "Mount Vesuvius / Vesuvio",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "维苏威火山锥（约1281m）与索马环形山脊", lon: 14.426, lat: 40.821, elevation: 1281, kind: "peak" },
+  bbox: [14.34, 40.77, 14.53, 40.88],
+  viewScale: 1.3,
+  label: { lon: 14.43, lat: 40.82, rotation: 0 },
+  source: "维苏威火山：那不勒斯湾东岸的一座层火山，是欧洲大陆唯一的活火山；今天的锥体套在更老的“索马火山”一圈残缺的环形山脊里；公元79年的一次普林尼式喷发把庞贝、赫库兰尼姆两座罗马城埋在数米厚的火山碎屑下（世界遗产），最近一次喷发在1944年；维苏威国家公园（INGV / UNESCO）",
+};
+
+const MOUNT_ETNA: TerrainEntry = {
+  id: "mount-etna",
+  nameZh: "埃特纳火山",
+  nameEn: "Mount Etna",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "埃特纳火山（约3350m，欧洲最高的活火山）", lon: 14.993, lat: 37.751, elevation: 3350, kind: "peak" },
+  bbox: [14.83, 37.58, 15.22, 37.92],
+  axis: [[14.9, 37.65], [15.1, 37.88]],
+  viewScale: 1.5,
+  label: { lon: 14.99, lat: 37.75, rotation: 0 },
+  source: "埃特纳火山：西西里东岸的一座巨型层火山，约3350m，是欧洲最高、也是世界上活动最频繁的火山之一，几乎常年在喷发或流熔岩；东坡有一个巨大的塌陷凹地“公牛谷”；山坡上一层层熔岩流、火山锥和葡萄园、柑橘园相间；2013年列入世界遗产（INGV / UNESCO）",
+};
+
+const CAMPI_FLEGREI: TerrainEntry = {
+  id: "campi-flegrei",
+  nameZh: "坎皮弗莱格瑞",
+  nameEn: "Campi Flegrei / Phlegraean Fields",
+  category: "basin",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "索尔法塔拉火口与波佐利一带（大破火山口内）", lon: 14.139, lat: 40.827, elevation: 90, kind: "escarpment" },
+  bbox: [14.00, 40.77, 14.27, 40.93],
+  viewScale: 1.5,
+  label: { lon: 14.13, lat: 40.84, rotation: 0 },
+  source: "坎皮弗莱格瑞（“燃烧的原野”）：那不勒斯以西一个直径约12—15km 的大破火山口，由约3.9万年前和1.5万年前两次特大喷发塌陷形成，口内散布几十座小火山锥、火口湖和喷气孔（索尔法塔拉）；波佐利一带的地面在缓慢升降（“慢地动”bradyseism），古罗马集市的石柱上留有被海生动物钻蚀的痕迹、记录了几米的升降；INGV 密切监测（INGV）",
+};
+
+const AEOLIAN_ISLANDS: TerrainEntry = {
+  id: "aeolian-islands",
+  nameZh: "伊奥利亚群岛",
+  nameEn: "Aeolian Islands / Isole Eolie",
+  category: "island",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "利帕里岛与武尔卡诺岛（群岛中部）", lon: 14.955, lat: 38.480, elevation: 400, kind: "island" },
+  bbox: [14.30, 38.33, 15.30, 38.85],
+  axis: [[14.5, 38.55], [15.25, 38.80]],
+  viewScale: 1.7,
+  label: { lon: 14.8, lat: 38.55, rotation: -20 },
+  source: "伊奥利亚群岛：西西里以北一列7座主要火山岛（利帕里、武尔卡诺、萨利纳、斯特龙博利等），是非洲板块俯冲带上升的岩浆堆成的；“火山”（volcano）和两种喷发方式“武尔卡诺式”“斯特龙博利式”都以这里的岛命名；利帕里的黑曜岩和浮岩、武尔卡诺的喷气孔和泥浴很有名；2000年列入世界遗产（INGV / UNESCO）",
+};
+
+const STROMBOLI: TerrainEntry = {
+  id: "stromboli",
+  nameZh: "斯特龙博利火山",
+  nameEn: "Stromboli",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "斯特龙博利火山岛（约924m）与“火流”坡（Sciara del Fuoco）", lon: 15.213, lat: 38.789, elevation: 924, kind: "peak" },
+  bbox: [15.16, 38.75, 15.27, 38.83],
+  viewScale: 1.3,
+  label: { lon: 15.21, lat: 38.79, rotation: 0 },
+  source: "斯特龙博利火山：伊奥利亚群岛最北的一座火山岛，两千多年来几乎从未停止过每隔几分钟到几十分钟一次的小规模爆炸（“斯特龙博利式”喷发），夜里从海上看像一座灯塔，故有“地中海的灯塔”之称；西北坡有一道叫“火流”的滑塌凹槽，喷出物沿它滚进海里；偶有较强的“阵发”（2019年一次曾造成人员伤亡）（INGV）",
+};
+
+const AMALFI_COAST: TerrainEntry = {
+  id: "amalfi-coast",
+  nameZh: "阿马尔菲海岸",
+  nameEn: "Amalfi Coast / Costiera Amalfitana",
+  category: "coast",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "阿马尔菲 / 波西塔诺一带的石灰岩崖岸", lon: 14.600, lat: 40.630, elevation: 250, kind: "escarpment" },
+  bbox: [14.40, 40.58, 14.78, 40.68],
+  axis: [[14.42, 40.62], [14.75, 40.64]],
+  viewFrom: 180,
+  viewScale: 1.4,
+  label: { lon: 14.58, lat: 40.63, rotation: -6 },
+  source: "阿马尔菲海岸：索伦托半岛南侧约50km 长的一段海岸，拉塔里山的石灰岩崖直插第勒尼安海，被一条条短而陡的深沟切开，村镇沿崖坡层层叠建、坡上是柠檬园的石阶梯田；1997年作为地中海式文化景观列入世界遗产（ISPRA / UNESCO）",
+};
+
+const CAPRI: TerrainEntry = {
+  id: "capri",
+  nameZh: "卡普里岛",
+  nameEn: "Capri",
+  category: "island",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "卡普里岛与法拉利奥尼海蚀柱", lon: 14.233, lat: 40.550, elevation: 400, kind: "island" },
+  bbox: [14.18, 40.53, 14.29, 40.575],
+  viewScale: 1.3,
+  label: { lon: 14.23, lat: 40.55, rotation: 0 },
+  source: "卡普里岛：那不勒斯湾口一座石灰岩小岛，原来和索伦托半岛相连、后被海侵隔开；四周是近乎垂直的海崖，海里立着“法拉利奥尼”海蚀柱；“蓝洞”是一个只有小船能钻进去的海蚀洞，阳光从水下的洞口透进来把洞里照成幽蓝色（ISPRA）",
+};
+
+const CINQUE_TERRE: TerrainEntry = {
+  id: "cinque-terre",
+  nameZh: "五渔村海岸",
+  nameEn: "Cinque Terre",
+  category: "coast",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "五渔村（维尔纳扎 / 马纳罗拉一带的梯田崖岸）", lon: 9.710, lat: 44.110, elevation: 150, kind: "escarpment" },
+  bbox: [9.64, 44.07, 9.78, 44.16],
+  axis: [[9.66, 44.14], [9.76, 44.08]],
+  viewFrom: 90,
+  viewScale: 1.3,
+  label: { lon: 9.71, lat: 44.11, rotation: -55 },
+  source: "五渔村：利古里亚东海岸一段陡峭的砂岩-片岩崖岸，五个村子挤在少有的几处溪口小平地上，村后的陡坡被几百公里长的干砌石墙修成一级级葡萄梯田；1997年作为文化景观列入世界遗产，1999年设国家公园；石墙年久失修引发的滑坡是主要威胁（ISPRA / UNESCO）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -6133,6 +6251,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 欧洲 / 意大利 =====
   ITALIAN_ALPS, APENNINES, DOLOMITES, PO_VALLEY, PO_RIVER, TIBER_RIVER, SICILY, SARDINIA,
   GRAN_PARADISO, GRAN_SASSO, POLLINO, GENNARGENTU, LAKE_GARDA, LAKE_COMO, VENETIAN_LAGOON,
+  MOUNT_VESUVIUS, MOUNT_ETNA, CAMPI_FLEGREI, AEOLIAN_ISLANDS, STROMBOLI,
+  AMALFI_COAST, CAPRI, CINQUE_TERRE,
 ];
 
 /**
