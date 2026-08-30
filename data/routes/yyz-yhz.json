@@ -1,0 +1,18 @@
+{
+  "id": "yyz-yhz",
+  "name": "多伦多 — 哈利法克斯",
+  "nameEn": "Toronto — Halifax",
+  "description": "尼亚加拉断崖 · 圣劳伦斯低地 · 芬迪湾",
+  "descriptionEn": "Niagara Escarpment · St. Lawrence Lowlands · Bay of Fundy",
+  "depCountry": "canada",
+  "arrCountry": "canada",
+  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC612", "aircraft": "Airbus A320", "depIata": "YYZ", "arrIata": "YHZ", "durationMin": 140 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true },
+    { "kind": "terrain", "terrainId": "niagara-escarpment" },
+    { "kind": "terrain", "terrainId": "saint-lawrence-lowlands" },
+    { "kind": "terrain", "terrainId": "bay-of-fundy" },
+    { "kind": "city", "id": "yhz", "name": "哈利法克斯", "nameEn": "Halifax", "lat": 44.8808, "lon": -63.5086, "airport": true }
+  ]
+}

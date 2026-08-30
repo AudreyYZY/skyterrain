@@ -1166,4 +1166,319 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "December–March has the best weather and is a good time to see albatross chicks and penguins. To watch wildlife, always go with a licensed guide, keep your distance and do not use flash. The Otago Peninsula road is narrow and winding — drive slowly and watch for oncoming traffic. Inland and the passes have snow in winter — check road conditions.",
   },
+
+  "usa-overview": {
+    identity:
+      "The United States is a federal republic across central North America — 48 contiguous states plus Alaska and Hawaii, with a population of about 330 million. From east to west the land runs roughly: the Appalachian mountains, the interior Great Plains, the Rocky Mountains, the intermontane plateaus and basins, and the Pacific coast ranges. The climate spans subtropical to subarctic, rainforest to desert. English is used almost everywhere; Spanish is widespread in the Southwest.",
+    layout:
+      "It helps to think of the country in regions: the Northeast (the dense city belt from New York to Washington); the South (Florida and the Gulf coast, warm and humid); the Midwest (the farm and industrial belt around the Great Lakes and the plains, with Chicago as the hub); the Mountain West (the Rockies, Denver, Utah); the Southwest (arid, Las Vegas, the Grand Canyon); and the West Coast (California and the Pacific Northwest). Crossing the country by car takes several days; long trips are almost always flown.",
+    gettingAround:
+      "Cities are linked mainly by air, with a dense domestic network and many airports; intercity rail (Amtrak) is limited and slow. Big cities have a subway or light rail, but public transport overall is weaker than in East Asia or Europe, and most places need a rental car (drive on the right). Tipping is customary: 15–20% for table service, plus tips for taxis, bags and guides. Tap water is generally drinkable. Power is 120V with two flat pins.",
+    culture:
+      "There is no official national language; English is the de facto common tongue. Regions differ a lot — food, accent and pace of life vary north to south and east to west. Tipping is a real part of service-industry pay, and not tipping for table service is seen as rude. Mind personal space in public. Many museums and national parks need tickets or reservations booked online in advance.",
+    seeAndDo:
+      "Nature: the Grand Canyon, Yellowstone, Yosemite, Zion, Death Valley and other national parks; the high country of the Rockies and the Sierra Nevada; the Everglades in Florida. Cities: the museums and skyline of New York, the bay at San Francisco, the jazz and French Quarter of New Orleans, the entertainment of Las Vegas. Route 66 and the Pacific Coast Highway are classic road trips.",
+    whenAndTips:
+      "Spring and autumn (April–June, September–October) are the most comfortable in most regions; the South is hot and humid in summer with a hurricane season (roughly June–November), and the North and the mountains have hard, snowy winters. Most foreign visitors must apply online in advance for an electronic travel authorisation (ESTA) or a visa — this cannot be done on arrival. In peak season (school summer holidays) park entry, lodging and popular trail permits must be booked early.",
+  },
+
+  "new-york": {
+    identity:
+      "New York is the most populous city in the United States, with a metropolitan area of about 20 million, and one of the world's centres of finance, media and culture. The name comes from Yorkshire in England: in the 17th century the English took the colony (then New Amsterdam) from the Dutch and renamed it for the Duke of York. It is not the capital — that is Washington.",
+    layout:
+      "New York has five boroughs; the core is Manhattan, a long narrow rocky island between the Hudson and East rivers, with the financial district at its southern tip, Central Park and the skyscraper cluster in the middle, and an easy grid of numbered streets. Around it are Brooklyn, Queens, the Bronx and, across the water, Staten Island. The whole city sits at the northern end of the Atlantic coastal plain; its natural harbour is why it grew.",
+    gettingAround:
+      "Three airports: JFK, LaGuardia (LGA) and Newark (EWR, in New Jersey). From JFK the AirTrain connects to the subway. The subway runs 24 hours and is dense — tap a phone or bank card with OMNY; most of Manhattan is walkable. The climate is humid continental: summers are hot and muggy (often above 32°C in July–August), winters are cold with snow, and spring and autumn are short and pleasant.",
+    culture:
+      "English is universal, and this is one of the most linguistically diverse cities in the world. Life moves fast, and people walk fast; the subway and queues have unspoken rules. Tip 18–20% for table service, USD 1–2 a drink at a bar. Many museums open on Sundays and holidays, but check the day's hours. In any big city, watch your belongings and avoid empty stations late at night.",
+    seeAndDo:
+      "The Statue of Liberty and Ellis Island (by ferry); an observation deck at the Empire State Building, Rockefeller Center or the World Trade Center; Central Park; the Metropolitan Museum, MoMA and the American Museum of Natural History; Times Square and a Broadway show; the High Line and a walk over the Brooklyn Bridge; the 9/11 Memorial (a place to be respectful).",
+    whenAndTips:
+      "April–June and September–November have the best weather. High summer is muggy and winter is cold and snowy; from Christmas to New Year midtown is very crowded and hotels are expensive. Book tickets online in advance for the Statue of Liberty, the 9/11 Memorial and Broadway. The subway has occasional delays — leave margin.",
+  },
+
+  "washington-dc": {
+    identity:
+      "Washington is the capital of the United States, formally the District of Columbia (D.C.), which is not part of any state, with a population of about 700,000 and a metro area of about 6.3 million. The city is planned around the Capitol on a radial-plus-grid layout, with federal institutions, monuments and national museums gathered along an open lawn (the National Mall) running east–west. The city is named for the first president.",
+    layout:
+      "Washington is built beside the Potomac River on the Atlantic coastal plain, and is flat. The National Mall runs from the Capitol to the Lincoln Memorial, lined with the Smithsonian museums; the White House is just north of it. The city is divided into quadrants (NW/NE/SW/SE), with lettered and numbered streets that make it easy to navigate. Beyond are the Virginia and Maryland suburbs.",
+    gettingAround:
+      "Three airports: Reagan (DCA, closest, on the Metro), Dulles (IAD, on the Silver Line) and Baltimore (BWI). The Metro and buses use a SmarTrip card; the Mall is large and a long walk end to end, so consider a bikeshare. The climate is temperate: summers are hot and humid, winters are cold with occasional heavy snow, and there are cherry blossoms in spring and colour in autumn.",
+    culture:
+      "English is universal; this is a city of international institutions and embassies, with people from everywhere. Most Smithsonian museums are free but need a timed-entry ticket booked online. Metro escalators have a 'stand right, walk left' rule. Tip 18–20% for table service. Political events and marches are common — follow on-site directions if a route is closed.",
+    seeAndDo:
+      "The National Mall: the Capitol, the Washington Monument, the Lincoln Memorial, the WWII and Vietnam memorials (places to be respectful); the Smithsonian's National Air and Space Museum, Natural History Museum and National Museum of African American History and Culture; the White House (viewable only from outside — interior tours must be requested far ahead); Arlington National Cemetery; the Cherry Blossom Festival in March–April.",
+    whenAndTips:
+      "Late March–April (cherry blossom) and October–November (autumn colour) are the most beautiful and the most crowded; hotels are expensive during blossom season, so book early. High summer is muggy — take care in the heat; heavy snow can disrupt the Metro and attractions in winter. The Smithsonian museums are free, but the popular ones (Air and Space, African American History) need timed tickets booked ahead.",
+  },
+
+  chicago: {
+    identity:
+      "Chicago is the third-largest city in the United States, on the south-western shore of Lake Michigan, with a metro area of about 9.5 million. It is the Midwest's transport and financial hub, one of the birthplaces of the modern skyscraper (which took off in the rebuilding after the 1871 fire), and is known for blues, jazz and deep-dish pizza. The name comes from a local Indigenous word, roughly meaning 'wild garlic (place)'.",
+    layout:
+      "Chicago is built on the plain along Lake Michigan; the Chicago River runs through downtown (the Loop) and was engineered to flow inland, away from the lake. The lakefront is a continuous ribbon of parks and beaches, with the downtown towers right at the water's edge. The streets are a regular grid centred on the Loop. South along the lake is Indiana; west are the Great Plains.",
+    gettingAround:
+      "Two airports: O'Hare (ORD, on the Blue Line, about 45 minutes to downtown) and Midway (MDW, on the Orange Line). The 'L' elevated trains plus buses use a Ventra card; downtown is flat and good for walking and cycling (the lakefront path is long). The climate is humid continental with four clear seasons: warm summers with thunderstorms, hard winters with lake-effect snow, strong wind ('the Windy City'), and short spring and autumn.",
+    culture:
+      "English is universal; historically a city of many immigrant communities, with strongly ethnic neighbourhoods. Chicagoans identify strongly with local sport and architecture. Tip 18–20% for table service. In winter the indoor–outdoor temperature gap is large and pavements ice over — dress warm and watch your footing.",
+    seeAndDo:
+      "'Cloud Gate' (the Bean) in Millennium Park; an observation deck at Willis Tower or 360 Chicago; a Chicago Architecture Center river cruise (the classic way to see both banks); the Art Institute, the Field Museum and the Shedd Aquarium; Navy Pier; a ride along the lakefront path. Deep-dish pizza and an Italian beef sandwich are the local musts.",
+    whenAndTips:
+      "May–October has the best weather, with festivals and lakefront events in summer. Winter is cold and windy, often well below freezing from December to February — limit time outdoors. Book the architecture cruise and popular restaurants ahead in peak season. O'Hare is one of the busiest airports in the country and delays are common in bad weather — leave plenty of time for connections.",
+  },
+
+  "new-orleans": {
+    identity:
+      "New Orleans is on the lower Mississippi River near the Gulf of Mexico, with a city population of about 370,000. It was founded by the French in the early 18th century, then ruled by Spain, returned to France, and passed to the United States in 1803 with the Louisiana Purchase — so it blends French, Spanish, African and Caribbean architecture, food and music, and is the birthplace of jazz. The name comes from Orléans in France (la Nouvelle-Orléans); the name Louisiana comes from King Louis XIV.",
+    layout:
+      "New Orleans is built inside a large bend of the Mississippi (the 'Crescent City'), very low-lying and partly below sea level, protected by levees and pumps. The oldest part, the French Quarter, is by the river, with a grid of streets, iron balconies and courtyards; upriver are the mansions and streetcar lines of the Garden District; to the north is Lake Pontchartrain.",
+    gettingAround:
+      "Louis Armstrong Airport (MSY) is west of the city, with an airport bus and rideshare. The city has streetcars (the St Charles line is living history) and buses, using a Le Pass; the French Quarter is best on foot. The climate is humid subtropical: summers are very hot and muggy with an almost daily afternoon thunderstorm, June–November is hurricane season, and winters are mild.",
+    culture:
+      "English is universal, with traces of French and Creole culture (Mardi Gras, second-line parades, gumbo and jambalaya, beignets). Music is part of daily life, with live bands on the street and in bars. Tip 18–20% for table service, and something for street performers. Mardi Gras and the Jazz Fest draw huge crowds.",
+    seeAndDo:
+      "The French Quarter: Jackson Square, St Louis Cathedral, Royal Street and Bourbon Street (loud at night); the St Charles streetcar past the Garden District mansions; live jazz on Frenchmen Street; a paddle-steamer cruise on the Mississippi; the National WWII Museum (a place to be respectful); City Park and its sculpture garden. Out of town: plantation history and the swamps (a boat tour with a guide — watch for alligators).",
+    whenAndTips:
+      "February–May (including Mardi Gras and Jazz Fest) and October–December are comfortable and full of events — and the most crowded and expensive. Summer is muggy with daily rain — carry an umbrella. Watch forecasts in hurricane season (June–November). Late at night the Bourbon Street area is crowded and mixed — mind your belongings and stay with your group.",
+  },
+
+  miami: {
+    identity:
+      "Miami is at the south-eastern tip of the Florida peninsula, with a metro area of about 6.2 million. It is the United States' gateway to Latin America and the Caribbean; Spanish is nearly as common as English, and the Cuban, Haitian and Venezuelan communities are large. The city is known for its beaches, its Art Deco architecture, its nightlife and the edge of the Everglades. The name comes from a local Indigenous word.",
+    layout:
+      "The city of Miami is on the west shore of Biscayne Bay; across the bay is Miami Beach (a separate city on a barrier island), where South Beach and the Art Deco district are. Downtown and Brickell are the financial towers; Little Havana is west of downtown. The whole city is built on low, flat limestone at very low elevation, with the Everglades to the west.",
+    gettingAround:
+      "Miami International Airport (MIA) is west of the city, with the MIA Mover to the Metrorail. Public transport is limited (Metrorail, Metromover, buses), and most people rent a car or use rideshare. Buses and causeways link Miami Beach and downtown. The climate is tropical: warm all year, hot and humid from May to October with an almost daily thunderstorm and hurricane season; dry and pleasant from November to April, which is the high season.",
+    culture:
+      "English and Spanish are both used, with a strong Latin American feel (Cuban coffee, café con leche, pastelito). The pace is relaxed but nightlife runs late. Beaches and pools are the social centre. Restaurant bills often already include a service charge (especially near the beach) — check before adding more. Sun protection is needed year-round.",
+    seeAndDo:
+      "The Art Deco district of South Beach (the old buildings along Ocean Drive) and the beach; the Vizcaya Museum and Gardens; Calle Ocho in Little Havana (Cuban restaurants, cigars, the domino park); the Wynwood street-art district; a boat trip on Biscayne Bay. West, an hour away, is Everglades National Park (an airboat to see alligators — choose a licensed operator); south are the Florida Keys and Key West.",
+    whenAndTips:
+      "December–April has the best weather and is the high season (including spring break, when the beaches are packed). May–October is hot and rainy, and June–November is hurricane season — watch the forecast. Restaurant tips and service charges near the beach can stack — check the bill. Driving to the Everglades or the Keys is a fair distance — fill the tank and carry water.",
+  },
+
+  denver: {
+    identity:
+      "Denver is the capital of Colorado, on the eastern foot of the Rocky Mountains at the western edge of the Great Plains, at an elevation of almost exactly one mile — hence the 'Mile High City'. The metro area is about 3 million, and it is the commercial and transport hub of the Mountain West and the gateway to Rocky Mountain National Park and the ski resorts.",
+    layout:
+      "Denver is built on the plain; a few dozen kilometres west is the Rocky Mountain 'Front Range', and on a clear day you can see a whole wall of snowy peaks from the city. Downtown centres on Union Station and the 16th Street pedestrian strip; the tech parks are to the south; west, past Boulder, the mountains begin. The city is flat and gridded, with one older district set on the diagonal.",
+    gettingAround:
+      "Denver International Airport (DEN) is well east of the city, with the A Line commuter train (about 37 minutes to Union Station). The city has light rail and buses, and downtown is walkable; the mountains and ski resorts essentially need a rental car, and in winter mountain passes require chains or all-wheel drive. The climate is semi-arid and high: lots of sun, dry air, big day–night temperature swings; winters are snowy but not extreme, and summer afternoons often bring thunderstorms.",
+    culture:
+      "English is universal. Denverites take the outdoors seriously — hiking, cycling, skiing and running are a way of life. Because of the altitude, new arrivals may feel mild altitude effects (shortness of breath, headache) — drink plenty of water and go easy on alcohol for a day or two. Cannabis and alcohol are legal in Colorado with age and place limits. Tip 18–20% at restaurants.",
+    seeAndDo:
+      "Union Station and the LoDo district, and 16th Street; the Denver Art Museum and the Museum of Nature and Science; Red Rocks Amphitheatre (for a show, or just for the rocks); Boulder and Flatirons an hour west; Rocky Mountain National Park (Trail Ridge Road is open in summer, for alpine tundra); skiing at the resorts in winter.",
+    whenAndTips:
+      "September–October (autumn colour) and May–June are the most pleasant. Winter is ski season, and mountain roads close in blizzards — check conditions before setting out. The altitude and strong sun call for hydration and sunscreen; mountain temperatures are much lower than in the city and the weather changes fast, so carry warm and waterproof layers. Rocky Mountain National Park needs a timed-entry reservation in peak season.",
+  },
+
+  "las-vegas": {
+    identity:
+      "Las Vegas is in southern Nevada, in the Mojave Desert, in an arid basin ringed by mountains, with a metro area of about 2.3 million. The city itself is young and grew on entertainment, conventions and resorts; its best-known feature is the Strip, a stretch of large resort hotels and casinos. The name is Spanish for 'the meadows' — there were desert springs and grassland here.",
+    layout:
+      "Las Vegas Boulevard (the Strip) runs north–south, lined with themed resort hotels; the older downtown (Fremont Street) is further north and was the early casino core. The whole city sits in a desert basin ringed by bare mountains; about half an hour south-east are Lake Mead and the Hoover Dam, west is Red Rock Canyon, and east lies the way to the Grand Canyon.",
+    gettingAround:
+      "Harry Reid Airport (LAS) is right at the south end of the Strip, close to the hotels. The Strip has a monorail and buses, but hotels that look close are a long, hot walk apart. Seeing the surrounding nature (Red Rock, the Grand Canyon, Zion, Death Valley) essentially needs a rental car or a tour. The climate is desert: summers are extremely hot (often above 40°C) and very dry, winters are mild by day and cold at night, and it almost never rains.",
+    culture:
+      "English is universal, visitors come from all over, and the service industry is built around entertainment and spending. Gambling and drinking have an age limit (21); minors cannot enter casino areas. Dealers, servers and bellhops are all tipped. The city runs 24 hours. Midday in summer is not the time for long spells outdoors.",
+    seeAndDo:
+      "Free shows along the Strip (the fountains, the volcano, the water show) and the themed architecture; the Fremont Street light show downtown; the High Roller observation wheel. Nature: Red Rock Canyon (half an hour away), the Hoover Dam and Lake Mead, three to four hours east to the Grand Canyon's South or West Rim, north-east to Zion, north-west to Death Valley.",
+    whenAndTips:
+      "March–May and October–November are the most comfortable. In high summer the heat is severe — do outdoor activities early or late and drink plenty. Hotel rates rise sharply on weekends and during big conventions and holidays. Trips to the Grand Canyon or Death Valley are full-day outings — fill the tank, carry water, and expect no phone signal in the mountains and desert.",
+  },
+
+  "san-francisco": {
+    identity:
+      "San Francisco is in northern California, at the tip of a peninsula surrounded by water on three sides, with a city population of about 810,000 and a Bay Area metro of about 4.7 million. It is known for its steep hills, Victorian houses, the Golden Gate Bridge and its summer fog, and is a centre of the tech industry (Silicon Valley is at the southern end of the bay) and of diverse cultures. The name is Spanish for 'Saint Francis', from an 18th-century Spanish mission.",
+    layout:
+      "San Francisco is built on dozens of steep hills, with streets that run straight up and over them. Downtown and the Financial District are in the north-east, with Chinatown and North Beach beside them; Fisherman's Wharf and the Golden Gate Bridge are on the north shore; Golden Gate Park is a green band running west to the ocean. To the south the city joins the peninsula; across the bay to the east are Oakland and Berkeley, linked by the Bay Bridge and BART.",
+    gettingAround:
+      "San Francisco International Airport (SFO) is south of the city, with BART directly to downtown in about 30 minutes; Oakland Airport (OAK) also works. The city has Muni (metro, buses and cable cars) and BART, using a Clipper card; the hills make walking hard work. Downtown parking is expensive and scarce, so most people use transit or rideshare. The climate is Mediterranean but strongly moderated by the ocean: summers are cool and foggy (the city may be only in the teens Celsius in July–August), winters are mild and wet, and day–night and district-to-district temperature differences are large year-round.",
+    culture:
+      "English is universal; this is one of the most ethnically and culturally diverse cities in the country, and Chinatown is one of the oldest in North America. The pace is more relaxed than the East Coast. Tip 18–20% for table service; bills sometimes already add an 'SF employee health' surcharge. Parts of downtown (around the Tenderloin) have visible street and safety problems — avoid them at night. A windproof jacket is useful in any season.",
+    seeAndDo:
+      "The Golden Gate Bridge (walk or cycle across); Fisherman's Wharf and Pier 39 for the sea lions, and a boat to Alcatraz (book ahead); the cable cars and Lombard Street; Chinatown and North Beach; the California Academy of Sciences, the de Young Museum and the Japanese Tea Garden in Golden Gate Park; Twin Peaks or Dolores Park for city views. North across the bridge are the redwoods of Muir Woods and Sausalito.",
+    whenAndTips:
+      "September–October is the warmest and clearest time in the city (the local 'summer'). July–August often bring heavy fog and wind and feel cold — bring a jacket. Book the Golden Gate Bridge, Alcatraz and the cable cars ahead in peak season. Parking is expensive and car break-ins are common — leave nothing in the car.",
+  },
+
+  "los-angeles": {
+    identity:
+      "Los Angeles is the second-largest city in the United States, a wide basin in southern California hemmed in by mountains and the sea, with a metro area of about 13 million. It has no single centre; it is dozens of distinct districts and satellite cities strung together by a freeway network, and it is the centre of the film and television industry. The name is Spanish for 'the angels', a short form of the full name of the 18th-century Spanish settlement.",
+    layout:
+      "The Los Angeles basin is backed to the north and east by the San Gabriel and other mountains, snow-capped on a clear day; to the west are the Pacific and a string of beaches (Santa Monica, Venice, Malibu). Downtown is in the centre-east of the basin; Hollywood, Beverly Hills and West Hollywood are to the north-west; south are the port and Long Beach; east is Pasadena. The city is very spread out — an hour or two by car from one side to the other.",
+    gettingAround:
+      "Los Angeles International Airport (LAX) is on the coast to the south-west; Burbank (BUR) is closer to Hollywood. The city has a metro and light rail (currently being expanded) with limited coverage, and the vast majority of people drive (on the right), with heavy congestion at peak times. Use a TAP card for transit. The climate is Mediterranean: warm and dry year-round with lots of sun, heatwaves and a wildfire season in summer and autumn, occasional heavy rain in winter, and a big coast-to-inland temperature difference.",
+    culture:
+      "English and Spanish are both used; this is a city of immigrants, with distinct communities (Koreatown, Little Tokyo, Little Ethiopia and more). Life revolves around cars and the outdoors, and people arrange to meet in a particular district rather than 'downtown'. Tip 18–20% for table service. In wildfire season (roughly late summer into autumn) watch air-quality and evacuation information.",
+    seeAndDo:
+      "The Hollywood Walk of Fame, the Dolby Theatre and the Griffith Observatory (for the Hollywood Sign and the city at night); the Getty Center and the Getty Villa (free, book parking) and LACMA; the Santa Monica Pier and Venice Beach; Universal Studios; the Huntington Library and Gardens in Pasadena. Beyond: Joshua Tree, Santa Barbara, and San Diego to the south.",
+    whenAndTips:
+      "March–May and September–November are the most pleasant. Late summer into autumn is wildfire season — adjust plans to official information and watch air quality. Traffic is heavy — plan by district and avoid the morning and evening peaks. The coast is cool morning and evening while inland is hot by day — carry a jacket. Attractions are far apart — allow travel time.",
+  },
+
+  "canada-overview": {
+    identity:
+      "Canada is the world's second-largest country, spanning northern North America from the Atlantic to the Pacific and up to the Arctic Ocean, with a population of about 40 million — most of it in a narrow southern belt not far from the US border. The official languages are English and French (French mainly in Quebec). From east to west the land runs roughly: the old low mountains of the Atlantic coast, the St Lawrence valley, the Canadian Shield covering most of the country, the interior prairies, the Rockies and the western ranges, and the Coast Mountains on the Pacific; to the north are vast tundra and the Arctic islands.",
+    layout:
+      "It helps to divide Canada into regions: Atlantic Canada (Newfoundland, Nova Scotia and others — fishing and coast); Central Canada (Ontario and Quebec, the population and economic core, with Toronto, Montreal, Ottawa and Quebec City); the Prairie provinces (Manitoba, Saskatchewan, Alberta — wheat and oil, with Calgary, Edmonton and Winnipeg); the West Coast (British Columbia, Vancouver, between mountains and sea); and the thinly peopled northern territories. Distances between cities are huge, and crossing the country is almost always done by air.",
+    gettingAround:
+      "The domestic air network is extensive, with frequent service between major cities; VIA Rail runs an intercity train in the eastern corridor (Quebec City–Windsor), and other lines are sparse and slow. Big cities have a subway or light rail (Toronto, Montreal, Vancouver, Ottawa); public transport overall is a little better than in the US but driving still dominates (on the right). In winter roads ice over and are ploughed often; check conditions in the north and the mountains. Tipping is close to US practice: 15–20% for table service. Tap water is generally drinkable. Power is 120V with two flat pins.",
+    culture:
+      "English and French are the official languages, and federal institutions, packaging and road signs are usually bilingual; Quebec is French-first, with signage and service in French first. Canada identifies as a multicultural, immigrant society, with many ethnic communities in the big cities. Indigenous (First Nations, Inuit, Métis) place names and cultures are present everywhere, and many places open events with an acknowledgement of 'unceded Indigenous territory'. People are generally polite and orderly in queues.",
+    seeAndDo:
+      "Nature: Banff and Jasper national parks in the Rockies, the Icefields Parkway, Lake Louise; the Bay of Fundy tides, the Gaspé Peninsula and Gros Morne in the east; autumn maple colour (Quebec, Ontario); the northern lights. Cities: the CN Tower and diverse neighbourhoods of Toronto, the old town and French culture of Montreal, the walls of Quebec City, Stanley Park and the coastline of Vancouver. Winter brings skiing, ice sports and winter carnivals.",
+    whenAndTips:
+      "June–September is the travel high season, with the most comfortable weather and long daylight; late September to mid-October is the eastern maple-colour period. Winters are long and cold (often below −20°C inland) but are also the season for skiing and the northern lights — bring proper cold-weather gear. Citizens of most countries need an electronic travel authorisation (eTA) or a visa arranged online before travelling to Canada. The country is vast — don't over-pack the itinerary, and allow flying and connection time between cities.",
+  },
+
+  toronto: {
+    identity:
+      "Toronto is the most populous city in Canada, with a metro area of about 6.6 million, on the north-western shore of Lake Ontario, and the country's financial, media and immigration centre — about half the city's residents were born abroad, making it one of the most diverse cities in the world. It is not the capital (that is Ottawa), but it is the capital of the province of Ontario. The name comes from a Mohawk word meaning roughly 'where there are trees standing in the water', originally for a spot further north at Lake Simcoe.",
+    layout:
+      "Toronto is built on a plain sloping gently down to the north shore of Lake Ontario, with a regular street grid. Downtown is right on the lake, and the CN Tower and the financial-district towers define the skyline; Yonge Street runs north–south. Along the city's northern edge is a low wooded slope — a stretch of the Niagara Escarpment. An hour to the south-west along the lake are Niagara Falls.",
+    gettingAround:
+      "Pearson International Airport (YYZ) is north-west of the city, with the UP Express train about 25 minutes to Union Station downtown; Billy Bishop Airport (YTZ) is on the island, close to downtown. The city has a subway, streetcars and buses, using a Presto card; downtown is walkable. The climate is humid continental with four clear seasons: warm, sometimes muggy summers, cold snowy winters, wind off the lake, and short spring and autumn.",
+    culture:
+      "English is universal, with sizeable Chinatown, Little Italy, Little Portugal and Little India neighbourhoods. Torontonians identify strongly with local sport and with the CN Tower as one of the world's tallest structures. Tip 15–20% for table service. In winter pavements ice over — dress warm and watch your footing; summer brings many street festivals.",
+    seeAndDo:
+      "The CN Tower (observation deck / glass floor); the waterfront and the Toronto Islands (a ferry across for the skyline view); the Royal Ontario Museum and the Art Gallery of Ontario; St Lawrence Market; Kensington Market and Chinatown; the Hockey Hall of Fame; an hour out of town, Niagara Falls (the Canadian-side viewpoints and the Maid of the Mist boat).",
+    whenAndTips:
+      "May–October has the best weather, with many summer festivals. Winter is cold and windy off the lake, often well below freezing from December to February. The Niagara Falls day trip is well established but crowded in peak season — book the boat ahead. The UP Express from the airport is faster and cheaper than a taxi.",
+  },
+
+  ottawa: {
+    identity:
+      "Ottawa is the capital of Canada, in eastern Ontario on the south bank of the Ottawa River, facing the city of Gatineau in Quebec across the water, with a metro area of about 1.5 million. Britain made it the capital in the mid-19th century precisely because it sits on the boundary between English Ontario and French Quebec, is well back from the US border, and was easier to defend. The city and the river are named for the Odawa (Ottawa) Indigenous nation.",
+    layout:
+      "The core of Ottawa is Parliament Hill — a group of Gothic parliament buildings on a cliff above the Ottawa River. The Rideau Canal runs from beside Parliament Hill through the city toward the lake system to the south; it was a 19th-century military canal and is now used for boating in summer and, in winter, becomes one of the longest natural skating rinks in the world. Downtown is compact and walkable, and the ByWard Market is the old quarter.",
+    gettingAround:
+      "Macdonald–Cartier International Airport (YOW) is south of the city, with bus and light-rail connections. The city has the O-Train light rail and buses, using a Presto card; the core is walkable. The climate is humid continental, and this is one of the coldest capital cities in the world: winters are long and hard (the Rideau Canal freezes thick), summers are warm and sometimes muggy, with tulips in May and autumn colour in October.",
+    culture:
+      "English and French are both used, with bilingual federal institutions and signs; across the river in Gatineau, French dominates. It is a city of civil servants and museums, slower-paced than Toronto or Montreal. Most national museums need a timed-entry ticket booked online. Tip 15–20% for table service. Skating on the canal in winter is a local tradition, with stalls selling hot drinks and 'BeaverTails' pastries.",
+    seeAndDo:
+      "Parliament Hill (the summer Changing of the Guard, building tours); the National Gallery of Canada, the Canadian Museum of History (across the river in Gatineau, looking back at Parliament), the War Museum, the Museum of Nature; the Rideau Canal (boat in summer, skating in winter); the ByWard Market; the Tulip Festival in May (marking Canada's wartime shelter of the Dutch royal family).",
+    whenAndTips:
+      "May (tulips), June–September and late September to mid-October (autumn colour) are best. Winter is bitterly cold but distinctive — canal skating usually opens in January–February, depending on the ice notices. The national museums are numerous and often have free periods — planning your route can save a lot.",
+  },
+
+  montreal: {
+    identity:
+      "Montreal is the largest city in Quebec and the second-largest in Canada, with a metro area of about 4.3 million, and one of the largest French-speaking cities in North America (French is the dominant everyday language, and most people also speak English). The city is built on a large island in the St Lawrence River, centred on a small hill called Mont Réal ('Mount Royal') — Jacques Cartier climbed it in 1535 and named it, and the name later became Montréal.",
+    layout:
+      "The island of Montreal is wrapped by the St Lawrence, with Mount Royal in the middle and a park on top overlooking the whole city. Old Montreal (Vieux-Montréal) is by the river, with cobbled streets and 17th–19th-century stone houses and the Notre-Dame Basilica. Beneath the downtown towers is a large 'Underground City' pedestrian network that lets you walk a long way without going outside in winter. The streets are broadly a grid, with some French-style diagonals.",
+    gettingAround:
+      "Trudeau International Airport (YUL) is west of the city, with the 747 express bus straight to downtown (a light-rail line, the REM, is being added). The city has a four-line métro plus buses, using an OPUS card; downtown and the old town are walkable, and BIXI bikeshare is handy in summer. The climate is humid continental: warm, humid summers packed with festivals, and long, cold, snowy winters, with a muddy thaw in spring.",
+    culture:
+      "French is the dominant language, and shops and restaurants usually greet you in French (bonjour) — a word of French is welcome; most of the service industry also speaks English. Quebec has a distinct French–North American culture — music, comedy, circus (the home of Cirque du Soleil), café life. Tip 15–20% for table service (about 15% of the pre-tax total). In summer there is a free outdoor festival almost every week.",
+    seeAndDo:
+      "Old Montreal and the Old Port, the Notre-Dame Basilica; the summit of Mount Royal for the city view; the Jean-Talon and Atwater markets; the Museum of Fine Arts; the métro to the Olympic Park and Botanical Garden; poutine (fries with cheese curds and gravy), smoked-meat sandwiches, bagels. In summer the Jazz Festival and the fireworks festival; in winter a light festival.",
+    whenAndTips:
+      "June–September is the best season, with the most festivals; late September to mid-October for autumn colour. Winters are cold and snowy, but the Underground City and indoor attractions keep winter workable. A word of French smooths interactions. Around 1 July is the traditional Quebec moving day — transport and lodging are tight.",
+  },
+
+  "quebec-city": {
+    identity:
+      "Quebec City is the capital of the province of Quebec, set on a cliff (Cap Diamant) where the St Lawrence River suddenly narrows, with a metro area of about 850,000. The name comes from an Algonquin word, 'kébec', meaning exactly 'where the river narrows'. Its old town is the only walled city in North America with its walls intact; it was founded by the French in 1608 and is one of the earliest European settlements in North America.",
+    layout:
+      "Quebec City has an Upper Town and a Lower Town: the Upper Town is on top of the cliff, with the walls, the star-shaped Citadelle and the landmark Château Frontenac hotel; the Lower Town is by the river, the earliest settlement, with Place Royale and the stone lanes of Rue du Petit-Champlain. A funicular and steep stairs connect the two.",
+    gettingAround:
+      "Jean Lesage International Airport (YQB) is west of the city, with buses and taxis. The city is small and the old town is entirely walkable (hilly, with cobbles — wear comfortable shoes). The climate is humid continental, with cold, snowy winters (the season of the Winter Carnival and an ice hotel) and mild summers with long daylight.",
+    culture:
+      "French is the overwhelmingly dominant language, more so than in Montreal — a French greeting helps; the tourist areas mostly speak English. There is a strong French-Canadian tradition — traditional food (tourtière meat pie, maple), folk music, Catholic churches. Tip 15–20% for table service. The Winter Carnival (January–February) has ice sculptures, parades and the 'Bonhomme' snowman mascot.",
+    seeAndDo:
+      "Walk the walls and see the Citadelle changing of the guard; the Château Frontenac and Dufferin Terrace; Place Royale, Rue du Petit-Champlain and the murals in the Lower Town; the Museum of Civilisation; the ferry to Lévis for the view back at the old town; Montmorency Falls (higher than Niagara); in autumn, Île d'Orléans for orchards and sugar shacks.",
+    whenAndTips:
+      "June–October has pleasant weather, with the best maple colour late September to mid-October. Winter is bitterly cold but full of atmosphere (the Carnival, the ice hotel). The old town is steep and cobbled and very slippery in winter — wear grippy shoes. In peak periods (summer, leaf season, Carnival) lodging is tight — book early.",
+  },
+
+  halifax: {
+    identity:
+      "Halifax is the capital of Nova Scotia and the largest city in Atlantic Canada, with a metro area of about 500,000, a natural-harbour city that was historically a major British naval base in North America. The name comes from an 18th-century British politician, the Earl of Halifax (there is also a town called Halifax in Yorkshire, England).",
+    layout:
+      "Halifax is built on a hillside on the west side of a long, deep harbour, with the city of Dartmouth on the far side, linked by ferries and bridges. Downtown is right on the water, and on the hilltop is the star-shaped Citadel fort overlooking the whole harbour. A waterfront boardwalk runs from the casino to the pier markets.",
+    gettingAround:
+      "Stanfield International Airport (YHZ) is well out of town (about 35 km), with an airport bus. City buses and the harbour ferry (one of the oldest ferry routes in North America) use one fare. Downtown is compact and walkable, but steep. The climate is maritime and milder than inland: cool, foggy summers, autumn storms from the remains of hurricanes, and damp winters with a rain–snow mix.",
+    culture:
+      "English is universal. This is a seafaring and musical city, with Celtic-style live folk music in the pubs. Seafood is a staple (lobster rolls, mussels, Atlantic salmon). Tip 15–20% for table service. The city has deep ties to two disasters: many victims of the 1912 Titanic are buried here; and a 1917 munitions-ship explosion in the harbour was one of the largest human-made explosions before the nuclear age, with a dedicated exhibit at the maritime museum (a sombre subject).",
+    seeAndDo:
+      "The Citadel fort (noon gun); the Maritime Museum of the Atlantic (Titanic and the 1917 explosion); the waterfront boardwalk and pier markets; the Public Gardens; the ferry to Dartmouth and back; south along the coast to Peggys Cove for the lighthouse and granite shore; the Annapolis Valley for vineyards.",
+    whenAndTips:
+      "June–October is best, with seafood and music festivals in September. Watch the forecast for hurricane remnants in September–October (they can cause flight delays). The airport is far from town — plan the transfer. Driving the coast for lighthouses is a classic route — the rocky shore is slippery, so keep away from the surf zone.",
+  },
+
+  "st-johns": {
+    identity:
+      "St. John's is the capital of Newfoundland and Labrador, at the far eastern tip of the island of Newfoundland, with a metro area of a bit over 200,000 — the easternmost city in North America, and one of the earliest European settlements on the continent. The name is traditionally said to come from the feast of St John the Baptist (24 June 1497, the date John Cabot is traditionally said to have arrived).",
+    layout:
+      "St. John's hugs a nearly landlocked harbour with a single narrow channel (The Narrows) out to the Atlantic, cliffs on either side, and Signal Hill on the northern headland. Downtown houses climb steep slopes and are painted bright candy colours ('Jellybean Row'). Beyond the city, open rocky barrens and coast begin quickly.",
+    gettingAround:
+      "St. John's International Airport (YYT) is very close to town (about 10 minutes). The city has buses, but it is steep and attractions are scattered — a rental car is easiest, and is really needed for the coast and lighthouses. The climate is maritime — foggy, windy and very changeable, with cool summers (rarely above 20°C) and damp winters with rain, snow and freezing rain. This is one of the foggiest, windiest and wettest cities in Canada.",
+    culture:
+      "English is universal, with a distinctive Newfoundland accent and vocabulary (influenced by Ireland and the west of England). The city is known for hospitality, folk music and pub culture, and George Street claims one of the highest densities of bars anywhere. Seafood and traditional food (cod, Jiggs' dinner) are staples. Visitors sometimes take part in a half-joking 'screech-in' welcome ceremony (kiss a cod, take a shot of rum). Tip 15–20% for table service.",
+    seeAndDo:
+      "Signal Hill (where Marconi received the first transatlantic radio signal) and Cape Spear (the easternmost point of North America, for whales and icebergs); the candy-coloured houses and Water Street downtown; The Rooms (the provincial museum); hiking the East Coast Trail; May–June for drifting icebergs, June–July for humpback whales and one of the world's largest puffin colonies.",
+    whenAndTips:
+      "June–September is best: May–June is iceberg season on 'Iceberg Alley', June–August for whales and seabirds. The weather changes fast and it is often foggy and windy — carry a windproof, waterproof jacket and keep the itinerary flexible (flights are often fog-delayed). At the coastal cliffs stay well back from the edge — the wind is strong.",
+  },
+
+  winnipeg: {
+    identity:
+      "Winnipeg is the capital of Manitoba, on the eastern edge of the Canadian prairies at the meeting of the Red and Assiniboine rivers, with a metro area of about 850,000. This has long been a meeting point for Indigenous peoples and the fur trade, and became the 'gateway to the West' with the railway in the late 19th century. The name comes from the Cree 'wīnipēk', meaning 'muddy water', for Lake Winnipeg to the north.",
+    layout:
+      "Winnipeg is built on an extremely flat lake plain (the bed of glacial Lake Agassiz), with no hills at all. The river junction, The Forks, is the historic and present-day centre, with a market and paths. The streets are a large grid, and downtown has one of the widest intersections in Canada (Portage and Main).",
+    gettingAround:
+      "Richardson International Airport (YWG) is very close to downtown (about 10 minutes). The city relies on buses, is spread out, and most people drive. The climate is a classic continental prairie one with a huge annual range: warm summers with thunderstorms and mosquitoes, and extreme cold and wind in winter (a January wind-chill often below −30°C), with plenty of sunshine.",
+    culture:
+      "English is universal, with large Ukrainian, Filipino and Indigenous communities — one of the higher urban Indigenous population shares among Canada's big cities. Locals are proud of their cultural institutions (the Royal Winnipeg Ballet, the human-rights museum). Tip 15–20% for table service. Winter is extremely cold, with a big indoor–outdoor gap — bring full cold-weather gear.",
+    seeAndDo:
+      "The Canadian Museum for Human Rights (a striking landmark building); The Forks market and riverside paths (the river becomes a long skating trail in winter); the Manitoba Museum; the French quarter of St Boniface and its cathedral ruins; Assiniboine Park and Zoo (with a polar-bear exhibit); the beaches on Lake Winnipeg in summer, and the northern lights in winter.",
+    whenAndTips:
+      "June–September is the most comfortable (and the festival season). Winter is severe — if you come in winter, prepare for −30°C and exposed skin can get frostbite within minutes. Summer evenings bring mosquitoes — take repellent. Attractions are scattered — rent a car or plan the buses.",
+  },
+
+  calgary: {
+    identity:
+      "Calgary is the largest city in Alberta, on the eastern foot of the Rockies where the prairies meet the mountains, with a metro area of about 1.6 million. It is Canada's oil-and-gas centre and the gateway to Banff, the Rockies and cowboy culture. The name comes from Calgary on the Isle of Mull in Scotland, given by an early North-West Mounted Police commissioner.",
+    layout:
+      "Calgary is built on the prairie at the junction of two rivers (the Bow and the Elbow), at about 1,045 m, with the jagged Rockies on the western skyline. Downtown has a dense cluster of towers and one of Canada's most complete indoor skywalk systems (the +15 network) for the cold winters. The city sprawls in all directions and depends heavily on its ring road.",
+    gettingAround:
+      "Calgary International Airport (YYC) is north-east of the city, with buses and an airport coach to downtown and Banff. The city has the CTrain light rail (free in the downtown section) and buses, using a Connect card; outside downtown you basically need to drive. The climate is semi-arid and high: lots of sun, dry air, big day–night swings, and in winter the 'chinook' — a warm wind off the Rockies that can raise the temperature 15–20°C in a day.",
+    culture:
+      "English is universal. Calgary is proud of its cowboy culture; the Calgary Stampede each July is one of North America's largest rodeos and fairs, and the whole city dresses in western wear. The city is young, with a strong outdoor culture. Tip 15–20% for table service. Chinooks come and go fast in winter — dress in layers you can add or shed.",
+    seeAndDo:
+      "The Calgary Tower observation deck; the Glenbow Museum and Studio Bell (the National Music Centre); Prince's Island Park and the Bow River paths; Heritage Park historical village; the Stampede in July. Most people use Calgary as a base, driving 1.5 hours west into Banff National Park, Lake Louise and Canmore.",
+    whenAndTips:
+      "June–September is best; during the Stampede in July the whole city is booked out — reserve early. Driving into the mountains in winter needs winter tyres and a check of the pass conditions. The altitude and strong sun call for hydration and sunscreen. Banff is a full-day trip, and the national park needs a park pass.",
+  },
+
+  edmonton: {
+    identity:
+      "Edmonton is the capital of Alberta, in the centre of the province on both banks of the North Saskatchewan River valley, with a metro area of about 1.5 million — one of the northernmost large cities in Canada, and the supply base for the northern oil-sands region and the territories. The name comes from Edmonton, a district of London, England, via a Hudson's Bay Company official's home town.",
+    layout:
+      "Edmonton straddles the North Saskatchewan River, whose banks hold one of the largest connected urban park systems in North America (the 'river valley'). Downtown is on the plain on the north bank; south across the river are the historic Old Strathcona district and the university. The city is flat, gridded and very spread out.",
+    gettingAround:
+      "Edmonton International Airport (YEG) is well south of the city, with an airport bus. The city has LRT and buses, using an Arc card; overall it is very car-dependent. The climate is continental, with long, hard winters (colder than Calgary, less affected by chinooks) and warm summers with very long daylight (it gets dark late in June), good for the outdoors.",
+    culture:
+      "English is universal. Edmonton calls itself the 'Festival City', with a festival almost every week in summer (a folk festival, a Fringe theatre festival that is one of the largest in North America). It is also known for hockey and for big shopping malls. Tip 15–20% for table service. Winter is extremely cold — dress warm.",
+    seeAndDo:
+      "West Edmonton Mall (once the world's largest, with a water park and an indoor roller coaster); the Alberta Legislature and the river-valley paths and bridges; the Royal Alberta Museum; Elk Island National Park (for bison, very close to the city); summer festivals, and the northern lights in winter. Many people use Edmonton as a starting point for the Rockies to the south or nature areas beyond Calgary.",
+    whenAndTips:
+      "June–August is the most comfortable, with very long daylight and dense festivals. Winter is very cold — prepare for below −25°C. The city is spread out with limited transit — a rental car is easier. For the Rockies, people usually go via Calgary or drive directly, a fair distance.",
+  },
+
+  vancouver: {
+    identity:
+      "Vancouver is the largest city in British Columbia, in the south-western corner of Canada between a river delta and an ocean inlet, with a metro area of about 2.7 million — backed by the Coast Mountains and facing the sea, and known for its mountains-meet-ocean setting and its mild, rainy climate. The name comes from the 18th-century British naval officer George Vancouver (there is also a city called Vancouver in Washington State, USA).",
+    layout:
+      "The city of Vancouver is mostly on a peninsula: downtown and the towers are at the eastern end, Stanley Park takes up a large tract of original forest at the western tip, and False Creek separates downtown from the south side. South of the city is the flat farmland of the Fraser River delta and the airport; north across the inlet are North and West Vancouver and the steep Coast Mountains (with ski areas).",
+    gettingAround:
+      "Vancouver International Airport (YVR) is on an island in the delta, with the Canada Line light rail about 25 minutes to downtown. The city has the driverless SkyTrain, buses and a SeaBus, using a Compass card; downtown and Stanley Park are good for walking and cycling. The climate is temperate maritime: mild, rainy winters (rarely snow in the city, snow in the mountains), and dry, warm summers, never extreme.",
+    culture:
+      "English is universal, and this is one of the most heavily Asian-Canadian big cities in the country, with large Cantonese-, Mandarin- and Punjabi-speaking communities and extremely diverse food. Life revolves around the outdoors — hiking, skiing, kayaking, running. The city is on the traditional territory of the Musqueam, Squamish and Tsleil-Waututh nations. Tip 15–20% for table service. It rains a lot — a waterproof jacket is essential.",
+    seeAndDo:
+      "Stanley Park (the seawall, totem poles, old-growth forest); Granville Island market; the steam clock in Gastown; the Capilano Suspension Bridge; the gondola up Grouse Mountain for the city view; cycling the seawall around False Creek; an hour north to Whistler (the Winter Olympics venue, a year-round resort), or south to Richmond for Asian food.",
+    whenAndTips:
+      "June–September is best — dry and mild; the rest of the year is wet, with snow for skiing in the mountains. In summer there is occasional smoke haze from interior wildfires — watch air quality. Housing and prices are high. The Sea-to-Sky Highway to Whistler is spectacular but winding, and needs winter tyres in winter.",
+  },
 };

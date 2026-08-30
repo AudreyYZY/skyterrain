@@ -1,0 +1,17 @@
+{
+  "id": "mia-jfk",
+  "name": "迈阿密 — 纽约",
+  "nameEn": "Miami — New York",
+  "description": "佛罗里达半岛 · 大西洋沿岸平原",
+  "descriptionEn": "Florida Peninsula · Atlantic Coastal Plain",
+  "depCountry": "usa",
+  "arrCountry": "usa",
+  "flight": { "airline": "捷蓝航空", "airlineEn": "JetBlue", "flightNo": "B61160", "aircraft": "Airbus A321", "depIata": "MIA", "arrIata": "JFK", "durationMin": 180 },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "mia", "name": "迈阿密", "nameEn": "Miami", "lat": 25.7959, "lon": -80.2870, "airport": true },
+    { "kind": "terrain", "terrainId": "florida-peninsula" },
+    { "kind": "terrain", "terrainId": "atlantic-coastal-plain" },
+    { "kind": "city", "id": "jfk", "name": "纽约", "nameEn": "New York", "lat": 40.6413, "lon": -73.7781, "airport": true }
+  ]
+}

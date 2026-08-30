@@ -1,0 +1,20 @@
+{
+  "id": "jfk-lax",
+  "name": "纽约 — 洛杉矶",
+  "nameEn": "New York — Los Angeles",
+  "description": "阿巴拉契亚山脉 · 大平原 · 落基山脉 · 科罗拉多高原 · 莫哈韦沙漠",
+  "descriptionEn": "Appalachians · Great Plains · Rocky Mountains · Colorado Plateau · Mojave Desert",
+  "depCountry": "usa",
+  "arrCountry": "usa",
+  "flight": { "airline": "美国航空", "airlineEn": "American Airlines", "flightNo": "AA2", "aircraft": "Boeing 787-9", "depIata": "JFK", "arrIata": "LAX", "durationMin": 335 },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "jfk", "name": "纽约", "nameEn": "New York", "lat": 40.6413, "lon": -73.7781, "airport": true },
+    { "kind": "terrain", "terrainId": "appalachian-mountains" },
+    { "kind": "terrain", "terrainId": "great-plains-us" },
+    { "kind": "terrain", "terrainId": "rocky-mountains" },
+    { "kind": "terrain", "terrainId": "colorado-plateau" },
+    { "kind": "terrain", "terrainId": "mojave-desert" },
+    { "kind": "city", "id": "lax", "name": "洛杉矶", "nameEn": "Los Angeles", "lat": 33.9416, "lon": -118.4085, "airport": true }
+  ]
+}
