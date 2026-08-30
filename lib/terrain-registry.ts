@@ -5769,6 +5769,140 @@ const CIRQUE_DE_GAVARNIE: TerrainEntry = {
 };
 
 // ============================================================
+// 意大利（regionId: "europe"，country: "italy"）
+// 坐标据 ISPRA（意大利环境保护与研究院·地质调查）/ INGV（国家地球物理与火山学研究所）/
+// 意大利国家公园 / UNESCO；只做本土与西西里、撒丁；跨境山脉（阿尔卑斯）按中性事实表述
+// ============================================================
+
+const ITALIAN_ALPS: TerrainEntry = {
+  id: "italian-alps",
+  nameZh: "意大利阿尔卑斯山脉",
+  nameEn: "Italian Alps / Alpi italiane",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "大帕拉迪索峰（Gran Paradiso，4061m，完全在意大利境内的最高峰）", lon: 7.2686, lat: 45.5167, elevation: 4061, kind: "peak" },
+  bbox: [6.55, 44.05, 13.75, 47.10],
+  axis: [[6.9, 44.6], [13.4, 46.6]],
+  viewFrom: 180,
+  viewScale: 2.4,
+  label: { lon: 9.5, lat: 46.2, rotation: -20 },
+  pois: [
+    { name: "勃朗峰（Monte Bianco / Mont Blanc）", lon: 6.865, lat: 45.833, note: "在意大利与法国交界一带" },
+    { name: "马特洪峰（Cervino / Matterhorn）", lon: 7.658, lat: 45.976, note: "在意大利与瑞士交界一带" },
+    { name: "罗莎峰（Monte Rosa）", lon: 7.867, lat: 45.937, note: "在意大利与瑞士交界一带" },
+  ],
+  source: "意大利阿尔卑斯：阿尔卑斯山脉沿意大利北界呈弧形的一段，构成波河平原和北方各国之间的屏障；勃朗峰、马特洪峰、罗莎峰都在意大利与法国 / 瑞士交界一带，完全落在意大利境内的最高峰是大帕拉迪索4061米（ISPRA）",
+};
+
+const APENNINES: TerrainEntry = {
+  id: "apennines",
+  nameZh: "亚平宁山脉",
+  nameEn: "Apennines / Appennini",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "大萨索山·大角峰（Corno Grande，2912m，亚平宁最高峰）", lon: 13.564, lat: 42.469, elevation: 2912, kind: "peak" },
+  bbox: [7.5, 38.0, 16.6, 44.5],
+  axis: [[8.0, 44.3], [16.2, 38.2]],
+  viewScale: 2.6,
+  label: { lon: 13.0, lat: 42.0, rotation: -40 },
+  source: "亚平宁山脉：纵贯意大利半岛约1200km 的“脊梁”，是亚得里亚板块与欧洲板块汇聚形成的年轻褶皱-逆冲山脉，至今地震频繁、滑坡多；最高峰大角峰2912米，山上的卡尔代罗内冰川曾是欧洲纬度最南的冰川、现已所剩无几（ISPRA / INGV）",
+};
+
+const DOLOMITES: TerrainEntry = {
+  id: "dolomites",
+  nameZh: "多洛米蒂山",
+  nameEn: "Dolomites / Dolomiti",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "拉瓦雷多三峰（Tre Cime di Lavaredo）", lon: 12.305, lat: 46.618, elevation: 2999, kind: "peak" },
+  bbox: [11.35, 46.00, 12.65, 46.85],
+  axis: [[11.5, 46.15], [12.5, 46.70]],
+  viewScale: 1.7,
+  label: { lon: 11.90, lat: 46.45, rotation: -18 },
+  pois: [
+    { name: "马莫拉达峰（Marmolada，3343m）与其冰川", lon: 11.851, lat: 46.434, note: "多洛米蒂最高峰、也是这片山里唯一像样的冰川，近年退缩极快" },
+  ],
+  source: "多洛米蒂山：意大利东北的一片浅色碳酸盐岩山峰，岩石是约2.5亿年前特提斯海里的碳酸盐台地和珊瑚-藻礁，后来白云石化、又被阿尔卑斯造山抬升、断块化；垂直的岩壁、尖塔和台地是这片山的标志；2009年列入世界遗产（UNESCO / ISPRA）",
+};
+
+const PO_VALLEY: TerrainEntry = {
+  id: "po-valley",
+  nameZh: "波河平原",
+  nameEn: "Po Valley / Pianura Padana",
+  category: "plain",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "波河平原中部（曼托瓦 / 克雷莫纳一带）", lon: 10.30, lat: 45.10, elevation: 35, kind: "escarpment" },
+  bbox: [7.0, 44.4, 12.6, 45.9],
+  viewScale: 2.4,
+  label: { lon: 10.0, lat: 45.1, rotation: 0 },
+  source: "波河平原（Pianura Padana）：意大利最大的低地，东西向约650km、约4.6万平方公里，从西阿尔卑斯一直铺到亚得里亚海；本质是阿尔卑斯和亚平宁之间一个持续下沉的前陆盆地，被两侧山脉的碎屑和波河水系的冲积物填满；地势极平、常年多雾，是意大利的农业和工业核心（ISPRA）",
+};
+
+const PO_RIVER: TerrainEntry = {
+  id: "po-river",
+  nameZh: "波河",
+  nameEn: "Po",
+  category: "river",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "波河中游（皮亚琴察 / 克雷莫纳一带的堤防河段）", lon: 9.90, lat: 45.05, elevation: 40, kind: "meander" },
+  bbox: [6.9, 44.6, 12.6, 45.6],
+  axis: [[7.05, 44.70], [12.50, 44.95]],
+  viewScale: 2.2,
+  label: { lon: 9.8, lat: 45.0, rotation: -4 },
+  source: "波河：意大利最长的河（约652km），源出西阿尔卑斯的蒙维索山，横穿波河平原、接纳阿尔卑斯和亚平宁下来的大量支流，在亚得里亚海堆出一个大三角洲；下游全程束在人工堤防之间，河床因泥沙淤积高出两岸农田（“悬河”），是意大利防洪的重点（ISPRA / AIPo）",
+};
+
+const TIBER_RIVER: TerrainEntry = {
+  id: "tiber-river",
+  nameZh: "台伯河",
+  nameEn: "Tiber / Tevere",
+  category: "river",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "台伯河·罗马市区曲流段", lon: 12.472, lat: 41.900, elevation: 15, kind: "meander" },
+  bbox: [11.65, 41.65, 12.60, 43.95],
+  axis: [[12.10, 43.85], [12.30, 41.75]],
+  viewScale: 2.0,
+  label: { lon: 12.15, lat: 42.6, rotation: -78 },
+  source: "台伯河（Tevere）：意大利第三长的河（约406km），源出亚平宁的富马约洛山，向南穿翁布里亚和拉齐奥、经罗马，在奥斯蒂亚附近注入第勒尼安海；历史上是罗马城的生命线和防线，古代常泛滥，19世纪末在市区两岸筑起高堤（Britannica）",
+};
+
+const SICILY: TerrainEntry = {
+  id: "sicily",
+  nameZh: "西西里岛",
+  nameEn: "Sicily / Sicilia",
+  category: "island",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "埃特纳火山（Etna，约3350m）", lon: 14.993, lat: 37.751, elevation: 3350, kind: "peak" },
+  bbox: [12.35, 36.60, 15.70, 38.35],
+  axis: [[12.5, 37.9], [15.5, 37.3]],
+  viewScale: 1.6,
+  label: { lon: 14.0, lat: 37.5, rotation: -12 },
+  source: "西西里岛：地中海最大的岛，形状近三角形；北部是亚平宁的延续（马多尼耶、内布罗迪山），中南部是被褶皱抬升的沉积岩丘陵和硫、盐矿区，东岸立着埃特纳——欧洲最高、活动最频繁的活火山之一（ISPRA / INGV）",
+};
+
+const SARDINIA: TerrainEntry = {
+  id: "sardinia",
+  nameZh: "撒丁岛",
+  nameEn: "Sardinia / Sardegna",
+  category: "island",
+  regionId: "europe",
+  country: "italy",
+  landmark: { name: "真纳尔真图山（Gennargentu，最高点拉马莫拉峰1834m）", lon: 9.310, lat: 40.000, elevation: 1834, kind: "peak" },
+  bbox: [8.10, 38.85, 9.90, 41.30],
+  axis: [[8.9, 39.1], [9.4, 41.1]],
+  viewScale: 1.6,
+  label: { lon: 8.9, lat: 40.1, rotation: -75 },
+  source: "撒丁岛：地中海第二大岛，是一块古老的地块——主体是海西造山的花岗岩和更老的古生代基岩，只在东部有石灰岩高地（苏普拉蒙泰）；它和科西嘉曾是同一块“撒丁-科西嘉”微陆块，在地中海张开时被转动、分开；地震和火山活动都很弱（ISPRA）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -5892,6 +6026,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   CHAINE_DES_PUYS, CANTAL_VOLCANO, MONTS_DORE, GRANDS_CAUSSES, VERCORS, CEVENNES, VERDON_GORGE,
   ARDECHE_GORGE, LANDES_DE_GASCOGNE, CALANQUES, DUNE_DU_PILAT, ETRETAT,
   MONT_SAINT_MICHEL_BAY, CIRQUE_DE_GAVARNIE,
+  // ===== 欧洲 / 意大利 =====
+  ITALIAN_ALPS, APENNINES, DOLOMITES, PO_VALLEY, PO_RIVER, TIBER_RIVER, SICILY, SARDINIA,
 ];
 
 /**

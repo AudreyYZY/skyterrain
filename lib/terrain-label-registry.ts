@@ -256,6 +256,16 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   "dune-du-pilat": "poi",
   etretat: "poi",
   "cirque-de-gavarnie": "poi",
+
+  // 意大利
+  "italian-alps": "national",
+  apennines: "national",
+  dolomites: "national",
+  "po-valley": "national",
+  "po-river": "national",
+  "tiber-river": "national",
+  sicily: "national",
+  sardinia: "national",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {
