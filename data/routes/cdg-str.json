@@ -1,0 +1,17 @@
+{
+  "id": "cdg-str",
+  "name": "巴黎 — 斯特拉斯堡",
+  "nameEn": "Paris — Strasbourg",
+  "description": "巴黎盆地 · 孚日山脉",
+  "descriptionEn": "Paris Basin · Vosges",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7182", "aircraft": "Airbus A220-300", "depIata": "CDG", "arrIata": "SXB", "durationMin": 55 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
+    { "kind": "terrain", "terrainId": "paris-basin" },
+    { "kind": "terrain", "terrainId": "vosges" },
+    { "kind": "city", "id": "sxb", "name": "斯特拉斯堡", "nameEn": "Strasbourg", "lat": 48.5383, "lon": 7.6282, "airport": true }
+  ]
+}

@@ -106,6 +106,16 @@ import trdBoo from "./trd-boo.json" with { type: "json" };
 import tosAlf from "./tos-alf.json" with { type: "json" };
 import bgoTrd from "./bgo-trd.json" with { type: "json" };
 import svgBgo from "./svg-bgo.json" with { type: "json" };
+// 法国国内
+import cdgNce from "./cdg-nce.json" with { type: "json" };
+import cdgMrs from "./cdg-mrs.json" with { type: "json" };
+import cdgTls from "./cdg-tls.json" with { type: "json" };
+import cdgBod from "./cdg-bod.json" with { type: "json" };
+import cdgStr from "./cdg-str.json" with { type: "json" };
+import cdgNte from "./cdg-nte.json" with { type: "json" };
+import lysMrs from "./lys-mrs.json" with { type: "json" };
+import mrsAja from "./mrs-aja.json" with { type: "json" };
+import nceAja from "./nce-aja.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -193,4 +203,13 @@ export const ALL_ROUTES: FlightRoute[] = [
   tosAlf,
   bgoTrd,
   svgBgo,
+  cdgNce,
+  cdgMrs,
+  cdgTls,
+  cdgBod,
+  cdgStr,
+  cdgNte,
+  lysMrs,
+  mrsAja,
+  nceAja,
 ] as unknown as FlightRoute[];

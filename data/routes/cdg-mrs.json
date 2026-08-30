@@ -1,0 +1,18 @@
+{
+  "id": "cdg-mrs",
+  "name": "巴黎 — 马赛",
+  "nameEn": "Paris — Marseille",
+  "description": "巴黎盆地 · 中央高原 · 罗讷河",
+  "descriptionEn": "Paris Basin · Massif Central · Rhône",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7684", "aircraft": "Airbus A319", "depIata": "CDG", "arrIata": "MRS", "durationMin": 80 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
+    { "kind": "terrain", "terrainId": "paris-basin" },
+    { "kind": "terrain", "terrainId": "massif-central" },
+    { "kind": "terrain", "terrainId": "rhone-river" },
+    { "kind": "city", "id": "mrs", "name": "马赛", "nameEn": "Marseille", "lat": 43.4393, "lon": 5.2214, "airport": true }
+  ]
+}

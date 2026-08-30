@@ -111,6 +111,15 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "no-central": { zh: "中部（特伦德拉格）", en: "Trøndelag", order: 93 },
   "no-northern": { zh: "北部", en: "Northern Norway", order: 94 },
   "no-arctic": { zh: "北极挪威", en: "Arctic Norway", order: 95 },
+  // 法国（巴黎大区→北部→阿尔萨斯→罗讷-阿尔卑斯→普罗旺斯→西南→西部→科西嘉）
+  "fr-paris-region": { zh: "巴黎大区", en: "Paris Region", order: 100 },
+  "fr-north": { zh: "北部", en: "Northern France", order: 101 },
+  "fr-alsace": { zh: "阿尔萨斯", en: "Alsace", order: 102 },
+  "fr-rhone-alpes": { zh: "罗讷-阿尔卑斯", en: "Rhône-Alpes", order: 103 },
+  "fr-provence": { zh: "普罗旺斯", en: "Provence", order: 104 },
+  "fr-southwest": { zh: "西南部", en: "Southwest France", order: 105 },
+  "fr-west": { zh: "西部", en: "Western France", order: 106 },
+  "fr-corsica": { zh: "科西嘉", en: "Corsica", order: 107 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -136,6 +145,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "iceland", nameZh: "冰岛", nameEn: "Iceland" },
   { country: "switzerland", nameZh: "瑞士", nameEn: "Switzerland" },
   { country: "norway", nameZh: "挪威", nameEn: "Norway" },
+  { country: "france", nameZh: "法国", nameEn: "France" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -887,6 +897,74 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "ALF", nameZh: "阿尔塔机场", nameEn: "Alta Airport", lon: 23.3717, lat: 69.9761 },
     source: "阿尔塔 69.9689,23.2716；ALF 机场：公开资料",
   },
+
+  // ── 法国 ──
+  {
+    id: "paris", nameZh: "巴黎", nameEn: "Paris", country: "france", tier: "capital", zone: "fr-paris-region",
+    lon: 2.3522, lat: 48.8566,
+    airport: { iata: "CDG", nameZh: "戴高乐机场", nameEn: "Charles de Gaulle Airport", lon: 2.5479, lat: 49.0097 },
+    source: "巴黎市中心 48.8566,2.3522；CDG 机场：公开资料",
+  },
+  {
+    id: "lille", nameZh: "里尔", nameEn: "Lille", country: "france", tier: "notable", zone: "fr-north",
+    lon: 3.0573, lat: 50.6292,
+    airport: { iata: "LIL", nameZh: "里尔机场", nameEn: "Lille Airport", lon: 3.0894, lat: 50.5619 },
+    source: "里尔市中心 50.6292,3.0573；LIL 机场：公开资料",
+  },
+  {
+    id: "strasbourg", nameZh: "斯特拉斯堡", nameEn: "Strasbourg", country: "france", tier: "notable", zone: "fr-alsace",
+    lon: 7.7521, lat: 48.5734,
+    airport: { iata: "SXB", nameZh: "斯特拉斯堡机场", nameEn: "Strasbourg Airport", lon: 7.6282, lat: 48.5383 },
+    source: "斯特拉斯堡市中心 48.5734,7.7521；SXB 机场：公开资料",
+  },
+  {
+    id: "lyon", nameZh: "里昂", nameEn: "Lyon", country: "france", tier: "major", zone: "fr-rhone-alpes",
+    lon: 4.8357, lat: 45.7640,
+    airport: { iata: "LYS", nameZh: "里昂圣埃克絮佩里机场", nameEn: "Lyon–Saint-Exupéry Airport", lon: 5.0811, lat: 45.7256 },
+    source: "里昂市中心 45.7640,4.8357；LYS 机场：公开资料",
+  },
+  {
+    id: "grenoble", nameZh: "格勒诺布尔", nameEn: "Grenoble", country: "france", tier: "notable", zone: "fr-rhone-alpes",
+    lon: 5.7245, lat: 45.1885,
+    airport: { iata: "GNB", nameZh: "格勒诺布尔-伊泽尔机场", nameEn: "Grenoble–Isère Airport", lon: 5.3294, lat: 45.3629 },
+    source: "格勒诺布尔市中心 45.1885,5.7245；GNB 机场：公开资料（机场距市区约 40 公里）",
+  },
+  {
+    id: "marseille", nameZh: "马赛", nameEn: "Marseille", country: "france", tier: "major", zone: "fr-provence",
+    lon: 5.3698, lat: 43.2965,
+    airport: { iata: "MRS", nameZh: "马赛-普罗旺斯机场", nameEn: "Marseille Provence Airport", lon: 5.2214, lat: 43.4393 },
+    source: "马赛市中心 43.2965,5.3698；MRS 机场：公开资料",
+  },
+  {
+    id: "nice", nameZh: "尼斯", nameEn: "Nice", country: "france", tier: "major", zone: "fr-provence",
+    lon: 7.2620, lat: 43.7102,
+    airport: { iata: "NCE", nameZh: "尼斯蓝色海岸机场", nameEn: "Nice Côte d'Azur Airport", lon: 7.2159, lat: 43.6584 },
+    source: "尼斯市中心 43.7102,7.2620；NCE 机场：公开资料",
+  },
+  {
+    id: "toulouse", nameZh: "图卢兹", nameEn: "Toulouse", country: "france", tier: "major", zone: "fr-southwest",
+    lon: 1.4442, lat: 43.6047,
+    airport: { iata: "TLS", nameZh: "图卢兹-布拉尼亚克机场", nameEn: "Toulouse–Blagnac Airport", lon: 1.3638, lat: 43.6293 },
+    source: "图卢兹市中心 43.6047,1.4442；TLS 机场：公开资料",
+  },
+  {
+    id: "bordeaux", nameZh: "波尔多", nameEn: "Bordeaux", country: "france", tier: "major", zone: "fr-southwest",
+    lon: -0.5792, lat: 44.8378,
+    airport: { iata: "BOD", nameZh: "波尔多-梅里尼亚克机场", nameEn: "Bordeaux–Mérignac Airport", lon: -0.7156, lat: 44.8283 },
+    source: "波尔多市中心 44.8378,-0.5792；BOD 机场：公开资料",
+  },
+  {
+    id: "nantes", nameZh: "南特", nameEn: "Nantes", country: "france", tier: "notable", zone: "fr-west",
+    lon: -1.5536, lat: 47.2184,
+    airport: { iata: "NTE", nameZh: "南特大西洋机场", nameEn: "Nantes Atlantique Airport", lon: -1.6108, lat: 47.1532 },
+    source: "南特市中心 47.2184,-1.5536；NTE 机场：公开资料",
+  },
+  {
+    id: "ajaccio", nameZh: "阿雅克肖", nameEn: "Ajaccio", country: "france", tier: "notable", zone: "fr-corsica",
+    lon: 8.7386, lat: 41.9192,
+    airport: { iata: "AJA", nameZh: "阿雅克肖机场", nameEn: "Ajaccio Airport", lon: 8.8029, lat: 41.9236 },
+    source: "阿雅克肖市中心 41.9192,8.7386；AJA 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -903,6 +981,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   iceland: "europe",
   switzerland: "europe",
   norway: "europe",
+  france: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

@@ -1,0 +1,16 @@
+{
+  "id": "nce-aja",
+  "name": "尼斯 — 阿雅克肖",
+  "nameEn": "Nice — Ajaccio",
+  "description": "科西嘉岛",
+  "descriptionEn": "Corsica",
+  "depCountry": "france",
+  "arrCountry": "france",
+  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7846", "aircraft": "Airbus A319", "depIata": "NCE", "arrIata": "AJA", "durationMin": 45 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "nce", "name": "尼斯", "nameEn": "Nice", "lat": 43.6584, "lon": 7.2159, "airport": true },
+    { "kind": "terrain", "terrainId": "corsica" },
+    { "kind": "city", "id": "aja", "name": "阿雅克肖", "nameEn": "Ajaccio", "lat": 41.9236, "lon": 8.8029, "airport": true }
+  ]
+}
