@@ -234,6 +234,28 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   jaeren: "national",
   trolltunga: "poi",
   saltstraumen: "poi",
+
+  // 法国
+  "french-alps": "national",
+  pyrenees: "national",
+  "massif-central": "national",
+  vosges: "national",
+  "armorican-massif": "national",
+  "paris-basin": "national",
+  "aquitaine-basin": "national",
+  corsica: "national",
+  "loire-river": "national",
+  "rhone-river": "national",
+  "seine-river": "national",
+  ecrins: "national",
+  vanoise: "national",
+  "mer-de-glace": "national",
+  camargue: "national",
+  "chaine-des-puys": "national",
+  "mont-saint-michel-bay": "national",
+  "dune-du-pilat": "poi",
+  etretat: "poi",
+  "cirque-de-gavarnie": "poi",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {
