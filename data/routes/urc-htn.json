@@ -1,0 +1,47 @@
+{
+  "id": "urc-htn",
+  "name": "乌鲁木齐 — 和田",
+  "nameEn": "Ürümqi — Hotan",
+  "description": "天山 · 塔里木盆地 · 塔克拉玛干沙漠 · 昆仑山北麓",
+  "descriptionEn": "Tianshan · Tarim Basin · Taklamakan Desert · northern foot of the Kunlun",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ6829",
+    "aircraft": "Boeing 737-800",
+    "depIata": "URC",
+    "arrIata": "HTN",
+    "durationMin": 100
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "urc",
+      "name": "乌鲁木齐地窝堡",
+      "nameEn": "Ürümqi Diwopu",
+      "lat": 43.907,
+      "lon": 87.474,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tianshan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "taklamakan"
+    },
+    {
+      "kind": "city",
+      "id": "htn",
+      "name": "和田",
+      "nameEn": "Hotan",
+      "lat": 37.039,
+      "lon": 79.865,
+      "airport": true
+    }
+  ]
+}

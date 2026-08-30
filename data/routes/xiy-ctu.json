@@ -1,0 +1,27 @@
+{
+  "id": "xiy-ctu",
+  "name": "西安 — 成都",
+  "nameEn": "Xi'an — Chengdu",
+  "description": "关中平原 · 秦岭 · 大巴山 · 四川盆地",
+  "descriptionEn": "Guanzhong Plain · Qinling Mts · Daba Mts · Sichuan Basin",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "四川航空",
+    "airlineEn": "Sichuan Airlines",
+    "flightNo": "3U8918",
+    "aircraft": "Airbus A320",
+    "depIata": "XIY",
+    "arrIata": "CTU",
+    "durationMin": 90
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "xiy", "name": "西安咸阳", "nameEn": "Xi'an Xianyang", "lat": 34.447, "lon": 108.752, "airport": true },
+    { "kind": "terrain", "terrainId": "guanzhong-plain" },
+    { "kind": "terrain", "terrainId": "qinling" },
+    { "kind": "terrain", "terrainId": "dabashan" },
+    { "kind": "terrain", "terrainId": "sichuan" },
+    { "kind": "city", "id": "ctu", "name": "成都双流", "nameEn": "Chengdu Shuangliu", "lat": 30.578, "lon": 103.947, "airport": true }
+  ]
+}

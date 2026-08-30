@@ -1,0 +1,26 @@
+{
+  "id": "pek-sha",
+  "name": "北京 — 上海",
+  "nameEn": "Beijing — Shanghai",
+  "description": "华北平原 · 山东丘陵 · 苏北平原 · 长江三角洲",
+  "descriptionEn": "North China Plain · Shandong Hills · northern Jiangsu plain · Yangtze Delta",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU5104",
+    "aircraft": "Boeing 777-300ER",
+    "depIata": "PEK",
+    "arrIata": "SHA",
+    "durationMin": 135
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "shandong-hills" },
+    { "kind": "terrain", "terrainId": "yangtze-delta" },
+    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true }
+  ]
+}

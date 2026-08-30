@@ -304,6 +304,190 @@ export const ROUTE_NARRATION: Record<
       "Winter (about December to February) is the ice-and-snow high season, but dress warmly and watch for icy pavements; summers are cool and make Harbin a good base for reaching other parts of the north-east.",
     },
   },
+
+  "hrb-can": {
+    study: {
+    "zh-CN":
+      "哈尔滨飞广州，是把中国东部从最北飞到最南，走完从寒温带到南亚热带的一整条梯度。起飞时脚下是东北平原——由松花江、辽河、嫩江冲积成的大平原，方格旱地和水田一望无际，村镇沿铁路排列。" +
+      "越过辽河一带，进入华北平原：黄河、淮河、海河冲积出来的大平原，人口和城镇更密。接着地面转为长江中下游平原，江河湖泊相连，圩田水塘交错。" +
+      "再往南是南岭——一列低矮、破碎的东西向丘陵山地，被宽谷隔开，历史上是岭南和内地之间的门槛，也大致是长江水系和珠江水系的分水岭。翻过南岭，很快就是珠江三角洲：珠江在入海口淤积、加上人工围垦形成的平原，水网密布、城市连成一片。一趟航班，走完了东部季风区从北到南的全部。",
+    "en-US":
+      "Harbin to Guangzhou flies the eastern half of China from its far north to its far south, down the full gradient from the cold-temperate zone to the southern subtropics. On take-off you are over the Northeast Plain — built by the Songhua, Liao and Nen rivers, an endless grid of dry fields and paddies with towns strung along the railways." +
+      "Past the Liao River country you cross the North China Plain, built by the Yellow, Huai and Hai rivers, with denser population and towns. The land then becomes the Middle–Lower Yangtze Plain, a low plain of interconnected rivers and lakes with diked fields and ponds." +
+      "Farther south is the Nanling — a low, broken east–west belt of hills separated by wide valleys, historically the threshold between the far south and the interior, and roughly the divide between the Yangtze and Pearl river systems. Cross it and you are soon over the Pearl River Delta, a plain built by silt and reclamation, water-netted and city-covered. One flight has crossed the whole eastern monsoon zone, north to south.",
+    },
+    travel: {
+    "zh-CN":
+      "哈尔滨到广州约四个小时，跨越很大的气候差：出发地冬季严寒，目的地一年多数时候温暖潮湿。广州属南亚热带季风气候，夏长冬短，五到九月闷热多雨、多台风，冬季温和。" +
+      "广州是华南的门户和交通枢纽，粤菜、早茶和老城骑楼街区是主要体验，往南往西可到珠三角各城市和港澳方向。" +
+      "从东北出发要注意到广州后的换季：厚衣物基本用不上，改带轻薄透气和雨具。夏季注意防暑、留意台风预报。",
+    "en-US":
+      "Harbin to Guangzhou is about four hours across a big climate difference: severe winters where you start, warm and humid most of the year where you land. Guangzhou has a southern subtropical monsoon climate — long summers, short winters, hot and wet with typhoons from May to September, mild winters." +
+      "Guangzhou is the gateway and transport hub of southern China; Cantonese food, morning yum cha and the old arcade-street quarters are the main experiences, with the Pearl River Delta cities and Hong Kong and Macau to the south and west." +
+      "Coming from the north-east, plan for the change of season on arrival: heavy clothing is not needed; bring light, breathable clothes and rain gear instead. In summer take care in the heat and watch typhoon forecasts.",
+    },
+  },
+
+  "pek-sha": {
+    study: {
+    "zh-CN":
+      "北京飞上海，是沿着中国东部沿海地带，从华北平原飞到长江三角洲。起飞时脚下是华北平原——黄河、淮河、海河冲积出来的大平原，方格农田和城镇密集，地面几乎看不出起伏。" +
+      "往东南飞，右侧会出现一片明显隆起的丘陵，那是山东丘陵：华北平原中间的一块基岩地块，泰山、鲁山等山头从平原里凸出来，四周仍是平原。" +
+      "过了山东，进入淮河以南、长江以北的苏北平原，河渠纵横。接近上海时进入长江三角洲——长江最后一段淤积形成的低平原，河网最密、城镇连成一片，太湖等湖泊点缀其间。飞机在这里下降。全程都在中国地势最低、最平的第三级阶梯上飞。",
+    "en-US":
+      "Beijing to Shanghai runs down the eastern coastal belt of China, from the North China Plain to the Yangtze Delta. On take-off you are over the North China Plain — built by the Yellow, Huai and Hai rivers, dense with fields and towns, almost without relief." +
+      "Flying south-east, a distinct band of higher hills appears to the right: the Shandong Hills, a block of bedrock rising out of the middle of the plain, with summits such as Tai Shan standing above otherwise flat surroundings." +
+      "Past Shandong the route crosses the northern Jiangsu plain between the Huai and the Yangtze, threaded with canals. Approaching Shanghai you reach the Yangtze Delta, the low plain of the river's final reach, with the densest water network and continuous built-up land, dotted with lakes such as Tai Hu. The whole flight stays on the lowest, flattest step of China's terrain.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到上海约两小时。两座城市都在东部平原上，但气候有差别：北京干燥、四季分明、冬冷；上海湿润、冬季湿冷、夏季闷热，梅雨季（约六月）和夏秋台风期多雨。" +
+      "这条线是中国最繁忙的商务航线之一，京沪高铁也只要四五个小时，行程灵活。上海是去江南水乡和华东沿海的门户。" +
+      "从北京到上海，注意湿度变化：上海体感更闷，夏季带轻便透气衣物和雨具；冬季虽然气温不算很低，但湿冷，室内外都要注意保暖。",
+    "en-US":
+      "Beijing to Shanghai is about two hours. Both cities are on the eastern plain but the climates differ: Beijing is dry, with four clear seasons and cold winters; Shanghai is humid, with damp cold winters and hot, muggy summers, plus the plum rains around June and typhoons in late summer and autumn." +
+      "This is one of the busiest business routes in China, and the Beijing–Shanghai high-speed train takes only about four to five hours, so plans are flexible. Shanghai is the gateway to the Jiangnan water towns and the eastern coast." +
+      "Coming from Beijing, note the change in humidity: Shanghai feels muggier, so bring light breathable clothes and rain gear in summer; winters are not very cold but the damp makes them feel raw, indoors and out.",
+    },
+  },
+
+  "can-hak": {
+    study: {
+    "zh-CN":
+      "广州飞海口，是一趟很短的跨海航班，从大陆最南端飞到海南岛。起飞后脚下是珠江三角洲，很快到粤西沿海，海岸线上是大片红树林、盐田和养殖塘。" +
+      "接着地面收窄成一条伸向西南的半岛，那是雷州半岛——中国大陆最南的一块，地表是玄武岩台地，散布着一些低平的死火山口和火山湖。" +
+      "半岛尽头是琼州海峡，一条几十公里宽的水道，把海南岛和大陆隔开。越过海峡就是海南岛：岛的中南部是山地，五指山、鹦哥岭等主峰在中间隆起，四周是环岛的沿海平原和台地，海口就在岛北缘的一片这样的平原上。海南岛是中国纬度最低的省级陆地，属热带气候。",
+    "en-US":
+      "Guangzhou to Haikou is a short over-water flight from the southern edge of the mainland to Hainan Island. After take-off you are over the Pearl River Delta, then quickly the coast of western Guangdong, its shoreline lined with mangroves, salt pans and aquaculture ponds." +
+      "The land then narrows into a peninsula reaching south-west: the Leizhou Peninsula, the southernmost part of the Chinese mainland, a basalt plateau dotted with low extinct craters and crater lakes." +
+      "At its tip is the Qiongzhou Strait, a channel a few tens of kilometres wide separating Hainan from the mainland. Across it lies Hainan Island: mountains in the centre-south, with peaks such as Wuzhi Shan rising in the middle, ringed by coastal plains and terraces. Haikou sits on one of these plains at the island's northern edge. Hainan is the lowest-latitude provincial-level land in China, with a tropical climate.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到海口约一个半小时。海口在海南岛北缘，属热带季风气候：全年温暖，冬季是旅游旺季，夏秋（约五到十月）炎热、多雨、是台风季，出行要留意台风预报。" +
+      "海口本身有骑楼老街、火山群地质公园和海边，多数游客把它当作进入海南的门户：往东是文昌、往南沿东线到琼海、万宁、三亚，中部是热带雨林山区。" +
+      "全年防晒和补水都很重要；台风期航班和轮渡可能延误或取消，行程安排留出机动时间。",
+    "en-US":
+      "Guangzhou to Haikou is about an hour and a half. Haikou is on the northern edge of Hainan, with a tropical monsoon climate: warm year-round, with winter as the tourist high season and a hot, wet typhoon season in late spring to autumn (about May to October), so watch typhoon forecasts." +
+      "Haikou itself has its arcade old streets, a volcanic geopark and the seafront, but most visitors treat it as the gateway to Hainan: east to Wenchang, south down the east coast to Qionghai, Wanning and Sanya, with tropical rainforest mountains in the interior." +
+      "Sun protection and hydration matter all year; during the typhoon season flights and ferries can be delayed or cancelled, so leave slack in your plans.",
+    },
+  },
+
+  "pek-kwl": {
+    study: {
+    "zh-CN":
+      "北京飞桂林，是从华北平原一路往南，飞到南方的喀斯特山水。起飞时脚下是华北平原，方格农田和城镇密集，看不出起伏。" +
+      "往南飞，中途经过洞庭湖——长江中游的一个通江湖泊，丰水期是一大片明水，枯水期退成河道和洲滩，四周是湖南的稻田平原。" +
+      "再往南是南岭，一列低矮破碎的东西向丘陵山地，翻过它就进入两广。桂林一带是典型的喀斯特峰林：厚层石灰岩被长期溶蚀，留下一座座陡立的、彼此分开的石峰，漓江在峰林之间蜿蜒。这种“平地拔起一片石峰”的地貌，是湿热气候下石灰岩长期溶蚀的结果。",
+    "en-US":
+      "Beijing to Guilin runs south from the North China Plain to the karst landscape of the south. On take-off you are over the North China Plain, dense with fields and towns and almost without relief." +
+      "Flying south, the route passes Dongting Lake, a lake connected to the Yangtze whose open water spreads wide in the flood season and shrinks to channels and bars in the dry season, surrounded by the paddy plains of Hunan." +
+      "Farther south is the Nanling, a low, broken east–west belt of hills; cross it and you are in Guangxi. The Guilin area is classic peak-forest karst: thick limestone dissolved over a long time into rows of steep, separate stone towers, with the Li River winding between them. This landscape of towers rising straight from flat ground is the result of long dissolution of limestone in a hot, wet climate.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到桂林约三个小时。桂林属亚热带季风气候，温暖湿润，春季多阴雨，夏季是主汛期、漓江水量大，秋季相对干爽舒适，冬季温和但偶有阴冷。" +
+      "主要体验是漓江（桂林到阳朔一段）、周边的溶洞和峰林田园，以及龙脊梯田方向。阳朔是背包和骑行的集散地。" +
+      "雨季（约五到八月）漓江可能因涨水调整游船航段，山路湿滑；枯水期个别河段水浅。出行前查漓江当日通航情况。",
+    "en-US":
+      "Beijing to Guilin is about three hours. Guilin has a subtropical monsoon climate, warm and humid: cloudy, drizzly springs; a summer flood season when the Li River runs high; drier, comfortable autumns; and mild winters that can occasionally turn raw." +
+      "The main experiences are the Li River (the Guilin–Yangshuo stretch), the caves and peak-forest countryside around it, and the Longji terraces. Yangshuo is the base for backpackers and cycling." +
+      "In the rainy season (about May to August) Li River cruises may change which section they run because of high water, and mountain paths are slippery; in the dry season some reaches are shallow. Check the day's river conditions before you go.",
+    },
+  },
+
+  "xiy-ctu": {
+    study: {
+    "zh-CN":
+      "西安飞成都，虽然只有一个多小时，却是翻越秦岭、从黄河流域进入长江流域的一趟。起飞时脚下是关中平原——渭河冲积成的东西向平原，是黄河中游的老农业区。" +
+      "很快，南边立起一道又高又宽、东西横亘的山墙，那就是秦岭。秦岭是中国一条重要的自然地理分界：它大致把暖温带和亚热带、把小麦区和水稻区分开，也是黄河水系和长江水系的分水岭。山北是黄土和麦田，山南很快变成绿色的稻田和常绿林。" +
+      "翻过秦岭主脊，还有一道大巴山，之间夹着汉中盆地。再越过大巴山，地面陷下去、变成红色，进入四川盆地——四周被山环抱的红层盆地，云雾多、日照少，成都平原就在盆地西部，是都江堰两千多年引岷江水灌溉出来的一片沃野。",
+    "en-US":
+      "Xi'an to Chengdu takes only a little over an hour, but it crosses the Qinling and passes from the Yellow River basin into the Yangtze basin. On take-off you are over the Guanzhong Plain, built by the Wei River, an old farming region of the middle Yellow River." +
+      "Soon a high, broad east–west wall of mountains stands up to the south: the Qinling. It is one of China's important natural dividing lines — roughly separating the warm-temperate zone from the subtropics, wheat country from rice country, and the Yellow River system from the Yangtze. North of it is loess and wheat; south of it the land quickly turns to green paddies and evergreen forest." +
+      "Beyond the main Qinling crest is a second range, the Daba Mountains, with the Hanzhong basin between them. Past the Daba the ground drops and turns red, into the Sichuan Basin — a red-bed basin ringed by mountains, often cloudy with little sun. The Chengdu Plain lies in its west, farmland the Dujiangyan works have irrigated from the Min River for more than two thousand years.",
+    },
+    travel: {
+    "zh-CN":
+      "西安到成都约一个半小时，两地都在内陆，但气候不同：西安干燥、四季分明、冬冷；成都在盆地里，湿度大，云多日照少，冬季阴冷、夏季闷热，很少有强烈日晒。" +
+      "成都是四川旅游的枢纽：市内有宽窄巷子、武侯祠、大熊猫基地，往西北去九寨沟、四姑娘山，往西进藏，往南去乐山、峨眉。饮食以川菜和火锅为主，口味偏麻辣。" +
+      "成都的“阴天感”是常态，带件薄外套即可；如果不习惯辣，点餐时可要求微辣或不辣。京昆、西成高铁也很方便，行程可灵活组合。",
+    "en-US":
+      "Xi'an to Chengdu is about an hour and a half. Both are inland, but the climates differ: Xi'an is dry, with four clear seasons and cold winters; Chengdu, in its basin, is humid and cloudy with little sun, raw in winter and muggy in summer, and rarely bright." +
+      "Chengdu is the hub for travel in Sichuan: in the city there is the Kuanzhai Alley, the Wuhou Shrine and the panda base; north-west lie Jiuzhaigou and Siguniang Shan; west is the route into Tibet; south are Leshan and Emei. The food is Sichuanese and hotpot, leaning hot and numbing." +
+      "Chengdu's overcast feel is normal — a light jacket is enough. If you are not used to chilli, you can ask for mild or none. The high-speed rail links are good, so plans can be mixed and matched.",
+    },
+  },
+
+  "urc-htn": {
+    study: {
+    "zh-CN":
+      "乌鲁木齐飞和田，是一趟直接飞越塔克拉玛干沙漠的航班，从天山北麓到昆仑山北麓。起飞后脚下是天山北麓的绿洲带，很快开始爬升，翻越天山——山顶终年积雪、冰川广布。" +
+      "翻过天山，眼前是一个巨大的黄色椭圆——塔里木盆地，四周被天山、昆仑山、帕米尔高原围住。飞机不再沿盆地边缘走，而是直接切进中间的塔克拉玛干沙漠。晴天时能看到一道道规则排列的新月形沙垄和格状沙丘，几乎没有植被，也没有道路和居民点。" +
+      "沙漠南缘，昆仑山的雪峰从地平线上升起。昆仑山是青藏高原的北界。山前的融水汇成几条河，冲出一小片一小片绿洲，和田就在其中一片上——它是塔里木盆地南缘的古老绿洲，自古以玉和丝绸闻名。",
+    "en-US":
+      "Ürümqi to Hotan flies straight across the Taklamakan Desert, from the northern foot of the Tianshan to the northern foot of the Kunlun. After take-off you are over the oasis belt on the north side of the Tianshan, then climb over the range, whose summits are under permanent snow with widespread glaciers." +
+      "Beyond the Tianshan a huge yellow oval opens up — the Tarim Basin, walled in by the Tianshan, Kunlun and Pamirs. Instead of following the basin rim, the plane cuts straight into the Taklamakan Desert in its centre. On a clear day you can see regular rows of crescent and grid dunes, almost no vegetation, and no roads or settlements." +
+      "At the desert's southern edge the snow peaks of the Kunlun rise from the horizon; the Kunlun forms the northern edge of the Tibetan Plateau. Meltwater from it feeds a few rivers that build small oases, and Hotan sits on one of them — an old oasis on the southern rim of the Tarim Basin, long known for jade and silk.",
+    },
+    travel: {
+    "zh-CN":
+      "乌鲁木齐到和田约两小时。和田在塔里木盆地南缘、昆仑山下，海拔约一千四百米，气候极干燥，春夏多浮尘和沙尘天，夏季炎热，昼夜温差大。" +
+      "和田是南疆的古老绿洲，以玉石、地毯、艾德莱斯绸和大巴扎闻名，周边有约特干等古代遗址。饮食以馕、拌面、烤肉和瓜果为主。" +
+      "这一带靠近边境和沙漠：部分区域外国人需办边境通行证，风沙天能见度低、航班易延误，行程要留机动时间。作息比内地晚约两小时。",
+    "en-US":
+      "Ürümqi to Hotan is about two hours. Hotan is on the southern rim of the Tarim Basin at the foot of the Kunlun, at about 1,400 m, with an extremely dry climate, frequent dust and sandstorms in spring and summer, hot summers and a wide day-to-night range." +
+      "Hotan is an old oasis of southern Xinjiang, known for jade, carpets, atlas silk and its grand bazaar, with ancient sites such as Yotkan nearby. The food centres on naan, laghman, grilled meat and fruit." +
+      "This area is close to the border and the desert: some parts require a border permit for foreign visitors, dust days cut visibility and delay flights, so leave slack in your plans. Daily life runs about two hours later than in eastern China.",
+    },
+  },
+
+  "kmg-lxa": {
+    study: {
+    "zh-CN":
+      "昆明飞拉萨，是从云贵高原横穿横断山脉，飞到青藏高原东南缘。起飞时脚下是滇中的高原面，昆明在一片高原湖盆里，旁边是滇池。" +
+      "往西北飞，地面被切得越来越破碎，进入横断山脉：南北向排列的雪山和深谷，金沙江、澜沧江、怒江在这里并行南流。金沙江在石鼓一带拐了个急弯，在玉龙雪山和哈巴雪山之间切出很深的虎跳峡。" +
+      "继续往西北，进入藏东南。这一带有印度洋水汽顺河谷灌入，是青藏高原上最湿润、最绿的角落，森林长得很高。雅鲁藏布江绕南迦巴瓦峰拐了一个大弯，切出很深的峡谷。再往西，地面转为相对平坦开阔的青藏高原面，飞机沿拉萨河谷下降到拉萨。",
+    "en-US":
+      "Kunming to Lhasa crosses the Yunnan–Guizhou Plateau, cuts through the Hengduan Mountains, and reaches the south-eastern edge of the Tibetan Plateau. On take-off you are over the plateau surface of central Yunnan, with Kunming in a lake basin beside Lake Dian." +
+      "Flying north-west, the land becomes ever more broken as you enter the Hengduan Mountains: north–south snow ranges and deep gorges, with the Jinsha, Lancang and Nu rivers running south in parallel. Near Shigu the Jinsha makes a sharp bend, and between the Yulong and Haba snow massifs it cuts the deep Tiger Leaping Gorge." +
+      "Continuing north-west you enter south-eastern Tibet, where Indian Ocean moisture up the valleys makes this the wettest, greenest corner of the plateau, with tall forest. The Yarlung Tsangpo makes a great bend around Namcha Barwa, cutting a very deep gorge. Farther west the ground becomes the comparatively flat, open plateau surface, and the plane descends along the Lhasa River valley into Lhasa.",
+    },
+    travel: {
+    "zh-CN":
+      "昆明到拉萨约两个多小时。昆明本身海拔约一千九百米，可作适应海拔的一站；拉萨约三千六百米，落地头一两天放慢节奏、多喝水、不饮酒，有心肺基础病的人先咨询医生。" +
+      "重要提示：外国游客进入西藏，除中国签证外还需办理西藏旅行许可，并且通常必须随有资质的旅行社、按报备行程结伴出行，出发前通过旅行社安排好。" +
+      "高原日照极强、气候干燥，全年防晒并备保暖衣物。合适的季节大致是四五月和九十月；雨季（约六到八月）藏东南最绿，但横断山区道路易受泥石流影响。",
+    "en-US":
+      "Kunming to Lhasa is a little over two hours. Kunming itself is at about 1,900 m and can serve as a step to acclimatise; Lhasa is at about 3,600 m, so for the first day or two slow down, drink plenty of water and avoid alcohol, and get medical advice first if you have a heart or lung condition." +
+      "Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — arrange this through an agency before you leave." +
+      "The plateau sun is very strong and the air dry, so sun protection and warm layers are needed year-round. The better windows are roughly April–May and September–October; in the rainy season (about June to August) south-eastern Tibet is greenest, but roads in the Hengduan ranges are prone to mudflows.",
+    },
+  },
+
+  "sha-hrb": {
+    study: {
+    "zh-CN":
+      "上海飞哈尔滨，是沿着中国的海岸往东北飞，从长江三角洲飞到东北平原。起飞后脚下很快是黄海，海面上有货船和养殖区。" +
+      "航线大致沿海岸线走。右前方是山东半岛，之后掠过辽东半岛——辽东丘陵是一片不高的低山丘陵，海岸曲折、多岛屿和港湾。" +
+      "越过辽东湾，进入东北平原。东北平原由松花江、辽河、嫩江冲积成，中间被一些低丘和台地分开，习惯上分为辽河平原、松嫩平原和三江平原。这里纬度高、黑土广布，是大片规整的旱地和水田。接近哈尔滨时能看到松花江在平原上蜿蜒，哈尔滨就建在江边。",
+    "en-US":
+      "Shanghai to Harbin flies up the coast of China to the north-east, from the Yangtze Delta to the Northeast Plain. After take-off you are soon over the Yellow Sea, with cargo ships and aquaculture areas below." +
+      "The route roughly follows the coastline. The Shandong Peninsula lies ahead to the right, and then the plane passes the Liaodong Peninsula — the Liaodong Hills are a belt of low hills, with an indented coast and many islands and bays." +
+      "Across the Liaodong Gulf you reach the Northeast Plain, built by the Songhua, Liao and Nen rivers and divided by low hills and terraces into the Liao, Song–Nen and Sanjiang plains. This is high-latitude country with widespread black soil, in broad, regular dry fields and paddies. Approaching Harbin you can see the Songhua River winding across the plain, with the city on its bank.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到哈尔滨约三小时，从湿润的江南飞到冬季严寒的东北。哈尔滨属中温带季风气候：夏季短而凉爽，冬季长而严寒，一月常在零下二十度上下。" +
+      "哈尔滨的看点是中央大街和老城的欧式建筑、松花江两岸，以及冬季的冰雪活动。往南是长春、沈阳，往北往东可到东北的森林和湿地。" +
+      "冬季（约十二月到次年二月）从上海出发要备足防寒装备，注意室内外温差和路面结冰；夏季凉爽，是避暑和中转的好时候。",
+    "en-US":
+      "Shanghai to Harbin is about three hours, from the humid Jiangnan to the north-east with its severe winters. Harbin has a cold-temperate monsoon climate: short cool summers and long, severe winters, often around -20°C in January." +
+      "Harbin's sights are the European-style architecture of Central Street and the old town, both banks of the Songhua River, and winter ice and snow activities. South are Changchun and Shenyang; north and east are the forests and wetlands of the north-east." +
+      "In winter (about December to February), leaving from Shanghai, bring full cold-weather gear and watch the indoor–outdoor temperature difference and icy pavements; summers are cool and good for escaping the heat or for transfers.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

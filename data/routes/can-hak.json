@@ -1,0 +1,26 @@
+{
+  "id": "can-hak",
+  "name": "广州 — 海口",
+  "nameEn": "Guangzhou — Haikou",
+  "description": "珠江三角洲 · 粤西沿海 · 雷州半岛 · 琼州海峡 · 海南岛",
+  "descriptionEn": "Pearl Delta · west Guangdong coast · Leizhou Peninsula · Qiongzhou Strait · Hainan Island",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3701",
+    "aircraft": "Airbus A321",
+    "depIata": "CAN",
+    "arrIata": "HAK",
+    "durationMin": 80
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "pearl-delta" },
+    { "kind": "terrain", "terrainId": "leizhou" },
+    { "kind": "terrain", "terrainId": "hainan" },
+    { "kind": "city", "id": "hak", "name": "海口美兰", "nameEn": "Haikou Meilan", "lat": 19.935, "lon": 110.459, "airport": true }
+  ]
+}
