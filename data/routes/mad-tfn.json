@@ -1,0 +1,19 @@
+{
+  "id": "mad-tfn",
+  "name": "马德里 — 特内里费",
+  "nameEn": "Madrid — Tenerife",
+  "description": "瓜达尔基维尔谷地 · 多尼亚纳湿地 · 大西洋 · 泰德峰",
+  "descriptionEn": "Guadalquivir Valley · Doñana · Atlantic Ocean · Teide",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2568", "aircraft": "Airbus A321", "depIata": "MAD", "arrIata": "TFN", "durationMin": 170 },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
+    { "kind": "terrain", "terrainId": "guadalquivir-valley" },
+    { "kind": "terrain", "terrainId": "donana" },
+    { "kind": "feature", "name": "大西洋", "nameEn": "Atlantic Ocean", "lon": -11.229, "lat": 33.28 },
+    { "kind": "terrain", "terrainId": "teide" },
+    { "kind": "city", "id": "tfn", "name": "特内里费", "nameEn": "Tenerife", "lat": 28.483, "lon": -16.341, "airport": true }
+  ]
+}

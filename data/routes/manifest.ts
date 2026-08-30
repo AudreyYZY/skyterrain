@@ -126,6 +126,15 @@ import linVce from "./lin-vce.json" with { type: "json" };
 import linNap from "./lin-nap.json" with { type: "json" };
 import napCta from "./nap-cta.json" with { type: "json" };
 import fcoBri from "./fco-bri.json" with { type: "json" };
+// 西班牙
+import madBcn from "./mad-bcn.json" with { type: "json" };
+import madSvq from "./mad-svq.json" with { type: "json" };
+import madGrx from "./mad-grx.json" with { type: "json" };
+import madBio from "./mad-bio.json" with { type: "json" };
+import madScq from "./mad-scq.json" with { type: "json" };
+import bcnPmi from "./bcn-pmi.json" with { type: "json" };
+import madTfn from "./mad-tfn.json" with { type: "json" };
+import bcnAgp from "./bcn-agp.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -231,4 +240,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   linNap,
   napCta,
   fcoBri,
+  madBcn,
+  madSvq,
+  madGrx,
+  madBio,
+  madScq,
+  bcnPmi,
+  madTfn,
+  bcnAgp,
 ] as unknown as FlightRoute[];

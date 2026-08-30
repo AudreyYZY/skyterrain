@@ -1,0 +1,17 @@
+{
+  "id": "bcn-pmi",
+  "name": "巴塞罗那 — 帕尔马",
+  "nameEn": "Barcelona — Palma",
+  "description": "特拉蒙塔纳山脉",
+  "descriptionEn": "Serra de Tramuntana",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "伏林航空", "airlineEn": "Vueling", "flightNo": "VY8001", "aircraft": "Airbus A320", "depIata": "BCN", "arrIata": "PMI", "durationMin": 50 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "bcn", "name": "巴塞罗那", "nameEn": "Barcelona", "lat": 41.297, "lon": 2.078, "airport": true },
+    { "kind": "feature", "name": "地中海", "nameEn": "Mediterranean Sea", "lon": 2.45, "lat": 40.55 },
+    { "kind": "terrain", "terrainId": "serra-de-tramuntana" },
+    { "kind": "city", "id": "pmi", "name": "帕尔马", "nameEn": "Palma", "lat": 39.551, "lon": 2.739, "airport": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mad-svq",
+  "name": "马德里 — 塞维利亚",
+  "nameEn": "Madrid — Seville",
+  "description": "莫雷纳山脉 · 瓜达尔基维尔谷地",
+  "descriptionEn": "Sierra Morena · Guadalquivir Valley",
+  "depCountry": "spain",
+  "arrCountry": "spain",
+  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB8461", "aircraft": "Airbus A320", "depIata": "MAD", "arrIata": "SVQ", "durationMin": 65 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
+    { "kind": "terrain", "terrainId": "sierra-morena" },
+    { "kind": "terrain", "terrainId": "guadalquivir-valley" },
+    { "kind": "city", "id": "svq", "name": "塞维利亚", "nameEn": "Seville", "lat": 37.418, "lon": -5.893, "airport": true }
+  ]
+}
