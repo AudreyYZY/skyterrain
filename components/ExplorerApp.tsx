@@ -58,6 +58,7 @@ import {
   countriesForContinent,
   getCountryMeta,
   subregionOfCountry,
+  continentOfCountrySlug,
   type Region,
 } from "@/lib/regions";
 import { terrainTier, categoryOrder, categoryLabel } from "@/lib/terrain-tier";
@@ -912,6 +913,20 @@ export default function ExplorerApp() {
             activeRouteRef.current = null;
             setRouteNarration(null);
             setFlyoverName(null);
+            // 国际航线：飞完后把地图 / 航线聚焦切到到达国（可跳到别的大洲）
+            if (route.arrCountry !== route.depCountry) {
+              const cont = continentOfCountrySlug(route.arrCountry);
+              if (cont && cont !== activeRegion && REGIONS.some((r) => r.id === cont)) {
+                setActiveRegionState(cont);
+                setActiveRegion(cont);
+                try {
+                  localStorage.setItem("fge-active-region", cont);
+                } catch {
+                  /* ignore */
+                }
+              }
+              setRouteCountry(route.arrCountry);
+            }
           },
           onCancelled: () => {
             narrationCancelledRef.current = true;
@@ -927,7 +942,7 @@ export default function ExplorerApp() {
         });
       }, 50);
     },
-    [language, mode, startHighlight, stopHighlight, stopSpeaking]
+    [language, mode, activeRegion, startHighlight, startHighlightWithTiming, stopHighlight, stopSpeaking]
   );
 
   const handleStopRoute = useCallback(() => {

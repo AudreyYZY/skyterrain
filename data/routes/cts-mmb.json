@@ -13,14 +13,31 @@
     "aircraft": "Bombardier DHC-8-400",
     "depIata": "CTS",
     "arrIata": "MMB",
-    "durationMin": 50
+    "durationMin": 45
   },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "cts", "name": "札幌新千岁", "nameEn": "Sapporo New Chitose", "lat": 42.775, "lon": 141.692, "airport": true },
-    { "kind": "terrain", "terrainId": "ishikari-plain" },
-    { "kind": "terrain", "terrainId": "daisetsuzan" },
-    { "kind": "terrain", "terrainId": "shiretoko-peninsula" },
-    { "kind": "city", "id": "mmb", "name": "女满别", "nameEn": "Memanbetsu", "lat": 43.881, "lon": 144.164, "airport": true }
+    {
+      "kind": "city",
+      "id": "cts",
+      "name": "札幌新千岁",
+      "nameEn": "Sapporo New Chitose",
+      "lat": 42.775,
+      "lon": 141.692,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "daisetsuzan"
+    },
+    {
+      "kind": "city",
+      "id": "mmb",
+      "name": "女满别",
+      "nameEn": "Memanbetsu",
+      "lat": 43.881,
+      "lon": 144.164,
+      "airport": true
+    }
   ]
 }

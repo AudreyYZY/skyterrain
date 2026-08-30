@@ -42,6 +42,10 @@ import ctsMmb from "./cts-mmb.json" with { type: "json" };
 import itmCts from "./itm-cts.json" with { type: "json" };
 import itmKum from "./itm-kum.json" with { type: "json" };
 import hndTtj from "./hnd-ttj.json" with { type: "json" };
+// 国际 · 中国 ↔ 日本
+import pvgHnd from "./pvg-hnd.json" with { type: "json" };
+import pekHnd from "./pek-hnd.json" with { type: "json" };
+import pvgKix from "./pvg-kix.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -74,4 +78,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   itmCts,
   itmKum,
   hndTtj,
+  pvgHnd,
+  pekHnd,
+  pvgKix,
 ] as unknown as FlightRoute[];

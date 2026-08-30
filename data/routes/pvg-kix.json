@@ -1,0 +1,26 @@
+{
+  "id": "pvg-kix",
+  "name": "上海 — 大阪",
+  "nameEn": "Shanghai — Osaka",
+  "description": "长江三角洲 · 东海 · 濑户内海 · 大阪平原",
+  "descriptionEn": "Yangtze Delta · East China Sea · Seto Inland Sea · Osaka Plain",
+  "depCountry": "china",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "全日空",
+    "airlineEn": "All Nippon Airways",
+    "flightNo": "NH970",
+    "aircraft": "Boeing 787-8",
+    "depIata": "PVG",
+    "arrIata": "KIX",
+    "durationMin": 150
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "pvg", "name": "上海浦东", "nameEn": "Shanghai Pudong", "lat": 31.143, "lon": 121.805, "airport": true },
+    { "kind": "terrain", "terrainId": "yangtze-delta" },
+    { "kind": "terrain", "terrainId": "seto-inland-sea" },
+    { "kind": "terrain", "terrainId": "osaka-plain" },
+    { "kind": "city", "id": "kix", "name": "大阪关西", "nameEn": "Osaka Kansai", "lat": 34.427, "lon": 135.244, "airport": true }
+  ]
+}
