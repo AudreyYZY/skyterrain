@@ -203,6 +203,64 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "汉长城遗址", nameEn: "Han Great Wall ruins", lon: 93.870, lat: 40.370, kind: "landmark" },
     { nameZh: "雅丹国家地质公园", nameEn: "Yardang National Geopark", lon: 93.100, lat: 40.500, kind: "nature" },
   ],
+
+  tokyo: [
+    { nameZh: "浅草寺 · 雷门", nameEn: "Senso-ji & Kaminarimon", lon: 139.797, lat: 35.715, kind: "landmark" },
+    { nameZh: "东京晴空塔", nameEn: "Tokyo Skytree", lon: 139.811, lat: 35.710, kind: "landmark" },
+    { nameZh: "明治神宫", nameEn: "Meiji Shrine", lon: 139.699, lat: 35.676, kind: "landmark" },
+    { nameZh: "涩谷十字路口", nameEn: "Shibuya Crossing", lon: 139.700, lat: 35.659, kind: "district" },
+    { nameZh: "上野公园", nameEn: "Ueno Park", lon: 139.774, lat: 35.715, kind: "nature" },
+    { nameZh: "皇居东御苑", nameEn: "Imperial Palace East Gardens", lon: 139.757, lat: 35.685, kind: "nature" },
+    { nameZh: "筑地场外市场", nameEn: "Tsukiji Outer Market", lon: 139.770, lat: 35.665, kind: "district" },
+  ],
+
+  kyoto: [
+    { nameZh: "清水寺", nameEn: "Kiyomizu-dera", lon: 135.785, lat: 34.995, kind: "landmark" },
+    { nameZh: "伏见稻荷大社", nameEn: "Fushimi Inari Taisha", lon: 135.773, lat: 34.967, kind: "landmark" },
+    { nameZh: "金阁寺", nameEn: "Kinkaku-ji", lon: 135.729, lat: 35.039, kind: "landmark" },
+    { nameZh: "岚山竹林", nameEn: "Arashiyama Bamboo Grove", lon: 135.672, lat: 35.017, kind: "nature" },
+    { nameZh: "祇园", nameEn: "Gion", lon: 135.775, lat: 35.003, kind: "district" },
+    { nameZh: "二条城", nameEn: "Nijo Castle", lon: 135.748, lat: 35.014, kind: "landmark" },
+    { nameZh: "银阁寺 · 哲学之道", nameEn: "Ginkaku-ji & Philosopher's Path", lon: 135.798, lat: 35.027, kind: "landmark" },
+  ],
+
+  "osaka-city": [
+    { nameZh: "道顿堀", nameEn: "Dotonbori", lon: 135.501, lat: 34.669, kind: "district" },
+    { nameZh: "大阪城", nameEn: "Osaka Castle", lon: 135.526, lat: 34.687, kind: "landmark" },
+    { nameZh: "通天阁 · 新世界", nameEn: "Tsutenkaku & Shinsekai", lon: 135.506, lat: 34.652, kind: "district" },
+    { nameZh: "黑门市场", nameEn: "Kuromon Market", lon: 135.506, lat: 34.665, kind: "district" },
+    { nameZh: "梅田蓝天大厦", nameEn: "Umeda Sky Building", lon: 135.490, lat: 34.705, kind: "landmark" },
+    { nameZh: "日本环球影城", nameEn: "Universal Studios Japan", lon: 135.433, lat: 34.668, kind: "landmark" },
+  ],
+
+  sapporo: [
+    { nameZh: "大通公园", nameEn: "Odori Park", lon: 141.352, lat: 43.061, kind: "nature" },
+    { nameZh: "札幌电视塔", nameEn: "Sapporo TV Tower", lon: 141.356, lat: 43.061, kind: "landmark" },
+    { nameZh: "时计台", nameEn: "Clock Tower", lon: 141.353, lat: 43.063, kind: "landmark" },
+    { nameZh: "藻岩山", nameEn: "Mount Moiwa", lon: 141.320, lat: 43.026, kind: "nature" },
+    { nameZh: "狸小路商店街", nameEn: "Tanukikoji Arcade", lon: 141.353, lat: 43.056, kind: "district" },
+    { nameZh: "北海道厅旧本厅舍", nameEn: "Former Hokkaido Government Office", lon: 141.347, lat: 43.064, kind: "landmark" },
+    { nameZh: "定山溪温泉", nameEn: "Jozankei Onsen", lon: 141.164, lat: 42.966, kind: "nature" },
+  ],
+
+  fukuoka: [
+    { nameZh: "中洲屋台", nameEn: "Nakasu Yatai", lon: 130.406, lat: 33.593, kind: "district" },
+    { nameZh: "栉田神社", nameEn: "Kushida Shrine", lon: 130.412, lat: 33.593, kind: "landmark" },
+    { nameZh: "天神", nameEn: "Tenjin", lon: 130.399, lat: 33.591, kind: "district" },
+    { nameZh: "大濠公园", nameEn: "Ohori Park", lon: 130.378, lat: 33.585, kind: "nature" },
+    { nameZh: "福冈城迹", nameEn: "Fukuoka Castle ruins", lon: 130.383, lat: 33.585, kind: "landmark" },
+    { nameZh: "太宰府天满宫", nameEn: "Dazaifu Tenmangu", lon: 130.535, lat: 33.521, kind: "landmark" },
+    { nameZh: "海之中道", nameEn: "Uminonakamichi", lon: 130.360, lat: 33.660, kind: "nature" },
+  ],
+
+  naha: [
+    { nameZh: "国际通", nameEn: "Kokusai-dori", lon: 127.686, lat: 26.214, kind: "district" },
+    { nameZh: "首里城公园", nameEn: "Shuri Castle Park", lon: 127.719, lat: 26.217, kind: "landmark" },
+    { nameZh: "第一牧志公设市场", nameEn: "Makishi Public Market", lon: 127.686, lat: 26.215, kind: "district" },
+    { nameZh: "波上宫 · 波之上海滩", nameEn: "Naminoue Shrine & Beach", lon: 127.667, lat: 26.221, kind: "landmark" },
+    { nameZh: "冲绳县立博物馆·美术馆", nameEn: "Okinawa Prefectural Museum & Art Museum", lon: 127.719, lat: 26.226, kind: "landmark" },
+    { nameZh: "和平祈念公园", nameEn: "Peace Memorial Park", lon: 127.727, lat: 26.096, kind: "landmark" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

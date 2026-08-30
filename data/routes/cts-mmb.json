@@ -1,0 +1,26 @@
+{
+  "id": "cts-mmb",
+  "name": "札幌 — 女满别",
+  "nameEn": "Sapporo — Memanbetsu",
+  "description": "石狩平原 · 大雪山 · 知床半岛门户",
+  "descriptionEn": "Ishikari Plain · Daisetsuzan · gateway to the Shiretoko Peninsula",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "全日空",
+    "airlineEn": "All Nippon Airways",
+    "flightNo": "NH4861",
+    "aircraft": "Bombardier DHC-8-400",
+    "depIata": "CTS",
+    "arrIata": "MMB",
+    "durationMin": 50
+  },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "cts", "name": "札幌新千岁", "nameEn": "Sapporo New Chitose", "lat": 42.775, "lon": 141.692, "airport": true },
+    { "kind": "terrain", "terrainId": "ishikari-plain" },
+    { "kind": "terrain", "terrainId": "daisetsuzan" },
+    { "kind": "terrain", "terrainId": "shiretoko-peninsula" },
+    { "kind": "city", "id": "mmb", "name": "女满别", "nameEn": "Memanbetsu", "lat": 43.881, "lon": 144.164, "airport": true }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hnd-cts",
+  "name": "东京 — 札幌",
+  "nameEn": "Tokyo — Sapporo",
+  "description": "关东平原 · 三陆海岸 · 支笏洞爷火山区 · 石狩平原",
+  "descriptionEn": "Kanto Plain · Sanriku Coast · Shikotsu–Toya volcanoes · Ishikari Plain",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "日本航空",
+    "airlineEn": "Japan Airlines",
+    "flightNo": "JL503",
+    "aircraft": "Boeing 767-300",
+    "depIata": "HND",
+    "arrIata": "CTS",
+    "durationMin": 95
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
+    { "kind": "terrain", "terrainId": "kanto-plain" },
+    { "kind": "terrain", "terrainId": "sanriku-coast" },
+    { "kind": "terrain", "terrainId": "shikotsu-toya" },
+    { "kind": "terrain", "terrainId": "ishikari-plain" },
+    { "kind": "city", "id": "cts", "name": "札幌新千岁", "nameEn": "Sapporo New Chitose", "lat": 42.775, "lon": 141.692, "airport": true }
+  ]
+}

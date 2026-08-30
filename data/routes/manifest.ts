@@ -31,6 +31,17 @@ import xiyCtu from "./xiy-ctu.json" with { type: "json" };
 import urcHtn from "./urc-htn.json" with { type: "json" };
 import kmgLxa from "./kmg-lxa.json" with { type: "json" };
 import shaHrb from "./sha-hrb.json" with { type: "json" };
+// 日本国内
+import hndItm from "./hnd-itm.json" with { type: "json" };
+import hndCts from "./hnd-cts.json" with { type: "json" };
+import hndFuk from "./hnd-fuk.json" with { type: "json" };
+import kojOka from "./koj-oka.json" with { type: "json" };
+import hndKoj from "./hnd-koj.json" with { type: "json" };
+import ctsFuk from "./cts-fuk.json" with { type: "json" };
+import ctsMmb from "./cts-mmb.json" with { type: "json" };
+import itmCts from "./itm-cts.json" with { type: "json" };
+import itmKum from "./itm-kum.json" with { type: "json" };
+import hndTtj from "./hnd-ttj.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -53,4 +64,14 @@ export const ALL_ROUTES: FlightRoute[] = [
   urcHtn,
   kmgLxa,
   shaHrb,
+  hndItm,
+  hndCts,
+  hndFuk,
+  kojOka,
+  hndKoj,
+  ctsFuk,
+  ctsMmb,
+  itmCts,
+  itmKum,
+  hndTtj,
 ] as unknown as FlightRoute[];

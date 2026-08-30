@@ -1,0 +1,28 @@
+{
+  "id": "hnd-itm",
+  "name": "东京 — 大阪",
+  "nameEn": "Tokyo — Osaka",
+  "description": "关东平原 · 富士山 · 浓尾平原 · 琵琶湖 · 大阪平原",
+  "descriptionEn": "Kanto Plain · Mount Fuji · Nobi Plain · Lake Biwa · Osaka Plain",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "全日空",
+    "airlineEn": "All Nippon Airways",
+    "flightNo": "NH015",
+    "aircraft": "Boeing 787-8",
+    "depIata": "HND",
+    "arrIata": "ITM",
+    "durationMin": 70
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
+    { "kind": "terrain", "terrainId": "kanto-plain" },
+    { "kind": "terrain", "terrainId": "mount-fuji" },
+    { "kind": "terrain", "terrainId": "nobi-plain" },
+    { "kind": "terrain", "terrainId": "lake-biwa" },
+    { "kind": "terrain", "terrainId": "osaka-plain" },
+    { "kind": "city", "id": "itm", "name": "大阪伊丹", "nameEn": "Osaka Itami", "lat": 34.786, "lon": 135.438, "airport": true }
+  ]
+}
