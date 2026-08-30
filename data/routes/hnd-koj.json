@@ -1,0 +1,28 @@
+{
+  "id": "hnd-koj",
+  "name": "东京 — 鹿儿岛",
+  "nameEn": "Tokyo — Kagoshima",
+  "description": "关东平原 · 富士山 · 纪伊山地 · 阿苏山 · 樱岛",
+  "descriptionEn": "Kanto Plain · Mount Fuji · Kii Mountains · Mount Aso · Sakurajima",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "全日空",
+    "airlineEn": "All Nippon Airways",
+    "flightNo": "NH619",
+    "aircraft": "Boeing 787-8",
+    "depIata": "HND",
+    "arrIata": "KOJ",
+    "durationMin": 105
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
+    { "kind": "terrain", "terrainId": "kanto-plain" },
+    { "kind": "terrain", "terrainId": "mount-fuji" },
+    { "kind": "terrain", "terrainId": "kii-mountains" },
+    { "kind": "terrain", "terrainId": "mount-aso" },
+    { "kind": "terrain", "terrainId": "sakurajima" },
+    { "kind": "city", "id": "koj", "name": "鹿儿岛", "nameEn": "Kagoshima", "lat": 31.803, "lon": 130.719, "airport": true }
+  ]
+}

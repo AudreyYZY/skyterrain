@@ -1,0 +1,26 @@
+{
+  "id": "hnd-ttj",
+  "name": "东京 — 鸟取",
+  "nameEn": "Tokyo — Tottori",
+  "description": "关东平原 · 日本阿尔卑斯山脉 · 鸟取沙丘",
+  "descriptionEn": "Kanto Plain · Japanese Alps · Tottori Sand Dunes",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "全日空",
+    "airlineEn": "All Nippon Airways",
+    "flightNo": "NH293",
+    "aircraft": "Boeing 737-800",
+    "depIata": "HND",
+    "arrIata": "TTJ",
+    "durationMin": 80
+  },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
+    { "kind": "terrain", "terrainId": "kanto-plain" },
+    { "kind": "terrain", "terrainId": "japanese-alps" },
+    { "kind": "terrain", "terrainId": "tottori-sand-dunes" },
+    { "kind": "city", "id": "ttj", "name": "鸟取", "nameEn": "Tottori", "lat": 35.530, "lon": 134.167, "airport": true }
+  ]
+}

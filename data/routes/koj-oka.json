@@ -1,0 +1,26 @@
+{
+  "id": "koj-oka",
+  "name": "鹿儿岛 — 那霸",
+  "nameEn": "Kagoshima — Naha",
+  "description": "樱岛 · 屋久岛 · 南西诸岛 · 琉球群岛",
+  "descriptionEn": "Sakurajima · Yakushima · Nansei Islands · Ryukyu Islands",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "日本航空",
+    "airlineEn": "Japan Airlines",
+    "flightNo": "JL643",
+    "aircraft": "Boeing 737-800",
+    "depIata": "KOJ",
+    "arrIata": "OKA",
+    "durationMin": 90
+  },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "koj", "name": "鹿儿岛", "nameEn": "Kagoshima", "lat": 31.803, "lon": 130.719, "airport": true },
+    { "kind": "terrain", "terrainId": "sakurajima" },
+    { "kind": "terrain", "terrainId": "yakushima" },
+    { "kind": "terrain", "terrainId": "ryukyu-islands" },
+    { "kind": "city", "id": "oka", "name": "那霸", "nameEn": "Naha", "lat": 26.196, "lon": 127.646, "airport": true }
+  ]
+}

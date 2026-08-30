@@ -1,0 +1,27 @@
+{
+  "id": "hnd-fuk",
+  "name": "东京 — 福冈",
+  "nameEn": "Tokyo — Fukuoka",
+  "description": "关东平原 · 富士山 · 纪伊山地 · 濑户内海",
+  "descriptionEn": "Kanto Plain · Mount Fuji · Kii Mountains · Seto Inland Sea",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "全日空",
+    "airlineEn": "All Nippon Airways",
+    "flightNo": "NH241",
+    "aircraft": "Boeing 777-200",
+    "depIata": "HND",
+    "arrIata": "FUK",
+    "durationMin": 110
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
+    { "kind": "terrain", "terrainId": "kanto-plain" },
+    { "kind": "terrain", "terrainId": "mount-fuji" },
+    { "kind": "terrain", "terrainId": "kii-mountains" },
+    { "kind": "terrain", "terrainId": "seto-inland-sea" },
+    { "kind": "city", "id": "fuk", "name": "福冈", "nameEn": "Fukuoka", "lat": 33.586, "lon": 130.451, "airport": true }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "itm-kum",
+  "name": "大阪 — 屋久岛",
+  "nameEn": "Osaka — Yakushima",
+  "description": "大阪平原 · 濑户内海 · 屋久岛",
+  "descriptionEn": "Osaka Plain · Seto Inland Sea · Yakushima",
+  "depCountry": "japan",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "日本航空",
+    "airlineEn": "Japan Airlines",
+    "flightNo": "JL2431",
+    "aircraft": "ATR 72-600",
+    "depIata": "ITM",
+    "arrIata": "KUM",
+    "durationMin": 110
+  },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "itm", "name": "大阪伊丹", "nameEn": "Osaka Itami", "lat": 34.786, "lon": 135.438, "airport": true },
+    { "kind": "terrain", "terrainId": "osaka-plain" },
+    { "kind": "terrain", "terrainId": "seto-inland-sea" },
+    { "kind": "terrain", "terrainId": "yakushima" },
+    { "kind": "city", "id": "kum", "name": "屋久岛", "nameEn": "Yakushima", "lat": 30.386, "lon": 130.659, "airport": true }
+  ]
+}
