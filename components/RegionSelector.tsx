@@ -147,7 +147,7 @@ export default function RegionSelector({
                   )}
                 </button>
 
-                {subs.length > 1 && (
+                {subs.length >= 1 && (
                   <div className="pb-1">
                     {subs.map((g) => (
                       <button

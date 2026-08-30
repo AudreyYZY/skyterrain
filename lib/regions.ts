@@ -90,6 +90,14 @@ export const REGIONS: Region[] = [
     terrainCount: 52,
     available: true,
   },
+  {
+    id: "antarctica",
+    name: "南极洲",
+    nameEn: "Antarctica",
+    center: { lon: 0.0, lat: -75.0, height: 16000000 },
+    terrainCount: 0,
+    available: false,
+  },
 ];
 
 // ============================================================
@@ -136,6 +144,8 @@ export const SUBREGIONS: Subregion[] = [
   { id: "melanesia", continentId: "oceania", name: "美拉尼西亚", nameEn: "Melanesia" },
   { id: "micronesia", continentId: "oceania", name: "密克罗尼西亚", nameEn: "Micronesia" },
   { id: "polynesia", continentId: "oceania", name: "波利尼西亚", nameEn: "Polynesia" },
+  // 南极洲（M49 未细分，暂无地形数据）
+  { id: "antarctica", continentId: "antarctica", name: "南极洲", nameEn: "Antarctica" },
 ];
 
 /**
