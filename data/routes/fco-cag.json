@@ -1,0 +1,17 @@
+{
+  "id": "fco-cag",
+  "name": "罗马 — 卡利亚里",
+  "nameEn": "Rome — Cagliari",
+  "description": "台伯河 · 撒丁岛",
+  "descriptionEn": "Tiber · Sardinia",
+  "depCountry": "italy",
+  "arrCountry": "italy",
+  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ1631", "aircraft": "Airbus A319", "depIata": "FCO", "arrIata": "CAG", "durationMin": 55 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
+    { "kind": "terrain", "terrainId": "tiber-river" },
+    { "kind": "terrain", "terrainId": "sardinia" },
+    { "kind": "city", "id": "cag", "name": "卡利亚里", "nameEn": "Cagliari", "lat": 39.2515, "lon": 9.0543, "airport": true }
+  ]
+}

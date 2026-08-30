@@ -1,0 +1,17 @@
+{
+  "id": "fco-nap",
+  "name": "罗马 — 那不勒斯",
+  "nameEn": "Rome — Naples",
+  "description": "台伯河 · 坎皮弗莱格瑞",
+  "descriptionEn": "Tiber · Campi Flegrei",
+  "depCountry": "italy",
+  "arrCountry": "italy",
+  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ1671", "aircraft": "Airbus A319", "depIata": "FCO", "arrIata": "NAP", "durationMin": 40 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
+    { "kind": "terrain", "terrainId": "tiber-river" },
+    { "kind": "terrain", "terrainId": "campi-flegrei" },
+    { "kind": "city", "id": "nap", "name": "那不勒斯", "nameEn": "Naples", "lat": 40.8860, "lon": 14.2908, "airport": true }
+  ]
+}

@@ -2186,4 +2186,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–June and September–October are the most comfortable; July–August is peak season, with crowded beaches and ferries. Inland mountain roads have many bends — bring motion-sickness medication if needed. Book boat tickets to reserves like Scandola ahead in peak season. Inland mountains have a large day–night temperature range — a jacket for evenings is worth carrying even in summer.",
   },
+
+  "italy-overview": {
+    identity:
+      "Italy is a peninsular country in southern Europe, its mainland shaped like a boot reaching into the Mediterranean, plus the two large islands of Sicily and Sardinia, about 300,000 sq km with a population of about 59 million. The land is mostly mountains and hills: the young, high Alps in the north (bordering France, Switzerland and Austria), the Apennines running like a spine down the whole peninsula, large old hill country in the centre (Tuscany and others), the Po Valley in the north — the country's largest continuous plain — and an active volcanic belt in the south, Sicily and the Campi Flegrei area.",
+    layout:
+      "It helps to divide Italy into: the centre (Rome, Florence — the core of classical antiquity and the Renaissance), the north-west (Milan, Turin — the financial and industrial centre, near the Alps), the north-east (Venice, Bologna — the Venetian Lagoon and the Dolomites), the south (Naples, Bari — Mount Vesuvius and the olive groves of Puglia), Sicily (Palermo, Catania — Mount Etna, Europe's highest active volcano), and Sardinia (Cagliari — one of the oldest landmasses in the Mediterranean).",
+    gettingAround:
+      "Italy's high-speed rail (Frecciarossa and others) is extensive — Rome–Milan, Rome–Florence, Rome–Naples and other main lines are convenient, often more comfortable than flying. Domestic flights are mainly for fast links between distant regions or to and from Sicily and Sardinia. Big cities have a metro; Venice's internal transport is on foot and by water bus (no cars). Drive on the right; historic centres often have Limited Traffic Zones (ZTL), and driving in without permission incurs a fine. Restaurant bills often include a bread/service charge (coperto/servizio); tipping is not required, though leaving small change is fine. Tap water is drinkable in most cities. Power is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is Italian; English is fairly common in tourist areas and among younger people. Mealtimes run later (lunch after 1 pm, dinner after 8 pm), and many small shops close for a long midday break (riposo). Italians value dressing appropriately and strong family bonds; visiting a church requires covered shoulders and knees. Restaurant bills often already include a bread/service charge, and tipping is not required.",
+    seeAndDo:
+      "History and art: the Colosseum and the Vatican in Rome, the Renaissance art of Florence, the lagoon city of Venice. Nature: the Dolomites in the Alps, the cliffside terraces of Cinque Terre, Mount Vesuvius and the Amalfi Coast on the Bay of Naples, Mount Etna in Sicily, the beaches of Sardinia. Active-volcano viewing (Etna, Stromboli) should follow safety assessments from INGV (Italy's national geophysics and volcanology institute) and use a licensed guide.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable with relatively fewer people; July–August is peak season, hot in the south and on the islands, with crowded popular sights — also the Italian summer holiday, when many small shops close. Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Historic centres often have restricted traffic zones (ZTL) — check before driving in; book popular museums and monuments online ahead to skip long queues.",
+  },
+
+  rome: {
+    identity:
+      "Rome is the capital of Italy, with a city population of about 2.8 million, set on hills along the Tiber — one of the most important founding cities of Western civilisation, the centre of the ancient Roman Empire and later the centre of the Catholic Church (Vatican City sits entirely within the city of Rome as an independent enclave). The city has nearly three thousand years of continuous urban history, with ancient Roman, medieval, Renaissance and Baroque layers stacked on and below the surface.",
+    layout:
+      "Rome's old city is built on seven hills on the east bank of the Tiber, with the ancient sites — the Roman Forum, the Colosseum, the Palatine Hill — concentrated at the centre. Vatican City is on the west bank, an independent enclave, with St Peter's Basilica the highest dome in the city. Trastevere, on the south-west bank, is an old district that keeps more of the everyday street life.",
+    gettingAround:
+      "Fiumicino Airport (FCO) is south-west of the city, with the Leonardo Express (about 32 minutes) to the central station; Ciampino Airport (CIA, mainly budget carriers) is south-east. The city has a metro (two main lines — not very dense because of archaeological constraints), buses and trams; the historic centre is largely pedestrian and dense with sites, good for walking. The climate is Mediterranean: hot, dry summers and mild, rainy winters.",
+    culture:
+      "Italian is the main language, with fairly common English in tourist areas. Romans live at a more relaxed pace than northern cities, and meals run later. Visiting St Peter's Basilica and the Sistine Chapel at the Vatican requires covered shoulders and knees — inappropriate dress will be turned away. Restaurant bills often include a bread/service charge; tipping is not required. Watch for pickpockets and unofficial 'guides' touting near the sights.",
+    seeAndDo:
+      "The Colosseum and the Roman Forum (book ahead; a combined ticket with the Palatine Hill is available); the Vatican Museums, the Sistine Chapel, St Peter's Basilica (book well ahead to skip long queues); the Pantheon; the Trevi Fountain and the Spanish Steps; Piazza Navona; nightlife and small restaurants in Trastevere; the Borghese Gallery (needs a timed booking).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is hot and the most crowded. Always book the Vatican Museums and the Colosseum online ahead — on-the-day queues often run several hours. Dress appropriately for churches (no bare shoulders or knees). Watch for pickpockets, and don't keep valuables in outer pockets. The historic centre has restricted traffic zones (ZTL) — drivers should check the boundaries.",
+  },
+
+  florence: {
+    identity:
+      "Florence is in Tuscany in central Italy, on the Arno, with a city population of about 380,000 — the birthplace of the Renaissance, where 15th-century patronage by the Medici family let masters such as Leonardo, Michelangelo and Botticelli leave a huge body of enduring work, and the whole old town is a World Heritage Site.",
+    layout:
+      "Florence's old town is small, and the main sights are all walkable: the red dome of the Cathedral (Santa Maria del Fiore) is the city's landmark; the Ponte Vecchio spans the Arno, still lined with goldsmiths' shops; the Uffizi Gallery and the Piazza della Signoria are just south of the centre. Piazzale Michelangelo, across the river, is the best viewpoint over the whole city.",
+    gettingAround:
+      "Florence Airport (FLR) is very close to the city, with a tram about 20 minutes to the central station. High-speed rail from Rome is about 1.5 hours, from Milan about 1.7 hours — also very convenient. The old town is entirely walkable, one of the best Italian cities to explore on foot. The climate is temperate, hot summers and mild winters, with a bigger day–night range than coastal cities.",
+    culture:
+      "Italian is the main language, with widespread English in tourist areas. Florentines are intensely proud of their artistic heritage and keep Tuscan food traditions alive (bistecca alla fiorentina, Tuscan olive oil). The historic centre has a restricted traffic zone (ZTL) — drive in with care. Restaurant bills often include a bread/service charge.",
+    seeAndDo:
+      "The Cathedral (climb the dome, booking required); the Uffizi Gallery (the core Renaissance painting collection, book ahead); the Accademia Gallery (Michelangelo's original David); the Ponte Vecchio and the Arno riverside; sunset from Piazzale Michelangelo; a day trip south into the Tuscan hills (Siena, San Gimignano and other towns, mostly needing a car or a tour).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is hot with the most visitors. Always book the Uffizi and the Accademia (David) online ahead — on-the-day queues often exceed two hours in peak season. Dome-climbing slots are limited and need a specific time booked ahead. Driving the Tuscan countryside is very scenic but the roads have many bends — mind conditions.",
+  },
+
+  milan: {
+    identity:
+      "Milan is on the Po Valley in north-western Italy, with a metro area of about 3.2 million — Italy's financial, fashion and design centre, host of international fashion weeks and furniture fairs. The city has a long history (Leonardo's Last Supper is painted on the refectory wall of a monastery here), but overall feels modern and among the most commercially oriented of Italian cities.",
+    layout:
+      "Milan Cathedral (Gothic, a forest of spires) is the central landmark, and the cathedral square connects to the Galleria Vittorio Emanuele II — a 19th-century glass-roofed shopping arcade, one of Milan's most elegant public spaces. La Scala opera house and the Brera art gallery are just north of the cathedral. Around the city is the flat farmland of the Po Valley.",
+    gettingAround:
+      "Milan Linate Airport (LIN) is close to the city (about 8 km, with metro and bus links), while Malpensa (MXP, the main international hub) is about 50 km out, with an airport express. High-speed rail from Rome is about 3 hours, from Venice about 2.5 hours. The city has a metro (four lines, one of the densest networks in Italy) and trams. The climate is temperate continental: muggy summers and cold, foggy winters, with the flat Po Valley trapping poor air circulation and haze.",
+    culture:
+      "Italian is the main language; because of business and fashion, English is relatively common. Milanese life moves faster than other Italian cities, with careful dress and a strong sense of being the fashion capital. Restaurant bills often include a bread/service charge. The historic centre has a congestion charge zone (Area C) — driving in requires payment or a permit.",
+    seeAndDo:
+      "Milan Cathedral (climb to the roof for the city view); the Galleria Vittorio Emanuele II; La Scala opera house; the Brera art gallery; Santa Maria delle Grazie for Leonardo's Last Supper (book well ahead — one of the hardest tickets in Milan, extremely limited slots); Sforza Castle; shopping in the fashion quarter (the Quadrilatero della Moda).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; summer is muggy and winter is foggy and cold. The Last Supper needs booking weeks or even months ahead online — one of Milan's most sought-after tickets. Milan is often a hub for day trips to Lake Como, Lake Garda or the Alps. The historic centre has traffic restrictions — check before driving in.",
+  },
+
+  turin: {
+    identity:
+      "Turin is in the upper Po valley in north-western Italy, with a metro area of about 1.8 million — the birthplace of Italian unification and the country's first capital (1861–1865), and the home of Fiat's car industry. The city has regular Baroque streets and extensive arcades, hosted the 2006 Winter Olympics, and backs onto the Alps — on a clear day you can see snow mountains from the centre.",
+    layout:
+      "Turin spreads across the plain on the west bank of the Po, laid out on a regular grid with long arcades linking the buildings (you can shop in the rain without an umbrella). Piazza Castello is the heart of the centre, with the Royal Palace and Palazzo Madama. Not far west of the city are the foothills of the Alps, and the Basilica of Superga stands on a hill to the east, overlooking the city and the distant snow peaks.",
+    gettingAround:
+      "Turin Airport (TRN) is north of the city, with metro and train links. High-speed rail from Milan is about 1 hour, from Rome about 4 hours. The city has a metro (fully automatic, Italy's first such system) and trams; the historic centre is walkable. The climate is temperate continental, hot summers and cold winters, with occasional fog and a bit drier than Milan.",
+    culture:
+      "Italian is the main language; Turin people are known for being precise and reserved (closer in temperament to Switzerland or France than southern Italy, with historical ties to the nearby French border). It is one of the birthplaces of Italian chocolate (the hazelnut Gianduiotto), with a deep coffee culture. Restaurant bills often include a bread/service charge.",
+    seeAndDo:
+      "Piazza Castello, the Royal Palace and Palazzo Madama; the Egyptian Museum (Turin's Egyptian collection is one of the most important outside Cairo); the National Cinema Museum (housed in the landmark spire of the Mole Antonelliana, with a lift to the top); the Basilica of Superga for the city and Alpine panorama; 1–2 hours from Turin into the Alps for skiing or hiking.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable. Winter fog occasionally blocks the Alpine view — choose a clear day for Superga. The Egyptian Museum and the Cinema Museum both deserve half a day or more. Turin is a convenient base for the western Alps, including the area around Gran Paradiso National Park on the Italy–France border.",
+  },
+
+  venice: {
+    identity:
+      "Venice sits in a lagoon on the Adriatic coast of north-eastern Italy, made up of over a hundred small islands linked by more than 400 bridges, with a historic-centre population of about 50,000 (steadily declining, and the outflow of residents is a long-running local issue). It was one of the great medieval Mediterranean trading powers, and its canals and car-free layout are its most distinctive feature; the whole Venetian Lagoon is a World Heritage Site.",
+    layout:
+      "Venice's historic centre is built entirely on the islands of the lagoon, with the Grand Canal winding through the city in a reverse-S and serving as the main water thoroughfare. Piazza San Marco is the heart of the city, next to St Mark's Basilica and the Doge's Palace. There are no roads for cars — transport is entirely on foot through narrow lanes, or by water bus (vaporetto) and gondola. The surrounding lagoon has the colourful fishing village of Burano and the glassmaking island of Murano.",
+    gettingAround:
+      "Venice Marco Polo Airport (VCE) is on the mainland side of the lagoon's north shore, with an airport bus or water bus (about an hour) into the city. High-speed rail from Milan is about 2.5 hours, from Rome about 3.5 hours, and the station (Santa Lucia) is right on the canal. Getting around is entirely on foot and by vaporetto — no cars (and no bike lanes). The climate is Mediterranean/temperate transitional, with an 'acqua alta' (high water) phenomenon in autumn and winter that floods some low squares.",
+    culture:
+      "Italian is the main language; with so many tourists, English is widespread in tourist areas, and other European languages are often heard too. The resident population keeps falling, and over-tourism is a long-running local debate — some periods charge day-trippers an entry fee (check the latest official rules). Restaurant bills often include a bread/service charge, and canal-side restaurants are generally pricier.",
+    seeAndDo:
+      "Piazza San Marco, St Mark's Basilica, the Doge's Palace; the Rialto Bridge and the Grand Canal; a gondola or vaporetto ride on the canals; the Accademia Gallery; Burano (the colourful fishing village) and Murano (glassmaking); the Bridge of Sighs; the masked parades of Carnival (February, dates vary by year).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable and relatively less crowded; July–August is muggy with the most visitors; November to January is the high season for acqua alta — check the tide forecast before heading out, and elevated walkways go up in some areas. Day-trippers may need to pay an entry fee (check the latest official policy). Canal-side restaurants are pricier — a few streets inland usually offers better value.",
+  },
+
+  bologna: {
+    identity:
+      "Bologna is on the edge of the Po Valley at the northern foot of the Apennines in north-eastern Italy, with a metro area of about 1 million — the capital of Emilia-Romagna. It is home to the world's oldest continuously operating university (the University of Bologna, founded in 1088), and is widely regarded as one of Italy's gastronomic capitals — Bolognese ragù, Parmesan cheese and Parma ham all come from this area.",
+    layout:
+      "Bologna's old town is marked by two leaning towers (the Asinelli and the Garisenda), and its roughly 40 km of covered arcades (a World Heritage Site) are its most distinctive streetscape — you can walk almost the whole city without an umbrella in the rain. Piazza Maggiore is the heart of the centre, with the Basilica of San Petronio on its south side. Because of its extensive red-brick buildings, the old town is nicknamed 'the Red City'.",
+    gettingAround:
+      "Bologna Airport (BLQ) is north-west of the city, with a monorail (the Marconi Express) about 7 minutes to the central station. Bologna is a key hub of the Italian high-speed rail network — about 1.5–2 hours from Rome, about 1 hour from Milan, about 35 minutes from Florence — and is often used as a stopover. The city has buses, and walking the arcaded old town is pleasant. The climate is temperate continental, muggy summers and cold, foggy winters.",
+    culture:
+      "Italian is the main language; the university-town character brings a strong young and student atmosphere, with relatively common English. Bologna people are intensely proud of their food tradition (the authentic local sauce is called ragù, usually served with tagliatelle rather than spaghetti). Restaurant bills often include a bread/service charge.",
+    seeAndDo:
+      "Climbing the Asinelli Tower for the city view (several hundred steps); walking the arcades; Piazza Maggiore and the Basilica of San Petronio; the old campus and anatomical theatre of the University of Bologna; food markets and delicatessens for local ham and cheese; as a rail hub, easy day trips to Florence or Ravenna (Byzantine mosaics).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable. Bologna has far fewer visitors than Florence or Venice and is relatively affordable, a good base for experiencing 'everyday Italy'. As a high-speed rail hub, it works well as a base for several day trips.",
+  },
+
+  naples: {
+    identity:
+      "Naples is on the Bay of Naples in southern Italy, with a metro area of about 3 million — the largest city in southern Italy and one of the oldest cities in the Mediterranean (founded by Greeks in the 6th century BC). It is the birthplace of the Margherita pizza, and the city's character is loud, dense and full of everyday street life, in sharp contrast to the order of northern cities. Mount Vesuvius sits across the bay, and its eruption in 79 AD buried the city of Pompeii.",
+    layout:
+      "Naples's old town is built on the hills around the bay, with narrow, dense streets, and the historic centre is a World Heritage Site. Via San Biagio dei Librai (Spaccanapoli) is the old town's main axis, lined with Baroque churches and street life. South-east along the bay, the full cone of Mount Vesuvius is visible, and Capri lies out in the bay. To the west, the Campi Flegrei is an active volcanic-geothermal area.",
+    gettingAround:
+      "Naples Airport (NAP) is very close to the city, with an airport bus. High-speed rail from Rome is about 1–1.5 hours. The city has a metro (some stations decorated with contemporary art, sights in themselves), buses and funiculars (linking hillside districts); the old town is dense and walkable but crowded and noisy, so watch your belongings. Regional trains (the Circumvesuviana) run to Pompeii and Herculaneum. The climate is Mediterranean, hot summers and mild winters, with a mild bay microclimate.",
+    culture:
+      "Italian is the main language, with a distinct local Neapolitan dialect. Naples people are known for warmth, directness and a strong street life, and traffic and public order are looser than in the north. Authentic Neapolitan pizza has an official certification standard (AVPN), which locals take seriously. Restaurant bills often include a bread/service charge. Pickpocketing is more common near sights and stations — keep a close eye on belongings.",
+    seeAndDo:
+      "The old town's Spaccanapoli and its many Baroque churches; the National Archaeological Museum of Naples (the core collection of finds from Pompeii); the metro art stations; the Circumvesuviana train to the ruins of Pompeii (a guide or booked tour helps for historical context); hiking to the summit of Vesuvius (official trails, with visitor limits); a boat to Capri or the Amalfi Coast (tickets tight in peak season).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is hot. Pompeii is very large — allow half a day or more, with water and sun protection. The Vesuvius trail has official visitor limits and opening hours — check the website before going. Naples needs more care about safety than most Italian cities — keep valuables out of sight and avoid quiet back streets at night.",
+  },
+
+  bari: {
+    identity:
+      "Bari is on the Adriatic coast of Puglia in south-eastern Italy, with a metro area of about 750,000 — the capital of Puglia and an important ferry port to Greece, Albania and other Balkan destinations. The city is known for holding the relics of St Nicholas (one basis for the Santa Claus figure), and its old town is a well-preserved maze of white limestone lanes.",
+    layout:
+      "Old Bari (Bari Vecchia) is built on a small peninsula reaching into the sea, its streets narrow and maze-like, with the Basilica of San Nicola and the cathedral inside. The new town is a regular grid, built to 19th-century planning ideas, a sharp contrast to the old town. Inland from the city are Puglia's typical olive-grove plains, with the limestone Alta Murgia plateau to the north and, farther north still, the Gargano Promontory.",
+    gettingAround:
+      "Bari Airport (BRI) is about 8 km from the city, with train and airport bus links. High-speed rail from Rome is about 4 hours (many people fly instead). The city has buses and a seafront promenade; the old town is walkable. Ferries run to Greece (Patras, Corfu and others) and Albania. The climate is Mediterranean, hot and dry in summer, mild and rainy in winter, drier than northern Italian cities.",
+    culture:
+      "Italian is the main language, with distinctive Puglian dialect words. Bari people are proud of their local food (orecchiette, ear-shaped hand-made pasta) and the Feast of St Nicholas (May, with a seaborne procession). Restaurant bills often include a bread/service charge.",
+    seeAndDo:
+      "The old town's maze of lanes and the Basilica of San Nicola; the cathedral; the everyday street scene of residents hand-making orecchiette outdoors; the seafront promenade; an hour north to the limestone Alta Murgia plateau (prehistoric sites and karst landforms) or 'the town of stone houses', Alberobello (a World Heritage Site of conical-roofed trulli); farther north, the coast and forests of the Gargano Promontory.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is hot but also the season for Puglia's beaches. The old town's lanes are maze-like — explore in daylight first to get your bearings. Day trips to Alberobello and the Alta Murgia suit a car or a tour, as public transport is limited.",
+  },
+
+  palermo: {
+    identity:
+      "Palermo is the capital of Sicily, on a bay on the island's north-west coast, with a metro area of about 1.3 million. It was ruled in turn by Phoenicians, Greeks, Romans, Arabs and Normans, and its architecture and culture blend several Mediterranean traditions — the Norman-Arab palaces and churches are Palermo's most distinctive landmark, listed as a World Heritage Site.",
+    layout:
+      "The core of Palermo's old town is the Quattro Canti crossroads, where four main streets meet, dividing four historic quarters. The Norman Palace and the Palatine Chapel (with Byzantine mosaics) are the city's most important monuments. Palermo Cathedral blends architectural styles from several eras. The city backs onto Monte Pellegrino and faces an open bay.",
+    gettingAround:
+      "Palermo Airport (PMO) is about 35 km from the city, with airport bus and train links. High-speed/long-distance rail to Naples or Rome takes a long time (most people fly or take the ferry). The city has buses and trams; the old town is walkable but narrow and crowded. The climate is Mediterranean, hot and dry in summer, mild and rainy in winter, one of the warmer cities in Italy.",
+    culture:
+      "Italian is the main language, with distinctive Sicilian dialect words and accent. Palermo's street markets (such as the Ballarò market) are central to local life, intense in sound, smell and colour. Restaurant bills often include a bread/service charge, and street food (fried chickpea fritters, panelle; fried rice balls, arancina) is good value.",
+    seeAndDo:
+      "The Norman Palace and the Palatine Chapel; Palermo Cathedral; the Quattro Canti and the Teatro Massimo; the Ballarò and Vucciria markets; Monreale Cathedral (out of town, mosaics on a par with Ravenna, worth the trip); along the coast to Mondello for the Norman-era Church of Santa Maria dell'Ammiraglio.",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is hot. The old town's narrow streets have somewhat chaotic traffic — watch for cars when crossing. Street markets close relatively early in the evening — go in daylight. Monreale needs a dedicated bus trip or a hired car — allow half a day.",
+  },
+
+  catania: {
+    identity:
+      "Catania is on the east coast of Sicily, right beside Mount Etna, Europe's highest active volcano, with a metro area of about 780,000. The city has repeatedly been destroyed and rebuilt by Etna's lava flows and earthquakes; the current Baroque old town was built after the great earthquake of 1693, largely using Etna's black volcanic stone, earning it the nickname 'the Black Baroque city' — a World Heritage Site.",
+    layout:
+      "Catania's old town centres on the Cathedral square, with the 'Elephant Fountain' (a black basalt Roman-era elephant statue as its base) at the middle, the city's emblem. The old town's streets are paved with black volcanic stone, and building façades often show black-and-white volcanic-stone decoration. Mount Etna is to the north-west of the city, and on a clear day you can see the plume from its summit.",
+    gettingAround:
+      "Catania Airport (CTA) is very close to the city, with an airport bus. The city has buses and a short metro (built using converted volcanic-rock underground space). Reaching Mount Etna is by tour bus or car/tour (cable car and off-road vehicles carry visitors up to the higher crater area). The climate is Mediterranean, hot and dry in summer, with locally changeable weather influenced by Etna.",
+    culture:
+      "Italian is the main language, with Sicilian dialect common. Catania people have a strong sense of living alongside the volcano — both wary of and dependent on it (volcanic-ash soil makes the surrounding vineyards and citrus groves very fertile). Restaurant bills often include a bread/service charge.",
+    seeAndDo:
+      "The Cathedral square and the Elephant Fountain; the Benedictine Monastery (a World Heritage Site with layers of Roman and Byzantine remains inside); La Pescheria (a lively early-morning fish market); climbing Mount Etna (with a licensed guide, following the day's INGV safety notices for how high you can go — the summit crater area is generally off-limits); along the coast to Taormina (a clifftop old town with Greek theatre ruins).",
+    whenAndTips:
+      "April–June and September–October are the most comfortable; July–August is hot. Etna is an active volcano — always climb with a licensed guide and follow the day's official range, never approaching fumaroles or lava areas on your own. Taormina is a popular day trip and traffic is heavy in peak season — go early or take the train.",
+  },
+
+  cagliari: {
+    identity:
+      "Cagliari is the capital of Sardinia, on a bay on the island's south coast, with a metro area of about 430,000 — Sardinia's political and economic centre. Sardinia is one of the oldest landmasses in the Mediterranean, and it had a distinct prehistoric Nuragic civilisation — thousands of megalithic tower structures called nuraghi are scattered across the island, some listed as (or part of) World Heritage — giving it a different historical thread from mainland Italy.",
+    layout:
+      "Cagliari's old town is built on a hill overlooking the bay, known as the 'Castello' district, keeping the walls and towers built during the period of Pisan rule (13th century). Below the city is the Molentargius saltwater lagoon, home to flamingos, and from the high old town you can see the bay, the salt lake and the city all at once.",
+    gettingAround:
+      "Cagliari Airport (CAG) is about 7 km from the city, with bus and train links. High-speed rail does not reach Sardinia — travel to and from mainland Italy is mainly by air or ferry (about 8 hours to Civitavecchia near Rome). The city has buses and light rail; the Castello district needs climbing. The climate is Mediterranean, hot, dry and low-rainfall in summer, mild in winter.",
+    culture:
+      "Italian is the main language; Sardinian (a Romance language quite different from Italian) is still used day to day on the island, with some bilingual signs. Sardinians are proud of the island's distinct history and culture (the Nuragic civilisation, traditional mask festivals), and the food is its own tradition (thin pane carasau bread, porceddu roast suckling pig). Restaurant bills often include a bread/service charge.",
+    seeAndDo:
+      "The Castello walls and towers for the bay panorama; the Cagliari National Archaeological Museum (the core Nuragic-civilisation collection); Molentargius Lake for flamingos; Poetto Beach (reachable from the city centre); nuraghi sites out of town (such as Su Nuraxi at Barumini, a World Heritage Site, needing a car or a tour); the sand dunes of Piscinas on the 'Green Coast' in the south-west (about 1.5 hours by car).",
+    whenAndTips:
+      "May–June and September–October are the most comfortable; July–August is hot but is also the high season for Sardinia's beaches, with more people and higher prices. Inland transport is limited — driving is recommended for the nuraghi sites and the south-west coast. There is no high-speed rail link between Sardinia and mainland Italy — travel between them is by air or ferry, so plan timing and schedules.",
+  },
 };
