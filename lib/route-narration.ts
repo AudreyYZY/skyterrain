@@ -734,6 +734,77 @@ export const ROUTE_NARRATION: Record<
       "There is no shade on the dunes; summer midday is very hot, so carry water and sun protection, and when the wind picks up there is blowing sand — protect your eyes and camera. Local public transport is infrequent, so a hire car or charter is usual for getting around.",
     },
   },
+
+  "pvg-hnd": {
+    study: {
+    "zh-CN":
+      "上海飞东京，是从中国东部的大平原，越过东海，飞到日本本州的大平原。起飞时脚下是长江三角洲——长江最后一段淤积、加上人工围垦形成的低平原，河网最密、城镇连成一片。" +
+      "离开海岸线，下面就是东海，一片开阔的浅海，看不到岸。航程大部分在海上，晴天能看到零星的岛屿和往来的货船。" +
+      "接近日本时，海上先出现一座轮廓极其对称的圆锥形雪山，那是富士山——一座孤立的层状火山，从飞机上很远就能认出来。越过富士所在的丘陵，进入关东平原：日本面积最大的平原，几乎被东京都市圈完全覆盖，方格街区一直铺到山脚。飞机沿东京湾下降到羽田。一趟航班，把亚欧大陆边缘的三角洲和岛国的平原连在一起。",
+    "en-US":
+      "Shanghai to Tokyo flies from the great plain of eastern China, across the East China Sea, to the great plain of Honshu. On take-off you are over the Yangtze Delta — the low plain of the river's final reach, with the densest water network and continuous built-up land." +
+      "Past the coast is the East China Sea, an open shallow sea with no land in sight. Most of the flight is over water, with scattered islands and cargo ships visible on a clear day." +
+      "Approaching Japan, an almost perfectly symmetrical snow-capped cone appears out of the sea: Mount Fuji, an isolated stratovolcano recognisable from far off. Past the hills around Fuji you cross the Kanto Plain — the largest plain in Japan, almost entirely covered by the Tokyo metropolitan area, its grid of blocks reaching the foot of the mountains. The plane descends along Tokyo Bay to Haneda. One flight has joined a delta on the edge of the Eurasian landmass to the plain of an island country.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到东京约三小时。两座城市都在东部平原上，气候接近：夏季闷热多雨，冬季东京更干冷、少雪。" +
+      "东京是日本的门户和最大城市，成田机场离市区较远（快线约一小时），羽田近得多。市内地铁和 JR 线密如蛛网，一张 Suica/PASMO 刷遍全城。饮食、购物、博物馆、近郊的镰仓箱根日光都很方便。" +
+      "入境日本对肉类、水果、部分药品有限制，如实申报。签证政策按国籍不同，以日本外务省最新公布为准，行前确认并留出办理时间。地震偶发，留意住处的避难指引。",
+    "en-US":
+      "Shanghai to Tokyo is about three hours. Both cities are on eastern plains with similar climates: hot, humid summers, while Tokyo's winters are drier and colder with little snow." +
+      "Tokyo is Japan's gateway and largest city; Narita Airport is far from the centre (about an hour by express) and Haneda is much closer. The subway and JR lines form a web, and a single Suica or PASMO card covers the city. Food, shopping, museums, and day trips to Kamakura, Hakone and Nikko are all easy." +
+      "Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs and leave time to arrange one. Earthquakes occur occasionally; note the evacuation guidance at your accommodation.",
+    },
+  },
+
+  "pek-hnd": {
+    study: {
+    "zh-CN":
+      "北京飞东京，是从华北平原飞过黄海，到日本关东平原。起飞时脚下是华北平原的北缘——由黄河、海河等河流冲积成的大平原，方格农田和城镇密集，地面几乎没有起伏。" +
+      "往东南飞，右前方会出现一片明显隆起的丘陵，那是山东丘陵：华北平原中间的一块基岩地块，泰山等山头从平原里凸出来。" +
+      "过了山东半岛就是黄海，再往东是开阔的外海，航程中段基本在水上。接近日本时进入关东平原——日本面积最大的平原，几乎被东京都市圈完全覆盖，方格街区一直铺到丘陵脚下。飞机沿东京湾下降到羽田。一趟航班，从中国的首都飞到日本的首都，中间隔着两片相连的浅海。",
+    "en-US":
+      "Beijing to Tokyo flies from the North China Plain across the Yellow Sea to the Kanto Plain of Japan. On take-off you are over the northern edge of the North China Plain — a lowland built by the Yellow, Hai and other rivers, dense with fields and towns, almost without relief." +
+      "Flying south-east, a distinct band of higher hills appears ahead to the right: the Shandong Hills, a block of bedrock rising out of the middle of the plain, with summits such as Tai Shan standing above it." +
+      "Past the Shandong Peninsula is the Yellow Sea, and then open sea, with the middle of the flight over water. Approaching Japan you reach the Kanto Plain — the largest plain in Japan, almost entirely covered by the Tokyo metropolitan area, its grid of blocks reaching the foot of the hills. The plane descends along Tokyo Bay to Haneda. One flight has gone from the capital of China to the capital of Japan, across two connected shallow seas.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到东京约三个半小时。北京冬季干冷、春季多风沙，东京全年更湿润、冬季少雪。" +
+      "东京是日本最大的城市和主要门户。羽田机场离市区近、地铁直达；成田稍远。市内轨道交通极发达，刷 Suica/PASMO 即可。以东京为基地可去横滨、镰仓、箱根（看富士山）、日光。" +
+      "入境日本对肉类、水果、部分药品有限制，如实申报。签证按国籍不同，以日本外务省最新公布为准。夏季闷热要防暑，台风季（约7–10月）留意航班。",
+    "en-US":
+      "Beijing to Tokyo is about three and a half hours. Beijing has dry cold winters and dusty, windy springs; Tokyo is more humid year-round with little winter snow." +
+      "Tokyo is Japan's largest city and main gateway. Haneda Airport is close to the centre with a direct metro link; Narita is farther out. Urban rail is extensive — tap in with Suica or PASMO. From Tokyo you can reach Yokohama, Kamakura, Hakone (views of Fuji) and Nikko." +
+      "Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs. Summer is muggy — take heat precautions — and in the typhoon season (about July to October) watch your flights.",
+    },
+  },
+
+  "pvg-kix": {
+    study: {
+    "zh-CN":
+      "上海飞大阪，是从长江三角洲越过东海，到日本关西的城市带。起飞时脚下是长江三角洲的低平原，河网密布、城镇连片。" +
+      "离开海岸就是东海，一片开阔的浅海。航程大部分在水上，晴天能看到往来的船只。" +
+      "接近日本时，海上出现一片布满岛屿的平静水域，那是濑户内海——本州、四国、九州之间的内海，两岸是狭窄的沿海平原和港口城市，几座跨海大桥把三块陆地连起来。" +
+      "濑户内海的东端就是大阪湾，湾岸的低地是大阪平原，大阪、京都、神户连成一片。关西机场建在大阪湾南部的一座人工岛上，飞机从海上进近降落。一趟航班，从中国东部的三角洲，飞到了日本的第二大城市群。",
+    "en-US":
+      "Shanghai to Osaka flies from the Yangtze Delta across the East China Sea to the Kansai city belt of Japan. On take-off you are over the low plain of the Yangtze Delta, water-netted and city-covered." +
+      "Past the coast is the East China Sea, an open shallow sea, with most of the flight over water and passing ships visible on a clear day." +
+      "Approaching Japan, a calm island-filled stretch of water appears: the Seto Inland Sea — the sea between Honshu, Shikoku and Kyushu, with narrow coastal plains and port cities on either shore and long bridges linking the three landmasses." +
+      "At its eastern end is Osaka Bay, and the lowland along the bay is the Osaka Plain, where Osaka, Kyoto and Kobe run together. Kansai Airport is built on a man-made island in the southern part of the bay, and the plane makes its approach from the sea. One flight has gone from a delta in eastern China to the second-largest urban region of Japan.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到大阪约两个多小时。两地夏季都闷热多雨，大阪冬季较温和、少雪。" +
+      "关西机场在海上人工岛，特急或普通电车约35–75分钟到大阪、京都市区。大阪是关西的中心，以吃闻名；从这里去京都、奈良、神户、姬路都在一小时内。市内地铁加 JR 环状线，刷 IC 卡通用。" +
+      "入境日本对肉类、水果、部分药品有限制，如实申报。签证按国籍不同，以日本外务省最新公布为准。樱花期（4月初）和红叶期（11月）关西最挤，京都热门寺院要趁早。",
+    "en-US":
+      "Shanghai to Osaka is a little over two hours. Both have hot, humid summers with a lot of rain; Osaka's winters are milder with little snow." +
+      "Kansai Airport is on a man-made island in the sea, about 35–75 minutes to central Osaka and Kyoto by express or local train. Osaka is the centre of Kansai and famous for its food; Kyoto, Nara, Kobe and Himeji are all within an hour. The subway and the JR Loop Line take an IC card." +
+      "Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs. Kansai is busiest during the cherry blossom (early April) and autumn leaves (November) — visit the popular Kyoto temples early.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

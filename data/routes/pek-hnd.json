@@ -1,0 +1,47 @@
+{
+  "id": "pek-hnd",
+  "name": "北京 — 东京",
+  "nameEn": "Beijing — Tokyo",
+  "description": "华北平原 · 山东丘陵 · 黄海 · 关东平原",
+  "descriptionEn": "North China Plain · Shandong Hills · Yellow Sea · Kanto Plain",
+  "depCountry": "china",
+  "arrCountry": "japan",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA181",
+    "aircraft": "Boeing 787-9",
+    "depIata": "PEK",
+    "arrIata": "HND",
+    "durationMin": 210
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "shandong-hills"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kanto-plain"
+    },
+    {
+      "kind": "city",
+      "id": "hnd",
+      "name": "东京羽田",
+      "nameEn": "Tokyo Haneda",
+      "lat": 35.552,
+      "lon": 139.78,
+      "airport": true
+    }
+  ]
+}
