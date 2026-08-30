@@ -1,0 +1,16 @@
+{
+  "id": "ber-ham",
+  "name": "柏林 — 汉堡",
+  "nameEn": "Berlin — Hamburg",
+  "description": "北德平原",
+  "descriptionEn": "North German Plain",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH2044", "aircraft": "Airbus A320", "depIata": "BER", "arrIata": "HAM", "durationMin": 50 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "ber", "name": "柏林", "nameEn": "Berlin", "lat": 52.3667, "lon": 13.5033, "airport": true },
+    { "kind": "terrain", "terrainId": "north-german-plain" },
+    { "kind": "city", "id": "ham", "name": "汉堡", "nameEn": "Hamburg", "lat": 53.6304, "lon": 9.9882, "airport": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "fra-ham",
+  "name": "法兰克福 — 汉堡",
+  "nameEn": "Frankfurt — Hamburg",
+  "description": "福格尔斯山 · 北德平原",
+  "descriptionEn": "Vogelsberg · North German Plain",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH2032", "aircraft": "Airbus A320", "depIata": "FRA", "arrIata": "HAM", "durationMin": 65 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "fra", "name": "法兰克福", "nameEn": "Frankfurt", "lat": 50.0379, "lon": 8.5622, "airport": true },
+    { "kind": "terrain", "terrainId": "vogelsberg" },
+    { "kind": "terrain", "terrainId": "north-german-plain" },
+    { "kind": "city", "id": "ham", "name": "汉堡", "nameEn": "Hamburg", "lat": 53.6304, "lon": 9.9882, "airport": true }
+  ]
+}

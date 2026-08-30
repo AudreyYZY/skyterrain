@@ -1,0 +1,17 @@
+{
+  "id": "ber-cgn",
+  "name": "柏林 — 科隆",
+  "nameEn": "Berlin — Cologne",
+  "description": "哈茨山 · 条顿堡森林",
+  "descriptionEn": "Harz Mountains · Teutoburg Forest",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "欧洲之翼航空", "airlineEn": "Eurowings", "flightNo": "EW9012", "aircraft": "Airbus A320", "depIata": "BER", "arrIata": "CGN", "durationMin": 70 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "ber", "name": "柏林", "nameEn": "Berlin", "lat": 52.3667, "lon": 13.5033, "airport": true },
+    { "kind": "terrain", "terrainId": "harz-mountains" },
+    { "kind": "terrain", "terrainId": "teutoburg-forest" },
+    { "kind": "city", "id": "cgn", "name": "科隆", "nameEn": "Cologne", "lat": 50.8659, "lon": 7.1427, "airport": true }
+  ]
+}

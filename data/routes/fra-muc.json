@@ -1,0 +1,17 @@
+{
+  "id": "fra-muc",
+  "name": "法兰克福 — 慕尼黑",
+  "nameEn": "Frankfurt — Munich",
+  "description": "施瓦本汝拉山 · 弗兰肯汝拉山",
+  "descriptionEn": "Swabian Jura · Franconian Jura",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH100", "aircraft": "Airbus A321", "depIata": "FRA", "arrIata": "MUC", "durationMin": 60 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "fra", "name": "法兰克福", "nameEn": "Frankfurt", "lat": 50.0379, "lon": 8.5622, "airport": true },
+    { "kind": "terrain", "terrainId": "swabian-jura" },
+    { "kind": "terrain", "terrainId": "franconian-jura" },
+    { "kind": "city", "id": "muc", "name": "慕尼黑", "nameEn": "Munich", "lat": 48.3538, "lon": 11.7861, "airport": true }
+  ]
+}

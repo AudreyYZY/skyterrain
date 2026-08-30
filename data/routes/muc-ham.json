@@ -1,0 +1,18 @@
+{
+  "id": "muc-ham",
+  "name": "慕尼黑 — 汉堡",
+  "nameEn": "Munich — Hamburg",
+  "description": "图林根森林 · 哈茨山 · 北德平原",
+  "descriptionEn": "Thuringian Forest · Harz Mountains · North German Plain",
+  "depCountry": "germany",
+  "arrCountry": "germany",
+  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH2054", "aircraft": "Airbus A321", "depIata": "MUC", "arrIata": "HAM", "durationMin": 75 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "muc", "name": "慕尼黑", "nameEn": "Munich", "lat": 48.3538, "lon": 11.7861, "airport": true },
+    { "kind": "terrain", "terrainId": "thuringian-forest" },
+    { "kind": "terrain", "terrainId": "harz-mountains" },
+    { "kind": "terrain", "terrainId": "north-german-plain" },
+    { "kind": "city", "id": "ham", "name": "汉堡", "nameEn": "Hamburg", "lat": 53.6304, "lon": 9.9882, "airport": true }
+  ]
+}

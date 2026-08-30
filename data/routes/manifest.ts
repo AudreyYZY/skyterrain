@@ -135,6 +135,15 @@ import madScq from "./mad-scq.json" with { type: "json" };
 import bcnPmi from "./bcn-pmi.json" with { type: "json" };
 import madTfn from "./mad-tfn.json" with { type: "json" };
 import bcnAgp from "./bcn-agp.json" with { type: "json" };
+// 德国
+import berMuc from "./ber-muc.json" with { type: "json" };
+import berHam from "./ber-ham.json" with { type: "json" };
+import berCgn from "./ber-cgn.json" with { type: "json" };
+import mucHam from "./muc-ham.json" with { type: "json" };
+import fraMuc from "./fra-muc.json" with { type: "json" };
+import fraDrs from "./fra-drs.json" with { type: "json" };
+import mucDrs from "./muc-drs.json" with { type: "json" };
+import fraHam from "./fra-ham.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -248,4 +257,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   bcnPmi,
   madTfn,
   bcnAgp,
+  berMuc,
+  berHam,
+  berCgn,
+  mucHam,
+  fraMuc,
+  fraDrs,
+  mucDrs,
+  fraHam,
 ] as unknown as FlightRoute[];
