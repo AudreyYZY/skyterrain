@@ -262,8 +262,8 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "hohhot", nameZh: "呼和浩特", nameEn: "Hohhot", country: "china", tier: "major", zone: "cn-north",
     lon: 111.7492, lat: 40.8424,
-    airport: { iata: "HET", nameZh: "呼和浩特白塔国际机场", nameEn: "Hohhot Baita Int'l", lon: 111.824, lat: 40.851 },
-    source: "呼和浩特市中心 40.8424,111.7492；HET 机场：公开资料",
+    airport: { iata: "HET", nameZh: "呼和浩特盛乐国际机场", nameEn: "Hohhot Shengle Int'l", lon: 111.573, lat: 40.480 },
+    source: "呼和浩特市中心 40.8424,111.7492；HET 机场：白塔机场迁建为盛乐国际机场（和林格尔县，2026 转场投用），IATA/ICAO 不变，坐标 40.480,111.573",
   },
   {
     id: "shenyang", nameZh: "沈阳", nameEn: "Shenyang", country: "china", tier: "major", zone: "cn-northeast",
@@ -328,8 +328,8 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "urumqi", nameZh: "乌鲁木齐", nameEn: "Ürümqi", country: "china", tier: "major", zone: "cn-northwest",
     lon: 87.6168, lat: 43.8256,
-    airport: { iata: "URC", nameZh: "乌鲁木齐地窝堡国际机场", nameEn: "Ürümqi Diwopu Int'l", lon: 87.474, lat: 43.907 },
-    source: "乌鲁木齐市中心 43.8256,87.6168；URC 机场：公开资料",
+    airport: { iata: "URC", nameZh: "乌鲁木齐天山国际机场", nameEn: "Ürümqi Tianshan Int'l", lon: 87.474, lat: 43.907 },
+    source: "乌鲁木齐市中心 43.8256,87.6168；URC 机场：2025-03 民航局批复由「地窝堡」更名「天山」，IATA/位置不变",
   },
   {
     id: "hongkong", nameZh: "香港", nameEn: "Hong Kong", country: "china", tier: "major", zone: "cn-hmt",
