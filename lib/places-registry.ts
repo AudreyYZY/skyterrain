@@ -172,6 +172,14 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "pt-algarve": { zh: "阿尔加维", en: "Algarve", order: 154 },
   "pt-madeira": { zh: "马德拉", en: "Madeira", order: 155 },
   "pt-azores": { zh: "亚速尔", en: "Azores", order: 156 },
+  // 奥地利（维也纳→蒂罗尔→萨尔茨堡→上奥地利→克恩顿→施泰尔马克→福拉尔贝格）
+  "at-wien": { zh: "维也纳", en: "Vienna", order: 160 },
+  "at-tirol": { zh: "蒂罗尔", en: "Tyrol", order: 161 },
+  "at-salzburg": { zh: "萨尔茨堡州", en: "Salzburg (State)", order: 162 },
+  "at-oberosterreich": { zh: "上奥地利", en: "Upper Austria", order: 163 },
+  "at-karnten": { zh: "克恩顿", en: "Carinthia", order: 164 },
+  "at-steiermark": { zh: "施泰尔马克", en: "Styria", order: 165 },
+  "at-vorarlberg": { zh: "福拉尔贝格", en: "Vorarlberg", order: 166 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -203,6 +211,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "germany", nameZh: "德国", nameEn: "Germany" },
   { country: "greece", nameZh: "希腊", nameEn: "Greece" },
   { country: "portugal", nameZh: "葡萄牙", nameEn: "Portugal" },
+  { country: "austria", nameZh: "奥地利", nameEn: "Austria" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1415,6 +1424,73 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "PDL", nameZh: "蓬塔德尔加达机场", nameEn: "Ponta Delgada Airport", lon: -25.6979, lat: 37.7412 },
     source: "蓬塔德尔加达市中心 37.7412,-25.6756；PDL 机场：公开资料",
   },
+  // ===== 奥地利 =====
+  {
+    id: "vienna", nameZh: "维也纳", nameEn: "Vienna", country: "austria", tier: "capital", zone: "at-wien",
+    lon: 16.3738, lat: 48.2082,
+    airport: { iata: "VIE", nameZh: "维也纳国际机场", nameEn: "Vienna International Airport", lon: 16.5697, lat: 48.1103 },
+    source: "维也纳市中心 48.2082,16.3738；VIE 机场：公开资料",
+  },
+  {
+    id: "salzburg", nameZh: "萨尔茨堡", nameEn: "Salzburg", country: "austria", tier: "major", zone: "at-salzburg",
+    lon: 13.0550, lat: 47.8095,
+    airport: { iata: "SZG", nameZh: "萨尔茨堡莫扎特机场", nameEn: "Salzburg Airport W. A. Mozart", lon: 13.0043, lat: 47.7933 },
+    source: "萨尔茨堡市中心 47.8095,13.0550；SZG 机场：公开资料",
+  },
+  {
+    id: "innsbruck", nameZh: "因斯布鲁克", nameEn: "Innsbruck", country: "austria", tier: "major", zone: "at-tirol",
+    lon: 11.4041, lat: 47.2692,
+    airport: { iata: "INN", nameZh: "因斯布鲁克机场", nameEn: "Innsbruck Airport", lon: 11.3440, lat: 47.2602 },
+    source: "因斯布鲁克市中心 47.2692,11.4041；INN 机场：公开资料",
+  },
+  {
+    id: "graz", nameZh: "格拉茨", nameEn: "Graz", country: "austria", tier: "notable", zone: "at-steiermark",
+    lon: 15.4395, lat: 47.0707,
+    airport: { iata: "GRZ", nameZh: "格拉茨机场", nameEn: "Graz Airport", lon: 15.4396, lat: 46.9911 },
+    source: "格拉茨市中心 47.0707,15.4395；GRZ 机场：公开资料",
+  },
+  {
+    id: "linz", nameZh: "林茨", nameEn: "Linz", country: "austria", tier: "notable", zone: "at-oberosterreich",
+    lon: 14.2858, lat: 48.3069,
+    airport: { iata: "LNZ", nameZh: "林茨蓝色多瑙河机场", nameEn: "Linz Blue Danube Airport", lon: 14.1875, lat: 48.2332 },
+    source: "林茨市中心 48.3069,14.2858；LNZ 机场：公开资料",
+  },
+  {
+    id: "klagenfurt", nameZh: "克拉根福", nameEn: "Klagenfurt", country: "austria", tier: "notable", zone: "at-karnten",
+    lon: 14.3050, lat: 46.6247,
+    airport: { iata: "KLU", nameZh: "克拉根福机场", nameEn: "Klagenfurt Airport", lon: 14.3377, lat: 46.6425 },
+    source: "克拉根福市中心 46.6247,14.3050；KLU 机场：公开资料",
+  },
+  {
+    id: "villach", nameZh: "菲拉赫", nameEn: "Villach", country: "austria", tier: "notable", zone: "at-karnten",
+    lon: 13.8558, lat: 46.6111,
+    airport: { iata: "KLU", nameZh: "克拉根福机场", nameEn: "Klagenfurt Airport", lon: 14.3377, lat: 46.6425 },
+    source: "菲拉赫市中心 46.6111,13.8558；本地无商业机场，最近机场为克拉根福机场（距市区约40km）：公开资料",
+  },
+  {
+    id: "hallstatt", nameZh: "哈尔施塔特", nameEn: "Hallstatt", country: "austria", tier: "notable", zone: "at-oberosterreich",
+    lon: 13.6486, lat: 47.5622,
+    airport: { iata: "SZG", nameZh: "萨尔茨堡莫扎特机场", nameEn: "Salzburg Airport W. A. Mozart", lon: 13.0043, lat: 47.7933 },
+    source: "哈尔施塔特村中心 47.5622,13.6486；本地无商业机场，最近机场为萨尔茨堡机场（距市区约70km）：公开资料",
+  },
+  {
+    id: "kitzbuhel-city", nameZh: "基茨比厄尔", nameEn: "Kitzbühel", country: "austria", tier: "notable", zone: "at-tirol",
+    lon: 12.3925, lat: 47.4467,
+    airport: { iata: "INN", nameZh: "因斯布鲁克机场", nameEn: "Innsbruck Airport", lon: 11.3440, lat: 47.2602 },
+    source: "基茨比厄尔市中心 47.4467,12.3925；本地无商业机场，最近机场为因斯布鲁克机场（距市区约80km）：公开资料",
+  },
+  {
+    id: "bregenz", nameZh: "布雷根茨", nameEn: "Bregenz", country: "austria", tier: "notable", zone: "at-vorarlberg",
+    lon: 9.7471, lat: 47.5031,
+    airport: { iata: "FDH", nameZh: "腓特烈港机场", nameEn: "Friedrichshafen Airport", lon: 9.5115, lat: 47.6713 },
+    source: "布雷根茨市中心 47.5031,9.7471；本地无商业机场，最近机场为德国腓特烈港机场（距市区约25km）：公开资料",
+  },
+  {
+    id: "zell-am-see", nameZh: "采尔湖畔采尔", nameEn: "Zell am See", country: "austria", tier: "notable", zone: "at-salzburg",
+    lon: 12.7942, lat: 47.3239,
+    airport: { iata: "SZG", nameZh: "萨尔茨堡莫扎特机场", nameEn: "Salzburg Airport W. A. Mozart", lon: 13.0043, lat: 47.7933 },
+    source: "采尔湖畔采尔市中心 47.3239,12.7942；本地无商业机场，最近机场为萨尔茨堡机场（距市区约80km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1437,6 +1513,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   germany: "europe",
   greece: "europe",
   portugal: "europe",
+  austria: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

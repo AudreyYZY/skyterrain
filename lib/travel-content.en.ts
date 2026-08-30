@@ -3236,4 +3236,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September has relatively stable weather and is also whale-watching season. Weather on the island is changeable and rain can come at any time — bring a waterproof jacket. It's about an hour's drive between Sete Cidades and Furnas — plan a full day for a driving loop of the island. Book flights and ferries to and from the mainland ahead; some winter flights are weather-sensitive.",
   },
+
+  "austria-overview": {
+    identity:
+      "Austria sits in Central Europe, covering about 84,000 km² with a population of roughly 9 million. It is a landlocked country, with about 62% of its territory covered by the Alps. The capital, Vienna, was once the seat of the Austro-Hungarian Empire under the Habsburg dynasty and still carries a deep classical-music and coffeehouse tradition.",
+    layout:
+      "Broadly divided into: Vienna (the capital, in the Vienna Basin in the north-east), Tyrol (Innsbruck, an Alpine ski hub), Salzburg state (Salzburg, Mozart's birthplace and gateway to the Salzkammergut lake district), Upper Austria (Linz, an industrial and cultural city on the Danube), Carinthia (Klagenfurt and Villach, the southern lake district), Styria (Graz, Austria's second city), and Vorarlberg (Bregenz, the western exclave on Lake Constance).",
+    gettingAround:
+      "Austria's federal railway (ÖBB) network is dense, with intercity express trains linking the major cities — often more convenient than flying between them. Vienna has an extensive metro and tram network. Driving is on the right; a toll sticker (Vignette) is required on motorways. The climate transitions from temperate continental to Alpine — the mountains are cold and snowy in winter, making Austria an important European ski destination, while summers are mild and good for hiking and lake holidays. Power is 230V, European two-round-pin plug.",
+    culture:
+      "The official language is German; English is widely spoken in tourist areas. Austrians value courtesy and punctuality; restaurants usually include a service charge, and an additional 5–10% tip or rounding up is customary. Coffeehouse culture runs especially deep in Vienna — \"Viennese Coffee House Culture\" was inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Austria has a rich classical-music tradition, with composers such as Mozart, Haydn and Schubert all leaving major marks here.",
+    seeAndDo:
+      "Classical music and historic architecture: Vienna's Schönbrunn Palace, St. Stephen's Cathedral, Salzburg's old town. Alpine landforms: Grossglockner in the Hohe Tauern, the Dachstein glacier, the Krimml Waterfalls. Lake scenery: the Salzkammergut lake district (including Hallstatt), Carinthia's lakes (Wörthersee, Millstätter See).",
+    whenAndTips:
+      "May–September is best for outdoor activities and the lake district; December's Christmas markets are a winter highlight; December–March is peak Alpine ski season. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits — check the Austrian Ministry of Foreign Affairs and current Schengen regulations for specifics.",
+  },
+
+  vienna: {
+    identity:
+      "Vienna is Austria's capital and largest city, with a population of about 1.9 million. It was once the capital of the Austro-Hungarian Empire under the Habsburg dynasty and still carries deep classical-music, coffeehouse and imperial-architecture traditions.",
+    layout:
+      "The Ringstrasse encircles the old-town core, lined with landmarks including the State Opera and the Kunsthistorisches Museum; Schönbrunn Palace, the Habsburgs' summer residence, sits in the south-west of the city; St. Stephen's Cathedral is the geographic and spiritual centre of the old town.",
+    gettingAround:
+      "The airport lies about 18 km south-east of the centre, linked by the City Airport Train (CAT) and metro. Vienna's metro, tram and bus network covers the whole city and is among the most developed public transport systems in Europe. The climate is temperate continental, with mild summers (June–August) and cold winters, often snowy in December. Power is 230V, European two-round-pin plug.",
+    culture:
+      "The official language is German; English is widely spoken in tourist areas. Vienna's coffeehouse culture runs deep — sitting in a café to read, write or socialise is part of the traditional way of life, inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Schönbrunn Palace and the Hofburg; St. Stephen's Cathedral; the Vienna State Opera (book a classical concert or opera performance); the Kunsthistorisches Museum; a day trip to the Wienerwald.",
+    whenAndTips:
+      "May–September brings the most pleasant weather; December's Christmas markets are atmospheric but cold. Vienna is the main transport hub for exploring the whole of Austria and an ideal destination for classical concerts — book tickets in advance.",
+  },
+
+  salzburg: {
+    identity:
+      "Salzburg is the capital of Salzburg state, with a population of about 150,000. It is the birthplace of the composer Mozart, and its well-preserved Baroque old town was inscribed as a UNESCO World Heritage site in 1997.",
+    layout:
+      "The Salzach River divides the city into the old town and the new town; Hohensalzburg Fortress stands on a hill above the old town overlooking the city; Mozart's birthplace and his residence are important landmarks in the old town.",
+    gettingAround:
+      "The airport lies about 4 km west of the centre. The old town is walkable, and a funicular climbs to Hohensalzburg Fortress. The climate is temperate continental, with mild summers and cold, snowy winters — rainfall is comparatively abundant owing to its proximity to the Alps.",
+    culture:
+      "The official language is German. As Mozart's birthplace, Salzburg is renowned for its classical music festivals — the Salzburg Festival is one of Europe's oldest and most prestigious classical-music festivals. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Hohensalzburg Fortress; Mozart's birthplace and residence; the Cathedral Square; day trips to the Salzkammergut lake district (including Hallstatt) or Liechtensteinklamm.",
+    whenAndTips:
+      "May–September brings the most pleasant weather; during the Salzburg Festival in July–August, visitor numbers and accommodation prices rise noticeably. Salzburg is an ideal gateway to the Salzkammergut lake district and the Alps.",
+  },
+
+  innsbruck: {
+    identity:
+      "Innsbruck is the capital of Tyrol, with a population of about 130,000, set in the middle of the Inn Valley and ringed by the Alps. It has hosted the Winter Olympics twice (1964 and 1976).",
+    layout:
+      "The Golden Roof in the old-town centre is Innsbruck's landmark building; the Karwendel range rises directly north of the old town, with a cable car running straight from the city centre into the mountains; Maria-Theresien-Straße is the old town's main street.",
+    gettingAround:
+      "The airport lies about 4 km west of the centre. The old town is walkable, and several cable car lines connect the city to surrounding ski areas. The climate is Alpine, with cold, snowy winters (peak ski season) and comparatively mild summers good for hiking.",
+    culture:
+      "The official language is German. The Tyrol region preserves a strong Alpine traditional culture, including folk costume, folk music and Alpine pasture traditions. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Golden Roof and old-town streets; the Innsbruck Court Church; the Nordkette cable car (straight up to a Karwendel viewpoint); day trips to the Ötztal Alps or the Zillertal ski areas.",
+    whenAndTips:
+      "December–March is peak ski season; May–September brings mild weather good for hiking and outdoor activities. Innsbruck is an ideal base for exploring the Alps of Tyrol.",
+  },
+
+  graz: {
+    identity:
+      "Graz is the capital of Styria and Austria's second-largest city, with a population of about 290,000, set on the Mur River; its old town was inscribed as a UNESCO World Heritage site in 2000.",
+    layout:
+      "Schlossberg (Castle Hill) is the city's central high point, its clock tower a Graz landmark; the old town preserves Renaissance and Baroque architecture; the Kunsthaus Graz sits on the banks of the Mur, known for its futuristic architecture.",
+    gettingAround:
+      "The airport lies about 10 km south of the centre. The city's tram and bus network is well developed, and the old town is walkable. The climate is temperate continental, with mild summers and cold winters — rainfall is more evenly distributed than in Tyrol.",
+    culture:
+      "The official language is German. Graz is an important university city in Austria with a lively youth culture. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Schlossberg and its clock tower; the old-town streets of Graz; the Kunsthaus Graz; a walk along the Mur; day trips to Styria's wine-growing region.",
+    whenAndTips:
+      "May–September brings the most pleasant weather. Graz is an ideal base for exploring Styria and the floodplain forests of the upper Mur.",
+  },
+
+  linz: {
+    identity:
+      "Linz is the capital of Upper Austria and Austria's third-largest city, with a population of about 210,000, set on the Danube — an important industrial and cultural city.",
+    layout:
+      "The Hauptplatz (main square) is Linz's historic centre, ringed by Baroque buildings; Linz Cathedral (Neuer Dom) is one of Austria's largest churches; the Ars Electronica Center sits on the Danube, a landmark of Linz's identity as a \"city of media arts.\"",
+    gettingAround:
+      "The airport lies about 12 km south-west of the centre. The city's tram and bus network is well developed, and the old town is walkable. The climate is temperate continental, with mild summers and cold winters — typical of the Danube corridor.",
+    culture:
+      "The official language is German. Linz is an important centre for electronic and media art in Austria, and its annual Ars Electronica Festival is internationally known. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Hauptplatz and Linz Castle; the Ars Electronica Center; Linz Cathedral; a Danube river cruise; day trips to the Wachau or Hallstatt.",
+    whenAndTips:
+      "May–September brings the most pleasant weather. Linz is an important stop for exploring the Wachau and the Salzkammergut lake district.",
+  },
+
+  klagenfurt: {
+    identity:
+      "Klagenfurt is the capital of Carinthia, with a population of about 100,000, set at the eastern end of Wörthersee — an important lake-resort city in southern Austria.",
+    layout:
+      "The Neuer Platz in the old-town centre is marked by the Lindwurm dragon fountain; the old town preserves Renaissance-era architecture; the Europapark stretches along the eastern shore of Wörthersee, the city's main recreational area.",
+    gettingAround:
+      "The airport lies about 3 km north-west of the centre. The old town is walkable; buses or bicycles are recommended for reaching the Wörthersee shoreline. The climate is temperate continental, with Carinthia's comparatively warm microclimate giving it higher summer temperatures than much of the rest of Austria.",
+    culture:
+      "The official language is German. Carinthia's comparatively warm summer climate has made it a favoured summer and lake-resort destination for Austrians. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Lindwurm fountain and Neuer Platz; the Europapark; the Wörthersee lakeside resort area; day trips to the Millstätter See or Villach.",
+    whenAndTips:
+      "May–September brings the most pleasant weather and is peak season for swimming and water activities on Wörthersee. Klagenfurt is an ideal base for exploring Carinthia's lake district.",
+  },
+
+  villach: {
+    identity:
+      "Villach is Carinthia's second-largest city, with a population of about 60,000, set on the Drava River near the borders with Italy and Slovenia — an important transport hub in southern Austria.",
+    layout:
+      "The Hauptplatz in the old-town centre preserves its traditional architectural character; the Drava flows through the city, its banks a recreational area; several lakes on the southern flank of the Alps ring the surrounding area.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Klagenfurt Airport (about 40 km). The old town is walkable. The climate is temperate continental, comparatively mild owing to its position on the southern flank of the Alps.",
+    culture:
+      "The official language is German. Villach's proximity to the Italian and Slovenian borders gives it a somewhat multicultural character. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The old-town Hauptplatz; a walk along the Drava; day trips to the Warmbad Villach thermal spa resort, the Carnic Alps, or the Plöcken Pass on the Italian border.",
+    whenAndTips:
+      "May–September brings the most pleasant weather. Villach is an ideal base for exploring southern Carinthia and the Carnic Alps.",
+  },
+
+  hallstatt: {
+    identity:
+      "Hallstatt is a lakeside village in the Salzkammergut region of Upper Austria, with a population of only about 780, built against the foot of the Dachstein; it was inscribed as a UNESCO World Heritage cultural landscape in 1997.",
+    layout:
+      "The village is built along the narrow, sloping eastern shore of the Hallstättersee, its coloured houses stacked in tiers; the Marktplatz is the village centre; a funicular runs from the village up to the salt-mine visitor area on the mountain above.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Salzburg Airport (about 70 km). The village is small and best explored on foot; in peak season it gets very crowded, so plan your visit timing carefully. The climate is Alpine, with mild summers, cold winters and consistently high humidity around the lake.",
+    culture:
+      "The official language is German. Hallstatt has become an extremely popular photo destination in recent years thanks to its lake-and-mountain scenery, and the community is working out how to balance visitor management with residents' daily life. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Marktplatz and lakeside promenade; the salt-mine funicular and tour (one of Europe's oldest salt-mining sites); the Bone House (Beinhaus); the viewpoint across the lake for the classic Hallstatt panorama.",
+    whenAndTips:
+      "May–September brings the most pleasant weather; peak season (especially July–August) is extremely crowded — visit early morning or evening to avoid the busiest times. Some tourist facilities scale back in winter.",
+  },
+
+  "kitzbuhel-city": {
+    identity:
+      "Kitzbühel is a well-known Alpine ski town in Tyrol, with a population of about 8,000, set among the Kitzbühel Alps and internationally famous for the Hahnenkamm alpine skiing World Cup race held each January.",
+    layout:
+      "The old-town centre preserves a medieval street layout and colourful houses, one of the better-preserved Alpine towns in Europe; cable car stations around the town connect directly to the ski areas.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Innsbruck Airport (about 80 km). The town is best explored on foot, with cable cars and shuttle buses linking the ski areas. The climate is Alpine, with cold, snowy winters (peak ski season) and comparatively mild summers good for hiking and mountain biking.",
+    culture:
+      "The official language is German. Kitzbühel has a long ski history and was one of the first Alpine regions to develop modern skiing. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The historic old-town streets; the Hahnenkamm race course (open to visitors outside race periods); cable car rides for mountain views; day hikes in the Kitzbühel Alps.",
+    whenAndTips:
+      "December–March is peak ski season, with visitor numbers and accommodation prices rising sharply during the Hahnenkamm World Cup in January; June–September is peak season for summer hiking and mountain biking.",
+  },
+
+  bregenz: {
+    identity:
+      "Bregenz is the capital of Vorarlberg, with a population of about 30,000, set on the eastern shore of Lake Constance — Austria's westernmost city, facing Switzerland and Germany across the lake.",
+    layout:
+      "The old town sits on a hill and preserves medieval walls and streets; the newer town extends along the lakeshore, where the floating stage on the lake is the iconic venue of the Bregenz Festival; a cable car up the Pfänder offers a panoramic view of Lake Constance.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Friedrichshafen Airport in Germany (about 25 km). City buses cover the main districts, and the old town is walkable. The climate is temperate maritime, moderated by Lake Constance — milder winters and cooler summers than Austria's interior.",
+    culture:
+      "The official language is German. Vorarlberg's location bordering Switzerland and Germany gives its dialect and culture some Alemannic influence. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The lake stage (the main venue of the Bregenz Festival, held each July–August); the old-town walls and streets; the Pfänder cable car for views; a Lake Constance cruise (with views of the Swiss and German shores).",
+    whenAndTips:
+      "July–August, during the Bregenz Festival, is the liveliest time — book accommodation well ahead. May–September is best for activities along Lake Constance.",
+  },
+
+  "zell-am-see": {
+    identity:
+      "Zell am See is a lakeside town in the Pinzgau region of Salzburg state, with a population of about 10,000, set on the shore of the Zeller See at the foot of the Kitzsteinhorn — an Alpine resort offering both lake and glacier scenery.",
+    layout:
+      "The old-town centre preserves a medieval street layout along the western shore of the Zeller See; cable car stations connect the town to the Kitzsteinhorn ski area, where the summit holds snow year-round for skiing in every season.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Salzburg Airport (about 80 km). The town is best explored on foot, with bicycles available for a loop around the lake. The climate is Alpine, with cold, snowy winters and mild summers when the lake is warm enough for swimming.",
+    culture:
+      "The official language is German. Zell am See is one of the few Austrian resorts offering both lakeside summer holidays and high-Alpine skiing in one place. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The lakeside path around the Zeller See and swimming; the Kitzsteinhorn cable car (year-round snow at the summit, with views over the Hohe Tauern peaks); day trips to the Krimml Waterfalls or Hohe Tauern National Park.",
+    whenAndTips:
+      "December–April is peak ski season (the Kitzsteinhorn's year-round snow extends the season); June–September is peak season for lakeside summer activities and hiking — one of Austria's rare destinations with both a winter ski season and a summer lake season.",
+  },
 };
