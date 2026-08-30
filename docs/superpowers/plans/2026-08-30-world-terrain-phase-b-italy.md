@@ -1,5 +1,9 @@
 # Phase B — 意大利地形（≥25 个 T1/T2/T3）
 
+> **状态：完成（2026-08-30）。** 30 个条目、4 个 batch commit + 计划，分支 `feat/terrain-italy`
+> （stack 在 `feat/terrain-france` 上）。europe 145→175，southern-europe（首个南欧国家）0→30，全站 →388。
+> `check-regions` / `check-terrain-camera` 通过，浏览器逐批抽查。
+
 > 分支 `feat/terrain-italy`，stack 在 `feat/terrain-france` 上。
 > `regionId: "europe"`，`country: "italy"`，次区域 `southern-europe`（首个南欧国家）。
 > 口径：ISPRA（意大利环境保护与研究院·地质调查）/ INGV（国家地球物理与火山学研究所）/
