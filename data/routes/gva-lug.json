@@ -1,0 +1,19 @@
+{
+  "id": "gva-lug",
+  "name": "日内瓦 — 卢加诺",
+  "nameEn": "Geneva — Lugano",
+  "description": "日内瓦湖 · 伯尔尼阿尔卑斯 · 阿莱奇冰川 · 圣哥达山块",
+  "descriptionEn": "Lake Geneva · Bernese Alps · Aletsch Glacier · Gotthard Massif",
+  "depCountry": "switzerland",
+  "arrCountry": "switzerland",
+  "flight": { "airline": "瑞士国际航空", "airlineEn": "SWISS", "flightNo": "LX2870", "aircraft": "Saab 2000", "depIata": "GVA", "arrIata": "LUG", "durationMin": 42 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "gva", "name": "日内瓦", "nameEn": "Geneva", "lat": 46.2381, "lon": 6.1090, "airport": true },
+    { "kind": "terrain", "terrainId": "lake-geneva" },
+    { "kind": "terrain", "terrainId": "bernese-alps" },
+    { "kind": "terrain", "terrainId": "aletsch-glacier" },
+    { "kind": "terrain", "terrainId": "gotthard-massif" },
+    { "kind": "city", "id": "lug", "name": "卢加诺", "nameEn": "Lugano", "lat": 46.0043, "lon": 8.9106, "airport": true }
+  ]
+}

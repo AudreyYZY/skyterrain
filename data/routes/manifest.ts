@@ -93,6 +93,10 @@ import rkvIfj from "./rkv-ifj.json" with { type: "json" };
 import rkvHfn from "./rkv-hfn.json" with { type: "json" };
 import aeyEgs from "./aey-egs.json" with { type: "json" };
 import rkvHzk from "./rkv-hzk.json" with { type: "json" };
+// 瑞士国内
+import zrhLug from "./zrh-lug.json" with { type: "json" };
+import zrhGva from "./zrh-gva.json" with { type: "json" };
+import gvaLug from "./gva-lug.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -169,4 +173,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   rkvHfn,
   aeyEgs,
   rkvHzk,
+  zrhLug,
+  zrhGva,
+  gvaLug,
 ] as unknown as FlightRoute[];

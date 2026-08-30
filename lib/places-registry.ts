@@ -97,6 +97,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "is-east": { zh: "东部", en: "East", order: 73 },
   "is-north": { zh: "北部", en: "North", order: 74 },
   "is-westfjords": { zh: "西部峡湾", en: "Westfjords", order: 75 },
+  // 瑞士（中部高原→日内瓦湖区→伯尔尼高地→瓦莱→格劳宾登→提契诺）
+  "ch-plateau": { zh: "中部高原", en: "Swiss Plateau", order: 80 },
+  "ch-lake-geneva": { zh: "日内瓦湖区", en: "Lake Geneva Region", order: 81 },
+  "ch-bernese-oberland": { zh: "伯尔尼高地", en: "Bernese Oberland", order: 82 },
+  "ch-valais": { zh: "瓦莱州", en: "Valais", order: 83 },
+  "ch-graubunden": { zh: "格劳宾登州", en: "Graubünden", order: 84 },
+  "ch-ticino": { zh: "提契诺州", en: "Ticino", order: 85 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -120,6 +127,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "canada", nameZh: "加拿大", nameEn: "Canada" },
   { country: "uk", nameZh: "英国", nameEn: "United Kingdom" },
   { country: "iceland", nameZh: "冰岛", nameEn: "Iceland" },
+  { country: "switzerland", nameZh: "瑞士", nameEn: "Switzerland" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -748,6 +756,63 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "IFJ", nameZh: "伊萨菲厄泽机场", nameEn: "Ísafjörður Airport", lon: -23.1353, lat: 66.0581 },
     source: "伊萨菲厄泽 66.0748,-23.1355；IFJ 机场：公开资料",
   },
+
+  // ── 瑞士 ──
+  {
+    id: "zurich", nameZh: "苏黎世", nameEn: "Zürich", country: "switzerland", tier: "major", zone: "ch-plateau",
+    lon: 8.5417, lat: 47.3769,
+    airport: { iata: "ZRH", nameZh: "苏黎世机场", nameEn: "Zurich Airport", lon: 8.5492, lat: 47.4647 },
+    source: "苏黎世市中心 47.3769,8.5417；ZRH 机场：公开资料",
+  },
+  {
+    id: "bern", nameZh: "伯尔尼", nameEn: "Bern", country: "switzerland", tier: "capital", zone: "ch-plateau",
+    lon: 7.4474, lat: 46.9480,
+    airport: { iata: "BRN", nameZh: "伯尔尼机场", nameEn: "Bern Airport", lon: 7.4971, lat: 46.9141 },
+    source: "伯尔尼市中心 46.9480,7.4474；BRN 机场：公开资料",
+  },
+  {
+    id: "basel", nameZh: "巴塞尔", nameEn: "Basel", country: "switzerland", tier: "major", zone: "ch-plateau",
+    lon: 7.5886, lat: 47.5596,
+    airport: { iata: "BSL", nameZh: "巴塞尔-米卢斯欧洲机场", nameEn: "EuroAirport Basel-Mulhouse", lon: 7.5299, lat: 47.5896 },
+    source: "巴塞尔市中心 47.5596,7.5886；BSL 机场：公开资料（三国交界，机场主体在法国境内）",
+  },
+  {
+    id: "lucerne", nameZh: "卢塞恩", nameEn: "Lucerne", country: "switzerland", tier: "notable", zone: "ch-plateau",
+    lon: 8.3093, lat: 47.0502,
+    source: "卢塞恩市中心 47.0502,8.3093：公开资料（无机场，就近用苏黎世）",
+  },
+  {
+    id: "geneva", nameZh: "日内瓦", nameEn: "Geneva", country: "switzerland", tier: "major", zone: "ch-lake-geneva",
+    lon: 6.1432, lat: 46.2044,
+    airport: { iata: "GVA", nameZh: "日内瓦机场", nameEn: "Geneva Airport", lon: 6.1090, lat: 46.2381 },
+    source: "日内瓦市中心 46.2044,6.1432；GVA 机场：公开资料",
+  },
+  {
+    id: "lausanne", nameZh: "洛桑", nameEn: "Lausanne", country: "switzerland", tier: "notable", zone: "ch-lake-geneva",
+    lon: 6.6323, lat: 46.5197,
+    source: "洛桑市中心 46.5197,6.6323：公开资料（无机场，就近用日内瓦）",
+  },
+  {
+    id: "interlaken", nameZh: "因特拉肯", nameEn: "Interlaken", country: "switzerland", tier: "notable", zone: "ch-bernese-oberland",
+    lon: 7.8632, lat: 46.6863,
+    source: "因特拉肯 46.6863,7.8632：公开资料（无机场，铁路进入，少女峰门户）",
+  },
+  {
+    id: "zermatt", nameZh: "采尔马特", nameEn: "Zermatt", country: "switzerland", tier: "notable", zone: "ch-valais",
+    lon: 7.7491, lat: 46.0207,
+    source: "采尔马特 46.0207,7.7491：公开资料（无机动车、无机场，需在特施换齿轨火车进入）",
+  },
+  {
+    id: "st-moritz", nameZh: "圣莫里茨", nameEn: "St. Moritz", country: "switzerland", tier: "notable", zone: "ch-graubunden",
+    lon: 9.8355, lat: 46.4908,
+    source: "圣莫里茨 46.4908,9.8355：公开资料（无定期航班，就近萨梅丹通用航空机场；铁路进入）",
+  },
+  {
+    id: "lugano", nameZh: "卢加诺", nameEn: "Lugano", country: "switzerland", tier: "notable", zone: "ch-ticino",
+    lon: 8.9511, lat: 46.0037,
+    airport: { iata: "LUG", nameZh: "卢加诺-阿尼奥机场", nameEn: "Lugano Airport", lon: 8.9106, lat: 46.0043 },
+    source: "卢加诺市中心 46.0037,8.9511；LUG 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -762,6 +827,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   canada: "north-america",
   uk: "europe",
   iceland: "europe",
+  switzerland: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {
