@@ -14,6 +14,7 @@
     { "kind": "terrain", "terrainId": "lake-taupo" },
     { "kind": "terrain", "terrainId": "mount-ruapehu" },
     { "kind": "terrain", "terrainId": "tararua-range" },
+    { "kind": "feature", "name": "威灵顿港", "nameEn": "Wellington Harbour", "lon": 174.83, "lat": -41.28 },
     { "kind": "city", "id": "wlg", "name": "惠灵顿", "nameEn": "Wellington", "lat": -41.327, "lon": 174.805, "airport": true }
   ]
 }

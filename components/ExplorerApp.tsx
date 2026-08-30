@@ -21,7 +21,7 @@ import { getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
-import { routesForCountry, routeCountriesForContinent, resolveRouteWaypoints } from "@/lib/routes";
+import { routesForCountry, routeCountriesForContinent, resolveRouteWaypoints, getRouteById } from "@/lib/routes";
 import { splitSentences } from "@/lib/sentences";
 import {
   speakAndWait,
@@ -1048,6 +1048,21 @@ export default function ExplorerApp() {
   const effectiveRouteCountry =
     routeCountry && journeyCountrySlugs.includes(routeCountry) ? routeCountry : null;
 
+  // 航线飞行时：沿途航点在地图上的标注（跨大洲也显示）
+  const routeFlightLabels = useMemo(() => {
+    if (!isRouteFlying || !activeRouteId) return undefined;
+    const route = getRouteById(activeRouteId);
+    if (!route) return undefined;
+    return resolveRouteWaypoints(route).map((w) => ({
+      id: w.id,
+      name: w.name,
+      nameEn: w.nameEn,
+      lat: w.lat,
+      lon: w.lon,
+      kind: w.kind,
+    }));
+  }, [isRouteFlying, activeRouteId]);
+
   /** 关闭讲解面板 — 停止播报并清空当前地形 */
   const closePanel = () => {
     stopSpeaking();
@@ -1157,6 +1172,8 @@ export default function ExplorerApp() {
           <CesiumOverlayLabels
             mapRef={mapRef}
             isRouteFlying={isRouteFlying}
+            routeWaypoints={routeFlightLabels}
+            flyoverName={flyoverName}
             onSelect={handleSelectById}
             hoveredTerrainId={hoveredTerrainId}
             focusedTerrainId={activeTerrain?.id ?? null}

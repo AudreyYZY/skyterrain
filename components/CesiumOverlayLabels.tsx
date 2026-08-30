@@ -16,11 +16,34 @@ interface ScreenLabel {
   forced?: boolean;
 }
 
+/** 航线飞行时在地图上标注的航点（地形 / 海·海峡 / 机场），跨大洲也显示 */
+export interface RouteLabelPoint {
+  id: string;
+  name: string;
+  nameEn: string;
+  lat: number;
+  lon: number;
+  kind: "airport" | "terrain" | "city" | "feature";
+}
+
+interface RouteScreenLabel {
+  id: string;
+  text: string;
+  x: number;
+  y: number;
+  kind: RouteLabelPoint["kind"];
+  current: boolean;
+}
+
 interface CesiumOverlayLabelsProps {
   mapRef: React.RefObject<CesiumMapHandle | null>;
   /** 点击标签 → 按 terrain id 选择 */
   onSelect?: (id: string) => void;
   isRouteFlying?: boolean;
+  /** 航线飞行时沿途要标注的航点（不受当前大洲过滤）*/
+  routeWaypoints?: RouteLabelPoint[];
+  /** 当前正在飞越的航点名（中文或英文，用于高亮对应标签）*/
+  flyoverName?: string | null;
   /** 当前鼠标 hover 的地形 id — 对应标签高亮 */
   hoveredTerrainId?: string | null;
   /** 当前选中/聚焦的地形 id — 对应标签常驻高亮 */
@@ -137,13 +160,44 @@ export default function CesiumOverlayLabels({
   mapRef,
   onSelect,
   isRouteFlying = false,
+  routeWaypoints,
+  flyoverName,
   hoveredTerrainId,
   focusedTerrainId,
   activeRegion = "asia",
   language = "zh-CN",
 }: CesiumOverlayLabelsProps) {
   const [screenLabels, setScreenLabels] = useState<ScreenLabel[]>([]);
+  const [routeScreenLabels, setRouteScreenLabels] = useState<RouteScreenLabel[]>([]);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const updateRouteLabels = useCallback(() => {
+    const handle = mapRef.current;
+    if (!handle || !isRouteFlying || !routeWaypoints || routeWaypoints.length === 0) {
+      setRouteScreenLabels([]);
+      return;
+    }
+    const canvas = document.querySelector(".cesium-widget canvas") as HTMLCanvasElement | null;
+    const canvasW = canvas?.width ?? window.innerWidth;
+    const canvasH = canvas?.height ?? window.innerHeight;
+    const fly = (flyoverName ?? "").trim();
+    const out: RouteScreenLabel[] = [];
+    for (const wp of routeWaypoints) {
+      const text = language === "en-US" ? wp.nameEn : wp.name;
+      const pos = handle.projectToScreen(wp.lat, wp.lon);
+      if (!pos) continue; // 地球背面的点被剔除
+      if (
+        pos.x < -EDGE_MARGIN ||
+        pos.y < -EDGE_MARGIN ||
+        pos.x > canvasW + EDGE_MARGIN ||
+        pos.y > canvasH + EDGE_MARGIN
+      )
+        continue;
+      const current = fly.length > 0 && (fly === text || fly.includes(wp.name) || fly.includes(wp.nameEn));
+      out.push({ id: wp.id, text, x: pos.x, y: pos.y, kind: wp.kind, current });
+    }
+    setRouteScreenLabels(out);
+  }, [mapRef, isRouteFlying, routeWaypoints, flyoverName, language]);
 
   const updateLabels = useCallback(() => {
     const handle = mapRef.current;
@@ -242,18 +296,59 @@ export default function CesiumOverlayLabels({
   }, [mapRef, activeRegion, hoveredTerrainId, focusedTerrainId]);
 
   useEffect(() => {
-    updateLabels();
-    intervalRef.current = setInterval(updateLabels, POLL_INTERVAL_MS);
+    const tick = () => {
+      updateLabels();
+      updateRouteLabels();
+    };
+    tick();
+    // 航线飞行时相机在动，用更短的轮询让标签跟得上
+    intervalRef.current = setInterval(tick, isRouteFlying ? 120 : POLL_INTERVAL_MS);
     return () => {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
         intervalRef.current = null;
       }
     };
-  }, [updateLabels]);
+  }, [updateLabels, updateRouteLabels, isRouteFlying]);
 
-  // 航线飞行时隐藏标签
-  if (isRouteFlying) return null;
+  // 航线飞行时：只显示沿途航点标注（跨大洲也显示），不显示常规地形标签
+  if (isRouteFlying) {
+    if (routeScreenLabels.length === 0) return null;
+    return (
+      <div className="pointer-events-none absolute inset-0 z-[15]" style={{ overflow: "hidden" }}>
+        {routeScreenLabels.map(({ id, text, x, y, kind, current }) => (
+          <div
+            key={id}
+            className="absolute whitespace-nowrap select-none"
+            style={{
+              left: x,
+              top: y,
+              transform: "translate(-50%, -50%)",
+              transition: "left 0.4s ease-out, top 0.4s ease-out, opacity 0.3s ease-out",
+              willChange: "left, top",
+              fontFamily: LABEL_FONT_FAMILY,
+              fontSize: current ? "15px" : "12px",
+              fontWeight: current ? 600 : 400,
+              lineHeight: 1.2,
+              padding: current ? "3px 9px" : "1px 6px",
+              borderRadius: "7px",
+              color: kind === "feature" ? "rgba(226,232,240,0.92)" : "#ffffff",
+              fontStyle: kind === "feature" ? "italic" : "normal",
+              background: current ? "rgba(251, 191, 36, 0.18)" : "rgba(7,10,15,0.32)",
+              boxShadow: current ? "0 0 0 1px rgba(251,191,36,0.5)" : "none",
+              WebkitTextStroke: "0.5px rgba(0,0,0,0.6)",
+              textShadow:
+                "0 0 3px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.8)",
+              opacity: current ? 1 : 0.85,
+              zIndex: current ? 2 : 1,
+            }}
+          >
+            {text}
+          </div>
+        ))}
+      </div>
+    );
+  }
   if (screenLabels.length === 0) return null;
 
   return (

@@ -27,6 +27,13 @@
       "airport": true
     },
     {
+      "kind": "feature",
+      "name": "库克海峡",
+      "nameEn": "Cook Strait",
+      "lon": 174.4,
+      "lat": -41.3
+    },
+    {
       "kind": "terrain",
       "terrainId": "marlborough-sounds"
     },
