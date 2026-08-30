@@ -57,12 +57,16 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "cn-southwest": { zh: "西南", en: "Southwest", order: 15 },
   "cn-northwest": { zh: "西北", en: "Northwest", order: 16 },
   "cn-hmt": { zh: "港澳台", en: "Hong Kong · Macao · Taiwan", order: 17 },
-  // 日本
-  "jp-kanto": { zh: "关东", en: "Kanto", order: 20 },
-  "jp-kansai": { zh: "关西", en: "Kansai", order: 21 },
-  "jp-hokkaido": { zh: "北海道", en: "Hokkaido", order: 22 },
-  "jp-kyushu": { zh: "九州", en: "Kyushu", order: 23 },
-  "jp-okinawa": { zh: "冲绳", en: "Okinawa", order: 24 },
+  // 日本（大致由北到南）
+  "jp-hokkaido": { zh: "北海道", en: "Hokkaido", order: 20 },
+  "jp-tohoku": { zh: "东北", en: "Tohoku", order: 21 },
+  "jp-kanto": { zh: "关东", en: "Kanto", order: 22 },
+  "jp-chubu": { zh: "中部", en: "Chubu", order: 23 },
+  "jp-kansai": { zh: "关西", en: "Kansai", order: 24 },
+  "jp-chugoku": { zh: "中国地方", en: "Chugoku", order: 25 },
+  "jp-shikoku": { zh: "四国", en: "Shikoku", order: 26 },
+  "jp-kyushu": { zh: "九州", en: "Kyushu", order: 27 },
+  "jp-okinawa": { zh: "冲绳", en: "Okinawa", order: 28 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -382,6 +386,54 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 127.6809, lat: 26.2124,
     airport: { iata: "OKA", nameZh: "那霸机场", nameEn: "Naha", lon: 127.646, lat: 26.196 },
     source: "那霸市区 26.2124,127.6809；OKA 机场：公开资料",
+  },
+  {
+    id: "sendai", nameZh: "仙台", nameEn: "Sendai", country: "japan", tier: "notable", zone: "jp-tohoku",
+    lon: 140.8694, lat: 38.2682,
+    airport: { iata: "SDJ", nameZh: "仙台机场", nameEn: "Sendai", lon: 140.917, lat: 38.140 },
+    source: "仙台站一带 38.2682,140.8694；SDJ 机场：公开资料",
+  },
+  {
+    id: "yokohama", nameZh: "横滨", nameEn: "Yokohama", country: "japan", tier: "major", zone: "jp-kanto",
+    lon: 139.6380, lat: 35.4437,
+    airport: { iata: "HND", nameZh: "东京羽田机场", nameEn: "Tokyo Haneda", lon: 139.780, lat: 35.552 },
+    source: "横滨站/港未来一带 35.4437,139.6380；HND 机场：公开资料",
+  },
+  {
+    id: "nagoya", nameZh: "名古屋", nameEn: "Nagoya", country: "japan", tier: "major", zone: "jp-chubu",
+    lon: 136.9066, lat: 35.1815,
+    airport: { iata: "NGO", nameZh: "中部国际机场", nameEn: "Chubu Centrair Int'l", lon: 136.805, lat: 34.858 },
+    source: "名古屋站一带 35.1815,136.9066；NGO 机场：公开资料",
+  },
+  {
+    id: "kanazawa", nameZh: "金泽", nameEn: "Kanazawa", country: "japan", tier: "notable", zone: "jp-chubu",
+    lon: 136.6480, lat: 36.5780,
+    airport: { iata: "KMQ", nameZh: "小松机场（经小松转乘）", nameEn: "Komatsu (via Komatsu)", lon: 136.407, lat: 36.394 },
+    source: "金泽站一带 36.5780,136.6480；KMQ 机场：公开资料",
+  },
+  {
+    id: "nara", nameZh: "奈良", nameEn: "Nara", country: "japan", tier: "notable", zone: "jp-kansai",
+    lon: 135.8048, lat: 34.6851,
+    airport: { iata: "KIX", nameZh: "关西国际机场（经大阪转乘）", nameEn: "Kansai Int'l (via Osaka)", lon: 135.244, lat: 34.427 },
+    source: "奈良公园一带 34.6851,135.8048；KIX 机场：公开资料（奈良无民航机场，经关西/大阪转铁路）",
+  },
+  {
+    id: "hiroshima", nameZh: "广岛", nameEn: "Hiroshima", country: "japan", tier: "major", zone: "jp-chugoku",
+    lon: 132.4553, lat: 34.3853,
+    airport: { iata: "HIJ", nameZh: "广岛机场", nameEn: "Hiroshima", lon: 132.919, lat: 34.436 },
+    source: "广岛站一带 34.3853,132.4553；HIJ 机场：公开资料",
+  },
+  {
+    id: "takamatsu", nameZh: "高松", nameEn: "Takamatsu", country: "japan", tier: "notable", zone: "jp-shikoku",
+    lon: 134.0466, lat: 34.3428,
+    airport: { iata: "TAK", nameZh: "高松机场", nameEn: "Takamatsu", lon: 134.016, lat: 34.214 },
+    source: "高松站一带 34.3428,134.0466；TAK 机场：公开资料",
+  },
+  {
+    id: "nagasaki", nameZh: "长崎", nameEn: "Nagasaki", country: "japan", tier: "notable", zone: "jp-kyushu",
+    lon: 129.8737, lat: 32.7503,
+    airport: { iata: "NGS", nameZh: "长崎机场", nameEn: "Nagasaki", lon: 129.914, lat: 32.917 },
+    source: "长崎站一带 32.7503,129.8737；NGS 机场：公开资料",
   },
 ];
 
