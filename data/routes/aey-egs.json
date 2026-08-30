@@ -1,0 +1,17 @@
+{
+  "id": "aey-egs",
+  "name": "阿克雷里 — 埃伊尔斯塔济",
+  "nameEn": "Akureyri — Egilsstaðir",
+  "description": "米湖 · 克拉夫拉火山",
+  "descriptionEn": "Mývatn · Krafla",
+  "depCountry": "iceland",
+  "arrCountry": "iceland",
+  "flight": { "airline": "北方航空", "airlineEn": "Norlandair", "flightNo": "FNA401", "aircraft": "DHC-6 Twin Otter", "depIata": "AEY", "arrIata": "EGS", "durationMin": 30 },
+  "cruiseHeight": 5500,
+  "waypoints": [
+    { "kind": "city", "id": "aey", "name": "阿克雷里", "nameEn": "Akureyri", "lat": 65.6600, "lon": -18.0728, "airport": true },
+    { "kind": "terrain", "terrainId": "myvatn" },
+    { "kind": "terrain", "terrainId": "krafla" },
+    { "kind": "city", "id": "egs", "name": "埃伊尔斯塔济", "nameEn": "Egilsstaðir", "lat": 65.2833, "lon": -14.4014, "airport": true }
+  ]
+}

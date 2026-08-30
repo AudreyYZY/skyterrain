@@ -1526,4 +1526,139 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is best. Around mid-July Northern Ireland has a traditional marching season, and on the day some areas may have traffic controls or a tense atmosphere — read up in advance and simply avoid the relevant routes. It rains all year — carry an umbrella. Popular sites like the Giant's Causeway and the Dark Hedges are best visited early or on a tour.",
   },
+
+  "iceland-overview": {
+    identity:
+      "Iceland is an island nation in the North Atlantic, about 100,000 sq km, with a population of about 390,000 — the least densely populated country in Europe, with over 60% living in the capital area. It sits exactly on the Mid-Atlantic Ridge, where the North American and Eurasian plates pull apart, and over a mantle hotspot, so volcanism and geothermal activity are intense: about thirty active volcanic systems, with geysers, hot springs and lava fields everywhere. At the same time about a tenth of the country is under ice, giving a landscape of 'fire and ice' together.",
+    layout:
+      "The centre of Iceland is an uninhabitable highland desert and ice cap, and people and roads are concentrated in a ring around the coast. Route 1, the Ring Road, is about 1,330 km and links most towns and sights. The south-west has the capital area and the geothermal belt; the south coast has waterfalls, black beaches and glacier tongues; the south-east has Vatnajökull, the largest glacier in Europe, and a glacier lagoon; the east and north are fjords and farmland; the north-western Westfjords are the most remote.",
+    gettingAround:
+      "Almost all international flights land at Keflavík Airport (KEF, about 50 km south-west of Reykjavík). Getting between towns is mainly by car (the Ring Road is paved; the interior 'F-roads' are gravel, need a 4x4 and are open only in summer); there are also a few domestic flights linking Reykjavík with the north, east and Westfjords. Public buses are limited. In winter roads ice over with strong wind — always check road and weather forecasts. Tap water is excellent and drinkable. Power is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is Icelandic, and almost everyone speaks fluent English. Society is strongly egalitarian, crime is low, and nature protection is taken seriously. Icelanders use patronymics: the surname is the father's name plus -son / -dóttir, so the phone book is ordered by first name. Bathing in geothermal pools is a national habit, and you must shower thoroughly without a swimsuit before entering a pool (this is clearly required). Tipping is not expected. Prices are very high.",
+    seeAndDo:
+      "The Golden Circle (the rift at Þingvellir National Park, the Geysir geothermal area, Gullfoss waterfall); on the south coast, Seljalandsfoss and Skógafoss, black beaches, the glacier lagoon and 'Diamond Beach'; the Snæfellsnes peninsula; in the north, the Mývatn geothermal area, Dettifoss, and whale watching at Húsavík; geothermal spas such as the Blue Lagoon. Northern lights in winter (September–March), midnight sun in summer. In recent years the Reykjanes Peninsula has had several eruptions — viewable from a distance but only under official guidance.",
+    whenAndTips:
+      "June–August has the longest daylight, open interior roads and the best conditions for a Ring Road trip; September–March is aurora season but with short days, poor weather and some roads closed. The weather changes many times a day — dress in layers and carry a windproof, waterproof jacket. When driving, mind the wind on car doors, gravel roads, single-lane bridges and sheep on the road. In volcanic and geothermal areas stay strictly on the paths and follow IMO (the Icelandic Met Office) and local notices. Most foreign visitors travel visa-free for short tourism in the Schengen area or follow Schengen rules.",
+  },
+
+  reykjavik: {
+    identity:
+      "Reykjavík is the capital of Iceland, and the northernmost capital of a sovereign state in the world, with a city population of about 140,000 and, with its surroundings, about 60% of the country. The name means 'smoky bay' in Old Norse — the first settlers saw geothermal steam. The city is small and low-rise, heated by geothermal water, with almost no industrial chimneys.",
+    layout:
+      "Reykjavík is built on a peninsula, sea on three sides, with Mount Esja and distant snow peaks behind it. The old town and harbour are at the northern end of the peninsula, and the main street, Laugavegur, is for shopping and eating; the landmark Hallgrímskirkja church stands on a rise in the middle of the city, with a tower view over the coloured roofs. The city spreads south-east into suburbs.",
+    gettingAround:
+      "International flights land at Keflavík (KEF), with buses (Flybus, Airport Direct) about 45 minutes to town (there is no train). The city has buses (Strætó), but the centre is compact and walkable. Many people rent a car in Reykjavík and drive the Ring Road. The climate is temperate maritime, moderated by ocean currents: winters are not extremely cold (often around 0°C) but windy with rain and snow and short days; summers are cool with very long daylight.",
+    culture:
+      "Icelandic is the main language, with widespread English. The city's culture is active in music (several internationally known musicians are from here), literature (a very high number of books published per head) and design. Bathing in public warm pools is a way to socialise, and you must shower naked before entering. Restaurants do not require tipping. Prices are high, and eating out and alcohol are especially expensive.",
+    seeAndDo:
+      "The tower of Hallgrímskirkja; the Sun Voyager sculpture and the Harpa concert hall by the harbour; the National Museum and the Settlement Exhibition (871±2); shopping on Laugavegur; the Tjörnin pond and City Hall; whale and puffin trips from the old harbour; the city's geothermal beach and pools. Use it as a base for the Golden Circle, the south coast, or the Reykjanes volcanic activity.",
+    whenAndTips:
+      "June–August has long daylight and the best weather but the most visitors and expensive lodging; September–March you may see the aurora from the edge of the city. It is changeable and windy all year — carry a waterproof. The city is small and most sights are walkable — no need to rush into a rental car, rent it for the Ring Road. Downtown parking is paid and scarce.",
+  },
+
+  keflavik: {
+    identity:
+      "Keflavík is a port town on the Reykjanes Peninsula, officially named Reykjanesbær after merging with neighbouring towns, with a population of about 20,000. Iceland's international airport is next to it, and most visitors pass through on arrival and departure. The peninsula itself is almost entirely lava field and geothermal ground, and there have been several eruptions nearby since 2021.",
+    layout:
+      "Keflavík is on the western coast of the peninsula, with the airport to its south-west. The whole Reykjanes Peninsula is a young black lava platform, almost treeless, with geothermal steam rising from the ground; the famous Blue Lagoon, in the middle of the peninsula, is warm mineral-rich water discharged from a geothermal power station. The southern coast has cliffs, lighthouses and the 'Bridge Between Continents' over a fissure between the American and Eurasian plates.",
+    gettingAround:
+      "From the airport it is about 45 minutes by bus to Reykjavík. Many people rent a car here to start the Ring Road. The town is walkable. The climate is temperate maritime, and the open peninsula terrain makes it especially windy. Recent volcanic activity has been concentrated in the eastern part of the peninsula (around Grindavík), and roads may close temporarily.",
+    culture:
+      "Icelandic is the main language, with widespread English. There was a US military base here (left in 2006), leaving some traces and an aviation museum. The town is quiet, based on fishing and airport-related industry. Restaurants do not require tipping.",
+    seeAndDo:
+      "The Blue Lagoon geothermal spa (book online in advance); the Reykjanes geopark: the bubbling mud pots and fumaroles at Gunnuhver, Lake Grænavatn, the Bridge Between Continents, the Valahnúkamöl cliffs and lighthouse; Lake Kleifarvatn; if there is a safely opened eruption viewpoint, watch from a distance under official guidance. The 'Giant' sculpture and the Viking World museum near the airport.",
+    whenAndTips:
+      "It is convenient as the first or last stop in Iceland, and the Blue Lagoon is often scheduled for the arrival or departure day. The wind on the peninsula is extreme — take care with car doors. During volcanic activity, follow IMO (the Icelandic Met Office) and civil-protection notices, never enter a closed area, and never approach lava on your own.",
+  },
+
+  vik: {
+    identity:
+      "Vík (in full, Vík í Mýrdal) is the southernmost town in Iceland, with a population of only a few hundred, but because it is right on the Ring Road and surrounded by dense sights it is the most important tourist base on the south coast. The town is set between black sea cliffs, green mossy mountains, and the Mýrdalsjökull ice cap to the north, which sits over the Katla volcano.",
+    layout:
+      "Vík stretches along one main road, with a white hilltop church that is the landmark and the flood-refuge point. Both sides of the town have black beaches: to the west is the famous Reynisfjara black beach, with columnar basalt cliffs and sea stacks; the beach directly south of the town runs east. North over the pass are the Mýrdalsjökull ice cap and the Sólheimajökull glacier tongue.",
+    gettingAround:
+      "Vík has no airport or train; the Ring Road runs through it, and you arrive by car or tour bus. The town is walkable, but you need a car for the surrounding sights. The climate is temperate maritime, one of the wettest places in Iceland, foggy and windy. In winter roads ice over with strong wind, and the south coast road occasionally closes for wind.",
+    culture:
+      "Icelandic is the main language, and tourism is well developed, with food and lodging geared to passing visitors. The town's resources are limited, and lodging and restaurant tables are tight in peak season. Restaurants do not require tipping.",
+    seeAndDo:
+      "Reynisfjara black beach and its columnar basalt (the waves are extremely dangerous — stay well back from the waterline and never turn your back on the sea); the sea arch and lighthouse at Dyrhólaey; the hilltop church for the view; west to Skógafoss, Seljalandsfoss and the Sólheimajökull glacier (hike with a guide); east to the Fjaðrárgljúfur canyon and toward the glacier lagoon.",
+    whenAndTips:
+      "It can be visited year-round; June–September has relatively good weather and long days. The 'sneaker waves' at Reynisfjara sweep visitors out to sea every year — take the warning signs seriously, keep well back and watch the water. In winter check road.is and vedur.is (road conditions, weather, aurora forecast). The town is small — book lodging well ahead in peak season.",
+  },
+
+  hofn: {
+    identity:
+      "Höfn (in full, Höfn í Hornafirði — 'höfn' is Icelandic for 'harbour') is a fishing town in south-east Iceland, with a population of about 1,700, on a spit at the mouth of a lagoon, backed by Vatnajökull, the largest glacier in Europe, and its glacier tongues reaching down between the mountains. It is known for langoustine.",
+    layout:
+      "Höfn is at the end of a low, flat spit, water on three sides, and in good weather you can see the white edge of Vatnajökull and several peaks under the ice caps (including Iceland's highest point, Hvannadalshnúkur) from the town. The Ring Road passes north of the town; between the town and the glacier is an outwash plain and lagoon.",
+    gettingAround:
+      "Höfn has a small airport (HFN) with a few flights to and from Reykjavík; most people arrive by car on the Ring Road (about 6 hours from Reykjavík, about 2.5 hours from Vík). The town is walkable, but you need a car or a tour for the glacier. The climate is temperate maritime and windy, and the ice cap creates its own local weather.",
+    culture:
+      "Icelandic is the main language, and the town lives on fishing and tourism. There is a 'Lobster Festival' in late summer. Restaurants do not require tipping. This is one of the sunnier corners of Iceland, though the weather is still changeable.",
+    seeAndDo:
+      "Use Höfn as a base for the Jökulsárlón glacier lagoon and 'Diamond Beach' (floes washed up on the black sand) and the Fjallsárlón lagoon; glacier hikes and blue ice caves in Vatnajökull National Park (winter, with a certified guide); hiking and basalt waterfalls at Skaftafell; the harbour and lagoon walk in town, and the langoustine.",
+    whenAndTips:
+      "May–September is best for the Ring Road and glacier hikes; blue ice caves are a November–March activity. For anything on the ice (caves, glacier walks) always go with a certified guide and never go onto the ice alone. The floes and tides at the lagoon are dangerous — do not stand on the ice or get too close to the water. In winter the south-east road closes for strong wind.",
+  },
+
+  egilsstadir: {
+    identity:
+      "Egilsstaðir is the largest town in eastern Iceland, with a population of about 2,500, and the transport, service and administrative centre of the eastern fjords region. It sits on Lagarfljót, Iceland's third-largest lake — long and thin, and said in local folklore to be home to a 'lake monster'. Around it is one of Iceland's rare large areas of woodland.",
+    layout:
+      "Egilsstaðir is on flat ground in a river valley in the eastern interior, with Lagarfljót stretching south-west from the edge of town. The Ring Road passes through; east over the mountains, about 25 minutes, is the fjord port town of Seyðisfjörður (known for its rainbow street and ferry terminal). The town itself is small and practical.",
+    gettingAround:
+      "Egilsstaðir Airport (EGS) has flights to and from Reykjavík (about 1 hour) and a few regional services to Akureyri. Most people arrive by car on the Ring Road. You need a car for the surrounding fjords and waterfalls. The climate is more continental: drier than the coast, warmer in summer and colder in winter.",
+    culture:
+      "Icelandic is the main language. The east is one of the most sparsely populated and 'remote'-feeling parts of Iceland, with a slow pace. Seyðisfjörður has an active arts community and an annual music festival. Restaurants do not require tipping.",
+    seeAndDo:
+      "Hengifoss (one of Iceland's higher waterfalls, with red bands in the rock wall); a drive around Lagarfljót and the Hallormsstaður woods; over the mountains to Seyðisfjörður for the rainbow street and the fjord; north to Dettifoss and Mývatn (about 2 hours); driving the eastern fjords for fishing villages and seabirds.",
+    whenAndTips:
+      "June–September is best, with snow-free passes and the woods at their greenest. Route 93 to Seyðisfjörður often has snow and fog in winter — check road conditions before setting out. Distances between eastern sights are long and petrol stations are few — keep an eye on the fuel gauge.",
+  },
+
+  akureyri: {
+    identity:
+      "Akureyri is the largest town in northern Iceland, with a population of about 20,000, called the 'capital of the north', at the head of Eyjafjörður, Iceland's longest fjord, ringed by mountains on three sides. Although it is only about 100 km from the Arctic Circle, its position at the end of a long fjord and the ocean's moderating effect make the climate milder than you might expect, and trees grow well.",
+    layout:
+      "Akureyri is built on the hillside on the west side of the fjord, with the centre and harbour low down and the residential areas climbing the slope. Snow mountains face the town across and at the head of the fjord. The town has the northernmost botanic garden in Iceland. South along the fjord and valley is farmland; east over the mountains is the Mývatn area.",
+    gettingAround:
+      "Akureyri Airport (AEY) is south of the town, with frequent flights to and from Reykjavík (about 45 minutes), plus a few international flights and regional services. Most people arrive by car on the Ring Road (about 5 hours from Reykjavík). The town has walking and buses. The climate is temperate maritime, drier than the south, with heavy winter snow — it is one of Iceland's ski centres.",
+    culture:
+      "Icelandic is the main language, with widespread English. Akureyrians identify strongly with the 'capital of the north', and the town has a theatre, a university and an active music scene. The red heart-shaped traffic lights are a local emblem. Restaurants do not require tipping.",
+    seeAndDo:
+      "The hillside Akureyri church, the botanic garden, the old wooden houses; whale watching from the fjord (humpback, minke); an hour east to the Mývatn geothermal area, Goðafoss and Dettifoss; skiing at Hlíðarfjall in winter; in summer, south to the Ásbyrgi canyon and the Diamond Circle.",
+    whenAndTips:
+      "June–September is best, with very long daylight. Winter has heavy snow but city life continues, and it is a good place for skiing and the aurora — mountain passes need winter tyres and a road check. Whale watching is possible from both Akureyri and Húsavík, with a higher success rate from Húsavík.",
+  },
+
+  husavik: {
+    identity:
+      "Húsavík is a fishing town in northern Iceland, with a population of about 2,300, called the 'whale-watching capital of Europe' — the food-rich Skjálfandi Bay offshore gives reliable humpback sightings in summer, and sometimes blue whales. The town has an all-timber old church and a dedicated whale museum.",
+    layout:
+      "Húsavík is on the eastern shore of Skjálfandi Bay, backed by low hills, with the harbour as the centre of the town, where the whale-watching boats depart. In good weather you can see distant snow mountains across the bay. The town is very small — a few streets.",
+    gettingAround:
+      "Húsavík has a small airport (HZK) with very few flights; most people drive about an hour from Akureyri, or on the Diamond Circle. The town is walkable. The climate is temperate maritime, drier than the south, cold in winter, near the Arctic Circle but still moderated by the ocean.",
+    culture:
+      "Icelandic is the main language, and in the tourist season the town runs on whale watching and related services. The GeoSea geothermal sea-view baths on the cliff are popular. Restaurants do not require tipping. A film set in Húsavík has raised its profile in recent years.",
+    seeAndDo:
+      "Whale watching (several operators, with traditional oak boats and fast RIBs); the Whale Museum; the wooden church; the GeoSea cliff baths; south to Goðafoss, Mývatn, Dettifoss and the Ásbyrgi canyon (the Diamond Circle in a day).",
+    whenAndTips:
+      "The whale-watching high season is June–August; April and September are possible but rougher — bring a windproof, waterproof jacket, as it is cold on the boat. Take seasickness medication in advance if you are prone to it. In winter flights and some roads are limited, and most people come in summer.",
+  },
+
+  isafjordur: {
+    identity:
+      "Ísafjörður is the largest town in the Westfjords of Iceland, with a population of about 2,700. The Westfjords are the oldest and most remote corner of Iceland — a peninsula cut into pieces by countless deep fjords and steep flat-topped mountains, with few roads, many tunnels, and often snowed in during winter. Ísafjörður is its centre.",
+    layout:
+      "Ísafjörður is built on an L-shaped spit reaching into a fjord, with near-vertical flat-topped mountains on three sides and a single road in and out. The old town has a cluster of 18th–19th-century timber houses. Smaller fishing villages and abandoned settlements are scattered around the fjords.",
+    gettingAround:
+      "Ísafjörður Airport (IFJ) is in the fjord, its approach notoriously difficult and cancelled in bad weather, with flights to and from Reykjavík (about 40 minutes). By road it is a long way on the winding Westfjords roads and tunnels (about 5–6 hours from Reykjavík). The climate is temperate maritime, with the heaviest snow, strong wind, high mountains and deep valleys, and extremely changeable weather.",
+    culture:
+      "Icelandic is the main language. Westfjords people are known for resilience and hospitality, with small, close-knit communities. Ísafjörður has a music school and an annual ski/music festival around Easter. Restaurants do not require tipping.",
+    seeAndDo:
+      "The old-town timber houses and the Westfjords Heritage Museum; boat or car trips to small fishing villages in nearby fjords; hiking in the Hornstrandir nature reserve (an uninhabited area, reached by boat, with a guide); the Látrabjarg cliffs for puffins (summer, the westernmost point of Iceland); the Dynjandi waterfall. Alpine skiing in winter.",
+    whenAndTips:
+      "June–September has reliable roads and is the hiking season; the rest of the year has a high risk of heavy snow and avalanches, passes may close for days, and the itinerary needs plenty of flexibility. Flying saves time over driving but is cancelled in bad weather — have a plan B. Puffins and Hornstrandir are summer only.",
+  },
 };

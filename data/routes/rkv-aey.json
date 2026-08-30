@@ -1,0 +1,18 @@
+{
+  "id": "rkv-aey",
+  "name": "雷克雅未克 — 阿克雷里",
+  "nameEn": "Reykjavík — Akureyri",
+  "description": "辛格维利尔裂谷 · 朗格冰原 · 霍夫斯冰原",
+  "descriptionEn": "Þingvellir rift · Langjökull · Hofsjökull",
+  "depCountry": "iceland",
+  "arrCountry": "iceland",
+  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY201", "aircraft": "Bombardier Q400", "depIata": "RKV", "arrIata": "AEY", "durationMin": 45 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
+    { "kind": "terrain", "terrainId": "thingvellir" },
+    { "kind": "terrain", "terrainId": "langjokull" },
+    { "kind": "terrain", "terrainId": "hofsjokull" },
+    { "kind": "city", "id": "aey", "name": "阿克雷里", "nameEn": "Akureyri", "lat": 65.6600, "lon": -18.0728, "airport": true }
+  ]
+}

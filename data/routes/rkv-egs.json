@@ -1,0 +1,18 @@
+{
+  "id": "rkv-egs",
+  "name": "雷克雅未克 — 埃伊尔斯塔济",
+  "nameEn": "Reykjavík — Egilsstaðir",
+  "description": "辛格维利尔裂谷 · 霍夫斯冰原 · 瓦特纳冰原",
+  "descriptionEn": "Þingvellir rift · Hofsjökull · Vatnajökull",
+  "depCountry": "iceland",
+  "arrCountry": "iceland",
+  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY303", "aircraft": "Bombardier Q200", "depIata": "RKV", "arrIata": "EGS", "durationMin": 60 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
+    { "kind": "terrain", "terrainId": "thingvellir" },
+    { "kind": "terrain", "terrainId": "hofsjokull" },
+    { "kind": "terrain", "terrainId": "vatnajokull" },
+    { "kind": "city", "id": "egs", "name": "埃伊尔斯塔济", "nameEn": "Egilsstaðir", "lat": 65.2833, "lon": -14.4014, "airport": true }
+  ]
+}

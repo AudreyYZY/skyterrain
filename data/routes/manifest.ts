@@ -86,6 +86,13 @@ import lhrBfs from "./lhr-bfs.json" with { type: "json" };
 import brsEdi from "./brs-edi.json" with { type: "json" };
 import ediBfs from "./edi-bfs.json" with { type: "json" };
 import lhrAbz from "./lhr-abz.json" with { type: "json" };
+// 冰岛国内
+import rkvAey from "./rkv-aey.json" with { type: "json" };
+import rkvEgs from "./rkv-egs.json" with { type: "json" };
+import rkvIfj from "./rkv-ifj.json" with { type: "json" };
+import rkvHfn from "./rkv-hfn.json" with { type: "json" };
+import aeyEgs from "./aey-egs.json" with { type: "json" };
+import rkvHzk from "./rkv-hzk.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -156,4 +163,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   brsEdi,
   ediBfs,
   lhrAbz,
+  rkvAey,
+  rkvEgs,
+  rkvIfj,
+  rkvHfn,
+  aeyEgs,
+  rkvHzk,
 ] as unknown as FlightRoute[];

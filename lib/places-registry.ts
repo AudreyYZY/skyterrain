@@ -90,6 +90,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "uk-scotland": { zh: "苏格兰", en: "Scotland", order: 63 },
   "uk-wales": { zh: "威尔士", en: "Wales", order: 64 },
   "uk-northern-ireland": { zh: "北爱尔兰", en: "Northern Ireland", order: 65 },
+  // 冰岛（首都圈→南→东南→东→北→西部峡湾）
+  "is-southwest": { zh: "首都圈与西南", en: "Capital Region & Southwest", order: 70 },
+  "is-south": { zh: "南部海岸", en: "South Coast", order: 71 },
+  "is-southeast": { zh: "东南部", en: "Southeast", order: 72 },
+  "is-east": { zh: "东部", en: "East", order: 73 },
+  "is-north": { zh: "北部", en: "North", order: 74 },
+  "is-westfjords": { zh: "西部峡湾", en: "Westfjords", order: 75 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -112,6 +119,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "usa", nameZh: "美国", nameEn: "United States" },
   { country: "canada", nameZh: "加拿大", nameEn: "Canada" },
   { country: "uk", nameZh: "英国", nameEn: "United Kingdom" },
+  { country: "iceland", nameZh: "冰岛", nameEn: "Iceland" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -691,6 +699,55 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "BFS", nameZh: "贝尔法斯特国际机场", nameEn: "Belfast Int'l", lon: -6.2158, lat: 54.6575 },
     source: "贝尔法斯特市中心 54.5973,-5.9301；BFS 机场：公开资料",
   },
+
+  // ── 冰岛 ──
+  {
+    id: "reykjavik", nameZh: "雷克雅未克", nameEn: "Reykjavík", country: "iceland", tier: "capital", zone: "is-southwest",
+    lon: -21.9426, lat: 64.1466,
+    airport: { iata: "RKV", nameZh: "雷克雅未克机场（国内）", nameEn: "Reykjavík Airport", lon: -21.9406, lat: 64.1300 },
+    source: "雷克雅未克市中心 64.1466,-21.9426；RKV 国内机场：公开资料（国际航班用凯夫拉维克 KEF）",
+  },
+  {
+    id: "keflavik", nameZh: "凯夫拉维克", nameEn: "Keflavík", country: "iceland", tier: "notable", zone: "is-southwest",
+    lon: -22.5624, lat: 64.0049,
+    airport: { iata: "KEF", nameZh: "凯夫拉维克国际机场", nameEn: "Keflavík Int'l", lon: -22.6056, lat: 63.9850 },
+    source: "凯夫拉维克镇 64.0049,-22.5624；KEF 机场：公开资料",
+  },
+  {
+    id: "vik", nameZh: "维克", nameEn: "Vík í Mýrdal", country: "iceland", tier: "notable", zone: "is-south",
+    lon: -19.0060, lat: 63.4187,
+    source: "维克（Vík í Mýrdal）63.4187,-19.0060：公开资料（无机场，南岸环岛公路上的小镇）",
+  },
+  {
+    id: "hofn", nameZh: "赫本", nameEn: "Höfn", country: "iceland", tier: "notable", zone: "is-southeast",
+    lon: -15.2082, lat: 64.2539,
+    airport: { iata: "HFN", nameZh: "赫本机场", nameEn: "Hornafjörður Airport", lon: -15.2272, lat: 64.2956 },
+    source: "赫本（Höfn í Hornafirði）64.2539,-15.2082；HFN 机场：公开资料",
+  },
+  {
+    id: "egilsstadir", nameZh: "埃伊尔斯塔济", nameEn: "Egilsstaðir", country: "iceland", tier: "notable", zone: "is-east",
+    lon: -14.3948, lat: 65.2669,
+    airport: { iata: "EGS", nameZh: "埃伊尔斯塔济机场", nameEn: "Egilsstaðir Airport", lon: -14.4014, lat: 65.2833 },
+    source: "埃伊尔斯塔济 65.2669,-14.3948；EGS 机场：公开资料",
+  },
+  {
+    id: "akureyri", nameZh: "阿克雷里", nameEn: "Akureyri", country: "iceland", tier: "major", zone: "is-north",
+    lon: -18.1105, lat: 65.6839,
+    airport: { iata: "AEY", nameZh: "阿克雷里机场", nameEn: "Akureyri Airport", lon: -18.0728, lat: 65.6600 },
+    source: "阿克雷里 65.6839,-18.1105；AEY 机场：公开资料",
+  },
+  {
+    id: "husavik", nameZh: "胡萨维克", nameEn: "Húsavík", country: "iceland", tier: "notable", zone: "is-north",
+    lon: -17.3389, lat: 66.0449,
+    airport: { iata: "HZK", nameZh: "胡萨维克机场", nameEn: "Húsavík Airport", lon: -17.4260, lat: 65.9522 },
+    source: "胡萨维克 66.0449,-17.3389；HZK 机场：公开资料",
+  },
+  {
+    id: "isafjordur", nameZh: "伊萨菲厄泽", nameEn: "Ísafjörður", country: "iceland", tier: "notable", zone: "is-westfjords",
+    lon: -23.1355, lat: 66.0748,
+    airport: { iata: "IFJ", nameZh: "伊萨菲厄泽机场", nameEn: "Ísafjörður Airport", lon: -23.1353, lat: 66.0581 },
+    source: "伊萨菲厄泽 66.0748,-23.1355；IFJ 机场：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -704,6 +761,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   usa: "north-america",
   canada: "north-america",
   uk: "europe",
+  iceland: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

@@ -1,0 +1,16 @@
+{
+  "id": "rkv-ifj",
+  "name": "雷克雅未克 — 伊萨菲厄泽",
+  "nameEn": "Reykjavík — Ísafjörður",
+  "description": "法赫萨湾 · 斯奈山冰川",
+  "descriptionEn": "Faxaflói · Snæfellsjökull",
+  "depCountry": "iceland",
+  "arrCountry": "iceland",
+  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY141", "aircraft": "Bombardier Q200", "depIata": "RKV", "arrIata": "IFJ", "durationMin": 40 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
+    { "kind": "terrain", "terrainId": "snaefellsjokull" },
+    { "kind": "city", "id": "ifj", "name": "伊萨菲厄泽", "nameEn": "Ísafjörður", "lat": 66.0581, "lon": -23.1353, "airport": true }
+  ]
+}

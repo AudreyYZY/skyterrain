@@ -1,0 +1,18 @@
+{
+  "id": "rkv-hfn",
+  "name": "雷克雅未克 — 赫本",
+  "nameEn": "Reykjavík — Höfn",
+  "description": "海克拉火山 · 瓦特纳冰原 · 杰古沙龙冰河湖",
+  "descriptionEn": "Hekla · Vatnajökull · Jökulsárlón",
+  "depCountry": "iceland",
+  "arrCountry": "iceland",
+  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY171", "aircraft": "Bombardier Q200", "depIata": "RKV", "arrIata": "HFN", "durationMin": 50 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
+    { "kind": "terrain", "terrainId": "hekla" },
+    { "kind": "terrain", "terrainId": "vatnajokull" },
+    { "kind": "terrain", "terrainId": "jokulsarlon" },
+    { "kind": "city", "id": "hfn", "name": "赫本", "nameEn": "Höfn", "lat": 64.2956, "lon": -15.2272, "airport": true }
+  ]
+}

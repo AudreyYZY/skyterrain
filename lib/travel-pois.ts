@@ -826,6 +826,68 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "卡文山", nameEn: "Cave Hill", lon: -5.9560, lat: 54.6470, kind: "nature" },
     { nameZh: "巨人堤道", nameEn: "Giant's Causeway", lon: -6.5110, lat: 55.2408, kind: "nature" },
   ],
+
+  // ── 冰岛 ──
+  reykjavik: [
+    { nameZh: "哈尔格林姆教堂", nameEn: "Hallgrímskirkja", lon: -21.9266, lat: 64.1417, kind: "landmark" },
+    { nameZh: "哈帕音乐厅", nameEn: "Harpa Concert Hall", lon: -21.9327, lat: 64.1503, kind: "landmark" },
+    { nameZh: "“太阳航行者”雕塑", nameEn: "Sun Voyager", lon: -21.9224, lat: 64.1475, kind: "landmark" },
+    { nameZh: "冰岛国家博物馆", nameEn: "National Museum of Iceland", lon: -21.9490, lat: 64.1416, kind: "landmark" },
+    { nameZh: "劳加维格购物街", nameEn: "Laugavegur", lon: -21.9270, lat: 64.1443, kind: "district" },
+    { nameZh: "辛格维利尔国家公园", nameEn: "Þingvellir National Park", lon: -21.1281, lat: 64.2559, kind: "nature" },
+    { nameZh: "黄金瀑布与盖歇尔间歇泉", nameEn: "Gullfoss & Geysir", lon: -20.2000, lat: 64.3200, kind: "nature" },
+  ],
+  keflavik: [
+    { nameZh: "蓝湖地热温泉", nameEn: "Blue Lagoon", lon: -22.4495, lat: 63.8804, kind: "nature" },
+    { nameZh: "大陆桥", nameEn: "Bridge Between Continents", lon: -22.6740, lat: 63.8683, kind: "landmark" },
+    { nameZh: "格纳胡佛地热区", nameEn: "Gunnuhver", lon: -22.6845, lat: 63.8188, kind: "nature" },
+    { nameZh: "瓦拉赫努克海崖与灯塔", nameEn: "Valahnúkamöl & Reykjanesviti", lon: -22.7130, lat: 63.8155, kind: "nature" },
+    { nameZh: "维京世界博物馆", nameEn: "Viking World", lon: -22.5720, lat: 63.9925, kind: "landmark" },
+  ],
+  vik: [
+    { nameZh: "雷尼斯黑沙滩", nameEn: "Reynisfjara Black Beach", lon: -19.0447, lat: 63.4034, kind: "nature" },
+    { nameZh: "迪尔霍拉埃海蚀拱", nameEn: "Dyrhólaey", lon: -19.1280, lat: 63.4020, kind: "nature" },
+    { nameZh: "维克小教堂", nameEn: "Víkurkirkja", lon: -19.0060, lat: 63.4200, kind: "landmark" },
+    { nameZh: "斯科加瀑布", nameEn: "Skógafoss", lon: -19.5111, lat: 63.5320, kind: "nature" },
+    { nameZh: "费亚德拉尔峡谷", nameEn: "Fjaðrárgljúfur", lon: -18.1720, lat: 63.7710, kind: "nature" },
+    { nameZh: "索尔黑马冰川", nameEn: "Sólheimajökull", lon: -19.3670, lat: 63.5300, kind: "nature" },
+  ],
+  hofn: [
+    { nameZh: "杰古沙龙冰河湖", nameEn: "Jökulsárlón", lon: -16.1794, lat: 64.0484, kind: "nature" },
+    { nameZh: "钻石沙滩", nameEn: "Diamond Beach", lon: -16.1830, lat: 64.0430, kind: "nature" },
+    { nameZh: "菲亚德尔冰河湖", nameEn: "Fjallsárlón", lon: -16.3830, lat: 64.0130, kind: "nature" },
+    { nameZh: "斯卡夫塔山", nameEn: "Skaftafell", lon: -16.9750, lat: 64.0160, kind: "nature" },
+    { nameZh: "赫本港与潟湖", nameEn: "Höfn harbour & lagoon", lon: -15.2082, lat: 64.2539, kind: "district" },
+  ],
+  egilsstadir: [
+    { nameZh: "亨吉瀑布", nameEn: "Hengifoss", lon: -14.8830, lat: 65.0790, kind: "nature" },
+    { nameZh: "拉加尔湖", nameEn: "Lagarfljót", lon: -14.4500, lat: 65.1500, kind: "nature" },
+    { nameZh: "哈尔姆斯塔济林地", nameEn: "Hallormsstaður Forest", lon: -14.7500, lat: 65.0900, kind: "nature" },
+    { nameZh: "塞济斯菲厄泽彩虹街", nameEn: "Seyðisfjörður Rainbow Street", lon: -14.0090, lat: 65.2620, kind: "district" },
+  ],
+  akureyri: [
+    { nameZh: "阿克雷里教堂", nameEn: "Akureyrarkirkja", lon: -18.0900, lat: 65.6800, kind: "landmark" },
+    { nameZh: "阿克雷里植物园", nameEn: "Akureyri Botanical Garden", lon: -18.0930, lat: 65.6760, kind: "nature" },
+    { nameZh: "上帝瀑布", nameEn: "Goðafoss", lon: -17.5500, lat: 65.6830, kind: "nature" },
+    { nameZh: "米湖地热区", nameEn: "Lake Mývatn", lon: -17.0000, lat: 65.6000, kind: "nature" },
+    { nameZh: "Hlíðarfjall 滑雪场", nameEn: "Hlíðarfjall ski area", lon: -18.1300, lat: 65.7100, kind: "nature" },
+    { nameZh: "埃亚峡湾观鲸", nameEn: "Eyjafjörður whale watching", lon: -18.0800, lat: 65.7000, kind: "nature" },
+  ],
+  husavik: [
+    { nameZh: "胡萨维克港（观鲸）", nameEn: "Húsavík harbour (whale watching)", lon: -17.3430, lat: 66.0480, kind: "district" },
+    { nameZh: "鲸鱼博物馆", nameEn: "Húsavík Whale Museum", lon: -17.3390, lat: 66.0455, kind: "landmark" },
+    { nameZh: "木教堂", nameEn: "Húsavíkurkirkja", lon: -17.3400, lat: 66.0440, kind: "landmark" },
+    { nameZh: "GeoSea 海崖温泉", nameEn: "GeoSea Geothermal Sea Baths", lon: -17.3300, lat: 66.0530, kind: "nature" },
+    { nameZh: "黛提瀑布", nameEn: "Dettifoss", lon: -16.3847, lat: 65.8148, kind: "nature" },
+    { nameZh: "Ásbyrgi 马蹄峡谷", nameEn: "Ásbyrgi Canyon", lon: -16.5100, lat: 66.0200, kind: "nature" },
+  ],
+  isafjordur: [
+    { nameZh: "老城木屋与遗产博物馆", nameEn: "Old town & Westfjords Heritage Museum", lon: -23.1300, lat: 66.0740, kind: "district" },
+    { nameZh: "丁坚地瀑布", nameEn: "Dynjandi", lon: -23.2030, lat: 65.7350, kind: "nature" },
+    { nameZh: "拉特拉尔角海崖", nameEn: "Látrabjarg", lon: -24.5320, lat: 65.5010, kind: "nature" },
+    { nameZh: "霍恩斯特兰迪自然保护区", nameEn: "Hornstrandir Nature Reserve", lon: -22.4000, lat: 66.4200, kind: "nature" },
+    { nameZh: "博伦加维克（水族馆一带）", nameEn: "Bolungarvík", lon: -23.2540, lat: 66.1560, kind: "district" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
