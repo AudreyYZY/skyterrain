@@ -1,0 +1,17 @@
+{
+  "id": "osl-svg",
+  "name": "奥斯陆 — 斯塔万格",
+  "nameEn": "Oslo — Stavanger",
+  "description": "哈当厄高原 · 吕瑟峡湾",
+  "descriptionEn": "Hardangervidda · Lysefjord",
+  "depCountry": "norway",
+  "arrCountry": "norway",
+  "flight": { "airline": "挪威航空", "airlineEn": "Norwegian", "flightNo": "DY610", "aircraft": "Boeing 737-800", "depIata": "OSL", "arrIata": "SVG", "durationMin": 50 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "osl", "name": "奥斯陆", "nameEn": "Oslo", "lat": 60.1939, "lon": 11.1004, "airport": true },
+    { "kind": "terrain", "terrainId": "hardangervidda" },
+    { "kind": "terrain", "terrainId": "lysefjord" },
+    { "kind": "city", "id": "svg", "name": "斯塔万格", "nameEn": "Stavanger", "lat": 58.8767, "lon": 5.6378, "airport": true }
+  ]
+}

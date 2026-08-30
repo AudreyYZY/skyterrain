@@ -1,0 +1,16 @@
+{
+  "id": "trd-boo",
+  "name": "特隆赫姆 — 博德",
+  "nameEn": "Trondheim — Bodø",
+  "description": "斯瓦蒂森冰帽",
+  "descriptionEn": "Svartisen",
+  "depCountry": "norway",
+  "arrCountry": "norway",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK4110", "aircraft": "Boeing 737-700", "depIata": "TRD", "arrIata": "BOO", "durationMin": 55 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "trd", "name": "特隆赫姆", "nameEn": "Trondheim", "lat": 63.4578, "lon": 10.9240, "airport": true },
+    { "kind": "terrain", "terrainId": "svartisen" },
+    { "kind": "city", "id": "boo", "name": "博德", "nameEn": "Bodø", "lat": 67.2692, "lon": 14.3653, "airport": true }
+  ]
+}
