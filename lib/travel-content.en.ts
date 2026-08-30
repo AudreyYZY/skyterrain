@@ -296,4 +296,124 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "April–October has good water levels and scenery on the Li River, but is also the rainy season, with common showers and short downpours; July–August is hottest. Winter (December–February) is chilly with lower water, and fog when cold air arrives. Qingming, May Day, National Day and the summer holiday are peak periods — book boat tickets and Yangshuo accommodation ahead. During floods, river sections are occasionally rerouted at short notice.",
   },
+
+  nanjing: {
+    identity:
+      "Nanjing is the capital of Jiangsu and one of the main cities of the lower Yangtze, with a metropolitan population of about 9 million. It served as the capital under several dynasties, and long stretches of Ming-era city wall, several imperial tombs and Republican-era buildings give it a deep historical layering. It is an industrial and academic centre and an important transport hub for eastern China.",
+    layout:
+      "Nanjing sits on the east bank of the Yangtze among the Ningzhen hills, broken up by Purple Mountain, a string of smaller hills, Xuanwu Lake and the Qinhuai River. The old city centres on Xinjiekou; east is the wooded belt of Purple Mountain with Sun Yat-sen's Mausoleum and the Ming tombs, south is the old southern city around the Confucius Temple and the Qinhuai, and across the river is the Jiangbei new district. Low hills surround the city — it is not a plains city.",
+    gettingAround:
+      "Lukou Airport is linked to the city by metro line S1; Nanjing is a hub on the Beijing–Shanghai and other high-speed lines, about 1.5 hours to Shanghai and 3.5 hours to Beijing. The city metro network is extensive; pay by QR code. The climate is subtropical monsoon with four clear seasons: hot, muggy summers (often above 35°C in July–August — one of the famous \"furnace\" cities), damp cold winters with occasional snow, and short, comfortable springs and autumns. The food is Huaiyang style, with many duck dishes (salted duck, duck-blood vermicelli soup) and refined dim sum.",
+    culture:
+      "The local speech is the Nanjing variety of Jianghuai Mandarin, with Mandarin widely used. The city has a relatively gentle temperament and an unhurried pace. The plane-tree-lined streets were planted in the Republican era. Around Qingming there is a custom of hillside tomb-sweeping. Tipping is not customary. Many museums and memorial halls close some galleries on Mondays and require advance ID-based booking.",
+    seeAndDo:
+      "Sun Yat-sen's Mausoleum and the Ming Xiaoling tomb (Purple Mountain, half a day to a day); the Ming city wall and the Zhonghua Gate barbican; the Confucius Temple and Qinhuai River (night views and snacks); Xuanwu Lake; the Memorial Hall of the Victims of the Nanjing Massacre (a solemn site — be respectful); the Nanjing Museum; the Presidential Palace. Niushou Shan and Qixia Shan (autumn leaves) are on the outskirts.",
+    whenAndTips:
+      "Spring and autumn (March–May, September–November) are the most comfortable and the best for the plane trees and autumn colour. High summer is very hot and needs heat precautions; the plum-rain season (about mid-June to mid-July) is wet. May Day, National Day and the summer holiday are busy — book the Mausoleum and the museum early. High-speed rail links to Shanghai, Hangzhou, Yangzhou and Zhenjiang make combined trips easy.",
+  },
+
+  sanya: {
+    identity:
+      "Sanya is at the southern tip of Hainan Island and is China's main tropical beach resort city, with a resident population of about 1 million and a large influx of visitors in winter. Its draw is the year-round warm climate, the bay beaches and the cluster of resort hotels, and the city functions almost entirely around tourism and holidays.",
+    layout:
+      "The city centre is at the mouth of the Sanya River, flanked by several bays each with its own character: Dadonghai is close to the centre and convenient; Yalong Bay, about 25 km east, has good sand and mostly upmarket resorts; Haitang Bay, farther east, is the newer hotel and duty-free shopping area; while Tianya Haijiao and the Nanshan area to the west are more sightseeing. Low tropical hills rise behind the city.",
+    gettingAround:
+      "Phoenix Airport is about 15 km from the centre, with an airport express and taxis. The Hainan island-loop high-speed railway connects Sanya with Haikou, Bo'ao and Lingshui, with the station on the west side of the city. City buses and taxis are easy; getting to the bays is mostly by taxi or hotel shuttle. The climate is tropical maritime, hot all year, with a rainy and typhoon season from May to October and dry, warm, peak-season winters (December–February). Sun and UV are strong year-round.",
+    culture:
+      "Locals speak Hainanese (a Min language) and Mandarin, and many tourism workers come from off the island. The pace is slow and open-air seafood stalls are part of daily life. When buying seafood or fruit, use proper markets with clear pricing and re-weighing. For diving, speedboats and other water activities, choose licensed operators and check equipment and insurance. Tipping is not customary.",
+    seeAndDo:
+      "The beaches and water activities of Yalong, Haitang and Dadonghai bays; Wuzhizhou Island (snorkelling and diving); the Nanshan cultural park and Tianya Haijiao; the Yalong Bay tropical forest park overlooking the bay; the No. 1 Market for seafood and Luhuitou for night views. Haitang Bay has a large duty-free mall.",
+    whenAndTips:
+      "November to April has the most settled, comfortable weather and is also the most expensive and hardest to book, with New Year and Spring Festival especially tight — book well ahead. May–October is much cheaper but hot and humid with afternoon thunderstorms, and from July to October watch typhoon forecasts closely, as flights and water activities stop around storms. Use sun protection throughout, and swim only where there are lifeguards, watching for rip currents.",
+  },
+
+  lhasa: {
+    identity:
+      "Lhasa is the capital of the Tibet Autonomous Region, set in the valley of the Lhasa River, a tributary of the Yarlung Tsangpo, at about 3,650 m — the destination on this network where altitude sickness most needs to be taken seriously. The city is not large; it is Tibet's administrative, transport and cultural centre and the starting point for most Tibet itineraries.",
+    layout:
+      "Lhasa is built on a relatively flat stretch of valley on the north bank of the Lhasa River, ringed by bare high mountains. The old town centres on the Jokhang and the Barkhor circuit around it; the Potala Palace stands on Red Hill to the north-west of the old town, with the administrative and new districts to the west and the Norbulingka in the western suburbs. The city runs east–west along the valley, with farmland and higher snow ranges close outside town.",
+    gettingAround:
+      "Gonggar Airport is about 60 km south-west of the city, roughly an hour by airport bus or taxi. The Qinghai–Tibet railway station is on the south side of the city. City buses and taxis are adequate, and the old town is walkable. The climate is cold, high and dry with very strong sun: mild for much of the day, cold at night, a wide day-to-night range, and cold but often clear winters. Sun protection, warm layers and plenty of water are needed year-round.",
+    culture:
+      "Tibetan and Mandarin are spoken. Tibetan Buddhism is the main religious tradition, and monasteries and pilgrim circuits are part of daily life: at monasteries dress modestly, remove hats, keep quiet, walk clockwise, ask before photographing images, monks or ceremonies, and note that photography is usually forbidden inside the halls. The food centres on tsampa, butter tea, beef and wheat noodles.",
+    seeAndDo:
+      "The Potala Palace (advance booking, timed entry, strict security); the Jokhang and the Barkhor (the early-morning pilgrim circuit has the most atmosphere); the Norbulingka; Drepung and Sera monasteries on the hillslopes, with debating at Sera. Farther out are Yamdrok Lake and Namtso (a same-day return is tiring — an overnight is better).",
+    whenAndTips:
+      "Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — independent travel is not permitted, so arrange this through an agency well in advance. For the first day or two, slow down, avoid hard exertion, drink plenty of water and skip alcohol, and anyone with a serious heart or lung condition should get medical advice first. The better windows are roughly April–May and September–October; winter is cold but the skies are bluer and there are fewer people.",
+  },
+
+  harbin: {
+    identity:
+      "Harbin is the capital of Heilongjiang and the main city of the northern north-east, with a metropolitan population of about 5.5 million. It grew up around the railway and had a large foreign, mostly Russian, community in its early decades, which left blocks of European-style architecture and the nickname \"the Oriental Moscow\". Winters are severe, and it is the leading city for ice-and-snow tourism in China.",
+    layout:
+      "Harbin is built on the flat Northeast Plain on the south bank of the Songhua River. The core runs from Central Street (a cobbled pedestrian street) to the flood-control monument, the \"Chinese Baroque\" quarter of Laodaowai, and the area around St Sophia Cathedral; across the river are Sun Island and, in winter, the Ice and Snow World. The city stretches east–west along the river.",
+    gettingAround:
+      "Taiping Airport is about 35 km south-west of the city, with airport buses and an intercity rail link. Harbin is the northern hub of the Harbin–Dalian and Beijing–Harbin high-speed lines. The city has a metro and buses; pay by QR code. The climate is cold-temperate monsoon: short cool summers (about 23°C in July) and long, severe winters (often around -19°C in January, and able to fall below -30°C), with snow on the ground from November to March. In winter bring a heavy down coat, thick boots, a hat and gloves, and note that cameras and phones lose charge fast in the cold.",
+    culture:
+      "Northeastern Mandarin is spoken, with no barrier to standard Mandarin. The food shows Russian and mixed influences — sausage, big \"dalieba\" bread, guo bao rou, \"kill-the-pig\" stew and frozen pears are typical. The pace is unhurried, indoor heating is strong in winter, and the indoor–outdoor temperature difference is large. Tipping is not customary.",
+    seeAndDo:
+      "Central Street and St Sophia Cathedral; in winter, the Ice and Snow World, the Sun Island snow sculpture expo, and ice activities on the frozen Songhua; skiing at Yabuli, and the more distant \"Snow Town\" (in Mudanjiang, usually a separate 1–2 days — choose a reputable route). In summer, the Songhua River waterfront and Sun Island. Laodaowai for the Chinese Baroque buildings.",
+    whenAndTips:
+      "Late December to February is the ice-and-snow high season and also the coldest and most expensive time, with New Year and Spring Festival needing early booking. The Ice and Snow World usually opens in late December and closes once temperatures rise — check that year's announcement. Summer (June–August) is cool and pleasant and a good time to transfer to other parts of the north-east. Keep outdoor spells short in winter and watch for frostbite.",
+  },
+
+  qingdao: {
+    identity:
+      "Qingdao, on the southern coast of the Shandong Peninsula, is an important port and seaside city with a metropolitan population of about 7 million. It has a history of German and Japanese occupation, which left blocks of red-roofed European-style buildings in the old town; together with the bays, the beer and the seafood, this gives the city a distinct character.",
+    layout:
+      "The old town is on the hills on the east side of Jiaozhou Bay, where the streets around Zhanqiao Pier, Badaguan and Signal Hill run steeply between hill and sea; eastward along the coast are the May Fourth Square, the Olympic Sailing Centre and successive newer districts and swimming beaches; behind the city rises Mount Lao. There is no large plain — it is essentially hills and coastline.",
+    gettingAround:
+      "Jiaodong Airport is north-west of the city, linked by metro line 8 (about 50 minutes to the centre). Qingdao has high-speed rail toward Jinan, Beijing and Shanghai. The city metro and buses are convenient; the old town is hilly and walkable but tiring on the legs. The climate is temperate monsoon, moderated by the sea: summers are not too hot but humid, with sea fog (especially June–July), winters are slightly milder than inland Shandong but windy, and spring and autumn are comfortable.",
+    culture:
+      "The local speech is the Qingdao variety of Jiao–Liao Mandarin, with Mandarin widely used. Locals are fond of beer, and in summer there is a habit of carrying draught beer in plastic bags; clams (locally \"gala\") and other seafood are everyday food. The Qingdao International Beer Festival in August is a citywide event. As elsewhere, buy seafood only where prices are posted and re-weighing is possible. Tipping is not customary.",
+    seeAndDo:
+      "Zhanqiao Pier and Little Qingdao islet; the old villa districts of Badaguan and the No. 2 Bathing Beach; Signal Hill or Xiaoyu Hill for the view over red roofs and green trees; the former German governor's residence and the Tsingtao Beer Museum in the old brewery; the waterfront promenade at May Fourth Square and the Sailing Centre; Mount Lao (a Taoist mountain and coastline, usually a day).",
+    whenAndTips:
+      "The best months are early summer to early autumn (May, September–October), with good sun and moderate humidity. July–August is the beach high season — crowded and expensive, and often foggy with showers. The beer festival period (usually late July into August) is livelier but more crowded. At the swimming beaches follow the lifeguards and watch for rip currents and jellyfish.",
+  },
+
+  zhangjiajie: {
+    identity:
+      "Zhangjiajie, in north-western Hunan, has become a popular nature destination because of the quartz-sandstone pinnacle forest of Wulingyuan. The city itself is small and almost entirely serves the scenic areas. The landform is a mass of tree-topped stone columns rising straight from the ground, appearing and disappearing in the mist.",
+    layout:
+      "It helps to separate the names: Zhangjiajie city (with the airport and high-speed rail station); Wulingyuan district (the gateway and accommodation hub for most of the pinnacle areas, about 30 km from the city); and the core scenic areas, which include Zhangjiajie National Forest Park (Yuanjiajie, the Golden Whip Stream, Tianzi Mountain) and Yangjiajie. Tianmen Mountain stands on its own right next to the city. Both the city and the parks are in mountainous terrain with large changes in elevation.",
+    gettingAround:
+      "Hehua Airport is very close to the city; the high-speed rail Zhangjiajie West station is about 1.5 hours from Changsha. Within the parks, shuttle buses, cable cars and lifts (such as the Bailong elevator) connect the areas, which are large and involve a lot of walking — usually 2–3 days. The climate is subtropical monsoon; the mountains are often wet and foggy, summers are cool with frequent afternoon showers, and in winter parts of the walkways and cable cars may close temporarily for ice.",
+    culture:
+      "The area has Tujia, Miao and other communities, and tourist villages stage ethnic song and dance. Southwestern Mandarin and local dialects are spoken, with no barrier to Mandarin. Touting by guides and forced-shopping tours have been a problem in peak season — travelling independently or choosing reputable products is advisable, and buy tickets through official channels with ID. Tipping is not customary.",
+    seeAndDo:
+      "Zhangjiajie National Forest Park: the Golden Whip Stream walk, the Bailong elevator up to Yuanjiajie (the \"Avatar Hallelujah Mountain\" viewpoint), and Tianzi Mountain for the pinnacle sea of cloud; the \"natural Great Wall\" at Yangjiajie. At Tianmen Mountain, the cable car, the glass walkway and the switchback road to Tianmen Cave. Beyond Wulingyuan are Furong Town and the old town of Fenghuang (in the Xiangxi prefecture, usually separate).",
+    whenAndTips:
+      "April–June and September–November have relatively settled weather and a better chance of cloud seas. July–August is the hottest and most crowded; during the summer holiday and the National Day week the parks cap numbers and queues are long, so book tickets and rooms ahead. Rain and mist make the pinnacles come and go, which has its own appeal, but the glass walkway and cable cars close in high wind, thick fog or ice, so keep the itinerary flexible. The trails have many steps — bring non-slip shoes.",
+  },
+
+  lijiang: {
+    identity:
+      "Lijiang, in north-western Yunnan, is known for its Naxi old town and for Yulong (Jade Dragon) Snow Mountain, and is one of the hubs for travel in the north-west of the province. It sits at about 2,400 m, and most people adjust well. The old town is a World Heritage Site and also a heavily commercialised tourist area — quiet by day, lively at night.",
+    layout:
+      "The Lijiang basin is a relatively flat upland basin within the Hengduan ranges. Dayan old town (usually just called \"Lijiang old town\") is at its centre; Shuhe old town to the north-west is quieter, and Baisha, smaller still, is closest to the snow mountain. Yulong Snow Mountain is about 25 km north of the town and is a sacred mountain to the Naxi. North lie Tiger Leaping Gorge and the road to Shangri-La; south is Dali.",
+    gettingAround:
+      "Sanyi Airport is about 25 km from the town; Lijiang has high-speed rail to Dali and Kunming. The old town is flagstone lanes with no vehicles, so it is walked. For Yulong Snow Mountain, Shuhe and Lashi Lake, people usually hire a car or take a day tour (choose a proper one with no shopping stops). The climate is highland monsoon with strong UV and a wide day-to-night range: mild days, cool mornings and evenings, a rainy season June–September, and clear, dry winters and springs with snow on the peak.",
+    culture:
+      "The Naxi are the main local people, with their own language and the Dongba script; Mandarin is usable in the old town. Respect local customs and follow signs when entering homes and temples. Touting, forced shopping and cut-price tours have been prominent problems here, so travel independently or use well-reviewed products. Tipping is not customary. Altitude effects are mild, but going up Yulong Snow Mountain (the cable car reaches above 4,500 m) still calls for taking it slowly.",
+    seeAndDo:
+      "In Dayan old town, Sifang Street, the Mu Mansion and the Wangu Tower on Lion Hill; Shuhe and Baisha old towns; Yulong Snow Mountain (the glacier-park cable car, Blue Moon Valley); horse-riding and boating at Lashi Lake (use licensed operators); the Impression Lijiang outdoor show. From Lijiang you can reach Tiger Leaping Gorge and Lugu Lake (farther, a separate 2 days).",
+    whenAndTips:
+      "March–May and September–November have the best weather, with rhododendrons in spring and autumn colour later. The rainy season (June–September) brings afternoon showers and possible landslides on mountain roads; winter is clear and cold, best for seeing the snow mountain but very cold morning and night. During May Day, National Day and the school holidays the old town is very crowded and prices rise. The Yulong Snow Mountain cable car is capped and usually needs advance booking, and stops in high wind.",
+  },
+
+  dunhuang: {
+    identity:
+      "Dunhuang is in the far west of Gansu, at the end of the Hexi Corridor, a key town on the old Silk Road, world-famous for the murals and statues of the Mogao Caves. It is a small desert-oasis town of a little over 100,000 people, sustained by the water of the Dang River, with gobi and desert all around.",
+    layout:
+      "The town is the centre of the oasis, compact and walkable. The Mogao Caves are about 25 km south-east of town at the edge of the gravel gobi; the Singing Sand Dunes and Crescent Lake are right on the southern edge of town; the Yumen Pass, the Han-dynasty Great Wall ruins and the yardang landforms (the \"devil city\") are 80–180 km west of town in the gobi and take half a day to a day. Beyond the town it is almost all desert.",
+    gettingAround:
+      "Mogao Airport is about 13 km from town; Dunhuang has trains toward Lanzhou, Xining and Jiayuguan, and the Lanzhou–Xinjiang high-speed line passes through Liuyuan (about 130 km, with a shuttle). Taxis in town are easy; reaching the distant passes and yardang needs a hired car or a tour. The climate is warm-temperate arid, extremely dry, with a very wide day-to-night range: hot summer days (often above 35°C) and cool nights, cold winters, and dust and high winds in spring (April–May).",
+    culture:
+      "Lanyin Mandarin is spoken, with no barrier to standard Mandarin. The food is wheat-based, with donkey-meat \"yellow noodles\", huyang baked flatbread and apricot-skin drink as local specialities. To protect the murals, the Mogao Caves run strict capacity limits and advance booking, often sold out a month ahead in peak season, so buy tickets early on the official platform; photography is forbidden inside the caves, flash is not allowed, and which caves you see is assigned per guide. Tipping is not customary.",
+    seeAndDo:
+      "The Mogao Caves (the digital centre dome films plus the caves themselves, about half a day); the Singing Sand Dunes and Crescent Lake (climb the dunes for sunset, camel rides); the Dunhuang night market; a west-line day trip: Yumen Pass, the Han Great Wall, the Hecang granary ruins and the Yardang National Geopark (best at sunset, a late return); the Yulin Caves (in Guazhou, farther out).",
+    whenAndTips:
+      "May–October is the tourist season, with May–June and September–October more comfortable in temperature and July–August hot but cool at night. In peak season Mogao tickets are tight — reserve tickets before fixing the itinerary. Spring dust days cut visibility and delay flights. Use strong sun protection throughout, carry water and lip balm, and for the gobi and yardang bring a windproof jacket and a sun hat, as temperatures drop sharply after sunset.",
+  },
 };
