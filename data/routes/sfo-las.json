@@ -1,0 +1,18 @@
+{
+  "id": "sfo-las",
+  "name": "旧金山 — 拉斯维加斯",
+  "nameEn": "San Francisco — Las Vegas",
+  "description": "加州中央谷地 · 内华达山脉 · 死亡谷",
+  "descriptionEn": "Central Valley · Sierra Nevada · Death Valley",
+  "depCountry": "usa",
+  "arrCountry": "usa",
+  "flight": { "airline": "西南航空", "airlineEn": "Southwest Airlines", "flightNo": "WN634", "aircraft": "Boeing 737-700", "depIata": "SFO", "arrIata": "LAS", "durationMin": 90 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "sfo", "name": "旧金山", "nameEn": "San Francisco", "lat": 37.6213, "lon": -122.3790, "airport": true },
+    { "kind": "terrain", "terrainId": "central-valley-ca" },
+    { "kind": "terrain", "terrainId": "sierra-nevada-us" },
+    { "kind": "terrain", "terrainId": "death-valley" },
+    { "kind": "city", "id": "las", "name": "拉斯维加斯", "nameEn": "Las Vegas", "lat": 36.0840, "lon": -115.1537, "airport": true }
+  ]
+}

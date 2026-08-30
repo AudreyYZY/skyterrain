@@ -1,0 +1,18 @@
+{
+  "id": "den-las",
+  "name": "丹佛 — 拉斯维加斯",
+  "nameEn": "Denver — Las Vegas",
+  "description": "落基山脉 · 科罗拉多河 · 大峡谷",
+  "descriptionEn": "Rocky Mountains · Colorado River · Grand Canyon",
+  "depCountry": "usa",
+  "arrCountry": "usa",
+  "flight": { "airline": "西南航空", "airlineEn": "Southwest Airlines", "flightNo": "WN1149", "aircraft": "Boeing 737-800", "depIata": "DEN", "arrIata": "LAS", "durationMin": 105 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "den", "name": "丹佛", "nameEn": "Denver", "lat": 39.8561, "lon": -104.6737, "airport": true },
+    { "kind": "terrain", "terrainId": "rocky-mountains" },
+    { "kind": "terrain", "terrainId": "colorado-river" },
+    { "kind": "terrain", "terrainId": "grand-canyon" },
+    { "kind": "city", "id": "las", "name": "拉斯维加斯", "nameEn": "Las Vegas", "lat": 36.0840, "lon": -115.1537, "airport": true }
+  ]
+}

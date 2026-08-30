@@ -70,6 +70,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   // 新西兰
   "nz-north": { zh: "北岛", en: "North Island", order: 30 },
   "nz-south": { zh: "南岛", en: "South Island", order: 31 },
+  // 美国（大致由东到西）
+  "us-northeast": { zh: "东北部", en: "Northeast", order: 40 },
+  "us-south": { zh: "南部", en: "South", order: 41 },
+  "us-midwest": { zh: "中西部", en: "Midwest", order: 42 },
+  "us-mountain-west": { zh: "山区西部", en: "Mountain West", order: 43 },
+  "us-southwest": { zh: "西南部", en: "Southwest", order: 44 },
+  "us-west-coast": { zh: "西海岸", en: "West Coast", order: 45 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -89,6 +96,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "china", nameZh: "中国", nameEn: "China" },
   { country: "japan", nameZh: "日本", nameEn: "Japan" },
   { country: "new-zealand", nameZh: "新西兰", nameEn: "New Zealand" },
+  { country: "usa", nameZh: "美国", nameEn: "United States" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -476,6 +484,62 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 170.5028, lat: -45.8788,
     airport: { iata: "DUD", nameZh: "达尼丁机场", nameEn: "Dunedin", lon: 170.198, lat: -45.928 },
     source: "达尼丁八角广场 -45.8788,170.5028；DUD 机场：公开资料",
+  },
+
+  // ── 美国 ──────────────────────────────────────────────
+  {
+    id: "new-york", nameZh: "纽约", nameEn: "New York", country: "usa", tier: "major", zone: "us-northeast",
+    lon: -74.0060, lat: 40.7128,
+    airport: { iata: "JFK", nameZh: "肯尼迪国际机场", nameEn: "John F. Kennedy Int'l", lon: -73.778, lat: 40.641 },
+    source: "曼哈顿下城 40.7128,-74.0060；JFK 机场：公开资料",
+  },
+  {
+    id: "washington-dc", nameZh: "华盛顿", nameEn: "Washington, D.C.", country: "usa", tier: "capital", zone: "us-northeast",
+    lon: -77.0369, lat: 38.9072,
+    airport: { iata: "IAD", nameZh: "杜勒斯国际机场", nameEn: "Washington Dulles Int'l", lon: -77.456, lat: 38.953 },
+    source: "国家广场一带 38.9072,-77.0369；IAD 机场：公开资料",
+  },
+  {
+    id: "chicago", nameZh: "芝加哥", nameEn: "Chicago", country: "usa", tier: "major", zone: "us-midwest",
+    lon: -87.6298, lat: 41.8781,
+    airport: { iata: "ORD", nameZh: "奥黑尔国际机场", nameEn: "O'Hare Int'l", lon: -87.905, lat: 41.978 },
+    source: "芝加哥卢普区 41.8781,-87.6298；ORD 机场：公开资料",
+  },
+  {
+    id: "new-orleans", nameZh: "新奥尔良", nameEn: "New Orleans", country: "usa", tier: "notable", zone: "us-south",
+    lon: -90.0715, lat: 29.9511,
+    airport: { iata: "MSY", nameZh: "路易斯·阿姆斯特朗新奥尔良国际机场", nameEn: "Louis Armstrong New Orleans Int'l", lon: -90.258, lat: 29.993 },
+    source: "法国区一带 29.9511,-90.0715；MSY 机场：公开资料",
+  },
+  {
+    id: "miami", nameZh: "迈阿密", nameEn: "Miami", country: "usa", tier: "major", zone: "us-south",
+    lon: -80.1918, lat: 25.7617,
+    airport: { iata: "MIA", nameZh: "迈阿密国际机场", nameEn: "Miami Int'l", lon: -80.279, lat: 25.796 },
+    source: "迈阿密市中心 25.7617,-80.1918；MIA 机场：公开资料",
+  },
+  {
+    id: "denver", nameZh: "丹佛", nameEn: "Denver", country: "usa", tier: "major", zone: "us-mountain-west",
+    lon: -104.9903, lat: 39.7392,
+    airport: { iata: "DEN", nameZh: "丹佛国际机场", nameEn: "Denver Int'l", lon: -104.673, lat: 39.862 },
+    source: "丹佛市中心 39.7392,-104.9903；DEN 机场：公开资料",
+  },
+  {
+    id: "las-vegas", nameZh: "拉斯维加斯", nameEn: "Las Vegas", country: "usa", tier: "notable", zone: "us-southwest",
+    lon: -115.1398, lat: 36.1699,
+    airport: { iata: "LAS", nameZh: "哈里·里德国际机场", nameEn: "Harry Reid Int'l", lon: -115.154, lat: 36.084 },
+    source: "拉斯维加斯大道一带 36.1699,-115.1398；LAS 机场：公开资料",
+  },
+  {
+    id: "san-francisco", nameZh: "旧金山", nameEn: "San Francisco", country: "usa", tier: "major", zone: "us-west-coast",
+    lon: -122.4194, lat: 37.7749,
+    airport: { iata: "SFO", nameZh: "旧金山国际机场", nameEn: "San Francisco Int'l", lon: -122.379, lat: 37.622 },
+    source: "旧金山市中心 37.7749,-122.4194；SFO 机场：公开资料",
+  },
+  {
+    id: "los-angeles", nameZh: "洛杉矶", nameEn: "Los Angeles", country: "usa", tier: "major", zone: "us-west-coast",
+    lon: -118.2437, lat: 34.0522,
+    airport: { iata: "LAX", nameZh: "洛杉矶国际机场", nameEn: "Los Angeles Int'l", lon: -118.408, lat: 33.942 },
+    source: "洛杉矶市中心 34.0522,-118.2437；LAX 机场：公开资料",
   },
 ];
 

@@ -1,0 +1,18 @@
+{
+  "id": "msy-lax",
+  "name": "新奥尔良 — 洛杉矶",
+  "nameEn": "New Orleans — Los Angeles",
+  "description": "奇瓦瓦沙漠 · 索诺兰沙漠 · 莫哈韦沙漠",
+  "descriptionEn": "Chihuahuan Desert · Sonoran Desert · Mojave Desert",
+  "depCountry": "usa",
+  "arrCountry": "usa",
+  "flight": { "airline": "美国航空", "airlineEn": "American Airlines", "flightNo": "AA1477", "aircraft": "Boeing 737-800", "depIata": "MSY", "arrIata": "LAX", "durationMin": 225 },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "msy", "name": "新奥尔良", "nameEn": "New Orleans", "lat": 29.9934, "lon": -90.2580, "airport": true },
+    { "kind": "terrain", "terrainId": "chihuahuan-desert-us" },
+    { "kind": "terrain", "terrainId": "sonoran-desert" },
+    { "kind": "terrain", "terrainId": "mojave-desert" },
+    { "kind": "city", "id": "lax", "name": "洛杉矶", "nameEn": "Los Angeles", "lat": 33.9416, "lon": -118.4085, "airport": true }
+  ]
+}

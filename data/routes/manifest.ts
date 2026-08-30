@@ -61,6 +61,14 @@ import aklChc from "./akl-chc.json" with { type: "json" };
 import wlgChc from "./wlg-chc.json" with { type: "json" };
 import chcZqn from "./chc-zqn.json" with { type: "json" };
 import aklRot from "./akl-rot.json" with { type: "json" };
+// 美国国内
+import jfkLax from "./jfk-lax.json" with { type: "json" };
+import jfkSfo from "./jfk-sfo.json" with { type: "json" };
+import ordSfo from "./ord-sfo.json" with { type: "json" };
+import denLas from "./den-las.json" with { type: "json" };
+import sfoLas from "./sfo-las.json" with { type: "json" };
+import miaJfk from "./mia-jfk.json" with { type: "json" };
+import msyLax from "./msy-lax.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -109,4 +117,11 @@ export const ALL_ROUTES: FlightRoute[] = [
   wlgChc,
   chcZqn,
   aklRot,
+  jfkLax,
+  jfkSfo,
+  ordSfo,
+  denLas,
+  sfoLas,
+  miaJfk,
+  msyLax,
 ] as unknown as FlightRoute[];
