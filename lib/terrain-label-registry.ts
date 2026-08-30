@@ -251,6 +251,7 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   vanoise: "national",
   "mer-de-glace": "national",
   camargue: "national",
+  "chaine-des-puys": "national",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

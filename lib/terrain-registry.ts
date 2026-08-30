@@ -5559,6 +5559,109 @@ const CAMARGUE: TerrainEntry = {
   source: "卡马尔格：罗讷河在阿尔勒分成大、小两支，两支之间围出的三角洲，约850平方公里的沼泽、潟湖（瓦卡雷斯）和盐田，是西欧最大的三角洲之一；水鸟众多（大红鹳在此繁殖）、产稻和海盐；1971年列入《拉姆萨尔公约》湿地、设地区自然公园（Ramsar / 卡马尔格地区自然公园）",
 };
 
+const CHAINE_DES_PUYS: TerrainEntry = {
+  id: "chaine-des-puys",
+  nameZh: "普伊山链",
+  nameEn: "Chaîne des Puys",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "多姆山（Puy de Dôme，1465m，山链最高的熔岩穹丘）", lon: 2.964, lat: 45.772, elevation: 1465, kind: "peak" },
+  bbox: [2.83, 45.58, 3.06, 46.00],
+  axis: [[2.95, 45.62], [2.98, 45.98]],
+  viewScale: 1.5,
+  label: { lon: 2.98, lat: 45.80, rotation: -84 },
+  source: "普伊山链：中央高原奥弗涅一段约45km 长的南北向火山带，约80座火山锥、熔岩穹丘和低平火山口（maar）排成一列，最年轻的一次喷发约7000年前；与它西侧的利马涅大断层一起2018年列入世界遗产，清楚展示大陆地壳如何张裂、崩落、深部岩浆上涌（UNESCO / 奥弗涅火山地区自然公园）",
+};
+
+const CANTAL_VOLCANO: TerrainEntry = {
+  id: "cantal-volcano",
+  nameZh: "坎塔尔火山",
+  nameEn: "Monts du Cantal",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "坎塔尔铅峰（Plomb du Cantal，1855m）与皮伊马里", lon: 2.756, lat: 45.048, elevation: 1855, kind: "peak" },
+  bbox: [2.35, 44.80, 3.15, 45.40],
+  viewScale: 2.1,
+  label: { lon: 2.75, lat: 45.05, rotation: 0 },
+  source: "坎塔尔火山：中央高原南部一座约1300—200万年前活动的老层火山，底面直径约70km、体积逾400 km³，按底面积算是欧洲最大的层火山之一；中央的锥体已被侵蚀成一圈残峰（铅峰、皮伊马里等），四周是呈放射状展开、被深谷分隔的玄武岩台地板块（“planèze”）（BRGM）",
+};
+
+const MONTS_DORE: TerrainEntry = {
+  id: "monts-dore",
+  nameZh: "多尔山",
+  nameEn: "Massif du Sancy (Monts Dore)",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "桑西山（Puy de Sancy，1885m）与桑西冰蚀圆谷", lon: 2.813, lat: 45.528, elevation: 1885, kind: "peak" },
+  bbox: [2.64, 45.40, 3.00, 45.66],
+  viewScale: 1.6,
+  label: { lon: 2.82, lat: 45.53, rotation: 0 },
+  source: "多尔山：中央高原一座约300—25万年前活动的层火山群，位于普伊山链（更年轻）和坎塔尔火山（更老）之间；侵蚀把它的锥体切成一圈残峰，最高的桑西山1885米是整个中央高原的最高点；多尔多涅河的两条源流在此发源，末次冰期山上有小冰川、留下冰斗（BRGM）",
+};
+
+const GRANDS_CAUSSES: TerrainEntry = {
+  id: "grands-causses",
+  nameZh: "大科斯高原",
+  nameEn: "Grands Causses",
+  category: "plateau",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "梅让科斯与塔恩峡谷（Causse Méjean / Gorges du Tarn）", lon: 3.40, lat: 44.30, elevation: 1000, kind: "escarpment" },
+  bbox: [2.85, 43.85, 3.75, 44.55],
+  viewScale: 1.9,
+  label: { lon: 3.35, lat: 44.20, rotation: 0 },
+  source: "大科斯：中央高原南缘几片海拔约800—1200m 的石灰岩喀斯特台地（梅让、拉尔扎克、诺尔、索沃泰尔科斯），干旱、少地表水、遍布落水洞和洞穴，被塔恩河、若恩特河、杜尔比河切出数百米深的峡谷；罗克福尔奶酪在科斯边缘一处滑坡形成的天然岩洞里熟成；“科斯与塞文”地中海式农牧文化景观2011年列入世界遗产（UNESCO / BRGM）",
+};
+
+const VERCORS: TerrainEntry = {
+  id: "vercors",
+  nameZh: "韦科尔高原",
+  nameEn: "Vercors",
+  category: "plateau",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "韦科尔东缘峭壁（大穆什罗尔峰一带）", lon: 5.55, lat: 45.05, elevation: 1500, kind: "escarpment" },
+  bbox: [5.18, 44.68, 5.72, 45.32],
+  axis: [[5.35, 44.72], [5.45, 45.28]],
+  viewFrom: 90,
+  viewScale: 1.7,
+  label: { lon: 5.45, lat: 45.00, rotation: -80 },
+  source: "韦科尔：格勒诺布尔西南一块石灰岩前阿尔卑斯台地，东缘是朝格勒诺布尔的一道千米高陡崖，内部被布尔讷河等切出深峡谷（“大峡口”），地下发育大量竖井和洞穴系统（贝尔热竖井一度是已知最深的洞穴之一）；地表是大片森林和高山牧场；韦科尔地区自然公园（BRGM / 韦科尔地区自然公园）",
+};
+
+const CEVENNES: TerrainEntry = {
+  id: "cevennes",
+  nameZh: "塞文山",
+  nameEn: "Cévennes",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "洛泽尔山（Mont Lozère，1699m）与埃古阿勒山", lon: 3.73, lat: 44.42, elevation: 1699, kind: "peak" },
+  bbox: [3.30, 44.00, 4.25, 44.60],
+  axis: [[3.45, 44.10], [4.10, 44.50]],
+  viewScale: 1.9,
+  label: { lon: 3.80, lat: 44.30, rotation: -30 },
+  source: "塞文山：中央高原的东南缘，花岗岩和片岩的长脊被无数溪流深切成梳齿状；地中海气候一侧秋季常有暴雨（“塞文式暴雨”）引发山洪；史上是牧羊转场（“drailles”牧道）和新教徒避难的山区；塞文山国家公园1970年设立，“科斯与塞文”文化景观2011年列入世界遗产（UNESCO / 塞文山国家公园）",
+};
+
+const VERDON_GORGE: TerrainEntry = {
+  id: "verdon-gorge",
+  nameZh: "凡尔登峡谷",
+  nameEn: "Gorges du Verdon",
+  category: "gorge",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "凡尔登峡谷（最深处一带）", lon: 6.350, lat: 43.750, elevation: 700, kind: "gorge" },
+  bbox: [6.15, 43.68, 6.60, 43.84],
+  axis: [[6.20, 43.75], [6.55, 43.77]],
+  viewScale: 1.4,
+  label: { lon: 6.35, lat: 43.76, rotation: -6 },
+  source: "凡尔登峡谷：凡尔登河在阿尔卑斯和普罗旺斯之间的石灰岩高地上切出的峡谷，长约25km、最深处约700m，常被称为欧洲最大的峡谷；石灰岩里溶蚀出大量洞穴（如史前的博姆博纳洞）；下游被圣克鲁瓦水库拦蓄；凡尔登地区自然公园（BRGM / 凡尔登地区自然公园）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -5680,6 +5783,7 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   FRENCH_ALPS, PYRENEES, MASSIF_CENTRAL, VOSGES, ARMORICAN_MASSIF,
   PARIS_BASIN, AQUITAINE_BASIN, CORSICA,
   LOIRE_RIVER, RHONE_RIVER, SEINE_RIVER, ECRINS, VANOISE, MER_DE_GLACE, CAMARGUE,
+  CHAINE_DES_PUYS, CANTAL_VOLCANO, MONTS_DORE, GRANDS_CAUSSES, VERCORS, CEVENNES, VERDON_GORGE,
 ];
 
 /**
