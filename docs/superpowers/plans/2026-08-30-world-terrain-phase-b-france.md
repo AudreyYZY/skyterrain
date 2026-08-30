@@ -1,5 +1,10 @@
 # Phase B — 法国地形（≥25 个 T1/T2/T3）
 
+> **状态：完成（2026-08-30）。** 29 个条目、4 个 batch commit + 1 计划 commit，
+> 分支 `feat/terrain-france`（stack 在 `feat/terrain-norway` 上）。
+> europe 116→145，western-europe 27→56，全站 →358。
+> `check-regions` / `check-terrain-camera` 通过，浏览器逐批抽查。
+
 > 分支 `feat/terrain-france`，stack 在 `feat/terrain-norway` 上。
 > `regionId: "europe"`，`country: "france"`，次区域 `western-europe`。
 > 口径：BRGM（法国地质调查局）/ IGN / 法国国家公园 / UNESCO。
