@@ -169,7 +169,9 @@ features/
   选中城市时在地图上标机场（✈）+ 地标。只是静态标注，不做与播报同步的高亮（文本↔坐标匹配不可靠）。
   **之后每个国家的旅游模式都要保持这套行为一致。**
 - **航线**：一条航线两套解说，跟随当前 `mode`（`getRouteNarration(id, lang, mode)`）；
-  某模式解说为空时该模式下航线不播。4 条国内航线 study + travel 解说均已写。
+  某模式解说为空时该模式下航线不播。当前 127 条国内航线 study + travel 解说均已写。
+  **航班号/机型是写入时的真实示例，不是实时时刻表**——没有随航司改期自动更新的机制，
+  引用具体航班号前建议自行核对。
 - **新增国家两个模式都要做**：study = 地形注册表 + 6 板块讲解；travel = `places-registry`
   加城市 + `COUNTRY_TO_CONTINENT` 补映射 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide +
   `COUNTRY_OVERVIEWS` 加概览 + `travel-pois.ts` 补该城市攻略提到的地标坐标。

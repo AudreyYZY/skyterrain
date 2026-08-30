@@ -146,6 +146,12 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   register) → and flies the waypoints at a steady pace.
 - Each route has two narrations, following the current mode: `ROUTE_NARRATION[id].{study, travel}`.
 - Self-check: `node --experimental-strip-types scripts/check-routes.ts`.
+- **The city pairs, airlines, and terrain waypoints are researched** (the route genuinely
+  exists, and the terrain it flies over genuinely lies along that path); **the specific flight
+  number / aircraft type is a real example captured at the time the route was written, not a
+  live timetable** — airlines renumber routes, swap aircraft, and drop seasonal service
+  constantly, so these figures aren't guaranteed still accurate. Check the airline's own site
+  or an OTA for current schedules before you fly.
 
 ---
 
