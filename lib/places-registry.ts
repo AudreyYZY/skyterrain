@@ -43,6 +43,7 @@ export const DEFAULT_CITY_VIEW = { heightM: 26_000, pitchDeg: -45, headingDeg: 0
 export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "australia", nameZh: "澳大利亚", nameEn: "Australia" },
   { country: "china", nameZh: "中国", nameEn: "China" },
+  { country: "japan", nameZh: "日本", nameEn: "Japan" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -197,6 +198,44 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 94.6618, lat: 40.1421,
     airport: { iata: "DNH", nameZh: "敦煌莫高国际机场", nameEn: "Dunhuang Mogao Int'l", lon: 94.809, lat: 40.161 },
     source: "敦煌市区 40.1421,94.6618；DNH 机场：公开资料",
+  },
+
+  // ── 日本 ──────────────────────────────────────────────
+  {
+    id: "tokyo", nameZh: "东京", nameEn: "Tokyo", country: "japan", tier: "capital",
+    lon: 139.7671, lat: 35.6812,
+    airport: { iata: "HND", nameZh: "东京羽田机场", nameEn: "Tokyo Haneda", lon: 139.780, lat: 35.552 },
+    source: "东京站一带 35.6812,139.7671；HND 机场：公开资料",
+  },
+  {
+    id: "kyoto", nameZh: "京都", nameEn: "Kyoto", country: "japan", tier: "major",
+    lon: 135.7681, lat: 35.0116,
+    airport: { iata: "KIX", nameZh: "关西国际机场（经大阪转乘）", nameEn: "Kansai Int'l (via Osaka)", lon: 135.244, lat: 34.427 },
+    source: "京都站一带 35.0116,135.7681；KIX 机场：公开资料（京都无民航机场，经关西/伊丹转铁路）",
+  },
+  {
+    id: "osaka-city", nameZh: "大阪", nameEn: "Osaka", country: "japan", tier: "major",
+    lon: 135.5023, lat: 34.6937,
+    airport: { iata: "KIX", nameZh: "关西国际机场", nameEn: "Kansai Int'l", lon: 135.244, lat: 34.427 },
+    source: "大阪梅田一带 34.6937,135.5023；KIX 机场：公开资料",
+  },
+  {
+    id: "sapporo", nameZh: "札幌", nameEn: "Sapporo", country: "japan", tier: "major",
+    lon: 141.3545, lat: 43.0618,
+    airport: { iata: "CTS", nameZh: "新千岁机场", nameEn: "New Chitose", lon: 141.692, lat: 42.775 },
+    source: "札幌站一带 43.0618,141.3545；CTS 机场：公开资料",
+  },
+  {
+    id: "fukuoka", nameZh: "福冈", nameEn: "Fukuoka", country: "japan", tier: "major",
+    lon: 130.4017, lat: 33.5902,
+    airport: { iata: "FUK", nameZh: "福冈机场", nameEn: "Fukuoka", lon: 130.451, lat: 33.586 },
+    source: "福冈天神/博多一带 33.5902,130.4017；FUK 机场：公开资料",
+  },
+  {
+    id: "naha", nameZh: "那霸", nameEn: "Naha", country: "japan", tier: "notable",
+    lon: 127.6809, lat: 26.2124,
+    airport: { iata: "OKA", nameZh: "那霸机场", nameEn: "Naha", lon: 127.646, lat: 26.196 },
+    source: "那霸市区 26.2124,127.6809；OKA 机场：公开资料",
   },
 ];
 

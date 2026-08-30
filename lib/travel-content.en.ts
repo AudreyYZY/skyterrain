@@ -416,4 +416,109 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–October is the tourist season, with May–June and September–October more comfortable in temperature and July–August hot but cool at night. In peak season Mogao tickets are tight — reserve tickets before fixing the itinerary. Spring dust days cut visibility and delay flights. Use strong sun protection throughout, carry water and lip balm, and for the gobi and yardang bring a windproof jacket and a sun hat, as temperatures drop sharply after sunset.",
   },
+
+  "japan-overview": {
+    identity:
+      "Japan is an island country on the western edge of the Pacific, made up of the four large islands of Honshu, Hokkaido, Kyushu and Shikoku and thousands of smaller ones, with a population of about 125 million, most of it concentrated in a few metropolitan areas on the Pacific side of Honshu. The archipelago sits on a plate boundary and is mountainous, with many volcanoes, earthquakes and hot springs, and a very high forest cover.",
+    layout:
+      "Japan can be divided roughly into sections: Hokkaido (high-latitude, sparsely settled, cool summers and snowy winters); Honshu (the largest island, with the Tokyo, Nagoya and Kyoto–Osaka–Kobe metropolitan areas along the Pacific side, and the 3,000 m Japanese Alps down the centre dividing the climate into a Pacific side and a Sea of Japan side); Shikoku (smaller, mostly the Inland Sea and mountains); Kyushu (concentrated volcanoes and hot springs, with Fukuoka as the gateway); and the southernmost Nansei Islands (subtropical, coral reefs, with Naha as the centre).",
+    gettingAround:
+      "Travel between cities is mostly by Shinkansen and intercity rail — dense and punctual — with flights only for long distances and island hops; the rail system is complex but a single IC card (Suica, ICOCA and others) works throughout, and a JR Pass can be worth it for wide travel. Big-city subways are extensive; stand and walk on the left (Kansai is the reverse). The climate is temperate monsoon overall: hot, humid summers with a rainy season in June–July and typhoons from July to October; winters are dry on the Pacific side and snowy on the Sea of Japan side and in Hokkaido. Tap water is drinkable and convenience stores are everywhere.",
+    culture:
+      "The language is Japanese; English signage is fairly complete in big cities and major sights and limited in the countryside. Society values order and not troubling others: queue, keep quiet in public, take your rubbish with you, and do not talk on the phone on trains. Remove shoes for tatami rooms and some temples and inns; before a hot-spring bath, wash thoroughly, and note that swimwear is usually not worn and large tattoos may be turned away. Tipping is not customary.",
+    seeAndDo:
+      "The old capitals and gardens of Kyoto, Nara and Kanazawa; the cities and food of Tokyo and Osaka; the nature and skiing of Hokkaido and Tohoku; the volcanoes and hot springs of Kyushu; the islands and art of the Inland Sea; the mountains and forests of Mount Fuji, the Japanese Alps and Yakushima. The seasons are distinct, and the cherry blossom (late March to April) and autumn leaves (around November) are two viewing peaks.",
+    whenAndTips:
+      "Spring (March–May) and autumn (October–November) have the most comfortable weather and are also peak season; in the cherry-blossom and autumn-leaf periods, book accommodation in popular places early. Golden Week (late April to early May), Obon (mid-August) and the new-year holidays are nationwide travel peaks with high prices. In summer take heat precautions and carry an umbrella; flights and trains stop when typhoons hit. Entry has restrictions on meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs before you travel.",
+  },
+
+  tokyo: {
+    identity:
+      "Tokyo is the capital and largest city of Japan, and one of the most populous metropolitan areas in the world (about 37 million). It is the undisputed centre of politics, economy, culture and transport, made up of many districts with strong individual characters — skyscrapers and round-the-clock commercial quarters as well as quiet old neighbourhoods and large areas of greenery.",
+    layout:
+      "Tokyo is built on the Kanto Plain, cut up by the Sumida and Ara rivers and Tokyo Bay. The \"city centre\" is conventionally the loop of the JR Yamanote line, which strings together the main hubs — Tokyo Station, Shinjuku, Shibuya, Ikebukuro, Ueno — with the Imperial Palace near its centre-east. West are continuous residential districts reaching the Tama Hills and the Okutama mountains; east are the low-lying old town and reclaimed waterfront.",
+    gettingAround:
+      "Narita Airport is far from the centre (about an hour by express train); Haneda is much closer (about 20–30 minutes). The subway (Tokyo Metro plus Toei) and JR lines form a web; a single Suica or PASMO card covers the whole city, last trains run past midnight, and after that it is taxis. Walking and transfer distances are often long. The climate is Pacific-side temperate: hot, muggy summers (July–September) often above 35°C with afternoon thunderstorms and typhoons, and clear, cold, dry winters with little snow in the city; cherry blossom opens around late March.",
+    culture:
+      "Standard Japanese is spoken, with Chinese, English and Korean signage at major stations and sights. The city is fast, punctual and orderly: stand on the left on escalators (the right is for people in a hurry), keep quiet on trains, carry your rubbish. Restaurants generally do not take tips, and many small places are cash-only or take Japanese e-payment. Shrines and temples have their own etiquette (bow, purify your hands, do not stand in the exact centre of the path).",
+    seeAndDo:
+      "Asakusa with the Kaminarimon and Nakamise; the museums and park of Ueno; Meiji Shrine and Yoyogi Park; the Shibuya crossing; the East Gardens of the Imperial Palace; the Skytree or the Metropolitan Government observatory for a city panorama; Tsukiji Outer Market and Toyosu for seafood; a walk through the old streets of Nezu and Yanaka. Day trips: Kamakura, Nikko, Hakone (views of Fuji), Mount Takao.",
+    whenAndTips:
+      "Late March to early April (blossom) and November (autumn leaves) are the best scenery but the most crowded, with expensive rooms; late April to early May (Golden Week) and the new year are nationwide travel peaks. The rainy season (June) is wet, and high summer is very hot — take heat precautions. Book popular exhibitions and restaurants ahead. Earthquakes occur occasionally; note the evacuation guidance at your accommodation — in most cases \"drop, cover, hold on\" is the response.",
+  },
+
+  kyoto: {
+    identity:
+      "Kyoto was the capital of Japan for over a thousand years, and is famous for its well-preserved temples, shrines, gardens and machiya townhouse streets — the core city for experiencing traditional Japan. The urban population is about 1.4 million; the city is not large in scale, but its historic heritage is extremely dense and visitor numbers are high year-round.",
+    layout:
+      "The Kyoto basin is enclosed by mountains on three sides, and the city is laid out on an ancient Tang-inspired grid, with streets running true north–south and east–west — easy to navigate. The centre is the Shijo–Kawaramachi shopping area and the Gion entertainment district; a line of famous temples runs along the eastern foothills from Kiyomizu-dera and Yasaka through Nanzen-ji to Ginkaku-ji (the Philosopher's Path); Kinkaku-ji and Arashiyama are to the north-west, and Fushimi Inari is to the south.",
+    gettingAround:
+      "Kyoto has no airport; people usually arrive from Kansai Airport on the Haruka express (about 75 minutes) or by transfer at Osaka. The bus network is dense but very crowded at peak times, there are only two subway lines, and cycling is good for short distances. The sights lie around the edge of the basin, so planning by area saves backtracking. The climate is that of an inland basin: hot, muggy summers (\"the Kyoto summer\" is notoriously hard), damp cold winters with occasional snow, and short, beautiful springs and autumns.",
+    culture:
+      "Kansai-dialect Japanese is spoken, with multilingual signage at the sights. Gion is a working geisha district — geiko and maiko are people at work, so do not chase them for photos or block their way, and some lanes now ban visitor photography. Most temples and shrines require removing shoes, forbid photography indoors, and expect quiet in the gardens. Machiya guesthouses and ryotei have their own rules. No tipping.",
+    seeAndDo:
+      "Kiyomizu-dera with Ninen-zaka and Sannen-zaka; the thousand torii of Fushimi Inari (fewer people early); Kinkaku-ji and the Ryoan-ji rock garden; the bamboo grove and Togetsukyo bridge at Arashiyama; Gion and Pontocho in the evening; Nanzen-ji, Eikan-do and Tofuku-ji for autumn leaves. Nishijin and Uji (tea and the Byodo-in) are each a half-day.",
+    whenAndTips:
+      "The blossom (early April) and autumn leaves (mid-to-late November) are Kyoto's most beautiful and most crowded two weeks — visit popular temples first thing and book rooms months ahead. High summer and the rainy season are uncomfortable; January–February is cold but quiet, with occasionally lovely snow scenes. Many temples have fixed opening hours and last-entry times and close early in the evening, so leave a margin in your plans.",
+  },
+
+  "osaka-city": {
+    identity:
+      "Osaka is the central city of the Kansai region and the core of Japan's second-largest metropolitan area (about 19 million). Historically a centre of commerce and wholesale trade, the city has a direct, down-to-earth character and is famous for its food — a contrast with the restraint of Kyoto.",
+    layout:
+      "Osaka straddles the Yodo River on the Osaka Plain. The city has roughly two centres — \"Kita\" (around Umeda and Osaka Station, offices and department stores) and \"Minami\" (Namba, Shinsaibashi and Dotonbori, shopping, food and entertainment) — with Osaka Castle between them to the east. West are the waterfront districts and Osaka Bay, where Universal Studios is.",
+    gettingAround:
+      "Kansai Airport is on a reclaimed island off the south coast, about 35–50 minutes to the city on the Haruka or Rapi:t express; Itami Airport, to the north, handles domestic flights. The Osaka Metro plus the JR Loop Line cover the city; pay by IC card. Osaka is the Kansai hub: about 30 minutes to Kyoto and Kobe, around an hour to Nara and Himeji. The climate is similar to Tokyo's but a bit muggier — a hard summer, and a mild winter with little snow.",
+    culture:
+      "Osaka-dialect Japanese is spoken — lively and fond of jokes. On escalators, Osaka stands on the right (the opposite of Tokyo). The food culture is strong and values good value; there are many street stalls and stand-and-eat places, and many shops are cash-only or take Japanese e-payment. Tipping is not customary.",
+    seeAndDo:
+      "The signs and food of Dotonbori (takoyaki, okonomiyaki, kushikatsu — where the rule is \"no double-dipping the sauce\"); Osaka Castle Park; Shinsekai and Tsutenkaku; the Kuromon Market; the floating garden observatory of the Umeda Sky Building for night views; Universal Studios Japan. Osaka is a convenient base for Kyoto, Nara, Kobe and Himeji.",
+    whenAndTips:
+      "Spring and autumn (late March to May, October–November) are the most comfortable. High summer (July–August) is very muggy — take heat precautions — and the rainy season is wet. Golden Week and the new year are busy and pricey. Book popular restaurants ahead and buy express passes for Universal Studios. Shinsaibashi and Dotonbori are very crowded at night — watch your belongings.",
+  },
+
+  sapporo: {
+    identity:
+      "Sapporo is the central city of Hokkaido, with a population of about 1.9 million — a relatively young large Japanese city, planned and built only from the latter half of the 19th century, with a regular grid where addresses are given as \"North n, West n\". Winters are severe and snowy; it is a city of skiing and the Snow Festival.",
+    layout:
+      "Sapporo is built on the southern edge of the Ishikari Plain facing Ishikari Bay, with hills such as Mount Teine behind it. The city is divided true north–south and east–west, with the east–west green strip of Odori Park as its axis: Sapporo Station is to the north, and Susukino (the Tanukikoji arcade and the Susukino food-and-entertainment district) to the south. South-west into the mountains are the Jozankei hot springs and the ski areas.",
+    gettingAround:
+      "New Chitose Airport to Sapporo Station is about 40 minutes on the JR rapid. The city has three subway lines plus a streetcar and buses, and in winter the underground arcades and skywalks are very useful. Distances between Hokkaido towns are large; Furano, Biei, Asahikawa, Otaru and Toya are reached by JR or hire car. The climate is northern: cool, dry, low-humidity summers (July–August) and a long winter with snow cover from December to March and January–February usually below freezing.",
+    culture:
+      "Standard Japanese with a slight Hokkaido accent is spoken, and tourist facilities have full multilingual signage. Winter life revolves around snow clearing and traction; indoor heating is strong, and you shake the snow off at the door. The food is seafood, soup curry, Genghis Khan grilled lamb, miso ramen, dairy and beer. No tipping.",
+    seeAndDo:
+      "Odori Park, the Sapporo TV Tower, the Clock Tower and the red-brick former government building; the Snow Festival in February (the Odori, Susukino and Tsudome sites); the Mount Moiwa ropeway for night views; Tanukikoji and the Nijo Market for seafood; the suburban Jozankei hot springs and the Shiroi Koibito Park. Use Sapporo as a hub for Otaru, the Asahikawa zoo and the Furano flower fields.",
+    whenAndTips:
+      "The Snow Festival in February is the busiest, coldest and most expensive time — book rooms months ahead. Summer (June–August) is cool and pleasant, good for escaping the heat and for the flower fields; during the lavender season (about July) the Furano area is crowded. In winter bring waterproof, non-slip shoes, a heavy coat, a hat and gloves, and take short steps on ice.",
+  },
+
+  fukuoka: {
+    identity:
+      "Fukuoka is the largest city on Kyushu, with a metropolitan population of about 2.5 million, and one of the Japanese cities closest to mainland Asia. It is compact and convenient with relatively low prices, the airport is very close to the centre, and in recent years it has drawn attention as a liveable and start-up city.",
+    layout:
+      "Fukuoka was formed by merging the old merchant town of Hakata (by Hakata Station) and the old castle town of Fukuoka (around Tenjin), separated by the Naka River, with both centres on flat land on the south side of the bay. North are Hakata Bay and the reclaimed Momochi and Uminonakamichi; south, the land soon becomes hills.",
+    gettingAround:
+      "Fukuoka Airport is just two subway stops (about 5 minutes) from Hakata Station — one of the closest airport-to-centre links among big Japanese cities. The city has three subway lines plus buses; pay by IC card, and the Nishitetsu railway runs to Dazaifu and Yanagawa. Fukuoka is Kyushu's rail hub: Shinkansen about 40 minutes to Kumamoto and about 1.5 hours to Kagoshima, limited express to Nagasaki and Yufuin. The climate is a bit warmer than Honshu — muggy summers, a clear rainy season in June–July, typhoons to watch from July to September, and mild winters with occasional light snow.",
+    culture:
+      "Hakata-dialect Japanese is spoken, with multilingual signage in tourist areas. Fukuoka is famous for its yatai (night street stalls, concentrated around Nakasu and Tenjin), as well as tonkotsu ramen, mentaiko, mizutaki and sesame mackerel. Yatai are small, usually cash-only, and have basic etiquette (order a dish or two, do not linger to hold a seat). No tipping.",
+    seeAndDo:
+      "The yatai of Nakasu and the Naka River night view; Kushida Shrine and the old town of Hakata (home of the Hakata Gion Yamakasa festival); the Tenjin shopping district and underground arcade; Ohori Park and the Fukuoka Castle ruins; Uminonakamichi and Nokonoshima for the sea. Day trips: Dazaifu Tenmangu, a boat ride in Yanagawa, the Yufuin and Beppu hot springs, Kumamoto Castle and Aso.",
+    whenAndTips:
+      "Spring and autumn (late March to May, October–November) are the most comfortable; Maizuru and Nishi parks are busy at blossom time. During the Yamakasa festival in July the city is lively but rooms are tight. In the typhoon season (July–September) watch flights and ferries. In the yatai high season (especially weekend nights) go early or queue, and mind your belongings.",
+  },
+
+  naha: {
+    identity:
+      "Naha is the capital of Okinawa Prefecture and the central city of the subtropical Nansei island region, with a population of about 310,000. It is the gateway to Okinawa, and centres on the Kokusai-dori shopping street, its markets, and historic sites from the Second World War and the Ryukyu Kingdom era; the beaches are mostly around the fringes and on the outer islands.",
+    layout:
+      "Naha is in the south of Okinawa's main island, facing the East China Sea. The centre is Kokusai-dori and its surrounding shopping streets and markets (the Makishi Public Market), with Shuri Castle Park on higher ground to the east (the main hall and others are being restored after a 2019 fire). The port connects to the outer islands, and the airport is south-west of the centre.",
+    gettingAround:
+      "From Naha Airport, the Yui Rail monorail reaches the centre (Kencho-mae, Kokusai-dori) in a little over ten minutes. The monorail is a single line covering only central Naha; for the rest of the main island (the Churaumi Aquarium, the Onna coast, the southern war sites) you almost always need a hire car (driving on the left) or a tour. High-speed boats and ferries serve outer islands such as Zamami and Tokashiki. The climate is subtropical and warm all year, with a rainy season in May–June and a typhoon season from July to October; even winter has mild days around 20°C, though the sea wind is cool.",
+    culture:
+      "Japanese is spoken, and some older people still speak Okinawan. Okinawa has a history (the Ryukyu Kingdom) and culture separate from Honshu, with its own food (goya chanpuru, sea grapes, Okinawa soba, awamori), music (the sanshin) and architecture (red tiles, stone lion-dogs). Life is slower than on Honshu. No tipping.",
+    seeAndDo:
+      "Kokusai-dori and the Makishi Market, and the Tsuboya pottery street; Shuri Castle Park and nearby Ryukyu Kingdom sites (Shikinaen, the Tamaudun mausoleum); Naminoue Shrine and Naminoue Beach; the Prefectural Museum and Art Museum for Okinawan history. Farther out: the Peace Memorial Park and war sites in the south (solemn places), the Churaumi Aquarium in the north, the Onna coast, and boat trips to the outer islands for snorkelling.",
+    whenAndTips:
+      "March–May and October–November have the most settled weather for the outdoors. July–September brings frequent typhoons, which stop flights, ferries and some facilities when they hit, so leave slack in your plans. The summer sun is very strong — use sun protection year-round. Choose licensed operators for water activities and check equipment and insurance; outer-island boat schedules depend heavily on sea conditions.",
+  },
 };
