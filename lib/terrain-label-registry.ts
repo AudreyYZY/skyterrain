@@ -234,6 +234,16 @@ const IMPORTANCE_BY_ID: Record<string, Importance> = {
   jaeren: "national",
   trolltunga: "poi",
   saltstraumen: "poi",
+
+  // 法国
+  "french-alps": "national",
+  pyrenees: "national",
+  "massif-central": "national",
+  vosges: "national",
+  "armorican-massif": "national",
+  "paris-basin": "national",
+  "aquitaine-basin": "national",
+  corsica: "national",
 };
 
 export function importanceOf(id: string, category: TerrainCategory): Importance {

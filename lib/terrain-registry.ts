@@ -5327,6 +5327,135 @@ const VARANGERHALVOYA: TerrainEntry = {
 };
 
 // ============================================================
+// 法国（regionId: "europe"，country: "france"）
+// 坐标据 BRGM（法国地质调查局）/ IGN / 法国国家公园 / UNESCO；
+// 只做法国本土（métropole）与科西嘉，不含海外省与海外领地；
+// 跨境山脉（阿尔卑斯 / 比利牛斯）按中性事实表述，不涉主权
+// ============================================================
+
+const FRENCH_ALPS: TerrainEntry = {
+  id: "french-alps",
+  nameZh: "法国阿尔卑斯山脉",
+  nameEn: "French Alps / Alpes françaises",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "勃朗峰（Mont Blanc，约4806m）", lon: 6.8652, lat: 45.8326, elevation: 4806, kind: "peak" },
+  bbox: [5.5, 43.7, 7.7, 46.3],
+  axis: [[5.8, 43.9], [7.0, 46.1]],
+  viewFrom: 250,
+  viewScale: 1.9,
+  label: { lon: 6.4, lat: 45.2, rotation: -50 },
+  pois: [
+    { name: "梅康图尔 / 埃克兰 / 瓦努瓦兹国家公园", lon: 6.3, lat: 44.9, note: "阿尔卑斯法国一侧的高山国家公园" },
+  ],
+  source: "法国阿尔卑斯：阿尔卑斯山脉在法国境内的部分，从日内瓦湖向南延伸到地中海；阿尔卑斯造山运动（新生代、非洲与欧洲板块汇聚）形成，山体年轻、构造活跃；最高点勃朗峰约4806米（顶部为雪、逐年略变），是阿尔卑斯与西欧的最高峰，位于法国与意大利交界（IGN / BRGM）",
+};
+
+const PYRENEES: TerrainEntry = {
+  id: "pyrenees",
+  nameZh: "比利牛斯山脉",
+  nameEn: "Pyrenees / Pyrénées",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "维涅马勒峰（Vignemale，3298m，法国一侧最高）", lon: -0.144, lat: 42.773, elevation: 3298, kind: "peak" },
+  bbox: [-1.8, 42.3, 3.2, 43.4],
+  axis: [[-1.6, 42.9], [3.0, 42.5]],
+  viewFrom: 0,
+  viewScale: 2.0,
+  label: { lon: 0.7, lat: 42.8, rotation: -8 },
+  source: "比利牛斯山脉：法国与西班牙之间东西向的界山（安道尔位于其中）；骨架来自约3—3.7亿年前的海西造山，之后在阿尔卑斯造山期因伊比利亚与欧洲板块低速汇聚被重新抬升、褶皱；整体海拔低于阿尔卑斯，最高峰阿内托峰3404米在西班牙一侧，法国一侧最高为维涅马勒3298米（BRGM）",
+};
+
+const MASSIF_CENTRAL: TerrainEntry = {
+  id: "massif-central",
+  nameZh: "中央高原",
+  nameEn: "Massif Central",
+  category: "plateau",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "桑西山（Puy de Sancy，1885m，中央高原最高点）", lon: 2.813, lat: 45.528, elevation: 1885, kind: "peak" },
+  bbox: [1.8, 44.0, 4.6, 46.1],
+  viewScale: 2.3,
+  label: { lon: 3.0, lat: 45.2, rotation: 0 },
+  source: "中央高原：占法国国土约六分之一的一片古老高地，主体是海西造山（约3.6—2.5亿年前）形成的花岗岩、片麻岩、片岩；约2300万年前整体抬升、掀斜，上新世起又有强烈火山活动，堆出一系列火山锥和熔岩高原；桑西山属一座约22万年未活动的老层火山（Britannica / BRGM）",
+};
+
+const VOSGES: TerrainEntry = {
+  id: "vosges",
+  nameZh: "孚日山脉",
+  nameEn: "Vosges",
+  category: "mountain_system",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "大球峰（Grand Ballon，1424m）", lon: 7.100, lat: 47.902, elevation: 1424, kind: "peak" },
+  bbox: [6.55, 47.6, 7.35, 48.55],
+  axis: [[6.9, 47.7], [7.0, 48.5]],
+  viewFrom: 90,
+  viewScale: 1.6,
+  label: { lon: 6.95, lat: 48.1, rotation: -84 },
+  source: "孚日山脉：法国东部一块海西期的古老地块，与莱茵地堑对侧的黑森林曾是同一片山、被地堑张裂分开；南段是花岗岩、砂岩的圆顶“球峰”（ballons），北段是红砂岩高地；末次冰期山顶有小规模冰川，留下冰斗湖（BRGM）",
+};
+
+const ARMORICAN_MASSIF: TerrainEntry = {
+  id: "armorican-massif",
+  nameZh: "阿摩里卡山地",
+  nameEn: "Armorican Massif / Massif armoricain",
+  category: "hills",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "阿雷山（Monts d'Arrée，布列塔尼最高，约385m）", lon: -3.90, lat: 48.38, elevation: 385, kind: "escarpment" },
+  bbox: [-5.2, 46.9, -1.0, 49.0],
+  viewScale: 2.2,
+  label: { lon: -3.2, lat: 48.1, rotation: -10 },
+  source: "阿摩里卡山地：法国西北的一块海西期古老地块，覆盖布列塔尼、诺曼底西部和卢瓦尔河地区；早已被夷平成低缓的丘陵和高地（最高仅约385m），石英岩脊突出成一道道长垄；海岸被海侵淹没老河谷形成众多“里亚式”峡湾状海湾（BRGM）",
+};
+
+const PARIS_BASIN: TerrainEntry = {
+  id: "paris-basin",
+  nameZh: "巴黎盆地",
+  nameEn: "Paris Basin / Bassin parisien",
+  category: "basin",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "法兰西岛一带（巴黎盆地中心）", lon: 2.6, lat: 48.7, elevation: 90, kind: "escarpment" },
+  bbox: [-0.5, 47.2, 5.2, 50.0],
+  viewScale: 2.4,
+  label: { lon: 2.8, lat: 48.6, rotation: 0 },
+  source: "巴黎盆地：法国北-中部一个椭圆形的向斜沉积盆地，海西造山后的老陆块上自三叠纪起接受一层层石灰岩、白垩、砂、黏土沉积，地层像叠起的碗、向中心（巴黎附近）倾伏；东、南缘较硬的石灰岩被侵蚀后突出成一圈朝外的陡崖（cuesta 单面山），香槟、洛林等地形都是这样（BRGM / MINES Paris）",
+};
+
+const AQUITAINE_BASIN: TerrainEntry = {
+  id: "aquitaine-basin",
+  nameZh: "阿基坦盆地",
+  nameEn: "Aquitaine Basin / Bassin aquitain",
+  category: "basin",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "加龙河下游 / 波尔多一带", lon: -0.55, lat: 44.8, elevation: 25, kind: "escarpment" },
+  bbox: [-1.6, 43.0, 1.6, 46.1],
+  viewScale: 2.2,
+  label: { lon: 0.0, lat: 44.4, rotation: 0 },
+  source: "阿基坦盆地：法国西南象限的中生代—新生代沉积盆地，规模仅次于巴黎盆地，南缘抵比利牛斯、东北经普瓦图门槛与巴黎盆地相连；盆地里有法国重要的天然气田（拉克）和大片葡萄酒产区（波尔多）（Wikipedia / BRGM）",
+};
+
+const CORSICA: TerrainEntry = {
+  id: "corsica",
+  nameZh: "科西嘉岛",
+  nameEn: "Corsica / Corse",
+  category: "island",
+  regionId: "europe",
+  country: "france",
+  landmark: { name: "钦托山（Monte Cinto，2706m，科西嘉最高峰）", lon: 8.923, lat: 42.379, elevation: 2706, kind: "peak" },
+  bbox: [8.5, 41.35, 9.6, 43.05],
+  axis: [[8.75, 41.45], [9.35, 42.95]],
+  viewScale: 1.6,
+  label: { lon: 9.1, lat: 42.15, rotation: -60 },
+  source: "科西嘉岛：地中海西部一座多山的岛，一条南北向的中央山脊纵贯全岛、最高点钦托山2706米；西部和主体是海西期的花岗岩，东北的科西嘉角、卡斯塔尼恰一带是阿尔卑斯造山期变质的片岩（“片岩科西嘉”）；GR20 长距离山径沿脊而行（BRGM）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -5443,6 +5572,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   GEIRANGERFJORD, NAEROYFJORD, HARDANGERFJORD, LYSEFJORD, TRONDHEIMSFJORD,
   ROMSDALEN, GUDBRANDSDALEN, LYNGEN_ALPS, MJOSA, FEMUNDEN, HORNINDALSVATNET,
   TROLLTUNGA, SALTSTRAUMEN, VARANGERHALVOYA,
+  // ===== 欧洲 / 法国 =====
+  FRENCH_ALPS, PYRENEES, MASSIF_CENTRAL, VOSGES, ARMORICAN_MASSIF,
+  PARIS_BASIN, AQUITAINE_BASIN, CORSICA,
 ];
 
 /**
