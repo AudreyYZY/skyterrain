@@ -1,0 +1,16 @@
+{
+  "id": "cph-aal",
+  "name": "哥本哈根 — 奥尔堡",
+  "nameEn": "Copenhagen — Aalborg",
+  "description": "雷比尔丘陵",
+  "descriptionEn": "Rebild Bakker",
+  "depCountry": "denmark",
+  "arrCountry": "denmark",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK1225", "aircraft": "ATR 72", "depIata": "CPH", "arrIata": "AAL", "durationMin": 45 },
+  "cruiseHeight": 5500,
+  "waypoints": [
+    { "kind": "city", "id": "cph", "name": "哥本哈根", "nameEn": "Copenhagen", "lat": 55.6180, "lon": 12.6476, "airport": true },
+    { "kind": "terrain", "terrainId": "rebild-bakker" },
+    { "kind": "city", "id": "aal", "name": "奥尔堡", "nameEn": "Aalborg", "lat": 57.0928, "lon": 9.8492, "airport": true }
+  ]
+}

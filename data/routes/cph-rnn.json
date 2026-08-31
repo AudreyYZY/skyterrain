@@ -1,0 +1,16 @@
+{
+  "id": "cph-rnn",
+  "name": "哥本哈根 — 博恩霍尔姆",
+  "nameEn": "Copenhagen — Bornholm",
+  "description": "博恩霍尔姆·阿尔明丁根高地",
+  "descriptionEn": "Bornholm / Almindingen",
+  "depCountry": "denmark",
+  "arrCountry": "denmark",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK6207", "aircraft": "Airbus A320neo", "depIata": "CPH", "arrIata": "RNN", "durationMin": 35 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "cph", "name": "哥本哈根", "nameEn": "Copenhagen", "lat": 55.6180, "lon": 12.6476, "airport": true },
+    { "kind": "terrain", "terrainId": "bornholm-almindingen" },
+    { "kind": "city", "id": "rnn", "name": "龙讷", "nameEn": "Rønne", "lat": 55.0633, "lon": 14.7594, "airport": true }
+  ]
+}

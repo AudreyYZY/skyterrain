@@ -170,6 +170,11 @@ import vieKlu from "./vie-klu.json" with { type: "json" };
 // 爱尔兰
 import dubKir from "./dub-kir.json" with { type: "json" };
 import dubCfn from "./dub-cfn.json" with { type: "json" };
+// 丹麦
+import cphAar from "./cph-aar.json" with { type: "json" };
+import cphAal from "./cph-aal.json" with { type: "json" };
+import cphBll from "./cph-bll.json" with { type: "json" };
+import cphRnn from "./cph-rnn.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -312,4 +317,8 @@ export const ALL_ROUTES: FlightRoute[] = [
   vieKlu,
   dubKir,
   dubCfn,
+  cphAar,
+  cphAal,
+  cphBll,
+  cphRnn,
 ] as unknown as FlightRoute[];

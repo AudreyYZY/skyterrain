@@ -1,0 +1,16 @@
+{
+  "id": "cph-aar",
+  "name": "哥本哈根 — 奥胡斯",
+  "nameEn": "Copenhagen — Aarhus",
+  "description": "莫尔斯山地",
+  "descriptionEn": "Mols Bjerge",
+  "depCountry": "denmark",
+  "arrCountry": "denmark",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK1273", "aircraft": "ATR 72", "depIata": "CPH", "arrIata": "AAR", "durationMin": 40 },
+  "cruiseHeight": 5000,
+  "waypoints": [
+    { "kind": "city", "id": "cph", "name": "哥本哈根", "nameEn": "Copenhagen", "lat": 55.6180, "lon": 12.6476, "airport": true },
+    { "kind": "terrain", "terrainId": "mols-bjerge" },
+    { "kind": "city", "id": "aar", "name": "奥胡斯", "nameEn": "Aarhus", "lat": 56.3000, "lon": 10.6190, "airport": true }
+  ]
+}
