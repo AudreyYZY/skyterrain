@@ -1,0 +1,18 @@
+{
+  "id": "vie-klu",
+  "name": "维也纳 — 克拉根福",
+  "nameEn": "Vienna — Klagenfurt",
+  "description": "维也纳盆地 · 拉克斯—施内山 · 陶滕山",
+  "descriptionEn": "Vienna Basin · Rax-Schneeberg Group · Totes Gebirge",
+  "depCountry": "austria",
+  "arrCountry": "austria",
+  "flight": { "airline": "奥地利航空", "airlineEn": "Austrian Airlines", "flightNo": "OS935", "aircraft": "Bombardier Dash 8-400", "depIata": "VIE", "arrIata": "KLU", "durationMin": 50 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "vienna", "name": "维也纳", "nameEn": "Vienna", "lat": 48.1103, "lon": 16.5697, "airport": true },
+    { "kind": "terrain", "terrainId": "vienna-basin" },
+    { "kind": "terrain", "terrainId": "rax-schneeberg" },
+    { "kind": "terrain", "terrainId": "totes-gebirge" },
+    { "kind": "city", "id": "klagenfurt", "name": "克拉根福", "nameEn": "Klagenfurt", "lat": 46.6425, "lon": 14.3377, "airport": true }
+  ]
+}
