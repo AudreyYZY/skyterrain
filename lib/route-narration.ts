@@ -3372,6 +3372,108 @@ export const ROUTE_NARRATION: Record<
       "Helsinki to Mariehamn is about 55 minutes, same time zone, operated by Finnair (ATR 72-500) as one of Finland's domestic routes; a ferry is another option. Mariehamn Airport is about 3 km from the centre. Mariehamn is an ideal starting point for exploring the Åland Islands. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
+
+  "gmp-cju": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞济州，是全球客流量最大的国内航线之一，每日往返多达70余班，多家航空公司共同运营。飞机离开金浦后向南飞行，逐渐掠过湖南平原——朝鲜半岛面积最大的平原，面积约3500平方公里，古代碧骨堤水利工程记录了这一区域悠久的稻作传统。" +
+      "越过陆地后，飞机继续向南飞越朝鲜海峡的开阔海面，济州岛逐渐出现在视野中，岛屿中心汉拿山盾状火山轮廓清晰可辨，山麓散布着数百座俗称“오름”的寄生火山锥，飞机最终降落在济州——韩国最大的岛屿与最高峰所在地。",
+    "en-US":
+      "Flying from Seoul Gimpo to Jeju is one of the busiest domestic routes in the world, with more than 70 round trips daily. After leaving Gimpo the flight heads south, passing over the Honam Plain — the largest plain on the Korean Peninsula, where the ancient Byeokgolje irrigation works record this region's long rice-farming tradition." +
+      " Past the mainland, the flight continues south across the open waters of the Korea Strait; Jeju Island gradually comes into view, with the shield-volcano profile of Hallasan clearly visible at its centre, before the flight lands in Jeju, South Korea's largest island and home to its highest peak.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到济州飞约75分钟，同一时区，是大韩航空运营的国内航班之一（空客A220-300机型），这条航线因客流密集常被称为全球最繁忙的国内航线。金浦机场位于首尔市区西部；济州国际机场就在济州市区西侧。韩国境内多国公民短期旅游的电子旅行许可豁免安排以官方最新公布为准。",
+    "en-US":
+      "Seoul Gimpo to Jeju takes about 75 minutes, same time zone, operated by Korean Air (Airbus A220-300) as one of Korea's domestic routes; this route is often cited as the busiest domestic air route in the world by passenger volume. Gimpo Airport sits on the western side of Seoul; Jeju International Airport is right on the west side of Jeju City. South Korea's electronic travel-authorisation exemption arrangements for short-term visitors follow the latest official announcements.",
+    },
+  },
+
+  "gmp-pus": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞釜山，是连接韩国两大城市的传统航线，也是首尔通往东南沿海最便捷的空中通道。飞机离开金浦后向东南飞行，中途掠过俗离山——韩国中部一座相对孤立的花岗岩与片麻岩山体，1970年设为韩国第六座国家公园，山麓法住寺记录了这一区域悠久的佛教文化传统。" +
+      "越过俗离山后，飞机继续向东南飞行，临近降落前脚下展开洛东江河口三角洲——洛东江注入沿海处发育的辫状三角洲，乙淑岛沙洲是候鸟迁徙的重要中途停歇地，飞机随后降落在釜山——韩国第二大城市与最大港口，也是釜山国际电影节每年秋季的举办地。",
+    "en-US":
+      "Flying from Seoul Gimpo to Busan links Korea's two largest cities. After leaving Gimpo the flight heads south-east, passing over Songnisan midway — a relatively isolated granite-and-gneiss massif in central Korea, its Beopjusa Temple recording this area's long Buddhist tradition." +
+      " Past Songnisan, the flight continues south-east, and just before landing the Nakdong River Estuary unfolds below — a braided delta formed where the Nakdong River meets the coast, with the Eulsukdo sandbar an important stopover for migratory birds — before the flight lands in Busan, South Korea's second-largest city and largest port.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到釜山飞约55分钟，同一时区，是大韩航空运营的国内航班之一（空客A220-300机型），也可选择约2.5小时的KTX高铁。金浦机场位于首尔市区西部；金海国际机场距釜山市区约20公里。釜山是探索海云台与甘川文化村的理想门户。",
+    "en-US":
+      "Seoul Gimpo to Busan takes about 55 minutes, same time zone, operated by Korean Air (Airbus A220-300) as one of Korea's domestic routes; the KTX high-speed rail (about 2.5 hours) is another option. Gimpo Airport sits on the western side of Seoul; Gimhae International Airport is about 20 km from central Busan. Busan is an ideal gateway for Haeundae Beach and Gamcheon Culture Village.",
+    },
+  },
+
+  "gmp-usn": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞蔚山，是连接首都与东南部重工业城市的航线。飞机离开金浦后向东南飞行，中途掠过俗离山——韩国中部一座相对孤立的花岗岩与片麻岩山体，1970年设为韩国第六座国家公园，山麓法住寺始建于新罗时期。" +
+      "越过俗离山后，飞机继续向东南飞行，逐渐接近朝鲜半岛东南沿海，飞机最终降落在蔚山——韩国重要的造船、汽车与石化工业城市，太和江十里竹林是市区内难得的开阔自然空间，蔚山近海也是韩国鲸鱼观测活动的举办地之一。",
+    "en-US":
+      "Flying from Seoul Gimpo to Ulsan links the capital with a major heavy-industry city in the south-east. After leaving Gimpo the flight heads south-east, passing over Songnisan midway — a relatively isolated granite-and-gneiss massif in central Korea, designated Korea's sixth national park in 1970." +
+      " Past Songnisan, the flight continues south-east, gradually approaching Korea's south-eastern coast, before landing in Ulsan — a major centre for shipbuilding, automobiles, and petrochemicals, home to the rare open green space of the Taehwa River's bamboo grove.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到蔚山飞约60分钟，同一时区，是大韩航空运营的国内航班之一，每日往返约2班，也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；蔚山机场距市区约15公里。蔚山是探索岭南阿尔卑斯山地与长生浦鲸鱼文化村的门户。",
+    "en-US":
+      "Seoul Gimpo to Ulsan takes about 60 minutes, same time zone, operated by Korean Air as one of Korea's domestic routes, with roughly two round trips daily; the KTX (about 2 hours) is another option. Gimpo Airport sits on the western side of Seoul; Ulsan Airport is about 15 km from the city centre. Ulsan is a gateway to the Yeongnam Alps and Jangsaengpo Whale Culture Village.",
+    },
+  },
+
+  "gmp-rsu": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞丽水，是连接首都与南部沿海港口城市的航线。飞机离开金浦后向南飞行，脚下持续展开湖南平原开阔平坦的地貌——朝鲜半岛面积最大的平原，面积约3500平方公里，纵横的灌溉水渠将平原分割成棋盘状的地块，是韩国最重要的稻米产区。" +
+      "飞机继续向南飞行，逐渐接近朝鲜半岛南部沿海，飞机最终降落在丽水——2012年世界博览会举办地，以跨海缆车夜景与音乐喷泉闻名的港口城市，突山岛与丽水本岛由大桥相连，梧桐岛海岸步道是市区内探索海岸地貌的经典去处。",
+    "en-US":
+      "Flying from Seoul Gimpo to Yeosu links the capital with a southern coastal port city. After leaving Gimpo the flight heads south, the open, flat landform of the Honam Plain continuing below — the largest plain on the Korean Peninsula, its irrigation channels dividing the land into a checkerboard of fields." +
+      " The flight continues south, gradually approaching Korea's southern coast, before landing in Yeosu — host of the 2012 World Expo and a port city known for its cross-sea cable car night views.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到丽水飞约60分钟，同一时区，是真航空运营的国内航班之一（波音737-800机型），也可选择约3小时的KTX高铁。金浦机场位于首尔市区西部；丽水机场距市区约20公里。丽水是探索梧桐岛与突山大桥的理想门户。",
+    "en-US":
+      "Seoul Gimpo to Yeosu takes about 60 minutes, same time zone, operated by Jin Air (Boeing 737-800) as one of Korea's domestic routes; the KTX (about 3 hours) is another option. Gimpo Airport sits on the western side of Seoul; Yeosu Airport is about 20 km from the city centre. Yeosu is an ideal gateway for Odongdo Island and Dolsan Bridge.",
+    },
+  },
+
+  "gmp-kpo": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞浦项庆州，是连接首都与东南沿海钢铁工业城市及新罗古都的航线。飞机离开金浦后向东南飞行，中途掠过洛东江——韩国境内最长的河流，全长约510公里，安东一带河流下切花岗岩基岩形成的河回村曲流是沿线最具代表性的河流地貌。" +
+      "越过洛东江后，飞机继续向东南飞行，逐渐接近朝鲜半岛东南沿海，飞机最终降落在浦项庆州机场——韩国钢铁工业城市浦项与新罗古都庆州共用的机场，浦项因浦项制铁的建立而在20世纪后期迅速发展为工业城市。",
+    "en-US":
+      "Flying from Seoul Gimpo to Pohang Gyeongju links the capital with a south-eastern coastal steel city and the ancient Silla capital nearby. After leaving Gimpo the flight heads south-east, passing over the Nakdong River midway — the longest river in South Korea, with the Hahoe meander near Andong, cut by the river into granite bedrock, the most distinctive stretch along its course." +
+      " Past the Nakdong River, the flight continues south-east, gradually approaching Korea's south-eastern coast, before landing at Pohang Gyeongju Airport, shared by the steel city of Pohang and the ancient Silla capital of Gyeongju.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到浦项庆州飞约55分钟，同一时区，是真航空运营的国内航班之一（波音737-800机型），也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；浦项庆州机场距浦项市区约10公里、距庆州市区约35公里。这座机场是探索新罗古都庆州历史遗址群的理想门户。",
+    "en-US":
+      "Seoul Gimpo to Pohang Gyeongju takes about 55 minutes, same time zone, operated by Jin Air (Boeing 737-800) as one of Korea's domestic routes; the KTX (about 2 hours) is another option. Gimpo Airport sits on the western side of Seoul; Pohang Gyeongju Airport is about 10 km from central Pohang and about 35 km from central Gyeongju. This airport is an ideal gateway for exploring the Silla-era heritage sites of Gyeongju.",
+    },
+  },
+
+  "pus-cju": {
+    study: {
+    "zh-CN":
+      "釜山飞济州，是连接韩国东南部港口城市与南部岛屿的航线，也是济州航空与大韩航空共同运营的热门航段。飞机离开釜山后向西南飞行，脚下展开闲丽海上国立公园的多岛海——韩国南部沿海一片散布数百座岛屿的海域，是末次冰期后海平面上升淹没沿海山地丘陵形成的典型溺谷型多岛海地貌，1968年设为韩国首座海上国家公园。" +
+      "越过多岛海后，飞机继续向西南飞行穿越开阔海面，济州岛逐渐出现在视野中，岛屿中心汉拿山轮廓清晰可辨，飞机最终降落在济州——韩国最大的岛屿。",
+    "en-US":
+      "Flying from Busan to Jeju links a south-eastern port city with Korea's southern island. After leaving Busan the flight heads south-west, the archipelago of Hallyeohaesang Marine National Park unfolding below — a stretch of Korea's southern coastal waters scattered with hundreds of islands, a classic ria-type archipelago formed as sea level rose after the last glacial period and drowned the coastal hills, designated Korea's first marine national park in 1968." +
+      " Past the archipelago, the flight continues south-west across open water; Jeju Island gradually comes into view, before the flight lands in Jeju, South Korea's largest island.",
+    },
+    travel: {
+    "zh-CN":
+      "釜山到济州飞约60分钟，同一时区，是济州航空运营的国内航班之一（波音737-800机型），大韩航空也运营同一航线。金海国际机场距釜山市区约20公里；济州国际机场就在济州市区西侧。",
+    "en-US":
+      "Busan to Jeju takes about 60 minutes, same time zone, operated by Jeju Air (Boeing 737-800) as one of Korea's domestic routes, with Korean Air also operating the same sector. Gimhae International Airport is about 20 km from central Busan; Jeju International Airport is right on the west side of Jeju City.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

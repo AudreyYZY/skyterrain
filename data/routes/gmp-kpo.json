@@ -1,0 +1,16 @@
+{
+  "id": "gmp-kpo",
+  "name": "首尔金浦 — 浦项庆州",
+  "nameEn": "Seoul Gimpo — Pohang Gyeongju",
+  "description": "洛东江",
+  "descriptionEn": "Nakdong River",
+  "depCountry": "south-korea",
+  "arrCountry": "south-korea",
+  "flight": { "airline": "真航空", "airlineEn": "Jin Air", "flightNo": "LJ659", "aircraft": "Boeing 737-800", "depIata": "GMP", "arrIata": "KPO", "durationMin": 55 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "gmp", "name": "首尔金浦", "nameEn": "Seoul Gimpo", "lat": 37.5583, "lon": 126.7958, "airport": true },
+    { "kind": "terrain", "terrainId": "nakdong-river" },
+    { "kind": "city", "id": "kpo", "name": "浦项庆州", "nameEn": "Pohang Gyeongju", "lat": 35.9878, "lon": 129.4204, "airport": true }
+  ]
+}

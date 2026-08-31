@@ -1,0 +1,16 @@
+{
+  "id": "pus-cju",
+  "name": "釜山 — 济州",
+  "nameEn": "Busan — Jeju",
+  "description": "闲丽海上国立公园",
+  "descriptionEn": "Hallyeohaesang Marine National Park",
+  "depCountry": "south-korea",
+  "arrCountry": "south-korea",
+  "flight": { "airline": "济州航空", "airlineEn": "Jeju Air", "flightNo": "7C503", "aircraft": "Boeing 737-800", "depIata": "PUS", "arrIata": "CJU", "durationMin": 60 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "pus", "name": "釜山", "nameEn": "Busan", "lat": 35.1795, "lon": 128.9386, "airport": true },
+    { "kind": "terrain", "terrainId": "hallyeohaesang-marine-park" },
+    { "kind": "city", "id": "cju", "name": "济州", "nameEn": "Jeju", "lat": 33.5113, "lon": 126.4930, "airport": true }
+  ]
+}
