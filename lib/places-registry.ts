@@ -220,6 +220,12 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   // 卢森堡（埃斯灵—古特兰）
   "lu-oesling": { zh: "埃斯灵", en: "Oesling", order: 250 },
   "lu-gutland": { zh: "古特兰", en: "Gutland", order: 251 },
+  // 韩国（首都圈→岭南→湖南→江原→济州）
+  "kr-capital": { zh: "首都圈", en: "Capital Area", order: 280 },
+  "kr-yeongnam": { zh: "岭南地区", en: "Yeongnam Region", order: 281 },
+  "kr-honam": { zh: "湖南地区", en: "Honam Region", order: 282 },
+  "kr-gangwon": { zh: "江原道", en: "Gangwon Province", order: 283 },
+  "kr-jeju": { zh: "济州岛", en: "Jeju Island", order: 284 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -259,6 +265,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "sweden", nameZh: "瑞典", nameEn: "Sweden" },
   { country: "finland", nameZh: "芬兰", nameEn: "Finland" },
   { country: "luxembourg", nameZh: "卢森堡", nameEn: "Luxembourg" },
+  { country: "south-korea", nameZh: "韩国", nameEn: "South Korea" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1989,6 +1996,80 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
     source: "埃施叙尔苏尔市中心 49.9167,5.9167；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约45km）：公开资料",
   },
+
+  // ── 韩国 ──────────────────────────────────────────────
+  {
+    id: "seoul", nameZh: "首尔", nameEn: "Seoul", country: "south-korea", tier: "capital", zone: "kr-capital",
+    lon: 126.9780, lat: 37.5665,
+    airport: { iata: "ICN", nameZh: "仁川国际机场", nameEn: "Incheon International", lon: 126.4407, lat: 37.4602 },
+    source: "首尔市厅一带 37.5665,126.9780；ICN 机场：公开资料（国内航线主要用金浦机场 GMP，本表统一列国际枢纽 ICN）",
+  },
+  {
+    id: "busan", nameZh: "釜山", nameEn: "Busan", country: "south-korea", tier: "major", zone: "kr-yeongnam",
+    lon: 129.0756, lat: 35.1796,
+    airport: { iata: "PUS", nameZh: "金海国际机场", nameEn: "Gimhae International", lon: 128.9386, lat: 35.1795 },
+    source: "釜山站/南浦一带 35.1796,129.0756；PUS 机场：公开资料",
+  },
+  {
+    id: "jeju-city", nameZh: "济州市", nameEn: "Jeju City", country: "south-korea", tier: "major", zone: "kr-jeju",
+    lon: 126.5312, lat: 33.4996,
+    airport: { iata: "CJU", nameZh: "济州国际机场", nameEn: "Jeju International", lon: 126.4930, lat: 33.5113 },
+    source: "济州市中心 33.4996,126.5312；CJU 机场：公开资料",
+  },
+  {
+    id: "gyeongju", nameZh: "庆州", nameEn: "Gyeongju", country: "south-korea", tier: "major", zone: "kr-yeongnam",
+    lon: 129.2247, lat: 35.8562,
+    airport: { iata: "KPO", nameZh: "浦项庆州机场", nameEn: "Pohang Gyeongju Airport", lon: 129.4204, lat: 35.9878 },
+    source: "庆州历史区一带 35.8562,129.2247；本地无商业机场，最近机场为浦项庆州机场（距市区约35km）：公开资料",
+  },
+  {
+    id: "ulsan", nameZh: "蔚山", nameEn: "Ulsan", country: "south-korea", tier: "notable", zone: "kr-yeongnam",
+    lon: 129.3114, lat: 35.5384,
+    airport: { iata: "USN", nameZh: "蔚山机场", nameEn: "Ulsan Airport", lon: 129.3519, lat: 35.5934 },
+    source: "蔚山市中心 35.5384,129.3114；USN 机场：公开资料",
+  },
+  {
+    id: "yeosu", nameZh: "丽水", nameEn: "Yeosu", country: "south-korea", tier: "notable", zone: "kr-honam",
+    lon: 127.6622, lat: 34.7604,
+    airport: { iata: "RSU", nameZh: "丽水机场", nameEn: "Yeosu Airport", lon: 127.6169, lat: 34.8423 },
+    source: "丽水市中心 34.7604,127.6622；RSU 机场：公开资料",
+  },
+  {
+    id: "pohang", nameZh: "浦项", nameEn: "Pohang", country: "south-korea", tier: "notable", zone: "kr-yeongnam",
+    lon: 129.3435, lat: 36.0190,
+    airport: { iata: "KPO", nameZh: "浦项庆州机场", nameEn: "Pohang Gyeongju Airport", lon: 129.4204, lat: 35.9878 },
+    source: "浦项市中心 36.0190,129.3435；KPO 机场：公开资料",
+  },
+  {
+    id: "gangneung", nameZh: "江陵", nameEn: "Gangneung", country: "south-korea", tier: "notable", zone: "kr-gangwon",
+    lon: 128.8761, lat: 37.7519,
+    airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
+    source: "江陵市中心 37.7519,128.8761；本地无商业机场，最近机场为襄阳国际机场（距市区约40km，国内定期航班有限）：公开资料",
+  },
+  {
+    id: "sokcho", nameZh: "束草", nameEn: "Sokcho", country: "south-korea", tier: "notable", zone: "kr-gangwon",
+    lon: 128.5918, lat: 38.2070,
+    airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
+    source: "束草市中心 38.2070,128.5918；本地无商业机场，最近机场为襄阳国际机场（距市区约20km，国内定期航班有限）：公开资料",
+  },
+  {
+    id: "chuncheon", nameZh: "春川", nameEn: "Chuncheon", country: "south-korea", tier: "notable", zone: "kr-gangwon",
+    lon: 127.7298, lat: 37.8813,
+    airport: { iata: "WJU", nameZh: "原州机场", nameEn: "Wonju Airport", lon: 127.9600, lat: 37.4380 },
+    source: "春川市中心 37.8813,127.7298；本地无商业机场，最近机场为原州机场（距市区约65km）：公开资料",
+  },
+  {
+    id: "andong", nameZh: "安东", nameEn: "Andong", country: "south-korea", tier: "notable", zone: "kr-yeongnam",
+    lon: 128.7294, lat: 36.5684,
+    airport: { iata: "TAE", nameZh: "大邱国际机场", nameEn: "Daegu International", lon: 128.6589, lat: 35.8942 },
+    source: "安东市中心 36.5684,128.7294；本地小型机场现无定期客运航班，最近有定期航班的机场为大邱国际机场（距市区约90km）：公开资料",
+  },
+  {
+    id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam",
+    lon: 127.1480, lat: 35.8242,
+    airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8093, lat: 35.1264 },
+    source: "全州韩屋村一带 35.8242,127.1480；本地无商业机场，最近机场为光州机场（距市区约50km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1997,6 +2078,7 @@ const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
 export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   china: "asia",
   japan: "asia",
+  "south-korea": "asia",
   australia: "oceania",
   "new-zealand": "oceania",
   usa: "north-america",

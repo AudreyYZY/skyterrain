@@ -4601,4 +4601,187 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most pleasant season and also peak time for water activities on the lake; plan a day's cycling or hiking loop around the lake to fully experience the scenery of the Upper Sûre Nature Park.",
   },
+
+  "south-korea-overview": {
+    identity:
+      "The Republic of Korea occupies the southern half of the Korean Peninsula in East Asia, covering about 100,000 km² with a population of roughly 51 million; the capital is Seoul, the common language is Korean, and the currency is the Korean won (KRW).",
+    layout:
+      "The country divides broadly into five regions: the Capital Area (Seoul, Incheon and surroundings), the Yeongnam region (Busan, Gyeongju, Ulsan and other south-eastern cities), the Honam region (Jeonju and other south-western cities), Gangwon Province (Gangneung, Sokcho and the eastern coast and mountains), and Jeju Island (a volcanic island to the south).",
+    gettingAround:
+      "The KTX high-speed rail links Seoul with Busan, Gangneung, and other major cities and is the mainstay of intercity travel; domestic flights are centred on Seoul's Gimpo Airport, and the Gimpo–Jeju route is one of the busiest domestic air routes in the world. Within cities, the T-money card works across subway, bus, and taxi. Entry requires a separate electronic arrival card, and electronic travel-authorisation exemption arrangements for short-term visitors from various countries follow the latest official announcements.",
+    culture:
+      "The official language is Korean, and a bow on meeting is common etiquette. Tipping is not customary at restaurants, taxis, and similar places, and offering one can sometimes leave the recipient confused rather than pleased. Voltage is 220V, with type C/F round two-pin European-style sockets.",
+    seeAndDo:
+      "Natural landforms: the granite peaks of Seoraksan and Jirisan, the volcanic landscape of Hallasan and Jeju Island, and the tidal wetlands of Suncheon Bay and the Nakdong River estuary. Heritage and culture: Gyeongbokgung Palace in Seoul, the Silla-dynasty heritage sites of Gyeongju, and Hahoe Village in Andong. Islands and coast: Jeju Island, the archipelago of Hallyeohaesang Marine National Park, and the east-coast cities of Gangneung and Sokcho.",
+    whenAndTips:
+      "Cherry blossoms in spring (April–May) and autumn foliage (September–November) are the most popular travel seasons; summer (July–August) is hot, humid, and prone to typhoons, while winter (December–February) is cold but marks peak season for Gangwon Province's ski resorts.",
+  },
+  seoul: {
+    identity:
+      "Seoul is South Korea's capital and largest city, with a population of about 9.5 million (over 25 million across the wider capital area); it straddles the Han River and is the country's centre of politics, economy, and culture.",
+    layout:
+      "The city divides along the Han River into Gangbuk (the old town north of the river, dense with historic sites such as Gyeongbokgung and the Myeongdong shopping district) and Gangnam (a modern commercial and residential district south of the river), linked by dozens of bridges.",
+    gettingAround:
+      "Incheon International Airport is the main international gateway, about 50 km from the city centre, with the airport express reaching Seoul Station in about an hour; domestic flights mostly use Gimpo Airport. The city's subway network is extensive; the T-money card is recommended.",
+    culture:
+      "Korean is the common language, and English is fairly widely spoken among younger generations. Seoul has a strong café culture, and convenience stores are open 24 hours. Tipping is not expected at restaurants.",
+    seeAndDo:
+      "Gyeongbokgung Palace and the Bukchon Hanok Village; Myeongdong and Dongdaemun shopping districts; Han River parks (cycling, picnics); hiking in Bukhansan National Park; the confluence of the Han River's two branches at Yangsu-ri.",
+    whenAndTips:
+      "Cherry blossom season (April–May) and autumn foliage (September–November) are the most popular; a T-money card is worth getting, and most attractions close on Mondays.",
+  },
+  busan: {
+    identity:
+      "Busan is South Korea's second-largest city and largest port, with a population of about 3.3 million, on the south-eastern coast of the Korean Peninsula, and an important maritime gateway and film-festival host city.",
+    layout:
+      "The city stretches along the coast, with the Nampo-dong and Seomyeon commercial districts at its centre, the Haeundae and Gwangalli beach resort areas, and the colourful hillside village of Gamcheon Culture Village each occupying different districts, linked by the subway.",
+    gettingAround:
+      "Gimhae International Airport is about 20 km from the city centre, connected by airport bus and subway; the KTX links Seoul in about 2.5 hours. The city's subway covers the main sights; the T-money card is recommended.",
+    culture:
+      "The Busan dialect differs somewhat from standard Seoul Korean, and locals are often seen as more direct and outgoing than Seoulites. The Busan International Film Festival is held every autumn and is a major film festival in Asia.",
+    seeAndDo:
+      "Haeundae and Gwangalli beaches; Gamcheon Culture Village; Jagalchi Fish Market; Taejongdae coastal cliff park; Busan Tower in Yongdusan Park.",
+    whenAndTips:
+      "Summer (July–August) is beach season, and accommodation is tight during the film festival in October; book seaside lodging in advance.",
+  },
+  "jeju-city": {
+    identity:
+      "Jeju City is Jeju Island's largest city and gateway, with a population of about 500,000, and the main starting point for exploring Hallasan and Jeju's volcanic landforms.",
+    layout:
+      "The city extends along the island's north coast; the old town around Dongmun Market retains traditional streets, while the newer Nohyeong-dong area is a modern commercial and residential district.",
+    gettingAround:
+      "Jeju International Airport sits right on the city's west side, the island's only civil airport; the ring road and bus network cover the whole island, and self-driving is a common way to explore.",
+    culture:
+      "The Jeju dialect differs considerably from standard Korean, and the island preserves a distinctive haenyeo (female free-diving harvester) culture, with \"Culture of Jeju Haenyeo\" inscribed on the UNESCO Intangible Cultural Heritage list in 2016.",
+    seeAndDo:
+      "Yongduam Rock coast; Jeju Folklore and Natural History Museum; Dongmun traditional market; nearby, Hallasan, Seongsan Ilchulbong, and the Manjanggul lava tube.",
+    whenAndTips:
+      "Canola-flower season in spring (March–April) and silver-grass season in autumn (October–November) are most popular; typhoons cluster in summer (July–September), so check weather warnings before travelling.",
+  },
+  gyeongju: {
+    identity:
+      "Gyeongju was the capital of the Silla kingdom (57 BC – AD 935) for nearly a millennium, with a population of about 250,000; the city is dotted with royal tombs, temples, and ruins, earning it the nickname \"museum without walls.\"",
+    layout:
+      "The historic core sits on the flat land at the city centre, with the Daereungwon tomb cluster, Cheomseongdae observatory, and Bulguksa Temple and Seokguram Grotto spread across the city and its outskirts.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Pohang Gyeongju Airport (about 35 km away); the KTX Singyeongju station reaches Seoul in about 2 hours. The compact historic core is easily covered on foot or by rented bicycle.",
+    culture:
+      "As Silla's ancient capital, Gyeongju preserves a dense concentration of royal tombs and Buddhist heritage spanning a thousand years; the \"Gyeongju Historic Areas\" were inscribed on the UNESCO World Heritage List in 2000.",
+    seeAndDo:
+      "Bulguksa Temple and Seokguram Grotto (World Heritage); the Daereungwon tomb cluster and Cheonmachong tomb; Cheomseongdae (one of East Asia's oldest surviving observatories); night views at Donggung Palace and Wolji Pond; the traditional settlement of Yangdong Village.",
+    whenAndTips:
+      "Cherry blossom season in spring (April) and autumn (October–November) are most pleasant; plan at least two days to cover both the city-centre sites and Bulguksa/Seokguram separately.",
+  },
+  ulsan: {
+    identity:
+      "Ulsan is a major heavy-industry city in South Korea, with a population of about 1.1 million, known for shipbuilding, automobiles, and petrochemicals, and also home to the Taehwa River ecological park and a whale-watching culture.",
+    layout:
+      "The city is built along the Taehwa River, with the Taehwa River National Garden running along its banks, while industrial zones, residential areas, and natural parks occupy separate districts.",
+    gettingAround:
+      "Ulsan Airport is about 15 km from the city centre; the KTX reaches Seoul in about 2 hours. The city bus network covers the main areas.",
+    culture:
+      "Ulsan has a historic association with whaling and whale-watching; Jangsaengpo Whale Culture Village and Whale Museum document this tradition, and the waters off Ulsan remain a site for whale-watching activities today.",
+    seeAndDo:
+      "Taehwa River National Garden (a 4-km bamboo grove); Jangsaengpo Whale Culture Village and Whale Museum; the coastal rock formations at Daewangam Park; nearby, the Yeongnam Alps mountains.",
+    whenAndTips:
+      "Spring and autumn are most pleasant; the bamboo grove along the Taehwa River is at its greenest in summer, a rare stretch of open nature within the city.",
+  },
+  yeosu: {
+    identity:
+      "Yeosu is a coastal port city in southern South Korea, with a population of about 280,000, which became a popular night-view and seaside destination after hosting the 2012 World Expo.",
+    layout:
+      "The city extends along the coast of the Yeosu Peninsula, with the city centre adjoining the former Expo grounds; Dolsan Island and the main part of Yeosu are linked by a bridge.",
+    gettingAround:
+      "Yeosu Airport is about 20 km from the city centre; the KTX Yeosu EXPO station reaches Seoul in about 3 hours. Getting around the city and Dolsan Island's coastal sights is best done by car or bus.",
+    culture:
+      "Yeosu became known for its marine ecology exhibits following the 2012 Expo's theme, \"The Living Ocean and Coast\"; its cross-sea cable car and musical fountain at night are among the city's signature evening experiences.",
+    seeAndDo:
+      "The Yeosu Maritime Cable Car (views across the water); the Odongdo Island coastal walk; the Yeosu Expo Aquarium; night views from Dolsan Bridge; Yulpo Liberation Beach.",
+    whenAndTips:
+      "Summer (June–August) is beach season, and the cable car's night view is best around dusk; plan one evening dedicated to Yeosu's night scenery.",
+  },
+  pohang: {
+    identity:
+      "Pohang is a major steel-industry city in South Korea, with a population of about 500,000, home to the headquarters of POSCO, and also a gateway for the coast of Yeongil Bay and the Homigot sunrise viewpoint.",
+    layout:
+      "The city stretches along Yeongil Bay, with steel-industry zones and residential areas separate from the seaside Yeongildae Park; Homigot Park sits at the easternmost point of the coast, the classic sunrise spot.",
+    gettingAround:
+      "Pohang Gyeongju Airport is about 10 km from the city centre; the KTX reaches Seoul in about 2 hours. Getting around the city and coastal sights is best done by car or bus.",
+    culture:
+      "Pohang grew rapidly from a fishing village into an industrial city in the late 20th century following the establishment of POSCO, making it a representative city of Korea's postwar industrialisation.",
+    seeAndDo:
+      "Homigot Park (one of mainland Korea's easternmost sunrise viewpoints, with its hand-sculpture landmark); Yeongildae seaside park; the retro streets of Guryongpo; nearby, the historic sites of Gyeongju.",
+    whenAndTips:
+      "New Year's Day sunrise-viewing at Homigot is a signature local event and draws crowds; spring and autumn suit combining a visit with Gyeongju.",
+  },
+  gangneung: {
+    identity:
+      "Gangneung is a representative city on Gangwon Province's east coast, with a population of about 210,000; it co-hosted the 2018 Winter Olympics and is known for its coffee culture and the Gyeongpo Lagoon.",
+    layout:
+      "The city extends along the east coast, with Gyeongpo Lagoon and Gyeongpo Beach adjoining each other on its north side, and the Anmok coffee street lined with sea-view cafés along the shoreline.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 40 km away, with limited domestic scheduled service); the KTX Gangneung Line reaches Seoul's Cheongnyangni Station in about 2 hours. Getting around the city and Gyeongpo Lagoon is best done by car or bus.",
+    culture:
+      "The annual Gangneung Danoje Festival, held at Dano, blends shamanic ritual, mask drama, and market events; it was inscribed on the UNESCO Intangible Cultural Heritage list in 2005.",
+    seeAndDo:
+      "Gyeongpo Lagoon and the Gyeongpodae pavilion; the Anmok coastal coffee street; Ojukheon (birthplace of the Joseon-era scholar Yi I); Jeongdongjin sunrise-train station; nearby, the Daegwallyeong highland pastures.",
+    whenAndTips:
+      "The Gangneung Danoje Festival around Dano (5th day of the 5th lunar month) is the best time to experience local tradition; summer is beach season, winter is ski and hot-spring season.",
+  },
+  sokcho: {
+    identity:
+      "Sokcho is a coastal city in north-eastern Gangwon Province, with a population of about 80,000, the traditional gateway to Seoraksan National Park, and not far from the Military Demarcation Line.",
+    layout:
+      "The city sits right on the east coast, with Cheongcho Lake lagoon and Sokcho Port within the city, while the entrance to Seoraksan National Park lies inland, about 15 km to the west.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Yangyang International Airport (about 20 km away, with limited domestic scheduled service); an express bus from Seoul takes about 2 to 2.5 hours. Getting around the city and to the Seoraksan entrance is best done by bus or hired car.",
+    culture:
+      "Because of its proximity to the Military Demarcation Line, Sokcho was historically an important port town before the peninsula's division; today it is known for its seafood market and Seoraksan tourism.",
+    seeAndDo:
+      "Seoraksan National Park (hiking to Daecheongbong and Guryongso Falls); seafood at Sokcho Jungang Market; Cheongcho Lake ecological park; the seaside temple of Naksansa.",
+    whenAndTips:
+      "Autumn (October) foliage at Seoraksan is nationally famous, so book accommodation ahead; summer beaches and winter skiing each have their own peak season.",
+  },
+  chuncheon: {
+    identity:
+      "Chuncheon is the seat of Gangwon Province's provincial government, with a population of about 280,000, sitting at the confluence of the Soyang and North Han rivers; it is known for its lake scenery and as the birthplace of dakgalbi (spicy stir-fried chicken).",
+    layout:
+      "The city is surrounded by bodies of water including Soyang Lake and Uiam Lake, with the Myeongdong shopping district, Nami Island, and the Soyang Dam lying in different directions from the city centre.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Wonju Airport (about 65 km away); Seoul's subway Gyeongchun Line runs directly to Chuncheon Station in about 1 to 1.5 hours, making it one of the most accessible cities near Seoul.",
+    culture:
+      "Chuncheon is known internationally as the filming location of the Korean drama \"Winter Sonata\" on Nami Island, and is also the birthplace of dakgalbi; the city's Dakgalbi Street is a signature local food experience.",
+    seeAndDo:
+      "Nami Island (a lake island and K-drama filming location); the Soyang Dam and a Soyang Lake boat cruise; Small Forest of Dreams Park; dakgalbi at Chuncheon's Dakgalbi Street.",
+    whenAndTips:
+      "Autumn foliage on Nami Island and winter snow scenery are the most popular seasons; an easy day trip from Seoul.",
+  },
+  andong: {
+    identity:
+      "Andong is a historic and cultural city in north-eastern North Gyeongsang Province, with a population of about 150,000; Hahoe Village is one of Korea's best-preserved traditional settlements, and the city is also the birthplace of Andong jjimdak (braised chicken).",
+    layout:
+      "The city sits along the upper Nakdong River; Hahoe Village occupies its own terrace on the inside of a Nakdong River meander to the city's west, at some distance from the centre.",
+    gettingAround:
+      "Andong's small local airfield currently has no scheduled passenger flights; the nearest airport with scheduled service is Daegu International Airport (about 90 km away); the KTX reaches Seoul in about 2.5 hours, and long-distance buses are also an option. Getting to Hahoe Village is best done by car or bus.",
+    culture:
+      "Andong is known as the \"capital of Korea's spiritual culture,\" with its Confucian academy (seowon) traditions and ceremonial rites well preserved; the \"Seowon, Korean Neo-Confucian Academies\" series, including Andong's Dosan Seowon and Byeongsan Seowon, was inscribed on the UNESCO World Heritage List in 2019.",
+    seeAndDo:
+      "The traditional settlement of Hahoe Village and its mask-dance performances; Dosan Seowon academy; Byeongsan Seowon academy; night views at Wolyeonggyo Bridge; Andong jjimdak.",
+    whenAndTips:
+      "The Andong International Mask Dance Festival in autumn (September–October) is the liveliest time to visit; plan at least half a day dedicated to Hahoe Village.",
+  },
+  jeonju: {
+    identity:
+      "Jeonju is the seat of North Jeolla Province's provincial government, with a population of about 650,000; the Jeonju Hanok Village preserves several hundred traditional hanok buildings and represents Korea's food culture and traditional-heritage experiences.",
+    layout:
+      "The Jeonju Hanok Village occupies one corner of the city centre, in striking contrast with the modern commercial districts around it; Jeondong Catholic Church and Gyeonggijeon Shrine sit at the village's edge.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Gwangju Airport (about 50 km away); the KTX Jeonju station reaches Seoul in about 2 hours, and long-distance buses also run directly into the city. The Hanok Village area is walkable.",
+    culture:
+      "Jeonju is recognised by UNESCO as a \"City of Gastronomy\"; Jeonju bibimbap originated here, and the Hanok Village is dense with traditional teahouses and craft workshops.",
+    seeAndDo:
+      "Jeonju Hanok Village (hanbok rental, strolling the traditional architecture); Jeondong Catholic Church; Gyeonggijeon Shrine (housing a royal portrait of the Joseon dynasty's founder); the Nambu Market night market; Jeonju bibimbap.",
+    whenAndTips:
+      "Spring and autumn are best for hanbok photography; renting traditional hanbok within the Hanok Village makes for an immersive experience that matches the architecture around you.",
+  },
 };
