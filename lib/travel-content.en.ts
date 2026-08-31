@@ -4289,4 +4289,174 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "December–April is peak ski season; June–August is peak season for summer outdoor activities — one of the few destinations with both a winter ski season and a summer hiking season.",
   },
+
+  // ============ Finland ============
+  "finland-overview": {
+    identity:
+      "Finland sits in Northern Europe, covering about 340,000 km² with a population of roughly 5.6 million. Known as the \"Land of a Thousand Lakes,\" it actually has more than 188,000 lakes, and forest covers about 73% of the country, ranging from the archipelago coast in the south to the Arctic wilderness of Lapland in the north — a dramatic span of latitude and landform.",
+    layout:
+      "Finland can be divided roughly into: Uusimaa (Helsinki and its surroundings, the political and economic centre), Southwest Finland (Turku and Mariehamn, the archipelago and the autonomous region), Finnish Lakeland (Tampere, Savonlinna and Kuopio, the core of Finland's inland lake district), and Northern Finland including Lapland (Oulu, Rovaniemi and Inari, the Arctic wilderness and tunturi fell country).",
+    gettingAround:
+      "Helsinki-Vantaa Airport is the main international gateway; domestic flights are hubbed through Helsinki to the main cities nationwide, and the rail network covers the south and centre, though reaching Lapland usually requires a flight or an overnight train. Driving is on the right. The climate transitions from temperate continental in the south to subarctic in the north; northern Lapland has long, severe winters with polar night and the northern lights, and midnight sun in summer. Restaurant bills typically already include service, with no extra tip required. The voltage is 230V with EU-style two-round-pin plugs.",
+    culture:
+      "The official languages are Finnish and Swedish (Swedish is spoken in the southwest and the Åland Islands), and English proficiency is extremely high. Finns tend to be reserved and value quiet and personal space; sauna culture is central to Finnish life — the country has more saunas than one for every three people. Northern Lapland is the traditional homeland of the Indigenous Sámi people. Restaurant bills typically don't require a tip; rounding up is fine.",
+    seeAndDo:
+      "Natural landforms: Saimaa's islands and the Punkaharju esker, the Koli \"national landscape\" hills, the Salpausselkä UNESCO Global Geopark, the Kvarken Archipelago (a World Heritage Site), and the Lapland wilderness and Halti. Heritage and culture: Senate Square in Helsinki, Turku Castle and Cathedral, Olavinlinna Castle in Savonlinna. Polar experiences: Santa Claus Village and northern-lights viewing at Rovaniemi.",
+    whenAndTips:
+      "June–August is peak season in the south with the longest daylight; in Lapland the northern lights can be seen December–March, and the midnight sun June–July. For a trip spanning north and south, domestic flights are the practical way to connect the two, while rail suits deeper regional exploration.",
+  },
+  helsinki: {
+    identity:
+      "Helsinki is Finland's capital and largest city, with a population of about 670,000 (about 1.5 million in the metro area), built on a peninsula and archipelago on the northern shore of the Gulf of Finland, and an important Nordic centre for design, technology and shipping.",
+    layout:
+      "The city centre is anchored by Senate Square and Helsinki Cathedral, extending south to the harbour and Market Square; landmarks such as the Rock Church and Sibelius Park are scattered through the districts, and the suburbs are ringed by an archipelago of hundreds of islands.",
+    gettingAround:
+      "Vantaa Airport is about 17 km from the centre, with a direct train link. The city has an extensive tram and metro network, and buses and walking are also good options. The climate is temperate continental, cold and snowy in winter, pleasantly cool in summer.",
+    culture:
+      "The official languages are Finnish and Swedish, and English proficiency is extremely high. Helsinki is a showcase for Finnish design and architecture and consistently ranks among the world's most liveable cities. Sauna culture is especially strong here. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Senate Square and Helsinki Cathedral; the Rock Church (carved directly into natural bedrock); the Suomenlinna sea fortress (a World Heritage Site); Market Square. A boat trip out into the Helsinki archipelago nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season with the longest daylight; Suomenlinna is about a 15-minute ferry ride away — worth setting aside half a day. The main sights are concentrated in the centre, easily covered on foot and by tram.",
+  },
+  turku: {
+    identity:
+      "Turku is Finland's oldest city and former capital, with a population of about 200,000, at the mouth of the Aura River, a gateway for exploring the Archipelago Sea and an important centre of Finnish Swedish-speaking culture.",
+    layout:
+      "The old town is built along both banks of the Aura River, with Turku Castle guarding the river mouth and Turku Cathedral standing further upstream; historic ship museums dot both banks.",
+    gettingAround:
+      "Turku Airport is about 8 km from the centre, reached by bus; from Helsinki the train takes about 2 hours. The city centre is walkable; reaching the archipelago requires a car or ferry. The climate is temperate maritime, comparatively mild along the coast.",
+    culture:
+      "The official languages are Finnish and Swedish, and the Turku region has a comparatively high share of Swedish speakers. Turku was Finland's capital during the period of Swedish rule and served as European Capital of Culture in 2011. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Turku Castle (Finland's largest surviving medieval castle); Turku Cathedral; the cluster of historic ship museums along the Aura River. A boat trip through the Archipelago Sea nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season and the best time for sailing the Archipelago Sea; plan a day trip by boat to the nearby archipelago to experience one of the world's densest island clusters.",
+  },
+  mariehamn: {
+    identity:
+      "Mariehamn is the capital of the Åland Islands, with a population of about 12,000, the administrative and cultural centre of Finland's only autonomous region with Swedish as its sole official language.",
+    layout:
+      "The small town is split into the West Harbour, mainly modern yacht marinas, and the East Harbour, which preserves the character of a traditional fishing port; the town centre is built mainly in Swedish architectural style.",
+    gettingAround:
+      "Mariehamn Airport is about 3 km from the centre; ferries also run to and from Stockholm, Sweden or Turku, Finland (the ferry crossing itself is a popular \"Baltic cruise\" experience). The town is walkable. The climate is temperate maritime.",
+    culture:
+      "The official language is Swedish (Åland is the only region in Finland with Swedish as the sole official language); locals identify primarily as Ålanders, blending Finnish and Swedish cultural traits. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Åland Maritime Museum; the West Harbour yacht marina; the Åland Museum (to learn about the region's autonomous history). Self-drive or cycling day trips through the Åland countryside nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season; the ferry crossing to Stockholm or Turku is a classic way to experience Baltic sailing, with duty-free shopping typically on board.",
+  },
+  tampere: {
+    identity:
+      "Tampere is Finland's second-largest city, with a population of about 240,000, built on the isthmus between Näsijärvi and Pyhäjärvi lakes, developed from the 19th century into an important Finnish industrial city thanks to the water-power drop between the two lakes.",
+    layout:
+      "The city centre is built on the narrow isthmus between the two lakes, with the Tammerkoski rapids running through it; 19th-century red-brick factory buildings survive along its banks, some now converted into museums and cultural spaces.",
+    gettingAround:
+      "Tampere-Pirkkala Airport is about 17 km from the centre, reached by bus; from Helsinki the train takes about 1.5 hours. The city has a light-rail and bus network, and walking is also an option. The climate is temperate continental.",
+    culture:
+      "The official language is Finnish, with high English proficiency. Tampere is nicknamed \"the Manchester of Finland\" for its 19th-century industrial history, and is now an important Finnish technology and university city. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The industrial heritage sites along the Tammerkoski rapids; the Finlayson district's converted red-brick factory cultural spaces; Tampere Cathedral. A boat trip on Näsijärvi or Pyhäjärvi nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season; Tampere is a convenient gateway for exploring west-central Finland's lake district, with the industrial heritage sites walkable in the city itself.",
+  },
+  jyvaskyla: {
+    identity:
+      "Jyväskylä is a university town in central Finland, with a population of about 140,000, at the northern end of Lake Päijänne, and a gateway for exploring the northern part of Finland's lake district.",
+    layout:
+      "The city is built along the northern shore of Päijänne; several buildings by the renowned Finnish architect Alvar Aalto are scattered through the city, and the university campus blends with the lakeside scenery.",
+    gettingAround:
+      "Jyväskylä Airport is about 20 km from the centre, reached by bus; from Helsinki the train takes about 3 hours. The city is easy to explore on foot or by bicycle. The climate is temperate continental.",
+    culture:
+      "The official language is Finnish, with high English proficiency and a lively university-town atmosphere. Jyväskylä is an important showcase for Finnish modern architecture and design, with many of Alvar Aalto's early works concentrated here. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Alvar Aalto Museum and cluster of Aalto buildings; a walk along the shore of Lake Päijänne; the Central Finland Museum. A boat trip to explore the long, narrow waters of Päijänne nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season; Jyväskylä is an ideal base for exploring Päijänne and the northern part of Finland's lake district.",
+  },
+  savonlinna: {
+    identity:
+      "Savonlinna is a small town in eastern Finland's lake district, with a population of about 33,000, set within the Saimaa lake system; Olavinlinna Castle is Finland's most iconic lakeside castle.",
+    layout:
+      "The old town is built on several small islands and peninsulas within the Saimaa lake system, with Olavinlinna Castle standing at a key waterway junction — a historic fortress that once controlled shipping through the lake district.",
+    gettingAround:
+      "Savonlinna Airport is about 15 km from the centre, reached by bus; from Helsinki the train takes about 3.5 hours. The town centre is walkable; reaching Punkaharju requires a car or bus. The climate is temperate continental.",
+    culture:
+      "The official language is Finnish, with high English proficiency. The Savonlinna Opera Festival, held each July inside Olavinlinna Castle, is one of Finland's most celebrated cultural events. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Olavinlinna Castle (Finland's most iconic medieval lakeside castle); a boat cruise on Saimaa. A day trip to Punkaharju esker nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season, with accommodation tight during the July opera festival — book ahead. Punkaharju is about 30 km from town, the classic day-trip destination around Savonlinna.",
+  },
+  kuopio: {
+    identity:
+      "Kuopio is the core city of Finland's central-eastern lake district, with a population of about 120,000, on the shore of Lake Kallavesi; the viewing tower atop Puijo hill is a classic spot for overlooking the lake and archipelago.",
+    layout:
+      "The compact city centre is built along the western shore of Kallavesi, with Puijo hill on the city's north side serving as an important landmark high point.",
+    gettingAround:
+      "Kuopio Airport is about 15 km from the centre, reached by bus; from Helsinki the train takes about 4.5 hours. The city is easy to explore on foot and by bus. The climate is temperate continental.",
+    culture:
+      "The official language is Finnish, with high English proficiency. Kuopio is known for its authentic Finnish smoked-fish pie (kalakukko) and sauna culture, and the market square is the centre of local daily life. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Puijo viewing tower (a panoramic overlook of the lake and archipelago); Kuopio Market Square; the Orthodox Church Museum (an important collection of Finnish Orthodox culture). A boat trip on Kallavesi nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season; the Puijo viewing tower is one of the best high points for overlooking Finland's lake-district landforms — an evening visit for sunset is recommended.",
+  },
+  oulu: {
+    identity:
+      "Oulu is Finland's fifth-largest city, with a population of about 210,000, on the northern shore of the Gulf of Bothnia, an important Finnish technology and university city and a gateway for exploring northern Finland and Lapland.",
+    layout:
+      "The city centre is built along the mouth of the Oulu River, with the market square right by the harbour, the hub of local daily life and tourist activity, while the university campus sits on the outskirts.",
+    gettingAround:
+      "Oulu Airport is about 15 km from the centre, reached by bus; from Helsinki the train takes about 6.5 hours, or about 1.5 hours by air. The city has an extensive network of cycle lanes. The climate is subarctic, with severe winters and a frozen bay.",
+    culture:
+      "The official language is Finnish, with high English proficiency. Oulu is an important Finnish information-technology centre, sometimes called \"the Silicon Valley of the North.\" Restaurant bills typically already include service.",
+    seeAndDo:
+      "Oulu Market Square and the old customs warehouses; Oulu Cathedral. Exploring the Bothnian Bay coastline nearby, with ice-walking possible in winter.",
+    whenAndTips:
+      "June–August suits exploring the coast; February–March, when the sea ice is stable, offers a distinctive icebreaker and ice-walking experience. Oulu is also a convenient staging point on the way to Rovaniemi.",
+  },
+  rovaniemi: {
+    identity:
+      "Rovaniemi is the capital of Finnish Lapland, with a population of about 63,000, sitting right on the Arctic Circle, home to Santa Claus Village and the traditional gateway for exploring the Lapland wilderness.",
+    layout:
+      "The town sits where the Kemijoki meets one of its tributaries; rebuilt after the Second World War to a plan by architect Alvar Aalto (the city is laid out in the shape of a reindeer's head), with the Arctic Circle line running through Santa Claus Village on the outskirts.",
+    gettingAround:
+      "Rovaniemi Airport is about 10 km from the centre, reached by bus; from Helsinki flights take about 1.5 hours, or about 12 hours by overnight train. The town is easy to explore on foot and by bus; reaching the wilderness requires a car or a tour. The climate is subarctic, with long, severe winters, polar night and the northern lights, and midnight sun in summer.",
+    culture:
+      "The official language is Finnish, with high English proficiency. Rovaniemi is a globally known Christmas-themed destination thanks to its \"official\" Santa Claus Village, and also an important window onto Lapland's Sámi culture. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Santa Claus Village (straddling the Arctic Circle line, where you can get an Arctic Circle crossing certificate); the Arktikum Arctic museum; northern-lights viewing in winter; midnight-sun experiences and canoeing on the Kemijoki in summer.",
+    whenAndTips:
+      "December–March is peak season for the northern lights and Christmas-themed tourism, and also the busiest time of year overall; June–July brings the midnight sun and suits outdoor activity — bring proper polar cold-weather gear in winter.",
+  },
+  kuusamo: {
+    identity:
+      "Kuusamo is a small town in north-eastern Finland, with a population of about 15,000, the traditional gateway for exploring Oulanka National Park and the Karhunkierros trail, and home to the well-known Ruka ski resort.",
+    layout:
+      "The town itself is small; the Ruka ski resort lies about 25 km to the north, and Oulanka National Park lies further north still, near the Finland-Russia border.",
+    gettingAround:
+      "Kuusamo Airport is about 5 km from the centre, reached by bus; from Helsinki flights take about 1.5 hours. Reaching Oulanka National Park and Ruka requires a car or a tour. The climate is subarctic, with cold, snowy winters.",
+    culture:
+      "The official language is Finnish, with high English proficiency. Kuusamo and its surroundings are known for the Karhunkierros hiking-trail culture and the Ruka ski industry, making it an important outdoor tourism destination in Finland. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Hiking in Oulanka National Park (the northern starting point of the Karhunkierros trail, and the Kiutaköngäs rapids); the Ruka ski resort. White-water rafting nearby.",
+    whenAndTips:
+      "June–September is peak hiking season, and December–April is peak ski season; Oulanka National Park is about 30 km from Kuusamo — plan at least a full day for hiking there.",
+  },
+  inari: {
+    identity:
+      "Inari is a village in Finnish Lapland within the Arctic Circle, with a population of about 550, on the shore of Lake Inari, and the core settlement of Finnish Sámi Indigenous culture.",
+    layout:
+      "The village is small, built along the southern shore of Lake Inari; the Sámi Parliament and the Siida Sámi museum are located here, making it the administrative and cultural showcase centre for Sámi culture in Finland.",
+    gettingAround:
+      "Ivalo Airport is about 40 km from the village, reached by bus; from Helsinki flights take about 1.5 hours to Ivalo, connecting onward by bus. The village is walkable; exploring the lake requires a car or a tour. The climate is subarctic, with long, severe winters and some of the best conditions in Finland for viewing the northern lights.",
+    culture:
+      "The official language is Finnish, and the local Sámi languages (including Northern Sámi, Inari Sámi and Skolt Sámi) also hold official status in this region. Traditional Sámi reindeer-herding culture continues today. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Siida Sámi Museum and Nature Centre; a boat trip on Lake Inari (summer) or snowmobiling (winter). Reindeer-farm visits and traditional Sámi lifestyle experiences nearby.",
+    whenAndTips:
+      "December–March is the best window for the northern lights, and the village's remote location means extremely low light pollution; June–July brings the midnight sun, an ideal season for exploring Lake Inari and experiencing Sámi culture.",
+  },
 };
