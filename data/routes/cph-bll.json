@@ -1,0 +1,17 @@
+{
+  "id": "cph-bll",
+  "name": "哥本哈根 — 比隆",
+  "nameEn": "Copenhagen — Billund",
+  "description": "菲英岛缓丘农田 · 日德兰石楠荒原",
+  "descriptionEn": "Funen Rolling Farmland · Jutland Heath",
+  "depCountry": "denmark",
+  "arrCountry": "denmark",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK1289", "aircraft": "ATR 72", "depIata": "CPH", "arrIata": "BLL", "durationMin": 45 },
+  "cruiseHeight": 5000,
+  "waypoints": [
+    { "kind": "city", "id": "cph", "name": "哥本哈根", "nameEn": "Copenhagen", "lat": 55.6180, "lon": 12.6476, "airport": true },
+    { "kind": "terrain", "terrainId": "funen-rolling-farmland" },
+    { "kind": "terrain", "terrainId": "jutland-heath" },
+    { "kind": "city", "id": "bll", "name": "比隆", "nameEn": "Billund", "lat": 55.7403, "lon": 9.1517, "airport": true }
+  ]
+}
