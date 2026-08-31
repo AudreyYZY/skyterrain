@@ -1,0 +1,16 @@
+{
+  "id": "arn-krn",
+  "name": "斯德哥尔摩 — 基律纳",
+  "nameEn": "Stockholm — Kiruna",
+  "description": "凯布讷山",
+  "descriptionEn": "Kebnekaise",
+  "depCountry": "sweden",
+  "arrCountry": "sweden",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK1042", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "KRN", "durationMin": 95 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
+    { "kind": "terrain", "terrainId": "kebnekaise-massif" },
+    { "kind": "city", "id": "krn", "name": "基律纳", "nameEn": "Kiruna", "lat": 67.8220, "lon": 20.3369, "airport": true }
+  ]
+}

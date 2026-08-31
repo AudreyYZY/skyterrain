@@ -175,6 +175,13 @@ import cphAar from "./cph-aar.json" with { type: "json" };
 import cphAal from "./cph-aal.json" with { type: "json" };
 import cphBll from "./cph-bll.json" with { type: "json" };
 import cphRnn from "./cph-rnn.json" with { type: "json" };
+// 瑞典
+import arnKrn from "./arn-krn.json" with { type: "json" };
+import arnGot from "./arn-got.json" with { type: "json" };
+import arnMmx from "./arn-mmx.json" with { type: "json" };
+import arnVby from "./arn-vby.json" with { type: "json" };
+import arnKlr from "./arn-klr.json" with { type: "json" };
+import arnOsd from "./arn-osd.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -321,4 +328,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   cphAal,
   cphBll,
   cphRnn,
+  arnKrn,
+  arnGot,
+  arnMmx,
+  arnVby,
+  arnKlr,
+  arnOsd,
 ] as unknown as FlightRoute[];

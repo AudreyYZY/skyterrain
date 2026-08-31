@@ -1,0 +1,16 @@
+{
+  "id": "arn-got",
+  "name": "斯德哥尔摩 — 哥德堡",
+  "nameEn": "Stockholm — Gothenburg",
+  "description": "蒂韦登",
+  "descriptionEn": "Tiveden",
+  "depCountry": "sweden",
+  "arrCountry": "sweden",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK173", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "GOT", "durationMin": 43 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
+    { "kind": "terrain", "terrainId": "tiveden" },
+    { "kind": "city", "id": "got", "name": "哥德堡", "nameEn": "Gothenburg", "lat": 57.6628, "lon": 12.2798, "airport": true }
+  ]
+}

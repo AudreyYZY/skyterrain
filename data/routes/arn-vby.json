@@ -1,0 +1,16 @@
+{
+  "id": "arn-vby",
+  "name": "斯德哥尔摩 — 维斯比",
+  "nameEn": "Stockholm — Visby",
+  "description": "斯德哥尔摩群岛",
+  "descriptionEn": "Stockholm Archipelago",
+  "depCountry": "sweden",
+  "arrCountry": "sweden",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK93", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "VBY", "durationMin": 35 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
+    { "kind": "terrain", "terrainId": "stockholm-archipelago" },
+    { "kind": "city", "id": "vby", "name": "维斯比", "nameEn": "Visby", "lat": 57.6628, "lon": 18.3462, "airport": true }
+  ]
+}
