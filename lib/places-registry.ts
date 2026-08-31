@@ -220,6 +220,13 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   // 卢森堡（埃斯灵—古特兰）
   "lu-oesling": { zh: "埃斯灵", en: "Oesling", order: 250 },
   "lu-gutland": { zh: "古特兰", en: "Gutland", order: 251 },
+  // 泰国（曼谷都会区→中部→北部→东北部依善→东部→南部）
+  "th-bangkok": { zh: "曼谷都会区", en: "Greater Bangkok", order: 300 },
+  "th-central": { zh: "中部", en: "Central Thailand", order: 301 },
+  "th-north": { zh: "北部", en: "Northern Thailand", order: 302 },
+  "th-northeast": { zh: "东北部（依善）", en: "Northeast (Isan)", order: 303 },
+  "th-east": { zh: "东部", en: "Eastern Thailand", order: 304 },
+  "th-south": { zh: "南部", en: "Southern Thailand", order: 305 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -259,6 +266,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "sweden", nameZh: "瑞典", nameEn: "Sweden" },
   { country: "finland", nameZh: "芬兰", nameEn: "Finland" },
   { country: "luxembourg", nameZh: "卢森堡", nameEn: "Luxembourg" },
+  { country: "thailand", nameZh: "泰国", nameEn: "Thailand" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1989,6 +1997,80 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
     source: "埃施叙尔苏尔市中心 49.9167,5.9167；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约45km）：公开资料",
   },
+
+  // ── 泰国 ──────────────────────────────────────────────
+  {
+    id: "bangkok", nameZh: "曼谷", nameEn: "Bangkok", country: "thailand", tier: "capital", zone: "th-bangkok",
+    lon: 100.5018, lat: 13.7563,
+    airport: { iata: "BKK", nameZh: "素万那普机场", nameEn: "Suvarnabhumi Airport", lon: 100.7501, lat: 13.6900 },
+    source: "曼谷市中心 13.7563,100.5018；BKK 机场：公开资料（国内廉航多用廊曼机场 DMK，本表统一列国际枢纽素万那普）",
+  },
+  {
+    id: "chiang-mai", nameZh: "清迈", nameEn: "Chiang Mai", country: "thailand", tier: "major", zone: "th-north",
+    lon: 98.9853, lat: 18.7883,
+    airport: { iata: "CNX", nameZh: "清迈国际机场", nameEn: "Chiang Mai International", lon: 98.9626, lat: 18.7669 },
+    source: "清迈古城一带 18.7883,98.9853；CNX 机场：公开资料",
+  },
+  {
+    id: "phuket", nameZh: "普吉岛", nameEn: "Phuket", country: "thailand", tier: "major", zone: "th-south",
+    lon: 98.3923, lat: 7.8804,
+    airport: { iata: "HKT", nameZh: "普吉国际机场", nameEn: "Phuket International", lon: 98.3169, lat: 8.1132 },
+    source: "普吉镇一带 7.8804,98.3923；HKT 机场：公开资料",
+  },
+  {
+    id: "krabi", nameZh: "甲米", nameEn: "Krabi", country: "thailand", tier: "notable", zone: "th-south",
+    lon: 98.9063, lat: 8.0863,
+    airport: { iata: "KBV", nameZh: "甲米国际机场", nameEn: "Krabi International", lon: 98.9863, lat: 8.0991 },
+    source: "甲米镇一带 8.0863,98.9063；KBV 机场：公开资料",
+  },
+  {
+    id: "pattaya", nameZh: "芭提雅", nameEn: "Pattaya", country: "thailand", tier: "notable", zone: "th-east",
+    lon: 100.8825, lat: 12.9236,
+    airport: { iata: "UTP", nameZh: "乌达堡国际机场", nameEn: "U-Tapao International", lon: 101.0050, lat: 12.6799 },
+    source: "芭提雅市中心 12.9236,100.8825；UTP 机场（距市区约30km）：公开资料",
+  },
+  {
+    id: "chiang-rai", nameZh: "清莱", nameEn: "Chiang Rai", country: "thailand", tier: "notable", zone: "th-north",
+    lon: 99.8406, lat: 19.9105,
+    airport: { iata: "CEI", nameZh: "清莱国际机场", nameEn: "Chiang Rai International", lon: 99.8828, lat: 19.9523 },
+    source: "清莱市中心 19.9105,99.8406；CEI 机场：公开资料",
+  },
+  {
+    id: "koh-samui", nameZh: "苏梅岛", nameEn: "Koh Samui", country: "thailand", tier: "notable", zone: "th-south",
+    lon: 100.0136, lat: 9.5120,
+    airport: { iata: "USM", nameZh: "苏梅机场", nameEn: "Samui Airport", lon: 100.0625, lat: 9.5478 },
+    source: "查汶一带 9.5120,100.0136；USM 机场为曼谷航空私有机场：公开资料",
+  },
+  {
+    id: "ayutthaya", nameZh: "大城", nameEn: "Ayutthaya", country: "thailand", tier: "notable", zone: "th-central",
+    lon: 100.5648, lat: 14.3532,
+    airport: { iata: "DMK", nameZh: "廊曼国际机场", nameEn: "Don Mueang International", lon: 100.6069, lat: 13.9126 },
+    source: "大城历史公园一带 14.3532,100.5648；本地无商业机场，最近机场为曼谷廊曼国际机场（距市区约60km，多经陆路火车往返）：公开资料",
+  },
+  {
+    id: "sukhothai", nameZh: "素可泰", nameEn: "Sukhothai", country: "thailand", tier: "notable", zone: "th-north",
+    lon: 99.8265, lat: 17.0072,
+    airport: { iata: "THS", nameZh: "素可泰机场", nameEn: "Sukhothai Airport", lon: 99.8161, lat: 17.2382 },
+    source: "新素可泰市中心 17.0072,99.8265；THS 机场为曼谷航空私有机场（距历史公园约27km）：公开资料",
+  },
+  {
+    id: "hua-hin", nameZh: "华欣", nameEn: "Hua Hin", country: "thailand", tier: "notable", zone: "th-central",
+    lon: 99.9577, lat: 12.5684,
+    airport: { iata: "HHQ", nameZh: "华欣机场", nameEn: "Hua Hin Airport", lon: 99.9539, lat: 12.6360 },
+    source: "华欣市中心 12.5684,99.9577；HHQ 机场目前仅有飞往清迈的定期航班（每周约4班），前往曼谷通常经陆路（车程约3小时）：公开资料",
+  },
+  {
+    id: "udon-thani", nameZh: "乌隆他尼", nameEn: "Udon Thani", country: "thailand", tier: "notable", zone: "th-northeast",
+    lon: 102.7872, lat: 17.4139,
+    airport: { iata: "UTH", nameZh: "乌隆他尼国际机场", nameEn: "Udon Thani International", lon: 102.7881, lat: 17.3864 },
+    source: "乌隆他尼市中心 17.4139,102.7872；UTH 机场：公开资料",
+  },
+  {
+    id: "nakhon-ratchasima", nameZh: "呵叻（那空叻差是玛）", nameEn: "Nakhon Ratchasima", country: "thailand", tier: "notable", zone: "th-northeast",
+    lon: 102.0977, lat: 14.9799,
+    airport: { iata: "DMK", nameZh: "廊曼国际机场", nameEn: "Don Mueang International", lon: 100.6069, lat: 13.9126 },
+    source: "呵叻市中心 14.9799,102.0977；本地那空叻差是玛机场目前无稳定的定期客运航班，实际多经陆路（火车/长途大巴）往返曼谷（约260公里）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1997,6 +2079,7 @@ const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
 export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   china: "asia",
   japan: "asia",
+  thailand: "asia",
   australia: "oceania",
   "new-zealand": "oceania",
   usa: "north-america",

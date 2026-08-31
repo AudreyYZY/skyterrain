@@ -4601,4 +4601,187 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most pleasant season and also peak time for water activities on the lake; plan a day's cycling or hiking loop around the lake to fully experience the scenery of the Upper Sûre Nature Park.",
   },
+
+  "thailand-overview": {
+    identity:
+      "The Kingdom of Thailand sits at the centre of the Southeast Asian mainland, covering about 510,000 km² with a population of roughly 71 million; the capital is Bangkok, the official language is Thai, and the currency is the Thai baht (THB).",
+    layout:
+      "The country divides broadly into five regions: the central plain (Bangkok, Ayutthaya), the northern mountains (Chiang Mai, Chiang Rai, Sukhothai), the north-eastern Isan plateau (Udon Thani, Nakhon Ratchasima), the eastern coast (Pattaya), and the southern peninsula (Phuket, Krabi, Koh Samui).",
+    gettingAround:
+      "Domestic flights are centred on Bangkok's two airports — Suvarnabhumi (mainly international) and Don Mueang (mainly low-cost carriers); within Bangkok the BTS Skytrain and MRT subway cover the main districts, taxis and tuk-tuks are common, and the Grab app is widely used. Visa-exemption or visa-on-arrival arrangements for short-term visitors from various countries follow the latest announcements from Thailand's Ministry of Foreign Affairs.",
+    culture:
+      "The official language is Thai, and Buddhism is the dominant religion; modest dress and removing shoes are required at temples. Tipping is not mandatory but leaving a small amount at restaurants and spas is common etiquette. Voltage is 220V, with a mix of type A/B/C/O sockets in use.",
+    seeAndDo:
+      "Natural landforms: the granite Similan Islands and the karst islands of Ao Phang Nga in the Andaman Sea, the Khorat Plateau and the mesa of Phu Kradueng, and Doi Inthanon and Doi Luang Chiang Dao in the north. Heritage and culture: the Grand Palace in Bangkok, Ayutthaya Historical Park, and Sukhothai Historical Park. Islands and beaches: Phuket, Koh Samui, and Krabi.",
+    whenAndTips:
+      "November to February, the cool season, is the most pleasant and the peak tourist period; March–May is hot, June–October is the rainy season, and the rainy season timing differs slightly between the peninsula's east and west coasts — worth checking the specific coast's seasonal pattern before travelling.",
+  },
+  bangkok: {
+    identity:
+      "Bangkok is Thailand's capital and largest city, with a population of about 10.5 million (over 17 million across the metropolitan area), built on the Chao Phraya Delta and the country's centre of politics, economy, and culture.",
+    layout:
+      "The city is organised along the Chao Phraya River, with the old town (home to the Grand Palace and Wat Phra Kaew) on the east bank, modern commercial districts such as Siam and Silom in the city centre and east, and a canal network still serving as an important mode of transport in some areas.",
+    gettingAround:
+      "Suvarnabhumi Airport is the main international gateway, about 30 km from the city centre; domestic low-cost carriers mostly use Don Mueang Airport. The BTS Skytrain and MRT subway cover the main commercial districts, and Chao Phraya River ferries are also a convenient way to get around.",
+    culture:
+      "Thai is the official language, and English is fairly widely spoken in tourist areas. Bangkok has a strong night-market culture, and street food is an important part of local food culture. Tipping is not mandatory at restaurants, but leaving small change is common etiquette.",
+    seeAndDo:
+      "The Grand Palace and Wat Phra Kaew; Wat Arun (Temple of Dawn); a night cruise on the Chao Phraya River; the Chatuchak Weekend Market; Khao San Road and the Siam shopping district.",
+    whenAndTips:
+      "November to February, the cool season, is best for travel; dress modestly when visiting temples (no bare shoulders or knees), and some attractions close on Mondays.",
+  },
+  "chiang-mai": {
+    identity:
+      "Chiang Mai is the largest city in northern Thailand, with a population of about 130,000 (roughly 1 million across the metropolitan area), set in the Ping River valley; once the ancient capital of the Lanna kingdom, it is northern Thailand's cultural and craft centre.",
+    layout:
+      "The old town is a square bounded by walls and a moat on all four sides, densely dotted with temples, while the Nimman Road area is a hub of modern cafés and design shops.",
+    gettingAround:
+      "Chiang Mai International Airport is about 3 km from the city centre, the aviation hub of northern Thailand; the old town is easily explored on foot or by songthaew (converted pickup-truck taxi).",
+    culture:
+      "The local Lanna dialect exists alongside standard Thai; Chiang Mai is known for its Sunday walking-street night market and craft markets. Tipping at restaurants is not mandatory.",
+    seeAndDo:
+      "Wat Phra Singh and Wat Chiang Man; Wat Phra That Doi Suthep (overlooking the whole city from its hillside); the Sunday walking-street night market; a day trip to Doi Inthanon National Park; the Nimman Road café district.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant; in some years, February–April sees reduced air quality from surrounding agricultural burning, so check the air quality index before travelling.",
+  },
+  phuket: {
+    identity:
+      "Phuket is Thailand's largest island, with a population of about 420,000, in the Andaman Sea, and the country's most famous island resort destination.",
+    layout:
+      "The west coast is lined with major beach resort areas including Patong, Karon, and Kata, while Phuket Town preserves an old quarter blending Portuguese and Chinese architectural styles.",
+    gettingAround:
+      "Phuket International Airport is about 32 km from Phuket Town and about 42 km from Patong Beach; taxis, songthaews, and motorbike rentals are common ways to get around the island.",
+    culture:
+      "Phuket Town's old quarter attracted large numbers of Chinese and Portuguese traders during the historic tin-mining era, producing a distinctive Sino-Portuguese architectural style. The local Chinese community holds a traditional procession each year during the Vegetarian Festival.",
+    seeAndDo:
+      "Nightlife on Patong Beach; the Sino-Portuguese old quarter of Phuket Town; a day trip to Ao Phang Nga; the Big Buddha viewpoint; the Karon viewpoint.",
+    whenAndTips:
+      "November to April is the dry season and the best time to visit; from May to October the south-west monsoon brings rougher seas on the Andaman side, and some beach activities are suspended.",
+  },
+  krabi: {
+    identity:
+      "Krabi is a province on Thailand's southern Andaman coast, with a population of about 470,000, known for its steep limestone karst coastline and the rock-climbing destination of Railay Peninsula.",
+    layout:
+      "Krabi Town sits at the mouth of the Krabi River and serves as the transport hub for Railay, Ao Nang Beach, and the Phi Phi Islands, with numerous island-hopping boat piers around the town.",
+    gettingAround:
+      "Krabi International Airport is about 18 km from Krabi Town; Railay Peninsula, enclosed on three sides by cliffs, is reachable only by longtail boat.",
+    culture:
+      "Krabi is one of the southern Thai provinces with a comparatively large Muslim population, and local cuisine blends Thai and Malay influences.",
+    seeAndDo:
+      "Rock climbing and beaches at Railay Peninsula; Ao Nang Beach; a four-island boat trip (Chicken Island, Poda Island, and others); the panoramic view from Tiger Cave Temple; the Krabi riverside night market.",
+    whenAndTips:
+      "November to April is the dry season with calm seas, ideal for island-hopping; from May to October the rainy season suspends some outer-island boat routes.",
+  },
+  pattaya: {
+    identity:
+      "Pattaya is a seaside resort city on Thailand's eastern gulf coast, with a population of about 120,000 (higher during peak tourist season), about 150 km from Bangkok and a traditional weekend getaway for Bangkok residents.",
+    layout:
+      "The city runs along Pattaya Bay, with Pattaya Beach, Jomtien Beach, and Wong Amat Beach lying from north to south; Pattaya Walking Street is the centre of its nightlife.",
+    gettingAround:
+      "U-Tapao International Airport is about 30 km from the city centre; it is also reachable by road from Bangkok's two airports in about 2 to 2.5 hours. Songthaews are the main form of public transport within the city.",
+    culture:
+      "Pattaya is one of Thailand's most concentrated nightlife destinations, while also having developed a diverse tourism scene including family holidays and water sports.",
+    seeAndDo:
+      "Nightlife on Pattaya Walking Street; the Sanctuary of Truth (an all-wood religious art building); island-hopping to Koh Larn; Thai cultural performances at Nong Nooch Tropical Garden; floating markets.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant; Jomtien Beach is comparatively quiet and suits families, while the Pattaya Walking Street area is centred on nightlife.",
+  },
+  "chiang-rai": {
+    identity:
+      "Chiang Rai is the capital of Thailand's northernmost province, with a population of about 70,000, near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+    layout:
+      "Chiang Rai town is comparatively small; the White Temple sits on the outskirts, the Blue Temple and the Black House museum lie in different parts of town, and the Golden Triangle viewpoint at the confluence of the Mekong and Ruak rivers lies in the province's north.",
+    gettingAround:
+      "Chiang Rai International Airport is about 8 km from the city centre; a car or hired driver is recommended for the Golden Triangle viewpoint and the Mae Sai border crossing.",
+    culture:
+      "Chiang Rai Province is home to several of northern Thailand's hill-tribe communities, and traditional handicrafts and produce from these communities are common at local markets.",
+    seeAndDo:
+      "Wat Rong Khun (the White Temple, a contemporary Buddhist art building); the Blue Temple; the Black House museum; the Golden Triangle history and opium museum; the hillside tea plantations of Mae Salong.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant, with cooler mornings in the hills; the Golden Triangle viewpoint sits at the meeting point of Thailand, Myanmar, and Laos, so stay within official border-crossing areas and follow local border regulations.",
+  },
+  "koh-samui": {
+    identity:
+      "Koh Samui is the second-largest island in the Gulf of Thailand, with a population of about 64,000, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
+    layout:
+      "Several beach resort areas ring the island's coastline, with Chaweng Beach the liveliest, while the island's interior still preserves extensive traditional coconut groves.",
+    gettingAround:
+      "Samui Airport sits at the island's north-eastern tip, privately operated by Bangkok Airways; the ring road and taxi or motorbike rental are the main ways to get around the island.",
+    culture:
+      "Koh Samui's traditional economy centred on coconut farming; tourism is now the main economic pillar, though traditional coconut groves and processing workshops can still be seen on the island.",
+    seeAndDo:
+      "Chaweng and Lamai beaches; the Big Buddha Temple; island-hopping in Ang Thong National Marine Park; the Secret Buddha Garden; the Fisherman's Village night market.",
+    whenAndTips:
+      "The rainy season on the Gulf of Thailand side differs from the Andaman side; Koh Samui's climate is comparatively mild year-round, though rainfall concentrates somewhat in October–November — worth checking the seasonal difference before travelling.",
+  },
+  ayutthaya: {
+    identity:
+      "Ayutthaya is a historic former capital in central Thailand, with a population of about 55,000; it served as the capital of the Ayutthaya kingdom from 1350 to 1767, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
+    layout:
+      "The historical park sits on an island-like area encircled by the Chao Phraya, Lopburi, and Pa Sak rivers, densely dotted with temple ruins and adjoining the surrounding modern town.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Bangkok's Don Mueang International Airport (about 60 km away); a train or long-distance bus from Bangkok takes about 1.5 to 2 hours, and a rented bicycle is recommended within the historical park.",
+    culture:
+      "The Ayutthaya kingdom was a major international trading centre in 17th-century Southeast Asia, with frequent commercial exchange with Europe, China, and Japan; the temple ruins in today's historical park record this era of prosperity.",
+    seeAndDo:
+      "Wat Mahathat (the Buddha head entwined in tree roots); Wat Phra Si Sanphet; the reclining Buddha at Wat Lokayasutharam; cycling through Ayutthaya Historical Park; a Chao Phraya River boat trip.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant; plan a day trip from Bangkok or an overnight stay, and avoid touring the ruins at midday when it's hottest.",
+  },
+  sukhothai: {
+    identity:
+      "Sukhothai was the capital of Thailand's first independent kingdom, with a population of about 20,000; it served as the Sukhothai kingdom's capital in the 13th–14th centuries, and Sukhothai Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
+    layout:
+      "The historical park is divided into central, northern, western, and southern zones, with the Wat Mahathat ruins at the core of the central zone, ringed by remnants of a moat and city wall.",
+    gettingAround:
+      "Sukhothai Airport, privately operated by Bangkok Airways, is about 27 km from the historical park; a long-distance bus from Bangkok takes about 6 to 7 hours, and a rented bicycle is recommended within the historical park.",
+    culture:
+      "The Sukhothai kingdom is regarded as an important birthplace of the Thai script and Buddhist art; the Thai alphabet is traditionally said to have been created by King Ramkhamhaeng of Sukhothai in the 13th century.",
+    seeAndDo:
+      "The Wat Mahathat ruins; the seated Buddha at Wat Si Chum; Wat Sa Si; a bicycle loop through the historical park; the Sukhothai ceramics museum.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant, with a light-and-sound show held in the historical park during the Loy Krathong festival in November; visit early morning or evening to avoid the midday heat.",
+  },
+  "hua-hin": {
+    identity:
+      "Hua Hin is a seaside town on the Gulf of Thailand coast, with a population of about 19,000; it has been a traditional royal seaside retreat since the Thai royal family built a residence here in the early 20th century.",
+    layout:
+      "The town runs along Hua Hin Beach, with the town centre preserving colonial-era buildings such as Hua Hin Railway Station, and resort hotels and golf courses spread along the beach's northern and southern ends.",
+    gettingAround:
+      "Hua Hin Airport currently has scheduled flights only to Chiang Mai; getting to Bangkok is usually by road (about 3 hours). Tuk-tuks and taxis are common ways to get around town.",
+    culture:
+      "Hua Hin is known as the \"royal seaside\" for the Thai royal family's long history of summering here; the night market and seafood restaurants are an important part of the local visitor experience.",
+    seeAndDo:
+      "Hua Hin Beach; Hua Hin Railway Station (one of Thailand's oldest train stations); night-market seafood; the Hua Hin Hills Vineyard; a day trip to Khao Sam Roi Yot National Park.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant; Hua Hin Railway Station is not just a transport hub but also a popular photo spot in its own right.",
+  },
+  "udon-thani": {
+    identity:
+      "Udon Thani is an important city in Thailand's north-eastern Isan region, with a population of about 140,000, and the gateway city for exploring the Ban Chiang prehistoric site.",
+    layout:
+      "The city follows a typical Thai provincial-capital layout, with Nong Prajak Park at the city centre serving as the main recreational space for local residents.",
+    gettingAround:
+      "Udon Thani International Airport is about 5 km from the city centre; it can also be reached by train via the Nong Khai rail line, and is one of the common road gateways to Vientiane, Laos.",
+    culture:
+      "The Ban Chiang site in Udon Thani Province has yielded painted pottery and bronze artefacts dating to around 2000 BC, an important archaeological site for studying Southeast Asian prehistory.",
+    seeAndDo:
+      "Nong Prajak Park; the Ban Chiang National Museum (World Heritage); the blue temple of Wat Pa Phu Kon; the Udon Thani night market.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant; Udon Thani is also a common overland gateway to Vientiane, Laos via the Friendship Bridge.",
+  },
+  "nakhon-ratchasima": {
+    identity:
+      "Nakhon Ratchasima (Khorat) is the gateway city to Thailand's north-eastern Isan region, with a population of about 140,000, and an important base for exploring Khao Yai National Park and the Khorat Plateau.",
+    layout:
+      "The city preserves remnants of the old Thamalak city wall and moat, and has long served as the traditional transport hub linking Bangkok with the Isan region.",
+    gettingAround:
+      "Nakhon Ratchasima Airport currently has no stable scheduled passenger service; the city is usually reached by road from Bangkok (train or long-distance bus), a journey of about 3 to 4 hours.",
+    culture:
+      "Nakhon Ratchasima is widely known for the legend and memorial of Thao Suranari, a local heroine, and the Isan culture and north-eastern dialect are distinctly present here.",
+    seeAndDo:
+      "The Thao Suranari Memorial; a day trip to Phanom Rung Historical Park (a Khmer temple complex); Khao Yai National Park (the watershed ridge and its waterfalls); the remnants of the Thamalak city wall.",
+    whenAndTips:
+      "November to February, the cool season, is most pleasant; Nakhon Ratchasima makes a good base for a day trip to hike in Khao Yai National Park.",
+  },
 };
