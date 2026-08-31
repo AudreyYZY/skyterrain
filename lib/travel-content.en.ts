@@ -4601,4 +4601,187 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most pleasant season and also peak time for water activities on the lake; plan a day's cycling or hiking loop around the lake to fully experience the scenery of the Upper Sûre Nature Park.",
   },
+
+  "vietnam-overview": {
+    identity:
+      "The Socialist Republic of Vietnam lies on the eastern side of the Southeast Asian mainland, its territory forming a long S-shape, covering about 330,000 km² with a population of roughly 100 million; the capital is Hanoi, the official language is Vietnamese, and the currency is the Vietnamese dong (VND).",
+    layout:
+      "The country divides broadly into four regions: the North (Hanoi, Ha Long Bay, the Sapa highlands), the Centre (the coastal ancient-capital belt of Da Nang, Hoi An, and Hue), the Central Highlands (basalt plateaus including Da Lat), and the South (Ho Chi Minh City, the Mekong Delta).",
+    gettingAround:
+      "Domestic flights are centred on two hubs, Hanoi's Noi Bai Airport and Ho Chi Minh City's Tan Son Nhat Airport; the North-South Reunification railway links Hanoi and Ho Chi Minh City in a journey of over 30 hours. Motorbikes are the dominant mode of transport within cities, and the Grab app is widely used. Electronic visa or visa-exemption arrangements for short-term visitors from various countries follow the latest official announcements from Vietnam.",
+    culture:
+      "The official language is Vietnamese, with French and English also spoken to some extent in tourist areas. Tipping is not a mandatory tradition, but leaving a small amount at restaurants and spas is increasingly common. Voltage is 220V, with a mix of type A/C sockets in use.",
+    seeAndDo:
+      "Natural landforms: the karst island groups of Ha Long Bay and Cat Ba Island, Fansipan and the Sapa rice terraces, and the karst cave clusters of Phong Nha-Ke Bang. Heritage and culture: Hanoi's Old Quarter, the ancient town of Hoi An, and the Nguyen dynasty's imperial citadel in Hue. River-delta life: the floating markets of the Mekong Delta.",
+    whenAndTips:
+      "The country's elongated shape creates a marked north-south climate difference: the north is cool and dry from November to March, while the south is warm year-round with a rainy season from May to October — check the specific destination's seasonal pattern before travelling.",
+  },
+  hanoi: {
+    identity:
+      "Hanoi is Vietnam's capital, with a population of about 8.5 million, on the right bank of the Red River; the country's political and cultural centre, with a history as a capital dating back to the 11th century.",
+    layout:
+      "The Old Quarter preserves its traditional 36-street layout and French colonial architecture, with Hoan Kiem Lake as the city's geographic and cultural centre, while the West Lake area is a hub of modern housing and embassies.",
+    gettingAround:
+      "Noi Bai International Airport is about 35 km from the city centre, with an airport express bus taking about 45 minutes. The Old Quarter is easily explored on foot or by motorbike, and Grab covers the whole city.",
+    culture:
+      "Vietnamese is the official language; the French colonial legacy leaves a deep imprint on the city's architecture and café culture, and Hanoi's egg coffee is a distinctive local drink. Tipping at restaurants is not mandatory.",
+    seeAndDo:
+      "Hoan Kiem Lake and Ngoc Son Temple; the Old Quarter's 36 streets; Ho Chi Minh's Mausoleum and residence; the Temple of Literature; sunset over West Lake.",
+    whenAndTips:
+      "October–December and March–April are most pleasant; the Old Quarter's streets are narrow and busy with traffic, so walking or a motorbike taxi is a good way to experience weaving through the old streets.",
+  },
+  "ho-chi-minh-city": {
+    identity:
+      "Ho Chi Minh City (formerly Saigon) is Vietnam's largest city and economic centre, with a population of about 9 million, on the banks of the Saigon River, and the commercial and cultural hub of southern Vietnam.",
+    layout:
+      "District 1 is the core city centre, where French-era buildings and skyscrapers stand side by side; District 3 and District 5 (Cholon, the Chinatown district) each have their own character, and the Mekong Delta spreads out to the south-west of the city.",
+    gettingAround:
+      "Tan Son Nhat International Airport is about 8 km from the city centre, Vietnam's busiest airport; motorbike density in the city is extremely high, Grab is widely used, and Metro Line 1 is now in operation.",
+    culture:
+      "As Vietnam's most economically dynamic city, Ho Chi Minh City moves at a noticeably faster pace than Hanoi, with French-era architecture, Vietnam War-era historic sites, and modern commercial culture coexisting.",
+    seeAndDo:
+      "Notre-Dame Cathedral (Red Church) and the Central Post Office; the War Remnants Museum; the nightlife of Pham Ngu Lao Street; the Cholon Chinatown district; the fruit stalls and street food around Pham Ngu Lao.",
+    whenAndTips:
+      "December to April, the dry season, is best for travel; the rainy season (May–November) often brings brief afternoon showers, so carry rain gear.",
+  },
+  "da-nang": {
+    identity:
+      "Da Nang is the largest city in central Vietnam, with a population of about 1.2 million, at the mouth of the Han River, and an ideal gateway for exploring Hoi An, Hue, and Ba Na Hills.",
+    layout:
+      "The city extends along the Han River and My Khe Beach, with the Dragon Bridge spanning the Han River as a city landmark, and resort hotels lining My Khe Beach.",
+    gettingAround:
+      "Da Nang International Airport is about 3 km from the city centre, an important aviation hub for central Vietnam; taxis and Grab reach nearby attractions easily.",
+    culture:
+      "Da Nang is one of Vietnam's fastest-growing coastal cities, combining a traditional fishing culture with a modern tourism-resort industry.",
+    seeAndDo:
+      "My Khe Beach; the Dragon Bridge's weekend fire-breathing show; a day trip to Ba Na Hills via cable car and the Golden Bridge; the caves and rock-cut sculptures of the Marble Mountains; a night cruise on the Han River.",
+    whenAndTips:
+      "February–August is the dry season and the best time to visit; typhoons and heavier rain cluster from September to January, so check weather warnings before travelling.",
+  },
+  "hoi-an": {
+    identity:
+      "Hoi An is a well-preserved ancient trading-port town in central Vietnam, with a population of about 90,000; an important Southeast Asian international trading port from the 16th to 19th centuries, its ancient town was inscribed on the UNESCO World Heritage List in 1999.",
+    layout:
+      "The ancient town is built along the Thu Bon River, with the Japanese Covered Bridge as its landmark structure, and yellow-walled traditional merchant houses and Chinese assembly halls lining its old streets.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Da Nang International Airport (about 30 km away); motorised vehicles are barred from the ancient town's core, so walking or cycling is the main way to get around.",
+    culture:
+      "Hoi An's ancient town blends Vietnamese, Chinese, Japanese, and European architecture and trading culture; on the 14th night of each lunar month the town turns off its electric lights and holds a \"Lantern Festival\" lit entirely by lanterns.",
+    seeAndDo:
+      "The Japanese Covered Bridge; the ancient town's traditional merchant houses and Chinese assembly halls; releasing lanterns on the Thu Bon River; Hoi An Central Market; nearby coconut-village basket-boat experiences.",
+    whenAndTips:
+      "February–August, the dry season, is most pleasant; the Lantern Festival on the 14th night of each lunar month is the best time to experience the ancient town at night, though it draws crowds, so plan ahead.",
+  },
+  hue: {
+    identity:
+      "Hue is a historic former capital in central Vietnam, with a population of about 450,000; the Nguyen dynasty's capital from 1802 to 1945, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
+    layout:
+      "The Perfume River runs through the city; the Imperial City and Forbidden Purple City ruins on the north bank preserve the Nguyen court's layout, the south bank is the modern city centre, and several royal tombs lie along the Perfume River on the city's outskirts.",
+    gettingAround:
+      "Phu Bai International Airport is about 15 km from the city centre; a dragon boat cruise on the Perfume River or a hired car is recommended for linking the Imperial City and the royal tombs, with taxis and Grab available in the city.",
+    culture:
+      "As the Nguyen dynasty's ancient capital, Hue has a rich tradition of royal-court cuisine and vegetarian food culture, and the local dialect and food customs differ noticeably from other parts of Vietnam.",
+    seeAndDo:
+      "The Hue Imperial City; the Tomb of Khai Dinh; the Tomb of Minh Mang; Thien Mu Pagoda; a dragon boat cruise on the Perfume River.",
+    whenAndTips:
+      "February–August, the dry season, is most pleasant, with heavier rain September–January; plan at least a day dedicated to the Imperial City and the royal tombs, with a dragon boat cruise a classic way to link the sites.",
+  },
+  sapa: {
+    identity:
+      "Sapa is a mountain town in Lao Cai Province, north-western Vietnam, at about 1,500 m elevation, the gateway to Fansipan and its terraced rice-field scenery, home to several ethnic-minority communities.",
+    layout:
+      "The town is built into the hillside, with surrounding valleys home to Hmong, Dao, and Tay ethnic-minority villages and stepped terraced fields.",
+    gettingAround:
+      "Neither Sapa nor Lao Cai Province has an airport; the nearest is Hanoi's Noi Bai International Airport (about 320 km away). A sleeper train from Hanoi to Lao Cai followed by a bus, or a direct long-distance bus, takes about 5 to 6 hours.",
+    culture:
+      "The valleys around Sapa are home to Hmong, Dao, Tay, and other ethnic-minority communities, and traditional handwoven textiles and market culture are well preserved.",
+    seeAndDo:
+      "The Fansipan cable car and hiking trails; the terraced rice fields of Muong Hoa Valley; Black Hmong villages (Cat Cat Village); Love Waterfall; the Sapa weekend night market.",
+    whenAndTips:
+      "September–November, when the golden rice ripens, and March–May, the water-filled planting season, are the best times for the terraced-field scenery; the mountains have a large day-night temperature swing, so pack warm clothing.",
+  },
+  "ha-long-city": {
+    identity:
+      "Ha Long City is the capital of Quang Ninh Province in north-eastern Vietnam, with a population of about 300,000, and the main gateway for exploring the karst islands of Ha Long Bay.",
+    layout:
+      "The city extends along the shore of Ha Long Bay, with numerous boat piers along the coast serving as departure points for bay cruises.",
+    gettingAround:
+      "Van Don International Airport is about 50 km from the city centre; a long-distance bus from Hanoi takes about 2.5 to 3 hours, and hiring a car via the expressway is another option.",
+    culture:
+      "Ha Long City has grown rapidly around the Ha Long Bay tourism industry, with fishing and tourism as its two economic pillars.",
+    seeAndDo:
+      "A Ha Long Bay boat cruise (including caves and floating villages); the Hon Trong Mai (\"Fighting Cocks\") islet; Thien Cung Cave; the Queen Cable Car for a panoramic view of Ha Long Bay.",
+    whenAndTips:
+      "October–December and March–April are most pleasant; an overnight cruise is recommended, offering the chance to watch sunrise and sunset over the bay from the boat.",
+  },
+  "nha-trang-city": {
+    identity:
+      "Nha Trang is a coastal city on Vietnam's south-central coast, with a population of about 540,000, on Nha Trang Bay, and a well-known Vietnamese beach and diving destination.",
+    layout:
+      "The city extends along Nha Trang Bay's beach, with the Po Nagar Cham towers on its north side; several offshore islands in the bay are the main destinations for island-hopping.",
+    gettingAround:
+      "Cam Ranh International Airport is about 35 km from the city centre; taxis and Grab easily reach the beach and other attractions.",
+    culture:
+      "Nha Trang preserves the Po Nagar Cham towers from the era of the Champa kingdom, an important site for studying ancient Cham culture in Vietnam.",
+    seeAndDo:
+      "Nha Trang Beach; the Po Nagar Cham Towers; the Vinpearl island amusement park (reached by cable car); the granite scenery of Hon Chong Promontory; Nha Trang's mud-bath hot springs.",
+    whenAndTips:
+      "January–August is the dry season and most pleasant; the rainy season (September–December) occasionally brings typhoons; check sea conditions before island-hopping, as some outer-island routes suspend during the rainy season.",
+  },
+  "da-lat": {
+    identity:
+      "Da Lat is a hill-station retreat town on Vietnam's central highlands, with a population of about 230,000, at about 1,500 m elevation; developed as a summer retreat during the French colonial period, it is now an important flower- and produce-growing region in Vietnam.",
+    layout:
+      "The city is built into the hillside, with Xuan Huong Lake as its central landmark, and French-era villas and churches scattered across the undulating terrain.",
+    gettingAround:
+      "Lien Khuong Airport is about 30 km from the city centre; the terrain within the city is quite hilly, and taxis or motorbike rentals are common ways to get around.",
+    culture:
+      "Known as \"little Paris\" for its cool climate and French-era architecture, Da Lat is an important growing region for flowers, coffee, and strawberries in Vietnam.",
+    seeAndDo:
+      "A walk around Xuan Huong Lake; the \"Crazy House\" (a Hogwarts-style architectural fantasy); Da Lat Railway Station (French colonial architecture); the Da Lat night market; nearby coffee and strawberry farms.",
+    whenAndTips:
+      "The climate is cool and pleasant year-round, driest and most comfortable from December to March; bring a light jacket, as the hillside town gets cool at night.",
+  },
+  "can-tho": {
+    identity:
+      "Can Tho is the largest city in the Mekong Delta, with a population of about 1.2 million, and the core gateway for exploring the delta's floating markets and river-town culture.",
+    layout:
+      "The city is built along the Hau River (a Mekong branch), with Ninh Kieu Bridge spanning the water; a dense network of channels surrounds the city, with floating markets on the waterways outside town.",
+    gettingAround:
+      "Can Tho International Airport is about 10 km from the city centre; exploring the floating markets requires an early-morning boat trip, with taxis and Grab available in the city.",
+    culture:
+      "Can Tho preserves a classic Mekong Delta river-town way of life, with floating-market trading activity concentrated in the early morning.",
+    seeAndDo:
+      "An early-morning boat trip to Cai Rang Floating Market; night views from Ninh Kieu Bridge; the Can Tho Museum; a boat trip through nearby orchards and canals; sunset over the Mekong.",
+    whenAndTips:
+      "December to April, the dry season, is most pleasant; visit the floating market between 5 and 7 am, when trading is at its liveliest.",
+  },
+  "phu-quoc-city": {
+    identity:
+      "Duong Dong is Phu Quoc Island's main town, with a population of about 20,000, and the core hub for the island's tourism and fishing activities.",
+    layout:
+      "The town extends along the mouth of the Duong Dong River, with the Duong Dong night market as its liveliest commercial street, and beach resort hotels lining the coast nearby.",
+    gettingAround:
+      "Phu Quoc International Airport is about 15 km from town; taxis, motorbike rentals, and the island's cross-sea cable car are the main ways to get around.",
+    culture:
+      "Phu Quoc has a long tradition of fishing and fish-sauce production, and the Duong Dong night market showcases the island's seafood food culture.",
+    seeAndDo:
+      "Seafood at the Duong Dong night market; the world's longest cross-sea cable car (to An Thoi/Hon Thom island); hiking in Phu Quoc National Park; visiting pepper farms and fish-sauce workshops; a pearl farm.",
+    whenAndTips:
+      "November to April is the dry season and most pleasant, with calm seas suited to boat trips; the rainy season (May–October) occasionally brings heavy downpours, so check the weather before travelling.",
+  },
+  "ninh-binh": {
+    identity:
+      "Ninh Binh is a city in northern Vietnam known for its karst rice-field scenery, with a population of about 130,000, the core gateway for exploring the Trang An Landscape Complex and Tam Coc, often called \"Ha Long Bay on land.\"",
+    layout:
+      "The city is ringed by limestone karst peak clusters, with rice paddies and waterways interwoven across the valley floors between the peaks.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Hanoi's Noi Bai International Airport (about 90 km away); a train or long-distance bus from Hanoi takes about 2 to 2.5 hours.",
+    culture:
+      "The Ninh Binh area served as the capital of Vietnam's Dinh and Early Le dynasties from the 10th century onward, and the ancient capital ruins at Hoa Lu record this history.",
+    seeAndDo:
+      "Boating through the caves of the Trang An Landscape Complex; a bamboo-raft trip through Tam Coc (\"Three Caves\"); the ancient capital ruins at Hoa Lu; Bai Dinh Pagoda (one of Vietnam's largest Buddhist pagodas); Mua Cave and its viewpoint.",
+    whenAndTips:
+      "The rice fields are vivid green in May–June and golden-ripe in September–October, the best seasons for photographing the karst rice-field scenery; plan a full day for boating and hiking.",
+  },
 };
