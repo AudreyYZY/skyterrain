@@ -1,0 +1,16 @@
+{
+  "id": "dub-cfn",
+  "name": "都柏林 — 多尼戈尔",
+  "nameEn": "Dublin — Donegal",
+  "description": "格伦维谷",
+  "descriptionEn": "Glenveagh",
+  "depCountry": "ireland",
+  "arrCountry": "ireland",
+  "flight": { "airline": "爱尔兰航空支线（爱美拉德航空运营）", "airlineEn": "Aer Lingus Regional (operated by Emerald Airlines)", "flightNo": "EI3408", "aircraft": "ATR 72-600", "depIata": "DUB", "arrIata": "CFN", "durationMin": 50 },
+  "cruiseHeight": 4500,
+  "waypoints": [
+    { "kind": "city", "id": "dub", "name": "都柏林", "nameEn": "Dublin", "lat": 53.4213, "lon": -6.2701, "airport": true },
+    { "kind": "terrain", "terrainId": "glenveagh" },
+    { "kind": "city", "id": "cfn", "name": "多尼戈尔", "nameEn": "Donegal", "lat": 55.0442, "lon": -8.3405, "airport": true }
+  ]
+}

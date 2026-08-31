@@ -1,0 +1,18 @@
+{
+  "id": "dub-kir",
+  "name": "都柏林 — 凯里",
+  "nameEn": "Dublin — Kerry",
+  "description": "爱尔兰中部低地 · 加尔提山脉 · 麦吉利卡迪山脉",
+  "descriptionEn": "Central Lowlands · Galtee Mountains · MacGillycuddy's Reeks",
+  "depCountry": "ireland",
+  "arrCountry": "ireland",
+  "flight": { "airline": "瑞安航空", "airlineEn": "Ryanair", "flightNo": "FR611", "aircraft": "Boeing 737-800", "depIata": "DUB", "arrIata": "KIR", "durationMin": 55 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "dub", "name": "都柏林", "nameEn": "Dublin", "lat": 53.4213, "lon": -6.2701, "airport": true },
+    { "kind": "terrain", "terrainId": "central-lowlands-bog-of-allen" },
+    { "kind": "terrain", "terrainId": "galtee-mountains" },
+    { "kind": "terrain", "terrainId": "macgillycuddys-reeks" },
+    { "kind": "city", "id": "kir", "name": "凯里", "nameEn": "Kerry", "lat": 52.1809, "lon": -9.5238, "airport": true }
+  ]
+}

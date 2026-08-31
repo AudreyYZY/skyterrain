@@ -167,6 +167,9 @@ import amsGrq from "./ams-grq.json" with { type: "json" };
 import vieInn from "./vie-inn.json" with { type: "json" };
 import vieGrz from "./vie-grz.json" with { type: "json" };
 import vieKlu from "./vie-klu.json" with { type: "json" };
+// 爱尔兰
+import dubKir from "./dub-kir.json" with { type: "json" };
+import dubCfn from "./dub-cfn.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -307,4 +310,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   vieInn,
   vieGrz,
   vieKlu,
+  dubKir,
+  dubCfn,
 ] as unknown as FlightRoute[];

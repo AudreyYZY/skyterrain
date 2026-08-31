@@ -3058,6 +3058,48 @@ export const ROUTE_NARRATION: Record<
       "Vienna to Klagenfurt is about 50 minutes, same time zone; an intercity train (about 4 hours) is another option. Klagenfurt Airport is about 3 km from the centre. Klagenfurt, the capital of Carinthia, sits at the eastern end of Wörthersee and is an ideal base for exploring Carinthia's lake district (Wörthersee, Millstätter See). Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
+
+  "dub-kir": {
+    study: {
+    "zh-CN":
+      "都柏林飞凯里，是一趟自东向西横贯爱尔兰全境的航线，从东岸的都柏林平原一路飞越中部低地，抵达西南部凯里郡的高山地带。起飞后不久，脚下展开爱尔兰中部低地开阔平坦的地势——大片农牧用地间点缀着深褐色的隆起泥炭沼泽，艾伦沼泽是其中最具代表性的一片。" +
+      "飞机继续向西南，地势逐渐抬升，加尔提山脉连绵的山脊出现在下方——这是爱尔兰内陆地区最高的山脉，古红砂岩构成的山体北坡散布着数个冰蚀湖。越过加尔提山脉后，飞机进入爱尔兰最高的山地——麦吉利卡迪山脉，尖锐的冰蚀峰群与深切冰斗湖清晰可见，卡朗图希尔峰是爱尔兰全境最高点，飞机随后降落在山脚不远处的凯里机场。",
+    "en-US":
+      "Flying from Dublin to Kerry crosses the whole of Ireland from east to west, from the Dublin plain on the east coast, over the central lowlands, to the mountainous terrain of County Kerry in the south-west. Soon after take-off, the broad, flat expanse of Ireland's central lowlands unfolds below — farmland interspersed with dark-brown raised peat bog, of which the Bog of Allen is the most representative example." +
+      " The flight continues south-west as the land gradually rises, and the continuous ridge of the Galtee Mountains comes into view below — Ireland's highest inland range, its Old Red Sandstone slopes dotted with several glacial lakes on the north side. Past the Galtees, the flight enters Ireland's highest terrain, MacGillycuddy's Reeks, where sharp glacially carved peaks and deep corrie lakes are clearly visible; Carrauntoohil, the highest point in all of Ireland, stands out below before the flight descends into Kerry Airport just beyond the range's foot.",
+    },
+    travel: {
+    "zh-CN":
+      "都柏林到凯里飞约55分钟，同一时区，是爱尔兰目前少数几条定期国内航班之一（目前由瑞安航空运营）。凯里机场离基拉尼市区约15公里，是探索凯里之环与麦吉利卡迪山脉的便捷门户。" +
+      "靠窗能看到中部低地的泥炭沼泽景观、加尔提山脉的冰蚀湖，以及降落前麦吉利卡迪山脉的尖峰与基拉尼湖群交相辉映的景色。以凯里为基地可探索凯里之环、丁格尔半岛等西南海岸胜景。" +
+      "爱尔兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Dublin to Kerry is about 55 minutes, same time zone, and one of only a small number of scheduled domestic flights in Ireland today (currently operated by Ryanair). Kerry Airport is about 15 km from Killarney and a convenient gateway for exploring the Ring of Kerry and MacGillycuddy's Reeks." +
+      " From a window you see the peat-bog landscape of the central lowlands, the glacial lakes of the Galtee Mountains, and, just before landing, the sharp peaks of MacGillycuddy's Reeks set against the Lakes of Killarney. From Kerry you can explore the Ring of Kerry, the Dingle Peninsula and other south-western coastal highlights." +
+      " Ireland is in the Schengen area; most foreign visitors follow Schengen rules for short visits.",
+    },
+  },
+
+  "dub-cfn": {
+    study: {
+    "zh-CN":
+      "都柏林飞多尼戈尔，是一趟连接爱尔兰首都与西北部偏远地区的政府补贴航线，起飞后不久飞机即转向西北，飞越爱尔兰中北部的乡村地带。抵达多尼戈尔郡上空后，脚下出现格伦维谷——一条深切的冰川槽谷，谷中狭长的格伦维湖两岸悬崖陡峭，谷地深处的格伦维城堡与四周荒野地貌形成鲜明对比，是爱尔兰面积最大的国家公园的核心景观。" +
+      "飞机随后降落在多尼戈尔湾畔的卡里克芬机场，这条航线是连接爱尔兰西北部与首都的重要生命线，也是俯瞰爱尔兰荒野山地地貌的难得视角。",
+    "en-US":
+      "Flying from Dublin to Donegal is a government-subsidised route linking Ireland's capital with a remote part of the north-west; soon after take-off the flight turns north-west, crossing the rural countryside of north-central Ireland. Approaching County Donegal, Glenveagh comes into view below — a deeply cut glacial trough valley whose narrow Lough Veagh is flanked by steep cliffs, with Glenveagh Castle set deep in the valley against a backdrop of wilderness, the centrepiece of Ireland's largest national park." +
+      " The flight then descends into Carrickfinn Airport on Donegal Bay; this route is an important lifeline connecting north-west Ireland with the capital, and offers a rare aerial view of Ireland's wilderness upland terrain.",
+    },
+    travel: {
+    "zh-CN":
+      "都柏林到多尼戈尔飞约50分钟，同一时区，是政府补贴的重要航线，目前由爱尔兰航空支线（爱美拉德航空运营）每日往返两班。卡里克芬机场离多尼戈尔镇约65公里。" +
+      "靠窗能看到爱尔兰中北部的乡村景观，以及接近降落前格伦维国家公园的荒野山地与冰蚀湖。以多尼戈尔为基地可探索斯利夫利格悬崖等西北海岸胜景。" +
+      "爱尔兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Dublin to Donegal is about 50 minutes, same time zone, and an important government-subsidised route currently operated twice daily each way by Aer Lingus Regional (Emerald Airlines). Carrickfinn Airport is about 65 km from Donegal Town." +
+      " From a window you see the countryside of north-central Ireland, and, just before landing, the wilderness uplands and glacial lake of Glenveagh National Park. From Donegal you can explore Slieve League and other north-western coastal highlights." +
+      " Ireland is in the Schengen area; most foreign visitors follow Schengen rules for short visits.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */
