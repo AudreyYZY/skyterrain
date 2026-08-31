@@ -4119,4 +4119,174 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "April–September is peak season for Legoland (some areas close in winter); as a family-travel gateway town, plan one to two days focused on the park experience.",
   },
+
+  // ============ Sweden ============
+  "sweden-overview": {
+    identity:
+      "Sweden sits on the eastern side of the Scandinavian Peninsula in Northern Europe, covering about 450,000 km² — the largest country in the Nordic region — with a population of roughly 10.5 million. It spans an enormous range of latitude, from the Skåne Plain in the far south to Arctic Lapland in the far north, with correspondingly dramatic differences in landform and climate.",
+    layout:
+      "Sweden can be divided roughly into: Svealand (Stockholm and its surroundings, the political and economic centre), Götaland (Gothenburg, Malmö and the island of Gotland, the southern coastal and farming region), and Norrland (Kiruna and Luleå, the northern forest and Lapland mountain region, covering about two-thirds of the country's area but sparsely populated).",
+    gettingAround:
+      "Stockholm Arlanda Airport is the main international gateway; domestic flights are hubbed through Stockholm across more than 80 routes nationwide, and the rail network also covers the main cities, though a north-south journey across the country can take anywhere from several hours to over ten. Driving is on the right. The climate transitions from temperate continental in the south to subarctic in the north; Lapland in the far north has long, severe winters with midnight sun in summer, while the south is comparatively mild. Restaurant bills typically already include service, with no extra tip required. The voltage is 230V with EU-style two-round-pin plugs.",
+    culture:
+      "The official language is Swedish, and English proficiency is extremely high. Swedes value equality, simplicity and the philosophy of \"lagom\" (just the right amount), and society places strong emphasis on environmental protection and gender equality. Northern Lapland is the traditional homeland of the Indigenous Sámi people, and reindeer-herding culture continues there today. Restaurant bills typically don't require a tip; rounding up is fine.",
+    seeAndDo:
+      "Natural landforms: Kebnekaise and Sarek National Park, the High Coast (a World Heritage Site), Lapporten, the Stockholm Archipelago, the medieval town of Visby on Gotland (a World Heritage Site). Heritage and culture: Stockholm's Old Town and the Vasa Museum, Uppsala Cathedral, the naval city of Karlskrona (a World Heritage Site). Polar experiences: the northern lights and the Ice Hotel at Kiruna.",
+    whenAndTips:
+      "June–August is peak season in the south, and in Lapland to the north June–July brings the midnight sun while December–January brings the northern lights; for a trip spanning north and south, domestic flights are the practical way to connect the two, while rail suits deeper regional exploration.",
+  },
+  stockholm: {
+    identity:
+      "Stockholm is Sweden's capital and largest city, with a population of about 980,000 (about 2.4 million in the metro area), sitting where Lake Mälaren meets the Baltic Sea, spread across 14 main islands, and an important Nordic centre for politics, business and design.",
+    layout:
+      "The old town, Gamla Stan, occupies the central island, preserving a medieval street layout with the Royal Palace and the cathedral nearby; districts such as Södermalm, Norrmalm and Kungsholmen are linked by numerous bridges, with the Stockholm Archipelago extending out to the east.",
+    gettingAround:
+      "Arlanda Airport is about 40 km from the centre, with a direct express train. The city has an extensive metro network (often called \"the world's longest art gallery\"), and buses and walking are also good options. The climate is temperate continental, cold and snowy in winter, cool in summer.",
+    culture:
+      "The official language is Swedish, and English proficiency is extremely high. Stockholm is the birthplace of Swedish design brands such as IKEA and H&M, and the site of the Nobel Prize ceremony. \"Fika\" (a coffee-break social ritual) is an important Swedish tradition. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Gamla Stan old town and the Royal Palace; the Vasa Museum (displaying a fully recovered 17th-century warship); City Hall (venue of the Nobel banquet); Skansen open-air museum. A boat trip out into the Stockholm Archipelago nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season with the longest daylight; a boat trip through the Stockholm Archipelago is a classic summer way to experience the natural scenery around the city — worth setting aside at least half a day.",
+  },
+  uppsala: {
+    identity:
+      "Uppsala is Sweden's oldest university town, with a population of about 170,000, about 70 km north of Stockholm; Uppsala University, founded in 1477, is the oldest university in the Nordic region.",
+    layout:
+      "The old town is centred on Uppsala Cathedral (the tallest church building in Scandinavia), with the main university building and botanical garden nearby, and the Fyris River running through the centre.",
+    gettingAround:
+      "Uppsala's own airport has no scheduled passenger service; the nearest with scheduled flights is Arlanda (about 40 km); from Stockholm a direct train takes about 40 minutes. The old town is walkable, and cycling is an important part of daily local transport. The climate is temperate continental.",
+    culture:
+      "The official language is Swedish, with high English proficiency and a lively university-town atmosphere. Uppsala is where the botanist Carl Linnaeus lived and worked for much of his life, and the Linnaeus Garden survives today. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Uppsala Cathedral (a former coronation site for Swedish monarchs); Uppsala Castle; the Linnaeus Garden and Linnaeus Museum; the Old Uppsala burial mounds (a Viking-age royal burial site).",
+    whenAndTips:
+      "May–September is the most pleasant season; it's an easy day trip from Stockholm, well suited to a half- to full-day deep dive into its history and culture.",
+  },
+  gothenburg: {
+    identity:
+      "Gothenburg is Sweden's second-largest city, with a population of about 600,000, sitting at the mouth of the Göta River on Sweden's west coast, an important port city and gateway for exploring the Bohuslän Coast.",
+    layout:
+      "The city centre is built around a historic canal-lined quarter, with a Dutch-inspired canal system dating from the city's 17th-century founding; the Frihamnen waterfront has been redeveloped in recent years into a cultural and leisure district.",
+    gettingAround:
+      "Göteborg Landvetter Airport is about 25 km from the centre, reached by bus; from Stockholm the train takes about 3 hours. The city has an extensive tram network, and walking or cycling are also good options. The climate is temperate maritime, with a rainy coast.",
+    culture:
+      "The official language is Swedish, with high English proficiency. Gothenburgers are known for their humour and directness and are often considered Sweden's most down-to-earth big-city residents. \"Fika\" coffee culture is equally strong here. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Liseberg amusement park (one of the largest in Northern Europe); Gothenburg Cathedral; Feskekôrka (the \"Fish Church\" fish market); the Frihamnen waterfront cultural district. A day trip to the Koster Islands on the Bohuslän Coast nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season; Gothenburg is an ideal gateway for exploring the skerry landforms of the Bohuslän Coast, with the Koster Islands reachable on a self-drive or guided day trip.",
+  },
+  malmoe: {
+    identity:
+      "Malmö is Sweden's third-largest city, with a population of about 350,000, at the very southern tip of the country, linked to Copenhagen, Denmark by the Øresund Bridge, and the core city of the Skåne Plain.",
+    layout:
+      "The old town centre preserves a medieval street layout, with Malmö Castle and the old town square at its historic core; the Western Harbour district has been redeveloped in recent years as a sustainability showcase, home to the landmark Turning Torso tower.",
+    gettingAround:
+      "Malmö Airport is about 28 km from the centre; a train across the Øresund Bridge also reaches Copenhagen Airport directly (about 25 minutes). The city has an extensive network of cycle lanes, and buses and walking are also good options. The climate is temperate maritime, one of the mildest in Sweden.",
+    culture:
+      "The official language is Swedish, with high English proficiency and a culturally diverse population due to a high share of immigrants. Malmö and Copenhagen together form the Øresund metropolitan region, with frequent daily commuting between the two. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Malmö Castle; the view from the Turning Torso (one of the tallest buildings in Scandinavia); the old town square; the Western Harbour sustainable district. A day trip across the Øresund Bridge to Copenhagen.",
+    whenAndTips:
+      "May–September is the most pleasant season; Malmö is a convenient gateway for exploring the Skåne Plain and for a cross-border day trip to Denmark via the Øresund Bridge.",
+  },
+  visby: {
+    identity:
+      "Visby is the main town on the island of Gotland, with a population of about 25,000, preserving intact medieval walls and street layout, and an important Hanseatic League trading town from the 12th century.",
+    layout:
+      "The old town is ringed by about 3.4 km of medieval walls, its cobblestone streets, rose-covered walls and church ruins densely packed within — one of the best-preserved medieval trading towns in the Baltic region.",
+    gettingAround:
+      "Visby Airport is about 4 km from the centre; ferries also run from Stockholm or ports in Södermanland. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, moderated by the surrounding sea.",
+    culture:
+      "The official language is Swedish, with high English proficiency. Visby hosts Almedalen Week each July, a major political gathering and medieval-themed festival, and is an important venue for Swedish cultural and political events. Restaurant bills typically already include service.",
+    seeAndDo:
+      "A walk along Visby's medieval city walls; St Mary's Cathedral; the ruins of St Catherine's Church. Day trips to Stora Alvaret and the sea stacks of Fårö nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season and also Almedalen Week, when visitors and politicians crowd the town and accommodation is tight; plan at least two to three days for a full island tour covering Stora Alvaret and Fårö.",
+  },
+  karlskrona: {
+    identity:
+      "Karlskrona is the core city of Blekinge in south-eastern Sweden, with a population of about 66,000, a Swedish royal naval base since the city's founding in 1680, its naval city plan inscribed as a World Heritage Site in 1998.",
+    layout:
+      "The city is built on the island of Trossö and several surrounding islets, its 17th-century Baroque town plan well preserved, with naval dockyards and fortress buildings lining the coast.",
+    gettingAround:
+      "Ronneby Airport is about 30 km from the centre, reached by bus; from Stockholm the train takes about 5 hours. The old town is walkable; exploring the Blekinge Archipelago nearby requires a car or boat. The climate is temperate maritime.",
+    culture:
+      "The official language is Swedish, with high English proficiency. Karlskrona's civic identity is closely tied to the history of the Swedish Royal Navy, and it remains an important naval base today. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Naval Museum; the Church of Saint Mary and Trinity Church (Baroque architecture landmarks); the old town square. A boat tour of the Blekinge Archipelago nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season; as a gateway for exploring the granite skerry landforms of the Blekinge Archipelago, plan a half- to full-day boat tour of the islands.",
+  },
+  kalmar: {
+    identity:
+      "Kalmar is the core city of Kalmar County in south-eastern Sweden, with a population of about 40,000; Kalmar Castle is one of the best-preserved Renaissance castles in Sweden, and the city is a gateway for exploring the island of Öland.",
+    layout:
+      "The old town is built along the coast around Kalmar Castle, with a well-preserved 17th-century Baroque new-town district; a bridge connects Kalmar to Öland across the strait.",
+    gettingAround:
+      "Kalmar Airport is about 6 km from the centre, reached by bus; from Stockholm the train takes about 4.5 hours. The old town is walkable; Öland is reachable by car across the bridge. The climate is temperate maritime.",
+    culture:
+      "The official language is Swedish, with high English proficiency. Kalmar Castle was the site where the Kalmar Union — the 1397 union of the crowns of Denmark, Sweden and Norway — was concluded, an important landmark in Nordic history. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Kalmar Castle; Kalmar Cathedral; the Baroque old-town district. A day trip across the bridge to Stora Alvaret on Öland.",
+    whenAndTips:
+      "June–August is the most pleasant season; Kalmar is the most convenient gateway to Öland's Stora Alvaret limestone plateau, just a roughly ten-minute drive across the bridge.",
+  },
+  kiruna: {
+    identity:
+      "Kiruna is Sweden's northernmost city, with a population of about 18,000, about 145 km north of the Arctic Circle, home to the world's largest underground iron-ore mine and a gateway for exploring Kebnekaise and Sarek National Park.",
+    layout:
+      "Mining-induced ground subsidence has forced the city into an ongoing full relocation programme since 2014, with some historic buildings — such as Kiruna Church — moved intact to a new site, a rare example anywhere in the world of an entire town being relocated.",
+    gettingAround:
+      "Kiruna Airport is about 8 km from the centre, reached by bus; from Stockholm the night train takes about 17 hours. The town centre is walkable; reaching Kebnekaise and Abisko requires a car or train. The climate is subarctic, with long, severe winters (temperatures can fall below -30°C) and midnight sun in summer.",
+    culture:
+      "The official language is Swedish, and Kiruna is also an important centre of Swedish Sámi Indigenous culture, home to the Sámi Parliament's museum. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Kiruna Church (a timber church moved intact to its new site); the Sámi cultural centre; the Icehotel (rebuilt from ice and snow each winter). Hiking Kebnekaise nearby, or watching the northern lights at Abisko.",
+    whenAndTips:
+      "June–July brings the midnight sun and is peak season for hiking and outdoor activity; December–January is the best window for the northern lights — bring proper polar cold-weather gear in winter.",
+  },
+  lulea: {
+    identity:
+      "Luleå is the core city of Norrbotten in northern Sweden, with a population of about 49,000, on the Gulf of Bothnia coast, and a gateway for exploring Sweden's northern archipelago and Lapland.",
+    layout:
+      "The historic church town of Gammelstad, at the city's core, is a well-preserved cluster of wooden church cottages inscribed as a World Heritage Site in 1996; the modern city centre extends along the Gulf of Bothnia coast, where the frozen winter bay creates a distinctive ice-crossing landscape.",
+    gettingAround:
+      "Luleå Airport is about 8 km from the centre, reached by bus; from Stockholm the train takes about 14 hours, or about 1.5 hours by air. The city centre is walkable. The climate is subarctic, with severe winters and a frozen bay.",
+    culture:
+      "The official language is Swedish, with high English proficiency. Luleå is an important steel-industry and technology centre in northern Sweden, and a transport hub for reaching the northern archipelago and Lapland. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Gammelstad Church Town (a World Heritage Site); the Luleå archipelago (walkable or ski-able across the frozen sea in winter); the Norrbotten Museum.",
+    whenAndTips:
+      "June–August suits exploring the archipelago nearby; February–March, when the sea ice is stable, offers a distinctive chance for ice-walking and skiing across the frozen bay.",
+  },
+  harnosand: {
+    identity:
+      "Härnösand is a small coastal town in north-central Sweden, with a population of about 18,000, the traditional gateway to the High Coast World Heritage Site.",
+    layout:
+      "The old town is built at the mouth of the Härnösand River, its 19th-century wooden building district well preserved — an important historic port town along the High Coast.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Sundsvall-Timrå Airport (about 45 km); from Stockholm the train takes about 4.5 hours. The old town is walkable; exploring the High Coast requires a car. The climate is temperate continental, with cold winters.",
+    culture:
+      "The official language is Swedish, with high English proficiency. Härnösand was historically an important Swedish timber-trading port and is now the gateway town for exploring the geological wonder of the High Coast. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The old town's 19th-century wooden building district; the view from the High Coast Bridge. A hike along the uplifted shoreline trails of the High Coast nearby.",
+    whenAndTips:
+      "June–August is the most pleasant season and the best time to explore the High Coast; plan one to two days for a self-drive tour of the uplifted coastal landforms along the High Coast Bridge route.",
+  },
+  are: {
+    identity:
+      "Åre is a resort town in Jämtland in west-central Sweden, with a population of about 14,000, Northern Europe's largest alpine ski resort, set beside Lake Åre at the foot of Åreskutan mountain.",
+    layout:
+      "The town is built along the northern shore of Lake Åre, with cable cars running directly up to the ski area on the mountain; in summer the town transforms into a destination for hiking, cycling and fishing.",
+    gettingAround:
+      "Åre Östersund Airport is about 65 km from town, reached by bus; from Stockholm the train takes about 6.5 hours. The town itself is walkable; the ski area is reached by cable car or shuttle. The climate is subarctic mountain, cold and snowy in winter, cool in summer.",
+    culture:
+      "The official language is Swedish, with high English proficiency. Åre is a favourite retreat of Swedish royalty and celebrities, and home to the largest ski resort in Northern Europe. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Skiing Åreskutan (one of the largest ski areas in Northern Europe); canoeing and fishing on Lake Åre in summer; a cable-car ride to the summit for the view; hiking the Jämtland mountains nearby.",
+    whenAndTips:
+      "December–April is peak ski season; June–August is peak season for summer outdoor activities — one of the few destinations with both a winter ski season and a summer hiking season.",
+  },
 };
