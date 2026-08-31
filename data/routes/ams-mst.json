@@ -1,0 +1,17 @@
+{
+  "id": "ams-mst",
+  "name": "阿姆斯特丹 — 马斯特里赫特",
+  "nameEn": "Amsterdam — Maastricht",
+  "description": "乌得勒支丘陵脊 · 马斯河荷兰段",
+  "descriptionEn": "Utrechtse Heuvelrug · Meuse River",
+  "depCountry": "netherlands",
+  "arrCountry": "netherlands",
+  "flight": { "airline": "荷兰皇家航空", "airlineEn": "KLM Cityhopper", "flightNo": "KL1354", "aircraft": "Embraer E190", "depIata": "AMS", "arrIata": "MST", "durationMin": 50 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "ams", "name": "阿姆斯特丹", "nameEn": "Amsterdam", "lat": 52.3105, "lon": 4.7683, "airport": true },
+    { "kind": "terrain", "terrainId": "utrechtse-heuvelrug" },
+    { "kind": "terrain", "terrainId": "meuse-river-nl" },
+    { "kind": "city", "id": "mst", "name": "马斯特里赫特", "nameEn": "Maastricht", "lat": 50.9114, "lon": 5.7703, "airport": true }
+  ]
+}
