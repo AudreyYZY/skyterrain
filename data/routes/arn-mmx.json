@@ -1,0 +1,17 @@
+{
+  "id": "arn-mmx",
+  "name": "斯德哥尔摩 — 马尔默",
+  "nameEn": "Stockholm — Malmö",
+  "description": "斯托雷莫瑟沼泽 · 斯科讷平原",
+  "descriptionEn": "Store Mosse · Skåne Plain",
+  "depCountry": "sweden",
+  "arrCountry": "sweden",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK107", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "MMX", "durationMin": 55 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
+    { "kind": "terrain", "terrainId": "store-mosse" },
+    { "kind": "terrain", "terrainId": "skane-plain" },
+    { "kind": "city", "id": "mmx", "name": "马尔默", "nameEn": "Malmö", "lat": 55.5363, "lon": 13.3762, "airport": true }
+  ]
+}

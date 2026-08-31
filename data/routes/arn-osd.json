@@ -1,0 +1,16 @@
+{
+  "id": "arn-osd",
+  "name": "斯德哥尔摩 — 奥勒",
+  "nameEn": "Stockholm — Åre",
+  "description": "希尔扬陨石坑",
+  "descriptionEn": "Siljan Ring",
+  "depCountry": "sweden",
+  "arrCountry": "sweden",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK2064", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "OSD", "durationMin": 60 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
+    { "kind": "terrain", "terrainId": "siljan-ring" },
+    { "kind": "city", "id": "osd", "name": "奥勒—厄斯特松德", "nameEn": "Åre Östersund", "lat": 63.1936, "lon": 14.5008, "airport": true }
+  ]
+}

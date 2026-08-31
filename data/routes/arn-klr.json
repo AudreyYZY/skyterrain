@@ -1,0 +1,16 @@
+{
+  "id": "arn-klr",
+  "name": "斯德哥尔摩 — 卡尔马",
+  "nameEn": "Stockholm — Kalmar",
+  "description": "厄兰岛大阿尔瓦石灰岩荒原",
+  "descriptionEn": "Stora Alvaret, Öland",
+  "depCountry": "sweden",
+  "arrCountry": "sweden",
+  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK195", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "KLR", "durationMin": 45 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
+    { "kind": "terrain", "terrainId": "oland-alvar" },
+    { "kind": "city", "id": "klr", "name": "卡尔马", "nameEn": "Kalmar", "lat": 56.6855, "lon": 16.2875, "airport": true }
+  ]
+}
