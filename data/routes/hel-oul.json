@@ -1,0 +1,16 @@
+{
+  "id": "hel-oul",
+  "name": "赫尔辛基 — 奥卢",
+  "nameEn": "Helsinki — Oulu",
+  "description": "奥斯特罗博特尼亚平原",
+  "descriptionEn": "Ostrobothnia Plain",
+  "depCountry": "finland",
+  "arrCountry": "finland",
+  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY431", "aircraft": "Embraer 190", "depIata": "HEL", "arrIata": "OUL", "durationMin": 70 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
+    { "kind": "terrain", "terrainId": "ostrobothnia-plain" },
+    { "kind": "city", "id": "oul", "name": "奥卢", "nameEn": "Oulu", "lat": 64.9301, "lon": 25.3546, "airport": true }
+  ]
+}

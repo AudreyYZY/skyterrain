@@ -1,0 +1,16 @@
+{
+  "id": "hel-kuo",
+  "name": "赫尔辛基 — 库奥皮奥",
+  "nameEn": "Helsinki — Kuopio",
+  "description": "卡拉韦西湖",
+  "descriptionEn": "Kallavesi",
+  "depCountry": "finland",
+  "arrCountry": "finland",
+  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY362", "aircraft": "ATR 72-500", "depIata": "HEL", "arrIata": "KUO", "durationMin": 55 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
+    { "kind": "terrain", "terrainId": "kallavesi" },
+    { "kind": "city", "id": "kuo", "name": "库奥皮奥", "nameEn": "Kuopio", "lat": 63.0072, "lon": 27.7979, "airport": true }
+  ]
+}

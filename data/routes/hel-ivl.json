@@ -1,0 +1,16 @@
+{
+  "id": "hel-ivl",
+  "name": "赫尔辛基 — 伊瓦洛",
+  "nameEn": "Helsinki — Ivalo",
+  "description": "伊纳里湖",
+  "descriptionEn": "Inari",
+  "depCountry": "finland",
+  "arrCountry": "finland",
+  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY601", "aircraft": "Airbus A320", "depIata": "HEL", "arrIata": "IVL", "durationMin": 100 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
+    { "kind": "terrain", "terrainId": "inari-lake" },
+    { "kind": "city", "id": "ivl", "name": "伊瓦洛", "nameEn": "Ivalo", "lat": 68.6072, "lon": 27.4053, "airport": true }
+  ]
+}

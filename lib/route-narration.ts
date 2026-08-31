@@ -3270,6 +3270,108 @@ export const ROUTE_NARRATION: Record<
       "Stockholm to Åre Östersund is about 60 minutes, same time zone, operated by SAS (Airbus A320neo) as one of Sweden's domestic routes; an intercity train (about 6.5 hours) is another option. The airport is about 65 km from Åre. Åre is Northern Europe's largest alpine ski resort. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
+
+  "hel-rvn": {
+    study: {
+    "zh-CN":
+      "赫尔辛基飞罗瓦涅米，是一趟纵贯芬兰全境、从南部湖区飞往北极圈拉普兰的航线。起飞后不久，脚下展开派耶内湖狭长笔直的湖面——芬兰第二大湖，也是芬兰水深最深的湖泊之一，最大水深约95米，与南部错综复杂的塞马湖形成鲜明对比。" +
+      "飞机继续向北飞行，脚下的湖区逐渐让位于芬兰中北部广袤的针叶林带，临近罗瓦涅米降落前，凯米约基河蜿蜒的河道清晰可辨——芬兰最长的河流，沿岸建有多座水电站，飞机沿河而下，降落在跨越北极圈线的罗瓦涅米。",
+    "en-US":
+      "Flying from Helsinki to Rovaniemi spans the length of Finland, from the southern lake district to Arctic Lapland. Soon after take-off, the long, straight surface of Lake Päijänne unfolds below — Finland's second-largest lake and one of its deepest, with a maximum depth of about 95 m, a sharp contrast with the intricate, fragmented Saimaa further south." +
+      " The flight continues north as the lake district below gradually gives way to the vast conifer forest of north-central Finland; approaching Rovaniemi, the winding channel of the Kemijoki comes into clear view — Finland's longest river, lined with hydroelectric dams — and the flight follows the river down to land at Rovaniemi, straddling the Arctic Circle line.",
+    },
+    travel: {
+    "zh-CN":
+      "赫尔辛基到罗瓦涅米飞约85分钟，同一时区，是芬兰航空运营的国内航班之一（空客A321机型），也可选择约12小时的夜间火车。罗瓦涅米机场离市区约10公里。罗瓦涅米是圣诞老人村所在地，也是探索拉普兰荒原的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Helsinki to Rovaniemi is about 85 minutes, same time zone, operated by Finnair (Airbus A321) as one of Finland's domestic routes; an overnight train (about 12 hours) is another option. Rovaniemi Airport is about 10 km from the centre. Rovaniemi is home to Santa Claus Village and an ideal gateway for exploring the Lapland wilderness. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "hel-oul": {
+    study: {
+    "zh-CN":
+      "赫尔辛基飞奥卢，是一趟沿波的尼亚湾海岸北上的航线。飞机离开赫尔辛基后向北飞行，沿途掠过芬兰中西部典型的森林与湖泊交织地貌，中途掠过奥斯特罗博特尼亚平原——芬兰西海岸一片因地壳均衡抬升而持续扩大的低平沿海农业区，大片规整的农田覆盖着开阔的地表，沿海地区仍能观测到明显的陆地抬升现象。" +
+      "越过平原后，飞机继续沿波的尼亚湾海岸北上，最终降落在奥卢——芬兰重要的科技与大学城市，被称为“北方硅谷”，也是探索北芬兰与拉普兰的门户。",
+    "en-US":
+      "Flying from Helsinki to Oulu heads north along the Gulf of Bothnia coast. After leaving Helsinki the flight heads north, passing over the Ostrobothnia Plain midway — a low-lying coastal agricultural region on Finland's west coast that continues to expand through isostatic rebound, its broad, open surface covered in regular farmland." +
+      " Past the plain, the flight continues north along the Gulf of Bothnia coast before landing in Oulu, an important Finnish technology and university city and a gateway for exploring northern Finland and Lapland.",
+    },
+    travel: {
+    "zh-CN":
+      "赫尔辛基到奥卢飞约70分钟，同一时区，是芬兰航空运营的国内航班之一（安波190机型），也可选择约6.5小时的城际火车。奥卢机场离市区约15公里。奥卢是探索波的尼亚湾北岸与拉普兰的便捷门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Helsinki to Oulu is about 70 minutes, same time zone, operated by Finnair (Embraer 190) as one of Finland's domestic routes; an intercity train (about 6.5 hours) is another option. Oulu Airport is about 15 km from the centre. Oulu is a convenient gateway for exploring the Bothnian Bay coast and Lapland. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "hel-kao": {
+    study: {
+    "zh-CN":
+      "赫尔辛基飞库萨莫，是一趟飞往芬兰东北部、探索“熊之路”徒步路线的门户航线。飞机离开赫尔辛基后持续向东北飞行，穿越芬兰中部广袤的湖区与针叶林地带，逐渐进入芬兰—俄罗斯边境附近人烟稀少的森林荒野。" +
+      "临近库萨莫降落前，脚下出现奥兰卡峡谷——奥兰卡河切穿古老基岩形成的峡谷，两岸松林与局部石灰质地表交替出现，是芬兰著名长距离徒步路线“熊之路”沿线最具代表性的地貌之一，飞机随后降落在库萨莫，紧邻鲁卡滑雪度假区。",
+    "en-US":
+      "Flying from Helsinki to Kuusamo is a gateway route to north-eastern Finland, home to the Karhunkierros hiking trail. After leaving Helsinki the flight continues north-east, crossing the vast lake district and conifer forest of central Finland." +
+      " Approaching Kuusamo, the Oulanka Canyon comes into view below — a canyon cut by the Oulanka River through ancient bedrock, pine forest and patches of lime-rich ground alternating along its banks, one of the most representative landforms along Finland's famous Karhunkierros long-distance trail — before the flight lands in Kuusamo, right next to the Ruka ski resort.",
+    },
+    travel: {
+    "zh-CN":
+      "赫尔辛基到库萨莫飞约75分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型）。库萨莫机场离市区约5公里。库萨莫是探索奥兰卡国家公园与鲁卡滑雪度假区的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Helsinki to Kuusamo is about 75 minutes, same time zone, operated by Finnair (ATR 72-500) as one of Finland's domestic routes. Kuusamo Airport is about 5 km from the centre. Kuusamo is an ideal gateway for exploring Oulanka National Park and the Ruka ski resort. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "hel-ivl": {
+    study: {
+    "zh-CN":
+      "赫尔辛基飞伊瓦洛，是一趟纵贯芬兰全境、抵达北极圈深处拉普兰腹地的航线，全程距离接近1000公里，是芬兰国内最长的定期航班之一。飞机离开赫尔辛基后持续向北飞行，脚下的地貌依次经过南部湖区、中部针叶林带，逐渐过渡为北部图恩图里荒原，气候也由温带大陆性转为亚北极气候。" +
+      "临近伊瓦洛降落前，脚下展开伊纳里湖开阔的水面——芬兰第三大湖，也是北极圈内芬兰面积最大的湖泊，湖中散布约3300座岛屿，是萨米人传统聚居区伊纳里地区的地理核心，飞机随后降落在伊瓦洛，是探索伊纳里地区萨米文化的门户机场。",
+    "en-US":
+      "Flying from Helsinki to Ivalo spans the length of Finland to reach deep into Arctic Lapland. After leaving Helsinki the flight continues north, the landscape below passing in turn through the southern lake district, the conifer forest of central Finland, and finally the tunturi wilderness of the north." +
+      " Approaching Ivalo, the broad waters of Lake Inari come into view below — Finland's third-largest lake and the largest lake within the Finnish Arctic Circle, dotted with about 3,300 islands, the geographic core of the traditional Sámi Inari region — before the flight lands at Ivalo, the gateway airport for exploring Sámi culture in the Inari region.",
+    },
+    travel: {
+    "zh-CN":
+      "赫尔辛基到伊瓦洛飞约100分钟，同一时区，是芬兰航空运营的国内航班之一（空客A320机型）。伊瓦洛机场离伊纳里村约40公里。伊瓦洛是探索伊纳里湖与萨米文化的门户机场，也是观测极光条件最佳的地区之一。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Helsinki to Ivalo is about 100 minutes, same time zone, operated by Finnair (Airbus A320) as one of Finland's domestic routes. Ivalo Airport is about 40 km from the village of Inari. Ivalo is the gateway airport for exploring Lake Inari and Sámi culture, and one of the best regions in Finland for viewing the northern lights. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "hel-kuo": {
+    study: {
+    "zh-CN":
+      "赫尔辛基飞库奥皮奥，是一趟飞往芬兰中东部湖区核心城市的航线。飞机离开赫尔辛基后向北飞行，穿越芬兰中部典型的森林与湖泊交织地貌，沿途湖泊星罗棋布，是芬兰“千湖之国”景观最集中的区域之一。" +
+      "临近库奥皮奥降落前，脚下展开卡拉韦西湖开阔的水面，湖畔的普宜奥山海拔306米，是芬兰湖区少有的地势制高点，山体基岩长期风化侵蚀后在平缓的湖区地貌中格外突出，山顶观景塔可俯瞰整片湖区群岛景观，飞机随后降落在库奥皮奥，坐落于湖畔的芬兰中东部湖区核心城市。",
+    "en-US":
+      "Flying from Helsinki to Kuopio heads to the core city of Finland's central-eastern lake district. After leaving Helsinki the flight heads north, crossing the forest and lake terrain typical of central Finland." +
+      " Approaching Kuopio, the open waters of Lake Kallavesi come into view below; lakeside Puijo hill, at 306 m, is one of the few high points of relief in the Finnish lake district, its summit viewing tower overlooking the entire lake and archipelago landscape, before the flight lands in Kuopio, the core city of Finland's central-eastern lake district, built on the lake's shore.",
+    },
+    travel: {
+    "zh-CN":
+      "赫尔辛基到库奥皮奥飞约55分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型），也可选择约4.5小时的城际火车。库奥皮奥机场离市区约15公里。库奥皮奥是俯瞰芬兰湖区地貌的理想目的地。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Helsinki to Kuopio is about 55 minutes, same time zone, operated by Finnair (ATR 72-500) as one of Finland's domestic routes; an intercity train (about 4.5 hours) is another option. Kuopio Airport is about 15 km from the centre. Kuopio is an ideal destination for overlooking Finland's lake-district landforms. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "hel-mhq": {
+    study: {
+    "zh-CN":
+      "赫尔辛基飞玛丽港，是一趟从芬兰本土飞往波罗的海入口处奥兰群岛的短途航线。起飞后不久，脚下即展开群岛海开阔的景象——芬兰西南沿海由约四万座岛屿与礁石组成的水域，是世界上按岛屿数量计最密集的群岛之一，末次冰期冰川刮蚀的花岗岩基岩经地壳均衡抬升逐渐出露海面而成。" +
+      "越过群岛海后，飞机继续向西飞行，最终降落在玛丽港——奥兰群岛的首府，芬兰唯一的瑞典语单一官方语言自治区的行政与文化中心，1921年国际联盟裁决确立其在芬兰主权下享有高度自治与非军事化地位，这一安排延续至今。",
+    "en-US":
+      "Flying from Helsinki to Mariehamn is a short hop from mainland Finland to the Åland Islands at the entrance to the Baltic Sea. Soon after take-off, the broad expanse of the Archipelago Sea unfolds below — a body of water off south-western Finland made up of about forty thousand islands and skerries, one of the densest island clusters anywhere in the world by count." +
+      " Past the Archipelago Sea, the flight continues west before landing in Mariehamn, the capital of the Åland Islands and the administrative and cultural centre of Finland's only autonomous region with Swedish as its sole official language.",
+    },
+    travel: {
+    "zh-CN":
+      "赫尔辛基到玛丽港飞约55分钟，同一时区，是芬兰航空运营的国内航班之一（ATR 72-500机型），也可选择乘渡轮往返。玛丽港机场离市区约3公里。玛丽港是探索奥兰群岛的理想起点。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Helsinki to Mariehamn is about 55 minutes, same time zone, operated by Finnair (ATR 72-500) as one of Finland's domestic routes; a ferry is another option. Mariehamn Airport is about 3 km from the centre. Mariehamn is an ideal starting point for exploring the Åland Islands. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

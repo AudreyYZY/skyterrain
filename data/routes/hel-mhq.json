@@ -1,0 +1,16 @@
+{
+  "id": "hel-mhq",
+  "name": "赫尔辛基 — 玛丽港",
+  "nameEn": "Helsinki — Mariehamn",
+  "description": "群岛海",
+  "descriptionEn": "Archipelago Sea",
+  "depCountry": "finland",
+  "arrCountry": "finland",
+  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY214", "aircraft": "ATR 72-500", "depIata": "HEL", "arrIata": "MHQ", "durationMin": 55 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
+    { "kind": "terrain", "terrainId": "archipelago-sea" },
+    { "kind": "city", "id": "mhq", "name": "玛丽港", "nameEn": "Mariehamn", "lat": 60.1222, "lon": 19.8983, "airport": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "hel-rvn",
+  "name": "赫尔辛基 — 罗瓦涅米",
+  "nameEn": "Helsinki — Rovaniemi",
+  "description": "派耶内湖 · 凯米约基河",
+  "descriptionEn": "Päijänne · Kemijoki",
+  "depCountry": "finland",
+  "arrCountry": "finland",
+  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY533", "aircraft": "Airbus A321", "depIata": "HEL", "arrIata": "RVN", "durationMin": 85 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
+    { "kind": "terrain", "terrainId": "paijanne" },
+    { "kind": "terrain", "terrainId": "kemijoki" },
+    { "kind": "city", "id": "rvn", "name": "罗瓦涅米", "nameEn": "Rovaniemi", "lat": 66.5648, "lon": 25.8304, "airport": true }
+  ]
+}

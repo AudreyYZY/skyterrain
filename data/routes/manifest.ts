@@ -182,6 +182,13 @@ import arnMmx from "./arn-mmx.json" with { type: "json" };
 import arnVby from "./arn-vby.json" with { type: "json" };
 import arnKlr from "./arn-klr.json" with { type: "json" };
 import arnOsd from "./arn-osd.json" with { type: "json" };
+// 芬兰
+import helRvn from "./hel-rvn.json" with { type: "json" };
+import helOul from "./hel-oul.json" with { type: "json" };
+import helKao from "./hel-kao.json" with { type: "json" };
+import helIvl from "./hel-ivl.json" with { type: "json" };
+import helKuo from "./hel-kuo.json" with { type: "json" };
+import helMhq from "./hel-mhq.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -334,4 +341,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   arnVby,
   arnKlr,
   arnOsd,
+  helRvn,
+  helOul,
+  helKao,
+  helIvl,
+  helKuo,
+  helMhq,
 ] as unknown as FlightRoute[];

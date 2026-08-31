@@ -1,0 +1,16 @@
+{
+  "id": "hel-kao",
+  "name": "赫尔辛基 — 库萨莫",
+  "nameEn": "Helsinki — Kuusamo",
+  "description": "奥兰卡峡谷",
+  "descriptionEn": "Oulanka Canyon",
+  "depCountry": "finland",
+  "arrCountry": "finland",
+  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY486", "aircraft": "ATR 72-500", "depIata": "HEL", "arrIata": "KAO", "durationMin": 75 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
+    { "kind": "terrain", "terrainId": "oulanka-canyon" },
+    { "kind": "city", "id": "kao", "name": "库萨莫", "nameEn": "Kuusamo", "lat": 65.9878, "lon": 29.2394, "airport": true }
+  ]
+}
