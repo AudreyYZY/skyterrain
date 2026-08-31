@@ -1,0 +1,17 @@
+{
+  "id": "han-dad",
+  "name": "河内 — 岘港",
+  "nameEn": "Hanoi — Da Nang",
+  "description": "长安名胜群 · 五行山",
+  "descriptionEn": "Trang An · Marble Mountains",
+  "depCountry": "vietnam",
+  "arrCountry": "vietnam",
+  "flight": { "airline": "越捷航空", "airlineEn": "VietJet Air", "flightNo": "VJ523", "aircraft": "Airbus A321", "depIata": "HAN", "arrIata": "DAD", "durationMin": 83 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "han", "name": "河内", "nameEn": "Hanoi", "lat": 21.2212, "lon": 105.8073, "airport": true },
+    { "kind": "terrain", "terrainId": "trang-an-landscape-complex" },
+    { "kind": "terrain", "terrainId": "ngu-hanh-son" },
+    { "kind": "city", "id": "dad", "name": "岘港", "nameEn": "Da Nang", "lat": 16.0439, "lon": 108.1994, "airport": true }
+  ]
+}

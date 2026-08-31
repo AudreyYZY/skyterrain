@@ -1,0 +1,16 @@
+{
+  "id": "sgn-pqc",
+  "name": "胡志明市 — 富国岛",
+  "nameEn": "Ho Chi Minh City — Phu Quoc",
+  "description": "湄公河三角洲",
+  "descriptionEn": "Mekong Delta",
+  "depCountry": "vietnam",
+  "arrCountry": "vietnam",
+  "flight": { "airline": "越捷航空", "airlineEn": "VietJet Air", "flightNo": "VJ321", "aircraft": "Airbus A320", "depIata": "SGN", "arrIata": "PQC", "durationMin": 65 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "sgn", "name": "胡志明市", "nameEn": "Ho Chi Minh City", "lat": 10.8188, "lon": 106.6520, "airport": true },
+    { "kind": "terrain", "terrainId": "mekong-delta" },
+    { "kind": "city", "id": "pqc", "name": "富国岛", "nameEn": "Phu Quoc", "lat": 10.1700, "lon": 103.9950, "airport": true }
+  ]
+}

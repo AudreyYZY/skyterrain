@@ -189,6 +189,12 @@ import helKao from "./hel-kao.json" with { type: "json" };
 import helIvl from "./hel-ivl.json" with { type: "json" };
 import helKuo from "./hel-kuo.json" with { type: "json" };
 import helMhq from "./hel-mhq.json" with { type: "json" };
+import hanSgn from "./han-sgn.json" with { type: "json" };
+import hanDad from "./han-dad.json" with { type: "json" };
+import sgnPqc from "./sgn-pqc.json" with { type: "json" };
+import hanVca from "./han-vca.json" with { type: "json" };
+import hanHui from "./han-hui.json" with { type: "json" };
+import dadSgn from "./dad-sgn.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -347,4 +353,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   helIvl,
   helKuo,
   helMhq,
+  hanSgn,
+  hanDad,
+  sgnPqc,
+  hanVca,
+  hanHui,
+  dadSgn,
 ] as unknown as FlightRoute[];

@@ -1,0 +1,16 @@
+{
+  "id": "han-hui",
+  "name": "河内 — 顺化",
+  "nameEn": "Hanoi — Hue",
+  "description": "长安名胜群",
+  "descriptionEn": "Trang An Landscape Complex",
+  "depCountry": "vietnam",
+  "arrCountry": "vietnam",
+  "flight": { "airline": "越南航空", "airlineEn": "Vietnam Airlines", "flightNo": "VN1541", "aircraft": "Airbus A321", "depIata": "HAN", "arrIata": "HUI", "durationMin": 70 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "han", "name": "河内", "nameEn": "Hanoi", "lat": 21.2212, "lon": 105.8073, "airport": true },
+    { "kind": "terrain", "terrainId": "trang-an-landscape-complex" },
+    { "kind": "city", "id": "hui", "name": "顺化", "nameEn": "Hue", "lat": 16.4015, "lon": 107.7033, "airport": true }
+  ]
+}
