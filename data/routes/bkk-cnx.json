@@ -1,0 +1,17 @@
+{
+  "id": "bkk-cnx",
+  "name": "曼谷 — 清迈",
+  "nameEn": "Bangkok — Chiang Mai",
+  "description": "通萨兰銮草原 · 素贴山",
+  "descriptionEn": "Thung Salaeng Luang · Doi Suthep",
+  "depCountry": "thailand",
+  "arrCountry": "thailand",
+  "flight": { "airline": "泰国国际航空", "airlineEn": "Thai Airways", "flightNo": "TG100", "aircraft": "Airbus A320", "depIata": "BKK", "arrIata": "CNX", "durationMin": 80 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "bkk", "name": "曼谷素万那普", "nameEn": "Bangkok Suvarnabhumi", "lat": 13.6900, "lon": 100.7501, "airport": true },
+    { "kind": "terrain", "terrainId": "thung-salaeng-luang" },
+    { "kind": "terrain", "terrainId": "doi-suthep-pui" },
+    { "kind": "city", "id": "cnx", "name": "清迈", "nameEn": "Chiang Mai", "lat": 18.7669, "lon": 98.9626, "airport": true }
+  ]
+}

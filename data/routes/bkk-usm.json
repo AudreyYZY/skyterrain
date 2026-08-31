@@ -1,0 +1,16 @@
+{
+  "id": "bkk-usm",
+  "name": "曼谷 — 苏梅岛",
+  "nameEn": "Bangkok — Koh Samui",
+  "description": "湄南河三角洲",
+  "descriptionEn": "Chao Phraya Delta",
+  "depCountry": "thailand",
+  "arrCountry": "thailand",
+  "flight": { "airline": "曼谷航空", "airlineEn": "Bangkok Airways", "flightNo": "PG133", "aircraft": "ATR 72-600", "depIata": "BKK", "arrIata": "USM", "durationMin": 95 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "bkk", "name": "曼谷素万那普", "nameEn": "Bangkok Suvarnabhumi", "lat": 13.6900, "lon": 100.7501, "airport": true },
+    { "kind": "terrain", "terrainId": "chao-phraya-delta" },
+    { "kind": "city", "id": "usm", "name": "苏梅岛", "nameEn": "Koh Samui", "lat": 9.5478, "lon": 100.0625, "airport": true }
+  ]
+}

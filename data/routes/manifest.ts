@@ -189,6 +189,12 @@ import helKao from "./hel-kao.json" with { type: "json" };
 import helIvl from "./hel-ivl.json" with { type: "json" };
 import helKuo from "./hel-kuo.json" with { type: "json" };
 import helMhq from "./hel-mhq.json" with { type: "json" };
+import bkkCnx from "./bkk-cnx.json" with { type: "json" };
+import bkkUsm from "./bkk-usm.json" with { type: "json" };
+import dmkUth from "./dmk-uth.json" with { type: "json" };
+import dmkCei from "./dmk-cei.json" with { type: "json" };
+import dmkHkt from "./dmk-hkt.json" with { type: "json" };
+import dmkKbv from "./dmk-kbv.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -347,4 +353,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   helIvl,
   helKuo,
   helMhq,
+  bkkCnx,
+  bkkUsm,
+  dmkUth,
+  dmkCei,
+  dmkHkt,
+  dmkKbv,
 ] as unknown as FlightRoute[];
