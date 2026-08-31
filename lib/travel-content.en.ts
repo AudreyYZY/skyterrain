@@ -3935,4 +3935,188 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most pleasant season; as a comparatively remote part of north-west Ireland, driving is the most convenient way to explore Slieve League and Glenveagh National Park — mountain weather is changeable, so bring wind- and rain-proof gear.",
   },
+
+  // ============ Denmark ============
+  "denmark-overview": {
+    identity:
+      "Denmark sits in Northern Europe, covering about 43,000 km² with a population of roughly 5.9 million. It is the smallest and flattest of the three Scandinavian countries (the entire country's highest point is only 170.86 m), made up of the Jutland peninsula and more than 500 islands, known as a \"kingdom of fairy tales\" and a \"kingdom of design.\"",
+    layout:
+      "Denmark can be divided roughly into: the Capital Region (Copenhagen and its surroundings, the political and economic centre), Region Zealand (Roskilde, a historic former-capital area), the Region of Southern Denmark (Odense on the island of Funen, and southern Jutland), Central Denmark Region (Aarhus, Denmark's second city, and the lake district), North Denmark Region (Aalborg and Skagen, the peninsula's northern tip), and Bornholm (a standalone island in the Baltic Sea).",
+    gettingAround:
+      "Copenhagen Airport is the main international gateway; the rail and motorway networks are well developed, with journeys between major cities typically taking 2–4 hours. Scheduled domestic flights are hubbed through Copenhagen, connecting to Aarhus, Aalborg, Billund and Bornholm. Driving is on the right, and several bridges (the Great Belt Bridge, the Øresund Bridge) link the main islands and peninsula. The climate is temperate maritime, mild year-round, windy with little snow in winter and cool in summer. Restaurant bills typically already include service, with no extra tip required. The voltage is 230V with EU-style two-round-pin plugs.",
+    culture:
+      "The official language is Danish, and English proficiency is extremely high — English works in almost any situation. Danes value equality and a simple way of life, and \"hygge\" (a cosy, comfortable aesthetic of everyday life) is one of the core concepts of Danish culture. Cycling culture is strong, and Copenhagen has one of the highest shares of cycling commuters in the world. Restaurant bills typically don't require a tip; rounding up is fine.",
+    seeAndDo:
+      "Natural landforms: Møns Klint, Stevns Klint (a World Heritage Site), Skagen Odde, Rubjerg Knude dune, the Silkeborg Lake District. Heritage and culture: the Little Mermaid statue and Nyhavn in Copenhagen, Roskilde Cathedral (World Heritage) and the Viking Ship Museum, Kronborg Castle in Helsingør (the setting for Hamlet, a World Heritage Site). Islands: the Bornholm granite coast, the Wadden Sea (World Heritage).",
+    whenAndTips:
+      "May–September brings the most pleasant weather and longest daylight, making it the peak travel season; around the summer solstice in June, towns across the country hold traditional bonfire celebrations. The network of bridges and ferries makes it easy to plan a driving route across several islands.",
+  },
+  copenhagen: {
+    identity:
+      "Copenhagen is Denmark's capital and largest city, with a population of about 640,000 (about 1.4 million in the metro area), on the eastern shore of Zealand across the Øresund from Malmö, Sweden. It is an important Nordic centre for design, food and sustainability.",
+    layout:
+      "The city centre is compact; the canal-lined Christianshavn and Nyhavn districts are the iconic waterfront areas, with Tivoli Gardens and City Hall Square forming the traditional centre, and the suburbs connected to Sweden via the Øresund Bridge.",
+    gettingAround:
+      "Copenhagen Airport is about 8 km from the centre, with a direct metro link. The city has an extensive network of cycle lanes; the metro, buses and walking are also good options. The climate is temperate maritime, mild year-round and windy in winter.",
+    culture:
+      "The official language is Danish, and English proficiency is extremely high. Copenhagen is the birthplace of \"New Nordic Cuisine\" and has one of the highest shares of cycling commuters in the world. The \"hygge\" way of life is especially visible here. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Little Mermaid statue; the colourful waterfront buildings of Nyhavn; Tivoli Gardens (one of the world's oldest amusement parks); Christiansborg Palace; the Freetown of Christiania; the National Gallery of Denmark (SMK). Day trips to Roskilde and Helsingør.",
+    whenAndTips:
+      "May–September is the most pleasant season and peak time for outdoor cafés and canal boat tours; the main sights are concentrated in the centre, easily covered by bicycle and on foot.",
+  },
+  helsingoer: {
+    identity:
+      "Helsingør is a small port town on the north-eastern coast of Zealand, with a population of about 47,000, facing Helsingborg, Sweden across the Øresund, famous for Kronborg Castle, the setting of Shakespeare's Hamlet.",
+    layout:
+      "The old town is built along the harbour, with Kronborg Castle guarding the narrowest point of the Øresund — historically a strategic point for controlling Baltic shipping — and frequent ferries running across to Sweden.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Copenhagen Airport (about 60 km, about 50 minutes by train). The old town is walkable, and frequent ferries run to and from Helsingborg, Sweden. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency. Helsingør is known worldwide for its literary connection to Kronborg Castle and Hamlet, and a Hamlet theatre festival is held at the castle each summer. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Kronborg Castle (a World Heritage Site, the setting for Hamlet); St Mary's Church in the old town; the M/S Maritime Museum of Denmark cluster; a ferry day trip to Helsingborg, Sweden.",
+    whenAndTips:
+      "May–September is the most pleasant season, with the castle busiest during the summer Hamlet festival. It's an easy day trip from Copenhagen, and the ferry also makes for a convenient side trip to Sweden.",
+  },
+  roskilde: {
+    identity:
+      "Roskilde is a historic town in northern Zealand, with a population of about 51,000, Denmark's religious and political centre for centuries starting in the 10th century, now known for Roskilde Cathedral and the Viking Ship Museum, and host of a well-known European music festival.",
+    layout:
+      "The old town is built at the southern end of Roskilde Fjord, with the cathedral standing on the city's high point and the Viking Ship Museum right on the waterfront — together forming the two ends of the town's historic axis.",
+    gettingAround:
+      "Roskilde's own airport has no scheduled passenger service; the nearest with scheduled flights is Copenhagen Airport (about 35 km, about 25 minutes by train). The old town is walkable. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency. Roskilde Festival is one of the largest open-air music festivals in Northern Europe, drawing tens of thousands of visitors each June–July. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Roskilde Cathedral (a World Heritage Site, the burial place of Danish monarchs); the Viking Ship Museum (displaying five recovered and restored Viking ships); a walk along the fjord; the medieval streets of the old town.",
+    whenAndTips:
+      "May–September is the most pleasant season; accommodation is tight during the Roskilde Festival in June–July, while outside festival time is an ideal window for visiting the cathedral and museum.",
+  },
+  odense: {
+    identity:
+      "Odense is Denmark's third-largest city, with a population of about 180,000, sitting at the centre of the island of Funen. It is the birthplace of Hans Christian Andersen and the core city of the Region of Southern Denmark.",
+    layout:
+      "The old town extends outward from the Hans Christian Andersen House museum, with a canal running through the city and medieval streets interwoven with 19th-century buildings — one of Denmark's better-preserved historic town centres.",
+    gettingAround:
+      "Odense's own airport has no scheduled passenger service; the nearest with scheduled flights is Billund Airport (about 75 km); from Copenhagen a direct train takes about 1.5 hours. The old town is walkable. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency. Odense is known worldwide for Hans Christian Andersen, and the city's cultural life is closely tied to fairy-tale themes. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Hans Christian Andersen Museum; Odense Cathedral; the Møntergården Museum of natural history and archaeology; a walk through the medieval streets of the old town. Day trips to the Funen rolling farmland and the South Funen Archipelago.",
+    whenAndTips:
+      "May–September is the most pleasant season; as the core city of Funen, it's a convenient base for exploring the island's rolling farmland and the archipelago to the south.",
+  },
+  esbjerg: {
+    identity:
+      "Esbjerg is Denmark's largest port city on the west coast, with a population of about 72,000, which grew up from harbour construction in the late 19th century and is now an important base for the Danish North Sea oil industry and a gateway for Wadden Sea ecotourism.",
+    layout:
+      "The city is built along its North Sea harbour, laid out in a neat grid plan drawn up in the late 19th century — an unusual example of a \"young, planned city\" in Denmark, with the port district still the economic core of the city.",
+    gettingAround:
+      "Esbjerg's own airport mainly serves helicopter traffic to offshore oil platforms, with very few scheduled passenger flights; the nearest with scheduled passenger service is Billund Airport (about 45 km). The old town is walkable; reaching the Wadden Sea requires a car or a tour. The climate is temperate maritime, with fairly strong coastal winds.",
+    culture:
+      "The official language is Danish, with high English proficiency. Esbjerg is an important base for Denmark's North Sea oil industry and a gateway city for exploring the Wadden Sea World Heritage Site. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Men at Sea sculptures on the beach; the Fisheries and Maritime Museum; the Wadden Sea Centre (learn about intertidal ecology); a boat trip or guided walk out onto the Wadden Sea's mudflats and barrier islands.",
+    whenAndTips:
+      "May–September is the most pleasant season and peak time for birdwatching and mudflat walking on the Wadden Sea; check tide tables before any Wadden Sea outing, and it's best to go with a professional guide for safety.",
+  },
+  ribe: {
+    identity:
+      "Ribe is Denmark's oldest surviving town, its founding traceable to around AD 704, with a population of about 8,000, preserving the most complete medieval street layout in Denmark.",
+    layout:
+      "The old town is built along the Ribe River, with the cathedral standing on the town's high point; the medieval stone and half-timbered streets survive largely intact, with almost no modern redevelopment.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Billund Airport (about 45 km). The old town is walkable. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency. Ribe is known for its tradition of the night watchman, and this medieval-style evening patrol still takes place in summer. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Ribe Cathedral (one of Denmark's oldest churches); the Ribe Viking Centre; the night watchman's evening tour. Day trips to Wadden Sea National Park nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season; as a gateway town to the southern Wadden Sea, it suits a half- to full-day deep dive into its historic quarter.",
+  },
+  aarhus: {
+    identity:
+      "Aarhus is Denmark's second-largest city, with a population of about 350,000, on the eastern coast of Jutland. It is the core city of Central Denmark Region and an important Danish university town and centre for culture and the arts.",
+    layout:
+      "The old town is built along the Aarhus River, with the Latin Quarter preserving a medieval street layout; the circular rainbow walkway atop the ARoS Aarhus Art Museum is a new city landmark, and the suburbs extend out along Aarhus Bay.",
+    gettingAround:
+      "Aarhus Airport is about 35 km from the centre, reached by bus; from Copenhagen the train takes about 3 hours. Getting around the city relies mainly on walking, cycling and light rail. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency, especially in the lively university-town atmosphere of the centre. Aarhus is an important Danish centre for contemporary art and design. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The ARoS Aarhus Art Museum (with its circular rainbow panorama walkway); Den Gamle By, an open-air historic town museum; the old streets of the Latin Quarter; Aarhus Cathedral. Day trips to Mols Bjerge and the Silkeborg Lake District.",
+    whenAndTips:
+      "May–September is the most pleasant season; Aarhus is a convenient gateway for day trips to Mols Bjerge and the Silkeborg Lake District, either self-drive or with a tour.",
+  },
+  silkeborg: {
+    identity:
+      "Silkeborg is the core town of Denmark's lake district, with a population of about 46,000, set among the lakes strung along the Gudenå, and a gateway for exploring central Jutland's hill country and river cruising.",
+    layout:
+      "The small town is spread along the Gudenå and the lakes it links; 19th-century paper-mill buildings line the river, some now converted into cultural venues, with lakeside paths running through the town.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Aarhus Airport (about 55 km). The town is walkable, and the lakes can be explored by vintage steamboat or rented canoe. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency. Silkeborg is an important centre for river-based outdoor recreation in Denmark, with a strong canoeing and hiking culture. Restaurant bills typically already include service.",
+    seeAndDo:
+      "A boat trip on Julsø (the vintage 1861 steamboat Hjejlen is still in service); hiking the Central Jutland Highlands (Møllehøj, mainland Denmark's highest point); the Silkeborg Museum (home to the preserved Tollund Man).",
+    whenAndTips:
+      "May–September is the most pleasant season and peak time for lake cruises and outdoor activities; as one of Denmark's few hilly lake districts, it suits a one- to two-day itinerary combining hiking and boating.",
+  },
+  aalborg: {
+    identity:
+      "Aalborg is Denmark's fourth-largest city, with a population of about 140,000, on the south bank of the Limfjord. It is the core city of North Denmark Region and a gateway for exploring the northern tip of the Jutland peninsula.",
+    layout:
+      "The old town is built along the Limfjord, with medieval streets interwoven with industrial heritage; the waterfront has been redeveloped in recent years into a cultural and leisure district, and it's a good starting point for trips to Rebild Bakker and Skagen.",
+    gettingAround:
+      "Aalborg Airport is about 6 km from the centre, reached by bus; from Copenhagen the train takes about 4.5 hours. Getting around the city relies mainly on walking, cycling and buses. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency. Aalborg was historically known for industry and shipping, and its waterfront district has since transformed into a hub for cultural and creative industries. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Limfjord waterfront promenade; the Aalborg Historical Museum; hiking at Rebild Bakker nearby; a convenient staging point for a trip on to Skagen.",
+    whenAndTips:
+      "May–September is the most pleasant season; Aalborg is a convenient gateway for exploring both Rebild Bakker and Skagen Odde, and a self-drive day trip can cover both.",
+  },
+  skagen: {
+    identity:
+      "Skagen is a small town at the very northern tip of the Jutland peninsula, with a population of about 7,700; its distinctive Nordic light drew a colony of painters in the late 19th century, forming the well-known \"Skagen Painters\" movement, and it is now a well-known Danish holiday town.",
+    layout:
+      "The town is characterised by traditional fishing-village buildings with yellow-plastered walls and red tile roofs; the Grenen sand spit extends north beyond the town and is its most important natural landmark.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Aalborg Airport (about 100 km). The town is walkable; reaching the tip of the Grenen spit requires walking or a shuttle (private cars are not allowed at the very end of the spit). The climate is temperate maritime, with fairly strong coastal winds.",
+    culture:
+      "The official language is Danish, with high English proficiency. The artistic legacy of the Skagen Painters remains central to the town's cultural identity today, and the local yellow-walled building style has become a distinctive regional landmark. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Grenen sand spit (where the North Sea and the Kattegat meet — you can stand with a foot in each sea); the Skagens Museum (a collection of Skagen Painters' works); the ruins of the old church buried by sand; the seafood market at Skagen harbour.",
+    whenAndTips:
+      "May–September is the most pleasant season and the best time to see the meeting of the two seas; the round-trip walk to the tip of Grenen takes about 1–1.5 hours, with the best views at low tide.",
+  },
+  roenne: {
+    identity:
+      "Rønne is the main town on the island of Bornholm, with a population of about 13,000, the island's largest port and administrative centre, and a gateway for exploring the island's granite landforms and historic castle.",
+    layout:
+      "The old town is built along the harbour, with well-preserved cobblestone streets and traditional smoke-yellow houses — one of Denmark's best-preserved historic towns, and the hub from which the rest of the island's sights radiate outward.",
+    gettingAround:
+      "Bornholm Airport is about 5 km from town, reached by bus; ferries also run from Copenhagen or southern Sweden. The old town is walkable; exploring the rest of the island is best done by car or rented bicycle. The climate is temperate maritime, with the surrounding sea moderating the temperature swing between winter and summer compared with mainland Denmark.",
+    culture:
+      "The official language is Danish, with high English proficiency. Thanks to its abundant sunshine and lively arts-and-crafts scene, Bornholm is known as \"Denmark's sunshine island,\" with ceramics and glasswork a local speciality. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The cobblestone streets of the old town; the ruins of Hammershus Castle (one of the largest castle ruins in Northern Europe); hiking the Almindingen forest highland; the Hammeren granite coast; the sea caves at Helligdomsklipperne.",
+    whenAndTips:
+      "May–September is the most pleasant season with the most sunshine; plan at least two to three days for a self-drive loop of the island to cover the scattered sights of the granite coast, the Almindingen highland and the historic castle.",
+  },
+  billund: {
+    identity:
+      "Billund is a small town in the southern part of Central Denmark Region, with a population of about 6,600, home to the world's first Legoland theme park and the global headquarters of the LEGO Group.",
+    layout:
+      "The town itself is small; Legoland and the LEGO House museum form the main landmarks at its centre, and Billund Airport, Denmark's second-busiest, brings the town international visitor numbers far beyond what its population would suggest.",
+    gettingAround:
+      "Billund Airport sits right at the edge of town and is an important hub for domestic flights within Denmark. The town is walkable; reaching surrounding sights such as Randbøl Hede requires a car. The climate is temperate maritime.",
+    culture:
+      "The official language is Danish, with high English proficiency. Billund is known worldwide as the birthplace of the LEGO brick, and the town's identity is closely tied to the LEGO brand. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Legoland (the world's first LEGO-themed park); LEGO House (an interactive LEGO experience centre). Day trips to Randbøl Hede nearby to see a stretch of classic Jutland heather heath.",
+    whenAndTips:
+      "April–September is peak season for Legoland (some areas close in winter); as a family-travel gateway town, plan one to two days focused on the park experience.",
+  },
 };
