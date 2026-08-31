@@ -3237,6 +3237,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September has relatively stable weather and is also whale-watching season. Weather on the island is changeable and rain can come at any time — bring a waterproof jacket. It's about an hour's drive between Sete Cidades and Furnas — plan a full day for a driving loop of the island. Book flights and ferries to and from the mainland ahead; some winter flights are weather-sensitive.",
   },
 
+  // ============ Belgium ============
   "belgium-overview": {
     identity:
       "Belgium sits in Western Europe, covering about 30,500 km² with a population of roughly 11.6 million. It hosts the headquarters of both the EU and NATO. The terrain rises gradually from the north-western coastal plain to the south-eastern Ardennes uplands; the country has three official languages — Dutch (Flemish), French and German — and three regions: Flanders, Wallonia and the Brussels-Capital Region.",
@@ -3415,5 +3416,367 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The thermal baths (modern spa facilities available); the mineral spring sources; the Circuit de Spa-Francorchamps (open to visitors outside race periods); day trips to the Amblève Gorge and the Coo Waterfall.",
     whenAndTips:
       "April–June and September–October bring the most pleasant weather. Spa is an ideal base for exploring the forests and valleys of the eastern Ardennes.",
+  },
+
+  // ============ Netherlands ============
+  "netherlands-overview": {
+    identity:
+      "The Netherlands is an extremely low-lying country in Western Europe, about 42,000 sq km with a population of about 18 million; more than a quarter of the country is below sea level, and even the national high point, Vaalserberg, is only 322.7 m. This is a country that has dealt with the sea and water for centuries — reclaiming land and building dikes is a tradition running through hundreds of years of history, and the Dutch name for the country itself carries the meaning 'low land'.",
+    layout:
+      "It helps to divide the Netherlands into: North Holland (Amsterdam and surroundings, the dune coast); South Holland (Rotterdam, The Hague — the port and political centre); Utrecht province (the central rail hub); Limburg (Maastricht, the only province with pronounced relief); Groningen and Friesland (the north, near the Wadden Sea); and Overijssel (the historic Hanseatic town on the IJssel).",
+    gettingAround:
+      "The Netherlands is small and the rail network is extensive — most major cities are 1–2 hours apart by train, the everyday way the Dutch get around, and domestic flights are very limited (only Schiphol to Maastricht and to Groningen). The bicycle is another Dutch trademark, with a well-developed cycle-lane network in almost every city, and visitors can rent one too. Drive on the right; parking downtown is inconvenient and expensive. Restaurant tipping is not required (rounding up or leaving 5–10% is fine). Tap water is drinkable. Power is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is Dutch, and English proficiency is among the highest of any non-English-speaking country in the world — you can communicate in English in almost any setting. The Dutch are known for being direct and practical, and generally say what they mean. Cycling, environmental awareness and social tolerance are all hallmarks of Dutch culture. Restaurant tipping is not required — rounding up or leaving 5–10% is fine.",
+    seeAndDo:
+      "The canal belt and museums of Amsterdam; the modern architecture and port of Rotterdam; the waterborne village of Giethoorn; Keukenhof Gardens (spring tulips); the windmill village of Zaanse Schans; the mudflats and dunes of the Wadden Sea and West Frisian Islands; the historic centre of Maastricht; the flood barriers of the Delta Works.",
+    whenAndTips:
+      "April–May is tulip season, the most popular time to visit; June–August has the mildest, most comfortable weather. The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. The weather is changeable, windy and rainy year-round — keep a waterproof jacket handy. When cycling, follow local traffic rules and watch for tram tracks.",
+  },
+
+  amsterdam: {
+    identity:
+      "Amsterdam is the capital of the Netherlands, with a metro area of about 1.5 million, named for a dam built on the Amstel river ('Amstel dam'). It rose to become a global centre of trade and finance during the 17th-century Dutch Golden Age, and the concentric canal belt around its centre survives intact today, inscribed as a whole as a UNESCO World Heritage Site in 2010.",
+    layout:
+      "Amsterdam's old town is built around four concentric canals, centred on Dam Square (site of the Royal Palace). Inside the canal belt is the dense historic centre, including the well-known Red Light District and the Jordaan quarter; outside it are the more modern residential and commercial South and East districts. The whole city is low-lying, much of it at or below sea level.",
+    gettingAround:
+      "Schiphol Airport (AMS) is about 15 km from the city, with a train straight to Central Station (about 15 minutes). The city has trams, buses, a metro and ferries; the bicycle is one of the main ways to get around, and renting one is easy. The old canal-side streets are narrow, and pedestrians should watch closely for bikes and trams. The climate is temperate maritime, mild year-round with rain and wind.",
+    culture:
+      "Dutch is the main language, with extremely high English proficiency. Amsterdam's pace is moderate, and the city is highly accepting of diverse cultures and lifestyles. Cycling is a daily habit for locals — visitors renting a bike should follow traffic rules and give way to trams and pedestrians. Restaurant tipping is not required.",
+    seeAndDo:
+      "A canal-belt boat tour; the Van Gogh Museum and the Rijksmuseum (Rembrandt's 'The Night Watch'); the Anne Frank House (Second World War history — a sombre subject; book online well ahead); the Royal Palace and Dam Square; the markets and shops of the Jordaan; the Bloemenmarkt flower market; the Red Light District (learn the background first, then decide for yourself whether to visit).",
+    whenAndTips:
+      "April–May (tulip season) and June–August (the most comfortable weather) are also the two busiest times of year. Book popular sights such as the Anne Frank House and the Van Gogh Museum online weeks ahead. Follow traffic rules when cycling, and mind local etiquette around photography in the Red Light District. Canal-side cobbles are slippery — wear grippy shoes.",
+  },
+
+  haarlem: {
+    identity:
+      "Haarlem is the capital of North Holland, with a metro area of about 160,000, about 20 km west of Amsterdam and just inland from the Holland Dunes coast — one of the oldest cities in the Netherlands, an important textile and brewing centre in the 17th century, and the hometown of Dutch Golden Age painter Frans Hals.",
+    layout:
+      "Haarlem's old town centres on the Grote Markt, with St Bavo's Church as the city's landmark. The old town preserves many 17th-century gabled buildings, and the Spaarne river runs through the city. The dune-coast national park is not far to the west.",
+    gettingAround:
+      "Haarlem has no airport; the nearest is Schiphol (about 20 minutes by car). The train from Amsterdam takes about 15 minutes, making it a popular day trip. The old town is walkable, and cycling is also convenient. The climate is temperate maritime, moderated by the coast, mild and windy.",
+    culture:
+      "Dutch is the main language, with widespread English. Haarlem is quieter and more 'local' than Amsterdam, a favourite weekend destination for the Dutch themselves. Restaurant tipping is not required.",
+    seeAndDo:
+      "St Bavo's Church (with a famous historic organ once played by Mozart); the Frans Hals Museum; the Grote Markt and its historic buildings; nearby Keukenhof Gardens (spring tulips, about 30 minutes away); hiking or cycling in the Holland Dunes national park.",
+    whenAndTips:
+      "During tulip season (April–May), nearby Keukenhof Gardens gets very crowded — book tickets ahead. Haarlem itself suits half a day to a day, often visited as a side trip around Amsterdam.",
+  },
+
+  texel: {
+    identity:
+      "Texel is the largest and most populous of the West Frisian Islands, in the northernmost waters of the Netherlands, with a resident population of about 14,000 — a distinctive Dutch island ecotourism destination, its dunes, mudflats, pasture and lighthouses giving it a landscape quite unlike the mainland.",
+    layout:
+      "Texel is long and narrow: continuous beach and dune on the North Sea side, intertidal mudflat on the Wadden Sea side, and pasture and small villages in the middle. Den Burg is the island's largest village and ferry-terminal town, and a historic lighthouse stands at De Cocksdorp on the northern tip.",
+    gettingAround:
+      "Texel has no scheduled commercial flights; a ferry runs from Den Helder on the mainland (about 20 minutes), with parking and bus connections at the terminal. The island has buses, but the bicycle is the main way to get around, on a well-developed network of cycle paths. The climate is temperate maritime, windier and more changeable than the mainland.",
+    culture:
+      "Dutch is the main language; tourism is an important pillar of the island economy, and English is widespread. Islanders live at a relaxed pace, closely tied to the Wadden Sea and North Sea, and traditional sheep farming and fishing continue today. Restaurant tipping is not required.",
+    seeAndDo:
+      "Cycling or walking the North Sea beaches; the lighthouse and seal sanctuary at De Cocksdorp (you can visit the seal rehabilitation centre); hiking the Wadden Sea mudflats (go with a certified guide — there is risk near high tide); Ecomare (introducing Wadden Sea ecology); the island's traditional villages and windmills.",
+    whenAndTips:
+      "May–September is best, also the island's peak season for mainland visitors — book ferries and lodging ahead. It's windy by the sea — carry a windproof jacket. For Wadden Sea mudflat walks, always know the tide times and never go alone.",
+  },
+
+  rotterdam: {
+    identity:
+      "Rotterdam is the second-largest city in the Netherlands, with a metro area of about 1.2 million, and Europe's largest port. Its centre was almost completely destroyed by bombing in the Second World War, and the postwar rebuild boldly embraced modernist and contemporary architecture, a sharp contrast to Amsterdam's historic streets — earning Rotterdam the nickname 'the architecture capital' of the Netherlands.",
+    layout:
+      "Rebuilt after the war, Rotterdam's centre has an open, modern urban layout, with landmark contemporary buildings such as the Cube Houses, the Erasmus Bridge and the Markthal scattered through it. The Meuse runs through the city, and the riverside districts (such as Rotterdam South) have developed rapidly in recent years. The port area (the Europoort) extends west along the river toward the North Sea.",
+    gettingAround:
+      "Rotterdam The Hague Airport (RTM) is about 8 km from the city, with a bus connection; you can also take the train from Schiphol (about 40 minutes). The city has a metro, trams and buses, and the centre is easy to walk or cycle. The climate is temperate maritime, windier around the port.",
+    culture:
+      "Dutch is the main language, with widespread English. Because of the port economy, Rotterdam is ethnically diverse, with a practical, young character and strong openness to new architecture and contemporary art, a contrast to Amsterdam's more historic feel. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Cube Houses and the Erasmus Bridge; the Markthal (a huge mural under an arched ceiling, with food stalls inside); Rotterdam Zoo; a port cruise around the Europoort; the WWII bombing memorial statue 'The Destroyed City' (a sombre subject); the canal town of Delft (about 20 minutes away).",
+    whenAndTips:
+      "May–September is the most comfortable. The Markthal gets busy at peak dining times (weekend lunches) — go outside those hours if you can. Check schedules ahead for port cruises. Rotterdam is often used as a base for exploring South Holland towns such as Delft and The Hague.",
+  },
+
+  "the-hague": {
+    identity:
+      "The Hague is the seat of the Dutch government and the residence of the Dutch king, with a metro area of about 1.1 million; although not the constitutional capital (that is Amsterdam), it is the Netherlands' de facto political centre, and is also home to the International Court of Justice, the International Criminal Court and other international judicial bodies, earning it the name 'the international city of peace and justice'.",
+    layout:
+      "The Hague's centre is built around the Binnenhof (the seat of the Dutch parliament), surrounded by government institutions and the embassy district. Scheveningen, to the west, is the largest beach resort in the Netherlands, with a long beach and a historic pier. Important museums such as the Mauritshuis cluster in the city centre.",
+    gettingAround:
+      "The Hague has no airport of its own; the nearest is Rotterdam The Hague Airport (about 15 km) or Schiphol (about 50 km). The city has trams and buses, with a direct tram from the centre to Scheveningen beach. The climate is temperate maritime, windier near the coast.",
+    culture:
+      "Dutch is the main language; because of the many international institutions, English and other languages are widespread. The Hague feels relatively formal and international, with many embassies and diplomatic staff. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Binnenhof and the Dutch parliament; the Mauritshuis (Vermeer's 'Girl with a Pearl Earring'); the Peace Palace (seat of the International Court of Justice — viewable from outside, with interior tours by appointment for some slots); Scheveningen beach and pier; Madurodam (a famous miniature-model park of Dutch landmarks).",
+    whenAndTips:
+      "May–September suits beach activities. The Mauritshuis has an exquisite but small collection — avoid weekend peak times. Interior tours of the Peace Palace have limited places and need advance application.",
+  },
+
+  delft: {
+    identity:
+      "Delft is between The Hague and Rotterdam, with a metro area of about 100,000, the hometown of Dutch Golden Age painter Vermeer and the birthplace of Delft Blue (Delftware, blue-and-white glazed pottery); Delft University of Technology is one of the largest technical universities in the Netherlands.",
+    layout:
+      "Delft's old town is small, laced with canals, centred on the Markt square (with the Oude Kerk and Nieuwe Kerk at either end). Delft University's campus is to the south, bringing a young energy to this historic small city.",
+    gettingAround:
+      "Delft has no airport; the nearest is Rotterdam The Hague Airport (about 10 km). The train from Rotterdam or The Hague takes about 10–15 minutes. The old town is walkable, and a bicycle rental is easy too. The climate is temperate maritime, similar to nearby cities.",
+    culture:
+      "Dutch is the main language; the university-town character brings a noticeable student atmosphere, with widespread English. Delft is proud of its local Delftware craft and Vermeer heritage. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Markt square and the Nieuwe Kerk (climb the tower); a Royal Delft pottery workshop tour (see the traditional ceramic craft); the Vermeer Centre; the Delft University of Technology campus; a canal-side walk, taking in the light and atmosphere of Vermeer's paintings of the old town.",
+    whenAndTips:
+      "May–September is the most comfortable. Delft is small — half a day is enough, often a stop on a day trip from The Hague or Rotterdam. Check opening times ahead for the Delftware workshop tour.",
+  },
+
+  leiden: {
+    identity:
+      "Leiden is between Amsterdam and The Hague, with a metro area of about 140,000; founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including the astronomer Kepler and ancestors of Darwin studied or taught, and it is also the birthplace of Rembrandt.",
+    layout:
+      "Leiden's old town is ringed by canals, with the ruins of a hilltop fortress (De Burcht) as the high point overlooking the whole city. Leiden University's buildings and its botanical garden (one of the oldest in Europe) are scattered through the old town, woven into everyday city life.",
+    gettingAround:
+      "Leiden has no airport; the nearest is Schiphol (about 20 km). The train from Amsterdam or The Hague takes about 15–35 minutes. The old town is walkable, and cycling is convenient too. The climate is temperate maritime.",
+    culture:
+      "Dutch is the main language; the university-town character brings a strong academic atmosphere, with very high English proficiency. Leiden people are proud of the city's deep scholarly tradition. Restaurant tipping is not required.",
+    seeAndDo:
+      "Leiden University's old campus and the Hortus Botanicus; the hilltop fortress ruins for the city view; the National Museum of Antiquities (one of the largest archaeology museums in the Netherlands, with Egyptian artefacts); a plaque marking Rembrandt's birthplace; the wall poems along the canals (poems in many languages painted on old-town walls).",
+    whenAndTips:
+      "May–September is the most comfortable; 3 October's 'Leiden's Relief' festival (commemorating the 1574 lifting of the Spanish siege — a sombre historical commemoration) is an important local holiday. Leiden is often a convenient stop between Amsterdam and The Hague.",
+  },
+
+  utrecht: {
+    identity:
+      "Utrecht is the fourth-largest city in the Netherlands, with a metro area of about 360,000, in the geographic centre of the country and its most important rail hub; it is also home to Utrecht University, one of the largest in the Netherlands. The city's history goes back to Roman times, and in the Middle Ages it was the religious centre of the Netherlands.",
+    layout:
+      "Utrecht's old town has a distinctive multi-level canal structure (the Oudegracht, with warehouses converted into restaurants and bars at the lower level and streets above). The Dom Tower (the tallest church tower in the Netherlands) is the city's landmark, separated from the main body of the Dom Church since an 18th-century tornado destroyed the nave — the gap is now a square.",
+    gettingAround:
+      "Utrecht has no airport; the nearest is Schiphol (about 40 km). Utrecht Centraal is the busiest railway station in the Netherlands, about 25 minutes from Amsterdam. The old town is walkable, and cycling is convenient too (one of the highest bicycle-use cities in the Netherlands). The climate is temperate maritime.",
+    culture:
+      "Dutch is the main language; the university-town character brings a relatively young population, with widespread English. Utrecht is often cited as one of the Netherlands' most liveable cities, with a more relaxed pace than Amsterdam. Restaurant tipping is not required.",
+    seeAndDo:
+      "Climbing the Dom Tower for the city view (465 steps); a walk along the Oudegracht, taking in the riverside restaurants and bars; the Centraal Museum; the Rietveld Schröder House (a modernist architectural icon, a World Heritage Site, visit by appointment); an old-town canal boat tour.",
+    whenAndTips:
+      "May–September is the most comfortable. Book a time slot ahead for climbing the Dom Tower. Visits to the Rietveld Schröder House are limited — book online weeks ahead. Utrecht, as the core of the Dutch rail network, is a good base for exploring surrounding cities.",
+  },
+
+  maastricht: {
+    identity:
+      "Maastricht is the capital of Limburg province, with a metro area of about 120,000, in the far south of the Netherlands on the Meuse — one of the oldest cities in the country, an important town since Roman times because it commanded a crossing of the Meuse. The Maastricht Treaty, signed here in 1992, is one of the founding documents of the European Union.",
+    layout:
+      "Maastricht's old town straddles the Meuse, linked by St Servatius Bridge, one of the oldest bridges in the Netherlands. The old town preserves extensive medieval walls and churches, and the Vrijthof is the central square. Sitting near where the Netherlands, Belgium and Germany meet, the city's character blends Dutch, Belgian and German architecture and food.",
+    gettingAround:
+      "Maastricht Aachen Airport (MST) is about 9 km from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 50 minutes). The old town is walkable, and cycling is also an option. The climate is temperate maritime, slightly milder than the north of the Netherlands, and this is the region with the most pronounced relief in the country.",
+    culture:
+      "Dutch is the main language; being close to the Belgian and German borders, French and German are occasionally heard, with widespread English. Maastricht people are proud of a lifestyle closer to Burgundian ease (good food and wine, outdoor café culture), a contrast to the more practical style of the northern Netherlands. Restaurant tipping is not required.",
+    seeAndDo:
+      "St Servatius Bridge and the old town on both banks of the Meuse; Boekhandel Dominicanen (a bookshop converted from a medieval church, often rated one of the world's most beautiful bookshops); the Basilica of Our Lady and St John's Church; the Vrijthof (a hub of outdoor cafés and restaurants); the tunnels of St Pietersberg (prehistoric quarry passages, visit with a tour).",
+    whenAndTips:
+      "May–September is the most comfortable, also a good season for hiking and cycling in Limburg. Boekhandel Dominicanen gets busy in peak season — avoid weekend midday. As a city where the Netherlands, Belgium and Germany meet, a cross-border day trip is possible (check the day's Schengen-area rules).",
+  },
+
+  groningen: {
+    identity:
+      "Groningen is the largest city in the northern Netherlands, with a metro area of about 230,000, the capital of Groningen province and home to the University of Groningen, one of the top universities in the Netherlands; with such a high share of students in its population, it's sometimes called one of the Netherlands' 'youngest' cities.",
+    layout:
+      "Groningen's old town is ringed by a circular canal, with the landmark Martini Tower (a church bell tower) the highest point in the city. The Grote Markt is the centre, surrounded by university buildings, shops and cafés; the city overall is compact and easy to explore on foot or by bike.",
+    gettingAround:
+      "Groningen Airport Eelde (GRQ) is about 10 km from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 35 minutes). The old town is walkable, and the bicycle is the main way locals get around (Groningen is considered one of the Netherlands' most cycling-oriented cities). The climate is temperate maritime, windy given its proximity to the North Sea and Wadden Sea.",
+    culture:
+      "Dutch is the main language; the university-town character brings a high share of young people and lively nightlife, with very high English proficiency. Groningen people are proud of the local cycling culture and the city's student identity. Restaurant tipping is not required.",
+    seeAndDo:
+      "Climbing the Martini Tower for the city view; the Grote Markt and its historic buildings; the Groningen Museum (a striking contemporary building on the water); cycling along the old-town canals; an hour north to Wadden Sea coastal towns or Lauwersmeer National Park.",
+    whenAndTips:
+      "May–September is the most comfortable. Groningen is an ideal base for exploring the northern Netherlands (the Wadden Sea, Friesland). The city suits exploring by bike — rentals are available near the station.",
+  },
+
+  zwolle: {
+    identity:
+      "Zwolle is the capital of Overijssel province, with a metro area of about 130,000, on the IJssel; in the Middle Ages it was an important member of the Hanseatic League (the northern European trading-city alliance), and the old town still keeps a complete star-shaped fortification and walls — the gateway city to Giethoorn and other Overijssel sights.",
+    layout:
+      "Zwolle's old town has a classic star-fort layout, a moat running the whole way around the walls, with streets radiating out from St Michael's Church at the centre. The old town is small and its historic buildings are well preserved, one of the most complete medieval town layouts in the Netherlands.",
+    gettingAround:
+      "Zwolle has no airport; the nearest is Schiphol (about 120 km, 1.5–2 hours by car or train). The train from Amsterdam takes about 1 hour direct. The old town is walkable; reaching nearby sights such as Giethoorn needs a car or a regional bus (about 40 minutes). The climate is temperate maritime.",
+    culture:
+      "Dutch is the main language, with widespread English. Zwolle's pace is more relaxed than the big cities, and locals are proud of the Hanseatic history and the well-preserved old-town layout. Restaurant tipping is not required.",
+    seeAndDo:
+      "St Michael's Church; a walk along the star-shaped walls and moat; the Sassenpoort (one of the surviving medieval city gates); day trips to Giethoorn (the waterborne village) or Weerribben-Wieden National Park (peat-marsh wetland).",
+    whenAndTips:
+      "May–September is the most comfortable, also the best season for a boat trip in Giethoorn. Giethoorn gets busy in peak season (weekends, summer) — go on a weekday or early morning; public transport there is limited, so driving or a tour is more convenient.",
+  },
+
+  // ============ Austria ============
+  "austria-overview": {
+    identity:
+      "Austria sits in Central Europe, covering about 84,000 km² with a population of roughly 9 million. It is a landlocked country, with about 62% of its territory covered by the Alps. The capital, Vienna, was once the seat of the Austro-Hungarian Empire under the Habsburg dynasty and still carries a deep classical-music and coffeehouse tradition.",
+    layout:
+      "Broadly divided into: Vienna (the capital, in the Vienna Basin in the north-east), Tyrol (Innsbruck, an Alpine ski hub), Salzburg state (Salzburg, Mozart's birthplace and gateway to the Salzkammergut lake district), Upper Austria (Linz, an industrial and cultural city on the Danube), Carinthia (Klagenfurt and Villach, the southern lake district), Styria (Graz, Austria's second city), and Vorarlberg (Bregenz, the western exclave on Lake Constance).",
+    gettingAround:
+      "Austria's federal railway (ÖBB) network is dense, with intercity express trains linking the major cities — often more convenient than flying between them. Vienna has an extensive metro and tram network. Driving is on the right; a toll sticker (Vignette) is required on motorways. The climate transitions from temperate continental to Alpine — the mountains are cold and snowy in winter, making Austria an important European ski destination, while summers are mild and good for hiking and lake holidays. Power is 230V, European two-round-pin plug.",
+    culture:
+      "The official language is German; English is widely spoken in tourist areas. Austrians value courtesy and punctuality; restaurants usually include a service charge, and an additional 5–10% tip or rounding up is customary. Coffeehouse culture runs especially deep in Vienna — \"Viennese Coffee House Culture\" was inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Austria has a rich classical-music tradition, with composers such as Mozart, Haydn and Schubert all leaving major marks here.",
+    seeAndDo:
+      "Classical music and historic architecture: Vienna's Schönbrunn Palace, St. Stephen's Cathedral, Salzburg's old town. Alpine landforms: Grossglockner in the Hohe Tauern, the Dachstein glacier, the Krimml Waterfalls. Lake scenery: the Salzkammergut lake district (including Hallstatt), Carinthia's lakes (Wörthersee, Millstätter See).",
+    whenAndTips:
+      "May–September is best for outdoor activities and the lake district; December's Christmas markets are a winter highlight; December–March is peak Alpine ski season. Austria is a Schengen-area member; citizens of most countries follow Schengen rules for short visits — check the Austrian Ministry of Foreign Affairs and current Schengen regulations for specifics.",
+  },
+
+  vienna: {
+    identity:
+      "Vienna is Austria's capital and largest city, with a population of about 1.9 million. It was once the capital of the Austro-Hungarian Empire under the Habsburg dynasty and still carries deep classical-music, coffeehouse and imperial-architecture traditions.",
+    layout:
+      "The Ringstrasse encircles the old-town core, lined with landmarks including the State Opera and the Kunsthistorisches Museum; Schönbrunn Palace, the Habsburgs' summer residence, sits in the south-west of the city; St. Stephen's Cathedral is the geographic and spiritual centre of the old town.",
+    gettingAround:
+      "The airport lies about 18 km south-east of the centre, linked by the City Airport Train (CAT) and metro. Vienna's metro, tram and bus network covers the whole city and is among the most developed public transport systems in Europe. The climate is temperate continental, with mild summers (June–August) and cold winters, often snowy in December. Power is 230V, European two-round-pin plug.",
+    culture:
+      "The official language is German; English is widely spoken in tourist areas. Vienna's coffeehouse culture runs deep — sitting in a café to read, write or socialise is part of the traditional way of life, inscribed on the UNESCO Intangible Cultural Heritage list in 2011. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Schönbrunn Palace and the Hofburg; St. Stephen's Cathedral; the Vienna State Opera (book a classical concert or opera performance); the Kunsthistorisches Museum; a day trip to the Wienerwald.",
+    whenAndTips:
+      "May–September brings the most pleasant weather; December's Christmas markets are atmospheric but cold. Vienna is the main transport hub for exploring the whole of Austria and an ideal destination for classical concerts — book tickets in advance.",
+  },
+
+  salzburg: {
+    identity:
+      "Salzburg is the capital of Salzburg state, with a population of about 150,000. It is the birthplace of the composer Mozart, and its well-preserved Baroque old town was inscribed as a UNESCO World Heritage site in 1997.",
+    layout:
+      "The Salzach River divides the city into the old town and the new town; Hohensalzburg Fortress stands on a hill above the old town overlooking the city; Mozart's birthplace and his residence are important landmarks in the old town.",
+    gettingAround:
+      "The airport lies about 4 km west of the centre. The old town is walkable, and a funicular climbs to Hohensalzburg Fortress. The climate is temperate continental, with mild summers and cold, snowy winters — rainfall is comparatively abundant owing to its proximity to the Alps.",
+    culture:
+      "The official language is German. As Mozart's birthplace, Salzburg is renowned for its classical music festivals — the Salzburg Festival is one of Europe's oldest and most prestigious classical-music festivals. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Hohensalzburg Fortress; Mozart's birthplace and residence; the Cathedral Square; day trips to the Salzkammergut lake district (including Hallstatt) or Liechtensteinklamm.",
+    whenAndTips:
+      "May–September brings the most pleasant weather; during the Salzburg Festival in July–August, visitor numbers and accommodation prices rise noticeably. Salzburg is an ideal gateway to the Salzkammergut lake district and the Alps.",
+  },
+
+  innsbruck: {
+    identity:
+      "Innsbruck is the capital of Tyrol, with a population of about 130,000, set in the middle of the Inn Valley and ringed by the Alps. It has hosted the Winter Olympics twice (1964 and 1976).",
+    layout:
+      "The Golden Roof in the old-town centre is Innsbruck's landmark building; the Karwendel range rises directly north of the old town, with a cable car running straight from the city centre into the mountains; Maria-Theresien-Straße is the old town's main street.",
+    gettingAround:
+      "The airport lies about 4 km west of the centre. The old town is walkable, and several cable car lines connect the city to surrounding ski areas. The climate is Alpine, with cold, snowy winters (peak ski season) and comparatively mild summers good for hiking.",
+    culture:
+      "The official language is German. The Tyrol region preserves a strong Alpine traditional culture, including folk costume, folk music and Alpine pasture traditions. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Golden Roof and old-town streets; the Innsbruck Court Church; the Nordkette cable car (straight up to a Karwendel viewpoint); day trips to the Ötztal Alps or the Zillertal ski areas.",
+    whenAndTips:
+      "December–March is peak ski season; May–September brings mild weather good for hiking and outdoor activities. Innsbruck is an ideal base for exploring the Alps of Tyrol.",
+  },
+
+  graz: {
+    identity:
+      "Graz is the capital of Styria and Austria's second-largest city, with a population of about 290,000, set on the Mur River; its old town was inscribed as a UNESCO World Heritage site in 2000.",
+    layout:
+      "Schlossberg (Castle Hill) is the city's central high point, its clock tower a Graz landmark; the old town preserves Renaissance and Baroque architecture; the Kunsthaus Graz sits on the banks of the Mur, known for its futuristic architecture.",
+    gettingAround:
+      "The airport lies about 10 km south of the centre. The city's tram and bus network is well developed, and the old town is walkable. The climate is temperate continental, with mild summers and cold winters — rainfall is more evenly distributed than in Tyrol.",
+    culture:
+      "The official language is German. Graz is an important university city in Austria with a lively youth culture. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Schlossberg and its clock tower; the old-town streets of Graz; the Kunsthaus Graz; a walk along the Mur; day trips to Styria's wine-growing region.",
+    whenAndTips:
+      "May–September brings the most pleasant weather. Graz is an ideal base for exploring Styria and the floodplain forests of the upper Mur.",
+  },
+
+  linz: {
+    identity:
+      "Linz is the capital of Upper Austria and Austria's third-largest city, with a population of about 210,000, set on the Danube — an important industrial and cultural city.",
+    layout:
+      "The Hauptplatz (main square) is Linz's historic centre, ringed by Baroque buildings; Linz Cathedral (Neuer Dom) is one of Austria's largest churches; the Ars Electronica Center sits on the Danube, a landmark of Linz's identity as a \"city of media arts.\"",
+    gettingAround:
+      "The airport lies about 12 km south-west of the centre. The city's tram and bus network is well developed, and the old town is walkable. The climate is temperate continental, with mild summers and cold winters — typical of the Danube corridor.",
+    culture:
+      "The official language is German. Linz is an important centre for electronic and media art in Austria, and its annual Ars Electronica Festival is internationally known. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Hauptplatz and Linz Castle; the Ars Electronica Center; Linz Cathedral; a Danube river cruise; day trips to the Wachau or Hallstatt.",
+    whenAndTips:
+      "May–September brings the most pleasant weather. Linz is an important stop for exploring the Wachau and the Salzkammergut lake district.",
+  },
+
+  klagenfurt: {
+    identity:
+      "Klagenfurt is the capital of Carinthia, with a population of about 100,000, set at the eastern end of Wörthersee — an important lake-resort city in southern Austria.",
+    layout:
+      "The Neuer Platz in the old-town centre is marked by the Lindwurm dragon fountain; the old town preserves Renaissance-era architecture; the Europapark stretches along the eastern shore of Wörthersee, the city's main recreational area.",
+    gettingAround:
+      "The airport lies about 3 km north-west of the centre. The old town is walkable; buses or bicycles are recommended for reaching the Wörthersee shoreline. The climate is temperate continental, with Carinthia's comparatively warm microclimate giving it higher summer temperatures than much of the rest of Austria.",
+    culture:
+      "The official language is German. Carinthia's comparatively warm summer climate has made it a favoured summer and lake-resort destination for Austrians. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Lindwurm fountain and Neuer Platz; the Europapark; the Wörthersee lakeside resort area; day trips to the Millstätter See or Villach.",
+    whenAndTips:
+      "May–September brings the most pleasant weather and is peak season for swimming and water activities on Wörthersee. Klagenfurt is an ideal base for exploring Carinthia's lake district.",
+  },
+
+  villach: {
+    identity:
+      "Villach is Carinthia's second-largest city, with a population of about 60,000, set on the Drava River near the borders with Italy and Slovenia — an important transport hub in southern Austria.",
+    layout:
+      "The Hauptplatz in the old-town centre preserves its traditional architectural character; the Drava flows through the city, its banks a recreational area; several lakes on the southern flank of the Alps ring the surrounding area.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Klagenfurt Airport (about 40 km). The old town is walkable. The climate is temperate continental, comparatively mild owing to its position on the southern flank of the Alps.",
+    culture:
+      "The official language is German. Villach's proximity to the Italian and Slovenian borders gives it a somewhat multicultural character. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The old-town Hauptplatz; a walk along the Drava; day trips to the Warmbad Villach thermal spa resort, the Carnic Alps, or the Plöcken Pass on the Italian border.",
+    whenAndTips:
+      "May–September brings the most pleasant weather. Villach is an ideal base for exploring southern Carinthia and the Carnic Alps.",
+  },
+
+  hallstatt: {
+    identity:
+      "Hallstatt is a lakeside village in the Salzkammergut region of Upper Austria, with a population of only about 780, built against the foot of the Dachstein; it was inscribed as a UNESCO World Heritage cultural landscape in 1997.",
+    layout:
+      "The village is built along the narrow, sloping eastern shore of the Hallstättersee, its coloured houses stacked in tiers; the Marktplatz is the village centre; a funicular runs from the village up to the salt-mine visitor area on the mountain above.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Salzburg Airport (about 70 km). The village is small and best explored on foot; in peak season it gets very crowded, so plan your visit timing carefully. The climate is Alpine, with mild summers, cold winters and consistently high humidity around the lake.",
+    culture:
+      "The official language is German. Hallstatt has become an extremely popular photo destination in recent years thanks to its lake-and-mountain scenery, and the community is working out how to balance visitor management with residents' daily life. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Marktplatz and lakeside promenade; the salt-mine funicular and tour (one of Europe's oldest salt-mining sites); the Bone House (Beinhaus); the viewpoint across the lake for the classic Hallstatt panorama.",
+    whenAndTips:
+      "May–September brings the most pleasant weather; peak season (especially July–August) is extremely crowded — visit early morning or evening to avoid the busiest times. Some tourist facilities scale back in winter.",
+  },
+
+  "kitzbuhel-city": {
+    identity:
+      "Kitzbühel is a well-known Alpine ski town in Tyrol, with a population of about 8,000, set among the Kitzbühel Alps and internationally famous for the Hahnenkamm alpine skiing World Cup race held each January.",
+    layout:
+      "The old-town centre preserves a medieval street layout and colourful houses, one of the better-preserved Alpine towns in Europe; cable car stations around the town connect directly to the ski areas.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Innsbruck Airport (about 80 km). The town is best explored on foot, with cable cars and shuttle buses linking the ski areas. The climate is Alpine, with cold, snowy winters (peak ski season) and comparatively mild summers good for hiking and mountain biking.",
+    culture:
+      "The official language is German. Kitzbühel has a long ski history and was one of the first Alpine regions to develop modern skiing. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The historic old-town streets; the Hahnenkamm race course (open to visitors outside race periods); cable car rides for mountain views; day hikes in the Kitzbühel Alps.",
+    whenAndTips:
+      "December–March is peak ski season, with visitor numbers and accommodation prices rising sharply during the Hahnenkamm World Cup in January; June–September is peak season for summer hiking and mountain biking.",
+  },
+
+  bregenz: {
+    identity:
+      "Bregenz is the capital of Vorarlberg, with a population of about 30,000, set on the eastern shore of Lake Constance — Austria's westernmost city, facing Switzerland and Germany across the lake.",
+    layout:
+      "The old town sits on a hill and preserves medieval walls and streets; the newer town extends along the lakeshore, where the floating stage on the lake is the iconic venue of the Bregenz Festival; a cable car up the Pfänder offers a panoramic view of Lake Constance.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Friedrichshafen Airport in Germany (about 25 km). City buses cover the main districts, and the old town is walkable. The climate is temperate maritime, moderated by Lake Constance — milder winters and cooler summers than Austria's interior.",
+    culture:
+      "The official language is German. Vorarlberg's location bordering Switzerland and Germany gives its dialect and culture some Alemannic influence. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The lake stage (the main venue of the Bregenz Festival, held each July–August); the old-town walls and streets; the Pfänder cable car for views; a Lake Constance cruise (with views of the Swiss and German shores).",
+    whenAndTips:
+      "July–August, during the Bregenz Festival, is the liveliest time — book accommodation well ahead. May–September is best for activities along Lake Constance.",
+  },
+
+  "zell-am-see": {
+    identity:
+      "Zell am See is a lakeside town in the Pinzgau region of Salzburg state, with a population of about 10,000, set on the shore of the Zeller See at the foot of the Kitzsteinhorn — an Alpine resort offering both lake and glacier scenery.",
+    layout:
+      "The old-town centre preserves a medieval street layout along the western shore of the Zeller See; cable car stations connect the town to the Kitzsteinhorn ski area, where the summit holds snow year-round for skiing in every season.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Salzburg Airport (about 80 km). The town is best explored on foot, with bicycles available for a loop around the lake. The climate is Alpine, with cold, snowy winters and mild summers when the lake is warm enough for swimming.",
+    culture:
+      "The official language is German. Zell am See is one of the few Austrian resorts offering both lakeside summer holidays and high-Alpine skiing in one place. Restaurants usually include a service charge, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The lakeside path around the Zeller See and swimming; the Kitzsteinhorn cable car (year-round snow at the summit, with views over the Hohe Tauern peaks); day trips to the Krimml Waterfalls or Hohe Tauern National Park.",
+    whenAndTips:
+      "December–April is peak ski season (the Kitzsteinhorn's year-round snow extends the season); June–September is peak season for lakeside summer activities and hiking — one of Austria's rare destinations with both a winter ski season and a summer lake season.",
   },
 };

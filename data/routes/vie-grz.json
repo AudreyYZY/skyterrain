@@ -1,0 +1,18 @@
+{
+  "id": "vie-grz",
+  "name": "维也纳 — 格拉茨",
+  "nameEn": "Vienna — Graz",
+  "description": "维也纳盆地 · 维也纳森林 · 拉克斯—施内山",
+  "descriptionEn": "Vienna Basin · Wienerwald · Rax-Schneeberg Group",
+  "depCountry": "austria",
+  "arrCountry": "austria",
+  "flight": { "airline": "奥地利航空", "airlineEn": "Austrian Airlines", "flightNo": "OS963", "aircraft": "Embraer E195", "depIata": "VIE", "arrIata": "GRZ", "durationMin": 40 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "vienna", "name": "维也纳", "nameEn": "Vienna", "lat": 48.1103, "lon": 16.5697, "airport": true },
+    { "kind": "terrain", "terrainId": "vienna-basin" },
+    { "kind": "terrain", "terrainId": "wienerwald" },
+    { "kind": "terrain", "terrainId": "rax-schneeberg" },
+    { "kind": "city", "id": "graz", "name": "格拉茨", "nameEn": "Graz", "lat": 46.9911, "lon": 15.4396, "airport": true }
+  ]
+}

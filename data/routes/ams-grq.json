@@ -1,0 +1,18 @@
+{
+  "id": "ams-grq",
+  "name": "阿姆斯特丹 — 格罗宁根",
+  "nameEn": "Amsterdam — Groningen",
+  "description": "艾瑟尔湖 · 艾瑟尔河 · 劳沃斯湖",
+  "descriptionEn": "IJsselmeer · IJssel River · Lauwersmeer",
+  "depCountry": "netherlands",
+  "arrCountry": "netherlands",
+  "flight": { "airline": "荷兰皇家航空", "airlineEn": "KLM Cityhopper", "flightNo": "KL1256", "aircraft": "Embraer E175", "depIata": "AMS", "arrIata": "GRQ", "durationMin": 40 },
+  "cruiseHeight": 5500,
+  "waypoints": [
+    { "kind": "city", "id": "ams", "name": "阿姆斯特丹", "nameEn": "Amsterdam", "lat": 52.3105, "lon": 4.7683, "airport": true },
+    { "kind": "terrain", "terrainId": "ijsselmeer" },
+    { "kind": "terrain", "terrainId": "ijssel-river" },
+    { "kind": "terrain", "terrainId": "lauwersmeer" },
+    { "kind": "city", "id": "grq", "name": "格罗宁根", "nameEn": "Groningen", "lat": 53.1197, "lon": 6.5794, "airport": true }
+  ]
+}
