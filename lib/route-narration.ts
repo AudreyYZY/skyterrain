@@ -3372,6 +3372,108 @@ export const ROUTE_NARRATION: Record<
       "Helsinki to Mariehamn is about 55 minutes, same time zone, operated by Finnair (ATR 72-500) as one of Finland's domestic routes; a ferry is another option. Mariehamn Airport is about 3 km from the centre. Mariehamn is an ideal starting point for exploring the Åland Islands. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
+
+  "waw-krk": {
+    study: {
+    "zh-CN":
+      "华沙飞克拉科夫，是波兰国内客流量最大的航线，每日往返多达6班，连接首都与历史古都。飞机离开华沙后向南飞行，中途掠过圣十字山——波兰境内地质年代最古老的山脉之一，基岩可追溯至约5亿年前的古生代，历经数亿年反复的构造运动与风化夷平已成为低矮浑圆的丘状山地，山坡上散布着侵蚀残留的石英岩碎块堆（当地称“戈乌博尔基”），与波兰其他年轻山脉的陡峭轮廓形成鲜明对比。" +
+      "越过圣十字山后，飞机继续向南飞行，逐渐进入小波兰地区、地势开始向喀尔巴阡山脉过渡，最终降落在克拉科夫——1038至1596年间波兰王国的首都，也是瓦维尔城堡所在地，1978年老城与城堡列入首批联合国教科文组织世界遗产名录。",
+    "en-US":
+      "Flying from Warsaw to Kraków is Poland's busiest domestic route, linking the capital with the historic former capital. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — one of the geologically oldest ranges in Poland, its bedrock dating to the Palaeozoic around 500 million years ago, worn by hundreds of millions of years of weathering into today's low, rounded hill form, its slopes scattered with eroded quartzite debris." +
+      " Past the Świętokrzyskie range, the flight continues south into Lesser Poland, landing in Kraków, the historic former capital and home to Wawel Castle.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到克拉科夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约2.5小时的城际火车。克拉科夫机场离市区约11公里。克拉科夫是探索小波兰地区（扎科帕内、维利奇卡盐矿）的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Kraków is about 55 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190, six round trips daily) as one of Poland's domestic routes; an intercity train (about 2.5 hours) is another option. Kraków Airport is about 11 km from the centre. Kraków is an ideal gateway for exploring Lesser Poland (Zakopane, the Wieliczka Salt Mine). Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-gdn": {
+    study: {
+    "zh-CN":
+      "华沙飞格但斯克，是一趟连接波兰首都与波罗的海沿岸港口城市的航线。飞机离开华沙后向北飞行，脚下的地貌逐渐从中部平原过渡为维斯瓦河下游流域，维斯瓦河是波兰境内最长的河流，发源于西南部喀尔巴阡山脉北麓，全程贯穿波兰、最终在格但斯克附近注入波罗的海。" +
+      "临近格但斯克降落前，脚下展开维斯瓦三角洲低地——维斯瓦河入海口处的冲积三角洲平原，部分区域海拔低于海平面，历史上经中世纪荷兰移民带来的堤坝排水技术围垦而成，是波兰境内地势最低的区域，河网密布、以纵横的排水渠道著称，飞机随后降落在格但斯克——历史上汉萨同盟重要的贸易城市，也是二战爆发的第一枪打响之地。",
+    "en-US":
+      "Flying from Warsaw to Gdańsk links Poland's capital with its Baltic coast port city. After leaving Warsaw the flight heads north, the landscape below gradually shifting from the central plain into the lower Vistula river basin." +
+      " Approaching Gdańsk, Żuławy Wiślane comes into view below — the alluvial delta plain at the Vistula's mouth, part of it lying below sea level, historically reclaimed using dike-and-drainage technology introduced by medieval settlers from the Low Countries, the lowest-lying region in Poland — before the flight lands in Gdańsk, a historically important Hanseatic League trading city.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到格但斯克飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每周约40班），也可选择约2.5小时的城际火车。格但斯克机场离市区约12公里。格但斯克是探索波罗的海沿岸海尔半岛与斯沃文斯基沙丘的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Gdańsk is about 50 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190, about 40 flights weekly) as one of Poland's domestic routes; an intercity train (about 2.5 hours) is another option. Gdańsk Airport is about 12 km from the centre. Gdańsk is an ideal gateway for exploring the Hel Peninsula and the Słowiński dunes along the Baltic coast. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-wro": {
+    study: {
+    "zh-CN":
+      "华沙飞弗罗茨瓦夫，是一趟横跨波兰中西部、连接首都与西里西亚核心城市的航线。飞机离开华沙后向西飞行，脚下展开大波兰低地开阔平坦的地貌——中欧平原位于波兰境内的主体部分，由末次冰期冰川堆积物构成，地表覆盖厚层冰碛物与冰水沉积物，大片规整的农田一望无际，是波兰面积最大的农业区，也是波兰主要的小麦与甜菜产区。" +
+      "越过大波兰低地后，飞机继续向西南飞行，逐渐进入奥得河谷地，最终降落在弗罗茨瓦夫——奥得河畔以百余座桥梁与街头小矮人雕塑闻名的西里西亚核心城市，历史上曾多次易主，如今是波兰重要的工业与学术中心之一。",
+    "en-US":
+      "Flying from Warsaw to Wrocław crosses west-central Poland, linking the capital with the core city of Silesia. After leaving Warsaw the flight heads west, the open, flat landform of the Great Polish Lowland unfolding below — the main portion of the Central European Plain lying within Poland, built of last-glacial ice-sheet deposits, its extensive, regular farmland stretching to the horizon as Poland's largest agricultural region." +
+      " Past the Great Polish Lowland, the flight continues south-west, landing in Wrocław, the core city of Silesia on the Oder, known for its hundred-plus bridges and its street-side dwarf statues.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到弗罗茨瓦夫飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约4.5小时的城际火车。弗罗茨瓦夫机场离市区约10公里。弗罗茨瓦夫是探索西里西亚地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Wrocław is about 50 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190, six round trips daily) as one of Poland's domestic routes; an intercity train (about 4.5 hours) is another option. Wrocław Airport is about 10 km from the centre. Wrocław is an ideal gateway for exploring the Silesia region. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-poz": {
+    study: {
+    "zh-CN":
+      "华沙飞波兹南，是一趟连接波兰首都与最古老城市之一的短途航线。起飞后不久，脚下即展开大波兰低地开阔平坦的地貌——由末次冰期冰川堆积物构成的平原，地表保留有大量冰川作用形成的锅状凹地小湖，大片农田与零星分布的森林、湖泊交织，是波兰境内地势最为平坦开阔的区域。" +
+      "飞机继续向西飞行，最终降落在波兹南——瓦尔塔河畔的古老城市，波兰最早的行政与宗教中心之一，坐落于这片开阔低地之上，如今是波兰重要的会展与工业城市。",
+    "en-US":
+      "Flying from Warsaw to Poznań is a short hop linking the capital with one of Poland's oldest cities. Soon after take-off, the open, flat landform of the Great Polish Lowland unfolds below — a plain built of last-glacial ice-sheet deposits, extensive farmland interwoven with scattered forest and lakes, the flattest, most open region within Poland." +
+      " The flight continues west, landing in Poznań, an ancient city that was historically one of the political centres of the early Polish state, built on this open lowland.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到波兹南飞约39分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约2.5小时的城际火车。波兹南机场离市区约6公里。波兹南是探索大波兰低地地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Poznań is about 39 minutes, same time zone, operated by LOT Polish Airlines (Embraer 175) as one of Poland's domestic routes; an intercity train (about 2.5 hours) is another option. Poznań Airport is about 6 km from the centre. Poznań is an ideal gateway for exploring the Great Polish Lowland region. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-rze": {
+    study: {
+    "zh-CN":
+      "华沙飞热舒夫，是一趟飞往波兰东南部、探索别什恰迪山脉的门户航线。飞机离开华沙后向南飞行，中途掠过圣十字山——波兰境内地质年代最古老的山脉，基岩可追溯至古生代，历经数亿年风化夷平已成为低矮浑圆的丘状山地，是欧洲少数保留有古生代原始地貌痕迹的山地之一。" +
+      "越过圣十字山后，飞机继续向东南飞行，逐渐进入小波兰东部地区、地势向喀尔巴阡山前地带过渡，最终降落在热舒夫——波兰重要的航空工业中心，因此得名“波兰航空谷”，机场附近设有航空博物馆记录当地航空制造历史。",
+    "en-US":
+      "Flying from Warsaw to Rzeszów is a gateway route to south-eastern Poland and the Bieszczady Mountains. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — the geologically oldest range in Poland, its bedrock dating to the Palaeozoic, worn by hundreds of millions of years of weathering into today's low, rounded hill form." +
+      " Past the Świętokrzyskie range, the flight continues south-east into the eastern part of Lesser Poland, landing in Rzeszów, an important Polish aerospace-industry centre nicknamed \"Aviation Valley.\"",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到热舒夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型），也可选择约3小时的城际火车。热舒夫—亚西翁卡机场离市区约10公里。热舒夫是探索别什恰迪山脉波沃尼纳草甸的便捷门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Rzeszów is about 55 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190) as one of Poland's domestic routes; an intercity train (about 3 hours) is another option. Rzeszów-Jasionka Airport is about 10 km from the centre. Rzeszów is a convenient gateway for the połoniny meadows of the Bieszczady Mountains. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-szz": {
+    study: {
+    "zh-CN":
+      "华沙飞什切青，是一趟横跨波兰全境、抵达西北部奥得河口港口城市的航线，也是波兰境内飞行距离最长的国内航线之一。飞机离开华沙后向西北飞行，脚下持续展开大波兰低地开阔平坦的地貌，大片农田与零星分布的湖泊、森林一望无际。" +
+      "飞机继续向西北飞行，逐渐接近波兰与德国边境，什切青潟湖与奥得河口的水网在地平线上依稀可见，最终降落在什切青——紧邻德国边境、坐落于奥得河口的重要港口与工业城市，波兰海军主要基地之一，也是波兰通往波罗的海的重要出海口。",
+    "en-US":
+      "Flying from Warsaw to Szczecin spans the length of Poland to reach the port city at the mouth of the Oder in the north-west. After leaving Warsaw the flight heads north-west, the open, flat landform of the Great Polish Lowland continuing below it, extensive farmland stretching to the horizon." +
+      " The flight continues north-west, gradually approaching the Poland-Germany border, before landing in Szczecin, an important port and industrial city at the mouth of the Oder, right on the German border.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到什切青飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约6.5小时的城际火车。什切青—戈萊尼乌夫机场离市区约45公里。什切青是探索沃林岛国家公园的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Szczecin is about 50 minutes, same time zone, operated by LOT Polish Airlines (Embraer 175) as one of Poland's domestic routes; an intercity train (about 6.5 hours) is another option. Szczecin-Goleniów Airport is about 45 km from the centre. Szczecin is an ideal gateway for exploring Wolin National Park. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

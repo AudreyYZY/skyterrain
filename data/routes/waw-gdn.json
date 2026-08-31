@@ -1,0 +1,16 @@
+{
+  "id": "waw-gdn",
+  "name": "华沙 — 格但斯克",
+  "nameEn": "Warsaw — Gdańsk",
+  "description": "维斯瓦三角洲低地",
+  "descriptionEn": "Żuławy Wiślane",
+  "depCountry": "poland",
+  "arrCountry": "poland",
+  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3839", "aircraft": "Embraer 190", "depIata": "WAW", "arrIata": "GDN", "durationMin": 50 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
+    { "kind": "terrain", "terrainId": "zulawy-wislane" },
+    { "kind": "city", "id": "gdn", "name": "格但斯克", "nameEn": "Gdańsk", "lat": 54.3776, "lon": 18.4662, "airport": true }
+  ]
+}

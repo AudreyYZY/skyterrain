@@ -4601,4 +4601,174 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September is the most pleasant season and also peak time for water activities on the lake; plan a day's cycling or hiking loop around the lake to fully experience the scenery of the Upper Sûre Nature Park.",
   },
+
+  // ============ Poland ============
+  "poland-overview": {
+    identity:
+      "Poland sits in Central Europe, covering about 313,000 km² with the fifth-largest population in the EU (about 38 million); it borders the Baltic Sea to the north and the Carpathians to the south, its terrain gradually rising from north to south, and is an important economic and cultural hub of Eastern Europe.",
+    layout:
+      "Poland can be divided roughly into: Mazovia (Warsaw and its surroundings, the political centre), Lesser Poland/Małopolska (Kraków and Zakopane, the gateway to the Carpathians), Greater Poland and Silesia (Poznań and Wrocław, the western plains and industrial belt), Pomerania (Gdańsk, Szczecin and Toruń, along the Baltic coast), and Warmia-Masuria and Podlasie (Olsztyn and Białystok, the north-eastern lake district and forests).",
+    gettingAround:
+      "Warsaw Chopin Airport is the main international gateway; domestic flights are hubbed through Warsaw across about 30 routes nationwide, and the rail network covers the main cities. Driving is on the right. The climate is temperate continental; the southern mountains have cold, snowy winters, while the northern coast is comparatively mild. Restaurant bills typically already include service, with an additional 5–10% tip customary. The voltage is 230V with EU-style two-round-pin plugs.",
+    culture:
+      "The official language is Polish, with higher English proficiency among younger people and in tourist areas. Poles place strong value on Catholic tradition and family, and the pace of society is comparatively measured and reserved. Restaurant bills typically already include service, with an additional 5–10% tip customary or rounding up.",
+    seeAndDo:
+      "Natural landforms: the Tatra Mountains and Zakopane, rafting the Dunajec River Gorge, the Masurian Lake District, the Słowiński Moving Dunes, Białowieża primeval forest (a World Heritage Site). Heritage and culture: Kraków's old town and Wawel Castle (a World Heritage Site), Warsaw's old town (a World Heritage Site), the Wieliczka Salt Mine (a World Heritage Site), the Auschwitz-Birkenau Memorial and Museum.",
+    whenAndTips:
+      "May–September is the most pleasant season and also peak time for exploring the Tatras and the Masurian Lake District; domestic flights cover the country well and are worth using for cross-regional trips, while north-south and east-west rail journeys typically take 3–6 hours.",
+  },
+  warsaw: {
+    identity:
+      "Warsaw is Poland's capital and largest city, with a population of about 1.8 million, on the Vistula. Severely damaged during the Second World War, the old town was rebuilt to its original appearance and inscribed on the World Heritage List in 1980.",
+    layout:
+      "The old town sits on high ground on the Vistula's west bank, its rebuilt medieval street layout and colourful terraced houses well preserved; the newer districts extend outward from the old town, while the Praga district on the east bank retains more original pre-war buildings.",
+    gettingAround:
+      "Chopin Airport is about 10 km from the centre, with train and metro links; the city has an extensive metro and tram network. The climate is temperate continental, cold in winter and mild in summer.",
+    culture:
+      "The official language is Polish, with higher English proficiency among younger people. Warsaw was rebuilt to its pre-war appearance after being almost entirely levelled during the Second World War — the reconstruction itself is a symbol of Polish national resilience. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Old Town Market Square and Royal Castle (rebuilt to its original appearance after the war, a World Heritage Site); Łazienki Park (the Chopin Monument); the Warsaw Rising Museum; a walk along the Vistula riverside.",
+    whenAndTips:
+      "May–September is the most pleasant season; the old-town core is walkable, and it's worth setting aside half a day specifically for the Warsaw Rising Museum to understand the city's wartime history in depth.",
+  },
+  krakow: {
+    identity:
+      "Kraków is Poland's historic former capital and second-largest city, with a population of about 800,000; it served as the capital of the Kingdom of Poland from 1038 to 1596, and Wawel Castle and the old town were among the first sites inscribed on the World Heritage List in 1978.",
+    layout:
+      "The old town is centred on the Main Market Square, with Wawel Castle standing on high ground beside the Vistula overlooking the whole city; the Kazimierz district preserves a historic Jewish quarter.",
+    gettingAround:
+      "Kraków Airport is about 11 km from the centre, with a train link; the old town is walkable, and the city has an extensive tram network. The climate is temperate continental.",
+    culture:
+      "The official language is Polish, with higher English proficiency given the city's importance for tourism and its universities. Kraków escaped major destruction in the Second World War and so retains an intact medieval city layout, making it one of the culturally and historically richest cities in Poland. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Wawel Castle and Cathedral (the coronation and burial site of Polish monarchs); the Main Market Square and St Mary's Basilica; the historic Kazimierz district. Day trips to the Wieliczka Salt Mine (a World Heritage Site) and the Auschwitz-Birkenau Memorial nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season; Kraków is an ideal gateway for exploring Lesser Poland (Zakopane, Wieliczka) — plan at least two to three days for a deep dive into the old town and nearby sights.",
+  },
+  zakopane: {
+    identity:
+      "Zakopane is a mountain town at the foot of the northern Tatras in southern Poland, with a population of about 27,000, known as Poland's \"winter capital\" and the traditional gateway to Tatra National Park.",
+    layout:
+      "The town is built along a valley at the foot of the Tatras, with Krupówki Street the liveliest pedestrian shopping street, and several cable-car stations linking the town to surrounding peaks.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Kraków Airport (about 100 km); from Kraków the train or bus takes about 2 hours. The town itself is walkable; reaching the mountains requires a car or shuttle bus. The climate is temperate mountain, cold and snowy in winter, cool in summer.",
+    culture:
+      "The official language is Polish. The Gorals of Zakopane and the surrounding area preserve a distinctive highland folk costume, timber architecture and folk-music tradition known as Goral culture. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Kasprowy Wierch cable car (overlooking the Tatra peaks); Krupówki pedestrian street; the Goral timber-architecture quarter; hiking in Tatra National Park (Rysy, Morskie Oko lake).",
+    whenAndTips:
+      "December–March is peak ski season, June–September is peak hiking season; the cable car and popular trails get busy in peak season, so an early start is recommended.",
+  },
+  rzeszow: {
+    identity:
+      "Rzeszów is a city in Lesser Poland in south-eastern Poland, with a population of about 196,000, the gateway for exploring the Bieszczady Mountains and an important Polish aerospace-industry centre.",
+    layout:
+      "The old-town centre preserves a Renaissance-style market square, while the outskirts have developed in recent years into an important Polish aerospace-industry cluster, earning the nickname \"Aviation Valley.\"",
+    gettingAround:
+      "Rzeszów-Jasionka Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 3 hours. The old town is walkable. The climate is temperate continental.",
+    culture:
+      "The official language is Polish. Rzeszów is an important regional centre in south-eastern Poland, and its growing aerospace industry has drawn many young technical professionals. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Rzeszów Market Square and the underground tourist route (16th-century cellar remains); the Podkarpackie Aviation Museum near the airport. Hiking the Bieszczady Mountains nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season; Rzeszów is a convenient gateway for the połoniny meadows of the Bieszczady Mountains — plan at least one to two days for mountain hiking.",
+  },
+  wroclaw: {
+    identity:
+      "Wrocław is the core city of Silesia in south-western Poland, with a population of about 640,000, on the Oder, known for its hundred-plus bridges and the small bronze \"Wrocław dwarf\" statues found throughout the city.",
+    layout:
+      "The old town is built on several islands formed by the Oder and its tributaries, with the Market Square at its core and Ostrów Tumski (Cathedral Island) preserving a cluster of medieval religious buildings.",
+    gettingAround:
+      "Wrocław Airport is about 10 km from the centre, reached by bus; from Warsaw the train takes about 4.5 hours. The old town is walkable, with numerous bridges over the river. The climate is temperate continental.",
+    culture:
+      "The official language is Polish. Wrocław has historically been governed by several different states, and this blended history has given the city a distinctive architectural character. Hundreds of small bronze dwarf statues scattered through the streets have become an iconic city symbol. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Market Square and Old Town Hall; Ostrów Tumski (Cathedral Island); the Centennial Hall (a World Heritage Site, an early-20th-century reinforced-concrete landmark); dwarf-statue hunting through the streets; a boat trip on the Oder.",
+    whenAndTips:
+      "May–September is the most pleasant season; Wrocław's extensive waterways make a river boat trip a classic way to take in the cityscape.",
+  },
+  poznan: {
+    identity:
+      "Poznań is the core city of the Greater Poland region in western Poland, with a population of about 540,000, one of Poland's oldest cities and historically one of the political centres of the early Polish state.",
+    layout:
+      "The old town is centred on the Old Market Square, with the Renaissance-style town hall standing at its heart, and Cathedral Island preserving the remains of Poland's earliest church.",
+    gettingAround:
+      "Poznań-Ławica Airport is about 6 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
+    culture:
+      "The official language is Polish. Poznań is an important Polish trade-fair and commercial city, and locals are known for their practical, efficient work ethic. A mechanical goat display at the Old Market town hall performs daily at noon. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Old Market Square and Renaissance town hall (the noontime mechanical goat display); Cathedral Island (the remains of Poland's earliest church); the ruins of Poznań's fortress defences.",
+    whenAndTips:
+      "May–September is the most pleasant season; Poznań is an ideal gateway for exploring the Great Polish Lowland region, with the old-town core walkable to cover the main sights.",
+  },
+  gdansk: {
+    identity:
+      "Gdańsk is the core port city of Poland's Baltic coast, with a population of about 470,000, forming the \"Tri-City\" together with Sopot and Gdynia; it was historically an important Hanseatic League trading city.",
+    layout:
+      "The old town is built along the Motława River, with Long Street and Long Market forming its historic axis; historic city gates such as the Green Gate and Golden Gate survive intact, and the port district preserves historic harbour cranes.",
+    gettingAround:
+      "Gdańsk Lech Wałęsa Airport is about 12 km from the centre, with bus and train links; from Warsaw the train takes about 2.5 hours. The old town is walkable; reaching the Hel Peninsula requires a car or train. The climate is temperate maritime, comparatively mild along the coast.",
+    culture:
+      "The official language is Polish. Gdańsk was the birthplace of the 1980 Solidarity trade-union movement, an event widely regarded as one of the important beginnings of the political transformations across Eastern Europe. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Long Street and Long Market historic district; St Mary's Church (one of the largest brick churches in Europe); the European Solidarity Centre museum; the historic harbour cranes. Day trips to the Hel Peninsula or the Słowiński Moving Dunes nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season and also peak time for Baltic seaside holidays; Gdańsk is a convenient gateway for exploring the Hel Peninsula and the Słowiński dunes.",
+  },
+  szczecin: {
+    identity:
+      "Szczecin is a port city at the mouth of the Oder in north-western Poland, with a population of about 390,000, right on the German border and an important Polish seaport and industrial city.",
+    layout:
+      "The old town is built along a tributary of the Oder, with Ducal Castle of Pomerania standing on high ground; the port district extends along the Oder, and the city holds one of the largest urban green-space systems in Poland.",
+    gettingAround:
+      "Szczecin-Goleniów Airport is about 45 km from the centre, reached by bus; from Warsaw the train takes about 6.5 hours, or about 1.5 hours from Berlin. The old town is walkable. The climate is temperate maritime.",
+    culture:
+      "The official language is Polish; given its proximity to the German border, German is also usable in some commercial settings. Szczecin was historically under German administration for a long period, and its architecture blends German and Polish cultural influences. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Ducal Castle of Pomerania; the Hakenterrasse (Chrobry Embankment, overlooking the Oder port); the old town hall. Day trips to Wolin National Park nearby to see the sea cliffs and bison reserve.",
+    whenAndTips:
+      "May–September is the most pleasant season; sitting right on the Poland-Germany border, Szczecin is a convenient starting point for a cross-border day trip and an ideal gateway to Wolin Island.",
+  },
+  torun: {
+    identity:
+      "Toruń is a historic town on the Vistula in north-central Poland, with a population of about 196,000, the birthplace of astronomer Nicolaus Copernicus; its intact medieval old town was inscribed on the World Heritage List in 1997.",
+    layout:
+      "The old town is built along the Vistula's northern bank, densely packed with Gothic brick buildings, with the Copernicus House museum and the old town hall as its core landmarks.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Bydgoszcz Airport (about 50 km); from Warsaw the train takes about 2.5 hours. The old town is walkable. The climate is temperate continental.",
+    culture:
+      "The official language is Polish. Toruń is famous for its gingerbread-making tradition, and the local Gingerbread Museum showcases this centuries-old craft. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Copernicus House museum; the old town hall and market square; the ruins of Toruń Castle; a hands-on gingerbread-making experience at the Gingerbread Museum.",
+    whenAndTips:
+      "May–September is the most pleasant season; Toruń's old town is well preserved and compact, suited to a half- to full-day deep-dive stroll.",
+  },
+  olsztyn: {
+    identity:
+      "Olsztyn is the core city of the Warmia-Masuria region in north-eastern Poland, with a population of about 170,000, the traditional gateway to the Masurian Lake District.",
+    layout:
+      "The old town is built on high ground beside the Łyna River, with a Gothic brick castle at its centre — one of the castles Copernicus himself once administered.",
+    gettingAround:
+      "Olsztyn-Mazury Airport is about 58 km from the centre, reached by bus; from Warsaw the train takes about 2.5 hours. The old town is walkable; exploring the lake district requires a car or a tour. The climate is temperate continental.",
+    culture:
+      "The official language is Polish. Olsztyn and the surrounding region have historically blended multiple cultural traditions, with Prussian, Polish and Lithuanian influences interwoven. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "Olsztyn Castle (once administered by Copernicus); the old town market square. Boat trips exploring the Masurian Lake District nearby, or sailing on Lake Śniardwy.",
+    whenAndTips:
+      "May–September is the most pleasant season and also peak time for sailing in the Masurian Lake District; Olsztyn is an ideal base for exploring the lakes — plan at least a day for a boat trip or sailing experience.",
+  },
+  bialystok: {
+    identity:
+      "Białystok is the core city of the Podlasie region in north-eastern Poland, with a population of about 297,000, the gateway for exploring Białowieża primeval forest and the Biebrza Marshes.",
+    layout:
+      "The old town is centred on the Branicki Palace and its Baroque gardens, known as the \"Versailles of Podlasie\"; a mix of religious buildings (Catholic, Orthodox, and the remains of a synagogue) bears witness to the region's historically diverse cultural makeup.",
+    gettingAround:
+      "The local airport has limited passenger service; the nearest airport with stable scheduled flights is Warsaw Chopin (about 180 km); from Warsaw the train takes about 2 hours. The old town is walkable; reaching Białowieża Forest requires a car or bus. The climate is temperate continental.",
+    culture:
+      "The official language is Polish. Białystok was the birthplace of L. L. Zamenhof, the creator of the international language Esperanto, and a memorial exhibition to him is on display in the city. Restaurant bills typically already include service, with an additional 5–10% tip customary.",
+    seeAndDo:
+      "The Branicki Palace and its Baroque gardens; the Zamenhof memorial centre. Day trips to Białowieża National Park (a World Heritage Site, home to the European bison) or birdwatching at Biebrza National Park nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season and also the best time for birdwatching and exploring the primeval forest; Białowieża Forest is about a 1.5-hour drive from the city — plan at least a full day specifically to visit.",
+  },
 };
