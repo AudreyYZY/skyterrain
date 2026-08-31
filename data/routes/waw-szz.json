@@ -1,0 +1,16 @@
+{
+  "id": "waw-szz",
+  "name": "华沙 — 什切青",
+  "nameEn": "Warsaw — Szczecin",
+  "description": "大波兰低地",
+  "descriptionEn": "Great Polish Lowland",
+  "depCountry": "poland",
+  "arrCountry": "poland",
+  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3937", "aircraft": "Embraer 175", "depIata": "WAW", "arrIata": "SZZ", "durationMin": 50 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
+    { "kind": "terrain", "terrainId": "great-polish-lowland" },
+    { "kind": "city", "id": "szz", "name": "什切青", "nameEn": "Szczecin", "lat": 53.5847, "lon": 14.9022, "airport": true }
+  ]
+}
