@@ -7566,6 +7566,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Farmers once reached the narrow terrace below the cliff by cable car or path to grow vegetables and fruit — a reflection of traditional agricultural ingenuity on Madeira's steep terrain, though this farming has now largely ceased.",
   },
 
+  // ============ Netherlands ============
   vaalserberg: {
     seeing:
       "Vaalserberg is the highest point in the Netherlands, at 322.7 m, on a forested plateau where the Netherlands, Germany and Belgium meet. From the air it is just a gently raised patch of green hill, only slightly higher than the almost level land around it.",
@@ -7954,5 +7955,396 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Giethoorn's formation shows how low-lying Dutch communities adapted unfavourable marsh terrain into a distinctive way of life — when land roads were impractical to build, waterways naturally became the alternative, a microcosm of the Dutch experience of long coexistence with low-lying terrain.",
     history:
       "The village lived for a long time on peat digging and farming; after a Dutch silent film was shot here in the early 20th century, Giethoorn's watery scenery gradually became known outside the area, and tourism has since become one of the village's main sources of income.",
+  },
+
+  // ============ Austria ============
+  "hohe-tauern": {
+    seeing:
+      "The Hohe Tauern range crosses south-central Austria, a high-mountain belt of gneiss and schist at the heart of the Alps; its highest peak, Grossglockner, reaches 3,798 m — the highest point in all of Austria. Glaciers and lakes are densely packed across the range, which holds the largest protected area in the Alps.",
+    formation:
+      "The Hohe Tauern was raised by Alpine orogeny and is built mainly of Paleozoic gneiss and schist; sustained uplift combined with glacial erosion carved sharp horn peaks and U-shaped valleys — the Pasterze Glacier on the eastern slope, about 9 km long, is Austria's largest glacier.",
+    observation:
+      "From the air, identify the Hohe Tauern by its rolling, snow-crowned skyline — over 300 peaks above 3,000 m and 342 glaciers scattered through the range, with Grossglockner's sharp conical summit especially prominent, and 551 alpine lakes catching the light in varying shades of blue.",
+    distinguish:
+      "Both the Hohe Tauern and the Ötztal Alps are crystalline-rock high-mountain belts, but the Hohe Tauern has more and larger glaciers and holds Austria's highest peak, while the Ötztal Alps are Austria's second-highest range.",
+    concept:
+      "Hohe Tauern National Park covers 1,856 km², the largest protected area in the Alps, with an intact high-mountain ecosystem — an important base for studying Alpine glacier retreat and alpine ecology.",
+    history:
+      "The Grossglockner High Alpine Road, a well-known scenic route through the Hohe Tauern, offers views of the Pasterze Glacier along the way and is one of Austria's major Alpine touring routes.",
+  },
+
+  "otztal-alps": {
+    seeing:
+      "The Ötztal Alps lie in western Tyrol and are Austria's second-highest range; the highest peak, Wildspitze, reaches 3,768 m, and the range is extensively covered in glacial ice.",
+    formation:
+      "The range is built of crystalline rock from the Alpine orogenic belt and lies largely above the snowline; over 200 glaciers cover it, including the Gepatschferner, about 17 km² in area — Austria's second-largest glacier after the Pasterze.",
+    observation:
+      "From the air, the Ötztal Alps show broad expanses of white glacial ice against the deep-green valley forests below; Wildspitze's sharp conical summit is the clearest marker for identifying the range.",
+    distinguish:
+      "Both the Ötztal Alps and the Hohe Tauern are crystalline-rock high-mountain belts, but the Ötztal Alps have a higher proportion of glacial cover and hold the greatest concentration of glacier ski areas in Austria.",
+    concept:
+      "The north-facing valleys of the Ötztal Alps retain snow and glacial ice more effectively — a useful case study in the relationship between Alpine glacier distribution and slope aspect.",
+    history:
+      "Ötzi the Iceman — a remarkably well-preserved Neolithic mummy dated to around 3300 BCE — was discovered in the Ötztal Alps in 1991, one of the most significant archaeological finds in European history.",
+  },
+
+  "zillertal-alps": {
+    seeing:
+      "The Zillertal Alps straddle the border between Tyrol and South Tyrol (Italy); the highest peak, Hochfeiler, reaches 3,510 m, and the range is one of Austria's important glacier ski areas.",
+    formation:
+      "The range is built of crystalline rock from the Alpine orogenic belt; sustained uplift combined with glacial erosion carved steep high-mountain terrain, and several modern glaciers persist among the peaks.",
+    observation:
+      "From the air, the Zillertal Alps show steep terrain crowned with glacial ice, while traditional Tyrolean villages and meadows line the Ziller valley floor below.",
+    distinguish:
+      "The Zillertal Alps neighbour the Ötztal Alps and are both glaciated high-mountain belts in Tyrol, but the Zillertal Alps straddle the Austria-Italy border and their highest peak is somewhat lower than the Ötztal Alps' Wildspitze.",
+    concept:
+      "The Zillertal Alps illustrate the classic landform character of high-elevation crystalline-rock Alpine terrain — sharp summits, glacial cover and deeply cut valleys together.",
+    history:
+      "The Zillertal has traditionally been known for dairy farming and Alpine pasture culture, and the seasonal practice of moving cattle to high summer pastures continues in the valley today.",
+  },
+
+  karwendel: {
+    seeing:
+      "The Karwendel is the largest single range of the Northern Limestone Alps, lying between the Inn Valley and the Isar Valley; its highest peak, Birkkarspitze, reaches 2,749 m, and its southern flank rises directly above the city of Innsbruck.",
+    formation:
+      "The range's limestone was deposited in Triassic marine conditions roughly 250 million years ago; after Alpine uplift, long-term water and glacial erosion carved steep cliff faces, moraines and vast scree slopes.",
+    observation:
+      "From the air, the Karwendel shows classic limestone high-mountain form — grey-white sheer cliffs interwoven with grey scree slopes; the southern face rises almost directly above Innsbruck, forming the city's most distinctive backdrop.",
+    distinguish:
+      "Both the Karwendel and the Dachstein belong to the Northern Limestone Alps, but the Karwendel is the largest single range in this belt, while the Dachstein is better known for its extensive karst cave systems.",
+    concept:
+      "The Karwendel's limestone cliffs and vast scree slopes are a textbook case study in physical weathering and gravity-driven erosion in limestone high-mountain terrain.",
+    history:
+      "The Karwendel Nature Park is one of Austria's largest nature parks, preserving a relatively unspoiled high-mountain ecosystem.",
+  },
+
+  dachstein: {
+    seeing:
+      "The Dachstein straddles the border between Upper Austria and Styria; its highest peak, Hoher Dachstein, reaches 2,995 m, and because the massif also touches Salzburg it is sometimes called the \"three-state mountain.\"",
+    formation:
+      "The massif is built mainly of Dachstein limestone formed roughly 200 million years ago; sustained karst dissolution has carved an extensive cave system, with over 240 caves identified — the Hallstatt Glacier is among the easternmost and northernmost glaciers in the Alps.",
+    observation:
+      "From the air, the Dachstein shows classic karst high-mountain form — grey-white limestone dotted with dissolution hollows and cave entrances, the white ice of the summit's Hallstatt Glacier standing out sharply against the grey rock around it.",
+    distinguish:
+      "Both the Dachstein and the Karwendel belong to the Northern Limestone Alps, but the Dachstein's karst cave system is more extensively developed (the Mammoth Cave, the Giant Ice Cave and others are open to visitors), while the Karwendel is defined by its intact cliff faces and scree slopes.",
+    concept:
+      "The Dachstein's karst cave system illustrates the complete process by which surface water dissolves limestone over long periods to form an underground cave network — an important case study in Central European karst landforms.",
+    history:
+      "The Dachstein-Hallstatt area has a long history of salt mining; the village of Hallstatt at its foot was inscribed as a UNESCO World Heritage cultural landscape in 1997.",
+  },
+
+  "rax-schneeberg": {
+    seeing:
+      "The Rax-Schneeberg Group is Lower Austria's highest mountain area; the Schneeberg reaches 2,076 m and is the easternmost peak in the Alps to exceed 2,000 m, only about an hour's drive from Vienna.",
+    formation:
+      "The massif is a limestone karst highland, structurally the easternmost extension of the Northern Limestone Alps, with extensive karst development.",
+    observation:
+      "From the air, the Rax-Schneeberg Group shows a comparatively gentle karst-highland outline, in clear contrast with the sharp, snow-crowned peaks of the Hohe Tauern further west — the point where the Alps visibly \"taper off\" toward the east.",
+    distinguish:
+      "Both the Rax-Schneeberg Group and the Totes Gebirge are karst-highland massifs, but Rax-Schneeberg is lower and sits at the easternmost tip of the Alps, while the Totes Gebirge is one of Central Europe's largest karst plateaus.",
+    concept:
+      "Sitting at the easternmost edge of the Alps near Vienna, the Rax-Schneeberg Group offers a direct case study in how the Alpine chain's overall trend and terrain gradually change along its length.",
+    history:
+      "Since 1873, karst springs around the Schneeberg have supplied Vienna's drinking water via a 120 km pipeline; known as Vienna's \"local mountain,\" it has long been a favoured hiking destination for the city's residents.",
+  },
+
+  "carnic-alps": {
+    seeing:
+      "The Carnic Alps are part of the Southern Limestone Alps, their main ridge running roughly 100 km along the Austria-Italy border; the highest point, Hohe Warte, reaches 2,780 m.",
+    formation:
+      "The range preserves a continuous Devonian-to-Carboniferous stratigraphic sequence, making it an important site for studying this geological transition; sustained uplift combined with river erosion shaped today's mountain terrain.",
+    observation:
+      "From the air, the Carnic Alps form a continuous east-west ridge running along the Austria-Italy border, with vegetation and landform differing slightly between the north- and south-facing slopes.",
+    distinguish:
+      "Both the Carnic Alps and the Silvretta Alps are cross-border ranges for Austria, but the Carnic Alps border Italy and are known for their Paleozoic strata, while the Silvretta Alps border Switzerland and are known for their modern glacial landforms.",
+    concept:
+      "The Carnic Alps preserve an intact marine stratigraphic sequence spanning the Devonian to Carboniferous, making them an important reference section for geologists studying this geological boundary worldwide.",
+    history:
+      "The Plöcken Pass through the Carnic Alps has long served as a key route between Austria and Italy; during the First World War this area was one of the fronts of the Alpine mountain war.",
+  },
+
+  "kitzbuhel-alps": {
+    seeing:
+      "The Kitzbühel Alps are a stretch of slate-and-phyllite terrain in the Eastern Alps, lying between the Ziller and Saalach rivers; the highest peak, Kitzbüheler Horn, reaches 1,996 m.",
+    formation:
+      "The range is built mainly of Paleozoic phyllite and slate with some older limestone; being softer rock than the limestone Alps to the north, uplift and erosion together shaped gentler slopes and more rounded terrain.",
+    observation:
+      "From the air, the Kitzbühel Alps show a comparatively gentle, green mountain outline, in sharp contrast with the steep grey-white limestone cliffs of the Karwendel to the north — a clear illustration of how differing rock types shape terrain.",
+    distinguish:
+      "The Kitzbühel Alps and the Karwendel lie next to each other but differ entirely in rock type — the Kitzbühel Alps are gentle-sloped terrain built of phyllite and slate, while the Karwendel is steep terrain built of limestone.",
+    concept:
+      "The Kitzbühel Alps illustrate how differing rock types within the same orogenic belt shape landform differently — softer metamorphic rock erodes into rounder terrain than hard limestone.",
+    history:
+      "The town of Kitzbühel has been a renowned winter ski resort since the early 20th century, and the Hahnenkamm alpine skiing World Cup race held nearby each year is internationally famous.",
+  },
+
+  "silvretta-alps-at": {
+    seeing:
+      "The Silvretta Alps are a stretch of the Central Eastern Alps spanning Tyrol and Vorarlberg in Austria and Graubünden in Switzerland; the terrain on the Austrian side is comparatively gentle.",
+    formation:
+      "The range is built mainly of crystalline rock as part of the Alpine orogenic belt; most of the massif, including its highest peak, Piz Linard (3,411 m), lies within Switzerland, with the Austrian side sitting at somewhat lower elevation.",
+    observation:
+      "From the air, the Silvretta Alps show classic high-mountain crystalline-rock terrain; the Silvretta reservoir near the Bielerhöhe pass stands out among the peaks, its water surface contrasting with the bare rock and sparse vegetation around it.",
+    distinguish:
+      "Both the Silvretta Alps and the Carnic Alps are cross-border ranges for Austria, but the Silvretta Alps border Switzerland and are known for high-mountain hydropower development and glacier monitoring, while the Carnic Alps border Italy and are known for Paleozoic strata.",
+    concept:
+      "The Bielerhöhe pass area of the Silvretta Alps is a representative site for high-mountain hydropower development and long-term glacier monitoring in the Alps.",
+    history:
+      "The Silvretta reservoir has been used for hydroelectric power generation since the early 20th century, a representative case in the history of high-mountain hydropower development in the Austrian Alps.",
+  },
+
+  "totes-gebirge": {
+    seeing:
+      "The Totes Gebirge, part of the Northern Limestone Alps, is Central Europe's largest karst plateau; its highest point, Großer Priel, reaches 2,515 m.",
+    formation:
+      "The massif is built mainly of Dachstein limestone; sustained karst dissolution has carved numerous funnel-shaped hollows and caves, leaving steep cliff faces and a comparatively flat summit plateau.",
+    observation:
+      "From the air, the Totes Gebirge shows classic karst-plateau form — a broad, comparatively flat top dropping away sharply at the edges, scattered with numerous circular dissolution hollows, with several peaks exceeding 2,000 m.",
+    distinguish:
+      "Both the Totes Gebirge and the Steinernes Meer are karst-plateau massifs, but the Totes Gebirge is larger and is Central Europe's largest karst plateau, while the Steinernes Meer straddles the Austria-Germany border and is known as part of the Berchtesgaden Alps.",
+    concept:
+      "The Totes Gebirge (literally \"Dead Mountains\") takes its name from its sparse surface vegetation and well-developed underground drainage — a useful case study in the interaction between surface and underground water systems on karst plateaus.",
+    history:
+      "The Totes Gebirge has historically been sparsely visited, its name directly reflecting the bleak plateau landscape; today it draws hikers and alpinists seeking out its untouched karst terrain.",
+  },
+
+  "steinernes-meer": {
+    seeing:
+      "The Steinernes Meer, part of the Berchtesgaden Alps, straddles Austria's Salzburg state and Germany's Bavaria; its highest point, Selbhorn, reaches 2,655 m.",
+    formation:
+      "The massif is built mainly of Dachstein limestone, roughly 230 million years old, layered over Ramsau dolomite; above 2,000 m elevation it shows classic karst-plateau form.",
+    observation:
+      "From the air, the peaks of the Steinernes Meer above 2,000 m sit closely packed and nearly level with one another, resembling a rippled sea of stone — the origin of the name \"Stone Sea.\"",
+    distinguish:
+      "Both the Steinernes Meer and the Totes Gebirge are karst-plateau massifs, but the Steinernes Meer straddles the Austria-Germany border, while the Totes Gebirge lies entirely within Austria and is larger.",
+    concept:
+      "With most of its peaks clustered between 2,000 and 2,600 m and little variation in height, the Steinernes Meer is a direct case study in the \"levelling\" erosion process characteristic of karst plateaus.",
+    history:
+      "Historically rugged and sparsely visited, the Steinernes Meer remains one of the less-developed high-mountain wilderness areas of the Alps.",
+  },
+
+  tennengebirge: {
+    seeing:
+      "The Tennengebirge is a karst plateau of the Northern Limestone Alps near Werfen, about 40 km south of Salzburg; inside the massif, Eisriesenwelt is the largest known ice cave in the world.",
+    formation:
+      "The massif is built of thick limestone; karst dissolution has carved a cave system stretching more than 42 km. Winter snow seeps in through the entrance, and summer airflow shapes it into ice, producing the cave's distinctive ice formations.",
+    observation:
+      "From the air, the Tennengebirge shows the classic outline of a karst plateau; the cave entrance beneath the Hochkogel peak in the middle of the massif marks the location of Eisriesenwelt, its mouth about 20 m wide and 18 m high.",
+    distinguish:
+      "Both the Tennengebirge and the Dachstein host major karst cave systems, but the Tennengebirge's Eisriesenwelt is famous for its massive ice formations, while the Dachstein's cave system is known for a network of caves including the Mammoth Cave.",
+    concept:
+      "Eisriesenwelt illustrates a distinctive \"wind-driven ice formation\" mechanism in karst caves — cold winter air sinks and pools inside the cave, and in summer warm, moist air from outside condenses and freezes on contact, keeping the cave near 0°C even in summer.",
+    history:
+      "The cave was known only to locals for a long time until Anton Posselt made the first systematic exploration in 1879, covering just the first 200 m; it was gradually explored further and developed into the world's largest ice cave.",
+  },
+
+  wienerwald: {
+    seeing:
+      "The Wienerwald (Vienna Woods) is the final stretch of hills where the Alps taper off toward Vienna's outskirts, covering about 1,000 km²; its highest point, Schöpfl, reaches 893 m.",
+    formation:
+      "The bedrock is mainly limestone and dolomite, the easternmost extension of the Northern Limestone Alps; limestone's ease of dissolution lets rainwater seep underground to form subterranean streams, producing typical karst landforms.",
+    observation:
+      "From the air, the Wienerwald shows low, gently rolling, densely forested hills, in sharp contrast with the flat, urbanised Vienna Basin to the east — a clear marker of the transition zone between the Alps and the Pannonian Plain.",
+    distinguish:
+      "Both the Wienerwald and the Waldviertel plateau are low hills near Vienna, but the Wienerwald is the eastern extension of the Alpine limestone system, while the Waldviertel sits on the granite-and-gneiss basement of the Bohemian Massif — entirely different rock types and origins.",
+    concept:
+      "The Wienerwald is a textbook example of the Alps gradually tapering from towering snow peaks into plains and hills, illustrating how differing degrees of uplift along the same orogenic belt produce differing relief.",
+    history:
+      "The Wienerwald has been an important recreational area for Vienna's residents since the 19th century, and was designated a UNESCO Biosphere Reserve in 2005.",
+  },
+
+  waldviertel: {
+    seeing:
+      "The Waldviertel is a low, gently rolling plateau in north-western Lower Austria, an extension of the Bohemian Massif within Austria; its highest point, Nebelstein, reaches 1,017 m.",
+    formation:
+      "The plateau's bedrock is mainly ancient granite and gneiss, part of the Bohemian Massif formed in Precambrian to Paleozoic times on the European continent; long-term weathering and erosion have shaped today's low, gently rolling surface.",
+    observation:
+      "From the air, the Waldviertel shows a low plateau landscape interwoven with extensive forest and grassland, its relief gentle and sloping, in clear contrast with the steep high-mountain outline of the Alps to the south.",
+    distinguish:
+      "Both the Waldviertel and the Wienerwald are low hill regions, but the Waldviertel's bedrock is the ancient granite and gneiss of the Bohemian Massif, while the Wienerwald's bedrock is the geologically younger limestone and dolomite of the Alpine orogenic belt.",
+    concept:
+      "The Waldviertel exposes some of the oldest crystalline basement rock in Austria, an important window into the Precambrian-to-Paleozoic crustal evolution of the European continent.",
+    history:
+      "The Waldviertel has historically been less developed due to poor soil and limited transport links, and still preserves extensive forest and traditional farming landscapes today — it remains one of Austria's least densely populated regions.",
+  },
+
+  "vienna-basin": {
+    seeing:
+      "The Vienna Basin sits at the junction of the Alps, the Carpathians and the Pannonian Plain — a geologically young tectonic subsidence basin that topographically separates the Alps from the Western Carpathians.",
+    formation:
+      "The basin formed through sustained extensional subsidence along strike-slip faults since the Miocene; underlying rock layers show that the Alps and Carpathians were once geologically continuous, only separated at the surface by this young basin's subsidence — Quaternary faulting continues to this day.",
+    observation:
+      "From the air, the Vienna Basin shows broad, flat terrain, in sharp contrast with the mountainous outlines of the Alps and Carpathians to its south and north — the core lowland where Vienna, Austria's capital, and surrounding towns are located.",
+    distinguish:
+      "Both the Vienna Basin and the Wachau lie in eastern Austria, but the Vienna Basin is a tectonic subsidence basin with broad, flat terrain, while the Wachau is a narrow valley cut by the Danube with undulating terrain along its banks.",
+    concept:
+      "Ongoing fault activity in the Vienna Basin makes this one of Austria's relatively more seismically active areas, and an important case study in the tectonic evolution at the junction of the Alps and Carpathians.",
+    history:
+      "The Vienna Basin has been an important transport hub and agricultural region since Roman times; Vienna, Austria's capital, sits at the basin's north-western edge.",
+  },
+
+  wachau: {
+    seeing:
+      "The Wachau is a roughly 36 km stretch of valley cut by the Danube between Melk and Krems, its banks lined with terraced vineyards, medieval monasteries and castles.",
+    formation:
+      "The valley was carved by long-term erosion of the surrounding highlands by the Danube; the valley floor is covered with a loess layer, with river terraces of gravel and fine flood sediment providing well-suited soil for viticulture on both banks.",
+    observation:
+      "From the air, the Wachau shows the Danube winding through terraced vineyards layered along both banks, with monasteries and castles along the river marking this stretch of valley unmistakably.",
+    distinguish:
+      "Both the Wachau and the Inn Valley are important river valleys in Austria, but the Wachau was cut by the Danube and is known for viticulture and historic architecture, while the Inn Valley is a broad glacial valley centred on the Alpine city of Innsbruck.",
+    concept:
+      "The loess and river-terrace deposits along the Wachau provide ideal drainage and heat retention for viticulture — a useful case study in the relationship between valley landform and agricultural land use.",
+    history:
+      "The Wachau shows traces of human activity dating to prehistoric times; numerous monasteries and castles were built along the river from the medieval period onward, and it was inscribed as a UNESCO World Heritage cultural landscape in 2000.",
+  },
+
+  inntal: {
+    seeing:
+      "The Inn Valley (Inntal) is a broad, west-to-east glacial valley cut through the Eastern Alps by the Inn River, flanked by the Karwendel to the north and the Kitzbühel Alps to the south; Innsbruck sits in the valley's middle stretch.",
+    formation:
+      "The valley was carved by repeated glaciation during the ice ages; its slopes preserve moraine terraces from the Würm glaciation, while the lower plain was built up by long-term alluvial deposition from the Inn River, with the valley floor generally between 500 and 1,000 m elevation.",
+    observation:
+      "From the air, the Inn Valley shows a sharp contrast between its broad, flat floor and the steep, towering mountains on either side — classic Alpine glacial-valley form, with Innsbruck's urban area stretching east-west along the valley floor.",
+    distinguish:
+      "Both the Inn Valley and the Wachau are important valley landforms in Austria, but the Inn Valley is a broad U-shaped valley of glacial origin, while the Wachau is a narrow V-shaped valley cut by the Danube.",
+    concept:
+      "The moraine terraces preserved on the slopes of the Inn Valley are important landform evidence for studying the Alps' ice-age history, illustrating how repeated glacial advance and retreat shaped the valley's form.",
+    history:
+      "The Inn Valley has long served as an important transport corridor through the Alps; Innsbruck, as the capital of Tyrol, has historically been a key hub linking the German-speaking lands with Italy.",
+  },
+
+  liechtensteinklamm: {
+    seeing:
+      "Liechtensteinklamm is a limestone gorge near St. Johann im Pongau, about 50 km south of Salzburg, roughly 4 km long with cliff walls up to about 300 m high.",
+    formation:
+      "The gorge was cut by long-term river downcutting through the surrounding limestone, leaving near-vertical walls; a waterfall marks the gorge's end, a classic limestone-gorge landform.",
+    observation:
+      "From the air, Liechtensteinklamm is a narrow, dark cleft cut into the mountainside, its steep walls pressing close together; the rushing water at its floor and the waterfall at its end are the clearest markers of this gorge.",
+    distinguish:
+      "Both Liechtensteinklamm and the Krimml Waterfalls are well-known gorge/waterfall landforms in Austria, but Liechtensteinklamm's main feature is the narrow, deep gorge itself, while the Krimml Waterfalls are centred on a three-tiered waterfall with a 380 m drop.",
+    concept:
+      "Liechtensteinklamm illustrates the classic process by which a river cuts a deep, narrow gorge into limestone over long periods — a representative example of limestone gorge landforms in the Alps.",
+    history:
+      "In 1875 Johann II of Liechtenstein funded the wooden walkways built through the gorge, which take their name from him; today about 100,000 visitors walk the gorge each year.",
+  },
+
+  "krimml-waterfalls": {
+    seeing:
+      "The Krimml Waterfalls are a three-tiered cascade on the Krimmler Ache with a total drop of about 380 m — Austria's highest waterfall, the highest in Europe and the fifth-highest in the world.",
+    formation:
+      "The falls are fed by glacial meltwater from the Hohe Tauern; before reaching the floor of the Inn Valley system, the Krimmler Ache drops over three tiers of roughly 140 m, 100 m and 140 m, with flow varying enormously with the season's snow and ice melt.",
+    observation:
+      "From the air, the Krimml Waterfalls appear as a vertical white curtain of water set in green mountain forest, its three-tiered, stepped form clearly visible, with the surrounding spray creating a permanently humid microclimate.",
+    distinguish:
+      "Both the Krimml Waterfalls and Liechtensteinklamm are notable water-carved landforms in Austria, but the Krimml Waterfalls are defined by the volume and drop of a vertical cascade, while Liechtensteinklamm is defined by the narrow gorge itself.",
+    concept:
+      "The Krimml Waterfalls' flow varies dramatically by season (up to 5.6 m³/s in summer, as low as 0.14 m³/s in winter) — a useful case study in the seasonal hydrology of glacier-melt-fed rivers.",
+    history:
+      "The Krimml Waterfalls lie within Hohe Tauern National Park and draw about 350,000 visitors a year, one of the most important natural landmarks in the Austrian Alps.",
+  },
+
+  "danube-river-at": {
+    seeing:
+      "The Danube is Europe's second-longest river, about 2,888 km in total, with roughly 350 km flowing through Austria, running west to east through the lower Inn Valley, the Linz basin, the Wachau and the Vienna Basin before continuing into Slovakia.",
+    formation:
+      "Within Austria the Danube crosses several distinct landform zones, and its channel form changes accordingly — narrowing into the Wachau's confined valley as it cuts through the hills there, then widening into a broad alluvial plain across the Vienna Basin.",
+    observation:
+      "From the air, the Danube in Austria alternates between narrow and broad stretches: hemmed in by hills through the Wachau, then opening into a wide, flat-banked channel across the Vienna Basin, linking major cities including Linz and Vienna along its course.",
+    distinguish:
+      "Both the Danube and the Inn are important rivers in Austria, but the Danube is a Europe-scale river running west to east across the whole country, while the Inn is a regional river flowing through western Tyrol before eventually joining the Danube via its own tributary system in Germany.",
+    concept:
+      "The Danube's alternating gorge-like and plain-like stretches within Austria are a useful case study in how a major river's channel form adjusts to tectonic structure as it crosses orogenic belts and subsidence basins.",
+    history:
+      "The Danube has long been Austria's most important waterway, linking major cities east of Innsbruck and serving as the historical core artery of trade and cultural exchange.",
+  },
+
+  "mur-river": {
+    seeing:
+      "The Mur rises in the Radstädter Tauern and runs about 453 km in total, with roughly 298 km flowing through Styria; the city of Graz sits on its banks.",
+    formation:
+      "The upper Mur runs through Alpine terrain, its middle and lower reaches crossing the hills and valleys of Styria before eventually joining the Drava via Slovenia and Croatia; the upper river preserves Austria's second-largest floodplain forest.",
+    observation:
+      "From the air, the upper Mur winds through mountain gorges, its middle and lower channel widening, with floodplain forest running in a band along the river; Graz's old town, laid out along both banks, is the clearest marker for identifying this river.",
+    distinguish:
+      "Both the Mur and the Danube are important rivers in Austria, but the Mur flows mainly through Styria and eventually joins the Drava (a Danube tributary within the Black Sea drainage), while the Danube runs directly across the whole of Austria.",
+    concept:
+      "The floodplain forest along the upper Mur is one of Europe's most species-rich habitats and the natural spawning ground for the endangered Danube salmon — an important case study in the conservation value of river ecosystems.",
+    history:
+      "Graz, the capital of Styria, grew historically thanks to the water transport and irrigation the Mur provided, and remains Austria's second-largest city today.",
+  },
+
+  worthersee: {
+    seeing:
+      "Wörthersee is Carinthia's largest lake, about 19.4 km² in area with a maximum depth of about 85 m; its comparatively warm summer water makes it an important resort destination in southern Austria.",
+    formation:
+      "The lake basin was carved by glacial erosion during the last ice age; after the glacier retreated, the hollow filled with water, with comparatively gentle terrain around it — a classic glacially carved lake on the southern flank of the Alps.",
+    observation:
+      "From the air, Wörthersee forms a long, narrow oval, its shoreline lined with resorts and marinas, the water taking on a warm, light-blue tone in the sun.",
+    distinguish:
+      "Both Wörthersee and the Attersee are well-known glacially carved lakes in Austria, but Wörthersee lies in Carinthia with comparatively warm summer water well-suited to swimming, while the Attersee lies in the Salzkammergut and is considerably deeper.",
+    concept:
+      "Wörthersee's comparatively warm summer water reflects Carinthia's relatively mild, Mediterranean-influenced microclimate — a useful case study in climatic variation among lakes on the southern flank of the Alps.",
+    history:
+      "Wörthersee has been a favoured summer resort for Austria's upper class since the late 19th century, and its shores still preserve numerous Victorian-era villas.",
+  },
+
+  attersee: {
+    seeing:
+      "The Attersee is a glacially carved lake in the Salzkammergut region, about 46.2 km² in area — the largest lake lying entirely within Austrian territory.",
+    formation:
+      "The lake basin was carved by Alpine glacial erosion during the last ice age; after the glacier retreated, the hollow filled with water, with an average depth of about 85 m and a maximum of 169 m — clear water typical of a deep Alpine glacially carved lake.",
+    observation:
+      "From the air, the Attersee runs long and narrow on a north-south axis, its open water clear and deep blue, ringed by Alpine peaks, with traditional villages lining its eastern shore.",
+    distinguish:
+      "Both the Attersee and Wörthersee are important glacially carved lakes in Austria, but the Attersee is the largest lake entirely within Austria and considerably deeper, while Wörthersee is smaller in area but has warmer summer water.",
+    concept:
+      "The Attersee's clear, deep-water environment is an important case study in water-quality research for Alpine glacially carved lakes, and the surrounding area preserves a comparatively intact natural ecosystem.",
+    history:
+      "The Salzkammergut region around the Attersee has been known since antiquity for its salt deposits, and the lake remains an important tourist and resort destination in Austria today.",
+  },
+
+  "neusiedler-see": {
+    seeing:
+      "The Neusiedler See is the westernmost steppe lake in Europe, straddling Austria's Burgenland and Hungary — the largest endorheic lake in Central Europe, about 309 km² in area with an average depth of only around 50–60 cm.",
+    formation:
+      "Around 16 million years ago the area now spanning the Vienna Basin and the Hungarian plain was covered by an ancient sea, and the Neusiedler See is a surviving remnant of that geological history; as a typical steppe lake, it undergoes cycles of filling and complete drying before refilling again.",
+    observation:
+      "From the air, the Neusiedler See shows an open, flat, shallow water surface ringed by extensive reed beds, blending almost seamlessly with the flat Pannonian Plain around it — a highly distinctive steppe-lake landscape for Europe.",
+    distinguish:
+      "The Neusiedler See's origin differs entirely from Austria's other Alpine lakes (such as Wörthersee and the Attersee) — it is a shallow steppe lake on the Pannonian Plain, while the others are deep, glacially carved Alpine lakes.",
+    concept:
+      "The Neusiedler See's cyclical water-level fluctuations, extremely shallow depth and extensive reed wetlands make it an important case study in European steppe-lake ecosystems and a key stopover habitat for migratory birds.",
+    history:
+      "The Neusiedler See and its surrounding area, valued for their rich biodiversity and distinctive steppe-lake landscape, were inscribed as the cross-border \"Fertő / Neusiedlersee Cultural Landscape\" on the UNESCO World Heritage List in 2001.",
+  },
+
+  "millstatter-see": {
+    seeing:
+      "The Millstätter See is Carinthia's second-largest lake, about 13.3 km² in area with an average depth of about 89 m and a maximum of 142 m — among the deepest lakes in Austria.",
+    formation:
+      "The lake basin was carved by Alpine glacial erosion during the last ice age; the lake is long and narrow, ringed by mountains — a classic deep glacially carved lake on the southern flank of the Alps in Carinthia.",
+    observation:
+      "From the air, the Millstätter See forms a long, narrow band, its considerable depth giving the water a deep blue-green tone, with steep, densely forested mountains along its shores.",
+    distinguish:
+      "Both the Millstätter See and Wörthersee lie in Carinthia, but the Millstätter See is markedly deeper with a smaller surface area, while Wörthersee is known for its warmer summer water and larger surface area.",
+    concept:
+      "The Millstätter See's considerable depth produces pronounced thermal stratification — a useful case study in water stratification and ecosystems in deep Alpine lakes.",
+    history:
+      "The town of Millstatt has grown around its lakeside monastery since medieval times and remains an important lakeside resort destination in Carinthia today.",
+  },
+
+  hallstattersee: {
+    seeing:
+      "The Hallstättersee is a long, narrow glacially carved lake in the Salzkammergut, about 8.55 km² in area with a maximum depth of about 125 m; the village of Hallstatt sits on its eastern shore at the foot of the Dachstein.",
+    formation:
+      "The lake basin was carved by Alpine glacial erosion during the last ice age, forming a long, narrow trough set deep between the Dachstein and the surrounding mountains — one of many glacially carved lakes in the Salzkammergut.",
+    observation:
+      "From the air, the Hallstättersee is long, narrow and deep-set, with the colourful houses of Hallstatt village built up against the mountainside on its eastern shore, forming an unmistakable scene against the steep Dachstein massif to the west.",
+    distinguish:
+      "Both the Hallstättersee and the Millstätter See are long, narrow glacially carved lakes, but the Hallstättersee sits directly beside the Dachstein and is known for its historic lakeside village, while the Millstätter See is known for its greater depth and Carinthian resort atmosphere.",
+    concept:
+      "The area around the Hallstättersee is one of Europe's oldest sites of salt mining, and the lake together with this mining history forms a distinctive cultural-landform landscape.",
+    history:
+      "The village of Hallstatt was inscribed as part of the \"Hallstatt-Dachstein Salzkammergut Cultural Landscape\" on the UNESCO World Heritage List in 1997; local salt mining traces back to prehistoric times, making it one of the oldest sites of salt extraction in Europe.",
   },
 };

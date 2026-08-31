@@ -1,0 +1,19 @@
+{
+  "id": "vie-inn",
+  "name": "维也纳 — 因斯布鲁克",
+  "nameEn": "Vienna — Innsbruck",
+  "description": "维也纳盆地 · 维也纳森林 · 达赫斯坦山 · 卡尔文德尔山",
+  "descriptionEn": "Vienna Basin · Wienerwald · Dachstein · Karwendel",
+  "depCountry": "austria",
+  "arrCountry": "austria",
+  "flight": { "airline": "奥地利航空", "airlineEn": "Austrian Airlines", "flightNo": "OS901", "aircraft": "Embraer E195", "depIata": "VIE", "arrIata": "INN", "durationMin": 55 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "vienna", "name": "维也纳", "nameEn": "Vienna", "lat": 48.1103, "lon": 16.5697, "airport": true },
+    { "kind": "terrain", "terrainId": "vienna-basin" },
+    { "kind": "terrain", "terrainId": "wienerwald" },
+    { "kind": "terrain", "terrainId": "dachstein" },
+    { "kind": "terrain", "terrainId": "karwendel" },
+    { "kind": "city", "id": "innsbruck", "name": "因斯布鲁克", "nameEn": "Innsbruck", "lat": 47.2602, "lon": 11.3440, "airport": true }
+  ]
+}
