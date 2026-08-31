@@ -3779,4 +3779,160 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "December–April is peak ski season (the Kitzsteinhorn's year-round snow extends the season); June–September is peak season for lakeside summer activities and hiking — one of Austria's rare destinations with both a winter ski season and a summer lake season.",
   },
+
+  // ============ Ireland ============
+  "ireland-overview": {
+    identity:
+      "The Republic of Ireland sits on the Atlantic edge of north-western Europe, covering about 70,000 km² with a population of roughly 5.3 million. It is known for green pastoral countryside, Atlantic sea cliffs and a long Celtic-Gaelic cultural tradition; the official languages are Irish and English.",
+    layout:
+      "Ireland can be divided roughly into: Leinster (Dublin, the eastern plain and capital region), Munster (Cork, Limerick and Kerry, the southern and south-western coast and mountains), Connacht (Galway, the western coast and Gaeltacht areas), and the Republic's portion of Ulster (Donegal, the north-west coast). The centre of the country is dominated by low-lying land and peat bog, with most upland concentrated around the coastal margins.",
+    gettingAround:
+      "Dublin Airport is the main international gateway; rail and long-distance coach networks cover the main towns, with intercity journeys typically taking 1–3 hours. Scheduled domestic flights are very limited — currently only two government-subsidised routes, Dublin–Kerry and Dublin–Donegal. Driving is on the left, and rural roads are often narrow. The climate is temperate maritime, mild and rainy year-round with changeable weather, so it's worth carrying rain gear. Restaurant bills typically don't include a tip; around 10% or rounding up is customary. The voltage is 230V with UK-style three-pin plugs.",
+    culture:
+      "The official languages are Irish (Gaelic) and English; English is used in daily life throughout most of the country, while parts of the western coast (the Gaeltacht) still use Irish as the primary spoken language. The Irish are known for their conversational warmth, humour and hospitality, and pub culture is a central part of social life. Traditional music, dance and Celtic festivals such as St Patrick's Day are widely celebrated across the country.",
+    seeAndDo:
+      "Natural landforms: the Cliffs of Moher, the Burren, MacGillycuddy's Reeks and the Ring of Kerry, the Twelve Bens of Connemara, Slieve League. Heritage and culture: Trinity College Dublin and the Book of Kells, the early Christian site at Glendalough, the prehistoric passage tomb at Newgrange. Islands and coast: the Aran Islands, Skellig Michael, Killary Harbour.",
+    whenAndTips:
+      "May–September brings relatively stable weather and longer daylight, making it the peak travel season; a drive along the Wild Atlantic Way is the classic way to explore the west coast, and hiking in the mountains or along the sea cliffs calls for wind- and rain-proof gear given how quickly weather can change.",
+  },
+  dublin: {
+    identity:
+      "Dublin is the capital and largest city of Ireland, with a population of about 1.2 million in the greater metro area, sitting on Dublin Bay at the mouth of the River Liffey. It is Ireland's political, economic and cultural centre and one of Europe's major tech and finance hubs.",
+    layout:
+      "The Liffey runs through the city centre, dividing it into the Southside — historically home to Trinity College and Grafton Street's shopping district — and the Northside, centred on O'Connell Street and the docklands; the suburbs extend out along Dublin Bay.",
+    gettingAround:
+      "Dublin Airport is about 10 km from the centre, reached by bus or taxi; there is no direct metro link yet. Getting around the city relies mainly on walking, the Luas tram and buses, with the historic Southside walkable on foot. The climate is temperate maritime, mild and rainy year-round with changeable weather.",
+    culture:
+      "The official languages are Irish and English, with English used in daily life. Dublin has a strong pub culture, with the Temple Bar district a hub of nightlife, and the city hosts the main St Patrick's Day parade. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "Trinity College and the Book of Kells; Dublin Castle; the Guinness Storehouse; St Patrick's Cathedral; the Temple Bar district; Phoenix Park, one of Europe's largest city parks. Day trips to the Wicklow Mountains and Glendalough.",
+    whenAndTips:
+      "May–September is mild and has longer daylight hours; around St Patrick's Day (17 March) the city gets busy and accommodation tightens up, so book ahead. The main sights are concentrated in the centre, easily covered on foot and by bus.",
+  },
+  kilkenny: {
+    identity:
+      "Kilkenny is a well-preserved medieval town in Leinster in south-east Ireland, with a population of about 27,000, known for its Norman castle and medieval streets and often called Ireland's \"medieval capital.\"",
+    layout:
+      "The old town is built along the River Nore, with the castle and cathedral standing on high ground on opposite banks; the medieval street layout survives largely intact, making it one of Ireland's best-preserved medieval towns.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Dublin Airport (about 120 km, roughly 1.5 hours by train). The old town is walkable. The climate is temperate maritime; its inland position means slightly less rainfall than coastal areas.",
+    culture:
+      "The official languages are Irish and English, with English used day to day. Kilkenny is an important centre for crafts and design in Ireland and is also known nationally as a craft-beer town. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "Kilkenny Castle; St Canice's Cathedral and round tower; the Medieval Mile walking route; the ruins of the Black Abbey (St Francis Abbey). Day trips to Jerpoint Abbey nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season; the Kilkenny Arts Festival (August) draws more visitors. As an inland town, it makes a good one- or two-day base for exploring the south-eastern Leinster countryside.",
+  },
+  cork: {
+    identity:
+      "Cork is Ireland's second-largest city, with a population of about 220,000, sitting at the mouth of the River Lee. It is the economic and cultural centre of Munster in southern Ireland, and locals often jokingly call Cork the \"real capital\" of Ireland.",
+    layout:
+      "The city centre is built on an island formed where the Lee splits into two channels, its street layout shaped by the old canal system; the suburbs extend out along the river mouth, with Cobh harbour historically an important transatlantic shipping port nearby.",
+    gettingAround:
+      "Cork Airport is about 8 km from the centre, reached by bus. Getting around the city centre relies mainly on walking, as the old town is compact. The climate is temperate maritime, mild and rainy year-round.",
+    culture:
+      "The official languages are Irish and English, with English used day to day. Cork is known for its local food culture, and the English Market is central to daily food life in the city. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "The English Market; St Fin Barre's Cathedral; University College Cork. Day trips to nearby Cobh (the Titanic's last port of call) and Blarney Castle (home of the \"Blarney Stone\").",
+    whenAndTips:
+      "May–September is the most pleasant season; Cork is an ideal gateway for exploring the south Munster coast and County Kerry, with a direct train to Dublin (about 2.5 hours).",
+  },
+  killarney: {
+    identity:
+      "Killarney is a small town in County Kerry in south-west Ireland, with a population of about 14,000, set beside MacGillycuddy's Reeks and the Lakes of Killarney — the traditional gateway to the Ring of Kerry and Ireland's highest peak.",
+    layout:
+      "The compact town centre sits right beside Killarney National Park and its lakes to the south-west, with MacGillycuddy's Reeks rising as a backdrop on the park's western side, forming a classic mountain-and-lake setting.",
+    gettingAround:
+      "Kerry Airport is about 15 km from town, reached by taxi; there's also a direct train from Dublin (about 3.5 hours). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
+    culture:
+      "The official languages are Irish and English, with English used day to day. Killarney has been a fashionable European resort destination since the 18th century, and tourism remains central to the local economy. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "Killarney National Park and its three lakes; Muckross House and Estate; a jaunting-car tour through the Gap of Dunloe; hiking in MacGillycuddy's Reeks (Carrauntoohil); the classic starting point for a Ring of Kerry drive.",
+    whenAndTips:
+      "May–September is the most pleasant season and peak time for hiking and touring the lakes; driving the Ring of Kerry counter-clockwise is recommended to avoid tour-bus traffic. Mountain weather is changeable, so bring wind- and rain-proof gear for hiking.",
+  },
+  dingle: {
+    identity:
+      "Dingle is a small fishing town on the Dingle Peninsula, with a population of about 2,000, one of Ireland's better-preserved Irish-speaking (Gaeltacht) areas and the gateway for exploring the peninsula's sea cliffs and prehistoric remains.",
+    layout:
+      "The town is built along Dingle Harbour with a compact street layout, and Slea Head and Mount Brandon along the peninsula's coast form the main landform backdrop around the town.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Kerry Airport (about 50 km). The town itself is walkable, but exploring the peninsula's coastal scenic route requires a car or a tour. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
+    culture:
+      "The official languages are Irish and English; Dingle sits in the Gaeltacht, and many local signs and place names appear in Irish. The town is known for its seafood and traditional-music pubs. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "The Slea Head viewpoint; early Christian remains such as the Gallarus Oratory beehive huts; Dingle's resident dolphin-watching tours; the Slea Head loop drive along the peninsula's coast.",
+    whenAndTips:
+      "May–September is the most pleasant season; the peninsula's coastal roads are narrow with many tight bends, so drive carefully. The town's traditional-music pubs in the evening are a great way to experience local culture.",
+  },
+  waterford: {
+    identity:
+      "Waterford is Ireland's oldest city, founded by Vikings in 914, with a population of about 56,000, sitting at the mouth of the River Suir in south-east Ireland and known for its crystal craftsmanship.",
+    layout:
+      "The old town is built along the north bank of the Suir, with the Viking Triangle preserving a medieval street layout; the suburbs extend out along the river mouth toward Waterford Harbour.",
+    gettingAround:
+      "Waterford Airport has very limited scheduled service; most travellers connect via Cork Airport (about 110 km) or Dublin Airport (about 165 km), or take the train to and from Dublin (about 2.5 hours). The old town is walkable. The climate is temperate maritime.",
+    culture:
+      "The official languages are Irish and English, with English used day to day. Waterford Crystal is one of Ireland's signature craft brands, and the city's history is closely tied to its Viking and Norman settlement traditions. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "A tour of the Waterford Crystal workshop; Reginald's Tower (Ireland's oldest surviving urban building); the medieval museum cluster in the Viking Triangle. Day trips to the Comeragh Mountains nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season; as Ireland's oldest city, Waterford is well suited to a half- to full-day deep dive into its Viking-Norman historic quarter.",
+  },
+  limerick: {
+    identity:
+      "Limerick is Ireland's third-largest city, with a population of about 94,000, sitting at the mouth of the River Shannon and serving as an important city and gateway in Munster, west-central Ireland.",
+    layout:
+      "The old town is built along the Shannon, with King John's Castle guarding a key crossing point; the city is divided into historic quarters including Irishtown, Englishtown and Newtown Pery.",
+    gettingAround:
+      "Shannon Airport is about 25 km from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
+    culture:
+      "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is also the namesake origin of the five-line comic verse form, the \"limerick.\" Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "King John's Castle; St Mary's Cathedral, Limerick; a walk along the Shannon. Day trips to medieval sites along the Shannon such as Bunratty Castle.",
+    whenAndTips:
+      "May–September is the most pleasant season; Limerick is a convenient gateway for exploring the Shannon and County Clare (the Burren, Cliffs of Moher), about a 1.5-hour drive from the Cliffs of Moher.",
+  },
+  galway: {
+    identity:
+      "Galway is the core city of Connacht in western Ireland, with a population of about 80,000, sitting on Galway Bay at the mouth of the River Corrib. It is the gateway for exploring Connemara and the Aran Islands, and an important centre of Gaelic culture.",
+    layout:
+      "The compact city centre is built at the mouth of the Corrib, with the Latin Quarter preserving a medieval street layout, and the Salthill promenade extending out along Galway Bay.",
+    gettingAround:
+      "Galway Airport no longer operates scheduled services; the nearest airport is Shannon (about 100 km). The city centre is walkable; reaching Connemara and the Aran Islands requires a car, a tour, or a ferry. The climate is temperate maritime, rainy and windy.",
+    culture:
+      "The official languages are Irish and English; Galway and its surrounding area form an important Gaeltacht region, with a lively atmosphere of street performers and traditional-music pubs. The Galway International Arts Festival (July) is a major cultural event in Ireland. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "The Latin Quarter streets and St Nicholas' Church; the Salthill promenade; the Corrib weir and its salmon-run viewing point; the classic starting point for day trips to the Twelve Bens of Connemara and the Aran Islands.",
+    whenAndTips:
+      "May–September is the most pleasant season and also peak time for the Galway International Arts Festival; check ferry schedules ahead for the Aran Islands, as winter sailings are prone to weather disruption.",
+  },
+  westport: {
+    identity:
+      "Westport is a small town in County Mayo in western Ireland, with a population of about 6,000, the traditional gateway to Croagh Patrick and Achill Island, and often considered one of Ireland's most liveable small towns.",
+    layout:
+      "The town was built to an 18th-century plan by architect James Wyatt, with a canal and tree-lined boulevard running through the centre — one of the few planned towns in Ireland.",
+    gettingAround:
+      "Ireland West Airport Knock is about 50 km from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
+    culture:
+      "The official languages are Irish and English, with English used day to day. Westport is known for its neatly planned town centre and lively music-pub culture, and is an important hub for outdoor tourism in western Ireland. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "Hiking Croagh Patrick, an important pilgrimage mountain in Ireland; the cliffs at Keem Bay on Achill Island; the ferry to Clare Island; the Westport House estate and Mall.",
+    whenAndTips:
+      "May–September is the most pleasant season; on Reek Sunday, the last Sunday of July each year, large numbers of pilgrims climb Croagh Patrick and the trail gets busy.",
+  },
+  "donegal-town": {
+    identity:
+      "Donegal Town is a small town in County Donegal in north-west Ireland, with a population of about 2,800, the traditional gateway to Slieve League and Glenveagh National Park.",
+    layout:
+      "The town is centred on a triangular market square known as the Diamond, with Donegal Castle standing beside the river mouth — a historic trading post on Donegal Bay.",
+    gettingAround:
+      "Donegal Airport (Carrickfinn) is about 65 km from town and has a government-subsidised route to Dublin. The town itself is walkable; reaching Slieve League and Glenveagh National Park requires a car. The climate is temperate maritime and among the windier parts of Ireland.",
+    culture:
+      "The official languages are Irish and English; County Donegal is an important Gaeltacht region. The area is known for the traditional craft of hand-woven Donegal tweed. Restaurant bills typically don't include a tip; around 10% is customary.",
+    seeAndDo:
+      "Donegal Castle; the Diamond market square. Slieve League nearby (one of Europe's highest sea cliffs) and Glenveagh National Park; the scenery along Donegal Bay.",
+    whenAndTips:
+      "May–September is the most pleasant season; as a comparatively remote part of north-west Ireland, driving is the most convenient way to explore Slieve League and Glenveagh National Park — mountain weather is changeable, so bring wind- and rain-proof gear.",
+  },
 };
