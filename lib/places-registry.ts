@@ -217,6 +217,9 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "fi-lounais-suomi": { zh: "西南芬兰", en: "Southwest Finland", order: 241 },
   "fi-jarvi-suomi": { zh: "湖区芬兰", en: "Finnish Lakeland", order: 242 },
   "fi-pohjois-suomi": { zh: "北芬兰（含拉普兰）", en: "Northern Finland (incl. Lapland)", order: 243 },
+  // 卢森堡（埃斯灵—古特兰）
+  "lu-oesling": { zh: "埃斯灵", en: "Oesling", order: 250 },
+  "lu-gutland": { zh: "古特兰", en: "Gutland", order: 251 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -255,6 +258,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "denmark", nameZh: "丹麦", nameEn: "Denmark" },
   { country: "sweden", nameZh: "瑞典", nameEn: "Sweden" },
   { country: "finland", nameZh: "芬兰", nameEn: "Finland" },
+  { country: "luxembourg", nameZh: "卢森堡", nameEn: "Luxembourg" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1930,6 +1934,61 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "IVL", nameZh: "伊瓦洛机场", nameEn: "Ivalo Airport", lon: 27.4053, lat: 68.6072 },
     source: "伊纳里村中心 68.9061,27.0272；IVL 机场（距市区约40km）：公开资料",
   },
+  // ===== 卢森堡 =====
+  {
+    id: "luxembourg-city", nameZh: "卢森堡市", nameEn: "Luxembourg City", country: "luxembourg", tier: "capital", zone: "lu-gutland",
+    lon: 6.1319, lat: 49.6117,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "卢森堡市中心 49.6117,6.1319；LUX 机场（距市区约6km）：公开资料",
+  },
+  {
+    id: "esch-sur-alzette", nameZh: "埃施阿尔泽特", nameEn: "Esch-sur-Alzette", country: "luxembourg", tier: "major", zone: "lu-gutland",
+    lon: 5.9806, lat: 49.4958,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "埃施阿尔泽特市中心 49.4958,5.9806；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约20km）：公开资料",
+  },
+  {
+    id: "echternach", nameZh: "埃希特纳赫", nameEn: "Echternach", country: "luxembourg", tier: "notable", zone: "lu-gutland",
+    lon: 6.4181, lat: 49.8114,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "埃希特纳赫市中心 49.8114,6.4181；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约30km）：公开资料",
+  },
+  {
+    id: "remich", nameZh: "雷米希", nameEn: "Remich", country: "luxembourg", tier: "notable", zone: "lu-gutland",
+    lon: 6.3667, lat: 49.5433,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "雷米希市中心 49.5433,6.3667；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约20km）：公开资料",
+  },
+  {
+    id: "diekirch", nameZh: "迪基希", nameEn: "Diekirch", country: "luxembourg", tier: "notable", zone: "lu-oesling",
+    lon: 6.1594, lat: 49.8683,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "迪基希市中心 49.8683,6.1594；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约35km）：公开资料",
+  },
+  {
+    id: "ettelbruck", nameZh: "埃特尔布吕克", nameEn: "Ettelbruck", country: "luxembourg", tier: "notable", zone: "lu-oesling",
+    lon: 6.1039, lat: 49.8486,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "埃特尔布吕克市中心 49.8486,6.1039；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约35km）：公开资料",
+  },
+  {
+    id: "vianden", nameZh: "维安登", nameEn: "Vianden", country: "luxembourg", tier: "notable", zone: "lu-oesling",
+    lon: 6.2050, lat: 49.9350,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "维安登市中心 49.9350,6.2050；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约45km）：公开资料",
+  },
+  {
+    id: "clervaux", nameZh: "克莱尔沃", nameEn: "Clervaux", country: "luxembourg", tier: "notable", zone: "lu-oesling",
+    lon: 6.0328, lat: 50.0553,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "克莱尔沃市中心 50.0553,6.0328；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约55km）：公开资料",
+  },
+  {
+    id: "esch-sur-sure", nameZh: "埃施叙尔苏尔", nameEn: "Esch-sur-Sûre", country: "luxembourg", tier: "notable", zone: "lu-oesling",
+    lon: 5.9167, lat: 49.9167,
+    airport: { iata: "LUX", nameZh: "卢森堡芬德尔机场", nameEn: "Luxembourg Findel Airport", lon: 6.2044, lat: 49.6233 },
+    source: "埃施叙尔苏尔市中心 49.9167,5.9167；本地无商业机场，最近机场为卢森堡芬德尔机场（距市区约45km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1959,6 +2018,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   denmark: "europe",
   sweden: "europe",
   finland: "europe",
+  luxembourg: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

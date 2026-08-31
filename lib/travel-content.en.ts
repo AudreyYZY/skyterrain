@@ -4459,4 +4459,146 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "December–March is the best window for the northern lights, and the village's remote location means extremely low light pollution; June–July brings the midnight sun, an ideal season for exploring Lake Inari and experiencing Sámi culture.",
   },
+
+  // ============ Luxembourg ============
+  "luxembourg-overview": {
+    identity:
+      "The Grand Duchy of Luxembourg sits in Western Europe, covering about 2,586 km² — one of the smallest sovereign states in Europe — with a population of roughly 670,000. It borders France, Germany and Belgium, and is a founding EU member state and an important financial centre.",
+    layout:
+      "The country divides roughly into two regions: the Oesling in the north (an extension of the Ardennes, valleys interwoven with plateau) and the Gutland in the south (gentler terrain, home to the capital, Luxembourg City, plus the sandstone \"Little Switzerland\" of Mullerthal in the east, the Moselle Valley wine region in the south-east, and the Minett red-lands district at the southern tip).",
+    gettingAround:
+      "Luxembourg Findel Airport is the country's only international airport; the rail and bus network is dense, and since 2020 public transport has been free for all passengers nationwide — the first country in Europe to make its entire public-transport network free. Driving is on the right; the country is small, and intercity journeys are usually under an hour. The climate is temperate maritime, mild and rainy year-round. Restaurant bills typically already include service, with no extra tip required. The voltage is 230V with EU-style two-round-pin plugs.",
+    culture:
+      "Luxembourgish, French and German are all official languages, with French commonly used in business and government documents and English proficiency also high. Close to half of Luxembourg's population are foreign residents, making it one of the most culturally diverse countries in Europe. Restaurant bills typically don't require a tip; rounding up is fine.",
+    seeAndDo:
+      "Natural landforms: the Mullerthal/Berdorf sandstone region (\"Little Switzerland\"), the Schiessentümpel waterfall, Vianden Castle in the Our Valley, the Upper Sûre Lake. Heritage and culture: the old town and fortifications of Luxembourg City (a World Heritage Site), the Pétrusse Casemates, Clervaux Castle (Battle of the Bulge memorial site), the Benedictine Abbey of Echternach. Food experience: a Moselle Valley wine tour.",
+    whenAndTips:
+      "May–September is the most pleasant season and the best time for hiking the Mullerthal Trail; the country is small enough that a day's car rental can cover several towns, and free public transport is also a convenient way to explore the whole country.",
+  },
+  "luxembourg-city": {
+    identity:
+      "Luxembourg City is the capital of the Grand Duchy, with a population of about 130,000, built on the Luxembourg Plateau's sandstone. It is a major seat of EU institutions and a leading global financial centre; its old town and fortifications were inscribed on the World Heritage List in 1994.",
+    layout:
+      "The old town is built on a promontory surrounded by gorges cut by the Alzette and Pétrusse rivers into the plateau, with the Bock promontory guarding one corner; the newer district — home to the EU institutions and the financial centre — lies on the Kirchberg plateau to the north.",
+    gettingAround:
+      "Findel Airport is about 6 km from the centre, reached by bus; public transport (bus and light rail) is free nationwide. The old town is walkable, with several bridges linking the different districts across the gorges. The climate is temperate maritime, mild and rainy year-round.",
+    culture:
+      "Luxembourgish, French and German are all official languages, and English proficiency is also high. As an international financial centre, the city has a high share of foreign residents and a diverse, international atmosphere. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Pétrusse Casemates (underground fortifications carved into the sandstone); the Bock promontory and the ruins of Bock Fortress; Place de la Constitution (the \"Gëlle Fra\" war memorial); the Grand Ducal Palace. The gorge-side walking circuit nearby (\"the Corniche,\" often called \"Europe's most beautiful balcony\").",
+    whenAndTips:
+      "May–September is the most pleasant season; the old town is compact, and walking plus the gorge-side walking circuit covers the main sights — worth setting aside half a day specifically for the casemates and the gorge walk.",
+  },
+  "esch-sur-alzette": {
+    identity:
+      "Esch-sur-Alzette is Luxembourg's second-largest city, with a population of about 36,000, at the heart of the Minett industrial region on the Alzette, which grew up from the 19th century around iron-ore mining and the steel industry.",
+    layout:
+      "The town is built along the Alzette, right on the French border; numerous historic mining sites surround it, some now converted into industrial-heritage parks, such as the Belval blast-furnace site.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide, with a light-rail and bus network in the city. The climate is temperate maritime.",
+    culture:
+      "All three official languages are in use; the city's historic draw of Italian and Portuguese immigrants for mining and steelwork has given it a culturally blended immigrant heritage. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Belval blast-furnace industrial-heritage site (preserving intact 19th-century ironworks); the National Museum of Mining, Minett; a nearby mining-heritage trail through the Minett Biosphere Reserve.",
+    whenAndTips:
+      "May–September is the most pleasant season; as the gateway to industrial-heritage tourism, plan half a day specifically to visit the Belval site and the mining museum.",
+  },
+  echternach: {
+    identity:
+      "Echternach is Luxembourg's oldest surviving town, its founding traceable to the Benedictine abbey established by St Willibrord in AD 698, with a population of about 6,000, and the traditional gateway to Mullerthal's \"Little Switzerland.\"",
+    layout:
+      "The old town is built along the Sûre, with the Benedictine abbey and the old market square forming its historic core; it sits right on the German border, with the Mullerthal sandstone region unfolding to the south-west.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 30 km); public transport is free nationwide. The old town is walkable; reaching the Mullerthal hiking area requires a car or bus. The climate is temperate maritime.",
+    culture:
+      "All three official languages are in use. Echternach's annual \"Hopping Procession,\" held the day after Whit Monday — a dancing pilgrimage tracing back to the Middle Ages — is inscribed on the UNESCO Intangible Cultural Heritage list. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Benedictine abbey and the crypt of St Willibrord's basilica; the old market square. Hiking the Mullerthal Trail nearby (the Berdorf sandstone area, the Schiessentümpel waterfall).",
+    whenAndTips:
+      "May–September is the most pleasant season and also peak time for hiking the Mullerthal; the Hopping Procession the day after Whit Monday is a unique chance to experience the local tradition.",
+  },
+  remich: {
+    identity:
+      "Remich is the core town of the Luxembourg section of the Moselle Valley, with a population of about 3,500, the centre of Luxembourg's only wine-growing region, known as the \"Pearl of the Moselle.\"",
+    layout:
+      "The town is built along the Moselle, with Germany directly across the river; the riverside promenade and wine estates form the core of the town's landscape.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide. The town itself is walkable; exploring the riverside vineyards requires a car or bicycle. The climate is temperate maritime, the mildest in Luxembourg.",
+    culture:
+      "All three official languages are in use. Remich and the surrounding villages are the core production area for Luxembourg's Crémant sparkling wine and Riesling and other white wines, and winery tastings are a key local tourist experience. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The Moselle riverside promenade; winery tastings (local Riesling and Crémant sparkling wine); a Moselle river cruise. Cycling the wine route through nearby villages.",
+    whenAndTips:
+      "May–September is the most pleasant season, with harvest-related festivals in September–October; the riverside cycle path is the classic way to explore the Moselle Valley.",
+  },
+  diekirch: {
+    identity:
+      "Diekirch is a historic town on the Sûre in northern Luxembourg, with a population of about 7,000, well known for its National Museum of Military History, and a gateway for exploring the Sûre Valley and the Oesling.",
+    layout:
+      "The old town is built along the Sûre, its historic quarter preserving a medieval layout, with the National Museum of Military History as the town's most important landmark.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 35 km); public transport is free nationwide. The old town is walkable. The climate is temperate maritime.",
+    culture:
+      "All three official languages are in use. Diekirch's historic role during the Battle of the Bulge in 1944–45 makes it an important Second World War memorial site in Luxembourg. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The National Museum of Military History (detailed exhibits on the Battle of the Bulge); the archaeological crypt beneath St Laurent's Church; the Sûre riverside promenade. Onward trips to the Upper Sûre Lake or Vianden nearby.",
+    whenAndTips:
+      "May–September is the most pleasant season; as the southern gateway to the Oesling, it suits a half-day museum visit followed by an onward trip to Vianden or the Upper Sûre Lake.",
+  },
+  ettelbruck: {
+    identity:
+      "Ettelbruck is a town at the confluence of the Alzette and Sûre in northern Luxembourg, with a population of about 9,000, an important transport hub for the Oesling region.",
+    layout:
+      "The town sits on the flat valley floor where the two rivers meet, a rail and road hub connecting Luxembourg City with the towns of the northern Oesling.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 35 km); public transport is free nationwide, and the train station is an important interchange for the north of the country. The climate is temperate maritime.",
+    culture:
+      "All three official languages are in use. Ettelbruck's Patton Square, commemorating the American general who directed operations from here during the Second World War, is an important witness to Luxembourg's wartime history. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Patton Square and the General Patton memorial; the Ettelbruck Military Museum. Onward connections to Vianden, Clervaux or Diekirch nearby.",
+    whenAndTips:
+      "Suitable year-round; as the northern transport hub, it works best as a base for reaching several Oesling towns rather than a destination in itself.",
+  },
+  vianden: {
+    identity:
+      "Vianden is a small town on the Our in northern Luxembourg, with a population of about 2,000; Vianden Castle is the largest surviving feudal castle in Luxembourg and one of the country's most iconic valley-and-castle landscapes.",
+    layout:
+      "The town is built along the floor of the Our Valley, with the castle standing atop a cliff on the eastern bank; a cable car connects the valley-floor town to the high ground where the castle sits.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 45 km); public transport is free nationwide. The town itself is walkable; reaching the castle is possible on foot or by cable car. The climate is temperate maritime, comparatively cool due to the valley setting.",
+    culture:
+      "All three official languages are in use. The 19th-century French writer Victor Hugo lived here in exile, and his former residence is now a memorial museum, an important local cultural landmark. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Vianden Castle (Luxembourg's largest surviving feudal castle); the Victor Hugo House museum; a cable-car ride to the summit for the view; hiking trails through the Our Valley.",
+    whenAndTips:
+      "May–September is the most pleasant season; the castle and town are especially striking during autumn foliage — worth setting aside half a day specifically to tour the castle interior.",
+  },
+  clervaux: {
+    identity:
+      "Clervaux is a small town in the Clerve Valley in northern Luxembourg, with a population of about 4,000; its medieval castle dominates high ground at the centre of the valley, and the town is an important historical witness to the Battle of the Bulge.",
+    layout:
+      "The town is built along both banks of the Clerve Valley, with the castle on high ground at the valley's centre and a Benedictine abbey on a nearby hill overlooking the whole valley.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 55 km); public transport is free nationwide. The town itself is walkable. The climate is temperate maritime.",
+    culture:
+      "All three official languages are in use. Clervaux Castle permanently houses \"The Family of Man,\" the classic photography exhibition curated by Edward Steichen, inscribed on the UNESCO Memory of the World Register. Restaurant bills typically already include service.",
+    seeAndDo:
+      "Clervaux Castle (the permanent \"Family of Man\" photography exhibition); the Benedictine Abbey of Saint Maurice and Maur; historic sites related to the Battle of the Bulge; hiking the Clerve Valley.",
+    whenAndTips:
+      "May–September is the most pleasant season; plan half a day for the castle's photography exhibition and the abbey, and it can easily be combined with a visit to nearby Vianden.",
+  },
+  "esch-sur-sure": {
+    identity:
+      "Esch-sur-Sûre is a small town on the shore of the Upper Sûre Lake, with a population of about 300; its old castle and old town are built on a bend of the Sûre, and it is the core gateway to the Upper Sûre Nature Park and the lake district.",
+    layout:
+      "The town is built on a near-closed river-bend peninsula of the Sûre, with the castle ruins overlooking the whole old town and river bend; the Upper Sûre reservoir lies right beside the town to the west.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 45 km); public transport is free nationwide, though exploring the lake district is best done by car or bicycle. The climate is temperate maritime.",
+    culture:
+      "All three official languages are in use. Though small, the town has long prioritised ecological protection given the Upper Sûre Lake's role as an important drinking-water source for Luxembourg, making it an important model area for ecotourism in the country. Restaurant bills typically already include service.",
+    seeAndDo:
+      "The ruins of Esch-sur-Sûre Castle; a walk around the old town's river-bend peninsula; water activities on the Upper Sûre Lake (canoeing, sailing); hiking and cycling trails through the Upper Sûre Nature Park.",
+    whenAndTips:
+      "May–September is the most pleasant season and also peak time for water activities on the lake; plan a day's cycling or hiking loop around the lake to fully experience the scenery of the Upper Sûre Nature Park.",
+  },
 };
