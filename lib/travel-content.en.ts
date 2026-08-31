@@ -3236,4 +3236,184 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September has relatively stable weather and is also whale-watching season. Weather on the island is changeable and rain can come at any time — bring a waterproof jacket. It's about an hour's drive between Sete Cidades and Furnas — plan a full day for a driving loop of the island. Book flights and ferries to and from the mainland ahead; some winter flights are weather-sensitive.",
   },
+
+  "belgium-overview": {
+    identity:
+      "Belgium sits in Western Europe, covering about 30,500 km² with a population of roughly 11.6 million. It hosts the headquarters of both the EU and NATO. The terrain rises gradually from the north-western coastal plain to the south-eastern Ardennes uplands; the country has three official languages — Dutch (Flemish), French and German — and three regions: Flanders, Wallonia and the Brussels-Capital Region.",
+    layout:
+      "Broadly divided into: Brussels-Capital Region (the capital, home to the EU institutions), Antwerp Province (Antwerp, a port and diamond-trading centre), West Flanders (Bruges and Ostend, historic towns and seaside resorts), East Flanders (Ghent), Flemish Brabant (Leuven, a university town), Liège Province (Liège and Spa), Namur Province (Namur and Dinant, in the Meuse Valley), and Hainaut (Mons).",
+    gettingAround:
+      "Belgium's rail network (SNCB/NMBS) is dense, and since cities are generally close together, the train is usually more convenient than flying between them. Brussels and Antwerp have metro and tram networks. Driving is on the right. The climate is temperate maritime — mild and humid year-round, with summers not too hot, winters not too cold, and fairly even rainfall, so carry rain gear. Power is 230V, European two-round-pin plug.",
+    culture:
+      "The three official languages are Dutch (Flemish), French and German — Flanders in the north speaks Dutch, Wallonia in the south speaks French, and English is widely spoken in tourist areas too. Belgian beer culture is world-renowned, with abbey beers and fruit beers in great variety — Belgian beer culture was inscribed on the UNESCO Intangible Cultural Heritage list in 2016; chocolate and fries are also important culinary symbols. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "Historic towns: the canals and belfry of Bruges, Ghent's medieval old town, Brussels's Grand Place. Natural landforms: the forests and valleys of the Ardennes (the Semois and Ourthe valleys), the Caves of Han-sur-Lesse, the Hautes Fagnes peat plateau. Coast and port: the Belgian coast dunes, the Port of Antwerp.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather; July–August is warmer but still mild, peak season for the seaside and outdoor activities; December's Christmas markets are a winter highlight. Belgium is a Schengen-area member; citizens of most countries follow Schengen rules for short visits — check the Belgian Ministry of Foreign Affairs and current Schengen regulations for specifics.",
+  },
+
+  brussels: {
+    identity:
+      "Brussels is Belgium's capital, with a population of about 1.2 million. It is also home to the headquarters of the European Union and NATO — genuinely the \"capital of Europe.\"",
+    layout:
+      "The Grand Place is the heart of the old town, ringed by the Gothic town hall and Baroque guild houses, inscribed as a UNESCO World Heritage site in 1998; the European Quarter lies east of the city centre, home to the European Commission and other EU institutions; St. Michael's Cathedral sits on high ground north of the old town.",
+    gettingAround:
+      "The airport lies about 12 km north-east of the centre, linked by direct express rail. Brussels's metro, tram and bus network covers the whole city, and the old town is walkable. The climate is temperate maritime, mild and humid year-round, with summers (June–August) not too hot and occasional winter snow. Power is 230V, European two-round-pin plug.",
+    culture:
+      "The official languages are French and Dutch, used bilingually; English is widely spoken in tourist areas. Belgium's beer and chocolate culture is especially concentrated in Brussels, with numerous beer bars and chocolate shops across the city. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The Grand Place and town hall; the Manneken Pis statue; the European Quarter and European Parliament; the Belgian Comic Strip Center (birthplace of Belgian comics including Tintin); day trips to Bruges or Ghent.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather; December's Christmas markets are atmospheric. Brussels is the main transport hub for exploring the whole of Belgium — the train is usually more convenient than driving.",
+  },
+
+  antwerp: {
+    identity:
+      "Antwerp is Belgium's second-largest city, with a population of about 530,000, set on the Scheldt River — Europe's second-largest port city and a major world centre of diamond trading.",
+    layout:
+      "The Grote Markt and town hall form the old-town centre; the Gothic spire of Our Lady's Cathedral marks the city skyline; the Diamond District sits near Central Station, home to numerous diamond-cutting and trading businesses.",
+    gettingAround:
+      "The airport lies about 5 km south-east of the centre. The city's tram and bus network is well developed, and the old town is walkable. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is Dutch (Flemish). Antwerp is an important centre of Belgian fashion design and the birthplace of the painter Rubens. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "Our Lady's Cathedral (housing works by Rubens); the Grote Markt; the Diamond District; a cruise on the Scheldt through the port; Central Station (a neo-Baroque building often called the \"railway cathedral\").",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Antwerp is an important gateway for exploring the Scheldt and the Flanders region.",
+  },
+
+  bruges: {
+    identity:
+      "Bruges is the capital of West Flanders, with a population of about 120,000, famous for its well-preserved medieval canals and old-town architecture; its old town was inscribed as a UNESCO World Heritage site in 2000.",
+    layout:
+      "The old town is ringed by a circular canal, with the Markt and belfry at its historic centre; the Lake of Love park and the Beguinage are quiet spots within the old town, and the medieval buildings along the canals are exceptionally well preserved.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Ostend-Bruges International Airport (about 25 km). The old town is best explored on foot or by canal boat, and bicycles are also available. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is Dutch (Flemish). Bruges is a traditional centre of lace-making and chocolate craft. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The Markt and belfry; a canal boat tour; the Basilica of the Holy Blood; the Beguinage; the Lake of Love park.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather with comparatively fewer crowds; July–August is peak season, and the old town gets crowded. Bruges's old town is compact — best explored slowly on foot.",
+  },
+
+  ghent: {
+    identity:
+      "Ghent is the capital of East Flanders, with a population of about 260,000, preserving an extensive medieval old town; historically it was an important European textile centre.",
+    layout:
+      "The three towers of St. Bavo's Cathedral, the belfry and St. Nicholas' Church stand together, marking the old-town skyline; Gravensteen Castle is a well-preserved medieval fortress; the old town is laid out around the confluence of the Leie and Scheldt rivers.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Brussels Airport (about 55 km). The old town is walkable, with a tram network across the city. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is Dutch (Flemish). Ghent is an important university city with a lively youth culture. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "St. Bavo's Cathedral (housing the Van Eyck brothers' famous Ghent Altarpiece); Gravensteen Castle; the old town's canal views; day trips to Bruges or Antwerp.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Ghent draws comparatively fewer visitors than Bruges, offering another way to experience Belgium's medieval old towns.",
+  },
+
+  liege: {
+    identity:
+      "Liège is the capital of Liège Province, with a population of about 200,000, set on the Meuse River — the largest city in Wallonia and an important commercial and industrial centre in eastern Belgium.",
+    layout:
+      "Place Saint-Lambert and Liège Cathedral form the old-town core; the old town is laid out along both banks of the Meuse, and the Montagne de Bueren steps (374 of them) connect the old town to a hilltop viewpoint; Liège-Guillemins station is a well-known piece of modern architecture.",
+    gettingAround:
+      "The airport lies about 6 km south-west of the centre, mainly a cargo hub with some passenger flights. City buses and trams cover the main districts. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is French. Liège has historically been known for its steel and coal industries. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "Liège-Guillemins station; the Montagne de Bueren steps and hilltop view; the old town along the Meuse; day trips to Spa or the Vesdre Valley.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Liège is the gateway city for exploring the northern Ardennes and the Vesdre Valley.",
+  },
+
+  namur: {
+    identity:
+      "Namur is the capital of Wallonia, with a population of about 110,000, set at the confluence of the Meuse and Sambre rivers; the citadel on the hill above is the city's landmark.",
+    layout:
+      "The Citadel of Namur stands on the hill at the confluence of the Meuse and Sambre, overlooking the city; the old town sits at the citadel's foot, laid out along both riverbanks.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Brussels South Charleroi Airport (about 35 km). The old town is walkable, and a cable car climbs to the citadel for a view over the confluence. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is French. Namur is the political centre of Wallonia. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The Citadel of Namur and its cable car; views over the Meuse-Sambre confluence; the old-town streets; day trips to Dinant or the Condroz.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Namur is an ideal base for exploring the Meuse Valley and the Condroz plateau.",
+  },
+
+  leuven: {
+    identity:
+      "Leuven is the capital of Flemish Brabant, with a population of about 100,000. Founded in 1425, KU Leuven is the oldest university in the Low Countries, giving the city its youthful energy.",
+    layout:
+      "The Gothic town hall is the old town's landmark; the Groot Begijnhof is a well-preserved historic quarter within the old town; the buildings of KU Leuven's various faculties are scattered throughout the old town, woven into the fabric of the city.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Brussels Airport (about 25 km). The old town is walkable and bike-friendly, and a direct train reaches Brussels in about 25 minutes. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is Dutch (Flemish). As a university city, Leuven has a strong student culture and a lively bar street (the Oude Markt, sometimes called \"the longest bar in Europe\"). Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The town hall; the Groot Begijnhof; the Oude Markt; KU Leuven's university library; a visit to the Stella Artois brewery.",
+    whenAndTips:
+      "The city's student atmosphere is liveliest during term time (September–June). Leuven is very close to Brussels, making it a good day-trip destination or an alternative base to Brussels.",
+  },
+
+  mons: {
+    identity:
+      "Mons is the capital of Hainaut, with a population of about 95,000, and was European Capital of Culture in 2015 — an important cultural city in western Wallonia.",
+    layout:
+      "The Grand Place and town hall form the old-town centre; the belfry (part of the Belfries of Belgium and France UNESCO World Heritage listing) overlooks the city; the Collegiate Church of St. Waltrude is an important Gothic building in the old town.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Brussels South Charleroi Airport (about 15 km). The old town is walkable. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is French. Mons's annual Doudou folk procession (inscribed on the UNESCO Intangible Cultural Heritage list) is an important local tradition. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The Grand Place and belfry; the Collegiate Church of St. Waltrude; the Mons Memorial Museum; day trips to the industrial heritage sites along the Sambre.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. The Doudou procession in late May/early June is the best time to experience local folk culture.",
+  },
+
+  dinant: {
+    identity:
+      "Dinant is a small town in Namur Province on the Meuse, with a population of about 13,000, known for its clifftop citadel and as the birthplace of Adolphe Sax, inventor of the saxophone.",
+    layout:
+      "The Citadel of Dinant stands on the steep cliff along the eastern bank of the Meuse, overlooking the town; the old town lies along the western bank, its onion-domed collegiate church spire marking the skyline.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Brussels South Charleroi Airport (about 50 km). The old town is walkable, and a cable car climbs to the citadel. The climate is temperate maritime, mild and humid year-round.",
+    culture:
+      "The official language is French. Dinant is the birthplace of Adolphe Sax, inventor of the saxophone, and saxophone-themed decorations and statues are visible throughout the town. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The Citadel of Dinant and its cable car; the collegiate church; a Meuse river cruise; day trips to the Caves of Han-sur-Lesse or the Ourthe Valley.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Dinant is an ideal gateway to the Meuse Valley and the western Ardennes.",
+  },
+
+  ostend: {
+    identity:
+      "Ostend is a North Sea seaside city in West Flanders, with a population of about 70,000 — the largest seaside resort and port city on the Belgian coast.",
+    layout:
+      "The seafront promenade and beach are the city's main recreational area; the old fishing harbour retains the character of a traditional fishing town; Maria Hendrika Park is an important green space in the city.",
+    gettingAround:
+      "The airport lies about 3 km south-west of the centre, shared with Bruges. City buses cover the main districts, and the seafront promenade is good for walking and cycling. The climate is temperate maritime, shaped by the North Sea, with cool summers and mild, windy winters.",
+    culture:
+      "The official language is Dutch (Flemish). Ostend is an important Belgian port for seafood and fish trading, with numerous seafood restaurants. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The seafront promenade and beach; the seafood market at the old fishing harbour; Maria Hendrika Park; day trips to the Belgian coast dunes or De Panne.",
+    whenAndTips:
+      "June–August is peak seaside season, with the most comfortable temperatures. Ostend is an ideal base for exploring the Belgian coast dunes.",
+  },
+
+  spa: {
+    identity:
+      "Spa is a thermal-spring town in the Ardennes in Liège Province, with a population of about 11,000 — the very origin of the word \"spa,\" and one of Europe's oldest thermal-spa resorts.",
+    layout:
+      "The thermal baths and casino are the town's central facilities; the old-town streets are laid out around the mineral springs; the Circuit de Spa-Francorchamps (host of the Belgian Grand Prix) lies in the Ardennes forest around the town.",
+    gettingAround:
+      "There is no commercial airport locally; the nearest is Liège Airport (about 35 km). The town is best explored on foot. The climate follows the Ardennes upland pattern, cooler and wetter than the rest of Belgium.",
+    culture:
+      "The official language is French. Spa has been famous across Europe since the 17th century for the therapeutic properties of its mineral waters, drawing European royalty and celebrities. Restaurant bills usually already include service; rounding up is customary.",
+    seeAndDo:
+      "The thermal baths (modern spa facilities available); the mineral spring sources; the Circuit de Spa-Francorchamps (open to visitors outside race periods); day trips to the Amblève Gorge and the Coo Waterfall.",
+    whenAndTips:
+      "April–June and September–October bring the most pleasant weather. Spa is an ideal base for exploring the forests and valleys of the eastern Ardennes.",
+  },
 };

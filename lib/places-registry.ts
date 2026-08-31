@@ -172,6 +172,15 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "pt-algarve": { zh: "阿尔加维", en: "Algarve", order: 154 },
   "pt-madeira": { zh: "马德拉", en: "Madeira", order: 155 },
   "pt-azores": { zh: "亚速尔", en: "Azores", order: 156 },
+  // 比利时（order 从 200 开始，与并行分支预留的号段错开）
+  "be-brussels": { zh: "布鲁塞尔首都区", en: "Brussels-Capital", order: 200 },
+  "be-antwerp": { zh: "安特卫普省", en: "Antwerp Province", order: 201 },
+  "be-west-flanders": { zh: "西弗兰德省", en: "West Flanders", order: 202 },
+  "be-east-flanders": { zh: "东弗兰德省", en: "East Flanders", order: 203 },
+  "be-flemish-brabant": { zh: "佛兰芒布拉班特省", en: "Flemish Brabant", order: 204 },
+  "be-liege": { zh: "列日省", en: "Liège Province", order: 205 },
+  "be-namur": { zh: "那慕尔省", en: "Namur Province", order: 206 },
+  "be-hainaut": { zh: "埃诺省", en: "Hainaut", order: 207 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -203,6 +212,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "germany", nameZh: "德国", nameEn: "Germany" },
   { country: "greece", nameZh: "希腊", nameEn: "Greece" },
   { country: "portugal", nameZh: "葡萄牙", nameEn: "Portugal" },
+  { country: "belgium", nameZh: "比利时", nameEn: "Belgium" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -1415,6 +1425,73 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "PDL", nameZh: "蓬塔德尔加达机场", nameEn: "Ponta Delgada Airport", lon: -25.6979, lat: 37.7412 },
     source: "蓬塔德尔加达市中心 37.7412,-25.6756；PDL 机场：公开资料",
   },
+  // ===== 比利时 =====
+  {
+    id: "brussels", nameZh: "布鲁塞尔", nameEn: "Brussels", country: "belgium", tier: "capital", zone: "be-brussels",
+    lon: 4.3517, lat: 50.8503,
+    airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）", nameEn: "Brussels Airport (Zaventem)", lon: 4.4844, lat: 50.9014 },
+    source: "布鲁塞尔市中心 50.8503,4.3517；BRU 机场：公开资料",
+  },
+  {
+    id: "antwerp", nameZh: "安特卫普", nameEn: "Antwerp", country: "belgium", tier: "major", zone: "be-antwerp",
+    lon: 4.4025, lat: 51.2194,
+    airport: { iata: "ANR", nameZh: "安特卫普机场（德尔讷）", nameEn: "Antwerp Airport (Deurne)", lon: 4.4603, lat: 51.1892 },
+    source: "安特卫普市中心 51.2194,4.4025；ANR 机场：公开资料",
+  },
+  {
+    id: "bruges", nameZh: "布鲁日", nameEn: "Bruges", country: "belgium", tier: "major", zone: "be-west-flanders",
+    lon: 3.2247, lat: 51.2093,
+    airport: { iata: "OST", nameZh: "奥斯坦德—布鲁日国际机场", nameEn: "Ostend-Bruges International Airport", lon: 2.8642, lat: 51.1989 },
+    source: "布鲁日市中心 51.2093,3.2247；OST 机场：公开资料",
+  },
+  {
+    id: "ghent", nameZh: "根特", nameEn: "Ghent", country: "belgium", tier: "notable", zone: "be-east-flanders",
+    lon: 3.7174, lat: 51.0543,
+    airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）", nameEn: "Brussels Airport (Zaventem)", lon: 4.4844, lat: 50.9014 },
+    source: "根特市中心 51.0543,3.7174；本地无商业机场，最近机场为布鲁塞尔机场（距市区约55km）：公开资料",
+  },
+  {
+    id: "liege", nameZh: "列日", nameEn: "Liège", country: "belgium", tier: "notable", zone: "be-liege",
+    lon: 5.5731, lat: 50.6326,
+    airport: { iata: "LGG", nameZh: "列日机场", nameEn: "Liège Airport", lon: 5.4432, lat: 50.6374 },
+    source: "列日市中心 50.6326,5.5731；LGG 机场：公开资料",
+  },
+  {
+    id: "namur", nameZh: "那慕尔", nameEn: "Namur", country: "belgium", tier: "notable", zone: "be-namur",
+    lon: 4.8657, lat: 50.4669,
+    airport: { iata: "CRL", nameZh: "布鲁塞尔南沙勒罗瓦机场", nameEn: "Brussels South Charleroi Airport", lon: 4.4538, lat: 50.4592 },
+    source: "那慕尔市中心 50.4669,4.8657；本地无商业机场，最近机场为布鲁塞尔南沙勒罗瓦机场（距市区约35km）：公开资料",
+  },
+  {
+    id: "leuven", nameZh: "鲁汶", nameEn: "Leuven", country: "belgium", tier: "notable", zone: "be-flemish-brabant",
+    lon: 4.7011, lat: 50.8798,
+    airport: { iata: "BRU", nameZh: "布鲁塞尔机场（扎芬特姆）", nameEn: "Brussels Airport (Zaventem)", lon: 4.4844, lat: 50.9014 },
+    source: "鲁汶市中心 50.8798,4.7011；本地无商业机场，最近机场为布鲁塞尔机场（距市区约25km）：公开资料",
+  },
+  {
+    id: "mons", nameZh: "蒙斯", nameEn: "Mons", country: "belgium", tier: "notable", zone: "be-hainaut",
+    lon: 3.9520, lat: 50.4542,
+    airport: { iata: "CRL", nameZh: "布鲁塞尔南沙勒罗瓦机场", nameEn: "Brussels South Charleroi Airport", lon: 4.4538, lat: 50.4592 },
+    source: "蒙斯市中心 50.4542,3.9520；本地无商业机场，最近机场为布鲁塞尔南沙勒罗瓦机场（距市区约20km）：公开资料",
+  },
+  {
+    id: "dinant", nameZh: "迪南", nameEn: "Dinant", country: "belgium", tier: "notable", zone: "be-namur",
+    lon: 4.9127, lat: 50.2603,
+    airport: { iata: "CRL", nameZh: "布鲁塞尔南沙勒罗瓦机场", nameEn: "Brussels South Charleroi Airport", lon: 4.4538, lat: 50.4592 },
+    source: "迪南市中心 50.2603,4.9127；本地无商业机场，最近机场为布鲁塞尔南沙勒罗瓦机场（距市区约50km）：公开资料",
+  },
+  {
+    id: "ostend", nameZh: "奥斯坦德", nameEn: "Ostend", country: "belgium", tier: "notable", zone: "be-west-flanders",
+    lon: 2.9265, lat: 51.2154,
+    airport: { iata: "OST", nameZh: "奥斯坦德—布鲁日国际机场", nameEn: "Ostend-Bruges International Airport", lon: 2.8642, lat: 51.1989 },
+    source: "奥斯坦德市中心 51.2154,2.9265；OST 机场：公开资料",
+  },
+  {
+    id: "spa", nameZh: "斯帕", nameEn: "Spa", country: "belgium", tier: "notable", zone: "be-liege",
+    lon: 5.8642, lat: 50.4914,
+    airport: { iata: "LGG", nameZh: "列日机场", nameEn: "Liège Airport", lon: 5.4432, lat: 50.6374 },
+    source: "斯帕市中心 50.4914,5.8642；本地无商业机场，最近机场为列日机场（距市区约35km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -1437,6 +1514,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   germany: "europe",
   greece: "europe",
   portugal: "europe",
+  belgium: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {
