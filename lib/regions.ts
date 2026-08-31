@@ -55,7 +55,7 @@ export const REGIONS: Region[] = [
     name: "欧洲",
     nameEn: "Europe",
     center: { lon: 15.0, lat: 52.0, height: 6500000 },
-    terrainCount: 305,
+    terrainCount: 331,
     available: true,
   },
   {
@@ -169,6 +169,7 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   germany: "western-europe",
   greece: "southern-europe",
   portugal: "southern-europe",
+  netherlands: "western-europe",
   austria: "western-europe",
 };
 
@@ -196,6 +197,7 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "norway", name: "挪威", nameEn: "Norway", code: "NO" },
   { slug: "uk", name: "英国", nameEn: "United Kingdom", code: "UK" },
   // 西欧
+  { slug: "netherlands", name: "荷兰", nameEn: "Netherlands", code: "NL" },
   { slug: "france", name: "法国", nameEn: "France", code: "FR" },
   { slug: "switzerland", name: "瑞士", nameEn: "Switzerland", code: "CH" },
   { slug: "germany", name: "德国", nameEn: "Germany", code: "DE" },

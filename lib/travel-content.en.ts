@@ -3237,6 +3237,188 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September has relatively stable weather and is also whale-watching season. Weather on the island is changeable and rain can come at any time — bring a waterproof jacket. It's about an hour's drive between Sete Cidades and Furnas — plan a full day for a driving loop of the island. Book flights and ferries to and from the mainland ahead; some winter flights are weather-sensitive.",
   },
 
+  // ============ Netherlands ============
+  "netherlands-overview": {
+    identity:
+      "The Netherlands is an extremely low-lying country in Western Europe, about 42,000 sq km with a population of about 18 million; more than a quarter of the country is below sea level, and even the national high point, Vaalserberg, is only 322.7 m. This is a country that has dealt with the sea and water for centuries — reclaiming land and building dikes is a tradition running through hundreds of years of history, and the Dutch name for the country itself carries the meaning 'low land'.",
+    layout:
+      "It helps to divide the Netherlands into: North Holland (Amsterdam and surroundings, the dune coast); South Holland (Rotterdam, The Hague — the port and political centre); Utrecht province (the central rail hub); Limburg (Maastricht, the only province with pronounced relief); Groningen and Friesland (the north, near the Wadden Sea); and Overijssel (the historic Hanseatic town on the IJssel).",
+    gettingAround:
+      "The Netherlands is small and the rail network is extensive — most major cities are 1–2 hours apart by train, the everyday way the Dutch get around, and domestic flights are very limited (only Schiphol to Maastricht and to Groningen). The bicycle is another Dutch trademark, with a well-developed cycle-lane network in almost every city, and visitors can rent one too. Drive on the right; parking downtown is inconvenient and expensive. Restaurant tipping is not required (rounding up or leaving 5–10% is fine). Tap water is drinkable. Power is 230V with the European two-round-pin plug.",
+    culture:
+      "The official language is Dutch, and English proficiency is among the highest of any non-English-speaking country in the world — you can communicate in English in almost any setting. The Dutch are known for being direct and practical, and generally say what they mean. Cycling, environmental awareness and social tolerance are all hallmarks of Dutch culture. Restaurant tipping is not required — rounding up or leaving 5–10% is fine.",
+    seeAndDo:
+      "The canal belt and museums of Amsterdam; the modern architecture and port of Rotterdam; the waterborne village of Giethoorn; Keukenhof Gardens (spring tulips); the windmill village of Zaanse Schans; the mudflats and dunes of the Wadden Sea and West Frisian Islands; the historic centre of Maastricht; the flood barriers of the Delta Works.",
+    whenAndTips:
+      "April–May is tulip season, the most popular time to visit; June–August has the mildest, most comfortable weather. The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. The weather is changeable, windy and rainy year-round — keep a waterproof jacket handy. When cycling, follow local traffic rules and watch for tram tracks.",
+  },
+
+  amsterdam: {
+    identity:
+      "Amsterdam is the capital of the Netherlands, with a metro area of about 1.5 million, named for a dam built on the Amstel river ('Amstel dam'). It rose to become a global centre of trade and finance during the 17th-century Dutch Golden Age, and the concentric canal belt around its centre survives intact today, inscribed as a whole as a UNESCO World Heritage Site in 2010.",
+    layout:
+      "Amsterdam's old town is built around four concentric canals, centred on Dam Square (site of the Royal Palace). Inside the canal belt is the dense historic centre, including the well-known Red Light District and the Jordaan quarter; outside it are the more modern residential and commercial South and East districts. The whole city is low-lying, much of it at or below sea level.",
+    gettingAround:
+      "Schiphol Airport (AMS) is about 15 km from the city, with a train straight to Central Station (about 15 minutes). The city has trams, buses, a metro and ferries; the bicycle is one of the main ways to get around, and renting one is easy. The old canal-side streets are narrow, and pedestrians should watch closely for bikes and trams. The climate is temperate maritime, mild year-round with rain and wind.",
+    culture:
+      "Dutch is the main language, with extremely high English proficiency. Amsterdam's pace is moderate, and the city is highly accepting of diverse cultures and lifestyles. Cycling is a daily habit for locals — visitors renting a bike should follow traffic rules and give way to trams and pedestrians. Restaurant tipping is not required.",
+    seeAndDo:
+      "A canal-belt boat tour; the Van Gogh Museum and the Rijksmuseum (Rembrandt's 'The Night Watch'); the Anne Frank House (Second World War history — a sombre subject; book online well ahead); the Royal Palace and Dam Square; the markets and shops of the Jordaan; the Bloemenmarkt flower market; the Red Light District (learn the background first, then decide for yourself whether to visit).",
+    whenAndTips:
+      "April–May (tulip season) and June–August (the most comfortable weather) are also the two busiest times of year. Book popular sights such as the Anne Frank House and the Van Gogh Museum online weeks ahead. Follow traffic rules when cycling, and mind local etiquette around photography in the Red Light District. Canal-side cobbles are slippery — wear grippy shoes.",
+  },
+
+  haarlem: {
+    identity:
+      "Haarlem is the capital of North Holland, with a metro area of about 160,000, about 20 km west of Amsterdam and just inland from the Holland Dunes coast — one of the oldest cities in the Netherlands, an important textile and brewing centre in the 17th century, and the hometown of Dutch Golden Age painter Frans Hals.",
+    layout:
+      "Haarlem's old town centres on the Grote Markt, with St Bavo's Church as the city's landmark. The old town preserves many 17th-century gabled buildings, and the Spaarne river runs through the city. The dune-coast national park is not far to the west.",
+    gettingAround:
+      "Haarlem has no airport; the nearest is Schiphol (about 20 minutes by car). The train from Amsterdam takes about 15 minutes, making it a popular day trip. The old town is walkable, and cycling is also convenient. The climate is temperate maritime, moderated by the coast, mild and windy.",
+    culture:
+      "Dutch is the main language, with widespread English. Haarlem is quieter and more 'local' than Amsterdam, a favourite weekend destination for the Dutch themselves. Restaurant tipping is not required.",
+    seeAndDo:
+      "St Bavo's Church (with a famous historic organ once played by Mozart); the Frans Hals Museum; the Grote Markt and its historic buildings; nearby Keukenhof Gardens (spring tulips, about 30 minutes away); hiking or cycling in the Holland Dunes national park.",
+    whenAndTips:
+      "During tulip season (April–May), nearby Keukenhof Gardens gets very crowded — book tickets ahead. Haarlem itself suits half a day to a day, often visited as a side trip around Amsterdam.",
+  },
+
+  texel: {
+    identity:
+      "Texel is the largest and most populous of the West Frisian Islands, in the northernmost waters of the Netherlands, with a resident population of about 14,000 — a distinctive Dutch island ecotourism destination, its dunes, mudflats, pasture and lighthouses giving it a landscape quite unlike the mainland.",
+    layout:
+      "Texel is long and narrow: continuous beach and dune on the North Sea side, intertidal mudflat on the Wadden Sea side, and pasture and small villages in the middle. Den Burg is the island's largest village and ferry-terminal town, and a historic lighthouse stands at De Cocksdorp on the northern tip.",
+    gettingAround:
+      "Texel has no scheduled commercial flights; a ferry runs from Den Helder on the mainland (about 20 minutes), with parking and bus connections at the terminal. The island has buses, but the bicycle is the main way to get around, on a well-developed network of cycle paths. The climate is temperate maritime, windier and more changeable than the mainland.",
+    culture:
+      "Dutch is the main language; tourism is an important pillar of the island economy, and English is widespread. Islanders live at a relaxed pace, closely tied to the Wadden Sea and North Sea, and traditional sheep farming and fishing continue today. Restaurant tipping is not required.",
+    seeAndDo:
+      "Cycling or walking the North Sea beaches; the lighthouse and seal sanctuary at De Cocksdorp (you can visit the seal rehabilitation centre); hiking the Wadden Sea mudflats (go with a certified guide — there is risk near high tide); Ecomare (introducing Wadden Sea ecology); the island's traditional villages and windmills.",
+    whenAndTips:
+      "May–September is best, also the island's peak season for mainland visitors — book ferries and lodging ahead. It's windy by the sea — carry a windproof jacket. For Wadden Sea mudflat walks, always know the tide times and never go alone.",
+  },
+
+  rotterdam: {
+    identity:
+      "Rotterdam is the second-largest city in the Netherlands, with a metro area of about 1.2 million, and Europe's largest port. Its centre was almost completely destroyed by bombing in the Second World War, and the postwar rebuild boldly embraced modernist and contemporary architecture, a sharp contrast to Amsterdam's historic streets — earning Rotterdam the nickname 'the architecture capital' of the Netherlands.",
+    layout:
+      "Rebuilt after the war, Rotterdam's centre has an open, modern urban layout, with landmark contemporary buildings such as the Cube Houses, the Erasmus Bridge and the Markthal scattered through it. The Meuse runs through the city, and the riverside districts (such as Rotterdam South) have developed rapidly in recent years. The port area (the Europoort) extends west along the river toward the North Sea.",
+    gettingAround:
+      "Rotterdam The Hague Airport (RTM) is about 8 km from the city, with a bus connection; you can also take the train from Schiphol (about 40 minutes). The city has a metro, trams and buses, and the centre is easy to walk or cycle. The climate is temperate maritime, windier around the port.",
+    culture:
+      "Dutch is the main language, with widespread English. Because of the port economy, Rotterdam is ethnically diverse, with a practical, young character and strong openness to new architecture and contemporary art, a contrast to Amsterdam's more historic feel. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Cube Houses and the Erasmus Bridge; the Markthal (a huge mural under an arched ceiling, with food stalls inside); Rotterdam Zoo; a port cruise around the Europoort; the WWII bombing memorial statue 'The Destroyed City' (a sombre subject); the canal town of Delft (about 20 minutes away).",
+    whenAndTips:
+      "May–September is the most comfortable. The Markthal gets busy at peak dining times (weekend lunches) — go outside those hours if you can. Check schedules ahead for port cruises. Rotterdam is often used as a base for exploring South Holland towns such as Delft and The Hague.",
+  },
+
+  "the-hague": {
+    identity:
+      "The Hague is the seat of the Dutch government and the residence of the Dutch king, with a metro area of about 1.1 million; although not the constitutional capital (that is Amsterdam), it is the Netherlands' de facto political centre, and is also home to the International Court of Justice, the International Criminal Court and other international judicial bodies, earning it the name 'the international city of peace and justice'.",
+    layout:
+      "The Hague's centre is built around the Binnenhof (the seat of the Dutch parliament), surrounded by government institutions and the embassy district. Scheveningen, to the west, is the largest beach resort in the Netherlands, with a long beach and a historic pier. Important museums such as the Mauritshuis cluster in the city centre.",
+    gettingAround:
+      "The Hague has no airport of its own; the nearest is Rotterdam The Hague Airport (about 15 km) or Schiphol (about 50 km). The city has trams and buses, with a direct tram from the centre to Scheveningen beach. The climate is temperate maritime, windier near the coast.",
+    culture:
+      "Dutch is the main language; because of the many international institutions, English and other languages are widespread. The Hague feels relatively formal and international, with many embassies and diplomatic staff. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Binnenhof and the Dutch parliament; the Mauritshuis (Vermeer's 'Girl with a Pearl Earring'); the Peace Palace (seat of the International Court of Justice — viewable from outside, with interior tours by appointment for some slots); Scheveningen beach and pier; Madurodam (a famous miniature-model park of Dutch landmarks).",
+    whenAndTips:
+      "May–September suits beach activities. The Mauritshuis has an exquisite but small collection — avoid weekend peak times. Interior tours of the Peace Palace have limited places and need advance application.",
+  },
+
+  delft: {
+    identity:
+      "Delft is between The Hague and Rotterdam, with a metro area of about 100,000, the hometown of Dutch Golden Age painter Vermeer and the birthplace of Delft Blue (Delftware, blue-and-white glazed pottery); Delft University of Technology is one of the largest technical universities in the Netherlands.",
+    layout:
+      "Delft's old town is small, laced with canals, centred on the Markt square (with the Oude Kerk and Nieuwe Kerk at either end). Delft University's campus is to the south, bringing a young energy to this historic small city.",
+    gettingAround:
+      "Delft has no airport; the nearest is Rotterdam The Hague Airport (about 10 km). The train from Rotterdam or The Hague takes about 10–15 minutes. The old town is walkable, and a bicycle rental is easy too. The climate is temperate maritime, similar to nearby cities.",
+    culture:
+      "Dutch is the main language; the university-town character brings a noticeable student atmosphere, with widespread English. Delft is proud of its local Delftware craft and Vermeer heritage. Restaurant tipping is not required.",
+    seeAndDo:
+      "The Markt square and the Nieuwe Kerk (climb the tower); a Royal Delft pottery workshop tour (see the traditional ceramic craft); the Vermeer Centre; the Delft University of Technology campus; a canal-side walk, taking in the light and atmosphere of Vermeer's paintings of the old town.",
+    whenAndTips:
+      "May–September is the most comfortable. Delft is small — half a day is enough, often a stop on a day trip from The Hague or Rotterdam. Check opening times ahead for the Delftware workshop tour.",
+  },
+
+  leiden: {
+    identity:
+      "Leiden is between Amsterdam and The Hague, with a metro area of about 140,000; founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including the astronomer Kepler and ancestors of Darwin studied or taught, and it is also the birthplace of Rembrandt.",
+    layout:
+      "Leiden's old town is ringed by canals, with the ruins of a hilltop fortress (De Burcht) as the high point overlooking the whole city. Leiden University's buildings and its botanical garden (one of the oldest in Europe) are scattered through the old town, woven into everyday city life.",
+    gettingAround:
+      "Leiden has no airport; the nearest is Schiphol (about 20 km). The train from Amsterdam or The Hague takes about 15–35 minutes. The old town is walkable, and cycling is convenient too. The climate is temperate maritime.",
+    culture:
+      "Dutch is the main language; the university-town character brings a strong academic atmosphere, with very high English proficiency. Leiden people are proud of the city's deep scholarly tradition. Restaurant tipping is not required.",
+    seeAndDo:
+      "Leiden University's old campus and the Hortus Botanicus; the hilltop fortress ruins for the city view; the National Museum of Antiquities (one of the largest archaeology museums in the Netherlands, with Egyptian artefacts); a plaque marking Rembrandt's birthplace; the wall poems along the canals (poems in many languages painted on old-town walls).",
+    whenAndTips:
+      "May–September is the most comfortable; 3 October's 'Leiden's Relief' festival (commemorating the 1574 lifting of the Spanish siege — a sombre historical commemoration) is an important local holiday. Leiden is often a convenient stop between Amsterdam and The Hague.",
+  },
+
+  utrecht: {
+    identity:
+      "Utrecht is the fourth-largest city in the Netherlands, with a metro area of about 360,000, in the geographic centre of the country and its most important rail hub; it is also home to Utrecht University, one of the largest in the Netherlands. The city's history goes back to Roman times, and in the Middle Ages it was the religious centre of the Netherlands.",
+    layout:
+      "Utrecht's old town has a distinctive multi-level canal structure (the Oudegracht, with warehouses converted into restaurants and bars at the lower level and streets above). The Dom Tower (the tallest church tower in the Netherlands) is the city's landmark, separated from the main body of the Dom Church since an 18th-century tornado destroyed the nave — the gap is now a square.",
+    gettingAround:
+      "Utrecht has no airport; the nearest is Schiphol (about 40 km). Utrecht Centraal is the busiest railway station in the Netherlands, about 25 minutes from Amsterdam. The old town is walkable, and cycling is convenient too (one of the highest bicycle-use cities in the Netherlands). The climate is temperate maritime.",
+    culture:
+      "Dutch is the main language; the university-town character brings a relatively young population, with widespread English. Utrecht is often cited as one of the Netherlands' most liveable cities, with a more relaxed pace than Amsterdam. Restaurant tipping is not required.",
+    seeAndDo:
+      "Climbing the Dom Tower for the city view (465 steps); a walk along the Oudegracht, taking in the riverside restaurants and bars; the Centraal Museum; the Rietveld Schröder House (a modernist architectural icon, a World Heritage Site, visit by appointment); an old-town canal boat tour.",
+    whenAndTips:
+      "May–September is the most comfortable. Book a time slot ahead for climbing the Dom Tower. Visits to the Rietveld Schröder House are limited — book online weeks ahead. Utrecht, as the core of the Dutch rail network, is a good base for exploring surrounding cities.",
+  },
+
+  maastricht: {
+    identity:
+      "Maastricht is the capital of Limburg province, with a metro area of about 120,000, in the far south of the Netherlands on the Meuse — one of the oldest cities in the country, an important town since Roman times because it commanded a crossing of the Meuse. The Maastricht Treaty, signed here in 1992, is one of the founding documents of the European Union.",
+    layout:
+      "Maastricht's old town straddles the Meuse, linked by St Servatius Bridge, one of the oldest bridges in the Netherlands. The old town preserves extensive medieval walls and churches, and the Vrijthof is the central square. Sitting near where the Netherlands, Belgium and Germany meet, the city's character blends Dutch, Belgian and German architecture and food.",
+    gettingAround:
+      "Maastricht Aachen Airport (MST) is about 9 km from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 50 minutes). The old town is walkable, and cycling is also an option. The climate is temperate maritime, slightly milder than the north of the Netherlands, and this is the region with the most pronounced relief in the country.",
+    culture:
+      "Dutch is the main language; being close to the Belgian and German borders, French and German are occasionally heard, with widespread English. Maastricht people are proud of a lifestyle closer to Burgundian ease (good food and wine, outdoor café culture), a contrast to the more practical style of the northern Netherlands. Restaurant tipping is not required.",
+    seeAndDo:
+      "St Servatius Bridge and the old town on both banks of the Meuse; Boekhandel Dominicanen (a bookshop converted from a medieval church, often rated one of the world's most beautiful bookshops); the Basilica of Our Lady and St John's Church; the Vrijthof (a hub of outdoor cafés and restaurants); the tunnels of St Pietersberg (prehistoric quarry passages, visit with a tour).",
+    whenAndTips:
+      "May–September is the most comfortable, also a good season for hiking and cycling in Limburg. Boekhandel Dominicanen gets busy in peak season — avoid weekend midday. As a city where the Netherlands, Belgium and Germany meet, a cross-border day trip is possible (check the day's Schengen-area rules).",
+  },
+
+  groningen: {
+    identity:
+      "Groningen is the largest city in the northern Netherlands, with a metro area of about 230,000, the capital of Groningen province and home to the University of Groningen, one of the top universities in the Netherlands; with such a high share of students in its population, it's sometimes called one of the Netherlands' 'youngest' cities.",
+    layout:
+      "Groningen's old town is ringed by a circular canal, with the landmark Martini Tower (a church bell tower) the highest point in the city. The Grote Markt is the centre, surrounded by university buildings, shops and cafés; the city overall is compact and easy to explore on foot or by bike.",
+    gettingAround:
+      "Groningen Airport Eelde (GRQ) is about 10 km from the city, with a bus connection; there are also direct flights from Amsterdam Schiphol (about 35 minutes). The old town is walkable, and the bicycle is the main way locals get around (Groningen is considered one of the Netherlands' most cycling-oriented cities). The climate is temperate maritime, windy given its proximity to the North Sea and Wadden Sea.",
+    culture:
+      "Dutch is the main language; the university-town character brings a high share of young people and lively nightlife, with very high English proficiency. Groningen people are proud of the local cycling culture and the city's student identity. Restaurant tipping is not required.",
+    seeAndDo:
+      "Climbing the Martini Tower for the city view; the Grote Markt and its historic buildings; the Groningen Museum (a striking contemporary building on the water); cycling along the old-town canals; an hour north to Wadden Sea coastal towns or Lauwersmeer National Park.",
+    whenAndTips:
+      "May–September is the most comfortable. Groningen is an ideal base for exploring the northern Netherlands (the Wadden Sea, Friesland). The city suits exploring by bike — rentals are available near the station.",
+  },
+
+  zwolle: {
+    identity:
+      "Zwolle is the capital of Overijssel province, with a metro area of about 130,000, on the IJssel; in the Middle Ages it was an important member of the Hanseatic League (the northern European trading-city alliance), and the old town still keeps a complete star-shaped fortification and walls — the gateway city to Giethoorn and other Overijssel sights.",
+    layout:
+      "Zwolle's old town has a classic star-fort layout, a moat running the whole way around the walls, with streets radiating out from St Michael's Church at the centre. The old town is small and its historic buildings are well preserved, one of the most complete medieval town layouts in the Netherlands.",
+    gettingAround:
+      "Zwolle has no airport; the nearest is Schiphol (about 120 km, 1.5–2 hours by car or train). The train from Amsterdam takes about 1 hour direct. The old town is walkable; reaching nearby sights such as Giethoorn needs a car or a regional bus (about 40 minutes). The climate is temperate maritime.",
+    culture:
+      "Dutch is the main language, with widespread English. Zwolle's pace is more relaxed than the big cities, and locals are proud of the Hanseatic history and the well-preserved old-town layout. Restaurant tipping is not required.",
+    seeAndDo:
+      "St Michael's Church; a walk along the star-shaped walls and moat; the Sassenpoort (one of the surviving medieval city gates); day trips to Giethoorn (the waterborne village) or Weerribben-Wieden National Park (peat-marsh wetland).",
+    whenAndTips:
+      "May–September is the most comfortable, also the best season for a boat trip in Giethoorn. Giethoorn gets busy in peak season (weekends, summer) — go on a weekday or early morning; public transport there is limited, so driving or a tour is more convenient.",
+  },
+
+  // ============ Austria ============
   "austria-overview": {
     identity:
       "Austria sits in Central Europe, covering about 84,000 km² with a population of roughly 9 million. It is a landlocked country, with about 62% of its territory covered by the Alps. The capital, Vienna, was once the seat of the Austro-Hungarian Empire under the Habsburg dynasty and still carries a deep classical-music and coffeehouse tradition.",

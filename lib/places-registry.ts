@@ -172,14 +172,21 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "pt-algarve": { zh: "阿尔加维", en: "Algarve", order: 154 },
   "pt-madeira": { zh: "马德拉", en: "Madeira", order: 155 },
   "pt-azores": { zh: "亚速尔", en: "Azores", order: 156 },
+  // 荷兰（北荷兰→南荷兰→乌得勒支→林堡→格罗宁根-弗里斯兰→上艾瑟尔）
+  "nl-noord-holland": { zh: "北荷兰省", en: "North Holland", order: 160 },
+  "nl-zuid-holland": { zh: "南荷兰省", en: "South Holland", order: 161 },
+  "nl-utrecht": { zh: "乌得勒支省", en: "Utrecht", order: 162 },
+  "nl-limburg": { zh: "林堡省", en: "Limburg", order: 163 },
+  "nl-groningen-friesland": { zh: "格罗宁根与弗里斯兰", en: "Groningen & Friesland", order: 164 },
+  "nl-overijssel": { zh: "上艾瑟尔省", en: "Overijssel", order: 165 },
   // 奥地利（维也纳→蒂罗尔→萨尔茨堡→上奥地利→克恩顿→施泰尔马克→福拉尔贝格）
-  "at-wien": { zh: "维也纳", en: "Vienna", order: 160 },
-  "at-tirol": { zh: "蒂罗尔", en: "Tyrol", order: 161 },
-  "at-salzburg": { zh: "萨尔茨堡州", en: "Salzburg (State)", order: 162 },
-  "at-oberosterreich": { zh: "上奥地利", en: "Upper Austria", order: 163 },
-  "at-karnten": { zh: "克恩顿", en: "Carinthia", order: 164 },
-  "at-steiermark": { zh: "施泰尔马克", en: "Styria", order: 165 },
-  "at-vorarlberg": { zh: "福拉尔贝格", en: "Vorarlberg", order: 166 },
+  "at-wien": { zh: "维也纳", en: "Vienna", order: 170 },
+  "at-tirol": { zh: "蒂罗尔", en: "Tyrol", order: 171 },
+  "at-salzburg": { zh: "萨尔茨堡州", en: "Salzburg (State)", order: 172 },
+  "at-oberosterreich": { zh: "上奥地利", en: "Upper Austria", order: 173 },
+  "at-karnten": { zh: "克恩顿", en: "Carinthia", order: 174 },
+  "at-steiermark": { zh: "施泰尔马克", en: "Styria", order: 175 },
+  "at-vorarlberg": { zh: "福拉尔贝格", en: "Vorarlberg", order: 176 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -211,6 +218,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "germany", nameZh: "德国", nameEn: "Germany" },
   { country: "greece", nameZh: "希腊", nameEn: "Greece" },
   { country: "portugal", nameZh: "葡萄牙", nameEn: "Portugal" },
+  { country: "netherlands", nameZh: "荷兰", nameEn: "Netherlands" },
   { country: "austria", nameZh: "奥地利", nameEn: "Austria" },
 ];
 
@@ -1424,6 +1432,66 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "PDL", nameZh: "蓬塔德尔加达机场", nameEn: "Ponta Delgada Airport", lon: -25.6979, lat: 37.7412 },
     source: "蓬塔德尔加达市中心 37.7412,-25.6756；PDL 机场：公开资料",
   },
+  // ── 荷兰 ──
+  {
+    id: "amsterdam", nameZh: "阿姆斯特丹", nameEn: "Amsterdam", country: "netherlands", tier: "capital", zone: "nl-noord-holland",
+    lon: 4.9041, lat: 52.3676,
+    airport: { iata: "AMS", nameZh: "史基浦机场", nameEn: "Amsterdam Schiphol Airport", lon: 4.7683, lat: 52.3105 },
+    source: "阿姆斯特丹市中心 52.3676,4.9041；AMS 机场：公开资料",
+  },
+  {
+    id: "haarlem", nameZh: "哈勒姆", nameEn: "Haarlem", country: "netherlands", tier: "notable", zone: "nl-noord-holland",
+    lon: 4.6462, lat: 52.3874,
+    source: "哈勒姆 52.3874,4.6462：公开资料（无机场，就近用史基浦；北荷兰省首府，靠近荷兰沙丘海岸）",
+  },
+  {
+    id: "texel", nameZh: "特塞尔岛", nameEn: "Texel", country: "netherlands", tier: "notable", zone: "nl-noord-holland",
+    lon: 4.8267, lat: 53.0500,
+    source: "特塞尔岛（登堡）53.0500,4.8267：公开资料（小型机场无定期商业航班，就近用史基浦+渡轮；西弗里西亚群岛最大岛）",
+  },
+  {
+    id: "rotterdam", nameZh: "鹿特丹", nameEn: "Rotterdam", country: "netherlands", tier: "major", zone: "nl-zuid-holland",
+    lon: 4.4777, lat: 51.9244,
+    airport: { iata: "RTM", nameZh: "鹿特丹海牙机场", nameEn: "Rotterdam The Hague Airport", lon: 4.4372, lat: 51.9569 },
+    source: "鹿特丹市中心 51.9244,4.4777；RTM 机场：公开资料",
+  },
+  {
+    id: "the-hague", nameZh: "海牙", nameEn: "The Hague", country: "netherlands", tier: "notable", zone: "nl-zuid-holland",
+    lon: 4.3007, lat: 52.0705,
+    source: "海牙 52.0705,4.3007：公开资料（无自有机场，就近用鹿特丹海牙机场；荷兰政府所在地、国际法院所在地）",
+  },
+  {
+    id: "delft", nameZh: "代尔夫特", nameEn: "Delft", country: "netherlands", tier: "notable", zone: "nl-zuid-holland",
+    lon: 4.3571, lat: 52.0116,
+    source: "代尔夫特 52.0116,4.3571：公开资料（无机场，就近用鹿特丹海牙机场；代尔夫特蓝陶与理工大学所在地）",
+  },
+  {
+    id: "leiden", nameZh: "莱顿", nameEn: "Leiden", country: "netherlands", tier: "notable", zone: "nl-zuid-holland",
+    lon: 4.4970, lat: 52.1601,
+    source: "莱顿 52.1601,4.4970：公开资料（无机场，就近用史基浦；荷兰最古老大学所在地）",
+  },
+  {
+    id: "utrecht", nameZh: "乌得勒支", nameEn: "Utrecht", country: "netherlands", tier: "major", zone: "nl-utrecht",
+    lon: 5.1214, lat: 52.0907,
+    source: "乌得勒支 52.0907,5.1214：公开资料（无机场，就近用史基浦；荷兰第四大城市、铁路枢纽）",
+  },
+  {
+    id: "maastricht", nameZh: "马斯特里赫特", nameEn: "Maastricht", country: "netherlands", tier: "notable", zone: "nl-limburg",
+    lon: 5.6910, lat: 50.8514,
+    airport: { iata: "MST", nameZh: "马斯特里赫特-亚琛机场", nameEn: "Maastricht Aachen Airport", lon: 5.7703, lat: 50.9114 },
+    source: "马斯特里赫特市中心 50.8514,5.6910；MST 机场：公开资料",
+  },
+  {
+    id: "groningen", nameZh: "格罗宁根", nameEn: "Groningen", country: "netherlands", tier: "notable", zone: "nl-groningen-friesland",
+    lon: 6.5665, lat: 53.2194,
+    airport: { iata: "GRQ", nameZh: "埃尔德机场", nameEn: "Groningen Airport Eelde", lon: 6.5794, lat: 53.1197 },
+    source: "格罗宁根市中心 53.2194,6.5665；GRQ 机场：公开资料",
+  },
+  {
+    id: "zwolle", nameZh: "兹沃勒", nameEn: "Zwolle", country: "netherlands", tier: "notable", zone: "nl-overijssel",
+    lon: 6.0958, lat: 52.5168,
+    source: "兹沃勒 52.5168,6.0958：公开资料（无机场，就近用史基浦；艾瑟尔河畔汉萨古城，羊角村门户）",
+  },
   // ===== 奥地利 =====
   {
     id: "vienna", nameZh: "维也纳", nameEn: "Vienna", country: "austria", tier: "capital", zone: "at-wien",
@@ -1513,6 +1581,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   germany: "europe",
   greece: "europe",
   portugal: "europe",
+  netherlands: "europe",
   austria: "europe",
 };
 

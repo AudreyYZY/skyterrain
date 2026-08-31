@@ -160,6 +160,9 @@ import lisPdl from "./lis-pdl.json" with { type: "json" };
 import opoFnc from "./opo-fnc.json" with { type: "json" };
 import opoPdl from "./opo-pdl.json" with { type: "json" };
 import opoFao from "./opo-fao.json" with { type: "json" };
+// 荷兰
+import amsMst from "./ams-mst.json" with { type: "json" };
+import amsGrq from "./ams-grq.json" with { type: "json" };
 // 奥地利
 import vieInn from "./vie-inn.json" with { type: "json" };
 import vieGrz from "./vie-grz.json" with { type: "json" };
@@ -299,6 +302,8 @@ export const ALL_ROUTES: FlightRoute[] = [
   opoFnc,
   opoPdl,
   opoFao,
+  amsMst,
+  amsGrq,
   vieInn,
   vieGrz,
   vieKlu,
