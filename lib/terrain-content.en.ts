@@ -12283,4 +12283,88 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Cordillera Central has long been the traditional homeland of the Ifugao and other indigenous peoples of the Philippines, whose mountain terrace farming tradition has continued for more than two thousand years.",
   },
+  "sierra-madre-philippines": {
+    seeing:
+      "The Sierra Madre is the longest mountain range in the Philippines, running along Luzon's east coast from Cagayan Province in the north to Quezon Province in the south, about 540 km end to end.",
+    formation:
+      "The Sierra Madre formed through long-term tectonic uplift; at its southeastern end it connects to the Cordillera Central via the Caraballo Mountains, and it is one of the source ranges of the Cagayan River and other major rivers of eastern Luzon, its long-term erosion shaping continuous, rolling mountainous terrain.",
+    observation:
+      "From the air, the Sierra Madre appears as a continuous green mountain belt running along Luzon's east coast, the Cagayan Valley plain bordering it to the west and the open Pacific Ocean facing it to the east.",
+    distinguish:
+      "Both the Sierra Madre and the Cordillera Central are major mountain systems on Luzon, but the Sierra Madre is the Philippines' longest range, running along the east coast, while the Cordillera Central is the country's highest range, in the north-central interior.",
+    concept:
+      "The Sierra Madre has long served as a natural buffer shielding Luzon's east coast from Pacific typhoon storm surges, making it an important sample for studying how mountainous terrain buffers coastal areas against extreme weather.",
+    history:
+      "Extensive tracts of primary forest survive along the Sierra Madre, making it a key biodiversity conservation area in the Philippines, and it has long been the traditional territory of indigenous communities on Luzon's east coast.",
+  },
+  "mount-kanlaon": {
+    seeing:
+      "Mount Kanlaon is the highest peak on Negros Island and in the Visayas at 2,465 m; it has erupted more than 30 times since 1819, making it the Philippines' third-most-active volcano.",
+    formation:
+      "Kanlaon is an andesitic stratovolcano on the Pacific Ring of Fire, its cone built up through long-term eruptive activity; its summit holds an elongated caldera about 2 km wide containing two craters — one extinct and now filled with a crater lake, and the other, the still-active Lugud Crater.",
+    observation:
+      "From the air, the two craters within Kanlaon's elongated summit caldera are clearly distinguishable, a deep-blue crater lake standing in sharp contrast with the deep, still-active vent nearby, the whole massif ringed by dense forest.",
+    distinguish:
+      "Both Mount Kanlaon and Mayon Volcano are active Philippine volcanoes, but Kanlaon's summit holds an elongated caldera with two craters, while Mayon has retained a single, intact, symmetrical cone.",
+    concept:
+      "The coexistence at Kanlaon's summit of an extinct, water-filled crater alongside a still-actively erupting one makes it a classic sample for studying differing activity cycles between separate vents within the same caldera.",
+    history:
+      "Mount Kanlaon National Park was established in 1934, encompassing the crater, hot springs and diverse wildlife habitat, and has long served as an important nature reserve in the Visayas.",
+  },
+  "chocolate-hills": {
+    seeing:
+      "The Chocolate Hills are a cluster of karst hills on Bohol Island, with at least 1,260 and possibly more than 1,776 confirmed cone-shaped mounds spread across an area of more than 50 km², each 30–120 m tall.",
+    formation:
+      "The coral-reef limestone hosting the Chocolate Hills was deposited on the seafloor during the Late Pliocene to Early Pleistocene; subsequent tectonic uplift raised it above sea level, and long-term tropical rainfall dissolution of the limestone carved today's dense field of conical hills, a classic example of karst topography.",
+    observation:
+      "From the air, the Chocolate Hills present a distinctive landscape of hundreds to thousands of densely packed cone-shaped mounds; as the dry season turns their grass cover brown, the hills take on a chocolate-like appearance, forming a sharp contrast with the otherwise flat terrain of Bohol.",
+    distinguish:
+      "The Chocolate Hills and other Southeast Asian karst landforms such as Endau-Rompin are all shaped by limestone dissolution, but the Chocolate Hills are known for their sheer number and dense packing of conical mounds, a textbook example of a karst hill field.",
+    concept:
+      "Several scientific hypotheses exist for the Chocolate Hills' formation (including differential dissolution of an uplifted coral platform), making them an important subject for studying how dense clusters of tropical karst hills form.",
+    history:
+      "The Chocolate Hills are Bohol's most famous natural landmark and have long been the subject of local legend and folklore; they are today an important geotourism destination in the central Visayas.",
+  },
+  "banaue-ifugao-rice-terraces": {
+    seeing:
+      "The Ifugao rice terraces are a mountainside terrace-farming system carved by the Ifugao people more than two thousand years ago within the Cordillera Central, more than 48 terrace clusters climbing the mountain slopes tier upon tier, served by a precisely engineered irrigation network.",
+    formation:
+      "The Ifugao terraces are a stepped agricultural landform hand-carved into steep mountain terrain using only simple tools; a precise gravity-fed irrigation network, sustained by mountain streams and rainfall, is a model of how mountainous terrain has been artificially reshaped to serve agriculture.",
+    observation:
+      "From the air, the Ifugao terraces present a green, stepped landscape spiralling up the mountainside tier by tier; during the wet season, water-filled paddies reflect the sky like a string of mirrors, interweaving with the untouched mountainous terrain of the surrounding Cordillera Central.",
+    distinguish:
+      "Both the Ifugao rice terraces and the Cordillera Central as a whole lie within north-central Luzon's mountains, but the terraces are an artificially carved agricultural stepped landform, while the Cordillera Central is the natural mountain framework that carries them.",
+    concept:
+      "The more than two thousand years of continuous cultivation at the Ifugao terraces make them a classic sample for studying how traditional agricultural knowledge can achieve precise mountain water-resource management without modern engineering technology.",
+    history:
+      "In 1995, five terrace clusters — Batad, Bangaan, Mayoyao, Hungduan and Nagacadan — were inscribed on the UNESCO World Heritage List as the \"Rice Terraces of the Philippine Cordilleras\"; the terraces around Banaue town itself were excluded due to lower integrity scores from dense modern construction, but remain an important agricultural cultural landscape locally.",
+  },
+  "camiguin-island": {
+    seeing:
+      "Camiguin is a pear-shaped volcanic island off the north coast of Mindanao, covering about 238 km², home to seven volcanoes, earning it the nickname \"Island Born of Fire\" since the whole island was built up by undersea volcanic eruptions.",
+    formation:
+      "Camiguin was built up over millions of years from lava and pyroclastic material erupted repeatedly by undersea volcanoes; its seven volcanoes give it one of the highest volcano densities per unit area in the world, with its highest peak, Mount Hibok-Hibok, still active, ongoing volcanic and seismic activity remaining the dominant force shaping the island's landform.",
+    observation:
+      "From the air, Camiguin shows a pear-shaped outline with multiple volcanic cones densely packed onto a small island, together with hot and cold springs and waterfalls forming a richly layered volcanic island landscape.",
+    distinguish:
+      "Both Camiguin and Mayon Volcano are active Philippine volcanic landforms, but Camiguin is an entire island densely packed with seven volcanoes, while Mayon is a single standalone symmetrical cone on Luzon.",
+    concept:
+      "Camiguin's volcano density per unit area is among the highest in the world, making it an important sample for studying how a dense cluster of volcanoes can form and erupt on a small island.",
+    history:
+      "The island's \"Sunken Cemetery\" marks the site where a cemetery sank beneath the sea following volcanic activity in 1871; a large cross now marks the spot, a historical testament to how volcanic activity on Camiguin has affected human settlement.",
+  },
+  "batanes-islands": {
+    seeing:
+      "The Batanes Islands are the Philippines' northernmost island group, made up chiefly of the three inhabited islands of Batan, Sabtang and Itbayat, known for their open rolling hills and dramatic cliffs.",
+    formation:
+      "Batan and Sabtang formed through volcanic eruption, long-term weathering and erosion shaping today's open, rolling grass-hill terrain; Itbayat, by contrast, was uplifted by tectonic plate movement and presents a steeper, cliff-dominated coastal landform distinct from the other two islands.",
+    observation:
+      "From the air, the Batanes Islands show continuous, rolling green grass hills covering the terrain, dark grey rock outcrops dotted throughout, wild horses roaming freely across the open grassland — a sharp contrast with the tropical rainforest landscapes elsewhere in the Philippines.",
+    distinguish:
+      "Both the Batanes Islands and Camiguin are volcanically formed Philippine islands, but Batanes is known for its open grass-hill terrain and temperate-leaning climate, while Camiguin is a classic tropical volcanic island densely packed with seven volcanoes.",
+    concept:
+      "Within Batanes, Itbayat's tectonic-uplift origin, distinct from the volcanic origin of Batan and Sabtang, makes the group an important sample for studying how differing geological origins shape contrasting landforms within a single island cluster.",
+    history:
+      "Itbayat is the northernmost inhabited island in the Philippines; the local Ivatan people retain a distinctive tradition of stone-house architecture, developed to withstand the region's frequent typhoons.",
+  },
 };

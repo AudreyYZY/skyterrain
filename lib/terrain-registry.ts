@@ -12467,6 +12467,88 @@ const CORDILLERA_CENTRAL_LUZON: TerrainEntry = {
   source: "科迪勒拉山脉：吕宋岛中北部一条南北长约320公里、东西宽约118公里的山系，是菲律宾海拔最高的山脉，涵盖普拉格山等多座高峰；山脉东南端经卡拉巴略山脉与锡拉马德雷山脉相接，是伊富高梯田等高山农业景观所在的地理骨架（Wikipedia WebSearch 2026）",
 };
 
+const SIERRA_MADRE_PHILIPPINES: TerrainEntry = {
+  id: "sierra-madre-philippines",
+  nameZh: "锡拉马德雷山脉",
+  nameEn: "Sierra Madre (Philippines)",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "锡拉马德雷山脉中段", lon: 122.0, lat: 16.5, elevation: 1000, kind: "peak" },
+  bbox: [121.4, 14.0, 122.3, 18.5],
+  axis: [[122.0, 18.3], [121.6, 14.1]],
+  viewScale: 1.5,
+  label: { lon: 121.75, lat: 16.0, rotation: -12 },
+  source: "锡拉马德雷山脉：菲律宾最长的山脉，沿吕宋岛东岸自北部卡加延省延伸至南部奎松省，南北长约540公里；山脉在东南部经卡拉巴略山脉与科迪勒拉山脉相接，是卡加延河的发源山系之一，长期作为吕宋岛东岸抵御太平洋风暴潮的天然屏障（Wikipedia/earthjournalism.net WebSearch 2026）",
+};
+
+const MOUNT_KANLAON: TerrainEntry = {
+  id: "mount-kanlaon",
+  nameZh: "甘伦火山",
+  nameEn: "Mount Kanlaon",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "甘伦火山口", lon: 123.1322, lat: 10.4119, elevation: 2465, kind: "peak" },
+  bbox: [123.05, 10.35, 123.22, 10.48],
+  label: { lon: 123.13, lat: 10.30, rotation: 0 },
+  source: "甘伦火山：内格罗斯岛最高峰、维萨亚斯群岛最高峰，海拔2465米，是安山质层状活火山，1819年以来记录喷发逾30次、是菲律宾第三活跃的火山；山顶为一处宽约2公里的椭圆形破火山口，内含两个火山口——一处已熄灭并蓄有火山口湖，另一处“卢古德火山口”宽约250米、深150至200米，仍为历史活跃喷发口；1934年设立甘伦国家公园（Wikipedia/volcanodiscovery.com WebSearch 2026）",
+};
+
+const CHOCOLATE_HILLS: TerrainEntry = {
+  id: "chocolate-hills",
+  nameZh: "巧克力山",
+  nameEn: "Chocolate Hills",
+  category: "hills",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "巧克力山观景台", lon: 124.1697, lat: 9.8264, elevation: 100, kind: "peak" },
+  bbox: [124.10, 9.77, 124.24, 9.88],
+  viewScale: 1.2,
+  label: { lon: 124.17, lat: 9.90, rotation: 0 },
+  source: "巧克力山：保和岛一处喀斯特丘陵群，已确认至少1260座、可能逾1776座锥形山丘，分布范围逾50平方公里，山丘高度介于30至120米之间；山体由上新世至更新世海底沉积的珊瑚礁石灰岩经构造抬升出露海面、再经热带降雨长期溶蚀而成，旱季草皮转为棕色时呈现类似巧克力的外观（Wikipedia/geologyscience.com WebSearch 2026）",
+};
+
+const BANAUE_IFUGAO_RICE_TERRACES: TerrainEntry = {
+  id: "banaue-ifugao-rice-terraces",
+  nameZh: "伊富高梯田（班奈梯田）",
+  nameEn: "Rice Terraces of the Philippine Cordilleras (Banaue-Ifugao)",
+  category: "valley",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "巴塔德梯田观景点", lon: 121.20, lat: 16.93, elevation: 1500, kind: "grassland" },
+  bbox: [121.03, 16.83, 121.28, 17.03],
+  viewScale: 1.1,
+  label: { lon: 121.20, lat: 16.78, rotation: 0 },
+  source: "伊富高梯田：科迪勒拉山脉中伊富高族两千余年前开凿的山地梯田系统，逾48处梯田群沿山势层层攀升，仅靠简单工具即建成配套精密的灌溉水利网络；1995年其中巴塔德、邦岸、马约瑶、洪古丹、纳加达坎五处梯田群以“菲律宾科迪勒拉水稻梯田”列入UNESCO世界遗产名录，班奈镇周边梯田因现代建筑密集、完整性评分较低未被纳入名录（UNESCO/newworldencyclopedia.org WebSearch 2026）",
+};
+
+const CAMIGUIN_ISLAND: TerrainEntry = {
+  id: "camiguin-island",
+  nameZh: "卡米金岛",
+  nameEn: "Camiguin Island",
+  category: "island",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "希博克—希博克火山", lon: 124.6742, lat: 9.2033, elevation: 1332, kind: "peak" },
+  bbox: [124.60, 9.10, 124.77, 9.28],
+  label: { lon: 124.68, lat: 9.06, rotation: 0 },
+  source: "卡米金岛：棉兰老岛北部近海一座梨形火山岛，面积约238平方公里，境内密布七座火山、单位面积火山密度居世界前列，因整座岛屿由海底火山喷发堆积而成而俗称“火之岛”；最高峰希博克—希博克火山海拔1332米，是岛上最活跃的火山；岛上另有因1871年火山活动沉入海底的“沉没墓园”遗址（Wikipedia/scmp.com WebSearch 2026）",
+};
+
+const BATANES_ISLANDS: TerrainEntry = {
+  id: "batanes-islands",
+  nameZh: "巴丹群岛",
+  nameEn: "Batanes Islands",
+  category: "island",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "巴丹岛（巴斯科）", lon: 121.9683, lat: 20.4487, elevation: 100, kind: "island" },
+  bbox: [121.80, 20.30, 122.10, 20.95],
+  label: { lon: 121.95, lat: 20.20, rotation: 0 },
+  source: "巴丹群岛：菲律宾最北端的岛群，主要由巴丹岛、萨布唐岛与伊特巴亚特岛三座有人居住的岛屿组成；巴丹岛与萨布唐岛由火山喷发形成、地表起伏为开阔草丘，伊特巴亚特岛则由板块构造运动抬升而成、以更陡峭的悬崖地貌为特征；伊特巴亚特岛是菲律宾最北端的有人岛屿，当地伊瓦坦族保留独特的石屋建筑传统（Wikipedia WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12793,6 +12875,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 亚洲 / 菲律宾 =====
   MAYON_VOLCANO, TAAL_LAKE, MOUNT_PINATUBO, MOUNT_APO,
   MOUNT_PULAG, CORDILLERA_CENTRAL_LUZON,
+  SIERRA_MADRE_PHILIPPINES, MOUNT_KANLAON, CHOCOLATE_HILLS,
+  BANAUE_IFUGAO_RICE_TERRACES, CAMIGUIN_ISLAND, BATANES_ISLANDS,
 ];
 
 /**
