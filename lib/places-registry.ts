@@ -244,6 +244,12 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "vn-central": { zh: "中部", en: "Central Vietnam", order: 311 },
   "vn-central-highlands": { zh: "中部高原", en: "Central Highlands", order: 312 },
   "vn-south": { zh: "南部", en: "Southern Vietnam", order: 313 },
+  // 蒙古
+  "mn-central": { zh: "中部", en: "Central Mongolia", order: 320 },
+  "mn-north": { zh: "北部", en: "Northern Mongolia", order: 321 },
+  "mn-west": { zh: "西部", en: "Western Mongolia", order: 322 },
+  "mn-gobi": { zh: "戈壁南部", en: "South Gobi", order: 323 },
+  "mn-east": { zh: "东部", en: "Eastern Mongolia", order: 324 },
   // 马来西亚
   "my-central": { zh: "中部", en: "Central Malaysia", order: 330 },
   "my-north": { zh: "北部", en: "Northern Peninsula", order: 331 },
@@ -293,6 +299,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "south-korea", nameZh: "韩国", nameEn: "South Korea" },
   { country: "poland", nameZh: "波兰", nameEn: "Poland" },
   { country: "vietnam", nameZh: "越南", nameEn: "Vietnam" },
+  { country: "mongolia", nameZh: "蒙古", nameEn: "Mongolia" },
   { country: "malaysia", nameZh: "马来西亚", nameEn: "Malaysia" },
 ];
 
@@ -2312,6 +2319,66 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "宁平市中心 20.2506,105.9744；本地无商业机场，最近机场为河内内排国际机场（距市区约90km）：公开资料",
   },
   {
+    id: "ulaanbaatar", nameZh: "乌兰巴托", nameEn: "Ulaanbaatar", country: "mongolia", tier: "capital", zone: "mn-central",
+    lon: 106.9177, lat: 47.9184,
+    airport: { iata: "UBN", nameZh: "成吉思汗国际机场", nameEn: "Chinggis Khaan International", lon: 106.8161, lat: 47.6467 },
+    source: "乌兰巴托市中心 47.9184,106.9177；成吉思汗国际机场2021年启用，位于市区以南约52公里的呼西格河谷：公开资料/Wikipedia",
+  },
+  {
+    id: "erdenet", nameZh: "额尔登特", nameEn: "Erdenet", country: "mongolia", tier: "major", zone: "mn-north",
+    lon: 104.0833, lat: 49.0333,
+    airport: { iata: "ERT", nameZh: "额尔登特机场", nameEn: "Erdenet Airport", lon: 104.0664, lat: 49.0392 },
+    source: "额尔登特市中心 49.0333,104.0833；本地设有额尔登特机场（ERT），航班班次以实际时刻表为准，主要客运也可经乌兰巴托方向的公路与蒙古国铁支线往返：公开资料",
+  },
+  {
+    id: "darkhan", nameZh: "达尔汗", nameEn: "Darkhan", country: "mongolia", tier: "major", zone: "mn-north",
+    lon: 105.9228, lat: 49.4867,
+    airport: { iata: "UBN", nameZh: "成吉思汗国际机场", nameEn: "Chinggis Khaan International", lon: 106.8161, lat: 47.6467 },
+    source: "达尔汗市中心 49.4867,105.9228；本地无稳定定期客运航班，主要经蒙古纵贯铁路（乌兰巴托—苏赫巴托尔线）与公路往返乌兰巴托（约219km）：公开资料",
+  },
+  {
+    id: "kharkhorin", nameZh: "哈拉和林", nameEn: "Kharkhorin", country: "mongolia", tier: "notable", zone: "mn-central",
+    lon: 102.8395, lat: 47.1975,
+    airport: { iata: "UBN", nameZh: "成吉思汗国际机场", nameEn: "Chinggis Khaan International", lon: 106.8161, lat: 47.6467 },
+    source: "哈拉和林（鄂尔浑河谷）47.1975,102.8395；本地哈拉和林机场几乎无客运处理设施，通常经乌兰巴托方向公路往返（约370km）：公开资料/Wikipedia",
+  },
+  {
+    id: "moron", nameZh: "木伦", nameEn: "Mörön", country: "mongolia", tier: "notable", zone: "mn-north",
+    lon: 100.1625, lat: 49.6342,
+    airport: { iata: "MXV", nameZh: "木伦机场", nameEn: "Mörön Airport", lon: 100.1492, lat: 49.6633 },
+    source: "木伦市中心 49.6342,100.1625；MXV机场：公开资料/MIAT蒙古国际航空国内航线",
+  },
+  {
+    id: "dalanzadgad", nameZh: "达兰扎德嘎德", nameEn: "Dalanzadgad", country: "mongolia", tier: "notable", zone: "mn-gobi",
+    lon: 104.4250, lat: 43.5708,
+    airport: { iata: "DLZ", nameZh: "达兰扎德嘎德机场", nameEn: "Dalanzadgad Airport", lon: 104.4283, lat: 43.5919 },
+    source: "达兰扎德嘎德市中心 43.5708,104.4250；DLZ机场：公开资料/MIAT蒙古国际航空国内航线",
+  },
+  {
+    id: "khovd", nameZh: "科布多", nameEn: "Khovd", country: "mongolia", tier: "notable", zone: "mn-west",
+    lon: 91.6417, lat: 47.9975,
+    airport: { iata: "HVD", nameZh: "科布多机场", nameEn: "Khovd Airport", lon: 91.6289, lat: 47.9539 },
+    source: "科布多市中心 47.9975,91.6417；HVD机场：公开资料/MIAT蒙古国际航空国内航线",
+  },
+  {
+    id: "olgii", nameZh: "乌力吉", nameEn: "Ölgii", country: "mongolia", tier: "notable", zone: "mn-west",
+    lon: 89.9575, lat: 48.9700,
+    airport: { iata: "ULG", nameZh: "乌力吉国际机场", nameEn: "Ölgii International", lon: 89.9308, lat: 48.9964 },
+    source: "乌力吉市中心 48.9700,89.9575；ULG机场：公开资料/MIAT蒙古国际航空国内航线（每周约2班，4至10月运营）",
+  },
+  {
+    id: "choibalsan", nameZh: "乔巴山", nameEn: "Choibalsan", country: "mongolia", tier: "notable", zone: "mn-east",
+    lon: 114.5352, lat: 48.0733,
+    airport: { iata: "COQ", nameZh: "乔巴山机场", nameEn: "Choibalsan Airport", lon: 114.5539, lat: 48.0967 },
+    source: "乔巴山市中心 48.0733,114.5352；COQ机场：公开资料/MIAT蒙古国际航空国内航线",
+  },
+  {
+    id: "tsetserleg", nameZh: "车车尔勒格", nameEn: "Tsetserleg", country: "mongolia", tier: "notable", zone: "mn-central",
+    lon: 101.4544, lat: 47.4767,
+    airport: { iata: "UBN", nameZh: "成吉思汗国际机场", nameEn: "Chinggis Khaan International", lon: 106.8161, lat: 47.6467 },
+    source: "车车尔勒格市中心 47.4767,101.4544；本地设有车车尔勒格机场（TSZ）但客运航班暂不稳定，通常经乌兰巴托方向公路往返（约420km）：公开资料",
+  },
+  {
     id: "kuala-lumpur", nameZh: "吉隆坡", nameEn: "Kuala Lumpur", country: "malaysia", tier: "capital", zone: "my-central",
     lon: 101.6869, lat: 3.1390,
     airport: { iata: "KUL", nameZh: "吉隆坡国际机场", nameEn: "Kuala Lumpur International Airport", lon: 101.7099, lat: 2.7456 },
@@ -2394,6 +2461,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   thailand: "asia",
   "south-korea": "asia",
   vietnam: "asia",
+  mongolia: "asia",
   malaysia: "asia",
   australia: "oceania",
   "new-zealand": "oceania",

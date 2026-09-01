@@ -217,6 +217,12 @@ import sgnPqc from "./sgn-pqc.json" with { type: "json" };
 import hanVca from "./han-vca.json" with { type: "json" };
 import hanHui from "./han-hui.json" with { type: "json" };
 import dadSgn from "./dad-sgn.json" with { type: "json" };
+// 蒙古
+import ubnHvd from "./ubn-hvd.json" with { type: "json" };
+import ubnUlg from "./ubn-ulg.json" with { type: "json" };
+import ubnMxv from "./ubn-mxv.json" with { type: "json" };
+import ubnDlz from "./ubn-dlz.json" with { type: "json" };
+import ubnCoq from "./ubn-coq.json" with { type: "json" };
 // 马来西亚
 import kulPen from "./kul-pen.json" with { type: "json" };
 import kulBki from "./kul-bki.json" with { type: "json" };
@@ -407,6 +413,11 @@ export const ALL_ROUTES: FlightRoute[] = [
   hanVca,
   hanHui,
   dadSgn,
+  ubnHvd,
+  ubnUlg,
+  ubnMxv,
+  ubnDlz,
+  ubnCoq,
   kulPen,
   kulBki,
   kulKch,
