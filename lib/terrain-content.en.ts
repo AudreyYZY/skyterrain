@@ -12100,4 +12100,102 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The volcanic field's area has historically been the traditional homeland of the Dariganga Mongol subgroup; Altan Ovoo (Golden Ovoo) within it has been venerated as a local sacred mountain since 1913 and was elevated to a state-worshipped mountain in 2004, while Shiliin Bogd has traditionally been a pilgrimage site for Mongolian men.",
   },
+  "selenge-river": {
+    seeing:
+      "The Selenge River is Mongolia's highest-volume river, formed by the confluence of the Ider and Muren rivers; it flows northeast through Sükhbaatar city before crossing into Russia and eventually draining into Lake Baikal.",
+    formation:
+      "The Selenge's headwater tributaries rise separately in the Khangai Mountains and the mountains of northern Mongolia; after the two join in Bulgan Province, the river follows a tectonic depression trending northeast, its long-term erosion and sediment transport shaping a broad valley landform.",
+    observation:
+      "From the air, the Selenge shows a wide, high-volume channel interweaving with surrounding tributaries into a fan-shaped drainage network, its valley widening and flattening as it approaches the border on its way north-east out of the country.",
+    distinguish:
+      "Both the Selenge and the Tuul are important river systems in northern Mongolia, but the Selenge is the highest-volume river within Mongolia and the trunk stream that ultimately reaches Russia's Lake Baikal, while the Tuul is an upstream tributary of the Orkhon, itself a tributary of the Selenge.",
+    concept:
+      "As the largest single source of inflow to Lake Baikal, the Selenge's discharge and water quality directly bear on the ecological balance of the world's largest freshwater lake, making it a key case for studying how transboundary rivers affect downstream lake ecosystems.",
+    history:
+      "The Selenge valley has historically been an important trade corridor between Mongolia and Russia; Sükhbaatar city, near the Mongolia-Russia border crossing, has developed into an important rail hub in northern Mongolia.",
+  },
+  "tuul-river": {
+    seeing:
+      "The Tuul River is 882.8 km long with a drainage area of about 49,840 km²; it rises in the Khentii Mountains and flows southwest through the Mongolian capital Ulaanbaatar before joining the Orkhon River.",
+    formation:
+      "The Tuul rises at the southern foot of the Khentii Mountains; long-term erosion of the mountain bedrock and downstream sediment transport have formed a relatively broad valley floor around Ulaanbaatar, providing the topographic base for the city's growth.",
+    observation:
+      "From the air, the Tuul winds through the built-up area of Ulaanbaatar, its riverside greenbelt interwoven with the city's buildings; beyond the city the valley narrows again and the surrounding mountainous terrain reasserts itself.",
+    distinguish:
+      "Both the Tuul and the Kherlen rise in the Khentii Mountains, but the Tuul flows southwest through the Mongolian capital Ulaanbaatar and ultimately joins the Orkhon system, while the Kherlen flows southeast across Mongolia's eastern steppe and ultimately reaches the Lake Hulun system.",
+    concept:
+      "As the main water source for Mongolia's most densely populated river valley, the Tuul's basin supplies the Ulaanbaatar metropolitan area — home to nearly half the country's population — making it an important case for studying the relationship between river water resources and rapid urbanization pressure.",
+    history:
+      "The Tuul valley has been Mongolia's political and cultural centre since the city of Urga (Ulaanbaatar's earlier name) was founded there in the 17th century, the river long providing water for daily life and irrigation as the nomadic settlement transitioned into a fixed city.",
+  },
+  "kherlen-river": {
+    seeing:
+      "The Kherlen River is 1,254 km long, one of the longest rivers in Mongolia; it rises in the Khentii Mountains and flows southeast through Öndörkhaan and Choibalsan before crossing into China's Inner Mongolia.",
+    formation:
+      "The Kherlen rises at the southeastern foot of the Khentii Mountains and extends a long distance across the relatively gentle terrain of eastern Mongolia; long-term erosion and sediment transport have shaped a narrow, elongated valley plain, making it the principal surface drainage system of Mongolia's eastern steppe belt.",
+    observation:
+      "From the air, the Kherlen winds through the vast open steppe of eastern Mongolia, its riverside band of green vegetation forming a sharp colour contrast with the surrounding grassland — the most conspicuous surface-water feature across the steppe.",
+    distinguish:
+      "Both the Kherlen and the Onon rise in the Khentii Mountains, but the Kherlen flows southeast across Mongolia's eastern steppe and ultimately crosses into China to join the Lake Hulun system, while the Onon flows northeast into Russia's Zabaykalsky Krai.",
+    concept:
+      "As one of the longest rivers within Mongolia, the Kherlen's long course through the eastern steppe makes it a classic sample for studying how rivers in arid and semi-arid steppe regions sustain the distribution of nomadic settlements along their banks.",
+    history:
+      "The Kherlen valley was an important area of activity before and during the rise of the Mongol Empire; Öndörkhaan on its banks (formerly the seat of the Setsen Khan) is an important historic town in eastern Mongolia.",
+  },
+  "onon-river": {
+    seeing:
+      "The Onon River is 1,032 km long with a drainage basin of about 96,200 km²; it rises in the Khentii Mountains and flows northeast into Russia's Zabaykalsky Krai, and the Dadal area on its banks is traditionally held to be the birthplace of Genghis Khan.",
+    formation:
+      "The Onon rises at the northeastern foot of the Khentii Mountains; long-term erosion of the mountain terrain gives way downstream to a relatively flat forest-steppe transition zone, shaping a classic mountain-to-steppe transitional valley landform.",
+    observation:
+      "From the air, the upper Onon shows relatively dense forest cover along its banks; further downstream past the Dadal area the valley widens and grassland becomes more prevalent, with the forest-to-steppe transition clearly visible.",
+    distinguish:
+      "Both the Onon and the Kherlen rise in the Khentii Mountains, but the Onon flows northeast into Russia's Zabaykalsky Krai with denser forest cover upstream, while the Kherlen flows southeast across Mongolia's eastern steppe and ultimately crosses into China.",
+    concept:
+      "The transition zone between the upper Onon's Khentii forest and the lower Onon's Dadal grassland is a classic sample for studying how forest-steppe ecosystems in northern Mongolia change along a river gradient.",
+    history:
+      "The Dadal area on the Onon's banks is traditionally held to be the birthplace of Genghis Khan, giving the region a special place in Mongolian history and traditional belief; the sacred Khentii peak of Burkhan Khaldun also lies within the Onon's upper basin.",
+  },
+  "eastern-steppe": {
+    seeing:
+      "The Eastern Steppe is the Mongolian portion of the Daurian steppe ecosystem, which as a whole covers over 1 million km² spanning eastern Mongolia, Siberian Russia and northeastern China.",
+    formation:
+      "The Eastern Steppe lies in a relatively low-lying transitional zone in eastern Mongolia; under a semi-arid, deep-continental climate, herbaceous vegetation has long dominated, producing an extensive, continuous temperate steppe ecosystem.",
+    observation:
+      "From the air, the Eastern Steppe appears as boundless open grassland with gently undulating terrain, scattered wetlands and seasonal lakes, forming a sharp contrast with the mountainous and desert landforms of central and western Mongolia.",
+    distinguish:
+      "Both the Eastern Steppe and Mongolia's Gobi are large expanses of open terrain in Mongolia, but the Eastern Steppe is dominated by temperate herbaceous vegetation under relatively better precipitation, while the Gobi is an extremely arid gravel desert.",
+    concept:
+      "The Eastern Steppe preserves one of the most intact large-scale grassland ecosystems remaining on Earth, making it an important sample for studying the relationship between temperate steppe ecosystems and the migration patterns of large ungulates; as many as six crane species can be seen there.",
+    history:
+      "The Mongol Daguur Strictly Protected Area was established in 1992, and in 2017 the transboundary \"Landscapes of Dauria\" (shared with Russia) was inscribed on the UNESCO World Heritage List; historically this steppe has long served as traditional pastureland for nomadic peoples of eastern Mongolia.",
+  },
+  "khustain-nuruu": {
+    seeing:
+      "Khustain Nuruu is a range of rolling hills in Töv Province, about 100 km from Ulaanbaatar; Khustain Nuruu National Park was established here in 1993, covering about 50,600 ha.",
+    formation:
+      "Khustain Nuruu belongs to the relatively gentle hill terrain of central Mongolia, its surface a mix of rolling steppe and rocky outcrops, with birch and aspen forest growing along its river valleys — a classic forest-steppe transitional hill landform.",
+    observation:
+      "From the air, Khustain Nuruu appears as rolling grassland hills, patches of deciduous forest dotting the valleys, forming a clearly layered vegetation pattern against the open hill-steppe around it.",
+    distinguish:
+      "Both Khustain Nuruu and the Khentii Mountains lie within central Mongolia's forest-steppe transition zone, but Khustain Nuruu is low, gentle hill terrain known for the reintroduction of the Przewalski's horse, while the Khentii is a full mountain range at higher elevation.",
+    concept:
+      "Khustain Nuruu National Park is one of the world's most successful cases of reintroducing the Przewalski's horse (takhi) to the wild, making it a classic sample for studying the long-term outcomes of endangered-species rewilding programmes.",
+    history:
+      "In 1993 the Dutch Przewalski's Horse Foundation and the Mongolian Association for Conservation of Nature and Environment launched a reintroduction project, returning takhi — previously surviving only in captive populations — to Khustain Nuruu; today more than 800 free-ranging individuals live across three protected areas in Mongolia.",
+  },
+  "tsagaan-suvarga": {
+    seeing:
+      "Tsagaan Suvarga (the \"White Stupa\") is a limestone-and-clay erosional cliff in Ulziit District, Dundgovi Province, over 60 m tall at its highest point and extending about 400 m in length.",
+    formation:
+      "The area around Tsagaan Suvarga was once an ancient marine sedimentary environment, its long deposition producing layered strata; subsequent wind erosion together with occasional rainfall-driven water erosion has carved out today's distinctly layered cliff landform.",
+    observation:
+      "From the air, Tsagaan Suvarga's cliff face shows layered bands of white, orange and rust colouring, forming an abrupt vertical contrast against the open, flat Gobi desert surface around it.",
+    distinguish:
+      "Both Tsagaan Suvarga and Bayanzag are erosional cliff landforms in Mongolia's Gobi region, but Tsagaan Suvarga is known for its layered limestone-and-clay strata and multicoloured bands, while Bayanzag is a red sandstone cliff known for its dinosaur fossil discoveries.",
+    concept:
+      "The layered sedimentary record preserved in Tsagaan Suvarga's cliff face documents the area's history as an ancient seabed environment, making it a classic sample for studying the evolution of the Gobi region's ancient environment and the erosion of sedimentary rock strata.",
+    history:
+      "Dundgovi Province, where Tsagaan Suvarga is located, has historically been part of a traditional route for nomadic peoples crossing the desert region, and the site is today an important geological tourism landmark in Mongolia's Gobi.",
+  },
 };

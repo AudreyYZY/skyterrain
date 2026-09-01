@@ -12282,6 +12282,104 @@ const DARIGANGA_VOLCANIC_FIELD: TerrainEntry = {
   source: "达里干嘎火山群：蒙古东南部苏赫巴托尔省一处第四纪火山场，散布逾200座渣锥与大面积熔岩流，覆盖面积约1.4万平方公里；最高点希林博格德火山海拔1778米，火山口直径约2公里、深逾300米，是当地蒙古人重要的传统朝拜山（Global Volcanism Program/Wikipedia WebSearch 2026）",
 };
 
+const SELENGE_RIVER: TerrainEntry = {
+  id: "selenge-river",
+  nameZh: "色楞格河",
+  nameEn: "Selenge River",
+  category: "river",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "苏赫巴托尔市", lon: 106.20, lat: 50.23, elevation: 620, kind: "city" },
+  bbox: [100.8, 48.8, 106.8, 50.5],
+  axis: [[101.0, 49.0], [106.5, 50.35]],
+  viewScale: 1.3,
+  label: { lon: 103.5, lat: 49.6, rotation: -25 },
+  source: "色楞格河：蒙古境内水量最大的河流，由伊德尔河与穆伦河（德勒格尔河）在中戈壁—布尔干省境内汇流而成，向东北流经苏赫巴托尔市后进入俄罗斯，最终注入贝加尔湖，是贝加尔湖最主要的入湖水源（Wikipedia/worldatlas.com WebSearch 2026）",
+};
+
+const TUUL_RIVER: TerrainEntry = {
+  id: "tuul-river",
+  nameZh: "图拉河",
+  nameEn: "Tuul River",
+  category: "river",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "乌兰巴托", lon: 106.92, lat: 47.92, elevation: 1350, kind: "city" },
+  bbox: [104.8, 47.6, 108.5, 48.6],
+  axis: [[108.4, 48.4], [104.9, 48.75]],
+  label: { lon: 106.9, lat: 48.55, rotation: -10 },
+  source: "图拉河：全长882.8公里、流域面积约4.98万平方公里，发源于肯特山，向西南流经蒙古首都乌兰巴托后汇入鄂尔浑河，是蒙古人口最密集河谷的主要水源（Wikipedia WebSearch 2026）",
+};
+
+const KHERLEN_RIVER: TerrainEntry = {
+  id: "kherlen-river",
+  nameZh: "克鲁伦河",
+  nameEn: "Kherlen River",
+  category: "river",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "温都尔汗", lon: 110.65, lat: 47.32, elevation: 1030, kind: "city" },
+  bbox: [108.4, 46.8, 115.8, 48.6],
+  axis: [[108.6, 48.5], [115.5, 47.9]],
+  viewScale: 1.3,
+  label: { lon: 112.0, lat: 46.9, rotation: -10 },
+  source: "克鲁伦河：全长1254公里，是蒙古境内最长的河流之一，发源于肯特山，向东南流经温都尔汗、乔巴山后进入中国内蒙古境内，最终汇入呼伦湖水系（Wikipedia WebSearch 2026）",
+};
+
+const ONON_RIVER: TerrainEntry = {
+  id: "onon-river",
+  nameZh: "鄂嫩河",
+  nameEn: "Onon River",
+  category: "river",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "达达勒", lon: 111.63, lat: 49.00, elevation: 950, kind: "city" },
+  bbox: [109.2, 48.7, 112.2, 49.5],
+  axis: [[109.3, 48.9], [112.0, 49.4]],
+  label: { lon: 110.7, lat: 49.35, rotation: -15 },
+  source: "鄂嫩河：全长1032公里，流域面积约9.62万平方公里，发源于肯特山，向东北流入俄罗斯外贝加尔边疆区，河畔的达达勒地区相传是成吉思汗的出生地（Wikipedia WebSearch 2026）",
+};
+
+const EASTERN_STEPPE: TerrainEntry = {
+  id: "eastern-steppe",
+  nameZh: "东部草原（达乌尔草原）",
+  nameEn: "Eastern Steppe (Daurian Steppe)",
+  category: "grassland",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "蒙古达乌尔严格保护区", lon: 118.5, lat: 49.5, elevation: 650, kind: "grassland" },
+  bbox: [112.5, 46.0, 119.5, 49.8],
+  viewScale: 1.8,
+  label: { lon: 115.5, lat: 47.5, rotation: 0 },
+  source: "东部草原：达乌尔草原生态系统的蒙古境内部分，达乌尔草原整体面积逾100万平方公里、横跨蒙古东部、俄罗斯西伯利亚与中国东北；蒙古达乌尔严格保护区面积约2000平方公里，1992年设立，2017年蒙俄跨境“达乌里亚景观”列入UNESCO世界遗产名录，是蒙古原羚（黄羊）的主要栖息地，成群可达约2万只（UNESCO/One Earth WebSearch 2026）",
+};
+
+const KHUSTAIN_NURUU: TerrainEntry = {
+  id: "khustain-nuruu",
+  nameZh: "呼斯泰山",
+  nameEn: "Khustain Nuruu",
+  category: "hills",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "呼斯泰国家公园", lon: 105.75, lat: 47.75, elevation: 1500, kind: "grassland" },
+  bbox: [105.55, 47.60, 105.95, 47.90],
+  label: { lon: 105.75, lat: 47.58, rotation: 0 },
+  source: "呼斯泰山：中央省境内一片起伏丘陵地带，距乌兰巴托约100公里，1993年设立呼斯泰国家公园，面积约5.06万公顷，地形以起伏草原、岩石露头与河谷桦树林为主；1993年荷兰普氏野马基金会与蒙古环境保护协会启动野放项目，是普氏野马（陶赫）重新引入野外的三处保护区之一（national-parks.org/eternal-landscapes.co.uk WebSearch 2026）",
+};
+
+const TSAGAAN_SUVARGA: TerrainEntry = {
+  id: "tsagaan-suvarga",
+  nameZh: "查干苏日格（白塔崖）",
+  nameEn: "Tsagaan Suvarga (White Stupa)",
+  category: "hills",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "查干苏日格崖壁", lon: 105.40, lat: 46.70, elevation: 1300, kind: "escarpment" },
+  bbox: [105.30, 46.60, 105.55, 46.80],
+  label: { lon: 105.40, lat: 46.82, rotation: 0 },
+  source: "查干苏日格（白塔崖）：中戈壁省乌力吉区一处石灰岩与粘土质侵蚀崖壁，最高处逾60米、延伸长度约400米，岩层记录了这一带曾为古海底沉积环境的地质历史，崖面呈现白、橙、锈红等分层色带，偶见细小化石残片（Wikipedia/travelchinaguide.com WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12603,6 +12701,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   TERKHIIN_TSAGAAN_LAKE, KHORGO_VOLCANO, KHONGORYN_ELS, BAYANZAG,
   GURVAN_SAIKHAN, YOLYN_AM, ORKHON_VALLEY, ORKHON_WATERFALL,
   DARIGANGA_VOLCANIC_FIELD,
+  SELENGE_RIVER, TUUL_RIVER, KHERLEN_RIVER, ONON_RIVER,
+  EASTERN_STEPPE, KHUSTAIN_NURUU, TSAGAAN_SUVARGA,
 ];
 
 /**
