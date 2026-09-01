@@ -121,7 +121,7 @@ export const SUBREGIONS: Subregion[] = [
   { id: "central-asia", continentId: "asia", name: "中亚", nameEn: "Central Asia" },
   { id: "western-asia", continentId: "asia", name: "西亚", nameEn: "Western Asia" },
   { id: "southern-asia", continentId: "asia", name: "南亚", nameEn: "Southern Asia" },
-  { id: "south-eastern-asia", continentId: "asia", name: "东南亚", nameEn: "South-Eastern Asia" },
+  { id: "south-eastern-asia", continentId: "asia", name: "东南亚", nameEn: "South-eastern Asia" },
   // 欧洲
   { id: "northern-europe", continentId: "europe", name: "北欧", nameEn: "Northern Europe" },
   { id: "western-europe", continentId: "europe", name: "西欧", nameEn: "Western Europe" },
@@ -229,11 +229,11 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "france", name: "法国", nameEn: "France", code: "FR" },
   { slug: "switzerland", name: "瑞士", nameEn: "Switzerland", code: "CH" },
   { slug: "germany", name: "德国", nameEn: "Germany", code: "DE" },
+  { slug: "austria", name: "奥地利", nameEn: "Austria", code: "AT" },
   { slug: "belgium", name: "比利时", nameEn: "Belgium", code: "BE" },
   { slug: "luxembourg", name: "卢森堡", nameEn: "Luxembourg", code: "LU" },
   // 东欧
   { slug: "poland", name: "波兰", nameEn: "Poland", code: "PL" },
-  { slug: "austria", name: "奥地利", nameEn: "Austria", code: "AT" },
   // 南欧
   { slug: "portugal", name: "葡萄牙", nameEn: "Portugal", code: "PT" },
   { slug: "italy", name: "意大利", nameEn: "Italy", code: "IT" },
