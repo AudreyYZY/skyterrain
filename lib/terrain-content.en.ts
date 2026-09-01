@@ -12507,4 +12507,538 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Verde Island Passage hosts 36 marine protected areas; it was designated a \"Hope Spot\" by the international ocean conservation organisation Mission Blue in 2010, and remains a priority area for marine ecological conservation in the Philippines.",
   },
+  // ============ Singapore ============
+  "bukit-timah-nature-reserve": {
+    seeing:
+      "Bukit Timah Nature Reserve is home to Bukit Timah Hill, at 164 m the highest point on mainland Singapore, a granite hill whose reserve preserves one of Singapore's few remaining tracts of primary rainforest.",
+    formation:
+      "Bukit Timah Hill is built of a Mesozoic granite intrusion; long-term weathering and erosion under a hot, humid tropical climate shaped today's low, rounded hill form, its granite quarried extensively from the late 19th century until quarrying ceased in the mid-20th century.",
+    observation:
+      "From the air, Bukit Timah appears as an isolated patch of deep-green forested high ground within mainland Singapore's urbanised plain, its primary rainforest canopy richly layered, in sharp contrast with the high-rise cityscape around it.",
+    distinguish:
+      "Bukit Timah Nature Reserve and the Central Catchment Nature Reserve lie adjacent and are linked by an ecological corridor, but Bukit Timah is known for its isolated granite high ground with primary rainforest, while the Central Catchment is a larger tract of secondary forest ringing several reservoirs.",
+    concept:
+      "The survival of primary rainforest at Bukit Timah within highly urbanised mainland Singapore makes it a classic sample for studying the fragmentation and conservation of native ecosystems through the process of tropical island urbanization.",
+    history:
+      "Bukit Timah Nature Reserve was established in 1883, one of Singapore's oldest nature reserves, and was recognised as an ASEAN Heritage Park in 2011.",
+  },
+  "central-catchment-nature-reserve": {
+    seeing:
+      "The Central Catchment Nature Reserve is Singapore's largest nature reserve, covering 2,880 ha, ringing the MacRitchie, Upper and Lower Peirce, and Upper Seletar reservoirs.",
+    formation:
+      "The low hilly terrain of the Central Catchment has long been eroded under a hot, humid tropical climate; the reserve holds more than 2,000 ha of secondary lowland dipterocarp forest along with scattered patches of primary dryland rainforest and the primary freshwater swamp forest at Nee Soon, forming mainland Singapore's most topographically varied core area.",
+    observation:
+      "From the air, the Central Catchment shows an extensive, continuous deep-green forest canopy covering the surfaces of several reservoirs, forest and water interweaving in layers — mainland Singapore's largest single stretch of continuous green space.",
+    distinguish:
+      "The Central Catchment Nature Reserve and Bukit Timah Nature Reserve are linked by an ecological corridor and together form mainland Singapore's green core, but the Central Catchment is far larger and dominated by secondary forest ringing reservoirs, while Bukit Timah is an isolated granite high ground of primary rainforest.",
+    concept:
+      "The surviving patches of primary rainforest around MacRitchie within the Central Catchment are an important sample for studying long-term secondary-forest succession and the conservation of native ecosystems as isolated fragments.",
+    history:
+      "The reservoirs ringed by the Central Catchment Nature Reserve were historically an important freshwater supply facility for Singapore; the reserve today serves as an important ecological and recreational green space on mainland Singapore.",
+  },
+  "sungei-buloh-wetland-reserve": {
+    seeing:
+      "Sungei Buloh Wetland Reserve is a mangrove wetland in northwestern Singapore, expanded to 202 ha, preserving Singapore's largest surviving mangrove area and recognised in 2003 as Singapore's first ASEAN Heritage Park.",
+    formation:
+      "The northwest coast where Sungei Buloh sits has long been shaped by the combined action of tides and river-borne sediment; mangrove plants have continuously colonised the intertidal mudflats, forming today's composite wetland ecosystem of mangroves, mudflats, ponds and secondary forest.",
+    observation:
+      "From the air, Sungei Buloh shows a dense mangrove canopy winding along the coastline, mudflats and ponds dotted within it, forming a sharp ecological and development contrast with the adjacent Kranji Reservoir and urbanised areas.",
+    distinguish:
+      "Both Sungei Buloh Wetland Reserve and the Chek Jawa Wetlands are representative intertidal wetlands in Singapore, but Sungei Buloh is known for its extensive mangroves and role as a migratory bird stopover, while Chek Jawa is known for the convergence of six distinct ecosystems.",
+    concept:
+      "Sungei Buloh is an important stopover site on the East Asian-Australasian Flyway, making it a classic sample for studying how a tropical urban mangrove wetland ecosystem supports global migratory bird patterns.",
+    history:
+      "Sungei Buloh Wetland Reserve became Singapore's first ASEAN Heritage Park in 2003, and has long served as the core base for Singapore's mangrove conservation and environmental education efforts.",
+  },
+  "chek-jawa-wetlands": {
+    seeing:
+      "Chek Jawa Wetlands is an intertidal wetland of about 100 ha at the eastern tip of Pulau Ubin, where six distinct ecosystems — sandy beach, rocky beach, seagrass lagoon, coral rubble, mangroves and coastal forest — converge.",
+    formation:
+      "Chek Jawa sits on a relatively gentle stretch of coast at the eastern tip of Pulau Ubin; long-term tidal action and wave processes have shaped a composite intertidal landform alternating between sandy beach, rocky shore and mudflat, a classic sample of multiple shallow tropical marine habitats converging in one place.",
+    observation:
+      "From the air, Chek Jawa at low tide shows broad expanses of exposed sandy beach, rocky shore and coral rubble, the boundaries between its six ecosystems clearly visible, before most of the area submerges again at high tide.",
+    distinguish:
+      "Both Chek Jawa Wetlands and Sungei Buloh Wetland Reserve are representative intertidal wetlands in Singapore, but Chek Jawa is known for the convergence of six ecosystems within a small area, while Sungei Buloh is characterised by extensive continuous mangrove.",
+    concept:
+      "More than 500 marine species can be seen at Chek Jawa during low tides of 0.5 m and below, making it an important sample for studying how biodiversity is sustained where multiple tropical intertidal habitats converge.",
+    history:
+      "Chek Jawa was slated for land reclamation in 1992; after public consultation and expert review in 2001, the reclamation was deferred indefinitely, a representative case in Singapore's conservation history of public participation in decision-making.",
+  },
+  "pulau-ubin": {
+    seeing:
+      "Pulau Ubin is a granite island off Singapore's northeast coast, extensively quarried for granite from the mid-19th century, its four surviving disused quarries now evolved into vegetated scenic ponds.",
+    formation:
+      "Pulau Ubin's main body is built of granite; long-term weathering and erosion shaped its low, rolling hill terrain, and extensive quarrying from the mid-19th century onward left multiple artificial ponds on the island, with the last quarry closing in 1999.",
+    observation:
+      "From the air, Pulau Ubin shows low hills interwoven with scattered quarry ponds, wooden houses, duck ponds and rubber plantations dotting the greenery, forming a sharp contrast with the high-density cityscape of mainland Singapore.",
+    distinguish:
+      "Both Pulau Ubin and Singapore's Southern Islands are coastal island landforms, but Pulau Ubin is known for its granite-quarrying history and preserved rural character, while the Southern Islands are known for their quarantine-and-rehabilitation history and role as a near-shore leisure destination.",
+    concept:
+      "The evolution of Pulau Ubin's disused quarries into scenic ponds is a classic sample for studying how tropical island mining landforms recover into semi-natural ecosystems through natural succession.",
+    history:
+      "Granite from Pulau Ubin was used to build several lighthouses and the Causeway; the island's last quarry closed in 1999, and it is today one of the few places in Singapore that retains a traditional rural character.",
+  },
+  "sisters-islands-marine-park": {
+    seeing:
+      "Sisters' Islands Marine Park, established in 2014, is Singapore's first marine park, covering about 40 ha and encompassing the Sisters' Islands and the waters around the western reef of St John's Island.",
+    formation:
+      "The waters around the Sisters' Islands have long been shaped by a shallow tropical marine environment; coral has continuously grown and accumulated on the reef flats, forming today's composite marine ecosystem of coral reef, sandy shore and seagrass meadow.",
+    observation:
+      "From the air and at the surface, the waters around the Sisters' Islands show pale coral reef flats interweaving with the deep-blue open sea, Big Sister's Island and Small Sister's Island standing side by side — one of the most concentrated areas of coral reef in Singapore's coastal waters.",
+    distinguish:
+      "Sisters' Islands Marine Park and the Southern Islands lie geographically close together, but the marine park's core function is coral reef conservation, while the Southern Islands are primarily known for their historical sites and near-shore leisure use.",
+    concept:
+      "Sisters' Islands Marine Park received coral colonies relocated from the Pulau Semakau reclamation works, making it an important sample for studying the effectiveness of coral reef translocation conservation in urbanised tropical waters.",
+    history:
+      "Sisters' Islands Marine Park was established in 2014 as Singapore's first marine park; Small Sister's Island hosts a sea-turtle hatchery, and the park has long carried out turtle conservation and coral reef restoration work.",
+  },
+  "labrador-nature-reserve": {
+    seeing:
+      "Labrador Nature Reserve is the only publicly accessible rocky sea cliff on mainland Singapore; 10 ha of secondary coastal vegetation and rocky shore were gazetted as a reserve in 2002.",
+    formation:
+      "Labrador's coastal ground is made of reddish-brown fine sandy clay with basalt stones and boulders scattered on low rises; long-term wave erosion has shaped today's rocky shore landform, which before land reclamation was a narrow strip of coast at high tide and an exposed rocky flat at low tide.",
+    observation:
+      "From the air, Labrador's rocky shore shows exposed rock flats along the coastline, extensively bared at low tide, forming a sharp contrast with the mostly artificial coastline elsewhere on mainland Singapore.",
+    distinguish:
+      "Labrador Nature Reserve and Singapore's other coastal parks all lie along the coast, but Labrador is known as mainland Singapore's only surviving natural rocky sea cliff, while most other coastal stretches have been reclaimed into artificial beaches or sea walls.",
+    concept:
+      "The community of giant mudskippers, crabs, sea anemones and other intertidal life exposed at low tide on Labrador's rocky shore makes it a classic sample for studying the isolated survival of a tropical rocky-shore ecosystem within a highly urbanised coastline.",
+    history:
+      "The Labrador area historically held several coastal defence gun batteries; it was gazetted as a nature reserve in 2002, and is today a representative site where Singapore's natural and historical heritage intersect.",
+  },
+  "bukit-batok-nature-park": {
+    seeing:
+      "Bukit Batok Nature Park covers 36 ha, developed in 1988 on the site of a disused quarry; a towering granite cliff face stands beside the former quarry's flooded pit, nicknamed \"Little Guilin\" for its resemblance to the karst landscape of Guilin, China.",
+    formation:
+      "The quarry at Bukit Batok, formerly known as Gammon Quarry, once extracted gabbro-norite; long-term quarrying left a steep, near-vertical cliff face, and after quarrying ceased, groundwater seeped in to form the flooded pit that, together with the cliff, makes up today's landscape.",
+    observation:
+      "From the air, Bukit Batok Nature Park is dominated by a near-vertical granite cliff at its centre, reflected in the still water of the pit below, forming a clearly layered landscape against the dense secondary forest around it.",
+    distinguish:
+      "Both Bukit Batok Nature Park and Bukit Timah Nature Reserve are granite hill landforms on mainland Singapore, but Bukit Batok is known for its vertical cliff landscape formed by quarrying, while Bukit Timah is a natural granite high ground preserving primary rainforest.",
+    concept:
+      "Since 2021, the Bukit Batok cliff face has experienced repeated landslips, making it a real-world case for studying the natural weathering of a disused quarry's steep cliff once artificial maintenance has stopped.",
+    history:
+      "\"Bukit Batok\" means \"coughing hill,\" a name derived from the vibration and noise of early quarrying operations; the park also preserves several sites associated with the Second World War.",
+  },
+  "coney-island-park": {
+    seeing:
+      "Coney Island (formerly Pulau Serangoon) is an island off Singapore's northeast coast, originally just 13 ha and expanded through successive reclamation projects to about 100 ha, its park encompassing casuarina coastal forest, mangroves and open grassland.",
+    formation:
+      "Coney Island was originally a small natural island; reclamation work from the 1990s, tied to the Punggol 21 planning initiative, expanded its southern area, shaping today's island outline and its varied coastal habitats.",
+    observation:
+      "From the air, Coney Island shows casuarina coastal forest, mangroves and open grassland interwoven across the landscape, a 2.5-km boardwalk winding along the coast, the island facing mainland Singapore across the water.",
+    distinguish:
+      "Both Coney Island and Pulau Ubin are islands off Singapore's northeast coast, but Coney Island is known for its planned nature park built through land reclamation, while Pulau Ubin preserves a granite-quarrying history and traditional rural character.",
+    concept:
+      "Coney Island's surviving population of locally rare plant species makes it a contemporary sample for studying how a reclaimed island can balance ecological conservation with public recreational use.",
+    history:
+      "In the 1930s Coney Island was purchased by the brothers Aw Boon Haw and Aw Boon Par, who renamed it Haw Par Island and built a private beach villa there; Coney Island Park opened in 2015.",
+  },
+  "kranji-marshes": {
+    seeing:
+      "Kranji Marshes is Singapore's largest natural freshwater marsh, covering more than 56 ha, home to over 170 bird species, 54 butterfly species and 33 dragonfly species.",
+    formation:
+      "After the Kranji River was dammed to form Kranji Reservoir in the 1970s, the low-lying surrounding ground flooded and unintentionally formed a freshwater marsh; long-term vegetation colonisation and hydrological processes together shaped today's freshwater marsh ecosystem.",
+    observation:
+      "From the air, Kranji Marshes shows open water interwoven with reeds and aquatic vegetation, two small artificial mud islands dotting the surface to provide roosting and breeding habitat for birds.",
+    distinguish:
+      "Both Kranji Marshes and Sungei Buloh Wetland Reserve are important wetlands in northwestern Singapore, but Kranji Marshes is an accidentally formed freshwater marsh known for birdwatching, while Sungei Buloh is a tidal mangrove wetland.",
+    concept:
+      "Kranji Marshes' wetland ecosystem, unintentionally created by dam construction, is a classic case for studying how human hydrological engineering can indirectly create new ecological habitat.",
+    history:
+      "In 2008 the Nature Society (Singapore) began participating in the conservation and management of Kranji Marshes, clearing some vegetation and building birdwatching facilities; the core conservation area remains closed to the public, with only about 8 ha open for visitors.",
+  },
+  "southern-islands": {
+    seeing:
+      "The Southern Islands are a group of islands south of mainland Singapore; St John's Island, Lazarus Island and Kusu Island are the best known among them, today a well-known near-shore leisure destination.",
+    formation:
+      "The Southern Islands share the same shallow continental shelf as mainland Singapore; long-term sea-level change and sedimentation have shaped today's scattered group of small islands, each low-lying and modest in area.",
+    observation:
+      "From the air, the Southern Islands appear as several small green islands scattered across pale-blue coastal waters, connected by ferry routes, facing mainland Singapore and its port anchorage across the water.",
+    distinguish:
+      "The Southern Islands and Sisters' Islands Marine Park lie geographically close together, but the Southern Islands' main function is historical heritage and near-shore leisure, while Sisters' Islands Marine Park's core function is coral reef conservation.",
+    concept:
+      "The Southern Islands' successive historical roles in quarantine and drug rehabilitation make them a classic case for studying how the geographic isolation of islands has been applied to public health management.",
+    history:
+      "St John's Island served as a quarantine station from the late 19th century and was converted into a drug rehabilitation centre from the 1950s to the 1970s; Lazarus Island earned the name \"Convalescent Island\" after a beriberi hospital was built there in 1899; Kusu Island holds temples and a turtle sanctuary pond, drawing large numbers of pilgrims each year during the ninth lunar month.",
+  },
+  "pulau-semakau": {
+    seeing:
+      "Pulau Semakau is an island about 8 km south of mainland Singapore, home since 1999 to Singapore's sole operating landfill, formed in 1995 by joining Pulau Semakau and Pulau Sakeng with a rock bund.",
+    formation:
+      "The landfill's rock bund is lined with an impermeable membrane and marine clay to prevent pollutant leakage, sealing incinerated ash and other waste within the enclosed sea space — a product combining artificial geotechnical engineering with the island's existing landform.",
+    observation:
+      "From the air, Pulau Semakau shows the regular outline of bunds dividing what was once open sea into separate landfill cells, while mangroves replanted by hand and transplanted coral reef zones survive around the island's edges.",
+    distinguish:
+      "Pulau Semakau and Singapore's other Southern Islands all lie south of the Singapore Strait, but Semakau is known for its function as an active landfill, while the other Southern Islands are known for their historical heritage or coral reef conservation.",
+    concept:
+      "Pulau Semakau's maintenance of mangrove, coral reef and seagrass ecosystems alongside ongoing landfill operations makes it a contemporary case for studying how urban solid-waste infrastructure and marine ecological conservation can coexist in the same space.",
+    history:
+      "Phase I of the Semakau landfill destroyed 13 ha of mangrove, which the National Environment Agency replaced by planting 400,000 mangrove saplings on artificial mudflats; during Phase II, more than 700 coral colonies were transplanted to the waters around the Sisters' Islands, and mangrove, coral reef and seagrass ecosystems survive on and around the island today.",
+  },
+  // ============ Malaysia ============
+  "titiwangsa-mountains": {
+    seeing:
+      "The Titiwangsa Mountains form the backbone of the Malay Peninsula, running northwest to southeast for about 480 km — the longest and most contiguous range on the peninsula; its highest peak, Mount Korbu, reaches 2,183 m, the peninsula's second-highest point.",
+    formation:
+      "The Titiwangsa range's core is built of Mesozoic granite intrusions; long-term weathering and erosion have shaped today's continuous ridgeline with relatively rounded, forest-covered tropical mountain summits, forming the natural watershed between the peninsula's two coasts.",
+    observation:
+      "From the air, the Titiwangsa Mountains appear as a continuous green ridge running down the peninsula's spine, the massif perpetually covered in tropical rainforest with cloud drifting among the peaks, rivers on either side radiating outward toward the South China Sea and the Strait of Malacca respectively.",
+    distinguish:
+      "Both the Titiwangsa Mountains and Gunung Tahan are mountainous landforms on the Malay Peninsula, but the Titiwangsa range is a continuous chain running the length of the peninsula and forming its backbone, while Gunung Tahan is the peninsula's single highest standalone peak, lying east of the Titiwangsa range.",
+    concept:
+      "As the Malay Peninsula's watershed, the contrast in rainfall patterns and river flow direction on either side of the Titiwangsa range is key to understanding the peninsula's overall landform and climate distribution.",
+    history:
+      "Hill-station resorts along the range such as Cameron Highlands and the Genting plateau were developed during British colonial rule; the mountains remain an important water-catchment and ecological conservation area for Malaysia today.",
+  },
+  "gunung-tahan": {
+    seeing:
+      "Gunung Tahan (Mount Tahan) is the highest peak on the Malay Peninsula, at 2,187 m, on the border between Pahang and Kelantan, and is the central feature of Taman Negara National Park, which spans a broad tract of lowland tropical rainforest at the meeting point of three states.",
+    formation:
+      "Gunung Tahan's massif is built mainly of Mesozoic sandstone and granite; long-term tectonic uplift combined with weathering under a hot, humid tropical climate has shaped today's steep peak and deeply cut river valleys.",
+    observation:
+      "From the air, Gunung Tahan's summit is perpetually wreathed in cloud, surrounded by an extensive tract of primary tropical rainforest with very high forest cover and almost no visible sign of human development, a sharp contrast with the peninsula's developed coastal areas.",
+    distinguish:
+      "Both Gunung Tahan and the Titiwangsa Mountains are mountainous landforms on the Malay Peninsula, but Gunung Tahan is the peninsula's single highest standalone peak, defined by its elevation, while the Titiwangsa range is a continuous chain running the length of the peninsula.",
+    concept:
+      "Taman Negara, where Gunung Tahan stands, preserves one of the oldest surviving rainforest ecosystems on the Malay Peninsula, making it an important sample for studying long-term tropical rainforest succession and altitudinal vegetation zonation on mountains.",
+    history:
+      "Taman Negara has long been a traditional area of activity for the Orang Asli, the indigenous peoples of the Malay Peninsula, and is today an important ecotourism and mountaineering destination in Malaysia.",
+  },
+  "cameron-highlands": {
+    seeing:
+      "Cameron Highlands is a cool plateau at 1,100–1,800 m elevation within the Titiwangsa range, named after William Cameron who surveyed the area in 1885, and is today an important highland tea-growing region of Malaysia.",
+    formation:
+      "Cameron Highlands is a relatively gentle upland formed by long-term weathering and erosion of the Titiwangsa range's granite massif; its higher elevation gives it a cool, humid climate, in contrast with the steeper peaks of the main range.",
+    observation:
+      "From the air, Cameron Highlands shows terraced green tea gardens layered across the landscape, forming a sharp contrast between cultivated and primary-forest-covered steep terrain on the surrounding mountains, with cloud frequently drifting over the plateau.",
+    distinguish:
+      "Cameron Highlands and the Titiwangsa Mountains belong to the same range, but Cameron Highlands is a relatively gentle upland within the range that has been developed for tea cultivation, while the Titiwangsa range as a whole is dominated by a continuous, steep ridgeline.",
+    concept:
+      "Cameron Highlands' climate and soil conditions make it a classic sample for studying the tropical \"hill station\" phenomenon and the suitability of high-elevation terrain for cash-crop cultivation.",
+    history:
+      "British colonial authorities developed Cameron Highlands as a hill-station resort in the early 20th century; after the first tea estate, BOH, was established in 1929, the area gradually grew into an important highland tea-growing region of Malaysia.",
+  },
+  "mount-kinabalu": {
+    seeing:
+      "Mount Kinabalu is the highest peak in Malaysia and the Malay Archipelago, at 4,095 m, a granite intrusion forming part of the Crocker Range; Kinabalu Park was inscribed on the UNESCO World Heritage List in 2000.",
+    formation:
+      "Mount Kinabalu formed about 15 million years ago as magma from deep within the crust intruded and cooled into a granite body; sustained tectonic uplift together with glacial-period erosion has since shaped today's steep granite peak with its bare summit rock.",
+    observation:
+      "From the air, Mount Kinabalu's bare grey-white granite summit rises above a sea of cloud, its slopes showing a sharp vertical vegetation zonation from dense tropical rainforest to montane cloud forest, its outline striking against the Bornean skyline.",
+    distinguish:
+      "Mount Kinabalu and the Crocker Range lie geographically adjacent, but Mount Kinabalu is a single standalone granite peak known for its elevation and bare rock face, while the Crocker Range is a continuous chain with no single dominant summit.",
+    concept:
+      "Kinabalu Park is a centre of plant diversity in Southeast Asia, home to roughly 5,000–6,000 plant species, making it an important sample for studying altitudinal vegetation zonation and the formation of species diversity on tropical mountains.",
+    history:
+      "In the traditional belief of the local Kadazan-Dusun people, Mount Kinabalu is regarded as the resting place of ancestral spirits, and its name is said to mean \"the revered place of the dead\" or \"home of the spirits\"; it was formally inscribed on the UNESCO World Heritage List in 2000.",
+  },
+  "crocker-range": {
+    seeing:
+      "The Crocker Range is a north-south trending chain in western Sabah about 120 km long, with no single dominant peak, elevations ranging from 6 to 2,076 m, and forms part of the same granite massif system as Mount Kinabalu.",
+    formation:
+      "The Crocker Range formed through tectonic uplift since the Paleogene; long-term weathering and erosion have shaped today's rolling, mid-elevation terrain without a standout summit, in contrast with the isolated, towering peak of Mount Kinabalu nearby.",
+    observation:
+      "From the air, the Crocker Range appears as a continuous, rolling ridge of deep green, tropical rainforest at lower elevations giving way to montane cloud forest higher up, its terrain relatively gentle with no sharp peaks.",
+    distinguish:
+      "The Crocker Range and Mount Kinabalu are geographically adjacent and part of the same biosphere-reserve system, but the Crocker Range is a continuous chain with no dominant peak, while Mount Kinabalu is a single, isolated high summit.",
+    concept:
+      "The Crocker Range Biosphere Reserve covers 350,000 ha, one of the largest protected areas on the island of Borneo, making it an important sample for studying the altitudinal vegetation zonation of Sabah's mid-elevation tropical mountains.",
+    history:
+      "The Crocker Range Biosphere Reserve was inscribed under UNESCO's Man and the Biosphere Programme in 2014, and has long been a traditional area of activity for Dusun and other indigenous communities of inland Sabah.",
+  },
+  "kelabit-highlands": {
+    seeing:
+      "The Kelabit Highlands are an inland plateau in the northernmost part of Sarawak's Miri Division, centred on the \"Plain of Bah\" around Bario village, at 1,000–1,200 m elevation and extending about 30 km north-south.",
+    formation:
+      "The Kelabit Highlands are a relatively flat, high-elevation basin within interior Borneo, ringed by peaks such as Mount Murud (2,423 m); long-term erosion and deposition together have shaped today's broad, gentle plateau basin.",
+    observation:
+      "From the air, the Kelabit Highlands appear as an open valley ringed by mountains, rice paddies and settlements dotting the landscape, forming a sharp contrast with the steep terrain of Borneo's surrounding interior mountains.",
+    distinguish:
+      "Both the Kelabit Highlands and the Crocker Range are highland landforms of Borneo, but the Kelabit Highlands are a flat plateau basin ringed by mountains, known for its rice-farming settlements, while the Crocker Range is a continuous mid-elevation ridge.",
+    concept:
+      "As a rare flat, high-elevation basin in interior Borneo, the Kelabit Highlands are a classic sample for studying how a tropical montane microclimate can support highland rice agriculture.",
+    history:
+      "The Kelabit Highlands are the traditional homeland of the Kelabit people of Sarawak, numbering about 6,800, spread across more than a dozen villages around Bario, long maintaining a distinctive tradition of highland rice farming combined with hunting and gathering.",
+  },
+  "gua-tempurung": {
+    seeing:
+      "Gua Tempurung is a limestone cave in Gopeng, Perak, dating back about 400 million years; it runs about 4.5 km in length with a 1.6-km underground river inside, one of the largest surviving cave systems on the Malay Peninsula.",
+    formation:
+      "The limestone strata hosting Gua Tempurung were deposited in the Paleozoic about 400 million years ago; groundwater dissolution of the carbonate rock through the late Miocene (about 10 million years ago) progressively enlarged fractures and voids into today's complex system of five caverns.",
+    observation:
+      "From the air, the limestone hill containing Gua Tempurung has a rounded outline, said to resemble a coconut shell — hence its name; the surface is vegetated and the cave entrance is hidden within the massif, with the underground river emerging to join the surface drainage.",
+    distinguish:
+      "Both Gua Tempurung and Batu Caves are limestone caves on the Malay Peninsula, but Gua Tempurung is known for its underground river running through vast caverns, while Batu Caves is known for its tall cave mouth and the Hindu shrine within.",
+    concept:
+      "The stalactites, stalagmites and marble patterns distinct to each of Gua Tempurung's five caverns make it a classic sample for studying how long-term groundwater dissolution shapes cave systems in tropical limestone terrain.",
+    history:
+      "Gua Tempurung takes its name — \"coconut-shell cave\" — from the shape of its surrounding limestone hills; it is today an important geological tourism site in Perak, with boardwalks allowing visitors to explore its different caverns.",
+  },
+  "batu-caves": {
+    seeing:
+      "Batu Caves is a 325-m limestone hill and its cave system in Gombak, Selangor, its bedrock Silurian limestone dating back about 400 million years, one of Malaysia's best-known cave landforms.",
+    formation:
+      "After the limestone at Batu Caves was first deposited, it underwent tectonic uplift, compression and folding during the Triassic about 200 million years ago; subsequent long-term groundwater dissolution of the carbonate rock progressively enlarged fractures into today's cave system.",
+    observation:
+      "From the air, the limestone hill of Batu Caves rises as an isolated outcrop from the plain north of Kuala Lumpur, its tall cave mouth prominent, the rock face sparsely vegetated and exposed, forming a sharp vertical contrast with the open plain around it.",
+    distinguish:
+      "Both Batu Caves and Gua Tempurung are limestone caves on the Malay Peninsula, but Batu Caves is an isolated limestone outcrop with a tall, open cave mouth, while Gua Tempurung is a complex cave system with a long underground river.",
+    concept:
+      "The formation of stalactites and stalagmites within Batu Caves is a classic case for studying the carbonate dissolution-deposition cycle in tropical limestone regions.",
+    history:
+      "A Hindu shrine has stood within Batu Caves since the late 19th century, and the site draws large numbers of devotees each year during the Thaipusam festival, making it a well-known place where natural and cultural landscape intersect in Malaysia.",
+  },
+  "gunung-mulu-np": {
+    seeing:
+      "Gunung Mulu National Park is the most intensively studied tropical karst area in the world, known for the sandstone pinnacles of 2,377-m Gunung Mulu and an explored cave system of more than 295 km, inscribed on the UNESCO World Heritage List in 2000.",
+    formation:
+      "The karst landscape of Gunung Mulu National Park was shaped by long-term limestone dissolution; Gunung Mulu itself is a sandstone pinnacle massif, while below ground, sustained groundwater dissolution of carbonate rock has produced a vast cave system, a textbook example of karst collapse landforms.",
+    observation:
+      "From the air, the Pinnacles of Gunung Mulu rise in a dense cluster of razor-sharp limestone spires about 50 m tall, forming, together with the dense rainforest cover above and the vast cave system below, a highly distinctive three-dimensional karst landscape.",
+    distinguish:
+      "Both Gunung Mulu National Park and the Niah Caves are limestone karst landforms in Sarawak, but Gunung Mulu is known for its Pinnacles and the world's largest known cave chamber (the Sarawak Chamber), while Niah is known for its ancient human archaeological site.",
+    concept:
+      "The Sarawak Chamber measures 600 m by 415 m and 80 m high, the largest known natural cave chamber in the world, and Deer Cave is the world's second-largest cave, making Gunung Mulu an important sample for studying the relationship between the scale of tropical karst cave systems and their biodiversity.",
+    history:
+      "Gunung Mulu National Park was inscribed on the UNESCO World Heritage List in 2000; its caves are home to millions of swiftlets and bats, and the park has long been part of the traditional territory of the local Penan people.",
+  },
+  "niah-caves": {
+    seeing:
+      "The Niah Caves are a cave complex on the northern edge of the Gunong Subis limestone massif on Sarawak's coastal plain, the Great Cave's mouth more than 60 m high, inscribed on the UNESCO World Heritage List in 2024.",
+    formation:
+      "The limestone hosting the Niah Caves was deposited in an ancient geological period when the area lay beneath the sea; subsequent tectonic uplift raised it above ground, and long-term groundwater dissolution shaped today's system of caverns, including the towering Great Cave and the Painted Cave.",
+    observation:
+      "From the air, the Gunong Subis limestone massif containing the Niah Caves rises out of the mixed dipterocarp forest of Sarawak's coastal plain, the mouth of the Great Cave set into the massif like a vast rock breach, its scale dwarfing the terrain around it.",
+    distinguish:
+      "Both the Niah Caves and Gunung Mulu National Park are limestone karst landforms in Sarawak, but Niah is known for its ancient human archaeological site, while Gunung Mulu is known for its Pinnacles and the world's largest cave chamber.",
+    concept:
+      "Archaeological finds within the Niah Caves document human activity dating back about 40,000 years, with some skull fragments dated to about 65,000 years old, making it a key site for studying early human migration into and adaptation to Southeast Asia's tropical environment.",
+    history:
+      "The Niah Caves were first scientifically recorded in 1880; major archaeological excavations took place in the 1950s–60s under Tom Harrisson, curator of the Sarawak Museum, and his wife Barbara, and the site was formally inscribed on the UNESCO World Heritage List in 2024.",
+  },
+  "maliau-basin": {
+    seeing:
+      "Maliau Basin, known as \"Sabah's Lost World,\" is a near-circular, saucer-shaped basin in interior Sabah about 25 km in diameter, its rim formed by steep cliffs 300–1,600 m high.",
+    formation:
+      "Maliau Basin is built of sandstone and mudstone deposited in a coastal delta setting between about 15 and 9 million years ago; roughly 5 million years ago volcanic and tectonic activity uplifted the whole area into a plateau, whose centre then subsided under continued weathering to form today's saucer-shaped basin — it is not a volcanic crater.",
+    observation:
+      "From the air, Maliau Basin shows an almost perfectly circular outline, ringed by steep, near-vertical cliffs that isolate its interior from the surrounding landscape, giving it the appearance of a vast volcanic caldera when seen from a plane.",
+    distinguish:
+      "Both Maliau Basin and Danum Valley are primary rainforest reserves in interior Sabah, but Maliau Basin is a near-circular, saucer-shaped basin ringed by steep cliffs, while Danum Valley is a relatively open lowland rainforest river valley.",
+    concept:
+      "The steep rim cliffs of Maliau Basin form a natural isolating barrier that has long limited exchange between its interior ecosystem and the outside world, making it a classic sample for studying how geographic isolation shapes the evolution of tropical rainforest species.",
+    history:
+      "Maliau Basin earned the nickname \"Sabah's Lost World\" for its rugged terrain and long isolation from the outside world; it was not systematically surveyed by science until the late 20th century, and is today an important nature reserve in Sabah.",
+  },
+  "danum-valley": {
+    seeing:
+      "The Danum Valley Conservation Area is a 438-km² tract of largely undisturbed lowland dipterocarp forest in central Sabah, with a forest history of about 130 million years, making it one of the oldest surviving rainforests in the world.",
+    formation:
+      "The lowland rainforest of Danum Valley has long escaped logging disturbance; long-term erosion and deposition by its rivers have shaped an open valley landform, with 95% of the area covered in mixed dipterocarp forest and 5% mountainous terrain.",
+    observation:
+      "From the air, Danum Valley shows an extensive, rolling canopy of primary rainforest, winding rivers threading through it, the forest structure richly layered with canopy heights varying widely and almost no visible sign of logging.",
+    distinguish:
+      "Both Danum Valley and Maliau Basin are primary rainforest reserves in interior Sabah, but Danum Valley is a relatively open lowland rainforest river valley known for its undisturbed primary forest, while Maliau Basin is a saucer-shaped basin ringed by steep cliffs.",
+    concept:
+      "As one of the last representative tracts of primary rainforest remaining in North Borneo, Danum Valley is an important sample for studying the natural succession patterns of tropical lowland dipterocarp forest left undisturbed by human activity over the long term.",
+    history:
+      "The Danum Valley Conservation Area was established in 1980 and has been designated a Class 1 (Protection) Forest Reserve under Sabah's forestry enactment since 1968; the Danum Valley Studies Centre, founded in 1986, is a globally recognised centre for tropical rainforest research and education.",
+  },
+  "endau-rompin": {
+    seeing:
+      "Endau-Rompin National Park straddles Johor and Pahang and is the largest surviving protected area in the southern half of the Malay Peninsula, covering 48,900 ha of rugged hills, granite outcrops, river valleys and waterfalls.",
+    formation:
+      "The rock formations within Endau-Rompin National Park date back some 248 million years; long-term tectonic activity combined with weathering and erosion under a hot, humid tropical climate has shaped today's rolling hill terrain and granite outcrops, with rivers carving numerous waterfalls along zones of geological weakness.",
+    observation:
+      "From the air, Endau-Rompin National Park shows rolling hills dotted with granite outcrops, rivers winding through rainforest-covered valleys, waterfalls dropping along several of the watercourses, and very high forest cover throughout.",
+    distinguish:
+      "Both Endau-Rompin National Park and Taman Negara (Gunung Tahan) are ancient rainforest reserves in southern Peninsular Malaysia, but Endau-Rompin is defined by its rolling hills and granite outcrops, while Taman Negara is defined by the peninsula's highest peak and its steep massif.",
+    concept:
+      "Endau-Rompin's rainforest ecosystem has a history of more than 130 million years, older than the Amazon, making it an important sample for studying long-term tropical rainforest succession and the protection of habitat for endangered flagship species.",
+    history:
+      "Endau-Rompin National Park was formally established in 1993 and is an important habitat for endangered flagship species such as the Malayan tiger and Malayan tapir; it has long been the traditional territory of indigenous communities in Johor and Pahang.",
+  },
+  "langkawi-geopark": {
+    seeing:
+      "Langkawi UNESCO Global Geopark was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, its geological record spanning more than 550 million years and including Malaysia's most complete Cambrian-to-Permian Paleozoic sedimentary sequence.",
+    formation:
+      "The Langkawi archipelago's strata record a continuous Paleozoic sedimentary sequence from the Cambrian through the Permian; the Kilim River area is dominated by limestone karst, long-term dissolution having produced numerous sea stacks and sea arches, making it a key area for studying Southeast Asia's early geological evolution.",
+    observation:
+      "From the air, Langkawi's mangrove-lined Kilim estuary interweaves with scattered limestone karst pinnacles, sea stacks and sea arches dotting the waterways, forming a richly layered island landscape against the open Andaman Sea beyond.",
+    distinguish:
+      "Both Langkawi Geopark and Penang Island are island landforms off the Malay Peninsula's west coast, but Langkawi is known for its Paleozoic sedimentary sequence spanning 550 million years and its karst landforms, while Penang is a comparatively younger granite island.",
+    concept:
+      "Langkawi Geopark comprises three geoforest parks — Machinchang (Cambrian), Kilim (karst) and Dayang Bunting (marble) — making it an important field laboratory for studying the complete Paleozoic sedimentary sequence of Southeast Asia's continental shelf.",
+    history:
+      "Langkawi was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, and is today an important destination for geological and ecological tourism in Malaysia.",
+  },
+  "penang-island": {
+    seeing:
+      "Penang Island is a granite island off the northwest coast of the Malay Peninsula, its highest point, Penang Hill, reaching 833 m, with a forested granite hill core surrounded by coastal plains.",
+    formation:
+      "Penang's northern rock formations date from the Early Jurassic to Late Carboniferous, while the south comprises medium-to-coarse-grained biotite-feldspar granite; long-term weathering and erosion have shaped today's landform of a central hill core ringed by plains.",
+    observation:
+      "From the air, Penang Hill at the island's centre shows very high forest cover and steep terrain, forming a sharp contrast in landform and land use with the more heavily developed and urbanised coastal plains around it.",
+    distinguish:
+      "Both Penang Island and Langkawi Geopark are island landforms off the Malay Peninsula's west coast, but Penang is a comparatively younger granite island whose central hills form an important water catchment, while Langkawi is known for its Paleozoic karst landforms.",
+    concept:
+      "The forest on Penang's central hills has a history of more than 130 million years, making it a classic sample for studying the relationship between tropical island granite landforms and their water-catchment function.",
+    history:
+      "The Penang Hill area has been developed as a hill-station resort since British colonial times; Penang is today an important historical, cultural and tourism city in Malaysia, and George Town's old quarter is inscribed on the UNESCO World Heritage List.",
+  },
+  "tioman-island": {
+    seeing:
+      "Tioman Island is an igneous island off the coast of Pahang in the South China Sea, its central massif reaching 1,038 m, and a well-known diving and ecotourism destination in Malaysia.",
+    formation:
+      "Tioman's rock is made up mainly of volcanic, plutonic and contact metamorphic rock; the east, north and south are dominated by rhyolite and dacite, while its granite body intruded in the Late Cretaceous (about 80 million years ago), about 8.8 million years after the volcanic rocks, shaping today's landform of a towering centre with gentler surrounding terrain.",
+    observation:
+      "From the air, Tioman's central massif is densely forested and steep, its coastline indented with numerous bays, white sand beaches and coral reefs lining the shallow coastal waters, marking a sharp boundary between island and the open South China Sea.",
+    distinguish:
+      "Both Tioman Island and Sipadan Island are well-known diving destinations in Malaysia, but Tioman is a continental-shelf igneous island with a complete terrestrial ecosystem, while Sipadan is an isolated oceanic island built up by coral growth on a submerged volcanic cone.",
+    concept:
+      "The sequence in which Tioman's volcanic rock and granite body intruded makes it an important sample for studying the timing of late Mesozoic magmatic activity on the Malay Peninsula's east coast.",
+    history:
+      "Tioman Island has long been a traditional fishing ground for Malay fishermen, and is today a well-known island resort and diving destination on Malaysia's east coast.",
+  },
+  "perhentian-islands": {
+    seeing:
+      "The Perhentian Islands are a pair of small granite islands (Perhentian Besar and Perhentian Kecil) off the coast of Terengganu in the South China Sea, lined with white sand beaches and coral reefs, a well-known diving and snorkelling destination on the peninsula's east coast.",
+    formation:
+      "The Perhentian Islands belong to the same continental-shelf granite geological unit as other islands off the peninsula's east coast; long-term wave erosion combined with coral reef accumulation has shaped today's island outlines and surrounding shallow coral reef ecosystems.",
+    observation:
+      "From the air, Perhentian Besar and Perhentian Kecil sit side by side as two small granite islands, their white sand beaches clearly visible, forming a distinct band of colour between the pale-blue coral reef waters and the deep-blue open sea beyond.",
+    distinguish:
+      "Both the Perhentian Islands and Redang Island are granite islands off Terengganu in the South China Sea, but Perhentian consists of two neighbouring islands historically used as a resupply stop for trading ships, while Redang is part of Malaysia's marine park system.",
+    concept:
+      "The coral reef ecosystem around the Perhentian Islands is a classic sample for studying the distribution and conservation of shallow continental-shelf coral reefs off the Malay Peninsula's east coast.",
+    history:
+      "The Perhentian Islands take their name from the Malay word for \"stopping place,\" having historically served as a resupply stop for passing trading ships, and are today an important diving and snorkelling destination on Malaysia's east coast.",
+  },
+  "redang-island": {
+    seeing:
+      "Redang Island is a granite island off the coast of Terengganu in the South China Sea, part of Malaysia's marine park system, with a well-preserved coral reef ecosystem along its coast.",
+    formation:
+      "Redang belongs to the same continental-shelf granite geological unit as other islands off the peninsula's east coast; long-term wave erosion has shaped today's island outline, while corals in the surrounding shallow waters have grown and accumulated into a complete reef ecosystem.",
+    observation:
+      "From the air, Redang Island is ringed by extensive pale coral reef shallows, forming a clear colour boundary with the deep-blue open sea beyond, the island itself forested with gently rolling terrain.",
+    distinguish:
+      "Both Redang Island and the Perhentian Islands are granite islands off Terengganu in the South China Sea, but Redang is part of Malaysia's marine park system with well-preserved coral reefs, while the Perhentian Islands consist of two neighbouring islands.",
+    concept:
+      "The well-preserved coral reef ecosystem around Redang Island is a classic sample for studying the long-term effectiveness of coral reef conservation on the continental shelf off the Malay Peninsula's east coast.",
+    history:
+      "Redang Island and its surrounding waters are protected within Malaysia's marine park system, and it is today an important coral reef conservation area and diving destination on the peninsula's east coast.",
+  },
+  "sipadan-island": {
+    seeing:
+      "Sipadan is Malaysia's only oceanic island, lying beyond the continental shelf in the Celebes Sea, its pinnacle rising about 600 m vertically from the seabed, ringed by natural hard coral reef, with more than 400 recorded fish species.",
+    formation:
+      "Sipadan is a submarine pinnacle built up over millions of years by coral growth on top of an extinct volcanic cone; the combination of deep-water currents and a shallow, sunlit reef top has created exceptionally rich marine conditions around the island.",
+    observation:
+      "From the air and at the surface, Sipadan is tiny, almost the entire island covered in coral sand and tropical vegetation, the surrounding water shifting rapidly from pale blue to deep blue — a clear sign of the submarine pinnacle rising abruptly from deep water.",
+    distinguish:
+      "Both Sipadan and Tioman Island are well-known diving destinations in Malaysia, but Sipadan is an isolated oceanic island built up by coral on an extinct volcanic cone, surrounded immediately by deep sea, while Tioman is a continental-shelf igneous island.",
+    concept:
+      "Sitting at the heart of the Coral Triangle, Sipadan is a classic sample for studying how an oceanic-island coral reef ecosystem sustains high biodiversity under the combined conditions of deep-water currents and shallow-water sunlight.",
+    history:
+      "Sipadan was historically a sea-turtle nesting site and a traditional fishing ground for local fishermen, and became an internationally renowned diving destination in the late 20th century owing to its distinctive underwater landform and ecology.",
+  },
+  "pahang-river": {
+    seeing:
+      "The Pahang River is the longest river on the Malay Peninsula, running 459 km, formed by the confluence of its two headstreams, the Jelai and the Tembeling, draining a basin of about 29,000 km² before emptying into the South China Sea at Pekan.",
+    formation:
+      "The Pahang River rises on the eastern flank of the Titiwangsa Mountains; long-term erosion of the mountain rock and downstream sediment transport, together with a sharp eastward turn near Mengkarak where the slope changes at the break between mountains and plain, has shaped a floodplain more than 32 km wide before the river reaches the South China Sea.",
+    observation:
+      "From the air, the Pahang River shows a broad, winding channel running through extensive tropical rainforest and alluvial plain, its mouth marked by a delta landform interwoven with mangroves — the most prominent drainage feature on the peninsula's east coast.",
+    distinguish:
+      "Both the Pahang River and the Kelantan River are major rivers on the peninsula's east coast, but the Pahang is the peninsula's longest river with the largest drainage basin, while the Kelantan is comparatively shorter, its basin including part of Taman Negara.",
+    concept:
+      "As the peninsula's longest river, the Pahang's basin extent and course changes make it an important sample for studying the surface drainage pattern of the peninsula's east coast and the relationship between mountain and plain landforms.",
+    history:
+      "The Pahang River has historically been an important waterway for inland tin mining and timber transport on the Malay Peninsula, with towns such as Temerloh and Pekan along its banks long developing around river trade.",
+  },
+  "kelantan-river": {
+    seeing:
+      "The Kelantan River is the fourth-longest river on the Malay Peninsula, running 248 km, formed by the confluence of the Galas and Lebir rivers, draining a basin of about 11,900 km² before flowing north through Kota Bharu to the South China Sea.",
+    formation:
+      "The Kelantan's two headstreams, the Galas and the Lebir, rise separately in the Titiwangsa Mountains and the hills around Taman Negara; after long-term erosion of the mountain rock they join in the middle course, then flow north into a relatively flat coastal plain.",
+    observation:
+      "From the air, the upper Kelantan winds through mountainous terrain, opening into a broad alluvial plain in its middle and lower reaches; a clear delta landform appears at its mouth near Kota Bharu, closely tied to the rice-growing landscape of Kelantan state.",
+    distinguish:
+      "Both the Kelantan River and the Pahang River are major rivers on the peninsula's east coast, but the Kelantan's basin includes part of Taman Negara and is comparatively shorter, while the Pahang is the peninsula's longest river with a larger basin.",
+    concept:
+      "As the Kelantan River's basin includes part of Taman Negara, it is an important sample for studying the relationship between mountain river drainage systems and tropical rainforest reserves in the northeastern Malay Peninsula.",
+    history:
+      "The Kelantan valley was historically the political and cultural heartland of the Sultanate of Kelantan; Kota Bharu at its mouth is today the capital of Kelantan state.",
+  },
+  "perak-river": {
+    seeing:
+      "The Perak River is the second-longest river on the Malay Peninsula, running about 400 km, rising in the Titiwangsa Mountains at the tripoint of Perak, Kelantan and Thailand, and flowing south through Teluk Intan to the Strait of Malacca.",
+    formation:
+      "The Perak River rises in the northern Titiwangsa Mountains around Royal Belum State Park; long-term erosion of the mountain rock and downstream sediment transport have shaped a narrow, elongated valley plain running the length of Perak state from north to south.",
+    observation:
+      "From the air, the upper Perak River winds through the primary rainforest of the Royal Belum area, opening into broad agricultural plains in its middle and lower reaches, with a clear river-mouth landform where it meets the Strait of Malacca at Teluk Intan.",
+    distinguish:
+      "The Perak River and the Pahang River flow to opposite coasts of the Malay Peninsula: the Perak flows west into the Strait of Malacca as the peninsula's second-longest river, while the Pahang flows east into the South China Sea as its longest.",
+    concept:
+      "As the main river running the length of the peninsula's west coast, the Perak River is an important sample for studying the drainage pattern on the western flank of the Titiwangsa Mountains and its relationship to agricultural development in the river valley plain.",
+    history:
+      "The Perak River has historically been an important waterway for tin transport on the Malay Peninsula's west coast, with towns such as Ipoh along its banks prospering through tin mining and river trade.",
+  },
+  "kinabatangan-river": {
+    seeing:
+      "The Kinabatangan River is Malaysia's second-longest river, running about 560 km, rising in the Crocker Range in southwest Sabah and flowing east to empty into the Sulu Sea southeast of Sandakan.",
+    formation:
+      "The Kinabatangan rises in the Crocker Range; long-term erosion of the mountain rock and downstream transport of large amounts of sediment have formed a broad floodplain and alluvial plain in its lower course, providing an ideal terrain base for a tropical rainforest wetland ecosystem.",
+    observation:
+      "From the air, the lower Kinabatangan winds in tight meanders scattered with oxbow lakes, its banks lined with dense floodplain forest, forming a sharp contrast between primary landform and developed plantation land further into Sabah's interior.",
+    distinguish:
+      "Both the Kinabatangan and the Rajang are major rivers of Borneo, but the Kinabatangan is known for the wildlife diversity of its lower floodplain forest, while the Rajang is Borneo's longest river and was historically an important timber-transport waterway.",
+    concept:
+      "The Kinabatangan's lower floodplain forest is one of only two known places on Earth where ten primate species can be found together, making it an important sample for studying how biodiversity is sustained in tropical river-floodplain forest ecosystems.",
+    history:
+      "In 2005 the Sabah government gazetted the Kinabatangan Wildlife Sanctuary; it is today one of Borneo's most important wildlife-viewing destinations and has long been a traditional fishing and hunting ground for indigenous communities of inland Sabah.",
+  },
+  "rejang-river": {
+    seeing:
+      "The Rajang River is Malaysia's longest river, running about 563 km, rising in the Iran Mountains of interior Borneo and flowing west into the South China Sea — the seventh-longest river on the island of Borneo.",
+    formation:
+      "The Rajang rises in the Iran Mountains of interior Borneo; long-term erosion of the mountain rock and downstream transport of large amounts of sediment have built a broad delta landform at its mouth, making it Sarawak's largest river system.",
+    observation:
+      "From the air, the upper Rajang winds through the dense forest of interior Borneo, its channel widening through the middle and lower reaches; the riverside town of Sibu has grown around river trade, and a dense network of waterways marks the delta at its mouth.",
+    distinguish:
+      "Both the Rajang and the Kinabatangan are major rivers of Borneo, but the Rajang is Borneo's longest river and was historically an important timber-transport waterway, while the Kinabatangan is known for the wildlife diversity of its lower floodplain forest.",
+    concept:
+      "As Borneo's longest river, the landform gradient between the Rajang's mountainous upper course and its delta lower course makes it a classic sample for studying how interior Bornean rivers transport sediment over long distances to build river-mouth deltas.",
+    history:
+      "The Rajang River has historically been an important waterway for timber and agricultural transport in interior Sarawak, with Sibu, the largest town on its banks, developing into an important commercial centre of Sarawak through river trade.",
+  },
+  "tasik-chini": {
+    seeing:
+      "Tasik Chini (Lake Chini) is Peninsular Malaysia's second-largest natural freshwater lake, made up of 12 interconnected smaller lakes covering about 5,085 ha, about 100 km from Kuantan, recognised by UNESCO in 2009 as Malaysia's first biosphere reserve.",
+    formation:
+      "Tasik Chini formed as tributaries of the Pahang River gathered over a long period in a low-lying depression into a series of interconnected shallow lakes; seasonal water-level changes alternately merge and separate the 12 component lakes, a classic example of a tropical lowland freshwater lake cluster.",
+    observation:
+      "From the air, Tasik Chini appears as an irregular water body made up of 12 interconnected lakes, its shoreline winding and rich in aquatic vegetation; during the wet season, blooming lotus flowers cover large stretches of the surface, a distinctive wetland landscape within the Pahang River basin.",
+    distinguish:
+      "Both Tasik Chini and the Pahang River lie within the same drainage system in Pahang state, but Tasik Chini is a relatively still natural freshwater lake cluster, while the Pahang River is the peninsula's longest river, a dynamic flowing system.",
+    concept:
+      "Tasik Chini is home to 138 plant species, more than 300 non-aquatic species and 144 freshwater fish species, making it an important sample for studying the relationship between biodiversity and water-quality change in tropical lowland lake wetland ecosystems.",
+    history:
+      "Tasik Chini is the ancestral home of the Jakun, an Orang Asli indigenous community of Pahang; local legend holds that an ancient Khmer city lies sunken beneath the lake, guarded by a \"dragon god.\" Recognised by UNESCO in 2009 as Malaysia's first biosphere reserve, the lake's ecosystem has in recent years faced degradation risk from mining and logging activity.",
+  },
+  "bako-national-park": {
+    seeing:
+      "Bako National Park is a stretch of coastal sandstone landform in Sarawak, shaped over millions of years of wave erosion into steep cliffs, headlands and white-sand bays, its sea stacks the park's signature feature.",
+    formation:
+      "The sandstone at Bako belongs to the same ancient sandstone geological unit as the Muara Tebas peninsula; long-term wave erosion has undercut the base of the headlands, isolating hard rock pillars offshore while softer surrounding rock has been carried away by currents.",
+    observation:
+      "From the air, Bako's coastline alternates between steep cliffs and winding headlands, several isolated sea stacks standing in the nearshore waters of the South China Sea, their surfaces marked with striking orange-red banding from iron-oxide deposition.",
+    distinguish:
+      "Both Bako National Park and Langkawi Geopark are known for sea-erosion landforms, but Bako's features are sandstone sea stacks and cliffs, while Langkawi is defined by limestone karst sea stacks and sea arches.",
+    concept:
+      "The distinctive northwest-southeast trending joints in Bako's sandstone have determined the orientation of many of the region's headlands and streams, making it a classic sample for studying how rock-joint structure controls the development of coastal landforms.",
+    history:
+      "In February 2024, one of Bako's iconic sea stacks collapsed under the impact of large waves, an event confirmed by the Sarawak Forestry Corporation, illustrating that sea-stack landforms are an ongoing, not static, geological process.",
+  },
 };

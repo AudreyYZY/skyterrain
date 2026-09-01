@@ -2261,6 +2261,83 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "白亭寺", nameEn: "Bai Dinh Pagoda", lon: 105.8642, lat: 20.2611, kind: "landmark" },
     { nameZh: "木庵溶洞与观景台", nameEn: "Mua Cave", lon: 105.9294, lat: 20.2469, kind: "nature" },
   ],
+  // 马来西亚
+  "kuala-lumpur": [
+    { nameZh: "双峰塔", nameEn: "Petronas Twin Towers", lon: 101.7118, lat: 3.1579, kind: "landmark" },
+    { nameZh: "独立广场", nameEn: "Merdeka Square", lon: 101.6947, lat: 3.1478, kind: "landmark" },
+    { nameZh: "黑风洞", nameEn: "Batu Caves", lon: 101.6839, lat: 3.2379, kind: "nature" },
+    { nameZh: "茨厂街", nameEn: "Petaling Street", lon: 101.6969, lat: 3.1436, kind: "district" },
+    { nameZh: "秋杰路", nameEn: "Brickfields", lon: 101.6856, lat: 3.1281, kind: "district" },
+  ],
+  "george-town": [
+    { nameZh: "姓氏桥", nameEn: "Clan Jetties", lon: 100.3419, lat: 5.4133, kind: "district" },
+    { nameZh: "张弼士故居", nameEn: "Cheong Fatt Tze Mansion", lon: 100.3364, lat: 5.4147, kind: "landmark" },
+    { nameZh: "升旗山", nameEn: "Penang Hill", lon: 100.2769, lat: 5.3986, kind: "nature" },
+    { nameZh: "康华利斯堡", nameEn: "Fort Cornwallis", lon: 100.3439, lat: 5.4225, kind: "landmark" },
+    { nameZh: "小印度", nameEn: "Little India", lon: 100.3378, lat: 5.4106, kind: "district" },
+  ],
+  "johor-bahru": [
+    { nameZh: "柔佛古皇宫博物馆", nameEn: "Sultan Abu Bakar Museum", lon: 103.7469, lat: 1.4569, kind: "landmark" },
+    { nameZh: "新山中央市场", nameEn: "Johor Bahru Central Market", lon: 103.7625, lat: 1.4553, kind: "district" },
+    { nameZh: "乐高乐园马来西亚", nameEn: "Legoland Malaysia", lon: 103.6317, lat: 1.4267, kind: "landmark" },
+    { nameZh: "新柔长堤", nameEn: "Johor–Singapore Causeway", lon: 103.7692, lat: 1.4636, kind: "landmark" },
+  ],
+  "malacca-city": [
+    { nameZh: "荷兰红屋广场", nameEn: "Dutch Square (Stadthuys)", lon: 102.2497, lat: 2.1936, kind: "landmark" },
+    { nameZh: "圣保罗山", nameEn: "St Paul's Hill", lon: 102.2486, lat: 2.1911, kind: "landmark" },
+    { nameZh: "鸡场街", nameEn: "Jonker Street", lon: 102.2478, lat: 2.1958, kind: "district" },
+    { nameZh: "峇峇娘惹博物馆", nameEn: "Baba-Nyonya Heritage Museum", lon: 102.2464, lat: 2.1961, kind: "landmark" },
+    { nameZh: "圣地亚哥城门", nameEn: "Porta de Santiago (A Famosa)", lon: 102.2494, lat: 2.1911, kind: "landmark" },
+  ],
+  ipoh: [
+    { nameZh: "东姑洞", nameEn: "Gua Tempurung", lon: 101.187, lat: 4.433, kind: "nature" },
+    { nameZh: "怡保旧城区壁画街", nameEn: "Ipoh Old Town Mural Street", lon: 101.0819, lat: 4.5967, kind: "district" },
+    { nameZh: "怡保火车站", nameEn: "Ipoh Railway Station", lon: 101.0808, lat: 4.5978, kind: "landmark" },
+    { nameZh: "近打老街", nameEn: "Concubine Lane", lon: 101.0819, lat: 4.5964, kind: "district" },
+  ],
+  "kota-kinabalu": [
+    { nameZh: "丹绒亚路海滩", nameEn: "Tanjung Aru Beach", lon: 116.0511, lat: 5.9425, kind: "nature" },
+    { nameZh: "加雅街", nameEn: "Gaya Street", lon: 116.0728, lat: 5.9836, kind: "district" },
+    { nameZh: "东姑阿都拉曼海洋公园", nameEn: "Tunku Abdul Rahman Marine Park", lon: 115.9967, lat: 6.0206, kind: "nature" },
+    { nameZh: "京那巴鲁山", nameEn: "Mount Kinabalu", lon: 116.5581, lat: 6.0754, kind: "nature" },
+    { nameZh: "信号山观景台", nameEn: "Signal Hill Observatory", lon: 116.0806, lat: 5.9822, kind: "landmark" },
+  ],
+  kuching: [
+    { nameZh: "古晋河滨长廊", nameEn: "Kuching Waterfront", lon: 110.3453, lat: 1.5583, kind: "district" },
+    { nameZh: "马格努宫", nameEn: "Astana", lon: 110.3478, lat: 1.5658, kind: "landmark" },
+    { nameZh: "砂拉越博物馆", nameEn: "Sarawak Museum", lon: 110.3475, lat: 1.5567, kind: "landmark" },
+    { nameZh: "巴哥国家公园", nameEn: "Bako National Park", lon: 110.47, lat: 1.72, kind: "nature" },
+    { nameZh: "古晋老巴刹", nameEn: "Old Bazaar", lon: 110.3444, lat: 1.5583, kind: "district" },
+  ],
+  "kota-bharu": [
+    { nameZh: "中央市场", nameEn: "Central Market (Pasar Siti Khadijah)", lon: 102.2417, lat: 6.1319, kind: "district" },
+    { nameZh: "伊斯兰艺术博物馆", nameEn: "Islamic Arts Museum", lon: 102.2394, lat: 6.1300, kind: "landmark" },
+    { nameZh: "吉兰丹河沿岸", nameEn: "Kelantan Riverside", lon: 102.2453, lat: 6.1350, kind: "nature" },
+  ],
+  kuantan: [
+    { nameZh: "德立海滩", nameEn: "Teluk Cempedak Beach", lon: 103.3628, lat: 3.8244, kind: "nature" },
+    { nameZh: "关丹州立清真寺", nameEn: "Kuantan State Mosque", lon: 103.3269, lat: 3.8083, kind: "landmark" },
+    { nameZh: "彭亨河口渔村", nameEn: "Pahang River-Mouth Fishing Village", lon: 103.3506, lat: 3.8092, kind: "district" },
+    { nameZh: "琴宁湖", nameEn: "Tasik Chini", lon: 102.89, lat: 3.42, kind: "nature" },
+  ],
+  sandakan: [
+    { nameZh: "山打根中央市场", nameEn: "Sandakan Central Market", lon: 118.1181, lat: 5.8394, kind: "district" },
+    { nameZh: "沙比洛红毛猩猩康复中心", nameEn: "Sepilok Orangutan Rehabilitation Centre", lon: 118.0797, lat: 5.8742, kind: "nature" },
+    { nameZh: "京那巴当岸河（苏高）", nameEn: "Kinabatangan River (Sukau)", lon: 118.35, lat: 5.50, kind: "nature" },
+    { nameZh: "艾格尼丝凯斯故居", nameEn: "Agnes Keith House", lon: 118.1164, lat: 5.8461, kind: "landmark" },
+  ],
+  miri: [
+    { nameZh: "加拿大山油井纪念公园", nameEn: "Canada Hill", lon: 113.9958, lat: 4.4064, kind: "landmark" },
+    { nameZh: "美里海滨长廊", nameEn: "Miri Waterfront", lon: 113.9903, lat: 4.4008, kind: "district" },
+    { nameZh: "姆鲁山国家公园", nameEn: "Gunung Mulu National Park", lon: 114.90, lat: 4.05, kind: "nature" },
+    { nameZh: "尼亚洞穴", nameEn: "Niah Caves", lon: 113.77, lat: 3.825, kind: "nature" },
+  ],
+  "langkawi-city": [
+    { nameZh: "浮罗交怡天空之桥", nameEn: "Langkawi Sky Bridge", lon: 99.6708, lat: 6.3831, kind: "landmark" },
+    { nameZh: "基林河喀斯特地质森林公园", nameEn: "Kilim Karst Geoforest Park", lon: 99.85, lat: 6.42, kind: "nature" },
+    { nameZh: "珍南海滩", nameEn: "Pantai Cenang", lon: 99.7286, lat: 6.2894, kind: "nature" },
+    { nameZh: "瓜镇免税购物区", nameEn: "Kuah Duty-Free District", lon: 99.8494, lat: 6.3181, kind: "district" },
+  ],
   // 蒙古
   ulaanbaatar: [
     { nameZh: "苏赫巴托尔广场（成吉思汗广场）", nameEn: "Sükhbaatar Square", lon: 106.9175, lat: 47.9185, kind: "landmark" },
@@ -2378,6 +2455,21 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "横甘街", nameEn: "Calle Crisologo", lon: 120.3872, lat: 17.5747, kind: "district" },
     { nameZh: "维甘大教堂", nameEn: "Vigan Cathedral", lon: 120.3878, lat: 17.5747, kind: "landmark" },
     { nameZh: "西索克南遗产村", nameEn: "Syquia Mansion", lon: 120.3861, lat: 17.5731, kind: "landmark" },
+  ],
+  // 新加坡
+  "singapore-city": [
+    { nameZh: "滨海湾金沙", nameEn: "Marina Bay Sands", lon: 103.8607, lat: 1.2836, kind: "landmark" },
+    { nameZh: "滨海湾花园", nameEn: "Gardens by the Bay", lon: 103.8636, lat: 1.2816, kind: "landmark" },
+    { nameZh: "牛车水（佛牙寺）", nameEn: "Chinatown (Buddha Tooth Relic Temple)", lon: 103.8442, lat: 1.2812, kind: "district" },
+    { nameZh: "甘榜格南（苏丹回教堂）", nameEn: "Kampong Glam (Sultan Mosque)", lon: 103.8594, lat: 1.3021, kind: "district" },
+    { nameZh: "小印度", nameEn: "Little India", lon: 103.8496, lat: 1.3067, kind: "district" },
+    { nameZh: "新加坡植物园", nameEn: "Singapore Botanic Gardens", lon: 103.8159, lat: 1.3138, kind: "nature" },
+  ],
+  sentosa: [
+    { nameZh: "圣淘沙名胜世界", nameEn: "Resorts World Sentosa", lon: 103.8203, lat: 1.2544, kind: "landmark" },
+    { nameZh: "西乐索海滩", nameEn: "Siloso Beach", lon: 103.8156, lat: 1.2500, kind: "nature" },
+    { nameZh: "圣淘沙跨海缆车站", nameEn: "Sentosa Cable Car Station", lon: 103.8228, lat: 1.2653, kind: "transport" },
+    { nameZh: "斜坡滑车公园", nameEn: "Skyline Luge Sentosa", lon: 103.8181, lat: 1.2569, kind: "landmark" },
   ],
 };
 

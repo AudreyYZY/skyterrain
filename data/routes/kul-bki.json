@@ -1,0 +1,16 @@
+{
+  "id": "kul-bki",
+  "name": "吉隆坡 — 亚庇",
+  "nameEn": "Kuala Lumpur — Kota Kinabalu",
+  "description": "南海 · 京那巴鲁山",
+  "descriptionEn": "South China Sea · Mount Kinabalu",
+  "depCountry": "malaysia",
+  "arrCountry": "malaysia",
+  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK5109", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "BKI", "durationMin": 150 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
+    { "kind": "terrain", "terrainId": "mount-kinabalu" },
+    { "kind": "city", "id": "bki", "name": "亚庇", "nameEn": "Kota Kinabalu", "lat": 5.9372, "lon": 116.0517, "airport": true }
+  ]
+}

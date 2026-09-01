@@ -1,0 +1,16 @@
+{
+  "id": "sdk-bki",
+  "name": "山打根 — 亚庇",
+  "nameEn": "Sandakan — Kota Kinabalu",
+  "description": "克罗克山脉",
+  "descriptionEn": "Crocker Range",
+  "depCountry": "malaysia",
+  "arrCountry": "malaysia",
+  "flight": { "airline": "婆罗洲航空", "airlineEn": "AirBorneo", "flightNo": "MY3155", "aircraft": "ATR 72-500", "depIata": "SDK", "arrIata": "BKI", "durationMin": 55 },
+  "cruiseHeight": 5500,
+  "waypoints": [
+    { "kind": "city", "id": "sdk", "name": "山打根", "nameEn": "Sandakan", "lat": 5.9012, "lon": 118.0592, "airport": true },
+    { "kind": "terrain", "terrainId": "crocker-range" },
+    { "kind": "city", "id": "bki", "name": "亚庇", "nameEn": "Kota Kinabalu", "lat": 5.9372, "lon": 116.0517, "airport": true }
+  ]
+}
