@@ -11918,4 +11918,102 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Kelabit Highlands are the traditional homeland of the Kelabit people of Sarawak, numbering about 6,800, spread across more than a dozen villages around Bario, long maintaining a distinctive tradition of highland rice farming combined with hunting and gathering.",
   },
+  "gua-tempurung": {
+    seeing:
+      "Gua Tempurung is a limestone cave in Gopeng, Perak, dating back about 400 million years; it runs about 4.5 km in length with a 1.6-km underground river inside, one of the largest surviving cave systems on the Malay Peninsula.",
+    formation:
+      "The limestone strata hosting Gua Tempurung were deposited in the Paleozoic about 400 million years ago; groundwater dissolution of the carbonate rock through the late Miocene (about 10 million years ago) progressively enlarged fractures and voids into today's complex system of five caverns.",
+    observation:
+      "From the air, the limestone hill containing Gua Tempurung has a rounded outline, said to resemble a coconut shell — hence its name; the surface is vegetated and the cave entrance is hidden within the massif, with the underground river emerging to join the surface drainage.",
+    distinguish:
+      "Both Gua Tempurung and Batu Caves are limestone caves on the Malay Peninsula, but Gua Tempurung is known for its underground river running through vast caverns, while Batu Caves is known for its tall cave mouth and the Hindu shrine within.",
+    concept:
+      "The stalactites, stalagmites and marble patterns distinct to each of Gua Tempurung's five caverns make it a classic sample for studying how long-term groundwater dissolution shapes cave systems in tropical limestone terrain.",
+    history:
+      "Gua Tempurung takes its name — \"coconut-shell cave\" — from the shape of its surrounding limestone hills; it is today an important geological tourism site in Perak, with boardwalks allowing visitors to explore its different caverns.",
+  },
+  "batu-caves": {
+    seeing:
+      "Batu Caves is a 325-m limestone hill and its cave system in Gombak, Selangor, its bedrock Silurian limestone dating back about 400 million years, one of Malaysia's best-known cave landforms.",
+    formation:
+      "After the limestone at Batu Caves was first deposited, it underwent tectonic uplift, compression and folding during the Triassic about 200 million years ago; subsequent long-term groundwater dissolution of the carbonate rock progressively enlarged fractures into today's cave system.",
+    observation:
+      "From the air, the limestone hill of Batu Caves rises as an isolated outcrop from the plain north of Kuala Lumpur, its tall cave mouth prominent, the rock face sparsely vegetated and exposed, forming a sharp vertical contrast with the open plain around it.",
+    distinguish:
+      "Both Batu Caves and Gua Tempurung are limestone caves on the Malay Peninsula, but Batu Caves is an isolated limestone outcrop with a tall, open cave mouth, while Gua Tempurung is a complex cave system with a long underground river.",
+    concept:
+      "The formation of stalactites and stalagmites within Batu Caves is a classic case for studying the carbonate dissolution-deposition cycle in tropical limestone regions.",
+    history:
+      "A Hindu shrine has stood within Batu Caves since the late 19th century, and the site draws large numbers of devotees each year during the Thaipusam festival, making it a well-known place where natural and cultural landscape intersect in Malaysia.",
+  },
+  "gunung-mulu-np": {
+    seeing:
+      "Gunung Mulu National Park is the most intensively studied tropical karst area in the world, known for the sandstone pinnacles of 2,377-m Gunung Mulu and an explored cave system of more than 295 km, inscribed on the UNESCO World Heritage List in 2000.",
+    formation:
+      "The karst landscape of Gunung Mulu National Park was shaped by long-term limestone dissolution; Gunung Mulu itself is a sandstone pinnacle massif, while below ground, sustained groundwater dissolution of carbonate rock has produced a vast cave system, a textbook example of karst collapse landforms.",
+    observation:
+      "From the air, the Pinnacles of Gunung Mulu rise in a dense cluster of razor-sharp limestone spires about 50 m tall, forming, together with the dense rainforest cover above and the vast cave system below, a highly distinctive three-dimensional karst landscape.",
+    distinguish:
+      "Both Gunung Mulu National Park and the Niah Caves are limestone karst landforms in Sarawak, but Gunung Mulu is known for its Pinnacles and the world's largest known cave chamber (the Sarawak Chamber), while Niah is known for its ancient human archaeological site.",
+    concept:
+      "The Sarawak Chamber measures 600 m by 415 m and 80 m high, the largest known natural cave chamber in the world, and Deer Cave is the world's second-largest cave, making Gunung Mulu an important sample for studying the relationship between the scale of tropical karst cave systems and their biodiversity.",
+    history:
+      "Gunung Mulu National Park was inscribed on the UNESCO World Heritage List in 2000; its caves are home to millions of swiftlets and bats, and the park has long been part of the traditional territory of the local Penan people.",
+  },
+  "niah-caves": {
+    seeing:
+      "The Niah Caves are a cave complex on the northern edge of the Gunong Subis limestone massif on Sarawak's coastal plain, the Great Cave's mouth more than 60 m high, inscribed on the UNESCO World Heritage List in 2024.",
+    formation:
+      "The limestone hosting the Niah Caves was deposited in an ancient geological period when the area lay beneath the sea; subsequent tectonic uplift raised it above ground, and long-term groundwater dissolution shaped today's system of caverns, including the towering Great Cave and the Painted Cave.",
+    observation:
+      "From the air, the Gunong Subis limestone massif containing the Niah Caves rises out of the mixed dipterocarp forest of Sarawak's coastal plain, the mouth of the Great Cave set into the massif like a vast rock breach, its scale dwarfing the terrain around it.",
+    distinguish:
+      "Both the Niah Caves and Gunung Mulu National Park are limestone karst landforms in Sarawak, but Niah is known for its ancient human archaeological site, while Gunung Mulu is known for its Pinnacles and the world's largest cave chamber.",
+    concept:
+      "Archaeological finds within the Niah Caves document human activity dating back about 40,000 years, with some skull fragments dated to about 65,000 years old, making it a key site for studying early human migration into and adaptation to Southeast Asia's tropical environment.",
+    history:
+      "The Niah Caves were first scientifically recorded in 1880; major archaeological excavations took place in the 1950s–60s under Tom Harrisson, curator of the Sarawak Museum, and his wife Barbara, and the site was formally inscribed on the UNESCO World Heritage List in 2024.",
+  },
+  "maliau-basin": {
+    seeing:
+      "Maliau Basin, known as \"Sabah's Lost World,\" is a near-circular, saucer-shaped basin in interior Sabah about 25 km in diameter, its rim formed by steep cliffs 300–1,600 m high.",
+    formation:
+      "Maliau Basin is built of sandstone and mudstone deposited in a coastal delta setting between about 15 and 9 million years ago; roughly 5 million years ago volcanic and tectonic activity uplifted the whole area into a plateau, whose centre then subsided under continued weathering to form today's saucer-shaped basin — it is not a volcanic crater.",
+    observation:
+      "From the air, Maliau Basin shows an almost perfectly circular outline, ringed by steep, near-vertical cliffs that isolate its interior from the surrounding landscape, giving it the appearance of a vast volcanic caldera when seen from a plane.",
+    distinguish:
+      "Both Maliau Basin and Danum Valley are primary rainforest reserves in interior Sabah, but Maliau Basin is a near-circular, saucer-shaped basin ringed by steep cliffs, while Danum Valley is a relatively open lowland rainforest river valley.",
+    concept:
+      "The steep rim cliffs of Maliau Basin form a natural isolating barrier that has long limited exchange between its interior ecosystem and the outside world, making it a classic sample for studying how geographic isolation shapes the evolution of tropical rainforest species.",
+    history:
+      "Maliau Basin earned the nickname \"Sabah's Lost World\" for its rugged terrain and long isolation from the outside world; it was not systematically surveyed by science until the late 20th century, and is today an important nature reserve in Sabah.",
+  },
+  "danum-valley": {
+    seeing:
+      "The Danum Valley Conservation Area is a 438-km² tract of largely undisturbed lowland dipterocarp forest in central Sabah, with a forest history of about 130 million years, making it one of the oldest surviving rainforests in the world.",
+    formation:
+      "The lowland rainforest of Danum Valley has long escaped logging disturbance; long-term erosion and deposition by its rivers have shaped an open valley landform, with 95% of the area covered in mixed dipterocarp forest and 5% mountainous terrain.",
+    observation:
+      "From the air, Danum Valley shows an extensive, rolling canopy of primary rainforest, winding rivers threading through it, the forest structure richly layered with canopy heights varying widely and almost no visible sign of logging.",
+    distinguish:
+      "Both Danum Valley and Maliau Basin are primary rainforest reserves in interior Sabah, but Danum Valley is a relatively open lowland rainforest river valley known for its undisturbed primary forest, while Maliau Basin is a saucer-shaped basin ringed by steep cliffs.",
+    concept:
+      "As one of the last representative tracts of primary rainforest remaining in North Borneo, Danum Valley is an important sample for studying the natural succession patterns of tropical lowland dipterocarp forest left undisturbed by human activity over the long term.",
+    history:
+      "The Danum Valley Conservation Area was established in 1980 and has been designated a Class 1 (Protection) Forest Reserve under Sabah's forestry enactment since 1968; the Danum Valley Studies Centre, founded in 1986, is a globally recognised centre for tropical rainforest research and education.",
+  },
+  "endau-rompin": {
+    seeing:
+      "Endau-Rompin National Park straddles Johor and Pahang and is the largest surviving protected area in the southern half of the Malay Peninsula, covering 48,900 ha of rugged hills, granite outcrops, river valleys and waterfalls.",
+    formation:
+      "The rock formations within Endau-Rompin National Park date back some 248 million years; long-term tectonic activity combined with weathering and erosion under a hot, humid tropical climate has shaped today's rolling hill terrain and granite outcrops, with rivers carving numerous waterfalls along zones of geological weakness.",
+    observation:
+      "From the air, Endau-Rompin National Park shows rolling hills dotted with granite outcrops, rivers winding through rainforest-covered valleys, waterfalls dropping along several of the watercourses, and very high forest cover throughout.",
+    distinguish:
+      "Both Endau-Rompin National Park and Taman Negara (Gunung Tahan) are ancient rainforest reserves in southern Peninsular Malaysia, but Endau-Rompin is defined by its rolling hills and granite outcrops, while Taman Negara is defined by the peninsula's highest peak and its steep massif.",
+    concept:
+      "Endau-Rompin's rainforest ecosystem has a history of more than 130 million years, older than the Amazon, making it an important sample for studying long-term tropical rainforest succession and the protection of habitat for endangered flagship species.",
+    history:
+      "Endau-Rompin National Park was formally established in 1993 and is an important habitat for endangered flagship species such as the Malayan tiger and Malayan tapir; it has long been the traditional territory of indigenous communities in Johor and Pahang.",
+  },
 };

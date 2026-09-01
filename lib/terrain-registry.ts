@@ -12103,6 +12103,100 @@ const KELABIT_HIGHLANDS: TerrainEntry = {
   source: "格拉比高原：砂拉越最北端米里省内一片内陆高原，核心为巴里奥村所在的“巴平原”，海拔1000至1200米、南北延伸约30公里；周边最高峰穆鲁德山海拔2423米；是砂拉越原住民格拉比族的传统聚居地，全区约6800人（Wikipedia WebSearch 2026）",
 };
 
+const GUA_TEMPURUNG: TerrainEntry = {
+  id: "gua-tempurung",
+  nameZh: "东姑洞（椰壳洞）",
+  nameEn: "Gua Tempurung",
+  category: "gorge",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "东姑洞主厅", lon: 101.187, lat: 4.433, elevation: 100, kind: "gorge" },
+  bbox: [101.14, 4.40, 101.23, 4.47],
+  label: { lon: 101.19, lat: 4.46, rotation: 0 },
+  source: "东姑洞：霹雳州哥打镇一处石灰岩溶洞，洞穴年代约4亿年，晚中新世（约1000万年前）经石灰岩溶蚀作用形成，全长约4.5公里，内有长约1.6公里的地下暗河，因周边石灰岩山体形似椰壳而得名（malaysia.travel/thelandofwanderlust.com WebSearch 2026）",
+};
+
+const BATU_CAVES: TerrainEntry = {
+  id: "batu-caves",
+  nameZh: "黑风洞",
+  nameEn: "Batu Caves",
+  category: "gorge",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "黑风洞石灰岩丘", lon: 101.6839, lat: 3.2379, elevation: 325, kind: "gorge" },
+  bbox: [101.665, 3.225, 101.705, 3.250],
+  label: { lon: 101.684, lat: 3.215, rotation: 0 },
+  source: "黑风洞：雪兰莪州鹅麦一座海拔325米的石灰岩丘及其洞穴群，主体为志留纪石灰岩，年代约4亿年，三叠纪（约2亿年前）经历地壳抬升、挤压与褶皱等构造变形；洞穴由地下水长期溶蚀石灰岩形成，是马来西亚知名的溶洞地貌（Wikipedia WebSearch 2026）",
+};
+
+const GUNUNG_MULU_NP: TerrainEntry = {
+  id: "gunung-mulu-np",
+  nameZh: "姆鲁山国家公园",
+  nameEn: "Gunung Mulu National Park",
+  category: "gorge",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "姆鲁山尖峰石林", lon: 114.90, lat: 4.05, elevation: 2377, kind: "peak" },
+  bbox: [114.75, 3.95, 115.05, 4.20],
+  viewScale: 1.2,
+  label: { lon: 114.90, lat: 4.25, rotation: 0 },
+  source: "姆鲁山国家公园：砂拉越一处世界研究最深入的热带喀斯特地区，公园面积5.29万公顷，以海拔2377米的姆鲁山砂岩尖峰群与逾295公里已探明洞穴系统著称；砂拉越洞厅长600米、宽415米、高80米，是已知世界最大天然洞穴厅；鹿洞是世界第二大洞穴，2000年列入UNESCO世界遗产名录（UNESCO/Wikipedia WebSearch 2026）",
+};
+
+const NIAH_CAVES: TerrainEntry = {
+  id: "niah-caves",
+  nameZh: "尼亚洞穴",
+  nameEn: "Niah Caves",
+  category: "gorge",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "大洞（尼亚国家公园）", lon: 113.77, lat: 3.825, elevation: 394, kind: "gorge" },
+  bbox: [113.72, 3.78, 113.82, 3.87],
+  label: { lon: 113.77, lat: 3.88, rotation: 0 },
+  source: "尼亚洞穴：砂拉越海岸平原苏比斯山石灰岩地块北缘的洞穴群，石灰岩层形成于该区域曾没于海底的古地质年代；大洞洞口高逾60米，洞内考古发现可追溯至约4万年前的人类活动痕迹，部分头骨碎片测定距今约6.5万年，是东南亚已知最早的人类遗迹之一，2024年列入UNESCO世界遗产名录（Wikipedia/nationalgeographic.com WebSearch 2026）",
+};
+
+const MALIAU_BASIN: TerrainEntry = {
+  id: "maliau-basin",
+  nameZh: "马利吾盆地（沙巴迷失的世界）",
+  nameEn: "Maliau Basin",
+  category: "basin",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "马利吾盆地中心", lon: 116.90, lat: 4.75, elevation: 900, kind: "peak" },
+  bbox: [116.75, 4.60, 117.05, 4.90],
+  viewScale: 1.2,
+  label: { lon: 116.90, lat: 4.55, rotation: 0 },
+  source: "马利吾盆地（俗称“沙巴迷失的世界”）：沙巴内陆一处近圆形碟状盆地，直径约25公里，外缘陡坡高差300至1600米，形成天然屏障；盆地由约1500万至900万年前三角洲沉积的砂岩与泥岩构成，约500万年前经火山与构造运动整体抬升为高原、中部再受风化侵蚀下陷为盆地（非死火山口）（Geological Society of Malaysia/mysabah.com WebSearch 2026）",
+};
+
+const DANUM_VALLEY: TerrainEntry = {
+  id: "danum-valley",
+  nameZh: "丹浓谷",
+  nameEn: "Danum Valley",
+  category: "valley",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "丹浓谷研究中心", lon: 117.80, lat: 5.03, elevation: 200, kind: "city" },
+  bbox: [117.65, 4.90, 117.95, 5.15],
+  label: { lon: 117.80, lat: 4.85, rotation: 0 },
+  source: "丹浓谷保护区：沙巴中部一片面积438平方公里、基本未受干扰的低地龙脑香科雨林，1980年设立保护区，森林历史约1.3亿年，是世界现存最古老的雨林之一，95%为混合龙脑香林、5%为山地地形，1968年起被列为沙巴森林法一级（保护）林（Wikipedia/mysabah.com WebSearch 2026）",
+};
+
+const ENDAU_ROMPIN: TerrainEntry = {
+  id: "endau-rompin",
+  nameZh: "安顺—罗宾国家公园",
+  nameEn: "Endau-Rompin National Park",
+  category: "hills",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "安顺—罗宾公园总部", lon: 103.25, lat: 2.55, elevation: 150, kind: "city" },
+  bbox: [103.05, 2.35, 103.55, 2.85],
+  viewScale: 1.2,
+  label: { lon: 103.25, lat: 2.30, rotation: 0 },
+  source: "安顺—罗宾国家公园：横跨柔佛与彭亨两州、马来半岛南部现存最大的保护区，面积4.89万公顷，地貌以起伏丘陵、花岗岩露头、河谷与瀑布群为主；园内岩层年代可追溯至约2.48亿年前，雨林生态系统历史逾1.3亿年，是马来虎、马来貘等濒危旗舰物种的重要栖息地（ASEAN Centre for Biodiversity/Wikipedia WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12420,6 +12514,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 亚洲 / 马来西亚 =====
   TITIWANGSA_MOUNTAINS, GUNUNG_TAHAN, CAMERON_HIGHLANDS,
   MOUNT_KINABALU, CROCKER_RANGE, KELABIT_HIGHLANDS,
+  GUA_TEMPURUNG, BATU_CAVES, GUNUNG_MULU_NP, NIAH_CAVES,
+  MALIAU_BASIN, DANUM_VALLEY, ENDAU_ROMPIN,
 ];
 
 /**
