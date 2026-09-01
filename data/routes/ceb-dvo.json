@@ -1,0 +1,15 @@
+{
+  "id": "ceb-dvo",
+  "name": "宿务 — 达沃",
+  "nameEn": "Cebu — Davao",
+  "description": "米沙鄄海 · 棉兰老岛",
+  "descriptionEn": "Visayan Sea · Mindanao",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J4503", "aircraft": "Airbus A320", "depIata": "CEB", "arrIata": "DVO", "durationMin": 65 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "ceb", "name": "宿务", "nameEn": "Cebu", "lat": 10.3075, "lon": 123.9794, "airport": true },
+    { "kind": "city", "id": "dvo", "name": "达沃", "nameEn": "Davao", "lat": 7.1255, "lon": 125.6458, "airport": true }
+  ]
+}

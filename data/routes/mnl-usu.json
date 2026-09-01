@@ -1,0 +1,15 @@
+{
+  "id": "mnl-usu",
+  "name": "马尼拉 — 科隆",
+  "nameEn": "Manila — Coron (Busuanga)",
+  "description": "民都洛海峡 · 卡拉棉群岛",
+  "descriptionEn": "Mindoro Strait · Calamian Islands",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "菲律宾航空", "airlineEn": "Philippine Airlines", "flightNo": "PR2963", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "USU", "durationMin": 65 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
+    { "kind": "city", "id": "usu", "name": "科隆（布桑加）", "nameEn": "Coron (Busuanga)", "lat": 12.1447, "lon": 120.1042, "airport": true }
+  ]
+}

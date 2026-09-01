@@ -1,0 +1,16 @@
+{
+  "id": "mnl-tag",
+  "name": "马尼拉 — 塔比拉兰",
+  "nameEn": "Manila — Tagbilaran (Panglao)",
+  "description": "米沙鄄群岛 · 巧克力山",
+  "descriptionEn": "The Visayas · the Chocolate Hills",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J617", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "TAG", "durationMin": 100 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
+    { "kind": "terrain", "terrainId": "chocolate-hills" },
+    { "kind": "city", "id": "tag", "name": "塔比拉兰（邦劳）", "nameEn": "Tagbilaran (Panglao)", "lat": 9.5675, "lon": 123.7622, "airport": true }
+  ]
+}
