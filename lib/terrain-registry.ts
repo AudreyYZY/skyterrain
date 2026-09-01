@@ -12014,6 +12014,96 @@ const BIEBRZA_MARSHES: TerrainEntry = {
 };
 
 // ============================================================
+// 亚洲 — 马来西亚
+// ============================================================
+
+const TITIWANGSA_MOUNTAINS: TerrainEntry = {
+  id: "titiwangsa-mountains",
+  nameZh: "蒂蒂旺沙山脉",
+  nameEn: "Titiwangsa Mountains",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "哥打峰", lon: 101.267, lat: 4.833, elevation: 2183, kind: "peak" },
+  bbox: [100.9, 2.2, 101.8, 6.2],
+  axis: [[100.95, 5.8], [101.7, 2.6]],
+  viewScale: 1.5,
+  label: { lon: 101.35, lat: 4.5, rotation: -20 },
+  source: "蒂蒂旺沙山脉：马来半岛的脊梁山系，呈西北—东南走向绵延约480公里，是马来半岛最长、最连贯的山脉；最高峰哥打峰海拔2183米，为半岛第二高峰（Wikipedia/worldatlas.com WebSearch 2026）",
+};
+
+const GUNUNG_TAHAN: TerrainEntry = {
+  id: "gunung-tahan",
+  nameZh: "大汉山（塔汉山）",
+  nameEn: "Gunung Tahan",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "大汉山主峰", lon: 102.24, lat: 4.633, elevation: 2187, kind: "peak" },
+  bbox: [102.05, 4.35, 102.55, 4.85],
+  viewScale: 1.3,
+  label: { lon: 102.25, lat: 4.30, rotation: 0 },
+  source: "大汉山：马来半岛最高峰，海拔2187米，位于彭亨与吉兰丹交界，是国家公园（大汉山国家公园）的核心地物，公园涵盖彭亨、吉兰丹、登嘉楼三州交界的大片低地热带雨林，是马来半岛现存最古老的雨林生态系统之一（Britannica/Wikipedia WebSearch 2026）",
+};
+
+const CAMERON_HIGHLANDS: TerrainEntry = {
+  id: "cameron-highlands",
+  nameZh: "金马仑高原",
+  nameEn: "Cameron Highlands",
+  category: "plateau",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "丹拉打镇", lon: 101.38, lat: 4.470, elevation: 1500, kind: "city" },
+  bbox: [101.30, 4.40, 101.50, 4.55],
+  viewScale: 1.2,
+  label: { lon: 101.38, lat: 4.35, rotation: 0 },
+  source: "金马仑高原：蒂蒂旺沙山脉中一片海拔1100至1800米的凉爽高原，1885年由威廉·金马仑勘察得名，20世纪初起被英国殖民当局开发为避暑高地；1929年首个茶园“波爹茶园”建成后发展为马来西亚重要的高山茶产区（Britannica WebSearch 2026）",
+};
+
+const MOUNT_KINABALU: TerrainEntry = {
+  id: "mount-kinabalu",
+  nameZh: "京那巴鲁山（神山）",
+  nameEn: "Mount Kinabalu",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "罗氏峰", lon: 116.5581, lat: 6.0754, elevation: 4095, kind: "peak" },
+  bbox: [116.45, 5.90, 116.70, 6.20],
+  viewScale: 1.3,
+  label: { lon: 116.55, lat: 5.85, rotation: 0 },
+  source: "京那巴鲁山：马来西亚与马来群岛最高峰，海拔4095米，是花岗岩侵入体，约1500万年前形成，为克罗克山脉的一部分；2000年京那巴鲁公园列入UNESCO世界遗产名录，是东南亚植物多样性核心地区之一，园内植物物种约5000至6000种（Britannica/UNESCO WebSearch 2026）",
+};
+
+const CROCKER_RANGE: TerrainEntry = {
+  id: "crocker-range",
+  nameZh: "克罗克山脉",
+  nameEn: "Crocker Range",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "克罗克山脉中段", lon: 116.30, lat: 5.50, elevation: 1500, kind: "peak" },
+  bbox: [116.10, 5.10, 116.50, 6.00],
+  axis: [[116.20, 5.90], [116.40, 5.15]],
+  viewScale: 1.3,
+  label: { lon: 116.20, lat: 5.55, rotation: -15 },
+  source: "克罗克山脉：沙巴西部一条南北走向、长约120公里的山系，无突出的单一主峰，海拔介于6至2076米之间；克罗克山脉生物圈保护区面积达35万公顷，是婆罗洲岛上最大的保护区之一，2014年列入UNESCO人与生物圈计划（UNESCO/crbr.sabahparks.org.my WebSearch 2026）",
+};
+
+const KELABIT_HIGHLANDS: TerrainEntry = {
+  id: "kelabit-highlands",
+  nameZh: "格拉比高原",
+  nameEn: "Kelabit Highlands",
+  category: "plateau",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "巴里奥村", lon: 115.48, lat: 3.74, elevation: 1000, kind: "city" },
+  bbox: [115.15, 3.55, 115.75, 4.05],
+  viewScale: 1.2,
+  label: { lon: 115.48, lat: 3.50, rotation: 0 },
+  source: "格拉比高原：砂拉越最北端米里省内一片内陆高原，核心为巴里奥村所在的“巴平原”，海拔1000至1200米、南北延伸约30公里；周边最高峰穆鲁德山海拔2423米；是砂拉越原住民格拉比族的传统聚居地，全区约6800人（Wikipedia WebSearch 2026）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -12327,6 +12417,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   TU_SAN_CANYON, BAN_GIOC_WATERFALL,
   RED_RIVER_DELTA, MEKONG_DELTA,
   NGU_HANH_SON,
+  // ===== 亚洲 / 马来西亚 =====
+  TITIWANGSA_MOUNTAINS, GUNUNG_TAHAN, CAMERON_HIGHLANDS,
+  MOUNT_KINABALU, CROCKER_RANGE, KELABIT_HIGHLANDS,
 ];
 
 /**

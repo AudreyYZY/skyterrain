@@ -11833,4 +11833,89 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Osowiec Fortress within the marshes was built in the late 19th century; during the First World War its surrounding marshland's difficult terrain repeatedly helped repel attacks, a classic case of marsh landform shaping military history. Biebrza National Park was established in 1993.",
   },
+  // ============ Malaysia ============
+  "titiwangsa-mountains": {
+    seeing:
+      "The Titiwangsa Mountains form the backbone of the Malay Peninsula, running northwest to southeast for about 480 km — the longest and most contiguous range on the peninsula; its highest peak, Mount Korbu, reaches 2,183 m, the peninsula's second-highest point.",
+    formation:
+      "The Titiwangsa range's core is built of Mesozoic granite intrusions; long-term weathering and erosion have shaped today's continuous ridgeline with relatively rounded, forest-covered tropical mountain summits, forming the natural watershed between the peninsula's two coasts.",
+    observation:
+      "From the air, the Titiwangsa Mountains appear as a continuous green ridge running down the peninsula's spine, the massif perpetually covered in tropical rainforest with cloud drifting among the peaks, rivers on either side radiating outward toward the South China Sea and the Strait of Malacca respectively.",
+    distinguish:
+      "Both the Titiwangsa Mountains and Gunung Tahan are mountainous landforms on the Malay Peninsula, but the Titiwangsa range is a continuous chain running the length of the peninsula and forming its backbone, while Gunung Tahan is the peninsula's single highest standalone peak, lying east of the Titiwangsa range.",
+    concept:
+      "As the Malay Peninsula's watershed, the contrast in rainfall patterns and river flow direction on either side of the Titiwangsa range is key to understanding the peninsula's overall landform and climate distribution.",
+    history:
+      "Hill-station resorts along the range such as Cameron Highlands and the Genting plateau were developed during British colonial rule; the mountains remain an important water-catchment and ecological conservation area for Malaysia today.",
+  },
+  "gunung-tahan": {
+    seeing:
+      "Gunung Tahan (Mount Tahan) is the highest peak on the Malay Peninsula, at 2,187 m, on the border between Pahang and Kelantan, and is the central feature of Taman Negara National Park, which spans a broad tract of lowland tropical rainforest at the meeting point of three states.",
+    formation:
+      "Gunung Tahan's massif is built mainly of Mesozoic sandstone and granite; long-term tectonic uplift combined with weathering under a hot, humid tropical climate has shaped today's steep peak and deeply cut river valleys.",
+    observation:
+      "From the air, Gunung Tahan's summit is perpetually wreathed in cloud, surrounded by an extensive tract of primary tropical rainforest with very high forest cover and almost no visible sign of human development, a sharp contrast with the peninsula's developed coastal areas.",
+    distinguish:
+      "Both Gunung Tahan and the Titiwangsa Mountains are mountainous landforms on the Malay Peninsula, but Gunung Tahan is the peninsula's single highest standalone peak, defined by its elevation, while the Titiwangsa range is a continuous chain running the length of the peninsula.",
+    concept:
+      "Taman Negara, where Gunung Tahan stands, preserves one of the oldest surviving rainforest ecosystems on the Malay Peninsula, making it an important sample for studying long-term tropical rainforest succession and altitudinal vegetation zonation on mountains.",
+    history:
+      "Taman Negara has long been a traditional area of activity for the Orang Asli, the indigenous peoples of the Malay Peninsula, and is today an important ecotourism and mountaineering destination in Malaysia.",
+  },
+  "cameron-highlands": {
+    seeing:
+      "Cameron Highlands is a cool plateau at 1,100–1,800 m elevation within the Titiwangsa range, named after William Cameron who surveyed the area in 1885, and is today an important highland tea-growing region of Malaysia.",
+    formation:
+      "Cameron Highlands is a relatively gentle upland formed by long-term weathering and erosion of the Titiwangsa range's granite massif; its higher elevation gives it a cool, humid climate, in contrast with the steeper peaks of the main range.",
+    observation:
+      "From the air, Cameron Highlands shows terraced green tea gardens layered across the landscape, forming a sharp contrast between cultivated and primary-forest-covered steep terrain on the surrounding mountains, with cloud frequently drifting over the plateau.",
+    distinguish:
+      "Cameron Highlands and the Titiwangsa Mountains belong to the same range, but Cameron Highlands is a relatively gentle upland within the range that has been developed for tea cultivation, while the Titiwangsa range as a whole is dominated by a continuous, steep ridgeline.",
+    concept:
+      "Cameron Highlands' climate and soil conditions make it a classic sample for studying the tropical \"hill station\" phenomenon and the suitability of high-elevation terrain for cash-crop cultivation.",
+    history:
+      "British colonial authorities developed Cameron Highlands as a hill-station resort in the early 20th century; after the first tea estate, BOH, was established in 1929, the area gradually grew into an important highland tea-growing region of Malaysia.",
+  },
+  "mount-kinabalu": {
+    seeing:
+      "Mount Kinabalu is the highest peak in Malaysia and the Malay Archipelago, at 4,095 m, a granite intrusion forming part of the Crocker Range; Kinabalu Park was inscribed on the UNESCO World Heritage List in 2000.",
+    formation:
+      "Mount Kinabalu formed about 15 million years ago as magma from deep within the crust intruded and cooled into a granite body; sustained tectonic uplift together with glacial-period erosion has since shaped today's steep granite peak with its bare summit rock.",
+    observation:
+      "From the air, Mount Kinabalu's bare grey-white granite summit rises above a sea of cloud, its slopes showing a sharp vertical vegetation zonation from dense tropical rainforest to montane cloud forest, its outline striking against the Bornean skyline.",
+    distinguish:
+      "Mount Kinabalu and the Crocker Range lie geographically adjacent, but Mount Kinabalu is a single standalone granite peak known for its elevation and bare rock face, while the Crocker Range is a continuous chain with no single dominant summit.",
+    concept:
+      "Kinabalu Park is a centre of plant diversity in Southeast Asia, home to roughly 5,000–6,000 plant species, making it an important sample for studying altitudinal vegetation zonation and the formation of species diversity on tropical mountains.",
+    history:
+      "In the traditional belief of the local Kadazan-Dusun people, Mount Kinabalu is regarded as the resting place of ancestral spirits, and its name is said to mean \"the revered place of the dead\" or \"home of the spirits\"; it was formally inscribed on the UNESCO World Heritage List in 2000.",
+  },
+  "crocker-range": {
+    seeing:
+      "The Crocker Range is a north-south trending chain in western Sabah about 120 km long, with no single dominant peak, elevations ranging from 6 to 2,076 m, and forms part of the same granite massif system as Mount Kinabalu.",
+    formation:
+      "The Crocker Range formed through tectonic uplift since the Paleogene; long-term weathering and erosion have shaped today's rolling, mid-elevation terrain without a standout summit, in contrast with the isolated, towering peak of Mount Kinabalu nearby.",
+    observation:
+      "From the air, the Crocker Range appears as a continuous, rolling ridge of deep green, tropical rainforest at lower elevations giving way to montane cloud forest higher up, its terrain relatively gentle with no sharp peaks.",
+    distinguish:
+      "The Crocker Range and Mount Kinabalu are geographically adjacent and part of the same biosphere-reserve system, but the Crocker Range is a continuous chain with no dominant peak, while Mount Kinabalu is a single, isolated high summit.",
+    concept:
+      "The Crocker Range Biosphere Reserve covers 350,000 ha, one of the largest protected areas on the island of Borneo, making it an important sample for studying the altitudinal vegetation zonation of Sabah's mid-elevation tropical mountains.",
+    history:
+      "The Crocker Range Biosphere Reserve was inscribed under UNESCO's Man and the Biosphere Programme in 2014, and has long been a traditional area of activity for Dusun and other indigenous communities of inland Sabah.",
+  },
+  "kelabit-highlands": {
+    seeing:
+      "The Kelabit Highlands are an inland plateau in the northernmost part of Sarawak's Miri Division, centred on the \"Plain of Bah\" around Bario village, at 1,000–1,200 m elevation and extending about 30 km north-south.",
+    formation:
+      "The Kelabit Highlands are a relatively flat, high-elevation basin within interior Borneo, ringed by peaks such as Mount Murud (2,423 m); long-term erosion and deposition together have shaped today's broad, gentle plateau basin.",
+    observation:
+      "From the air, the Kelabit Highlands appear as an open valley ringed by mountains, rice paddies and settlements dotting the landscape, forming a sharp contrast with the steep terrain of Borneo's surrounding interior mountains.",
+    distinguish:
+      "Both the Kelabit Highlands and the Crocker Range are highland landforms of Borneo, but the Kelabit Highlands are a flat plateau basin ringed by mountains, known for its rice-farming settlements, while the Crocker Range is a continuous mid-elevation ridge.",
+    concept:
+      "As a rare flat, high-elevation basin in interior Borneo, the Kelabit Highlands are a classic sample for studying how a tropical montane microclimate can support highland rice agriculture.",
+    history:
+      "The Kelabit Highlands are the traditional homeland of the Kelabit people of Sarawak, numbering about 6,800, spread across more than a dozen villages around Bario, long maintaining a distinctive tradition of highland rice farming combined with hunting and gathering.",
+  },
 };
