@@ -3780,6 +3780,125 @@ export const ROUTE_NARRATION: Record<
       "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by Bamboo Airways (Airbus A321) as one of Vietnam's domestic routes. Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
     },
   },
+
+  "kul-pen": {
+    study: {
+    "zh-CN":
+      "吉隆坡飞槟城，是马来半岛西海岸最繁忙的国内航线之一，全程约300公里，是马来西亚航空客流量最高的航线之一。飞机离开吉隆坡后向西北飞行，脚下先掠过巴生河谷的城市化平原，随后进入马来半岛西海岸相对平坦的沿海低地地带，大片棕榈油种植园从空中清晰可辨。" +
+      "飞机继续向西北飞行，沿途可见蒂蒂旺沙山脉西侧余脉在内陆隐约可见，海岸线一侧棕榈种植园与红树林交替分布，最终降落在槟城——马来半岛西北岸外一座花岗岩岛屿，2008年老城区乔治市列入UNESCO世界遗产名录。",
+    "en-US":
+      "Flying from Kuala Lumpur to Penang is one of the busiest domestic routes on the peninsula's west coast, spanning about 300 km. After leaving Kuala Lumpur the flight heads northwest, first passing over the urbanised plain of the Klang Valley before entering the comparatively flat coastal lowland of the peninsula's west coast." +
+      " The flight continues northwest, the western foothills of the Titiwangsa Mountains faintly visible inland, palm plantations and mangroves alternating along the coastline, before landing on Penang, a granite island off the peninsula's northwest coast whose old town of George Town was inscribed on the UNESCO World Heritage List in 2008.",
+    },
+    travel: {
+    "zh-CN":
+      "吉隆坡到槟城飞约55分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型，每日约9班）。吉隆坡国际机场距市区约45公里；槟城国际机场距乔治市约18公里。这是马来西亚客流量最高的国内航线之一。",
+    "en-US":
+      "Kuala Lumpur to Penang is about 55 minutes, same time zone, operated by AirAsia (Airbus A320, about 9 flights daily) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Penang International Airport is about 18 km from George Town. This is one of Malaysia's highest-volume domestic air routes.",
+    },
+  },
+
+  "kul-bki": {
+    study: {
+    "zh-CN":
+      "吉隆坡飞亚庇，是连接马来半岛与婆罗洲的核心航线，全程约1630公里，是马来西亚客流量最大的国内航线，日均航班多达十余班，飞行时长约两个半小时。飞机离开吉隆坡后向东飞行，很快越过马来半岛东海岸线，进入南海开阔水域。" +
+      "飞机持续在南海上空飞行逾两小时，接近婆罗洲海岸时，京那巴鲁山裸露的花岗岩峰体从云海中显露，海拔4095米的山体是马来西亚与马来群岛最高峰，最终降落在亚庇——沙巴州首府，是探索京那巴鲁公园与沙巴海岛的核心门户。",
+    "en-US":
+      "Flying from Kuala Lumpur to Kota Kinabalu is the core route linking the Malay Peninsula with Borneo, spanning about 1,630 km — Malaysia's highest-volume domestic route. After leaving Kuala Lumpur the flight heads east, soon crossing the peninsula's east coast into the open waters of the South China Sea." +
+      " The flight continues over the South China Sea for more than two hours; as it nears the Bornean coast, the bare granite summit of Mount Kinabalu emerges from the sea of cloud — at 4,095 m, the highest peak in Malaysia and the Malay Archipelago — before landing in Kota Kinabalu, capital of Sabah and the core gateway to Kinabalu Park.",
+    },
+    travel: {
+    "zh-CN":
+      "吉隆坡到亚庇飞约150分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型），是马来西亚境内客流量最大的单一航线（每日多达14至16班）。吉隆坡国际机场距市区约45公里；亚庇国际机场距市区约7公里。",
+    "en-US":
+      "Kuala Lumpur to Kota Kinabalu is about 150 minutes, same time zone, operated by AirAsia (Airbus A320) as one of Malaysia's domestic routes, and the single busiest air route within the country (up to 14–16 daily flights). Kuala Lumpur International Airport is about 45 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
+    },
+  },
+
+  "kul-kch": {
+    study: {
+    "zh-CN":
+      "吉隆坡飞古晋，是连接马来半岛与砂拉越的主要航线，全程约1110公里，是马来西亚境内客流量位居前列的国内航线之一，全天多个班次往返两地。飞机离开吉隆坡后向东南飞行，越过马来半岛南部后进入南海，飞越加里曼丹岛与马来半岛之间的开阔海域。" +
+      "飞机继续向东南飞行，接近砂拉越海岸时，巴哥国家公园沿岸砂岩地貌与海蚀柱景观隐约可见，最终降落在古晋——砂拉越州首府，坐落于砂拉越河畔，是探索姆鲁山国家公园与尼亚洞穴的重要门户。",
+    "en-US":
+      "Flying from Kuala Lumpur to Kuching is the main route linking the Malay Peninsula with Sarawak, spanning about 1,110 km. After leaving Kuala Lumpur the flight heads southeast, crossing the southern peninsula before entering the South China Sea and flying over the open water between Borneo and the peninsula." +
+      " The flight continues southeast; as it nears the Sarawak coast, the sandstone coastal landform and sea stacks of Bako National Park become faintly visible, before landing in Kuching, capital of Sarawak on the banks of the Sarawak River and an important gateway to Gunung Mulu National Park and the Niah Caves.",
+    },
+    travel: {
+    "zh-CN":
+      "吉隆坡到古晋飞约110分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型，全天多班）。吉隆坡国际机场距市区约45公里；古晋国际机场距市区约11公里。",
+    "en-US":
+      "Kuala Lumpur to Kuching is about 110 minutes, same time zone, operated by AirAsia (Airbus A320, multiple flights daily) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Kuching International Airport is about 11 km from the city centre.",
+    },
+  },
+
+  "kul-lgk": {
+    study: {
+    "zh-CN":
+      "吉隆坡飞浮罗交怡，是马来半岛西海岸北向的热门航线，全程约370公里，是马来西亚知名的度假岛屿航线之一，尤其在节假日期间班次密集。飞机离开吉隆坡后向西北飞行，沿途经过槟城以北海域，逐渐接近马来半岛与泰国交界的安达曼海海域。" +
+      "飞机继续向西北飞行，浮罗交怡群岛错落分布的岛屿与基林河口红树林、喀斯特尖峰地貌逐渐显现，最终降落在浮罗交怡——2007年获认定为东南亚首个UNESCO世界地质公园，地质记录跨越逾5.5亿年。",
+    "en-US":
+      "Flying from Kuala Lumpur to Langkawi is a popular route heading north along the peninsula's west coast, spanning about 370 km. After leaving Kuala Lumpur the flight heads northwest, passing waters north of Penang and approaching the Andaman Sea near the Malaysia-Thailand border." +
+      " The flight continues northwest, the scattered islands of the Langkawi archipelago and the mangroves and karst pinnacles of the Kilim estuary gradually coming into view, before landing on Langkawi, recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, its geological record spanning more than 550 million years.",
+    },
+    travel: {
+    "zh-CN":
+      "吉隆坡到浮罗交怡飞约65分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型）。吉隆坡国际机场距市区约45公里；浮罗交怡国际机场距瓜镇约11公里。浮罗交怡是马来西亚知名的免税购物与度假岛屿。",
+    "en-US":
+      "Kuala Lumpur to Langkawi is about 65 minutes, same time zone, operated by AirAsia (Airbus A320) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Langkawi International Airport is about 11 km from Kuah town. Langkawi is a well-known duty-free shopping and resort island in Malaysia.",
+    },
+  },
+
+  "kul-kbr": {
+    study: {
+    "zh-CN":
+      "吉隆坡飞哥打巴鲁，是横贯马来半岛、连接西海岸与东海岸的航线，全程约420公里，飞行方向大致垂直于蒂蒂旺沙山脉走向，是往返东海岸最便捷的空中通道之一。飞机离开吉隆坡后向东北飞行，脚下先掠过蒂蒂旺沙山脉——马来半岛的脊梁山系，连绵的绿色山脊贯穿半岛中轴。" +
+      "越过蒂蒂旺沙山脉后，飞机继续向东北飞行，掠过大汉山国家公园大片原始热带雨林，最终降落在哥打巴鲁——吉兰丹州首府，坐落于吉兰丹河口，是马来传统文化保存最完整的城市之一。",
+    "en-US":
+      "Flying from Kuala Lumpur to Kota Bharu crosses the Malay Peninsula, linking its west and east coasts, spanning about 420 km. After leaving Kuala Lumpur the flight heads northeast, first passing over the Titiwangsa Mountains — the peninsula's backbone range, a continuous green ridge running down its centre." +
+      " Past the Titiwangsa range, the flight continues northeast over the extensive primary rainforest of Taman Negara, before landing in Kota Bharu, capital of Kelantan at the mouth of the Kelantan River, one of the cities where traditional Malay culture is best preserved.",
+    },
+    travel: {
+    "zh-CN":
+      "吉隆坡到哥打巴鲁飞约60分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型）。吉隆坡国际机场距市区约45公里；苏丹依斯迈布特拉机场距市区约8公里。",
+    "en-US":
+      "Kuala Lumpur to Kota Bharu is about 60 minutes, same time zone, operated by AirAsia (Airbus A320) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Sultan Ismail Petra Airport is about 8 km from the city centre.",
+    },
+  },
+
+  "sdk-bki": {
+    study: {
+    "zh-CN":
+      "山打根飞亚庇，是沙巴内陆的区域航线，全程约230公里，由婆罗洲航空（前身马仕运航空，2026年初完成品牌重组）运营，是沙巴境内客流量最大的支线航班之一，也是连接沙巴东西海岸的重要空中通道。飞机离开山打根后向西飞行，脚下逐渐展开克罗克山脉连绵起伏的山脊地貌。" +
+      "克罗克山脉呈南北走向、长约120公里，无突出的单一主峰，是京那巴鲁山所在花岗岩体的组成部分；飞机继续向西飞行，越过克罗克山脉后进入沿海平原，最终降落在亚庇——沙巴州首府。",
+    "en-US":
+      "Flying from Sandakan to Kota Kinabalu is a regional route within Sabah, spanning about 230 km, operated by AirBorneo (formerly MASwings, which completed its rebrand in early 2026). After leaving Sandakan the flight heads west, the rolling ridgeline of the Crocker Range gradually unfolding below." +
+      " The Crocker Range runs north-south for about 120 km with no single dominant peak, forming part of the same granite massif as Mount Kinabalu; the flight continues west, crossing the range before descending over the coastal plain and landing in Kota Kinabalu, capital of Sabah.",
+    },
+    travel: {
+    "zh-CN":
+      "山打根到亚庇飞约55分钟，同一时区，是婆罗洲航空运营的沙巴内陆航班之一（ATR 72-500机型），该航司2026年初由马仕运航空重组而来，由砂拉越州政府接管运营。山打根机场距市区约11公里；亚庇国际机场距市区约7公里。",
+    "en-US":
+      "Sandakan to Kota Kinabalu is about 55 minutes, same time zone, operated by AirBorneo (ATR 72-500) as one of Sabah's regional routes; the airline was formed in early 2026 through the rebranding of MASwings under Sarawak state government ownership. Sandakan Airport is about 11 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
+    },
+  },
+
+  "kch-myy": {
+    study: {
+    "zh-CN":
+      "古晋飞美里，是砂拉越境内连接两大城市的区域航线，全程约420公里，由婆罗洲航空运营，是前往姆鲁山国家公园与尼亚洞穴的常用中转航段。飞机离开古晋后向东北飞行，沿婆罗洲海岸平原上空前行，脚下砂拉越沿海地带的河网与红树林交织分布。" +
+      "飞机继续向东北飞行，接近美里前掠过尼亚国家公园——苏比斯山石灰岩地块北缘的洞穴群，大洞洞口高逾60米，2024年列入UNESCO世界遗产名录，最终降落在美里——砂拉越东北部港口城市，是探索姆鲁山国家公园的重要中转枢纽。",
+    "en-US":
+      "Flying from Kuching to Miri is a regional route linking Sarawak's two major cities, spanning about 420 km, operated by AirBorneo. After leaving Kuching the flight heads northeast along Borneo's coastal plain, rivers and mangroves of Sarawak's coastal belt interweaving below." +
+      " The flight continues northeast, passing near Niah National Park before reaching Miri — a cave complex on the northern edge of the Gunong Subis limestone massif, its Great Cave mouth more than 60 m high, inscribed on the UNESCO World Heritage List in 2024 — before landing in Miri, a port city in northeastern Sarawak and an important transit hub for exploring Gunung Mulu National Park.",
+    },
+    travel: {
+    "zh-CN":
+      "古晋到美里飞约75分钟，同一时区，是婆罗洲航空运营的砂拉越内陆航班之一（ATR 72-500机型）。古晋国际机场距市区约11公里；美里机场距市区约8公里。美里是转乘小型飞机前往姆鲁山国家公园的重要枢纽。",
+    "en-US":
+      "Kuching to Miri is about 75 minutes, same time zone, operated by AirBorneo (ATR 72-500) as one of Sarawak's regional routes. Kuching International Airport is about 11 km from the city centre; Miri Airport is about 8 km from the city centre. Miri is an important hub for connecting flights to Gunung Mulu National Park.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */
