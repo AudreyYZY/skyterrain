@@ -1,0 +1,15 @@
+{
+  "id": "ubn-mxv",
+  "name": "乌兰巴托 — 木伦",
+  "nameEn": "Ulaanbaatar — Mörön",
+  "description": "杭爱山北麓",
+  "descriptionEn": "Northern Khangai foothills",
+  "depCountry": "mongolia",
+  "arrCountry": "mongolia",
+  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0805", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "MXV", "durationMin": 70 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
+    { "kind": "city", "id": "mxv", "name": "木伦", "nameEn": "Mörön", "lat": 49.6633, "lon": 100.1492, "airport": true }
+  ]
+}

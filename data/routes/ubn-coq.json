@@ -1,0 +1,16 @@
+{
+  "id": "ubn-coq",
+  "name": "乌兰巴托 — 乔巴山",
+  "nameEn": "Ulaanbaatar — Choibalsan",
+  "description": "克鲁伦河 · 东部草原",
+  "descriptionEn": "Kherlen River · Eastern Steppe",
+  "depCountry": "mongolia",
+  "arrCountry": "mongolia",
+  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0809", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "COQ", "durationMin": 75 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
+    { "kind": "terrain", "terrainId": "kherlen-river" },
+    { "kind": "city", "id": "coq", "name": "乔巴山", "nameEn": "Choibalsan", "lat": 48.0967, "lon": 114.5539, "airport": true }
+  ]
+}
