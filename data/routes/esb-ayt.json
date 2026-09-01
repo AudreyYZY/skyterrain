@@ -1,0 +1,16 @@
+{
+  "id": "esb-ayt",
+  "name": "安卡拉 — 安塔利亚",
+  "nameEn": "Ankara — Antalya",
+  "description": "托罗斯山脉",
+  "descriptionEn": "Taurus Mountains",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "AJet", "airlineEn": "AJet", "flightNo": "VF1206", "aircraft": "Boeing 737-800", "depIata": "ESB", "arrIata": "AYT", "durationMin": 75 },
+  "cruiseHeight": 8800,
+  "waypoints": [
+    { "kind": "city", "id": "esb", "name": "安卡拉", "nameEn": "Ankara", "lat": 40.1281, "lon": 32.9951, "airport": true },
+    { "kind": "terrain", "terrainId": "toros-mountains" },
+    { "kind": "city", "id": "ayt", "name": "安塔利亚", "nameEn": "Antalya", "lat": 36.8987, "lon": 30.8005, "airport": true }
+  ]
+}

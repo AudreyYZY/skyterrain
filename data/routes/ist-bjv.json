@@ -1,0 +1,16 @@
+{
+  "id": "ist-bjv",
+  "name": "伊斯坦布尔 — 博德鲁姆",
+  "nameEn": "Istanbul — Bodrum",
+  "description": "爱琴海岸",
+  "descriptionEn": "Aegean Coast",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2260", "aircraft": "Airbus A321", "depIata": "IST", "arrIata": "BJV", "durationMin": 75 },
+  "cruiseHeight": 9200,
+  "waypoints": [
+    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
+    { "kind": "terrain", "terrainId": "aegean-coast-turkey" },
+    { "kind": "city", "id": "bjv", "name": "博德鲁姆", "nameEn": "Bodrum", "lat": 37.2506, "lon": 27.6644, "airport": true }
+  ]
+}

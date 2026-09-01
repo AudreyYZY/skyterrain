@@ -1,0 +1,15 @@
+{
+  "id": "ist-adb",
+  "name": "伊斯坦布尔 — 伊兹密尔",
+  "nameEn": "Istanbul — Izmir",
+  "description": "爱琴海岸",
+  "descriptionEn": "Aegean Coast",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2374", "aircraft": "Boeing 737-800", "depIata": "IST", "arrIata": "ADB", "durationMin": 70 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
+    { "kind": "city", "id": "adb", "name": "伊兹密尔", "nameEn": "Izmir", "lat": 38.2924, "lon": 27.1570, "airport": true }
+  ]
+}
