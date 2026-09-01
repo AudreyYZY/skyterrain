@@ -1,0 +1,17 @@
+{
+  "id": "cgk-dps",
+  "name": "雅加达 — 登巴萨",
+  "nameEn": "Jakarta — Denpasar",
+  "description": "默拉皮火山 · 布罗莫—腾格尔破火山口",
+  "descriptionEn": "Mount Merapi · Bromo Tengger Caldera",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA402", "aircraft": "Boeing 737-800", "depIata": "CGK", "arrIata": "DPS", "durationMin": 100 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
+    { "kind": "terrain", "terrainId": "mount-merapi" },
+    { "kind": "terrain", "terrainId": "bromo-tengger-caldera" },
+    { "kind": "city", "id": "dps", "name": "登巴萨", "nameEn": "Denpasar", "lat": -8.7467, "lon": 115.1667, "airport": true }
+  ]
+}

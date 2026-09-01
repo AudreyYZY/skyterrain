@@ -1,0 +1,16 @@
+{
+  "id": "cgk-yia",
+  "name": "雅加达 — 日惹",
+  "nameEn": "Jakarta — Yogyakarta",
+  "description": "迪昂高原",
+  "descriptionEn": "Dieng Plateau",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA206", "aircraft": "Boeing 737-800", "depIata": "CGK", "arrIata": "YIA", "durationMin": 75 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
+    { "kind": "terrain", "terrainId": "dieng-plateau" },
+    { "kind": "city", "id": "yia", "name": "日惹", "nameEn": "Yogyakarta", "lat": -7.9004, "lon": 110.0570, "airport": true }
+  ]
+}

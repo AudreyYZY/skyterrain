@@ -1,0 +1,15 @@
+{
+  "id": "cgk-bpn",
+  "name": "雅加达 — 巴厘巴板",
+  "nameEn": "Jakarta — Balikpapan",
+  "description": "爪哇海 · 望加锡海峡",
+  "descriptionEn": "Java Sea · Makassar Strait",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA518", "aircraft": "Boeing 737-800", "depIata": "CGK", "arrIata": "BPN", "durationMin": 135 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
+    { "kind": "city", "id": "bpn", "name": "巴厘巴板", "nameEn": "Balikpapan", "lat": -1.2683, "lon": 116.8938, "airport": true }
+  ]
+}

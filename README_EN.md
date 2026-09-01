@@ -2,31 +2,34 @@
 
 > Understand the Earth from an airplane window · [中文](./README.md)
 
-A documentary-style web app for understanding places from a passenger's window seat.
+A documentary-style web app for understanding the world from a passenger's window seat:
+it drops you onto a 3D globe at cruising altitude looking down at one place, frames its most
+telling feature, and pairs it with authoritative, non-AI-generated narration so you actually
+*understand* what you're seeing.
 
-Not a GIS dashboard, not a flight simulator, not a game — it drops you onto a 3D globe at
-cruising altitude looking down at one place, frames its most telling feature, and pairs it
-with authoritative, easy-to-remember narration so you actually *understand* what you're seeing.
+Not a GIS dashboard, not a flight simulator, not a game.
 
 **Two modes** (one-click switch in the header, remembered in `localStorage`):
 
 | Mode | The question it answers | Content |
 |---|---|---|
-| **Study** | "What landform is that? How did it form?" | Terrain atlas — 478 landforms + authoritative 6-section lessons |
+| **Study** | "What landform is that? How did it form?" | Terrain atlas — 914 landforms + authoritative 6-section lessons |
 | **Travel** | "I've landed in an unfamiliar city — what do I need to know?" | City overviews — layout / getting around / culture / when to go |
 
 The two content systems run in parallel and don't interfere.
 
 **Current scope** (`check-regions.ts` / `check-places.ts` print exact counts on every run —
 trust those over this paragraph if they ever disagree):
-- Study — Asia (China 84 + Japan 26 = 110), Oceania (Australia 34 + New Zealand 30 = 64),
-  North America (USA 26 + Canada 25 = 51), Europe (UK 33 + Iceland 28 + Switzerland 27 +
-  Norway 28 + France 29 + Italy 30 + Spain 26 + Germany 26 + Greece 26 = 253) — 478 total, bilingual
-- Travel — 14 countries (Australia/China/Japan/New Zealand/USA/Canada/UK/Iceland/Switzerland/
-  Norway/France/Italy/Spain/Germany/Greece), 15 country overviews + 188 cities, bilingual;
-  127 domestic routes with bilingual study/travel narration each
+- Study — Asia (China 84 + Japan 26 + South Korea 28 + Mongolia 26 + Thailand 25 + Vietnam 25 +
+  Malaysia 26 + Singapore 12 + Philippines 22 + Indonesia 26 = 300), Europe (UK 33 + Iceland 28 +
+  Switzerland 27 + Norway 28 + France 29 + Italy 30 + Spain 26 + Germany 26 + Greece 26 +
+  Portugal 26 + Netherlands 26 + Austria 26 + Belgium 26 + Sweden 26 + Finland 26 +
+  Ireland 28 + Denmark 25 + Luxembourg 12 + Poland 25 = 499), North America (USA 26 +
+  Canada 25 = 51), Oceania (Australia 34 + New Zealand 30 = 64) — 914 total, bilingual
+- Travel — covers all 33 countries live in study mode, 33 country overviews + 379 cities, bilingual;
+  209 domestic routes with bilingual study/travel narration each
 
-**Roadmap:** keep expanding study-mode terrain coverage (next country TBD) + expand travel-mode city coverage by tourism demand.
+**Roadmap:** keep expanding study-mode terrain coverage (South America / Africa not yet started) + expand travel-mode city coverage by tourism demand.
 
 ---
 
@@ -34,7 +37,7 @@ trust those over this paragraph if they ever disagree):
 
 ### Terrain set — single source of truth
 
-- **478 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
+- **914 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
   `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`.
 - Each entry records an **anchor** (main peak / lake / hub city + lon/lat + elevation), a
@@ -69,7 +72,7 @@ window shot.
 - Pitch / range scale with terrain size; large plateaus / basins / plains / deserts get a
   `viewScale` in the registry's `WIDE_VIEW` so the shot pulls back far enough to read as
   "a whole upland / basin," not one local feature (a lake, a city) near the anchor.
-- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (478/478).
+- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (914/914).
 
 ### Region highlight — a restrained outline
 
@@ -120,7 +123,7 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   (`getTerrainContent(id, lang)`), summarized from widely-accepted geography facts (China
   National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks
   Australia, UNESCO) — not documentary voiceover, not free-form generation.
-- **All 478 have bilingual lessons.** An early batch of 61 (China 39 + Australia 22, back when
+- **All 914 have bilingual lessons.** An early batch of 61 (China 39 + Australia 22, back when
   those were the only two countries in the registry) went through a dedicated line-by-line
   source-verification pass: comparative / subjective judgments removed, disputed points
   qualified or given side by side, anything unverifiable dropped, figures normalized to
@@ -136,7 +139,7 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
 
 ### Route flights
 
-- **127 real commercial routes** (`data/routes/*.json`) across the countries listed above
+- **209 real commercial routes** (`data/routes/*.json`) across the countries listed above
   (the first 4 — Beijing–Ürümqi / Chengdu–Lhasa / Guangzhou–Lhasa / Ürümqi–Kashgar — were the
   original set), each with airline / flight number / aircraft, departure and arrival airports,
   and terrain waypoints along the way.
@@ -191,7 +194,7 @@ npm run lint       # ESLint
 npm run typecheck  # tsc --noEmit
 
 npm run check:regions   # continent/sub-region/country terrain-count consistency
-npm run check:camera    # camera geometry self-check (478/478)
+npm run check:camera    # camera geometry self-check (914/914)
 npm run check:places    # travel-place self-check (city coords/IATA/sources/bilingual content)
 npm run check:routes    # route self-check (waypoint monotonicity, narration length, airports, …)
 npm run check            # runs all of the above (typecheck + lint + 4 checks)
@@ -223,13 +226,13 @@ components/
   RegionSelector.tsx       — header continent / sub-region two-level switch
 
 lib/
-  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 478 terrains
+  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 914 terrains
   terrain-camera.ts         — computeTerrainCamera() data-driven camera derivation
   terrain-content.{zh,en}.ts— authoritative 6-section lesson content (zh / en)
   terrain-lesson.ts         — resolveLesson(id, lang): one place decides which lesson to use
   terrain-label-registry.ts — labels (generated from the registry, with nameEn)
   lesson.ts                 — lesson section order / headings / assembly
-  routes.ts / route-narration.ts — real commercial routes (127 currently) + two continuous narrations each
+  routes.ts / route-narration.ts — real commercial routes (209 currently) + two continuous narrations each
   app-mode.ts               — AppMode type + localStorage read/write
   places-registry.ts        — [travel-mode single source of truth] cities + country overviews
   travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
@@ -247,7 +250,7 @@ features/
 
 data/
   *.json                    — early terrain data (coordinates now superseded by terrain-registry)
-  routes/                   — real route definitions (127 currently)
+  routes/                   — real route definitions (209 currently)
   gis/                      — raw Natural Earth shp/dbf (git-ignored)
 
 public/data/gis/exports/    — 42 extracted terrain-boundary geojson files
