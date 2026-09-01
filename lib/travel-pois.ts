@@ -2458,6 +2458,9 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
   ],
   // 新加坡
   "singapore-city": [
+    { nameZh: "鱼尾狮公园", nameEn: "Merlion Park", lon: 103.8545, lat: 1.2868, kind: "landmark" },
+    { nameZh: "驳船码头与克拉码头", nameEn: "Boat Quay & Clarke Quay", lon: 103.8484, lat: 1.2884, kind: "district" },
+    { nameZh: "市政厅与旧国会大厦", nameEn: "City Hall & Old Parliament House", lon: 103.8514, lat: 1.2903, kind: "landmark" },
     { nameZh: "滨海湾金沙", nameEn: "Marina Bay Sands", lon: 103.8607, lat: 1.2836, kind: "landmark" },
     { nameZh: "滨海湾花园", nameEn: "Gardens by the Bay", lon: 103.8636, lat: 1.2816, kind: "landmark" },
     { nameZh: "牛车水（佛牙寺）", nameEn: "Chinatown (Buddha Tooth Relic Temple)", lon: 103.8442, lat: 1.2812, kind: "district" },

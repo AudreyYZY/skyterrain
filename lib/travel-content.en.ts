@@ -5856,15 +5856,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "singapore-city": {
     identity:
-      "Singapore city is the urban core of the entire country, on the south coast of Singapore Island, the country's political, economic and cultural centre, and one of the world's important international financial and trade hubs.",
+      "Singapore city is the urban core of the entire country, on the south coast of Singapore Island where the Singapore River meets the sea — the country's political, economic and cultural centre and one of the world's major international financial and trade hubs, its urban form built up in layers from what began as a trading port on a strait.",
     layout:
-      "Marina Bay, ringed by high-rises, is Singapore's modern landmark core; Chinatown, Kampong Glam and Little India are the traditional enclaves of the Chinese, Malay-Muslim and Indian communities respectively, and Orchard Road is Singapore's main shopping street.",
+      "Around the mouth of the Singapore River, the Raffles Landing Site and colonial-era buildings such as City Hall and the old Parliament House mark the city's original administrative and commercial core; further out, Chinatown, Kampong Glam and Little India are the traditional enclaves shaped by Chinese, Malay-Muslim and Indian immigration respectively, and Marina Bay, built on land reclaimed in the late 20th century, is the modern financial and landmark core, with Orchard Road as Singapore's main shopping street.",
     gettingAround:
       "Changi Airport is about 20 km from the city centre, with the airport MRT line taking about 35–45 minutes into town; the city's MRT network is extensive, with buses and Grab ride-hailing covering the whole island as the main way to explore its different districts.",
     culture:
-      "The official languages — Malay, English, Mandarin and Tamil — are spoken alongside each other, and the society is known for its coexistence of diverse ethnicities and religions. Singapore is known for its strict management of public order and clean cityscape; restaurant bills typically already include service, and tipping is not a mandatory tradition.",
+      "The official languages — Malay, English, Mandarin and Tamil — are spoken alongside each other, and the society is known for its coexistence of diverse ethnicities and religions. Singapore is known for its strict management of public order and clean cityscape; restaurant bills typically already include service, and tipping is not a mandatory tradition. Importing or selling chewing gum is banned, littering and spitting carry heavy fines, and drug offences (including possession and use) carry extremely severe penalties.",
     seeAndDo:
-      "Gardens by the Bay and Marina Bay Sands; Chinatown and the Buddha Tooth Relic Temple; Kampong Glam and the Sultan Mosque; Little India; the Singapore Botanic Gardens (a UNESCO World Heritage Site).",
+      "Merlion Park (at the mouth of the Singapore River, the city's signature viewpoint, with the historic civic district and the Marina Bay skyline visible in the same frame); Boat Quay and Clarke Quay along the river (former trading-port wharves, now a dining and nightlife district); the historic buildings around City Hall and the old Parliament House; Gardens by the Bay and Marina Bay Sands; Chinatown and the Buddha Tooth Relic Temple; Kampong Glam and the Sultan Mosque; Little India; the Singapore Botanic Gardens (a UNESCO World Heritage Site).",
     whenAndTips:
       "Hot and humid year-round — carry rain gear for afternoon showers; the city centre's sights are concentrated and the MRT is convenient, making it well suited to an itinerary combining walking with metro rides.",
   },
