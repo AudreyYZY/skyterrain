@@ -11833,4 +11833,89 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Osowiec Fortress within the marshes was built in the late 19th century; during the First World War its surrounding marshland's difficult terrain repeatedly helped repel attacks, a classic case of marsh landform shaping military history. Biebrza National Park was established in 1993.",
   },
+  // ============ Mongolia ============
+  "mongol-altai": {
+    seeing:
+      "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — within the Tavan Bogd massif at the tripoint of Mongolia, Russia and China.",
+    formation:
+      "The Mongol Altai is part of the Altai orogenic belt, uplifted and folded by crustal compression in the late Paleozoic, then repeatedly carved by glaciation through the Quaternary, producing today's landscape of dense high peaks, glaciers and glacial horns.",
+    observation:
+      "From the air, the Mongol Altai appears as a continuous belt of snow peaks running northwest to southeast; the Tavan Bogd area holds Mongolia's largest modern glacier cluster, with the range's foothills abutting the Gobi desert and dry steppe in a sharp contrast.",
+    distinguish:
+      "Both the Mongol Altai and the Gobi Altai belong to the Altai orogenic belt, but the Mongol Altai stands higher and retains modern glaciers, while the Gobi Altai is made up of separate fault-block massifs at lower elevation.",
+    concept:
+      "The Mongol Altai is the southwestern extension of the wider Central Asian Altai system; its modern glaciers are among the few natural indicators within Mongolia for monitoring climate change.",
+    history:
+      "The Tavan Bogd area was historically an important route linking nomadic peoples across Mongolia, Russia and China; it now lies administratively within Bayan-Ölgii Province, home to one of Mongolia's Kazakh communities.",
+  },
+  "khangai-mountains": {
+    seeing:
+      "The Khangai Mountains are a major range in central Mongolia; its highest peak, Otgontenger in Zavkhan Province, reaches about 4,021 m (different surveys give figures between 4,008 and 4,031 m) and is the only peak in the range to carry a permanent glacier.",
+    formation:
+      "The Khangai is an old folded fault-block range, shaped over time by tectonic uplift together with weathering and erosion into today's relatively gentle, rounded mid-elevation landform, in contrast with the younger, steeper Altai.",
+    observation:
+      "From the air, the Khangai appears as rolling terrain with forest and alpine meadow interwoven, rivers radiating outward from the range in all directions — the Orkhon, Selenge and other major Mongolian rivers all rise here.",
+    distinguish:
+      "Both the Khangai and the Mongol Altai are major Mongolian ranges, but the Khangai is gentler and forms the source of several of Mongolia's great rivers, while the Mongol Altai is steeper and retains modern glaciers.",
+    concept:
+      "As the central watershed range of Mongolia, the Khangai's drainage pattern directly determines the water supply of historic core regions such as the Orkhon valley, making it important for understanding the geographic basis of Mongolia's nomadic civilization.",
+    history:
+      "The Orkhon valley on the Khangai's southern flank was successively the political heartland of the Turkic Khaganate, the Uyghur Khaganate and the Mongol Empire; the range itself also holds an important place in traditional Mongolian belief.",
+  },
+  "khentii-mountains": {
+    seeing:
+      "The Khentii Mountains are a range in northeastern Mongolia, source of both the Onon and Kherlen rivers; Burkhan Khaldun within it reaches 2,340 m and was inscribed on the UNESCO World Heritage List in 2015 as \"Great Burkhan Khaldun Mountain and its surrounding sacred landscape.\"",
+    formation:
+      "The Khentii is an old folded range; long-term weathering and erosion have left it relatively gentle, with denser forest cover than the Khangai, and a radiating pattern of rivers has developed among its slopes.",
+    observation:
+      "From the air, the Khentii shows high forest cover, with a clear taiga-to-steppe transition zone; the area around Burkhan Khaldun has long been protected under traditional belief, leaving its vegetation relatively well preserved.",
+    distinguish:
+      "Both the Khentii and the Khangai are important river sources for Mongolia, but the Khentii carries denser forest cover and is known for the sacred-mountain worship of Burkhan Khaldun, while the Khangai is more defined by alpine meadow and radiating river valleys.",
+    concept:
+      "The Khentii's forest-steppe transition zone is a classic sample of Mongolia's ecotone landscape, useful for studying the distribution patterns of forest-steppe ecosystems in northern Mongolia.",
+    history:
+      "Burkhan Khaldun is traditionally held to be both the birthplace and burial site of Genghis Khan, and is the most venerated sacred mountain in traditional Mongolian belief; it was formally inscribed on the UNESCO World Heritage List in 2015.",
+  },
+  "gobi-altai": {
+    seeing:
+      "The Gobi Altai is a transitional range where the Mongol Altai extends southeast into the Gobi desert region, made up of several isolated fault-block massifs; its highest peak, Ikh Bogd, reaches 3,957 m and retains a small glacier at its summit.",
+    formation:
+      "The Gobi Altai formed through fault-block uplift since the Tertiary, with each block massif standing largely independent, separated by Gobi desert basins — a classic landform of the Altai orogenic belt's transition into desert.",
+    observation:
+      "From the air, the Gobi Altai appears as a series of isolated massifs rising out of the desert, occasional residual snow visible at their summits, forming a sharp vertical contrast with the open Gobi desert landscape around them.",
+    distinguish:
+      "Both the Gobi Altai and the Mongol Altai are extensions of the Altai orogenic belt, but the Gobi Altai is made up of isolated fault-block massifs within a desert transition zone, while the Mongol Altai is a continuous belt of high snow peaks.",
+    concept:
+      "The isolated montane ecosystems of the Gobi Altai are a classic sample of the desert \"ecological island\" phenomenon; the glacier retained at its summit contrasts sharply with the surrounding desert, making it an important case for studying arid-region montane ecology.",
+    history:
+      "The Gobi Altai region was historically an important waypoint for nomadic peoples crossing the Gobi desert, its mountain water sources long providing supply for passing caravans and herders.",
+  },
+  "mongolia-gobi": {
+    seeing:
+      "The Gobi spans southern Mongolia and northern China, covering about 1.3 million km² in total — the sixth-largest desert in the world; within Mongolia it is centred on provinces such as South Gobi and East Gobi, with a surface mostly of gravel desert rather than continuous dunes.",
+    formation:
+      "Lying deep inland, far from oceanic moisture sources, and shielded by surrounding ranges from moist air, the Gobi region sits under long-term extreme aridity, where continuous wind erosion and physical weathering have produced a landscape dominated by gravel-covered ground.",
+    observation:
+      "From the air, Mongolia's Gobi shows broad expanses of grey-brown gravel desert, dotted locally with seasonal oases and isolated massifs, forming a sharp north-south contrast with the alpine meadow landscape of the Khangai and Mongol Altai to the north.",
+    distinguish:
+      "Mongolia's Gobi and the Gobi within China belong to the same cross-border desert belt, but the Mongolian side is centred administratively on provinces such as South Gobi and East Gobi; landmark dune and desert features within it, such as Khongoryn Els and Bayanzag, are covered in their own separate entries.",
+    concept:
+      "Though commonly called a \"desert,\" the Gobi's surface is mostly gravel desert rather than sand — a frequently misunderstood point; a gradual transition zone exists between the eastern Gobi and the Mongolian steppe rather than a sharp desert-steppe boundary.",
+    history:
+      "The Gobi was historically an important trade corridor linking the Chinese heartland with the steppe and the Mongolian plateau with Central Asia; the Mongol Empire's post-station system maintained multiple supply points along Gobi routes.",
+  },
+  "great-lakes-depression": {
+    seeing:
+      "The Great Lakes Depression is an endorheic arid basin in western Mongolia, ringed on three sides by the Mongol Altai, the Gobi Altai and the Khangai; it covers about 268,000 km² and contains six large lakes including Uvs Lake.",
+    formation:
+      "The Great Lakes Depression is a tectonic subsidence basin dating to the Quaternary; during the Pleistocene it was covered by a single vast ancient lake, which later shrank and fragmented under increasing aridity into today's separate saline and freshwater remnant lakes.",
+    observation:
+      "From the air, the Great Lakes Depression appears as flat, open terrain with multiple lakes scattered across it, saline flats interweaving with dry steppe along the shorelines, and the outline of the surrounding three-sided mountain ring clearly visible.",
+    distinguish:
+      "Both the Great Lakes Depression and Mongolia's Gobi are arid landforms, but the Great Lakes Depression is an endorheic basin ringed by mountains on three sides, defined by its multiple saline and freshwater lakes, while the Gobi is an open desert plain with a surface mostly of gravel.",
+    concept:
+      "The coexistence of saline and freshwater lakes within the Great Lakes Depression is a classic sample for studying the evolution of endorheic basin drainage systems and the process of climatic aridification; its lake system has been selected as a monitoring site for the International Geosphere-Biosphere Programme (IGBP) tracking global warming.",
+    history:
+      "The Great Lakes Depression and the surrounding Uvs Nuur Basin were historically important pastureland for nomadic peoples of western Mongolia; in 2003 the Uvs Nuur Basin was inscribed on the UNESCO World Heritage List as a transboundary natural site (see the Uvs Lake entry).",
+  },
 };

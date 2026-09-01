@@ -12014,6 +12014,98 @@ const BIEBRZA_MARSHES: TerrainEntry = {
 };
 
 // ============================================================
+// 亚洲 — 蒙古
+// ============================================================
+
+const MONGOL_ALTAI: TerrainEntry = {
+  id: "mongol-altai",
+  nameZh: "蒙古阿尔泰山",
+  nameEn: "Mongol Altai Mountains",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "呼依滕峰（友谊峰）", lon: 87.8567, lat: 49.1289, elevation: 4374, kind: "peak" },
+  bbox: [87.5, 45.5, 97.5, 49.4],
+  axis: [[87.86, 49.13], [96.0, 45.7]],
+  viewScale: 1.6,
+  label: { lon: 92.0, lat: 47.5, rotation: -18 },
+  source: "呼依滕峰（Khüiten Peak）：蒙古全国最高点，海拔4374米，位于蒙俄中三国交界的塔王博格达（Tavan Bogd，五峰）山群，行政属巴彦乌列盖省；山脉沿蒙古西部边境呈西北—东南走向延伸约900公里（Wikipedia/discoveraltai.com WebSearch 2026）",
+};
+
+const KHANGAI_MOUNTAINS: TerrainEntry = {
+  id: "khangai-mountains",
+  nameZh: "杭爱山",
+  nameEn: "Khangai Mountains",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "敖特冈腾格尔峰", lon: 97.033, lat: 47.36, elevation: 4021, kind: "peak" },
+  bbox: [95.5, 46.0, 102.5, 49.0],
+  axis: [[95.7, 48.6], [102.3, 46.3]],
+  viewScale: 1.5,
+  label: { lon: 99.0, lat: 47.7, rotation: -20 },
+  source: "杭爱山：蒙古中部主要山系之一，首都乌兰巴托以西约400公里；最高峰敖特冈腾格尔峰位于扎布汗省，海拔各测量口径在4008至4031米之间（不同年代地形图测法差异），是杭爱山脉唯一保留永久冰川的山峰（Wikipedia/PeakVisor WebSearch 2026）",
+};
+
+const KHENTII_MOUNTAINS: TerrainEntry = {
+  id: "khentii-mountains",
+  nameZh: "肯特山",
+  nameEn: "Khentii Mountains",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "布尔汗哈勒敦山", lon: 109.033, lat: 48.75, elevation: 2340, kind: "peak" },
+  bbox: [107.5, 47.5, 110.8, 49.5],
+  axis: [[107.8, 49.4], [110.6, 47.7]],
+  viewScale: 1.4,
+  label: { lon: 108.8, lat: 48.9, rotation: -25 },
+  source: "肯特山：蒙古东北部山系，鄂嫩河与克鲁伦河发源地；其中布尔汗哈勒敦山海拔2340米，2015年以“布尔汗哈勒敦圣山及其周边神圣景观”列入UNESCO世界遗产名录，是蒙古传统信仰中最受尊崇的圣山（UNESCO/Wikipedia WebSearch 2026）",
+};
+
+const GOBI_ALTAI: TerrainEntry = {
+  id: "gobi-altai",
+  nameZh: "戈壁阿尔泰山",
+  nameEn: "Gobi Altai Mountains",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "伊赫博格德峰", lon: 100.75, lat: 44.95, elevation: 3957, kind: "peak" },
+  bbox: [96.0, 43.5, 101.5, 46.0],
+  axis: [[96.5, 45.6], [101.0, 44.8]],
+  viewScale: 1.4,
+  label: { lon: 98.8, lat: 45.2, rotation: -15 },
+  source: "戈壁阿尔泰山：蒙古阿尔泰山向东南延伸至戈壁荒漠区的过渡山系，由多个孤立断块山地组成，最高峰伊赫博格德峰海拔3957米，山顶保留小型冰川，是戈壁荒漠中罕见的高山生态孤岛（Wikipedia WebSearch 2026）",
+};
+
+const MONGOLIA_GOBI: TerrainEntry = {
+  id: "mongolia-gobi",
+  nameZh: "戈壁（蒙古）",
+  nameEn: "Gobi Desert (Mongolia)",
+  category: "desert",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "南戈壁省荒漠", lon: 104.5, lat: 43.2, elevation: 1200, kind: "dune" },
+  bbox: [95.0, 41.6, 112.0, 46.3],
+  viewScale: 2.0,
+  label: { lon: 106.0, lat: 44.0, rotation: 0 },
+  source: "戈壁：横跨蒙古南部与中国北部的荒漠地带，整体面积约130万平方公里，是世界第六大沙漠，主体为砾漠而非沙漠；蒙古境内以南戈壁、东戈壁等省份为主，气候夏热冬寒、年降水仅约194毫米（中国段另见 gobi 词条，锚点取额济纳；Wikipedia/geographical.co.uk WebSearch 2026）",
+};
+
+const GREAT_LAKES_DEPRESSION: TerrainEntry = {
+  id: "great-lakes-depression",
+  nameZh: "大湖盆地",
+  nameEn: "Great Lakes Depression",
+  category: "basin",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "乌布苏湖", lon: 92.75, lat: 50.42, elevation: 759, kind: "salt-lake" },
+  bbox: [87.7, 45.9, 99.1, 51.1],
+  viewScale: 1.8,
+  label: { lon: 93.5, lat: 48.5, rotation: 0 },
+  source: "大湖盆地：蒙古西部一处内流干旱盆地，由蒙古阿尔泰山、戈壁阿尔泰山与杭爱山三面环绕，面积约26.8万平方公里，内含乌布苏湖、吉尔嘎朗图湖、哈尔乌苏湖等六个大湖（三咸三淡），是更新世古大湖的残余（IWA Publishing论文 WebSearch 2026）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -12327,6 +12419,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   TU_SAN_CANYON, BAN_GIOC_WATERFALL,
   RED_RIVER_DELTA, MEKONG_DELTA,
   NGU_HANH_SON,
+  // ===== 亚洲 / 蒙古 =====
+  MONGOL_ALTAI, KHANGAI_MOUNTAINS, KHENTII_MOUNTAINS, GOBI_ALTAI,
+  MONGOLIA_GOBI, GREAT_LAKES_DEPRESSION,
 ];
 
 /**
