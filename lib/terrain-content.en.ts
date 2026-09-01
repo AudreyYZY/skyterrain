@@ -12437,4 +12437,74 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Pagsanjan Gorge National Park was established in 1939; the tradition of carrying visitors upriver by dugout canoe dates to the Spanish colonial era and continues today, making it one of the Philippines' longest-running river adventure tourism experiences.",
   },
+  "cagayan-river": {
+    seeing:
+      "The Cagayan River is the Philippines' longest river and the one with the greatest discharge, running about 505 km from its source in the Caraballo Mountains through the Cagayan Valley of northeastern Luzon before emptying into the Babuyan Channel at Aparri.",
+    formation:
+      "The Cagayan rises in the Caraballo Mountains, where the Cordillera Central meets the Sierra Madre; long-term erosion of the mountain rock and downstream sediment transport have shaped the elongated valley plain running the length of northeastern Luzon.",
+    observation:
+      "From the air, the Cagayan River shows a broad, winding channel running through the extensive agricultural plain of the Cagayan Valley in northeastern Luzon, rice paddies and dryland crops interweaving along its banks, with a clear delta landform at its mouth near Aparri.",
+    distinguish:
+      "Both the Cagayan River and Lake Lanao are important water bodies in the Philippines, but the Cagayan is a dynamic, flowing river running the length of Luzon, while Lake Lanao is a comparatively still tectonic lake on Mindanao.",
+    concept:
+      "As the Philippines' highest-discharge river, the Cagayan's basin pattern is an important sample for studying the relationship between the mountain-valley-plain landform gradient of northeastern Luzon and agricultural development.",
+    history:
+      "The Cagayan Valley has historically been an important agricultural and population centre in northern Luzon, the river long providing irrigation water and inland shipping routes for the provinces of Cagayan, Isabela and others along its banks.",
+  },
+  "lake-lanao": {
+    seeing:
+      "Lake Lanao is the Philippines' second-largest lake, covering about 340 km² in Lanao del Sur Province on Mindanao, and one of only 17 ancient lakes surviving on Earth.",
+    formation:
+      "Lake Lanao formed when a basin between two mountain ranges was dammed by combined tectonic and volcanic activity, accompanied by the collapse of a large volcano — a classic case of tectonic and volcanic processes together shaping a large lake basin.",
+    observation:
+      "From the air, Lake Lanao's broad water surface is set among the interior mountains of Mindanao, mosque architecture dotting its shores, its water flowing north via the Agus River over the dramatic drop of Maria Cristina Falls.",
+    distinguish:
+      "Both Lake Lanao and Agusan Marsh are important wetland water bodies on Mindanao, but Lake Lanao is a higher-elevation lake of tectonic-volcanic origin, while Agusan Marsh is a low-elevation marsh wetland formed on a river floodplain.",
+    concept:
+      "Lake Lanao is home to 18 endemic Philippine cyprinid fish species, making it an important sample for studying how long-term evolution in an isolated ancient lake produces endemic species radiation — a research value shared by only 15 ancient lakes worldwide.",
+    history:
+      "The Agus River hydroelectric system fed by Lake Lanao supplies about 70% of Mindanao's electricity; the Maranao people who live around the lake are almost entirely Muslim, and numerous mosques are found around its shores.",
+  },
+  "agusan-marsh": {
+    seeing:
+      "Agusan Marsh is an extensive floodplain wetland in the Agusan River basin of northeastern Mindanao, its legislated protected area covering about 40,941 ha, inscribed on the Ramsar List of Wetlands of International Importance in 1999.",
+    formation:
+      "Agusan Marsh is a low-lying floodplain formed where multiple tributaries of the Agusan River basin converge over a long period; seasonal floods repeatedly inundate the marsh, and long-term vegetation colonisation combined with peat accumulation has shaped today's extensive swamp forest and peat swamp forest.",
+    observation:
+      "From the air, Agusan Marsh shows open water interwoven with dense swamp forest, a crisscrossing network of channels, forming Mindanao's largest contiguous inland wetland ecosystem.",
+    distinguish:
+      "Both Agusan Marsh and Lake Lanao are important wetland water bodies on Mindanao, but Agusan Marsh is a low-elevation river floodplain marsh known for its peat swamp forest, while Lake Lanao is a higher-elevation lake of tectonic-volcanic origin.",
+    concept:
+      "Agusan Marsh preserves the largest surviving peat swamp forest in the Philippines, making it an important sample for studying the long-term flood-storage and carbon-storage functions of tropical river floodplain wetlands.",
+    history:
+      "Agusan Marsh has long provided flood-storage capacity for Butuan City and the surrounding area, easing downstream flood pressure; it was recognised as an ASEAN Heritage Park in 2018.",
+  },
+  "hundred-islands-national-park": {
+    seeing:
+      "Hundred Islands National Park is an island cluster in Lingayen Gulf off northwestern Luzon, comprising 124 limestone islands at low tide and 123 at high tide, established in 1940 as the Philippines' first national park.",
+    formation:
+      "The islands of Hundred Islands National Park sit on a coral-reef foundation with rock dating back about two million years; long-term wave erosion combined with coral reef deposition has shaped today's dense cluster of small limestone islands scattered across Lingayen Gulf.",
+    observation:
+      "From the air, Hundred Islands National Park shows a hundred-odd limestone islands of varying sizes scattered across the turquoise waters of Lingayen Gulf, white-sand beaches and shallow coral reefs dotting the spaces between them — a distinctive dense island-cluster landscape on Luzon's northwest coast.",
+    distinguish:
+      "Both Hundred Islands National Park and the Chocolate Hills are Philippine landforms formed by uplifted coral-reef limestone, but Hundred Islands is a cluster of islands scattered across a bay, while the Chocolate Hills are a dense field of conical karst mounds on land.",
+    concept:
+      "The hundreds of small limestone islands densely clustered within a single bay at Hundred Islands make it a classic sample for studying how an uplifted coral-reef foundation fragments through wave erosion into a dense island cluster.",
+    history:
+      "Hundred Islands National Park was established in 1940, the Philippines' oldest national park; today only four islands — Marcos, Governor's, Quezon and Children's — have been developed and opened to visitors.",
+  },
+  "verde-island-passage": {
+    seeing:
+      "The Verde Island Passage is a narrow marine channel between the provinces of Batangas, Mindoro, Marinduque and Romblon, widely recognised in scientific literature as the global \"centre of the centre\" of marine fish biodiversity, with more than 400 recorded coral species.",
+    formation:
+      "The Verde Island Passage is a narrow marine corridor at the centre of the Philippine archipelago, sitting at the heart of the Coral Triangle; long-term convergence of warm ocean currents combined with sustained coral growth has shaped today's exceptionally biodiverse marine ecological corridor.",
+    observation:
+      "From the air and at the surface, the Verde Island Passage shows dense coral reefs and multiple marine habitats lining both sides of a narrow channel, an important shipping route connecting Luzon and Mindoro, its clear waters teeming with marine life.",
+    distinguish:
+      "Both the Verde Island Passage and the Tubbataha Reefs are important Philippine coral reef ecosystems, but the Passage is a biodiversity hotspot within a narrow strait, while Tubbataha is an isolated deep-sea atoll system at the centre of the Sulu Sea.",
+    concept:
+      "As the \"centre of the centre\" of the Coral Triangle, the Verde Island Passage is an important sample for studying how a narrow strait's terrain concentrates ocean currents and biodiversity into a global biodiversity hotspot.",
+    history:
+      "The Verde Island Passage hosts 36 marine protected areas; it was designated a \"Hope Spot\" by the international ocean conservation organisation Mission Blue in 2010, and remains a priority area for marine ecological conservation in the Philippines.",
+  },
 };

@@ -12614,6 +12614,75 @@ const PAGSANJAN_GORGE: TerrainEntry = {
   source: "帕格森汉峡谷：吕宋岛拉古纳省一处沿帕格森汉河切割的峡谷地貌，森林覆盖的陡峭崖壁夹峙河道两侧，末端为落差120米、分三级跌落的马格达皮奥瀑布（俗称帕格森汉瀑布）；峡谷地处锡拉马德雷山脉山麓，1939年设立帕格森汉峡谷国家公园，自西班牙殖民时期起当地即以独木舟“冲滩”方式载客溯游而上（national-parks.org/Wikipedia WebSearch 2026）",
 };
 
+const CAGAYAN_RIVER: TerrainEntry = {
+  id: "cagayan-river",
+  nameZh: "卡加延河",
+  nameEn: "Cagayan River",
+  category: "river",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "阿帕里（卡加延河口）", lon: 121.6417, lat: 18.3667, elevation: 0, kind: "delta" },
+  bbox: [121.1, 16.4, 121.9, 18.4],
+  axis: [[121.1, 16.4], [121.6417, 18.3667]],
+  viewScale: 1.3,
+  label: { lon: 121.35, lat: 17.4, rotation: -20 },
+  source: "卡加延河：菲律宾最长、流量最大的河流，全长约505公里，发源于卡拉巴略山脉，流域面积约2.78万平方公里，纵贯吕宋岛东北部卡加延河谷，流经新怡诗夏、基里诺、伊莎贝拉与卡加延四省，最终于阿帕里注入巴布延海峡（Wikipedia/Britannica WebSearch 2026）",
+};
+
+const LAKE_LANAO: TerrainEntry = {
+  id: "lake-lanao",
+  nameZh: "拉瑙湖",
+  nameEn: "Lake Lanao",
+  category: "lake",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "拉瑙湖", lon: 124.25, lat: 7.8667, elevation: 702, kind: "lake" },
+  bbox: [124.05, 7.75, 124.45, 8.05],
+  viewScale: 1.1,
+  label: { lon: 124.25, lat: 7.65, rotation: 0 },
+  source: "拉瑙湖：菲律宾第二大湖，面积约340平方公里，位于棉兰老岛拉瑙德尔苏尔省，是全球现存17处古老湖泊之一，由两条山脉间盆地经构造—火山活动共同抬升阻塞、并伴随一座大型火山塌陷而形成；湖水经阿古斯河向北流出，途经玛丽亚克里斯蒂娜瀑布水电站，为棉兰老岛提供约七成用电；湖中栖息18种菲律宾特有鲤科鱼类（Britannica/dost.gov.ph WebSearch 2026）",
+};
+
+const AGUSAN_MARSH: TerrainEntry = {
+  id: "agusan-marsh",
+  nameZh: "阿古桑沼泽",
+  nameEn: "Agusan Marsh",
+  category: "basin",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "阿古桑沼泽野生动物保护区", lon: 125.85, lat: 8.4667, elevation: 15, kind: "delta" },
+  bbox: [125.65, 8.20, 126.05, 8.75],
+  viewScale: 1.2,
+  label: { lon: 125.65, lat: 8.10, rotation: 0 },
+  source: "阿古桑沼泽：棉兰老岛东北部阿古桑河流域中一片广袤的泛滥平原湿地，法定保护面积约4.09万公顷，1999年列入拉姆萨尔国际重要湿地名录；沼泽汇集阿古桑河流域多条支流后向北排入布图安湾，保存有菲律宾现存规模最大的沼泽林与泥炭沼泽森林，2018年获认定为东盟遗产公园（Ramsar/Wikipedia WebSearch 2026）",
+};
+
+const HUNDRED_ISLANDS_NATIONAL_PARK: TerrainEntry = {
+  id: "hundred-islands-national-park",
+  nameZh: "百岛国家公园",
+  nameEn: "Hundred Islands National Park",
+  category: "island",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "总督岛", lon: 119.90, lat: 16.20, elevation: 5, kind: "island" },
+  bbox: [119.83, 16.14, 119.98, 16.28],
+  label: { lon: 119.90, lat: 16.11, rotation: 0 },
+  source: "百岛国家公园：吕宋岛西北部林加延湾内一处岛礁群，退潮时共有124座、涨潮时123座石灰岩岛屿，散布面积约1844公顷；岛群基底为珊瑚礁构造、地表岩体距今约200万年，1940年设立为菲律宾首座国家公园（Wikipedia/nationalparks.org WebSearch 2026）",
+};
+
+const VERDE_ISLAND_PASSAGE: TerrainEntry = {
+  id: "verde-island-passage",
+  nameZh: "维德岛海峡",
+  nameEn: "Verde Island Passage",
+  category: "coast",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "维德岛", lon: 121.0667, lat: 13.5333, elevation: 5, kind: "island" },
+  bbox: [120.85, 13.35, 121.35, 13.75],
+  label: { lon: 121.05, lat: 13.28, rotation: 0 },
+  source: "维德岛海峡：巴丹加斯、民都洛、马林杜克与朗布伦四省之间一条狭窄海峡水道，被学界公认为全球海洋鱼类物种多样性“中心之中心”，已记录珊瑚物种逾400种；海峡内设有36处海洋保护区（巴丹加斯24处、东民都洛12处），2010年获国际海洋保护组织“使命蓝”认定为重要海洋生态热点（pemsea.org/calacademy.org WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12944,6 +13013,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   BANAUE_IFUGAO_RICE_TERRACES, CAMIGUIN_ISLAND, BATANES_ISLANDS,
   EL_NIDO_BACUIT_ARCHIPELAGO, TUBBATAHA_REEFS, CORON_CALAMIAN_ISLANDS,
   PUERTO_PRINCESA_UNDERGROUND_RIVER, PAGSANJAN_GORGE,
+  CAGAYAN_RIVER, LAKE_LANAO, AGUSAN_MARSH,
+  HUNDRED_ISLANDS_NATIONAL_PARK, VERDE_ISLAND_PASSAGE,
 ];
 
 /**
