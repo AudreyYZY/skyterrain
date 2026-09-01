@@ -47,7 +47,7 @@ export const REGIONS: Region[] = [
     name: "亚洲",
     nameEn: "Asia",
     center: { lon: 90.0, lat: 40.0, height: 14000000 },
-    terrainCount: 135,
+    terrainCount: 163,
     available: true,
   },
   {
@@ -55,7 +55,7 @@ export const REGIONS: Region[] = [
     name: "欧洲",
     nameEn: "Europe",
     center: { lon: 15.0, lat: 52.0, height: 6500000 },
-    terrainCount: 474,
+    terrainCount: 499,
     available: true,
   },
   {
@@ -156,6 +156,7 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   china: "eastern-asia",
   japan: "eastern-asia",
   thailand: "south-eastern-asia",
+  "south-korea": "eastern-asia",
   usa: "northern-america",
   canada: "northern-america",
   australia: "australia-and-new-zealand",
@@ -178,6 +179,7 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   austria: "western-europe",
   belgium: "western-europe",
   luxembourg: "western-europe",
+  poland: "eastern-europe",
 };
 
 export interface CountryMeta {
@@ -196,6 +198,7 @@ export const COUNTRIES: CountryMeta[] = [
   // 东亚
   { slug: "china", name: "中国", nameEn: "China", code: "CN" },
   { slug: "japan", name: "日本", nameEn: "Japan", code: "JP" },
+  { slug: "south-korea", name: "韩国", nameEn: "South Korea", code: "KR" },
   // 东南亚
   { slug: "thailand", name: "泰国", nameEn: "Thailand", code: "TH" },
   // 北美
@@ -216,6 +219,8 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "germany", name: "德国", nameEn: "Germany", code: "DE" },
   { slug: "belgium", name: "比利时", nameEn: "Belgium", code: "BE" },
   { slug: "luxembourg", name: "卢森堡", nameEn: "Luxembourg", code: "LU" },
+  // 东欧
+  { slug: "poland", name: "波兰", nameEn: "Poland", code: "PL" },
   { slug: "austria", name: "奥地利", nameEn: "Austria", code: "AT" },
   // 南欧
   { slug: "portugal", name: "葡萄牙", nameEn: "Portugal", code: "PT" },

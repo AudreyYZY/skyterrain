@@ -227,6 +227,18 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "th-northeast": { zh: "东北部（依善）", en: "Northeast (Isan)", order: 303 },
   "th-east": { zh: "东部", en: "Eastern Thailand", order: 304 },
   "th-south": { zh: "南部", en: "Southern Thailand", order: 305 },
+  // 韩国（首都圈→岭南→湖南→江原→济州）
+  "kr-capital": { zh: "首都圈", en: "Capital Area", order: 280 },
+  "kr-yeongnam": { zh: "岭南地区", en: "Yeongnam Region", order: 281 },
+  "kr-honam": { zh: "湖南地区", en: "Honam Region", order: 282 },
+  "kr-gangwon": { zh: "江原道", en: "Gangwon Province", order: 283 },
+  "kr-jeju": { zh: "济州岛", en: "Jeju Island", order: 284 },
+  // 波兰（马佐夫舍—小波兰—大波兰与西里西亚—波美拉尼亚—瓦尔米亚马祖里与波德拉谢）
+  "pl-mazovia": { zh: "马佐夫舍", en: "Mazovia", order: 260 },
+  "pl-malopolska": { zh: "小波兰", en: "Lesser Poland (Małopolska)", order: 261 },
+  "pl-wielkopolska-slask": { zh: "大波兰与西里西亚", en: "Greater Poland & Silesia", order: 262 },
+  "pl-pomorze": { zh: "波美拉尼亚", en: "Pomerania", order: 263 },
+  "pl-mazury-podlasie": { zh: "瓦尔米亚—马祖里与波德拉谢", en: "Warmia-Masuria & Podlasie", order: 264 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -267,6 +279,8 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "finland", nameZh: "芬兰", nameEn: "Finland" },
   { country: "luxembourg", nameZh: "卢森堡", nameEn: "Luxembourg" },
   { country: "thailand", nameZh: "泰国", nameEn: "Thailand" },
+  { country: "south-korea", nameZh: "韩国", nameEn: "South Korea" },
+  { country: "poland", nameZh: "波兰", nameEn: "Poland" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -2071,6 +2085,146 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "DMK", nameZh: "廊曼国际机场", nameEn: "Don Mueang International", lon: 100.6069, lat: 13.9126 },
     source: "呵叻市中心 14.9799,102.0977；本地那空叻差是玛机场目前无稳定的定期客运航班，实际多经陆路（火车/长途大巴）往返曼谷（约260公里）：公开资料",
   },
+  // ── 韩国 ──────────────────────────────────────────────
+  {
+    id: "seoul", nameZh: "首尔", nameEn: "Seoul", country: "south-korea", tier: "capital", zone: "kr-capital",
+    lon: 126.9780, lat: 37.5665,
+    airport: { iata: "ICN", nameZh: "仁川国际机场", nameEn: "Incheon International", lon: 126.4407, lat: 37.4602 },
+    source: "首尔市厅一带 37.5665,126.9780；ICN 机场：公开资料（国内航线主要用金浦机场 GMP，本表统一列国际枢纽 ICN）",
+  },
+  {
+    id: "busan", nameZh: "釜山", nameEn: "Busan", country: "south-korea", tier: "major", zone: "kr-yeongnam",
+    lon: 129.0756, lat: 35.1796,
+    airport: { iata: "PUS", nameZh: "金海国际机场", nameEn: "Gimhae International", lon: 128.9386, lat: 35.1795 },
+    source: "釜山站/南浦一带 35.1796,129.0756；PUS 机场：公开资料",
+  },
+  {
+    id: "jeju-city", nameZh: "济州市", nameEn: "Jeju City", country: "south-korea", tier: "major", zone: "kr-jeju",
+    lon: 126.5312, lat: 33.4996,
+    airport: { iata: "CJU", nameZh: "济州国际机场", nameEn: "Jeju International", lon: 126.4930, lat: 33.5113 },
+    source: "济州市中心 33.4996,126.5312；CJU 机场：公开资料",
+  },
+  {
+    id: "gyeongju", nameZh: "庆州", nameEn: "Gyeongju", country: "south-korea", tier: "major", zone: "kr-yeongnam",
+    lon: 129.2247, lat: 35.8562,
+    airport: { iata: "KPO", nameZh: "浦项庆州机场", nameEn: "Pohang Gyeongju Airport", lon: 129.4204, lat: 35.9878 },
+    source: "庆州历史区一带 35.8562,129.2247；本地无商业机场，最近机场为浦项庆州机场（距市区约35km）：公开资料",
+  },
+  {
+    id: "ulsan", nameZh: "蔚山", nameEn: "Ulsan", country: "south-korea", tier: "notable", zone: "kr-yeongnam",
+    lon: 129.3114, lat: 35.5384,
+    airport: { iata: "USN", nameZh: "蔚山机场", nameEn: "Ulsan Airport", lon: 129.3519, lat: 35.5934 },
+    source: "蔚山市中心 35.5384,129.3114；USN 机场：公开资料",
+  },
+  {
+    id: "yeosu", nameZh: "丽水", nameEn: "Yeosu", country: "south-korea", tier: "notable", zone: "kr-honam",
+    lon: 127.6622, lat: 34.7604,
+    airport: { iata: "RSU", nameZh: "丽水机场", nameEn: "Yeosu Airport", lon: 127.6169, lat: 34.8423 },
+    source: "丽水市中心 34.7604,127.6622；RSU 机场：公开资料",
+  },
+  {
+    id: "pohang", nameZh: "浦项", nameEn: "Pohang", country: "south-korea", tier: "notable", zone: "kr-yeongnam",
+    lon: 129.3435, lat: 36.0190,
+    airport: { iata: "KPO", nameZh: "浦项庆州机场", nameEn: "Pohang Gyeongju Airport", lon: 129.4204, lat: 35.9878 },
+    source: "浦项市中心 36.0190,129.3435；KPO 机场：公开资料",
+  },
+  {
+    id: "gangneung", nameZh: "江陵", nameEn: "Gangneung", country: "south-korea", tier: "notable", zone: "kr-gangwon",
+    lon: 128.8761, lat: 37.7519,
+    airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
+    source: "江陵市中心 37.7519,128.8761；本地无商业机场，最近机场为襄阳国际机场（距市区约40km，国内定期航班有限）：公开资料",
+  },
+  {
+    id: "sokcho", nameZh: "束草", nameEn: "Sokcho", country: "south-korea", tier: "notable", zone: "kr-gangwon",
+    lon: 128.5918, lat: 38.2070,
+    airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
+    source: "束草市中心 38.2070,128.5918；本地无商业机场，最近机场为襄阳国际机场（距市区约20km，国内定期航班有限）：公开资料",
+  },
+  {
+    id: "chuncheon", nameZh: "春川", nameEn: "Chuncheon", country: "south-korea", tier: "notable", zone: "kr-gangwon",
+    lon: 127.7298, lat: 37.8813,
+    airport: { iata: "WJU", nameZh: "原州机场", nameEn: "Wonju Airport", lon: 127.9600, lat: 37.4380 },
+    source: "春川市中心 37.8813,127.7298；本地无商业机场，最近机场为原州机场（距市区约65km）：公开资料",
+  },
+  {
+    id: "andong", nameZh: "安东", nameEn: "Andong", country: "south-korea", tier: "notable", zone: "kr-yeongnam",
+    lon: 128.7294, lat: 36.5684,
+    airport: { iata: "TAE", nameZh: "大邱国际机场", nameEn: "Daegu International", lon: 128.6589, lat: 35.8942 },
+    source: "安东市中心 36.5684,128.7294；本地小型机场现无定期客运航班，最近有定期航班的机场为大邱国际机场（距市区约90km）：公开资料",
+  },
+  {
+    id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam",
+    lon: 127.1480, lat: 35.8242,
+    airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8093, lat: 35.1264 },
+    source: "全州韩屋村一带 35.8242,127.1480；本地无商业机场，最近机场为光州机场（距市区约50km）：公开资料",
+  },
+  // ===== 波兰 =====
+  {
+    id: "warsaw", nameZh: "华沙", nameEn: "Warsaw", country: "poland", tier: "capital", zone: "pl-mazovia",
+    lon: 21.0122, lat: 52.2297,
+    airport: { iata: "WAW", nameZh: "华沙肖邦机场", nameEn: "Warsaw Chopin Airport", lon: 20.9671, lat: 52.1657 },
+    source: "华沙市中心 52.2297,21.0122；WAW 机场：公开资料",
+  },
+  {
+    id: "krakow", nameZh: "克拉科夫", nameEn: "Kraków", country: "poland", tier: "major", zone: "pl-malopolska",
+    lon: 19.9450, lat: 50.0647,
+    airport: { iata: "KRK", nameZh: "克拉科夫若望保禄二世机场", nameEn: "Kraków John Paul II Airport", lon: 19.7848, lat: 50.0777 },
+    source: "克拉科夫市中心 50.0647,19.9450；KRK 机场（距市区约11km）：公开资料",
+  },
+  {
+    id: "zakopane", nameZh: "扎科帕内", nameEn: "Zakopane", country: "poland", tier: "notable", zone: "pl-malopolska",
+    lon: 19.9496, lat: 49.2992,
+    airport: { iata: "KRK", nameZh: "克拉科夫若望保禄二世机场", nameEn: "Kraków John Paul II Airport", lon: 19.7848, lat: 50.0777 },
+    source: "扎科帕内市中心 49.2992,19.9496；本地无商业机场，最近机场为克拉科夫机场（距市区约100km）：公开资料",
+  },
+  {
+    id: "rzeszow", nameZh: "热舒夫", nameEn: "Rzeszów", country: "poland", tier: "notable", zone: "pl-malopolska",
+    lon: 21.9990, lat: 50.0413,
+    airport: { iata: "RZE", nameZh: "热舒夫—亚西翁卡机场", nameEn: "Rzeszów-Jasionka Airport", lon: 22.0189, lat: 50.1100 },
+    source: "热舒夫市中心 50.0413,21.9990；RZE 机场（距市区约10km）：公开资料",
+  },
+  {
+    id: "wroclaw", nameZh: "弗罗茨瓦夫", nameEn: "Wrocław", country: "poland", tier: "major", zone: "pl-wielkopolska-slask",
+    lon: 17.0385, lat: 51.1079,
+    airport: { iata: "WRO", nameZh: "弗罗茨瓦夫机场", nameEn: "Wrocław Airport", lon: 16.8858, lat: 51.1027 },
+    source: "弗罗茨瓦夫市中心 51.1079,17.0385；WRO 机场（距市区约10km）：公开资料",
+  },
+  {
+    id: "poznan", nameZh: "波兹南", nameEn: "Poznań", country: "poland", tier: "major", zone: "pl-wielkopolska-slask",
+    lon: 16.9252, lat: 52.4064,
+    airport: { iata: "POZ", nameZh: "波兹南—瓦维察机场", nameEn: "Poznań-Ławica Airport", lon: 16.8263, lat: 52.4210 },
+    source: "波兹南市中心 52.4064,16.9252；POZ 机场（距市区约6km）：公开资料",
+  },
+  {
+    id: "gdansk", nameZh: "格但斯克", nameEn: "Gdańsk", country: "poland", tier: "major", zone: "pl-pomorze",
+    lon: 18.6466, lat: 54.3520,
+    airport: { iata: "GDN", nameZh: "格但斯克莱赫瓦文萨机场", nameEn: "Gdańsk Lech Wałęsa Airport", lon: 18.4662, lat: 54.3776 },
+    source: "格但斯克市中心 54.3520,18.6466；GDN 机场（距市区约12km）：公开资料",
+  },
+  {
+    id: "szczecin", nameZh: "什切青", nameEn: "Szczecin", country: "poland", tier: "notable", zone: "pl-pomorze",
+    lon: 14.5528, lat: 53.4285,
+    airport: { iata: "SZZ", nameZh: "什切青—戈萊尼乌夫机场", nameEn: "Szczecin-Goleniów Airport", lon: 14.9022, lat: 53.5847 },
+    source: "什切青市中心 53.4285,14.5528；SZZ 机场（距市区约45km）：公开资料",
+  },
+  {
+    id: "torun", nameZh: "托伦", nameEn: "Toruń", country: "poland", tier: "notable", zone: "pl-pomorze",
+    lon: 18.5984, lat: 53.0138,
+    airport: { iata: "BZG", nameZh: "比得哥什机场", nameEn: "Bydgoszcz Airport", lon: 17.9776, lat: 53.0968 },
+    source: "托伦市中心 53.0138,18.5984；本地无商业机场，最近机场为比得哥什机场（距市区约50km）：公开资料",
+  },
+  {
+    id: "olsztyn", nameZh: "奥尔什丁", nameEn: "Olsztyn", country: "poland", tier: "notable", zone: "pl-mazury-podlasie",
+    lon: 20.4801, lat: 53.7784,
+    airport: { iata: "SZY", nameZh: "奥尔什丁—马祖里机场", nameEn: "Olsztyn-Mazury Airport", lon: 20.9377, lat: 53.4819 },
+    source: "奥尔什丁市中心 53.7784,20.4801；SZY 机场（距市区约58km）：公开资料",
+  },
+  {
+    id: "bialystok", nameZh: "比亚韦斯托克", nameEn: "Białystok", country: "poland", tier: "notable", zone: "pl-mazury-podlasie",
+    lon: 23.1688, lat: 53.1325,
+    airport: { iata: "WAW", nameZh: "华沙肖邦机场", nameEn: "Warsaw Chopin Airport", lon: 20.9671, lat: 52.1657 },
+    source: "比亚韦斯托克市中心 53.1325,23.1688；本地机场客运航班有限，最近有稳定定期航班的机场为华沙肖邦机场（距市区约180km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -2080,6 +2234,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   china: "asia",
   japan: "asia",
   thailand: "asia",
+  "south-korea": "asia",
   australia: "oceania",
   "new-zealand": "oceania",
   usa: "north-america",
@@ -2102,6 +2257,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   sweden: "europe",
   finland: "europe",
   luxembourg: "europe",
+  poland: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {

@@ -1,0 +1,16 @@
+{
+  "id": "gmp-cju",
+  "name": "首尔金浦 — 济州",
+  "nameEn": "Seoul Gimpo — Jeju",
+  "description": "湖南平原",
+  "descriptionEn": "Honam Plain",
+  "depCountry": "south-korea",
+  "arrCountry": "south-korea",
+  "flight": { "airline": "大韩航空", "airlineEn": "Korean Air", "flightNo": "KE1017", "aircraft": "Airbus A220-300", "depIata": "GMP", "arrIata": "CJU", "durationMin": 75 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "gmp", "name": "首尔金浦", "nameEn": "Seoul Gimpo", "lat": 37.5583, "lon": 126.7958, "airport": true },
+    { "kind": "terrain", "terrainId": "honam-plain" },
+    { "kind": "city", "id": "cju", "name": "济州", "nameEn": "Jeju", "lat": 33.5113, "lon": 126.4930, "airport": true }
+  ]
+}

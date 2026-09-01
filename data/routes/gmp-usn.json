@@ -1,0 +1,16 @@
+{
+  "id": "gmp-usn",
+  "name": "首尔金浦 — 蔚山",
+  "nameEn": "Seoul Gimpo — Ulsan",
+  "description": "俗离山",
+  "descriptionEn": "Songnisan",
+  "depCountry": "south-korea",
+  "arrCountry": "south-korea",
+  "flight": { "airline": "大韩航空", "airlineEn": "Korean Air", "flightNo": "KE1843", "aircraft": "Boeing 737-800", "depIata": "GMP", "arrIata": "USN", "durationMin": 60 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "gmp", "name": "首尔金浦", "nameEn": "Seoul Gimpo", "lat": 37.5583, "lon": 126.7958, "airport": true },
+    { "kind": "terrain", "terrainId": "songnisan" },
+    { "kind": "city", "id": "usn", "name": "蔚山", "nameEn": "Ulsan", "lat": 35.5934, "lon": 129.3519, "airport": true }
+  ]
+}

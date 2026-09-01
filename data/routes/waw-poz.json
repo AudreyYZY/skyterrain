@@ -1,0 +1,16 @@
+{
+  "id": "waw-poz",
+  "name": "华沙 — 波兹南",
+  "nameEn": "Warsaw — Poznań",
+  "description": "大波兰低地",
+  "descriptionEn": "Great Polish Lowland",
+  "depCountry": "poland",
+  "arrCountry": "poland",
+  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3945", "aircraft": "Embraer 175", "depIata": "WAW", "arrIata": "POZ", "durationMin": 39 },
+  "cruiseHeight": 5500,
+  "waypoints": [
+    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
+    { "kind": "terrain", "terrainId": "great-polish-lowland" },
+    { "kind": "city", "id": "poz", "name": "波兹南", "nameEn": "Poznań", "lat": 52.4210, "lon": 16.8263, "airport": true }
+  ]
+}
