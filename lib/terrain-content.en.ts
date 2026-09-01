@@ -12030,4 +12030,74 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "In 1922 the Central Asiatic Expeditions, led by Roy Chapman Andrews of the American Museum of Natural History, made the first discovery of dinosaur egg fossils here, establishing Bayanzag as a landmark site in international paleontology.",
   },
+  "gurvan-saikhan": {
+    seeing:
+      "The Gurvan Saikhan Mountains (\"Three Beauties\") comprise three parallel ranges — Baruun, Dund and Zuun Saikhany Nuruu; their highest peak, in the Dund (Middle) range, reaches 2,825 m, forming the core of Gobi Gurvansaikhan National Park, Mongolia's largest.",
+    formation:
+      "The three parallel ranges of the Gurvan Saikhan are a product of fault-block uplift within the Gobi desert region; long-term weathering and erosion have left the range relatively gentle in outline, standing in sharp elevation contrast against the open Gobi desert around it.",
+    observation:
+      "From the air, the Gurvan Saikhan shows three roughly parallel, east-west-trending ridgelines with narrow valleys between them, forming a clear topographic boundary against the desert plain at their base.",
+    distinguish:
+      "The Gurvan Saikhan, Khongoryn Els and Bayanzag all lie within Gobi Gurvansaikhan National Park, but the Gurvan Saikhan is a mountainous landform of three parallel ranges, while the other two are, respectively, an aeolian dune field and an erosional cliff.",
+    concept:
+      "As a montane ecological island within the Gobi desert, the Gurvan Saikhan provides habitat for argali, ibex, snow leopard and lammergeier — species adapted to arid mountain environments — making it an important sample for studying biodiversity in desert mountain ecosystems.",
+    history:
+      "The Gurvan Saikhan region has historically served as traditional summer pastureland for nomadic peoples of southern Mongolia; it is today Mongolia's largest national park and a core destination for Gobi tourism.",
+  },
+  "yolyn-am": {
+    seeing:
+      "Yolyn Am is a narrow, deep gorge within the Gurvan Saikhan Mountains, about 8 km long, that holds a semi-permanent ice field year-round, in some years persisting into early summer before melting.",
+    formation:
+      "Yolyn Am formed as surface water carved deeply along structural fractures in the Gurvan Saikhan massif over a long period; the towering cliffs on either side shade the gorge floor from sunlight year-round, preventing the snow and ice there from fully melting — a rare ice-gorge landscape within the Gobi desert.",
+    observation:
+      "From the air, Yolyn Am appears as a narrow, deep fissure cut into the mountain; in parts of the year the ice on its floor reflects a distinct band of white light, contrasting sharply with the exposed rock of the surrounding massif.",
+    distinguish:
+      "Both Yolyn Am and the Orkhon Waterfall are gorge landforms in Mongolia, but Yolyn Am lies within the desert mountains of the Gobi and is known for its rare year-round ice, while the Orkhon Waterfall is a river-fall gorge formed in the Khangai mountains.",
+    concept:
+      "Yolyn Am's retention of year-round ice deep within the arid Gobi desert is a classic case for studying how terrain shading can locally sustain a microclimate difference in an extremely arid region.",
+    history:
+      "The gorge takes its name from the lammergeier (\"yol\" in Mongolian) that inhabits it, and is also known as the Valley of the Eagles or Ice Valley; it is one of the signature landscapes of Gobi Gurvansaikhan National Park and has long been a habitat shared by local herders and wildlife.",
+  },
+  "orkhon-valley": {
+    seeing:
+      "The Orkhon Valley is a belt of pastureland and archaeological sites covering about 122,000 ha along both banks of the Orkhon River in Övörkhangai Province, including the 13th–14th century Mongol Empire capital of Karakorum.",
+    formation:
+      "The Orkhon River rises in the Khangai Mountains; long-term erosion and deposition by the river have shaped a broad, flat valley landform, with the fertile alluvial floodplain providing ideal natural conditions for sustained nomadic grazing.",
+    observation:
+      "From the air, the Orkhon Valley appears as broad green pastureland extending along both sides of the winding river, with the building complexes of Karakorum and Erdene Zuu Monastery dotted within it, standing in sharp contrast to the mountainous terrain of the Khangai foothills around it.",
+    distinguish:
+      "Both the Orkhon Valley and the Orkhon Waterfall lie within the Orkhon River basin, but the Orkhon Valley is the broad pastureland and historical-site belt of the river's middle course, while the Orkhon Waterfall is a plunging gorge formed where the upper river crosses ancient volcanic rock.",
+    concept:
+      "The Orkhon Valley is a classic sample for studying how nomadic civilizations built centres of political power on river-valley water and pastureland resources, having historically supported the capitals of three successive empires — Turkic, Uyghur and Mongol.",
+    history:
+      "The Orkhon Valley was successively the political centre of the Turkic Khaganate, the Uyghur Khaganate and the Mongol Empire; Karakorum was the Mongol Empire capital founded by Ögedei Khan, son of Genghis Khan, while Erdene Zuu, built in the 16th century, was Mongolia's first Tibetan Buddhist monastery. The valley was inscribed on the UNESCO World Heritage List in 2004 as the \"Orkhon Valley Cultural Landscape.\"",
+  },
+  "orkhon-waterfall": {
+    seeing:
+      "The Orkhon Waterfall (also called Ulaan Tsutgalan) formed where the Orkhon River crosses a layer of ancient volcanic rock at the southern foot of the Khangai; reported heights range from 16 to 27 m across sources, and it is Mongolia's highest-volume waterfall.",
+    formation:
+      "About 20,000 years ago, a volcanic eruption combined with seismic activity to form a layer of hard basalt at this location; the Orkhon River has since eroded the relatively softer surrounding rock, leaving a step at the hard basalt layer over which the water falls.",
+    observation:
+      "From the air, the Orkhon Waterfall drops abruptly from the open river-valley grassland into a gorge about 22 m deep, mist rising at the base of the fall, forming a sharp topographic contrast with the gentle, open river course upstream.",
+    distinguish:
+      "Both the Orkhon Waterfall and the Orkhon Valley lie within the Orkhon River basin, but the Orkhon Waterfall is a plunging gorge formed where the upper river crosses ancient volcanic rock, while the Orkhon Valley is the broad, flat historical pastureland of the river's middle course.",
+    concept:
+      "The Orkhon Waterfall is one of the few waterfalls in Mongolia formed through the combined action of volcanic rock layers and river erosion, making it a classic case for studying how basalt strata affect a river's headward erosion process.",
+    history:
+      "The area around the Orkhon Waterfall has historically been a traditional nomadic route for peoples at the southern foot of the Khangai, and is today an important natural landmark within the Orkhon Valley Cultural Landscape.",
+  },
+  "dariganga-volcanic-field": {
+    seeing:
+      "The Dariganga Volcanic Field is a Quaternary volcanic field in Sükhbaatar Province, southeastern Mongolia, scattered with over 200 scoria cones and extensive lava flows across an area of about 14,000 km²; its highest point, Shiliin Bogd, reaches 1,778 m.",
+    formation:
+      "The Dariganga field formed through repeated basaltic eruptions since the Quaternary; each of its more than 200 scoria cones is a small, independent vent, and the basalt lava they erupted has blanketed the surrounding grassland surface.",
+    observation:
+      "From the air, the Dariganga field appears as a scattering of cone-shaped scoria hills across broad open grassland; Shiliin Bogd's crater, about 2 km in diameter and over 300 m deep, is clearly visible.",
+    distinguish:
+      "Both the Dariganga Volcanic Field and Khorgo Volcano are Quaternary volcanic landforms in Mongolia, but the Dariganga field consists of more than 200 independent scoria cones spread over a wide area, while Khorgo is a single volcanic cone known for damming a river to form a lake.",
+    concept:
+      "The dense scattering of over 200 scoria cones across a single stretch of grassland makes the Dariganga field an important sample for studying the eruption pattern and distribution of intraplate basaltic volcanic fields within a continental interior.",
+    history:
+      "The volcanic field's area has historically been the traditional homeland of the Dariganga Mongol subgroup; Altan Ovoo (Golden Ovoo) within it has been venerated as a local sacred mountain since 1913 and was elevated to a state-worshipped mountain in 2004, while Shiliin Bogd has traditionally been a pilgrimage site for Mongolian men.",
+  },
 };

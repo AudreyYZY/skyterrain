@@ -12211,6 +12211,77 @@ const BAYANZAG: TerrainEntry = {
   source: "巴彦扎格：南戈壁省一处红色砂岩侵蚀崖壁，因岩石在夕照下呈火焰般的橙红色而得名“燃烧的悬崖”；1922年美国自然历史博物馆罗伊·查普曼·安德鲁斯考察队在此首次发现恐龙蛋化石，是戈壁古尔班赛罕国家公园的组成部分（Wikipedia/topasiatour.com WebSearch 2026）",
 };
 
+const GURVAN_SAIKHAN: TerrainEntry = {
+  id: "gurvan-saikhan",
+  nameZh: "古尔班赛罕山（三美山）",
+  nameEn: "Gurvan Saikhan Mountains",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "敦德赛罕山", lon: 103.95, lat: 43.58, elevation: 2825, kind: "peak" },
+  bbox: [103.3, 43.35, 104.35, 43.85],
+  axis: [[103.3, 43.62], [104.35, 43.55]],
+  label: { lon: 103.8, lat: 43.90, rotation: 0 },
+  source: "古尔班赛罕山（意为“三美”）：由西赛罕、中赛罕、东赛罕三条平行山脉组成，最高峰位于中赛罕山脉，海拔2825米；山系是戈壁古尔班赛罕国家公园（蒙古面积最大的国家公园）的主体，为岩羊、北山羊、雪豹与胡兀鹫提供栖息地（Wikipedia/Wikidata WebSearch 2026）",
+};
+
+const YOLYN_AM: TerrainEntry = {
+  id: "yolyn-am",
+  nameZh: "约林音峡谷（鹰谷）",
+  nameEn: "Yolyn Am",
+  category: "gorge",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "约林音峡谷冰川", lon: 104.02, lat: 43.68, elevation: 2500, kind: "gorge" },
+  bbox: [103.95, 43.63, 104.12, 43.73],
+  label: { lon: 104.02, lat: 43.75, rotation: 0 },
+  source: "约林音峡谷：古尔班赛罕山中一条狭窄的深切峡谷，长约8公里，谷内常年积存半永久性冰层、部分年份延续至初夏方才消融；因谷内栖息胡兀鹫（蒙古语称“约尔”）而得名，又称“鹰谷”或“冰谷”，是戈壁古尔班赛罕国家公园的核心景观之一（Wikipedia WebSearch 2026）",
+};
+
+const ORKHON_VALLEY: TerrainEntry = {
+  id: "orkhon-valley",
+  nameZh: "鄂尔浑河谷",
+  nameEn: "Orkhon Valley",
+  category: "valley",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "哈拉和林（喀喇昆仑城遗址）", lon: 102.845, lat: 47.198, elevation: 1477, kind: "city" },
+  bbox: [102.3, 46.85, 103.3, 47.55],
+  axis: [[102.4, 46.9], [103.1, 47.5]],
+  viewScale: 1.3,
+  label: { lon: 102.6, lat: 46.75, rotation: 0 },
+  pois: [{ name: "额尔德尼召", lon: 102.842, lat: 47.204, note: "16世纪蒙古首座藏传佛教寺院，紧邻哈拉和林遗址" }],
+  source: "鄂尔浑河谷：中蒙古省境内沿鄂尔浑河两岸约12.2万公顷的牧场与考古遗迹带，包含13至14世纪蒙古帝国都城哈拉和林、回鹘汗国都城哈剌巴剌哈逊、以及额尔德尼召寺遗址，2004年以“鄂尔浑河谷文化景观”列入UNESCO世界遗产名录，游牧放牧传统延续至今（UNESCO WebSearch 2026）",
+};
+
+const ORKHON_WATERFALL: TerrainEntry = {
+  id: "orkhon-waterfall",
+  nameZh: "鄂尔浑瀑布（乌兰楚特噶朗瀑布）",
+  nameEn: "Orkhon Waterfall (Ulaan Tsutgalan)",
+  category: "gorge",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "乌兰楚特噶朗瀑布", lon: 101.99, lat: 46.79, elevation: 1900, kind: "gorge" },
+  bbox: [101.90, 46.73, 102.08, 46.85],
+  label: { lon: 101.99, lat: 46.87, rotation: 0 },
+  source: "鄂尔浑瀑布（又称乌兰楚特噶朗瀑布）：鄂尔浑河流经杭爱山南麓一段古火山岩层时形成的瀑布，落差各口径记载在16至27米之间（较常引用数据为高约20至24米、宽约10米），下游峡谷深约22米，是蒙古境内水量最大的瀑布，约2万年前由火山活动与地震共同作用形成（Wikipedia/discovermongolia.mn WebSearch 2026）",
+};
+
+const DARIGANGA_VOLCANIC_FIELD: TerrainEntry = {
+  id: "dariganga-volcanic-field",
+  nameZh: "达里干嘎火山群",
+  nameEn: "Dariganga Volcanic Field",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "希林博格德火山", lon: 114.80, lat: 45.55, elevation: 1778, kind: "peak" },
+  bbox: [113.3, 44.9, 115.3, 46.0],
+  viewScale: 1.4,
+  label: { lon: 114.3, lat: 45.2, rotation: 0 },
+  pois: [{ name: "阿拉坦敖包（金敖包）", lon: 113.90, lat: 45.30, note: "达里干嘎地区最受尊崇的圣山死火山，海拔1354米，1913年起被奉为神山" }],
+  source: "达里干嘎火山群：蒙古东南部苏赫巴托尔省一处第四纪火山场，散布逾200座渣锥与大面积熔岩流，覆盖面积约1.4万平方公里；最高点希林博格德火山海拔1778米，火山口直径约2公里、深逾300米，是当地蒙古人重要的传统朝拜山（Global Volcanism Program/Wikipedia WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12530,6 +12601,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MONGOLIA_GOBI, GREAT_LAKES_DEPRESSION,
   UVS_LAKE, KHYARGAS_LAKE, KHAR_US_LAKE, KHOVSGOL_LAKE,
   TERKHIIN_TSAGAAN_LAKE, KHORGO_VOLCANO, KHONGORYN_ELS, BAYANZAG,
+  GURVAN_SAIKHAN, YOLYN_AM, ORKHON_VALLEY, ORKHON_WATERFALL,
+  DARIGANGA_VOLCANIC_FIELD,
 ];
 
 /**
