@@ -5882,4 +5882,173 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Hot and humid year-round — plan beach and outdoor activities to avoid the midday heat; rainfall is heavier from November to January, so check the weather before visiting.",
   },
+  // ============ Indonesia ============
+  "indonesia-overview": {
+    identity:
+      "Indonesia is a Southeast Asian archipelagic nation of about 17,000 islands, covering roughly 1.91 million km² with a population of more than 270 million — the world's fourth most populous country; its capital is Jakarta, the official language is Indonesian (Bahasa Indonesia), and its currency is the Indonesian rupiah (IDR).",
+    layout:
+      "The country divides roughly into five main islands and their surrounding archipelagos: Java (Jakarta, Yogyakarta, Surabaya, Bandung — the population and economic core), Sumatra (Medan — volcanoes and rainforest), Kalimantan (Balikpapan — Indonesia's portion of Borneo), Sulawesi (Makassar, Manado — religiously diverse coastlines and coral reefs) and the Bali–Nusa Tenggara islands (Denpasar, Labuan Bajo — volcanoes, rice terraces and island resorts).",
+    gettingAround:
+      "Domestic flights are the primary way to travel between islands, with Garuda Indonesia, Lion Air, Batik Air and other carriers covering all major cities; Java has a reasonably developed rail network, and inter-island ferries also operate. The country spans three time zones (western, central and eastern). The climate is tropical rainforest and monsoon, hot and humid year-round, with a wet season from October to April and a dry season from May to September, varying somewhat by region. Visa policy varies by nationality, with visa-on-arrival or visa-free entry available to many — check Indonesia's immigration authority for current rules.",
+    culture:
+      "Indonesia has the world's largest Muslim population, and most regions follow halal dietary practice with relatively modest public dress; shoes come off before entering a mosque, and women are generally expected to cover their hair. During Ramadan, restaurant hours in some areas may shift. Bali is predominantly Hindu — temple visits require a sarong and sash, and offerings placed on the ground (canang sari) should never be stepped on. North Sulawesi and Flores, by contrast, have Christian-majority populations with different dietary norms. Eating and passing items with the right hand is considered more polite; tipping isn't expected, though a service charge is often already included in the bill.",
+    seeAndDo:
+      "Java's Borobudur and Prambanan temples and active volcanoes such as Bromo and Merapi; Bali's rice terraces, temples and beaches; Sumatra's Lake Toba and rainforest; Komodo National Park and Flores' volcanic crater lakes; Sulawesi's coral reef diving and Tana Toraja highland culture; Borneo's orangutan rainforest.",
+    whenAndTips:
+      "The dry season (May–September) is generally the best time to travel, with volcano hikes and island activities less affected by weather; the wet season (October–April) brings heavier rain in some areas and can affect mountain roads. Build in generous transit time for inter-island travel, since flights to remote islands run less frequently and are more prone to weather cancellations. Customs enforcement on meat, certain medications and drugs is strict, and drug offences carry extremely severe penalties — know and follow local law.",
+  },
+  jakarta: {
+    identity:
+      "Jakarta is Indonesia's capital, with a metropolitan population of more than 30 million; it is the country's political, economic, financial and transport hub and one of the largest cities in Southeast Asia, on the northwest coast of Java.",
+    layout:
+      "The old town of Batavia (Kota Tua) preserves Dutch colonial architecture, with Merdeka Square and its surroundings forming the political core; the central business district runs along Jalan Sudirman-Thamrin, dense with modern skyscrapers and malls, while the city has expanded heavily south and east into the wider Greater Jakarta metropolitan area.",
+    gettingAround:
+      "Soekarno-Hatta International Airport is about 20 km from the city centre, roughly an hour by airport express to downtown; the city has MRT, LRT and the Transjakarta bus rapid transit system, but ground traffic is severely congested, so build in generous time during peak hours; ride-hailing apps (Gojek, Grab) are widely used citywide.",
+    culture:
+      "The official language is Indonesian. Jakarta is a multi-ethnic, multi-religious metropolis, Muslim-majority with significant Chinese and Betawi communities among others. Shoes come off before entering a mosque and women should carry a headscarf; dress relatively modestly in public, and bring a light layer for indoor air conditioning, which runs strong. During Ramadan, restaurant hours in some areas may shift; tipping isn't expected, though a service charge is often already included in the bill.",
+    seeAndDo:
+      "Merdeka Square and the National Monument; Kota Tua's Fatahillah Square and Dutch colonial buildings; Istiqlal Mosque (Southeast Asia's largest mosque); a day trip to the Thousand Islands; Taman Mini Indonesia Indah cultural park.",
+    whenAndTips:
+      "The dry season (May–September) is relatively drier; the wet season (October–April) often brings heavy afternoon downpours and localised flooding. Traffic congestion is the main constraint on itinerary planning — avoid morning and evening rush hours and favour routes near the metro lines.",
+  },
+  yogyakarta: {
+    identity:
+      "Yogyakarta is one of Indonesia's special administrative regions, hereditarily ruled by a sultan, with a population of about 400,000; it is the centre of Javanese culture, art and traditional craft, and the gateway to Borobudur, Prambanan and Mount Merapi.",
+    layout:
+      "The city is laid out around the Sultan's Palace (Kraton) following traditional Javanese cosmology, with a north-south axis linking Mount Merapi to the Indian Ocean; Jalan Malioboro is the main commercial street, Borobudur lies about 40 km to the west, and Prambanan about 17 km to the east.",
+    gettingAround:
+      "Yogyakarta International Airport (YIA) opened in 2019, about 45 km from the city centre with a direct airport rail link; becak (pedicabs), motorbike taxis and ride-hailing apps are the main ways to get around town, and the train station connects to Surabaya, Jakarta and other major cities on Java.",
+    culture:
+      "The official language is Indonesian, with Javanese spoken locally. Yogyakarta is one of the birthplaces of Javanese court culture and batik craft; dress appropriately when visiting religious sites like Borobudur and Prambanan, and a sarong is required in some areas. As a special region retaining a hereditary sultanate, locals place notable weight on traditional etiquette. Tipping isn't expected.",
+    seeAndDo:
+      "A sunrise tour of the Borobudur Buddhist site; the Prambanan Hindu temple complex; the Sultan's Palace (Kraton) and Water Castle ruins; a jeep adventure on Mount Merapi; shopping and street food along Jalan Malioboro.",
+    whenAndTips:
+      "The dry season (May–September) is best for climbing Mount Merapi and the Borobudur sunrise tour; the wet season (October–April) can affect some outdoor plans. The Borobudur sunrise tour requires a pre-dawn start — book tickets and a guide in advance.",
+  },
+  denpasar: {
+    identity:
+      "Denpasar is the capital of Bali province, with a population of about 900,000; it is Bali's administrative and transport hub, and most visitors use it as a starting point for Kuta, Seminyak, Ubud and other parts of the island.",
+    layout:
+      "The city itself is largely administrative and commercial; the beach resort areas of Kuta and Seminyak lie south of Denpasar, Ubud's rice terraces and art village are about an hour north, and temple and clifftop sites such as Tirta Empul and Uluwatu lie to the east.",
+    gettingAround:
+      "Ngurah Rai International Airport (DPS) is about 13 km from central Denpasar and is Bali's only commercial airport; getting around the island relies mainly on ride-hailing apps, hired drivers or motorbikes, with limited public transport and cross-island journeys often slowed by traffic.",
+    culture:
+      "Bali is one of the few Hindu-majority regions in Indonesia; a sarong and sash are required for temple visits, and offerings placed on the ground (canang sari) should never be stepped on. Everyday dress is relatively relaxed, but religious sites still call for appropriate attire. A service charge is often already included in restaurant bills, and additional tipping isn't required.",
+    seeAndDo:
+      "Tirta Empul (Holy Spring Temple); Ubud's rice terraces and art village; sunset at Uluwatu Temple on its clifftop; Seminyak and Kuta beaches; the Bali Museum for local Hindu culture.",
+    whenAndTips:
+      "The dry season (April–October) is best for beach and outdoor activities; the wet season (November–March) often brings afternoon showers. Bali's Hindu New Year (Nyepi, the Day of Silence) in March shuts the entire island down for a day, including the airport — check the exact date before planning travel.",
+  },
+  surabaya: {
+    identity:
+      "Surabaya is Indonesia's second-largest city, with a population of about 2.9 million; it is the capital of East Java province and a major port city with an important industrial and trade role, as well as one of the gateways to Mount Bromo.",
+    layout:
+      "The old town preserves historic Dutch colonial and Arab/Chinese quarter streetscapes, and the city sits on the Madura Strait as a key eastern Java port hub; the Bromo Tengger Semeru National Park lies about three hours south of the city.",
+    gettingAround:
+      "Juanda International Airport (SUB) is about 20 km from the city centre; Surabaya is the eastern rail hub of Java, with trains to Yogyakarta, Jakarta and other cities; taxis and ride-hailing apps are the main way to get around town.",
+    culture:
+      "The official language is Indonesian, with a direct-spoken local dialect of Javanese common in Surabaya. The city is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; dress relatively modestly in public. Tipping isn't expected.",
+    seeAndDo:
+      "The Suro and Boyo (shark and crocodile) statue, the city's namesake landmark; the old Arab quarter and Red Bridge; the Surabaya Heroes Monument; the historic Kya-Kya Chinatown district; a base for a sunrise trip to Mount Bromo (about 3–4 hours by road).",
+    whenAndTips:
+      "Mount Bromo sunrise tours typically depart around 2–3 a.m. — arrange accommodation and a guide in advance; the dry season (May–September) offers clearer visibility and is the best time to view the Bromo sunrise.",
+  },
+  bandung: {
+    identity:
+      "Bandung is the capital of West Java province, with a population of about 2.5 million, sitting at about 768 m elevation with a cool climate; it was a famous Dutch-era hill-station resort town and is today a centre for Indonesian fashion, creative industry and technical education.",
+    layout:
+      "The old town centre preserves substantial Dutch-era Art Deco architecture, with Jalan Asia Afrika, home to the Asian-African Conference Museum, forming the historic core; the city is ringed by volcanoes and tea plantations, with Mount Tangkuban Perahu to the north and Mount Kawah Putih to the south being popular day trips.",
+    gettingAround:
+      "Husein Sastranegara Airport (BDO) is about 4 km from the city centre and handles mostly domestic routes; a toll road and rail line connect Bandung to Jakarta, about 2.5–3 hours by road; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town.",
+    culture:
+      "The official language is Indonesian, with Sundanese spoken locally. Bandung hosted the 1955 Bandung Conference, commemorated at the Asian-African Conference Museum; the city's cool climate lends itself to relatively casual dress, and Sundanese cuisine is a local specialty. Tipping isn't expected.",
+    seeAndDo:
+      "The Asian-African Conference Museum; a hike around the Tangkuban Perahu volcanic crater; the sulphur lake at Kawah Putih; the Art Deco district around the Bandung Institute of Technology; nearby tea plantations and hot springs.",
+    whenAndTips:
+      "Bandung's climate is cool year-round, making it a popular escape from coastal heat; the dry season (May–September) is best for volcano hikes, and the Jakarta–Bandung toll road can be heavily congested on weekends and holidays.",
+  },
+  medan: {
+    identity:
+      "Medan is Sumatra's largest city, with a population of about 2.5 million; it is the capital of North Sumatra province and the island's leading economic and trade centre, and a gateway to Lake Toba and the Bukit Lawang orangutan sanctuary.",
+    layout:
+      "The old town centre preserves Dutch colonial buildings and the Sultanate of Deli's Maimun Palace, with a diverse population spanning Chinese, Malay, Batak and Indian communities among others; Lake Toba is about 4–5 hours south by road, and Bukit Lawang about 3 hours west.",
+    gettingAround:
+      "Kualanamu International Airport (KNO) is about 39 km from the city centre with a direct airport rail link; taxis and ride-hailing apps are the main way to get around town, and reaching Lake Toba or Bukit Lawang typically requires a hired car or long-distance bus.",
+    culture:
+      "The official language is Indonesian, and Medan's population and faiths are notably diverse — some areas are predominantly halal, while Chinese-majority districts offer non-halal dining as well; shoes come off before entering a mosque and women should carry a headscarf. Medan is known for its fusion of culinary traditions; tipping isn't expected.",
+    seeAndDo:
+      "Maimun Palace (the Sultanate of Deli's residence); the Al Mashun Grand Mosque; the old colonial architecture district; using Medan as a base to circle Lake Toba (Samosir Island) or spot wild orangutans at Bukit Lawang.",
+    whenAndTips:
+      "Allow at least 2–3 days for a Lake Toba or Bukit Lawang trip; road conditions are generally better in the dry season (roughly May–September), while mountain roads can be affected by rain in the wet season.",
+  },
+  makassar: {
+    identity:
+      "Makassar is the largest city on Sulawesi, with a population of about 1.5 million; it is the capital of South Sulawesi province and the island's leading port and trading centre, and the gateway to the Tana Toraja highlands.",
+    layout:
+      "The city runs along the Makassar Strait; the old town around Fort Rotterdam preserves Dutch and Portuguese-era colonial buildings, and Losari Beach promenade is a popular spot for evening sunsets; Tana Toraja lies about 8–9 hours north by road.",
+    gettingAround:
+      "Sultan Hasanuddin International Airport (UPG) is about 21 km from the city centre and is Sulawesi's main aviation hub; taxis, ride-hailing apps and angkot minibuses are the main ways to get around town, and reaching Tana Toraja usually means a long-distance bus or hired car.",
+    culture:
+      "The official language is Indonesian, with Makassarese and Buginese spoken locally. Makassar is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; the local Bugis people have a long historical tradition of traditional wooden shipbuilding (the pinisi schooner). Tipping isn't expected.",
+    seeAndDo:
+      "Fort Rotterdam (a Dutch-era colonial fortress); sunset along Losari Beach promenade; the Islamic tomb complex at Barombong; using Makassar as a base to visit Tana Toraja's traditional boat-shaped houses and funeral ceremony culture.",
+    whenAndTips:
+      "Allow at least two days for a Tana Toraja trip, given the long mountain drive; the dry season (roughly May–September) offers better road conditions. If the opportunity arises to observe a traditional Torajan funeral ceremony, learn local etiquette in advance and be respectful.",
+  },
+  "labuan-bajo": {
+    identity:
+      "Labuan Bajo is a small port town at the western tip of Flores, with a population of about 30,000; it is the core gateway for exploring Komodo National Park and the surrounding islands, and has rapidly grown into an international tourism town in recent years thanks to diving and island-hopping speedboat trips.",
+    layout:
+      "The town sits along a harbour, its main street lined with hotels, dive shops and restaurants; visiting Komodo National Park requires a boat from the harbour, whether as a single-day trip or a multi-day island-hopping cruise.",
+    gettingAround:
+      "Komodo Airport (LBJ) is about 2 km from the town centre and is western Flores' main air gateway; most of the town is walkable, and visiting Komodo National Park requires booking a boat through the harbour.",
+    culture:
+      "The official language is Indonesian. Flores has historically been shaped by Portuguese and Dutch Catholic missionary activity and is one of the few Catholic-majority regions in Indonesia, differing from the country's overall Muslim-majority makeup, which also means a broader range of dining options here. Bring sunscreen and motion-sickness medication for liveaboard island-hopping trips.",
+    seeAndDo:
+      "Komodo National Park (Komodo dragon spotting); the Padar Island viewpoint overlooking the archipelago; snorkelling at Pink Beach; a sunset island-hopping trip to Kanawa Island; nearby coral reef dive sites.",
+    whenAndTips:
+      "The dry season (April–October) brings calmer seas and is the best time for island-hopping and diving; the wet season (November–March) occasionally brings strong winds that can affect boat trips — confirm boat arrangements in advance.",
+  },
+  balikpapan: {
+    identity:
+      "Balikpapan is East Kalimantan's oil-industry city, with a population of about 700,000; it is one of Indonesia's most important economic centres on Borneo and the main air gateway to Nusantara, the country's new capital under construction.",
+    layout:
+      "The city runs along the Makassar Strait, its centre dominated by modern commercial districts and petroleum industry facilities; the Nusantara new-capital construction site lies about 60–70 km north of Balikpapan, the site of Indonesia's major ongoing capital-relocation project.",
+    gettingAround:
+      "Sultan Aji Muhammad Sulaiman Airport (BPN) is about 11 km from the city centre; taxis and ride-hailing apps are the main way to get around town, and reaching the Nusantara site or the Borneo interior generally requires a hired car.",
+    culture:
+      "The official language is Indonesian. Balikpapan is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; as an oil-industry city, the pace of local life leans relatively business-oriented. Tipping isn't expected.",
+    seeAndDo:
+      "Balikpapan's mangrove conservation area; a hilltop park overlooking the city and strait; the Islamic Center Mosque; a day trip into the surrounding Bornean rainforest.",
+    whenAndTips:
+      "The dry season (roughly May–September) offers more reliable roads and flights; as the gateway city to a rapidly developing new capital, infrastructure here is changing quickly — check current transport and accommodation information before travelling.",
+  },
+  manado: {
+    identity:
+      "Manado is the capital of North Sulawesi province, with a population of about 450,000; it is a major port city in eastern Indonesia and the gateway to the Bunaken National Park diving destination, and — unlike the country's Muslim-majority makeup overall — has a Christian-majority population.",
+    layout:
+      "The city runs along a bay, with the Boulevard waterfront a popular spot for sunset dining; Bunaken National Park lies in the waters north of Manado and is the area's premier diving and snorkelling destination.",
+    gettingAround:
+      "Sam Ratulangi International Airport (MDC) is about 13 km from the city centre; reaching Bunaken National Park requires a boat from the harbour, typically booked through a dive centre or tour operator along with a snorkelling or diving itinerary.",
+    culture:
+      "The official language is Indonesian, with the local Minahasan language also spoken. Manado and the surrounding North Sulawesi region were significantly shaped by Dutch colonial and Christian missionary history and are one of the few Christian-majority areas in Indonesia; pork dishes are commonly found on local menus, unlike in most of the country's predominantly halal dining scene. Tipping isn't expected.",
+    seeAndDo:
+      "Diving and snorkelling at Bunaken National Park; the Boulevard waterfront; the cityscape of the Manado Grand Mosque alongside numerous churches; the Minahasa highlands and lakes nearby.",
+    whenAndTips:
+      "April–October brings relatively calm seas, the best time for diving and snorkelling; book a Bunaken day trip a day ahead through a dive centre for boat tickets and equipment.",
+  },
+  "pangkalan-bun": {
+    identity:
+      "Pangkalan Bun is a riverside town in Central Kalimantan, with a population of about 70,000; it is the main gateway town for visiting Tanjung Puting National Park to see wild orangutans.",
+    layout:
+      "The town sits along a tributary of the Arut River; visiting Tanjung Puting National Park means boarding a traditional klotok riverboat from the local dock for a journey up the Sekonyer River into the park — the area's signature way to explore.",
+    gettingAround:
+      "Iskandar Airport (PKN) is about 3 km from the town centre; the town itself is small enough to cover on foot or by motorbike taxi, and visiting the national park requires booking a boat and guide through a local tour operator.",
+    culture:
+      "The official language is Indonesian. Pangkalan Bun is Muslim-majority — shoes come off before entering a mosque and women should carry a headscarf; as a national-park gateway town, the pace of life here is relaxed, and most visitors come primarily to observe wildlife. Tipping isn't expected.",
+    seeAndDo:
+      "Orangutan viewing in Tanjung Puting National Park (feeding stations such as Camp Leakey); a liveaboard trip along the Sekonyer River; watching proboscis monkeys and tropical birdlife within the park.",
+    whenAndTips:
+      "Liveaboard trips typically run 2–3 days — book in advance through a reputable operator and confirm the boat's and guide's credentials; the dry season (roughly May–September) offers more stable river conditions and better wildlife viewing.",
+  },
 };

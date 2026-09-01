@@ -1,0 +1,16 @@
+{
+  "id": "upg-mdc",
+  "name": "望加锡 — 万鸦老",
+  "nameEn": "Makassar — Manado",
+  "description": "塔纳托拉查高原",
+  "descriptionEn": "Tana Toraja Highlands",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA610", "aircraft": "Boeing 737-800", "depIata": "UPG", "arrIata": "MDC", "durationMin": 115 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "upg", "name": "望加锡", "nameEn": "Makassar", "lat": -5.0616, "lon": 119.5541, "airport": true },
+    { "kind": "terrain", "terrainId": "tana-toraja" },
+    { "kind": "city", "id": "mdc", "name": "万鸦老", "nameEn": "Manado", "lat": 1.5492, "lon": 124.9264, "airport": true }
+  ]
+}

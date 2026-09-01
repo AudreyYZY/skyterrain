@@ -1,0 +1,15 @@
+{
+  "id": "cgk-pkn",
+  "name": "雅加达 — 邦卡兰文",
+  "nameEn": "Jakarta — Pangkalan Bun",
+  "description": "爪哇海 · 丹绒普丁国家公园门户",
+  "descriptionEn": "Java Sea · gateway to Tanjung Puting National Park",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "巴迪克航空", "airlineEn": "Batik Air", "flightNo": "ID6270", "aircraft": "Airbus A320", "depIata": "CGK", "arrIata": "PKN", "durationMin": 85 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
+    { "kind": "city", "id": "pkn", "name": "邦卡兰文", "nameEn": "Pangkalan Bun", "lat": -2.7048, "lon": 111.6725, "airport": true }
+  ]
+}

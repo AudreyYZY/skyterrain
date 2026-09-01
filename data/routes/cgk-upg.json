@@ -1,0 +1,15 @@
+{
+  "id": "cgk-upg",
+  "name": "雅加达 — 望加锡",
+  "nameEn": "Jakarta — Makassar",
+  "description": "爪哇海 · 巽他海峡",
+  "descriptionEn": "Java Sea · Sunda Strait",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA608", "aircraft": "Airbus A330-900", "depIata": "CGK", "arrIata": "UPG", "durationMin": 150 },
+  "cruiseHeight": 10600,
+  "waypoints": [
+    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
+    { "kind": "city", "id": "upg", "name": "望加锡", "nameEn": "Makassar", "lat": -5.0616, "lon": 119.5541, "airport": true }
+  ]
+}

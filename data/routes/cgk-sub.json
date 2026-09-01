@@ -1,0 +1,16 @@
+{
+  "id": "cgk-sub",
+  "name": "雅加达 — 泗水",
+  "nameEn": "Jakarta — Surabaya",
+  "description": "默拉皮火山",
+  "descriptionEn": "Mount Merapi",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA320", "aircraft": "Boeing 737-800", "depIata": "CGK", "arrIata": "SUB", "durationMin": 100 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
+    { "kind": "terrain", "terrainId": "mount-merapi" },
+    { "kind": "city", "id": "sub", "name": "泗水", "nameEn": "Surabaya", "lat": -7.3798, "lon": 112.7869, "airport": true }
+  ]
+}
