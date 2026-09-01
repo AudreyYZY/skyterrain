@@ -2391,6 +2391,21 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "特日和音查干湖", nameEn: "Terkhiin Tsagaan Lake", lon: 99.7000, lat: 48.1900, kind: "nature" },
     { nameZh: "扎雅音格根寺", nameEn: "Zayain Gegeenii Süm", lon: 101.4500, lat: 47.4800, kind: "landmark" },
   ],
+  // 新加坡
+  "singapore-city": [
+    { nameZh: "滨海湾金沙", nameEn: "Marina Bay Sands", lon: 103.8607, lat: 1.2836, kind: "landmark" },
+    { nameZh: "滨海湾花园", nameEn: "Gardens by the Bay", lon: 103.8636, lat: 1.2816, kind: "landmark" },
+    { nameZh: "牛车水（佛牙寺）", nameEn: "Chinatown (Buddha Tooth Relic Temple)", lon: 103.8442, lat: 1.2812, kind: "district" },
+    { nameZh: "甘榜格南（苏丹回教堂）", nameEn: "Kampong Glam (Sultan Mosque)", lon: 103.8594, lat: 1.3021, kind: "district" },
+    { nameZh: "小印度", nameEn: "Little India", lon: 103.8496, lat: 1.3067, kind: "district" },
+    { nameZh: "新加坡植物园", nameEn: "Singapore Botanic Gardens", lon: 103.8159, lat: 1.3138, kind: "nature" },
+  ],
+  sentosa: [
+    { nameZh: "圣淘沙名胜世界", nameEn: "Resorts World Sentosa", lon: 103.8203, lat: 1.2544, kind: "landmark" },
+    { nameZh: "西乐索海滩", nameEn: "Siloso Beach", lon: 103.8156, lat: 1.2500, kind: "nature" },
+    { nameZh: "圣淘沙跨海缆车站", nameEn: "Sentosa Cable Car Station", lon: 103.8228, lat: 1.2653, kind: "transport" },
+    { nameZh: "斜坡滑车公园", nameEn: "Skyline Luge Sentosa", lon: 103.8181, lat: 1.2569, kind: "landmark" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
