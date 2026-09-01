@@ -6093,4 +6093,145 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Liveaboard trips typically run 2–3 days — book in advance through a reputable operator and confirm the boat's and guide's credentials; the dry season (roughly May–September) offers more stable river conditions and better wildlife viewing.",
   },
+  // ============ Kazakhstan ============
+  "kazakhstan-overview": {
+    identity:
+      "Kazakhstan is the world's largest landlocked country, covering about 2.72 million km² with a population of about 20 million; its capital is Astana, the official language is Kazakh, Russian is widely used as the language of interethnic communication, and its currency is the Kazakhstani tenge (KZT).",
+    layout:
+      "The country divides roughly into six regions: the North (Astana, Kokshetau — steppe and lakes), the Southeast (Almaty — the northern Tian Shan foothills, former capital and cultural centre), the South (Shymkent, Turkestan — ancient Silk Road cities and oasis agriculture), the West (Aktau — the Caspian coast and the desert wonders of Mangystau), the Centre (Karaganda — a mining city in the Kazakh Uplands), and the East (Semey, Pavlodar — along the Irtysh River).",
+    gettingAround:
+      "Domestic flights are the main way to travel between regions, with Air Astana, SCAT and other carriers covering major cities; the rail network is extensive, and long-distance sleeper trains are an economical if slow option (some routes exceed 20 hours). The country spans two time zones. The climate is a classic continental one — hot, dry summers and long, severe winters, with large diurnal and seasonal temperature swings. Citizens of many countries can enter visa-free for up to 30 days — check Kazakhstan's Ministry of Foreign Affairs for current rules.",
+    culture:
+      "Kazakhstan is a secular, multi-ethnic country built around a Kazakh majority alongside ethnic Russians and more than a hundred other groups; most residents are Muslim (predominantly Sunni Hanafi), while ethnic Russians and others are largely Orthodox Christian, and the overall religious atmosphere is moderate and secular. Kazakh hospitality (konakasy) is taken very seriously — guests invited into a home are typically served generously, and accepting food offered by a host is basic courtesy. Shoes come off before entering a mosque or mausoleum, and women should carry a headscarf. Unlike many Southeast Asian countries, tipping is customary in Kazakhstan — typically 5–10% of the restaurant bill, though upscale places may already include a service charge.",
+    seeAndDo:
+      "The Zailiysky Alatau, Charyn Canyon and the Kolsai-Kaindy lakes around Almaty; Astana's futuristic architecture; the Yasawi Mausoleum in Turkestan (a UNESCO World Heritage Site); the desert wonders of Bozzhyra Canyon and the Karagiye Depression in Mangystau; Lake Balkhash's \"two waters in one lake\" phenomenon; the Saryarka steppe and the Korgalzhyn migratory-bird reserve.",
+    whenAndTips:
+      "May through September is the peak travel season, with milder weather suited to mountain hikes, lake trips and desert exploration; winters are severe (some regions drop below -30°C), so pack accordingly if travelling then. Allow generous time for inter-regional travel, and plan supplies and a guide well in advance for self-drive trips into remote desert regions like Mangystau.",
+  },
+  astana: {
+    identity:
+      "Astana is Kazakhstan's current capital, with a population of more than 1.3 million; the capital moved here from Almaty in 1997, and the city is known for its dense cluster of futuristic landmark buildings — a showcase of Kazakhstan's post-independence nation-building.",
+    layout:
+      "The city is divided by the Ishim River (a tributary of the Irtysh) into a right bank, which preserves the Soviet-era old town, and a left bank, where large landmark structures including the Bayterek Tower, the Khan Shatyr entertainment centre and the Nur-Astana Mosque have been built since the late 1990s — the core of Astana's \"new city.\"",
+    gettingAround:
+      "Astana International Airport (NQZ) is about 17 km from the city centre; taxis, ride-hailing apps and buses are the main way to get around town, and the left-bank new city's wide boulevards mean walking distances there tend to be long.",
+    culture:
+      "The official language is Kazakh, with Russian widely spoken. Kazakh hospitality is taken seriously, and accepting food offered by a host is basic courtesy. Shoes come off before entering the Nur-Astana Mosque or other religious sites, and women should carry a headscarf. Tipping is customary in Kazakhstan — typically an extra 5–10% on top of the restaurant bill.",
+    seeAndDo:
+      "The Bayterek Tower (climb up for a view over the city and steppe); the Khan Shatyr entertainment centre (designed by Norman Foster, the world's largest tent-like structure); the Nur-Astana Mosque (Central Asia's third-largest); the National Museum of Kazakhstan; the Presidential Cultural Centre and Independence Square.",
+    whenAndTips:
+      "Astana's winters are extremely cold and long (temperatures can drop below -30°C), while summers are hot and dry — May through September is the more comfortable travel season; the left-bank landmark cluster is compact, so plan a full day combining walking with taxis.",
+  },
+  almaty: {
+    identity:
+      "Almaty is Kazakhstan's former capital and largest city, with a population of more than 2 million, set at the foot of the Zailiysky Alatau in the northern Tian Shan; it is the country's cultural, educational and economic centre and the core gateway for exploring the natural landscapes of the northern Tian Shan.",
+    layout:
+      "The city follows a grid layout that rises from north to south; the southern districts, closer to the mountains, sit at higher elevation and enjoy cooler air, with Panfilov Park and Republic Square forming the city centre's core; the snow-capped peaks of the Zailiysky Alatau are visible looking south from the city, and both Medeu Gorge and Big Almaty Lake lie within commuting distance.",
+    gettingAround:
+      "Almaty International Airport (ALA) is about 18 km from the city centre; the city has a single metro line and a bus network, while reaching mountain sites like Medeu or Big Almaty Lake usually requires a hired car or a local tour; Charyn Canyon and the Kolsai-Kaindy lakes require a one- or two-day trip out of Almaty.",
+    culture:
+      "The official language is Kazakh, with Russian widely used in Almaty — in some contexts even more common. Almaty is one of Kazakhstan's most cosmopolitan and secular cities, and everyday dress is fairly relaxed; religious sites still call for basic etiquette such as removing shoes and women carrying a headscarf. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+    seeAndDo:
+      "The Medeu high-altitude skating rink and viewpoint; Big Almaty Lake (a glacial lake and alpine hiking); Panfilov Park and the Ascension Cathedral (a wooden Orthodox church); Republic Square and the Abay Opera and Ballet Theatre; using Almaty as a base for a one- or multi-day trip to Charyn Canyon or the Kolsai and Kaindy lakes.",
+    whenAndTips:
+      "May through September is the best season for mountain hikes and lake trips; from October through April, mountain roads can be affected by snow. Charyn Canyon and Kolsai-Kaindy day trips involve long drives — book a local tour or hired car a day in advance.",
+  },
+  shymkent: {
+    identity:
+      "Shymkent is Kazakhstan's third-largest city, with a population of more than 1 million; it is the capital of Turkistan Region, historically an important Silk Road trading centre, and today a major industrial and transport hub in southern Kazakhstan.",
+    layout:
+      "The old town preserves some Soviet-era buildings and traditional bazaars, while the newer Independence Park and Al-Farabi Square form the city centre's leisure core; the ancient city of Turkestan lies about 160 km to the north.",
+    gettingAround:
+      "Shymkent International Airport (CIT) is about 12 km from the city centre; buses and taxis are the main way to get around town, and reaching Turkestan usually means about 2 hours by highway.",
+    culture:
+      "The official language is Kazakh, and the city carries a comparatively strong traditional Kazakh cultural atmosphere, one of the places in southern Kazakhstan where older customs are best preserved. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+    seeAndDo:
+      "Shymkent's central bazaar (everyday local market life); Independence Park and Al-Farabi Square; the Regional History Museum; using Shymkent as a base for a visit to the Yasawi Mausoleum in Turkestan.",
+    whenAndTips:
+      "Shymkent's summers are hot and dry, with May and September comparatively pleasant; plan a full day for the Turkestan trip, since the round-trip drive plus time at the mausoleum takes several hours.",
+  },
+  aktau: {
+    identity:
+      "Aktau is the capital of Mangystau Region, with a population of more than 200,000; it is Kazakhstan's largest city on the Caspian coast, with a dry, low-rainfall climate, and serves as the core gateway to the desert wonders of Mangystau — Bozzhyra, Karagiye and Torysh.",
+    layout:
+      "The city follows a Soviet-era grid plan, its districts identified by numbered microdistricts (mkr) rather than traditional street names, with several beaches and a seaside promenade along the Caspian shore; landmarks deep in the Mangystau desert such as Bozzhyra and Karagiye require several hours' drive from Aktau to reach.",
+    gettingAround:
+      "Aktau International Airport (SCO) is about 25 km from the city centre; taxis are the main way to get around town, while reaching desert sites like Bozzhyra and Karagiye involves rough terrain and usually requires a rented 4x4 with a local guide familiar with the route.",
+    culture:
+      "The official language is Kazakh, with Russian widely used. Aktau is an oil-industry city on the Caspian coast, and the pace of local life leans business-oriented; shoes come off before entering religious sites, and women should carry a headscarf. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+    seeAndDo:
+      "Bozzhyra Canyon (chalk \"fang\" rock towers and \"Martian\" terrain); the Karagiye Depression (Kazakhstan's lowest point); Torysh, the Valley of Balls (spherical sandstone concretions); Aktau's seaside promenade and Blue Bay beach; the Mangystau Regional History Museum.",
+    whenAndTips:
+      "Road conditions in the Mangystau desert are rough — go only in dry season and avoid muddy stretches after rain; midday summer heat is intense, so carry plenty of water and sun protection. Bozzhyra and Karagiye are each several hours' drive from Aktau — plan at least two days and arrange a reputable guide in advance.",
+  },
+  turkestan: {
+    identity:
+      "Turkestan is a historic city in southern Kazakhstan, with a population of about 200,000; once an important Silk Road trading and religious centre, it is famous today for the Yasawi Mausoleum and is Kazakhstan's most important Islamic pilgrimage and historical-cultural destination.",
+    layout:
+      "The Yasawi Mausoleum is the old town's central landmark, surrounded by an archaeological heritage park and newly built religious and cultural facilities; the city has undergone large-scale modernisation in recent years, visibly reflected in the new Hazrat Sultan International Airport and tidy civic squares.",
+    gettingAround:
+      "Hazrat Sultan International Airport (HSA), opened in 2020, is about 16 km from the city centre; taxis are the main way to get around town, and the city is easily reached from either Shymkent or its own airport.",
+    culture:
+      "The official language is Kazakh. The Yasawi Mausoleum is one of Kazakhstan's most important Islamic sacred sites — dress modestly and remove shoes before entering the mausoleum complex, and women should carry a headscarf; as a pilgrimage site, keep noise down and be respectful of worshippers in prayer. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+    seeAndDo:
+      "The Yasawi Mausoleum (commissioned by Timur in 1389–1405, a UNESCO World Heritage Site and a showcase of Timurid architectural experimentation); the archaeological heritage park surrounding the mausoleum; the Hazrat Sultan Mosque; the Turkestan Regional History Museum.",
+    whenAndTips:
+      "May through September brings comparatively mild weather, well suited to visiting the mausoleum and outdoor heritage sites; allow at least half a day for the mausoleum to take in the distinctive unfinished structural details left from the Timurid period.",
+  },
+  karaganda: {
+    identity:
+      "Karaganda is an industrial city in the central Kazakh Uplands, with a population of more than 500,000; it grew historically around coal mining and remains an important mining and industrial centre in central Kazakhstan, as well as one of the gateways to the Karkaraly Mountains and Bektau-Ata.",
+    layout:
+      "The city developed around Soviet-era coal-mining industry, and its centre preserves a large number of Soviet-era buildings; Karkaraly National Park lies about 220 km to the east, and the granite massif of Bektau-Ata about 70 km to the south.",
+    gettingAround:
+      "Sary-Arka Airport (KGF) is about 20 km from the city centre; buses and taxis are the main way to get around town, and reaching Karkaraly or Bektau-Ata usually requires a hired car, each several hours' drive on mountain roads.",
+    culture:
+      "The official language is Kazakh, with Russian widely used in Karaganda, one of the cities in Kazakhstan with a comparatively high ethnic Russian population. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+    seeAndDo:
+      "The Karaganda Regional History Museum; using Karaganda as a base for a trip to Karkaraly National Park (granite mountains, pine forest and lakes); hiking and rock climbing among the granite boulders of Bektau-Ata.",
+    whenAndTips:
+      "May through September is the best season for hiking trips to Karkaraly and Bektau-Ata; both sites are a considerable distance away, so plan a full day for each.",
+  },
+  semey: {
+    identity:
+      "Semey is a historic city on the Irtysh River in eastern Kazakhstan, with a population of more than 300,000; it was historically the administrative centre for the Soviet-era Semipalatinsk Nuclear Test Site, and today is an important cultural and educational city along the Irtysh.",
+    layout:
+      "The city straddles both banks of the Irtysh River, with the Semey cable-stayed bridge one of its landmarks; the old town preserves some late-19th- and early-20th-century historic buildings, connected to the period when the writer Fyodor Dostoevsky lived here in exile.",
+    gettingAround:
+      "Semey Airport (PLX) is about 7 km from the city centre; buses and taxis are the main way to get around town.",
+    culture:
+      "The official language is Kazakh, with Russian widely used. Semey carries the serious historical legacy of the Soviet nuclear test site nearby, and the city maintains solemn memorial and educational facilities related to this history — visit related memorials respectfully. Tipping is customary — typically an extra 5–10% on top of the restaurant bill.",
+    seeAndDo:
+      "The Semey cable-stayed bridge (a landmark spanning the Irtysh River); the Abai Memorial Museum (documents and artefacts related to the Kazakh national poet Abai); the Dostoevsky Literary Memorial Museum; the Museum of Nuclear Test Victims (learning about the Soviet nuclear testing history).",
+    whenAndTips:
+      "Semey has a classic continental climate — hot summers and severe winters — with May through September the more comfortable travel season; the nuclear-test memorial museums cover heavy material, so prepare accordingly.",
+  },
+  pavlodar: {
+    identity:
+      "Pavlodar is a city on the Irtysh River in eastern Kazakhstan, with a population of more than 350,000; it is the capital of Pavlodar Region, historically built up around heavy industries such as aluminium and petrochemicals, and today an important industrial and cultural city along the Irtysh.",
+    layout:
+      "The city sits along the right bank of the Irtysh River, with a riverside promenade and central square forming the main public leisure space; the old town preserves buildings from the Soviet era and earlier.",
+    gettingAround:
+      "Pavlodar Airport (PWQ) is about 13 km from the city centre; buses and taxis are the main way to get around town.",
+    culture:
+      "The official language is Kazakh, with Russian widely used — one of the regions in Kazakhstan with a comparatively high ethnic Russian population. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+    seeAndDo:
+      "The Irtysh riverside promenade; the Pavlodar Regional History Museum; the central square and civic building cluster; nearby steppe lakes such as Lake Bayanaul.",
+    whenAndTips:
+      "Pavlodar has a classic continental climate — hot summers and long, severe winters — with May through September the more comfortable travel season.",
+  },
+  kokshetau: {
+    identity:
+      "Kokshetau is the capital of Akmola Region in northern Kazakhstan, with a population of about 150,000, set within the Kokshetau Hills; it is the main gateway to Burabay National Park, known as \"Kazakhstan's Switzerland.\"",
+    layout:
+      "The city itself is modest in scale, serving mainly administrative and transport functions; Burabay National Park lies about 70 km to the north and is the region's principal natural tourism destination.",
+    gettingAround:
+      "Kokshetau Airport (KOV) is about 18 km from the city centre; taxis are the main way to get around town, and reaching Burabay usually requires a hired car, about an hour's drive.",
+    culture:
+      "The official language is Kazakh, with Russian widely used. Tipping is customary — typically an extra 5–10% on top of the restaurant bill, and accepting food offered by a host is basic hospitality etiquette.",
+    seeAndDo:
+      "Using Kokshetau as a base for a trip to Burabay National Park: boating on Lake Burabay, hiking the granite hills, and taking in the pine-forest scenery; the Kokshetau Regional History Museum.",
+    whenAndTips:
+      "May through September is the best season for a summer trip and outdoor activities at Burabay, with weekends and summer holidays bringing more visitors; in winter Burabay's lakes freeze over, offering ice fishing and snow activities.",
+  },
 };
