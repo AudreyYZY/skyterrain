@@ -2000,6 +2000,200 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "埃施叙尔苏尔城堡遗址", nameEn: "Esch-sur-Sûre Castle Ruins", lon: 5.9169, lat: 49.9169, kind: "landmark" },
   ],
 
+  // 泰国
+  bangkok: [
+    { nameZh: "大皇宫", nameEn: "Grand Palace", lon: 100.4913, lat: 13.7500, kind: "landmark" },
+    { nameZh: "郑王庙", nameEn: "Wat Arun", lon: 100.4888, lat: 13.7437, kind: "landmark" },
+    { nameZh: "乍都乍市场", nameEn: "Chatuchak Market", lon: 100.5500, lat: 13.7999, kind: "district" },
+    { nameZh: "考山路", nameEn: "Khao San Road", lon: 100.4977, lat: 13.7590, kind: "district" },
+    { nameZh: "暹罗商圈", nameEn: "Siam", lon: 100.5347, lat: 13.7466, kind: "district" },
+  ],
+  "chiang-mai": [
+    { nameZh: "帕辛寺", nameEn: "Wat Phra Singh", lon: 98.9825, lat: 18.7873, kind: "landmark" },
+    { nameZh: "清曼寺", nameEn: "Wat Chiang Man", lon: 98.9878, lat: 18.7929, kind: "landmark" },
+    { nameZh: "素贴寺", nameEn: "Wat Phra That Doi Suthep", lon: 98.9219, lat: 18.8047, kind: "landmark" },
+    { nameZh: "周日步行街", nameEn: "Sunday Walking Street", lon: 98.9836, lat: 18.7887, kind: "district" },
+    { nameZh: "尼曼路", nameEn: "Nimman Road", lon: 98.9666, lat: 18.7994, kind: "district" },
+  ],
+  phuket: [
+    { nameZh: "巴东海滩", nameEn: "Patong Beach", lon: 98.2966, lat: 7.8965, kind: "nature" },
+    { nameZh: "普吉镇老城", nameEn: "Phuket Old Town", lon: 98.3900, lat: 7.8833, kind: "district" },
+    { nameZh: "大佛山", nameEn: "Big Buddha", lon: 98.3117, lat: 7.8278, kind: "landmark" },
+    { nameZh: "卡伦观景点", nameEn: "Karon Viewpoint", lon: 98.2967, lat: 7.8080, kind: "nature" },
+  ],
+  krabi: [
+    { nameZh: "莱利岬角", nameEn: "Railay Peninsula", lon: 98.8372, lat: 8.0107, kind: "nature" },
+    { nameZh: "奥南海滩", nameEn: "Ao Nang Beach", lon: 98.8228, lat: 8.0333, kind: "nature" },
+    { nameZh: "老虎洞寺", nameEn: "Tiger Cave Temple", lon: 98.9522, lat: 8.1150, kind: "landmark" },
+  ],
+  pattaya: [
+    { nameZh: "芭提雅步行街", nameEn: "Pattaya Walking Street", lon: 100.8737, lat: 12.9280, kind: "district" },
+    { nameZh: "真理寺", nameEn: "Sanctuary of Truth", lon: 100.8814, lat: 12.9781, kind: "landmark" },
+    { nameZh: "格兰岛", nameEn: "Koh Larn", lon: 100.7847, lat: 12.9186, kind: "nature" },
+    { nameZh: "东芭乐园", nameEn: "Nong Nooch Tropical Garden", lon: 100.9333, lat: 12.7333, kind: "landmark" },
+  ],
+  "chiang-rai": [
+    { nameZh: "白龙寺", nameEn: "Wat Rong Khun (White Temple)", lon: 99.7736, lat: 19.8067, kind: "landmark" },
+    { nameZh: "蓝庙", nameEn: "Wat Rong Suea Ten (Blue Temple)", lon: 99.8189, lat: 19.9350, kind: "landmark" },
+    { nameZh: "黑屋博物馆", nameEn: "Baan Dam Museum", lon: 99.8378, lat: 19.9622, kind: "landmark" },
+    { nameZh: "金三角景观区", nameEn: "Golden Triangle", lon: 100.0856, lat: 20.3556, kind: "nature" },
+  ],
+  "koh-samui": [
+    { nameZh: "查汶海滩", nameEn: "Chaweng Beach", lon: 100.0611, lat: 9.5386, kind: "nature" },
+    { nameZh: "大佛寺", nameEn: "Big Buddha Temple", lon: 100.0603, lat: 9.5764, kind: "landmark" },
+    { nameZh: "安通国家海洋公园", nameEn: "Ang Thong National Marine Park", lon: 99.6667, lat: 9.6667, kind: "nature" },
+    { nameZh: "渔民村", nameEn: "Fisherman's Village", lon: 100.0472, lat: 9.5686, kind: "district" },
+  ],
+  ayutthaya: [
+    { nameZh: "玛哈泰寺", nameEn: "Wat Mahathat", lon: 100.5686, lat: 14.3567, kind: "landmark" },
+    { nameZh: "帕席桑碧寺", nameEn: "Wat Phra Si Sanphet", lon: 100.5561, lat: 14.3564, kind: "landmark" },
+    { nameZh: "洛卡雅苏塔寺", nameEn: "Wat Lokayasutharam", lon: 100.5442, lat: 14.3486, kind: "landmark" },
+  ],
+  sukhothai: [
+    { nameZh: "玛哈泰寺遗址", nameEn: "Wat Mahathat Ruins", lon: 99.7011, lat: 17.0186, kind: "landmark" },
+    { nameZh: "诗春寺", nameEn: "Wat Si Chum", lon: 99.6944, lat: 17.0247, kind: "landmark" },
+    { nameZh: "沙西寺", nameEn: "Wat Sa Si", lon: 99.7017, lat: 17.0206, kind: "landmark" },
+  ],
+  "hua-hin": [
+    { nameZh: "华欣海滩", nameEn: "Hua Hin Beach", lon: 99.9636, lat: 12.5628, kind: "nature" },
+    { nameZh: "华欣火车站", nameEn: "Hua Hin Railway Station", lon: 99.9583, lat: 12.5711, kind: "landmark" },
+    { nameZh: "华欣丘陵葡萄园", nameEn: "Hua Hin Hills Vineyard", lon: 99.7833, lat: 12.6667, kind: "landmark" },
+  ],
+  "udon-thani": [
+    { nameZh: "农贵湖公园", nameEn: "Nong Prajak Park", lon: 102.7883, lat: 17.4111, kind: "nature" },
+    { nameZh: "班清国家博物馆", nameEn: "Ban Chiang National Museum", lon: 103.2378, lat: 17.4058, kind: "landmark" },
+    { nameZh: "那雍寺", nameEn: "Wat Pa Phu Kon", lon: 102.0833, lat: 17.6667, kind: "landmark" },
+  ],
+  "nakhon-ratchasima": [
+    { nameZh: "陶苏拉纳丽纪念碑", nameEn: "Thao Suranari Memorial", lon: 102.0972, lat: 14.9722, kind: "landmark" },
+    { nameZh: "帕侬蓝历史公园", nameEn: "Phanom Rung Historical Park", lon: 102.9375, lat: 14.5308, kind: "landmark" },
+    { nameZh: "考艾山国家公园", nameEn: "Khao Yai National Park", lon: 101.3725, lat: 14.4386, kind: "nature" },
+  ],
+  // 韩国
+  seoul: [
+    { nameZh: "景福宫", nameEn: "Gyeongbokgung Palace", lon: 126.9770, lat: 37.5796, kind: "landmark" },
+    { nameZh: "北村韩屋村", nameEn: "Bukchon Hanok Village", lon: 126.9850, lat: 37.5826, kind: "district" },
+    { nameZh: "明洞", nameEn: "Myeongdong", lon: 126.9850, lat: 37.5636, kind: "district" },
+    { nameZh: "东大门", nameEn: "Dongdaemun", lon: 127.0095, lat: 37.5663, kind: "district" },
+    { nameZh: "汉江公园", nameEn: "Han River Park", lon: 126.9346, lat: 37.5285, kind: "nature" },
+    { nameZh: "北汉山国家公园", nameEn: "Bukhansan National Park", lon: 126.9769, lat: 37.6584, kind: "nature" },
+    { nameZh: "两水里", nameEn: "Yangsu-ri (Dumulmeori)", lon: 127.3161, lat: 37.5375, kind: "nature" },
+  ],
+  busan: [
+    { nameZh: "海云台海滩", nameEn: "Haeundae Beach", lon: 129.1600, lat: 35.1587, kind: "nature" },
+    { nameZh: "广安里海滩", nameEn: "Gwangalli Beach", lon: 129.1183, lat: 35.1531, kind: "nature" },
+    { nameZh: "甘川文化村", nameEn: "Gamcheon Culture Village", lon: 129.0106, lat: 35.0975, kind: "district" },
+    { nameZh: "札嘎其海鲜市场", nameEn: "Jagalchi Fish Market", lon: 129.0306, lat: 35.0968, kind: "landmark" },
+    { nameZh: "太宗台", nameEn: "Taejongdae", lon: 129.0872, lat: 35.0533, kind: "nature" },
+    { nameZh: "龙头山公园釜山塔", nameEn: "Busan Tower, Yongdusan Park", lon: 129.0322, lat: 35.1008, kind: "landmark" },
+  ],
+  "jeju-city": [
+    { nameZh: "龙头岩", nameEn: "Yongduam Rock", lon: 126.5122, lat: 33.5147, kind: "nature" },
+    { nameZh: "济州民俗自然史博物馆", nameEn: "Jeju Folklore and Natural History Museum", lon: 126.5450, lat: 33.5033, kind: "landmark" },
+    { nameZh: "东门市场", nameEn: "Dongmun Market", lon: 126.5261, lat: 33.5136, kind: "district" },
+    { nameZh: "万丈窟", nameEn: "Manjanggul Lava Tube", lon: 126.7714, lat: 33.5286, kind: "nature" },
+  ],
+  gyeongju: [
+    { nameZh: "佛国寺", nameEn: "Bulguksa Temple", lon: 129.3320, lat: 35.7898, kind: "landmark" },
+    { nameZh: "石窟庵", nameEn: "Seokguram Grotto", lon: 129.3494, lat: 35.7947, kind: "landmark" },
+    { nameZh: "大陵苑", nameEn: "Daereungwon Tomb Complex", lon: 129.2119, lat: 35.8358, kind: "landmark" },
+    { nameZh: "瞻星台", nameEn: "Cheomseongdae Observatory", lon: 129.2200, lat: 35.8351, kind: "landmark" },
+    { nameZh: "东宫与月池", nameEn: "Donggung Palace and Wolji Pond", lon: 129.2258, lat: 35.8347, kind: "landmark" },
+    { nameZh: "良洞村", nameEn: "Yangdong Village", lon: 129.2069, lat: 35.9128, kind: "district" },
+  ],
+  ulsan: [
+    { nameZh: "太和江国家庭院", nameEn: "Taehwa River National Garden", lon: 129.3106, lat: 35.5497, kind: "nature" },
+    { nameZh: "长生浦鲸鱼文化村", nameEn: "Jangsaengpo Whale Culture Village", lon: 129.3833, lat: 35.4956, kind: "district" },
+    { nameZh: "大王岩公园", nameEn: "Daewangam Park", lon: 129.4419, lat: 35.5033, kind: "nature" },
+  ],
+  yeosu: [
+    { nameZh: "丽水海上缆车", nameEn: "Yeosu Maritime Cable Car", lon: 127.7444, lat: 34.7458, kind: "landmark" },
+    { nameZh: "梧桐岛", nameEn: "Odongdo Island", lon: 127.7594, lat: 34.7381, kind: "nature" },
+    { nameZh: "突山大桥", nameEn: "Dolsan Bridge", lon: 127.7517, lat: 34.7469, kind: "landmark" },
+    { nameZh: "栗浦解放海滩", nameEn: "Yulpo Beach", lon: 127.6494, lat: 34.7128, kind: "nature" },
+  ],
+  pohang: [
+    { nameZh: "虎尾串公园", nameEn: "Homigot Park", lon: 129.5675, lat: 36.0764, kind: "landmark" },
+    { nameZh: "迎日台海边公园", nameEn: "Yeongildae Beach Park", lon: 129.3853, lat: 36.0364, kind: "nature" },
+    { nameZh: "九龙浦近代文化街道", nameEn: "Guryongpo Modern History Street", lon: 129.5583, lat: 35.9886, kind: "district" },
+  ],
+  gangneung: [
+    { nameZh: "镜浦湖", nameEn: "Gyeongpo Lake", lon: 128.8994, lat: 37.7961, kind: "nature" },
+    { nameZh: "安木海岸咖啡街", nameEn: "Anmok Coffee Street", lon: 128.9139, lat: 37.7828, kind: "district" },
+    { nameZh: "乌竹轩", nameEn: "Ojukheon", lon: 128.8994, lat: 37.7847, kind: "landmark" },
+    { nameZh: "正东津", nameEn: "Jeongdongjin Station", lon: 129.0347, lat: 37.6906, kind: "landmark" },
+  ],
+  sokcho: [
+    { nameZh: "雪岳山国家公园", nameEn: "Seoraksan National Park", lon: 128.4657, lat: 38.1191, kind: "nature" },
+    { nameZh: "束草中央市场", nameEn: "Sokcho Jungang Market", lon: 128.5928, lat: 38.2036, kind: "district" },
+    { nameZh: "青草湖", nameEn: "Cheongcho Lake", lon: 128.5794, lat: 38.1917, kind: "nature" },
+    { nameZh: "洛山寺", nameEn: "Naksansa Temple", lon: 128.6261, lat: 38.1225, kind: "landmark" },
+  ],
+  chuncheon: [
+    { nameZh: "南怡岛", nameEn: "Nami Island", lon: 127.5256, lat: 37.7897, kind: "nature" },
+    { nameZh: "昭阳江大坝", nameEn: "Soyang Dam", lon: 127.8151, lat: 37.9489, kind: "landmark" },
+    { nameZh: "小梦树公园", nameEn: "Small Forest of Dreams Park", lon: 127.7431, lat: 37.8564, kind: "nature" },
+  ],
+  andong: [
+    { nameZh: "河回村", nameEn: "Hahoe Village", lon: 128.5169, lat: 36.5390, kind: "district" },
+    { nameZh: "陶山书院", nameEn: "Dosan Seowon", lon: 128.9550, lat: 36.6919, kind: "landmark" },
+    { nameZh: "屏山书院", nameEn: "Byeongsan Seowon", lon: 128.5228, lat: 36.5236, kind: "landmark" },
+    { nameZh: "月映桥", nameEn: "Wolyeonggyo Bridge", lon: 128.7378, lat: 36.5658, kind: "landmark" },
+  ],
+  jeonju: [
+    { nameZh: "全州韩屋村", nameEn: "Jeonju Hanok Village", lon: 127.1522, lat: 35.8153, kind: "district" },
+    { nameZh: "殿洞天主教堂", nameEn: "Jeondong Catholic Church", lon: 127.1467, lat: 35.8144, kind: "landmark" },
+    { nameZh: "庆基殿", nameEn: "Gyeonggijeon Shrine", lon: 127.1478, lat: 35.8158, kind: "landmark" },
+    { nameZh: "南部市场", nameEn: "Nambu Market", lon: 127.1439, lat: 35.8117, kind: "district" },
+  ],
+  // ── 波兰 ──
+  warsaw: [
+    { nameZh: "老城广场与皇家城堡", nameEn: "Old Town Market Square & Royal Castle", lon: 21.0139, lat: 52.2489, kind: "landmark" },
+    { nameZh: "瓦津基公园", nameEn: "Łazienki Park", lon: 21.0353, lat: 52.2151, kind: "nature" },
+    { nameZh: "华沙起义博物馆", nameEn: "Warsaw Rising Museum", lon: 20.9797, lat: 52.2280, kind: "landmark" },
+  ],
+  krakow: [
+    { nameZh: "瓦维尔城堡", nameEn: "Wawel Castle", lon: 19.9356, lat: 50.0544, kind: "landmark" },
+    { nameZh: "中央集市广场与圣玛丽教堂", nameEn: "Main Market Square & St Mary's Basilica", lon: 19.9373, lat: 50.0617, kind: "landmark" },
+    { nameZh: "卡齐米日历史街区", nameEn: "Kazimierz", lon: 19.9464, lat: 50.0508, kind: "district" },
+  ],
+  zakopane: [
+    { nameZh: "卡斯普罗维维尔赫峰缆车", nameEn: "Kasprowy Wierch Cable Car", lon: 19.9814, lat: 49.2319, kind: "nature" },
+    { nameZh: "克鲁普夫基步行街", nameEn: "Krupówki Street", lon: 19.9553, lat: 49.2989, kind: "district" },
+    { nameZh: "莫尔斯科奥科湖", nameEn: "Morskie Oko", lon: 20.0800, lat: 49.2000, kind: "nature" },
+  ],
+  rzeszow: [
+    { nameZh: "热舒夫市集广场与地下旅游线路", nameEn: "Rzeszów Market Square & Underground Route", lon: 22.0042, lat: 50.0389, kind: "landmark" },
+    { nameZh: "波德卡尔帕茨基航空博物馆", nameEn: "Podkarpackie Aviation Museum", lon: 22.0231, lat: 50.1067, kind: "landmark" },
+  ],
+  wroclaw: [
+    { nameZh: "主集市广场与市政厅", nameEn: "Market Square & Old Town Hall", lon: 17.0326, lat: 51.1101, kind: "landmark" },
+    { nameZh: "教堂岛", nameEn: "Ostrów Tumski (Cathedral Island)", lon: 17.0447, lat: 51.1147, kind: "district" },
+    { nameZh: "百年厅", nameEn: "Centennial Hall", lon: 17.0728, lat: 51.1075, kind: "landmark" },
+  ],
+  poznan: [
+    { nameZh: "老集市广场与文艺复兴市政厅", nameEn: "Old Market Square & Renaissance Town Hall", lon: 16.9339, lat: 52.4083, kind: "landmark" },
+    { nameZh: "主教座堂岛", nameEn: "Cathedral Island", lon: 16.9450, lat: 52.4083, kind: "district" },
+  ],
+  gdansk: [
+    { nameZh: "长街与长市场", nameEn: "Long Street & Long Market", lon: 18.6539, lat: 54.3492, kind: "district" },
+    { nameZh: "圣玛丽教堂", nameEn: "St Mary's Church", lon: 18.6544, lat: 54.3494, kind: "landmark" },
+    { nameZh: "欧洲团结中心", nameEn: "European Solidarity Centre", lon: 18.6489, lat: 54.3542, kind: "landmark" },
+  ],
+  szczecin: [
+    { nameZh: "波美拉尼亚公爵城堡", nameEn: "Ducal Castle of Pomerania", lon: 14.5561, lat: 53.4297, kind: "landmark" },
+    { nameZh: "哈肯露台", nameEn: "Hakenterrasse", lon: 14.5583, lat: 53.4297, kind: "nature" },
+  ],
+  torun: [
+    { nameZh: "哥白尼故居博物馆", nameEn: "Copernicus House Museum", lon: 18.6047, lat: 53.0128, kind: "landmark" },
+    { nameZh: "老城市政厅", nameEn: "Old Town Hall", lon: 18.6031, lat: 53.0111, kind: "landmark" },
+  ],
+  olsztyn: [
+    { nameZh: "奥尔什丁城堡", nameEn: "Olsztyn Castle", lon: 20.4783, lat: 53.7767, kind: "landmark" },
+  ],
+  bialystok: [
+    { nameZh: "布拉尼茨基宫", nameEn: "Branicki Palace", lon: 23.1636, lat: 53.1300, kind: "landmark" },
+  ],
   // 越南
   hanoi: [
     { nameZh: "还剑湖", nameEn: "Hoan Kiem Lake", lon: 105.8523, lat: 21.0287, kind: "nature" },

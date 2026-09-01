@@ -10738,4 +10738,1099 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The hills contain numerous Buddhist and Hindu rock-cut sculptures dating from the Nguyen dynasty onward, making it an important religious and geological tourism site in central Vietnam.",
   },
+  // ============ Thailand ============
+  "doi-inthanon": {
+    seeing:
+      "Doi Inthanon is Thailand's highest peak at 2,565 m, a granite batholith and the high point of the Thanon Thongchai Range in northern Thailand.",
+    formation:
+      "The massif is a granite batholith intruded during the Cretaceous to Palaeogene; long weathering and erosion have left a rounded, dome-like summit with a striking elevation drop to the surrounding lowlands.",
+    observation:
+      "From the air, Doi Inthanon's summit is wreathed in cloud year-round; the noticeably cooler temperature at this elevation preserves a montane moss-forest ecosystem found nowhere else in Thailand.",
+    distinguish:
+      "Doi Inthanon and Doi Luang Chiang Dao are both iconic peaks of northern Thailand, but Doi Inthanon is a rounded granite batholith, while Doi Luang Chiang Dao is limestone karst riddled with a large cave system.",
+    concept:
+      "As the high point of the Thanon Thongchai Range — the southward extension of Myanmar's Shan Hills into Thailand — Doi Inthanon is a key reference for understanding how mainland Southeast Asia's mountain spine extends south.",
+    history:
+      "Named for the late Chiang Mai ruler Inthawichayanon, who was concerned about deforestation in the north during his lifetime; designated a national park in 1972.",
+  },
+  "doi-luang-chiang-dao": {
+    seeing:
+      "Doi Luang Chiang Dao is Thailand's third-highest peak at 2,138 m, a limestone karst massif riddled with one of the country's largest cave systems.",
+    formation:
+      "The massif's bedrock is Palaeozoic limestone; long dissolution by groundwater has carved an extensive cave network, leaving a steep, jagged outline that contrasts sharply with the rounded granite peaks nearby.",
+    observation:
+      "From the air, Doi Luang Chiang Dao's limestone cliffs rise almost vertically, a sharp contrast with the gentle valley floor around it; the entrance to Chiang Dao Cave at its foot is clearly visible.",
+    distinguish:
+      "Doi Luang Chiang Dao and Doi Inthanon are both northern Thai peaks, but Doi Luang Chiang Dao is jagged limestone karst riddled with caves, while Doi Inthanon is a rounded granite batholith.",
+    concept:
+      "Doi Luang Chiang Dao's steep karst topography and its extensive internal cave system are an important case for studying how long-term dissolution shapes underground cave networks in tropical limestone mountains.",
+    history:
+      "In 2021 the Doi Luang Chiang Dao Biosphere Reserve was added to UNESCO's Man and the Biosphere Programme, an important conservation area in northern Thailand.",
+  },
+  "doi-suthep-pui": {
+    seeing:
+      "Doi Suthep is a 1,676 m peak west of Chiang Mai; Wat Phra That Doi Suthep, founded on its slope in the 14th century, is one of northern Thailand's most important Buddhist pilgrimage sites.",
+    formation:
+      "The massif is mainly granite, forming a comparatively isolated mountain barrier on the west side of the Chiang Mai basin; long erosion has kept its overall conical shape largely intact.",
+    observation:
+      "From the air, Doi Suthep's slopes are covered in dense forest, with the golden roofs of Wat Phra That Doi Suthep standing out against the green mountainside; the old walled city of Chiang Mai and its moat are visible below.",
+    distinguish:
+      "Doi Suthep and Doi Inthanon both belong to northern Thailand's Thanon Thongchai Range, but Doi Suthep is lower and known for its hillside temple, while Doi Inthanon is the range's highest point.",
+    concept:
+      "As a natural barrier to the Chiang Mai basin, Doi Suthep is a sample for studying the relationship between northern Thailand's intermontane basin landforms and mountain settlement patterns.",
+    history:
+      "Wat Phra That Doi Suthep is traditionally said to have been founded in the 14th century during the Lanna kingdom; the mountain and neighbouring Doi Pui were jointly designated a national park in 1981.",
+  },
+  "khao-luang": {
+    seeing:
+      "Khao Luang is the highest peak on the southern Thai peninsula at 1,780 m, located in Nakhon Si Thammarat Province, built of granite.",
+    formation:
+      "The massif is a granite batholith; long weathering under a wet tropical climate has produced dense vegetation and a well-developed drainage network, with numerous rivers radiating outward from the mountain.",
+    observation:
+      "From the air, Khao Luang rises high above the narrow southern Thai peninsula, wreathed in cloud year-round; its wet mountain climate sustains dense rainforest and extensive orchards.",
+    distinguish:
+      "Khao Luang and Doi Inthanon are both among Thailand's highest peaks, but Khao Luang is the high point of the southern peninsula, while Doi Inthanon is the highest point in the country as a whole, several hundred kilometres apart.",
+    concept:
+      "As the highest peak on Thailand's narrow southern peninsula, Khao Luang is an important reference for understanding the north-south climate and vegetation contrasts along this elongated landform.",
+    history:
+      "Designated a national park in 1974; its wet mountain climate has long made it an important fruit-growing region in southern Thailand, with a long history of hillside orchards.",
+  },
+  "khao-yai": {
+    seeing:
+      "Khao Yai is a mountain forest spanning the south-western edge of the Khorat Plateau; designated in 1962, it was Thailand's first national park.",
+    formation:
+      "The massif is the uplifted south-western margin of the Khorat Plateau, its bedrock mainly sandstone and volcanic rock; long erosion has produced rolling, forested mountain terrain.",
+    observation:
+      "From the air, Khao Yai is covered in extensive evergreen and deciduous forest, with numerous waterfalls dropping along its valleys — a sharp landform contrast with the broad, flat plateau surface of the Khorat Plateau nearby.",
+    distinguish:
+      "Khao Yai and the Khorat Plateau share the same geological structure, but Khao Yai specifically refers to the uplifted, densely forested south-western margin, while the Khorat Plateau refers to the vast, flat plateau body to its north-east.",
+    concept:
+      "The Dong Phayayen–Khao Yai Forest Complex, of which Khao Yai is part, is one of the largest remaining evergreen forests in mainland Southeast Asia, an important sample for studying lowland evergreen forest ecosystems on the peninsula.",
+    history:
+      "Designated Thailand's first national park in 1962; in 2005 the \"Dong Phayayen–Khao Yai Forest Complex\" was inscribed on the UNESCO World Heritage List.",
+  },
+  "thung-yai-huai-kha-khaeng": {
+    seeing:
+      "The Thung Yai–Huai Kha Khaeng Wildlife Sanctuaries form a mountain forest along Thailand's border with Myanmar, covering about 622,200 hectares — the largest conservation area remaining in mainland Southeast Asia.",
+    formation:
+      "The sanctuaries lie along the southern Thanon Thongchai Range in western Thailand, terrain dominated by rolling low mountains and river valleys; long-limited human disturbance has preserved a relatively pristine landform and vegetation pattern.",
+    observation:
+      "From the air, the sanctuaries are covered in vast, continuous primary forest interlaced with mountains and valleys, one of the few areas in Thailand preserving a largely intact ecosystem at this scale.",
+    distinguish:
+      "Thung Yai–Huai Kha Khaeng and Khao Yai are both UNESCO World Heritage forest areas in Thailand, but Thung Yai–Huai Kha Khaeng lies in western Thailand along the Myanmar border, while Khao Yai lies on the edge of the central Khorat Plateau.",
+    concept:
+      "Home to roughly 77% of Thailand's large mammal populations, Thung Yai–Huai Kha Khaeng is an important sample for studying biodiversity conservation on the Southeast Asian mainland.",
+    history:
+      "Inscribed on the UNESCO World Heritage List in 1991, it remains one of the least human-disturbed forest areas remaining on the Southeast Asian mainland.",
+  },
+  "khorat-plateau": {
+    seeing:
+      "The Khorat Plateau is a vast sandstone tableland in north-eastern Thailand, covering roughly a third of the country's land area and the geographic core of the traditional Isan region.",
+    formation:
+      "The plateau's bedrock is mainly Mesozoic Khorat Group sandstone; long uplift and erosion have shaped today's comparatively flat surface, slightly higher at the rim than at the centre.",
+    observation:
+      "From the air, the Khorat Plateau is broad and flat, with extensive rain-fed farmland interspersed with sparse woodland, a sharp contrast to the paddy-field landscape of central Thailand's plain; the mountains along the plateau's rim are faintly visible.",
+    distinguish:
+      "The Khorat Plateau and Phu Kradueng share the same geological unit, but the Khorat Plateau refers to the vast tableland as a whole, while Phu Kradueng is a single, sharply outlined sandstone mesa on the plateau's eastern side.",
+    concept:
+      "As one of Thailand's largest landform units, the Khorat Plateau is an important sample for studying the relationship between inland tableland topography and rain-fed agriculture on the Southeast Asian mainland.",
+    history:
+      "The Phetchabun and Petchabun ranges along the plateau's rim have long formed a natural boundary between central and north-eastern Thailand; the formation of the Isan cultural region is closely tied to this geographic unit.",
+  },
+  "phu-kradueng": {
+    seeing:
+      "Phu Kradueng is a heart-shaped sandstone mesa in Loei Province, north-eastern Thailand, with a summit plateau covering about 60 km² at an average elevation of roughly 1,250 m.",
+    formation:
+      "The massif's bedrock is Jurassic Khorat Group sandstone; long differential weathering has stripped away the softer layers, leaving only the more resistant summit layer standing as a table-shaped plateau ringed by steep cliffs.",
+    observation:
+      "From the air, Phu Kradueng's outline is heart-shaped, ringed by near-vertical cliffs that contrast sharply with the low valley terrain around it; the summit plateau itself is comparatively flat and open.",
+    distinguish:
+      "Phu Kradueng and the Khorat Plateau share the same geological unit, but Phu Kradueng is a single, sharply outlined mesa standing on the plateau, while the Khorat Plateau is the vast tableland it rises from.",
+    concept:
+      "Phu Kradueng's cliff-ringed, table-shaped plateau form is a classic case for studying how differential weathering shapes an isolated mesa within sandstone strata.",
+    history:
+      "Designated Thailand's second national park in 1962, one of the country's earliest national parks.",
+  },
+  "similan-islands": {
+    seeing:
+      "The Similan Islands are a granite archipelago of 11 islands in the Andaman Sea, about 70 km offshore, with a land area of roughly 26 km².",
+    formation:
+      "The islands' bedrock is granite; the huge granite boulders and underwater pinnacles on the seabed are thought to be a remnant landform of a Mesozoic subduction event between the Burma and Sunda Plates.",
+    observation:
+      "From the air, the Similan Islands' broken, fragmented outlines are scattered across a turquoise sea, with shallow waters between the islands showing finely graded colour bands — among the clearest waters in the Andaman Sea.",
+    distinguish:
+      "The Similan and Surin Islands are both granite archipelagos in the Andaman Sea, but the Similans comprise 11 islands and cover a larger area, while the Surin Islands comprise 5 islands and lie closer to the Myanmar border.",
+    concept:
+      "The huge granite boulder landforms on the Similan Islands' seabed are an important sample for studying granite landforms left behind by Mesozoic plate subduction.",
+    history:
+      "Designated a national park in 1982, the Similan Islands are a well-known diving and snorkelling destination in the Andaman Sea.",
+  },
+  "surin-islands": {
+    seeing:
+      "The Surin Islands are a group of 5 granite islands in the Andaman Sea near the Myanmar border, designated a national marine park in 1981.",
+    formation:
+      "The islands' bedrock is also granite, part of the same geological unit as the Similan Islands; long marine erosion has shaped coral reefs and shallows around the islands.",
+    observation:
+      "From the air, the waters between the Surin Islands are broad and calm, with coral reefs distributed around the islands — waters traditionally used by the seafaring Moken people for fishing.",
+    distinguish:
+      "The Surin and Similan Islands are both granite archipelagos in the Andaman Sea, but the Surin Islands lie closer to the Myanmar border and comprise 5 islands, while the Similans comprise 11 islands and cover a larger area.",
+    concept:
+      "The coral reefs that have developed around the Surin Islands are an important sample for studying coral ecosystems around tropical granite islands.",
+    history:
+      "One of the traditional settlement areas of Thailand's seafaring Moken people, who have long lived aboard boats and subsisted on marine fishing.",
+  },
+  "ko-tarutao": {
+    seeing:
+      "Ko Tarutao is a limestone-and-sandstone island off Thailand's southernmost coast, the main island of the country's first national marine park, established in 1974.",
+    formation:
+      "The island's bedrock combines limestone and sandstone; long dissolution and erosion have shaped several limestone caves and steep cliffs across the island.",
+    observation:
+      "From the air, Ko Tarutao preserves extensive primary rainforest with a winding, deeply indented coastline — a sharp contrast to the bare granite boulder landforms of the Similan Islands.",
+    distinguish:
+      "Ko Tarutao and the Similan Islands are both Thai national marine parks, but Ko Tarutao's bedrock combines limestone and sandstone and preserves extensive primary rainforest, while the Similans are defined by granite boulder landforms.",
+    concept:
+      "As the main island of Thailand's first national marine park, Ko Tarutao is a sample for studying landform evolution on islands with mixed limestone-sandstone bedrock.",
+    history:
+      "Designated Thailand's first national marine park in 1974, the starting point of the country's marine protected-area system.",
+  },
+  "phi-phi-islands": {
+    seeing:
+      "The Phi Phi Islands are a group of Permian limestone islands in the Andaman Sea; a narrow sandbar connects Phi Phi Don and Phi Phi Leh.",
+    formation:
+      "The islands' bedrock is Permian limestone; long marine erosion and dissolution have carved steep limestone cliffs, with the connecting sandbar producing the islands' distinctive bow-tie outline.",
+    observation:
+      "From the air, the narrow sandbar between Phi Phi Don and Phi Phi Leh is clearly visible; Maya Bay is enclosed on three sides by steep limestone cliffs, forming an almost fully closed cove.",
+    distinguish:
+      "The Phi Phi Islands and Ao Phang Nga are both limestone karst landforms along the Andaman coast, but the Phi Phi Islands are a standalone island group offshore, while Ao Phang Nga is a drowned karst bay along the coast.",
+    concept:
+      "The bow-tie sandbar landform connecting the Phi Phi Islands is a sample for studying how marine erosion and sediment deposition together shape a connecting sandbar between islands.",
+    history:
+      "Maya Bay saw a sharp rise in visitors after becoming a famous film location; since 2018 the Thai government has periodically closed the bay to allow ecological recovery, a representative case of balancing tropical island tourism with ecological protection.",
+  },
+  "ao-phang-nga": {
+    seeing:
+      "Ao Phang Nga is a roughly 400 km² drowned karst bay in the Andaman Sea off southern Thailand; Khao Phing Kan (\"James Bond Island\") is one of its most iconic landmarks.",
+    formation:
+      "The bay's bedrock is Permian Ratburi limestone; when sea level was lower during the last glacial period, the area formed a landscape of terrestrial karst towers, which were later drowned as sea level rose, leaving only their tops emergent as today's steep, isolated rock islands.",
+    observation:
+      "From the air, dozens of steep, isolated limestone towers are scattered across Ao Phang Nga, with dense mangroves growing along the bay's intertidal zone — a classic drowned karst bay landscape.",
+    distinguish:
+      "Ao Phang Nga and the Krabi Karst Coast are both limestone karst landforms along the Andaman coast, but Ao Phang Nga is a comparatively enclosed drowned bay, while the Krabi Karst Coast is a stretch of steep cliffs along an open shoreline.",
+    concept:
+      "The drowned karst landform of Ao Phang Nga is a classic case for studying how sea-level change transforms a terrestrial karst-tower landscape into an offshore island group.",
+    history:
+      "Designated a national park in 1981, Khao Phing Kan became widely known after featuring in a 1974 James Bond film and has since become the bay's most recognisable landmark.",
+  },
+  "krabi-karst-coast": {
+    seeing:
+      "The Krabi Karst Coast is a stretch of Andaman coastline defined by steep limestone tower cliffs, with Railay Peninsula among its most representative sites.",
+    formation:
+      "The coastal bedrock is also Permian limestone; long marine erosion has carved deep notches at the base of the cliffs, and in some areas erosion has produced isolated sea stacks and caves.",
+    observation:
+      "From the air, Railay Peninsula is ringed on three sides by vertical limestone cliffs, reachable only by sea; climbers on the cliff faces make a striking visual contrast against the turquoise water below.",
+    distinguish:
+      "The Krabi Karst Coast and Ao Phang Nga are both limestone karst landforms along the Andaman coast, but the Krabi Karst Coast is a stretch of steep cliffs along an open shoreline, while Ao Phang Nga is a comparatively enclosed drowned bay island group.",
+    concept:
+      "The steep cliff landforms of the Krabi Karst Coast are a sample for studying how long-term marine erosion shapes cliff scenery in tropical coastal limestone.",
+    history:
+      "Railay Peninsula's enclosed terrain has kept it largely undeveloped by land access, preserving a comparatively pristine coastal landscape, and it is now a world-renowned destination for rock climbing and deep-water soloing.",
+  },
+  "khao-sam-roi-yot": {
+    seeing:
+      "Khao Sam Roi Yot (\"the mountain with three hundred peaks\") is a range of some 300 limestone peaks along the Gulf of Thailand coast, its highest point reaching 605 m.",
+    formation:
+      "The massif's bedrock is limestone; long dissolution has carved numerous caves within it, of which Phraya Nakhon Cave is the largest and most notable.",
+    observation:
+      "From the air, three hundred low limestone peaks are scattered along the Gulf of Thailand coast, while the freshwater marsh of Thung Sam Roi Yot at the range's north-western corner presents a strikingly different open wetland landscape.",
+    distinguish:
+      "Khao Sam Roi Yot and Ao Phang Nga are both limestone karst landforms on the Thai coast, but Khao Sam Roi Yot is a cluster of low peaks on land, while Ao Phang Nga is a drowned karst tower island group.",
+    concept:
+      "The combination of karst mountains and freshwater marsh at Khao Sam Roi Yot is a sample for studying the symbiotic relationship between karst mountains and coastal wetlands.",
+    history:
+      "Designated Thailand's first marine-type national park in 1966; the royal pavilion inside Phraya Nakhon Cave is well known for having been visited by Thai kings in the 19th century.",
+  },
+  "thung-salaeng-luang": {
+    seeing:
+      "Thung Salaeng Luang is a highland meadow at 300–1,028 m elevation on the border of Phitsanulok and Phetchabun provinces in north-central Thailand, known as \"Thailand's savanna.\"",
+    formation:
+      "The grassland's bedrock is mainly limestone and slate; a long seasonal alternation between wet and dry conditions, combined with frequent natural fires, has together suppressed tree growth, producing a landscape of open grassland interspersed with sparse pine forest.",
+    observation:
+      "From the air, Thung Salaeng Luang presents an open, golden grassland landscape strikingly different from the surrounding evergreen forest, dotted with scattered pines — a rare non-forested highland landform in Thailand.",
+    distinguish:
+      "Thung Salaeng Luang and the Khorat Plateau are both inland highland landforms in Thailand, but Thung Salaeng Luang is defined by open meadow and sparse pine forest, while the Khorat Plateau is a flat tableland covered mainly in rain-fed farmland.",
+    concept:
+      "As a rare large-scale highland meadow in Thailand, Thung Salaeng Luang is a sample for studying how seasonal wet-dry alternation and fire together produce non-forest vegetation cover in a tropical monsoon climate.",
+    history:
+      "Nicknamed \"Thailand's savanna\" for its resemblance to African savanna landscapes, it is an important wildlife habitat within the country.",
+  },
+  "cheow-larn-lake": {
+    seeing:
+      "Cheow Larn Lake is an artificial reservoir created in 1987 by damming the Klong Saeng River at Ratchaprapha Dam, its waters lying along the southern edge of Khao Sok National Park.",
+    formation:
+      "After the reservoir filled, most of the base of the terrestrial limestone karst towers that once stood exposed was submerged, leaving only their tops above the water — producing today's landscape of hundreds of limestone towers scattered across the lake.",
+    observation:
+      "From the air, Cheow Larn Lake's water is a deep green, with hundreds of limestone towers rising vertically from its surface — a landform comparison often drawn across the region with the karst towers of Angkor in Cambodia or the Li River in Guilin, China.",
+    distinguish:
+      "Cheow Larn Lake and Bueng Boraphet are both important lakes in Thailand, but Cheow Larn is a dammed reservoir studded with karst towers, while Bueng Boraphet is a natural freshwater marsh turned into open water by a dam.",
+    concept:
+      "The drowned karst-tower landscape of Cheow Larn Lake is a sample for studying how a water-impoundment project transforms a terrestrial karst landform into an island-studded reservoir landscape.",
+    history:
+      "Ratchaprapha Dam, completed in 1987, is named for Thailand's late Queen Sirikit and serves both irrigation and hydropower functions.",
+  },
+  "bueng-boraphet": {
+    seeing:
+      "Bueng Boraphet is a natural freshwater marsh lake near the confluence of the Nan and Ping rivers in central Thailand, covering about 224 km² and the largest freshwater wetland in central Thailand.",
+    formation:
+      "The lake was originally a natural low-lying marsh; a dam built in 1930 impounded water to form today's open water surface, while the lakebed still preserves extensive natural marsh and aquatic plant communities.",
+    observation:
+      "From the air, Bueng Boraphet's water is broad and calm, with expanses of pink lotus covering the surface in certain seasons, interwoven with the surrounding farmland and villages into a classic central-Thai wetland landscape.",
+    distinguish:
+      "Bueng Boraphet and Cheow Larn Lake are both lakes in Thailand shaped by human intervention, but Bueng Boraphet is a natural marsh turned into open water by a dam, known for its migratory bird habitat, while Cheow Larn is a dammed reservoir known for its drowned karst-tower landscape.",
+    concept:
+      "As central Thailand's largest freshwater wetland, Bueng Boraphet is a sample for studying the relationship between a natural marsh ecosystem at a river confluence and migratory bird patterns.",
+    history:
+      "After being dammed in 1930, it gradually developed into an important fishery and wintering site for migratory birds in central Thailand, now managed by the wildlife conservation authorities.",
+  },
+  "chao-phraya-river": {
+    seeing:
+      "The Chao Phraya River begins where the Ping and Nan rivers meet in Nakhon Sawan Province and runs about 372 km, the main river system of the central Thai plain.",
+    formation:
+      "The upstream Ping and Nan rivers each rise in the mountains of northern Thailand; sediment they carry has long deposited across the central plain, shaping the broad, flat alluvial plain of the lower Chao Phraya.",
+    observation:
+      "From the air, the Ping and Nan rivers meet in a Y-shaped confluence near Nakhon Sawan, the water broad at the junction; the main Chao Phraya then winds south past Bangkok to the Gulf of Thailand.",
+    distinguish:
+      "The Chao Phraya River and the Thai stretch of the Mekong are both important rivers in Thailand, but the Chao Phraya runs entirely through inland central Thailand to the Gulf of Thailand, while the Mekong's Thai stretch forms the Thailand–Laos border along the north-east.",
+    concept:
+      "As the main artery of the central Thai plain, the Chao Phraya is a classic case for studying how river deposition shapes an inland plain on the Southeast Asian mainland.",
+    history:
+      "The Chao Phraya's banks have been the political and economic heart of Thailand since the Ayutthaya period, and the capital, Bangkok, remains built around this river today.",
+  },
+  "mekong-river-th": {
+    seeing:
+      "The Thai stretch of the Mekong forms roughly 976 km of the Thailand–Laos border along Thailand's north-east; the section near Chiang Khan is known for its dense scattering of rapids.",
+    formation:
+      "The Mekong rises on the Qinghai-Tibet Plateau in China and flows through Myanmar and Laos before entering Thailand; long erosion along Thailand's north-eastern border has shaped a broad valley and a riverbed landform that shifts markedly with the seasons.",
+    observation:
+      "From the air, the Thai stretch of the Mekong is broad, with farmland and villages densely lined along its banks; near Chiang Khan, scattered rocky rapids in the riverbed become clearly visible when water levels drop in the dry season.",
+    distinguish:
+      "The Thai stretch of the Mekong and the Chao Phraya River are both important rivers in Thailand, but the Mekong's Thai stretch forms the Thailand–Laos border along the north-east, while the Chao Phraya runs entirely through inland central Thailand.",
+    concept:
+      "As a river crossing six countries, the Mekong's Thai stretch is an important case for studying how a transboundary river forms a national border and shapes the landforms and settlements along it.",
+    history:
+      "Towns along the Mekong such as Chiang Khan have long served as important centres of trade and cultural exchange between north-eastern Thailand and Laos.",
+  },
+  "mun-river": {
+    seeing:
+      "The Mun River rises in the Phetchabun Range in the south-western Khorat Plateau and flows east across the plateau's southern portion, the main river of Thailand's Isan region.",
+    formation:
+      "The Mun's upper course rises in the hills along the plateau's rim and flows east across the open tableland, gaining significant volume after receiving the Chi River as a tributary, before joining the Mekong near Ubon Ratchathani.",
+    observation:
+      "From the air, the Mun River winds through the open rain-fed farmland of the southern Khorat Plateau, the water opening out broadly where it meets the Mekong near Ubon Ratchathani.",
+    distinguish:
+      "The Mun River and the Thai stretch of the Mekong both flow through north-eastern Thailand, but the Mun runs entirely through the inland Khorat Plateau before joining the Mekong, while the Mekong's Thai stretch forms the national border along the north-east.",
+    concept:
+      "As the Khorat Plateau's main drainage river, the Mun is a classic case for studying how an inland tableland's river system feeds into a transboundary river.",
+    history:
+      "The Mun River basin has long been the core area of population and agricultural activity in Thailand's Isan region, with cities such as Ubon Ratchathani along its banks continuing to develop around the river to this day.",
+  },
+  "kwai-river-valley": {
+    seeing:
+      "The Kwai River Valley is cut by the Khwae Noi River through the southern Thanon Thongchai Range in western Thailand; the Bridge on the River Kwai is the widely known witness to this history.",
+    formation:
+      "The valley was shaped by long erosion of the mountain bedrock by the Khwae Noi River, with stepped river terraces developed along both banks; the valley floor is comparatively gentle, making it well suited to transport routes.",
+    observation:
+      "From the air, mountains flank both sides of the Kwai River Valley, with the river winding along its floor; the Bridge on the River Kwai spans the water, and a railway winds along the valley wall — a classic mountain-valley transport corridor landform.",
+    distinguish:
+      "The Kwai River Valley and Erawan Waterfall both lie within the same mountain region of western Thailand, but the Kwai River Valley is a complete mountain-valley transport corridor, while Erawan Waterfall is a stepped waterfall landform on an upstream tributary within the valley.",
+    concept:
+      "As a natural corridor linking the central Thai plain with the Myanmar border, the Kwai River Valley is a sample for studying the relationship between mountain-valley landforms and transport-route siting.",
+    history:
+      "During World War II, Japanese forces used forced prisoner-of-war and civilian labour to build the Thailand–Burma Railway through this valley; the Bridge on the River Kwai, completed in 1943, is the widely known witness to this history, recorded in Thai national archives and multiple war memorial sites.",
+  },
+  "erawan-waterfall": {
+    seeing:
+      "Erawan Waterfall is a seven-tiered cascade formed as a tributary of the Khwae Noi River drops down a series of limestone terraces, with natural emerald-green travertine pools formed between the tiers.",
+    formation:
+      "The waterfall follows a sequence of limestone terraces; dissolved calcium carbonate in the stream water continuously precipitates along the terrace edges to form travertine dams, impounding the stream tier by tier into stacked pools and cascades.",
+    observation:
+      "From the air, the seven tiers cascade down the hillside in sequence, each pool showing the distinctive emerald-green colour produced by mineral deposition, set against the dense tropical rainforest around it.",
+    distinguish:
+      "Erawan Waterfall and Sam Phan Bok are both representative landforms in Thailand shaped by flowing water, but Erawan Waterfall is a stepped cascade formed by travertine deposition, while Sam Phan Bok is a field of potholes carved by the Mekong's seasonal water-level changes eroding a sandstone riverbed.",
+    concept:
+      "The formation of Erawan Waterfall's travertine stepped pools is a classic case for studying how calcium carbonate deposition in tropical limestone-region streams shapes a stepped waterfall landform.",
+    history:
+      "Designated a national park in 1975; \"Erawan\" is named for a rock formation near the waterfall's top resembling Erawan, the three-headed elephant of Hindu mythology.",
+  },
+  "sam-phan-bok": {
+    seeing:
+      "Sam Phan Bok (\"three thousand shallow lakes\" or potholes) is the largest sandstone erosional remnant landform in the Mekong's main riverbed, visible only during the dry season from December to April.",
+    formation:
+      "The riverbed's bedrock is sandstone; the Mekong's seasonal water-level changes repeatedly submerge and expose the riverbed, and sand and gravel carried by the current swirl and abrade the rock in depressions, carving numerous circular potholes and groove-like landforms.",
+    observation:
+      "From the air, once dry-season water levels drop, the riverbed's dense circular potholes and winding grooves emerge above the water, the varied sandstone shapes showing shades of orange-red in the sunlight.",
+    distinguish:
+      "Sam Phan Bok and Erawan Waterfall are both representative landforms in Thailand shaped by flowing water, but Sam Phan Bok is a field of potholes carved by the Mekong's seasonal water-level changes eroding a sandstone riverbed, while Erawan Waterfall is a stepped cascade formed by deposition along limestone terraces.",
+    concept:
+      "The formation of Sam Phan Bok's potholes is an important case for studying how a great river's seasonal water-level changes long abrade a sandstone riverbed into pothole landforms.",
+    history:
+      "Local communities have long linked Sam Phan Bok's seasonal emergence to the traditional timing of Mekong fishing activities, reflecting generations of accumulated experience observing the river's hydrological changes.",
+  },
+  "chao-phraya-delta": {
+    seeing:
+      "The Chao Phraya Delta is the low-lying alluvial delta at the Chao Phraya's mouth; Bangkok, Thailand's capital, is built on the delta, with parts of the city under 2 m in elevation.",
+    formation:
+      "The delta formed from sediment long carried by the Chao Phraya and deposited near its mouth; the terrain is extremely flat and low-lying, historically a coastal lowland of tidal marsh interlaced with mangroves.",
+    observation:
+      "From the air, the Chao Phraya Delta is broad and flat, with Bangkok's dense urban fabric interwoven with remaining rice paddies and a network of canals, the river winding through the city.",
+    distinguish:
+      "The Chao Phraya Delta and the Chao Phraya River are different stretches of the same river system: the Chao Phraya River specifically refers to the main channel from Nakhon Sawan to the river mouth, while the Chao Phraya Delta refers to the low-plain landform built by sediment deposition near that mouth.",
+    concept:
+      "Facing the combined pressures of land subsidence and sea-level rise, the Chao Phraya Delta is an important case for studying how a tropical river-delta city confronts the challenges of climate change and geological subsidence.",
+    history:
+      "Since becoming Thailand's capital in 1782, Bangkok has developed around the Chao Phraya Delta's waterway network; canals were once the city's primary mode of transport, and some remain in use today.",
+  },
+  // ============ South Korea ============
+  "taebaek-mountains": {
+    seeing:
+      "The Taebaek Mountains form the north-south spine along Korea's east coast, dividing the peninsula's landscape and climate; the range's namesake peak, Mount Taebaek, rises to 1,567 m.",
+    formation:
+      "The range is built mainly of Precambrian-to-Palaeozoic metamorphic and sedimentary rock; long-term tectonic uplift and differential erosion produced today's steep eastern flank and gentler western slope.",
+    observation:
+      "From the air the ridge runs roughly north-south, dropping sharply to the coast on its eastern side while easing into inland hills and valleys to the west; the open platform atop Mount Taebaek, site of the summit altar, stands out clearly.",
+    distinguish:
+      "The Taebaek Mountains and Seoraksan both belong to the Baekdudaegan skeleton range, but \"Taebaek Mountains\" refers to the entire spine running along the east coast, while Seoraksan is a specific granite-peak massif in its northern section.",
+    concept:
+      "The Taebaek Mountains form the watershed between the Han and Nakdong river systems, making them a key reference for understanding the Korean Peninsula's \"spinal\" landform structure.",
+    history:
+      "The summit altar atop Mount Taebaek has long served as a site for sky-worship rites, one of the representative surviving traditions of mountain veneration on the Korean Peninsula.",
+  },
+  seoraksan: {
+    seeing:
+      "Seoraksan is South Korea's third-highest peak at 1,708 m, known for its granite peaks, deep-cut gorges, and clearly banded seasonal vegetation.",
+    formation:
+      "The massif is built mainly of Cretaceous granite; long weathering and erosion have carved sharp, steep peaks and deeply incised rock faces, a classic example of granite landforms on the Korean Peninsula.",
+    observation:
+      "From the air, jagged granite peaks rise one after another, with deep valleys winding between them; Daecheongbong, the highest point, offers wide views in every direction.",
+    distinguish:
+      "Seoraksan and Songnisan are both predominantly granite mountains, but Seoraksan's peaks are taller and sharper with deeper gorges, while Songnisan's summits are comparatively low and rounded.",
+    concept:
+      "Seoraksan's granite peak topography is an important case for studying how Cretaceous granite bodies on the Korean Peninsula weather and erode into classic mountain scenery.",
+    history:
+      "Designated a Natural Monument protection area in 1965 and a UNESCO Biosphere Reserve in 1982, Seoraksan is one of the first mountain areas in Korea to receive systematic nature protection.",
+  },
+  jirisan: {
+    seeing:
+      "Jirisan is the highest peak on mainland South Korea at 1,915 m, spanning three provinces; it became Korea's first national park in 1967.",
+    formation:
+      "The massif is built mainly of Precambrian gneiss and granite gneiss, among the oldest exposed rock on the Korean Peninsula; long erosion has left the mountain broad and massive rather than sharply peaked.",
+    observation:
+      "From the air, Jirisan appears as a vast, rounded massif with numerous ridges radiating outward, a sharp contrast to Seoraksan's forest of sharp peaks; the ring trail circling the mountain is clearly visible.",
+    distinguish:
+      "Jirisan and Seoraksan are both iconic Korean peaks, but Jirisan is built of ancient gneiss and has a broad, massive form, while Seoraksan is built of younger granite and is defined by sharp peaks.",
+    concept:
+      "The Precambrian gneiss exposed on Jirisan offers an important window into the Korean Peninsula's oldest crustal rock.",
+    history:
+      "Jirisan's designation as Korea's first national park in 1967 marked the starting point of the country's national park system.",
+  },
+  songnisan: {
+    seeing:
+      "Songnisan is a relatively isolated massif in central Korea; its highest peak, Cheonhwangbong, reaches 1,058 m, and it became Korea's sixth national park in 1970.",
+    formation:
+      "The massif is built of granite and gneiss; long erosion has left it comparatively low and rounded, standing in clear contrast to the surrounding lowlands.",
+    observation:
+      "From the air, Songnisan rises as an isolated mass amid gentle surrounding hills, without especially steep relief; the valley holding Beopjusa Temple is clearly visible at its foot.",
+    distinguish:
+      "Songnisan and Wolchulsan are both mountains that rise relatively independently from surrounding flatland, but Songnisan is larger with a rounder form, while Wolchulsan is a smaller, steeper cluster of granite peaks.",
+    concept:
+      "The name \"Songnisan\" (\"set apart from the mundane world\") is said to reflect its isolated, secluded topography — an example of how landform and cultural perception intertwine in Korea's traditional \"famous mountain\" culture.",
+    history:
+      "Beopjusa Temple at the mountain's foot traces its founding to the Silla period, and preserves important Buddhist heritage including a rock-cut standing Buddha.",
+  },
+  deogyusan: {
+    seeing:
+      "Deogyusan is South Korea's fourth-highest peak at 1,614 m, designated the country's tenth national park in 1975.",
+    formation:
+      "The massif is built mainly of granite and metamorphic rock; the summit area preserves a subalpine coniferous forest zone, one of the few such vegetation belts remaining in Korea's mountains.",
+    observation:
+      "From the air, Deogyusan's ridgeline rolls continuously, with dense forest around its summit, Hyangjeokbong; winter snow often blankets the peak, creating a striking elevation contrast with the ski resorts at its foot in Muju.",
+    distinguish:
+      "Deogyusan and Jirisan share similar geology, but Deogyusan is somewhat lower and known for its subalpine conifers and winter snow scenery, while Jirisan is known for its greater bulk and its status as Korea's first national park.",
+    concept:
+      "The subalpine coniferous belt preserved on Deogyusan offers a sample for studying vertical vegetation zonation in the Korean Peninsula's temperate mountains.",
+    history:
+      "The Muju area at the mountain's foot developed into one of Korea's earliest alpine ski resorts from the mid-20th century, an important site in the history of Korean winter sports.",
+  },
+  hallasan: {
+    seeing:
+      "Hallasan, South Korea's highest peak at 1,947 m, is the shield volcano at the centre of Jeju Island; its summit crater lake, Baengnokdam, formed where water pooled in the caldera.",
+    formation:
+      "Hallasan built up over hundreds of thousands of years through repeated basaltic and trachytic eruptions, forming a comparatively gentle, broad shield-volcano profile; its most recent recorded activity dates to roughly a thousand years ago.",
+    observation:
+      "From the air, Hallasan's symmetrical, gently sloping cone spreads out on all sides; the summit crater lake, Baengnokdam (\"White Deer Pond\"), is named for its resemblance to deer coming to drink, and hundreds of small parasitic cones dot the surrounding slopes.",
+    distinguish:
+      "Hallasan and Ulleungdo are both volcanic landforms in Korea, but Hallasan is a broad, gently sloping shield volcano with a summit crater lake, while Ulleungdo is a steep stratovolcano island.",
+    concept:
+      "The composite volcanic landform of Hallasan's shield volcano together with its densely clustered parasitic cones is an important case for studying repeated basaltic eruption over long timescales.",
+    history:
+      "In 2007 \"Jeju Volcanic Island and Lava Tubes\" was inscribed on the UNESCO World Heritage List, with Hallasan as its core component.",
+  },
+  "jeju-island": {
+    seeing:
+      "Jeju Island, South Korea's largest island, was built entirely by basaltic volcanic activity; 368 small parasitic cones known as oreum dot the island, and its coastline is known for lava landforms and tuff sea-cliffs.",
+    formation:
+      "The island's main body formed through repeated basaltic eruptions between roughly 1.8 million and 250,000 years ago; after volcanism ceased, sea erosion of the coastal lava layers carved landforms such as the tuff sea-cliffs of Seongsan Ilchulbong.",
+    observation:
+      "From the air, the island is roughly oval, with Hallasan rising at its centre and numerous low, rounded parasitic cones scattered around it; on the east coast, Seongsan Ilchulbong juts into the sea like a great green crown.",
+    distinguish:
+      "Jeju Island and Hallasan are often mentioned together, but \"Jeju Island\" refers to the whole volcanic island and its coastal lava landforms, while \"Hallasan\" refers specifically to the central volcanic massif itself.",
+    concept:
+      "Jeju's dense cluster of parasitic cones is the world's highest concentration derived from a single volcano, making it a classic case for studying how repeated basaltic eruptions build composite volcanic landforms.",
+    history:
+      "In 2010 the whole of Jeju Island was designated a UNESCO Global Geopark, complementing its 2007 World Heritage inscription and together underpinning Jeju's international standing in nature conservation.",
+  },
+  ulleungdo: {
+    seeing:
+      "Ulleungdo is a Quaternary volcanic island in the waters east of the Korean Peninsula; its highest point, Seonginbong, reaches 984 m, and it is the emergent summit of a stratovolcano rising roughly 3,000 m from the seafloor.",
+    formation:
+      "The island built up through multiple phases of submarine and subaerial eruption from about 4.6 million to roughly 5,000 years ago, with volcanic rock consisting mainly of trachyte, andesite, and basalt.",
+    observation:
+      "From the air, Ulleungdo's outline is steep and compact; at its centre, the Nari Basin is a well-preserved caldera landform ringed by high volcanic walls.",
+    distinguish:
+      "Ulleungdo and Jeju Island (site of Hallasan) are both volcanic islands in Korea, but Ulleungdo is steeper and more compact with a well-preserved caldera, while Jeju is broader and gentler in relief.",
+    concept:
+      "An explosive eruption on Ulleungdo in the early Holocene deposited ash as far as central Honshu, Japan, making it an important reference point for studying the regional reach of Quaternary volcanism in Northeast Asia.",
+    history:
+      "Ulleungdo's volcanic record spans several million years, with its most recent eruption roughly 5,000 years ago; the Nari Basin remains a key site for studying the island's volcanic evolution.",
+  },
+  "haean-basin": {
+    seeing:
+      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon Province, about 5 km across; its bowl-like shape led UN forces during the Korean War to nickname it the \"Punchbowl.\"",
+    formation:
+      "The basin's centre is Jurassic granite while its rim is Precambrian metamorphic rock; the difference in weathering resistance between the two is thought to have shaped the basin, with the more easily eroded granite hollowed out at the centre and the harder rock left standing as the surrounding ridge.",
+    observation:
+      "From the air, the basin forms a neat, roughly oval depression, ringed by ridges rising 500–800 m above its floor; villages and fields are laid out neatly on the basin floor, contrasting sharply with the steep terrain around it.",
+    distinguish:
+      "The Haean Basin and Yongneup on Mt. Daeam are both in the Gangwon mountains near the Military Demarcation Line, but the Haean Basin is a large-scale erosional basin, while Yongneup is a small high-altitude peat moor.",
+    concept:
+      "The Haean Basin's bowl-shaped depression, formed by differential weathering, is a clear example of how contrasting rock resistance shapes basin topography.",
+    history:
+      "The basin's northern edge lies near the Military Demarcation Line established during the Korean War, and its nickname \"Punchbowl\" originates from UN forces' wartime field records.",
+  },
+  "yongneup-daeamsan": {
+    seeing:
+      "Yongneup, on the northwest slope of Mt. Daeam at 1,280 m elevation, is a high-altitude peat moor covering about 7,490 m², the only site in Korea preserving a peat layer.",
+    formation:
+      "The moor sits in a shallow, saucer-like depression on the mountainside with poor drainage and standing water; under these low-oxygen conditions, decaying moor vegetation gradually accumulated into a peat layer.",
+    observation:
+      "From the air, the moor presents an open herbaceous wetland landscape strikingly different from the surrounding forest, dotted with pools of varying depth, its boundary sharply defined against the mixed conifer-broadleaf forest around it.",
+    distinguish:
+      "Yongneup on Mt. Daeam and the Haean Basin are both in the Gangwon mountains, but Yongneup is a small high-altitude peat moor, while the Haean Basin is a large-scale erosional basin.",
+    concept:
+      "As Korea's only high-altitude moor preserving a peat layer, Yongneup offers a unique sample for studying vegetation succession in temperate mountain peat wetlands.",
+    history:
+      "In 1997, Yongneup became the first wetland in Korea listed under the Ramsar Convention, marking the starting point of Korea's wetland conservation efforts.",
+  },
+  "cheorwon-lava-plateau": {
+    seeing:
+      "The Cheorwon Lava Plateau is a broad basalt plateau formed by Quaternary lava that flowed down an ancient valley and solidified; the gorge cut through the plateau by the Hantan River is its most distinctive feature.",
+    formation:
+      "The lava erupted from a dormant volcano in the northern Korean Peninsula and flowed roughly 95 km south along an old valley before solidifying into a broad basalt plateau; the Hantan River later cut a new course along the plateau's edge, forming a gorge with classic columnar jointing.",
+    observation:
+      "From the air, the plateau is broad and flat overall, with the Hantan River winding through a deep gorge cut into it; regularly arranged basalt columns line the gorge walls, and isolated lava-remnant hills such as Goseokjeong stand out along the way.",
+    distinguish:
+      "The Cheorwon Lava Plateau and Juwangsan Gorge both display columnar jointing, but the Cheorwon plateau formed from solidified basalt lava flows later re-incised by a river, while Juwangsan Gorge formed from a river eroding rhyolitic tuff.",
+    concept:
+      "The Cheorwon Lava Plateau shows a two-stage landform evolution — lava accumulating along an ancient valley, then a new river course cutting back into it — making it an important case for studying Quaternary basalt plateau formation.",
+    history:
+      "In 2020 the \"Hantangang River volcanic landforms\" were designated a UNESCO Global Geopark; the area was also a site of military activity during the Korean War.",
+  },
+  "charyeong-mountains": {
+    seeing:
+      "The Charyeong Mountains are a low, ancient range running through South Chungcheong Province; its highest peak, Chilgapsan, reaches 561 m, and long erosion has worn the range into rounded, gentle relief.",
+    formation:
+      "The range's bedrock is mainly old metamorphic rock and granite; over a long geological span, weathering and erosion have worn down what may once have been a taller range into today's low, rounded hills.",
+    observation:
+      "From the air, the Charyeong Mountains roll gently, their peaks low and rounded, transitioning without sharp relief into the surrounding plains and hills — a classic example of mature, worn-down mountain topography.",
+    distinguish:
+      "The Charyeong Mountains and the Taebaek Mountains are both structural backbones of the Korean Peninsula, but the Charyeong range is lower and gentler, while the Taebaek Mountains are comparatively tall and steep.",
+    concept:
+      "The low, rounded form of the Charyeong Mountains is a classic case for studying how ancient mountain ranges wear down toward peneplanation through long-term weathering and erosion.",
+    history:
+      "The Charyeong Mountains have historically marked the natural boundary between Korea's traditional geographic regions of Hoseo (Chungcheong) and Honam (Jeolla), a distinction still used in Korean geographic culture today.",
+  },
+  wolchulsan: {
+    seeing:
+      "Wolchulsan is a cluster of granite peaks rising abruptly from the surrounding flatland; its highest peak, Cheonhwangbong, reaches 809 m, and in 1988 it became Korea's smallest national park.",
+    formation:
+      "The massif is granite, surrounded by comparatively flat lowland; long differential weathering left the more resistant granite standing as steep, isolated peaks while the softer surrounding rock was worn down to level ground.",
+    observation:
+      "From the air, Wolchulsan's peaks rise abruptly from the flat farmland around them, sharply outlined against their surroundings; the suspension \"cloud bridge\" spanning two of its peaks stands out clearly.",
+    distinguish:
+      "Wolchulsan and Songnisan both rise relatively independently from surrounding flatland, but Wolchulsan is smaller with sharper, steeper peaks, while Songnisan is larger and more gently rounded.",
+    concept:
+      "Wolchulsan's abrupt rise from flat surrounding terrain is a classic case for studying how differential weathering of a granite body leaves isolated residual peaks standing in a flat landscape.",
+    history:
+      "Wolchulsan has long been regarded as a notable mountain of south-western Korea for its striking isolated-peak scenery; the temples and rock-cut Buddha images on its slopes record a long local Buddhist tradition.",
+  },
+  "suncheon-bay-wetland": {
+    seeing:
+      "Suncheon Bay Wetland is an estuarine wetland made up of a stream, tidal flats, and reed beds; in 2006 it became Korea's first coastal wetland listed under the Ramsar Convention.",
+    formation:
+      "The wetland sits in a low-gradient estuarine area within Suncheon Bay; sediment carried by the stream has long accumulated in the bay to form broad intertidal flats, while the mixing of fresh and salt water further inland has produced extensive reed beds.",
+    observation:
+      "From the air, winding tidal creeks trace a branching, tree-like pattern across the flats, while the golden reed beds inland present a striking contrast to the mudflats; the Yongsan observation deck is the classic vantage point for this view.",
+    distinguish:
+      "Suncheon Bay Wetland and the Nakdong River Estuary are both important estuarine wetlands in Korea, but Suncheon Bay is known for its combination of extensive reed beds and intertidal flats, while the Nakdong estuary is defined by sandbars formed by a braided river channel.",
+    concept:
+      "The combination of tidal creeks, mudflats, and reed beds at Suncheon Bay is a classic case for studying how river and tidal processes together shape coastal wetland landforms.",
+    history:
+      "In 2021 the Suncheon Bay tidal flat was inscribed on the UNESCO World Heritage List as a component of the transboundary \"Getbol, Korean Tidal Flats\" series.",
+  },
+  "byeonsan-peninsula-coast": {
+    seeing:
+      "The Byeonsan Peninsula Coast is home to Korea's only national park combining mountain and coastal scenery; the layered sea cliffs at Chaeseokgang are its most distinctive feature.",
+    formation:
+      "The coastal bedrock is layered sedimentary rock; long wave erosion has preferentially worn away the softer layers, leaving the harder layers standing in stacked ridges resembling piles of books.",
+    observation:
+      "From the air, the Chaeseokgang coastline shows neat, horizontal rock banding, with broad sections of sea cliff exposed at low tide, contrasting sharply with the lush forested mountains on the inland side of the peninsula.",
+    distinguish:
+      "The Byeonsan Peninsula Coast and the Taean Coast are both on Korea's west coast, but Byeonsan is known for its layered sedimentary sea cliffs combined with mountain scenery, while the Taean Coast is known for its large-scale coastal dunes.",
+    concept:
+      "The layered sea cliffs at Chaeseokgang are a direct illustration of how wave erosion differentially weathers layers of varying hardness to produce banded coastal scenery.",
+    history:
+      "In 1988 the Byeonsan Peninsula was designated a national park, the only case in Korea where mountain and coastal landscapes are combined within a single national park.",
+  },
+  "taean-coast-dunes": {
+    seeing:
+      "The Taean Coast is a roughly 230-km stretch of shoreline on the west coast, designated a national park in 1978; the Sinduri area preserves Korea's largest coastal dune field.",
+    formation:
+      "The dunes formed from fine sand carried and deposited by prevailing winds and longshore currents; the broad, gently sloping beach at Sinduri provided favourable conditions for sustained sand accumulation.",
+    observation:
+      "From the air, the Taean coastline winds and curves, with the Sinduri dunes standing out as a pale, sandy expanse distinct from the surrounding farmland and villages; wind-formed ripple patterns are visible across parts of the dune field.",
+    distinguish:
+      "The Taean Coast and the Byeonsan Peninsula Coast are both on Korea's west coast, but Taean is known for its large-scale dune landforms, while Byeonsan is known for its layered sedimentary sea cliffs combined with mountain scenery.",
+    concept:
+      "The formation of the Sinduri dunes is an important case for studying temperate coastal aeolian sand deposition and its characteristic plant communities.",
+    history:
+      "Designated a national park in 1978, the Taean Coast is one of Korea's earliest coastal-type national parks.",
+  },
+  "hallyeohaesang-marine-park": {
+    seeing:
+      "Hallyeohaesang Marine National Park is a stretch of Korea's southern coastal waters scattered with hundreds of islands; established in 1968, it was Korea's first marine national park.",
+    formation:
+      "The islands within the park are the emergent summits of coastal hills and low mountains on the southern Korean Peninsula, drowned as sea level rose after the last glacial period — a classic ria-type archipelago landform.",
+    observation:
+      "From the air, islands of every size are scattered across the blue water like scattered stars, with shipping channels winding between them; the waters around Hansan-do are especially open and calm.",
+    distinguish:
+      "Hallyeohaesang Marine National Park and Ulleungdo are both island landforms in Korea's southern and eastern waters, but Hallyeohaesang is a drowned ria-type archipelago made up of many small islands, while Ulleungdo is a single large volcanic island.",
+    concept:
+      "The archipelago landform of Hallyeohaesang is a classic case for studying how rising sea level drowns hills and low mountains to form island groups.",
+    history:
+      "The park's name combines Hansan-do and Yeosu; its waters preserve the sites of naval battles between the Joseon navy and Japanese forces, an important location in Korea's maritime history.",
+  },
+  "daegwallyeong-highland": {
+    seeing:
+      "The Daegwallyeong highland pastures occupy a mountain pass in the Taebaek Mountains at roughly 1,100–1,400 m elevation; Samyang Ranch is the largest of the pastures there.",
+    formation:
+      "The pass area is comparatively flat and open; long exposure to strong westerly winds and a cool, windy climate limit the growth of tall trees, favouring the grassland and low shrub vegetation seen today.",
+    observation:
+      "From the air, the gently rolling pastures of Daegwallyeong stretch out continuously, with white wind turbines lined along the ridge and grazing livestock scattered across the open green grassland — a striking contrast to the forest-covered mountains typical elsewhere in Korea.",
+    distinguish:
+      "The Daegwallyeong highland pastures and the main body of the Taebaek Mountains are both in Gangwon Province, but Daegwallyeong is a comparatively flat, open mountain-pass grassland, while the main Taebaek range is dominated by steep, forested mountains.",
+    concept:
+      "The Daegwallyeong highland pastures are a rare example in Korea of large-scale mountain grassland, offering a sample for studying how specific wind and climate conditions produce non-forest vegetation cover in temperate mountains.",
+    history:
+      "Daegwallyeong has long served as a key mountain passage linking the Yeongdong and Yeongseo regions of Gangwon Province; today's ranches and wind farms continue this area's historic role as a hub for transport and resource use.",
+  },
+  "honam-plain": {
+    seeing:
+      "The Honam Plain is the largest plain on the Korean Peninsula, covering about 3,500 km², and Korea's most important rice-producing region.",
+    formation:
+      "The plain was built up by long-term sediment deposition from the lower Geum River and the Mangyeong River among others; its flat, open terrain and fertile soil provide ideal conditions for large-scale rice cultivation.",
+    observation:
+      "From the air, the Honam Plain presents an unbroken expanse of neatly arranged farmland, crisscrossed by irrigation channels into a checkerboard pattern, with the Gimje area especially flat and low-lying.",
+    distinguish:
+      "The Honam Plain and the Nakdong River Estuary are both important plain landforms in Korea, but the Honam Plain is a large inland plain built by long-term deposition from multiple rivers, while the Nakdong estuary is a delta formed where a single river meets the sea.",
+    concept:
+      "As the Korean Peninsula's largest alluvial plain, the Honam Plain is a classic case for studying how long-term river deposition shapes a large-scale agricultural plain.",
+    history:
+      "The ancient Byeokgolje reservoir within the plain is believed to date to the Three Kingdoms period and is among the earliest known large-scale irrigation works on the Korean Peninsula, testifying to this region's long history of rice cultivation.",
+  },
+  "nakdong-estuary-eulsukdo": {
+    seeing:
+      "The Nakdong River Estuary is a braided delta formed where the Nakdong River meets the coast; Eulsukdo is the largest of its sandbars.",
+    formation:
+      "Sediment carried by the Nakdong River accumulates heavily as the current slows near the river mouth, repeatedly splitting and shifting the channel to form a cluster of sandbars separated by branching streams.",
+    observation:
+      "From the air, the Nakdong River splits into several winding channels at its mouth, with sandbars such as Eulsukdo set among them, and mudflats, reed beds, and open water interweaving into a complex deltaic network.",
+    distinguish:
+      "The Nakdong River Estuary and Suncheon Bay Wetland are both important estuarine wetlands in Korea, but the Nakdong estuary is defined by sandbars formed from a braided river channel, while Suncheon Bay is known for its combination of extensive reed beds and intertidal flats.",
+    concept:
+      "The braided delta at the Nakdong River's mouth is a classic case for studying sediment deposition and channel-splitting processes where a river meets the sea.",
+    history:
+      "Eulsukdo and the surrounding wetlands have long served as an important stopover for migratory birds; urbanisation and estuary engineering works since the late 20th century have kept conservation of this wetland under ongoing attention.",
+  },
+  "han-river": {
+    seeing:
+      "The Han River rises in the Taebaek Mountains and runs about 508 km through Seoul, South Korea's capital, making it one of the most important rivers in central Korea.",
+    formation:
+      "The Han River's upper course splits into the Namhan (South Han) and Bukhan (North Han) branches, each rising from a different spur of the Taebaek Mountains; the two meet at Yangsu-ri (Dumulmeori) to form the main Han River, which then flows west through Seoul to the Yellow Sea.",
+    observation:
+      "From the air, the two Han River branches meet at Yangsu-ri in a Y-shaped confluence; the water is broad and calm, and the green sandbar at the junction, together with the hills on either bank, forms a layered river-valley scene.",
+    distinguish:
+      "The Han River and the Nakdong River both rise in the Taebaek Mountains, but the Han flows west through Seoul to the Yellow Sea, while the Nakdong flows south through the Yeongnam region to Korea's south-eastern coast.",
+    concept:
+      "The confluence of the Han River's two main branches is a classic case for studying how the Korean Peninsula's river systems are organised around the Taebaek Mountains as a watershed.",
+    history:
+      "The rapid urbanisation and economic development along the Han River in Seoul during the late 20th century is often referred to as the \"Miracle on the Han River,\" a phrase now a common shorthand in accounts of Korea's modernisation.",
+  },
+  "nakdong-river": {
+    seeing:
+      "The Nakdong River rises in the Taebaek Mountains and runs about 510 km, making it the longest river in South Korea; it flows past several major cities in the Yeongnam region.",
+    formation:
+      "The river's upper course runs narrow and swift through the Taebaek Mountains; on reaching the middle and lower plains it widens, and the river-valley plains along its banks have supported the growth of cities such as Andong and Daegu.",
+    observation:
+      "From the air, the Nakdong River carves a winding, incised channel through granite bedrock near Andong, with the Hahoe meander as its most distinctive stretch; in more open sections the river glints and winds steadily southward.",
+    distinguish:
+      "The Nakdong River and the Han River both rise in the Taebaek Mountains, but the Nakdong is somewhat longer and flows south to Korea's south-eastern coast, while the Han flows west through Seoul to the Yellow Sea.",
+    concept:
+      "As Korea's longest river, linking several historic cities across the Yeongnam region, the Nakdong is a classic case for studying the relationship between river systems and regional urban development.",
+    history:
+      "The Nakdong River valley has long been a centre of population and culture in the Yeongnam region; historic riverside settlements such as Hahoe Village in Andong record this area's long cultural tradition.",
+  },
+  "geum-river": {
+    seeing:
+      "The Geum River rises in the Sobaek Mountains and runs about 397 km, Korea's third-longest river; the stretch flowing past Buyeo, the former capital of Baekje, is known as the Baengmagang (\"White Horse River\").",
+    formation:
+      "The river's upper course rises in the Sobaek Mountains, flowing through the hills and plains of the Chungcheong region in its middle and lower reaches; near Buyeo it cuts through an ancient volcanic-rock plateau, forming comparatively steep banks, of which Nakhwaam is one.",
+    observation:
+      "From the air, the Baengmagang is broad and calm as it passes Buyeo, with Nakhwaam rising along the riverbank; historic sites along the shore interweave with the river landform to create a landscape combining natural and cultural features.",
+    distinguish:
+      "The Geum River, the Nakdong River, and the Han River are all major rivers of south-central Korea, but the Geum rises in the Sobaek Mountains rather than the Taebaek Mountains, and is comparatively shorter.",
+    concept:
+      "The steep riverbanks near Buyeo, formed as the Geum River eroded an ancient volcanic-rock plateau, are a sample for studying the interaction between river landforms and regional geological setting.",
+    history:
+      "The Buyeo area was the site of the later capital of the Baekje kingdom; Nakhwaam is traditionally said to be the cliff from which palace women leapt to their deaths as Baekje fell, an important site in the Korean Peninsula's ancient history.",
+  },
+  "hoeryongpo-andong-meander": {
+    seeing:
+      "The Hahoe (Andong) meander is a horseshoe-shaped incised meander cut by the Nakdong River into granite bedrock, with the river wrapping around three sides of Hahoe Village.",
+    formation:
+      "The Nakdong River originally meandered freely across relatively flat ground; subsequent slow tectonic uplift caused the river to cut down into the bedrock, preserving and deepening the original meander form into today's incised meander.",
+    observation:
+      "From the air, the Nakdong River forms an almost closed horseshoe bend at this point, with Hahoe Village sitting on the sandbar terrace inside the loop; the Buyongdae cliff across the river is the classic vantage point for viewing the full meander.",
+    distinguish:
+      "The Hahoe meander and the Nakdong River Estuary are both representative landforms along the Nakdong River, but the Hahoe meander is an incised meander cut into bedrock, while the Nakdong estuary is a delta formed by sediment deposition where the river meets the sea.",
+    concept:
+      "The Hahoe meander is a classic case for studying how a river meander evolves into an incised meander as a result of tectonic uplift.",
+    history:
+      "Hahoe Village, a well-preserved traditional settlement on the terrace inside the meander, was inscribed on the UNESCO World Heritage List in 2010 together with Yangdong Village in Gyeongju as the \"Historic Villages of Korea.\"",
+  },
+  "sogeumgang-gorge": {
+    seeing:
+      "Sogeumgang Gorge, within Odaesan National Park, is a deep-cut granite gorge named for scenery said to rival that of Mount Kumgang in the northern Korean Peninsula.",
+    formation:
+      "The gorge was carved by a stream long eroding granite bedrock; the granite gradually breaks down and spalls along its joint planes, shaping the steep rock faces and varied rock forms on either side of the gorge.",
+    observation:
+      "From the air, the gorge winds through dense forest; Guryongso Falls cascades down the granite cliff face in nine tiers, and the deep pool below it, together with the granite walls on either side, forms a richly layered gorge landscape.",
+    distinguish:
+      "Sogeumgang Gorge and Juwangsan Gorge are both representative gorges in Korea, but Sogeumgang is cut into granite and known for its multi-tiered cascading waterfall, while Juwangsan Gorge is cut into rhyolitic tuff and known for its cliff faces and pillar-like peaks.",
+    concept:
+      "The nine-tiered form of Guryongso Falls is a classic case for studying how a stream's differential erosion along granite joint planes produces a stepped waterfall landform.",
+    history:
+      "The name \"Sogeumgang\" (\"Little Kumgang\") reflects a traditional Korean naming convention of comparing a local scenic mountain to Mount Kumgang in the north to highlight its beauty.",
+  },
+  "juwangsan-gorge": {
+    seeing:
+      "Juwangsan Gorge is cut into rhyolitic tuff formed by a volcanic eruption roughly 70 million years ago; in 2003 Juwangsan became a UNESCO Global Geopark.",
+    formation:
+      "The gorge's bedrock is rhyolitic tuff, consolidated from pyroclastic material deposited during a major Late Cretaceous eruption; the Juwang Stream has long eroded along the rock's joints, carving the steep quartz-rich cliffs and isolated rock peaks on either side.",
+    observation:
+      "From the air, sharp tuff peaks rise along both sides of the gorge, with waterfalls such as Yongchu Falls distributed along its length; wooden boardwalks wind along the stream between the steep cliffs.",
+    distinguish:
+      "Juwangsan Gorge and the Cheorwon Lava Plateau are both linked to volcanic activity, but Juwangsan Gorge is cut into rhyolitic tuff by river erosion of pyroclastic rock, while the Cheorwon plateau is a basalt lava-flow plateau later re-incised by a river.",
+    concept:
+      "The formation of Juwangsan's rhyolitic tuff gorge is an important case for studying how river erosion of acidic pyroclastic rock produces isolated peaks and gorge landforms.",
+    history:
+      "In 2003 Juwangsan was designated a UNESCO Global Geopark for its distinctive volcanic geological heritage, one of the earlier areas in Korea to receive this international geological-heritage recognition.",
+  },
+  "soyang-lake": {
+    seeing:
+      "Soyang Lake is an artificial reservoir created in 1973 by damming the Soyang River, holding roughly 2.9 billion m³ of water — Korea's largest reservoir by capacity.",
+    formation:
+      "The reservoir formed when the Soyang Dam, an earth-and-rockfill dam and one of the largest of its type in Asia, impounded the river; the original river valley was submerged, creating today's long, winding lake.",
+    observation:
+      "From the air, Soyang Lake winds along the course of the original valley, ringed by mountains on all sides, with numerous branching inlets — a striking contrast to the neat, regular farmland typical of inland Korea.",
+    distinguish:
+      "Soyang Lake and Gyeongpo Lagoon are both important lakes in Korea, but Soyang Lake is an artificial reservoir formed by damming a river, while Gyeongpo is a natural lagoon formed where a coastal sandbar closed off a bay.",
+    concept:
+      "As one of the largest earth-and-rockfill dam reservoirs in Asia, Soyang Lake is a sample for studying how large-scale water-impoundment projects transform an original river valley into a large reservoir lake.",
+    history:
+      "The Soyang Dam was begun in 1967 and completed in 1973, serving flood control, water supply, and hydropower generation — a significant project in the history of 20th-century Korean water infrastructure.",
+  },
+  "gyeongpo-lagoon": {
+    seeing:
+      "Gyeongpo Lagoon, on Korea's east coast, is a lagoon formed where a coastal sandbar closed off a bay; its name means \"lake as clear as a mirror.\"",
+    formation:
+      "A longshore current long carried sediment that accumulated at the mouth of the bay to form a sandbar, gradually separating the bay from the open sea; the enclosed water then freshened over time into today's lagoon.",
+    observation:
+      "From the air, Gyeongpo Lagoon's surface is calm and mirror-still, its shoreline a neat oval, with pavilions such as Gyeongpodae scattered along its banks; only a narrow sandbar separates the lagoon from the beach outside.",
+    distinguish:
+      "Gyeongpo Lagoon and Soyang Lake are both important lakes in Korea, but Gyeongpo is a natural lagoon formed where a coastal sandbar closed off a bay, while Soyang Lake is an artificial reservoir formed by damming a river.",
+    concept:
+      "The formation of Gyeongpo Lagoon by a sandbar closing off a bay is a classic case for studying how longshore sediment transport shapes coastal lagoon landforms.",
+    history:
+      "The pavilions around Gyeongpo Lagoon have served since the Joseon dynasty as a gathering place for literati to view the moon and scenery; the saying \"one moon reflected in five places\" survives to this day as a representative example of Korea's traditional literati scenic culture.",
+  },
+  // ============ Poland ============
+  "tatra-mountains": {
+    seeing:
+      "The Tatra Mountains are the highest part of the Carpathians, straddling the Poland-Slovakia border; the north-western summit of Rysy, at 2,499 m, is the highest point in Poland.",
+    formation:
+      "The massif is built of granite and crystalline rock, a comparatively old, sharply uplifted stretch of the Carpathians; intense last-glacial erosion carved sharp peaks, corries and clusters of glacial lakes, making it the only range in Poland with classic high-alpine glacial landforms.",
+    observation:
+      "From the air, sharp granite peaks interweave with deeply cut corrie lakes; the three adjacent summits of Rysy are clearly distinguishable, in sharp contrast with the comparatively rounded profiles of Poland's other Carpathian sub-ranges.",
+    distinguish:
+      "Both the Tatras and the Beskids are parts of the Carpathians within Poland, but the Tatras are granite with classic glacial landforms and greater elevation, while the Beskids are mainly sedimentary rock with comparatively rounded relief.",
+    concept:
+      "The fact that Rysy's three adjacent summits belong to Poland and Slovakia respectively is a classic case for studying the sometimes complicated relationship between an international border and the fine detail of a mountain massif's terrain.",
+    history:
+      "The Tatra region has been an important Polish mountaineering and skiing destination since the 19th century; Tatra National Park was established in 1954, and the foothill town of Zakopane is known as Poland's \"winter capital.\"",
+  },
+  "sudetes-karkonosze": {
+    seeing:
+      "The Sudetes form an ancient mountain system along Poland's south-western border with the Czech Republic; the Karkonosze is its highest section, with Śnieżka, at 1,603 m, the highest peak in the Sudetes.",
+    formation:
+      "The bedrock formed during the Palaeozoic Variscan orogeny; long geological time has brought repeated uplift and weathering, leaving comparatively rounded relief, in sharp contrast with the younger, steeper Carpathians.",
+    observation:
+      "From the air, Śnieżka's summit shows a distinctive conical profile, with a weather station at the top and glacially carved \"kettle\" hollows clearly visible on its flanks — the most recognisable landmark of the Sudetes.",
+    distinguish:
+      "Both the Sudetes/Karkonosze and the Tatras are important Polish mountain ranges, but the Sudetes' bedrock is geologically older with rounder relief, while the Tatras are granite with more classically steep glacial landforms.",
+    concept:
+      "The fact that Śnieżka's summit straddles the Poland-Czech border and hosts a weather station is a classic case for studying how an ancient mountain range's distinctive high-altitude climate has made it a favoured site for cross-border scientific observation.",
+    history:
+      "A weather observation facility has stood atop Śnieżka since the 19th century, one of the oldest mountain weather stations in Central Europe, and the summit building continues to record meteorological data today.",
+  },
+  "bieszczady-mountains": {
+    seeing:
+      "The Bieszczady Mountains are the section of the eastern Carpathians at Poland's south-eastern tip, bordering Slovakia and Ukraine; Tarnica, at 1,346 m, is the highest peak within Poland.",
+    formation:
+      "The massif is built of sedimentary rock; long weathering has produced rounded relief, and the summit ridges, exposed to strong wind and thin soil, have failed to develop forest, instead supporting open subalpine meadows known locally as \"połoniny.\"",
+    observation:
+      "From the air, open meadow covers the rounded ridgelines, forming a clear vertical zonation against the dense forest on the slopes below — one of the most sparsely populated, wildest areas remaining in Poland.",
+    distinguish:
+      "Both the Bieszczady and the Beskids are parts of the Carpathians within Poland, but the Bieszczady lie at the extreme south-eastern tip and are known for their open połoniny meadows, while the Beskids lie further west with more complete forest cover.",
+    concept:
+      "The formation of the połoniny meadows atop the Bieszczady is a classic case for studying how strong wind and thin soil together lower the treeline in the Carpathians.",
+    history:
+      "The area's population declined sharply following post-Second-World-War administrative border changes and has remained sparsely settled ever since; it is now an important wilderness conservation area and hiking destination in Poland.",
+  },
+  "beskidy-mountains": {
+    seeing:
+      "The Beskids form the outer arc of the Carpathians in southern Poland; Babia Góra, at 1,725 m, is the highest peak in the range.",
+    formation:
+      "The massif is built of sedimentary rock, long weathered into rounded, undulating relief; Babia Góra's comparative isolation and prominence give it an especially clear vertical vegetation zonation.",
+    observation:
+      "From the air, Babia Góra shows a complete vertical vegetation sequence from foothill forest to summit tundra, set against the continuous rolling relief of the wider Beskid range around it.",
+    distinguish:
+      "Both the Beskids and the Tatras are parts of the Carpathians within Poland, but the Beskids are mainly sedimentary rock with comparatively rounded relief, while the Tatras are granite with steeper, more classic glacial landforms.",
+    concept:
+      "Babia Góra's complete vertical vegetation zonation is a classic case for studying how a Central European mid-elevation mountain ecosystem changes along an elevation gradient, which is why it was designated a UNESCO Biosphere Reserve in 1977.",
+    history:
+      "Babia Góra's comparatively remote location has historically preserved its original vegetation; Babia Góra National Park, established in 1954, is one of Poland's earliest national parks.",
+  },
+  "pieniny-mountains": {
+    seeing:
+      "Pieniny is a comparatively isolated limestone and dolomite massif within the Carpathians; Trzy Korony (\"Three Crowns\"), at 982 m, is well known for the gorge the Dunajec River has cut through the massif.",
+    formation:
+      "The massif is built of Mesozoic limestone and dolomite, distinct from the sedimentary and crystalline bedrock of the neighbouring Carpathian sub-ranges; long karst dissolution combined with river erosion has together shaped today's rugged terrain.",
+    observation:
+      "From the air, the steep limestone cliffs of Trzy Korony overlook the Dunajec Gorge, the river winding between the peaks with traditional raft boats dotted along it — one of the most recognisable mountain-gorge landscapes in southern Poland.",
+    distinguish:
+      "Both Pieniny and the Tatras are parts of the Carpathians, but Pieniny is built of limestone and dolomite and is a comparatively isolated massif, while the Tatras are granite and form the highest, most continuous core of the range.",
+    concept:
+      "Pieniny's distinctive limestone-and-dolomite bedrock, geologically distinct from the surrounding Carpathians, is an important sample for studying how different geological units are assembled within the Carpathian orogenic belt.",
+    history:
+      "Pieniny National Park was established in 1932, one of Poland's earliest national parks; the tradition of rafting the Dunajec dates back to the 18th century and remains a classic cross-border Poland-Slovakia tourist experience today.",
+  },
+  "swietokrzyskie-mountains": {
+    seeing:
+      "The Świętokrzyskie Mountains are an ancient folded range in south-central Poland, their bedrock dating to the Palaeozoic — one of the geologically oldest ranges in the country; Łysica, at 612 m, is the highest point.",
+    formation:
+      "The bedrock formed around 500 million years ago in the Palaeozoic; hundreds of millions of years of repeated tectonic movement and weathering have worn the range down to today's comparatively low, rounded hill form — an important sample for studying the long evolution of an ancient orogenic belt.",
+    observation:
+      "From the air, the low ridges are covered in dense old-growth forest, with scattered piles of eroded quartzite debris (locally called \"gołoborza\") on the slopes, in sharp contrast with the steeper profiles of Poland's younger mountain ranges.",
+    distinguish:
+      "Both the Świętokrzyskie Mountains and the Tatras are important Polish mountain ranges, but the Świętokrzyskie range is geologically extremely ancient and long since worn down, while the Tatras are the young core of the Carpathians with steep, classic glacial landforms.",
+    concept:
+      "As the geologically oldest mountain range in Poland, the Świętokrzyskie Mountains are a classic case for studying how a Palaeozoic orogenic belt is worn down to low hill relief over hundreds of millions of years of weathering.",
+    history:
+      "Rich in iron ore and limestone, the region has been an important Polish mining and smelting centre since the Middle Ages; the Holy Cross Monastery has been an important Polish pilgrimage site since the 11th century.",
+  },
+  "krakow-czestochowa-upland": {
+    seeing:
+      "The Kraków-Częstochowa Upland, informally known as the \"Polish Jura,\" is a long, narrow plateau built of Jurassic limestone, its length strung with medieval castle ruins along the \"Trail of the Eagles' Nests.\"",
+    formation:
+      "The plateau's bedrock is Jurassic sedimentary limestone; long karst dissolution has produced numerous isolated limestone towers, caves and underground water systems — a classic karst plateau landform in Poland.",
+    observation:
+      "From the air, isolated limestone towers of varying forms are scattered across the narrow plateau, many topped with medieval castle ruins, creating a sharp elevation contrast with the flat farmland around them.",
+    distinguish:
+      "Both the Kraków-Częstochowa Upland and the Table Mountains are important plateau landforms in Poland, but the former is built of Jurassic limestone and defined by karst towers and caves, while the latter is built of sandstone and defined by its flat-topped \"table\" cliff profile.",
+    concept:
+      "The combination of the Kraków-Częstochowa Upland's isolated limestone towers with medieval castle siting is a classic case for studying how a karst plateau landform was exploited for historic defensive architecture.",
+    history:
+      "The \"Trail of the Eagles' Nests\" takes its name from the way the castles along it, perched on steep towers, resemble eagles' nests; these castles were first built in the 14th century under King Casimir the Great to defend Poland's southern border.",
+  },
+  "gory-stolowe": {
+    seeing:
+      "The Table Mountains (Góry Stołowe) are a flat-topped sandstone plateau at the eastern end of the Sudetes; Szczeliniec Wielki, at 919 m, is the most representative example of table-mountain landform in Poland.",
+    formation:
+      "The plateau's bedrock is horizontally bedded Cretaceous sandstone; long differential weathering has stripped away the softer layers while the harder layers survive, producing today's steep-walled, flat-topped \"table\" profile.",
+    observation:
+      "From the air, the flat plateau top and the steep cliffs around it form a sharp geometric outline, with narrow, maze-like passages developed between the rock walls — a distinctive \"table mountain\" landscape unique in Poland.",
+    distinguish:
+      "Both the Table Mountains and the Kraków-Częstochowa Upland are important plateau landforms in Poland, but the Table Mountains are built of Cretaceous sandstone and defined by their flat-topped cliffs, while the Kraków-Częstochowa Upland is built of Jurassic limestone and defined by its karst towers.",
+    concept:
+      "The table-like profile produced by differential weathering of the Table Mountains' horizontal sandstone beds is a classic case for studying how horizontally bedded sedimentary rock can preserve a distinctive flat-topped landform through long weathering.",
+    history:
+      "Table Mountains National Park was established in 1993; rock-passage place names such as \"Hell's Gorge\" and \"Devil's Kitchen\" record long-standing local folklore.",
+  },
+  "masurian-lakes": {
+    seeing:
+      "The Masurian Lake District is a densely lake-studded region of north-eastern Poland carved by last-glacial erosion, with more than 2,500 lakes; Lake Śniardwy is the largest lake in Poland.",
+    formation:
+      "The district's foundation is a multitude of depressions carved by last-glacial erosion, now filled with water; historically, extensive canals were cut to link the lakes, forming a distinctive densely channelled waterway network.",
+    observation:
+      "From the air, lakes large and small are scattered everywhere, criss-crossed by waterways, with forest and farmland dotted throughout — the most representative waterscape landform in north-eastern Poland.",
+    distinguish:
+      "Both the Masurian Lake District and Lake Hańcza are important lake landforms in north-eastern Poland, but the Masurian district comprises thousands of lakes defined by its dense canal network, while Lake Hańcza is a single deep lake known for its depth.",
+    concept:
+      "The dense canal system linking the Masurian lakes is a classic case for studying how hydraulic engineering can connect a cluster of natural glacial lakes into a unified navigation network, and the region is also an important area for inland sailing in Europe.",
+    history:
+      "The lake district's canal system dates to the 19th century, historically used for timber transport; it is now an important area for water tourism and sailing in Poland.",
+  },
+  "lake-hancza": {
+    seeing:
+      "Lake Hańcza, in the Suwałki region of north-eastern Poland, has a maximum depth of about 108 m — the deepest lake in Poland and one of the deepest in Central Europe.",
+    formation:
+      "The lake basin occupies a deep trough gouged by last-glacial erosion, where erosion intensity was markedly greater than in the surrounding area, producing this locally rare deep-basin lake.",
+    observation:
+      "From the air, the lake surface is comparatively small but sharply defined, its shoreline intricate, set against the undulating terrain of the surrounding Suwałki hills — an important waterscape landmark in north-eastern Poland.",
+    distinguish:
+      "Both Lake Hańcza and the Masurian Lake District are important lake landforms in north-eastern Poland, but Lake Hańcza is a single deep lake known for its depth, while the Masurian district comprises thousands of lakes defined by its dense canal network.",
+    concept:
+      "Lake Hańcza's exceptional depth is a classic case for studying how local variation in last-glacial erosion intensity can produce a markedly deeper basin within an otherwise comparable region.",
+    history:
+      "Thanks to its deep, clear water, the lake has long been an important Polish diving-training and scientific-research site, and is now an important ecotourism area in the Suwałki region.",
+  },
+  "vistula-river": {
+    seeing:
+      "The Vistula is the longest river in Poland, running about 1,047 km from its source in the Beskids, spanning the length of the country before entering the Baltic Sea near Gdańsk.",
+    formation:
+      "The river's upper course rises at the margin of the Carpathians; its middle and lower course crosses central Poland's lowlands, running broadly north-south — the country's main water system, linking the southern mountains with the northern coast.",
+    observation:
+      "From the air, the channel winds north from south across the whole of Poland, passing through major cities such as Kraków and Warsaw; its lower course branches into a delta near Gdańsk before entering the Baltic Sea.",
+    distinguish:
+      "Both the Vistula and the Oder are important Polish rivers, but the Vistula is the longer river, running entirely within Poland and regarded as the country's national river, while the Oder's lower course forms the Poland-Germany border.",
+    concept:
+      "The Vistula's course spanning the length of Poland, linking the southern mountains with the northern coast, is a classic case for studying how a country's main river links different landform units to support regional economic and cultural development.",
+    history:
+      "Since the Middle Ages the Vistula has been an important Polish shipping route and cultural symbol; historic Polish cities such as Warsaw and Kraków are built along it, and the river holds significant symbolic importance in Polish national culture.",
+  },
+  "oder-river": {
+    seeing:
+      "The Oder is Poland's second-longest river, rising in the Czech Republic; its lower course forms the border between Poland and Germany before entering the Baltic Sea near Szczecin.",
+    formation:
+      "The river's upper course crosses the mountainous border region between the Czech Republic and Poland; its middle and lower course enters comparatively flat lowland, with the lower stretch running along the Poland-Germany border — an important cross-border water system.",
+    observation:
+      "From the air, the middle and lower channel is comparatively broad and gentle, widening into a lagoon near its mouth at Szczecin before entering the Baltic Sea, its banks mostly farmland and forest.",
+    distinguish:
+      "Both the Oder and the Vistula are important Polish rivers, but the Oder's lower course forms the Poland-Germany border, while the Vistula runs entirely within Poland and is the country's longest river.",
+    concept:
+      "As a border river, the Oder is a classic case for studying how a river has served a border-marking function at different points in history while still maintaining regional shipping links.",
+    history:
+      "The Oder has historically been an important Central European shipping route; Szczecin has developed as a major port city since the Middle Ages thanks to its position guarding the Oder's mouth.",
+  },
+  "bug-river": {
+    seeing:
+      "The Bug rises in Ukraine; its lower course forms the border between Poland and Belarus and Ukraine, and it is one of the few large European rivers to retain a natural, largely unregulated channel.",
+    formation:
+      "Because the river runs through a tri-national border zone that historically lacked unified water-management planning, its channel has retained natural seasonal flow variation and riverbed form, without large-scale damming or embankment.",
+    observation:
+      "From the air, the channel winds naturally, its banks preserving extensive natural wetland and floodplain — a sharp contrast with most other large European rivers, which have been extensively engineered.",
+    distinguish:
+      "Both the Bug and the Oder are important border rivers for Poland, but the Bug retains a natural channel due to the lack of large-scale hydraulic regulation, while the Oder has historically undergone more extensive engineering.",
+    concept:
+      "As one of the few large European rivers to retain a natural channel, the Bug is an important sample for studying the natural hydrology and riparian ecosystem of an unregulated Central European lowland river.",
+    history:
+      "The Bug's banks have historically been an important natural barrier and trade route along Poland's eastern border region; the riverside wetlands are now an important protected ecological area in Poland.",
+  },
+  "narew-river": {
+    seeing:
+      "The stretch of the Narew flowing through Narew National Park shows a rare braided river form, its channel splitting into dozens of parallel branches winding through wetland marsh — locally nicknamed \"Poland's Amazon.\"",
+    formation:
+      "Along this stretch the terrain is extremely gentle and the riverbed heavily silted, so the main channel cannot maintain a single stable course and is instead forced to split into multiple parallel braided branches.",
+    observation:
+      "From the air, dozens of narrow channels criss-cross the broad wetland, forming an extremely complex net-like pattern quite unlike the typical single-channel river landscape — a rare sample of European lowland river landform.",
+    distinguish:
+      "Compared with Poland's other major rivers (such as the Vistula and Oder), the Narew's channel form is quite different — it shows a rare natural braided drainage pattern, while the other rivers run in a single main channel.",
+    concept:
+      "The Narew's braided drainage pattern is a classic case for studying how a lowland river naturally splits into multiple channels under conditions of gentle terrain and heavy siltation, and it is one of the best-preserved examples of this landform type in lowland Europe.",
+    history:
+      "The stretch has retained its original braided form because its remote location largely escaped large-scale agricultural reclamation and hydraulic engineering; Narew National Park was established in 1996 to protect this distinctive landform.",
+  },
+  "dunajec-gorge": {
+    seeing:
+      "The Dunajec River Gorge was cut by the Dunajec through the limestone and dolomite of the Pieniny massif, its banks rising in tall cliffs — a famous cross-border Poland-Slovakia rafting stretch.",
+    formation:
+      "The river has long eroded the comparatively soft limestone and dolomite bedrock of the Pieniny massif, cutting a narrow, deep gorge with steep cliff walls preserved on both sides.",
+    observation:
+      "From the air, the gorge winds between peaks such as Trzy Korony, its channel narrow and twisting, with traditional raft boats drifting along the water and dense forest set against bare cliff faces — one of the most recognisable gorge landscapes in southern Poland.",
+    distinguish:
+      "Both the Dunajec Gorge and the Ojców Valley are important karst gorge landforms in Poland, but the Dunajec Gorge cuts through the high peaks of the Pieniny massif and is known for rafting, while the Ojców Valley lies in a comparatively gentle upland area and is known for its isolated rock towers and caves.",
+    concept:
+      "The Dunajec Gorge is a classic case for studying how a river can carve a deep gorge over the long term by eroding comparatively soft limestone and dolomite bedrock, and it is also an example of cross-border Poland-Slovakia landform conservation cooperation.",
+    history:
+      "The tradition of rafting the Dunajec dates back to the 18th century, originally used to transport timber and salt; it has since become one of the most iconic tourist experiences in southern Poland.",
+  },
+  "ojcow-valley": {
+    seeing:
+      "The Ojców Valley is a karst gorge cut by the Prądnik River through the limestone of the Kraków-Częstochowa Upland; the Kraków Gate is the valley's most representative natural rock arch.",
+    formation:
+      "The river has long dissolved the plateau's limestone bedrock, forming a narrow karst gorge scattered with isolated rock towers, caves and natural rock arches — a classic karst gorge landform.",
+    observation:
+      "From the air, the narrow valley's flanks rise steeply, with the natural rock arch of the Kraków Gate spanning one side of the valley, caves and rock towers dense throughout — a concentrated showcase of plateau karst landforms.",
+    distinguish:
+      "Both the Ojców Valley and the Dunajec Gorge are important karst gorge landforms in Poland, but the Ojców Valley lies in a comparatively gentle upland area and is known for its isolated rock towers and caves, while the Dunajec Gorge cuts through the high peaks of the Pieniny massif and is known for rafting.",
+    concept:
+      "The Ojców Valley is a classic case for studying how river dissolution on a karst plateau can produce the coexistence of multiple karst landform types — gorges, rock towers and caves.",
+    history:
+      "Several caves in the valley have yielded Palaeolithic-era human artefacts; Ojców National Park, established in 1956, is Poland's smallest national park and one of its earliest.",
+  },
+  "slowinski-dunes": {
+    seeing:
+      "The Słowiński Moving Dunes are the largest active dune field in Europe along the Baltic coast, reaching heights of up to 42 m and migrating inland by about 3 to 10 m each year under the prevailing wind.",
+    formation:
+      "The dunes were built up from Baltic coastal sand carried by long-term wind transport; lacking stabilising vegetation, the whole dune field continues to migrate slowly inland under the prevailing wind, burying the forest and ground vegetation in its path.",
+    observation:
+      "From the air, the bare dunes show a wave-like undulation, forming a sharp colour and landform contrast with the dense pine forest around them; in some areas the skeletal remains of trees buried and later re-exposed by the moving dunes are visible.",
+    distinguish:
+      "Both the Słowiński Moving Dunes and the Hel Peninsula are sandy landforms on Poland's Baltic coast, but the Słowiński dunes are defined by their continuous migration, while the Hel Peninsula is a comparatively stable, long, narrow sand spit.",
+    concept:
+      "The Słowiński Moving Dunes are a classic case for studying how wind-transported sand can shape an active dune landform over the long term and bury pre-existing vegetation, and they are the largest example of this landform type in Europe.",
+    history:
+      "Historical records of the dunes burying nearby villages and forests date to the 19th century; Słowiński National Park was established in 1967 to protect and study this distinctive active dune landform.",
+  },
+  "hel-peninsula": {
+    seeing:
+      "The Hel Peninsula is a sand spit about 35 km long and less than 200 m wide at its narrowest point, separating the Baltic Sea from the Gulf of Gdańsk; the town of Hel at its tip is an important Polish seaside resort.",
+    formation:
+      "The spit was built up over a long period by longshore currents carrying Baltic sand, forming a long, narrow, curving sandy landform that separates the open Baltic from the comparatively enclosed Gulf of Gdańsk.",
+    observation:
+      "From the air, the narrow spit curves hook-like out into the Baltic; the waters on either side show different colouring and wave characteristics due to the peninsula's sheltering effect, with the settlement of Hel clearly visible at its tip.",
+    distinguish:
+      "Both the Hel Peninsula and the Słowiński Moving Dunes are sandy landforms on Poland's Baltic coast, but the Hel Peninsula is a comparatively stable, long, narrow spit that separates a bay from the open sea, while the Słowiński dunes are defined by their continuous migration and vegetation burial.",
+    concept:
+      "The long, curving form of the Hel Peninsula is a classic case for studying how longshore-current sand transport can build a spit landform that separates a bay from open water.",
+    history:
+      "The Hel Peninsula has historically been an important Polish fishing base; during the Second World War it was one of the last strongholds of Polish naval resistance, and it is now an important seaside-resort and watersports destination in Poland.",
+  },
+  "wolin-island": {
+    seeing:
+      "Wolin Island is a Baltic coastal island in north-western Poland; a roughly 15-km stretch of sea cliff within Wolin National Park is a rare high-cliff coastline on the southern Baltic shore.",
+    formation:
+      "The island's bedrock is last-glacial moraine deposit; long exposure to Baltic wave erosion has carved a comparatively steep cliff landform in the soft moraine material, rare along the southern Baltic coast.",
+    observation:
+      "From the air, steep sea cliffs run along the island's northern shore, their tops densely forested, in sharp contrast with the typically gentle, sandy coastline elsewhere on the southern Baltic — a distinctive landform along the Polish coast.",
+    distinguish:
+      "Wolin Island, the Hel Peninsula and the Słowiński Moving Dunes are all important landforms on Poland's Baltic coast, but Wolin Island is defined by its steep moraine sea cliffs, while the other two are sandy landforms (a spit and a moving dune field respectively).",
+    concept:
+      "The formation of Wolin's moraine cliffs is a classic case for studying how soft moraine deposits along the southern Baltic coast can be shaped into steep sea cliffs by long-term wave erosion, distinct from the granite or chalk cliff origins seen in Denmark or Sweden.",
+    history:
+      "Wolin National Park was established in 1960 and includes a small European bison reserve; the island also holds the archaeological remains of Wolin, an important Viking-era trading settlement.",
+  },
+  "great-polish-lowland": {
+    seeing:
+      "The Great Polish Lowland is the main portion of the Central European Plain lying within Poland, flat and open, and Poland's largest agricultural region.",
+    formation:
+      "The lowland's surface is made up of last-glacial ice-sheet deposits; after the ice retreated it left an extensive flat plain of moraine and glaciofluvial sediment — the flattest, most open region within Poland.",
+    observation:
+      "From the air, extensive, regular farmland stretches to the horizon, with scattered forest and lakes dotted throughout; major cities such as Poznań are built on this open lowland.",
+    distinguish:
+      "Both the Great Polish Lowland and the Vistula Delta Lowland are important plain landforms in Poland, but the Great Polish Lowland is extensive and defined by moraine and glaciofluvial plain, while the Vistula Delta Lowland is smaller, with parts lying below sea level.",
+    concept:
+      "The Great Polish Lowland is a classic case for studying how the melting of the last-glacial continental ice sheet left an extensive flat moraine plain across Central Europe, and it is the geographic foundation of Polish agriculture.",
+    history:
+      "The region has been an important Polish farming area since the Middle Ages; Poznań is one of Poland's oldest cities and was historically one of the political centres of the early Polish state.",
+  },
+  "zulawy-wislane": {
+    seeing:
+      "Żuławy Wiślane is the alluvial delta plain at the mouth of the Vistula, part of it lying below sea level — the lowest-lying region in Poland.",
+    formation:
+      "The delta was built up over a long period by sediment carried by the Vistula; some low-lying areas were historically converted into arable land using dike-and-drainage technology, producing a low-lying landform with artificially controlled water levels.",
+    observation:
+      "From the air, regular farmland interwoven with a crisscrossing network of drainage canals forms a classic reclaimed-lowland landscape; in places the water level in the canals sits noticeably higher than the surrounding farmland surface, a direct visual illustration of land lying below sea level.",
+    distinguish:
+      "Both Żuławy Wiślane and the Great Polish Lowland are important plain landforms in Poland, but Żuławy Wiślane is smaller, with parts below sea level and dependent on artificial drainage, while the Great Polish Lowland is naturally flat and considerably more extensive.",
+    concept:
+      "The below-sea-level terrain of parts of Żuławy Wiślane is a classic case for studying how a river-mouth delta can be transformed by artificial dike-and-drainage technology into liveable, farmable low-lying land — sharing common origins with Dutch polder-reclamation techniques.",
+    history:
+      "From the Middle Ages, settlers from the Low Countries introduced dike-and-drainage technology to the region, gradually converting the original marsh wetland into fertile farmland — a reclamation tradition that continues today.",
+  },
+  "bialowieza-forest": {
+    seeing:
+      "Białowieża Forest is one of the best-preserved primeval forests remaining on the European Plain, straddling the Poland-Belarus border, and an important habitat for the European bison.",
+    formation:
+      "The forest grows on a gentle moraine and glaciofluvial plain formed after the last ice age; long protection as a royal and state hunting reserve spared it from large-scale logging, allowing it to retain a near-original forest ecosystem.",
+    observation:
+      "From the air, extensive old-growth forest covers the gently undulating ground, with fallen deadwood and dense understorey vegetation scattered throughout — a clear contrast with the surrounding managed commercial forestry land.",
+    distinguish:
+      "Compared with other forested areas in Poland, Białowieża Forest is known for its well-preserved primeval forest ecosystem and European bison population, the only large-scale example of this type of old-growth forest remaining on the European Plain.",
+    concept:
+      "As an important habitat for the European bison, Białowieża Forest is a classic case for studying how a primeval forest ecosystem can provide a last refuge for large mammals, which is why it was inscribed on the UNESCO World Heritage List in 1979.",
+    history:
+      "The forest has been a royal hunting reserve for successive Polish monarchs since the Middle Ages, a protection tradition that spared it from large-scale logging; European bison conservation efforts here have continued for more than a century.",
+  },
+  roztocze: {
+    seeing:
+      "Roztocze is a long, narrow, ridge-like band of limestone hills in south-eastern Poland, densely forested.",
+    formation:
+      "The hills' bedrock is Cretaceous and Tertiary limestone; long weathering and erosion have produced today's long, narrow uplifted ridge form — a representative area in south-eastern Poland where karst landform and forest ecosystem intertwine.",
+    observation:
+      "From the air, dense forest covers the long, narrow ridge, forming a clear contrast in relief and vegetation with the comparatively flat farmland on either side, with small towns such as Zwierzyniec dotted along the hills' margin.",
+    distinguish:
+      "Both Roztocze and Białowieża Forest are important forested regions in Poland, but Roztocze rises as a long, narrow ridge with pronounced limestone karst characteristics, while Białowieża Forest lies on gentle lowland and is known for its primeval forest ecosystem.",
+    concept:
+      "Roztocze's long, narrow ridge form combined with its rich forest ecosystem is a classic case for studying the relationship between limestone hill landforms and ecological diversity in south-eastern Poland, which is why a cross-border Biosphere Reserve was established here in 2019.",
+    history:
+      "The region's uplifted terrain and comparatively poor soil have historically limited agricultural development, allowing the forest to survive well; it is now an important ecotourism and hiking destination in south-eastern Poland.",
+  },
+  "kashubian-switzerland": {
+    seeing:
+      "Kashubian Switzerland is a last-glacial terminal moraine hill area in the Pomerania region of northern Poland, densely dotted with lakes and forest; Wieżyca, at 329 m, is the highest point in northern Poland.",
+    formation:
+      "The hills are built of terminal moraine ridges pushed up during last-glacial advances; after the ice retreated it left undulating hills interspersed with numerous small lakes — a classic moraine-hill landform.",
+    observation:
+      "From the air, lakes of varying sizes are scattered among the undulating hills, with forest and farmland interwoven, forming a sharp contrast with the flat, open terrain typical of Poland's northern coastal area.",
+    distinguish:
+      "Both Kashubian Switzerland and the Masurian Lake District are important moraine-and-lake landforms in northern Poland, but Kashubian Switzerland shows more pronounced relief and takes its name from the interweaving of hills and lakes, while the Masurian district is defined by its vast number of lakes and dense network of gently sloping waterways.",
+    concept:
+      "The name \"Kashubian Switzerland,\" drawn from the resemblance of its undulating relief to the mountains of Switzerland, is an interesting human-geography case for studying how terminal-moraine hill landforms are sometimes named by analogy to a distant, famous landscape.",
+    history:
+      "The region has historically been the traditional homeland of the Kashubians, a West Slavic minority group in Poland, and Kashubian language and cultural traditions are still preserved and continued locally today.",
+  },
+  "biebrza-marshes": {
+    seeing:
+      "The Biebrza Marshes are Poland's largest area of low-lying fen wetland, spread along the Biebrza river valley, and one of the best-preserved lowland river-valley marshes remaining in Europe.",
+    formation:
+      "After the last ice age, poor drainage in the low-lying Biebrza valley allowed wetland plant matter to accumulate faster than it decomposed, producing an extensive low-fen wetland ecosystem.",
+    observation:
+      "From the air, broad, open marsh interweaves with the winding channel of the Biebrza, reed marsh and wet meadow spread widely — an important bird-habitat landscape in Poland.",
+    distinguish:
+      "Both the Biebrza Marshes and the Narew are important wetland river-valley landforms in north-eastern Poland, but the Biebrza Marshes are defined by their extensive low-fen wetland ecosystem, while the Narew is defined by its rare braided drainage pattern.",
+    concept:
+      "As one of the best-preserved lowland river-valley marshes remaining in Europe, the Biebrza Marshes are a classic case for studying the relationship between long-term wetland preservation and its function as a bird habitat.",
+    history:
+      "The Osowiec Fortress within the marshes was built in the late 19th century; during the First World War its surrounding marshland's difficult terrain repeatedly helped repel attacks, a classic case of marsh landform shaping military history. Biebrza National Park was established in 1993.",
+  },
 };

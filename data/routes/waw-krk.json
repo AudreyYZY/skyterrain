@@ -1,0 +1,16 @@
+{
+  "id": "waw-krk",
+  "name": "华沙 — 克拉科夫",
+  "nameEn": "Warsaw — Kraków",
+  "description": "圣十字山",
+  "descriptionEn": "Świętokrzyskie Mountains",
+  "depCountry": "poland",
+  "arrCountry": "poland",
+  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3921", "aircraft": "Embraer 190", "depIata": "WAW", "arrIata": "KRK", "durationMin": 55 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
+    { "kind": "terrain", "terrainId": "swietokrzyskie-mountains" },
+    { "kind": "city", "id": "krk", "name": "克拉科夫", "nameEn": "Kraków", "lat": 50.0777, "lon": 19.7848, "airport": true }
+  ]
+}

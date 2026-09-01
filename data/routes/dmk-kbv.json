@@ -1,0 +1,16 @@
+{
+  "id": "dmk-kbv",
+  "name": "曼谷廊曼 — 甲米",
+  "nameEn": "Bangkok Don Mueang — Krabi",
+  "description": "攀牙湾",
+  "descriptionEn": "Ao Phang Nga",
+  "depCountry": "thailand",
+  "arrCountry": "thailand",
+  "flight": { "airline": "泰国狮航", "airlineEn": "Thai Lion Air", "flightNo": "SL806", "aircraft": "Boeing 737-900", "depIata": "DMK", "arrIata": "KBV", "durationMin": 85 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
+    { "kind": "terrain", "terrainId": "ao-phang-nga" },
+    { "kind": "city", "id": "kbv", "name": "甲米", "nameEn": "Krabi", "lat": 8.0991, "lon": 98.9863, "airport": true }
+  ]
+}

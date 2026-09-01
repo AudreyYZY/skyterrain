@@ -1,0 +1,16 @@
+{
+  "id": "gmp-rsu",
+  "name": "首尔金浦 — 丽水",
+  "nameEn": "Seoul Gimpo — Yeosu",
+  "description": "湖南平原",
+  "descriptionEn": "Honam Plain",
+  "depCountry": "south-korea",
+  "arrCountry": "south-korea",
+  "flight": { "airline": "真航空", "airlineEn": "Jin Air", "flightNo": "LJ671", "aircraft": "Boeing 737-800", "depIata": "GMP", "arrIata": "RSU", "durationMin": 60 },
+  "cruiseHeight": 6000,
+  "waypoints": [
+    { "kind": "city", "id": "gmp", "name": "首尔金浦", "nameEn": "Seoul Gimpo", "lat": 37.5583, "lon": 126.7958, "airport": true },
+    { "kind": "terrain", "terrainId": "honam-plain" },
+    { "kind": "city", "id": "rsu", "name": "丽水", "nameEn": "Yeosu", "lat": 34.8423, "lon": 127.6169, "airport": true }
+  ]
+}

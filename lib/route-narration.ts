@@ -3373,6 +3373,312 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
+  "bkk-cnx": {
+    study: {
+    "zh-CN":
+      "曼谷飞清迈，是泰国国内客流量最大的航线之一，连接首都与北部文化古都。飞机离开曼谷后向北飞行，逐渐掠过泰国中北部彭世洛府与碧差汶府交界处的通萨兰銮草原——一片海拔300至1028米的高原草甸，被称为“泰国的稀树草原”，开阔的金黄色草地与稀疏松林交错分布，是泰国境内少见的非森林高地地貌。" +
+      "越过草原后，飞机继续向西北飞行，逐渐接近清迈盆地，临近降落前脚下展开素贴山——清迈城西侧一座海拔1676米的山峰，山腰始建于14世纪的素贴寺是泰国北部最重要的佛教朝圣地之一，飞机最终降落在清迈——泰国北部最大城市与兰纳王国古都。",
+    "en-US":
+      "Flying from Bangkok to Chiang Mai is one of Thailand's busiest domestic routes, linking the capital with the ancient cultural capital of the north. After leaving Bangkok the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation on the border of Phitsanulok and Phetchabun provinces, known as \"Thailand's savanna,\" its open golden grassland interspersed with sparse pine forest, a rare non-forested highland landform in Thailand." +
+      " Past the grassland, the flight continues north-west, gradually approaching the Chiang Mai basin; just before landing, Doi Suthep unfolds below — a 1,676 m peak west of Chiang Mai, where Wat Phra That Doi Suthep, founded on its slope in the 14th century, is one of northern Thailand's most important Buddhist pilgrimage sites — before the flight lands in Chiang Mai, the largest city in northern Thailand and the ancient capital of the Lanna kingdom.",
+    },
+    travel: {
+    "zh-CN":
+      "曼谷到清迈飞约80分钟，同一时区，是泰国国际航空运营的国内航班之一（空客A320机型），也可选择长途大巴或火车。曼谷素万那普机场距市区约30公里；清迈国际机场距市区约3公里。清迈是探索泰国北部山地与手工艺文化的理想门户。",
+    "en-US":
+      "Bangkok to Chiang Mai takes about 80 minutes, same time zone, operated by Thai Airways (Airbus A320) as one of Thailand's domestic routes; buses and trains are other options. Suvarnabhumi Airport is about 30 km from central Bangkok; Chiang Mai International Airport is about 3 km from the city centre. Chiang Mai is an ideal gateway for exploring northern Thailand's mountains and craft culture.",
+    },
+  },
+
+  "bkk-usm": {
+    study: {
+    "zh-CN":
+      "曼谷飞苏梅岛，是连接首都与泰国湾度假海岛的热门航线。飞机离开曼谷后向东南飞行，脚下展开湄南河三角洲——湄南河入海口处发育的冲积三角洲低地，泰国首都曼谷即建于三角洲之上，部分区域海拔不足2米，长期面临地面沉降与海平面上升的双重压力，运河网络至今仍是三角洲城区部分区域重要的交通方式。" +
+      "越过三角洲后，飞机继续向东南飞越泰国湾开阔海面，苏梅岛逐渐出现在视野中，飞机最终降落在苏梅岛——泰国湾第二大岛屿，以查汶、拉迈两大海滩度假区与椰子种植传统闻名，岛屿内陆至今仍保留大片传统椰林。",
+    "en-US":
+      "Flying from Bangkok to Koh Samui links the capital with a popular resort island in the Gulf of Thailand. After leaving Bangkok the flight heads south-east, the Chao Phraya Delta unfolding below — the low-lying alluvial delta at the Chao Phraya's mouth, on which Bangkok itself is built, with parts of the city under 2 m in elevation and facing the combined pressures of land subsidence and sea-level rise." +
+      " Past the delta, the flight continues south-east across the open waters of the Gulf of Thailand; Koh Samui gradually comes into view, before the flight lands on Koh Samui, the second-largest island in the Gulf of Thailand, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
+    },
+    travel: {
+    "zh-CN":
+      "曼谷到苏梅岛飞约95分钟，同一时区，是曼谷航空运营的国内航班之一（ATR72-600机型），苏梅机场由曼谷航空私有运营。曼谷素万那普机场距市区约30公里；苏梅机场就在岛屿东北角。苏梅岛是探索安通国家海洋公园跳岛游的理想门户。",
+    "en-US":
+      "Bangkok to Koh Samui takes about 95 minutes, same time zone, operated by Bangkok Airways (ATR 72-600) as one of Thailand's domestic routes; Samui Airport is privately operated by Bangkok Airways. Suvarnabhumi Airport is about 30 km from central Bangkok; Samui Airport sits at the island's north-eastern tip. Koh Samui is an ideal gateway for island-hopping in Ang Thong National Marine Park.",
+    },
+  },
+
+  "dmk-uth": {
+    study: {
+    "zh-CN":
+      "曼谷廊曼飞乌隆他尼，是连接首都与东北部依善地区的航线。飞机离开廊曼后向北偏东飞行，逐渐掠过呵叻高原——泰国东北部一片广袤的砂岩台地，面积约占泰国国土三分之一，是泰国传统“依善”地区的地理主体，高原地势开阔平坦，大片旱作农田与稀疏林地交错分布，与泰国中部平原的水田景观形成鲜明对比，高原边缘的碧差汶山脉与佩差邦山脉将其与中部平原分隔。" +
+      "飞机继续向东北飞行，最终降落在乌隆他尼——依善地区重要城市，也是探索班清史前遗址的门户城市，府境内的班清遗址出土了公元前2000年左右的彩陶与青铜器。",
+    "en-US":
+      "Flying from Bangkok Don Mueang to Udon Thani links the capital with Thailand's north-eastern Isan region. After leaving Don Mueang the flight heads north-north-east, passing over the Khorat Plateau midway — a vast sandstone tableland covering roughly a third of Thailand's land area, the geographic core of the traditional Isan region, its broad, flat surface interspersed with extensive rain-fed farmland and sparse woodland, a sharp contrast to the paddy-field landscape of central Thailand's plain." +
+      " The flight continues north-east, before landing in Udon Thani, an important city in the Isan region and the gateway to the Ban Chiang prehistoric site.",
+    },
+    travel: {
+    "zh-CN":
+      "曼谷廊曼到乌隆他尼飞约65分钟，同一时区，是泰国亚洲航空运营的国内航班之一（空客A320机型），也可选择乘火车经廊开线前往。廊曼机场距曼谷市区约25公里；乌隆他尼国际机场距市区约5公里。乌隆他尼是探索班清世界遗产考古遗址的理想门户。",
+    "en-US":
+      "Bangkok Don Mueang to Udon Thani takes about 65 minutes, same time zone, operated by Thai AirAsia (Airbus A320) as one of Thailand's domestic routes; a train via the Nong Khai line is another option. Don Mueang Airport is about 25 km from central Bangkok; Udon Thani International Airport is about 5 km from the city centre. Udon Thani is an ideal gateway for exploring the Ban Chiang World Heritage archaeological site.",
+    },
+  },
+
+  "dmk-cei": {
+    study: {
+    "zh-CN":
+      "曼谷廊曼飞清莱，是连接首都与泰国最北端府份的航线。飞机离开廊曼后向北飞行，中途掠过通萨兰銮草原——泰国中北部一片海拔300至1028米的高原草甸，被称为“泰国的稀树草原”，开阔草地与稀疏松林交错分布。" +
+      "越过草原后，飞机继续向北飞行，逐渐接近清道山——泰国第三高峰，海拔2138米，山体为石灰岩喀斯特地貌，发育有泰国境内规模最大的溶洞系统之一，飞机最终降落在清莱——紧邻缅甸与老挝边境“金三角”地区的府份首府，以白庙、蓝庙等当代宗教艺术建筑闻名。",
+    "en-US":
+      "Flying from Bangkok Don Mueang to Chiang Rai links the capital with Thailand's northernmost province. After leaving Don Mueang the flight heads north, passing over Thung Salaeng Luang midway — a highland meadow at 300–1,028 m elevation in north-central Thailand known as \"Thailand's savanna,\" its open grassland interspersed with sparse pine forest." +
+      " Past the grassland, the flight continues north, gradually approaching Doi Luang Chiang Dao — Thailand's third-highest peak at 2,138 m, a limestone karst massif riddled with one of the country's largest cave systems — before the flight lands in Chiang Rai, the capital of Thailand's northernmost province near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+    },
+    travel: {
+    "zh-CN":
+      "曼谷廊曼到清莱飞约80分钟，同一时区，是皇雀航空运营的国内航班之一（波音737-800机型）。廊曼机场距曼谷市区约25公里；清莱国际机场距市区约8公里。清莱是探索金三角景观区与白庙等当代宗教艺术建筑的理想门户。",
+    "en-US":
+      "Bangkok Don Mueang to Chiang Rai takes about 80 minutes, same time zone, operated by Nok Air (Boeing 737-800) as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Chiang Rai International Airport is about 8 km from the city centre. Chiang Rai is an ideal gateway for the Golden Triangle viewpoint and contemporary religious-art buildings such as the White Temple.",
+    },
+  },
+
+  "dmk-hkt": {
+    study: {
+    "zh-CN":
+      "曼谷廊曼飞普吉岛，是连接首都与泰国最负盛名海岛度假地的热门航线。飞机离开廊曼后向南飞行，脚下持续展开泰国湾沿岸的地貌，逐渐掠过三百峰山——泰国湾沿岸一列由约300座石灰岩山峰组成的山地，“三百峰”由此得名，最高峰海拔605米，山地西北角的通三百峰淡水沼泽是泰国境内面积最大的湿地之一，1966年设为泰国首座海洋型国家公园。" +
+      "越过三百峰山后，飞机继续向南飞越泰国南部半岛，最终降落在普吉岛——泰国最大的岛屿，坐落于安达曼海，是泰国最负盛名的海岛度假目的地，西海岸分布着巴东、卡伦、卡塔等主要海滩度假区。",
+    "en-US":
+      "Flying from Bangkok Don Mueang to Phuket links the capital with Thailand's most famous island resort destination. After leaving Don Mueang the flight heads south, the landform along the Gulf of Thailand coast continuing below, passing over Khao Sam Roi Yot midway — a range of some 300 limestone peaks along the Gulf of Thailand coast, the source of its name (\"the mountain with three hundred peaks\"), with the freshwater marsh of Thung Sam Roi Yot at its north-western corner among the largest wetlands in Thailand." +
+      " Past Khao Sam Roi Yot, the flight continues south over the southern Thai peninsula, before landing on Phuket, Thailand's largest island in the Andaman Sea and the country's most famous island resort destination.",
+    },
+    travel: {
+    "zh-CN":
+      "曼谷廊曼到普吉岛飞约85分钟，同一时区，是泰国亚洲航空运营的国内航班之一（空客A320机型）。廊曼机场距曼谷市区约25公里；普吉国际机场距普吉镇约32公里。普吉岛是探索攀牙湾喀斯特岛群的理想门户。",
+    "en-US":
+      "Bangkok Don Mueang to Phuket takes about 85 minutes, same time zone, operated by Thai AirAsia (Airbus A320) as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Phuket International Airport is about 32 km from Phuket Town. Phuket is an ideal gateway for exploring the karst islands of Ao Phang Nga.",
+    },
+  },
+
+  "dmk-kbv": {
+    study: {
+    "zh-CN":
+      "曼谷廊曼飞甲米，是连接首都与安达曼海喀斯特海岸的航线。飞机离开廊曼后向南飞行，逐渐飞越泰国南部半岛，临近降落前脚下展开攀牙湾——泰国南部安达曼海一处约400平方公里的淹没型喀斯特海湾，二叠纪拉查布里石灰岩地层在末次冰期后海平面上升过程中被淹没，露出海面的部分形成陡峭孤立的塔状岩岛，宾坎岩（“007岛”）是湾内最具代表性的地标之一。" +
+      "飞机最终降落在甲米——泰国南部安达曼海沿岸的府份，以陡峭的石灰岩喀斯特海岸与莱利岬角攀岩胜地闻名。",
+    "en-US":
+      "Flying from Bangkok Don Mueang to Krabi links the capital with the karst coastline of the Andaman Sea. After leaving Don Mueang the flight heads south, gradually crossing the southern Thai peninsula; just before landing, Ao Phang Nga unfolds below — a roughly 400 km² drowned karst bay in the Andaman Sea, where Permian Ratburi limestone was drowned as sea level rose after the last glacial period, leaving its emergent tops as today's steep, isolated rock islands, with Khao Phing Kan (\"James Bond Island\") among the bay's most iconic landmarks" +
+      " — before the flight lands in Krabi, a province on Thailand's southern Andaman coast known for its steep limestone karst coastline and the rock-climbing destination of Railay Peninsula.",
+    },
+    travel: {
+    "zh-CN":
+      "曼谷廊曼到甲米飞约85分钟，同一时区，是泰国狮航运营的国内航班之一（波音737-900机型）。廊曼机场距曼谷市区约25公里；甲米国际机场距甲米镇约18公里。甲米是探索莱利岬角攀岩与皮皮群岛跳岛游的理想门户。",
+    "en-US":
+      "Bangkok Don Mueang to Krabi takes about 85 minutes, same time zone, operated by Thai Lion Air (Boeing 737-900) as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Krabi International Airport is about 18 km from Krabi Town. Krabi is an ideal gateway for rock climbing at Railay Peninsula and island-hopping to the Phi Phi Islands.",
+    },
+  },
+
+  "gmp-cju": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞济州，是全球客流量最大的国内航线之一，每日往返多达70余班，多家航空公司共同运营。飞机离开金浦后向南飞行，逐渐掠过湖南平原——朝鲜半岛面积最大的平原，面积约3500平方公里，古代碧骨堤水利工程记录了这一区域悠久的稻作传统。" +
+      "越过陆地后，飞机继续向南飞越朝鲜海峡的开阔海面，济州岛逐渐出现在视野中，岛屿中心汉拿山盾状火山轮廓清晰可辨，山麓散布着数百座俗称“오름”的寄生火山锥，飞机最终降落在济州——韩国最大的岛屿与最高峰所在地。",
+    "en-US":
+      "Flying from Seoul Gimpo to Jeju is one of the busiest domestic routes in the world, with more than 70 round trips daily. After leaving Gimpo the flight heads south, passing over the Honam Plain — the largest plain on the Korean Peninsula, where the ancient Byeokgolje irrigation works record this region's long rice-farming tradition." +
+      " Past the mainland, the flight continues south across the open waters of the Korea Strait; Jeju Island gradually comes into view, with the shield-volcano profile of Hallasan clearly visible at its centre, before the flight lands in Jeju, South Korea's largest island and home to its highest peak.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到济州飞约75分钟，同一时区，是大韩航空运营的国内航班之一（空客A220-300机型），这条航线因客流密集常被称为全球最繁忙的国内航线。金浦机场位于首尔市区西部；济州国际机场就在济州市区西侧。韩国境内多国公民短期旅游的电子旅行许可豁免安排以官方最新公布为准。",
+    "en-US":
+      "Seoul Gimpo to Jeju takes about 75 minutes, same time zone, operated by Korean Air (Airbus A220-300) as one of Korea's domestic routes; this route is often cited as the busiest domestic air route in the world by passenger volume. Gimpo Airport sits on the western side of Seoul; Jeju International Airport is right on the west side of Jeju City. South Korea's electronic travel-authorisation exemption arrangements for short-term visitors follow the latest official announcements.",
+    },
+  },
+
+  "gmp-pus": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞釜山，是连接韩国两大城市的传统航线，也是首尔通往东南沿海最便捷的空中通道。飞机离开金浦后向东南飞行，中途掠过俗离山——韩国中部一座相对孤立的花岗岩与片麻岩山体，1970年设为韩国第六座国家公园，山麓法住寺记录了这一区域悠久的佛教文化传统。" +
+      "越过俗离山后，飞机继续向东南飞行，临近降落前脚下展开洛东江河口三角洲——洛东江注入沿海处发育的辫状三角洲，乙淑岛沙洲是候鸟迁徙的重要中途停歇地，飞机随后降落在釜山——韩国第二大城市与最大港口，也是釜山国际电影节每年秋季的举办地。",
+    "en-US":
+      "Flying from Seoul Gimpo to Busan links Korea's two largest cities. After leaving Gimpo the flight heads south-east, passing over Songnisan midway — a relatively isolated granite-and-gneiss massif in central Korea, its Beopjusa Temple recording this area's long Buddhist tradition." +
+      " Past Songnisan, the flight continues south-east, and just before landing the Nakdong River Estuary unfolds below — a braided delta formed where the Nakdong River meets the coast, with the Eulsukdo sandbar an important stopover for migratory birds — before the flight lands in Busan, South Korea's second-largest city and largest port.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到釜山飞约55分钟，同一时区，是大韩航空运营的国内航班之一（空客A220-300机型），也可选择约2.5小时的KTX高铁。金浦机场位于首尔市区西部；金海国际机场距釜山市区约20公里。釜山是探索海云台与甘川文化村的理想门户。",
+    "en-US":
+      "Seoul Gimpo to Busan takes about 55 minutes, same time zone, operated by Korean Air (Airbus A220-300) as one of Korea's domestic routes; the KTX high-speed rail (about 2.5 hours) is another option. Gimpo Airport sits on the western side of Seoul; Gimhae International Airport is about 20 km from central Busan. Busan is an ideal gateway for Haeundae Beach and Gamcheon Culture Village.",
+    },
+  },
+
+  "gmp-usn": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞蔚山，是连接首都与东南部重工业城市的航线。飞机离开金浦后向东南飞行，中途掠过俗离山——韩国中部一座相对孤立的花岗岩与片麻岩山体，1970年设为韩国第六座国家公园，山麓法住寺始建于新罗时期。" +
+      "越过俗离山后，飞机继续向东南飞行，逐渐接近朝鲜半岛东南沿海，飞机最终降落在蔚山——韩国重要的造船、汽车与石化工业城市，太和江十里竹林是市区内难得的开阔自然空间，蔚山近海也是韩国鲸鱼观测活动的举办地之一。",
+    "en-US":
+      "Flying from Seoul Gimpo to Ulsan links the capital with a major heavy-industry city in the south-east. After leaving Gimpo the flight heads south-east, passing over Songnisan midway — a relatively isolated granite-and-gneiss massif in central Korea, designated Korea's sixth national park in 1970." +
+      " Past Songnisan, the flight continues south-east, gradually approaching Korea's south-eastern coast, before landing in Ulsan — a major centre for shipbuilding, automobiles, and petrochemicals, home to the rare open green space of the Taehwa River's bamboo grove.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到蔚山飞约60分钟，同一时区，是大韩航空运营的国内航班之一，每日往返约2班，也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；蔚山机场距市区约15公里。蔚山是探索岭南阿尔卑斯山地与长生浦鲸鱼文化村的门户。",
+    "en-US":
+      "Seoul Gimpo to Ulsan takes about 60 minutes, same time zone, operated by Korean Air as one of Korea's domestic routes, with roughly two round trips daily; the KTX (about 2 hours) is another option. Gimpo Airport sits on the western side of Seoul; Ulsan Airport is about 15 km from the city centre. Ulsan is a gateway to the Yeongnam Alps and Jangsaengpo Whale Culture Village.",
+    },
+  },
+
+  "gmp-rsu": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞丽水，是连接首都与南部沿海港口城市的航线。飞机离开金浦后向南飞行，脚下持续展开湖南平原开阔平坦的地貌——朝鲜半岛面积最大的平原，面积约3500平方公里，纵横的灌溉水渠将平原分割成棋盘状的地块，是韩国最重要的稻米产区。" +
+      "飞机继续向南飞行，逐渐接近朝鲜半岛南部沿海，飞机最终降落在丽水——2012年世界博览会举办地，以跨海缆车夜景与音乐喷泉闻名的港口城市，突山岛与丽水本岛由大桥相连，梧桐岛海岸步道是市区内探索海岸地貌的经典去处。",
+    "en-US":
+      "Flying from Seoul Gimpo to Yeosu links the capital with a southern coastal port city. After leaving Gimpo the flight heads south, the open, flat landform of the Honam Plain continuing below — the largest plain on the Korean Peninsula, its irrigation channels dividing the land into a checkerboard of fields." +
+      " The flight continues south, gradually approaching Korea's southern coast, before landing in Yeosu — host of the 2012 World Expo and a port city known for its cross-sea cable car night views.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到丽水飞约60分钟，同一时区，是真航空运营的国内航班之一（波音737-800机型），也可选择约3小时的KTX高铁。金浦机场位于首尔市区西部；丽水机场距市区约20公里。丽水是探索梧桐岛与突山大桥的理想门户。",
+    "en-US":
+      "Seoul Gimpo to Yeosu takes about 60 minutes, same time zone, operated by Jin Air (Boeing 737-800) as one of Korea's domestic routes; the KTX (about 3 hours) is another option. Gimpo Airport sits on the western side of Seoul; Yeosu Airport is about 20 km from the city centre. Yeosu is an ideal gateway for Odongdo Island and Dolsan Bridge.",
+    },
+  },
+
+  "gmp-kpo": {
+    study: {
+    "zh-CN":
+      "首尔金浦飞浦项庆州，是连接首都与东南沿海钢铁工业城市及新罗古都的航线。飞机离开金浦后向东南飞行，中途掠过洛东江——韩国境内最长的河流，全长约510公里，安东一带河流下切花岗岩基岩形成的河回村曲流是沿线最具代表性的河流地貌。" +
+      "越过洛东江后，飞机继续向东南飞行，逐渐接近朝鲜半岛东南沿海，飞机最终降落在浦项庆州机场——韩国钢铁工业城市浦项与新罗古都庆州共用的机场，浦项因浦项制铁的建立而在20世纪后期迅速发展为工业城市。",
+    "en-US":
+      "Flying from Seoul Gimpo to Pohang Gyeongju links the capital with a south-eastern coastal steel city and the ancient Silla capital nearby. After leaving Gimpo the flight heads south-east, passing over the Nakdong River midway — the longest river in South Korea, with the Hahoe meander near Andong, cut by the river into granite bedrock, the most distinctive stretch along its course." +
+      " Past the Nakdong River, the flight continues south-east, gradually approaching Korea's south-eastern coast, before landing at Pohang Gyeongju Airport, shared by the steel city of Pohang and the ancient Silla capital of Gyeongju.",
+    },
+    travel: {
+    "zh-CN":
+      "首尔金浦到浦项庆州飞约55分钟，同一时区，是真航空运营的国内航班之一（波音737-800机型），也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；浦项庆州机场距浦项市区约10公里、距庆州市区约35公里。这座机场是探索新罗古都庆州历史遗址群的理想门户。",
+    "en-US":
+      "Seoul Gimpo to Pohang Gyeongju takes about 55 minutes, same time zone, operated by Jin Air (Boeing 737-800) as one of Korea's domestic routes; the KTX (about 2 hours) is another option. Gimpo Airport sits on the western side of Seoul; Pohang Gyeongju Airport is about 10 km from central Pohang and about 35 km from central Gyeongju. This airport is an ideal gateway for exploring the Silla-era heritage sites of Gyeongju.",
+    },
+  },
+
+  "pus-cju": {
+    study: {
+    "zh-CN":
+      "釜山飞济州，是连接韩国东南部港口城市与南部岛屿的航线，也是济州航空与大韩航空共同运营的热门航段。飞机离开釜山后向西南飞行，脚下展开闲丽海上国立公园的多岛海——韩国南部沿海一片散布数百座岛屿的海域，是末次冰期后海平面上升淹没沿海山地丘陵形成的典型溺谷型多岛海地貌，1968年设为韩国首座海上国家公园。" +
+      "越过多岛海后，飞机继续向西南飞行穿越开阔海面，济州岛逐渐出现在视野中，岛屿中心汉拿山轮廓清晰可辨，飞机最终降落在济州——韩国最大的岛屿。",
+    "en-US":
+      "Flying from Busan to Jeju links a south-eastern port city with Korea's southern island. After leaving Busan the flight heads south-west, the archipelago of Hallyeohaesang Marine National Park unfolding below — a stretch of Korea's southern coastal waters scattered with hundreds of islands, a classic ria-type archipelago formed as sea level rose after the last glacial period and drowned the coastal hills, designated Korea's first marine national park in 1968." +
+      " Past the archipelago, the flight continues south-west across open water; Jeju Island gradually comes into view, before the flight lands in Jeju, South Korea's largest island.",
+    },
+    travel: {
+    "zh-CN":
+      "釜山到济州飞约60分钟，同一时区，是济州航空运营的国内航班之一（波音737-800机型），大韩航空也运营同一航线。金海国际机场距釜山市区约20公里；济州国际机场就在济州市区西侧。",
+    "en-US":
+      "Busan to Jeju takes about 60 minutes, same time zone, operated by Jeju Air (Boeing 737-800) as one of Korea's domestic routes, with Korean Air also operating the same sector. Gimhae International Airport is about 20 km from central Busan; Jeju International Airport is right on the west side of Jeju City.",
+    },
+  },
+
+  "waw-krk": {
+    study: {
+    "zh-CN":
+      "华沙飞克拉科夫，是波兰国内客流量最大的航线，每日往返多达6班，连接首都与历史古都。飞机离开华沙后向南飞行，中途掠过圣十字山——波兰境内地质年代最古老的山脉之一，基岩可追溯至约5亿年前的古生代，历经数亿年反复的构造运动与风化夷平已成为低矮浑圆的丘状山地，山坡上散布着侵蚀残留的石英岩碎块堆（当地称“戈乌博尔基”），与波兰其他年轻山脉的陡峭轮廓形成鲜明对比。" +
+      "越过圣十字山后，飞机继续向南飞行，逐渐进入小波兰地区、地势开始向喀尔巴阡山脉过渡，最终降落在克拉科夫——1038至1596年间波兰王国的首都，也是瓦维尔城堡所在地，1978年老城与城堡列入首批联合国教科文组织世界遗产名录。",
+    "en-US":
+      "Flying from Warsaw to Kraków is Poland's busiest domestic route, linking the capital with the historic former capital. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — one of the geologically oldest ranges in Poland, its bedrock dating to the Palaeozoic around 500 million years ago, worn by hundreds of millions of years of weathering into today's low, rounded hill form, its slopes scattered with eroded quartzite debris." +
+      " Past the Świętokrzyskie range, the flight continues south into Lesser Poland, landing in Kraków, the historic former capital and home to Wawel Castle.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到克拉科夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约2.5小时的城际火车。克拉科夫机场离市区约11公里。克拉科夫是探索小波兰地区（扎科帕内、维利奇卡盐矿）的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Kraków is about 55 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190, six round trips daily) as one of Poland's domestic routes; an intercity train (about 2.5 hours) is another option. Kraków Airport is about 11 km from the centre. Kraków is an ideal gateway for exploring Lesser Poland (Zakopane, the Wieliczka Salt Mine). Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-gdn": {
+    study: {
+    "zh-CN":
+      "华沙飞格但斯克，是一趟连接波兰首都与波罗的海沿岸港口城市的航线。飞机离开华沙后向北飞行，脚下的地貌逐渐从中部平原过渡为维斯瓦河下游流域，维斯瓦河是波兰境内最长的河流，发源于西南部喀尔巴阡山脉北麓，全程贯穿波兰、最终在格但斯克附近注入波罗的海。" +
+      "临近格但斯克降落前，脚下展开维斯瓦三角洲低地——维斯瓦河入海口处的冲积三角洲平原，部分区域海拔低于海平面，历史上经中世纪荷兰移民带来的堤坝排水技术围垦而成，是波兰境内地势最低的区域，河网密布、以纵横的排水渠道著称，飞机随后降落在格但斯克——历史上汉萨同盟重要的贸易城市，也是二战爆发的第一枪打响之地。",
+    "en-US":
+      "Flying from Warsaw to Gdańsk links Poland's capital with its Baltic coast port city. After leaving Warsaw the flight heads north, the landscape below gradually shifting from the central plain into the lower Vistula river basin." +
+      " Approaching Gdańsk, Żuławy Wiślane comes into view below — the alluvial delta plain at the Vistula's mouth, part of it lying below sea level, historically reclaimed using dike-and-drainage technology introduced by medieval settlers from the Low Countries, the lowest-lying region in Poland — before the flight lands in Gdańsk, a historically important Hanseatic League trading city.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到格但斯克飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每周约40班），也可选择约2.5小时的城际火车。格但斯克机场离市区约12公里。格但斯克是探索波罗的海沿岸海尔半岛与斯沃文斯基沙丘的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Gdańsk is about 50 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190, about 40 flights weekly) as one of Poland's domestic routes; an intercity train (about 2.5 hours) is another option. Gdańsk Airport is about 12 km from the centre. Gdańsk is an ideal gateway for exploring the Hel Peninsula and the Słowiński dunes along the Baltic coast. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-wro": {
+    study: {
+    "zh-CN":
+      "华沙飞弗罗茨瓦夫，是一趟横跨波兰中西部、连接首都与西里西亚核心城市的航线。飞机离开华沙后向西飞行，脚下展开大波兰低地开阔平坦的地貌——中欧平原位于波兰境内的主体部分，由末次冰期冰川堆积物构成，地表覆盖厚层冰碛物与冰水沉积物，大片规整的农田一望无际，是波兰面积最大的农业区，也是波兰主要的小麦与甜菜产区。" +
+      "越过大波兰低地后，飞机继续向西南飞行，逐渐进入奥得河谷地，最终降落在弗罗茨瓦夫——奥得河畔以百余座桥梁与街头小矮人雕塑闻名的西里西亚核心城市，历史上曾多次易主，如今是波兰重要的工业与学术中心之一。",
+    "en-US":
+      "Flying from Warsaw to Wrocław crosses west-central Poland, linking the capital with the core city of Silesia. After leaving Warsaw the flight heads west, the open, flat landform of the Great Polish Lowland unfolding below — the main portion of the Central European Plain lying within Poland, built of last-glacial ice-sheet deposits, its extensive, regular farmland stretching to the horizon as Poland's largest agricultural region." +
+      " Past the Great Polish Lowland, the flight continues south-west, landing in Wrocław, the core city of Silesia on the Oder, known for its hundred-plus bridges and its street-side dwarf statues.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到弗罗茨瓦夫飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型，每日6班往返），也可选择约4.5小时的城际火车。弗罗茨瓦夫机场离市区约10公里。弗罗茨瓦夫是探索西里西亚地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Wrocław is about 50 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190, six round trips daily) as one of Poland's domestic routes; an intercity train (about 4.5 hours) is another option. Wrocław Airport is about 10 km from the centre. Wrocław is an ideal gateway for exploring the Silesia region. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-poz": {
+    study: {
+    "zh-CN":
+      "华沙飞波兹南，是一趟连接波兰首都与最古老城市之一的短途航线。起飞后不久，脚下即展开大波兰低地开阔平坦的地貌——由末次冰期冰川堆积物构成的平原，地表保留有大量冰川作用形成的锅状凹地小湖，大片农田与零星分布的森林、湖泊交织，是波兰境内地势最为平坦开阔的区域。" +
+      "飞机继续向西飞行，最终降落在波兹南——瓦尔塔河畔的古老城市，波兰最早的行政与宗教中心之一，坐落于这片开阔低地之上，如今是波兰重要的会展与工业城市。",
+    "en-US":
+      "Flying from Warsaw to Poznań is a short hop linking the capital with one of Poland's oldest cities. Soon after take-off, the open, flat landform of the Great Polish Lowland unfolds below — a plain built of last-glacial ice-sheet deposits, extensive farmland interwoven with scattered forest and lakes, the flattest, most open region within Poland." +
+      " The flight continues west, landing in Poznań, an ancient city that was historically one of the political centres of the early Polish state, built on this open lowland.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到波兹南飞约39分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约2.5小时的城际火车。波兹南机场离市区约6公里。波兹南是探索大波兰低地地区的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Poznań is about 39 minutes, same time zone, operated by LOT Polish Airlines (Embraer 175) as one of Poland's domestic routes; an intercity train (about 2.5 hours) is another option. Poznań Airport is about 6 km from the centre. Poznań is an ideal gateway for exploring the Great Polish Lowland region. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-rze": {
+    study: {
+    "zh-CN":
+      "华沙飞热舒夫，是一趟飞往波兰东南部、探索别什恰迪山脉的门户航线。飞机离开华沙后向南飞行，中途掠过圣十字山——波兰境内地质年代最古老的山脉，基岩可追溯至古生代，历经数亿年风化夷平已成为低矮浑圆的丘状山地，是欧洲少数保留有古生代原始地貌痕迹的山地之一。" +
+      "越过圣十字山后，飞机继续向东南飞行，逐渐进入小波兰东部地区、地势向喀尔巴阡山前地带过渡，最终降落在热舒夫——波兰重要的航空工业中心，因此得名“波兰航空谷”，机场附近设有航空博物馆记录当地航空制造历史。",
+    "en-US":
+      "Flying from Warsaw to Rzeszów is a gateway route to south-eastern Poland and the Bieszczady Mountains. After leaving Warsaw the flight heads south, passing over the Świętokrzyskie Mountains midway — the geologically oldest range in Poland, its bedrock dating to the Palaeozoic, worn by hundreds of millions of years of weathering into today's low, rounded hill form." +
+      " Past the Świętokrzyskie range, the flight continues south-east into the eastern part of Lesser Poland, landing in Rzeszów, an important Polish aerospace-industry centre nicknamed \"Aviation Valley.\"",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到热舒夫飞约55分钟，同一时区，是波兰航空运营的国内航班之一（安波190机型），也可选择约3小时的城际火车。热舒夫—亚西翁卡机场离市区约10公里。热舒夫是探索别什恰迪山脉波沃尼纳草甸的便捷门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Rzeszów is about 55 minutes, same time zone, operated by LOT Polish Airlines (Embraer 190) as one of Poland's domestic routes; an intercity train (about 3 hours) is another option. Rzeszów-Jasionka Airport is about 10 km from the centre. Rzeszów is a convenient gateway for the połoniny meadows of the Bieszczady Mountains. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
+  "waw-szz": {
+    study: {
+    "zh-CN":
+      "华沙飞什切青，是一趟横跨波兰全境、抵达西北部奥得河口港口城市的航线，也是波兰境内飞行距离最长的国内航线之一。飞机离开华沙后向西北飞行，脚下持续展开大波兰低地开阔平坦的地貌，大片农田与零星分布的湖泊、森林一望无际。" +
+      "飞机继续向西北飞行，逐渐接近波兰与德国边境，什切青潟湖与奥得河口的水网在地平线上依稀可见，最终降落在什切青——紧邻德国边境、坐落于奥得河口的重要港口与工业城市，波兰海军主要基地之一，也是波兰通往波罗的海的重要出海口。",
+    "en-US":
+      "Flying from Warsaw to Szczecin spans the length of Poland to reach the port city at the mouth of the Oder in the north-west. After leaving Warsaw the flight heads north-west, the open, flat landform of the Great Polish Lowland continuing below it, extensive farmland stretching to the horizon." +
+      " The flight continues north-west, gradually approaching the Poland-Germany border, before landing in Szczecin, an important port and industrial city at the mouth of the Oder, right on the German border.",
+    },
+    travel: {
+    "zh-CN":
+      "华沙到什切青飞约50分钟，同一时区，是波兰航空运营的国内航班之一（安波175机型），也可选择约6.5小时的城际火车。什切青—戈萊尼乌夫机场离市区约45公里。什切青是探索沃林岛国家公园的理想门户。波兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+    "en-US":
+      "Warsaw to Szczecin is about 50 minutes, same time zone, operated by LOT Polish Airlines (Embraer 175) as one of Poland's domestic routes; an intercity train (about 6.5 hours) is another option. Szczecin-Goleniów Airport is about 45 km from the centre. Szczecin is an ideal gateway for exploring Wolin National Park. Poland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+    },
+  },
+
   "han-sgn": {
     study: {
     "zh-CN":

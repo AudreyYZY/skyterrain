@@ -1,0 +1,16 @@
+{
+  "id": "dmk-hkt",
+  "name": "曼谷廊曼 — 普吉岛",
+  "nameEn": "Bangkok Don Mueang — Phuket",
+  "description": "三百峰山",
+  "descriptionEn": "Khao Sam Roi Yot",
+  "depCountry": "thailand",
+  "arrCountry": "thailand",
+  "flight": { "airline": "泰国亚洲航空", "airlineEn": "Thai AirAsia", "flightNo": "FD3031", "aircraft": "Airbus A320", "depIata": "DMK", "arrIata": "HKT", "durationMin": 85 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
+    { "kind": "terrain", "terrainId": "khao-sam-roi-yot" },
+    { "kind": "city", "id": "hkt", "name": "普吉岛", "nameEn": "Phuket", "lat": 8.1132, "lon": 98.3169, "airport": true }
+  ]
+}
