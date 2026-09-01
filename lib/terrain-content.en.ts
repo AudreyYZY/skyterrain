@@ -12367,4 +12367,74 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Itbayat is the northernmost inhabited island in the Philippines; the local Ivatan people retain a distinctive tradition of stone-house architecture, developed to withstand the region's frequent typhoons.",
   },
+  "el-nido-bacuit-archipelago": {
+    seeing:
+      "El Nido / the Bacuit Archipelago is a group of 45 limestone islets at the northern tip of Palawan, riddled with karst cliffs, sinkholes and lagoons; the entire area was recognised as a UNESCO Global Geopark in 2011.",
+    formation:
+      "The limestone islets of the Bacuit Archipelago have been shaped by the combined action of sea erosion and surface dissolution over a long period, carving today's steep, near-vertical karst cliff landform, with dissolution within the islets producing numerous sinkholes and hidden lagoons.",
+    observation:
+      "From the air, the Bacuit Archipelago shows dozens of tropical-forest-covered limestone tower islets scattered across turquoise water, white-sand beaches and hidden lagoons dotting the spaces between them — a classic tropical karst island landscape.",
+    distinguish:
+      "Both El Nido / the Bacuit Archipelago and the Coron / Calamian Islands are limestone island groups off Palawan, but Bacuit is known for its dense field of 45 karst tower islets and hidden lagoons, while Coron is known for mixed saline-freshwater lakes such as Kayangan.",
+    concept:
+      "The nesting of swiftlets in the cliffs and caves of the Bacuit Archipelago makes it a classic sample for studying the relationship between tropical karst island ecosystems and the roosting behaviour of specific bird species.",
+    history:
+      "\"El Nido\" comes from the Spanish for \"the nest,\" named for the local tradition of harvesting swiftlet nests from the area's limestone cliffs and caves; it is today a well-known island-hopping and diving destination in the Philippines.",
+  },
+  "tubbataha-reefs": {
+    seeing:
+      "The Tubbataha Reefs are a coral atoll natural park at the centre of the Sulu Sea, made up of the Tubbataha and Jessie Beazley Reefs, protecting an area of nearly 100,000 ha and recording more than 360 coral species and almost 700 fish species.",
+    formation:
+      "The Tubbataha Reefs are an isolated coral atoll system in the deep waters of the Sulu Sea, built up through long-term coral growth into a reef structure with walls dropping vertically more than 100 m — a classic sample of ongoing coral growth in an isolated, deep-sea setting.",
+    observation:
+      "From the air, Tubbataha shows the classic atoll outline of pale reef flats ringing a deep-blue lagoon, surrounded by the open, deep waters of the Sulu Sea, far from land and largely free of land-based pollution.",
+    distinguish:
+      "Both the Tubbataha Reefs and El Nido / the Bacuit Archipelago are well-known Philippine coral reef ecosystems, but Tubbataha is an isolated deep-sea atoll system at the centre of the Sulu Sea, while El Nido is a near-shore karst island group off Palawan.",
+    concept:
+      "As a key node for the reproduction and dispersal of marine life across the Sulu Sea, Tubbataha is an important sample for studying how an isolated deep-sea coral reef system replenishes the wider regional marine ecosystem.",
+    history:
+      "Tubbataha was established as a marine park in 1988 and inscribed on the UNESCO World Heritage List in 1993, making it one of the world's natural laboratories for studying coral reef formation.",
+  },
+  "coron-calamian-islands": {
+    seeing:
+      "Coron / the Calamian Islands are a group of limestone islands off Palawan's northeast coast; Kayangan Lake within them is regarded as the clearest lake in the Philippines, with underwater visibility exceeding 24 m.",
+    formation:
+      "The steep limestone cliffs around Coron Island are built of sedimentary rock formed from coral reefs and shells millions of years ago; Kayangan Lake is a karst lake where seawater has long seeped through the limestone cliffs and mixed with rainwater, producing a distinctive mixed lake of about 70% freshwater and 30% seawater.",
+    observation:
+      "From the air, Coron shows steep limestone cliffs ringing deep lakes and bays; Kayangan Lake, enclosed on all sides by towering cliffs, has crystal-clear water visible to the bottom, forming a richly layered scene against the green, vegetation-covered karst massif around it.",
+    distinguish:
+      "Both Coron / the Calamian Islands and El Nido / the Bacuit Archipelago are limestone island groups off Palawan, but Coron is known for mixed saline-freshwater lakes such as Kayangan, while El Nido is known for its dense field of karst tower islets and hidden lagoons.",
+    concept:
+      "Kayangan Lake's distinctive layered mix of saline and fresh water makes it a classic sample for studying how the combined action of seawater seepage and rainwater recharge in karst terrain produces a distinctive lake ecosystem.",
+    history:
+      "Kayangan Lake has been guarded for generations by the local Tagbanua people, who regard it as sacred; it is today a well-known diving and island-hopping destination in the Philippines and an important case of indigenous-led nature conservation on Palawan.",
+  },
+  "puerto-princesa-underground-river": {
+    seeing:
+      "The Puerto Princesa Underground River is an 8.2-km underground river within Palawan's Saint Paul Mountain Range, the longest known navigable underground river that flows directly into the sea, inscribed on the UNESCO World Heritage List in 1999.",
+    formation:
+      "The limestone massif hosting the Puerto Princesa Underground River has been shaped by long-term groundwater dissolution of the carbonate rock into a vast cave system; its lower reaches, near the sea outlet, are tidally influenced and brackish — a distinctive case of karst landform interacting with ocean tides.",
+    observation:
+      "From the air, the Saint Paul Mountain Range hosting the underground river is densely forested, its cave mouth hidden within the massif, several chambers inside as much as 120 m wide and 60 m high, the vast underground river network almost invisible from the surface.",
+    distinguish:
+      "Both the Puerto Princesa Underground River and the Chocolate Hills are representative karst landforms in the Philippines, but the underground river is known for its navigable underground channel flowing directly into the sea, while the Chocolate Hills are a dense field of conical karst mounds.",
+    concept:
+      "The Puerto Princesa Underground River fully protects a continuous mountain-to-sea ecosystem, making it an important sample for studying how a karst underground river system sustains biodiversity across the land-sea transition zone.",
+    history:
+      "The Puerto Princesa Underground River was inscribed on the UNESCO World Heritage List in 1999 and named one of the New7Wonders of Nature in 2012, a landmark achievement in Philippine natural heritage conservation.",
+  },
+  "pagsanjan-gorge": {
+    seeing:
+      "Pagsanjan Gorge is a canyon landform on Luzon carved by the Pagsanjan River in Laguna Province, ending in the three-tiered, 120-m Magdapio Falls, popularly known as Pagsanjan Falls.",
+    formation:
+      "Pagsanjan Gorge lies at the foot of the Sierra Madre; long-term erosion of the mountain rock by the river has carved a gorge landform with steep, forest-covered walls on both sides of the channel, the river forming a tiered waterfall where it meets a drop in the rock strata at its end.",
+    observation:
+      "From the air, Pagsanjan Gorge shows a winding river channel set deep within a densely forested valley, the three-tiered Magdapio Falls at its end, blending into the primary-forest landscape at the foot of the surrounding Sierra Madre.",
+    distinguish:
+      "Both Pagsanjan Gorge and the Puerto Princesa Underground River are representative gorge and cave landforms in the Philippines, but Pagsanjan is an open surface-river gorge and waterfall carved by erosion, while Puerto Princesa is an underground karst river system.",
+    concept:
+      "Pagsanjan Gorge's traditional dugout-canoe \"shooting the rapids\" journey upriver makes it a classic case for studying how a gorge landform and a traditional form of water transport have coexisted and developed into a tourism experience over the long term.",
+    history:
+      "Pagsanjan Gorge National Park was established in 1939; the tradition of carrying visitors upriver by dugout canoe dates to the Spanish colonial era and continues today, making it one of the Philippines' longest-running river adventure tourism experiences.",
+  },
 };

@@ -12549,6 +12549,71 @@ const BATANES_ISLANDS: TerrainEntry = {
   source: "巴丹群岛：菲律宾最北端的岛群，主要由巴丹岛、萨布唐岛与伊特巴亚特岛三座有人居住的岛屿组成；巴丹岛与萨布唐岛由火山喷发形成、地表起伏为开阔草丘，伊特巴亚特岛则由板块构造运动抬升而成、以更陡峭的悬崖地貌为特征；伊特巴亚特岛是菲律宾最北端的有人岛屿，当地伊瓦坦族保留独特的石屋建筑传统（Wikipedia WebSearch 2026）",
 };
 
+const EL_NIDO_BACUIT_ARCHIPELAGO: TerrainEntry = {
+  id: "el-nido-bacuit-archipelago",
+  nameZh: "艾尔尼多—巴奎特群岛",
+  nameEn: "El Nido / Bacuit Archipelago",
+  category: "island",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "巴奎特湾", lon: 119.3833, lat: 11.2000, elevation: 5, kind: "island" },
+  bbox: [119.30, 11.12, 119.50, 11.30],
+  label: { lon: 119.38, lat: 11.32, rotation: 0 },
+  source: "艾尔尼多—巴奎特群岛：巴拉望岛北端一处由45座石灰岩岛礁组成的群岛，岛礁遍布喀斯特崖壁、落水洞与潟湖，2011年整个区域获认定为UNESCO世界地质公园；“艾尔尼多”（西班牙语意为“巢”）得名于岛礁石灰岩崖壁与洞穴中金丝燕筑巢的现象，是菲律宾知名的跳岛游与潜水目的地（Roughguides/bestdivingphilippines.com WebSearch 2026）",
+};
+
+const TUBBATAHA_REEFS: TerrainEntry = {
+  id: "tubbataha-reefs",
+  nameZh: "图巴塔哈群礁",
+  nameEn: "Tubbataha Reefs",
+  category: "island",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "图巴塔哈北环礁", lon: 119.8664, lat: 8.8500, elevation: 0, kind: "island" },
+  bbox: [119.78, 8.68, 119.95, 9.05],
+  label: { lon: 119.87, lat: 9.10, rotation: 0 },
+  source: "图巴塔哈群礁：苏禄海中央一处由图巴塔哈礁与杰西·比兹利礁组成的珊瑚环礁自然公园，保护面积近10万公顷，1988年设立海洋公园、1993年列入UNESCO世界遗产名录；礁区记录珊瑚物种逾360种、鱼类近700种，是苏禄海海域生物繁殖扩散的核心节点，礁体拥有垂直落差逾百米的珊瑚礁壁（UNESCO/tubbatahareefs.org WebSearch 2026）",
+};
+
+const CORON_CALAMIAN_ISLANDS: TerrainEntry = {
+  id: "coron-calamian-islands",
+  nameZh: "科隆—卡拉棉群岛",
+  nameEn: "Coron / Calamian Islands",
+  category: "island",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "卡杨甘湖", lon: 120.1975, lat: 11.9958, elevation: 40, kind: "lake" },
+  bbox: [120.05, 11.90, 120.25, 12.10],
+  label: { lon: 120.05, lat: 12.12, rotation: 0 },
+  source: "科隆—卡拉棉群岛：巴拉望岛东北海域一组石灰岩岛群，科隆岛周边陡峭的石灰岩崖壁由数百万年前珊瑚礁与贝壳类沉积岩层构成；岛内卡杨甘湖被誉为菲律宾水质最清澈的湖泊，水下能见度逾24米，湖水约七成为淡水、三成为海水（经石灰岩崖壁渗透混合的咸淡水湖），由当地塔格巴努亚族世代守护并视为圣地（divergenttravelers.com/richandsunnytravels.com WebSearch 2026）",
+};
+
+const PUERTO_PRINCESA_UNDERGROUND_RIVER: TerrainEntry = {
+  id: "puerto-princesa-underground-river",
+  nameZh: "普林塞萨港地下河",
+  nameEn: "Puerto Princesa Underground River",
+  category: "gorge",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "地下河洞口", lon: 118.9219, lat: 10.1996, elevation: 5, kind: "gorge" },
+  bbox: [118.85, 10.15, 118.98, 10.25],
+  label: { lon: 118.92, lat: 10.27, rotation: 0 },
+  source: "普林塞萨港地下河：巴拉望岛圣保罗山脉一条全长8.2公里的地下暗河，是世界上已知最长的直接注入大海的可通航地下河，下游河段因潮汐影响呈咸淡水混合状态；1999年列入UNESCO世界遗产名录，2012年获评“世界新七大自然奇观”；洞内多处洞厅宽达120米、高60米，园区完整保护了从山地到海洋的连续生态系统，记录植物逾800种（UNESCO WebSearch 2026）",
+};
+
+const PAGSANJAN_GORGE: TerrainEntry = {
+  id: "pagsanjan-gorge",
+  nameZh: "帕格森汉峡谷",
+  nameEn: "Pagsanjan Gorge",
+  category: "gorge",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "马格达皮奥瀑布", lon: 121.4581, lat: 14.2758, elevation: 100, kind: "gorge" },
+  bbox: [121.42, 14.24, 121.50, 14.32],
+  label: { lon: 121.46, lat: 14.34, rotation: 0 },
+  source: "帕格森汉峡谷：吕宋岛拉古纳省一处沿帕格森汉河切割的峡谷地貌，森林覆盖的陡峭崖壁夹峙河道两侧，末端为落差120米、分三级跌落的马格达皮奥瀑布（俗称帕格森汉瀑布）；峡谷地处锡拉马德雷山脉山麓，1939年设立帕格森汉峡谷国家公园，自西班牙殖民时期起当地即以独木舟“冲滩”方式载客溯游而上（national-parks.org/Wikipedia WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12877,6 +12942,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MOUNT_PULAG, CORDILLERA_CENTRAL_LUZON,
   SIERRA_MADRE_PHILIPPINES, MOUNT_KANLAON, CHOCOLATE_HILLS,
   BANAUE_IFUGAO_RICE_TERRACES, CAMIGUIN_ISLAND, BATANES_ISLANDS,
+  EL_NIDO_BACUIT_ARCHIPELAGO, TUBBATAHA_REEFS, CORON_CALAMIAN_ISLANDS,
+  PUERTO_PRINCESA_UNDERGROUND_RIVER, PAGSANJAN_GORGE,
 ];
 
 /**
