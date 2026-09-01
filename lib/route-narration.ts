@@ -3780,6 +3780,91 @@ export const ROUTE_NARRATION: Record<
       "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by Bamboo Airways (Airbus A321) as one of Vietnam's domestic routes. Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
     },
   },
+
+  "ubn-hvd": {
+    study: {
+    "zh-CN":
+      "乌兰巴托飞科布多，是一条横贯蒙古中西部的航线，全程约1100公里。飞机离开乌兰巴托后向西飞行，脚下逐渐展开杭爱山连绵起伏的山地地貌——蒙古中部主要山系，森林与高山草甸交错分布，鄂尔浑河、色楞格河等蒙古主要河流均发源于此。" +
+      "越过杭爱山后，飞机继续向西飞行，逐渐进入大湖盆地——由蒙古阿尔泰山、戈壁阿尔泰山与杭爱山三面环绕的内流干旱盆地，脚下可见多个咸淡水湖泊星罗棋布，最终降落在科布多——蒙古西部多民族聚居区域的历史中心城市，坐落于科布多河畔、紧邻哈尔乌苏湖。",
+    "en-US":
+      "Flying from Ulaanbaatar to Khovd crosses central-western Mongolia, spanning about 1,100 km. After leaving Ulaanbaatar the flight heads west, the rolling terrain of the Khangai Mountains unfolding below — the main range of central Mongolia, forest and alpine meadow interwoven, source of the Orkhon, Selenge and other major Mongolian rivers." +
+      " Past the Khangai, the flight continues west into the Great Lakes Depression — an endorheic arid basin ringed on three sides by the Mongol Altai, the Gobi Altai and the Khangai, multiple saline and freshwater lakes scattered below, before landing in Khovd, the historic centre of western Mongolia's multi-ethnic communities, on the Khovd River near Khar-Us Lake.",
+    },
+    travel: {
+    "zh-CN":
+      "乌兰巴托到科布多飞约120分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；科布多机场距市区很近。科布多是探索蒙古西部多民族聚居区与蒙古阿尔泰山的重要门户。",
+    "en-US":
+      "Ulaanbaatar to Khovd is about 120 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Khovd Airport is close to the city centre. Khovd is an important gateway for western Mongolia's multi-ethnic communities and the Mongol Altai.",
+    },
+  },
+
+  "ubn-ulg": {
+    study: {
+    "zh-CN":
+      "乌兰巴托飞乌力吉，是蒙古国内航程最长的定期航线之一，全程约1250公里，直抵蒙古最西端。飞机离开乌兰巴托后向西飞行，先后掠过杭爱山连绵的森林草甸山地与大湖盆地内星罗棋布的咸淡水湖泊。" +
+      "飞机继续向西飞行，逐渐进入蒙古阿尔泰山空域——沿蒙古西部边境延伸约900公里的高山雪峰带，塔王博格达山群的现代冰川在机翼下清晰可辨，最终降落在乌力吉——蒙古境内哈萨克族的主要聚居区，也是探索蒙古最高峰呼依滕峰的核心门户。",
+    "en-US":
+      "Flying from Ulaanbaatar to Ölgii is one of Mongolia's longest scheduled domestic routes, spanning about 1,250 km to the country's westernmost point. After leaving Ulaanbaatar the flight heads west, passing successively over the forested, meadow-covered terrain of the Khangai and the scattered saline and freshwater lakes of the Great Lakes Depression." +
+      " The flight continues west into the airspace of the Mongol Altai — a belt of high snow peaks running about 900 km along Mongolia's western border — the modern glaciers of the Tavan Bogd massif visible below, before landing in Ölgii, the main home of Mongolia's Kazakh community and the core gateway to Khüiten Peak, the country's highest point.",
+    },
+    travel: {
+    "zh-CN":
+      "乌兰巴托到乌力吉飞约140分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型），每年4至10月运营。成吉思汗国际机场距市区约52公里；乌力吉国际机场距市区很近。乌力吉是探索塔王博格达山群与哈萨克族传统文化的重要门户。",
+    "en-US":
+      "Ulaanbaatar to Ölgii is about 140 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes, running April through October. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Ölgii International Airport is close to the city centre. Ölgii is an important gateway to the Tavan Bogd massif and traditional Kazakh culture.",
+    },
+  },
+
+  "ubn-mxv": {
+    study: {
+    "zh-CN":
+      "乌兰巴托飞木伦，是一条连接蒙古首都与库苏古尔湖门户城市的航线，全程约540公里。飞机离开乌兰巴托后向西北飞行，脚下展开杭爱山北麓渐次收窄的山地地貌，森林覆盖率逐渐升高，草原景观向针叶林过渡的界线清晰可辨；这一带是典型的蒙古北部森林—草原生态过渡带，河流水系呈放射状向四周发散。" +
+      "飞机继续向西北飞行，山地地貌逐渐让位于更开阔的河谷盆地，最终降落在木伦——库苏古尔省首府，坐落于德勒格尔河谷平地，四周被森林覆盖的山地环绕，是探索蒙古最大淡水湖库苏古尔湖的核心门户城市，也是当地图瓦人、达尔哈德人等游牧族群的传统活动区域。",
+    "en-US":
+      "Flying from Ulaanbaatar to Mörön links the Mongolian capital with the gateway city to Lake Khövsgöl, spanning about 540 km. After leaving Ulaanbaatar the flight heads northwest, the terrain of the northern Khangai foothills narrowing below, forest cover gradually increasing, with a clear transition line visible from steppe to coniferous forest — a classic stretch of Mongolia's northern forest-steppe ecotone, its rivers radiating outward in all directions." +
+      " The flight continues northwest, the mountainous terrain giving way to a broader river-valley basin, before landing in Mörön, capital of Khövsgöl Province, on the flat valley floor of the Delgermörön River ringed by forested mountains — the core gateway to Lake Khövsgöl, Mongolia's largest freshwater lake, and the traditional territory of local Tuvan and Darkhad nomadic communities.",
+    },
+    travel: {
+    "zh-CN":
+      "乌兰巴托到木伦飞约70分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；木伦机场距市区很近。木伦是探索库苏古尔湖的理想门户，从市区到湖南岸的哈特嘎尔村约需1至1.5小时车程。",
+    "en-US":
+      "Ulaanbaatar to Mörön is about 70 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Mörön Airport is close to the city centre. Mörön is an ideal gateway for exploring Lake Khövsgöl; the drive from town to Khatgal village on the south shore takes about 1 to 1.5 hours.",
+    },
+  },
+
+  "ubn-dlz": {
+    study: {
+    "zh-CN":
+      "乌兰巴托飞达兰扎德嘎德，是通往蒙古南戈壁的核心航线，全程约490公里。飞机离开乌兰巴托后向南飞行，脚下的草原景观逐渐被灰褐色的戈壁荒漠取代，地表由连绵的砾漠构成而非沙丘，与蒙古中部的森林草原形成鲜明的南北反差，局部可见零星分布的季节性绿洲与孤立山地。" +
+      "飞机继续向南飞行，逐渐接近古尔班赛罕山——由西赛罕、中赛罕、东赛罕三条平行山脉组成的山系，最高峰海拔2825米，是戈壁荒漠中一处山地生态孤岛，最终降落在达兰扎德嘎德——南戈壁省首府，是探索戈壁古尔班赛罕国家公园（洪戈林额勒斯沙丘、约林音峡谷、巴彦扎格）的核心门户城市。",
+    "en-US":
+      "Flying from Ulaanbaatar to Dalanzadgad is the core route into Mongolia's South Gobi, spanning about 490 km. After leaving Ulaanbaatar the flight heads south, the steppe landscape below gradually giving way to grey-brown Gobi desert, its surface a continuous expanse of gravel rather than dunes — a sharp north-south contrast with the forest-steppe of central Mongolia, with scattered seasonal oases and isolated massifs occasionally visible." +
+      " The flight continues south, approaching the Gurvan Saikhan Mountains — a range of three parallel ridges whose highest peak reaches 2,825 m, a montane ecological island within the Gobi desert — before landing in Dalanzadgad, capital of South Gobi Province and the core gateway to Gobi Gurvansaikhan National Park (Khongoryn Els, Yolyn Am, Bayanzag).",
+    },
+    travel: {
+    "zh-CN":
+      "乌兰巴托到达兰扎德嘎德飞约60分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；达兰扎德嘎德机场距市区很近。达兰扎德嘎德是探索洪戈林额勒斯沙丘、约林音峡谷与巴彦扎格的理想门户。",
+    "en-US":
+      "Ulaanbaatar to Dalanzadgad is about 60 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Dalanzadgad Airport is close to the city centre. Dalanzadgad is an ideal gateway for exploring Khongoryn Els, Yolyn Am and Bayanzag.",
+    },
+  },
+
+  "ubn-coq": {
+    study: {
+    "zh-CN":
+      "乌兰巴托飞乔巴山，是一条连接蒙古首都与东部草原核心城市的航线，全程约580公里。飞机离开乌兰巴托后向东飞行，脚下先是掠过克鲁伦河蜿蜒的河道——这条发源于肯特山的河流长期为沿岸游牧聚落提供水源，河谷绿带与开阔草原形成鲜明的色带对比。" +
+      "飞机继续向东飞行，逐渐进入东部草原——达乌尔草原生态系统的蒙古境内部分，一望无际的开阔草原地貌向地平线延伸，最终降落在乔巴山——道尔诺德省首府，坐落于克鲁伦河畔，是探索蒙古东部草原的核心门户城市。",
+    "en-US":
+      "Flying from Ulaanbaatar to Choibalsan links the Mongolian capital with the core city of the eastern steppe, spanning about 580 km. After leaving Ulaanbaatar the flight heads east, first passing over the winding course of the Kherlen River — rising in the Khentii Mountains, it has long supplied water to nomadic settlements along its banks, its green riverside band standing out against the open grassland." +
+      " The flight continues east into the Eastern Steppe — the Mongolian portion of the Daurian steppe ecosystem — boundless open grassland stretching to the horizon, before landing in Choibalsan, capital of Dornod Province, on the Kherlen River and the core gateway to Mongolia's eastern steppe.",
+    },
+    travel: {
+    "zh-CN":
+      "乌兰巴托到乔巴山飞约75分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；乔巴山机场距市区很近。乔巴山是探索蒙古达乌尔严格保护区与东部草原游牧生活的理想门户。",
+    "en-US":
+      "Ulaanbaatar to Choibalsan is about 75 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Choibalsan Airport is close to the city centre. Choibalsan is an ideal gateway for exploring the Mongol Daguur Strictly Protected Area and nomadic life on the eastern steppe.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

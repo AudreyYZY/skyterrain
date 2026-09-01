@@ -1,0 +1,17 @@
+{
+  "id": "ubn-hvd",
+  "name": "乌兰巴托 — 科布多",
+  "nameEn": "Ulaanbaatar — Khovd",
+  "description": "杭爱山 · 大湖盆地",
+  "descriptionEn": "Khangai Mountains · Great Lakes Depression",
+  "depCountry": "mongolia",
+  "arrCountry": "mongolia",
+  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0801", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "HVD", "durationMin": 120 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
+    { "kind": "terrain", "terrainId": "khangai-mountains" },
+    { "kind": "terrain", "terrainId": "great-lakes-depression" },
+    { "kind": "city", "id": "hvd", "name": "科布多", "nameEn": "Khovd", "lat": 47.9539, "lon": 91.6289, "airport": true }
+  ]
+}

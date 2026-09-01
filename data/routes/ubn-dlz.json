@@ -1,0 +1,17 @@
+{
+  "id": "ubn-dlz",
+  "name": "乌兰巴托 — 达兰扎德嘎德",
+  "nameEn": "Ulaanbaatar — Dalanzadgad",
+  "description": "戈壁 · 古尔班赛罕山",
+  "descriptionEn": "Gobi Desert · Gurvan Saikhan Mountains",
+  "depCountry": "mongolia",
+  "arrCountry": "mongolia",
+  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0807", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "DLZ", "durationMin": 60 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
+    { "kind": "terrain", "terrainId": "mongolia-gobi" },
+    { "kind": "terrain", "terrainId": "gurvan-saikhan" },
+    { "kind": "city", "id": "dlz", "name": "达兰扎德嘎德", "nameEn": "Dalanzadgad", "lat": 43.5919, "lon": 104.4283, "airport": true }
+  ]
+}
