@@ -2476,6 +2476,23 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "圣淘沙跨海缆车站", nameEn: "Sentosa Cable Car Station", lon: 103.8228, lat: 1.2653, kind: "transport" },
     { nameZh: "斜坡滑车公园", nameEn: "Skyline Luge Sentosa", lon: 103.8181, lat: 1.2569, kind: "landmark" },
   ],
+  "chinatown-singapore": [
+    { nameZh: "马里安曼兴都庙", nameEn: "Sri Mariamman Temple", lon: 103.8444, lat: 1.2822, kind: "landmark" },
+    { nameZh: "佛牙寺龙华院", nameEn: "Buddha Tooth Relic Temple", lon: 103.8436, lat: 1.2815, kind: "landmark" },
+    { nameZh: "史密斯街与宝塔街骑楼", nameEn: "Smith Street & Pagoda Street Shophouses", lon: 103.8440, lat: 1.2825, kind: "district" },
+    { nameZh: "牛车水传统文化馆", nameEn: "Chinatown Heritage Centre", lon: 103.8438, lat: 1.2827, kind: "landmark" },
+  ],
+  "kampong-glam": [
+    { nameZh: "苏丹回教堂", nameEn: "Sultan Mosque", lon: 103.8594, lat: 1.3025, kind: "landmark" },
+    { nameZh: "旧王宫（马来传统文化馆）", nameEn: "Istana Kampong Glam (Malay Heritage Centre)", lon: 103.8600, lat: 1.3020, kind: "landmark" },
+    { nameZh: "哈芝巷", nameEn: "Haji Lane", lon: 103.8590, lat: 1.3010, kind: "district" },
+    { nameZh: "亚拉街", nameEn: "Arab Street", lon: 103.8598, lat: 1.3016, kind: "district" },
+  ],
+  "little-india-singapore": [
+    { nameZh: "斯里维拉玛卡里雅曼庙", nameEn: "Sri Veeramakaliamman Temple", lon: 103.8494, lat: 1.3073, kind: "landmark" },
+    { nameZh: "竹脚中心", nameEn: "Tekka Centre", lon: 103.8497, lat: 1.3061, kind: "landmark" },
+    { nameZh: "实龙岗路商铺街", nameEn: "Serangoon Road Shops", lon: 103.8496, lat: 1.3067, kind: "district" },
+  ],
   // 印度尼西亚
   jakarta: [
     { nameZh: "独立广场与国家纪念塔", nameEn: "Merdeka Square & National Monument", lon: 106.8272, lat: -6.1754, kind: "landmark" },

@@ -2480,6 +2480,24 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "圣淘沙岛中心 1.2494,103.8303；本地无独立机场，经樟宜机场（距岛约30km）往返：公开资料",
   },
   {
+    id: "chinatown-singapore", nameZh: "牛车水", nameEn: "Chinatown", country: "singapore", tier: "notable", zone: "sg-main",
+    lon: 103.8442, lat: 1.2812,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "牛车水核心区 1.2812,103.8442；本地无独立机场，经樟宜机场（距市区约20km）往返：公开资料",
+  },
+  {
+    id: "kampong-glam", nameZh: "甘榜格南", nameEn: "Kampong Glam", country: "singapore", tier: "notable", zone: "sg-main",
+    lon: 103.8594, lat: 1.3021,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "甘榜格南核心区 1.3021,103.8594；本地无独立机场，经樟宜机场（距市区约20km）往返：公开资料",
+  },
+  {
+    id: "little-india-singapore", nameZh: "小印度", nameEn: "Little India", country: "singapore", tier: "notable", zone: "sg-main",
+    lon: 103.8496, lat: 1.3067,
+    airport: { iata: "SIN", nameZh: "樟宜机场", nameEn: "Changi Airport", lon: 103.9915, lat: 1.3644 },
+    source: "小印度核心区 1.3067,103.8496；本地无独立机场，经樟宜机场（距市区约20km）往返：公开资料",
+  },
+  {
     id: "manila", nameZh: "马尼拉", nameEn: "Manila", country: "philippines", tier: "capital", zone: "ph-luzon",
     lon: 120.9842, lat: 14.5995,
     airport: { iata: "MNL", nameZh: "尼诺伊·阿基诺国际机场", nameEn: "Ninoy Aquino International Airport", lon: 121.0198, lat: 14.5086 },

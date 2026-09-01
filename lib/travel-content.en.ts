@@ -5882,6 +5882,48 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Hot and humid year-round — plan beach and outdoor activities to avoid the midday heat; rainfall is heavier from November to January, so check the weather before visiting.",
   },
+  "chinatown-singapore": {
+    identity:
+      "Chinatown is one of Singapore's oldest Chinese settlement areas; its Chinese name, Niu Che Shui (\"bullock cart water\"), recalls how water was once carted in by ox-drawn cart to supply residents — the district has grown from a 19th-century immigrant foothold into today's heritage quarter of shophouses and temples.",
+    layout:
+      "The district is built around a handful of old streets — Smith Street, Pagoda Street, Trengganu Street — lined with dense rows of two- and three-storey Nanyang shophouses; historically the area was subdivided by dialect group (Hokkien, Teochew, Cantonese, Hainanese, Hakka, Henghua and Foochow), a pattern still traceable in street names and temple locations today. The Buddha Tooth Relic Temple and the Sri Mariamman Temple stand only a few hundred metres apart, a direct illustration of Chinese and Indian faiths coexisting within the same quarter.",
+    gettingAround:
+      "Chinatown MRT station (EW/NE line interchange) sits right in the district's centre; Chinatown has no airport of its own and is reached via Changi Airport (about 20 km from the city centre); the district is compact and best explored on foot.",
+    culture:
+      "Sri Mariamman Temple, built in 1827, is Singapore's oldest Hindu temple, its gopuram tower densely covered in colourful deity sculptures; the Buddha Tooth Relic Temple, completed in 2007, is built in a Tang-dynasty-inspired style and houses what is said to be an actual tooth relic of the Buddha. Shoes come off before entering either temple, and some inner halls of the Hindu temple may be restricted to worshippers — follow posted signage.",
+    seeAndDo:
+      "Sri Mariamman Temple (1827, Singapore's oldest Hindu temple); the Buddha Tooth Relic Temple and Museum (Tang-style architecture and the Buddha tooth relic); the shophouse streets and night market along Smith Street and Trengganu Street; the Chinatown Heritage Centre (early immigrant life); Chinatown Complex (hawker centre and wet market).",
+    whenAndTips:
+      "In the weeks around Lunar New Year the district is strung with lanterns and hosts a festive market — its liveliest but also its most crowded stretch; a weekday evening of temple-hopping and street food is a more relaxed way to see it.",
+  },
+  "kampong-glam": {
+    identity:
+      "Kampong Glam is Singapore's historic Malay-Muslim quarter; in 1819 the British East India Company granted this area to Sultan Hussein Shah of Johor as a royal seat, making it one of the few districts in Singapore that preserves a continuous royal-historical thread.",
+    layout:
+      "The Sultan Mosque forms the district's geographic and visual centre; the old shophouses along Haji Lane and Arab Street have been reinvented as cafés, indie boutiques and a hub of street murals, while textile, perfume and carpet shops persist around the mosque — a blend of old and new woven into the same streetscape. The old Istana (palace) complex is the core site for understanding this local royal history.",
+    gettingAround:
+      "Bugis MRT station (EW/DT line interchange) is a short walk away; Kampong Glam has no airport of its own and is reached via Changi Airport (about 20 km from the city centre); the district is compact and best explored on foot.",
+    culture:
+      "Sultan Mosque was first built in 1824 by Sultan Hussein Shah, Singapore's first sultan; the current building dates to a 1932 reconstruction, its golden domes the district's landmark, with carpeting inside donated by a Saudi Arabian prince. Shoes come off before entering, and women should carry a headscarf and dress modestly. Haji Lane takes its name from the boarding houses that once sheltered pilgrims travelling to and from Mecca.",
+    seeAndDo:
+      "Sultan Mosque (first built 1824, present building from 1932); the old Istana Kampong Glam (Malay Heritage Centre, tracing this local royal history); the murals and indie shops of Haji Lane; the Middle Eastern-inflected shops and carpet stores of Arab Street; Middle Eastern and Turkish restaurants nearby.",
+    whenAndTips:
+      "Some shops adjust their hours during Ramadan, but it's also a good time to experience the local Muslim community's iftar bazaar atmosphere; weekday evenings offer softer light for photographing the Sultan Mosque and Haji Lane's murals.",
+  },
+  "little-india-singapore": {
+    identity:
+      "Little India is Singapore's historic Indian quarter; Indian labourers were drawn here in the 19th century by the area's lime kilns and brick-making industry, gradually forming an Indian residential and trading district centred on Serangoon Road, gazetted as a conservation area in 1989.",
+    layout:
+      "Serangoon Road is the district's main artery, densely lined with spice shops, goldsmiths, sari stores and Hindu temples; Tekka Centre, completed in 1915, is one of Singapore's largest wet markets and a core spot for Indian food, while the district's colourful Nanyang shophouse façades echo the equally colourful temple towers nearby.",
+    gettingAround:
+      "Little India MRT station (NE/DT line interchange) sits at the heart of the district; Little India has no airport of its own and is reached via Changi Airport (about 20 km from the city centre); the district is compact and best combined with a short MRT ride.",
+    culture:
+      "Sri Veeramakaliamman Temple, built in 1855, is among Singapore's earliest temples dedicated to the Hindu goddess Kali, its gopuram tower densely and elaborately sculpted; shoes come off before entering, and women should dress modestly. During Deepavali and Thaipusam the district is elaborately lit and hosts major processions.",
+    seeAndDo:
+      "Sri Veeramakaliamman Temple (1855, dedicated to the goddess Kali); Tekka Centre (built 1915, one of Singapore's largest wet markets and food centres); the spice and sari shops along Serangoon Road; nearby Indian restaurants and sweet shops.",
+    whenAndTips:
+      "Deepavali (October–November, dates vary by year) and Thaipusam (January–February) bring elaborate lighting and processions to the district — its liveliest but also busiest stretch; weekday afternoons offer a more unhurried pace for temples and Tekka Centre.",
+  },
   // ============ Indonesia ============
   "indonesia-overview": {
     identity:
