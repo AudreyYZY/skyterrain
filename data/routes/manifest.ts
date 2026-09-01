@@ -250,6 +250,15 @@ import cgkPkn from "./cgk-pkn.json" with { type: "json" };
 import dpsLbj from "./dps-lbj.json" with { type: "json" };
 import upgMdc from "./upg-mdc.json" with { type: "json" };
 import cgkYia from "./cgk-yia.json" with { type: "json" };
+// 哈萨克斯坦
+import nqzAla from "./nqz-ala.json" with { type: "json" };
+import alaSco from "./ala-sco.json" with { type: "json" };
+import nqzCit from "./nqz-cit.json" with { type: "json" };
+import alaCit from "./ala-cit.json" with { type: "json" };
+import nqzPlx from "./nqz-plx.json" with { type: "json" };
+import nqzPwq from "./nqz-pwq.json" with { type: "json" };
+import nqzSco from "./nqz-sco.json" with { type: "json" };
+import alaHsa from "./ala-hsa.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -461,4 +470,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   dpsLbj,
   upgMdc,
   cgkYia,
+  nqzAla,
+  alaSco,
+  nqzCit,
+  alaCit,
+  nqzPlx,
+  nqzPwq,
+  nqzSco,
+  alaHsa,
 ] as unknown as FlightRoute[];

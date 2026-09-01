@@ -1,0 +1,15 @@
+{
+  "id": "nqz-pwq",
+  "name": "阿斯塔纳 — 巴甫洛达尔",
+  "nameEn": "Astana — Pavlodar",
+  "description": "哈萨克丘陵北缘",
+  "descriptionEn": "Northern edge of the Kazakh Uplands",
+  "depCountry": "kazakhstan",
+  "arrCountry": "kazakhstan",
+  "flight": { "airline": "哈萨克航空", "airlineEn": "Qazaq Air", "flightNo": "IQ372", "aircraft": "De Havilland Dash 8", "depIata": "NQZ", "arrIata": "PWQ", "durationMin": 75 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "nqz", "name": "阿斯塔纳", "nameEn": "Astana", "lat": 51.0222, "lon": 71.4669, "airport": true },
+    { "kind": "city", "id": "pwq", "name": "巴甫洛达尔", "nameEn": "Pavlodar", "lat": 52.1958, "lon": 77.0781, "airport": true }
+  ]
+}

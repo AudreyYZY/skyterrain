@@ -1,0 +1,16 @@
+{
+  "id": "nqz-sco",
+  "name": "阿斯塔纳 — 阿克套",
+  "nameEn": "Astana — Aktau",
+  "description": "别特帕克达拉沙漠",
+  "descriptionEn": "Betpak-Dala Desert",
+  "depCountry": "kazakhstan",
+  "arrCountry": "kazakhstan",
+  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC921", "aircraft": "Airbus A321", "depIata": "NQZ", "arrIata": "SCO", "durationMin": 165 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "nqz", "name": "阿斯塔纳", "nameEn": "Astana", "lat": 51.0222, "lon": 71.4669, "airport": true },
+    { "kind": "terrain", "terrainId": "betpak-dala-desert" },
+    { "kind": "city", "id": "sco", "name": "阿克套", "nameEn": "Aktau", "lat": 43.8600, "lon": 51.0922, "airport": true }
+  ]
+}

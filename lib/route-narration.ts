@@ -4272,6 +4272,142 @@ export const ROUTE_NARRATION: Record<
       "Jakarta to Yogyakarta is about 75 minutes, same time zone, operated by Garuda Indonesia flight GA206 (Boeing 737-800, daily service) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Yogyakarta International Airport (YIA) is about 45 km from central Yogyakarta, with a direct airport rail link.",
     },
   },
+
+  "nqz-ala": {
+    study: {
+    "zh-CN":
+      "阿斯塔纳飞阿拉木图，是哈萨克斯坦客流量最大的国内航线，全程约974公里，连接现任首都与旧都两大城市。飞机离开阿斯塔纳后向东南飞行，脚下先掠过左岸新城密集的未来主义建筑群，随后进入哈萨克丘陵北缘的开阔地带。" +
+      "飞机继续向东南飞行，萨雷阿尔卡草原一望无际的干草原地貌在脚下铺展，偶见零星分布的花岗岩山地绿洲；越过草原后，飞机逐渐接近北天山山麓，外伊犁阿拉套山雪峰轮廓在云隙间显露，最终降落在阿拉木图——哈萨克斯坦旧都，坐落于这片雪峰脚下。",
+    "en-US":
+      "Flying from Astana to Almaty is Kazakhstan's busiest domestic route, spanning about 974 km and connecting the current and former capitals. After leaving Astana the flight heads southeast, first passing over the dense futuristic architecture of the left-bank new city before entering the open terrain along the northern edge of the Kazakh Uplands." +
+      " The flight continues southeast, the boundless dry steppe of the Saryarka unfolding below, occasionally dotted with isolated granite massif oases; past the steppe, the flight approaches the northern Tian Shan foothills, the snow-capped outline of the Zailiysky Alatau emerging through the clouds, before landing in Almaty, Kazakhstan's former capital at the foot of these peaks.",
+    },
+    travel: {
+    "zh-CN":
+      "阿斯塔纳到阿拉木图飞约110分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（空客A321机型，全天约9班），是哈萨克斯坦客流量最大的单一航线。阿斯塔纳国际机场距市区约17公里；阿拉木图国际机场距市区约18公里。",
+    "en-US":
+      "Astana to Almaty is about 110 minutes, same time zone, operated by Air Astana (Airbus A321, about 9 flights daily) as Kazakhstan's single busiest domestic route. Astana International Airport is about 17 km from the city centre; Almaty International Airport is about 18 km from the city centre.",
+    },
+  },
+
+  "ala-sco": {
+    study: {
+    "zh-CN":
+      "阿拉木图飞阿克套，是横贯哈萨克斯坦东西两端的长途航线，全程约2500公里、飞行时间逾3小时，连接北天山山麓与里海之滨两大门户城市。飞机离开阿拉木图后向西飞行，脚下先掠过哈萨克斯坦南部广袤的荒漠与草原过渡地带。" +
+      "飞机继续向西飞行逾3小时，途经哈萨克丘陵、别特帕克达拉沙漠等中部荒漠地带上空，最终跨越乌斯秋尔特高原东缘，降落在阿克套——曼格斯套州首府、哈萨克斯坦里海沿岸最大城市，是探索博兹吉拉峡谷等荒漠奇观的门户。",
+    "en-US":
+      "Flying from Almaty to Aktau is a long-haul route spanning Kazakhstan from east to west, covering about 2,500 km and more than 3 hours of flying time, linking the northern Tian Shan foothills with the gateway city on the Caspian shore. After leaving Almaty the flight heads west, first crossing the vast desert-steppe transition zone of southern Kazakhstan." +
+      " The flight continues west for more than three hours, passing over the Kazakh Uplands and the desert expanse of Betpak-Dala, before crossing the eastern edge of the Ustyurt Plateau and landing in Aktau, capital of Mangystau Region and Kazakhstan's largest city on the Caspian coast, the gateway to desert wonders including Bozzhyra Canyon.",
+    },
+    travel: {
+    "zh-CN":
+      "阿拉木图到阿克套飞约200分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（波音757机型，每周约33班）。阿拉木图国际机场距市区约18公里；阿克套国际机场距市区约25公里。",
+    "en-US":
+      "Almaty to Aktau is about 200 minutes, same time zone, operated by Air Astana (Boeing 757, about 33 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
+    },
+  },
+
+  "nqz-cit": {
+    study: {
+    "zh-CN":
+      "阿斯塔纳飞希姆肯特，是哈萨克斯坦南北向的核心干线航线，全程约974公里，连接北部草原首都与南部丝路古城枢纽，是哈萨克斯坦客流量位居前列的国内航线之一。飞机离开阿斯塔纳后向南飞行，脚下先掠过萨雷阿尔卡草原与哈萨克丘陵，逐渐过渡为更为干旱的荒漠地带。" +
+      "飞机继续向南飞行，越过莫因库姆沙漠与图尔克斯坦州的绿洲农业带，最终降落在希姆肯特——哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今是通往突厥斯坦古城的南方门户，也是哈萨克斯坦南部人口最密集的地区之一。",
+    "en-US":
+      "Flying from Astana to Shymkent is the core north-south trunk route in Kazakhstan, spanning about 974 km and linking the northern steppe capital with a southern Silk Road hub city. After leaving Astana the flight heads south, first crossing the Saryarka steppe and Kazakh Uplands before gradually transitioning into more arid desert terrain." +
+      " The flight continues south, crossing the Moiynkum Desert and the oasis-agriculture belt of Turkistan Region, before landing in Shymkent, Kazakhstan's third-largest city, historically an important Silk Road trading centre and today the southern gateway to the ancient city of Turkestan.",
+    },
+    travel: {
+    "zh-CN":
+      "阿斯塔纳到希姆肯特飞约100分钟，同一时区，是哈萨克斯坦航空/飞阿雷斯坦/天狼星航空共同运营的国内航班之一（空客A320机型，每周约54班）。阿斯塔纳国际机场距市区约17公里；希姆肯特国际机场距市区约12公里。",
+    "en-US":
+      "Astana to Shymkent is about 100 minutes, same time zone, jointly operated by Air Astana, FlyArystan and SCAT (Airbus A320, about 54 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
+    },
+  },
+
+  "ala-cit": {
+    study: {
+    "zh-CN":
+      "阿拉木图飞希姆肯特，是连接哈萨克斯坦东南部与南部两大城市的航线，全程约620公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
+      "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展，与周边绿洲河谷的绿色植被带形成清晰的边界；越过沙漠后，飞机降落在希姆肯特——哈萨克斯坦第三大城市，历史上是丝绸之路商贸重镇，如今仍是南部重要的工业与人口中心。",
+    "en-US":
+      "Flying from Almaty to Shymkent links Kazakhstan's southeastern and southern hub cities, spanning about 620 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
+      " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below, its boundary with the green vegetation belts of surrounding oasis valleys clearly defined; past the desert, the flight lands in Shymkent, Kazakhstan's third-largest city and historically an important Silk Road trading centre.",
+    },
+    travel: {
+    "zh-CN":
+      "阿拉木图到希姆肯特飞约80分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（空客A320机型，每周约10班）。阿拉木图国际机场距市区约18公里；希姆肯特国际机场距市区约12公里。",
+    "en-US":
+      "Almaty to Shymkent is about 80 minutes, same time zone, operated by Air Astana (Airbus A320, about 10 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
+    },
+  },
+
+  "nqz-plx": {
+    study: {
+    "zh-CN":
+      "阿斯塔纳飞谢梅伊，是哈萨克斯坦北部通往东部额尔齐斯河沿岸的航线，全程约690公里，飞行方向大致向东贯穿哈萨克丘陵北部边缘。飞机离开阿斯塔纳后向东飞行，脚下先掠过哈萨克丘陵北缘开阔的草原地带，逐渐接近哈萨克斯坦东部边境山地。" +
+      "飞机继续向东飞行，最终降落在谢梅伊——沿额尔齐斯河而建的历史城市，历史上曾是苏联塞米巴拉金斯克核试验场的行政中心，也是作家陀思妥耶夫斯基流放期间曾居住的城市，如今是额尔齐斯河沿岸重要的文化城市。",
+    "en-US":
+      "Flying from Astana to Semey is a route from northern Kazakhstan to the Irtysh River valley in the east, spanning about 690 km. After leaving Astana the flight heads east, first crossing the open steppe along the northern edge of the Kazakh Uplands before approaching the mountainous terrain near Kazakhstan's eastern border." +
+      " The flight continues east, landing in Semey, a historic city on the Irtysh River that was once the administrative centre of the Soviet-era Semipalatinsk Nuclear Test Site and is today an important cultural city along the river.",
+    },
+    travel: {
+    "zh-CN":
+      "阿斯塔纳到谢梅伊飞约85分钟，同一时区，是哈萨克斯坦航空KC7352航班运营的国内航线之一（巴西航空工业E190机型）。阿斯塔纳国际机场距市区约17公里；谢梅伊机场距市区约7公里。",
+    "en-US":
+      "Astana to Semey is about 85 minutes, same time zone, operated by Air Astana flight KC7352 (Embraer E190) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Semey Airport is about 7 km from the city centre.",
+    },
+  },
+
+  "nqz-pwq": {
+    study: {
+    "zh-CN":
+      "阿斯塔纳飞巴甫洛达尔，是哈萨克斯坦北部一条短途区域航线，全程约410公里，是阿斯塔纳飞行时间最短的国内航线之一，飞行方向大致向东北延伸。飞机离开阿斯塔纳后向东北飞行，脚下是哈萨克丘陵北缘向西西伯利亚平原过渡的开阔草原地带。" +
+      "飞机继续向东北飞行，很快降落在巴甫洛达尔——沿额尔齐斯河而建的工业城市，历史上因铝、石化等重工业而兴起，是额尔齐斯河沿岸重要的工业与文化中心，城市河滨步道是当地居民重要的休闲场所。",
+    "en-US":
+      "Flying from Astana to Pavlodar is a short regional route in northern Kazakhstan, spanning about 410 km and one of the shortest domestic flights out of Astana. After leaving Astana the flight heads northeast, over open steppe transitioning from the northern edge of the Kazakh Uplands toward the West Siberian Plain." +
+      " The flight continues northeast and soon lands in Pavlodar, an industrial city on the Irtysh River historically built up around heavy industries such as aluminium and petrochemicals, and today an important industrial and cultural centre along the river.",
+    },
+    travel: {
+    "zh-CN":
+      "阿斯塔纳到巴甫洛达尔飞约75分钟，同一时区，是哈萨克航空IQ372航班运营的国内航线之一（德哈维兰Dash 8机型）。阿斯塔纳国际机场距市区约17公里；巴甫洛达尔机场距市区约13公里。",
+    "en-US":
+      "Astana to Pavlodar is about 75 minutes, same time zone, operated by Qazaq Air flight IQ372 (De Havilland Dash 8) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Pavlodar Airport is about 13 km from the city centre.",
+    },
+  },
+
+  "nqz-sco": {
+    study: {
+    "zh-CN":
+      "阿斯塔纳飞阿克套，是连接哈萨克斯坦首都与里海之滨的长途航线，全程约1717公里、飞行时间逾2个半小时。飞机离开阿斯塔纳后向西南飞行，脚下先掠过哈萨克丘陵开阔的草原地带，逐渐进入更为干旱的中部荒漠区域。" +
+      "飞机继续向西南飞行逾两小时，别特帕克达拉粘土荒漠大范围近乎平坦的地表在脚下铺展，几乎看不到人类活动痕迹；越过荒漠后，飞机跨越乌斯秋尔特高原东缘，最终降落在阿克套——曼格斯套州首府、哈萨克斯坦里海沿岸最大城市。",
+    "en-US":
+      "Flying from Astana to Aktau is a long-haul route linking the capital with the Caspian shore, spanning about 1,717 km and more than two and a half hours of flying time. After leaving Astana the flight heads southwest, first crossing the open steppe of the Kazakh Uplands before entering the more arid desert region of central Kazakhstan." +
+      " The flight continues southwest for more than two hours, the vast, nearly flat surface of the Betpak-Dala clay desert unfolding below with almost no trace of human activity; past the desert, the flight crosses the eastern edge of the Ustyurt Plateau, landing in Aktau, capital of Mangystau Region and Kazakhstan's largest city on the Caspian coast.",
+    },
+    travel: {
+    "zh-CN":
+      "阿斯塔纳到阿克套飞约165分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（空客A321机型，每周约11班）。阿斯塔纳国际机场距市区约17公里；阿克套国际机场距市区约25公里。",
+    "en-US":
+      "Astana to Aktau is about 165 minutes, same time zone, operated by Air Astana (Airbus A321, about 11 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
+    },
+  },
+
+  "ala-hsa": {
+    study: {
+    "zh-CN":
+      "阿拉木图飞突厥斯坦，是通往哈萨克斯坦最重要伊斯兰朝圣地的航线，全程约670公里，飞行方向大致沿天山北麓向西南展开。飞机离开阿拉木图后向西飞行，脚下先掠过外伊犁阿拉套山麓的绿洲农业带，逐渐进入更为干旱的荒漠地带。" +
+      "飞机继续向西飞行，莫因库姆沙漠连绵起伏的沙丘地貌在脚下铺展；越过沙漠后，飞机继续向西南飞行，最终降落在突厥斯坦——历史上丝绸之路重要商贸与宗教中心，是探索1389年帖木儿下令始建的亚萨维陵墓的核心门户。",
+    "en-US":
+      "Flying from Almaty to Turkestan is the route to Kazakhstan's most important Islamic pilgrimage site, spanning about 670 km. After leaving Almaty the flight heads west, first crossing the oasis-agriculture belt at the foot of the Zailiysky Alatau before entering more arid desert terrain." +
+      " The flight continues west, the rolling dunes of the Moiynkum Desert unfolding below; past the desert, the flight continues southwest and lands in Turkestan, historically an important Silk Road trading and religious centre and the core gateway to the Yasawi Mausoleum.",
+    },
+    travel: {
+    "zh-CN":
+      "阿拉木图到突厥斯坦飞约95分钟，同一时区，是飞阿雷斯坦航空FS7161航班运营的国内航线之一（空客A320机型，每周约3班）。阿拉木图国际机场距市区约18公里；哈兹拉特苏丹国际机场距突厥斯坦市区约16公里。",
+    "en-US":
+      "Almaty to Turkestan is about 95 minutes, same time zone, operated by FlyArystan flight FS7161 (Airbus A320, about 3 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Hazrat Sultan International Airport is about 16 km from central Turkestan.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

@@ -1,0 +1,15 @@
+{
+  "id": "nqz-cit",
+  "name": "阿斯塔纳 — 希姆肯特",
+  "nameEn": "Astana — Shymkent",
+  "description": "哈萨克斯坦南北干线",
+  "descriptionEn": "Kazakhstan's north-south trunk route",
+  "depCountry": "kazakhstan",
+  "arrCountry": "kazakhstan",
+  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC941", "aircraft": "Airbus A320", "depIata": "NQZ", "arrIata": "CIT", "durationMin": 100 },
+  "cruiseHeight": 9000,
+  "waypoints": [
+    { "kind": "city", "id": "nqz", "name": "阿斯塔纳", "nameEn": "Astana", "lat": 51.0222, "lon": 71.4669, "airport": true },
+    { "kind": "city", "id": "cit", "name": "希姆肯特", "nameEn": "Shymkent", "lat": 42.3651, "lon": 69.4794, "airport": true }
+  ]
+}
