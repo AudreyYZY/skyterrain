@@ -28,9 +28,11 @@ export default function IntroOverlay({
   const [leaving, setLeaving] = useState(false);
   const [mounted, setMounted] = useState(true);
 
+  // localStorage 只能在 client 挂载后读（SSR 无此 API），故意用 effect 而非渲染期间判断
   useEffect(() => {
     try {
       if (localStorage.getItem(SEEN_KEY)) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setMounted(false);
         onDismiss();
       }

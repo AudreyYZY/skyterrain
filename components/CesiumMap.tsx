@@ -1,5 +1,6 @@
 "use client";
 
+import type { ScreenSpaceEventHandler } from "cesium";
 import { bearingRadians, haversineMeters } from "@/lib/geo";
 import { resolveRouteWaypoints, type ResolvedWaypoint } from "@/lib/routes";
 import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
@@ -12,6 +13,16 @@ import {
   useRef,
   useState,
 } from "react";
+
+declare global {
+  interface Window {
+    /** 开发环境调试面板 — 仅 NODE_ENV !== "production" 时挂载 */
+    viewer?: import("cesium").Viewer;
+    Cesium?: typeof import("cesium");
+    debugCesium?: Record<string, unknown>;
+    __debugHover?: boolean;
+  }
+}
 
 export interface CameraState {
   /** 相机距地高度（米） */
@@ -148,7 +159,7 @@ function waitForTilesSettled(
     const tick = () => {
       if (viewer.isDestroyed()) { resolve(); return; }
 
-      const tilesLoaded = (viewer.scene.globe as any).tilesLoaded;
+      const tilesLoaded = viewer.scene.globe.tilesLoaded;
 
       if (tilesLoaded) {
         if (loadedSince === 0) loadedSince = Date.now();
@@ -662,7 +673,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                     console.log(`[CesiumMap] ViewRectangle: [${viewRect?.west.toFixed(4)}, ${viewRect?.south.toFixed(4)}] → [${viewRect?.east.toFixed(4)}, ${viewRect?.north.toFixed(4)}]`);
                     console.log(`[CesiumMap] Target in ViewRectangle: ${viewRect ? (viewRect.west <= terrain.lon && terrain.lon <= viewRect.east && viewRect.south <= terrain.lat && terrain.lat <= viewRect.north ? 'YES' : 'NO') : 'N/A'}`);
                     console.log(`[CesiumMap] Camera requested: target=[${terrain.lon}, ${terrain.lat}] range=${terrain.cameraHeight}m heading=${heading}° pitch=${pitchDeg}°`);
-                  } catch (e) { /* ignore */ }
+                  } catch { /* ignore */ }
                   // 等待 tiles 收敛后再 resolve
                   waitForTilesSettled(viewer, 1000, 8000).then(() => {
                     console.log("[CesiumMap] tiles settled:", terrain.id);
@@ -886,6 +897,9 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     useEffect(() => {
       let cancelled = false;
       let resizeObserver: ResizeObserver | null = null;
+      // ref.current 全程指向同一个 Map（仅被增删改，从不重新赋值），
+      // 在此捕获一份供 cleanup 使用以满足 exhaustive-deps 检查
+      const terrainRegions = terrainRegionRef.current;
 
       /** 等待容器获得非零尺寸（带超时保护） */
       function waitForDimensions(el: HTMLElement): Promise<void> {
@@ -1016,14 +1030,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           // 暴露 viewer / Cesium / debugCesium 到 window 供调试 —— 仅开发环境，
           // 生产环境不挂载这个调试面（避免任意访客能拿到 viewer 引用 / 触发 debug 方法）。
           if (process.env.NODE_ENV !== "production") {
-          (window as any).viewer = viewer;
-          (window as any).Cesium = Cesium;
+          window.viewer = viewer;
+          window.Cesium = Cesium;
 
           // Debug panel — 暴露到 window 供开发环境诊断
           const origTerrain = viewer.terrainProvider;
           const ellipsoidTerrain = new Cesium.EllipsoidTerrainProvider();
 
-          (window as any).debugCesium = {
+          window.debugCesium = {
             viewer,
             toggleTerrain() {
               const isEllipsoid = viewer.terrainProvider instanceof Cesium.EllipsoidTerrainProvider;
@@ -1062,18 +1076,20 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               const tp = viewer.terrainProvider;
               console.log("[debug] Terrain:", {
                 type: tp.constructor.name,
-                hasVertexNormals: (tp as any).hasVertexNormals,
-                hasWaterMask: (tp as any).hasWaterMask,
+                hasVertexNormals: tp.hasVertexNormals,
+                hasWaterMask: tp.hasWaterMask,
               });
               console.log("[debug] Globe:", {
                 maximumScreenSpaceError: viewer.scene.globe.maximumScreenSpaceError,
                 depthTestAgainstTerrain: viewer.scene.globe.depthTestAgainstTerrain,
-                terrainExaggeration: (viewer.scene.globe as any).terrainExaggeration ?? "N/A",
+                terrainExaggeration:
+                  (viewer.scene.globe as unknown as { terrainExaggeration?: number })
+                    .terrainExaggeration ?? "N/A",
               });
             },
             /** Hover Pick 调试 — 鼠标移动时打印命中的 Feature */
             debugHover(enable: boolean = true) {
-              (window as any).__debugHover = enable;
+              window.__debugHover = enable;
               console.log(`[debug] Hover debug ${enable ? "enabled" : "disabled"}`);
             },
             /** 打印当前相机状态 */
@@ -1118,7 +1134,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           // 地形区域 Hover — pick terrainId，高亮该地形区域椭圆 + 通知标签系统
           const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
 
-          handler.setInputAction((movement: any) => {
+          handler.setInputAction((movement: ScreenSpaceEventHandler.MotionEvent) => {
             if (viewer.isDestroyed() || modeRef.current !== "study") return;
             // drillPick：重叠地块里取面积最小（最具体）的那个
             const hits = viewer.scene.drillPick(movement.endPosition, 8);
@@ -1146,7 +1162,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
           // 地形区域点击 — 命中最具体的地块即选中（不受当前大洲限制，可跨洲跳转）
-          handler.setInputAction((click: any) => {
+          handler.setInputAction((click: ScreenSpaceEventHandler.PositionedEvent) => {
             if (viewer.isDestroyed() || modeRef.current !== "study") return;
             const hits = viewer.scene.drillPick(click.position, 8);
             let hitId: string | null = null;
@@ -1257,7 +1273,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           cancelAnimationFrame(regionAnimRef.current);
           regionAnimRef.current = null;
         }
-        terrainRegionRef.current.clear();
+        terrainRegions.clear();
         viewerRef.current?.destroy();
         viewerRef.current = null;
       };

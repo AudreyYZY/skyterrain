@@ -57,14 +57,19 @@ export default function ReadingPanel({
   const [routeCollapsed, setRouteCollapsed] = useState(false);
   const activeRef = useRef<HTMLSpanElement>(null);
 
-  useEffect(() => {
-    if (isSpeaking || isPreparing) setExpanded(true);
-  }, [isSpeaking, isPreparing]);
-
-  useEffect(() => {
-    // reset to card state on terrain change
+  // 讲解开始时自动展开、地形切换时收回卡片态——在渲染期间比较上一次的值
+  // 代替 effect+setState（避免多一次级联渲染，见 react-hooks/set-state-in-effect）
+  const [prevTerrainName, setPrevTerrainName] = useState(terrain?.name);
+  if (terrain?.name !== prevTerrainName) {
+    setPrevTerrainName(terrain?.name);
     setExpanded(false);
-  }, [terrain?.name]);
+  }
+  const speakingOrPreparing = isSpeaking || isPreparing;
+  const [prevSpeakingOrPreparing, setPrevSpeakingOrPreparing] = useState(speakingOrPreparing);
+  if (speakingOrPreparing !== prevSpeakingOrPreparing) {
+    setPrevSpeakingOrPreparing(speakingOrPreparing);
+    if (speakingOrPreparing) setExpanded(true);
+  }
 
   useEffect(() => {
     activeRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });

@@ -61,9 +61,11 @@ export default function ContinentIntro({
   // 用户是否真的翻过卡片 —— 在此之前不动地球（加载时绝不自动跳大洲、也不自动进入）
   const [navigated, setNavigated] = useState(false);
 
-  // 挂载后打乱顺序，并把初始定位对准上次停留的大洲（仍不自动进入）
+  // 挂载后打乱顺序，并把初始定位对准上次停留的大洲（仍不自动进入）——
+  // shuffle 用随机数，只能在 client 挂载后做，否则 SSR/client 结果不一致导致 hydration mismatch
   useEffect(() => {
     const shuffled = shuffle(available);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setCards(shuffled);
     if (initialContinentId) {
       const i = shuffled.findIndex((c) => c.id === initialContinentId);

@@ -29,7 +29,10 @@ export default function TravelPoiMarkers({ mapRef, city, language }: Props) {
   const [markers, setMarkers] = useState<Marker[]>([]);
 
   useEffect(() => {
+    // 该 effect 的主体是轮询 mapRef 相机状态（外部命令式 API，非纯派生），
+    // 无城市时清空是同一控制流的一部分，不单独拆出渲染期间判断
     if (!city) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setMarkers([]);
       return;
     }

@@ -36,7 +36,7 @@ export interface CinematicLabel {
   /** 标签旋转角度（度） — 用于沿山脊/河道方向 */
   rotation?: number;
   /** 地貌类型 — 用于标签放置策略 */
-  terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
+  terrainType?: import("./terrain-label-registry").LandformCategory;
   /** 所属区域 ID — 用于区域切换时过滤标签 */
   regionId?: string;
   /** 自定义样式 */
@@ -217,7 +217,7 @@ export function createTerrainLabel(
   options?: {
     lodLevel?: 1 | 2 | 3 | 4;
     rotation?: number;
-    terrainType?: "mountain" | "lake" | "desert" | "basin" | "river" | "plateau" | "peak";
+    terrainType?: import("./terrain-label-registry").LandformCategory;
     regionId?: string;
     nameEn?: string;
   }

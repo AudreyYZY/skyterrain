@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import type { Compiler, Compilation, sources } from "webpack";
 
 const nextConfig: NextConfig = {
   transpilePackages: ["cesium"],
@@ -19,17 +20,17 @@ const nextConfig: NextConfig = {
     // @spz-loader/core uses octal escapes that break in strict mode
     config.plugins = config.plugins || [];
     config.plugins.push({
-      apply: (compiler: any) => {
-        compiler.hooks.compilation.tap("FixOctalEscapes", (compilation: any) => {
+      apply: (compiler: Compiler) => {
+        compiler.hooks.compilation.tap("FixOctalEscapes", (compilation: Compilation) => {
           compilation.hooks.processAssets.tap(
             {
               name: "FixOctalEscapes",
               stage: compiler.webpack.Compilation.PROCESS_ASSETS_STAGE_OPTIMIZE_INLINE,
             },
-            (assets: any) => {
+            (assets: Record<string, sources.Source>) => {
               for (const [name, source] of Object.entries(assets)) {
                 if (!name.endsWith(".js")) continue;
-                const src = source as any;
+                const src = source;
                 const content = src.source();
                 if (typeof content === "string" && content.includes("\\")) {
                   // Convert octal escapes to hex escapes

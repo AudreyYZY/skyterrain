@@ -15,7 +15,7 @@ import { ROUTE_NARRATION } from "../lib/route-narration.ts";
 import { ALL_ROUTES } from "../data/routes/manifest.ts";
 import { COUNTRIES } from "../lib/regions.ts";
 
-const ROUTES = ALL_ROUTES as any[];
+const ROUTES = ALL_ROUTES;
 const IDS = new Set(TERRAIN_REGISTRY.map((e) => e.id));
 const COUNTRY_SLUGS = new Set(COUNTRIES.map((c) => c.slug));
 const seenIds = new Set<string>();
@@ -38,7 +38,7 @@ const fail = (id: string, msg: string) => {
 };
 
 for (const r of ROUTES) {
-  const wps = r.waypoints as any[];
+  const wps = r.waypoints;
   const first = wps[0];
   const last = wps[wps.length - 1];
 
@@ -56,12 +56,12 @@ for (const r of ROUTES) {
   if (!COUNTRY_SLUGS.has(r.depCountry)) fail(r.id, `depCountry 不在 COUNTRIES: ${r.depCountry}`);
   if (!COUNTRY_SLUGS.has(r.arrCountry)) fail(r.id, `arrCountry 不在 COUNTRIES: ${r.arrCountry}`);
 
-  const narr = (ROUTE_NARRATION as any)[r.id]?.study;
+  const narr = ROUTE_NARRATION[r.id]?.study;
   if (!narr?.["zh-CN"] || !narr?.["en-US"]) fail(r.id, "缺少航线学习模式解说 route-narration.study");
   else if (narr["zh-CN"].length < 200) fail(r.id, "中文学习模式解说过短");
   // ≤3 分钟：中文播报约 4.5 字/秒，180 秒 ≈ 810 字上限（留余量到 900）
   if (narr?.["zh-CN"] && narr["zh-CN"].length > 900) fail(r.id, "中文学习模式解说过长（>3 分钟）");
-  const tnarr = (ROUTE_NARRATION as any)[r.id]?.travel;
+  const tnarr = ROUTE_NARRATION[r.id]?.travel;
   if (tnarr?.["zh-CN"] && tnarr["zh-CN"].length > 900) fail(r.id, "中文旅游模式解说过长（>3 分钟）");
 
   // 解析坐标序列

@@ -98,7 +98,7 @@ async function synthesizeWithTimeout(
       .then(({ audio, subtitle }) => {
         clearTimeout(timer);
         // subtitle: [{offset: 100ns, duration: 100ns, text: string}, ...]
-        const wordBoundaries: WordBoundary[] = subtitle.map((s: any) => ({
+        const wordBoundaries: WordBoundary[] = subtitle.map((s) => ({
           start: s.offset / 1e7,      // 100ns → seconds
           end: (s.offset + s.duration) / 1e7,
           text: s.text,

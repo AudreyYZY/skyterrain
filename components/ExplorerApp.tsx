@@ -34,7 +34,7 @@ import {
 import { narrationManager } from "@/lib/narration-manager";
 import { getTerrainById } from "@/lib/terrain";
 import type { FlightRoute } from "@/types/route";
-import type { TerrainCards, TerrainLesson, TerrainPoint } from "@/types/terrain";
+import type { TerrainCards, TerrainCategory, TerrainLesson, TerrainPoint } from "@/types/terrain";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSentenceHighlight } from "@/components/useSentenceHighlight";
 import RegionSelector from "@/components/RegionSelector";
@@ -62,6 +62,13 @@ import {
   type Region,
 } from "@/lib/regions";
 import { terrainTier, categoryOrder, categoryLabel } from "@/lib/terrain-tier";
+
+declare global {
+  interface Window {
+    /** 开发环境调试面板 — 仅 NODE_ENV !== "production" 时挂载 */
+    labelManager?: import("@/lib/cinematic-labels").CinematicLabelManager;
+  }
+}
 
 /** Sidebar 统一分类类型 */
 type SidebarCategory =
@@ -186,9 +193,9 @@ const POST_NARRATION_DWELL_MS = 2000;
 export default function ExplorerApp() {
   const mapRef = useRef<CesiumMapHandle>(null);
   const [activeTerrain, setActiveTerrain] = useState<TerrainPoint | null>(null);
-  const [displayCards, setDisplayCards] = useState<TerrainCards | null>(null);
+  const [, setDisplayCards] = useState<TerrainCards | null>(null);
   const [lesson, setLesson] = useState<TerrainLesson | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [terrainMode, setTerrainMode] = useState<TerrainMode | null>(null);
   const [isRouteFlying, setIsRouteFlying] = useState(false);
@@ -216,6 +223,9 @@ export default function ExplorerApp() {
   const [activeRegion, setActiveRegionState] = useState<string>(DEFAULT_REGION_ID);
 
   useEffect(() => {
+    // mode 首帧用 SSR 默认值（study），这里挂载后从 localStorage 恢复真实值——
+    // 只能在 effect 里做（server 端无 localStorage），故意不改写成渲染期间判断
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMode(getStoredMode());
     try {
       // 早期版本把区域拆得更细（如 china / xinjiang 分列），现统一为大洲；
@@ -260,7 +270,7 @@ export default function ExplorerApp() {
         {
           lodLevel: LOD_BY_IMPORTANCE[label.importance],
           rotation: label.rotation,
-          terrainType: label.category as any,
+          terrainType: label.category,
           nameEn: label.nameEn,
           regionId: label.regionId,
         }
@@ -269,14 +279,17 @@ export default function ExplorerApp() {
 
     // 暴露 labelManager 到 window 供调试 —— 仅开发环境
     if (process.env.NODE_ENV !== "production") {
-      (window as any).labelManager = labelManager;
+      window.labelManager = labelManager;
     }
   }, []);
 
-  // 选中地形 / 开始航线后，收起初始标题卡
-  useEffect(() => {
-    if (activeTerrain || isRouteFlying) setShowIntro(false);
-  }, [activeTerrain, isRouteFlying]);
+  // 选中地形 / 开始航线后，收起初始标题卡——渲染期间比较代替 effect+setState
+  const activeOrFlying = Boolean(activeTerrain) || isRouteFlying;
+  const [prevActiveOrFlying, setPrevActiveOrFlying] = useState(activeOrFlying);
+  if (activeOrFlying !== prevActiveOrFlying) {
+    setPrevActiveOrFlying(activeOrFlying);
+    if (activeOrFlying) setShowIntro(false);
+  }
 
   const showIntroRef = useRef(showIntro);
   useEffect(() => {
@@ -722,18 +735,39 @@ export default function ExplorerApp() {
       // 面板始终更新（无讲解内容时显示占位）
       const panelLesson = effectiveLesson ?? placeholderLesson(language);
       setLesson(panelLesson);
-      setActiveTerrain({
+      const terrainPoint: TerrainPoint = {
         id: feature.id,
         name: feature.name,
         lat: entry?.landmark.lat ?? 0,
         lon: entry?.landmark.lon ?? 0,
         elevation: feature.elevation,
-        category: feature.featureType as any,
+        // GeographicFeature.featureType 与 TerrainCategory 取值空间不同（早期数据模型遗留）；
+        // 本页面实际只读 name/elevation/id/knowledge/cameraHeight，不消费 category/type/facts
+        category: feature.featureType as unknown as TerrainCategory,
+        type: "scenic",
+        cameraHeight: 0,
         description: "",
+        flyoverCue: "",
         cards: { location: "", peak: "", feature: "" },
         lesson: panelLesson,
-        knowledge: { terrainFeatures: [], climateFeatures: [], historicalTopics: [], cultureTopics: [], interestingFacts: [], sources: [] },
-      } as any);
+        facts: [],
+        knowledge: {
+          terrainFeatures: [],
+          formation: [],
+          airplaneViewFeatures: [],
+          historicalTopics: [],
+          cultureTopics: [],
+          climateFeatures: [],
+          interestingFacts: [],
+          visualKeywords: [],
+          recommendedViewingAltitude: "",
+          representativeReason: "",
+          sources: [],
+          lastUpdated: "",
+          confidence: "low",
+        },
+      };
+      setActiveTerrain(terrainPoint);
 
       // 飞向目标 — Auto Camera 或 fallback
       console.log("[Narration] handleSelectFeature before flyTo");
@@ -745,9 +779,8 @@ export default function ExplorerApp() {
         console.log("[CameraChain] cameraParams.pitch:", cameraParams.pitch.toFixed(1) + "°");
         console.log("[CameraChain] cameraParams.range:", cameraParams.range, "m");
 
-        const flyPayload = {
-          id: feature.id,
-          name: feature.name,
+        const flyPayload: TerrainPoint = {
+          ...terrainPoint,
           lat: cameraParams.target[1],
           lon: cameraParams.target[0],
           elevation: 0,
@@ -760,7 +793,7 @@ export default function ExplorerApp() {
         console.log("  heading:", cameraParams.heading.toFixed(1) + "°");
         console.log("  pitch:", cameraParams.pitch.toFixed(1) + "°");
 
-        await (mapRef.current?.flyToTerrainAndWait(flyPayload as any, {
+        await (mapRef.current?.flyToTerrainAndWait(flyPayload, {
           heading: cameraParams.heading,
           pitch: cameraParams.pitch,
         }) ?? Promise.resolve());
@@ -909,7 +942,6 @@ export default function ExplorerApp() {
           // 镜头经过某航点 — 更新「当前在哪」（解说里提到地名时由高亮同步更精确，见上方 effect）
           onFlyoverWaypoint: (wp, index) => {
             const en = language === "en-US";
-            const wpCount = resolveRouteWaypoints(route).length;
             if (wp.kind === "airport") {
               const nm = en ? wp.nameEn : wp.name;
               setFlyoverName(
@@ -982,9 +1014,19 @@ export default function ExplorerApp() {
    */
   const railGroups: RailGroup[] = useMemo(() => {
     const slugs = countriesForContinent(activeRegion);
-    let prevSub: string | null = null;
+    // 每个国家的分隔小标题只在「次区域变化」时显示；prevSubIds[i] = 处理到 slugs[i] 之前
+    // 沿途最近一个非空次区域 id（无次区域的国家不重置，沿用上一个）——用 reduce 折叠，
+    // 避免在 .map 回调里改写外层 let（react-hooks/immutability）
+    const prevSubIds = slugs.reduce<{ prevId: string | null; out: (string | null)[] }>(
+      (acc, slug) => {
+        acc.out.push(acc.prevId);
+        const sub = subregionOfCountry(slug);
+        return { prevId: sub?.id ?? acc.prevId, out: acc.out };
+      },
+      { prevId: null, out: [] }
+    ).out;
     return slugs
-      .map((slug) => {
+      .map((slug, slugIndex) => {
         const meta = getCountryMeta(slug);
         let prevCat: string | null = null;
         const items = ALL_FEATURES.filter((f) => f.country === slug)
@@ -1008,12 +1050,11 @@ export default function ExplorerApp() {
           });
         const sub = subregionOfCountry(slug);
         const divider =
-          sub && sub.id !== prevSub
+          sub && sub.id !== prevSubIds[slugIndex]
             ? language === "zh-CN"
               ? sub.name
               : sub.nameEn
             : undefined;
-        prevSub = sub?.id ?? prevSub;
         return {
           type: slug,
           label: meta ? (language === "zh-CN" ? meta.name : meta.nameEn) : slug,
@@ -1148,11 +1189,13 @@ export default function ExplorerApp() {
     [language, travelNameOf, flyToCountryOverview, speakTravelGuide, stopHighlight],
   );
 
-  // 语言切换时，重新解析当前旅游内容
+  // 语言切换时，重新解析当前旅游内容——travelPlace/travelSections 同时也由选中城市的
+  // 点击回调直接 set（非纯 travelId/language 派生），故仍用 effect 而非 useMemo 同步
   useEffect(() => {
     if (mode !== "travel" || !travelId) return;
     const guide = resolveTravelGuide(travelId, language);
     if (!guide) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTravelPlace({ name: travelNameOf(travelId) });
     setTravelSections(travelGuideToSections(guide, language));
     // eslint-disable-next-line react-hooks/exhaustive-deps
