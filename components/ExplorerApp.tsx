@@ -215,6 +215,8 @@ export default function ExplorerApp() {
   const [mode, setMode] = useState<AppMode>("study");
   /** 旅游模式：当前选中的城市 / 概览 id */
   const [travelId, setTravelId] = useState<string | null>(null);
+  /** 最近一次发起的城市选择请求 id —— resolveTravelGuide 异步返回时用来丢弃过期结果 */
+  const latestTravelRequestRef = useRef<string | null>(null);
   const [travelSections, setTravelSections] = useState<PanelSection[] | null>(null);
   const [travelPlace, setTravelPlace] = useState<{ name: string } | null>(null);
   /** 讲解 / 攻略播报：正在合成首段（“准备中”按钮态） */
@@ -594,10 +596,11 @@ export default function ExplorerApp() {
   const showTerrainLesson = useCallback(
     async (terrain: TerrainPoint, options?: { flyoverOnly?: boolean }): Promise<void> => {
       const effectiveLesson: TerrainLesson =
-        resolveLesson(terrain.id, language, {
+        (await resolveLesson(terrain.id, language, {
           nameZh: terrain.name,
           fallback: terrain.lesson,
-        }) ?? terrain.lesson;
+        })) ?? terrain.lesson;
+      if (narrationCancelledRef.current) return;
 
       setActiveTerrain(terrain);
       setDisplayCards(terrain.cards);
@@ -728,10 +731,11 @@ export default function ExplorerApp() {
             history: feature.story.history,
           }
         : null;
-      const effectiveLesson = resolveLesson(feature.id, language, {
+      const effectiveLesson = await resolveLesson(feature.id, language, {
         nameZh: feature.name,
         fallback: featureFallback,
       });
+      if (narrationCancelledRef.current) return;
       // 面板始终更新（无讲解内容时显示占位）
       const panelLesson = effectiveLesson ?? placeholderLesson(language);
       setLesson(panelLesson);
@@ -1169,9 +1173,10 @@ export default function ExplorerApp() {
   );
 
   const handleSelectCity = useCallback(
-    (id: string) => {
-      const guide = resolveTravelGuide(id, language);
-      if (!guide) return;
+    async (id: string) => {
+      latestTravelRequestRef.current = id;
+      const guide = await resolveTravelGuide(id, language);
+      if (!guide || latestTravelRequestRef.current !== id) return;
       const city = getCityById(id);
       const sections = travelGuideToSections(guide, language);
       narrationRef.current?.cancel();
@@ -1193,11 +1198,15 @@ export default function ExplorerApp() {
   // 点击回调直接 set（非纯 travelId/language 派生），故仍用 effect 而非 useMemo 同步
   useEffect(() => {
     if (mode !== "travel" || !travelId) return;
-    const guide = resolveTravelGuide(travelId, language);
-    if (!guide) return;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setTravelPlace({ name: travelNameOf(travelId) });
-    setTravelSections(travelGuideToSections(guide, language));
+    let cancelled = false;
+    void resolveTravelGuide(travelId, language).then((guide) => {
+      if (!guide || cancelled) return;
+      setTravelPlace({ name: travelNameOf(travelId) });
+      setTravelSections(travelGuideToSections(guide, language));
+    });
+    return () => {
+      cancelled = true;
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language, mode, travelId]);
 
