@@ -5473,4 +5473,47 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–August has the most pleasant climate; consider using Tsetserleg as a stopover on a central Mongolia itinerary between the Orkhon Valley and Lake Khövsgöl, staying one to two days.",
   },
+  // ============ Singapore ============
+  "singapore-overview": {
+    identity:
+      "The Republic of Singapore is a city-state island nation in Southeast Asia, covering about 735 km² with a population of about 6.11 million — one of the most densely populated independent countries in the world after Monaco. Its capital is Singapore itself; the official languages are Malay (the national language), English, Mandarin and Tamil, and its currency is the Singapore dollar (SGD).",
+    layout:
+      "The country is highly urbanised with no traditional multi-city division: Marina Bay and the city centre form the political and economic core, Sentosa is the well-known resort island to the south, outlying islands such as Pulau Ubin and St John's Island preserve natural and historical landscapes, and the Central Catchment and Bukit Timah reserves are mainland Singapore's only remaining large tracts of forest.",
+    gettingAround:
+      "Changi Airport is the international air hub, about 20 km from the city centre, reachable by MRT in 40–45 minutes; the island's public transport network is extensive, with MRT, buses and ride-hailing (Grab) covering the whole island. As a single city-state, Singapore has no domestic flights. Visa-free arrangements for short-term visitors vary by nationality — check Singapore's official current announcements.",
+    culture:
+      "The official languages are Malay (national language), English (the language of administration and business), Mandarin and Tamil, spoken alongside each other; society is composed of Malay, Chinese, Indian and Eurasian communities among others. Singapore is known for strict management of public order and cleanliness (such as bans on spitting and smoking in most public places). Restaurant bills often already include service, and tipping is not a mandatory tradition. The voltage is 230V, with British-style three-pin plugs.",
+    seeAndDo:
+      "Natural landforms: primary rainforest at Bukit Timah and the Central Catchment, the wetlands of Pulau Ubin and Chek Jawa, the mangroves of Sungei Buloh, the rocky shore at Labrador. Island leisure: Sentosa's beaches and theme parks, diving at Sisters' Islands Marine Park. History and culture: the multiethnic districts of Chinatown, Kampong Glam and Little India; the historical sites of St John's Island and Kusu Island.",
+    whenAndTips:
+      "Lying near the equator, Singapore is hot and humid year-round with no distinct seasons; rainfall is comparatively heavier from November to January (the northeast monsoon season), and afternoon showers are common in other months too — carry rain gear year-round, and a light layer is useful given strong indoor air-conditioning.",
+  },
+  "singapore-city": {
+    identity:
+      "Singapore city is the urban core of the entire country, on the south coast of Singapore Island, the country's political, economic and cultural centre, and one of the world's important international financial and trade hubs.",
+    layout:
+      "Marina Bay, ringed by high-rises, is Singapore's modern landmark core; Chinatown, Kampong Glam and Little India are the traditional enclaves of the Chinese, Malay-Muslim and Indian communities respectively, and Orchard Road is Singapore's main shopping street.",
+    gettingAround:
+      "Changi Airport is about 20 km from the city centre, with the airport MRT line taking about 35–45 minutes into town; the city's MRT network is extensive, with buses and Grab ride-hailing covering the whole island as the main way to explore its different districts.",
+    culture:
+      "The official languages — Malay, English, Mandarin and Tamil — are spoken alongside each other, and the society is known for its coexistence of diverse ethnicities and religions. Singapore is known for its strict management of public order and clean cityscape; restaurant bills typically already include service, and tipping is not a mandatory tradition.",
+    seeAndDo:
+      "Gardens by the Bay and Marina Bay Sands; Chinatown and the Buddha Tooth Relic Temple; Kampong Glam and the Sultan Mosque; Little India; the Singapore Botanic Gardens (a UNESCO World Heritage Site).",
+    whenAndTips:
+      "Hot and humid year-round — carry rain gear for afternoon showers; the city centre's sights are concentrated and the MRT is convenient, making it well suited to an itinerary combining walking with metro rides.",
+  },
+  sentosa: {
+    identity:
+      "Sentosa is a resort island of about 500 ha off Singapore's south coast, originally named Pulau Blakang Mati (\"the island behind which lies death\") and renamed Sentosa (Malay for \"peace and tranquility\") in 1972; it is today Singapore's foremost island resort and theme-park destination.",
+    layout:
+      "Nearly 70% of the island remains natural rainforest; its south shore holds several beaches and resorts, while Resorts World Sentosa (home to Universal Studios) sits on the island's north side, linked to mainland Singapore by cable car, monorail and a causeway.",
+    gettingAround:
+      "Sentosa has no airport of its own and is reached via Changi Airport (about 30 km from the island); it connects to mainland Singapore by cable car, the Sentosa Express monorail, or on foot across the Sentosa Boardwalk causeway, with buses and a beach tram available for getting around the island.",
+    culture:
+      "The official languages — Malay, English, Mandarin and Tamil — are spoken alongside each other. Sentosa has been developed by the Sentosa Development Corporation since 1972, transforming from a disused military site into an internationally known leisure and resort island; the opening of Resorts World Sentosa in 2010 was a major milestone in its development.",
+    seeAndDo:
+      "Resorts World Sentosa (Universal Studios Singapore); Siloso Beach and other south-shore beaches; cable-car views across the strait; the Skyline Luge and other outdoor adventure activities.",
+    whenAndTips:
+      "Hot and humid year-round — plan beach and outdoor activities to avoid the midday heat; rainfall is heavier from November to January, so check the weather before visiting.",
+  },
 };
