@@ -12100,4 +12100,102 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Sipadan was historically a sea-turtle nesting site and a traditional fishing ground for local fishermen, and became an internationally renowned diving destination in the late 20th century owing to its distinctive underwater landform and ecology.",
   },
+  "pahang-river": {
+    seeing:
+      "The Pahang River is the longest river on the Malay Peninsula, running 459 km, formed by the confluence of its two headstreams, the Jelai and the Tembeling, draining a basin of about 29,000 km² before emptying into the South China Sea at Pekan.",
+    formation:
+      "The Pahang River rises on the eastern flank of the Titiwangsa Mountains; long-term erosion of the mountain rock and downstream sediment transport, together with a sharp eastward turn near Mengkarak where the slope changes at the break between mountains and plain, has shaped a floodplain more than 32 km wide before the river reaches the South China Sea.",
+    observation:
+      "From the air, the Pahang River shows a broad, winding channel running through extensive tropical rainforest and alluvial plain, its mouth marked by a delta landform interwoven with mangroves — the most prominent drainage feature on the peninsula's east coast.",
+    distinguish:
+      "Both the Pahang River and the Kelantan River are major rivers on the peninsula's east coast, but the Pahang is the peninsula's longest river with the largest drainage basin, while the Kelantan is comparatively shorter, its basin including part of Taman Negara.",
+    concept:
+      "As the peninsula's longest river, the Pahang's basin extent and course changes make it an important sample for studying the surface drainage pattern of the peninsula's east coast and the relationship between mountain and plain landforms.",
+    history:
+      "The Pahang River has historically been an important waterway for inland tin mining and timber transport on the Malay Peninsula, with towns such as Temerloh and Pekan along its banks long developing around river trade.",
+  },
+  "kelantan-river": {
+    seeing:
+      "The Kelantan River is the fourth-longest river on the Malay Peninsula, running 248 km, formed by the confluence of the Galas and Lebir rivers, draining a basin of about 11,900 km² before flowing north through Kota Bharu to the South China Sea.",
+    formation:
+      "The Kelantan's two headstreams, the Galas and the Lebir, rise separately in the Titiwangsa Mountains and the hills around Taman Negara; after long-term erosion of the mountain rock they join in the middle course, then flow north into a relatively flat coastal plain.",
+    observation:
+      "From the air, the upper Kelantan winds through mountainous terrain, opening into a broad alluvial plain in its middle and lower reaches; a clear delta landform appears at its mouth near Kota Bharu, closely tied to the rice-growing landscape of Kelantan state.",
+    distinguish:
+      "Both the Kelantan River and the Pahang River are major rivers on the peninsula's east coast, but the Kelantan's basin includes part of Taman Negara and is comparatively shorter, while the Pahang is the peninsula's longest river with a larger basin.",
+    concept:
+      "As the Kelantan River's basin includes part of Taman Negara, it is an important sample for studying the relationship between mountain river drainage systems and tropical rainforest reserves in the northeastern Malay Peninsula.",
+    history:
+      "The Kelantan valley was historically the political and cultural heartland of the Sultanate of Kelantan; Kota Bharu at its mouth is today the capital of Kelantan state.",
+  },
+  "perak-river": {
+    seeing:
+      "The Perak River is the second-longest river on the Malay Peninsula, running about 400 km, rising in the Titiwangsa Mountains at the tripoint of Perak, Kelantan and Thailand, and flowing south through Teluk Intan to the Strait of Malacca.",
+    formation:
+      "The Perak River rises in the northern Titiwangsa Mountains around Royal Belum State Park; long-term erosion of the mountain rock and downstream sediment transport have shaped a narrow, elongated valley plain running the length of Perak state from north to south.",
+    observation:
+      "From the air, the upper Perak River winds through the primary rainforest of the Royal Belum area, opening into broad agricultural plains in its middle and lower reaches, with a clear river-mouth landform where it meets the Strait of Malacca at Teluk Intan.",
+    distinguish:
+      "The Perak River and the Pahang River flow to opposite coasts of the Malay Peninsula: the Perak flows west into the Strait of Malacca as the peninsula's second-longest river, while the Pahang flows east into the South China Sea as its longest.",
+    concept:
+      "As the main river running the length of the peninsula's west coast, the Perak River is an important sample for studying the drainage pattern on the western flank of the Titiwangsa Mountains and its relationship to agricultural development in the river valley plain.",
+    history:
+      "The Perak River has historically been an important waterway for tin transport on the Malay Peninsula's west coast, with towns such as Ipoh along its banks prospering through tin mining and river trade.",
+  },
+  "kinabatangan-river": {
+    seeing:
+      "The Kinabatangan River is Malaysia's second-longest river, running about 560 km, rising in the Crocker Range in southwest Sabah and flowing east to empty into the Sulu Sea southeast of Sandakan.",
+    formation:
+      "The Kinabatangan rises in the Crocker Range; long-term erosion of the mountain rock and downstream transport of large amounts of sediment have formed a broad floodplain and alluvial plain in its lower course, providing an ideal terrain base for a tropical rainforest wetland ecosystem.",
+    observation:
+      "From the air, the lower Kinabatangan winds in tight meanders scattered with oxbow lakes, its banks lined with dense floodplain forest, forming a sharp contrast between primary landform and developed plantation land further into Sabah's interior.",
+    distinguish:
+      "Both the Kinabatangan and the Rajang are major rivers of Borneo, but the Kinabatangan is known for the wildlife diversity of its lower floodplain forest, while the Rajang is Borneo's longest river and was historically an important timber-transport waterway.",
+    concept:
+      "The Kinabatangan's lower floodplain forest is one of only two known places on Earth where ten primate species can be found together, making it an important sample for studying how biodiversity is sustained in tropical river-floodplain forest ecosystems.",
+    history:
+      "In 2005 the Sabah government gazetted the Kinabatangan Wildlife Sanctuary; it is today one of Borneo's most important wildlife-viewing destinations and has long been a traditional fishing and hunting ground for indigenous communities of inland Sabah.",
+  },
+  "rejang-river": {
+    seeing:
+      "The Rajang River is Malaysia's longest river, running about 563 km, rising in the Iran Mountains of interior Borneo and flowing west into the South China Sea — the seventh-longest river on the island of Borneo.",
+    formation:
+      "The Rajang rises in the Iran Mountains of interior Borneo; long-term erosion of the mountain rock and downstream transport of large amounts of sediment have built a broad delta landform at its mouth, making it Sarawak's largest river system.",
+    observation:
+      "From the air, the upper Rajang winds through the dense forest of interior Borneo, its channel widening through the middle and lower reaches; the riverside town of Sibu has grown around river trade, and a dense network of waterways marks the delta at its mouth.",
+    distinguish:
+      "Both the Rajang and the Kinabatangan are major rivers of Borneo, but the Rajang is Borneo's longest river and was historically an important timber-transport waterway, while the Kinabatangan is known for the wildlife diversity of its lower floodplain forest.",
+    concept:
+      "As Borneo's longest river, the landform gradient between the Rajang's mountainous upper course and its delta lower course makes it a classic sample for studying how interior Bornean rivers transport sediment over long distances to build river-mouth deltas.",
+    history:
+      "The Rajang River has historically been an important waterway for timber and agricultural transport in interior Sarawak, with Sibu, the largest town on its banks, developing into an important commercial centre of Sarawak through river trade.",
+  },
+  "tasik-chini": {
+    seeing:
+      "Tasik Chini (Lake Chini) is Peninsular Malaysia's second-largest natural freshwater lake, made up of 12 interconnected smaller lakes covering about 5,085 ha, about 100 km from Kuantan, recognised by UNESCO in 2009 as Malaysia's first biosphere reserve.",
+    formation:
+      "Tasik Chini formed as tributaries of the Pahang River gathered over a long period in a low-lying depression into a series of interconnected shallow lakes; seasonal water-level changes alternately merge and separate the 12 component lakes, a classic example of a tropical lowland freshwater lake cluster.",
+    observation:
+      "From the air, Tasik Chini appears as an irregular water body made up of 12 interconnected lakes, its shoreline winding and rich in aquatic vegetation; during the wet season, blooming lotus flowers cover large stretches of the surface, a distinctive wetland landscape within the Pahang River basin.",
+    distinguish:
+      "Both Tasik Chini and the Pahang River lie within the same drainage system in Pahang state, but Tasik Chini is a relatively still natural freshwater lake cluster, while the Pahang River is the peninsula's longest river, a dynamic flowing system.",
+    concept:
+      "Tasik Chini is home to 138 plant species, more than 300 non-aquatic species and 144 freshwater fish species, making it an important sample for studying the relationship between biodiversity and water-quality change in tropical lowland lake wetland ecosystems.",
+    history:
+      "Tasik Chini is the ancestral home of the Jakun, an Orang Asli indigenous community of Pahang; local legend holds that an ancient Khmer city lies sunken beneath the lake, guarded by a \"dragon god.\" Recognised by UNESCO in 2009 as Malaysia's first biosphere reserve, the lake's ecosystem has in recent years faced degradation risk from mining and logging activity.",
+  },
+  "bako-national-park": {
+    seeing:
+      "Bako National Park is a stretch of coastal sandstone landform in Sarawak, shaped over millions of years of wave erosion into steep cliffs, headlands and white-sand bays, its sea stacks the park's signature feature.",
+    formation:
+      "The sandstone at Bako belongs to the same ancient sandstone geological unit as the Muara Tebas peninsula; long-term wave erosion has undercut the base of the headlands, isolating hard rock pillars offshore while softer surrounding rock has been carried away by currents.",
+    observation:
+      "From the air, Bako's coastline alternates between steep cliffs and winding headlands, several isolated sea stacks standing in the nearshore waters of the South China Sea, their surfaces marked with striking orange-red banding from iron-oxide deposition.",
+    distinguish:
+      "Both Bako National Park and Langkawi Geopark are known for sea-erosion landforms, but Bako's features are sandstone sea stacks and cliffs, while Langkawi is defined by limestone karst sea stacks and sea arches.",
+    concept:
+      "The distinctive northwest-southeast trending joints in Bako's sandstone have determined the orientation of many of the region's headlands and streams, making it a classic sample for studying how rock-joint structure controls the development of coastal landforms.",
+    history:
+      "In February 2024, one of Bako's iconic sea stacks collapsed under the impact of large waves, an event confirmed by the Sarawak Forestry Corporation, illustrating that sea-stack landforms are an ongoing, not static, geological process.",
+  },
 };

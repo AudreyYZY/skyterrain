@@ -12275,6 +12275,107 @@ const SIPADAN_ISLAND: TerrainEntry = {
   source: "诗巴丹岛：马来西亚唯一的海洋岛，坐落于西里伯斯海大陆架之外，是一座死火山锥历经数百万年珊瑚持续生长堆积而成的海底尖峰，峰体从海床垂直隆起约600米，四周环绕天然硬珊瑚礁，地处珊瑚三角区核心地带，已记录鱼类逾400种、珊瑚种类数以百计（zubludiving.com WebSearch 2026）",
 };
 
+const PAHANG_RIVER: TerrainEntry = {
+  id: "pahang-river",
+  nameZh: "彭亨河",
+  nameEn: "Pahang River",
+  category: "river",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "北根（彭亨河口）", lon: 103.39, lat: 3.49, elevation: 0, kind: "delta" },
+  bbox: [102.35, 3.45, 103.45, 4.05],
+  axis: [[102.36, 3.93], [103.39, 3.49]],
+  viewScale: 1.2,
+  label: { lon: 102.9, lat: 3.75, rotation: -20 },
+  source: "彭亨河：马来半岛最长的河流，全长459公里，由哲莱河与淡美璐河两条源流在杰兰突以北约16公里处汇合而成，流域面积约2.9万平方公里，向南流经淡马鲁后在昔加末转向东流，最终于北根注入南海（Britannica WebSearch 2026）",
+};
+
+const KELANTAN_RIVER: TerrainEntry = {
+  id: "kelantan-river",
+  nameZh: "吉兰丹河",
+  nameEn: "Kelantan River",
+  category: "river",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "哥打巴鲁（吉兰丹河口）", lon: 102.24, lat: 6.13, elevation: 0, kind: "delta" },
+  bbox: [101.85, 4.95, 102.30, 6.20],
+  axis: [[101.9, 5.0], [102.24, 6.13]],
+  viewScale: 1.2,
+  label: { lon: 102.0, lat: 5.6, rotation: -10 },
+  source: "吉兰丹河：马来半岛第四长河流，全长248公里，由加拉斯河与勒比河汇流而成，流域面积约1.19万平方公里，向北流经哥打巴鲁后注入南海，流域涵盖大汉山国家公园部分区域（Wikipedia WebSearch 2026）",
+};
+
+const PERAK_RIVER: TerrainEntry = {
+  id: "perak-river",
+  nameZh: "霹雳河",
+  nameEn: "Perak River",
+  category: "river",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "端洛（霹雳河口）", lon: 100.98, lat: 4.02, elevation: 0, kind: "delta" },
+  bbox: [100.98, 4.02, 101.35, 5.65],
+  axis: [[101.3, 5.60], [100.98, 4.02]],
+  viewScale: 1.2,
+  label: { lon: 101.15, lat: 4.8, rotation: -15 },
+  source: "霹雳河：马来半岛第二长河流，全长约400公里，发源于霹雳、吉兰丹与泰国三方交界处、皇家贝伦州立公园一带的蒂蒂旺沙山脉，向南流经端洛注入马六甲海峡（Wikipedia WebSearch 2026）",
+};
+
+const KINABATANGAN_RIVER: TerrainEntry = {
+  id: "kinabatangan-river",
+  nameZh: "京那巴当岸河",
+  nameEn: "Kinabatangan River",
+  category: "river",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "苏高（京那巴当岸下游）", lon: 118.35, lat: 5.50, elevation: 20, kind: "meander" },
+  bbox: [116.5, 5.2, 118.5, 5.9],
+  axis: [[116.5, 5.3], [118.5, 5.9]],
+  viewScale: 1.2,
+  label: { lon: 117.5, lat: 5.7, rotation: -8 },
+  source: "京那巴当岸河：马来西亚第二长河流，全长约560公里，发源于沙巴西南部克罗克山脉，向东流经桑达坎东南方注入苏禄海；下游河漫滩森林是全球仅有的两处可同时观察到10种灵长类动物的地点之一，2005年沙巴政府划设京那巴当岸野生动物保护区（Wikipedia/borneoecotours.com WebSearch 2026）",
+};
+
+const REJANG_RIVER: TerrainEntry = {
+  id: "rejang-river",
+  nameZh: "拉让江",
+  nameEn: "Rejang River",
+  category: "river",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "诗巫（拉让江畔最大城镇）", lon: 111.82, lat: 2.29, elevation: 10, kind: "meander" },
+  bbox: [111.55, 1.95, 114.15, 2.60],
+  axis: [[114.0, 2.30], [111.55, 2.20]],
+  viewScale: 1.3,
+  label: { lon: 112.8, lat: 2.15, rotation: 5 },
+  source: "拉让江：马来西亚最长的河流，全长约563公里，发源于婆罗洲内陆伊兰山脉，向西流入南海，是婆罗洲第七长河流；沿岸最大城镇诗巫距河口约60公里，历史上是砂拉越内陆重要的木材与农产品运输水道（Wikivoyage/etawau.com WebSearch 2026）",
+};
+
+const TASIK_CHINI: TerrainEntry = {
+  id: "tasik-chini",
+  nameZh: "琴宁湖",
+  nameEn: "Tasik Chini (Lake Chini)",
+  category: "lake",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "琴宁湖", lon: 102.89, lat: 3.42, elevation: 40, kind: "lake" },
+  bbox: [102.82, 3.36, 102.95, 3.48],
+  label: { lon: 102.89, lat: 3.32, rotation: 0 },
+  source: "琴宁湖：马来半岛第二大天然淡水湖，由12个相连的小湖组成，占地约5085公顷，距关丹约100公里；2009年获UNESCO认定为马来西亚首个生物圈保护区，湖区栖息138种植物、300余种非水生生物及144种淡水鱼，湖畔世居原住民奥朗阿斯利雅贡族（UNESCO/scmp.com WebSearch 2026）",
+};
+
+const BAKO_NATIONAL_PARK: TerrainEntry = {
+  id: "bako-national-park",
+  nameZh: "巴哥国家公园",
+  nameEn: "Bako National Park",
+  category: "coast",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "巴都卡帕海蚀柱", lon: 110.47, lat: 1.72, elevation: 10, kind: "escarpment" },
+  bbox: [110.40, 1.68, 110.53, 1.78],
+  label: { lon: 110.47, lat: 1.66, rotation: 0 },
+  source: "巴哥国家公园：砂拉越一处沿岸砂岩地貌，历经数百万年海浪侵蚀塑造出陡峭悬崖、岬角与白沙海湾；海蚀作用在岬角处进一步侵蚀出造型奇特的海蚀拱与海蚀柱，柱体最高处约15米，表面因氧化铁沉积呈现橙红色条纹（Wikipedia/thestar.com.my WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12596,6 +12697,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MALIAU_BASIN, DANUM_VALLEY, ENDAU_ROMPIN,
   LANGKAWI_GEOPARK, PENANG_ISLAND, TIOMAN_ISLAND,
   PERHENTIAN_ISLANDS, REDANG_ISLAND, SIPADAN_ISLAND,
+  PAHANG_RIVER, KELANTAN_RIVER, PERAK_RIVER, KINABATANGAN_RIVER,
+  REJANG_RIVER, TASIK_CHINI, BAKO_NATIONAL_PARK,
 ];
 
 /**
