@@ -13771,4 +13771,397 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Torysh's remote location on the edge of the Ustyurt Plateau kept it largely untouched historically; today, as self-drive tourism grows in the Mangystau region, it has become an increasingly popular destination for geology enthusiasts and photographers.",
   },
+  // ============ Turkey ============
+  "toros-mountains": {
+    seeing:
+      "The Taurus Mountains form an arcing range along Turkey's southern Mediterranean coast, separating the coastal lowlands from the Central Anatolian Plateau, running over 1,500 km with the range's highest peak, Demirkazık, at 3,756 m.",
+    formation:
+      "The range is part of the Alpine-Himalayan orogenic belt, folded and uplifted by long-term collision between the African plate and the Anatolian block; it is predominantly limestone, with extensive karst development including caves and underground rivers.",
+    observation:
+      "From the air, the Taurus Mountains form a continuous arcing wall hugging the coastline, with a steep southern slope dropping to the sea and a gentler northern slope transitioning into the Anatolian Plateau; the ridgeline is steepest and most continuous through the central section.",
+    distinguish:
+      "The Taurus and Pontic Mountains form Anatolia's southern and northern border ranges respectively; the Taurus is known for limestone karst and higher elevations, while the Pontic Mountains sit closer to the coast with heavier rainfall and denser forest cover.",
+    concept:
+      "The Taurus Mountains are key to understanding the southern edge of Turkey's three-step topography (coastal lowland — border mountains — central plateau), and their karst terrain is an important sample for studying Mediterranean-climate karst landforms.",
+    history:
+      "The range has long been a natural barrier for north-south movement across the Anatolian peninsula; several passes historically served as traditional routes for caravans and armies, and numerous ancient settlement remains survive in the mountains.",
+  },
+  "pontus-mountains": {
+    seeing:
+      "The Pontic Mountains run along Turkey's Black Sea coast, named for the ancient region of Pontus; the range rises abruptly from the shoreline, separating the humid Black Sea coast from the arid Central Anatolian Plateau.",
+    formation:
+      "Also part of the Alpine-Himalayan orogenic belt, the range was folded and uplifted by crustal compression; its eastern section (around the Kaçkar Mountains) reaches notably higher elevations with modern glacial landforms, while the western section is lower and more subdued.",
+    observation:
+      "From the air, the Pontic Mountains form a band hugging the Black Sea coastline, with dense, dark-green forest on the windward northern slope contrasting sharply with the drier transition zone on the southern slope toward the plateau.",
+    distinguish:
+      "The Pontic and Taurus Mountains are Anatolia's two edge ranges, but the Pontic Mountains face the moist Black Sea airflow and receive far more precipitation than the Taurus, giving them denser, more continuous forest cover.",
+    concept:
+      "The Pontic Mountains are a key topographic barrier producing the rain-shadow aridity of the Central Anatolian Plateau; the sharp contrast in vegetation and rainfall between windward and leeward slopes is a classic sample for understanding mountain-driven climate differentiation.",
+    history:
+      "Named for the ancient region of Pontus, the range was the core territory of the Kingdom of Pontus in antiquity; coastal passes historically served as important routes for Silk Road branches and Byzantine and Ottoman-era trade.",
+  },
+  "central-anatolian-plateau": {
+    seeing:
+      "The Central Anatolian Plateau is a relatively gentle upland in Turkey's interior, averaging 600 to 1,200 m in elevation, ringed by the Taurus Mountains to the south and the Pontic Mountains to the north, and forming the core of Turkey's population and agro-pastoral economy.",
+    formation:
+      "Geologically the plateau is the stable core of the Anatolian block, uplifted gradually in tandem with the folding of the surrounding ranges; it retains multiple Tertiary-to-Quaternary interior drainage basins and traces of past volcanic activity.",
+    observation:
+      "From the air, the plateau shows broad, gently undulating terrain interwoven with farmland and steppe; interior lakes such as Lake Tuz display a distinct white salt crust during the dry season, contrasting sharply with the darker mountains around the rim.",
+    distinguish:
+      "Unlike young orogenic plateaus such as the Qinghai-Tibet Plateau, the Central Anatolian Plateau has gentler terrain made up mostly of separate interior drainage basins rather than continuous highland, and receives far less rainfall than the surrounding mountains.",
+    concept:
+      "The plateau receives only 200 to 300 mm of rainfall annually, but most falls in winter and infiltrates to recharge groundwater, supporting both rain-fed and irrigated agriculture — a classic sample for understanding water use in semi-arid plateau regions.",
+    history:
+      "The plateau has a long history of human settlement dating to the Neolithic (as at Çatalhöyük in the Konya Basin), passing through Hittite, Roman, Byzantine, Seljuk and Ottoman periods; Ankara has been the capital of the Republic of Turkey since 1923.",
+  },
+  aladaglar: {
+    seeing:
+      "The Aladağlar massif is a high mountain block in the eastern Taurus range; Aladağlar National Park, established in 1995, averages about 3,500 m in elevation, with the highest peak, Demirkazık, reaching 3,756 m — the Taurus system's highest point outside its western section.",
+    formation:
+      "The massif is composed of interwoven limestone, marble and volcanic rock, sculpted by regional uplift and glacial action; it is steep and rugged, preserving multiple glacial lakes and U-shaped valleys.",
+    observation:
+      "From the air, Aladağlar appears as a rugged, rock-walled highland block that often glows crimson at sunset (the name means 'crimson mountains'), contrasting sharply with the gentler plateau terrain around it.",
+    distinguish:
+      "Aladağlar belongs to the same orogenic belt as the main Taurus range but is distinguished by its concentrated cluster of high peaks, well-developed glacial landforms, and rock-climbing terrain, making it one of the most distinctive massifs within the Taurus system.",
+    concept:
+      "The glacial lakes and U-shaped valleys preserved in Aladağlar are an important geological sample for studying the extent and scale of last-glacial mountain glaciation at mid-latitude in a Mediterranean-climate high range.",
+    history:
+      "Historically used as seasonal high-altitude pasture by local herders, the massif became a major base for mountaineering and rock climbing in Turkey after the national park was established in 1995.",
+  },
+  "kackar-mountains": {
+    seeing:
+      "The Kaçkar Mountains form the highest section of the eastern Pontic range, with the summit of Mount Kaçkar reaching 3,937 m and its high plateau areas around 3,000 m, only about 40 km from the Black Sea coast.",
+    formation:
+      "Uplifted by crustal compression, the range has undergone intense glacial erosion since the last ice age, making it one of Turkey's most glaciated mountain areas, with numerous glacial lakes scattered among its steep rocky peaks.",
+    observation:
+      "From the air, the Kaçkar Mountains present a sharp, jagged alpine profile with dense coniferous forest on the slopes; rocky summits and scattered glacial lakes are clearly visible in the sunlight, forming a distinct vertical zonation against the green Black Sea lowlands.",
+    distinguish:
+      "Compared with the rest of the Pontic range, the Kaçkar Mountains are higher and more glacially developed, the only section of the Pontic range to retain pronounced modern glacial features, and stand in contrast with the drier, inland Aladağlar massif in both climate and vegetation.",
+    concept:
+      "The Kaçkar Mountains are a classic sample for studying the relationship between windward precipitation and glaciation along the Black Sea coast, with a clear vertical vegetation belt from coastal broadleaf forest to alpine conifers to bare rock.",
+    history:
+      "The mountains have historically been home to Laz and Georgian communities, with stone-built highland shelters and old trails still surviving; today the range is a major hiking destination in Turkey.",
+  },
+  "mount-ararat": {
+    seeing:
+      "Mount Ararat is Turkey's highest peak, officially known as Ağrı Dağı, at 5,137 m, located in eastern Turkey near Turkey's border with Armenia; the mountain is permanently snow-capped and stands as a massive isolated volcanic cone.",
+    formation:
+      "Mount Ararat is a dormant compound stratovolcano built up from repeated lava flows and pyroclastic deposits; it consists of two cones, Greater and Little Ararat (the latter at 3,896 m), with the whole massif about 35 km wide at its base.",
+    observation:
+      "From the air, Mount Ararat rises as an isolated, massive snow peak on the East Anatolian Plateau, creating a striking contrast with the comparatively gentle plateau terrain around it; the summit remains snow- and ice-covered year-round.",
+    distinguish:
+      "Along with Mount Süphan and the Nemrut volcano, Ararat is one of eastern Turkey's volcanoes, but it is the highest and most massive, and the only isolated Turkish volcano with a permanent summit ice cap.",
+    concept:
+      "As an isolated, massive stratovolcano, Mount Ararat is a geographic sample for studying how large solitary volcanoes form at the margins of plate-collision zones.",
+    history:
+      "Mount Ararat's last recorded eruption was in 1840, and it has remained dormant since; owing to its massive scale and isolated setting, it has long served as an important regional landmark and mountaineering destination.",
+  },
+  "mount-erciyes": {
+    seeing:
+      "Mount Erciyes is the highest volcano in Central Anatolia at 3,917 m, located about 15 to 25 km from the city of Kayseri; it is a large stratovolcano surrounded by numerous monogenetic cinder cones and lava domes.",
+    formation:
+      "The current stratovolcano formed during Pleistocene eruptions of andesitic and dacitic lava; a maar-type crater lake sits near the volcano, and its last eruption dates to around 6880 BCE, making it a dormant volcano.",
+    observation:
+      "From the air, Mount Erciyes appears as a complete conical stratovolcano, snow-capped year-round in winter and connected to the volcanic ash terrain of Cappadocia at its base, making it the most prominent landmark peak in the region.",
+    distinguish:
+      "Together with Mount Hasan, Erciyes is one of the two volcanic sources that shaped the Cappadocia landscape, but Erciyes is higher and more massive, making it the highest point in the Central Anatolian Volcanic Province.",
+    concept:
+      "The thick volcanic ash deposited by Erciyes's past eruptions is the direct source material for Cappadocia's fairy-chimney landforms, making it a key node for understanding the relationship between regional volcanism and subsequent erosional landforms.",
+    history:
+      "The city of Kayseri at the volcano's foot has long been an important trade and craft center in Anatolia; today Erciyes is also one of Turkey's major ski destinations.",
+  },
+  "nemrut-caldera-van": {
+    seeing:
+      "The Nemrut volcano, near Tatvan in Bitlis Province west of Lake Van, has a collapsed summit forming a crescent-shaped caldera lake — Lake Nemrut — at about 2,247 m elevation and 176 m deep, the world's second-largest and Turkey's largest crater lake.",
+    formation:
+      "After the volcano's magma chamber emptied, the summit lost support and collapsed, forming a huge caldera that gradually filled with water to become today's crater lake; roughly 600,000 years ago, lava flows from this volcano also blocked the Murat River, contributing to the formation of Lake Van.",
+    observation:
+      "From the air, the Nemrut volcano presents a clearly defined giant ring-shaped caldera, with the crescent lake and an inner secondary cone set against the comparatively gentle outer volcanic slopes.",
+    distinguish:
+      "Note this Nemrut volcano lies in Bitlis Province west of Lake Van — a different location from the Mount Nemrut colossal-statue archaeological site in Adıyaman Province, despite sharing the same name. As a caldera lake, it differs from Lake Van in that Van formed when lava dammed a river, while Lake Nemrut formed when the volcano's own summit collapsed and filled with water.",
+    concept:
+      "The formation of the Nemrut caldera is a classic sample for studying the geological mechanism by which a large stratovolcano's magma chamber empties and its summit subsequently collapses to form a caldera.",
+    history:
+      "The area around the volcano has historically been used by pastoral and farming communities of the Lake Van basin; today it is an important geological tourism and mountaineering destination in eastern Turkey.",
+  },
+  "lake-van": {
+    seeing:
+      "Lake Van is Turkey's largest lake by area, covering about 3,764 km² with a volume of roughly 607 km³ at an elevation of about 1,646 m, and it is the world's largest soda (alkaline) lake.",
+    formation:
+      "About 600,000 years ago, lava flows from the Nemrut volcano blocked the course of the Murat River; unable to drain, the water gradually accumulated to form today's closed basin — a classic case of a volcanically dammed lake.",
+    observation:
+      "From the air, Lake Van's vast waters take on a distinctive turquoise-blue hue from high carbonate concentration, with an irregular shoreline; Mount Süphan rises on the north shore and the Nemrut volcano on the south, together forming the skeletal landforms of this plateau lake district.",
+    distinguish:
+      "Though both are volcanically formed lakes, Lake Van is a large closed basin created when lava blocked a river, far exceeding the smaller caldera lake of Nemrut in area.",
+    concept:
+      "As the world's largest soda lake, Lake Van's highly alkaline, saline water supports only a few salt-tolerant fish species, making it an important sample for studying how long-term evaporative concentration in interior-drainage lakes produces distinctive water chemistry.",
+    history:
+      "The Lake Van basin was historically a core territory of the Kingdom of Urartu, and numerous ancient fortress ruins survive along the shore today; the lake remains a major geographic landmark in eastern Turkey.",
+  },
+  "lake-tuz": {
+    seeing:
+      "Lake Tuz is Turkey's second-largest lake, covering about 1,665 km², roughly 80 km long and 50 km wide, but with an average depth of only 0.5 m, making it one of the most saline lakes on Earth.",
+    formation:
+      "Lake Tuz sits at the lowest point of an interior drainage basin on the Central Anatolian Plateau; winter and spring precipitation and groundwater fill the lake, while intense summer evaporation dries out large areas, leaving a salt crust roughly 30 cm thick on the lakebed.",
+    observation:
+      "From the air, Lake Tuz shows a vast, nearly pure-white salt crust in sharp color contrast with the tan-and-ochre arid plateau around it; the lake surface often takes on pink or orange tones from algae and mineral content in sunlight.",
+    distinguish:
+      "Both Lake Tuz and Lake Van are major interior-drainage lakes in Turkey, but Lake Tuz is a shallow, seasonally dry salt lake with far higher salinity, while Lake Van holds water year-round at comparatively lower salinity.",
+    concept:
+      "With a salinity of about 32 to 33 percent — close to the Dead Sea — Lake Tuz is a classic sample for studying how long-term evaporative concentration in interior basins produces highly saline lakes, and it is also an important salt-producing region for Turkey.",
+    history:
+      "Lake Tuz has long been an important source of salt in Anatolia; today it produces roughly 300,000 tonnes of salt annually, supplying about 70 percent of Turkey's salt needs.",
+  },
+  "konya-basin": {
+    seeing:
+      "The Konya Basin is a large interior-drainage basin on the Central Anatolian Plateau, covering about 50,000 km² at elevations of 850 to 3,450 m, bounded by the Pontic Mountains to the north and the Taurus Mountains to the south, and forming an important agricultural heartland for Turkey.",
+    formation:
+      "The basin is a structural depression within the high-elevation orogenic plateau, having long accumulated sediment eroded from the surrounding mountains to form an extensive flat alluvial-lacustrine plain; it retains landform traces left by the retreat of an ancient large lake.",
+    observation:
+      "From the air, the Konya Basin shows an expansive, flat farmland landscape with orderly irrigation channels and field plots; Lake Tuz and Lake Beyşehir, its two main lakes, show varying extents between wet and dry seasons.",
+    distinguish:
+      "Both the Konya Basin and the Lake Tuz basin are interior-drainage units on the Central Anatolian Plateau, but the Konya Basin is larger and dominated by agricultural plains, while the Lake Tuz basin is characterized primarily by its saline lake.",
+    concept:
+      "Due to prolonged over-extraction of groundwater, the Konya Basin has seen increasing surface subsidence (sinkholes) in recent years, making it an important real-world sample for studying how large-scale irrigated agriculture in arid regions affects groundwater systems and surface stability.",
+    history:
+      "Konya, within the basin, was the capital of the Seljuk Sultanate in Anatolia; the 13th-century Sufi poet Rumi lived there and founded the Mevlevi Order (the whirling dervishes), and the Çatalhöyük site within the basin is a major Neolithic archaeological site.",
+  },
+  "pamukkale-travertines": {
+    seeing:
+      "Pamukkale ('Cotton Castle') is a geothermal travertine terrace formation in the Denizli graben, named for its brilliant white, stepped calcium-carbonate terraces, spanning about 2,700 m long, 600 m wide and 160 m high.",
+    formation:
+      "More than 17 hot springs (35 to 100°C) rise along a fault line; the calcium-bicarbonate-rich water has deposited over thousands of years, releasing carbon dioxide and precipitating calcium carbonate crystals that build up layer by layer into today's white, stepped terrace pools.",
+    observation:
+      "From the air, Pamukkale shows a brilliant white, terraced formation cascading down the hillside, its stacked pools gleaming with the distinctive sheen of calcified crystal, in sharp color contrast with the grey-green hills around it.",
+    distinguish:
+      "Both Pamukkale's travertine terraces and Cappadocia's tuff landscape relate to regional volcanic-geothermal activity, but Pamukkale is a positive landform built up by ongoing calcium-carbonate deposition from hot springs, while Cappadocia is a negative, erosional landform carved from volcanic ash rock.",
+    concept:
+      "Pamukkale's stepped travertine terraces are a textbook case for studying the geological process by which hot springs rising along a fault deposit calcium carbonate to build a surface travertine formation; large-scale examples of this kind are rare worldwide.",
+    history:
+      "From the 2nd century BCE, the Greco-Roman city of Hierapolis was built beside the springs atop the terrace, its people believing the thermal waters had healing and sacred properties; Pamukkale was inscribed as a UNESCO World Heritage Site alongside Hierapolis in 1988.",
+  },
+  "cappadocia-fairy-chimneys": {
+    seeing:
+      "Cappadocia is a volcanic-ash landscape in Central Anatolia renowned for its 'fairy chimney' rock pillars, encompassing Göreme National Park between Nevşehir, Ürgüp and Avanos, inscribed as a UNESCO World Heritage Site in 1985.",
+    formation:
+      "From the Miocene to Pliocene (roughly 10 to 3 million years ago), repeated eruptions of volcanoes including Erciyes and Hasan deposited thick layers of ash that consolidated into soft tuff, locally interbedded with harder basalt or andesite caprock; subsequent tectonic uplift exposed these layers to erosion, and since the soft tuff weathers faster than the resistant caprock, tall cone-shaped pillars capped with harder boulders were gradually sculpted.",
+    observation:
+      "From the air, Cappadocia's surface is covered with densely packed conical rock pillars and honeycombed cave dwellings, interwoven with pale tan, pink and white rock layers; the rock-cut settlements and underground-city entrances around Göreme are clearly visible, forming a highly distinctive eroded landscape.",
+    distinguish:
+      "Both Cappadocia's fairy chimneys and Pamukkale's travertine terraces relate to the region's geothermal-volcanic activity, but Cappadocia is a negative, erosional landform of conical pillars carved from volcanic ash rock, while Pamukkale is a positive terrace formation built up by hot-spring calcium-carbonate deposition.",
+    concept:
+      "With an erosion rate of about 2 to 3 cm per 1,000 years, the fairy chimneys are a textbook field sample for studying how differential weathering of soft and hard rock layers — rapid erosion of soft tuff protected in places by resistant caprock — sculpts conical pillars.",
+    history:
+      "Cappadocia was historically a refuge where Byzantine-era Christians carved underground cities and rock-cut churches; the Göreme area preserves numerous rock-cut monasteries and frescoes, and today a sunrise hot-air balloon flight over this pillar landscape is the region's signature visitor experience.",
+  },
+  "ihlara-valley": {
+    seeing:
+      "Ihlara Valley, in southwestern Cappadocia, is a deeply incised canyon about 15 km long and up to 150 m deep, carved by the Melendiz River over thousands of years through volcanic rock.",
+    formation:
+      "The canyon was cut by the roughly 60-km-long Melendiz River, which rises on Melendiz Mountain and has spent thousands of years eroding the soft volcanic rock deposited by the eruption of Mount Hasan; the river ultimately flows into Lake Tuz.",
+    observation:
+      "From the air, Ihlara Valley appears as a winding, deeply cut green corridor; the river at its base and the dense vegetation along its banks form a sharp contrast in color and relief with the dry, open plateau surrounding it.",
+    distinguish:
+      "Both Ihlara and Saklıkent are deeply cut canyons in Turkey, but Ihlara is carved through volcanic rock, has a lushly vegetated floor, and preserves numerous rock-cut churches, while Saklıkent cuts through limestone and is known for its narrow cliffs and fast-flowing water.",
+    concept:
+      "Ihlara Valley is a sample for studying how a river's long-term erosion of soft volcanic rock produces a deeply incised canyon; its roughly 50 Byzantine rock-cut churches also make it an important site for studying early Christian rock-hewn settlement patterns.",
+    history:
+      "The valley preserves about 50 Byzantine-era rock-cut churches carved into its cliffs, historically a place of refuge and retreat for monks and Christians, and an important witness to Cappadocia's early Christian history.",
+  },
+  "saklikent-gorge": {
+    seeing:
+      "Saklıkent Gorge, near Fethiye in southwestern Turkey, is about 300 m deep and 18 km long, one of Turkey's deepest gorges; 'Saklıkent' means 'hidden city' in Turkish.",
+    formation:
+      "The gorge formed as continued uplift of the Taurus Mountains drove crustal movement while a river steadily eroded the comparatively soft limestone; at its narrowest it is only about 4 to 5 m wide, with near-vertical cliff walls.",
+    observation:
+      "From the air, Saklıkent Gorge appears as a narrow fissure deeply embedded in the Taurus mountain terrain, its swift snowmelt-fed torrent at the base contrasting sharply in light and relief with the steep, pale grey cliff walls on either side.",
+    distinguish:
+      "Both Saklıkent and Ihlara are deeply cut canyons in Turkey, but Saklıkent cuts through Taurus limestone and is deeper and narrower, while Ihlara cuts through Cappadocian volcanic rock and has a more open, gentle valley floor.",
+    concept:
+      "The narrow, near-vertical cliff form of Saklıkent Gorge is a sample for studying how, in limestone terrain, a river's downcutting erosion rate outpacing lateral wall collapse produces a deep, narrow canyon.",
+    history:
+      "Saklıkent National Park was established in 1996; the gorge historically earned its name 'hidden city' from its rugged, hard-to-reach terrain, and today it is a major nature-adventure destination near Fethiye.",
+  },
+  "bosphorus-strait": {
+    seeing:
+      "The Bosphorus is the natural strait connecting the Black Sea and the Sea of Marmara, about 31 km long, 730 to 3,300 m wide, and up to about 110 m deep, with the city of Istanbul built astride both its shores.",
+    formation:
+      "Geologically the site was a river valley during the Tertiary; rising sea levels at the end of the Tertiary flooded the valley, gradually forming today's strait linking the two seas.",
+    observation:
+      "From the air, the Bosphorus appears as a winding, narrow waterway, its banks densely built up with Istanbul's cityscape and spanned by bridges — a clearly visible natural boundary between the continents of Asia and Europe.",
+    distinguish:
+      "Both the Bosphorus and the Dardanelles in western Turkey are key straits linking the Black Sea, the Sea of Marmara and the Aegean, but the Bosphorus is shorter and narrower and runs directly through a major city, while the Dardanelles is longer with less urbanized shores.",
+    concept:
+      "The Bosphorus is one of the traditional geographic boundaries between Asia and Europe and the Black Sea's only maritime outlet to the Mediterranean and the wider ocean, making it a classic sample for studying the relationship between strait landforms and shipping strategy.",
+    history:
+      "Istanbul, on both banks of the strait, was successively the capital of the Byzantine and Ottoman empires; the strait has long been a strategic route linking Eurasian trade and military movement, and today it is one of the world's busiest shipping passages.",
+  },
+  "aegean-coast-turkey": {
+    seeing:
+      "Turkey's Aegean coast, running from the southern mouth of the Dardanelles to the Bodrum Peninsula, is a deeply indented, jagged coastline of interlocking peninsulas, bays and offshore islands, and an important tourism and port zone for Turkey.",
+    formation:
+      "The coastal landform is a drowned coast produced by crustal extension and block subsidence during neotectonic activity; former valleys and ridges were submerged as sea levels rose, becoming today's bays and peninsulas, shaping the intricately indented shoreline.",
+    observation:
+      "From the air, Turkey's Aegean coast alternates between bays of varying depth and protruding peninsulas; around the Bodrum Peninsula the shoreline is especially fragmented, with turquoise water contrasting against whitewashed coastal towns.",
+    distinguish:
+      "The Aegean and Lycian coasts are both in southwestern Turkey, but the Aegean coast has deeper bays and a more fragmented peninsula pattern (a block-subsidence coast), while the Lycian coast is dominated by the western Taurus Mountains descending directly to the sea.",
+    concept:
+      "The intricately fragmented Aegean shoreline is a classic sample for studying how crustal extension and block faulting produce a drowned coast, turning former valleys into bays.",
+    history:
+      "The Aegean coast was historically an important cradle of ancient Greek Ionian civilization, with numerous Greco-Roman city-state ruins along its shores; today towns such as Bodrum form the core of Turkey's Aegean tourism region.",
+  },
+  "lycian-coast": {
+    seeing:
+      "The Lycian Coast (Turquoise Coast), along the Teke Peninsula in southwestern Turkey, is a Mediterranean shoreline named for its clear, brilliant blue waters, formed where the western Taurus Mountains meet the sea directly.",
+    formation:
+      "The coastal landform results from the western Taurus range extending directly into the sea; steep mountain uplift combined with sea-level change has shaped today's coastline of headlands, deep bays and cliffs.",
+    observation:
+      "From the air, the Lycian Coast shows a steep profile where mountain and sea meet directly, with deep-blue bays set into green mountainsides; towns such as Kaş and Kalkan cluster along the edges of these bays.",
+    distinguish:
+      "Both the Lycian and Aegean coasts are important southwestern Turkish coastlines, but the Lycian Coast is a high-mountain shoreline where mountains descend directly to the sea with greater water depth, while the Aegean coast is dominated by a fragmented pattern of peninsulas and bays formed by block subsidence.",
+    concept:
+      "The Lycian Coast's landform, where a folded mountain range meets the shoreline directly, is a sample for studying this coastal landform type, and its deep, steep waters make it an ideal setting for sailing and diving.",
+    history:
+      "Historically the territory of ancient Lycia, the coast is dense with ancient cities, harbors and tombs over 2,000 years old; today towns such as Kaş and Kalkan are representative destinations of Turkey's Mediterranean tourism.",
+  },
+  "black-sea-coast-turkey": {
+    seeing:
+      "Turkey's Black Sea coast is a narrow coastal strip where the Pontic Mountains rise abruptly right at the shoreline; the coastline is relatively straight with few large bays, and the region is one of Turkey's wettest.",
+    formation:
+      "The coastal landform results from the Pontic Mountains rising directly against the shore, lacking the drowned-bay terrain seen on the Aegean coast; the shore is mostly a narrow coastal strip transitioning directly into steep mountain slopes.",
+    observation:
+      "From the air, Turkey's Black Sea coast appears as a narrow strip with mountains hugging the shoreline; the dense, dark-green forest on the windward slope contrasts sharply with the deep blue sea, forming a distinct vertical zonation.",
+    distinguish:
+      "Compared with the Aegean and Lycian coasts, the Black Sea coast has a straighter shoreline with fewer deep bays and offshore islands, but notably higher rainfall and forest cover, making it Turkey's most humid coastal region.",
+    concept:
+      "Because the Pontic Mountains block moist airflow, the Black Sea coast shows a pronounced windward-slope rainfall effect, making it a classic sample for studying how mountains influence coastal climate zonation.",
+    history:
+      "The coastal city of Trabzon was historically an important port on a Silk Road branch and the capital of the Byzantine-era Empire of Trebizond; the mountains preserve historic sites such as the Sümela Monastery, built into a cliff face.",
+  },
+  "meke-crater-lake": {
+    seeing:
+      "Lake Meke, in the Karapınar volcanic field of Konya Province, is a nested double volcanic lake, roughly elliptical at about 1,800 by 1,600 m, resembling a Turkish blue-eye amulet.",
+    formation:
+      "An initial caldera lake formed about 4 million years ago from a volcanic eruption; about 9,000 years ago, rising magma meeting groundwater caused a steam explosion that formed a nested cinder cone with its own inner maar-crater lake within the original lake, producing today's lake-within-a-lake structure.",
+    observation:
+      "From the air, Lake Meke shows a distinctive 'lake-within-a-lake' pattern, an outer ring of water enclosing a small inner volcanic cone and lake, standing out sharply against the flat surrounding terrain of the Karapınar volcanic field.",
+    distinguish:
+      "Both Lake Meke and Lake Nemrut are volcanically formed lakes, but Lake Meke is far smaller and has a rare nested double structure, while Lake Nemrut is a single large caldera lake.",
+    concept:
+      "Lake Meke's nested double structure is a classic sample for studying how a single volcanic system, through different eruption styles at different stages (an earlier large-scale caldera collapse followed by a smaller steam-explosion maar), produces compound landforms.",
+    history:
+      "Lake Meke is the signature landmark of the Karapınar volcanic field, which was active at various points during the Quaternary; today it is an important geological tourism destination in Central Anatolia.",
+  },
+  "euphrates-headwaters": {
+    seeing:
+      "The Euphrates, the longest river in West Asia, forms from the confluence of the western source Karasu River (about 450 km, rising in Erzurum Province) and the eastern source Murat River (about 722 km, rising north of Mount Ararat), meeting about 10 km north of Keban.",
+    formation:
+      "Both source rivers rise in the mountainous terrain of the East Anatolian Plateau, eroding long mountain valleys before joining near Keban; after leaving Turkey the river continues southeast into the Mesopotamian plain.",
+    observation:
+      "From the air, the Euphrates headwaters show two mountain rivers converging from east and west, their channels winding through the folded highlands of the East Anatolian Plateau before widening noticeably after the confluence.",
+    distinguish:
+      "Both the Euphrates and the Tigris rise on Turkey's eastern plateau, but the Euphrates forms from two converging sources and has a longer course, while the Tigris rises from a single source at Lake Hazar and is comparatively shorter.",
+    concept:
+      "The dual-source confluence pattern of the Euphrates headwaters is an important sample for studying how upland mountain river systems progressively converge to form a major river's main stem.",
+    history:
+      "The Euphrates historically nurtured Mesopotamian civilization, one of the earliest cradles of agricultural civilization in human history; the East Anatolian Plateau, where it rises, has historically been a traditional route connecting Anatolia and the Tigris-Euphrates basin.",
+  },
+  "tigris-headwaters": {
+    seeing:
+      "The Tigris, one of the major rivers of West Asia, is generally recognized as originating at Lake Hazar, a rift lake in the Taurus Mountains at about 1,150 m elevation, roughly 22 km southeast of Elazığ.",
+    formation:
+      "Lake Hazar is a tectonic rift lake within the Taurus Mountains, fed mainly by snowmelt from the surrounding high peaks; the river flows out of the lake and runs about 400 km southeast through Turkey, gradually forming the main stem of the Tigris.",
+    observation:
+      "From the air, Lake Hazar appears as a narrow blue body of water set within the Taurus terrain, its outflow channel winding southeast through the mountains, forming a clear color boundary against the grey-brown mountains around it.",
+    distinguish:
+      "Both the Tigris and Euphrates headwaters lie on Turkey's eastern plateau, but the Tigris is generally recognized as rising from the single rift lake of Hazar, while the Euphrates forms from two independent converging sources.",
+    concept:
+      "As the generally recognized source of the Tigris, Lake Hazar is a classic sample for studying the landform-hydrology relationship of how a tectonic rift lake becomes the headwater of a major river system.",
+    history:
+      "The Tigris and Euphrates together nurtured Mesopotamian civilization, providing the water base for irrigated agriculture and early urban civilization in the Tigris-Euphrates basin; the upland region where they rise has historically been a traditional route linking Anatolia and Mesopotamia.",
+  },
+  "kizilirmak-river": {
+    seeing:
+      "The Kızılırmak (Red River) is Turkey's longest river, about 1,355 km long, historically known as the Halys, named for the red sediment it carries; it enters the Black Sea near the coastal city of Bafra through a broad delta.",
+    formation:
+      "The river rises near Kızıldağ in Sivas Province at about 2,000 m elevation, flowing through the mountains and plateau of several Central Anatolian provinces, carrying red sediment eroded along its course and depositing it into a broad delta at its mouth.",
+    observation:
+      "From the air, the Kızılırmak forms a winding, reddish-brown channel across the Central Anatolian Plateau, forming a notable bend near Avanos in Cappadocia, its green riverside vegetation belt forming a clear boundary against the dry plateau around it.",
+    distinguish:
+      "Unlike the Euphrates and Tigris, the Kızılırmak rises, flows and reaches the sea entirely within Turkey, and it is the longest river within Turkish territory, whereas the other two are international rivers flowing across borders into Mesopotamia.",
+    concept:
+      "Named for the red sediment it carries, the Kızılırmak is a classic sample for studying the complete hydro-geomorphic process by which a river erodes red sedimentary rock along its course and transports the material long distances to build a delta at its mouth.",
+    history:
+      "The Kızılırmak has historically served as an important agricultural and cultural dividing line in Anatolia, with numerous ancient cities along its banks; Avanos, wrapped by the river's bend in Cappadocia, remains a center of local pottery tradition today.",
+  },
+  "salda-lake": {
+    seeing:
+      "Lake Salda, in Burdur Province in southwestern Turkey, is a crater-formed lake known for its clear turquoise water and brilliant white shoreline deposits of hydromagnesite, often called 'Turkey's Maldives.'",
+    formation:
+      "The lake formed from ancient volcanic activity that left a water-filled crater; its white shoreline deposits are thought to have eroded from 'microbialites' formed with the help of microbes, giving the lake its distinctive appearance.",
+    observation:
+      "From the air, Lake Salda's water shows a rare turquoise hue, with white sandy beaches and shallows around the shoreline standing out vividly against the grey-brown mountains beyond, creating a striking color contrast.",
+    distinguish:
+      "Both Lake Salda and Lake Nemrut are volcanically formed lakes, but Salda is known for its distinctive white microbialite deposits and turquoise water, while Nemrut is characterized by its huge caldera landform.",
+    concept:
+      "The hydromagnesite deposits on Lake Salda's shore closely match the mineral composition of the ancient lakebed deposits NASA's Perseverance rover has studied at Jezero Crater on Mars, making Salda one of the few recognized terrestrial analogs for Martian paleolake deposits and a reference for studying ancient Martian lake environments.",
+    history:
+      "Between 2020 and 2021, a NASA team conducted comparative geological research here to inform the search for signs of ancient life during the Perseverance Mars mission; today Lake Salda is also an important ecotourism destination in Turkey.",
+  },
+  "cukurova-plain": {
+    seeing:
+      "The Çukurova Plain is the largest alluvial plain on Turkey's eastern Mediterranean coast, built up over a long period by sediment carried by the Seyhan, Ceyhan and Berdan rivers, forming the Mediterranean region's second-largest delta-plain system.",
+    formation:
+      "The plain was built up by three rivers carrying sediment eroded from the upstream mountains and depositing it near their mouths; it is enclosed by the Misis Mountains to the east and the Taurus Mountains to the north and west, forming a relatively closed alluvial-plain unit.",
+    observation:
+      "From the air, the Çukurova Plain shows extensive, orderly farmland with a dense network of rivers and crisscrossing irrigation channels, forming a sharp plain-versus-mountain contrast against the ranges enclosing it.",
+    distinguish:
+      "Both the Çukurova Plain and the Konya Basin are important agricultural plains in Turkey, but Çukurova is a coastal alluvial-delta plain shaped by exorheic rivers, while the Konya Basin is an inland, closed interior-drainage basin.",
+    concept:
+      "The Çukurova Plain is a classic sample for studying a compound alluvial-delta landform shaped by the combined action of multiple rivers, and a representative case in Turkish agricultural geography contrasting coastal plains with the interior plateau.",
+    history:
+      "The plain has long been an important agricultural region in Anatolia, historically the core territory of ancient Cilicia; today its main city, Adana, is one of Turkey's important agricultural and industrial centers.",
+  },
+  "lake-beysehir": {
+    seeing:
+      "Lake Beyşehir is Turkey's largest freshwater lake and also the largest freshwater lake in the Mediterranean basin, covering about 650 km², roughly 45 km long and 20 km wide, dotted with 32 islands of varying size.",
+    formation:
+      "The lake sits at the southwestern edge of the Konya Basin, fed mainly by streams from the Sultan and Anamas mountains, which have accumulated over a long period to form today's shallow freshwater lake.",
+    observation:
+      "From the air, Lake Beyşehir shows an expansive, pale-blue body of water dotted with numerous scattered islands, together with the surrounding mountains and plains forming a richly layered lake-district landscape.",
+    distinguish:
+      "Both Lake Beyşehir and Lake Tuz lie within the Konya Basin, but Beyşehir is a perennially water-filled freshwater lake with rich biodiversity, while Lake Tuz is a seasonally dry, highly saline salt lake.",
+    concept:
+      "As Turkey's largest freshwater lake, Lake Beyşehir is an important sample for studying the ecosystem of a mountain-stream-fed freshwater lake and its role as a bird habitat.",
+    history:
+      "Lake Beyşehir National Park was established in 1993; the lake has historically been an important water source for local fishing and irrigated agriculture, and today it is a major bird habitat and ecotourism destination.",
+  },
+  uludag: {
+    seeing:
+      "Uludağ is the highest peak in western Anatolia at 2,543 m, immediately south of the city of Bursa; historically known as Mysian Olympus, it is Turkey's most-visited national park and a premier ski destination.",
+    formation:
+      "Uludağ is a granite-and-gneiss mountain block uplifted along a fault; its summit developed glaciers during the last ice age, and nine glacial lakes (mostly dry in summer) survive at the top today.",
+    observation:
+      "From the air, Uludağ rises as a massive fault-block mountain over the Bursa plain, its summit covered in forest and alpine meadow, with snow-covered ski runs clearly visible in winter against the sharp relief drop to the city plain below.",
+    distinguish:
+      "Unlike volcanic Anatolian high peaks such as Mount Erciyes or Ararat, Uludağ is a non-volcanic fault-block massif, and the only high peak in western Anatolia to have developed glacial landforms.",
+    concept:
+      "The glacial lakes preserved atop Uludağ are an important geological sample for studying the extent of last-glacial mountain glaciation in western Anatolia.",
+    history:
+      "Known historically as Mysian Olympus, the mountain was an important center of Byzantine-era monasteries; the national park was established in 1961, and today it is Turkey's most-visited national park.",
+  },
+  "mount-suphan": {
+    seeing:
+      "Mount Süphan is Turkey's third-highest peak and second-highest volcano at 4,058 m, located in Bitlis Province north of Lake Van; a basin about 1.5 km wide separates its eastern and western summits.",
+    formation:
+      "Mount Süphan is a stratovolcano built up from repeated eruptions of lava and pyroclastic material; two small lakes sit in the summit basin, formed when the terrain subsided and filled with water in the volcano's later activity.",
+    observation:
+      "From the air, Mount Süphan presents a complete conical volcanic profile, mirroring the Nemrut volcano on Lake Van's southern shore to form the skeletal volcanic landforms on the lake's north and south sides.",
+    distinguish:
+      "Both Mount Süphan and the Nemrut volcano are part of the Lake Van volcanic system, but Süphan is higher and more massive with small lakes in a summit basin, while Nemrut has a much larger caldera lake.",
+    concept:
+      "Standing on opposite shores of Lake Van, Mount Süphan and the Nemrut volcano together form a classic sample for studying how multiple volcanoes within a single tectonic region jointly shape a regional lake-drainage pattern.",
+    history:
+      "The area around Mount Süphan was historically part of the territory of the Kingdom of Urartu in the Lake Van basin; today it is an important mountaineering and geological survey destination in eastern Turkey.",
+  },
 };
