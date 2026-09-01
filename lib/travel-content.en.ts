@@ -5318,4 +5318,159 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "The rice fields are vivid green in May–June and golden-ripe in September–October, the best seasons for photographing the karst rice-field scenery; plan a full day for boating and hiking.",
   },
+  // ============ Mongolia ============
+  "mongolia-overview": {
+    identity:
+      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.28 million; its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
+    layout:
+      "The country divides roughly into: the Centre (Ulaanbaatar and the Kharkhorin/Orkhon valley, the political and cultural core), the North (Erdenet, Darkhan, Mörön — forest and lake country), the West (Khovd, Ölgii — the Mongol Altai and the Kazakh community), the South Gobi (Dalanzadgad — the Gobi desert belt), and the East (Choibalsan — the Daurian steppe belt).",
+    gettingAround:
+      "Domestic flights are hubbed at Chinggis Khaan International Airport in Ulaanbaatar, reaching Khovd, Ölgii, Mörön, Dalanzadgad, Choibalsan and other destinations, some routes seasonal; the domestic rail backbone is the Trans-Mongolian Railway (Ulaanbaatar–Sükhbaatar–Russia and Ulaanbaatar–Zamiin-Üüd–China); inter-provincial travel otherwise relies heavily on roads, some of which are in limited condition. Visa or visa-free arrangements for short-term visitors vary by nationality — check Mongolia's official current announcements.",
+    culture:
+      "The official language is Mongolian, written in Cyrillic; English has some presence in Ulaanbaatar and in tourism. Mongolians place strong value on nomadic tradition and hospitality; visiting a ger (traditional yurt) as a guest comes with its own customs (such as not stepping on the threshold, and receiving objects with both hands). Tipping is not a mandatory tradition, but leaving 5–10% in city restaurants is increasingly common. The voltage is 220V, with plugs mostly two-round-pin European style (types C/E/F).",
+    seeAndDo:
+      "Natural landforms: Gobi Gurvansaikhan National Park (Khongoryn Els dunes, Yolyn Am gorge), Lake Khövsgöl, the Orkhon Waterfall, the Dariganga volcanic field. History and culture: the Orkhon Valley Cultural Landscape at Kharkhorin, Erdene Zuu Monastery, the sacred mountain of Burkhan Khaldun. Steppe life: Przewalski's horses at Khustain Nuruu National Park, staying with a nomadic herder family in a ger, the Naadam festival (every July).",
+    whenAndTips:
+      "June–August has the most pleasant climate and is peak tourist season, coinciding with the Naadam festival; winter (December–February) is long and severely cold, with Ulaanbaatar often ranked among the coldest capitals in the world — dress accordingly. Given the vast distances involved, plan cross-region itineraries around domestic flights or allow ample time for road travel.",
+  },
+  ulaanbaatar: {
+    identity:
+      "Ulaanbaatar is the capital of Mongolia, with a population of about 1.725 million — nearly half the country's total — set in a highland valley on the Tuul River, and the country's political, economic and cultural centre.",
+    layout:
+      "The city centre is anchored by Sükhbaatar Square (also called Chinggis Square); the area around Gandantegchinlen Monastery preserves traditional Tibetan Buddhist architecture, while large ger districts of traditional Mongolian yurts spread across the city's outskirts.",
+    gettingAround:
+      "Chinggis Khaan International Airport opened in 2021 about 52 km south of the city centre; an airport bus takes about an hour into town. Around the city, buses and taxis are the main options, and rush-hour traffic congestion is common.",
+    culture:
+      "The official language is Mongolian; the average annual temperature is about -0.8°C, making it one of the coldest capital cities in the world. The city blends Soviet-era architecture, Tibetan Buddhist monasteries and modern high-rises. Tipping is not mandatory, but leaving 5–10% at city restaurants is fairly common.",
+    seeAndDo:
+      "Sükhbaatar Square (Chinggis Square); Gandantegchinlen Monastery; the National Museum of Mongolia; the Chinggis Khaan equestrian statue (on the outskirts); the Bogd Khaan Palace Museum.",
+    whenAndTips:
+      "June–August has the most pleasant climate; winter is long and severely cold, with January averages dropping to below -20°C, so dress warmly and build in indoor activities.",
+  },
+  erdenet: {
+    identity:
+      "Erdenet is Mongolia's second-largest city, with a population of about 90,000, in Orkhon Province in the north; it grew into an important industrial city around a large copper-molybdenum mine.",
+    layout:
+      "The city was built around the mining and ore-processing facilities of the Erdenet Mining Corporation, its layout carrying the typical features of a Soviet-era planned industrial town, with residential and factory areas kept largely separate.",
+    gettingAround:
+      "Erdenet Airport (ERT) serves the city, though flight frequency should be checked against current schedules; the city can also be reached by road or a branch of the Mongolian railway from Ulaanbaatar, a journey of several hours.",
+    culture:
+      "The official language is Mongolian. Erdenet was established in the 1970s as a joint Mongolian-Soviet copper-mining venture, and its population has a relatively high proportion of technical workers, representative of Mongolia's industrial-city culture.",
+    seeAndDo:
+      "The Erdenet Mining Corporation viewpoint; the city's central square; the natural scenery of the northern foothills of the Khangai Mountains nearby.",
+    whenAndTips:
+      "June–August has the most pleasant climate; as an industrial city it sees relatively few tourists, making it a good brief stop for travellers interested in Mongolia's modern industrial development.",
+  },
+  darkhan: {
+    identity:
+      "Darkhan is Mongolia's third-largest city, with a population of about 90,000, in Selenge Province in the north, and an important industrial and transport hub on the Trans-Mongolian Railway.",
+    layout:
+      "The city is divided into northern and southern districts linked by an industrial zone in between, a classic example of a new industrial town planned along Soviet lines during Mongolia's planned-economy era.",
+    gettingAround:
+      "There is no stable scheduled passenger air service locally; the city is mainly reached from Ulaanbaatar via the Trans-Mongolian Railway (the Ulaanbaatar–Sükhbaatar line) or by road, a journey of about 3 to 4 hours.",
+    culture:
+      "The official language is Mongolian. Darkhan was founded in 1961 as Mongolia's second city built under unified Soviet-style planning during the socialist era; its name means \"blacksmith,\" symbolizing its industrial character.",
+    seeAndDo:
+      "Darkhan's central square; the surrounding steppe and river-valley scenery; views along the Trans-Mongolian Railway route.",
+    whenAndTips:
+      "June–August has the most pleasant climate; as a railway-line city, it makes a convenient stopover for itineraries between Ulaanbaatar and the northern Selenge/Russian border direction.",
+  },
+  kharkhorin: {
+    identity:
+      "Kharkhorin is the site of Karakorum, the 13th–14th century capital of the Mongol Empire, set in the Orkhon Valley, and today the core gateway for exploring the Orkhon Valley Cultural Landscape.",
+    layout:
+      "The modern town of Kharkhorin sits alongside the ancient city ruins and Erdene Zuu Monastery; most of the ruined site remains to be archaeologically excavated, with traces of walls and building foundations visible at the surface.",
+    gettingAround:
+      "Kharkhorin's local airport has virtually no passenger-handling facilities; the town is usually reached by road from Ulaanbaatar, a journey of about 6 to 7 hours (roughly 370 km).",
+    culture:
+      "The official language is Mongolian. Karakorum was founded as the Mongol Empire's capital in 1235 by Ögedei Khan, son of Genghis Khan; after Erdene Zuu Monastery was built in the 16th century, much of the stone from the ancient city ruins was reused in the monastery's construction.",
+    seeAndDo:
+      "Erdene Zuu Monastery (Mongolia's first Tibetan Buddhist monastery, 16th century); the Karakorum ancient city museum; the turtle-shaped stone monument; the pastoral scenery of the Orkhon Valley.",
+    whenAndTips:
+      "June–August has the most pleasant climate; allow ample time to explore the nomadic pastoral life around the Orkhon Valley Cultural Landscape rather than making only a brief stop at the ancient city ruins.",
+  },
+  moron: {
+    identity:
+      "Mörön is the capital of Khövsgöl Province in northern Mongolia, with a population of about 40,000, and the core gateway for exploring Lake Khövsgöl.",
+    layout:
+      "The city sits on the flat valley floor of the Delgermörön River, ringed by forested mountains, and is connected to Lake Khövsgöl by road.",
+    gettingAround:
+      "Mörön Airport (MXV) has scheduled flights to and from Ulaanbaatar; the drive from central Mörön to Khatgal village on the southern shore of Lake Khövsgöl takes about 1 to 1.5 hours.",
+    culture:
+      "The official language is Mongolian; local Tuvan and Darkhad nomadic communities retain traditional fishing and herding ways of life.",
+    seeAndDo:
+      "Lake Khövsgöl (Mongolia's largest freshwater lake); Khövsgöl National Park; traditional nomadic life at Khatgal village; reindeer-herder communities (seasonally accessible).",
+    whenAndTips:
+      "June–August has the most pleasant climate and is the best season for exploring Lake Khövsgöl; the lake freezes over in winter, and in some years ice activities are possible, but a professional guide is needed to arrange them.",
+  },
+  dalanzadgad: {
+    identity:
+      "Dalanzadgad is the capital of South Gobi Province in southern Mongolia, with a population of about 20,000, and the core gateway for exploring Gobi Gurvansaikhan National Park.",
+    layout:
+      "The city sits at the edge of the Gobi desert at the northern foot of the Gurvan Saikhan Mountains, and serves as the administrative and supply centre for the South Gobi region.",
+    gettingAround:
+      "Dalanzadgad Airport (DLZ) has scheduled flights to and from Ulaanbaatar; reaching Khongoryn Els, Yolyn Am, Bayanzag and other sites from the city requires driving or hiring a car, journeys of roughly 1 to 3 hours each.",
+    culture:
+      "The official language is Mongolian. Dalanzadgad and the surrounding Gobi region retain a traditional camel-herding culture, with the Bactrian camel an important part of local nomadic life.",
+    seeAndDo:
+      "Gobi Gurvansaikhan National Park (Khongoryn Els singing dunes, Yolyn Am ice gorge); the Bayanzag Flaming Cliffs; hiking in the Gurvan Saikhan Mountains.",
+    whenAndTips:
+      "May–June and September are the most comfortable months; daytime temperatures in the Gobi can exceed 35°C in July–August. Winters are severely cold and some roads to sights become limited, so avoid these extreme seasons.",
+  },
+  khovd: {
+    identity:
+      "Khovd is the capital of Khovd Province in western Mongolia, with a population of about 31,000, set on the Khovd River, and an important gateway for exploring the Mongol Altai Mountains and the multi-ethnic communities of western Mongolia.",
+    layout:
+      "The city extends along both banks of the Khovd River, and has historically served as a traditional centre for the coexistence and trade of multiple ethnic groups (Mongols, Kazakhs, Tuvans and others) in western Mongolia.",
+    gettingAround:
+      "Khovd Airport (HVD) has scheduled flights to and from Ulaanbaatar; reaching the Tavan Bogd area of the Mongol Altai requires driving or hiring a car, journeys ranging from several hours to a full day.",
+    culture:
+      "The official language is Mongolian; the local population is ethnically diverse, with Dörvöd Mongols, Kazakhs and other groups long living side by side, and both Tibetan Buddhism and Islam practiced locally.",
+    seeAndDo:
+      "Khovd Provincial Museum; the surrounding steppe and river-valley scenery; hiking and horseback routes toward the Mongol Altai (a professional guide is recommended).",
+    whenAndTips:
+      "June–August has the most pleasant climate; as a multi-ethnic western region, consider timing a visit around local festivals (such as Kazakh traditional events).",
+  },
+  olgii: {
+    identity:
+      "Ölgii is the capital of Bayan-Ölgii Province, Mongolia's westernmost province, with a population of about 30,000; it is the main area of Mongolia's Kazakh community and the core gateway for exploring the Tavan Bogd massif.",
+    layout:
+      "The city sits in a river valley at the foot of the Mongol Altai, serving as the administrative and cultural centre of Bayan-Ölgii Province, where traditional Kazakh culture is well preserved.",
+    gettingAround:
+      "Ölgii International Airport (ULG) has seasonal scheduled flights to and from Ulaanbaatar from April to October (about twice a week); reaching the Tavan Bogd massif requires driving or hiring a car with a professional guide.",
+    culture:
+      "Bayan-Ölgii Province is the main home of Mongolia's Kazakh minority; the official language is Mongolian, and the local Kazakh community retains its own language, Islamic faith and the traditional art of golden eagle hunting.",
+    seeAndDo:
+      "The Tavan Bogd massif (Khüiten Peak, Mongol Altai glaciers); traditional golden eagle hunting demonstrations (the Golden Eagle Festival each October); a stay with a Kazakh nomadic herder family in a ger.",
+    whenAndTips:
+      "June–August is the best season for hiking the Tavan Bogd massif; the Golden Eagle Festival each October is the best time to see traditional Kazakh eagle-hunting culture, though temperatures have already turned cold by then, so dress warmly.",
+  },
+  choibalsan: {
+    identity:
+      "Choibalsan is the capital of Dornod Province in eastern Mongolia, with a population of about 39,000, set on the Kherlen River, and the core gateway for exploring the Daurian steppe of eastern Mongolia.",
+    layout:
+      "The city extends along both banks of the Kherlen River and is the largest city and regional administrative centre of Mongolia's eastern steppe belt.",
+    gettingAround:
+      "Choibalsan Airport (COQ) has scheduled flights to and from Ulaanbaatar; reaching the Mongol Daguur Strictly Protected Area and other eastern steppe sites requires driving or hiring a car.",
+    culture:
+      "The official language is Mongolian. Choibalsan is named after the Mongolian revolutionary leader Khorloogiin Choibalsan, and the city stands at the intersection of the eastern steppe's nomadic culture and Mongolia's 20th-century modernization history.",
+    seeAndDo:
+      "Scenery along the Kherlen River; the Mongol Daguur Strictly Protected Area (birdwatching, Mongolian gazelle migration); nomadic life on the surrounding eastern steppe.",
+    whenAndTips:
+      "June–August has the most pleasant climate and is also a good season for seeing the large-scale migration of Mongolian gazelles and bird activity; sites on the eastern steppe are widely scattered, so plan a route and guide in advance.",
+  },
+  tsetserleg: {
+    identity:
+      "Tsetserleg is the capital of Arkhangai Province in central Mongolia, with a population of about 17,000, set at the eastern foot of the Khangai Mountains, and the core gateway for exploring Khorgo-Terkhiin Tsagaan Nuur National Park.",
+    layout:
+      "The town is built into the valley terrain, with Tibetan Buddhist monastery architecture standing alongside a Soviet-era planned town layout.",
+    gettingAround:
+      "Tsetserleg Airport (TSZ) exists locally but passenger service is not currently reliable; the town is usually reached from Ulaanbaatar by road, a journey of about 6 hours (roughly 420 km).",
+    culture:
+      "The official language is Mongolian. Tsetserleg is a town where the traditional nomadic life of the Khangai region meets Tibetan Buddhist culture, with several traditional monastery sites preserved nearby.",
+    seeAndDo:
+      "Khorgo-Terkhiin Tsagaan Nuur National Park (the extinct Khorgo volcano, the lava-dammed lake); horseback routes across the surrounding Khangai steppe; local Tibetan Buddhist monasteries.",
+    whenAndTips:
+      "June–August has the most pleasant climate; consider using Tsetserleg as a stopover on a central Mongolia itinerary between the Orkhon Valley and Lake Khövsgöl, staying one to two days.",
+  },
 };
