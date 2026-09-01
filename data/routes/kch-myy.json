@@ -1,0 +1,16 @@
+{
+  "id": "kch-myy",
+  "name": "古晋 — 美里",
+  "nameEn": "Kuching — Miri",
+  "description": "婆罗洲海岸平原 · 尼亚洞穴",
+  "descriptionEn": "Bornean coastal plain · Niah Caves",
+  "depCountry": "malaysia",
+  "arrCountry": "malaysia",
+  "flight": { "airline": "婆罗洲航空", "airlineEn": "AirBorneo", "flightNo": "MY3021", "aircraft": "ATR 72-500", "depIata": "KCH", "arrIata": "MYY", "durationMin": 75 },
+  "cruiseHeight": 5500,
+  "waypoints": [
+    { "kind": "city", "id": "kch", "name": "古晋", "nameEn": "Kuching", "lat": 1.4847, "lon": 110.3467, "airport": true },
+    { "kind": "terrain", "terrainId": "niah-caves" },
+    { "kind": "city", "id": "myy", "name": "美里", "nameEn": "Miri", "lat": 4.3225, "lon": 113.9878, "airport": true }
+  ]
+}

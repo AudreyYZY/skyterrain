@@ -1,0 +1,16 @@
+{
+  "id": "kul-lgk",
+  "name": "吉隆坡 — 浮罗交怡",
+  "nameEn": "Kuala Lumpur — Langkawi",
+  "description": "马来半岛西海岸 · 浮罗交怡地质公园",
+  "descriptionEn": "Peninsula west coast · Langkawi Geopark",
+  "depCountry": "malaysia",
+  "arrCountry": "malaysia",
+  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK6306", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "LGK", "durationMin": 65 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
+    { "kind": "terrain", "terrainId": "langkawi-geopark" },
+    { "kind": "city", "id": "lgk", "name": "浮罗交怡", "nameEn": "Langkawi", "lat": 6.3297, "lon": 99.7286, "airport": true }
+  ]
+}

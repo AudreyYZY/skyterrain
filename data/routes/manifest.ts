@@ -223,6 +223,14 @@ import ubnUlg from "./ubn-ulg.json" with { type: "json" };
 import ubnMxv from "./ubn-mxv.json" with { type: "json" };
 import ubnDlz from "./ubn-dlz.json" with { type: "json" };
 import ubnCoq from "./ubn-coq.json" with { type: "json" };
+// 马来西亚
+import kulPen from "./kul-pen.json" with { type: "json" };
+import kulBki from "./kul-bki.json" with { type: "json" };
+import kulKch from "./kul-kch.json" with { type: "json" };
+import kulLgk from "./kul-lgk.json" with { type: "json" };
+import kulKbr from "./kul-kbr.json" with { type: "json" };
+import sdkBki from "./sdk-bki.json" with { type: "json" };
+import kchMyy from "./kch-myy.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -410,4 +418,11 @@ export const ALL_ROUTES: FlightRoute[] = [
   ubnMxv,
   ubnDlz,
   ubnCoq,
+  kulPen,
+  kulBki,
+  kulKch,
+  kulLgk,
+  kulKbr,
+  sdkBki,
+  kchMyy,
 ] as unknown as FlightRoute[];

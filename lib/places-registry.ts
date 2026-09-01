@@ -250,6 +250,12 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "mn-west": { zh: "西部", en: "Western Mongolia", order: 322 },
   "mn-gobi": { zh: "戈壁南部", en: "South Gobi", order: 323 },
   "mn-east": { zh: "东部", en: "Eastern Mongolia", order: 324 },
+  // 马来西亚
+  "my-central": { zh: "中部", en: "Central Malaysia", order: 330 },
+  "my-north": { zh: "北部", en: "Northern Peninsula", order: 331 },
+  "my-south": { zh: "南部", en: "Southern Peninsula", order: 332 },
+  "my-sabah": { zh: "沙巴", en: "Sabah", order: 333 },
+  "my-sarawak": { zh: "砂拉越", en: "Sarawak", order: 334 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -294,6 +300,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "poland", nameZh: "波兰", nameEn: "Poland" },
   { country: "vietnam", nameZh: "越南", nameEn: "Vietnam" },
   { country: "mongolia", nameZh: "蒙古", nameEn: "Mongolia" },
+  { country: "malaysia", nameZh: "马来西亚", nameEn: "Malaysia" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -2371,6 +2378,78 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "UBN", nameZh: "成吉思汗国际机场", nameEn: "Chinggis Khaan International", lon: 106.8161, lat: 47.6467 },
     source: "车车尔勒格市中心 47.4767,101.4544；本地设有车车尔勒格机场（TSZ）但客运航班暂不稳定，通常经乌兰巴托方向公路往返（约420km）：公开资料",
   },
+  {
+    id: "kuala-lumpur", nameZh: "吉隆坡", nameEn: "Kuala Lumpur", country: "malaysia", tier: "capital", zone: "my-central",
+    lon: 101.6869, lat: 3.1390,
+    airport: { iata: "KUL", nameZh: "吉隆坡国际机场", nameEn: "Kuala Lumpur International Airport", lon: 101.7099, lat: 2.7456 },
+    source: "吉隆坡市中心 3.1390,101.6869；KLIA机场（距市区约45km）：公开资料",
+  },
+  {
+    id: "george-town", nameZh: "乔治市", nameEn: "George Town", country: "malaysia", tier: "major", zone: "my-north",
+    lon: 100.3288, lat: 5.4141,
+    airport: { iata: "PEN", nameZh: "槟城国际机场", nameEn: "Penang International Airport", lon: 100.2769, lat: 5.2971 },
+    source: "乔治市中心 5.4141,100.3288；PEN机场（距市区约18km）：公开资料",
+  },
+  {
+    id: "johor-bahru", nameZh: "新山", nameEn: "Johor Bahru", country: "malaysia", tier: "major", zone: "my-south",
+    lon: 103.7414, lat: 1.4927,
+    airport: { iata: "JHB", nameZh: "士乃国际机场", nameEn: "Senai International Airport", lon: 103.6697, lat: 1.6414 },
+    source: "新山市中心 1.4927,103.7414；JHB机场（距市区约21km）：公开资料",
+  },
+  {
+    id: "malacca-city", nameZh: "马六甲市", nameEn: "Malacca City", country: "malaysia", tier: "major", zone: "my-south",
+    lon: 102.2501, lat: 2.1896,
+    airport: { iata: "MKZ", nameZh: "马六甲机场", nameEn: "Malacca Airport", lon: 102.2539, lat: 2.2633 },
+    source: "马六甲市中心 2.1896,102.2501；MKZ机场目前无国内定期航班，仅有少量国际航线（如新加坡），主要客运经吉隆坡方向公路往返（约145km）：公开资料",
+  },
+  {
+    id: "ipoh", nameZh: "怡保", nameEn: "Ipoh", country: "malaysia", tier: "major", zone: "my-north",
+    lon: 101.0901, lat: 4.5975,
+    airport: { iata: "IPH", nameZh: "苏丹阿兹兰沙机场", nameEn: "Sultan Azlan Shah Airport", lon: 101.0921, lat: 4.5679 },
+    source: "怡保市中心 4.5975,101.0901；IPH机场（距市区约15km）：公开资料",
+  },
+  {
+    id: "kota-kinabalu", nameZh: "亚庇", nameEn: "Kota Kinabalu", country: "malaysia", tier: "major", zone: "my-sabah",
+    lon: 116.0735, lat: 5.9804,
+    airport: { iata: "BKI", nameZh: "亚庇国际机场", nameEn: "Kota Kinabalu International Airport", lon: 116.0517, lat: 5.9372 },
+    source: "亚庇市中心 5.9804,116.0735；BKI机场（距市区约7km）：公开资料",
+  },
+  {
+    id: "kuching", nameZh: "古晋", nameEn: "Kuching", country: "malaysia", tier: "major", zone: "my-sarawak",
+    lon: 110.3593, lat: 1.5535,
+    airport: { iata: "KCH", nameZh: "古晋国际机场", nameEn: "Kuching International Airport", lon: 110.3467, lat: 1.4847 },
+    source: "古晋市中心 1.5535,110.3593；KCH机场（距市区约11km）：公开资料",
+  },
+  {
+    id: "kota-bharu", nameZh: "哥打巴鲁", nameEn: "Kota Bharu", country: "malaysia", tier: "notable", zone: "my-north",
+    lon: 102.2381, lat: 6.1254,
+    airport: { iata: "KBR", nameZh: "苏丹依斯迈布特拉机场", nameEn: "Sultan Ismail Petra Airport", lon: 102.2922, lat: 6.1669 },
+    source: "哥打巴鲁市中心 6.1254,102.2381；KBR机场（距市区约8km）：公开资料",
+  },
+  {
+    id: "kuantan", nameZh: "关丹", nameEn: "Kuantan", country: "malaysia", tier: "notable", zone: "my-south",
+    lon: 103.3260, lat: 3.8077,
+    airport: { iata: "KUA", nameZh: "苏丹哈芝阿末沙机场", nameEn: "Sultan Ahmad Shah Airport", lon: 103.2081, lat: 3.7758 },
+    source: "关丹市中心 3.8077,103.3260；KUA机场（距市区约15km）：公开资料",
+  },
+  {
+    id: "sandakan", nameZh: "山打根", nameEn: "Sandakan", country: "malaysia", tier: "notable", zone: "my-sabah",
+    lon: 118.1179, lat: 5.8402,
+    airport: { iata: "SDK", nameZh: "山打根机场", nameEn: "Sandakan Airport", lon: 118.0592, lat: 5.9012 },
+    source: "山打根市中心 5.8402,118.1179；SDK机场（距市区约11km）：公开资料",
+  },
+  {
+    id: "miri", nameZh: "美里", nameEn: "Miri", country: "malaysia", tier: "notable", zone: "my-sarawak",
+    lon: 113.9914, lat: 4.3995,
+    airport: { iata: "MYY", nameZh: "美里机场", nameEn: "Miri Airport", lon: 113.9878, lat: 4.3225 },
+    source: "美里市中心 4.3995,113.9914；MYY机场（距市区约8km）：公开资料",
+  },
+  {
+    id: "langkawi-city", nameZh: "瓜镇", nameEn: "Kuah", country: "malaysia", tier: "notable", zone: "my-north",
+    lon: 99.8467, lat: 6.3228,
+    airport: { iata: "LGK", nameZh: "浮罗交怡国际机场", nameEn: "Langkawi International Airport", lon: 99.7286, lat: 6.3297 },
+    source: "浮罗交怡瓜镇 6.3228,99.8467；LGK机场（距瓜镇约11km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -2383,6 +2462,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   "south-korea": "asia",
   vietnam: "asia",
   mongolia: "asia",
+  malaysia: "asia",
   australia: "oceania",
   "new-zealand": "oceania",
   usa: "north-america",
