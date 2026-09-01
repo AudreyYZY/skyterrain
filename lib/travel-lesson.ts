@@ -1,7 +1,5 @@
 import type { Language } from "@/lib/i18n";
 import { t } from "@/lib/i18n";
-import { TRAVEL_CONTENT_ZH } from "@/lib/travel-content.zh";
-import { TRAVEL_CONTENT_EN } from "@/lib/travel-content.en";
 
 export interface TravelGuide {
   /** 1. 这是座什么城 —— 性格、地位、第一印象 */
@@ -31,9 +29,31 @@ export function travelSectionHeading(key: string, lang: Language): string {
   return t(`travel.${key}`, lang);
 }
 
-export function resolveTravelGuide(id: string, lang: Language): TravelGuide | null {
-  const primary = lang === "zh-CN" ? TRAVEL_CONTENT_ZH : TRAVEL_CONTENT_EN;
-  const fallback = lang === "zh-CN" ? TRAVEL_CONTENT_EN : TRAVEL_CONTENT_ZH;
+/**
+ * 两份内容文件合计约 1.25 万行，用动态 import 延后到真正打开一篇攻略时才加载
+ * （见 lib/terrain-content.ts 同样的处理），加载后常驻内存缓存。
+ */
+let zhPromise: Promise<Record<string, TravelGuide>> | null = null;
+let enPromise: Promise<Record<string, TravelGuide>> | null = null;
+
+function loadZh(): Promise<Record<string, TravelGuide>> {
+  if (!zhPromise) {
+    zhPromise = import("@/lib/travel-content.zh").then((m) => m.TRAVEL_CONTENT_ZH);
+  }
+  return zhPromise;
+}
+
+function loadEn(): Promise<Record<string, TravelGuide>> {
+  if (!enPromise) {
+    enPromise = import("@/lib/travel-content.en").then((m) => m.TRAVEL_CONTENT_EN);
+  }
+  return enPromise;
+}
+
+export async function resolveTravelGuide(id: string, lang: Language): Promise<TravelGuide | null> {
+  const [zh, en] = await Promise.all([loadZh(), loadEn()]);
+  const primary = lang === "zh-CN" ? zh : en;
+  const fallback = lang === "zh-CN" ? en : zh;
   return primary[id] ?? fallback[id] ?? null;
 }
 

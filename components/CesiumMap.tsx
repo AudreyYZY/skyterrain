@@ -1,16 +1,9 @@
 "use client";
 
+import type { ScreenSpaceEventHandler } from "cesium";
 import { bearingRadians, haversineMeters } from "@/lib/geo";
 import { resolveRouteWaypoints, type ResolvedWaypoint } from "@/lib/routes";
-import { CHINA_NORTHWEST_FEATURES } from "@/features/china-northwest-features";
-import { CHINA_CORE_FEATURES } from "@/features/china-core-features";
-import type { GeographicFeature } from "@/features/types";
-import { getTerrainFOI } from "@/lib/foi-registry";
-import { computeCameraFromPolygon, computeCameraFromRidge } from "@/lib/auto-camera";
 import { TERRAIN_REGISTRY } from "@/lib/terrain-registry";
-
-/** 所有早期 GeographicFeature（中国核心地形） */
-const ALL_FEATURES: GeographicFeature[] = [...CHINA_NORTHWEST_FEATURES, ...CHINA_CORE_FEATURES];
 import type { FlightRoute } from "@/types/route";
 import type { TerrainPoint } from "@/types/terrain";
 import {
@@ -20,6 +13,16 @@ import {
   useRef,
   useState,
 } from "react";
+
+declare global {
+  interface Window {
+    /** 开发环境调试面板 — 仅 NODE_ENV !== "production" 时挂载 */
+    viewer?: import("cesium").Viewer;
+    Cesium?: typeof import("cesium");
+    debugCesium?: Record<string, unknown>;
+    __debugHover?: boolean;
+  }
+}
 
 export interface CameraState {
   /** 相机距地高度（米） */
@@ -50,8 +53,6 @@ export interface CesiumMapHandle {
     lat: number,
     view?: { heightM?: number; pitchDeg?: number; headingDeg?: number },
   ) => void;
-  /** 显示指定地形的 Debug 信息（FOI + 边界 + Camera Target + Range） */
-  debugBoundaries: (boundaryId: string) => void;
 }
 
 export interface RouteFlyCallbacks {
@@ -158,7 +159,7 @@ function waitForTilesSettled(
     const tick = () => {
       if (viewer.isDestroyed()) { resolve(); return; }
 
-      const tilesLoaded = (viewer.scene.globe as any).tilesLoaded;
+      const tilesLoaded = viewer.scene.globe.tilesLoaded;
 
       if (tilesLoaded) {
         if (loadedSince === 0) loadedSince = Date.now();
@@ -390,42 +391,6 @@ function tickTerrainRegions(
   return animating;
 }
 
-/** 在 Canvas 上绘制调试标记图（红十字/黄十字）—— billboard 用 */
-function makeDebugMarkerImage(Cesium: typeof import("cesium"), color: import("cesium").Color): string {
-  const size = 256;
-  const canvas = document.createElement("canvas");
-  canvas.width = size;
-  canvas.height = size;
-  const ctx = canvas.getContext("2d")!;
-  ctx.clearRect(0, 0, size, size);
-
-  const center = size / 2;
-  const half = size * 0.4;
-  const arm = size * 0.08;
-
-  // 十字
-  ctx.fillStyle = `rgba(${Math.round(color.red * 255)},${Math.round(color.green * 255)},${Math.round(color.blue * 255)},1)`;
-  ctx.fillRect(center - arm, center - half, arm * 2, half * 2);
-  ctx.fillRect(center - half, center - arm, half * 2, arm * 2);
-
-  // 外圈
-  ctx.strokeStyle = "#FFFFFF";
-  ctx.lineWidth = 8;
-  ctx.beginPath();
-  ctx.arc(center, center, half + 12, 0, Math.PI * 2);
-  ctx.stroke();
-
-  // 阴影
-  ctx.shadowColor = "rgba(0,0,0,0.7)";
-  ctx.shadowBlur = 12;
-  ctx.strokeStyle = "#000";
-  ctx.lineWidth = 2;
-  ctx.strokeRect(center - half - 4, center - half - 4, half * 2 + 8, half * 2 + 8);
-
-  const blob = new Blob([canvas.toDataURL("image/png")], { type: "image/png" });
-  return URL.createObjectURL(blob);
-}
-
 const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
   function CesiumMap({ onReady, onTerrainMode, onTerrainHover, onTerrainSelect, appMode = "study" }, ref) {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -597,129 +562,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
         });
       },
 
-      debugBoundaries(boundaryId: string) {
-        const viewer = viewerRef.current;
-        const Cesium = cesiumRef.current;
-        if (!viewer || !Cesium) return;
-
-        // 1. 清除旧的 debug-boundary 实体
-        const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugBoundary);
-        existing.forEach((e: any) => viewer.entities.remove(e));
-
-        // 2. 查找 feature
-        const feature = ALL_FEATURES.find((f) => f.id === boundaryId);
-        if (!feature) { console.log("[Debug] feature not found:", boundaryId); return; }
-
-        // 3. 获取 FOI
-        const terrainFOI = getTerrainFOI(boundaryId);
-
-        // 4. 画 FOI 红点（billboard + heightReference.NONE + 绝对不可见）
-        if (terrainFOI) {
-          const foiPos = Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat, 500);
-          viewer.entities.add({
-            position: foiPos,
-            billboard: {
-              image: makeDebugMarkerImage(Cesium, Cesium.Color.RED),
-              scale: 3.0,
-              verticalOrigin: Cesium.VerticalOrigin.CENTER,
-              heightReference: Cesium.HeightReference.NONE,
-            },
-            label: {
-              text: `FOI: ${terrainFOI.primary.name}`,
-              font: "bold 18px monospace",
-              fillColor: Cesium.Color.RED,
-              outlineColor: Cesium.Color.WHITE,
-              outlineWidth: 4,
-              style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-              pixelOffset: new Cesium.Cartesian2(0, -30),
-            },
-            properties: { isDebugBoundary: true, debugType: "foi" },
-          });
-          console.log(`[Debug] FOI: ${terrainFOI.primary.name} [${terrainFOI.primary.lon}, ${terrainFOI.primary.lat}]`);
-        }
-
-        // 5. 画 FOI geometryCoords 边界（billboard 线，不 clampToGround）
-        if (terrainFOI) {
-          const coords = terrainFOI.geometryCoords;
-          if (terrainFOI.featureType === "mountain_system") {
-            const ridgePositions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat, 100));
-            viewer.entities.add({
-              polyline: {
-                positions: ridgePositions,
-                width: 6,
-                material: Cesium.Color.RED,
-              },
-              properties: { isDebugBoundary: true, debugType: "ridge" },
-            });
-          } else {
-            const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat, 100));
-            viewer.entities.add({
-              polygon: {
-                hierarchy: new Cesium.PolygonHierarchy(positions),
-                material: Cesium.Color.RED.withAlpha(0.3),
-                outline: true,
-                outlineColor: Cesium.Color.RED,
-                outlineWidth: 4,
-              },
-              properties: { isDebugBoundary: true, debugType: "polygon" },
-            });
-          }
-          console.log(`[Debug] ${terrainFOI.featureType} boundary: ${coords.length} coords`);
-        }
-
-        // 6. 计算 Camera Target + range + source
-        const foi = getTerrainFOI(boundaryId);
-        let target: [number, number] | null = null;
-        let range: number | null = null;
-        let source = "";
-
-        if (foi) {
-          if (foi.featureType === "mountain_system") {
-            const cp = computeCameraFromRidge(foi.geometryCoords, foi.primary);
-            target = cp.target; range = cp.range; source = "FOI/AutoCamera(Ridge)";
-          } else {
-            const cp = computeCameraFromPolygon(foi.geometryCoords, foi.primary);
-            target = cp.target; range = cp.range; source = "FOI/AutoCamera(Polygon)";
-          }
-        } else if (feature.cameraGeometry) {
-          target = feature.cameraGeometry.target;
-          range = feature.cameraGeometry.range;
-          source = "CameraGeometry (manual)";
-        } else {
-          source = "No camera source";
-        }
-
-        // 7. 画 Camera Target 黄点（billboard + heightReference.NONE + 超大小）
-        if (target) {
-          const targetPos = Cesium.Cartesian3.fromDegrees(target[0], target[1], 500);
-          viewer.entities.add({
-            position: targetPos,
-            billboard: {
-              image: makeDebugMarkerImage(Cesium, Cesium.Color.YELLOW),
-              scale: 4.0,
-              verticalOrigin: Cesium.VerticalOrigin.CENTER,
-              heightReference: Cesium.HeightReference.NONE,
-            },
-            label: {
-              text: `${source} | ${(range! / 1000).toFixed(0)}km\n[${target[0].toFixed(2)}°, ${target[1].toFixed(2)}°]`,
-              font: "bold 16px monospace",
-              fillColor: Cesium.Color.YELLOW,
-              outlineColor: Cesium.Color.BLACK,
-              outlineWidth: 4,
-              style: Cesium.LabelStyle.FILL_AND_OUTLINE,
-              pixelOffset: new Cesium.Cartesian2(0, -50),
-            },
-            properties: { isDebugBoundary: true, debugType: "target" },
-          });
-          console.log(`[Debug] Target: [${target[0]}, ${target[1]}] range=${range! / 1000}km source=${source}`);
-        }
-
-        // 8. 打印到 console（总结）
-        console.log(`[Debug] ${feature.name}: source=${source}, range=${range ? (range / 1000).toFixed(0) : "N/A"}km`);
-
-        viewer.scene.requestRender();
-      },
-
       flyToTerrain(terrain: TerrainPoint) {
         const viewer = viewerRef.current;
         const Cesium = cesiumRef.current;
@@ -831,7 +673,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                     console.log(`[CesiumMap] ViewRectangle: [${viewRect?.west.toFixed(4)}, ${viewRect?.south.toFixed(4)}] → [${viewRect?.east.toFixed(4)}, ${viewRect?.north.toFixed(4)}]`);
                     console.log(`[CesiumMap] Target in ViewRectangle: ${viewRect ? (viewRect.west <= terrain.lon && terrain.lon <= viewRect.east && viewRect.south <= terrain.lat && terrain.lat <= viewRect.north ? 'YES' : 'NO') : 'N/A'}`);
                     console.log(`[CesiumMap] Camera requested: target=[${terrain.lon}, ${terrain.lat}] range=${terrain.cameraHeight}m heading=${heading}° pitch=${pitchDeg}°`);
-                  } catch (e) { /* ignore */ }
+                  } catch { /* ignore */ }
                   // 等待 tiles 收敛后再 resolve
                   waitForTilesSettled(viewer, 1000, 8000).then(() => {
                     console.log("[CesiumMap] tiles settled:", terrain.id);
@@ -1055,6 +897,9 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
     useEffect(() => {
       let cancelled = false;
       let resizeObserver: ResizeObserver | null = null;
+      // ref.current 全程指向同一个 Map（仅被增删改，从不重新赋值），
+      // 在此捕获一份供 cleanup 使用以满足 exhaustive-deps 检查
+      const terrainRegions = terrainRegionRef.current;
 
       /** 等待容器获得非零尺寸（带超时保护） */
       function waitForDimensions(el: HTMLElement): Promise<void> {
@@ -1185,15 +1030,14 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           // 暴露 viewer / Cesium / debugCesium 到 window 供调试 —— 仅开发环境，
           // 生产环境不挂载这个调试面（避免任意访客能拿到 viewer 引用 / 触发 debug 方法）。
           if (process.env.NODE_ENV !== "production") {
-          (window as any).viewer = viewer;
-          (window as any).Cesium = Cesium;
-          (window as any).__ALL_FEATURES = ALL_FEATURES;
+          window.viewer = viewer;
+          window.Cesium = Cesium;
 
           // Debug panel — 暴露到 window 供开发环境诊断
           const origTerrain = viewer.terrainProvider;
           const ellipsoidTerrain = new Cesium.EllipsoidTerrainProvider();
 
-          (window as any).debugCesium = {
+          window.debugCesium = {
             viewer,
             toggleTerrain() {
               const isEllipsoid = viewer.terrainProvider instanceof Cesium.EllipsoidTerrainProvider;
@@ -1232,96 +1076,20 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               const tp = viewer.terrainProvider;
               console.log("[debug] Terrain:", {
                 type: tp.constructor.name,
-                hasVertexNormals: (tp as any).hasVertexNormals,
-                hasWaterMask: (tp as any).hasWaterMask,
+                hasVertexNormals: tp.hasVertexNormals,
+                hasWaterMask: tp.hasWaterMask,
               });
               console.log("[debug] Globe:", {
                 maximumScreenSpaceError: viewer.scene.globe.maximumScreenSpaceError,
                 depthTestAgainstTerrain: viewer.scene.globe.depthTestAgainstTerrain,
-                terrainExaggeration: (viewer.scene.globe as any).terrainExaggeration ?? "N/A",
+                terrainExaggeration:
+                  (viewer.scene.globe as unknown as { terrainExaggeration?: number })
+                    .terrainExaggeration ?? "N/A",
               });
-            },
-            /** 删除 — 已替换为 debugBoundaries(id) 新方法 */
-            debugBoundaries: undefined as any,
-            /** 显示指定 Feature (或全部) 的 hoverGeometry */
-            debugGeometry(target: string | boolean = true) {
-              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugGeometry);
-              existing.forEach((e: any) => viewer.entities.remove(e));
-
-              if (target === false) {
-                console.log("[debug] Geometry debug hidden");
-                viewer.scene.requestRender();
-                return;
-              }
-
-              const colors: Record<string, [number, number, number]> = {
-                tianshan: [255, 0, 0],
-                kunlun: [0, 255, 0],
-                altai: [0, 0, 255],
-                "junggar-basin": [255, 165, 0],
-                "tarim-basin": [255, 255, 0],
-                pamir: [128, 0, 128],
-                taklamakan: [255, 192, 203],
-                sayram: [0, 255, 255],
-              };
-
-              const features = typeof target === "string"
-                ? ALL_FEATURES.filter(f => f.id === target)
-                : ALL_FEATURES;
-
-              for (const feature of features) {
-                const geo = feature.hoverGeometry;
-                if (!geo) continue;
-                const color = colors[feature.id] ?? [255, 255, 255];
-
-                if (geo.type === "Polygon") {
-                  const coords = geo.coordinates[0] as [number, number][];
-                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                  viewer.entities.add({
-                    polygon: {
-                      hierarchy: new Cesium.PolygonHierarchy(positions),
-                      material: Cesium.Color.fromBytes(color[0], color[1], color[2], 60),
-                      outline: true,
-                      outlineColor: Cesium.Color.fromBytes(color[0], color[1], color[2], 180),
-                      outlineWidth: 2,
-                    },
-                    properties: { isDebugGeometry: true, featureId: feature.id },
-                  });
-                  console.log(`[debug] ${feature.name}: Polygon (${coords.length} vertices)`);
-                } else if (geo.type === "RidgeCorridor") {
-                  for (let si = 0; si < geo.segments.length; si++) {
-                    const ring = geo.segments[si][0] as [number, number][];
-                    if (!ring) continue;
-                    const positions = ring.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                    viewer.entities.add({
-                      polygon: {
-                        hierarchy: new Cesium.PolygonHierarchy(positions),
-                        material: Cesium.Color.fromBytes(color[0], color[1], color[2], 50),
-                        outline: true,
-                        outlineColor: Cesium.Color.fromBytes(color[0], color[1], color[2], 150),
-                        outlineWidth: 2,
-                      },
-                      properties: { isDebugGeometry: true, featureId: feature.id },
-                    });
-                  }
-                  const ridgePositions = geo.ridgeLine.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                  viewer.entities.add({
-                    polyline: {
-                      positions: ridgePositions,
-                      width: 3,
-                      material: Cesium.Color.fromBytes(color[0], color[1], color[2], 200),
-                      clampToGround: true,
-                    },
-                    properties: { isDebugGeometry: true, featureId: feature.id },
-                  });
-                  console.log(`[debug] ${feature.name}: RidgeCorridor (${geo.segments.length} segments, ${geo.ridgeLine.length} ridge points)`);
-                }
-              }
-              viewer.scene.requestRender();
             },
             /** Hover Pick 调试 — 鼠标移动时打印命中的 Feature */
             debugHover(enable: boolean = true) {
-              (window as any).__debugHover = enable;
+              window.__debugHover = enable;
               console.log(`[debug] Hover debug ${enable ? "enabled" : "disabled"}`);
             },
             /** 打印当前相机状态 */
@@ -1342,18 +1110,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               console.log(`  roll: ${roll.toFixed(1)}°`);
               console.log(`  ground: ${Math.round(height - (viewer.scene.globe.getHeight(carto) ?? 0))}m above ground`);
             },
-            /** 打印所有 Feature 的镜头目标 */
-            debugFlight() {
-              console.log("[debug] Feature camera targets:");
-              for (const f of ALL_FEATURES) {
-                const cg = f.cameraGeometry;
-                if (cg) {
-                  console.log(`  ${f.id} (${f.name}): target=[${cg.target[0]}, ${cg.target[1]}] range=${cg.range} heading=${cg.heading} pitch=${cg.pitch}`);
-                } else {
-                  console.log(`  ${f.id} (${f.name}): no cameraGeometry`);
-                }
-              }
-            },
             /** 打印当前 zoomLevel 和可见标签 */
             debugLabels() {
               const camera = viewer.camera;
@@ -1364,137 +1120,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               // 这里需要访问 labelManager，但它在 ExplorerApp 中
               // 先打印 zoomLevel，用户可以在 ExplorerApp 中验证
             },
-            /** 显示 identityGeometry (标签放置) */
-            debugIdentity(target: string | boolean = true) {
-              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugIdentity);
-              existing.forEach((e: any) => viewer.entities.remove(e));
-              if (target === false) { viewer.scene.requestRender(); return; }
-              const features = typeof target === "string"
-                ? ALL_FEATURES.filter(f => f.id === target)
-                : ALL_FEATURES;
-              for (const feature of features) {
-                const geo = feature.identityGeometry;
-                if (!geo) continue;
-                if (geo.type === "LineString") {
-                  const coords = geo.coordinates as [number, number][];
-                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                  viewer.entities.add({ polyline: { positions, width: 4, material: Cesium.Color.GREEN.withAlpha(0.8), clampToGround: true }, properties: { isDebugIdentity: true } });
-                } else if (geo.type === "Polygon") {
-                  const coords = geo.coordinates[0] as [number, number][];
-                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                  viewer.entities.add({ polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.GREEN.withAlpha(0.15), outline: true, outlineColor: Cesium.Color.GREEN.withAlpha(0.6), outlineWidth: 2 }, properties: { isDebugIdentity: true } });
-                }
-                console.log(`[debug] ${feature.name}: identityGeometry = ${geo.type}`);
-              }
-              viewer.scene.requestRender();
-            },
-            /** 显示 focusGeometry (高亮内容) */
-            debugFocus(target: string | boolean = true) {
-              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugFocus);
-              existing.forEach((e: any) => viewer.entities.remove(e));
-              if (target === false) { viewer.scene.requestRender(); return; }
-              const features = typeof target === "string"
-                ? ALL_FEATURES.filter(f => f.id === target)
-                : ALL_FEATURES;
-              for (const feature of features) {
-                const geo = feature.focusGeometry;
-                if (!geo) continue;
-                if (geo.type === "LineString") {
-                  const coords = geo.coordinates as [number, number][];
-                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                  viewer.entities.add({ polyline: { positions, width: 5, material: Cesium.Color.YELLOW.withAlpha(0.9), clampToGround: true }, properties: { isDebugFocus: true } });
-                } else if (geo.type === "Polygon") {
-                  const coords = geo.coordinates[0] as [number, number][];
-                  const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                  viewer.entities.add({ polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.YELLOW.withAlpha(0.2), outline: true, outlineColor: Cesium.Color.YELLOW.withAlpha(0.7), outlineWidth: 3 }, properties: { isDebugFocus: true } });
-                }
-                console.log(`[debug] ${feature.name}: focusGeometry = ${geo.type}`);
-              }
-              viewer.scene.requestRender();
-            },
-            /** 绘制 Auto Camera 调试标记 (Polygon + FOI + Target + Camera Position) */
-            debugAutoCamera(terrainId: string) {
-              const existing = viewer.entities.values.filter((e: any) => e.properties?.getValue?.()?.isDebugAutoCamera);
-              existing.forEach((e: any) => viewer.entities.remove(e));
-
-              const feature = ALL_FEATURES.find(f => f.id === terrainId);
-              if (!feature) { console.log("[debug] feature not found:", terrainId); return; }
-
-              // 1. 绘制 identityGeometry / focusGeometry (Terrain Polygon)
-              const geo = feature.focusGeometry ?? feature.identityGeometry;
-              if (geo?.type === "Polygon") {
-                const coords = geo.coordinates[0] as [number, number][];
-                const positions = coords.map(([lon, lat]) => Cesium.Cartesian3.fromDegrees(lon, lat));
-                viewer.entities.add({
-                  polygon: { hierarchy: new Cesium.PolygonHierarchy(positions), material: Cesium.Color.CYAN.withAlpha(0.1), outline: true, outlineColor: Cesium.Color.CYAN.withAlpha(0.6), outlineWidth: 2 },
-                  properties: { isDebugAutoCamera: true },
-                });
-                console.log(`[debug] Polygon: ${coords.length} points`);
-              }
-
-              // 2. 绘制 FOI Point (红点)
-              const terrainFOI = getTerrainFOI(terrainId);
-              if (terrainFOI) {
-                const foiPos = Cesium.Cartesian3.fromDegrees(terrainFOI.primary.lon, terrainFOI.primary.lat);
-                viewer.entities.add({
-                  position: foiPos,
-                  point: { pixelSize: 14, color: Cesium.Color.RED, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
-                  label: { text: `FOI: ${terrainFOI.primary.name}`, font: "14px sans-serif", fillColor: Cesium.Color.WHITE, pixelOffset: new Cesium.Cartesian2(0, -20), style: Cesium.LabelStyle.FILL_AND_OUTLINE, outlineWidth: 2 },
-                  properties: { isDebugAutoCamera: true },
-                });
-                console.log(`[debug] FOI: ${terrainFOI.primary.name} [${terrainFOI.primary.lon}, ${terrainFOI.primary.lat}]`);
-              }
-
-              // 3. 计算 Auto Camera 参数
-              let cameraParams: any;
-              if (terrainFOI?.featureType === "mountain_system") {
-                cameraParams = computeCameraFromRidge(terrainFOI.geometryCoords, terrainFOI.primary);
-              } else if (terrainFOI) {
-                cameraParams = computeCameraFromPolygon(terrainFOI.geometryCoords, terrainFOI.primary);
-              }
-              if (cameraParams) {
-                // 4. 绘制 Camera Target (蓝点)
-                const targetPos = Cesium.Cartesian3.fromDegrees(cameraParams.target[0], cameraParams.target[1]);
-                viewer.entities.add({
-                  position: targetPos,
-                  point: { pixelSize: 14, color: Cesium.Color.BLUE, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
-                  label: { text: `Target [${cameraParams.target[0].toFixed(2)}, ${cameraParams.target[1].toFixed(2)}]`, font: "13px sans-serif", fillColor: Cesium.Color.LIGHTBLUE, pixelOffset: new Cesium.Cartesian2(0, -20), style: Cesium.LabelStyle.FILL_AND_OUTLINE, outlineWidth: 2 },
-                  properties: { isDebugAutoCamera: true },
-                });
-                console.log(`[debug] Target: [${cameraParams.target[0].toFixed(4)}, ${cameraParams.target[1].toFixed(4)}]`);
-
-                // 5. 计算并绘制 Camera Position (绿点)
-                const headingRad = Cesium.Math.toRadians(cameraParams.heading);
-                const pitchRad = Cesium.Math.toRadians(cameraParams.pitch);
-                const cameraHeight = cameraParams.range;
-
-                // Camera position = target + offset based on heading and pitch
-                const targetCartographic = Cesium.Cartographic.fromDegrees(cameraParams.target[0], cameraParams.target[1]);
-                const targetCartesian = Cesium.Cartographic.toCartesian(targetCartographic);
-
-                // Create a temporary camera to compute position from orientation
-                const tempCamera = new Cesium.Camera(viewer.scene);
-                tempCamera.setView({
-                  destination: Cesium.Cartesian3.fromDegrees(cameraParams.target[0], cameraParams.target[1], cameraHeight),
-                  orientation: { heading: headingRad, pitch: pitchRad, roll: 0 },
-                });
-                const camPos = tempCamera.position;
-                const camCartographic = Cesium.Cartographic.fromCartesian(camPos);
-
-                viewer.entities.add({
-                  position: camPos,
-                  point: { pixelSize: 14, color: Cesium.Color.GREEN, outlineColor: Cesium.Color.WHITE, outlineWidth: 2 },
-                  label: { text: `Camera [${Cesium.Math.toDegrees(camCartographic.longitude).toFixed(2)}, ${Cesium.Math.toDegrees(camCartographic.latitude).toFixed(2)}] h=${Math.round(camCartographic.height/1000)}km`, font: "13px sans-serif", fillColor: Cesium.Color.LIGHTGREEN, pixelOffset: new Cesium.Cartesian2(0, -20), style: Cesium.LabelStyle.FILL_AND_OUTLINE, outlineWidth: 2 },
-                  properties: { isDebugAutoCamera: true },
-                });
-                console.log(`[debug] Camera Position: [${Cesium.Math.toDegrees(camCartographic.longitude).toFixed(4)}, ${Cesium.Math.toDegrees(camCartographic.latitude).toFixed(4)}] height=${Math.round(camCartographic.height)}m (${Math.round(camCartographic.height/1000)}km)`);
-                console.log(`[debug] Camera Params: heading=${cameraParams.heading}° pitch=${cameraParams.pitch}° range=${cameraParams.range}m (${Math.round(cameraParams.range/1000)}km)`);
-              }
-
-              viewer.scene.requestRender();
-            },
           };
-          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugGeometry(), debugAutoCamera(id)");
+          console.log("[debug] window.debugCesium ready — use toggleTerrain(), toggleImagery(), printLayers(), printTerrain(), debugHover(), debugCamera(), debugLabels()");
           } // NODE_ENV guard end
 
           // 相机移动结束后触发额外渲染 — 确保瓦片精炼完成
@@ -1507,7 +1134,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           // 地形区域 Hover — pick terrainId，高亮该地形区域椭圆 + 通知标签系统
           const handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
 
-          handler.setInputAction((movement: any) => {
+          handler.setInputAction((movement: ScreenSpaceEventHandler.MotionEvent) => {
             if (viewer.isDestroyed() || modeRef.current !== "study") return;
             // drillPick：重叠地块里取面积最小（最具体）的那个
             const hits = viewer.scene.drillPick(movement.endPosition, 8);
@@ -1535,7 +1162,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
           // 地形区域点击 — 命中最具体的地块即选中（不受当前大洲限制，可跨洲跳转）
-          handler.setInputAction((click: any) => {
+          handler.setInputAction((click: ScreenSpaceEventHandler.PositionedEvent) => {
             if (viewer.isDestroyed() || modeRef.current !== "study") return;
             const hits = viewer.scene.drillPick(click.position, 8);
             let hitId: string | null = null;
@@ -1646,7 +1273,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           cancelAnimationFrame(regionAnimRef.current);
           regionAnimRef.current = null;
         }
-        terrainRegionRef.current.clear();
+        terrainRegions.clear();
         viewerRef.current?.destroy();
         viewerRef.current = null;
       };

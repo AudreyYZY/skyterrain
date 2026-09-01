@@ -4,7 +4,7 @@
  * 确保 Feature 数据完整性
  */
 
-import type { GeographicFeature, Geometry, FeatureType } from "./types";
+import type { GeographicFeature, Geometry } from "./types";
 
 /** 校验结果 */
 export interface ValidationResult {

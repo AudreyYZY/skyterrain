@@ -14,20 +14,34 @@
 
 import type { TerrainLesson } from "@/types/terrain";
 import type { Language } from "@/lib/i18n";
-import { TERRAIN_CONTENT_ZH } from "@/lib/terrain-content.zh";
-import { TERRAIN_CONTENT_EN } from "@/lib/terrain-content.en";
+
+/**
+ * 两份内容文件合计近 2.8 万行，占初始 JS 体积的大头，且首屏（地球 + 目录）
+ * 并不需要它们——用动态 import 延后到真正打开一篇讲解时才加载，
+ * 加载后常驻内存缓存，同一会话只请求一次。
+ */
+let zhPromise: Promise<Record<string, TerrainLesson>> | null = null;
+let enPromise: Promise<Record<string, TerrainLesson>> | null = null;
+
+function loadZh(): Promise<Record<string, TerrainLesson>> {
+  if (!zhPromise) {
+    zhPromise = import("@/lib/terrain-content.zh").then((m) => m.TERRAIN_CONTENT_ZH);
+  }
+  return zhPromise;
+}
+
+function loadEn(): Promise<Record<string, TerrainLesson>> {
+  if (!enPromise) {
+    enPromise = import("@/lib/terrain-content.en").then((m) => m.TERRAIN_CONTENT_EN);
+  }
+  return enPromise;
+}
 
 /** 取某语言的权威结构化讲解，无则 undefined */
-export function getTerrainContent(
+export async function getTerrainContent(
   id: string,
   lang: Language,
-): TerrainLesson | undefined {
-  return lang === "en-US" ? TERRAIN_CONTENT_EN[id] : TERRAIN_CONTENT_ZH[id];
+): Promise<TerrainLesson | undefined> {
+  const content = lang === "en-US" ? await loadEn() : await loadZh();
+  return content[id];
 }
-
-/** 任一语言是否有该地形的权威内容 */
-export function hasTerrainContent(id: string): boolean {
-  return id in TERRAIN_CONTENT_ZH || id in TERRAIN_CONTENT_EN;
-}
-
-export { TERRAIN_CONTENT_ZH, TERRAIN_CONTENT_EN };

@@ -11,7 +11,9 @@ import { useEffect, useState } from "react";
 export default function VoiceSelector() {
   const [voice, setVoice] = useState<EdgeTtsVoiceId>("zh-CN-XiaoxiaoNeural");
 
+  // 偏好存在 localStorage，只能在 client 挂载后读，避免 SSR/client 初值不一致
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setVoice(getPreferredEdgeVoice());
   }, []);
 

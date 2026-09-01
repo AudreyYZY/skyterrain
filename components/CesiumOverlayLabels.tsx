@@ -263,7 +263,6 @@ export default function CesiumOverlayLabels({
       // 动态字号：随 zoomLevel 缩放
       const lodLevel = (label.lodLevel ?? 4) as 1 | 2 | 3 | 4;
       const lodImportance = lodToImportance(lodLevel);
-      const baseFontSize = getFontSize(lodImportance);
       const dynamicSize = dynamicFontSize(lodImportance, zoomLevel);
 
       // LOD 1-2 标签始终完全可见，不被边缘淡出影响

@@ -34,12 +34,12 @@ function storyToLesson(s: {
   };
 }
 
-export function resolveLesson(
+export async function resolveLesson(
   id: string,
   lang: Language,
   opts?: ResolveOpts,
-): TerrainLesson | null {
-  const authored = getTerrainContent(id, lang);
+): Promise<TerrainLesson | null> {
+  const authored = await getTerrainContent(id, lang);
   if (authored) return authored;
 
   if (opts?.nameZh) {
@@ -48,7 +48,7 @@ export function resolveLesson(
   }
 
   if (lang === "en-US") {
-    const zh = getTerrainContent(id, "zh-CN");
+    const zh = await getTerrainContent(id, "zh-CN");
     if (zh) return zh;
   }
 

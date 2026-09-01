@@ -3,7 +3,7 @@
 import { resolveRouteWaypoints, routeCountryLabel, routeMatches } from "@/lib/routes";
 import { t, type Language } from "@/lib/i18n";
 import type { FlightRoute } from "@/types/route";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 export interface JourneyGroup {
   slug: string;
@@ -54,15 +54,14 @@ export default function JourneyBar({
   );
   const totalCount = allRoutes.length;
 
-  // 飞行中 → 选中项跟随当前航线
-  useEffect(() => {
-    if (activeRouteId) setSelectedId(activeRouteId);
-  }, [activeRouteId]);
-
-  // 列表变化后，若选中项已不在列表里则清掉
-  useEffect(() => {
-    if (selectedId && !allRoutes.some((r) => r.id === selectedId)) setSelectedId(null);
-  }, [allRoutes, selectedId]);
+  // 飞行中 → 选中项跟随当前航线；列表变化后若选中项已不在列表里则清掉。
+  // 在渲染期间比较代替 effect+setState（避免多一次级联渲染，见 react-hooks/set-state-in-effect）
+  if (activeRouteId && selectedId !== activeRouteId) {
+    setSelectedId(activeRouteId);
+  }
+  if (selectedId && !allRoutes.some((r) => r.id === selectedId)) {
+    setSelectedId(null);
+  }
 
   if (totalCount === 0) return null;
 

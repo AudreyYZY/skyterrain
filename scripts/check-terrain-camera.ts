@@ -19,7 +19,7 @@ let failures = 0;
 const rows: string[] = [];
 
 function angDiff(a: number, b: number): number {
-  let d = Math.abs(a - b) % 360;
+  const d = Math.abs(a - b) % 360;
   return d > 180 ? 360 - d : d;
 }
 
