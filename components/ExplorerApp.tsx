@@ -17,7 +17,7 @@ import type { GeographicFeature } from "@/features/types";
 import { lessonSections } from "@/lib/lesson";
 import { resolveLesson } from "@/lib/terrain-lesson";
 import { getRouteNarration } from "@/lib/route-narration";
-import { getTerrainName, type Language } from "@/lib/i18n";
+import { t, getTerrainName, type Language } from "@/lib/i18n";
 import { getTerrainEntry, TERRAIN_REGISTRY } from "@/lib/terrain-registry";
 import { computeTerrainCamera, type CameraParams } from "@/lib/terrain-camera";
 import { narrationQueue } from "@/lib/narration-queue";
@@ -1312,7 +1312,7 @@ export default function ExplorerApp() {
 
       {!showIntro && (
         <IndexRail
-          language={language}
+          title={t(mode === "travel" ? "rail.title.travel" : "rail.title", language)}
           groups={mode === "travel" ? travelRailGroups(activeRegion, language) : railGroups}
           activeId={mode === "travel" ? travelId : (activeTerrain?.id ?? null)}
           onSelect={mode === "travel" ? handleSelectCity : handleSelectById}

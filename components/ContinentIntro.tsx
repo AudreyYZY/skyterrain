@@ -143,7 +143,7 @@ export default function ContinentIntro({
       <button
         type="button"
         onClick={onToggleLanguage}
-        className="absolute right-4 top-4 z-10 rounded-full border border-[color:var(--hairline)] px-2.5 py-1 text-[11px] font-medium text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
+        className="absolute right-5 top-5 z-10 rounded-full border border-[color:var(--hairline)] bg-[color:var(--panel-solid)] px-4 py-2 text-[13px] font-medium text-[color:var(--ink)] transition-colors hover:border-[color:var(--accent-line)] hover:text-[color:var(--accent)]"
       >
         {language === "zh-CN" ? "EN" : "中"}
       </button>
