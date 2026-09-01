@@ -178,14 +178,18 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "en-US": "Stop Narration",
   },
 
-  // Intro overlay
-  "intro.kicker": {
-    "zh-CN": "地貌志",
-    "en-US": "A Field Guide to Landforms",
+  // Intro overlay（旅游模式专用；学习模式用 ContinentIntro 的 intro.pick/intro.count）
+  "travel.intro.kicker": {
+    "zh-CN": "旅行指南",
+    "en-US": "A Travel Guide",
   },
-  "intro.line": {
-    "zh-CN": "从三万英尺的舷窗，认识脚下这片土地。",
-    "en-US": "Read the land beneath you from a window seat at 30,000 feet.",
+  "travel.intro.subtitle": {
+    "zh-CN": "旅游",
+    "en-US": "Travel",
+  },
+  "travel.intro.line": {
+    "zh-CN": "从三万英尺的舷窗出发，看这座城市怎么吃、怎么住、怎么逛。",
+    "en-US": "Starting from a window seat at 30,000 feet — how to eat, stay, and get around this city.",
   },
   "intro.enter": {
     "zh-CN": "开始探索",
@@ -253,7 +257,11 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
   // Index rail
   "rail.title": {
     "zh-CN": "地貌目录",
-    "en-US": "Index",
+    "en-US": "Terrain Index",
+  },
+  "rail.title.travel": {
+    "zh-CN": "旅游目录",
+    "en-US": "Destinations",
   },
 
   // Journey bar

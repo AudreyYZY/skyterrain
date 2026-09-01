@@ -1,6 +1,5 @@
 "use client";
 
-import { t, type Language } from "@/lib/i18n";
 import { useState } from "react";
 
 export interface RailItem {
@@ -21,22 +20,23 @@ export interface RailGroup {
 }
 
 interface IndexRailProps {
-  language: Language;
   groups: RailGroup[];
   activeId: string | null;
   onSelect: (id: string) => void;
+  /** 目录标题 —— 学习模式「地貌目录」、旅游模式「旅游目录」，由调用方按当前模式传入 */
+  title: string;
 }
 
 /**
- * 左侧地貌目录。
+ * 左侧目录（学习模式＝地貌目录，旅游模式＝旅游目录，标题由 title prop 决定）。
  * 默认一条窄竖条（只有分类字形）；hover / 点击浮出面板：
- * 一级＝分类，二级＝该分类的地形。选中地形后收起。
+ * 一级＝分类，二级＝该分类的地形/城市。选中后收起。
  */
 export default function IndexRail({
-  language,
   groups,
   activeId,
   onSelect,
+  title,
 }: IndexRailProps) {
   const [open, setOpen] = useState(false);
   const [pinned, setPinned] = useState(false);
@@ -62,7 +62,7 @@ export default function IndexRail({
         <button
           type="button"
           onClick={() => setPinned((p) => !p)}
-          aria-label={t("rail.title", language)}
+          aria-label={title}
           className="mb-1 flex h-8 w-8 items-center justify-center text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
         >
           <span className="text-[13px]">{expanded ? "‹" : "≡"}</span>
@@ -113,7 +113,7 @@ export default function IndexRail({
                 className="mb-3 flex items-center gap-1.5 text-[11px] text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink-body)]"
               >
                 <span aria-hidden>←</span>
-                <span>{t("rail.title", language)}</span>
+                <span>{title}</span>
               </button>
               <p className="editorial-kicker mb-3">{activeGroup.label}</p>
               <div className="flex flex-col">
@@ -142,7 +142,7 @@ export default function IndexRail({
             </>
           ) : (
             <>
-              <p className="editorial-kicker mb-4">{t("rail.title", language)}</p>
+              <p className="editorial-kicker mb-4">{title}</p>
               <div className="flex flex-col">
                 {groups.map((g) => {
                   const isDirect = g.type === "overview" && g.items.length === 1;

@@ -73,23 +73,23 @@ export default function IntroOverlay({
       <button
         type="button"
         onClick={onToggleLanguage}
-        className="absolute right-4 top-4 z-10 rounded-full border border-[color:var(--hairline)] px-2.5 py-1 text-[11px] font-medium text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink)]"
+        className="absolute right-5 top-5 z-10 rounded-full border border-[color:var(--hairline)] bg-[color:var(--panel-solid)] px-4 py-2 text-[13px] font-medium text-[color:var(--ink)] transition-colors hover:border-[color:var(--accent-line)] hover:text-[color:var(--accent)]"
       >
         {language === "zh-CN" ? "EN" : "中"}
       </button>
 
       <div className="relative max-w-lg text-center editorial-enter">
-        <p className="editorial-kicker mb-5">{t("intro.kicker", language)}</p>
+        <p className="editorial-kicker mb-5">{t("travel.intro.kicker", language)}</p>
 
         <h1 className="editorial-title text-[clamp(2.75rem,7vw,4.25rem)] leading-[1.05]">
           {region}
         </h1>
         <p className="editorial-title mt-1 text-[clamp(1rem,2.4vw,1.25rem)] italic text-[color:var(--ink-dim)]">
-          {language === "zh-CN" ? "地貌" : "Landforms"}
+          {t("travel.intro.subtitle", language)}
         </p>
 
         <p className="reading-body mx-auto mt-6 max-w-sm text-[0.95rem] text-[color:var(--ink-dim)]">
-          {t("intro.line", language)}
+          {t("travel.intro.line", language)}
         </p>
 
         <button
