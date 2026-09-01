@@ -47,7 +47,7 @@ export const REGIONS: Region[] = [
     name: "亚洲",
     nameEn: "Asia",
     center: { lon: 90.0, lat: 40.0, height: 14000000 },
-    terrainCount: 138,
+    terrainCount: 163,
     available: true,
   },
   {
@@ -155,6 +155,7 @@ export const SUBREGIONS: Subregion[] = [
 export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   china: "eastern-asia",
   japan: "eastern-asia",
+  thailand: "south-eastern-asia",
   "south-korea": "eastern-asia",
   usa: "northern-america",
   canada: "northern-america",
@@ -198,6 +199,8 @@ export const COUNTRIES: CountryMeta[] = [
   { slug: "china", name: "中国", nameEn: "China", code: "CN" },
   { slug: "japan", name: "日本", nameEn: "Japan", code: "JP" },
   { slug: "south-korea", name: "韩国", nameEn: "South Korea", code: "KR" },
+  // 东南亚
+  { slug: "thailand", name: "泰国", nameEn: "Thailand", code: "TH" },
   // 北美
   { slug: "canada", name: "加拿大", nameEn: "Canada", code: "CA" },
   { slug: "usa", name: "美国", nameEn: "United States", code: "US" },

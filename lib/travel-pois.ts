@@ -2000,6 +2000,75 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "埃施叙尔苏尔城堡遗址", nameEn: "Esch-sur-Sûre Castle Ruins", lon: 5.9169, lat: 49.9169, kind: "landmark" },
   ],
 
+  // 泰国
+  bangkok: [
+    { nameZh: "大皇宫", nameEn: "Grand Palace", lon: 100.4913, lat: 13.7500, kind: "landmark" },
+    { nameZh: "郑王庙", nameEn: "Wat Arun", lon: 100.4888, lat: 13.7437, kind: "landmark" },
+    { nameZh: "乍都乍市场", nameEn: "Chatuchak Market", lon: 100.5500, lat: 13.7999, kind: "district" },
+    { nameZh: "考山路", nameEn: "Khao San Road", lon: 100.4977, lat: 13.7590, kind: "district" },
+    { nameZh: "暹罗商圈", nameEn: "Siam", lon: 100.5347, lat: 13.7466, kind: "district" },
+  ],
+  "chiang-mai": [
+    { nameZh: "帕辛寺", nameEn: "Wat Phra Singh", lon: 98.9825, lat: 18.7873, kind: "landmark" },
+    { nameZh: "清曼寺", nameEn: "Wat Chiang Man", lon: 98.9878, lat: 18.7929, kind: "landmark" },
+    { nameZh: "素贴寺", nameEn: "Wat Phra That Doi Suthep", lon: 98.9219, lat: 18.8047, kind: "landmark" },
+    { nameZh: "周日步行街", nameEn: "Sunday Walking Street", lon: 98.9836, lat: 18.7887, kind: "district" },
+    { nameZh: "尼曼路", nameEn: "Nimman Road", lon: 98.9666, lat: 18.7994, kind: "district" },
+  ],
+  phuket: [
+    { nameZh: "巴东海滩", nameEn: "Patong Beach", lon: 98.2966, lat: 7.8965, kind: "nature" },
+    { nameZh: "普吉镇老城", nameEn: "Phuket Old Town", lon: 98.3900, lat: 7.8833, kind: "district" },
+    { nameZh: "大佛山", nameEn: "Big Buddha", lon: 98.3117, lat: 7.8278, kind: "landmark" },
+    { nameZh: "卡伦观景点", nameEn: "Karon Viewpoint", lon: 98.2967, lat: 7.8080, kind: "nature" },
+  ],
+  krabi: [
+    { nameZh: "莱利岬角", nameEn: "Railay Peninsula", lon: 98.8372, lat: 8.0107, kind: "nature" },
+    { nameZh: "奥南海滩", nameEn: "Ao Nang Beach", lon: 98.8228, lat: 8.0333, kind: "nature" },
+    { nameZh: "老虎洞寺", nameEn: "Tiger Cave Temple", lon: 98.9522, lat: 8.1150, kind: "landmark" },
+  ],
+  pattaya: [
+    { nameZh: "芭提雅步行街", nameEn: "Pattaya Walking Street", lon: 100.8737, lat: 12.9280, kind: "district" },
+    { nameZh: "真理寺", nameEn: "Sanctuary of Truth", lon: 100.8814, lat: 12.9781, kind: "landmark" },
+    { nameZh: "格兰岛", nameEn: "Koh Larn", lon: 100.7847, lat: 12.9186, kind: "nature" },
+    { nameZh: "东芭乐园", nameEn: "Nong Nooch Tropical Garden", lon: 100.9333, lat: 12.7333, kind: "landmark" },
+  ],
+  "chiang-rai": [
+    { nameZh: "白龙寺", nameEn: "Wat Rong Khun (White Temple)", lon: 99.7736, lat: 19.8067, kind: "landmark" },
+    { nameZh: "蓝庙", nameEn: "Wat Rong Suea Ten (Blue Temple)", lon: 99.8189, lat: 19.9350, kind: "landmark" },
+    { nameZh: "黑屋博物馆", nameEn: "Baan Dam Museum", lon: 99.8378, lat: 19.9622, kind: "landmark" },
+    { nameZh: "金三角景观区", nameEn: "Golden Triangle", lon: 100.0856, lat: 20.3556, kind: "nature" },
+  ],
+  "koh-samui": [
+    { nameZh: "查汶海滩", nameEn: "Chaweng Beach", lon: 100.0611, lat: 9.5386, kind: "nature" },
+    { nameZh: "大佛寺", nameEn: "Big Buddha Temple", lon: 100.0603, lat: 9.5764, kind: "landmark" },
+    { nameZh: "安通国家海洋公园", nameEn: "Ang Thong National Marine Park", lon: 99.6667, lat: 9.6667, kind: "nature" },
+    { nameZh: "渔民村", nameEn: "Fisherman's Village", lon: 100.0472, lat: 9.5686, kind: "district" },
+  ],
+  ayutthaya: [
+    { nameZh: "玛哈泰寺", nameEn: "Wat Mahathat", lon: 100.5686, lat: 14.3567, kind: "landmark" },
+    { nameZh: "帕席桑碧寺", nameEn: "Wat Phra Si Sanphet", lon: 100.5561, lat: 14.3564, kind: "landmark" },
+    { nameZh: "洛卡雅苏塔寺", nameEn: "Wat Lokayasutharam", lon: 100.5442, lat: 14.3486, kind: "landmark" },
+  ],
+  sukhothai: [
+    { nameZh: "玛哈泰寺遗址", nameEn: "Wat Mahathat Ruins", lon: 99.7011, lat: 17.0186, kind: "landmark" },
+    { nameZh: "诗春寺", nameEn: "Wat Si Chum", lon: 99.6944, lat: 17.0247, kind: "landmark" },
+    { nameZh: "沙西寺", nameEn: "Wat Sa Si", lon: 99.7017, lat: 17.0206, kind: "landmark" },
+  ],
+  "hua-hin": [
+    { nameZh: "华欣海滩", nameEn: "Hua Hin Beach", lon: 99.9636, lat: 12.5628, kind: "nature" },
+    { nameZh: "华欣火车站", nameEn: "Hua Hin Railway Station", lon: 99.9583, lat: 12.5711, kind: "landmark" },
+    { nameZh: "华欣丘陵葡萄园", nameEn: "Hua Hin Hills Vineyard", lon: 99.7833, lat: 12.6667, kind: "landmark" },
+  ],
+  "udon-thani": [
+    { nameZh: "农贵湖公园", nameEn: "Nong Prajak Park", lon: 102.7883, lat: 17.4111, kind: "nature" },
+    { nameZh: "班清国家博物馆", nameEn: "Ban Chiang National Museum", lon: 103.2378, lat: 17.4058, kind: "landmark" },
+    { nameZh: "那雍寺", nameEn: "Wat Pa Phu Kon", lon: 102.0833, lat: 17.6667, kind: "landmark" },
+  ],
+  "nakhon-ratchasima": [
+    { nameZh: "陶苏拉纳丽纪念碑", nameEn: "Thao Suranari Memorial", lon: 102.0972, lat: 14.9722, kind: "landmark" },
+    { nameZh: "帕侬蓝历史公园", nameEn: "Phanom Rung Historical Park", lon: 102.9375, lat: 14.5308, kind: "landmark" },
+    { nameZh: "考艾山国家公园", nameEn: "Khao Yai National Park", lon: 101.3725, lat: 14.4386, kind: "nature" },
+  ],
   // 韩国
   seoul: [
     { nameZh: "景福宫", nameEn: "Gyeongbokgung Palace", lon: 126.9770, lat: 37.5796, kind: "landmark" },

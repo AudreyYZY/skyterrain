@@ -1,0 +1,17 @@
+{
+  "id": "dmk-cei",
+  "name": "曼谷廊曼 — 清莱",
+  "nameEn": "Bangkok Don Mueang — Chiang Rai",
+  "description": "通萨兰銮草原 · 清道山",
+  "descriptionEn": "Thung Salaeng Luang · Doi Luang Chiang Dao",
+  "depCountry": "thailand",
+  "arrCountry": "thailand",
+  "flight": { "airline": "皇雀航空", "airlineEn": "Nok Air", "flightNo": "DD108", "aircraft": "Boeing 737-800", "depIata": "DMK", "arrIata": "CEI", "durationMin": 80 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
+    { "kind": "terrain", "terrainId": "thung-salaeng-luang" },
+    { "kind": "terrain", "terrainId": "doi-luang-chiang-dao" },
+    { "kind": "city", "id": "cei", "name": "清莱", "nameEn": "Chiang Rai", "lat": 19.9523, "lon": 99.8828, "airport": true }
+  ]
+}

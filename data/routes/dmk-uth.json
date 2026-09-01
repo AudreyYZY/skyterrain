@@ -1,0 +1,16 @@
+{
+  "id": "dmk-uth",
+  "name": "曼谷廊曼 — 乌隆他尼",
+  "nameEn": "Bangkok Don Mueang — Udon Thani",
+  "description": "呵叻高原",
+  "descriptionEn": "Khorat Plateau",
+  "depCountry": "thailand",
+  "arrCountry": "thailand",
+  "flight": { "airline": "泰国亚洲航空", "airlineEn": "Thai AirAsia", "flightNo": "FD3362", "aircraft": "Airbus A320", "depIata": "DMK", "arrIata": "UTH", "durationMin": 65 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
+    { "kind": "terrain", "terrainId": "khorat-plateau" },
+    { "kind": "city", "id": "uth", "name": "乌隆他尼", "nameEn": "Udon Thani", "lat": 17.3864, "lon": 102.7881, "airport": true }
+  ]
+}
