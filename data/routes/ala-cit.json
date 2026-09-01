@@ -1,0 +1,16 @@
+{
+  "id": "ala-cit",
+  "name": "阿拉木图 — 希姆肯特",
+  "nameEn": "Almaty — Shymkent",
+  "description": "莫因库姆沙漠",
+  "descriptionEn": "Moiynkum Desert",
+  "depCountry": "kazakhstan",
+  "arrCountry": "kazakhstan",
+  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC972", "aircraft": "Airbus A320", "depIata": "ALA", "arrIata": "CIT", "durationMin": 80 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "ala", "name": "阿拉木图", "nameEn": "Almaty", "lat": 43.3521, "lon": 77.0405, "airport": true },
+    { "kind": "terrain", "terrainId": "moiynkum-desert" },
+    { "kind": "city", "id": "cit", "name": "希姆肯特", "nameEn": "Shymkent", "lat": 42.3651, "lon": 69.4794, "airport": true }
+  ]
+}

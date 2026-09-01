@@ -1,0 +1,16 @@
+{
+  "id": "ala-hsa",
+  "name": "阿拉木图 — 突厥斯坦",
+  "nameEn": "Almaty — Turkestan",
+  "description": "莫因库姆沙漠 · 亚萨维陵墓门户",
+  "descriptionEn": "Moiynkum Desert · gateway to the Yasawi Mausoleum",
+  "depCountry": "kazakhstan",
+  "arrCountry": "kazakhstan",
+  "flight": { "airline": "飞阿雷斯坦航空", "airlineEn": "FlyArystan", "flightNo": "FS7161", "aircraft": "Airbus A320", "depIata": "ALA", "arrIata": "HSA", "durationMin": 95 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "ala", "name": "阿拉木图", "nameEn": "Almaty", "lat": 43.3521, "lon": 77.0405, "airport": true },
+    { "kind": "terrain", "terrainId": "moiynkum-desert" },
+    { "kind": "city", "id": "hsa", "name": "突厥斯坦", "nameEn": "Turkestan", "lat": 43.1667, "lon": 68.4000, "airport": true }
+  ]
+}

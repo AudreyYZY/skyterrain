@@ -1,0 +1,15 @@
+{
+  "id": "ala-sco",
+  "name": "阿拉木图 — 阿克套",
+  "nameEn": "Almaty — Aktau",
+  "description": "哈萨克斯坦东西跨境航线",
+  "descriptionEn": "Kazakhstan's east-west domestic route",
+  "depCountry": "kazakhstan",
+  "arrCountry": "kazakhstan",
+  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC931", "aircraft": "Boeing 757", "depIata": "ALA", "arrIata": "SCO", "durationMin": 200 },
+  "cruiseHeight": 10600,
+  "waypoints": [
+    { "kind": "city", "id": "ala", "name": "阿拉木图", "nameEn": "Almaty", "lat": 43.3521, "lon": 77.0405, "airport": true },
+    { "kind": "city", "id": "sco", "name": "阿克套", "nameEn": "Aktau", "lat": 43.8600, "lon": 51.0922, "airport": true }
+  ]
+}
