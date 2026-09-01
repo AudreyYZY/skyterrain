@@ -240,6 +240,16 @@ import mnlUsu from "./mnl-usu.json" with { type: "json" };
 import mnlTag from "./mnl-tag.json" with { type: "json" };
 import mnlDrp from "./mnl-drp.json" with { type: "json" };
 import cebDvo from "./ceb-dvo.json" with { type: "json" };
+// 印度尼西亚
+import cgkDps from "./cgk-dps.json" with { type: "json" };
+import cgkSub from "./cgk-sub.json" with { type: "json" };
+import cgkKno from "./cgk-kno.json" with { type: "json" };
+import cgkUpg from "./cgk-upg.json" with { type: "json" };
+import cgkBpn from "./cgk-bpn.json" with { type: "json" };
+import cgkPkn from "./cgk-pkn.json" with { type: "json" };
+import dpsLbj from "./dps-lbj.json" with { type: "json" };
+import upgMdc from "./upg-mdc.json" with { type: "json" };
+import cgkYia from "./cgk-yia.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -442,4 +452,13 @@ export const ALL_ROUTES: FlightRoute[] = [
   mnlTag,
   mnlDrp,
   cebDvo,
+  cgkDps,
+  cgkSub,
+  cgkKno,
+  cgkUpg,
+  cgkBpn,
+  cgkPkn,
+  dpsLbj,
+  upgMdc,
+  cgkYia,
 ] as unknown as FlightRoute[];

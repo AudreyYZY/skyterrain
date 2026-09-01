@@ -1,0 +1,17 @@
+{
+  "id": "dps-lbj",
+  "name": "登巴萨 — 拉布安巴焦",
+  "nameEn": "Denpasar — Labuan Bajo",
+  "description": "林贾尼火山 · 科莫多国家公园",
+  "descriptionEn": "Mount Rinjani · Komodo National Park",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "巴迪克航空", "airlineEn": "Batik Air", "flightNo": "ID6538", "aircraft": "Airbus A320", "depIata": "DPS", "arrIata": "LBJ", "durationMin": 80 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "dps", "name": "登巴萨", "nameEn": "Denpasar", "lat": -8.7467, "lon": 115.1667, "airport": true },
+    { "kind": "terrain", "terrainId": "mount-rinjani" },
+    { "kind": "terrain", "terrainId": "komodo-national-park" },
+    { "kind": "city", "id": "lbj", "name": "拉布安巴焦", "nameEn": "Labuan Bajo", "lat": -8.4864, "lon": 119.8892, "airport": true }
+  ]
+}

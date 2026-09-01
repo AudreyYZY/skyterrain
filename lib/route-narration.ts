@@ -4119,6 +4119,159 @@ export const ROUTE_NARRATION: Record<
       "Cebu to Davao is about 65 minutes, same time zone, operated by Cebu Pacific (Airbus A320) as one of the Philippines' domestic routes. Mactan-Cebu International Airport is about 16 km from central Cebu City; Francisco Bangoy International Airport is about 11 km from central Davao.",
     },
   },
+
+  "cgk-dps": {
+    study: {
+    "zh-CN":
+      "雅加达飞登巴萨，是印度尼西亚客流量最大的国内航线，全程约990公里，连接首都与巴厘岛。飞机离开雅加达后向东南飞行，脚下先掠过爪哇岛西部的沿海平原与稻田，随后进入中爪哇火山带上空。" +
+      "飞机继续向东南飞行，可见默拉皮火山标志性的圆锥形轮廓——这是印度尼西亚最活跃的火山，山顶常年蒸汽缭绕；越过默拉皮后，飞机进入东爪哇空域，布罗莫—腾格尔破火山口的灰白色沙海在云隙间隐约可辨，四座次生火山锥点缀其中。最终飞机跨越巴厘海峡，降落在登巴萨——巴厘岛唯一的商业机场所在地。",
+    "en-US":
+      "Flying from Jakarta to Denpasar is Indonesia's busiest domestic route, spanning about 990 km and connecting the capital to Bali. After leaving Jakarta the flight heads southeast, first passing over the coastal plains and rice paddies of western Java before entering the volcanic belt of central Java." +
+      " The flight continues southeast, Mount Merapi's iconic conical outline visible below — Indonesia's most active volcano, its summit perpetually wreathed in steam; past Merapi, the flight enters East Javanese airspace, the grey-white sand sea of the Bromo Tengger caldera faintly visible through the clouds, dotted with four secondary cones. The flight then crosses the Bali Strait, landing in Denpasar, home to Bali's only commercial airport.",
+    },
+    travel: {
+    "zh-CN":
+      "雅加达到登巴萨飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型），是印尼客流量最大的单一航线。苏加诺—哈达国际机场距雅加达市区约20公里；伍拉赖国际机场距登巴萨市区约13公里。",
+    "en-US":
+      "Jakarta to Denpasar is about 100 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as Indonesia's single busiest domestic route. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Ngurah Rai International Airport is about 13 km from central Denpasar.",
+    },
+  },
+
+  "cgk-sub": {
+    study: {
+    "zh-CN":
+      "雅加达飞泗水，是贯穿爪哇岛的核心航线，全程约690公里，连接岛屿西端与东端两座最大城市。飞机离开雅加达后向东飞行，脚下是爪哇岛北部沿海密集的城镇与稻田，逐渐过渡为中爪哇的火山地带。" +
+      "飞机继续向东飞行，默拉皮火山标志性的圆锥形轮廓从云层间显露，这座活火山山顶常年冒出蒸汽，是日惹以北最醒目的地标；越过默拉皮后，飞机沿爪哇岛北岸继续向东，最终降落在泗水——爪哇岛东部最大的港口城市，也是前往布罗莫火山的门户。",
+    "en-US":
+      "Flying from Jakarta to Surabaya is the core route running the length of Java, spanning about 690 km and connecting the island's two largest cities at its western and eastern ends. After leaving Jakarta the flight heads east, over the densely settled towns and rice paddies of Java's north coast, gradually giving way to the volcanic terrain of central Java." +
+      " The flight continues east, Mount Merapi's conical outline emerging through the clouds — this active volcano, perpetually steaming at its summit, is the most prominent landmark north of Yogyakarta; past Merapi, the flight continues east along Java's north coast, landing in Surabaya, the largest port city in eastern Java and the gateway to Mount Bromo.",
+    },
+    travel: {
+    "zh-CN":
+      "雅加达到泗水飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型），全天多个班次往返。苏加诺—哈达国际机场距雅加达市区约20公里；朱安达国际机场距泗水市区约20公里。",
+    "en-US":
+      "Jakarta to Surabaya is about 100 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as one of Indonesia's domestic routes, with multiple daily flights. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Juanda International Airport is about 20 km from central Surabaya.",
+    },
+  },
+
+  "cgk-kno": {
+    study: {
+    "zh-CN":
+      "雅加达飞棉兰，是连接爪哇岛与苏门答腊岛的核心航线，全程约1390公里，飞行方向大致向西北跨越爪哇海。飞机离开雅加达后向西北飞行，脚下先掠过爪哇海开阔水域，逐渐接近苏门答腊岛东南海岸。" +
+      "飞机继续向西北飞行，逾两小时后接近北苏门答腊上空，多巴湖——世界最大的火山破火山口湖之一——的轮廓在云隙间隐约可辨，湖心的萨莫西岛清晰可见；越过多巴湖后，飞机继续向西北飞行，最终降落在棉兰——苏门答腊岛最大城市，也是探索多巴湖与武吉拉旺猩猩保护区的门户。",
+    "en-US":
+      "Flying from Jakarta to Medan is the core route linking Java with Sumatra, spanning about 1,390 km and heading broadly northwest across the Java Sea. After leaving Jakarta the flight heads northwest, first crossing the open waters of the Java Sea before approaching Sumatra's southeastern coast." +
+      " The flight continues northwest; after more than two hours it approaches North Sumatran airspace, the outline of Lake Toba — one of the world's largest volcanic caldera lakes — faintly visible through the clouds, Samosir Island clearly distinguishable at its centre. Past Lake Toba, the flight continues northwest, landing in Medan, Sumatra's largest city and the gateway to Lake Toba and the Bukit Lawang orangutan sanctuary.",
+    },
+    travel: {
+    "zh-CN":
+      "雅加达到棉兰飞约145分钟，同一时区，是鹰航印尼GA118航班运营的国内航线之一（波音737-800机型，每周7班）。苏加诺—哈达国际机场距雅加达市区约20公里；瓜拉纳姆国际机场距棉兰市区约39公里。",
+    "en-US":
+      "Jakarta to Medan is about 145 minutes, same time zone, operated by Garuda Indonesia flight GA118 (Boeing 737-800, 7 flights weekly) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Kualanamu International Airport is about 39 km from central Medan.",
+    },
+  },
+
+  "cgk-upg": {
+    study: {
+    "zh-CN":
+      "雅加达飞望加锡，是连接爪哇岛与苏拉威西岛的核心航线，全程约1430公里，飞行方向大致向东跨越爪哇海与弗洛雷斯海。飞机离开雅加达后向东飞行，脚下先掠过爪哇海开阔水域，此后大半程飞越印尼群岛间的海域。" +
+      "飞机继续向东飞行，逾两小时后跨越望加锡海峡，抵近苏拉威西岛西南海岸，最终降落在望加锡——苏拉威西岛最大城市与主要港口，历史上是布吉族传统木造帆船（皮尼西船）航海文化的发源地，也是前往塔纳托拉查高地的门户。",
+    "en-US":
+      "Flying from Jakarta to Makassar is the core route linking Java with Sulawesi, spanning about 1,430 km and heading broadly east across the Java Sea and the Flores Sea. After leaving Jakarta the flight heads east, first crossing the open waters of the Java Sea, with most of the route flying over the waters between Indonesia's islands." +
+      " The flight continues east; after more than two hours it crosses the Makassar Strait and approaches Sulawesi's southwestern coast, landing in Makassar, Sulawesi's largest city and main port, historically the birthplace of the Bugis people's traditional wooden pinisi schooner seafaring culture, and the gateway to the Tana Toraja highlands.",
+    },
+    travel: {
+    "zh-CN":
+      "雅加达到望加锡飞约150分钟，同一时区，是鹰航印尼GA608航班运营的国内航线之一（空客A330-900机型）。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹哈桑努丁国际机场距望加锡市区约21公里。",
+    "en-US":
+      "Jakarta to Makassar is about 150 minutes, same time zone, operated by Garuda Indonesia flight GA608 (Airbus A330-900) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Sultan Hasanuddin International Airport is about 21 km from central Makassar.",
+    },
+  },
+
+  "cgk-bpn": {
+    study: {
+    "zh-CN":
+      "雅加达飞巴厘巴板，是连接爪哇岛与加里曼丹岛（婆罗洲印尼部分）的核心航线，全程约1170公里，飞行方向大致向东北跨越爪哇海与望加锡海峡，是印尼三大主岛之间空中联系的重要一环。飞机离开雅加达后向东北飞行，脚下先掠过爪哇海开阔水域，此后大部分航程飞越海域、少见陆地地貌。" +
+      "飞机继续向东北飞行，逾两小时后跨越望加锡海峡，抵近加里曼丹岛东南海岸，最终降落在巴厘巴板——东加里曼丹省的石油工业城市，也是通往印尼正在建设中的新首都努桑塔拉的主要空中门户，近年因迁都项目建设持续升温，是观察印尼国家发展进程的一处窗口。",
+    "en-US":
+      "Flying from Jakarta to Balikpapan is the core route linking Java with Kalimantan (Indonesia's portion of Borneo), spanning about 1,170 km and heading broadly northeast across the Java Sea and the Makassar Strait. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea, with most of the route flown over open water." +
+      " The flight continues northeast; after more than two hours it crosses the Makassar Strait and approaches Kalimantan's southeastern coast, landing in Balikpapan, East Kalimantan's oil-industry city and the main air gateway to Nusantara, Indonesia's new capital currently under construction.",
+    },
+    travel: {
+    "zh-CN":
+      "雅加达到巴厘巴板飞约135分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型）。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹阿吉穆罕默德苏莱曼机场距巴厘巴板市区约11公里。",
+    "en-US":
+      "Jakarta to Balikpapan is about 135 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Sultan Aji Muhammad Sulaiman Airport is about 11 km from central Balikpapan.",
+    },
+  },
+
+  "cgk-pkn": {
+    study: {
+    "zh-CN":
+      "雅加达飞邦卡兰文，是通往加里曼丹岛热带雨林与红毛猩猩保育区的重要航线，全程约670公里。飞机离开雅加达后向东北飞行，脚下先掠过爪哇海开阔水域，随后逐渐接近加里曼丹岛南部海岸。" +
+      "飞机继续向东北飞行，可见加里曼丹岛南部低地大片墨绿色的泥炭沼泽林与热带雨林，塞孔耶尔河蜿蜒的河道在林间隐约可辨，这里是丹绒普丁国家公园的核心区域；最终飞机降落在邦卡兰文——中加里曼丹省一座沿河小城，是前往国家公园观察野生红毛猩猩的主要门户。",
+    "en-US":
+      "Flying from Jakarta to Pangkalan Bun is an important route into Kalimantan's tropical rainforest and orangutan conservation area, spanning about 670 km. After leaving Jakarta the flight heads northeast, first crossing the open waters of the Java Sea before gradually approaching Kalimantan's southern coast." +
+      " The flight continues northeast, extensive deep-green peat swamp forest and tropical rainforest visible across Kalimantan's southern lowlands, the winding course of the Sekonyer River faintly traceable through the trees — the core area of Tanjung Puting National Park. The flight then lands in Pangkalan Bun, a riverside town in Central Kalimantan and the main gateway for visiting the park to observe wild orangutans.",
+    },
+    travel: {
+    "zh-CN":
+      "雅加达到邦卡兰文飞约85分钟，同一时区，是巴迪克航空运营的国内航班之一（空客A320机型）。苏加诺—哈达国际机场距雅加达市区约20公里；伊斯坎达尔机场距邦卡兰文市区约3公里。",
+    "en-US":
+      "Jakarta to Pangkalan Bun is about 85 minutes, same time zone, operated by Batik Air (Airbus A320) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Iskandar Airport is about 3 km from central Pangkalan Bun.",
+    },
+  },
+
+  "dps-lbj": {
+    study: {
+    "zh-CN":
+      "登巴萨飞拉布安巴焦，是巴厘岛通往科莫多国家公园的热门旅游航线，全程约470公里，飞行方向大致向东跨越龙目海峡与松巴哇岛上空。飞机离开登巴萨后向东飞行，脚下先掠过龙目岛，林贾尼火山高耸的锥形轮廓与山体内的塞加拉阿纳克火山口湖清晰可辨。" +
+      "越过林贾尼后，飞机继续向东飞行，掠过松巴哇岛与松巴岛之间的海域，逐渐接近弗洛雷斯海西端；科莫多国家公园干旱的稀树草原岛群在云隙间显现，最终降落在拉布安巴焦——弗洛雷斯岛西端的港口小镇，是探索科莫多巨蜥栖息地的核心门户。",
+    "en-US":
+      "Flying from Denpasar to Labuan Bajo is a popular tourist route from Bali to Komodo National Park, spanning about 470 km and heading broadly east across the Lombok Strait and over Sumbawa. After leaving Denpasar the flight heads east, passing over Lombok, the towering conical outline of Mount Rinjani and the Segara Anak crater lake within it clearly visible below." +
+      " Past Rinjani, the flight continues east over the waters between Sumbawa and Sumba, gradually approaching the western Flores Sea; the dry savanna islands of Komodo National Park come into view through the clouds, before landing in Labuan Bajo, a small port town at the western tip of Flores and the core gateway to the Komodo dragon's habitat.",
+    },
+    travel: {
+    "zh-CN":
+      "登巴萨到拉布安巴焦飞约80分钟，同一时区，是巴迪克航空运营的国内航班之一（空客A320机型，每周28班）。伍拉赖国际机场距登巴萨市区约13公里；科莫多机场距拉布安巴焦市区约2公里。",
+    "en-US":
+      "Denpasar to Labuan Bajo is about 80 minutes, same time zone, operated by Batik Air (Airbus A320, 28 flights weekly) as one of Indonesia's domestic routes. Ngurah Rai International Airport is about 13 km from central Denpasar; Komodo Airport is about 2 km from central Labuan Bajo.",
+    },
+  },
+
+  "upg-mdc": {
+    study: {
+    "zh-CN":
+      "望加锡飞万鸦老，是贯穿苏拉威西岛的核心航线，全程约950公里，连接岛屿西南与东北两端的主要城市。飞机离开望加锡后向东北飞行，脚下先掠过苏拉威西岛西南半岛山地，塔纳托拉查高地层叠的梯田与灰白色喀斯特山地在云隙间隐约可辨。" +
+      "越过塔纳托拉查后，飞机继续向东北飞行，沿苏拉威西岛中部山地上空前行，逐渐接近岛屿东北端的米纳哈萨半岛；最终降落在万鸦老——北苏拉威西省首府，是探索布纳肯国家公园珊瑚礁潜点的核心门户。",
+    "en-US":
+      "Flying from Makassar to Manado is the core route running the length of Sulawesi, spanning about 950 km and connecting the island's major cities at its southwestern and northeastern ends. After leaving Makassar the flight heads northeast, first passing over the mountainous terrain of Sulawesi's southwestern peninsula, the tiered rice terraces and grey-white karst mountains of the Tana Toraja highlands faintly visible through the clouds." +
+      " Past Tana Toraja, the flight continues northeast over Sulawesi's central highlands, gradually approaching the Minahasa Peninsula at the island's northeastern tip, before landing in Manado, capital of North Sulawesi province and the core gateway to the coral reef dive sites of Bunaken National Park.",
+    },
+    travel: {
+    "zh-CN":
+      "望加锡到万鸦老飞约115分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型）。苏丹哈桑努丁国际机场距望加锡市区约21公里；萨姆拉图兰吉国际机场距万鸦老市区约13公里。",
+    "en-US":
+      "Makassar to Manado is about 115 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as one of Indonesia's domestic routes. Sultan Hasanuddin International Airport is about 21 km from central Makassar; Sam Ratulangi International Airport is about 13 km from central Manado.",
+    },
+  },
+
+  "cgk-yia": {
+    study: {
+    "zh-CN":
+      "雅加达飞日惹，是爪哇岛内连接首都与文化古城的重要航线，全程约424公里，飞行时间不足一个半小时，是印尼国内最繁忙的短途航线之一。飞机离开雅加达后向东南飞行，脚下先掠过爪哇岛西部的稻田与丘陵，逐渐接近中爪哇火山高原地带。" +
+      "飞机继续向东南飞行，迪昂高原地热活跃的火山口群与硫磺喷气孔在云隙间隐约可辨，高原上保留有7至8世纪印度教神庙群遗址；越过迪昂高原后，飞机降落在日惹——爪哇宫廷文化中心，也是探索婆罗浮屠、普兰巴南神庙与默拉皮火山的门户城市。",
+    "en-US":
+      "Flying from Jakarta to Yogyakarta is an important intra-Java route linking the capital with a historic cultural city, spanning about 424 km. After leaving Jakarta the flight heads southeast, first passing over the rice paddies and hills of western Java before approaching the volcanic highlands of central Java." +
+      " The flight continues southeast, the geothermally active crater cluster and sulphur fumaroles of the Dieng Plateau faintly visible through the clouds, the highland preserving 7th–8th century Hindu temple ruins; past Dieng, the flight lands in Yogyakarta, the centre of Javanese court culture and the gateway to Borobudur, Prambanan and Mount Merapi.",
+    },
+    travel: {
+    "zh-CN":
+      "雅加达到日惹飞约75分钟，同一时区，是鹰航印尼GA206航班运营的国内航线之一（波音737-800机型，每日运营）。苏加诺—哈达国际机场距雅加达市区约20公里；日惹国际机场（YIA）距日惹市区约45公里，有机场铁路直达。",
+    "en-US":
+      "Jakarta to Yogyakarta is about 75 minutes, same time zone, operated by Garuda Indonesia flight GA206 (Boeing 737-800, daily service) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Yogyakarta International Airport (YIA) is about 45 km from central Yogyakarta, with a direct airport rail link.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

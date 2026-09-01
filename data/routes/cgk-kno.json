@@ -1,0 +1,16 @@
+{
+  "id": "cgk-kno",
+  "name": "雅加达 — 棉兰",
+  "nameEn": "Jakarta — Medan",
+  "description": "多巴湖",
+  "descriptionEn": "Lake Toba",
+  "depCountry": "indonesia",
+  "arrCountry": "indonesia",
+  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA118", "aircraft": "Boeing 737-800", "depIata": "CGK", "arrIata": "KNO", "durationMin": 145 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
+    { "kind": "terrain", "terrainId": "lake-toba" },
+    { "kind": "city", "id": "kno", "name": "棉兰", "nameEn": "Medan", "lat": 3.6422, "lon": 98.8853, "airport": true }
+  ]
+}
