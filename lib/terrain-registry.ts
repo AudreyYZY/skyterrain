@@ -12381,6 +12381,93 @@ const TSAGAAN_SUVARGA: TerrainEntry = {
 };
 
 // ============================================================
+// 亚洲 — 菲律宾
+// ============================================================
+
+const MAYON_VOLCANO: TerrainEntry = {
+  id: "mayon-volcano",
+  nameZh: "马荣火山",
+  nameEn: "Mayon Volcano",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "马荣火山主峰", lon: 123.685, lat: 13.2572, elevation: 2462, kind: "peak" },
+  bbox: [123.58, 13.18, 123.79, 13.35],
+  viewFrom: 90,
+  label: { lon: 123.685, lat: 13.11, rotation: 0 },
+  source: "马荣火山：吕宋岛阿尔拜省地标性活火山，海拔2462米，锥体呈近乎完美的对称圆锥形，椭圆度指数低至1.04、为全球层状火山中最低（形态最对称），400年间记录喷发逾49次，是菲律宾最活跃的火山；1938年划设为菲律宾首座国家公园（Britannica/amusingplanet.com WebSearch 2026）",
+};
+
+const TAAL_LAKE: TerrainEntry = {
+  id: "taal-lake",
+  nameZh: "塔阿尔湖",
+  nameEn: "Taal Lake",
+  category: "lake",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "火山岛主火山口湖", lon: 120.9938, lat: 14.0021, elevation: 311, kind: "salt-lake" },
+  bbox: [120.85, 13.90, 121.08, 14.10],
+  viewScale: 1.2,
+  label: { lon: 120.90, lat: 13.85, rotation: 0 },
+  source: "塔阿尔湖：吕宋岛西南部一处火山破火山口湖，面积267平方公里、湖面海拔仅约3米，1754年一次剧烈喷发的大量喷发物堵塞邦西皮特河、切断湖泊与海洋的连通，此后逐渐由咸水湖淡化为淡水湖；湖心矗立“火山岛”（海拔约300米），岛上火山口内又有一处主火山口湖，湖中再有一座“火山点”小岛，构成“湖中岛中湖中岛”的罕见嵌套地貌，自1572年以来记录喷发逾34次（Britannica/livescience.com WebSearch 2026）",
+};
+
+const MOUNT_PINATUBO: TerrainEntry = {
+  id: "mount-pinatubo",
+  nameZh: "皮纳图博火山",
+  nameEn: "Mount Pinatubo",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "皮纳图博火山口湖", lon: 120.35, lat: 15.13, elevation: 1486, kind: "peak" },
+  bbox: [120.27, 15.06, 120.43, 15.20],
+  viewScale: 1.1,
+  label: { lon: 120.35, lat: 15.22, rotation: 0 },
+  source: "皮纳图博火山：1991年6月15日发生20世纪第二大规模火山喷发，喷发柱高逾40公里、喷出岩浆逾10立方公里，火山爆发指数达VEI 6；剧烈喷发导致山顶塌陷形成宽约2.5公里的破火山口，山体高度较喷发前降低逾300米，山顶如今蓄有一汪蓝绿色火山口湖，是菲律宾知名的徒步目的地（USGS/Global Volcanism Program WebSearch 2026）",
+};
+
+const MOUNT_APO: TerrainEntry = {
+  id: "mount-apo",
+  nameZh: "阿波山",
+  nameEn: "Mount Apo",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "阿波山主峰", lon: 125.2725, lat: 6.9875, elevation: 2954, kind: "peak" },
+  bbox: [125.18, 6.90, 125.37, 7.08],
+  label: { lon: 125.27, lat: 6.80, rotation: 0 },
+  source: "阿波山：菲律宾全国最高峰，海拔2954米，是棉兰老岛阿波—塔洛莫山脉的一座休眠层状火山，山体覆盖高大热带硬木林；1936年设立阿波山国家公园，面积约8.09万公顷，是菲律宾鹰等珍稀物种的栖息地（PeakVisor/Britannica WebSearch 2026）",
+};
+
+const MOUNT_PULAG: TerrainEntry = {
+  id: "mount-pulag",
+  nameZh: "普拉格山",
+  nameEn: "Mount Pulag",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "普拉格山主峰", lon: 120.90, lat: 16.5947, elevation: 2928, kind: "peak" },
+  bbox: [120.82, 16.52, 120.98, 16.67],
+  label: { lon: 120.90, lat: 16.44, rotation: 0 },
+  source: "普拉格山：吕宋岛最高峰、菲律宾全国第三高峰，海拔2928米，位于本格特、伊富高与新怡诗夏三省交界；以清晨可见的“云海”景观与观测银河的绝佳视野著称，山体划入普拉格山国家公园，是当地原住民的传统文化圣地（PeakVisor/Wikivoyage WebSearch 2026）",
+};
+
+const CORDILLERA_CENTRAL_LUZON: TerrainEntry = {
+  id: "cordillera-central-luzon",
+  nameZh: "科迪勒拉山脉（吕宋）",
+  nameEn: "Cordillera Central (Luzon)",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "philippines",
+  landmark: { name: "科迪勒拉山脉中段", lon: 120.9, lat: 16.8, elevation: 2000, kind: "peak" },
+  bbox: [120.5, 16.2, 121.4, 18.2],
+  axis: [[120.65, 18.05], [121.1, 16.35]],
+  viewScale: 1.4,
+  label: { lon: 120.75, lat: 17.5, rotation: -15 },
+  source: "科迪勒拉山脉：吕宋岛中北部一条南北长约320公里、东西宽约118公里的山系，是菲律宾海拔最高的山脉，涵盖普拉格山等多座高峰；山脉东南端经卡拉巴略山脉与锡拉马德雷山脉相接，是伊富高梯田等高山农业景观所在的地理骨架（Wikipedia WebSearch 2026）",
+};
+
+// ============================================================
 // 注册表
 // ============================================================
 
@@ -12703,6 +12790,9 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   DARIGANGA_VOLCANIC_FIELD,
   SELENGE_RIVER, TUUL_RIVER, KHERLEN_RIVER, ONON_RIVER,
   EASTERN_STEPPE, KHUSTAIN_NURUU, TSAGAAN_SUVARGA,
+  // ===== 亚洲 / 菲律宾 =====
+  MAYON_VOLCANO, TAAL_LAKE, MOUNT_PINATUBO, MOUNT_APO,
+  MOUNT_PULAG, CORDILLERA_CENTRAL_LUZON,
 ];
 
 /**
