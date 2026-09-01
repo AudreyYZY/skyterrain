@@ -223,6 +223,15 @@ import ubnUlg from "./ubn-ulg.json" with { type: "json" };
 import ubnMxv from "./ubn-mxv.json" with { type: "json" };
 import ubnDlz from "./ubn-dlz.json" with { type: "json" };
 import ubnCoq from "./ubn-coq.json" with { type: "json" };
+// 菲律宾
+import mnlCeb from "./mnl-ceb.json" with { type: "json" };
+import mnlDvo from "./mnl-dvo.json" with { type: "json" };
+import mnlPps from "./mnl-pps.json" with { type: "json" };
+import mnlMph from "./mnl-mph.json" with { type: "json" };
+import mnlUsu from "./mnl-usu.json" with { type: "json" };
+import mnlTag from "./mnl-tag.json" with { type: "json" };
+import mnlDrp from "./mnl-drp.json" with { type: "json" };
+import cebDvo from "./ceb-dvo.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -410,4 +419,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   ubnMxv,
   ubnDlz,
   ubnCoq,
+  mnlCeb,
+  mnlDvo,
+  mnlPps,
+  mnlMph,
+  mnlUsu,
+  mnlTag,
+  mnlDrp,
+  cebDvo,
 ] as unknown as FlightRoute[];

@@ -1,0 +1,15 @@
+{
+  "id": "mnl-ceb",
+  "name": "马尼拉 — 宿务",
+  "nameEn": "Manila — Cebu",
+  "description": "菲律宾国内客流量最大的航线",
+  "descriptionEn": "The Philippines' busiest domestic route",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J557", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "CEB", "durationMin": 95 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
+    { "kind": "city", "id": "ceb", "name": "宿务", "nameEn": "Cebu", "lat": 10.3075, "lon": 123.9794, "airport": true }
+  ]
+}

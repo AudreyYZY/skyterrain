@@ -1,0 +1,16 @@
+{
+  "id": "mnl-dvo",
+  "name": "马尼拉 — 达沃",
+  "nameEn": "Manila — Davao",
+  "description": "米沙鄄群岛 · 甘伦火山",
+  "descriptionEn": "The Visayas · Mount Kanlaon",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "菲律宾航空", "airlineEn": "Philippine Airlines", "flightNo": "PR2803", "aircraft": "Boeing 777", "depIata": "MNL", "arrIata": "DVO", "durationMin": 130 },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
+    { "kind": "terrain", "terrainId": "mount-kanlaon" },
+    { "kind": "city", "id": "dvo", "name": "达沃", "nameEn": "Davao", "lat": 7.1255, "lon": 125.6458, "airport": true }
+  ]
+}

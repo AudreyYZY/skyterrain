@@ -1,0 +1,15 @@
+{
+  "id": "mnl-pps",
+  "name": "马尼拉 — 普林塞萨港",
+  "nameEn": "Manila — Puerto Princesa",
+  "description": "民都洛海峡 · 巴拉望岛",
+  "descriptionEn": "Mindoro Strait · Palawan",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J645", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "PPS", "durationMin": 90 },
+  "cruiseHeight": 8000,
+  "waypoints": [
+    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
+    { "kind": "city", "id": "pps", "name": "普林塞萨港", "nameEn": "Puerto Princesa", "lat": 9.7422, "lon": 118.7583, "airport": true }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "mnl-mph",
+  "name": "马尼拉 — 长滩岛",
+  "nameEn": "Manila — Boracay (Caticlan)",
+  "description": "民都洛岛 · 阿克兰省海岸",
+  "descriptionEn": "Mindoro Island · Aklan coast",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J903", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "MPH", "durationMin": 75 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
+    { "kind": "city", "id": "mph", "name": "长滩岛（卡蒂克兰）", "nameEn": "Boracay (Caticlan)", "lat": 11.9247, "lon": 122.0053, "airport": true }
+  ]
+}

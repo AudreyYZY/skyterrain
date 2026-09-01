@@ -1,0 +1,16 @@
+{
+  "id": "mnl-drp",
+  "name": "马尼拉 — 黎牙实比",
+  "nameEn": "Manila — Legazpi (Bicol)",
+  "description": "比科尔半岛 · 马荣火山",
+  "descriptionEn": "Bicol Peninsula · Mayon Volcano",
+  "depCountry": "philippines",
+  "arrCountry": "philippines",
+  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J321", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "DRP", "durationMin": 60 },
+  "cruiseHeight": 7000,
+  "waypoints": [
+    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
+    { "kind": "terrain", "terrainId": "mayon-volcano" },
+    { "kind": "city", "id": "drp", "name": "黎牙实比（比科尔）", "nameEn": "Legazpi (Bicol)", "lat": 13.1575, "lon": 123.7325, "airport": true }
+  ]
+}
