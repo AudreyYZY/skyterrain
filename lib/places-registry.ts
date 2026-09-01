@@ -239,6 +239,11 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "pl-wielkopolska-slask": { zh: "大波兰与西里西亚", en: "Greater Poland & Silesia", order: 262 },
   "pl-pomorze": { zh: "波美拉尼亚", en: "Pomerania", order: 263 },
   "pl-mazury-podlasie": { zh: "瓦尔米亚—马祖里与波德拉谢", en: "Warmia-Masuria & Podlasie", order: 264 },
+  // 越南（北部→中部→中部高原→南部）
+  "vn-north": { zh: "北部", en: "Northern Vietnam", order: 310 },
+  "vn-central": { zh: "中部", en: "Central Vietnam", order: 311 },
+  "vn-central-highlands": { zh: "中部高原", en: "Central Highlands", order: 312 },
+  "vn-south": { zh: "南部", en: "Southern Vietnam", order: 313 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -281,6 +286,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "thailand", nameZh: "泰国", nameEn: "Thailand" },
   { country: "south-korea", nameZh: "韩国", nameEn: "South Korea" },
   { country: "poland", nameZh: "波兰", nameEn: "Poland" },
+  { country: "vietnam", nameZh: "越南", nameEn: "Vietnam" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -2225,6 +2231,79 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "WAW", nameZh: "华沙肖邦机场", nameEn: "Warsaw Chopin Airport", lon: 20.9671, lat: 52.1657 },
     source: "比亚韦斯托克市中心 53.1325,23.1688；本地机场客运航班有限，最近有稳定定期航班的机场为华沙肖邦机场（距市区约180km）：公开资料",
   },
+  // ── 越南 ──────────────────────────────────────────────
+  {
+    id: "hanoi", nameZh: "河内", nameEn: "Hanoi", country: "vietnam", tier: "capital", zone: "vn-north",
+    lon: 105.8342, lat: 21.0278,
+    airport: { iata: "HAN", nameZh: "内排国际机场", nameEn: "Noi Bai International", lon: 105.8073, lat: 21.2212 },
+    source: "河内市中心 21.0278,105.8342；HAN 机场：公开资料",
+  },
+  {
+    id: "ho-chi-minh-city", nameZh: "胡志明市", nameEn: "Ho Chi Minh City", country: "vietnam", tier: "major", zone: "vn-south",
+    lon: 106.7009, lat: 10.7769,
+    airport: { iata: "SGN", nameZh: "新山一国际机场", nameEn: "Tan Son Nhat International", lon: 106.6520, lat: 10.8188 },
+    source: "胡志明市中心 10.7769,106.7009；SGN 机场：公开资料",
+  },
+  {
+    id: "da-nang", nameZh: "岘港", nameEn: "Da Nang", country: "vietnam", tier: "major", zone: "vn-central",
+    lon: 108.2022, lat: 16.0544,
+    airport: { iata: "DAD", nameZh: "岘港国际机场", nameEn: "Da Nang International", lon: 108.1994, lat: 16.0439 },
+    source: "岘港市中心 16.0544,108.2022；DAD 机场：公开资料",
+  },
+  {
+    id: "hoi-an", nameZh: "会安", nameEn: "Hoi An", country: "vietnam", tier: "notable", zone: "vn-central",
+    lon: 108.3380, lat: 15.8801,
+    airport: { iata: "DAD", nameZh: "岘港国际机场", nameEn: "Da Nang International", lon: 108.1994, lat: 16.0439 },
+    source: "会安古城一带 15.8801,108.3380；本地无商业机场，最近机场为岘港国际机场（距古城约30km）：公开资料",
+  },
+  {
+    id: "hue", nameZh: "顺化", nameEn: "Hue", country: "vietnam", tier: "notable", zone: "vn-central",
+    lon: 107.5909, lat: 16.4637,
+    airport: { iata: "HUI", nameZh: "富牌国际机场", nameEn: "Phu Bai International", lon: 107.7033, lat: 16.4015 },
+    source: "顺化市中心 16.4637,107.5909；HUI 机场：公开资料",
+  },
+  {
+    id: "sapa", nameZh: "沙巴", nameEn: "Sapa", country: "vietnam", tier: "notable", zone: "vn-north",
+    lon: 103.8438, lat: 22.3364,
+    airport: { iata: "HAN", nameZh: "内排国际机场", nameEn: "Noi Bai International", lon: 105.8073, lat: 21.2212 },
+    source: "沙巴镇中心 22.3364,103.8438；本地及老街省均无机场，最近机场为河内内排国际机场（距沙巴约320km）：公开资料",
+  },
+  {
+    id: "ha-long-city", nameZh: "下龙市", nameEn: "Ha Long City", country: "vietnam", tier: "notable", zone: "vn-north",
+    lon: 107.0839, lat: 20.9101,
+    airport: { iata: "VDO", nameZh: "云屯国际机场", nameEn: "Van Don International", lon: 107.4144, lat: 21.1183 },
+    source: "下龙市中心 20.9101,107.0839；VDO 机场（距市区约50km）：公开资料",
+  },
+  {
+    id: "nha-trang-city", nameZh: "芽庄", nameEn: "Nha Trang", country: "vietnam", tier: "notable", zone: "vn-central",
+    lon: 109.1967, lat: 12.2388,
+    airport: { iata: "CXR", nameZh: "金兰国际机场", nameEn: "Cam Ranh International", lon: 109.2196, lat: 11.9982 },
+    source: "芽庄市中心 12.2388,109.1967；CXR 机场（距市区约35km）：公开资料",
+  },
+  {
+    id: "da-lat", nameZh: "大叻", nameEn: "Da Lat", country: "vietnam", tier: "notable", zone: "vn-central-highlands",
+    lon: 108.4419, lat: 11.9404,
+    airport: { iata: "DLI", nameZh: "莲香机场", nameEn: "Lien Khuong Airport", lon: 108.3667, lat: 11.7500 },
+    source: "大叻市中心 11.9404,108.4419；DLI 机场（距市区约30km）：公开资料",
+  },
+  {
+    id: "can-tho", nameZh: "芹苴", nameEn: "Can Tho", country: "vietnam", tier: "notable", zone: "vn-south",
+    lon: 105.7469, lat: 10.0452,
+    airport: { iata: "VCA", nameZh: "芹苴国际机场", nameEn: "Can Tho International", lon: 105.7122, lat: 10.0851 },
+    source: "芹苴市中心 10.0452,105.7469；VCA 机场：公开资料",
+  },
+  {
+    id: "phu-quoc-city", nameZh: "阳东", nameEn: "Duong Dong", country: "vietnam", tier: "notable", zone: "vn-south",
+    lon: 103.9670, lat: 10.2170,
+    airport: { iata: "PQC", nameZh: "富国国际机场", nameEn: "Phu Quoc International", lon: 103.9950, lat: 10.1700 },
+    source: "阳东镇一带 10.2170,103.9670；PQC 机场（距镇区约15km）：公开资料",
+  },
+  {
+    id: "ninh-binh", nameZh: "宁平", nameEn: "Ninh Binh", country: "vietnam", tier: "notable", zone: "vn-north",
+    lon: 105.9744, lat: 20.2506,
+    airport: { iata: "HAN", nameZh: "内排国际机场", nameEn: "Noi Bai International", lon: 105.8073, lat: 21.2212 },
+    source: "宁平市中心 20.2506,105.9744；本地无商业机场，最近机场为河内内排国际机场（距市区约90km）：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -2235,6 +2314,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   japan: "asia",
   thailand: "asia",
   "south-korea": "asia",
+  vietnam: "asia",
   australia: "oceania",
   "new-zealand": "oceania",
   usa: "north-america",

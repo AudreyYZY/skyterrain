@@ -210,6 +210,13 @@ import wawWro from "./waw-wro.json" with { type: "json" };
 import wawPoz from "./waw-poz.json" with { type: "json" };
 import wawRze from "./waw-rze.json" with { type: "json" };
 import wawSzz from "./waw-szz.json" with { type: "json" };
+// 越南
+import hanSgn from "./han-sgn.json" with { type: "json" };
+import hanDad from "./han-dad.json" with { type: "json" };
+import sgnPqc from "./sgn-pqc.json" with { type: "json" };
+import hanVca from "./han-vca.json" with { type: "json" };
+import hanHui from "./han-hui.json" with { type: "json" };
+import dadSgn from "./dad-sgn.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -386,4 +393,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   wawPoz,
   wawRze,
   wawSzz,
+  hanSgn,
+  hanDad,
+  sgnPqc,
+  hanVca,
+  hanHui,
+  dadSgn,
 ] as unknown as FlightRoute[];

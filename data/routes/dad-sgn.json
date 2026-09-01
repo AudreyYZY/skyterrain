@@ -1,0 +1,16 @@
+{
+  "id": "dad-sgn",
+  "name": "岘港 — 胡志明市",
+  "nameEn": "Da Nang — Ho Chi Minh City",
+  "description": "西原高原",
+  "descriptionEn": "Central Highlands (Tây Nguyên)",
+  "depCountry": "vietnam",
+  "arrCountry": "vietnam",
+  "flight": { "airline": "竹子航空", "airlineEn": "Bamboo Airways", "flightNo": "QH151", "aircraft": "Airbus A321", "depIata": "DAD", "arrIata": "SGN", "durationMin": 90 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "dad", "name": "岘港", "nameEn": "Da Nang", "lat": 16.0439, "lon": 108.1994, "airport": true },
+    { "kind": "terrain", "terrainId": "central-highlands-tay-nguyen" },
+    { "kind": "city", "id": "sgn", "name": "胡志明市", "nameEn": "Ho Chi Minh City", "lat": 10.8188, "lon": 106.6520, "airport": true }
+  ]
+}

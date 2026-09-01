@@ -2194,6 +2194,73 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
   bialystok: [
     { nameZh: "布拉尼茨基宫", nameEn: "Branicki Palace", lon: 23.1636, lat: 53.1300, kind: "landmark" },
   ],
+  // 越南
+  hanoi: [
+    { nameZh: "还剑湖", nameEn: "Hoan Kiem Lake", lon: 105.8523, lat: 21.0287, kind: "nature" },
+    { nameZh: "三十六古街", nameEn: "Old Quarter", lon: 105.8497, lat: 21.0335, kind: "district" },
+    { nameZh: "胡志明主席陵", nameEn: "Ho Chi Minh Mausoleum", lon: 105.8342, lat: 21.0369, kind: "landmark" },
+    { nameZh: "文庙国子监", nameEn: "Temple of Literature", lon: 105.8355, lat: 21.0274, kind: "landmark" },
+    { nameZh: "西湖", nameEn: "West Lake", lon: 105.8194, lat: 21.0583, kind: "nature" },
+  ],
+  "ho-chi-minh-city": [
+    { nameZh: "红教堂", nameEn: "Notre-Dame Cathedral", lon: 106.6994, lat: 10.7798, kind: "landmark" },
+    { nameZh: "战争遗迹博物馆", nameEn: "War Remnants Museum", lon: 106.6919, lat: 10.7796, kind: "landmark" },
+    { nameZh: "范五老街", nameEn: "Pham Ngu Lao Street", lon: 106.6928, lat: 10.7681, kind: "district" },
+    { nameZh: "第五郡唐人街", nameEn: "Cholon (Chinatown)", lon: 106.6667, lat: 10.7500, kind: "district" },
+  ],
+  "da-nang": [
+    { nameZh: "美溪海滩", nameEn: "My Khe Beach", lon: 108.2472, lat: 16.0544, kind: "nature" },
+    { nameZh: "龙桥", nameEn: "Dragon Bridge", lon: 108.2233, lat: 16.0611, kind: "landmark" },
+    { nameZh: "五行山", nameEn: "Marble Mountains (Ngu Hanh Son)", lon: 108.2606, lat: 16.0044, kind: "nature" },
+    { nameZh: "韩江", nameEn: "Han River", lon: 108.2208, lat: 16.0700, kind: "nature" },
+  ],
+  "hoi-an": [
+    { nameZh: "日本廊桥", nameEn: "Japanese Covered Bridge", lon: 108.3260, lat: 15.8794, kind: "landmark" },
+    { nameZh: "会安中央市场", nameEn: "Hoi An Central Market", lon: 108.3300, lat: 15.8783, kind: "district" },
+    { nameZh: "秋盆河", nameEn: "Thu Bon River", lon: 108.3280, lat: 15.8790, kind: "nature" },
+  ],
+  hue: [
+    { nameZh: "顺化皇城", nameEn: "Hue Imperial City", lon: 107.5789, lat: 16.4698, kind: "landmark" },
+    { nameZh: "启定帝陵", nameEn: "Tomb of Khai Dinh", lon: 107.5750, lat: 16.4172, kind: "landmark" },
+    { nameZh: "明命帝陵", nameEn: "Tomb of Minh Mang", lon: 107.5619, lat: 16.4453, kind: "landmark" },
+    { nameZh: "天姥寺", nameEn: "Thien Mu Pagoda", lon: 107.5544, lat: 16.4536, kind: "landmark" },
+  ],
+  sapa: [
+    { nameZh: "孟兴谷", nameEn: "Muong Hoa Valley", lon: 103.8500, lat: 22.3167, kind: "nature" },
+    { nameZh: "叶湖村", nameEn: "Cat Cat Village", lon: 103.8306, lat: 22.3306, kind: "district" },
+    { nameZh: "爱情瀑布", nameEn: "Love Waterfall", lon: 103.7833, lat: 22.3667, kind: "nature" },
+  ],
+  "ha-long-city": [
+    { nameZh: "斗鸡石", nameEn: "Hon Trong Mai (Fighting Cocks Islet)", lon: 107.0667, lat: 20.9101, kind: "nature" },
+    { nameZh: "天宫洞", nameEn: "Thien Cung Cave", lon: 107.0500, lat: 20.9083, kind: "nature" },
+    { nameZh: "巴维山缆车", nameEn: "Queen Cable Car", lon: 107.0644, lat: 20.9539, kind: "landmark" },
+  ],
+  "nha-trang-city": [
+    { nameZh: "婆那加占婆塔", nameEn: "Po Nagar Cham Towers", lon: 109.1953, lat: 12.2664, kind: "landmark" },
+    { nameZh: "珍珠岛", nameEn: "Vinpearl", lon: 109.2264, lat: 12.2119, kind: "landmark" },
+    { nameZh: "琴石岬", nameEn: "Hon Chong Promontory", lon: 109.1922, lat: 12.2444, kind: "nature" },
+  ],
+  "da-lat": [
+    { nameZh: "春香湖", nameEn: "Xuan Huong Lake", lon: 108.4419, lat: 11.9428, kind: "nature" },
+    { nameZh: "疯狂屋", nameEn: "Crazy House", lon: 108.4386, lat: 11.9414, kind: "landmark" },
+    { nameZh: "大叻火车站", nameEn: "Da Lat Railway Station", lon: 108.4489, lat: 11.9433, kind: "landmark" },
+  ],
+  "can-tho": [
+    { nameZh: "凤凰水上市场", nameEn: "Cai Rang Floating Market", lon: 105.7292, lat: 10.0217, kind: "nature" },
+    { nameZh: "宁桥", nameEn: "Ninh Kieu Bridge", lon: 105.7822, lat: 10.0347, kind: "landmark" },
+    { nameZh: "芹苴博物馆", nameEn: "Can Tho Museum", lon: 105.7794, lat: 10.0333, kind: "landmark" },
+  ],
+  "phu-quoc-city": [
+    { nameZh: "阳东夜市", nameEn: "Duong Dong Night Market", lon: 103.9633, lat: 10.2183, kind: "district" },
+    { nameZh: "安特跨海缆车", nameEn: "An Thoi Cable Car", lon: 103.9758, lat: 10.0122, kind: "landmark" },
+    { nameZh: "富国国家公园", nameEn: "Phu Quoc National Park", lon: 103.9000, lat: 10.3500, kind: "nature" },
+  ],
+  "ninh-binh": [
+    { nameZh: "陆龙湾（三谷）", nameEn: "Tam Coc", lon: 105.9333, lat: 20.2167, kind: "nature" },
+    { nameZh: "华闾古都遗址", nameEn: "Hoa Lu Ancient Capital", lon: 105.9139, lat: 20.2903, kind: "landmark" },
+    { nameZh: "白亭寺", nameEn: "Bai Dinh Pagoda", lon: 105.8642, lat: 20.2611, kind: "landmark" },
+    { nameZh: "木庵溶洞与观景台", nameEn: "Mua Cave", lon: 105.9294, lat: 20.2469, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
