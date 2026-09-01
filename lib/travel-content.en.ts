@@ -322,7 +322,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "Mandarin is universal; the local Shanghainese dialect is still common among older residents. The urban service sector is developed, rule-bound and efficient. No tipping. The plane-tree streets of the old concessions are strong on cafes, boutiques and Western food; local Shanghai cuisine is rich, soy-braised and a little sweet. Summers are hot and humid, and interiors are heavily air-conditioned.",
     seeAndDo:
-      "See the skyline across the river from the Bund, and go up one or two observation towers in Pudong for the overview; walk the old concessions (around Wukang Road, Hengshan Road, Tianzifang) for the historic architecture; Yu Garden and the City God Temple are the old town's garden and market. An hour by high-speed rail reaches Suzhou, Hangzhou and canal towns like Wuzhen. The city's museums, galleries and performances are among the best in the country.",
+      "See the skyline across the river from the Bund — Lujiazui's Oriental Pearl Tower (the pink-orbed TV tower and Shanghai's most recognisable landmark), Jin Mao Tower and the Shanghai Tower anchor the skyline, and you can go up the Oriental Pearl or the Shanghai Tower for the overview; walk the old concessions (around Wukang Road, Hengshan Road, Tianzifang) for the historic architecture; Yu Garden and the City God Temple are the old town's garden and market. An hour by high-speed rail reaches Suzhou, Hangzhou and canal towns like Wuzhen. The city's museums, galleries and performances are among the best in the country.",
     whenAndTips:
       "Spring (late March–May) and autumn (October–November) have the best weather. Summer (June–August) is hot and humid; the plum-rain season (roughly mid-June to mid-July) brings persistent drizzle, and July–September can be affected by typhoons; winter (December–February) is damp and cold — usually 0–10 °C but feeling colder, with snow rare. Golden-week holidays leave the sights and the surrounding canal towns extremely crowded. Book ahead for popular exhibitions and shows.",
   },
@@ -337,7 +337,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The local language is Cantonese, with Mandarin also fully usable. One centre of life is eating — morning tea (yum cha) from early to midday, late-night meals until the small hours; sweet soups, roast meats and long-simmered soups are everyday food. No tipping. The climate is hot and humid, and local food thinking includes ideas about 'clearing damp' and 'reducing heat'. Watch typhoon warnings in summer and autumn.",
     seeAndDo:
-      "The European buildings of Shamian Island, the arcaded old streets of Shangxiajiu and Yongqingfang, the Lingnan wood and stone carving of the Chen Clan Ancestral Hall, the Five Rams statue in Yuexiu Park; a night cruise on the Pearl River for the lit-up banks. A proper morning tea is the best way to understand local life. Nearby: Foshan for the Ancestral Temple and martial-arts culture, and Shunde, known for its food.",
+      "Canton Tower (the TV tower on the south bank of the Pearl River, nicknamed the 'Slender Waist', Guangzhou's most prominent modern landmark, with an observation deck over the river and skyline); the European buildings of Shamian Island, the arcaded old streets of Shangxiajiu and Yongqingfang, the Lingnan wood and stone carving of the Chen Clan Ancestral Hall, the Five Rams statue in Yuexiu Park; a night cruise on the Pearl River for the lit-up banks, including the Canton Tower's light show. A proper morning tea is the best way to understand local life. Nearby: Foshan for the Ancestral Temple and martial-arts culture, and Shunde, known for its food.",
     whenAndTips:
       "Autumn and winter (November–February) are cool, dry and the most comfortable, and the peak season. Spring (March–April) brings the 'return of the south wind' — humid, with walls and floors sweating; summer (May–September) is hot, wet and muggy and the main typhoon season, so check warnings before travelling. Hotels are tight and expensive during the Canton Fair (spring and autumn).",
   },
@@ -4808,7 +4808,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "Korean is the common language, and English is fairly widely spoken among younger generations. Seoul has a strong café culture, and convenience stores are open 24 hours. Tipping is not expected at restaurants.",
     seeAndDo:
-      "Gyeongbokgung Palace and the Bukchon Hanok Village; Myeongdong and Dongdaemun shopping districts; Han River parks (cycling, picnics); hiking in Bukhansan National Park; the confluence of the Han River's two branches at Yangsu-ri.",
+      "N Seoul Tower (on top of Namsan, the observation tower that is the most prominent landmark on Seoul's skyline, reachable by cable car or on foot); Gyeongbokgung Palace and the Bukchon Hanok Village; Myeongdong and Dongdaemun shopping districts; Han River parks (cycling, picnics); hiking in Bukhansan National Park; the confluence of the Han River's two branches at Yangsu-ri.",
     whenAndTips:
       "Cherry blossom season (April–May) and autumn foliage (September–November) are the most popular; a T-money card is worth getting, and most attractions close on Mondays.",
   },
