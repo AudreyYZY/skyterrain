@@ -5473,4 +5473,187 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–August has the most pleasant climate; consider using Tsetserleg as a stopover on a central Mongolia itinerary between the Orkhon Valley and Lake Khövsgöl, staying one to two days.",
   },
+  // ============ Philippines ============
+  "philippines-overview": {
+    identity:
+      "The Republic of the Philippines is a Southeast Asian archipelago of about 7,107 islands, covering roughly 299,800 km² with a population of more than 114 million; its capital is Manila, the official languages are Filipino (based on Tagalog) and English, and its currency is the Philippine peso (PHP).",
+    layout:
+      "The country divides roughly into three major island groups: Luzon (Manila, Baguio, Legazpi and others — the population and economic core), the Visayas (Cebu, Bohol, Boracay and others — the central island cluster) and Mindanao (Davao and others — the southern islands); Palawan lies to the west and forms a relatively self-contained tourism region of its own.",
+    gettingAround:
+      "Domestic flights are hubbed at Ninoy Aquino International Airport in Manila, reaching major cities and islands nationwide; inter-island travel can also be done by ferry, with some outlying islands requiring multiple legs of transport. Taxis, jeepneys (converted mini-buses) and Grab ride-hailing are common ways to get around within cities. Visa-free arrangements for short-term visitors vary by nationality — check the Philippines' official current announcements.",
+    culture:
+      "The official languages are Filipino and English, with high English proficiency widely used in business and education. The Philippines has the highest proportion of Catholics of any Southeast Asian country, and society places strong value on family and hospitality. Restaurant bills often already include service, with an additional 10% tip customary. The voltage is 220V, with mostly American-style two-flat-pin or European two-round-pin outlets.",
+    seeAndDo:
+      "Natural landforms: Mayon Volcano's symmetrical cone, the nested caldera landscape of Taal Lake, the Chocolate Hills, the Puerto Princesa Underground River. Island getaways: Boracay's white-sand beach, island-hopping among the karst islets of El Nido and Coron. History and culture: the Spanish colonial old town of Vigan, the Ifugao rice terraces.",
+    whenAndTips:
+      "Lying in the tropics, the Philippines is hot and humid year-round; December to May is the dry season (March–May especially hot), while June to November is the wet season and also the active typhoon season — check typhoon warnings before coastal and island itineraries in that window.",
+  },
+  manila: {
+    identity:
+      "Manila is the capital of the Philippines, with a metropolitan population of more than 14 million, on the east shore of Manila Bay on Luzon, and the country's political, economic and cultural centre.",
+    layout:
+      "Intramuros (the old walled city) preserves Spanish colonial-era walls and churches; Makati and Bonifacio Global City are modern commercial and financial districts, and the Manila Bay waterfront is known for its sunset views.",
+    gettingAround:
+      "Ninoy Aquino International Airport is about 7 km from the city centre; the LRT and MRT light-rail lines cover the main commercial districts, with taxis, jeepneys and Grab common for getting around; rush-hour traffic in the city can be heavy.",
+    culture:
+      "The official languages are Filipino and English, with high English proficiency. Manila carries layered historical influences from Spanish colonial rule, American administration and local culture, and Catholic faith has broad influence on daily life. Restaurant bills often already include service, with an additional 10% tip customary.",
+    seeAndDo:
+      "Fort Santiago and Manila Cathedral in Intramuros; Rizal Park; the modern commercial district of Makati; sunset over Manila Bay; the National Museum complex.",
+    whenAndTips:
+      "Hot and humid year-round; December to February is comparatively cool and dry, a good season for exploring the city; June to November is the wet and typhoon season — check the weather before travelling.",
+  },
+  "cebu-city": {
+    identity:
+      "Cebu City is the core city of the Visayas, with a population of more than 920,000, on the east coast of Cebu Island; it is the oldest city in the Philippines and an important economic and tourism hub for the central islands.",
+    layout:
+      "The old town preserves Spanish colonial-era churches and forts; Mactan Island (linked by a causeway bridge) is home to the international airport and beach resorts, and the downtown IT business park is a modern industry cluster.",
+    gettingAround:
+      "Mactan-Cebu International Airport is on Mactan Island, about 16 km from the city centre, reachable via the causeway bridge; taxis and Grab are readily available within the city, with ferries or fast boats needed to reach nearby islands.",
+    culture:
+      "The official languages are Filipino and English, with the local Cebuano (Visayan) language widely used in daily life. Cebu is where Catholicism first took root in the Philippines, and the Santo Niño de Cebu enshrined in the Basilica del Santo Niño is an important religious and cultural landmark. Restaurant bills often already include service.",
+    seeAndDo:
+      "Magellan's Cross and the Basilica del Santo Niño; Fort San Pedro; beach resorts on Mactan Island; local specialties such as Cebu lechon (roast pig); island-hopping to nearby islands (on the outskirts).",
+    whenAndTips:
+      "December to May is the dry season, a good time to explore Cebu and its surrounding islands; June to November is the wet and typhoon season — check the weather before travelling.",
+  },
+  "davao-city": {
+    identity:
+      "Davao City is the largest city on Mindanao and, by land area, the largest city in the Philippines, with a population of more than 1.9 million; it is Mindanao's political and economic centre and the core gateway to Mount Apo.",
+    layout:
+      "The city centre runs along Davao Gulf, with commercial and residential areas spread across a broad administrative territory; the silhouette of Mount Apo is clearly visible to the northeast of the city.",
+    gettingAround:
+      "Francisco Bangoy International Airport is about 11 km from the city centre; taxis, jeepneys and Grab are the main ways to get around, with a drive or hired car of about 1.5–2 hours needed to reach Mount Apo.",
+    culture:
+      "The official languages are Filipino and English, with local indigenous communities and migrant populations together shaping Davao's diverse culture. Davao is known for orderly city governance and abundant tropical fruit, especially durian. Restaurant bills often already include service.",
+    seeAndDo:
+      "Hiking in Mount Apo National Park; the Davao Crocodile Park; People's Park; sampling durian and other tropical fruit; Eden Nature Park (on the outskirts).",
+    whenAndTips:
+      "Mindanao lies south of the main typhoon belt and has a relatively stable climate year-round; December to May sees less rainfall, a better season for climbing Mount Apo — book a permit and guide in advance.",
+  },
+  baguio: {
+    identity:
+      "Baguio is the capital of Benguet Province, with a population of more than 370,000, on a plateau in the Cordillera Central at about 1,500 m elevation, known as the Philippines' \"summer capital\" for its cool climate.",
+    layout:
+      "The city centre is anchored by Baguio Cathedral and Burnham Park, with a ring road following the contours of the surrounding hills; it is an important gateway for exploring the Cordillera Central and Mount Pulag.",
+    gettingAround:
+      "The local Loakan Airport no longer handles commercial passenger flights; the city is mainly reached from Manila by road, a mountain drive of about 5–6 hours; taxis and jeepneys are the main ways to get around within the city.",
+    culture:
+      "The official languages are Filipino and English, and the traditional culture of the Igorot indigenous peoples of Benguet Province is well preserved locally. Thanks to its cool plateau climate, Baguio was developed as a hill-station resort by the American colonial administration in the early 20th century. Restaurant bills often already include service.",
+    seeAndDo:
+      "Baguio Cathedral and Burnham Park; handicrafts at Baguio's public market; hiking in Mount Pulag National Park (on the outskirts); horseback riding at Wright Park.",
+    whenAndTips:
+      "Cool year-round, with temperatures dropping to around 10°C from December to February — pack warm clothing; leave early in the morning if heading to Mount Pulag to catch the sea of clouds.",
+  },
+  "puerto-princesa": {
+    identity:
+      "Puerto Princesa is the capital of Palawan Province, with a population of more than 300,000, in the centre of Palawan Island, and the core gateway for exploring the Puerto Princesa Underground River and Palawan's natural landscapes.",
+    layout:
+      "The city centre runs along Honda Bay, serving as the administrative and supply centre of Palawan Island, with limestone karst landforms and tropical rainforest scenery in the surrounding area.",
+    gettingAround:
+      "Puerto Princesa International Airport is about 4 km from the city centre; tricycles and taxis are the main ways to get around within the city, with a drive or hired car of about 1.5–2 hours needed to reach the Underground River National Park.",
+    culture:
+      "The official languages are Filipino and English, and the traditional culture of the local Palawan indigenous people is preserved in the area. Puerto Princesa is known for ecotourism and nature conservation, earning it the nickname the Philippines' \"eco-capital.\" Restaurant bills often already include service.",
+    seeAndDo:
+      "The Puerto Princesa Underground River National Park (cave boat tour); firefly-watching at night on Honda Bay; the Palawan Wildlife Rescue and Conservation Center; snorkelling on beaches near the Underground River.",
+    whenAndTips:
+      "December to May is the dry season, a good time to visit the Underground River National Park; boat-tour permits for the Underground River must be arranged in the city in advance — book at least a day ahead.",
+  },
+  legazpi: {
+    identity:
+      "Legazpi is the capital of Albay Province, with a population of more than 210,000, on the shore of Albay Gulf at the southern foot of Mayon Volcano, and the core gateway for viewing Mayon's symmetrical cone.",
+    layout:
+      "The city centre runs along Albay Gulf, with historic landmarks such as the Cagsawa ruins on its outskirts; several viewpoints around the city offer different angles on Mayon's complete cone.",
+    gettingAround:
+      "Bicol International Airport is about 8 km from the city centre; taxis, tricycles and jeepneys are the main ways to get around, with a drive or hired car needed to reach sites around Mayon Volcano.",
+    culture:
+      "The official languages are Filipino and English, with the local Bicol language widely used in daily life. Legazpi and the surrounding Bicol region are known for spicy, coconut-milk-based cuisine, an important culinary region in the Philippines. Restaurant bills often already include service.",
+    seeAndDo:
+      "The Cagsawa Church ruins (witness to past eruptions); viewpoints around Mayon Volcano National Park; Cagsawa Ruins Park; the Daraga lava-fountain park.",
+    whenAndTips:
+      "December to May is the dry season, a good time for viewing Mayon and outdoor activities; June to November is typhoon season, and Albay Gulf's coastal areas are relatively exposed — check warnings before travelling.",
+  },
+  tagaytay: {
+    identity:
+      "Tagaytay is a highland town in Cavite Province, with a population of more than 100,000, at about 640 m elevation, a well-known viewpoint town for the nested volcanic landscape of Taal Lake.",
+    layout:
+      "The town runs along a ridge on the north shore of Taal Lake, with numerous viewpoints and restaurants facing the lake, and is a popular weekend getaway for residents of Metro Manila.",
+    gettingAround:
+      "There is no commercial airport locally; the town is reached from Manila by road, a drive of about 1.5–2 hours; walking combined with taxis is the main way to get around within town.",
+    culture:
+      "The official languages are Filipino and English. Thanks to its cool plateau climate and Taal Lake views, Tagaytay has been a favoured near-Manila getaway for Metro Manila residents since the 20th century. Restaurant bills often already include service.",
+    seeAndDo:
+      "The cluster of Taal Lake viewpoints; People's Park in the Sky; Sky Ranch's zipline; visiting local pineapple and coffee plantations.",
+    whenAndTips:
+      "Cooler than Manila year-round; weekends and holidays draw larger crowds, so consider avoiding peak times; Taal Volcano occasionally issues activity advisories — check the latest bulletins from the Philippine Institute of Volcanology and Seismology before travelling.",
+  },
+  boracay: {
+    identity:
+      "Boracay is a well-known resort island under the jurisdiction of Malay, Aklan Province, with a resident population of about 38,000, famous for its White Beach, and one of the Philippines' best-known island getaways.",
+    layout:
+      "The island has a narrow, dumbbell-like shape; White Beach runs about 4 km along the west coast, divided into Stations 1, 2 and 3, while the east coast is comparatively less developed and retains a more natural coastline.",
+    gettingAround:
+      "Godofredo P. Ramos Airport (popularly called Caticlan Airport) is on the mainland opposite Boracay in Malay; a roughly 10-minute ferry ride is needed to reach the island; electric tricycles (e-trikes) and walking are the main ways to get around on the island.",
+    culture:
+      "The official languages are Filipino and English. Boracay closed for six months in 2018 for ecological rehabilitation due to environmental strain, after which development density along the shore was restricted — a representative case of sustainable management for Philippine island tourism. Restaurant bills often already include service.",
+    seeAndDo:
+      "Sunset at White Beach; kitesurfing at Bulabog Beach; island-hopping and snorkelling; the D'Mall shopping and dining area; diving around the island.",
+    whenAndTips:
+      "November to April is the dry season, the best time for beach activities; June to October brings the southwest monsoon, with rougher waves on the east coast — kitesurfers in fact prefer this season at Bulabog Beach.",
+  },
+  "el-nido-town": {
+    identity:
+      "El Nido is a small town at the northern tip of Palawan, with a population of about 46,000, the core gateway town for exploring the karst islets of the Bacuit Archipelago.",
+    layout:
+      "The town centre runs along El Nido Bay, with dive shops and island-hopping tour operators clustered along the seafront main street, backed by steep karst massifs.",
+    gettingAround:
+      "El Nido Airport is a small private airport with limited flight options; most travellers arrive via Puerto Princesa and then travel by road (about 5–6 hours); within town, island-hopping trips are mostly arranged by chartered or shared boat.",
+    culture:
+      "The official languages are Filipino and English. El Nido is known for its ecotourism development, with ongoing marine conservation and visitor-limiting measures to protect the ecological balance of the Bacuit Archipelago. Restaurant bills often already include service.",
+    seeAndDo:
+      "Island-hopping around the Bacuit Archipelago (the classic A, B, C and D tour routes); kayaking in the Big and Small Lagoons; hiking to Nacpan Beach; El Nido's night market.",
+    whenAndTips:
+      "November to May is the dry season, the best time for island-hopping; from June to October, monsoon conditions may cancel some routes — confirm with local tour operators before travelling.",
+  },
+  "coron-town": {
+    identity:
+      "Coron is a small town on Busuanga Island in northeastern Palawan, with a population of about 55,000, the core gateway town for exploring the limestone landforms of the Coron/Calamian Islands and diving on WWII shipwrecks.",
+    layout:
+      "The town centre runs along Coron Bay, serving as the administrative and supply hub for Busuanga Island and the wider Calamian Islands; reaching sites such as Kayangan Lake requires a road or boat transfer.",
+    gettingAround:
+      "Francisco B. Reyes Airport is about 30 km from town, requiring a road or boat transfer; within town, island-hopping trips are mostly arranged by chartered or shared boat.",
+    culture:
+      "The official languages are Filipino and English, and the local indigenous Tagbanua people hold traditional stewardship over several natural sites in the Coron area, including Kayangan Lake. Restaurant bills often already include service.",
+    seeAndDo:
+      "Visiting Kayangan Lake; diving on Japanese WWII shipwrecks; Twin Lagoon; island-hopping to Kayangan Island and Barracuda Lake; Coron hot springs.",
+    whenAndTips:
+      "November to May is the dry season, the best time for island-hopping and wreck diving; sites such as Kayangan Lake are managed by the Tagbanua community, and an environmental fee applies on entry.",
+  },
+  tagbilaran: {
+    identity:
+      "Tagbilaran is the capital of Bohol Province, with a population of more than 106,000, on the southwest coast of Bohol Island, and the core gateway for exploring the Chocolate Hills and Bohol's natural landscapes.",
+    layout:
+      "The city centre runs along the Bohol Strait, serving as the administrative and transport hub of Bohol Island; reaching the Chocolate Hills and the inland tarsier sanctuary requires travelling toward the island's interior.",
+    gettingAround:
+      "Bohol-Panglao International Airport opened in 2018 on Panglao Island, about 18 km from the city centre, replacing the former Tagbolaran airport; taxis, tricycles and Grab are the main ways to get around within the city.",
+    culture:
+      "The official languages are Filipino and English, with the local Boholano (Visayan) language widely used in daily life. Bohol is known for tarsier conservation and the geological landscape of the Chocolate Hills, an important ecotourism destination in the Visayas. Restaurant bills often already include service.",
+    seeAndDo:
+      "The Chocolate Hills viewpoint; the Tarsier Conservation Area; a boat cruise on the Loboc River; the Baclayon Church ruins; beaches on Panglao Island (on the outskirts).",
+    whenAndTips:
+      "December to May is the dry season, a good time to explore the Chocolate Hills and the island's other sights; morning light at the Chocolate Hills viewpoint is softer, making it a good time for an early visit.",
+  },
+  vigan: {
+    identity:
+      "Vigan is the capital of Ilocos Sur Province, with a population of more than 54,000, on Luzon's northwest coast, and the best-preserved Spanish colonial-era old town in the Philippines, inscribed on the UNESCO World Heritage List in 1999.",
+    layout:
+      "The historic core follows a grid layout, its streets lined with Spanish colonial-era stone buildings and arcaded shophouses; Calle Crisologo is the old town's most representative historic street.",
+    gettingAround:
+      "The local Vigan Airport does not currently offer reliable passenger service; most travellers arrive from Manila by road, a journey of about 7–8 hours; the historic core is walkable, and the kalesa (horse-drawn carriage) is a distinctive local mode of transport.",
+    culture:
+      "The official languages are Filipino and English, with the local Ilocano language widely used in daily life. Vigan is a historical testament to the long-term blending of Philippine, Chinese and Spanish cultures, its old-town architecture combining European and southern Chinese shophouse elements. Restaurant bills often already include service.",
+    seeAndDo:
+      "The cobblestone streets of Calle Crisologo; Vigan Cathedral; the Syquia Mansion heritage house; a kalesa sightseeing tour; sampling Vigan longganisa (local specialty sausage).",
+    whenAndTips:
+      "November to February is comparatively cool and dry, a good season for exploring the old town; plan a full day combining walking with a kalesa tour of the historic core.",
+  },
 };
