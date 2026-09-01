@@ -12016,4 +12016,88 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "Endau-Rompin National Park was formally established in 1993 and is an important habitat for endangered flagship species such as the Malayan tiger and Malayan tapir; it has long been the traditional territory of indigenous communities in Johor and Pahang.",
   },
+  "langkawi-geopark": {
+    seeing:
+      "Langkawi UNESCO Global Geopark was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, its geological record spanning more than 550 million years and including Malaysia's most complete Cambrian-to-Permian Paleozoic sedimentary sequence.",
+    formation:
+      "The Langkawi archipelago's strata record a continuous Paleozoic sedimentary sequence from the Cambrian through the Permian; the Kilim River area is dominated by limestone karst, long-term dissolution having produced numerous sea stacks and sea arches, making it a key area for studying Southeast Asia's early geological evolution.",
+    observation:
+      "From the air, Langkawi's mangrove-lined Kilim estuary interweaves with scattered limestone karst pinnacles, sea stacks and sea arches dotting the waterways, forming a richly layered island landscape against the open Andaman Sea beyond.",
+    distinguish:
+      "Both Langkawi Geopark and Penang Island are island landforms off the Malay Peninsula's west coast, but Langkawi is known for its Paleozoic sedimentary sequence spanning 550 million years and its karst landforms, while Penang is a comparatively younger granite island.",
+    concept:
+      "Langkawi Geopark comprises three geoforest parks — Machinchang (Cambrian), Kilim (karst) and Dayang Bunting (marble) — making it an important field laboratory for studying the complete Paleozoic sedimentary sequence of Southeast Asia's continental shelf.",
+    history:
+      "Langkawi was recognised in 2007 as the first UNESCO Global Geopark in Southeast Asia, and is today an important destination for geological and ecological tourism in Malaysia.",
+  },
+  "penang-island": {
+    seeing:
+      "Penang Island is a granite island off the northwest coast of the Malay Peninsula, its highest point, Penang Hill, reaching 833 m, with a forested granite hill core surrounded by coastal plains.",
+    formation:
+      "Penang's northern rock formations date from the Early Jurassic to Late Carboniferous, while the south comprises medium-to-coarse-grained biotite-feldspar granite; long-term weathering and erosion have shaped today's landform of a central hill core ringed by plains.",
+    observation:
+      "From the air, Penang Hill at the island's centre shows very high forest cover and steep terrain, forming a sharp contrast in landform and land use with the more heavily developed and urbanised coastal plains around it.",
+    distinguish:
+      "Both Penang Island and Langkawi Geopark are island landforms off the Malay Peninsula's west coast, but Penang is a comparatively younger granite island whose central hills form an important water catchment, while Langkawi is known for its Paleozoic karst landforms.",
+    concept:
+      "The forest on Penang's central hills has a history of more than 130 million years, making it a classic sample for studying the relationship between tropical island granite landforms and their water-catchment function.",
+    history:
+      "The Penang Hill area has been developed as a hill-station resort since British colonial times; Penang is today an important historical, cultural and tourism city in Malaysia, and George Town's old quarter is inscribed on the UNESCO World Heritage List.",
+  },
+  "tioman-island": {
+    seeing:
+      "Tioman Island is an igneous island off the coast of Pahang in the South China Sea, its central massif reaching 1,038 m, and a well-known diving and ecotourism destination in Malaysia.",
+    formation:
+      "Tioman's rock is made up mainly of volcanic, plutonic and contact metamorphic rock; the east, north and south are dominated by rhyolite and dacite, while its granite body intruded in the Late Cretaceous (about 80 million years ago), about 8.8 million years after the volcanic rocks, shaping today's landform of a towering centre with gentler surrounding terrain.",
+    observation:
+      "From the air, Tioman's central massif is densely forested and steep, its coastline indented with numerous bays, white sand beaches and coral reefs lining the shallow coastal waters, marking a sharp boundary between island and the open South China Sea.",
+    distinguish:
+      "Both Tioman Island and Sipadan Island are well-known diving destinations in Malaysia, but Tioman is a continental-shelf igneous island with a complete terrestrial ecosystem, while Sipadan is an isolated oceanic island built up by coral growth on a submerged volcanic cone.",
+    concept:
+      "The sequence in which Tioman's volcanic rock and granite body intruded makes it an important sample for studying the timing of late Mesozoic magmatic activity on the Malay Peninsula's east coast.",
+    history:
+      "Tioman Island has long been a traditional fishing ground for Malay fishermen, and is today a well-known island resort and diving destination on Malaysia's east coast.",
+  },
+  "perhentian-islands": {
+    seeing:
+      "The Perhentian Islands are a pair of small granite islands (Perhentian Besar and Perhentian Kecil) off the coast of Terengganu in the South China Sea, lined with white sand beaches and coral reefs, a well-known diving and snorkelling destination on the peninsula's east coast.",
+    formation:
+      "The Perhentian Islands belong to the same continental-shelf granite geological unit as other islands off the peninsula's east coast; long-term wave erosion combined with coral reef accumulation has shaped today's island outlines and surrounding shallow coral reef ecosystems.",
+    observation:
+      "From the air, Perhentian Besar and Perhentian Kecil sit side by side as two small granite islands, their white sand beaches clearly visible, forming a distinct band of colour between the pale-blue coral reef waters and the deep-blue open sea beyond.",
+    distinguish:
+      "Both the Perhentian Islands and Redang Island are granite islands off Terengganu in the South China Sea, but Perhentian consists of two neighbouring islands historically used as a resupply stop for trading ships, while Redang is part of Malaysia's marine park system.",
+    concept:
+      "The coral reef ecosystem around the Perhentian Islands is a classic sample for studying the distribution and conservation of shallow continental-shelf coral reefs off the Malay Peninsula's east coast.",
+    history:
+      "The Perhentian Islands take their name from the Malay word for \"stopping place,\" having historically served as a resupply stop for passing trading ships, and are today an important diving and snorkelling destination on Malaysia's east coast.",
+  },
+  "redang-island": {
+    seeing:
+      "Redang Island is a granite island off the coast of Terengganu in the South China Sea, part of Malaysia's marine park system, with a well-preserved coral reef ecosystem along its coast.",
+    formation:
+      "Redang belongs to the same continental-shelf granite geological unit as other islands off the peninsula's east coast; long-term wave erosion has shaped today's island outline, while corals in the surrounding shallow waters have grown and accumulated into a complete reef ecosystem.",
+    observation:
+      "From the air, Redang Island is ringed by extensive pale coral reef shallows, forming a clear colour boundary with the deep-blue open sea beyond, the island itself forested with gently rolling terrain.",
+    distinguish:
+      "Both Redang Island and the Perhentian Islands are granite islands off Terengganu in the South China Sea, but Redang is part of Malaysia's marine park system with well-preserved coral reefs, while the Perhentian Islands consist of two neighbouring islands.",
+    concept:
+      "The well-preserved coral reef ecosystem around Redang Island is a classic sample for studying the long-term effectiveness of coral reef conservation on the continental shelf off the Malay Peninsula's east coast.",
+    history:
+      "Redang Island and its surrounding waters are protected within Malaysia's marine park system, and it is today an important coral reef conservation area and diving destination on the peninsula's east coast.",
+  },
+  "sipadan-island": {
+    seeing:
+      "Sipadan is Malaysia's only oceanic island, lying beyond the continental shelf in the Celebes Sea, its pinnacle rising about 600 m vertically from the seabed, ringed by natural hard coral reef, with more than 400 recorded fish species.",
+    formation:
+      "Sipadan is a submarine pinnacle built up over millions of years by coral growth on top of an extinct volcanic cone; the combination of deep-water currents and a shallow, sunlit reef top has created exceptionally rich marine conditions around the island.",
+    observation:
+      "From the air and at the surface, Sipadan is tiny, almost the entire island covered in coral sand and tropical vegetation, the surrounding water shifting rapidly from pale blue to deep blue — a clear sign of the submarine pinnacle rising abruptly from deep water.",
+    distinguish:
+      "Both Sipadan and Tioman Island are well-known diving destinations in Malaysia, but Sipadan is an isolated oceanic island built up by coral on an extinct volcanic cone, surrounded immediately by deep sea, while Tioman is a continental-shelf igneous island.",
+    concept:
+      "Sitting at the heart of the Coral Triangle, Sipadan is a classic sample for studying how an oceanic-island coral reef ecosystem sustains high biodiversity under the combined conditions of deep-water currents and shallow-water sunlight.",
+    history:
+      "Sipadan was historically a sea-turtle nesting site and a traditional fishing ground for local fishermen, and became an internationally renowned diving destination in the late 20th century owing to its distinctive underwater landform and ecology.",
+  },
 };

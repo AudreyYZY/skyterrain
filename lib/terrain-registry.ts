@@ -12197,6 +12197,84 @@ const ENDAU_ROMPIN: TerrainEntry = {
   source: "安顺—罗宾国家公园：横跨柔佛与彭亨两州、马来半岛南部现存最大的保护区，面积4.89万公顷，地貌以起伏丘陵、花岗岩露头、河谷与瀑布群为主；园内岩层年代可追溯至约2.48亿年前，雨林生态系统历史逾1.3亿年，是马来虎、马来貘等濒危旗舰物种的重要栖息地（ASEAN Centre for Biodiversity/Wikipedia WebSearch 2026）",
 };
 
+const LANGKAWI_GEOPARK: TerrainEntry = {
+  id: "langkawi-geopark",
+  nameZh: "浮罗交怡地质公园",
+  nameEn: "Langkawi UNESCO Global Geopark",
+  category: "island",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "基林河喀斯特地质森林公园", lon: 99.85, lat: 6.42, elevation: 50, kind: "island" },
+  bbox: [99.62, 6.15, 99.93, 6.50],
+  label: { lon: 99.75, lat: 6.10, rotation: 0 },
+  source: "浮罗交怡地质公园：2007年获认定为东南亚首个UNESCO世界地质公园，地质记录跨越逾5.5亿年，涵盖马来西亚保存最完整的寒武纪至二叠纪古生代沉积序列；基林河一带以石灰岩喀斯特地貌为主，长期溶蚀作用形成众多海蚀柱与海蚀拱，公园由玛琴昌寒武纪地质森林公园、基林喀斯特地质森林公园、浮罗浮浮大理岩地质森林公园三部分组成（UNESCO WebSearch 2026）",
+};
+
+const PENANG_ISLAND: TerrainEntry = {
+  id: "penang-island",
+  nameZh: "槟榔屿",
+  nameEn: "Penang Island",
+  category: "island",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "升旗山", lon: 100.267, lat: 5.427, elevation: 833, kind: "island" },
+  bbox: [100.15, 5.25, 100.35, 5.50],
+  label: { lon: 100.30, lat: 5.20, rotation: 0 },
+  source: "槟榔屿：马来半岛西北岸外一座花岗岩岛屿，最高点升旗山海拔833米，岛屿中心为森林覆盖的花岗岩丘陵、四周为沿海平原，北部区域岩体形成于早侏罗纪至晚石炭纪，南部区域为中粒至粗粒黑云母长石花岗岩，中央丘陵是重要的集水区，森林历史逾1.3亿年（Wikipedia/gsm.org.my WebSearch 2026）",
+};
+
+const TIOMAN_ISLAND: TerrainEntry = {
+  id: "tioman-island",
+  nameZh: "刁曼岛",
+  nameEn: "Tioman Island",
+  category: "island",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "刁曼岛中央山体", lon: 104.161, lat: 2.786, elevation: 1038, kind: "island" },
+  bbox: [104.10, 2.70, 104.20, 2.90],
+  label: { lon: 104.10, lat: 2.65, rotation: 0 },
+  source: "刁曼岛：彭亨州外南海一座火成岩岛屿，岩体主要由火山岩、深成岩与接触变质岩构成，东、北、南部以火山岩为主（流纹岩与英安岩，局部为安山岩），花岗岩体形成于晚白垩世（约8000万年前），比火山岩晚约880万年侵入，是马来西亚知名的潜水与生态旅游目的地（Geological Society of Malaysia WebSearch 2026）",
+};
+
+const PERHENTIAN_ISLANDS: TerrainEntry = {
+  id: "perhentian-islands",
+  nameZh: "停泊岛",
+  nameEn: "Perhentian Islands",
+  category: "island",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "大停泊岛", lon: 102.73, lat: 5.90, elevation: 100, kind: "island" },
+  bbox: [102.68, 5.85, 102.78, 5.97],
+  label: { lon: 102.73, lat: 5.80, rotation: 0 },
+  source: "停泊岛：登嘉楼州外南海一对花岗岩小岛（大停泊岛与小停泊岛），沿岸多白沙海滩与珊瑚礁，是马来半岛东岸知名的潜水与浮潜目的地，岛名“停泊”源自马来语，历史上曾是往来商船的停靠补给点（公开资料 WebSearch 2026）",
+};
+
+const REDANG_ISLAND: TerrainEntry = {
+  id: "redang-island",
+  nameZh: "热浪岛",
+  nameEn: "Redang Island",
+  category: "island",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "热浪岛主岛", lon: 103.01, lat: 5.77, elevation: 150, kind: "island" },
+  bbox: [102.95, 5.72, 103.08, 5.83],
+  label: { lon: 103.01, lat: 5.68, rotation: 0 },
+  source: "热浪岛：登嘉楼州外南海一座花岗岩岛屿，是马来西亚海洋公园的组成部分，沿岸珊瑚礁生态系统保存完好，是马来半岛东岸重要的珊瑚礁保护区与潜水目的地（公开资料 WebSearch 2026）",
+};
+
+const SIPADAN_ISLAND: TerrainEntry = {
+  id: "sipadan-island",
+  nameZh: "诗巴丹岛",
+  nameEn: "Sipadan Island",
+  category: "island",
+  regionId: "asia",
+  country: "malaysia",
+  landmark: { name: "诗巴丹岛", lon: 118.629, lat: 4.115, elevation: 5, kind: "island" },
+  bbox: [118.60, 4.09, 118.66, 4.14],
+  label: { lon: 118.629, lat: 4.06, rotation: 0 },
+  source: "诗巴丹岛：马来西亚唯一的海洋岛，坐落于西里伯斯海大陆架之外，是一座死火山锥历经数百万年珊瑚持续生长堆积而成的海底尖峰，峰体从海床垂直隆起约600米，四周环绕天然硬珊瑚礁，地处珊瑚三角区核心地带，已记录鱼类逾400种、珊瑚种类数以百计（zubludiving.com WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12516,6 +12594,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   MOUNT_KINABALU, CROCKER_RANGE, KELABIT_HIGHLANDS,
   GUA_TEMPURUNG, BATU_CAVES, GUNUNG_MULU_NP, NIAH_CAVES,
   MALIAU_BASIN, DANUM_VALLEY, ENDAU_ROMPIN,
+  LANGKAWI_GEOPARK, PENANG_ISLAND, TIOMAN_ISLAND,
+  PERHENTIAN_ISLANDS, REDANG_ISLAND, SIPADAN_ISLAND,
 ];
 
 /**
