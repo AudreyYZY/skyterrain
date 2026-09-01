@@ -189,6 +189,13 @@ import helKao from "./hel-kao.json" with { type: "json" };
 import helIvl from "./hel-ivl.json" with { type: "json" };
 import helKuo from "./hel-kuo.json" with { type: "json" };
 import helMhq from "./hel-mhq.json" with { type: "json" };
+// 韩国
+import gmpCju from "./gmp-cju.json" with { type: "json" };
+import gmpPus from "./gmp-pus.json" with { type: "json" };
+import gmpUsn from "./gmp-usn.json" with { type: "json" };
+import gmpRsu from "./gmp-rsu.json" with { type: "json" };
+import gmpKpo from "./gmp-kpo.json" with { type: "json" };
+import pusCju from "./pus-cju.json" with { type: "json" };
 // 波兰
 import wawKrk from "./waw-krk.json" with { type: "json" };
 import wawGdn from "./waw-gdn.json" with { type: "json" };
@@ -354,6 +361,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   helIvl,
   helKuo,
   helMhq,
+  gmpCju,
+  gmpPus,
+  gmpUsn,
+  gmpRsu,
+  gmpKpo,
+  pusCju,
   wawKrk,
   wawGdn,
   wawWro,

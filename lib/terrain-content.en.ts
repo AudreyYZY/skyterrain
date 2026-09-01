@@ -10387,6 +10387,399 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Since Count Siegfried built a castle on the Bock promontory in the 10th century, Luxembourg City has grown around this naturally defensible landform; fortifications carved into the sandstone from the 17th century, including the Pétrusse Casemates, earned the old city the nickname \"Gibraltar of the North,\" and the old town and fortifications were inscribed on the UNESCO World Heritage List in 1994.",
   },
 
+  // ============ South Korea ============
+  "taebaek-mountains": {
+    seeing:
+      "The Taebaek Mountains form the north-south spine along Korea's east coast, dividing the peninsula's landscape and climate; the range's namesake peak, Mount Taebaek, rises to 1,567 m.",
+    formation:
+      "The range is built mainly of Precambrian-to-Palaeozoic metamorphic and sedimentary rock; long-term tectonic uplift and differential erosion produced today's steep eastern flank and gentler western slope.",
+    observation:
+      "From the air the ridge runs roughly north-south, dropping sharply to the coast on its eastern side while easing into inland hills and valleys to the west; the open platform atop Mount Taebaek, site of the summit altar, stands out clearly.",
+    distinguish:
+      "The Taebaek Mountains and Seoraksan both belong to the Baekdudaegan skeleton range, but \"Taebaek Mountains\" refers to the entire spine running along the east coast, while Seoraksan is a specific granite-peak massif in its northern section.",
+    concept:
+      "The Taebaek Mountains form the watershed between the Han and Nakdong river systems, making them a key reference for understanding the Korean Peninsula's \"spinal\" landform structure.",
+    history:
+      "The summit altar atop Mount Taebaek has long served as a site for sky-worship rites, one of the representative surviving traditions of mountain veneration on the Korean Peninsula.",
+  },
+  seoraksan: {
+    seeing:
+      "Seoraksan is South Korea's third-highest peak at 1,708 m, known for its granite peaks, deep-cut gorges, and clearly banded seasonal vegetation.",
+    formation:
+      "The massif is built mainly of Cretaceous granite; long weathering and erosion have carved sharp, steep peaks and deeply incised rock faces, a classic example of granite landforms on the Korean Peninsula.",
+    observation:
+      "From the air, jagged granite peaks rise one after another, with deep valleys winding between them; Daecheongbong, the highest point, offers wide views in every direction.",
+    distinguish:
+      "Seoraksan and Songnisan are both predominantly granite mountains, but Seoraksan's peaks are taller and sharper with deeper gorges, while Songnisan's summits are comparatively low and rounded.",
+    concept:
+      "Seoraksan's granite peak topography is an important case for studying how Cretaceous granite bodies on the Korean Peninsula weather and erode into classic mountain scenery.",
+    history:
+      "Designated a Natural Monument protection area in 1965 and a UNESCO Biosphere Reserve in 1982, Seoraksan is one of the first mountain areas in Korea to receive systematic nature protection.",
+  },
+  jirisan: {
+    seeing:
+      "Jirisan is the highest peak on mainland South Korea at 1,915 m, spanning three provinces; it became Korea's first national park in 1967.",
+    formation:
+      "The massif is built mainly of Precambrian gneiss and granite gneiss, among the oldest exposed rock on the Korean Peninsula; long erosion has left the mountain broad and massive rather than sharply peaked.",
+    observation:
+      "From the air, Jirisan appears as a vast, rounded massif with numerous ridges radiating outward, a sharp contrast to Seoraksan's forest of sharp peaks; the ring trail circling the mountain is clearly visible.",
+    distinguish:
+      "Jirisan and Seoraksan are both iconic Korean peaks, but Jirisan is built of ancient gneiss and has a broad, massive form, while Seoraksan is built of younger granite and is defined by sharp peaks.",
+    concept:
+      "The Precambrian gneiss exposed on Jirisan offers an important window into the Korean Peninsula's oldest crustal rock.",
+    history:
+      "Jirisan's designation as Korea's first national park in 1967 marked the starting point of the country's national park system.",
+  },
+  songnisan: {
+    seeing:
+      "Songnisan is a relatively isolated massif in central Korea; its highest peak, Cheonhwangbong, reaches 1,058 m, and it became Korea's sixth national park in 1970.",
+    formation:
+      "The massif is built of granite and gneiss; long erosion has left it comparatively low and rounded, standing in clear contrast to the surrounding lowlands.",
+    observation:
+      "From the air, Songnisan rises as an isolated mass amid gentle surrounding hills, without especially steep relief; the valley holding Beopjusa Temple is clearly visible at its foot.",
+    distinguish:
+      "Songnisan and Wolchulsan are both mountains that rise relatively independently from surrounding flatland, but Songnisan is larger with a rounder form, while Wolchulsan is a smaller, steeper cluster of granite peaks.",
+    concept:
+      "The name \"Songnisan\" (\"set apart from the mundane world\") is said to reflect its isolated, secluded topography — an example of how landform and cultural perception intertwine in Korea's traditional \"famous mountain\" culture.",
+    history:
+      "Beopjusa Temple at the mountain's foot traces its founding to the Silla period, and preserves important Buddhist heritage including a rock-cut standing Buddha.",
+  },
+  deogyusan: {
+    seeing:
+      "Deogyusan is South Korea's fourth-highest peak at 1,614 m, designated the country's tenth national park in 1975.",
+    formation:
+      "The massif is built mainly of granite and metamorphic rock; the summit area preserves a subalpine coniferous forest zone, one of the few such vegetation belts remaining in Korea's mountains.",
+    observation:
+      "From the air, Deogyusan's ridgeline rolls continuously, with dense forest around its summit, Hyangjeokbong; winter snow often blankets the peak, creating a striking elevation contrast with the ski resorts at its foot in Muju.",
+    distinguish:
+      "Deogyusan and Jirisan share similar geology, but Deogyusan is somewhat lower and known for its subalpine conifers and winter snow scenery, while Jirisan is known for its greater bulk and its status as Korea's first national park.",
+    concept:
+      "The subalpine coniferous belt preserved on Deogyusan offers a sample for studying vertical vegetation zonation in the Korean Peninsula's temperate mountains.",
+    history:
+      "The Muju area at the mountain's foot developed into one of Korea's earliest alpine ski resorts from the mid-20th century, an important site in the history of Korean winter sports.",
+  },
+  hallasan: {
+    seeing:
+      "Hallasan, South Korea's highest peak at 1,947 m, is the shield volcano at the centre of Jeju Island; its summit crater lake, Baengnokdam, formed where water pooled in the caldera.",
+    formation:
+      "Hallasan built up over hundreds of thousands of years through repeated basaltic and trachytic eruptions, forming a comparatively gentle, broad shield-volcano profile; its most recent recorded activity dates to roughly a thousand years ago.",
+    observation:
+      "From the air, Hallasan's symmetrical, gently sloping cone spreads out on all sides; the summit crater lake, Baengnokdam (\"White Deer Pond\"), is named for its resemblance to deer coming to drink, and hundreds of small parasitic cones dot the surrounding slopes.",
+    distinguish:
+      "Hallasan and Ulleungdo are both volcanic landforms in Korea, but Hallasan is a broad, gently sloping shield volcano with a summit crater lake, while Ulleungdo is a steep stratovolcano island.",
+    concept:
+      "The composite volcanic landform of Hallasan's shield volcano together with its densely clustered parasitic cones is an important case for studying repeated basaltic eruption over long timescales.",
+    history:
+      "In 2007 \"Jeju Volcanic Island and Lava Tubes\" was inscribed on the UNESCO World Heritage List, with Hallasan as its core component.",
+  },
+  "jeju-island": {
+    seeing:
+      "Jeju Island, South Korea's largest island, was built entirely by basaltic volcanic activity; 368 small parasitic cones known as oreum dot the island, and its coastline is known for lava landforms and tuff sea-cliffs.",
+    formation:
+      "The island's main body formed through repeated basaltic eruptions between roughly 1.8 million and 250,000 years ago; after volcanism ceased, sea erosion of the coastal lava layers carved landforms such as the tuff sea-cliffs of Seongsan Ilchulbong.",
+    observation:
+      "From the air, the island is roughly oval, with Hallasan rising at its centre and numerous low, rounded parasitic cones scattered around it; on the east coast, Seongsan Ilchulbong juts into the sea like a great green crown.",
+    distinguish:
+      "Jeju Island and Hallasan are often mentioned together, but \"Jeju Island\" refers to the whole volcanic island and its coastal lava landforms, while \"Hallasan\" refers specifically to the central volcanic massif itself.",
+    concept:
+      "Jeju's dense cluster of parasitic cones is the world's highest concentration derived from a single volcano, making it a classic case for studying how repeated basaltic eruptions build composite volcanic landforms.",
+    history:
+      "In 2010 the whole of Jeju Island was designated a UNESCO Global Geopark, complementing its 2007 World Heritage inscription and together underpinning Jeju's international standing in nature conservation.",
+  },
+  ulleungdo: {
+    seeing:
+      "Ulleungdo is a Quaternary volcanic island in the waters east of the Korean Peninsula; its highest point, Seonginbong, reaches 984 m, and it is the emergent summit of a stratovolcano rising roughly 3,000 m from the seafloor.",
+    formation:
+      "The island built up through multiple phases of submarine and subaerial eruption from about 4.6 million to roughly 5,000 years ago, with volcanic rock consisting mainly of trachyte, andesite, and basalt.",
+    observation:
+      "From the air, Ulleungdo's outline is steep and compact; at its centre, the Nari Basin is a well-preserved caldera landform ringed by high volcanic walls.",
+    distinguish:
+      "Ulleungdo and Jeju Island (site of Hallasan) are both volcanic islands in Korea, but Ulleungdo is steeper and more compact with a well-preserved caldera, while Jeju is broader and gentler in relief.",
+    concept:
+      "An explosive eruption on Ulleungdo in the early Holocene deposited ash as far as central Honshu, Japan, making it an important reference point for studying the regional reach of Quaternary volcanism in Northeast Asia.",
+    history:
+      "Ulleungdo's volcanic record spans several million years, with its most recent eruption roughly 5,000 years ago; the Nari Basin remains a key site for studying the island's volcanic evolution.",
+  },
+  "haean-basin": {
+    seeing:
+      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon Province, about 5 km across; its bowl-like shape led UN forces during the Korean War to nickname it the \"Punchbowl.\"",
+    formation:
+      "The basin's centre is Jurassic granite while its rim is Precambrian metamorphic rock; the difference in weathering resistance between the two is thought to have shaped the basin, with the more easily eroded granite hollowed out at the centre and the harder rock left standing as the surrounding ridge.",
+    observation:
+      "From the air, the basin forms a neat, roughly oval depression, ringed by ridges rising 500–800 m above its floor; villages and fields are laid out neatly on the basin floor, contrasting sharply with the steep terrain around it.",
+    distinguish:
+      "The Haean Basin and Yongneup on Mt. Daeam are both in the Gangwon mountains near the Military Demarcation Line, but the Haean Basin is a large-scale erosional basin, while Yongneup is a small high-altitude peat moor.",
+    concept:
+      "The Haean Basin's bowl-shaped depression, formed by differential weathering, is a clear example of how contrasting rock resistance shapes basin topography.",
+    history:
+      "The basin's northern edge lies near the Military Demarcation Line established during the Korean War, and its nickname \"Punchbowl\" originates from UN forces' wartime field records.",
+  },
+  "yongneup-daeamsan": {
+    seeing:
+      "Yongneup, on the northwest slope of Mt. Daeam at 1,280 m elevation, is a high-altitude peat moor covering about 7,490 m², the only site in Korea preserving a peat layer.",
+    formation:
+      "The moor sits in a shallow, saucer-like depression on the mountainside with poor drainage and standing water; under these low-oxygen conditions, decaying moor vegetation gradually accumulated into a peat layer.",
+    observation:
+      "From the air, the moor presents an open herbaceous wetland landscape strikingly different from the surrounding forest, dotted with pools of varying depth, its boundary sharply defined against the mixed conifer-broadleaf forest around it.",
+    distinguish:
+      "Yongneup on Mt. Daeam and the Haean Basin are both in the Gangwon mountains, but Yongneup is a small high-altitude peat moor, while the Haean Basin is a large-scale erosional basin.",
+    concept:
+      "As Korea's only high-altitude moor preserving a peat layer, Yongneup offers a unique sample for studying vegetation succession in temperate mountain peat wetlands.",
+    history:
+      "In 1997, Yongneup became the first wetland in Korea listed under the Ramsar Convention, marking the starting point of Korea's wetland conservation efforts.",
+  },
+  "cheorwon-lava-plateau": {
+    seeing:
+      "The Cheorwon Lava Plateau is a broad basalt plateau formed by Quaternary lava that flowed down an ancient valley and solidified; the gorge cut through the plateau by the Hantan River is its most distinctive feature.",
+    formation:
+      "The lava erupted from a dormant volcano in the northern Korean Peninsula and flowed roughly 95 km south along an old valley before solidifying into a broad basalt plateau; the Hantan River later cut a new course along the plateau's edge, forming a gorge with classic columnar jointing.",
+    observation:
+      "From the air, the plateau is broad and flat overall, with the Hantan River winding through a deep gorge cut into it; regularly arranged basalt columns line the gorge walls, and isolated lava-remnant hills such as Goseokjeong stand out along the way.",
+    distinguish:
+      "The Cheorwon Lava Plateau and Juwangsan Gorge both display columnar jointing, but the Cheorwon plateau formed from solidified basalt lava flows later re-incised by a river, while Juwangsan Gorge formed from a river eroding rhyolitic tuff.",
+    concept:
+      "The Cheorwon Lava Plateau shows a two-stage landform evolution — lava accumulating along an ancient valley, then a new river course cutting back into it — making it an important case for studying Quaternary basalt plateau formation.",
+    history:
+      "In 2020 the \"Hantangang River volcanic landforms\" were designated a UNESCO Global Geopark; the area was also a site of military activity during the Korean War.",
+  },
+  "charyeong-mountains": {
+    seeing:
+      "The Charyeong Mountains are a low, ancient range running through South Chungcheong Province; its highest peak, Chilgapsan, reaches 561 m, and long erosion has worn the range into rounded, gentle relief.",
+    formation:
+      "The range's bedrock is mainly old metamorphic rock and granite; over a long geological span, weathering and erosion have worn down what may once have been a taller range into today's low, rounded hills.",
+    observation:
+      "From the air, the Charyeong Mountains roll gently, their peaks low and rounded, transitioning without sharp relief into the surrounding plains and hills — a classic example of mature, worn-down mountain topography.",
+    distinguish:
+      "The Charyeong Mountains and the Taebaek Mountains are both structural backbones of the Korean Peninsula, but the Charyeong range is lower and gentler, while the Taebaek Mountains are comparatively tall and steep.",
+    concept:
+      "The low, rounded form of the Charyeong Mountains is a classic case for studying how ancient mountain ranges wear down toward peneplanation through long-term weathering and erosion.",
+    history:
+      "The Charyeong Mountains have historically marked the natural boundary between Korea's traditional geographic regions of Hoseo (Chungcheong) and Honam (Jeolla), a distinction still used in Korean geographic culture today.",
+  },
+  wolchulsan: {
+    seeing:
+      "Wolchulsan is a cluster of granite peaks rising abruptly from the surrounding flatland; its highest peak, Cheonhwangbong, reaches 809 m, and in 1988 it became Korea's smallest national park.",
+    formation:
+      "The massif is granite, surrounded by comparatively flat lowland; long differential weathering left the more resistant granite standing as steep, isolated peaks while the softer surrounding rock was worn down to level ground.",
+    observation:
+      "From the air, Wolchulsan's peaks rise abruptly from the flat farmland around them, sharply outlined against their surroundings; the suspension \"cloud bridge\" spanning two of its peaks stands out clearly.",
+    distinguish:
+      "Wolchulsan and Songnisan both rise relatively independently from surrounding flatland, but Wolchulsan is smaller with sharper, steeper peaks, while Songnisan is larger and more gently rounded.",
+    concept:
+      "Wolchulsan's abrupt rise from flat surrounding terrain is a classic case for studying how differential weathering of a granite body leaves isolated residual peaks standing in a flat landscape.",
+    history:
+      "Wolchulsan has long been regarded as a notable mountain of south-western Korea for its striking isolated-peak scenery; the temples and rock-cut Buddha images on its slopes record a long local Buddhist tradition.",
+  },
+  "suncheon-bay-wetland": {
+    seeing:
+      "Suncheon Bay Wetland is an estuarine wetland made up of a stream, tidal flats, and reed beds; in 2006 it became Korea's first coastal wetland listed under the Ramsar Convention.",
+    formation:
+      "The wetland sits in a low-gradient estuarine area within Suncheon Bay; sediment carried by the stream has long accumulated in the bay to form broad intertidal flats, while the mixing of fresh and salt water further inland has produced extensive reed beds.",
+    observation:
+      "From the air, winding tidal creeks trace a branching, tree-like pattern across the flats, while the golden reed beds inland present a striking contrast to the mudflats; the Yongsan observation deck is the classic vantage point for this view.",
+    distinguish:
+      "Suncheon Bay Wetland and the Nakdong River Estuary are both important estuarine wetlands in Korea, but Suncheon Bay is known for its combination of extensive reed beds and intertidal flats, while the Nakdong estuary is defined by sandbars formed by a braided river channel.",
+    concept:
+      "The combination of tidal creeks, mudflats, and reed beds at Suncheon Bay is a classic case for studying how river and tidal processes together shape coastal wetland landforms.",
+    history:
+      "In 2021 the Suncheon Bay tidal flat was inscribed on the UNESCO World Heritage List as a component of the transboundary \"Getbol, Korean Tidal Flats\" series.",
+  },
+  "byeonsan-peninsula-coast": {
+    seeing:
+      "The Byeonsan Peninsula Coast is home to Korea's only national park combining mountain and coastal scenery; the layered sea cliffs at Chaeseokgang are its most distinctive feature.",
+    formation:
+      "The coastal bedrock is layered sedimentary rock; long wave erosion has preferentially worn away the softer layers, leaving the harder layers standing in stacked ridges resembling piles of books.",
+    observation:
+      "From the air, the Chaeseokgang coastline shows neat, horizontal rock banding, with broad sections of sea cliff exposed at low tide, contrasting sharply with the lush forested mountains on the inland side of the peninsula.",
+    distinguish:
+      "The Byeonsan Peninsula Coast and the Taean Coast are both on Korea's west coast, but Byeonsan is known for its layered sedimentary sea cliffs combined with mountain scenery, while the Taean Coast is known for its large-scale coastal dunes.",
+    concept:
+      "The layered sea cliffs at Chaeseokgang are a direct illustration of how wave erosion differentially weathers layers of varying hardness to produce banded coastal scenery.",
+    history:
+      "In 1988 the Byeonsan Peninsula was designated a national park, the only case in Korea where mountain and coastal landscapes are combined within a single national park.",
+  },
+  "taean-coast-dunes": {
+    seeing:
+      "The Taean Coast is a roughly 230-km stretch of shoreline on the west coast, designated a national park in 1978; the Sinduri area preserves Korea's largest coastal dune field.",
+    formation:
+      "The dunes formed from fine sand carried and deposited by prevailing winds and longshore currents; the broad, gently sloping beach at Sinduri provided favourable conditions for sustained sand accumulation.",
+    observation:
+      "From the air, the Taean coastline winds and curves, with the Sinduri dunes standing out as a pale, sandy expanse distinct from the surrounding farmland and villages; wind-formed ripple patterns are visible across parts of the dune field.",
+    distinguish:
+      "The Taean Coast and the Byeonsan Peninsula Coast are both on Korea's west coast, but Taean is known for its large-scale dune landforms, while Byeonsan is known for its layered sedimentary sea cliffs combined with mountain scenery.",
+    concept:
+      "The formation of the Sinduri dunes is an important case for studying temperate coastal aeolian sand deposition and its characteristic plant communities.",
+    history:
+      "Designated a national park in 1978, the Taean Coast is one of Korea's earliest coastal-type national parks.",
+  },
+  "hallyeohaesang-marine-park": {
+    seeing:
+      "Hallyeohaesang Marine National Park is a stretch of Korea's southern coastal waters scattered with hundreds of islands; established in 1968, it was Korea's first marine national park.",
+    formation:
+      "The islands within the park are the emergent summits of coastal hills and low mountains on the southern Korean Peninsula, drowned as sea level rose after the last glacial period — a classic ria-type archipelago landform.",
+    observation:
+      "From the air, islands of every size are scattered across the blue water like scattered stars, with shipping channels winding between them; the waters around Hansan-do are especially open and calm.",
+    distinguish:
+      "Hallyeohaesang Marine National Park and Ulleungdo are both island landforms in Korea's southern and eastern waters, but Hallyeohaesang is a drowned ria-type archipelago made up of many small islands, while Ulleungdo is a single large volcanic island.",
+    concept:
+      "The archipelago landform of Hallyeohaesang is a classic case for studying how rising sea level drowns hills and low mountains to form island groups.",
+    history:
+      "The park's name combines Hansan-do and Yeosu; its waters preserve the sites of naval battles between the Joseon navy and Japanese forces, an important location in Korea's maritime history.",
+  },
+  "daegwallyeong-highland": {
+    seeing:
+      "The Daegwallyeong highland pastures occupy a mountain pass in the Taebaek Mountains at roughly 1,100–1,400 m elevation; Samyang Ranch is the largest of the pastures there.",
+    formation:
+      "The pass area is comparatively flat and open; long exposure to strong westerly winds and a cool, windy climate limit the growth of tall trees, favouring the grassland and low shrub vegetation seen today.",
+    observation:
+      "From the air, the gently rolling pastures of Daegwallyeong stretch out continuously, with white wind turbines lined along the ridge and grazing livestock scattered across the open green grassland — a striking contrast to the forest-covered mountains typical elsewhere in Korea.",
+    distinguish:
+      "The Daegwallyeong highland pastures and the main body of the Taebaek Mountains are both in Gangwon Province, but Daegwallyeong is a comparatively flat, open mountain-pass grassland, while the main Taebaek range is dominated by steep, forested mountains.",
+    concept:
+      "The Daegwallyeong highland pastures are a rare example in Korea of large-scale mountain grassland, offering a sample for studying how specific wind and climate conditions produce non-forest vegetation cover in temperate mountains.",
+    history:
+      "Daegwallyeong has long served as a key mountain passage linking the Yeongdong and Yeongseo regions of Gangwon Province; today's ranches and wind farms continue this area's historic role as a hub for transport and resource use.",
+  },
+  "honam-plain": {
+    seeing:
+      "The Honam Plain is the largest plain on the Korean Peninsula, covering about 3,500 km², and Korea's most important rice-producing region.",
+    formation:
+      "The plain was built up by long-term sediment deposition from the lower Geum River and the Mangyeong River among others; its flat, open terrain and fertile soil provide ideal conditions for large-scale rice cultivation.",
+    observation:
+      "From the air, the Honam Plain presents an unbroken expanse of neatly arranged farmland, crisscrossed by irrigation channels into a checkerboard pattern, with the Gimje area especially flat and low-lying.",
+    distinguish:
+      "The Honam Plain and the Nakdong River Estuary are both important plain landforms in Korea, but the Honam Plain is a large inland plain built by long-term deposition from multiple rivers, while the Nakdong estuary is a delta formed where a single river meets the sea.",
+    concept:
+      "As the Korean Peninsula's largest alluvial plain, the Honam Plain is a classic case for studying how long-term river deposition shapes a large-scale agricultural plain.",
+    history:
+      "The ancient Byeokgolje reservoir within the plain is believed to date to the Three Kingdoms period and is among the earliest known large-scale irrigation works on the Korean Peninsula, testifying to this region's long history of rice cultivation.",
+  },
+  "nakdong-estuary-eulsukdo": {
+    seeing:
+      "The Nakdong River Estuary is a braided delta formed where the Nakdong River meets the coast; Eulsukdo is the largest of its sandbars.",
+    formation:
+      "Sediment carried by the Nakdong River accumulates heavily as the current slows near the river mouth, repeatedly splitting and shifting the channel to form a cluster of sandbars separated by branching streams.",
+    observation:
+      "From the air, the Nakdong River splits into several winding channels at its mouth, with sandbars such as Eulsukdo set among them, and mudflats, reed beds, and open water interweaving into a complex deltaic network.",
+    distinguish:
+      "The Nakdong River Estuary and Suncheon Bay Wetland are both important estuarine wetlands in Korea, but the Nakdong estuary is defined by sandbars formed from a braided river channel, while Suncheon Bay is known for its combination of extensive reed beds and intertidal flats.",
+    concept:
+      "The braided delta at the Nakdong River's mouth is a classic case for studying sediment deposition and channel-splitting processes where a river meets the sea.",
+    history:
+      "Eulsukdo and the surrounding wetlands have long served as an important stopover for migratory birds; urbanisation and estuary engineering works since the late 20th century have kept conservation of this wetland under ongoing attention.",
+  },
+  "han-river": {
+    seeing:
+      "The Han River rises in the Taebaek Mountains and runs about 508 km through Seoul, South Korea's capital, making it one of the most important rivers in central Korea.",
+    formation:
+      "The Han River's upper course splits into the Namhan (South Han) and Bukhan (North Han) branches, each rising from a different spur of the Taebaek Mountains; the two meet at Yangsu-ri (Dumulmeori) to form the main Han River, which then flows west through Seoul to the Yellow Sea.",
+    observation:
+      "From the air, the two Han River branches meet at Yangsu-ri in a Y-shaped confluence; the water is broad and calm, and the green sandbar at the junction, together with the hills on either bank, forms a layered river-valley scene.",
+    distinguish:
+      "The Han River and the Nakdong River both rise in the Taebaek Mountains, but the Han flows west through Seoul to the Yellow Sea, while the Nakdong flows south through the Yeongnam region to Korea's south-eastern coast.",
+    concept:
+      "The confluence of the Han River's two main branches is a classic case for studying how the Korean Peninsula's river systems are organised around the Taebaek Mountains as a watershed.",
+    history:
+      "The rapid urbanisation and economic development along the Han River in Seoul during the late 20th century is often referred to as the \"Miracle on the Han River,\" a phrase now a common shorthand in accounts of Korea's modernisation.",
+  },
+  "nakdong-river": {
+    seeing:
+      "The Nakdong River rises in the Taebaek Mountains and runs about 510 km, making it the longest river in South Korea; it flows past several major cities in the Yeongnam region.",
+    formation:
+      "The river's upper course runs narrow and swift through the Taebaek Mountains; on reaching the middle and lower plains it widens, and the river-valley plains along its banks have supported the growth of cities such as Andong and Daegu.",
+    observation:
+      "From the air, the Nakdong River carves a winding, incised channel through granite bedrock near Andong, with the Hahoe meander as its most distinctive stretch; in more open sections the river glints and winds steadily southward.",
+    distinguish:
+      "The Nakdong River and the Han River both rise in the Taebaek Mountains, but the Nakdong is somewhat longer and flows south to Korea's south-eastern coast, while the Han flows west through Seoul to the Yellow Sea.",
+    concept:
+      "As Korea's longest river, linking several historic cities across the Yeongnam region, the Nakdong is a classic case for studying the relationship between river systems and regional urban development.",
+    history:
+      "The Nakdong River valley has long been a centre of population and culture in the Yeongnam region; historic riverside settlements such as Hahoe Village in Andong record this area's long cultural tradition.",
+  },
+  "geum-river": {
+    seeing:
+      "The Geum River rises in the Sobaek Mountains and runs about 397 km, Korea's third-longest river; the stretch flowing past Buyeo, the former capital of Baekje, is known as the Baengmagang (\"White Horse River\").",
+    formation:
+      "The river's upper course rises in the Sobaek Mountains, flowing through the hills and plains of the Chungcheong region in its middle and lower reaches; near Buyeo it cuts through an ancient volcanic-rock plateau, forming comparatively steep banks, of which Nakhwaam is one.",
+    observation:
+      "From the air, the Baengmagang is broad and calm as it passes Buyeo, with Nakhwaam rising along the riverbank; historic sites along the shore interweave with the river landform to create a landscape combining natural and cultural features.",
+    distinguish:
+      "The Geum River, the Nakdong River, and the Han River are all major rivers of south-central Korea, but the Geum rises in the Sobaek Mountains rather than the Taebaek Mountains, and is comparatively shorter.",
+    concept:
+      "The steep riverbanks near Buyeo, formed as the Geum River eroded an ancient volcanic-rock plateau, are a sample for studying the interaction between river landforms and regional geological setting.",
+    history:
+      "The Buyeo area was the site of the later capital of the Baekje kingdom; Nakhwaam is traditionally said to be the cliff from which palace women leapt to their deaths as Baekje fell, an important site in the Korean Peninsula's ancient history.",
+  },
+  "hoeryongpo-andong-meander": {
+    seeing:
+      "The Hahoe (Andong) meander is a horseshoe-shaped incised meander cut by the Nakdong River into granite bedrock, with the river wrapping around three sides of Hahoe Village.",
+    formation:
+      "The Nakdong River originally meandered freely across relatively flat ground; subsequent slow tectonic uplift caused the river to cut down into the bedrock, preserving and deepening the original meander form into today's incised meander.",
+    observation:
+      "From the air, the Nakdong River forms an almost closed horseshoe bend at this point, with Hahoe Village sitting on the sandbar terrace inside the loop; the Buyongdae cliff across the river is the classic vantage point for viewing the full meander.",
+    distinguish:
+      "The Hahoe meander and the Nakdong River Estuary are both representative landforms along the Nakdong River, but the Hahoe meander is an incised meander cut into bedrock, while the Nakdong estuary is a delta formed by sediment deposition where the river meets the sea.",
+    concept:
+      "The Hahoe meander is a classic case for studying how a river meander evolves into an incised meander as a result of tectonic uplift.",
+    history:
+      "Hahoe Village, a well-preserved traditional settlement on the terrace inside the meander, was inscribed on the UNESCO World Heritage List in 2010 together with Yangdong Village in Gyeongju as the \"Historic Villages of Korea.\"",
+  },
+  "sogeumgang-gorge": {
+    seeing:
+      "Sogeumgang Gorge, within Odaesan National Park, is a deep-cut granite gorge named for scenery said to rival that of Mount Kumgang in the northern Korean Peninsula.",
+    formation:
+      "The gorge was carved by a stream long eroding granite bedrock; the granite gradually breaks down and spalls along its joint planes, shaping the steep rock faces and varied rock forms on either side of the gorge.",
+    observation:
+      "From the air, the gorge winds through dense forest; Guryongso Falls cascades down the granite cliff face in nine tiers, and the deep pool below it, together with the granite walls on either side, forms a richly layered gorge landscape.",
+    distinguish:
+      "Sogeumgang Gorge and Juwangsan Gorge are both representative gorges in Korea, but Sogeumgang is cut into granite and known for its multi-tiered cascading waterfall, while Juwangsan Gorge is cut into rhyolitic tuff and known for its cliff faces and pillar-like peaks.",
+    concept:
+      "The nine-tiered form of Guryongso Falls is a classic case for studying how a stream's differential erosion along granite joint planes produces a stepped waterfall landform.",
+    history:
+      "The name \"Sogeumgang\" (\"Little Kumgang\") reflects a traditional Korean naming convention of comparing a local scenic mountain to Mount Kumgang in the north to highlight its beauty.",
+  },
+  "juwangsan-gorge": {
+    seeing:
+      "Juwangsan Gorge is cut into rhyolitic tuff formed by a volcanic eruption roughly 70 million years ago; in 2003 Juwangsan became a UNESCO Global Geopark.",
+    formation:
+      "The gorge's bedrock is rhyolitic tuff, consolidated from pyroclastic material deposited during a major Late Cretaceous eruption; the Juwang Stream has long eroded along the rock's joints, carving the steep quartz-rich cliffs and isolated rock peaks on either side.",
+    observation:
+      "From the air, sharp tuff peaks rise along both sides of the gorge, with waterfalls such as Yongchu Falls distributed along its length; wooden boardwalks wind along the stream between the steep cliffs.",
+    distinguish:
+      "Juwangsan Gorge and the Cheorwon Lava Plateau are both linked to volcanic activity, but Juwangsan Gorge is cut into rhyolitic tuff by river erosion of pyroclastic rock, while the Cheorwon plateau is a basalt lava-flow plateau later re-incised by a river.",
+    concept:
+      "The formation of Juwangsan's rhyolitic tuff gorge is an important case for studying how river erosion of acidic pyroclastic rock produces isolated peaks and gorge landforms.",
+    history:
+      "In 2003 Juwangsan was designated a UNESCO Global Geopark for its distinctive volcanic geological heritage, one of the earlier areas in Korea to receive this international geological-heritage recognition.",
+  },
+  "soyang-lake": {
+    seeing:
+      "Soyang Lake is an artificial reservoir created in 1973 by damming the Soyang River, holding roughly 2.9 billion m³ of water — Korea's largest reservoir by capacity.",
+    formation:
+      "The reservoir formed when the Soyang Dam, an earth-and-rockfill dam and one of the largest of its type in Asia, impounded the river; the original river valley was submerged, creating today's long, winding lake.",
+    observation:
+      "From the air, Soyang Lake winds along the course of the original valley, ringed by mountains on all sides, with numerous branching inlets — a striking contrast to the neat, regular farmland typical of inland Korea.",
+    distinguish:
+      "Soyang Lake and Gyeongpo Lagoon are both important lakes in Korea, but Soyang Lake is an artificial reservoir formed by damming a river, while Gyeongpo is a natural lagoon formed where a coastal sandbar closed off a bay.",
+    concept:
+      "As one of the largest earth-and-rockfill dam reservoirs in Asia, Soyang Lake is a sample for studying how large-scale water-impoundment projects transform an original river valley into a large reservoir lake.",
+    history:
+      "The Soyang Dam was begun in 1967 and completed in 1973, serving flood control, water supply, and hydropower generation — a significant project in the history of 20th-century Korean water infrastructure.",
+  },
+  "gyeongpo-lagoon": {
+    seeing:
+      "Gyeongpo Lagoon, on Korea's east coast, is a lagoon formed where a coastal sandbar closed off a bay; its name means \"lake as clear as a mirror.\"",
+    formation:
+      "A longshore current long carried sediment that accumulated at the mouth of the bay to form a sandbar, gradually separating the bay from the open sea; the enclosed water then freshened over time into today's lagoon.",
+    observation:
+      "From the air, Gyeongpo Lagoon's surface is calm and mirror-still, its shoreline a neat oval, with pavilions such as Gyeongpodae scattered along its banks; only a narrow sandbar separates the lagoon from the beach outside.",
+    distinguish:
+      "Gyeongpo Lagoon and Soyang Lake are both important lakes in Korea, but Gyeongpo is a natural lagoon formed where a coastal sandbar closed off a bay, while Soyang Lake is an artificial reservoir formed by damming a river.",
+    concept:
+      "The formation of Gyeongpo Lagoon by a sandbar closing off a bay is a classic case for studying how longshore sediment transport shapes coastal lagoon landforms.",
+    history:
+      "The pavilions around Gyeongpo Lagoon have served since the Joseon dynasty as a gathering place for literati to view the moon and scenery; the saying \"one moon reflected in five places\" survives to this day as a representative example of Korea's traditional literati scenic culture.",
+  },
   // ============ Poland ============
   "tatra-mountains": {
     seeing:

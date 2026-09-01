@@ -2000,6 +2000,83 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "埃施叙尔苏尔城堡遗址", nameEn: "Esch-sur-Sûre Castle Ruins", lon: 5.9169, lat: 49.9169, kind: "landmark" },
   ],
 
+  // 韩国
+  seoul: [
+    { nameZh: "景福宫", nameEn: "Gyeongbokgung Palace", lon: 126.9770, lat: 37.5796, kind: "landmark" },
+    { nameZh: "北村韩屋村", nameEn: "Bukchon Hanok Village", lon: 126.9850, lat: 37.5826, kind: "district" },
+    { nameZh: "明洞", nameEn: "Myeongdong", lon: 126.9850, lat: 37.5636, kind: "district" },
+    { nameZh: "东大门", nameEn: "Dongdaemun", lon: 127.0095, lat: 37.5663, kind: "district" },
+    { nameZh: "汉江公园", nameEn: "Han River Park", lon: 126.9346, lat: 37.5285, kind: "nature" },
+    { nameZh: "北汉山国家公园", nameEn: "Bukhansan National Park", lon: 126.9769, lat: 37.6584, kind: "nature" },
+    { nameZh: "两水里", nameEn: "Yangsu-ri (Dumulmeori)", lon: 127.3161, lat: 37.5375, kind: "nature" },
+  ],
+  busan: [
+    { nameZh: "海云台海滩", nameEn: "Haeundae Beach", lon: 129.1600, lat: 35.1587, kind: "nature" },
+    { nameZh: "广安里海滩", nameEn: "Gwangalli Beach", lon: 129.1183, lat: 35.1531, kind: "nature" },
+    { nameZh: "甘川文化村", nameEn: "Gamcheon Culture Village", lon: 129.0106, lat: 35.0975, kind: "district" },
+    { nameZh: "札嘎其海鲜市场", nameEn: "Jagalchi Fish Market", lon: 129.0306, lat: 35.0968, kind: "landmark" },
+    { nameZh: "太宗台", nameEn: "Taejongdae", lon: 129.0872, lat: 35.0533, kind: "nature" },
+    { nameZh: "龙头山公园釜山塔", nameEn: "Busan Tower, Yongdusan Park", lon: 129.0322, lat: 35.1008, kind: "landmark" },
+  ],
+  "jeju-city": [
+    { nameZh: "龙头岩", nameEn: "Yongduam Rock", lon: 126.5122, lat: 33.5147, kind: "nature" },
+    { nameZh: "济州民俗自然史博物馆", nameEn: "Jeju Folklore and Natural History Museum", lon: 126.5450, lat: 33.5033, kind: "landmark" },
+    { nameZh: "东门市场", nameEn: "Dongmun Market", lon: 126.5261, lat: 33.5136, kind: "district" },
+    { nameZh: "万丈窟", nameEn: "Manjanggul Lava Tube", lon: 126.7714, lat: 33.5286, kind: "nature" },
+  ],
+  gyeongju: [
+    { nameZh: "佛国寺", nameEn: "Bulguksa Temple", lon: 129.3320, lat: 35.7898, kind: "landmark" },
+    { nameZh: "石窟庵", nameEn: "Seokguram Grotto", lon: 129.3494, lat: 35.7947, kind: "landmark" },
+    { nameZh: "大陵苑", nameEn: "Daereungwon Tomb Complex", lon: 129.2119, lat: 35.8358, kind: "landmark" },
+    { nameZh: "瞻星台", nameEn: "Cheomseongdae Observatory", lon: 129.2200, lat: 35.8351, kind: "landmark" },
+    { nameZh: "东宫与月池", nameEn: "Donggung Palace and Wolji Pond", lon: 129.2258, lat: 35.8347, kind: "landmark" },
+    { nameZh: "良洞村", nameEn: "Yangdong Village", lon: 129.2069, lat: 35.9128, kind: "district" },
+  ],
+  ulsan: [
+    { nameZh: "太和江国家庭院", nameEn: "Taehwa River National Garden", lon: 129.3106, lat: 35.5497, kind: "nature" },
+    { nameZh: "长生浦鲸鱼文化村", nameEn: "Jangsaengpo Whale Culture Village", lon: 129.3833, lat: 35.4956, kind: "district" },
+    { nameZh: "大王岩公园", nameEn: "Daewangam Park", lon: 129.4419, lat: 35.5033, kind: "nature" },
+  ],
+  yeosu: [
+    { nameZh: "丽水海上缆车", nameEn: "Yeosu Maritime Cable Car", lon: 127.7444, lat: 34.7458, kind: "landmark" },
+    { nameZh: "梧桐岛", nameEn: "Odongdo Island", lon: 127.7594, lat: 34.7381, kind: "nature" },
+    { nameZh: "突山大桥", nameEn: "Dolsan Bridge", lon: 127.7517, lat: 34.7469, kind: "landmark" },
+    { nameZh: "栗浦解放海滩", nameEn: "Yulpo Beach", lon: 127.6494, lat: 34.7128, kind: "nature" },
+  ],
+  pohang: [
+    { nameZh: "虎尾串公园", nameEn: "Homigot Park", lon: 129.5675, lat: 36.0764, kind: "landmark" },
+    { nameZh: "迎日台海边公园", nameEn: "Yeongildae Beach Park", lon: 129.3853, lat: 36.0364, kind: "nature" },
+    { nameZh: "九龙浦近代文化街道", nameEn: "Guryongpo Modern History Street", lon: 129.5583, lat: 35.9886, kind: "district" },
+  ],
+  gangneung: [
+    { nameZh: "镜浦湖", nameEn: "Gyeongpo Lake", lon: 128.8994, lat: 37.7961, kind: "nature" },
+    { nameZh: "安木海岸咖啡街", nameEn: "Anmok Coffee Street", lon: 128.9139, lat: 37.7828, kind: "district" },
+    { nameZh: "乌竹轩", nameEn: "Ojukheon", lon: 128.8994, lat: 37.7847, kind: "landmark" },
+    { nameZh: "正东津", nameEn: "Jeongdongjin Station", lon: 129.0347, lat: 37.6906, kind: "landmark" },
+  ],
+  sokcho: [
+    { nameZh: "雪岳山国家公园", nameEn: "Seoraksan National Park", lon: 128.4657, lat: 38.1191, kind: "nature" },
+    { nameZh: "束草中央市场", nameEn: "Sokcho Jungang Market", lon: 128.5928, lat: 38.2036, kind: "district" },
+    { nameZh: "青草湖", nameEn: "Cheongcho Lake", lon: 128.5794, lat: 38.1917, kind: "nature" },
+    { nameZh: "洛山寺", nameEn: "Naksansa Temple", lon: 128.6261, lat: 38.1225, kind: "landmark" },
+  ],
+  chuncheon: [
+    { nameZh: "南怡岛", nameEn: "Nami Island", lon: 127.5256, lat: 37.7897, kind: "nature" },
+    { nameZh: "昭阳江大坝", nameEn: "Soyang Dam", lon: 127.8151, lat: 37.9489, kind: "landmark" },
+    { nameZh: "小梦树公园", nameEn: "Small Forest of Dreams Park", lon: 127.7431, lat: 37.8564, kind: "nature" },
+  ],
+  andong: [
+    { nameZh: "河回村", nameEn: "Hahoe Village", lon: 128.5169, lat: 36.5390, kind: "district" },
+    { nameZh: "陶山书院", nameEn: "Dosan Seowon", lon: 128.9550, lat: 36.6919, kind: "landmark" },
+    { nameZh: "屏山书院", nameEn: "Byeongsan Seowon", lon: 128.5228, lat: 36.5236, kind: "landmark" },
+    { nameZh: "月映桥", nameEn: "Wolyeonggyo Bridge", lon: 128.7378, lat: 36.5658, kind: "landmark" },
+  ],
+  jeonju: [
+    { nameZh: "全州韩屋村", nameEn: "Jeonju Hanok Village", lon: 127.1522, lat: 35.8153, kind: "district" },
+    { nameZh: "殿洞天主教堂", nameEn: "Jeondong Catholic Church", lon: 127.1467, lat: 35.8144, kind: "landmark" },
+    { nameZh: "庆基殿", nameEn: "Gyeonggijeon Shrine", lon: 127.1478, lat: 35.8158, kind: "landmark" },
+    { nameZh: "南部市场", nameEn: "Nambu Market", lon: 127.1439, lat: 35.8117, kind: "district" },
+  ],
   // ── 波兰 ──
   warsaw: [
     { nameZh: "老城广场与皇家城堡", nameEn: "Old Town Market Square & Royal Castle", lon: 21.0139, lat: 52.2489, kind: "landmark" },
