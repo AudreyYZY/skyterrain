@@ -12105,6 +12105,112 @@ const GREAT_LAKES_DEPRESSION: TerrainEntry = {
   source: "大湖盆地：蒙古西部一处内流干旱盆地，由蒙古阿尔泰山、戈壁阿尔泰山与杭爱山三面环绕，面积约26.8万平方公里，内含乌布苏湖、吉尔嘎朗图湖、哈尔乌苏湖等六个大湖（三咸三淡），是更新世古大湖的残余（IWA Publishing论文 WebSearch 2026）",
 };
 
+const UVS_LAKE: TerrainEntry = {
+  id: "uvs-lake",
+  nameZh: "乌布苏湖",
+  nameEn: "Uvs Lake",
+  category: "lake",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "乌布苏湖", lon: 92.75, lat: 50.42, elevation: 759, kind: "salt-lake" },
+  bbox: [92.2, 50.1, 93.3, 50.65],
+  label: { lon: 92.75, lat: 50.15, rotation: 0 },
+  source: "乌布苏湖：蒙古面积最大的湖泊，面积约3350平方公里，海拔759米，是内流盆地中的高盐度浅水湖，平均水深约6米，为更新世巨大古湖萎缩后的残余；2003年与俄罗斯境内相邻保护区共同以“乌布苏盆地”列入UNESCO世界遗产名录及生物圈保护区（Wikipedia/UNESCO WebSearch 2026）",
+};
+
+const KHYARGAS_LAKE: TerrainEntry = {
+  id: "khyargas-lake",
+  nameZh: "吉尔嘎朗图湖",
+  nameEn: "Khyargas Lake",
+  category: "lake",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "吉尔嘎朗图湖", lon: 93.40, lat: 49.15, elevation: 1029, kind: "salt-lake" },
+  bbox: [93.0, 48.9, 93.9, 49.4],
+  label: { lon: 93.4, lat: 48.85, rotation: 0 },
+  source: "吉尔嘎朗图湖：蒙古大湖盆地内一处咸水湖，面积约1481平方公里，海拔约1029米，经一条5公里长的人工运河与哈尔湖—艾拉格湖水系相连，是大湖盆地咸淡水湖泊链的终端（Wikipedia WebSearch 2026）",
+};
+
+const KHAR_US_LAKE: TerrainEntry = {
+  id: "khar-us-lake",
+  nameZh: "哈尔乌苏湖",
+  nameEn: "Khar-Us Lake",
+  category: "lake",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "哈尔乌苏湖", lon: 92.20, lat: 48.17, elevation: 1157, kind: "lake" },
+  bbox: [91.8, 47.9, 92.7, 48.5],
+  label: { lon: 92.2, lat: 47.85, rotation: 0 },
+  source: "哈尔乌苏湖：蒙古大湖盆地内一处淡水湖，面积约1578平方公里，海拔约1157米，是哈尔乌苏国家公园主体，1999年列入拉姆萨尔国际重要湿地名录，是哈尔湖—多尔衮湖—艾拉格湖—吉尔嘎朗图湖水系链的最上游湖泊（Wikipedia WebSearch 2026）",
+};
+
+const KHOVSGOL_LAKE: TerrainEntry = {
+  id: "khovsgol-lake",
+  nameZh: "库苏古尔湖",
+  nameEn: "Lake Khövsgöl",
+  category: "lake",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "库苏古尔湖", lon: 100.5, lat: 51.0, elevation: 1645, kind: "lake" },
+  bbox: [100.0, 50.2, 100.9, 51.5],
+  viewScale: 1.2,
+  label: { lon: 100.5, lat: 50.1, rotation: 0 },
+  source: "库苏古尔湖：蒙古最大的淡水湖，面积约2620平方公里，最大水深267米，蓄水量约占蒙古全国淡水总量的70%、全球淡水总量的0.4%，经额吉音河（色楞格河支流）与俄罗斯贝加尔湖存在水文关联，湖区设有库苏古尔国家公园（Britannica WebSearch 2026）",
+};
+
+const TERKHIIN_TSAGAAN_LAKE: TerrainEntry = {
+  id: "terkhiin-tsagaan-lake",
+  nameZh: "特日和音查干湖",
+  nameEn: "Terkhiin Tsagaan Lake",
+  category: "lake",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "特日和音查干湖", lon: 99.70, lat: 48.19, elevation: 2060, kind: "lake" },
+  bbox: [99.55, 48.05, 99.85, 48.3],
+  label: { lon: 99.7, lat: 48.32, rotation: 0 },
+  source: "特日和音查干湖：位于杭爱山北麓，长约16公里、宽6至10公里、平均水深20米，海拔2060米，是科尔戈火山熔岩流阻断特日和河河道后形成的堰塞湖，为贫营养型淡水湖，湖区设有科尔戈—特日和音查干湖国家公园（Wikivoyage/Wikipedia WebSearch 2026）",
+};
+
+const KHORGO_VOLCANO: TerrainEntry = {
+  id: "khorgo-volcano",
+  nameZh: "科尔戈火山",
+  nameEn: "Khorgo Volcano",
+  category: "mountain_system",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "科尔戈火山口", lon: 99.85, lat: 48.20, elevation: 2210, kind: "peak" },
+  bbox: [99.75, 48.13, 99.95, 48.27],
+  label: { lon: 99.85, lat: 48.10, rotation: 0 },
+  source: "科尔戈火山：海拔2210米的死火山，约8000年前停止喷发，火山口直径约200米、深70至80米，北坡覆盖落叶松林，喷出的熔岩流曾阻断特日和河形成邻近的特日和音查干湖，两者共同构成科尔戈—特日和音查干湖国家公园的核心景观（Wikipedia/bumantourmongolia WebSearch 2026）",
+};
+
+const KHONGORYN_ELS: TerrainEntry = {
+  id: "khongoryn-els",
+  nameZh: "洪戈林额勒斯沙丘",
+  nameEn: "Khongoryn Els",
+  category: "desert",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "洪戈林额勒斯（歌唱沙丘）", lon: 102.183, lat: 43.75, elevation: 1700, kind: "dune" },
+  bbox: [100.9, 43.55, 102.7, 43.9],
+  axis: [[100.9, 43.65], [102.7, 43.8]],
+  label: { lon: 101.8, lat: 43.92, rotation: 0 },
+  source: "洪戈林额勒斯（又称杜特芒罕，俗称“歌唱沙丘”）：戈壁古尔班赛罕国家公园内一片沙丘带，绵延逾100公里，最高处沙丘可达约300米，因风吹过沙面产生类似引擎声的轰鸣而得名（Wikipedia/eternal-landscapes.co.uk WebSearch 2026）",
+};
+
+const BAYANZAG: TerrainEntry = {
+  id: "bayanzag",
+  nameZh: "巴彦扎格（燃烧的悬崖）",
+  nameEn: "Bayanzag (Flaming Cliffs)",
+  category: "hills",
+  regionId: "asia",
+  country: "mongolia",
+  landmark: { name: "巴彦扎格红崖", lon: 103.75, lat: 44.13, elevation: 1250, kind: "escarpment" },
+  bbox: [103.65, 44.05, 103.85, 44.20],
+  label: { lon: 103.75, lat: 44.22, rotation: 0 },
+  source: "巴彦扎格：南戈壁省一处红色砂岩侵蚀崖壁，因岩石在夕照下呈火焰般的橙红色而得名“燃烧的悬崖”；1922年美国自然历史博物馆罗伊·查普曼·安德鲁斯考察队在此首次发现恐龙蛋化石，是戈壁古尔班赛罕国家公园的组成部分（Wikipedia/topasiatour.com WebSearch 2026）",
+};
+
 // ============================================================
 // 注册表
 // ============================================================
@@ -12422,6 +12528,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   // ===== 亚洲 / 蒙古 =====
   MONGOL_ALTAI, KHANGAI_MOUNTAINS, KHENTII_MOUNTAINS, GOBI_ALTAI,
   MONGOLIA_GOBI, GREAT_LAKES_DEPRESSION,
+  UVS_LAKE, KHYARGAS_LAKE, KHAR_US_LAKE, KHOVSGOL_LAKE,
+  TERKHIIN_TSAGAAN_LAKE, KHORGO_VOLCANO, KHONGORYN_ELS, BAYANZAG,
 ];
 
 /**

@@ -11918,4 +11918,116 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Great Lakes Depression and the surrounding Uvs Nuur Basin were historically important pastureland for nomadic peoples of western Mongolia; in 2003 the Uvs Nuur Basin was inscribed on the UNESCO World Heritage List as a transboundary natural site (see the Uvs Lake entry).",
   },
+  "uvs-lake": {
+    seeing:
+      "Uvs Lake is Mongolia's largest lake by area, covering about 3,350 km² at an elevation of 759 m; it is a shallow, highly saline lake within an endorheic basin, with an average depth of about 6 m.",
+    formation:
+      "Uvs Lake is a remnant of the vast ancient lake that once covered the entire Great Lakes Depression during the Pleistocene; continuous evaporative concentration over time has steadily raised the water's salinity, producing today's saline lake.",
+    observation:
+      "From the air, Uvs Lake's surface appears broad and flat, with extensive saline flats along its shoreline forming a clear colour band against the surrounding dry steppe and desert vegetation.",
+    distinguish:
+      "Both Uvs Lake and Khyargas Lake are saline lakes within the Great Lakes Depression, but Uvs Lake is a self-contained endorheic system and larger in area, while Khyargas Lake is connected by canal to a chain of freshwater lakes including Khar-Us.",
+    concept:
+      "Uvs Lake and its surrounding reserves bring together desert, steppe, taiga and alpine tundra biomes of eastern Central Asia within close proximity, and the site has been selected as a monitoring station for the International Geosphere-Biosphere Programme tracking global warming.",
+    history:
+      "In 1997 Uvs Lake and the adjacent reserve on the Russian side were each designated UNESCO Biosphere Reserves; in 2003 the two countries jointly inscribed the \"Uvs Nuur Basin\" on the UNESCO World Heritage List, and in 2011 established a joint Russian-Mongolian management commission.",
+  },
+  "khyargas-lake": {
+    seeing:
+      "Khyargas Lake is a saline lake within Mongolia's Great Lakes Depression, covering about 1,481 km² at an elevation of about 1,029 m — the terminal lake of the depression's saline-and-freshwater lake chain.",
+    formation:
+      "Khyargas Lake is likewise a remnant of the fragmented Pleistocene mega-lake, connected to the upstream Khar-Us–Khar–Airag lake system by a roughly 5-km combined natural-and-artificial channel; receiving that inflow and then concentrating through evaporation has left it saline.",
+    observation:
+      "From the air, Khyargas Lake appears elongated with a relatively straight shoreline, contrasting with the broad, shallow expanse of Khar-Us Lake upstream.",
+    distinguish:
+      "Both Khyargas Lake and Uvs Lake are saline lakes within the Great Lakes Depression, but Khyargas is the terminal point of a lake chain, concentrated by receiving upstream inflow, while Uvs Lake is a self-contained endorheic system.",
+    concept:
+      "The Khar-Us–Khar–Airag–Khyargas lake chain that Khyargas Lake belongs to is a classic sample for studying how water quality shifts from fresh to saline down a stepped chain of lakes within an endorheic basin.",
+    history:
+      "Khyargas Lake and its surroundings have historically been traditional pastureland for nomadic peoples of Uvs Province in western Mongolia.",
+  },
+  "khar-us-lake": {
+    seeing:
+      "Khar-Us Lake is a freshwater lake within Mongolia's Great Lakes Depression, covering about 1,578 km² at an elevation of about 1,157 m, and forms the core of Khar Us Nuur National Park.",
+    formation:
+      "Khar-Us Lake receives its water supply from rivers rising in the Mongol Altai; the abundant, relatively fast-turnover inflow keeps it fresh, making it the best water-quality lake at the top of the Great Lakes Depression's lake chain.",
+    observation:
+      "From the air, Khar-Us Lake shows a broad open surface with extensive reed marsh and delta wetland — an important stopover site for migratory birds.",
+    distinguish:
+      "Both Khar-Us Lake and Khyargas Lake belong to the same Great Lakes Depression lake chain, but Khar-Us is the uppermost freshwater lake in the system, while Khyargas is the saline terminal lake downstream.",
+    concept:
+      "As the uppermost freshwater source of the lake chain, Khar-Us Lake's water volume and quality directly affect the ecological condition of downstream Khar, Airag and Khyargas lakes, making it a key node for studying hydrological linkages in stepped lake systems.",
+    history:
+      "In 1999 Khar-Us Lake was inscribed on the Ramsar List of Wetlands of International Importance, one of four Ramsar sites in Mongolia, and has long provided habitat for migratory birds and fisheries.",
+  },
+  "khovsgol-lake": {
+    seeing:
+      "Lake Khövsgöl is Mongolia's largest freshwater lake, covering about 2,620 km² with a maximum depth of 267 m, and holds roughly 70% of the country's total freshwater.",
+    formation:
+      "Lake Khövsgöl is a tectonic rift lake, its basin having subsided along a crustal fault at the southern foot of the East Sayan range; its water is exceptionally clear, making it an important sample for studying the hydrology and water quality of rift lakes.",
+    observation:
+      "From the air, Lake Khövsgöl's water appears crystal clear to the bottom, ringed by forested mountains with high forest cover, forming a sharp contrast with the desert-steppe landscape of central-southern Mongolia.",
+    distinguish:
+      "Both Lake Khövsgöl and Uvs Lake are major Mongolian lakes, but Khövsgöl is a freshwater rift lake hydrologically connected to Russia's Lake Baikal, while Uvs Lake is a saline lake within an endorheic basin.",
+    concept:
+      "Lake Khövsgöl is often compared with Russia's Lake Baikal, both known for exceptional water clarity and hydrologically linked via the Eg River and Selenge — a classic case for studying the connectivity of transboundary lake systems.",
+    history:
+      "Khövsgöl National Park surrounds the lake, which has long served as a traditional fishing and grazing area for local Tuvan and Darkhad nomadic communities.",
+  },
+  "terkhiin-tsagaan-lake": {
+    seeing:
+      "Terkhiin Tsagaan Lake lies at the northern foot of the Khangai, about 16 km long, 6–10 km wide, with an average depth of 20 m at an elevation of 2,060 m — a freshwater lake dammed by volcanic lava.",
+    formation:
+      "Several thousand years ago, lava flows from the nearby Khorgo volcano blocked the course of the Terkh River, and water accumulated behind the lava dam to form the lake — a textbook case of a lava-dammed lake.",
+    observation:
+      "From the air, Terkhiin Tsagaan Lake shows the clear colouring typical of an oligotrophic lake, with dark lava landforms visible along one shore, forming a sharp geological contrast with the lake itself.",
+    distinguish:
+      "Terkhiin Tsagaan Lake and Khorgo Volcano together form a single volcano-lake landscape complex: the lake is the water body formed by the lava blockage, and the volcano is the lava source that caused it.",
+    concept:
+      "Terkhiin Tsagaan Lake is a classic sample for studying how volcanic activity reshapes regional drainage patterns by damming river courses with lava.",
+    history:
+      "The lake and the neighbouring Khorgo volcano are jointly protected as Khorgo-Terkhiin Tsagaan Nuur National Park, an important nature reserve and tourist destination in central Mongolia.",
+  },
+  "khorgo-volcano": {
+    seeing:
+      "Khorgo is an extinct volcano at 2,210 m elevation that stopped erupting about 8,000 years ago; its crater is about 200 m in diameter and 70–80 m deep, with larch forest covering its northern slope.",
+    formation:
+      "Khorgo is a Quaternary basaltic volcano at the northern foot of the Khangai; lava flows from its multiple eruptions once blocked the course of the Terkh River, and it is the most representative of the ten volcanoes in this area.",
+    observation:
+      "From the air, Khorgo shows the classic outline of a volcanic cone with a clearly visible crater, its dark larch forest on the north slope contrasting with the more exposed lava landform to the south.",
+    distinguish:
+      "Khorgo Volcano and Terkhiin Tsagaan Lake are two parts of the same landscape complex: Khorgo is the source of the lava eruptions, while the lake is the water body formed when that lava blocked the river.",
+    concept:
+      "Although Khorgo has been extinct for about 8,000 years, its crater and lava-flow landforms remain well preserved, making it an important sample for studying the history of Quaternary basaltic volcanism in central Mongolia.",
+    history:
+      "Khorgo and its neighbouring lake are jointly protected as a national park; local herders have long held traditional knowledge and oral stories about this volcanic landscape.",
+  },
+  "khongoryn-els": {
+    seeing:
+      "Khongoryn Els (also called Duut Mankhan, popularly known as the \"Singing Dunes\") is a dune belt within Gobi Gurvansaikhan National Park, stretching over 100 km with dunes reaching up to about 300 m in height.",
+    formation:
+      "Khongoryn Els formed as prevailing winds carried fine sand from the surrounding Gobi desert and deposited it against the changing terrain at the southern foot of the Gobi Altai, a textbook example of an aeolian dune landform.",
+    observation:
+      "From the air, Khongoryn Els appears as a continuous belt of golden, rolling dune ridges, forming a sharp contrast in colour and texture with the grey-brown gravel desert around it.",
+    distinguish:
+      "Both Khongoryn Els and Bayanzag lie within Gobi Gurvansaikhan National Park, but Khongoryn Els is an aeolian dune landform, while Bayanzag is a red cliff landform shaped by water and wind erosion.",
+    concept:
+      "Khongoryn Els earned its \"Singing Dunes\" nickname from the engine-like humming sound produced when wind blows across the sand — an acoustic phenomenon that is a classic case for studying the resonance mechanism of dry sand grain friction.",
+    history:
+      "Khongoryn Els and its surroundings have historically been part of a traditional grazing route for nomadic peoples of the Gobi region, and are today a signature landscape of Mongolia's Gobi tourism.",
+  },
+  bayanzag: {
+    seeing:
+      "Bayanzag is a red sandstone erosional cliff in South Gobi Province, known as the \"Flaming Cliffs\" for the flame-like orange-red colour the rock takes on at sunset.",
+    formation:
+      "Bayanzag's red cliffs are made of Cretaceous-era, river-and-lake-deposited sandstone; long-term wind and water erosion together have carved out today's distinctly layered erosional landform.",
+    observation:
+      "From the air, Bayanzag's cliffs show a rolling, continuous orange-red landform outline, set off by the sparse saxaul shrub desert vegetation around it.",
+    distinguish:
+      "Both Bayanzag and Khongoryn Els lie within Gobi Gurvansaikhan National Park, but Bayanzag is a red erosional cliff formed of Cretaceous sedimentary sandstone, while Khongoryn Els is an aeolian dune field.",
+    concept:
+      "Bayanzag is the site of the first-ever discovery of fossilized dinosaur eggs in the history of paleontology, making it significant for studying Cretaceous dinosaur reproductive behaviour and the ancient environmental history of the Gobi region.",
+    history:
+      "In 1922 the Central Asiatic Expeditions, led by Roy Chapman Andrews of the American Museum of Natural History, made the first discovery of dinosaur egg fossils here, establishing Bayanzag as a landmark site in international paleontology.",
+  },
 };
