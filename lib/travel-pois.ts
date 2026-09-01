@@ -131,6 +131,7 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
   ],
   shanghai: [
     { nameZh: "外滩", nameEn: "The Bund", lon: 121.4900, lat: 31.2400, kind: "landmark" },
+    { nameZh: "东方明珠塔", nameEn: "Oriental Pearl Tower", lon: 121.4947, lat: 31.2417, kind: "landmark" },
     { nameZh: "陆家嘴", nameEn: "Lujiazui", lon: 121.5050, lat: 31.2380, kind: "district" },
     { nameZh: "豫园", nameEn: "Yu Garden", lon: 121.4920, lat: 31.2270, kind: "landmark" },
     { nameZh: "武康路", nameEn: "Wukang Road", lon: 121.4340, lat: 31.2110, kind: "district" },
@@ -2071,6 +2072,7 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
   ],
   // 韩国
   seoul: [
+    { nameZh: "南山首尔塔", nameEn: "N Seoul Tower", lon: 126.9883, lat: 37.5512, kind: "landmark" },
     { nameZh: "景福宫", nameEn: "Gyeongbokgung Palace", lon: 126.9770, lat: 37.5796, kind: "landmark" },
     { nameZh: "北村韩屋村", nameEn: "Bukchon Hanok Village", lon: 126.9850, lat: 37.5826, kind: "district" },
     { nameZh: "明洞", nameEn: "Myeongdong", lon: 126.9850, lat: 37.5636, kind: "district" },
