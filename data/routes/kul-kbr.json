@@ -1,0 +1,16 @@
+{
+  "id": "kul-kbr",
+  "name": "吉隆坡 — 哥打巴鲁",
+  "nameEn": "Kuala Lumpur — Kota Bharu",
+  "description": "蒂蒂旺沙山脉 · 大汉山",
+  "descriptionEn": "Titiwangsa Mountains · Gunung Tahan",
+  "depCountry": "malaysia",
+  "arrCountry": "malaysia",
+  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK6430", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "KBR", "durationMin": 60 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
+    { "kind": "terrain", "terrainId": "gunung-tahan" },
+    { "kind": "city", "id": "kbr", "name": "哥打巴鲁", "nameEn": "Kota Bharu", "lat": 6.1669, "lon": 102.2922, "airport": true }
+  ]
+}

@@ -5318,6 +5318,189 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "The rice fields are vivid green in May–June and golden-ripe in September–October, the best seasons for photographing the karst rice-field scenery; plan a full day for boating and hiking.",
   },
+  // ============ Malaysia ============
+  "malaysia-overview": {
+    identity:
+      "Malaysia is made up of Peninsular Malaysia (West Malaysia) and the states of Sabah and Sarawak in northern Borneo (East Malaysia), covering about 330,000 km² with a population of about 36.4 million; its capital is Kuala Lumpur, the official language is Malay, and its currency is the Malaysian ringgit (MYR).",
+    layout:
+      "The country divides roughly into: the Centre (Kuala Lumpur, the political and economic hub), the Northern Peninsula (George Town/Penang, Ipoh, Langkawi, Kota Bharu), the Southern Peninsula (Johor Bahru, Malacca, Kuantan), Sabah (Kota Kinabalu, Sandakan — Mount Kinabalu and rainforest reserves) and Sarawak (Kuching, Miri — Gunung Mulu and the Niah Caves).",
+    gettingAround:
+      "Domestic flights are hubbed at Kuala Lumpur International Airport, reaching major cities across the peninsula and East Malaysia; the peninsula has a well-developed rail network and long-distance bus coverage between towns; interior East Malaysia relies more on roads and river transport, with some reserves reachable only by boat or hired car. Visa-free arrangements for short-term visitors vary by nationality — check Malaysia's official current announcements.",
+    culture:
+      "The official language is Malay, with high English proficiency; Mandarin, Tamil and other languages are widely used within their respective communities. Malaysia is a multiethnic, multireligious society (Malay, Chinese, Indian and the indigenous peoples of East Malaysia), with Islam as the official religion. Restaurant bills often already include a service charge, and tipping is not a mandatory tradition. The voltage is 230V, with British-style three-pin plugs.",
+    seeAndDo:
+      "Natural landforms: Mount Kinabalu, the Pinnacles and caves of Gunung Mulu National Park, Langkawi Geopark, diving at Sipadan Island. History and culture: the UNESCO-listed old towns of Malacca and George Town, Batu Caves. Rainforest ecology: primary rainforest at Danum Valley and Maliau Basin, wildlife-watching on the Kinabatangan River.",
+    whenAndTips:
+      "Lying near the equator, Malaysia is hot and humid year-round; the peninsula's east coast has its wet season from November to February (some islands close seasonally), while the west coast is comparatively drier; Sabah and Sarawak see rainfall more evenly distributed through the year — check seasonal conditions for your specific destination before travelling.",
+  },
+  "kuala-lumpur": {
+    identity:
+      "Kuala Lumpur is the capital of Malaysia, with a metropolitan population of about 7.2 million, at the confluence of the Klang and Gombak rivers, and the country's political, economic and cultural centre.",
+    layout:
+      "The city centre is anchored by the Petronas Twin Towers and the Bukit Bintang shopping district; Merdeka Square is ringed by colonial-era buildings, Brickfields is the well-known Indian business district, and Petaling Street is the heart of the Chinese community.",
+    gettingAround:
+      "Kuala Lumpur International Airport is about 45 km from the city centre; the KLIA Ekspres train takes about 28 minutes direct to downtown. The city's LRT, monorail and MRT network covers major attractions, and Grab ride-hailing is widely used.",
+    culture:
+      "The official language is Malay; English, Mandarin and Tamil are all widely used within their respective communities. Kuala Lumpur blends Malay, Chinese and Indian cultures, with an extremely diverse food scene. Restaurant bills typically already include service, and tipping is not mandatory.",
+    seeAndDo:
+      "The Petronas Twin Towers and Skybridge; Merdeka Square and the Sultan Abdul Samad Building; Batu Caves; Petaling Street Chinatown; Brickfields (Little India).",
+    whenAndTips:
+      "Hot and humid year-round, with temperatures typically 24–33°C; rainfall is somewhat heavier from November to February, so pack a light rain jacket; malls and metro stations are heavily air-conditioned, so a light layer is useful too.",
+  },
+  "george-town": {
+    identity:
+      "George Town is the capital of Penang state, with a city population of about 790,000 and a metropolitan area of over 2.84 million, on the northeast tip of Penang Island; its old town was inscribed on the UNESCO World Heritage List in 2008 together with Malacca.",
+    layout:
+      "The historic core covers about 109 ha, its streets lined with shophouses from the 19th and early 20th centuries; the Clan Jetties (a Chinese stilt-house settlement), Little India and Mosque Street's multi-faith buildings are interwoven throughout.",
+    gettingAround:
+      "Penang International Airport is about 18 km from the city centre, with an airport bus taking about an hour into town. George Town's old-town streets are narrow, making walking or cycling ideal for exploring the core area; buses and ride-hailing are also available.",
+    culture:
+      "The official language is Malay, with high English proficiency. George Town's old town contains 37 religious buildings — mosques, Chinese temples, Hindu temples and churches — making it a representative city for Malaysia's multi-faith coexistence. Restaurant bills often already include service.",
+    seeAndDo:
+      "George Town's old-town murals and shophouse architecture; the Clan Jetties stilt-house settlement; the Penang Hill funicular; the Cheong Fatt Tze Mansion; Mosque Street's cluster of multi-faith buildings.",
+    whenAndTips:
+      "December to February is comparatively cool and dry, an ideal season for exploring the old town; the old-town streets are narrow, so comfortable walking shoes are recommended.",
+  },
+  "johor-bahru": {
+    identity:
+      "Johor Bahru is the capital of Johor state, with a population of about 500,000, on the north shore of the Johor Strait facing Singapore across the water, and the southernmost city on the Malay Peninsula.",
+    layout:
+      "The city centre runs along the Johor Strait; the Johor–Singapore Causeway is an important land crossing to Singapore, and the downtown commercial area is closely tied to commuter traffic from Singapore.",
+    gettingAround:
+      "Senai International Airport is about 21 km from the city centre; the Causeway and the Second Link bridge connect to Singapore, with cross-border buses and private cars frequent, and the checkpoints often congested during commuter rush hours.",
+    culture:
+      "The official language is Malay; given its proximity to Singapore, English and Mandarin are widely used in business settings. Johor Bahru is the seat of the Johor royal family, and buildings such as the Istana Besar reflect its royal cultural heritage. Restaurant bills often already include service.",
+    seeAndDo:
+      "The Sultan Abu Bakar Royal Museum; Johor Bahru's central market; scenery along the Johor Strait; Legoland Malaysia (on the outskirts).",
+    whenAndTips:
+      "Hot and humid year-round; as a city bordering Singapore, prices are comparatively affordable, and it is a common extension destination for travellers combining a Singapore trip.",
+  },
+  "malacca-city": {
+    identity:
+      "Malacca City is the capital of Malacca state, with a population of about 50,000 in its historic core, on the east shore of the Strait of Malacca; it was the capital of the 15th-century Malacca Sultanate, and its old town was inscribed on the UNESCO World Heritage List in 2008.",
+    layout:
+      "The historic core is centred on Dutch Square, St Paul's Hill and Jonker Street, preserving layered architectural heritage from the Portuguese, Dutch and British colonial periods along with Peranakan (Baba-Nyonya) Chinese culture.",
+    gettingAround:
+      "Malacca Airport currently has no domestic scheduled flights, only a small number of international routes (such as to Singapore); most travellers arrive by road from Kuala Lumpur, about a 2-hour drive. The historic core is walkable, and trishaws are a local mode of transport.",
+    culture:
+      "The official language is Malay. Malacca was historically an important port linking East–West trade; long coexistence among diverse communities produced the distinctive Peranakan (Baba-Nyonya) culture, blending Chinese and Malay traditions. Restaurant bills often already include service.",
+    seeAndDo:
+      "Dutch Square (the Stadthuys); the ruins of St Paul's Hill and the Porta de Santiago; Jonker Street's cultural quarter; the Baba-Nyonya Heritage Museum; a night river cruise on the Malacca River.",
+    whenAndTips:
+      "Hot and humid year-round; the old town's sights are concentrated, so plan one to two days on foot; Jonker Street's night market and the riverside lights are especially lively after dark.",
+  },
+  ipoh: {
+    identity:
+      "Ipoh is the capital of Perak state, with a population of over 750,000, in the Kinta Valley; it grew rapidly from tin mining in the late 19th century and is today known for its colonial architecture and food.",
+    layout:
+      "The old town preserves extensive British colonial-era buildings and Chinese shophouses, while the new town is a modern commercial and residential district; several limestone caves lie around the Kinta Valley.",
+    gettingAround:
+      "Sultan Azlan Shah Airport is about 15 km from the city centre with limited flight options; driving or taking a long-distance bus along the North–South Expressway from Kuala Lumpur takes about 2 to 2.5 hours, and trains are also available.",
+    culture:
+      "The official language is Malay, with Cantonese widely used in the local Chinese community. Ipoh grew prosperous through the tin-mining boom; colonial-era buildings and long-established tea shops are city landmarks, and it is regarded as one of Malaysia's food capitals. Restaurant bills often already include service.",
+    seeAndDo:
+      "Ipoh old town's mural street; exploring the Gua Tempurung cave system; Ipoh railway station's colonial architecture; the limestone hill scenery of the Kinta Valley; Ipoh white coffee and hor fun noodles.",
+    whenAndTips:
+      "Hot and humid year-round; a good plan is half a day at Gua Tempurung and half a day strolling the old town sampling local food.",
+  },
+  "kota-kinabalu": {
+    identity:
+      "Kota Kinabalu is the capital of Sabah, with a population of about 610,000, on the northwest coast of Borneo, and the core gateway for exploring Mount Kinabalu and Sabah's islands.",
+    layout:
+      "The city centre runs along the coastline; Tanjung Aru Beach is known for its sunset views, and Gaya Street is home to the city's well-known weekend market.",
+    gettingAround:
+      "Kota Kinabalu International Airport is about 7 km from the city centre, Sabah's main air hub; taxis and Grab within the city reach nearby sights easily, while reaching Mount Kinabalu requires driving or hiring a car, about 2 hours.",
+    culture:
+      "The official language is Malay; the local Kadazan-Dusun and other indigenous communities retain distinctive traditional culture and festivals. Restaurant bills often already include service, and seafood is a local specialty.",
+    seeAndDo:
+      "Sunset at Tanjung Aru Beach; Gaya Street weekend market; snorkelling on the islands of Tunku Abdul Rahman Marine Park; a day trip to Kinabalu Park.",
+    whenAndTips:
+      "March–August sees comparatively less rainfall, a better season for climbing Mount Kinabalu and island activities; climbing Mount Kinabalu requires booking a permit and guide in advance.",
+  },
+  kuching: {
+    identity:
+      "Kuching is the capital of Sarawak, with a population of about 630,000, on the banks of the Sarawak River, and an important gateway for exploring Gunung Mulu National Park and the Niah Caves.",
+    layout:
+      "The Kuching Waterfront runs along the Sarawak River; the Astana on the opposite bank is a historic landmark, and the old town preserves Chinese shophouses and colonial-era buildings.",
+    gettingAround:
+      "Kuching International Airport is about 11 km from the city centre; reaching Gunung Mulu National Park requires a connecting domestic flight via Miri or directly to Mulu Airport, while the Niah Caves require driving toward Miri.",
+    culture:
+      "The official language is Malay; Sarawak is one of Malaysia's most ethnically diverse states, and the culture of indigenous groups such as the Dayak and Iban is well preserved locally. Restaurant bills often already include service, and Sarawak laksa is a local specialty.",
+    seeAndDo:
+      "The Kuching Waterfront and the Astana; the Sarawak Museum; hiking to the sea stacks of Bako National Park; the weekend night market at Kuching's old bazaar.",
+    whenAndTips:
+      "Hot and humid year-round, with rainfall relatively evenly distributed; plan domestic flights and a guide well in advance for interior destinations such as Gunung Mulu and Niah.",
+  },
+  "kota-bharu": {
+    identity:
+      "Kota Bharu is the capital of Kelantan state, with a population of about 490,000, at the mouth of the Kelantan River, and one of the cities in northeastern Malaysia where traditional Malay culture is best preserved.",
+    layout:
+      "The city centre is anchored by the Central Market, surrounded by traditional handicraft workshops and batik textile studios, with fishing villages preserved along the Kelantan riverbank.",
+    gettingAround:
+      "Sultan Ismail Petra Airport is about 8 km from the city centre, with direct domestic flights from Kuala Lumpur; the city is also reachable by road toward Taman Negara.",
+    culture:
+      "The official language is Malay. Kota Bharu is one of the areas where traditional Malay culture is best preserved, with kite-flying, top-spinning and other traditional folk crafts, along with batik textile-making, widely passed down locally. Restaurant bills often already include service.",
+    seeAndDo:
+      "Kota Bharu Central Market; the Islamic Arts Museum; visiting a batik textile workshop; fishing-village scenery along the Kelantan riverbank.",
+    whenAndTips:
+      "November to February is the east coast's wet season, with heavier rainfall in some years — check the weather before travelling; March–October is comparatively dry and better suited to outdoor activities.",
+  },
+  kuantan: {
+    identity:
+      "Kuantan is the capital of Pahang state, with a population of about 610,000, at the mouth of the Pahang River, and an important port city on the peninsula's east coast and gateway to the Pahang River basin.",
+    layout:
+      "The city centre lies on both banks of the Pahang River mouth; Teluk Cempedak Beach is a well-known local leisure beach, and river-mouth fishing villages preserve a traditional way of life.",
+    gettingAround:
+      "Sultan Ahmad Shah Airport is about 15 km from the city centre; Kuantan is reachable from Kuala Lumpur by domestic flight or long-distance bus (about 4 hours), and Tasik Chini is about a 1.5-hour drive away.",
+    culture:
+      "The official language is Malay. Kuantan is the administrative and commercial centre of Pahang state, its river-mouth fishing villages and coconut-lined beaches reflecting the traditional way of life on the peninsula's east coast. Restaurant bills often already include service.",
+    seeAndDo:
+      "Teluk Cempedak Beach; scenery at the Pahang River-mouth fishing villages; a day trip to the Tasik Chini biosphere reserve; the Kuantan State Mosque.",
+    whenAndTips:
+      "November to February is the east coast's wet season, with heavier rainfall in some months; March–October is comparatively dry and better suited to beach outings and a Tasik Chini day trip.",
+  },
+  sandakan: {
+    identity:
+      "Sandakan is a port city on Sabah's east coast, with a population of about 440,000, the capital of British North Borneo in the early 20th century, and the core gateway for exploring the Kinabatangan River.",
+    layout:
+      "The city centre runs along the bay; Sandakan Central Market is a well-known seafood and produce trading site locally, and several historic sites and nature reserves lie on the city's outskirts.",
+    gettingAround:
+      "Sandakan Airport is about 11 km from the city centre; reaching the wildlife reserves on the lower Kinabatangan River requires driving about 2 hours, with part of the trip by boat.",
+    culture:
+      "The official language is Malay. Sandakan was the capital of British North Borneo in the early 20th century, suffered severe destruction during the Second World War, and is today an important ecotourism and fishing city on Sabah's east coast. Restaurant bills often already include service.",
+    seeAndDo:
+      "A wildlife river cruise on the Kinabatangan (proboscis monkeys, orangutans); Sandakan Central Market; the floating mosque at Semporna (on the outskirts); the Sepilok Orangutan Rehabilitation Centre (on the outskirts).",
+    whenAndTips:
+      "March–August sees comparatively less rainfall, a better season for wildlife-watching on the Kinabatangan; book accommodation within the river reserve in advance to catch the morning and evening viewing windows.",
+  },
+  miri: {
+    identity:
+      "Miri is a port city in northeastern Sarawak, with a population of about 300,000, the core gateway for exploring Gunung Mulu National Park and the Niah Caves, and the birthplace of Malaysia's oil industry.",
+    layout:
+      "The city centre runs along the coastline; Canada Hill is the site of Malaysia's first oil well, now a memorial park, and several oil-industry heritage sites lie around the city.",
+    gettingAround:
+      "Miri Airport is about 8 km from the city centre; reaching Gunung Mulu National Park requires a connecting light-aircraft flight (about 30 minutes), while the Niah Caves are about a 1.5-hour drive.",
+    culture:
+      "The official language is Malay. Miri grew from the development of the oil industry — Malaysia's first oil well was drilled here in 1910 — and is today an important commercial and tourism hub in northern Sarawak. Restaurant bills often already include service.",
+    seeAndDo:
+      "The Canada Hill oil-well memorial park; the Pinnacles and cave exploration at Gunung Mulu National Park; the Great Cave archaeological site at Niah National Park; the Miri waterfront promenade.",
+    whenAndTips:
+      "Hot and humid year-round; flights to Gunung Mulu National Park are limited, so book tickets and a cave guide well in advance.",
+  },
+  "langkawi-city": {
+    identity:
+      "Kuah is the main town of the Langkawi archipelago, with a population of about 27,000, on the southeast coast of Langkawi Island, and the gateway town for exploring Langkawi UNESCO Global Geopark.",
+    layout:
+      "The Kuah jetty area is the island's main commercial and ferry hub, ringed by duty-free shopping districts, while the island's interior holds the geopark's karst and rainforest scenery.",
+    gettingAround:
+      "Langkawi International Airport is about 11 km from Kuah, with domestic and some international flights; getting around the island mainly relies on car rental, motorbike or a hired driver to visit the various geoforest parks.",
+    culture:
+      "The official language is Malay. Langkawi is a well-known duty-free shopping and resort island in Malaysia, with local legends about the origin of the island's name; fishing and tourism are the main pillars of the local economy. Restaurant bills often already include service.",
+    seeAndDo:
+      "The Langkawi Sky Bridge; a Kilim River mangrove cruise and karst scenery; Kuah's duty-free shopping district; sunset at Pantai Cenang.",
+    whenAndTips:
+      "November to February is comparatively dry, the best season for visiting Langkawi; May–October is the wet season, and some outdoor itineraries may be affected by weather.",
+  },
   // ============ Mongolia ============
   "mongolia-overview": {
     identity:

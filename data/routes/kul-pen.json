@@ -1,0 +1,15 @@
+{
+  "id": "kul-pen",
+  "name": "吉隆坡 — 槟城",
+  "nameEn": "Kuala Lumpur — Penang",
+  "description": "马来半岛西海岸走廊",
+  "descriptionEn": "Peninsular Malaysia's west coast corridor",
+  "depCountry": "malaysia",
+  "arrCountry": "malaysia",
+  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK6144", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "PEN", "durationMin": 55 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
+    { "kind": "city", "id": "pen", "name": "槟城", "nameEn": "Penang", "lat": 5.2971, "lon": 100.2769, "airport": true }
+  ]
+}

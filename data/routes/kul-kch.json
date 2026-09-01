@@ -1,0 +1,16 @@
+{
+  "id": "kul-kch",
+  "name": "吉隆坡 — 古晋",
+  "nameEn": "Kuala Lumpur — Kuching",
+  "description": "南海 · 巴哥国家公园",
+  "descriptionEn": "South China Sea · Bako National Park",
+  "depCountry": "malaysia",
+  "arrCountry": "malaysia",
+  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK5204", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "KCH", "durationMin": 110 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
+    { "kind": "terrain", "terrainId": "bako-national-park" },
+    { "kind": "city", "id": "kch", "name": "古晋", "nameEn": "Kuching", "lat": 1.4847, "lon": 110.3467, "airport": true }
+  ]
+}
