@@ -61,6 +61,10 @@ export function createSectionNarration(): SectionNarration {
 
       let baseIndex = 0;
       let firstFired = false;
+      // 一旦某一段 Edge TTS 合成失败、回退了浏览器 TTS，本次播报剩余的段落
+      // 不再尝试 Edge TTS——避免"前半段自然音质、后半段突然变机械音"的忽好忽坏，
+      // 也省掉后面每段都重复走一遍注定失败的合成请求（更快、更省）。
+      let degraded = false;
       // 预取管线：先合成第 0 段，播放时再合成下一段
       let nextSynth: Promise<{ url: string; wordBoundaries: WordBoundary[] } | null> | null =
         synthesizeSpeech(parts[0]!.text, language);
@@ -74,10 +78,13 @@ export function createSectionNarration(): SectionNarration {
         const s = parts[i]!;
         const sentenceCount = splitSentences(s.text).length;
 
-        const got = await nextSynth;
-        // 播这段时，预取下一段
+        const got = degraded ? null : await nextSynth;
+        if (got === null && !degraded) degraded = true;
+        // 播这段时，预取下一段（已降级则不再发起 Edge TTS 请求）
         nextSynth =
-          i + 1 < parts.length ? synthesizeSpeech(parts[i + 1]!.text, language) : null;
+          !degraded && i + 1 < parts.length
+            ? synthesizeSpeech(parts[i + 1]!.text, language)
+            : null;
 
         if (cancelled) {
           if (got) URL.revokeObjectURL(got.url);
