@@ -1,0 +1,27 @@
+{
+  "id": "pek-csx",
+  "name": "北京 — 长沙",
+  "nameEn": "Beijing — Changsha",
+  "description": "太行山 · 华北平原 · 大别山 · 洞庭湖",
+  "descriptionEn": "Taihang Mts · North China Plain · Dabie Mts · Dongting Lake",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3245",
+    "aircraft": "Airbus A321",
+    "depIata": "PEK",
+    "arrIata": "CSX",
+    "durationMin": 160
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "taihang" },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "dabie" },
+    { "kind": "terrain", "terrainId": "dongting" },
+    { "kind": "city", "id": "csx", "name": "长沙黄花", "nameEn": "Changsha Huanghua", "lat": 28.197, "lon": 113.221, "airport": true }
+  ]
+}

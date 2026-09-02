@@ -1,0 +1,27 @@
+{
+  "id": "can-tna",
+  "name": "广州 — 济南",
+  "nameEn": "Guangzhou — Jinan",
+  "description": "南岭 · 江南丘陵 · 华北平原 · 山东丘陵（泰山）",
+  "descriptionEn": "Nanling Mts · Jiangnan Hills · North China Plain · Shandong Hills (Mt. Tai)",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3607",
+    "aircraft": "Airbus A320",
+    "depIata": "CAN",
+    "arrIata": "TNA",
+    "durationMin": 135
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "jiangnan-hills" },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "shandong-hills" },
+    { "kind": "city", "id": "tna", "name": "济南遥墙", "nameEn": "Jinan Yaoqiang", "lat": 36.857, "lon": 117.216, "airport": true }
+  ]
+}

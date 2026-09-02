@@ -31,6 +31,13 @@ import xiyCtu from "./xiy-ctu.json" with { type: "json" };
 import urcHtn from "./urc-htn.json" with { type: "json" };
 import kmgLxa from "./kmg-lxa.json" with { type: "json" };
 import shaHrb from "./sha-hrb.json" with { type: "json" };
+// 中国 · 批 5（Tier 1 省会缺口：福州/济南/长沙/南宁/海口/兰州）
+import pekFoc from "./pek-foc.json" with { type: "json" };
+import canTna from "./can-tna.json" with { type: "json" };
+import pekCsx from "./pek-csx.json" with { type: "json" };
+import canNng from "./can-nng.json" with { type: "json" };
+import pekHak from "./pek-hak.json" with { type: "json" };
+import ctuLhw from "./ctu-lhw.json" with { type: "json" };
 // 日本国内
 import hndItm from "./hnd-itm.json" with { type: "json" };
 import hndCts from "./hnd-cts.json" with { type: "json" };
@@ -298,6 +305,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   urcHtn,
   kmgLxa,
   shaHrb,
+  pekFoc,
+  canTna,
+  pekCsx,
+  canNng,
+  pekHak,
+  ctuLhw,
   hndItm,
   hndCts,
   hndFuk,

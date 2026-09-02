@@ -1,0 +1,27 @@
+{
+  "id": "pek-hak",
+  "name": "北京 — 海口",
+  "nameEn": "Beijing — Haikou",
+  "description": "太行山 · 大别山 · 南岭 · 海南岛",
+  "descriptionEn": "Taihang Mts · Dabie Mts · Nanling Mts · Hainan Island",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "海南航空",
+    "airlineEn": "Hainan Airlines",
+    "flightNo": "HU7282",
+    "aircraft": "Boeing 787-9",
+    "depIata": "PEK",
+    "arrIata": "HAK",
+    "durationMin": 230
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "taihang" },
+    { "kind": "terrain", "terrainId": "dabie" },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "hainan" },
+    { "kind": "city", "id": "hak", "name": "海口美兰", "nameEn": "Haikou Meilan", "lat": 19.935, "lon": 110.459, "airport": true }
+  ]
+}

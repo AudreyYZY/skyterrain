@@ -1,0 +1,25 @@
+{
+  "id": "ctu-lhw",
+  "name": "成都 — 兰州",
+  "nameEn": "Chengdu — Lanzhou",
+  "description": "四川盆地 · 甘南高原",
+  "descriptionEn": "Sichuan Basin · Gannan Plateau",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国联合航空",
+    "airlineEn": "China United Airlines",
+    "flightNo": "EU1863",
+    "aircraft": "Boeing 737-800",
+    "depIata": "CTU",
+    "arrIata": "LHW",
+    "durationMin": 80
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "tfu", "name": "成都天府", "nameEn": "Chengdu Tianfu", "lat": 30.312, "lon": 104.441, "airport": true },
+    { "kind": "terrain", "terrainId": "sichuan" },
+    { "kind": "feature", "name": "甘南高原", "nameEn": "Gannan Plateau", "lon": 102.9, "lat": 35.0 },
+    { "kind": "city", "id": "lhw", "name": "兰州中川", "nameEn": "Lanzhou Zhongchuan", "lat": 36.515, "lon": 103.621, "airport": true }
+  ]
+}

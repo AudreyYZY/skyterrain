@@ -4663,6 +4663,96 @@ export const ROUTE_NARRATION: Record<
       "Zagreb to Rijeka is about 35 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's shortest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Rijeka Airport, on the island of Krk, is about 30 km from central Rijeka.",
     },
   },
+
+  "pek-foc": {
+    study: {
+    "zh-CN":
+      "北京飞福州，是从华北平原一路飞到东南沿海武夷山南麓的一条线。飞机离开首都机场，脚下先是华北平原——黄河、海河冲积出的大平原，地势平坦，农田和城镇连成一片。往南飞行逐渐接近长江三角洲一带，河网稠密、水田与城镇交错，是中国经济最发达的区域之一。继续向东南，地面开始隆起，进入武夷山区——一列东北—西南走向的褶皱山脉，森林覆盖率高，也是江西与福建的界山；主峰黄岗山超过2100米，是华东地区海拔最高点之一。翻过武夷山，飞机沿闽江下降进入福州盆地，河流在这里冲积出一小片平原，城市坐落其中，机场则在更靠海的长乐。",
+    "en-US":
+      "Beijing to Fuzhou flies from the North China Plain all the way to the southern foot of the Wuyi Mountains on the south-east coast. Leaving the capital, you are first over the North China Plain — a vast flat lowland built by the silt of the Yellow and Hai rivers, fields and towns merging into one another. Heading south the flight approaches the Yangtze Delta area, a dense web of rivers, paddies and towns and one of China's most developed regions. Farther south-east the ground begins to rise into the Wuyi Mountains, a folded range running north-east to south-west, heavily forested and forming the border between Jiangxi and Fujian; its highest peak, Huanggang Shan, tops 2,100 m, among the highest points in eastern China. Beyond the Wuyi range the plane descends along the Min River into the Fuzhou basin, where the river has built a small alluvial plain around the city, with the airport sited farther out toward the coast at Changle.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到福州约需两个半到三个小时，是从干燥的华北飞到温暖湿润的东南沿海。福州属亚热带海洋性季风气候，全年温暖湿润，7–9月是台风季，冬季温和少霜雪。福州以温泉资源丰富闻名，被认定为“中国温泉之都”，泡温泉是本地人的日常而非旅游噱头；三坊七巷、鼓山、烟台山是主要看点，饮食清淡偏甜酸，佛跳墙、鱼丸是代表。福厦高铁到厦门约1小时，是继续福建行程的常用方式。台风季出行建议留意航班是否延误。",
+    "en-US":
+      "Beijing to Fuzhou takes about two and a half to three hours, from the dry north to the warm, humid south-east coast. Fuzhou has a subtropical maritime monsoon climate, warm and humid year-round, with a typhoon season from July to September and mild winters with little frost. Fuzhou is known for its abundant hot springs and was named a 'Hot Spring Capital of China' — bathing here is an everyday local habit, not a tourist gimmick. Sanfang Qixiang, Gushan and the Yantai Mountain quarter are the main sights, and the food leans light, sweet and sour, with Buddha Jumps Over the Wall and fish balls as local specialties. The Fuzhou–Xiamen high-speed line reaches Xiamen in about an hour, a common way to continue a Fujian itinerary. During typhoon season, check for possible flight delays.",
+    },
+  },
+
+  "can-tna": {
+    study: {
+    "zh-CN":
+      "广州飞济南，是从岭南一路飞过江南、跨过长江，抵达华北平原北端“泉城”的一条线。飞机从珠江三角洲起飞，先掠过南岭——珠江与长江水系的分水岭，是一列低矮破碎的东西向丘陵。翻过南岭进入江南丘陵，黄山一带山地起伏、河网密布，是江南典型的低山丘陵地貌。继续向北跨过长江，地面转为华北平原——黄河、淮河冲积出的大平原，一望无际的农田与密集城镇。飞机在平原东段抵达山东丘陵，泰山拔地而起，海拔1532.7米，是华北平原上少见的高耸孤峰，历代帝王在此封禅祭天。济南就坐落在泰山北麓、黄河南岸，城内密布的名泉是这座“泉城”的招牌。",
+    "en-US":
+      "Guangzhou to Jinan flies from the far south, across the Jiangnan hills and the Yangtze, to the 'Spring City' at the northern edge of the North China Plain. The flight leaves the Pearl River Delta and soon crosses the Nanling, a low, broken east–west belt of hills forming the drainage divide between the Pearl and Yangtze river systems. Beyond the Nanling lie the Jiangnan Hills, a rolling, river-laced low-mountain landscape typified by the Huangshan area. Farther north, past the Yangtze, the ground becomes the North China Plain, built by the silt of the Yellow and Huai rivers, an endless expanse of fields and dense towns. In the eastern part of the plain the flight reaches the Shandong Hills, where Mount Tai rises abruptly to 1,532.7 m, a rare solitary peak on the flat plain where emperors once performed the fengshan sacrifices to Heaven and Earth. Jinan sits at the northern foot of Mount Tai on the south bank of the Yellow River, its many named springs giving the city its nickname, the 'Spring City'.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到济南约两个多小时，从潮湿炎热的岭南飞到四季分明的华北。济南以“泉城”闻名，趵突泉、大明湖、千佛山是三大名胜，鲁菜讲究清汤鲜嫩。济南是京沪、济青高铁枢纽，到泰山约20分钟、到曲阜约1小时，安排一日往返登泰山看日出很方便。冬季干冷，夏季炎热多雨，春秋气候最舒适。",
+    "en-US":
+      "Guangzhou to Jinan takes just over two hours, from the hot, humid far south to the four-season north. Jinan is famous as the 'Spring City' — Baotu Spring, Daming Lake and Thousand Buddha Mountain are its three great sights, and Jinan cuisine prizes clear broths and delicate textures. Jinan is a hub on the Beijing–Shanghai and Jinan–Qingdao high-speed lines, about 20 minutes from Tai'an (for Mount Tai) and about an hour from Qufu, making a day trip to climb Mount Tai for sunrise easy to arrange. Winters are cold and dry, summers hot and rainy, and spring and autumn are the most comfortable seasons.",
+    },
+  },
+
+  "pek-csx": {
+    study: {
+    "zh-CN":
+      "北京飞长沙，是从华北平原一路穿过中原、跨过长江，抵达湘江畔的一条线。飞机离开首都机场，先掠过太行山东缘，随后进入华北平原——黄河、海河冲积出的大平原。继续向南，飞过大别山——一列不高但明显的山地，横在中原与长江中游之间，也是淮河与长江的分水岭。越过大别山进入长江中下游平原，河湖交错、圩田密布，飞机随后抵达洞庭湖——中国第二大淡水湖，接纳湘、资、沅、澧四水，也是长江重要的调蓄湖泊。过洞庭湖不久便是长沙，这座城市依湘江而建，西岸是岳麓山，东岸是老城区。",
+    "en-US":
+      "Beijing to Changsha flies from the North China Plain, across the Central Plain and the Yangtze, to the city on the banks of the Xiang River. Leaving the capital, the flight first skirts the eastern edge of the Taihang Mountains before crossing the North China Plain, built by the silt of the Yellow and Hai rivers. Farther south it crosses the Dabie Mountains, a modest but distinct range set between the Central Plain and the middle Yangtze, and the divide between the Huai and Yangtze river systems. Beyond the Dabie the flight crosses the Middle–Lower Yangtze Plain, a low-lying patchwork of rivers, lakes and diked fields, before reaching Dongting Lake — China's second-largest freshwater lake, fed by the Xiang, Zi, Yuan and Li rivers and an important flood-storage basin for the Yangtze. Changsha follows shortly after Dongting Lake, a city built along the Xiang River with Yuelu Mountain on the west bank and the old town on the east.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到长沙约两个半到三个小时。长沙属亚热带季风湿润气候，夏季是传统“四大火炉”之一，酷热潮湿，冬季阴冷潮湿。长沙近年因美食和夜生活出圈，火宫殿、文和友、茶颜悦色是热门去处，岳麓山、橘子洲头、太平街是主要景点。长沙是京广、沪昆高铁交会点，到武汉约1.5小时、到张家界约2小时，往外安排行程很方便。",
+    "en-US":
+      "Beijing to Changsha takes about two and a half to three hours. Changsha has a humid subtropical monsoon climate; it is traditionally one of China's 'Four Furnaces', with hot, humid summers and damp, cold winters. In recent years Changsha has become known for its food and nightlife — Huogongdian, Wenheyou and Cha Yan Yue Se are popular spots — while Yuelu Mountain, Juzizhou and Taiping Street are the main sights. Changsha sits where the Beijing–Guangzhou and Shanghai–Kunming high-speed lines cross, about 1.5 hours from Wuhan and about 2 hours from Zhangjiajie, making it easy to build a wider itinerary around it.",
+    },
+  },
+
+  "can-nng": {
+    study: {
+    "zh-CN":
+      "广州飞南宁，是一条跨越两广丘陵的短途航线。飞机从珠江三角洲起飞，很快进入两广丘陵地带——这是南岭以南、跨越广东西部和广西东部的低山丘陵区，地势起伏和缓，与北面高峻的南岭形成明显的落差。河谷之间点缀着喀斯特地貌，桂林一带的塔状峰林正是这一带最典型的代表，石灰岩经长期溶蚀形成尖峭的孤峰群。飞机沿丘陵间的谷地一路向西，地面逐渐低平，最终降落在邕江畔的南宁——广西壮族自治区首府，因城区四季常绿而有“绿城”之称，也是中国—东盟博览会的举办地。",
+    "en-US":
+      "Guangzhou to Nanning is a short hop across the Liangguang Hills. Leaving the Pearl River Delta, the flight soon enters the Liangguang Hills, a belt of low mountains south of the Nanling spanning western Guangdong and eastern Guangxi, gently undulating and dotted with karst landforms — the tower-karst peaks around Guilin are the most iconic example in this belt. The flight follows the valleys between the hills westward and lands at Nanning, on the Yong River, capital of the Guangxi Zhuang Autonomous Region. Known as the 'Green City' for its year-round greenery, Nanning also hosts the China–ASEAN Expo.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到南宁约一个半小时，是一条中短途航线。南宁属亚热带季风气候，夏长冬短，全年温暖湿润。这里是壮、汉等多民族聚居地，农历三月三“壮族三月三”是广西法定节假日。青秀山、广西民族博物馆、三街两巷是主要看点，老友粉是本地招牌小吃。南宁是南广、南昆高铁枢纽，到桂林约2–3小时，也是中越国际列车的始发站。",
+    "en-US":
+      "Guangzhou to Nanning is about an hour and a half, a short-to-medium domestic hop. Nanning has a subtropical monsoon climate with long summers and short winters, warm and humid year-round. It is home to Zhuang, Han and other ethnic communities, and the Zhuang San Yue San festival is a statutory Guangxi holiday. Qingxiushan, the Guangxi Museum of Nationalities and the Sanjie Liangxiang historic quarter are the main sights, and laoyou fen is the local signature dish. Nanning is a hub on the Nanning–Guangzhou and Nanning–Kunming high-speed lines, about 2–3 hours from Guilin, and is also the starting point for the China–Vietnam international train.",
+    },
+  },
+
+  "pek-hak": {
+    study: {
+    "zh-CN":
+      "北京飞海口，是中国大陆最长的南北纵贯航线之一，从温带一路飞到热带。飞机离开首都机场，先掠过太行山东缘，随后越过大别山——淮河与长江的分水岭。跨过长江中下游平原后，飞机进入南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵，翻过南岭就进入热带、亚热带过渡的华南地区。飞机继续向南跨越琼州海峡，海南岛出现在眼下：岛屿中央隆起，五指山是最高点，四周被平原和台地环绕，呈典型的环形地貌。飞机在海南岛北部的海口降落，这里与广东雷州半岛隔海相望，是岛屿与大陆之间的门户。",
+    "en-US":
+      "Beijing to Haikou is one of the longest north–south routes within mainland China, flying from the temperate zone all the way to the tropics. Leaving the capital, the flight skirts the eastern edge of the Taihang Mountains and then crosses the Dabie Mountains, the divide between the Huai and Yangtze river systems. Beyond the Middle–Lower Yangtze Plain the flight reaches the Nanling, a low, broken east–west belt of hills that forms the drainage divide between the Pearl and Yangtze systems; crossing it brings you into the tropical-to-subtropical transition zone of southern China. The flight then crosses the Qiongzhou Strait southward and Hainan Island comes into view below: a domed island with Wuzhi Shan (Five-Finger Mountain) at its highest point, ringed by plains and terraces in a classic concentric pattern. The plane lands at Haikou on the island's north coast, facing Guangdong's Leizhou Peninsula across the strait — the gateway between the island and the mainland.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到海口约三个半到四个小时，是从干冷的华北飞到全年温暖的热带岛屿。海口别称“椰城”，是海南自由贸易港的政策核心区之一。骑楼老街、石山火山群地质公园、假日海滩是主要看点，清补凉、海南粉、椰子鸡是当地风味。海南岛与大陆之间没有跨海大桥，火车靠火车轮渡跨越琼州海峡，自驾也需汽车轮渡，出行需留出更多时间。5–10月是雨季兼台风季，11月到次年4月最舒适。",
+    "en-US":
+      "Beijing to Haikou takes about three and a half to four hours, from the dry, cold north to a tropical island that is warm year-round. Haikou, nicknamed the 'Coconut City', is a policy core zone of the Hainan Free Trade Port. The Qilou Old Street, the Shishan Volcano Cluster Geopark and Holiday Beach are the main sights, with qingbuliang, Hainan rice noodles and coconut chicken as local specialties. There is no bridge across the Qiongzhou Strait: trains cross by train ferry and cars need a vehicle ferry too, so build extra time into travel plans. May–October is the rainy, typhoon-prone season; November to April is the most comfortable time to visit.",
+    },
+  },
+
+  "ctu-lhw": {
+    study: {
+    "zh-CN":
+      "成都飞兰州，是一条穿越四川盆地北缘、翻上青藏高原东北边缘的短途航线。飞机从成都平原起飞，脚下是四川盆地——四周被山地环绕的红层盆地，都江堰在盆地西缘引岷江水灌溉良田。飞机向北飞越盆地边缘的山地，进入甘南高原——这里地势陡然抬升，是青藏高原东北边缘与黄土高原之间的过渡地带，海拔多在3000米左右，也是黄河上游重要的水源涵养区。飞机继续向北，地势逐渐下降，进入黄河穿城而过的兰州——中国唯一一座黄河干流贯穿主城区的省会城市，河谷两侧是典型的黄土丘陵。",
+    "en-US":
+      "Chengdu to Lanzhou is a short flight that crosses the northern rim of the Sichuan Basin and climbs onto the north-eastern edge of the Tibetan Plateau. Leaving the Chengdu Plain, the flight is first over the Sichuan Basin, a red-bed basin ringed by mountains, where the Dujiangyan irrigation works divert the Min River to water the fields on its western edge. Heading north over the hills at the basin's rim, the flight enters the Gannan Plateau, where the land rises abruptly — a transition zone between the north-eastern edge of the Tibetan Plateau and the Loess Plateau, mostly around 3,000 m, and an important water-catchment area for the upper Yellow River. Farther north the land gradually descends into Lanzhou, the city the Yellow River runs straight through — the only provincial capital in China where the river's main channel crosses the core of the city — flanked by classic loess hills on either side of the valley.",
+    },
+    travel: {
+    "zh-CN":
+      "成都到兰州约一个半小时。兰州地处黄土高原西部，深居内陆，属温带大陆性气候，干旱少雨、昼夜温差大。中山桥、白塔山、黄河母亲雕塑是滨河一带的主要看点，牛肉面是本地人的日常早餐。兰州是兰新、兰州至西宁高铁枢纽，到西宁约1.5小时。中川机场距市区约70公里，是国内离市中心最远的省会机场之一，安排行程要留足往返时间。",
+    "en-US":
+      "Chengdu to Lanzhou is about an hour and a half. Lanzhou sits at the western edge of the Loess Plateau, deep inland, with a temperate continental climate — dry, with large swings between day and night temperatures. Zhongshan Bridge, White Pagoda Hill and the Mother River sculpture are the main sights along the riverside, and beef noodles are a daily breakfast for locals. Lanzhou is a hub on the Lanzhou–Xinjiang and Lanzhou–Xining high-speed lines, about 1.5 hours from Xining. Zhongchuan Airport is about 70 km from the centre, one of the farthest provincial-capital airports from its city in China, so build enough transfer time into your plans.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */
