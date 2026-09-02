@@ -2792,6 +2792,63 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "黄河母亲雕塑", nameEn: "Mother River Sculpture", lon: 103.8106, lat: 36.0592, kind: "landmark" },
     { nameZh: "五泉山公园", nameEn: "Wuquan Mountain Park", lon: 103.8267, lat: 36.0417, kind: "nature" },
   ],
+
+  // ── 中国 · Tier 2 热门城市批1 ──
+  dalian: [
+    { nameZh: "中山广场", nameEn: "Zhongshan Square", lon: 121.6515, lat: 38.9168, kind: "landmark" },
+    { nameZh: "星海广场", nameEn: "Xinghai Square", lon: 121.5952, lat: 38.9046, kind: "landmark" },
+    { nameZh: "老虎滩海洋公园", nameEn: "Laohutan Ocean Park", lon: 121.6711, lat: 38.8714, kind: "nature" },
+    { nameZh: "金石滩", nameEn: "Jinshitan (Golden Pebble Beach)", lon: 122.12, lat: 39.05, kind: "nature" },
+  ],
+
+  ningbo: [
+    { nameZh: "天一阁", nameEn: "Tianyi Pavilion", lon: 121.5500, lat: 29.8700, kind: "landmark" },
+    { nameZh: "月湖", nameEn: "Moon Lake", lon: 121.5490, lat: 29.8705, kind: "nature" },
+    { nameZh: "老外滩", nameEn: "Old Bund (Sanjiangkou)", lon: 121.5590, lat: 29.8790, kind: "district" },
+    { nameZh: "东钱湖", nameEn: "Dongqian Lake", lon: 121.6670, lat: 29.7667, kind: "nature" },
+  ],
+
+  suzhou: [
+    { nameZh: "拙政园", nameEn: "Humble Administrator's Garden", lon: 120.6256, lat: 31.3267, kind: "landmark" },
+    { nameZh: "留园", nameEn: "Lingering Garden", lon: 120.5881, lat: 31.3175, kind: "landmark" },
+    { nameZh: "平江路", nameEn: "Pingjiang Road", lon: 120.6350, lat: 31.3150, kind: "district" },
+    { nameZh: "山塘街", nameEn: "Shantang Street", lon: 120.5990, lat: 31.3230, kind: "district" },
+  ],
+
+  luoyang: [
+    { nameZh: "龙门石窟", nameEn: "Longmen Grottoes", lon: 112.4697, lat: 34.5556, kind: "landmark" },
+    { nameZh: "白马寺", nameEn: "White Horse Temple", lon: 112.5997, lat: 34.7239, kind: "landmark" },
+    { nameZh: "隋唐洛阳城国家遗址公园", nameEn: "Sui-Tang Luoyang City Archaeological Park", lon: 112.459, lat: 34.615, kind: "landmark" },
+    { nameZh: "洛阳博物馆", nameEn: "Luoyang Museum", lon: 112.4601, lat: 34.6635, kind: "landmark" },
+  ],
+
+  datong: [
+    { nameZh: "云冈石窟", nameEn: "Yungang Grottoes", lon: 113.1259, lat: 40.1105, kind: "landmark" },
+    { nameZh: "悬空寺", nameEn: "Hanging Temple", lon: 113.7050, lat: 39.6658, kind: "landmark" },
+    { nameZh: "大同古城墙", nameEn: "Datong City Walls", lon: 113.295, lat: 40.090, kind: "landmark" },
+    { nameZh: "九龙壁", nameEn: "Nine Dragon Screen", lon: 113.298, lat: 40.086, kind: "landmark" },
+  ],
+
+  huangshan: [
+    { nameZh: "屯溪老街", nameEn: "Tunxi Old Street", lon: 118.3153, lat: 29.6961, kind: "district" },
+    { nameZh: "黄山风景区", nameEn: "Mount Huangshan Scenic Area", lon: 118.1667, lat: 30.1250, kind: "nature" },
+    { nameZh: "宏村", nameEn: "Hongcun", lon: 117.9905, lat: 30.0033, kind: "district" },
+    { nameZh: "西递", nameEn: "Xidi", lon: 117.9960, lat: 29.9033, kind: "district" },
+  ],
+
+  quanzhou: [
+    { nameZh: "开元寺", nameEn: "Kaiyuan Temple", lon: 118.5810, lat: 24.9168, kind: "landmark" },
+    { nameZh: "洛阳桥", nameEn: "Luoyang Bridge", lon: 118.6762, lat: 24.9545, kind: "landmark" },
+    { nameZh: "天后宫", nameEn: "Tianhou Temple", lon: 118.586, lat: 24.905, kind: "landmark" },
+    { nameZh: "清净寺", nameEn: "Qingjing Mosque", lon: 118.5908, lat: 24.9028, kind: "landmark" },
+  ],
+
+  zhangye: [
+    { nameZh: "张掖丹霞地质公园", nameEn: "Zhangye Danxia Geopark", lon: 100.1332, lat: 38.9155, kind: "nature" },
+    { nameZh: "大佛寺", nameEn: "Giant Buddha Temple", lon: 100.4542, lat: 38.9300, kind: "landmark" },
+    { nameZh: "镇远楼", nameEn: "Zhenyuan Tower", lon: 100.4499, lat: 38.9248, kind: "landmark" },
+    { nameZh: "黑河湿地国家级自然保护区", nameEn: "Heihe Wetland National Nature Reserve", lon: 100.48, lat: 39.05, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

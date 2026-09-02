@@ -708,6 +708,55 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "LHW", nameZh: "兰州中川国际机场", nameEn: "Lanzhou Zhongchuan Int'l", lon: 103.621, lat: 36.515 },
     source: "兰州市中心（城关区）36.0606,103.8268；LHW 机场：公开资料（Wikipedia，机场距市区约70km，中国离市中心最远机场之一）",
   },
+  // ── 中国 · Tier 2 热门城市批1（计划单列市 + UNESCO 遗产城市）──
+  {
+    id: "dalian", nameZh: "大连", nameEn: "Dalian", country: "china", tier: "notable", zone: "cn-northeast",
+    lon: 121.6515, lat: 38.9168,
+    airport: { iata: "DLC", nameZh: "大连周水子国际机场", nameEn: "Dalian Zhoushuizi Int'l", lon: 121.538, lat: 38.966 },
+    source: "大连中山广场一带 38.9168,121.6515；DLC 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "ningbo", nameZh: "宁波", nameEn: "Ningbo", country: "china", tier: "notable", zone: "cn-east",
+    lon: 121.554, lat: 29.869,
+    airport: { iata: "NGB", nameZh: "宁波栎社国际机场", nameEn: "Ningbo Lishe Int'l", lon: 121.462, lat: 29.827 },
+    source: "宁波天一广场一带 29.869,121.554；NGB 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "suzhou", nameZh: "苏州", nameEn: "Suzhou", country: "china", tier: "notable", zone: "cn-east",
+    lon: 120.6158, lat: 31.3200,
+    airport: { iata: "WUX", nameZh: "苏南硕放国际机场", nameEn: "Sunan Shuofang Int'l (Wuxi–Suzhou)", lon: 120.429, lat: 31.494 },
+    source: "苏州观前街一带 31.3200,120.6158；WUX 机场：公开资料（Wikipedia，机场位于无锡与苏州之间，2023-03 更名“苏南硕放机场（无锡苏州）”，距苏州市区约22km，苏州本身无独立商用机场）",
+  },
+  {
+    id: "luoyang", nameZh: "洛阳", nameEn: "Luoyang", country: "china", tier: "notable", zone: "cn-central",
+    lon: 112.4539, lat: 34.6197,
+    airport: { iata: "LYA", nameZh: "洛阳北郊机场", nameEn: "Luoyang Beijiao Airport", lon: 112.388, lat: 34.741 },
+    source: "洛阳市中心（西工区）34.6197,112.4539；LYA 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "datong", nameZh: "大同", nameEn: "Datong", country: "china", tier: "notable", zone: "cn-north",
+    lon: 113.3000, lat: 40.0900,
+    airport: { iata: "DAT", nameZh: "大同云冈机场", nameEn: "Datong Yungang Int'l", lon: 113.482, lat: 40.060 },
+    source: "大同古城（九龙壁一带）40.0900,113.3000；DAT 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "huangshan", nameZh: "黄山", nameEn: "Huangshan", country: "china", tier: "notable", zone: "cn-east",
+    lon: 118.3153, lat: 29.6961,
+    airport: { iata: "TXN", nameZh: "黄山屯溪国际机场", nameEn: "Huangshan Tunxi Int'l", lon: 118.253, lat: 29.730 },
+    source: "黄山市屯溪区（老街一带）29.6961,118.3153；TXN 机场：公开资料（Wikipedia）；本条为黄山市/屯溪城区，与黄山风景区（地形注册表 jiangnan-hills 锚点，30.13N 118.17E）同名不同地",
+  },
+  {
+    id: "quanzhou", nameZh: "泉州", nameEn: "Quanzhou", country: "china", tier: "notable", zone: "cn-east",
+    lon: 118.6757, lat: 24.8744,
+    airport: { iata: "JJN", nameZh: "泉州晋江国际机场", nameEn: "Quanzhou Jinjiang Int'l", lon: 118.589, lat: 24.799 },
+    source: "泉州市中心（鲤城区）24.8744,118.6757；JJN 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "zhangye", nameZh: "张掖", nameEn: "Zhangye", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 100.4499, lat: 38.9248,
+    airport: { iata: "YZY", nameZh: "张掖甘州机场", nameEn: "Zhangye Ganzhou Airport", lon: 100.675, lat: 38.802 },
+    source: "张掖市中心（甘州区）38.9248,100.4499；YZY 机场：公开资料（Wikipedia）",
+  },
 
   // ── 日本 ──────────────────────────────────────────────
   {
