@@ -671,6 +671,43 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "TPE", nameZh: "台湾桃园国际机场", nameEn: "Taiwan Taoyuan Int'l", lon: 121.233, lat: 25.078 },
     source: "台北市中心 25.0330,121.5654；TPE 机场：公开资料",
   },
+  // ── 中国 · 补齐 Tier 1 省会缺口（福建/山东/湖南/广西/海南/甘肃）──
+  {
+    id: "fuzhou", nameZh: "福州", nameEn: "Fuzhou", country: "china", tier: "major", zone: "cn-east",
+    lon: 119.2964, lat: 26.0743,
+    airport: { iata: "FOC", nameZh: "福州长乐国际机场", nameEn: "Fuzhou Changle Int'l", lon: 119.663, lat: 25.935 },
+    source: "福州市中心（鼓楼区）26.0743,119.2964；FOC 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "jinan", nameZh: "济南", nameEn: "Jinan", country: "china", tier: "major", zone: "cn-east",
+    lon: 117.0207, lat: 36.6702,
+    airport: { iata: "TNA", nameZh: "济南遥墙国际机场", nameEn: "Jinan Yaoqiang Int'l", lon: 117.216, lat: 36.857 },
+    source: "济南市中心（历下区）36.6702,117.0207；TNA 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "changsha", nameZh: "长沙", nameEn: "Changsha", country: "china", tier: "major", zone: "cn-central",
+    lon: 112.9390, lat: 28.2280,
+    airport: { iata: "CSX", nameZh: "长沙黄花国际机场", nameEn: "Changsha Huanghua Int'l", lon: 113.221, lat: 28.197 },
+    source: "长沙市中心（芙蓉区）28.2280,112.9390；CSX 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "nanning", nameZh: "南宁", nameEn: "Nanning", country: "china", tier: "major", zone: "cn-south",
+    lon: 108.3275, lat: 22.8167,
+    airport: { iata: "NNG", nameZh: "南宁吴圩国际机场", nameEn: "Nanning Wuxu Int'l", lon: 108.172, lat: 22.608 },
+    source: "南宁市中心（广西壮族自治区政府一带）22.8167,108.3275；NNG 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "haikou", nameZh: "海口", nameEn: "Haikou", country: "china", tier: "major", zone: "cn-south",
+    lon: 110.3488, lat: 20.0186,
+    airport: { iata: "HAK", nameZh: "海口美兰国际机场", nameEn: "Haikou Meilan Int'l", lon: 110.459, lat: 19.935 },
+    source: "海口市中心（海南省政府一带）20.0186,110.3488；HAK 机场：公开资料（Wikipedia）",
+  },
+  {
+    id: "lanzhou", nameZh: "兰州", nameEn: "Lanzhou", country: "china", tier: "major", zone: "cn-northwest",
+    lon: 103.8268, lat: 36.0606,
+    airport: { iata: "LHW", nameZh: "兰州中川国际机场", nameEn: "Lanzhou Zhongchuan Int'l", lon: 103.621, lat: 36.515 },
+    source: "兰州市中心（城关区）36.0606,103.8268；LHW 机场：公开资料（Wikipedia，机场距市区约70km，中国离市中心最远机场之一）",
+  },
 
   // ── 日本 ──────────────────────────────────────────────
   {

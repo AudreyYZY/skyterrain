@@ -1,0 +1,24 @@
+{
+  "id": "can-nng",
+  "name": "广州 — 南宁",
+  "nameEn": "Guangzhou — Nanning",
+  "description": "两广丘陵",
+  "descriptionEn": "Liangguang Hills",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3539",
+    "aircraft": "Airbus A320",
+    "depIata": "CAN",
+    "arrIata": "NNG",
+    "durationMin": 85
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "liangguang-hills" },
+    { "kind": "city", "id": "nng", "name": "南宁吴圩", "nameEn": "Nanning Wuxu", "lat": 22.608, "lon": 108.172, "airport": true }
+  ]
+}

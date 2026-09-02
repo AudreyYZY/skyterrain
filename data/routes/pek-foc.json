@@ -1,0 +1,26 @@
+{
+  "id": "pek-foc",
+  "name": "北京 — 福州",
+  "nameEn": "Beijing — Fuzhou",
+  "description": "华北平原 · 长江三角洲 · 武夷山",
+  "descriptionEn": "North China Plain · Yangtze Delta · Wuyi Mountains",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1505",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PEK",
+    "arrIata": "FOC",
+    "durationMin": 165
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "yangtze-delta" },
+    { "kind": "terrain", "terrainId": "wuyi" },
+    { "kind": "city", "id": "foc", "name": "福州长乐", "nameEn": "Fuzhou Changle", "lat": 25.935, "lon": 119.663, "airport": true }
+  ]
+}
