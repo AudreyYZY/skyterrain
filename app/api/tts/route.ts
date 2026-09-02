@@ -23,8 +23,13 @@ const PROSODY_EN = { rate: "-4%", pitch: "+0Hz" } as const;
 function prosodyFor(voice: string) {
   return voice.toLowerCase().startsWith("en-") ? PROSODY_EN : PROSODY_ZH;
 }
-const SYNTHESIS_TIMEOUT_MS = 12_000;
-const MAX_RETRIES = 2;
+// edge-tts-universal 调的是微软 Edge 内部"朗读"服务的逆向接口，非官方 API——
+// 微软 2025 年底起收紧了反滥用短时 token + 云端 IP 段过滤，现在单次合成经常要
+// 5-9s 才回（实测），比这更久基本就是真的不通了。之前 12s×3 次重试最坏要等
+// 近 40s；8s×2 次把最坏情况压到约 17s，同时给足够余量让"慢但没坏"的请求
+// 一次就成功，不必然触发重试。
+const SYNTHESIS_TIMEOUT_MS = 8_000;
+const MAX_RETRIES = 1;
 
 /**
  * 极简内存限流 —— 每个 IP 每分钟最多 MAX_REQ_PER_MIN 次请求。
