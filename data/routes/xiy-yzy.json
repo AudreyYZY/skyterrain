@@ -1,0 +1,26 @@
+{
+  "id": "xiy-yzy",
+  "name": "西安 — 张掖",
+  "nameEn": "Xi'an — Zhangye",
+  "description": "关中平原 · 黄土高原 · 河西走廊",
+  "descriptionEn": "Guanzhong Plain · Loess Plateau · Hexi Corridor",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU6202",
+    "aircraft": "Airbus A320",
+    "depIata": "XIY",
+    "arrIata": "YZY",
+    "durationMin": 125
+  },
+  "cruiseHeight": 9800,
+  "waypoints": [
+    { "kind": "city", "id": "xiy", "name": "西安咸阳", "nameEn": "Xi'an Xianyang", "lat": 34.447, "lon": 108.752, "airport": true },
+    { "kind": "terrain", "terrainId": "guanzhong-plain" },
+    { "kind": "terrain", "terrainId": "loess" },
+    { "kind": "terrain", "terrainId": "hexi-corridor" },
+    { "kind": "city", "id": "yzy", "name": "张掖甘州", "nameEn": "Zhangye Ganzhou", "lat": 38.802, "lon": 100.675, "airport": true }
+  ]
+}

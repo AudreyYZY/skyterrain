@@ -1,0 +1,25 @@
+{
+  "id": "can-ngb",
+  "name": "广州 — 宁波",
+  "nameEn": "Guangzhou — Ningbo",
+  "description": "南岭 · 江南丘陵（黄山）· 长江三角洲南翼",
+  "descriptionEn": "Nanling Mountains · Jiangnan Hills (Huangshan) · Southern Yangtze Delta",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3671",
+    "aircraft": "Boeing 737 MAX 8",
+    "depIata": "CAN",
+    "arrIata": "NGB",
+    "durationMin": 135
+  },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "jiangnan-hills" },
+    { "kind": "city", "id": "ngb", "name": "宁波栎社", "nameEn": "Ningbo Lishe", "lat": 29.827, "lon": 121.462, "airport": true }
+  ]
+}

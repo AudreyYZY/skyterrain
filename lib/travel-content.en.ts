@@ -6719,4 +6719,125 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–September has the most pleasant weather — days are warm but evenings turn cool, so bring a layer. Winters are cold and dry, especially in the early morning and evening. Sunshine and UV are strong year-round and the air is dry, so use sun protection and carry water. Zhongchuan Airport is far from the centre — build enough transfer time into your schedule.",
   },
+
+  // ── China · Tier 2 popular cities batch 1 (cities with independent planning status + UNESCO heritage cities) ──
+  dalian: {
+    identity:
+      "Dalian, a city with independent planning status (jihua danlie shi), sits at the southern tip of the Liaodong Peninsula, with a municipal population of about 7.54 million. Because it was planned and built first by Tsarist Russia and then by Japan in the early 20th century, the city centre still keeps large European-style squares and buildings; it was among China's first National Sanitary Cities and Garden Cities, and remains an important northern port and shipbuilding base.",
+    layout:
+      "Zhongshan Square is the old-town core, ringed by ten radiating streets and a cluster of colonial-era bank and hotel buildings; Xinghai Square, on reclaimed land on the southern coast, is one of the largest city squares in Asia; Laohutan (Tiger Beach) on the eastern shore is where the marine-park attractions cluster. The whole city hugs hills and sea, with a winding coastline.",
+    gettingAround:
+      "Zhoushuizi International Airport is in the north-west of the city, about 10 km from the centre, with a metro line running straight there. Dalian is a key rail hub for the north-east: about 2 hours by high-speed rail to Shenyang, with onward connections across the region, and a ferry crosses the Bohai Strait to Yantai in Shandong. The city has a metro, buses, and a century-old tram line still in service. The climate is temperate monsoon, moderated by the sea, with mild summers and winters that avoid the extremes seen elsewhere in the north-east — making it a popular summer retreat — though coastal winds can be strong.",
+    culture:
+      "Jiao–Liao Mandarin (the Dalian dialect) is spoken, with Mandarin widely used. Seafood dominates the local diet, prized fresh and simply prepared; mackerel dumplings (bayu shuijiao) are a local specialty. The century-old No. 201 tram is still an everyday commuter line for locals, not just a tourist novelty. No tipping.",
+    seeAndDo:
+      "Zhongshan Square (a ring of ten European-style buildings from the Russian and Japanese colonial periods); Xinghai Square (one of Asia's largest city squares, with views over the Bohai Sea); Laohutan Ocean Park (aquarium, coral hall, polar-animal exhibits and more); Jinshitan (Golden Pebble Beach) on the eastern coast, known for its wave-eroded rock 'geopark'. Riding tram No. 201 through several old-town districts is a good way to get a feel for the city's fabric.",
+    whenAndTips:
+      "June–September is the most comfortable stretch and the busy summer-retreat season, with heavier crowds at hotels and sights. Winters aren't severe by north-eastern standards but the coastal wind is noticeable, so dress warmly. At seaside sights like Jinshitan and Laohutan, avoid the harsh midday light — early morning and evening suit photography better.",
+  },
+
+  ningbo: {
+    identity:
+      "Ningbo, a city with independent planning status, sits where the Yong River meets the sea, with a municipal population of about 9.78 million. It was one of the historical starting points of the Maritime Silk Road, and is home to Tianyi Pavilion, China's oldest surviving private library; historically, Ningbo-born merchants (the 'Ningbo Gang') were influential across the Yangtze Delta and in overseas Chinese business communities.",
+    layout:
+      "The old town (Haishu District) is centred on Tianyi Square and Moon Lake, with Tianyi Pavilion right on the lakeshore. Sanjiangkou, where the Yong, Fenghua and Yuyao rivers meet, sits in Jiangbei District, which keeps its Bund-style buildings from the treaty-port era; the Eastern New Town and Yinzhou District to the south are the more recent directions of growth.",
+    gettingAround:
+      "Lishe International Airport, in the south-west of the city, is linked by airport bus and rail transit. Ningbo is close to Shanghai — about 1.5 hours on the Shanghai–Ningbo high-speed line — and is also the starting point of the Ningbo–Taizhou–Wenzhou line, about 1.5 hours to Wenzhou. The Hangzhou Bay Bridge gives a fast crossing to Jiaxing on the northern shore of the delta. The city has rail transit and buses; pay by QR code. The climate is subtropical monsoon, with four distinct seasons, hot rainy summers, a plum-rain season concentrated in June, and mild, damp winters.",
+    culture:
+      "Wu (the Ningbo dialect) is spoken, with Mandarin widely used. As a coastal fishing city, local banquets observe a rule that a whole fish is not turned over — flipping it is thought to evoke a capsized boat — so diners lift the bone away to reach the meat underneath instead, a custom especially strong in eastern Zhejiang's fishing communities. Ningbo cuisine leans salty and savoury: fermented winter melon, roe-filled crabs cured in liquor, and tangyuan (glutinous rice balls, said to have originated here) are typical. No tipping.",
+    seeAndDo:
+      "Tianyi Pavilion (built 1561–1566, China's oldest surviving private library and among Asia's oldest existing libraries); the Moon Lake scenic area around it, a historic quarter; the Old Bund at Sanjiangkou, with its treaty-port-era buildings; Dongqian Lake, Zhejiang's largest natural freshwater lake, good for cycling round the shore.",
+    whenAndTips:
+      "April–May and September–November have the most comfortable weather. June's plum-rain season is damp and wet, and July–September occasionally brings typhoons — check warnings before travelling. Some rare-book galleries at Tianyi Pavilion limit visitor numbers, so booking ahead for busy periods is worthwhile.",
+  },
+
+  suzhou: {
+    identity:
+      "Suzhou, a byword for the Jiangnan water towns, is a historic city on the Grand Canal, with a municipal population of about 12.99 million. Known as 'paradise on earth', its classical gardens, canal-lined lanes and stone bridges, and Pingtan storytelling and Kunqu opera together form a textbook picture of Jiangnan culture; it is also a major manufacturing and tourism city in the Yangtze Delta.",
+    layout:
+      "The old town (Gusu District) keeps the traditional layout of 'roads and canals running side by side, streets and rivers adjoining' — Guanqian Street is the old commercial core. The Humble Administrator's Garden, Lion Grove Garden and Lingering Garden are scattered in and around the old city; the Suzhou Industrial Park around Jinji Lake and Dushu Lake is the newer centre of the city. The nearby canal towns of Zhouzhuang and Tongli make an easy day trip.",
+    gettingAround:
+      "Suzhou has no airport of its own; most travellers connect via Sunan Shuofang Airport (branded 'Wuxi–Suzhou Airport', about 22 km away) or via Shanghai's Hongqiao/Pudong airports, with an airport bus or high-speed rail onward. Suzhou sits on the Shanghai–Nanjing and Beijing–Shanghai high-speed lines: about 25 minutes to Shanghai and about an hour to Nanjing, making it very well connected. The city has rail transit, buses and traditional canal boat rides. The climate is subtropical monsoon, with four distinct seasons, a plum-rain season in June, muggy summers and damp, cold winters.",
+    culture:
+      "Wu (the Suzhou dialect) is spoken, known for its soft, gentle cadence — often called 'the softest speech in China' — with Mandarin widely used. Suzhou Pingtan storytelling and Kunqu opera (a UNESCO Intangible Cultural Heritage, which originated nearby in Kunshan) are important local performing-arts traditions, with year-round performances in garden teahouses. Suzhou cuisine leans sweet, with squirrel-shaped mandarin fish and gorgon fruit (chicken-head rice) as specialties; Su embroidery, one of China's Four Famous Embroideries, has workshops around Guanqian Street. No tipping.",
+    seeAndDo:
+      "The Humble Administrator's Garden (Suzhou's largest classical garden, built in the Ming dynasty, a core component of the UNESCO World Heritage 'Classical Gardens of Suzhou'); the Lingering Garden (one of the best-preserved of Suzhou's gardens); the Pingjiang Road historic quarter, with its stone-paved canalside lanes preserving the authentic water-town layout; Shantang Street ('Seven-li Shantang', cut through by the Tang-dynasty poet-official Bai Juyi). Farther out: the canal towns of Zhouzhuang and Tongli suit a half-day to full-day trip.",
+    whenAndTips:
+      "March–May and September–November have the most comfortable weather and are also when the gardens are at their best (crabapple in spring, osmanthus in autumn). June's plum-rain season is damp, and summer is muggy — watch for heat. Visit the popular gardens outside public-holiday peaks; an early-morning visit means fewer crowds and better light for photos.",
+  },
+
+  luoyang: {
+    identity:
+      "Luoyang is one of China's Four Great Ancient Capitals, a historic city in the Yi–Luo basin south of the Yellow River, with a municipal population of about 7.08 million. Multiple dynasties made it their capital in turn, and it was an important centre for the spread of Buddhism after it reached China — both the Longmen Grottoes and the White Horse Temple are here. The peony is the city's official flower, celebrated each April at its Peony Culture Festival.",
+    layout:
+      "The old town keeps the street pattern of the Ming and Qing eras. The site of the Sui–Tang Luoyang city walls lies just south of it, with the Yingtian Gate and Mingtang hall ruins now developed as an archaeological park; the Longmen Grottoes sit on both banks of the Yi River about 12 km south of the centre; Xigong District is the modern administrative and commercial hub.",
+    gettingAround:
+      "Luoyang Beijiao Airport is in the north of the city, about 8 km from the centre. Luoyang sits on the Zhengzhou–Xi'an and Xuzhou–Lanzhou high-speed lines: about 1.5–2 hours to Xi'an and about 30 minutes to Zhengzhou, so most visitors travel by high-speed rail. The city has buses and taxis. The climate is warm-temperate monsoon, with four distinct seasons, hot rainy summers, cold, largely snow-free winters, and pleasant spring and autumn weather.",
+    culture:
+      "Central Plains Mandarin (the Luoyang dialect) is spoken, with Mandarin widely used. The Luoyang 'water banquet' is a traditional set meal of soup-based dishes served in a fixed sequence, said to date back to the Tang dynasty; 'peony swallow-nest' vegetable dish is its signature course. During the April Peony Festival the whole city turns out to see the flowers, and hotels and sights get noticeably busier, so plan ahead. No tipping.",
+    seeAndDo:
+      "The Longmen Grottoes (a UNESCO World Heritage Site with close to 110,000 carved Buddhist figures; the seated Vairocana Buddha at the Fengxian Temple stands over 17 m tall, and the site is among China's largest repositories of stone-carved art); the White Horse Temple (the first Buddhist temple officially built after Buddhism reached China); the Sui–Tang Luoyang City National Archaeological Park, with reconstructed displays of the Yingtian Gate and Mingtang–Tiantang halls; the Luoyang Museum. During the April peony season, the National Peony Garden and Wangcheng Park are the places to see the blooms.",
+    whenAndTips:
+      "April, peony season, is the most popular — and most crowded — time to visit, so book hotels and tickets ahead. March–May and September–November otherwise have the most comfortable weather. At the Longmen Grottoes, avoid midday; morning or evening light suits viewing and photography better, and the riverside can get muggy in summer.",
+  },
+
+  datong: {
+    identity:
+      "Datong is a prefecture-level city in Shanxi, a historic city in the Jinbei basin of northern Shanxi, with a municipal population of about 3.05 million. It was once Pingcheng, capital of the Northern Wei dynasty, and one of the 'Nine Frontier Garrisons' of the Ming and Qing eras; rich coal reserves earned it the nickname 'China's Coal Capital', and in recent years the city has invested heavily in cultural tourism around the Yungang Grottoes and its restored city walls.",
+    layout:
+      "The old town's walls on all four sides have been restored to their Ming-dynasty layout, with four main streets meeting in a symmetric cross and the Nine Dragon Screen in the south-east quarter. The Yungang Grottoes lie about 16 km west of the centre, on the southern slope of Wuzhou Mountain; the Hanging Temple is farther out in Hunyuan County, about 65 km from the centre, and is one of the '18 sights of Mount Heng'.",
+    gettingAround:
+      "Yungang Airport is in the south of the city. Datong sits on the Beijing–Baotou and Datong–Xi'an high-speed lines: about 2 hours to Beijing and about an hour to Taiyuan, and most visitors travel by high-speed rail, since air links are comparatively limited. The city has buses and taxis; getting to the Yungang Grottoes or the Hanging Temple usually means hiring a car or joining a local day tour. The climate is temperate continental monsoon: deep inland on a plateau, with long, cold winters, short, cool summers, and large swings between day and night temperatures.",
+    culture:
+      "Jin (the Datong dialect) is spoken, with Mandarin widely used. Sitting in Shanxi, local food follows the province's 'noodles plus aged vinegar' tradition — hand-cut noodles (daoxiao mian) and oat-flour rolls (youmian kaolaolao) are typical, and a pot of aged vinegar is on almost every table. Dress modestly when entering religious sites (the Yungang Grottoes, the Hanging Temple, Shanhua Temple and others), and never touch the Buddhist statues inside. No tipping.",
+    seeAndDo:
+      "The Yungang Grottoes (a UNESCO World Heritage Site with 45 major caves and over 59,000 carved figures; the open-air seated Buddha in Cave 20 is its best-known image); the Hanging Temple (built in the late Northern Wei period, suspended on a cliff face of Mount Heng — one of China's oldest and best-preserved elevated timber structures); Datong's Ming-dynasty city walls, now restored into a complete circuit; the Nine Dragon Screen (built in 1392, 45.5 m long, China's largest and oldest surviving glazed nine-dragon spirit wall).",
+    whenAndTips:
+      "May–September is the most comfortable stretch; winters are severe, with January averages often below −10°C, so dress warmly. The Yungang Grottoes and the Hanging Temple are about 100 km apart (roughly 1.5–2 hours' drive) — plan on two separate days, or a well-timed day trip by hired car.",
+  },
+
+  huangshan: {
+    identity:
+      "Huangshan City is a prefecture-level city in Anhui, a tourism-oriented city in the hills of southern Anhui, with a municipal population of about 1.32 million. Renamed from 'Huizhou Prefecture' in 1987, it is the gateway city to the Mount Huangshan scenic area and the birthplace of Huizhou culture — the whitewashed, black-tiled Huizhou architectural style, the historic Huizhou merchants, and the Neo-Confucian 'Xin'an School' all originated here.",
+    layout:
+      "Tunxi District is the seat of the municipal government and the main built-up area, with the Xin'an River running through it; Tunxi Old Street is one of the best-preserved Ming–Qing commercial streets in China. The Mount Huangshan scenic area lies about 40 km north of the centre; the Huizhou ancient walled town (in Shexian) and the Huizhou-style villages of Hongcun and Xidi are scattered across the wider prefecture, most an hour or two away by road.",
+    gettingAround:
+      "Tunxi International Airport is in the south of the city. Huangshan North Station serves the Hangzhou–Huangshan and Beijing–Fuzhou high-speed lines: about 1.5 hours to Hangzhou and about 2 hours to Nanjing, so most visitors arrive by high-speed rail. The city has buses and taxis; getting to the Mount Huangshan scenic area, Hongcun and similar sites usually means hiring a car or joining a tourist shuttle line. The climate is subtropical monsoon, with four distinct seasons, a wet summer, occasional snow in winter (more pronounced on the mountain), and the most pleasant weather in spring and autumn.",
+    culture:
+      "Hui (the Shexian dialect and others) is spoken, with Mandarin widely used. Traditional Huizhou houses follow strict conventions for gatehouses and courtyards; the old houses in villages like Hongcun and Xidi are still lived in, so visitors should stay out of areas not open to the public and avoid touching the wood carvings and painted decoration. The local cuisine, representative of Huizhou (Hui) cooking, includes stinky mandarin fish and fermented tofu ('mao doufu') — 'smells strong, tastes good' is the classic description of Hui food. No tipping.",
+    seeAndDo:
+      "Tunxi Old Street (a roughly 1.5 km Ming–Qing commercial street that gives a vivid sense of the historic Huizhou-merchant economy); the Mount Huangshan scenic area (a UNESCO Mixed World Heritage Site, famous for its 'four wonders' — unusual pines, strange rocks, a sea of clouds and hot springs — and the main reason most visitors come to this city); Hongcun (a World Heritage village famous for its ox-shaped layout built around a Huizhou-style water system); Xidi (a World Heritage village of well-preserved Huizhou-style houses).",
+    whenAndTips:
+      "April–May and October–November have the most comfortable weather and are also the best season for Mount Huangshan's sea of clouds and autumn colour. Plan at least one night on the mountain for sunrise and sunset views; down in the city, Tunxi Old Street and Hongcun are mostly explored on foot, so take care on wet, slippery paths after rain.",
+  },
+
+  quanzhou: {
+    identity:
+      "Quanzhou is a prefecture-level city in Fujian, a historic port city on the lower Jin River, with a municipal population of about 8.91 million. In the Song and Yuan dynasties it was reputed to be 'the greatest port in the East' and a key starting point of the Maritime Silk Road; in 2021, 'Quanzhou: Emporium of the World in Song–Yuan China', comprising 22 representative sites and monuments, was inscribed on the UNESCO World Heritage List.",
+    layout:
+      "Licheng District is the old-town core, where landmarks such as Kaiyuan Temple and the Confucius Temple cluster; the lower Jin River banks preserve the remains of the city's historic overseas-trade wharves. Fengze and Luojiang districts are the more recent directions of urban growth; the county-level cities of Jinjiang and Shishi under Quanzhou's jurisdiction are important manufacturing centres and hometowns of many overseas Chinese.",
+    gettingAround:
+      "Jinjiang International Airport is in the south of the city, about 7 km from the centre. Quanzhou sits on the Fuzhou–Xiamen and Nanchang–Putian high-speed lines: about 30 minutes to Xiamen and about an hour to Fuzhou. The city has buses and taxis, and the old-town core is easy to explore on foot. The climate is subtropical monsoon, warm and humid year-round, with a rainy, typhoon-affected summer and mild winters with little frost.",
+    culture:
+      "Southern Min (the Quanzhou dialect) is spoken, with Mandarin widely used. Quanzhou is home to a mix of religious traditions, preserving historic sites of Islam (the Qingjing Mosque), Taoism (the Yuanmiao Temple) and others; keep quiet and avoid touching offerings when visiting temples and shrines. Gongfu tea is an everyday hospitality custom here — when a host pours your tea, a light double tap of the index and middle fingers on the table is the common silent way of saying thank you. No tipping.",
+    seeAndDo:
+      "Kaiyuan Temple (Fujian's largest Buddhist temple, first built in the Tang dynasty, with a pair of Song-dynasty stone pagodas — a key component of Quanzhou's maritime-trade heritage site); Luoyang Bridge (built in the Northern Song dynasty, one of China's oldest surviving sea-crossing beam bridges); Tianhou Temple (one of the earliest and most prominent surviving Mazu temples); the Qingjing Mosque (first built in the Northern Song dynasty, one of China's oldest surviving mosques).",
+    whenAndTips:
+      "November–March has the most comfortable weather and the least rain. June–September is typhoon season — check warnings before travelling. The old-town core (around Kaiyuan Temple and West Street) suits a half-day to full-day walking visit, and the West Street food stalls get livelier in the evening.",
+  },
+
+  zhangye: {
+    identity:
+      "Zhangye is a prefecture-level city in Gansu, an oasis city in the middle of the Hexi Corridor, with a municipal population of about 1.1 million. Sitting at the northern foot of the Qilian Mountains, it has been a Silk Road hub since antiquity; tradition holds that its name comes from the Han-dynasty phrase 'extending the empire's arm to reach the Western Regions' (zhang guo bi ye). In recent years the city has become a popular destination for its colourful Danxia landforms.",
+    layout:
+      "Ganzhou District is the old-town core, home to landmarks such as the Giant Buddha Temple and the Zhenyuan Tower drum tower. The Zhangye Danxia Geopark lies about 30 km south-west of the centre; the Qilian Mountains' snow line and the Heihe wetlands sit to the south and north of the city respectively — oasis, desert and snow peaks all within short reach of each other, a fitting snapshot of the Hexi Corridor's landscape.",
+    gettingAround:
+      "Ganzhou Airport is in the north-east of the city. Zhangye sits on the Lanzhou–Xinjiang high-speed line: about 2 hours to Lanzhou and about 1.5 hours to Jiayuguan. There are also flights to Xi'an, Lanzhou, Chengdu and other cities, though not on a dense schedule, so check timings before travelling. The city has buses and taxis; reaching the Danxia Geopark usually means hiring a car or taking the park's shuttle bus. The climate is temperate continental and arid: deep inland, with scant rainfall, large swings between day and night temperatures, hot dry summers and long cold winters.",
+    culture:
+      "Lanyin Mandarin (the Zhangye dialect) is spoken, with Mandarin widely used. Zhangye sits in a multi-ethnic stretch of the Hexi Corridor with a significant Hui Muslim community, and halal restaurants are common — it's worth respecting the local custom of not bringing non-halal food or alcohol into them. Inside the Danxia Geopark the surface rock layers are fragile and easily damaged by foot traffic, so stay on the boardwalks throughout and never climb down onto the slopes to take photos. No tipping.",
+    seeAndDo:
+      "The Zhangye Danxia Geopark (a UNESCO Global Geopark famous for its banded red-and-yellow Danxia landforms, often called China's 'Rainbow Mountains'); the Giant Buddha Temple (built in 1098 under the Western Xia dynasty, home to the largest indoor reclining Buddha surviving in China, 34.5 m long); the Zhenyuan Tower (a Ming-dynasty drum tower, one of the better-preserved historic towers left in the Hexi Corridor); the Heihe Wetland National Nature Reserve.",
+    whenAndTips:
+      "June–September is when the Danxia colours are most vivid, and also the rainy season, with occasional afternoon thunderstorms — light around sunrise and sunset suits photography best. The sun is strong and the air dry year-round, so use sun protection and carry water; the day–night temperature swing is large, so pack a layer even for summer nights.",
+  },
 };

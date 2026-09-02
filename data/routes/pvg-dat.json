@@ -1,0 +1,25 @@
+{
+  "id": "pvg-dat",
+  "name": "上海 — 大同",
+  "nameEn": "Shanghai — Datong",
+  "description": "大别山 · 华北平原 · 太行山",
+  "descriptionEn": "Dabie Mountains · North China Plain · Taihang Mountains",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU5201",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PVG",
+    "arrIata": "DAT",
+    "durationMin": 165
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "pvg", "name": "上海浦东", "nameEn": "Shanghai Pudong", "lat": 31.143, "lon": 121.805, "airport": true },
+    { "kind": "terrain", "terrainId": "dabie" },
+    { "kind": "terrain", "terrainId": "taihang" },
+    { "kind": "city", "id": "dat", "name": "大同云冈", "nameEn": "Datong Yungang", "lat": 40.060, "lon": 113.482, "airport": true }
+  ]
+}

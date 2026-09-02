@@ -4753,6 +4753,96 @@ export const ROUTE_NARRATION: Record<
       "Chengdu to Lanzhou is about an hour and a half. Lanzhou sits at the western edge of the Loess Plateau, deep inland, with a temperate continental climate — dry, with large swings between day and night temperatures. Zhongshan Bridge, White Pagoda Hill and the Mother River sculpture are the main sights along the riverside, and beef noodles are a daily breakfast for locals. Lanzhou is a hub on the Lanzhou–Xinjiang and Lanzhou–Xining high-speed lines, about 1.5 hours from Xining. Zhongchuan Airport is about 70 km from the centre, one of the farthest provincial-capital airports from its city in China, so build enough transfer time into your plans.",
     },
   },
+
+  "pek-dlc": {
+    study: {
+    "zh-CN":
+      "北京飞大连，是一条跨越渤海、抵达辽东半岛南端的短途航线。飞机离开首都机场，脚下先是华北平原东段——黄河、海河冲积出的大平原，向东北方向延展直抵渤海湾。飞跃渤海时，海面开阔，是华北与东北之间重要的海上通道，历史上“闯关东”的移民多经此渡海。跨过海峡后，飞机进入辽东半岛，半岛南端三面环海，海岸线曲折，大连就坐落在半岛最南端——这里冬无严寒、夏无酷暑，是中国北方少有的温和气候区，也是重要的港口与造船工业基地。",
+    "en-US":
+      "Beijing to Dalian is a short hop across the Bohai Sea to the southern tip of the Liaodong Peninsula. Leaving the capital, the flight is first over the eastern North China Plain, a vast lowland built by the silt of the Yellow and Hai rivers, stretching north-east to the Bohai coast. Crossing the Bohai Sea — an important sea passage between North China and the north-east, historically used by migrants heading to Manchuria — the flight reaches the Liaodong Peninsula, whose southern tip is bordered by sea on three sides with a winding coastline. Dalian sits right at that southern tip, in one of the few parts of northern China with a genuinely mild climate, neither bitterly cold in winter nor stifling in summer, and it has long been an important port and shipbuilding centre.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到大连约70分钟，是一条短途航线。大连是计划单列市，20世纪初分别由沙俄和日本规划建设，中山广场周边保留大量欧式建筑，是这座城市最具辨识度的景观。星海广场、老虎滩海洋公园是主要看点，海鲜是当地饮食的核心，鲅鱼水饺是代表。大连夏无酷暑，是中国北方重要的避暑目的地，6–9月是旅游旺季。百年有轨电车201路仍是本地人的日常交通。",
+    "en-US":
+      "Beijing to Dalian takes about 70 minutes, a short domestic hop. Dalian, a city with independent planning status, was built up first under Russian and then Japanese colonial planning in the early 20th century, and the European-style buildings around Zhongshan Square are its most recognisable sight. Xinghai Square and Laohutan Ocean Park are the main attractions, and seafood is central to the local diet, with mackerel dumplings as a signature dish. With mild summers, Dalian is a popular summer retreat in northern China, busiest from June to September. The century-old No. 201 tram is still part of everyday local life.",
+    },
+  },
+
+  "can-ngb": {
+    study: {
+    "zh-CN":
+      "广州飞宁波，是一条纵贯华南与江南、抵达长江三角洲南翼的航线。飞机从珠江三角洲起飞，很快掠过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭进入江南丘陵，这一带山地起伏、河网密布，黄山正是江南丘陵最具代表性的高峰，主峰莲花峰海拔1864米，以奇松怪石、云海温泉闻名于世。继续向东北飞行，地势逐渐低平，进入长江三角洲南翼——甬江冲积出的滨海平原，宁波就坐落在甬江入海口，历史上是海上丝绸之路的重要港口，也是浙东沿海人口最密集的城市之一。",
+    "en-US":
+      "Guangzhou to Ningbo runs the length of southern and Jiangnan China to the southern edge of the Yangtze Delta. The flight leaves the Pearl River Delta and soon crosses the Nanling, a low, broken east–west belt of hills forming the drainage divide between the Pearl and Yangtze river systems. Beyond the Nanling lie the Jiangnan Hills, a rolling, river-laced landscape whose most iconic high point is Mount Huangshan, famous worldwide for its unusual pines, strange rocks, sea of clouds and hot springs. Flying on north-east, the land flattens into the southern Yangtze Delta, a coastal plain built by the Yong River, and Ningbo sits right where that river meets the sea — historically an important port on the Maritime Silk Road.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到宁波约两个小时。宁波是计划单列市，天一阁是中国现存最古老的私家藏书楼，月湖、老外滩是主要看点，臭冬瓜、红膏呛蟹是本地风味。当地渔家宴席上讲究整鱼不翻面食用，寓意避免“翻船”。宁波距上海很近，沪甬高铁约1.5小时，交通十分便捷。4–5月、9–11月气候最舒适，6月梅雨季潮湿多雨。",
+    "en-US":
+      "Guangzhou to Ningbo takes about two hours. Ningbo, a city with independent planning status, is home to Tianyi Pavilion, China's oldest surviving private library; Moon Lake and the Old Bund are the main sights, with fermented winter melon and roe-filled crabs cured in liquor as local specialties. At local fishing-family banquets a whole fish is traditionally never turned over, to avoid the unlucky suggestion of a capsized boat. Ningbo is close to Shanghai, about 1.5 hours by high-speed rail, making onward travel easy. April–May and September–November have the most comfortable weather, while June's plum-rain season is damp and wet.",
+    },
+  },
+
+  "pvg-dat": {
+    study: {
+    "zh-CN":
+      "上海飞大同，是一条从长江三角洲一路向西北、抵达晋北盆地的长距离航线。飞机离开浦东机场，先掠过大别山——一列不高但明显的山地，横亘在长江中下游平原与中原之间，也是淮河与长江的分水岭。翻过大别山，飞机继续向北跨越华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。飞机在平原西北端抵达太行山——一列北北东走向的褶皱山脉，东坡断崖陡峭，直落华北平原；翻越太行山后地势抬升进入晋北高原，大同盆地被群山环抱，历史上是北魏都城平城，也是明清“九边重镇”之一。",
+    "en-US":
+      "Shanghai to Datong is a long haul from the Yangtze Delta all the way north-west to the Jinbei basin. Leaving Pudong, the flight first crosses the Dabie Mountains, a modest but distinct range between the Middle-Lower Yangtze Plain and the Central Plain, and the divide between the Huai and Yangtze river systems. Beyond the Dabie the flight heads north across the North China Plain, built by the silt of the Yellow and Hai rivers, an endless expanse of fields and dense towns. At the plain's north-western edge the flight reaches the Taihang Mountains, a north-north-east-trending folded range whose eastern face drops in a steep escarpment straight down to the plain; beyond the Taihang the land rises onto the Jinbei plateau, where the Datong basin sits ringed by mountains — once Pingcheng, capital of the Northern Wei dynasty, and later one of the Ming and Qing 'Nine Frontier Garrisons'.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到大同约两个半到三个小时。大同因煤炭资源丰富被称为“中国煤都”，云冈石窟、悬空寺是最重要的看点，前者是联合国教科文组织世界遗产，后者凌空建于恒山峭壁之上。当地饮食延续山西“面食+陈醋”传统，刀削面是代表。大同冬季严寒，1月均温常在-10℃以下，5–9月气候最舒适。云冈石窟与悬空寺相距约100公里，建议分两天安排。",
+    "en-US":
+      "Shanghai to Datong takes about two and a half to three hours. Datong, nicknamed 'China's Coal Capital' for its rich coal reserves, is best known for the Yungang Grottoes — a UNESCO World Heritage Site — and the Hanging Temple, suspended on a cliff face of Mount Heng. Local food follows Shanxi's 'noodles plus aged vinegar' tradition, with hand-cut noodles as the signature dish. Winters here are severe, with January averages often below −10°C, so May–September is the most comfortable time to visit. The Yungang Grottoes and the Hanging Temple are about 100 km apart, so plan on two separate days.",
+    },
+  },
+
+  "sha-lya": {
+    study: {
+    "zh-CN":
+      "上海飞洛阳，是一条从长江三角洲一路向西、抵达中原腹地的航线。飞机离开虹桥机场，脚下先是长江三角洲——太湖平原与河网交织的滨海平原，上海正处在这片三角洲的核心。向西飞行，逐渐进入大别山东段边缘——一列不高但明显的山地，是淮河与长江的分水岭。越过大别山北缘，飞机进入华北平原南段（豫东平原），黄河在这一带多次改道，冲积出大片农耕平原。飞机在平原西端抵达洛阳——黄河南岸伊洛盆地的历史名城，先后有多个朝代在此建都，是中国四大古都之一。",
+    "en-US":
+      "Shanghai to Luoyang flies west from the Yangtze Delta to the heart of the Central Plain. Leaving Hongqiao, the flight is first over the Yangtze Delta, a coastal plain woven through with the Tai Lake basin and a dense network of rivers, with Shanghai sitting at its core. Heading west, the flight skirts the eastern edge of the Dabie Mountains, a modest but distinct range and the divide between the Huai and Yangtze river systems. Beyond the northern edge of the Dabie, the flight enters the southern reach of the North China Plain (the eastern Henan plain), repeatedly reshaped by the shifting course of the Yellow River into a broad farming lowland. At the western edge of the plain the flight reaches Luoyang, a historic city in the Yi–Luo basin south of the Yellow River and one of China's Four Great Ancient Capitals, home in turn to the courts of multiple dynasties.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到洛阳约两个小时。洛阳是中国四大古都之一，龙门石窟是联合国教科文组织世界遗产，现存造像近11万尊；白马寺是佛教传入中国后官方营建的第一座寺院。当地传统宴席洛阳水席以汤水菜为主，牡丹燕菜是代表。4月牡丹文化节期间全城赏花，是最热门也最拥挤的季节。洛阳是高铁枢纽，到西安约1.5–2小时，往外安排行程很方便。",
+    "en-US":
+      "Shanghai to Luoyang takes about two hours. One of China's Four Great Ancient Capitals, Luoyang is home to the Longmen Grottoes, a UNESCO World Heritage Site with close to 110,000 carved Buddhist figures, and the White Horse Temple, the first Buddhist temple officially built after Buddhism reached China. The city's traditional 'water banquet' is built around a set sequence of soup-based dishes, with 'peony swallow-nest' as its signature course. During the April Peony Festival the whole city turns out for the blooms, making it the busiest and most popular season to visit. Luoyang is a high-speed rail hub, about 1.5–2 hours from Xi'an, making it easy to build a wider itinerary around it.",
+    },
+  },
+
+  "xiy-yzy": {
+    study: {
+    "zh-CN":
+      "西安飞张掖，是一条穿越黄土高原、抵达河西走廊的航线。飞机从关中平原起飞，脚下是渭河冲积出的“八百里秦川”。向西北飞行，地势逐渐抬升进入黄土高原——数百万年来风力搬运堆积的黄土层覆盖在这片高原上，经流水切割形成“塬—梁—峁”相间的沟壑地貌，延安周边是这类地貌的典型代表。继续向西北，飞机进入河西走廊——夹在祁连山与北山之间的狭长绿洲廊道，是丝绸之路连接中原与西域的关键通道。张掖正是这条走廊上历史悠久的绿洲城市，祁连山雪线就在城南，近年因七彩丹霞地貌闻名。",
+    "en-US":
+      "Xi'an to Zhangye crosses the Loess Plateau on the way to the Hexi Corridor. The flight leaves the Guanzhong Plain, the alluvial lowland of the Wei River known as the '800-li Qin land'. Heading north-west, the land rises onto the Loess Plateau, where wind-deposited loess accumulated over millions of years has been carved by running water into a landscape of tableland, ridges and hillocks, typified by the country around Yan'an. Farther north-west the flight enters the Hexi Corridor, a narrow ribbon of oases squeezed between the Qilian Mountains and the Bei Shan, the key passage linking the Chinese heartland with the Western Regions along the Silk Road. Zhangye is one of the corridor's oldest oasis cities, with the snow line of the Qilian Mountains just south of it, and in recent years it has become known for its colourful Danxia landforms.",
+    },
+    travel: {
+    "zh-CN":
+      "西安到张掖约两个小时。张掖是河西走廊上的历史绿洲城市，张掖丹霞地质公园以红黄相间的层状地貌闻名，被称为“中国七彩丹霞”；大佛寺内有中国现存最大的室内卧佛。当地回族聚居区不少，清真餐馆遍布。张掖属温带大陆性干旱气候，昼夜温差大，即使夏季夜间也需备外套。6–9月是丹霞色彩最鲜明的季节，也是最佳观赏期。",
+    "en-US":
+      "Xi'an to Zhangye takes about two hours. Zhangye is a historic oasis city on the Hexi Corridor; the Zhangye Danxia Geopark is famous for its banded red-and-yellow landforms, often called China's 'Rainbow Mountains', while the Giant Buddha Temple holds the largest indoor reclining Buddha surviving in China. The city has a significant Hui Muslim community and halal restaurants are common. With a dry, temperate continental climate, day–night temperature swings are large, so pack a layer even for summer nights. June–September is when the Danxia colours are most vivid and the best time to visit.",
+    },
+  },
+
+  "pek-txn": {
+    study: {
+    "zh-CN":
+      "北京飞黄山，是一条从华北平原一路南下、抵达皖南山区的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原。继续向南，逐渐接近长江三角洲一带，河网稠密、水田与城镇交错。飞机随后进入江南丘陵——这一带山地起伏、河网密布，黄山正是这片丘陵最具代表性的高峰，主峰莲花峰海拔1864米，以奇松、怪石、云海、温泉“四绝”闻名于世，是联合国教科文组织世界文化与自然双遗产。黄山市就坐落在黄山风景区以南约40公里的屯溪盆地，是这座名山的门户城市。",
+    "en-US":
+      "Beijing to Huangshan flies south from the North China Plain to the hills of southern Anhui. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it approaches the Yangtze Delta area, a dense web of rivers, paddies and towns. The flight then enters the Jiangnan Hills, a rolling, river-laced landscape whose most iconic high point is Mount Huangshan — its main peak, Lotus Flower Peak, rises to 1,864 m and the mountain is famous worldwide for its 'four wonders': unusual pines, strange rocks, a sea of clouds and hot springs, and is a UNESCO Mixed World Heritage Site. Huangshan City sits in the Tunxi basin about 40 km south of the scenic area, the gateway city to the mountain.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到黄山约两个小时。黄山市是黄山风景区的门户城市，也是徽州文化的发祥地，屯溪老街是保留最完整的明清商业街之一。多数游客到访本市是为了游览黄山，建议至少安排一晚住山顶观日出日落。宏村、西递等徽派古村落是世界文化遗产，粉墙黛瓦是典型景观。当地饮食为徽菜代表，臭鳜鱼是特色。4–5月、10–11月气候最舒适，也是云海和秋色最佳观赏期。",
+    "en-US":
+      "Beijing to Huangshan takes about two hours. Huangshan City is the gateway to the Mount Huangshan scenic area and the birthplace of Huizhou culture; Tunxi Old Street is one of the best-preserved Ming–Qing commercial streets in China. Most visitors come here specifically for Mount Huangshan, and it's worth spending at least one night on the mountain for sunrise and sunset. The Huizhou-style villages of Hongcun and Xidi are UNESCO World Heritage Sites, known for their whitewashed walls and black-tiled roofs. The local cuisine is representative of Hui cooking, with stinky mandarin fish as a specialty. April–May and October–November have the most comfortable weather and are also the best season for the sea of clouds and autumn colour.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */
