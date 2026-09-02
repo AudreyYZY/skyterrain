@@ -1,0 +1,24 @@
+{
+  "id": "pek-dlc",
+  "name": "北京 — 大连",
+  "nameEn": "Beijing — Dalian",
+  "description": "华北平原 · 渤海 · 辽东半岛",
+  "descriptionEn": "North China Plain · Bohai Sea · Liaodong Peninsula",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA8902",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PEK",
+    "arrIata": "DLC",
+    "durationMin": 70
+  },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "city", "id": "dlc", "name": "大连周水子", "nameEn": "Dalian Zhoushuizi", "lat": 38.966, "lon": 121.538, "airport": true }
+  ]
+}

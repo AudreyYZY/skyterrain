@@ -1,0 +1,26 @@
+{
+  "id": "pek-txn",
+  "name": "北京 — 黄山",
+  "nameEn": "Beijing — Huangshan",
+  "description": "华北平原 · 长江三角洲 · 江南丘陵（黄山）",
+  "descriptionEn": "North China Plain · Yangtze Delta · Jiangnan Hills (Mount Huangshan)",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1551",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PEK",
+    "arrIata": "TXN",
+    "durationMin": 130
+  },
+  "cruiseHeight": 10000,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "yangtze-delta" },
+    { "kind": "terrain", "terrainId": "jiangnan-hills" },
+    { "kind": "city", "id": "txn", "name": "黄山屯溪", "nameEn": "Huangshan Tunxi", "lat": 29.730, "lon": 118.253, "airport": true }
+  ]
+}

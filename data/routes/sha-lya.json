@@ -1,0 +1,25 @@
+{
+  "id": "sha-lya",
+  "name": "上海 — 洛阳",
+  "nameEn": "Shanghai — Luoyang",
+  "description": "长江三角洲 · 大别山 · 华北平原（中原）",
+  "descriptionEn": "Yangtze Delta · Dabie Mountains · North China Plain (Central Plain)",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU5361",
+    "aircraft": "Airbus A320",
+    "depIata": "SHA",
+    "arrIata": "LYA",
+    "durationMin": 125
+  },
+  "cruiseHeight": 9800,
+  "waypoints": [
+    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true },
+    { "kind": "terrain", "terrainId": "dabie" },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "city", "id": "lya", "name": "洛阳北郊", "nameEn": "Luoyang Beijiao", "lat": 34.741, "lon": 112.388, "airport": true }
+  ]
+}

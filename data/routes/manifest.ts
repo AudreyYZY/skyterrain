@@ -38,6 +38,13 @@ import pekCsx from "./pek-csx.json" with { type: "json" };
 import canNng from "./can-nng.json" with { type: "json" };
 import pekHak from "./pek-hak.json" with { type: "json" };
 import ctuLhw from "./ctu-lhw.json" with { type: "json" };
+// 中国 · 批 6（Tier 2 热门城市批1：大连/宁波/大同/洛阳/黄山/张掖）
+import pekDlc from "./pek-dlc.json" with { type: "json" };
+import canNgb from "./can-ngb.json" with { type: "json" };
+import pvgDat from "./pvg-dat.json" with { type: "json" };
+import shaLya from "./sha-lya.json" with { type: "json" };
+import xiyYzy from "./xiy-yzy.json" with { type: "json" };
+import pekTxn from "./pek-txn.json" with { type: "json" };
 // 日本国内
 import hndItm from "./hnd-itm.json" with { type: "json" };
 import hndCts from "./hnd-cts.json" with { type: "json" };
@@ -311,6 +318,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   canNng,
   pekHak,
   ctuLhw,
+  pekDlc,
+  canNgb,
+  pvgDat,
+  shaLya,
+  xiyYzy,
+  pekTxn,
   hndItm,
   hndCts,
   hndFuk,
