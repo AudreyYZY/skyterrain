@@ -2747,6 +2747,51 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "奥洛穆茨天文钟", nameEn: "Olomouc Astronomical Clock", lon: 17.2508, lat: 49.5939, kind: "landmark" },
     { nameZh: "奥洛穆茨主教座堂", nameEn: "Olomouc Cathedral (St. Wenceslas)", lon: 17.2554, lat: 49.5965, kind: "landmark" },
   ],
+
+  // ── 中国 · Tier 1 缺口补齐城市 ──
+  fuzhou: [
+    { nameZh: "三坊七巷", nameEn: "Sanfang Qixiang", lon: 119.2911, lat: 26.0797, kind: "district" },
+    { nameZh: "西湖公园", nameEn: "West Lake Park", lon: 119.2870, lat: 26.0896, kind: "nature" },
+    { nameZh: "鼓山·涌泉寺", nameEn: "Gushan & Yongquan Temple", lon: 119.4283, lat: 26.0833, kind: "landmark" },
+    { nameZh: "于山", nameEn: "Yushan", lon: 119.3050, lat: 26.0765, kind: "nature" },
+    { nameZh: "烟台山历史文化风貌区", nameEn: "Yantai Mountain Historic Quarter", lon: 119.3103, lat: 26.0611, kind: "district" },
+  ],
+
+  jinan: [
+    { nameZh: "趵突泉", nameEn: "Baotu Spring", lon: 117.0094, lat: 36.6607, kind: "landmark" },
+    { nameZh: "大明湖", nameEn: "Daming Lake", lon: 117.0206, lat: 36.6675, kind: "nature" },
+    { nameZh: "千佛山", nameEn: "Thousand Buddha Mountain", lon: 117.0453, lat: 36.6394, kind: "nature" },
+    { nameZh: "芙蓉街", nameEn: "Furong Street", lon: 117.0086, lat: 36.6636, kind: "district" },
+  ],
+
+  changsha: [
+    { nameZh: "岳麓山", nameEn: "Yuelu Mountain", lon: 112.9319, lat: 28.1922, kind: "nature" },
+    { nameZh: "岳麓书院", nameEn: "Yuelu Academy", lon: 112.9364, lat: 28.1811, kind: "landmark" },
+    { nameZh: "橘子洲头", nameEn: "Juzizhou", lon: 112.9697, lat: 28.1917, kind: "nature" },
+    { nameZh: "太平街", nameEn: "Taiping Street", lon: 112.9772, lat: 28.1928, kind: "district" },
+    { nameZh: "湖南省博物馆", nameEn: "Hunan Museum", lon: 112.9868, lat: 28.2183, kind: "landmark" },
+  ],
+
+  nanning: [
+    { nameZh: "青秀山风景区", nameEn: "Qingxiushan", lon: 108.3845, lat: 22.7898, kind: "nature" },
+    { nameZh: "广西民族博物馆", nameEn: "Guangxi Museum of Nationalities", lon: 108.3853, lat: 22.7910, kind: "landmark" },
+    { nameZh: "三街两巷", nameEn: "Sanjie Liangxiang", lon: 108.3172, lat: 22.8172, kind: "district" },
+    { nameZh: "民歌湖", nameEn: "Minge Lake", lon: 108.3389, lat: 22.8106, kind: "nature" },
+  ],
+
+  haikou: [
+    { nameZh: "骑楼老街", nameEn: "Qilou Old Street", lon: 110.3211, lat: 20.0447, kind: "district" },
+    { nameZh: "石山火山群国家地质公园", nameEn: "Shishan Volcano Cluster Geopark", lon: 110.1211, lat: 19.9686, kind: "nature" },
+    { nameZh: "假日海滩", nameEn: "Holiday Beach", lon: 110.2589, lat: 20.0356, kind: "nature" },
+    { nameZh: "东寨港红树林自然保护区", nameEn: "Dongzhaigang Mangrove Reserve", lon: 110.5828, lat: 19.9450, kind: "nature" },
+  ],
+
+  lanzhou: [
+    { nameZh: "中山桥", nameEn: "Zhongshan Bridge", lon: 103.8256, lat: 36.0672, kind: "landmark" },
+    { nameZh: "白塔山公园", nameEn: "White Pagoda Hill Park", lon: 103.8256, lat: 36.0706, kind: "nature" },
+    { nameZh: "黄河母亲雕塑", nameEn: "Mother River Sculpture", lon: 103.8106, lat: 36.0592, kind: "landmark" },
+    { nameZh: "五泉山公园", nameEn: "Wuquan Mountain Park", lon: 103.8267, lat: 36.0417, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

@@ -6628,4 +6628,95 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May to September is pleasant; as the gateway to Moravia, Olomouc pairs well with a Brno-area itinerary; it draws fewer visitors than Prague, making it a good choice for a quieter stroll through its Baroque architecture.",
   },
+
+  // ── China · closing the Tier 1 provincial-capital gaps (Fujian/Shandong/Hunan/Guangxi/Hainan/Gansu) ──
+  fuzhou: {
+    identity:
+      "Fuzhou is the capital of Fujian, a city near the mouth of the Min River, with an urban population of about 5 million. Nicknamed the 'Banyan City' for the old town's banyan trees and 'the Blessed Prefecture' (有福之州), it is Fujian's political and cultural centre, and was one of the first cities named a 'Hot Spring Capital of China' by the then Ministry of Land and Resources in 2010, with some of the richest urban geothermal resources in the country.",
+    layout:
+      "Fuzhou straddles the Min River. On the north bank, Gulou District is the old-town core, home to Sanfang Qixiang, Yushan and Wushan. On the south bank, Cangshan District is where foreign consulates and trading houses clustered after Fuzhou opened as a treaty port (the Yantai Mountain historic quarter). Gushan rises east of the city across the river. Taijiang and Jin'an are the commercial and newer-development directions.",
+    gettingAround:
+      "Changle International Airport is on the south-east coast, about 55 km from the centre; the airport bus/express takes about an hour. The Fuzhou–Xiamen high-speed line reaches Xiamen in about an hour, and Wuyishan North a little over an hour to the north-west. The city has a metro and buses; pay by QR code. The climate is a subtropical maritime monsoon: warm and humid, muggy rainy summers, a typhoon season July–September, and mild winters with little frost or snow.",
+    culture:
+      "Eastern Min (the Fuzhou dialect) is spoken, with Mandarin widely used. Jasmine tea and hot-spring bathing are everyday habits here, not just tourist novelties — the city sits on its own geothermal resource, and many bathhouses and spring resorts operate year-round, not only in winter. The food leans light, sweet and sour: Buddha Jumps Over the Wall, fish balls, rou yan (meat wonton) and laohua noodle soup are typical. No tipping.",
+    seeAndDo:
+      "Sanfang Qixiang (the Tang–Song-era lane layout, packed with the former homes of notable figures, covering about 40 hectares); West Lake Park (Fuzhou's best-preserved classical garden); Yushan and Wushan for views over the old town; the Yongquan Temple on Gushan, reached by cable car or on foot; the historic consulate buildings of the Yantai Mountain quarter; an evening cruise on the Min River to see the lit-up riverbanks.",
+    whenAndTips:
+      "April–May and October–November have the most comfortable weather. During typhoon season (July–September) watch for possible flight delays. Fuzhou's hot springs can be enjoyed year-round and are especially popular in winter. Sanfang Qixiang and Yantai Mountain are quieter and better for a slow wander in the early evening.",
+  },
+
+  jinan: {
+    identity:
+      "Jinan is the capital of Shandong, a city on the south bank of the Yellow River at the foot of Mount Tai, with an urban population of about 5 million. Known as the 'Spring City' for the roughly 72 named artesian springs within it (including Baotu Spring and Black Tiger Spring), it is Shandong's political and cultural hub and the gateway to Mount Tai and Qufu.",
+    layout:
+      "Jinan's old town is organised around its 'three great sights' — Baotu Spring, Daming Lake and Thousand Buddha Mountain — running roughly north–south: the city backs onto Thousand Buddha Mountain in the south and faces the Yellow River in the north, with spring water seeping down from the southern hills and surfacing in the old town to form Daming Lake, giving a layered 'mountain–spring–lake–city' geography. The CBD and high-tech zone lie to the east. Mount Tai is about an hour south by road; Qufu about an hour south-east.",
+    gettingAround:
+      "Yaoqiang International Airport is in the north-east, about 30 km from the centre; the airport bus takes about 40–45 minutes. Jinan is a hub on the Beijing–Shanghai and Jinan–Qingdao high-speed lines: about 1.5 hours to Beijing, about 1.5 hours to Qingdao, about 20 minutes to Tai'an (for Mount Tai), and about an hour to Qufu. The city has light rail and buses; pay by QR code. The climate is temperate monsoon, with four distinct seasons, hot rainy summers and cold, dry, relatively snow-free winters.",
+    culture:
+      "Jilu Mandarin (the Jinan dialect) is spoken, with Mandarin widely used. Jinan cuisine, a branch of Shandong (Lu) cooking centred on the provincial capital, is known for its clear and milky broths and for prizing clarity, freshness, crispness and tenderness; street snacks include braised pork strips (bazi rou) and sweet millet soup (tianmo). Jinan people tend to be plain-spoken and unpretentious; old-town teahouses still host local storytelling arts like Shandong kuaishu and Shandong qinshu. No tipping.",
+    seeAndDo:
+      "Baotu Spring Park ('the finest spring under heaven', with three jets bubbling day and night); Daming Lake ('China's foremost spring-fed lake'); Thousand Buddha Mountain (covered in Buddhist carvings, with views over the Spring City from the top); the old lanes and snacks of Furong Street and Qushuiting Street. Using Jinan as a base: a day trip to climb Mount Tai for sunrise, or to see the Confucius Temple, Mansion and Cemetery in Qufu.",
+    whenAndTips:
+      "April–May and September–October are most comfortable. Baotu Spring's flow varies with rainfall and season, usually strongest during the rainy months (July–August). Winters are cold and dry but indoors are well heated, and the springs sometimes steam visibly in cold weather. Summers are hot — avoid climbing Mount Tai at midday.",
+  },
+
+  changsha: {
+    identity:
+      "Changsha is the capital of Hunan, a city on the lower Xiang River with an urban population of about 9 million. Known for its deep modern revolutionary history — the young Mao Zedong studied and was politically active here — and, more recently, for its food scene and nightlife, it has become one of China's best-known 'internet-famous' cities and is the birthplace of Hunanese cuisine and the Cha Yan Yue Se milk-tea chain.",
+    layout:
+      "The Xiang River runs north through the city. The east bank holds the traditional centre — Wuyi Square and the old commercial streets of Taiping Street and Pozi Street — while the west bank is home to Yuelu Mountain, Yuelu Academy and a cluster of universities. Juzizhou, a long narrow river island, sits in the Xiang River and connects the two banks.",
+    gettingAround:
+      "Huanghua International Airport is east of the city, linked to the high-speed rail station by a maglev line that takes about 16–17 minutes. Changsha sits where the Beijing–Guangzhou and Shanghai–Kunming high-speed lines cross: about 1.5 hours to Wuhan, about 2 hours to Guangzhou, an intercity rail link of about an hour to Shaoshan, and about 2 hours to Zhangjiajie. The city has a metro and buses; pay by QR code. The climate is a humid subtropical monsoon with four clear seasons and rain concentrated in the hot months: Changsha is traditionally one of China's 'Four Furnaces', with hot, humid summers, while winters are damp and cold, feeling colder than the thermometer suggests.",
+    culture:
+      "Xiang (the Changsha dialect) is spoken, with Mandarin widely used. Changsha people love spicy food and late-night eating; food landmarks like Huogongdian and Wenheyou draw year-round queues, and milk-tea shops like Cha Yan Yue Se are woven into everyday local life. Locals tend to be direct and fast-talking, and 'joining the bustle' (chao renao) sums up the local way of socialising. No tipping.",
+    seeAndDo:
+      "Yuelu Mountain and Yuelu Academy (one of China's four great ancient academies, still used for teaching today); Juzizhou (one of the world's largest inland river islands); the old streets and night-snack stalls of Taiping Street and Pozi Street; the Hunan Museum (the Mawangdui Han-tomb artefacts — a place to be respectful). Farther out: Mao Zedong's former home in Shaoshan and Zhangjiajie, a day or two each.",
+    whenAndTips:
+      "March–April and September–November are the most pleasant months. Midsummer is hot and humid — take precautions against heat. Winters are damp and cold, colder than the temperature implies, so bring warm layers. Popular night-food stalls and famous restaurants often have queues — going at off-peak times helps.",
+  },
+
+  nanning: {
+    identity:
+      "Nanning is the capital of Guangxi, a city on the Yong River with an urban population of about 7 million. Known as the 'Green City' for its high tree cover and year-round greenery, it hosts the China–ASEAN Expo and, both geographically and culturally, serves as a gateway city linking China with mainland South-east Asia.",
+    layout:
+      "Nanning is built along both banks of the Yong River. The old centre is around Qingxiu and Xingning districts, home to the Sanjie Liangxiang historic quarter; the Qingxiushan scenic area, on the north bank south-east of the centre, is the city's high ground and 'green lung'. The Convention Centre and Wuxiang New District, to the south, are the main direction of newer development.",
+    gettingAround:
+      "Wuxu International Airport is in the south-west, linked to the city centre by a high-speed rail station reachable in about 15 minutes. Nanning is a hub on the Nanning–Guangzhou and Nanning–Kunming high-speed lines: about 2–3 hours to Guilin, about 5 hours to Kunming; the China–Vietnam international train to Hanoi also departs from here. The city has a metro and buses; pay by QR code. The climate is subtropical monsoon: long summers, short winters, warm and humid year-round with rare snow, and a rainy season concentrated April–September.",
+    culture:
+      "South-western Mandarin is spoken (with Cantonese/Baihua also used in parts of the city), and Mandarin is widely understood. Nanning is home to Zhuang, Han and other ethnic communities; the Zhuang San Yue San festival (the third day of the third lunar month) is a statutory Guangxi holiday, with embroidered-ball tossing and antiphonal folk singing — worth checking for public events if visiting around that time. The signature food is laoyou fen, a sour-and-spicy rice noodle soup. No tipping.",
+    seeAndDo:
+      "Qingxiushan (views over the Yong River and the city, with a garden of thousand-year-old cycads); the Guangxi Museum of Nationalities (free admission — costumes, instruments and daily life of Guangxi's indigenous ethnic groups); the Sanjie Liangxiang historic quarter (old arcade buildings and local snacks); an evening boat ride on Minge Lake. Using Nanning as a base: Guilin's landscapes and the Detian cross-border waterfall can each take a day or two.",
+    whenAndTips:
+      "October–March has the most comfortable, lower-humidity weather. April–September is the rainy season — carry rain gear, and typhoons can bring heavy downpours. Around San Yue San (roughly April) Guangxi takes a public holiday, a good time to experience Zhuang folk customs, though travel and accommodation are also busier.",
+  },
+
+  haikou: {
+    identity:
+      "Haikou is the capital of Hainan, a city on the north coast of Hainan Island facing Guangdong's Leizhou Peninsula across the Qiongzhou Strait, with an urban population of about 3 million. Nicknamed the 'Coconut City', it is a policy core zone of the Hainan Free Trade Port and, for most visitors, the first stop or transit point on and off Hainan Island.",
+    layout:
+      "Haikou's old town sits along Haikou Bay and the mouth of the Nandu River; the Zhongshan Road and Deshengsha area preserves the arcaded ('qilou') buildings of a Nanyang architectural style brought back by returning overseas Chinese. Xiuying District, to the west, leads out to the Shishan Volcano Cluster Geopark; Holiday Beach runs along the western waterfront. Newer development is expanding toward the Jiangdong New Area, on the strait side of the city.",
+    gettingAround:
+      "Meilan International Airport is in the south-east, about 26 km from the centre, with Meilan high-speed rail station directly underneath — a few minutes' walk from arrivals. The Hainan Eastern Ring high-speed line reaches Sanya in about 1.5–2 hours. There is no bridge or tunnel across the Qiongzhou Strait: trains cross by train ferry on the Yuehai Railway (about 3 hours), and cars also need a vehicle ferry — worth factoring in when planning to leave the island by rail or road. The city has buses and taxis. The climate is tropical monsoon: warm year-round, with a rainy, typhoon-prone season from May to October and the coolest, driest weather from December to February.",
+    culture:
+      "Hainanese (a Southern Min branch) and Mandarin are both spoken, with Cantonese also usable in parts of the city. Signature foods include qingbuliang (a cold sweet dessert with coconut milk and mixed toppings), Hainan rice noodles, and coconut chicken. Life in Haikou moves at a relaxed pace, and 'laoba tea' — long morning tea sessions with conversation — is an important local social custom. No tipping.",
+    seeAndDo:
+      "The Qilou Old Street (around Zhongshan Road — Nanyang-style architecture and century-old snack shops); the Shishan Volcano Cluster National Geopark (Quaternary volcanic terrain, with a climb up the Ma'an Ridge crater); Holiday Beach (a roughly 6 km stretch of coastal park); the Dongzhaigang mangrove nature reserve. Farther out: Sanya can take a day or two.",
+    whenAndTips:
+      "November–April has the most comfortable, driest weather and is the busiest season. May–October is the rainy and typhoon season — check typhoon warnings before travelling, since flights and the strait ferry can be delayed or suspended in high winds. UV is strong year-round, so use sun protection.",
+  },
+
+  lanzhou: {
+    identity:
+      "Lanzhou is the capital of Gansu, a valley city that the Yellow River runs straight through, with an urban population of about 3 million — the only provincial capital in China where the Yellow River's main channel crosses the core of the city. Sitting at the western edge of the Loess Plateau and the eastern mouth of the Hexi Corridor, it has been a hub linking the Chinese heartland with the Western Regions along the Silk Road since antiquity.",
+    layout:
+      "Lanzhou's built-up area is a long, narrow ribbon stretching east–west along the Yellow River valley, pinched between the loess hills of Mount Gaolan and White Pagoda Hill to the south and north, leaving almost no room to expand sideways. Zhongshan Bridge, White Pagoda Hill and the Mother River sculpture all sit along the riverside in the old-town core. The Hexi Corridor (toward Zhangye and Dunhuang) lies to the west; the Gannan and Linxia areas lie to the south.",
+    gettingAround:
+      "Zhongchuan International Airport is in the north-west, about 70 km from the centre — one of the farthest provincial-capital airports from its city in China — reached by an intercity rail line in about 40–50 minutes. Lanzhou is a hub on the Lanzhou–Xinjiang and Lanzhou–Xining high-speed lines: about 1.5 hours to Xining, while Dunhuang to the north-west is a longer trip that usually requires a change of train. The city has buses and taxis. The climate is temperate continental: deep inland and dry, with only about 300 mm of rain a year, large swings between day and night temperatures, long cold winters, and short, dry summers that are hot but not stifling.",
+    culture:
+      "Lanyin Mandarin (the Lanzhou dialect) is spoken, with Mandarin widely used. Lanzhou has a significant Hui Muslim community, and beef noodles (locally called niu da) are an everyday breakfast for locals, not a tourist gimmick — the classic standard calls for 'clear broth, white radish, red chili, green garlic shoots, yellow noodles'. Many noodle shops follow halal practice, so it's worth being mindful of the shop's customs when dining. No tipping.",
+    seeAndDo:
+      "Zhongshan Bridge ('the first bridge over the Yellow River', a century-old iron span); White Pagoda Hill Park (free admission, with views over the river and the bridge from the top); the Mother River sculpture on the riverside road; Wuquan Mountain Park (a temple garden with over two thousand years of history). Finding a local noodle shop for breakfast is the most direct way to experience everyday Lanzhou.",
+    whenAndTips:
+      "May–September has the most pleasant weather — days are warm but evenings turn cool, so bring a layer. Winters are cold and dry, especially in the early morning and evening. Sunshine and UV are strong year-round and the air is dry, so use sun protection and carry water. Zhongchuan Airport is far from the centre — build enough transfer time into your schedule.",
+  },
 };
