@@ -283,6 +283,12 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "tr-aegean": { zh: "爱琴海地区", en: "Aegean Region", order: 382 },
   "tr-mediterranean": { zh: "地中海地区", en: "Mediterranean Region", order: 383 },
   "tr-black-sea": { zh: "黑海地区", en: "Black Sea Region", order: 384 },
+  // 克罗地亚
+  "hr-zagreb": { zh: "萨格勒布地区", en: "Zagreb Region", order: 390 },
+  "hr-istria-kvarner": { zh: "伊斯特拉与克瓦内尔", en: "Istria & Kvarner", order: 391 },
+  "hr-dalmatia": { zh: "达尔马提亚", en: "Dalmatia", order: 392 },
+  "hr-dubrovnik": { zh: "杜布罗夫尼克地区", en: "Dubrovnik Region", order: 393 },
+  "hr-slavonia": { zh: "斯拉沃尼亚", en: "Slavonia", order: 394 },
 };
 
 export function zoneLabel(zone: string | undefined, lang: "zh-CN" | "en-US"): string | undefined {
@@ -333,6 +339,7 @@ export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "indonesia", nameZh: "印度尼西亚", nameEn: "Indonesia" },
   { country: "kazakhstan", nameZh: "哈萨克斯坦", nameEn: "Kazakhstan" },
   { country: "turkey", nameZh: "土耳其", nameEn: "Turkey" },
+  { country: "croatia", nameZh: "克罗地亚", nameEn: "Croatia" },
 ];
 
 export const CITY_REGISTRY: CityEntry[] = [
@@ -2765,6 +2772,54 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "YEI", nameZh: "布尔萨耶尼谢希尔机场", nameEn: "Bursa Yenişehir Airport", lon: 29.5622, lat: 40.2530 },
     source: "布尔萨市中心 40.1826,29.0665；YEI机场（距市区约45km），奥斯曼帝国首个都城，紧邻乌鲁山：公开资料",
   },
+  // 克罗地亚
+  {
+    id: "zagreb", nameZh: "萨格勒布", nameEn: "Zagreb", country: "croatia", tier: "capital", zone: "hr-zagreb",
+    lon: 15.9819, lat: 45.8150,
+    airport: { iata: "ZAG", nameZh: "萨格勒布弗拉尼奥·图季曼机场", nameEn: "Zagreb Franjo Tuđman Airport", lon: 16.0688, lat: 45.7429 },
+    source: "萨格勒布市中心 45.8150,15.9819；ZAG机场（距市区约17km），克罗地亚首都与最大城市：公开资料",
+  },
+  {
+    id: "split", nameZh: "斯普利特", nameEn: "Split", country: "croatia", tier: "major", zone: "hr-dalmatia",
+    lon: 16.4402, lat: 43.5081,
+    airport: { iata: "SPU", nameZh: "斯普利特机场", nameEn: "Split Airport", lon: 16.2981, lat: 43.5389 },
+    source: "斯普利特市中心 43.5081,16.4402；SPU机场（距市区约19km），达尔马提亚地区最大城市，戴克里先宫所在地：公开资料",
+  },
+  {
+    id: "dubrovnik", nameZh: "杜布罗夫尼克", nameEn: "Dubrovnik", country: "croatia", tier: "major", zone: "hr-dubrovnik",
+    lon: 18.0944, lat: 42.6507,
+    airport: { iata: "DBV", nameZh: "杜布罗夫尼克机场", nameEn: "Dubrovnik Airport", lon: 18.2682, lat: 42.5614 },
+    source: "杜布罗夫尼克市中心 42.6507,18.0944；DBV机场（距市区约20km），南达尔马提亚沿海古城，1979年老城列入世界遗产：公开资料",
+  },
+  {
+    id: "rijeka", nameZh: "里耶卡", nameEn: "Rijeka", country: "croatia", tier: "major", zone: "hr-istria-kvarner",
+    lon: 14.4422, lat: 45.3271,
+    airport: { iata: "RJK", nameZh: "里耶卡机场", nameEn: "Rijeka Airport", lon: 14.5703, lat: 45.2169 },
+    source: "里耶卡市中心 45.3271,14.4422；RJK机场（位于克尔克岛上，距市区约30km），克罗地亚最大海港：公开资料",
+  },
+  {
+    id: "zadar", nameZh: "扎达尔", nameEn: "Zadar", country: "croatia", tier: "notable", zone: "hr-dalmatia",
+    lon: 15.2314, lat: 44.1194,
+    airport: { iata: "ZAD", nameZh: "扎达尔机场", nameEn: "Zadar Airport", lon: 15.3467, lat: 44.1083 },
+    source: "扎达尔市中心 44.1194,15.2314；ZAD机场（距市区约8km），北达尔马提亚古城，以海之风琴、科尔纳蒂群岛门户著称：公开资料",
+  },
+  {
+    id: "pula", nameZh: "普拉", nameEn: "Pula", country: "croatia", tier: "notable", zone: "hr-istria-kvarner",
+    lon: 13.8496, lat: 44.8666,
+    airport: { iata: "PUY", nameZh: "普拉机场", nameEn: "Pula Airport", lon: 13.9222, lat: 44.8935 },
+    source: "普拉市中心 44.8666,13.8496；PUY机场（距市区约6km），伊斯特拉半岛最大城市，古罗马竞技场所在地：公开资料",
+  },
+  {
+    id: "osijek", nameZh: "奥西耶克", nameEn: "Osijek", country: "croatia", tier: "notable", zone: "hr-slavonia",
+    lon: 18.6955, lat: 45.5550,
+    airport: { iata: "OSI", nameZh: "奥西耶克机场", nameEn: "Osijek Airport", lon: 18.8103, lat: 45.4626 },
+    source: "奥西耶克市中心 45.5550,18.6955；OSI机场（距市区约20km），斯拉沃尼亚地区最大城市，德拉瓦河畔：公开资料",
+  },
+  {
+    id: "hvar-town", nameZh: "赫瓦尔镇", nameEn: "Hvar Town", country: "croatia", tier: "notable", zone: "hr-dalmatia",
+    lon: 16.4413, lat: 43.1729,
+    source: "赫瓦尔镇 43.1729,16.4413；岛上无机场，经斯普利特或杜布罗夫尼克机场转乘渡轮/双体船抵达，赫瓦尔岛以充足日照与薰衣草田闻名：公开资料",
+  },
 ];
 
 const BY_ID = new Map(CITY_REGISTRY.map((c) => [c.id, c]));
@@ -2806,6 +2861,7 @@ export const COUNTRY_TO_CONTINENT: Record<string, string> = {
   finland: "europe",
   luxembourg: "europe",
   poland: "europe",
+  croatia: "europe",
 };
 
 export function continentOfCountry(country: string): string | undefined {
