@@ -1,0 +1,17 @@
+{
+  "id": "zag-puy",
+  "name": "萨格勒布 — 普拉",
+  "nameEn": "Zagreb — Pula",
+  "description": "戈尔斯基科塔尔 · 乌奇卡山",
+  "descriptionEn": "Gorski Kotar · Učka",
+  "depCountry": "croatia",
+  "arrCountry": "croatia",
+  "flight": { "airline": "克罗地亚航空", "airlineEn": "Croatia Airlines", "flightNo": "OU250", "aircraft": "Dash 8 Q400", "depIata": "ZAG", "arrIata": "PUY", "durationMin": 40 },
+  "cruiseHeight": 6100,
+  "waypoints": [
+    { "kind": "city", "id": "zag", "name": "萨格勒布", "nameEn": "Zagreb", "lat": 45.7429, "lon": 16.0688, "airport": true },
+    { "kind": "terrain", "terrainId": "gorski-kotar" },
+    { "kind": "terrain", "terrainId": "ucka" },
+    { "kind": "city", "id": "puy", "name": "普拉", "nameEn": "Pula", "lat": 44.8935, "lon": 13.9222, "airport": true }
+  ]
+}

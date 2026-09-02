@@ -1,0 +1,16 @@
+{
+  "id": "zag-rjk",
+  "name": "萨格勒布 — 里耶卡",
+  "nameEn": "Zagreb — Rijeka",
+  "description": "戈尔斯基科塔尔 · 克瓦内尔湾",
+  "descriptionEn": "Gorski Kotar · Kvarner Gulf",
+  "depCountry": "croatia",
+  "arrCountry": "croatia",
+  "flight": { "airline": "克罗地亚航空", "airlineEn": "Croatia Airlines", "flightNo": "OU161", "aircraft": "Dash 8 Q400", "depIata": "ZAG", "arrIata": "RJK", "durationMin": 35 },
+  "cruiseHeight": 5500,
+  "waypoints": [
+    { "kind": "city", "id": "zag", "name": "萨格勒布", "nameEn": "Zagreb", "lat": 45.7429, "lon": 16.0688, "airport": true },
+    { "kind": "terrain", "terrainId": "gorski-kotar" },
+    { "kind": "city", "id": "rjk", "name": "里耶卡", "nameEn": "Rijeka", "lat": 45.2169, "lon": 14.5703, "airport": true }
+  ]
+}
