@@ -1,0 +1,16 @@
+{
+  "id": "ist-ayt",
+  "name": "伊斯坦布尔 — 安塔利亚",
+  "nameEn": "Istanbul — Antalya",
+  "description": "中安纳托利亚高原 · 托罗斯山脉",
+  "descriptionEn": "Central Anatolian Plateau · Taurus Mountains",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2124", "aircraft": "Airbus A321", "depIata": "IST", "arrIata": "AYT", "durationMin": 85 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
+    { "kind": "terrain", "terrainId": "central-anatolian-plateau" },
+    { "kind": "city", "id": "ayt", "name": "安塔利亚", "nameEn": "Antalya", "lat": 36.8987, "lon": 30.8005, "airport": true }
+  ]
+}

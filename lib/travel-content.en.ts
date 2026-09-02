@@ -6234,4 +6234,159 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May through September is the best season for a summer trip and outdoor activities at Burabay, with weekends and summer holidays bringing more visitors; in winter Burabay's lakes freeze over, offering ice fishing and snow activities.",
   },
+  // ============ Turkey ============
+  "turkey-overview": {
+    identity:
+      "Turkey straddles Europe and Asia, covering about 780,000 km² with a population of roughly 85 million; its capital is Ankara, its largest city Istanbul, its official language Turkish, and its currency the Turkish lira (TRY).",
+    layout:
+      "The country is broadly divided into five regions: Marmara (Istanbul/Bursa, straddling the Bosphorus at the Europe-Asia crossing), the Aegean (Izmir/Bodrum/Pamukkale, deeply indented bays and Greco-Roman ruins), the Mediterranean (Antalya, the 'Turkish Riviera'), Central Anatolia (Ankara/Konya/Cappadocia, plateau and volcanic-ash terrain), and the Black Sea (Trabzon, rainy mountainous coast).",
+    gettingAround:
+      "Domestic flights are the main way to travel between regions, with Turkish Airlines, Pegasus and AJet covering all major cities; Istanbul has an extensive metro, tram and ferry network, and long-distance buses are well developed nationwide. Climate varies sharply north to south: the Mediterranean and Aegean coasts have hot, dry summers and mild winters, the Central Anatolian Plateau has cold winters, hot summers and large day-night swings, and the Black Sea coast is rainy year-round. Citizens of many countries can enter visa-free or with a visa on arrival for a set period — check the latest rules from Turkey's Ministry of Foreign Affairs before travel.",
+    culture:
+      "Turkey is a secular republic with a Turkic-speaking Muslim majority; the constitution mandates separation of religion and state, most residents follow Sunni Islam, and society is generally moderate and open — alcohol is legal and widely available. Eating or drinking in public during daylight hours in Ramadan is not against the law, but it is polite to be somewhat discreet out of respect for those fasting. Mosques require shoes off, and women should carry a headscarf and wear clothing covering the shoulders and knees; restaurant tips are typically 10–15% of the bill, left in cash or added to the check.",
+    seeAndDo:
+      "Hagia Sophia and the Blue Mosque in Istanbul; hot-air ballooning over Cappadocia's fairy chimneys; the travertine terraces of Pamukkale; Antalya's Mediterranean coast and ancient ruins; the ancient city of Ephesus; and Konya's Mevlana Museum and whirling dervish ceremony.",
+    whenAndTips:
+      "April to June and September to October offer the most pleasant weather and are peak travel seasons; July and August bring high heat and crowds along the coasts, while the Central Anatolian Plateau can see large day-night temperature swings, so pack warm layers. Plan flights or long-distance buses ahead for cross-regional travel.",
+  },
+  istanbul: {
+    identity:
+      "Istanbul is Turkey's largest city and its economic and cultural center, with a population of over 15 million; straddling both shores of the Bosphorus, it spans both Asia and Europe, and was successively the capital of the Byzantine and Ottoman empires — though no longer the capital after 1923, it remains Turkey's most internationally influential city.",
+    layout:
+      "The city is divided by the Bosphorus into a European side and an Asian side; the European side is further split by the Golden Horn into the old city (Sultanahmet, dense with historic monuments) and the new city (Beyoğlu, home to Taksim Square and modern commerce), while the Asian side (Kadıköy) is known for its lively local atmosphere.",
+    gettingAround:
+      "Istanbul Airport (IST) is about 35 km from the European-side city center; the city has an extensive metro, tram and ferry network, and crossing the strait by ferry or the Marmaray metro line is a convenient way to experience the city's geography.",
+    culture:
+      "The official language is Turkish. At religious sites such as Hagia Sophia or the Blue Mosque, women should carry a headscarf and wear clothing covering the shoulders and knees, and both men and women must remove their shoes; visitors may look around outside prayer times but should stay quiet. Restaurant tips are typically 10–15% of the bill.",
+    seeAndDo:
+      "Hagia Sophia (a dual witness to Byzantine and Ottoman architectural history); the Blue Mosque; Topkapı Palace (former residence of the Ottoman sultans); the Grand Bazaar (one of the world's oldest and largest covered markets); and Galata Tower for views over the Golden Horn and the Bosphorus.",
+    whenAndTips:
+      "April to May and September to October offer the most pleasant weather with relatively fewer crowds; the Blue Mosque closes to visitors during its five daily prayer times (about 30 minutes each), so check the day's prayer schedule when planning your visit.",
+  },
+  ankara: {
+    identity:
+      "Ankara is the capital of the Republic of Turkey, with a population of over 5.9 million, and is Turkey's second-largest city; chosen as the new capital by Atatürk in 1923, it is the country's political and administrative center.",
+    layout:
+      "The old city around Ankara Castle forms the historic core, while the newer districts extending south house government institutions, universities and the embassy district; Anıtkabir (Atatürk's Mausoleum) sits on a hill on the city's west side.",
+    gettingAround:
+      "Esenboğa Airport (ESB) is about 28 km from the city center; the city has a well-developed metro and bus network, providing convenient access to sites such as the Museum of Anatolian Civilizations.",
+    culture:
+      "The official language is Turkish. As the administrative center, Ankara tends toward more formal dress and etiquette; religious sites still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
+    seeAndDo:
+      "Anıtkabir (the solemn memorial complex housing the mausoleum of Atatürk, founder of the Republic of Turkey); Ankara Castle (an old hilltop fortress overlooking the city); and the Museum of Anatolian Civilizations (housing artifacts from the Hittites and other early Anatolian civilizations).",
+    whenAndTips:
+      "Ankara has a continental climate with hot, dry summers and cold winters; April to June and September to October are the most pleasant travel seasons. Dress appropriately when visiting Anıtkabir, and avoid Turkish national holiday peaks if you prefer smaller crowds.",
+  },
+  izmir: {
+    identity:
+      "Izmir is Turkey's third-largest city, with a population of over 4.5 million, and an important Aegean port known as the 'Pearl of the Aegean' for its relatively secular, open urban atmosphere and its seafront Kordon promenade.",
+    layout:
+      "The city curves along Izmir Bay, with the Kordon waterfront promenade as its everyday recreational heart; the old town around Kadifekale Castle in the Konak district preserves historic streets, and the Agora of Smyrna lies in the city center.",
+    gettingAround:
+      "Adnan Menderes Airport (ADB) is about 18 km from the city center; the city has metro and light-rail networks, and reaching the ancient city of Ephesus usually means taking a train or bus to the nearby town of Selçuk, about an hour away.",
+    culture:
+      "The official language is Turkish. Izmir is one of Turkey's more secular cities, with relatively relaxed dress norms; mosques still require the basic etiquette of shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
+    seeAndDo:
+      "The Kordon waterfront promenade (a favorite spot for sunset views and dining); Kadifekale Castle; the Agora of Smyrna; and a day trip from Izmir to the ancient city of Ephesus, a major Greco-Roman city-state site.",
+    whenAndTips:
+      "April to June and September to October offer the most pleasant weather; July and August are hot along the coast and busier with tourists. Plan a full day for Ephesus, and set out in the morning to beat the tour-group crowds.",
+  },
+  antalya: {
+    identity:
+      "Antalya is the largest city on Turkey's Mediterranean coast, with a population of over 2.7 million, and serves as the hub of the 'Turkish Riviera'; its old town, Kaleiçi, is built right along the waterfront.",
+    layout:
+      "The old town of Kaleiçi is marked by Hadrian's Gate as its landmark entrance and preserves Ottoman-era lanes and a harbor; well-known beaches such as Konyaaltı and Lara lie around the city, with the Düden Waterfalls to the northeast.",
+    gettingAround:
+      "Antalya Airport (AYT) is about 13 km from the city center and one of Turkey's main international air gateways on the Mediterranean coast; the city has a light-rail and bus network, and reaching surrounding ruins such as the Aspendos Theatre usually requires a private car or a local tour.",
+    culture:
+      "The official language is Turkish. As one of Turkey's most important international tourism cities, Antalya has relatively relaxed dress norms and swimwear is generally acceptable on the beaches; mosques still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill, and resorts may already include a service charge.",
+    seeAndDo:
+      "The Kaleiçi old town and Hadrian's Gate; Konyaaltı Beach; the Düden Waterfalls; the Aspendos Theatre (one of the best-preserved Roman theatres); and day trips from Antalya to nearby ancient sites such as Perge.",
+    whenAndTips:
+      "April to June and September to October bring mild, pleasant weather; July and August can exceed 35°C but remain peak beach season. Winter (December to March) is mild and well suited to visiting ruins during the off-season.",
+  },
+  cappadocia: {
+    identity:
+      "Cappadocia is a region in Central Anatolia famed for its volcanic-ash fairy-chimney landscape and hot-air balloon flights; its core town, Göreme, has a population of about 2,000 and is one of Turkey's most recognizable tourist destinations.",
+    layout:
+      "Small towns including Göreme, Ürgüp, Avanos and Uçhisar are scattered across the volcanic-ash landscape, with Göreme National Park and its open-air museum forming the region's core, and underground cities such as Derinkuyu located to the south.",
+    gettingAround:
+      "Nevşehir Kapadokya Airport (NAV) is about 40 km from Göreme, and Kayseri Airport (ASR) about 69 km away — either can serve as a gateway; the towns within the region are close together, and most visitors get around by private car, local shuttle bus, or transfers arranged by balloon companies.",
+    culture:
+      "The official language is Turkish. The region's tourism industry is well developed and most operators are accustomed to international visitors; stay quiet and avoid touching frescoes at rock-cut churches and other religious-historical sites. Before booking a balloon flight, check the operator's credentials and safety record; restaurant tips are typically around 10% of the bill.",
+    seeAndDo:
+      "A sunrise hot-air balloon flight over the fairy-chimney landscape; the Göreme Open Air Museum (Byzantine rock-cut churches and frescoes); Uçhisar Castle for panoramic views; the fairy chimneys of Paşabağı; and the underground city of Derinkuyu.",
+    whenAndTips:
+      "April to June and September to October offer the highest balloon-flight success rates and the most pleasant weather; flights depend on weather conditions, so build a spare day into your itinerary in case of cancellation. Occasional winter snow adds a distinctive look to the rock formations but raises the chance of cancelled flights.",
+  },
+  bodrum: {
+    identity:
+      "Bodrum is a resort town on a peninsula on Turkey's southern Aegean coast, with a population of about 200,000, known for its whitewashed buildings, windmills and Bodrum Castle — a signature town for Turkey's Mediterranean-style way of life.",
+    layout:
+      "The town curves around Bodrum Bay, with Bodrum Castle (Castle of St. Peter) standing on a headland at the center of the harbor, dividing it into east and west bays; the surrounding peninsula holds resort towns such as Turgutreis and Yalıkavak.",
+    gettingAround:
+      "Milas–Bodrum Airport (BJV) is about 36 km from the town center; taxis, rental cars and ferries are the main ways to get around, and reaching other resort towns on the peninsula usually requires driving or a local bus.",
+    culture:
+      "The official language is Turkish. Bodrum is one of Turkey's more internationally minded resort towns with relatively relaxed dress norms; mosques still require shoes off and headscarves for women. Restaurant tips are typically 10–15% of the bill.",
+    seeAndDo:
+      "Bodrum Castle (Castle of St. Peter, former home of the underwater archaeology museum); the Ancient Theatre of Halicarnassus; the Bodrum Windmills (a favorite sunset spot); and a traditional wooden gulet cruise around the surrounding bays.",
+    whenAndTips:
+      "May to October is Bodrum's peak season; July and August are hot but bring the liveliest beach atmosphere. Book gulet day trips in advance and try to head out before the midday heat.",
+  },
+  pamukkale: {
+    identity:
+      "Pamukkale ('Cotton Castle') is a geothermal landscape in southwestern Turkey renowned for its brilliant white travertine terraces, located in Denizli Province; together with the hilltop ancient city of Hierapolis it forms a UNESCO World Heritage site.",
+    layout:
+      "The Pamukkale terraces sit about 20 km north of the city of Denizli, with the ruins of Hierapolis atop the terrace and the town of Pamukkale at the foot of the hill providing accommodation and dining for visitors.",
+    gettingAround:
+      "Denizli Çardak Airport (DNZ) is about 65 km from Pamukkale; taxis and local buses are the main way to get around, and a minibus from central Denizli to Pamukkale takes about 30 to 40 minutes.",
+    culture:
+      "The official language is Turkish. Visitors must walk barefoot in the travertine pools to protect the geological formations, and some areas get crowded, so arriving early helps avoid tour groups. Restaurant tips are typically around 10% of the bill.",
+    seeAndDo:
+      "The Pamukkale travertine terraces (walking barefoot through the stepped thermal pools); the ruins of ancient Hierapolis (Roman baths, a theatre and necropolis); and Cleopatra's Antique Pool (said to be where Cleopatra once bathed, open for a paid swim).",
+    whenAndTips:
+      "Sunrise or late afternoon brings fewer crowds and softer light for photos; midday summer heat is intense and the terraces reflect strong sunlight, so bring sun protection and avoid the midday hours if possible.",
+  },
+  trabzon: {
+    identity:
+      "Trabzon is a major port city on Turkey's eastern Black Sea coast, with a population of over 800,000; historically a port on a Silk Road branch and the capital of the Byzantine-era Empire of Trebizond, it is the core gateway for exploring the Black Sea mountains.",
+    layout:
+      "The city stretches along the Black Sea coast, with its old quarter preserving Byzantine-era landmarks such as the Hagia Sophia of Trabzon; the mountains inland hold sites including the Sümela Monastery and Lake Uzungöl.",
+    gettingAround:
+      "Trabzon Airport (TZX) is about 6 km from the city center; taxis and buses are the main way to get around the city, while reaching Sümela Monastery or Uzungöl usually requires a private car or local tour, each about 1 to 2 hours away.",
+    culture:
+      "The official language is Turkish, and the local Black Sea dialect and customs are distinctive. The Black Sea coast around Trabzon is generally humid and rainy, so pack rain gear; mosques still require shoes off and headscarves for women. Restaurant tips are typically around 10% of the bill.",
+    seeAndDo:
+      "Sümela Monastery (a Byzantine-era Greek Orthodox monastery built into a cliff face); the Hagia Sophia of Trabzon (with surviving Byzantine frescoes); the Atatürk Kiosk; and Lake Uzungöl (a mountain lake in the Black Sea highlands, ringed with trout restaurants).",
+    whenAndTips:
+      "June to September brings relatively warm, drier weather, well suited to visiting Sümela and Uzungöl; the Black Sea region is rainy year-round, so carry rain gear, and allow extra time on the winding mountain roads.",
+  },
+  konya: {
+    identity:
+      "Konya is a major city in Central Anatolia with a population of over 2.2 million; historically the capital of the Seljuk Sultanate in Anatolia, it is renowned for the Sufi poet Rumi and the whirling dervish tradition, and is an important religious and cultural center in Turkey.",
+    layout:
+      "The Mevlana Museum, housing Rumi's tomb, is the old city's central landmark, surrounded by Seljuk-era buildings such as the Alaeddin Mosque and the İnce Minaret Museum, forming the core of Konya's historic quarter.",
+    gettingAround:
+      "Konya Airport (KYA) is about 18 km from the city center; the city has a light-rail and bus network, and reaching surrounding archaeological sites such as Çatalhöyük usually requires a private car or local tour.",
+    culture:
+      "The official language is Turkish. Konya is one of Turkey's more religiously conservative cities, so relatively modest dress is advisable; shoes must be removed at the Mevlana Museum and mosques, and women should carry a headscarf. Restaurant tips are typically around 10% of the bill.",
+    seeAndDo:
+      "The Mevlana Museum (Rumi's tomb and a collection of Mevlevi Order artifacts); a whirling dervish (Sema) ceremony, held regularly or during Rumi's annual December commemoration week; the Alaeddin Mosque; and the İnce Minaret Museum, a showcase of Seljuk architecture.",
+    whenAndTips:
+      "A formal whirling dervish ceremony can be seen during Rumi's death-anniversary commemoration week (Şeb-i Arus) in mid-December, though it draws crowds and tickets should be booked ahead; April to June and September to October offer the most pleasant travel weather.",
+  },
+  bursa: {
+    identity:
+      "Bursa is Turkey's fourth-largest city, with a population of over 2.16 million, and was the first capital of the Ottoman Empire (1326–1365); known as 'Green Bursa' for its many mosques and its proximity to the Uludağ ski resort.",
+    layout:
+      "The old town is dense with early Ottoman buildings such as the Grand Mosque and the Green Mosque, with the area around Koza Han serving as the traditional silk-trading market; Uludağ rises just south of the city, its summit home to a ski resort.",
+    gettingAround:
+      "Bursa Yenişehir Airport (YEI) is about 45 km from the city center, and many visitors instead take a sea ferry from Istanbul followed by a short drive; the city has a light-rail network, and a cable car runs directly to the top of Uludağ.",
+    culture:
+      "The official language is Turkish. Visiting the Grand Mosque, the Green Mosque and other religious sites requires shoes off, and women should carry a headscarf and wear clothing covering the shoulders and knees. Restaurant tips are typically 10–15% of the bill.",
+    seeAndDo:
+      "The Grand Mosque (Ulu Cami, with 20 domes and a central fountain); the Green Mosque (an early Ottoman showcase decorated in blue-green tiles); Koza Han (a traditional silk market, and a good spot to try Bursa's İskender kebab); and the Uludağ cable car and ski resort.",
+    whenAndTips:
+      "December to March is peak ski season on Uludağ; April to June and September to October bring pleasant weather well suited to exploring the old town's mosques. A high-speed ferry from Istanbul to Yenikapı or Bandırma followed by a short drive is usually faster than the full overland route.",
+  },
 };

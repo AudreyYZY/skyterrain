@@ -1,0 +1,17 @@
+{
+  "id": "ist-tzx",
+  "name": "伊斯坦布尔 — 特拉布宗",
+  "nameEn": "Istanbul — Trabzon",
+  "description": "本都山脉 · 黑海海岸",
+  "descriptionEn": "Pontic Mountains · Black Sea Coast",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "飞马航空", "airlineEn": "Pegasus Airlines", "flightNo": "PC682", "aircraft": "Boeing 737-800", "depIata": "IST", "arrIata": "TZX", "durationMin": 105 },
+  "cruiseHeight": 9800,
+  "waypoints": [
+    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
+    { "kind": "terrain", "terrainId": "pontus-mountains" },
+    { "kind": "terrain", "terrainId": "black-sea-coast-turkey" },
+    { "kind": "city", "id": "tzx", "name": "特拉布宗", "nameEn": "Trabzon", "lat": 40.9950, "lon": 39.7897, "airport": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ist-esb",
+  "name": "伊斯坦布尔 — 安卡拉",
+  "nameEn": "Istanbul — Ankara",
+  "description": "博斯普鲁斯海峡 · 中安纳托利亚高原",
+  "descriptionEn": "Bosphorus Strait · Central Anatolian Plateau",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2032", "aircraft": "Airbus A321", "depIata": "IST", "arrIata": "ESB", "durationMin": 55 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
+    { "kind": "terrain", "terrainId": "bosphorus-strait" },
+    { "kind": "terrain", "terrainId": "central-anatolian-plateau" },
+    { "kind": "city", "id": "esb", "name": "安卡拉", "nameEn": "Ankara", "lat": 40.1281, "lon": 32.9951, "airport": true }
+  ]
+}

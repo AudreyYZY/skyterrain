@@ -259,6 +259,16 @@ import nqzPlx from "./nqz-plx.json" with { type: "json" };
 import nqzPwq from "./nqz-pwq.json" with { type: "json" };
 import nqzSco from "./nqz-sco.json" with { type: "json" };
 import alaHsa from "./ala-hsa.json" with { type: "json" };
+// 土耳其
+import istEsb from "./ist-esb.json" with { type: "json" };
+import istAdb from "./ist-adb.json" with { type: "json" };
+import istAyt from "./ist-ayt.json" with { type: "json" };
+import istNav from "./ist-nav.json" with { type: "json" };
+import istTzx from "./ist-tzx.json" with { type: "json" };
+import istDnz from "./ist-dnz.json" with { type: "json" };
+import istBjv from "./ist-bjv.json" with { type: "json" };
+import esbAyt from "./esb-ayt.json" with { type: "json" };
+import esbKya from "./esb-kya.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -478,4 +488,13 @@ export const ALL_ROUTES: FlightRoute[] = [
   nqzPwq,
   nqzSco,
   alaHsa,
+  istEsb,
+  istAdb,
+  istAyt,
+  istNav,
+  istTzx,
+  istDnz,
+  istBjv,
+  esbAyt,
+  esbKya,
 ] as unknown as FlightRoute[];

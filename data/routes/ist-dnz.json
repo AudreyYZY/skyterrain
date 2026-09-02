@@ -1,0 +1,16 @@
+{
+  "id": "ist-dnz",
+  "name": "伊斯坦布尔 — 代尼兹利（棉花堡）",
+  "nameEn": "Istanbul — Denizli (Pamukkale)",
+  "description": "爱琴海岸 · 棉花堡钙化梯田",
+  "descriptionEn": "Aegean Coast · Pamukkale Travertines",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "AJet", "airlineEn": "AJet", "flightNo": "VF1873", "aircraft": "Airbus A320neo", "depIata": "IST", "arrIata": "DNZ", "durationMin": 80 },
+  "cruiseHeight": 9200,
+  "waypoints": [
+    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
+    { "kind": "terrain", "terrainId": "pamukkale-travertines" },
+    { "kind": "city", "id": "dnz", "name": "代尼兹利（棉花堡）", "nameEn": "Denizli (Pamukkale)", "lat": 37.7856, "lon": 29.5614, "airport": true }
+  ]
+}

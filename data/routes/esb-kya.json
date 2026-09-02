@@ -1,0 +1,17 @@
+{
+  "id": "esb-kya",
+  "name": "安卡拉 — 科尼亚",
+  "nameEn": "Ankara — Konya",
+  "description": "中安纳托利亚高原 · 图兹湖",
+  "descriptionEn": "Central Anatolian Plateau · Lake Tuz",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "AJet", "airlineEn": "AJet", "flightNo": "VF1122", "aircraft": "Airbus A320", "depIata": "ESB", "arrIata": "KYA", "durationMin": 50 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "esb", "name": "安卡拉", "nameEn": "Ankara", "lat": 40.1281, "lon": 32.9951, "airport": true },
+    { "kind": "terrain", "terrainId": "lake-tuz" },
+    { "kind": "terrain", "terrainId": "konya-basin" },
+    { "kind": "city", "id": "kya", "name": "科尼亚", "nameEn": "Konya", "lat": 37.9787, "lon": 32.5619, "airport": true }
+  ]
+}

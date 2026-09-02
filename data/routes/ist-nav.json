@@ -1,0 +1,18 @@
+{
+  "id": "ist-nav",
+  "name": "伊斯坦布尔 — 卡帕多奇亚",
+  "nameEn": "Istanbul — Cappadocia",
+  "description": "中安纳托利亚高原 · 精灵烟囱地貌",
+  "descriptionEn": "Central Anatolian Plateau · Fairy Chimneys",
+  "depCountry": "turkey",
+  "arrCountry": "turkey",
+  "flight": { "airline": "AJet", "airlineEn": "AJet", "flightNo": "VF1417", "aircraft": "Boeing 737 MAX 8", "depIata": "IST", "arrIata": "NAV", "durationMin": 80 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
+    { "kind": "terrain", "terrainId": "central-anatolian-plateau" },
+    { "kind": "terrain", "terrainId": "kizilirmak-river" },
+    { "kind": "terrain", "terrainId": "cappadocia-fairy-chimneys" },
+    { "kind": "city", "id": "nav", "name": "内夫谢希尔（卡帕多奇亚）", "nameEn": "Nevşehir (Cappadocia)", "lat": 38.7708, "lon": 34.5344, "airport": true }
+  ]
+}
