@@ -6516,4 +6516,116 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June to September is Hvar's peak season, with July and August the busiest for yachts and visitors. Lavender typically blooms from mid-to-late June through July, the best time to photograph the fields. The island depends on ferries, so book tickets ahead, especially on peak-season weekends.",
   },
+  "czechia-overview": {
+    identity:
+      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of roughly 10.7 million. Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
+    layout:
+      "The country is traditionally divided into three historic regions: Bohemia (west and center, centered on Prague and ringed by ancient mountains), Moravia (southeast, centered on Brno, with rolling hills and vineyards), and Czech Silesia (a small northeastern corner, administratively combined with Moravia). Almost the entire country is bordered by old mountain ranges, with lowlands in the center.",
+    gettingAround:
+      "Václav Havel Airport Prague is the main international gateway; the domestic rail and long-distance bus network is extensive, with journeys between major cities typically taking 2 to 4 hours, since domestic commercial flights are essentially nonexistent. Driving is on the right, and a toll vignette (dálniční známka) is required for motorways. The climate is temperate continental with distinct seasons. The currency is the Czech koruna (CZK), as the country has not adopted the euro; as a Schengen member, most nationalities follow standard Schengen short-stay rules; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    culture:
+      "The official language is Czech, and English is widely spoken among younger people and in tourist areas. Czechs typically use formal address (surname plus Mr./Mrs.) on first meeting, switching to first names only once acquainted; modest dress is expected in churches and other religious sites; Czechia is one of the world's heaviest beer-consuming countries per capita, and pub and beer-hall culture runs deep.",
+    seeAndDo:
+      "Natural landforms: Krkonoše and Sněžka (the country's highest point), the sandstone rock cities of Český ráj and Adršpach, the Macocha Abyss in the Moravian Karst, and the Pravčická brána arch in Bohemian Switzerland. Historic and cultural sites: Prague's Old Town and Castle District (UNESCO), the historic town of Český Krumlov (UNESCO), St. Barbara's Church and the Sedlec Ossuary at Kutná Hora (UNESCO), the spa architecture of Karlovy Vary (UNESCO), and Pilsen's beer culture.",
+    whenAndTips:
+      "May to September is the most pleasant season and also peak time for exploring outdoor landscapes and historic towns; Prague and other cities take on a festive atmosphere during the December Christmas markets, though crowds increase; domestic travel relies mainly on rail and bus, and Prague's nearby historic towns (Český Krumlov, Kutná Hora, Karlovy Vary) all make feasible day trips.",
+  },
+  prague: {
+    identity:
+      "Prague is Czechia's capital and largest city, with a population of about 1.3 million, straddling the banks of the Vltava River. It was once the seat of Holy Roman Emperor Charles IV, and its historic Old Town core was inscribed as a UNESCO World Heritage Site in 1992.",
+    layout:
+      "The Old Town and New Town lie on the right bank of the Vltava, linked by Charles Bridge to the Lesser Town and Castle District on the far bank; Prague Castle stands atop a hill on the left bank overlooking the city, forming one of the largest ancient castle complexes in the world.",
+    gettingAround:
+      "Václav Havel Airport is about 17 km from the city center, connected by bus and metro; the city has an extensive metro, tram and bus network, and the Old Town core is entirely walkable. The climate is temperate continental, with cold winters and mild summers.",
+    culture:
+      "The official language is Czech, and English is widely spoken in tourist areas. Modest dress is expected when entering St. Vitus Cathedral and other religious sites; keep an eye on your belongings around busy spots like Charles Bridge and Old Town Square; restaurant bills typically don't include service, and a 5-10% tip or rounding up the total is customary.",
+    seeAndDo:
+      "The Prague Castle complex (including St. Vitus Cathedral, the core of the UNESCO listing); Charles Bridge (completed in the 14th century, lined with 30 Baroque saint statues); Old Town Square and the Astronomical Clock (installed in 1410, the oldest such clock still in operation); the Lesser Town and views from Petřín Hill.",
+    whenAndTips:
+      "April to June and September to October are pleasant with relatively fewer visitors; July and August are peak season with higher temperatures; December's Christmas markets have a festive atmosphere. The Old Town core is entirely walkable, and early morning is the best time to photograph Charles Bridge before crowds arrive.",
+  },
+  brno: {
+    identity:
+      "Brno is Czechia's second-largest city and the center of Moravia, with a population of about 380,000. It was historically the capital of the Margraviate of Moravia, and today is an important research and university city.",
+    layout:
+      "The old town centers on Freedom Square, with Špilberk Castle on a hill to the west overlooking the city; the Cathedral of St. Peter and Paul on Petrov Hill forms Brno's signature skyline. On the city's southern outskirts stands the Bauhaus-style Villa Tugendhat.",
+    gettingAround:
+      "Brno-Tuřany Airport is about 7.5 km from the city center; the city has an extensive tram network, and the old town core is entirely walkable.",
+    culture:
+      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Peter and Paul and other religious sites; as a major university city, Brno has a lively student population and strong restaurant and pub culture; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "Špilberk Castle (founded in the 13th century, later used as a fortress and prison); the Cathedral of St. Peter and Paul; Villa Tugendhat (a 1930 Bauhaus-style modernist landmark, UNESCO World Heritage); Freedom Square at the heart of the old town; and using Brno as a gateway to the Macocha Abyss in the Moravian Karst.",
+    whenAndTips:
+      "May to September is pleasant; as a university city, some student-oriented facilities close in summer and the atmosphere is livelier during term time; Brno makes a good base for day trips to the Moravian Karst and the Lednice-Valtice estate.",
+  },
+  plzen: {
+    identity:
+      "Plzeň (Pilsen) is a major city in western Czechia and the seat of the Plzeň Region, with a population of about 170,000. In 1842, the world's first golden bottom-fermented lager — Pilsner — was brewed here, making it the birthplace of lager beer worldwide.",
+    layout:
+      "The old town centers on Republic Square, one of the largest town squares in Europe, with the Cathedral of St. Bartholomew — the tallest church spire in Czechia — standing at its center; the Pilsner Urquell Brewery sits on the eastern edge of the old town.",
+    gettingAround:
+      "There is no commercial airport locally; most travelers connect via Prague Airport and continue by train or bus (about 1 to 1.5 hours); the old town is entirely walkable.",
+    culture:
+      "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Bartholomew and other religious sites; as the birthplace of lager culture, pubs and beer halls are a central part of local social life — by local custom you let the server top up your glass rather than pouring your own; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "A tour of the Pilsner Urquell Brewery and its underground brewing history exhibit; Republic Square and the Cathedral of St. Bartholomew (102 m spire, the tallest church spire in Czechia); the historic Pilsen Underground (a roughly 20-km network of tunnels dug from the 14th century onward); and the Great Synagogue, the second-largest synagogue in Europe.",
+    whenAndTips:
+      "May to September is pleasant; booking the brewery tour in advance is recommended; a day trip from Prague is convenient, taking about 1 to 1.5 hours each way.",
+  },
+  "karlovy-vary": {
+    identity:
+      "Karlovy Vary is Czechia's most famous spa town, with a population of about 45,000. It was founded after Holy Roman Emperor Charles IV discovered the hot springs here in the 14th century, and historically was a favored retreat for European royalty and cultural figures.",
+    layout:
+      "The town stretches narrowly along both banks of the Teplá River, its valley lined with Art Nouveau and Neo-Renaissance spa colonnades and sanatorium buildings; the Mill Colonnade and Hot Spring Colonnade are the town's central landmarks.",
+    gettingAround:
+      "Karlovy Vary Airport is about 6 km from the town center; the colonnades along the valley are all walkable, with a funicular connecting hillside hotels and viewpoints on some of the steeper slopes.",
+    culture:
+      "The official language is Czech, and English is widely spoken given the town's international reputation for spa tourism and its film festival. Locals traditionally drink the spring water from a special porcelain spa cup with a built-in drinking spout, available as a souvenir at local shops; the Karlovy Vary International Film Festival is held every summer, one of the oldest film festivals in Central and Eastern Europe; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "The Mill Colonnade (built 1871-1881, 132 m long with 12 allegorical statues); the Hot Spring Colonnade (home to the Vřídlo geyser, which shoots up to 12 m, Karlovy Vary's highest-yield spring); the Grandhotel Pupp (a landmark hotel with over three centuries of history); and nearby Czech spa towns such as Mariánské Lázně.",
+    whenAndTips:
+      "May to September is pleasant, with the film festival in July drawing the largest crowds; check with a local pharmacy or doctor for guidance on drinking the mineral water; it's about a 2-hour drive from Prague, with train and bus options also available.",
+  },
+  "cesky-krumlov": {
+    identity:
+      "Český Krumlov is a medieval town in South Bohemia with a population of about 13,000, named for the deep meander of the Vltava that nearly encircles its historic core (\"Krumlov\" comes from the German \"Krumme Aue,\" meaning \"crooked meadow\"). Its historic center was inscribed as a UNESCO World Heritage Site in 1992.",
+    layout:
+      "The old town is built within a double horseshoe bend of the Vltava; Krumlov Castle stands on the rocky bluff inside the meander and is the second-largest castle complex in Czechia after Prague Castle. The old town core is entirely walkable.",
+    gettingAround:
+      "There is no local airport; most travelers connect via Prague Airport or České Budějovice and continue by bus, with the journey from Prague taking about 2.5 to 3 hours; the old town core is walkable, though its cobblestone streets are steep, so comfortable footwear is recommended.",
+    culture:
+      "The official language is Czech, and English is widely spoken as this is a popular tourist town. Some areas inside the castle can only be visited on a timed guided tour; modest dress is expected when entering St. Vitus Church and other religious sites; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "Krumlov Castle (founded in the 13th century, with its Bear Moat and three-tiered Cloak Bridge); the castle tower viewpoint overlooking the town's meander; the old town square and town hall; and rafting or canoeing on the Vltava, a popular summer activity offering a close-up view of the meander landform.",
+    whenAndTips:
+      "May to September is pleasant and also the best season for river rafting; the old town gets crowded in summer, so visit key sights early morning or evening; an overnight stay from Prague is recommended to fully experience the old town at night.",
+  },
+  "kutna-hora": {
+    identity:
+      "Kutná Hora is a historic silver-mining town in Central Bohemia with a population of about 20,000. In the 14th and 15th centuries, silver mining made it the second-wealthiest town in the Kingdom of Bohemia after Prague; its historic center was inscribed as a UNESCO World Heritage Site in 1995.",
+    layout:
+      "The old town's central landmark is St. Barbara's Church, which stands on a hill at the edge of town overlooking the valley below; the underground of the All Saints Church in the nearby Sedlec district holds the famous \"Bone Church.\"",
+    gettingAround:
+      "There is no local airport; most travelers connect via Prague Airport and continue by train or bus, with the journey from Prague taking about 1 to 1.5 hours; the old town core is walkable, and St. Barbara's Church and the Sedlec Ossuary are about a 20-minute walk apart, or reachable by local bus.",
+    culture:
+      "The official language is Czech. Modest, quiet behavior is expected when visiting St. Barbara's Church and the Bone Church; inside the ossuary, touching the bone decorations is forbidden and photography is restricted in some areas out of respect for the dead — watch for posted signage; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "St. Barbara's Church (a Gothic masterpiece dedicated to the patron saint of miners); the Sedlec Ossuary (a cemetery chapel decorated with the remains of roughly 40,000 people); the Czech Museum of Silver (on the site of a medieval mint); and the stone fountain and old town square.",
+    whenAndTips:
+      "Worth visiting year-round, with May to September the most pleasant; book tickets in advance for the ossuary to avoid peak crowds; it makes a feasible day trip from Prague, or can be planned separately from a Karlovy Vary or Český Krumlov itinerary.",
+  },
+  olomouc: {
+    identity:
+      "Olomouc is a historic city in Moravia with a population of about 100,000. In the Middle Ages it was a bishopric seat and regional center, and today has the largest historic urban core in Czechia after Prague; its Holy Trinity Column was inscribed as a UNESCO World Heritage Site in 1995.",
+    layout:
+      "The old town centers on Upper Square and Lower Square, with the Holy Trinity Column standing at the heart of Upper Square; Olomouc's cathedral and archbishop's palace lie at the other end of the old town, which also preserves six Baroque fountains as key features of its townscape.",
+    gettingAround:
+      "The local airport has limited passenger service; most travelers connect via Brno Airport and continue by train or bus (about 1.5 hours), while a direct train from Prague to Olomouc takes about 2.5 hours; the old town core is entirely walkable.",
+    culture:
+      "The official language is Czech. Modest dress is expected when entering St. Wenceslas Cathedral and other religious sites; as a university city, Olomouc has a lively student population and strong café and pub culture in the old town; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
+    seeAndDo:
+      "The Holy Trinity Column (built 1716-1754, one of the largest free-standing Baroque sculptures in Central Europe, UNESCO World Heritage); the old town's six Baroque fountains; the Olomouc Astronomical Clock (repainted in a Socialist Realist style quite different from Prague's clock); and Olomouc's cathedral and archbishop's palace.",
+    whenAndTips:
+      "May to September is pleasant; as the gateway to Moravia, Olomouc pairs well with a Brno-area itinerary; it draws fewer visitors than Prague, making it a good choice for a quieter stroll through its Baroque architecture.",
+  },
 };
