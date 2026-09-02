@@ -269,6 +269,13 @@ import istDnz from "./ist-dnz.json" with { type: "json" };
 import istBjv from "./ist-bjv.json" with { type: "json" };
 import esbAyt from "./esb-ayt.json" with { type: "json" };
 import esbKya from "./esb-kya.json" with { type: "json" };
+// 克罗地亚
+import zagSpu from "./zag-spu.json" with { type: "json" };
+import zagDbv from "./zag-dbv.json" with { type: "json" };
+import zagZad from "./zag-zad.json" with { type: "json" };
+import zagPuy from "./zag-puy.json" with { type: "json" };
+import zagOsi from "./zag-osi.json" with { type: "json" };
+import zagRjk from "./zag-rjk.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -497,4 +504,10 @@ export const ALL_ROUTES: FlightRoute[] = [
   istBjv,
   esbAyt,
   esbKya,
+  zagSpu,
+  zagDbv,
+  zagZad,
+  zagPuy,
+  zagOsi,
+  zagRjk,
 ] as unknown as FlightRoute[];

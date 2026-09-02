@@ -6389,4 +6389,131 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "December to March is peak ski season on Uludağ; April to June and September to October bring pleasant weather well suited to exploring the old town's mosques. A high-speed ferry from Istanbul to Yenikapı or Bandırma followed by a short drive is usually faster than the full overland route.",
   },
+  // ============ Croatia ============
+  "croatia-overview": {
+    identity:
+      "Croatia sits in south-central Europe on the eastern Adriatic coast, covering about 56,600 km² with a population of roughly 3.8 million. Its capital is Zagreb, the official language is Croatian, and it has used the euro and been part of the Schengen Area since 2023.",
+    layout:
+      "The country divides broadly into three regions: the Pannonian lowland (Zagreb and Slavonia, inland plains and hills), the Dinaric mountain belt (an inland mountainous zone), and the Adriatic coast (Istria, the Kvarner Gulf, and Dalmatia, with a long, indented coastline and 1,244 islands).",
+    gettingAround:
+      "Domestic flights connect Zagreb with major coastal cities. The coast has hot, dry summers and mild winters, while the interior has a distinct continental climate. Long-distance buses are extensive, and ferries and catamarans link the Dalmatian coastal towns to the islands. As a Schengen and eurozone member, entry and currency use follow the same rules as other Schengen countries.",
+    culture:
+      "The official language is Croatian, and most residents are Catholic. Modest dress is expected in churches; swimwear is fine on beaches but should be changed before leaving the beach area. Restaurant tips are typically around 10% of the bill, or simply rounding up.",
+    seeAndDo:
+      "The travertine lakes and waterfalls of Plitvice Lakes National Park; Dubrovnik's Old Town walls; Diocletian's Palace in Split; Zagreb's Upper Town; and the Dalmatian coastal islands (Hvar, Brač, Kornati).",
+    whenAndTips:
+      "May to September is peak season on the coast, with July and August the hottest and most crowded; May, June, and September offer pleasant weather and lower prices. Inland Zagreb suits any season and has a Christmas market in winter. Travel between the coast and interior can take a while, so plan enough days.",
+  },
+  zagreb: {
+    identity:
+      "Zagreb is Croatia's capital and largest city, with a population of about 800,000, and the country's political, economic, and cultural center. The city's history traces back to the medieval hill towns of Gradec and Kaptol.",
+    layout:
+      "The city has an Upper Town (the historic old town, home to St. Mark's Church and the government buildings) and a Lower Town (a grid of 19th-century streets centered on Ban Jelačić Square and numerous museums), linked by the traditional Dolac Market.",
+    gettingAround:
+      "Zagreb Franjo Tuđman Airport is about 17 km from the city center. An extensive tram network is the main way to get around day to day, while the old town is walkable.",
+    culture:
+      "The official language is Croatian. Modest dress is expected when visiting St. Mark's Church and other religious sites. Restaurant tips are typically around 10% of the bill. Zagreb has a faster pace of life than the coastal cities, with a strong outdoor café culture.",
+    seeAndDo:
+      "St. Mark's Church (its colorful tiled roof forms the coats of arms of Croatia and Zagreb); the Stone Gate and Lotrščak Tower in the Upper Town; Dolac open-air market; the Museum of Broken Relationships; and the Zagreb Christmas Market each year from November to January.",
+    whenAndTips:
+      "April to June and September to October are the best seasons to visit Zagreb. December's Christmas market draws more visitors but has a festive atmosphere. As an inland city, Zagreb is worth visiting year-round, independent of the coastal tourist season.",
+  },
+  split: {
+    identity:
+      "Split is the largest city in Dalmatia, with a population of about 160,000, famous as the site where the Roman emperor Diocletian built his retirement palace, which over nearly 1,700 years evolved into the core of today's old town.",
+    layout:
+      "The old town sits entirely within the site of Diocletian's Palace; the palace cellars, the Cathedral of St. Domnius (originally Diocletian's mausoleum), and the street layout still follow the Roman-era plan. The Riva waterfront promenade links the old town with the harbor for everyday leisure.",
+    gettingAround:
+      "Split Airport is about 19 km from the city center. The old town is walkable, and ferries and catamarans to the Dalmatian islands (Hvar, Brač, Kornati) depart from Split's harbor.",
+    culture:
+      "The official language is Croatian. Modest dress is expected when visiting the Cathedral of St. Domnius and other religious sites. Restaurant tips are typically around 10% of the bill. The old town gets crowded in summer, so keep an eye on valuables.",
+    seeAndDo:
+      "The cellars of Diocletian's Palace along with the Silver and Golden Gates; the Cathedral of St. Domnius; the Riva waterfront promenade; Marjan Hill for panoramic views of the city and bay; and Split as the gateway to Dalmatian islands such as Hvar and Brač.",
+    whenAndTips:
+      "May to June and September bring mild weather and relatively fewer visitors; July and August are peak seaside season with higher temperatures. Split is the main transport hub for exploring the Dalmatian islands, so it works well as a base for a multi-day island itinerary.",
+  },
+  dubrovnik: {
+    identity:
+      "Dubrovnik is a historic walled city on the southern Dalmatian coast, with a population of about 40,000. In the Middle Ages it was the independent Republic of Ragusa, which used maritime trade and diplomacy to maintain autonomy amid powerful neighbors; its Old Town was inscribed on the World Heritage List in 1979.",
+    layout:
+      "The Old Town sits entirely within a ring of medieval walls nearly 2 km long. The main street, Stradun, runs east–west through the town, with stepped side lanes climbing toward the walls on either side. The Old Port on the town's east side was historically the Republic of Ragusa's trading gateway.",
+    gettingAround:
+      "Dubrovnik Airport is about 20 km from the city center. Motor vehicles are banned inside the Old Town, so walking is the only way to get around; a full lap of the city walls takes about two hours.",
+    culture:
+      "The official language is Croatian. Sun on the city walls is intense at midday, so bring sun protection and water. Restaurant tips in the Old Town are typically 10–15% of the bill. In peak season, it's best to walk the walls before the morning rush of cruise-ship groups.",
+    seeAndDo:
+      "The medieval walls encircling the Old Town (with views over red-tiled roofs and the Adriatic); Stradun; the Sponza Palace and Franciscan Monastery; Lokrum Island (a day-trip island just offshore); and the Srđ cable car for panoramic views.",
+    whenAndTips:
+      "May to June and September to October bring pleasant weather with relatively fewer visitors; July and August are hot and heavily visited by cruise passengers. The city walls have no shade, so avoid midday and bring plenty of water.",
+  },
+  rijeka: {
+    identity:
+      "Rijeka is Croatia's largest seaport and third-largest city, with a population of about 110,000. It has been an important port linking Central Europe to the Mediterranean since Austro-Hungarian times, and remains a city with a deep industrial and maritime tradition.",
+    layout:
+      "The city stretches along the Kvarner Gulf coastline, with the port area tightly linked to the city center. Trsat Castle stands on a hill north of the mouth of the Rječina River, overlooking the whole city and harbor.",
+    gettingAround:
+      "Rijeka Airport is on the island of Krk, about 30 km from the city center, reached by road via the Krk Bridge. The city has a good bus network and serves as a gateway to the Kvarner Gulf coast and islands.",
+    culture:
+      "The official language is Croatian. Rijeka is an industrial port city with fewer tourists, giving it a more local feel than the coastal resort towns. Restaurant tips are typically around 10% of the bill.",
+    seeAndDo:
+      "Trsat Castle and its pilgrimage church; Korzo pedestrian street; the port-side architecture of the city center; and Rijeka as a gateway to Učka Nature Park and the Kvarner islands (Cres, Krk).",
+    whenAndTips:
+      "May to September brings pleasant weather. Rijeka sees fewer visitors than the Dalmatian coastal cities, making it a good fit for travelers who enjoy a local atmosphere. As the Kvarner Gulf's gateway, it's an ideal starting point for visiting Učka and the islands.",
+  },
+  zadar: {
+    identity:
+      "Zadar is a historic town in northern Dalmatia with a population of about 70,000, its history dating back to Roman times; it holds some of Croatia's richest Roman remains.",
+    layout:
+      "The old town sits on a narrow peninsula, with the Roman Forum ruins and the Church of St. Donatus at its core. At the tip of the waterfront promenade stand the contemporary landmarks the Sea Organ and Sun Salutation.",
+    gettingAround:
+      "Zadar Airport is about 8 km from the city center. The old town is walkable, and boats and buses to Kornati National Park and Lake Vrana depart from Zadar.",
+    culture:
+      "The official language is Croatian. Modest dress is expected when visiting the Church of St. Donatus and other religious sites. The Sea Organ draws crowds at sunset, so arrive early to find a spot. Restaurant tips are typically around 10% of the bill.",
+    seeAndDo:
+      "The Sea Organ (an art installation that makes sound from the waves); Sun Salutation (a circular light installation illuminated at night); the Church of St. Donatus and Roman Forum ruins; the Cathedral of St. Anastasia; and Zadar as the gateway to Kornati National Park and Lake Vrana.",
+    whenAndTips:
+      "May to September brings pleasant weather, with sunset the best time to experience the Sea Organ and Sun Salutation together. Zadar is the main gateway city for visiting Kornati National Park.",
+  },
+  pula: {
+    identity:
+      "Pula is the largest city on the Istrian peninsula, with a population of about 50,000, famous for its well-preserved Roman amphitheater; it was successively ruled by Rome, the Republic of Venice, and Austria-Hungary.",
+    layout:
+      "The old town centers on the Roman Arena, with the Forum and a Roman triumphal arch scattered through its compact old-town streets. The harbor lies southeast of the old town, historically Istria's traditional naval and shipbuilding center.",
+    gettingAround:
+      "Pula Airport is about 6 km from the city center. The old town is walkable; reaching Rovinj, Poreč, and other towns on Istria's west coast requires a car or local bus.",
+    culture:
+      "The official language is Croatian (Italian is also widely used in Istria and shares official status regionally). Restaurant tips are typically around 10% of the bill. Pula Arena often hosts open-air film festivals and concerts in summer, so check for events that may affect a visit before buying tickets.",
+    seeAndDo:
+      "Pula Arena (a Roman amphitheater with all four walls intact, seating 23,000); the Temple of Augustus and the Forum; the Golden Gate (a Roman triumphal arch); and Pula as the gateway to the red-soil coastal towns of Rovinj and Poreč.",
+    whenAndTips:
+      "May to September brings pleasant weather; summer often brings lively music-festival events at the Arena, so book tickets in advance. Pula is an ideal base for exploring the red-soil coastal towns of Istria.",
+  },
+  osijek: {
+    identity:
+      "Osijek is the largest city in the Slavonia region and Croatia's fourth-largest city, with a population of about 96,000. The Drava River runs through it, and it was successively ruled by the Ottoman Empire and the Habsburg monarchy.",
+    layout:
+      "The old Tvrđa fortress district preserves an 18th-century Habsburg-era Baroque quarter within a star-shaped fortification outline. The city center stretches along the Drava's north bank, with a riverside promenade for everyday leisure.",
+    gettingAround:
+      "Osijek Airport is about 20 km from the city center, with a good city tram network. Osijek is the main gateway to Kopački Rit wetland park, a drive of just over ten kilometers away.",
+    culture:
+      "The official language is Croatian. Modest dress is expected at religious sites. Restaurant tips are typically around 10% of the bill. Osijek sees far fewer visitors than the coast, making it a representative city for experiencing inland Slavonian life and cuisine (known for grilled sausages and paprika-seasoned dishes).",
+    seeAndDo:
+      "The Tvrđa fortress old town; the Co-Cathedral of Sts. Peter and Paul (locally called the 'Green Church,' its Gothic Revival spire a city landmark); the Drava riverside promenade; and Osijek as the gateway to birdwatching at Kopački Rit wetland park.",
+    whenAndTips:
+      "May to September brings pleasant weather, with spring and autumn best for birdwatching at Kopački Rit. Osijek has a typical continental climate — cold winters and hot summers.",
+  },
+  "hvar-town": {
+    identity:
+      "Hvar Town is the main town on Hvar Island, a well-known gateway to one of Croatia's premier resort islands; it was historically an important Republic of Venice stronghold in the Adriatic.",
+    layout:
+      "The old town surrounds St. Stephen's Square, one of the largest squares in Dalmatia, with St. Stephen's Cathedral at one end and the harbor at the other. Fortica fortress on the hill behind town overlooks both the town and the Pakleni Islands offshore.",
+    gettingAround:
+      "Hvar Island has no airport; visitors arrive via ferry or catamaran from Split or Dubrovnik airports through the harbor, with the Split–Hvar Town crossing taking about 75 minutes. The town itself is walkable.",
+    culture:
+      "The official language is Croatian. Modest dress is expected when visiting St. Stephen's Cathedral. Hvar is a well-known resort and nightlife island, with dense crowds of visitors and yachts in summer and higher dining prices than inland cities. Restaurant tips are typically around 10% of the bill.",
+    seeAndDo:
+      "Fortica fortress for panoramic views; St. Stephen's Square and Cathedral; the Stari Grad Plain (an ancient Greek agricultural site and World Heritage listing); day trips to the Pakleni Islands; and summer lavender fields near the inland village of Velo Grablje.",
+    whenAndTips:
+      "June to September is Hvar's peak season, with July and August the busiest for yachts and visitors. Lavender typically blooms from mid-to-late June through July, the best time to photograph the fields. The island depends on ferries, so book tickets ahead, especially on peak-season weekends.",
+  },
 };

@@ -1,0 +1,17 @@
+{
+  "id": "zag-zad",
+  "name": "萨格勒布 — 扎达尔",
+  "nameEn": "Zagreb — Zadar",
+  "description": "韦莱比特山 · 兹尔曼尼亚河峡谷",
+  "descriptionEn": "Velebit · Zrmanja River Canyon",
+  "depCountry": "croatia",
+  "arrCountry": "croatia",
+  "flight": { "airline": "克罗地亚航空", "airlineEn": "Croatia Airlines", "flightNo": "OU345", "aircraft": "Dash 8 Q400", "depIata": "ZAG", "arrIata": "ZAD", "durationMin": 45 },
+  "cruiseHeight": 6400,
+  "waypoints": [
+    { "kind": "city", "id": "zag", "name": "萨格勒布", "nameEn": "Zagreb", "lat": 45.7429, "lon": 16.0688, "airport": true },
+    { "kind": "terrain", "terrainId": "velebit" },
+    { "kind": "terrain", "terrainId": "zrmanja-canyon" },
+    { "kind": "city", "id": "zad", "name": "扎达尔", "nameEn": "Zadar", "lat": 44.1083, "lon": 15.3467, "airport": true }
+  ]
+}
