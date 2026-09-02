@@ -448,6 +448,23 @@ export default function ExplorerApp() {
     [],
   );
 
+  /**
+   * 旅游模式欢迎卡关闭 —— 没有 ContinentIntro 那样的翻卡选大洲流程，
+   * 关闭即代表用户确认了当前 activeRegion，这时才飞过去（不能提前，见 handleMapReady 注释）。
+   */
+  const handleTravelIntroDismiss = useCallback(() => {
+    setShowIntro(false);
+    if (activeRegion === DEFAULT_REGION_ID) return;
+    const region = REGIONS.find((r) => r.id === activeRegion);
+    if (!region) return;
+    mapRef.current?.flyToRegion({
+      lon: region.center.lon,
+      lat: region.center.lat,
+      height: region.center.height,
+      duration: 2.4,
+    });
+  }, [activeRegion]);
+
   /** 次区域切换 —— 切到其大洲（若需要）并飞向该次区域地形的重心 */
   const handleSubregionChange = useCallback(
     (geo: { id: string; continentId: string; lon: number; lat: number }) => {
@@ -493,9 +510,11 @@ export default function ExplorerApp() {
   }, []);
 
   // 地图就绪：若上次停留的区域不是默认大洲，飞过去（INTRO_VIEW 默认对准亚洲）。
-  // 学习模式初始轮播还开着时不动地球 —— 等用户点「开始探索」由 handleIntroEnter 处理。
+  // 初始引导页（学习模式轮播 / 旅游模式欢迎卡）还开着时不动地球——不能让地图在
+  // 用户看清引导页之前就自己飞走。学习模式由用户点「开始探索」触发 handleIntroEnter；
+  // 旅游模式由 handleTravelIntroDismiss 触发，二者都会在拉栏后自行调用 flyToRegion。
   const handleMapReady = useCallback(() => {
-    if (showIntroRef.current && mode === "study") return;
+    if (showIntroRef.current) return;
     if (activeRegion === DEFAULT_REGION_ID) return;
     const region = REGIONS.find((r) => r.id === activeRegion);
     if (!region) return;
@@ -505,7 +524,7 @@ export default function ExplorerApp() {
       height: region.center.height,
       duration: 1.5,
     });
-  }, [activeRegion, mode]);
+  }, [activeRegion]);
 
   /**
    * 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用。
@@ -1277,7 +1296,7 @@ export default function ExplorerApp() {
             language={language}
             regionName={activeRegionName}
             regionNameEn={activeRegionNameEn}
-            onDismiss={() => setShowIntro(false)}
+            onDismiss={handleTravelIntroDismiss}
             onToggleLanguage={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
           />
         ))}
