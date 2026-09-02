@@ -198,51 +198,61 @@ export interface CountryMeta {
 }
 
 /**
- * 已有地形的国家及显示名。数组顺序 = 目录里同一大洲内国家的先后（大致按次区域 + 地理）。
- * 新增国家时在对应位置补一行，并在 COUNTRY_TO_SUBREGION 补映射。
+ * 已有地形的国家及显示名。
+ *
+ * 数组顺序 = 目录里同一大洲内国家的先后。排序规则见
+ * `docs/expansion-playbook.md` §1：次区域分组由 `SUBREGIONS` 顺序决定
+ * （与本数组的注释分组一致，仅为可读性，不影响实际显示序 —— 见
+ * `countriesForContinent()`）；**次区域内部按中文名拼音字母序**，
+ * 唯一例外是 `china`——作为默认区域/内容最多的"主场"国家，固定排在
+ * 东亚组最前面，不参与字母排序。
+ *
+ * 新增国家时按拼音插入对应次区域分组的正确位置，并在 COUNTRY_TO_SUBREGION 补映射。
  */
 export const COUNTRIES: CountryMeta[] = [
-  // 东亚
+  // 东亚（china 固定置顶，其余按拼音：韩国 Hánguó → 蒙古 Ménggǔ → 日本 Rìběn）
   { slug: "china", name: "中国", nameEn: "China", code: "CN" },
-  { slug: "japan", name: "日本", nameEn: "Japan", code: "JP" },
   { slug: "south-korea", name: "韩国", nameEn: "South Korea", code: "KR" },
   { slug: "mongolia", name: "蒙古", nameEn: "Mongolia", code: "MN" },
-  // 东南亚
-  { slug: "thailand", name: "泰国", nameEn: "Thailand", code: "TH" },
-  { slug: "vietnam", name: "越南", nameEn: "Vietnam", code: "VN" },
-  { slug: "malaysia", name: "马来西亚", nameEn: "Malaysia", code: "MY" },
-  { slug: "singapore", name: "新加坡", nameEn: "Singapore", code: "SG" },
-  { slug: "philippines", name: "菲律宾", nameEn: "Philippines", code: "PH" },
-  { slug: "indonesia", name: "印度尼西亚", nameEn: "Indonesia", code: "ID" },
+  { slug: "japan", name: "日本", nameEn: "Japan", code: "JP" },
   // 中亚
   { slug: "kazakhstan", name: "哈萨克斯坦", nameEn: "Kazakhstan", code: "KZ" },
-  // 北美
-  { slug: "canada", name: "加拿大", nameEn: "Canada", code: "CA" },
-  { slug: "usa", name: "美国", nameEn: "United States", code: "US" },
-  // 北欧
-  { slug: "iceland", name: "冰岛", nameEn: "Iceland", code: "IS" },
-  { slug: "norway", name: "挪威", nameEn: "Norway", code: "NO" },
-  { slug: "uk", name: "英国", nameEn: "United Kingdom", code: "UK" },
+  // 西亚（暂空，见 docs/expansion-playbook.md）
+  // 南亚（暂空）
+  // 东南亚（拼音：菲律宾 Fēilǜbīn → 马来西亚 Mǎláixīyà → 泰国 Tàiguó → 新加坡 Xīnjiāpō → 印度尼西亚 Yìndùníxīyà → 越南 Yuènán）
+  { slug: "philippines", name: "菲律宾", nameEn: "Philippines", code: "PH" },
+  { slug: "malaysia", name: "马来西亚", nameEn: "Malaysia", code: "MY" },
+  { slug: "thailand", name: "泰国", nameEn: "Thailand", code: "TH" },
+  { slug: "singapore", name: "新加坡", nameEn: "Singapore", code: "SG" },
+  { slug: "indonesia", name: "印度尼西亚", nameEn: "Indonesia", code: "ID" },
+  { slug: "vietnam", name: "越南", nameEn: "Vietnam", code: "VN" },
+  // 北欧（拼音：爱尔兰 Ài'ěrlán → 冰岛 Bīngdǎo → 丹麦 Dānmài → 芬兰 Fēnlán → 挪威 Nuówēi → 瑞典 Ruìdiǎn → 英国 Yīngguó）
   { slug: "ireland", name: "爱尔兰", nameEn: "Ireland", code: "IE" },
+  { slug: "iceland", name: "冰岛", nameEn: "Iceland", code: "IS" },
   { slug: "denmark", name: "丹麦", nameEn: "Denmark", code: "DK" },
-  { slug: "sweden", name: "瑞典", nameEn: "Sweden", code: "SE" },
   { slug: "finland", name: "芬兰", nameEn: "Finland", code: "FI" },
-  // 西欧
-  { slug: "netherlands", name: "荷兰", nameEn: "Netherlands", code: "NL" },
-  { slug: "france", name: "法国", nameEn: "France", code: "FR" },
-  { slug: "switzerland", name: "瑞士", nameEn: "Switzerland", code: "CH" },
-  { slug: "germany", name: "德国", nameEn: "Germany", code: "DE" },
+  { slug: "norway", name: "挪威", nameEn: "Norway", code: "NO" },
+  { slug: "sweden", name: "瑞典", nameEn: "Sweden", code: "SE" },
+  { slug: "uk", name: "英国", nameEn: "United Kingdom", code: "UK" },
+  // 西欧（拼音：奥地利 Àodìlì → 比利时 Bǐlìshí → 德国 Déguó → 法国 Fǎguó → 荷兰 Hélán → 卢森堡 Lúsēnbǎo → 瑞士 Ruìshì）
   { slug: "austria", name: "奥地利", nameEn: "Austria", code: "AT" },
   { slug: "belgium", name: "比利时", nameEn: "Belgium", code: "BE" },
+  { slug: "germany", name: "德国", nameEn: "Germany", code: "DE" },
+  { slug: "france", name: "法国", nameEn: "France", code: "FR" },
+  { slug: "netherlands", name: "荷兰", nameEn: "Netherlands", code: "NL" },
   { slug: "luxembourg", name: "卢森堡", nameEn: "Luxembourg", code: "LU" },
-  // 东欧
-  { slug: "poland", name: "波兰", nameEn: "Poland", code: "PL" },
-  // 南欧
+  { slug: "switzerland", name: "瑞士", nameEn: "Switzerland", code: "CH" },
+  // 南欧（拼音：葡萄牙 Pútáoyá → 西班牙 Xībānyá → 希腊 Xīlà → 意大利 Yìdàlì）
   { slug: "portugal", name: "葡萄牙", nameEn: "Portugal", code: "PT" },
-  { slug: "italy", name: "意大利", nameEn: "Italy", code: "IT" },
   { slug: "spain", name: "西班牙", nameEn: "Spain", code: "ES" },
   { slug: "greece", name: "希腊", nameEn: "Greece", code: "GR" },
-  // 澳大利亚和新西兰
+  { slug: "italy", name: "意大利", nameEn: "Italy", code: "IT" },
+  // 东欧
+  { slug: "poland", name: "波兰", nameEn: "Poland", code: "PL" },
+  // 北美（拼音：加拿大 Jiānádà → 美国 Měiguó）
+  { slug: "canada", name: "加拿大", nameEn: "Canada", code: "CA" },
+  { slug: "usa", name: "美国", nameEn: "United States", code: "US" },
+  // 澳大利亚和新西兰（拼音：澳大利亚 Àodàlìyà → 新西兰 Xīnxīlán）
   { slug: "australia", name: "澳大利亚", nameEn: "Australia", code: "AU" },
   { slug: "new-zealand", name: "新西兰", nameEn: "New Zealand", code: "NZ" },
 ];
