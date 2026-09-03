@@ -1,0 +1,24 @@
+{
+  "id": "sha-jdz",
+  "name": "上海 — 景德镇",
+  "nameEn": "Shanghai — Jingdezhen",
+  "description": "长江三角洲 · 江南丘陵 · 昌江河谷",
+  "descriptionEn": "Yangtze Delta · Jiangnan Hills · Chang River valley",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU9575",
+    "aircraft": "Airbus A320",
+    "depIata": "SHA",
+    "arrIata": "JDZ",
+    "durationMin": 90
+  },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true },
+    { "kind": "terrain", "terrainId": "jiangnan-hills" },
+    { "kind": "city", "id": "jdz", "name": "景德镇罗家", "nameEn": "Jingdezhen Luojia", "lat": 29.3386, "lon": 117.1758, "airport": true }
+  ]
+}

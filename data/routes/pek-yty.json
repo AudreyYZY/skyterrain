@@ -1,0 +1,25 @@
+{
+  "id": "pek-yty",
+  "name": "北京 — 扬州",
+  "nameEn": "Beijing — Yangzhou",
+  "description": "华北平原 · 苏北平原 · 江淮运河交汇处",
+  "descriptionEn": "North China Plain · Northern Jiangsu Plain · Yangtze–Grand Canal confluence",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1841",
+    "aircraft": "Airbus A320",
+    "depIata": "PEK",
+    "arrIata": "YTY",
+    "durationMin": 105
+  },
+  "cruiseHeight": 9200,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "feature", "name": "苏北平原", "nameEn": "Northern Jiangsu Plain", "lon": 118.6, "lat": 33.8 },
+    { "kind": "city", "id": "yty", "name": "扬州泰州", "nameEn": "Yangzhou Taizhou", "lat": 32.5617, "lon": 119.7150, "airport": true }
+  ]
+}

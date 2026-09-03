@@ -1,0 +1,27 @@
+{
+  "id": "pek-zuh",
+  "name": "北京 — 珠海",
+  "nameEn": "Beijing — Zhuhai",
+  "description": "华北平原 · 大别山 · 长江中下游平原 · 南岭 · 珠江三角洲",
+  "descriptionEn": "North China Plain · Dabie Mts · Middle–Lower Yangtze Plain · Nanling Mts · Pearl River Delta",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1341",
+    "aircraft": "Airbus A321",
+    "depIata": "PEK",
+    "arrIata": "ZUH",
+    "durationMin": 195
+  },
+  "cruiseHeight": 10800,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "dabie" },
+    { "kind": "terrain", "terrainId": "yangtze" },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "city", "id": "zuh", "name": "珠海金湾", "nameEn": "Zhuhai Jinwan", "lat": 22.0069, "lon": 113.3761, "airport": true }
+  ]
+}

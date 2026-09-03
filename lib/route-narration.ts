@@ -4843,6 +4843,96 @@ export const ROUTE_NARRATION: Record<
       "Beijing to Huangshan takes about two hours. Huangshan City is the gateway to the Mount Huangshan scenic area and the birthplace of Huizhou culture; Tunxi Old Street is one of the best-preserved Ming–Qing commercial streets in China. Most visitors come here specifically for Mount Huangshan, and it's worth spending at least one night on the mountain for sunrise and sunset. The Huizhou-style villages of Hongcun and Xidi are UNESCO World Heritage Sites, known for their whitewashed walls and black-tiled roofs. The local cuisine is representative of Hui cooking, with stinky mandarin fish as a specialty. April–May and October–November have the most comfortable weather and are also the best season for the sea of clouds and autumn colour.",
     },
   },
+
+  "kmg-jhg": {
+    study: {
+    "zh-CN":
+      "昆明飞景洪，是一条从云贵高原南部边缘一路南下、抵达热带雨林的短途航线。飞机离开长水机场，脚下先是云贵高原——石灰岩广布的喀斯特高原，滇池是这片高原上最大的高原湖泊。向南飞行，地势逐渐下降，飞机跨过哀牢山——一列北西—南东走向的山地，是云贵高原与滇南山地的重要分界，也是红河与澜沧江水系的分水岭之一。翻过哀牢山后，飞机进入澜沧江河谷——湄公河的中国段，河谷两侧植被由亚热带常绿阔叶林逐渐过渡为热带雨林。景洪正位于澜沧江畔的西双版纳州府，地处北回归线以南，是中国为数不多的热带雨林气候区，也是通往东南亚的重要门户。",
+    "en-US":
+      "Kunming to Jinghong is a short hop south from the edge of the Yunnan–Guizhou Plateau down into tropical rainforest. Leaving Changshui Airport, the flight is first over the Yunnan–Guizhou Plateau, a limestone karst upland whose largest lake, Dianchi, sits right by Kunming. Flying south, the land drops as the flight crosses the Ailao Mountains, a north-west–south-east range marking an important boundary between the plateau and the mountains of southern Yunnan, and part of the watershed between the Red River and the Lancang (Mekong) river systems. Beyond the Ailao range the flight descends into the valley of the Lancang River — the Chinese stretch of the Mekong — where the vegetation shifts from subtropical evergreen broadleaf forest to tropical rainforest. Jinghong sits on the Lancang's bank as the seat of Xishuangbanna prefecture, south of the Tropic of Cancer in one of the few parts of China with a tropical rainforest climate, and a key gateway toward South-east Asia.",
+    },
+    travel: {
+    "zh-CN":
+      "昆明到景洪约55分钟，是通往西双版纳的主要空中通道。景洪地处热带，傣族、哈尼族等13个世居民族在此聚居，佛寺众多，是南传上座部佛教地区。野象谷是中国境内少数能近距离观察亚洲野象的自然保护区；曼听公园保留传统傣族村寨风貌。4月中旬的泼水节是当地最重要的节日。旱季（11月至次年4月）气候最舒适，雨季（5–10月）午后常有阵雨。进入佛寺和傣家竹楼有相应礼仪，如脱鞋、不触摸小和尚的头部。",
+    "en-US":
+      "Kunming to Jinghong takes about 55 minutes, the main air link into Xishuangbanna. Jinghong sits in the tropics, home to the Dai, Hani and other of the region's 13 long-established ethnic groups, with many Buddhist temples in this Theravada Buddhist area. Wild Elephant Valley is one of the few reserves in China where wild Asian elephants can be seen up close, and Manting Park preserves the look of a traditional Dai village. The mid-April Water-Splashing Festival is the region's most important celebration. The dry season (November–April) has the most comfortable weather, while the wet season (May–October) often brings afternoon showers. Entering a temple or a Dai bamboo house comes with its own etiquette, such as removing your shoes and never touching a young monk's head.",
+    },
+  },
+
+  "pek-zuh": {
+    study: {
+    "zh-CN":
+      "北京飞珠海，是一条纵贯中国东部、抵达珠江口的长距离航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原。向南飞行，飞机跨过大别山——长江与淮河水系的分水岭，山势虽不高但轮廓分明。翻过大别山后，飞机进入长江中下游平原，鄱阳湖一带河网密布、湖泊众多。继续向南，飞机跨过南岭——长江与珠江水系的分水岭，是华南与华中在地理上的重要界线。翻过南岭后，飞机下降进入珠江三角洲——由珠江携带泥沙淤积而成的复合三角洲，河汊纵横，是中国经济最活跃的区域之一。珠海就位于三角洲西南岸，与澳门隔水相望，是中国最早的经济特区之一。",
+    "en-US":
+      "Beijing to Zhuhai runs the length of eastern China to the mouth of the Pearl River. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it crosses the Dabie Mountains, the watershed between the Yangtze and Huai river systems — a modest range, but with a clearly defined outline. Beyond the Dabie the flight enters the Middle–Lower Yangtze Plain, a landscape thick with rivers and lakes around Poyang Lake. Continuing south, it crosses the Nanling, the watershed between the Yangtze and Pearl river systems and an important geographic boundary between southern and central China. Past the Nanling the flight descends into the Pearl River Delta, a composite delta built from Pearl River silt and laced with countless waterways, one of the most economically active regions in China. Zhuhai sits on the delta's south-western shore, across the water from Macao, and was one of China's earliest Special Economic Zones.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到珠海约3小时15分钟。珠海是中国最早的经济特区之一，毗邻澳门，情侣路是城市名片，沿香炉湾海岸线延伸约30余公里。珠海渔女雕像是标志性地标，长隆海洋王国是热门的家庭出游目的地。经拱北、横琴口岸可步行或乘车前往澳门，很适合安排当日往返。10月至次年3月气候最舒适、台风较少；5–9月是台风季。粤式饮茶文化在这里同样通行，斟茶后轻叩桌面致谢是常见礼节。",
+    "en-US":
+      "Beijing to Zhuhai takes about 3 hours 15 minutes. Zhuhai, one of China's earliest Special Economic Zones, borders Macao, and Lovers' Road — running more than 30 km along Xianglu Bay — is the city's signature image. The Zhuhai Fisher Girl statue is its best-known landmark, and Chimelong Ocean Kingdom is a popular family destination. Macao is an easy walk or drive away via the Gongbei or Hengqin checkpoints, well suited to a day trip. October–March has the most comfortable weather and fewer typhoons; May–September is typhoon season. The Cantonese yum cha custom carries over here too — tapping the table lightly when your tea is topped up is a common way to say thanks.",
+    },
+  },
+
+  "sha-jdz": {
+    study: {
+    "zh-CN":
+      "上海飞景德镇，是一条从长江三角洲一路向西南、抵达昌江河谷的航线。飞机离开虹桥机场，脚下先是长江三角洲——太湖平原与河网交织的滨海平原。向西南飞行，地势逐渐抬升进入江南丘陵——长江以南、南岭以北的低山丘陵地带，黄山正是这片丘陵最具代表性的高峰。景德镇就坐落在江南丘陵西缘的昌江河谷盆地中，自古盛产优质高岭土和瓷石，加上便利的水运，使这里发展成延续千年的制瓷中心，宋真宗以年号“景德”为其赐名，沿用至今。",
+    "en-US":
+      "Shanghai to Jingdezhen flies south-west from the Yangtze Delta to the Chang River valley. Leaving Hongqiao, the flight is first over the Yangtze Delta, a coastal plain woven through with the Tai Lake basin and a dense network of rivers. Heading south-west, the land rises into the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose most iconic high point is Mount Huangshan. Jingdezhen sits in a basin along the Chang River at the western edge of these hills; abundant local deposits of kaolin and porcelain stone, combined with easy river transport, let the city grow into a porcelain-making centre with an unbroken thousand-year history — Song-dynasty emperor Zhenzong granted it his own reign name, 'Jingde,' which it has carried ever since.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到景德镇约1小时30分钟。景德镇有2000多年冶陶史、1000多年官窑史，是公认的“千年瓷都”。陶溪川文创街区由原国营宇宙瓷厂改建而成，是陶瓷创意产业的新地标；古窑民俗博览区展示世界上最古老的制瓷生产作业线。走访陶瓷作坊时，未经许可不要随意触碰坯体或成品。3–5月、9–11月气候最舒适。",
+    "en-US":
+      "Shanghai to Jingdezhen takes about 1 hour 30 minutes. Jingdezhen has more than 2,000 years of pottery-making history and over 1,000 years as an official kiln centre, widely known as the 'Porcelain Capital.' The Taoxichuan creative district, converted from a former state-run porcelain factory, is the newest landmark of the ceramics-creative scene, and the Ancient Kiln Folk Custom Museum shows the world's oldest surviving porcelain production line. When visiting a workshop, don't handle clay or finished pieces without permission. March–May and September–November have the most comfortable weather.",
+    },
+  },
+
+  "can-wnz": {
+    study: {
+    "zh-CN":
+      "广州飞温州，是一条纵贯华南与东南沿海、抵达瓯江口的航线。飞机从珠江三角洲起飞，很快跨过南岭——珠江与长江水系的分水岭，一列低矮破碎的东西向丘陵。翻过南岭后，飞机进入闽赣交界的山地，继续向东北飞行抵达武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米，是华东地区海拔最高的山峰之一，也是世界文化与自然双遗产。翻过武夷山后，飞机进入浙南沿海丘陵，地势逐渐降至瓯江入海口，温州就坐落在这里，历史上是海上贸易和民营经济的重要发源地之一。",
+    "en-US":
+      "Guangzhou to Wenzhou runs the length of southern China and the south-east coast to the mouth of the Ou River. The flight leaves the Pearl River Delta and soon crosses the Nanling, the watershed between the Pearl and Yangtze river systems, a low, broken east–west belt of hills. Beyond the Nanling the flight crosses hill country on the Fujian–Jiangxi border before reaching the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m — among the highest points in eastern China and a UNESCO Mixed World Heritage Site. Past the Wuyi range the flight enters the coastal hills of southern Zhejiang, and the land drops toward the mouth of the Ou River, where Wenzhou sits — historically an important birthplace of maritime trade and, more recently, of China's private-sector economy.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到温州约2小时5分钟。温州以“温州模式”民营经济闻名，自宋代起就有经商传统，也是著名侨乡。江心屿是瓯江中的历史地标，五马街保留近代骑楼建筑，雁荡山是境内著名的世界地质公园。当地海鲜讲究“活杀现做”，点单前最好问清单价。4–5月、9–11月气候最舒适；7–9月是台风季，出行前需留意预警。",
+    "en-US":
+      "Guangzhou to Wenzhou takes about 2 hours 5 minutes. Wenzhou is known for the 'Wenzhou model' of private enterprise, with a commercial tradition dating to the Song dynasty and a large overseas Chinese community. Jiangxin Island is a historic landmark in the Ou River, Wuma Street preserves early-20th-century arcade buildings, and Yandang Mountain is a well-known UNESCO Global Geopark in the area. Seafood here is prized 'freshly killed and cooked,' priced by weight, so it's worth confirming the price before ordering. April–May and September–November have the most comfortable weather; July–September is typhoon season, so check warnings before travelling.",
+    },
+  },
+
+  "pek-yty": {
+    study: {
+    "zh-CN":
+      "北京飞扬州，是一条从华北平原一路南下、抵达江淮交汇处的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，飞机进入苏北平原——黄河故道与淮河共同塑造的冲积平原，地势低平，河网与湖泊密布，是南水北调东线工程的重要通道。飞机在平原南缘抵达扬州——长江与京杭大运河的交汇处，自古因漕运和盐业而繁荣，是“淮扬菜”的发源地之一，古典园林众多，2019年被联合国教科文组织评为“世界美食之都”。",
+    "en-US":
+      "Beijing to Yangzhou flies south from the North China Plain to the point where the Yangtze meets the Grand Canal. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Continuing south, it crosses the northern Jiangsu plain, a low-lying alluvial landscape shaped jointly by an old course of the Yellow River and the Huai River, thick with rivers and lakes. At the plain's southern edge the flight reaches Yangzhou, sitting where the Yangtze River meets the Beijing–Hangzhou Grand Canal — a city that has thrived since antiquity on grain transport and the salt trade, one of the birthplaces of Huaiyang cuisine, and named a UNESCO 'City of Gastronomy' in 2019.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到扬州约1小时45分钟。扬州是“淮扬菜”发源地之一，2019年被联合国教科文组织评为“世界美食之都”。瘦西湖是清代盐商园林与自然湖泊结合的代表，个园、何园是另两处古典园林。扬州早茶讲究“早上皮包水”，一顿正式早茶通常需一到两小时，富春茶社是代表老字号。3–5月、9–11月气候最舒适，也是瘦西湖赏花的最佳季节。",
+    "en-US":
+      "Beijing to Yangzhou takes about 1 hour 45 minutes. Yangzhou is one of the birthplaces of Huaiyang cuisine and was named a UNESCO 'City of Gastronomy' in 2019. Slender West Lake pairs a Qing-dynasty salt-merchant garden with a natural lake, while Ge Garden and He Garden are two more classical gardens worth seeing. Yangzhou's morning tea tradition — summed up as 'mornings wrapped in soup' — typically takes one to two hours, with Fuchun Teahouse the best-known name. March–May and September–November have the most comfortable weather and are also the best season for flowers at Slender West Lake.",
+    },
+  },
+
+  "pek-wus": {
+    study: {
+    "zh-CN":
+      "北京飞武夷山，是一条从华北平原一路南下、抵达闽北山地的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，逐渐进入江南丘陵——长江以南、南岭以北的低山丘陵地带，河网密布、山地起伏，黄山正是这片丘陵最具代表性的高峰。飞机随后进入武夷山——一列北北东走向的褶皱山脉，主峰黄岗山海拔2160.8米；山中的九曲溪碧水丹山，两岸三十六峰对峙，是世界文化与自然双遗产，也是乌龙茶和红茶的发源地。",
+    "en-US":
+      "Beijing to Wuyishan flies south from the North China Plain to the hills of northern Fujian. Leaving the capital, the flight first crosses the North China Plain, built by the silt of the Yellow and Hai rivers. Heading south, it enters the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose most iconic high point is Mount Huangshan. The flight then reaches the Wuyi Mountains, a north-north-east-trending folded range whose main peak, Huanggang Mountain, rises to 2,160.8 m; within it the Nine-Bend River winds between thirty-six named peaks in a landscape of clear water and red cliffs, a UNESCO Mixed World Heritage Site and the birthplace of oolong and black tea.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到武夷山约2小时40分钟。武夷山风景名胜区是中国仅有的少数几处世界文化与自然双遗产之一，也是乌龙茶和红茶的发源地。九曲溪竹筏漂流是游览的经典方式，两岸三十六峰尽收眼底；九龙窠是现存大红袍母树所在地。功夫茶待客是本地重要礼仪，主人斟茶后客人可轻叩桌面致谢。3–5月、9–11月气候最舒适，也是采茶旺季。",
+    "en-US":
+      "Beijing to Wuyishan takes about 2 hours 40 minutes. The Mount Wuyi Scenic Area is one of the very few UNESCO Mixed World Heritage Sites in China, and the birthplace of oolong and black tea. Bamboo rafting on the Nine-Bend River is the classic way to see it, with thirty-six peaks visible along the banks; Jiulongke is home to the surviving mother trees of Da Hong Pao. Serving gongfu tea is an important local custom — tapping the table lightly after your host pours is a polite way to say thanks. March–May and September–November have the most comfortable weather and coincide with the tea-picking season.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */
