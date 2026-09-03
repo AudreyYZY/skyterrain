@@ -757,6 +757,55 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "YZY", nameZh: "张掖甘州机场", nameEn: "Zhangye Ganzhou Airport", lon: 100.675, lat: 38.802 },
     source: "张掖市中心（甘州区）38.9248,100.4499；YZY 机场：公开资料（Wikipedia）",
   },
+  // ── 中国 · Tier 2 热门城市批2 ──
+  {
+    id: "wenzhou", nameZh: "温州", nameEn: "Wenzhou", country: "china", tier: "notable", zone: "cn-east",
+    lon: 120.6550, lat: 28.0197,
+    airport: { iata: "WNZ", nameZh: "温州龙湾国际机场", nameEn: "Wenzhou Longwan Int'l", lon: 120.8519, lat: 27.9119 },
+    source: "温州市鹿城区人民政府一带 28.0197,120.6550（WebSearch：28°01′11″N 120°39′18″E）；WNZ 机场：公开资料（Wikipedia，27°54′43″N 120°51′07″E）",
+  },
+  {
+    id: "yangzhou", nameZh: "扬州", nameEn: "Yangzhou", country: "china", tier: "notable", zone: "cn-east",
+    lon: 119.4143, lat: 32.3947,
+    airport: { iata: "YTY", nameZh: "扬州泰州国际机场", nameEn: "Yangzhou Taizhou Int'l", lon: 119.7150, lat: 32.5617 },
+    source: "扬州市广陵区（文昌阁一带）32.3947,119.4143；YTY 机场：公开资料（Wikipedia，32°33′42″N 119°42′54″E，位于扬州与泰州之间，距扬州市区约30km）",
+  },
+  {
+    id: "zhuhai", nameZh: "珠海", nameEn: "Zhuhai", country: "china", tier: "notable", zone: "cn-south",
+    lon: 113.5832, lat: 22.2654,
+    airport: { iata: "ZUH", nameZh: "珠海金湾机场", nameEn: "Zhuhai Jinwan", lon: 113.3761, lat: 22.0069 },
+    source: "珠海市香洲区情侣路（渔女雕像一带）22.2654,113.5832（WebSearch：22°15′55″N 113°34′60″E）；ZUH 机场：公开资料（Wikipedia，22°00′25″N 113°22′34″E，位于金湾区，距市区约50km）",
+  },
+  {
+    id: "chengde", nameZh: "承德", nameEn: "Chengde", country: "china", tier: "notable", zone: "cn-north",
+    lon: 117.9375, lat: 40.9875,
+    airport: { iata: "CDE", nameZh: "承德普宁机场", nameEn: "Chengde Puning Airport", lon: 118.0739, lat: 41.1225 },
+    source: "承德市双桥区（避暑山庄一带）40.9875,117.9375（WebSearch：Chengde Mountain Resort 40°59′15″N 117°56′15″E）；CDE 机场：公开资料（Wikipedia，41°07′21″N 118°04′26″E）",
+  },
+  {
+    id: "wuyishan", nameZh: "武夷山", nameEn: "Wuyishan", country: "china", tier: "notable", zone: "cn-east",
+    lon: 118.0342, lat: 27.7566,
+    airport: { iata: "WUS", nameZh: "武夷山机场", nameEn: "Wuyishan Airport", lon: 118.0003, lat: 27.7008 },
+    source: "武夷山市城区（崇安街道一带）概略 27.7566,118.0342；WUS 机场：公开资料（Wikipedia，27°42′03″N 118°00′01″E）；本条为武夷山市城区，与武夷山风景区/地形注册表 wuyi 锚点（黄岗山，27.75N 117.65E）同名不同地",
+  },
+  {
+    id: "jingdezhen", nameZh: "景德镇", nameEn: "Jingdezhen", country: "china", tier: "notable", zone: "cn-east",
+    lon: 117.1831, lat: 29.2738,
+    airport: { iata: "JDZ", nameZh: "景德镇罗家机场", nameEn: "Jingdezhen Luojia Airport", lon: 117.1758, lat: 29.3386 },
+    source: "景德镇市昌江区（市政府驻地）29.2738,117.1831（WebSearch）；JDZ 机场：公开资料（Wikipedia，29°20′19″N 117°10′33″E）",
+  },
+  {
+    id: "jinghong", nameZh: "景洪", nameEn: "Jinghong", country: "china", tier: "notable", zone: "cn-southwest",
+    lon: 100.7970, lat: 22.0090,
+    airport: { iata: "JHG", nameZh: "西双版纳嘎洒国际机场", nameEn: "Xishuangbanna Gasa Int'l", lon: 100.7596, lat: 21.9739 },
+    source: "景洪市（西双版纳州府驻地）22.0090,100.7970（WebSearch：22°00′32″N 100°47′49″E）；JHG 机场：公开资料（Wikipedia，21°58′26″N 100°45′35″E，又称景洪机场）",
+  },
+  {
+    id: "wuxi", nameZh: "无锡", nameEn: "Wuxi", country: "china", tier: "notable", zone: "cn-east",
+    lon: 120.2955, lat: 31.5798,
+    airport: { iata: "WUX", nameZh: "苏南硕放国际机场", nameEn: "Sunan Shuofang Int'l (Wuxi–Suzhou)", lon: 120.429, lat: 31.494 },
+    source: "无锡市梁溪区（崇安寺一带）31.5798,120.2955（WebSearch：31°34′47″N 120°17′44″E）；WUX 机场：公开资料（Wikipedia），机场实际位于无锡新吴区硕放街道，与本项目已收录的苏州条目共用同一机场记录（苏州本身无独立商用机场），坐标沿用苏州条目数值以保持一致",
+  },
 
   // ── 日本 ──────────────────────────────────────────────
   {

@@ -2849,6 +2849,60 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "镇远楼", nameEn: "Zhenyuan Tower", lon: 100.4499, lat: 38.9248, kind: "landmark" },
     { nameZh: "黑河湿地国家级自然保护区", nameEn: "Heihe Wetland National Nature Reserve", lon: 100.48, lat: 39.05, kind: "nature" },
   ],
+
+  // ── 中国 · Tier 2 热门城市批2 ──
+  wenzhou: [
+    { nameZh: "江心屿", nameEn: "Jiangxin Island", lon: 120.6319, lat: 28.0300, kind: "nature" },
+    { nameZh: "五马街历史文化街区", nameEn: "Wuma Street", lon: 120.6650, lat: 28.0150, kind: "district" },
+    { nameZh: "雁荡山", nameEn: "Yandang Mountain", lon: 120.6500, lat: 28.3400, kind: "nature" },
+    { nameZh: "温州博物馆", nameEn: "Wenzhou Museum", lon: 120.7000, lat: 28.0000, kind: "landmark" },
+  ],
+
+  yangzhou: [
+    { nameZh: "瘦西湖", nameEn: "Slender West Lake", lon: 119.4175, lat: 32.4100, kind: "nature" },
+    { nameZh: "个园", nameEn: "Ge Garden", lon: 119.4350, lat: 32.4050, kind: "landmark" },
+    { nameZh: "何园", nameEn: "He Garden", lon: 119.4450, lat: 32.3950, kind: "landmark" },
+    { nameZh: "中国大运河博物馆", nameEn: "China Grand Canal Museum", lon: 119.4450, lat: 32.3700, kind: "landmark" },
+  ],
+
+  zhuhai: [
+    { nameZh: "珠海渔女（情侣路）", nameEn: "Zhuhai Fisher Girl Statue (Lovers' Road)", lon: 113.5832, lat: 22.2654, kind: "landmark" },
+    { nameZh: "长隆海洋王国", nameEn: "Chimelong Ocean Kingdom (Hengqin)", lon: 113.5461, lat: 22.1189, kind: "landmark" },
+    { nameZh: "港珠澳大桥珠海口岸", nameEn: "Hong Kong–Zhuhai–Macao Bridge Zhuhai Port", lon: 113.5589, lat: 22.1089, kind: "transport" },
+  ],
+
+  chengde: [
+    { nameZh: "避暑山庄", nameEn: "Chengde Mountain Resort", lon: 117.9375, lat: 40.9875, kind: "landmark" },
+    { nameZh: "普宁寺", nameEn: "Puning Temple", lon: 117.9550, lat: 41.0050, kind: "landmark" },
+    { nameZh: "普陀宗乘之庙", nameEn: "Putuo Zongcheng Temple", lon: 117.9580, lat: 41.0080, kind: "landmark" },
+    { nameZh: "磬锤峰", nameEn: "Sledgehammer Peak (Bangchui Mountain)", lon: 118.0000, lat: 40.9800, kind: "nature" },
+  ],
+
+  wuyishan: [
+    { nameZh: "九曲溪", nameEn: "Nine-Bend River", lon: 118.0000, lat: 27.6800, kind: "nature" },
+    { nameZh: "九龙窠大红袍景区", nameEn: "Jiulongke Da Hong Pao Mother Trees", lon: 117.9800, lat: 27.7300, kind: "landmark" },
+    { nameZh: "天游峰", nameEn: "Tianyou Peak", lon: 117.9800, lat: 27.7000, kind: "nature" },
+  ],
+
+  jingdezhen: [
+    { nameZh: "陶溪川文创街区", nameEn: "Taoxichuan Ceramic Art Avenue", lon: 117.2000, lat: 29.2800, kind: "district" },
+    { nameZh: "古窑民俗博览区", nameEn: "Ancient Kiln Folk Custom Museum", lon: 117.1700, lat: 29.2600, kind: "landmark" },
+    { nameZh: "中国陶瓷博物馆", nameEn: "China Ceramics Museum", lon: 117.1900, lat: 29.3000, kind: "landmark" },
+    { nameZh: "御窑厂国家考古遗址公园", nameEn: "Imperial Kiln Museum & Archaeological Site", lon: 117.2050, lat: 29.2930, kind: "landmark" },
+  ],
+
+  jinghong: [
+    { nameZh: "野象谷", nameEn: "Wild Elephant Valley", lon: 100.8420, lat: 22.1750, kind: "nature" },
+    { nameZh: "曼听公园", nameEn: "Manting Park", lon: 100.8150, lat: 21.9950, kind: "landmark" },
+    { nameZh: "傣族园（橄榄坝）", nameEn: "Dai Minority Park (Ganlanba)", lon: 100.9900, lat: 21.9500, kind: "district" },
+  ],
+
+  wuxi: [
+    { nameZh: "鼋头渚", nameEn: "Yuantouzhu (Turtle Head Isle)", lon: 120.1167, lat: 31.5167, kind: "nature" },
+    { nameZh: "灵山大佛", nameEn: "Lingshan Giant Buddha", lon: 120.0864, lat: 31.4256, kind: "landmark" },
+    { nameZh: "惠山古镇", nameEn: "Huishan Ancient Town", lon: 120.2856, lat: 31.5814, kind: "district" },
+    { nameZh: "清名桥历史文化街区", nameEn: "Qingming Bridge Historic District", lon: 120.3072, lat: 31.5647, kind: "district" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {

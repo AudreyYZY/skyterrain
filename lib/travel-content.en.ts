@@ -6840,4 +6840,124 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "June–September is when the Danxia colours are most vivid, and also the rainy season, with occasional afternoon thunderstorms — light around sunrise and sunset suits photography best. The sun is strong and the air dry year-round, so use sun protection and carry water; the day–night temperature swing is large, so pack a layer even for summer nights.",
   },
+
+  wenzhou: {
+    identity:
+      "Wenzhou is a prefecture-level city in Zhejiang, a port city on the south-eastern coast with a municipal population of about 9.76 million (2023). It's known nationwide for the 'Wenzhou model' of private enterprise — the city has had individually run businesses since the Song dynasty, among the earliest in China, and is considered a birthplace of the country's private-sector economy. It's also a major hometown of overseas Chinese, with an estimated 2.45 million Wenzhou natives running businesses elsewhere in China and across more than 130 countries.",
+    layout:
+      "Lucheng District is the old-town core, strung along the Ou River; Jiangxin Island sits mid-river and has long served as a shipping landmark and a religious site. Longwan and Ouhai districts are the modern industrial and port-expansion areas. Yandang Mountain, in Yueqing (part of greater Wenzhou), is a well-known mountain scenic area some distance from the centre.",
+    gettingAround:
+      "Longwan International Airport is in the south-east of the city. Wenzhou sits on the Ningbo–Taizhou–Wenzhou and Jinhua–Wenzhou rail lines, about 2 hours from Hangzhou and about 3 hours from Shanghai; the city has buses and taxis. The climate is subtropical monsoon with distinct seasons — summers are hot and prone to typhoons, winters mild with little snow.",
+    culture:
+      "Wenzhounese, a Wu dialect, is widely considered one of the hardest Chinese dialects for outsiders to understand; Mandarin is used everywhere. Wenzhou people are known for a strong commercial tradition, valuing enterprise and a willingness to take risks. Seafood here is prized 'freshly killed and cooked' — it's usually priced and weighed by the jin (500 g) at the table, so it's worth confirming the unit price before ordering to avoid surprises on the bill. No tipping.",
+    seeAndDo:
+      "Jiangxin Island (a mid-river islet in the Ou River with twin pagodas and Jiangxin Temple, long a subject for poets and scholars); the Wuma Street historic and cultural district (the old town's core commercial street, with preserved early-20th-century arcade buildings); Yandang Mountain (a UNESCO Global Geopark famous for its striking peaks, waterfalls and caves, whose main summit, Baigang Peak, rises to 1,057 m).",
+    whenAndTips:
+      "April–May and September–November have the most comfortable weather; July–September is typhoon season, so check weather warnings before travelling, as coastal plans can be affected. Yandang Mountain is a fair drive from the city centre, so plan for half a day to a full day there.",
+  },
+
+  yangzhou: {
+    identity:
+      "Yangzhou is a prefecture-level city in Jiangsu, a historic city at the point where the Yangtze River meets the Grand Canal, with a municipal population of about 4.59 million (2023). It's one of the birthplaces of Huaiyang cuisine, and UNESCO named it a 'City of Gastronomy' in 2019; classical gardens, salt-merchant history and Grand Canal heritage together define the city's character.",
+    layout:
+      "Guangling District is the old-town core, with traditional street layouts preserved around the Wenchang Pavilion and Slender West Lake; Qing-dynasty salt-merchant private gardens such as Ge Garden and He Garden are scattered in and around the old town. The area near Sanwan Wetland Park is home to the China Grand Canal Museum, which lays out more than two thousand years of canal history; the western New City is the recent direction of urban expansion.",
+    gettingAround:
+      "Yangzhou Taizhou International Airport sits between Yangzhou and Taizhou, about 30 km from central Yangzhou, with airport shuttle buses. Yangzhou is close to the Beijing–Shanghai high-speed line, about an hour from Nanjing and about 2.5 hours from Shanghai; the city has buses and taxis, and the old town is well suited to walking or cycling.",
+    culture:
+      "Jianghuai Mandarin (the Yangzhou dialect) is spoken, with Mandarin widely used. Yangzhou's morning tea is an important local dining tradition, summed up in the saying 'mornings wrapped in soup, evenings wrapped in water' (pairing morning tea with evening bathhouse visits) — a proper sitting typically takes one to two hours, and Fuchun Teahouse is the best-known name. The local tradition of the 'three knives' (kitchen knife, razor and pedicure knife) reflects a long history of refined personal-service trades. No tipping.",
+    seeAndDo:
+      "Slender West Lake (the classic pairing of a Qing-dynasty salt-merchant garden with a natural lake, with the Five-Pavilion Bridge and White Pagoda as its landmarks); Ge Garden (a Qing salt-merchant garden famous for its four-season rockery); He Garden (a late-Qing garden blending Chinese and Western architectural elements); the China Grand Canal Museum (a major national museum tracing the canal's history).",
+    whenAndTips:
+      "March–May and September–November have the most comfortable weather and are also the best season for flowers at Slender West Lake (viburnum in April, osmanthus in autumn). To try morning tea properly, avoid weekend crowds — weekday mornings are quieter and more relaxed.",
+  },
+
+  zhuhai: {
+    identity:
+      "Zhuhai is a prefecture-level city in Guangdong, one of China's earliest Special Economic Zones (established 1980), bordering Macao, with a municipal population of about 2.48 million (2022). It's known for a liveable, green coastal setting, and Lovers' Road along the waterfront is the city's best-known image; it's also a key node linking the Guangdong–Hong Kong–Macao Greater Bay Area to Hong Kong and Macao.",
+    layout:
+      "Xiangzhou District is the main urban core, with Lovers' Road running more than 30 km along Xianglu Bay, linking several waterfront sights. The Gongbei checkpoint is the main land crossing into Macao; the Hengqin Guangdong–Macao In-Depth Cooperation Zone lies in the city's south, separated from Macao only by a narrow waterway and a major focus of recent development. Jinwan District, in the south-west, is home to the airport and newer industrial areas.",
+    gettingAround:
+      "Jinwan Airport is about 50 km from the city centre, reached by airport shuttle bus or ride-hailing. Zhuhai connects directly to Hong Kong via the Hong Kong–Zhuhai–Macao Bridge, and to Macao on foot or by car via the Gongbei or Hengqin checkpoints; the city has buses and light rail on some routes. The climate is subtropical monsoon, with hot, humid, typhoon-prone summers and mild, dry winters.",
+    culture:
+      "Cantonese is spoken, with Mandarin widely used. As a Special Economic Zone, Zhuhai has a noticeably more relaxed pace than Guangzhou or Shenzhen, and is often considered one of the more laid-back cities in the Greater Bay Area. Crossing into Macao requires a valid travel document and passing through a checkpoint, which can mean long queues during holidays, so build in extra time. The Cantonese yum cha custom of 'a pot of tea, two small dishes' is common here too, and tapping the table lightly with two fingers when your cup is refilled is a familiar silent way of saying thanks. No tipping.",
+    seeAndDo:
+      "The Zhuhai Fisher Girl statue (the Lovers' Road landmark, a granite sculpture completed in 1982 and the city's emblem); Lovers' Road (a scenic coastal drive with views toward Macao and the mouth of the Pearl River); Chimelong Ocean Kingdom (in Hengqin, a large marine-themed park); the Hong Kong–Zhuhai–Macao Bridge Zhuhai Port (a vantage point for the bridge linking the three cities).",
+    whenAndTips:
+      "October–March has the most comfortable weather and fewer typhoons; May–September is typhoon season, so check warnings before travelling. A day trip into Macao is easy, but keep an eye on checkpoint queue times and carry your travel documents; crossings get busy on public holidays, so it's worth avoiding peak times.",
+  },
+
+  chengde: {
+    identity:
+      "Chengde is a prefecture-level city in Hebei, a historic town set among the Yan Mountains, with a municipal population of about 3.30 million (2023). Under the Qing dynasty it served as the imperial court's summer retreat and autumn hunting ground; the Mountain Resort and its surrounding temples were named a UNESCO World Heritage Site in 1994 and together form the largest surviving imperial garden in China.",
+    layout:
+      "Shuangqiao District is the main urban area, with the roughly 564-hectare Mountain Resort at its geographic and historical centre. In the hills north of the resort stand a cluster of Tibetan Buddhist temples — including Puning Temple and the Putuo Zongcheng Temple — collectively known as the 'Eight Outer Temples'; Sledgehammer Peak, along the Wulie River, is another notable natural landmark.",
+    gettingAround:
+      "Puning Airport, in the south of the city, has relatively limited flight schedules. Chengde is near the Beijing–Shenyang high-speed line, about 2 hours from Beijing, and most visitors travel by high-speed rail or by car. The city has buses and taxis, and the main sights sit fairly close together, well suited to a one- or two-day visit. The climate is temperate continental monsoon, set deep in the Yan Mountains, with cool summers that have long made it a favoured retreat, and long, cold winters.",
+    culture:
+      "Jilu Mandarin (the Chengde dialect) is spoken, with Mandarin widely used. Puning Temple and the other Outer Temples are active Gelug-school Tibetan Buddhist monasteries with resident monks; visitors should dress appropriately, stay quiet, avoid touching statues or ritual objects, and follow the marked clockwise route through worship areas. Local food blends Manchu and Han traditions, with wild-game hotpot a local specialty. No tipping.",
+    seeAndDo:
+      "The Mountain Resort (the largest surviving Qing-dynasty imperial garden, combining lake, plain and mountain zones that echo both Jiangnan and northern-frontier scenery); Puning Temple (one of the Outer Temples, home to a 22.28 m gilded wooden statue of the thousand-armed, thousand-eyed Avalokiteshvara, among the largest of its kind); the Putuo Zongcheng Temple (built in the style of Lhasa's Potala Palace, often called the 'Little Potala'); Sledgehammer Peak (an isolated rock-pillar peak along the Wulie River and a symbol of the city).",
+    whenAndTips:
+      "June–September is cool and the traditional peak season for escaping summer heat; winters are cold, so dress warmly. The Mountain Resort and the Outer Temples are spread across separate areas, so plan at least two days; distances inside the resort itself are considerable, and an electric shuttle cart is a reasonable option.",
+  },
+
+  wuyishan: {
+    identity:
+      "Wuyishan is a county-level city in Fujian, a tourist city in the hills of northern Fujian, with a municipal population of about 260,000 (2023). The Mount Wuyi Scenic Area within it was named a UNESCO Mixed World Heritage Site in 1999, one of the very few such 'dual heritage' sites in China, and it's also the birthplace of oolong and black tea.",
+    layout:
+      "The Chong'an area forms the urban core; the Mount Wuyi Scenic Area lies just south of the city, where the Nine-Bend River winds between thirty-six named peaks facing each other across its banks. The area around Xingcun township is the heart of the local tea industry, the main growing region for Wuyi rock tea, of which Da Hong Pao is the best known.",
+    gettingAround:
+      "Wuyishan Airport is in the south of the city. Wuyishan North station is on the Hefu high-speed line: about 2 hours to Fuzhou and about 4 hours to Nanjing, and most visitors travel by high-speed rail. The city has buses and taxis; reaching the scenic area usually means hiring a car or taking a scenic shuttle. The climate is mid-subtropical monsoon with distinct seasons, rainy summers, and a fairly large day–night temperature swing in the hills.",
+    culture:
+      "A local Northern Fujian dialect is spoken, with Mandarin widely used. Serving gongfu tea is an important local custom: when a host pours your tea, tapping the table lightly with your index and middle fingers together is the customary silent way to say thanks. Within the scenic area the exposed rock and moss are fragile and easily damaged underfoot, so stay on boardwalks and marked paths, and never climb the rock faces or step on the moss along the stream banks. No tipping.",
+    seeAndDo:
+      "Bamboo rafting on the Nine-Bend River (about 9.5 km, riding a traditional bamboo raft downstream past the thirty-six peaks on either bank — the classic way to see Wuyishan); the Jiulongke Da Hong Pao scenic area (home to the six surviving mother trees of Da Hong Pao and the birthplace of Wuyi rock-tea culture); Tianyou Peak (the mountain's best-known viewpoint, with a panorama of the Nine-Bend River from the summit).",
+    whenAndTips:
+      "March–May and September–November have the most comfortable weather and coincide with the tea-picking season, when it's worth learning a bit about how the tea is made. Book the bamboo rafting in advance, as tickets sell out fast in peak season; afternoon thunderstorms are common in summer, so carry rain gear.",
+  },
+
+  jingdezhen: {
+    identity:
+      "Jingdezhen is a prefecture-level city in Jiangxi, a historic city on the Chang River, with a municipal population of about 1.62 million (2023). It has more than 2,000 years of pottery-making history, over 1,000 years as an official kiln centre and more than 600 years as an imperial kiln city; Song-dynasty emperor Zhenzong granted it his reign name 'Jingde' as its own, a name it has kept ever since, and it is widely known as the 'Porcelain Capital' with over a thousand years of continuous production.",
+    layout:
+      "Zhushan District is the old-town core, where the Imperial Kiln site and the traditional porcelain-making quarter retain their historic layout; Changjiang District is the seat of the municipal government. The Taoxichuan creative district was converted from the former state-run Cosmos Porcelain Factory and is the newest landmark of the ceramics-creative industry; outlying counties such as Leping and Fuliang preserve traditional porcelain-making villages.",
+    gettingAround:
+      "Luojia Airport is in the north of the city, with flights to Beijing, Shanghai, Guangzhou, Shenzhen and other cities. Jingdezhen North station is on the Jiujiang–Jingdezhen–Quzhou and Changjiang–Jingdezhen–Huangshan high-speed lines, about 1.5 hours from Nanchang; the city has buses and taxis, and the old core is well suited to walking.",
+    culture:
+      "A local Gan dialect (Jingdezhen speech) is spoken, with Mandarin widely used. Ceramics sit at the centre of local life — when visiting a workshop or an antiques market to watch production or hunt for pieces, don't handle unglazed clay or finished ware without permission, since it's fragile and much of it is one-of-a-kind handmade work. A traditional local saying is 'fine food deserves fine porcelain,' reflecting how tableware and cuisine are paired when hosting guests. No tipping.",
+    seeAndDo:
+      "Taoxichuan Ceramic Art Avenue (converted from the former state-run Cosmos Porcelain Factory, keeping 22 old workshop buildings, kilns, chimneys and other industrial heritage, now the newest landmark of the ceramics-creative scene); the Ancient Kiln Folk Custom Museum (showcasing the world's oldest surviving porcelain production line, with reconstructed Ming and Qing imperial and civilian kilns); the Imperial Kiln Museum & Archaeological Site (the Ming- and Qing-dynasty official kiln site, where large quantities of discarded imperial porcelain shards have been excavated); the China Ceramics Museum (a comprehensive survey of Jingdezhen's ceramic history).",
+    whenAndTips:
+      "March–May and September–November have the most comfortable weather. Taoxichuan hosts creative markets on weekends and holidays, a good place to find original work from local studios; the Ancient Kiln area lets visitors try wheel-throwing and other traditional techniques on site, and it's worth booking hands-on sessions ahead of time.",
+  },
+
+  jinghong: {
+    identity:
+      "Jinghong is the seat of Xishuangbanna Dai Autonomous Prefecture in Yunnan, a border city on the Lancang (Mekong) River, with a municipal population of about 670,000 (2024). Sitting south of the Tropic of Cancer, it's one of the few areas in China with a tropical rainforest climate, home to the Dai, Hani, Jino and other of the region's 13 long-established ethnic groups, and a key gateway city toward South-east Asia.",
+    layout:
+      "The urban area sits astride the Lancang River, with the main commercial and administrative district on the north bank. The area around Manting Park preserves the look of a traditional Dai village; nature reserves such as Wild Elephant Valley lie toward Menghai township, and Ganlanba (the Dai Minority Park) south-east of the city is a cluster of traditional Dai settlements.",
+    gettingAround:
+      "Xishuangbanna Gasa International Airport, in the south-west of the city, is the main gateway to the rest of China and to South-east Asia, with flights to Kunming, Chengdu and other cities. Jinghong is about 560 km from Kunming, reachable by air or long-distance bus, with no high-speed rail link yet. The city has buses and taxis; reaching Wild Elephant Valley or the Dai Minority Park usually means hiring a car. The climate is tropical monsoon, with a clearly defined dry season (November–April) and wet season (May–October).",
+    culture:
+      "Dai and South-western Mandarin are spoken, with Mandarin widely used. Buddhist temples are common here, in an area of Theravada Buddhism — visitors should remove their shoes and dress appropriately when entering a temple, and never touch a young monk's head. In a traditional Dai bamboo house, remove your shoes outside the door, and once inside never step over the hearth, sit on the threshold, or sit directly above the hearth. The Dai New Year Water-Splashing Festival (roughly mid-April on the solar calendar) is the region's most important celebration — it's a blessing ritual, not simply horseplay, and visitors should follow local custom during it. No tipping.",
+    seeAndDo:
+      "Wild Elephant Valley (one of the few nature reserves in China where wild Asian elephants can be seen up close); Manting Park (its Dai name means 'garden of the soul,' with traditional temple buildings and tropical plantings preserved); the Dai Minority Park (Ganlanba, an open-air cluster of five Dai villages where visitors can experience everyday Dai life and bamboo-house architecture).",
+    whenAndTips:
+      "The dry season, November–April, has the most comfortable weather; the wet season (May–October) often brings afternoon showers but also a welcome drop in temperature. The mid-April Water-Splashing Festival draws citywide participation and is the best time to experience Dai culture, though hotels and transport get especially tight, so book well ahead.",
+  },
+
+  wuxi: {
+    identity:
+      "Wuxi is a prefecture-level city in Jiangsu, a historic city on the northern shore of Lake Tai, with a municipal population of about 7.50 million (2023). Its name, meaning 'without tin,' is said to come from the exhaustion of ancient local tin mines; it was also an important birthplace of China's early national industry, and Lake Tai scenery and Jiangnan-style gardens are today its most representative attractions.",
+    layout:
+      "Liangxi District is the old-town core, with the traditional commercial-quarter layout preserved around Chong'an Temple. The Taihu New City and Liuhu areas are the recent direction of urban expansion. Yuantouzhu, a peninsula on the northern shore of Lake Tai, is the classic spot for taking in the lake's scenery, while Huishan Ancient Town preserves a cluster of Ming- and Qing-dynasty ancestral halls, representative of Jiangnan clan-hall culture.",
+    gettingAround:
+      "Sunan Shuofang International Airport (also known as the Wuxi–Suzhou airport) sits in Wuxi's eastern Xinwu District, about 20 km from the city centre, with airport shuttle buses — the Suzhou entry already covered in this project shares the very same airport, since the two cities are in practice served by one field. Wuxi is on the Shanghai–Nanjing and Beijing–Shanghai high-speed lines, about 45 minutes from Shanghai and about an hour from Nanjing. The city has light rail, buses and Lake Tai boat tours. The climate is subtropical monsoon with distinct seasons, a plum-rain season in June, and hot, humid summers.",
+    culture:
+      "A local Wu dialect (Wuxi speech) is spoken, with Mandarin widely used. Wuxi cuisine leans sweet — braised spare ribs (jiang paigu) are the signature dish, and locals themselves joke that the sweetness is 'off the charts,' so first-time visitors might want to brace for it. Many of the halls in Huishan Ancient Town are historic clan properties; visitors should stay quiet and avoid entering ancestral areas not open to the public. No tipping.",
+    seeAndDo:
+      "Yuantouzhu (Turtle Head Isle, the signature Lake Tai scenic spot, with cherry blossoms a highlight each spring); the Lingshan Giant Buddha (an 88 m bronze standing statue of Sakyamuni, a major Buddhist landmark on the lakeshore); Huishan Ancient Town (with more ancestral halls, of more different types, than anywhere else in China, preserving a complete cluster of Jiangnan clan-hall architecture); the Qingming Bridge historic district (traditional houses and stone bridges along the old canal, with night boat tours available).",
+    whenAndTips:
+      "Late March through April is cherry-blossom season at Yuantouzhu, the busiest time of year, so it's worth booking tickets ahead to beat the crowds. March–May and September–November have the most comfortable weather; June's plum-rain season is damp and wet.",
+  },
 };
