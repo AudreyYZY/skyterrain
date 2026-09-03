@@ -1,0 +1,26 @@
+{
+  "id": "kmg-jhg",
+  "name": "昆明 — 景洪",
+  "nameEn": "Kunming — Jinghong",
+  "description": "云贵高原 · 哀牢山 · 澜沧江河谷 · 西双版纳",
+  "descriptionEn": "Yunnan–Guizhou Plateau · Ailao Mountains · Lancang (Mekong) River valley · Xishuangbanna",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "祥鹏航空",
+    "airlineEn": "Lucky Air",
+    "flightNo": "8L9285",
+    "aircraft": "Airbus A320",
+    "depIata": "KMG",
+    "arrIata": "JHG",
+    "durationMin": 55
+  },
+  "cruiseHeight": 7800,
+  "waypoints": [
+    { "kind": "city", "id": "kmg", "name": "昆明长水", "nameEn": "Kunming Changshui", "lat": 25.102, "lon": 102.929, "airport": true },
+    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
+    { "kind": "feature", "name": "哀牢山", "nameEn": "Ailao Mountains", "lon": 101.0, "lat": 24.0 },
+    { "kind": "feature", "name": "澜沧江河谷", "nameEn": "Lancang (Mekong) River valley", "lon": 100.8, "lat": 22.5 },
+    { "kind": "city", "id": "jhg", "name": "西双版纳嘎洒", "nameEn": "Xishuangbanna Gasa", "lat": 21.9739, "lon": 100.7596, "airport": true }
+  ]
+}

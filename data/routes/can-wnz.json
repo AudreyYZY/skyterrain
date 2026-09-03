@@ -1,0 +1,25 @@
+{
+  "id": "can-wnz",
+  "name": "广州 — 温州",
+  "nameEn": "Guangzhou — Wenzhou",
+  "description": "南岭 · 武夷山 · 东南沿海丘陵",
+  "descriptionEn": "Nanling Mts · Wuyi Mountains · Southeast coastal hills",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3567",
+    "aircraft": "Boeing 737-800",
+    "depIata": "CAN",
+    "arrIata": "WNZ",
+    "durationMin": 125
+  },
+  "cruiseHeight": 9800,
+  "waypoints": [
+    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
+    { "kind": "terrain", "terrainId": "nanling" },
+    { "kind": "terrain", "terrainId": "wuyi" },
+    { "kind": "city", "id": "wnz", "name": "温州龙湾", "nameEn": "Wenzhou Longwan", "lat": 27.9119, "lon": 120.8519, "airport": true }
+  ]
+}

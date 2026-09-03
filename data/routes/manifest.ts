@@ -45,6 +45,13 @@ import pvgDat from "./pvg-dat.json" with { type: "json" };
 import shaLya from "./sha-lya.json" with { type: "json" };
 import xiyYzy from "./xiy-yzy.json" with { type: "json" };
 import pekTxn from "./pek-txn.json" with { type: "json" };
+// 中国 · 批 7（Tier 2 热门城市批2：景洪/珠海/景德镇/温州/扬州/武夷山）
+import kmgJhg from "./kmg-jhg.json" with { type: "json" };
+import pekZuh from "./pek-zuh.json" with { type: "json" };
+import shaJdz from "./sha-jdz.json" with { type: "json" };
+import canWnz from "./can-wnz.json" with { type: "json" };
+import pekYty from "./pek-yty.json" with { type: "json" };
+import pekWus from "./pek-wus.json" with { type: "json" };
 // 日本国内
 import hndItm from "./hnd-itm.json" with { type: "json" };
 import hndCts from "./hnd-cts.json" with { type: "json" };
@@ -324,6 +331,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   shaLya,
   xiyYzy,
   pekTxn,
+  kmgJhg,
+  pekZuh,
+  shaJdz,
+  canWnz,
+  pekYty,
+  pekWus,
   hndItm,
   hndCts,
   hndFuk,

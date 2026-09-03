@@ -1,0 +1,26 @@
+{
+  "id": "pek-wus",
+  "name": "北京 — 武夷山",
+  "nameEn": "Beijing — Wuyishan",
+  "description": "华北平原 · 江南丘陵 · 武夷山丹霞",
+  "descriptionEn": "North China Plain · Jiangnan Hills · Wuyi Mountains Danxia landforms",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "厦门航空",
+    "airlineEn": "Xiamen Airlines",
+    "flightNo": "MF8122",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PEK",
+    "arrIata": "WUS",
+    "durationMin": 160
+  },
+  "cruiseHeight": 10200,
+  "waypoints": [
+    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
+    { "kind": "terrain", "terrainId": "north-china" },
+    { "kind": "terrain", "terrainId": "jiangnan-hills" },
+    { "kind": "terrain", "terrainId": "wuyi" },
+    { "kind": "city", "id": "wus", "name": "武夷山", "nameEn": "Wuyishan Airport", "lat": 27.7008, "lon": 118.0003, "airport": true }
+  ]
+}
