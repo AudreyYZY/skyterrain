@@ -76,6 +76,7 @@ import melAdl from "./mel-adl.json" with { type: "json" };
 import adlAyq from "./adl-ayq.json" with { type: "json" };
 import bneDrw from "./bne-drw.json" with { type: "json" };
 import melHba from "./mel-hba.json" with { type: "json" };
+import sydAvv from "./syd-avv.json" with { type: "json" };
 // 新西兰国内
 import aklWlg from "./akl-wlg.json" with { type: "json" };
 import aklChc from "./akl-chc.json" with { type: "json" };
@@ -358,6 +359,7 @@ export const ALL_ROUTES: FlightRoute[] = [
   adlAyq,
   bneDrw,
   melHba,
+  sydAvv,
   aklWlg,
   aklChc,
   wlgChc,
