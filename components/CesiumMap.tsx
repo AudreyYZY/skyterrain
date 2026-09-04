@@ -122,7 +122,6 @@ const TERRAIN_VIEW_HEIGHTS: Record<string, number> = {
   grassland: 12000,       // 草原：中等高度看开阔
   coast: 6000,            // 海岸：近距离看海蚀地貌
   inselberg: 5000,        // 岛山：贴近看单体
-  settlement: 5000,       // 绿洲聚落：近距离观看
 };
 
 function heightCacheKey(lon: number, lat: number): string {

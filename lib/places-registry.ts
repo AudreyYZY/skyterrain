@@ -806,6 +806,35 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "WUX", nameZh: "苏南硕放国际机场", nameEn: "Sunan Shuofang Int'l (Wuxi–Suzhou)", lon: 120.429, lat: 31.494 },
     source: "无锡市梁溪区（崇安寺一带）31.5798,120.2955（WebSearch：31°34′47″N 120°17′44″E）；WUX 机场：公开资料（Wikipedia），机场实际位于无锡新吴区硕放街道，与本项目已收录的苏州条目共用同一机场记录（苏州本身无独立商用机场），坐标沿用苏州条目数值以保持一致",
   },
+  // ── 中国 · 南疆绿洲聚落（原地形注册表 settlement 分类，2026-09-04 迁移至旅游模式）──
+  {
+    id: "kashgar", nameZh: "喀什", nameEn: "Kashgar", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 75.99, lat: 39.47,
+    airport: { iata: "KHG", nameZh: "喀什徕宁国际机场", nameEn: "Kashgar Laining Int'l", lon: 76.02, lat: 39.543 },
+    source: "喀什市中心（艾提尕尔清真寺一带）39.47,75.99（沿用原地形注册表 kashgar 锚点坐标）；KHG 机场：Wikipedia（39°32′35″N 76°01′12″E），已有 urc-khg 国内航线（本项目 data/routes/urc-khg.json）",
+  },
+  {
+    id: "hotan", nameZh: "和田", nameEn: "Hotan", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 79.93, lat: 37.11,
+    airport: { iata: "HTN", nameZh: "和田昆冈机场", nameEn: "Hotan Kungang Airport", lon: 79.865, lat: 37.039 },
+    source: "和田市中心 37.11,79.93（沿用原地形注册表 hotan 锚点坐标）；HTN 机场：Wikipedia（37°02′19″N 79°51′54″E，位于市区西南约11.5km），已有 urc-htn 国内航线（本项目 data/routes/urc-htn.json）",
+  },
+  {
+    id: "turpan", nameZh: "吐鲁番", nameEn: "Turpan", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 89.18, lat: 42.95,
+    airport: { iata: "TLQ", nameZh: "吐鲁番交河机场", nameEn: "Turpan Jiaohe Airport", lon: 89.1006, lat: 43.0306 },
+    source: "吐鲁番市高昌区中心 42.95,89.18（沿用原地形注册表 turpan-city 锚点坐标）；TLQ 机场：Wikipedia（43°01′50″N 89°06′02″E，位于市区西北约10km，2010年通航，2019年与乌鲁木齐天山机场合并运营管理，2025年客运量约88.7万人次，是在运营的商用机场，与乌鲁木齐、兰州等地有航班），WebSearch 未找到吐鲁番—乌鲁木齐/其它城市的固定商业直飞航线可稳定核实班次，本轮暂不收录航线",
+  },
+  {
+    id: "bachu", nameZh: "巴楚", nameEn: "Bachu", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 78.55, lat: 39.79,
+    source: "巴楚县城中心 39.79,78.55（沿用原地形注册表 bachu 锚点坐标）；WebSearch 核实巴楚本身无民用机场，最近机场为图木舒克唐王城机场（TWC，属图木舒克市/新疆生产建设兵团管辖，直线距离约50km），巴楚有南疆铁路客运车站（喀什—巴楚约5小时）及国道/高速公路（G3012/315国道，距喀什约2小时车程），未收录航线（无可核实的商业航班）",
+  },
+  {
+    id: "maigaiti", nameZh: "麦盖提", nameEn: "Makit", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 77.65, lat: 38.9,
+    source: "麦盖提县城中心 38.9,77.65（沿用原地形注册表 maigaiti 锚点坐标）；WebSearch 核实麦盖提本身无民用机场、无铁路直达（巴楚—麦盖提—莎车铁路截至2026年仍在规划中，尚未通车），经麦喀高速（S16，全长约178km，约2–2.5小时车程）与喀什公路相连，未收录航线（无可核实的商业航班）",
+  },
 
   // ── 日本 ──────────────────────────────────────────────
   {

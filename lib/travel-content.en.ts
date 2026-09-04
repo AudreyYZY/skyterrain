@@ -6960,4 +6960,80 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Late March through April is cherry-blossom season at Yuantouzhu, the busiest time of year, so it's worth booking tickets ahead to beat the crowds. March–May and September–November have the most comfortable weather; June's plum-rain season is damp and wet.",
   },
+
+  // ── China · southern Xinjiang oasis towns (migrated from the retired terrain `settlement` category, 2026-09-04) ──
+  kashgar: {
+    identity:
+      "Kashgar (Kashi) is the seat of Kashgar Prefecture in Xinjiang, at the far western edge of the Tarim Basin on the eastern flank of the Pamirs, with a 2020-census population of about 780,000. It was the gateway where the southern and central Silk Road met before crossing the Pamir into Central and South Asia — a trading city for over two thousand years, part of the kingdom of Shule in Han times. It is mainly Uyghur today and is southern Xinjiang's economic and cultural centre.",
+    layout:
+      "Kashgar has an old town and a new town. The old town (Kashgar Ancient City) is centred on the Id Kah Mosque, with the Gaotai (\"high platform\") quarter preserving traditional earthen housing; the new town around it holds government, commerce and modern housing. Id Kah Square is the city's landmark. The Pamir foothills rise not far to the west, and oasis farmland at the edge of the Taklamakan lies to the east and south.",
+    gettingAround:
+      "Kashgar Laining International Airport (KHG) is in the north-west of the city, with airport shuttle buses. China Southern runs a Kashgar–Ürümqi \"air shuttle\" with multiple daily flights, plus direct flights to Beijing, Shanghai, Guangzhou and other cities. Kashgar railway station is among the westernmost stations on China's rail network, with trains toward Ürümqi, Hotan, Xi'an and Chengdu. Xinjiang keeps Beijing time officially, but daily life follows the sun, so shops and restaurants typically open and serve meals about two hours later than in eastern China. The climate is warm-temperate continental and arid, with large day–night swings and frequent windblown dust.",
+    culture:
+      "A multi-ethnic city, mainly Uyghur, where Uyghur and Mandarin are both spoken and Islam is the dominant faith. Dress modestly when entering the Id Kah Mosque and other religious sites (no shorts or short skirts; women may want a shawl on hand), and the mosque's interior is closed to visitors during prayer times. Much of the old town is people's actual homes, so ask before photographing residents. Most restaurants are halal; avoid bringing non-halal food or alcohol inside. No tipping.",
+    seeAndDo:
+      "The Old Town and Gaotai quarter (one of the best-preserved traditional Uyghur earthen-housing districts); the Id Kah Mosque (one of China's largest mosques, founded in the 15th century); the Kashgar International Grand Bazaar (everyday goods and handicrafts); the Kashgar livestock bazaar (Xinjiang's largest livestock market, open only on Sundays, with an impressive scale of trading); Lake Karakul out toward the Pamirs (a long return drive — plan for a full day).",
+    whenAndTips:
+      "August to October is mild with fruit in season, the most comfortable time to visit. The livestock bazaar runs only on Sundays, so time a visit for that day to see it at its busiest. The sun and UV are strong, so use sun protection; being deep inland, day–night temperature swings are large even in summer, so pack a light jacket.",
+  },
+
+  hotan: {
+    identity:
+      "Hotan is the seat of Hotan Prefecture in Xinjiang, at the northern foot of the Kunlun and the southern edge of the Taklamakan, with a 2020-census population of about 500,000. It has been famed since antiquity for its nephrite jade — the \"Jade Road\" predates the Silk Road — and was the ancient kingdom of Khotan, a major southern Silk Road town and once an important Buddhist centre. It is mainly Uyghur today, known for jade, atlas silk (ikat) and carpets.",
+    layout:
+      "The city sits within the oasis belt of two rivers, the White Jade River (Yurungkash) and the Black Jade River (Karakash), which join north of the city to form the Hotan River, flowing on north across the Taklamakan. The centre holds government and commerce, with the Hotan Bazaar to the north-east; the old quarter retains some traditional Uyghur housing.",
+    gettingAround:
+      "Hotan Kungang Airport (HTN) is about 11.5 km south-west of the city; a taxi there costs around ¥20. Flights to Ürümqi run Monday through Friday, connecting on to major cities nationwide, and there are also direct flights to Kashgar. Daily life runs on the same later schedule as Kashgar, roughly two hours behind eastern China; the climate is warm-temperate continental and arid, with windblown dust common, especially in spring.",
+    culture:
+      "Mainly Uyghur, with Uyghur and Mandarin both spoken. The Hotan Bazaar and its jade market are central to local life; buy jade from established dealers rather than the loose \"desert jade\" or \"river jade\" sold roadside. Dress modestly at mosques and other religious sites. Most restaurants are halal. No tipping.",
+    seeAndDo:
+      "The Hotan Bazaar (a large general market selling Hotan jade, atlas silk and carpets among other local goods); the bed of the White Jade River (Yurungkash), the traditional spot for jade-hunting, especially after flood season; the Hotan Prefecture Museum (holding southern-Silk-Road finds including material from the Niya site); the Niya ruins and Rawak Buddhist stupa site further out in the desert (both remote, generally requiring a chartered vehicle or organised tour).",
+    whenAndTips:
+      "August–September, with fruit in season and clear autumn skies, is the most recommended time. Peach and apricot blossoms in March–April are also attractive but come with more windblown dust — plan for it. The desert ruin sites are a long, rough journey away and are best arranged through a reputable local operator.",
+  },
+
+  turpan: {
+    identity:
+      "Turpan is a prefecture-level city in Xinjiang, inside the Turpan Depression at the southern foot of Bogda Peak, with a municipal population of about 690,000 at the end of 2023. Lake Ayding in the depression sits at about -154 m, the lowest point on the Chinese mainland, and Turpan is also among the hottest places in China in summer — the source of its nickname \"Fire Land.\" It was successively the centre of Jushi, the Gaochang kingdom and the Qocho Uyghurs, and the ruined cities of Jiaohe and Gaochang still stand nearby.",
+    layout:
+      "Gaochang District, the city proper, is the administrative and commercial centre. The Flaming Mountains, a red sandstone ridge, run along the north-east of the city; the Grape Valley lies in a gorge on their western side and is the main grape-growing area. The ruins of Jiaohe are about 10 km west of the city, and Gaochang about 40 km east. Oasis farmland, gobi desert and the red-ochre Flaming Mountains sit in sharp contrast across the depression.",
+    gettingAround:
+      "Turpan Jiaohe Airport (TLQ) is about 10 km north-west of the city; it opened in 2010 and has been jointly managed with Ürümqi Tianshan Airport since 2019. Turpan North station, on the Lanzhou–Xinjiang high-speed line, is about an hour from Ürümqi and one of the most common ways in and out. Sites such as the Grape Valley, Jiaohe and the karez wells are spread out, so a chartered car or tour is recommended. Turpan is among the hottest places on the Chinese mainland in summer, with midday temperatures over 40°C in July–August — avoid travelling around midday. The climate is extreme continental and arid, with very large day–night swings.",
+    culture:
+      "Mainly Uyghur, with Uyghur and Mandarin both spoken. The karez system, an underground network of channels dug and maintained across generations, is treated locally as the oasis's lifeline; follow site guidance and don't climb down into the channels uninvited. Most restaurants are halal. No tipping.",
+    seeAndDo:
+      "The Karez Folk Culture Garden (descend into a section of the underground channel system that has carried Tian Shan snowmelt here for over two thousand years); the ruins of Jiaohe (one of the largest and oldest surviving earthen-built city sites in the world, built on a river-terrace island); the ruins of Gaochang (the former capital of Jushi, then the Gaochang kingdom, then the Qocho Uyghurs); the Grape Valley (a gorge on the Flaming Mountains' western side, with grape-picking in summer and autumn); the Flaming Mountains (named for how the red sandstone appears to burn under the midday sun); the Bezeklik Thousand Buddha Caves (a cave-temple site in a Flaming Mountains gorge, with well-preserved murals).",
+    whenAndTips:
+      "April–May and September–October have the most comfortable weather and coincide with blossom or grape-harvest season. June–August is fiercely hot but is when the grapes ripen for picking — avoid midday heat and drink and sun-protect generously. November–March is cold but has fewer visitors and lower prices.",
+  },
+
+  bachu: {
+    identity:
+      "Bachu is a county under Kashgar Prefecture, on the alluvial plain of the lower Yarkand River at the western edge of the Tarim Basin, on the corridor between Kashgar and Aksu, with a 2020-census population of about 370,000. It is not a tourist destination — it is a farming county where oasis, desert steppe and natural poplar forest interlace, a textbook case of the Tarim rim, where the oasis reaches exactly as far as the river.",
+    layout:
+      "The county town itself is modest in size and serves as the administrative and commercial centre for the county. The Yarkand River runs through the county, lined with belts of wild poplar forest; the Taklamakan's edge lies not far to the east. In practice this is a place travellers pass through or stop briefly in, not a destination in itself.",
+    gettingAround:
+      "Bachu has no civil airport of its own; the nearest is Tumxuk Tangwangcheng Airport (under the administration of Tumxuk city / the Xinjiang Production and Construction Corps), about 50 km away in a straight line. Bachu has a passenger rail station on the southern Xinjiang line, about 5 hours from Kashgar by train; national highways and expressways connect it to Kashgar (about 2 hours by road) and toward Aksu. Local life runs about two hours behind eastern China; the climate is warm-temperate continental and arid.",
+    culture:
+      "Mainly Uyghur, with Uyghur and Mandarin both spoken and halal food the norm. Bachu mushrooms are a local speciality, and wild poplar forest and cotton are the main agricultural products. Daily life here moves at an unhurried pace and is not organised around tourism, so visitors are few — be respectful of that, and don't photograph homes or farmland without asking.",
+    seeAndDo:
+      "The Bachu wild poplar forest (natural stands of Populus euphratica along the Yarkand River, turning gold around October — one of the few sights here with any name recognition beyond the local area). Overall Bachu has limited tourism infrastructure and is better thought of as a stop along the Kashgar–Aksu road or rail corridor than a destination to visit specifically.",
+    whenAndTips:
+      "If visiting on purpose, the poplar forest's colour change around October is the most rewarding window. At other times this is more a slice of ordinary local life than a developed tourist stop, with limited visitor facilities — confirm food and lodging arrangements before setting out.",
+  },
+
+  maigaiti: {
+    identity:
+      "Makit (Maigaiti) is a county under Kashgar Prefecture, in the south-west of the Tarim Basin on the east bank of the Yarkand River, with a 2020-census population of about 220,000. It is often described as the only county town in China set inside a desert — the town is wrapped on three sides by the Taklamakan, which once covered about 90% of the county's area, and a single oasis is held together by Yarkand River water. It is the heartland of the Dolan people, and Dolan muqam and Dolan meshrep are both national intangible-cultural-heritage items (the muqam is also on the UNESCO list).",
+    layout:
+      "The county town is modest in size and serves as the administrative and commercial centre; there is sea-buckthorn wetland along the Donghe flats, and the long linear dunes typical of the Taklamakan begin just beyond the oasis edge. Like Bachu, Makit runs on agriculture and Dolan culture rather than developed tourism.",
+    gettingAround:
+      "Makit has no civil airport and no rail link (the planned Bachu–Makit–Yarkand railway had not opened as of this writing). It connects to Kashgar mainly via the Makit–Kashgar Expressway (S16, about 178 km), roughly a 2–2.5 hour drive or self-drive trip. Local life runs about two hours behind eastern China; the climate is warm-temperate continental and arid, with frequent windblown dust at the desert's edge.",
+    culture:
+      "Mainly Uyghur, and one of the core homelands of Dolan culture. Dolan muqam combines song, dance and instrumental music, and Dolan meshrep is a communal gathering of drumming, song and dance, both traditionally seen at local festivals or weddings; if there's a chance to see a performance, check the schedule through a proper local channel rather than interrupting or crowding in uninvited. Food is mainly halal. No tipping.",
+    seeAndDo:
+      "Dolan culture (Makit is one of the core homelands of Dolan muqam and Dolan meshrep, though whether a live performance is on depends on the local festival calendar — it isn't guaranteed on any given visit); the Donghe flats sea-buckthorn wetland (a patch of wetland oasis at the desert's edge). Overall Makit's tourism draw is limited — its real value is as an honest sample of a \"desert-edge oasis settlement plus Dolan cultural homeland\" on the Tarim rim, not as a developed destination.",
+    whenAndTips:
+      "Visitor facilities here are very limited, and what there is to see is Dolan culture and desert-oasis scenery rather than developed attractions — check with the local tourism authority or a travel agency beforehand for any cultural events open to visitors. Windblown dust is common at the desert's edge, so prepare for it.",
+  },
 };

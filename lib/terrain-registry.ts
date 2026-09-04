@@ -27,11 +27,11 @@ export type TerrainCategory =
   | "island"
   | "grassland"
   | "coast"
-  | "inselberg"
-  | "settlement";
+  | "inselberg";
 
 // 分类定义与选取标准见 docs/terrain-taxonomy.md
-// `delta` 已并入 `plain`；`scenic` 已拆分；`city` + `oasis` 已合并为 `settlement`。
+// `delta` 已并入 `plain`；`scenic` 已拆分。
+// `settlement`（原 `city` + `oasis` 合并）已于 2026-09-04 移除，5 个中国条目迁移到旅游模式，见 docs/terrain-taxonomy.md §8。
 
 export type LandmarkKind =
   | "peak"
@@ -515,70 +515,9 @@ const BAYANBULAK: TerrainEntry = {
   source: "开都河高山盆地曲流；概略",
 };
 
-const KASHGAR: TerrainEntry = {
-  id: "kashgar",
-  nameZh: "喀什",
-  nameEn: "Kashgar",
-  category: "settlement",
-  regionId: "asia",
-  country: "china",
-  landmark: { name: "艾提尕尔—喀什老城", lon: 75.99, lat: 39.47, elevation: 1290, kind: "city" },
-  bbox: [75.8, 39.3, 76.2, 39.65],
-  label: { lon: 75.99, lat: 39.47, rotation: 0 },
-  source: "喀什市中心",
-};
-
-const HOTAN: TerrainEntry = {
-  id: "hotan",
-  nameZh: "和田",
-  nameEn: "Hotan",
-  category: "settlement",
-  regionId: "asia",
-  country: "china",
-  landmark: { name: "和田市中心", lon: 79.93, lat: 37.11, elevation: 1370, kind: "city" },
-  bbox: [79.7, 36.9, 80.2, 37.3],
-  label: { lon: 79.9, lat: 37.1, rotation: 0 },
-  source: "和田市中心",
-};
-
-const TURPAN_CITY: TerrainEntry = {
-  id: "turpan-city",
-  nameZh: "吐鲁番",
-  nameEn: "Turpan",
-  category: "settlement",
-  regionId: "asia",
-  country: "china",
-  landmark: { name: "吐鲁番高昌区中心", lon: 89.18, lat: 42.95, elevation: 30, kind: "city" },
-  bbox: [89.0, 42.8, 89.4, 43.1],
-  label: { lon: 89.17, lat: 42.95, rotation: 0 },
-  source: "吐鲁番市中心",
-};
-
-const BACHU: TerrainEntry = {
-  id: "bachu",
-  nameZh: "巴楚",
-  nameEn: "Bachu",
-  category: "settlement",
-  regionId: "asia",
-  country: "china",
-  landmark: { name: "巴楚绿洲", lon: 78.55, lat: 39.79, elevation: 1150, kind: "oasis" },
-  bbox: [78.3, 39.6, 78.9, 40.0],
-  label: { lon: 78.55, lat: 39.78, rotation: 0 },
-  source: "巴楚县城概略",
-};
-
-const MAIGAITI: TerrainEntry = {
-  id: "maigaiti",
-  nameZh: "麦盖提",
-  nameEn: "Makit",
-  category: "settlement",
-  regionId: "asia",
-  country: "china",
-  landmark: { name: "麦盖提绿洲（刀郎文化）", lon: 77.65, lat: 38.9, elevation: 1200, kind: "oasis" },
-  bbox: [77.4, 38.7, 77.9, 39.1],
-  label: { lon: 77.65, lat: 38.9, rotation: 0 },
-  source: "麦盖提县城概略",
-};
+// 喀什/和田/吐鲁番（城市）/巴楚/麦盖提 5 个 `settlement` 条目已于 2026-09-04 移除
+// （settlement 分类整体废弃，见 docs/terrain-taxonomy.md §8），迁移到旅游模式
+// lib/places-registry.ts，坐标/地标信息原样沿用。
 
 // ============================================================
 // 中国 — 山脉
@@ -8547,31 +8486,8 @@ const WADDEN_ISLANDS: TerrainEntry = {
   source: "西弗里西亚群岛：荷兰北部瓦登海外侧一列由沙丘构成的堰洲岛链，自西向东主要包括特塞尔、弗利兰、特斯海灵、阿默兰、斯希蒙尼克岛等，是瓦登海生态系统的天然屏障；特塞尔岛是其中面积最大、人口最多的一座（荷兰国家林务局 Staatsbosbeheer）",
 };
 
-const TERP_MOUNDS: TerrainEntry = {
-  id: "terp-mounds",
-  nameZh: "台丘聚落",
-  nameEn: "Terp Mounds",
-  category: "settlement",
-  regionId: "europe",
-  country: "netherlands",
-  landmark: { name: "霍赫拜特姆台丘", lon: 5.7000, lat: 53.3200, elevation: 8.8, kind: "escarpment" },
-  bbox: [5.60, 53.25, 5.85, 53.40],
-  label: { lon: 5.70, lat: 53.32, rotation: 0 },
-  source: "台丘聚落：荷兰北部弗里斯兰、格罗宁根沿海一带自公元前500年左右起，居民在低洼海岸地带人工堆筑的居住土丘（terp/wierde），用以躲避风暴潮，霍赫拜特姆台丘现存高度约8.8米、是荷兰已知最高的台丘之一；这类聚落形态在12-13世纪筑堤技术成熟后逐渐停止新建（弗里斯兰省文化遗产部门）",
-};
-
-const GIETHOORN: TerrainEntry = {
-  id: "giethoorn",
-  nameZh: "羊角村",
-  nameEn: "Giethoorn",
-  category: "settlement",
-  regionId: "europe",
-  country: "netherlands",
-  landmark: { name: "羊角村水道核心区", lon: 6.0800, lat: 52.7400, elevation: -1, kind: "escarpment" },
-  bbox: [6.04, 52.71, 6.13, 52.77],
-  label: { lon: 6.08, lat: 52.74, rotation: 0 },
-  source: "羊角村：荷兰上艾瑟尔省一座建于13世纪泥炭开采区上的村落，因早期道路稀少、居民长期依赖运河和小船出行，村中心至今保留大片无公路通行的水道区，是荷兰泥炭开采聚落转型为水上村落的代表样本（荷兰国家旅游局 NBTC）",
-};
+// 台丘聚落（terp-mounds）/ 羊角村（giethoorn）2 个 `settlement` 条目已于 2026-09-04 移除
+// （settlement 分类整体废弃，见 docs/terrain-taxonomy.md §8）；未迁移到旅游模式（本轮任务范围仅限中国 5 个）。
 
 // ============================================================
 // 欧洲 / 奥地利
@@ -15073,8 +14989,8 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   JUNGGAR_BASIN, TARIM_BASIN, TURPAN_BASIN,
   // 中国西北 — 河谷 / 河流
   ILI_VALLEY, TARIM_RIVER, ERTIS, YARKANT_RIVER,
-  // 中国西北 — 草原 / 峡谷 / 丘陵 / 绿洲聚落
-  FLAMING_MOUNTAINS, NARAT, KUCHE, BAYANBULAK, KASHGAR, HOTAN, TURPAN_CITY, BACHU, MAIGAITI,
+  // 中国西北 — 草原 / 峡谷 / 丘陵
+  FLAMING_MOUNTAINS, NARAT, KUCHE, BAYANBULAK,
   // 中国 — 山脉
   QINLING, QILIAN, TAIHANG, DAXINGANLING, HENGDUAN, HIMALAYA,
   XIAOXINGANLING, CHANGBAI, YINSHAN, LULIANG, HELAN, LIUPAN,
@@ -15251,7 +15167,6 @@ export const TERRAIN_REGISTRY: TerrainEntry[] = [
   IJSSELMEER, MARKERMEER, GREVELINGEN, LAUWERSMEER, WEERRIBBEN_WIEDEN,
   RHINE_DELTA_NL, MEUSE_RIVER_NL, IJSSEL_RIVER, VECHT_RIVER,
   WADDEN_ISLANDS,
-  TERP_MOUNDS, GIETHOORN,
   // ===== 欧洲 / 奥地利 =====
   HOHE_TAUERN, OTZTAL_ALPS, ZILLERTAL_ALPS, KARWENDEL, DACHSTEIN,
   RAX_SCHNEEBERG, CARNIC_ALPS, KITZBUHEL_ALPS, SILVRETTA_ALPS_AT,
