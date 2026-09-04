@@ -1,0 +1,71 @@
+{
+  "id": "pek-yyz",
+  "name": "北京 — 多伦多",
+  "nameEn": "Beijing — Toronto",
+  "description": "蒙古戈壁 · 贝加尔湖 · 西伯利亚北冰洋沿岸 · 加拿大北极群岛 · 哈德逊湾",
+  "descriptionEn": "Mongolian Gobi · Lake Baikal · Siberian Arctic Coast · Canadian Arctic Archipelago · Hudson Bay",
+  "depCountry": "china",
+  "arrCountry": "canada",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA993",
+    "aircraft": "Boeing 777-300ER",
+    "depIata": "PEK",
+    "arrIata": "YYZ",
+    "durationMin": 760
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "贝加尔湖",
+      "nameEn": "Lake Baikal",
+      "lon": 107.5,
+      "lat": 53.5
+    },
+    {
+      "kind": "feature",
+      "name": "西伯利亚北冰洋沿岸",
+      "nameEn": "Siberian Arctic Coast",
+      "lon": 140,
+      "lat": 78
+    },
+    {
+      "kind": "feature",
+      "name": "加拿大北极群岛",
+      "nameEn": "Canadian Arctic Archipelago",
+      "lon": -90,
+      "lat": 78
+    },
+    {
+      "kind": "feature",
+      "name": "哈德逊湾",
+      "nameEn": "Hudson Bay",
+      "lon": -85.0,
+      "lat": 60.0
+    },
+    {
+      "kind": "city",
+      "id": "yyz",
+      "name": "多伦多皮尔逊",
+      "nameEn": "Toronto Pearson",
+      "lat": 43.6777,
+      "lon": -79.6248,
+      "airport": true
+    }
+  ]
+}
