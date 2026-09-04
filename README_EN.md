@@ -13,23 +13,20 @@ Not a GIS dashboard, not a flight simulator, not a game.
 
 | Mode | The question it answers | Content |
 |---|---|---|
-| **Study** | "What landform is that? How did it form?" | Terrain atlas — 914 landforms + authoritative 6-section lessons |
+| **Study** | "What landform is that? How did it form?" | Terrain atlas — 1041 landforms + authoritative 6-section lessons |
 | **Travel** | "I've landed in an unfamiliar city — what do I need to know?" | City overviews — layout / getting around / culture / when to go |
 
 The two content systems run in parallel and don't interfere.
 
-**Current scope** (`check-regions.ts` / `check-places.ts` print exact counts on every run —
-trust those over this paragraph if they ever disagree):
-- Study — Asia (China 84 + Japan 26 + South Korea 28 + Mongolia 26 + Thailand 25 + Vietnam 25 +
-  Malaysia 26 + Singapore 12 + Philippines 22 + Indonesia 26 = 300), Europe (UK 33 + Iceland 28 +
-  Switzerland 27 + Norway 28 + France 29 + Italy 30 + Spain 26 + Germany 26 + Greece 26 +
-  Portugal 26 + Netherlands 26 + Austria 26 + Belgium 26 + Sweden 26 + Finland 26 +
-  Ireland 28 + Denmark 25 + Luxembourg 12 + Poland 25 = 499), North America (USA 26 +
-  Canada 25 = 51), Oceania (Australia 34 + New Zealand 30 = 64) — 914 total, bilingual
-- Travel — covers all 33 countries live in study mode, 33 country overviews + 379 cities, bilingual;
-  209 domestic routes with bilingual study/travel narration each
+**Current scope** (`check-regions.ts` / `check-places.ts` / `check-routes.ts` print exact
+counts on every run — **trust those over this paragraph if they ever disagree**; the
+country-by-country breakdown lives in `CLAUDE.md`'s "范围" section, kept current on every
+expansion, and isn't duplicated here to avoid a second copy going stale):
+- Study — Asia · Europe · North America · South America · Oceania, 38 countries, 1041 landforms, bilingual
+- Travel — covers all 38 countries live in study mode, 38 country overviews + 467 cities, bilingual;
+  295 commercial routes (domestic + international) with bilingual study/travel narration each
 
-**Roadmap:** keep expanding study-mode terrain coverage (South America / Africa not yet started) + expand travel-mode city coverage by tourism demand.
+**Roadmap:** keep expanding study-mode terrain coverage (Africa not yet started) + expand travel-mode city coverage by tourism demand.
 
 ---
 
@@ -37,15 +34,14 @@ trust those over this paragraph if they ever disagree):
 
 ### Terrain set — single source of truth
 
-- **914 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 15 categories:
+- **1041 landforms** registered in [`lib/terrain-registry.ts`](lib/terrain-registry.ts), 14 categories:
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
-  `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`.
+  `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg`.
 - Each entry records an **anchor** (main peak / lake / hub city + lon/lat + elevation), a
   **bounding box**, a **trend axis**, **Chinese & English names**, and a **data source**. The
   sidebar, map labels, camera, and region highlight are all driven by this one registry.
 - Selection standard and category criteria: [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md)
-  (T1 skeleton / T2 physiographic province / T3 landmark; the `settlement` human-geography layer)
-  — don't add entries by gut feel.
+  (T1 skeleton / T2 physiographic province / T3 landmark) — don't add entries by gut feel.
 
 ### Travel mode — cities, not landforms
 
@@ -72,7 +68,7 @@ window shot.
 - Pitch / range scale with terrain size; large plateaus / basins / plains / deserts get a
   `viewScale` in the registry's `WIDE_VIEW` so the shot pulls back far enough to read as
   "a whole upland / basin," not one local feature (a lake, a city) near the anchor.
-- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (914/914).
+- Geometry self-check: `node --experimental-strip-types scripts/check-terrain-camera.ts` (1041/1041).
 
 ### Region highlight — a restrained outline
 
@@ -123,7 +119,7 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   (`getTerrainContent(id, lang)`), summarized from widely-accepted geography facts (China
   National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks
   Australia, UNESCO) — not documentary voiceover, not free-form generation.
-- **All 914 have bilingual lessons.** An early batch of 61 (China 39 + Australia 22, back when
+- **All 1041 have bilingual lessons.** An early batch of 61 (China 39 + Australia 22, back when
   those were the only two countries in the registry) went through a dedicated line-by-line
   source-verification pass: comparative / subjective judgments removed, disputed points
   qualified or given side by side, anything unverifiable dropped, figures normalized to
@@ -133,16 +129,14 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   general like "approximate" or just name an agency, and a handful explicitly flag themselves
   as "approximate coordinates / unverified in the field." Treat `source` as an audit trail, not
   a quality certification — double-check any figure you plan to rely on.
-- `settlement` (oasis · settlement) uses only overview / from the air / history & people.
 - [`lib/terrain-lesson.ts`](lib/terrain-lesson.ts) `resolveLesson(id, lang)` decides which
   lesson to use, in one place.
 
 ### Route flights
 
-- **209 real commercial routes** (`data/routes/*.json`) across the countries listed above
-  (the first 4 — Beijing–Ürümqi / Chengdu–Lhasa / Guangzhou–Lhasa / Ürümqi–Kashgar — were the
-  original set), each with airline / flight number / aircraft, departure and arrival airports,
-  and terrain waypoints along the way.
+- **295 real commercial routes** (`data/routes/*.json`) across the countries listed above,
+  domestic and China–other-country international, each with airline / flight number /
+  aircraft, departure and arrival airports, and terrain waypoints along the way.
 - Under 3 minutes each: the camera jumps to a slanted view over the departure airport →
   immediately starts a **single continuous narration written for that route**
   ([`lib/route-narration.ts`](lib/route-narration.ts), bilingual, regional-geography-textbook
@@ -194,7 +188,7 @@ npm run lint       # ESLint
 npm run typecheck  # tsc --noEmit
 
 npm run check:regions   # continent/sub-region/country terrain-count consistency
-npm run check:camera    # camera geometry self-check (914/914)
+npm run check:camera    # camera geometry self-check (1041/1041)
 npm run check:places    # travel-place self-check (city coords/IATA/sources/bilingual content)
 npm run check:routes    # route self-check (waypoint monotonicity, narration length, airports, …)
 npm run check            # runs all of the above (typecheck + lint + 4 checks)
@@ -216,9 +210,11 @@ components/
   CesiumMap.tsx            — 3D globe, camera, region outline highlight, appMode / focusCity
   CesiumOverlayLabels.tsx  — HTML terrain label layer (zoom-adaptive, study mode)
   CityMarkers.tsx          — map city points (travel mode, revealed by camera altitude)
-  IntroOverlay.tsx         — travel-mode opening title card (localStorage remembers "seen")
-  ContinentIntro.tsx       — study-mode opening: shuffled swipe carousel of continents, pick one to fly in
-  IndexRail.tsx            — left index (study: sub-region → country → terrain; travel: overview + cities)
+  ContinentIntro.tsx       — opening swipe carousel of continents (shared by study/travel mode;
+                              caller passes whether the count is landforms or cities)
+  IndexRail.tsx            — left index (study: sub-region → country → terrain; travel: country →
+                              province/state → city, sorted alphabetically, colored dot hints the
+                              broader region)
   ReadingPanel.tsx         — single right-side reading panel (card ⇄ article, sentence highlight)
   JourneyBar.tsx           — bottom route filmstrip
   StructuredLesson.tsx     — section renderer (6-section lesson / generic section array)
@@ -226,13 +222,13 @@ components/
   RegionSelector.tsx       — header continent / sub-region two-level switch
 
 lib/
-  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 914 terrains
+  terrain-registry.ts       — [single source of truth] anchor/extent/axis/names/source for 1041 terrains
   terrain-camera.ts         — computeTerrainCamera() data-driven camera derivation
   terrain-content.{zh,en}.ts— authoritative 6-section lesson content (zh / en)
   terrain-lesson.ts         — resolveLesson(id, lang): one place decides which lesson to use
   terrain-label-registry.ts — labels (generated from the registry, with nameEn)
   lesson.ts                 — lesson section order / headings / assembly
-  routes.ts / route-narration.ts — real commercial routes (209 currently) + two continuous narrations each
+  routes.ts / route-narration.ts — real commercial routes (295 currently, domestic + international) + two continuous narrations each
   app-mode.ts               — AppMode type + localStorage read/write
   places-registry.ts        — [travel-mode single source of truth] cities + country overviews
   travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
@@ -250,7 +246,7 @@ features/
 
 data/
   *.json                    — early terrain data (coordinates now superseded by terrain-registry)
-  routes/                   — real route definitions (209 currently)
+  routes/                   — real route definitions (295 currently, domestic + international)
   gis/                      — raw Natural Earth shp/dbf (git-ignored)
 
 public/data/gis/exports/    — 42 extracted terrain-boundary geojson files
@@ -305,8 +301,9 @@ Selection standard: [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md).
 |---|---|
 | [`CLAUDE.md`](CLAUDE.md) | product positioning, architecture, dev conventions, do-not list |
 | [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md) | terrain-set selection standard and category definitions |
-| [`docs/routes.md`](docs/routes.md) | route selection rationale and coverage analysis |
-| [`docs/architecture-metrics.md`](docs/architecture-metrics.md) | project health metrics, module coupling |
+| [`docs/routes.md`](docs/routes.md) | route selection rationale and coverage analysis (⚠️ early snapshot written when there were only 4 routes — numbers are stale, see the note at the top of the doc) |
+| [`docs/architecture-metrics.md`](docs/architecture-metrics.md) | project health metrics, module coupling (⚠️ codeatlas report from 2026-06-30, predates the two-mode redesign and world expansion — numbers are stale) |
+| [`docs/project-status-2026-09-04.md`](docs/project-status-2026-09-04.md) | 2026-09-04 point-in-time snapshot (Chinese): known-issue triage, what got fixed that day, suggested starting points for the next task — not a living document |
 | [`DESIGN.md`](DESIGN.md) | UI / visual design spec |
 
 ---

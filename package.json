@@ -2,6 +2,7 @@
   "name": "flight-geography-explorer",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "copy-cesium": "node scripts/copy-cesium.mjs",
     "postinstall": "node scripts/copy-cesium.mjs",
