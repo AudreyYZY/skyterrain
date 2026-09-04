@@ -70,10 +70,6 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "岛山",
     "en-US": "Inselbergs",
   },
-  "sidebar.settlements": {
-    "zh-CN": "绿洲·聚落",
-    "en-US": "Oases & Towns",
-  },
   "mode.study": { "zh-CN": "学习", "en-US": "Study" },
   "mode.travel": { "zh-CN": "旅游", "en-US": "Travel" },
   "rail.countryOverview": { "zh-CN": "国家概览", "en-US": "Country overview" },

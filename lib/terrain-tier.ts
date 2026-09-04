@@ -38,7 +38,6 @@ const CATEGORY_ORDER: Record<string, number> = {
   coast: 11,
   island: 12,
   inselberg: 13,
-  settlement: 14,
 };
 
 export function categoryOrder(category: string): number {
@@ -61,7 +60,6 @@ const CATEGORY_LABEL: Record<string, { zh: string; en: string }> = {
   coast: { zh: "海岸", en: "Coasts" },
   island: { zh: "岛屿", en: "Islands" },
   inselberg: { zh: "岛山", en: "Inselbergs" },
-  settlement: { zh: "绿洲·聚落", en: "Settlements" },
 };
 
 export function categoryLabel(category: string, lang: "zh-CN" | "en-US"): string {

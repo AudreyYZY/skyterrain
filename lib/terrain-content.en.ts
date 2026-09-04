@@ -1720,57 +1720,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Leizhou Peninsula is named for its frequent thunderstorms (\"Leizhou\" — thunder prefecture). Historically remote, it was a place of banishment for demoted officials. Hot, wet and typhoon-prone, it grows sugarcane, pineapple, sisal and other tropical crops, and is the mainland's gateway to Hainan.",
   },
 
-  // —— Oases & towns (settlement): human–landform interface; uses Overview / From the air / History ——
-
-  kashgar: {
-    seeing:
-      "Kashgar (Kashi) sits at the far western edge of the Tarim Basin, on the piedmont plain where the Pamir, Tian Shan and Kunlun ranges meet. Rivers such as the Kizil and the Gez spread into alluvial fans here, and groundwater and canal water at the fan edges support a large oasis, with the city at its centre.",
-    formation: "",
-    observation:
-      "From the air Kashgar is a big block of checkerboard green — fields, shelter-belts and canals — ringed by brown gobi and desert, with the dense old and new city at the centre. To the west the oasis ends quickly and the land climbs into the brown Pamir; to the east lies the sand sea of the Taklamakan.",
-    history:
-      "Kashgar is the gateway where the southern and central Silk Road met before crossing the Pamir into Central and South Asia — a trading city for over two thousand years, part of the kingdom of Shule in Han times. It is mainly Uyghur today; the Id Kah Mosque is China's largest, and the old town's terraced earthen houses are a living traditional quarter. A National Historic and Cultural City.",
-  },
-
-  hotan: {
-    seeing:
-      "Hotan lies at the northern foot of the Kunlun and the southern edge of the Taklamakan, on a narrow oasis strip squeezed between high mountains and desert. The White Jade River (Yurungkash) and Black Jade River (Karakash) descend from the Kunlun and build alluvial fans at the mountain front, and the oasis grows along their water.",
-    formation: "",
-    observation:
-      "From the air Hotan is a broken string of green dots along the desert's southern rim, hard against the pale grey shadow of the Kunlun. The fans at the two river mouths are the greenest; the oasis narrows and frays toward the desert. On dusty days the whole oasis vanishes into haze.",
-    history:
-      "Hotan was the ancient kingdom of Khotan, a major Silk Road town and once an important Buddhist centre (the Niya and Rawak sites). Its two rivers have yielded nephrite jade since antiquity — the \"Jade Road\" predates the Silk Road. It is mainly Uyghur today, known for jade, atlas silk and carpets.",
-  },
-
-  "turpan-city": {
-    seeing:
-      "The city of Turpan sits inside the Turpan Depression at the southern foot of Bogda Peak, not far north of Lake Ayding at about -154 m — the lowest land in China. It lies among the Flaming Mountains, gobi, and karez-fed oasis.",
-    formation: "",
-    observation:
-      "From the air Turpan is a deep-green oasis surrounded by red-brown gobi and the Flaming Mountains, with vine trellises and shelter-belts covering the basin floor. Look closely and you see neat rows of small earth mounds across the oasis — the shafts of the karez, underground channels that carry Tian Shan snowmelt here and keep the oasis alive.",
-    history:
-      "This was successively the centre of Jushi, the Gaochang kingdom and the Qocho Uyghurs; the ruined cities of Jiaohe and Gaochang and the Bezeklik caves are all nearby. Extreme heat (among the hottest places in China) plus karez water made it famous for grapes and Hami melons. It is mainly Uyghur today.",
-  },
-
-  bachu: {
-    seeing:
-      "Bachu lies on the western edge of the Tarim Basin, on the alluvial plain of the lower Yarkand River, on the corridor between Kashgar and Aksu, with the Taklamakan to its east. It is a little-known farming county where oasis, desert steppe and natural poplar forest interlace.",
-    formation: "",
-    observation:
-      "From the air Bachu is a broken patchwork of green along the tail of the Yarkand River: dark belts of wild poplar (Populus euphratica) line the channel, pale desert steppe and salt flats lie beyond, and then the sand. The river's flow swings widely between wet and dry years, and the green expands and shrinks with it.",
-    history:
-      "In Han times the area belonged to small Western-Regions states such as Weitou. It is mainly Uyghur today, growing cotton, wheat and fruit on Yarkand River irrigation; wild poplar forest and Bachu mushrooms are local specialities. It is a textbook case of the Tarim rim, where the oasis reaches exactly as far as the river.",
-  },
-
-  maigaiti: {
-    seeing:
-      "Makit (Maigaiti) lies in the south-west of the Tarim Basin on the east bank of the Yarkand River. It is described as the only county town in China set inside the desert — the town is wrapped on three sides by the Taklamakan, and desert once made up about 90% of the county's area. A single oasis is held together by Yarkand River water.",
-    formation: "",
-    observation:
-      "From the air Makit is a small strip of riverside green in a yellow sand sea, its edge held by belts of wild and planted poplar that block the drifting sand. Just beyond the oasis run the long linear dunes typical of the Taklamakan. There is sea-buckthorn wetland along the Donghe flats.",
-    history:
-      "Makit is the heartland of the Dolan people; Dolan muqam and Dolan meshrep are both national intangible-heritage items (the muqam is also on the UNESCO list). Dolan culture grew up along the Yarkand River at the desert's edge, and the drums and dance of the meshrep are its sharpest expression.",
-  },
+  // Kashgar / Hotan / Turpan (city) / Bachu / Makit (Maigaiti)
+  // These 5 `settlement` writeups were removed 2026-09-04 (category retired, see
+  // docs/terrain-taxonomy.md §8); content rewritten as travel-mode TravelGuides,
+  // see lib/travel-content.en.ts.
 
   // ============ North America · United States ============
   "rocky-mountains": {
@@ -8318,35 +8271,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Fishermen and shepherds have lived on these islands since the Middle Ages; storm surges have repeatedly reshaped their form over history, and in modern times the islands have shifted from traditional fishing communities toward ecotourism and popular sites for observing migratory birds.",
   },
 
-  "terp-mounds": {
-    seeing:
-      "Terp mounds are artificial dwelling mounds built by residents of the coastal areas of Friesland and Groningen in the northern Netherlands, starting around 500 BC on low-lying coastal land. From the air, round or oval mounds rise gently above the flat surrounding farmland, with a village's houses and church clustered on top.",
-    formation:
-      "These mounds were built entirely by hand: early residents, living on unprotected coastal lowland with no dikes, raised their settlement's foundation year after year with earth, manure and household waste, gradually building it up over centuries into man-made platforms several metres above the surrounding ground.",
-    observation:
-      "From the air, identify terp mounds by their round or oval, gently raised outline, a sharp contrast to the typical grid-pattern reclaimed farmland found elsewhere in the Netherlands — the mound's rounded boundary is a direct trace of how early residents built up and expanded the settlement ring by ring, the clearest identifying feature.",
-    distinguish:
-      "Both terp mounds and Giethoorn are human-landscape features in the Netherlands, but terp mounds are a flood-defence form of settlement built between roughly 500 BC and 1200 AD to escape storm surges, while Giethoorn is a waterborne settlement that arose from criss-crossing channels left by 13th-century peat digging — different eras, motives and landform characteristics.",
-    concept:
-      "Terp mounds were the Dutch's early solution to the risk of the sea before systematic dike technology existed, showing an early strategy in the low-lying inhabitants' long contest with the sea; the Hogebeintum terp survives at about 8.8 m high, one of the tallest known in the Netherlands.",
-    history:
-      "As dike-building technology matured in the 12th–13th centuries and large-scale dike-based flood control replaced the scattered terp approach, the building of new terps gradually stopped, but many villages on these mounds have continued to this day, with churches and homes still built on these thousand-year-old earthworks.",
-  },
-
-  giethoorn: {
-    seeing:
-      "Giethoorn is a village in Overijssel province built in the 13th century on a former peat-digging area, its centre still largely without roads. From the air, narrow canals cut the village into many small parcels, with a boat moored in front of nearly every house and almost no cars in sight.",
-    formation:
-      "The village site was originally a peat bog; after 13th-century settlers dug peat here for fuel, the leftover trenches gradually connected into a water network, and because the area long lacked land roads, residents historically travelled only by small boat, gradually giving rise to this distinctive village pattern built around water instead of roads.",
-    observation:
-      "From the air, identify Giethoorn by the dense canal network in its core and the near-total absence of motor roads — thatched traditional farmhouses line the canal banks, and small wooden bridges connect the footpaths; this 'roadless' waterborne village form is unique in the Netherlands.",
-    distinguish:
-      "Both Giethoorn and Weerribben-Wieden are watery landscapes left by a history of peat digging, but Giethoorn is a continuously inhabited village focused on tourism and residential life, while Weerribben-Wieden is a nature-conservation-focused national park where the channels run mainly through reed marsh rather than housing.",
-    concept:
-      "Giethoorn's formation shows how low-lying Dutch communities adapted unfavourable marsh terrain into a distinctive way of life — when land roads were impractical to build, waterways naturally became the alternative, a microcosm of the Dutch experience of long coexistence with low-lying terrain.",
-    history:
-      "The village lived for a long time on peat digging and farming; after a Dutch silent film was shot here in the early 20th century, Giethoorn's watery scenery gradually became known outside the area, and tourism has since become one of the village's main sources of income.",
-  },
+  // Terp mounds / Giethoorn — 2 `settlement` writeups removed 2026-09-04 (category
+  // retired, see docs/terrain-taxonomy.md §8); not migrated to travel mode.
 
   // ============ Austria ============
   "hohe-tauern": {

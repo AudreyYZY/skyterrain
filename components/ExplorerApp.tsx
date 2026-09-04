@@ -74,7 +74,7 @@ declare global {
 type SidebarCategory =
   | "mountain" | "plateau" | "basin" | "plain" | "hill"
   | "lake" | "desert" | "river" | "gorge" | "island"
-  | "grassland" | "coast" | "inselberg" | "settlement";
+  | "grassland" | "coast" | "inselberg";
 
 
 /**
@@ -116,8 +116,6 @@ function normalizeType(raw: string, name?: string): SidebarCategory | null {
       return "coast";
     case "inselberg":
       return "inselberg";
-    case "settlement":
-      return "settlement";
     default:
       return null;
   }
