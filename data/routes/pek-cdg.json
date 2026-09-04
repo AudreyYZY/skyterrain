@@ -1,0 +1,64 @@
+{
+  "id": "pek-cdg",
+  "name": "北京 — 巴黎",
+  "nameEn": "Beijing — Paris",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 东欧平原",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · East European Plain",
+  "depCountry": "china",
+  "arrCountry": "france",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA933",
+    "aircraft": "Boeing 777-300ER",
+    "depIata": "PEK",
+    "arrIata": "CDG",
+    "durationMin": 645
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 78,
+      "lat": 56
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉",
+      "nameEn": "Ural Mountains",
+      "lon": 58,
+      "lat": 57
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 25,
+      "lat": 52
+    },
+    {
+      "kind": "city",
+      "id": "cdg",
+      "name": "巴黎戴高乐",
+      "nameEn": "Paris Charles de Gaulle",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "airport": true
+    }
+  ]
+}

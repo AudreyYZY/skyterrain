@@ -310,6 +310,12 @@ import pekHld from "./pek-hld.json" with { type: "json" };
 import pekYih from "./pek-yih.json" with { type: "json" };
 import pekEny from "./pek-eny.json" with { type: "json" };
 import ctuGoq from "./ctu-goq.json" with { type: "json" };
+// 国际 · 中国 ↔ 英国/法国/德国/荷兰/比利时（Phase 3 批 D）
+import pekLhr from "./pek-lhr.json" with { type: "json" };
+import pekCdg from "./pek-cdg.json" with { type: "json" };
+import pekBer from "./pek-ber.json" with { type: "json" };
+import pkxAms from "./pkx-ams.json" with { type: "json" };
+import pekBru from "./pek-bru.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -573,4 +579,9 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekYih,
   pekEny,
   ctuGoq,
+  pekLhr,
+  pekCdg,
+  pekBer,
+  pkxAms,
+  pekBru,
 ] as unknown as FlightRoute[];
