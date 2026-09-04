@@ -11,23 +11,20 @@
 
 | 模式 | 面向的问题 | 内容 |
 |---|---|---|
-| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 914 处地貌 + 6 板块权威讲解 |
+| **学习模式** | "这片是什么地形？怎么形成的？" | 地形地貌图鉴 —— 1041 处地貌 + 6 板块权威讲解 |
 | **旅游出行模式** | "到了这个陌生城市，衣食住行要注意什么？" | 城市概览 —— 地理格局 / 衣食住行 / 人文习俗 / 出行提示 |
 
 两套内容系统平行、互不影响。
 
 **当前范围**（`node --experimental-strip-types scripts/check-regions.ts` /
-`check-places.ts` 每次运行都会打印准确计数，这里的数字如果对不上，以脚本输出为准）：
-- 学习模式 —— 亚洲（中国 84 + 日本 26 + 韩国 28 + 蒙古 26 + 泰国 25 + 越南 25 + 马来西亚 26 +
-  新加坡 12 + 菲律宾 22 + 印度尼西亚 26 = 300）· 欧洲（英国 33 + 冰岛 28 + 瑞士 27 + 挪威 28 +
-  法国 29 + 意大利 30 + 西班牙 26 + 德国 26 + 希腊 26 + 葡萄牙 26 + 荷兰 26 + 奥地利 26 +
-  比利时 26 + 瑞典 26 + 芬兰 26 + 爱尔兰 28 + 丹麦 25 + 卢森堡 12 + 波兰 25 = 499）·
-  北美洲（美国 26 + 加拿大 25 = 51）· 大洋洲（澳大利亚 34 + 新西兰 30 = 64），
-  共 914 处，中英双语
-- 旅游模式 —— 覆盖学习模式已上线的全部 33 个国家，共 33 个国家概览 + 379 座城市，中英双语；
-  209 条国内商业航线（每条附机场/地形航点 + 学习/旅游两套双语解说）
+`check-places.ts` / `check-routes.ts` 每次运行都会打印准确计数——这三行数字随内容持续
+增长，**这里的数字如果对不上，以脚本输出为准**；按国家的详细分布见 [`CLAUDE.md`](CLAUDE.md)
+"范围"一节，那里随每次扩展同步更新，本文件不重复维护第二份、避免又和实际脱节）：
+- 学习模式 —— 亚洲 · 欧洲 · 北美洲 · 南美洲 · 大洋洲共 38 个国家，1041 处地貌，中英双语
+- 旅游模式 —— 覆盖学习模式已上线的全部 38 个国家，共 38 个国家概览 + 467 座城市，中英双语；
+  295 条商业航线（国内 + 国际，每条附机场/地形航点 + 学习/旅游两套双语解说）
 
-**规划**：继续扩展学习模式地形覆盖（南美洲 / 非洲待启动）+ 按旅游热度扩展各国旅游模式覆盖城市。
+**规划**：继续扩展学习模式地形覆盖（非洲待启动）+ 按旅游热度扩展各国旅游模式覆盖城市。
 
 ---
 
@@ -35,9 +32,9 @@
 
 ### 地形集 —— 单一真实源
 
-- **914 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，15 类：
+- **1041 处地貌**统一注册在 [`lib/terrain-registry.ts`](lib/terrain-registry.ts)，14 类：
   `mountain_system` / `plateau` / `basin` / `plain` / `hills` / `desert` / `lake` / `river` /
-  `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg` / `settlement`。
+  `valley` / `gorge` / `island` / `grassland` / `coast` / `inselberg`。
 - 每处记录**锚点**（主峰 / 主湖 / 枢纽城市 + 经纬度 + 海拔）、**边界框**、**走向轴**、
   **中英名**、**数据来源**。侧边栏、地图标签、相机、区域高亮全部由这一份注册表驱动。
 - 选取标准与分类判据见 [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md)
@@ -63,7 +60,7 @@
 - 朝向由地形走向 + 可选的 `viewFrom`（相机在锚点哪一侧，编辑决策）推导。
 - 俯角 / 距离由地形尺度推导；大面积高原 / 大盆地 / 大平原 / 大沙漠在注册表的 `WIDE_VIEW` 里
   给 `viewScale`，取景放宽到能看出"一整片高地 / 盆地"的地貌特征，而非锚点周边一个局部景物。
-- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（914/914）。
+- 几何自检：`node --experimental-strip-types scripts/check-terrain-camera.ts`（1041/1041）。
 
 ### 区域高亮 —— 克制的轮廓
 
@@ -107,19 +104,17 @@ HTML 标签层（[`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx)
 - 内容写在 [`lib/terrain-content.{zh,en}.ts`](lib/terrain-content.zh.ts)（`getTerrainContent(id, lang)`），
   依据中国国家地理 / 中科院 / 自然资源部 / Geoscience Australia / Parks Australia / UNESCO
   等公认地理事实总结，非文学化旁白、非凭空生成。
-- **914 处全部有中英双语讲解**。核源标准：去比较性 / 主观评价，有争议的加限定或并列，
+- **1041 处全部有中英双语讲解**。核源标准：去比较性 / 主观评价，有争议的加限定或并列，
   查不到宁可删，数字统一到权威口径；新增国家一律查该国官方地质 / 国家公园 / 地名机构口径。
   **核实程度不均**：`source` 字段留了痕，但截至目前只有部分条目点名了可复核的具体来源
   （维基百科词条、国测局公告等），其余写的是"概略"或笼统的机构名；个别条目明确标注
   "概略坐标 / 待实测"。这些字段是审计线索、不是质检认证——引用具体数字前建议自行复核。
-- `settlement`（绿洲·聚落）只用「概述 / 从空中怎么看 / 历史与人文」三段。
 - [`lib/terrain-lesson.ts`](lib/terrain-lesson.ts) `resolveLesson(id, lang)` 一处决定用哪份讲解。
 
 ### 航线飞行
 
-- **209 条真实商业航线**（`data/routes/*.json`，覆盖上面列出的所有国家；最早的
-  4 条——北京–乌鲁木齐 / 成都–拉萨 / 广州–拉萨 / 乌鲁木齐–喀什——是最初的一批），
-  含航司 / 航班号 / 机型、出发到达机场、沿途地形航点。
+- **295 条真实商业航线**（`data/routes/*.json`，覆盖上面列出的所有国家，含国内航线与
+  中国—他国国际航线），含航司 / 航班号 / 机型、出发到达机场、沿途地形航点。
 - 一次 ≤3 分钟：镜头立即摆到起点机场上空 → 立刻开始播这条航线**专属的一段连贯解说**
   （[`lib/route-narration.ts`](lib/route-narration.ts)，中英，教材区域地理口径）→
   镜头同时沿航点匀速飞完。
@@ -168,7 +163,7 @@ npm run lint       # ESLint
 npm run typecheck  # tsc --noEmit
 
 npm run check:regions   # 大洲/次区域/国家地形计数一致性自检
-npm run check:camera    # 相机几何自检（914/914）
+npm run check:camera    # 相机几何自检（1041/1041）
 npm run check:places    # 旅游地点自检（城市坐标/IATA/来源/双语内容齐全）
 npm run check:routes    # 航线自检（waypoint 单调性、双语解说字数、机场等）
 npm run check            # 依次跑完上面全部（typecheck + lint + 4 个自检）
@@ -190,9 +185,9 @@ components/
   CesiumMap.tsx            — 三维地球、相机、区域轮廓高亮、appMode / focusCity
   CesiumOverlayLabels.tsx  — HTML 地形标签层（zoom 自适应，学习模式）
   CityMarkers.tsx          — 地图城市点（旅游模式，按相机高度分级）
-  IntroOverlay.tsx         — 旅游模式初始标题卡（localStorage 记住已看过）
-  ContinentIntro.tsx       — 学习模式初始：shuffle 的大陆滑动卡片，选定即飞入
-  IndexRail.tsx            — 左侧目录（学习：次区域 → 国家 → 地形；旅游：国家概览 + 城市）
+  ContinentIntro.tsx       — 首屏大陆滑动卡片（学习/旅游模式共用，数地貌数还是城市数由调用方传入）
+  IndexRail.tsx            — 左侧目录（学习：次区域 → 国家 → 地形；旅游：国家 → 省/州 → 城市，
+                              省/州分组按拼音/字母序，标题旁彩色圆点提示所属大区）
   ReadingPanel.tsx         — 右侧单一阅读面板（卡片态 ⇄ 文章态，逐句高亮）
   JourneyBar.tsx           — 底部航线胶片条
   StructuredLesson.tsx     — 板块讲解渲染（6 板块 lesson / 通用段列表 sections）
@@ -200,13 +195,13 @@ components/
   RegionSelector.tsx       — 顶栏大洲 / 次区域两级切换
 
 lib/
-  terrain-registry.ts       — 【单一真实源】914 处地形的锚点/范围/走向/中英名/来源
+  terrain-registry.ts       — 【单一真实源】1041 处地形的锚点/范围/走向/中英名/来源
   terrain-camera.ts         — computeTerrainCamera() 数据驱动相机推导
   terrain-content.{zh,en}.ts— 权威 6 板块讲解内容（中/英）
   terrain-lesson.ts         — resolveLesson(id, lang)：一处决定用哪份讲解
   terrain-label-registry.ts — 标签（由注册表生成，含 nameEn）
   lesson.ts                 — 讲解板块顺序 / 标题 / 拼接
-  routes.ts / route-narration.ts — 真实商业航线（当前 209 条）+ 每条学习/旅游两套连贯解说
+  routes.ts / route-narration.ts — 真实商业航线（当前 295 条，国内+国际）+ 每条学习/旅游两套连贯解说
   app-mode.ts               — AppMode 类型 + localStorage 读写
   places-registry.ts        — 【旅游模式单一真实源】城市 + 国家概览
   travel-content.{zh,en}.ts — 旅游模式 6 段 TravelGuide 中英内容
@@ -224,7 +219,7 @@ features/
 
 data/
   *.json                    — 早期地形数据（坐标现由 terrain-registry 覆盖）
-  routes/                   — 真实航线定义（当前 209 条）
+  routes/                   — 真实航线定义（当前 295 条，国内+国际）
   gis/                      — Natural Earth 原始 shp/dbf（不入库）
 
 public/data/gis/exports/    — 提取出的 42 个地形边界 geojson
@@ -278,8 +273,9 @@ TerrainEntry（注册表：锚点 landmark + bbox + axis + viewFrom）
 |---|---|
 | [`CLAUDE.md`](CLAUDE.md) | 产品定位、架构、开发规范、禁止事项 |
 | [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md) | 地形集选取标准与分类定义 |
-| [`docs/routes.md`](docs/routes.md) | 航线选取理由与覆盖分析 |
-| [`docs/architecture-metrics.md`](docs/architecture-metrics.md) | 项目健康度指标、模块耦合度 |
+| [`docs/routes.md`](docs/routes.md) | 航线选取理由与覆盖分析（⚠️ 早期快照，写于仅 4 条航线时，数字已过期，见文档顶部说明） |
+| [`docs/architecture-metrics.md`](docs/architecture-metrics.md) | 项目健康度指标、模块耦合度（⚠️ codeatlas 生成于 2026-06-30，早于双模式/世界扩展，数字已过期） |
+| [`docs/project-status-2026-09-04.md`](docs/project-status-2026-09-04.md) | 2026-09-04 时间点快照：已知不足评估、当次修复记录、给下一个任务的起点建议（不是持续维护的活文档） |
 | [`DESIGN.md`](DESIGN.md) | UI / 视觉设计规范 |
 
 ---
