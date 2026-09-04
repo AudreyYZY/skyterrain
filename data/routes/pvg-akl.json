@@ -1,0 +1,67 @@
+{
+  "id": "pvg-akl",
+  "name": "上海 — 奥克兰",
+  "nameEn": "Shanghai — Auckland",
+  "description": "菲律宾海 · 俾斯麦海 · 珊瑚海 · 塔斯曼海",
+  "descriptionEn": "Philippine Sea · Bismarck Sea · Coral Sea · Tasman Sea",
+  "depCountry": "china",
+  "arrCountry": "new-zealand",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU779",
+    "aircraft": "Boeing 787-9",
+    "depIata": "PVG",
+    "arrIata": "AKL",
+    "durationMin": 700
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "菲律宾海",
+      "nameEn": "Philippine Sea",
+      "lon": 135,
+      "lat": 15
+    },
+    {
+      "kind": "feature",
+      "name": "俾斯麦海",
+      "nameEn": "Bismarck Sea",
+      "lon": 148,
+      "lat": -3
+    },
+    {
+      "kind": "feature",
+      "name": "珊瑚海",
+      "nameEn": "Coral Sea",
+      "lon": 160,
+      "lat": -18
+    },
+    {
+      "kind": "feature",
+      "name": "塔斯曼海",
+      "nameEn": "Tasman Sea",
+      "lon": 170,
+      "lat": -30
+    },
+    {
+      "kind": "city",
+      "id": "akl",
+      "name": "奥克兰机场",
+      "nameEn": "Auckland Airport",
+      "lat": -37.0082,
+      "lon": 174.785,
+      "airport": true
+    }
+  ]
+}

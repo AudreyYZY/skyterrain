@@ -67,6 +67,13 @@ import hndTtj from "./hnd-ttj.json" with { type: "json" };
 import pvgHnd from "./pvg-hnd.json" with { type: "json" };
 import pekHnd from "./pek-hnd.json" with { type: "json" };
 import pvgKix from "./pvg-kix.json" with { type: "json" };
+// 国际 · 中国国际航线 Phase 3 批A（东亚/东南亚：韩国/蒙古/越南/泰国/马来西亚/新加坡）
+import pekIcn from "./pek-icn.json" with { type: "json" };
+import pekUbn from "./pek-ubn.json" with { type: "json" };
+import pvgHan from "./pvg-han.json" with { type: "json" };
+import canBkk from "./can-bkk.json" with { type: "json" };
+import pekKul from "./pek-kul.json" with { type: "json" };
+import pekSin from "./pek-sin.json" with { type: "json" };
 // 澳大利亚国内
 import sydPer from "./syd-per.json" with { type: "json" };
 import sydCns from "./syd-cns.json" with { type: "json" };
@@ -309,6 +316,13 @@ import pekCdg from "./pek-cdg.json" with { type: "json" };
 import pekBer from "./pek-ber.json" with { type: "json" };
 import pkxAms from "./pkx-ams.json" with { type: "json" };
 import pekBru from "./pek-bru.json" with { type: "json" };
+// 国际 · 中国 ↔ 印度尼西亚/菲律宾/哈萨克斯坦/土耳其/澳大利亚/新西兰（Phase 3 批 B）
+import pekCgk from "./pek-cgk.json" with { type: "json" };
+import canMnl from "./can-mnl.json" with { type: "json" };
+import pekNqz from "./pek-nqz.json" with { type: "json" };
+import pekIst from "./pek-ist.json" with { type: "json" };
+import canSyd from "./can-syd.json" with { type: "json" };
+import pvgAkl from "./pvg-akl.json" with { type: "json" };
 // 国际 · 中国 ↔ 美国/加拿大（Phase 3 批 C）
 import pekJfk from "./pek-jfk.json" with { type: "json" };
 import pekYyz from "./pek-yyz.json" with { type: "json" };
@@ -365,6 +379,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   pvgHnd,
   pekHnd,
   pvgKix,
+  pekIcn,
+  pekUbn,
+  pvgHan,
+  canBkk,
+  pekKul,
+  pekSin,
   sydPer,
   sydCns,
   melSyd,
@@ -574,6 +594,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekBer,
   pkxAms,
   pekBru,
+  pekCgk,
+  canMnl,
+  pekNqz,
+  pekIst,
+  canSyd,
+  pvgAkl,
   pekJfk,
   pekYyz,
 ] as unknown as FlightRoute[];

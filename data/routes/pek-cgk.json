@@ -1,0 +1,60 @@
+{
+  "id": "pek-cgk",
+  "name": "北京 — 雅加达",
+  "nameEn": "Beijing — Jakarta",
+  "description": "南海 · 纳土纳群岛 · 爪哇海",
+  "descriptionEn": "South China Sea · Natuna Islands · Java Sea",
+  "depCountry": "china",
+  "arrCountry": "indonesia",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA977",
+    "aircraft": "Airbus A330-300",
+    "depIata": "PEK",
+    "arrIata": "CGK",
+    "durationMin": 404
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "南海",
+      "nameEn": "South China Sea",
+      "lon": 113,
+      "lat": 16
+    },
+    {
+      "kind": "feature",
+      "name": "纳土纳群岛",
+      "nameEn": "Natuna Islands",
+      "lon": 108.3,
+      "lat": 4
+    },
+    {
+      "kind": "feature",
+      "name": "爪哇海",
+      "nameEn": "Java Sea",
+      "lon": 106,
+      "lat": -3
+    },
+    {
+      "kind": "city",
+      "id": "cgk",
+      "name": "雅加达苏加诺哈达",
+      "nameEn": "Jakarta Soekarno-Hatta",
+      "lat": -6.1256,
+      "lon": 106.6559,
+      "airport": true
+    }
+  ]
+}

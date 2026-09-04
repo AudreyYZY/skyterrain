@@ -1,0 +1,47 @@
+{
+  "id": "can-bkk",
+  "name": "广州 — 曼谷",
+  "nameEn": "Guangzhou — Bangkok",
+  "description": "南岭以南 · 中南半岛北部山地 · 呵叻高原 · 湄南河三角洲",
+  "descriptionEn": "South of the Nanling range · Northern Indochina highlands · Khorat Plateau · Chao Phraya Delta",
+  "depCountry": "china",
+  "arrCountry": "thailand",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3081",
+    "aircraft": "Airbus A350-900",
+    "depIata": "CAN",
+    "arrIata": "BKK",
+    "durationMin": 185
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "khorat-plateau"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chao-phraya-delta"
+    },
+    {
+      "kind": "city",
+      "id": "bkk",
+      "name": "曼谷素万那普",
+      "nameEn": "Bangkok Suvarnabhumi",
+      "lat": 13.6900,
+      "lon": 100.7501,
+      "airport": true
+    }
+  ]
+}

@@ -5017,6 +5017,104 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
+  // ============================================================
+  // 国际 · 中国国际航线 Phase 3 批A（东亚/东南亚：韩国/蒙古/越南/泰国/马来西亚/新加坡）
+  // ============================================================
+
+  "pek-icn": {
+    study: {
+    "zh-CN":
+      "北京飞首尔，是从华北平原东端越过渤海与黄海，抵达朝鲜半岛西海岸的一段短程航线。起飞后不久，脚下的陆地让位给渤海——中国唯一近乎被陆地完全环绕的内海，海面上常能看到往来的货轮与近海养殖区的浮标带。渤海东端与黄海相连，黄海是一片平均水深仅约44米的浅海，因含沙量高、海水常年浑黄而得名。越过黄海，飞机开始下降，进入朝鲜半岛西海岸——这一带潮差大、滩涂宽阔，是东亚规模较大的淤泥质海岸带之一。仁川国际机场建在西海岸外的永宗岛上，四周仍能看到成片滩涂与围海造陆留下的痕迹。不到两小时，一趟航班把华北的大平原与朝鲜半岛西海岸的浅海滩涂连在了一起。",
+    "en-US":
+      "Beijing to Seoul is a short hop from the eastern edge of the North China Plain, across the Bohai and Yellow Seas, to the west coast of the Korean Peninsula. Soon after take-off the land gives way to the Bohai Sea — the one inland sea in China almost fully enclosed by land, its surface dotted with cargo ships and the buoys of coastal aquaculture. The eastern end of the Bohai opens into the Yellow Sea, a shallow sea with an average depth of only about 44 metres, named for the silt-laden, permanently yellow-brown colour of its water. Past the Yellow Sea the plane begins its descent onto the west coast of the Korean Peninsula, a stretch of coastline with a large tidal range and wide mudflats, one of East Asia's more extensive muddy tidal coasts. Incheon International Airport is built on Yeongjong Island off that coast, still ringed by mudflats and the traces of land reclaimed from the sea. In under two hours, one flight links the great plain of North China to the shallow tidal coast of the Korean Peninsula.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到首尔约两小时，时差1小时（首尔快1小时）。首尔是韩国首都和最大城市，仁川机场有机场快线（AREX）直达市区，也可乘出租车或大巴，车程约1小时。市内地铁网络发达，交通卡（T-money）通用。景福宫、北村韩屋村、明洞、汉江公园是常见的游览点；饮食以米饭、泡菜、烤肉、部队汤为代表，多数正餐店提供小菜免费续加。入境免签政策以韩国法务部最新公布为准，出发前建议确认。首尔四季分明，冬季干冷，春秋温和，是较适宜出行的季节；夏季多雨闷热。",
+    "en-US":
+      "Beijing to Seoul takes about two hours, with a one-hour time difference (Seoul is one hour ahead). Seoul is South Korea's capital and largest city; Incheon Airport has the AREX express train straight into downtown, or you can take a taxi or airport bus, about an hour either way. The city's subway network is extensive, and a T-money card works across it. Gyeongbokgung Palace, the Bukchon Hanok Village, Myeongdong and the Han River parks are common stops; the food centres on rice, kimchi, grilled meat and stews, and most set meals come with free refills of side dishes. Visa-free entry rules should be checked against the latest notices from Korea's Ministry of Justice before you travel. Seoul has four distinct seasons — dry, cold winters and mild spring and autumn are the most comfortable times to visit, while summer is rainy and humid.",
+    },
+  },
+
+  "can-bkk": {
+    study: {
+    "zh-CN":
+      "广州飞曼谷，从华南越过中南半岛北部山地，抵达湄南河三角洲。起飞后向西南飞越南岭以南的丘陵地带，随后进入中南半岛北部——山岭连绵、河谷深切，是东南亚地形最破碎的区域之一。跨过这片山地后，地势逐渐平缓，飞机进入呵叻高原：泰国东北部一片占国土面积近三分之一的广袤砂岩台地，传统上称为“依善”地区，高原边缘的山脉把它与泰国中部平原分隔开来。越过呵叻高原西缘，飞机开始下降，进入湄南河三角洲——湄南河入海口长期淤积形成的低平原，泰国首都曼谷即建于三角洲之上，部分区域海拔不足两米。三个多小时的航程，把中国南方的丘陵地带与东南亚大河三角洲连在了一起。",
+    "en-US":
+      "Guangzhou to Bangkok crosses the mountains of the northern Indochinese Peninsula on the way from southern China to the Chao Phraya Delta. After take-off the flight crosses the hills south of the Nanling range, then enters the northern Indochinese Peninsula, a belt of continuous ridges and deeply cut valleys, one of the most rugged parts of mainland Southeast Asia. Beyond these mountains the land flattens out onto the Khorat Plateau, a broad sandstone tableland covering nearly a third of Thailand's land area in the country's north-east, traditionally known as the Isan region; ranges along its rim separate it from the central plain of Thailand. Past the western edge of the Khorat Plateau the plane begins its descent into the Chao Phraya Delta, a low plain built up by long-term silting at the mouth of the Chao Phraya River. Bangkok, Thailand's capital, is built on this delta, with parts of the city less than two metres above sea level. In a little over three hours, the flight links the hill country of southern China to a great river delta in Southeast Asia.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到曼谷约三小时。曼谷终年高温，3–5月最热，6–10月为雨季，11–2月相对凉爽干燥，是较适宜出游的季节。市内交通以BTS空铁、MRT地铁和嘟嘟车为主，机场快线连接素万那普机场与市区。大皇宫、玉佛寺、卧佛寺是热门景点，进入寺庙需着装得体（不可穿短裤短裙、须遮肩）、脱鞋入内；佛像是宗教圣物，不可攀爬拍照或以不敬姿势合影。街头小吃丰富，冬阴功、青咖喱、芒果糯米饭是代表菜式。持中国护照可享落地签或免签政策，具体以泰国外交部最新公布为准，出发前建议确认。",
+    "en-US":
+      "Guangzhou to Bangkok takes about three hours. Bangkok is hot year-round, hottest from March to May, with a rainy season from June to October and cooler, drier weather from November to February — the most comfortable time to visit. City transport runs on the BTS Skytrain, MRT subway and tuk-tuks, and an airport rail link connects Suvarnabhumi Airport to downtown. The Grand Palace, Wat Phra Kaew and Wat Pho are popular sights; temple visits require modest dress (no shorts or short skirts, shoulders covered) and shoes off before entering. Buddha images are religious objects — do not climb on them or pose disrespectfully for photos. Street food is abundant, with tom yum soup, green curry and mango sticky rice as signature dishes. Visa-on-arrival or visa-free entry may apply for Chinese passport holders; check the latest notices from Thailand's Ministry of Foreign Affairs before you travel.",
+    },
+  },
+
+  "pek-ubn": {
+    study: {
+    "zh-CN":
+      "北京飞乌兰巴托，是国产大飞机C919投入国际航线运营的首条常态化航班，也是一条从华北平原直抵蒙古高原腹地的航线。起飞后，飞机很快越过内蒙古高原——地势开阔平缓的草原台地，锡林郭勒一带的草场和浑善达克沙地由此向北延展。继续向西北飞行，草原逐渐让位于戈壁——一片以砾石荒漠为主、植被稀疏的干旱地带，横跨中国北部与蒙古南部，是世界第六大沙漠。越过戈壁后，地势重新起伏，图拉河谷出现在眼前：图拉河发源于肯特山，向西南流经这片河谷，蒙古首都乌兰巴托就坐落在河谷之中，四面被低山环抱。一个多小时的航程，从平坦的华北平原，飞到了海拔约1300米的高原河谷城市。",
+    "en-US":
+      "Beijing to Ulaanbaatar is the first route on which China's domestically built C919 entered scheduled international service, and it flies straight from the North China Plain into the heart of the Mongolian Plateau. Soon after take-off the flight crosses the Inner Mongolian Plateau, an open, gently rolling grassland tableland where the pastures around Xilingol and the Hunshandake sands stretch away to the north. Continuing north-west, the grassland gives way to the Gobi, an arid belt of gravel desert with sparse vegetation that spans northern China and southern Mongolia and ranks as the world's sixth-largest desert. Beyond the Gobi the land rises again into the Tuul River valley: the Tuul rises in the Khentii Mountains and flows south-west through this valley, where Mongolia's capital, Ulaanbaatar, sits ringed by low hills. In a little over an hour, the flight goes from the flat North China Plain to a plateau river-valley city at about 1,300 metres.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到乌兰巴托约两小时十五分钟，由国产C919执飞，是这款国产客机的首条国际定期航线。乌兰巴托海拔约1300米，属典型大陆性气候，冬季严寒漫长（可低至零下30摄氏度以下），夏季短暂凉爽，6–8月是较适宜前往的季节，需注意昼夜温差大。市区景点包括甘丹寺（藏传佛教寺院）、成吉思汗广场、纳赖罕历史文化公园；进入寺庙须顺时针绕行、不可用手触摸法器或佛像。多数游客的行程会延伸到市郊草原，体验蒙古包住宿与骑马；敬酒时按传统习俗用无名指蘸酒弹向天地，接受哈达和奶食时宜双手接过。签证政策以中蒙双边协定及蒙古外交部最新公布为准。",
+    "en-US":
+      "Beijing to Ulaanbaatar takes about two hours fifteen minutes, flown by the domestically built C919 — the aircraft's first scheduled international route. At about 1,300 metres, Ulaanbaatar has a sharply continental climate: long, severe winters (temperatures can drop below minus 30°C) and short, cool summers, with June–August the more comfortable season to visit; expect a large swing between day and night temperatures. In-town sights include Gandantegchinlen Monastery (a Tibetan Buddhist monastery), Chinggis Khaan Square and Nairamdal Historical and Cultural Park; visiting a monastery calls for walking clockwise and not touching ritual objects or images by hand. Most itineraries extend out to the steppe around the city for a ger stay and horseback riding; in the traditional toast, a drop of drink is flicked skyward and earthward with the ring finger, and a khadag scarf or dairy offering is received with both hands. Visa rules follow the China–Mongolia bilateral agreement and the latest notices from Mongolia's Ministry of Foreign Affairs.",
+    },
+  },
+
+  "pvg-han": {
+    study: {
+    "zh-CN":
+      "上海飞河内，从长江以南的丘陵地带一路向西南，跨过南岭抵达红河三角洲。起飞后，飞机进入江南丘陵——长江以南、南岭以北的低山丘陵地带，黄山、庐山等断块山地零散分布其间。继续向西南，飞机翻越南岭——一条大致东西走向的山脉，是长江水系与珠江水系的分水岭，也是中国地理上华中与华南的传统分界。越过南岭后，地势逐渐降低，进入中南半岛北部山地，河流深切、地形起伏明显。最后，飞机下降进入红河三角洲——红河及其支流长期携带泥沙淤积而成的三角形平原，越南首都河内就坐落在三角洲西北部边缘。三个多小时的航程，把长江以南的丘陵与东南亚大河三角洲连接了起来。",
+    "en-US":
+      "Shanghai to Hanoi flies south-west from the hill country south of the Yangtze, across the Nanling range, to the Red River Delta. After take-off the flight crosses the Jiangnan Hills, the low hill country south of the Yangtze and north of the Nanling, dotted with fault-block mountains such as Huangshan and Lushan. Continuing south-west, the flight crosses the Nanling, a roughly east–west range that forms the watershed between the Yangtze and Pearl River systems and traditionally marks the boundary between central and southern China. Beyond the Nanling the land descends into the mountains of northern mainland Southeast Asia, cut by deep river valleys with pronounced relief. Finally the plane descends into the Red River Delta, a triangular plain built up by long-term silting from the Red River and its tributaries; Vietnam's capital, Hanoi, sits at the delta's north-western edge. In a little over three hours, the flight links the hill country south of the Yangtze to a great river delta in Southeast Asia.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到河内约三小时十五分钟。河内属热带季风气候，11月至次年3月较凉爽干燥，是较适宜的旅游季节；4–10月闷热多雨。市内交通以出租车、网约车（Grab）和摩托车为主，老城区街道狭窄、摩托车流量大，过马路建议匀速直行，让车流自行避让。还剑湖、老城36行街、文庙（越南首座国子监）是常见的游览点；进入寺庙须脱鞋、着装得体。越南盾现金在小商铺、路边摊仍是主要支付方式，随身备一些零钞较为方便。当地咖啡文化发达，滴漏咖啡（含蛋咖啡等衍生品种）是特色饮品。签证政策以越南外交部/公安部最新公布为准，出发前建议确认。",
+    "en-US":
+      "Shanghai to Hanoi takes about three hours fifteen minutes. Hanoi has a tropical monsoon climate, cooler and drier from November to March — the more comfortable season for visiting — and hot and rainy from April to October. City transport runs mainly on taxis, ride-hailing apps (Grab) and motorbikes; in the narrow streets of the Old Quarter, with heavy motorbike traffic, the usual advice for crossing is to walk at a steady pace and let the traffic flow around you. Hoan Kiem Lake, the 36 streets of the Old Quarter, and the Temple of Literature (Vietnam's first national academy) are common stops; temples require shoes off and modest dress. Vietnamese dong cash is still the main way to pay at small shops and street stalls, so carrying some small bills helps. The local coffee culture is strong, with drip coffee — including variants such as egg coffee — a signature drink. Visa rules follow the latest notices from Vietnam's Ministry of Foreign Affairs / Ministry of Public Security; check before you travel.",
+    },
+  },
+
+  "pek-kul": {
+    study: {
+    "zh-CN":
+      "北京飞吉隆坡，是一条纵贯东亚与东南亚大陆的长航线，从华北平原一路飞越云贵高原、中南半岛，抵达马来半岛。起飞后，飞机先越过华北平原与黄土高原，随后进入云贵高原——中国西南一片以喀斯特地貌为主的高原，石林、溶洞广布。继续向南，飞机跨过中南半岛，沿途山地与河谷交替出现，航程大部分时间在陆地上空。接近赤道时，飞机进入马来半岛，蒂蒂旺沙山脉出现在下方——这是马来半岛的脊梁山系，呈西北—东南走向绵延约480公里，把半岛分成东西两侧不同的气候区。飞机沿山脉南段下降，吉隆坡就坐落在山脉西侧山麓地带。近六个小时的航程，跨越了近40个纬度，从温带平原飞到了赤道附近的热带城市。",
+    "en-US":
+      "Beijing to Kuala Lumpur is a long haul spanning mainland East and Southeast Asia, crossing the Yunnan–Guizhou Plateau and the Indochinese Peninsula on the way from the North China Plain to the Malay Peninsula. After take-off the flight crosses the North China Plain and the Loess Plateau, then enters the Yunnan–Guizhou Plateau, a region of south-west China dominated by karst landforms, with stone forests and cave systems widespread. Continuing south, the flight crosses the Indochinese Peninsula, with mountains and river valleys alternating below for most of the journey, nearly all of it over land. Approaching the equator, the flight reaches the Malay Peninsula, where the Titiwangsa Mountains come into view — the peninsula's spine range, running north-west to south-east for about 480 km and splitting it into climatically distinct eastern and western sides. The plane descends along the southern end of the range, and Kuala Lumpur sits in the foothills on its western flank. In almost six hours the flight crosses nearly 40 degrees of latitude, from a temperate plain to a tropical city near the equator.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到吉隆坡约六小时，两地无时差，均为UTC+8。吉隆坡属热带雨林气候，全年高温多雨，无明显干湿季之分，出行随时需备雨具。市内交通以轻轨（LRT/MRT）和网约车为主；双子塔、独立广场、黑风洞是热门景点，黑风洞需爬约272级台阶，寺庙区域衣着应得体。吉隆坡是多元族群社会，华人、马来人、印度人聚居区风俗各异：进入清真寺须脱鞋、女性通常需披罩袍并遮盖头发；马来餐厅多为清真（Halal），不供应猪肉和酒类，用餐前留意标识。中国护照持有者可享受落地签或免签政策，具体以马来西亚移民局最新公布为准。",
+    "en-US":
+      "Beijing to Kuala Lumpur takes about six hours, with no time difference — both cities are on UTC+8. Kuala Lumpur has a tropical rainforest climate: hot and rainy year-round with no clearly defined dry season, so it's worth carrying rain gear whenever you go. City transport runs mainly on LRT/MRT light rail and ride-hailing apps; the Petronas Twin Towers, Merdeka Square and the Batu Caves are popular sights — Batu Caves involves climbing about 272 steps, and modest dress is expected in the temple area. Kuala Lumpur is a multi-ethnic society, and customs vary between its Chinese, Malay and Indian communities: mosques require shoes off, and women are usually expected to wear a robe and cover their hair; Malay restaurants are mostly halal and serve neither pork nor alcohol, so check signage before ordering. Chinese passport holders may qualify for visa-on-arrival or visa-free entry; check the latest notices from Malaysia's Immigration Department.",
+    },
+  },
+
+  "pek-sin": {
+    study: {
+    "zh-CN":
+      "北京飞新加坡，是这份航线库里最长的一条国际航线，从华北平原一路飞越云贵高原、中南半岛与马来半岛，抵达赤道附近的岛国新加坡。航线前半段与北京—吉隆坡航班基本重合：越过华北平原、黄土高原，进入以喀斯特地貌著称的云贵高原，再跨过中南半岛，最后抵达马来半岛。飞机沿马来半岛的脊梁山脉——蒂蒂旺沙山脉南段下降，山脉呈西北—东南走向，把半岛分成东西两侧。越过半岛最南端，飞机跨过一道狭窄的海峡，进入新加坡——一座国土面积不到800平方公里的赤道岛国。岛屿中央保留着一片茂密的热带雨林，中央集水区自然保护区里的麦里芝蓄水池等水库，既是重要水源，也是岛上少见的原始丛林景观。超过六个小时的航程，从温带大陆一路飞到了赤道岛国。",
+    "en-US":
+      "Beijing to Singapore is the longest international route in this collection, crossing the Yunnan–Guizhou Plateau, the Indochinese Peninsula and the Malay Peninsula on the way from the North China Plain to the equatorial island state of Singapore. The first half of the route largely overlaps with the Beijing–Kuala Lumpur flight: over the North China Plain and the Loess Plateau, into the karst-dominated Yunnan–Guizhou Plateau, across the Indochinese Peninsula, and on to the Malay Peninsula. The plane descends along the southern end of the peninsula's spine range, the Titiwangsa Mountains, which run north-west to south-east and divide the peninsula into east and west. Past the southern tip of the peninsula the flight crosses a narrow strait into Singapore, an equatorial island state of under 800 square kilometres. The centre of the island still holds a block of dense tropical rainforest; reservoirs such as MacRitchie in the Central Catchment Nature Reserve serve both as a key water source and as one of the island's few remaining patches of primary jungle. Over six hours, the flight goes all the way from the temperate mainland to an island nation on the equator.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到新加坡约六小时十分钟，两地无时差，均为UTC+8。新加坡地处赤道附近，全年高温潮湿，午后常有阵雨，出行随身带伞较方便。市内地铁（MRT）网络发达，覆盖大部分景点，出租车与网约车同样便捷。滨海湾花园、鱼尾狮公园、牛车水、小印度、甘榜格南是常见的游览区域，各具不同族群的饮食与宗教特色。新加坡对口香糖进口和随地吐痰、乱丢垃圾等行为管理严格，公共场所违规最高可处罚款；地铁车厢内禁止饮食。多元宗教场所（华人庙宇、清真寺、印度教庙宇）参观均应着装得体、遵守各自的进出习俗。中国护照持有者可凭电子签证或既有互免政策入境，具体以新加坡移民与关卡局最新公布为准。",
+    "en-US":
+      "Beijing to Singapore takes about six hours ten minutes, with no time difference — both cities are on UTC+8. Sitting near the equator, Singapore is hot and humid year-round, with frequent afternoon showers, so carrying an umbrella is a good idea. The city's MRT network is extensive and covers most attractions, and taxis and ride-hailing apps are equally convenient. Gardens by the Bay, Merlion Park, Chinatown, Little India and Kampong Glam are common areas to explore, each with its own community's food and religious character. Singapore strictly regulates chewing-gum imports and behaviour such as spitting or littering in public, with fines for violations, and eating or drinking is not allowed on the MRT. Places of worship across its multiple religious communities — Chinese temples, mosques, Hindu temples — call for modest dress and following each site's customs on entering and moving through it. Chinese passport holders can typically enter on an e-visa or existing mutual arrangements; check the latest notices from Singapore's Immigration & Checkpoints Authority before travelling.",
+    },
+  },
+
+  // ============================================================
+  // 国际 · 中国国际航线 Phase 3 批D（西欧：英国/法国/德国/荷兰/比利时）
+  // ============================================================
+
   "pek-lhr": {
     study: {
     "zh-CN":
@@ -5175,6 +5273,144 @@ export const ROUTE_NARRATION: Record<
       "Beijing to Toronto takes about 12 hours 40 minutes on an Air China Boeing 777. The time difference is 12–13 hours (12 hours during Canadian Eastern Daylight Time, 13 hours during Standard Time). Toronto has warm, humid summers and cold, snowy winters, with spring and autumn the best times to visit." +
       "Pearson Airport is about 25 km from downtown; the UP Express train takes about 25 minutes direct to Union Station, and buses or taxis are also available. Toronto's public transit (TTC subway, streetcars and buses) runs on one shared fare system, and a contactless bank card works directly on board. The CN Tower, the Lake Ontario waterfront and Old City Hall are mostly reachable on foot or by streetcar." +
       "Chinese citizens need a visitor visa for Canada well in advance — Chinese passports generally don't qualify for the eTA and require a full temporary resident visa — apply at least a month ahead, and check the latest requirements from Immigration, Refugees and Citizenship Canada (IRCC). Declare belongings and cash honestly on arrival.",
+    },
+  },
+
+  "pek-cgk": {
+    study: {
+    "zh-CN":
+      "北京飞雅加达，是从东亚大陆一路向南，穿过整个中南半岛以东的南海，抵达赤道附近的爪哇岛。起飞后先飞越中国南部，进入南海——西太平洋最大的边缘海之一，海底散布着众多岛礁。" +
+      "继续向南，飞机掠过南海南部的纳土纳群岛——印度尼西亚最北端的岛群，坐落在南海与马六甲海峡之间的航运要道上。再往南，海面逐渐过渡为爪哇海：这是一片被苏门答腊、爪哇、加里曼丹三大岛环抱的浅海，水深大多不足百米，是巽他陆架的一部分（末次冰期海平面较低时曾是陆地）。" +
+      "飞机最终降落在爪哇岛西北岸的雅加达。从中国华北平原到赤道附近的热带岛屿，这趟航班跨越了近40个纬度。",
+    "en-US":
+      "Beijing to Jakarta flies almost due south from mainland East Asia, crossing the South China Sea east of the Indochina peninsula to reach an island near the equator. Soon after take-off the flight crosses southern China and enters the South China Sea — one of the largest marginal seas in the western Pacific, its floor dotted with islands and reefs." +
+      "Farther south the flight passes the Natuna Islands, Indonesia's northernmost island group, sitting astride the shipping lane between the South China Sea and the Strait of Malacca. Beyond that the water becomes the Java Sea, a shallow sea enclosed by Sumatra, Java and Borneo — mostly under 100 metres deep and part of the Sunda Shelf, land during the last ice age when sea levels were lower." +
+      "The plane finally lands at Jakarta on the north-west coast of Java. From the North China Plain to a tropical island near the equator, the flight crosses nearly 40 degrees of latitude.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到雅加达约6小时45分钟，时差1小时（印尼西部时间比北京晚1小时，印尼不实行夏令时）。雅加达全年高温潮湿，属热带季风气候，出行建议轻便速干衣物，雨季（11月至次年3月）常有短时强降雨。" +
+      "苏加诺哈达机场距市中心约20公里，机场铁路（Kereta Bandara）约1小时直达市区，也有Damri机场大巴。市内交通拥堵明显，网约车和快速公交（TransJakarta）是常用出行方式。国家纪念塔、老城区、伊斯蒂克拉尔清真寺是市内代表性景点。" +
+      "中国公民赴印尼的入境政策近年多次调整，出行前请以印尼移民局最新公布为准；随身携带充足现金和常用药品，饮用瓶装水。",
+    "en-US":
+      "Beijing to Jakarta takes about 6 hours 45 minutes, with a 1-hour time difference (Western Indonesia Time is 1 hour behind Beijing; Indonesia does not observe daylight saving). Jakarta is hot and humid year-round under a tropical monsoon climate — pack light, quick-dry clothing, and expect sudden heavy downpours during the rainy season (November to March)." +
+      "Soekarno-Hatta Airport is about 20 km from the city centre; the airport railway (Kereta Bandara) takes about an hour into town, and Damri airport buses also run. Traffic congestion is significant, so ride-hailing apps and the TransJakarta bus rapid transit system are commonly used. The National Monument, the Old Town (Kota Tua) and Istiqlal Mosque are among the city's landmark sights." +
+      "Entry requirements for Chinese citizens visiting Indonesia have changed several times in recent years — check Indonesia's immigration authority for the latest rules before you travel, carry enough cash and any regular medication, and stick to bottled water.",
+    },
+  },
+
+  "can-mnl": {
+    study: {
+    "zh-CN":
+      "广州飞马尼拉，向东南横跨南海，直抵吕宋岛。起飞后不久即进入南海——飞机全程大部分时间都在这片海域上空，海面上零星可见渔船与岛礁。" +
+      "临近菲律宾时，飞机掠过吕宋岛西部的皮纳图博火山：1991年的喷发是20世纪全球第二大火山喷发，喷出的大量火山灰一度使全球平均气温短暂下降；如今火山口积水形成了一座宁静的火口湖。" +
+      "越过皮纳图博火山后不久，飞机便转向东南方向进近，降落在吕宋岛中西部的马尼拉。从中国大陆到菲律宾群岛，一趟航班穿越了南海最繁忙的空中航线之一。",
+    "en-US":
+      "Guangzhou to Manila flies south-east across the South China Sea, straight to Luzon Island. Soon after take-off the plane enters the South China Sea, spending most of the flight over open water dotted with fishing boats and reefs and islets." +
+      "As it nears the Philippines the flight passes Mount Pinatubo on western Luzon: its 1991 eruption was the second-largest volcanic eruption of the 20th century, and the huge amount of ash it threw into the atmosphere briefly cooled the global average temperature; the crater now holds a calm caldera lake." +
+      "Shortly after passing Pinatubo the plane turns south-east on approach and lands at Manila in west-central Luzon. From mainland China to the Philippine archipelago, this flight crosses one of the busiest air corridors over the South China Sea.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到马尼拉约2小时35分钟，两地无时差（均为UTC+8）。马尼拉全年高温多湿，属热带气候，5-10月为雨季，台风频发，出行前建议留意天气预警。" +
+      "尼诺伊·阿基诺国际机场距市中心约7公里，但马尼拉市区交通常年拥堵，机场到市区车程视路况可能长达1小时以上；网约车和机场出租车是常见选择。市内标志性景点包括西班牙殖民时期的王城区（Intramuros）、黎刹公园，吉普尼（jeepney）是当地特色公共交通。" +
+      "菲律宾近年对中国公民实行短期免签政策，具体天数与条件以菲律宾移民局最新公布为准，出行前建议再次核实。",
+    "en-US":
+      "Guangzhou to Manila takes about 2 hours 35 minutes, with no time difference (both are UTC+8). Manila is hot and humid year-round under a tropical climate, with a rainy season from May to October that brings frequent typhoons — check weather warnings before you travel." +
+      "Ninoy Aquino International Airport is only about 7 km from the city centre, but Manila traffic is chronically congested, so the ride into town can take over an hour depending on conditions; ride-hailing apps and airport taxis are common choices. Landmark sights include the Spanish colonial-era Intramuros and Rizal Park, and jeepneys are the city's distinctive form of public transport." +
+      "The Philippines has in recent years offered short-term visa-free entry for Chinese citizens — check the Philippine Bureau of Immigration's latest rules on the exact duration and conditions before you travel.",
+    },
+  },
+
+  "pek-nqz": {
+    study: {
+    "zh-CN":
+      "北京飞阿斯塔纳，向西横穿中国北方与中亚，全程都在中纬度大陆腹地飞行。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
+      "继续向西，飞机进入准噶尔盆地——天山与阿尔泰山之间一片被沙漠和绿洲环绕的内陆盆地，中国最大的油田之一克拉玛依便坐落于此。跨过中哈边境后，地貌转为萨雷阿尔卡草原：哈萨克丘陵腹地一片起伏平缓的干旱草原，是哈萨克斯坦国土面积最大的地理单元之一，历史上是欧亚草原游牧文化的重要组成部分。" +
+      "飞机最终降落在草原深处的阿斯塔纳——一座2024年更名前后延续着努尔苏丹旧称的年轻都城，坐落在伊希姆河畔的平坦草原上。这趟航班穿越了从戈壁到欧亚大草原的连续地貌带。",
+    "en-US":
+      "Beijing to Astana flies west across northern China and Central Asia, staying over mid-latitude continental interior the whole way. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, a broad expanse of gravel desert stretching to the horizon." +
+      "Farther west the plane crosses the Junggar Basin, an inland basin ringed by desert and oases between the Tianshan and Altai ranges, home to Karamay, one of China's largest oil fields. After crossing the China-Kazakhstan border the landscape becomes the Saryarka Steppe, a gently rolling arid steppe at the heart of the Kazakh Uplands and one of Kazakhstan's largest geographic regions, historically part of the wider Eurasian steppe nomadic world." +
+      "The plane finally lands at Astana, a young capital on the flat steppe beside the Ishim River. From the Gobi to the Eurasian steppe, this flight crosses a continuous belt of continental interior landscapes.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到阿斯塔纳约5小时40分钟，时差3小时（哈萨克斯坦不实行夏令时）。阿斯塔纳是世界上最寒冷的首都之一，属典型温带大陆性气候，冬季严寒（可低至-30℃以下）、夏季炎热干燥，出行务必按季节备足保暖或防晒衣物。" +
+      "阿斯塔纳国际机场距市中心约17公里，有机场大巴与出租车可达。市内可参观可汗沙特尔购物娱乐中心、巴伊杰列克观景塔等现代地标建筑，草原风情浓郁的萨雷阿尔卡地区也是了解哈萨克游牧文化的窗口。" +
+      "这条中哈直飞航线由国航2026年新开通，班次尚在调整中，出行前建议再次核实班期。哈萨克斯坦对中国公民的免签/落地签政策以哈萨克斯坦外交部最新公布为准。",
+    "en-US":
+      "Beijing to Astana takes about 5 hours 40 minutes, with a 3-hour time difference (Kazakhstan does not observe daylight saving). Astana is one of the coldest capital cities in the world, with a classic temperate continental climate — bitterly cold winters (sometimes below -30°C) and hot, dry summers, so pack for the season accordingly." +
+      "Astana International Airport is about 17 km from the city centre, reachable by airport bus or taxi. In the city, the Khan Shatyr entertainment centre and the Bayterek observation tower are modern landmarks, and the surrounding Saryarka steppe offers a window into Kazakh nomadic culture." +
+      "This nonstop China-Kazakhstan route was newly launched by Air China in 2026 and its schedule may still be settling in — reconfirm before you travel. Visa-free and visa-on-arrival policies for Chinese citizens visiting Kazakhstan are subject to change; check Kazakhstan's Ministry of Foreign Affairs for the latest rules.",
+    },
+  },
+
+  "pek-ist": {
+    study: {
+    "zh-CN":
+      "北京飞伊斯坦布尔，向西横穿整个亚欧大陆腹地，是中国到欧洲最长的直飞航线之一。起飞后先经过蒙古高原南缘的戈壁荒漠，随后进入中亚腹地——哈萨克丘陵一带的萨雷阿尔卡草原，地势平缓开阔、干旱少雨，是欧亚大草原带的一段。" +
+      "飞越中亚后，飞机进入安纳托利亚东部山地，掠过阿拉拉特山——土耳其最高峰，一座海拔约5137米的层状火山，山顶终年积雪，是安纳托利亚高原东缘最醒目的地标。再往西，地貌过渡为中安纳托利亚高原：一片被古老山系环绕的内陆高原，地表分布着盐湖与火山地貌，是安纳托利亚半岛的地理核心。" +
+      "飞机最终降落在伊斯坦布尔——这座横跨博斯普鲁斯海峡、地跨亚欧两大洲的城市。一趟航班，从中国的首都飞抵了亚欧大陆的另一端。",
+    "en-US":
+      "Beijing to Istanbul flies west across the interior of the whole Eurasian landmass, one of the longest nonstop routes between China and Europe. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the heart of Central Asia — the Saryarka Steppe of the Kazakh Uplands, a broad, flat, arid landscape that forms part of the wider Eurasian steppe belt." +
+      "Past Central Asia the flight enters the highlands of eastern Anatolia and passes Mount Ararat, Turkey's highest peak — a stratovolcano roughly 5,137 metres high, capped year-round with snow and the most prominent landmark on the eastern edge of the Anatolian Plateau. Farther west the landscape becomes the Central Anatolian Plateau, an inland plateau ringed by ancient mountain ranges, dotted with salt lakes and volcanic terrain, and the geographic core of the Anatolian peninsula." +
+      "The plane finally lands at Istanbul, a city that straddles the Bosphorus Strait and spans both Asia and Europe. One flight has carried the capital of China to the far end of the Eurasian landmass.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到伊斯坦布尔约10小时20分钟，时差5小时（土耳其自2016年起全年使用东三区时间，不再切换夏令时）。伊斯坦布尔四季分明，夏季干热、冬季湿冷，春秋最适合游览。" +
+      "伊斯坦布尔机场距市中心约35公里，M11地铁线可直达市区并换乘其他线路，也有机场大巴（HAVAIST）。圣索菲亚大教堂、蓝色清真寺、大巴扎是市内三大必访地标，均集中在老城区，步行可达。" +
+      "土耳其对多国公民提供在线电子签证（e-Visa），中国公民具体签证政策以土耳其外交部/驻华使领馆最新公布为准，建议提前在线申请。随身留意人多拥挤区域的财物安全。",
+    "en-US":
+      "Beijing to Istanbul takes about 10 hours 20 minutes, with a 5-hour time difference (Turkey has used a fixed UTC+3 year-round since 2016 and no longer switches for daylight saving). Istanbul has distinct seasons — hot, dry summers and cool, wet winters — with spring and autumn best for sightseeing." +
+      "Istanbul Airport is about 35 km from the city centre; the M11 metro line runs directly into town with connections to other lines, and HAVAIST airport buses also operate. The Hagia Sophia, the Blue Mosque and the Grand Bazaar are the city's three must-see landmarks, all clustered in the old town within walking distance of each other." +
+      "Turkey offers an online e-Visa for citizens of many countries; check Turkey's Ministry of Foreign Affairs or its consulates for the latest rules for Chinese citizens and apply online in advance. Keep an eye on your belongings in crowded tourist areas.",
+    },
+  },
+
+  "can-syd": {
+    study: {
+    "zh-CN":
+      "广州飞悉尼，向东南跨越南海、菲律宾群岛与珊瑚海，最终抵达澳大利亚东南沿岸。起飞后先进入南海，随后掠过菲律宾南部的阿波山——菲律宾第一高峰，海拔约2954米，是一座休眠层状火山，山体覆盖热带雨林，栖息着国鸟菲律宾雕。" +
+      "越过菲律宾群岛后，飞机进入珊瑚海：西南太平洋一片以珊瑚礁密布著称的边缘海，大堡礁便延伸至此海域的西侧，是全球面积最大的珊瑚礁系统。飞机继续南下，掠过澳大利亚东南昆士兰海岸的玻璃屋山——一组由古火山颈风化残余形成的孤立岩峰，因18世纪航海家詹姆斯·库克远眺形似当时的玻璃熔炉而得名。" +
+      "飞机最终降落在悉尼——澳大利亚人口最多的城市，坐落在杰克逊港畔。一趟航班，跨越了大半个西太平洋。",
+    "en-US":
+      "Guangzhou to Sydney flies south-east across the South China Sea, the Philippine archipelago and the Coral Sea, reaching Australia's south-east coast. After take-off the flight enters the South China Sea, then passes Mount Apo in the southern Philippines — the country's highest peak at about 2,954 metres, a dormant stratovolcano cloaked in tropical rainforest and home to the Philippine eagle, the national bird." +
+      "Beyond the Philippine archipelago the flight enters the Coral Sea, a south-west Pacific marginal sea known for its dense coral reefs — the Great Barrier Reef, the world's largest reef system, extends along its western edge. Continuing south the plane passes the Glass House Mountains on the south-east Queensland coast, a cluster of isolated volcanic plugs left behind by erosion, named by navigator James Cook in the 18th century for their resemblance to the glass furnaces of his time." +
+      "The plane finally lands at Sydney, Australia's most populous city, on the shores of Port Jackson. One flight has crossed most of the western Pacific.",
+    },
+    travel: {
+    "zh-CN":
+      "广州到悉尼约10小时，时差2-3小时（澳大利亚东部实行夏令时，10月至次年4月与北京时差3小时，其余时间2小时）。悉尼四季与北半球相反，12-2月为夏季，6-8月为冬季，出行前请按当地季节备衣物。" +
+      "悉尼机场距市中心约8公里，机场火车线（Airport Link）约13分钟直达市中心。歌剧院、海港大桥、邦迪海滩是市内三大代表性景点，公共交通推荐使用Opal交通卡。" +
+      "中国公民赴澳大利亚须提前在线申请电子签证（600类旅游签证等），具体材料与审批时长以澳大利亚内政部最新公布为准，建议预留至少数周办理时间。",
+    "en-US":
+      "Guangzhou to Sydney takes about 10 hours, with a 2-3 hour time difference (eastern Australia observes daylight saving, giving a 3-hour gap from Beijing between October and April, and 2 hours the rest of the year). Sydney's seasons run opposite the northern hemisphere — summer is December to February, winter June to August — so pack accordingly." +
+      "Sydney Airport is about 8 km from the city centre; the Airport Link train takes about 13 minutes into town. The Opera House, the Harbour Bridge and Bondi Beach are the city's three signature sights, and the Opal card is the standard way to pay for public transport." +
+      "Chinese citizens must apply online for a visa (such as the Subclass 600 tourist visa) before travelling to Australia; check Australia's Department of Home Affairs for the latest requirements and processing times, and allow at least a few weeks to arrange one.",
+    },
+  },
+
+  "pvg-akl": {
+    study: {
+    "zh-CN":
+      "上海飞奥克兰，是中国到大洋洲最远的直飞航线之一，几乎全程飞越西太平洋开阔海域。起飞后先进入菲律宾海——西太平洋一片被菲律宾群岛、台湾岛与马里亚纳群岛环绕的深海海域，马里亚纳海沟便位于其东侧。" +
+      "继续向东南，飞机掠过俾斯麦海：新几内亚岛以北一片被俾斯麦群岛环抱的海域，火山活动活跃、珊瑚礁资源丰富。再往南进入珊瑚海——大堡礁所在海域，是西南太平洋一片以生物多样性著称的边缘海。" +
+      "飞机最终穿过塔斯曼海——分隔澳大利亚与新西兰的宽阔海域，降落在新西兰北岛的奥克兰。从中国东部沿海到南半球的岛国，这趟航班几乎全程都在大洋之上。",
+    "en-US":
+      "Shanghai to Auckland is one of the longest nonstop routes between China and Oceania, spending almost the whole flight over open water in the western Pacific. After take-off the flight enters the Philippine Sea, a deep-water expanse of the western Pacific bounded by the Philippine archipelago, Taiwan and the Mariana Islands — the Mariana Trench lies just to its east." +
+      "Continuing south-east, the plane passes the Bismarck Sea, a body of water north of New Guinea ringed by the Bismarck Archipelago, with active volcanism and rich coral reefs. Farther south lies the Coral Sea, home to the Great Barrier Reef and known for its biodiversity as a marginal sea of the south-west Pacific." +
+      "The plane finally crosses the Tasman Sea, the wide body of water separating Australia and New Zealand, and lands at Auckland on New Zealand's North Island. From China's eastern coast to an island nation in the southern hemisphere, this flight spends nearly its entire duration over open ocean.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到奥克兰约11小时40分钟，时差4-5小时（新西兰实行夏令时，9月至次年4月与北京时差5小时，其余时间4小时）。新西兰四季与北半球相反，12-2月为夏季，6-8月为冬季，出行前请按当地季节备衣物，紫外线较强，建议备好防晒。" +
+      "奥克兰机场距市中心约21公里，机场快线大巴（SkyBus/AirportLink）约45分钟直达市区。天空塔、怀希基岛酒庄、奥克兰战争纪念博物馆（了解毛利文化）是市内代表性游览项目。" +
+      "中国公民赴新西兰须提前在线申请电子旅行许可（NZeTA）或签证，具体要求以新西兰移民局最新公布为准，建议出发前至少提前数天完成申请。",
+    "en-US":
+      "Shanghai to Auckland takes about 11 hours 40 minutes, with a 4-5 hour time difference (New Zealand observes daylight saving, giving a 5-hour gap from Beijing between September and April, and 4 hours the rest of the year). New Zealand's seasons run opposite the northern hemisphere — summer is December to February, winter June to August — pack accordingly, and note that UV levels are strong, so sun protection is worth packing too." +
+      "Auckland Airport is about 21 km from the city centre; the SkyBus/Airport Link express bus takes about 45 minutes into town. The Sky Tower, the Waiheke Island wineries and the Auckland War Memorial Museum (a good introduction to Māori culture) are among the city's signature outings." +
+      "Chinese citizens must apply online for a New Zealand Electronic Travel Authority (NZeTA) or visa before travelling; check New Zealand Immigration for the latest requirements and apply at least a few days ahead of departure.",
     },
   },
 };

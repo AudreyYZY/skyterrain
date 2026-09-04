@@ -1,0 +1,55 @@
+{
+  "id": "pek-ist",
+  "name": "北京 — 伊斯坦布尔",
+  "nameEn": "Beijing — Istanbul",
+  "description": "蒙古戈壁 · 萨雷阿尔卡草原 · 阿拉拉特山 · 中安纳托利亚高原",
+  "descriptionEn": "Mongolian Gobi · Saryarka Steppe · Mount Ararat · Central Anatolian Plateau",
+  "depCountry": "china",
+  "arrCountry": "turkey",
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK89",
+    "aircraft": "Boeing 777-300ER",
+    "depIata": "PEK",
+    "arrIata": "IST",
+    "durationMin": 620
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saryarka-steppe"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-ararat"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-anatolian-plateau"
+    },
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔机场",
+      "nameEn": "Istanbul Airport",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    }
+  ]
+}
