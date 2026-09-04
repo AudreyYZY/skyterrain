@@ -326,6 +326,12 @@ import pvgAkl from "./pvg-akl.json" with { type: "json" };
 // 国际 · 中国 ↔ 美国/加拿大（Phase 3 批 C）
 import pekJfk from "./pek-jfk.json" with { type: "json" };
 import pekYyz from "./pek-yyz.json" with { type: "json" };
+// 国际 · 中国 ↔ 丹麦/芬兰/波兰/捷克/意大利（Phase 3 批 F1）
+import pekCph from "./pek-cph.json" with { type: "json" };
+import pkxHel from "./pkx-hel.json" with { type: "json" };
+import pekWaw from "./pek-waw.json" with { type: "json" };
+import pekPrg from "./pek-prg.json" with { type: "json" };
+import pekFco from "./pek-fco.json" with { type: "json" };
 // 国际 · 中国 ↔ 瑞士/奥地利/爱尔兰/挪威/瑞典（Phase 3 批 E，冰岛无真实客运直飞如实跳过）
 import pvgZrh from "./pvg-zrh.json" with { type: "json" };
 import pvgVie from "./pvg-vie.json" with { type: "json" };
@@ -608,6 +614,11 @@ export const ALL_ROUTES: FlightRoute[] = [
   pvgAkl,
   pekJfk,
   pekYyz,
+  pekCph,
+  pkxHel,
+  pekWaw,
+  pekPrg,
+  pekFco,
   pvgZrh,
   pvgVie,
   pvgDub,

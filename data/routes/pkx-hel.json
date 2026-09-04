@@ -1,0 +1,61 @@
+{
+  "id": "pkx-hel",
+  "name": "北京 — 赫尔辛基",
+  "nameEn": "Beijing — Helsinki",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 塞马湖",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · Lake Saimaa",
+  "depCountry": "china",
+  "arrCountry": "finland",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ609",
+    "aircraft": "Boeing 787-9",
+    "depIata": "PKX",
+    "arrIata": "HEL",
+    "durationMin": 555
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pkx",
+      "name": "北京大兴",
+      "nameEn": "Beijing Daxing",
+      "lat": 39.5098,
+      "lon": 116.4104,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 60
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉北段",
+      "nameEn": "Northern Ural Mountains",
+      "lon": 60,
+      "lat": 61
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saimaa"
+    },
+    {
+      "kind": "city",
+      "id": "hel",
+      "name": "赫尔辛基万塔",
+      "nameEn": "Helsinki-Vantaa",
+      "lat": 60.3172,
+      "lon": 24.9633,
+      "airport": true
+    }
+  ]
+}
