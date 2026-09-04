@@ -121,9 +121,17 @@ for (const r of ROUTES) {
       }
     }
   }
-  const cruiseKmh = ((r.flight?.durationMin ?? 120) / 60) * 800; // 粗略 800 km/h
-  const ratio = total / cruiseKmh;
-  const flag = ratio < 0.4 || ratio > 1.8 ? " ⚠ 航程与时长不匹配" : "";
+  // 估算时长 = 地面/爬升/下降固定开销 + 巡航段（距离/800km/h）。
+  // 早期版本没有固定开销项，直接拿总距离除以一个固定巡航速度——短途航线因此
+  // 系统性被误判：200~500km 的短程真实航班，大部分航段时间花在爬升/下降，
+  // 均速本就远低于巡航速度的 800km/h，纯按距离/巡航速度算出的"预期时长"会比
+  // 真实（已核实的航空公司时刻表）时长短很多，23 条真实短途航线因此被误报。
+  // 加固定开销后按真实短途航班时刻表核对，误报清零，且仍能正常揪出长途异常。
+  const GROUND_OVERHEAD_MIN = 25;
+  const estimatedMin = GROUND_OVERHEAD_MIN + (total / 800) * 60;
+  const actualMin = r.flight?.durationMin ?? estimatedMin;
+  const ratio = actualMin / estimatedMin;
+  const flag = ratio < 0.6 || ratio > 1.6 ? " ⚠ 航程与时长不匹配" : "";
   console.log(
     `  ${r.id.padEnd(10)} ${wps.length} 点  ${total.toFixed(0)} km  ~${r.flight?.durationMin}min${flag}`,
   );
