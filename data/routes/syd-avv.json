@@ -1,0 +1,25 @@
+{
+  "id": "syd-avv",
+  "name": "悉尼 — 吉朗（阿瓦隆）",
+  "nameEn": "Sydney — Geelong (Avalon)",
+  "description": "澳大利亚阿尔卑斯山脉 · 大分水岭 · 蓝山",
+  "descriptionEn": "Australian Alps · Great Dividing Range · Blue Mountains",
+  "depCountry": "australia",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "捷星航空",
+    "airlineEn": "Jetstar",
+    "flightNo": "JQ603",
+    "aircraft": "Airbus A320",
+    "depIata": "SYD",
+    "arrIata": "AVV",
+    "durationMin": 95
+  },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true },
+    { "kind": "terrain", "terrainId": "blue-mountains" },
+    { "kind": "terrain", "terrainId": "australian-alps" },
+    { "kind": "city", "id": "avv", "name": "吉朗（阿瓦隆）", "nameEn": "Geelong (Avalon)", "lat": -38.0406, "lon": 144.4708, "airport": true }
+  ]
+}

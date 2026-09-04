@@ -23,6 +23,14 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "维多利亚女王市场", nameEn: "Queen Victoria Market", lon: 144.9568, lat: -37.8076, kind: "district" },
     { nameZh: "圣基尔达", nameEn: "St Kilda", lon: 144.9800, lat: -37.8678, kind: "district" },
   ],
+  geelong: [
+    { nameZh: "考宁厄姆码头", nameEn: "Cunningham Pier", lon: 144.3576, lat: -38.1435, kind: "landmark" },
+    { nameZh: "系船柱步道", nameEn: "Baywalk Bollards", lon: 144.3600, lat: -38.1420, kind: "landmark" },
+    { nameZh: "东海滩海水浴场", nameEn: "Eastern Beach", lon: 144.3690, lat: -38.1440, kind: "nature" },
+    { nameZh: "国家羊毛博物馆", nameEn: "National Wool Museum", lon: 144.3600, lat: -38.1470, kind: "landmark" },
+    { nameZh: "昆斯克利夫", nameEn: "Queenscliff", lon: 144.6500, lat: -38.2667, kind: "district" },
+    { nameZh: "托尔坎", nameEn: "Torquay", lon: 144.3167, lat: -38.3333, kind: "district" },
+  ],
   brisbane: [
     { nameZh: "南岸公园", nameEn: "South Bank Parklands", lon: 153.0230, lat: -27.4790, kind: "district" },
     { nameZh: "龙柏考拉保护区", nameEn: "Lone Pine Koala Sanctuary", lon: 152.9686, lat: -27.5335, kind: "nature" },

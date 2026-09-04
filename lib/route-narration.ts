@@ -992,6 +992,29 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
+  "syd-avv": {
+    study: {
+    "zh-CN":
+      "悉尼飞阿瓦隆，落地的不是墨尔本市区机场，而是吉朗东北面的阿瓦隆机场——这条航线飞的其实是悉尼到吉朗、大洋路门户城市的路线，途中飞越的地形和悉尼—墨尔本航线大体相同。" +
+      "起飞后向西南，右前方出现被深谷切开的砂岩台地，那是蓝山——尤加利林在阳光下泛蓝，大分水岭在悉尼背后隆起成这片高原。越过蓝山，沿大分水岭的走向继续往西南，山势不高但连续。" +
+      "接近维多利亚境内，地面又抬高，出现一片带雪的高地——澳大利亚阿尔卑斯山脉，大分水岭在这里最高，主峰科修斯科山是澳大利亚大陆的最高点，冬季积雪、是少有的滑雪区。过了阿尔卑斯山脉，地势转为开阔的牧场和农田，飞机沿科里奥湾东岸下降，在阿瓦隆降落——湾对岸就是吉朗，往西南不远即是大洋路的起点。",
+    "en-US":
+      "Sydney to Avalon does not land at central Melbourne, but at Avalon Airport north-east of Geelong — this route effectively flies Sydney to Geelong, the gateway city to the Great Ocean Road, and crosses much the same terrain as the Sydney–Melbourne route." +
+      "Heading south-west after take-off, a sandstone plateau cut by deep valleys appears ahead to the right: the Blue Mountains, their eucalypt forest hazed blue in the sun, part of the Great Dividing Range rising into a plateau behind Sydney. Past the Blue Mountains the route keeps following the Great Dividing Range south-west, the mountains not high but continuous." +
+      "Approaching Victoria the land rises again into a snow-streaked upland: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland, with snow in winter and one of the few skiing areas in Australia. Past the Alps the land opens into grazing country and farmland, and the plane descends along the eastern shore of Corio Bay to land at Avalon — Geelong sits across the bay, and the start of the Great Ocean Road is a short drive south-west.",
+    },
+    travel: {
+    "zh-CN":
+      "悉尼到阿瓦隆飞约一个半小时，两地同一时区。阿瓦隆机场在吉朗东北约20公里，靠机场大巴或网约车进城，没有直达火车；如果落地后想直接去墨尔本，机场大巴也能到，车程约45分钟。" +
+      "吉朗本身值得留半天到一天：滨海步道、系船柱、国家羊毛博物馆；很多人把它当大洋路自驾的起点，从这里往西南到托尔坎正式上路，去十二门徒岩单程还要数小时。往东是贝拉林半岛的昆斯克利夫古镇和酒庄。" +
+      "南半球季节相反，12–2月是夏天，可能有热浪；入境对食品和动植物制品检查严格，如实申报。",
+    "en-US":
+      "Sydney to Avalon is about an hour and a half, and the two cities are in the same time zone. Avalon Airport is about 20 km north-east of Geelong; getting into town needs the airport bus or a rideshare, as there is no direct train — the airport bus can also take you straight into Melbourne, about 45 minutes away." +
+      "Geelong itself is worth half a day to a full day: the waterfront promenade, the Baywalk Bollards, the National Wool Museum. Many travellers use it as the starting point for the Great Ocean Road — Torquay, south-west of the city, is where the drive officially begins, with the Twelve Apostles still several hours further on. East is the Bellarine Peninsula, with the historic town of Queenscliff and its wineries." +
+      "In the southern hemisphere the seasons are reversed — December to February is summer and can bring heatwaves. Border checks on food and plant and animal material are strict — declare honestly.",
+    },
+  },
+
   "akl-wlg": {
     study: {
     "zh-CN":

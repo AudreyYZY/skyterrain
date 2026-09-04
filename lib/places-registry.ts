@@ -363,6 +363,12 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "墨尔本 CBD -37.8136,144.9631；MEL 机场：公开资料",
   },
   {
+    id: "geelong", nameZh: "吉朗", nameEn: "Geelong", country: "australia", tier: "notable", zone: "au-vic",
+    lon: 144.3617, lat: -38.1499,
+    airport: { iata: "AVV", nameZh: "阿瓦隆机场", nameEn: "Avalon Airport", lon: 144.4708, lat: -38.0406 },
+    source: "吉朗市中心 -38.1499,144.3617；AVV 阿瓦隆机场（吉朗东北约20km，是吉朗地区主要商用机场）：公开资料",
+  },
+  {
     id: "brisbane", nameZh: "布里斯班", nameEn: "Brisbane", country: "australia", tier: "major", zone: "au-qld",
     lon: 153.0251, lat: -27.4698,
     airport: { iata: "BNE", nameZh: "布里斯班机场", nameEn: "Brisbane", lon: 153.117, lat: -27.384 },
@@ -387,7 +393,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "凯恩斯 -16.9203,145.7710；CNS 机场：公开资料",
   },
   {
-    id: "darwin", nameZh: "达尔文", nameEn: "Darwin", country: "australia", tier: "notable", zone: "au-nt",
+    id: "darwin", nameZh: "达尔文", nameEn: "Darwin", country: "australia", tier: "major", zone: "au-nt",
     lon: 130.8456, lat: -12.4634,
     airport: { iata: "DRW", nameZh: "达尔文机场", nameEn: "Darwin", lon: 130.877, lat: -12.415 },
     source: "达尔文 -12.4634,130.8456；DRW 机场：公开资料",
@@ -527,7 +533,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "三亚市中心 18.2528,109.5119；SYX 机场：公开资料",
   },
   {
-    id: "lhasa", nameZh: "拉萨", nameEn: "Lhasa", country: "china", tier: "notable", zone: "cn-southwest",
+    id: "lhasa", nameZh: "拉萨", nameEn: "Lhasa", country: "china", tier: "major", zone: "cn-southwest",
     lon: 91.1409, lat: 29.6456,
     airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.912, lat: 29.298 },
     source: "拉萨市中心 29.6456,91.1409；LXA 机场：公开资料",
@@ -660,7 +666,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "香港中环一带 22.3025,114.1772；HKG 机场：公开资料",
   },
   {
-    id: "macao", nameZh: "澳门", nameEn: "Macao", country: "china", tier: "notable", zone: "cn-hmt",
+    id: "macao", nameZh: "澳门", nameEn: "Macao", country: "china", tier: "major", zone: "cn-hmt",
     lon: 113.5439, lat: 22.1987,
     airport: { iata: "MFM", nameZh: "澳门国际机场", nameEn: "Macao Int'l", lon: 113.592, lat: 22.156 },
     source: "澳门半岛 22.1987,113.5439；MFM 机场：公开资料",
