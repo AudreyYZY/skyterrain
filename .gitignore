@@ -55,3 +55,6 @@ terrain-dataset/
 
 # zread wiki drafts (local tool output)
 .zread/
+
+# TTS 磁盘缓存（见 app/api/tts/route.ts）——本机生成，体积会持续增长，不进 git
+.tts-cache/
