@@ -1,0 +1,61 @@
+{
+  "id": "can-syd",
+  "name": "广州 — 悉尼",
+  "nameEn": "Guangzhou — Sydney",
+  "description": "南海 · 阿波山 · 珊瑚海 · 玻璃屋山",
+  "descriptionEn": "South China Sea · Mount Apo · Coral Sea · Glass House Mountains",
+  "depCountry": "china",
+  "arrCountry": "australia",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ325",
+    "aircraft": "Boeing 787-9",
+    "depIata": "CAN",
+    "arrIata": "SYD",
+    "durationMin": 600
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "南海",
+      "nameEn": "South China Sea",
+      "lon": 116,
+      "lat": 18
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-apo"
+    },
+    {
+      "kind": "feature",
+      "name": "珊瑚海",
+      "nameEn": "Coral Sea",
+      "lon": 160,
+      "lat": -18
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "glasshouse-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "syd",
+      "name": "悉尼机场",
+      "nameEn": "Sydney Airport",
+      "lat": -33.9399,
+      "lon": 151.1753,
+      "airport": true
+    }
+  ]
+}

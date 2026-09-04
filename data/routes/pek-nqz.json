@@ -1,0 +1,51 @@
+{
+  "id": "pek-nqz",
+  "name": "北京 — 阿斯塔纳",
+  "nameEn": "Beijing — Astana",
+  "description": "蒙古戈壁 · 准噶尔盆地 · 萨雷阿尔卡草原",
+  "descriptionEn": "Mongolian Gobi · Junggar Basin · Saryarka Steppe",
+  "depCountry": "china",
+  "arrCountry": "kazakhstan",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA795",
+    "aircraft": "Boeing 737 MAX 8",
+    "depIata": "PEK",
+    "arrIata": "NQZ",
+    "durationMin": 340
+  },
+  "cruiseHeight": 10600,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "junggar-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saryarka-steppe"
+    },
+    {
+      "kind": "city",
+      "id": "nqz",
+      "name": "阿斯塔纳国际",
+      "nameEn": "Astana International",
+      "lat": 51.0222,
+      "lon": 71.4669,
+      "airport": true
+    }
+  ]
+}

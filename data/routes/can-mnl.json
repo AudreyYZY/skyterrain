@@ -1,0 +1,50 @@
+{
+  "id": "can-mnl",
+  "name": "广州 — 马尼拉",
+  "nameEn": "Guangzhou — Manila",
+  "description": "南海 · 皮纳图博火山",
+  "descriptionEn": "South China Sea · Mount Pinatubo",
+  "depCountry": "china",
+  "arrCountry": "philippines",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ3091",
+    "aircraft": "Boeing 787-9",
+    "depIata": "CAN",
+    "arrIata": "MNL",
+    "durationMin": 155
+  },
+  "cruiseHeight": 10600,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "南海",
+      "nameEn": "South China Sea",
+      "lon": 117,
+      "lat": 19
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-pinatubo"
+    },
+    {
+      "kind": "city",
+      "id": "mnl",
+      "name": "马尼拉阿基诺",
+      "nameEn": "Manila Ninoy Aquino",
+      "lat": 14.5086,
+      "lon": 121.0198,
+      "airport": true
+    }
+  ]
+}
