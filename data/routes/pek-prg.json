@@ -1,0 +1,71 @@
+{
+  "id": "pek-prg",
+  "name": "北京 — 布拉格",
+  "nameEn": "Beijing — Prague",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 东欧平原 · 波希米亚高地",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · East European Plain · Bohemian Uplands",
+  "depCountry": "china",
+  "arrCountry": "czechia",
+  "flight": {
+    "airline": "海南航空",
+    "airlineEn": "Hainan Airlines",
+    "flightNo": "HU7937",
+    "aircraft": "Airbus A330-300",
+    "depIata": "PEK",
+    "arrIata": "PRG",
+    "durationMin": 595
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉",
+      "nameEn": "Ural Mountains",
+      "lon": 60,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 25,
+      "lat": 53
+    },
+    {
+      "kind": "feature",
+      "name": "波希米亚高地",
+      "nameEn": "Bohemian Uplands",
+      "lon": 16,
+      "lat": 50
+    },
+    {
+      "kind": "city",
+      "id": "prg",
+      "name": "布拉格瓦茨拉夫·哈维尔",
+      "nameEn": "Prague Václav Havel",
+      "lat": 50.1008,
+      "lon": 14.2600,
+      "airport": true
+    }
+  ]
+}
