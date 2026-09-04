@@ -22,11 +22,17 @@ interface Screen {
 }
 
 const POLL_MS = 400;
-/** tier → 该层级开始显示的 zoomLevel（与地形标签系统同量纲，见 CesiumOverlayLabels）*/
+/**
+ * tier → 该层级开始显示的 zoomLevel（与地形标签系统同量纲，见 CesiumOverlayLabels）。
+ * notable 原为 4.5——定这个值时城市总数远没有现在多，默认打开的国家全览
+ * （INTRO_VIEW，zoomLevel≈3.5）连一半城市都看不到，容易被当成"没标出来"。
+ * 收到 4.0：默认视角仍只看首府/主要城市，避免铺满；只需轻微缩进（而不是
+ * 精确定位到某个子区域）就能看见 notable 级新城市，两头兼顾。
+ */
 const TIER_MIN_ZOOM: Record<PlaceTier, number> = {
   capital: 3,
   major: 3.5,
-  notable: 4.5,
+  notable: 4,
 };
 
 export default function CityMarkers({ mapRef, cities, activeId, language, onSelect }: Props) {
