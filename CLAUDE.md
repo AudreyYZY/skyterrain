@@ -397,7 +397,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 以下内容不再维护:
 
 - `cameraGeometry`（china-core-features / china-northwest-features 中的字段，已停止读取）
-- `lib/foi-registry.ts` / `lib/auto-camera.ts`（仅 CesiumMap debug 残留引用，待清理）
+- `lib/foi-registry.ts` / `lib/auto-camera.ts`（已删除，2026-09 技术债清理轮确认零引用后移除）
 - Feature hoverGeometry/RidgeCorridor 渲染、`data/gis/exports/*.geojson` 边界线
   （geojson 现只用于地形区域抬升体的形状，不再画常驻边界）
 - 手工 `target` / `heading` / `pitch` / `range`
