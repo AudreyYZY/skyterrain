@@ -5230,6 +5230,52 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
+  "pek-jfk": {
+    study: {
+    "zh-CN":
+      "北京飞纽约，走的并不是直接横跨太平洋的航线，而是一条更靠北的极地航线：起飞后先向西北，掠过蒙古高原南缘的戈壁荒漠，再北上进入贝加尔湖一带——世界上最深的淡水湖，湖区周围是茂密的西伯利亚针叶林。" +
+      "继续向东北深入西伯利亚腹地，飞越勒拿河三角洲——北极圈内一片由永久冻土和辫状水道构成的湿地，是候鸟迁徙的重要繁殖地。之后航线转向东，短暂掠过白令海，再进入阿拉斯加：天气晴好时，舷窗一侧常能望见北美最高峰迪纳利峰所在的阿拉斯加山脉。" +
+      "飞机继续东南，越过育空地区的针叶林与冻原，穿过地势低平、布满岛屿的哈德逊湾，最终飞临五大湖与新英格兰的丘陵地带，沿哈德逊河进近，降落在纽约肯尼迪机场。选择这条偏北航线而非直穿太平洋，是因为北京与纽约的经度几乎相差半个地球，绕道高纬度反而是地球球面上更短的大圆航线。",
+    "en-US":
+      "Beijing to New York does not fly straight across the Pacific — instead it takes a more northerly polar routing. After take-off the flight heads north-west, crossing the Gobi desert on the southern edge of the Mongolian Plateau, then climbs north to Lake Baikal, the world's deepest freshwater lake, ringed by dense Siberian taiga." +
+      "Continuing north-east deep into the Siberian interior, the route crosses the Lena River Delta, an Arctic wetland of permafrost and braided channels that is a major breeding ground for migratory birds. The flight then turns east, briefly crossing the Bering Sea before entering Alaska — on a clear day, passengers can often spot the Alaska Range, home to Denali, North America's highest peak." +
+      "The plane continues south-east over the boreal forest and tundra of the Yukon, crosses the low-lying, island-studded Hudson Bay, and finally passes over the Great Lakes and the hill country of New England before making its final approach along the Hudson River into New York's JFK Airport. This northerly routing is chosen over a direct Pacific crossing because Beijing and New York sit at nearly opposite longitudes — the high-latitude arc is, on a spherical Earth, the actual shorter great-circle path.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到纽约约15小时30分钟，由中国国际航空波音747客机执飞。两地时差12-13小时（美国东部夏令时期间12小时，标准时期间13小时），初到建议预留1-2天倒时差。纽约四季分明，夏季闷热、冬季寒冷多雪，春秋气温最为宜人。" +
+      "肯尼迪机场距曼哈顿约25公里，可搭乘AirTrain转乘地铁E线或长岛铁路（LIRR）进城，也可乘出租车或网约车，车程视路况约45-60分钟。地铁运营24小时，MetroCard或感应式银行卡均可直接刷卡进站。自由女神像、中央公园、大都会艺术博物馆等地标均可乘地铁到达。" +
+      "中国公民赴美须提前办妥B1/B2签证并预约面签，建议出行前至少1-2个月申请，具体以美国驻华使领馆最新公布为准；入境时随身行李与现金如实申报。纽约治安整体良好，但部分地铁站夜间人少，贵重物品建议不外露。",
+    "en-US":
+      "Beijing to New York takes about 15 hours 30 minutes on an Air China Boeing 747. The time difference is 12–13 hours (12 hours during US Eastern Daylight Time, 13 hours during Standard Time) — allow a day or two to adjust on arrival. New York has distinct seasons: hot, humid summers and cold, snowy winters, with spring and autumn the most pleasant times to visit." +
+      "JFK is about 25 km from Manhattan; the AirTrain connects to the subway's E line or the Long Island Rail Road (LIRR) into the city, and taxis or rideshares are also available, taking roughly 45–60 minutes depending on traffic. The subway runs 24 hours a day, and a MetroCard or a contactless bank card both work directly at the turnstiles. The Statue of Liberty, Central Park and the Metropolitan Museum of Art are all reachable by subway." +
+      "Chinese citizens need a B1/B2 visa and an in-person interview well in advance — apply at least 1–2 months ahead, and check the latest requirements from the US Embassy or Consulate. Declare belongings and cash honestly on arrival. New York is generally safe, but some subway stations are quiet late at night, so keep valuables out of sight.",
+    },
+  },
+
+  "pek-yyz": {
+    study: {
+    "zh-CN":
+      "北京飞多伦多同样走一条偏北的极地航线，比飞纽约的航线更靠北、更靠近北极点。起飞后先向西北，掠过蒙古高原南缘的戈壁荒漠，进入贝加尔湖一带——世界上最深的淡水湖。" +
+      "航线继续深入西伯利亚腹地并一路向北，抵达北冰洋沿岸——这里是欧亚大陆最北端，常年被浮冰覆盖。飞机沿着靠近北极圈的极地航路走廊（大致在北纬78度附近）飞越北冰洋，进入加拿大北极群岛——埃尔斯米尔岛、巴芬岛等由永久冻土和冰原构成的岛屿。" +
+      "之后航线转向东南，穿过地势低平、冬季结冰的哈德逊湾，最终飞临安大略省的湖泊与丘陵地带，降落在多伦多皮尔逊国际机场。相比贴着赤道绕行，这条极地航路能明显缩短飞行距离——这也是中国往北美东岸城市的航线普遍选择偏北航路的原因。",
+    "en-US":
+      "Beijing to Toronto also flies a northerly polar route, even further north than the New York flight, passing closer to the North Pole. After take-off the flight heads north-west, crossing the Gobi desert on the southern edge of the Mongolian Plateau, then reaches Lake Baikal, the world's deepest freshwater lake." +
+      "The route continues deep into the Siberian interior and keeps heading north until it reaches the Arctic coast, the northernmost edge of the Eurasian landmass, covered year-round in drifting sea ice. The plane follows a polar air corridor near the Arctic Circle (roughly around 78°N) across the Arctic Ocean into the Canadian Arctic Archipelago — islands such as Ellesmere and Baffin, built of permafrost and ice caps." +
+      "The route then turns south-east, crossing the low-lying, seasonally ice-covered Hudson Bay, and finally passes over the lakes and hill country of Ontario before landing at Toronto Pearson International Airport. Compared with a route that hugs the equator, this polar corridor cuts the flight distance noticeably — which is why routes from China to cities on North America's east coast generally take this northerly path.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到多伦多约12小时40分钟，由中国国际航空波音777客机执飞。两地时差12-13小时（加拿大东部夏令时期间12小时，标准时期间13小时）。多伦多夏季温暖湿润，冬季寒冷多雪，春秋最适合出行。" +
+      "皮尔逊机场距市中心约25公里，可搭乘UP Express快线约25分钟直达联合车站，也可乘公交或出租车。市内公共交通（TTC地铁、有轨电车、巴士）票制通用，感应式银行卡可直接刷卡乘车。CN塔、安大略湖畔、旧市政厅等地标多可步行或搭轻轨到达。" +
+      "中国公民赴加拿大须提前办妥访客签证（中国护照通常不适用电子旅行授权eTA，需申请正式签证），建议出行前至少1个月申请，具体以加拿大移民、难民及公民部（IRCC）最新公布为准；入境时随身行李与现金如实申报。",
+    "en-US":
+      "Beijing to Toronto takes about 12 hours 40 minutes on an Air China Boeing 777. The time difference is 12–13 hours (12 hours during Canadian Eastern Daylight Time, 13 hours during Standard Time). Toronto has warm, humid summers and cold, snowy winters, with spring and autumn the best times to visit." +
+      "Pearson Airport is about 25 km from downtown; the UP Express train takes about 25 minutes direct to Union Station, and buses or taxis are also available. Toronto's public transit (TTC subway, streetcars and buses) runs on one shared fare system, and a contactless bank card works directly on board. The CN Tower, the Lake Ontario waterfront and Old City Hall are mostly reachable on foot or by streetcar." +
+      "Chinese citizens need a visitor visa for Canada well in advance — Chinese passports generally don't qualify for the eTA and require a full temporary resident visa — apply at least a month ahead, and check the latest requirements from Immigration, Refugees and Citizenship Canada (IRCC). Declare belongings and cash honestly on arrival.",
+    },
+  },
+
   "pek-cgk": {
     study: {
     "zh-CN":

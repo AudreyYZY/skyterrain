@@ -1,0 +1,99 @@
+{
+  "id": "pek-jfk",
+  "name": "北京 — 纽约",
+  "nameEn": "Beijing — New York",
+  "description": "蒙古戈壁 · 贝加尔湖 · 勒拿河三角洲 · 白令海 · 阿拉斯加山脉 · 哈德逊湾",
+  "descriptionEn": "Mongolian Gobi · Lake Baikal · Lena River Delta · Bering Sea · Alaska Range · Hudson Bay",
+  "depCountry": "china",
+  "arrCountry": "usa",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA981",
+    "aircraft": "Boeing 747-8I",
+    "depIata": "PEK",
+    "arrIata": "JFK",
+    "durationMin": 930
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "贝加尔湖",
+      "nameEn": "Lake Baikal",
+      "lon": 107.5,
+      "lat": 53.5
+    },
+    {
+      "kind": "feature",
+      "name": "勒拿河三角洲",
+      "nameEn": "Lena River Delta",
+      "lon": 127.5,
+      "lat": 72.8
+    },
+    {
+      "kind": "feature",
+      "name": "白令海",
+      "nameEn": "Bering Sea",
+      "lon": 178,
+      "lat": 63
+    },
+    {
+      "kind": "feature",
+      "name": "阿拉斯加山脉",
+      "nameEn": "Alaska Range",
+      "lon": -151.0,
+      "lat": 63.07
+    },
+    {
+      "kind": "feature",
+      "name": "育空地区",
+      "nameEn": "Yukon Territory",
+      "lon": -135.0,
+      "lat": 63.0
+    },
+    {
+      "kind": "feature",
+      "name": "哈德逊湾",
+      "nameEn": "Hudson Bay",
+      "lon": -85.0,
+      "lat": 60.0
+    },
+    {
+      "kind": "feature",
+      "name": "五大湖",
+      "nameEn": "Great Lakes",
+      "lon": -82.0,
+      "lat": 45.0
+    },
+    {
+      "kind": "feature",
+      "name": "新英格兰",
+      "nameEn": "New England",
+      "lon": -72.0,
+      "lat": 43.5
+    },
+    {
+      "kind": "city",
+      "id": "jfk",
+      "name": "纽约肯尼迪",
+      "nameEn": "New York JFK",
+      "lat": 40.641,
+      "lon": -73.778,
+      "airport": true
+    }
+  ]
+}

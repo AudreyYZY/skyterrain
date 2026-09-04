@@ -99,12 +99,20 @@ for (const r of ROUTES) {
   }
 
   // 航点应沿「起点→终点」方向大致单调推进（投影参数递增），否则镜头会来回折
+  // 经度差归一化到 (-180, 180]：跨越 180° 经线的真实航线（如中国—北美东岸的极地航线）
+  // 经度原始差值可能 >180（意味着走的其实是「另一边」更短的弧），不归一化会被误判为倒退
+  const wrapLonDelta = (d: number): number => {
+    let x = d % 360;
+    if (x < -180) x += 360;
+    if (x > 180) x -= 360;
+    return x;
+  };
   if (coords.length >= 3) {
     const A = coords[0]!;
     const B = coords[coords.length - 1]!;
-    const ux = B[0] - A[0], uy = B[1] - A[1];
+    const ux = wrapLonDelta(B[0] - A[0]), uy = B[1] - A[1];
     const L2 = ux * ux + uy * uy || 1e-9;
-    const params = coords.map(([x, y]) => ((x - A[0]) * ux + (y - A[1]) * uy) / L2);
+    const params = coords.map(([x, y]) => (wrapLonDelta(x - A[0]) * ux + (y - A[1]) * uy) / L2);
     for (let i = 1; i < params.length; i++) {
       if (params[i]! < params[i - 1]! - 0.08) {
         const label = wps[i - 1]!.kind === "city" ? wps[i - 1]!.id : wps[i - 1]!.terrainId;

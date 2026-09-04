@@ -323,6 +323,9 @@ import pekNqz from "./pek-nqz.json" with { type: "json" };
 import pekIst from "./pek-ist.json" with { type: "json" };
 import canSyd from "./can-syd.json" with { type: "json" };
 import pvgAkl from "./pvg-akl.json" with { type: "json" };
+// 国际 · 中国 ↔ 美国/加拿大（Phase 3 批 C）
+import pekJfk from "./pek-jfk.json" with { type: "json" };
+import pekYyz from "./pek-yyz.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -597,4 +600,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekIst,
   canSyd,
   pvgAkl,
+  pekJfk,
+  pekYyz,
 ] as unknown as FlightRoute[];
