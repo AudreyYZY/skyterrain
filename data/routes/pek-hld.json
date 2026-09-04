@@ -1,0 +1,43 @@
+{
+  "id": "pek-hld",
+  "name": "北京 — 呼伦贝尔",
+  "nameEn": "Beijing — Hulunbuir",
+  "description": "华北平原 · 内蒙古高原 · 呼伦贝尔草原",
+  "descriptionEn": "North China Plain · Inner Mongolian Plateau · Hulunbuir Grassland",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA9747",
+    "aircraft": "Airbus A321",
+    "depIata": "PEK",
+    "arrIata": "HLD",
+    "durationMin": 125
+  },
+  "cruiseHeight": 10100,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "inner-mongolia"
+    },
+    {
+      "kind": "city",
+      "id": "hld",
+      "name": "呼伦贝尔海拉尔",
+      "nameEn": "Hulunbuir Hailar",
+      "lat": 49.205,
+      "lon": 119.825,
+      "airport": true
+    }
+  ]
+}

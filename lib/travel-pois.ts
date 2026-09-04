@@ -2935,6 +2935,58 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
   bachu: [
     { nameZh: "巴楚胡杨林", nameEn: "Bachu Wild Poplar Forest", lon: 78.6000, lat: 39.8200, kind: "nature" },
   ],
+
+  // ── 中国 · Tier 2 批3（9 省缺口）──
+  hulunbuir: [
+    { nameZh: "莫日格勒河", nameEn: "Mordaga River", lon: 119.900, lat: 49.560, kind: "nature" },
+    { nameZh: "呼伦湖", nameEn: "Hulun Lake", lon: 117.500, lat: 48.900, kind: "nature" },
+    { nameZh: "金帐汗蒙古部落", nameEn: "Jindaohan Mongol Encampment", lon: 119.870, lat: 49.520, kind: "landmark" },
+    { nameZh: "室韦俄罗斯族民族乡", nameEn: "Shiwei Russian Ethnic Township", lon: 120.190, lat: 50.660, kind: "district" },
+  ],
+  "jilin-city": [
+    { nameZh: "雾凇岛（韩屯）", nameEn: "Rime Ice Island (Hantun)", lon: 126.700, lat: 44.020, kind: "nature" },
+    { nameZh: "松花湖", nameEn: "Songhua Lake", lon: 126.500, lat: 43.600, kind: "nature" },
+    { nameZh: "北山公园", nameEn: "Beishan Park", lon: 126.540, lat: 43.845, kind: "landmark" },
+    { nameZh: "乌拉街满族镇", nameEn: "Ula Street Manchu Township", lon: 126.710, lat: 44.070, kind: "district" },
+  ],
+  mohe: [
+    { nameZh: "北极村", nameEn: "Beiji (Arctic) Village", lon: 122.350, lat: 53.470, kind: "landmark" },
+    { nameZh: "洛古河村", nameEn: "Luoguhe Village", lon: 121.500, lat: 53.450, kind: "district" },
+    { nameZh: "漠河松苑原始生态公园", nameEn: "Mohe Songyuan Primeval Ecological Park", lon: 122.540, lat: 52.980, kind: "nature" },
+  ],
+  yichang: [
+    { nameZh: "三峡大坝", nameEn: "Three Gorges Dam", lon: 111.000, lat: 30.820, kind: "landmark" },
+    { nameZh: "三峡人家风景区", nameEn: "Three Gorges Renjia Scenic Area", lon: 110.870, lat: 30.910, kind: "nature" },
+    { nameZh: "车溪民俗风景区", nameEn: "Chexi Folk-Culture Scenic Area", lon: 111.100, lat: 30.650, kind: "district" },
+  ],
+  leshan: [
+    { nameZh: "乐山大佛", nameEn: "Leshan Giant Buddha", lon: 103.7717, lat: 29.5453, kind: "landmark" },
+    { nameZh: "凌云山·乌尤山", nameEn: "Lingyun & Wuyou Hills", lon: 103.7700, lat: 29.5480, kind: "nature" },
+    { nameZh: "峨眉山金顶", nameEn: "Mount Emei Golden Summit", lon: 103.3340, lat: 29.5200, kind: "nature" },
+  ],
+  kaili: [
+    { nameZh: "西江千户苗寨", nameEn: "Xijiang Qianhu Miao Village", lon: 108.1710, lat: 26.5780, kind: "district" },
+    { nameZh: "镇远古镇", nameEn: "Zhenyuan Ancient Town", lon: 108.4260, lat: 27.0510, kind: "district" },
+    { nameZh: "凯里民族风情园", nameEn: "Kaili Ethnic Culture Park", lon: 107.9800, lat: 26.5800, kind: "landmark" },
+  ],
+  yanan: [
+    { nameZh: "宝塔山", nameEn: "Baota (Pagoda) Hill", lon: 109.4973, lat: 36.5935, kind: "landmark" },
+    { nameZh: "延安革命纪念馆", nameEn: "Yan'an Revolutionary Memorial Hall", lon: 109.4900, lat: 36.6100, kind: "landmark" },
+    { nameZh: "枣园革命旧址", nameEn: "Zaoyuan Revolutionary Site", lon: 109.4400, lat: 36.6200, kind: "landmark" },
+    { nameZh: "杨家岭革命旧址", nameEn: "Yangjialing Revolutionary Site", lon: 109.4400, lat: 36.6300, kind: "landmark" },
+    { nameZh: "壶口瀑布", nameEn: "Hukou Waterfall", lon: 110.4967, lat: 36.1050, kind: "nature" },
+  ],
+  golmud: [
+    { nameZh: "察尔汗盐湖", nameEn: "Qarhan Salt Lake", lon: 94.900, lat: 36.850, kind: "nature" },
+    { nameZh: "昆仑山口", nameEn: "Kunlun Pass", lon: 94.080, lat: 35.650, kind: "nature" },
+    { nameZh: "纳赤台·昆仑神泉", nameEn: "Nachitai / Kunlun Spring", lon: 94.700, lat: 36.000, kind: "nature" },
+  ],
+  zhongwei: [
+    { nameZh: "沙坡头", nameEn: "Shapotou", lon: 104.950, lat: 37.507, kind: "nature" },
+    { nameZh: "黄河宿集", nameEn: "Yellow River Sunkist", lon: 105.050, lat: 37.530, kind: "landmark" },
+    { nameZh: "腾格里沙漠星星酒店", nameEn: "Tengger Desert Star Hotel", lon: 104.900, lat: 37.600, kind: "landmark" },
+    { nameZh: "南长滩村", nameEn: "Nanchangtan Village", lon: 104.300, lat: 37.060, kind: "district" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
