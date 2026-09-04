@@ -1,0 +1,62 @@
+{
+  "id": "pvg-vie",
+  "name": "上海 — 维也纳",
+  "nameEn": "Shanghai — Vienna",
+  "description": "华北平原 · 蒙古戈壁 · 萨雷阿尔卡草原 · 维也纳盆地",
+  "descriptionEn": "North China Plain · Mongolian Gobi · Saryarka Steppe · Vienna Basin",
+  "depCountry": "china",
+  "arrCountry": "austria",
+  "flight": {
+    "airline": "奥地利航空",
+    "airlineEn": "Austrian Airlines",
+    "flightNo": "OS16",
+    "aircraft": "Boeing 777-200",
+    "depIata": "PVG",
+    "arrIata": "VIE",
+    "durationMin": 745
+  },
+  "cruiseHeight": 11200,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saryarka-steppe"
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 22,
+      "lat": 51
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vienna-basin"
+    },
+    {
+      "kind": "city",
+      "id": "vie",
+      "name": "维也纳国际机场",
+      "nameEn": "Vienna International Airport",
+      "lat": 48.1103,
+      "lon": 16.5697,
+      "airport": true
+    }
+  ]
+}

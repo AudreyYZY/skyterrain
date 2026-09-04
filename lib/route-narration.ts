@@ -5482,6 +5482,236 @@ export const ROUTE_NARRATION: Record<
       "Chinese citizens must apply online for a New Zealand Electronic Travel Authority (NZeTA) or visa before travelling; check New Zealand Immigration for the latest requirements and apply at least a few days ahead of departure.",
     },
   },
+
+  "pvg-zrh": {
+    study: {
+    "zh-CN":
+      "上海飞苏黎世，是从长江三角洲一路向西北横跨欧亚大陆，最终抵达阿尔卑斯山北麓的瑞士高原。起飞后先掠过华北平原——黄河下游冲积而成的广阔平原，随后地势抬升，进入蒙古高原南缘的戈壁荒漠，砾漠地貌一直延伸到天际线。" +
+      "继续向西，进入哈萨克丘陵腹地的萨雷阿尔卡草原：一片起伏平缓的干旱草原，是欧亚大草原带的重要组成部分。飞越中亚腹地后，地貌重新过渡为东欧平原的农田与河网。" +
+      "飞机继续向西南，越过中欧的丘陵与谷地，逐渐接近阿尔卑斯山脉北侧——瑞士高原正夹在阿尔卑斯山与汝拉山之间，湖泊与丘陵交错。最终降落在苏黎世机场。从长江口到阿尔卑斯山麓，一趟航班跨越了大半个亚欧大陆。",
+    "en-US":
+      "Shanghai to Zurich flies north-west across Eurasia from the Yangtze Delta, ending on the Swiss Plateau at the northern foot of the Alps. After take-off the flight first crosses the North China Plain, built up by sediment from the lower Yellow River, before climbing onto the southern edge of the Mongolian Plateau, where the gravel desert of the Gobi stretches to the horizon." +
+      "Farther west the route crosses the Saryarka Steppe in the Kazakh Uplands — a broad, gently rolling dry steppe and part of the Eurasian steppe belt. Past the interior of Central Asia, the landscape gives way to the farmland and river network of the East European Plain." +
+      "The plane continues south-west over the hills and valleys of central Europe, approaching the northern side of the Alps — the Swiss Plateau sits between the Alps and the Jura Mountains, a landscape of lakes and low hills. It finally lands at Zurich Airport. From the mouth of the Yangtze to the foot of the Alps, one flight has crossed most of Eurasia.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到苏黎世约12小时，两地时差6-7小时（瑞士夏令时期间6小时）。瑞士夏季凉爽宜人，冬季寒冷多雪，阿尔卑斯山区昼夜温差大，出行建议分层穿衣。" +
+      "苏黎世机场距市中心约10公里，有便捷的S-Bahn城铁直达苏黎世火车总站，车程约10分钟。市内公共交通（有轨电车、巴士、渡轮）票制统一，苏黎世老城、班霍夫大街、林登霍夫高地都是热门去处，湖畔散步也很受欢迎。" +
+      "瑞士属申根区但非欧盟成员，签证按国籍不同、以瑞士驻当地使领馆最新公布为准，行前确认并预留办理时间。瑞士整体治安良好，但公共设施与物价水平均较高，出行预算需留有余量。",
+    "en-US":
+      "Shanghai to Zurich takes about 12 hours, with a 6–7 hour time difference (6 hours during Swiss summer time). Switzerland has cool, pleasant summers and cold, snowy winters, with large day–night temperature swings in the Alps — pack layers." +
+      "Zurich Airport is about 10 km from the city centre; the S-Bahn runs directly to Zurich main station in about 10 minutes. Trams, buses and ferries share one ticketing system. Zurich's Old Town, Bahnhofstrasse and the Lindenhof terrace are popular spots, and a stroll along the lakeshore is a local favourite." +
+      "Switzerland is in the Schengen area but not an EU member; visa rules vary by nationality — check the latest from the Swiss consulate for your location and allow time to arrange one. Switzerland is generally very safe, but prices for services and goods run high, so budget accordingly.",
+    },
+  },
+
+  "pvg-vie": {
+    study: {
+    "zh-CN":
+      "上海飞维也纳，航线整体走向与飞苏黎世相近，同样横跨欧亚大陆，但落点更偏中欧腹地的多瑙河沿岸。起飞后先经过华北平原，再进入蒙古高原南缘的戈壁荒漠。" +
+      "继续向西，飞越哈萨克丘陵一带的萨雷阿尔卡草原，之后进入东欧平原，农田与河流交错的地貌一路向西延伸。" +
+      "飞机转向西南，越过喀尔巴阡山脉外缘的丘陵地带，最终进入维也纳盆地——阿尔卑斯山与喀尔巴阡山之间一片由多瑙河冲积形成的低地，维也纳正坐落其间。飞机沿多瑙河进近，降落在维也纳国际机场。",
+    "en-US":
+      "Shanghai to Vienna follows a track similar to the Zurich flight, also crossing Eurasia, but ends farther into central Europe along the Danube. After take-off the flight first crosses the North China Plain, then climbs onto the southern edge of the Mongolian Plateau and its Gobi desert." +
+      "Farther west it crosses the Saryarka Steppe in the Kazakh Uplands, then enters the East European Plain, where farmland and rivers stretch on toward the west." +
+      "The flight turns south-west, crossing the outer hill country of the Carpathians, and finally enters the Vienna Basin — a lowland built up by the Danube between the Alps and the Carpathians, where Vienna sits. The plane follows the Danube on its final approach, landing at Vienna International Airport.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到维也纳约12小时25分钟，时差6-7小时（奥地利夏令时期间6小时）。维也纳四季分明，夏季温暖、冬季寒冷，音乐会与歌剧演出全年不断，冬季还有圣诞市集。" +
+      "维也纳国际机场距市中心约18公里，机场城铁（CAT）约16分钟直达市中心，也有较便宜的S7城铁线路。市内电车、地铁票制统一，美泉宫、圣斯蒂芬大教堂、维也纳国家歌剧院都是必游景点，不少博物馆有学生/夜间优惠。" +
+      "奥地利属申根区，签证按国籍不同、以奥地利驻当地使领馆最新公布为准，行前确认并预留办理时间。剧院、教堂等场所着装宜整洁得体。",
+    "en-US":
+      "Shanghai to Vienna takes about 12 hours 25 minutes, with a 6–7 hour time difference (6 hours during Austrian summer time). Vienna has distinct seasons — warm summers, cold winters — with concerts and opera running year-round, plus Christmas markets in winter." +
+      "Vienna International Airport is about 18 km from the city centre; the City Airport Train (CAT) takes about 16 minutes direct into town, and the cheaper S7 suburban line also runs in. Trams and the metro share one ticketing system. Schönbrunn Palace, St. Stephen's Cathedral and the Vienna State Opera are must-sees, and many museums offer student or evening discounts." +
+      "Austria is in the Schengen area; visa rules vary by nationality — check the latest from the Austrian consulate for your location and allow time to arrange one. Dress neatly for theatres and churches.",
+    },
+  },
+
+  "pvg-dub": {
+    study: {
+    "zh-CN":
+      "上海飞都柏林，是中国与爱尔兰之间首条直飞航线，航线向西北横跨整个亚欧大陆，最终抵达大西洋边缘的爱尔兰岛。起飞后先经过华北平原，进入蒙古高原南缘的戈壁荒漠。" +
+      "继续向西北深入西伯利亚腹地，进入西西伯利亚平原——世界上最大的平原之一，森林与沼泽交织、河流蜿蜒。飞越东欧大陆后，航线转向西，越过北海——大不列颠岛与欧洲大陆之间一片浅海。" +
+      "跨过爱尔兰海后，飞机进入爱尔兰中部低地——一片以泥炭沼泽（如著名的艾伦沼泽）和牧场为主的平缓地貌，最终降落在都柏林机场。这条航线全程约9400公里，是都柏林机场目前最长的定期直飞航线。",
+    "en-US":
+      "Shanghai to Dublin is the first-ever nonstop route between mainland China and Ireland, flying north-west across the whole of Eurasia to reach an island on the edge of the Atlantic. After take-off the flight first crosses the North China Plain, then the Gobi desert on the southern edge of the Mongolian Plateau." +
+      "Continuing north-west deep into Siberia, the route crosses the West Siberian Plain, one of the largest plains on Earth, threaded with forest, marsh and winding rivers. Past continental Europe, the flight turns west over the North Sea, the shallow sea between Great Britain and the European mainland." +
+      "After crossing the Irish Sea, the plane enters the Central Lowlands of Ireland — a gently rolling landscape of peat bogs, including the well-known Bog of Allen, and pastureland — before landing at Dublin Airport. At roughly 9,400 km, this is currently Dublin Airport's longest scheduled nonstop route.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到都柏林约13小时20分钟，是目前中国与爱尔兰之间唯一的直飞航线，时差7-8小时（爱尔兰夏令时期间7小时）。爱尔兰全年温和多雨，四季都建议带一件防水外套。" +
+      "都柏林机场距市中心约10公里，机场巴士（Airlink/Aircoach）约30-45分钟到市区，也有出租车。圣三一学院、健力士啤酒博物馆、圣帕特里克大教堂都在市中心步行可达范围内，酒吧文化和现场音乐是当地特色。" +
+      "爱尔兰不属于申根区，签证按国籍不同、以爱尔兰移民局最新公布为准，行前确认并预留办理时间。这条航线2026年7月才开通，出行前建议再次核实航班班期是否有变动。",
+    "en-US":
+      "Shanghai to Dublin takes about 13 hours 20 minutes, currently the only nonstop route between mainland China and Ireland, with a 7–8 hour time difference (7 hours during Irish summer time). Ireland is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
+      "Dublin Airport is about 10 km from the city centre; the Airlink or Aircoach buses take about 30–45 minutes into town, and taxis are also available. Trinity College, the Guinness Storehouse and St. Patrick's Cathedral are all within walking distance of the centre, and pub culture and live music are local specialties." +
+      "Ireland is not in the Schengen area; visa rules vary by nationality — check the latest from Irish immigration for your nationality and allow time to arrange one. This route only launched in July 2026, so it's worth reconfirming the schedule before you travel.",
+    },
+  },
+
+  "pek-osl": {
+    study: {
+    "zh-CN":
+      "北京飞奥斯陆，向西北横跨亚欧大陆北部，最终抵达斯堪的纳维亚半岛南端。起飞后先掠过蒙古高原南缘的戈壁荒漠，随后进入西西伯利亚平原——地势极其平坦，河网与沼泽密布，是世界上最大的平原之一。" +
+      "继续向西，飞越东欧大陆北部，抵达波罗的海沿岸。跨过波罗的海后，地貌逐渐过渡为斯堪的纳维亚半岛南部的丘陵与湖沼。" +
+      "飞机沿格洛马河河谷一带下降——这条挪威最长的河流由厄斯特达尔向南流入奥斯陆峡湾一带，最终降落在奥斯陆以北的加勒穆恩机场。这条航线2026年恢复运营，是目前中国与挪威之间唯一的直飞航线。",
+    "en-US":
+      "Beijing to Oslo flies north-west across the northern part of Eurasia, ending at the southern tip of the Scandinavian Peninsula. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the West Siberian Plain — remarkably flat and dense with rivers and marshes, one of the largest plains on Earth." +
+      "Farther west the route crosses the northern part of continental Europe, reaching the Baltic coast. Past the Baltic Sea, the landscape shifts to the hills and lake country of southern Scandinavia." +
+      "The plane descends along the Glomma River valley — Norway's longest river, flowing south from Østerdalen toward the Oslo Fjord area — before landing at Gardermoen Airport north of Oslo. This route resumed operation in 2026 and is currently the only nonstop link between China and Norway.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到奥斯陆约9小时，时差6-7小时（挪威夏令时期间6小时）。挪威夏季日照极长（北部有极昼），冬季寒冷多雪、北部可观测极光，出行建议按季节备好保暖或防晒装备。" +
+      "加勒穆恩机场距市中心约50公里，机场快线（Flytoget）约20分钟直达奥斯陆中央车站，也有普通火车和大巴，票价更低。市内维格兰雕塑公园、奥斯陆歌剧院、卡尔约翰大街是热门去处，公共交通票价较高，建议购买一日票。" +
+      "挪威属申根区但非欧盟成员，签证按国籍不同、以挪威驻当地使领馆最新公布为准，行前确认并预留办理时间。挪威物价水平在欧洲居于前列，出行预算需留有余量。",
+    "en-US":
+      "Beijing to Oslo takes about 9 hours, with a 6–7 hour time difference (6 hours during Norwegian summer time). Norway has very long summer daylight (with midnight sun in the north) and cold, snowy winters, when the aurora can be seen in the north — pack for the season." +
+      "Gardermoen Airport is about 50 km from the city centre; the Flytoget airport express train takes about 20 minutes direct to Oslo Central Station, and regular trains and buses also run at lower fares. The Vigeland sculpture park, the Oslo Opera House and Karl Johans gate are popular spots; public transport is pricey, so a day pass is worth buying." +
+      "Norway is in the Schengen area but not an EU member; visa rules vary by nationality — check the latest from the Norwegian consulate for your location and allow time to arrange one. Prices in Norway are among the highest in Europe, so budget accordingly.",
+    },
+  },
+
+  "pvg-arn": {
+    study: {
+    "zh-CN":
+      "上海飞斯德哥尔摩，与飞奥斯陆走向相近，同样横跨亚欧大陆北部，最终抵达波罗的海沿岸的瑞典首都。起飞后先经过华北平原，进入蒙古高原南缘的戈壁荒漠。" +
+      "继续向西北深入西伯利亚腹地，飞越西西伯利亚平原，之后抵达波罗的海沿岸。跨过波罗的海后，飞机进入瑞典东部沿海一带。" +
+      "临近降落前，舷窗下是斯德哥尔摩群岛——由数万座花岗岩小岛和礁石组成的群岛区，斯德哥尔摩正坐落在这片群岛与梅拉伦湖交汇处。飞机最终降落在阿兰达机场。这条航线2020年曾因疫情中断，2026年6月恢复直飞运营。",
+    "en-US":
+      "Shanghai to Stockholm follows a track similar to the Oslo flight, also crossing the northern part of Eurasia, ending at the Swedish capital on the Baltic coast. After take-off the flight first crosses the North China Plain, then the Gobi desert on the southern edge of the Mongolian Plateau." +
+      "Continuing north-west deep into Siberia, the route crosses the West Siberian Plain before reaching the Baltic coast. Past the Baltic Sea, the flight enters the coastal region of eastern Sweden." +
+      "Just before landing, the Stockholm Archipelago comes into view below — tens of thousands of granite islands and skerries, where Stockholm sits at the point where the archipelago meets Lake Mälaren. The plane finally lands at Arlanda Airport. This route was suspended during the pandemic and resumed nonstop service in June 2026.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到斯德哥尔摩约11小时10分钟，时差6-7小时（瑞典夏令时期间6小时）。瑞典夏季凉爽、日照长，冬季寒冷、日照短，北部可观测极光，出行建议按季节备好衣物。" +
+      "阿兰达机场距市中心约40公里，机场快线（Arlanda Express）约20分钟直达市中心，也有较便宜的通勤火车和大巴。老城区（加姆拉斯坦）、瓦萨沉船博物馆、市政厅是热门景点，市内步行和骑行都很方便。" +
+      "瑞典属申根区，签证按国籍不同、以瑞典驻当地使领馆最新公布为准，行前确认并预留办理时间。这条航线曾因疫情中断六年，2026年6月才恢复直飞，出行前建议再次核实航班班期。",
+    "en-US":
+      "Shanghai to Stockholm takes about 11 hours 10 minutes, with a 6–7 hour time difference (6 hours during Swedish summer time). Stockholm has cool summers with long daylight hours and cold, dark winters, with the aurora visible in the north — pack for the season." +
+      "Arlanda Airport is about 40 km from the city centre; the Arlanda Express takes about 20 minutes direct into town, and cheaper commuter trains and buses also run. Gamla Stan (the Old Town), the Vasa Museum and City Hall are popular sights, and the city centre is easy to explore on foot or by bike." +
+      "Sweden is in the Schengen area; visa rules vary by nationality — check the latest from the Swedish consulate for your location and allow time to arrange one. This route was suspended for six years during the pandemic and only resumed nonstop service in June 2026, so it's worth reconfirming the schedule before you travel.",
+    },
+  },
+
+  "pek-cph": {
+    study: {
+    "zh-CN":
+      "北京飞哥本哈根，同样向西北横跨亚欧大陆，但落点更靠北，最终抵达斯堪的纳维亚半岛南缘的丹麦。起飞后先经过蒙古高原南缘的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
+      "继续向西北，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——常被地理学上作为亚洲与欧洲的分界——之后，进入东欧平原，农田与河流交错的地貌一路延伸。" +
+      "飞机继续向西北，越过波罗的海南部，最终降落在西兰岛东岸的哥本哈根——丹麦首都坐落在厄勒海峡边，隔海峡与瑞典相望。一趟航班，向西北横穿了大半个亚欧大陆，抵达波罗的海之滨。",
+    "en-US":
+      "Beijing to Copenhagen also flies north-west across Eurasia, but on a track that curves farther north, ending on the southern rim of the Scandinavian peninsula where Denmark lies. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
+      "Farther north-west the flight enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh. Crossing the Ural Mountains — commonly used by geographers to mark the boundary between Asia and Europe — the route enters the East European Plain, a landscape of farmland and winding rivers stretching on." +
+      "The plane continues north-west over the southern Baltic Sea and finally lands at Copenhagen on the eastern shore of the island of Zealand — the Danish capital sits beside the Øresund strait, facing Sweden across the water. One flight has crossed most of Eurasia to reach the Baltic shore.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到哥本哈根约10小时，时差6-7小时（丹麦夏令时期间6小时）。丹麦全年温和多雨，四季都建议带一件防水外套，自行车是当地最常见的出行方式之一。" +
+      "哥本哈根机场距市中心约8公里，地铁M2线约15分钟直达市区。市内公共交通发达，Rejsekort交通卡或带NFC的银行卡均可直接刷卡乘车。小美人鱼像、新港、蒂沃利公园是市内三大代表性景点，步行或骑行均可到达。" +
+      "丹麦属申根区，签证按国籍不同、以丹麦外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。哥本哈根餐厅普遍不设小费文化（服务费通常已含在账单中），无需额外支付。",
+    "en-US":
+      "Beijing to Copenhagen takes about 10 hours, with a 6-7 hour time difference (6 hours during Danish summer time). Denmark is mild and rainy year-round — a waterproof jacket is worth packing in any season, and cycling is one of the most common ways to get around." +
+      "Copenhagen Airport is about 8 km from the city centre; the M2 metro line takes about 15 minutes into town. Public transport is extensive — a Rejsekort card or a contactless bank card both work directly on buses, trains and the metro. The Little Mermaid statue, Nyhavn and Tivoli Gardens are the city's three signature sights, all reachable on foot or by bike." +
+      "Denmark is in the Schengen area; visa rules vary by nationality — check the latest from the Danish Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Tipping is not customary at Copenhagen restaurants (service is generally included in the bill), so no extra payment is expected.",
+    },
+  },
+
+  "pkx-hel": {
+    study: {
+    "zh-CN":
+      "北京飞赫尔辛基，走的是中国到北欧最北的一条直飞航路，2026年起由北京大兴机场直飞开通。起飞后先经过蒙古高原南缘的戈壁荒漠，随后一路向西北深入西西伯利亚腹地——西西伯利亚平原是世界上最大的平原之一，地势极其平坦，森林与沼泽湖泊星罗棋布。" +
+      "继续向西北，飞越乌拉尔山脉北段——地理学上常以此山系划分亚洲与欧洲，这一段纬度更高、山势也更平缓。跨过乌拉尔山后，飞机进入芬兰东南部的湖泊地带：塞马湖是芬兰最大的湖泊，由冰川作用形成的复杂水系与数千座岛屿组成，是“千湖之国”地貌的代表区域。" +
+      "飞机最终穿过芬兰湾北岸，降落在赫尔辛基万塔机场。这趟航班沿着中国到北欧最北的直飞航路，飞越了西伯利亚腹地与波罗的海北岸的湖泊森林地带。",
+    "en-US":
+      "Beijing to Helsinki flies one of the northernmost nonstop routes between China and the Nordics, launched from Beijing Daxing Airport in 2026. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then heads deep into the West Siberian Plain, one of the largest plains on Earth, remarkably flat and dotted with forest, marsh and countless lakes." +
+      "Farther north-west the flight crosses the northern Ural Mountains — the range geographers commonly use to mark the boundary between Asia and Europe — at a higher latitude where the terrain is gentler. Beyond the Urals the route enters south-east Finland's lake district: Lake Saimaa, Finland's largest lake, is a complex glacially carved water system dotted with thousands of islands, emblematic of Finland's identity as the 'land of a thousand lakes'." +
+      "The plane finally crosses the northern shore of the Gulf of Finland and lands at Helsinki-Vantaa Airport. Following the northernmost nonstop corridor between China and the Nordics, this flight crosses the Siberian interior and the lake-and-forest country on the Baltic's northern shore.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到赫尔辛基约9小时15分钟，由中国南方航空波音787客机执飞，从北京大兴机场出发。两地时差5-6小时（芬兰夏令时期间5小时）。芬兰夏季日照极长（北部仲夏可见午夜太阳），冬季则昼短夜长，北部有机会观赏极光。" +
+      "赫尔辛基万塔机场距市中心约19公里，可乘坐环线火车（I/P线）约30分钟直达中央车站。市内公共交通（地铁、有轨电车、公交）票制通用，HSL交通卡或银行卡均可直接刷卡乘车。岩石教堂、赫尔辛基大教堂、芬兰堡是市内三大代表性景点，芬兰堡需搭渡轮前往。" +
+      "芬兰属申根区，签证按国籍不同、以芬兰外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。这条北京大兴—赫尔辛基航线2026年3月才开通，出行前建议再次核实班期是否有变动。",
+    "en-US":
+      "Beijing to Helsinki takes about 9 hours 15 minutes on a China Southern Airlines Boeing 787, departing from Beijing Daxing Airport. The time difference is 5-6 hours (5 hours during Finnish summer time). Finnish summers bring very long daylight hours (the midnight sun is visible in the north around midsummer), while winters have short days and offer a chance to see the northern lights in the north." +
+      "Helsinki-Vantaa Airport is about 19 km from the city centre; the ring rail line (I/P trains) takes about 30 minutes to Central Station. Public transport (metro, trams and buses) runs on one shared fare system, and an HSL card or a bank card both work directly on board. Temppeliaukio Church, Helsinki Cathedral and the Suomenlinna sea fortress are the city's three signature sights — Suomenlinna requires a short ferry ride." +
+      "Finland is in the Schengen area; visa rules vary by nationality — check the latest from the Finnish Ministry for Foreign Affairs or its consulate for your location and allow time to arrange one. This Beijing Daxing–Helsinki route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
+    },
+  },
+
+  "pek-waw": {
+    study: {
+    "zh-CN":
+      "北京飞华沙，向西横跨亚欧大陆腹地，最终抵达东欧平原中部。起飞后先经过蒙古高原南缘的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
+      "继续向西，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——地理学上常以此山系划分亚洲与欧洲——之后，飞机进入东欧平原：这片横贯东欧的广袤平原地势低缓，河流蜿蜒、农田密布，华沙便坐落在这片平原中部的维斯瓦河畔。" +
+      "飞机最终沿维斯瓦河谷进近，降落在华沙肖邦机场。一趟航班，横穿了大半个亚欧大陆，抵达东欧平原的心脏地带。",
+    "en-US":
+      "Beijing to Warsaw flies west across the interior of Eurasia, ending near the middle of the East European Plain. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
+      "Farther west the flight enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh. Crossing the Ural Mountains — the range geographers commonly use to mark the boundary between Asia and Europe — the route enters the East European Plain: a vast, low-lying plain stretching across eastern Europe, threaded with winding rivers and farmland, with Warsaw sitting near its middle on the banks of the Vistula River." +
+      "The plane makes its final approach along the Vistula valley and lands at Warsaw Chopin Airport. One flight has crossed most of Eurasia to reach the heart of the East European Plain.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到华沙约8小时30分钟，由中国国际航空波音777客机执飞。两地时差6-7小时（波兰夏令时期间6小时）。波兰冬季寒冷多雪，夏季温和，春秋最适合游览。" +
+      "华沙肖邦机场距市中心约10公里，地铁M1线或城市快铁（SKM/KM）均可进城，车程约20-30分钟。华沙老城（二战后按原貌重建，UNESCO世界遗产）、瓦津基公园、华沙起义博物馆是市内代表性景点。" +
+      "波兰属申根区，签证按国籍不同、以波兰外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。华沙老城石板路较多，建议穿舒适的鞋子。",
+    "en-US":
+      "Beijing to Warsaw takes about 8 hours 30 minutes on an Air China Boeing 777. The time difference is 6-7 hours (6 hours during Polish summer time). Poland has cold, snowy winters and mild summers, with spring and autumn best for sightseeing." +
+      "Warsaw Chopin Airport is about 10 km from the city centre; the M1 metro line or the SKM/KM city rail both run into town in about 20-30 minutes. Warsaw's Old Town (rebuilt after WWII to its original appearance, a UNESCO World Heritage Site), Łazienki Park and the Warsaw Uprising Museum are among the city's landmark sights." +
+      "Poland is in the Schengen area; visa rules vary by nationality — check the latest from the Polish Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. The Old Town has a lot of cobblestone streets, so comfortable shoes are worth packing.",
+    },
+  },
+
+  "pek-prg": {
+    study: {
+    "zh-CN":
+      "北京飞布拉格，向西横跨亚欧大陆，最终抵达中欧腹地被群山环抱的波希米亚地区。起飞后先经过蒙古高原南缘的戈壁荒漠，随后进入西西伯利亚平原——世界上最大的平原之一，地势极其平坦，森林与沼泽交织。" +
+      "飞越乌拉尔山脉之后，飞机进入东欧平原，农田与河流交错的地貌一路延伸。继续向西南，地势逐渐抬升进入波希米亚高地——一片被古老褶皱山系环绕的高地，捷克全境大部即坐落于此，伏尔塔瓦河便发源于这片高地南部。" +
+      "飞机沿伏尔塔瓦河谷进近，最终降落在布拉格瓦茨拉夫·哈维尔机场。一趟航班，从亚欧大陆东端横穿到中欧被群山环抱的波希米亚地区。",
+    "en-US":
+      "Beijing to Prague flies west across Eurasia, ending in the mountain-ringed Bohemian region at the heart of central Europe. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh." +
+      "Crossing the Ural Mountains, the route enters the East European Plain, a landscape of farmland and winding rivers stretching on. Farther south-west the terrain gradually rises into the Bohemian Uplands, a plateau ringed by ancient folded mountain ranges — most of Czechia sits within this region, and the Vltava River rises in its southern reaches." +
+      "The plane makes its final approach along the Vltava valley and lands at Prague's Václav Havel Airport. One flight has crossed from the eastern edge of Eurasia to the mountain-ringed Bohemian region of central Europe.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到布拉格约9小时55分钟，由海南航空空客A330客机执飞。两地时差6-7小时（捷克夏令时期间6小时）。捷克冬季寒冷、夏季温和，春秋最适合游览布拉格老城。" +
+      "布拉格机场距市中心约17公里，可乘坐机场快线大巴（AE）或公交转地铁进城，车程约35-45分钟。布拉格老城广场、查理大桥、布拉格城堡是市内三大代表性景点，均在旧城步行可达范围内，建议穿舒适的鞋子应对石板路。" +
+      "捷克属申根区，签证按国籍不同、以捷克外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。捷克境内目前没有真正意义上的国内商业航空网络，城市间以铁路/大巴为主，这条中捷直飞是往返布拉格的主要空中通道。",
+    "en-US":
+      "Beijing to Prague takes about 9 hours 55 minutes on a Hainan Airlines Airbus A330. The time difference is 6-7 hours (6 hours during Czech summer time). Czechia has cold winters and mild summers, with spring and autumn best for exploring Prague's old town." +
+      "Prague Airport is about 17 km from the city centre; the AE express bus or a bus-to-metro connection takes about 35-45 minutes into town. Old Town Square, Charles Bridge and Prague Castle are the city's three signature sights, all within walking distance of each other in the old town — comfortable shoes are worth packing for the cobblestones." +
+      "Czechia is in the Schengen area; visa rules vary by nationality — check the latest from the Czech Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Czechia currently has no real domestic commercial air network, so travel between its cities relies mainly on rail and coach — this nonstop China route is the main air link in and out of Prague.",
+    },
+  },
+
+  "pek-fco": {
+    study: {
+    "zh-CN":
+      "北京飞罗马，向西南横穿整个亚欧大陆腹地，最终抵达地中海北岸的亚平宁半岛。起飞后先经过蒙古高原南缘的戈壁荒漠，随后进入中亚腹地——哈萨克丘陵一带的萨雷阿尔卡草原，地势平缓开阔、干旱少雨，是欧亚大草原带的一段。" +
+      "飞越中亚后，飞机掠过里海北部——世界上面积最大的内陆水体，沿岸多为低平的荒漠与半荒漠地貌。继续向西南，进入巴尔干半岛：欧洲东南部一片多山的半岛，地形以褶皱山地与河谷盆地交错为主。" +
+      "越过巴尔干半岛后，飞机进入亚平宁山脉——纵贯意大利半岛全境的褶皱山系，宛如意大利的“脊梁”。飞机沿台伯河谷降落在罗马菲乌米奇诺机场。一趟航班，从亚欧大陆腹地一路飞抵地中海畔的亚平宁半岛。",
+    "en-US":
+      "Beijing to Rome flies south-west across the interior of Eurasia, ending on the Apennine Peninsula on the Mediterranean's northern shore. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the heart of Central Asia — the Saryarka Steppe of the Kazakh Uplands, a broad, flat, arid landscape that forms part of the wider Eurasian steppe belt." +
+      "Past Central Asia the flight skirts the northern Caspian Sea, the world's largest inland body of water, ringed by low-lying desert and semi-desert. Farther south-west the route enters the Balkan Peninsula, a mountainous peninsula in south-east Europe where folded ranges alternate with river valleys and basins." +
+      "Beyond the Balkans the flight crosses the Apennines, the folded mountain chain that runs the length of the Italian peninsula like a spine. The plane makes its final approach along the Tiber valley and lands at Rome's Fiumicino Airport. One flight has carried the flight from the interior of Eurasia to the Apennine Peninsula on the Mediterranean's shore.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到罗马约11小时25分钟，由中国国际航空波音777客机执飞。两地时差6-7小时（意大利夏令时期间6小时）。意大利夏季炎热干燥、冬季温和多雨，春秋最适合游览。" +
+      "罗马菲乌米奇诺机场距市中心约30公里，机场快线火车（Leonardo Express）约32分钟直达罗马特米尼车站，也有区域列车和机场大巴可选。斗兽场、梵蒂冈、特雷维喷泉是市内三大代表性景点，热门景点建议提前在线预约门票避开长队。" +
+      "意大利属申根区，签证按国籍不同、以意大利外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。罗马部分教堂对衣着有要求（不得穿无袖上衣/短裤入内），参观前建议随身备一件薄外套或披肩。",
+    "en-US":
+      "Beijing to Rome takes about 11 hours 25 minutes on an Air China Boeing 777. The time difference is 6-7 hours (6 hours during Italian summer time). Italy has hot, dry summers and mild, rainy winters, with spring and autumn best for sightseeing." +
+      "Rome Fiumicino Airport is about 30 km from the city centre; the Leonardo Express train takes about 32 minutes direct to Roma Termini, and regional trains or airport buses are also options. The Colosseum, the Vatican and the Trevi Fountain are the city's three signature sights — book tickets online in advance for the popular ones to skip the lines." +
+      "Italy is in the Schengen area; visa rules vary by nationality — check the latest from the Italian Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Some Roman churches enforce a dress code (no sleeveless tops or shorts) — it's worth carrying a light jacket or shawl for visits.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

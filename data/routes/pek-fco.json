@@ -1,0 +1,65 @@
+{
+  "id": "pek-fco",
+  "name": "北京 — 罗马",
+  "nameEn": "Beijing — Rome",
+  "description": "蒙古戈壁 · 萨雷阿尔卡草原 · 里海 · 巴尔干半岛 · 亚平宁山脉",
+  "descriptionEn": "Mongolian Gobi · Saryarka Steppe · Caspian Sea · Balkan Peninsula · Apennines",
+  "depCountry": "china",
+  "arrCountry": "italy",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA939",
+    "aircraft": "Boeing 777-300ER",
+    "depIata": "PEK",
+    "arrIata": "FCO",
+    "durationMin": 685
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saryarka-steppe"
+    },
+    {
+      "kind": "feature",
+      "name": "里海",
+      "nameEn": "Caspian Sea",
+      "lon": 50,
+      "lat": 44
+    },
+    {
+      "kind": "feature",
+      "name": "巴尔干半岛",
+      "nameEn": "Balkan Peninsula",
+      "lon": 24,
+      "lat": 42
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "apennines"
+    },
+    {
+      "kind": "city",
+      "id": "fco",
+      "name": "罗马菲乌米奇诺",
+      "nameEn": "Rome Fiumicino",
+      "lat": 41.8003,
+      "lon": 12.2389,
+      "airport": true
+    }
+  ]
+}
