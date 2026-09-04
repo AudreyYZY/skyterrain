@@ -7187,4 +7187,215 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "May–October is peak season at Shapotou, especially July–September when the river-based activities are all running; midday sun in the desert zone is intense, so bring sunscreen, sunglasses and shoe covers to keep sand out; temperature swings between day and night are large, so pack a layer even for summer nights, and a winter visit offers a quieter, snow-covered desert scene as a change of pace.",
   },
+
+  "chile-overview": {
+    identity:
+      "Chile is a long, narrow country on the southwestern edge of South America, stretching roughly 4,300 km north to south while rarely exceeding 200 km east to west — one of the most elongated countries in the world. Population is about 19.6 million, capital Santiago, official language Spanish (with a strong local accent and rich slang). The terrain runs from the driest desert on Earth in the north, through a Mediterranean-climate wine belt in the center, to a rainy lake district, Patagonian ice fields, and fjords in the south, plus the remote Pacific outpost of Easter Island.",
+    layout:
+      "The country breaks roughly into five bands: Norte Grande (the Atacama Desert, salt flats, and geysers), Norte Chico (Coquimbo, a stargazing and wine-growing region), central Chile (the core around Santiago and Valparaíso, most densely populated), the southern Lake District (volcanoes, lakes, and German-settler towns), and Patagonia (ice fields, fjords, Torres del Paine National Park) — plus two special Pacific territories, Easter Island and the Juan Fernández Archipelago.",
+    gettingAround:
+      "The country's elongated shape makes overland north–south travel very time-consuming, so domestic flights are the main way to move between regions, with Santiago's airport as the national hub. Within cities, buses, the metro (Santiago has an extensive system), and taxis are the norm; long-distance buses cover intercity routes as well. As a Southern Hemisphere country, seasons are reversed — summer runs December to February, winter June to August. The northern desert is dry almost year-round, while southern Patagonia is windy in every season, so pack a windproof jacket. The currency is the Chilean peso; cards are widely accepted, though it's worth carrying some cash in small mountain towns.",
+    culture:
+      "Chileans commonly greet with a single cheek touch; among acquaintances things are fairly relaxed, while a handshake suffices in formal settings. In Spanish, the formal 'usted' is customary with elders or on first meeting, shifting to the informal 'tú' once acquainted. Restaurant bills sometimes already include a suggested tip, or you can add about 10% separately. In national parks and reserves, following CONAF's (Chile's national forestry corporation) marked routes and pack-out-your-trash rules matters a great deal; on Easter Island, climbing or touching the moai statues is strictly forbidden — a rule enforced firmly and one every visitor must respect.",
+    seeAndDo:
+      "The natural landscape is extraordinarily varied: Valle de la Luna and the El Tatio geysers in the Atacama Desert, stargazing in Elqui Valley, Villarrica and Osorno volcanoes in the Lake District, Torres del Paine National Park and the Patagonian ice fields, and the Strait of Magellan. On the cultural side: Santiago's museums and nearby wineries, Valparaíso's colorful hillside old town (a UNESCO World Heritage Site), the wooden churches of the Chiloé Archipelago (UNESCO World Heritage), and the moai of Easter Island (UNESCO World Heritage).",
+    whenAndTips:
+      "The northern desert can be visited year-round given its dry climate; the best season for the southern Lake District and Patagonia is the Southern Hemisphere summer (December through March), when some mountain roads and trails close in winter. Book domestic flights ahead of time, especially to Easter Island and Patagonia, where seasonal pricing swings widely. Entry requirements follow each visitor's own nationality's visa policy — check the latest rules from Chile's national immigration service; customs inspections for plant and animal products are strict, so declare everything honestly.",
+  },
+  santiago: {
+    identity:
+      "Santiago is Chile's capital and largest city, with a metro-area population of about 7 million, sitting in the northern Central Valley at the foot of the Andes — the country's political, economic, and cultural center. On clear days the permanently snow-capped Andean ridgeline is visible right from downtown, one of the city's most distinctive urban views.",
+    layout:
+      "The city unfolds along the Mapocho River; the historic core around Plaza de Armas preserves colonial-era architecture. Cerro San Cristóbal Park is a hilltop landmark in the city center offering views over the whole city and the distant Andes; the eastern districts of Providencia and Las Condes hold modern high-rises and commercial centers, while the western and southern districts remain more traditionally residential.",
+    gettingAround:
+      "Santiago's airport is about 20 km from downtown, with airport express buses and taxis into the city. The metro system covers a wide area and is the most convenient way to get around, complemented by the Transantiago bus network using the same Bip! transit card. The climate is Mediterranean: summers (December–February) are hot and dry, often above 30°C, while winters (June–August) are cool, damp, and occasionally hazy — the surrounding mountains trap pollution, so it's worth checking winter air-quality advisories.",
+    culture:
+      "Santiago is a cosmopolitan blend of immigrant and local culture, with a pace somewhat more relaxed than European cities; dinner tends to be late, often after 9pm. Restaurant bills usually include or suggest a 10% service charge. Handshakes are standard in business settings, while a cheek touch is common socially. On Sundays and some public holidays, many downtown shops close, though malls stay open.",
+    seeAndDo:
+      "Plaza de Armas and the Metropolitan Cathedral, La Moneda Palace (the presidential palace), the Chilean Museum of Pre-Columbian Art, the Cerro San Cristóbal funicular and viewpoint, and the bustling Mercado Central for seafood. Within an hour's drive: the Andean scenery and hot springs of Cajón del Maipo, and well-known wine regions like Maipo Valley and Casablanca Valley; Andean ski resorts (open during the Southern Hemisphere winter, June–August) are also just outside the city.",
+    whenAndTips:
+      "Spring and autumn (September–November, March–May) bring the most pleasant weather and generally better air quality; on heavily hazy winter days, it's worth limiting outdoor activity. Temperatures swing widely near the Andes, so pack a jacket even in summer; the city is generally safe, but keep an eye on belongings in busy downtown areas and crowded metro stations during rush hour.",
+  },
+  valparaiso: {
+    identity:
+      "Valparaíso is one of Chile's most important port cities and the seat of the National Congress, built across 45 steep hills facing the Pacific. Its colorful hillside houses, winding cobblestone lanes, and historic funiculars earned the whole historic quarter UNESCO World Heritage status in 2003.",
+    layout:
+      "The city has two parts: the flat commercial district along the bay (El Plan) and the steep hillside neighborhoods (Cerros) behind it, linked by a network of late-19th-century funiculars (ascensores) — the city's most iconic form of transport and sightseeing in one. Cerro Alegre and Cerro Concepción are the old town's most popular hillside districts.",
+    gettingAround:
+      "Valparaíso has no scheduled commercial airport of its own; visitors usually arrive from Santiago by highway, about a 1.5-hour drive, with frequent long-distance buses. Walking is the best way to explore the hillside lanes, with the old funiculars available for the steepest climbs. The climate is mild Mediterranean-maritime, with dry, cool summers and wet, damp winters; coastal winds are strong year-round, so a windproof jacket is worth packing.",
+    culture:
+      "Valparaíso is the heart of Chile's street-art and bohemian culture, its hillside lanes covered in vivid murals and long home to artists and poets — Chilean poet Pablo Neruda's house, La Sebastiana, is here. Locals keep a relaxed pace of life in the hills; some hillside lanes are quiet at night, so it's best to go with company and avoid walking alone through isolated streets after dark.",
+    seeAndDo:
+      "Neruda's house, La Sebastiana (open for ticketed visits), the historic funiculars (such as Ascensor Concepción and Ascensor Artillería), the mural-covered lanes of Cerro Alegre and Cerro Concepción, Plaza Sotomayor and the port district, and the Sunday flea market. The nearby seaside resort town of Viña del Mar is only about a 20-minute drive away.",
+    whenAndTips:
+      "Spring and autumn offer the most pleasant weather and the best light for photographing the murals and hillside views; the hillside stairways are steep and frequent, so wear comfortable, non-slip shoes. The port district sees fewer people at night, so keep valuables discreetly stowed; with limited time, Valparaíso works well as a day trip from Santiago.",
+  },
+  antofagasta: {
+    identity:
+      "Antofagasta is northern Chile's largest city and the capital of the Antofagasta Region, sitting where the Atacama Desert meets the Pacific. It is a major mining port city, with copper exports as the backbone of the local economy.",
+    layout:
+      "The city stretches narrowly along the Pacific coastline, backed by the steep Coastal Range and the Atacama Desert extending to the horizon. Downtown preserves a clock-tower plaza and colonial-style buildings from the 19th-century nitrate-trade era; the seafront promenade is where locals go to relax.",
+    gettingAround:
+      "Cerro Moreno Airport, about 22 km from downtown, is a major aviation hub for northern Chile, with multiple daily flights to and from Santiago. Taxis and buses cover the city itself. The climate is extremely dry — a coastal desert climate with little seasonal temperature swing but almost no rainfall; sun protection is essential given the strong UV exposure.",
+    culture:
+      "Antofagasta is a mining city, with residents' daily rhythms closely tied to industry schedules; the seafront district gets livelier on weekends. Local cuisine leans heavily on seafood. Because the city was historically part of Bolivia, local culture carries a certain cross-border blend, and it's basic courtesy to avoid opinionated comments about the historical territorial dispute in everyday conversation.",
+    seeAndDo:
+      "La Portada natural arch (the city's most famous natural landmark, a sea-carved rock arch), the clock-tower plaza and old nitrate-era downtown, the regional museum (covering Atacama mining history and archaeological finds), and the seafront promenade. Antofagasta is also a common starting point for visiting inland mining heritage sites like Chuquicamata copper mine.",
+    whenAndTips:
+      "The climate is stable and dry year-round with no real rainy season, making it a rare 'anytime' destination; UV exposure is intense, so sunscreen, sunglasses, and a hat are essential. Travel from Antofagasta to San Pedro de Atacama typically connects through Calama.",
+  },
+  calama: {
+    identity:
+      "Calama is a mining city in northern Chile, sitting in the heart of the Atacama Desert on the banks of the Loa River; it grew up around the nearby Chuquicamata copper mine, one of the world's largest open-pit copper mines, and serves as the main air gateway to the San Pedro de Atacama tourist area.",
+    layout:
+      "The city is modest in size, laid out around the oasis strip formed by the Loa River, with downtown as the main commercial and residential zone surrounded by open desert plains; the airport sits on the city's east side, functioning as a transfer hub for inland Atacama attractions.",
+    gettingAround:
+      "El Loa Airport has multiple daily flights to and from Santiago and is the most common connection point for reaching San Pedro de Atacama (about a 1.5-hour drive). Taxis and private transfers are the main way to get around locally. The climate is extremely dry, with the city sitting at about 2,260 m elevation; temperatures swing sharply between day and night, so layered clothing is recommended.",
+    culture:
+      "Calama is a classic mining town, its daily rhythm tied closely to shift schedules at the mine; the city itself is largely functional with limited tourist appeal, and most visitors treat it as a transit point to San Pedro de Atacama rather than a destination in its own right.",
+    seeAndDo:
+      "Oasis scenery along the Loa River, and the regional museum (covering mining history and Atacama Indigenous culture); given the city's limited attractions, most tour operators arrange for visitors to transfer directly to San Pedro de Atacama to see Valle de la Luna, the El Tatio geysers, and the Salar de Atacama.",
+    whenAndTips:
+      "As a transit city, it's worth booking a transfer or taxi to San Pedro de Atacama in advance; flights get tight during peak season (Southern Hemisphere summer and around New Year), so book early. Temperature swings in the desert are extreme, so pack warm layers for the night even if the day is hot.",
+  },
+  "san-pedro-de-atacama": {
+    identity:
+      "San Pedro de Atacama is a historic oasis town deep in the Atacama Desert, at about 2,400 m elevation — the base for exploring Valle de la Luna, the El Tatio geysers, and the Salar de Atacama, and one of northern Chile's most important tourism hubs.",
+    layout:
+      "The town is small, centered on an adobe-style main square and the San Pedro church, with travel agencies, restaurants, and craft shops lining the streets nearby; it sits surrounded by open desert and distant Andean volcanoes, a classic oasis settlement layout.",
+    gettingAround:
+      "The town has no airport of its own; visitors typically connect overland from El Loa Airport in Calama, about a 1.5-hour drive, and most hotels and tour operators offer transfers. Walking covers the town itself, while surrounding sights require a local tour or private transfer. Elevation is fairly high and the climate dry with intense UV; day-to-night temperature swings are extreme, from over 25°C by day to near freezing at night.",
+    culture:
+      "San Pedro de Atacama and the surrounding area are the traditional homeland of the Atacameño (Likan Antai) Indigenous people, whose crafts, weaving, and pottery preserve long-standing traditions; when visiting archaeological sites or Indigenous settlements, follow local community guidance and never enter private pastureland or religious sites without permission.",
+    seeAndDo:
+      "Valle de la Luna (a classic sunset excursion), the El Tatio geysers (best reached before dawn to see the pre-sunrise steam display), the flamingo colonies at the Salar de Atacama and Laguna Chaxa, San Pedro church and the archaeological museum, and several high-altitude saline lakes nearby (such as Laguna Miscanti and Laguna Miñiques).",
+    whenAndTips:
+      "The town can be visited year-round; the Southern Hemisphere summer (December–February) occasionally sees isolated rainfall (the so-called 'Bolivian Winter'), otherwise the climate is dry nearly all year. At high altitude, it's worth taking things slowly on arrival and drinking plenty of water — mild altitude sickness is possible; nighttime temperatures drop sharply, so pack warm clothing, and stargazing is a classic evening activity here.",
+  },
+  "la-serena": {
+    identity:
+      "La Serena is the capital of the Coquimbo Region in northern Chile's Norte Chico, and the country's second-oldest city (founded in 1544) — known for its colonial architecture, beaches, and the nearby stargazing hub of Elqui Valley.",
+    layout:
+      "The city's core unfolds around Plaza de Armas and its cathedral, preserving a large collection of Spanish colonial and neoclassical buildings; the coast is lined with long stretches of beach and a seafront promenade, with Elqui Valley about an hour's drive to the southeast.",
+    gettingAround:
+      "La Florida Airport, about 5 km from downtown, has flights to and from Santiago. Buses and taxis cover the city; reaching Elqui Valley or nearby observatories usually requires a local tour or a rental car. The climate is semi-arid, with mild, dry summers and mild, cloudy winters; UV levels are high year-round.",
+    culture:
+      "La Serena preserves an unusually large collection of colonial architecture that locals take great pride in, and the city enforces fairly strict rules around historic-building preservation. As a university town, the atmosphere is relatively young and lively, with the seafront district lively on summer nights.",
+    seeAndDo:
+      "Plaza de Armas and the cathedral, the Japanese Garden, the long stretch of La Serena's beaches, nearby observatories (such as Cerro Tololo Inter-American Observatory and Mamalluca Observatory, most requiring advance booking), and the vineyards and pisco distilleries of Elqui Valley.",
+    whenAndTips:
+      "Summer (December–February) is peak season for the beach and draws the largest crowds of domestic tourists. For stargazing or exploring Elqui Valley, skies are clear on most nights year-round, but it's still worth checking observatory booking availability ahead of time; coastal mornings often see fog (locally called 'camanchaca'), which can reduce visibility.",
+  },
+  concepcion: {
+    identity:
+      "Concepción is the capital of the Biobío Region, with a metro-area population of about a million, making it Chile's second-largest urban area. It sits near the mouth of the Biobío River and is an important industrial, educational, and port city.",
+    layout:
+      "The city centers on Plaza de Armas, with the University of Concepción campus and surrounding area forming a lively student district; the Biobío River flows past the city's south side, and the nearby port of Talcahuano is an important harbor — the area suffered severe damage in the 2010 earthquake and tsunami and has since undergone extensive rebuilding.",
+    gettingAround:
+      "Carriel Sur Airport, about 15 km from downtown, has flights to and from Santiago and other cities. The city's bus network is fairly extensive and connects well to nearby port towns like Talcahuano. The climate is temperate maritime with distinct seasons; winters (June–August) are wet, cold, and damp, and this is one of Chile's rainier regions.",
+    culture:
+      "Concepción is an important university city with an active student culture, and it has historically been a center of several Chilean student movements — public discussion of social issues here tends to be fairly open. Because the region sits in an active earthquake zone, locals maintain a strong awareness of earthquake and tsunami warnings, and it's basic sense to note hotel evacuation instructions on arrival.",
+    seeAndDo:
+      "The University of Concepción campus and art galleries, the Galería de la Historia cultural center, Plaza de la Independencia, and the scenery along the Biobío River; nearby, visit the port of Talcahuano or the historic Lota coal-mining site (a 19th-century mining town now converted into a tourist attraction).",
+    whenAndTips:
+      "Summer (December–February) offers the most pleasant weather and is the best season for outdoor activities; winters are rainy, so pack rain gear. In coastal and earthquake-prone areas, it's worth noting the local tsunami-evacuation route signage when checking in.",
+  },
+  temuco: {
+    identity:
+      "Temuco is the capital of the Araucanía Region, sitting at the northern edge of the southern Lake District — the gateway city for Villarrica and Llaima volcanoes and one of the cities with the largest concentration of Mapuche Indigenous culture in Chile.",
+    layout:
+      "The city center is anchored by Plaza Pedro de Valdivia, with Ñielol Hill Park preserving a patch of native southern forest right in the city and offering views over the whole area; the well-known Feria Pinto market is an important venue for Mapuche traditional crafts and produce trading.",
+    gettingAround:
+      "La Araucanía Airport, about 6 km from downtown, has flights to and from Santiago. Buses and taxis cover the city itself; reaching lake-district towns like Pucón or Villarrica usually requires a long-distance bus or private transfer, about an hour's drive. The climate is temperate and humid, with rainy winters, mild summers, and fairly large day-to-night temperature swings.",
+    culture:
+      "Temuco has one of the largest concentrations of Mapuche Indigenous people in Chile, and the Feria Pinto market is an important place to experience Mapuche crafts, textiles, and traditional herbal medicine; when visiting Indigenous settlements or attending religious ceremonies (such as the 'Ngillatun' ritual), follow the local community's guidance and never photograph a ceremony without permission.",
+    seeAndDo:
+      "Ñielol Hill Park (views over the city and distant volcanoes), the Feria Pinto market, and the regional museum (covering Mapuche cultural history); within an hour's drive of Temuco lie several lake-district volcanoes and lakes, making it a common transfer point on the way to Villarrica and Pucón.",
+    whenAndTips:
+      "Summer (December–February) is the best season for exploring the Lake District; winters are rainy and some mountain roads may close due to snow. As a gateway city, most visitors transfer quickly through Temuco onward to lake-district towns like Pucón, so stays here tend to be short.",
+  },
+  pucon: {
+    identity:
+      "Pucón is the most popular outdoor tourism town in Chile's southern Lake District, sitting on the shore of Lake Villarrica directly facing the permanently steaming Villarrica Volcano — the hub for crater climbs, hot springs, and water sports.",
+    layout:
+      "The town is small, stretching along the shore of Lake Villarrica; the main street, Avenida O'Higgins, is lined with travel agencies, restaurants, and outdoor gear shops. A black-sand beach sits right at the town center, the main spot for locals to swim in summer.",
+    gettingAround:
+      "Pucón's small local airfield has no scheduled commercial service; visitors typically connect through La Araucanía Airport in Temuco, about an hour's drive, or take a long-distance bus from Temuco. The town itself is walkable, while nearby attractions (the volcano, hot springs, waterfalls) require a local tour or private transfer. The climate is temperate and humid, with mild, mostly sunny summers and cold, rainy winters in the mountains.",
+    culture:
+      "Pucón is the flagship town for Chile's outdoor-adventure culture, and interactions between visitors and local guides are known for being professional yet relaxed. Climbing Villarrica's crater requires a certified guide and proper gear (crampons, helmet); when the volcano's alert level is raised, climbs are officially suspended, so always follow the real-time announcements from local safety authorities.",
+    seeAndDo:
+      "The Villarrica crater climb (a roughly 6–8 hour round trip with a guide), water sports and the black-sand beach on Lake Villarrica, the Huife hot springs cluster nearby, and the waterfalls and forest trails within Villarrica National Park.",
+    whenAndTips:
+      "The Southern Hemisphere summer (December–February) is peak season, with the most stable weather and the widest range of activities; the nearby volcano ski resort opens in winter (June–August), one of the few places in the world offering skiing on an active volcano. Before any crater climb, check the volcanic-alert bulletins published by SERNAGEOMIN (Chile's national geology and mining service).",
+  },
+  "puerto-varas": {
+    identity:
+      "Puerto Varas is a small city in Chile's southern Lake District known for its German-immigrant architecture, sitting on the shore of Lake Llanquihue directly facing Osorno Volcano — an important base for exploring the southern Lake District and the Chiloé Archipelago.",
+    layout:
+      "The city stretches along the shore of Lake Llanquihue, with the lakeside avenue lined by many wooden villas built by 19th-century German settlers; the Sacred Heart Church, modeled on churches in Germany's Black Forest region, is one of the city's landmarks.",
+    gettingAround:
+      "There's no airport in town; El Tepual Airport in Puerto Montt, about 20 km away, is the main air gateway, with taxis and hotel shuttles running to and from the city. The climate is temperate maritime with heavy rainfall year-round, mild summers, and wet, chilly winters — rain gear is worth keeping on hand.",
+    culture:
+      "Puerto Varas and the surrounding area retain a strong German-settler cultural imprint, and local food often features German-style baking and beer; the German cultural festival held every February (with events like the Kuchen festival) is a good window into this immigrant heritage — general respect for the local blended German-Chilean culture is all that's needed day to day.",
+    seeAndDo:
+      "Lake Llanquihue's shoreline and the reflection of Osorno Volcano, the Sacred Heart Church, and the German-style architecture along the lakeside avenue; from here, boat or car trips reach Lake Todos los Santos and Vicente Pérez Rosales National Park, and it's also a common transfer point for the Chiloé Archipelago.",
+    whenAndTips:
+      "Summer (December–February) is the best season to explore the Lake District and offers the widest range of outdoor activities; winters are rainy, so pack waterproof clothing and footwear. As a resort town near a major transport hub, book hotels ahead during peak season.",
+  },
+  "puerto-montt": {
+    identity:
+      "Puerto Montt is the capital of the Los Lagos Region, sitting on Reloncaví Sound — the main sea-and-air gateway from southern Chile to Patagonia and the Chiloé Archipelago, and an important center of the salmon-farming industry.",
+    layout:
+      "The city stretches along the bay, with the main commercial district around Plaza de Armas; the Angelmó fishermen's wharf is the city's most distinctive district, packed with seafood markets and craft stalls, and the port area sees a steady stream of ferries and boats bound for the southern fjords and Patagonia.",
+    gettingAround:
+      "El Tepual Airport, about 16 km from downtown, is an important aviation hub for southern Chile, with multiple daily flights to Santiago and other southern cities; ferries from here also reach the Chiloé Archipelago or head south into Patagonia. The climate is temperate maritime with heavy year-round rainfall and modest seasonal temperature swings, so rain gear is essential.",
+    culture:
+      "Puerto Montt is an important hub for the salmon industry and shipping, and city life is closely tied to these industries; the seafood market at the Angelmó wharf is the best place to experience local food culture, and light bargaining over seafood or crafts is common but should stay polite.",
+    seeAndDo:
+      "The Angelmó fishermen's wharf (seafood market and crafts), Plaza de Armas, and the cathedral; from here, arrange a ferry to the Chiloé Archipelago (about 1.5 hours) or a long-distance ferry south to Puerto Aysén, taking in views of the Chilean fjords along the way.",
+    whenAndTips:
+      "Summer (December–February) is the best season for exploring the surrounding lakes and fjords; rainfall is heavy year-round, so keep rain gear handy. As a key southern transport hub, book ferries or flights toward Patagonia well ahead, especially during peak season when space is tight.",
+  },
+  coyhaique: {
+    identity:
+      "Coyhaique is the capital of the Aysén Region, sitting inland in northern Patagonia — the largest town in this sparsely populated wilderness and an important supply stop for exploring the scenery along the Carretera Austral (Southern Highway).",
+    layout:
+      "The city center square is pentagonal, an unusual layout for a Chilean town; Cerro Mackay Park sits right beside downtown, offering views over the town and the surrounding Patagonian mountains. The town itself is small but is the only settlement with reasonably complete infrastructure for hundreds of kilometers around.",
+    gettingAround:
+      "Coyhaique's small local airfield (Teniente Vidal) has no scheduled commercial service; the actual air gateway is Balmaceda Airport, about 55 km away, with flights to and from Santiago and bus and taxi transfers into town. The climate is temperate continental with distinct seasons, cold winters, and highly variable weather year-round — pack layered warm clothing.",
+    culture:
+      "Coyhaique and inland Patagonia have an extremely low population density, and local life moves at a slow pace with tight-knit communities; as a supply hub along the Southern Highway, most visitors here are restocking or connecting to the next leg of their trip. Locals tend to be friendly toward outdoor travelers and happy to share road-condition information.",
+    seeAndDo:
+      "Cerro Mackay Park, the pentagonal town square, and the regional museum; from Coyhaique, visit the nearby Marble Caves and Cerro Castillo National Park — it's also an important stop for anyone driving or cycling the Carretera Austral.",
+    whenAndTips:
+      "The Southern Hemisphere summer (November through March) is the best season for exploring the Southern Highway; some mountain roads may close in winter due to snow. Businesses and gas stations along this route are widely spaced, so stock up on fuel and supplies in Coyhaique before setting out.",
+  },
+  "punta-arenas": {
+    identity:
+      "Punta Arenas is the capital of the Magallanes Region, sitting on the northern shore of the Strait of Magellan — one of the world's most important far-southern cities and the main gateway to Torres del Paine National Park, Tierra del Fuego, and Antarctica.",
+    layout:
+      "The city stretches along the Strait of Magellan; around downtown's Plaza de Armas stand European-style mansions left over from the boom era of shipping and wool trade in the late 19th century. The seafront promenade looks across the strait to Tierra del Fuego, clearly visible on clear days.",
+    gettingAround:
+      "Presidente Carlos Ibáñez del Campo Airport, about 20 km from downtown, has flights to and from Santiago and is also an important gateway for Torres del Paine (via a transfer in Puerto Natales) and Antarctic cruise and tour departures. Taxis and buses cover the city. The climate is sub-polar maritime, windy and cold year-round; pack a heavy jacket even in summer (December–February).",
+    culture:
+      "Punta Arenas grew prosperous historically on shipping and the wool trade, and the city retains a fairly international immigrant heritage (with long-established Croatian and British communities, among others); the wind here is strong year-round, and locals are well adapted to it — visitors should dress warmly and windproof for any outdoor activity.",
+    seeAndDo:
+      "The historic mansion district from the Magellan-era boom, the Salesian Regional Museum Maggiorino Borgatello (covering Patagonian Indigenous and colonial history), and the Magellanic penguin colony along the strait (on Isla Magdalena, reached by boat). From here, Puerto Natales (about a 3-hour drive) is the usual route to Torres del Paine National Park.",
+    whenAndTips:
+      "The Southern Hemisphere summer (December–February) is the best season for visiting Torres del Paine and watching penguins, with long daylight hours; winds are strong year-round, so prepare properly for outdoor activity. Most Antarctic cruises depart from either Punta Arenas or Ushuaia, Argentina, and tickets should be booked months ahead during peak season.",
+  },
+  "hanga-roa": {
+    identity:
+      "Hanga Roa is Easter Island's only town and settlement, home to the island's entire population, on the southwest coast — the sole base for exploring the moai statues and Rapa Nui cultural sites.",
+    layout:
+      "The town is small, stretching in a band along the coastline, with travel agencies, restaurants, and craft shops concentrated on the main streets; Tahai Ceremonial Complex sits right beside town, the closest cluster of moai to the settlement and a classic spot for locals and visitors to watch the sunset.",
+    gettingAround:
+      "Mataveri Airport sits right at the edge of town, the island's only airport, usually reached on a direct flight from Santiago (about a 5-hour flight). There's no public transit system on the island; renting a car or bicycle or joining a local tour is the main way to reach the scattered archaeological sites — some roads are unpaved dirt tracks, so a 4WD rental is recommended.",
+    culture:
+      "Hanga Roa is the cultural heart of the Rapa Nui Indigenous people (Polynesian descendants native to Easter Island); both Spanish and the Rapa Nui language are spoken on the island. The moai are regarded as embodiments of ancestral spiritual power (mana) and must never be climbed or touched; visiting archaeological sites means following the national park's marked routes, and some areas prohibit bringing food or pets. Traditional Rapa Nui tattoo art and dance performances are an important cultural showcase and should be watched respectfully.",
+    seeAndDo:
+      "Rano Raraku volcanic crater (the moai quarry, where hundreds of unfinished statues remain), Ahu Tongariki (fifteen moai standing in a row, the island's most spectacular statue group), Anakena Beach (the island's only sandy beach, good for swimming), and Orongo ceremonial village (the clifftop site of the Birdman cult).",
+    whenAndTips:
+      "The climate is mild subtropical-maritime year-round; December through March is relatively warm and rainy, and also peak tourist season. Since supplies are flown in, prices are generally higher than on mainland Chile, so book accommodation and tickets ahead of time (Rapa Nui National Park entry tickets must be purchased at Mataveri Airport or designated points on the island). UV exposure is intense, so sun protection is essential.",
+  },
 };

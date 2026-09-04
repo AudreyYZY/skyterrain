@@ -1,0 +1,16 @@
+{
+  "id": "scl-anf",
+  "name": "圣地亚哥 — 安托法加斯塔",
+  "nameEn": "Santiago — Antofagasta",
+  "description": "拉波塔达海蚀拱",
+  "descriptionEn": "La Portada Natural Monument",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA362", "aircraft": "Airbus A320", "depIata": "SCL", "arrIata": "ANF", "durationMin": 121 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "terrain", "terrainId": "la-portada-coast" },
+    { "kind": "city", "id": "anf", "name": "安托法加斯塔", "nameEn": "Antofagasta", "lat": -23.4445, "lon": -70.4451, "airport": true }
+  ]
+}

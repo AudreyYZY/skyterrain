@@ -1,0 +1,16 @@
+{
+  "id": "scl-cjc",
+  "name": "圣地亚哥 — 卡拉马",
+  "nameEn": "Santiago — Calama",
+  "description": "阿塔卡马沙漠",
+  "descriptionEn": "Atacama Desert",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA148", "aircraft": "Airbus A321", "depIata": "SCL", "arrIata": "CJC", "durationMin": 127 },
+  "cruiseHeight": 9500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "terrain", "terrainId": "atacama-desert" },
+    { "kind": "city", "id": "cjc", "name": "卡拉马", "nameEn": "Calama", "lat": -22.4983, "lon": -68.9036, "airport": true }
+  ]
+}

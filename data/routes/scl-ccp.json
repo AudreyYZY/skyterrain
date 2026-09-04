@@ -1,0 +1,16 @@
+{
+  "id": "scl-ccp",
+  "name": "圣地亚哥 — 康塞普西翁",
+  "nameEn": "Santiago — Concepción",
+  "description": "智利中央谷地",
+  "descriptionEn": "Chilean Central Valley",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA9", "aircraft": "Airbus A320", "depIata": "SCL", "arrIata": "CCP", "durationMin": 55 },
+  "cruiseHeight": 6500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "terrain", "terrainId": "central-valley-chile" },
+    { "kind": "city", "id": "ccp", "name": "康塞普西翁", "nameEn": "Concepción", "lat": -36.7727, "lon": -73.0631, "airport": true }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "scl-pmc",
+  "name": "圣地亚哥 — 普埃托蒙特",
+  "nameEn": "Santiago — Puerto Montt",
+  "description": "智利中央谷地 · 奥索尔诺火山",
+  "descriptionEn": "Chilean Central Valley · Osorno Volcano",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA61", "aircraft": "Airbus A320", "depIata": "SCL", "arrIata": "PMC", "durationMin": 107 },
+  "cruiseHeight": 8500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "terrain", "terrainId": "central-valley-chile" },
+    { "kind": "terrain", "terrainId": "osorno-volcano" },
+    { "kind": "city", "id": "pmc", "name": "普埃托蒙特", "nameEn": "Puerto Montt", "lat": -41.4389, "lon": -73.0940, "airport": true }
+  ]
+}

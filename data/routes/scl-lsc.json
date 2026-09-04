@@ -1,0 +1,16 @@
+{
+  "id": "scl-lsc",
+  "name": "圣地亚哥 — 拉塞雷纳",
+  "nameEn": "Santiago — La Serena",
+  "description": "埃尔基谷",
+  "descriptionEn": "Elqui Valley",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA318", "aircraft": "Airbus A321", "depIata": "SCL", "arrIata": "LSC", "durationMin": 68 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "terrain", "terrainId": "elqui-valley" },
+    { "kind": "city", "id": "lsc", "name": "拉塞雷纳", "nameEn": "La Serena", "lat": -29.9162, "lon": -71.1994, "airport": true }
+  ]
+}

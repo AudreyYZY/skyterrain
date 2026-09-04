@@ -14819,4 +14819,397 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The castle was founded in the 13th century and passed through several noble families including the Vítkovci and the Rosenbergs; the historic town center was inscribed as a UNESCO World Heritage Site in 1992, and it remains one of the best-preserved small medieval towns in Central Europe.",
   },
+
+  "andes-chile": {
+    seeing:
+      "The Andes are the world's longest mountain range, running the length of South America's west coast; the Chilean stretch extends roughly 4,300 km along the Chile–Argentina border, spanning almost the country's entire north–south length. Its anchor, Ojos del Salado, at 6,893 m, is the world's highest active volcano and South America's second-highest peak after Aconcagua.",
+    formation:
+      "The Andes formed as the Nazca Plate subducts eastward beneath the South American Plate, a textbook case of subduction-zone mountain building; the Chilean stretch is dotted with dozens of active volcanoes, and volcanic and seismic activity remains among the most frequent along the entire Pacific Ring of Fire.",
+    observation:
+      "From the air, the Andes form a near-continuous natural barrier along Chile's border: the northern section is a plateau studded with salt flats and volcanic cones, the central section a chain of permanently snow-capped peaks, and the southern section dissolves into Patagonia's ice fields and fjords — the range's character shifts dramatically with latitude.",
+    distinguish:
+      "Unlike Paine Massif, Villarrica, or the other individually listed peaks, this entry covers the overall spine of the Chilean Andes as a whole; those peaks are distinctive landmarks along this main ridge, each with its own story.",
+    concept:
+      "The Andes are not a single ridge but a composite system of parallel ranges, plateaus, and volcanic belts; Chile's classic three-part landscape structure — coastal range, central valley, Andes — is built around this range as its eastern spine.",
+    history:
+      "The Andes have long formed the backdrop for the lives and migrations of Indigenous peoples such as the Atacameño and Mapuche; at its height the Inca Empire's territory extended along the Andes into north-central Chile. The mountains today still combine traditional herding and mining with modern industry.",
+  },
+  "cordillera-de-la-costa": {
+    seeing:
+      "The Chilean Coastal Range is an ancient, low range running parallel to the Andes along the Pacific coast, forming the western wall of Chile's three-part landscape structure. Its central section, near Santiago and Valparaíso, rises to 1,880 m at La Campana National Park.",
+    formation:
+      "This range is an older geological unit at the continent's edge, predating the Andes; prolonged weathering has left it relatively low and rounded, in sharp contrast to the younger, steeper Andes to the east.",
+    observation:
+      "From the air, the Coastal Range appears as a green screen hugging the Pacific, separating the inland Central Valley from the ocean; it is narrower and lower in the north-center, while in the south it gradually converges with — and even merges into — the Andes, producing the complex coastline around Chiloé.",
+    distinguish:
+      "Both the Coastal Range and the Andes run roughly north–south, but the Coastal Range is older, lower, and closer to the sea, with the Central Valley between them; the Andes are younger and steeper, forming the Chile–Argentina border.",
+    concept:
+      "The coastal range–central valley–Andes structure is the most basic framework for understanding Chile's landscape as a whole, running continuously from the northern desert to the south-central lake district, with the relative width and relief of each band shifting with latitude.",
+    history:
+      "In 1834, naturalist Charles Darwin climbed La Campana during the voyage of the Beagle, and his notes became an important early record of Chilean geology; the peak left its mark on the history of natural science, and La Campana National Park was designated a UNESCO Biosphere Reserve in 1985.",
+  },
+  "villarrica-volcano": {
+    seeing:
+      "Villarrica is one of the most iconic active volcanoes in Chile's Lake District, at 2,847 m and permanently snow-capped; its crater regularly hosts a visible glowing lava lake, making it one of the few volcanoes in South America where active lava can be observed on a near-continuous basis.",
+    formation:
+      "Villarrica is part of the volcanic chain along the southern Andes, a stratovolcano built up from repeated basaltic-andesitic eruptions; a persistent lava lake sits within its crater, and its eruptions are typically Strombolian in style.",
+    observation:
+      "From the air, Villarrica is a strikingly symmetrical conical volcano, its snow-white summit mirrored in Lake Villarrica below; on night flights, the crater occasionally shows a faint red glow.",
+    distinguish:
+      "Villarrica and Osorno, both in the Lake District, share a nearly symmetrical cone shape, but Villarrica's crater regularly hosts an active lava lake — a key marker of eruptive activity — while Osorno has not erupted since 1869 and is markedly less active.",
+    concept:
+      "Villarrica is a classic case study of a 'persistently active volcano' — one that sustains lava lake activity without major eruptions, giving volcanologists a natural laboratory for observing magma dynamics up close.",
+    history:
+      "The town of Pucón, at Villarrica's foot, has become one of the most popular outdoor destinations in Chile's Lake District, with a summit crater hike a classic local excursion; the volcano erupted in 2015, with nearby residents evacuated in time and no major casualties.",
+  },
+  "osorno-volcano": {
+    seeing:
+      "Osorno is an exceptionally symmetrical stratovolcano at 2,652 m, often called 'Chile's Mount Fuji' for its resemblance to Japan's iconic peak; it stands between Lake Llanquihue and Lake Todos los Santos, one of the Lake District's most photographed landmarks.",
+    formation:
+      "Osorno was built up from repeated basaltic-andesitic lava flows, producing an unusually well-preserved, evenly sloped cone that serves as a textbook example of stratovolcano form; its summit remains permanently glaciated.",
+    observation:
+      "From the air, Osorno is an almost perfect cone, its snow-covered form mirrored in Lake Llanquihue, and together with distant Calbuco Volcano it makes for the classic postcard view of Chile's Lake District.",
+    distinguish:
+      "Unlike the frequently erupting Villarrica and Llaima, Osorno has recorded more than 10 eruptions over the past two centuries, but its most recent was in 1869; it is now in a relatively quiet phase — the Lake District's 'beautiful, dormant volcano.'",
+    concept:
+      "Osorno is an entry-level case study of the classic stratovolcano form: a symmetrical cone, even slopes, built from alternating layers of lava and pyroclastic material from repeated eruptions — a contrast to the irregular forms of shield volcanoes or calderas.",
+    history:
+      "Beginning in the 19th century, the area around Osorno drew large numbers of German immigrants, and lakeside towns such as Puerto Varas and Frutillar still retain a strong German architectural character today — a core landmark of southern Chile's 'German settlement belt.'",
+  },
+  "llaima-volcano": {
+    seeing:
+      "Llaima is one of south-central Chile's highest and most frequently erupting active volcanoes, at 3,125 m, with more than 50 recorded eruptions historically; it sits within Conguillío National Park.",
+    formation:
+      "Llaima is built from two overlapping cones and has a varied eruptive style, producing both basaltic lava flows and more explosive eruptions — one of the most volcanically active points along the southern Andes.",
+    observation:
+      "From the air, Llaima's permanently snow-capped summit contrasts sharply with dark, fresh lava flows on its slopes and the surrounding old-growth araucaria forest, making it the most striking landmark in Conguillío National Park.",
+    distinguish:
+      "Unlike the symmetrical, unbroken cones of Osorno and Villarrica, Llaima's repeated eruptions have produced a double-peaked, slightly irregular cone — a visual clue to a volcano's complex eruptive history.",
+    concept:
+      "Llaima's eruption frequency ranks among the highest of Chile's active volcanoes, making it a textbook case for studying the evolution of a 'high-frequency' stratovolcano; the surviving araucaria forest at its base also makes it a sample site for studying the relationship between volcanic hazard and ecosystems.",
+    history:
+      "Conguillío National Park was established in 1950, one of Chile's earliest national parks; the araucaria trees at the volcano's base, sometimes called 'living fossils,' can live over a thousand years and have long been regarded as sacred by the local Mapuche people.",
+  },
+  "paine-massif": {
+    seeing:
+      "The Paine Massif is a standalone granite massif rising on the eastern edge of the Patagonian Andes, its highest peak Paine Grande at 3,050 m; it is famed for the three steep granite spires of the Torres del Paine and the horned peaks of the Cuernos del Paine, forming the core scenery of Torres del Paine National Park.",
+    formation:
+      "The massif's core is a granite intrusion from the Miocene epoch; once exposed, it was repeatedly carved by glaciers over millions of years, stripping away the softer surrounding sedimentary rock and leaving only the hard granite core, which sculpted the steep spires and horned peaks.",
+    observation:
+      "From the air, the Torres del Paine rise like three stone pillars pointing straight into the sky, with a chain of blue-green glacial lakes at their base, set against grassland and glacial escarpments — one of South America's most recognizable mountain skylines.",
+    distinguish:
+      "The Paine Massif is entirely different from the stratovolcanoes further north like Villarrica and Osorno — it is not a volcano at all, but a granite intrusion sculpted by glaciers, differing completely in composition and formation process.",
+    concept:
+      "The Paine Massif is a classic case study of glacially carved horn peaks: a hard granite core resists erosion while the surrounding softer rock is ground away by glaciers, ultimately leaving sharp, upright horns and knife-edge ridges.",
+    history:
+      "Torres del Paine National Park was established in 1959 and designated a UNESCO Biosphere Reserve in 1978; it is one of South America's most famous trekking destinations, with the classic 'W' and full-circuit (O) routes drawing hikers and climbers from around the world each year.",
+  },
+  "altiplano-chile": {
+    seeing:
+      "The Chilean Altiplano is a high plateau on the western flank of the Andes averaging over 4,000 m in elevation — the Chilean stretch of South America's broader Andean Altiplano. Its anchor, Lake Chungará, sits at 4,517 m, among the highest lakes in the world.",
+    formation:
+      "The plateau consists of structural basins uplifted by Andean orogeny; sustained volcanic activity and closed drainage systems together shaped today's landscape, with symmetrical volcanic cones and saline lakes scattered across the highland.",
+    observation:
+      "From the air, the plateau is a vast, austere expanse: reddish-brown ground, brilliant blue high-altitude lakes, and flocks of flamingos gathered in shallow lake margins, with symmetrical cones like Parinacota Volcano rising against the skyline — a striking contrast to lower-elevation green landscapes.",
+    distinguish:
+      "The Chilean Altiplano and the Atacama Desert both occupy Chile's northern highlands, but the Altiplano sits much higher (generally above 4,000 m), is colder, and has extensive saline lakes and wetlands, while the Atacama Desert is lower in elevation and extremely arid.",
+    concept:
+      "The Andean Altiplano is South America's second-largest plateau after the Tibetan Plateau, and one of the largest high-elevation plateaus in the world; its distinctive high-altitude wetland ecosystems support species adapted to extreme elevation, including flamingos and vicuñas.",
+    history:
+      "The plateau has long been traditional grazing territory for Andean Indigenous peoples such as the Aymara, and llama and alpaca herding traditions continue today; Lauca National Park was established in 1970 and designated a UNESCO Biosphere Reserve in 1981, protecting the plateau's distinctive ecosystem.",
+  },
+  "campo-de-hielo-sur": {
+    seeing:
+      "The Southern Patagonian Ice Field stretches roughly 350 km north–south, covering about 13,000 km², making it the largest continuous body of ice in the Southern Hemisphere outside Antarctica; it feeds dozens of glaciers and spans both Chile and Argentina.",
+    formation:
+      "The ice field is a remnant of continental glaciation from the last ice age, sustained by heavy precipitation over the high-elevation Patagonian Andes that accumulates as permanent snow and ice; glaciers branch out from the field in all directions, some extending down to low-elevation lakes or fjords.",
+    observation:
+      "From the air, the ice field appears as a vast, gently undulating white plateau, its edges splitting into countless glacial tongues; on the Chilean side, Pío XI Glacier is broad and dramatic, its surface crisscrossed with crevasses and dotted with blue meltwater pools.",
+    distinguish:
+      "The Southern Patagonian Ice Field is a separate body from the Northern Patagonian Ice Field further north, divided by roads and river valleys; the southern field is larger and holds Patagonia's primary reserve of freshwater ice.",
+    concept:
+      "The ice field is an important sample for studying how modern continental glaciers respond to climate change: most of its outlet glaciers have been retreating steadily for decades, but Pío XI Glacier on the Chilean side is one of the few glaciers in South America still advancing — a phenomenon still under study.",
+    history:
+      "The ice field and its surroundings have long been sparsely populated, remaining one of the last-developed and best-preserved wilderness areas in South America; Bernardo O'Higgins National Park, named for the leader of Chile's independence movement, covers most of the ice field's Chilean side.",
+  },
+  "salar-de-atacama": {
+    seeing:
+      "The Salar de Atacama is Chile's largest salt flat, covering about 3,000 km², sitting in a closed basin between the Andes and the Coastal Range; Laguna Chaxa, at the salt crust's edge, is a well-known site for observing flamingos.",
+    formation:
+      "The basin containing the salt flat has long been an internally drained system, with snowmelt and rainfall carrying salts from the surrounding highlands that have no outlet; millions of years of continuous evaporation and concentration have deposited a thick salt crust and brine layer at the basin floor.",
+    observation:
+      "From the air, the salt flat shows a mosaic of white crystalline salt crust and dark brine pools, with pink flamingo colonies scattered along its margins, set against a backdrop of distant Andean volcanoes for a striking color contrast.",
+    distinguish:
+      "The Salar de Atacama and the Atacama Desert are not parallel entries but a part-to-whole relationship — the salar is a specific closed basin of salt accumulation deep within the desert, while the desert is the broader arid climate zone covering the entire region.",
+    concept:
+      "The salt flat is a classic case study of how salt accumulates through evaporative concentration in a closed drainage basin; its brine is rich in lithium, making the salar one of the most concentrated lithium resource areas on Earth, and a hotspot for cross-disciplinary study between geology and resource economics.",
+    history:
+      "Indigenous peoples such as the Atacameño have long lived in oasis settlements around the salt flat, drawing on its resources and highland pastures; lithium mining that began in the late 20th century has drawn this ancient salt flat into the global supply chain for new-energy industries.",
+  },
+  "el-tatio-geysers": {
+    seeing:
+      "El Tatio sits at about 4,320 m, one of the highest-elevation geyser fields in the world and the largest geothermal field by geyser count in the Southern Hemisphere, with more than 80 active geysers.",
+    formation:
+      "Geysers form when an underground magma chamber continuously heats groundwater; once pressure builds to a critical point, superheated steam and water erupt violently through surface fissures. El Tatio's active Andean volcanism provides the sustained geothermal energy driving this process.",
+    observation:
+      "From the air, as temperatures plunge below freezing around sunrise, scalding geothermal steam condenses into columns of white vapor standing across the open plateau — one of the most visually striking geothermal scenes at dawn.",
+    distinguish:
+      "El Tatio and the Salar de Atacama both belong to the Atacama region's geothermal and saline landscapes, but the geysers are an active surface eruption phenomenon with near-boiling water temperatures, while the salt flat is a relatively static, evaporative depositional landform.",
+    concept:
+      "Geyser formation requires three conditions simultaneously: sustained geothermal energy, an ample groundwater supply, and a special underground plumbing structure capable of building pressure. El Tatio meets all three, producing the Southern Hemisphere's largest geyser field.",
+    history:
+      "El Tatio is the classic early-morning excursion from San Pedro de Atacama; visitors typically depart before dawn to arrive as temperatures reach their lowest and the steam effect is at its most dramatic.",
+  },
+  "central-valley-chile": {
+    seeing:
+      "Chile's Central Valley is a long, narrow depositional plain squeezed between the Coastal Range and the Andes, stretching roughly 1,000 km north–south; it is Chile's most densely populated and agriculturally developed belt, home to Santiago, Curicó, and other major cities.",
+    formation:
+      "The valley formed as sediment carried by Andean glaciers and rivers filled an ancient structural depression; its flat surface and deep soils provide ideal conditions for large-scale agriculture.",
+    observation:
+      "From the air, the Central Valley appears as a neat grid of farmland and vineyards, in sharp contrast to the rugged ranges on either side; in autumn the vineyards turn shades of gold and deep red, making this Chile's quintessential 'settled landscape.'",
+    distinguish:
+      "The Central Valley shares the same north–south 'lowland belt' as the Atacama Desert further north and the lake-district plains further south, but its Mediterranean climate is mild and humid — a sharp contrast to the arid north.",
+    concept:
+      "The Central Valley is the key sample for understanding the middle segment of Chile's three-part landscape structure (coastal range–central valley–Andes), and it is also one of the few Mediterranean-climate zones in the Southern Hemisphere suited to viticulture.",
+    history:
+      "The Central Valley has been Chile's agricultural and demographic core since the Spanish colonial era; Santiago, founded in 1541, gradually became the nation's political and economic center. Today the valley is also the birthplace and heartland of Chile's wine industry.",
+  },
+  "atacama-desert": {
+    seeing:
+      "The Atacama Desert lies on the highland between the Coastal Range and the Andes, one of the driest places on Earth outside polar desert valleys — some weather stations have recorded no measurable rainfall for decades.",
+    formation:
+      "The desert's extreme aridity results from two compounding factors: the Andes to the east block moist air from the Amazon Basin, producing a rain-shadow effect, while the cold Humboldt Current offshore suppresses evaporation from the sea surface — together creating the world's driest non-polar region.",
+    observation:
+      "From the air, the Atacama Desert shows vast expanses of reddish-brown, nearly barren terrain, occasionally broken by the white patches of salt flats and scattered oases; because the air is extraordinarily dry, visibility is exceptional and surface textures are sharply defined.",
+    distinguish:
+      "Unlike wind-formed deserts such as the Sahara, the Atacama's extreme aridity comes primarily from combined rain-shadow and cold-current effects; its surface is dominated by gravel plains and salt crusts rather than continuous dune fields — only localized areas like Valle de la Luna show classic sandy erosion landforms.",
+    concept:
+      "The Atacama Desert is the classic case study of a 'coastal desert' climate type, illustrating how a cold current combined with a mountain rain-shadow effect can produce conditions drier than many high-latitude polar regions, despite its low latitude.",
+    history:
+      "Because the air is extraordinarily dry and light pollution minimal, the Atacama plateau hosts world-class observatories including the European Southern Observatory's Very Large Telescope, making it one of the best astronomical observation sites on Earth; oasis settlements at the desert's edges have long served as important waypoints for Indigenous peoples and caravans.",
+  },
+  "valle-de-la-luna": {
+    seeing:
+      "Valle de la Luna (Moon Valley) is a landform in the Atacama Desert shaped jointly by wind erosion and ancient salt deposits, its surface covered in undulating dunes, salt crust, and eroded rock ridges — named for its resemblance to the lunar surface.",
+    formation:
+      "This area was once a depositional basin for an ancient salt lake; over millions of years, tectonic uplift and continuous wind erosion have carved the soft salt and sedimentary layers into deeply gullied, strangely shaped terrain.",
+    observation:
+      "From the air, the cliffs glow in gradients of reddish-brown to pink-purple as the sun sets, and the rippled dunes and jagged rock ridges cast long shadows in the twilight — the Atacama region's classic sunset viewpoint.",
+    distinguish:
+      "Valle de la Luna and the Atacama Desert are a part-to-whole relationship rather than parallel entries — it is the desert's most representative, most dramatically shaped local sample of wind-eroded terrain, not a separate landform unit outside the desert.",
+    concept:
+      "Valle de la Luna is a classic sample for studying wind-eroded salt-layer landforms in arid regions, illustrating how wind becomes the dominant force shaping the surface in an environment with almost no rainfall.",
+    history:
+      "Valle de la Luna was designated a national reserve in 1982 and is the best-known viewpoint near San Pedro de Atacama; because its terrain closely resembles the lunar surface, it has historically also been used as an analogue site for planetary geology research.",
+  },
+  "lake-llanquihue": {
+    seeing:
+      "Lake Llanquihue covers about 860 km², making it Chile's second-largest lake; its shores are famed for reflecting Osorno and Calbuco volcanoes, one of the iconic scenes of Chile's Lake District.",
+    formation:
+      "The lake basin is a glacial depression carved by repeated Pleistocene glaciation; after the glaciers retreated, meltwater and precipitation filled the basin. Several active volcanoes lie close to the lake's northern shore, and volcanic activity combined with glacial carving has shaped this region's landscape.",
+    observation:
+      "From the air, Lake Llanquihue's broad, calm surface clearly mirrors Osorno's symmetrical snow-white cone on clear days, and its shores are dotted with distinctive German-style towns such as Puerto Varas and Frutillar.",
+    distinguish:
+      "Lake Llanquihue and Lake Villarrica to the south are both glacial lakes in Chile's Lake District, but Llanquihue is larger and its lakeside towns show a stronger German-immigrant architectural character, while Villarrica is known for its direct 'volcano-and-lake' pairing with an active volcano.",
+    concept:
+      "Lake Llanquihue is a textbook example of glacial lake formation: a glacier repeatedly carves a deep depression in a valley, and after it retreats, meltwater and precipitation collect to form a lake — the shared origin story of dozens of lakes across Chile's Lake District.",
+    history:
+      "Beginning in the mid-19th century, large numbers of German immigrants settled around Lake Llanquihue, bringing a distinctive architectural style and way of life; lakeside towns such as Puerto Varas retain a strong German character today, the heart of the Lake District's 'German settlement belt.'",
+  },
+  "lake-villarrica": {
+    seeing:
+      "Lake Villarrica covers about 176 km²; it is a glacial lake, and the town of Pucón on its shore faces the permanently steaming Villarrica Volcano, one of the Lake District's most representative 'volcano-and-lake' pairings.",
+    formation:
+      "The lake basin was carved by repeated Pleistocene glaciation, filling with meltwater after the ice retreated; the lake sits directly beside the active Villarrica Volcano, whose eruptive material has also helped shape the surrounding landscape.",
+    observation:
+      "From the air, Lake Villarrica's surface is calm and broad, and Villarrica Volcano on its northern shore is permanently snow-capped, its summit often trailing a faint plume of steam — together forming a symmetrical, striking composition with the lake below.",
+    distinguish:
+      "Lake Villarrica and Lake Llanquihue are both glacial lakes in Chile's Lake District, but Villarrica sits directly beside the actively erupting Villarrica Volcano, giving it a stronger volcanic presence; Lake Llanquihue's surroundings are known instead for their tranquil German-style towns.",
+    concept:
+      "Lake Villarrica is a sample for understanding the 'active volcano and glacial lake' coexistence landform: active volcanism and a Pleistocene-era glacial basin overlap here, offering a direct case for studying how volcanic and glacial landforms interact.",
+    history:
+      "The combination of lake and volcano has made Pucón the Lake District's most popular outdoor tourism hub, with hot springs, kayaking, and crater climbs drawing visitors year-round — a key pillar of southern Chile's tourism industry.",
+  },
+  "lake-general-carrera": {
+    seeing:
+      "Lake General Carrera is Chile's largest lake and South America's second-largest, its water taking on a rare turquoise color from suspended calcium carbonate carried by glacial meltwater; the lake spans both Chile and Argentina.",
+    formation:
+      "The lake basin is a glacial depression left behind as the Patagonian Ice Field retreated; glaciers upstream continuously carry fine calcium-carbonate-rich sediment into the lake, which is the main reason for its distinctive turquoise color.",
+    observation:
+      "From the air, the lake's vivid turquoise water contrasts sharply with the barren Patagonian highland around it; on the Chilean side, the 'Marble Caves' are a cave system carved into a marble formation by millions of years of lake erosion, accessible by boat directly from the water.",
+    distinguish:
+      "Lake General Carrera and lakes Llanquihue and Villarrica to the north are all of glacial origin, but General Carrera is far larger, its water color far more distinctive, and it spans two countries rather than lying entirely within Chile.",
+    concept:
+      "The lake's turquoise color is a classic case study of how 'glacial flour' — extremely fine mineral particles produced by glacial abrasion of bedrock — affects the optical properties of a water body: the suspended particles scatter specific wavelengths of light, producing this distinctive hue.",
+    history:
+      "The Marble Caves have long been known to local fishermen and travelers as a hidden gem; in recent years their striking water-level cave scenery has made them one of the most visited natural sites in Chilean Patagonia, typically reached by boat from Puerto Río Tranquilo on the Chilean shore.",
+  },
+  "rio-loa": {
+    seeing:
+      "The Loa is Chile's longest river, about 440 km long, flowing south and then bending west across the Atacama Desert before emptying into the Pacific — one of the few year-round surface flows in the heart of the desert.",
+    formation:
+      "The Loa originates from snowmelt and rainfall in the northern Andes; as it crosses the desert basin, terrain changes force the river into a pronounced U-shaped bend before it finally cuts through the Coastal Range to reach the Pacific.",
+    observation:
+      "From the air, the Loa traces a winding, deep-green river valley across reddish-brown desert, with oasis towns such as Calama scattered along its banks — a striking color contrast against the barren desert around it.",
+    distinguish:
+      "The Loa and the Elqui River that feeds Elqui Valley are both important water sources in Chile's northern desert belt, but the Loa runs through the drier core of the Atacama and is longer, while the Elqui irrigates a valley oasis famous for viticulture.",
+    concept:
+      "The Loa is a classic case study of an 'exotic river' — one that originates in a humid region and crosses an arid region without drying up. Without continuous high-altitude snowmelt from the Andes, this river could not cross such an arid desert without running dry.",
+    history:
+      "The Loa's banks have long served as an important corridor for human activity in the Atacama Desert; Calama and the surrounding oasis settlements have long relied on the river for irrigation and drinking water, and since the 20th century the river has also been a key water source for nearby copper mining.",
+  },
+  "rio-baker": {
+    seeing:
+      "The Baker is Chile's highest-volume river, originating at Lake General Carrera and flowing west to the Pacific; its water takes on a distinctive turquoise color from glacial meltwater.",
+    formation:
+      "The Baker carries the enormous volume of water draining Lake General Carrera and the surrounding Patagonian Ice Field; the river carves a deep valley through the Patagonian mountains before reaching a fjord near Tortel.",
+    observation:
+      "From the air, the Baker is broad and powerful, its signature turquoise water winding through dense Patagonian old-growth forest on both banks, with the boardwalk village of Tortel scattered near its mouth.",
+    distinguish:
+      "The Baker and the Loa are both among Chile's most representative rivers, but the Baker is Chile's highest-volume river, originating from Patagonian lakes and ice fields in a wet, water-rich region; the Loa is Chile's longest river, originating in and crossing the extremely arid northern desert.",
+    concept:
+      "The Baker's high flow directly reflects the role of the Patagonian Ice Field as a 'natural water tower' — its continuous meltwater supplies the river with far more water than local rainfall alone could sustain, making it a classic case study of a glacier-fed river.",
+    history:
+      "Tortel is one of the few villages in Chile with no road access, its residents relying on wooden boardwalks and boats to get around; it did not receive electricity until 2008, and because of its distinctive 'village on stilts' way of life, the Chilean government designated it a historic monument in 2001.",
+  },
+  "elqui-valley": {
+    seeing:
+      "Elqui Valley is a narrow oasis valley in northern Chile irrigated by the Elqui River, its floor layered with vineyards and pisco brandy distilleries, flanked by arid Andean foothills.",
+    formation:
+      "The valley was carved by the Elqui River as it long eroded the Andean foothills; its fertile, irrigated floor stands in sharp contrast to the dry, barren slopes on either side.",
+    observation:
+      "From the air, Elqui Valley is a narrow green corridor cutting through dry, tan-colored mountains, with terraced vineyards laid out along the valley floor; at night, because the valley sees almost no cloud cover year-round, the sky above is exceptionally clear.",
+    distinguish:
+      "Elqui Valley and Cajón del Maipo are both Andean-foothill valley landforms, but Elqui is defined by irrigated agriculture and viticulture in a dry, low-rainfall climate, while Cajón del Maipo is known for hot springs and near-capital Andean scenery, closer to Santiago.",
+    concept:
+      "Elqui Valley is a sample for studying 'arid-zone oasis agriculture' landforms: river irrigation carves out a band of arable land in otherwise dry mountains, illustrating how water availability determines the pattern of agriculture and settlement in an extreme arid environment.",
+    history:
+      "Because of its moderate elevation, clean air, and near-total lack of cloud cover, the upper valley hosts several international observatories including Cerro Tololo Inter-American Observatory, and is a globally recognized stargazing destination; the valley is also one of Chile's principal pisco-producing regions, with distilling traditions dating back to the Spanish colonial era.",
+  },
+  "cajon-del-maipo": {
+    seeing:
+      "Cajón del Maipo is a deep canyon carved by the Maipo River through the western foothills of the Andes, about an hour's drive from Santiago — the Andean landform Santiago residents visit most often.",
+    formation:
+      "The canyon was carved by the long-term downcutting of the Maipo River through the tectonic mass of the Andean foothills; its walls are steep on both sides, and traces of glacial landforms and geothermal activity survive along its length.",
+    observation:
+      "From the air, Cajón del Maipo shows a classic V-shaped valley cross-section, with the Maipo River winding along its floor; upstream, Maipo Volcano and glacier-fed alpine lakes come into view, with vegetation shifting from shrubland to bare alpine rock as elevation increases.",
+    distinguish:
+      "Cajón del Maipo and Elqui Valley are both Andean-foothill valley landforms, but Cajón del Maipo lies right next to the capital, Santiago, and functions mainly as a short getaway destination, while Elqui Valley lies farther north in an arid zone, known for irrigated agriculture and stargazing tourism.",
+    concept:
+      "Cajón del Maipo is a sample for understanding the relationship between 'Andean foothill canyon' landforms and urban water supply: the Maipo River not only carved this canyon but is also a critical source of water for the capital, Santiago, illustrating the close link between mountain river systems and downstream metropolises.",
+    history:
+      "Cajón del Maipo has been a traditional weekend destination for Santiago residents since the 19th century, with hot-spring resorts developed early along its length; the El Morado Glacier and its glacial lake within the canyon have become a popular hiking destination in recent years.",
+  },
+  "chilean-fjords": {
+    seeing:
+      "The Chilean Fjords are a system of fjords and channels formed as glaciers deeply carved the coastline from the Aysén to Magallanes regions in southern Chile; the shoreline is long, convoluted, and dotted with countless islands, making it one of the most complex fjord coastlines in the world.",
+    formation:
+      "During the Pleistocene ice ages, the Patagonian Ice Field extended west to the coastline, and glaciers carved deep U-shaped valleys; when the ice age ended and sea levels rose, seawater flooded these valleys, creating a maze of interlocking fjords and channels.",
+    observation:
+      "From the air, the Chilean Fjords show an extraordinarily fragmented coastline, with steep cliffs plunging directly into the sea and narrow channels winding among the islands; glaciers frequently calve directly into the water along the way, producing dramatic ice-calving scenes.",
+    distinguish:
+      "The Chilean Fjords and the Strait of Magellan both lie at Chile's southern tip, but the fjords are a complex coastal belt made up of countless branching channels and islands, while the Strait of Magellan is a single natural passage connecting the Atlantic and Pacific.",
+    concept:
+      "The Chilean Fjords are a classic case study of fjord-coast formation, sharing the same origin as Norway's fjords, illustrating how glacial erosion combined with sea-level change can produce one of the world's most complex coastal landforms.",
+    history:
+      "These waters have long served as traditional canoe routes for seafaring Indigenous peoples such as the Kawésqar and Yaghan; today they form one of South America's most important cruise routes and important habitat for South American sea lions and Magellanic penguins.",
+  },
+  "strait-of-magellan": {
+    seeing:
+      "The Strait of Magellan is a natural passage connecting the Atlantic and Pacific oceans, about 570 km long, running between mainland South America and Tierra del Fuego; it is named for Portuguese navigator Ferdinand Magellan, whose expedition passed through it in 1520 during humanity's first circumnavigation of the globe.",
+    formation:
+      "The strait's formation is linked to Pleistocene glacial erosion and tectonic subsidence in Patagonia; when the ice age ended, seawater filled this low-lying passage, eventually linking the Pacific and Atlantic oceans.",
+    observation:
+      "From the air, the strait varies in width, narrowing to about 3 km at the 'First Narrows'; its shores are covered in sub-Antarctic grassland and sparse southern beech forest, and constant strong winds whip whitecaps across the water year-round.",
+    distinguish:
+      "The Strait of Magellan and the Drake Passage further south are both channels connecting the two oceans, but the Strait of Magellan runs between the mainland and Tierra del Fuego, is relatively narrow, and is sheltered by islands, making it far calmer to navigate than the open, exposed Drake Passage.",
+    concept:
+      "The Strait of Magellan is a key landmark in the history of the Age of Exploration: before the Panama Canal opened in 1914, this strait was one of the most important passages linking the Atlantic and Pacific, profoundly shaping global shipping routes for centuries afterward.",
+    history:
+      "In 1520, Magellan's fleet took 38 days to cross this strait, becoming, by the historical record, among the first Europeans to complete this key leg of a circumnavigation; Punta Arenas, the main city on the strait's northern shore, grew rapidly in the late 19th century on shipping and the wool trade, at one point becoming the southernmost major port city in the Southern Hemisphere.",
+  },
+  "la-portada-coast": {
+    seeing:
+      "La Portada is a sea arch near Antofagasta, about 43 m high, carved from Tertiary sedimentary rock by long-term wave erosion — a representative landmark of the 'desert meets coast' boundary where the Atacama Desert reaches the Pacific.",
+    formation:
+      "The rock hosting the arch is Tertiary marine sedimentary rock, long eroded by Pacific waves; the softer layers were gradually hollowed out, leaving only the harder rock to form the isolated arch and sea stack landforms.",
+    observation:
+      "From the air, La Portada stands between golden sand and deep blue water, set sharply against the endless Atacama Desert behind it — a classic cross-section of desert meeting ocean directly.",
+    distinguish:
+      "La Portada shares a similar formation process with sea-stack coastlines such as the Twelve Apostles, but La Portada sits right beside the extremely arid Atacama Desert, illustrating the unusual 'desert meets coast' boundary rather than a typical temperate coastal erosion landform.",
+    concept:
+      "La Portada is a textbook sample for studying how a sea arch forms: waves repeatedly erode a weak point in the rock to form a sea cave, which enlarges and breaks through to form an arch; if the arch's roof eventually collapses, an isolated sea stack remains.",
+    history:
+      "La Portada was designated a national natural monument by the Chilean government in 1945, the most representative natural landmark around Antofagasta, and an important habitat for local seabirds and sea lions.",
+  },
+  "chiloe-archipelago": {
+    seeing:
+      "The Chiloé Archipelago is Chile's second-largest island and its surrounding island group; the main island, Chiloé, covers about 8,400 km² and has a consistently rainy, humid climate. Its distinctive stilted wooden churches and folklore are cultural hallmarks of the region.",
+    formation:
+      "The archipelago is the remaining high ground of the southern Coastal Range, partially submerged by the sea — part of the transitional landscape where the Andes and the Coastal Range gradually converge and dissolve into the ocean in southern Chile.",
+    observation:
+      "From the air, the Chiloé Archipelago has a deeply convoluted coastline, its islands covered in temperate rainforest and traditional stilt-house fishing villages, with the pointed towers of wooden churches standing out sharply against green fields and gray bays.",
+    distinguish:
+      "Chiloé and the Chilean Fjords further south are both fragmented, complex coastal belts in southern Chile, but Chiloé has a relatively mild climate and extensive settled farming and fishing communities, while the area south of the fjords is far more sparsely populated and dominated by wilderness scenery.",
+    concept:
+      "Chiloé is a classic sample for studying how the Coastal Range, as it extends south, is gradually submerged by the sea to form an archipelago landform; it is also a human-geography case study of how a distinctive folk wooden-building tradition evolved within an isolated island setting.",
+    history:
+      "The archipelago's 16 wooden churches blend European Catholic architectural tradition with local Indigenous building techniques; Spanish colonizers founded the town of Castro in 1567, and in 2000 the 16 churches were collectively inscribed as a UNESCO World Heritage Site.",
+  },
+  "easter-island": {
+    seeing:
+      "Easter Island is a triangular volcanic island in the South Pacific formed from three merged volcanoes, about 3,700 km from mainland Chile — one of the most isolated inhabited islands in the world, famous worldwide for its nearly 900 moai statues.",
+    formation:
+      "Easter Island formed from lava layered up by three shield volcanoes, producing its roughly triangular outline; Rano Raraku, one of the island's largest craters, has relatively soft tuff and was the main quarry where the moai were carved.",
+    observation:
+      "From the air, Easter Island is low-lying and open, with almost no trees; grass-covered volcanic terrain is dotted with moai statues facing inland, and hundreds of unfinished or unmoved statues still remain in and around the Rano Raraku crater.",
+    distinguish:
+      "Easter Island and the Juan Fernández Archipelago are both remote Chilean Pacific islands, but Easter Island belongs to the Polynesian cultural sphere and is famed for its moai statues, while Juan Fernández is famed as the real-life inspiration behind Robinson Crusoe — the two have entirely different cultural backgrounds.",
+    concept:
+      "Easter Island is a classic case study of the effects of extreme island isolation on human society: that isolation produced a uniquely concentrated moai-carving culture, but also, because of limited resources, gave rise to well-known debates in island social and ecological history — scholars still hold differing interpretations of the exact causes.",
+    history:
+      "Polynesians arrived and settled the island around 1200–1250 CE, gradually developing the distinctive moai-carving culture; Dutch explorer Jacob Roggeveen 'discovered' the island on Easter Sunday in 1722, giving it its name; the island was annexed by Chile in 1888, and the entire island was inscribed as a UNESCO World Heritage Site in 1995.",
+  },
+  "juan-fernandez-archipelago": {
+    seeing:
+      "The Juan Fernández Archipelago is a volcanic island group about 670 km from mainland Chile; its main island is now named Robinson Crusoe Island, and its highest point, El Yunque, reaches 915 m.",
+    formation:
+      "The archipelago consists of volcanic islands formed by undersea eruptions, geologically young and steeply rugged; long-term oceanic isolation has driven the evolution of an unusually high proportion of endemic species.",
+    observation:
+      "From the air, the archipelago's terrain is steep and rugged, with volcanic cliffs plunging directly into the sea; forested slopes alternate with bare volcanic ridges, and the main island's only settlement, San Juan Bautista, sits on a narrow strip of flat land beside a bay.",
+    distinguish:
+      "Juan Fernández and Easter Island are both remote Chilean Pacific islands, but Juan Fernández lies closer to the mainland with younger, steeper volcanic geology, while Easter Island is known for its gentler volcanic landforms and Polynesian culture.",
+    concept:
+      "The Juan Fernández Archipelago is a classic case study of endemic species evolution on islands: long isolation from the mainland has produced an exceptionally high proportion of endemic plant species, making it an important site for island biogeography research.",
+    history:
+      "In 1704, Scottish sailor Alexander Selkirk was marooned on the island after a dispute with his captain and survived alone for more than four years before being rescued; his experience inspired Daniel Defoe's 1719 novel Robinson Crusoe. The archipelago was designated a UNESCO Biosphere Reserve in 1977.",
+  },
+  "tierra-del-fuego-chile": {
+    seeing:
+      "Tierra del Fuego is the main island of the archipelago at the southernmost tip of South America, split between Chile and Argentina; the Chilean side accounts for roughly the western two-thirds and is dominated by sub-Antarctic grassland, southern beech forest, and the old-growth forest of Karukinka Natural Park.",
+    formation:
+      "Tierra del Fuego is where the southernmost Andes extend into the sea, separated from the mainland by the Strait of Magellan and the Beagle Channel — geologically, a natural continuation of the South American mountain chain.",
+    observation:
+      "From the air, the northern part of Tierra del Fuego is relatively flat, covered in open sub-Antarctic grassland; the south is much steeper, covered in dense southern beech forest, with permanently snow-capped peaks interwoven with narrow channels and fjords.",
+    distinguish:
+      "Tierra del Fuego and the Chiloé Archipelago further north are both large islands in southern Chile, but Tierra del Fuego lies at a higher latitude with a harsher climate, dominated by sub-Antarctic ecosystems; Chiloé's climate is relatively mild and known for its farming and fishing communities.",
+    concept:
+      "The name 'Tierra del Fuego' ('Land of Fire') comes from 1520, when Magellan's fleet passing through the strait saw distant fires lit by the island's Indigenous inhabitants — a naming history that offers a classic case study of how European navigators named newly encountered lands.",
+    history:
+      "The island was long home to Indigenous peoples such as the Yaghan and Selk'nam, who developed distinctive ways of life adapted to the polar climate; Porvenir was founded in the late 19th century during a gold rush and sheep-ranching boom, and remains the largest settlement on the Chilean side.",
+  },
+  "patagonian-steppe-chile": {
+    seeing:
+      "The Chilean Patagonian Steppe is an open, arid grassland in the eastern Magallanes Region; lying in the Andes' rain shadow with sparse precipitation, its vegetation is dominated by low grasses and shrubs, traditionally used for sheep grazing.",
+    formation:
+      "The steppe lies in the rain shadow east of the Andes; westerly winds drop most of their moisture crossing the mountains, arriving at the steppe already dry, and this sustained low rainfall has shaped a semi-arid grassland ecosystem.",
+    observation:
+      "From the air, the steppe is broad and flat, its endless tawny grassland dotted with sheep flocks and scattered ranch infrastructure; within Pali Aike National Park, dozens of volcanic scoria cones and black lava flows punctuate the landscape.",
+    distinguish:
+      "The Chilean Patagonian Steppe and the Southern Patagonian Ice Field both belong to the Patagonia region, but the steppe sits in the dry rain-shadow belt east of the Andes, while the ice field occupies the high-precipitation zone within the Andes themselves — their climate conditions are nearly opposite.",
+    concept:
+      "This steppe is a direct case study of how the 'rain shadow effect' can produce sharply different climate zones within a single region — just tens of kilometers away, the western slope of the Andes receives heavy rainfall and supports dense forest, while the eastern slope is already dry grassland.",
+    history:
+      "The Cueva del Milodón near Pali Aike National Park yielded fossilized fur and bones of the extinct giant ground sloth in 1895, making it an important site for studying the relationship between Patagonia's late-Pleistocene fauna and early human activity; the steppe remains the core area for traditional sheep ranching today.",
+  },
 };

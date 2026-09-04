@@ -342,6 +342,15 @@ import pvgArn from "./pvg-arn.json" with { type: "json" };
 import pvgMad from "./pvg-mad.json" with { type: "json" };
 import pkxLis from "./pkx-lis.json" with { type: "json" };
 import pvgAth from "./pvg-ath.json" with { type: "json" };
+// 智利
+import sclCjc from "./scl-cjc.json" with { type: "json" };
+import sclAnf from "./scl-anf.json" with { type: "json" };
+import sclLsc from "./scl-lsc.json" with { type: "json" };
+import sclCcp from "./scl-ccp.json" with { type: "json" };
+import sclZco from "./scl-zco.json" with { type: "json" };
+import sclPmc from "./scl-pmc.json" with { type: "json" };
+import sclPuq from "./scl-puq.json" with { type: "json" };
+import sclIpc from "./scl-ipc.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -631,4 +640,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   pvgMad,
   pkxLis,
   pvgAth,
+  sclCjc,
+  sclAnf,
+  sclLsc,
+  sclCcp,
+  sclZco,
+  sclPmc,
+  sclPuq,
+  sclIpc,
 ] as unknown as FlightRoute[];
