@@ -1,0 +1,61 @@
+{
+  "id": "pek-osl",
+  "name": "北京 — 奥斯陆",
+  "nameEn": "Beijing — Oslo",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 波罗的海沿岸 · 格洛马河谷",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Baltic Coast · Glomma River Valley",
+  "depCountry": "china",
+  "arrCountry": "norway",
+  "flight": {
+    "airline": "海南航空",
+    "airlineEn": "Hainan Airlines",
+    "flightNo": "HU769",
+    "aircraft": "Airbus A330-300",
+    "depIata": "PEK",
+    "arrIata": "OSL",
+    "durationMin": 544
+  },
+  "cruiseHeight": 11000,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "波罗的海沿岸",
+      "nameEn": "Baltic Coast",
+      "lon": 20,
+      "lat": 58
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "glomma"
+    },
+    {
+      "kind": "city",
+      "id": "osl",
+      "name": "奥斯陆加勒穆恩机场",
+      "nameEn": "Oslo Gardermoen Airport",
+      "lat": 60.1939,
+      "lon": 11.1004,
+      "airport": true
+    }
+  ]
+}

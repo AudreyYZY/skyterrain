@@ -1,0 +1,65 @@
+{
+  "id": "pvg-arn",
+  "name": "上海 — 斯德哥尔摩",
+  "nameEn": "Shanghai — Stockholm",
+  "description": "华北平原 · 蒙古戈壁 · 西西伯利亚平原 · 波罗的海沿岸 · 斯德哥尔摩群岛",
+  "descriptionEn": "North China Plain · Mongolian Gobi · West Siberian Plain · Baltic Coast · Stockholm Archipelago",
+  "depCountry": "china",
+  "arrCountry": "sweden",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU289",
+    "aircraft": "Airbus A330-200",
+    "depIata": "PVG",
+    "arrIata": "ARN",
+    "durationMin": 670
+  },
+  "cruiseHeight": 11100,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "波罗的海沿岸",
+      "nameEn": "Baltic Coast",
+      "lon": 20,
+      "lat": 58
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "stockholm-archipelago"
+    },
+    {
+      "kind": "city",
+      "id": "arn",
+      "name": "斯德哥尔摩阿兰达机场",
+      "nameEn": "Stockholm Arlanda Airport",
+      "lat": 59.6519,
+      "lon": 17.9186,
+      "airport": true
+    }
+  ]
+}
