@@ -1,0 +1,51 @@
+{
+  "id": "pek-sin",
+  "name": "北京 — 新加坡",
+  "nameEn": "Beijing — Singapore",
+  "description": "华北平原 · 云贵高原 · 中南半岛 · 蒂蒂旺沙山脉 · 赤道岛国",
+  "descriptionEn": "North China Plain · Yunnan–Guizhou Plateau · Indochinese Peninsula · Titiwangsa Mountains · equatorial island city",
+  "depCountry": "china",
+  "arrCountry": "singapore",
+  "flight": {
+    "airline": "新加坡航空",
+    "airlineEn": "Singapore Airlines",
+    "flightNo": "SQ805",
+    "aircraft": "Airbus A350-900",
+    "depIata": "PEK",
+    "arrIata": "SIN",
+    "durationMin": 370
+  },
+  "cruiseHeight": 11900,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yunnan-guizhou"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "titiwangsa-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-catchment-nature-reserve"
+    },
+    {
+      "kind": "city",
+      "id": "sin",
+      "name": "新加坡樟宜",
+      "nameEn": "Singapore Changi",
+      "lat": 1.3644,
+      "lon": 103.9915,
+      "airport": true
+    }
+  ]
+}

@@ -67,6 +67,13 @@ import hndTtj from "./hnd-ttj.json" with { type: "json" };
 import pvgHnd from "./pvg-hnd.json" with { type: "json" };
 import pekHnd from "./pek-hnd.json" with { type: "json" };
 import pvgKix from "./pvg-kix.json" with { type: "json" };
+// 国际 · 中国国际航线 Phase 3 批A（东亚/东南亚：韩国/蒙古/越南/泰国/马来西亚/新加坡）
+import pekIcn from "./pek-icn.json" with { type: "json" };
+import pekUbn from "./pek-ubn.json" with { type: "json" };
+import pvgHan from "./pvg-han.json" with { type: "json" };
+import canBkk from "./can-bkk.json" with { type: "json" };
+import pekKul from "./pek-kul.json" with { type: "json" };
+import pekSin from "./pek-sin.json" with { type: "json" };
 // 澳大利亚国内
 import sydPer from "./syd-per.json" with { type: "json" };
 import sydCns from "./syd-cns.json" with { type: "json" };
@@ -356,6 +363,12 @@ export const ALL_ROUTES: FlightRoute[] = [
   pvgHnd,
   pekHnd,
   pvgKix,
+  pekIcn,
+  pekUbn,
+  pvgHan,
+  canBkk,
+  pekKul,
+  pekSin,
   sydPer,
   sydCns,
   melSyd,
