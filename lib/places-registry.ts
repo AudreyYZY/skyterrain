@@ -1889,61 +1889,61 @@ export const CITY_REGISTRY: CityEntry[] = [
 
   // ── 荷兰 ──
   {
-    id: "amsterdam", nameZh: "阿姆斯特丹", nameEn: "Amsterdam", country: "netherlands", tier: "capital", zone: "nl-noord-holland",
+    id: "amsterdam", nameZh: "阿姆斯特丹", nameEn: "Amsterdam", country: "netherlands", tier: "capital", zone: "nl-noord-holland", admin1Zh: "北荷兰省", admin1En: "North Holland",
     lon: 4.9041, lat: 52.3676,
     airport: { iata: "AMS", nameZh: "史基浦机场", nameEn: "Amsterdam Schiphol Airport", lon: 4.7683, lat: 52.3105 },
     source: "阿姆斯特丹市中心 52.3676,4.9041；AMS 机场：公开资料",
   },
   {
-    id: "haarlem", nameZh: "哈勒姆", nameEn: "Haarlem", country: "netherlands", tier: "notable", zone: "nl-noord-holland",
+    id: "haarlem", nameZh: "哈勒姆", nameEn: "Haarlem", country: "netherlands", tier: "notable", zone: "nl-noord-holland", admin1Zh: "北荷兰省", admin1En: "North Holland",
     lon: 4.6462, lat: 52.3874,
     source: "哈勒姆 52.3874,4.6462：公开资料（无机场，就近用史基浦；北荷兰省首府，靠近荷兰沙丘海岸）",
   },
   {
-    id: "texel", nameZh: "特塞尔岛", nameEn: "Texel", country: "netherlands", tier: "notable", zone: "nl-noord-holland",
+    id: "texel", nameZh: "特塞尔岛", nameEn: "Texel", country: "netherlands", tier: "notable", zone: "nl-noord-holland", admin1Zh: "北荷兰省", admin1En: "North Holland",
     lon: 4.8267, lat: 53.0500,
     source: "特塞尔岛（登堡）53.0500,4.8267：公开资料（小型机场无定期商业航班，就近用史基浦+渡轮；西弗里西亚群岛最大岛）",
   },
   {
-    id: "rotterdam", nameZh: "鹿特丹", nameEn: "Rotterdam", country: "netherlands", tier: "major", zone: "nl-zuid-holland",
+    id: "rotterdam", nameZh: "鹿特丹", nameEn: "Rotterdam", country: "netherlands", tier: "major", zone: "nl-zuid-holland", admin1Zh: "南荷兰省", admin1En: "South Holland",
     lon: 4.4777, lat: 51.9244,
     airport: { iata: "RTM", nameZh: "鹿特丹海牙机场", nameEn: "Rotterdam The Hague Airport", lon: 4.4372, lat: 51.9569 },
     source: "鹿特丹市中心 51.9244,4.4777；RTM 机场：公开资料",
   },
   {
-    id: "the-hague", nameZh: "海牙", nameEn: "The Hague", country: "netherlands", tier: "notable", zone: "nl-zuid-holland",
+    id: "the-hague", nameZh: "海牙", nameEn: "The Hague", country: "netherlands", tier: "notable", zone: "nl-zuid-holland", admin1Zh: "南荷兰省", admin1En: "South Holland",
     lon: 4.3007, lat: 52.0705,
     source: "海牙 52.0705,4.3007：公开资料（无自有机场，就近用鹿特丹海牙机场；荷兰政府所在地、国际法院所在地）",
   },
   {
-    id: "delft", nameZh: "代尔夫特", nameEn: "Delft", country: "netherlands", tier: "notable", zone: "nl-zuid-holland",
+    id: "delft", nameZh: "代尔夫特", nameEn: "Delft", country: "netherlands", tier: "notable", zone: "nl-zuid-holland", admin1Zh: "南荷兰省", admin1En: "South Holland",
     lon: 4.3571, lat: 52.0116,
     source: "代尔夫特 52.0116,4.3571：公开资料（无机场，就近用鹿特丹海牙机场；代尔夫特蓝陶与理工大学所在地）",
   },
   {
-    id: "leiden", nameZh: "莱顿", nameEn: "Leiden", country: "netherlands", tier: "notable", zone: "nl-zuid-holland",
+    id: "leiden", nameZh: "莱顿", nameEn: "Leiden", country: "netherlands", tier: "notable", zone: "nl-zuid-holland", admin1Zh: "南荷兰省", admin1En: "South Holland",
     lon: 4.4970, lat: 52.1601,
     source: "莱顿 52.1601,4.4970：公开资料（无机场，就近用史基浦；荷兰最古老大学所在地）",
   },
   {
-    id: "utrecht", nameZh: "乌得勒支", nameEn: "Utrecht", country: "netherlands", tier: "major", zone: "nl-utrecht",
+    id: "utrecht", nameZh: "乌得勒支", nameEn: "Utrecht", country: "netherlands", tier: "major", zone: "nl-utrecht", admin1Zh: "乌得勒支省", admin1En: "Utrecht",
     lon: 5.1214, lat: 52.0907,
     source: "乌得勒支 52.0907,5.1214：公开资料（无机场，就近用史基浦；荷兰第四大城市、铁路枢纽）",
   },
   {
-    id: "maastricht", nameZh: "马斯特里赫特", nameEn: "Maastricht", country: "netherlands", tier: "notable", zone: "nl-limburg",
+    id: "maastricht", nameZh: "马斯特里赫特", nameEn: "Maastricht", country: "netherlands", tier: "notable", zone: "nl-limburg", admin1Zh: "林堡省", admin1En: "Limburg",
     lon: 5.6910, lat: 50.8514,
     airport: { iata: "MST", nameZh: "马斯特里赫特-亚琛机场", nameEn: "Maastricht Aachen Airport", lon: 5.7703, lat: 50.9114 },
     source: "马斯特里赫特市中心 50.8514,5.6910；MST 机场：公开资料",
   },
   {
-    id: "groningen", nameZh: "格罗宁根", nameEn: "Groningen", country: "netherlands", tier: "notable", zone: "nl-groningen-friesland",
+    id: "groningen", nameZh: "格罗宁根", nameEn: "Groningen", country: "netherlands", tier: "notable", zone: "nl-groningen-friesland", admin1Zh: "格罗宁根省", admin1En: "Groningen",
     lon: 6.5665, lat: 53.2194,
     airport: { iata: "GRQ", nameZh: "埃尔德机场", nameEn: "Groningen Airport Eelde", lon: 6.5794, lat: 53.1197 },
     source: "格罗宁根市中心 53.2194,6.5665；GRQ 机场：公开资料",
   },
   {
-    id: "zwolle", nameZh: "兹沃勒", nameEn: "Zwolle", country: "netherlands", tier: "notable", zone: "nl-overijssel",
+    id: "zwolle", nameZh: "兹沃勒", nameEn: "Zwolle", country: "netherlands", tier: "notable", zone: "nl-overijssel", admin1Zh: "上艾瑟尔省", admin1En: "Overijssel",
     lon: 6.0958, lat: 52.5168,
     source: "兹沃勒 52.5168,6.0958：公开资料（无机场，就近用史基浦；艾瑟尔河畔汉萨古城，羊角村门户）",
   },
