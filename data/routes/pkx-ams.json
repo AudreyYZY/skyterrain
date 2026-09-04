@@ -1,0 +1,64 @@
+{
+  "id": "pkx-ams",
+  "name": "北京 — 阿姆斯特丹",
+  "nameEn": "Beijing — Amsterdam",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 东欧平原",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · East European Plain",
+  "depCountry": "china",
+  "arrCountry": "netherlands",
+  "flight": {
+    "airline": "中国南方航空",
+    "airlineEn": "China Southern Airlines",
+    "flightNo": "CZ345",
+    "aircraft": "Airbus A350-900",
+    "depIata": "PKX",
+    "arrIata": "AMS",
+    "durationMin": 625
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pkx",
+      "name": "北京大兴",
+      "nameEn": "Beijing Daxing",
+      "lat": 39.5098,
+      "lon": 116.4104,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 79,
+      "lat": 57
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉",
+      "nameEn": "Ural Mountains",
+      "lon": 60,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 25,
+      "lat": 53
+    },
+    {
+      "kind": "city",
+      "id": "ams",
+      "name": "阿姆斯特丹史基浦",
+      "nameEn": "Amsterdam Schiphol",
+      "lat": 52.3086,
+      "lon": 4.7639,
+      "airport": true
+    }
+  ]
+}

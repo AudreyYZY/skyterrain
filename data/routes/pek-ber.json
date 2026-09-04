@@ -1,0 +1,64 @@
+{
+  "id": "pek-ber",
+  "name": "北京 — 柏林",
+  "nameEn": "Beijing — Berlin",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 东欧平原",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · East European Plain",
+  "depCountry": "china",
+  "arrCountry": "germany",
+  "flight": {
+    "airline": "海南航空",
+    "airlineEn": "Hainan Airlines",
+    "flightNo": "HU489",
+    "aircraft": "Boeing 787-9",
+    "depIata": "PEK",
+    "arrIata": "BER",
+    "durationMin": 615
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 80,
+      "lat": 57
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉",
+      "nameEn": "Ural Mountains",
+      "lon": 60,
+      "lat": 56
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 25,
+      "lat": 53
+    },
+    {
+      "kind": "city",
+      "id": "ber",
+      "name": "柏林勃兰登堡",
+      "nameEn": "Berlin Brandenburg",
+      "lat": 52.3667,
+      "lon": 13.5033,
+      "airport": true
+    }
+  ]
+}

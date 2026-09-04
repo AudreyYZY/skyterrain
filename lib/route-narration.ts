@@ -5016,6 +5016,121 @@ export const ROUTE_NARRATION: Record<
       "Chengdu to Golmud takes about 2 hours 30 minutes on Tibet Airlines, one of the key gateways onto the Tibetan Plateau. Qarhan Salt Lake is China's largest salt lake, crossed by the '10,000-zhang salt bridge' causeway; the Kunlun Pass, a key point on the Qinghai–Tibet Highway, sits at about 4,768 m. Golmud itself, at roughly 2,800 m, causes little altitude discomfort for most visitors, but elevation rises sharply heading toward the Kunlun Pass, so acclimatise and dress warmly. Foreign travellers continuing on into Tibet from here must arrange a Tibet Travel Permit in advance and travel with a licensed agency. June–September is the most comfortable season to visit.",
     },
   },
+
+  "pek-lhr": {
+    study: {
+    "zh-CN":
+      "北京飞伦敦，是从东亚大陆一路向西北，横跨整个亚欧大陆到不列颠群岛。起飞后不久，脚下的农田渐渐让位给起伏的高原——已经进入蒙古高原南缘，戈壁荒漠的砾漠地貌一直延伸到天际线。" +
+      "再往西北，戈壁过渡为森林与草原交错的西西伯利亚平原：地势极为平坦，河流蜿蜒、沼泽湖泊星罗棋布，是世界上面积最大的平原之一。" +
+      "飞过乌拉尔山脉——一条南北延伸的古老褶皱山系，地理学上常以它划分亚洲与欧洲——地面重新进入平缓的丘陵与农田，这里已是东欧平原的东部。飞机继续向西，越过波罗的海沿岸和中欧低地，最终沿泰晤士河进近，降落在伦敦西郊的希思罗机场。一趟航班，跨越了大半个亚欧大陆。",
+    "en-US":
+      "Beijing to London flies north-west out of East Asia, crossing almost the whole Eurasian landmass to reach the British Isles. Soon after take-off the farmland below gives way to rolling highland — the southern edge of the Mongolian Plateau, where the gravel desert of the Gobi stretches to the horizon." +
+      "Farther north-west the Gobi gives way to the West Siberian Plain, a mix of forest and steppe: remarkably flat, laced with winding rivers and countless marshes and lakes, one of the largest plains on Earth." +
+      "Crossing the Ural Mountains — an old north–south folded range that geographers commonly use to mark the boundary between Asia and Europe — the ground returns to gentle hills and farmland, the eastern edge of the East European Plain. The plane continues west over the Baltic coast and the lowlands of central Europe, then makes its final approach along the Thames, landing at Heathrow on London's western edge. One flight has crossed most of Eurasia.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到伦敦约11小时，两地时差7-8小时（英国夏令时期间7小时）。北京冬季干冷，伦敦全年温和多雨，四季都建议带一件防水外套。" +
+      "希思罗机场距市中心约25公里，地铁Piccadilly线或希思罗快线均可进城；市内公共交通发达，牡蛎卡（Oyster Card）或带NFC的银行卡均可直接刷卡乘车。大英博物馆、国家美术馆等主要国立博物馆常年免费开放。" +
+      "英国签证需提前在线申请，部分国家/地区护照持有人可能适用电子旅行许可（ETA）政策，具体以英国内政部最新公布为准，行前务必核实并预留办理时间；入境时随身物品与现金如实申报。",
+    "en-US":
+      "Beijing to London takes about 11 hours, with a 7–8 hour time difference (7 hours during UK summer time). Beijing has dry, cold winters, while London is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
+      "Heathrow is about 25 km from central London; the Piccadilly line or the Heathrow Express both run into town. Public transport is extensive — an Oyster Card or a contactless bank card both work directly on buses and the Underground. Major national museums such as the British Museum and the National Gallery are free year-round." +
+      "A UK visa must be applied for online in advance; some nationalities may qualify for the Electronic Travel Authorisation (ETA) scheme — check the UK Home Office's latest rules and allow time to arrange one before you travel. Declare belongings and cash honestly on arrival.",
+    },
+  },
+
+  "pek-cdg": {
+    study: {
+    "zh-CN":
+      "北京飞巴黎，同样向西北横跨亚欧大陆，但落点更靠南，最终进入法国所在的西欧低地。起飞后先经过蒙古高原南部的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
+      "继续向西，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——常被地理学上作为亚洲与欧洲的分界——之后，进入东欧平原，农田与河流交错的地貌一路延伸。" +
+      "飞机继续向西南，越过中欧的丘陵地带，最终降落在巴黎北郊的戴高乐机场。一路向西横穿整个亚欧大陆，落地时已是欧洲大陆的心脏地带。",
+    "en-US":
+      "Beijing to Paris also flies north-west across Eurasia, but on a track that curves farther south, ending in the lowlands of western Europe where France lies. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
+      "Farther west lies the West Siberian Plain, one of the largest plains in the world, remarkably flat and threaded with forest and marsh. Past the Ural Mountains — commonly used as the geographic boundary between Asia and Europe — the route enters the East European Plain, a landscape of farmland and rivers stretching on and on." +
+      "The flight continues south-west over the hill country of central Europe and lands at Charles de Gaulle Airport north of Paris. Having crossed the whole of Eurasia heading west, it touches down in the heart of the European continent.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到巴黎约10小时45分钟，时差7-8小时（法国夏令时期间7小时）。巴黎四季分明，夏季干爽、冬季湿冷多雨，春秋适合游览。" +
+      "戴高乐机场距市中心约30公里，RER B线火车约35-50分钟到市区，也有机场大巴。地铁线路密集，一张Navigo周票或单程票即可通行。卢浮宫、奥赛博物馆等热门场馆建议提前在线订票，避开排队。" +
+      "法国属申根区，签证按国籍不同、以法国驻当地使领馆最新公布为准，行前确认并预留办理时间。留意扒手多发的旅游区，随身财物妥善保管。",
+    "en-US":
+      "Beijing to Paris takes about 10 hours 45 minutes, with a 7–8 hour time difference (7 hours during French summer time). Paris has distinct seasons — dry summers, cold and wet winters, with spring and autumn best for sightseeing." +
+      "Charles de Gaulle is about 30 km from the city centre; the RER B train takes roughly 35–50 minutes into town, and airport buses also run. The metro network is dense, and a Navigo weekly pass or single tickets cover it. Book ahead online for popular sites such as the Louvre and the Musée d'Orsay to skip the queues." +
+      "France is in the Schengen area; visa rules vary by nationality — check the latest from the French consulate for your location and allow time to arrange one. Watch for pickpockets in busy tourist areas and keep valuables secure.",
+    },
+  },
+
+  "pek-ber": {
+    study: {
+    "zh-CN":
+      "北京飞柏林，航线比飞伦敦、巴黎略偏北，同样穿越蒙古高原和西西伯利亚平原，再落到中欧的平原上。起飞后先掠过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
+      "往西进入西西伯利亚平原——地势极其平坦、河网与沼泽密布，是地球上最大的平原之一。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原，之后转向中欧的低地平原地带。" +
+      "越过一连串河流冲积的平原和缓丘，飞机降落在柏林东南郊的勃兰登堡机场。一趟航班，从中国的首都飞到德国的首都，途中穿过大半个亚欧大陆的腹地。",
+    "en-US":
+      "Beijing to Berlin follows a track slightly farther north than the London or Paris flights, also crossing the Mongolian Plateau and the West Siberian Plain before descending onto the plains of central Europe. After take-off the flight skirts the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
+      "Heading west it crosses the West Siberian Plain — remarkably flat, dense with rivers and marshes, one of the largest plains on Earth. Past the Ural Mountains, the conventional divide between Asia and Europe, the route enters the East European Plain and then the lowland plains of central Europe." +
+      "Past a series of river-built plains and low hills, the plane lands at Brandenburg Airport south-east of Berlin. One flight has gone from the capital of China to the capital of Germany, crossing the interior of most of Eurasia along the way.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到柏林约10小时15分钟，时差7-8小时（德国夏令时期间7小时）。柏林夏季温和、冬季寒冷少雪，春秋气候宜人。" +
+      "勃兰登堡机场距市中心约20公里，有机场快线和地铁直达。柏林公共交通网络（地铁U-Bahn、轻轨S-Bahn、有轨电车）票制通用，博物馆岛、勃兰登堡门、柏林墙遗迹都是市内热门景点，多可步行或搭轻轨到达。" +
+      "德国属申根区，签证按国籍不同、以德国驻当地使领馆最新公布为准，行前确认并预留办理时间。乘坐公共交通需自行提前打卡验票，查票时无票会被罚款。",
+    "en-US":
+      "Beijing to Berlin takes about 10 hours 15 minutes, with a 7–8 hour time difference (7 hours during German summer time). Berlin has mild summers and cold, relatively snow-light winters, with pleasant spring and autumn weather." +
+      "Brandenburg Airport is about 20 km from the city centre, with an airport express train and metro connections. Berlin's public transport (U-Bahn, S-Bahn and trams) runs on a shared ticketing system, and Museum Island, the Brandenburg Gate and the Berlin Wall memorial sites are popular, mostly reachable on foot or by rail." +
+      "Germany is in the Schengen area; visa rules vary by nationality — check the latest from the German consulate for your location and allow time to arrange one. Validate your ticket yourself before boarding public transport, as travelling without one risks a fine if checked.",
+    },
+  },
+
+  "pkx-ams": {
+    study: {
+    "zh-CN":
+      "北京飞阿姆斯特丹，从大兴机场起飞，航线与飞伦敦、巴黎相近，同样横跨蒙古高原、西西伯利亚平原和乌拉尔山脉，落到欧洲大陆西北角的低地。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
+      "往西北进入西西伯利亚平原——地势极为平坦、河网密布，是世界上面积最大的平原之一。飞过乌拉尔山脉这道亚欧地理分界后，飞机进入东欧平原，之后一路向西横穿中欧低地。" +
+      "接近荷兰时，地面变得异常平坦——莱茵河、马斯河下游冲积而成的低地，大片圩田和运河网络清晰可见。飞机降落在阿姆斯特丹史基浦机场，机场本身就建在一片曾经的湖底围垦地上。",
+    "en-US":
+      "Beijing to Amsterdam departs from Daxing Airport on a track close to the London and Paris routes, likewise crossing the Mongolian Plateau, the West Siberian Plain and the Ural Mountains before descending onto the lowlands of north-west Europe. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
+      "Heading north-west it crosses the West Siberian Plain — remarkably flat and dense with rivers, one of the largest plains in the world. Past the Ural Mountains, the geographic divide between Asia and Europe, the route enters the East European Plain and then heads west across the lowlands of central Europe." +
+      "Approaching the Netherlands the ground becomes remarkably flat — the delta lowland built by the lower Rhine and Meuse rivers, with polders and a dense canal network clearly visible. The plane lands at Amsterdam Schiphol, an airport built on what was once the bed of a drained lake.",
+    },
+    travel: {
+    "zh-CN":
+      "北京大兴到阿姆斯特丹约10小时25分钟，时差7-8小时（荷兰夏令时期间7小时）。荷兰全年温和多风，夏季凉爽、冬季少雪但湿冷，出行常备一件防风外套。" +
+      "史基浦机场距市中心约15公里，火车约15-20分钟直达阿姆斯特丹中央车站，班次密集。市内主要靠自行车和有轨电车，租一辆自行车、办一张OV卡是常见玩法。梵高博物馆、国立博物馆建议提前在线订票。" +
+      "荷兰属申根区，签证按国籍不同、以荷兰驻当地使领馆最新公布为准，行前确认并预留办理时间。运河边人行道与自行车道混行，注意避让骑行者。",
+    "en-US":
+      "Beijing Daxing to Amsterdam takes about 10 hours 25 minutes, with a 7–8 hour time difference (7 hours during Dutch summer time). The Netherlands is mild and windy year-round, with cool summers and damp, low-snow winters — a windproof jacket is worth packing." +
+      "Schiphol is about 15 km from the centre, with frequent trains taking 15–20 minutes to Amsterdam Centraal. Getting around the city relies mainly on bicycles and trams; hiring a bike and getting an OV-chipkaart are the common way to explore. Book ahead online for the Van Gogh Museum and the Rijksmuseum." +
+      "The Netherlands is in the Schengen area; visa rules vary by nationality — check the latest from the Dutch consulate for your location and allow time to arrange one. Footpaths along the canals often run alongside bike lanes, so watch for cyclists.",
+    },
+  },
+
+  "pek-bru": {
+    study: {
+    "zh-CN":
+      "北京飞布鲁塞尔，是2026年新开通的中比直飞航线，航线走向与飞柏林、阿姆斯特丹接近，同样穿过蒙古高原、西西伯利亚平原和乌拉尔山脉。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
+      "往西进入西西伯利亚平原——地势极其平坦、河网与沼泽密布，是地球上最大的平原之一。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原，随后一路向西横穿中欧低地。" +
+      "接近西欧时，地面转为低缓的丘陵与冲积平原，飞机降落在布鲁塞尔以北的布鲁塞尔机场。一趟航班，把中国首都和欧洲多个国际机构所在的城市连在了一起。",
+    "en-US":
+      "Beijing to Brussels is a nonstop China–Belgium route launched in 2026, on a track close to the Berlin and Amsterdam flights, also crossing the Mongolian Plateau, the West Siberian Plain and the Ural Mountains. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
+      "Heading west it crosses the West Siberian Plain — remarkably flat, dense with rivers and marshes, one of the largest plains on Earth. Past the Ural Mountains, the conventional divide between Asia and Europe, the route enters the East European Plain and then heads west across the lowlands of central Europe." +
+      "Approaching western Europe the land turns to low hills and alluvial plains, and the plane lands at Brussels Airport north of the city. One flight has linked the capital of China with a city that hosts a number of international institutions.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到布鲁塞尔约10小时35分钟，时差7-8小时（比利时夏令时期间7小时）。比利时气候温和多雨，四季都建议带一件防水外套。" +
+      "布鲁塞尔机场距市中心约13公里，机场快线火车约20分钟到布鲁塞尔中央/南站，班次密集。市内地铁、有轨电车、公交同属一套票务系统。大广场、圣于贝尔拱廊、比利时漫画博物馆都在步行可达的市中心范围内，华夫饼、巧克力、啤酒是当地代表美食。" +
+      "比利时属申根区，签证按国籍不同、以比利时驻当地使领馆最新公布为准，行前确认并预留办理时间。这条航线2026年3月才开通，出行前建议再次核实航班班期是否有变动。",
+    "en-US":
+      "Beijing to Brussels takes about 10 hours 35 minutes, with a 7–8 hour time difference (7 hours during Belgian summer time). Belgium is mild and rainy, so a waterproof jacket is worth packing in any season." +
+      "Brussels Airport is about 13 km from the centre; the airport express train takes about 20 minutes to Brussels Central/South station, with frequent departures. The metro, trams and buses run on one shared ticketing system. The Grand Place, the Galeries Saint-Hubert and the Belgian Comic Strip Center are all within walking distance in the city centre, and waffles, chocolate and beer are the local specialties." +
+      "Belgium is in the Schengen area; visa rules vary by nationality — check the latest from the Belgian consulate for your location and allow time to arrange one. This route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */
