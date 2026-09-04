@@ -1,0 +1,65 @@
+{
+  "id": "pvg-mad",
+  "name": "上海 — 马德里",
+  "nameEn": "Shanghai — Madrid",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 比利牛斯山脉 · 梅塞塔中央高原",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · Pyrenees · Meseta Central",
+  "depCountry": "china",
+  "arrCountry": "spain",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU709",
+    "aircraft": "Airbus A350-900",
+    "depIata": "PVG",
+    "arrIata": "MAD",
+    "durationMin": 835
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉",
+      "nameEn": "Ural Mountains",
+      "lon": 60,
+      "lat": 58
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ordesa-canyon"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "meseta-central"
+    },
+    {
+      "kind": "city",
+      "id": "mad",
+      "name": "马德里巴拉哈斯",
+      "nameEn": "Madrid–Barajas",
+      "lat": 40.472,
+      "lon": -3.561,
+      "airport": true
+    }
+  ]
+}
