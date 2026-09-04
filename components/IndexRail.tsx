@@ -15,6 +15,8 @@ export interface RailItem {
    * （学习模式的地貌分类不需要这个）。
    */
   categoryDotColor?: string;
+  /** 圆点的悬停提示文字（旅游模式：大区全名，如"华北"）——颜色本身不解释含义，靠这个补上。 */
+  categoryDotTitle?: string;
 }
 export interface RailGroup {
   type: string;
@@ -46,6 +48,7 @@ interface CategoryBucket {
   key: string;
   label: string;
   dotColor?: string;
+  dotTitle?: string;
   items: RailItem[];
 }
 
@@ -94,14 +97,19 @@ export default function IndexRail({
     setSubcat(null);
   };
 
-  // 全局搜索：不管当前在哪一层，按名称子串匹配全部国家的全部条目
+  // 全局搜索：不管当前在哪一层，按名称*或*所属分类名（旅游模式=省/州名）子串匹配
+  // 全部国家的全部条目——省份名也能搜，不必知道具体某个城市叫什么才能找到它
+  // （对应"划到最下面才能找到某省"的问题：直接搜省名，不用逐屏翻）。
   const searchResults = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (!q) return null;
     const results: { item: RailItem; countryLabel: string }[] = [];
     for (const g of groups) {
       for (const it of g.items) {
-        if (it.name.toLowerCase().includes(q)) {
+        if (
+          it.name.toLowerCase().includes(q) ||
+          (it.categoryLabel && it.categoryLabel.toLowerCase().includes(q))
+        ) {
           results.push({ item: it, countryLabel: g.label });
         }
       }
@@ -121,11 +129,18 @@ export default function IndexRail({
       }
       let bucket = map.get(it.category);
       if (!bucket) {
-        bucket = { key: it.category, label: it.categoryLabel ?? it.category, dotColor: it.categoryDotColor, items: [] };
+        bucket = {
+          key: it.category,
+          label: it.categoryLabel ?? it.category,
+          dotColor: it.categoryDotColor,
+          dotTitle: it.categoryDotTitle,
+          items: [],
+        };
         map.set(it.category, bucket);
       } else {
         if (it.categoryLabel) bucket.label = it.categoryLabel;
         if (it.categoryDotColor) bucket.dotColor = it.categoryDotColor;
+        if (it.categoryDotTitle) bucket.dotTitle = it.categoryDotTitle;
       }
       bucket.items.push(it);
     }
@@ -251,7 +266,10 @@ export default function IndexRail({
                 ))}
                 {buckets.map((b) => (
                   <div key={b.key} className="flex flex-col">
-                    <p className="mt-3 mb-1 flex items-center gap-1.5 text-[11px] text-[color:var(--ink-faint)] first:mt-0">
+                    <p
+                      className="mt-3 mb-1 flex items-center gap-1.5 text-[11px] text-[color:var(--ink-faint)] first:mt-0"
+                      title={b.dotTitle}
+                    >
                       {b.dotColor && (
                         <span
                           className="inline-block h-[6px] w-[6px] shrink-0 rounded-full"

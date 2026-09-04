@@ -325,31 +325,42 @@ export function zoneOrder(zone: string | undefined): number {
 }
 
 /**
- * 大区圆点配色 —— 10 色循环调色板，按 zone 在其所属国家内的 order 序号取色，
- * 同一国家内相邻大区颜色不同即可；不追求全局唯一（不同国家复用同一颜色没关系，
- * 用户一次只看一个国家的目录）。故意避开 --accent 琥珀色附近色相，避免跟"当前选中"
- * 状态的强调色混淆。
+ * 大区圆点配色 —— 不用固定调色板按索引取色（那样相邻 order 的大区可能跳到完全不
+ * 相关的色相，看起来杂乱无章）。改成：同一国家的大区按 order 排出相对位次
+ * （第几个 / 该国共几个大区），沿色相环连续过渡取一段色相（0°~300°，不绕回起点，
+ * 避免首尾撞色）。同一国家内大区本来就按地理顺序排列（如中国 华北→东北→华东→
+ * 华中→华南→西南→西北→港澳台，见上表），色相跟着这个顺序连续变化，看起来是
+ * 一段有内在顺序的"光谱"而不是随机撞色。故意用中饱和度柔和色 + 固定明度，
+ * 适配暗色主题，且避开 --accent 琥珀色附近色相，避免跟"当前选中"状态混淆。
  */
-const ZONE_COLOR_PALETTE = [
-  "#7dd3fc", // sky
-  "#86efac", // green
-  "#c4b5fd", // violet
-  "#fda4af", // rose
-  "#67e8f9", // cyan
-  "#d9f99d", // lime
-  "#f0abfc", // fuchsia
-  "#93c5fd", // blue
-  "#fca5a5", // coral
-  "#5eead4", // teal
-] as const;
+const ZONE_COUNTRY_GROUPS: Map<string, string[]> = (() => {
+  const groups = new Map<string, { key: string; order: number }[]>();
+  for (const [key, meta] of Object.entries(ZONE_META)) {
+    const prefix = key.split("-")[0]!;
+    if (!groups.has(prefix)) groups.set(prefix, []);
+    groups.get(prefix)!.push({ key, order: meta.order });
+  }
+  const out = new Map<string, string[]>();
+  for (const [prefix, entries] of groups) {
+    entries.sort((a, b) => a.order - b.order);
+    out.set(prefix, entries.map((e) => e.key));
+  }
+  return out;
+})();
+
+const ZONE_HUE_SPAN_DEG = 300; // 0°(暖红) 到 300°(品紫)，避开跟起点撞色的 300°~360°
+const ZONE_SATURATION = "62%";
+const ZONE_LIGHTNESS = "68%"; // 偏亮，暗色底上清晰但不刺眼
 
 export function zoneColor(zone: string | undefined): string | undefined {
   if (!zone) return undefined;
-  const meta = ZONE_META[zone];
-  if (!meta) return undefined;
-  // 同一国家的 zone order 是连续分配的（见上表），用它对调色板取模即可让
-  // 一个国家内的相邻大区拿到不同颜色，不需要每个 zone 手动指定颜色。
-  return ZONE_COLOR_PALETTE[meta.order % ZONE_COLOR_PALETTE.length];
+  if (!ZONE_META[zone]) return undefined;
+  const prefix = zone.split("-")[0]!;
+  const siblings = ZONE_COUNTRY_GROUPS.get(prefix) ?? [zone];
+  const rank = siblings.indexOf(zone);
+  const total = siblings.length;
+  const hue = total <= 1 ? 200 : Math.round((rank / (total - 1)) * ZONE_HUE_SPAN_DEG);
+  return `hsl(${hue}, ${ZONE_SATURATION}, ${ZONE_LIGHTNESS})`;
 }
 
 export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
