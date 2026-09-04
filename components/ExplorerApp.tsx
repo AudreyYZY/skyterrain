@@ -6,7 +6,6 @@ import CesiumMap, {
 } from "@/components/CesiumMap";
 import CesiumOverlayLabels from "@/components/CesiumOverlayLabels";
 import IndexRail, { type RailGroup } from "@/components/IndexRail";
-import IntroOverlay from "@/components/IntroOverlay";
 import ContinentIntro, { type ContinentCard } from "@/components/ContinentIntro";
 import JourneyBar from "@/components/JourneyBar";
 import ReadingPanel from "@/components/ReadingPanel";
@@ -399,16 +398,36 @@ export default function ExplorerApp() {
     [],
   );
 
-  /** 初始大陆卡片数据（含建设中的大洲，供选择器完整呈现） */
+  /** 初始大陆卡片数据（学习模式，含建设中的大洲，供选择器完整呈现） */
   const introContinents: ContinentCard[] = useMemo(
     () =>
       REGIONS.map((r) => ({
         id: r.id,
         name: r.name,
         nameEn: r.nameEn ?? r.name,
-        terrainCount: r.terrainCount,
+        count: r.terrainCount,
         available: r.available,
       })),
+    [],
+  );
+
+  /**
+   * 初始大陆卡片数据（旅游模式）——available 独立判定，不能借用学习模式的
+   * available（那个只反映"该洲有没有地形"）：旅游内容按城市数有没有 > 0 算，
+   * 两边碰巧现在同步不代表以后一直同步。
+   */
+  const introTravelContinents: ContinentCard[] = useMemo(
+    () =>
+      REGIONS.map((r) => {
+        const count = getCitiesForContinent(r.id).length;
+        return {
+          id: r.id,
+          name: r.name,
+          nameEn: r.nameEn ?? r.name,
+          count,
+          available: count > 0,
+        };
+      }),
     [],
   );
 
@@ -444,31 +463,6 @@ export default function ExplorerApp() {
       });
     },
     [],
-  );
-
-  /**
-   * 旅游模式欢迎卡关闭 —— 没有 ContinentIntro 那样的翻卡选大洲流程，
-   * 用户点「开始探索」才代表确认了当前 activeRegion，这时才飞过去。
-   * confirmed=false 是 IntroOverlay 自己"之前已看过、静默跳过"那条路径——
-   * 不是用户此刻做的选择，绝不能飞，否则就是"没等选择就自动跳转"（这正是曾经
-   * 出现过的回归：把这条路径也接到了飞行逻辑上）。同理见下方 CesiumMap 调用处
-   * 关于 onReady 为什么不再接飞行逻辑的说明。
-   */
-  const handleTravelIntroDismiss = useCallback(
-    (confirmed: boolean) => {
-      setShowIntro(false);
-      if (!confirmed) return;
-      if (activeRegion === DEFAULT_REGION_ID) return;
-      const region = REGIONS.find((r) => r.id === activeRegion);
-      if (!region) return;
-      mapRef.current?.flyToRegion({
-        lon: region.center.lon,
-        lat: region.center.lat,
-        height: region.center.height,
-        duration: 2.4,
-      });
-    },
-    [activeRegion],
   );
 
   /** 次区域切换 —— 切到其大洲（若需要）并飞向该次区域地形的重心 */
@@ -520,16 +514,19 @@ export default function ExplorerApp() {
    * 目的是让老用户直接落回上次的区域。**这个设计已被证明是本页面反复出现的
    * "没等用户选择就自动跳转"这个 bug 的根源，已彻底移除，不要再加回来。**
    *
-   * 根因：旅游模式的 IntroOverlay 对"已看过引导页"的用户会静默跳过（不显示卡片，
-   * 直接把 showIntro 置为 false，见该组件的 SEEN_KEY 逻辑）——这个"跳过"发生在
-   * Cesium 完成初始化之前。等地图真正 ready、这个函数触发时，showIntro 早已是
-   * false，看起来就跟"用户已经确认过了"一模一样，于是自动飞了过去——但用户
-   * 其实这次访问什么都没点。凡是"地图/引导层就绪时机 vs 是否显示过引导" 只用一个
-   * showIntro 布尔值去判断"该不该飞"，都会重新踩到这个坑（历史上已经踩过不止一次）。
+   * 根因（历史，已解决）：旧版旅游模式用的是独立的 IntroOverlay 组件，对"已看过
+   * 引导页"的用户会静默跳过（不显示卡片，直接把 showIntro 置为 false，靠
+   * localStorage 的 SEEN_KEY 判断）——这个"跳过"发生在 Cesium 完成初始化之前。
+   * 等地图真正 ready、某个飞行触发点触发时，showIntro 早已是 false，看起来就跟
+   * "用户已经确认过了"一模一样，于是自动飞了过去——但用户其实这次访问什么都
+   * 没点。**2026-09-04 起旅游模式已改用跟学习模式相同的 ContinentIntro**（翻卡选
+   * 大洲），这个组件本身就没有"已看过静默跳过"这条路径——每次加载都要求用户
+   * 真正翻卡/点「开始探索」才会触发 onEnter，从机制上排除了这类回归，不只是
+   * "小心不要犯"。
    *
    * 现在的规则、以后新增任何飞行触发点都要遵守：
    *   相机的每一次自动飞行，必须能追溯到*本次会话*里一个真实发生的用户动作
-   *  （点「开始探索」→ handleIntroEnter / handleTravelIntroDismiss(confirmed=true)、
+   *  （点「开始探索」/ 选中卡片 → handleIntroEnter（学习/旅游共用）、
    *   点顶栏大洲下拉 → handleRegionChange、点次区域 → handleSubregionChange、
    *   点地形/城市 → 各自的 handleSelect*），不能由"地图初始化好了"或"localStorage
    *   里记着什么"这类跟当次访问无关的时机来触发。恢复 activeRegion 这个*状态*
@@ -1292,26 +1289,18 @@ export default function ExplorerApp() {
         )}
       </div>
 
-      {showIntro &&
-        (mode === "study" ? (
-          <ContinentIntro
-            language={language}
-            continents={introContinents}
-            initialContinentId={activeRegion}
-            onPreview={handleIntroPreview}
-            onEnter={handleIntroEnter}
-            onDismiss={() => setShowIntro(false)}
-            onToggleLanguage={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
-          />
-        ) : (
-          <IntroOverlay
-            language={language}
-            regionName={activeRegionName}
-            regionNameEn={activeRegionNameEn}
-            onDismiss={handleTravelIntroDismiss}
-            onToggleLanguage={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
-          />
-        ))}
+      {showIntro && (
+        <ContinentIntro
+          language={language}
+          continents={mode === "study" ? introContinents : introTravelContinents}
+          countLabel={t(mode === "study" ? "intro.count" : "intro.count.travel", language)}
+          initialContinentId={activeRegion}
+          onPreview={handleIntroPreview}
+          onEnter={handleIntroEnter}
+          onDismiss={() => setShowIntro(false)}
+          onToggleLanguage={() => setLanguage(language === "zh-CN" ? "en-US" : "zh-CN")}
+        />
+      )}
 
       {/* Header — editorial masthead */}
       <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between px-4 py-2.5">

@@ -7,18 +7,21 @@ export interface ContinentCard {
   id: string;
   name: string;
   nameEn: string;
-  terrainCount: number;
+  /** 该大洲下的条目数——学习模式=地貌数，旅游模式=城市数，由调用方决定数什么 */
+  count: number;
   available: boolean;
 }
 
 interface ContinentIntroProps {
   language: Language;
   continents: ContinentCard[];
+  /** count 后面跟的单位文字（"个地貌" / "座城市"），随模式由调用方传入 */
+  countLabel: string;
   /** 上次停留的大洲 —— 作为轮播的初始定位（仍需用户确认才进入） */
   initialContinentId?: string;
   /** 落到某张卡时把地球飞过去（预览用，不切换 activeRegion） */
   onPreview: (continentId: string) => void;
-  /** 选定某片大陆，进入学习模式 */
+  /** 选定某片大陆，进入该模式 */
   onEnter: (continentId: string) => void;
   /** 已选定后淡出 */
   onDismiss: () => void;
@@ -44,6 +47,7 @@ function shuffle<T>(arr: T[]): T[] {
 export default function ContinentIntro({
   language,
   continents,
+  countLabel,
   initialContinentId,
   onPreview,
   onEnter,
@@ -189,7 +193,7 @@ export default function ContinentIntro({
                       {language === "zh-CN" ? c.name : c.nameEn}
                     </span>
                     <span className="text-[12px] tabular-nums tracking-wide text-[color:var(--ink-dim)]">
-                      {c.terrainCount} {t("intro.count", language)}
+                      {c.count} {countLabel}
                     </span>
                   </button>
                 </div>

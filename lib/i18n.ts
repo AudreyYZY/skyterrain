@@ -174,19 +174,6 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "en-US": "Stop Narration",
   },
 
-  // Intro overlay（旅游模式专用；学习模式用 ContinentIntro 的 intro.pick/intro.count）
-  "travel.intro.kicker": {
-    "zh-CN": "旅行指南",
-    "en-US": "A Travel Guide",
-  },
-  "travel.intro.subtitle": {
-    "zh-CN": "旅游",
-    "en-US": "Travel",
-  },
-  "travel.intro.line": {
-    "zh-CN": "从三万英尺的舷窗出发，看这座城市怎么吃、怎么住、怎么逛。",
-    "en-US": "Starting from a window seat at 30,000 feet — how to eat, stay, and get around this city.",
-  },
   "intro.enter": {
     "zh-CN": "开始探索",
     "en-US": "Begin",
@@ -202,6 +189,10 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
   "intro.count": {
     "zh-CN": "个地貌",
     "en-US": "landforms",
+  },
+  "intro.count.travel": {
+    "zh-CN": "座城市",
+    "en-US": "cities",
   },
 
   // Reading panel
