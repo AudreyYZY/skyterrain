@@ -7036,4 +7036,140 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "Visitor facilities here are very limited, and what there is to see is Dolan culture and desert-oasis scenery rather than developed attractions — check with the local tourism authority or a travel agency beforehand for any cultural events open to visitors. Windblown dust is common at the desert's edge, so prepare for it.",
   },
+
+  // ── China · Tier 2 batch 3 (nine provinces/regions with only a capital city, 2026-09-04) ──
+  hulunbuir: {
+    identity:
+      "Hulunbuir (city government seated in Hailar District) is a prefecture-level city in Inner Mongolia, on the western foot of the Greater Khingan Range at the core of the Hulunbuir Grassland, with a 2020-census population of about 2.11 million. The Hulunbuir Grassland is one of the \"four great grasslands of the world\" and one of China's best-preserved grassland ecosystems, home to Mongol, Evenki and Daur communities among others.",
+    layout:
+      "Hailar District, the seat of city government, straddles the Yimin River and is the city's transport and commercial centre; the grassland proper lies to the south and west, with the Mordaga (Mo'ergele) River and Hulun Lake as its signature landscapes; the forested Greater Khingan Range covers the north, and border towns such as Shiwei and Enhe sit along the Argun River on the China–Russia frontier.",
+    gettingAround:
+      "Hulunbuir Hailar International Airport (HLD), on the eastern hills of Hailar District about 3 km from downtown, ran 34 routes to 30 cities in the 2025/26 winter–spring season; a confirmed nonstop from Beijing Capital takes about 2 hours. The Binzhou railway calls at Hailar, connecting to Harbin and Manzhouli. Grassland sights are spread out over a wide area with limited public transport, so self-driving or a hired car is the usual way to get around. Summers (June–August) are mild and pleasant; winters are long and severe, with January averages often below −20°C.",
+    culture:
+      "A multi-ethnic area with a Mongol majority, where offering wine and presenting a khadag (ceremonial scarf) are important guest customs: stand and receive a khadag with both hands; when visiting a ger, enter from the left and avoid stepping on the threshold; when circling an ovoo shrine, walk clockwise three times. The diet centres on dairy and mutton/beef, with hand-pulled mutton and milk tea as everyday staples.",
+    seeAndDo:
+      "The Mordaga River (a tributary of the Argun known for its extreme meanders, often called the \"world's most winding river\"); Hulun Lake (China's fifth-largest lake, a classic grassland-lake landscape); the Jindaohan Mongol tribal encampment (a folk-culture experience deep in the grassland); Shiwei and Enhe (border towns settled by ethnic Russians and Sino-Russian descendants, with distinctive log-cabin houses).",
+    whenAndTips:
+      "June–August is peak grassland season, with the lushest pasture, coolest weather, and Naadam festivals often held in summer; late September brings vivid autumn colour along the Argun River; winter (December–February) offers snow-covered grassland scenery but demands serious cold-weather gear. Sights are spread far apart, so plan a route in advance or book through a reputable local operator.",
+  },
+
+  "jilin-city": {
+    identity:
+      "Jilin City is a prefecture-level city in Jilin Province, the province's second-largest after Changchun, with a 2020-census population of about 4.01 million. Sitting in a Songhua River valley at the edge of the Changbai foothills, it takes its name from the Qing-era \"Girin Ula\" (Manchu for \"city along the river\") and was once an important northern naval base and shipbuilding centre; today it is best known for its rime-ice spectacle and Songhua Lake winter sports.",
+    layout:
+      "The Songhua River runs from south-east to north-west through the city, splitting it into north- and south-bank districts; Chuanying and Changyi are the old-town core; Fengman District to the south holds the Fengman hydropower dam and the Songhua Lake it created; Rime Ice Island — the riverside villages of Zengtong and Hantun under Ula Street Manchu Township — lies about 30–40 km east of downtown, where the river's ice-free winter water, released from the dam, meets cold air to form rime ice.",
+    gettingAround:
+      "Jilin City has no operating civil airport of its own; travellers generally connect through Changchun Longjia International Airport (about 35 km away, with an airport shuttle) or Jilin station on the Changchun–Hunchun high-speed line (about 25 minutes to Changchun). Getting to Rime Ice Island usually means a hired car or a tour, and icy roads in winter call for caution. The climate is temperate monsoon with long, severe winters — January averages below −15°C are common, and that cold is exactly what produces the Jilin rime ice.",
+    culture:
+      "Jilin City is the historical home of the Manchu \"Girin Ula,\" and Ula Street Manchu Township still has some Manchu-style houses and Shamanic heritage. Watching the rime ice at dawn is part of local winter life, and riverside vantage points get crowded with photographers — avoid hogging a spot for too long. Northeastern stewed dishes and Guobaorou (sweet-and-sour pork) are common home cooking. No tipping.",
+    seeAndDo:
+      "Rime Ice Island (the Zengtong and Hantun viewing spots, best from late December to late February, with the thickest river mist before 10 a.m.); Songhua Lake (the Fengman reservoir, for skiing in winter and boating in summer); Beishan Park (historic temples and hilltop views in the old town); Ula Street Manchu Township (site of the Qing-era Dabuyala tribute office and a centre of Manchu culture).",
+    whenAndTips:
+      "Late December to late February is peak rime-ice season — the frost is thickest after three consecutive days below −15°C with light wind — so aim for 5–9 a.m. and bring spare batteries, since the cold drains them fast. In summer (June–August), Songhua Lake is a pleasant place to cool off and take a boat ride.",
+  },
+
+  mohe: {
+    identity:
+      "Mohe is a county-level city in Heilongjiang Province and mainland China's northernmost city, on the north side of the Greater Khingan Range along the upper Heilongjiang (Amur) River, facing Russia across the water, with a 2020-census population of about 60,000. Its high latitude and long, severe winters have earned it the nickname \"China's Arctic,\" and it's one of the very few places in the country where aurora and midnight-sun-like conditions can sometimes be observed.",
+    layout:
+      "Xilinji Town is the seat of city government and the main residential area; Beiji (Arctic) Village, on the Heilongjiang River about 77 km north of downtown, is the heart of Mohe tourism; forestry-era towns such as Beiji Township and Tuqiang are scattered through the surrounding Greater Khingan forest.",
+    gettingAround:
+      "Mohe Gulian Airport (OHE), about 9 km south-west of downtown, is mainland China's highest-latitude civil airport, with confirmed nonstop flights to Harbin and Hulunbuir; its current Beijing service actually routes through a scheduled stop in Harbin rather than flying nonstop. Mohe station, on a Binzhou railway branch line, has trains to and from Harbin. It's about a 1.5–2 hour drive from downtown to Beiji Village; winter roads can be icy, so a hired car or tour is advisable. Winters are extreme, with January averages often below −30°C — among the coldest permanently inhabited parts of mainland China.",
+    culture:
+      "A frontier culture shaped by early migrants who headed north to Manchuria, forestry workers, and northern minority groups such as the Oroqen. Coping with severe winter cold is a central fact of daily life here, and cold-weather gear and heating are taken seriously. With Russia just across the river, visiting border areas means following border-control rules — don't approach or photograph border installations without authorisation.",
+    seeAndDo:
+      "Beiji (Arctic) Village (mainland China's northernmost administrative village, home to landmarks like the \"Northernmost Home in China\" and \"Northernmost Post Office\" — you can mail a postcard stamped with the \"northernmost\" postmark here); the aurora (Mohe is one of the very few places in China with any chance of seeing it, but historical records show only a handful of aurora days most years — seeing one is largely down to luck and weather, and shouldn't be the sole reason for a trip); Luoguhe Village (where the Heilongjiang and Argun rivers meet); Mohe Songyuan primeval ecological park (a patch of old-growth forest that survived the catastrophic 1987 Greater Khingan wildfire).",
+    whenAndTips:
+      "The rough aurora-watching window runs from late September to early April, with the core hours between 10 p.m. and 3 a.m. — but the actual odds of seeing one are low, so treat it as a bonus rather than a guarantee. Around late June you can experience the \"white night\" effect. Winters are extreme, so bring serious cold-weather gear.",
+  },
+
+  yichang: {
+    identity:
+      "Yichang is a prefecture-level city in Hubei Province, marking the divide between the middle and upper Yangtze, at the mouth of the Three Gorges where the hills of western Hubei give way to the Jianghan Plain, with a 2020-census population of about 4 million. Long known as the \"gateway to the Three Gorges\" and the \"throat between Sichuan and Hubei,\" it is home to both the Three Gorges Dam and the Gezhouba Dam, and was the site of the Battle of Yiling during the Three Kingdoms period.",
+    layout:
+      "Xiling, Wujiagang and Dianjun districts form the urban core, with the Yangtze running through the city; the Three Gorges Dam sits about 40 km upstream and the Gezhouba Dam within the city proper, with the Xiling Gorge stretch between the two dams making up the \"two dams, one gorge\" sightseeing route; west of the city the land rises into the hills of western Hubei, where the Yangtze cuts through the Wushan range to form the Three Gorges.",
+    gettingAround:
+      "Yichang Sanxia International Airport (YIH), about 26 km from downtown, runs more than 20 domestic routes, with confirmed multiple daily nonstop flights to Beijing Capital (about 2h25min); Yichang East station is on the Shanghai–Wuhan–Chengdu high-speed line, about 1.5–2 hours from Wuhan. Buses or tours reach the Three Gorges Dam and Three Gorges Renjia scenic area, but sights are spread out, so allow a full day. The climate is subtropical monsoon, with hot summers often above 35°C in July–August.",
+    culture:
+      "South-western Mandarin (Yichang dialect) is spoken locally, where Ba-Chu culture and Three Kingdoms lore intersect. The resettlement of Three Gorges reservoir residents is one of the region's most significant modern social memories. Visits to the Three Gorges Dam follow strict security procedures — parts of the site are critical infrastructure, and drones and similar equipment are barred without authorisation. Local food runs to bold flavours, with Yichang \"cold shrimp jelly\" (liangxia) and radish dumplings as specialties. No tipping.",
+    seeAndDo:
+      "The Three Gorges Dam (one of the world's largest hydropower projects — Tanzi Ridge overlook for the full panorama, the 185 Platform for a close-up view, and the chance to watch the double-line five-stage ship locks in operation); Three Gorges Renjia scenic area (a folk-culture zone along the Yangtze showcasing river work-songs and Tujia wedding customs); Xiling Gorge (the section of the Three Gorges closest to the river mouth, toured by the \"two dams, one gorge\" boat route); Chexi folk-culture scenic area (a Tujia ethnic village).",
+    whenAndTips:
+      "April–May and September–November are the most comfortable months and generally offer the best reservoir scenery; summer (July–August) is hot and humid. Book Three Gorges Dam visits through official channels in advance and bring valid ID, as security checks are strict.",
+  },
+
+  leshan: {
+    identity:
+      "Leshan is a prefecture-level city in Sichuan Province, at the confluence of the Min, Qingyi and Dadu rivers in the south-west of the Sichuan Basin, with a 2020-census population of about 3.15 million. It's world-famous for the Leshan Giant Buddha, carved into a cliff on the east bank of the Min River, and is a state-designated historic and cultural city; together with neighbouring Mount Emei it forms the \"Mount Emei and Leshan Giant Buddha\" UNESCO World Cultural and Natural Heritage Site.",
+    layout:
+      "Shizhong District is the urban core, where the three rivers meet and the Giant Buddha is carved into the cliff face of Lingyun Hill on the Min's east bank; the Mount Emei scenic area lies over 30 km south-west of Leshan, administratively part of Emeishan City (governed by Leshan); beyond the urban core the land is mostly hills and river-valley farmland at the south-western edge of the Sichuan Basin.",
+    gettingAround:
+      "Leshan's own airport (Emeishan Shaping) was, as of September 2026, still in pre-operational preparation, and no confirmed evidence of regular commercial service could be found; visitors currently connect mainly through Chengdu's Shuangliu or Tianfu airport and continue by expressway or high-speed rail (about 120–150 km, 1.5–2 hours). The Chengdu–Leshan and Chengdu–Guiyang high-speed lines both stop at Leshan, the most common way in and out. It's about an hour from downtown to Mount Emei. The climate is subtropical monsoon, often overcast or foggy, with hot, humid summers.",
+    culture:
+      "The Giant Buddha was carved over roughly 90 years, from 713 to 803 CE, and local lore describes it as \"a mountain that is a Buddha, a Buddha that is a mountain.\" The site draws large crowds; the winding stairway to the Buddha's feet is narrow and one-way, so it's best to go at off-peak times, take care on the steps, and avoid lingering to take photos in the crowded sections. Leshan's \"tiptoe beef\" (qiaojiao niurou) and bobo chicken are the local specialty snacks. No tipping.",
+    seeAndDo:
+      "The Leshan Giant Buddha (the world's largest carved stone seated Buddha, 71 m tall, carved during the Tang dynasty — go early morning or late afternoon to beat the crowds); Lingyun and Wuyou hills (the hills the Buddha sits on and the nearby monasteries, good for a walk); the confluence of the three rivers (a boat ride offers the classic view of the whole Buddha from the water); Mount Emei (one of China's four great Buddhist mountains next door, with a Golden Summit known for its sea of clouds and sunrises — administratively part of Emeishan City and usually treated as a separate day trip from Leshan proper).",
+    whenAndTips:
+      "The Giant Buddha site draws large crowds year-round, and queuing to reach the Buddha's feet on holidays can take over two to three hours — arrive right at opening or take a boat tour of the river instead to save time. Leshan and Mount Emei are usually split across two days; Emei's Golden Summit sits above 3,000 m, so pack a layer even in summer.",
+  },
+
+  kaili: {
+    identity:
+      "Kaili is the seat of Qiandongnan Miao and Dong Autonomous Prefecture in Guizhou Province, in the Miao Mountains along the Balahe, a tributary of the Qingshui River, with a 2020-census population of about 540,000. It has one of the highest concentrations of Miao people in China, earning it the nickname \"Miao Capital,\" and it is the main gateway to sights across Qiandongnan such as Xijiang Qianhu Miao Village and the old town of Zhenyuan.",
+    layout:
+      "The urban area follows a tributary of the Qingshui River and serves as Qiandongnan Prefecture's administrative, commercial and transport hub; Xijiang Qianhu Miao Village lies about 35 km east of Kaili in Leishan County and is the largest Miao settlement in the world; the surrounding countryside holds many traditional Miao and Dong villages.",
+    gettingAround:
+      "Kaili Huangping Airport (KJH), about 54 km from downtown, currently runs mostly connecting flights that stop at other cities en route; Kaili South station on the Shanghai–Kunming high-speed line is about 30 minutes from Guiyang and around 3.5 hours from Guangzhou, and is the most common way in and out. Reaching Xijiang and other outlying villages usually means a hired car or shuttle bus over winding mountain roads, so allow plenty of time. The climate is subtropical monsoon, wet and humid, with wide day–night temperature swings in the hills.",
+    culture:
+      "A multi-ethnic area with a Miao and Dong majority. Village visits often open with the \"twelve gates of welcome wine\" ceremony; when drinking, avoid steadying the horn cup with your hand (thought to \"trap\" your good fortune) — a small sip, or dipping a finger and flicking three drops, is enough and you needn't finish the cup. Miao silverwork and batik are intricate crafts, best bought from established shops. Sour-fish soup is the local signature dish. No tipping.",
+    seeAndDo:
+      "Xijiang Qianhu Miao Village (the world's largest Miao settlement, with stilt houses climbing the hillside, Miao song-and-dance performances, and the welcome-wine ceremony); Zhenyuan Ancient Town (a historic town along the Wuyang River laid out like a taiji symbol, about 1.5 hours from Kaili); Nanhua and Jidao Miao villages (smaller, more low-key and less-visited villages); the Kaili Ethnic Culture Park (a showcase of Miao and Dong architecture and folkways).",
+    whenAndTips:
+      "The Miao New Year festival (roughly around the tenth lunar month, dates vary by village) and the \"eating new rice\" festival are when the villages are liveliest, but also busiest. April–October is generally warm and pleasant, though heavy rain in July–August can occasionally disrupt mountain roads. Xijiang's night view — thousands of hillside lights coming on at dusk — is a classic sight, so consider staying overnight in the village to see both day and night.",
+  },
+
+  yanan: {
+    identity:
+      "Yan'an is a prefecture-level city in Shaanxi Province, at the confluence of the Yan and Nanchuan rivers in the heart of the Loess Plateau, with a 2020-census population of about 2.28 million. It served as the seat of the Chinese Communist Party's Central Committee and the Shaanxi–Gansu–Ningxia Border Region government from 1935 to 1948, making it a pivotal city in modern Chinese history, and it is also a classic example of the Loess Plateau's tableland-ridge-hillock gully landscape.",
+    layout:
+      "Baota District is the urban core, with the Yan River running through it and Baota (Pagoda) Hill facing downtown across the river to the south-east; sites such as Zaoyuan and Yangjialing lie north-west of the city centre; most of the surrounding countryside is Loess Plateau gully-and-hill terrain, and cave dwellings (yaodong) remain the traditional house form, some still in use today.",
+    gettingAround:
+      "Yan'an Nanniwan Airport (ENY), about 13 km from downtown, has a confirmed nonstop Beijing Capital service with at least one daily flight (operated by Air China's C919), plus flights to Shanghai, Hangzhou, Jinan and other cities; the Xi'an–Yan'an high-speed line has sharply cut travel time to Xi'an since opening. City buses run directly to Zaoyuan, Yangjialing and other revolutionary sites; a hired car or tour is best for reaching Hukou Waterfall and other outlying sights. The climate is temperate continental monsoon, with cold, dry winters and dusty winds in spring and autumn.",
+    culture:
+      "Northern Shaanxi folk culture is well preserved here, with Ansai waist-drum dancing, xintianyou folk songs and paper-cutting among the region's signature intangible-heritage traditions. Cave dwellings stay cool in summer and warm in winter, and some have been converted into guesthouses. The local diet leans on coarse grains, with potato-flour shreds (yangyu cāca), fried millet cakes and millet porridge as staples. At memorial sites, keep a respectful, quiet demeanour and follow posted rules — no writing on or climbing over memorial structures. No tipping.",
+    seeAndDo:
+      "Baota (Pagoda) Hill (Yan'an's landmark, topped by a Ming-dynasty pagoda with views over the city and the Yan River); the Yan'an Revolutionary Memorial Hall (a systematic account of the 1935–1948 period, free with ID); the Zaoyuan and Yangjialing revolutionary sites (clusters of cave-dwelling compounds); Hukou Waterfall (the largest waterfall on the middle Yellow River, straddling Shaanxi and Shanxi about 150 km from Yan'an, and a classic pairing of Loess Plateau terrain with the Yellow River).",
+    whenAndTips:
+      "April–October has the mildest weather for touring the revolutionary sites and the surrounding Loess Plateau scenery; Hukou Waterfall carries the most water during the July–September flood season, while a winter visit can bring dramatic ice formations. Several memorial sites in town are free but may need advance booking or ID at the door, so check the day's opening arrangements ahead of time.",
+  },
+
+  golmud: {
+    identity:
+      "Golmud is a county-level city under Haixi Mongol and Tibetan Autonomous Prefecture in Qinghai Province, on the southern edge of the Qaidam Basin at the northern foot of the Kunlun Mountains, and one of China's largest county-level cities by area, with a 2020-census population of about 210,000. Rich in salt-lake resources and sitting at the junction of the Qinghai–Tibet Highway and Railway, it's often called \"a salt-lake city grown out of the Gobi,\" and it's an important staging point on the way into Tibet.",
+    layout:
+      "The city itself is a planned town laid out on a grid, built up from the 1950s alongside construction of the Qinghai–Tibet Highway; Qarhan Salt Lake lies about 60 km north-west of downtown and is China's largest potassium-fertiliser production base; the Kunlun Pass, about 160 km south of the city along the Qinghai–Tibet Highway, is the gateway to the Hoh Xil region and on to Lhasa.",
+    gettingAround:
+      "Golmud Airport, with a 4,800 m runway, is among the longest-runway civil airports in China, with a confirmed nonstop route to Chengdu Shuangliu (Tibet Airlines, about 2.5 hours, three flights a week), plus service to Xining, Xi'an and Lhasa; Golmud station on the Qinghai–Tibet railway is a key staging point for trains heading into Tibet. It's a long drive from downtown to Qarhan Salt Lake or the Kunlun Pass, so a hired car or tour is recommended, and altitude sickness is worth watching for — Golmud itself sits around 2,800 m, and elevation climbs fast heading further south.",
+    culture:
+      "A multi-ethnic city of Mongols, Tibetans and Han Chinese, built up largely as a migrant town of Qinghai–Tibet Highway construction workers and oil and salt-chemical industry employees. Halal and Tibetan restaurants are both common; visiting a Tibetan Buddhist monastery calls for modest dress and walking clockwise around the prayer circuit. Foreign travellers continuing on into Tibet from Golmud must arrange a Tibet Travel Permit in advance and travel with a licensed agency — independent travel isn't permitted (check current rules with China's National Immigration Administration or the Tibet tourism authority). No tipping.",
+    seeAndDo:
+      "Qarhan Salt Lake (China's largest salt lake, crossed by the \"10,000-zhang salt bridge\" causeway, with striking white salt-crust scenery in the sun); Kunlun Pass (a key point on the Qinghai–Tibet Highway at about 4,768 m, marked by a memorial to Hoh Xil ranger Sonam Dorje); Nachitai/Kunlun Spring (a spring landscape at the northern foot of the Kunlun Mountains); Yuzhu Peak and other Kunlun summits visible from the highway south of Golmud (usually reached only as part of an onward Tibet trip or a dedicated mountaineering expedition, not casual sightseeing).",
+    whenAndTips:
+      "June–September is the most comfortable season; the Kunlun Pass and roads further south often face winter snow closures. Golmud itself, at about 2,800 m, causes little altitude discomfort for most visitors, but elevation rises sharply heading toward the Kunlun Pass, so acclimatise beforehand and pack warm clothing and basic medication. Sites like Qarhan Salt Lake double as working industrial areas, so follow posted safety guidance.",
+  },
+
+  zhongwei: {
+    identity:
+      "Zhongwei is a prefecture-level city in the Ningxia Hui Autonomous Region, straddling the Yellow River in western Ningxia at the southern edge of the Tengger Desert, with a 2020-census population of about 1.02 million. It's known for the Shapotou scenic area, where desert, river, oasis and mountain come together, one of China's first batch of national 5A-rated scenic areas, and one of the earliest places in China to achieve real results in desert-control efforts.",
+    layout:
+      "Shapotou District is the urban core, with the Yellow River running west to east through it; the Shapotou scenic area lies about 16 km west of downtown, where the Tengger Desert meets the Yellow River directly; south of the city, the low Xiang Shan and Weining Beishan hills mark an outlying spur of the Qilian Mountains.",
+    gettingAround:
+      "Zhongwei Shapotou Airport serves several provincial capitals, but some of those routes connect through hubs like Xi'an or Shijiazhuang, so check whether a fare is nonstop when booking; the Baotou–Lanzhou railway and Yinchuan–Xi'an high-speed line both call at Zhongwei, about an hour from Yinchuan. The Shapotou scenic area is split into a river zone and a desert zone linked by shuttle bus, with enough activities on offer to fill half a day to a full day. The climate is mid-temperate continental, dry with wide day–night temperature swings.",
+    culture:
+      "Zhongwei has a sizeable Hui Muslim population, with halal restaurants throughout and a diet built around mutton, beef and noodles; visiting a mosque calls for modest dress and avoiding prayer times. Shapotou's straw-checkerboard sand-fixing technique — the local approach to desert control — is a key reason the Baotou–Lanzhou railway can run reliably through the desert; stick to marked routes in the desert zone and avoid damaging vegetation or the straw grids. No tipping.",
+    seeAndDo:
+      "Shapotou (where the Yellow River meets the Tengger Desert — try sand-sliding, a sheepskin raft ride — sit back-to-back with your pack in front — a dune buggy, a Yellow River zipline, or bungee jumping); Yellow River Sunkist (a cluster of upscale riverside guesthouses); the Tengger Desert Star Hotel (a stargazing stay deep in the desert, best booked ahead); Nanchangtan Village (an old village on the Yellow River with century-old pear trees and the remains of an ancient ferry crossing).",
+    whenAndTips:
+      "May–October is peak season at Shapotou, especially July–September when the river-based activities are all running; midday sun in the desert zone is intense, so bring sunscreen, sunglasses and shoe covers to keep sand out; temperature swings between day and night are large, so pack a layer even for summer nights, and a winter visit offers a quieter, snow-covered desert scene as a change of pace.",
+  },
 };

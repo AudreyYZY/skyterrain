@@ -836,6 +836,60 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "麦盖提县城中心 38.9,77.65（沿用原地形注册表 maigaiti 锚点坐标）；WebSearch 核实麦盖提本身无民用机场、无铁路直达（巴楚—麦盖提—莎车铁路截至2026年仍在规划中，尚未通车），经麦喀高速（S16，全长约178km，约2–2.5小时车程）与喀什公路相连，未收录航线（无可核实的商业航班）",
   },
 
+  // ── 中国 · Tier 2 批3（9 省级行政区"仅有首府"缺口，2026-09-04）──
+  {
+    id: "hulunbuir", nameZh: "呼伦贝尔", nameEn: "Hulunbuir", country: "china", tier: "notable", zone: "cn-north",
+    lon: 119.736, lat: 49.212,
+    airport: { iata: "HLD", nameZh: "呼伦贝尔海拉尔国际机场", nameEn: "Hulunbuir Hailar Int'l", lon: 119.825, lat: 49.205 },
+    source: "海拉尔区中心 49.212,119.736（WebSearch）；HLD 机场：Wikipedia（49°12′18″N 119°49′36″E），2025年11月更名为国际机场，2025/26冬春航季34条航线通航30城；已核实 CA9747（国航，北京首都—海拉尔，直飞不经停，约2h5min）",
+  },
+  {
+    id: "jilin-city", nameZh: "吉林市", nameEn: "Jilin City", country: "china", tier: "notable", zone: "cn-northeast",
+    lon: 126.55, lat: 43.84,
+    source: "吉林市区（船营/昌邑一带）中心 43.84,126.55（WebSearch）；WebSearch 核实吉林市本身无在运营的民用机场——原吉林二台子机场已于2005年停止民航开放（因长春龙嘉机场启用而停运），2024年11月虽签署复航改扩建合作协议，但截至2026年仍在办理审批、尚未恢复商业运营；长春龙嘉国际机场（CGQ，本项目已收录长春条目）距吉林市区约35km，两市共用；吉林市另有长珲高铁站直通长春（约25分钟），未收录航线（无独立可核实的商业航班）",
+  },
+  {
+    id: "mohe", nameZh: "漠河", nameEn: "Mohe", country: "china", tier: "notable", zone: "cn-northeast",
+    lon: 122.52, lat: 52.97,
+    airport: { iata: "OHE", nameZh: "漠河古莲机场", nameEn: "Mohe Gulian Airport", lon: 122.421, lat: 52.921 },
+    source: "漠河市西林吉镇（市政府驻地）52.97,122.52（WebSearch）；OHE 机场：Wikipedia（52°55′16″N 122°25′14″E），中国纬度最高的民用机场；WebSearch 核实漠河—哈尔滨为直飞（南航/春秋等），漠河—北京现有航班（南航 CZ6268/CZ6267）实际经停哈尔滨、非不经停直飞，故本轮未收录漠河至四大枢纽的国内航线",
+  },
+  {
+    id: "yichang", nameZh: "宜昌", nameEn: "Yichang", country: "china", tier: "notable", zone: "cn-central",
+    lon: 111.28, lat: 30.70,
+    airport: { iata: "YIH", nameZh: "宜昌三峡国际机场", nameEn: "Yichang Sanxia Int'l", lon: 111.480, lat: 30.556 },
+    source: "宜昌市西陵区中心 30.70,111.28（WebSearch）；YIH 机场：Wikipedia（30°33′23″N 111°28′48″E），距市中心约26km、距三峡大坝约55km，开通国内航线20余条；已核实北京首都—宜昌航线每日多班（东航/国航），CA1523 约2h25min",
+  },
+  {
+    id: "leshan", nameZh: "乐山", nameEn: "Leshan", country: "china", tier: "notable", zone: "cn-southwest",
+    lon: 103.77, lat: 29.57,
+    source: "乐山市市中区中心 29.57,103.77（WebSearch）；WebSearch 核实乐山（峨眉山沙坪）机场截至2026年9月仍处于校飞/试运营准备阶段（2026年1月完成首次校验飞行，目标2026年上半年通航），尚未查到已正式投入商业运营的确切证据，故本轮未收录乐山机场信息；乐山传统上经成都双流/天府机场（约120–150km，高速直达约1.5–2小时）或成乐高铁/成贵高铁往返，游客多以成都为出发地当天往返",
+  },
+  {
+    id: "kaili", nameZh: "凯里", nameEn: "Kaili", country: "china", tier: "notable", zone: "cn-southwest",
+    lon: 107.97, lat: 26.59,
+    airport: { iata: "KJH", nameZh: "凯里黄平机场", nameEn: "Kaili Huangping Airport", lon: 107.989, lat: 26.973 },
+    source: "凯里市中心 26.59,107.97（WebSearch）；KJH 机场：Wikipedia（26°58′27″N 107°58′50″E），距凯里市区约54km；WebSearch 核实黄平机场现有航线多为经停中转格局（如2026年5月新开的西安—凯里—海口），未能核实到当前仍在运营、飞往北京/上海/广州/成都四大枢纽且不经停的直飞航班，故本轮未收录航线；凯里另有沪昆高铁站，距贵阳约30分钟车程，是更常见的进出方式",
+  },
+  {
+    id: "yanan", nameZh: "延安", nameEn: "Yan'an", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 109.49, lat: 36.60,
+    airport: { iata: "ENY", nameZh: "延安南泥湾机场", nameEn: "Yan'an Nanniwan Airport", lon: 109.4653, lat: 36.4764 },
+    source: "延安市宝塔区中心（宝塔山一带）36.60,109.49（WebSearch）；ENY 机场：Wikipedia（36°28′35″N 109°27′55″E）；已核实 CA1279（国航 C919，北京首都—延安，直飞，每日至少1班）",
+  },
+  {
+    id: "golmud", nameZh: "格尔木", nameEn: "Golmud", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 94.89, lat: 36.42,
+    airport: { iata: "GOQ", nameZh: "格尔木机场", nameEn: "Golmud Airport", lon: 94.7861, lat: 36.4006 },
+    source: "格尔木市中心 36.42,94.89（WebSearch：36°24′51″N 94°53′42″E）；GOQ 机场：Wikipedia（36°24′02″N 94°47′10″E），海拔2842m；已核实 TV9965/TV9966（西藏航空 A319，成都双流—格尔木，直飞不经停，约2h30–2h40，每周二/四/六）",
+  },
+  {
+    id: "zhongwei", nameZh: "中卫", nameEn: "Zhongwei", country: "china", tier: "notable", zone: "cn-northwest",
+    lon: 105.197, lat: 37.521,
+    airport: { iata: "ZHY", nameZh: "中卫沙坡头机场", nameEn: "Zhongwei Shapotou Airport", lon: 105.1544, lat: 37.5728 },
+    source: "中卫市中心 37.521,105.197（WebSearch）；ZHY 机场：Wikipedia（37°34′22″N 105°09′16″E）；WebSearch 核实北京是中卫机场通航以来长期存在的航点之一，但现有资料显示其航班多经西安/石家庄等枢纽以\"经西飞\"\"经石飞\"中转模式运营，未能核实到当前仍在运营、不经停的北京直飞航班，故本轮未收录航线；中卫另有包兰铁路/银西高铁，距银川约1小时车程",
+  },
+
   // ── 日本 ──────────────────────────────────────────────
   {
     id: "tokyo", nameZh: "东京", nameEn: "Tokyo", country: "japan", tier: "capital", zone: "jp-kanto",
