@@ -1,0 +1,62 @@
+{
+  "id": "pvg-zrh",
+  "name": "上海 — 苏黎世",
+  "nameEn": "Shanghai — Zurich",
+  "description": "华北平原 · 蒙古戈壁 · 萨雷阿尔卡草原 · 阿尔卑斯山北麓瑞士高原",
+  "descriptionEn": "North China Plain · Mongolian Gobi · Saryarka Steppe · Swiss Plateau at the foot of the Alps",
+  "depCountry": "china",
+  "arrCountry": "switzerland",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU255",
+    "aircraft": "Airbus A350-900",
+    "depIata": "PVG",
+    "arrIata": "ZRH",
+    "durationMin": 720
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saryarka-steppe"
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 20,
+      "lat": 55
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "swiss-plateau"
+    },
+    {
+      "kind": "city",
+      "id": "zrh",
+      "name": "苏黎世机场",
+      "nameEn": "Zurich Airport",
+      "lat": 47.4647,
+      "lon": 8.5492,
+      "airport": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "pvg-dub",
+  "name": "上海 — 都柏林",
+  "nameEn": "Shanghai — Dublin",
+  "description": "华北平原 · 蒙古戈壁 · 西西伯利亚平原 · 北海 · 爱尔兰中部低地",
+  "descriptionEn": "North China Plain · Mongolian Gobi · West Siberian Plain · North Sea · Irish Central Lowlands",
+  "depCountry": "china",
+  "arrCountry": "ireland",
+  "flight": {
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU231",
+    "aircraft": "Airbus A350-900",
+    "depIata": "PVG",
+    "arrIata": "DUB",
+    "durationMin": 800
+  },
+  "cruiseHeight": 11400,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "北海",
+      "nameEn": "North Sea",
+      "lon": 3,
+      "lat": 56
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-lowlands-bog-of-allen"
+    },
+    {
+      "kind": "city",
+      "id": "dub",
+      "name": "都柏林机场",
+      "nameEn": "Dublin Airport",
+      "lat": 53.4213,
+      "lon": -6.2701,
+      "airport": true
+    }
+  ]
+}
