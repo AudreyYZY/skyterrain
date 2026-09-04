@@ -450,20 +450,28 @@ export default function ExplorerApp() {
 
   /**
    * 旅游模式欢迎卡关闭 —— 没有 ContinentIntro 那样的翻卡选大洲流程，
-   * 关闭即代表用户确认了当前 activeRegion，这时才飞过去（不能提前，见 handleMapReady 注释）。
+   * 用户点「开始探索」才代表确认了当前 activeRegion，这时才飞过去。
+   * confirmed=false 是 IntroOverlay 自己"之前已看过、静默跳过"那条路径——
+   * 不是用户此刻做的选择，绝不能飞，否则就是"没等选择就自动跳转"（这正是曾经
+   * 出现过的回归：把这条路径也接到了飞行逻辑上）。同理见下方 CesiumMap 调用处
+   * 关于 onReady 为什么不再接飞行逻辑的说明。
    */
-  const handleTravelIntroDismiss = useCallback(() => {
-    setShowIntro(false);
-    if (activeRegion === DEFAULT_REGION_ID) return;
-    const region = REGIONS.find((r) => r.id === activeRegion);
-    if (!region) return;
-    mapRef.current?.flyToRegion({
-      lon: region.center.lon,
-      lat: region.center.lat,
-      height: region.center.height,
-      duration: 2.4,
-    });
-  }, [activeRegion]);
+  const handleTravelIntroDismiss = useCallback(
+    (confirmed: boolean) => {
+      setShowIntro(false);
+      if (!confirmed) return;
+      if (activeRegion === DEFAULT_REGION_ID) return;
+      const region = REGIONS.find((r) => r.id === activeRegion);
+      if (!region) return;
+      mapRef.current?.flyToRegion({
+        lon: region.center.lon,
+        lat: region.center.lat,
+        height: region.center.height,
+        duration: 2.4,
+      });
+    },
+    [activeRegion],
+  );
 
   /** 次区域切换 —— 切到其大洲（若需要）并飞向该次区域地形的重心 */
   const handleSubregionChange = useCallback(
@@ -509,22 +517,26 @@ export default function ExplorerApp() {
     warmupSpeechVoices();
   }, []);
 
-  // 地图就绪：若上次停留的区域不是默认大洲，飞过去（INTRO_VIEW 默认对准亚洲）。
-  // 初始引导页（学习模式轮播 / 旅游模式欢迎卡）还开着时不动地球——不能让地图在
-  // 用户看清引导页之前就自己飞走。学习模式由用户点「开始探索」触发 handleIntroEnter；
-  // 旅游模式由 handleTravelIntroDismiss 触发，二者都会在拉栏后自行调用 flyToRegion。
-  const handleMapReady = useCallback(() => {
-    if (showIntroRef.current) return;
-    if (activeRegion === DEFAULT_REGION_ID) return;
-    const region = REGIONS.find((r) => r.id === activeRegion);
-    if (!region) return;
-    mapRef.current?.flyToRegion({
-      lon: region.center.lon,
-      lat: region.center.lat,
-      height: region.center.height,
-      duration: 1.5,
-    });
-  }, [activeRegion]);
+  /**
+   * 曾经这里在地图就绪时，若 localStorage 记着"上次停留的不是默认大洲"就自动飞过去——
+   * 目的是让老用户直接落回上次的区域。**这个设计已被证明是本页面反复出现的
+   * "没等用户选择就自动跳转"这个 bug 的根源，已彻底移除，不要再加回来。**
+   *
+   * 根因：旅游模式的 IntroOverlay 对"已看过引导页"的用户会静默跳过（不显示卡片，
+   * 直接把 showIntro 置为 false，见该组件的 SEEN_KEY 逻辑）——这个"跳过"发生在
+   * Cesium 完成初始化之前。等地图真正 ready、这个函数触发时，showIntro 早已是
+   * false，看起来就跟"用户已经确认过了"一模一样，于是自动飞了过去——但用户
+   * 其实这次访问什么都没点。凡是"地图/引导层就绪时机 vs 是否显示过引导" 只用一个
+   * showIntro 布尔值去判断"该不该飞"，都会重新踩到这个坑（历史上已经踩过不止一次）。
+   *
+   * 现在的规则、以后新增任何飞行触发点都要遵守：
+   *   相机的每一次自动飞行，必须能追溯到*本次会话*里一个真实发生的用户动作
+   *  （点「开始探索」→ handleIntroEnter / handleTravelIntroDismiss(confirmed=true)、
+   *   点顶栏大洲下拉 → handleRegionChange、点次区域 → handleSubregionChange、
+   *   点地形/城市 → 各自的 handleSelect*），不能由"地图初始化好了"或"localStorage
+   *   里记着什么"这类跟当次访问无关的时机来触发。恢复 activeRegion 这个*状态*
+   *  （让侧栏/标签显示对的大洲）没问题，但恢复状态绝不能连带触发一次相机飞行。
+   */
 
   /**
    * 朗读 lesson 并同步高亮 — 自动播报和手动朗读共用。
@@ -1163,6 +1175,9 @@ export default function ExplorerApp() {
   const handleModeChange = useCallback(
     (m: AppMode) => {
       if (m === mode) return;
+      // 引导页开着时按钮本应不可点（见 header 的 pointer-events 处理），这里再兜底一次：
+      // 任何触发路径都不该在用户看清引导页之前就让相机自己飞走。
+      if (showIntroRef.current) return;
       setMode(m);
       setStoredMode(m);
       stopSpeaking();
@@ -1235,7 +1250,6 @@ export default function ExplorerApp() {
       <div className="absolute inset-0 z-0">
         <CesiumMap
           ref={mapRef}
-          onReady={handleMapReady}
           onTerrainMode={setTerrainMode}
           onTerrainHover={setHoveredTerrainId}
           onTerrainSelect={mode === "study" ? handleMapTerrainSelect : undefined}
@@ -1303,7 +1317,7 @@ export default function ExplorerApp() {
 
       {/* Header — editorial masthead */}
       <header className="pointer-events-none absolute inset-x-0 top-0 z-30 flex items-center justify-between px-4 py-2.5">
-        <div className={`pointer-events-auto flex items-baseline gap-2.5 transition-opacity duration-300 ${showIntro ? "opacity-0" : "opacity-100"}`}>
+        <div className={`flex items-baseline gap-2.5 transition-opacity duration-300 ${showIntro ? "pointer-events-none opacity-0" : "pointer-events-auto opacity-100"}`}>
           <span className="editorial-title text-[15px] text-[color:var(--ink)]">
             {language === "zh-CN" ? activeRegionName : activeRegionNameEn}
           </span>
@@ -1311,7 +1325,7 @@ export default function ExplorerApp() {
             {terrainCount}
           </span>
         </div>
-        <div className={`pointer-events-auto flex items-center gap-3 transition-opacity duration-300 ${showIntro ? "opacity-0" : "opacity-100"}`}>
+        <div className={`flex items-center gap-3 transition-opacity duration-300 ${showIntro ? "pointer-events-none opacity-0" : "pointer-events-auto opacity-100"}`}>
           <ModeToggle mode={mode} onChange={handleModeChange} language={language} />
           <RegionSelector
             activeRegion={activeRegion}
