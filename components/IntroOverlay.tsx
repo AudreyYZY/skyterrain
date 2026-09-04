@@ -7,7 +7,12 @@ interface IntroOverlayProps {
   language: Language;
   regionName: string;
   regionNameEn: string;
-  onDismiss: () => void;
+  /**
+   * confirmed=true 只在用户真正点击「开始探索」时触发（父组件据此才飞相机）；
+   * confirmed=false 是"之前已看过，静默跳过"这条路径——不代表用户此刻做了任何选择，
+   * 不能触发飞行，否则会变成"没等用户选择就自动跳到上次停留的区域"。
+   */
+  onDismiss: (confirmed: boolean) => void;
   onToggleLanguage: () => void;
 }
 
@@ -34,7 +39,7 @@ export default function IntroOverlay({
       if (localStorage.getItem(SEEN_KEY)) {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setMounted(false);
-        onDismiss();
+        onDismiss(false);
       }
     } catch {
       /* ignore */
@@ -53,7 +58,7 @@ export default function IntroOverlay({
     }
     window.setTimeout(() => {
       setMounted(false);
-      onDismiss();
+      onDismiss(true);
     }, 520);
   };
 
