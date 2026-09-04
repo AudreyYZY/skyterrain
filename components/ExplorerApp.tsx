@@ -1349,6 +1349,8 @@ export default function ExplorerApp() {
           groups={mode === "travel" ? travelRailGroups(activeRegion, language) : railGroups}
           activeId={mode === "travel" ? travelId : (activeTerrain?.id ?? null)}
           onSelect={mode === "travel" ? handleSelectCity : handleSelectById}
+          searchPlaceholder={t("rail.search", language)}
+          noMatchLabel={t("rail.no_match", language)}
         />
       )}
 

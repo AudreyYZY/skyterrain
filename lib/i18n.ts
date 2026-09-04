@@ -263,6 +263,14 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "旅游目录",
     "en-US": "Destinations",
   },
+  "rail.search": {
+    "zh-CN": "搜索名称…",
+    "en-US": "Search by name…",
+  },
+  "rail.no_match": {
+    "zh-CN": "没有匹配的结果",
+    "en-US": "No matching results",
+  },
 
   // Journey bar
   "journey.routes": {
