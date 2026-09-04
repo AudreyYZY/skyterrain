@@ -23,11 +23,19 @@ export interface CityEntry {
   country: string; // regionId: "australia" | "china"
   tier: PlaceTier;
   /**
-   * 目录分组用的地理片区（左侧栏城市按此分栏）。
+   * 粗粒度地理大区（跨省/州），仅用于目录里 admin1 分组标题旁的彩色圆点提示，
+   * 不再单独作为可点击的目录层级——admin1 才是主要分组。
    * 中国：华北 / 东北 / 华东 / 华中 / 华南 / 西南 / 西北 / 港澳台。
-   * 其它国家按各自方案（州 / 大区 / 岛）。缺省归到「其它」。
+   * 其它国家按各自方案（大区 / 岛群）。缺省不显示圆点。
    */
   zone?: string;
+  /**
+   * 该国官方一级行政区（中国=省/自治区/直辖市/特别行政区，其它国家=州/省/大区，
+   * 跟随该国官方划分）。目录按此分组、作为可展开的主要层级。缺省时目录退回按 zone 分组
+   * （国家尚未补齐 admin1 时的过渡态，不应长期缺省）。
+   */
+  admin1Zh?: string;
+  admin1En?: string;
   lon: number;
   lat: number;
   airport?: { iata: string; nameZh: string; nameEn: string; lon: number; lat: number };
@@ -309,6 +317,34 @@ export function zoneOrder(zone: string | undefined): number {
   return o ?? 99;
 }
 
+/**
+ * 大区圆点配色 —— 10 色循环调色板，按 zone 在其所属国家内的 order 序号取色，
+ * 同一国家内相邻大区颜色不同即可；不追求全局唯一（不同国家复用同一颜色没关系，
+ * 用户一次只看一个国家的目录）。故意避开 --accent 琥珀色附近色相，避免跟"当前选中"
+ * 状态的强调色混淆。
+ */
+const ZONE_COLOR_PALETTE = [
+  "#7dd3fc", // sky
+  "#86efac", // green
+  "#c4b5fd", // violet
+  "#fda4af", // rose
+  "#67e8f9", // cyan
+  "#d9f99d", // lime
+  "#f0abfc", // fuchsia
+  "#93c5fd", // blue
+  "#fca5a5", // coral
+  "#5eead4", // teal
+] as const;
+
+export function zoneColor(zone: string | undefined): string | undefined {
+  if (!zone) return undefined;
+  const meta = ZONE_META[zone];
+  if (!meta) return undefined;
+  // 同一国家的 zone order 是连续分配的（见上表），用它对调色板取模即可让
+  // 一个国家内的相邻大区拿到不同颜色，不需要每个 zone 手动指定颜色。
+  return ZONE_COLOR_PALETTE[meta.order % ZONE_COLOR_PALETTE.length];
+}
+
 export const COUNTRY_OVERVIEWS: CountryOverviewEntry[] = [
   { country: "australia", nameZh: "澳大利亚", nameEn: "Australia" },
   { country: "china", nameZh: "中国", nameEn: "China" },
@@ -461,436 +497,436 @@ export const CITY_REGISTRY: CityEntry[] = [
 
   // ── 中国 ──────────────────────────────────────────────
   {
-    id: "beijing", nameZh: "北京", nameEn: "Beijing", country: "china", tier: "capital", zone: "cn-north",
+    id: "beijing", nameZh: "北京", nameEn: "Beijing", country: "china", tier: "capital", zone: "cn-north", admin1Zh: "北京市", admin1En: "Beijing",
     lon: 116.4074, lat: 39.9042,
     airport: { iata: "PEK", nameZh: "北京首都国际机场", nameEn: "Beijing Capital Int'l", lon: 116.585, lat: 40.080 },
     source: "北京市中心 39.9042,116.4074；PEK 机场：公开资料",
   },
   {
-    id: "shanghai", nameZh: "上海", nameEn: "Shanghai", country: "china", tier: "major", zone: "cn-east",
+    id: "shanghai", nameZh: "上海", nameEn: "Shanghai", country: "china", tier: "major", zone: "cn-east", admin1Zh: "上海市", admin1En: "Shanghai",
     lon: 121.4737, lat: 31.2304,
     airport: { iata: "PVG", nameZh: "上海浦东国际机场", nameEn: "Shanghai Pudong Int'l", lon: 121.805, lat: 31.143 },
     source: "上海人民广场 31.2304,121.4737；PVG 机场：公开资料",
   },
   {
-    id: "guangzhou", nameZh: "广州", nameEn: "Guangzhou", country: "china", tier: "major", zone: "cn-south",
+    id: "guangzhou", nameZh: "广州", nameEn: "Guangzhou", country: "china", tier: "major", zone: "cn-south", admin1Zh: "广东省", admin1En: "Guangdong",
     lon: 113.2644, lat: 23.1291,
     airport: { iata: "CAN", nameZh: "广州白云国际机场", nameEn: "Guangzhou Baiyun Int'l", lon: 113.299, lat: 23.392 },
     source: "广州珠江新城一带 23.1291,113.2644；CAN 机场：公开资料",
   },
   {
-    id: "shenzhen", nameZh: "深圳", nameEn: "Shenzhen", country: "china", tier: "major", zone: "cn-south",
+    id: "shenzhen", nameZh: "深圳", nameEn: "Shenzhen", country: "china", tier: "major", zone: "cn-south", admin1Zh: "广东省", admin1En: "Guangdong",
     lon: 114.0579, lat: 22.5431,
     airport: { iata: "SZX", nameZh: "深圳宝安国际机场", nameEn: "Shenzhen Bao'an Int'l", lon: 113.811, lat: 22.639 },
     source: "深圳福田一带 22.5431,114.0579；SZX 机场：公开资料",
   },
   {
-    id: "chengdu", nameZh: "成都", nameEn: "Chengdu", country: "china", tier: "major", zone: "cn-southwest",
+    id: "chengdu", nameZh: "成都", nameEn: "Chengdu", country: "china", tier: "major", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
     lon: 104.0668, lat: 30.5728,
     airport: { iata: "CTU", nameZh: "成都双流国际机场", nameEn: "Chengdu Shuangliu Int'l", lon: 103.947, lat: 30.578 },
     source: "成都天府广场 30.5728,104.0668；CTU 机场：公开资料",
   },
   {
-    id: "chongqing", nameZh: "重庆", nameEn: "Chongqing", country: "china", tier: "major", zone: "cn-southwest",
+    id: "chongqing", nameZh: "重庆", nameEn: "Chongqing", country: "china", tier: "major", zone: "cn-southwest", admin1Zh: "重庆市", admin1En: "Chongqing",
     lon: 106.5516, lat: 29.5630,
     airport: { iata: "CKG", nameZh: "重庆江北国际机场", nameEn: "Chongqing Jiangbei Int'l", lon: 106.642, lat: 29.719 },
     source: "重庆渝中区 29.5630,106.5516；CKG 机场：公开资料",
   },
   {
-    id: "xian", nameZh: "西安", nameEn: "Xi'an", country: "china", tier: "major", zone: "cn-northwest",
+    id: "xian", nameZh: "西安", nameEn: "Xi'an", country: "china", tier: "major", zone: "cn-northwest", admin1Zh: "陕西省", admin1En: "Shaanxi",
     lon: 108.9398, lat: 34.3416,
     airport: { iata: "XIY", nameZh: "西安咸阳国际机场", nameEn: "Xi'an Xianyang Int'l", lon: 108.752, lat: 34.447 },
     source: "西安钟楼 34.3416,108.9398；XIY 机场：公开资料",
   },
   {
-    id: "hangzhou", nameZh: "杭州", nameEn: "Hangzhou", country: "china", tier: "major", zone: "cn-east",
+    id: "hangzhou", nameZh: "杭州", nameEn: "Hangzhou", country: "china", tier: "major", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
     lon: 120.1551, lat: 30.2741,
     airport: { iata: "HGH", nameZh: "杭州萧山国际机场", nameEn: "Hangzhou Xiaoshan Int'l", lon: 120.434, lat: 30.234 },
     source: "杭州西湖东岸 30.2741,120.1551；HGH 机场：公开资料",
   },
   {
-    id: "kunming", nameZh: "昆明", nameEn: "Kunming", country: "china", tier: "major", zone: "cn-southwest",
+    id: "kunming", nameZh: "昆明", nameEn: "Kunming", country: "china", tier: "major", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
     lon: 102.7183, lat: 25.0389,
     airport: { iata: "KMG", nameZh: "昆明长水国际机场", nameEn: "Kunming Changshui Int'l", lon: 102.929, lat: 25.100 },
     source: "昆明市中心 25.0389,102.7183；KMG 机场：公开资料",
   },
   {
-    id: "guilin", nameZh: "桂林", nameEn: "Guilin", country: "china", tier: "notable", zone: "cn-south",
+    id: "guilin", nameZh: "桂林", nameEn: "Guilin", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
     lon: 110.2907, lat: 25.2736,
     airport: { iata: "KWL", nameZh: "桂林两江国际机场", nameEn: "Guilin Liangjiang Int'l", lon: 110.039, lat: 25.219 },
     source: "桂林市中心 25.2736,110.2907；KWL 机场：公开资料",
   },
   {
-    id: "nanjing", nameZh: "南京", nameEn: "Nanjing", country: "china", tier: "major", zone: "cn-east",
+    id: "nanjing", nameZh: "南京", nameEn: "Nanjing", country: "china", tier: "major", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
     lon: 118.7969, lat: 32.0603,
     airport: { iata: "NKG", nameZh: "南京禄口国际机场", nameEn: "Nanjing Lukou Int'l", lon: 118.862, lat: 31.742 },
     source: "南京新街口 32.0603,118.7969；NKG 机场：公开资料",
   },
   {
-    id: "sanya", nameZh: "三亚", nameEn: "Sanya", country: "china", tier: "notable", zone: "cn-south",
+    id: "sanya", nameZh: "三亚", nameEn: "Sanya", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "海南省", admin1En: "Hainan",
     lon: 109.5119, lat: 18.2528,
     airport: { iata: "SYX", nameZh: "三亚凤凰国际机场", nameEn: "Sanya Phoenix Int'l", lon: 109.412, lat: 18.303 },
     source: "三亚市中心 18.2528,109.5119；SYX 机场：公开资料",
   },
   {
-    id: "lhasa", nameZh: "拉萨", nameEn: "Lhasa", country: "china", tier: "major", zone: "cn-southwest",
+    id: "lhasa", nameZh: "拉萨", nameEn: "Lhasa", country: "china", tier: "major", zone: "cn-southwest", admin1Zh: "西藏自治区", admin1En: "Tibet",
     lon: 91.1409, lat: 29.6456,
     airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.912, lat: 29.298 },
     source: "拉萨市中心 29.6456,91.1409；LXA 机场：公开资料",
   },
   {
-    id: "harbin", nameZh: "哈尔滨", nameEn: "Harbin", country: "china", tier: "major", zone: "cn-northeast",
+    id: "harbin", nameZh: "哈尔滨", nameEn: "Harbin", country: "china", tier: "major", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
     lon: 126.5350, lat: 45.8038,
     airport: { iata: "HRB", nameZh: "哈尔滨太平国际机场", nameEn: "Harbin Taiping Int'l", lon: 126.250, lat: 45.623 },
     source: "哈尔滨市中心 45.8038,126.5350；HRB 机场：公开资料",
   },
   {
-    id: "qingdao", nameZh: "青岛", nameEn: "Qingdao", country: "china", tier: "major", zone: "cn-east",
+    id: "qingdao", nameZh: "青岛", nameEn: "Qingdao", country: "china", tier: "major", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
     lon: 120.3826, lat: 36.0671,
     airport: { iata: "TAO", nameZh: "青岛胶东国际机场", nameEn: "Qingdao Jiaodong Int'l", lon: 120.086, lat: 36.366 },
     source: "青岛市南区 36.0671,120.3826；TAO 机场：公开资料",
   },
   {
-    id: "zhangjiajie", nameZh: "张家界", nameEn: "Zhangjiajie", country: "china", tier: "notable", zone: "cn-central",
+    id: "zhangjiajie", nameZh: "张家界", nameEn: "Zhangjiajie", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
     lon: 110.4796, lat: 29.1170,
     airport: { iata: "DYG", nameZh: "张家界荷花国际机场", nameEn: "Zhangjiajie Hehua Int'l", lon: 110.443, lat: 29.103 },
     source: "张家界市区 29.1170,110.4796；DYG 机场：公开资料",
   },
   {
-    id: "lijiang", nameZh: "丽江", nameEn: "Lijiang", country: "china", tier: "notable", zone: "cn-southwest",
+    id: "lijiang", nameZh: "丽江", nameEn: "Lijiang", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
     lon: 100.2270, lat: 26.8721,
     airport: { iata: "LJG", nameZh: "丽江三义国际机场", nameEn: "Lijiang Sanyi Int'l", lon: 100.246, lat: 26.680 },
     source: "丽江古城 26.8721,100.2270；LJG 机场：公开资料",
   },
   {
-    id: "dunhuang", nameZh: "敦煌", nameEn: "Dunhuang", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "dunhuang", nameZh: "敦煌", nameEn: "Dunhuang", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
     lon: 94.6618, lat: 40.1421,
     airport: { iata: "DNH", nameZh: "敦煌莫高国际机场", nameEn: "Dunhuang Mogao Int'l", lon: 94.809, lat: 40.161 },
     source: "敦煌市区 40.1421,94.6618；DNH 机场：公开资料",
   },
   // ── 中国 · 补齐 34 个省级行政区主要城市 ──
   {
-    id: "tianjin", nameZh: "天津", nameEn: "Tianjin", country: "china", tier: "major", zone: "cn-north",
+    id: "tianjin", nameZh: "天津", nameEn: "Tianjin", country: "china", tier: "major", zone: "cn-north", admin1Zh: "天津市", admin1En: "Tianjin",
     lon: 117.2010, lat: 39.0842,
     airport: { iata: "TSN", nameZh: "天津滨海国际机场", nameEn: "Tianjin Binhai Int'l", lon: 117.346, lat: 39.124 },
     source: "天津市中心 39.0842,117.2010；TSN 机场：公开资料",
   },
   {
-    id: "shijiazhuang", nameZh: "石家庄", nameEn: "Shijiazhuang", country: "china", tier: "major", zone: "cn-north",
+    id: "shijiazhuang", nameZh: "石家庄", nameEn: "Shijiazhuang", country: "china", tier: "major", zone: "cn-north", admin1Zh: "河北省", admin1En: "Hebei",
     lon: 114.5143, lat: 38.0428,
     airport: { iata: "SJW", nameZh: "石家庄正定国际机场", nameEn: "Shijiazhuang Zhengding Int'l", lon: 114.696, lat: 38.281 },
     source: "石家庄市中心 38.0428,114.5143；SJW 机场：公开资料",
   },
   {
-    id: "taiyuan", nameZh: "太原", nameEn: "Taiyuan", country: "china", tier: "major", zone: "cn-north",
+    id: "taiyuan", nameZh: "太原", nameEn: "Taiyuan", country: "china", tier: "major", zone: "cn-north", admin1Zh: "山西省", admin1En: "Shanxi",
     lon: 112.5489, lat: 37.8706,
     airport: { iata: "TYN", nameZh: "太原武宿国际机场", nameEn: "Taiyuan Wusu Int'l", lon: 112.629, lat: 37.747 },
     source: "太原市中心 37.8706,112.5489；TYN 机场：公开资料",
   },
   {
-    id: "hohhot", nameZh: "呼和浩特", nameEn: "Hohhot", country: "china", tier: "major", zone: "cn-north",
+    id: "hohhot", nameZh: "呼和浩特", nameEn: "Hohhot", country: "china", tier: "major", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
     lon: 111.7492, lat: 40.8424,
     airport: { iata: "HET", nameZh: "呼和浩特盛乐国际机场", nameEn: "Hohhot Shengle Int'l", lon: 111.573, lat: 40.480 },
     source: "呼和浩特市中心 40.8424,111.7492；HET 机场：白塔机场迁建为盛乐国际机场（和林格尔县，2026 转场投用），IATA/ICAO 不变，坐标 40.480,111.573",
   },
   {
-    id: "shenyang", nameZh: "沈阳", nameEn: "Shenyang", country: "china", tier: "major", zone: "cn-northeast",
+    id: "shenyang", nameZh: "沈阳", nameEn: "Shenyang", country: "china", tier: "major", zone: "cn-northeast", admin1Zh: "辽宁省", admin1En: "Liaoning",
     lon: 123.4315, lat: 41.8057,
     airport: { iata: "SHE", nameZh: "沈阳桃仙国际机场", nameEn: "Shenyang Taoxian Int'l", lon: 123.483, lat: 41.640 },
     source: "沈阳市中心 41.8057,123.4315；SHE 机场：公开资料",
   },
   {
-    id: "changchun", nameZh: "长春", nameEn: "Changchun", country: "china", tier: "major", zone: "cn-northeast",
+    id: "changchun", nameZh: "长春", nameEn: "Changchun", country: "china", tier: "major", zone: "cn-northeast", admin1Zh: "吉林省", admin1En: "Jilin",
     lon: 125.3235, lat: 43.8171,
     airport: { iata: "CGQ", nameZh: "长春龙嘉国际机场", nameEn: "Changchun Longjia Int'l", lon: 125.685, lat: 44.001 },
     source: "长春市中心 43.8171,125.3235；CGQ 机场：公开资料",
   },
   {
-    id: "nanchang", nameZh: "南昌", nameEn: "Nanchang", country: "china", tier: "major", zone: "cn-east",
+    id: "nanchang", nameZh: "南昌", nameEn: "Nanchang", country: "china", tier: "major", zone: "cn-east", admin1Zh: "江西省", admin1En: "Jiangxi",
     lon: 115.8579, lat: 28.6820,
     airport: { iata: "KHN", nameZh: "南昌昌北国际机场", nameEn: "Nanchang Changbei Int'l", lon: 115.900, lat: 28.865 },
     source: "南昌市中心 28.6820,115.8579；KHN 机场：公开资料",
   },
   {
-    id: "hefei", nameZh: "合肥", nameEn: "Hefei", country: "china", tier: "major", zone: "cn-east",
+    id: "hefei", nameZh: "合肥", nameEn: "Hefei", country: "china", tier: "major", zone: "cn-east", admin1Zh: "安徽省", admin1En: "Anhui",
     lon: 117.2272, lat: 31.8206,
     airport: { iata: "HFE", nameZh: "合肥新桥国际机场", nameEn: "Hefei Xinqiao Int'l", lon: 116.977, lat: 31.780 },
     source: "合肥市中心 31.8206,117.2272；HFE 机场：公开资料",
   },
   {
-    id: "xiamen", nameZh: "厦门", nameEn: "Xiamen", country: "china", tier: "major", zone: "cn-east",
+    id: "xiamen", nameZh: "厦门", nameEn: "Xiamen", country: "china", tier: "major", zone: "cn-east", admin1Zh: "福建省", admin1En: "Fujian",
     lon: 118.0894, lat: 24.4798,
     airport: { iata: "XMN", nameZh: "厦门高崎国际机场", nameEn: "Xiamen Gaoqi Int'l", lon: 118.128, lat: 24.544 },
     source: "厦门本岛 24.4798,118.0894；XMN 机场：公开资料",
   },
   {
-    id: "zhengzhou", nameZh: "郑州", nameEn: "Zhengzhou", country: "china", tier: "major", zone: "cn-central",
+    id: "zhengzhou", nameZh: "郑州", nameEn: "Zhengzhou", country: "china", tier: "major", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
     lon: 113.6254, lat: 34.7466,
     airport: { iata: "CGO", nameZh: "郑州新郑国际机场", nameEn: "Zhengzhou Xinzheng Int'l", lon: 113.841, lat: 34.520 },
     source: "郑州市中心 34.7466,113.6254；CGO 机场：公开资料",
   },
   {
-    id: "wuhan", nameZh: "武汉", nameEn: "Wuhan", country: "china", tier: "major", zone: "cn-central",
+    id: "wuhan", nameZh: "武汉", nameEn: "Wuhan", country: "china", tier: "major", zone: "cn-central", admin1Zh: "湖北省", admin1En: "Hubei",
     lon: 114.3052, lat: 30.5928,
     airport: { iata: "WUH", nameZh: "武汉天河国际机场", nameEn: "Wuhan Tianhe Int'l", lon: 114.208, lat: 30.774 },
     source: "武汉三镇交汇处 30.5928,114.3052；WUH 机场：公开资料",
   },
   {
-    id: "guiyang", nameZh: "贵阳", nameEn: "Guiyang", country: "china", tier: "major", zone: "cn-southwest",
+    id: "guiyang", nameZh: "贵阳", nameEn: "Guiyang", country: "china", tier: "major", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
     lon: 106.6302, lat: 26.6470,
     airport: { iata: "KWE", nameZh: "贵阳龙洞堡国际机场", nameEn: "Guiyang Longdongbao Int'l", lon: 106.801, lat: 26.539 },
     source: "贵阳市中心 26.6470,106.6302；KWE 机场：公开资料",
   },
   {
-    id: "xining", nameZh: "西宁", nameEn: "Xining", country: "china", tier: "major", zone: "cn-northwest",
+    id: "xining", nameZh: "西宁", nameEn: "Xining", country: "china", tier: "major", zone: "cn-northwest", admin1Zh: "青海省", admin1En: "Qinghai",
     lon: 101.7782, lat: 36.6171,
     airport: { iata: "XNN", nameZh: "西宁曹家堡国际机场", nameEn: "Xining Caojiabao Int'l", lon: 102.043, lat: 36.528 },
     source: "西宁市中心 36.6171,101.7782；XNN 机场：公开资料",
   },
   {
-    id: "yinchuan", nameZh: "银川", nameEn: "Yinchuan", country: "china", tier: "major", zone: "cn-northwest",
+    id: "yinchuan", nameZh: "银川", nameEn: "Yinchuan", country: "china", tier: "major", zone: "cn-northwest", admin1Zh: "宁夏回族自治区", admin1En: "Ningxia",
     lon: 106.2309, lat: 38.4872,
     airport: { iata: "INC", nameZh: "银川河东国际机场", nameEn: "Yinchuan Hedong Int'l", lon: 106.393, lat: 38.322 },
     source: "银川市中心 38.4872,106.2309；INC 机场：公开资料",
   },
   {
-    id: "urumqi", nameZh: "乌鲁木齐", nameEn: "Ürümqi", country: "china", tier: "major", zone: "cn-northwest",
+    id: "urumqi", nameZh: "乌鲁木齐", nameEn: "Ürümqi", country: "china", tier: "major", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
     lon: 87.6168, lat: 43.8256,
     airport: { iata: "URC", nameZh: "乌鲁木齐天山国际机场", nameEn: "Ürümqi Tianshan Int'l", lon: 87.474, lat: 43.907 },
     source: "乌鲁木齐市中心 43.8256,87.6168；URC 机场：2025-03 民航局批复由「地窝堡」更名「天山」，IATA/位置不变",
   },
   {
-    id: "hongkong", nameZh: "香港", nameEn: "Hong Kong", country: "china", tier: "major", zone: "cn-hmt",
+    id: "hongkong", nameZh: "香港", nameEn: "Hong Kong", country: "china", tier: "major", zone: "cn-hmt", admin1Zh: "香港特别行政区", admin1En: "Hong Kong",
     lon: 114.1772, lat: 22.3025,
     airport: { iata: "HKG", nameZh: "香港国际机场", nameEn: "Hong Kong Int'l", lon: 113.915, lat: 22.309 },
     source: "香港中环一带 22.3025,114.1772；HKG 机场：公开资料",
   },
   {
-    id: "macao", nameZh: "澳门", nameEn: "Macao", country: "china", tier: "major", zone: "cn-hmt",
+    id: "macao", nameZh: "澳门", nameEn: "Macao", country: "china", tier: "major", zone: "cn-hmt", admin1Zh: "澳门特别行政区", admin1En: "Macao",
     lon: 113.5439, lat: 22.1987,
     airport: { iata: "MFM", nameZh: "澳门国际机场", nameEn: "Macao Int'l", lon: 113.592, lat: 22.156 },
     source: "澳门半岛 22.1987,113.5439；MFM 机场：公开资料",
   },
   {
-    id: "taipei", nameZh: "台北", nameEn: "Taipei", country: "china", tier: "major", zone: "cn-hmt",
+    id: "taipei", nameZh: "台北", nameEn: "Taipei", country: "china", tier: "major", zone: "cn-hmt", admin1Zh: "台湾", admin1En: "Taiwan",
     lon: 121.5654, lat: 25.0330,
     airport: { iata: "TPE", nameZh: "台湾桃园国际机场", nameEn: "Taiwan Taoyuan Int'l", lon: 121.233, lat: 25.078 },
     source: "台北市中心 25.0330,121.5654；TPE 机场：公开资料",
   },
   // ── 中国 · 补齐 Tier 1 省会缺口（福建/山东/湖南/广西/海南/甘肃）──
   {
-    id: "fuzhou", nameZh: "福州", nameEn: "Fuzhou", country: "china", tier: "major", zone: "cn-east",
+    id: "fuzhou", nameZh: "福州", nameEn: "Fuzhou", country: "china", tier: "major", zone: "cn-east", admin1Zh: "福建省", admin1En: "Fujian",
     lon: 119.2964, lat: 26.0743,
     airport: { iata: "FOC", nameZh: "福州长乐国际机场", nameEn: "Fuzhou Changle Int'l", lon: 119.663, lat: 25.935 },
     source: "福州市中心（鼓楼区）26.0743,119.2964；FOC 机场：公开资料（Wikipedia）",
   },
   {
-    id: "jinan", nameZh: "济南", nameEn: "Jinan", country: "china", tier: "major", zone: "cn-east",
+    id: "jinan", nameZh: "济南", nameEn: "Jinan", country: "china", tier: "major", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
     lon: 117.0207, lat: 36.6702,
     airport: { iata: "TNA", nameZh: "济南遥墙国际机场", nameEn: "Jinan Yaoqiang Int'l", lon: 117.216, lat: 36.857 },
     source: "济南市中心（历下区）36.6702,117.0207；TNA 机场：公开资料（Wikipedia）",
   },
   {
-    id: "changsha", nameZh: "长沙", nameEn: "Changsha", country: "china", tier: "major", zone: "cn-central",
+    id: "changsha", nameZh: "长沙", nameEn: "Changsha", country: "china", tier: "major", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
     lon: 112.9390, lat: 28.2280,
     airport: { iata: "CSX", nameZh: "长沙黄花国际机场", nameEn: "Changsha Huanghua Int'l", lon: 113.221, lat: 28.197 },
     source: "长沙市中心（芙蓉区）28.2280,112.9390；CSX 机场：公开资料（Wikipedia）",
   },
   {
-    id: "nanning", nameZh: "南宁", nameEn: "Nanning", country: "china", tier: "major", zone: "cn-south",
+    id: "nanning", nameZh: "南宁", nameEn: "Nanning", country: "china", tier: "major", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
     lon: 108.3275, lat: 22.8167,
     airport: { iata: "NNG", nameZh: "南宁吴圩国际机场", nameEn: "Nanning Wuxu Int'l", lon: 108.172, lat: 22.608 },
     source: "南宁市中心（广西壮族自治区政府一带）22.8167,108.3275；NNG 机场：公开资料（Wikipedia）",
   },
   {
-    id: "haikou", nameZh: "海口", nameEn: "Haikou", country: "china", tier: "major", zone: "cn-south",
+    id: "haikou", nameZh: "海口", nameEn: "Haikou", country: "china", tier: "major", zone: "cn-south", admin1Zh: "海南省", admin1En: "Hainan",
     lon: 110.3488, lat: 20.0186,
     airport: { iata: "HAK", nameZh: "海口美兰国际机场", nameEn: "Haikou Meilan Int'l", lon: 110.459, lat: 19.935 },
     source: "海口市中心（海南省政府一带）20.0186,110.3488；HAK 机场：公开资料（Wikipedia）",
   },
   {
-    id: "lanzhou", nameZh: "兰州", nameEn: "Lanzhou", country: "china", tier: "major", zone: "cn-northwest",
+    id: "lanzhou", nameZh: "兰州", nameEn: "Lanzhou", country: "china", tier: "major", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
     lon: 103.8268, lat: 36.0606,
     airport: { iata: "LHW", nameZh: "兰州中川国际机场", nameEn: "Lanzhou Zhongchuan Int'l", lon: 103.621, lat: 36.515 },
     source: "兰州市中心（城关区）36.0606,103.8268；LHW 机场：公开资料（Wikipedia，机场距市区约70km，中国离市中心最远机场之一）",
   },
   // ── 中国 · Tier 2 热门城市批1（计划单列市 + UNESCO 遗产城市）──
   {
-    id: "dalian", nameZh: "大连", nameEn: "Dalian", country: "china", tier: "notable", zone: "cn-northeast",
+    id: "dalian", nameZh: "大连", nameEn: "Dalian", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "辽宁省", admin1En: "Liaoning",
     lon: 121.6515, lat: 38.9168,
     airport: { iata: "DLC", nameZh: "大连周水子国际机场", nameEn: "Dalian Zhoushuizi Int'l", lon: 121.538, lat: 38.966 },
     source: "大连中山广场一带 38.9168,121.6515；DLC 机场：公开资料（Wikipedia）",
   },
   {
-    id: "ningbo", nameZh: "宁波", nameEn: "Ningbo", country: "china", tier: "notable", zone: "cn-east",
+    id: "ningbo", nameZh: "宁波", nameEn: "Ningbo", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
     lon: 121.554, lat: 29.869,
     airport: { iata: "NGB", nameZh: "宁波栎社国际机场", nameEn: "Ningbo Lishe Int'l", lon: 121.462, lat: 29.827 },
     source: "宁波天一广场一带 29.869,121.554；NGB 机场：公开资料（Wikipedia）",
   },
   {
-    id: "suzhou", nameZh: "苏州", nameEn: "Suzhou", country: "china", tier: "notable", zone: "cn-east",
+    id: "suzhou", nameZh: "苏州", nameEn: "Suzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
     lon: 120.6158, lat: 31.3200,
     airport: { iata: "WUX", nameZh: "苏南硕放国际机场", nameEn: "Sunan Shuofang Int'l (Wuxi–Suzhou)", lon: 120.429, lat: 31.494 },
     source: "苏州观前街一带 31.3200,120.6158；WUX 机场：公开资料（Wikipedia，机场位于无锡与苏州之间，2023-03 更名“苏南硕放机场（无锡苏州）”，距苏州市区约22km，苏州本身无独立商用机场）",
   },
   {
-    id: "luoyang", nameZh: "洛阳", nameEn: "Luoyang", country: "china", tier: "notable", zone: "cn-central",
+    id: "luoyang", nameZh: "洛阳", nameEn: "Luoyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
     lon: 112.4539, lat: 34.6197,
     airport: { iata: "LYA", nameZh: "洛阳北郊机场", nameEn: "Luoyang Beijiao Airport", lon: 112.388, lat: 34.741 },
     source: "洛阳市中心（西工区）34.6197,112.4539；LYA 机场：公开资料（Wikipedia）",
   },
   {
-    id: "datong", nameZh: "大同", nameEn: "Datong", country: "china", tier: "notable", zone: "cn-north",
+    id: "datong", nameZh: "大同", nameEn: "Datong", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "山西省", admin1En: "Shanxi",
     lon: 113.3000, lat: 40.0900,
     airport: { iata: "DAT", nameZh: "大同云冈机场", nameEn: "Datong Yungang Int'l", lon: 113.482, lat: 40.060 },
     source: "大同古城（九龙壁一带）40.0900,113.3000；DAT 机场：公开资料（Wikipedia）",
   },
   {
-    id: "huangshan", nameZh: "黄山", nameEn: "Huangshan", country: "china", tier: "notable", zone: "cn-east",
+    id: "huangshan", nameZh: "黄山", nameEn: "Huangshan", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "安徽省", admin1En: "Anhui",
     lon: 118.3153, lat: 29.6961,
     airport: { iata: "TXN", nameZh: "黄山屯溪国际机场", nameEn: "Huangshan Tunxi Int'l", lon: 118.253, lat: 29.730 },
     source: "黄山市屯溪区（老街一带）29.6961,118.3153；TXN 机场：公开资料（Wikipedia）；本条为黄山市/屯溪城区，与黄山风景区（地形注册表 jiangnan-hills 锚点，30.13N 118.17E）同名不同地",
   },
   {
-    id: "quanzhou", nameZh: "泉州", nameEn: "Quanzhou", country: "china", tier: "notable", zone: "cn-east",
+    id: "quanzhou", nameZh: "泉州", nameEn: "Quanzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "福建省", admin1En: "Fujian",
     lon: 118.6757, lat: 24.8744,
     airport: { iata: "JJN", nameZh: "泉州晋江国际机场", nameEn: "Quanzhou Jinjiang Int'l", lon: 118.589, lat: 24.799 },
     source: "泉州市中心（鲤城区）24.8744,118.6757；JJN 机场：公开资料（Wikipedia）",
   },
   {
-    id: "zhangye", nameZh: "张掖", nameEn: "Zhangye", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "zhangye", nameZh: "张掖", nameEn: "Zhangye", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
     lon: 100.4499, lat: 38.9248,
     airport: { iata: "YZY", nameZh: "张掖甘州机场", nameEn: "Zhangye Ganzhou Airport", lon: 100.675, lat: 38.802 },
     source: "张掖市中心（甘州区）38.9248,100.4499；YZY 机场：公开资料（Wikipedia）",
   },
   // ── 中国 · Tier 2 热门城市批2 ──
   {
-    id: "wenzhou", nameZh: "温州", nameEn: "Wenzhou", country: "china", tier: "notable", zone: "cn-east",
+    id: "wenzhou", nameZh: "温州", nameEn: "Wenzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
     lon: 120.6550, lat: 28.0197,
     airport: { iata: "WNZ", nameZh: "温州龙湾国际机场", nameEn: "Wenzhou Longwan Int'l", lon: 120.8519, lat: 27.9119 },
     source: "温州市鹿城区人民政府一带 28.0197,120.6550（WebSearch：28°01′11″N 120°39′18″E）；WNZ 机场：公开资料（Wikipedia，27°54′43″N 120°51′07″E）",
   },
   {
-    id: "yangzhou", nameZh: "扬州", nameEn: "Yangzhou", country: "china", tier: "notable", zone: "cn-east",
+    id: "yangzhou", nameZh: "扬州", nameEn: "Yangzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
     lon: 119.4143, lat: 32.3947,
     airport: { iata: "YTY", nameZh: "扬州泰州国际机场", nameEn: "Yangzhou Taizhou Int'l", lon: 119.7150, lat: 32.5617 },
     source: "扬州市广陵区（文昌阁一带）32.3947,119.4143；YTY 机场：公开资料（Wikipedia，32°33′42″N 119°42′54″E，位于扬州与泰州之间，距扬州市区约30km）",
   },
   {
-    id: "zhuhai", nameZh: "珠海", nameEn: "Zhuhai", country: "china", tier: "notable", zone: "cn-south",
+    id: "zhuhai", nameZh: "珠海", nameEn: "Zhuhai", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广东省", admin1En: "Guangdong",
     lon: 113.5832, lat: 22.2654,
     airport: { iata: "ZUH", nameZh: "珠海金湾机场", nameEn: "Zhuhai Jinwan", lon: 113.3761, lat: 22.0069 },
     source: "珠海市香洲区情侣路（渔女雕像一带）22.2654,113.5832（WebSearch：22°15′55″N 113°34′60″E）；ZUH 机场：公开资料（Wikipedia，22°00′25″N 113°22′34″E，位于金湾区，距市区约50km）",
   },
   {
-    id: "chengde", nameZh: "承德", nameEn: "Chengde", country: "china", tier: "notable", zone: "cn-north",
+    id: "chengde", nameZh: "承德", nameEn: "Chengde", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "河北省", admin1En: "Hebei",
     lon: 117.9375, lat: 40.9875,
     airport: { iata: "CDE", nameZh: "承德普宁机场", nameEn: "Chengde Puning Airport", lon: 118.0739, lat: 41.1225 },
     source: "承德市双桥区（避暑山庄一带）40.9875,117.9375（WebSearch：Chengde Mountain Resort 40°59′15″N 117°56′15″E）；CDE 机场：公开资料（Wikipedia，41°07′21″N 118°04′26″E）",
   },
   {
-    id: "wuyishan", nameZh: "武夷山", nameEn: "Wuyishan", country: "china", tier: "notable", zone: "cn-east",
+    id: "wuyishan", nameZh: "武夷山", nameEn: "Wuyishan", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "福建省", admin1En: "Fujian",
     lon: 118.0342, lat: 27.7566,
     airport: { iata: "WUS", nameZh: "武夷山机场", nameEn: "Wuyishan Airport", lon: 118.0003, lat: 27.7008 },
     source: "武夷山市城区（崇安街道一带）概略 27.7566,118.0342；WUS 机场：公开资料（Wikipedia，27°42′03″N 118°00′01″E）；本条为武夷山市城区，与武夷山风景区/地形注册表 wuyi 锚点（黄岗山，27.75N 117.65E）同名不同地",
   },
   {
-    id: "jingdezhen", nameZh: "景德镇", nameEn: "Jingdezhen", country: "china", tier: "notable", zone: "cn-east",
+    id: "jingdezhen", nameZh: "景德镇", nameEn: "Jingdezhen", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江西省", admin1En: "Jiangxi",
     lon: 117.1831, lat: 29.2738,
     airport: { iata: "JDZ", nameZh: "景德镇罗家机场", nameEn: "Jingdezhen Luojia Airport", lon: 117.1758, lat: 29.3386 },
     source: "景德镇市昌江区（市政府驻地）29.2738,117.1831（WebSearch）；JDZ 机场：公开资料（Wikipedia，29°20′19″N 117°10′33″E）",
   },
   {
-    id: "jinghong", nameZh: "景洪", nameEn: "Jinghong", country: "china", tier: "notable", zone: "cn-southwest",
+    id: "jinghong", nameZh: "景洪", nameEn: "Jinghong", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
     lon: 100.7970, lat: 22.0090,
     airport: { iata: "JHG", nameZh: "西双版纳嘎洒国际机场", nameEn: "Xishuangbanna Gasa Int'l", lon: 100.7596, lat: 21.9739 },
     source: "景洪市（西双版纳州府驻地）22.0090,100.7970（WebSearch：22°00′32″N 100°47′49″E）；JHG 机场：公开资料（Wikipedia，21°58′26″N 100°45′35″E，又称景洪机场）",
   },
   {
-    id: "wuxi", nameZh: "无锡", nameEn: "Wuxi", country: "china", tier: "notable", zone: "cn-east",
+    id: "wuxi", nameZh: "无锡", nameEn: "Wuxi", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
     lon: 120.2955, lat: 31.5798,
     airport: { iata: "WUX", nameZh: "苏南硕放国际机场", nameEn: "Sunan Shuofang Int'l (Wuxi–Suzhou)", lon: 120.429, lat: 31.494 },
     source: "无锡市梁溪区（崇安寺一带）31.5798,120.2955（WebSearch：31°34′47″N 120°17′44″E）；WUX 机场：公开资料（Wikipedia），机场实际位于无锡新吴区硕放街道，与本项目已收录的苏州条目共用同一机场记录（苏州本身无独立商用机场），坐标沿用苏州条目数值以保持一致",
   },
   // ── 中国 · 南疆绿洲聚落（原地形注册表 settlement 分类，2026-09-04 迁移至旅游模式）──
   {
-    id: "kashgar", nameZh: "喀什", nameEn: "Kashgar", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "kashgar", nameZh: "喀什", nameEn: "Kashgar", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
     lon: 75.99, lat: 39.47,
     airport: { iata: "KHG", nameZh: "喀什徕宁国际机场", nameEn: "Kashgar Laining Int'l", lon: 76.02, lat: 39.543 },
     source: "喀什市中心（艾提尕尔清真寺一带）39.47,75.99（沿用原地形注册表 kashgar 锚点坐标）；KHG 机场：Wikipedia（39°32′35″N 76°01′12″E），已有 urc-khg 国内航线（本项目 data/routes/urc-khg.json）",
   },
   {
-    id: "hotan", nameZh: "和田", nameEn: "Hotan", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "hotan", nameZh: "和田", nameEn: "Hotan", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
     lon: 79.93, lat: 37.11,
     airport: { iata: "HTN", nameZh: "和田昆冈机场", nameEn: "Hotan Kungang Airport", lon: 79.865, lat: 37.039 },
     source: "和田市中心 37.11,79.93（沿用原地形注册表 hotan 锚点坐标）；HTN 机场：Wikipedia（37°02′19″N 79°51′54″E，位于市区西南约11.5km），已有 urc-htn 国内航线（本项目 data/routes/urc-htn.json）",
   },
   {
-    id: "turpan", nameZh: "吐鲁番", nameEn: "Turpan", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "turpan", nameZh: "吐鲁番", nameEn: "Turpan", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
     lon: 89.18, lat: 42.95,
     airport: { iata: "TLQ", nameZh: "吐鲁番交河机场", nameEn: "Turpan Jiaohe Airport", lon: 89.1006, lat: 43.0306 },
     source: "吐鲁番市高昌区中心 42.95,89.18（沿用原地形注册表 turpan-city 锚点坐标）；TLQ 机场：Wikipedia（43°01′50″N 89°06′02″E，位于市区西北约10km，2010年通航，2019年与乌鲁木齐天山机场合并运营管理，2025年客运量约88.7万人次，是在运营的商用机场，与乌鲁木齐、兰州等地有航班），WebSearch 未找到吐鲁番—乌鲁木齐/其它城市的固定商业直飞航线可稳定核实班次，本轮暂不收录航线",
   },
   {
-    id: "bachu", nameZh: "巴楚", nameEn: "Bachu", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "bachu", nameZh: "巴楚", nameEn: "Bachu", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
     lon: 78.55, lat: 39.79,
     source: "巴楚县城中心 39.79,78.55（沿用原地形注册表 bachu 锚点坐标）；WebSearch 核实巴楚本身无民用机场，最近机场为图木舒克唐王城机场（TWC，属图木舒克市/新疆生产建设兵团管辖，直线距离约50km），巴楚有南疆铁路客运车站（喀什—巴楚约5小时）及国道/高速公路（G3012/315国道，距喀什约2小时车程），未收录航线（无可核实的商业航班）",
   },
   {
-    id: "maigaiti", nameZh: "麦盖提", nameEn: "Makit", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "maigaiti", nameZh: "麦盖提", nameEn: "Makit", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
     lon: 77.65, lat: 38.9,
     source: "麦盖提县城中心 38.9,77.65（沿用原地形注册表 maigaiti 锚点坐标）；WebSearch 核实麦盖提本身无民用机场、无铁路直达（巴楚—麦盖提—莎车铁路截至2026年仍在规划中，尚未通车），经麦喀高速（S16，全长约178km，约2–2.5小时车程）与喀什公路相连，未收录航线（无可核实的商业航班）",
   },
 
   // ── 中国 · Tier 2 批3（9 省级行政区"仅有首府"缺口，2026-09-04）──
   {
-    id: "hulunbuir", nameZh: "呼伦贝尔", nameEn: "Hulunbuir", country: "china", tier: "notable", zone: "cn-north",
+    id: "hulunbuir", nameZh: "呼伦贝尔", nameEn: "Hulunbuir", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
     lon: 119.736, lat: 49.212,
     airport: { iata: "HLD", nameZh: "呼伦贝尔海拉尔国际机场", nameEn: "Hulunbuir Hailar Int'l", lon: 119.825, lat: 49.205 },
     source: "海拉尔区中心 49.212,119.736（WebSearch）；HLD 机场：Wikipedia（49°12′18″N 119°49′36″E），2025年11月更名为国际机场，2025/26冬春航季34条航线通航30城；已核实 CA9747（国航，北京首都—海拉尔，直飞不经停，约2h5min）",
   },
   {
-    id: "jilin-city", nameZh: "吉林市", nameEn: "Jilin City", country: "china", tier: "notable", zone: "cn-northeast",
+    id: "jilin-city", nameZh: "吉林市", nameEn: "Jilin City", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "吉林省", admin1En: "Jilin",
     lon: 126.55, lat: 43.84,
     source: "吉林市区（船营/昌邑一带）中心 43.84,126.55（WebSearch）；WebSearch 核实吉林市本身无在运营的民用机场——原吉林二台子机场已于2005年停止民航开放（因长春龙嘉机场启用而停运），2024年11月虽签署复航改扩建合作协议，但截至2026年仍在办理审批、尚未恢复商业运营；长春龙嘉国际机场（CGQ，本项目已收录长春条目）距吉林市区约35km，两市共用；吉林市另有长珲高铁站直通长春（约25分钟），未收录航线（无独立可核实的商业航班）",
   },
   {
-    id: "mohe", nameZh: "漠河", nameEn: "Mohe", country: "china", tier: "notable", zone: "cn-northeast",
+    id: "mohe", nameZh: "漠河", nameEn: "Mohe", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
     lon: 122.52, lat: 52.97,
     airport: { iata: "OHE", nameZh: "漠河古莲机场", nameEn: "Mohe Gulian Airport", lon: 122.421, lat: 52.921 },
     source: "漠河市西林吉镇（市政府驻地）52.97,122.52（WebSearch）；OHE 机场：Wikipedia（52°55′16″N 122°25′14″E），中国纬度最高的民用机场；WebSearch 核实漠河—哈尔滨为直飞（南航/春秋等），漠河—北京现有航班（南航 CZ6268/CZ6267）实际经停哈尔滨、非不经停直飞，故本轮未收录漠河至四大枢纽的国内航线",
   },
   {
-    id: "yichang", nameZh: "宜昌", nameEn: "Yichang", country: "china", tier: "notable", zone: "cn-central",
+    id: "yichang", nameZh: "宜昌", nameEn: "Yichang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖北省", admin1En: "Hubei",
     lon: 111.28, lat: 30.70,
     airport: { iata: "YIH", nameZh: "宜昌三峡国际机场", nameEn: "Yichang Sanxia Int'l", lon: 111.480, lat: 30.556 },
     source: "宜昌市西陵区中心 30.70,111.28（WebSearch）；YIH 机场：Wikipedia（30°33′23″N 111°28′48″E），距市中心约26km、距三峡大坝约55km，开通国内航线20余条；已核实北京首都—宜昌航线每日多班（东航/国航），CA1523 约2h25min",
   },
   {
-    id: "leshan", nameZh: "乐山", nameEn: "Leshan", country: "china", tier: "notable", zone: "cn-southwest",
+    id: "leshan", nameZh: "乐山", nameEn: "Leshan", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
     lon: 103.77, lat: 29.57,
     source: "乐山市市中区中心 29.57,103.77（WebSearch）；WebSearch 核实乐山（峨眉山沙坪）机场截至2026年9月仍处于校飞/试运营准备阶段（2026年1月完成首次校验飞行，目标2026年上半年通航），尚未查到已正式投入商业运营的确切证据，故本轮未收录乐山机场信息；乐山传统上经成都双流/天府机场（约120–150km，高速直达约1.5–2小时）或成乐高铁/成贵高铁往返，游客多以成都为出发地当天往返",
   },
   {
-    id: "kaili", nameZh: "凯里", nameEn: "Kaili", country: "china", tier: "notable", zone: "cn-southwest",
+    id: "kaili", nameZh: "凯里", nameEn: "Kaili", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
     lon: 107.97, lat: 26.59,
     airport: { iata: "KJH", nameZh: "凯里黄平机场", nameEn: "Kaili Huangping Airport", lon: 107.989, lat: 26.973 },
     source: "凯里市中心 26.59,107.97（WebSearch）；KJH 机场：Wikipedia（26°58′27″N 107°58′50″E），距凯里市区约54km；WebSearch 核实黄平机场现有航线多为经停中转格局（如2026年5月新开的西安—凯里—海口），未能核实到当前仍在运营、飞往北京/上海/广州/成都四大枢纽且不经停的直飞航班，故本轮未收录航线；凯里另有沪昆高铁站，距贵阳约30分钟车程，是更常见的进出方式",
   },
   {
-    id: "yanan", nameZh: "延安", nameEn: "Yan'an", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "yanan", nameZh: "延安", nameEn: "Yan'an", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "陕西省", admin1En: "Shaanxi",
     lon: 109.49, lat: 36.60,
     airport: { iata: "ENY", nameZh: "延安南泥湾机场", nameEn: "Yan'an Nanniwan Airport", lon: 109.4653, lat: 36.4764 },
     source: "延安市宝塔区中心（宝塔山一带）36.60,109.49（WebSearch）；ENY 机场：Wikipedia（36°28′35″N 109°27′55″E）；已核实 CA1279（国航 C919，北京首都—延安，直飞，每日至少1班）",
   },
   {
-    id: "golmud", nameZh: "格尔木", nameEn: "Golmud", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "golmud", nameZh: "格尔木", nameEn: "Golmud", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "青海省", admin1En: "Qinghai",
     lon: 94.89, lat: 36.42,
     airport: { iata: "GOQ", nameZh: "格尔木机场", nameEn: "Golmud Airport", lon: 94.7861, lat: 36.4006 },
     source: "格尔木市中心 36.42,94.89（WebSearch：36°24′51″N 94°53′42″E）；GOQ 机场：Wikipedia（36°24′02″N 94°47′10″E），海拔2842m；已核实 TV9965/TV9966（西藏航空 A319，成都双流—格尔木，直飞不经停，约2h30–2h40，每周二/四/六）",
   },
   {
-    id: "zhongwei", nameZh: "中卫", nameEn: "Zhongwei", country: "china", tier: "notable", zone: "cn-northwest",
+    id: "zhongwei", nameZh: "中卫", nameEn: "Zhongwei", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "宁夏回族自治区", admin1En: "Ningxia",
     lon: 105.197, lat: 37.521,
     airport: { iata: "ZHY", nameZh: "中卫沙坡头机场", nameEn: "Zhongwei Shapotou Airport", lon: 105.1544, lat: 37.5728 },
     source: "中卫市中心 37.521,105.197（WebSearch）；ZHY 机场：Wikipedia（37°34′22″N 105°09′16″E）；WebSearch 核实北京是中卫机场通航以来长期存在的航点之一，但现有资料显示其航班多经西安/石家庄等枢纽以\"经西飞\"\"经石飞\"中转模式运营，未能核实到当前仍在运营、不经停的北京直飞航班，故本轮未收录航线；中卫另有包兰铁路/银西高铁，距银川约1小时车程",

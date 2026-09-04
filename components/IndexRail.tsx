@@ -5,10 +5,16 @@ import { useMemo, useState } from "react";
 export interface RailItem {
   id: string;
   name: string;
-  /** 所属分类（学习模式=地貌类型，旅游模式=地理片区）；同一 key 的条目在第三层归为一组 */
+  /** 所属分类（学习模式=地貌类型，旅游模式=官方一级行政区）；同一 key 的条目归为一组 */
   category?: string;
   /** 分类显示名——只需在该分类第一个条目上给出，本组件自己去重取值 */
   categoryLabel?: string;
+  /**
+   * 分类旁的彩色圆点（旅游模式：该省/州所属大区的提示色，不占文字空间）。
+   * 只需在该分类第一个条目上给出，跟 categoryLabel 一样去重取值。不给则不画圆点
+   * （学习模式的地貌分类不需要这个）。
+   */
+  categoryDotColor?: string;
 }
 export interface RailGroup {
   type: string;
@@ -27,11 +33,19 @@ interface IndexRailProps {
   title: string;
   searchPlaceholder: string;
   noMatchLabel: string;
+  /**
+   * true＝分类不再是要点进去的独立一屏，直接在条目列表里以小标题分隔展示
+   * （旅游模式：城市按省/州分组，省份多、每省城市数少，点进点出反而麻烦）。
+   * false/缺省＝保留原来的「点分类进入」中转屏（学习模式：地貌类型数量少但
+   * 每类条目多，中转屏更合适）。
+   */
+  inlineCategories?: boolean;
 }
 
 interface CategoryBucket {
   key: string;
   label: string;
+  dotColor?: string;
   items: RailItem[];
 }
 
@@ -51,6 +65,7 @@ export default function IndexRail({
   title,
   searchPlaceholder,
   noMatchLabel,
+  inlineCategories = false,
 }: IndexRailProps) {
   const [open, setOpen] = useState(false);
   const [pinned, setPinned] = useState(false);
@@ -106,10 +121,11 @@ export default function IndexRail({
       }
       let bucket = map.get(it.category);
       if (!bucket) {
-        bucket = { key: it.category, label: it.categoryLabel ?? it.category, items: [] };
+        bucket = { key: it.category, label: it.categoryLabel ?? it.category, dotColor: it.categoryDotColor, items: [] };
         map.set(it.category, bucket);
-      } else if (it.categoryLabel) {
-        bucket.label = it.categoryLabel;
+      } else {
+        if (it.categoryLabel) bucket.label = it.categoryLabel;
+        if (it.categoryDotColor) bucket.dotColor = it.categoryDotColor;
       }
       bucket.items.push(it);
     }
@@ -117,9 +133,11 @@ export default function IndexRail({
   }, [activeGroup]);
 
   // 只有一个分类时，跳过分类中转页，直接显示条目——避免"只有一类还要多点一下"
-  const skipCategoryLevel = buckets.length <= 1;
+  // （inlineCategories 模式有自己的渲染分支，不走这条中转页逻辑）
+  const skipCategoryLevel = !inlineCategories && buckets.length <= 1;
   const activeBucket = skipCategoryLevel ? (buckets[0] ?? null) : (buckets.find((b) => b.key === subcat) ?? null);
-  const showingItems = skipCategoryLevel ? activeGroup !== null : activeBucket !== null;
+  const showingItems = !inlineCategories && (skipCategoryLevel ? activeGroup !== null : activeBucket !== null);
+  const showInlineList = inlineCategories && activeGroup !== null;
 
   const itemButtonClass = (id: string) =>
     [
@@ -214,6 +232,44 @@ export default function IndexRail({
             ) : (
               <p className="py-3 text-center text-[11px] text-[color:var(--ink-faint)]">{noMatchLabel}</p>
             )
+          ) : showInlineList && activeGroup ? (
+            <>
+              <button
+                type="button"
+                onClick={backToCountries}
+                className="mb-3 flex items-center gap-1.5 text-[11px] text-[color:var(--ink-dim)] transition-colors hover:text-[color:var(--ink-body)]"
+              >
+                <span aria-hidden>←</span>
+                <span>{title}</span>
+              </button>
+              <p className="editorial-kicker mb-3">{activeGroup.label}</p>
+              <div className="flex flex-col">
+                {ungrouped.map((it) => (
+                  <button key={it.id} type="button" onClick={() => pick(it.id)} className={itemButtonClass(it.id)}>
+                    {it.name}
+                  </button>
+                ))}
+                {buckets.map((b) => (
+                  <div key={b.key} className="flex flex-col">
+                    <p className="mt-3 mb-1 flex items-center gap-1.5 text-[11px] text-[color:var(--ink-faint)] first:mt-0">
+                      {b.dotColor && (
+                        <span
+                          className="inline-block h-[6px] w-[6px] shrink-0 rounded-full"
+                          style={{ backgroundColor: b.dotColor }}
+                          aria-hidden
+                        />
+                      )}
+                      <span>{b.label}</span>
+                    </p>
+                    {b.items.map((it) => (
+                      <button key={it.id} type="button" onClick={() => pick(it.id)} className={itemButtonClass(it.id)}>
+                        {it.name}
+                      </button>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </>
           ) : showingItems && activeGroup ? (
             <>
               <button

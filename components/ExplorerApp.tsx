@@ -1349,6 +1349,7 @@ export default function ExplorerApp() {
           onSelect={mode === "travel" ? handleSelectCity : handleSelectById}
           searchPlaceholder={t("rail.search", language)}
           noMatchLabel={t("rail.no_match", language)}
+          inlineCategories={mode === "travel"}
         />
       )}
 
