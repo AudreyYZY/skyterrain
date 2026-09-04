@@ -1,0 +1,53 @@
+{
+  "id": "pek-icn",
+  "name": "北京 — 首尔",
+  "nameEn": "Beijing — Seoul",
+  "description": "华北平原 · 渤海 · 黄海 · 朝鲜半岛西海岸",
+  "descriptionEn": "North China Plain · Bohai Sea · Yellow Sea · West coast of the Korean Peninsula",
+  "depCountry": "china",
+  "arrCountry": "south-korea",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA123",
+    "aircraft": "Airbus A330-300",
+    "depIata": "PEK",
+    "arrIata": "ICN",
+    "durationMin": 115
+  },
+  "cruiseHeight": 10100,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "渤海",
+      "nameEn": "Bohai Sea",
+      "lon": 121.0,
+      "lat": 38.8
+    },
+    {
+      "kind": "feature",
+      "name": "黄海",
+      "nameEn": "Yellow Sea",
+      "lon": 124.0,
+      "lat": 37.7
+    },
+    {
+      "kind": "city",
+      "id": "icn",
+      "name": "首尔仁川",
+      "nameEn": "Seoul Incheon",
+      "lat": 37.4602,
+      "lon": 126.4407,
+      "airport": true
+    }
+  ]
+}

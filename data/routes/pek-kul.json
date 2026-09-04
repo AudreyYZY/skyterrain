@@ -1,0 +1,47 @@
+{
+  "id": "pek-kul",
+  "name": "北京 — 吉隆坡",
+  "nameEn": "Beijing — Kuala Lumpur",
+  "description": "华北平原 · 云贵高原 · 中南半岛 · 蒂蒂旺沙山脉",
+  "descriptionEn": "North China Plain · Yunnan–Guizhou Plateau · Indochinese Peninsula · Titiwangsa Mountains",
+  "depCountry": "china",
+  "arrCountry": "malaysia",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA871",
+    "aircraft": "Boeing 737 MAX 8",
+    "depIata": "PEK",
+    "arrIata": "KUL",
+    "durationMin": 352
+  },
+  "cruiseHeight": 11300,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yunnan-guizhou"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "titiwangsa-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "kul",
+      "name": "吉隆坡国际机场",
+      "nameEn": "Kuala Lumpur International",
+      "lat": 2.7456,
+      "lon": 101.7099,
+      "airport": true
+    }
+  ]
+}

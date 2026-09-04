@@ -1,0 +1,51 @@
+{
+  "id": "pvg-han",
+  "name": "上海 — 河内",
+  "nameEn": "Shanghai — Hanoi",
+  "description": "江南丘陵 · 南岭 · 红河三角洲",
+  "descriptionEn": "Jiangnan Hills · Nanling range · Red River Delta",
+  "depCountry": "china",
+  "arrCountry": "vietnam",
+  "flight": {
+    "airline": "越南航空",
+    "airlineEn": "Vietnam Airlines",
+    "flightNo": "VN533",
+    "aircraft": "Airbus A321",
+    "depIata": "PVG",
+    "arrIata": "HAN",
+    "durationMin": 195
+  },
+  "cruiseHeight": 10700,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jiangnan-hills"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "red-river-delta"
+    },
+    {
+      "kind": "city",
+      "id": "han",
+      "name": "河内内排",
+      "nameEn": "Hanoi Noi Bai",
+      "lat": 21.2212,
+      "lon": 105.8073,
+      "airport": true
+    }
+  ]
+}
