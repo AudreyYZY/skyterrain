@@ -5276,6 +5276,75 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
+  "pvg-mad": {
+    study: {
+    "zh-CN":
+      "上海飞马德里，是从长江三角洲一路向西北，先掠过华北平原、蒙古高原，再横跨整个亚欧大陆，最终抵达伊比利亚半岛腹地。起飞后飞机先向西北飞越中国北方，进入蒙古高原南缘——戈壁荒漠的砾漠地貌一直延伸到天际线。" +
+      "再往西北，戈壁过渡为森林与草原交错的西西伯利亚平原：地势极为平坦，河流蜿蜒、沼泽湖泊星罗棋布，是世界上面积最大的平原之一。飞过乌拉尔山脉——地理学上常以它划分亚洲与欧洲的一道南北向古老褶皱山系——之后，飞机一路向西南，横穿东欧与中欧的平原和丘陵。" +
+      "临近伊比利亚半岛，飞机掠过比利牛斯山脉西班牙一侧的奥德萨峡谷——佩尔迪多山北坡切出的一道石灰岩喀斯特深谷，谷壁近乎垂直，是“比利牛斯—佩尔迪多山”世界遗产的一部分；随后进入梅塞塔中央高原，这片占伊比利亚半岛面积约五分之二的古老台地平均海拔六七百米，马德里就坐落在高原腹地。飞机最终降落在马德里以东的巴拉哈斯机场。一趟航班，从长江口一直飞到了伊比利亚高原的中心。",
+    "en-US":
+      "Shanghai to Madrid flies north-west out of the Yangtze Delta, first crossing northern China and the Mongolian Plateau before heading west across the whole Eurasian landmass to the interior of the Iberian Peninsula. Soon after take-off the flight crosses northern China and reaches the southern edge of the Mongolian Plateau, where the gravel desert of the Gobi stretches to the horizon." +
+      "Farther north-west the Gobi gives way to the West Siberian Plain, a mix of forest and steppe: remarkably flat, laced with winding rivers and countless marshes and lakes, one of the largest plains on Earth. Past the Ural Mountains — an old north–south folded range that geographers commonly use to mark the boundary between Asia and Europe — the route turns south-west across the plains and hills of eastern and central Europe." +
+      "Approaching the Iberian Peninsula the flight passes over Ordesa Canyon on the Spanish side of the Pyrenees — a near-vertical limestone karst gorge cut into the north face of Monte Perdido, part of the Pyrenees–Mont Perdu World Heritage Site — then crosses the Meseta Central, the ancient plateau that covers about two-fifths of the peninsula at an average elevation of 600–800 metres, with Madrid sitting in its heart. The plane lands at Barajas Airport east of Madrid. One flight has crossed from the mouth of the Yangtze to the centre of the Iberian plateau.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到马德里约13小时55分钟，由中国东方航空空客A350客机执飞，是中国与西班牙之间往返最密集的直飞航线之一。两地时差6-7小时（西班牙夏令时期间6小时）。马德里夏季炎热干燥、冬季偶有严寒，春秋气候最宜人。" +
+      "巴拉哈斯机场距市中心约12公里，地铁8号线粉线直达市区，也有24小时运营的机场快线巴士。普拉多博物馆、索菲亚王后艺术中心、提森-博内米萨博物馆并称“艺术金三角”，部分时段免费开放；太阳门广场、马约尔广场是老城步行核心区。" +
+      "西班牙属申根区，签证按国籍不同、以西班牙驻当地使领馆最新公布为准，行前确认并预留办理时间。马德里午后气温高、餐厅普遍午休较晚开门，出行安排可相应调整。",
+    "en-US":
+      "Shanghai to Madrid takes about 13 hours 55 minutes on a China Eastern Airbus A350, one of the busiest direct routes between China and Spain. The time difference is 6–7 hours (6 hours during Spanish summer time). Madrid has hot, dry summers and occasional cold snaps in winter, with spring and autumn the most pleasant seasons." +
+      "Barajas Airport is about 12 km from the centre; Metro Line 8 (pink) runs directly into the city, and a 24-hour airport express bus also operates. The Prado, the Reina Sofía and the Thyssen-Bornemisza together form Madrid's \"Golden Triangle of Art\" and offer free entry during certain hours; Puerta del Sol and Plaza Mayor anchor the walkable old town." +
+      "Spain is in the Schengen area; visa rules vary by nationality — check the latest from the Spanish consulate for your location and allow time to arrange one. Afternoons in Madrid run hot and restaurants often open late for dinner, so plan your schedule accordingly.",
+    },
+  },
+
+  "pvg-ath": {
+    study: {
+    "zh-CN":
+      "上海飞雅典，是从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地和小亚细亚半岛，最终抵达爱琴海西岸的希腊首都。起飞后飞机向西横穿中国内陆，进入新疆的塔里木盆地——中国面积最大的内陆盆地，盆地中心是世界第二大流动沙漠塔克拉玛干沙漠。" +
+      "继续向西，飞机翻越帕米尔高原——号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点。再往西，飞机跨过中亚腹地，抵达里海上空——世界上面积最大的内陆水体。" +
+      "飞越里海后，飞机进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水量仅两三百毫米，是土耳其的农牧核心区。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。一趟航班，串起了塔克拉玛干的流沙、帕米尔的雪峰和爱琴海的碧波。",
+    "en-US":
+      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the Aegean's western shore. Soon after take-off the flight heads west across inland China and reaches the Tarim Basin in Xinjiang — China's largest inland basin, at whose centre lies the Taklamakan, the world's second-largest shifting-sand desert." +
+      "Farther west the flight crosses the Pamir Plateau, a mountain knot often called the \"Roof of the World\" where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge. Beyond the Pamirs the route crosses the heart of Central Asia and reaches the Caspian Sea — the largest inland body of water on Earth." +
+      "Past the Caspian the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600–1,200 metres above sea level with only 200–300 mm of annual rainfall — the agricultural and pastoral heartland of Turkey. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens. One flight links the shifting sands of the Taklamakan, the snow peaks of the Pamirs and the blue waters of the Aegean.",
+    },
+    travel: {
+    "zh-CN":
+      "上海到雅典约11小时25分钟，由吉祥航空波音787客机执飞，是中希两国间的洲际直飞航线，目前每周多个班次。两地时差5-6小时（希腊夏令时期间5小时）。雅典夏季炎热干燥、冬季温和多雨，春秋最适合游览古迹。" +
+      "埃莱夫塞里奥斯·韦尼泽洛斯机场距市中心约27公里，地铁3号线蓝线直达市区约40分钟，也有机场大巴和郊区铁路。卫城、普拉卡老城、国家考古博物馆是市内代表性景点，多可步行或搭地铁到达；橄榄油、羊乳酪、烤肉串（souvlaki）是当地代表美食。" +
+      "希腊属申根区，签证按国籍不同、以希腊驻当地使领馆最新公布为准，行前确认并预留办理时间。夏季正午气温常超35℃，游览卫城等露天古迹建议避开正午时段。",
+    "en-US":
+      "Shanghai to Athens takes about 11 hours 25 minutes on a Juneyao Airlines Boeing 787, an intercontinental nonstop route between China and Greece currently operating several times a week. The time difference is 5–6 hours (5 hours during Greek summer time). Athens has hot, dry summers and mild, rainy winters, with spring and autumn best for exploring ancient sites." +
+      "Eleftherios Venizelos Airport is about 27 km from the centre; Metro Line 3 (blue) runs directly into the city in about 40 minutes, and airport buses and suburban rail also operate. The Acropolis, the Plaka old town and the National Archaeological Museum are the city's signature sights, mostly reachable on foot or by metro; olive oil, feta cheese and souvlaki are local staples." +
+      "Greece is in the Schengen area; visa rules vary by nationality — check the latest from the Greek consulate for your location and allow time to arrange one. Midday summer temperatures often top 35°C, so it's worth avoiding the early afternoon when visiting open-air sites like the Acropolis.",
+    },
+  },
+
+  "pkx-lis": {
+    study: {
+    "zh-CN":
+      "北京飞里斯本，航线走向与飞伦敦、巴黎、马德里接近，同样向西北横跨整个亚欧大陆，但终点更靠西——里斯本地处伊比利亚半岛最西端，濒临大西洋。起飞后先掠过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到天际线。" +
+      "往西进入西西伯利亚平原——地势极其平坦、河网与沼泽密布，是地球上最大的平原之一。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原，随后一路向西南横穿中欧和法国南部的丘陵与平原。" +
+      "临近伊比利亚半岛，飞机掠过梅塞塔中央高原东北角——这片占半岛面积约五分之二的古老台地，由古生代花岗岩与沉积岩构成；再往西，地势逐渐降低，最终抵达大西洋沿岸——葡萄牙国土几乎全境濒临大西洋，海岸线曲折、多河口三角湾。飞机降落在特茹河口北岸的里斯本机场。一趟航班，从中国首都飞到了欧亚大陆最西端的城市之一。",
+    "en-US":
+      "Beijing to Lisbon follows a track close to the London, Paris and Madrid flights, also heading north-west across the whole Eurasian landmass, but ending farther west still — Lisbon sits at the westernmost tip of the Iberian Peninsula, on the Atlantic. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
+      "Heading west it crosses the West Siberian Plain — remarkably flat, dense with rivers and marshes, one of the largest plains on Earth. Past the Ural Mountains, the conventional divide between Asia and Europe, the route enters the East European Plain and then turns south-west across the hills and plains of central Europe and southern France." +
+      "Approaching the Iberian Peninsula the flight crosses the north-eastern corner of the Meseta Central, the ancient plateau covering about two-fifths of the peninsula, built of Palaeozoic granite and sedimentary rock; farther west the land gradually descends to the Atlantic coast — Portugal's territory lies almost entirely along the Atlantic, with a deeply indented coastline cut by river-mouth estuaries. The plane lands at Lisbon Airport on the north bank of the Tagus estuary. One flight has carried China's capital to one of the westernmost cities on the Eurasian landmass.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到里斯本约13小时20分钟，由首都航空空客A330客机执飞。这条航线目前为季节性航班（每年约6月末至9月末、每周一班），出行前务必核实当季是否仍在执飞。两地时差7-8小时（葡萄牙夏令时期间7小时）。里斯本夏季干燥炎热、冬季温和多雨，春秋最宜出行。" +
+      "里斯本机场距市中心约7公里，地铁红线直达市区约20分钟，也有机场大巴。贝伦塔、热罗尼莫斯修道院、阿尔法玛老城区的28路老式电车是市内代表性体验；葡式蛋挞（pastel de nata）、马介休（bacalhau，鳕鱼干）是当地代表美食。" +
+      "葡萄牙属申根区，签证按国籍不同、以葡萄牙驻当地使领馆最新公布为准，行前确认并预留办理时间。阿尔法玛等老城区坡道多、石板路不平，建议穿舒适防滑的鞋。",
+    "en-US":
+      "Beijing to Lisbon takes about 13 hours 20 minutes on a Beijing Capital Airlines Airbus A330. This route currently runs seasonally — roughly late June to late September each year, once a week — so it's worth confirming it's still operating before you book. The time difference is 7–8 hours (7 hours during Portuguese summer time). Lisbon has dry, hot summers and mild, rainy winters, with spring and autumn the best seasons to visit." +
+      "Lisbon Airport is about 7 km from the centre; the red metro line runs directly into the city in about 20 minutes, and airport buses also operate. The Belém Tower, the Jerónimos Monastery and a ride on the vintage Tram 28 through the Alfama district are signature experiences; pastéis de nata and bacalhau (dried salt cod) are local specialties." +
+      "Portugal is in the Schengen area; visa rules vary by nationality — check the latest from the Portuguese consulate for your location and allow time to arrange one. The Alfama and other old quarters have steep, uneven cobblestone streets, so comfortable, non-slip shoes are worth packing.",
+    },
+  },
+
   "pek-cgk": {
     study: {
     "zh-CN":

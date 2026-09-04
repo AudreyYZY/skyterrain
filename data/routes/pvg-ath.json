@@ -1,0 +1,65 @@
+{
+  "id": "pvg-ath",
+  "name": "上海 — 雅典",
+  "nameEn": "Shanghai — Athens",
+  "description": "塔里木盆地 · 帕米尔高原 · 里海 · 中安纳托利亚高原 · 爱琴海",
+  "descriptionEn": "Tarim Basin · Pamir Plateau · Caspian Sea · Central Anatolian Plateau · Aegean Sea",
+  "depCountry": "china",
+  "arrCountry": "greece",
+  "flight": {
+    "airline": "吉祥航空",
+    "airlineEn": "Juneyao Airlines",
+    "flightNo": "HO1657",
+    "aircraft": "Boeing 787-9",
+    "depIata": "PVG",
+    "arrIata": "ATH",
+    "durationMin": 685
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tarim-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pamir"
+    },
+    {
+      "kind": "feature",
+      "name": "里海",
+      "nameEn": "Caspian Sea",
+      "lon": 50,
+      "lat": 40
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-anatolian-plateau"
+    },
+    {
+      "kind": "feature",
+      "name": "爱琴海",
+      "nameEn": "Aegean Sea",
+      "lon": 25.5,
+      "lat": 38.5
+    },
+    {
+      "kind": "city",
+      "id": "ath",
+      "name": "雅典埃莱夫塞里奥斯·韦尼泽洛斯国际机场",
+      "nameEn": "Athens Eleftherios Venizelos International Airport",
+      "lat": 37.9364,
+      "lon": 23.9445,
+      "airport": true
+    }
+  ]
+}

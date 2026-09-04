@@ -1,0 +1,75 @@
+{
+  "id": "pkx-lis",
+  "name": "北京 — 里斯本",
+  "nameEn": "Beijing — Lisbon",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 梅塞塔高原 · 大西洋海岸",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · Meseta Central · Atlantic Coast",
+  "depCountry": "china",
+  "arrCountry": "portugal",
+  "flight": {
+    "airline": "首都航空",
+    "airlineEn": "Beijing Capital Airlines",
+    "flightNo": "JD627",
+    "aircraft": "Airbus A330-300",
+    "depIata": "PKX",
+    "arrIata": "LIS",
+    "durationMin": 800
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pkx",
+      "name": "北京大兴",
+      "nameEn": "Beijing Daxing",
+      "lat": 39.5098,
+      "lon": 116.4104,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉",
+      "nameEn": "Ural Mountains",
+      "lon": 60,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 20,
+      "lat": 55
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "meseta-central"
+    },
+    {
+      "kind": "feature",
+      "name": "大西洋海岸（葡萄牙）",
+      "nameEn": "Atlantic Coast (Portugal)",
+      "lon": -9.0,
+      "lat": 39.2
+    },
+    {
+      "kind": "city",
+      "id": "lis",
+      "name": "里斯本机场",
+      "nameEn": "Lisbon Airport",
+      "lat": 38.7813,
+      "lon": -9.1359,
+      "airport": true
+    }
+  ]
+}
