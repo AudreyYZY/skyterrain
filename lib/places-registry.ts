@@ -527,7 +527,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "三亚市中心 18.2528,109.5119；SYX 机场：公开资料",
   },
   {
-    id: "lhasa", nameZh: "拉萨", nameEn: "Lhasa", country: "china", tier: "notable", zone: "cn-southwest",
+    id: "lhasa", nameZh: "拉萨", nameEn: "Lhasa", country: "china", tier: "major", zone: "cn-southwest",
     lon: 91.1409, lat: 29.6456,
     airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.912, lat: 29.298 },
     source: "拉萨市中心 29.6456,91.1409；LXA 机场：公开资料",
@@ -660,7 +660,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "香港中环一带 22.3025,114.1772；HKG 机场：公开资料",
   },
   {
-    id: "macao", nameZh: "澳门", nameEn: "Macao", country: "china", tier: "notable", zone: "cn-hmt",
+    id: "macao", nameZh: "澳门", nameEn: "Macao", country: "china", tier: "major", zone: "cn-hmt",
     lon: 113.5439, lat: 22.1987,
     airport: { iata: "MFM", nameZh: "澳门国际机场", nameEn: "Macao Int'l", lon: 113.592, lat: 22.156 },
     source: "澳门半岛 22.1987,113.5439；MFM 机场：公开资料",
