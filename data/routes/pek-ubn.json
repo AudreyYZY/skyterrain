@@ -1,0 +1,51 @@
+{
+  "id": "pek-ubn",
+  "name": "北京 — 乌兰巴托",
+  "nameEn": "Beijing — Ulaanbaatar",
+  "description": "华北平原 · 内蒙古高原 · 戈壁 · 图拉河河谷",
+  "descriptionEn": "North China Plain · Inner Mongolian Plateau · the Gobi · Tuul River valley",
+  "depCountry": "china",
+  "arrCountry": "mongolia",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA901",
+    "aircraft": "COMAC C919",
+    "depIata": "PEK",
+    "arrIata": "UBN",
+    "durationMin": 135
+  },
+  "cruiseHeight": 10400,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "inner-mongolia"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tuul-river"
+    },
+    {
+      "kind": "city",
+      "id": "ubn",
+      "name": "乌兰巴托成吉思汗",
+      "nameEn": "Ulaanbaatar Chinggis Khaan",
+      "lat": 47.6467,
+      "lon": 106.8161,
+      "airport": true
+    }
+  ]
+}

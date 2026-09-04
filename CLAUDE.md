@@ -179,6 +179,9 @@ features/
   某模式解说为空时该模式下航线不播。当前 127 条国内航线 study + travel 解说均已写。
   **航班号/机型是写入时的真实示例，不是实时时刻表**——没有随航司改期自动更新的机制，
   引用具体航班号前建议自行核对。
+  **中国国际航线（Phase 3，进行中）**：中日之外，2026-09-04 批A 新增 6 条中国—他国真实
+  直飞航线（韩国/蒙古/越南/泰国/马来西亚/新加坡各 1 条，均到达该国已收录的 Tier 1 首都/
+  首府），完成标准与分批计划见 `docs/expansion-playbook.md` §6.3。
 - **新增国家两个模式都要做**：study = 地形注册表 + 6 板块讲解；travel = `places-registry`
   加城市 + `COUNTRY_TO_CONTINENT` 补映射 + `travel-content.{zh,en}.ts` 写 6 段 TravelGuide +
   `COUNTRY_OVERVIEWS` 加概览 + `travel-pois.ts` 补该城市攻略提到的地标坐标。
