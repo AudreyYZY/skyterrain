@@ -1,0 +1,64 @@
+{
+  "id": "pek-cph",
+  "name": "北京 — 哥本哈根",
+  "nameEn": "Beijing — Copenhagen",
+  "description": "蒙古戈壁 · 西西伯利亚平原 · 乌拉尔山脉 · 东欧平原",
+  "descriptionEn": "Mongolian Gobi · West Siberian Plain · Ural Mountains · East European Plain",
+  "depCountry": "china",
+  "arrCountry": "denmark",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA877",
+    "aircraft": "Airbus A350-900",
+    "depIata": "PEK",
+    "arrIata": "CPH",
+    "durationMin": 600
+  },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "feature",
+      "name": "西西伯利亚平原",
+      "nameEn": "West Siberian Plain",
+      "lon": 75,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "乌拉尔山脉",
+      "nameEn": "Ural Mountains",
+      "lon": 60,
+      "lat": 58
+    },
+    {
+      "kind": "feature",
+      "name": "东欧平原",
+      "nameEn": "East European Plain",
+      "lon": 20,
+      "lat": 55
+    },
+    {
+      "kind": "city",
+      "id": "cph",
+      "name": "哥本哈根卡斯特鲁普",
+      "nameEn": "Copenhagen Kastrup",
+      "lat": 55.6180,
+      "lon": 12.6476,
+      "airport": true
+    }
+  ]
+}
