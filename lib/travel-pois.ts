@@ -2903,6 +2903,30 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "惠山古镇", nameEn: "Huishan Ancient Town", lon: 120.2856, lat: 31.5814, kind: "district" },
     { nameZh: "清名桥历史文化街区", nameEn: "Qingming Bridge Historic District", lon: 120.3072, lat: 31.5647, kind: "district" },
   ],
+
+  // ── 中国 · 南疆绿洲聚落 ──
+  kashgar: [
+    { nameZh: "艾提尕尔清真寺", nameEn: "Id Kah Mosque", lon: 75.9895, lat: 39.4713, kind: "landmark" },
+    { nameZh: "喀什老城·高台民居", nameEn: "Kashgar Old Town (Gaotai)", lon: 75.9930, lat: 39.4740, kind: "district" },
+    { nameZh: "中西亚国际大巴扎", nameEn: "Kashgar International Grand Bazaar", lon: 76.0080, lat: 39.4830, kind: "landmark" },
+    { nameZh: "喀什牛羊大巴扎", nameEn: "Kashgar Livestock Bazaar", lon: 75.9300, lat: 39.4300, kind: "landmark" },
+    { nameZh: "卡拉库里湖", nameEn: "Lake Karakul", lon: 75.0500, lat: 38.4170, kind: "nature" },
+  ],
+  hotan: [
+    { nameZh: "和田大巴扎", nameEn: "Hotan Bazaar", lon: 79.9500, lat: 37.1300, kind: "landmark" },
+    { nameZh: "玉龙喀什河（白玉河）", nameEn: "Yurungkash River (White Jade River)", lon: 79.9800, lat: 37.1000, kind: "nature" },
+    { nameZh: "和田地区博物馆", nameEn: "Hotan Prefecture Museum", lon: 79.9250, lat: 37.1150, kind: "landmark" },
+  ],
+  turpan: [
+    { nameZh: "交河故城", nameEn: "Ruins of Jiaohe", lon: 89.0653, lat: 42.9497, kind: "landmark" },
+    { nameZh: "高昌故城", nameEn: "Ruins of Gaochang", lon: 89.5267, lat: 42.8528, kind: "landmark" },
+    { nameZh: "葡萄沟", nameEn: "Grape Valley", lon: 89.2700, lat: 43.0200, kind: "nature" },
+    { nameZh: "火焰山", nameEn: "Flaming Mountains", lon: 89.3567, lat: 42.9599, kind: "nature" },
+    { nameZh: "柏孜克里克千佛洞", nameEn: "Bezeklik Thousand Buddha Caves", lon: 89.5670, lat: 42.8830, kind: "landmark" },
+  ],
+  bachu: [
+    { nameZh: "巴楚胡杨林", nameEn: "Bachu Wild Poplar Forest", lon: 78.6000, lat: 39.8200, kind: "nature" },
+  ],
 };
 
 export function getCityPois(cityId: string): CityPoi[] {
