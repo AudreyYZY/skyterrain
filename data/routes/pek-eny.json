@@ -1,0 +1,47 @@
+{
+  "id": "pek-eny",
+  "name": "北京 — 延安",
+  "nameEn": "Beijing — Yan'an",
+  "description": "华北平原 · 太行山 · 黄土高原",
+  "descriptionEn": "North China Plain · Taihang Mts · Loess Plateau",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1279",
+    "aircraft": "COMAC C919",
+    "depIata": "PEK",
+    "arrIata": "ENY",
+    "durationMin": 105
+  },
+  "cruiseHeight": 9800,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "taihang"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "loess"
+    },
+    {
+      "kind": "city",
+      "id": "eny",
+      "name": "延安南泥湾",
+      "nameEn": "Yan'an Nanniwan",
+      "lat": 36.4764,
+      "lon": 109.4653,
+      "airport": true
+    }
+  ]
+}

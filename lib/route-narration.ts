@@ -4933,6 +4933,66 @@ export const ROUTE_NARRATION: Record<
       "Beijing to Wuyishan takes about 2 hours 40 minutes. The Mount Wuyi Scenic Area is one of the very few UNESCO Mixed World Heritage Sites in China, and the birthplace of oolong and black tea. Bamboo rafting on the Nine-Bend River is the classic way to see it, with thirty-six peaks visible along the banks; Jiulongke is home to the surviving mother trees of Da Hong Pao. Serving gongfu tea is an important local custom — tapping the table lightly after your host pours is a polite way to say thanks. March–May and September–November have the most comfortable weather and coincide with the tea-picking season.",
     },
   },
+
+  "pek-hld": {
+    study: {
+    "zh-CN":
+      "北京飞呼伦贝尔，是一条从华北平原一路向北、抵达内蒙古高原东部草原区的航线。飞机离开首都机场，向北飞越燕山，进入内蒙古高原——地势整体抬升至1000米左右的高原面，是中国四大高原之一，以广袤的草原地貌为主。飞机继续向北，草原逐渐从锡林郭勒过渡到呼伦贝尔——世界四大草原之一，这里降水相对内蒙古高原其它区域更丰沛，牧草更为丰茂，是中国草原生态保存较好的地区之一。飞机最终抵达海拉尔——伊敏河畔的呼伦贝尔市政府驻地，也是大兴安岭森林与呼伦贝尔草原的交界城市。",
+    "en-US":
+      "Beijing to Hulunbuir flies north from the North China Plain to the grassland belt in eastern Inner Mongolia. Leaving the capital, the flight crosses the Yan Mountains and climbs onto the Inner Mongolian Plateau — one of China's four great plateaus, rising to around 1,000 m and dominated by open grassland. Flying on north, the grassland gradually shifts from the Xilingol steppe to the Hulunbuir Grassland, one of the \"four great grasslands of the world,\" wetter and lusher than much of the rest of the Inner Mongolian Plateau and one of China's best-preserved grassland ecosystems. The flight ends at Hailar, on the Yimin River, seat of the Hulunbuir city government and the meeting point between the forests of the Greater Khingan Range and the Hulunbuir Grassland.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到呼伦贝尔约2小时5分钟，直飞海拉尔。呼伦贝尔草原是“世界四大草原”之一，莫日格勒河蜿蜒穿行其间，素有“天下第一曲水”之称；呼伦湖是中国第五大湖。当地以蒙古族为主，敬酒、献哈达是重要待客礼仪，祭敖包时按顺时针方向绕行。手把肉、奶茶是日常饮食代表。6–8月是草原旅游旺季，气候凉爽、牧草最盛，常有那达慕大会；冬季严寒漫长，1月均温常在-20℃以下。",
+    "en-US":
+      "Beijing to Hulunbuir takes about 2 hours 5 minutes, flying nonstop into Hailar. The Hulunbuir Grassland is one of the \"four great grasslands of the world,\" laced by the winding Mordaga River — often called the world's most meandering river — and bordered by Hulun Lake, China's fifth-largest lake. The area is predominantly Mongol, where offering wine and presenting a khadag scarf are important guest customs, and circling an ovoo shrine is done clockwise. Hand-pulled mutton and milk tea are everyday staples. June–August is peak grassland season, coolest and lushest, often with Naadam festivals; winters are long and severe, with January averages often below −20°C.",
+    },
+  },
+
+  "pek-yih": {
+    study: {
+    "zh-CN":
+      "北京飞宜昌，是一条从华北平原一路向南、抵达长江三峡出口的航线。飞机离开首都机场，先掠过华北平原——黄河、海河冲积出的大平原，一望无际的农田与密集城镇。继续向南，飞越豫西南的丘陵地带，逐渐进入鄂西山地边缘。飞机最终抵达长江三峡——瞿塘峡、巫峡、西陵峡自西向东依次排开，长江在此切穿巫山山脉，两岸峭壁夹江、江流湍急；西陵峡东口正是三峡大坝所在地，世界最大的水电枢纽工程之一，也是宜昌这座“三峡门户”城市的地标。",
+    "en-US":
+      "Beijing to Yichang flies south from the North China Plain to the mouth of the Yangtze's Three Gorges. Leaving the capital, the flight is first over the North China Plain, built by the silt of the Yellow and Hai rivers, then crosses the hills of south-western Henan into the fringe of the hill country of western Hubei. It ends at the Yangtze Gorges — the Qutang, Wu and Xiling gorges lined up west to east, where the river cuts straight through the Wushan range between towering cliffs and fast-flowing water. The eastern mouth of Xiling Gorge is home to the Three Gorges Dam, one of the world's largest hydropower projects and the defining landmark of Yichang, the historic 'gateway to the Three Gorges.'",
+    },
+    travel: {
+    "zh-CN":
+      "北京到宜昌约2小时25分钟，直飞宜昌三峡机场。三峡大坝是世界最大水电枢纽工程之一，坛子岭观景台可俯瞰全景，可观看双线五级船闸运行；三峡人家风景区能体验峡江号子、土家婚嫁等民俗表演。宜昌凉虾、萝卜饺子是本地小吃代表。参观三峡大坝建议提前在官方渠道预约，携带有效身份证件，安检较严格。3–5月、9–11月气候最舒适，也是三峡库区风光较佳的季节。",
+    "en-US":
+      "Beijing to Yichang takes about 2 hours 25 minutes, flying nonstop into Yichang Sanxia Airport. The Three Gorges Dam, one of the world's largest hydropower projects, can be viewed in full from the Tanzi Ridge overlook, where visitors can also watch the double-line five-stage ship locks in operation; the Three Gorges Renjia scenic area offers folk performances such as river work-songs and Tujia wedding customs. Yichang's chilled rice-jelly \"shrimp\" dessert and radish dumplings are the local snack specialties. Book Three Gorges Dam visits through official channels in advance and bring valid ID, as security checks are strict. April–May and September–November have the most comfortable weather and generally the best reservoir scenery.",
+    },
+  },
+
+  "pek-eny": {
+    study: {
+    "zh-CN":
+      "北京飞延安，是一条从华北平原穿越太行山、抵达黄土高原腹地的航线。飞机离开首都机场，向西南飞越太行山——一列北北东走向的褶皱山脉，东坡断崖陡峭，直落华北平原。翻过太行山后，飞机进入黄土高原——数百万年来风力搬运堆积的黄土层覆盖在这片高原上，经流水切割形成“塬—梁—峁”相间的沟壑地貌，延安周边正是这类地貌的典型代表区域。飞机最终抵达延安——延河与南川河交汇处的黄土高原城市，1935年至1948年是中共中央和陕甘宁边区政府所在地。",
+    "en-US":
+      "Beijing to Yan'an crosses the Taihang Mountains on the way to the heart of the Loess Plateau. Leaving the capital, the flight heads south-west over the Taihang range, a north-north-east-trending folded range whose eastern face drops in a steep escarpment straight down to the North China Plain. Beyond the Taihang the flight enters the Loess Plateau, where wind-deposited loess accumulated over millions of years has been carved by running water into a landscape of tableland, ridges and hillocks, typified by the country around Yan'an. The flight ends at Yan'an, at the confluence of the Yan and Nanchuan rivers, which served as the seat of the Chinese Communist Party's Central Committee and the Shaanxi–Gansu–Ningxia Border Region government from 1935 to 1948.",
+    },
+    travel: {
+    "zh-CN":
+      "北京到延安约1小时45分钟，直飞南泥湾机场，由国产大飞机C919执飞。宝塔山是延安地标，山上宝塔为明代建筑；延安革命纪念馆系统展示1935–1948年这段历史，凭身份证免费参观；枣园、杨家岭革命旧址是窑洞建筑群。参观纪念场所应保持肃静、遵守景区秩序。洋芋擦擦、油馍馍是本地代表小吃。4–10月气候相对温和，是游览的适宜季节。",
+    "en-US":
+      "Beijing to Yan'an takes about 1 hour 45 minutes, flying nonstop into Nanniwan Airport aboard a domestically built C919. Baota (Pagoda) Hill is Yan'an's landmark, topped by a Ming-dynasty pagoda; the Yan'an Revolutionary Memorial Hall gives a systematic account of the 1935–1948 period and is free with ID; the Zaoyuan and Yangjialing revolutionary sites are clusters of cave-dwelling compounds. Keep a respectful, quiet demeanour at memorial sites. Potato-flour shreds and fried millet cakes are the local specialty snacks. April–October has the mildest weather for touring.",
+    },
+  },
+
+  "ctu-goq": {
+    study: {
+    "zh-CN":
+      "成都飞格尔木，是一条从四川盆地翻越横断山脉、穿越青藏高原、抵达柴达木盆地的长距离航线。飞机从成都平原起飞，向西北方向翻越横断山脉——一系列南北走向的高山峡谷，河流深切、山高谷深。越过横断山脉后，飞机进入青藏高原腹地——世界海拔最高的高原，念青唐古拉山雪峰与高原湖泊星罗棋布。飞机继续向西北，地势逐渐下降，进入柴达木盆地——青藏高原东北部的一处巨型高原盆地，盐湖广布，素有“聚宝盆”之称，格尔木正是这片盆地里因盐湖资源和青藏公路建设而兴起的新城。",
+    "en-US":
+      "Chengdu to Golmud crosses the Hengduan Mountains and the Tibetan Plateau on a long haul to the Qaidam Basin. The flight leaves the Chengdu Plain and climbs north-west over the Hengduan Mountains, a belt of north–south-trending high ranges cut by deep river gorges. Beyond the Hengduan the flight enters the heart of the Tibetan Plateau, the world's highest plateau, dotted with the snow peaks of the Nyainqêntanglha range and high-altitude lakes. Flying on north-west, the land gradually descends into the Qaidam Basin, a vast high-altitude basin in the north-east of the Tibetan Plateau known for its extensive salt lakes and nicknamed the 'treasure basin.' Golmud is the new city that grew up in this basin around salt-lake resources and the construction of the Qinghai–Tibet Highway.",
+    },
+    travel: {
+    "zh-CN":
+      "成都到格尔木约2小时30分钟，由西藏航空执飞，是进出青藏高原的重要通道之一。察尔汗盐湖是中国最大盐湖，“万丈盐桥”穿湖而过；昆仑山口是青藏公路的重要关隘，海拔约4768米。格尔木本身海拔约2800米，多数游客无明显高原反应，但继续南行前往昆仑山口方向海拔骤升，需注意适应和保暖。外国游客经此深入西藏，须事先办妥西藏旅行许可证并随有资质旅行社结伴出行。6–9月是最适宜前往的季节。",
+    "en-US":
+      "Chengdu to Golmud takes about 2 hours 30 minutes on Tibet Airlines, one of the key gateways onto the Tibetan Plateau. Qarhan Salt Lake is China's largest salt lake, crossed by the '10,000-zhang salt bridge' causeway; the Kunlun Pass, a key point on the Qinghai–Tibet Highway, sits at about 4,768 m. Golmud itself, at roughly 2,800 m, causes little altitude discomfort for most visitors, but elevation rises sharply heading toward the Kunlun Pass, so acclimatise and dress warmly. Foreign travellers continuing on into Tibet from here must arrange a Tibet Travel Permit in advance and travel with a licensed agency. June–September is the most comfortable season to visit.",
+    },
+  },
 };
 
 /** 取某航线某语言的解说稿 */

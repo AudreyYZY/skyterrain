@@ -1,0 +1,47 @@
+{
+  "id": "pek-yih",
+  "name": "北京 — 宜昌",
+  "nameEn": "Beijing — Yichang",
+  "description": "华北平原 · 长江三峡",
+  "descriptionEn": "North China Plain · Yangtze Gorges",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1523",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PEK",
+    "arrIata": "YIH",
+    "durationMin": 145
+  },
+  "cruiseHeight": 10100,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-gorges"
+    },
+    {
+      "kind": "city",
+      "id": "yih",
+      "name": "宜昌三峡",
+      "nameEn": "Yichang Sanxia",
+      "lat": 30.556,
+      "lon": 111.480,
+      "airport": true
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "ctu-goq",
+  "name": "成都 — 格尔木",
+  "nameEn": "Chengdu — Golmud",
+  "description": "横断山脉 · 青藏高原 · 柴达木盆地",
+  "descriptionEn": "Hengduan Mountains · Tibetan Plateau · Qaidam Basin",
+  "depCountry": "china",
+  "arrCountry": "china",
+  "flight": {
+    "airline": "西藏航空",
+    "airlineEn": "Tibet Airlines",
+    "flightNo": "TV9965",
+    "aircraft": "Airbus A319",
+    "depIata": "CTU",
+    "arrIata": "GOQ",
+    "durationMin": 155
+  },
+  "cruiseHeight": 11400,
+  "waypoints": [
+    {
+      "kind": "city",
+      "id": "ctu",
+      "name": "成都双流",
+      "nameEn": "Chengdu Shuangliu",
+      "lat": 30.578,
+      "lon": 103.947,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hengduan"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qinghai-tibet"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "qaidam"
+    },
+    {
+      "kind": "city",
+      "id": "goq",
+      "name": "格尔木",
+      "nameEn": "Golmud",
+      "lat": 36.4006,
+      "lon": 94.7861,
+      "airport": true
+    }
+  ]
+}

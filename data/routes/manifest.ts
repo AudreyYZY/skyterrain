@@ -297,6 +297,11 @@ import zagZad from "./zag-zad.json" with { type: "json" };
 import zagPuy from "./zag-puy.json" with { type: "json" };
 import zagOsi from "./zag-osi.json" with { type: "json" };
 import zagRjk from "./zag-rjk.json" with { type: "json" };
+// 中国 · 批 8（Tier 2 批3：呼伦贝尔/宜昌/延安/格尔木）
+import pekHld from "./pek-hld.json" with { type: "json" };
+import pekYih from "./pek-yih.json" with { type: "json" };
+import pekEny from "./pek-eny.json" with { type: "json" };
+import ctuGoq from "./ctu-goq.json" with { type: "json" };
 
 export const ALL_ROUTES: FlightRoute[] = [
   pekUrc,
@@ -549,4 +554,8 @@ export const ALL_ROUTES: FlightRoute[] = [
   zagPuy,
   zagOsi,
   zagRjk,
+  pekHld,
+  pekYih,
+  pekEny,
+  ctuGoq,
 ] as unknown as FlightRoute[];
