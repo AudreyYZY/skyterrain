@@ -1,0 +1,18 @@
+{
+  "id": "scl-puq",
+  "name": "圣地亚哥 — 蓬塔阿雷纳斯",
+  "nameEn": "Santiago — Punta Arenas",
+  "description": "南巴塔哥尼亚冰原 · 智利峡湾 · 麦哲伦海峡",
+  "descriptionEn": "Southern Patagonian Ice Field · Chilean Fjords · Strait of Magellan",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA82", "aircraft": "Airbus A321", "depIata": "SCL", "arrIata": "PUQ", "durationMin": 215 },
+  "cruiseHeight": 10500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "terrain", "terrainId": "campo-de-hielo-sur" },
+    { "kind": "terrain", "terrainId": "chilean-fjords" },
+    { "kind": "terrain", "terrainId": "strait-of-magellan" },
+    { "kind": "city", "id": "puq", "name": "蓬塔阿雷纳斯", "nameEn": "Punta Arenas", "lat": -53.0026, "lon": -70.8546, "airport": true }
+  ]
+}

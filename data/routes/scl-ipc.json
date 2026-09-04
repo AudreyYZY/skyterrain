@@ -1,0 +1,17 @@
+{
+  "id": "scl-ipc",
+  "name": "圣地亚哥 — 复活节岛",
+  "nameEn": "Santiago — Easter Island",
+  "description": "南太平洋 · 复活节岛",
+  "descriptionEn": "South Pacific · Easter Island",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA841", "aircraft": "Boeing 787-9", "depIata": "SCL", "arrIata": "IPC", "durationMin": 335 },
+  "cruiseHeight": 11500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "feature", "name": "南太平洋", "nameEn": "South Pacific Ocean", "lat": -30.28, "lon": -90.10 },
+    { "kind": "terrain", "terrainId": "easter-island" },
+    { "kind": "city", "id": "ipc", "name": "汉加罗阿", "nameEn": "Hanga Roa", "lat": -27.1648, "lon": -109.4219, "airport": true }
+  ]
+}

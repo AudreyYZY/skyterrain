@@ -79,8 +79,8 @@ export const REGIONS: Region[] = [
     name: "南美洲",
     nameEn: "South America",
     center: { lon: -60.0, lat: -20.0, height: 11000000 },
-    terrainCount: 0,
-    available: false,
+    terrainCount: 28,
+    available: true,
   },
   {
     id: "oceania",
@@ -190,6 +190,7 @@ export const COUNTRY_TO_SUBREGION: Record<string, string> = {
   poland: "eastern-europe",
   czechia: "eastern-europe",
   croatia: "southern-europe",
+  chile: "south-america",
 };
 
 export interface CountryMeta {
@@ -261,6 +262,8 @@ export const COUNTRIES: CountryMeta[] = [
   // 澳大利亚和新西兰（拼音：澳大利亚 Àodàlìyà → 新西兰 Xīnxīlán）
   { slug: "australia", name: "澳大利亚", nameEn: "Australia", code: "AU" },
   { slug: "new-zealand", name: "新西兰", nameEn: "New Zealand", code: "NZ" },
+  // 南美（首个国家）
+  { slug: "chile", name: "智利", nameEn: "Chile", code: "CL" },
 ];
 
 const COUNTRY_BY_SLUG = new Map(COUNTRIES.map((c) => [c.slug, c]));

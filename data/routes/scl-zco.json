@@ -1,0 +1,17 @@
+{
+  "id": "scl-zco",
+  "name": "圣地亚哥 — 特木科",
+  "nameEn": "Santiago — Temuco",
+  "description": "智利中央谷地 · 利亚伊马火山",
+  "descriptionEn": "Chilean Central Valley · Llaima Volcano",
+  "depCountry": "chile",
+  "arrCountry": "chile",
+  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA21", "aircraft": "Airbus A320", "depIata": "SCL", "arrIata": "ZCO", "durationMin": 86 },
+  "cruiseHeight": 7500,
+  "waypoints": [
+    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
+    { "kind": "terrain", "terrainId": "central-valley-chile" },
+    { "kind": "terrain", "terrainId": "llaima-volcano" },
+    { "kind": "city", "id": "zco", "name": "特木科", "nameEn": "Temuco", "lat": -38.7669, "lon": -72.6372, "airport": true }
+  ]
+}
