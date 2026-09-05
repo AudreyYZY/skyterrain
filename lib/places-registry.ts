@@ -94,6 +94,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "us-mountain-west": { zh: "山区西部", en: "Mountain West", order: 43 },
   "us-southwest": { zh: "西南部", en: "Southwest", order: 44 },
   "us-west-coast": { zh: "西海岸", en: "West Coast", order: 45 },
+  "us-alaska-hawaii": { zh: "阿拉斯加与夏威夷", en: "Alaska & Hawaii", order: 46 },
   // 加拿大（大致由东到西再到北）
   "ca-atlantic": { zh: "大西洋省份", en: "Atlantic Canada", order: 50 },
   "ca-central": { zh: "中部（安大略·魁北克）", en: "Central Canada", order: 51 },
@@ -1737,6 +1738,42 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "达尼丁八角广场 -45.8788,170.5028；DUD 机场：公开资料",
   },
 
+  // ── 新西兰 批2（2026-09-05）──
+  {
+    id: "napier", nameZh: "内皮尔", nameEn: "Napier", country: "new-zealand", tier: "notable", zone: "nz-north", admin1Zh: "霍克斯湾大区", admin1En: "Hawke's Bay Region",
+    lon: 176.9178, lat: -39.4903,
+    airport: { iata: "NPE", nameZh: "霍克斯湾机场", nameEn: "Hawke's Bay Airport", lon: 176.8717, lat: -39.4683 },
+    source: "Napier -39.4903,176.9178（en.wikipedia）；NPE 机场：en.wikipedia（市区西北约 5 公里）；人口 66,400（2025-06 估计）",
+  },
+  {
+    id: "taupo", nameZh: "陶波", nameEn: "Taupō", country: "new-zealand", tier: "notable", zone: "nz-north", admin1Zh: "怀卡托大区", admin1En: "Waikato Region",
+    lon: 176.0694, lat: -38.6875,
+    airport: { iata: "TUO", nameZh: "陶波机场", nameEn: "Taupō Airport", lon: 176.0844, lat: -38.7397 },
+    source: "Taupō -38.6875,176.0694（en.wikipedia）；TUO 机场：en.wikipedia（镇南约 8 公里，仅奥克兰航线）；人口 27,000（2025-06 估计）",
+  },
+  {
+    id: "tauranga", nameZh: "陶朗加", nameEn: "Tauranga", country: "new-zealand", tier: "major", zone: "nz-north", admin1Zh: "丰盛湾大区", admin1En: "Bay of Plenty Region",
+    lon: 176.1670, lat: -37.6830,
+    airport: { iata: "TRG", nameZh: "陶朗加机场", nameEn: "Tauranga Airport", lon: 176.1972, lat: -37.6733 },
+    source: "Tauranga -37.6830,176.1670（en.wikipedia）；TRG 机场：en.wikipedia（芒格努伊山，市中心东北约 3 公里）；人口 161,000（2025-06 估计，新西兰第五大城市）",
+  },
+  {
+    id: "nelson", nameZh: "尼尔森", nameEn: "Nelson", country: "new-zealand", tier: "notable", zone: "nz-south", admin1Zh: "尼尔森", admin1En: "Nelson Region",
+    lon: 173.2839, lat: -41.2708,
+    airport: { iata: "NSN", nameZh: "尼尔森机场", nameEn: "Nelson Airport", lon: 173.2211, lat: -41.2983 },
+    source: "Nelson -41.2708,173.2839（en.wikipedia）；NSN 机场：en.wikipedia（Annesbrook，市中心西南约 6 公里）；人口 54,300（2025-06 估计）",
+  },
+  {
+    id: "kaikoura", nameZh: "凯库拉", nameEn: "Kaikōura", country: "new-zealand", tier: "notable", zone: "nz-south", admin1Zh: "坎特伯雷大区", admin1En: "Canterbury Region",
+    lon: 173.6800, lat: -42.4000,
+    source: "Kaikōura -42.4000,173.6800（en.wikipedia）；本地机场仅观鲸/观光小飞机、无定期航线，最近为基督城 CHC（约 180 公里），条目不写机场字段；人口 2,350（2025-06 估计）",
+  },
+  {
+    id: "wanaka", nameZh: "瓦纳卡", nameEn: "Wānaka", country: "new-zealand", tier: "notable", zone: "nz-south", admin1Zh: "奥塔哥大区", admin1En: "Otago Region",
+    lon: 169.1500, lat: -44.7000,
+    source: "Wānaka -44.7000,169.1500（en.wikipedia，海拔 290 米）；Wānaka Airport 无定期商业航班，最近为皇后镇 ZQN（经皇冠山脉公路约 70 公里），条目不写机场字段；人口 13,200（2025-06 估计）",
+  },
+
   // ── 美国 ──────────────────────────────────────────────
   {
     id: "new-york", nameZh: "纽约", nameEn: "New York", country: "usa", tier: "major", zone: "us-northeast", admin1Zh: "纽约州", admin1En: "New York",
@@ -1791,6 +1828,80 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -118.2437, lat: 34.0522,
     airport: { iata: "LAX", nameZh: "洛杉矶国际机场", nameEn: "Los Angeles Int'l", lon: -118.408, lat: 33.942 },
     source: "洛杉矶市中心 34.0522,-118.2437；LAX 机场：公开资料",
+  },
+
+  // ── 美国 批2（2026-09-05）──
+  {
+    id: "boston", nameZh: "波士顿", nameEn: "Boston", country: "usa", tier: "major", zone: "us-northeast", admin1Zh: "马萨诸塞州", admin1En: "Massachusetts",
+    lon: -71.0578, lat: 42.3603,
+    airport: { iata: "BOS", nameZh: "洛根国际机场", nameEn: "Logan Int'l", lon: -71.0064, lat: 42.3631 },
+    source: "Boston 42.3603,-71.0578（en.wikipedia）；BOS 机场：en.wikipedia（后湾东北约 4 公里）；人口 675,647（2020 普查）",
+  },
+  {
+    id: "philadelphia", nameZh: "费城", nameEn: "Philadelphia", country: "usa", tier: "major", zone: "us-northeast", admin1Zh: "宾夕法尼亚州", admin1En: "Pennsylvania",
+    lon: -75.1636, lat: 39.9528,
+    airport: { iata: "PHL", nameZh: "费城国际机场", nameEn: "Philadelphia Int'l", lon: -75.2411, lat: 39.8716 },
+    source: "Philadelphia 39.9528,-75.1636（en.wikipedia）；PHL 机场：en.wikipedia（市中心西南约 13 公里）；人口 1,603,797（2020 普查）",
+  },
+  {
+    id: "seattle", nameZh: "西雅图", nameEn: "Seattle", country: "usa", tier: "major", zone: "us-west-coast", admin1Zh: "华盛顿州", admin1En: "Washington",
+    lon: -122.3300, lat: 47.6039,
+    airport: { iata: "SEA", nameZh: "西雅图—塔科马国际机场", nameEn: "Seattle–Tacoma Int'l", lon: -122.3088, lat: 47.4502 },
+    source: "Seattle 47.6039,-122.3300（en.wikipedia）；SEA 机场：en.wikipedia（市中心南约 21 公里）；人口 737,015（2020 普查）",
+  },
+  {
+    id: "san-diego", nameZh: "圣迭戈", nameEn: "San Diego", country: "usa", tier: "major", zone: "us-west-coast", admin1Zh: "加利福尼亚州", admin1En: "California",
+    lon: -117.1625, lat: 32.7150,
+    airport: { iata: "SAN", nameZh: "圣迭戈国际机场", nameEn: "San Diego Int'l", lon: -117.2026, lat: 32.7338 },
+    source: "San Diego 32.7150,-117.1625（en.wikipedia）；SAN 机场：en.wikipedia（市中心西北约 5 公里）；人口 1,386,932（2020 普查）",
+  },
+  {
+    id: "honolulu", nameZh: "檀香山", nameEn: "Honolulu", country: "usa", tier: "major", zone: "us-alaska-hawaii", admin1Zh: "夏威夷州", admin1En: "Hawaii",
+    lon: -157.8583, lat: 21.3069,
+    airport: { iata: "HNL", nameZh: "丹尼尔·井上国际机场", nameEn: "Daniel K. Inouye Int'l", lon: -157.9225, lat: 21.3186 },
+    source: "Honolulu 21.3069,-157.8583（en.wikipedia）；HNL 机场：en.wikipedia（市中心西北约 5 公里）；市县人口 350,964、城区 853,252（2020 普查）",
+  },
+  {
+    id: "orlando", nameZh: "奥兰多", nameEn: "Orlando", country: "usa", tier: "notable", zone: "us-south", admin1Zh: "佛罗里达州", admin1En: "Florida",
+    lon: -81.3800, lat: 28.5400,
+    airport: { iata: "MCO", nameZh: "奥兰多国际机场", nameEn: "Orlando Int'l", lon: -81.3089, lat: 28.4294 },
+    source: "Orlando 28.5400,-81.3800（en.wikipedia）；MCO 机场：en.wikipedia（市中心东南约 10 公里）；人口 307,573、都会区 2,691,925（2020 普查）",
+  },
+  {
+    id: "atlanta", nameZh: "亚特兰大", nameEn: "Atlanta", country: "usa", tier: "major", zone: "us-south", admin1Zh: "佐治亚州", admin1En: "Georgia",
+    lon: -84.3900, lat: 33.7489,
+    airport: { iata: "ATL", nameZh: "哈茨菲尔德—杰克逊亚特兰大国际机场", nameEn: "Hartsfield–Jackson Atlanta Int'l", lon: -84.4281, lat: 33.6367 },
+    source: "Atlanta 33.7489,-84.3900（en.wikipedia）；ATL 机场：en.wikipedia（市中心南约 16 公里）；人口 498,715（2020 普查）",
+  },
+  {
+    id: "nashville", nameZh: "纳什维尔", nameEn: "Nashville", country: "usa", tier: "notable", zone: "us-south", admin1Zh: "田纳西州", admin1En: "Tennessee",
+    lon: -86.7744, lat: 36.1622,
+    airport: { iata: "BNA", nameZh: "纳什维尔国际机场", nameEn: "Nashville Int'l", lon: -86.6742, lat: 36.1245 },
+    source: "Nashville 36.1622,-86.7744（en.wikipedia）；BNA 机场：en.wikipedia（市中心东南约 14 公里）；人口 689,447（2020 普查）",
+  },
+  {
+    id: "austin", nameZh: "奥斯汀", nameEn: "Austin", country: "usa", tier: "notable", zone: "us-south", admin1Zh: "得克萨斯州", admin1En: "Texas",
+    lon: -97.7431, lat: 30.2672,
+    airport: { iata: "AUS", nameZh: "奥斯汀—伯格斯特龙国际机场", nameEn: "Austin–Bergstrom Int'l", lon: -97.6664, lat: 30.1975 },
+    source: "Austin 30.2672,-97.7431（en.wikipedia）；AUS 机场：en.wikipedia（市中心东南约 13 公里）；人口 961,855（2020 普查）",
+  },
+  {
+    id: "santa-fe", nameZh: "圣塔菲", nameEn: "Santa Fe", country: "usa", tier: "notable", zone: "us-southwest", admin1Zh: "新墨西哥州", admin1En: "New Mexico",
+    lon: -105.9644, lat: 35.6672,
+    airport: { iata: "SAF", nameZh: "圣塔菲地区机场", nameEn: "Santa Fe Regional Airport", lon: -106.0383, lat: 35.6211 },
+    source: "Santa Fe 35.6672,-105.9644（en.wikipedia，海拔 2,133 米）；SAF 机场：en.wikipedia（市区南约 18 公里，支线航班；阿布奎基 ABQ 约 105 公里）；人口 87,505（2020 普查）",
+  },
+  {
+    id: "anchorage", nameZh: "安克雷奇", nameEn: "Anchorage", country: "usa", tier: "notable", zone: "us-alaska-hawaii", admin1Zh: "阿拉斯加州", admin1En: "Alaska",
+    lon: -149.8936, lat: 61.2167,
+    airport: { iata: "ANC", nameZh: "泰德·史蒂文斯安克雷奇国际机场", nameEn: "Ted Stevens Anchorage Int'l", lon: -149.9983, lat: 61.1742 },
+    source: "Anchorage 61.2167,-149.8936（en.wikipedia）；ANC 机场：en.wikipedia（市中心西南约 8 公里）；人口 291,247（2020 普查）",
+  },
+  {
+    id: "salt-lake-city", nameZh: "盐湖城", nameEn: "Salt Lake City", country: "usa", tier: "notable", zone: "us-mountain-west", admin1Zh: "犹他州", admin1En: "Utah",
+    lon: -111.8911, lat: 40.7608,
+    airport: { iata: "SLC", nameZh: "盐湖城国际机场", nameEn: "Salt Lake City Int'l", lon: -111.9778, lat: 40.7883 },
+    source: "Salt Lake City 40.7608,-111.8911（en.wikipedia，海拔约 1,300 米）；SLC 机场：en.wikipedia（市中心西约 6 公里）；人口 199,723、都会区 1,257,936（2020 普查）",
   },
 
   // ── 加拿大 ──
