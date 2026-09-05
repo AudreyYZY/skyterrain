@@ -74,6 +74,7 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
   "mode.travel": { "zh-CN": "旅游", "en-US": "Travel" },
   "rail.countryOverview": { "zh-CN": "国家概览", "en-US": "Country overview" },
   "travel.identity": { "zh-CN": "概览", "en-US": "Overview" },
+  "travel.howItWorks": { "zh-CN": "这座城怎么运转", "en-US": "How the city works" },
   "travel.layout": { "zh-CN": "地理与格局", "en-US": "Layout" },
   "travel.gettingAround": { "zh-CN": "衣食住行", "en-US": "Getting around" },
   "travel.culture": { "zh-CN": "人文与习俗", "en-US": "Culture" },

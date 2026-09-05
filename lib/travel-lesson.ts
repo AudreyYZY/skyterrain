@@ -4,6 +4,12 @@ import { t } from "@/lib/i18n";
 export interface TravelGuide {
   /** 1. 这是座什么城 —— 性格、地位、第一印象 */
   identity: string;
+  /**
+   * 1.5 这座城怎么运转 —— 治理结构（谁管什么）、单中心还是多中心、本地人的地址语言、
+   * 生活半径由什么决定、外来者最常见的结构性误解。固定问题、逐城作答，见
+   * docs/city-depth-redesign-2026-09-06.md。可选：先在 Tier A 城市补齐，再逐步铺开。
+   */
+  howItWorks?: string;
   /** 2. 地理与格局 —— 为什么在这里、坐落在什么地形、分几个片区 */
   layout: string;
   /** 3. 衣食住行 —— 气候穿衣、当地饮食、住哪片、怎么走动 */
@@ -18,6 +24,7 @@ export interface TravelGuide {
 
 export const TRAVEL_SECTION_ORDER = [
   "identity",
+  "howItWorks",
   "layout",
   "gettingAround",
   "culture",
