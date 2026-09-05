@@ -4594,6 +4594,78 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September brings the most pleasant weather. Volos is an important gateway to Meteora and the Pelion mountains, and also serves as a ferry port for the Sporades islands in the Aegean.",
   },
 
+  // ── Greece batch 2 (2026-09-05) ──
+  mykonos: {
+    identity:
+      "Mykonos is among the most famous islands of the Cyclades, with about 11,000 people (2021), most of them in Mykonos town (Chora) on the west coast. The maze of whitewashed lanes with blue shutters, the sixteenth-century Venetian windmills of Kato Mili on the hill, the houses of 'Little Venice' hanging over the sea and the white church of Panagia Paraportiani are its emblems; Petros the pelican, who arrived in 1954, was the island's mascot for decades. Mykonos is known for beach clubs and nightlife, and is the departure point for Delos (birthplace of Apollo, a World Heritage site) about 2 km to the south-west. The summer meltemi wind keeps the hot dry summers cool.",
+    layout:
+      "Mykonos town lies in a bay on the west coast: the old port is to the north, the windmills on the slope south of town with Little Venice on the shore just below them, Paraportiani in the Kastro quarter west of the old port, and the lanes of the centre (Matogianni Street) full of shops and restaurants. The new port for large ferries is about 2 km north at Tourlos. The beaches line the south coast — Ornos, Psarou, Platys Gialos, Paradise, Super Paradise — with Elia to the south-east. The airport is about 4 km south-east of town, and the Delos boats leave from the old port.",
+    gettingAround:
+      "Mykonos Airport (JMK), about 4 km from town, is about 25 minutes from Athens, with summer direct flights from London, Paris, Munich, Geneva and more. Ferries take about 5 hours from Piraeus (fast boats 2.5–3) and about 2.5 from Rafina, with fast boats to Santorini, Naxos and Paros. The town is walked (no cars); beaches are reached by bus, by small boats from Platys Gialos, or by hire car or quad; taxis are scarce. The climate is Mediterranean, hot, dry and windy in summer.",
+    culture:
+      "Greek is universal and English widespread. The lanes are narrow and closed to vehicles — luggage goes by trolley. Dress modestly in churches; Delos is an archaeological site visited only on day trips (no overnight stays) — bring water and a hat. Beach clubs are expensive, some with minimum spends. Nightlife runs until dawn. High-season prices are among the highest in Greece. Tipping is optional, 5–10%.",
+    seeAndDo:
+      "The lanes of Mykonos town, sunset at Little Venice, the Kato Mili windmills, Paraportiani; the ruins of Delos (half a day); the south-coast beaches (Ornos, Platys Gialos, Paradise, Elia); the pelicans and fishing boats of the old port; the archaeological and folklore museums; the monastery and traditional life of Ano Mera; sunset at the Armenistis lighthouse.",
+    whenAndTips:
+      "May–June and September–October are best; July–August are packed, very expensive and windy; most places close in winter. Stay three nights. Fly or sail from Athens, and link with Santorini and Naxos on a Cyclades route.",
+  },
+  naxos: {
+    identity:
+      "Naxos is the largest and most fertile island of the Cyclades, about 430 km², with about 21,000 people (2021), of whom about 9,000 live in Naxos town (Chora). The Portara — the unfinished gateway of a sixth-century BC temple of Apollo on the islet by the harbour — is the island's emblem, and the Kastro on the hill above the town is the thirteenth-century Venetian citadel; inland, Mount Zas (1,001 m) is the highest peak in the Cyclades, mountain villages such as Halki and Apeiranthos keep marble streets and Byzantine churches, and ancient quarries hold unfinished kouros statues. Naxos is known for potatoes, graviera cheese, kitron citrus liqueur and the long beaches of its west coast, far cheaper and quieter than Mykonos or Santorini.",
+    layout:
+      "Naxos town lies by the harbour on the west coast: the Portara stands on the islet north of the port (joined by a causeway), the old market quarter and the Kastro climb the hill behind the harbour, and the harbour front holds the restaurants and the ferry quay. The beaches run south along the west coast: Agios Georgios beside the town, then Agios Prokopios, Agia Anna and Plaka. Halki lies about 16 km inland in the centre, Apeiranthos about 28 km away in the north-eastern hills, and the Mount Zas trailhead near the village of Filoti. The airport is about 3 km south of town.",
+    gettingAround:
+      "Naxos Airport (JNX), about 3 km from town, has Athens flights (about 45 minutes) and seasonal routes, with a short runway and mostly small aircraft. Ferries take about 4–6 hours from Piraeus (fast boats about 3.5), with links to Mykonos, Paros and Santorini. The town is walkable; buses reach the beaches (frequent in summer) and the villages, but the island is large and a hire car is easiest. The climate is Mediterranean, hot, dry and windy in summer.",
+    culture:
+      "Greek is universal and English widespread. The Kastro holds the Catholic cathedral and the archaeological museum, and descendants of the Venetian families still live there. Dress modestly in the village churches and monasteries; the people of Apeiranthos have Cretan roots and a distinct dialect. Kitron is tasted at the Vallindras distillery in Halki. Kitesurfing takes over the beaches when the wind blows. Tipping is optional.",
+    seeAndDo:
+      "Sunset at the Portara; the Kastro and the lanes of the old market; Agios Prokopios and Plaka beaches; Halki (the distillery, Byzantine churches) and Apeiranthos (the marble village); the Mount Zas hike (about 3 hours); the temple of Demeter at Sangri; the ancient kouroi (Melanes, Apollonas); the fishing village of Apollonas; the archaeological museum.",
+    whenAndTips:
+      "May–June and September–October are best; July–August is hot but easier than Mykonos; winter is quiet. Stay three or four nights, with a day's drive round the island. Linked with Paros, Mykonos and Santorini.",
+  },
+  kalabaka: {
+    identity:
+      "Kalabaka lies on the western edge of the Thessalian plain at the foot of the Pindus mountains, with about 8,600 people in the town, and is the gateway to Meteora. Meteora is a forest of sandstone pillars rising more than 300 m, on whose summits Orthodox monks built monasteries from the fourteenth century — more than twenty at the height, six of them still open today: the Great Meteoron (founded in the fourteenth century), Varlaam, Roussanou, St Nicholas, St Stephen and Holy Trinity; in 1988 Meteora was inscribed as a World Heritage site for both nature and culture. The monasteries were once reached by rope ladders and baskets, and steps were cut only in the 1920s. The village of Kastraki nestles at the foot of the pillars as a second base.",
+    layout:
+      "Kalabaka lies on the flat south of the pillars, with the railway and bus stations in the south of town and the main street running north towards the rocks; Kastraki lies about 2 km north-west, right beneath the pillars. The monasteries crown the pillars north of town: St Stephen and Holy Trinity on the east (nearest the town; St Stephen is entered across a bridge), Roussanou in the middle, Varlaam and the Great Meteoron highest to the north-west, and St Nicholas above Kastraki; a loop road of about 15 km links them.",
+    gettingAround:
+      "Kalabaka has no airport; the nearest are Thessaloniki (about 200 km) and Athens (about 350 km). Trains take about 4–5 hours from Athens (direct or changing at Palaiofarsalos) and about 3 from Thessaloniki; KTEL coaches take about 5 hours from Athens and about 30 minutes from Trikala. The town is walkable; the monasteries are reached by a few daily buses, taxis, tours or on foot (old paths climb from Kastraki in about 1 hour). The climate is continental, with hot summers and cold winters with occasional snow on the pillars.",
+    culture:
+      "Greek is universal and English widespread in tourism. The monasteries are living Orthodox communities: women wear skirts below the knee (wraps are provided at the gates), men long trousers, no bare shoulders; no photography inside and quiet throughout; each monastery closes on a different day of the week, so check before going. Each charges a small entry fee. Do not disturb the monks' routines and services. Tipping is optional.",
+    seeAndDo:
+      "The Great Meteoron (museum, wine cellar); Varlaam; St Stephen (a convent, no steps); Roussanou and St Nicholas; Holy Trinity (the Bond film location); the sunset viewpoints (around Psaropetra); the old paths up from Kastraki; rock climbing (Meteora is a European climbing destination); the old town of Trikala.",
+    whenAndTips:
+      "April–June and September–October are most comfortable; summers are hot, so avoid midday; winter brings fog and snow but great quiet. Stay at least a night and allow a full day for the monasteries (three or four a day at most). A day trip from Athens or Thessaloniki is too rushed.",
+  },
+  patras: {
+    identity:
+      "Patras lies on the Gulf of Patras at the north-western corner of the Peloponnese, Greece's third-largest city with about 216,000 people (2021), and the main ferry port for Italy (Ancona, Bari). The Rio–Antirrio Bridge of 2004 (about 2.9 km, one of the longest multi-span cable-stayed bridges in the world) links the Peloponnese to the mainland. The Patras Carnival (January–February) is the largest in Greece and among the largest in Europe; the cathedral of St Andrew (1908–1974), holding the relics of the apostle, is one of the largest churches in Greece; the Roman odeon of about AD 160 and the Byzantine castle stand in the upper town. The Achaia Clauss winery founded in 1861 is known for Mavrodaphne, and Patras was European Capital of Culture in 2006.",
+    layout:
+      "The city has an upper and a lower town: the lower town lies on the flat by the sea, with Georgiou Square at its centre and the port and ferry terminals along the shore; the upper town climbs the hill with the castle and the Roman odeon, and a great stairway joins the two. St Andrew's cathedral stands by the sea in the south-west of the lower town. The Rio–Antirrio Bridge is about 10 km north-east at Rio, and the Achaia Clauss winery about 8 km south-east in the hills. The suburban railway station is by the port.",
+    gettingAround:
+      "Patras has no civil airport; the nearest are the joint-use Araxos (about 45 km, seasonal charters) and Athens (about 215 km, 2.5–3 hours by KTEL coach, hourly). The suburban railway from Athens involves a change at Kiato, about 3.5 hours. The city is mostly walked, with buses; the Rio bridge is about 30 minutes by bus. Ferries take about 20 hours to Ancona and about 16 to Bari. The climate is Mediterranean with hot summers and wet winters.",
+    culture:
+      "Greek is universal and, in this student city, English is widespread. During the carnival (from mid-January to the start of Lent) there are parades, costumes and the 'chocolate war', and lodging is tight. The cathedral is an Orthodox shrine — dress modestly and keep quiet; St Andrew's day on 30 November is the local feast. The stairways and the castle of the upper town are the evening promenade. Tipping is optional.",
+    seeAndDo:
+      "St Andrew's cathedral; the Roman odeon and the castle of the upper town; Georgiou Square and the pedestrian streets of the centre; the Rio–Antirrio Bridge (walk or drive across, the castle of Rio); the Achaia Clauss winery; the archaeological museum; the carnival (January–February); day trips to ancient Olympia (about 115 km) and the Kalavryta rack railway.",
+    whenAndTips:
+      "April–June and September–October are most comfortable, with the carnival in January–February; summers are hot. A day for the city. The port for the Italy ferries or a stepping stone to Olympia and Kefalonia.",
+  },
+  zakynthos: {
+    identity:
+      "Zakynthos (Zante in Italian) is the southern island of the Ionian group; its capital, Zakynthos town, has about 10,000 people and the island about 40,000. The great earthquake of 1953 all but destroyed the town, rebuilt afterwards in Venetian style; Solomos Square is named after Dionysios Solomos, author of the Greek national anthem, and the church of St Dionysios is that of the island's patron saint. Navagio (Shipwreck) Bay on the north-west coast — where the smuggling ship Panagiotis ran aground in 1980 beneath white cliffs — is one of the most famous views in Greece; since the 2022 earthquake the beach itself has been closed for rockfall risk and is seen only from the clifftop platform or from boats. Laganas Bay on the south coast is a national marine park established in 1999 where loggerhead turtles nest, and the airport bans night flights in summer to protect them.",
+    layout:
+      "Zakynthos town lies in a bay on the east coast, with Solomos Square by the sea, St Dionysios south of the port and the Bochali castle on the hill north-west of town looking over it. The airport is about 4 km south. Laganas Bay and the turtle beaches lie in the south, with Laganas the busiest resort; Navagio is on the north-west coast (the viewpoint is reached from the north via Volimes, and boats leave from the port of Agios Nikolaos in the north or from town); the Blue Caves are at Cape Skinari at the northern tip. The Keri caves and the west-coast cliffs lie to the south-west.",
+    gettingAround:
+      "Zakynthos International Airport (ZTH), about 4 km from town, has Athens flights and summer direct flights from across Europe, with a summer ban on flights between 22:00 and 05:00 for the turtles. Ferries from Kyllini in the Peloponnese take about 1 hour, with buses from Kyllini to Patras and Athens. Island buses are limited, so a hire car or quad is easiest; the Navagio viewpoint is about 1 hour's drive, and the Blue Caves are seen by boat. The climate is Mediterranean with hot dry summers and wet winters.",
+    culture:
+      "Greek is universal, English widespread in the resorts, and the Venetian legacy lives on in the architecture and the kantades serenades. Dress modestly in St Dionysios; the saint's processions are on 24 August and 17 December. In the turtle nesting season (May–October) the Laganas beaches close at night with limits on umbrellas and speedboats, and turtle boats keep their distance. The Navagio viewpoint has no railing beyond the fence — don't cross it. Tipping is optional.",
+    seeAndDo:
+      "The Navagio viewpoint and a boat trip to see the wreck; the Blue Caves (by boat); the Bochali castle and its view; Solomos Square and St Dionysios; turtle spotting in Laganas Bay (licensed boats) and the islet of Marathonisi; the Keri caves and sunset on the west-coast cliffs; the beaches of the south-east coast (Gerakas, Banana); the crafts of Volimes; the seafront promenade of Zakynthos town.",
+    whenAndTips:
+      "May–June and September–October are best; July–August is packed; most places close in winter. Stay three nights, with a day's drive round the island. Linked with Kefalonia (boats in summer).",
+  },
+
   "portugal-overview": {
     identity:
       "Portugal is the westernmost country on the European mainland, on the western side of the Iberian Peninsula, about 92,000 sq km (excluding the overseas autonomous regions) with a population of about 10.3 million; including the Atlantic autonomous regions of Madeira and the Azores, the total area is about 93,000 sq km. The land is higher in the north and lower in the south: the north and centre are mountainous and hilly, with rivers such as the Douro and Mondego cutting north-east to south-west through old crystalline plateau rock; the south (Alentejo) is a broad rolling plain; the south-western tip (the Algarve) is a limestone coast. Travel mode covers mainland Portugal plus the overseas autonomous regions of Madeira and the Azores.",
@@ -4772,6 +4844,78 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The old town's seafront arches and cathedral; Sete Cidades caldera (a two-tone crater lake, with a viewpoint over the whole basin); the Furnas geothermal area (fumaroles, hot springs, geothermally cooked stew); São Miguel's tea plantations (one of Europe's few commercial tea-growing areas); whale watching (the waters around the island are an important whale-observation site).",
     whenAndTips:
       "May–September has relatively stable weather and is also whale-watching season. Weather on the island is changeable and rain can come at any time — bring a waterproof jacket. It's about an hour's drive between Sete Cidades and Furnas — plan a full day for a driving loop of the island. Book flights and ferries to and from the mainland ahead; some winter flights are weather-sensitive.",
+  },
+
+  // ── Portugal batch 2 (2026-09-05) ──
+  lagos: {
+    identity:
+      "Lagos lies on the coast of the western Algarve, with about 33,000 people (2021), and was a key port of the Age of Discovery: Prince Henry the Navigator often resided here directing his expeditions, and in 1444 the first slave market of colonial Europe was set up here (the building is now a museum). The sixteenth-century walls, the seaside church of Santo António (1715) and the cobbled lanes of the old town survive. Ponta da Piedade south of the town is the most dramatic group of sea cliffs and rock pillars in the Algarve, Praia Dona Ana and Praia do Camilo lie between golden rock walls, and Meia Praia is an open beach of several kilometres; Sagres and Cape St Vincent, the south-western corner of mainland Europe, lie about 35 km west.",
+    layout:
+      "The old town lies on the west bank of the Bensafrim estuary, with pedestrian streets, churches and squares inside the walls, the slave-market museum on the riverside square and the marina across the river. Ponta da Piedade is on the headland about 3 km south, with Dona Ana and Camilo beaches on the way; Meia Praia stretches east from the east bank. The station stands by the marina on the east bank. Sagres lies west and the Benagil cave about 25 km east.",
+    gettingAround:
+      "Lagos has no airport; from Faro Airport (about 90 km) the train takes about 1.5 hours (Lagos is the western terminus of the Algarve line) or the bus about 1.5 hours. The old town is walkable; Ponta da Piedade is about 40 minutes on foot or a tourist-train ride, Meia Praia a walk or bus ride, Sagres about 1 hour by bus, and the sea caves are visited by boat from the marina. The climate is Mediterranean with hot dry summers and mild winters.",
+    culture:
+      "Portuguese is universal, with English widespread in the tourist areas. The slave-market museum tells that history — visit with respect. The clifftop path at Ponta da Piedade runs close to the edge — take care in wind; beaches are lifeguarded, so watch the flags. The old town is full of seafood restaurants, with grilled sardines and cataplana seafood stew as local dishes. Tipping is optional, 5–10%.",
+    seeAndDo:
+      "Ponta da Piedade (the clifftop path, boat trips through the grottoes); Dona Ana and Camilo beaches; the old town, the walls and the gilded church of Santo António; the slave-market museum; Meia Praia; boat trips from the marina for caves and dolphins; the fortress at Sagres and sunset at Cape St Vincent; the Benagil cave (by boat or kayak); Praia da Luz.",
+    whenAndTips:
+      "May–June and September–October are best; July–August are the most crowded and hot; winter is mild and quiet. Stay two or three nights as a base for the western Algarve. Book cave boats and kayaks ahead.",
+  },
+  tavira: {
+    identity:
+      "Tavira lies at the mouth of the Gilão river in the eastern Algarve about 28 km east of Faro, with about 26,000 people — the most old-town-like of the Algarve's towns. Phoenicians settled here in the eighth century BC, the Moors ruled for five centuries and Christians retook it in 1242; the 'Roman bridge' over the river is in fact Moorish, and the old town is said to have 37 churches. Once a tuna-fishing centre, it is now known for slow living (a Cittaslow member), and the neighbouring Ria Formosa Natural Park has salt pans, flamingos and the long beach of Ilha de Tavira, reached by ferry.",
+    layout:
+      "The old town straddles the Gilão, with the Roman bridge linking the banks, the Praça da República and the castle ruin on the slope of the west bank and churches and white houses spread across the hillside; the market and restaurants lie on the east bank. The station is on the north side of the old town. The ferry to Ilha de Tavira leaves from the Quatro Águas pier at the river mouth, about 10 minutes, with salt pans on both sides of the estuary. The fishing village of Santa Luzia lies about 3 km south-west.",
+    gettingAround:
+      "Tavira has no airport; Faro Airport is about 28 km away. Trains from Faro take about 35 minutes, and buses are easy. The old town is walkable, and hire bicycles suit the river and the salt pans; the ferry to the island runs often in summer and less in winter. The climate is Mediterranean — one of the sunniest corners of Europe.",
+    culture:
+      "Portuguese is universal, English works in the tourist areas, and many British and Dutch retirees live here. Most churches open by day — dress modestly. The island is part of the natural park, with no shade — bring water — and part of it is a naturist beach. Paths cross the salt pans, and flamingos come in autumn and winter. Tuna, octopus (Santa Luzia is the octopus capital) and fleur de sel are the local produce. Tipping is optional.",
+    seeAndDo:
+      "The Roman bridge and the riverside; the castle garden and the camera obscura (in the old water tower); the Praça da República and the churches (Santa Maria, the Misericórdia); the beach of Ilha de Tavira; the salt-pan paths and flamingos; the octopus restaurants of Santa Luzia; boat trips in the Ria Formosa; the old village of Cacela Velha; the Saturday market.",
+    whenAndTips:
+      "May–June and September–October are best; summer is hot but the beaches are liveliest. A day or two nights, at a slow pace. An easy day trip from Faro and a quiet base for the eastern Algarve.",
+  },
+  nazare: {
+    identity:
+      "Nazaré lies on the Atlantic coast of central Portugal about 100 km north of Lisbon, with about 15,000 people — a traditional fishing village and seaside resort now famous for the largest surfable waves in the world: the underwater Nazaré Canyon amplifies the winter swells, and waves at Praia do Norte reach more than 20 m; Garrett McNamara's ride here in 2011 drew global attention, and in 2020 Sebastian Steudtner set the world record of 26.2 m. The clifftop village of Sítio has a funicular of 1889, the church of Our Lady of Nazaré and the fort of São Miguel Arcanjo with its lighthouse (the wave-watching point); the fishwives' seven skirts and the festival of 8 September are local traditions.",
+    layout:
+      "The town has three parts: the beach quarter (Praia) on the flat by the sea, the old fishing village and resort with Nazaré beach; Sítio on the clifftop about 100 m above to the north, reached by the funicular from the beach quarter, with the church and square on top and the fort of São Miguel at the western tip of the headland, beyond which lies Praia do Norte; and Pederneira on the hillside to the east. The bus station is in the beach quarter.",
+    gettingAround:
+      "Nazaré has no airport; Lisbon Airport is about 120 km away, with direct buses of about 1.5–2 hours, and Porto about 2.5 hours. There is no railway. In town walk and take the funicular (a few minutes); Praia do Norte is about 20 minutes' walk from Sítio or a short drive. The climate is Mediterranean-maritime, with cool foggy summers and wet winters of big surf.",
+    culture:
+      "Portuguese is universal, with English in the tourist areas. Giant waves come from October to March on days with a big-swell forecast; the fort charges entry and the clifftop is windy — keep away from the edge and from the water's edge at Praia do Norte (dangerous); in summer the beach has lifeguarded zones. The fishwives' costume is seen at festivals and by the fish-drying racks — ask before photographing. Grilled fish and caldeirada fish stew are the local dishes. Tipping is optional.",
+    seeAndDo:
+      "The clifftop of Sítio, the church and the square; the fort of São Miguel with the surf museum and the lighthouse wave-watching deck; the giant waves of Praia do Norte (winter); the funicular; Nazaré beach and the fish-drying racks; the fishing harbour and market; the Pederneira viewpoint; day trips to the monasteries of Alcobaça and Batalha (World Heritage) and to Óbidos.",
+    whenAndTips:
+      "October–March for the giant waves (check the forecast; big-wave days are packed); June–September for the beach. Half a day to a day, combined with Óbidos, Alcobaça and Batalha. A day trip from Lisbon works.",
+  },
+  obidos: {
+    identity:
+      "Óbidos sits on a hill about 80 km north of Lisbon, the best-preserved medieval walled town in Portugal, with about 3,100 people within the walls. In 1210 Afonso II gave it to his queen, and for centuries it belonged to the queens of Portugal — hence the 'town of the queens'; the castle is now a state pousada hotel, the complete walls can be walked, and white houses trimmed in blue and yellow line the Rua Direita. Ginja cherry liqueur served in chocolate cups is its signature, the medieval fair in July and the international chocolate festival in March are the big events, and in 2015 UNESCO named it a City of Literature, with a dozen bookshops in town.",
+    layout:
+      "The town lies along the ridge inside the walls: the town gate (with its tiled chapel) is at the southern end, the Rua Direita runs north from the gate to the castle, the church of Santa Maria and the square lie midway, and the walls ring the whole town for about 1.5 km and can be climbed. The car park and bus stop lie outside the walls to the south. The Óbidos lagoon is about 8 km north-west on the coast, Nazaré about 40 km north and Caldas da Rainha about 6 km north-east.",
+    gettingAround:
+      "Óbidos has no airport; Lisbon Airport is about 80 km away. Direct buses from Lisbon's Campo Grande take about 1 hour; trains need a change and are slow. The town is walked entirely (steep cobbles); the lagoon and beaches need a car. The climate is Mediterranean with hot dry summers and mild winters.",
+    culture:
+      "Portuguese is universal, with English in the tourist areas. The walls have no railings — mind the wind and children; dress modestly in the churches. Ginja is sold by the cup at street kiosks. The medieval fair (July–August) is crowded and parts are ticketed; the Christmas village (December) brings lights. The bookshops occupy churches, markets and other old buildings. Tipping is optional.",
+    seeAndDo:
+      "Walking the walls; the Rua Direita and the tiled chapel of the town gate; the church of Santa Maria (tiled walls, paintings by Josefa de Óbidos); the castle (the pousada from outside); ginja in chocolate cups; the bookshops (the Santiago church bookshop); the Óbidos lagoon and beaches; the sixteenth-century aqueduct; day trips to Nazaré, Alcobaça and Batalha.",
+    whenAndTips:
+      "April–June and September–October are most comfortable; the medieval fair in July–August and the Christmas village in December are the liveliest. Half a day or a night (stay inside the walls for the empty dawn). Most often a day trip from Lisbon, and a stop on the way to Nazaré.",
+  },
+  "viana-do-castelo": {
+    identity:
+      "Viana do Castelo lies at the mouth of the Lima in the Minho region of northern Portugal about 60 km north of Porto, with about 86,000 people in the municipality (2021). A port of shipbuilding and deep-sea fishing in the Age of Discovery, it gained the Ponte Eiffel (designed by Eiffel's firm) across the Lima in 1882; the Sanctuary of the Sacred Heart begun in 1904 on the hill of Santa Luzia overlooks the estuary and coast and is the emblem of northern Portugal. The Romaria de Nossa Senhora da Agonia in August is one of Portugal's largest folk festivals, parading the Minho's traditional costume and gold filigree; the hospital ship Gil Eannes, which served the Newfoundland fishing fleet, is moored in the harbour as a museum, and Praia do Cabedelo across the river is a surf beach.",
+    layout:
+      "The old town lies on the north bank of the Lima, with the Praça da República (the fountain, the Misericórdia, the old town hall) at its centre, the cathedral and Renaissance buildings around it and the quays and the hospital ship on the river. The hill of Santa Luzia rises north of the town, with a funicular (Portugal's longest) climbing from beside the station to the sanctuary and an Iron Age settlement on top. The Ponte Eiffel stands east of the old town, leading to Darque and Cabedelo beach. The station lies on the northern edge of the old town.",
+    gettingAround:
+      "Viana do Castelo has no airport; Porto Airport is about 60 km away. Minho-line trains from Porto's Campanhã take about 1.5 hours, faster services about 1; buses are easy too. The old town is walkable, the funicular (about 7 minutes) or the steps climb Santa Luzia, and Cabedelo beach is reached by ferry or by bus over the bridge. The climate is temperate maritime, mild and wet.",
+    culture:
+      "Portuguese is universal, with English in the tourist areas. The sanctuary is a place of worship — dress modestly; the dome can be climbed. The August festival runs for several days with a giant procession, fireworks and streets carpeted with flowers — book lodging early. Minho's vinho verde, grilled cod and arroz de sarrabulho are the local tastes, and gold filigree the traditional craft. Tipping is optional.",
+    seeAndDo:
+      "The Santa Luzia sanctuary (funicular up, the dome climb); the Praça da República and the old town; the cathedral; the Gil Eannes hospital ship; the Ponte Eiffel; the costume museum (Minho traditional dress); surfing at Cabedelo; a boat on the Lima; the August festival; day trips to Ponte de Lima (one of Portugal's oldest towns) and the fortress of Valença.",
+    whenAndTips:
+      "May–September is best, with the festival in mid-August the liveliest; winters are wet. A day for the town. An easy day trip from Porto and a stop on the way north into Galicia.",
   },
 
   // ============ Belgium ============
@@ -5136,6 +5280,78 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is the most comfortable, also the best season for a boat trip in Giethoorn. Giethoorn gets busy in peak season (weekends, summer) — go on a weekday or early morning; public transport there is limited, so driving or a tour is more convenient.",
   },
 
+  // ── Netherlands batch 2 (2026-09-05) ──
+  eindhoven: {
+    identity:
+      "Eindhoven lies in the southern province of North Brabant, the fifth-largest city in the Netherlands with about 249,000 people (2025). Philips opened its light-bulb factory here in 1891 and the village grew into an industrial city; the old Philips works at Strijp-S are now a creative quarter, and with DAF Trucks, ASML in neighbouring Veldhoven and the High Tech Campus, Eindhoven is the heart of the 'Brainport' technology region, while the university of technology and the Design Academy underpin Dutch Design Week each October. The Van Abbemuseum holds modern art, PSV is one of the great Dutch football clubs, and Van Gogh lived and painted in nearby Nuenen.",
+    layout:
+      "The centre surrounds the station and the market square, with the pedestrian streets and shops south of the station; Strijp-S lies about 2 km north-west in the old factory district, and the Evoluon (the flying-saucer former science museum) to the west; the Van Abbemuseum stands by the canal south of the centre, the Philips Museum in the centre and the PSV stadium north-west of it. The High Tech Campus lies in the south. Nuenen is about 8 km north-east, the airport about 8 km west.",
+    gettingAround:
+      "Eindhoven Airport (EIN), about 8 km from the centre, is the second-largest passenger airport in the Netherlands, dominated by Ryanair, Transavia and other leisure carriers, with a bus of about 20 minutes to the station. Intercity trains take about 1 hour 20 from Amsterdam, about 50 minutes from Utrecht and about 1 hour from Maastricht. Buses are frequent, the centre is walkable and a hire bicycle is easiest; Nuenen is a bus ride. The climate is temperate maritime.",
+    culture:
+      "Dutch is universal and almost everyone speaks English. During Design Week (October) Strijp-S and the whole city fill with exhibitions and lodging is tight. The stadium area is lively on PSV match days. The weekend market and restaurants of Strijp-S are local life. Eindhoven calls itself the city of light and holds the GLOW light festival in November. Tipping is optional.",
+    seeAndDo:
+      "The Strijp-S creative quarter (weekend market, restaurants, studios); the Van Abbemuseum; the Philips Museum; the Evoluon; the PSV museum and stadium; the DAF museum; the 'Blob' building in the centre; Van Gogh's Nuenen and the glowing Van Gogh–Roosegaarde cycle path; Dutch Design Week (October) and GLOW (November).",
+    whenAndTips:
+      "May–September is most comfortable, with Design Week in October and GLOW in November the most rewarding but crowded. A day for the city. The gateway to the southern Netherlands via its airport, linked with Maastricht and 's-Hertogenbosch.",
+  },
+  arnhem: {
+    identity:
+      "Arnhem is the capital of Gelderland, on the north bank of the Nederrijn, with about 162,000 people (2021). In September 1944 British paratroopers fought for the Rhine bridge here in Operation Market Garden — the 'bridge too far' — commemorated by the John Frost Bridge and the Airborne Museum at Oosterbeek. The Netherlands Open Air Museum north of the city gathers old houses and windmills from across the country, Burgers' Zoo is known for its ecosystem halls and Sonsbeek is an English landscape park within the city; in the Hoge Veluwe National Park to the north stands the Kröller-Müller Museum, with the second-largest collection of Van Gogh. Arnhem is the only Dutch city with trolleybuses.",
+    layout:
+      "The centre climbs the slope on the north bank of the Rhine, with the central station in the north-west, the shopping district in the middle and the John Frost Bridge crossing the river to the south-east; Sonsbeek Park lies north of the centre, with the Open Air Museum and Burgers' Zoo about 3 km further north. Oosterbeek (the Airborne Museum, the British war cemetery) lies about 5 km west. The Hoge Veluwe National Park is about 15 km north (Otterlo entrance), with the Kröller-Müller Museum inside it.",
+    gettingAround:
+      "Arnhem has no airport; the nearest are Schiphol (about 100 km) and Eindhoven. Intercity trains take about 1 hour 10 from Amsterdam and about 35 minutes from Utrecht, and ICE trains about 1.5 hours from Cologne. The city has trolleybuses and buses, and the centre is walkable; the trolleybus reaches the Open Air Museum and the zoo, the Kröller-Müller is reached by train to Ede or Arnhem plus bus, and inside the park you ride the free white bicycles. The climate is temperate maritime.",
+    culture:
+      "Dutch is universal and English widespread. The Airborne Museum and the cemetery are memorial sites — keep quiet; commemorations are held each September. The Open Air Museum demonstrates old crafts and the zoo's halls follow set routes. Allow half a day for the sculpture garden and Van Goghs of the Kröller-Müller, with the park entry charged separately. Tipping is optional.",
+    seeAndDo:
+      "The John Frost Bridge and the airborne memorials; the Airborne Museum and the British cemetery at Oosterbeek; the Netherlands Open Air Museum; Burgers' Zoo; Sonsbeek Park; the white bicycles of the Hoge Veluwe National Park; the Kröller-Müller Museum (Van Gogh, the sculpture garden); the Rhine riverside path; the tower of the Eusebius church in the centre.",
+    whenAndTips:
+      "May–September is most comfortable, with the commemorations in September and the Veluwe forests in autumn colour. Half a day to a day for the city, a day for the park and the museum. A day trip from Amsterdam works.",
+  },
+  giethoorn: {
+    identity:
+      "Giethoorn lies in the wetlands of north-western Overijssel, with about 2,800 people, and is the best-known water village in the Netherlands, called the 'Venice of the North': the old village has no roads, a canal threads between thatched farmhouses, 176 wooden bridges link the banks, and transport is by small boat and 'whisper boat' (quiet electric launches). It began with medieval peat digging, whose channels and lakes became today's landscape; the village adjoins the Weerribben-Wieden National Park, the largest lowland peat bog in the Netherlands, and the canals can be skated when they freeze in winter. In 2015 it was chosen for the international edition of Monopoly.",
+    layout:
+      "The village runs along a north–south main canal (the Dorpsgracht) and the parallel footpath (the Binnenpad), with the thatched farms and little bridges on both banks and the museum and restaurants midway along; the southern end opens onto the Bovenwijde lake. Cars stop at car parks outside the village. Steenwijk, about 5 km north-west, is the nearest station; Zwolle lies about 35 km south.",
+    gettingAround:
+      "Giethoorn has no airport; from Amsterdam take the train to Steenwijk in about 1.5 hours (via Zwolle) and then the 70 bus for about 15 minutes; by car it is about 1.5 hours from Amsterdam. In the village walk, cycle or hire a boat (no licence needed for whisper boats) — the water is the best way to see it, and guided tour boats run in high season. The climate is temperate maritime, with occasional winter ice for skating.",
+    culture:
+      "Dutch is universal, English widespread, and Chinese signage common in high season. The farmhouses are mostly private homes — stay out of gardens and don't photograph through windows; the canals are narrow, so keep right, go slowly and mind the bridges. Crowds are heavy in high season (July–August and weekends), and early morning and evening are quietest. Restaurants serve Dutch pancakes and local eel. Tipping is optional.",
+    seeAndDo:
+      "A walk along the Binnenpad past the thatched farms and bridges; a whisper boat or rowing boat through the village; the village museum ('t Olde Maat Uus); boating on the Bovenwijde; the wetland trails and kayaking of Weerribben-Wieden National Park; skating on the canals in a freezing winter; the Blauwe Bos woods nearby.",
+    whenAndTips:
+      "April–October is best, with fewer people in May–June and September; July–August is packed. Half a day to a day, or a night to see the empty village at dawn. A day trip from Amsterdam works.",
+  },
+  middelburg: {
+    identity:
+      "Middelburg is the capital of Zeeland, in the middle of the former island of Walcheren, with about 49,000 people (2021). In the seventeenth century it housed the Dutch East India Company's chamber second only to Amsterdam, and merchants' houses and the fifteenth-century Gothic town hall recall that prosperity; the 'Lange Jan' tower of the abbey complex is the city's emblem, and the town's spectacle-makers (Lipperhey, Janssen) of the late sixteenth and early seventeenth centuries are linked to the invention of the telescope and microscope. Bombing on 17 May 1940 destroyed about a third of the old town, rebuilt after the war on the old lines. The old harbour of Veere, the beaches of Domburg and the Oosterschelde storm-surge barrier, the centrepiece of the Delta Works, lie close by.",
+    layout:
+      "The old town is ringed by canals and star-shaped ramparts, with the market square and the town hall in the centre and the abbey complex (the Lange Jan, the Zeeuws Museum, the provincial government) east of the square; old warehouses and merchants' houses line the canals of the old harbour. The station lies across the canal on the south side of the old town. Veere is about 7 km north-east, Domburg and its beaches about 15 km north-west, the Oosterschelde barrier about 25 km north and Vlissingen about 8 km south.",
+    gettingAround:
+      "Middelburg has no airport; from Schiphol the direct intercity train takes about 2.5 hours, from Rotterdam about 1.5. The old town is walkable; cycling is best for Veere and Domburg (Zeeland's paths are flat), and the barrier is reached by bus or car. The climate is temperate maritime, windy and sunny.",
+    culture:
+      "Dutch is universal, English widespread, and the Zeeland dialect survives. Thursday is the traditional market day, and summer brings 'ringrijden' (tilting at rings on horseback). The abbey and the Lange Jan can be climbed; the Zeeuws Museum shows Zeeland costume and tapestries. Zeeland is known for mussels, oysters and lobster (mussel season July–April). Tipping is optional.",
+    seeAndDo:
+      "The abbey complex and the climb up the Lange Jan; the town hall; the Zeeuws Museum; a walk along the canals and old warehouses; the old harbour and great church of Veere; Domburg's beach and dunes; the Oosterschelde storm-surge barrier and the Neeltje Jans delta park; Zeeland mussels; summer ring-riding.",
+    whenAndTips:
+      "May–September is most comfortable, with the beaches lively in summer; winter is windy and quiet. Half a day for the old town, half a day to a day for Veere and the coast. The hub of a Zeeland delta route.",
+  },
+  alkmaar: {
+    identity:
+      "Alkmaar lies in North Holland about 40 km north of Amsterdam, with about 113,000 people (2022), and is famous for its cheese market: from the first Friday of April to the first Friday of September, every Friday morning on the square before the Waag, carriers in white with coloured hats bear cheeses on stretchers and trade them in the manner of centuries past — a tradition going back to the weighing rights of 1365. In 1573 Alkmaar repulsed the Spanish siege, a turning point of the Dutch Revolt, and 'victory begins at Alkmaar' became a saying. The old town has nearly 400 listed buildings ringed by canals; the beaches and dunes of Egmond and Bergen lie about 10 km west.",
+    layout:
+      "The old town fills an oval ringed by canals: the Waag and the cheese market are on the Waagplein on the east side, the Grote Sint-Laurenskerk at the western end, the Langestraat shopping street joins the two, and canals (the Oudegracht and others) and old houses fill the middle. The station lies north-west of the old town. Egmond's beach is about 10 km west, Bergen to the north-west and the Zaanse Schans windmills about 25 km south.",
+    gettingAround:
+      "Alkmaar has no airport; Schiphol is about 40 km away. Trains take about 35 minutes from Amsterdam Centraal and about 45 from Schiphol. The old town is walkable, a hire bicycle reaches the beach in about 30 minutes, and canal boats run. The climate is temperate maritime.",
+    culture:
+      "Dutch is universal and English widespread. The cheese market runs Fridays 10:00–12:30 — arrive early for a spot on the square, and the cheese museum beside it explains the trading; market days are very crowded. The church and the Waag are historic buildings. Dutch cheeses (Gouda, Edam, old Alkmaar) and herring are the local tastes. Tipping is optional.",
+    seeAndDo:
+      "The Friday cheese market, the Waag and the cheese museum; the Grote Sint-Laurenskerk (the organ); a canal cruise; the National Beer Museum and the Beatles Museum (Lennon and Alkmaar) in the old town; the city museum; Egmond's beach and lighthouse; the artists' village and woods of Bergen; a day at the Zaanse Schans.",
+    whenAndTips:
+      "Fridays from April to September for the cheese market; summer pairs with the beach. Half a day to a day. A very easy day trip from Amsterdam.",
+  },
+
   // ============ Austria ============
   "austria-overview": {
     identity:
@@ -5315,6 +5531,78 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The lakeside path around the Zeller See and swimming; the Kitzsteinhorn cable car (year-round snow at the summit, with views over the Hohe Tauern peaks); day trips to the Krimml Waterfalls or Hohe Tauern National Park.",
     whenAndTips:
       "December–April is peak ski season (the Kitzsteinhorn's year-round snow extends the season); June–September is peak season for lakeside summer activities and hiking — one of Austria's rare destinations with both a winter ski season and a summer lake season.",
+  },
+
+  // ── Austria batch 2 (2026-09-05) ──
+  "sankt-polten": {
+    identity:
+      "Sankt Pölten is the capital of Lower Austria, on the Traisen river about 60 km west of Vienna, with about 60,000 people (2025). Built on the site of the Roman town of Aelium Cetium, it was among the first Austrian towns to receive a charter (1159); in 1986 the Lower Austrian parliament resolved to move the state capital here from Vienna, and the government arrived in 1997, so beside the Baroque old town stands a government quarter built in the 1990s, with the Klangturm sound tower and the Festspielhaus as its landmarks. It is the midway stop between Vienna and the Wachau valley.",
+    layout:
+      "The Baroque old town is compact: the Rathausplatz (the Franciscan church, the town hall) is the centre, the cathedral lies to its north-east and pedestrian streets join the two; the government quarter (the state parliament, the Klangturm, the Festspielhaus, the state museum) lies south-east of the old town by the Traisen. The station is about 10 minutes' walk north of the old town. Melk and Krems in the Wachau are both about 30 km north, and Lilienfeld Abbey about 25 km south.",
+    gettingAround:
+      "St. Pölten has no airport; the nearest is Vienna International (about 85 km, about 1 hour by direct Railjet). Railjet trains on the Western line take about 25 minutes from Vienna's Westbahnhof, about 50 from Linz and about 1.5 hours from Salzburg. The town is walkable, with buses; regional trains or buses reach the Wachau. The climate is temperate continental with warm summers and cold winters.",
+    culture:
+      "German is universal. The cathedral and the Franciscan church are working churches — no visits during services. The state museum is free or cheap and the Klangturm can be climbed. Markets are held in the old town on Thursdays and Saturdays. Lower Austrian food includes Most (pear cider), roasts and Wachau apricot desserts. Tip about 10% in restaurants.",
+    seeAndDo:
+      "The Rathausplatz and the Franciscan church; the cathedral; the government quarter and the Klangturm; the state museum (Museum Niederösterreich); a performance at the Festspielhaus; the Traisen riverside path; day trips to the Wachau (Melk Abbey, Krems, Dürnstein) and Lilienfeld Abbey.",
+    whenAndTips:
+      "May–September is most comfortable, with apricot blossom in early April (in the Wachau). Half a day for the town, a full day with the Wachau. An easy day trip from Vienna.",
+  },
+  krems: {
+    identity:
+      "Krems lies at the eastern end of the Wachau valley of the Danube about 70 km west of Vienna, with about 25,000 people (2023) — one of Austria's oldest towns (first recorded in 995, with a child's grave 27,000 years old found in the town). The Wachau — the roughly 35 km stretch of the Danube from Melk to Krems — is known for its terraced vineyards, apricot trees, abbeys and old towns and was inscribed as a World Heritage site in 2000; Krems is a major producer of Grüner Veltliner and Riesling, the Steiner Tor of 1480 is the old town's emblem, and the 'Kunstmeile' art mile holds the caricature museum and the state gallery. Göttweig Abbey crowns the hill across the river, and Dürnstein, where Richard the Lionheart was held captive, lies about 8 km upstream.",
+    layout:
+      "The old town of Krems climbs the slope on the north bank of the Danube, with the Steiner Tor at its western end, the pedestrian street and the Rathausplatz inside, and the Kunstmeile (the state gallery, the caricature museum) on the south-west edge by the river. Stein is a second old quarter joined to Krems on the west. The station lies on the south side of the old town by the river. Göttweig Abbey stands on the hill on the south bank (about 6 km), Dürnstein about 8 km upstream, and the Danube cycle path runs through.",
+    gettingAround:
+      "Krems has no airport; the nearest is Vienna (about 90 km). Trains from Vienna's Franz-Josefs-Bahnhof take about 1 hour; from April to October Danube boats run from Vienna to Krems, Dürnstein and Melk. The old town is walkable; Dürnstein is a train ride (about 10 minutes), a boat or a bicycle ride away, and Göttweig a bus or a walk uphill. The climate is temperate, with warm summers in the valley that suit the vines.",
+    culture:
+      "German is universal. The Wachau's wineries and 'Heuriger' taverns (marked by a hung bundle of pine) open seasonally — mind the drink-driving limit; apricot season (July) brings an apricot festival and apricot brandy. Göttweig is a Benedictine abbey — keep quiet. The Danube cycle path (Passau–Vienna) passes through and bicycles are easy to hire. Tip about 10% in restaurants.",
+    seeAndDo:
+      "The Steiner Tor and the old town; the Kunstmeile (the state gallery, the caricature museum); the old streets of Stein; Göttweig Abbey (the terrace over the valley); Dürnstein (the blue church tower, the castle ruin); cycling or a boat through the Wachau to Melk; winery tastings (Grüner Veltliner); farm stalls in apricot season.",
+    whenAndTips:
+      "Early April for blossom, July for apricots and September–October for the harvest are best; boats stop and taverns close in winter. Half a day for Krems, a day for the Wachau. An easy day trip from Vienna, or a night in Dürnstein.",
+  },
+  "bad-ischl": {
+    identity:
+      "Bad Ischl lies in the Salzkammergut of Upper Austria where the Ischl meets the Traun, with about 14,000 people. Brine cures made it a fashionable spa in the nineteenth century; in 1854 the mother of Emperor Franz Joseph I gave him the Kaiservilla as a wedding present, and for nearly sixty years he spent every summer here — on 28 July 1914 he signed the declaration of war on Serbia in the villa. The composer Lehár lived here, Brahms and Bruckner visited, and the Zauner pastry shop founded in 1832 served the court. In 2024 Bad Ischl and the Salzkammergut were European Capital of Culture, with Hallstatt and the Wolfgangsee close by.",
+    layout:
+      "The town sits in the valley where the two rivers meet, with the pedestrian Pfarrgasse, the Zauner café and the parish church at the centre on the east bank of the Traun, the Kaiservilla and its park at the foot of the hill on the west bank, and the Lehár Villa on the Traun. The station lies south of the centre. The salt mine is in the hills to the south-east. Hallstatt is about 20 km south, the Wolfgangsee about 10 km west, and Gmunden and the Traunsee about 30 km north.",
+    gettingAround:
+      "Bad Ischl has no airport; the nearest is Salzburg (about 55 km, about 1 hour by road). Trains take about 2 hours from Salzburg via Attnang-Puchheim and about 2 from Linz; the 150 bus from Salzburg is more direct at about 1.5 hours. The town is walkable; Hallstatt is about 25 minutes by train and the Wolfgangsee a bus ride. The climate is temperate mountain, with cool wet summers and snowy winters.",
+    culture:
+      "German is universal. The Kaiservilla still belongs to the imperial descendants and is seen by guided tour without interior photography; the Lehár Villa opens in summer. Zauner's Zaunerstollen and the Kaiser coffee are the tradition. Commemorations are held on 18 August, the emperor's birthday, and the Lehár Festival runs in summer. The EurothermenResort offers brine baths. Tip about 10% in restaurants.",
+    seeAndDo:
+      "The Kaiservilla and its park (the Marble Palace); the Lehár Villa; the Zauner pastry shop; the pedestrian street and the town museum; the salt-mine tour; the Katrin cable car; the brine spa; day trips to Hallstatt, the Wolfgangsee (St. Wolfgang, the Schafberg rack railway), the Gosau lakes and the Traunsee.",
+    whenAndTips:
+      "June–September is most comfortable, with the imperial commemoration and the festival in August; winter is quiet and snowy. Half a day to a day for the town, and two or three nights as a base for the Salzkammergut lakes.",
+  },
+  eisenstadt: {
+    identity:
+      "Eisenstadt is the capital of Burgenland, Austria's easternmost state, at the southern foot of the Leitha hills about 50 km south-east of Vienna, with about 16,000 people (2025) — the smallest state capital in Austria. The Esterházy palace is the heart of the town; Joseph Haydn served the Esterházy princes here from 1761 for nearly thirty years, his house is a museum and his remains lie in the Bergkirche; the Jewish quarter established in 1732 was one of the historic 'Seven Communities', and the Austrian Jewish Museum stands within it. Eisenstadt became the capital after Burgenland joined Austria in 1925. About 10 km east lies the Neusiedler See, a World Heritage cultural landscape since 2001, surrounded by vineyards.",
+    layout:
+      "The old town is tiny: the Esterházy palace stands at its western end, with the main square and the pedestrian Hauptstraße in front, Haydn's house on the Hauptstraße, the Bergkirche on the hill west of the palace and the Jewish quarter north of it. The station lies south-east of the old town. Rust on the Neusiedler See (storks' nests and wine village) is about 15 km south-east, and Mörbisch on the lake stages a summer operetta festival on the water.",
+    gettingAround:
+      "Eisenstadt has no airport; Vienna International is about 45 km away. Trains from Vienna take about 1 hour 15 (changing at Neusiedl or Wiener Neustadt), buses about 1 hour. The old town is walkable; buses or bicycles (a cycle path rings the lake) reach the Neusiedler See. The climate is continental, with hot dry summers — one of the sunniest parts of Austria.",
+    culture:
+      "German is universal, with Croatian and Hungarian minority communities. The Haydn Hall of the palace is famed for its acoustics, and the Haydn Festival is held in September; the Bergkirche is a working church, with Haydn's mausoleum in a side chapel. Keep quiet in the Jewish museum and cemetery. Burgenland wines (Blaufränkisch, sweet wines) are tasted in the taverns of Rust. Tip about 10% in restaurants.",
+    seeAndDo:
+      "The Esterházy palace (the Haydn Hall, the palace gardens); Haydn's house; the Bergkirche, Haydn's mausoleum and the Calvary; the Jewish quarter and the Austrian Jewish Museum; the state museum; the Neusiedler See (the storks of Rust, the lake stage at Mörbisch, cycling round the lake); the vineyard trails of the Leitha hills; the Haydn Festival in September.",
+    whenAndTips:
+      "May–September is most comfortable, with the Mörbisch lake festival in July–August and the Haydn Festival in September; winter is quiet. Half a day for the town, half a day to a day for the lake. An easy day trip from Vienna.",
+  },
+  "st-anton": {
+    identity:
+      "St. Anton lies below the Arlberg pass at the western end of Tyrol at about 1,300 m, with about 2,400 permanent residents, and is one of the cradles of Alpine skiing: the Arlberg Ski Club founded in 1901 and Hannes Schneider's ski school of 1921 laid the foundations of modern ski teaching, and in the 1930s instructors from here carried skiing to America. The Arlberg ski area (St. Anton, Lech, Zürs and others, fully linked by lift in 2016) has 94 lifts and 340 km of pistes, the largest in Austria, with the Valluga at 2,811 m; the Alpine World Ski Championships were held here in 2001. In summer it is a base for hiking and climbing, and the Arlberg railway and tunnel put it on the Vienna–Zurich main line.",
+    layout:
+      "The village stretches east–west along the Rosanna valley, with the pedestrian street as its centre, the Galzigbahn cable car at the western end and the station on the south side; St. Christoph lies about 5 km up below the Arlberg pass, and Lech and Zürs across the pass in Vorarlberg. The pistes run straight up from the village lifts to the Galzig, the Valluga and the Rendl. Summer trails start from the top lift stations.",
+    gettingAround:
+      "St. Anton has no airport; the nearest are Innsbruck (about 100 km, about 1 hour 15 by train) and Zurich (about 200 km, about 2.5 hours by train). Railjets reach the village station directly in about 5.5 hours from Vienna, 1 hour 15 from Innsbruck and 2.5 hours from Zurich. The village is walkable, free ski buses link the lifts and St. Christoph, and Lech is about 30 minutes by bus. The climate is alpine, snowy in winter and cool in summer.",
+    culture:
+      "German is universal and English is widespread in winter. Ski within the marked pistes; off-piste and deep snow need a guide and avalanche gear; the lift pass covers the whole Arlberg. St. Anton is famous for après-ski, with bars such as the MooserWirt in full swing from mid-afternoon. The ski museum is in the village. Mountain weather changes fast in summer. Tip about 10% in restaurants.",
+    seeAndDo:
+      "Winter skiing (the Galzig, the Valluga, the Rendl, the 'White Ring' circuit to Lech); the Valluga viewing platform; après-ski; the Arlberg ski museum; summer hiking (the Verwall hut, the Verwallsee) and mountain biking; the Arlberg WellCom pool; the villages of Lech and Zürs.",
+    whenAndTips:
+      "December–April is ski season (best snow in January–February; Christmas and February the busiest and dearest), July–September the summer hiking season; most facilities close in May–June and October–November. Book winter lodging months ahead. The direct train is the easiest way in.",
   },
 
   // ============ Ireland ============
