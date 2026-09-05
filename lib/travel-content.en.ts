@@ -5708,7 +5708,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Mactan-Cebu International Airport is on Mactan Island, about 16 km from the city centre, reachable via the causeway bridge; taxis and Grab are readily available within the city, with ferries or fast boats needed to reach nearby islands.",
     culture:
-      "The official languages are Filipino and English, with the local Cebuano (Visayan) language widely used in daily life. Cebu is where Catholicism first took root in the Philippines, and the Santo Niño de Cebu enshrined in the Basilica del Santo Niño is an important religious and cultural landmark. Restaurant bills often already include service.",
+      "The official languages are Filipino and English, with the local Cebuano (Visayan) language widely used in daily life. In 1521, Magellan's expedition baptised the rulers of Cebu here and gave them the Santo Niño image as a baptismal gift; that same image has been venerated ever since and is the oldest Christian relic in the Philippines (the country's actual first Mass was held a few days earlier on Limasawa Island in Southern Leyte, with Cebu as the site of the baptism that followed). Restaurant bills often already include service.",
     seeAndDo:
       "Magellan's Cross and the Basilica del Santo Niño; Fort San Pedro; beach resorts on Mactan Island; local specialties such as Cebu lechon (roast pig); island-hopping to nearby islands (on the outskirts).",
     whenAndTips:
