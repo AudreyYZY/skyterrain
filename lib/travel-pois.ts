@@ -2807,6 +2807,51 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "帕侬蓝历史公园", nameEn: "Phanom Rung Historical Park", lon: 102.9375, lat: 14.5308, kind: "landmark" },
     { nameZh: "考艾山国家公园", nameEn: "Khao Yai National Park", lon: 101.3725, lat: 14.4386, kind: "nature" },
   ],
+  // ── 泰国 批2（2026-09-05）──
+  kanchanaburi: [
+    { nameZh: "桂河大桥", nameEn: "Bridge over the River Kwai", lon: 99.5040, lat: 14.0410, kind: "landmark" },
+    { nameZh: "北碧战争公墓", nameEn: "Kanchanaburi War Cemetery", lon: 99.5250, lat: 14.0270, kind: "landmark" },
+    { nameZh: "泰缅铁路中心", nameEn: "Thailand–Burma Railway Centre", lon: 99.5250, lat: 14.0280, kind: "landmark" },
+    { nameZh: "地狱火通道", nameEn: "Hellfire Pass", lon: 98.9560, lat: 14.3580, kind: "landmark" },
+    { nameZh: "爱侣湾瀑布", nameEn: "Erawan Falls", lon: 99.1440, lat: 14.3690, kind: "nature" },
+    { nameZh: "北碧火车站", nameEn: "Kanchanaburi Station", lon: 99.5200, lat: 14.0230, kind: "transport" },
+  ],
+  lampang: [
+    { nameZh: "南邦銮寺", nameEn: "Wat Phra That Lampang Luang", lon: 99.3880, lat: 18.2160, kind: "landmark" },
+    { nameZh: "空达老街（周末夜市）", nameEn: "Kad Kong Ta Walking Street", lon: 99.5000, lat: 18.2930, kind: "district" },
+    { nameZh: "拉差纳达拉桥", nameEn: "Ratsadaphisek Bridge", lon: 99.4980, lat: 18.2900, kind: "landmark" },
+    { nameZh: "泰国大象保护中心", nameEn: "Thai Elephant Conservation Center", lon: 99.3050, lat: 18.3950, kind: "nature" },
+    { nameZh: "南邦火车站", nameEn: "Nakhon Lampang Station", lon: 99.4830, lat: 18.2820, kind: "transport" },
+  ],
+  "hat-yai": [
+    { nameZh: "金荣市场", nameEn: "Kim Yong Market", lon: 100.4700, lat: 7.0080, kind: "district" },
+    { nameZh: "合艾市立公园（大佛与缆车）", nameEn: "Hat Yai Municipal Park", lon: 100.4900, lat: 6.9950, kind: "nature" },
+    { nameZh: "合艾火车站", nameEn: "Hat Yai Junction", lon: 100.4700, lat: 7.0060, kind: "transport" },
+    { nameZh: "宋卡老城", nameEn: "Songkhla Old Town", lon: 100.5900, lat: 7.1990, kind: "district" },
+    { nameZh: "沙米拉海滩（美人鱼像）", nameEn: "Samila Beach", lon: 100.5950, lat: 7.2100, kind: "nature" },
+  ],
+  "ko-chang": [
+    { nameZh: "白沙滩", nameEn: "White Sand Beach", lon: 102.2900, lat: 12.1200, kind: "nature" },
+    { nameZh: "孤独海滩", nameEn: "Lonely Beach", lon: 102.2900, lat: 12.0300, kind: "nature" },
+    { nameZh: "邦宝渔村", nameEn: "Bang Bao Fishing Village", lon: 102.3100, lat: 11.9900, kind: "district" },
+    { nameZh: "空普瀑布", nameEn: "Khlong Phlu Waterfall", lon: 102.3300, lat: 12.0800, kind: "nature" },
+    { nameZh: "菠萝湾渡口", nameEn: "Ao Sapparot Ferry Pier", lon: 102.3400, lat: 12.1600, kind: "transport" },
+  ],
+  "khao-lak": [
+    { nameZh: "南通海滩", nameEn: "Nang Thong Beach", lon: 98.2520, lat: 8.6550, kind: "nature" },
+    { nameZh: "邦娘海滩与海啸纪念（813号巡逻艇）", nameEn: "Bang Niang Beach & Boat 813 Memorial", lon: 98.2600, lat: 8.6850, kind: "landmark" },
+    { nameZh: "考拉—蓝鲁国家公园", nameEn: "Khao Lak–Lam Ru National Park", lon: 98.2400, lat: 8.6200, kind: "nature" },
+    { nameZh: "塔迈昂码头（斯米兰出海）", nameEn: "Thap Lamu Pier (Similan boats)", lon: 98.2200, lat: 8.5600, kind: "transport" },
+    { nameZh: "达瓜巴老城", nameEn: "Takua Pa Old Town", lon: 98.3500, lat: 8.8700, kind: "district" },
+  ],
+  "ko-lanta": [
+    { nameZh: "沙拉丹码头", nameEn: "Saladan Pier", lon: 99.0400, lat: 7.6350, kind: "transport" },
+    { nameZh: "长滩", nameEn: "Long Beach (Phra Ae)", lon: 99.0350, lat: 7.6000, kind: "nature" },
+    { nameZh: "兰塔老镇", nameEn: "Lanta Old Town", lon: 99.0850, lat: 7.5300, kind: "district" },
+    { nameZh: "兰塔群岛国家公园灯塔", nameEn: "Mu Ko Lanta National Park Lighthouse", lon: 99.0980, lat: 7.4750, kind: "nature" },
+    { nameZh: "干藤海滩", nameEn: "Kantiang Bay", lon: 99.0700, lat: 7.4900, kind: "nature" },
+  ],
+
   // 韩国
   seoul: [
     { nameZh: "南山首尔塔", nameEn: "N Seoul Tower", lon: 126.9883, lat: 37.5512, kind: "landmark" },
@@ -2885,6 +2930,54 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "庆基殿", nameEn: "Gyeonggijeon Shrine", lon: 127.1478, lat: 35.8158, kind: "landmark" },
     { nameZh: "南部市场", nameEn: "Nambu Market", lon: 127.1439, lat: 35.8117, kind: "district" },
   ],
+  // ── 韩国 批2（2026-09-05）──
+  incheon: [
+    { nameZh: "仁川中华街", nameEn: "Incheon Chinatown", lon: 126.6190, lat: 37.4750, kind: "district" },
+    { nameZh: "开港场历史街区", nameEn: "Open Port Area", lon: 126.6220, lat: 37.4730, kind: "district" },
+    { nameZh: "月尾岛", nameEn: "Wolmido", lon: 126.5980, lat: 37.4740, kind: "nature" },
+    { nameZh: "松岛中央公园", nameEn: "Songdo Central Park", lon: 126.6390, lat: 37.3930, kind: "nature" },
+    { nameZh: "仁川大桥", nameEn: "Incheon Bridge", lon: 126.5700, lat: 37.4000, kind: "landmark" },
+    { nameZh: "江华岛", nameEn: "Ganghwa Island", lon: 126.4870, lat: 37.7470, kind: "nature" },
+  ],
+  suwon: [
+    { nameZh: "水原华城·八达门", nameEn: "Hwaseong Fortress (Paldalmun)", lon: 127.0180, lat: 37.2770, kind: "landmark" },
+    { nameZh: "华城行宫", nameEn: "Hwaseong Haenggung", lon: 127.0140, lat: 37.2820, kind: "landmark" },
+    { nameZh: "八达山·西将台", nameEn: "Paldalsan & Seojangdae", lon: 127.0100, lat: 37.2800, kind: "nature" },
+    { nameZh: "华虹门", nameEn: "Hwahongmun Gate", lon: 127.0190, lat: 37.2880, kind: "landmark" },
+    { nameZh: "水原站", nameEn: "Suwon Station", lon: 127.0000, lat: 37.2660, kind: "transport" },
+  ],
+  daegu: [
+    { nameZh: "西门市场", nameEn: "Seomun Market", lon: 128.5820, lat: 35.8690, kind: "district" },
+    { nameZh: "药令市（韩医药博物馆）", nameEn: "Yangnyeongsi Herbal Medicine Market", lon: 128.5900, lat: 35.8680, kind: "district" },
+    { nameZh: "金光石街", nameEn: "Kim Gwangseok Street", lon: 128.6080, lat: 35.8600, kind: "district" },
+    { nameZh: "八公山桐华寺", nameEn: "Donghwasa (Palgongsan)", lon: 128.7000, lat: 35.9930, kind: "landmark" },
+    { nameZh: "前山展望台", nameEn: "Apsan Observatory", lon: 128.5800, lat: 35.8250, kind: "nature" },
+    { nameZh: "东大邱站", nameEn: "Dongdaegu Station", lon: 128.6280, lat: 35.8790, kind: "transport" },
+  ],
+  gwangju: [
+    { nameZh: "国立亚洲文化殿堂", nameEn: "Asia Culture Center", lon: 126.9200, lat: 35.1470, kind: "landmark" },
+    { nameZh: "5·18民主广场", nameEn: "May 18 Democracy Square", lon: 126.9190, lat: 35.1480, kind: "landmark" },
+    { nameZh: "杨洞市场", nameEn: "Yangdong Market", lon: 126.9000, lat: 35.1530, kind: "district" },
+    { nameZh: "无等山国立公园（立石台）", nameEn: "Mudeungsan National Park (Ipseokdae)", lon: 126.9900, lat: 35.1200, kind: "nature" },
+    { nameZh: "光州松汀站", nameEn: "Gwangju Songjeong Station", lon: 126.7930, lat: 35.1380, kind: "transport" },
+  ],
+  daejeon: [
+    { nameZh: "世博公园与世博桥", nameEn: "Expo Science Park & Expo Bridge", lon: 127.3900, lat: 36.3750, kind: "landmark" },
+    { nameZh: "国立中央科学馆", nameEn: "National Science Museum", lon: 127.3760, lat: 36.3760, kind: "landmark" },
+    { nameZh: "圣心堂面包店", nameEn: "Sungsimdang Bakery", lon: 127.4270, lat: 36.3280, kind: "landmark" },
+    { nameZh: "儒城温泉足浴", nameEn: "Yuseong Hot Spring Foot Spa", lon: 127.3430, lat: 36.3550, kind: "nature" },
+    { nameZh: "韩田树木园", nameEn: "Hanbat Arboretum", lon: 127.3860, lat: 36.3680, kind: "nature" },
+    { nameZh: "大田站（KTX）", nameEn: "Daejeon Station", lon: 127.4340, lat: 36.3320, kind: "transport" },
+  ],
+  tongyeong: [
+    { nameZh: "东崖壁画村", nameEn: "Dongpirang Mural Village", lon: 128.4280, lat: 34.8440, kind: "district" },
+    { nameZh: "弥勒山缆车", nameEn: "Mireuksan Cable Car", lon: 128.4110, lat: 34.8180, kind: "transport" },
+    { nameZh: "江口岸与龟船", nameEn: "Gangguan Harbour & Turtle Ship", lon: 128.4240, lat: 34.8420, kind: "landmark" },
+    { nameZh: "统营中央市场", nameEn: "Tongyeong Central Market", lon: 128.4250, lat: 34.8430, kind: "district" },
+    { nameZh: "闲山岛制胜堂", nameEn: "Hansando Jeseungdang", lon: 128.4760, lat: 34.8040, kind: "landmark" },
+    { nameZh: "西崖", nameEn: "Seopirang", lon: 128.4200, lat: 34.8420, kind: "nature" },
+  ],
+
   // ── 波兰 ──
   warsaw: [
     { nameZh: "老城广场与皇家城堡", nameEn: "Old Town Market Square & Royal Castle", lon: 21.0139, lat: 52.2489, kind: "landmark" },
@@ -3000,6 +3093,52 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "白亭寺", nameEn: "Bai Dinh Pagoda", lon: 105.8642, lat: 20.2611, kind: "landmark" },
     { nameZh: "木庵溶洞与观景台", nameEn: "Mua Cave", lon: 105.9294, lat: 20.2469, kind: "nature" },
   ],
+  // ── 越南 批2（2026-09-05）──
+  haiphong: [
+    { nameZh: "海防大剧院", nameEn: "Haiphong Opera House", lon: 106.6830, lat: 20.8580, kind: "landmark" },
+    { nameZh: "海防主教座堂", nameEn: "Haiphong Cathedral", lon: 106.6790, lat: 20.8570, kind: "landmark" },
+    { nameZh: "海防港", nameEn: "Port of Haiphong", lon: 106.6950, lat: 20.8650, kind: "transport" },
+    { nameZh: "涂山海滩", nameEn: "Do Son Beach", lon: 106.7800, lat: 20.7100, kind: "nature" },
+    { nameZh: "吉婆岛", nameEn: "Cat Ba Island", lon: 107.0480, lat: 20.7280, kind: "nature" },
+    { nameZh: "兰哈湾", nameEn: "Lan Ha Bay", lon: 107.1000, lat: 20.7500, kind: "nature" },
+  ],
+  "dong-hoi": [
+    { nameZh: "日丽海滩", nameEn: "Nhat Le Beach", lon: 106.6350, lat: 17.4750, kind: "nature" },
+    { nameZh: "广平门", nameEn: "Quang Binh Gate", lon: 106.6180, lat: 17.4680, kind: "landmark" },
+    { nameZh: "洞海站", nameEn: "Dong Hoi Station", lon: 106.5950, lat: 17.4700, kind: "transport" },
+    { nameZh: "风牙洞", nameEn: "Phong Nha Cave", lon: 106.2830, lat: 17.5860, kind: "nature" },
+    { nameZh: "天堂洞", nameEn: "Paradise Cave", lon: 106.2260, lat: 17.5210, kind: "nature" },
+  ],
+  "quy-nhon": [
+    { nameZh: "归仁海滩", nameEn: "Quy Nhon Beach", lon: 109.2200, lat: 13.7650, kind: "nature" },
+    { nameZh: "双塔（占婆塔）", nameEn: "Thap Doi Cham Towers", lon: 109.2090, lat: 13.7830, kind: "landmark" },
+    { nameZh: "奇姑海滩与风口", nameEn: "Ky Co Beach & Eo Gio", lon: 109.2900, lat: 13.8550, kind: "nature" },
+    { nameZh: "归和与韩墨子墓", nameEn: "Quy Hoa & Han Mac Tu's Grave", lon: 109.2200, lat: 13.7300, kind: "landmark" },
+    { nameZh: "光中博物馆（西山）", nameEn: "Quang Trung Museum (Tay Son)", lon: 108.9000, lat: 13.9200, kind: "landmark" },
+  ],
+  "phan-thiet": [
+    { nameZh: "美奈渔村", nameEn: "Mui Ne Fishing Village", lon: 108.2900, lat: 10.9500, kind: "district" },
+    { nameZh: "红沙丘", nameEn: "Red Sand Dunes", lon: 108.3000, lat: 10.9550, kind: "nature" },
+    { nameZh: "白沙丘", nameEn: "White Sand Dunes", lon: 108.4300, lat: 11.0800, kind: "nature" },
+    { nameZh: "仙女溪", nameEn: "Fairy Stream", lon: 108.2800, lat: 10.9450, kind: "nature" },
+    { nameZh: "波沙努占婆塔", nameEn: "Po Shanu Cham Towers", lon: 108.1500, lat: 10.9400, kind: "landmark" },
+    { nameZh: "潘切站", nameEn: "Phan Thiet Station", lon: 108.0800, lat: 10.9550, kind: "transport" },
+  ],
+  "vung-tau": [
+    { nameZh: "头顿耶稣像", nameEn: "Christ of Vung Tau", lon: 107.0780, lat: 10.3270, kind: "landmark" },
+    { nameZh: "头顿灯塔", nameEn: "Vung Tau Lighthouse", lon: 107.0730, lat: 10.3380, kind: "landmark" },
+    { nameZh: "后滩", nameEn: "Back Beach (Bai Sau)", lon: 107.0900, lat: 10.3400, kind: "nature" },
+    { nameZh: "白宫", nameEn: "Bach Dinh (White Palace)", lon: 107.0740, lat: 10.3520, kind: "landmark" },
+    { nameZh: "客运码头", nameEn: "Vung Tau Ferry Terminal", lon: 107.0700, lat: 10.3480, kind: "transport" },
+  ],
+  "ha-giang": [
+    { nameZh: "河江市区·零公里碑", nameEn: "Ha Giang City (Km 0 marker)", lon: 104.9840, lat: 22.8230, kind: "district" },
+    { nameZh: "天门（关坝）", nameEn: "Heaven's Gate (Quan Ba)", lon: 104.9800, lat: 23.0400, kind: "nature" },
+    { nameZh: "同文老街", nameEn: "Dong Van Old Quarter", lon: 105.3620, lat: 23.2780, kind: "district" },
+    { nameZh: "马皮冷山口", nameEn: "Ma Pi Leng Pass", lon: 105.4100, lat: 23.2400, kind: "nature" },
+    { nameZh: "龙鼓旗台", nameEn: "Lung Cu Flag Tower", lon: 105.3170, lat: 23.3630, kind: "landmark" },
+  ],
+
   // 马来西亚
   "kuala-lumpur": [
     { nameZh: "双峰塔", nameEn: "Petronas Twin Towers", lon: 101.7118, lat: 3.1579, kind: "landmark" },
@@ -3077,6 +3216,53 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "珍南海滩", nameEn: "Pantai Cenang", lon: 99.7286, lat: 6.2894, kind: "nature" },
     { nameZh: "瓜镇免税购物区", nameEn: "Kuah Duty-Free District", lon: 99.8494, lat: 6.3181, kind: "district" },
   ],
+  // ── 马来西亚 批2（2026-09-05）──
+  putrajaya: [
+    { nameZh: "布特拉清真寺", nameEn: "Putra Mosque", lon: 101.6900, lat: 2.9360, kind: "landmark" },
+    { nameZh: "首相署（布特拉大厦）", nameEn: "Perdana Putra", lon: 101.6910, lat: 2.9380, kind: "landmark" },
+    { nameZh: "布特拉广场", nameEn: "Putra Square", lon: 101.6900, lat: 2.9350, kind: "district" },
+    { nameZh: "斯里瓦瓦桑桥", nameEn: "Seri Wawasan Bridge", lon: 101.6850, lat: 2.9200, kind: "landmark" },
+    { nameZh: "铁清真寺", nameEn: "Tuanku Mizan Zainal Abidin Mosque", lon: 101.6800, lat: 2.9160, kind: "landmark" },
+    { nameZh: "布城湿地公园", nameEn: "Putrajaya Wetlands Park", lon: 101.7000, lat: 2.9700, kind: "nature" },
+  ],
+  "cameron-highlands": [
+    { nameZh: "丹那拉打镇", nameEn: "Tanah Rata Town", lon: 101.3833, lat: 4.4667, kind: "district" },
+    { nameZh: "BOH 茶园（双溪帕拉斯）", nameEn: "BOH Tea Plantation (Sungai Palas)", lon: 101.4100, lat: 4.5300, kind: "nature" },
+    { nameZh: "苔藓森林与布林昌山", nameEn: "Mossy Forest & Gunung Brinchang", lon: 101.3900, lat: 4.5200, kind: "nature" },
+    { nameZh: "碧兰璋镇", nameEn: "Brinchang", lon: 101.3900, lat: 4.4950, kind: "district" },
+    { nameZh: "草莓农场", nameEn: "Strawberry Farms", lon: 101.3950, lat: 4.5000, kind: "nature" },
+  ],
+  taiping: [
+    { nameZh: "太平湖公园", nameEn: "Taiping Lake Gardens", lon: 100.7450, lat: 4.8520, kind: "nature" },
+    { nameZh: "霹雳博物馆", nameEn: "Perak Museum", lon: 100.7420, lat: 4.8600, kind: "landmark" },
+    { nameZh: "太平动物园（夜间动物园）", nameEn: "Taiping Zoo & Night Safari", lon: 100.7530, lat: 4.8500, kind: "nature" },
+    { nameZh: "拉律山（麦斯威尔山）", nameEn: "Bukit Larut (Maxwell Hill)", lon: 100.7900, lat: 4.8600, kind: "nature" },
+    { nameZh: "十八丁红树林", nameEn: "Kuala Sepetang Mangroves", lon: 100.6300, lat: 4.8300, kind: "nature" },
+    { nameZh: "太平火车站", nameEn: "Taiping Station", lon: 100.7350, lat: 4.8500, kind: "transport" },
+  ],
+  "alor-setar": [
+    { nameZh: "扎希尔清真寺", nameEn: "Zahir Mosque", lon: 100.3670, lat: 6.1200, kind: "landmark" },
+    { nameZh: "亚罗士打塔", nameEn: "Alor Setar Tower", lon: 100.3690, lat: 6.1220, kind: "landmark" },
+    { nameZh: "大会堂", nameEn: "Balai Besar", lon: 100.3680, lat: 6.1195, kind: "landmark" },
+    { nameZh: "稻米博物馆", nameEn: "Paddy Museum", lon: 100.3500, lat: 6.1500, kind: "landmark" },
+    { nameZh: "星期三市集", nameEn: "Pekan Rabu", lon: 100.3700, lat: 6.1180, kind: "district" },
+    { nameZh: "瓜拉吉打码头（往兰卡威）", nameEn: "Kuala Kedah Jetty (Langkawi ferry)", lon: 100.2900, lat: 6.1000, kind: "transport" },
+  ],
+  semporna: [
+    { nameZh: "仙本那码头", nameEn: "Semporna Jetty", lon: 118.6100, lat: 4.4800, kind: "transport" },
+    { nameZh: "马布岛", nameEn: "Mabul Island", lon: 118.6300, lat: 4.2450, kind: "nature" },
+    { nameZh: "西巴丹岛", nameEn: "Sipadan Island", lon: 118.6280, lat: 4.1150, kind: "nature" },
+    { nameZh: "敦沙卡兰海洋公园（珍珠岛）", nameEn: "Tun Sakaran Marine Park (Bohey Dulang)", lon: 118.7700, lat: 4.6000, kind: "nature" },
+    { nameZh: "卡帕莱岛", nameEn: "Kapalai", lon: 118.6600, lat: 4.2300, kind: "nature" },
+  ],
+  sibu: [
+    { nameZh: "大伯公庙与七层宝塔", nameEn: "Tua Pek Kong Temple & Pagoda", lon: 111.8270, lat: 2.2880, kind: "landmark" },
+    { nameZh: "诗巫中央市场", nameEn: "Sibu Central Market", lon: 111.8290, lat: 2.2880, kind: "district" },
+    { nameZh: "天鹅像与市镇广场", nameEn: "Swan Statue & Town Square", lon: 111.8250, lat: 2.2870, kind: "landmark" },
+    { nameZh: "拉让江快艇码头", nameEn: "Rajang Express Boat Wharf", lon: 111.8300, lat: 2.2900, kind: "transport" },
+    { nameZh: "巴旺阿山伊班长屋", nameEn: "Bawang Assan Iban Longhouses", lon: 111.7000, lat: 2.2600, kind: "district" },
+  ],
+
   // 蒙古
   ulaanbaatar: [
     { nameZh: "苏赫巴托尔广场（成吉思汗广场）", nameEn: "Sükhbaatar Square", lon: 106.9175, lat: 47.9185, kind: "landmark" },

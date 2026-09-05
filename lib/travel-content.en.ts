@@ -6321,6 +6321,92 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "November to February, the cool season, is most pleasant; Nakhon Ratchasima makes a good base for a day trip to hike in Khao Yai National Park.",
   },
+
+  // ── Thailand batch 2 (2026-09-05) ──
+  kanchanaburi: {
+    identity:
+      "Kanchanaburi lies about 120 km west of Bangkok where the Khwae Noi and Khwae Yai rivers meet to form the Mae Klong, with a town population of about 26,000. In the Second World War the Japanese army built the Thailand–Burma 'Death Railway' with Allied prisoners of war and Asian labourers, about half of whom died of disease, maltreatment and accidents; the Bridge over the River Kwai, the Kanchanaburi War Cemetery, the Thailand–Burma Railway Centre and Hellfire Pass commemorate that history. The province also holds the seven-tiered Erawan Falls, Sai Yok and the Mon wooden bridge at Sangkhlaburi near the Myanmar border, making it one of the most popular day and overnight trips from Bangkok.",
+    layout:
+      "The town lies on the east bank of the Khwae Yai, with hotels, floating raft houses and restaurants along the river; the bridge stands about 3 km north of town, the war cemetery and the railway centre beside the station, and the JEATH museum by the river. The Death Railway runs north-west from the bridge along the Khwae Noi to Nam Tok, passing the Tham Krasae cliff trestle; Hellfire Pass is about 80 km north-west. Erawan National Park lies about 65 km north, Sai Yok about 100 km north-west and Sangkhlaburi about 220 km north-west.",
+    gettingAround:
+      "Kanchanaburi has no airport; from Bangkok's Suvarnabhumi or Don Mueang it is about 2.5–3 hours by road. Trains from Bangkok's Thonburi station take about 3 hours (twice daily, slow but scenic) and continue to Nam Tok along the Death Railway — the bridge-to-Tham Krasae stretch is the classic ride; minibuses from Bangkok take about 2 hours. In town walk or hire a bicycle or motorbike; Erawan is about 1.5 hours by bus, and Hellfire Pass needs a hired car or a tour. The climate is tropical savanna — cool and dry from November to February, hot from March to May and wet from May to October.",
+    culture:
+      "Thai is universal, with English in the tourist areas. The war cemetery and the Hellfire Pass memorial are solemn places — dress modestly and keep quiet; the bridge can be walked, stepping aside when trains pass. The pools at Erawan hold fish and food is banned on the upper tiers. Tipping is not expected in Thailand but small change is often left. Floating restaurants and raft houses on the river are a local feature. Sangkhlaburi has Mon villages and temples — respect local custom.",
+    seeAndDo:
+      "The Bridge over the River Kwai; the war cemetery and the Thailand–Burma Railway Centre; the JEATH war museum; the Death Railway train (the Tham Krasae trestle); the Hellfire Pass memorial and walking trail; Erawan Falls (seven tiers, swimming allowed); Sai Yok National Park; the Mon bridge and sunken temple at Sangkhlaburi; Wat Tham Sua (the Tiger Cave temple); a night in a raft house on the river.",
+    whenAndTips:
+      "November–February is most comfortable; March–May is hot, and in the rains the falls are full but the paths slippery. A day for the town and railway, a day for Erawan. A day trip from Bangkok works, but a night by the river is more relaxed.",
+  },
+  lampang: {
+    identity:
+      "Lampang lies in the Wang river valley of northern Thailand about 100 km south-east of Chiang Mai, with about 58,000 people — one of the old Lanna capitals and the only Thai city where horse-drawn carriages (introduced in 1916) still carry passengers. Wat Phra That Lampang Luang is the archetype of Lanna timber temple architecture and keeps nineteenth-century murals; of the 31 Burmese-style temples surviving in Thailand, nine — built by nineteenth-century Burmese teak merchants — are in Lampang. The Thai Elephant Conservation Center outside town is the national elephant institution, Chae Son National Park has hot springs and waterfalls, and Lampang is known for ceramics, with the rooster bowl as its emblem.",
+    layout:
+      "The old town lies on the south bank of the Wang; the Kad Kong Ta old street follows the river and becomes a walking-street night market at weekends, and the Ratsadaphisek bridge (1917) is the landmark; the Burmese temples (Wat Si Rong Muang, Wat Pratu Pong and others) are scattered through town. Wat Phra That Lampang Luang lies about 18 km south-west at Ko Kha, the elephant centre about 30 km north-west at Hang Chat and Chae Son about 70 km north. The station is on the west side of town and the airport on its southern edge.",
+    gettingAround:
+      "Lampang Airport (LPT) adjoins the town and currently has only the Bangkok Don Mueang route (AirAsia); Chiang Mai's airport is about 100 km away. Trains take about 10–12 hours from Bangkok (overnight) and about 2 hours from Chiang Mai; buses from Chiang Mai take about 1.5 hours. In town ride a horse carriage (fixed routes and prices), a songthaew or a hire bicycle; the great temple and the elephant centre are reached by songthaew or hired car. The climate is tropical savanna — cool from November to February, hot from March to May, wet from May to October.",
+    culture:
+      "Thai is universal; tourism is less developed than in Chiang Mai and English less common. Dress modestly and remove shoes at temples; some halls of Wat Phra That Lampang Luang are closed to women (signed — respect the local rule). The carriages are a tradition rather than a pure tourist ride — agree the price first. The elephant centre offers no riding, only care and training demonstrations. Local food includes Lampang khanom jeen noodles, and rooster-bowl ceramics make souvenirs. Tipping is not expected.",
+    seeAndDo:
+      "Wat Phra That Lampang Luang; the Kad Kong Ta weekend night market; the Ratsadaphisek bridge and the Wang riverside; the Burmese temples (Wat Si Rong Muang, Wat Chedi Sao); a horse-carriage tour of the old town; the Thai Elephant Conservation Center; ceramics workshops (rooster bowls); the Chae Son hot springs and falls; the hilltop Wat Phra That Doi Phra Chan.",
+    whenAndTips:
+      "November–February is most comfortable and the season of the weekend market; March–April brings haze. A day for the town, a day for the outlying temple and the elephant centre. A quieter Lanna destination than Chiang Mai, linked with Phitsanulok or Sukhothai.",
+  },
+  "hat-yai": {
+    identity:
+      "Hat Yai lies in Songkhla Province in southern Thailand about 50 km from the Malaysian border, with a town population of about 191,000 — the largest city and commercial centre of the south, forming a metropolitan area of about 650,000 with the provincial capital Songkhla. It grew as a railway junction and is now a shopping and eating destination for Malaysian and Singaporean visitors: Kim Yong Market, the night markets and the southern Thai street food are its draws, and the hill in the municipal park carries a great Buddha and a cable car. Songkhla, about 30 km north-east, has an old town, Samila Beach and Songkhla Lake. Hat Yai's airport is Thailand's fifth-busiest, with flights to Kuala Lumpur and Singapore.",
+    layout:
+      "The city spreads around Hat Yai Junction station, with Niphat Uthit roads 1–3 as the hotel, dining and shopping streets and Kim Yong Market in the centre; the municipal park lies on a hillside about 6 km south-east, with a cable car linking the Buddha and the Guanyin statue. The airport is about 9 km west. Songkhla lies about 30 km north-east: the old town (Nakhon Nok and Nakhon Nai roads) sits by the outlet of Songkhla Lake, Samila Beach and the mermaid statue at the northern tip of the peninsula, and Chinatown and the temples within the old town.",
+    gettingAround:
+      "Hat Yai International Airport (HDY), about 9 km from the city, has flights to Bangkok (Don Mueang and Suvarnabhumi) and Chiang Mai and to Kuala Lumpur and Singapore. Trains from Bangkok take about 14–16 hours (overnight); Hat Yai is the hub of the southern line, with trains towards Malaysia (change at Padang Besar); buses take about 4 hours from Penang and about 7 from Kuala Lumpur. In town use songthaews, tuk-tuks and motorbike taxis; Songkhla is about 40 minutes by minibus. The climate is tropical monsoon, wet from April to December and drier from January to March.",
+    culture:
+      "Thai and the southern dialect are spoken, the Chinese community is large, and Hokkien and Malay are common. Hat Yai is a food city — Hat Yai fried chicken, noodles, dim sum breakfasts, night-market grills — and Kim Yong Market sells dried goods and snacks. The Buddha in the municipal park is a religious site — dress modestly. Songkhla's old town has murals and cafés in old shophouses. Chinese temples are lively at the Hungry Ghost and Nine Emperor Gods festivals. Tipping is not expected.",
+    seeAndDo:
+      "Kim Yong Market and the night markets (ASEAN and Greenway); the municipal park (the Buddha, the Guanyin statue, the cable car); Hat Yai fried chicken and dim sum; a walk through Songkhla old town; Samila Beach and the mermaid statue; Songkhla Lake and the Tang Kuan hill lookout; Ton Nga Chang waterfall; the Khlong Hae floating market.",
+    whenAndTips:
+      "January–March is driest and most comfortable; showers are common from April to December, heaviest in October–December. A day for the city, half a day to a day for Songkhla. The gateway into southern Thailand by land from Malaysia, linked with Surat Thani and Penang.",
+  },
+  "ko-chang": {
+    identity:
+      "Ko Chang lies in the Gulf of Thailand off Trat Province near the Cambodian border, about 210 km² and Thailand's third-largest island after Phuket and Samui, with about 8,500 people. Some 85 percent of the island lies within Mu Ko Chang National Park — a rainforest interior rising to 744 m — with a string of beaches on the west coast, White Sand Beach and Lonely Beach among them, and the stilted fishing village of Bang Bao at the southern tip. Developed later than Phuket and Samui, it is far quieter, about 300 km from Bangkok.",
+    layout:
+      "The island runs north–south, with the main beaches lined along the west coast from north to south: White Sand Beach is the liveliest, followed by Khlong Prao, Kai Bae and Lonely Beach, with Bang Bao village and pier (boats to the outer islands) at the southern end; the east coast is quiet with mangroves and fishing villages. Ferries from Ao Thammachat on the mainland reach Ao Sapparot pier at the northern tip in about 30 minutes, and the ring road follows the coast (not a full loop — the southern hills are steep). Khlong Phlu waterfall lies in the middle of the island. Ko Kut and Ko Mak lie to the south.",
+    gettingAround:
+      "Ko Chang has no airport; Trat Airport (TDX, run by Bangkok Airways, only the Bangkok Suvarnabhumi route, about 1 hour) is on the mainland about 17 km from the ferry pier. From Bangkok, buses or minibuses reach Trat or the pier in about 5 hours, then the ferry takes about 30 minutes. On the island use songthaews (charged by stretch), hire a motorbike (steep roads, many accidents) or a car, and take boats to the outer islands. The climate is tropical monsoon, dry from November to April and wet from May to October (rough surf on some beaches and suspended island boats).",
+    culture:
+      "Thai is universal, with English in the tourist areas. The national-park waterfalls charge entry; take a guide for rainforest walks. Bang Bao's seafood restaurants stand on the jetties. Beaches have rip currents in the rains — stay out when the red flag flies. A licence and helmet are needed for motorbikes, and the mountain roads have sharp bends. Tipping is not expected.",
+    seeAndDo:
+      "White Sand Beach and its evening beach bars; Lonely Beach; Bang Bao fishing village and sunset at the pier; Khlong Phlu waterfall; rainforest treks and elephant camps (choose no-riding operators); kayaking in the east-coast mangroves; snorkelling and diving trips to Ko Kut, Ko Mak and Ko Rang; Muay Thai bouts; Salak Phet bay.",
+    whenAndTips:
+      "November–April is best, with December–February the peak; the May–October rains are quiet but boats are few. Stay at least three nights. Reachable from Bangkok in a day but not as a day trip.",
+  },
+  "khao-lak": {
+    identity:
+      "Khao Lak lies on the Andaman coast of Phang Nga Province about 60 km north of Phuket — a string of resort villages (Bang Niang, Nang Thong, Khuk Khak and others) along some 20–25 km of coast, backed by the rainforest hills of Khao Lak–Lam Ru National Park. It is the main departure point for diving and liveaboards to the Similan and Surin islands. The Indian Ocean tsunami of 26 December 2004 caused Thailand's worst losses here, and police boat 813, carried 1.25 km inland, is now a memorial; rebuilt, Khao Lak is known for its quiet long beaches and family resorts, far calmer than Phuket.",
+    layout:
+      "Khao Lak stretches north–south along Highway 4 and the coast: Khao Lak beach and Nang Thong at the southern end near the national park, then Bang Niang (the boat 813 memorial and the tsunami museum), Khuk Khak and White Sand beach, with Pakarang Cape at the northern end; Thap Lamu pier about 15 km south is where the Similan and Surin boats leave. Takua Pa old town lies about 25 km north and Khao Sok National Park (karst rainforest and Cheow Lan lake) about 80 km north-east. Phuket's airport is about 60 km south.",
+    gettingAround:
+      "Khao Lak has no airport; from Phuket International (HKT) it is about 1–1.5 hours by road, with minibuses and shuttles. Between the villages use songthaews, motorbikes or a hire car; the Similans are about 1.5 hours by speedboat for a day trip, or by liveaboard. The climate is tropical monsoon, dry from November to April and wet with rough seas from May to October, when the Similan islands close (mid-May to mid-October).",
+    culture:
+      "Thai is universal, with English and German common (many European visitors). Keep quiet at the tsunami memorials. The Similans are a national park — no touching coral, with visitor limits; the beaches carry tsunami warning towers and evacuation signs. Stay out of the sea under red flags in the rains. Book the raft houses on Cheow Lan lake at Khao Sok ahead. Tipping is not expected.",
+    seeAndDo:
+      "The long beaches of Bang Niang and Nang Thong; the boat 813 tsunami memorial and the International Tsunami Museum; a Similan day trip or liveaboard (November–April); the Surin islands and the Moken village; rainforest trails and small beaches in Khao Lak–Lam Ru National Park; Khao Sok and the Cheow Lan lake raft houses; Takua Pa old town and its Sunday market; the Bang Niang night market.",
+    whenAndTips:
+      "November–April is best and the only season the Similans are open; December–February is busiest. Stay three to five nights with one Similan trip. Rainy-season hotels are cheap but seas are rough and some places close.",
+  },
+  "ko-lanta": {
+    identity:
+      "Ko Lanta lies in the Andaman Sea off Krabi Province, made up of Lanta Yai and Lanta Noi; the main island is about 25 km long and 6 km wide, about 81 km², with about 11,000 people. Quieter than Phi Phi, it has a chain of long beaches on the west coast (Klong Dao, Long Beach, Kantiang Bay), the lighthouse and headland of Mu Ko Lanta National Park at the southern tip, and on the east coast Lanta Old Town, a wooden fishing port settled in the nineteenth century by Chinese traders and the Urak Lawoi sea people. A bridge opened in 2015 joined the two islands to the mainland, and Ko Rok and the Hin Daeng and Hin Muang pinnacles are among the best dive sites in the Andaman. The 2004 tsunami affected Lanta far less than Phi Phi.",
+    layout:
+      "Saladan at the northern tip of the main island is the port and main town, where ferries and speedboats leave; the beaches run down the west coast from north to south — Klong Dao, Long Beach, Klong Khong, Klong Nin, Kantiang Bay — quieter and rougher-roaded the further south, with the national park at the southern tip. The Old Town lies midway down the east coast, facing the mainland. Lanta Noi lies north of the main island, with the bridge linking both islands to the mainland ferry point.",
+    gettingAround:
+      "Ko Lanta has no airport; from Krabi Airport (KBV) minibuses take about 2 hours via the bridge (with a short ferry), or take boats between Krabi, Phi Phi and Lanta (November–April). On the island hire a motorbike or use songthaews; roads in the south are poor, and the Old Town is about 20 minutes' drive from the west-coast beaches. The climate is tropical monsoon, dry from November to April and wet from May to October, when some resorts and boats stop.",
+    culture:
+      "Thai is universal, the island's Muslim community is large, and the Urak Lawoi sea people have their own language and twice-yearly boat festivals; respect the residents of the Old Town's Chinese temples and wooden houses. The national park charges entry and the lighthouse walk is exposed. Dive with PADI-certified shops; Ko Rok is open only in the dry season. Beach fire shows are milder than on Phi Phi. Tipping is not expected.",
+    seeAndDo:
+      "Long Beach and Klong Dao; sunset at Kantiang Bay; Lanta Old Town (wooden houses, seafood, cafés); the Mu Ko Lanta National Park lighthouse and headland trail; a Ko Rok snorkelling day and diving at Hin Daeng and Hin Muang; the four-island trip (the Emerald Cave); kayaking in the east-coast mangroves; the Lanta Animal Welfare centre; the Saladan night market.",
+    whenAndTips:
+      "November–April is best, with December–February the peak; the May–October rains are quiet and cheap but boats are few. Stay three or four nights. Linked with Krabi, Phi Phi and Ko Lipe on an Andaman route.",
+  },
   "south-korea-overview": {
     identity:
       "The Republic of Korea occupies the southern half of the Korean Peninsula in East Asia, covering about 100,000 km² with a population of roughly 51 million; the capital is Seoul, the common language is Korean, and the currency is the Korean won (KRW).",
@@ -6502,6 +6588,92 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Jeonju Hanok Village (hanbok rental, strolling the traditional architecture); Jeondong Catholic Church; Gyeonggijeon Shrine (housing a royal portrait of the Joseon dynasty's founder); the Nambu Market night market; Jeonju bibimbap.",
     whenAndTips:
       "Spring and autumn are best for hanbok photography; renting traditional hanbok within the Hanok Village makes for an immersive experience that matches the architecture around you.",
+  },
+
+  // ── South Korea batch 2 (2026-09-05) ──
+  incheon: {
+    identity:
+      "Incheon lies on the Yellow Sea coast west of Seoul, South Korea's third-largest city with about 3.02 million people (2026). Opened as a port in 1883, it was one of the first places on the peninsula to meet the outside world; the Chinatown beside Incheon Station is Korea's only official one, and the Open Port area keeps Japanese and Western buildings of that era. The Incheon landing of September 1950 was the turning point of the Korean War. Incheon International Airport (2001) on Yeongjong Island is the country's international gateway; Songdo is a new city planned on reclaimed land and became Korea's first free economic zone in 2003, and the city hosted the 2014 Asian Games. Ganghwa and Muuido islands also belong to Incheon.",
+    layout:
+      "The city occupies the coastal plain west of Seoul, merging with the capital into one metropolitan area. The old town surrounds Incheon Station: Chinatown, the Open Port historic quarter and Jayu Park sit on the slope by the station, with Wolmido on the shore to the west. Songdo lies to the south on reclaimed land with its Central Park and towers, and the Incheon Bridge (2009, about 21 km) crosses from Songdo to Yeongjong Island and the airport. Bupyeong and Guwol-dong are commercial districts. Ganghwa Island to the north-west has dolmens (World Heritage) and a Goryeo palace site; Muuido lies west of the airport island.",
+    gettingAround:
+      "Incheon International Airport (ICN) on Yeongjong Island is linked to Seoul Station by the AREX railway in about 45–55 minutes, and to Incheon's own centre by airport buses or rail with a change, about 1 hour. Seoul Metro Line 1 runs through to Incheon Station (about 1 hour from Seoul Station), and Incheon's Lines 1 and 2 cover the city and Songdo; the Suin-Bundang line reaches Suwon. Buses are frequent, the Chinatown area is walkable, and Ganghwa Island is about 1.5 hours by bus. The climate is temperate monsoon with humid rainy summers and cold dry winters.",
+    culture:
+      "Korean is universal, with Chinese in Chinatown. Chinatown is the birthplace of Korean-style jjajangmyeon noodles and has a museum devoted to them; the old buildings of the Open Port are now museums and cafés. The MacArthur statue in Jayu Park commemorates the landing. Songdo's towers and parks are K-drama locations. At the Yeonan wharf fish market you buy seafood and have it cooked on the spot. No tipping in Korea.",
+    seeAndDo:
+      "Chinatown and the Jjajangmyeon Museum; the Open Port historic quarter (the old Japanese banks, the Jemulpo Club); Jayu Park; Wolmido (amusement park, seafront walk, the Wolmi Sea Train); Songdo Central Park and the G-Tower lookout; the Incheon Bridge and the Yeongjong shore; the Yeonan wharf fish market; Ganghwa Island (dolmens, Jeondeungsa Temple, the Goryeo palace site); Muuido beaches; the Incheon Landing Operation Memorial Hall.",
+    whenAndTips:
+      "April–May and September–October are most comfortable; summers are humid and winters cold. An easy day trip from Seoul; long-haul transit passengers can overnight on Yeongjong Island or in Songdo near the airport. Ganghwa Island needs its own day.",
+  },
+  suwon: {
+    identity:
+      "Suwon is the seat of Gyeonggi Province about 30 km south of Seoul, with about 1.23 million people (2026). Hwaseong Fortress, built in 1794–1796 by King Jeongjo when he moved his father Crown Prince Sado's tomb here, is the masterpiece of late-Joseon fortification — 5.7 km of wall, four gates, the palace and the bastions survive — and was inscribed as a World Heritage site in 1997; the king's yearly procession from Seoul to Suwon is the model for the Hwaseong Cultural Festival. Samsung Electronics was founded in Suwon in 1969 and keeps its headquarters and research campus in Yeongtong district. Suwon galbi (grilled beef ribs) is the local dish, and the Korean Folk Village lies in neighbouring Yongin.",
+    layout:
+      "Hwaseong encloses the old town: Paldalmun in the south, Janganmun in the north, Hwahongmun over the Suwoncheon stream in the north-east and the Seojangdae command post on Paldalsan hill to the west; the Haenggung palace stands in the middle and Paldalmun market by the south gate. Suwon Station is about 2 km south-west of the walls, with the sports complex and World Cup stadium outside. The Samsung campus lies east in Yeongtong and the Gwanggyo new town north-east. The Korean Folk Village is about 15 km east in Yongin, with Everland further east.",
+    gettingAround:
+      "Suwon has no airport; the nearest is Incheon International (about 40 km), with airport buses of about 1.5 hours. Seoul Metro Line 1 runs through to Suwon Station (about 1 hour from Seoul Station), KTX and regular trains also stop there, and express buses from Gangnam take about 1 hour. Buses are frequent — about 15 minutes from the station to the fortress — and inside the walls you walk or ride the Hwaseong tourist train. The climate is temperate monsoon with humid summers and cold winters.",
+    culture:
+      "Korean is universal. The whole wall can be walked (2–3 hours), with the city on both sides; the palace stages Jeongjo-era ceremonies and demonstrations of the 24 martial arts at weekends. The Hwaseong Cultural Festival in October re-enacts the royal procession. The streets around Paldalmun market are lined with Suwon galbi and fried-chicken restaurants. The Korean Folk Village stages traditional weddings and farmers' music. No tipping.",
+    seeAndDo:
+      "Walking the Hwaseong wall (Paldalmun → Seojangdae → Janganmun → Hwahongmun); the Haenggung palace; Hwahongmun and the Banghwasuryujeong pavilion at night; the Hwaseong Museum; Paldalmun market and the Tongdal-mun galbi street; the Hwaseong tourist train; the Korean Folk Village (Yongin); Gwanggyo Lake Park; the Hwaseong Cultural Festival in October.",
+    whenAndTips:
+      "April–May and September–October are most comfortable, with the festival in October; summers are humid. Half a day to a day for the fortress, half a day for the folk village. Most often a day trip from Seoul.",
+  },
+  daegu: {
+    identity:
+      "Daegu lies in a basin in south-eastern Korea, the country's fourth-largest city with about 2.35 million people (2026). Historically the textile city, it is also Korea's hottest city in summer, nicknamed 'Daefrica'; the Yangnyeongsi market founded around 1658 is the oldest herbal-medicine market in the country, and Seomun Market is among Korea's largest traditional markets. Donghwasa Temple (founded 493) and the Gatbawi stone Buddha on Palgongsan, the Apsan observatory and the mural street honouring the folk singer Kim Gwang-seok are the usual stops, and Daegu hosted the 2011 World Athletics Championships.",
+    layout:
+      "The centre lies around Dongseong-ro and Jungang-ro (Banwoldang and Jungangno stations); Yangnyeongsi and the modern-history alleys (Gyesan Cathedral, Cheongna Hill) are on the west side of the centre with Seomun Market further west, and Kim Gwang-seok Street is by Bangcheon Market to the south-east. Dongdaegu Station (KTX) is in the east of the city and the airport in Dongchon to the north-east. Palgongsan rises about 20 km north of the city and Apsan to the south. Gyeongju lies about 60 km east.",
+    gettingAround:
+      "Daegu International Airport (TAE) is in the north-east of the city, about 15 minutes' walk from Ayanggyo station on Metro Line 1, with flights to Jeju and to Tokyo, Osaka, Taipei and Bangkok among others. KTX trains take about 1 hour 50 from Seoul and about 50 minutes from Busan to Dongdaegu. The city has three metro lines (Line 3 is a monorail), the centre works on foot and by metro, and Palgongsan is about 1 hour by bus. The climate is temperate monsoon with very hot summers (a record of 40°C) and cold dry winters.",
+    culture:
+      "Korean is universal. Yangnyeongsi has a medicine museum with foot baths and herbal teas; Gyesan Cathedral and the modern-history alleys tell the Catholic and modern story. The Seomun night market (weekends) is the place to eat, and Daegu has its 'ten tastes' (Dongin-dong braised ribs, napjak mandu flat dumplings and more). Donghwasa is a Buddhist temple — shoes off and quiet in the halls. Avoid the midday heat in summer. No tipping.",
+    seeAndDo:
+      "Seomun Market and its night market; Yangnyeongsi and the medicine museum; the modern-history alleys (Gyesan Cathedral, Cheongna Hill, the March First road); Kim Gwang-seok Street; the Dongseong-ro shopping district; Donghwasa and Gatbawi on Palgongsan (hike or cable car); the Apsan observatory (cable car, night view); the Daegu Arboretum; Suseong Lake; the Dongin-dong braised-rib street.",
+    whenAndTips:
+      "April–May and October–November are most comfortable, with Palgongsan's foliage in late October; summers are extreme. A day for the city, half a day to a day for Palgongsan. On the KTX line, easily linked with Gyeongju and Busan.",
+  },
+  gwangju: {
+    identity:
+      "Gwangju is the hub city of the Honam region in south-western Korea, with about 1.40 million people (2026); on 1 July 2026 Gwangju Metropolitan City and South Jeolla Province merged to form Jeonnam-Gwangju Special Metropolitan City. The Gwangju Democratic Uprising that began on 18 May 1980 is a landmark of modern Korean history, commemorated at the May 18th National Cemetery and the democracy square before the old provincial hall; the Asia Culture Center opened beside the old hall in 2015, and the Gwangju Biennale founded in 1995 is one of Asia's most important contemporary-art exhibitions. Mudeungsan National Park (1,187 m) east of the city, a UNESCO Global Geopark, is known for the columnar joints of Ipseokdae and Seoseokdae, and Gwangju is famous for kimchi and the generous tables of Jeolla cooking.",
+    layout:
+      "The centre lies along Geumnam-ro and Chungjang-ro: the May 18 Democracy Square, the old provincial hall and the Asia Culture Center are at the eastern end of Geumnam-ro, Chungjang-ro is the pedestrian shopping street and Yangdong Market lies on the west side of the centre. The Gwangju stream runs through the city, and Sangmu to the west is the new civic centre. Mudeungsan rises east of the city, climbed from the Jeungsimsa or Wonhyosa trailheads; the May 18th National Cemetery is at Mangwol-dong to the north. Gwangju Songjeong Station (KTX) is in the west of the city and the airport in Gwangsan district to the west.",
+    gettingAround:
+      "Gwangju Airport (KWJ) on the west side of the city serves only Jeju and Seoul Gimpo, and is planned to hand over to Muan Airport (about 60 km) in the longer term. KTX trains from Seoul Yongsan reach Gwangju Songjeong in about 1.5 hours; a single metro line links Songjeong to the centre, and buses are frequent. The Jeungsimsa entrance to Mudeungsan is about 40 minutes by bus. The climate is temperate monsoon with humid summers and winters milder but snowier than Seoul's.",
+    culture:
+      "Korean is universal. The May 18 memorial sites are solemn places — keep quiet; the Asia Culture Center has exhibitions, performances and a library, mostly free. Gwangju's tables are known for their many side dishes (hanjeongsik), and the kimchi festival is held in autumn. Keep to the trails on Mudeungsan, where Ipseokdae is windy. The Biennale runs in autumn of even-numbered years. No tipping.",
+    seeAndDo:
+      "The Asia Culture Center, the May 18 Democracy Square and the old provincial hall; the May 18th National Cemetery; Yangdong Market; Chungjang-ro and the art street; Mudeungsan (Jeungsimsa – Ipseokdae – Seoseokdae); the Gwangju Museum of Art and the Biennale hall; the Yangnim-dong modern-history village; Kimchi Town; the Juknokwon bamboo garden and Soswaewon in Damyang (about 25 km north).",
+    whenAndTips:
+      "April–May and September–November are most comfortable, with Mudeungsan's foliage from late October to November; summers are humid. A day for the city, half a day to a day for Mudeungsan, half a day for Damyang. The hub of a Honam route (Jeonju, Mokpo, Yeosu).",
+  },
+  daejeon: {
+    identity:
+      "Daejeon lies in the Chungcheong region of central Korea, the country's fifth-largest city with about 1.44 million people (2026), and its science capital: the Daedeok research complex gathers more than twenty government institutes and KAIST, and the 1993 Daejeon Expo left the Expo park and bridge. The Daejeon Government Complex has housed ministries moved from Seoul since the 1980s. The city has the Yuseong hot springs and Korea's largest man-made arboretum, Hanbat, with Gyeryongsan National Park to the west; the Sungsimdang bakery is Daejeon's best-known 'landmark', and the city will host the 2027 Summer World University Games.",
+    layout:
+      "The city sits in a basin crossed by the Gapcheon and Daejeoncheon streams: the old centre lies around Daejeon Station (Sungsimdang, the central market), the new centre at Dunsan (the government complex, Hanbat Arboretum, the city art museum), the Expo park and the National Science Museum across the Gapcheon north of Dunsan, and the Daedeok complex and KAIST beyond; Yuseong hot springs lie in the west and Gyeryongsan about 15 km west of the city. Seodaejeon Station (Honam line) is in the south-west.",
+    gettingAround:
+      "Daejeon has no airport; the nearest are Cheongju International (about 40 km, about 1 hour by bus) and Incheon International (about 3 hours by direct airport bus). KTX trains reach Daejeon in about 50 minutes from Seoul and about 1.5 hours from Busan — the hub of Korea's rail network. A single metro line links Daejeon Station, the centre and Yuseong, with frequent buses. Gyeryongsan is about 40 minutes by bus. The climate is temperate monsoon with humid summers and cold winters.",
+    culture:
+      "Korean is universal. Sungsimdang (founded 1956) has queues for its fried pineapple bread and the like and is the city's emblem. The Yuseong hot-spring street has a free foot-bath park; the National Science Museum and the Expo park suit families. Gyeryongsan has Donghaksa (a nuns' temple) and Gapsa — keep quiet in the halls. Bean-sprout soup rice and spicy braised chicken are local tastes. No tipping.",
+    seeAndDo:
+      "The Expo park, the Expo bridge and the National Science Museum; the Sungsimdang main shop; Hanbat Arboretum and the city art museum (Dunsan); the Yuseong foot bath and hot-spring baths; Gyeryongsan National Park (Donghaksa, Gapsa); the Daecheong Lake shore path; the Daejeon central market; the KAIST campus; a stroll through the old town near Daejeon Station.",
+    whenAndTips:
+      "April–May and September–October are most comfortable, with Gyeryongsan's foliage in late October; summers are humid. A day for the city, half a day to a day for Gyeryongsan. A midway stop on the Seoul–Busan high-speed line and an easy day trip from Seoul.",
+  },
+  tongyeong: {
+    identity:
+      "Tongyeong lies on Korea's south-east coast within Hallyeohaesang National Park, with about 119,000 people (2024), and is called 'the Naples of Korea'. In 1592, during the Imjin War, Admiral Yi Sun-sin set up the naval headquarters of the three provinces on Hansan Island, from which the name Tongyeong derives (the city was formerly Chungmu, after the admiral's posthumous title); a replica turtle ship floats in the harbour and the Jeseungdang shrine stands on Hansan Island. The Mireuksan cable car looks over a sea scattered with hundreds of islands, the Dongpirang mural village and the night lights of Seopirang are popular, the composer Isang Yun and the novelist Park Kyung-ni were born here, and an international music festival is held each spring. Oysters are the local produce and Chungmu gimbap the local snack.",
+    layout:
+      "The town sits at the southern tip of the Tongyeong peninsula around Gangguan harbour: the central market, the turtle ship and the Dongpirang murals climb the slope east of the harbour and Seopirang lies to the west; Mireuk Island is joined to the town across the Tongyeong canal (by bridge and an undersea tunnel), with the cable-car station on the island and Daya Park at its southern end. Hansan Island lies about 6 km south-east of the harbour, about 25 minutes by boat; outer islands such as Somaemuldo and Yokjido are 1–2 hours away. Geoje Island lies east, joined by the Geoje bridge.",
+    gettingAround:
+      "Tongyeong has no airport; the nearest are Sacheon (about 50 km, with very few flights) and Busan Gimhae (about 100 km). Intercity buses take about 1.5–2 hours from Busan and about 4 hours from Seoul and are the main way in; there is no railway. City buses reach the cable car and Daya Park, the harbour area is walkable, and ferries serve Hansan Island and Somaemuldo. The climate is temperate maritime, averaging about 14.7°C with mild winters.",
+    culture:
+      "Korean is universal. The Jeseungdang shrine on Hansan Island is a memorial to Admiral Yi — keep quiet. The Dongpirang mural village is a residential neighbourhood — no noise, no entering courtyards. Oyster season is winter (November–March), with raw oysters and Chungmu gimbap in the central market and honey bread (kkulppang) as the souvenir. The international music festival is in March–April. The cable car stops in high wind. No tipping.",
+    seeAndDo:
+      "The Mireuksan cable car and summit lookout; the Dongpirang murals and the night lights of Seopirang; Gangguan harbour, the turtle ship and the central market; the Jeseungdang shrine on Hansan Island (25-minute ferry); Somaemuldo and its lighthouse islet (joined on foot at low tide); sunset at Daya Park; the Tongyeong canal and undersea tunnel; the Isang Yun memorial hall; the Sebyeonggwan hall of the old naval headquarters; the DPIRANG night-light park.",
+    whenAndTips:
+      "March–May and September–November are most comfortable, winter is oyster season, and summer is the island peak. A day for the town, a day for the outer islands. Linked with Geoje Island and Busan on a south-coast route.",
   },
   // ============ Poland ============
   "poland-overview": {
@@ -6855,6 +7027,92 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     whenAndTips:
       "The rice fields are vivid green in May–June and golden-ripe in September–October, the best seasons for photographing the karst rice-field scenery; plan a full day for boating and hiking.",
   },
+
+  // ── Vietnam batch 2 (2026-09-05) ──
+  haiphong: {
+    identity:
+      "Haiphong is the largest port city of northern Vietnam, about 120 km east of Hanoi; after absorbing Hai Duong province in July 2025 it is a centrally run city of about 4.66 million people and the third-largest city in Vietnam. The French colonial opera house, cathedral and boulevards give the old centre a French air, and the flame trees that fill the city gave it the name 'city of red flamboyants'; Haiphong was the first city in Vietnam and mainland South-east Asia to be electrified. Cat Ba Island and Lan Ha Bay (inscribed in 2023 as an extension of the Ha Long Bay World Heritage site) lie in Haiphong's waters, Do Son is an old seaside resort, and the city's crab spring rolls and crab noodle soup are local specialities.",
+    layout:
+      "The centre lies on the south bank of the Cam river, with the opera-house square, the cathedral, the market and the French quarter together and the port along the Cam. The Do Son peninsula lies about 20 km south-east with beaches and a casino. Cat Ba Island lies east in the sea, reached by road and bridge to the Cat Hai ferry and then a short crossing, or by fast boat in about 1 hour; Lan Ha Bay lies east of Cat Ba, joined to Ha Long Bay. Cat Bi Airport is about 6 km south-east of the centre.",
+    gettingAround:
+      "Cat Bi International Airport (HPH), about 6 km from the centre, has domestic flights to Ho Chi Minh City, Da Nang, Nha Trang and Phu Quoc and Chinese routes to Kunming and Shenzhen among others. Trains from Hanoi take about 2.5 hours and buses on the Hanoi–Haiphong expressway about 2. In town use taxis and motorbike taxis, with the old centre walkable; Cat Ba is about 2.5 hours by bus and ferry, or by fast boat from the city pier. The climate is tropical monsoon with hot wet summers and typhoons and cool winters.",
+    culture:
+      "Vietnamese is universal. Haiphong people are known for their directness, and street food runs deep: crab noodle soup (bánh đa cua), crab spring rolls and rice porridge. The square before the opera house is the civic gathering place. Cat Ba and Lan Ha Bay cruises are less crowded than Ha Long — choose licensed operators; Cat Ba National Park shelters the critically endangered golden-headed langur, so keep quiet. The flame trees bloom in May. Tipping is not expected.",
+    seeAndDo:
+      "The opera house and the French quarter; the cathedral and the Iron Market; the Cam river port; Do Son beach; Cat Ba Island (the national park, Cannon Fort, the beaches); Lan Ha Bay cruises and kayaking; street food (crab noodle soup); the rocky shore at Do Son.",
+    whenAndTips:
+      "October–December and March–May are most comfortable, with the flame trees in May; summers are hot and wet with typhoons. Half a day to a day for the city, one or two days for Cat Ba and Lan Ha Bay. An alternative gateway to the sea on a Hanoi–Ha Long route.",
+  },
+  "dong-hoi": {
+    identity:
+      "Dong Hoi lies on the central Vietnamese coast and is the gateway city to Phong Nha–Ke Bang National Park; since July 2025 the former Quang Binh province has been merged into Quang Tri. Phong Nha–Ke Bang is one of the world's most important karst cave regions, inscribed as a World Heritage site in 2003, extended in 2015 and in 2025 joined with Laos's Hin Nam No National Park as a transboundary site; it holds Son Doong, the world's largest cave (found by a local man in 1991 and announced by a British expedition in 2009; over 5 km long and about 200 m high), the 31 km Paradise Cave and Phong Nha Cave with its underground river. Dong Hoi itself has Nhat Le beach, the Quang Binh Gate and remnants of its citadel, and not far north lies the former 1954–1975 demarcation line (the DMZ) and the Vinh Moc tunnels.",
+    layout:
+      "The city sits at the mouth of the Nhat Le river, with Nhat Le beach on the sandbar of the east bank (the Bao Ninh peninsula), the Quang Binh Gate and old walls in the centre, the station on the west side and the airport about 6 km north. Phong Nha village, about 45 km north-west, is the base for the caves — Phong Nha Cave, Paradise Cave and the Dark Cave all start from there; Son Doong lies deep in the park and is reached only on limited-number multi-day expeditions. The Vinh Moc tunnels and the Ben Hai river (the former dividing line) lie about 60–70 km south.",
+    gettingAround:
+      "Dong Hoi Airport (VDH), about 6 km north of the city, has flights to Hanoi, Ho Chi Minh City and Nha Trang. Reunification Express trains take about 3 hours from Hue and 9–10 hours from Hanoi (overnight); buses run on Highway 1. In town use taxis and motorbike taxis, and cycle to the beach; Phong Nha is about 1 hour by local bus (a few a day), hired car or tour. The climate is tropical monsoon, with heavy rains and floods from September to December and dry heat from March to August.",
+    culture:
+      "Vietnamese is universal, with English-speaking guesthouses and agencies in Phong Nha. Enter caves only with licensed operators; Son Doong is run by a single operator with a yearly limit and a very high price, booked about a year ahead, while Paradise Cave and Phong Nha Cave have boardwalks and boats for everyone. Touch no formations and leave no litter inside caves. The Vinh Moc tunnels are a war site — keep quiet. Local food includes Dong Hoi's fish porridge (cháo canh) and seafood. Tipping is not expected.",
+    seeAndDo:
+      "Phong Nha Cave (by boat); Paradise Cave (boardwalk, with a longer caving option); the Dark Cave (kayaking, zip line); cycling the countryside and riverside around Phong Nha; a Son Doong or Hang En expedition (multi-day, limited); Nhat Le beach; the Quang Binh Gate and walls; the Vinh Moc tunnels and the Ben Hai river (DMZ); Dong Hoi market.",
+    whenAndTips:
+      "The March–August dry season is best for caving (Son Doong tours run January–August); caves may close in the September–December floods. At least two days for Phong Nha, half a day for Dong Hoi. Linked with Hue on a central Vietnam route.",
+  },
+  "quy-nhon": {
+    identity:
+      "Quy Nhon lies in a crescent bay on the south-central coast of Vietnam, with about 580,000 people (2024, pre-reform figure); since July 2025 the former Binh Dinh province has been merged into Gia Lai, of which Quy Nhon is the seat. This was a heartland of the ancient Champa kingdom (eleventh-century Vijaya), with the Twin Towers in the city and the Binh Dinh Cham towers outside it; Zheng He's fleet called here in the fifteenth century. The poet Han Mac Tu died at the Quy Hoa leprosy hospital and is buried here, and the Tay Son uprising began to the west, where the Quang Trung Museum stands. Ky Co beach and the Eo Gio sea cliffs are newly popular, Binh Dinh is Vietnam's martial-arts homeland, and Quy Nhon is far quieter than Nha Trang.",
+    layout:
+      "The city follows the crescent bay, with the beach on its edge and the seafront boulevard as the hotel and restaurant strip; the Twin Towers stand in the north-west of the city and the station (its branch line now closed) in the centre. Quy Hoa and Han Mac Tu's grave lie in a valley south of the city; Ky Co beach and Eo Gio are about 20 km north-east on the Phuong Mai peninsula; the Banh It (Silver) towers about 20 km north; and the Quang Trung Museum about 45 km west at Tay Son. The airport is about 30 km north-west.",
+    gettingAround:
+      "Phu Cat Airport (UIH), about 30 km from the city, has flights only to Hanoi, Ho Chi Minh City and Haiphong, with an airport bus. Reunification Express trains stop at Dieu Tri (about 10 km north-west of the city) — about 6 hours from Da Nang and 4 from Nha Trang; buses run on Highway 1. In town use taxis and motorbike taxis, with the beach on foot; Ky Co and Eo Gio are about 40 minutes by hired car or motorbike taxi. The climate is tropical monsoon, wet from September to December and dry from January to August.",
+    culture:
+      "Vietnamese is universal; tourism is still developing and English is limited. The Cham towers are monuments — no climbing. The Quy Hoa hospital grounds and the poet's grave are quiet places. Martial-arts villages in Binh Dinh give demonstrations, and the Quang Trung Museum at Tay Son is a memorial. Local food includes Binh Dinh's jumping-shrimp pancakes (bánh xèo tôm nhảy), fish cakes and seafood. Tipping is not expected.",
+    seeAndDo:
+      "Quy Nhon beach and the seafront; the Twin Towers; Ky Co beach and the Eo Gio cliffs; Quy Hoa and Han Mac Tu's grave and memorial garden; the Binh Dinh Cham towers (Silver and Bronze); the Quang Trung Museum (Tay Son); Long Khanh pagoda; the dunes and fishing villages of the Phuong Mai peninsula; seafood at the night market.",
+    whenAndTips:
+      "February–August is best, with the clearest water in March–May; September–December is wet. A day for the city, a day for Ky Co and the towers. A stop between Nha Trang and Da Nang for those avoiding the crowds.",
+  },
+  "phan-thiet": {
+    identity:
+      "Phan Thiet lies on the southern Vietnamese coast about 200 km north-east of Ho Chi Minh City; since July 2025 the former Binh Thuan province has been merged into Lam Dong. It is known for Mui Ne, about 20 km east — a former fishing village whose coast is now a resort strip of about 15 km, with the red and white sand dunes and the Fairy Stream as its landmarks, and steady monsoon winds that make it one of Asia's best kitesurfing spots. Phan Thiet has made fish sauce since ancient times, the Cham-era Po Shanu towers stand on a hill east of the city, Ta Cu mountain holds one of Vietnam's largest reclining Buddhas, and the Ke Ga lighthouse to the south was built by the French in 1899. Ho Chi Minh taught briefly at the Duc Thanh school in Phan Thiet.",
+    layout:
+      "The city sits at the mouth of the Ca Ty river, with fish-sauce works and the fishing port along the river and the Po Shanu towers on the hill to the east. The Mui Ne resort strip runs north-east along the coast from Phan Thiet: Nguyen Dinh Chieu road is the hotel zone, Mui Ne fishing village lies at its eastern end with the red dunes nearby and the white dunes about 25 km further north-east; the Fairy Stream lies midway along the hotel zone. Ta Cu mountain is about 30 km south-west and the Ke Ga lighthouse about 30 km south-west on its headland. The station is on the north side of the city.",
+    gettingAround:
+      "Phan Thiet has no operating airport (a new one is under construction); the nearest are Cam Ranh (about 200 km) and Ho Chi Minh City's Tan Son Nhat (about 200 km). Trains from Saigon station take about 4 hours; since the Ho Chi Minh City–Phan Thiet expressway opened in 2023 buses take about 3 hours, and resorts run shuttles. Around Mui Ne use taxis, hire a motorbike, or charter a jeep for the dunes (at dawn or dusk). The climate is tropical and dry — one of the least rainy parts of Vietnam — with a windy dry season from December to April (the kitesurfing season) and rain from May to November.",
+    culture:
+      "Vietnamese is universal, with plenty of Russian and English signage in Mui Ne. Sandboarding and quad-bike touts on the dunes overcharge — agree prices first; the Fairy Stream is walked barefoot in the water. The fishing village's morning market shows the catch, and seafood stalls cook what you pick. Fish-sauce works can be visited. Ta Cu is a Buddhist sanctuary — dress modestly; the Cham towers are monuments. Tipping is not expected.",
+    seeAndDo:
+      "Sunset on the red dunes and sunrise on the white dunes; the Fairy Stream; Mui Ne fishing village and its morning market; kitesurfing and windsurfing; the Po Shanu Cham towers; the reclining Buddha of Ta Cu (cable car); the Ke Ga lighthouse; a fish-sauce works and the Duc Thanh school in Phan Thiet; the seafood stalls on Mui Ne beach.",
+    whenAndTips:
+      "December–April is best and the kitesurfing season; May–November has little rain but less wind. Stay two or three nights. Reached from Ho Chi Minh City in a day and often linked with Da Lat (about 4 hours over the mountains).",
+  },
+  "vung-tau": {
+    identity:
+      "Vung Tau lies at the tip of a peninsula about 95 km south-east of Ho Chi Minh City, the most convenient seaside city of the south; since July 2025 the former Ba Ria–Vung Tau province has been merged into Ho Chi Minh City. Under French rule it was Cap Saint-Jacques, and the lighthouse of 1910 and the governor's villa, the White Palace, survive; the Christ statue on the small mountain, begun in 1974 and completed in 1993, stands about 32 m tall and is one of Vietnam's best-known landmarks. Front Beach and Back Beach are the two main beaches, the offshore oil and gas fields make Vung Tau the base of Vietnam's petroleum industry, and the ferry to Con Dao leaves from here.",
+    layout:
+      "Vung Tau occupies a long narrow peninsula with two hills — Big Mountain (Nui Lon) and Small Mountain (Nui Nho) — the lighthouse on Small Mountain's summit, the Christ statue on its southern slope and the White Palace at the foot of Big Mountain by the sea; Front Beach (Bai Truoc) faces the bay on the west side with the old town and the pier, and Back Beach (Bai Sau) on the east side is the long beach and hotel zone. Nghinh Phong cape at the southern tip is the southernmost point. The passenger pier and the Con Dao ferry are on the Front Beach side.",
+    gettingAround:
+      "Vung Tau has no commercial airport; from Ho Chi Minh City's Tan Son Nhat it is about 2 hours by road, and Con Dao flights leave from Ho Chi Minh City. Buses from Ho Chi Minh City take about 2 hours on the expressway, and fast boats from the Saigon river port about 2 hours. In town use taxis or hire a motorbike; Front and Back beaches are about 3 km apart, and the Christ statue is climbed by about 800 steps. The climate is tropical monsoon, wet from May to October and dry from November to April.",
+    culture:
+      "Vietnamese is universal, and visitors from Ho Chi Minh City crowd in at weekends. The Christ statue is a religious site — dress modestly to climb (no bare shoulders or shorts; rules are posted); the lighthouse and the White Palace are heritage sites. Watch for rip currents and red flags at Back Beach. The seafood stalls are on Back Beach, and bánh khọt (small savoury pancakes) are the local snack. The oil companies' expatriate community supports a few Western restaurants. Tipping is not expected.",
+    seeAndDo:
+      "The Christ statue (climb for the peninsula view); the lighthouse and the Small Mountain path; the White Palace (Bach Dinh); the Front Beach seafront and sunset at the pier; Back Beach; Nghinh Phong cape and Huong Phong beach; the Guanyin statue and Niet Ban pagoda; bánh khọt; the ferry to Con Dao (about 3.5 hours).",
+    whenAndTips:
+      "November–April is best; weekends and holidays are crowded and expensive, weekdays calmer. A day or a night. A seaside escape from Ho Chi Minh City or a stepping stone to Con Dao.",
+  },
+  "ha-giang": {
+    identity:
+      "Ha Giang lies in the valley of the Lo river at the northern tip of Vietnam about 320 km north of Hanoi, the starting point of the 'Ha Giang Loop'; since June 2025 the former Ha Giang province has been merged into Tuyen Quang. North of the city the Dong Van Karst Plateau, Vietnam's first UNESCO Global Geopark (2010), spreads its limestone peaks, deep valleys and terraces to the Chinese border; the Ma Pi Leng Pass (about 1,500 m) above the Nho Que gorge is the most dramatic stretch of the loop, and the Lung Cu flag tower marks the northernmost point of Vietnam. This is the home of the Hmong, Tay, Dao, Nung and some twenty other peoples, whose weekend markets and dress are the main attraction. The loop is usually ridden by motorbike or driven over three or four days.",
+    layout:
+      "Ha Giang city sits in the valley on both banks of the Lo, with the Km 0 marker as the loop's start. North via Quan Ba (Heaven's Gate and the Twin Mountains) and Yen Minh to Dong Van (old quarter, the Vuong palace, the Lung Cu tower) is about 150 km, then over the Ma Pi Leng Pass to Meo Vac (Sunday market) about 25 km, and back south via Bac Me or Bao Lac to Ha Giang — about 350 km in all. Mountain roads link the towns, and Dong Van and Meo Vac are the usual overnight stops.",
+    gettingAround:
+      "Ha Giang has no airport; the nearest is Hanoi's Noi Bai (about 320 km). Buses and sleeper coaches from Hanoi's My Dinh station take about 6 hours, mostly overnight. The loop is ridden on hired motorbikes (an international licence is required; local 'easy rider' drivers carry passengers), by hired car or with a tour — winding roads and landslides in the rains. The climate is subtropical highland, cold and foggy in winter and rainy in summer.",
+    culture:
+      "Vietnamese is universal, and each people has its own language. Foreigners need a border-area permit (arranged cheaply by guesthouses or agencies). The markets (Dong Van and Meo Vac on Sundays) are where the peoples gather — ask before photographing and don't block the way; ask before entering village courtyards, and give children neither sweets nor money. The Vuong palace is a heritage site. Don't ride at night. Corn wine, buckwheat cakes and cured meat are the mountain foods. Tipping is not expected.",
+    seeAndDo:
+      "The Ha Giang Loop (three to four days); Heaven's Gate and the Twin Mountains at Quan Ba; the Dong Van old quarter and the Vuong palace; the Lung Cu flag tower; the Ma Pi Leng Pass and a boat on the Nho Que river; the Meo Vac Sunday market; the terraces in buckwheat-flower season (October–November); the Hoang Su Phi terraces west of Ha Giang (September–October); the ethnology museum in Ha Giang city.",
+    whenAndTips:
+      "September–November is best (buckwheat flowers, golden terraces, stable weather), and March–May is good; June–August brings rain and landslides, December–February cold fog. Allow at least four days including travel. Motorbikes need a licence and insurance, roads are slippery in rain — ride within your ability.",
+  },
   // ============ Malaysia ============
   "malaysia-overview": {
     identity:
@@ -7037,6 +7295,92 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The Langkawi Sky Bridge; a Kilim River mangrove cruise and karst scenery; Kuah's duty-free shopping district; sunset at Pantai Cenang.",
     whenAndTips:
       "November to February is comparatively dry, the best season for visiting Langkawi; May–October is the wet season, and some outdoor itineraries may be affected by weather.",
+  },
+
+  // ── Malaysia batch 2 (2026-09-05) ──
+  putrajaya: {
+    identity:
+      "Putrajaya is Malaysia's federal administrative centre, about 25 km south of Kuala Lumpur; planned from 1995, it received the federal government from Kuala Lumpur in 1999 and became a federal territory in 2001, with about 120,000 people (2024). The whole city is laid out around the artificial Putrajaya Lake, with 38 percent of its area as green space: the pink Putra Mosque and the Prime Minister's office, the bridges of varied design (the Seri Wawasan among them), the 'Iron Mosque' and the wetlands park are its sights. A deliberately planned garden and smart city, it is government offices by day and a place for residents to stroll and cycle by the lake in the evening and at weekends; a hot-air balloon fiesta is held each year.",
+    layout:
+      "The city occupies the hills around Putrajaya Lake, divided into precincts: the core precinct sits on the high ground of the northern shore, with the Putra Mosque, the Prime Minister's office and the main ministries around Putra Square and the Putra boulevard running south; the Iron Mosque and the Palace of Justice lie south of the core, and bridges of various shapes cross the lake between precincts. The wetlands park lies upstream at the north of the city and the botanical garden east of the core. Putrajaya Sentral (KLIA Transit and MRT) is in the south-west, and the airport about 25 km south.",
+    gettingAround:
+      "Putrajaya has no airport of its own; Kuala Lumpur International (KUL) lies about 25 km south, about 20 minutes to Putrajaya Sentral by KLIA Transit. From KL Sentral take KLIA Transit (about 20 minutes) or the MRT Putrajaya line (fully open since 2023), with buses to the core precinct. The city was designed for cars and walking distances are long — the core is walkable, the rest needs buses, taxis or hire bicycles, and boats cruise the lake. The climate is tropical rainforest, hot and wet all year.",
+    culture:
+      "Malay and English are universal. Visit mosques outside prayer times; women wear the robes provided, everyone removes shoes and keeps quiet; the Prime Minister's office is not open to the public and is seen from outside. Government precincts rest on Sundays, when the lakeside and parks are busy. Food is mainly Malay, with few restaurants in the core and a food street by the lake. Tipping is not expected.",
+    seeAndDo:
+      "The Putra Mosque, Putra Square and the exterior of the Prime Minister's office; the Seri Wawasan, Seri Gemilang and other bridges; the Iron Mosque (Tuanku Mizan Zainal Abidin Mosque); a cruise on Putrajaya Lake; the wetlands park (birdwatching, cycling); the botanical garden; the Palace of Justice and the mosque ensemble at night; the hot-air balloon fiesta (usually around March); weekend cycling by the lake.",
+    whenAndTips:
+      "Any time of year, avoiding the midday heat — the lakeside is most pleasant at dusk; the October–January rains bring afternoon storms. Half a day to a day. A day trip from Kuala Lumpur, or a stop on the way in from the airport.",
+  },
+  "cameron-highlands": {
+    identity:
+      "The Cameron Highlands lie in the Titiwangsa range of central Malaysia at 800–1,600 m, about 200 km north of Kuala Lumpur — a hill station opened under British rule (surveyed by William Cameron in 1885 and developed from the 1930s), with about 44,000 people in the district. Temperatures average about 18°C all year, and it is Malaysia's largest tea-growing area — the BOH estates were founded in 1929 — as well as a producer of strawberries, vegetables and flowers; the Mossy Forest near the summit of Gunung Brinchang (2,031 m) is a cloud forest. Tanah Rata and Brinchang are the two main towns, with Tudor-style colonial buildings and the tradition of afternoon tea. The Thai silk magnate Jim Thompson disappeared here in 1967.",
+    layout:
+      "The highlands follow one mountain road: from Ringlet in the south it climbs to Tanah Rata (the administrative centre, with hotels, restaurants, agencies and trailheads), then about 5 km north to Brinchang (market, strawberry farms); north of Brinchang lie the BOH Sungai Palas estate and the road up Gunung Brinchang (the Mossy Forest near the summit), with Kampung Raja and more farms further north. Another BOH estate lies by the lake near Ringlet.",
+    gettingAround:
+      "There is no airport; Kuala Lumpur International is about 3.5–4 hours by road. Buses from KL's TBS terminal reach Tanah Rata in about 4 hours, from Ipoh in about 2.5. Within the highlands use taxis, hired cars or half-day tours (the roads to the Mossy Forest and the estates are narrow, so most people join a tour); the towns are walkable and numbered trails lead from Tanah Rata into the forest. The climate is cool tropical highland, misty, with afternoon showers and more than 2,700 mm of rain a year.",
+    culture:
+      "Malay and English are universal, with large Chinese and Indian communities. The tea estates have factory tours and view cafés, and traffic jams at weekends and holidays are severe. Keep to the boardwalk in the Mossy Forest and pick nothing; trails sometimes close after landslides — ask your guesthouse. Respect the Orang Asli villages. Strawberry farms charge for picking. Nights are cool — bring a jacket. Tipping is not expected.",
+    seeAndDo:
+      "The BOH tea estates (the Sungai Palas factory and viewpoint); the Mossy Forest and the summit of Gunung Brinchang; the Tanah Rata trails (Nos 9 and 10 and others) and waterfalls; strawberry, cactus and bee farms; the Brinchang night market (weekends); afternoon tea at the colonial Smokehouse; the Time Tunnel museum at Kampung Raja; the lakeside estate at Ringlet.",
+    whenAndTips:
+      "Any time of year, with February–April and June–September relatively dry; weekends and Malaysian public holidays are extremely crowded and jammed. Stay two nights. Linked with Ipoh and Penang on a northern route.",
+  },
+  taiping: {
+    identity:
+      "Taiping lies in northern Perak and is the wettest town in Peninsular Malaysia (about 3,200 mm of rain a year), with about 245,000 people (2013). It grew on the Larut tin mines in the nineteenth century and was Perak's capital after 1874, leaving Malaysia a string of firsts: the Lake Gardens of 1880 were the country's first public garden, the Perak Museum of 1886 its first museum, the Taiping–Port Weld railway of 1885 its first railway, Bukit Larut (Maxwell Hill) its first hill station and Taiping Zoo its first zoo. The rain trees trailing their branches over the water of the Lake Gardens are its most famous image.",
+    layout:
+      "The old town lies in a regular grid east of the railway, with the old market, the clock tower, the Anglican church and colonial shophouses; the Lake Gardens, made from abandoned tin pits, lie on the east side of the old town with the zoo at their north-east corner, and the road up Bukit Larut (about 1,000 m at the top, reached by four-wheel-drive jeep) starts beside the zoo. The Perak Museum stands north of the old town. Kuala Sepetang (the former Port Weld), about 15 km west on the coast, has mangroves, charcoal kilns and fireflies.",
+    gettingAround:
+      "Taiping has no airport; the nearest are Penang (about 96 km) and Ipoh (about 73 km). ETS electric trains take about 3 hours from Kuala Lumpur, about 1 hour from Ipoh and about 1 hour from Butterworth (Penang), and buses are easy. In town use taxis or hire a bicycle, with the old town and the gardens on foot; Bukit Larut is reached by the park's jeeps (book ahead) or a walk of about 3 hours, and Kuala Sepetang by taxi or hired car. The climate is tropical rainforest with heavy afternoon rain.",
+    culture:
+      "Malay and English are universal, the Chinese community is large, and Hokkien and Cantonese are common. The Lake Gardens are the townspeople's morning and evening promenade — no climbing the rain trees for photos. The Perak Museum is a heritage site. The charcoal kilns of Kuala Sepetang can be visited and the firefly boats go out at night. Taiping's food includes Hakka dishes, Hainanese chicken rice and tea from Bukit Larut. Tipping is not expected.",
+    seeAndDo:
+      "The Lake Gardens (the rain trees, the lakeside walks); Bukit Larut (Maxwell Hill) for the cloud sea; Taiping Zoo and the night safari; the Perak Museum; the colonial buildings of the old town (the clock tower, the old gaol, All Saints' Church) and the street food; the Kuala Sepetang mangrove walk, charcoal kilns and firefly boats; the Taiping war cemetery; seafood in the fishing village at Kuala Sepetang.",
+    whenAndTips:
+      "February–April is relatively dry; in other months rain falls in the afternoon, so go out in the morning. A day for the town, half a day for Kuala Sepetang. A stop between Penang and Ipoh.",
+  },
+  "alor-setar": {
+    identity:
+      "Alor Setar is the capital of the Malaysian state of Kedah, on the rice plains of the north-western peninsula, with about 418,000 people (2020) — the second-oldest state capital in Malaysia. Kedah is the 'rice bowl of Malaysia', with paddy stretching to the horizon outside the city, and the Paddy Museum has a 360-degree mural of the fields; the Zahir Mosque, completed in 1912, is among the most beautiful in Malaysia, the Balai Besar of 1735 is the sultanate's ceremonial hall, and the 165.5 m Alor Setar Tower is the country's third-tallest tower. The former prime minister Mahathir Mohamad was born here, and his birthplace is open to visitors. Ferries to Langkawi leave from Kuala Kedah about 15 km west.",
+    layout:
+      "The centre lies by the Kedah river, with the Zahir Mosque, the Balai Besar, the royal museum and the big clock tower around the royal square and the Alor Setar Tower beside them, and the Pekan Rabu market in the centre; Mahathir's birthplace is on Seberang Perak road south of the centre. The Paddy Museum stands in the fields about 5 km north, and Gunung Jerai rises about 15 km east. The station is on the south side of the centre, the airport about 15 km north and the Kuala Kedah jetty about 15 km west.",
+    gettingAround:
+      "Sultan Abdul Halim Airport (AOR), about 15 km from the city, has flights to Subang, Kuala Lumpur and Johor Bahru. ETS electric trains take about 5–6 hours from Kuala Lumpur and about 1 hour from Butterworth; buses take about 6 hours from Kuala Lumpur and 2 from Penang. In town use taxis or a hire car, with the centre walkable; the Paddy Museum and Kuala Kedah are taxi rides. The climate is tropical monsoon, wet from May to October.",
+    culture:
+      "Malay is universal and English works in tourism; Kedah is a strongly Malay state. Visit the mosque outside prayer times, covered up, with headscarves for women. The paddy is harvested in December–January and planted in March–April, the prettiest times. The Pekan Rabu market sells Malay traditional foods and crafts. Kedah's food includes laksa Kedah and Malay cakes. Friday is Kedah's rest day (the weekend falls on Friday and Saturday). Tipping is not expected.",
+    seeAndDo:
+      "The Zahir Mosque; the royal square (the Balai Besar, the royal museum, the clock tower); the Alor Setar Tower view; Mahathir's birthplace; the Paddy Museum and the fields; the Pekan Rabu market; the Kedah State Museum; the forest and falls of Gunung Jerai; the fishing village and mangroves of Kuala Kedah; the Bujang Valley archaeological sites (about 60 km south).",
+    whenAndTips:
+      "December–April is drier, and the paddy is most golden in December before harvest. A day for the city. A transit point for Langkawi (about 1.5 hours by ferry) or for the road north into Thailand.",
+  },
+  semporna: {
+    identity:
+      "Semporna lies on the Celebes Sea coast of south-eastern Sabah, with about 35,000 people (2010), and is the gateway to the world-class dive site of Sipadan (about 36 km from town) and to Mabul and Kapalai; the volcanic crater of Bohey Dulang in Tun Sakaran Marine Park (established 2004) is a famous viewpoint. The Bajau Laut sea people have lived here for generations on boats and stilt houses over the water, and their painted sails are shown at the Regatta Lepa festival each April; Semporna is also home to Malaysia's only Chavacano-speaking community (of Philippine origin). The town is known for seafood and pearl farming.",
+    layout:
+      "The town sits on a small peninsula, with the jetty area as its centre and dive shops, guesthouses and seafood restaurants along the waterfront; stilt-house villages stand over the water at the edge of town. Mabul and Kapalai lie about 40 minutes south by boat, with Sipadan further south beyond Mabul — a marine park with no accommodation; Tun Sakaran Marine Park (Bohey Dulang, Mantabuan) lies 30–45 minutes north-east. Tawau is about 100 km west, with the airport there.",
+    gettingAround:
+      "Semporna has no airport; the nearest is Tawau (TWU), with flights to Kota Kinabalu and Kuala Lumpur, and the drive from the airport to Semporna takes about 1.5 hours (shared transfers available). The town is walkable, and dive shops and resorts run speedboats to the islands. The climate is tropical rainforest, hot and wet all year, with the best sea conditions from April to November.",
+    culture:
+      "Malay and Bajau are spoken, with English and Chinese common in tourism. Sipadan has a daily limit (about 178 divers), with permits allocated through dive shops, booked months ahead, and an advanced certification is required; touch no coral and take no shells within the marine parks. Ask before photographing in Bajau villages and give children nothing. The east coast of Sabah lies within the Eastern Sabah Security Zone (ESSZONE), with night-time sea curfews in some waters — check official travel advice before setting out and go to sea only with licensed operators. Seafood is ordered by weight. Tipping is not expected.",
+    seeAndDo:
+      "Diving Sipadan (permit required); snorkelling and water villas at Mabul and Kapalai; Tun Sakaran Marine Park (the climb up Bohey Dulang for the lagoon); the Bajau stilt villages (with a tour); seafood at the jetty night market; snorkelling at Mantabuan and Sibuan; the Regatta Lepa festival in April.",
+    whenAndTips:
+      "April–November has the best seas, with July–August and Malaysian holidays the busiest; book Sipadan permits well ahead. Stay three or four nights. Linked with Tawau, Sandakan and Kota Kinabalu on a Sabah route.",
+  },
+  sibu: {
+    identity:
+      "Sibu lies in central Sarawak where the Rajang — Malaysia's longest river — meets the Igan, about 60 km from the sea, with about 163,000 people (2010). In 1901 Wong Nai Siong led Foochow settlers here to farm, and Sibu became the 'New Foochow', marked by the Foochow dialect, kompia bread and kampua noodles; the Tua Pek Kong temple and its seven-storey pagoda, which survived the great fire of 1928, are the landmark, the swan statue is the city's symbol and the Central Market is Sarawak's largest. Express boats run up the Rajang from Sibu to the longhouse country of Kapit and Belaga, and the Borneo Cultural Festival is held in the town square each July.",
+    layout:
+      "The town lies on the north bank of the Rajang, with the express-boat wharf, the Tua Pek Kong temple and pagoda and the Central Market on the riverfront, the town square and the swan statue on the main street by the river, and the old shophouses behind the wharf. Sibu Airport is about 23 km south-east. The Iban longhouses of Bawang Assan lie about 40 km downriver, and Kapit about 140 km upriver (about 3 hours by express boat).",
+    gettingAround:
+      "Sibu Airport (SBW), about 23 km from town, has flights to Kuala Lumpur, Kuching, Kota Kinabalu and Miri and to Singapore. Buses from Kuching take about 7 hours, and the Rajang express boats are the traditional way into the interior. In town use taxis, with the centre on foot; visit longhouses with a local agency. The climate is tropical rainforest, hot and wet all year.",
+    culture:
+      "Foochow, Malay and Iban are spoken, with English and Mandarin common. The Tua Pek Kong pagoda can be climbed for the river view; longhouse visits are hosted by the residents — bring a small gift, remove shoes indoors and respect the elders. Kampua noodles, kompia and ding bian hu are the local Foochow snacks, with food stalls upstairs in the Central Market. The Borneo Cultural Festival (July) brings the dances of every community. Tipping is not expected.",
+    seeAndDo:
+      "The Tua Pek Kong temple and seven-storey pagoda; the Central Market; the town square, the swan statue and the Sibu Heritage Centre; the Rajang riverfront and express boats; the Iban longhouses of Bawang Assan (a day or overnight); the fort and market at Kapit (by express boat); a Foochow food crawl; the Chinese memorial park; the Borneo Cultural Festival (July).",
+    whenAndTips:
+      "Rain falls all year, less from March to September, and the July festival is the liveliest time. A day for the town, one or two for the longhouses. The gateway between Kuching and Miri into the Rajang interior.",
   },
   // ============ Mongolia ============
   "mongolia-overview": {

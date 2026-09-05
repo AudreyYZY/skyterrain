@@ -242,6 +242,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "kr-honam": { zh: "湖南地区", en: "Honam Region", order: 282 },
   "kr-gangwon": { zh: "江原道", en: "Gangwon Province", order: 283 },
   "kr-jeju": { zh: "济州岛", en: "Jeju Island", order: 284 },
+  "kr-chungcheong": { zh: "忠清地区", en: "Chungcheong Region", order: 285 },
   // 波兰（马佐夫舍—小波兰—大波兰与西里西亚—波美拉尼亚—瓦尔米亚马祖里与波德拉谢）
   "pl-mazovia": { zh: "马佐夫舍", en: "Mazovia", order: 260 },
   "pl-malopolska": { zh: "小波兰", en: "Lesser Poland (Małopolska)", order: 261 },
@@ -3496,6 +3497,43 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "DMK", nameZh: "廊曼国际机场", nameEn: "Don Mueang International", lon: 100.6069, lat: 13.9126 },
     source: "呵叻市中心 14.9799,102.0977；本地那空叻差是玛机场目前无稳定的定期客运航班，实际多经陆路（火车/长途大巴）往返曼谷（约260公里）：公开资料",
   },
+
+  // ── 泰国 批2（2026-09-05）──
+  {
+    id: "kanchanaburi", nameZh: "北碧", nameEn: "Kanchanaburi", country: "thailand", tier: "notable", zone: "th-central", admin1Zh: "北碧府", admin1En: "Kanchanaburi",
+    lon: 99.5311, lat: 14.0194,
+    source: "Kanchanaburi 14.0194,99.5311（en.wikipedia）；无机场，最近为曼谷（约 120 公里），条目不写机场字段，火车自曼谷吞武里站可达；市镇人口 25,651（2017）",
+  },
+  {
+    id: "lampang", nameZh: "南邦", nameEn: "Lampang", country: "thailand", tier: "notable", zone: "th-north", admin1Zh: "南邦府", admin1En: "Lampang",
+    lon: 99.4900, lat: 18.2900,
+    airport: { iata: "LPT", nameZh: "南邦机场", nameEn: "Lampang Airport", lon: 99.5042, lat: 18.2709 },
+    source: "Lampang 18.2900,99.4900（en.wikipedia）；LPT 机场：en.wikipedia（紧邻市区南侧，仅曼谷廊曼航线）；人口 58,074（2010 普查）",
+  },
+  {
+    id: "hat-yai", nameZh: "合艾", nameEn: "Hat Yai", country: "thailand", tier: "major", zone: "th-south", admin1Zh: "宋卡府", admin1En: "Songkhla",
+    lon: 100.4670, lat: 7.0170,
+    airport: { iata: "HDY", nameZh: "合艾国际机场", nameEn: "Hat Yai International", lon: 100.3928, lat: 6.9331 },
+    source: "Hat Yai 7.0170,100.4670（en.wikipedia）；HDY 机场：en.wikipedia（市区西约 9 公里，有吉隆坡/新加坡航线）；市镇人口 191,696（2024），泰南最大城市",
+  },
+  {
+    id: "ko-chang", nameZh: "象岛", nameEn: "Ko Chang", country: "thailand", tier: "notable", zone: "th-east", admin1Zh: "达叻府", admin1En: "Trat",
+    lon: 102.3519, lat: 12.1036,
+    airport: { iata: "TDX", nameZh: "达叻机场", nameEn: "Trat Airport", lon: 102.3190, lat: 12.2746 },
+    source: "Ko Chang 12.1036,102.3519（en.wikipedia）；TDX 达叻机场在大陆（距 Ao Thammachat 渡口约 17 公里，曼谷航空经营，仅曼谷航线），岛上无机场；人口 8,538（2019），泰国第三大岛",
+  },
+  {
+    id: "khao-lak", nameZh: "考拉", nameEn: "Khao Lak", country: "thailand", tier: "notable", zone: "th-south", admin1Zh: "攀牙府", admin1En: "Phang Nga",
+    lon: 98.2500, lat: 8.6889,
+    airport: { iata: "HKT", nameZh: "普吉国际机场（经普吉转乘）", nameEn: "Phuket International (via Phuket)", lon: 98.3169, lat: 8.1132 },
+    source: "Khao Lak 8.6889,98.2500（en.wikipedia）；无机场，与普吉条目共用 HKT（约 60 公里）；沿海度假带约 20–25 公里长，无单一人口口径",
+  },
+  {
+    id: "ko-lanta", nameZh: "兰塔岛", nameEn: "Ko Lanta", country: "thailand", tier: "notable", zone: "th-south", admin1Zh: "甲米府", admin1En: "Krabi",
+    lon: 99.0500, lat: 7.5833,
+    airport: { iata: "KBV", nameZh: "甲米国际机场（经甲米转乘）", nameEn: "Krabi International (via Krabi)", lon: 98.9863, lat: 8.0991 },
+    source: "Ko Lanta Yai 7.5833,99.0500（en.wikipedia）；无机场，与甲米条目共用 KBV（约 70 公里，接驳车约 2 小时）；人口 10,830（2012）",
+  },
   // ── 韩国 ──────────────────────────────────────────────
   {
     id: "seoul", nameZh: "首尔", nameEn: "Seoul", country: "south-korea", tier: "capital", zone: "kr-capital", admin1Zh: "首尔特别市", admin1En: "Seoul",
@@ -3528,7 +3566,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "蔚山市中心 35.5384,129.3114；USN 机场：公开资料",
   },
   {
-    id: "yeosu", nameZh: "丽水", nameEn: "Yeosu", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全罗南道", admin1En: "South Jeolla Province",
+    id: "yeosu", nameZh: "丽水", nameEn: "Yeosu", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全南光州特别市", admin1En: "Jeonnam-Gwangju Special Metropolitan City",
     lon: 127.6622, lat: 34.7604,
     airport: { iata: "RSU", nameZh: "丽水机场", nameEn: "Yeosu Airport", lon: 127.6169, lat: 34.8423 },
     source: "丽水市中心 34.7604,127.6622；RSU 机场：公开资料",
@@ -3540,19 +3578,19 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "浦项市中心 36.0190,129.3435；KPO 机场：公开资料",
   },
   {
-    id: "gangneung", nameZh: "江陵", nameEn: "Gangneung", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原道", admin1En: "Gangwon Province",
+    id: "gangneung", nameZh: "江陵", nameEn: "Gangneung", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原特别自治道", admin1En: "Gangwon State",
     lon: 128.8761, lat: 37.7519,
     airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
     source: "江陵市中心 37.7519,128.8761；本地无商业机场，最近机场为襄阳国际机场（距市区约40km，国内定期航班有限）：公开资料",
   },
   {
-    id: "sokcho", nameZh: "束草", nameEn: "Sokcho", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原道", admin1En: "Gangwon Province",
+    id: "sokcho", nameZh: "束草", nameEn: "Sokcho", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原特别自治道", admin1En: "Gangwon State",
     lon: 128.5918, lat: 38.2070,
     airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
     source: "束草市中心 38.2070,128.5918；本地无商业机场，最近机场为襄阳国际机场（距市区约20km，国内定期航班有限）：公开资料",
   },
   {
-    id: "chuncheon", nameZh: "春川", nameEn: "Chuncheon", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原道", admin1En: "Gangwon Province",
+    id: "chuncheon", nameZh: "春川", nameEn: "Chuncheon", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原特别自治道", admin1En: "Gangwon State",
     lon: 127.7298, lat: 37.8813,
     airport: { iata: "WJU", nameZh: "原州机场", nameEn: "Wonju Airport", lon: 127.9600, lat: 37.4380 },
     source: "春川市中心 37.8813,127.7298；本地无商业机场，最近机场为原州机场（距市区约65km）：公开资料",
@@ -3564,10 +3602,46 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "安东市中心 36.5684,128.7294；本地小型机场现无定期客运航班，最近有定期航班的机场为大邱国际机场（距市区约90km）：公开资料",
   },
   {
-    id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全罗北道", admin1En: "North Jeolla Province",
+    id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全北特别自治道", admin1En: "Jeonbuk State",
     lon: 127.1480, lat: 35.8242,
     airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8093, lat: 35.1264 },
     source: "全州韩屋村一带 35.8242,127.1480；本地无商业机场，最近机场为光州机场（距市区约50km）：公开资料",
+  },
+
+  // ── 韩国 批2（2026-09-05）──
+  {
+    id: "incheon", nameZh: "仁川", nameEn: "Incheon", country: "south-korea", tier: "major", zone: "kr-capital", admin1Zh: "仁川广域市", admin1En: "Incheon",
+    lon: 126.7052, lat: 37.4563,
+    airport: { iata: "ICN", nameZh: "仁川国际机场", nameEn: "Incheon International", lon: 126.4407, lat: 37.4602 },
+    source: "仁川市厅 37.4563,126.7052（en.wikipedia）；ICN 机场在永宗岛（与首尔条目共用记录）；人口 3,015,482（2026-01）",
+  },
+  {
+    id: "suwon", nameZh: "水原", nameEn: "Suwon", country: "south-korea", tier: "notable", zone: "kr-capital", admin1Zh: "京畿道", admin1En: "Gyeonggi Province",
+    lon: 127.0286, lat: 37.2636,
+    source: "水原 37.2636,127.0286（en.wikipedia）；无机场，最近为仁川 ICN（约 40 公里），条目不写机场字段，地铁 1 号线自首尔可达；人口 1,234,582（2026-02）",
+  },
+  {
+    id: "daegu", nameZh: "大邱", nameEn: "Daegu", country: "south-korea", tier: "major", zone: "kr-yeongnam", admin1Zh: "大邱广域市", admin1En: "Daegu",
+    lon: 128.6017, lat: 35.8717,
+    airport: { iata: "TAE", nameZh: "大邱国际机场", nameEn: "Daegu International", lon: 128.6589, lat: 35.8942 },
+    source: "大邱 35.8717,128.6017（en.wikipedia）；TAE 机场：en.wikipedia（市区东北，地铁 1 号线峨洋桥站约 1.3 公里）；人口 2,351,461（2026-01）",
+  },
+  {
+    id: "gwangju", nameZh: "光州", nameEn: "Gwangju", country: "south-korea", tier: "major", zone: "kr-honam", admin1Zh: "全南光州特别市", admin1En: "Jeonnam-Gwangju Special Metropolitan City",
+    lon: 126.8486, lat: 35.1653,
+    airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8089, lat: 35.1264 },
+    source: "光州 35.1653,126.8486（en.wikipedia）；KWJ 机场：en.wikipedia（市区西侧，仅济州/金浦航线，远期计划并入务安机场）；人口 1,401,235（2026-02）；2026-07-01 与全罗南道合并为全南光州特别市（en.wikipedia Administrative divisions of South Korea）",
+  },
+  {
+    id: "daejeon", nameZh: "大田", nameEn: "Daejeon", country: "south-korea", tier: "major", zone: "kr-chungcheong", admin1Zh: "大田广域市", admin1En: "Daejeon",
+    lon: 127.3850, lat: 36.3500,
+    airport: { iata: "CJJ", nameZh: "清州国际机场（经清州转乘）", nameEn: "Cheongju International (via Cheongju)", lon: 127.4992, lat: 36.7164 },
+    source: "大田 36.3500,127.3850（en.wikipedia）；无自有机场，最近为清州 CJJ（约 40 公里），本条目记录 CJJ 并注明；人口 1,441,203（2026-02）",
+  },
+  {
+    id: "tongyeong", nameZh: "统营", nameEn: "Tongyeong", country: "south-korea", tier: "notable", zone: "kr-yeongnam", admin1Zh: "庆尚南道", admin1En: "South Gyeongsang Province",
+    lon: 128.4331, lat: 34.8544,
+    source: "统营 34.8544,128.4331（en.wikipedia）；无机场，最近为泗川（约 50 公里）、釜山金海（约 100 公里），条目不写机场字段；人口 118,896（2024-09）",
   },
   // ===== 波兰 =====
   {
@@ -3709,6 +3783,41 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "HAN", nameZh: "内排国际机场", nameEn: "Noi Bai International", lon: 105.8073, lat: 21.2212 },
     source: "宁平市中心 20.2506,105.9744；本地无商业机场，最近机场为河内内排国际机场（距市区约90km）：公开资料",
   },
+
+  // ── 越南 批2（2026-09-05）──
+  {
+    id: "haiphong", nameZh: "海防", nameEn: "Haiphong", country: "vietnam", tier: "major", zone: "vn-north", admin1Zh: "海防市", admin1En: "Hai Phong",
+    lon: 106.6838, lat: 20.8651,
+    airport: { iata: "HPH", nameZh: "吉碑国际机场", nameEn: "Cat Bi International", lon: 106.7247, lat: 20.8192 },
+    source: "Haiphong 20.8651,106.6838（en.wikipedia）；HPH 机场：en.wikipedia（市区东南约 6 公里）；人口 4,664,124（2025，含 2025-07 并入的海阳省）",
+  },
+  {
+    id: "dong-hoi", nameZh: "洞海", nameEn: "Dong Hoi", country: "vietnam", tier: "notable", zone: "vn-central", admin1Zh: "广治省", admin1En: "Quang Tri",
+    lon: 106.6119, lat: 17.4556,
+    airport: { iata: "VDH", nameZh: "洞海机场", nameEn: "Dong Hoi Airport", lon: 106.5906, lat: 17.5150 },
+    source: "Dong Hoi 17.4556,106.6119（en.wikipedia）；VDH 机场：en.wikipedia（市区北约 6 公里，河内/胡志明市/芽庄航线）；2025-07 起原广平省并入广治省；风牙—己榜国家公园 2003 世界遗产、2025 与老挝欣南诺跨境扩展",
+  },
+  {
+    id: "quy-nhon", nameZh: "归仁", nameEn: "Quy Nhon", country: "vietnam", tier: "notable", zone: "vn-central", admin1Zh: "嘉莱省", admin1En: "Gia Lai",
+    lon: 109.2333, lat: 13.7667,
+    airport: { iata: "UIH", nameZh: "符吉机场", nameEn: "Phu Cat Airport", lon: 109.0422, lat: 13.9550 },
+    source: "Quy Nhon 13.7667,109.2333（en.wikipedia）；UIH 机场：en.wikipedia（市区西北约 30 公里，仅国内航线）；人口约 578,600（2024，改制前口径）；2025-07 起原平定省并入嘉莱省",
+  },
+  {
+    id: "phan-thiet", nameZh: "潘切（美奈）", nameEn: "Phan Thiet (Mui Ne)", country: "vietnam", tier: "notable", zone: "vn-south", admin1Zh: "林同省", admin1En: "Lam Dong",
+    lon: 108.1036, lat: 10.9283,
+    source: "Phan Thiet 10.9283,108.1036（en.wikipedia）；无运营中机场，最近为金兰 CXR（约 200 公里）、胡志明市 SGN（约 200 公里），条目不写机场字段；2025-07 起原平顺省并入林同省",
+  },
+  {
+    id: "vung-tau", nameZh: "头顿", nameEn: "Vung Tau", country: "vietnam", tier: "notable", zone: "vn-south", admin1Zh: "胡志明市", admin1En: "Ho Chi Minh City",
+    lon: 107.0700, lat: 10.3508,
+    source: "Vung Tau 10.3508,107.0700（en.wikipedia）；无商业机场，最近为胡志明市 SGN（约 95 公里），条目不写机场字段；人口 117,413（2024-12，头顿坊口径）；2025-07 起原巴地头顿省并入胡志明市",
+  },
+  {
+    id: "ha-giang", nameZh: "河江", nameEn: "Ha Giang", country: "vietnam", tier: "notable", zone: "vn-north", admin1Zh: "宣光省", admin1En: "Tuyen Quang",
+    lon: 104.9836, lat: 22.8233,
+    source: "Ha Giang city 22.8233,104.9836（en.wikipedia）；无机场，最近为河内内排（约 320 公里），条目不写机场字段，夜班大巴约 6 小时；2025-06 起原河江省并入宣光省；同文岩溶高原 UNESCO 世界地质公园",
+  },
   {
     id: "ulaanbaatar", nameZh: "乌兰巴托", nameEn: "Ulaanbaatar", country: "mongolia", tier: "capital", zone: "mn-central", admin1Zh: "乌兰巴托市", admin1En: "Ulaanbaatar",
     lon: 106.9177, lat: 47.9184,
@@ -3840,6 +3949,42 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 99.8467, lat: 6.3228,
     airport: { iata: "LGK", nameZh: "浮罗交怡国际机场", nameEn: "Langkawi International Airport", lon: 99.7286, lat: 6.3297 },
     source: "浮罗交怡瓜镇 6.3228,99.8467；LGK机场（距瓜镇约11km）：公开资料",
+  },
+
+  // ── 马来西亚 批2（2026-09-05）──
+  {
+    id: "putrajaya", nameZh: "布城", nameEn: "Putrajaya", country: "malaysia", tier: "notable", zone: "my-central", admin1Zh: "布城联邦直辖区", admin1En: "Federal Territory of Putrajaya",
+    lon: 101.6900, lat: 2.9300,
+    airport: { iata: "KUL", nameZh: "吉隆坡国际机场（经吉隆坡转乘）", nameEn: "Kuala Lumpur International (via KL)", lon: 101.7099, lat: 2.7456 },
+    source: "Putrajaya 2.9300,101.6900（en.wikipedia）；无自有机场，与吉隆坡条目共用 KUL（约 25 公里，KLIA Transit 直达）；人口 119,700（2024-Q1）",
+  },
+  {
+    id: "cameron-highlands", nameZh: "金马仑高原（丹那拉打）", nameEn: "Cameron Highlands (Tanah Rata)", country: "malaysia", tier: "notable", zone: "my-central", admin1Zh: "彭亨州", admin1En: "Pahang",
+    lon: 101.3833, lat: 4.4667,
+    source: "Tanah Rata 4.4667,101.3833（en.wikipedia，海拔约 1,400 米）；无机场，最近为吉隆坡 KUL（约 200 公里），条目不写机场字段，大巴自吉隆坡约 4 小时；全区人口 43,700（2019）",
+  },
+  {
+    id: "taiping", nameZh: "太平", nameEn: "Taiping", country: "malaysia", tier: "notable", zone: "my-north", admin1Zh: "霹雳州", admin1En: "Perak",
+    lon: 100.7333, lat: 4.8500,
+    source: "Taiping 4.8500,100.7333（en.wikipedia）；无机场，最近为槟城（约 96 公里）、怡保（约 73 公里），条目不写机场字段，ETS 火车自吉隆坡约 3 小时；人口 245,182（2013）",
+  },
+  {
+    id: "alor-setar", nameZh: "亚罗士打", nameEn: "Alor Setar", country: "malaysia", tier: "notable", zone: "my-north", admin1Zh: "吉打州", admin1En: "Kedah",
+    lon: 100.3694, lat: 6.1183,
+    airport: { iata: "AOR", nameZh: "苏丹阿都哈林机场", nameEn: "Sultan Abdul Halim Airport", lon: 100.4008, lat: 6.1944 },
+    source: "Alor Setar 6.1183,100.3694（en.wikipedia）；AOR 机场：en.wikipedia（市区北约 15 公里，梳邦/吉隆坡/新山航线）；人口 417,800（2020 普查）",
+  },
+  {
+    id: "semporna", nameZh: "仙本那", nameEn: "Semporna", country: "malaysia", tier: "notable", zone: "my-sabah", admin1Zh: "沙巴州", admin1En: "Sabah",
+    lon: 118.6167, lat: 4.4833,
+    airport: { iata: "TWU", nameZh: "斗湖机场（经斗湖转乘）", nameEn: "Tawau Airport (via Tawau)", lon: 118.1219, lat: 4.3133 },
+    source: "Semporna 4.4833,118.6167（en.wikipedia）；无机场，最近为斗湖 TWU（公路约 1.5 小时），本条目记录 TWU 并注明；人口 35,301（2010 普查）",
+  },
+  {
+    id: "sibu", nameZh: "诗巫", nameEn: "Sibu", country: "malaysia", tier: "notable", zone: "my-sarawak", admin1Zh: "砂拉越州", admin1En: "Sarawak",
+    lon: 111.8308, lat: 2.2878,
+    airport: { iata: "SBW", nameZh: "诗巫机场", nameEn: "Sibu Airport", lon: 111.9825, lat: 2.2642 },
+    source: "Sibu 2.2878,111.8308（en.wikipedia）；SBW 机场：en.wikipedia（市区东南约 23 公里）；人口 162,676（2010 普查）",
   },
   {
     id: "singapore-city", nameZh: "新加坡市区", nameEn: "Singapore", country: "singapore", tier: "capital", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
