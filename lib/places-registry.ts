@@ -1044,6 +1044,83 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "嘉峪关市区 39.7726,98.2892；嘉峪关关城 39.8010,98.2190；JGN 机场：Wikipedia",
   },
 
+  // ── 中国 Tier 2 批6（2026-09-05：各省重点城市补充，第二批）──
+  {
+    id: "zhoushan", nameZh: "舟山", nameEn: "Zhoushan", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 122.2070, lat: 30.0160,
+    airport: { iata: "HSN", nameZh: "舟山普陀山国际机场", nameEn: "Zhoushan Putuoshan Int'l", lon: 122.3622, lat: 29.9342 },
+    source: "舟山市区（定海）30.0160,122.2070；HSN 机场在朱家尖岛：Wikipedia（2024-03 升格国际机场）",
+  },
+  {
+    id: "tengchong", nameZh: "腾冲", nameEn: "Tengchong", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
+    lon: 98.4900, lat: 25.0200,
+    airport: { iata: "TCZ", nameZh: "腾冲驼峰机场", nameEn: "Tengchong Tuofeng Airport", lon: 98.4860, lat: 24.9380 },
+    source: "腾冲市区 25.0200,98.4900（保山市代管县级市）；TCZ 机场：Wikipedia（距市区约 12 公里，海拔 1887 米）",
+  },
+  {
+    id: "dujiangyan", nameZh: "都江堰", nameEn: "Dujiangyan", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 103.6270, lat: 31.0027,
+    source: "都江堰市区 31.0027,103.6270（成都市代管县级市）；无民用运输机场（青城山机场为通用航空），就近用成都双流/天府机场（约 60–90 公里）+ 成灌高铁，条目不写机场字段",
+  },
+  {
+    id: "fenghuang", nameZh: "凤凰", nameEn: "Fenghuang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
+    lon: 109.5990, lat: 27.9480,
+    source: "凤凰古城 27.9480,109.5990（湘西州凤凰县，县级）；就近机场为贵州铜仁凤凰机场（TEN，约 30 公里，在铜仁市境内）与张家界荷花机场，高铁凤凰古城站（张吉怀高铁）；因机场不在本县且属外省，条目不写机场字段",
+  },
+  {
+    id: "shiyan", nameZh: "十堰", nameEn: "Shiyan", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖北省", admin1En: "Hubei",
+    lon: 110.7980, lat: 32.6290,
+    airport: { iata: "WDS", nameZh: "十堰武当山机场", nameEn: "Shiyan Wudangshan Airport", lon: 110.9080, lat: 32.5920 },
+    source: "十堰市区（茅箭区）32.6290,110.7980；武当山天柱峰 32.4000,111.0040；WDS 机场：Wikipedia（距市中心约 15 公里）",
+  },
+  {
+    id: "anyang", nameZh: "安阳", nameEn: "Anyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
+    lon: 114.3920, lat: 36.0997,
+    airport: { iata: "AYN", nameZh: "安阳红旗渠机场", nameEn: "Anyang Hongqiqu Airport", lon: 114.5320, lat: 35.9950 },
+    source: "安阳市区 36.0997,114.3920；殷墟 36.1270,114.3140；AYN 机场：Wikipedia / 民航局（汤阴县，2023-11-29 通航，距市区约 27 公里）",
+  },
+  {
+    id: "huashan", nameZh: "华山（华阴）", nameEn: "Mount Hua (Huayin)", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "陕西省", admin1En: "Shaanxi",
+    lon: 110.0920, lat: 34.5660,
+    source: "华阴市区 34.5660,110.0920（渭南市代管县级市）；华山南峰 34.4830,110.0850（2154.9 米）；无民用机场，就近用西安咸阳国际机场（XIY，约 130 公里）+ 华山北站（郑西高铁），条目不写机场字段",
+  },
+  {
+    id: "wutaishan", nameZh: "五台山", nameEn: "Mount Wutai", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "山西省", admin1En: "Shanxi",
+    lon: 113.5900, lat: 39.0180,
+    airport: { iata: "WUT", nameZh: "忻州五台山机场", nameEn: "Xinzhou Wutaishan Airport", lon: 112.9690, lat: 38.5980 },
+    source: "五台山台怀镇 39.0180,113.5900（忻州市五台县）；北台叶斗峰 39.0770,113.5670；WUT 机场：Wikipedia（定襄县，距台怀镇约 50 公里，2015-12-25 通航）",
+  },
+  {
+    id: "tianshui", nameZh: "天水", nameEn: "Tianshui", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
+    lon: 105.7250, lat: 34.5810,
+    airport: { iata: "THQ", nameZh: "天水麦积山机场", nameEn: "Tianshui Maijishan Airport", lon: 105.8600, lat: 34.5590 },
+    source: "天水市区（秦州区）34.5810,105.7250；麦积山石窟 34.3550,106.0080；THQ 机场：百度百科/民航资料（麦积区，距市中心约 14 公里，3C 军民合用）",
+  },
+  {
+    id: "jiujiang", nameZh: "九江", nameEn: "Jiujiang", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江西省", admin1En: "Jiangxi",
+    lon: 116.0020, lat: 29.7050,
+    airport: { iata: "JIU", nameZh: "九江庐山机场", nameEn: "Jiujiang Lushan Airport", lon: 115.8010, lat: 29.4770 },
+    source: "九江市区（浔阳区）29.7050,116.0020；庐山牯岭 29.5550,115.9900；JIU 机场：Wikipedia（庐山西侧，距市区约 33 公里，1996 通航）",
+  },
+  {
+    id: "anshun", nameZh: "安顺", nameEn: "Anshun", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
+    lon: 105.9470, lat: 26.2530,
+    airport: { iata: "AVA", nameZh: "安顺黄果树机场", nameEn: "Anshun Huangguoshu Airport", lon: 105.8730, lat: 26.2610 },
+    source: "安顺市区（西秀区）26.2530,105.9470；黄果树瀑布 25.9890,105.6750；AVA 机场：Wikipedia（距市区约 6 公里）",
+  },
+  {
+    id: "yining", nameZh: "伊宁", nameEn: "Yining", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
+    lon: 81.3240, lat: 43.9160,
+    airport: { iata: "YIN", nameZh: "伊犁伊宁国际机场", nameEn: "Yili Yining Int'l", lon: 81.3300, lat: 43.9560 },
+    source: "伊宁市区（伊犁州府驻地）43.9160,81.3240；YIN 机场：百度百科（距市中心约 3.5 公里，4C 国际支线机场）",
+  },
+  {
+    id: "shigatse", nameZh: "日喀则", nameEn: "Shigatse", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "西藏自治区", admin1En: "Tibet",
+    lon: 88.8800, lat: 29.2670,
+    airport: { iata: "RKZ", nameZh: "日喀则和平机场", nameEn: "Shigatse Peace Airport", lon: 89.3110, lat: 29.3520 },
+    source: "日喀则市区（桑珠孜区）29.2670,88.8800（海拔约 3836 米）；RKZ 机场：Wikipedia/百度百科（距市区约 43 公里，海拔 3782 米）；另有定日机场（DDR，2023 通航，近珠峰）未作为条目机场",
+  },
+
   // ── 日本 ──────────────────────────────────────────────
   {
     id: "tokyo", nameZh: "东京", nameEn: "Tokyo", country: "japan", tier: "capital", zone: "jp-kanto", admin1Zh: "东京都", admin1En: "Tokyo",
