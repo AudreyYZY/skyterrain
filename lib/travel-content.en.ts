@@ -524,7 +524,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   qingdao: {
     identity:
-      "Qingdao, on the southern coast of the Shandong Peninsula, is an important port and seaside city with a metropolitan population of about 7 million. It has a history of German and Japanese occupation, which left blocks of red-roofed European-style buildings in the old town; together with the bays, the beer and the seafood, this gives the city a distinct character.",
+      "Qingdao's blocks of European architecture trace back to Jiaozhou Bay — one of the few natural deep-water harbours in North China, which Germany's East Asia fleet commander scouted and pushed hard to seize after an 1896 inspection; the 1897 killing of two German missionaries became the pretext for occupation, and by 1898 Germany had forced a 99-year lease out of the Qing government, turning Qingdao into its bridgehead in East Asia. Qingdao, on the southern coast of the Shandong Peninsula, is an important port and seaside city with a metropolitan population of about 7 million; a later period of Japanese occupation followed, and together the red-roofed European-style buildings left in the old town, the bays, the beer and the seafood give the city a distinct character.",
     layout:
       "The old town is on the hills on the east side of Jiaozhou Bay, where the streets around Zhanqiao Pier, Badaguan and Signal Hill run steeply between hill and sea; eastward along the coast are the May Fourth Square, the Olympic Sailing Centre and successive newer districts and swimming beaches; behind the city rises Mount Lao. There is no large plain — it is essentially hills and coastline.",
     gettingAround:
@@ -554,7 +554,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   lijiang: {
     identity:
-      "Lijiang, in north-western Yunnan, is known for its Naxi old town and for Yulong (Jade Dragon) Snow Mountain, and is one of the hubs for travel in the north-west of the province. It sits at about 2,400 m, and most people adjust well. The old town is a World Heritage Site and also a heavily commercialised tourist area — quiet by day, lively at night.",
+      "The old town's water system carries the ingenuity of Lijiang's Naxi ancestors — water from the Black Dragon Pool springs at the foot of Yulong Snow Mountain is channelled into town and split into a web of streams running past every doorway; at the source points, 'three-eyed wells' step the water down through three linked pools by natural gradient — the top for drinking, the middle for washing vegetables, the bottom for washing clothes — keeping the source clean without anyone having to manage it. Lijiang, in north-western Yunnan, is known for its Naxi old town and for Yulong Snow Mountain, and is one of the hubs for travel in the north-west of the province; it sits at about 2,400 m, where most people adjust well, and the old town is a World Heritage Site and also a heavily commercialised tourist area — quiet by day, lively at night.",
     layout:
       "The Lijiang basin is a relatively flat upland basin within the Hengduan ranges. Dayan old town (usually just called \"Lijiang old town\") is at its centre; Shuhe old town to the north-west is quieter, and Baisha, smaller still, is closest to the snow mountain. Yulong Snow Mountain is about 25 km north of the town and is a sacred mountain to the Naxi. North lie Tiger Leaping Gorge and the road to Shangri-La; south is Dali.",
     gettingAround:
