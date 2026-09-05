@@ -94,6 +94,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "us-mountain-west": { zh: "山区西部", en: "Mountain West", order: 43 },
   "us-southwest": { zh: "西南部", en: "Southwest", order: 44 },
   "us-west-coast": { zh: "西海岸", en: "West Coast", order: 45 },
+  "us-alaska-hawaii": { zh: "阿拉斯加与夏威夷", en: "Alaska & Hawaii", order: 46 },
   // 加拿大（大致由东到西再到北）
   "ca-atlantic": { zh: "大西洋省份", en: "Atlantic Canada", order: 50 },
   "ca-central": { zh: "中部（安大略·魁北克）", en: "Central Canada", order: 51 },
@@ -241,6 +242,7 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "kr-honam": { zh: "湖南地区", en: "Honam Region", order: 282 },
   "kr-gangwon": { zh: "江原道", en: "Gangwon Province", order: 283 },
   "kr-jeju": { zh: "济州岛", en: "Jeju Island", order: 284 },
+  "kr-chungcheong": { zh: "忠清地区", en: "Chungcheong Region", order: 285 },
   // 波兰（马佐夫舍—小波兰—大波兰与西里西亚—波美拉尼亚—瓦尔米亚马祖里与波德拉谢）
   "pl-mazovia": { zh: "马佐夫舍", en: "Mazovia", order: 260 },
   "pl-malopolska": { zh: "小波兰", en: "Lesser Poland (Małopolska)", order: 261 },
@@ -1699,6 +1701,55 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "长崎站一带 32.7503,129.8737；NGS 机场：公开资料",
   },
 
+  // ── 日本 批2（2026-09-05）──
+  {
+    id: "kobe", nameZh: "神户", nameEn: "Kobe", country: "japan", tier: "major", zone: "jp-kansai", admin1Zh: "兵库县", admin1En: "Hyōgo Prefecture",
+    lon: 135.1956, lat: 34.6900,
+    airport: { iata: "UKB", nameZh: "神户机场", nameEn: "Kobe Airport", lon: 135.2239, lat: 34.6328 },
+    source: "神户市役所一带 34.6900,135.1956（en.wikipedia）；UKB 机场：en.wikipedia（港岛南侧人工岛，港湾线到三宫 18 分钟；2025-04 起有国际航班）；人口约 152 万（2021）",
+  },
+  {
+    id: "himeji", nameZh: "姬路", nameEn: "Himeji", country: "japan", tier: "notable", zone: "jp-kansai", admin1Zh: "兵库县", admin1En: "Hyōgo Prefecture",
+    lon: 134.6853, lat: 34.8153,
+    airport: { iata: "UKB", nameZh: "神户机场（经神户转乘）", nameEn: "Kobe Airport (via Kobe)", lon: 135.2239, lat: 34.6328 },
+    source: "姬路 34.8153,134.6853（en.wikipedia）；无自有机场，最近为神户 UKB（约 66 公里）、关西 KIX（约 127 公里），与神户条目共用机场记录；人口 518,311（2025）",
+  },
+  {
+    id: "takayama", nameZh: "高山", nameEn: "Takayama", country: "japan", tier: "notable", zone: "jp-chubu", admin1Zh: "岐阜县", admin1En: "Gifu Prefecture",
+    lon: 137.2522, lat: 36.1460,
+    source: "高山 36.1460,137.2522（en.wikipedia）；无机场，最近为富山（约 80 公里）、中部国际 NGO（约 150 公里），条目不写机场字段；人口 81,968（2025-09）",
+  },
+  {
+    id: "matsumoto", nameZh: "松本", nameEn: "Matsumoto", country: "japan", tier: "notable", zone: "jp-chubu", admin1Zh: "长野县", admin1En: "Nagano Prefecture",
+    lon: 137.9720, lat: 36.2380,
+    airport: { iata: "MMJ", nameZh: "松本机场（信州松本）", nameEn: "Matsumoto Airport", lon: 137.9228, lat: 36.1667 },
+    source: "松本 36.2380,137.9720（en.wikipedia，海拔 610 米）；MMJ 机场：en.wikipedia（市中心西南约 9 公里，海拔 657 米为日本最高民用机场，仅札幌/福冈/神户等国内航线）；人口 235,972（2025-06）",
+  },
+  {
+    id: "hakodate", nameZh: "函馆", nameEn: "Hakodate", country: "japan", tier: "notable", zone: "jp-hokkaido", admin1Zh: "北海道", admin1En: "Hokkaido",
+    lon: 140.7289, lat: 41.7686,
+    airport: { iata: "HKD", nameZh: "函馆机场", nameEn: "Hakodate Airport", lon: 140.8219, lat: 41.7700 },
+    source: "函馆 41.7686,140.7289（en.wikipedia）；HKD 机场：en.wikipedia（函馆站东约 8 公里）；人口 239,813（2024-01）",
+  },
+  {
+    id: "kumamoto", nameZh: "熊本", nameEn: "Kumamoto", country: "japan", tier: "notable", zone: "jp-kyushu", admin1Zh: "熊本县", admin1En: "Kumamoto Prefecture",
+    lon: 130.7078, lat: 32.8031,
+    airport: { iata: "KMJ", nameZh: "熊本机场（阿苏熊本）", nameEn: "Kumamoto Airport", lon: 130.8553, lat: 32.8372 },
+    source: "熊本 32.8031,130.7078（en.wikipedia）；KMJ 机场：en.wikipedia（益城町，市中心东约 20 公里）；人口 737,543（2025-01）",
+  },
+  {
+    id: "kagoshima", nameZh: "鹿儿岛", nameEn: "Kagoshima", country: "japan", tier: "notable", zone: "jp-kyushu", admin1Zh: "鹿儿岛县", admin1En: "Kagoshima Prefecture",
+    lon: 130.5572, lat: 31.5969,
+    airport: { iata: "KOJ", nameZh: "鹿儿岛机场", nameEn: "Kagoshima Airport", lon: 130.7169, lat: 31.8033 },
+    source: "鹿儿岛 31.5969,130.5572（en.wikipedia）；KOJ 机场：en.wikipedia（雾岛市，鹿儿岛中央站东北约 30 公里）；人口 583,966（2024-07）",
+  },
+  {
+    id: "matsuyama", nameZh: "松山", nameEn: "Matsuyama", country: "japan", tier: "notable", zone: "jp-shikoku", admin1Zh: "爱媛县", admin1En: "Ehime Prefecture",
+    lon: 132.7656, lat: 33.8392,
+    airport: { iata: "MYJ", nameZh: "松山机场", nameEn: "Matsuyama Airport", lon: 132.6997, lat: 33.8272 },
+    source: "松山 33.8392,132.7656（en.wikipedia）；MYJ 机场：en.wikipedia（市中心西南约 6 公里）；人口约 49.4 万（2026），四国最大城市",
+  },
+
   // ── 新西兰 ──────────────────────────────────────────────
   {
     id: "auckland", nameZh: "奥克兰", nameEn: "Auckland", country: "new-zealand", tier: "major", zone: "nz-north", admin1Zh: "奥克兰大区", admin1En: "Auckland Region",
@@ -1735,6 +1786,42 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 170.5028, lat: -45.8788,
     airport: { iata: "DUD", nameZh: "达尼丁机场", nameEn: "Dunedin", lon: 170.198, lat: -45.928 },
     source: "达尼丁八角广场 -45.8788,170.5028；DUD 机场：公开资料",
+  },
+
+  // ── 新西兰 批2（2026-09-05）──
+  {
+    id: "napier", nameZh: "内皮尔", nameEn: "Napier", country: "new-zealand", tier: "notable", zone: "nz-north", admin1Zh: "霍克斯湾大区", admin1En: "Hawke's Bay Region",
+    lon: 176.9178, lat: -39.4903,
+    airport: { iata: "NPE", nameZh: "霍克斯湾机场", nameEn: "Hawke's Bay Airport", lon: 176.8717, lat: -39.4683 },
+    source: "Napier -39.4903,176.9178（en.wikipedia）；NPE 机场：en.wikipedia（市区西北约 5 公里）；人口 66,400（2025-06 估计）",
+  },
+  {
+    id: "taupo", nameZh: "陶波", nameEn: "Taupō", country: "new-zealand", tier: "notable", zone: "nz-north", admin1Zh: "怀卡托大区", admin1En: "Waikato Region",
+    lon: 176.0694, lat: -38.6875,
+    airport: { iata: "TUO", nameZh: "陶波机场", nameEn: "Taupō Airport", lon: 176.0844, lat: -38.7397 },
+    source: "Taupō -38.6875,176.0694（en.wikipedia）；TUO 机场：en.wikipedia（镇南约 8 公里，仅奥克兰航线）；人口 27,000（2025-06 估计）",
+  },
+  {
+    id: "tauranga", nameZh: "陶朗加", nameEn: "Tauranga", country: "new-zealand", tier: "major", zone: "nz-north", admin1Zh: "丰盛湾大区", admin1En: "Bay of Plenty Region",
+    lon: 176.1670, lat: -37.6830,
+    airport: { iata: "TRG", nameZh: "陶朗加机场", nameEn: "Tauranga Airport", lon: 176.1972, lat: -37.6733 },
+    source: "Tauranga -37.6830,176.1670（en.wikipedia）；TRG 机场：en.wikipedia（芒格努伊山，市中心东北约 3 公里）；人口 161,000（2025-06 估计，新西兰第五大城市）",
+  },
+  {
+    id: "nelson", nameZh: "尼尔森", nameEn: "Nelson", country: "new-zealand", tier: "notable", zone: "nz-south", admin1Zh: "尼尔森", admin1En: "Nelson Region",
+    lon: 173.2839, lat: -41.2708,
+    airport: { iata: "NSN", nameZh: "尼尔森机场", nameEn: "Nelson Airport", lon: 173.2211, lat: -41.2983 },
+    source: "Nelson -41.2708,173.2839（en.wikipedia）；NSN 机场：en.wikipedia（Annesbrook，市中心西南约 6 公里）；人口 54,300（2025-06 估计）",
+  },
+  {
+    id: "kaikoura", nameZh: "凯库拉", nameEn: "Kaikōura", country: "new-zealand", tier: "notable", zone: "nz-south", admin1Zh: "坎特伯雷大区", admin1En: "Canterbury Region",
+    lon: 173.6800, lat: -42.4000,
+    source: "Kaikōura -42.4000,173.6800（en.wikipedia）；本地机场仅观鲸/观光小飞机、无定期航线，最近为基督城 CHC（约 180 公里），条目不写机场字段；人口 2,350（2025-06 估计）",
+  },
+  {
+    id: "wanaka", nameZh: "瓦纳卡", nameEn: "Wānaka", country: "new-zealand", tier: "notable", zone: "nz-south", admin1Zh: "奥塔哥大区", admin1En: "Otago Region",
+    lon: 169.1500, lat: -44.7000,
+    source: "Wānaka -44.7000,169.1500（en.wikipedia，海拔 290 米）；Wānaka Airport 无定期商业航班，最近为皇后镇 ZQN（经皇冠山脉公路约 70 公里），条目不写机场字段；人口 13,200（2025-06 估计）",
   },
 
   // ── 美国 ──────────────────────────────────────────────
@@ -1791,6 +1878,80 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -118.2437, lat: 34.0522,
     airport: { iata: "LAX", nameZh: "洛杉矶国际机场", nameEn: "Los Angeles Int'l", lon: -118.408, lat: 33.942 },
     source: "洛杉矶市中心 34.0522,-118.2437；LAX 机场：公开资料",
+  },
+
+  // ── 美国 批2（2026-09-05）──
+  {
+    id: "boston", nameZh: "波士顿", nameEn: "Boston", country: "usa", tier: "major", zone: "us-northeast", admin1Zh: "马萨诸塞州", admin1En: "Massachusetts",
+    lon: -71.0578, lat: 42.3603,
+    airport: { iata: "BOS", nameZh: "洛根国际机场", nameEn: "Logan Int'l", lon: -71.0064, lat: 42.3631 },
+    source: "Boston 42.3603,-71.0578（en.wikipedia）；BOS 机场：en.wikipedia（后湾东北约 4 公里）；人口 675,647（2020 普查）",
+  },
+  {
+    id: "philadelphia", nameZh: "费城", nameEn: "Philadelphia", country: "usa", tier: "major", zone: "us-northeast", admin1Zh: "宾夕法尼亚州", admin1En: "Pennsylvania",
+    lon: -75.1636, lat: 39.9528,
+    airport: { iata: "PHL", nameZh: "费城国际机场", nameEn: "Philadelphia Int'l", lon: -75.2411, lat: 39.8716 },
+    source: "Philadelphia 39.9528,-75.1636（en.wikipedia）；PHL 机场：en.wikipedia（市中心西南约 13 公里）；人口 1,603,797（2020 普查）",
+  },
+  {
+    id: "seattle", nameZh: "西雅图", nameEn: "Seattle", country: "usa", tier: "major", zone: "us-west-coast", admin1Zh: "华盛顿州", admin1En: "Washington",
+    lon: -122.3300, lat: 47.6039,
+    airport: { iata: "SEA", nameZh: "西雅图—塔科马国际机场", nameEn: "Seattle–Tacoma Int'l", lon: -122.3088, lat: 47.4502 },
+    source: "Seattle 47.6039,-122.3300（en.wikipedia）；SEA 机场：en.wikipedia（市中心南约 21 公里）；人口 737,015（2020 普查）",
+  },
+  {
+    id: "san-diego", nameZh: "圣迭戈", nameEn: "San Diego", country: "usa", tier: "major", zone: "us-west-coast", admin1Zh: "加利福尼亚州", admin1En: "California",
+    lon: -117.1625, lat: 32.7150,
+    airport: { iata: "SAN", nameZh: "圣迭戈国际机场", nameEn: "San Diego Int'l", lon: -117.2026, lat: 32.7338 },
+    source: "San Diego 32.7150,-117.1625（en.wikipedia）；SAN 机场：en.wikipedia（市中心西北约 5 公里）；人口 1,386,932（2020 普查）",
+  },
+  {
+    id: "honolulu", nameZh: "檀香山", nameEn: "Honolulu", country: "usa", tier: "major", zone: "us-alaska-hawaii", admin1Zh: "夏威夷州", admin1En: "Hawaii",
+    lon: -157.8583, lat: 21.3069,
+    airport: { iata: "HNL", nameZh: "丹尼尔·井上国际机场", nameEn: "Daniel K. Inouye Int'l", lon: -157.9225, lat: 21.3186 },
+    source: "Honolulu 21.3069,-157.8583（en.wikipedia）；HNL 机场：en.wikipedia（市中心西北约 5 公里）；市县人口 350,964、城区 853,252（2020 普查）",
+  },
+  {
+    id: "orlando", nameZh: "奥兰多", nameEn: "Orlando", country: "usa", tier: "notable", zone: "us-south", admin1Zh: "佛罗里达州", admin1En: "Florida",
+    lon: -81.3800, lat: 28.5400,
+    airport: { iata: "MCO", nameZh: "奥兰多国际机场", nameEn: "Orlando Int'l", lon: -81.3089, lat: 28.4294 },
+    source: "Orlando 28.5400,-81.3800（en.wikipedia）；MCO 机场：en.wikipedia（市中心东南约 10 公里）；人口 307,573、都会区 2,691,925（2020 普查）",
+  },
+  {
+    id: "atlanta", nameZh: "亚特兰大", nameEn: "Atlanta", country: "usa", tier: "major", zone: "us-south", admin1Zh: "佐治亚州", admin1En: "Georgia",
+    lon: -84.3900, lat: 33.7489,
+    airport: { iata: "ATL", nameZh: "哈茨菲尔德—杰克逊亚特兰大国际机场", nameEn: "Hartsfield–Jackson Atlanta Int'l", lon: -84.4281, lat: 33.6367 },
+    source: "Atlanta 33.7489,-84.3900（en.wikipedia）；ATL 机场：en.wikipedia（市中心南约 16 公里）；人口 498,715（2020 普查）",
+  },
+  {
+    id: "nashville", nameZh: "纳什维尔", nameEn: "Nashville", country: "usa", tier: "notable", zone: "us-south", admin1Zh: "田纳西州", admin1En: "Tennessee",
+    lon: -86.7744, lat: 36.1622,
+    airport: { iata: "BNA", nameZh: "纳什维尔国际机场", nameEn: "Nashville Int'l", lon: -86.6742, lat: 36.1245 },
+    source: "Nashville 36.1622,-86.7744（en.wikipedia）；BNA 机场：en.wikipedia（市中心东南约 14 公里）；人口 689,447（2020 普查）",
+  },
+  {
+    id: "austin", nameZh: "奥斯汀", nameEn: "Austin", country: "usa", tier: "notable", zone: "us-south", admin1Zh: "得克萨斯州", admin1En: "Texas",
+    lon: -97.7431, lat: 30.2672,
+    airport: { iata: "AUS", nameZh: "奥斯汀—伯格斯特龙国际机场", nameEn: "Austin–Bergstrom Int'l", lon: -97.6664, lat: 30.1975 },
+    source: "Austin 30.2672,-97.7431（en.wikipedia）；AUS 机场：en.wikipedia（市中心东南约 13 公里）；人口 961,855（2020 普查）",
+  },
+  {
+    id: "santa-fe", nameZh: "圣塔菲", nameEn: "Santa Fe", country: "usa", tier: "notable", zone: "us-southwest", admin1Zh: "新墨西哥州", admin1En: "New Mexico",
+    lon: -105.9644, lat: 35.6672,
+    airport: { iata: "SAF", nameZh: "圣塔菲地区机场", nameEn: "Santa Fe Regional Airport", lon: -106.0383, lat: 35.6211 },
+    source: "Santa Fe 35.6672,-105.9644（en.wikipedia，海拔 2,133 米）；SAF 机场：en.wikipedia（市区南约 18 公里，支线航班；阿布奎基 ABQ 约 105 公里）；人口 87,505（2020 普查）",
+  },
+  {
+    id: "anchorage", nameZh: "安克雷奇", nameEn: "Anchorage", country: "usa", tier: "notable", zone: "us-alaska-hawaii", admin1Zh: "阿拉斯加州", admin1En: "Alaska",
+    lon: -149.8936, lat: 61.2167,
+    airport: { iata: "ANC", nameZh: "泰德·史蒂文斯安克雷奇国际机场", nameEn: "Ted Stevens Anchorage Int'l", lon: -149.9983, lat: 61.1742 },
+    source: "Anchorage 61.2167,-149.8936（en.wikipedia）；ANC 机场：en.wikipedia（市中心西南约 8 公里）；人口 291,247（2020 普查）",
+  },
+  {
+    id: "salt-lake-city", nameZh: "盐湖城", nameEn: "Salt Lake City", country: "usa", tier: "notable", zone: "us-mountain-west", admin1Zh: "犹他州", admin1En: "Utah",
+    lon: -111.8911, lat: 40.7608,
+    airport: { iata: "SLC", nameZh: "盐湖城国际机场", nameEn: "Salt Lake City Int'l", lon: -111.9778, lat: 40.7883 },
+    source: "Salt Lake City 40.7608,-111.8911（en.wikipedia，海拔约 1,300 米）；SLC 机场：en.wikipedia（市中心西约 6 公里）；人口 199,723、都会区 1,257,936（2020 普查）",
   },
 
   // ── 加拿大 ──
@@ -1853,6 +2014,64 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -123.1207, lat: 49.2827,
     airport: { iata: "YVR", nameZh: "温哥华国际机场", nameEn: "Vancouver Int'l", lon: -123.1815, lat: 49.1967 },
     source: "温哥华市中心 49.2827,-123.1207；YVR 机场：公开资料",
+  },
+
+  // ── 加拿大 批2（2026-09-05）──
+  {
+    id: "victoria", nameZh: "维多利亚", nameEn: "Victoria", country: "canada", tier: "notable", zone: "ca-west-coast", admin1Zh: "不列颠哥伦比亚省", admin1En: "British Columbia",
+    lon: -123.3647, lat: 48.4283,
+    airport: { iata: "YYJ", nameZh: "维多利亚国际机场", nameEn: "Victoria Int'l", lon: -123.4258, lat: 48.6472 },
+    source: "Victoria 48.4283,-123.3647（en.wikipedia）；YYJ 机场：en.wikipedia（市区北约 25 公里）；人口 91,867、都会区 397,237（2021 普查）",
+  },
+  {
+    id: "whistler", nameZh: "惠斯勒", nameEn: "Whistler", country: "canada", tier: "notable", zone: "ca-west-coast", admin1Zh: "不列颠哥伦比亚省", admin1En: "British Columbia",
+    lon: -122.9542, lat: 50.1167,
+    source: "Whistler 50.1167,-122.9542（en.wikipedia，海拔 670 米）；无定期航班，最近为温哥华 YVR（约 125 公里），条目不写机场字段；常住人口 13,982（2021 普查）",
+  },
+  {
+    id: "banff", nameZh: "班夫", nameEn: "Banff", country: "canada", tier: "notable", zone: "ca-prairies", admin1Zh: "阿尔伯塔省", admin1En: "Alberta",
+    lon: -115.5736, lat: 51.1778,
+    source: "Banff 51.1778,-115.5736（en.wikipedia，海拔 1,400 米）；无机场，最近为卡尔加里 YYC（约 126 公里），条目不写机场字段；人口 8,305（2021 普查）",
+  },
+  {
+    id: "jasper", nameZh: "贾斯珀", nameEn: "Jasper", country: "canada", tier: "notable", zone: "ca-prairies", admin1Zh: "阿尔伯塔省", admin1En: "Alberta",
+    lon: -118.0822, lat: 52.8731,
+    source: "Jasper 52.8731,-118.0822（en.wikipedia，海拔 1,060 米）；无机场，最近为埃德蒙顿 YEG（约 362 公里），条目不写机场字段，VIA 铁路经停；人口 4,738（2021 普查）；2024-07 山火烧毁约三分之一建筑，按实写入",
+  },
+  {
+    id: "regina", nameZh: "里贾纳", nameEn: "Regina", country: "canada", tier: "notable", zone: "ca-prairies", admin1Zh: "萨斯喀彻温省", admin1En: "Saskatchewan",
+    lon: -104.6067, lat: 50.4547,
+    airport: { iata: "YQR", nameZh: "里贾纳国际机场", nameEn: "Regina Int'l", lon: -104.6661, lat: 50.4322 },
+    source: "Regina 50.4547,-104.6067（en.wikipedia）；YQR 机场：en.wikipedia（市中心西南约 7 公里）；人口 226,404（2021 普查）",
+  },
+  {
+    id: "charlottetown", nameZh: "夏洛特敦", nameEn: "Charlottetown", country: "canada", tier: "notable", zone: "ca-atlantic", admin1Zh: "爱德华王子岛省", admin1En: "Prince Edward Island",
+    lon: -63.1267, lat: 46.2353,
+    airport: { iata: "YYG", nameZh: "夏洛特敦机场", nameEn: "Charlottetown Airport", lon: -63.1286, lat: 46.2886 },
+    source: "Charlottetown 46.2353,-63.1267（en.wikipedia）；YYG 机场：en.wikipedia（市区北约 6 公里）；人口 38,809（2021 普查）",
+  },
+  {
+    id: "niagara-falls", nameZh: "尼亚加拉瀑布城", nameEn: "Niagara Falls", country: "canada", tier: "notable", zone: "ca-central", admin1Zh: "安大略省", admin1En: "Ontario",
+    lon: -79.1067, lat: 43.0600,
+    source: "Niagara Falls, Ontario 43.0600,-79.1067（en.wikipedia）；无机场，最近为多伦多皮尔逊 YYZ（约 130 公里），条目不写机场字段，GO 列车可达；人口 94,415（2021 普查）",
+  },
+  {
+    id: "fredericton", nameZh: "弗雷德里克顿", nameEn: "Fredericton", country: "canada", tier: "notable", zone: "ca-atlantic", admin1Zh: "新不伦瑞克省", admin1En: "New Brunswick",
+    lon: -66.6667, lat: 45.9453,
+    airport: { iata: "YFC", nameZh: "弗雷德里克顿国际机场", nameEn: "Fredericton Int'l", lon: -66.5279, lat: 45.8721 },
+    source: "Fredericton 45.9453,-66.6667（en.wikipedia）；YFC 机场：en.wikipedia（市区东南约 15 公里）；人口 63,116（2021 普查）",
+  },
+  {
+    id: "yellowknife", nameZh: "黄刀镇", nameEn: "Yellowknife", country: "canada", tier: "notable", zone: "ca-north", admin1Zh: "西北地区", admin1En: "Northwest Territories",
+    lon: -114.3700, lat: 62.4536,
+    airport: { iata: "YZF", nameZh: "黄刀镇机场", nameEn: "Yellowknife Airport", lon: -114.4403, lat: 62.4628 },
+    source: "Yellowknife 62.4536,-114.3700（en.wikipedia）；YZF 机场：en.wikipedia（市区约 5 公里）；人口 20,340（2021 普查）",
+  },
+  {
+    id: "whitehorse", nameZh: "白马市", nameEn: "Whitehorse", country: "canada", tier: "notable", zone: "ca-north", admin1Zh: "育空地区", admin1En: "Yukon",
+    lon: -135.0561, lat: 60.7242,
+    airport: { iata: "YXY", nameZh: "埃里克·尼尔森白马国际机场", nameEn: "Erik Nielsen Whitehorse Int'l", lon: -135.0686, lat: 60.7094 },
+    source: "Whitehorse 60.7242,-135.0561（en.wikipedia）；YXY 机场：en.wikipedia（在市区西侧台地上，距市中心约 3 公里）；人口 28,201（2021 普查）",
   },
 
   // ── 英国 ──
@@ -1926,6 +2145,50 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -5.9301, lat: 54.5973,
     airport: { iata: "BFS", nameZh: "贝尔法斯特国际机场", nameEn: "Belfast Int'l", lon: -6.2158, lat: 54.6575 },
     source: "贝尔法斯特市中心 54.5973,-5.9301；BFS 机场：公开资料",
+  },
+
+  // ── 英国 批2（2026-09-05）──
+  {
+    id: "bath", nameZh: "巴斯", nameEn: "Bath", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: -2.3597, lat: 51.3814,
+    airport: { iata: "BRS", nameZh: "布里斯托尔机场（经布里斯托尔转乘）", nameEn: "Bristol Airport (via Bristol)", lon: -2.7191, lat: 51.3827 },
+    source: "Bath 51.3814,-2.3597（en.wikipedia）；无自有机场，与布里斯托尔条目共用 BRS（约 25 公里）；人口 94,080（2021 普查）",
+  },
+  {
+    id: "oxford", nameZh: "牛津", nameEn: "Oxford", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: -1.2578, lat: 51.7519,
+    source: "Oxford 51.7519,-1.2578（en.wikipedia）；无机场，最近为伦敦希思罗（约 80 公里），条目不写机场字段，铁路到帕丁顿约 1 小时；人口 162,040（2021 普查）",
+  },
+  {
+    id: "cambridge", nameZh: "剑桥", nameEn: "Cambridge", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: 0.1225, lat: 52.2050,
+    source: "Cambridge 52.2050,0.1225（en.wikipedia）；无机场，最近为伦敦斯坦斯特德（约 48 公里），条目不写机场字段，铁路到伦敦约 50 分钟；人口 145,700（2021 普查）",
+  },
+  {
+    id: "brighton", nameZh: "布莱顿", nameEn: "Brighton", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: -0.1528, lat: 50.8278,
+    source: "Brighton and Hove 50.8278,-0.1528（en.wikipedia）；无机场，最近为盖特威克（约 45 公里），条目不写机场字段，铁路到伦敦维多利亚约 1 小时；人口 283,870（2021 普查）",
+  },
+  {
+    id: "newcastle-upon-tyne", nameZh: "泰恩河畔纽卡斯尔", nameEn: "Newcastle upon Tyne", country: "uk", tier: "notable", zone: "uk-england-north", admin1Zh: "英格兰", admin1En: "England",
+    lon: -1.6131, lat: 54.9738,
+    airport: { iata: "NCL", nameZh: "纽卡斯尔国际机场", nameEn: "Newcastle Int'l", lon: -1.6897, lat: 55.0381 },
+    source: "Newcastle upon Tyne 54.9738,-1.6131（en.wikipedia）；NCL 机场：en.wikipedia（市中心西北约 12 公里，地铁直达）；人口 320,605（2021 普查）",
+  },
+  {
+    id: "stirling", nameZh: "斯特灵", nameEn: "Stirling", country: "uk", tier: "notable", zone: "uk-scotland", admin1Zh: "苏格兰", admin1En: "Scotland",
+    lon: -3.9369, lat: 56.1166,
+    source: "Stirling 56.1166,-3.9369（en.wikipedia）；无机场，最近为格拉斯哥（约 42 公里）、爱丁堡（约 60 公里），条目不写机场字段；人口 38,587（2021）",
+  },
+  {
+    id: "portree", nameZh: "波特里（斯凯岛）", nameEn: "Portree (Isle of Skye)", country: "uk", tier: "notable", zone: "uk-scotland", admin1Zh: "苏格兰", admin1En: "Scotland",
+    lon: -6.1920, lat: 57.4120,
+    source: "Portree 57.4120,-6.1920（en.wikipedia）；无机场，最近为因弗内斯（约 119 公里），条目不写机场字段，经斯凯桥公路进岛；人口 2,281（2022 普查）",
+  },
+  {
+    id: "windermere", nameZh: "温德米尔（湖区）", nameEn: "Windermere (Lake District)", country: "uk", tier: "notable", zone: "uk-england-north", admin1Zh: "英格兰", admin1En: "England",
+    lon: -2.9070, lat: 54.3760,
+    source: "Windermere town 54.3760,-2.9070（en.wikipedia）；无机场，最近为曼彻斯特（约 130 公里），条目不写机场字段，支线铁路自奥克森霍姆接西海岸干线；人口 4,826（2021）",
   },
 
   // ── 冰岛 ──
@@ -2168,6 +2431,40 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "阿雅克肖市中心 41.9192,8.7386；AJA 机场：公开资料",
   },
 
+  // ── 法国 批2（2026-09-05）──
+  {
+    id: "annecy", nameZh: "安纳西", nameEn: "Annecy", country: "france", tier: "notable", zone: "fr-rhone-alpes", admin1Zh: "奥弗涅-罗讷-阿尔卑斯大区", admin1En: "Auvergne-Rhône-Alpes",
+    lon: 6.1330, lat: 45.9160,
+    source: "Annecy 45.9160,6.1330（en.wikipedia）；无机场，最近为日内瓦（约 45 公里，瑞士）与里昂（约 125 公里），条目不写机场字段；人口 132,117（2023）",
+  },
+  {
+    id: "avignon", nameZh: "阿维尼翁", nameEn: "Avignon", country: "france", tier: "notable", zone: "fr-provence", admin1Zh: "普罗旺斯-阿尔卑斯-蓝色海岸大区", admin1En: "Provence-Alpes-Côte d'Azur",
+    lon: 4.8075, lat: 43.9500,
+    airport: { iata: "MRS", nameZh: "马赛-普罗旺斯机场（经马赛转乘）", nameEn: "Marseille Provence (via Marseille)", lon: 5.2214, lat: 43.4393 },
+    source: "Avignon 43.9500,4.8075（en.wikipedia）；本地 AVN 机场无稳定定期航线，与马赛条目共用 MRS（约 85 公里）；TGV 站在城南；人口 92,188（2023）",
+  },
+  {
+    id: "montpellier", nameZh: "蒙彼利埃", nameEn: "Montpellier", country: "france", tier: "major", zone: "fr-southwest", admin1Zh: "奥克西塔尼大区", admin1En: "Occitanie",
+    lon: 3.8772, lat: 43.6119,
+    airport: { iata: "MPL", nameZh: "蒙彼利埃地中海机场", nameEn: "Montpellier–Méditerranée", lon: 3.9631, lat: 43.5764 },
+    source: "Montpellier 43.6119,3.8772（en.wikipedia）；MPL 机场：en.wikipedia（市中心东南约 7 公里）；人口 310,240（2023），法国第七大城市",
+  },
+  {
+    id: "reims", nameZh: "兰斯", nameEn: "Reims", country: "france", tier: "notable", zone: "fr-north", admin1Zh: "大东部大区", admin1En: "Grand Est",
+    lon: 4.0347, lat: 49.2628,
+    source: "Reims 49.2628,4.0347（en.wikipedia）；无机场，最近为巴黎戴高乐（约 136 公里），条目不写机场字段，TGV 到巴黎约 45 分钟；人口 177,674（2023）",
+  },
+  {
+    id: "colmar", nameZh: "科尔马", nameEn: "Colmar", country: "france", tier: "notable", zone: "fr-alsace", admin1Zh: "大东部大区", admin1En: "Grand Est",
+    lon: 7.3556, lat: 48.0817,
+    source: "Colmar 48.0817,7.3556（en.wikipedia）；无机场，最近为巴塞尔-米卢斯欧洲机场（约 52 公里）、斯特拉斯堡（约 68 公里），条目不写机场字段；人口 66,970（2023）",
+  },
+  {
+    id: "rouen", nameZh: "鲁昂", nameEn: "Rouen", country: "france", tier: "notable", zone: "fr-north", admin1Zh: "诺曼底大区", admin1En: "Normandy",
+    lon: 1.0886, lat: 49.4428,
+    source: "Rouen 49.4428,1.0886（en.wikipedia）；无机场，最近为巴黎戴高乐（约 159 公里），条目不写机场字段，火车到巴黎约 1.5 小时；人口 117,662（2023）",
+  },
+
   // ── 意大利 ──
   {
     id: "rome", nameZh: "罗马", nameEn: "Rome", country: "italy", tier: "capital", zone: "it-central", admin1Zh: "拉齐奥大区", admin1En: "Lazio",
@@ -2236,6 +2533,43 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "卡利亚里市中心 39.2238,9.1217；CAG 机场：公开资料",
   },
 
+  // ── 意大利 批2（2026-09-05）──
+  {
+    id: "verona", nameZh: "维罗纳", nameEn: "Verona", country: "italy", tier: "notable", zone: "it-northeast", admin1Zh: "威尼托大区", admin1En: "Veneto",
+    lon: 10.9928, lat: 45.4386,
+    airport: { iata: "VRN", nameZh: "维罗纳维拉弗兰卡机场", nameEn: "Verona Villafranca", lon: 10.8881, lat: 45.3964 },
+    source: "Verona 45.4386,10.9928（en.wikipedia）；VRN 机场：en.wikipedia（市中心西南约 10 公里）；人口 255,133（2025）",
+  },
+  {
+    id: "genoa", nameZh: "热那亚", nameEn: "Genoa", country: "italy", tier: "major", zone: "it-northwest", admin1Zh: "利古里亚大区", admin1En: "Liguria",
+    lon: 8.9339, lat: 44.4072,
+    airport: { iata: "GOA", nameZh: "热那亚哥伦布机场", nameEn: "Genoa Cristoforo Colombo", lon: 8.8375, lat: 44.4133 },
+    source: "Genoa 44.4072,8.9339（en.wikipedia）；GOA 机场：en.wikipedia（市中心西约 7 公里）；人口 565,301（2025）",
+  },
+  {
+    id: "pisa", nameZh: "比萨", nameEn: "Pisa", country: "italy", tier: "notable", zone: "it-central", admin1Zh: "托斯卡纳大区", admin1En: "Tuscany",
+    lon: 10.4000, lat: 43.7170,
+    airport: { iata: "PSA", nameZh: "比萨伽利略机场", nameEn: "Pisa Galileo Galilei", lon: 10.3925, lat: 43.6839 },
+    source: "Pisa 43.7170,10.4000（en.wikipedia）；PSA 机场：en.wikipedia（市中心南约 2 公里，Pisamover 5 分钟到中央车站）；人口 98,778（2023）",
+  },
+  {
+    id: "siena", nameZh: "锡耶纳", nameEn: "Siena", country: "italy", tier: "notable", zone: "it-central", admin1Zh: "托斯卡纳大区", admin1En: "Tuscany",
+    lon: 11.3306, lat: 43.3186,
+    source: "Siena 43.3186,11.3306（en.wikipedia）；无机场，最近为佛罗伦萨（约 81 公里）、比萨（约 150 公里），条目不写机场字段；人口 53,180（2026）",
+  },
+  {
+    id: "matera", nameZh: "马泰拉", nameEn: "Matera", country: "italy", tier: "notable", zone: "it-south", admin1Zh: "巴西利卡塔大区", admin1En: "Basilicata",
+    lon: 16.6000, lat: 40.6670,
+    airport: { iata: "BRI", nameZh: "巴里机场（经巴里转乘）", nameEn: "Bari Airport (via Bari)", lon: 16.7606, lat: 41.1389 },
+    source: "Matera 40.6670,16.6000（en.wikipedia）；无自有机场，与巴里条目共用 BRI（约 60 公里）；人口 60,403（2018）",
+  },
+  {
+    id: "trieste", nameZh: "的里雅斯特", nameEn: "Trieste", country: "italy", tier: "notable", zone: "it-northeast", admin1Zh: "弗留利-威尼斯朱利亚大区", admin1En: "Friuli-Venezia Giulia",
+    lon: 13.7703, lat: 45.6503,
+    airport: { iata: "TRS", nameZh: "的里雅斯特机场（隆基）", nameEn: "Trieste Airport (Ronchi dei Legionari)", lon: 13.4722, lat: 45.8275 },
+    source: "Trieste 45.6503,13.7703（en.wikipedia）；TRS 机场：en.wikipedia（隆基，市区西北约 40 公里，有火车站）；人口 198,668（2025）",
+  },
+
   // ── 西班牙 ────────────────────────────────────────────
   {
     id: "madrid", nameZh: "马德里", nameEn: "Madrid", country: "spain", tier: "capital", zone: "es-central", admin1Zh: "马德里自治区", admin1En: "Community of Madrid",
@@ -2302,6 +2636,41 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -16.2518, lat: 28.4636,
     airport: { iata: "TFN", nameZh: "特内里费北机场", nameEn: "Tenerife North Airport", lon: -16.341, lat: 28.483 },
     source: "圣克鲁斯-德特内里费市中心 28.4636,-16.2518；TFN 机场：公开资料",
+  },
+
+  // ── 西班牙 批2（2026-09-05）──
+  {
+    id: "san-sebastian", nameZh: "圣塞瓦斯蒂安", nameEn: "San Sebastián (Donostia)", country: "spain", tier: "notable", zone: "es-north", admin1Zh: "巴斯克自治区", admin1En: "Basque Country",
+    lon: -1.9856, lat: 43.3214,
+    airport: { iata: "EAS", nameZh: "圣塞瓦斯蒂安机场（翁达里维亚）", nameEn: "San Sebastián Airport (Hondarribia)", lon: -1.7906, lat: 43.3564 },
+    source: "San Sebastián 43.3214,-1.9856（en.wikipedia）；EAS 机场：en.wikipedia（翁达里维亚，市区东约 20 公里，主要马德里/巴塞罗那航线）；人口 188,487（2024）",
+  },
+  {
+    id: "toledo", nameZh: "托莱多", nameEn: "Toledo", country: "spain", tier: "notable", zone: "es-central", admin1Zh: "卡斯蒂利亚-拉曼恰自治区", admin1En: "Castilla–La Mancha",
+    lon: -4.0244, lat: 39.8567,
+    source: "Toledo 39.8567,-4.0244（en.wikipedia）；无机场，最近为马德里（约 88 公里），条目不写机场字段，AVE 到马德里约 30 分钟；人口 87,216（2025）",
+  },
+  {
+    id: "cordoba", nameZh: "科尔多瓦", nameEn: "Córdoba", country: "spain", tier: "notable", zone: "es-andalusia", admin1Zh: "安达卢西亚自治区", admin1En: "Andalusia",
+    lon: -4.7800, lat: 37.8900,
+    source: "Córdoba 37.8900,-4.7800（en.wikipedia）；无商业机场，最近为塞维利亚（约 140 公里）、马拉加（约 160 公里），条目不写机场字段，AVE 到马德里约 1 小时 45 分；人口 324,902（2024）",
+  },
+  {
+    id: "salamanca", nameZh: "萨拉曼卡", nameEn: "Salamanca", country: "spain", tier: "notable", zone: "es-central", admin1Zh: "卡斯蒂利亚-莱昂自治区", admin1En: "Castile and León",
+    lon: -5.6642, lat: 40.9650,
+    source: "Salamanca 40.9650,-5.6642（en.wikipedia）；本地机场无稳定定期航线，最近为马德里（约 200 公里），条目不写机场字段；人口 144,458（2024）",
+  },
+  {
+    id: "girona", nameZh: "赫罗纳", nameEn: "Girona", country: "spain", tier: "notable", zone: "es-catalonia", admin1Zh: "加泰罗尼亚自治区", admin1En: "Catalonia",
+    lon: 2.8211, lat: 41.9844,
+    airport: { iata: "GRO", nameZh: "赫罗纳-布拉瓦海岸机场", nameEn: "Girona–Costa Brava", lon: 2.7606, lat: 41.9008 },
+    source: "Girona 41.9844,2.8211（en.wikipedia）；GRO 机场：en.wikipedia（市区西南约 12.5 公里，以廉航为主）；人口 108,666（2025）",
+  },
+  {
+    id: "las-palmas", nameZh: "大加那利岛拉斯帕尔马斯", nameEn: "Las Palmas de Gran Canaria", country: "spain", tier: "major", zone: "es-canary", admin1Zh: "加那利群岛自治区", admin1En: "Canary Islands",
+    lon: -15.4353, lat: 28.1258,
+    airport: { iata: "LPA", nameZh: "大加那利机场", nameEn: "Gran Canaria Airport", lon: -15.3867, lat: 27.9319 },
+    source: "Las Palmas 28.1258,-15.4353（en.wikipedia）；LPA 机场：en.wikipedia（市区南约 19 公里）；人口 383,516（2024）",
   },
 
   // ── 德国 ────────────────────────────────────────────
@@ -2437,6 +2806,42 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 22.9444, lat: 39.3622,
     airport: { iata: "VOL", nameZh: "内阿安希阿洛斯国家机场", nameEn: "Nea Anchialos National Airport", lon: 22.7943, lat: 39.2197 },
     source: "沃洛斯市中心 39.3622,22.9444；VOL 机场：公开资料",
+  },
+
+  // ── 德国 批2（2026-09-05）──
+  {
+    id: "leipzig", nameZh: "莱比锡", nameEn: "Leipzig", country: "germany", tier: "major", zone: "de-east", admin1Zh: "萨克森州", admin1En: "Saxony",
+    lon: 12.3750, lat: 51.3400,
+    airport: { iata: "LEJ", nameZh: "莱比锡/哈雷机场", nameEn: "Leipzig/Halle Airport", lon: 12.2364, lat: 51.4239 },
+    source: "Leipzig 51.3400,12.3750（en.wikipedia）；LEJ 机场：en.wikipedia（市区西北约 20 公里，S-Bahn 直达，DHL 欧洲枢纽）；人口 633,592（2025-12）",
+  },
+  {
+    id: "stuttgart", nameZh: "斯图加特", nameEn: "Stuttgart", country: "germany", tier: "major", zone: "de-southwest", admin1Zh: "巴登-符腾堡州", admin1En: "Baden-Württemberg",
+    lon: 9.1800, lat: 48.7775,
+    airport: { iata: "STR", nameZh: "斯图加特机场", nameEn: "Stuttgart Airport", lon: 9.2219, lat: 48.6900 },
+    source: "Stuttgart 48.7775,9.1800（en.wikipedia）；STR 机场：en.wikipedia（市中心南约 13 公里，S2/S3 约 30 分钟）；人口 612,663（2024-12）",
+  },
+  {
+    id: "dusseldorf", nameZh: "杜塞尔多夫", nameEn: "Düsseldorf", country: "germany", tier: "major", zone: "de-west", admin1Zh: "北莱茵-威斯特法伦州", admin1En: "North Rhine-Westphalia",
+    lon: 6.7767, lat: 51.2256,
+    airport: { iata: "DUS", nameZh: "杜塞尔多夫机场", nameEn: "Düsseldorf Airport", lon: 6.7667, lat: 51.2894 },
+    source: "Düsseldorf 51.2256,6.7767（en.wikipedia）；DUS 机场：en.wikipedia（市中心北约 7 公里，德国第四繁忙机场）；人口 619,444（2025-12）",
+  },
+  {
+    id: "lubeck", nameZh: "吕贝克", nameEn: "Lübeck", country: "germany", tier: "notable", zone: "de-north", admin1Zh: "石勒苏益格-荷尔斯泰因州", admin1En: "Schleswig-Holstein",
+    lon: 10.6864, lat: 53.8697,
+    airport: { iata: "HAM", nameZh: "汉堡机场（经汉堡转乘）", nameEn: "Hamburg Airport (via Hamburg)", lon: 9.9882, lat: 53.6304 },
+    source: "Lübeck 53.8697,10.6864（en.wikipedia）；本地布兰肯泽机场航线极少，与汉堡条目共用 HAM（约 74 公里）；人口 216,889（2024-12）",
+  },
+  {
+    id: "rothenburg", nameZh: "罗滕堡", nameEn: "Rothenburg ob der Tauber", country: "germany", tier: "notable", zone: "de-bavaria", admin1Zh: "巴伐利亚州", admin1En: "Bavaria",
+    lon: 10.1800, lat: 49.3800,
+    source: "Rothenburg ob der Tauber 49.3800,10.1800（en.wikipedia）；无机场，最近为纽伦堡（约 100 公里），条目不写机场字段，火车经 Steinach 换乘；人口 11,365（2024-12）",
+  },
+  {
+    id: "regensburg", nameZh: "雷根斯堡", nameEn: "Regensburg", country: "germany", tier: "notable", zone: "de-bavaria", admin1Zh: "巴伐利亚州", admin1En: "Bavaria",
+    lon: 12.0830, lat: 49.0170,
+    source: "Regensburg 49.0170,12.0830（en.wikipedia）；无机场，最近为慕尼黑（约 120 公里）、纽伦堡（约 100 公里），条目不写机场字段；人口 151,389（2024-12）",
   },
 
   // ── 葡萄牙 ──
@@ -3092,6 +3497,43 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "DMK", nameZh: "廊曼国际机场", nameEn: "Don Mueang International", lon: 100.6069, lat: 13.9126 },
     source: "呵叻市中心 14.9799,102.0977；本地那空叻差是玛机场目前无稳定的定期客运航班，实际多经陆路（火车/长途大巴）往返曼谷（约260公里）：公开资料",
   },
+
+  // ── 泰国 批2（2026-09-05）──
+  {
+    id: "kanchanaburi", nameZh: "北碧", nameEn: "Kanchanaburi", country: "thailand", tier: "notable", zone: "th-central", admin1Zh: "北碧府", admin1En: "Kanchanaburi",
+    lon: 99.5311, lat: 14.0194,
+    source: "Kanchanaburi 14.0194,99.5311（en.wikipedia）；无机场，最近为曼谷（约 120 公里），条目不写机场字段，火车自曼谷吞武里站可达；市镇人口 25,651（2017）",
+  },
+  {
+    id: "lampang", nameZh: "南邦", nameEn: "Lampang", country: "thailand", tier: "notable", zone: "th-north", admin1Zh: "南邦府", admin1En: "Lampang",
+    lon: 99.4900, lat: 18.2900,
+    airport: { iata: "LPT", nameZh: "南邦机场", nameEn: "Lampang Airport", lon: 99.5042, lat: 18.2709 },
+    source: "Lampang 18.2900,99.4900（en.wikipedia）；LPT 机场：en.wikipedia（紧邻市区南侧，仅曼谷廊曼航线）；人口 58,074（2010 普查）",
+  },
+  {
+    id: "hat-yai", nameZh: "合艾", nameEn: "Hat Yai", country: "thailand", tier: "major", zone: "th-south", admin1Zh: "宋卡府", admin1En: "Songkhla",
+    lon: 100.4670, lat: 7.0170,
+    airport: { iata: "HDY", nameZh: "合艾国际机场", nameEn: "Hat Yai International", lon: 100.3928, lat: 6.9331 },
+    source: "Hat Yai 7.0170,100.4670（en.wikipedia）；HDY 机场：en.wikipedia（市区西约 9 公里，有吉隆坡/新加坡航线）；市镇人口 191,696（2024），泰南最大城市",
+  },
+  {
+    id: "ko-chang", nameZh: "象岛", nameEn: "Ko Chang", country: "thailand", tier: "notable", zone: "th-east", admin1Zh: "达叻府", admin1En: "Trat",
+    lon: 102.3519, lat: 12.1036,
+    airport: { iata: "TDX", nameZh: "达叻机场", nameEn: "Trat Airport", lon: 102.3190, lat: 12.2746 },
+    source: "Ko Chang 12.1036,102.3519（en.wikipedia）；TDX 达叻机场在大陆（距 Ao Thammachat 渡口约 17 公里，曼谷航空经营，仅曼谷航线），岛上无机场；人口 8,538（2019），泰国第三大岛",
+  },
+  {
+    id: "khao-lak", nameZh: "考拉", nameEn: "Khao Lak", country: "thailand", tier: "notable", zone: "th-south", admin1Zh: "攀牙府", admin1En: "Phang Nga",
+    lon: 98.2500, lat: 8.6889,
+    airport: { iata: "HKT", nameZh: "普吉国际机场（经普吉转乘）", nameEn: "Phuket International (via Phuket)", lon: 98.3169, lat: 8.1132 },
+    source: "Khao Lak 8.6889,98.2500（en.wikipedia）；无机场，与普吉条目共用 HKT（约 60 公里）；沿海度假带约 20–25 公里长，无单一人口口径",
+  },
+  {
+    id: "ko-lanta", nameZh: "兰塔岛", nameEn: "Ko Lanta", country: "thailand", tier: "notable", zone: "th-south", admin1Zh: "甲米府", admin1En: "Krabi",
+    lon: 99.0500, lat: 7.5833,
+    airport: { iata: "KBV", nameZh: "甲米国际机场（经甲米转乘）", nameEn: "Krabi International (via Krabi)", lon: 98.9863, lat: 8.0991 },
+    source: "Ko Lanta Yai 7.5833,99.0500（en.wikipedia）；无机场，与甲米条目共用 KBV（约 70 公里，接驳车约 2 小时）；人口 10,830（2012）",
+  },
   // ── 韩国 ──────────────────────────────────────────────
   {
     id: "seoul", nameZh: "首尔", nameEn: "Seoul", country: "south-korea", tier: "capital", zone: "kr-capital", admin1Zh: "首尔特别市", admin1En: "Seoul",
@@ -3124,7 +3566,7 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "蔚山市中心 35.5384,129.3114；USN 机场：公开资料",
   },
   {
-    id: "yeosu", nameZh: "丽水", nameEn: "Yeosu", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全罗南道", admin1En: "South Jeolla Province",
+    id: "yeosu", nameZh: "丽水", nameEn: "Yeosu", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全南光州特别市", admin1En: "Jeonnam-Gwangju Special Metropolitan City",
     lon: 127.6622, lat: 34.7604,
     airport: { iata: "RSU", nameZh: "丽水机场", nameEn: "Yeosu Airport", lon: 127.6169, lat: 34.8423 },
     source: "丽水市中心 34.7604,127.6622；RSU 机场：公开资料",
@@ -3136,19 +3578,19 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "浦项市中心 36.0190,129.3435；KPO 机场：公开资料",
   },
   {
-    id: "gangneung", nameZh: "江陵", nameEn: "Gangneung", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原道", admin1En: "Gangwon Province",
+    id: "gangneung", nameZh: "江陵", nameEn: "Gangneung", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原特别自治道", admin1En: "Gangwon State",
     lon: 128.8761, lat: 37.7519,
     airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
     source: "江陵市中心 37.7519,128.8761；本地无商业机场，最近机场为襄阳国际机场（距市区约40km，国内定期航班有限）：公开资料",
   },
   {
-    id: "sokcho", nameZh: "束草", nameEn: "Sokcho", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原道", admin1En: "Gangwon Province",
+    id: "sokcho", nameZh: "束草", nameEn: "Sokcho", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原特别自治道", admin1En: "Gangwon State",
     lon: 128.5918, lat: 38.2070,
     airport: { iata: "YNY", nameZh: "襄阳国际机场", nameEn: "Yangyang International", lon: 128.6692, lat: 38.0611 },
     source: "束草市中心 38.2070,128.5918；本地无商业机场，最近机场为襄阳国际机场（距市区约20km，国内定期航班有限）：公开资料",
   },
   {
-    id: "chuncheon", nameZh: "春川", nameEn: "Chuncheon", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原道", admin1En: "Gangwon Province",
+    id: "chuncheon", nameZh: "春川", nameEn: "Chuncheon", country: "south-korea", tier: "notable", zone: "kr-gangwon", admin1Zh: "江原特别自治道", admin1En: "Gangwon State",
     lon: 127.7298, lat: 37.8813,
     airport: { iata: "WJU", nameZh: "原州机场", nameEn: "Wonju Airport", lon: 127.9600, lat: 37.4380 },
     source: "春川市中心 37.8813,127.7298；本地无商业机场，最近机场为原州机场（距市区约65km）：公开资料",
@@ -3160,10 +3602,46 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "安东市中心 36.5684,128.7294；本地小型机场现无定期客运航班，最近有定期航班的机场为大邱国际机场（距市区约90km）：公开资料",
   },
   {
-    id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全罗北道", admin1En: "North Jeolla Province",
+    id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全北特别自治道", admin1En: "Jeonbuk State",
     lon: 127.1480, lat: 35.8242,
     airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8093, lat: 35.1264 },
     source: "全州韩屋村一带 35.8242,127.1480；本地无商业机场，最近机场为光州机场（距市区约50km）：公开资料",
+  },
+
+  // ── 韩国 批2（2026-09-05）──
+  {
+    id: "incheon", nameZh: "仁川", nameEn: "Incheon", country: "south-korea", tier: "major", zone: "kr-capital", admin1Zh: "仁川广域市", admin1En: "Incheon",
+    lon: 126.7052, lat: 37.4563,
+    airport: { iata: "ICN", nameZh: "仁川国际机场", nameEn: "Incheon International", lon: 126.4407, lat: 37.4602 },
+    source: "仁川市厅 37.4563,126.7052（en.wikipedia）；ICN 机场在永宗岛（与首尔条目共用记录）；人口 3,015,482（2026-01）",
+  },
+  {
+    id: "suwon", nameZh: "水原", nameEn: "Suwon", country: "south-korea", tier: "notable", zone: "kr-capital", admin1Zh: "京畿道", admin1En: "Gyeonggi Province",
+    lon: 127.0286, lat: 37.2636,
+    source: "水原 37.2636,127.0286（en.wikipedia）；无机场，最近为仁川 ICN（约 40 公里），条目不写机场字段，地铁 1 号线自首尔可达；人口 1,234,582（2026-02）",
+  },
+  {
+    id: "daegu", nameZh: "大邱", nameEn: "Daegu", country: "south-korea", tier: "major", zone: "kr-yeongnam", admin1Zh: "大邱广域市", admin1En: "Daegu",
+    lon: 128.6017, lat: 35.8717,
+    airport: { iata: "TAE", nameZh: "大邱国际机场", nameEn: "Daegu International", lon: 128.6589, lat: 35.8942 },
+    source: "大邱 35.8717,128.6017（en.wikipedia）；TAE 机场：en.wikipedia（市区东北，地铁 1 号线峨洋桥站约 1.3 公里）；人口 2,351,461（2026-01）",
+  },
+  {
+    id: "gwangju", nameZh: "光州", nameEn: "Gwangju", country: "south-korea", tier: "major", zone: "kr-honam", admin1Zh: "全南光州特别市", admin1En: "Jeonnam-Gwangju Special Metropolitan City",
+    lon: 126.8486, lat: 35.1653,
+    airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8089, lat: 35.1264 },
+    source: "光州 35.1653,126.8486（en.wikipedia）；KWJ 机场：en.wikipedia（市区西侧，仅济州/金浦航线，远期计划并入务安机场）；人口 1,401,235（2026-02）；2026-07-01 与全罗南道合并为全南光州特别市（en.wikipedia Administrative divisions of South Korea）",
+  },
+  {
+    id: "daejeon", nameZh: "大田", nameEn: "Daejeon", country: "south-korea", tier: "major", zone: "kr-chungcheong", admin1Zh: "大田广域市", admin1En: "Daejeon",
+    lon: 127.3850, lat: 36.3500,
+    airport: { iata: "CJJ", nameZh: "清州国际机场（经清州转乘）", nameEn: "Cheongju International (via Cheongju)", lon: 127.4992, lat: 36.7164 },
+    source: "大田 36.3500,127.3850（en.wikipedia）；无自有机场，最近为清州 CJJ（约 40 公里），本条目记录 CJJ 并注明；人口 1,441,203（2026-02）",
+  },
+  {
+    id: "tongyeong", nameZh: "统营", nameEn: "Tongyeong", country: "south-korea", tier: "notable", zone: "kr-yeongnam", admin1Zh: "庆尚南道", admin1En: "South Gyeongsang Province",
+    lon: 128.4331, lat: 34.8544,
+    source: "统营 34.8544,128.4331（en.wikipedia）；无机场，最近为泗川（约 50 公里）、釜山金海（约 100 公里），条目不写机场字段；人口 118,896（2024-09）",
   },
   // ===== 波兰 =====
   {
@@ -3305,6 +3783,41 @@ export const CITY_REGISTRY: CityEntry[] = [
     airport: { iata: "HAN", nameZh: "内排国际机场", nameEn: "Noi Bai International", lon: 105.8073, lat: 21.2212 },
     source: "宁平市中心 20.2506,105.9744；本地无商业机场，最近机场为河内内排国际机场（距市区约90km）：公开资料",
   },
+
+  // ── 越南 批2（2026-09-05）──
+  {
+    id: "haiphong", nameZh: "海防", nameEn: "Haiphong", country: "vietnam", tier: "major", zone: "vn-north", admin1Zh: "海防市", admin1En: "Hai Phong",
+    lon: 106.6838, lat: 20.8651,
+    airport: { iata: "HPH", nameZh: "吉碑国际机场", nameEn: "Cat Bi International", lon: 106.7247, lat: 20.8192 },
+    source: "Haiphong 20.8651,106.6838（en.wikipedia）；HPH 机场：en.wikipedia（市区东南约 6 公里）；人口 4,664,124（2025，含 2025-07 并入的海阳省）",
+  },
+  {
+    id: "dong-hoi", nameZh: "洞海", nameEn: "Dong Hoi", country: "vietnam", tier: "notable", zone: "vn-central", admin1Zh: "广治省", admin1En: "Quang Tri",
+    lon: 106.6119, lat: 17.4556,
+    airport: { iata: "VDH", nameZh: "洞海机场", nameEn: "Dong Hoi Airport", lon: 106.5906, lat: 17.5150 },
+    source: "Dong Hoi 17.4556,106.6119（en.wikipedia）；VDH 机场：en.wikipedia（市区北约 6 公里，河内/胡志明市/芽庄航线）；2025-07 起原广平省并入广治省；风牙—己榜国家公园 2003 世界遗产、2025 与老挝欣南诺跨境扩展",
+  },
+  {
+    id: "quy-nhon", nameZh: "归仁", nameEn: "Quy Nhon", country: "vietnam", tier: "notable", zone: "vn-central", admin1Zh: "嘉莱省", admin1En: "Gia Lai",
+    lon: 109.2333, lat: 13.7667,
+    airport: { iata: "UIH", nameZh: "符吉机场", nameEn: "Phu Cat Airport", lon: 109.0422, lat: 13.9550 },
+    source: "Quy Nhon 13.7667,109.2333（en.wikipedia）；UIH 机场：en.wikipedia（市区西北约 30 公里，仅国内航线）；人口约 578,600（2024，改制前口径）；2025-07 起原平定省并入嘉莱省",
+  },
+  {
+    id: "phan-thiet", nameZh: "潘切（美奈）", nameEn: "Phan Thiet (Mui Ne)", country: "vietnam", tier: "notable", zone: "vn-south", admin1Zh: "林同省", admin1En: "Lam Dong",
+    lon: 108.1036, lat: 10.9283,
+    source: "Phan Thiet 10.9283,108.1036（en.wikipedia）；无运营中机场，最近为金兰 CXR（约 200 公里）、胡志明市 SGN（约 200 公里），条目不写机场字段；2025-07 起原平顺省并入林同省",
+  },
+  {
+    id: "vung-tau", nameZh: "头顿", nameEn: "Vung Tau", country: "vietnam", tier: "notable", zone: "vn-south", admin1Zh: "胡志明市", admin1En: "Ho Chi Minh City",
+    lon: 107.0700, lat: 10.3508,
+    source: "Vung Tau 10.3508,107.0700（en.wikipedia）；无商业机场，最近为胡志明市 SGN（约 95 公里），条目不写机场字段；人口 117,413（2024-12，头顿坊口径）；2025-07 起原巴地头顿省并入胡志明市",
+  },
+  {
+    id: "ha-giang", nameZh: "河江", nameEn: "Ha Giang", country: "vietnam", tier: "notable", zone: "vn-north", admin1Zh: "宣光省", admin1En: "Tuyen Quang",
+    lon: 104.9836, lat: 22.8233,
+    source: "Ha Giang city 22.8233,104.9836（en.wikipedia）；无机场，最近为河内内排（约 320 公里），条目不写机场字段，夜班大巴约 6 小时；2025-06 起原河江省并入宣光省；同文岩溶高原 UNESCO 世界地质公园",
+  },
   {
     id: "ulaanbaatar", nameZh: "乌兰巴托", nameEn: "Ulaanbaatar", country: "mongolia", tier: "capital", zone: "mn-central", admin1Zh: "乌兰巴托市", admin1En: "Ulaanbaatar",
     lon: 106.9177, lat: 47.9184,
@@ -3436,6 +3949,42 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 99.8467, lat: 6.3228,
     airport: { iata: "LGK", nameZh: "浮罗交怡国际机场", nameEn: "Langkawi International Airport", lon: 99.7286, lat: 6.3297 },
     source: "浮罗交怡瓜镇 6.3228,99.8467；LGK机场（距瓜镇约11km）：公开资料",
+  },
+
+  // ── 马来西亚 批2（2026-09-05）──
+  {
+    id: "putrajaya", nameZh: "布城", nameEn: "Putrajaya", country: "malaysia", tier: "notable", zone: "my-central", admin1Zh: "布城联邦直辖区", admin1En: "Federal Territory of Putrajaya",
+    lon: 101.6900, lat: 2.9300,
+    airport: { iata: "KUL", nameZh: "吉隆坡国际机场（经吉隆坡转乘）", nameEn: "Kuala Lumpur International (via KL)", lon: 101.7099, lat: 2.7456 },
+    source: "Putrajaya 2.9300,101.6900（en.wikipedia）；无自有机场，与吉隆坡条目共用 KUL（约 25 公里，KLIA Transit 直达）；人口 119,700（2024-Q1）",
+  },
+  {
+    id: "cameron-highlands", nameZh: "金马仑高原（丹那拉打）", nameEn: "Cameron Highlands (Tanah Rata)", country: "malaysia", tier: "notable", zone: "my-central", admin1Zh: "彭亨州", admin1En: "Pahang",
+    lon: 101.3833, lat: 4.4667,
+    source: "Tanah Rata 4.4667,101.3833（en.wikipedia，海拔约 1,400 米）；无机场，最近为吉隆坡 KUL（约 200 公里），条目不写机场字段，大巴自吉隆坡约 4 小时；全区人口 43,700（2019）",
+  },
+  {
+    id: "taiping", nameZh: "太平", nameEn: "Taiping", country: "malaysia", tier: "notable", zone: "my-north", admin1Zh: "霹雳州", admin1En: "Perak",
+    lon: 100.7333, lat: 4.8500,
+    source: "Taiping 4.8500,100.7333（en.wikipedia）；无机场，最近为槟城（约 96 公里）、怡保（约 73 公里），条目不写机场字段，ETS 火车自吉隆坡约 3 小时；人口 245,182（2013）",
+  },
+  {
+    id: "alor-setar", nameZh: "亚罗士打", nameEn: "Alor Setar", country: "malaysia", tier: "notable", zone: "my-north", admin1Zh: "吉打州", admin1En: "Kedah",
+    lon: 100.3694, lat: 6.1183,
+    airport: { iata: "AOR", nameZh: "苏丹阿都哈林机场", nameEn: "Sultan Abdul Halim Airport", lon: 100.4008, lat: 6.1944 },
+    source: "Alor Setar 6.1183,100.3694（en.wikipedia）；AOR 机场：en.wikipedia（市区北约 15 公里，梳邦/吉隆坡/新山航线）；人口 417,800（2020 普查）",
+  },
+  {
+    id: "semporna", nameZh: "仙本那", nameEn: "Semporna", country: "malaysia", tier: "notable", zone: "my-sabah", admin1Zh: "沙巴州", admin1En: "Sabah",
+    lon: 118.6167, lat: 4.4833,
+    airport: { iata: "TWU", nameZh: "斗湖机场（经斗湖转乘）", nameEn: "Tawau Airport (via Tawau)", lon: 118.1219, lat: 4.3133 },
+    source: "Semporna 4.4833,118.6167（en.wikipedia）；无机场，最近为斗湖 TWU（公路约 1.5 小时），本条目记录 TWU 并注明；人口 35,301（2010 普查）",
+  },
+  {
+    id: "sibu", nameZh: "诗巫", nameEn: "Sibu", country: "malaysia", tier: "notable", zone: "my-sarawak", admin1Zh: "砂拉越州", admin1En: "Sarawak",
+    lon: 111.8308, lat: 2.2878,
+    airport: { iata: "SBW", nameZh: "诗巫机场", nameEn: "Sibu Airport", lon: 111.9825, lat: 2.2642 },
+    source: "Sibu 2.2878,111.8308（en.wikipedia）；SBW 机场：en.wikipedia（市区东南约 23 公里）；人口 162,676（2010 普查）",
   },
   {
     id: "singapore-city", nameZh: "新加坡市区", nameEn: "Singapore", country: "singapore", tier: "capital", zone: "sg-main", admin1Zh: "新加坡", admin1En: "Singapore",
