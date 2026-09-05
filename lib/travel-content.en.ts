@@ -2159,7 +2159,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   alta: {
     identity:
-      "Alta is in Norway's northernmost county, Finnmark (Northern Sámi: Finnmárku), at the end of a fjord where the Alta river reaches the sea, with a town population of about 15,000 — the most populous town in Finnmark. Outside the town, a group of rock carvings records the life of local hunting, fishing and reindeer peoples from about 5,000 to 2,000 years ago, and was Norway's first cultural site inscribed as a World Heritage Site. The Finnmark plateau (Finnmarksvidda / Finnmárkkoduottar) has long been an area where the Sámi herd reindeer.",
+      "Alta is in Norway's northernmost county, Finnmark (Northern Sámi: Finnmárku), at the end of a fjord where the Alta river reaches the sea, with a town population of about 15,000 — the most populous town in Finnmark. Outside the town, a group of rock carvings records the life of local hunting, fishing and reindeer peoples from about 7,000 to 2,000 years ago; inscribed as a World Heritage Site in 1985, it is one of the largest concentrations of prehistoric hunter-gatherer rock art in Northern Europe. The Finnmark plateau (Finnmarksvidda / Finnmárkkoduottar) has long been an area where the Sámi herd reindeer.",
     layout:
       "Alta is spread across the head of the fjord and several river valleys, with some distance between its centres (Bossekop, Elvebakken, Bukta). The landmark modern building is the 'Northern Lights Cathedral', a spiral of titanium panels. South of the town is the canyon the Alta river has cut (one of the largest in northern Europe) and the road up to the interior Finnmark plateau — dwarf birch, lakes and reindeer.",
     gettingAround:
