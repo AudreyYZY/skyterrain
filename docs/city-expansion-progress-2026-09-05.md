@@ -71,5 +71,6 @@
 
 ## 4. PR
 
-批5 在分支 `feat/china-cities-districts-tier2-batch5`（stack 在 `docs/documentary-depth-pilot-ctu-lxa` 之上，
-后者对应 PR #130 待用户审阅）。
+批5–7 在分支 `feat/china-cities-districts-tier2-batch5`，对应 **PR #131**（base 暂设为
+`docs/documentary-depth-pilot-ctu-lxa`，即 PR #130 的分支；#130 合并后 retarget 到 main）。
+两个 PR 均打开、未合并，等用户审阅，不要擅自合并。
