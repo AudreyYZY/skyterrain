@@ -6533,7 +6533,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "czechia-overview": {
     identity:
-      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of roughly 10.7 million. Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
+      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of roughly 10.9 million. Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
     layout:
       "The country is traditionally divided into three historic regions: Bohemia (west and center, centered on Prague and ringed by ancient mountains), Moravia (southeast, centered on Brno, with rolling hills and vineyards), and Czech Silesia (a small northeastern corner, administratively combined with Moravia). Almost the entire country is bordered by old mountain ranges, with lowlands in the center.",
     gettingAround:
@@ -6555,7 +6555,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official language is Czech, and English is widely spoken in tourist areas. Modest dress is expected when entering St. Vitus Cathedral and other religious sites; keep an eye on your belongings around busy spots like Charles Bridge and Old Town Square; restaurant bills typically don't include service, and a 5-10% tip or rounding up the total is customary.",
     seeAndDo:
-      "The Prague Castle complex (including St. Vitus Cathedral, the core of the UNESCO listing); Charles Bridge (completed in the 14th century, lined with 30 Baroque saint statues); Old Town Square and the Astronomical Clock (installed in 1410, the oldest such clock still in operation); the Lesser Town and views from Petřín Hill.",
+      "The Prague Castle complex (including St. Vitus Cathedral, the core of the UNESCO listing); Charles Bridge (begun in 1357 and completed in 1402, lined with 30 Baroque saint statues mostly installed between 1683 and 1714); Old Town Square and the Astronomical Clock (installed in 1410, the oldest such clock still in operation); the Lesser Town and views from Petřín Hill.",
     whenAndTips:
       "April to June and September to October are pleasant with relatively fewer visitors; July and August are peak season with higher temperatures; December's Christmas markets have a festive atmosphere. The Old Town core is entirely walkable, and early morning is the best time to photograph Charles Bridge before crowds arrive.",
   },
@@ -6563,13 +6563,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Brno is Czechia's second-largest city and the center of Moravia, with a population of about 380,000. It was historically the capital of the Margraviate of Moravia, and today is an important research and university city.",
     layout:
-      "The old town centers on Freedom Square, with Špilberk Castle on a hill to the west overlooking the city; the Cathedral of St. Peter and Paul on Petrov Hill forms Brno's signature skyline. On the city's southern outskirts stands the Bauhaus-style Villa Tugendhat.",
+      "The old town centers on Freedom Square, with Špilberk Castle on a hill to the west overlooking the city; the Cathedral of St. Peter and Paul on Petrov Hill forms Brno's signature skyline. In the Černá Pole district on the city's north side stands Villa Tugendhat, a modernist landmark designed by Mies van der Rohe.",
     gettingAround:
       "Brno-Tuřany Airport is about 7.5 km from the city center; the city has an extensive tram network, and the old town core is entirely walkable.",
     culture:
       "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Peter and Paul and other religious sites; as a major university city, Brno has a lively student population and strong restaurant and pub culture; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
     seeAndDo:
-      "Špilberk Castle (founded in the 13th century, later used as a fortress and prison); the Cathedral of St. Peter and Paul; Villa Tugendhat (a 1930 Bauhaus-style modernist landmark, UNESCO World Heritage); Freedom Square at the heart of the old town; and using Brno as a gateway to the Macocha Abyss in the Moravian Karst.",
+      "Špilberk Castle (founded in the 13th century, later used as a fortress and prison); the Cathedral of St. Peter and Paul; Villa Tugendhat (a functionalist modern house designed by Mies van der Rohe and completed in 1930, UNESCO World Heritage since 2001); Freedom Square at the heart of the old town; and using Brno as a gateway to the Macocha Abyss in the Moravian Karst.",
     whenAndTips:
       "May to September is pleasant; as a university city, some student-oriented facilities close in summer and the atmosphere is livelier during term time; Brno makes a good base for day trips to the Moravian Karst and the Lednice-Valtice estate.",
   },
@@ -6631,11 +6631,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   olomouc: {
     identity:
-      "Olomouc is a historic city in Moravia with a population of about 100,000. In the Middle Ages it was a bishopric seat and regional center, and today has the largest historic urban core in Czechia after Prague; its Holy Trinity Column was inscribed as a UNESCO World Heritage Site in 1995.",
+      "Olomouc is a historic city in Moravia with a population of about 100,000. In the Middle Ages it was a bishopric seat and regional center, and today has the largest historic urban core in Czechia after Prague; its Holy Trinity Column was inscribed as a UNESCO World Heritage Site in 2000.",
     layout:
       "The old town centers on Upper Square and Lower Square, with the Holy Trinity Column standing at the heart of Upper Square; Olomouc's cathedral and archbishop's palace lie at the other end of the old town, which also preserves six Baroque fountains as key features of its townscape.",
     gettingAround:
-      "The local airport has limited passenger service; most travelers connect via Brno Airport and continue by train or bus (about 1.5 hours), while a direct train from Prague to Olomouc takes about 2.5 hours; the old town core is entirely walkable.",
+      "There are no scheduled commercial flights locally; most travelers connect via Brno Airport and continue by train or bus (about 1.5 hours), while a direct train from Prague to Olomouc takes about 2.5 hours; the old town core is entirely walkable.",
     culture:
       "The official language is Czech. Modest dress is expected when entering St. Wenceslas Cathedral and other religious sites; as a university city, Olomouc has a lively student population and strong café and pub culture in the old town; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
     seeAndDo:
