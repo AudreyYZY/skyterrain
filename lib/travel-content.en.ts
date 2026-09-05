@@ -61,7 +61,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Geelong sits on Corio Bay about 75 km south-west of Melbourne, with a metropolitan population of around 270,000 — Victoria's second-largest city, and home ground of the Geelong Cats, one of the oldest clubs in the Australian Football League. Once a wool-trading and manufacturing hub, it is now better known as the gateway to the Great Ocean Road and the Bellarine Peninsula, and many travellers treat it as a genuine stop rather than just a drive-through.",
     layout:
-      "The city centre hugs the eastern shore of Corio Bay. A waterfront promenade links Cunningham Pier, the Eastern Beach sea baths and the 104 painted timber Baywalk Bollards. The old town grid, with the National Wool Museum and a cluster of 19th-century stone buildings, is within walking distance of the waterfront. A short drive south-west is the Otway Ranges and Torquay, where the Great Ocean Road officially begins; to the east is the Bellarine Peninsula, with the historic town of Queenscliff and a wine-growing district.",
+      "The city centre hugs the eastern shore of Corio Bay. A waterfront promenade links Cunningham Pier, the Eastern Beach sea baths and the 103 painted timber Baywalk Bollards. The old town grid, with the National Wool Museum and a cluster of 19th-century stone buildings, is within walking distance of the waterfront. A short drive south-west is the Otway Ranges and Torquay, where the Great Ocean Road officially begins; to the east is the Bellarine Peninsula, with the historic town of Queenscliff and a wine-growing district.",
     gettingAround:
       "Geelong's nearest commercial airport is Avalon Airport (AVV), about 20 km north-east of the centre, served by Jetstar with flights to Sydney, Brisbane, Adelaide and the Gold Coast; Melbourne Airport (Tullamarine) is about an hour's drive away. Neither airport has a direct train — use the airport bus or a taxi/rideshare. V/Line intercity trains run direct from Melbourne's Southern Cross Station to Geelong Station, about an hour each way with services roughly every half hour, and are the most common way to travel between the two cities. The waterfront and centre are walkable, with buses covering the rest; a car or a tour is needed for the Great Ocean Road and the Bellarine Peninsula. The climate is similar to Melbourne's temperate maritime pattern but slightly drier on the bay: summer (December–February) is about 14–25 °C with occasional heatwaves; winter (June–August) is about 7–14 °C, windy and cool.",
     culture:
@@ -314,9 +314,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   beijing: {
     identity:
-      "Beijing is China's capital and its political and cultural centre, with a metropolitan population of about 20 million. It has over three thousand years of settlement and more than eight hundred as a capital; the Ming–Qing imperial city plan is still legible today. The city is large in scale — the main sights are spread between the central axis and a set of ring roads, so expect distances.",
+      "Beijing's site is no accident — the Taihang, Yan and Jundu ranges close around it to the west and north, forming a bay-shaped gap opening southeast that geographers call the 'Beijing Bay': the mountains block the dry, cold air that sweeps down from the north in winter, while the open side catches moisture carried in by the southeast monsoon, and rivers such as the Yongding, descending from the hills, built up a fertile piedmont plain where the ancient city of Ji stood more than three thousand years ago. Today's Beijing is China's capital and its political and cultural centre, with a metropolitan population of about 20 million and more than eight hundred years as a capital; the Ming–Qing imperial city plan is still legible today. The city is large in scale — the main sights are spread between the central axis and a set of ring roads, so expect distances.",
     layout:
-      "Beijing sits at the northwest corner of the North China Plain; the Yan and Western Hills rise to the north and west, and the Great Wall runs along those ridgelines. The built-up area itself is flat. The city radiates in rings (2nd Ring to 6th Ring) from the Forbidden City; the 2nd Ring roughly traces the old city wall, and the traditional hutong alleys and courtyard houses are concentrated inside it.",
+      "Beijing sits at the northwest corner of the North China Plain, right at the point of the 'Beijing Bay' gap: the Yan and Western Hills rise to the north and west, and the Great Wall runs along that natural barrier's ridgeline — its route was chosen by the terrain, not despite it. Past the hills, the built-up area itself is flat. The city radiates in rings (2nd Ring to 6th Ring) from the Forbidden City; the 2nd Ring roughly traces the old city wall, and the traditional hutong alleys and courtyard houses are concentrated inside it.",
     gettingAround:
       "Capital Airport has an express rail link into the metro network; Daxing Airport has its own dedicated line. The metro is extensive and the fastest way around, but jammed at peak hours. Metro and buses take a phone QR code or a transit card; ride-hailing is easy. The city is big and traffic is common, so allow time when crossing districts. Shared bikes work well for short hops around the hutongs and near sights.",
     culture:
@@ -329,7 +329,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   shanghai: {
     identity:
-      "Shanghai is China's largest city and its economic and financial centre, with a metropolitan population of about 25 million, and the entry point for many international flights. It is a port and commercial city that rose in the modern era, with Chinese and Western architecture and ways of life intertwined — fast-paced, with a mature service sector and a relatively international feel.",
+      "Shanghai owes its rise as China's biggest port partly to avoiding the Yangtze's own front door — the river's mouth silts up year-round into a sandbar that large ships struggle to cross, so the early port was sited instead where the Huangpu and Wusong rivers meet, a little to the south with steadier currents. Even the Huangpu is now gradually too shallow for the largest vessels, which is why bigger container ships call instead at the newer Yangshan deep-water port, built out in Hangzhou Bay. Shanghai is China's largest city and its economic and financial centre, with a metropolitan population of about 25 million and the entry point for many international flights, its Chinese and Western architecture and ways of life intertwined — fast-paced, with a mature service sector and a relatively international feel.",
     layout:
       "Shanghai is on the south bank of the Yangtze estuary at the eastern edge of the Yangtze Delta, and it is very flat. The Huangpu River splits the city into Puxi and Pudong: Puxi has the Bund, the plane-tree streets of the old concessions and the city centre; Pudong has the Lujiazui skyscraper cluster, and Pudong Airport (one of the city's two) is on this side. Suzhou Creek crosses the northern part of the city. There are no hills; beyond the city is continuous plain and canal towns.",
     gettingAround:
@@ -344,7 +344,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   guangzhou: {
     identity:
-      "Guangzhou is the capital of Guangdong province and the hub of southern China, with a metropolitan population of about 18 million. It has more than two thousand years as a trading port, was one of the main starting points of the Maritime Silk Road, and hosts the twice-yearly Canton Fair. It is practical, commercial and full of daily life, with a strong culture of morning tea and late-night eating.",
+      "Guangzhou's two-thousand-year run as a trading port really starts with a canal Qin Shi Huang had dug far to the north — the Lingqu Canal linked the Xiang and Li rivers, letting boats from central China cross the Nanling watershed and drop into the Pearl River system; Guangzhou is the last major port on that river before the sea, where inland cargo transferred onto ocean-going ships, which is why the Maritime Silk Road's starting point fell here rather than elsewhere. Guangzhou is the capital of Guangdong province and the hub of southern China, with a metropolitan population of about 18 million, and hosts the twice-yearly Canton Fair. It is practical, commercial and full of daily life, with a strong culture of morning tea and late-night eating.",
     layout:
       "Guangzhou is at the northern edge of the Pearl River Delta, with the Pearl River running through it; the land is gentle, with the low hills of Baiyun Mountain to the north. The city stretches east–west along the river: the old districts (Yuexiu, Liwan) keep their arcaded shophouse streets and the Xiguan character; Zhujiang New Town is the new CBD. South, down the Pearl River estuary, is the Greater Bay Area conurbation running through Foshan, Dongguan, Shenzhen, Hong Kong and Macau.",
     gettingAround:
@@ -374,7 +374,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   chengdu: {
     identity:
-      "To understand Chengdu, start with the Dujiangyan irrigation works, cut into the rock over two thousand years ago by the engineer Li Bing and his son — instead of a high dam, it simply splits the Min River's flow, and it has kept the western Chengdu Plain free of both flood and drought ever since, at almost no risk of famine. That is where the old label 'land of abundance' comes from. The ease the plain provides has shaped the people too: teahouses, mahjong and chilli-laden food are the unhurried pace of life that abundance buys. Chengdu is the capital of Sichuan and a hub of southwest China, with a metropolitan population of about 20 million; an hour or two west, the land suddenly rises into the Hengduan Mountains and the eastern edge of the Tibetan Plateau, making Chengdu the single most important gateway into the western Sichuan plateau and Tibetan areas.",
+      "To understand Chengdu, start with the Dujiangyan works, built over two thousand years ago by the engineer Li Bing and his son — instead of a dam holding back the Min River, the Fish Mouth divider uses the river's own bend-driven currents to redirect flow by season with no gates at all: about 60 percent goes to the inner channel for irrigation in the dry season, then the split reverses so 60 percent drains out through the outer channel when floodwater arrives. That self-adjusting system, still running today, has kept the western Chengdu Plain largely free of both flood and drought, and is where the old label 'land of abundance' comes from. The ease the plain provides has shaped the people too: teahouses, mahjong and chilli-laden food are the unhurried pace of life that abundance buys. Chengdu is the capital of Sichuan and a hub of southwest China, with a metropolitan population of about 20 million; an hour or two west, the land suddenly rises into the Hengduan Mountains and the eastern edge of the Tibetan Plateau, making Chengdu the single most important gateway into the western Sichuan plateau and Tibetan areas.",
     layout:
       "The water network of Dujiangyan still shapes Chengdu's footprint — the whole city sits on an almost dead-flat alluvial plain, its channels threading through town in a grid, and with no mountain or river to work around, the city's historic layout simply unrolled across that flat ground. Tianfu Square is the traditional centre, with the Tianfu New Area extending the plain southward as a new city. What the map does not show: an hour or two's drive west, the land rises with almost no warning — the edge of the Chengdu Plain is close to a wall — which is also why pandas, the western Sichuan plateau and Tibetan landscapes are all within a day or two's reach of the city.",
     gettingAround:
@@ -389,7 +389,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   chongqing: {
     identity:
-      "Chongqing is a directly-administered municipality in southwest China; its core urban area holds about 10 million people, with more across the wider municipality. It is built on hilly ground where the Yangtze and Jialing rivers meet, and is known as the 'mountain city' — the three-dimensional terrain stacks roads, rail and buildings on top of each other, and the night views are distinctive. It is also the traditional start of Yangtze Three Gorges cruises.",
+      "Chongqing's mountain terrain became a decisive factor in 1937 — after Nanjing fell, the Nationalist government moved west and chose Chongqing as its wartime capital: the Three Gorges and the Daba and Wu mountains close around it to the east, a natural barrier Japanese ground forces never managed to break through, while the confluence of the Yangtze and Jialing rivers made it the upper Yangtze's shipping hub, useful for pulling in resources and industry from the southwest to sustain the war effort. Today Chongqing is a directly-administered municipality in southwest China; its core urban area holds about 10 million people, with more across the wider municipality. Built on hilly ground where the two rivers meet, its three-dimensional terrain stacks roads, rail and buildings on top of each other, and the night views are distinctive; it is also the traditional start of Yangtze Three Gorges cruises.",
     layout:
       "Central Chongqing sits on the peninsula between the Yangtze and the Jialing and on the hillsides of both banks, with almost no flat ground. The Yuzhong Peninsula is the old centre (Jiefangbei, Hongyadong). The city is cut by rivers and hills into many clusters, linked by bridges and tunnels. East is the Yangtze cutting the Three Gorges; southeast is the Wuling mountain region.",
     gettingAround:
@@ -404,7 +404,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   xian: {
     identity:
-      "Xi'an is the capital of Shaanxi province, with a metropolitan population of about 13 million. It was the capital under several Chinese dynasties — the Zhou, Qin, Han and Tang most importantly — and the eastern end of the Silk Road. Its intact Ming-era city wall, the Terracotta Army and a large number of imperial tombs make it one of the most concentrated places to understand ancient Chinese history.",
+      "Thirteen dynasties chose the Xi'an area as their capital largely for the security this 'land of four passes' provided — the Guanzhong Plain is ringed by the Hangu Pass to the east, the Wu Pass to the south, the Dasan Pass to the west and the Xiao Pass to the north, four choke points that turn the whole plain into a natural fortress you can seal shut to defend or open to strike out from; the name 'Guanzhong,' meaning 'within the passes,' comes directly from this. Xi'an is the capital of Shaanxi province, with a metropolitan population of about 13 million. It was the capital under several Chinese dynasties — the Zhou, Qin, Han and Tang most importantly — and the eastern end of the Silk Road. Its intact Ming-era city wall, the Terracotta Army and a large number of imperial tombs make it one of the most concentrated places to understand ancient Chinese history.",
     layout:
       "Xi'an is on the Guanzhong Plain south of the Wei River, ringed by the Qinling Mountains (to the south) and loess terraces, with a flat city centre. The old city is enclosed by a complete Ming-era wall, the Bell Tower at its centre, with four avenues running out symmetrically north, south, east and west; the modern city is outside the wall. The Terracotta Army and the mausoleum of the First Emperor are at Lintong, about 40 km east.",
     gettingAround:
@@ -419,7 +419,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   hangzhou: {
     identity:
-      "Hangzhou is the capital of Zhejiang province, with a metropolitan population of about 12 million, known for West Lake. It was the capital of the Southern Song and the southern end of the Grand Canal. It combines lake-and-hill gardens with a modern digital economy, and is a major tourism and tech city in the Yangtze Delta.",
+      "West Lake was not always a lake — it started as a small bay off the Qiantang River, until silt carried down by the river built up a sandbar across its mouth, sealing the seawater inside off from the river; cut off and gradually diluted by the streams feeding in, it turned into today's freshwater lake over more than ten thousand years. Hangzhou is the capital of Zhejiang province, with a metropolitan population of about 12 million; it was the capital of the Southern Song and the southern end of the Grand Canal, combining lake-and-hill gardens with a modern digital economy as a major tourism and tech city in the Yangtze Delta.",
     layout:
       "Hangzhou is at the southern edge of the Yangtze Delta on the lower Qiantang River. West Lake — hills on three sides, the city on the fourth — is the heart of the city. The old town and commercial area are east of the lake; the new city centre (Qianjiang New City) is on both banks of the Qiantang River. West and south of the city are hills, tea slopes and stream valleys (Longjing, the Xixi wetland).",
     gettingAround:
@@ -464,7 +464,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   nanjing: {
     identity:
-      "Nanjing is the capital of Jiangsu and one of the main cities of the lower Yangtze, with a metropolitan population of about 9 million. It served as the capital under several dynasties, and long stretches of Ming-era city wall, several imperial tombs and Republican-era buildings give it a deep historical layering. It is an industrial and academic centre and an important transport hub for eastern China.",
+      "\"Purple Mountain coils like a dragon, Stone Mountain crouches like a tiger\" is an old line traditionally used to describe Nanjing's terrain: Purple Mountain winds along the city's east side like a dragon at rest, Stone Mountain guards the riverbank to the west like a crouching tiger, and the Yangtze itself blocks the north — a naturally defensible site that was a key reason Sun Quan founded his capital here in 229 CE, opening Nanjing's history as the \"capital of six dynasties.\" Nanjing is the capital of Jiangsu and one of the main cities of the lower Yangtze, with a metropolitan population of about 9 million; it went on to serve as the capital under several further dynasties, and long stretches of Ming-era city wall, several imperial tombs and Republican-era buildings give it a deep historical layering. It is an industrial and academic centre and an important transport hub for eastern China.",
     layout:
       "Nanjing sits on the east bank of the Yangtze among the Ningzhen hills, broken up by Purple Mountain, a string of smaller hills, Xuanwu Lake and the Qinhuai River. The old city centres on Xinjiekou; east is the wooded belt of Purple Mountain with Sun Yat-sen's Mausoleum and the Ming tombs, south is the old southern city around the Confucius Temple and the Qinhuai, and across the river is the Jiangbei new district. Low hills surround the city — it is not a plains city.",
     gettingAround:
@@ -494,7 +494,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   lhasa: {
     identity:
-      "Lhasa's location is no accident. Most of the Tibetan Plateau sits above 4,000 m, open and unforgiving; Lhasa instead sits tucked into a valley cut by the Lhasa River, a tributary of the Yarlung Tsangpo — a few hundred metres lower than the surrounding plateau surface, sheltered from the worst wind and cold, with river water for irrigating barley. That combination is what makes it one of the plateau's rare places able to support a lasting settlement. Today's Lhasa sits at about 3,650 m, capital of the Tibet Autonomous Region and its administrative, transport and cultural centre — the point where most Tibet itineraries begin or end, and the place this journey from a basin up onto the roof of the world finally comes down.",
+      "Lhasa's founding is a matter of historical record: in the 7th century, Songtsen Gampo moved his capital here and built the Jokhang Temple, and the city grew from that. But the valley he chose was not arbitrary — most of the Tibetan Plateau sits above 4,000 m, open and unforgiving, while the Lhasa River valley (a tributary of the Yarlung Tsangpo) sits a few hundred metres lower than the surrounding plateau surface, sheltered from the worst wind and cold, with river water for irrigating barley — a relatively livable pocket on an otherwise harsh plateau. Today's Lhasa sits at about 3,650 m, capital of the Tibet Autonomous Region and its administrative, transport and cultural centre — the point where most Tibet itineraries begin or end, and the place this journey from a basin up onto the roof of the world finally comes down.",
     layout:
       "Lhasa is built on the one relatively flat stretch of valley on the north bank of the Lhasa River, ringed by bare high mountains — that small patch of level ground the valley provides is essentially the whole footprint of the city. The old town centres on the Jokhang and the Barkhor circuit around it; the Potala Palace stands on Red Hill to the north-west of the old town, as if it had deliberately claimed the one high point rising out of the valley floor. The administrative and new districts lie to the west, with the Norbulingka in the western suburbs. Not far outside town, the valley narrows, the farmland runs out, and the land returns to the open, unforgiving plateau surface.",
     gettingAround:
@@ -509,7 +509,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   harbin: {
     identity:
-      "Harbin is the capital of Heilongjiang and the main city of the northern north-east, with a metropolitan population of about 5.5 million. It grew up around the railway and had a large foreign, mostly Russian, community in its early decades, which left blocks of European-style architecture and the nickname \"the Oriental Moscow\". Winters are severe, and it is the leading city for ice-and-snow tourism in China.",
+      "Harbin's rise began with a siting decision — when Tsarist Russia built the Chinese Eastern Railway in 1896, the junction station was chosen between Harbin and the upstream town of Bodune, and Harbin won out because its stretch of the Songhua River was wide enough for the large barges needed to bring in construction material; a fishing village on the riverbank shot up into a modern city within a few years. Harbin is the capital of Heilongjiang and the main city of the northern north-east, with a metropolitan population of about 5.5 million; the foreign, mostly Russian, community that poured in during its early decades left blocks of European-style architecture and the nickname \"the Oriental Moscow.\" Winters are severe, and it is the leading city for ice-and-snow tourism in China.",
     layout:
       "Harbin is built on the flat Northeast Plain on the south bank of the Songhua River. The core runs from Central Street (a cobbled pedestrian street) to the flood-control monument, the \"Chinese Baroque\" quarter of Laodaowai, and the area around St Sophia Cathedral; across the river are Sun Island and, in winter, the Ice and Snow World. The city stretches east–west along the river.",
     gettingAround:
@@ -524,7 +524,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   qingdao: {
     identity:
-      "Qingdao, on the southern coast of the Shandong Peninsula, is an important port and seaside city with a metropolitan population of about 7 million. It has a history of German and Japanese occupation, which left blocks of red-roofed European-style buildings in the old town; together with the bays, the beer and the seafood, this gives the city a distinct character.",
+      "Qingdao's blocks of European architecture trace back to Jiaozhou Bay — one of the few natural deep-water harbours in North China, which Germany's East Asia fleet commander scouted and pushed hard to seize after an 1896 inspection; the 1897 killing of two German missionaries became the pretext for occupation, and by 1898 Germany had forced a 99-year lease out of the Qing government, turning Qingdao into its bridgehead in East Asia. Qingdao, on the southern coast of the Shandong Peninsula, is an important port and seaside city with a metropolitan population of about 7 million; a later period of Japanese occupation followed, and together the red-roofed European-style buildings left in the old town, the bays, the beer and the seafood give the city a distinct character.",
     layout:
       "The old town is on the hills on the east side of Jiaozhou Bay, where the streets around Zhanqiao Pier, Badaguan and Signal Hill run steeply between hill and sea; eastward along the coast are the May Fourth Square, the Olympic Sailing Centre and successive newer districts and swimming beaches; behind the city rises Mount Lao. There is no large plain — it is essentially hills and coastline.",
     gettingAround:
@@ -554,7 +554,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   lijiang: {
     identity:
-      "Lijiang, in north-western Yunnan, is known for its Naxi old town and for Yulong (Jade Dragon) Snow Mountain, and is one of the hubs for travel in the north-west of the province. It sits at about 2,400 m, and most people adjust well. The old town is a World Heritage Site and also a heavily commercialised tourist area — quiet by day, lively at night.",
+      "The old town's water system carries the ingenuity of Lijiang's Naxi ancestors — water from the Black Dragon Pool springs at the foot of Yulong Snow Mountain is channelled into town and split into a web of streams running past every doorway; at the source points, 'three-eyed wells' step the water down through three linked pools by natural gradient — the top for drinking, the middle for washing vegetables, the bottom for washing clothes — keeping the source clean without anyone having to manage it. Lijiang, in north-western Yunnan, is known for its Naxi old town and for Yulong Snow Mountain, and is one of the hubs for travel in the north-west of the province; it sits at about 2,400 m, where most people adjust well, and the old town is a World Heritage Site and also a heavily commercialised tourist area — quiet by day, lively at night.",
     layout:
       "The Lijiang basin is a relatively flat upland basin within the Hengduan ranges. Dayan old town (usually just called \"Lijiang old town\") is at its centre; Shuhe old town to the north-west is quieter, and Baisha, smaller still, is closest to the snow mountain. Yulong Snow Mountain is about 25 km north of the town and is a sacred mountain to the Naxi. North lie Tiger Leaping Gorge and the road to Shangri-La; south is Dali.",
     gettingAround:
@@ -719,7 +719,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   taiyuan: {
     identity:
-      "Taiyuan is the capital of Shanxi, an old industrial city in the Fen River valley, with an urban population of about 4 million. It has more than two thousand years of history as a northern military town, and with the Jinci temple complex nearby and Pingyao, Datong and Mount Wutai not far off, Taiyuan is the base for a tour of Shanxi's historic architecture and relics.",
+      "Taiyuan is the capital of Shanxi, an old industrial city in the Fen River valley, with an urban population of about 4 million. It has more than 2,500 years of history — the walled city of Jinyang was founded in 497 BCE by Dong Anyu, a retainer of the noble Zhao Jianzi — and served as a dynastic capital nine times over its history, earning it the nickname \"the nine-dynasty capital.\" A long-standing northern military town, with the Jinci temple complex nearby and Pingyao, Datong and Mount Wutai not far off, Taiyuan is the base for a tour of Shanxi's historic architecture and relics.",
     layout:
       "Taiyuan lies in the narrow Fen River valley, hemmed in by the East and West mountains. The Fen River and its riverside road form the north–south axis; Jinci is at the foot of Xuanweng Shan in the south-western suburbs. North is Xinzhou and Mount Wutai; south are Pingyao and Jinzhong; north-east is Datong.",
     gettingAround:
@@ -764,7 +764,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   changchun: {
     identity:
-      "Changchun is the capital of Jilin, a city on the Song–Liao plain in the centre of the north-east, with an urban population of about 4.5 million. It is known for its car industry and film studio, is green with wide streets and many roundabouts, keeps a number of early-20th-century buildings, and is one of the transfer cities on the way to Changbai Shan.",
+      "Changchun's wide streets and many roundabouts today are a leftover of 1930s planning — Manchukuo chose Changchun as its capital, \"Xinjing,\" partly because it already sat on the Chinese Eastern Railway with good transport links, and partly because land was cheap enough to plan on a large scale; the road network copied Paris's radial-and-ring layout, with plazas and roundabouts at key junctions to disperse traffic, turning a town of little more than 100,000 people into a fully infrastructured city within a few years. Changchun is the capital of Jilin, a city on the Song–Liao plain in the centre of the north-east, with an urban population of about 4.5 million; it is known today for its car industry and film studio, keeps a number of early-20th-century buildings, and is one of the transfer cities on the way to Changbai Shan.",
     layout:
       "Changchun is built on the plain along the Yitong River, on flat ground. The city is laid out on a radial-and-ring plan, with People's Square and Culture Square at the centre; the Jingyuetan forest park, the FAW works and the film city are in the south; the former Manchukuo palace is in the north-east. South-east lie Jilin city and Changbai Shan.",
     gettingAround:
@@ -794,7 +794,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   hefei: {
     identity:
-      "Hefei is the capital of Anhui, a city between the Yangtze and Huai rivers on the northern shore of Lake Chao, with an urban population of about 5 million. Once a small town, it has grown fast in recent decades and is known for science, education and manufacturing; it is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
+      "Hefei's reputation for science and education traces back to a hurried wartime evacuation — in 1969 the University of Science and Technology of China was ordered out of Beijing, first relocating to Nanyang in Henan and then to Anqing in Anhui, neither of which could support it under such basic conditions; it finally settled in Hefei in 1970, having lost most of its library and equipment along the way and left with fewer than a hundred faculty, essentially starting over from scratch. That is how a top university put down roots in what was then an unremarkable town between the Yangtze and Huai rivers. Hefei is the capital of Anhui, on the northern shore of Lake Chao, with an urban population of about 5 million; it is now known for science, education and manufacturing, and is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
     layout:
       "Hefei sits on gently rolling ground between the Jianghuai hills and Lake Chao. The old town is ringed by the Huancheng Park (a green belt on the former moat); the government district is to the south-west and the Binhu new area is on the lake. South is Lake Chao and then Huangshan (Huangshan, Hongcun, Xidi, Tunxi old street); south-west are Lu'an and the Dabie Mountains; east is Nanjing.",
     gettingAround:
@@ -974,7 +974,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   yokohama: {
     identity:
-      "Yokohama is the capital of Kanagawa Prefecture, a port city on Tokyo Bay just south of Tokyo, and the second most populous city in Japan (about 3.7 million). It opened as a port in the mid-19th century, one of Japan's first cities for foreign trade, and now mixes a Chinatown, Western-era buildings and a modernised port district; many people visit it as a day trip from Tokyo.",
+      "Yokohama is the capital of Kanagawa Prefecture, a port city on Tokyo Bay just south of Tokyo, and Japan's most populous incorporated city (about 3.78 million) — behind only Tokyo's 23 special wards, which are not a single incorporated city. It opened as a port in the mid-19th century, one of Japan's first cities for foreign trade, and now mixes a Chinatown, Western-era buildings and a modernised port district; many people visit it as a day trip from Tokyo.",
     layout:
       "Yokohama runs along the western shore of Tokyo Bay. The core is the towers and ferris wheel of Minato Mirai 21 and the waterfront around the Red Brick Warehouses; south are the Western-style old houses of Yamate and the Harbour View Park, with Japan's largest Chinatown below; farther south are Honmoku and Kanazawa Ward. North it quickly joins the Tokyo metropolitan area.",
     gettingAround:
@@ -2159,7 +2159,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   alta: {
     identity:
-      "Alta is in Norway's northernmost county, Finnmark (Northern Sámi: Finnmárku), at the end of a fjord where the Alta river reaches the sea, with a town population of about 15,000 — the most populous town in Finnmark. Outside the town, a group of rock carvings records the life of local hunting, fishing and reindeer peoples from about 5,000 to 2,000 years ago, and was Norway's first cultural site inscribed as a World Heritage Site. The Finnmark plateau (Finnmarksvidda / Finnmárkkoduottar) has long been an area where the Sámi herd reindeer.",
+      "Alta is in Norway's northernmost county, Finnmark (Northern Sámi: Finnmárku), at the end of a fjord where the Alta river reaches the sea, with a town population of about 15,000 — the most populous town in Finnmark. Outside the town, a group of rock carvings records the life of local hunting, fishing and reindeer peoples from about 7,000 to 2,000 years ago; inscribed as a World Heritage Site in 1985, it is one of the largest concentrations of prehistoric hunter-gatherer rock art in Northern Europe. The Finnmark plateau (Finnmarksvidda / Finnmárkkoduottar) has long been an area where the Sámi herd reindeer.",
     layout:
       "Alta is spread across the head of the fjord and several river valleys, with some distance between its centres (Bossekop, Elvebakken, Bukta). The landmark modern building is the 'Northern Lights Cathedral', a spiral of titanium panels. South of the town is the canyon the Alta river has cut (one of the largest in northern Europe) and the road up to the interior Finnmark plateau — dwarf birch, lakes and reindeer.",
     gettingAround:
@@ -2446,7 +2446,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Bologna is on the edge of the Po Valley at the northern foot of the Apennines in north-eastern Italy, with a metro area of about 1 million — the capital of Emilia-Romagna. It is home to the world's oldest continuously operating university (the University of Bologna, founded in 1088), and is widely regarded as one of Italy's gastronomic capitals — Bolognese ragù, Parmesan cheese and Parma ham all come from this area.",
     layout:
-      "Bologna's old town is marked by two leaning towers (the Asinelli and the Garisenda), and its roughly 40 km of covered arcades (a World Heritage Site) are its most distinctive streetscape — you can walk almost the whole city without an umbrella in the rain. Piazza Maggiore is the heart of the centre, with the Basilica of San Petronio on its south side. Because of its extensive red-brick buildings, the old town is nicknamed 'the Red City'.",
+      "Bologna's old town is marked by two leaning towers (the Asinelli and the Garisenda), and its covered arcades — about 62 km in total (about 42 km within the historic centre) — are its most distinctive streetscape, letting you walk almost the whole city without an umbrella in the rain; in 2021, 12 of the most representative stretches were inscribed as a World Heritage Site. Piazza Maggiore is the heart of the centre, with the Basilica of San Petronio on its south side. Because of its extensive red-brick buildings, the old town is nicknamed 'the Red City'.",
     gettingAround:
       "Bologna Airport (BLQ) is north-west of the city, with a monorail (the Marconi Express) about 7 minutes to the central station. Bologna is a key hub of the Italian high-speed rail network — about 1.5–2 hours from Rome, about 1 hour from Milan, about 35 minutes from Florence — and is often used as a stopover. The city has buses, and walking the arcaded old town is pleasant. The climate is temperate continental, muggy summers and cold, foggy winters.",
     culture:
@@ -2879,7 +2879,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   stralsund: {
     identity:
-      "Stralsund, on Germany's north-eastern Baltic coast, is a well-preserved historic Hanseatic town, its old town World Heritage-listed as a whole in the 1990s, and the main gateway to Rügen's chalk cliffs.",
+      "Stralsund, on Germany's north-eastern Baltic coast, is a well-preserved historic Hanseatic town; its old town was World Heritage-listed as a whole in 2002 together with the old town of Wismar, and it is the main gateway to Rügen's chalk cliffs.",
     layout:
       "The old town sits on a peninsula surrounded by water on three sides, with brick Gothic churches such as St. Nicholas's defining the skyline; the Ozeaneum, in the port district, is a well-known German marine-life museum; across the Strelasund strait lies the island of Rügen.",
     gettingAround:
@@ -3179,7 +3179,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   coimbra: {
     identity:
-      "Coimbra is between Lisbon and Porto on the Mondego, with a metro area of about 150,000, once the capital of Portugal (12th–13th centuries); the University of Coimbra, founded in 1290, is Portugal's oldest and one of Europe's oldest universities, its university quarter inscribed as a whole as a World Heritage Site in 2013.",
+      "Coimbra is between Lisbon and Porto on the Mondego, with a metro area of about 150,000, once the capital of Portugal (12th–13th centuries). The University of Coimbra was founded in Lisbon in 1290 by King Dinis, shifted back and forth between Lisbon and Coimbra several times, and only settled permanently in Coimbra in 1537; it is Portugal's oldest and one of Europe's oldest universities, its university quarter inscribed as a whole as a World Heritage Site in 2013.",
     layout:
       "Coimbra's old town climbs the hillside on the north bank of the Mondego, with the university quarter at the top, overlooked by the landmark university bell tower (Torre da Universidade). The old town slopes down to the riverside, the commercial and everyday-life district.",
     gettingAround:
@@ -3541,7 +3541,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   leiden: {
     identity:
-      "Leiden is between Amsterdam and The Hague, with a metro area of about 140,000; founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including the astronomer Kepler and ancestors of Darwin studied or taught, and it is also the birthplace of Rembrandt.",
+      "Leiden is between Amsterdam and The Hague, with a metro area of about 140,000; founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including Descartes, Huygens, Grotius and Spinoza studied or taught, and it is also the birthplace of Rembrandt.",
     layout:
       "Leiden's old town is ringed by canals, with the ruins of a hilltop fortress (De Burcht) as the high point overlooking the whole city. Leiden University's buildings and its botanical garden (one of the oldest in Europe) are scattered through the old town, woven into everyday city life.",
     gettingAround:
@@ -3647,7 +3647,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   salzburg: {
     identity:
-      "Salzburg is the capital of Salzburg state, with a population of about 150,000. It is the birthplace of the composer Mozart, and its well-preserved Baroque old town was inscribed as a UNESCO World Heritage site in 1997.",
+      "Salzburg is the capital of Salzburg state, with a population of about 150,000. It is the birthplace of the composer Mozart, and its well-preserved Baroque old town was inscribed as a UNESCO World Heritage site in 1996.",
     layout:
       "The Salzach River divides the city into the old town and the new town; Hohensalzburg Fortress stands on a hill above the old town overlooking the city; Mozart's birthplace and his residence are important landmarks in the old town.",
     gettingAround:
@@ -3677,7 +3677,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   graz: {
     identity:
-      "Graz is the capital of Styria and Austria's second-largest city, with a population of about 290,000, set on the Mur River; its old town was inscribed as a UNESCO World Heritage site in 2000.",
+      "Graz is the capital of Styria and Austria's second-largest city, with a population of about 290,000, set on the Mur River; its old town was inscribed as a UNESCO World Heritage site in 1999.",
     layout:
       "Schlossberg (Castle Hill) is the city's central high point, its clock tower a Graz landmark; the old town preserves Renaissance and Baroque architecture; the Kunsthaus Graz sits on the banks of the Mur, known for its futuristic architecture.",
     gettingAround:
@@ -4731,7 +4731,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   ayutthaya: {
     identity:
-      "Ayutthaya is a historic former capital in central Thailand, with a population of about 55,000; it served as the capital of the Ayutthaya kingdom from 1350 to 1767, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
+      "Ayutthaya's site was a deliberate piece of geographic calculation — in 1350, King Ramathibodi I set his new capital on a natural island ringed by the confluence of the Chao Phraya, Lop Buri and Pa Sak rivers, letting the rivers themselves serve as a moat while keeping the city well connected downstream for international trade; over the next 417 years (1350–1767) it grew into one of Southeast Asia's largest and most cosmopolitan cities, until Burmese forces sacked and burned it in 1767. Ayutthaya is a historic former capital in central Thailand, with a population of about 55,000, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
     layout:
       "The historical park sits on an island-like area encircled by the Chao Phraya, Lopburi, and Pa Sak rivers, densely dotted with temple ruins and adjoining the surrounding modern town.",
     gettingAround:
@@ -4745,7 +4745,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   sukhothai: {
     identity:
-      "Sukhothai was the capital of Thailand's first independent kingdom, with a population of about 20,000; it served as the Sukhothai kingdom's capital in the 13th–14th centuries, and Sukhothai Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
+      "The Thai alphabet is traditionally said to have been created in this very capital — founded in 1238, Sukhothai was transformed from a minor polity into the first major Tai kingdom under its third ruler, Ram Khamhaeng the Great (r. 1279–1298), who is traditionally credited with devising the Thai script in 1283; a stone inscription from 1283–1290, the Ram Khamhaeng stele, is the earliest known text in Thai. The Sukhothai kingdom ruled from here for about a century (1238–1347) before the rising Ayutthaya kingdom took its place. Sukhothai was the capital of Thailand's first independent kingdom, with a population of about 20,000, and Sukhothai Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
     layout:
       "The historical park is divided into central, northern, western, and southern zones, with the Wat Mahathat ruins at the core of the central zone, ringed by remnants of a moat and city wall.",
     gettingAround:
@@ -4857,7 +4857,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   gyeongju: {
     identity:
-      "Gyeongju was the capital of the Silla kingdom (57 BC – AD 935) for nearly a millennium, with a population of about 250,000; the city is dotted with royal tombs, temples, and ruins, earning it the nickname \"museum without walls.\"",
+      "Gyeongju's nearly a thousand years as a capital (57 BC – AD 935) tracks almost the entire arc of Silla's rise from a small statelet to the power that unified the Korean peninsula — after allying with Tang China to conquer Baekje and Goguryeo in the 7th century, Silla ruled the peninsula from here for three more centuries, and Cheomseongdae, built during the reign of Queen Seondeok (632–647), still stands as East Asia's oldest surviving astronomical observatory. Gyeongju has a population of about 250,000; the city is dotted with royal tombs, temples, and ruins, earning it the nickname \"museum without walls.\"",
     layout:
       "The historic core sits on the flat land at the city centre, with the Daereungwon tomb cluster, Cheomseongdae observatory, and Bulguksa Temple and Seokguram Grotto spread across the city and its outskirts.",
     gettingAround:
@@ -5167,7 +5167,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   hanoi: {
     identity:
-      "Hanoi is Vietnam's capital, with a population of about 8.5 million, on the right bank of the Red River; the country's political and cultural centre, with a history as a capital dating back to the 11th century.",
+      "Hanoi's founding is tied to the vision that gave it its old name — in 1010, Ly Thai To, the first ruler of the Ly dynasty, moved the capital from the defensible but remote Hoa Lu (near today's Ninh Binh) to this site, and according to legend saw a dragon rising from the Red River as he arrived, naming the new capital Thăng Long, \"Ascending Dragon\"; it remained Vietnam's political centre for most of the nearly eight centuries that followed. Hanoi is Vietnam's capital, with a population of about 8.5 million, on the right bank of the Red River, and the country's political and cultural centre.",
     layout:
       "The Old Quarter preserves its traditional 36-street layout and French colonial architecture, with Hoan Kiem Lake as the city's geographic and cultural centre, while the West Lake area is a hub of modern housing and embassies.",
     gettingAround:
@@ -5223,7 +5223,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   hue: {
     identity:
-      "Hue is a historic former capital in central Vietnam, with a population of about 450,000; the Nguyen dynasty's capital from 1802 to 1945, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
+      "Hue owes its selection as a capital largely to what the Perfume River offered — after unifying Vietnam in 1802, Emperor Gia Long, founder of the Nguyen dynasty, chose this site for its backdrop of hills and the river winding through it, and built a citadel explicitly modeled on Beijing's Forbidden City; for the 143 years that followed (1802–1945), Vietnam's last royal dynasty ruled from here and was buried in the tomb complexes along the Perfume River. Hue is a historic former capital in central Vietnam, with a population of about 450,000, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
     layout:
       "The Perfume River runs through the city; the Imperial City and Forbidden Purple City ruins on the north bank preserve the Nguyen court's layout, the south bank is the modern city centre, and several royal tombs lie along the Perfume River on the city's outskirts.",
     gettingAround:
@@ -5321,7 +5321,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "ninh-binh": {
     identity:
-      "Ninh Binh is a city in northern Vietnam known for its karst rice-field scenery, with a population of about 130,000, the core gateway for exploring the Trang An Landscape Complex and Tam Coc, often called \"Ha Long Bay on land.\"",
+      "Ninh Binh's Hoa Lu was the capital of Vietnam's first unified dynasty — in 968, Dinh Bo Linh founded the kingdom of Dai Co Viet and set his capital at Hoa Lu specifically for its ring of defensible limestone karst; the Dinh and Early Le dynasties ruled from here for over four decades, until 1010, when Ly Thai To judged the site too enclosed for the kingdom to grow and moved the capital to Hanoi (then Thăng Long). Ninh Binh is a city in northern Vietnam known for its karst rice-field scenery, with a population of about 130,000, the core gateway for exploring the Trang An Landscape Complex and Tam Coc, often called \"Ha Long Bay on land.\"",
     layout:
       "The city is ringed by limestone karst peak clusters, with rice paddies and waterways interwoven across the valley floors between the peaks.",
     gettingAround:
@@ -5392,7 +5392,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "malacca-city": {
     identity:
-      "Malacca City is the capital of Malacca state, with a population of about 50,000 in its historic core, on the east shore of the Strait of Malacca; it was the capital of the 15th-century Malacca Sultanate, and its old town was inscribed on the UNESCO World Heritage List in 2008.",
+      "Malacca's rise as Southeast Asia's most important 15th-century port came down to a precise piece of geography — in 1402, the exiled Palembang prince Parameswara chose a harbour commanding the narrowest stretch of the Strait of Malacca, the channel that ships had to pass through moving between the Indian Ocean and the South China Sea, and the Malacca Sultanate quickly grew into the transshipment hub linking China, India and the Arab world. Malacca City is the capital of Malacca state, with a population of about 50,000 in its historic core, on the east shore of the Strait of Malacca, and its old town was inscribed on the UNESCO World Heritage List in 2008 together with George Town.",
     layout:
       "The historic core is centred on Dutch Square, St Paul's Hill and Jonker Street, preserving layered architectural heritage from the Portuguese, Dutch and British colonial periods along with Peranakan (Baba-Nyonya) Chinese culture.",
     gettingAround:
@@ -5708,7 +5708,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Mactan-Cebu International Airport is on Mactan Island, about 16 km from the city centre, reachable via the causeway bridge; taxis and Grab are readily available within the city, with ferries or fast boats needed to reach nearby islands.",
     culture:
-      "The official languages are Filipino and English, with the local Cebuano (Visayan) language widely used in daily life. Cebu is where Catholicism first took root in the Philippines, and the Santo Niño de Cebu enshrined in the Basilica del Santo Niño is an important religious and cultural landmark. Restaurant bills often already include service.",
+      "The official languages are Filipino and English, with the local Cebuano (Visayan) language widely used in daily life. In 1521, Magellan's expedition baptised the rulers of Cebu here and gave them the Santo Niño image as a baptismal gift; that same image has been venerated ever since and is the oldest Christian relic in the Philippines (the country's actual first Mass was held a few days earlier on Limasawa Island in Southern Leyte, with Cebu as the site of the baptism that followed). Restaurant bills often already include service.",
     seeAndDo:
       "Magellan's Cross and the Basilica del Santo Niño; Fort San Pedro; beach resorts on Mactan Island; local specialties such as Cebu lechon (roast pig); island-hopping to nearby islands (on the outskirts).",
     whenAndTips:
@@ -6971,7 +6971,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "A local Wu dialect (Wuxi speech) is spoken, with Mandarin widely used. Wuxi cuisine leans sweet — braised spare ribs (jiang paigu) are the signature dish, and locals themselves joke that the sweetness is 'off the charts,' so first-time visitors might want to brace for it. Many of the halls in Huishan Ancient Town are historic clan properties; visitors should stay quiet and avoid entering ancestral areas not open to the public. No tipping.",
     seeAndDo:
-      "Yuantouzhu (Turtle Head Isle, the signature Lake Tai scenic spot, with cherry blossoms a highlight each spring); the Lingshan Giant Buddha (an 88 m bronze standing statue of Sakyamuni, a major Buddhist landmark on the lakeshore); Huishan Ancient Town (with more ancestral halls, of more different types, than anywhere else in China, preserving a complete cluster of Jiangnan clan-hall architecture); the Qingming Bridge historic district (traditional houses and stone bridges along the old canal, with night boat tours available).",
+      "Yuantouzhu (Turtle Head Isle, the signature Lake Tai scenic spot, with cherry blossoms a highlight each spring); the Lingshan Giant Buddha (an 88 m bronze standing statue of Sakyamuni, a major Buddhist landmark on the lakeshore); Huishan Ancient Town (118 ancestral halls for 77 surnames packed into just 0.3 sq km, among the densest concentrations of clan halls anywhere in China or the world, preserving a complete cluster of Jiangnan clan-hall architecture); the Qingming Bridge historic district (traditional houses and stone bridges along the old canal, with night boat tours available).",
     whenAndTips:
       "Late March through April is cherry-blossom season at Yuantouzhu, the busiest time of year, so it's worth booking tickets ahead to beat the crowds. March–May and September–November have the most comfortable weather; June's plum-rain season is damp and wet.",
   },
