@@ -3647,7 +3647,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   salzburg: {
     identity:
-      "Salzburg is the capital of Salzburg state, with a population of about 150,000. It is the birthplace of the composer Mozart, and its well-preserved Baroque old town was inscribed as a UNESCO World Heritage site in 1997.",
+      "Salzburg is the capital of Salzburg state, with a population of about 150,000. It is the birthplace of the composer Mozart, and its well-preserved Baroque old town was inscribed as a UNESCO World Heritage site in 1996.",
     layout:
       "The Salzach River divides the city into the old town and the new town; Hohensalzburg Fortress stands on a hill above the old town overlooking the city; Mozart's birthplace and his residence are important landmarks in the old town.",
     gettingAround:
@@ -3677,7 +3677,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   graz: {
     identity:
-      "Graz is the capital of Styria and Austria's second-largest city, with a population of about 290,000, set on the Mur River; its old town was inscribed as a UNESCO World Heritage site in 2000.",
+      "Graz is the capital of Styria and Austria's second-largest city, with a population of about 290,000, set on the Mur River; its old town was inscribed as a UNESCO World Heritage site in 1999.",
     layout:
       "Schlossberg (Castle Hill) is the city's central high point, its clock tower a Graz landmark; the old town preserves Renaissance and Baroque architecture; the Kunsthaus Graz sits on the banks of the Mur, known for its futuristic architecture.",
     gettingAround:
