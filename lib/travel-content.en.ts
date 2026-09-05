@@ -2879,7 +2879,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   stralsund: {
     identity:
-      "Stralsund, on Germany's north-eastern Baltic coast, is a well-preserved historic Hanseatic town, its old town World Heritage-listed as a whole in the 1990s, and the main gateway to Rügen's chalk cliffs.",
+      "Stralsund, on Germany's north-eastern Baltic coast, is a well-preserved historic Hanseatic town; its old town was World Heritage-listed as a whole in 2002 together with the old town of Wismar, and it is the main gateway to Rügen's chalk cliffs.",
     layout:
       "The old town sits on a peninsula surrounded by water on three sides, with brick Gothic churches such as St. Nicholas's defining the skyline; the Ozeaneum, in the port district, is a well-known German marine-life museum; across the Strelasund strait lies the island of Rügen.",
     gettingAround:
