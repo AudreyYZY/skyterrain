@@ -672,6 +672,77 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "Burnie -41.0636,145.8753；BWT 机场：en.wikipedia（在温亚德，距伯尼约 17 公里）",
   },
 
+  // ── 澳大利亚 批4（2026-09-05） ──
+  {
+    id: "albury", nameZh: "奥尔伯里", nameEn: "Albury", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 146.9158, lat: -36.0806,
+    airport: { iata: "ABX", nameZh: "奥尔伯里机场", nameEn: "Albury Airport", lon: 146.9583, lat: -36.0683 },
+    source: "Albury -36.0806,146.9158（en.wikipedia）；ABX 机场：en.wikipedia（城东约 4 公里）；ABS 2021 Albury–Wodonga SUA",
+  },
+  {
+    id: "dubbo", nameZh: "达博", nameEn: "Dubbo", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 148.6011, lat: -32.2569,
+    airport: { iata: "DBO", nameZh: "达博地区机场", nameEn: "Dubbo Regional Airport", lon: 148.5750, lat: -32.2167 },
+    source: "Dubbo -32.2569,148.6011（en.wikipedia）；DBO 机场：en.wikipedia（城西北约 4 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "tamworth", nameZh: "塔姆沃思", nameEn: "Tamworth", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 150.9291, lat: -31.0906,
+    airport: { iata: "TMW", nameZh: "塔姆沃思机场", nameEn: "Tamworth Airport", lon: 150.8494, lat: -31.0839 },
+    source: "Tamworth -31.0906,150.9291（en.wikipedia）；TMW 机场：en.wikipedia（城西约 10 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "cessnock", nameZh: "塞斯诺克（猎人谷）", nameEn: "Cessnock (Hunter Valley)", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 151.3555, lat: -32.8342,
+    airport: { iata: "NTL", nameZh: "纽卡斯尔机场（威廉敦）", nameEn: "Newcastle (Williamtown)", lon: 151.8340, lat: -32.7950 },
+    source: "Cessnock -32.8342,151.3555（en.wikipedia）；本地 Cessnock Airport 无定期客运航班，与纽卡斯尔条目共用 NTL（约 53 公里）；ABS 2021 Morisset–Cooranbong 之外的 Cessnock SUA",
+  },
+  {
+    id: "warrnambool", nameZh: "瓦南布尔", nameEn: "Warrnambool", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 142.4880, lat: -38.3818,
+    source: "Warrnambool -38.3818,142.4880（en.wikipedia）；Warrnambool Airport（YWBL）无定期客运航班，条目不写机场字段，交通以 V/Line 铁路为主；ABS 2021 SUA",
+  },
+  {
+    id: "bright", nameZh: "布赖特", nameEn: "Bright", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 146.9597, lat: -36.7297,
+    source: "Bright -36.7297,146.9597（en.wikipedia）；无机场，最近商业机场为奥尔伯里 ABX（约 90 公里），条目不写机场字段；维多利亚高山区门户小镇（2021 普查约 2,600 人）",
+  },
+  {
+    id: "bundaberg", nameZh: "班达伯格", nameEn: "Bundaberg", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 152.3489, lat: -24.8661,
+    airport: { iata: "BDB", nameZh: "班达伯格机场", nameEn: "Bundaberg Airport", lon: 152.3186, lat: -24.9039 },
+    source: "Bundaberg -24.8661,152.3489（en.wikipedia）；BDB 机场：en.wikipedia（城西南约 5 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "hervey-bay", nameZh: "赫维湾", nameEn: "Hervey Bay", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 152.8235, lat: -25.2882,
+    airport: { iata: "HVB", nameZh: "赫维湾机场", nameEn: "Hervey Bay Airport", lon: 152.8817, lat: -25.3206 },
+    source: "Hervey Bay -25.2882,152.8235（en.wikipedia）；HVB 机场：en.wikipedia（乌兰甘，距市区约 9 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "geraldton", nameZh: "杰拉尔顿", nameEn: "Geraldton", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 114.6089, lat: -28.7744,
+    airport: { iata: "GET", nameZh: "杰拉尔顿机场", nameEn: "Geraldton Airport", lon: 114.7061, lat: -28.7964 },
+    source: "Geraldton -28.7744,114.6089（en.wikipedia）；GET 机场：en.wikipedia（城东约 11 公里）；ABS 2021 SUA",
+  },
+  {
+    id: "esperance", nameZh: "埃斯佩兰斯", nameEn: "Esperance", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 121.8914, lat: -33.8613,
+    airport: { iata: "EPR", nameZh: "埃斯佩兰斯机场", nameEn: "Esperance Airport", lon: 121.8250, lat: -33.6831 },
+    source: "Esperance -33.8613,121.8914（en.wikipedia）；EPR 机场：en.wikipedia（吉布森，镇西北约 20 公里，仅珀斯航线）；ABS 2021 SUA",
+  },
+  {
+    id: "tanunda", nameZh: "塔南达（巴罗萨谷）", nameEn: "Tanunda (Barossa Valley)", country: "australia", tier: "notable", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 138.9600, lat: -34.5233,
+    source: "Tanunda -34.5233,138.9600（en.wikipedia）；巴罗萨谷无机场，最近为阿德莱德 ADL（约 70 公里），条目不写机场字段；ABS 2021 Nuriootpa–Tanunda SUA",
+  },
+  {
+    id: "strahan", nameZh: "斯特拉恩", nameEn: "Strahan", country: "australia", tier: "notable", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 145.3283, lat: -42.1531,
+    airport: { iata: "SRN", nameZh: "斯特拉恩机场", nameEn: "Strahan Airport", lon: 145.2914, lat: -42.1556 },
+    source: "Strahan -42.1531,145.3283（en.wikipedia）；SRN 机场：en.wikipedia（村西约 4 公里，Par Avion 每周三班往返霍巴特）；塔斯马尼亚荒野世界遗产区门户（2021 普查约 630 人）",
+  },
+
   // ── 中国 ──────────────────────────────────────────────
   {
     id: "beijing", nameZh: "北京", nameEn: "Beijing", country: "china", tier: "capital", zone: "cn-north", admin1Zh: "北京市", admin1En: "Beijing",
@@ -1466,6 +1537,80 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 91.7730, lat: 29.2370,
     airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.9119, lat: 29.2978 },
     source: "山南市区泽当 29.2370,91.7730（海拔约 3600 米）；贡嘎机场位于山南市贡嘎县境内（zh.wikipedia），距泽当约 90 公里，与拉萨条目共用同一机场记录",
+  },
+
+  // ── 中国 Tier 2 批10（2026-09-05） ──
+  {
+    id: "nantong", nameZh: "南通", nameEn: "Nantong", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
+    lon: 120.8700, lat: 32.0300,
+    airport: { iata: "NTG", nameZh: "南通兴东国际机场", nameEn: "Nantong Xingdong Int'l", lon: 120.9742, lat: 32.0711 },
+    source: "南通市区（崇川区）32.0300,120.8700（zh.wikipedia）；NTG 机场：zh.wikipedia（市区东北约 18 公里）；人口 774.4 万（2022）",
+  },
+  {
+    id: "linyi", nameZh: "临沂", nameEn: "Linyi", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 118.3560, lat: 35.1045,
+    airport: { iata: "LYI", nameZh: "临沂启阳国际机场", nameEn: "Linyi Qiyang Int'l", lon: 118.4119, lat: 35.0492 },
+    source: "临沂市区（兰山区）35.1045,118.3560（zh.wikipedia）；LYI 机场：zh.wikipedia（市区南约 10 公里）；人口 1101.84 万（2020 普查）",
+  },
+  {
+    id: "weifang", nameZh: "潍坊", nameEn: "Weifang", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 119.1619, lat: 36.7069,
+    airport: { iata: "WEF", nameZh: "潍坊南苑机场", nameEn: "Weifang Nanyuan Airport", lon: 119.1186, lat: 36.6469 },
+    source: "潍坊市区 36.7069,119.1619（zh.wikipedia）；WEF 南苑机场：zh.wikipedia（军民合用，1996 通航，仍在运营；寿光新机场在建、未通航）；人口 941.8 万（2022）",
+  },
+  {
+    id: "changde", nameZh: "常德", nameEn: "Changde", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
+    lon: 111.6986, lat: 29.0313,
+    airport: { iata: "CGD", nameZh: "常德桃花源机场", nameEn: "Changde Taohuayuan Airport", lon: 111.6400, lat: 28.9189 },
+    source: "常德市区（武陵区）29.0313,111.6986（zh.wikipedia）；CGD 机场：zh.wikipedia（市区西南约 14 公里）；人口 521.3 万（2022）",
+  },
+  {
+    id: "ganzhou", nameZh: "赣州", nameEn: "Ganzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江西省", admin1En: "Jiangxi",
+    lon: 114.9330, lat: 25.8310,
+    airport: { iata: "KOW", nameZh: "赣州黄金机场", nameEn: "Ganzhou Huangjin Airport", lon: 114.7767, lat: 25.8517 },
+    source: "赣州市区（章贡区）25.8310,114.9330（zh.wikipedia）；KOW 机场：zh.wikipedia（市区西约 16 公里）；人口约 896 万（2025）",
+  },
+  {
+    id: "mianyang", nameZh: "绵阳", nameEn: "Mianyang", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 104.6795, lat: 31.4677,
+    airport: { iata: "MIG", nameZh: "绵阳南郊机场", nameEn: "Mianyang Nanjiao Airport", lon: 104.7400, lat: 31.4294 },
+    source: "绵阳市区（涪城区）31.4677,104.6795（zh.wikipedia）；MIG 机场：zh.wikipedia（市区南约 10 公里）；人口 492.2 万（2024）",
+  },
+  {
+    id: "luzhou", nameZh: "泸州", nameEn: "Luzhou", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 105.4419, lat: 28.8717,
+    airport: { iata: "LZO", nameZh: "泸州云龙机场", nameEn: "Luzhou Yunlong Airport", lon: 105.4692, lat: 29.0297 },
+    source: "泸州市区（江阳区）28.8717,105.4419（zh.wikipedia）；LZO 云龙机场：zh.wikipedia（2018 启用，市区北约 21 公里）；人口 425.4 万（2020 普查）",
+  },
+  {
+    id: "lishui", nameZh: "丽水", nameEn: "Lishui", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 119.9228, lat: 28.4676,
+    airport: { iata: "LIJ", nameZh: "丽水机场", nameEn: "Lishui Airport", lon: 119.8347, lat: 28.3708 },
+    source: "丽水市区（莲都区）28.4676,119.9228（zh.wikipedia）；LIJ 机场：en.wikipedia（2025-07-18 通航，市区西南约 14 公里）；人口 250.7 万（2020 普查）",
+  },
+  {
+    id: "karamay", nameZh: "克拉玛依", nameEn: "Karamay", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
+    lon: 84.8890, lat: 45.5800,
+    airport: { iata: "KRY", nameZh: "克拉玛依古海机场", nameEn: "Karamay Guhai Airport", lon: 84.9525, lat: 45.4664 },
+    source: "克拉玛依市区 45.5800,84.8890（zh.wikipedia）；KRY 机场：zh.wikipedia（市区东南约 16 公里）；人口 48.7 万（2022）",
+  },
+  {
+    id: "daqing", nameZh: "大庆", nameEn: "Daqing", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
+    lon: 125.1040, lat: 46.5890,
+    airport: { iata: "DQA", nameZh: "大庆萨尔图机场", nameEn: "Daqing Sartu Airport", lon: 125.1322, lat: 46.7464 },
+    source: "大庆市区（萨尔图区）46.5890,125.1040（zh.wikipedia）；DQA 机场：zh.wikipedia（市区约 25 公里）；人口 278.2 万（2020 普查）",
+  },
+  {
+    id: "baishan", nameZh: "白山", nameEn: "Baishan", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "吉林省", admin1En: "Jilin",
+    lon: 126.4231, lat: 41.9331,
+    airport: { iata: "NBS", nameZh: "长白山机场", nameEn: "Changbaishan Airport", lon: 127.5489, lat: 42.0881 },
+    source: "白山市区（浑江区）41.9331,126.4231（zh.wikipedia 白山市_(吉林省)）；NBS 长白山机场在辖内抚松县松江河镇（zh.wikipedia，距西坡约 18 公里、距市区约 150 公里），是辖区内唯一民用机场；人口 90.62 万（2022）",
+  },
+  {
+    id: "ngari", nameZh: "阿里", nameEn: "Ngari (Ali)", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "西藏自治区", admin1En: "Tibet",
+    lon: 80.0972, lat: 32.5042,
+    airport: { iata: "NGQ", nameZh: "阿里昆莎机场", nameEn: "Ngari Gunsa Airport", lon: 80.0443, lat: 32.1142 },
+    source: "阿里地区行署所在地狮泉河镇 32.5042,80.0972（zh.wikipedia，海拔约 4300 米）；NGQ 昆莎机场：zh.wikipedia（海拔 4274 米，距狮泉河约 45 公里）；人口 12.3 万（2020 普查）",
   },
 
   // ── 日本 ──────────────────────────────────────────────
