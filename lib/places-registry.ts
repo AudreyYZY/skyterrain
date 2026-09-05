@@ -1700,6 +1700,55 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "长崎站一带 32.7503,129.8737；NGS 机场：公开资料",
   },
 
+  // ── 日本 批2（2026-09-05）──
+  {
+    id: "kobe", nameZh: "神户", nameEn: "Kobe", country: "japan", tier: "major", zone: "jp-kansai", admin1Zh: "兵库县", admin1En: "Hyōgo Prefecture",
+    lon: 135.1956, lat: 34.6900,
+    airport: { iata: "UKB", nameZh: "神户机场", nameEn: "Kobe Airport", lon: 135.2239, lat: 34.6328 },
+    source: "神户市役所一带 34.6900,135.1956（en.wikipedia）；UKB 机场：en.wikipedia（港岛南侧人工岛，港湾线到三宫 18 分钟；2025-04 起有国际航班）；人口约 152 万（2021）",
+  },
+  {
+    id: "himeji", nameZh: "姬路", nameEn: "Himeji", country: "japan", tier: "notable", zone: "jp-kansai", admin1Zh: "兵库县", admin1En: "Hyōgo Prefecture",
+    lon: 134.6853, lat: 34.8153,
+    airport: { iata: "UKB", nameZh: "神户机场（经神户转乘）", nameEn: "Kobe Airport (via Kobe)", lon: 135.2239, lat: 34.6328 },
+    source: "姬路 34.8153,134.6853（en.wikipedia）；无自有机场，最近为神户 UKB（约 66 公里）、关西 KIX（约 127 公里），与神户条目共用机场记录；人口 518,311（2025）",
+  },
+  {
+    id: "takayama", nameZh: "高山", nameEn: "Takayama", country: "japan", tier: "notable", zone: "jp-chubu", admin1Zh: "岐阜县", admin1En: "Gifu Prefecture",
+    lon: 137.2522, lat: 36.1460,
+    source: "高山 36.1460,137.2522（en.wikipedia）；无机场，最近为富山（约 80 公里）、中部国际 NGO（约 150 公里），条目不写机场字段；人口 81,968（2025-09）",
+  },
+  {
+    id: "matsumoto", nameZh: "松本", nameEn: "Matsumoto", country: "japan", tier: "notable", zone: "jp-chubu", admin1Zh: "长野县", admin1En: "Nagano Prefecture",
+    lon: 137.9720, lat: 36.2380,
+    airport: { iata: "MMJ", nameZh: "松本机场（信州松本）", nameEn: "Matsumoto Airport", lon: 137.9228, lat: 36.1667 },
+    source: "松本 36.2380,137.9720（en.wikipedia，海拔 610 米）；MMJ 机场：en.wikipedia（市中心西南约 9 公里，海拔 657 米为日本最高民用机场，仅札幌/福冈/神户等国内航线）；人口 235,972（2025-06）",
+  },
+  {
+    id: "hakodate", nameZh: "函馆", nameEn: "Hakodate", country: "japan", tier: "notable", zone: "jp-hokkaido", admin1Zh: "北海道", admin1En: "Hokkaido",
+    lon: 140.7289, lat: 41.7686,
+    airport: { iata: "HKD", nameZh: "函馆机场", nameEn: "Hakodate Airport", lon: 140.8219, lat: 41.7700 },
+    source: "函馆 41.7686,140.7289（en.wikipedia）；HKD 机场：en.wikipedia（函馆站东约 8 公里）；人口 239,813（2024-01）",
+  },
+  {
+    id: "kumamoto", nameZh: "熊本", nameEn: "Kumamoto", country: "japan", tier: "notable", zone: "jp-kyushu", admin1Zh: "熊本县", admin1En: "Kumamoto Prefecture",
+    lon: 130.7078, lat: 32.8031,
+    airport: { iata: "KMJ", nameZh: "熊本机场（阿苏熊本）", nameEn: "Kumamoto Airport", lon: 130.8553, lat: 32.8372 },
+    source: "熊本 32.8031,130.7078（en.wikipedia）；KMJ 机场：en.wikipedia（益城町，市中心东约 20 公里）；人口 737,543（2025-01）",
+  },
+  {
+    id: "kagoshima", nameZh: "鹿儿岛", nameEn: "Kagoshima", country: "japan", tier: "notable", zone: "jp-kyushu", admin1Zh: "鹿儿岛县", admin1En: "Kagoshima Prefecture",
+    lon: 130.5572, lat: 31.5969,
+    airport: { iata: "KOJ", nameZh: "鹿儿岛机场", nameEn: "Kagoshima Airport", lon: 130.7169, lat: 31.8033 },
+    source: "鹿儿岛 31.5969,130.5572（en.wikipedia）；KOJ 机场：en.wikipedia（雾岛市，鹿儿岛中央站东北约 30 公里）；人口 583,966（2024-07）",
+  },
+  {
+    id: "matsuyama", nameZh: "松山", nameEn: "Matsuyama", country: "japan", tier: "notable", zone: "jp-shikoku", admin1Zh: "爱媛县", admin1En: "Ehime Prefecture",
+    lon: 132.7656, lat: 33.8392,
+    airport: { iata: "MYJ", nameZh: "松山机场", nameEn: "Matsuyama Airport", lon: 132.6997, lat: 33.8272 },
+    source: "松山 33.8392,132.7656（en.wikipedia）；MYJ 机场：en.wikipedia（市中心西南约 6 公里）；人口约 49.4 万（2026），四国最大城市",
+  },
+
   // ── 新西兰 ──────────────────────────────────────────────
   {
     id: "auckland", nameZh: "奥克兰", nameEn: "Auckland", country: "new-zealand", tier: "major", zone: "nz-north", admin1Zh: "奥克兰大区", admin1En: "Auckland Region",
@@ -1966,6 +2015,64 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "温哥华市中心 49.2827,-123.1207；YVR 机场：公开资料",
   },
 
+  // ── 加拿大 批2（2026-09-05）──
+  {
+    id: "victoria", nameZh: "维多利亚", nameEn: "Victoria", country: "canada", tier: "notable", zone: "ca-west-coast", admin1Zh: "不列颠哥伦比亚省", admin1En: "British Columbia",
+    lon: -123.3647, lat: 48.4283,
+    airport: { iata: "YYJ", nameZh: "维多利亚国际机场", nameEn: "Victoria Int'l", lon: -123.4258, lat: 48.6472 },
+    source: "Victoria 48.4283,-123.3647（en.wikipedia）；YYJ 机场：en.wikipedia（市区北约 25 公里）；人口 91,867、都会区 397,237（2021 普查）",
+  },
+  {
+    id: "whistler", nameZh: "惠斯勒", nameEn: "Whistler", country: "canada", tier: "notable", zone: "ca-west-coast", admin1Zh: "不列颠哥伦比亚省", admin1En: "British Columbia",
+    lon: -122.9542, lat: 50.1167,
+    source: "Whistler 50.1167,-122.9542（en.wikipedia，海拔 670 米）；无定期航班，最近为温哥华 YVR（约 125 公里），条目不写机场字段；常住人口 13,982（2021 普查）",
+  },
+  {
+    id: "banff", nameZh: "班夫", nameEn: "Banff", country: "canada", tier: "notable", zone: "ca-prairies", admin1Zh: "阿尔伯塔省", admin1En: "Alberta",
+    lon: -115.5736, lat: 51.1778,
+    source: "Banff 51.1778,-115.5736（en.wikipedia，海拔 1,400 米）；无机场，最近为卡尔加里 YYC（约 126 公里），条目不写机场字段；人口 8,305（2021 普查）",
+  },
+  {
+    id: "jasper", nameZh: "贾斯珀", nameEn: "Jasper", country: "canada", tier: "notable", zone: "ca-prairies", admin1Zh: "阿尔伯塔省", admin1En: "Alberta",
+    lon: -118.0822, lat: 52.8731,
+    source: "Jasper 52.8731,-118.0822（en.wikipedia，海拔 1,060 米）；无机场，最近为埃德蒙顿 YEG（约 362 公里），条目不写机场字段，VIA 铁路经停；人口 4,738（2021 普查）；2024-07 山火烧毁约三分之一建筑，按实写入",
+  },
+  {
+    id: "regina", nameZh: "里贾纳", nameEn: "Regina", country: "canada", tier: "notable", zone: "ca-prairies", admin1Zh: "萨斯喀彻温省", admin1En: "Saskatchewan",
+    lon: -104.6067, lat: 50.4547,
+    airport: { iata: "YQR", nameZh: "里贾纳国际机场", nameEn: "Regina Int'l", lon: -104.6661, lat: 50.4322 },
+    source: "Regina 50.4547,-104.6067（en.wikipedia）；YQR 机场：en.wikipedia（市中心西南约 7 公里）；人口 226,404（2021 普查）",
+  },
+  {
+    id: "charlottetown", nameZh: "夏洛特敦", nameEn: "Charlottetown", country: "canada", tier: "notable", zone: "ca-atlantic", admin1Zh: "爱德华王子岛省", admin1En: "Prince Edward Island",
+    lon: -63.1267, lat: 46.2353,
+    airport: { iata: "YYG", nameZh: "夏洛特敦机场", nameEn: "Charlottetown Airport", lon: -63.1286, lat: 46.2886 },
+    source: "Charlottetown 46.2353,-63.1267（en.wikipedia）；YYG 机场：en.wikipedia（市区北约 6 公里）；人口 38,809（2021 普查）",
+  },
+  {
+    id: "niagara-falls", nameZh: "尼亚加拉瀑布城", nameEn: "Niagara Falls", country: "canada", tier: "notable", zone: "ca-central", admin1Zh: "安大略省", admin1En: "Ontario",
+    lon: -79.1067, lat: 43.0600,
+    source: "Niagara Falls, Ontario 43.0600,-79.1067（en.wikipedia）；无机场，最近为多伦多皮尔逊 YYZ（约 130 公里），条目不写机场字段，GO 列车可达；人口 94,415（2021 普查）",
+  },
+  {
+    id: "fredericton", nameZh: "弗雷德里克顿", nameEn: "Fredericton", country: "canada", tier: "notable", zone: "ca-atlantic", admin1Zh: "新不伦瑞克省", admin1En: "New Brunswick",
+    lon: -66.6667, lat: 45.9453,
+    airport: { iata: "YFC", nameZh: "弗雷德里克顿国际机场", nameEn: "Fredericton Int'l", lon: -66.5279, lat: 45.8721 },
+    source: "Fredericton 45.9453,-66.6667（en.wikipedia）；YFC 机场：en.wikipedia（市区东南约 15 公里）；人口 63,116（2021 普查）",
+  },
+  {
+    id: "yellowknife", nameZh: "黄刀镇", nameEn: "Yellowknife", country: "canada", tier: "notable", zone: "ca-north", admin1Zh: "西北地区", admin1En: "Northwest Territories",
+    lon: -114.3700, lat: 62.4536,
+    airport: { iata: "YZF", nameZh: "黄刀镇机场", nameEn: "Yellowknife Airport", lon: -114.4403, lat: 62.4628 },
+    source: "Yellowknife 62.4536,-114.3700（en.wikipedia）；YZF 机场：en.wikipedia（市区约 5 公里）；人口 20,340（2021 普查）",
+  },
+  {
+    id: "whitehorse", nameZh: "白马市", nameEn: "Whitehorse", country: "canada", tier: "notable", zone: "ca-north", admin1Zh: "育空地区", admin1En: "Yukon",
+    lon: -135.0561, lat: 60.7242,
+    airport: { iata: "YXY", nameZh: "埃里克·尼尔森白马国际机场", nameEn: "Erik Nielsen Whitehorse Int'l", lon: -135.0686, lat: 60.7094 },
+    source: "Whitehorse 60.7242,-135.0561（en.wikipedia）；YXY 机场：en.wikipedia（在市区西侧台地上，距市中心约 3 公里）；人口 28,201（2021 普查）",
+  },
+
   // ── 英国 ──
   {
     id: "london", nameZh: "伦敦", nameEn: "London", country: "uk", tier: "capital", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
@@ -2037,6 +2144,50 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -5.9301, lat: 54.5973,
     airport: { iata: "BFS", nameZh: "贝尔法斯特国际机场", nameEn: "Belfast Int'l", lon: -6.2158, lat: 54.6575 },
     source: "贝尔法斯特市中心 54.5973,-5.9301；BFS 机场：公开资料",
+  },
+
+  // ── 英国 批2（2026-09-05）──
+  {
+    id: "bath", nameZh: "巴斯", nameEn: "Bath", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: -2.3597, lat: 51.3814,
+    airport: { iata: "BRS", nameZh: "布里斯托尔机场（经布里斯托尔转乘）", nameEn: "Bristol Airport (via Bristol)", lon: -2.7191, lat: 51.3827 },
+    source: "Bath 51.3814,-2.3597（en.wikipedia）；无自有机场，与布里斯托尔条目共用 BRS（约 25 公里）；人口 94,080（2021 普查）",
+  },
+  {
+    id: "oxford", nameZh: "牛津", nameEn: "Oxford", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: -1.2578, lat: 51.7519,
+    source: "Oxford 51.7519,-1.2578（en.wikipedia）；无机场，最近为伦敦希思罗（约 80 公里），条目不写机场字段，铁路到帕丁顿约 1 小时；人口 162,040（2021 普查）",
+  },
+  {
+    id: "cambridge", nameZh: "剑桥", nameEn: "Cambridge", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: 0.1225, lat: 52.2050,
+    source: "Cambridge 52.2050,0.1225（en.wikipedia）；无机场，最近为伦敦斯坦斯特德（约 48 公里），条目不写机场字段，铁路到伦敦约 50 分钟；人口 145,700（2021 普查）",
+  },
+  {
+    id: "brighton", nameZh: "布莱顿", nameEn: "Brighton", country: "uk", tier: "notable", zone: "uk-england-south", admin1Zh: "英格兰", admin1En: "England",
+    lon: -0.1528, lat: 50.8278,
+    source: "Brighton and Hove 50.8278,-0.1528（en.wikipedia）；无机场，最近为盖特威克（约 45 公里），条目不写机场字段，铁路到伦敦维多利亚约 1 小时；人口 283,870（2021 普查）",
+  },
+  {
+    id: "newcastle-upon-tyne", nameZh: "泰恩河畔纽卡斯尔", nameEn: "Newcastle upon Tyne", country: "uk", tier: "notable", zone: "uk-england-north", admin1Zh: "英格兰", admin1En: "England",
+    lon: -1.6131, lat: 54.9738,
+    airport: { iata: "NCL", nameZh: "纽卡斯尔国际机场", nameEn: "Newcastle Int'l", lon: -1.6897, lat: 55.0381 },
+    source: "Newcastle upon Tyne 54.9738,-1.6131（en.wikipedia）；NCL 机场：en.wikipedia（市中心西北约 12 公里，地铁直达）；人口 320,605（2021 普查）",
+  },
+  {
+    id: "stirling", nameZh: "斯特灵", nameEn: "Stirling", country: "uk", tier: "notable", zone: "uk-scotland", admin1Zh: "苏格兰", admin1En: "Scotland",
+    lon: -3.9369, lat: 56.1166,
+    source: "Stirling 56.1166,-3.9369（en.wikipedia）；无机场，最近为格拉斯哥（约 42 公里）、爱丁堡（约 60 公里），条目不写机场字段；人口 38,587（2021）",
+  },
+  {
+    id: "portree", nameZh: "波特里（斯凯岛）", nameEn: "Portree (Isle of Skye)", country: "uk", tier: "notable", zone: "uk-scotland", admin1Zh: "苏格兰", admin1En: "Scotland",
+    lon: -6.1920, lat: 57.4120,
+    source: "Portree 57.4120,-6.1920（en.wikipedia）；无机场，最近为因弗内斯（约 119 公里），条目不写机场字段，经斯凯桥公路进岛；人口 2,281（2022 普查）",
+  },
+  {
+    id: "windermere", nameZh: "温德米尔（湖区）", nameEn: "Windermere (Lake District)", country: "uk", tier: "notable", zone: "uk-england-north", admin1Zh: "英格兰", admin1En: "England",
+    lon: -2.9070, lat: 54.3760,
+    source: "Windermere town 54.3760,-2.9070（en.wikipedia）；无机场，最近为曼彻斯特（约 130 公里），条目不写机场字段，支线铁路自奥克森霍姆接西海岸干线；人口 4,826（2021）",
   },
 
   // ── 冰岛 ──
