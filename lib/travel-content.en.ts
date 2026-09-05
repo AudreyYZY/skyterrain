@@ -3802,7 +3802,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "Ireland can be divided roughly into: Leinster (Dublin, the eastern plain and capital region), Munster (Cork, Limerick and Kerry, the southern and south-western coast and mountains), Connacht (Galway, the western coast and Gaeltacht areas), and the Republic's portion of Ulster (Donegal, the north-west coast). The centre of the country is dominated by low-lying land and peat bog, with most upland concentrated around the coastal margins.",
     gettingAround:
-      "Dublin Airport is the main international gateway; rail and long-distance coach networks cover the main towns, with intercity journeys typically taking 1–3 hours. Scheduled domestic flights are very limited — currently only two government-subsidised routes, Dublin–Kerry and Dublin–Donegal. Driving is on the left, and rural roads are often narrow. The climate is temperate maritime, mild and rainy year-round with changeable weather, so it's worth carrying rain gear. Restaurant bills typically don't include a tip; around 10% or rounding up is customary. The voltage is 230V with UK-style three-pin plugs.",
+      "Dublin Airport is the main international gateway; rail and long-distance coach networks cover the main towns, with intercity journeys typically taking 1–3 hours. Scheduled domestic flights are very limited — essentially just Dublin–Donegal (a government-subsidised PSO route) and Dublin–Kerry (a commercial Ryanair route, unsubsidised since 2021). Driving is on the left, and rural roads are often narrow. The climate is temperate maritime, mild and rainy year-round with changeable weather, so it's worth carrying rain gear. Restaurant bills typically don't include a tip; around 10% or rounding up is customary. The voltage is 230V with UK-style three-pin plugs.",
     culture:
       "The official languages are Irish (Gaelic) and English; English is used in daily life throughout most of the country, while parts of the western coast (the Gaeltacht) still use Irish as the primary spoken language. The Irish are known for their conversational warmth, humour and hospitality, and pub culture is a central part of social life. Traditional music, dance and Celtic festivals such as St Patrick's Day are widely celebrated across the country.",
     seeAndDo:
@@ -3858,7 +3858,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The compact town centre sits right beside Killarney National Park and its lakes to the south-west, with MacGillycuddy's Reeks rising as a backdrop on the park's western side, forming a classic mountain-and-lake setting.",
     gettingAround:
-      "Kerry Airport is about 15 km from town, reached by taxi; there's also a direct train from Dublin (about 3.5 hours). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
+      "Kerry Airport is about 15 km from town, reached by taxi; there's also a train from Dublin (about 3.5 hours, most services with one change at Mallow). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
     culture:
       "The official languages are Irish and English, with English used day to day. Killarney has been a fashionable European resort destination since the 18th century, and tourism remains central to the local economy. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -3876,17 +3876,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official languages are Irish and English; Dingle sits in the Gaeltacht, and many local signs and place names appear in Irish. The town is known for its seafood and traditional-music pubs. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
-      "The Slea Head viewpoint; early Christian remains such as the Gallarus Oratory beehive huts; Dingle's resident dolphin-watching tours; the Slea Head loop drive along the peninsula's coast.",
+      "The Slea Head viewpoint; early Christian remains such as the Gallarus Oratory beehive huts; whale- and dolphin-watching boat trips from Dingle Harbour (Fungie, the bottlenose dolphin resident in the harbour since 1983, has not been seen since October 2020, and a bronze statue of him stands on the pier); the Slea Head loop drive along the peninsula's coast.",
     whenAndTips:
       "May–September is the most pleasant season; the peninsula's coastal roads are narrow with many tight bends, so drive carefully. The town's traditional-music pubs in the evening are a great way to experience local culture.",
   },
   waterford: {
     identity:
-      "Waterford is Ireland's oldest city, founded by Vikings in 914, with a population of about 56,000, sitting at the mouth of the River Suir in south-east Ireland and known for its crystal craftsmanship.",
+      "Waterford is Ireland's oldest city, founded by Vikings in 914, with a population of about 60,000, sitting at the mouth of the River Suir in south-east Ireland and known for its crystal craftsmanship.",
     layout:
       "The old town is built along the north bank of the Suir, with the Viking Triangle preserving a medieval street layout; the suburbs extend out along the river mouth toward Waterford Harbour.",
     gettingAround:
-      "Waterford Airport has very limited scheduled service; most travellers connect via Cork Airport (about 110 km) or Dublin Airport (about 165 km), or take the train to and from Dublin (about 2.5 hours). The old town is walkable. The climate is temperate maritime.",
+      "Waterford Airport currently has no scheduled passenger flights; most travellers connect via Cork Airport (about 110 km) or Dublin Airport (about 165 km), or take the train to and from Dublin (about 2.5 hours). The old town is walkable. The climate is temperate maritime.",
     culture:
       "The official languages are Irish and English, with English used day to day. Waterford Crystal is one of Ireland's signature craft brands, and the city's history is closely tied to its Viking and Norman settlement traditions. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -3896,13 +3896,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   limerick: {
     identity:
-      "Limerick is Ireland's third-largest city, with a population of about 94,000, sitting at the mouth of the River Shannon and serving as an important city and gateway in Munster, west-central Ireland.",
+      "Limerick is Ireland's third-largest city, with a population of about 100,000, sitting at the mouth of the River Shannon and serving as an important city and gateway in Munster, west-central Ireland.",
     layout:
       "The old town is built along the Shannon, with King John's Castle guarding a key crossing point; the city is divided into historic quarters including Irishtown, Englishtown and Newtown Pery.",
     gettingAround:
       "Shannon Airport is about 25 km from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is also the namesake origin of the five-line comic verse form, the \"limerick.\" Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is generally taken to be the namesake of the five-line comic verse form, the \"limerick,\" though the exact origin of the name remains unsettled. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
       "King John's Castle; St Mary's Cathedral, Limerick; a walk along the Shannon. Day trips to medieval sites along the Shannon such as Bunratty Castle.",
     whenAndTips:
@@ -3926,7 +3926,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Westport is a small town in County Mayo in western Ireland, with a population of about 6,000, the traditional gateway to Croagh Patrick and Achill Island, and often considered one of Ireland's most liveable small towns.",
     layout:
-      "The town was built to an 18th-century plan by architect James Wyatt, with a canal and tree-lined boulevard running through the centre — one of the few planned towns in Ireland.",
+      "The town was built to an 18th-century plan (generally attributed to the English architect James Wyatt, around 1780), with a canal and tree-lined boulevard running through the centre — one of the few planned towns in Ireland.",
     gettingAround:
       "Ireland West Airport Knock is about 50 km from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
     culture:
