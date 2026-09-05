@@ -514,6 +514,94 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "库伯佩迪 -29.0139,134.7544；CPD 机场：公开资料",
   },
 
+  // ── 澳大利亚 批2（2026-09-05）：各州/领地按 ABS 主要城区补充 ──
+  {
+    id: "wollongong", nameZh: "卧龙岗", nameEn: "Wollongong", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 150.8939, lat: -34.4272,
+    source: "Wollongong -34.4272,150.8939（Wikipedia）；本地 Shellharbour Airport（WOL）自 2026-05 起无定期航班，就近悉尼机场约 74 公里，条目不写机场字段",
+  },
+  {
+    id: "byron-bay", nameZh: "拜伦湾", nameEn: "Byron Bay", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 153.6150, lat: -28.6431,
+    airport: { iata: "BNK", nameZh: "巴利纳拜伦门户机场", nameEn: "Ballina Byron Gateway", lon: 153.5617, lat: -28.8333 },
+    source: "Byron Bay -28.6431,153.6150（Wikipedia）；BNK 机场在巴利纳，距拜伦湾约 35 公里（Wikipedia）",
+  },
+  {
+    id: "coffs-harbour", nameZh: "科夫斯港", nameEn: "Coffs Harbour", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 153.1189, lat: -30.3022,
+    airport: { iata: "CFS", nameZh: "科夫斯港机场", nameEn: "Coffs Harbour Airport", lon: 153.1167, lat: -30.3200 },
+    source: "Coffs Harbour -30.3022,153.1189；CFS 机场：Wikipedia（市区南约 3 公里）",
+  },
+  {
+    id: "katoomba", nameZh: "卡通巴（蓝山）", nameEn: "Katoomba (Blue Mountains)", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 150.3167, lat: -33.7167,
+    source: "Katoomba -33.7167,150.3167（Wikipedia，海拔 1017 米）；无机场，悉尼机场约 100 公里 + 蓝山线火车约 2 小时，条目不写机场字段",
+  },
+  {
+    id: "ballarat", nameZh: "巴拉瑞特", nameEn: "Ballarat", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 143.8475, lat: -37.5608,
+    source: "Ballarat -37.5608,143.8475（Wikipedia）；无商业机场，墨尔本机场约 1.5 小时 + V/Line 火车，条目不写机场字段",
+  },
+  {
+    id: "bendigo", nameZh: "本迪戈", nameEn: "Bendigo", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 144.2667, lat: -36.7500,
+    source: "Bendigo -36.7500,144.2667（Wikipedia）；本迪戈机场无定期客运航班，墨尔本机场约 1.5–2 小时 + V/Line 火车，条目不写机场字段",
+  },
+  {
+    id: "sunshine-coast", nameZh: "阳光海岸", nameEn: "Sunshine Coast", country: "australia", tier: "major", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 153.0933, lat: -26.6542,
+    airport: { iata: "MCY", nameZh: "阳光海岸机场", nameEn: "Sunshine Coast Airport", lon: 153.0917, lat: -26.6033 },
+    source: "Sunshine Coast（Maroochydore 中心）-26.6542,153.0933；MCY 机场：Wikipedia（Marcoola，Maroochydore 以北约 10 公里）",
+  },
+  {
+    id: "townsville", nameZh: "汤斯维尔", nameEn: "Townsville", country: "australia", tier: "major", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 146.8167, lat: -19.2500,
+    airport: { iata: "TSV", nameZh: "汤斯维尔机场", nameEn: "Townsville Airport", lon: 146.7650, lat: -19.2533 },
+    source: "Townsville -19.2500,146.8167；TSV 机场：Wikipedia（市中心以西约 4 公里，与空军基地共用）",
+  },
+  {
+    id: "toowoomba", nameZh: "图文巴", nameEn: "Toowoomba", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 151.9500, lat: -27.5667,
+    airport: { iata: "WTB", nameZh: "图文巴韦尔坎普机场", nameEn: "Toowoomba Wellcamp Airport", lon: 151.7933, lat: -27.5583 },
+    source: "Toowoomba -27.5667,151.9500（海拔约 691 米）；WTB 机场：Wikipedia（市中心以西约 16 公里，2014-11 启用）",
+  },
+  {
+    id: "airlie-beach", nameZh: "埃尔利海滩", nameEn: "Airlie Beach", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 148.7150, lat: -20.2744,
+    airport: { iata: "PPP", nameZh: "圣灵海岸机场", nameEn: "Whitsunday Coast Airport", lon: 148.5517, lat: -20.4950 },
+    source: "Airlie Beach -20.2744,148.7150；PPP 机场：Wikipedia（Proserpine 以南约 14 公里，距小镇约 40 公里）",
+  },
+  {
+    id: "albany", nameZh: "奥尔巴尼", nameEn: "Albany", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 117.8814, lat: -35.0228,
+    airport: { iata: "ALH", nameZh: "奥尔巴尼机场", nameEn: "Albany Airport", lon: 117.8089, lat: -34.9433 },
+    source: "Albany -35.0228,117.8814；ALH 机场：Wikipedia（市区西北约 11 公里，仅珀斯航线）",
+  },
+  {
+    id: "busselton", nameZh: "巴瑟尔顿", nameEn: "Busselton", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 115.3458, lat: -33.6478,
+    airport: { iata: "BQB", nameZh: "巴瑟尔顿玛格丽特河机场", nameEn: "Busselton Margaret River Airport", lon: 115.4003, lat: -33.6872 },
+    source: "Busselton -33.6478,115.3458；BQB 机场：Wikipedia（镇中心约 6.5 公里；2026 年悉尼航线暂停至 9 月）",
+  },
+  {
+    id: "mount-gambier", nameZh: "甘比尔山", nameEn: "Mount Gambier", country: "australia", tier: "notable", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 140.7828, lat: -37.8294,
+    airport: { iata: "MGB", nameZh: "甘比尔山机场", nameEn: "Mount Gambier Airport", lon: 140.7836, lat: -37.7456 },
+    source: "Mount Gambier -37.8294,140.7828；MGB 机场：Wikipedia（市区北约 9 公里）",
+  },
+  {
+    id: "devonport", nameZh: "德文波特", nameEn: "Devonport", country: "australia", tier: "notable", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 146.3503, lat: -41.1800,
+    airport: { iata: "DPO", nameZh: "德文波特机场", nameEn: "Devonport Airport", lon: 146.4303, lat: -41.1697 },
+    source: "Devonport -41.1800,146.3503；DPO 机场：Wikipedia（市区东约 10 公里，仅墨尔本航线）",
+  },
+  {
+    id: "yulara", nameZh: "尤拉拉（乌鲁鲁）", nameEn: "Yulara (Uluru)", country: "australia", tier: "notable", zone: "au-nt", admin1Zh: "北领地", admin1En: "Northern Territory",
+    lon: 130.9889, lat: -25.2406,
+    airport: { iata: "AYQ", nameZh: "艾尔斯岩机场", nameEn: "Ayers Rock Airport", lon: 130.9756, lat: -25.1861 },
+    source: "Yulara -25.2406,130.9889；AYQ 机场：Wikipedia（镇北约 6 公里）；乌鲁鲁 -25.3444,131.0369",
+  },
+
   // ── 中国 ──────────────────────────────────────────────
   {
     id: "beijing", nameZh: "北京", nameEn: "Beijing", country: "china", tier: "capital", zone: "cn-north", admin1Zh: "北京市", admin1En: "Beijing",
@@ -1168,6 +1256,75 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 86.1750, lat: 41.7250,
     airport: { iata: "KRL", nameZh: "库尔勒梨城机场", nameEn: "Korla Licheng Airport", lon: 86.1290, lat: 41.6980 },
     source: "库尔勒市区（巴音郭楞州府驻地）41.7250,86.1750；KRL 机场：百度百科/Wikipedia（距市中心约 17 公里，4D 军民合用）",
+  },
+
+  // ── 中国 Tier 2 批8（2026-09-05）──
+  {
+    id: "xichang", nameZh: "西昌", nameEn: "Xichang", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 102.2706, lat: 27.8983,
+    airport: { iata: "XIC", nameZh: "西昌青山机场", nameEn: "Xichang Qingshan Airport", lon: 102.1858, lat: 27.9792 },
+    source: "西昌市区 27.8983,102.2706（zh.wikipedia）；XIC 机场：zh.wikipedia（市区北约 13 公里，海拔 1562 米）",
+  },
+  {
+    id: "arxan", nameZh: "阿尔山", nameEn: "Arxan", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
+    lon: 119.9431, lat: 47.1781,
+    airport: { iata: "YIE", nameZh: "阿尔山伊尔施机场", nameEn: "Arxan Yi'ershi Airport", lon: 119.9119, lat: 47.3106 },
+    source: "阿尔山市区 47.1781,119.9431（zh.wikipedia）；YIE 机场：zh.wikipedia（市区北约 16.5 公里，2011 通航）",
+  },
+  {
+    id: "zhangzhou", nameZh: "漳州", nameEn: "Zhangzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "福建省", admin1En: "Fujian",
+    lon: 117.6470, lat: 24.5130,
+    source: "漳州市区（芗城区古城一带）24.5130,117.6470；无民用机场，就近厦门高崎国际机场（XMN，约 60 公里）+ 漳州站高铁，条目不写机场字段",
+  },
+  {
+    id: "altay", nameZh: "阿勒泰", nameEn: "Altay", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
+    lon: 88.1330, lat: 47.8447,
+    airport: { iata: "AAT", nameZh: "阿勒泰雪都机场", nameEn: "Altay Xuedu Airport", lon: 88.0844, lat: 47.7504 },
+    source: "阿勒泰市区 47.8447,88.1330；AAT 机场：zh.wikipedia（2025 年旅客吞吐量破百万）；喀纳斯另有 KJI 机场（夏季）",
+  },
+  {
+    id: "baoding", nameZh: "保定", nameEn: "Baoding", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "河北省", admin1En: "Hebei",
+    lon: 115.4644, lat: 38.8744,
+    source: "保定市区 38.8744,115.4644（zh.wikipedia）；无民用机场，就近北京大兴（约 110 公里）/ 石家庄正定（约 120 公里）+ 保定东站（京广高铁），条目不写机场字段",
+  },
+  {
+    id: "foshan", nameZh: "佛山", nameEn: "Foshan", country: "china", tier: "major", zone: "cn-south", admin1Zh: "广东省", admin1En: "Guangdong",
+    lon: 113.1208, lat: 23.0219,
+    airport: { iata: "FUO", nameZh: "佛山沙堤机场", nameEn: "Foshan Shadi Airport", lon: 113.0708, lat: 23.0825 },
+    source: "佛山市区（禅城祖庙一带）23.0219,113.1208；FUO 机场：zh.wikipedia（军民合用，2024-12 新航站楼启用，中国联合航空运营 18 条航线）；珠三角枢纽机场在高明区建设中",
+  },
+  {
+    id: "zhaoqing", nameZh: "肇庆", nameEn: "Zhaoqing", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广东省", admin1En: "Guangdong",
+    lon: 112.4650, lat: 23.0470,
+    source: "肇庆市区（端州区）23.0470,112.4650（zh.wikipedia）；无民用机场，就近广州白云（约 120 公里）+ 肇庆东站/肇庆站，条目不写机场字段",
+  },
+  {
+    id: "anqing", nameZh: "安庆", nameEn: "Anqing", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "安徽省", admin1En: "Anhui",
+    lon: 117.0630, lat: 30.5430,
+    airport: { iata: "AQG", nameZh: "安庆天柱山机场", nameEn: "Anqing Tianzhushan Airport", lon: 117.0503, lat: 30.5822 },
+    source: "安庆市区（迎江区）30.5430,117.0630；AQG 机场：zh.wikipedia（军民合用，1993 启用）",
+  },
+  {
+    id: "qiqihar", nameZh: "齐齐哈尔", nameEn: "Qiqihar", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
+    lon: 123.9185, lat: 47.3536,
+    airport: { iata: "NDG", nameZh: "齐齐哈尔三家子机场", nameEn: "Qiqihar Sanjiazi Airport", lon: 123.9181, lat: 47.2397 },
+    source: "齐齐哈尔市区 47.3536,123.9185（zh.wikipedia）；NDG 机场：zh.wikipedia",
+  },
+  {
+    id: "wanning", nameZh: "万宁", nameEn: "Wanning", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "海南省", admin1En: "Hainan",
+    lon: 110.3890, lat: 18.7950,
+    source: "万宁市区（万城镇）18.7950,110.3890；无机场，就近琼海博鳌（BAR，约 60 公里）/ 三亚凤凰 / 海口美兰 + 环岛高铁万宁站，条目不写机场字段",
+  },
+  {
+    id: "xuzhou", nameZh: "徐州", nameEn: "Xuzhou", country: "china", tier: "major", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
+    lon: 117.2830, lat: 34.2050,
+    airport: { iata: "XUZ", nameZh: "徐州观音国际机场", nameEn: "Xuzhou Guanyin Int'l", lon: 117.5553, lat: 34.0592 },
+    source: "徐州市区 34.2050,117.2830（zh.wikipedia）；XUZ 机场：zh.wikipedia（睢宁县，距市区约 30 公里）",
+  },
+  {
+    id: "danzhou", nameZh: "儋州", nameEn: "Danzhou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "海南省", admin1En: "Hainan",
+    lon: 109.5800, lat: 19.5210,
+    source: "儋州市区（那大镇）19.5210,109.5800；无机场，就近海口美兰（约 150 公里）+ 环岛高铁白马井站，条目不写机场字段",
   },
 
   // ── 日本 ──────────────────────────────────────────────
