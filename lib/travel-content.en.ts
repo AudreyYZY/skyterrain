@@ -5167,7 +5167,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   hanoi: {
     identity:
-      "Hanoi is Vietnam's capital, with a population of about 8.5 million, on the right bank of the Red River; the country's political and cultural centre, with a history as a capital dating back to the 11th century.",
+      "Hanoi's founding is tied to the vision that gave it its old name — in 1010, Ly Thai To, the first ruler of the Ly dynasty, moved the capital from the defensible but remote Hoa Lu (near today's Ninh Binh) to this site, and according to legend saw a dragon rising from the Red River as he arrived, naming the new capital Thăng Long, \"Ascending Dragon\"; it remained Vietnam's political centre for most of the nearly eight centuries that followed. Hanoi is Vietnam's capital, with a population of about 8.5 million, on the right bank of the Red River, and the country's political and cultural centre.",
     layout:
       "The Old Quarter preserves its traditional 36-street layout and French colonial architecture, with Hoan Kiem Lake as the city's geographic and cultural centre, while the West Lake area is a hub of modern housing and embassies.",
     gettingAround:
@@ -5223,7 +5223,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   hue: {
     identity:
-      "Hue is a historic former capital in central Vietnam, with a population of about 450,000; the Nguyen dynasty's capital from 1802 to 1945, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
+      "Hue owes its selection as a capital largely to what the Perfume River offered — after unifying Vietnam in 1802, Emperor Gia Long, founder of the Nguyen dynasty, chose this site for its backdrop of hills and the river winding through it, and built a citadel explicitly modeled on Beijing's Forbidden City; for the 143 years that followed (1802–1945), Vietnam's last royal dynasty ruled from here and was buried in the tomb complexes along the Perfume River. Hue is a historic former capital in central Vietnam, with a population of about 450,000, and the Complex of Hue Monuments was inscribed on the UNESCO World Heritage List in 1993.",
     layout:
       "The Perfume River runs through the city; the Imperial City and Forbidden Purple City ruins on the north bank preserve the Nguyen court's layout, the south bank is the modern city centre, and several royal tombs lie along the Perfume River on the city's outskirts.",
     gettingAround:
@@ -5321,7 +5321,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "ninh-binh": {
     identity:
-      "Ninh Binh is a city in northern Vietnam known for its karst rice-field scenery, with a population of about 130,000, the core gateway for exploring the Trang An Landscape Complex and Tam Coc, often called \"Ha Long Bay on land.\"",
+      "Ninh Binh's Hoa Lu was the capital of Vietnam's first unified dynasty — in 968, Dinh Bo Linh founded the kingdom of Dai Co Viet and set his capital at Hoa Lu specifically for its ring of defensible limestone karst; the Dinh and Early Le dynasties ruled from here for over four decades, until 1010, when Ly Thai To judged the site too enclosed for the kingdom to grow and moved the capital to Hanoi (then Thăng Long). Ninh Binh is a city in northern Vietnam known for its karst rice-field scenery, with a population of about 130,000, the core gateway for exploring the Trang An Landscape Complex and Tam Coc, often called \"Ha Long Bay on land.\"",
     layout:
       "The city is ringed by limestone karst peak clusters, with rice paddies and waterways interwoven across the valley floors between the peaks.",
     gettingAround:
