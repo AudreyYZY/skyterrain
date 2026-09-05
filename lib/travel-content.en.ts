@@ -6523,7 +6523,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The old town surrounds St. Stephen's Square, one of the largest squares in Dalmatia, with St. Stephen's Cathedral at one end and the harbor at the other. Fortica fortress on the hill behind town overlooks both the town and the Pakleni Islands offshore.",
     gettingAround:
-      "Hvar Island has no airport; visitors arrive via ferry or catamaran from Split or Dubrovnik airports through the harbor, with the Split–Hvar Town crossing taking about 75 minutes. The town itself is walkable.",
+      "Hvar Island has no airport; visitors arrive via ferry or catamaran from Split or Dubrovnik airports through the harbor, with the Split–Hvar Town catamaran crossing taking about an hour. The town itself is walkable.",
     culture:
       "The official language is Croatian. Modest dress is expected when visiting St. Stephen's Cathedral. Hvar is a well-known resort and nightlife island, with dense crowds of visitors and yachts in summer and higher dining prices than inland cities. Restaurant tips are typically around 10% of the bill.",
     seeAndDo:
