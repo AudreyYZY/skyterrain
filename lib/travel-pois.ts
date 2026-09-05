@@ -3203,6 +3203,64 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "日喀则和平机场", nameEn: "Shigatse Peace Airport", lon: 89.3110, lat: 29.3520, kind: "transport" },
   ],
 
+  // 批7（2026-09-05）
+  weihai: [
+    { nameZh: "刘公岛", nameEn: "Liugong Island", lon: 122.1900, lat: 37.5000, kind: "landmark" },
+    { nameZh: "幸福门", nameEn: "Happiness Gate", lon: 122.1290, lat: 37.5120, kind: "landmark" },
+    { nameZh: "成山头", nameEn: "Chengshan Cape", lon: 122.7000, lat: 37.4000, kind: "nature" },
+    { nameZh: "威海国际海水浴场", nameEn: "Weihai International Beach", lon: 122.0400, lat: 37.5300, kind: "nature" },
+    { nameZh: "荣成天鹅湖", nameEn: "Rongcheng Swan Lake", lon: 122.5700, lat: 37.3500, kind: "nature" },
+  ],
+  zhenjiang: [
+    { nameZh: "金山寺", nameEn: "Jinshan Temple", lon: 119.4120, lat: 32.2180, kind: "landmark" },
+    { nameZh: "焦山", nameEn: "Jiaoshan", lon: 119.4850, lat: 32.2240, kind: "landmark" },
+    { nameZh: "北固山", nameEn: "Beigu Hill", lon: 119.4500, lat: 32.2180, kind: "landmark" },
+    { nameZh: "西津渡", nameEn: "Xijin Ferry Old Street", lon: 119.4200, lat: 32.2100, kind: "district" },
+    { nameZh: "镇江南站", nameEn: "Zhenjiang South Station", lon: 119.4460, lat: 32.1360, kind: "transport" },
+  ],
+  yueyang: [
+    { nameZh: "岳阳楼", nameEn: "Yueyang Tower", lon: 113.1160, lat: 29.3800, kind: "landmark" },
+    { nameZh: "君山岛", nameEn: "Junshan Island", lon: 113.0050, lat: 29.4300, kind: "nature" },
+    { nameZh: "洞庭湖", nameEn: "Dongting Lake", lon: 112.9000, lat: 29.3000, kind: "nature" },
+    { nameZh: "汴河街", nameEn: "Bianhe Street", lon: 113.1180, lat: 29.3780, kind: "district" },
+    { nameZh: "岳阳东站", nameEn: "Yueyang East Station", lon: 113.1900, lat: 29.3900, kind: "transport" },
+  ],
+  hanzhong: [
+    { nameZh: "古汉台（汉中市博物馆）", nameEn: "Guhantai (Hanzhong Museum)", lon: 107.0290, lat: 33.0640, kind: "landmark" },
+    { nameZh: "石门栈道", nameEn: "Shimen Plank Road", lon: 106.9700, lat: 33.1600, kind: "landmark" },
+    { nameZh: "勉县武侯祠", nameEn: "Wuhou Temple, Mianxian", lon: 106.6900, lat: 33.1600, kind: "landmark" },
+    { nameZh: "张骞墓（城固）", nameEn: "Tomb of Zhang Qian (Chenggu)", lon: 107.3200, lat: 33.1600, kind: "landmark" },
+    { nameZh: "洋县朱鹮生态园", nameEn: "Crested Ibis Reserve, Yangxian", lon: 107.5500, lat: 33.2200, kind: "nature" },
+  ],
+  xiangyang: [
+    { nameZh: "襄阳古城墙", nameEn: "Xiangyang City Walls", lon: 112.1300, lat: 32.0130, kind: "landmark" },
+    { nameZh: "北街", nameEn: "North Street", lon: 112.1280, lat: 32.0120, kind: "district" },
+    { nameZh: "古隆中", nameEn: "Gulongzhong", lon: 112.0400, lat: 31.9900, kind: "landmark" },
+    { nameZh: "米公祠", nameEn: "Mi Fu Memorial Temple", lon: 112.1320, lat: 32.0270, kind: "landmark" },
+    { nameZh: "唐城", nameEn: "Tang City Film Studio", lon: 112.0700, lat: 31.9700, kind: "landmark" },
+  ],
+  ordos: [
+    { nameZh: "康巴什新区", nameEn: "Kangbashi", lon: 109.7810, lat: 39.6060, kind: "district" },
+    { nameZh: "东胜区", nameEn: "Dongsheng", lon: 109.9780, lat: 39.8170, kind: "district" },
+    { nameZh: "成吉思汗陵", nameEn: "Mausoleum of Genghis Khan", lon: 109.7900, lat: 39.3700, kind: "landmark" },
+    { nameZh: "响沙湾", nameEn: "Xiangshawan (Singing Sand Bay)", lon: 109.9700, lat: 40.2800, kind: "nature" },
+    { nameZh: "乌兰木伦湖", nameEn: "Wulanmulun Lake", lon: 109.7900, lat: 39.6000, kind: "nature" },
+  ],
+  shangrao: [
+    { nameZh: "三清山", nameEn: "Mount Sanqing", lon: 118.0670, lat: 28.9080, kind: "nature" },
+    { nameZh: "婺源篁岭", nameEn: "Huangling, Wuyuan", lon: 117.9800, lat: 29.2000, kind: "district" },
+    { nameZh: "婺源江湾", nameEn: "Jiangwan, Wuyuan", lon: 117.9700, lat: 29.2500, kind: "district" },
+    { nameZh: "龟峰（弋阳）", nameEn: "Guifeng (Yiyang)", lon: 117.4300, lat: 28.3200, kind: "nature" },
+    { nameZh: "上饶站", nameEn: "Shangrao Station", lon: 117.9300, lat: 28.4300, kind: "transport" },
+  ],
+  korla: [
+    { nameZh: "孔雀河风景带", nameEn: "Peacock River Promenade", lon: 86.1700, lat: 41.7300, kind: "nature" },
+    { nameZh: "铁门关", nameEn: "Iron Gate Pass", lon: 86.1900, lat: 41.8300, kind: "landmark" },
+    { nameZh: "博斯腾湖", nameEn: "Bosten Lake", lon: 86.9000, lat: 41.9500, kind: "nature" },
+    { nameZh: "罗布人村寨（尉犁）", nameEn: "Lop Nur People Village (Yuli)", lon: 86.5000, lat: 41.2000, kind: "district" },
+    { nameZh: "巴音布鲁克草原", nameEn: "Bayanbulak Grassland", lon: 84.1500, lat: 43.0300, kind: "nature" },
+  ],
+
   // ── 智利 ──
   santiago: [
     { nameZh: "武器广场", nameEn: "Plaza de Armas", lon: -70.6506, lat: -33.4372, kind: "landmark" },

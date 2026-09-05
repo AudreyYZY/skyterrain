@@ -1121,6 +1121,55 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "日喀则市区（桑珠孜区）29.2670,88.8800（海拔约 3836 米）；RKZ 机场：Wikipedia/百度百科（距市区约 43 公里，海拔 3782 米）；另有定日机场（DDR，2023 通航，近珠峰）未作为条目机场",
   },
 
+  // ── 中国 Tier 2 批7（2026-09-05）──
+  {
+    id: "weihai", nameZh: "威海", nameEn: "Weihai", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 122.1200, lat: 37.5130,
+    airport: { iata: "WEH", nameZh: "威海大水泊国际机场", nameEn: "Weihai Dashuibo Int'l", lon: 122.2290, lat: 37.1870 },
+    source: "威海市区（环翠区）37.5130,122.1200；WEH 机场：Wikipedia（文登区，2024-09 更名国际机场，距市区约 40 公里）",
+  },
+  {
+    id: "zhenjiang", nameZh: "镇江", nameEn: "Zhenjiang", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江苏省", admin1En: "Jiangsu",
+    lon: 119.4250, lat: 32.1880,
+    source: "镇江市区（京口区）32.1880,119.4250；无民用机场，就近用常州奔牛国际机场（CZX，约 40 公里）与南京禄口（NKG，约 90 公里）+ 镇江南站（京沪高铁）/ 镇江站（沪宁城际），条目不写机场字段",
+  },
+  {
+    id: "yueyang", nameZh: "岳阳", nameEn: "Yueyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖南省", admin1En: "Hunan",
+    lon: 113.1290, lat: 29.3570,
+    airport: { iata: "YYA", nameZh: "岳阳三荷机场", nameEn: "Yueyang Sanhe Airport", lon: 113.2820, lat: 29.3120 },
+    source: "岳阳市区（岳阳楼区）29.3570,113.1290；YYA 机场：Wikipedia（三荷乡，2018-12-26 通航）",
+  },
+  {
+    id: "hanzhong", nameZh: "汉中", nameEn: "Hanzhong", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "陕西省", admin1En: "Shaanxi",
+    lon: 107.0230, lat: 33.0670,
+    airport: { iata: "HZG", nameZh: "汉中城固机场", nameEn: "Hanzhong Chenggu Airport", lon: 107.2080, lat: 33.0640 },
+    source: "汉中市区（汉台区）33.0670,107.0230；HZG 机场：Wikipedia（城固县柳林镇，距市区约 18 公里，军民合用）",
+  },
+  {
+    id: "xiangyang", nameZh: "襄阳", nameEn: "Xiangyang", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖北省", admin1En: "Hubei",
+    lon: 112.1220, lat: 32.0090,
+    airport: { iata: "XFN", nameZh: "襄阳刘集机场", nameEn: "Xiangyang Liuji Airport", lon: 112.2910, lat: 32.1510 },
+    source: "襄阳古城 32.0090,112.1220；XFN 机场：Wikipedia（刘集，距市区约 15 公里）",
+  },
+  {
+    id: "ordos", nameZh: "鄂尔多斯", nameEn: "Ordos", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
+    lon: 109.7810, lat: 39.6060,
+    airport: { iata: "DSN", nameZh: "鄂尔多斯伊金霍洛国际机场", nameEn: "Ordos Ejin Horo Int'l", lon: 109.8610, lat: 39.4900 },
+    source: "鄂尔多斯康巴什区（市政府驻地）39.6060,109.7810；老城东胜区 39.8170,109.9780；DSN 机场：Wikipedia（伊金霍洛旗，距康巴什约 13 公里）",
+  },
+  {
+    id: "shangrao", nameZh: "上饶", nameEn: "Shangrao", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "江西省", admin1En: "Jiangxi",
+    lon: 117.9430, lat: 28.4550,
+    airport: { iata: "SQD", nameZh: "上饶三清山机场", nameEn: "Shangrao Sanqingshan Airport", lon: 117.9650, lat: 28.3790 },
+    source: "上饶市区（信州区）28.4550,117.9430；SQD 机场：Wikipedia（2017 通航，距市区约 15 公里）",
+  },
+  {
+    id: "korla", nameZh: "库尔勒", nameEn: "Korla", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "新疆维吾尔自治区", admin1En: "Xinjiang",
+    lon: 86.1750, lat: 41.7250,
+    airport: { iata: "KRL", nameZh: "库尔勒梨城机场", nameEn: "Korla Licheng Airport", lon: 86.1290, lat: 41.6980 },
+    source: "库尔勒市区（巴音郭楞州府驻地）41.7250,86.1750；KRL 机场：百度百科/Wikipedia（距市中心约 17 公里，4D 军民合用）",
+  },
+
   // ── 日本 ──────────────────────────────────────────────
   {
     id: "tokyo", nameZh: "东京", nameEn: "Tokyo", country: "japan", tier: "capital", zone: "jp-kanto", admin1Zh: "东京都", admin1En: "Tokyo",
