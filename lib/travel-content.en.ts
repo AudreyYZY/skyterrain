@@ -3541,7 +3541,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   leiden: {
     identity:
-      "Leiden is between Amsterdam and The Hague, with a metro area of about 140,000; founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including the astronomer Kepler and ancestors of Darwin studied or taught, and it is also the birthplace of Rembrandt.",
+      "Leiden is between Amsterdam and The Hague, with a metro area of about 140,000; founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including Descartes, Huygens, Grotius and Spinoza studied or taught, and it is also the birthplace of Rembrandt.",
     layout:
       "Leiden's old town is ringed by canals, with the ruins of a hilltop fortress (De Burcht) as the high point overlooking the whole city. Leiden University's buildings and its botanical garden (one of the oldest in Europe) are scattered through the old town, woven into everyday city life.",
     gettingAround:
