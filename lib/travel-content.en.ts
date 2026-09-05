@@ -764,7 +764,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   changchun: {
     identity:
-      "Changchun is the capital of Jilin, a city on the Song–Liao plain in the centre of the north-east, with an urban population of about 4.5 million. It is known for its car industry and film studio, is green with wide streets and many roundabouts, keeps a number of early-20th-century buildings, and is one of the transfer cities on the way to Changbai Shan.",
+      "Changchun's wide streets and many roundabouts today are a leftover of 1930s planning — Manchukuo chose Changchun as its capital, \"Xinjing,\" partly because it already sat on the Chinese Eastern Railway with good transport links, and partly because land was cheap enough to plan on a large scale; the road network copied Paris's radial-and-ring layout, with plazas and roundabouts at key junctions to disperse traffic, turning a town of little more than 100,000 people into a fully infrastructured city within a few years. Changchun is the capital of Jilin, a city on the Song–Liao plain in the centre of the north-east, with an urban population of about 4.5 million; it is known today for its car industry and film studio, keeps a number of early-20th-century buildings, and is one of the transfer cities on the way to Changbai Shan.",
     layout:
       "Changchun is built on the plain along the Yitong River, on flat ground. The city is laid out on a radial-and-ring plan, with People's Square and Culture Square at the centre; the Jingyuetan forest park, the FAW works and the film city are in the south; the former Manchukuo palace is in the north-east. South-east lie Jilin city and Changbai Shan.",
     gettingAround:
