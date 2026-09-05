@@ -602,6 +602,76 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "Yulara -25.2406,130.9889；AYQ 机场：Wikipedia（镇北约 6 公里）；乌鲁鲁 -25.3444,131.0369",
   },
 
+  // ── 澳大利亚 批3（2026-09-05）──
+  {
+    id: "gosford", nameZh: "戈斯福德（中央海岸）", nameEn: "Gosford (Central Coast)", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 151.3333, lat: -33.4167,
+    source: "Gosford -33.4167,151.3333（en.wikipedia）；无商业机场，悉尼机场约 90 公里 + 火车约 1.5 小时，条目不写机场字段",
+  },
+  {
+    id: "port-macquarie", nameZh: "麦夸里港", nameEn: "Port Macquarie", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 152.9000, lat: -31.4333,
+    airport: { iata: "PQQ", nameZh: "麦夸里港机场", nameEn: "Port Macquarie Airport", lon: 152.8633, lat: -31.4358 },
+    source: "Port Macquarie -31.4333,152.9000；PQQ 机场：en.wikipedia（镇西约 4 公里）",
+  },
+  {
+    id: "wagga-wagga", nameZh: "瓦加瓦加", nameEn: "Wagga Wagga", country: "australia", tier: "notable", zone: "au-nsw", admin1Zh: "新南威尔士", admin1En: "New South Wales",
+    lon: 147.3689, lat: -35.1189,
+    airport: { iata: "WGA", nameZh: "瓦加瓦加机场", nameEn: "Wagga Wagga Airport", lon: 147.4664, lat: -35.1653 },
+    source: "Wagga Wagga -35.1189,147.3689；WGA 机场：en.wikipedia（Forest Hill，市区东南约 11 公里）",
+  },
+  {
+    id: "mildura", nameZh: "米尔迪拉", nameEn: "Mildura", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 142.1583, lat: -34.1889,
+    airport: { iata: "MQL", nameZh: "米尔迪拉机场", nameEn: "Mildura Airport", lon: 142.0856, lat: -34.2292 },
+    source: "Mildura -34.1889,142.1583；MQL 机场：en.wikipedia（市区西南约 7 公里）",
+  },
+  {
+    id: "phillip-island", nameZh: "菲利普岛（考斯）", nameEn: "Phillip Island (Cowes)", country: "australia", tier: "notable", zone: "au-vic", admin1Zh: "维多利亚", admin1En: "Victoria",
+    lon: 145.2419, lat: -38.4511,
+    source: "Cowes -38.4511,145.2419（en.wikipedia）；无机场，墨尔本机场约 2 小时，条目不写机场字段；企鹅归巢 -38.5100,145.1430",
+  },
+  {
+    id: "mackay", nameZh: "麦凯", nameEn: "Mackay", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 149.1858, lat: -21.1411,
+    airport: { iata: "MKY", nameZh: "麦凯机场", nameEn: "Mackay Airport", lon: 149.1825, lat: -21.1708 },
+    source: "Mackay -21.1411,149.1858；MKY 机场：en.wikipedia（South Mackay）",
+  },
+  {
+    id: "rockhampton", nameZh: "罗克汉普顿", nameEn: "Rockhampton", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 150.5136, lat: -23.3781,
+    airport: { iata: "ROK", nameZh: "罗克汉普顿机场", nameEn: "Rockhampton Airport", lon: 150.4750, lat: -23.3817 },
+    source: "Rockhampton -23.3781,150.5136；ROK 机场：en.wikipedia（West Rockhampton）",
+  },
+  {
+    id: "port-douglas", nameZh: "道格拉斯港", nameEn: "Port Douglas", country: "australia", tier: "notable", zone: "au-qld", admin1Zh: "昆士兰", admin1En: "Queensland",
+    lon: 145.4653, lat: -16.4833,
+    source: "Port Douglas -16.4833,145.4653（en.wikipedia）；无机场，凯恩斯机场约 60 公里/1 小时，条目不写机场字段",
+  },
+  {
+    id: "bunbury", nameZh: "邦伯里", nameEn: "Bunbury", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 115.6369, lat: -33.3272,
+    source: "Bunbury -33.3272,115.6369（en.wikipedia）；邦伯里机场（BUY）仅通用航空、无定期客运航班，珀斯约 175 公里 + Australind 列车，条目不写机场字段",
+  },
+  {
+    id: "kalgoorlie", nameZh: "卡尔古利—博尔德", nameEn: "Kalgoorlie-Boulder", country: "australia", tier: "notable", zone: "au-wa", admin1Zh: "西澳大利亚", admin1En: "Western Australia",
+    lon: 121.4658, lat: -30.7489,
+    airport: { iata: "KGI", nameZh: "卡尔古利—博尔德机场", nameEn: "Kalgoorlie-Boulder Airport", lon: 121.4617, lat: -30.7894 },
+    source: "Kalgoorlie -30.7489,121.4658；KGI 机场：en.wikipedia（城南约 6 公里，仅珀斯航线）",
+  },
+  {
+    id: "port-lincoln", nameZh: "林肯港", nameEn: "Port Lincoln", country: "australia", tier: "notable", zone: "au-sa", admin1Zh: "南澳大利亚", admin1En: "South Australia",
+    lon: 135.8586, lat: -34.7322,
+    airport: { iata: "PLO", nameZh: "林肯港机场", nameEn: "Port Lincoln Airport", lon: 135.8803, lat: -34.6053 },
+    source: "Port Lincoln -34.7322,135.8586；PLO 机场：en.wikipedia（North Shields，镇北约 13 公里，仅阿德莱德航线）",
+  },
+  {
+    id: "burnie", nameZh: "伯尼", nameEn: "Burnie", country: "australia", tier: "notable", zone: "au-tas", admin1Zh: "塔斯马尼亚", admin1En: "Tasmania",
+    lon: 145.8753, lat: -41.0636,
+    airport: { iata: "BWT", nameZh: "伯尼机场（温亚德）", nameEn: "Burnie Airport (Wynyard)", lon: 145.7311, lat: -40.9989 },
+    source: "Burnie -41.0636,145.8753；BWT 机场：en.wikipedia（在温亚德，距伯尼约 17 公里）",
+  },
+
   // ── 中国 ──────────────────────────────────────────────
   {
     id: "beijing", nameZh: "北京", nameEn: "Beijing", country: "china", tier: "capital", zone: "cn-north", admin1Zh: "北京市", admin1En: "Beijing",
@@ -1325,6 +1395,77 @@ export const CITY_REGISTRY: CityEntry[] = [
     id: "danzhou", nameZh: "儋州", nameEn: "Danzhou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "海南省", admin1En: "Hainan",
     lon: 109.5800, lat: 19.5210,
     source: "儋州市区（那大镇）19.5210,109.5800；无机场，就近海口美兰（约 150 公里）+ 环岛高铁白马井站，条目不写机场字段",
+  },
+
+  // ── 中国 Tier 2 批9（2026-09-05）──
+  {
+    id: "huzhou", nameZh: "湖州", nameEn: "Huzhou", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 120.0870, lat: 30.8940,
+    source: "湖州市区 30.8940,120.0870（zh.wikipedia）；无民用机场，就近杭州萧山（约 90 公里）+ 湖州站高铁，条目不写机场字段",
+  },
+  {
+    id: "jinhua", nameZh: "金华", nameEn: "Jinhua", country: "china", tier: "major", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 119.6475, lat: 29.0790,
+    airport: { iata: "YIW", nameZh: "金华义乌机场", nameEn: "Jinhua Yiwu Airport", lon: 120.0322, lat: 29.3447 },
+    source: "金华市区 29.0790,119.6475（zh.wikipedia）；YIW 机场：en.wikipedia（义乌市区西北 5.5 公里，距金华市区约 51 公里）",
+  },
+  {
+    id: "jiaozuo", nameZh: "焦作", nameEn: "Jiaozuo", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
+    lon: 113.2420, lat: 35.2160,
+    source: "焦作市区 35.2160,113.2420（zh.wikipedia）；无民用机场，就近郑州新郑（约 100 公里）+ 郑焦城际，条目不写机场字段",
+  },
+  {
+    id: "jingzhou", nameZh: "荆州", nameEn: "Jingzhou", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "湖北省", admin1En: "Hubei",
+    lon: 112.2400, lat: 30.3350,
+    airport: { iata: "SHS", nameZh: "荆州沙市机场", nameEn: "Jingzhou Shashi Airport", lon: 112.4483, lat: 30.2958 },
+    source: "荆州古城 30.3350,112.2400（zh.wikipedia）；SHS 机场：zh.wikipedia（2021-01-30 通航，距市中心约 18 公里）",
+  },
+  {
+    id: "liuzhou", nameZh: "柳州", nameEn: "Liuzhou", country: "china", tier: "major", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
+    lon: 109.4280, lat: 24.3260,
+    airport: { iata: "LZH", nameZh: "柳州白莲机场", nameEn: "Liuzhou Bailian Airport", lon: 109.3919, lat: 24.2064 },
+    source: "柳州市区 24.3260,109.4280（zh.wikipedia）；LZH 机场：zh.wikipedia（距市区约 12 公里，军民合用）",
+  },
+  {
+    id: "yibin", nameZh: "宜宾", nameEn: "Yibin", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "四川省", admin1En: "Sichuan",
+    lon: 104.6420, lat: 28.7520,
+    airport: { iata: "YBP", nameZh: "宜宾五粮液机场", nameEn: "Yibin Wuliangye Airport", lon: 104.5317, lat: 28.8556 },
+    source: "宜宾三江口 28.7520,104.6420（zh.wikipedia）；YBP 机场：zh.wikipedia（2019-12-05 启用，距市区约 11 公里）",
+  },
+  {
+    id: "mudanjiang", nameZh: "牡丹江", nameEn: "Mudanjiang", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "黑龙江省", admin1En: "Heilongjiang",
+    lon: 129.6330, lat: 44.5520,
+    airport: { iata: "MDG", nameZh: "牡丹江海浪国际机场", nameEn: "Mudanjiang Hailang Int'l", lon: 129.5689, lat: 44.5239 },
+    source: "牡丹江市区 44.5520,129.6330（zh.wikipedia）；MDG 机场：zh.wikipedia（距市区约 9 公里）",
+  },
+  {
+    id: "chizhou", nameZh: "池州（九华山）", nameEn: "Chizhou (Mount Jiuhua)", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "安徽省", admin1En: "Anhui",
+    lon: 117.4940, lat: 30.6770,
+    airport: { iata: "JUH", nameZh: "池州九华山机场", nameEn: "Chizhou Jiuhuashan Airport", lon: 117.6875, lat: 30.7403 },
+    source: "池州市区 30.6770,117.4940（zh.wikipedia）；九华山十王峰 30.4830,117.8060；JUH 机场：zh.wikipedia（2013-07-29 通航）",
+  },
+  {
+    id: "tongren", nameZh: "铜仁（梵净山）", nameEn: "Tongren (Fanjingshan)", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
+    lon: 109.1895, lat: 27.7317,
+    airport: { iata: "TEN", nameZh: "铜仁凤凰机场", nameEn: "Tongren Fenghuang Airport", lon: 109.3089, lat: 27.8833 },
+    source: "铜仁市区 27.7317,109.1895（zh.wikipedia）；梵净山红云金顶 27.9190,108.6960；TEN 机场：zh.wikipedia（距市区约 21 公里）",
+  },
+  {
+    id: "jiuquan", nameZh: "酒泉", nameEn: "Jiuquan", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
+    lon: 98.4940, lat: 39.7340,
+    source: "酒泉市区（肃州区）39.7340,98.4940（zh.wikipedia）；市区无独立机场，与嘉峪关共用嘉峪关机场（JGN，约 25 公里）；敦煌机场在辖区内但属敦煌条目；条目不写机场字段",
+  },
+  {
+    id: "chifeng", nameZh: "赤峰", nameEn: "Chifeng", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "内蒙古自治区", admin1En: "Inner Mongolia",
+    lon: 118.8870, lat: 42.2580,
+    airport: { iata: "CIF", nameZh: "赤峰玉龙机场", nameEn: "Chifeng Yulong Airport", lon: 118.8408, lat: 42.1597 },
+    source: "赤峰市区 42.2580,118.8870（zh.wikipedia）；CIF 机场：zh.wikipedia（距市区约 11 公里，2008 通航）",
+  },
+  {
+    id: "shannan", nameZh: "山南", nameEn: "Shannan (Lhoka)", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "西藏自治区", admin1En: "Tibet",
+    lon: 91.7730, lat: 29.2370,
+    airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.9119, lat: 29.2978 },
+    source: "山南市区泽当 29.2370,91.7730（海拔约 3600 米）；贡嘎机场位于山南市贡嘎县境内（zh.wikipedia），距泽当约 90 公里，与拉萨条目共用同一机场记录",
   },
 
   // ── 日本 ──────────────────────────────────────────────
