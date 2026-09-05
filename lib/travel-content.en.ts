@@ -5519,7 +5519,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   // ============ Mongolia ============
   "mongolia-overview": {
     identity:
-      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.28 million; its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
+      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.5 million; its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
     layout:
       "The country divides roughly into: the Centre (Ulaanbaatar and the Kharkhorin/Orkhon valley, the political and cultural core), the North (Erdenet, Darkhan, Mörön — forest and lake country), the West (Khovd, Ölgii — the Mongol Altai and the Kazakh community), the South Gobi (Dalanzadgad — the Gobi desert belt), and the East (Choibalsan — the Daurian steppe belt).",
     gettingAround:
@@ -5547,7 +5547,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   erdenet: {
     identity:
-      "Erdenet is Mongolia's second-largest city, with a population of about 90,000, in Orkhon Province in the north; it grew into an important industrial city around a large copper-molybdenum mine.",
+      "Erdenet is Mongolia's second-largest city, with a population of just over 100,000, in Orkhon Province in the north; it grew into an important industrial city around a large copper-molybdenum mine.",
     layout:
       "The city was built around the mining and ore-processing facilities of the Erdenet Mining Corporation, its layout carrying the typical features of a Soviet-era planned industrial town, with residential and factory areas kept largely separate.",
     gettingAround:
@@ -5575,7 +5575,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   kharkhorin: {
     identity:
-      "Kharkhorin is the site of Karakorum, the 13th–14th century capital of the Mongol Empire, set in the Orkhon Valley, and today the core gateway for exploring the Orkhon Valley Cultural Landscape.",
+      "Kharkhorin is the site of Karakorum, the 13th–14th century capital of the Mongol Empire, set in the Orkhon Valley, and today the core gateway for exploring the Orkhon Valley Cultural Landscape (a UNESCO World Heritage Site since 2004). Well watered and rich in pasture, and commanding the central steppe, the valley had already served as the seat of the Türk and Uyghur steppe powers before the Mongols (the ruins of the Uyghur capital Ordu-Baliq, or Khar Balgas, lie nearby), so Ögedei's choice of the site for his imperial capital followed an older tradition; after Kublai Khan took the throne in 1260 and moved the capital to Shangdu, Karakorum went into steady decline.",
     layout:
       "The modern town of Kharkhorin sits alongside the ancient city ruins and Erdene Zuu Monastery; most of the ruined site remains to be archaeologically excavated, with traces of walls and building foundations visible at the surface.",
     gettingAround:
@@ -5583,13 +5583,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official language is Mongolian. Karakorum was founded as the Mongol Empire's capital in 1235 by Ögedei Khan, son of Genghis Khan; after Erdene Zuu Monastery was built in the 16th century, much of the stone from the ancient city ruins was reused in the monastery's construction.",
     seeAndDo:
-      "Erdene Zuu Monastery (Mongolia's first Tibetan Buddhist monastery, 16th century); the Karakorum ancient city museum; the turtle-shaped stone monument; the pastoral scenery of the Orkhon Valley.",
+      "Erdene Zuu Monastery (built in the 16th century, one of Mongolia's earliest surviving Tibetan Buddhist monasteries); the Karakorum ancient city museum; the turtle-shaped stone monument; the pastoral scenery of the Orkhon Valley.",
     whenAndTips:
       "June–August has the most pleasant climate; allow ample time to explore the nomadic pastoral life around the Orkhon Valley Cultural Landscape rather than making only a brief stop at the ancient city ruins.",
   },
   moron: {
     identity:
-      "Mörön is the capital of Khövsgöl Province in northern Mongolia, with a population of about 40,000, and the core gateway for exploring Lake Khövsgöl.",
+      "Mörön is the capital of Khövsgöl Province in northern Mongolia, with a population of about 47,000, and the core gateway for exploring Lake Khövsgöl.",
     layout:
       "The city sits on the flat valley floor of the Delgermörön River, ringed by forested mountains, and is connected to Lake Khövsgöl by road.",
     gettingAround:
@@ -5603,7 +5603,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   dalanzadgad: {
     identity:
-      "Dalanzadgad is the capital of South Gobi Province in southern Mongolia, with a population of about 20,000, and the core gateway for exploring Gobi Gurvansaikhan National Park.",
+      "Dalanzadgad is the capital of South Gobi Province in southern Mongolia, with a population of about 33,000, and the core gateway for exploring Gobi Gurvansaikhan National Park.",
     layout:
       "The city sits at the edge of the Gobi desert at the northern foot of the Gurvan Saikhan Mountains, and serves as the administrative and supply centre for the South Gobi region.",
     gettingAround:
@@ -5635,7 +5635,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The city sits in a river valley at the foot of the Mongol Altai, serving as the administrative and cultural centre of Bayan-Ölgii Province, where traditional Kazakh culture is well preserved.",
     gettingAround:
-      "Ölgii International Airport (ULG) has seasonal scheduled flights to and from Ulaanbaatar from April to October (about twice a week); reaching the Tavan Bogd massif requires driving or hiring a car with a professional guide.",
+      "Ölgii International Airport (ULG) has year-round scheduled flights to and from Ulaanbaatar, with more frequent service in the April–October tourist season; reaching the Tavan Bogd massif requires driving or hiring a car with a professional guide.",
     culture:
       "Bayan-Ölgii Province is the main home of Mongolia's Kazakh minority; the official language is Mongolian, and the local Kazakh community retains its own language, Islamic faith and the traditional art of golden eagle hunting.",
     seeAndDo:
@@ -5663,7 +5663,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built into the valley terrain, with Tibetan Buddhist monastery architecture standing alongside a Soviet-era planned town layout.",
     gettingAround:
-      "Tsetserleg Airport (TSZ) exists locally but passenger service is not currently reliable; the town is usually reached from Ulaanbaatar by road, a journey of about 6 hours (roughly 420 km).",
+      "Tsetserleg Airport (TSZ) exists locally but passenger service is not currently reliable; the town is usually reached from Ulaanbaatar by road (mostly via Kharkhorin), a journey of about 7 to 8 hours (roughly 480 km by road).",
     culture:
       "The official language is Mongolian. Tsetserleg is a town where the traditional nomadic life of the Khangai region meets Tibetan Buddhist culture, with several traditional monastery sites preserved nearby.",
     seeAndDo:
