@@ -951,6 +951,99 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "中卫市中心 37.521,105.197（WebSearch）；ZHY 机场：Wikipedia（37°34′22″N 105°09′16″E）；WebSearch 核实北京是中卫机场通航以来长期存在的航点之一，但现有资料显示其航班多经西安/石家庄等枢纽以\"经西飞\"\"经石飞\"中转模式运营，未能核实到当前仍在运营、不经停的北京直飞航班，故本轮未收录航线；中卫另有包兰铁路/银西高铁，距银川约1小时车程",
   },
 
+  // ── 中国 Tier 2 批5（2026-09-05：各省重点城市补充）──
+  {
+    id: "dali", nameZh: "大理", nameEn: "Dali", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
+    lon: 100.2260, lat: 25.6060,
+    airport: { iata: "DLU", nameZh: "大理凤仪机场", nameEn: "Dali Fengyi Airport", lon: 100.3194, lat: 25.6494 },
+    source: "大理市下关（州府驻地）25.6060,100.2260；大理古城 25.6927,100.1613；DLU 机场：Wikipedia（凤仪镇，距市区约12公里）",
+  },
+  {
+    id: "shangri-la", nameZh: "香格里拉", nameEn: "Shangri-La", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "云南省", admin1En: "Yunnan",
+    lon: 99.7070, lat: 27.8250,
+    airport: { iata: "DIG", nameZh: "迪庆香格里拉机场", nameEn: "Diqing Shangri-La Airport", lon: 99.6772, lat: 27.7936 },
+    source: "香格里拉市（迪庆州府驻地，独克宗古城一带）27.8250,99.7070；DIG 机场：Wikipedia（1999 年通航，2002 年更名）",
+  },
+  {
+    id: "kaifeng", nameZh: "开封", nameEn: "Kaifeng", country: "china", tier: "notable", zone: "cn-central", admin1Zh: "河南省", admin1En: "Henan",
+    lon: 114.3072, lat: 34.7973,
+    source: "开封市中心（鼓楼一带）34.7973,114.3072；开封无民用机场，就近用郑州新郑国际机场（CGO，约 70 公里，郑开城际铁路/高铁），条目不写机场字段",
+  },
+  {
+    id: "pingyao", nameZh: "平遥", nameEn: "Pingyao", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "山西省", admin1En: "Shanxi",
+    lon: 112.1744, lat: 37.2014,
+    source: "平遥古城 37.2014,112.1744（晋中市平遥县，县级）；无民用机场，就近用太原武宿国际机场（TYN，约 90 公里）+ 平遥古城站高铁，条目不写机场字段；世界遗产 1997 年（含双林寺、镇国寺）",
+  },
+  {
+    id: "qufu", nameZh: "曲阜", nameEn: "Qufu", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 116.9866, lat: 35.5920,
+    source: "曲阜孔庙一带 35.5920,116.9866（济宁市曲阜市，县级）；曲阜本身无机场，就近用济宁大安机场（JNG，2023-12-28 通航，约 50 公里）+ 曲阜东站（京沪高铁），条目不写机场字段",
+  },
+  {
+    id: "taian", nameZh: "泰安", nameEn: "Tai'an", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 117.0879, lat: 36.1943,
+    source: "泰安市区（岱庙以西）36.1943,117.0879；泰山玉皇顶 36.2560,117.1060（1545 米）；泰安无民用机场，就近用济南遥墙国际机场（TNA，约 100 公里）+ 泰安站/泰安高铁站，条目不写机场字段",
+  },
+  {
+    id: "yantai", nameZh: "烟台", nameEn: "Yantai", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "山东省", admin1En: "Shandong",
+    lon: 121.4479, lat: 37.4638,
+    airport: { iata: "YNT", nameZh: "烟台蓬莱国际机场", nameEn: "Yantai Penglai Int'l", lon: 120.9872, lat: 37.6572 },
+    source: "烟台市区（芝罘区）37.4638,121.4479；YNT 机场：Wikipedia（2015-05-28 启用，取代莱山机场）",
+  },
+  {
+    id: "qinhuangdao", nameZh: "秦皇岛", nameEn: "Qinhuangdao", country: "china", tier: "notable", zone: "cn-north", admin1Zh: "河北省", admin1En: "Hebei",
+    lon: 119.6005, lat: 39.9354,
+    airport: { iata: "BPE", nameZh: "秦皇岛北戴河机场", nameEn: "Qinhuangdao Beidaihe Airport", lon: 119.0589, lat: 39.6667 },
+    source: "秦皇岛市区（海港区）39.9354,119.6005；BPE 机场：Wikipedia（昌黎县，2016-03-31 启用，距主城区约 47 公里）",
+  },
+  {
+    id: "yanji", nameZh: "延吉", nameEn: "Yanji", country: "china", tier: "notable", zone: "cn-northeast", admin1Zh: "吉林省", admin1En: "Jilin",
+    lon: 129.5091, lat: 42.9063,
+    airport: { iata: "YNJ", nameZh: "延吉朝阳川国际机场", nameEn: "Yanji Chaoyangchuan Int'l", lon: 129.4512, lat: 42.8828 },
+    source: "延吉市区（延边州府驻地）42.9063,129.5091；YNJ 机场：Wikipedia（朝阳川镇，4C 军民合用）",
+  },
+  {
+    id: "nyingchi", nameZh: "林芝", nameEn: "Nyingchi", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "西藏自治区", admin1En: "Tibet",
+    lon: 94.3617, lat: 29.6540,
+    airport: { iata: "LZY", nameZh: "林芝米林机场", nameEn: "Nyingchi Mainling Airport", lon: 94.3353, lat: 29.3033 },
+    source: "林芝市区（巴宜区）29.6540,94.3617；LZY 机场：Wikipedia（米林市雅鲁藏布江河谷，海拔约 2949 米，2006-09-01 通航）",
+  },
+  {
+    id: "zunyi", nameZh: "遵义", nameEn: "Zunyi", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "贵州省", admin1En: "Guizhou",
+    lon: 106.9270, lat: 27.7250,
+    airport: { iata: "ZYI", nameZh: "遵义新舟机场", nameEn: "Zunyi Xinzhou Airport", lon: 107.0007, lat: 27.5895 },
+    source: "遵义市区（红花岗区）27.7250,106.9270；ZYI 机场：Wikipedia（新舟镇，距市区约 35 公里，2012-08-28 通航）",
+  },
+  {
+    id: "shantou", nameZh: "汕头", nameEn: "Shantou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广东省", admin1En: "Guangdong",
+    lon: 116.6820, lat: 23.3535,
+    airport: { iata: "SWA", nameZh: "揭阳潮汕国际机场", nameEn: "Jieyang Chaoshan Int'l", lon: 116.5033, lat: 23.5520 },
+    source: "汕头市区（金平区小公园一带）23.3535,116.6820；SWA 机场在揭阳市境内，服务汕头/潮州/揭阳三市：Wikipedia",
+  },
+  {
+    id: "chaozhou", nameZh: "潮州", nameEn: "Chaozhou", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广东省", admin1En: "Guangdong",
+    lon: 116.6220, lat: 23.6567,
+    airport: { iata: "SWA", nameZh: "揭阳潮汕国际机场", nameEn: "Jieyang Chaoshan Int'l", lon: 116.5033, lat: 23.5520 },
+    source: "潮州古城（牌坊街一带）23.6567,116.6220；与汕头条目共用揭阳潮汕国际机场（SWA，在揭阳市境内，距潮州古城约 35 公里）：Wikipedia",
+  },
+  {
+    id: "shaoxing", nameZh: "绍兴", nameEn: "Shaoxing", country: "china", tier: "notable", zone: "cn-east", admin1Zh: "浙江省", admin1En: "Zhejiang",
+    lon: 120.5800, lat: 30.0300,
+    source: "绍兴市区（越城区）30.0300,120.5800；绍兴无民用机场，就近用杭州萧山国际机场（HGH，约 40 公里）+ 绍兴北站高铁，条目不写机场字段",
+  },
+  {
+    id: "beihai", nameZh: "北海", nameEn: "Beihai", country: "china", tier: "notable", zone: "cn-south", admin1Zh: "广西壮族自治区", admin1En: "Guangxi",
+    lon: 109.1191, lat: 21.4733,
+    airport: { iata: "BHZ", nameZh: "北海福成机场", nameEn: "Beihai Fucheng Airport", lon: 109.2939, lat: 21.5394 },
+    source: "北海市区（海城区）21.4733,109.1191；BHZ 机场：Wikipedia（福成镇）",
+  },
+  {
+    id: "jiayuguan", nameZh: "嘉峪关", nameEn: "Jiayuguan", country: "china", tier: "notable", zone: "cn-northwest", admin1Zh: "甘肃省", admin1En: "Gansu",
+    lon: 98.2892, lat: 39.7726,
+    airport: { iata: "JGN", nameZh: "嘉峪关机场", nameEn: "Jiayuguan Airport", lon: 98.3414, lat: 39.8569 },
+    source: "嘉峪关市区 39.7726,98.2892；嘉峪关关城 39.8010,98.2190；JGN 机场：Wikipedia",
+  },
+
   // ── 日本 ──────────────────────────────────────────────
   {
     id: "tokyo", nameZh: "东京", nameEn: "Tokyo", country: "japan", tier: "capital", zone: "jp-kanto", admin1Zh: "东京都", admin1En: "Tokyo",
