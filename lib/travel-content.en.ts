@@ -4494,7 +4494,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Luxembourg City is the capital of the Grand Duchy, with a population of about 130,000, built on the Luxembourg Plateau's sandstone. It is a major seat of EU institutions and a leading global financial centre; its old town and fortifications were inscribed on the World Heritage List in 1994.",
     layout:
-      "The old town is built on a promontory surrounded by gorges cut by the Alzette and Pétrusse rivers into the plateau, with the Bock promontory guarding one corner; the newer district — home to the EU institutions and the financial centre — lies on the Kirchberg plateau to the north.",
+      "The old town is built on a promontory surrounded by gorges cut by the Alzette and Pétrusse rivers into the plateau, with the Bock promontory guarding one corner; the newer district — home to the EU institutions and the financial centre — lies on the Kirchberg plateau to the north-east, across the Alzette valley.",
     gettingAround:
       "Findel Airport is about 6 km from the centre, reached by bus; public transport (bus and light rail) is free nationwide. The old town is walkable, with several bridges linking the different districts across the gorges. The climate is temperate maritime, mild and rainy year-round.",
     culture:
@@ -4510,11 +4510,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built along the Alzette, right on the French border; numerous historic mining sites surround it, some now converted into industrial-heritage parks, such as the Belval blast-furnace site.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide, with a light-rail and bus network in the city. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide, with a bus network in the city (a fast tram line from Luxembourg City to Esch is planned to open in stages during the 2030s). The climate is temperate maritime.",
     culture:
       "All three official languages are in use; the city's historic draw of Italian and Portuguese immigrants for mining and steelwork has given it a culturally blended immigrant heritage. Restaurant bills typically already include service.",
     seeAndDo:
-      "The Belval blast-furnace industrial-heritage site (preserving intact 19th-century ironworks); the National Museum of Mining, Minett; a nearby mining-heritage trail through the Minett Biosphere Reserve.",
+      "The Belval blast-furnace industrial-heritage site (preserving blast furnaces A and B, built in 1965 and 1970, shut down in 1997 and open to visitors since 2014); the National Museum of Mining, Minett; a nearby mining-heritage trail through the Minett Biosphere Reserve.",
     whenAndTips:
       "May–September is the most pleasant season; as the gateway to industrial-heritage tourism, plan half a day specifically to visit the Belval site and the mining museum.",
   },
@@ -4590,7 +4590,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   clervaux: {
     identity:
-      "Clervaux is a small town in the Clerve Valley in northern Luxembourg, with a population of about 4,000; its medieval castle dominates high ground at the centre of the valley, and the town is an important historical witness to the Battle of the Bulge.",
+      "Clervaux is a small town in the Clerve Valley in northern Luxembourg, with a population of about 1,600; its medieval castle dominates high ground at the centre of the valley, and the town is an important historical witness to the Battle of the Bulge.",
     layout:
       "The town is built along both banks of the Clerve Valley, with the castle on high ground at the valley's centre and a Benedictine abbey on a nearby hill overlooking the whole valley.",
     gettingAround:
