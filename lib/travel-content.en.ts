@@ -5392,7 +5392,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "malacca-city": {
     identity:
-      "Malacca City is the capital of Malacca state, with a population of about 50,000 in its historic core, on the east shore of the Strait of Malacca; it was the capital of the 15th-century Malacca Sultanate, and its old town was inscribed on the UNESCO World Heritage List in 2008.",
+      "Malacca's rise as Southeast Asia's most important 15th-century port came down to a precise piece of geography — in 1402, the exiled Palembang prince Parameswara chose a harbour commanding the narrowest stretch of the Strait of Malacca, the channel that ships had to pass through moving between the Indian Ocean and the South China Sea, and the Malacca Sultanate quickly grew into the transshipment hub linking China, India and the Arab world. Malacca City is the capital of Malacca state, with a population of about 50,000 in its historic core, on the east shore of the Strait of Malacca, and its old town was inscribed on the UNESCO World Heritage List in 2008 together with George Town.",
     layout:
       "The historic core is centred on Dutch Square, St Paul's Hill and Jonker Street, preserving layered architectural heritage from the Portuguese, Dutch and British colonial periods along with Peranakan (Baba-Nyonya) Chinese culture.",
     gettingAround:
