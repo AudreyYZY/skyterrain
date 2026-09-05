@@ -21,8 +21,13 @@
 | Q4 | **生活半径由什么决定** | 通勤靠什么（火车/地铁/车）；多远算"远"；住房与轨道的关系；哪种边界（环线、河、山、高速）在本地人心里是分界。 |
 | Q5 | **外来者最常见的结构性误解** | 第一年通常搞错的一两件事（把某个小辖区当成整座城、把副中心当郊区、把行政区当独立城市……）。 |
 
-篇幅：Tier A（首都 + `tier: "major"`）300–500 字中文、对应英文；Tier B（`notable`）100–180 字，
-只答其中最有本地特色的两三问；县级小镇可不写（字段可选，渲染时自动跳过）。
+**篇幅与结构（2026-09-06 第二版，用户试听后收紧）**：
+- Tier A：中文 ≤ 240 字（语音约 1 分钟）、英文 ≤ 160 词；Tier B：中文 ≤ 120 字；县级小镇可不写（字段可选，渲染时自动跳过）。
+- 固定为 5 组陈述句，顺序不变：① 行政口径与治理分工（两句以内）② 中心结构（一句）③ 地址表示法（一句）
+  ④ 通勤范围与心理分界（一句）⑤ 常见误解（一句，以"常见误解是……"开头）。
+- **语体**：百科式陈述句。不用第二人称，不用口语和评价词（"其实""拼成""一路向西""两种生活"之类），
+  不用反问与感叹；每个数字带年份或口径；人名地名用官方译名，机构与规划文件用全称。
+- 其余六段暂不重写，但后续新写或修订时同样执行：概览 ≤ 150 字，其余各段 ≤ 180 字，全篇中文 ≤ 1,100 字。
 
 ## 2. 写作规则
 
@@ -44,8 +49,14 @@
 
 ## 4. 试点城市来源记录
 
-- 悉尼：Local government areas of New South Wales（2024-09：大悉尼 33 个 LGA；2021 普查 Blacktown 399,711、Canterbury-Bankstown 372,322、Parramatta 258,315）；City of Sydney（26.15 km²，2021 普查 211,632，31 个 suburb）；Local government in Australia（Council 职责与 City/Shire/Municipality 称号仅为历史沿革；州政府管警察、学校、医院、干道）；Greater Sydney Region Plan 2018 "A Metropolis of Three Cities"（Eastern Harbour City / Central River City / Western Parkland City）；Suburbs and localities (Australia)（地址用 suburb + 州 + 邮编，suburb 边界由 Council 提议、州地名委员会批准，与 LGA 边界可不一致）。
+- 悉尼：一手来源——ABS Regional population（2025-06-30 常住人口 Greater Sydney 5,638,830）、City of Sydney "City at a glance"（2022-06-30 常住人口 218,096；称 Greater Sydney 有 34 个 council、650 余个 suburb）。维基百科 Local government areas of New South Wales（2024-09：大悉尼 33 个 LGA；2021 普查 Blacktown 399,711、Canterbury-Bankstown 372,322、Parramatta 258,315）；City of Sydney（26.15 km²，2021 普查 211,632，31 个 suburb）；Local government in Australia（Council 职责与 City/Shire/Municipality 称号仅为历史沿革；州政府管警察、学校、医院、干道）；Greater Sydney Region Plan 2018 "A Metropolis of Three Cities"（Eastern Harbour City / Central River City / Western Parkland City）；Suburbs and localities (Australia)（地址用 suburb + 州 + 邮编，suburb 边界由 Council 提议、州地名委员会批准，与 LGA 边界可不一致）。
 - 上海：Administrative divisions of Shanghai / Shanghai（省级直辖市；16 区→210 个街道/镇→居委会；浦东新区 1992 年设立，1,210 km²、2023 年 581 万，为面积和人口最大的区；崇明 2016 年撤县设区；地铁按运营里程为世界最大）。
-- 墨尔本：Melbourne / City of Melbourne（大墨尔本 31 个 LGA、约 9,993 km²、2025-06 人口 543.5 万；City of Melbourne 37.7 km²、2021 普查 149,615；州政府负责火车电车与 Plan Melbourne、Suburban Rail Loop；电车网世界最大）。
+- 墨尔本：一手来源——ABS Regional population（2025-06-30 Greater Melbourne 5,435,590）。维基百科 Melbourne / City of Melbourne（大墨尔本 31 个 LGA、约 9,993 km²；City of Melbourne 37.7 km²、2021 普查 149,615；州政府负责火车电车与 Plan Melbourne、Suburban Rail Loop；电车网世界最大）。
 - 东京：Tokyo / Special wards of Tokyo（东京都 = 23 特别区 + 26 市 + 5 町 + 8 村 + 离岛；1943 年东京市并入东京府成为东京都；特别区依 1947 年地方自治法为特殊自治体，英文自称 City；都政府统一负责供水、下水、消防并有财政调整制度；23 区约 627 km²、2024-01 人口 9,878,284；多摩地区 26 市；大东京圈约 3,700 万；副都心新宿/涩谷/池袋等）。
 - 伦敦：Greater London / London boroughs（大伦敦 1,572 km² = 32 个自治市 + 伦敦金融城；2024 年人口 9,089,736；大伦敦政府 2000 年设立、民选市长与议会，管交通局 TfL、警务、消防、战略规划；自治市管教育、住房、社会服务、垃圾、地方道路、规划审批、市政税；金融城有自己的市政公司和 Lord Mayor；内伦敦 12 个、外伦敦 20 个自治市，人口 15–40 万）。
+
+## 5. 来源可达性备注（2026-09-06）
+
+NSW 地方政府办公室、NSW 规划厅、东京都厅、伦敦市政府自治市页、上海市政府市情页、墨尔本市政府在本环境下抓取失败
+（403/404/仅目录页），相关数字暂以维基百科对应条目为准并标年份；两个口径不一致处（大悉尼 LGA 数 33 vs 34）正文用
+"三十多个"回避。后续铺开时，凡能抓到官网/统计局页面的，一律以官网为准替换。
