@@ -6133,7 +6133,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official language is Kazakh, with Russian widely spoken. Kazakh hospitality is taken seriously, and accepting food offered by a host is basic courtesy. Shoes come off before entering the Nur-Astana Mosque or other religious sites, and women should carry a headscarf. Tipping is customary in Kazakhstan — typically an extra 5–10% on top of the restaurant bill.",
     seeAndDo:
-      "The Bayterek Tower (climb up for a view over the city and steppe); the Khan Shatyr entertainment centre (designed by Norman Foster, the world's largest tent-like structure); the Nur-Astana Mosque (Central Asia's third-largest); the National Museum of Kazakhstan; the Presidential Cultural Centre and Independence Square.",
+      "The Bayterek Tower (climb up for a view over the city and steppe); the Khan Shatyr entertainment centre (designed by Norman Foster, the world's largest tent-like structure); the Nur-Astana Mosque (2005) and the Astana Grand Mosque (completed in 2022, the largest mosque in Central Asia); the National Museum of Kazakhstan; the Presidential Cultural Centre and Independence Square.",
     whenAndTips:
       "Astana's winters are extremely cold and long (temperatures can drop below -30°C), while summers are hot and dry — May through September is the more comfortable travel season; the left-bank landmark cluster is compact, so plan a full day combining walking with taxis.",
   },
@@ -6153,7 +6153,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   shymkent: {
     identity:
-      "Shymkent is Kazakhstan's third-largest city, with a population of more than 1 million; it is the capital of Turkistan Region, historically an important Silk Road trading centre, and today a major industrial and transport hub in southern Kazakhstan.",
+      "Shymkent is Kazakhstan's third-largest city, with a population of more than 1 million; a city of republican significance since 2018 (before that it was the capital of South Kazakhstan Region, which was renamed Turkistan Region that year with its seat moved to Turkistan), historically an important Silk Road trading centre, and today a major industrial and transport hub in southern Kazakhstan.",
     layout:
       "The old town preserves some Soviet-era buildings and traditional bazaars, while the newer Independence Park and Al-Farabi Square form the city centre's leisure core; the ancient city of Turkestan lies about 160 km to the north.",
     gettingAround:
@@ -6167,7 +6167,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   aktau: {
     identity:
-      "Aktau is the capital of Mangystau Region, with a population of more than 200,000; it is Kazakhstan's largest city on the Caspian coast, with a dry, low-rainfall climate, and serves as the core gateway to the desert wonders of Mangystau — Bozzhyra, Karagiye and Torysh.",
+      "Aktau is the capital of Mangystau Region, with a population of about 270,000; it is Kazakhstan's largest city on the Caspian coast, with a dry, low-rainfall climate, and serves as the core gateway to the desert wonders of Mangystau — Bozzhyra, Karagiye and Torysh.",
     layout:
       "The city follows a Soviet-era grid plan, its districts identified by numbered microdistricts (mkr) rather than traditional street names, with several beaches and a seaside promenade along the Caspian shore; landmarks deep in the Mangystau desert such as Bozzhyra and Karagiye require several hours' drive from Aktau to reach.",
     gettingAround:
@@ -6197,7 +6197,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Karaganda is an industrial city in the central Kazakh Uplands, with a population of more than 500,000; it grew historically around coal mining and remains an important mining and industrial centre in central Kazakhstan, as well as one of the gateways to the Karkaraly Mountains and Bektau-Ata.",
     layout:
-      "The city developed around Soviet-era coal-mining industry, and its centre preserves a large number of Soviet-era buildings; Karkaraly National Park lies about 220 km to the east, and the granite massif of Bektau-Ata about 70 km to the south.",
+      "The city developed around Soviet-era coal-mining industry, and its centre preserves a large number of Soviet-era buildings; Karkaraly National Park lies about 220 km to the east, and the granite massif of Bektau-Ata about 300 km to the south, some 70 km north of Lake Balkhash.",
     gettingAround:
       "Sary-Arka Airport (KGF) is about 20 km from the city centre; buses and taxis are the main way to get around town, and reaching Karkaraly or Bektau-Ata usually requires a hired car, each several hours' drive on mountain roads.",
     culture:
