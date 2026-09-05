@@ -719,7 +719,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   taiyuan: {
     identity:
-      "Taiyuan is the capital of Shanxi, an old industrial city in the Fen River valley, with an urban population of about 4 million. It has more than two thousand years of history as a northern military town, and with the Jinci temple complex nearby and Pingyao, Datong and Mount Wutai not far off, Taiyuan is the base for a tour of Shanxi's historic architecture and relics.",
+      "Taiyuan is the capital of Shanxi, an old industrial city in the Fen River valley, with an urban population of about 4 million. It has more than 2,500 years of history — the walled city of Jinyang was founded in 497 BCE by Dong Anyu, a retainer of the noble Zhao Jianzi — and served as a dynastic capital nine times over its history, earning it the nickname \"the nine-dynasty capital.\" A long-standing northern military town, with the Jinci temple complex nearby and Pingyao, Datong and Mount Wutai not far off, Taiyuan is the base for a tour of Shanxi's historic architecture and relics.",
     layout:
       "Taiyuan lies in the narrow Fen River valley, hemmed in by the East and West mountains. The Fen River and its riverside road form the north–south axis; Jinci is at the foot of Xuanweng Shan in the south-western suburbs. North is Xinzhou and Mount Wutai; south are Pingyao and Jinzhong; north-east is Datong.",
     gettingAround:
@@ -6971,7 +6971,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "A local Wu dialect (Wuxi speech) is spoken, with Mandarin widely used. Wuxi cuisine leans sweet — braised spare ribs (jiang paigu) are the signature dish, and locals themselves joke that the sweetness is 'off the charts,' so first-time visitors might want to brace for it. Many of the halls in Huishan Ancient Town are historic clan properties; visitors should stay quiet and avoid entering ancestral areas not open to the public. No tipping.",
     seeAndDo:
-      "Yuantouzhu (Turtle Head Isle, the signature Lake Tai scenic spot, with cherry blossoms a highlight each spring); the Lingshan Giant Buddha (an 88 m bronze standing statue of Sakyamuni, a major Buddhist landmark on the lakeshore); Huishan Ancient Town (with more ancestral halls, of more different types, than anywhere else in China, preserving a complete cluster of Jiangnan clan-hall architecture); the Qingming Bridge historic district (traditional houses and stone bridges along the old canal, with night boat tours available).",
+      "Yuantouzhu (Turtle Head Isle, the signature Lake Tai scenic spot, with cherry blossoms a highlight each spring); the Lingshan Giant Buddha (an 88 m bronze standing statue of Sakyamuni, a major Buddhist landmark on the lakeshore); Huishan Ancient Town (118 ancestral halls for 77 surnames packed into just 0.3 sq km, among the densest concentrations of clan halls anywhere in China or the world, preserving a complete cluster of Jiangnan clan-hall architecture); the Qingming Bridge historic district (traditional houses and stone bridges along the old canal, with night boat tours available).",
     whenAndTips:
       "Late March through April is cherry-blossom season at Yuantouzhu, the busiest time of year, so it's worth booking tickets ahead to beat the crowds. March–May and September–November have the most comfortable weather; June's plum-rain season is damp and wet.",
   },
