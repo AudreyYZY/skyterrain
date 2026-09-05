@@ -4731,7 +4731,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   ayutthaya: {
     identity:
-      "Ayutthaya is a historic former capital in central Thailand, with a population of about 55,000; it served as the capital of the Ayutthaya kingdom from 1350 to 1767, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
+      "Ayutthaya's site was a deliberate piece of geographic calculation — in 1350, King Ramathibodi I set his new capital on a natural island ringed by the confluence of the Chao Phraya, Lop Buri and Pa Sak rivers, letting the rivers themselves serve as a moat while keeping the city well connected downstream for international trade; over the next 417 years (1350–1767) it grew into one of Southeast Asia's largest and most cosmopolitan cities, until Burmese forces sacked and burned it in 1767. Ayutthaya is a historic former capital in central Thailand, with a population of about 55,000, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
     layout:
       "The historical park sits on an island-like area encircled by the Chao Phraya, Lopburi, and Pa Sak rivers, densely dotted with temple ruins and adjoining the surrounding modern town.",
     gettingAround:
@@ -4745,7 +4745,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   sukhothai: {
     identity:
-      "Sukhothai was the capital of Thailand's first independent kingdom, with a population of about 20,000; it served as the Sukhothai kingdom's capital in the 13th–14th centuries, and Sukhothai Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
+      "The Thai alphabet is traditionally said to have been created in this very capital — founded in 1238, Sukhothai was transformed from a minor polity into the first major Tai kingdom under its third ruler, Ram Khamhaeng the Great (r. 1279–1298), who is traditionally credited with devising the Thai script in 1283; a stone inscription from 1283–1290, the Ram Khamhaeng stele, is the earliest known text in Thai. The Sukhothai kingdom ruled from here for about a century (1238–1347) before the rising Ayutthaya kingdom took its place. Sukhothai was the capital of Thailand's first independent kingdom, with a population of about 20,000, and Sukhothai Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
     layout:
       "The historical park is divided into central, northern, western, and southern zones, with the Wat Mahathat ruins at the core of the central zone, ringed by remnants of a moat and city wall.",
     gettingAround:
