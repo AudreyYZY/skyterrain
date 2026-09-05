@@ -3179,7 +3179,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   coimbra: {
     identity:
-      "Coimbra is between Lisbon and Porto on the Mondego, with a metro area of about 150,000, once the capital of Portugal (12th–13th centuries); the University of Coimbra, founded in 1290, is Portugal's oldest and one of Europe's oldest universities, its university quarter inscribed as a whole as a World Heritage Site in 2013.",
+      "Coimbra is between Lisbon and Porto on the Mondego, with a metro area of about 150,000, once the capital of Portugal (12th–13th centuries). The University of Coimbra was founded in Lisbon in 1290 by King Dinis, shifted back and forth between Lisbon and Coimbra several times, and only settled permanently in Coimbra in 1537; it is Portugal's oldest and one of Europe's oldest universities, its university quarter inscribed as a whole as a World Heritage Site in 2013.",
     layout:
       "Coimbra's old town climbs the hillside on the north bank of the Mondego, with the university quarter at the top, overlooked by the landmark university bell tower (Torre da Universidade). The old town slopes down to the riverside, the commercial and everyday-life district.",
     gettingAround:
