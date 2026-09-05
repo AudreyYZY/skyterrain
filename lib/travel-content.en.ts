@@ -1079,7 +1079,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   "new-zealand-overview": {
     identity:
-      "New Zealand lies in the south-west Pacific, made up of the North Island, the South Island and some smaller islands, with a population of about 5.2 million, most of it on the North Island. In Māori the country is called Aotearoa (\"land of the long white cloud\"). The official languages are English, Māori and New Zealand Sign Language. It sits on a plate boundary — mountainous, with volcanoes, geothermal areas and earthquakes — and faces Australia across the Tasman Sea.",
+      "New Zealand lies in the south-west Pacific, made up of the North Island, the South Island and some smaller islands, with a population of about 5.3 million, most of it on the North Island. In Māori the country is called Aotearoa (\"land of the long white cloud\"). The official languages are English, Māori and New Zealand Sign Language. It sits on a plate boundary — mountainous, with volcanoes, geothermal areas and earthquakes — and faces Australia across the Tasman Sea.",
     layout:
       "The North Island is comparatively gentle, with large areas of pasture, the central volcanic plateau (Ruapehu, Lake Taupō) and the geothermal country around Rotorua; the largest city, Auckland, and the capital, Wellington, are both here. The South Island is split lengthwise by the Southern Alps, with fiords and glaciers on the west, the Canterbury Plains on the east, the largest city being Christchurch, and Queenstown as the tourism centre of the south. Cook Strait separates the islands, with a car ferry across it.",
     gettingAround:
@@ -1147,14 +1147,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "English is universal; Christchurch is called the most English of New Zealand's cities, with large parks, cricket grounds and Edwardian buildings. Since the earthquakes, the centre has filled with transitional spaces made of shipping containers and street art, and feels younger than before. The pace is slow. Tipping is not expected.",
     seeAndDo:
-      "Punting on the Avon, the Botanic Gardens and Hagley Park; the rebuilding Cathedral Square, the Cardboard Cathedral and the earthquake memorial wall (a solemn place); the Canterbury Museum and the Bridge of Remembrance; the gondola up the Port Hills for the view over Lyttelton Harbour; the International Antarctic Centre. Drive out to Akaroa (a French-flavoured town on Banks Peninsula), Tekapo for the night sky, and Aoraki/Mount Cook.",
+      "Punting on the Avon, the Botanic Gardens and Hagley Park; Cathedral Square (reinstatement of the cathedral stalled in 2024 over a funding gap and was re-planned in 2025 as a staged rebuild), the Cardboard Cathedral and the earthquake memorial wall (a solemn place); the Canterbury Museum and the Bridge of Remembrance; the gondola up the Port Hills for the view over Lyttelton Harbour; the International Antarctic Centre. Drive out to Akaroa (a French-flavoured town on Banks Peninsula), Tekapo for the night sky, and Aoraki/Mount Cook.",
     whenAndTips:
       "December–March has the best weather. On norwester days (dry, hot north-west wind) the temperature jumps and fire risk is high. The TranzAlpine train and the routes to Aoraki/Mount Cook and Tekapo need booking in high season. The inland South Island has snow in winter — check road conditions and carry chains. Border checks on outdoor gear and food are very strict.",
   },
 
   queenstown: {
     identity:
-      "Queenstown is in the south of the South Island on the shore of Lake Wakatipu, ringed by mountains including The Remarkables, with a resident population of only about 50,000 but as the tourism and outdoor-sports centre of New Zealand. It is known as the \"adventure capital\" — bungy jumping (the first commercial bungy site is nearby), skydiving, jetboating and skiing are all here. The origin of the name is uncertain, with several accounts.",
+      "Queenstown is in the south of the South Island on the shore of Lake Wakatipu, ringed by mountains including The Remarkables, with an urban-area population of under 30,000 (about 52,000 in the wider Queenstown-Lakes District) but serving as the tourism and outdoor-sports centre of New Zealand. It is known as the \"adventure capital\" — bungy jumping (the first commercial bungy site is nearby), skydiving, jetboating and skiing are all here. The origin of the name is uncertain, with several accounts.",
     layout:
       "Queenstown is built on a bay at a Z-shaped bend in Lake Wakatipu; the centre is compact and walkable, and the Skyline Gondola runs straight from town to a hilltop lookout. Across the lake are The Remarkables; the lake's north-west arm leads to Glenorchy and the valleys used for Lord of the Rings. North-east over the hills are Arrowtown (an old gold-rush town) and Wānaka; south are Te Anau and the fiords.",
     gettingAround:
@@ -1169,7 +1169,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   dunedin: {
     identity:
-      "Dunedin is on the south-eastern coast of the South Island at the base of the Otago Peninsula, with a metropolitan population of about 130,000 — the fourth-largest city in New Zealand. It was founded by Scottish Presbyterian settlers in the mid-19th century, and the name Dunedin is the old Scots Gaelic name for Edinburgh (Dùn Èideann); the street names, churches and university carry a strong Scottish stamp. The wildlife nearby — albatross, yellow-eyed penguins, sea lions — is a major draw.",
+      "Dunedin is on the south-eastern coast of the South Island at the base of the Otago Peninsula, with a metropolitan population of about 130,000 — the second-largest city on the South Island. It was founded by Scottish Presbyterian settlers in the mid-19th century, and the name Dunedin is the old Scots Gaelic name for Edinburgh (Dùn Èideann); the street names, churches and university carry a strong Scottish stamp. The wildlife nearby — albatross, yellow-eyed penguins, sea lions — is a major draw.",
     layout:
       "Dunedin is built in a valley and on steep slopes at the head of a long harbour (Otago Harbour), with The Octagon as the centre. The University of Otago (the oldest in New Zealand) is just north of the centre. East along the harbour is the Otago Peninsula — a hilly peninsula whose tip, Taiaroa Head, has the only mainland breeding colony of royal albatross in the world. Baldwin Street, in the suburbs, was long considered one of the steepest streets in the world.",
     gettingAround:
@@ -5913,7 +5913,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "kampong-glam": {
     identity:
-      "Kampong Glam is Singapore's historic Malay-Muslim quarter; in 1819 the British East India Company granted this area to Sultan Hussein Shah of Johor as a royal seat, making it one of the few districts in Singapore that preserves a continuous royal-historical thread.",
+      "Kampong Glam is Singapore's historic Malay-Muslim quarter; Raffles' 1822 town plan allotted this area to the Malay, Bugis and Arab communities, and in 1823 the British East India Company formally granted part of it to Sultan Hussein Shah of Johor as a royal seat, making it one of the few districts in Singapore that preserves a continuous royal-historical thread.",
     layout:
       "The Sultan Mosque forms the district's geographic and visual centre; the old shophouses along Haji Lane and Arab Street have been reinvented as cafés, indie boutiques and a hub of street murals, while textile, perfume and carpet shops persist around the mosque — a blend of old and new woven into the same streetscape. The old Istana (palace) complex is the core site for understanding this local royal history.",
     gettingAround:
@@ -5929,13 +5929,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Little India is Singapore's historic Indian quarter; Indian labourers were drawn here in the 19th century by the area's lime kilns and brick-making industry, gradually forming an Indian residential and trading district centred on Serangoon Road, gazetted as a conservation area in 1989.",
     layout:
-      "Serangoon Road is the district's main artery, densely lined with spice shops, goldsmiths, sari stores and Hindu temples; Tekka Centre, completed in 1915, is one of Singapore's largest wet markets and a core spot for Indian food, while the district's colourful Nanyang shophouse façades echo the equally colourful temple towers nearby.",
+      "Serangoon Road is the district's main artery, densely lined with spice shops, goldsmiths, sari stores and Hindu temples; Tekka Centre (its predecessor Tekka Market opened in 1915; the present building dates from 1982) is one of Singapore's largest wet markets and a core spot for Indian food, while the district's colourful Nanyang shophouse façades echo the equally colourful temple towers nearby.",
     gettingAround:
       "Little India MRT station (NE/DT line interchange) sits at the heart of the district; Little India has no airport of its own and is reached via Changi Airport (about 20 km from the city centre); the district is compact and best combined with a short MRT ride.",
     culture:
-      "Sri Veeramakaliamman Temple, built in 1855, is among Singapore's earliest temples dedicated to the Hindu goddess Kali, its gopuram tower densely and elaborately sculpted; shoes come off before entering, and women should dress modestly. During Deepavali and Thaipusam the district is elaborately lit and hosts major processions.",
+      "Sri Veeramakaliamman Temple, whose shrine dates from 1855 (the temple itself was built in 1881), is among Singapore's earliest temples dedicated to the Hindu goddess Kali, its gopuram tower densely and elaborately sculpted; shoes come off before entering, and women should dress modestly. During Deepavali and Thaipusam the district is elaborately lit and hosts major processions.",
     seeAndDo:
-      "Sri Veeramakaliamman Temple (1855, dedicated to the goddess Kali); Tekka Centre (built 1915, one of Singapore's largest wet markets and food centres); the spice and sari shops along Serangoon Road; nearby Indian restaurants and sweet shops.",
+      "Sri Veeramakaliamman Temple (shrine from 1855, temple built 1881, dedicated to the goddess Kali); Tekka Centre (original market 1915, present building 1982, one of Singapore's largest wet markets and food centres); the spice and sari shops along Serangoon Road; nearby Indian restaurants and sweet shops.",
     whenAndTips:
       "Deepavali (October–November, dates vary by year) and Thaipusam (January–February) bring elaborate lighting and processions to the district — its liveliest but also busiest stretch; weekday afternoons offer a more unhurried pace for temples and Tekka Centre.",
   },
