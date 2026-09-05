@@ -14,11 +14,16 @@ import { TERRAIN_REGISTRY } from "../lib/terrain-registry.ts";
 import { ROUTE_NARRATION } from "../lib/route-narration.ts";
 import { ALL_ROUTES } from "../data/routes/manifest.ts";
 import { COUNTRIES } from "../lib/regions.ts";
+import type { RouteWaypoint } from "../types/route.ts";
 
 const ROUTES = ALL_ROUTES;
 const IDS = new Set(TERRAIN_REGISTRY.map((e) => e.id));
 const COUNTRY_SLUGS = new Set(COUNTRIES.map((c) => c.slug));
 const seenIds = new Set<string>();
+
+/** 航点的可读标识：城市用 id、地形用 terrainId、标注点用 name */
+const wpLabel = (w: RouteWaypoint): string =>
+  w.kind === "city" ? w.id : w.kind === "terrain" ? w.terrainId : w.name;
 
 function haversineKm(a: [number, number], b: [number, number]): number {
   const R = 6371;
@@ -74,7 +79,7 @@ for (const r of ROUTES) {
         Math.abs(wp.lat) > 90 ||
         Math.abs(wp.lon) > 180
       ) {
-        fail(r.id, `${wp.kind === "city" ? "城市" : "标注点"} ${wp.id ?? wp.name} 坐标非法`);
+        fail(r.id, `${wp.kind === "city" ? "城市" : "标注点"} ${wpLabel(wp)} 坐标非法`);
         continue;
       }
       if (wp.kind === "feature" && (!wp.name || !wp.nameEn)) {
@@ -115,8 +120,8 @@ for (const r of ROUTES) {
     const params = coords.map(([x, y]) => (wrapLonDelta(x - A[0]) * ux + (y - A[1]) * uy) / L2);
     for (let i = 1; i < params.length; i++) {
       if (params[i]! < params[i - 1]! - 0.08) {
-        const label = wps[i - 1]!.kind === "city" ? wps[i - 1]!.id : wps[i - 1]!.terrainId;
-        const label2 = wps[i]!.kind === "city" ? wps[i]!.id : wps[i]!.terrainId;
+        const label = wpLabel(wps[i - 1]!);
+        const label2 = wpLabel(wps[i]!);
         fail(r.id, `航点回退：${label}(${params[i - 1]!.toFixed(2)}) → ${label2}(${params[i]!.toFixed(2)})`);
       }
     }
