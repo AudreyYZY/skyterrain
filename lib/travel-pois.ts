@@ -1747,6 +1747,50 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "皮亚纳红色花岗岩海岸", nameEn: "Calanques de Piana", lon: 8.6330, lat: 42.2440, kind: "nature" },
   ],
 
+  // ── 法国 批2（2026-09-05）──
+  annecy: [
+    { nameZh: "老城与蒂乌河运河", nameEn: "Old Town & Thiou Canals", lon: 6.1270, lat: 45.8990, kind: "district" },
+    { nameZh: "岛宫", nameEn: "Palais de l'Isle", lon: 6.1260, lat: 45.8985, kind: "landmark" },
+    { nameZh: "安纳西城堡", nameEn: "Château d'Annecy", lon: 6.1250, lat: 45.8975, kind: "landmark" },
+    { nameZh: "湖滨欧洲花园与爱之桥", nameEn: "Jardins de l'Europe & Pont des Amours", lon: 6.1330, lat: 45.9000, kind: "nature" },
+    { nameZh: "塞姆诺兹山", nameEn: "Le Semnoz", lon: 6.1000, lat: 45.8000, kind: "nature" },
+  ],
+  avignon: [
+    { nameZh: "教皇宫", nameEn: "Palais des Papes", lon: 4.8075, lat: 43.9510, kind: "landmark" },
+    { nameZh: "圣贝内泽桥（阿维尼翁桥）", nameEn: "Pont Saint-Bénézet", lon: 4.8050, lat: 43.9540, kind: "landmark" },
+    { nameZh: "岩石公园", nameEn: "Rocher des Doms", lon: 4.8080, lat: 43.9530, kind: "nature" },
+    { nameZh: "钟楼广场", nameEn: "Place de l'Horloge", lon: 4.8060, lat: 43.9495, kind: "district" },
+    { nameZh: "阿维尼翁 TGV 站", nameEn: "Avignon TGV Station", lon: 4.7860, lat: 43.9210, kind: "transport" },
+  ],
+  montpellier: [
+    { nameZh: "喜剧广场", nameEn: "Place de la Comédie", lon: 3.8800, lat: 43.6085, kind: "district" },
+    { nameZh: "埃居松老城", nameEn: "L'Écusson (Old Town)", lon: 3.8760, lat: 43.6110, kind: "district" },
+    { nameZh: "佩鲁广场与圣克莱芒水渠", nameEn: "Promenade du Peyrou & Aqueduct", lon: 3.8700, lat: 43.6115, kind: "landmark" },
+    { nameZh: "安提戈涅区", nameEn: "Antigone District", lon: 3.8900, lat: 43.6070, kind: "district" },
+    { nameZh: "帕拉瓦莱弗洛海滩", nameEn: "Palavas-les-Flots Beach", lon: 3.9300, lat: 43.5280, kind: "nature" },
+  ],
+  reims: [
+    { nameZh: "兰斯主教座堂", nameEn: "Reims Cathedral", lon: 4.0340, lat: 49.2538, kind: "landmark" },
+    { nameZh: "托宫", nameEn: "Palais du Tau", lon: 4.0345, lat: 49.2530, kind: "landmark" },
+    { nameZh: "圣雷米修道院", nameEn: "Basilica of Saint-Remi", lon: 4.0420, lat: 49.2430, kind: "landmark" },
+    { nameZh: "香槟酒窖（泰廷哲·波默里一带）", nameEn: "Champagne Cellars (Taittinger, Pommery)", lon: 4.0440, lat: 49.2400, kind: "landmark" },
+    { nameZh: "兰斯站", nameEn: "Reims Station", lon: 4.0240, lat: 49.2590, kind: "transport" },
+  ],
+  colmar: [
+    { nameZh: "小威尼斯", nameEn: "Petite Venise", lon: 7.3580, lat: 48.0740, kind: "district" },
+    { nameZh: "恩特林登博物馆", nameEn: "Unterlinden Museum", lon: 7.3560, lat: 48.0795, kind: "landmark" },
+    { nameZh: "巴托尔迪博物馆", nameEn: "Musée Bartholdi", lon: 7.3590, lat: 48.0775, kind: "landmark" },
+    { nameZh: "人头屋与老城", nameEn: "Maison des Têtes & Old Town", lon: 7.3580, lat: 48.0780, kind: "district" },
+    { nameZh: "科尔马站", nameEn: "Colmar Station", lon: 7.3470, lat: 48.0730, kind: "transport" },
+  ],
+  rouen: [
+    { nameZh: "鲁昂主教座堂", nameEn: "Rouen Cathedral", lon: 1.0950, lat: 49.4400, kind: "landmark" },
+    { nameZh: "老集市广场（圣女贞德）", nameEn: "Place du Vieux-Marché (Joan of Arc)", lon: 1.0870, lat: 49.4430, kind: "landmark" },
+    { nameZh: "大钟楼", nameEn: "Gros-Horloge", lon: 1.0900, lat: 49.4420, kind: "landmark" },
+    { nameZh: "圣女贞德历史馆", nameEn: "Historial Jeanne d'Arc", lon: 1.0930, lat: 49.4405, kind: "landmark" },
+    { nameZh: "鲁昂右岸站", nameEn: "Rouen-Rive-Droite Station", lon: 1.0940, lat: 49.4490, kind: "transport" },
+  ],
+
   // ── 意大利 ──
   rome: [
     { nameZh: "斗兽场", nameEn: "Colosseum", lon: 12.4924, lat: 41.8902, kind: "landmark" },
@@ -1826,6 +1870,54 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "巴鲁米尼努拉吉遗址", nameEn: "Su Nuraxi di Barumini", lon: 8.9910, lat: 39.7050, kind: "landmark" },
   ],
 
+  // ── 意大利 批2（2026-09-05）──
+  verona: [
+    { nameZh: "维罗纳竞技场", nameEn: "Verona Arena", lon: 10.9940, lat: 45.4390, kind: "landmark" },
+    { nameZh: "朱丽叶之家", nameEn: "Juliet's House", lon: 10.9980, lat: 45.4420, kind: "landmark" },
+    { nameZh: "百草广场", nameEn: "Piazza delle Erbe", lon: 10.9975, lat: 45.4430, kind: "district" },
+    { nameZh: "老城堡", nameEn: "Castelvecchio", lon: 10.9880, lat: 45.4395, kind: "landmark" },
+    { nameZh: "圣泽诺大殿", nameEn: "Basilica of San Zeno", lon: 10.9790, lat: 45.4425, kind: "landmark" },
+    { nameZh: "圣彼得城堡观景台", nameEn: "Castel San Pietro Viewpoint", lon: 11.0010, lat: 45.4470, kind: "nature" },
+  ],
+  genoa: [
+    { nameZh: "老港与水族馆", nameEn: "Porto Antico & Aquarium", lon: 8.9260, lat: 44.4100, kind: "landmark" },
+    { nameZh: "加里波第街（罗利宫）", nameEn: "Via Garibaldi (Palazzi dei Rolli)", lon: 8.9330, lat: 44.4120, kind: "district" },
+    { nameZh: "圣洛伦佐主教座堂", nameEn: "Cathedral of San Lorenzo", lon: 8.9310, lat: 44.4080, kind: "landmark" },
+    { nameZh: "老城小巷（Caruggi）", nameEn: "Caruggi (Old Town Lanes)", lon: 8.9290, lat: 44.4090, kind: "district" },
+    { nameZh: "博卡达塞", nameEn: "Boccadasse", lon: 8.9720, lat: 44.3910, kind: "district" },
+    { nameZh: "热那亚王子广场站", nameEn: "Genova Piazza Principe Station", lon: 8.9210, lat: 44.4160, kind: "transport" },
+  ],
+  pisa: [
+    { nameZh: "比萨斜塔", nameEn: "Leaning Tower of Pisa", lon: 10.3966, lat: 43.7230, kind: "landmark" },
+    { nameZh: "主教座堂与洗礼堂", nameEn: "Cathedral & Baptistery", lon: 10.3950, lat: 43.7232, kind: "landmark" },
+    { nameZh: "骑士广场", nameEn: "Piazza dei Cavalieri", lon: 10.4000, lat: 43.7195, kind: "district" },
+    { nameZh: "阿诺河畔与荆棘圣母教堂", nameEn: "Lungarno & Santa Maria della Spina", lon: 10.3970, lat: 43.7150, kind: "landmark" },
+    { nameZh: "比萨中央车站", nameEn: "Pisa Centrale Station", lon: 10.3990, lat: 43.7085, kind: "transport" },
+  ],
+  siena: [
+    { nameZh: "田野广场", nameEn: "Piazza del Campo", lon: 11.3317, lat: 43.3183, kind: "district" },
+    { nameZh: "曼贾塔", nameEn: "Torre del Mangia", lon: 11.3320, lat: 43.3180, kind: "landmark" },
+    { nameZh: "锡耶纳主教座堂", nameEn: "Siena Cathedral", lon: 11.3290, lat: 43.3175, kind: "landmark" },
+    { nameZh: "圣多明我教堂", nameEn: "Basilica of San Domenico", lon: 11.3260, lat: 43.3200, kind: "landmark" },
+    { nameZh: "卡莫利亚门", nameEn: "Porta Camollia", lon: 11.3290, lat: 43.3260, kind: "landmark" },
+  ],
+  matera: [
+    { nameZh: "卡韦奥索石窟区", nameEn: "Sasso Caveoso", lon: 16.6110, lat: 40.6640, kind: "district" },
+    { nameZh: "巴里萨诺石窟区", nameEn: "Sasso Barisano", lon: 16.6120, lat: 40.6690, kind: "district" },
+    { nameZh: "马泰拉主教座堂", nameEn: "Matera Cathedral", lon: 16.6110, lat: 40.6665, kind: "landmark" },
+    { nameZh: "岩石圣母教堂", nameEn: "Santa Maria de Idris", lon: 16.6130, lat: 40.6650, kind: "landmark" },
+    { nameZh: "穆尔贾观景台", nameEn: "Belvedere di Murgia Timone", lon: 16.6250, lat: 40.6640, kind: "nature" },
+    { nameZh: "马泰拉中央站", nameEn: "Matera Centrale Station", lon: 16.6050, lat: 40.6680, kind: "transport" },
+  ],
+  trieste: [
+    { nameZh: "意大利统一广场", nameEn: "Piazza Unità d'Italia", lon: 13.7680, lat: 45.6500, kind: "district" },
+    { nameZh: "米拉马雷城堡", nameEn: "Miramare Castle", lon: 13.7130, lat: 45.7020, kind: "landmark" },
+    { nameZh: "圣朱斯托城堡与主教座堂", nameEn: "San Giusto Castle & Cathedral", lon: 13.7730, lat: 45.6470, kind: "landmark" },
+    { nameZh: "大运河与圣安东尼教堂", nameEn: "Canal Grande & Sant'Antonio", lon: 13.7710, lat: 45.6520, kind: "district" },
+    { nameZh: "巨人洞", nameEn: "Grotta Gigante", lon: 13.7640, lat: 45.7090, kind: "nature" },
+    { nameZh: "的里雅斯特中央车站", nameEn: "Trieste Centrale Station", lon: 13.7720, lat: 45.6570, kind: "transport" },
+  ],
+
   // ── 西班牙 ──
   madrid: [
     { nameZh: "普拉多博物馆", nameEn: "Prado Museum", lon: -3.6926, lat: 40.4138, kind: "landmark" },
@@ -1887,6 +1979,55 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "泰德国家公园", nameEn: "Teide National Park", lon: -16.6425, lat: 28.2717, kind: "nature" },
     { nameZh: "特内里费音乐厅", nameEn: "Auditorio de Tenerife", lon: -16.2450, lat: 28.4600, kind: "landmark" },
     { nameZh: "阿纳加山地", nameEn: "Anaga Mountains", lon: -16.2200, lat: 28.5500, kind: "nature" },
+  ],
+
+  // ── 西班牙 批2（2026-09-05）──
+  "san-sebastian": [
+    { nameZh: "贝壳海滩", nameEn: "La Concha Beach", lon: -1.9900, lat: 43.3180, kind: "nature" },
+    { nameZh: "老城（品尝小吃）", nameEn: "Parte Vieja (pintxos)", lon: -1.9840, lat: 43.3240, kind: "district" },
+    { nameZh: "乌尔古尔山", nameEn: "Monte Urgull", lon: -1.9860, lat: 43.3260, kind: "nature" },
+    { nameZh: "伊格尔多山缆车", nameEn: "Monte Igueldo Funicular", lon: -2.0080, lat: 43.3140, kind: "transport" },
+    { nameZh: "风之梳", nameEn: "Peine del Viento", lon: -2.0130, lat: 43.3160, kind: "landmark" },
+    { nameZh: "苏里奥拉海滩", nameEn: "Zurriola Beach", lon: -1.9750, lat: 43.3260, kind: "nature" },
+  ],
+  toledo: [
+    { nameZh: "托莱多主教座堂", nameEn: "Toledo Cathedral", lon: -4.0240, lat: 39.8570, kind: "landmark" },
+    { nameZh: "阿尔卡萨尔", nameEn: "Alcázar of Toledo", lon: -4.0210, lat: 39.8580, kind: "landmark" },
+    { nameZh: "圣多梅教堂（埃尔·格列柯）", nameEn: "Santo Tomé (El Greco)", lon: -4.0290, lat: 39.8570, kind: "landmark" },
+    { nameZh: "圣玛丽亚·拉·布兰卡犹太会堂", nameEn: "Santa María la Blanca Synagogue", lon: -4.0310, lat: 39.8580, kind: "landmark" },
+    { nameZh: "河谷观景台", nameEn: "Mirador del Valle", lon: -4.0200, lat: 39.8500, kind: "nature" },
+    { nameZh: "托莱多站", nameEn: "Toledo Station", lon: -4.0090, lat: 39.8620, kind: "transport" },
+  ],
+  cordoba: [
+    { nameZh: "清真寺—主教座堂", nameEn: "Mezquita-Cathedral", lon: -4.7794, lat: 37.8790, kind: "landmark" },
+    { nameZh: "罗马桥", nameEn: "Roman Bridge", lon: -4.7780, lat: 37.8770, kind: "landmark" },
+    { nameZh: "犹太区", nameEn: "Judería", lon: -4.7830, lat: 37.8800, kind: "district" },
+    { nameZh: "基督教君主城堡", nameEn: "Alcázar de los Reyes Cristianos", lon: -4.7820, lat: 37.8770, kind: "landmark" },
+    { nameZh: "麦地那·阿萨哈拉", nameEn: "Medina Azahara", lon: -4.8670, lat: 37.8880, kind: "landmark" },
+    { nameZh: "科尔多瓦站", nameEn: "Córdoba Station", lon: -4.7900, lat: 37.8880, kind: "transport" },
+  ],
+  salamanca: [
+    { nameZh: "马约尔广场", nameEn: "Plaza Mayor", lon: -5.6640, lat: 40.9650, kind: "district" },
+    { nameZh: "新旧主教座堂", nameEn: "Old & New Cathedrals", lon: -5.6660, lat: 40.9600, kind: "landmark" },
+    { nameZh: "大学与贝壳之家", nameEn: "University & Casa de las Conchas", lon: -5.6670, lat: 40.9620, kind: "landmark" },
+    { nameZh: "罗马桥", nameEn: "Roman Bridge", lon: -5.6690, lat: 40.9580, kind: "landmark" },
+    { nameZh: "萨拉曼卡站", nameEn: "Salamanca Station", lon: -5.6560, lat: 40.9720, kind: "transport" },
+  ],
+  girona: [
+    { nameZh: "赫罗纳主教座堂", nameEn: "Girona Cathedral", lon: 2.8260, lat: 41.9875, kind: "landmark" },
+    { nameZh: "犹太区", nameEn: "El Call (Jewish Quarter)", lon: 2.8250, lat: 41.9865, kind: "district" },
+    { nameZh: "奥尼亚尔河彩色房屋", nameEn: "Onyar Houses", lon: 2.8240, lat: 41.9850, kind: "landmark" },
+    { nameZh: "阿拉伯浴场", nameEn: "Arab Baths", lon: 2.8265, lat: 41.9885, kind: "landmark" },
+    { nameZh: "城墙步道", nameEn: "Passeig de la Muralla", lon: 2.8300, lat: 41.9860, kind: "landmark" },
+    { nameZh: "赫罗纳站", nameEn: "Girona Station", lon: 2.8170, lat: 41.9790, kind: "transport" },
+  ],
+  "las-palmas": [
+    { nameZh: "拉斯坎特拉斯海滩", nameEn: "Las Canteras Beach", lon: -15.4360, lat: 28.1400, kind: "nature" },
+    { nameZh: "韦格塔老城与圣安娜主教座堂", nameEn: "Vegueta & Santa Ana Cathedral", lon: -15.4140, lat: 28.1000, kind: "district" },
+    { nameZh: "哥伦布之家", nameEn: "Casa de Colón", lon: -15.4130, lat: 28.1005, kind: "landmark" },
+    { nameZh: "加那利博物馆", nameEn: "Museo Canario", lon: -15.4145, lat: 28.0995, kind: "landmark" },
+    { nameZh: "特里亚纳街", nameEn: "Calle Triana", lon: -15.4160, lat: 28.1050, kind: "district" },
+    { nameZh: "圣卡塔利娜公园", nameEn: "Parque Santa Catalina", lon: -15.4310, lat: 28.1400, kind: "nature" },
   ],
 
   // ── 德国 ──
@@ -1954,6 +2095,55 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "海洋博物馆", nameEn: "Ozeaneum", lon: 13.0894, lat: 54.3167, kind: "landmark" },
     { nameZh: "吕根岛白垩崖", nameEn: "Rügen Chalk Cliffs", lon: 13.6461, lat: 54.5578, kind: "nature" },
   ],
+  // ── 德国 批2（2026-09-05）──
+  leipzig: [
+    { nameZh: "圣托马斯教堂", nameEn: "Thomaskirche", lon: 12.3720, lat: 51.3390, kind: "landmark" },
+    { nameZh: "圣尼古拉教堂", nameEn: "Nikolaikirche", lon: 12.3780, lat: 51.3400, kind: "landmark" },
+    { nameZh: "布商大厦与奥古斯特广场", nameEn: "Gewandhaus & Augustusplatz", lon: 12.3800, lat: 51.3380, kind: "landmark" },
+    { nameZh: "民族大会战纪念碑", nameEn: "Monument to the Battle of the Nations", lon: 12.4130, lat: 51.3120, kind: "landmark" },
+    { nameZh: "莱比锡中央车站", nameEn: "Leipzig Hauptbahnhof", lon: 12.3820, lat: 51.3450, kind: "transport" },
+    { nameZh: "棉纺厂艺术区", nameEn: "Spinnerei", lon: 12.3200, lat: 51.3300, kind: "district" },
+  ],
+  stuttgart: [
+    { nameZh: "王宫广场", nameEn: "Schlossplatz", lon: 9.1790, lat: 48.7785, kind: "district" },
+    { nameZh: "梅赛德斯—奔驰博物馆", nameEn: "Mercedes-Benz Museum", lon: 9.2340, lat: 48.7880, kind: "landmark" },
+    { nameZh: "保时捷博物馆", nameEn: "Porsche Museum", lon: 9.1520, lat: 48.8340, kind: "landmark" },
+    { nameZh: "州立美术馆", nameEn: "Staatsgalerie", lon: 9.1870, lat: 48.7800, kind: "landmark" },
+    { nameZh: "威廉玛动植物园", nameEn: "Wilhelma", lon: 9.2050, lat: 48.8040, kind: "nature" },
+    { nameZh: "斯图加特中央车站", nameEn: "Stuttgart Hauptbahnhof", lon: 9.1820, lat: 48.7830, kind: "transport" },
+  ],
+  dusseldorf: [
+    { nameZh: "老城", nameEn: "Altstadt", lon: 6.7720, lat: 51.2260, kind: "district" },
+    { nameZh: "国王大道", nameEn: "Königsallee", lon: 6.7790, lat: 51.2220, kind: "district" },
+    { nameZh: "莱茵河滨步道", nameEn: "Rhine Promenade", lon: 6.7700, lat: 51.2250, kind: "nature" },
+    { nameZh: "媒体港", nameEn: "MedienHafen", lon: 6.7500, lat: 51.2160, kind: "district" },
+    { nameZh: "莱茵塔", nameEn: "Rheinturm", lon: 6.7620, lat: 51.2180, kind: "landmark" },
+    { nameZh: "K20 美术馆", nameEn: "K20 Kunstsammlung", lon: 6.7760, lat: 51.2280, kind: "landmark" },
+  ],
+  lubeck: [
+    { nameZh: "霍尔斯滕门", nameEn: "Holstentor", lon: 10.6800, lat: 53.8660, kind: "landmark" },
+    { nameZh: "圣玛丽教堂", nameEn: "St. Mary's Church", lon: 10.6850, lat: 53.8680, kind: "landmark" },
+    { nameZh: "布登勃洛克之家", nameEn: "Buddenbrookhaus", lon: 10.6850, lat: 53.8690, kind: "landmark" },
+    { nameZh: "尼德埃格杏仁糖店", nameEn: "Niederegger Marzipan", lon: 10.6860, lat: 53.8670, kind: "landmark" },
+    { nameZh: "特拉沃明德海滩", nameEn: "Travemünde Beach", lon: 10.8800, lat: 53.9600, kind: "nature" },
+    { nameZh: "吕贝克中央车站", nameEn: "Lübeck Hauptbahnhof", lon: 10.6700, lat: 53.8670, kind: "transport" },
+  ],
+  rothenburg: [
+    { nameZh: "集市广场与市政厅", nameEn: "Marktplatz & Town Hall", lon: 10.1790, lat: 49.3770, kind: "district" },
+    { nameZh: "普伦莱茵", nameEn: "Plönlein", lon: 10.1800, lat: 49.3740, kind: "landmark" },
+    { nameZh: "城墙步道", nameEn: "Town Wall Walk", lon: 10.1830, lat: 49.3760, kind: "landmark" },
+    { nameZh: "德国圣诞博物馆", nameEn: "German Christmas Museum", lon: 10.1780, lat: 49.3765, kind: "landmark" },
+    { nameZh: "城堡花园", nameEn: "Burggarten", lon: 10.1730, lat: 49.3770, kind: "nature" },
+  ],
+  regensburg: [
+    { nameZh: "石桥", nameEn: "Stone Bridge", lon: 12.0970, lat: 49.0220, kind: "landmark" },
+    { nameZh: "圣彼得主教座堂", nameEn: "St. Peter's Cathedral", lon: 12.0980, lat: 49.0190, kind: "landmark" },
+    { nameZh: "老城与哈德市场", nameEn: "Old Town & Haidplatz", lon: 12.0960, lat: 49.0180, kind: "district" },
+    { nameZh: "历史香肠厨房", nameEn: "Historische Wurstkuchl", lon: 12.0960, lat: 49.0215, kind: "landmark" },
+    { nameZh: "图恩与塔克西斯宫", nameEn: "Thurn und Taxis Palace", lon: 12.1000, lat: 49.0130, kind: "landmark" },
+    { nameZh: "瓦尔哈拉神殿", nameEn: "Walhalla", lon: 12.2260, lat: 49.0320, kind: "landmark" },
+  ],
+
   // ── 希腊 ──
   athens: [
     { nameZh: "卫城与帕特农神庙", nameEn: "Acropolis & Parthenon", lon: 23.7264, lat: 37.9715, kind: "landmark" },

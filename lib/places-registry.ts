@@ -2430,6 +2430,40 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "阿雅克肖市中心 41.9192,8.7386；AJA 机场：公开资料",
   },
 
+  // ── 法国 批2（2026-09-05）──
+  {
+    id: "annecy", nameZh: "安纳西", nameEn: "Annecy", country: "france", tier: "notable", zone: "fr-rhone-alpes", admin1Zh: "奥弗涅-罗讷-阿尔卑斯大区", admin1En: "Auvergne-Rhône-Alpes",
+    lon: 6.1330, lat: 45.9160,
+    source: "Annecy 45.9160,6.1330（en.wikipedia）；无机场，最近为日内瓦（约 45 公里，瑞士）与里昂（约 125 公里），条目不写机场字段；人口 132,117（2023）",
+  },
+  {
+    id: "avignon", nameZh: "阿维尼翁", nameEn: "Avignon", country: "france", tier: "notable", zone: "fr-provence", admin1Zh: "普罗旺斯-阿尔卑斯-蓝色海岸大区", admin1En: "Provence-Alpes-Côte d'Azur",
+    lon: 4.8075, lat: 43.9500,
+    airport: { iata: "MRS", nameZh: "马赛-普罗旺斯机场（经马赛转乘）", nameEn: "Marseille Provence (via Marseille)", lon: 5.2214, lat: 43.4393 },
+    source: "Avignon 43.9500,4.8075（en.wikipedia）；本地 AVN 机场无稳定定期航线，与马赛条目共用 MRS（约 85 公里）；TGV 站在城南；人口 92,188（2023）",
+  },
+  {
+    id: "montpellier", nameZh: "蒙彼利埃", nameEn: "Montpellier", country: "france", tier: "major", zone: "fr-southwest", admin1Zh: "奥克西塔尼大区", admin1En: "Occitanie",
+    lon: 3.8772, lat: 43.6119,
+    airport: { iata: "MPL", nameZh: "蒙彼利埃地中海机场", nameEn: "Montpellier–Méditerranée", lon: 3.9631, lat: 43.5764 },
+    source: "Montpellier 43.6119,3.8772（en.wikipedia）；MPL 机场：en.wikipedia（市中心东南约 7 公里）；人口 310,240（2023），法国第七大城市",
+  },
+  {
+    id: "reims", nameZh: "兰斯", nameEn: "Reims", country: "france", tier: "notable", zone: "fr-north", admin1Zh: "大东部大区", admin1En: "Grand Est",
+    lon: 4.0347, lat: 49.2628,
+    source: "Reims 49.2628,4.0347（en.wikipedia）；无机场，最近为巴黎戴高乐（约 136 公里），条目不写机场字段，TGV 到巴黎约 45 分钟；人口 177,674（2023）",
+  },
+  {
+    id: "colmar", nameZh: "科尔马", nameEn: "Colmar", country: "france", tier: "notable", zone: "fr-alsace", admin1Zh: "大东部大区", admin1En: "Grand Est",
+    lon: 7.3556, lat: 48.0817,
+    source: "Colmar 48.0817,7.3556（en.wikipedia）；无机场，最近为巴塞尔-米卢斯欧洲机场（约 52 公里）、斯特拉斯堡（约 68 公里），条目不写机场字段；人口 66,970（2023）",
+  },
+  {
+    id: "rouen", nameZh: "鲁昂", nameEn: "Rouen", country: "france", tier: "notable", zone: "fr-north", admin1Zh: "诺曼底大区", admin1En: "Normandy",
+    lon: 1.0886, lat: 49.4428,
+    source: "Rouen 49.4428,1.0886（en.wikipedia）；无机场，最近为巴黎戴高乐（约 159 公里），条目不写机场字段，火车到巴黎约 1.5 小时；人口 117,662（2023）",
+  },
+
   // ── 意大利 ──
   {
     id: "rome", nameZh: "罗马", nameEn: "Rome", country: "italy", tier: "capital", zone: "it-central", admin1Zh: "拉齐奥大区", admin1En: "Lazio",
@@ -2498,6 +2532,43 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "卡利亚里市中心 39.2238,9.1217；CAG 机场：公开资料",
   },
 
+  // ── 意大利 批2（2026-09-05）──
+  {
+    id: "verona", nameZh: "维罗纳", nameEn: "Verona", country: "italy", tier: "notable", zone: "it-northeast", admin1Zh: "威尼托大区", admin1En: "Veneto",
+    lon: 10.9928, lat: 45.4386,
+    airport: { iata: "VRN", nameZh: "维罗纳维拉弗兰卡机场", nameEn: "Verona Villafranca", lon: 10.8881, lat: 45.3964 },
+    source: "Verona 45.4386,10.9928（en.wikipedia）；VRN 机场：en.wikipedia（市中心西南约 10 公里）；人口 255,133（2025）",
+  },
+  {
+    id: "genoa", nameZh: "热那亚", nameEn: "Genoa", country: "italy", tier: "major", zone: "it-northwest", admin1Zh: "利古里亚大区", admin1En: "Liguria",
+    lon: 8.9339, lat: 44.4072,
+    airport: { iata: "GOA", nameZh: "热那亚哥伦布机场", nameEn: "Genoa Cristoforo Colombo", lon: 8.8375, lat: 44.4133 },
+    source: "Genoa 44.4072,8.9339（en.wikipedia）；GOA 机场：en.wikipedia（市中心西约 7 公里）；人口 565,301（2025）",
+  },
+  {
+    id: "pisa", nameZh: "比萨", nameEn: "Pisa", country: "italy", tier: "notable", zone: "it-central", admin1Zh: "托斯卡纳大区", admin1En: "Tuscany",
+    lon: 10.4000, lat: 43.7170,
+    airport: { iata: "PSA", nameZh: "比萨伽利略机场", nameEn: "Pisa Galileo Galilei", lon: 10.3925, lat: 43.6839 },
+    source: "Pisa 43.7170,10.4000（en.wikipedia）；PSA 机场：en.wikipedia（市中心南约 2 公里，Pisamover 5 分钟到中央车站）；人口 98,778（2023）",
+  },
+  {
+    id: "siena", nameZh: "锡耶纳", nameEn: "Siena", country: "italy", tier: "notable", zone: "it-central", admin1Zh: "托斯卡纳大区", admin1En: "Tuscany",
+    lon: 11.3306, lat: 43.3186,
+    source: "Siena 43.3186,11.3306（en.wikipedia）；无机场，最近为佛罗伦萨（约 81 公里）、比萨（约 150 公里），条目不写机场字段；人口 53,180（2026）",
+  },
+  {
+    id: "matera", nameZh: "马泰拉", nameEn: "Matera", country: "italy", tier: "notable", zone: "it-south", admin1Zh: "巴西利卡塔大区", admin1En: "Basilicata",
+    lon: 16.6000, lat: 40.6670,
+    airport: { iata: "BRI", nameZh: "巴里机场（经巴里转乘）", nameEn: "Bari Airport (via Bari)", lon: 16.7606, lat: 41.1389 },
+    source: "Matera 40.6670,16.6000（en.wikipedia）；无自有机场，与巴里条目共用 BRI（约 60 公里）；人口 60,403（2018）",
+  },
+  {
+    id: "trieste", nameZh: "的里雅斯特", nameEn: "Trieste", country: "italy", tier: "notable", zone: "it-northeast", admin1Zh: "弗留利-威尼斯朱利亚大区", admin1En: "Friuli-Venezia Giulia",
+    lon: 13.7703, lat: 45.6503,
+    airport: { iata: "TRS", nameZh: "的里雅斯特机场（隆基）", nameEn: "Trieste Airport (Ronchi dei Legionari)", lon: 13.4722, lat: 45.8275 },
+    source: "Trieste 45.6503,13.7703（en.wikipedia）；TRS 机场：en.wikipedia（隆基，市区西北约 40 公里，有火车站）；人口 198,668（2025）",
+  },
+
   // ── 西班牙 ────────────────────────────────────────────
   {
     id: "madrid", nameZh: "马德里", nameEn: "Madrid", country: "spain", tier: "capital", zone: "es-central", admin1Zh: "马德里自治区", admin1En: "Community of Madrid",
@@ -2564,6 +2635,41 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -16.2518, lat: 28.4636,
     airport: { iata: "TFN", nameZh: "特内里费北机场", nameEn: "Tenerife North Airport", lon: -16.341, lat: 28.483 },
     source: "圣克鲁斯-德特内里费市中心 28.4636,-16.2518；TFN 机场：公开资料",
+  },
+
+  // ── 西班牙 批2（2026-09-05）──
+  {
+    id: "san-sebastian", nameZh: "圣塞瓦斯蒂安", nameEn: "San Sebastián (Donostia)", country: "spain", tier: "notable", zone: "es-north", admin1Zh: "巴斯克自治区", admin1En: "Basque Country",
+    lon: -1.9856, lat: 43.3214,
+    airport: { iata: "EAS", nameZh: "圣塞瓦斯蒂安机场（翁达里维亚）", nameEn: "San Sebastián Airport (Hondarribia)", lon: -1.7906, lat: 43.3564 },
+    source: "San Sebastián 43.3214,-1.9856（en.wikipedia）；EAS 机场：en.wikipedia（翁达里维亚，市区东约 20 公里，主要马德里/巴塞罗那航线）；人口 188,487（2024）",
+  },
+  {
+    id: "toledo", nameZh: "托莱多", nameEn: "Toledo", country: "spain", tier: "notable", zone: "es-central", admin1Zh: "卡斯蒂利亚-拉曼恰自治区", admin1En: "Castilla–La Mancha",
+    lon: -4.0244, lat: 39.8567,
+    source: "Toledo 39.8567,-4.0244（en.wikipedia）；无机场，最近为马德里（约 88 公里），条目不写机场字段，AVE 到马德里约 30 分钟；人口 87,216（2025）",
+  },
+  {
+    id: "cordoba", nameZh: "科尔多瓦", nameEn: "Córdoba", country: "spain", tier: "notable", zone: "es-andalusia", admin1Zh: "安达卢西亚自治区", admin1En: "Andalusia",
+    lon: -4.7800, lat: 37.8900,
+    source: "Córdoba 37.8900,-4.7800（en.wikipedia）；无商业机场，最近为塞维利亚（约 140 公里）、马拉加（约 160 公里），条目不写机场字段，AVE 到马德里约 1 小时 45 分；人口 324,902（2024）",
+  },
+  {
+    id: "salamanca", nameZh: "萨拉曼卡", nameEn: "Salamanca", country: "spain", tier: "notable", zone: "es-central", admin1Zh: "卡斯蒂利亚-莱昂自治区", admin1En: "Castile and León",
+    lon: -5.6642, lat: 40.9650,
+    source: "Salamanca 40.9650,-5.6642（en.wikipedia）；本地机场无稳定定期航线，最近为马德里（约 200 公里），条目不写机场字段；人口 144,458（2024）",
+  },
+  {
+    id: "girona", nameZh: "赫罗纳", nameEn: "Girona", country: "spain", tier: "notable", zone: "es-catalonia", admin1Zh: "加泰罗尼亚自治区", admin1En: "Catalonia",
+    lon: 2.8211, lat: 41.9844,
+    airport: { iata: "GRO", nameZh: "赫罗纳-布拉瓦海岸机场", nameEn: "Girona–Costa Brava", lon: 2.7606, lat: 41.9008 },
+    source: "Girona 41.9844,2.8211（en.wikipedia）；GRO 机场：en.wikipedia（市区西南约 12.5 公里，以廉航为主）；人口 108,666（2025）",
+  },
+  {
+    id: "las-palmas", nameZh: "大加那利岛拉斯帕尔马斯", nameEn: "Las Palmas de Gran Canaria", country: "spain", tier: "major", zone: "es-canary", admin1Zh: "加那利群岛自治区", admin1En: "Canary Islands",
+    lon: -15.4353, lat: 28.1258,
+    airport: { iata: "LPA", nameZh: "大加那利机场", nameEn: "Gran Canaria Airport", lon: -15.3867, lat: 27.9319 },
+    source: "Las Palmas 28.1258,-15.4353（en.wikipedia）；LPA 机场：en.wikipedia（市区南约 19 公里）；人口 383,516（2024）",
   },
 
   // ── 德国 ────────────────────────────────────────────
@@ -2699,6 +2805,42 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 22.9444, lat: 39.3622,
     airport: { iata: "VOL", nameZh: "内阿安希阿洛斯国家机场", nameEn: "Nea Anchialos National Airport", lon: 22.7943, lat: 39.2197 },
     source: "沃洛斯市中心 39.3622,22.9444；VOL 机场：公开资料",
+  },
+
+  // ── 德国 批2（2026-09-05）──
+  {
+    id: "leipzig", nameZh: "莱比锡", nameEn: "Leipzig", country: "germany", tier: "major", zone: "de-east", admin1Zh: "萨克森州", admin1En: "Saxony",
+    lon: 12.3750, lat: 51.3400,
+    airport: { iata: "LEJ", nameZh: "莱比锡/哈雷机场", nameEn: "Leipzig/Halle Airport", lon: 12.2364, lat: 51.4239 },
+    source: "Leipzig 51.3400,12.3750（en.wikipedia）；LEJ 机场：en.wikipedia（市区西北约 20 公里，S-Bahn 直达，DHL 欧洲枢纽）；人口 633,592（2025-12）",
+  },
+  {
+    id: "stuttgart", nameZh: "斯图加特", nameEn: "Stuttgart", country: "germany", tier: "major", zone: "de-southwest", admin1Zh: "巴登-符腾堡州", admin1En: "Baden-Württemberg",
+    lon: 9.1800, lat: 48.7775,
+    airport: { iata: "STR", nameZh: "斯图加特机场", nameEn: "Stuttgart Airport", lon: 9.2219, lat: 48.6900 },
+    source: "Stuttgart 48.7775,9.1800（en.wikipedia）；STR 机场：en.wikipedia（市中心南约 13 公里，S2/S3 约 30 分钟）；人口 612,663（2024-12）",
+  },
+  {
+    id: "dusseldorf", nameZh: "杜塞尔多夫", nameEn: "Düsseldorf", country: "germany", tier: "major", zone: "de-west", admin1Zh: "北莱茵-威斯特法伦州", admin1En: "North Rhine-Westphalia",
+    lon: 6.7767, lat: 51.2256,
+    airport: { iata: "DUS", nameZh: "杜塞尔多夫机场", nameEn: "Düsseldorf Airport", lon: 6.7667, lat: 51.2894 },
+    source: "Düsseldorf 51.2256,6.7767（en.wikipedia）；DUS 机场：en.wikipedia（市中心北约 7 公里，德国第四繁忙机场）；人口 619,444（2025-12）",
+  },
+  {
+    id: "lubeck", nameZh: "吕贝克", nameEn: "Lübeck", country: "germany", tier: "notable", zone: "de-north", admin1Zh: "石勒苏益格-荷尔斯泰因州", admin1En: "Schleswig-Holstein",
+    lon: 10.6864, lat: 53.8697,
+    airport: { iata: "HAM", nameZh: "汉堡机场（经汉堡转乘）", nameEn: "Hamburg Airport (via Hamburg)", lon: 9.9882, lat: 53.6304 },
+    source: "Lübeck 53.8697,10.6864（en.wikipedia）；本地布兰肯泽机场航线极少，与汉堡条目共用 HAM（约 74 公里）；人口 216,889（2024-12）",
+  },
+  {
+    id: "rothenburg", nameZh: "罗滕堡", nameEn: "Rothenburg ob der Tauber", country: "germany", tier: "notable", zone: "de-bavaria", admin1Zh: "巴伐利亚州", admin1En: "Bavaria",
+    lon: 10.1800, lat: 49.3800,
+    source: "Rothenburg ob der Tauber 49.3800,10.1800（en.wikipedia）；无机场，最近为纽伦堡（约 100 公里），条目不写机场字段，火车经 Steinach 换乘；人口 11,365（2024-12）",
+  },
+  {
+    id: "regensburg", nameZh: "雷根斯堡", nameEn: "Regensburg", country: "germany", tier: "notable", zone: "de-bavaria", admin1Zh: "巴伐利亚州", admin1En: "Bavaria",
+    lon: 12.0830, lat: 49.0170,
+    source: "Regensburg 49.0170,12.0830（en.wikipedia）；无机场，最近为慕尼黑（约 120 公里）、纽伦堡（约 100 公里），条目不写机场字段；人口 151,389（2024-12）",
   },
 
   // ── 葡萄牙 ──
