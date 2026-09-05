@@ -4779,6 +4779,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   athens: {
     identity:
       "雅典是希腊的首都与最大城市，阿提卡大区的中心，都会区人口约300余万，是欧洲历史最悠久的城市之一，也是古典时期民主制度、哲学与戏剧的重要发源地之一。",
+    // howItWorks sources: Wikipedia (2026-09): Athens (municipality 39 km², 643,452 2021, 7 districts; urban ~3.06 million; metro ~3.64 million; Attica ~58 municipalities, Piraeus separate; metro 3 lines; polykatoikia)
+    howItWorks:
+      "人们口中的雅典，在行政上只是一个约 39 平方公里的雅典市，2021 年人口约 64 万，市下分 7 个区；而雅典城区约 306 万人，包括比雷埃夫斯港市在内的阿提卡大区约 364 万人，由 58 个左右各有自己市长和市议会的市镇拼成，2011 年的卡利克拉提斯改革后大区有了民选的大区长，管交通规划与区域事务，市镇管垃圾、地方道路与社会服务，警察与学校归中央政府。城市铺满被四座山围住的阿提卡盆地：宪法广场、普拉卡与蒙纳斯提拉基是市中心，卫城与吕卡维多斯山是两个坐标，北面的基菲夏是富裕的郊区，西面与港口一带是工薪区。战后建起的六七层公寓楼（polykatoikia）是整座城的建筑基底。地址写“街道、门牌、邮编”，本地人以街区名说位置。三条地铁线、有轨电车与通往机场的市郊铁路连起城区。初来的人最容易犯的错，是把雅典市当作整座城，而它只占城区人口的五分之一。",
     layout:
       "卫城山丘是城市的地理与历史中心，帕特农神庙矗立其上俯瞰全城；山下的普拉卡老城区街巷密布，保留着新古典主义建筑；宪法广场周边是现代市中心，希腊国会大厦与无名战士墓在此；比雷埃夫斯港是雅典的门户港口，连接全国及爱琴海诸岛的渡轮多从此发船。",
     gettingAround:
@@ -4794,6 +4797,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   thessaloniki: {
     identity:
       "塞萨洛尼基是希腊第二大城市，马其顿地区的中心，都会区人口约80万，濒临萨洛尼卡湾，是希腊北部重要的港口与文化中心，拜占庭时期长期是仅次于君士坦丁堡的第二大城市。",
+    // howItWorks sources: Wikipedia (2026-09): Thessaloniki (municipality ~19 km², ~320,000 2021; urban ~800,000; metro ~1.1 million; Central Macedonia capital; Hébrard plan after 1917 fire; UNESCO 1988; metro Nov 2024; Aristotle University)
+    howItWorks:
+      "塞萨洛尼基是中马其顿大区的首府，希腊第二大城市；塞萨洛尼基市本身只有约 19 平方公里，2021 年人口约 32 万，而包括卡拉马里亚、皮莱亚等市镇的城区约 80 万人，都会区约 110 万，各市镇有自己的市长和市议会，大区有民选的大区长，警察与学校归中央。城市沿海湾展开：1917 年大火之后，埃布拉尔的规划把市中心改成了以亚里士多德广场为轴的格网，海滨长廊与白塔是坐标原点，拉达迪卡是旧仓库区改成的餐饮区；山坡上的上城保留着拜占庭城墙与旧街巷，1988 年一批早期基督教与拜占庭建筑列入世界遗产，奥斯曼时期的清真寺、犹太会堂与教堂在同一座城里并存。亚里士多德大学是希腊最大的大学，学生让这座城比雅典年轻。2024 年 11 月第一条地铁线通车，此前只有公交。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把塞萨洛尼基当作雅典的缩小版，而它有自己的规划、口音与节奏。",
     layout:
       "白塔是滨海地标，沿海岸线延伸的滨海大道是市民休闲的核心区域；亚里士多德广场周边是商业中心；古罗马广场、加莱里乌斯拱门等遗迹散布在老城中；上城（阿诺波利）保留着传统石砌民居与拜占庭城墙。",
     gettingAround:
@@ -4809,6 +4815,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   heraklion: {
     identity:
       "伊拉克利翁是克里特岛最大的城市与首府，人口约14万，是克里特岛的交通枢纽与经济中心，威尼斯统治时期曾是地中海重要的贸易港口。",
+    // howItWorks sources: Wikipedia (2026-09): Heraklion (municipality ~245 km², 179,302 2021; Crete regional capital; Venetian walls; airport 5 km east, second busiest; Kastelli under construction; Knossos 5 km)
+    howItWorks:
+      "伊拉克利翁是克里特大区的首府与克里特岛最大的城市，大区有民选的大区长，市镇有自己的市长和市议会；伊拉克利翁市约 245 平方公里，2021 年人口约 18 万。老城被威尼斯时期的城墙围住，库莱斯要塞守着旧港，莫罗西尼喷泉与凉廊在城中心，城墙之外是战后长出的街区。港口是通往比雷埃夫斯与爱琴海诸岛的渡轮枢纽；东面 5 公里的尼科斯·卡赞扎基斯机场是希腊第二繁忙的机场，卡斯特利的新机场正在建设中，建成后将取代它。克诺索斯宫在市区南面约 5 公里，克里特大学的一个校区在城里。橄榄与葡萄是旅游之外的产业。没有轨道交通，公交与汽车承担出行。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把伊拉克利翁当作去克诺索斯的中转站，而它是一座有自己老城与港口生活的岛屿首府。",
     layout:
       "威尼斯港与科尔斯要塞是滨海地标；老城内的1866大街是主要商业步行街；克诺索斯米诺斯王宫遗址位于市区以南约5公里，是克里特岛最重要的考古遗址。",
     gettingAround:
@@ -4987,6 +4996,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   patras: {
     identity:
       "帕特雷在伯罗奔尼撒半岛西北角的帕特雷湾畔，是希腊第三大城市，人口约21.6万（2021年），也是通往意大利的主要港口（安科纳、巴里航线）。2004年建成的里奥—安蒂里奥大桥（长约2.9公里，世界上最长的多跨斜拉桥之一）把伯罗奔尼撒与希腊大陆连起来。帕特雷狂欢节（1–2月）是希腊最大、欧洲最大的狂欢节之一；圣安德烈主教座堂（1908–1974年）保存着使徒圣安德烈的遗骨，是希腊最大的教堂之一；公元160年前后的罗马音乐厅和拜占庭城堡在上城。1861年创办的阿凯亚克劳斯酒庄以马夫罗达夫尼甜酒出名，2006年帕特雷是欧洲文化之都。",
+    // howItWorks sources: Wikipedia (2026-09): Patras (municipality ~335 km², 215,922 2021; Western Greece capital; upper/lower town, grid 1858; Rio–Antirrio 2004; ferries to Italy; Athens ~210 km)
+    howItWorks:
+      "帕特雷是西希腊大区的首府与希腊第三大城市，大区有民选的大区长，市镇有自己的市长和市议会；帕特雷市约 335 平方公里，2021 年人口约 22 万。城市分成上下两层：上城在帕纳海科山脚的坡地上，有中世纪的城堡与罗马音乐厅；下城是 1858 年规划的格网，乔治一世广场是它的中心，圣尼古拉台阶把上下两城连起来，圣安德鲁大教堂在海边。港口是希腊通往意大利的门户，渡轮开往安科纳、巴里与威尼斯；2004 年通车的里奥—安蒂里奥大桥把伯罗奔尼撒与希腊大陆连在一起，桥就在城市东郊。三所公立大学让它成为一座大学城，狂欢节是一年里最大的节日。铁路只有有限的市郊线，出行靠公交与汽车。雅典在东面约 210 公里。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把帕特雷当作一个渡轮码头，而它是伯罗奔尼撒的行政与商业中心。",
     layout:
       "城市分上城和下城：下城在海边的平地上，格奥尔基奥斯广场是中心，港口和渡轮码头沿海岸；上城在山坡上，有城堡和罗马音乐厅，一条大台阶连接上下城。圣安德烈主教座堂在下城的西南海边。里奥—安蒂里奥大桥在城东北约10公里的里奥；阿凯亚克劳斯酒庄在东南约8公里的山上。火车站在港口边（郊区铁路）。",
     gettingAround:
@@ -5031,6 +5043,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lisbon: {
     identity:
       "里斯本是葡萄牙首都，都会区约 280 万人，坐落在特茹河注入大西洋前的宽阔河口北岸，是欧洲最古老的城市之一。城市建在七座山丘上，1755年大地震后重建的下城区（拜夏）呈规整网格，与老城阿尔法玛区的中世纪窄巷形成鲜明对比。",
+    // howItWorks sources: Wikipedia (2026-09): Lisbon (municipality ~100 km², ~548,700 2025; 24 freguesias since 2012; LMA 18 municipalities, 2021 census ~2.87 million ≈ 28% of Portugal; Metro 4 lines; Carris; Pombaline grid after 1755)
+    howItWorks:
+      "人们口中的里斯本，在行政上只是约 100 平方公里的里斯本市，2025 年人口约 55 万，由民选的市政厅（câmara）治理，市下分 24 个堂区（freguesia）——2012 年从 53 个合并而来——各有民选的堂区委员会；而里斯本都会区由 18 个市镇组成，2021 年普查约 287 万人，占葡萄牙的 28%，辛特拉、卡斯卡伊斯、洛里什、阿马多拉，以及特茹河对岸的阿尔马达，各有自己的市政厅。城市建在特茹河口的七座山丘上：1755 年地震后按庞巴尔侯爵的规划重建的下城是方格网，阿尔法马、上城区、希亚多在两侧的山坡上，新大道区是 20 世纪的扩展，万国公园是 1998 年世博会留下的新区，贝伦在西面的河边。地址写“街道、门牌、邮编”。四条地铁线、Carris 的有轨电车与 CP 市郊铁路用一张 Navegante 卡贯通，4 月 25 日大桥与瓦斯科·达·伽马大桥跨过河口。初来的人最容易犯的错，是把里斯本市当作整座城，而它只占都会区人口的五分之一。",
     layout:
       "里斯本核心是三片老区：阿尔法玛（河边最古老的区域，摩尔时期格局，圣乔治城堡俯瞰全城）、拜夏（1755年地震后按当时规划理念重建的方格网商业区）、希亚多与巴伊罗阿尔托（文艺与夜生活区）。西侧的贝伦区沿河而建，是大航海时代的纪念建筑群所在地。",
     gettingAround:
@@ -5061,6 +5076,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   porto: {
     identity:
       "波尔图是葡萄牙第二大城市，都会区约 170 万人，坐落在杜罗河即将注入大西洋前的河口北岸，是波特酒的命名地和主要出口港。老城因保存完好的中世纪河岸街区，1996年整体列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Porto (municipality 41.42 km², 2021 census ~231,800; 7 freguesias since 2013; AMP 17 municipalities ~1.7 million; Gaia/Matosinhos/Maia separate; Metro 6 lines; Andante; Ribeira UNESCO 1996)
+    howItWorks:
+      "人们口中的波尔图，在行政上只是约 41 平方公里的波尔图市，2021 年人口约 23 万，由民选的市政厅治理，市下分 7 个堂区（2013 年合并而来）；而波尔图都会区由 17 个市镇组成，约 170 万人：杜罗河对岸的加亚新城——波特酒酒窖所在的那一岸——是另一座人口比波尔图更多的市，海边的马托西纽什是港口与海滩，机场在马亚。老城里贝拉沿河岸层层叠上山坡，1996 年列入世界遗产，路易一世大桥的上层走地铁与行人、下层走汽车；自由大道一带的下城是商业中心，博阿维斯塔是西面的新商务区，福什是杜罗河入海处的海滨住宅区。波尔图地铁的六条线跨越多个市镇，用一张 Andante 卡贯通。地址写“街道、门牌、邮编”。本地人自称“吃内脏的人”（tripeiros），法式三明治 francesinha 是这座城的发明。初来的人最容易犯的错，是把加亚新城当作波尔图的一个区，而它是河对岸另一座有自己市政厅的城市。",
     layout:
       "波尔图老城里贝拉区沿杜罗河北岸陡坡而建，房屋层层叠叠、色彩斑斓。杜罗河南岸的加亚新城是传统的波特酒酒窖聚集区，与里贝拉区隔河相望，两岸由19世纪建造的路易一世大桥连接。",
     gettingAround:
@@ -5151,6 +5169,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   faro: {
     identity:
       "法鲁是阿尔加维大区首府，都会区约 6.4 万人，是葡萄牙南部海岸旅游的门户机场所在地。老城保留完好的城墙和摩尔时期格局，紧邻福尔摩沙潟湖国家公园。",
+    // howItWorks sources: Wikipedia (2026-09): Faro (municipality ~203 km², 70,347 2024; Algarve seat since 1756; Cidade Velha; Ria Formosa; airport >10 million passengers 2025; University of the Algarve)
+    howItWorks:
+      "法鲁是阿尔加维大区的首府——1756 年起就是这一带的行政中心——也是法鲁区的首府，由民选的市政厅治理，市下分几个堂区；市镇约 203 平方公里，2024 年人口约 7 万。人们心中的“阿尔加维度假区”大多不在这里：阿尔布费拉、维拉摩拉、拉古什各在自己的市镇里，法鲁是本地人生活与办事的城市。城墙围住的老城 Cidade Velha 在海边，城门拱与大教堂在里面，码头与游艇港在城墙外；市镇的一半是福尔摩沙潟湖国家公园，德塞塔岛、库拉特拉岛这样的沙洲岛属于法鲁，靠渡船往来。法鲁机场在市区西面约 7 公里，2025 年旅客超过 1,000 万，几乎是整个阿尔加维的门户；铁路通往里斯本。阿尔加维大学在城里。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把法鲁当作一个机场城市，而它是一座有老城、潟湖与大学的首府。",
     layout:
       "法鲁老城被城墙环绕，主教座堂广场是核心，周边石板窄巷保留摩尔和中世纪格局。老城外是较现代的商业区和滨海步道，福尔摩沙潟湖就在城南，需坐船进入。",
     gettingAround:
@@ -5284,6 +5305,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   brussels: {
     identity:
       "布鲁塞尔是比利时首都，人口约120万，也是欧洲联盟总部与北约总部的所在地，是名副其实的“欧洲首都”。",
+    // howItWorks sources: Wikipedia (2026-09): Brussels (Brussels-Capital Region 162 km², ~1.25 million 2024, 19 municipalities, formed 1989; City of Brussels ~190,000; bilingual FR/NL; STIB 4 metro lines; postcodes 1000–1210; Grand-Place UNESCO 1998)
+    howItWorks:
+      "人们口中的布鲁塞尔，在行政上是比利时三个大区之一的布鲁塞尔首都大区：约 162 平方公里、2024 年约 125 万人，1989 年设立，有自己的大区政府与议会，由 19 个市镇拼成，每个市镇都有民选的市长和市议会，管地方警务、道路与户籍。名义上的“布鲁塞尔市”只是其中之一，约 19 万人，包括五边形的老城中心、北面的拉肯与欧盟机构所在的东北区；伊克塞尔、斯哈尔贝克、安德莱赫特、于克勒各是独立的市镇，本地人的地址以市镇名而非“布鲁塞尔”标注。大区法定双语，法语与荷兰语并列，实际以法语为主，而它四周被荷兰语区的弗拉芒布拉班特省整个包围。舒曼一带的欧盟区让它同时是比利时、弗拉芒大区与欧盟的首都。地址写“街道、门牌、邮编”，邮编 1000 至 1210 对应各市镇。STIB 的四条地铁线与有轨电车连起大区，R0 环路是边界。大广场 1998 年列入世界遗产。初来的人最容易犯的错，是把“布鲁塞尔市”当作整座城，而它只是 19 个市镇里的一个。",
     layout:
       "大广场是老城的核心，被哥特式市政厅与巴洛克式行会建筑环绕，1998年列入联合国教科文组织世界遗产名录；欧盟区位于市中心东侧，欧盟委员会等机构总部集中于此；圣米歇尔大教堂位于老城北侧高地。",
     gettingAround:
@@ -5299,6 +5323,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   antwerp: {
     identity:
       "安特卫普是比利时第二大城市，人口约53万，坐落在斯海尔德河畔，是欧洲第二大港口城市，也是世界重要的钻石贸易中心。",
+    // howItWorks sources: Wikipedia (2026-09): Antwerp (~208 km²; ~565,000 2024; 10 districts with elected councils since 2001, Borsbeek added 2025; Port of Antwerp-Bruges second in Europe; De Lijn premetro; postcodes 2000–2660)
+    howItWorks:
+      "安特卫普是弗拉芒大区安特卫普省的省会，比利时人口最多的市镇，约 208 平方公里，2024 年人口约 56 万，荷兰语是官方语言；市下分 10 个区（district），2001 年起各区有民选的区议会，2025 年博尔斯贝克并入后成为第十个区。斯海尔德河从城西流过，左岸新区靠隧道与老城相连；大广场与大教堂是老城的核心，小岛区是旧港区改成的新区，南区是博物馆与画廊的街区，中央车站旁是钻石区。安特卫普—布鲁日港（2022 年合并）是欧洲第二大港，港区从老城向北延伸几十公里。De Lijn 的有轨电车在市中心走地下，称为“前地铁”；R1 环路围住市区。犹太社群与时装学院是这座城的两个标签。地址写“街道、门牌、邮编”，邮编 2000 至 2660 对应各区。初来的人最容易犯的错，是把安特卫普当作一座港口工业城，而港口在几十公里外，城市本身是老城、时装与钻石。",
     layout:
       "大广场与市政厅是老城中心；圣母大教堂哥特式尖塔是城市天际线的标志；钻石区位于中央火车站附近，集中了众多钻石加工与交易商铺。",
     gettingAround:
@@ -5314,6 +5341,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bruges: {
     identity:
       "布鲁日是西弗兰德省首府，人口约12万，以保存完好的中世纪运河与老城建筑闻名，老城2000年列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Bruges (~141 km²; ~119,000 2023; West Flanders capital; oval centre ~430 ha UNESCO 2000; 8 sub-municipalities; Zeebrugge 15 km within municipality; ~8 million visitors/yr)
+    howItWorks:
+      "布鲁日是弗拉芒大区西弗拉芒省的省会，市镇约 141 平方公里，2023 年人口约 12 万，荷兰语是官方语言，本地方言是西弗拉芒语。人们心中的布鲁日是运河环绕的椭圆形中世纪老城——约 430 公顷，2000 年列入世界遗产，市集广场、钟楼与城堡广场都在里面——而市镇由 8 个分区组成，圣安德里斯、圣米希尔、阿塞布鲁克是本地人住的郊区，北面 15 公里的泽布吕赫港也在市界之内，2022 年与安特卫普港合并。每年约 800 万游客涌入一座只有十几万居民的城，老城里的常住人口只是很小一部分。市中心限制汽车，De Lijn 的公交连接车站与各区，根特、奥斯坦德在半小时车程内。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把老城当作整个布鲁日，而市民的大多数住在运河之外的分区里，港口则在海边。",
     layout:
       "老城被环形运河环绕，市集广场与钟楼是历史中心；爱之湖公园与贝居安会院是老城内幽静的景点，运河两岸的中世纪建筑保存极为完整。",
     gettingAround:
@@ -5465,6 +5495,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   amsterdam: {
     identity:
       "阿姆斯特丹是荷兰首都，都会区约150万人，因阿姆斯特尔河上修建的一道水坝而得名（“阿姆斯特尔水坝”），17世纪荷兰黄金时代崛起为全球贸易和金融中心，环绕市中心的同心圆运河带至今保存完好，2010年整体列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Amsterdam (~219 km²; ~935,000 2024; 7 stadsdelen + Weesp 2022; MRA ~2.5 million; Randstad ~8 million; canal ring UNESCO 2010; GVB 5 metro lines; capital by constitution, government in The Hague; Schiphol in Haarlemmermeer); Municipalities of the Netherlands (mayors appointed by the Crown)
+    howItWorks:
+      "阿姆斯特丹是荷兰宪法上的首都，而政府、议会与王宫的办公都在海牙。市镇约 219 平方公里，2024 年人口约 94 万，由民选市议会治理，市长像荷兰所有市长一样由国王任命；市下分 7 个区（stadsdeel）与 2022 年并入的韦斯普，各区的委员会 2014 与 2022 年后权力缩小。阿姆斯特丹都会区约 250 万人，阿姆斯特尔芬、哈勒姆、赞斯塔德各是独立的市镇，兰斯塔德城市群约 800 万；史基浦机场在哈勒默梅尔市镇。城市从 17 世纪的运河环向外生长，运河环 2010 年列入世界遗产；北区隔着 IJ 湾，靠免费渡轮往来，南轴是新的商务区，拜尔默是 1970 年代的高层住宅区。地址写“街道、门牌、四位数字加两个字母的邮编”。GVB 的五条地铁线——2018 年通车的南北线穿过市中心——有轨电车与渡轮用一张 OV 卡贯通，自行车承担了市内出行的大部分。住房短缺是这座城的日常话题。初来的人最容易犯的错，是把运河环当作整座城，而它只是 94 万人城市的一小片。",
     layout:
       "阿姆斯特丹老城以四条同心圆运河为骨架，中心是水坝广场（王宫所在地）。运河带内是历史建筑密集的老城区，包括著名的红灯区和约旦区；运河带外围是南区、东区等较现代的居住和商业区。整座城市地面低平，多数区域低于或接近海平面。",
     gettingAround:
@@ -5510,6 +5543,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rotterdam: {
     identity:
       "鹿特丹是荷兰第二大城市，都会区约120万人，是欧洲最大的港口城市，二战期间市中心几乎被彻底炸毁，战后重建时大胆采用现代主义和当代建筑风格，与阿姆斯特丹的历史街区形成鲜明对比，被称为荷兰的“建筑之都”。",
+    // howItWorks sources: Wikipedia (2026-09): Rotterdam (~325 km² incl. water; ~670,000 2024; 14 area committees; MRDH ~2.4 million; port ~40 km to Maasvlakte, largest in Europe; 1940 bombing; RET metro 5 lines shared with The Hague; Hoek van Holland in municipality); Municipalities of the Netherlands
+    howItWorks:
+      "鹿特丹市约 325 平方公里，包括大片港区与水面，2024 年人口约 67 万，由民选市议会治理，市长由国王任命；市下分 14 个片区，各有自己的片区委员会。它与海牙合成约 240 万人的都会区，MRDH 交通局统管两城的公交，五条地铁线在两座城之间穿行。鹿特丹港是欧洲最大的港口，从市区沿新马斯河向西延伸约 40 公里直到马斯平原，胡克港这个渡轮码头也在市界之内。1940 年的轰炸夷平了市中心，战后从零重建，于是这座城没有老城，而是现代建筑的试验场——市场大厅、立方体屋、高楼群；新马斯河把城市分成北岸的中心区与南岸的费耶诺德、南岬新区，伊拉斯谟大桥把两岸连起来。约半数市民有移民背景。地址写“街道、门牌、四位数字加两个字母的邮编”。地铁、有轨电车与公交用一张 OV 卡贯通。初来的人最容易犯的错，是在鹿特丹找老城，而它的身份正是战后重建的现代城市。",
     layout:
       "鹿特丹市中心因二战重建而呈现开阔的现代都市格局，方块屋、天鹅桥、市场大厅等标志性当代建筑散布其间。马斯河穿城而过，河岸新区（如鹿特丹南区）近年发展迅速。港口区（欧罗波特）在城市西侧沿马斯河延伸至北海。",
     gettingAround:
@@ -5570,6 +5606,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   utrecht: {
     identity:
       "乌得勒支是荷兰第四大城市，都会区约36万人，地处荷兰地理中心，是全国最重要的铁路枢纽，也是乌得勒支大学（荷兰最大的大学之一）所在地。城市历史可追溯至罗马时代，中世纪曾是荷兰宗教中心。",
+    // howItWorks sources: Wikipedia (2026-09): Utrecht (~99 km²; ~378,000 Jan 2026; 10 wijken; Utrecht Centraal largest station; Dom Tower 112 m; Oudegracht; Leidsche Rijn; canal restored 2020; 51% of trips by bicycle; 12,500-bike parking; university 1636); Municipalities of the Netherlands
+    howItWorks:
+      "乌得勒支是乌得勒支省的省会与荷兰第四大城市，市镇约 99 平方公里，2026 年人口约 38 万，由民选市议会治理，市长由国王任命；市下分 10 个片区（wijk）。它在荷兰的地理中心，乌得勒支中央车站是全国最大的火车站，几乎所有的干线在这里交汇；中世纪的老城被运河围住，旧运河两侧的码头地窖是它独有的街景，大教堂塔高 112 米，是荷兰最高的教堂塔，2020 年填掉的护城河段重新挖回了水道。阿姆斯特尔—莱茵运河以西的莱茨赫莱茵是荷兰最大的新城规划区，乌得勒支科学园与 1636 年创办的大学在东面。市内 51% 的出行靠自行车，车站旁的自行车停车场可停 12,500 辆，是世界最大的。地址写“街道、门牌、四位数字加两个字母的邮编”。Uithoflijn 有轨电车连接车站与科学园。初来的人最容易犯的错，是把乌得勒支当作阿姆斯特丹的卫星城，而它是兰斯塔德四座主城之一，铁路网的心脏。",
     layout:
       "乌得勒支老城的多层运河（沃尔肯运河，河岸下层是仓库改造的餐厅酒吧、上层是街道）是其独特的城市结构。多姆塔（荷兰最高的教堂钟塔）是全城地标，塔身与多姆教堂主体因18世纪一场龙卷风摧毁中殿而分离，如今中间是广场。",
     gettingAround:
@@ -5631,6 +5670,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   eindhoven: {
     identity:
       "埃因霍温在荷兰南部的北布拉班特省，是荷兰第五大城市，人口约24.9万（2025年）。1891年飞利浦在这里创办灯泡厂，城市随之从村庄长成工业城市；如今飞利浦的旧厂区斯特赖普S变成了创意园区，DAF 卡车、附近费尔德霍芬的 ASML 和高科技园区让它成为“智慧港”（Brainport）科技区的中心，埃因霍温理工大学和设计学院支撑了每年10月的荷兰设计周。范阿贝博物馆收藏现代艺术，PSV 是荷兰豪门球队，梵高曾在邻镇纽嫩生活作画。",
+    // howItWorks sources: Wikipedia (2026-09): Eindhoven (~89 km²; ~250,000; merger 1920; Philips 1891; Brainport/Metropoolregio ~800,000; TU/e; High Tech Campus; Strijp-S; Dutch Design Week; airport; no tram/metro); Municipalities of the Netherlands
+    howItWorks:
+      "埃因霍温是荷兰第五大城市、兰斯塔德之外最大的城市，市镇约 89 平方公里，人口约 25 万，由民选市议会治理，市长由国王任命；今天的市镇是 1920 年由老城与周围的沃恩瑟尔、斯特赖普、赫斯特尔、斯特拉图姆、通厄尔勒等村庄合并而成，这些名字仍是本地人说位置的语言。1891 年在这里创办的飞利浦造就了这座城：市中心在二战中毁坏后重建，斯特赖普-S 是旧飞利浦厂区改成的创意区，高科技园区在城南，埃因霍温理工大学在市中心东侧。以“脑港”为名的都会区约 80 万人，ASML 所在的费尔德霍芬与海尔蒙德各是独立的市镇。设计学院与每年十月的荷兰设计周是这座城的另一面，PSV 是它的球队。没有地铁与有轨电车，公交与自行车承担出行，机场是荷兰第二繁忙的。地址写“街道、门牌、四位数字加两个字母的邮编”。初来的人最容易犯的错，是把埃因霍温当作一座工厂城，而它是荷兰的技术与设计中心。",
     layout:
       "市中心围绕火车站和市场广场，步行街和购物区在站南；斯特赖普S在市中心西北约2公里的旧厂区，埃沃吕翁（飞碟形的旧科技馆）在西面；范阿贝博物馆在市中心南侧的运河边，飞利浦博物馆在市中心，PSV 球场在市中心西北。高科技园区在城南。纽嫩在东北约8公里，机场在西面约8公里。",
     gettingAround:
@@ -5718,6 +5760,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   vienna: {
     identity:
       "维也纳是奥地利首都与最大城市，人口约190万，曾是哈布斯堡王朝统治下奥匈帝国的首都，至今保留着深厚的古典音乐、咖啡馆与皇室建筑传统。",
+    // howItWorks sources: Wikipedia (2026-09): Vienna (city + federal state; mayor = governor; 23 Bezirke with elected councils, spiral numbering; ~415 km²; ~2.0 million 2024; metro ~2.9 million; U-Bahn 5 lines; €365 pass; ~60% in subsidised housing; postcode 1010 etc.)
+    howItWorks:
+      "维也纳既是一座城，也是奥地利九个联邦州之一：市长同时是州长，市议会同时是州议会。市下分 23 个区（Bezirk），各有民选的区代表会与区长；区的编号从中心螺旋向外：第 1 区内城在环城大道之内，第 2 至 9 区在环城大道与外环路（Gürtel）之间，第 10 至 23 区在外环路之外。市域约 415 平方公里，2024 年人口约 200 万，加上四周下奥地利州的都会区约 290 万。多瑙河从城的东北流过，多瑙岛与多瑙城是河边的新区，维也纳森林在西缘，葡萄园至今在市界之内。约六成市民住在市政住宅或补贴住房里，这是维也纳一百年来的住房政策。地址写“区号、街道、门牌”，邮编的中间两位就是区号——1010 是第 1 区，1230 是第 23 区。维也纳交通公司的五条地铁线、有轨电车与公交用一张 365 欧元的年票贯通。初来的人最容易犯的错，是把环城大道以内当作维也纳，而它只是 23 个区里最小的一个。",
     layout:
       "环城大道（Ringstrasse）环绕老城核心，沿途分布着国家歌剧院、艺术史博物馆等地标建筑；美泉宫是哈布斯堡王朝的夏宫，位于市区西南；圣斯蒂芬大教堂是老城的地理与精神中心。",
     gettingAround:
@@ -5733,6 +5778,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   salzburg: {
     identity:
       "萨尔茨堡是萨尔茨堡州首府，人口约15万，是作曲家莫扎特的出生地，老城保存完好的巴洛克建筑群1996年列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Salzburg (statutory city, state capital; 65.65 km²; ~158,000 2026; Altstadt UNESCO 1996; Salzach; buses/trolleybuses + S-Bahn; Freilassing 5 km; ~2 million visitors)
+    howItWorks:
+      "萨尔茨堡是萨尔茨堡州的州府，一座“特许市”，市政府同时承担县级职能，州议会与州政府都在城里；市域约 66 平方公里，2026 年人口约 16 万。萨尔察赫河把城市分成两岸：左岸是 1996 年列入世界遗产的老城，粮食街、大教堂与山上的萨尔茨堡要塞在这里，僧侣山把它挡在河与岩壁之间；右岸的新城以米拉贝尔宫与林茨街为中心，嘉布遣山在它背后。1803 年以前这座城由采邑大主教统治，巴洛克的教堂与广场是那个时代留下的。莫扎特的出生地与每年夏天的萨尔茨堡音乐节让约 200 万游客涌入一座 16 万人的城。没有轨道交通，公交与无轨电车承担市内出行，S-Bahn 通往周边。德国边境在 5 公里外的弗赖拉辛，慕尼黑约 145 公里。地址写“街道、门牌、四位邮编”，邮编 50 开头。初来的人最容易犯的错，是把萨尔茨堡当作一座音乐节的舞台，而它是一个州的行政中心，老城只是河边的一角。",
     layout:
       "萨尔茨河将城市分为老城与新城两部分；老城内的萨尔茨堡城堡矗立在山丘上俯瞰全城；莫扎特出生地与莫扎特故居是老城内的重要地标。",
     gettingAround:
@@ -5748,6 +5796,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   innsbruck: {
     identity:
       "因斯布鲁克是蒂罗尔州首府，人口约13万，坐落在因河谷中段、四周被阿尔卑斯山环绕，曾两次举办冬季奥运会（1964年、1976年）。",
+    // howItWorks sources: Wikipedia (2026-09): Innsbruck (statutory city, Tyrol capital; ~105 km²; ~132,000 2024; 574 m; Nordkette/Patscherkofel; 9 boroughs; Hungerburgbahn; Olympics 1964/1976; ~35,000 students; Brenner ~30 km)
+    howItWorks:
+      "因斯布鲁克是蒂罗尔州的州府，一座“特许市”，州议会与州政府都在城里；市域约 105 平方公里，2024 年人口约 13 万，市下分 9 个区。城市建在海拔约 574 米的因河谷底，北面是卡尔文德尔山脉的北链，南面是帕切科费尔山，两侧的山壁把它夹在中间：老城的黄金屋顶与玛丽亚·特蕾西亚大街是市中心，从市中心出发的洪格堡缆车与北链缆车半小时内把人送到海拔 2,300 米，贝吉瑟尔跳台在南面的山坡上。1964 与 1976 年两届冬奥会在这里举办。因斯布鲁克大学约 3.5 万学生，占市民的四分之一。IVB 的有轨电车与公交承担市内出行，布伦纳山口在南面约 30 公里，是通往意大利的铁路与公路要道。蒂罗尔人的认同强烈，方言与服饰是日常的一部分。地址写“街道、门牌、四位邮编”，邮编 60 开头。初来的人最容易犯的错，是把因斯布鲁克当作一座滑雪小镇，而它是阿尔卑斯山里的一座州府与大学城。",
     layout:
       "老城中心的金屋顶是因斯布鲁克的地标建筑；老城北侧紧邻卡尔文德尔山，缆车可直接从市区抵达山区；玛丽亚·特蕾西亚大街是老城的主要街道。",
     gettingAround:
@@ -5970,6 +6021,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dublin: {
     identity:
       "都柏林是爱尔兰首都与最大城市，人口约120万（都会区），坐落于利菲河口都柏林湾畔，是爱尔兰的政治、经济与文化中心，也是欧洲重要的科技与金融枢纽之一。",
+    // howItWorks sources: Wikipedia (2026-09): Dublin (Dublin City Council 117.8 km², 592,713 2022, 63 councillors, ceremonial Lord Mayor, chief executive; 4 councils in County Dublin; County Dublin ~1.46 million; GDA ~2.1 million; postal districts odd north/even south; Luas/DART/Leap); Local government in the Republic of Ireland
+    howItWorks:
+      "人们口中的都柏林，在行政上分成四块：都柏林市议会管辖约 118 平方公里、2022 年约 59 万人，此外芬戈、南都柏林、邓莱里—拉斯当各有自己的议会，四者合成都柏林郡，约 146 万人；大都柏林区约 200 万，占爱尔兰的四成。爱尔兰的地方议会由民选议员组成，但行政由任命的首席执行官掌管，市长（Lord Mayor）是每年轮换的礼仪职位；议会管住房、规划、道路、图书馆与消防，警察、学校与医疗归中央政府。利菲河把城市分成北岸与南岸，邮政区号单数在北、双数在南——“都柏林 4”“都柏林 8”是本地人的地址语言，2015 年起又加了 Eircode。乔治时期的广场在南岸，圣殿酒吧区在河边，码头区是金融与科技公司的所在，凤凰公园在西面。地址写“门牌、街道、邮政区号、Eircode”。两条 Luas 有轨电车线、DART 沿海铁路与公交用一张 Leap 卡贯通，没有地铁。初来的人最容易犯的错，是把都柏林市议会的辖区当作整座城，而它只占都柏林郡人口的四成。",
     layout:
       "利菲河横贯市区，将城市分为河北与河南两片：河南以圣三一学院、格拉夫顿街等历史商业区为主，河北则以奥康奈尔街等主干道及码头区为主；市郊延伸至都柏林湾沿岸。",
     gettingAround:
@@ -5998,6 +6052,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cork: {
     identity:
       "科克是爱尔兰第二大城市，人口约22万，坐落在利河河口，是爱尔兰南部芒斯特省的经济与文化中心，当地人常戏称科克为爱尔兰“真正的首都”。",
+    // howItWorks sources: Wikipedia (2026-09): Cork (Cork City Council ~187 km² after 2019 extension; 224,004 2022; separate from Cork County Council; island in the Lee; UCC; Apple; buses; suburban rail to Cobh/Midleton); Local government in the Republic of Ireland
+    howItWorks:
+      "科克是爱尔兰第二大城市，科克市议会 2019 年扩界后管辖约 187 平方公里、2022 年约 22 万人，与科克郡议会是两个独立的地方政府；议会由民选议员组成，行政由任命的首席执行官掌管，市长每年轮换，警察、学校与医疗归中央。市中心在利河两条河汊之间的岛上，圣帕特里克街与英国市场在那里，主街之下曾是河道；北岸的香登区在山坡上，南岸向科克港延伸——世界最大的天然港之一，科夫与林加斯基迪的制药业在港边。科克大学与苹果的欧洲总部是两个最大的雇主。公共交通只有公交，市郊铁路通往科夫与米德尔顿。科克人自称“真正的首都”，口音的抑扬是它的标签。地址写“门牌、街道、Eircode”。初来的人最容易犯的错，是把科克当作一座小城，而它的市议会辖区在 2019 年扩大了近五倍，港口一带的产业规模不逊于都柏林。",
     layout:
       "老城中心建在利河分叉形成的岛状地带上，街道格局与运河系统相关；市郊沿利河河口延伸，科布港是历史上重要的跨大西洋航运港口。",
     gettingAround:
@@ -6054,6 +6111,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   limerick: {
     identity:
       "利默里克是爱尔兰第三大城市，人口约10万，坐落于香农河口，是爱尔兰中西部芒斯特省的重要城市与门户。",
+    // howItWorks sources: Wikipedia (2026-09): Limerick (Limerick City and County Council 2014; first directly elected mayor in Ireland June 2024; city ~102,300 2022; metro ~162,400; King's Island; Newtown Pery grid; UL Castletroy; Shannon Airport 25 km); Local government in the Republic of Ireland
+    howItWorks:
+      "利默里克是爱尔兰第三大城市，2014 年市与郡合并为利默里克市郡议会，2024 年 6 月它选出了爱尔兰第一位直选市长，其他地方议会的市长仍是每年轮换的礼仪职位；2022 年城区人口约 10 万，都会区约 16 万。议会管住房、规划与道路，警察、学校与医疗归中央。城市在香农河口：国王岛上的中世纪城区有 1210 年的约翰王城堡，河南岸的纽敦佩里是 18 世纪的乔治式格网，奥康奈尔街是它的主街，这种格网在爱尔兰城市里独一无二；利默里克大学在东郊的卡斯尔特罗伊，香农机场在西面约 25 公里。橄榄球是这座城的宗教，芒斯特队的主场托蒙德公园在国王岛旁。“利默里克 2030”的再生计划正在改造市中心。公共交通只有公交，铁路通往都柏林。地址写“门牌、街道、Eircode”。初来的人最容易犯的错，是把利默里克当作去克莱尔郡的过路站，而它是中西部的行政与大学中心。",
     layout:
       "老城沿香农河而建，国王约翰城堡扼守河道要冲，市区分为爱尔兰镇、英格兰镇与纽敦佩里等历史片区。",
     gettingAround:
@@ -6068,6 +6128,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   galway: {
     identity:
       "戈尔韦是爱尔兰西部康诺特省的核心城市，人口约8万，坐落于科里布河口戈尔韦湾畔，是探索康尼马拉与阿伦群岛的门户，也是爱尔兰重要的盖尔语文化中心。",
+    // howItWorks sources: Wikipedia (2026-09): Galway (Galway City Council 57.3 km²; 85,910 2022; separate from County Galway; Corrib/Galway Bay; University of Galway ~19,000; Gaeltacht neighbourhoods; medtech; buses only); Local government in the Republic of Ireland
+    howItWorks:
+      "戈尔韦是爱尔兰西部最大的城市，戈尔韦市议会管辖约 57 平方公里、2022 年约 8.6 万人，与戈尔韦郡议会是两个独立的地方政府；议会管住房、规划与道路，警察、学校与医疗归中央。城市在科里布河注入戈尔韦湾的地方：中世纪的拉丁区沿商店街到西班牙拱门，艾尔广场是市中心，克拉达在河西岸，索尔特希尔的海滨长廊向西延伸。戈尔韦大学约 1.9 万学生，占市民的四分之一；市内的几个街区属于盖尔语区，康尼马拉的盖尔语区就在西面，路牌与剧院双语并行。医疗器械是最大的产业，美敦力与波士顿科学的工厂在城里。艺术节与赛马周是一年的两个高潮。公共交通只有公交，铁路通往都柏林，渡轮通往阿伦群岛。地址写“门牌、街道、Eircode”。初来的人最容易犯的错，是把戈尔韦当作一座旅游小镇，而它是西部的大学与医疗器械之城。",
     layout:
       "老城中心紧凑，沿科里布河口而建，拉丁区保留中世纪街巷格局，长堤海滨步道沿戈尔韦湾向外延伸。",
     gettingAround:
@@ -6126,6 +6189,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   copenhagen: {
     identity:
       "哥本哈根是丹麦首都与最大城市，人口约64万（都会区约140万），坐落于西兰岛东岸，隔厄勒海峡与瑞典马尔默相望，是北欧重要的设计、美食与可持续发展中心。",
+    // howItWorks sources: Wikipedia (2026-09): Copenhagen (municipality ~90 km²; ~672,000 2026; magistrate: Lord Mayor + 6 mayors; 10 districts; Frederiksberg enclave; urban ~1.4 million; metro ~2.1 million; Øresund Bridge 2000; Metro 4 driverless lines; S-tog; ~50% commute by bike; Finger Plan 1947); Municipalities of Denmark
+    howItWorks:
+      "人们口中的哥本哈根，在行政上只是约 90 平方公里的哥本哈根市，2026 年人口约 67 万；它由市议会治理，实行“市政委员制”：一位首席市长与六位分管市长各管一摊。市下分 10 个区（bydel），而腓特烈斯贝是被哥本哈根市整个包围的另一个独立市镇。丹麦的市镇管学校、养老、社会服务与地方道路，五个大区管医院，国家管警察与大学。城区约 140 万人，都会区约 210 万，2000 年通车的厄勒海峡大桥把它与瑞典的马尔默连成跨国的都会区。1947 年的“手指规划”让城市沿五条铁路线向外生长，指缝之间留作绿地；内城与克里斯蒂安港是老城，诺雷布罗、韦斯特布罗、厄斯特布罗是围着它的三片街区，阿迈厄岛上有机场与新城厄勒斯塔。四条无人驾驶地铁线与 S-tog 市郊铁路连起城区，约半数通勤靠自行车，港口的水干净到可以游泳。地址写“街道、门牌、四位邮编”。初来的人最容易犯的错，是把哥本哈根市当作整座城，而它只占都会区人口的三分之一。",
     layout:
       "市中心紧凑，运河环绕的克里斯钦港与新港是标志性水岸区，蒂沃利花园、市政厅广场等构成传统市中心，市郊经厄勒海峡大桥与瑞典相连。",
     gettingAround:
@@ -6168,6 +6234,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   odense: {
     identity:
       "欧登塞是丹麦第三大城市，人口约18万，坐落于菲英岛中部，是安徒生的出生地，也是南丹麦大区的核心城市。",
+    // howItWorks sources: Wikipedia (2026-09): Odense (municipality ~305 km²; ~210,000 2024, city ~185,000; Funen; Region of Southern Denmark; H.C. Andersen House 2021; letbane 2022; SDU; ~300 robotics firms; Great Belt Bridge 1997/98); Municipalities of Denmark
+    howItWorks:
+      "欧登塞是丹麦第三大城市，在菲英岛上，属南丹麦大区；市镇约 305 平方公里，2024 年人口约 21 万，城区约 18 万，由市长与市议会治理。市镇管学校、养老与社会服务，大区管医院，国家管警察与大学。安徒生出生在这里，2021 年隈研吾设计的安徒生博物馆建在他出生的老屋周围，欧登塞河穿过市中心；老城近年把穿城而过的干道封闭改造，2022 年通车的轻轨穿过市中心。南丹麦大学在城南，围绕它长出了约 300 家机器人与自动化企业，优傲机器人是其中的代表。1997 与 1998 年通车的大贝尔特桥把菲英岛与西兰岛连在一起，到哥本哈根约 1 小时 15 分。自行车是市内的日常。地址写“街道、门牌、四位邮编”，邮编 5000 开头。初来的人最容易犯的错，是把欧登塞当作一座童话小镇，而它是丹麦的机器人产业之都。",
     layout:
       "老城以安徒生故居博物馆为核心向外延展，运河穿城而过，中世纪街巷与19世纪建筑交织，是丹麦保存较完好的历史城区之一。",
     gettingAround:
@@ -6210,6 +6279,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   aarhus: {
     identity:
       "奥胡斯是丹麦第二大城市，人口约35万，坐落于日德兰半岛东岸，是中日德兰大区的核心城市，也是丹麦重要的大学城与文化艺术中心。",
+    // howItWorks sources: Wikipedia (2026-09): Aarhus (municipality ~468 km²; ~370,000 2024, city ~300,000; Central Denmark Region seat; 31-member council; Aarhus Ø 2008; AU ~40,000; Letbanen 2017; East Jutland ~1.4 million); Municipalities of Denmark
+    howItWorks:
+      "奥胡斯是丹麦第二大城市，中日德兰大区的首府；奥胡斯市镇约 468 平方公里，2024 年人口约 37 万，城区约 30 万，由市长与 31 人的市议会治理。市镇管学校、养老与社会服务，大区管医院，国家管警察与大学。城市围着奥胡斯湾与奥胡斯河生长：河道穿过市中心，拉丁区是老城的心脏，奥胡斯Ø是 2008 年起在旧港区建起的新区，老城博物馆与 ARoS 艺术馆是两个坐标，Dokk1 是海边的新图书馆。奥胡斯大学约 4 万学生，是北欧最大的大学之一，让它成为丹麦最年轻的城市，“微笑之城”是它的自称。2017 年通车的轻轨连起市区与周边，东日德兰的都会区约 140 万人。地址写“街道、门牌、四位邮编”，邮编 8000 开头。初来的人最容易犯的错，是把奥胡斯当作哥本哈根的陪衬，而它是日德兰半岛的中心与一座大学城。",
     layout:
       "老城沿奥胡斯河而建，拉丁区保留中世纪街巷格局，ARoS艺术博物馆屋顶的环形彩虹步道是城市新地标，市郊延伸至奥胡斯湾沿岸。",
     gettingAround:
@@ -6238,6 +6310,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   aalborg: {
     identity:
       "奥尔堡是丹麦第四大城市，人口约14万，坐落于利姆海峡南岸，是北日德兰大区的核心城市，也是探索日德兰半岛最北端的门户。",
+    // howItWorks sources: Wikipedia (2026-09): Aalborg (municipality ~1,140 km²; ~225,000, city ~120,000; North Denmark Region seat; Limfjord/Nørresundby bridge 1933 + tunnel; AAU 1974; Aalborg Portland; airport 6 km; Plusbus 2023); Municipalities of Denmark
+    howItWorks:
+      "奥尔堡是丹麦第四大城市，北日德兰大区的首府；市镇约 1,140 平方公里，包括大片乡村，人口约 22 万，城区约 12 万，由市长与市议会治理。市镇管学校、养老与社会服务，大区管医院，国家管警察与大学。利姆海峡把城市分成两岸：南岸是奥尔堡，北岸是诺雷松比，1933 年的大桥与海底隧道把两岸连起来。老城在南岸，延斯·邦的石屋是它的标志，少女安妮街是白天的餐饮街与夜里的酒吧街；海边的旧工业区改成了乌松中心与音乐之家。1974 年创办的奥尔堡大学以问题导向的教学法闻名，奥尔堡波特兰水泥厂是老工业的遗存，绿色能源是新的方向。机场在西北 6 公里，2023 年通车的 Plusbus 快速公交穿过市区。林霍尔姆高地的维京墓地在北岸。地址写“街道、门牌、四位邮编”，邮编 9000 开头。初来的人最容易犯的错，是把奥尔堡当作一座工业城，而它是北日德兰的大学与文化中心。",
     layout:
       "老城沿利姆海峡而建，中世纪街巷与工业遗迹交织，滨水区经近年改造成为文化休闲地带，是探索雷比尔丘陵与斯卡恩的出发点。",
     gettingAround:
@@ -6310,6 +6385,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   stockholm: {
     identity:
       "斯德哥尔摩是瑞典首都与最大城市，人口约98万（都会区约240万），坐落于梅拉伦湖与波罗的海交汇处，由14座主要岛屿组成，是北欧重要的政治、经济与设计中心。",
+    // howItWorks sources: Wikipedia (2026-09): Stockholm (municipality ~188 km²; ~996,000 2025; 11 district councils since 2023; Region Stockholm 26 municipalities ~2.5 million runs healthcare + SL; 14 islands; tunnelbana 3 lines); Municipalities of Sweden
+    howItWorks:
+      "人们口中的斯德哥尔摩，在行政上只是约 188 平方公里的斯德哥尔摩市，2025 年人口约 100 万，由市议会治理，市长（财政市政委员）由多数派推举；市下分 11 个区（2023 年从 14 个合并而来），各有自己的区委员会，管小学、社会服务与文化。瑞典的市镇管学校、养老与规划，21 个大区管医院与公共交通，国家管警察与大学：斯德哥尔摩大区有 26 个市镇、约 250 万人，SL 的公交网覆盖整个大区，索尔纳、纳卡、松德比贝里各是独立的市镇。城市建在梅拉伦湖入海处的 14 座岛上，三成是水面、三成是绿地：老城在中央的小岛上，南岛、东城、国王岛、北城各是内城的一片，动物园岛是博物馆区；内城之外，南区与西区是战后的郊区。三条地铁线、通勤火车与公交用一张 SL 卡贯通，阿兰达机场在北面约 40 公里。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把斯德哥尔摩市当作整座城，而它只占大区人口的四成。",
     layout:
       "老城加姆拉斯坦坐落在中心岛屿，保留中世纪街巷格局，王宫、大教堂环列其间；南岛、北岛与国王岛等片区通过多座桥梁相连，向东延伸即为斯德哥尔摩群岛。",
     gettingAround:
@@ -6338,6 +6416,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   gothenburg: {
     identity:
       "哥德堡是瑞典第二大城市，人口约60万，坐落于瑞典西海岸约塔河口，是瑞典重要的港口城市与探索布胡斯兰海岸的门户。",
+    // howItWorks sources: Wikipedia (2026-09): Gothenburg (municipality ~450 km²; ~612,000; Västra Götaland seat; metro ~1.1 million; Göta älv/Hisingen; largest Nordic port; largest tram network in Scandinavia; founded 1621); Municipalities of Sweden
+    howItWorks:
+      "哥德堡是瑞典第二大城市，西约塔兰省的省府；市镇约 450 平方公里，包括群岛，人口约 61 万，由市议会治理。市镇管学校、养老与规划，大区管医院与公共交通公司 Västtrafik，国家管警察与大学；都会区约 110 万人，默尔恩达尔、帕蒂勒各是独立的市镇。约塔河把城市分成两岸：南岸是 1621 年按荷兰运河城市规划建起的市中心——城墙内区、林荫大道与哈加老街区，北岸的希辛恩岛是沃尔沃的总部与林德霍尔门科技园，桥与渡轮把两岸连起来。港口是北欧最大的港，有轨电车网是斯堪的纳维亚最大的，哥德堡群岛属于市镇，靠渡轮往来。查尔姆斯理工大学与哥德堡大学是两所大学，里瑟本游乐园是城市的标志。哥德堡人的幽默与冷面笑话是全国有名的性格。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把哥德堡当作一座港口工业城，而它的市中心是一座运河与林荫大道的城市。",
     layout:
       "市中心以运河环绕的历史街区为核心，仿荷兰式的运河系统是17世纪建城时的规划遗产，阿夫瑞德海滨区经近年改造成为文化休闲地带。",
     gettingAround:
@@ -6352,6 +6433,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   malmoe: {
     identity:
       "马尔默是瑞典第三大城市，人口约35万，坐落于瑞典最南端，经厄勒海峡大桥与丹麦哥本哈根相连，是斯科讷平原的核心城市。",
+    // howItWorks sources: Wikipedia (2026-09): Malmö (municipality ~157 km²; 368,135 2024; Skåne seat; Greater Malmö ~780,000/12 municipalities; Øresund Bridge 2000, 30–40 min to Copenhagen; Citytunneln 2010; ~40% commute by bike; trams ceased 1973; ~half foreign background; Danish until 1658); Municipalities of Sweden
+    howItWorks:
+      "马尔默是瑞典第三大城市，斯科讷省的省府；市镇约 157 平方公里，2024 年人口约 37 万，由市议会治理。市镇管学校、养老与规划，斯科讷大区管医院与公共交通公司 Skånetrafiken，国家管警察与大学；大马尔默 12 个市镇约 78 万人。2000 年通车的厄勒海峡大桥把它与哥本哈根连成一座跨国都会区，火车 30 到 40 分钟一趟，每天有大量人跨境通勤；2010 年通车的城市隧道让火车从中央车站经三角站到许利耶站穿过市区。老城以大广场与小广场为中心，西港是旧船厂改成的新区，旋转中心大楼是它的标志，默勒旺是移民街区与市集，罗森戈德是 1960 年代的住宅区。1658 年以前这座城属于丹麦，考库姆船厂是它的工业过去。约半数市民有外国背景，来自约 180 个国家。有轨电车 1973 年停运，公交与自行车承担出行，约四成通勤靠自行车。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把马尔默当作哥本哈根的郊区，而它是瑞典南部的省府，有自己的大学与港口。",
     layout:
       "老城中心保留中世纪街巷格局，马尔默城堡与老城广场是历史核心，西港区经近年改造成为可持续发展示范街区，标志性建筑“旋转大厦”坐落于此。",
     gettingAround:
@@ -6480,6 +6564,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   helsinki: {
     identity:
       "赫尔辛基是芬兰首都与最大城市，人口约67万（都会区约150万），坐落于芬兰湾北岸的半岛与群岛之上，是北欧重要的设计、科技与港口城市。",
+    // howItWorks sources: Wikipedia (2026-09): Helsinki (land ~214 km²; ~694,000; mayor elected by council since 2017; capital region 4 municipalities ~1.3 million; Greater Helsinki ~1.6 million ≈ quarter of Finland; HSL zones; bilingual, Swedish 5.4%; Suomenlinna UNESCO 1991; airport in Vantaa); Municipalities of Finland (Helsinki keeps own health services)
+    howItWorks:
+      "人们口中的赫尔辛基，在行政上只是陆地约 214 平方公里的赫尔辛基市，人口约 69 万；2017 年起它由市议会选出的专职市长治理，是芬兰第一个采用市长制的市镇。芬兰的市镇管学校、规划与地方交通，2023 年起医疗与社会服务移交给福利服务县，唯独赫尔辛基保留了自己的医疗体系，国家管警察与大学。首都圈由赫尔辛基、埃斯波、万塔、考尼艾宁四个独立的市镇组成，约 130 万人，大赫尔辛基约 160 万，占芬兰的四分之一；机场在万塔。HSL 交通局统管首都圈的地铁、有轨电车、通勤火车与渡轮，按 ABCD 票价区计费，一条地铁线的支线 2017 与 2022 年延伸到了埃斯波。参议院广场与克鲁努哈卡是老城，坎皮是商业中心，卡利奥是旧工人区，托洛是 20 世纪初的街区，卡拉萨塔马与耶特卡萨里是旧港区改成的新区，芬兰堡 1991 年列入世界遗产，三百多座岛屿属于市镇。市镇法定双语，路牌先芬兰语后瑞典语，瑞典语人口约 5%。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把赫尔辛基市当作整个首都圈，而埃斯波与万塔是两座有自己市政府的城市。",
     layout:
       "市中心以元老院广场与赫尔辛基大教堂为核心，向南延伸至港口区与市场广场，岩石教堂、西贝柳斯公园等地标分布在各片区，市郊由数百座岛屿组成的群岛环绕。",
     gettingAround:
@@ -6494,6 +6581,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   turku: {
     identity:
       "图尔库是芬兰最古老的城市与前首都，人口约20万，坐落于奥拉河口，是探索群岛海的门户，也是芬兰瑞典语文化的重要中心之一。",
+    // howItWorks sources: Wikipedia (2026-09): Turku (land ~245 km²; ~210,000; oldest city, capital until 1812; 1827 fire, Engel grid; Aura river; bilingual, Swedish ~5%; two universities ~40,000; ferries to Stockholm; Meyer shipyard; mayor model); Municipalities of Finland
+    howItWorks:
+      "图尔库是芬兰最古老的城市，1812 年以前是首都；它是西南芬兰区的首府，陆地约 245 平方公里，人口约 21 万，2021 年起由市议会选出的专职市长治理。市镇管学校、规划与地方交通，福利服务县管医疗，国家管警察与大学；图尔库地区约 33 万人，卡里纳、赖西奥、楠塔利各是独立的市镇。奥拉河是城市的轴线：东岸是大教堂与老城，西岸是城堡与新的开发区，河上的小渡船与河船是市民的日常，市集广场在河的东岸。1827 年的大火烧毁了老城，恩格尔的方格规划让它成为欧洲最统一的新古典街区之一。市镇法定双语，瑞典语名是奥布，瑞典语人口约 5%，图尔库大学与奥布学院两所大学约 4 万学生。渡轮通往斯德哥尔摩与奥兰群岛，图尔库群岛在城的西面，迈尔船厂造大型邮轮。没有有轨电车，Föli 的公交承担出行。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把图尔库当作一座退休的旧都，而它是芬兰通往瑞典的门户与造船之城。",
     layout:
       "老城沿奥拉河两岸展开，图尔库城堡扼守河口，图尔库大教堂矗立在河流上游一侧，河畔历史船只博物馆点缀两岸。",
     gettingAround:
@@ -6522,6 +6612,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tampere: {
     identity:
       "坦佩雷是芬兰第二大城市，人口约24万，建在内西湖与皮哈耶尔维湖之间的地峡上，19世纪起因两湖水力落差发展为芬兰重要的工业城市。",
+    // howItWorks sources: Wikipedia (2026-09): Tampere (land ~525 km²; ~263,000; pormestari since 2007; Pirkanmaa seat; region ~400,000; Näsijärvi/Pyhäjärvi isthmus, Tammerkoski 18 m; Finlayson/Tampella; tram 2021; university ~30,000; Nokia Arena 2021); Municipalities of Finland
+    howItWorks:
+      "坦佩雷是芬兰第三大市镇，皮尔卡区的首府，陆地约 525 平方公里，人口约 26 万；2007 年起由市议会选出的专职市长治理。市镇管学校、规划与地方交通，福利服务县管医疗，国家管警察与大学；坦佩雷地区约 40 万人，诺基亚市、于勒耶尔维、坎加萨拉各是独立的市镇。城市建在纳西湖与皮哈湖之间的地峡上，两湖之间 18 米的落差形成坦梅尔科斯基急流，19 世纪的芬莱森与坦佩拉纺织厂靠它驱动，“北方的曼彻斯特”由此得名，红砖厂房至今是市中心的骨架。哈梅街是东西向的主街，中央广场在河边，皮尼基山脊是城里的森林，皮斯帕拉是山坡上的旧工人区。2021 年通车的有轨电车连起市区，同年启用的诺基亚竞技场是新的地标。坦佩雷大学约 3 万学生。这座城自称“世界桑拿之都”，公共桑拿是日常。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把坦佩雷当作一座内陆工业城，而它是芬兰南部除首都圈之外最大的都会区。",
     layout:
       "市中心建在两湖之间狭窄的地峡上，坦梅尔科斯基急流穿城而过，19世纪的红砖工厂建筑沿河两岸保留，部分已改造为博物馆与文化空间。",
     gettingAround:
@@ -6578,6 +6671,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   oulu: {
     identity:
       "奥卢是芬兰第五大城市，人口约21万，坐落于波的尼亚湾北岸，是芬兰重要的科技与大学城市，也是探索北芬兰与拉普兰的门户。",
+    // howItWorks sources: Wikipedia (2026-09): Oulu (land ~2,972 km² after 2013 mergers; 217,469 2025; city manager model; North Ostrobothnia seat; Toripolliisi; tar trade; university ~15,000; Nokia; ~20% cycling year-round; ECoC 2026; airport in Oulunsalo); Municipalities of Finland
+    howItWorks:
+      "奥卢是芬兰北部最大的城市，北博滕区的首府；2013 年与海乌基普达斯、基明基、奥卢恩萨洛、于利伊四个市镇合并后，陆地约 3,000 平方公里，2025 年人口约 22 万，是芬兰第五大市镇，由市议会与任命的市政经理治理。市镇管学校、规划与地方交通，福利服务县管医疗，国家管警察与大学。城市在波的尼亚湾的奥卢河口：市集广场与“集市警察”雕像是市中心的坐标，皮基萨里岛与焦油仓库记着 19 世纪焦油出口的过去，纳利卡里海滩在西面。奥卢大学的林南马校区约 1.5 万学生，诺基亚的无线技术研发让它成为北方的科技城。冬天的雪与冰挡不住自行车，全年约两成的出行靠自行车，奥卢自称“冬季骑行之都”，人行与自行车道超过 950 公里。2026 年它是欧洲文化之都。机场在奥卢恩萨洛，公共交通只有公交，罗瓦涅米在北面约 220 公里。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把奥卢当作一座北极小城，而它是芬兰北部的科技与大学中心。",
     layout:
       "市中心沿奥卢河口展开，市场广场紧邻港口，是当地日常生活与旅游活动的核心区域，大学校区位于市郊。",
     gettingAround:
@@ -6650,6 +6746,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "luxembourg-city": {
     identity:
       "卢森堡市是卢森堡大公国首都，人口约13万，坐落于卢森堡砂岩台地之上，是欧盟机构重要驻地之一与全球领先的金融中心，1994年老城与要塞列入世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Luxembourg City (commune 51 km²; ~137,700 2025; 69.5% foreign nationals, ~160 nationalities; 24 quarters; Ville Haute plateau, 70 m gorges; UNESCO 1994; Kirchberg EU institutions; free public transport 2020; tram 2017; Findel 6 km)
+    howItWorks:
+      "卢森堡市是卢森堡大公国的首都，也是一个约 51 平方公里的市镇，2025 年人口约 14 万，由民选的市议会与市长治理；约 70% 的居民是外国籍，来自约 160 个国家，市下分 24 个街区。全国约 68 万人，每天有二十万上下的人从法国、比利时、德国跨境上班，2020 年起全国公共交通免费。城市建在阿尔泽特河与佩特吕斯河切出的 70 米深峡谷之上：上城在高地上，是 1994 年列入世界遗产的老城与要塞遗迹，博克炮台就在崖边；格伦德与普法芬塔尔在谷底，靠电梯与桥上下；基希贝格高原是欧盟机构——欧洲法院、欧洲投资银行——与银行的所在地，火车站区在南面。2017 年通车的有轨电车连起车站、市中心与基希贝格。卢森堡语、法语与德语并为官方语言，路牌与公文三语并行。芬德尔机场在东面 6 公里。地址写“街道、门牌、四位邮编”，邮编 L- 开头。初来的人最容易犯的错，是把卢森堡市当作一座小国的小首都，而它是欧洲的金融中心之一，居民多数不是卢森堡人。",
     layout:
       "老城建于阿尔泽特河与佩特吕斯河深切台地形成的峡谷环绕的高地之上，博克岩石扼守台地一角，新城区（欧盟机构与金融区所在地）位于老城东北、阿尔泽特河谷对岸的基希贝格（Kirchberg）高地。",
     gettingAround:
@@ -6664,6 +6763,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "esch-sur-alzette": {
     identity:
       "埃施阿尔泽特是卢森堡第二大城市，人口约3.6万，坐落于阿尔泽特河畔米内特工业区核心地带，19世纪起因铁矿开采与钢铁工业而兴起。",
+    // howItWorks sources: Wikipedia (2026-09): Esch-sur-Alzette (commune 14.35 km²; ~37,900 2025; second-largest; Minett/French border; ARBED 1911; last furnace 1997; Belval university campus; Rockhal; ECoC 2022)
+    howItWorks:
+      "埃施是卢森堡第二大市镇，约 14 平方公里，2025 年人口约 3.8 万，由民选的市议会与市长治理；它在南部的“米内特”铁矿区，法国边境就在城边，对面是法国的奥当勒蒂什。1850 年代发现铁矿之后，这座村庄长成了钢铁城：1911 年创立的 ARBED 是它的雇主，葡萄牙与意大利移民的后代至今是市民的重要构成；1970 年代的钢铁危机之后矿山关闭，贝尔瓦尔的最后一座高炉 1997 年停产。今天贝尔瓦尔是卢森堡大学的校区，高炉被保留在校园中间，Rockhal 音乐厅在旁边，2022 年埃施是欧洲文化之都。阿尔泽特街是市中心的步行街。全国公共交通免费，火车到卢森堡市约 20 分钟。地址写“街道、门牌、四位邮编”。初来的人最容易犯的错，是把埃施当作一座衰落的矿城，而它是卢森堡的大学城与文化重镇。",
     layout:
       "城区沿阿尔泽特河而建，紧邻法国边境，周边分布多处历史矿区遗址，部分已改造为工业遗产公园（如贝尔瓦尔高炉园区）。",
     gettingAround:
@@ -9079,6 +9181,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zagreb: {
     identity:
       "萨格勒布是克罗地亚首都与最大城市，人口约80万，是全国政治、经济与文化中心，城市历史可追溯至中世纪的格拉德茨与卡普托尔两座山丘小镇。",
+    // howItWorks sources: Wikipedia (2026-09): Zagreb (City of Zagreb with county status; 17 city districts with elected councils, 218 local committees; ~641 km²; ~767,000 2021 ≈ quarter of Croatia; metro ~1.1 million; Upper/Lower Town, Novi Zagreb; ZET trams, no metro; ~70 settlements incl. Sesvete)
+    howItWorks:
+      "萨格勒布既是克罗地亚的首都，也是一个与县同级的行政区，与四周的萨格勒布县是两个不同的政府；由民选的市长与市议会治理，市下分 17 个区（gradska četvrt），各有民选的区议会，区之下是 218 个地方委员会。市域约 641 平方公里，包括塞斯韦特等约 70 个聚落，2021 年人口约 77 万，约占克罗地亚的四分之一，都会区约 110 万。城市从北向南分成三层：山坡上的上城是格拉德茨与卡普托尔两座中世纪城镇合成的老城，下城是 19 世纪的格网，耶拉契奇总督广场是坐标原点，绿色马蹄形的公园群穿过其中；萨瓦河对岸的新萨格勒布是战后建起的住宅区。梅德韦德尼察山在北面，是市民的后山。ZET 的有轨电车是市内交通的骨架，没有地铁；缆车连接上下城，多拉茨市场在市中心。地址写“街道、门牌、五位邮编”，邮编 10000 开头。初来的人最容易犯的错，是把上城与下城当作整座城，而萨瓦河以南住着几十万人。",
     layout:
       "城市分为上城区（历史老城，圣马可教堂与总督府所在地）与下城区（19世纪规划的方格状街区，包含中央广场耶拉契奇总督广场与众多博物馆）；多拉茨市场是连接上下城的传统市集。",
     gettingAround:
@@ -9093,6 +9198,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   split: {
     identity:
       "斯普利特是达尔马提亚地区最大城市，人口约16万，因古罗马皇帝戴克里先在此建造退位宫殿而闻名，宫殿建筑群历经近1700年演变为城市老城核心。",
+    // howItWorks sources: Wikipedia (2026-09): Split (79.4 km²; ~160,600 2021; Split-Dalmatia seat; 27 kotari; Diocletian's Palace UNESCO 1979; Riva, Marjan, Bačvice; conurbation ~307,000 with Solin/Kaštela; Promet buses; airport in Kaštela ~20 km)
+    howItWorks:
+      "斯普利特是克罗地亚第二大城市，斯普利特—达尔马提亚县的县治；市镇约 79 平方公里，2021 年人口约 16 万，由民选的市长与市议会治理，市下分 27 个区（kotar）。这座城是从戴克里先宫里长出来的：公元 4 世纪的罗马皇宫本身就是老城，居民至今住在宫墙之内，1979 年列入世界遗产，里瓦海滨长廊在宫的南墙外；马里安半岛是城西的森林山丘，巴奇维采是市中心的海滩。港口是亚得里亚海最大的客运港之一，渡轮通往赫瓦尔、布拉奇、维斯与意大利。索林（古萨洛纳）与卡什泰拉是城区连绵的另外两座市镇，合计约 31 万人，机场在卡什泰拉，约 20 公里。Promet 的公交承担出行，没有轨道交通。哈伊杜克队与波柳德球场是这座城的身份，克拉帕合唱是达尔马提亚的声音。地址写“街道、门牌、五位邮编”，邮编 21000 开头。初来的人最容易犯的错，是把戴克里先宫当作一处遗址，而它是一座住着人的老城。",
     layout:
       "老城完整坐落于戴克里先宫遗址之上，宫殿地下室、圣多姆尼乌斯主教座堂（原戴克里先陵墓）与街巷格局至今保留罗马时期布局；里瓦滨海长廊是老城与港口之间的日常休闲地带。",
     gettingAround:
@@ -9107,6 +9215,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dubrovnik: {
     identity:
       "杜布罗夫尼克是南达尔马提亚沿海古城，人口约4万，中世纪曾是独立的拉古萨共和国，凭借航运贸易与外交手腕在强邻环伺中长期保持自治，1979年老城列入世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Dubrovnik (~143 km²; 41,562 2021; Dubrovnik-Neretva seat; Neum corridor, Pelješac Bridge 2022; Old Town UNESCO 1979 ~1,500 residents; Lapad/Gruž; Ragusa until 1808; Srđ cable car; cruise cap ~4,000/day; Čilipi 20 km)
+    howItWorks:
+      "杜布罗夫尼克是杜布罗夫尼克—内雷特瓦县的县治，市镇约 143 平方公里，2021 年人口约 4.2 万，由民选的市长与市议会治理。它与克罗地亚其余部分之间隔着一段属于波斯尼亚和黑塞哥维那的海岸（内乌姆），2022 年佩列沙茨大桥通车后，公路不再需要穿越边境。人们心中的杜布罗夫尼克是城墙围住的老城——1808 年以前的拉古萨共和国，1979 年列入世界遗产——而老城里的常住人口只剩约 1,500 人；市民住在西面的拉帕德与格鲁日，格鲁日是港口与长途汽车站，巴宾库克是酒店区。斯尔季山的缆车从老城背后升起，洛克鲁姆岛在海上。为了控制人流，邮轮游客每天限在约 4,000 人。奇利皮机场在南面约 20 公里，没有铁路，公交与汽车承担出行。地址写“街道、门牌、五位邮编”，邮编 20000 开头。初来的人最容易犯的错，是把老城当作整座城，而市民的日常在城墙之外的拉帕德与格鲁日。",
     layout:
       "老城完整环绕在一圈中世纪城墙之内，城墙全长近2公里；主街斯特拉敦大道贯穿老城东西，两侧巷道石阶层层向城墙延伸；老港位于城东，是历史上拉古萨共和国的商贸门户。",
     gettingAround:
@@ -9121,6 +9232,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rijeka: {
     identity:
       "里耶卡是克罗地亚最大海港与第三大城市，人口约11万，自奥匈帝国时期起即是中欧通往地中海的重要港口，是一座工业与港口传统深厚的城市。",
+    // howItWorks sources: Wikipedia (2026-09): Rijeka (43.4 km²; 107,964 2021; Primorje-Gorski Kotar seat; largest port; Korzo; Trsat; Rječina Fiume/Sušak 1924–45; Opatija 15 km; ECoC 2020; torpedo 1874; University of Rijeka)
+    howItWorks:
+      "里耶卡是克罗地亚第三大城市，也是最大的港口，滨海和山区县的县治；市镇约 43 平方公里，2021 年人口约 11 万，由民选的市长与市议会治理。城市沿克瓦尔内尔湾的山脚展开，只有一条窄带：科尔佐步行街是市中心，特尔萨特城堡在山上俯瞰全城，列奇纳河把老城与东面的苏沙克分开——1924 至 1945 年间这条河曾是两座城市的边界。奥匈帝国时期它是帝国的主要港口，1913 年位列欧洲第十繁忙的港，1874 年怀特黑德在这里造出了第一枚鱼雷，1882 年建起欧洲第一座工业炼油厂。2020 年它是欧洲文化之都，里耶卡大学在城里。奥帕蒂亚海滨在西面 15 公里，是另一座市镇，克尔克岛上的机场约 30 公里。Autotrolej 的公交承担出行，没有轨道交通。地址写“街道、门牌、五位邮编”，邮编 51000 开头。初来的人最容易犯的错，是把里耶卡当作去岛屿的码头，而它是一座有自己工业史与大学的港口城市。",
     layout:
       "城市沿克瓦内尔湾海岸展开，港区与市中心紧密相连；特尔萨特城堡矗立于里耶卡河河口北侧的山丘上，可俯瞰全城与港湾。",
     gettingAround:
@@ -9205,6 +9319,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   prague: {
     identity:
       "布拉格是捷克首都与最大城市，人口约130万，坐落于伏尔塔瓦河两岸，历史上曾是神圣罗马帝国皇帝查理四世的都城，1992年老城历史核心列入世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Prague (capital + region; 65-member assembly; 22 administrative districts; 57 municipal parts with elected councils; Praha 1–10 as addresses; 496 km²; ~1.4 million 2024; metro ~2.3 million; UNESCO 1992; metro 3 lines; PID)
+    howItWorks:
+      "布拉格既是捷克的首都，也是 14 个大区之一，由民选的市长与 65 人的市议会治理。市的划分有三层：22 个行政区（布拉格 1 至 22）承担国家委托的行政职能，57 个自治市区各有民选的区议会与区长，而人们的地址与日常语言用的是布拉格 1 至 10 这十个老区号——“布拉格 6”“布拉格 2”是本地人说位置的方式。市域约 496 平方公里，2024 年人口约 140 万，加上四周中波希米亚大区的都会区约 230 万。伏尔塔瓦河从城中穿过：老城、小城、城堡区与新城是 1992 年列入世界遗产的历史中心，维诺赫拉迪、日什科夫、卡尔林、斯米霍夫是 19 世纪以来的街区，南城这样的板楼住宅区（panelák）在外围，住着大多数市民。三条地铁线、有轨电车与公交由 PID 统一票制。地址写“街道、门牌、邮编、布拉格 X”。初来的人最容易犯的错，是把历史中心当作整座城，而 140 万市民的大多数住在河两岸的板楼区里。",
     layout:
       "老城与新城位于伏尔塔瓦河右岸，查理大桥连接对岸的小城区与城堡区；布拉格城堡矗立于左岸山丘之上，俯瞰全城，是世界上规模最大的古城堡建筑群之一。",
     gettingAround:
@@ -9219,6 +9336,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   brno: {
     identity:
       "布尔诺是捷克第二大城市与摩拉维亚地区中心，人口约38万，历史上曾是摩拉维亚侯国的首府，是捷克重要的科研与高校城市。",
+    // howItWorks sources: Wikipedia (2026-09): Brno (statutory city; 29 self-governing districts; ~230 km²; ~404,000 2026; South Moravian seat; Constitutional/Supreme Courts; Villa Tugendhat UNESCO 2001; 10 universities >65,000 students; trams; Vienna ~110 km)
+    howItWorks:
+      "布尔诺是捷克第二大城市，南摩拉维亚大区的首府，一座“法定市”，市下分 29 个自治市区，各有民选的区议会与区长；市域约 230 平方公里，2026 年人口约 40 万。它是捷克的司法首都：宪法法院、最高法院与最高行政法院都在这里，而政府与议会在布拉格。市中心在什皮尔贝克城堡与彼得罗夫大教堂两座山丘之间，自由广场是坐标原点；图根哈特别墅 2001 年列入世界遗产，功能主义建筑是这座城 1920 年代的遗产。十所大学、6.5 万学生让它成为一座大学城，马萨里克大学与布尔诺理工大学最大；布尔诺展览中心与摩托车大奖赛赛道是它的另两个标签。有轨电车是市内交通的骨架，没有地铁。摩拉维亚的身份与葡萄酒是本地人的日常，维也纳在南面约 110 公里，比布拉格更近。地址写“街道、门牌、五位邮编”，邮编 6 开头。初来的人最容易犯的错，是把布尔诺当作布拉格的陪衬，而它是摩拉维亚的中心，有自己的法院、大学与方言。",
     layout:
       "老城以自由广场为中心，什皮尔伯克城堡矗立于西侧山丘俯瞰全城；圣彼得与圣保罗主教座堂坐落于佩特罗夫山，是布尔诺的标志性天际线；城市北侧黑田区（Černá Pole）保留有密斯·凡·德罗设计的现代主义建筑图根哈特别墅。",
     gettingAround:
@@ -9233,6 +9353,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   plzen: {
     identity:
       "皮尔森（比尔森）是捷克西部主要城市与皮尔森州首府，人口约17万，1842年这里酿造出世界第一杯黄色底部发酵拉格啤酒（即“皮尔森啤酒”），是全球拉格啤酒的发源地。",
+    // howItWorks sources: Wikipedia (2026-09): Plzeň (statutory city; 10 boroughs; 137.67 km²; ~188,000; Plzeň Region capital; four rivers → Berounka; St Bartholomew tower 102.6 m; Pilsner 1842; Škoda Works 1869; ECoC 2015; Prague ~78 km)
+    howItWorks:
+      "皮尔森是捷克第四大城市，皮尔森大区的首府，一座“法定市”，市下分 10 个自治市区；市域约 138 平方公里，人口约 19 万。四条河——姆热河、乌赫拉瓦河、乌斯拉瓦河、拉德布扎河——在城里汇成贝龙卡河。13 世纪末作为王室城市建立，共和国广场是市中心，圣巴托洛缪大教堂的塔高 102.6 米，是捷克最高的教堂塔，广场之下是中世纪的地下通道。1842 年 10 月 5 日巴伐利亚酿酒师约瑟夫·格罗尔在这里酿出第一批皮尔森啤酒，酒厂至今在市中心东侧；1869 年创立的斯柯达工厂让它成为工业城。西波希米亚大学在城里，2015 年它是欧洲文化之都。有轨电车与无轨电车承担市内出行。布拉格在东面约 78 公里，巴伐利亚边境在西面约 60 公里。地址写“街道、门牌、五位邮编”，邮编 3 开头。初来的人最容易犯的错，是把皮尔森当作一座啤酒厂，而它是西波希米亚的行政、工业与大学中心。",
     layout:
       "老城以共和国广场为中心，广场规模在欧洲名列前茅，圣巴托洛缪主教座堂矗立于广场中央，尖塔是捷克境内最高的教堂尖塔；比尔森啤酒厂（Pilsner Urquell）坐落于老城东侧。",
     gettingAround:
@@ -9247,6 +9370,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "karlovy-vary": {
     identity:
       "卡罗维发利是捷克最著名的温泉城市，人口约4.5万，14世纪由神圣罗马帝国皇帝查理四世发现温泉后建城得名，历史上曾是欧洲王室与文化名流的疗养胜地。",
+    // howItWorks sources: Wikipedia (2026-09): Karlovy Vary (statutory city; region capital; 59.08 km²; ~49,000; Teplá/Ohře; spa quarter vs town; Vřídlo 73 °C; UNESCO 2021 Great Spa Towns; film festival; Becherovka 1807; Moser; Prague ~130 km)
+    howItWorks:
+      "卡罗维发利是卡罗维发利大区的首府，一座“法定市”；市域约 59 平方公里，人口约 4.9 万。城市分成两片：泰普拉河峡谷里的温泉区，柱廊、温泉泉眼与普普大饭店沿河一字排开，喷到 73 度的“瓦日德洛”热泉是最热的泉眼，2021 年它以“欧洲大温泉城”之一列入世界遗产；峡谷之外、奥赫热河边的商业与住宅区才是市民生活的地方，火车站与公交站在那里。温泉疗养是这座城的产业——医生开处方、按疗程饮泉，不是泡温泉——每年七月的卡罗维发利国际电影节是它的另一个身份。1807 年起生产的贝赫洛夫卡酒与莫泽玻璃是本地的名牌。狄安娜观景台的缆车从温泉区升起。公交承担出行，布拉格在东面约 130 公里。地址写“街道、门牌、五位邮编”，邮编 360 开头。初来的人最容易犯的错，是把温泉区当作整座城，而市民住在峡谷之外的另一片城区里。",
     layout:
       "城市沿捷普拉河两岸狭长展布，河谷两侧密布新艺术与新文艺复兴风格的温泉回廊与疗养院建筑；磨坊温泉回廊与温泉喷泉回廊是市区核心地标。",
     gettingAround:
@@ -9289,6 +9415,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   olomouc: {
     identity:
       "奥洛穆茨是摩拉维亚地区历史古城，人口约10万，中世纪曾是摩拉维亚的主教驻地与区域中心，历史城区规模在捷克仅次于布拉格，2000年圣三一柱列入世界遗产名录。",
+    // howItWorks sources: Wikipedia (2026-09): Olomouc (statutory city; 26 municipal parts; 103.33 km²; ~105,000; Olomouc Region capital; historic Moravian capital to 1640s; archbishopric; Holy Trinity Column UNESCO 2000; Palacký University 1573 >25,000 students; trams; Brno ~61 km)
+    howItWorks:
+      "奥洛穆茨是奥洛穆茨大区的首府，一座“法定市”，市下分 26 个地方部分；市域约 103 平方公里，人口约 10.5 万，是捷克第六大城市。它是摩拉维亚的历史首都，1640 年代三十年战争中被瑞典军队占领后地位让给了布尔诺，至今仍是天主教大主教的驻地。上广场是市中心，2000 年列入世界遗产的圣三位一体柱与社会主义现实主义风格的天文钟都在广场上，下广场在旁边，圣瓦茨拉夫大教堂在老城的东端。1573 年创办的帕拉茨基大学是摩拉维亚最古老、捷克第二古老的大学，2.5 万学生占市民的四分之一，学生把这座城的节奏定在年轻的一边。18 世纪的要塞工事曾把城市困在城墙里，拆除后留下了环绕老城的公园带。有轨电车是市内交通的骨架，摩拉瓦河从城边流过。布尔诺在西南约 60 公里。奥洛穆茨奶酪（tvarůžky）是本地的味道。地址写“街道、门牌、五位邮编”，邮编 77 开头。初来的人最容易犯的错，是把奥洛穆茨当作布尔诺的附庸，而它是摩拉维亚的宗教中心与大学城。",
     layout:
       "老城以上广场与下广场为核心，圣三一柱矗立于上广场中央；奥洛穆茨主教座堂与主教宫殿位于老城另一端，城内保存有六座巴洛克喷泉，是老城景观的重要组成部分。",
     gettingAround:
