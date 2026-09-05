@@ -794,7 +794,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   hefei: {
     identity:
-      "Hefei is the capital of Anhui, a city between the Yangtze and Huai rivers on the northern shore of Lake Chao, with an urban population of about 5 million. Once a small town, it has grown fast in recent decades and is known for science, education and manufacturing; it is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
+      "Hefei's reputation for science and education traces back to a hurried wartime evacuation — in 1969 the University of Science and Technology of China was ordered out of Beijing, first relocating to Nanyang in Henan and then to Anqing in Anhui, neither of which could support it under such basic conditions; it finally settled in Hefei in 1970, having lost most of its library and equipment along the way and left with fewer than a hundred faculty, essentially starting over from scratch. That is how a top university put down roots in what was then an unremarkable town between the Yangtze and Huai rivers. Hefei is the capital of Anhui, on the northern shore of Lake Chao, with an urban population of about 5 million; it is now known for science, education and manufacturing, and is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
     layout:
       "Hefei sits on gently rolling ground between the Jianghuai hills and Lake Chao. The old town is ringed by the Huancheng Park (a green belt on the former moat); the government district is to the south-west and the Binhu new area is on the lake. South is Lake Chao and then Huangshan (Huangshan, Hongcun, Xidi, Tunxi old street); south-west are Lu'an and the Dabie Mountains; east is Nanjing.",
     gettingAround:
