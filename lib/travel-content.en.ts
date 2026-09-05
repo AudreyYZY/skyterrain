@@ -419,7 +419,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   hangzhou: {
     identity:
-      "Hangzhou is the capital of Zhejiang province, with a metropolitan population of about 12 million, known for West Lake. It was the capital of the Southern Song and the southern end of the Grand Canal. It combines lake-and-hill gardens with a modern digital economy, and is a major tourism and tech city in the Yangtze Delta.",
+      "West Lake was not always a lake — it started as a small bay off the Qiantang River, until silt carried down by the river built up a sandbar across its mouth, sealing the seawater inside off from the river; cut off and gradually diluted by the streams feeding in, it turned into today's freshwater lake over more than ten thousand years. Hangzhou is the capital of Zhejiang province, with a metropolitan population of about 12 million; it was the capital of the Southern Song and the southern end of the Grand Canal, combining lake-and-hill gardens with a modern digital economy as a major tourism and tech city in the Yangtze Delta.",
     layout:
       "Hangzhou is at the southern edge of the Yangtze Delta on the lower Qiantang River. West Lake — hills on three sides, the city on the fourth — is the heart of the city. The old town and commercial area are east of the lake; the new city centre (Qianjiang New City) is on both banks of the Qiantang River. West and south of the city are hills, tea slopes and stream valleys (Longjing, the Xixi wetland).",
     gettingAround:
@@ -464,7 +464,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   nanjing: {
     identity:
-      "Nanjing is the capital of Jiangsu and one of the main cities of the lower Yangtze, with a metropolitan population of about 9 million. It served as the capital under several dynasties, and long stretches of Ming-era city wall, several imperial tombs and Republican-era buildings give it a deep historical layering. It is an industrial and academic centre and an important transport hub for eastern China.",
+      "\"Purple Mountain coils like a dragon, Stone Mountain crouches like a tiger\" is an old line traditionally used to describe Nanjing's terrain: Purple Mountain winds along the city's east side like a dragon at rest, Stone Mountain guards the riverbank to the west like a crouching tiger, and the Yangtze itself blocks the north — a naturally defensible site that was a key reason Sun Quan founded his capital here in 229 CE, opening Nanjing's history as the \"capital of six dynasties.\" Nanjing is the capital of Jiangsu and one of the main cities of the lower Yangtze, with a metropolitan population of about 9 million; it went on to serve as the capital under several further dynasties, and long stretches of Ming-era city wall, several imperial tombs and Republican-era buildings give it a deep historical layering. It is an industrial and academic centre and an important transport hub for eastern China.",
     layout:
       "Nanjing sits on the east bank of the Yangtze among the Ningzhen hills, broken up by Purple Mountain, a string of smaller hills, Xuanwu Lake and the Qinhuai River. The old city centres on Xinjiekou; east is the wooded belt of Purple Mountain with Sun Yat-sen's Mausoleum and the Ming tombs, south is the old southern city around the Confucius Temple and the Qinhuai, and across the river is the Jiangbei new district. Low hills surround the city — it is not a plains city.",
     gettingAround:
@@ -509,7 +509,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   harbin: {
     identity:
-      "Harbin is the capital of Heilongjiang and the main city of the northern north-east, with a metropolitan population of about 5.5 million. It grew up around the railway and had a large foreign, mostly Russian, community in its early decades, which left blocks of European-style architecture and the nickname \"the Oriental Moscow\". Winters are severe, and it is the leading city for ice-and-snow tourism in China.",
+      "Harbin's rise began with a siting decision — when Tsarist Russia built the Chinese Eastern Railway in 1896, the junction station was chosen between Harbin and the upstream town of Bodune, and Harbin won out because its stretch of the Songhua River was wide enough for the large barges needed to bring in construction material; a fishing village on the riverbank shot up into a modern city within a few years. Harbin is the capital of Heilongjiang and the main city of the northern north-east, with a metropolitan population of about 5.5 million; the foreign, mostly Russian, community that poured in during its early decades left blocks of European-style architecture and the nickname \"the Oriental Moscow.\" Winters are severe, and it is the leading city for ice-and-snow tourism in China.",
     layout:
       "Harbin is built on the flat Northeast Plain on the south bank of the Songhua River. The core runs from Central Street (a cobbled pedestrian street) to the flood-control monument, the \"Chinese Baroque\" quarter of Laodaowai, and the area around St Sophia Cathedral; across the river are Sun Island and, in winter, the Ice and Snow World. The city stretches east–west along the river.",
     gettingAround:
