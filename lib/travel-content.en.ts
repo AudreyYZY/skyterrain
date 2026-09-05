@@ -1079,7 +1079,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   "new-zealand-overview": {
     identity:
-      "New Zealand lies in the south-west Pacific, made up of the North Island, the South Island and some smaller islands, with a population of about 5.2 million, most of it on the North Island. In Māori the country is called Aotearoa (\"land of the long white cloud\"). The official languages are English, Māori and New Zealand Sign Language. It sits on a plate boundary — mountainous, with volcanoes, geothermal areas and earthquakes — and faces Australia across the Tasman Sea.",
+      "New Zealand lies in the south-west Pacific, made up of the North Island, the South Island and some smaller islands, with a population of about 5.3 million, most of it on the North Island. In Māori the country is called Aotearoa (\"land of the long white cloud\"). The official languages are English, Māori and New Zealand Sign Language. It sits on a plate boundary — mountainous, with volcanoes, geothermal areas and earthquakes — and faces Australia across the Tasman Sea.",
     layout:
       "The North Island is comparatively gentle, with large areas of pasture, the central volcanic plateau (Ruapehu, Lake Taupō) and the geothermal country around Rotorua; the largest city, Auckland, and the capital, Wellington, are both here. The South Island is split lengthwise by the Southern Alps, with fiords and glaciers on the west, the Canterbury Plains on the east, the largest city being Christchurch, and Queenstown as the tourism centre of the south. Cook Strait separates the islands, with a car ferry across it.",
     gettingAround:
@@ -1147,14 +1147,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "English is universal; Christchurch is called the most English of New Zealand's cities, with large parks, cricket grounds and Edwardian buildings. Since the earthquakes, the centre has filled with transitional spaces made of shipping containers and street art, and feels younger than before. The pace is slow. Tipping is not expected.",
     seeAndDo:
-      "Punting on the Avon, the Botanic Gardens and Hagley Park; the rebuilding Cathedral Square, the Cardboard Cathedral and the earthquake memorial wall (a solemn place); the Canterbury Museum and the Bridge of Remembrance; the gondola up the Port Hills for the view over Lyttelton Harbour; the International Antarctic Centre. Drive out to Akaroa (a French-flavoured town on Banks Peninsula), Tekapo for the night sky, and Aoraki/Mount Cook.",
+      "Punting on the Avon, the Botanic Gardens and Hagley Park; Cathedral Square (reinstatement of the cathedral stalled in 2024 over a funding gap and was re-planned in 2025 as a staged rebuild), the Cardboard Cathedral and the earthquake memorial wall (a solemn place); the Canterbury Museum and the Bridge of Remembrance; the gondola up the Port Hills for the view over Lyttelton Harbour; the International Antarctic Centre. Drive out to Akaroa (a French-flavoured town on Banks Peninsula), Tekapo for the night sky, and Aoraki/Mount Cook.",
     whenAndTips:
       "December–March has the best weather. On norwester days (dry, hot north-west wind) the temperature jumps and fire risk is high. The TranzAlpine train and the routes to Aoraki/Mount Cook and Tekapo need booking in high season. The inland South Island has snow in winter — check road conditions and carry chains. Border checks on outdoor gear and food are very strict.",
   },
 
   queenstown: {
     identity:
-      "Queenstown is in the south of the South Island on the shore of Lake Wakatipu, ringed by mountains including The Remarkables, with a resident population of only about 50,000 but as the tourism and outdoor-sports centre of New Zealand. It is known as the \"adventure capital\" — bungy jumping (the first commercial bungy site is nearby), skydiving, jetboating and skiing are all here. The origin of the name is uncertain, with several accounts.",
+      "Queenstown is in the south of the South Island on the shore of Lake Wakatipu, ringed by mountains including The Remarkables, with an urban-area population of under 30,000 (about 52,000 in the wider Queenstown-Lakes District) but serving as the tourism and outdoor-sports centre of New Zealand. It is known as the \"adventure capital\" — bungy jumping (the first commercial bungy site is nearby), skydiving, jetboating and skiing are all here. The origin of the name is uncertain, with several accounts.",
     layout:
       "Queenstown is built on a bay at a Z-shaped bend in Lake Wakatipu; the centre is compact and walkable, and the Skyline Gondola runs straight from town to a hilltop lookout. Across the lake are The Remarkables; the lake's north-west arm leads to Glenorchy and the valleys used for Lord of the Rings. North-east over the hills are Arrowtown (an old gold-rush town) and Wānaka; south are Te Anau and the fiords.",
     gettingAround:
@@ -1169,7 +1169,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   dunedin: {
     identity:
-      "Dunedin is on the south-eastern coast of the South Island at the base of the Otago Peninsula, with a metropolitan population of about 130,000 — the fourth-largest city in New Zealand. It was founded by Scottish Presbyterian settlers in the mid-19th century, and the name Dunedin is the old Scots Gaelic name for Edinburgh (Dùn Èideann); the street names, churches and university carry a strong Scottish stamp. The wildlife nearby — albatross, yellow-eyed penguins, sea lions — is a major draw.",
+      "Dunedin is on the south-eastern coast of the South Island at the base of the Otago Peninsula, with a metropolitan population of about 130,000 — the second-largest city on the South Island. It was founded by Scottish Presbyterian settlers in the mid-19th century, and the name Dunedin is the old Scots Gaelic name for Edinburgh (Dùn Èideann); the street names, churches and university carry a strong Scottish stamp. The wildlife nearby — albatross, yellow-eyed penguins, sea lions — is a major draw.",
     layout:
       "Dunedin is built in a valley and on steep slopes at the head of a long harbour (Otago Harbour), with The Octagon as the centre. The University of Otago (the oldest in New Zealand) is just north of the centre. East along the harbour is the Otago Peninsula — a hilly peninsula whose tip, Taiaroa Head, has the only mainland breeding colony of royal albatross in the world. Baldwin Street, in the suburbs, was long considered one of the steepest streets in the world.",
     gettingAround:
@@ -1184,13 +1184,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   "usa-overview": {
     identity:
-      "The United States is a federal republic across central North America — 48 contiguous states plus Alaska and Hawaii, with a population of about 330 million. From east to west the land runs roughly: the Appalachian mountains, the interior Great Plains, the Rocky Mountains, the intermontane plateaus and basins, and the Pacific coast ranges. The climate spans subtropical to subarctic, rainforest to desert. English is used almost everywhere; Spanish is widespread in the Southwest.",
+      "The United States is a federal republic across central North America — 48 contiguous states plus Alaska and Hawaii, with a population of about 340 million. From east to west the land runs roughly: the Appalachian mountains, the interior Great Plains, the Rocky Mountains, the intermontane plateaus and basins, and the Pacific coast ranges. The climate spans subtropical to subarctic, rainforest to desert. English is used almost everywhere; Spanish is widespread in the Southwest.",
     layout:
       "It helps to think of the country in regions: the Northeast (the dense city belt from New York to Washington); the South (Florida and the Gulf coast, warm and humid); the Midwest (the farm and industrial belt around the Great Lakes and the plains, with Chicago as the hub); the Mountain West (the Rockies, Denver, Utah); the Southwest (arid, Las Vegas, the Grand Canyon); and the West Coast (California and the Pacific Northwest). Crossing the country by car takes several days; long trips are almost always flown.",
     gettingAround:
       "Cities are linked mainly by air, with a dense domestic network and many airports; intercity rail (Amtrak) is limited and slow. Big cities have a subway or light rail, but public transport overall is weaker than in East Asia or Europe, and most places need a rental car (drive on the right). Tipping is customary: 15–20% for table service, plus tips for taxis, bags and guides. Tap water is generally drinkable. Power is 120V with two flat pins.",
     culture:
-      "There is no official national language; English is the de facto common tongue. Regions differ a lot — food, accent and pace of life vary north to south and east to west. Tipping is a real part of service-industry pay, and not tipping for table service is seen as rude. Mind personal space in public. Many museums and national parks need tickets or reservations booked online in advance.",
+      "English is the common tongue — historically there was no legally designated national language, and a federal executive order made English the official language in March 2025, though everyday services were not changed by it. Regions differ a lot — food, accent and pace of life vary north to south and east to west. Tipping is a real part of service-industry pay, and not tipping for table service is seen as rude. Mind personal space in public. Many museums and national parks need tickets or reservations booked online in advance.",
     seeAndDo:
       "Nature: the Grand Canyon, Yellowstone, Yosemite, Zion, Death Valley and other national parks; the high country of the Rockies and the Sierra Nevada; the Everglades in Florida. Cities: the museums and skyline of New York, the bay at San Francisco, the jazz and French Quarter of New Orleans, the entertainment of Las Vegas. Route 66 and the Pacific Coast Highway are classic road trips.",
     whenAndTips:
@@ -1220,7 +1220,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     gettingAround:
       "Three airports: Reagan (DCA, closest, on the Metro), Dulles (IAD, on the Silver Line) and Baltimore (BWI). The Metro and buses use a SmarTrip card; the Mall is large and a long walk end to end, so consider a bikeshare. The climate is temperate: summers are hot and humid, winters are cold with occasional heavy snow, and there are cherry blossoms in spring and colour in autumn.",
     culture:
-      "English is universal; this is a city of international institutions and embassies, with people from everywhere. Most Smithsonian museums are free but need a timed-entry ticket booked online. Metro escalators have a 'stand right, walk left' rule. Tip 18–20% for table service. Political events and marches are common — follow on-site directions if a route is closed.",
+      "English is universal; this is a city of international institutions and embassies, with people from everywhere. The Smithsonian museums are all free and most can be entered directly; the most popular ones (Air and Space, African American History and Culture) need a free timed-entry pass booked online. Metro escalators have a 'stand right, walk left' rule. Tip 18–20% for table service. Political events and marches are common — follow on-site directions if a route is closed.",
     seeAndDo:
       "The National Mall: the Capitol, the Washington Monument, the Lincoln Memorial, the WWII and Vietnam memorials (places to be respectful); the Smithsonian's National Air and Space Museum, Natural History Museum and National Museum of African American History and Culture; the White House (viewable only from outside — interior tours must be requested far ahead); Arlington National Cemetery; the Cherry Blossom Festival in March–April.",
     whenAndTips:
@@ -1244,7 +1244,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   "new-orleans": {
     identity:
-      "New Orleans is on the lower Mississippi River near the Gulf of Mexico, with a city population of about 370,000. It was founded by the French in the early 18th century, then ruled by Spain, returned to France, and passed to the United States in 1803 with the Louisiana Purchase — so it blends French, Spanish, African and Caribbean architecture, food and music, and is the birthplace of jazz. The name comes from Orléans in France (la Nouvelle-Orléans); the name Louisiana comes from King Louis XIV.",
+      "New Orleans is on the lower Mississippi River near the Gulf of Mexico, with a city population of about 370,000. It was founded by the French in the early 18th century, then ruled by Spain, returned to France, and passed to the United States in 1803 with the Louisiana Purchase — so it blends French, Spanish, African and Caribbean architecture, food and music, and is the birthplace of jazz. The name (la Nouvelle-Orléans) was chosen at the city's founding in 1718 to honour Philippe II, Duke of Orléans, then regent of France; the name Louisiana comes from King Louis XIV.",
     layout:
       "New Orleans is built inside a large bend of the Mississippi (the 'Crescent City'), very low-lying and partly below sea level, protected by levees and pumps. The oldest part, the French Quarter, is by the river, with a grid of streets, iron balconies and courtyards; upriver are the mansions and streetcar lines of the Garden District; to the north is Lake Pontchartrain.",
     gettingAround:
@@ -1297,7 +1297,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "English is universal, visitors come from all over, and the service industry is built around entertainment and spending. Gambling and drinking have an age limit (21); minors cannot enter casino areas. Dealers, servers and bellhops are all tipped. The city runs 24 hours. Midday in summer is not the time for long spells outdoors.",
     seeAndDo:
-      "Free shows along the Strip (the fountains, the volcano, the water show) and the themed architecture; the Fremont Street light show downtown; the High Roller observation wheel. Nature: Red Rock Canyon (half an hour away), the Hoover Dam and Lake Mead, three to four hours east to the Grand Canyon's South or West Rim, north-east to Zion, north-west to Death Valley.",
+      "Free shows along the Strip (such as the Bellagio fountains; the Mirage volcano show ended when that resort closed in July 2024) and the themed architecture; the Fremont Street light show downtown; the High Roller observation wheel. Nature: Red Rock Canyon (half an hour away), the Hoover Dam and Lake Mead, three to four hours east to the Grand Canyon's South or West Rim, north-east to Zion, north-west to Death Valley.",
     whenAndTips:
       "March–May and October–November are the most comfortable. In high summer the heat is severe — do outdoor activities early or late and drink plenty. Hotel rates rise sharply on weekends and during big conventions and holidays. Trips to the Grand Canyon or Death Valley are full-day outings — fill the tank, carry water, and expect no phone signal in the mountains and desert.",
   },
@@ -1351,13 +1351,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Toronto is the most populous city in Canada, with a metro area of about 6.6 million, on the north-western shore of Lake Ontario, and the country's financial, media and immigration centre — about half the city's residents were born abroad, making it one of the most diverse cities in the world. It is not the capital (that is Ottawa), but it is the capital of the province of Ontario. The name comes from a Mohawk word meaning roughly 'where there are trees standing in the water', originally for a spot further north at Lake Simcoe.",
     layout:
-      "Toronto is built on a plain sloping gently down to the north shore of Lake Ontario, with a regular street grid. Downtown is right on the lake, and the CN Tower and the financial-district towers define the skyline; Yonge Street runs north–south. Along the city's northern edge is a low wooded slope — a stretch of the Niagara Escarpment. An hour to the south-west along the lake are Niagara Falls.",
+      "Toronto is built on a plain sloping gently down to the north shore of Lake Ontario, with a regular street grid. Downtown is right on the lake, and the CN Tower and the financial-district towers define the skyline; Yonge Street runs north–south. North of downtown runs a low east–west bluff (along Davenport Road) — the ancient shoreline of glacial Lake Iroquois; the whole of today's downtown once lay on the lake bed. An hour to the south-west along the lake are Niagara Falls.",
     gettingAround:
       "Pearson International Airport (YYZ) is north-west of the city, with the UP Express train about 25 minutes to Union Station downtown; Billy Bishop Airport (YTZ) is on the island, close to downtown. The city has a subway, streetcars and buses, using a Presto card; downtown is walkable. The climate is humid continental with four clear seasons: warm, sometimes muggy summers, cold snowy winters, wind off the lake, and short spring and autumn.",
     culture:
       "English is universal, with sizeable Chinatown, Little Italy, Little Portugal and Little India neighbourhoods. Torontonians identify strongly with local sport and with the CN Tower as one of the world's tallest structures. Tip 15–20% for table service. In winter pavements ice over — dress warm and watch your footing; summer brings many street festivals.",
     seeAndDo:
-      "The CN Tower (observation deck / glass floor); the waterfront and the Toronto Islands (a ferry across for the skyline view); the Royal Ontario Museum and the Art Gallery of Ontario; St Lawrence Market; Kensington Market and Chinatown; the Hockey Hall of Fame; an hour out of town, Niagara Falls (the Canadian-side viewpoints and the Maid of the Mist boat).",
+      "The CN Tower (observation deck / glass floor); the waterfront and the Toronto Islands (a ferry across for the skyline view); the Royal Ontario Museum and the Art Gallery of Ontario; St Lawrence Market; Kensington Market and Chinatown; the Hockey Hall of Fame; an hour out of town, Niagara Falls (the Canadian-side viewpoints and the Niagara City Cruises boat to the foot of the falls; the Maid of the Mist sails from the US side).",
     whenAndTips:
       "May–October has the best weather, with many summer festivals. Winter is cold and windy off the lake, often well below freezing from December to February. The Niagara Falls day trip is well established but crowded in peak season — book the boat ahead. The UP Express from the airport is faster and cheaper than a taxi.",
   },
@@ -1441,7 +1441,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Winnipeg is the capital of Manitoba, on the eastern edge of the Canadian prairies at the meeting of the Red and Assiniboine rivers, with a metro area of about 850,000. This has long been a meeting point for Indigenous peoples and the fur trade, and became the 'gateway to the West' with the railway in the late 19th century. The name comes from the Cree 'wīnipēk', meaning 'muddy water', for Lake Winnipeg to the north.",
     layout:
-      "Winnipeg is built on an extremely flat lake plain (the bed of glacial Lake Agassiz), with no hills at all. The river junction, The Forks, is the historic and present-day centre, with a market and paths. The streets are a large grid, and downtown has one of the widest intersections in Canada (Portage and Main).",
+      "Winnipeg is built on an extremely flat lake plain (the bed of glacial Lake Agassiz), with no hills at all. The river junction, The Forks, is the historic and present-day centre, with a market and paths. The streets are a large grid, and downtown's Portage and Main intersection, billed as the \"crossroads of Canada,\" is famous for its wind and cold.",
     gettingAround:
       "Richardson International Airport (YWG) is very close to downtown (about 10 minutes). The city relies on buses, is spread out, and most people drive. The climate is a classic continental prairie one with a huge annual range: warm summers with thunderstorms and mosquitoes, and extreme cold and wind in winter (a January wind-chill often below −30°C), with plenty of sunshine.",
     culture:
@@ -1477,7 +1477,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "English is universal. Edmonton calls itself the 'Festival City', with a festival almost every week in summer (a folk festival, a Fringe theatre festival that is one of the largest in North America). It is also known for hockey and for big shopping malls. Tip 15–20% for table service. Winter is extremely cold — dress warm.",
     seeAndDo:
-      "West Edmonton Mall (once the world's largest, with a water park and an indoor roller coaster); the Alberta Legislature and the river-valley paths and bridges; the Royal Alberta Museum; Elk Island National Park (for bison, very close to the city); summer festivals, and the northern lights in winter. Many people use Edmonton as a starting point for the Rockies to the south or nature areas beyond Calgary.",
+      "West Edmonton Mall (once the world's largest, with a water park and an indoor roller coaster); the Alberta Legislature and the river-valley paths and bridges; the Royal Alberta Museum; Elk Island National Park (for bison, very close to the city); summer festivals, and the northern lights in winter. Many people use Edmonton as a starting point for Jasper National Park to the west or the lake country and oil-sands region to the north.",
     whenAndTips:
       "June–August is the most comfortable, with very long daylight and dense festivals. Winter is very cold — prepare for below −25°C. The city is spread out with limited transit — a rental car is easier. For the Rockies, people usually go via Calgary or drive directly, a fair distance.",
   },
@@ -3802,7 +3802,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "Ireland can be divided roughly into: Leinster (Dublin, the eastern plain and capital region), Munster (Cork, Limerick and Kerry, the southern and south-western coast and mountains), Connacht (Galway, the western coast and Gaeltacht areas), and the Republic's portion of Ulster (Donegal, the north-west coast). The centre of the country is dominated by low-lying land and peat bog, with most upland concentrated around the coastal margins.",
     gettingAround:
-      "Dublin Airport is the main international gateway; rail and long-distance coach networks cover the main towns, with intercity journeys typically taking 1–3 hours. Scheduled domestic flights are very limited — currently only two government-subsidised routes, Dublin–Kerry and Dublin–Donegal. Driving is on the left, and rural roads are often narrow. The climate is temperate maritime, mild and rainy year-round with changeable weather, so it's worth carrying rain gear. Restaurant bills typically don't include a tip; around 10% or rounding up is customary. The voltage is 230V with UK-style three-pin plugs.",
+      "Dublin Airport is the main international gateway; rail and long-distance coach networks cover the main towns, with intercity journeys typically taking 1–3 hours. Scheduled domestic flights are very limited — essentially just Dublin–Donegal (a government-subsidised PSO route) and Dublin–Kerry (a commercial Ryanair route, unsubsidised since 2021). Driving is on the left, and rural roads are often narrow. The climate is temperate maritime, mild and rainy year-round with changeable weather, so it's worth carrying rain gear. Restaurant bills typically don't include a tip; around 10% or rounding up is customary. The voltage is 230V with UK-style three-pin plugs.",
     culture:
       "The official languages are Irish (Gaelic) and English; English is used in daily life throughout most of the country, while parts of the western coast (the Gaeltacht) still use Irish as the primary spoken language. The Irish are known for their conversational warmth, humour and hospitality, and pub culture is a central part of social life. Traditional music, dance and Celtic festivals such as St Patrick's Day are widely celebrated across the country.",
     seeAndDo:
@@ -3858,7 +3858,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The compact town centre sits right beside Killarney National Park and its lakes to the south-west, with MacGillycuddy's Reeks rising as a backdrop on the park's western side, forming a classic mountain-and-lake setting.",
     gettingAround:
-      "Kerry Airport is about 15 km from town, reached by taxi; there's also a direct train from Dublin (about 3.5 hours). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
+      "Kerry Airport is about 15 km from town, reached by taxi; there's also a train from Dublin (about 3.5 hours, most services with one change at Mallow). The town centre is walkable, and bicycles or jaunting cars are available for touring the lakes and national park. The climate is temperate maritime and rainy.",
     culture:
       "The official languages are Irish and English, with English used day to day. Killarney has been a fashionable European resort destination since the 18th century, and tourism remains central to the local economy. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -3876,17 +3876,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official languages are Irish and English; Dingle sits in the Gaeltacht, and many local signs and place names appear in Irish. The town is known for its seafood and traditional-music pubs. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
-      "The Slea Head viewpoint; early Christian remains such as the Gallarus Oratory beehive huts; Dingle's resident dolphin-watching tours; the Slea Head loop drive along the peninsula's coast.",
+      "The Slea Head viewpoint; early Christian remains such as the Gallarus Oratory beehive huts; whale- and dolphin-watching boat trips from Dingle Harbour (Fungie, the bottlenose dolphin resident in the harbour since 1983, has not been seen since October 2020, and a bronze statue of him stands on the pier); the Slea Head loop drive along the peninsula's coast.",
     whenAndTips:
       "May–September is the most pleasant season; the peninsula's coastal roads are narrow with many tight bends, so drive carefully. The town's traditional-music pubs in the evening are a great way to experience local culture.",
   },
   waterford: {
     identity:
-      "Waterford is Ireland's oldest city, founded by Vikings in 914, with a population of about 56,000, sitting at the mouth of the River Suir in south-east Ireland and known for its crystal craftsmanship.",
+      "Waterford is Ireland's oldest city, founded by Vikings in 914, with a population of about 60,000, sitting at the mouth of the River Suir in south-east Ireland and known for its crystal craftsmanship.",
     layout:
       "The old town is built along the north bank of the Suir, with the Viking Triangle preserving a medieval street layout; the suburbs extend out along the river mouth toward Waterford Harbour.",
     gettingAround:
-      "Waterford Airport has very limited scheduled service; most travellers connect via Cork Airport (about 110 km) or Dublin Airport (about 165 km), or take the train to and from Dublin (about 2.5 hours). The old town is walkable. The climate is temperate maritime.",
+      "Waterford Airport currently has no scheduled passenger flights; most travellers connect via Cork Airport (about 110 km) or Dublin Airport (about 165 km), or take the train to and from Dublin (about 2.5 hours). The old town is walkable. The climate is temperate maritime.",
     culture:
       "The official languages are Irish and English, with English used day to day. Waterford Crystal is one of Ireland's signature craft brands, and the city's history is closely tied to its Viking and Norman settlement traditions. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
@@ -3896,13 +3896,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   limerick: {
     identity:
-      "Limerick is Ireland's third-largest city, with a population of about 94,000, sitting at the mouth of the River Shannon and serving as an important city and gateway in Munster, west-central Ireland.",
+      "Limerick is Ireland's third-largest city, with a population of about 100,000, sitting at the mouth of the River Shannon and serving as an important city and gateway in Munster, west-central Ireland.",
     layout:
       "The old town is built along the Shannon, with King John's Castle guarding a key crossing point; the city is divided into historic quarters including Irishtown, Englishtown and Newtown Pery.",
     gettingAround:
       "Shannon Airport is about 25 km from the centre, reached by bus. Getting around the city relies mainly on walking and buses. The climate is temperate maritime; the flat land at the Shannon estuary tends to be quite windy.",
     culture:
-      "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is also the namesake origin of the five-line comic verse form, the \"limerick.\" Restaurant bills typically don't include a tip; around 10% is customary.",
+      "The official languages are Irish and English, with English used day to day. Limerick is a stronghold of Irish rugby culture and is generally taken to be the namesake of the five-line comic verse form, the \"limerick,\" though the exact origin of the name remains unsettled. Restaurant bills typically don't include a tip; around 10% is customary.",
     seeAndDo:
       "King John's Castle; St Mary's Cathedral, Limerick; a walk along the Shannon. Day trips to medieval sites along the Shannon such as Bunratty Castle.",
     whenAndTips:
@@ -3926,7 +3926,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Westport is a small town in County Mayo in western Ireland, with a population of about 6,000, the traditional gateway to Croagh Patrick and Achill Island, and often considered one of Ireland's most liveable small towns.",
     layout:
-      "The town was built to an 18th-century plan by architect James Wyatt, with a canal and tree-lined boulevard running through the centre — one of the few planned towns in Ireland.",
+      "The town was built to an 18th-century plan (generally attributed to the English architect James Wyatt, around 1780), with a canal and tree-lined boulevard running through the centre — one of the few planned towns in Ireland.",
     gettingAround:
       "Ireland West Airport Knock is about 50 km from town, reached by bus. The town itself is walkable; reaching Achill Island and Croagh Patrick requires a car. The climate is temperate maritime, with fairly strong Atlantic coastal winds.",
     culture:
@@ -4494,7 +4494,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Luxembourg City is the capital of the Grand Duchy, with a population of about 130,000, built on the Luxembourg Plateau's sandstone. It is a major seat of EU institutions and a leading global financial centre; its old town and fortifications were inscribed on the World Heritage List in 1994.",
     layout:
-      "The old town is built on a promontory surrounded by gorges cut by the Alzette and Pétrusse rivers into the plateau, with the Bock promontory guarding one corner; the newer district — home to the EU institutions and the financial centre — lies on the Kirchberg plateau to the north.",
+      "The old town is built on a promontory surrounded by gorges cut by the Alzette and Pétrusse rivers into the plateau, with the Bock promontory guarding one corner; the newer district — home to the EU institutions and the financial centre — lies on the Kirchberg plateau to the north-east, across the Alzette valley.",
     gettingAround:
       "Findel Airport is about 6 km from the centre, reached by bus; public transport (bus and light rail) is free nationwide. The old town is walkable, with several bridges linking the different districts across the gorges. The climate is temperate maritime, mild and rainy year-round.",
     culture:
@@ -4510,11 +4510,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built along the Alzette, right on the French border; numerous historic mining sites surround it, some now converted into industrial-heritage parks, such as the Belval blast-furnace site.",
     gettingAround:
-      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide, with a light-rail and bus network in the city. The climate is temperate maritime.",
+      "There is no commercial airport locally; the nearest is Luxembourg Findel Airport (about 20 km); public transport is free nationwide, with a bus network in the city (a fast tram line from Luxembourg City to Esch is planned to open in stages during the 2030s). The climate is temperate maritime.",
     culture:
       "All three official languages are in use; the city's historic draw of Italian and Portuguese immigrants for mining and steelwork has given it a culturally blended immigrant heritage. Restaurant bills typically already include service.",
     seeAndDo:
-      "The Belval blast-furnace industrial-heritage site (preserving intact 19th-century ironworks); the National Museum of Mining, Minett; a nearby mining-heritage trail through the Minett Biosphere Reserve.",
+      "The Belval blast-furnace industrial-heritage site (preserving blast furnaces A and B, built in 1965 and 1970, shut down in 1997 and open to visitors since 2014); the National Museum of Mining, Minett; a nearby mining-heritage trail through the Minett Biosphere Reserve.",
     whenAndTips:
       "May–September is the most pleasant season; as the gateway to industrial-heritage tourism, plan half a day specifically to visit the Belval site and the mining museum.",
   },
@@ -4590,7 +4590,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   clervaux: {
     identity:
-      "Clervaux is a small town in the Clerve Valley in northern Luxembourg, with a population of about 4,000; its medieval castle dominates high ground at the centre of the valley, and the town is an important historical witness to the Battle of the Bulge.",
+      "Clervaux is a small town in the Clerve Valley in northern Luxembourg, with a population of about 1,600; its medieval castle dominates high ground at the centre of the valley, and the town is an important historical witness to the Battle of the Bulge.",
     layout:
       "The town is built along both banks of the Clerve Valley, with the castle on high ground at the valley's centre and a Benedictine abbey on a nearby hill overlooking the whole valley.",
     gettingAround:
@@ -5519,7 +5519,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   // ============ Mongolia ============
   "mongolia-overview": {
     identity:
-      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.28 million; its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
+      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.5 million; its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
     layout:
       "The country divides roughly into: the Centre (Ulaanbaatar and the Kharkhorin/Orkhon valley, the political and cultural core), the North (Erdenet, Darkhan, Mörön — forest and lake country), the West (Khovd, Ölgii — the Mongol Altai and the Kazakh community), the South Gobi (Dalanzadgad — the Gobi desert belt), and the East (Choibalsan — the Daurian steppe belt).",
     gettingAround:
@@ -5547,7 +5547,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   erdenet: {
     identity:
-      "Erdenet is Mongolia's second-largest city, with a population of about 90,000, in Orkhon Province in the north; it grew into an important industrial city around a large copper-molybdenum mine.",
+      "Erdenet is Mongolia's second-largest city, with a population of just over 100,000, in Orkhon Province in the north; it grew into an important industrial city around a large copper-molybdenum mine.",
     layout:
       "The city was built around the mining and ore-processing facilities of the Erdenet Mining Corporation, its layout carrying the typical features of a Soviet-era planned industrial town, with residential and factory areas kept largely separate.",
     gettingAround:
@@ -5575,7 +5575,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   kharkhorin: {
     identity:
-      "Kharkhorin is the site of Karakorum, the 13th–14th century capital of the Mongol Empire, set in the Orkhon Valley, and today the core gateway for exploring the Orkhon Valley Cultural Landscape.",
+      "Kharkhorin is the site of Karakorum, the 13th–14th century capital of the Mongol Empire, set in the Orkhon Valley, and today the core gateway for exploring the Orkhon Valley Cultural Landscape (a UNESCO World Heritage Site since 2004). Well watered and rich in pasture, and commanding the central steppe, the valley had already served as the seat of the Türk and Uyghur steppe powers before the Mongols (the ruins of the Uyghur capital Ordu-Baliq, or Khar Balgas, lie nearby), so Ögedei's choice of the site for his imperial capital followed an older tradition; after Kublai Khan took the throne in 1260 and moved the capital to Shangdu, Karakorum went into steady decline.",
     layout:
       "The modern town of Kharkhorin sits alongside the ancient city ruins and Erdene Zuu Monastery; most of the ruined site remains to be archaeologically excavated, with traces of walls and building foundations visible at the surface.",
     gettingAround:
@@ -5583,13 +5583,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official language is Mongolian. Karakorum was founded as the Mongol Empire's capital in 1235 by Ögedei Khan, son of Genghis Khan; after Erdene Zuu Monastery was built in the 16th century, much of the stone from the ancient city ruins was reused in the monastery's construction.",
     seeAndDo:
-      "Erdene Zuu Monastery (Mongolia's first Tibetan Buddhist monastery, 16th century); the Karakorum ancient city museum; the turtle-shaped stone monument; the pastoral scenery of the Orkhon Valley.",
+      "Erdene Zuu Monastery (built in the 16th century, one of Mongolia's earliest surviving Tibetan Buddhist monasteries); the Karakorum ancient city museum; the turtle-shaped stone monument; the pastoral scenery of the Orkhon Valley.",
     whenAndTips:
       "June–August has the most pleasant climate; allow ample time to explore the nomadic pastoral life around the Orkhon Valley Cultural Landscape rather than making only a brief stop at the ancient city ruins.",
   },
   moron: {
     identity:
-      "Mörön is the capital of Khövsgöl Province in northern Mongolia, with a population of about 40,000, and the core gateway for exploring Lake Khövsgöl.",
+      "Mörön is the capital of Khövsgöl Province in northern Mongolia, with a population of about 47,000, and the core gateway for exploring Lake Khövsgöl.",
     layout:
       "The city sits on the flat valley floor of the Delgermörön River, ringed by forested mountains, and is connected to Lake Khövsgöl by road.",
     gettingAround:
@@ -5603,7 +5603,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   dalanzadgad: {
     identity:
-      "Dalanzadgad is the capital of South Gobi Province in southern Mongolia, with a population of about 20,000, and the core gateway for exploring Gobi Gurvansaikhan National Park.",
+      "Dalanzadgad is the capital of South Gobi Province in southern Mongolia, with a population of about 33,000, and the core gateway for exploring Gobi Gurvansaikhan National Park.",
     layout:
       "The city sits at the edge of the Gobi desert at the northern foot of the Gurvan Saikhan Mountains, and serves as the administrative and supply centre for the South Gobi region.",
     gettingAround:
@@ -5635,7 +5635,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The city sits in a river valley at the foot of the Mongol Altai, serving as the administrative and cultural centre of Bayan-Ölgii Province, where traditional Kazakh culture is well preserved.",
     gettingAround:
-      "Ölgii International Airport (ULG) has seasonal scheduled flights to and from Ulaanbaatar from April to October (about twice a week); reaching the Tavan Bogd massif requires driving or hiring a car with a professional guide.",
+      "Ölgii International Airport (ULG) has year-round scheduled flights to and from Ulaanbaatar, with more frequent service in the April–October tourist season; reaching the Tavan Bogd massif requires driving or hiring a car with a professional guide.",
     culture:
       "Bayan-Ölgii Province is the main home of Mongolia's Kazakh minority; the official language is Mongolian, and the local Kazakh community retains its own language, Islamic faith and the traditional art of golden eagle hunting.",
     seeAndDo:
@@ -5663,7 +5663,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The town is built into the valley terrain, with Tibetan Buddhist monastery architecture standing alongside a Soviet-era planned town layout.",
     gettingAround:
-      "Tsetserleg Airport (TSZ) exists locally but passenger service is not currently reliable; the town is usually reached from Ulaanbaatar by road, a journey of about 6 hours (roughly 420 km).",
+      "Tsetserleg Airport (TSZ) exists locally but passenger service is not currently reliable; the town is usually reached from Ulaanbaatar by road (mostly via Kharkhorin), a journey of about 7 to 8 hours (roughly 480 km by road).",
     culture:
       "The official language is Mongolian. Tsetserleg is a town where the traditional nomadic life of the Khangai region meets Tibetan Buddhist culture, with several traditional monastery sites preserved nearby.",
     seeAndDo:
@@ -5913,7 +5913,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "kampong-glam": {
     identity:
-      "Kampong Glam is Singapore's historic Malay-Muslim quarter; in 1819 the British East India Company granted this area to Sultan Hussein Shah of Johor as a royal seat, making it one of the few districts in Singapore that preserves a continuous royal-historical thread.",
+      "Kampong Glam is Singapore's historic Malay-Muslim quarter; Raffles' 1822 town plan allotted this area to the Malay, Bugis and Arab communities, and in 1823 the British East India Company formally granted part of it to Sultan Hussein Shah of Johor as a royal seat, making it one of the few districts in Singapore that preserves a continuous royal-historical thread.",
     layout:
       "The Sultan Mosque forms the district's geographic and visual centre; the old shophouses along Haji Lane and Arab Street have been reinvented as cafés, indie boutiques and a hub of street murals, while textile, perfume and carpet shops persist around the mosque — a blend of old and new woven into the same streetscape. The old Istana (palace) complex is the core site for understanding this local royal history.",
     gettingAround:
@@ -5929,13 +5929,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Little India is Singapore's historic Indian quarter; Indian labourers were drawn here in the 19th century by the area's lime kilns and brick-making industry, gradually forming an Indian residential and trading district centred on Serangoon Road, gazetted as a conservation area in 1989.",
     layout:
-      "Serangoon Road is the district's main artery, densely lined with spice shops, goldsmiths, sari stores and Hindu temples; Tekka Centre, completed in 1915, is one of Singapore's largest wet markets and a core spot for Indian food, while the district's colourful Nanyang shophouse façades echo the equally colourful temple towers nearby.",
+      "Serangoon Road is the district's main artery, densely lined with spice shops, goldsmiths, sari stores and Hindu temples; Tekka Centre (its predecessor Tekka Market opened in 1915; the present building dates from 1982) is one of Singapore's largest wet markets and a core spot for Indian food, while the district's colourful Nanyang shophouse façades echo the equally colourful temple towers nearby.",
     gettingAround:
       "Little India MRT station (NE/DT line interchange) sits at the heart of the district; Little India has no airport of its own and is reached via Changi Airport (about 20 km from the city centre); the district is compact and best combined with a short MRT ride.",
     culture:
-      "Sri Veeramakaliamman Temple, built in 1855, is among Singapore's earliest temples dedicated to the Hindu goddess Kali, its gopuram tower densely and elaborately sculpted; shoes come off before entering, and women should dress modestly. During Deepavali and Thaipusam the district is elaborately lit and hosts major processions.",
+      "Sri Veeramakaliamman Temple, whose shrine dates from 1855 (the temple itself was built in 1881), is among Singapore's earliest temples dedicated to the Hindu goddess Kali, its gopuram tower densely and elaborately sculpted; shoes come off before entering, and women should dress modestly. During Deepavali and Thaipusam the district is elaborately lit and hosts major processions.",
     seeAndDo:
-      "Sri Veeramakaliamman Temple (1855, dedicated to the goddess Kali); Tekka Centre (built 1915, one of Singapore's largest wet markets and food centres); the spice and sari shops along Serangoon Road; nearby Indian restaurants and sweet shops.",
+      "Sri Veeramakaliamman Temple (shrine from 1855, temple built 1881, dedicated to the goddess Kali); Tekka Centre (original market 1915, present building 1982, one of Singapore's largest wet markets and food centres); the spice and sari shops along Serangoon Road; nearby Indian restaurants and sweet shops.",
     whenAndTips:
       "Deepavali (October–November, dates vary by year) and Thaipusam (January–February) bring elaborate lighting and processions to the district — its liveliest but also busiest stretch; weekday afternoons offer a more unhurried pace for temples and Tekka Centre.",
   },
@@ -6133,7 +6133,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official language is Kazakh, with Russian widely spoken. Kazakh hospitality is taken seriously, and accepting food offered by a host is basic courtesy. Shoes come off before entering the Nur-Astana Mosque or other religious sites, and women should carry a headscarf. Tipping is customary in Kazakhstan — typically an extra 5–10% on top of the restaurant bill.",
     seeAndDo:
-      "The Bayterek Tower (climb up for a view over the city and steppe); the Khan Shatyr entertainment centre (designed by Norman Foster, the world's largest tent-like structure); the Nur-Astana Mosque (Central Asia's third-largest); the National Museum of Kazakhstan; the Presidential Cultural Centre and Independence Square.",
+      "The Bayterek Tower (climb up for a view over the city and steppe); the Khan Shatyr entertainment centre (designed by Norman Foster, the world's largest tent-like structure); the Nur-Astana Mosque (2005) and the Astana Grand Mosque (completed in 2022, the largest mosque in Central Asia); the National Museum of Kazakhstan; the Presidential Cultural Centre and Independence Square.",
     whenAndTips:
       "Astana's winters are extremely cold and long (temperatures can drop below -30°C), while summers are hot and dry — May through September is the more comfortable travel season; the left-bank landmark cluster is compact, so plan a full day combining walking with taxis.",
   },
@@ -6153,7 +6153,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   shymkent: {
     identity:
-      "Shymkent is Kazakhstan's third-largest city, with a population of more than 1 million; it is the capital of Turkistan Region, historically an important Silk Road trading centre, and today a major industrial and transport hub in southern Kazakhstan.",
+      "Shymkent is Kazakhstan's third-largest city, with a population of more than 1 million; a city of republican significance since 2018 (before that it was the capital of South Kazakhstan Region, which was renamed Turkistan Region that year with its seat moved to Turkistan), historically an important Silk Road trading centre, and today a major industrial and transport hub in southern Kazakhstan.",
     layout:
       "The old town preserves some Soviet-era buildings and traditional bazaars, while the newer Independence Park and Al-Farabi Square form the city centre's leisure core; the ancient city of Turkestan lies about 160 km to the north.",
     gettingAround:
@@ -6167,7 +6167,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   aktau: {
     identity:
-      "Aktau is the capital of Mangystau Region, with a population of more than 200,000; it is Kazakhstan's largest city on the Caspian coast, with a dry, low-rainfall climate, and serves as the core gateway to the desert wonders of Mangystau — Bozzhyra, Karagiye and Torysh.",
+      "Aktau is the capital of Mangystau Region, with a population of about 270,000; it is Kazakhstan's largest city on the Caspian coast, with a dry, low-rainfall climate, and serves as the core gateway to the desert wonders of Mangystau — Bozzhyra, Karagiye and Torysh.",
     layout:
       "The city follows a Soviet-era grid plan, its districts identified by numbered microdistricts (mkr) rather than traditional street names, with several beaches and a seaside promenade along the Caspian shore; landmarks deep in the Mangystau desert such as Bozzhyra and Karagiye require several hours' drive from Aktau to reach.",
     gettingAround:
@@ -6197,7 +6197,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Karaganda is an industrial city in the central Kazakh Uplands, with a population of more than 500,000; it grew historically around coal mining and remains an important mining and industrial centre in central Kazakhstan, as well as one of the gateways to the Karkaraly Mountains and Bektau-Ata.",
     layout:
-      "The city developed around Soviet-era coal-mining industry, and its centre preserves a large number of Soviet-era buildings; Karkaraly National Park lies about 220 km to the east, and the granite massif of Bektau-Ata about 70 km to the south.",
+      "The city developed around Soviet-era coal-mining industry, and its centre preserves a large number of Soviet-era buildings; Karkaraly National Park lies about 220 km to the east, and the granite massif of Bektau-Ata about 300 km to the south, some 70 km north of Lake Balkhash.",
     gettingAround:
       "Sary-Arka Airport (KGF) is about 20 km from the city centre; buses and taxis are the main way to get around town, and reaching Karkaraly or Bektau-Ata usually requires a hired car, each several hours' drive on mountain roads.",
     culture:
@@ -6523,7 +6523,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     layout:
       "The old town surrounds St. Stephen's Square, one of the largest squares in Dalmatia, with St. Stephen's Cathedral at one end and the harbor at the other. Fortica fortress on the hill behind town overlooks both the town and the Pakleni Islands offshore.",
     gettingAround:
-      "Hvar Island has no airport; visitors arrive via ferry or catamaran from Split or Dubrovnik airports through the harbor, with the Split–Hvar Town crossing taking about 75 minutes. The town itself is walkable.",
+      "Hvar Island has no airport; visitors arrive via ferry or catamaran from Split or Dubrovnik airports through the harbor, with the Split–Hvar Town catamaran crossing taking about an hour. The town itself is walkable.",
     culture:
       "The official language is Croatian. Modest dress is expected when visiting St. Stephen's Cathedral. Hvar is a well-known resort and nightlife island, with dense crowds of visitors and yachts in summer and higher dining prices than inland cities. Restaurant tips are typically around 10% of the bill.",
     seeAndDo:
@@ -6533,7 +6533,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   "czechia-overview": {
     identity:
-      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of roughly 10.7 million. Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
+      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of roughly 10.9 million. Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
     layout:
       "The country is traditionally divided into three historic regions: Bohemia (west and center, centered on Prague and ringed by ancient mountains), Moravia (southeast, centered on Brno, with rolling hills and vineyards), and Czech Silesia (a small northeastern corner, administratively combined with Moravia). Almost the entire country is bordered by old mountain ranges, with lowlands in the center.",
     gettingAround:
@@ -6555,7 +6555,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     culture:
       "The official language is Czech, and English is widely spoken in tourist areas. Modest dress is expected when entering St. Vitus Cathedral and other religious sites; keep an eye on your belongings around busy spots like Charles Bridge and Old Town Square; restaurant bills typically don't include service, and a 5-10% tip or rounding up the total is customary.",
     seeAndDo:
-      "The Prague Castle complex (including St. Vitus Cathedral, the core of the UNESCO listing); Charles Bridge (completed in the 14th century, lined with 30 Baroque saint statues); Old Town Square and the Astronomical Clock (installed in 1410, the oldest such clock still in operation); the Lesser Town and views from Petřín Hill.",
+      "The Prague Castle complex (including St. Vitus Cathedral, the core of the UNESCO listing); Charles Bridge (begun in 1357 and completed in 1402, lined with 30 Baroque saint statues mostly installed between 1683 and 1714); Old Town Square and the Astronomical Clock (installed in 1410, the oldest such clock still in operation); the Lesser Town and views from Petřín Hill.",
     whenAndTips:
       "April to June and September to October are pleasant with relatively fewer visitors; July and August are peak season with higher temperatures; December's Christmas markets have a festive atmosphere. The Old Town core is entirely walkable, and early morning is the best time to photograph Charles Bridge before crowds arrive.",
   },
@@ -6563,13 +6563,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Brno is Czechia's second-largest city and the center of Moravia, with a population of about 380,000. It was historically the capital of the Margraviate of Moravia, and today is an important research and university city.",
     layout:
-      "The old town centers on Freedom Square, with Špilberk Castle on a hill to the west overlooking the city; the Cathedral of St. Peter and Paul on Petrov Hill forms Brno's signature skyline. On the city's southern outskirts stands the Bauhaus-style Villa Tugendhat.",
+      "The old town centers on Freedom Square, with Špilberk Castle on a hill to the west overlooking the city; the Cathedral of St. Peter and Paul on Petrov Hill forms Brno's signature skyline. In the Černá Pole district on the city's north side stands Villa Tugendhat, a modernist landmark designed by Mies van der Rohe.",
     gettingAround:
       "Brno-Tuřany Airport is about 7.5 km from the city center; the city has an extensive tram network, and the old town core is entirely walkable.",
     culture:
       "The official language is Czech. Modest dress is expected when entering the Cathedral of St. Peter and Paul and other religious sites; as a major university city, Brno has a lively student population and strong restaurant and pub culture; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
     seeAndDo:
-      "Špilberk Castle (founded in the 13th century, later used as a fortress and prison); the Cathedral of St. Peter and Paul; Villa Tugendhat (a 1930 Bauhaus-style modernist landmark, UNESCO World Heritage); Freedom Square at the heart of the old town; and using Brno as a gateway to the Macocha Abyss in the Moravian Karst.",
+      "Špilberk Castle (founded in the 13th century, later used as a fortress and prison); the Cathedral of St. Peter and Paul; Villa Tugendhat (a functionalist modern house designed by Mies van der Rohe and completed in 1930, UNESCO World Heritage since 2001); Freedom Square at the heart of the old town; and using Brno as a gateway to the Macocha Abyss in the Moravian Karst.",
     whenAndTips:
       "May to September is pleasant; as a university city, some student-oriented facilities close in summer and the atmosphere is livelier during term time; Brno makes a good base for day trips to the Moravian Karst and the Lednice-Valtice estate.",
   },
@@ -6631,11 +6631,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   olomouc: {
     identity:
-      "Olomouc is a historic city in Moravia with a population of about 100,000. In the Middle Ages it was a bishopric seat and regional center, and today has the largest historic urban core in Czechia after Prague; its Holy Trinity Column was inscribed as a UNESCO World Heritage Site in 1995.",
+      "Olomouc is a historic city in Moravia with a population of about 100,000. In the Middle Ages it was a bishopric seat and regional center, and today has the largest historic urban core in Czechia after Prague; its Holy Trinity Column was inscribed as a UNESCO World Heritage Site in 2000.",
     layout:
       "The old town centers on Upper Square and Lower Square, with the Holy Trinity Column standing at the heart of Upper Square; Olomouc's cathedral and archbishop's palace lie at the other end of the old town, which also preserves six Baroque fountains as key features of its townscape.",
     gettingAround:
-      "The local airport has limited passenger service; most travelers connect via Brno Airport and continue by train or bus (about 1.5 hours), while a direct train from Prague to Olomouc takes about 2.5 hours; the old town core is entirely walkable.",
+      "There are no scheduled commercial flights locally; most travelers connect via Brno Airport and continue by train or bus (about 1.5 hours), while a direct train from Prague to Olomouc takes about 2.5 hours; the old town core is entirely walkable.",
     culture:
       "The official language is Czech. Modest dress is expected when entering St. Wenceslas Cathedral and other religious sites; as a university city, Olomouc has a lively student population and strong café and pub culture in the old town; restaurant bills typically don't include service, and a 5-10% tip or rounding up is customary.",
     seeAndDo:
