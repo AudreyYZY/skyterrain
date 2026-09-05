@@ -509,6 +509,176 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "May–September is most comfortable, around 20°C by day and cold at night; October–March is scorching, walks close in the heat of the day, so carry plenty of water and avoid midday outdoors. Lodging is run by a single resort operator — book months ahead in peak season. The park pass is priced by days; allow at least two: one for Uluru, one for Kata Tjuta.",
   },
 
+  // ── Australia batch 3 (2026-09-05) ──
+  gosford: {
+    identity:
+      "Gosford is the centre of the Central Coast region of New South Wales, about 77 km north of Sydney and 86 km south of Newcastle; the Gosford statistical area had about 178,000 residents (2021 census), and the whole Central Coast urban area forms a corridor between Sydney and Newcastle. The city sits on the northern shore of Brisbane Water, an inlet, with the surf beaches of Terrigal and Avoca and Bouddi National Park to the east. Named in 1839 after the Earl of Gosford, it became a city in 1980. The traditional owners are the Darkinjung people.",
+    layout:
+      "The centre lies on the hillside at the northern end of Brisbane Water, with the station and shops near the water. About 10 km east are Terrigal (beach, esplanade) and Avoca Beach, and farther south the coastal walks of Bouddi National Park; north are Ourimbah and the bushland around the Australian Reptile Park; south across Brisbane Water are Woy Woy and the peninsula beaches. The Central Coast's built-up area runs north from Gosford to Wyong and Tuggerah Lake.",
+    gettingAround:
+      "The Central Coast has no commercial airport; access is via Sydney Airport (about 90 km) or Newcastle Airport. Trains from Sydney Central reach Gosford in about 1.5 hours with frequent services — the easiest way. Local buses run, but a hire car is easier for the beaches and national park. The climate is humid subtropical — about 27°C in summer and 12°C in winter, with about 1,300 mm of rain concentrated in late summer and autumn.",
+    culture:
+      "English is spoken. The Central Coast is a Sydney weekend escape, with a lively dining and beachfront scene at Terrigal. Swim between the flags; Bouddi's coastal walk has cliffs — keep to the track. The Australian Reptile Park is known for its spider and snake antivenom programme — follow the keepers' directions. Tipping is not expected.",
+    seeAndDo:
+      "Terrigal beach and the Skillion lookout; Avoca Beach; the Bouddi coastal walk (Maitland Bay to MacMasters Beach); the Australian Reptile Park; boating and fishing on Brisbane Water; the Central Coast regional gallery and Japanese garden in Gosford; pelican feeding at The Entrance.",
+    whenAndTips:
+      "October–April suits the beaches, January–February is hottest, and autumn is best for the coastal walks. Beach parking is tight at weekends and holidays. An easy day trip from Sydney and a stop on the way to Newcastle and the Hunter Valley.",
+  },
+  "port-macquarie": {
+    identity:
+      "Port Macquarie lies on the Mid North Coast of New South Wales at the mouth of the Hastings River, about 390 km north of Sydney, with a population of about 52,000 (2023). Founded in 1821 as a penal settlement, it is one of the state's oldest colonial towns; today it is known for a mild climate, beaches and koalas — the town's Koala Hospital treats injured animals. The Tacking Point Lighthouse (1879) and a 9 km coastal walk are its landmarks. The traditional owners are the Birpai people.",
+    layout:
+      "The town centre sits on the south bank of the Hastings River mouth, with the breakwall and Town Beach beside the centre. The coast runs south: the coastal walk from Westport Park through the centre to Tacking Point Lighthouse strings together a chain of beaches (Flynns, Nobbys, Shelly, Miners); Sea Acres National Park beside Shelly Beach has a rainforest boardwalk; the Koala Hospital is at Roto House south of the centre. The airport is about 4 km west. Inland to the west are the Hastings valley and Wauchope.",
+    gettingAround:
+      "Port Macquarie Airport (PQQ), about 4 km west of town, has Sydney and Brisbane flights and a service to Lord Howe Island. Driving from Sydney on the Pacific Highway takes about 4.5 hours, and coaches run; trains reach Wauchope with a bus connection. Walk or cycle in town and walk the coastal track; a hire car serves the hinterland and the beaches to the north. The climate is humid subtropical — warm humid summers and short mild winters, rated among the most pleasant in Australia.",
+    culture:
+      "English is spoken. The Koala Hospital is a volunteer-run rescue centre — follow tour times and do not touch the animals; stay on the boardwalk at Sea Acres. Swim between the flags; the painted rocks on the breakwall are a local tradition. The river mouth has fishing and yachting, and seafood leads the menu. Tipping is not expected.",
+    seeAndDo:
+      "The Koala Hospital; the coastal walk (Westport Park to Tacking Point Lighthouse); whale watching from Tacking Point (June–November); the Sea Acres rainforest boardwalk; Town Beach and Flynns Beach; Hastings River cruises; Billabong Zoo; north to the beaches of Crescent Head and the seafood of Bellingen.",
+    whenAndTips:
+      "Any season works: beaches in summer, whales in winter, and spring and autumn most comfortable. Lodging is tight in school holidays. The full coastal walk takes about 3 hours — carry water and a hat.",
+  },
+  "wagga-wagga": {
+    identity:
+      "Wagga Wagga lies in the Riverina of southern New South Wales on the Murrumbidgee River, roughly 450 km from both Sydney and Melbourne and about 245 km west of Canberra, with an urban population of about 57,000 (2021 census) — one of the state's largest inland cities. The name is Wiradjuri, and the meaning adopted by the council in 2019 is 'place of many dances and celebrations'. It is a military town (the Kapooka army recruit training centre, RAAF Base Wagga), the home of Charles Sturt University and the centre of the Riverina farming district. The traditional owners are the Wiradjuri people.",
+    layout:
+      "The centre lies on the south bank of the Murrumbidgee behind a levee, with Baylis and Fitzmaurice streets the main streets and the river beach and floodplain parks on the water. The botanic gardens and zoo are on Willans Hill south of the centre, Charles Sturt University at Estella to the north, and the airport and air base at Forest Hill to the south-east. Wheat, vineyards and sheep country surround the city, with the Hume Highway passing to the east.",
+    gettingAround:
+      "Wagga Wagga Airport (WGA), about 11 km south-east, has Sydney, Melbourne and Brisbane flights. The Sydney–Melbourne XPT train stops here — about 6 hours from Sydney and 5 from Melbourne; driving from Canberra takes about 2.5 hours. City buses run and the centre is walkable. The climate is temperate with hot dry summers and cold frosty winters, and about 570 mm of rain a year.",
+    culture:
+      "English is spoken. The military bases are closed to the public, though Kapooka's recruit graduations are sometimes open. The Riverina has wine (Gundagai) and agricultural-show culture, and the city holds an annual food and wine festival. Murrumbidgee levels swing in flood season — heed warnings by the river. Tipping is not expected.",
+    seeAndDo:
+      "The Murrumbidgee floodplain parks and Wagga Beach; the botanic gardens and free zoo on Willans Hill; the Wagga Wagga Art Gallery and National Art Glass Gallery; the old buildings of the Botany historic precinct; the wineries of Gundagai (about 30 km); the Lockhart wine district; in winter, the Snowy Mountains to the south-east (about 2.5 hours).",
+    whenAndTips:
+      "March–May and September–November are most comfortable; summers often exceed 35°C and winter mornings are frosty. A good halfway stop on a Sydney–Melbourne drive — a day is enough.",
+  },
+  mildura: {
+    identity:
+      "Mildura lies on the Murray River in the far north-west of Victoria, about 545 km north-west of Melbourne and 400 km east of Adelaide, with an urban population of about 36,000 (2021 census; about 59,000 with surrounding towns). Founded in 1887 by the Chaffey brothers, it was Australia's first irrigation colony — Murray water turned semi-arid mallee scrub into vineyards and citrus groves, and the region now produces about four-fifths of Victoria's grapes and more than 70% of Australia's dried vine fruit. Paddle steamers, citrus and hot-air balloons are its tourist emblems; about 110 km north is Mungo National Park in the Willandra Lakes World Heritage Area. The traditional owners are the Latji Latji people.",
+    layout:
+      "The city lies on the south (Victorian) bank of the Murray, with New South Wales across the river; Deakin Avenue is a broad tree-lined main street. Lock 11 and the wharf are on the river, where paddle steamers depart; east along the river are the orchards of the irrigation district and the town of Red Cliffs. Mungo National Park lies about 110 km north-east in New South Wales, with its crescent dune, the 'Walls of China', and the site where 40,000-year-old human remains were found. The airport is about 7 km south-west.",
+    gettingAround:
+      "Mildura Airport (MQL), about 7 km from the city, has Melbourne and Sydney flights and is Victoria's busiest regional airport. Driving takes about 6 hours from Melbourne and 4.5 from Adelaide, with coaches; there is no direct passenger train. City buses run and the centre is walkable; Mungo needs a car (partly unsealed) or a tour. The climate is semi-arid — hot summers (often over 35°C), mild winters, under 300 mm of rain and abundant sunshine.",
+    culture:
+      "English is spoken. The Murray is Australia's most important river — boating and fishing need state permits; Mungo is an Aboriginal sacred site and World Heritage Area where the burial site is closed and the dunes may be walked only with a guide. Citrus, dried fruit, local wine and Murray cod are the produce, and the city holds an annual wine and food festival. Summer is extreme — protect against sun and drink plenty. Tipping is not expected.",
+    seeAndDo:
+      "Paddle steamers on the Murray (the PS Melbourne and others); Lock 11 and the riverside walk; Deakin Avenue and Rio Vista, the Chaffey house; orchard picking and citrus factories; hot-air ballooning on autumn and winter mornings; Mungo National Park (the Walls of China, dune sunsets, guided walks); the river red gums of Lake Hattah; across the river to Wentworth in New South Wales for the Murray–Darling junction.",
+    whenAndTips:
+      "April–May and September–October are most comfortable; summer is very hot but citrus season, and winter suits ballooning. Mungo needs a full day, and its dirt roads may close after rain — check park notices. A stop on the inland Melbourne–Adelaide route.",
+  },
+  "phillip-island": {
+    identity:
+      "Phillip Island lies at the mouth of Western Port in southern Victoria, about 140 km south-east of Melbourne; its main town, Cowes, has about 6,600 residents (2021 census), and a bridge has linked the island to San Remo on the mainland since 1940. The island's south-western tip hosts the world-famous Penguin Parade — every evening after sunset, little penguins come ashore in groups to their burrows at Summerland Beach; Seal Rocks off the Nobbies is one of Australia's largest fur-seal colonies. The island also has a motorcycle Grand Prix circuit and surf beaches. The traditional owners are the Bunurong people.",
+    layout:
+      "Phillip Island is about 26 km long. Cowes sits on a calm bay on the north shore and is the centre for lodging and dining; the Penguin Parade, the Nobbies and Seal Rocks are at the island's south-western tip; the Grand Prix circuit is in the south-centre; the south coast has surf beaches such as Woolamai and Cape Woolamai; Churchill Island at the eastern end has a heritage farm. The bridge crosses between Newhaven at the eastern end and San Remo.",
+    gettingAround:
+      "There is no airport on the island; from Melbourne Airport it is about 2 hours by car and 1.5–2 hours from the city, with day tours and coaches from Melbourne. Island buses are limited, so a hire car is easiest; Cowes itself is walkable. The climate is temperate maritime — mild, windy and often overcast all year, with summer highs in the low 20s.",
+    culture:
+      "English is spoken. The Penguin Parade is a strictly managed reserve: no photography or torches (flash harms the penguins), keep quiet and stay on the stands and boardwalks; penguins and wombats cross island roads at night, so drive slowly. Seal Rocks and the Nobbies are wildlife habitats — no feeding. Surf beaches are rough — swim between the flags. Tipping is not expected.",
+    seeAndDo:
+      "The Penguin Parade (book ahead, at sunset); the Nobbies boardwalk and Seal Rocks (shore telescopes or a boat); the Koala Conservation Reserve; the Churchill Island heritage farm; surfing and the headland walk at Woolamai; a circuit tour and go-karts at the Grand Prix circuit; the Cowes jetty and bay; pelican feeding at San Remo.",
+    whenAndTips:
+      "Penguins can be seen year-round; in summer (December–February) the parade is late and crowded, in winter sunset is early but colder and windier. Parade tickets sell out in peak season — book ahead, and bring warm windproof layers as the stands are exposed. A day trip from Melbourne is feasible; an overnight is more relaxed.",
+  },
+  mackay: {
+    identity:
+      "Mackay lies on the central Queensland coast at the mouth of the Pioneer River, about 970 km north of Brisbane and 390 km south of Townsville, with a population of about 84,000 (2021 census). It grew on sugar cane and is known as Australia's 'sugar capital', its port and mills still working, though mining has become the main industry in recent years. Rebuilt after a 1918 cyclone, the centre keeps a large stock of Art Deco buildings; inland, Eungella National Park is one of the few places in Australia where wild platypus are reliably seen, and kangaroos visit the beach at Cape Hillsborough at dawn. The traditional owners are the Yuwibara people.",
+    layout:
+      "The centre lies on the south bank of the Pioneer River, with the port and marina area east of the river mouth. The Bluewater Trail runs along the river and coast linking the Bluewater Lagoon, the botanic gardens and the markets. Cape Hillsborough is about 50 km north, a national park with beaches; Eungella is about 80 km west in the hills, with Broken River below it the place for platypus; the Sarina sugar mill lies to the south. The airport is on the south side of the city.",
+    gettingAround:
+      "Mackay Airport (MKY), about 6 km south of the centre, has flights to Brisbane, Cairns, Townsville and Rockhampton. The Spirit of Queensland train passes through, and the Bruce Highway runs past. City buses run and the centre is walkable; Eungella and Cape Hillsborough need a car. The climate is tropical — hot, humid and wet from November to April with cyclone risk, dry from May to October.",
+    culture:
+      "English is spoken. Sugar mills can be visited in the crushing season (June–November); keep off the cane-train tracks between the fields. Watch platypus in silence and stay out of the water; the Cape Hillsborough kangaroos are wild — no feeding. Stinger season runs November–May in the sea, and the Bluewater Lagoon is the safe alternative. Tipping is not expected.",
+    seeAndDo:
+      "The Bluewater Trail and Bluewater Lagoon; an Art Deco walk through the centre; the Mackay Regional Botanic Gardens; Cape Hillsborough (kangaroos on the beach at dawn); Eungella National Park (platypus at Broken River, the summit lookout over the Pioneer valley); the harbour beach and marina village; the Sarina sugar mill tour; reef trips offshore.",
+    whenAndTips:
+      "May–October is most comfortable and the sugar-crushing season; summer is hot, humid and wet. The Cape Hillsborough kangaroos appear around sunrise — start early. The Eungella road is winding and often misty — drive it in daylight.",
+  },
+  rockhampton: {
+    identity:
+      "Rockhampton lies on the Fitzroy River in central Queensland about 45 km from the river's mouth and 630 km north of Brisbane, with a population of about 80,000 (2021 census). It sits just north of the Tropic of Capricorn, marked by a monument in town, and calls itself Australia's 'beef capital' for the vast cattle country around it. Quay Street by the river preserves a run of 19th-century sandstone commercial buildings, Mount Archer to the east overlooks the city, and Yeppoon and Great Keppel Island on the Capricorn Coast lie about 40 km east. The traditional owners are the Darumbal people.",
+    layout:
+      "The centre lies on the south bank of the Fitzroy, with Quay Street along the river and several bridges to North Rockhampton. Mount Archer rises to the east with a lookout and treetop walkway; the botanic gardens and zoo are in the south. About 25 km north are the Capricorn Caves; about 40 km east are Yeppoon and the Capricorn Coast, with boats to Great Keppel Island from Rosslyn Bay. The airport is about 6 km west.",
+    gettingAround:
+      "Rockhampton Airport (ROK), about 6 km west, has Brisbane, Cairns, Townsville and Mackay flights. The tilt train from Brisbane takes about 7 hours, and the Bruce Highway passes through. City buses run and the centre is walkable; Yeppoon, the caves and Great Keppel need a car. The climate is humid subtropical — hot humid summers, warm dry winters and about 720 mm of rain a year.",
+    culture:
+      "English is spoken. Beef is the heart of local eating, and the triennial 'Beef Australia' exposition is the big event. Quay Street's buildings are National Trust-listed; the Capricorn Caves are a private reserve entered on guided tours. Do not touch the coral at Great Keppel. Stinger season applies in the sea (November–May). Tipping is not expected.",
+    seeAndDo:
+      "The Quay Street heritage precinct and the Fitzroy riverside; the Tropic of Capricorn marker; the Mount Archer lookout and treetop walk; the Rockhampton botanic gardens and zoo; the Capricorn Caves; the beaches and lagoon of Yeppoon; Great Keppel Island (snorkelling, beaches); cattle-station and farm experiences in the surrounding country.",
+    whenAndTips:
+      "May–October is most comfortable; summers are hot and wet. The city takes a day, Yeppoon and Great Keppel another. A natural stop heading north on the Bruce Highway.",
+  },
+  "port-douglas": {
+    identity:
+      "Port Douglas lies on the coast of far northern Queensland about 60 km north of Cairns, with about 3,700 permanent residents (2021 census) — a resort town serving the outer Great Barrier Reef and the Daintree rainforest. Founded as a port in 1877 after gold was found on the Hodgkinson field, it declined and was reborn as a resort in the 1980s. Four Mile Beach is a long palm-fringed strand; boats from town reach the Low Isles and Agincourt Reef, Mossman Gorge is about 20 km north and the Daintree rainforest beyond it. The traditional owners are the Kuku Yalanji people, whose name for the place is Jabulkanji.",
+    layout:
+      "The town occupies a small peninsula jutting into the sea, with Macrossan Street the main street ending at the marina (the reef departure point) and the Flagstaff Hill lookout at the peninsula's northern tip. Four Mile Beach runs south along the peninsula's east side. North along the Captain Cook Highway about 20 km are Mossman town and Mossman Gorge (the southern entrance to Daintree National Park), then across the Daintree River ferry the rainforest and Cape Tribulation; south is Cairns.",
+    gettingAround:
+      "Port Douglas has no airport; from Cairns Airport it is about an hour by car along the scenic coastal highway, with airport shuttles. Walk or cycle in town; Mossman Gorge and the Daintree need a hire car or tour, and reef trips leave from the marina. The climate is tropical monsoon — hot, humid and wet from November to April with cyclone risk, January–March the wettest and the peak of stinger season, May–October dry.",
+    culture:
+      "English is spoken. Mossman Gorge offers Kuku Yalanji 'Dreamtime' guided walks — respect the guides' explanations and no-go areas. The reef is a marine park — never touch coral and follow the boat crew when snorkelling. In stinger season Four Mile Beach has a netted swimming enclosure — swim only inside it. The Sunday markets at the marina sell crafts and local produce. Tipping is not expected.",
+    seeAndDo:
+      "Four Mile Beach and the Flagstaff Hill lookout; reef trips to the Low Isles (snorkelling, turtles) or the Agincourt outer reef (diving); the rainforest walks and streams of Mossman Gorge; the Daintree rainforest (the canopy walk, Cape Tribulation where rainforest meets beach); crocodile cruises on the Daintree River; Hartley's Crocodile Adventures; the Sunday markets.",
+    whenAndTips:
+      "June–October is most comfortable — clear water, steady wind, little rain; December–March is hot, wet and stinger season. Allow a day for the outer reef and a day for the Daintree — three nights or more works well. Wear a stinger suit or use the net when swimming. Lodging is tight in peak season — book early.",
+  },
+  bunbury: {
+    identity:
+      "Bunbury lies on Western Australia's south-west coast about 175 km south of Perth, with a population of about 76,000 (2021), the state's third-largest population centre. It is built on a peninsula between the Leschenault Inlet and Geographe Bay, its port the freight gateway of the south-west; at the Dolphin Discovery Centre on Koombana Bay, wild bottlenose dolphins can be seen at close range in the shallows. It is also the gateway to Margaret River and the forests and wineries of the south-west. The traditional owners are the Wardandi people of the Noongar nation, whose name for the place is Goomburrup.",
+    layout:
+      "The centre sits on the peninsula, with the Indian Ocean's Back Beach to the west, the calm Leschenault Inlet to the east and Koombana Bay and the port to the north; the chequered lighthouse stands on the hill at the peninsula's northern end. The Dolphin Discovery Centre is on the Koombana Bay shore. South along the coast about 50 km is Busselton, east inland are the coal town of Collie and the forests, and south-west is the Margaret River region. The airport, about 8 km south-east, is general aviation only.",
+    gettingAround:
+      "Bunbury Airport has no scheduled passenger flights; from Perth Airport it is about 2 hours by car; the Australind train from Perth takes about 2.5 hours, and coaches run. City buses serve town, the centre and beaches are walkable, and the wineries and forests need a car. The climate is Mediterranean — warm dry summers and mild wet winters.",
+    culture:
+      "English is spoken. The dolphins at the Discovery Centre are wild — enter only the interaction zone under staff direction and do not touch or feed them; sightings depend on season and weather. Back Beach has heavy surf — swim between the flags. Local wine (the Geographe region) and seafood are the specialities. Tipping is not expected.",
+    seeAndDo:
+      "The Dolphin Discovery Centre (the shore interaction zone, dolphin cruises); the Bunbury lighthouse and the Marlston Hill lookout; Back Beach and the basalt coast; the mangrove boardwalk on the Leschenault Inlet; the Bunbury Regional Art Gallery; east to the reservoir and forests of Wellington National Park; south to the Busselton Jetty and Margaret River.",
+    whenAndTips:
+      "October–April is best for the beach and dolphins (more often seen in summer); winter is wet. Half a day to a day is enough, as a stop between Perth and Margaret River.",
+  },
+  kalgoorlie: {
+    identity:
+      "Kalgoorlie-Boulder lies in Western Australia's inland goldfields about 595 km east of Perth, with a population of about 29,000 (2021 census). Paddy Hannan found gold here in June 1893, and the rush that followed created the 'Golden Mile', once called the richest square mile of earth on the planet; today's Super Pit (the Fimiston open pit) is about 3.6 km long, 1.6 km wide and over 600 m deep, one of Australia's largest open-cut gold mines and still working. The Goldfields Water Supply pipeline, completed in 1903, brought water nearly 600 km from near Perth — an engineering feat of its day. The traditional owners are the Wangkatha people.",
+    layout:
+      "Kalgoorlie and Boulder were neighbouring mining towns that merged in 1989. Kalgoorlie's Hannan Street is a broad main street lined with gold-rush hotels and public buildings; Boulder, about 5 km south-east, has heritage buildings and markets on Burt Street. The Super Pit lies on the east side between the two, with its lookout on the Boulder side. Red earth, salt lakes and scrub surround the city. The airport is about 6 km south.",
+    gettingAround:
+      "Kalgoorlie-Boulder Airport (KGI), about 6 km south, flies only to Perth but with frequent services for mining commuters. The Prospector train from Perth takes about 7 hours, and the Great Eastern Highway drive about 7 hours. City buses run, Hannan Street is walkable, and the Super Pit lookout and Boulder are a drive or taxi away. The climate is semi-arid — scorching summers (January highs average about 34°C), mild winter days with cold nights, and under 270 mm of rain.",
+    culture:
+      "English is spoken. This is a mining town: mine sites are off limits and the Super Pit is viewed only from the lookout, with blast times posted. Hannan Street's historic hotels (such as the Exchange) still trade. The mining museum and the Hannans North tourist mine offer underground tours and gold-panning demonstrations. Carry water and fuel when driving the outback around. Tipping is not expected.",
+    seeAndDo:
+      "The Super Pit lookout (giant trucks and blasting); the Museum of the Goldfields and the Hannans North tourist mine; Hannan Street's heritage buildings and the Paddy Hannan statue; Burt Street and the town hall in Boulder; the end of the goldfields pipeline and the C.Y. O'Connor memorial; the Kalgoorlie racecourse (Race Round in September); the ghost towns to the north (Coolgardie, Gwalia).",
+    whenAndTips:
+      "April–October is most comfortable, with pleasant winter days; summer is scorching — avoid the midday outdoors. Lodging is tight during Race Round in September and the goldfields festival. A supply stop on the drive across the Nullarbor.",
+  },
+  "port-lincoln": {
+    identity:
+      "Port Lincoln lies on Boston Bay at the southern tip of South Australia's Eyre Peninsula, about 280 km west of Adelaide by air (about 650 km by road), with a population of about 14,000 (2021 census). It is home to Australia's largest commercial fishing fleet and calls itself the 'seafood capital' — southern bluefin tuna are ranched in pens here, along with oysters, abalone and mussels; it is also the only place in South Australia to cage-dive with great white sharks or swim with sea lions. The traditional owners are the Barngarla people, whose name Galinyala means 'place of sweet water'.",
+    layout:
+      "The town sits on the west shore of Boston Bay, a natural deep-water harbour opening east into Spencer Gulf, with the wharves and tuna-processing area south of town. Lincoln National Park lies on the peninsula about 15 km south-east, with dunes and bays; about 50 km west is Coffin Bay (oysters); shark-cage boats head south to the Neptune Islands, and the sea lions are at Baird Bay to the north-west. The airport is about 13 km north.",
+    gettingAround:
+      "Port Lincoln Airport (PLO), about 13 km north, flies only to Adelaide but frequently. Driving from Adelaide around Spencer Gulf takes about 7 hours. Walk in town; the national park, Coffin Bay and Baird Bay need a car, and shark and sea-lion trips leave from the marina. The climate is Mediterranean — dry warm summers, mild wet winters and under 400 mm of rain.",
+    culture:
+      "English is spoken. Tuna ranches can be visited by boat with fish feeding; shark cage diving and sea-lion swims must be with licensed operators, following the crew. At Coffin Bay you can eat oysters straight from the farm in waders. Four-wheel driving on the park's dunes and beaches needs a permit. The Tunarama festival each January is the local event. Tipping is not expected.",
+    seeAndDo:
+      "Tuna-ranch cruises (swim with the tuna); great white shark cage diving (Neptune Islands, a full day); swimming with sea lions at Baird Bay; Lincoln National Park (dunes, bays, the lighthouse); the Coffin Bay oyster-farm experience; the Boston Bay foreshore walk and marina; the Eyre Peninsula coast to the north.",
+    whenAndTips:
+      "December–April is most comfortable; shark and sea-lion trips run year-round but depend on sea conditions, and winter is rough. Book cage diving far ahead and bring seasickness tablets. Seasons: oysters in winter and spring, the tuna catch January–March.",
+  },
+  burnie: {
+    identity:
+      "Burnie lies on Emu Bay on Tasmania's north-west coast, about 47 km west of Devonport and 135 km west of Launceston, with a population of about 20,000 (2021 census). It is Tasmania's largest bulk port; the paper mill that ran from 1936 to 2010 was once the city's mainstay (in 1939 it made the world's first paper entirely from eucalypt pulp). Today it is known for a seaside little-penguin viewing point, a makers' centre, and the tulip fields and rainforest nearby. The traditional owners are the palawa, the Tasmanian Aboriginal people.",
+    layout:
+      "The centre sits beside the port on Emu Bay, whose wharves and freight yards take the middle of the shore, with West Beach and the penguin observation centre to the west. About 17 km west are Wynyard and the airport, then Table Cape (tulip farm, lighthouse) and Stanley (the volcanic 'Nut'); south inland are the Fern Glade rainforest and Guide Falls; east along the coast is Devonport.",
+    gettingAround:
+      "Burnie Airport (BWT) at Wynyard, about 17 km from the city, has Melbourne flights. From the Devonport ferry terminal it is about 45 minutes by car, from Launceston about 2 hours. City buses run and the centre is walkable; the surrounding sights need a car. The climate is temperate maritime — mild and rainy all year, about 20°C in summer and 13°C in winter.",
+    culture:
+      "English is spoken. Little penguins come ashore at dusk from October to March, with volunteers guiding at the viewing point — no flash and no approaching. The old paper-mill site has been redeveloped, and the city's industrial history is shown in the museum. The Makers' Workshop shows papermaking and local design. The Table Cape tulips are open for only about a month in October. Tipping is not expected.",
+    seeAndDo:
+      "The Burnie penguin observation centre (at dusk); the Makers' Workshop and regional museum; West Beach and the port; the Table Cape lighthouse and the October tulip fields; the Nut and historic street of Stanley (about 80 km); the Fern Glade rainforest walk and Guide Falls; platypus at Emu Valley.",
+    whenAndTips:
+      "October–March is best: penguin season, tulip month (October) and summer seaside. Winter is cold and wet. Half a day in town, plus a day for Table Cape and Stanley. A usual stop on a north-west Tasmania drive.",
+  },
+
   "china-overview": {
     identity:
       "China covers about as much land as the whole of Europe and has a population of roughly 1.4 billion, one of the largest in the world. The land is broadly high in the west and low in the east: the west is the Tibetan Plateau plus large mountain and desert country, thinly populated; the east is plains, hills and great rivers, where most of the people and big cities are. It has thousands of years of continuous written history; dialects vary widely, but Mandarin is the common language.",
@@ -8092,6 +8262,176 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The Dongpo Academy and the old town of Zhonghe (remains of the Song seat); the ancient salt fields of Yangpu (salt drying in the troughs at dusk); the Haihua Island resort; the Songtao Reservoir; the Shihua water cave (Bayi farm); the Lanyang hot springs; the morning market and seafood of Baimajing fishing port; Guangcun silver beach.",
     whenAndTips:
       "November–April is most comfortable and the season for escaping winter and driving Hainan's west; summers are hot and wet. The sights are split between Nada, Zhonghe and Yangpu, 40–50 km apart — hire a car and allow two days. Combine with Haikou and Sanya for a western loop.",
+  },
+
+  // ── China Tier 2 batch 9 (2026-09-05) ──
+  huzhou: {
+    identity:
+      "Huzhou is a prefecture-level city in northern Zhejiang on the southern shore of Lake Tai, from which it takes its name, with a population of about 3.47 million (end of 2024). A national historic city known in antiquity as Wucheng and Wuxing, it received its present name under the Sui; it has been famous for silk since ancient times — 'Huzhou silk clothes the world' — and one of the oldest silk fabrics ever found was unearthed here; the Hu writing brush of Shanlian is a treasure of the scholar's studio. Nanxun is a celebrated Jiangnan water town on the Grand Canal, Moganshan in Deqing has been a summer retreat since the modern era, and Anji is known for its bamboo sea and white tea.",
+    layout:
+      "The city lies on the plain south of Lake Tai, with the Feiying Pagoda and Yishang Street in the old town and the South Taihu new area and lakeshore resort strip on the water. Nanxun old town is about 30 km east (the Jiaye Hall library, Xiaolian Garden, the Hundred Rooms); Moganshan is in the hills of Deqing county to the south (about 40 km, with Republican-era villas and bamboo); Anji is about 60 km south-west (the Great Bamboo Sea, Yucun village, Tianhuangping); Changxing to the west has the Guzhu Mountain Zisun tea gardens. Huzhou high-speed station is on the south side of the city.",
+    gettingAround:
+      "Huzhou has no airport; use Hangzhou Xiaoshan International (about 90 km) or Shanghai Hongqiao. The Nanjing–Hangzhou high-speed line puts Huzhou about 25 minutes from Hangzhou and an hour from Nanjing, and the Shanghai–Suzhou–Huzhou line brings Shanghai within about an hour. Buses and taxis are convenient in town; Nanxun, Moganshan and Anji are reached by bus or hired car — Moganshan's hillside guesthouses usually mean driving or a taxi. The climate is northern subtropical humid monsoon with an annual mean of about 16°C, muggy summers and a damp plum-rain season.",
+    culture:
+      "Huzhou Wu is spoken; Mandarin is universal. Nanxun's buildings are mostly protected and lived in — follow the signs before entering courtyards; Moganshan's guesthouse area is quiet, so keep noise down at night. Food includes the 'three whites' of Lake Tai (whitebait, white fish, white shrimp), Huzhou tofu-skin dumplings and Zhulaoda rice dumplings, with Anji white tea and Changxing Zisun tea the famous teas. Brush workshops in Shanlian can be visited. No tipping.",
+    seeAndDo:
+      "Nanxun old town (the Jiaye Hall library, Xiaolian Garden, the Zhang Shiming residence, the Hundred Rooms); Moganshan (Republican-era villas, the Sword Pool, bamboo-forest hikes); Anji's Great Bamboo Sea, Tianhuangping, Yucun and the white-tea gardens; the lakeshore promenade of the south Taihu shore and the Moon Hotel area; the Feiying Pagoda and Yishang Street in town; the Guzhu tribute-tea academy in Changxing; the Hu brush town of Shanlian.",
+    whenAndTips:
+      "March–May and September–November are most comfortable, with tea picking in spring; Moganshan is a summer retreat with tight weekend lodging; winter is damp and cold. Nanxun, Moganshan and Anji lie in three directions — a day each. Nanxun is an easy day trip from Hangzhou or Shanghai.",
+  },
+  jinhua: {
+    identity:
+      "Jinhua is a prefecture-level city in central Zhejiang in the Jinqu basin, with a population of about 7.05 million (2020 census) and a role as the province's transport hub. It is famous for Jinhua ham, recorded for nearly a thousand years; Yiwu, a city under its administration, is home to the world's largest small-commodities market; Hengdian World Studios in Dongyang is one of China's largest film and television production bases; and Zhuge Bagua Village in Lanxi is a village of Zhuge Liang's descendants. The Shuanglong karst cave north of the city became widely known through an essay by the writer Ye Shengtao.",
+    layout:
+      "The city lies in the middle of the basin on the Wu River, with the Bayong Tower and Wanfo Pagoda in the old town and Shuanglong Cave on Jinhua Mountain to the north (about 15 km). Yiwu is about 40 km north-east (the International Trade City is on the north side of Yiwu), Hengdian about 60 km east in Dongyang, Zhuge Bagua Village about 40 km west in Lanxi, and the hot springs of Wuyi to the south. Jinhua Yiwu Airport is on the north side of Yiwu; Jinhua high-speed station is in the city and Yiwu station in Yiwu.",
+    gettingAround:
+      "Jinhua Yiwu Airport (YIW) lies about 5 km north-west of Yiwu and about 50 km from Jinhua, with flights to Beijing, Guangzhou and Shenzhen and buses into Yiwu. High-speed rail is easiest: Jinhua on the Shanghai–Kunming line is about an hour from Hangzhou and 1.5 from Shanghai, and Yiwu is on the same line; Jinhua and Yiwu are linked by intercity buses and high-speed trains (about 15 minutes). Buses and taxis serve the city; Hengdian and Zhuge village are reached by coach or hired car. The climate is subtropical monsoon with an annual mean of about 17°C and hot summers.",
+    culture:
+      "Jinhua Wu and Mandarin are both used; Yiwu's trade has brought many resident foreign merchants and visible Arab and Korean communities. Zhuge Bagua Village is an inhabited old village — ask before entering courtyards and keep quiet; at Hengdian follow staff directions during filming hours. Food includes Jinhua ham, Jinhua crisp cakes, Tangxi dishes and Yiwu brown-sugar twists. No tipping.",
+    seeAndDo:
+      "Hengdian World Studios (the Qin Palace, the Ming–Qing palaces, the Qingming scroll set — filming and shows); the Yiwu International Trade City (a visitable wholesale market, mostly bulk trade); Shuanglong Cave (entered lying flat in a small boat); Zhuge Bagua Village; the Bayong Tower, Wanfo Pagoda and Wu River night view in the old town; the hot springs and Guodong old village of Wuyi; the mountains of Pan'an.",
+    whenAndTips:
+      "March–May and September–November are most comfortable; summers are hot and Hengdian's outdoor sets are exposed. Hengdian needs at least a full day, with lodging inside the studios; some Yiwu market stalls close on Sundays. Jinhua, Yiwu and Hengdian are close and make a two- or three-day loop.",
+  },
+  jiaozuo: {
+    identity:
+      "Jiaozuo is a prefecture-level city in north-western Henan at the southern foot of the Taihang Mountains on the north bank of the Yellow River, with a population of about 3.52 million (end of 2022). Known in the past as Huaiqing prefecture, it grew on coal from the early 20th century and has since turned to tourism: Yuntai Mountain in the Taihang to the north (among the first UNESCO Global Geoparks in 2004) is famous for the Danxia gorge of Hongshixia and Zhuyu Peak, one of Henan's best-known mountain scenic areas; Chenjiagou in Wen county is the birthplace of Chen-style taijiquan, and taijiquan was inscribed on UNESCO's intangible heritage list in 2020. The 'four great Huai medicinal herbs' (Chinese yam and others) are local products.",
+    layout:
+      "The city sits on the plain below the Taihang, with the old coal districts in the north and east. Yuntai Mountain is about 35 km north in Xiuwu county, its scenic area including Hongshixia, Tanpuxia, Quanpuxia, Zhuyu Peak (over 1,300 m) and Wanshan Temple; Qingtianhe lies north-west in Bo'ai county, Shennong Mountain in Qinyang and Qinglongxia in Xiuwu. Chenjiagou is about 40 km south in Wen county, and the Jiaying Temple (a river-god temple built under the Yongzheng emperor) stands by the Yellow River in Wuzhi. Jiaozuo high-speed station is in the city and Jiaozuo West to the west.",
+    gettingAround:
+      "Jiaozuo has no airport; use Zhengzhou Xinzheng International (about 100 km, with an airport bus). The Zhengzhou–Jiaozuo intercity line takes about 35 minutes from Zhengzhou, the Zhengzhou–Taiyuan high-speed line also passes through, and there are tourist coaches from Zhengzhou East straight to Yuntai Mountain. Buses and taxis are convenient; Yuntai is about an hour by scenic shuttle or taxi, with eco-buses inside the park. The climate is warm-temperate semi-humid monsoon with an annual mean of about 15°C, hot summers, cold winters and windy springs.",
+    culture:
+      "Central Plains Mandarin is spoken; standard Mandarin is universal. Yuntai is a geopark and scenic area with narrow gorge walkways that are slippery in rain — stay behind railings; Wanshan is a Buddhist temple. Chenjiagou has taiji schools and a memorial hall where classes can be watched; joining in means respecting the school's etiquette. Food includes Huai yam, Jiaozuo braised noodles and Bo'ai beef balls, and Huai-herb products are the local souvenir. No tipping.",
+    seeAndDo:
+      "Yuntai Mountain (Hongshixia, Tanpuxia, Zhuyu Peak, the Yuntai Sky Waterfall — at least a full day); the gorges and boat ride of Qingtianhe; the macaques and Baisong ridge of Shennong Mountain; Chenjiagou, birthplace of taijiquan (the ancestral hall, the site where Yang Luchan studied); the Jiaying Temple; Qinglongxia and Fenglinxia; the Jiaozuo film studios in town.",
+    whenAndTips:
+      "April–May and September–October are most comfortable, with Yuntai's red leaves in mid-late October; summer's rainy season brings full waterfalls and cool air, while parts of the gorges close in winter. Yuntai is extremely crowded in peak season — go early; tickets cover several days. A day trip from Zhengzhou is feasible, but staying at the foot of Yuntai is more relaxed.",
+  },
+  jingzhou: {
+    identity:
+      "Jingzhou is a prefecture-level city in south-central Hubei on the Jianghan Plain of the middle Yangtze, with a population of about 5.14 million (end of 2022). Counting from Jinan, capital of the Warring States kingdom of Chu, it has more than three thousand years of urban history; known as Jiangling, it was a military and commercial stronghold of the middle Yangtze, and the Three Kingdoms saying about 'carelessly losing Jingzhou' refers to this city. The city walls survive complete — among the best-preserved in southern China — and the Jingzhou Museum holds a large collection of Chu and Han relics. Jingzhou is also the core producing area of China's crayfish.",
+    layout:
+      "The walled city stands on the north bank of the Yangtze, its walls about 11 km round with six gates (the Binyang Tower at the East Gate can be climbed) and a moat; the Guandi Temple and the Jingzhou Museum lie inside and just west of the walls. Shashi district east of the old city is the commercial quarter and port that grew after the treaty-port era. The Jinan Chu capital site is about 5 km north of the old city, and the Xiongjiazhong Chu tomb at Chuandian; Honghu Lake is to the south-east. Shashi Airport is about 18 km west and Jingzhou high-speed station north of the city.",
+    gettingAround:
+      "Jingzhou Shashi Airport (SHS), opened in 2021 about 18 km from the centre, has flights to Beijing, Shanghai, Guangzhou and Chengdu. Jingzhou station on the Wuhan–Yichang high-speed line is about 1.5 hours from Wuhan and 40 minutes from Yichang, and the Shanghai–Chongqing–Chengdu line passes through. Buses and taxis are convenient, and the walled city can be cycled or toured by cart. The climate is northern subtropical humid monsoon with an annual mean of about 16.5°C, hot humid summers and a long plum-rain season.",
+    culture:
+      "The Jingzhou dialect is Southwestern Mandarin; standard Mandarin is universal. The walls are protected relics — no carving and no climbing unopened stretches; the Guandi Temple holds rites, so dress modestly. The Chu and Han relics in the Jingzhou Museum (including the Han-dynasty body from the Fenghuangshan tomb) are displayed with solemnity. Food includes Jingzhou fish cake, Gong'an beef, crayfish (peak May–August) and morning-hall noodles. No tipping.",
+    seeAndDo:
+      "The Jingzhou city walls (climb the Binyang Tower, walk the wall circuit); the Jingzhou Museum (Chu culture, silks, Han tomb finds); the Guandi Temple and the Zhang Juzheng residence; the Jinan Chu capital site and the Xiongjiazhong Chu royal tomb museum; the old streets and Yangtze wharves of Shashi; the Honghu wetlands (lotus in summer, birds in winter); the Weishui reservoir at Songzi.",
+    whenAndTips:
+      "March–May and September–November are most comfortable; summer is hot but crayfish season; winter is damp and cold. The walls and museum take a day, Jinan and Xiongjiazhong half a day. Pair with the Three Gorges at Yichang, or stop between Wuhan and Yichang.",
+  },
+  liuzhou: {
+    identity:
+      "Liuzhou is a prefecture-level city in north-central Guangxi set inside a great loop of the Liu River, with a population of about 4.18 million (end of 2022) — Guangxi's largest industrial city (Liugong machinery, Wuling Motors). The river wraps the city centre into a peninsula flanked by karst hills, and Liuhou Park commemorates the Tang scholar Liu Zongyuan, exiled here. Luosifen, river-snail rice noodles, grew from a local street snack into a nationally famous food. Sanjiang county in the north has the Dong people's Chengyang Wind-and-Rain Bridge and drum towers, and Rongshui county is a Miao area.",
+    layout:
+      "The city centre occupies the peninsula formed by the river loop, with Liuhou Park and the East Gate tower in the peninsula's south and Ma'an and Yufeng hills the two karst hills within the city that overlook river and town. North of the river is the industrial district of Liubei. Karst peaks surround the city; about 150 km north are the Chengyang villages of Sanjiang (the wind-and-rain bridge), about 120 km north the Miao villages of Rongshui; Bailian Cave and Duole Rock are suburban caves. Bailian Airport is about 12 km south-west.",
+    gettingAround:
+      "Liuzhou Bailian Airport (LZH), about 12 km from the city, has flights to Beijing, Shanghai, Guangzhou and Shenzhen. Liuzhou station is Guangxi's rail hub — about an hour from Nanning and Guilin and 3 hours from Guangzhou. The city has buses, a light rail under construction and taxis; walk the centre and cycle the riverbank, and take trains or coaches to Sanjiang and Rongshui. The climate is subtropical monsoon with an annual mean of about 21°C, hot wet summers and an April–August rainy season.",
+    culture:
+      "Southwestern Mandarin (the Liuzhou dialect) and standard Mandarin are both used; the Zhuang make up more than a third of the population, with Miao, Dong and Yao in the northern counties. Dong drum towers and wind-and-rain bridges are village public buildings — respect the village elders and do not climb the towers; Dong grand song is a UNESCO intangible heritage item, so listen quietly. Luosifen's pickled bamboo shoot is pungent — adjust to taste. The third day of the third lunar month is the Zhuang song festival. No tipping.",
+    seeAndDo:
+      "Liuhou Park and Liu Zongyuan's cenotaph; Ma'an and Yufeng hills for the river loop; night cruises and the illuminated 'Hundred-li Liu River'; the luosifen lanes and the luosifen industrial park; the Chengyang bridge and Dong villages of Sanjiang (stay a night for the drum towers lit at night); the Miao villages and Bei River of Rongshui; the Bailian Cave museum; the Liuzhou Industrial Museum.",
+    whenAndTips:
+      "October–April is most comfortable, and March–April brings streets full of bauhinia blossom; summers are hot and wet. Sanjiang and Rongshui are far from the city — a day or more each. Liuzhou and Guilin are about 150 km apart and are often combined.",
+  },
+  yibin: {
+    identity:
+      "Yibin is a prefecture-level city in southern Sichuan where the Min and Jinsha rivers meet — only below their confluence is the river called the Yangtze, hence its title 'first city on the ten-thousand-li Yangtze' — with a population of about 4.59 million (2020 census). It is the home of Wuliangye liquor, whose distilling history runs alongside the city's; the Shunan Bamboo Sea in Changning county to the south is one of China's largest continuous bamboo forests, the Xingwen Stone Sea is a karst landscape of stone forest and sinkholes, and Lizhuang old town in Cuiping district sheltered Tongji University and the Academia Sinica during the wartime relocation inland.",
+    layout:
+      "The main city sits at the three-river confluence: the Min from the north and the Jinsha from the south-west meet below the Hejiang Gate, the old town lies around the gate and Cuiping Hill rises to the west. The Wuliangye plant is on the Min River north of the city. Lizhuang old town is about 20 km east on the south bank of the Yangtze; the Bamboo Sea is about 60 km south-east in Changning; the Stone Sea about 100 km south-east in Xingwen; south along the Jinsha are Pingshan and the Xiangjiaba dam. Wuliangye Airport is about 11 km north and Yibin West high-speed station west of the city.",
+    gettingAround:
+      "Yibin Wuliangye Airport (YBP), opened in 2019 about 11 km from the city, has flights to Beijing, Shanghai, Guangzhou and Shenzhen. Yibin West on the Chengdu–Guiyang high-speed line is about 1.5 hours from Chengdu and 2 from Guiyang. Buses and taxis are convenient; Lizhuang is a bus ride, and the Bamboo Sea and Stone Sea are reached by coach or hired car. The climate is subtropical humid monsoon with an annual mean of about 18°C, hot humid summers and foggy, snow-free winters.",
+    culture:
+      "The Yibin dialect is Southwestern Mandarin; standard Mandarin is universal. Wuliangye's liquor culture runs deep, and distillery visits need booking; Lizhuang holds wartime relics (the Tongji University site) and is a place of remembrance. The Bamboo Sea is dense forest — guard against mosquitoes and slippery paths; the Stone Sea's sinkhole lookouts are railed. Food includes Yibin 'burning' noodles, Lizhuang white pork, bamboo-shoot banquets and Yibin morning tea. No tipping.",
+    seeAndDo:
+      "The Hejiang Gate for the three-river confluence; the Wuliangye liquor culture area; Lizhuang old town (the Tongji site, the Zhang family shrine, white pork); the Shunan Bamboo Sea (the Emerald Corridor, Forget-Worry Valley, the Sea-Viewing Tower — stay a night in the bamboo); the Xingwen Stone Sea (sinkholes, stone forest, caves); Cuiping Hill and the Zhao Yiman memorial; Longhua old town in Pingshan; the old street of Nanxi.",
+    whenAndTips:
+      "March–May and September–November are most comfortable — new shoots in spring, the greenest bamboo in autumn; summer is hot but the Bamboo Sea is cool. The Bamboo Sea and Stone Sea lie in the same direction and make a two-day trip. Lizhuang and the confluence work as a high-speed day trip from Chengdu.",
+  },
+  mudanjiang: {
+    identity:
+      "Mudanjiang is a prefecture-level city in south-eastern Heilongjiang, in a mountain basin on the Mudan River (a Songhua tributary), with a population of about 2.29 million (2020 census). It is the transport hub of eastern Heilongjiang and is known for two landscapes: Jingpo Lake, one of China's largest volcanically dammed alpine lakes, whose outlet is the broad Diaoshuilou waterfall over basalt; and 'Snow Village' in the Dahailin forest district, whose deep snow and mushroom-shaped roofs have made it a winter favourite. The Shangjing Longquanfu site at Ning'an was the capital of the Tang-era Balhae kingdom.",
+    layout:
+      "The city straddles the Mudan River, with the old town on the north bank and the riverside park and Mudan Peak the residents' retreats. Jingpo Lake lies about 100 km south in Ning'an city (the Diaoshuilou waterfall at the lake's northern end, the underground forest in a crater to the north-west); the Balhae capital site is at Bohai town in Ning'an, about 30 km from the city; Snow Village is about 90 km south-west in the Dahailin forest district; Hengdaohezi (a Russian-era railway town and the Siberian tiger park) about 60 km west; the Suifenhe border crossing about 150 km east. Hailang Airport is about 9 km south-west.",
+    gettingAround:
+      "Mudanjiang Hailang International Airport (MDG), about 9 km from the city, has flights to Beijing, Shanghai, Guangzhou and Qingdao and services to South Korea. The Harbin–Mudanjiang high-speed line takes about 1.5 hours from Harbin. Buses and taxis are convenient; Jingpo Lake is about 2 hours by coach or hired car, and Snow Village has dedicated winter coaches (about 3 hours on mountain roads). The climate is temperate continental monsoon with an annual mean of about 4°C — long, severe, snowy winters and cool summers.",
+    culture:
+      "North-eastern Mandarin is spoken; Korean villages lie around Ning'an, and Hengdaohezi keeps Russian-era buildings. Snow Village is extremely crowded in winter and its family inns' prices swing in peak season — ask first; follow park rules for winter ice activities at Jingpo Lake. Food includes Korean cold noodles, Jingpo Lake fish and forest produce. Winter outdoors needs heavy gear, and camera batteries must be kept warm. No tipping.",
+    seeAndDo:
+      "Jingpo Lake (the Diaoshuilou waterfall, lake cruises, the underground forest in the crater; the frozen waterfall in winter); Snow Village (Xueyun Street, the mushroom roofs, Dream Home — December to February); the Balhae capital site and museum; the Russian streets of Hengdaohezi and the Siberian tiger park; Mudan Peak and the riverside in town; the border town of Suifenhe.",
+    whenAndTips:
+      "June–September for Jingpo Lake and cool air, December–February for Snow Village (most crowded around Spring Festival). Snow Village's mountain road ices in winter — take the coach rather than driving, and book lodging ahead. The waterfall is fullest in summer. Winter temperatures often sit below −20°C — equip for extreme cold.",
+  },
+  chizhou: {
+    identity:
+      "Chizhou is a prefecture-level city in southern Anhui on the south bank of the Yangtze at the northern edge of the southern Anhui hills, with a population of about 1.33 million (2022). Its heart is Mount Jiuhua — one of the four sacred mountains of Chinese Buddhism, the sanctuary of the bodhisattva Ksitigarbha (Dizang), its main peak Shiwang at 1,344 m and nearly a hundred temples on its slopes. The Tang poet Du Mu, as prefect of Chizhou, wrote the famous 'Qingming' poem whose 'Apricot Blossom Village' gives Xinghuacun its name; Shengjin Lake on the Yangtze is an important wintering wetland for birds, and the Qiupu River is known through Li Bai's verse.",
+    layout:
+      "The city lies on the plain south of the Yangtze, with the Qingxi Pagoda and Xinghua Village in the old town. Mount Jiuhua is about 40 km south in Qingyang county: Jiuhua Street is the temple cluster on the mountain (Huacheng, Qiyuan and the Roushen Hall), Tiantai Peak and Shiwang Peak crown the summit with a cableway, and the Dayuan Culture Park (a 99 m Ksitigarbha statue) lies at Kecun below. Shengjin Lake is south-west in Dongzhi county, the Qiupu River in Shitai county, and the Guniujiang reserve in southern Shitai. Jiuhuashan Airport lies between the city and the mountain.",
+    gettingAround:
+      "Chizhou Jiuhuashan Airport (JUH), opened in 2013 about 20 km from both the city and the mountain, has flights to Beijing, Shenzhen, Chengdu and Xi'an. Chizhou station on the Nanjing–Anqing high-speed line is about 1.5 hours from Nanjing and 1.5 from Hefei; coaches from the station reach Jiuhua in about an hour. City buses are convenient, and inside the mountain park you use eco-buses, the cableway and your feet. The climate is northern subtropical humid monsoon with an annual mean of about 17°C, cooler and wetter on the mountain.",
+    culture:
+      "Jianghuai Mandarin is spoken; standard Mandarin is universal. Jiuhua is a Buddhist sanctuary — dress modestly, keep quiet and do not photograph inside the halls, and be silent around the pilgrims at the Roushen Hall; the days around Ksitigarbha's birthday on the 30th of the seventh lunar month bring vast crowds. Jiuhua vegetarian cuisine is the mountain speciality, with Chizhou mandarin fish and small Qiupu River fish below. No tipping.",
+    seeAndDo:
+      "Mount Jiuhua (Huacheng and Qiyuan temples and the Roushen Hall on Jiuhua Street, Tiantai Peak, the Baisui Palace, the Huatai cableway for cloud seas); the Dayuan Culture Park; the Xinghua Village cultural area; birdwatching at Shengjin Lake (November–March); rafting on the Qiupu River and the Penglai cave; the primeval forest of Guniujiang; the Qingxi Pagoda and Pingtian Lake in town.",
+    whenAndTips:
+      "April–May and September–November are most comfortable, with rhododendrons in spring and red leaves in autumn on Jiuhua; summer is a mountain retreat, and winter brings snow but slippery paths. Give Jiuhua at least a day, staying on Jiuhua Street for the morning bells; lodging is extremely tight around the 30th of the seventh lunar month. Huangshan and Anqing link easily.",
+  },
+  tongren: {
+    identity:
+      "Tongren is a prefecture-level city in north-eastern Guizhou in the Wuling mountains on the Jin River, with a population of about 3.3 million (2020 census), more than half of it Tujia, Miao and Dong. Fanjingshan is its emblem: the main peak of the Wuling range at 2,572 m, crowned by the Red Cloud Golden Summit, an isolated rock pillar, with large tracts of primeval forest and rare species such as the Guizhou snub-nosed monkey, inscribed as a natural World Heritage Site in 2018. The Zhongnanmen old town in the city is a Ming–Qing quarter, and the Jin River runs through the city.",
+    layout:
+      "The city lies in the valley of the Jin River, with the Zhongnanmen old town by the river between East and West hills. Fanjingshan is about 80 km north-west in Jiangkou county, with an eastern entrance (Heiwanhe) and a western one (Yinjiang); the eastern cableway rises towards the summit area, from which you walk past Mushroom Rock to the Red Cloud Golden Summit, and Zhaisha Dong village and Yunshe Tujia village at the foot are the places to stay. About 30 km east is the Hunan town of Fenghuang, with Tongren Fenghuang Airport between the two. Shiqian's hot springs lie south-west and the Wu River at Sinan to the west.",
+    gettingAround:
+      "Tongren Fenghuang Airport (TEN), about 21 km from the city, has flights to Beijing, Hangzhou and Kunming. Tongren South on the Shanghai–Kunming high-speed line is about 40 km south of the city (some distance out) — about 1.5 hours from Guiyang and 2 from Changsha; the conventional Tongren station is in town. Buses and taxis are convenient; Fanjingshan is about 1.5 hours by coach or hired car, with eco-buses, the cableway and walking inside. The climate is subtropical monsoon with an annual mean of about 17°C, many rainy days and frequent mountain mist.",
+    culture:
+      "Southwestern Mandarin is spoken; standard Mandarin is universal; Tujia, Miao and Dong communities' drum towers and hand-waving halls are public spaces — respect village customs. Fanjingshan is both a natural heritage site and a Buddhist mountain (a Maitreya sanctuary) — dress modestly at the summit temples; the chains up the Golden Summit are steep, so judge your head for heights; entry is by capped advance booking. Food includes Tongren she rice, glutinous cakes, Jiangkou dried tofu and sour-soup fish. No tipping.",
+    seeAndDo:
+      "Fanjingshan (cableway up; Mushroom Rock, the Old Golden Summit, the Red Cloud Golden Summit, primeval-forest walkways); Zhaisha Dong village and Yunshe at the foot; the Zhongnanmen old town and the Jin River at night; the hot springs and the Loushang old village of Shiqian; the Wu River gorges and stone forest of Sinan; the Wanshan cinnabar mine heritage park; east to Fenghuang old town.",
+    whenAndTips:
+      "April–June and September–November are most comfortable, with rhododendrons in spring and red leaves in autumn on Fanjingshan; summer is wet and misty and the summit is often hidden. Fanjingshan tickets and cableway must be booked in advance through official channels and sell out fast in peak season; mountain weather changes quickly — carry rain gear and a jacket. Pairing with Fenghuang is the classic route.",
+  },
+  jiuquan: {
+    identity:
+      "Jiuquan is a prefecture-level city in north-western Gansu at the western end of the Hexi Corridor, the largest in area of Gansu's cities (about 168,000 km², nearly two-fifths of the province) with a population of about 1.06 million (2020 census). One of the four Han commanderies of Hexi, its name by tradition recalls Emperor Wu's gift of imperial wine that Huo Qubing poured into a spring to share with his soldiers; the Bell-and-Drum Tower and Jiuquan Park (the 'Western Han Jiuquan' site) in the city mark that story. Dunhuang is a county-level city under its administration, so the Mogao Caves and Mingsha Dunes and Crescent Lake lie within its territory; the Jiuquan Satellite Launch Centre stands to the north in Ejin Banner.",
+    layout:
+      "The city (Suzhou district) adjoins Jiayuguan about 20 km away, and the two share Jiayuguan Airport. The Bell-and-Drum Tower is the city's centre, with Jiuquan Park to the east. West along the corridor it is about 120 km to Yumen and about 380 km to Dunhuang; the Yulin Caves at Guazhou lie east of Dunhuang; the Jinta poplar forest is about 80 km north; the satellite launch centre is about 250 km north-east on the Gobi. The Qilian Mountains rise to the south. Jiuquan South high-speed station is south of the city.",
+    gettingAround:
+      "The city has no airport of its own and uses Jiayuguan Airport (JGN, about 25 km); Dunhuang has Dunhuang Airport. Jiuquan South on the Lanzhou–Xinjiang high-speed line is about 4.5 hours from Lanzhou and 15 minutes from Jiayuguan South; the conventional Jiuquan station is in town. Buses and taxis are convenient; the Jinta poplars and the launch centre need a hired car or tour. The climate is temperate arid — under 100 mm of rain a year, intense sun, cold winters and hot summer days with cool evenings.",
+    culture:
+      "The Jiuquan dialect is Lan-Yin Mandarin; standard Mandarin is universal. Visits to the launch centre follow official arrangements, and roads are controlled during launches; the Bell-and-Drum Tower is a Ming–Qing structure — no climbing. Food is north-western: Jiuquan 'paste pot', mutton and cold noodle sheets, and luminous jade cups are the traditional craft. The Jinta poplars turn gold in mid-October and draw many photographers — do not break branches. No tipping.",
+    seeAndDo:
+      "The Bell-and-Drum Tower and Jiuquan Park (the Western Han spring site, the Zuo Zongtang willows); the Jiuquan Museum; the Jinta poplar forest (October); the satellite launch centre (Dongfeng Space City, visited by official arrangement); the Yulin Caves and the Suoyang City ruins at Guazhou; west to Dunhuang's Mogao Caves, Mingsha Dunes and Crescent Lake and the Yumen Pass; the grasslands and glaciers of the Qilian Mountains to the south.",
+    whenAndTips:
+      "May–October is best, with poplars in mid-October; spring is dusty and winter severe. Jiuquan and Jiayuguan fit in a day and usually form one stop on a Hexi Corridor route; Dunhuang lies nearly 400 km west. Strong sun and dry air — protect and hydrate.",
+  },
+  chifeng: {
+    identity:
+      "Chifeng is a prefecture-level city in south-eastern Inner Mongolia, in the hills where the southern Greater Khingan meets the Yan Mountains, with a population of about 4 million (end of 2022) — one of Inner Mongolia's most populous cities. It is the type site of the Neolithic Hongshan culture, where the 'C-shaped jade dragon' was unearthed; the site of the Liao dynasty's Upper Capital, Shangjing, lies in Bairin Left Banner. Hexigten Banner holds the Asihatu stone forest (a UNESCO Global Geopark), Dali Nur lake and the Ulan Butong grassland — Chifeng's richest concentration of natural scenery.",
+    layout:
+      "The city lies on the Yingjin River, with Hongshan, the red hill that gives the city its name, to the east and the Hongshan culture museum in town. Hexigten Banner is about 250 km north-west: the Asihatu stone forest, Dali lake, Huanggangliang and the Ulan Butong grassland (adjoining Weichang in Hebei) are spread across the banner, with Jingpeng town as its seat; the Liao Upper Capital site is about 270 km north-east at Lindong in Bairin Left Banner; the Liao Middle Capital site at Ningcheng lies to the south. Yulong Airport is about 11 km south-west.",
+    gettingAround:
+      "Chifeng Yulong Airport (CIF), about 11 km from the city, has flights to Beijing, Hohhot, Shenyang and Tianjin. Chifeng station on the Beijing–Tongliao high-speed line is about 3 hours from Beijing Chaoyang. Buses and taxis are convenient; Hexigten is reached by coach or hired car, and its sights are far apart, so most people drive or join a two- or three-day tour. The climate is mid-temperate semi-arid — cold winters (January mean about −11°C), mild summers and cool grassland mornings and evenings.",
+    culture:
+      "Mongols and Han live together, with Mongolian and Chinese both in use. As a guest of herders on the grassland receive wine and khadag with both hands; circle ovoo cairns clockwise. The stone forest, volcanoes and lakes are reserves — stay on paths and take no rocks. Food includes hand-held mutton, dairy, the Chifeng 'duijia' meat sandwich and Aohan millet. No tipping.",
+    seeAndDo:
+      "The Hongshan culture museum and the Chifeng Museum (the jade dragon); in Hexigten, the Asihatu stone forest, Dali Nur (migratory birds), the Huanggangliang forest, the Qingshan rock potholes and the Ulan Butong grassland (summer grass, autumn birches); the Liao Upper Capital site and Liao ancestral tombs; the Great Bright Pagoda of the Liao Middle Capital at Ningcheng; the Harqin princely mansion; the Yulong sand lake.",
+    whenAndTips:
+      "June–September is grassland and stone-forest season, with Ulan Butong's autumn colour best in mid-late September; winter is severe and most sites are off-season. Hexigten's sights are scattered — allow at least two days, staying at Jingpeng or Ulan Butong. Grassland sun is strong and day–night swings large — bring sunscreen and a jacket.",
+  },
+  shannan: {
+    identity:
+      "Shannan (Lhoka) is a prefecture-level city in southern Tibet in the valley of the middle Yarlung Tsangpo; its seat Tsetang lies at about 3,600 m, and the population is about 354,000 (2020 census). It is called the cradle of the Tibetan people: Yumbulagang is Tibet's first palace, Tradruk one of its earliest Buddhist chapels, Samye (completed 779) the first monastery where Tibetans were ordained as monks, and the tombs of the Tibetan kings at Qonggyai hold the burial mounds of the Tubo rulers. Yamdrok Lake lies in the west of the city's territory, and Lhasa Gonggar Airport is also in Shannan's Gonggar county.",
+    layout:
+      "Tsetang sits on the south bank of the Yarlung Tsangpo in Nedong district; Yumbulagang stands on a hilltop about 10 km south-east and Tradruk about 5 km south. Samye is on the north bank in Zhanang county about 40 km away; the kings' tombs about 30 km south in Qonggyai; Yamdrok Lake about 100 km west in Nagarze county, passed on the southern road from Lhasa. Gonggar Airport is about 90 km north-west in Gonggar county and serves Lhasa too.",
+    gettingAround:
+      "Shannan has no airport of its own — Lhasa Gonggar (LXA, 3,570 m) lies within Shannan's Gonggar county, about 90 km from Tsetang and 60 km from Lhasa. Lhasa to Tsetang on the Tsetang–Gonggar expressway takes about 1.5 hours, with coaches. Taxis serve the town; Samye, Yumbulagang, the tombs and Yamdrok need a hired car or tour. The climate is temperate arid highland with under 450 mm of rain, intense sun and cold dry winters. Foreign visitors need a Tibet Travel Permit arranged in advance and must travel with a licensed operator.",
+    culture:
+      "Tibetans are the majority, with Tibetan and Mandarin both used. Remove hats, dress modestly and walk clockwise in monasteries, where most halls forbid photography and murals and ritual objects must not be touched; pilgrims use Samye's circuit and the path up Yumbulagang — keep quiet. Losar (Tibetan New Year) and the Ongkor harvest festival are Shannan's main celebrations. Food includes tsampa, butter tea, Tibetan noodles and yak. Tsetang is higher than Lhasa — watch for altitude sickness. No tipping.",
+    seeAndDo:
+      "Yumbulagang (climb to the hilltop palace for the Yarlung valley); Tradruk Temple (the pearl thangka); Samye Monastery (a mandala layout; climb the Utse hall for the whole complex); the tombs of the kings; Yamdrok Lake (viewpoint at the Gampa La pass); the dunes and valley of the Yarlung Tsangpo; the Zhegu grassland; Mindroling Monastery in Zhanang.",
+    whenAndTips:
+      "May–October is most comfortable, with a green valley in the July–August rains; winter is clear but cold and quiet. Tsetang lies at 3,600 m — acclimatise in Lhasa first. Samye is north of the river and Yumbulagang and the tombs south — half a day to a day each. The southern road from Lhasa via Yamdrok to Shannan is a common loop.",
   },
 
   "chile-overview": {
