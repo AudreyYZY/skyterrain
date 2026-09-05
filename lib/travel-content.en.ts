@@ -4857,7 +4857,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   gyeongju: {
     identity:
-      "Gyeongju was the capital of the Silla kingdom (57 BC – AD 935) for nearly a millennium, with a population of about 250,000; the city is dotted with royal tombs, temples, and ruins, earning it the nickname \"museum without walls.\"",
+      "Gyeongju's nearly a thousand years as a capital (57 BC – AD 935) tracks almost the entire arc of Silla's rise from a small statelet to the power that unified the Korean peninsula — after allying with Tang China to conquer Baekje and Goguryeo in the 7th century, Silla ruled the peninsula from here for three more centuries, and Cheomseongdae, built during the reign of Queen Seondeok (632–647), still stands as East Asia's oldest surviving astronomical observatory. Gyeongju has a population of about 250,000; the city is dotted with royal tombs, temples, and ruins, earning it the nickname \"museum without walls.\"",
     layout:
       "The historic core sits on the flat land at the city centre, with the Daereungwon tomb cluster, Cheomseongdae observatory, and Bulguksa Temple and Seokguram Grotto spread across the city and its outskirts.",
     gettingAround:
