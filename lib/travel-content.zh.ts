@@ -3937,6 +3937,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lille: {
     identity:
       "里尔在法国最北端、靠近比利时边境，都会区约 120 万人，历史上是佛兰德地区的纺织和工业中心，建筑风格明显带佛兰德砖石山墙特征、和巴黎很不一样。它是法国北部最大的城市，也是伦敦-巴黎-布鲁塞尔三角高铁网的枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lille (commune 35 km²; ~238,000 2023; Métropole Européenne de Lille 95 communes ~1.2 million, Eurometropolis with Kortrijk/Tournai ~2 million; Hauts-de-France capital; Vieux-Lille Flemish brick; Grand Place; Euralille with Lille-Europe Eurostar; VAL metro 1983, first automated network; Braderie September; Belgium ~15 km; ~110,000 students)
+    howItWorks:
+      "里尔是上法兰西大区的首府与诺尔省的省会，由市长和市议会治理，市域约 35 平方公里，2023 年人口约 24 万；2015 年起的里尔欧洲都会区有 95 个市镇、约 120 万人，再往外与比利时的科特赖克、图尔奈组成约 200 万人的跨境“欧洲都会区”，边境在 15 公里外。老里尔是佛兰德风格的红砖街区，大广场是它的中心，欧洲里尔是 1990 年代在两座车站之间建起的新区，欧洲之星与 TGV 在里尔欧洲站停靠，到巴黎一小时、到伦敦一个半小时、到布鲁塞尔 38 分钟；1983 年通车的 VAL 是世界第一条全自动地铁，每年九月的旧货集市涌入三百万人，约 11 万学生让它是法国北部最大的大学城。初来的人最容易犯的错，是把里尔当作法国的边城，而它的日常横跨法比两国，语言与建筑都带着佛兰德的底子。",
     layout:
       "里尔老城（Vieux-Lille）有一片保存完好的 17 世纪佛兰德式砖石街区，主广场（Grand Place）是市中心地标。城市周围曾是繁荣的纺织工业区，如今不少老工厂改造成文化空间。地势平坦，是法国北部大平原的一部分。",
     gettingAround:
@@ -3952,6 +3955,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   strasbourg: {
     identity:
       "斯特拉斯堡在法国东北部、莱茵河支流伊尔河畔、紧邻德国边境，都会区约 78 万人，是阿尔萨斯地区的中心。历史上在法德之间数次易手，因此建筑、语言（阿尔萨斯语接近德语方言）和饮食都带有明显的德法混合特征。它是欧洲议会所在地之一，也是欧洲理事会总部所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Strasbourg (commune 78 km²; ~295,000 2023; Eurométropole 33 communes; metro area ~875,000; Grand Est capital and prefecture of Bas-Rhin; European Parliament, Council of Europe, ECHR; Grande Île UNESCO 1988 + Neustadt 2017; cathedral; Petite France; Kehl across the Rhine, tram since 2017; Alsatian; Christmas market; TGV ~1 h 45 Paris)
+    howItWorks:
+      "斯特拉斯堡是大东部大区的首府与下莱茵省的省会，由市长和市议会治理，市域约 78 平方公里，2023 年人口约 29.5 万；2015 年起的斯特拉斯堡欧洲都会区有 33 个市镇，城市连绵区约 87.5 万人。它是欧洲三座“首都”之一：欧洲议会、欧洲委员会与欧洲人权法院都在城北的欧洲区，每月议会开会时城里的酒店订满。老城在伊尔河环抱的大岛上，1988 年列入世界遗产，2017 年德意志帝国时期规划的新城区也被列入，砂岩大教堂与小法兰西的木筋屋在岛上；莱茵河对岸就是德国的凯尔，2017 年起有轨电车直接开过去，阿尔萨斯方言仍在乡下使用，圣诞市场是全法最老的之一，TGV 到巴黎约一小时三刻。初来的人最容易犯的错，是把斯特拉斯堡当作一座法国省城，而它的制度、建筑与日常都跨在法德之间。",
     layout:
       "斯特拉斯堡老城核心“大岛”（Grande Île）被伊尔河的两条支流环抱，是整个古城区第一个被列为世界遗产的老城。大教堂（粉红砂岩、单塔）是老城制高点。小法兰西区（Petite France）沿运河的木筋墙房子是最上镜的一角。欧洲区（欧洲议会等机构）在老城以东。",
     gettingAround:
@@ -3985,6 +3991,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   grenoble: {
     identity:
       "格勒诺布尔在法国东南部、伊泽尔河谷中，四面被三条山脉（韦科尔、沙特勒兹、贝勒多讷）环抱，都会区约 45 万人，是法国阿尔卑斯地区的科研和高科技中心（有“法国硅谷”之称），1968 年冬奥会举办地。城市本身平坦，一抬头就能看到雪山，是这座城市最鲜明的印象。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Grenoble (commune 18 km²; ~156,100 2023; Grenoble-Alpes Métropole 49 communes, urban area ~727,000, largest metropolis in the Alps; prefecture of Isère; flat basin ringed by Chartreuse, Vercors, Belledonne; Bastille cable car "Les Bulles" 1934; ~70,000 students; STMicroelectronics, Schneider, CEA; 1968 Olympics; trams; Lyon ~100 km)
+    howItWorks:
+      "格勒诺布尔是伊泽尔省的省会，由市长和市议会治理，市域只有约 18 平方公里，是法国最密集的市镇之一，2023 年人口约 15.6 万；2015 年起的格勒诺布尔阿尔卑斯都会区有 49 个市镇，城市连绵区约 72.7 万人，是阿尔卑斯山区最大的都会。城市建在德拉克河与伊泽尔河交汇处的一片平地上，三面被沙特勒兹、韦科尔与贝勒多讷三条山脉围住，1934 年建成的巴士底缆车用一串球形吊舱把人从市中心送上北面的山崖；约 7 万学生与法国原子能委员会、意法半导体、施耐德电气让它成为法国的科研与微电子中心，1968 年冬奥会在这里举办，五条有轨电车线连起都会区，滑雪场在三四十到六十公里外，里昂在西面约 100 公里。初来的人最容易犯的错，是把格勒诺布尔当作一座山城，而市区平坦得像一张桌子，山在四周立着。",
     layout:
       "格勒诺布尔建在伊泽尔河和德拉克河交汇处的平坦谷底，老城在旧城墙内、街道狭窄。城北有一座建在巴士底要塞旧址上的缆车站（“泡泡缆车”是标志性的圆球形车厢），几分钟就能上到俯瞰全城和三面雪山的观景点。城市周边散布着大学园区和科研机构。",
     gettingAround:
@@ -4072,6 +4081,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nantes: {
     identity:
       "南特在法国西部、卢瓦尔河下游入海口附近，都会区约 96 万人，历史上是重要的大西洋港口和造船中心（也曾是三角贸易的港口之一，这段历史现有专门的纪念场所如实呈现）。18 世纪的石造建筑和近年大胆的当代公共艺术（如巨型机械大象）让这座城市气质独特，多次被评为法国宜居城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nantes (commune 65 km²; 327,734 2023, sixth in France; Nantes Métropole 24 communes ~680,000; prefecture of Loire-Atlantique and capital of Pays de la Loire, historically Brittany; Loire, Île de Nantes with the Machines; Château des ducs de Bretagne; Passage Pommeraye; trams since 1985; European Green Capital 2013; Atlantic ~50 km)
+    howItWorks:
+      "南特是卢瓦尔大西洋省的省会与卢瓦尔河地区大区的首府，由市长和市议会治理，市域约 65 平方公里，2023 年人口约 32.8 万，是法国第六大城市；南特都会区有 24 个市镇、约 68 万人。历史与文化上它属于布列塔尼，布列塔尼公爵城堡就在市中心，1532 年布列塔尼并入法国的条约在这里签署，今天的行政区划却把它划在卢瓦尔河地区，本地的“归还布列塔尼”争论至今存在。卢瓦尔河从城南流过，南特岛上的“机械岛”有一头会走路的大象，波姆莱拱廊是 19 世纪的商业街；1985 年这里恢复了法国第一条现代有轨电车线，2013 年它是欧洲绿色首都，大西洋在西面 50 公里，圣纳泽尔的造船厂在河口。初来的人最容易犯的错，是把南特当作一座内陆城，而它曾是法国最大的贩奴港，河与海是它的历史。",
     layout:
       "南特建在卢瓦尔河与几条支流交汇处，老城以布列塔尼公爵城堡为核心。城岛（Île de Nantes，原造船厂区）是当代艺术和创意产业改造区，机械岛（Les Machines de l'île）的巨型机械大象和旋转木马就在这里。往西沿卢瓦尔河可通向大西洋。",
     gettingAround:
@@ -4087,6 +4099,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ajaccio: {
     identity:
       "阿雅克肖在科西嘉岛西岸，是科西嘉岛的首府，市区人口约 7 万，拿破仑·波拿巴的出生地（故居现为国家级博物馆）。科西嘉岛多山，中央脊由一系列 2000 米以上的花岗岩峰组成，海岸线曲折，兼有海滩、峡湾式港湾和悬崖，历史上先后受多个地中海势力影响，1768 年并入法国。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ajaccio (commune 82 km²; ~76,300 2023; prefecture of Corse-du-Sud and seat of the Collectivité de Corse, the single territorial collectivity since 2018 with its own assembly; Maison Bonaparte, Napoleon born 1769; citadel; Sanguinaires; airport 5 km; ferries Marseille/Nice/Toulon; Corsican language; Bastia ~150 km; first French city liberated 1943)
+    howItWorks:
+      "阿雅克肖是南科西嘉省的省会，也是科西嘉地方行政区的所在地——2018 年起科西嘉的两个省与大区合并成一个“单一地方行政区”，有自己的议会与执行委员会，权限比普通大区大；市镇由市长和市议会治理，市域约 82 平方公里，2023 年人口约 7.6 万。城市在一个朝西的海湾边，1492 年由热那亚人重建，拿破仑 1769 年生在老城的波拿巴故居里，城堡与老港在旁边，血岛群岛在湾口；1943 年 9 月它是法国第一座被解放的城市；科西嘉语在学校与路牌上与法语并列，机场在城东 5 公里，渡轮通往马赛、尼斯与土伦，巴斯蒂亚在东北约 150 公里。初来的人最容易犯的错，是把科西嘉当作一个普通的法国大区，而它有自己的议会、语言与身份，阿雅克肖是它的行政中心。",
     layout:
       "阿雅克肖围着一个宽阔的海湾展开，老城在海湾东北角，拿破仑故居博物馆和大教堂在老城核心。海湾西侧是防波堤和游艇港，沿岸有沙滩。城市背后不远就是科西嘉多山的地形，晴天能看到内陆的高山轮廓。",
     gettingAround:
@@ -4103,6 +4118,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   annecy: {
     identity:
       "安纳西在法国阿尔卑斯山麓的安纳西湖北端，是上萨瓦省的省会，人口约13.2万（2023年），离日内瓦只有45公里。蒂乌河和几条运河穿过老城，河中央十二世纪的岛宫（曾是监狱和法院）是城市的标志，山坡上的城堡俯瞰老城，因此它被称为“阿尔卑斯的威尼斯”。安纳西湖以水质清澈著称，环湖有自行车道，周围的塞姆诺兹山和图尔内特山是登山与滑翔伞胜地；每年6月的安纳西国际动画电影节是全球动画界的年度盛会。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Annecy (commune ~67 km² after the 2017 merger of six communes; ~132,000 2023; Grand Annecy 34 communes ~300,000; prefecture of Haute-Savoie; Lake Annecy; Thiou canals and Palais de l'Isle; château; animation festival since 1963; Geneva ~35–40 km cross-border commuting; Salomon; no airport)
+    howItWorks:
+      "安纳西是上萨瓦省的省会，由市长和市议会治理；2017 年它与周围五个市镇合并，市域扩到约 67 平方公里，2023 年人口约 13.2 万，大安纳西聚合区有 34 个市镇、约 30 万人。城市在安纳西湖的北端，蒂乌河与几条运河从湖里流出，穿过老城，岛宫立在河心，因此有“阿尔卑斯的威尼斯”之称，城堡在老城背后的坡上；湖水是欧洲最清的之一，环湖有一条自行车道；日内瓦在北面约 35 公里，大量居民每天跨境去瑞士上班，萨洛蒙等户外品牌总部在此，1963 年起的国际动画电影节每年六月举行，没有机场，用日内瓦。初来的人最容易犯的错，是把安纳西当作一座湖边度假村，而它是一个省的省会，也是跨境通勤者的居住地。",
     layout:
       "老城在湖北端蒂乌河出湖处，岛宫在河中，运河两岸是彩色房屋、拱廊和市场街，城堡在老城西南的坡上。湖滨的欧洲花园和爱之桥在老城东侧，帕基埃草坪沿湖向东延伸。火车站在老城北面约500米。塞姆诺兹山在城南，湖东岸的塔卢瓦尔、湖南端的杜萨尔是常去的湖畔村落；环湖自行车道约40公里。",
     gettingAround:
@@ -4117,6 +4135,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   avignon: {
     identity:
       "阿维尼翁在普罗旺斯的罗讷河左岸，人口约9.2万（2023年）。1309年至1377年，七位教皇先后驻跸于此，十四世纪建成的教皇宫是欧洲最大的哥特式宫殿之一；歌谣里的“阿维尼翁桥”（圣贝内泽桥，1171–1185年建）如今只剩伸向河中的四个桥墩；4.3公里长的中世纪城墙仍完整地环绕老城。教皇宫、主教建筑群和桥1995年列入世界遗产。1947年创办的阿维尼翁戏剧节每年7月把整座城变成舞台。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Avignon (commune 64.8 km²; 92,188 2023; Grand Avignon 16 communes ~200,000, straddling Vaucluse and Gard; prefecture of Vaucluse; 4,330 m of ramparts; Palais des Papes, popes 1309–1377, papal territory until 1791; Pont Saint-Bénézet; UNESCO 1995; festival July ~100,000; TGV station 3 km, ~2 h 40 Paris; mistral 120–160 days)
+    howItWorks:
+      "阿维尼翁是沃克吕兹省的省会，由市长和市议会治理，市域约 65 平方公里，2023 年人口约 9.2 万；大阿维尼翁聚合区有 16 个市镇、约 20 万人，跨在罗讷河两岸的沃克吕兹省与加尔省之间，河对岸的新城属于另一个省。1309 至 1377 年七位教皇住在这里，1348 年教廷买下这座城，直到 1791 年法国大革命才并入法国；4,330 米的中世纪城墙至今完整，教皇宫与圣贝内泽桥 1995 年列入世界遗产；每年七月的戏剧节有约十万人涌入，把整座城变成剧场；TGV 车站在城外 3 公里，到巴黎约两小时四十分，密史脱拉风一年吹一百二十到一百六十天。初来的人最容易犯的错，是以为城墙内就是全部，而市域向外延伸，河对岸还有另一个省的城镇。",
     layout:
       "老城被完整的城墙围住，在罗讷河东岸：教皇宫和主教座堂在老城北端的岩石上，岩石公园在宫后可俯瞰河和桥，圣贝内泽桥从城墙边伸向河中；钟楼广场（市政厅、歌剧院）在教皇宫南面，共和国街从广场一直通到南城墙外的火车站（阿维尼翁中央站）。TGV 站在城南约4公里的库尔蒂纳区，有接驳火车。河对岸是新城阿维尼翁（另一座塔楼和城堡）。",
     gettingAround:
@@ -4148,6 +4169,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   reims: {
     identity:
       "兰斯在法国东北部的香槟地区，人口约17.8万（2023年），是香槟省最大的城市。从496年克洛维受洗起，法国国王的加冕礼传统上在兰斯主教座堂举行（用圣油瓶施膏），所以它被称为“加冕之城”；主教座堂、托宫和圣雷米修道院1991年列入世界遗产，香槟的山坡、酒庄和白垩酒窖2015年再次列入。城市地下有绵延数十公里的白垩岩洞（部分可追溯到罗马时代）存放着泰廷哲、凯歌、波默里等香槟大厂的酒。1945年5月7日德军在兰斯签署无条件投降书。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Reims (commune 47 km²; 177,674 2023, largest in Marne though Châlons-en-Champagne is the prefecture; Grand Reims 143 communes ~300,000; cathedral of coronations with Palais du Tau and Saint-Remi UNESCO 1991; champagne houses and chalk cellars UNESCO 2015; Art Deco rebuild after WWI; German surrender signed 1945; TGV ~45 min Paris; trams; Épernay ~25 km)
+    howItWorks:
+      "兰斯是马恩省人口最多的城市，2023 年约 17.8 万人，却不是省会——省会是更小的沙隆昂香槟；它由市长和市议会治理，大兰斯共同体有 143 个市镇、约 30 万人。历代法国国王在兰斯大教堂加冕，大教堂与塔宫、圣雷米修道院 1991 年列入世界遗产；一战几乎把这座城炸平，重建留下了一批装饰艺术建筑；白垩岩里挖出的酒窖属于凯歌、泰亭哲、伯瑞等香槟酒庄，2015 年“香槟山丘、酒庄与酒窖”列入世界遗产；1945 年 5 月德国的无条件投降书在这里签署，TGV 到巴黎约 45 分钟，埃佩尔奈在南面约 25 公里。初来的人最容易犯的错，是以为兰斯是省会，而马恩省的省会在沙隆昂香槟，兰斯只是最大的城市。",
     layout:
       "市中心在韦勒河边的平地上，主教座堂和托宫在正中，市政厅和德鲁埃-德尔隆广场（餐饮区）在它北面，火车站在西北。圣雷米修道院在市中心南面约1.5公里，泰廷哲、波默里、凯歌、吕纳尔等香槟酒窖多在圣雷米周围的圣尼凯斯山坡上。投降博物馆在火车站北面。香槟-阿登 TGV 站在城南约5公里。埃佩尔奈（酩悦等）在南面约30公里，香槟山坡的村庄在两城之间。",
     gettingAround:
@@ -4162,6 +4186,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   colmar: {
     identity:
       "科尔马在阿尔萨斯的莱茵平原上，孚日山脚下，人口约6.7万（2023年），是上莱茵省的省会。它的老城几乎完好地保留了中世纪到文艺复兴的半木结构房屋，劳赫河穿过的“小威尼斯”街区是最著名的一角；恩特林登博物馆藏有格吕内瓦尔德的《伊森海姆祭坛画》（1512–1516年），自由女神像的作者巴托尔迪出生于此。科尔马自称阿尔萨斯葡萄酒之都，位于阿尔萨斯葡萄酒之路的中段，圣诞市集是欧洲最有名的之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Colmar (commune 66.6 km²; ~67,000 2023, third in Alsace; Colmar Agglomération; prefecture of Haut-Rhin, in the European Collectivity of Alsace; free imperial city 1226; Little Venice; Unterlinden with the Isenheim altarpiece; Bartholdi birthplace; Alsace wine route; ~595 mm rain, among the driest in France; Strasbourg ~64 km)
+    howItWorks:
+      "科尔马是上莱茵省的省会，也是 2021 年设立的阿尔萨斯欧洲地方行政区的一部分——这个行政区把上下莱茵两省合并，保留在大东部大区之内；市镇由市长和市议会治理，市域约 67 平方公里，2023 年人口约 6.7 万，是阿尔萨斯第三大城市。老城是木筋屋的迷宫，1226 年起它是神圣罗马帝国的自由城市，“小威尼斯”是运河边的一段街区，菩提树下博物馆里是伊森海姆祭坛画，自由女神像的雕塑家巴托尔迪生在这里；它自称阿尔萨斯葡萄酒之路的首府，年降水只有约 595 毫米，是法国最干的城市之一；斯特拉斯堡在北面约 64 公里，德国边境在东面 20 公里，最近的机场是米卢斯—巴塞尔。初来的人最容易犯的错，是把科尔马当作一处圣诞市场，而它是一个省的省会，冬天之外还有一年的日子。",
     layout:
       "老城很紧凑：恩特林登博物馆在北端，商人街、人头屋、普菲斯特屋等老屋沿着通向圣马丁教堂的街道分布，巴托尔迪博物馆在中间，小威尼斯在老城南端的劳赫河两岸，有平底船。火车站在老城西南约1公里。周围是葡萄园和酒村：里克维尔、里博维莱、凯泽贝尔在西北约10–15公里，埃吉桑在西南约7公里；上科尼斯堡城堡在北面约25公里。",
     gettingAround:
@@ -4176,6 +4203,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rouen: {
     identity:
       "鲁昂在诺曼底的塞纳河下游，是诺曼底大区的首府，人口约11.8万、都会区约71万（2023年）。它是中世纪欧洲最大最富裕的城市之一，鲁昂主教座堂的哥特式立面（莫奈画了三十多幅）和151米的铸铁尖塔是城市的标志，市中心有上千座半木结构房屋和十四世纪的大钟楼；1431年5月30日圣女贞德在老集市广场被处以火刑。福楼拜出生于此，塞纳河港是法国重要的河港。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rouen (commune 21 km²; 117,662 2023; Métropole Rouen Normandie 71 communes ~715,000; prefecture of Seine-Maritime and capital of the Normandy region; Seine; right-bank old town with cathedral, Gros-Horloge, half-timbered houses; Joan of Arc burned 1431 at the Vieux-Marché; Monet's cathedral series; river port; train ~1 h 20 Paris, no TGV; Le Havre ~90 km)
+    howItWorks:
+      "鲁昂是滨海塞纳省的省会与诺曼底大区的首府，由市长和市议会治理，市域只有约 21 平方公里，2023 年人口约 11.8 万；鲁昂诺曼底都会区有 71 个市镇、约 71.5 万人。塞纳河把城市分成两岸：右岸是老城，大教堂、大钟楼与成片的木筋屋在这里，1431 年圣女贞德在老市场广场被处死，广场上如今是一座现代教堂；莫奈在对面的窗口画了三十多幅大教堂；左岸是 19 世纪以来的工业与住宅区。鲁昂港沿塞纳河深入内陆，是法国第五大港，谷物从这里出海；火车到巴黎约一小时二十分，没有 TGV 直达，勒阿弗尔在西北约 90 公里。初来的人最容易犯的错，是把鲁昂当作巴黎的近郊，而它是诺曼底的首府，也是塞纳河上的一座海港。",
     layout:
       "老城在塞纳河右岸：主教座堂在中心，大钟街从主教座堂向西穿过大钟楼到老集市广场（圣女贞德教堂和纪念地），圣马克卢教堂和圣旺修道院在东面，美术馆在北面靠火车站（右岸站）。河左岸是新城区。圣凯瑟琳山在东面可俯瞰全城和河湾。塞纳河下游有诺曼底修道院之路和吉维尼（莫奈花园，上游约60公里）。",
     gettingAround:
@@ -4260,6 +4290,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   turin: {
     identity:
       "都灵在意大利西北部、波河上游河谷，都会区约 180 万人，是意大利统一运动的发源地和第一个首都（1861–1865），也是菲亚特汽车工业的发祥地。城市有巴洛克风格的规整街道和大量拱廊，2006 年冬奥会举办地，背靠阿尔卑斯山，晴天从市中心能看到雪山。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Turin (comune 130 km²; ~855,700 2026; 8 circoscrizioni; Metropolitan City of Turin ~2.2 million; Piedmont capital; Po; Baroque grid; Mole Antonelliana 167 m; Savoy residences UNESCO 1997; Fiat/Lingotto; metro 1 line; 2006 Olympics; first capital of Italy 1861–65)
+    howItWorks:
+      "都灵是皮埃蒙特大区的首府，由市长和市议会治理，市下分 8 个区（circoscrizione）；市域约 130 平方公里，2026 年人口约 86 万，而 2015 年取代省而设的都灵大都会市有 312 个市镇、约 220 万人。1861 至 1865 年它是意大利王国的第一个首都，萨伏依王室留下的巴洛克格网与宫殿群 1997 年列入世界遗产，城堡广场是坐标原点，安托内利尖塔高 167 米；波河从城东流过，阿尔卑斯山在西面 50 公里外的天际线上；菲亚特的林戈托厂房与米拉菲奥里厂区在城南，是意大利汽车工业的发源地，一条地铁线连起市区，2006 年冬奥会在这里举办。初来的人最容易犯的错，是把都灵当作一座工业城，而它的市中心是一座王室都城，拱廊街长达十几公里。",
     layout:
       "都灵沿波河西岸的平原展开，城市规划规整、街道呈网格状，大量拱廊连接建筑（雨天可不打伞逛街）。城堡广场是市中心核心，王宫和马达马宫都在这里。城市西侧不远就是阿尔卑斯山前坡，苏佩尔加圣殿在城东一座山丘上，可俯瞰全城和远处的雪山。",
     gettingAround:
@@ -4293,6 +4326,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bologna: {
     identity:
       "博洛尼亚在意大利东北部、亚平宁山脉北麓的波河平原边缘，都会区约 100 万人，是艾米利亚-罗马涅大区首府。它拥有世界上持续运作历史最悠久的大学（博洛尼亚大学，创立于 1088 年），也被公认为意大利的美食之都之一——博洛尼亚肉酱面、帕尔玛干酪、帕尔玛火腿等名菜都产自这一带。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bologna (comune 140.9 km²; ~390,700; 6 quartieri; Metropolitan City of Bologna 55 comuni ~1 million; Emilia-Romagna capital; porticoes UNESCO 2021, ~38 km in the centre; Two Towers; university 1088 oldest; Centrale high-speed junction; Marconi airport with monorail)
+    howItWorks:
+      "博洛尼亚是艾米利亚—罗马涅大区的首府，由市长和市议会治理，市下分 6 个区（quartiere）；市域约 141 平方公里，人口约 39 万，而取代省而设的博洛尼亚大都会市有 55 个市镇、约 100 万人。老城的柱廊是它的形制：市中心约 38 公里的连续拱廊 2021 年列入世界遗产，下雨天可以不打伞穿过半座城，两座斜塔立在老城中央，马焦雷广场是坐标原点；1088 年创办的博洛尼亚大学是世界上连续办学最久的大学，学生让这座城比周围年轻；博洛尼亚中央站是意大利南北与东西高铁的十字路口，马可尼机场有单轨直达车站，肉酱面与火腿是这一带的日常。初来的人最容易犯的错，是把博洛尼亚当作一个换乘站，而它是意大利的美食之都与最老的大学城。",
     layout:
       "博洛尼亚老城以两座斜塔（阿西内利塔和加里森达塔）为地标，全城连拱廊总长约 62 公里（历史中心区约 42 公里）是它最独特的城市景观，几乎可以在雨天不打伞走遍全城；2021 年其中 12 段最具代表性的拱廊列入世界遗产。马焦雷广场是市中心核心，圣白托略圣殿在广场南侧。老城因大量红砖建筑被称为“红色之城”。",
     gettingAround:
@@ -4326,6 +4362,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bari: {
     identity:
       "巴里在意大利东南部普利亚大区、亚得里亚海边，都会区约 75 万人，是普利亚大区首府，也是意大利通往希腊、阿尔巴尼亚等巴尔干国家的重要渡轮港口。城市以圣尼古拉（Santa Claus 原型圣人之一）的圣髑安放地闻名，老城是一片保存完好的白色石灰岩巷弄。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bari (comune 117.4 km²; ~316,000; municipi; Metropolitan City of Bari ~1.2 million; Apulia capital; Bari Vecchia peninsula with San Nicola; Murat grid 19th c.; lungomare; ferries to Greece/Albania/Montenegro; airport; Fiera del Levante)
+    howItWorks:
+      "巴里是普利亚大区的首府，由市长和市议会治理；市域约 117 平方公里，人口约 32 万，而取代省而设的巴里大都会市有 41 个市镇、约 120 万人。城市分两片：伸进亚得里亚海的半岛上是老城巴里维基亚，圣尼古拉大教堂与诺曼—施瓦本城堡在里面，1087 年圣尼古拉的圣髑从米拉运到这里，手擀耳朵面的街巷是它的日常；老城以南是 19 世纪的穆拉特新区，方格街道与商业街在这里，海滨大道沿海岸展开；港口有开往希腊、阿尔巴尼亚与黑山的渡轮，机场在城西，东方博览会每年秋天举行。初来的人最容易犯的错，是把巴里当作去阿尔贝罗贝洛或马泰拉的中转站，而它是意大利南方大陆最重要的经济中心之一。",
     layout:
       "巴里老城（Bari Vecchia）建在一个伸入海中的小半岛上，街道狭窄曲折像迷宫，圣尼古拉圣殿和主教座堂都在这里。新城区呈规整网格，19 世纪按当时的规划理念建造，与老城形成鲜明对比。城市往内陆是普利亚典型的橄榄园平原，往北是阿尔塔穆尔杰石灰岩台地，往北再远一些是加尔加诺半岛。",
     gettingAround:
@@ -4341,6 +4380,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   palermo: {
     identity:
       "巴勒莫是西西里岛首府，位于岛屿西北岸的一个海湾边，都会区约 130 万人，历史上先后被腓尼基人、希腊人、罗马人、阿拉伯人、诺曼人统治，建筑和文化因此融合了地中海多种传统，诺曼-阿拉伯风格的宫殿和教堂是巴勒莫最独特的标志，已列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Palermo (comune 161 km²; 626,273 2026; 8 circoscrizioni; Metropolitan City of Palermo ~1.2 million; capital of the autonomous Sicilian Region with its own parliament; Arab-Norman UNESCO 2015 with Monreale and Cefalù in other comuni; Quattro Canti; Ballarò/Vucciria/Capo markets; Mondello in comune; Punta Raisi airport ~35 km)
+    howItWorks:
+      "巴勒莫是西西里大区的首府，西西里是意大利的自治大区，有自己的议会与立法权；市镇由市长和市议会治理，市下分 8 个区，市域约 161 平方公里，2026 年人口约 63 万，大都会市有 82 个市镇、约 120 万人。城市在一片被山围住的“金色盆地”里，四角场是老城十字街的交点，巴拉罗、乌奇利亚与卡波三个市场至今是阿拉伯式的叫卖，2015 年列入世界遗产的“阿拉伯—诺曼式巴勒莫”包括王宫的帕拉蒂那礼拜堂，但同一项遗产里的蒙雷阿莱大教堂在 8 公里外的另一个市镇，切法卢在更远的海边；蒙德罗的海滩在市域北端，机场在西面 35 公里。初来的人最容易犯的错，是以为蒙雷阿莱在巴勒莫城里，而它是山上的另一座市镇。",
     layout:
       "巴勒莫老城核心是四个角（Quattro Canti）路口，四条主街在此交汇，划出四个历史街区。诺曼王宫、巴拉丁礼拜堂（拜占庭马赛克装饰）是城中最重要的古迹。巴勒莫大教堂融合了多个历史时期的建筑风格。城市背靠佩莱格里诺山，面朝一片开阔海湾。",
     gettingAround:
@@ -4356,6 +4398,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   catania: {
     identity:
       "卡塔尼亚在西西里岛东岸，紧挨着欧洲最高的活火山埃特纳，都会区约 78 万人。城市历史上多次被埃特纳火山的熔岩流和地震摧毁又重建，现在的巴洛克风格老城建于 1693 年大地震之后，大量用埃特纳的黑色火山岩建造，因此又被称为“黑色巴洛克之城”，已列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Catania (comune 183 km²; ~297,000; Metropolitan City of Catania 58 comuni ~1.07 million; second city of Sicily; Etna, comune reaches the slopes; Baroque centre rebuilt after 1693, Val di Noto UNESCO 2002; Piazza Duomo elephant; via Etnea; metro 1 line; Fontanarossa busiest in Sicily; university 1434)
+    howItWorks:
+      "卡塔尼亚是西西里的第二大城市，由市长和市议会治理，市域约 183 平方公里，人口约 30 万，大都会市有 58 个市镇、约 107 万人；西西里是自治大区，有自己的议会。城市建在埃特纳火山的东南脚下，市域一直伸到火山的坡上，1669 年的熔岩与 1693 年的地震毁了旧城，之后用黑色火山岩与白石重建，这批巴洛克建筑 2002 年作为“诺托谷晚期巴洛克城镇”列入世界遗产；大教堂广场的象雕是城市的标志，埃特内亚大道从广场笔直向北指向火山，鱼市在广场背后；一条地铁线连起市区，丰塔纳罗萨机场是西西里最繁忙的，1434 年创办的大学是岛上最老的。初来的人最容易犯的错，是把卡塔尼亚当作陶尔米纳的机场，而它是一座三十万人的巴洛克城市。",
     layout:
       "卡塔尼亚老城以主教座堂广场为核心，广场中央的“大象喷泉”（用一座古罗马黑色玄武岩象雕做基座）是城市象征。老城街道用黑色火山岩铺就，建筑立面也常见黑白相间的火山岩装饰。城市西北方向就是埃特纳火山，晴天能看到山顶的烟柱。",
     gettingAround:
@@ -4371,6 +4416,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cagliari: {
     identity:
       "卡利亚里是撒丁岛首府，位于岛屿南岸一个海湾边，都会区约 43 万人，是撒丁岛的政治、经济中心。撒丁岛是地中海最古老的陆块之一，早在史前时期就有独特的努拉吉文明（岛上散布着数千座巨石塔状建筑“努拉吉”，已列入世界遗产候选/部分列入名录），与意大利本土的历史脉络有所不同。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cagliari (comune 85 km²; ~146,000; Metropolitan City of Cagliari ~536,000; capital of the autonomous Sardinian Region; Castello on the hill, Marina, Stampace, Villanova; Poetto ~8 km in comune; port fourth in Italy by cargo; Elmas airport 7 km; Molentargius flamingos)
+    howItWorks:
+      "卡利亚里是撒丁大区的首府，撒丁是意大利的自治大区，有自己的议会与立法权；市镇由市长和市议会治理，市域约 85 平方公里，人口约 15 万，大都会市有 17 个市镇、约 54 万人。城市建在一片石灰岩丘上：卡斯泰洛区在山顶，比萨人筑的城墙与塔楼围着它，玛丽娜、斯坦帕切、维拉诺瓦三个老区在山下向港口铺开；波埃托海滩在城东约 8 公里，仍在市域之内，莫伦塔杰乌斯的盐塘里有火烈鸟；港口是意大利货运量第四的港，埃尔马斯机场在西面 7 公里，撒丁语与意大利语并用。初来的人最容易犯的错，是把卡利亚里当作撒丁岛度假区的门口，而它是一座有自治议会的岛屿首府，度假海岸在几十公里外。",
     layout:
       "卡利亚里老城建在一座俯瞰海湾的山丘上，被称为“城堡区”（Castello），保留着比萨共和国时期（13 世纪）修建的城墙和塔楼。城市脚下是莫尔塔咸水湖，是火烈鸟的栖息地，从老城高处能同时看到海湾、盐湖和城市。",
     gettingAround:
@@ -4387,6 +4435,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   verona: {
     identity:
       "维罗纳在意大利东北部阿迪杰河的河湾里，人口约25.5万（2025年）。公元一世纪建成的维罗纳竞技场是意大利保存最完好的罗马圆形剧场之一，自1913年起每年夏季举办歌剧节；莎士比亚把《罗密欧与朱丽叶》设定在这里，朱丽叶之家的阳台每天挤满游客。老城的百草广场（古罗马广场遗址）、斯卡拉家族的老城堡和圣泽诺大殿代表了从罗马到中世纪的层层历史，2000年整座老城列入世界遗产。加尔达湖在西面约30公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Verona (comune 206 km²; ~255,000; 8 circoscrizioni; Province of Verona, Veneto; Adige bend; Arena with opera festival, 25,000 seats originally; Piazza delle Erbe; UNESCO 2000; Castelvecchio; rail junction Milan–Venice/Brenner, ~68,000 passengers/day; Villafranca airport; Lake Garda ~30 km; Vinitaly)
+    howItWorks:
+      "维罗纳是威尼托大区维罗纳省的省会，由市长和市议会治理，市下分 8 个区；市域约 206 平方公里，人口约 25.5 万。老城在阿迪杰河的一个大河湾里，2000 年整片列入世界遗产：罗马时期的竞技场就在市中心的布拉广场上，如今是夏天的露天歌剧场，草药广场是罗马集市的原址，斯卡拉家族 13 至 14 世纪统治这里，老城堡与桥是他们留下的；莎士比亚把《罗密欧与朱丽叶》放在这座城里，朱丽叶的阳台是后世的附会；火车站是米兰—威尼斯与布伦纳山口两条干线的交点，每天约 6.8 万旅客，机场在西南的维拉弗兰卡，加尔达湖在西面 30 公里，瓦尔波利切拉的酒庄在城北。初来的人最容易犯的错，是把维罗纳当作一处爱情景点，而它是意大利北部的铁路枢纽与葡萄酒之都。",
     layout:
       "老城在阿迪杰河的一个大河湾里，几乎被河三面环绕：布拉广场和竞技场在南端入口，从这里沿马志尼街走到百草广场和领主广场（但丁像、斯卡拉家族墓），朱丽叶之家在百草广场旁的小街上；主教座堂在老城北端，老城堡和斯卡拉桥在西侧河边。河对岸是罗马剧场和圣彼得城堡观景台。圣泽诺大殿在老城西面约1公里。新门火车站在老城南面约1.5公里，机场在西南约10公里。",
     gettingAround:
@@ -4418,6 +4469,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pisa: {
     identity:
       "比萨在托斯卡纳的阿诺河下游，离海约10公里，人口约9.9万（2023年）。奇迹广场上的斜塔（1173–1372年建，因地基下沉倾斜）、主教座堂、洗礼堂和圣墓园1987年列入世界遗产；中世纪的比萨是海上共和国，与热那亚、威尼斯争雄。伽利略出生于此，比萨大学和拿破仑1810年创办的高等师范学校让它成为意大利的学术重镇。比萨机场是托斯卡纳的主要机场之一，很多游客从这里进入托斯卡纳。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pisa (comune 185 km²; ~90,000; Province of Pisa, Tuscany; Piazza dei Miracoli UNESCO 1987 at the north-west edge of the walled city; Arno lungarni; university 1343, Scuola Normale, Sant'Anna, ~50,000 students; Galileo Galilei airport busiest in Tuscany with PisaMover; maritime republic; Florence ~80 km)
+    howItWorks:
+      "比萨是托斯卡纳大区比萨省的省会，由市长和市议会治理；市域约 185 平方公里，人口约 9 万。斜塔、大教堂与洗礼堂并不在市中心，而在城墙西北角的“奇迹广场”上，1987 年列入世界遗产；老城的重心在阿诺河两岸的滨河路与骑士广场，中世纪它是与热那亚、威尼斯并列的海上共和国，1284 年梅洛里亚海战之后衰落；1343 年创办的比萨大学、高等师范学校与圣安娜高等学校让约 5 万学生住在这座 9 万人的城里；伽利略机场是托斯卡纳最繁忙的，有轻轨直达火车站，佛罗伦萨在东面约 80 公里。初来的人最容易犯的错，是把比萨当作一座只有斜塔的镇，而斜塔在城的一角，城本身是一座学生占了一半的大学城。",
     layout:
       "奇迹广场在老城西北角靠城墙，斜塔、主教座堂、洗礼堂、圣墓园都在同一片草坪上；从广场向南穿过老城到骑士广场和博尔戈街，再到阿诺河边的荆棘圣母小教堂和河畔步道。中央火车站在河南岸约1.5公里，机场就在火车站南面约2公里，Pisamover 自动列车5分钟直达。卢卡在东北约20公里，海滩在西面的马里纳迪比萨。",
     gettingAround:
@@ -4432,6 +4486,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   siena: {
     identity:
       "锡耶纳在托斯卡纳中部的丘陵上，人口约5.3万，老城1995年列入世界遗产，是意大利保存最完整的中世纪城市之一。贝壳形的田野广场（Piazza del Campo）是城市的心脏，每年7月2日和8月16日的赛马节（Palio）由城内的17个街区（contrade）在广场上竞赛；曼贾塔高约88米，主教座堂的黑白条纹大理石和镶嵌地板是托斯卡纳哥特的杰作。1472年成立的锡耶纳牧山银行是世界上仍在营业的最古老的银行。老城自1966年起禁止汽车通行。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Siena (comune 118.5 km²; 53,180 2026; Province of Siena, Tuscany; historic centre UNESCO 1995; Piazza del Campo; Palio 2 July/16 August, 17 contrade; cathedral; Torre del Mangia; ZTL; university 1240 ~16,000 students; Monte dei Paschi 1472; Florence ~70 km)
+    howItWorks:
+      "锡耶纳是托斯卡纳大区锡耶纳省的省会，由市长和市议会治理；市域约 118 平方公里，2026 年人口约 5.3 万。老城建在三道山脊上，1995 年列入世界遗产，扇形的坎波广场是它的心脏，市政厅的曼贾塔在广场一角；城市在行政区之下还有一层：17 个“contrada”是中世纪留下的街区自治体，各有自己的旗帜、教堂与博物馆，每年 7 月 2 日与 8 月 16 日其中十个在广场上赛马，即帕里奥赛马节，本地人一生属于出生的那个 contrada；老城划为限行区，1240 年创办的大学约 1.6 万学生，1472 年成立的西雅那银行是世界上仍在营业的最老银行之一，佛罗伦萨在北面约 70 公里。初来的人最容易犯的错，是把帕里奥当作一场表演给游客看的比赛，而它是本地街区之间一年一度的正经较量。",
     layout:
       "老城建在三条山脊上，田野广场在三条山脊交汇的洼地，市政厅和曼贾塔在广场南侧；主教座堂在西面山脊的最高处，旁边是主教座堂博物馆和圣母医院；圣多明我教堂在西北山脊，卡莫利亚门在北端。主街从卡莫利亚门经田野广场到南面的罗马门。火车站在老城北面约2公里的山下（有自动扶梯上山），长途巴士站在老城北缘的格拉姆西广场。基安蒂酒乡在北面，蒙塔尔奇诺、皮恩扎、瓦尔多尔恰在南面。",
     gettingAround:
@@ -4446,6 +4503,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   matera: {
     identity:
       "马泰拉在意大利南部巴西利卡塔大区的石灰岩高地上，人口约6万。它以“石窟民居”（Sassi）闻名——在格拉维纳峡谷崖壁上凿出的洞穴住宅层层叠叠，有人居住的历史可追溯到史前，被认为是世界上持续有人居住最久的聚落之一。1950年代因贫困和卫生问题，政府把居民迁出石窟区，1986年立法允许修复回迁；1993年石窟区和周围的岩洞教堂公园列入世界遗产，2019年马泰拉是欧洲文化之都。峡谷对岸的穆尔贾高原上有约150座岩洞教堂，这里也是《基督受难》等电影的取景地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matera (comune 392 km²; ~60,400; Province of Matera, Basilicata; Sassi cave districts UNESCO 1993, evacuated 1950s–70s, reoccupation law 1986; Civita; modern town on the plateau; Gravina ravine, Murgia park; ECoC 2019; Bari ~60 km with airport; FAL narrow-gauge rail)
+    howItWorks:
+      "马泰拉是巴西利卡塔大区马泰拉省的省会，由市长和市议会治理；市域约 392 平方公里，人口约 6 万。人们心中的马泰拉是“萨西”——凿在峡谷石灰岩壁上的两片洞穴街区，从公元前八千年起就有人住，是世界上连续居住时间最长的聚落之一，1993 年列入世界遗产；1950 至 70 年代政府把居民整体迁出萨西，称其为“意大利的耻辱”，1986 年的一部法律又开启了修复与重新入住，如今那里是旅馆与餐厅；今天的市政府、学校与大多数居民在台地上的新城里，格拉维纳峡谷与穆尔贾公园在萨西的对面；2019 年它是欧洲文化之都，巴里与机场在东北约 60 公里。初来的人最容易犯的错，是把萨西当作马泰拉，而它是老城的一半，市民的日常在台地上的新城。",
     layout:
       "石窟区分为北面的巴里萨诺（Sasso Barisano）和南面的卡韦奥索（Sasso Caveoso），两者之间的高地上是主教座堂所在的奇维塔区；石窟区沿峡谷西壁自上而下分布，最下面是格拉维纳河。十九世纪以后的新城在石窟区西面的台地上，维托里奥·威尼托广场是新城与石窟区的交界，中央火车站（FAL 窄轨）在新城北面。峡谷对岸是穆尔贾高原（观景台和岩洞教堂），从卡韦奥索有步道和吊桥可过。",
     gettingAround:
@@ -4460,6 +4520,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   trieste: {
     identity:
       "的里雅斯特在意大利东北角的亚得里亚海边，是弗留利-威尼斯朱利亚大区的首府，人口约19.9万（2025年）。它从1382年到1918年属哈布斯堡王朝，是奥匈帝国最重要的港口和第四大城市，市中心的新古典建筑、咖啡馆文化和面朝大海的意大利统一广场（欧洲最大的临海广场之一）都带着中欧气质；詹姆斯·乔伊斯1904–1915年在此写作，本地作家斯韦沃与他相交。米拉马雷城堡（1856–1860年）立在城北的海岬上。的里雅斯特是意大利的咖啡之港，秋季的巴尔科拉纳帆船赛是世界规模最大的帆船赛之一；冬季的布拉风可达140公里/小时。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trieste (comune 84 km²; ~198,700 2025; capital of the autonomous Friuli-Venezia Giulia region; Habsburg port until 1918, fourth city of Austria-Hungary; Piazza Unità on the sea; Canal Grande; Miramare ~8 km; Karst plateau; Slovenia ~5 km; Slovene community; bora; largest Italian port by tonnage; free port; ICTP/SISSA; Ronchi airport ~30 km)
+    howItWorks:
+      "的里雅斯特是弗留利—威尼斯朱利亚大区的首府，这是意大利五个自治大区之一，有自己的立法权；市镇由市长和市议会治理，市域约 84 平方公里，2025 年人口约 20 万。1382 至 1918 年它属于哈布斯堡王朝，是奥匈帝国的主要出海口与第四大城市，市中心的统一广场三面是帝国时期的宫殿、一面朝海，运河、咖啡馆与文学传统都是那个时代留下的；卡尔斯特高原从城背后升起，斯洛文尼亚边境在 5 公里外，斯洛文尼亚族是本地的少数民族，冬天的“布拉风”能吹到每小时百公里以上；港口按吨位是意大利最大的，仍保有自由港地位，米拉马雷城堡在西北 8 公里，国际理论物理中心等研究机构让它成为科研城，机场在西北 30 公里。初来的人最容易犯的错，是按意大利的印象来想象的里雅斯特，而它的建筑、咖啡与口音都带着中欧的底子。",
     layout:
       "市中心围绕意大利统一广场和大运河（博尔戈·特雷西诺区，圣安东尼教堂和塞尔维亚东正教堂）在海边的平地上，圣朱斯托山在市中心背后，山顶有城堡、主教座堂和罗马遗迹。中央火车站在市中心北面，港口在南北两侧。米拉马雷城堡在北面约8公里的海岸，沿海大道有电车和步道。喀斯特高原在城市背后，巨人洞在北面约10公里，奥皮奇纳有观景台。机场在西北约40公里的隆基。",
     gettingAround:
@@ -8602,6 +8665,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kota-bharu": {
     identity:
       "哥打巴鲁是吉兰丹州首府，人口约49万，坐落于吉兰丹河口，是马来西亚东北部马来传统文化保存最完整的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kota Bharu (capital of Kelantan; MPKB-BRI "Islamic City" municipal council, appointed like all Malaysian councils since 1976; ~569,000 2022 district; founded 1844; Kelantan River; Siti Khadijah market; Istana Jahar; Kelantanese dialect; Sultan Ismail Petra airport; Thai border ~40 km; Pantai Cahaya Bulan ~10 km)
+    howItWorks:
+      "哥打巴鲁是吉兰丹州的首府，由哥打巴鲁市政局管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选；县域 2022 年人口约 57 万，九成以上是马来人，穆斯林占绝大多数。城市 1844 年由苏丹建为新的州府，名字就是“新城”的意思，市中心在吉兰丹河东岸，司提卡迪嘉市场是全马最大的、几乎全由女性经营的市场，扎哈宫与州博物馆在旁边，2005 年州政府把它定位为“伊斯兰城”；吉兰丹方言与半岛其他地方的马来语差别很大，本地人自己听得懂；机场在城郊，泰国边境在西北约 40 公里，月光海滩在东北 10 公里。初来的人最容易犯的错，是按吉隆坡的印象来预期这里的作息，而这座城的节奏与规矩由本地的宗教与传统定。",
     layout:
       "市中心以中央市场为核心，周边分布传统手工艺作坊与蜡染纺织工坊，吉兰丹河沿岸保留渔村聚落。",
     gettingAround:
@@ -8616,6 +8682,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kuantan: {
     identity:
       "关丹是彭亨州首府，人口约61万，坐落于彭亨河口，是马来半岛东岸重要的港口城市与探索彭亨河流域的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuantan (capital of Pahang, largest state in Peninsular Malaysia; Kuantan City Council MBK, city status 2021, appointed; 548,014 2020; capital moved from Kuala Lipis 1955; Teluk Cempedak ~5 km; Sungai Lembing; Cherating ~45 km; ECER; Gebeng petrochemicals; Sultan Ahmad Shah airport; ECRL expected 2027; royal town Pekan)
+    howItWorks:
+      "关丹是彭亨州的首府，马来西亚半岛最大州的行政中心，2021 年获得城市地位，由关丹市政厅管辖，市长与议员由州政府任命；市域约 324 平方公里，2020 年人口约 55 万。1955 年州府从内陆的瓜拉立卑迁到这里，市中心在关丹河口，皇城仍在南面 50 公里的北根——苏丹的王宫在那里；直落尖不辣海滩在城东 5 公里，是市民的海滩，双溪灵明的旧锡矿在西面山里，浮罗地不佬在北面 45 公里；格宾的石化工业区、关丹港与东海岸经济特区是它的经济支柱，机场在城郊，东海岸铁路预计 2027 年通车。初来的人最容易犯的错，是把关丹当作彭亨的王城，而王室在北根，关丹只是行政与商业中心。",
     layout:
       "市中心沿彭亨河口两岸分布，德立海滩是本地知名的休闲海滩，河口渔村保留传统渔业生活方式。",
     gettingAround:
@@ -8630,6 +8699,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sandakan: {
     identity:
       "山打根是沙巴州东海岸港口城市，人口约44万，20世纪初曾是英属北婆罗洲首府，是探索京那巴当岸河的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sandakan (Sabah; municipal council, appointed; 439,050 2020 district; capital of British North Borneo until 1946, destroyed in WWII; "Little Hong Kong"; Sandakan Bay; Agnes Keith house; Puu Jih Shih; Sepilok ~25 km; Kinabatangan ~100 km; Turtle Islands by boat; airport; palm oil)
+    howItWorks:
+      "山打根是沙巴的第二大城市，由山打根市议会管辖，议员由州政府任命；县域 2020 年人口约 44 万。1884 至 1946 年它是英属北婆罗洲的首府，香港来的华人移民让它有“小香港”之称，二战的轰炸把整座城夷平，战后首府迁到了亚庇，山打根按新规划重建；今天它是棕榈油与木材的出港口，海湾边的市区不大，普济寺在山上，作家艾格尼丝·基思的故居是英治时期的遗存；西比洛的红毛猩猩保护中心在西面 25 公里，京那巴当岸河在南面约 100 公里，海龟岛要坐船，机场在城郊。初来的人最容易犯的错，是把山打根当作看野生动物的地方，而动物在几十到上百公里外的保护区，城本身是一座港口。",
     layout:
       "市中心沿海湾分布，山打根中央市场是本地知名的海鲜与农产品交易场所，市郊分布多处历史遗迹与自然保护区。",
     gettingAround:
@@ -8644,6 +8716,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   miri: {
     identity:
       "美里是砂拉越州东北部港口城市，人口约30万，是探索姆鲁山国家公园与尼亚洞穴的核心门户，也是马来西亚石油工业的发源地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Miri (Sarawak; Miri City Council, city status 2005 — first non-state-capital city in Malaysia; ~248,900 2020; first oil well 1910 "Grand Old Lady" on Canada Hill; Shell/Petronas; Niah ~110 km; Mulu by flight; Lambir ~30 km; Brunei border ~30 km; airport; second city of Sarawak)
+    howItWorks:
+      "美里是砂拉越的第二大城市，2005 年成为马来西亚第一个非州府的城市，由美里市政厅管辖，市长与议员由州政府任命；2020 年人口约 25 万。1910 年壳牌在加拿大山上钻出马来西亚第一口油井，那口井至今立在山顶，称“老奶奶”，石油与天然气从此定义了这座城，壳牌与国油的办公楼在市区；姆鲁国家公园要坐飞机进去，尼亚洞在西南 110 公里，蓝卑尔山在南面 30 公里，文莱边境在东北 30 公里，机场在城郊。华人、伊班人与马来人是主要的人口构成。初来的人最容易犯的错，是把美里当作去姆鲁的中转站，而它是砂拉越的石油之都，姆鲁只能飞进去。",
     layout:
       "市中心沿海岸线分布，加拿大山油井是马来西亚第一口油井旧址，如今辟为纪念公园，城市周边分布有多处石油工业遗迹。",
     gettingAround:
@@ -8658,6 +8733,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "langkawi-city": {
     identity:
       "瓜镇是浮罗交怡群岛的主要市镇，人口约2.7万，坐落于浮罗交怡岛东南岸，是探索浮罗交怡地质公园的门户市镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Langkawi (archipelago of 99 islands, Kedah; district/municipal council appointed; ~94,000 2020, ~65,000 on the main island; duty-free since 1987; Kuah town (jetty, district office) vs Pantai Cenang; airport at Padang Matsirat; cable car/Sky Bridge; UNESCO Global Geopark 2007; ferries Kuala Perlis/Kuala Kedah/Penang)
+    howItWorks:
+      "浮罗交怡是吉打州西北海上的 99 座岛组成的群岛，主岛南北约 25 公里，由浮罗交怡市议会管辖，议员由州政府任命；2020 年全岛约 9.4 万人，其中约 6.5 万在主岛，九成是马来人。1987 年起全岛免税，这是它的经济基础；瓜镇在东南角，是县政府、渡轮码头与本地人购物的地方，珍南海滩在西南角，是游客的旅馆带，两者相距约 20 公里；机场在中部的巴东马硕，东方村的缆车通往马西琅山顶的天空之桥，2007 年整片群岛成为联合国教科文组织的世界地质公园，渡轮从瓜拉玻璃市、瓜拉吉打与槟城开来。初来的人最容易犯的错，是把瓜镇当作度假区，而海滩在岛的另一头，没有车寸步难行。",
     layout:
       "瓜镇码头区是岛上主要的商业与渡轮枢纽，周边分布免税购物区，岛屿内陆则是地质公园的喀斯特与雨林景观。",
     gettingAround:
@@ -8674,6 +8752,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   putrajaya: {
     identity:
       "布城是马来西亚的联邦行政中心，在吉隆坡以南约25公里，1995年开始规划建设，1999年联邦政府从吉隆坡迁来，2001年成为联邦直辖区，人口约12万（2024年）。整座城市围绕人工湖布城湖布局，38%的面积是绿地：粉红色的布特拉清真寺和首相署、造型各异的桥梁（斯里瓦瓦桑桥等）、“铁清真寺”和湿地公园是它的看点。布城是有意规划的花园城市与智慧城市，白天是政府办公区，傍晚和周末市民来湖边散步骑行；每年有热气球节。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Putrajaya (Federal Territory since 2001, ~49 km²; ~119,700 2024; planned federal administrative capital, government moved from KL from 1999; Putrajaya Corporation, not an elected council; 20 precincts; Perdana Putra, Palace of Justice; Putrajaya Lake; ~25 km south of KL; KLIA Transit and MRT Putrajaya line; parliament and the King remain in KL)
+    howItWorks:
+      "布城是马来西亚 2001 年设立的第三个联邦直辖区，约 49 平方公里，2024 年人口约 12 万，绝大多数是公务员与家属。它不是自然长出来的城市，而是 1995 年动工、1999 年起把首相署与各部委从吉隆坡整体迁来的行政首都；管理它的是布城机构（Putrajaya Corporation），不是民选议会，全城按 20 个“分区”规划，首相署的绿顶建筑在人工湖畔的高地上，司法宫在另一端，布城清真寺与广场在中间，湖与桥是规划的骨架。宪法上的首都仍是吉隆坡，国会与国家元首都在那里；机场快线与地铁把它与吉隆坡、机场连起来，赛城在隔壁的雪兰莪州。初来的人最容易犯的错，是把布城当作首都，而它只是政府办公的地方，国会在 25 公里外的吉隆坡。",
     layout:
       "城市在布城湖周围的丘陵上，分成若干区（Presint）：核心区在湖北岸的高地，布特拉广场周围是布特拉清真寺、首相署和主要部委，布特拉大道向南延伸；铁清真寺和司法宫在核心区南侧；湖上有多座造型桥连接各区。湿地公园在城北的湖上游，植物园在核心区东侧。布城中央站（KLIA Transit 和 MRT）在城西南，机场在南面约25公里。",
     gettingAround:
@@ -8688,6 +8769,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "cameron-highlands": {
     identity:
       "金马仑高原在马来西亚中部的蒂迪旺沙山脉上，海拔800–1600米，吉隆坡以北约200公里，是英国殖民时期开辟的避暑山庄（1885年由测绘师威廉·卡梅伦勘察，1930年代开发），全区人口约4.4万。这里全年气温约18℃，是马来西亚最大的茶叶产区——BOH 茶园1929年创立——也是草莓、蔬菜和花卉的产地；布林昌山（2031米）顶上的苔藓森林是云雾中的高山雨林。丹那拉打和碧兰璋是两个主要的镇子，殖民时期的都铎式建筑和下午茶传统仍在。1967年泰国丝绸大王吉姆·汤普森在此失踪。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cameron Highlands (district of Pahang, 712 km²; ~40,000; district council appointed; named after William Cameron 1885, British hill station from the 1930s; Tanah Rata administrative, Brinchang, Ringlet; 800–1,603 m; BOH tea, strawberries, vegetables; Orang Asli; ~71% forested; roads from Tapah/Simpang Pulai/Gua Musang; no rail or airport)
+    howItWorks:
+      "金马仑高原是彭亨州的一个县，约 712 平方公里，人口约 4 万，由县议会管辖，议员由州政府任命；名字来自 1885 年勘测这一带的苏格兰人威廉·卡梅伦，1930 年代英国人把它建成避暑高原。它不是一座镇，而是海拔 800 到 1,600 米之间沿公路串起的一串聚落：丹那拉打是县政府与学校所在，碧兰璋是最大的商业镇，林伦是南端的入口；BOH 的茶园、草莓园与蔬菜农场铺在山坡上，供应半个马来西亚的高地蔬菜，原住民村落散在林中，约七成的县域仍是森林；从怡保方向的双溪毛糯与丹那拉打各有一条盘山公路，没有铁路也没有机场，吉隆坡在南面约 200 公里。初来的人最容易犯的错，是把金马仑当作一个地点，而它是一条几十公里长的公路沿线，镇与镇之间要开半小时。",
     layout:
       "高原沿一条山路展开：从南面的冷力（Ringlet）上来，先到丹那拉打（行政中心，酒店、餐馆、旅行社集中，步道起点），再往北约5公里是碧兰璋（市集、草莓园），碧兰璋北面是双溪帕拉斯的 BOH 茶园和布林昌山的上山路（苔藓森林在山顶附近），继续向北是甘榜拉惹和更多菜园。冷力附近的湖边有 BOH 的另一处茶园。",
     gettingAround:
@@ -8702,6 +8786,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   taiping: {
     identity:
       "太平在马来西亚霹雳州北部，是马来西亚最多雨的城镇（年降水约3200毫米），人口约24.5万（2013年）。十九世纪它因拉律锡矿而兴起，1874年后是霹雳的首府，留下了马来西亚的一串“第一”：1880年的太平湖公园是马来西亚第一座公园，1886年的霹雳博物馆是最早的博物馆，1885年通车的太平—威德港铁路是第一条铁路，拉律山（麦斯威尔山）是最早的山间避暑地，太平动物园是最早的动物园。湖公园里的雨树垂枝拂水是它最有名的画面。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Taiping (Perak, Larut district; municipal council appointed; ~245,000; capital of Perak 1876–1937 before Ipoh; Lake Gardens 1880, first public garden; wettest in Peninsular Malaysia ~3,200 mm; Perak Museum 1886 oldest; first railway 1885 to Port Weld; Maxwell Hill; Larut wars/tin; Ipoh ~48 km)
+    howItWorks:
+      "太平是霹雳州拉律县的一座镇，由太平市议会管辖，议员由州政府任命；人口约 24.5 万，华人约占四成六。1876 至 1937 年它是霹雳的州府，之后让位给怡保；锡矿带来的移民与 1860 年代的拉律械斗是它的开端，“太平”这个名字就是械斗平息后取的。它保留了一串“马来西亚第一”：1880 年的太平湖公园是第一座公共花园，1886 年的霹雳博物馆是第一座博物馆，1885 年到十八丁港的铁路是第一条铁路；年降水约 3,200 毫米，是半岛最多雨的地方，太平山（麦斯威尔山）在城背后，怡保在南面约 48 公里。初来的人最容易犯的错，是把太平当作一座旅游小镇，而它是霹雳的旧州府，那些“第一”都是行政中心时代留下的。",
     layout:
       "老城在铁路以东的规整街区里，旧市场、钟楼、圣公会教堂和殖民时期店屋集中在这里；太平湖公园在老城东侧，由废弃的锡矿坑改成，动物园在湖公园东北角；拉律山的上山路在动物园旁，山顶约1000米，靠四驱吉普上山。霹雳博物馆在老城北面。十八丁（旧威德港）在西面约15公里的海边，有红树林、炭窑和萤火虫。",
     gettingAround:
@@ -8716,6 +8803,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "alor-setar": {
     identity:
       "亚罗士打是马来西亚吉打州的首府，在半岛西北部的稻田平原上，人口约41.8万（2020年），是马来西亚第二古老的州首府。吉打是“马来西亚的米仓”，城外是一望无际的稻田，稻米博物馆有360度的稻田壁画；1912年建成的扎希尔清真寺是马来西亚最美的清真寺之一，1735年的大会堂是苏丹王朝的礼仪厅，165.5米的亚罗士打塔是马来西亚第三高的塔。前首相马哈蒂尔出生于此，故居开放参观。去兰卡威的渡轮从西面约15公里的瓜拉吉打出发。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alor Setar (capital of Kedah; MBAS city council, city status 2003, appointed; ~417,800 2020 district; founded 1735; Zahir Mosque 1915; Alor Setar Tower; Balai Besar; Pekan Rabu; Kedah rice plains; birthplace of two prime ministers; Sultan Abdul Halim airport; Thai border ~50 km; Kuala Kedah ferry to Langkawi 12 km; KL ~430 km)
+    howItWorks:
+      "亚罗士打是吉打州的首府，2003 年获得城市地位，由亚罗士打市政厅管辖，市长与议员由州政府任命；县域 2020 年人口约 42 万。城市 1735 年由苏丹建立，名字取自河边的一种树，市中心是一片王城格局：大礼堂、皇家音乐亭与 1915 年落成的查希尔清真寺围着广场，星期三市集是老市场，吉打塔在旁边；四周是马来西亚最大的稻田平原，“马来西亚的米仓”指的就是这里，两位首相出生在这座城；机场在城郊，泰国边境在北面约 50 公里，瓜拉吉打的渡轮码头在西面 12 公里，通往浮罗交怡，吉隆坡在南面约 430 公里。初来的人最容易犯的错，是把亚罗士打当作去浮罗交怡的中转站，而它是一个州的首府，四周的稻田养着半个国家。",
     layout:
       "市中心在吉打河边，扎希尔清真寺、大会堂、皇家博物馆和大钟楼在同一片皇家广场周围，亚罗士打塔在旁边，星期三市集（Pekan Rabu）在市中心；马哈蒂尔故居在市区南面的西港路。稻米博物馆在城北约5公里的稻田里，古农杰莱山在东面约15公里。火车站在市中心南侧，机场在北面约15公里，瓜拉吉打码头在西面约15公里。",
     gettingAround:
@@ -8730,6 +8820,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   semporna: {
     identity:
       "仙本那在马来西亚沙巴州东南岸的苏禄海边，人口约3.5万（2010年），是世界级潜水地西巴丹岛（距镇约36公里）和马布岛、卡帕莱岛的门户；敦沙卡兰海洋公园（2004年设立）的珍珠岛火山口是网红观景点。这里的巴瑶族海上人（Bajau Laut）世代住在船上和海上高脚屋，每年4月的雷帕帆船节展示他们的彩帆；仙本那也是马来西亚唯一说查瓦卡诺语（源自菲律宾）的社区所在地。镇上以海鲜和珍珠养殖闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Semporna (town and district in eastern Sabah; district council appointed; ~140,000 district 2020; Bajau Laut stilt villages; gateway to Sipadan (permits, day trips only), Mabul, Kapalai, Tun Sakaran Marine Park; Chavacano-speaking Moro refugee community; Tawau airport ~100 km; ESSZONE security area — check current travel advisories)
+    howItWorks:
+      "仙本那是沙巴东海岸的一个镇与县，由县议会管辖，议员由州政府任命；县域 2020 年人口约 14 万，巴瑶族是主要族群，还有苏禄人、菲律宾人与客家华人，是马来西亚唯一有查瓦卡诺语社群的地方。镇子本身很小，一条海边的街与水上木屋村，海鲜市场是它的中心；它是潜水的出发港：西巴丹岛在东南 36 公里，每天限量发放许可、只能当天往返，马布岛与卡帕莱的水上屋在附近，敦沙卡兰海洋公园的博安波岛在北面；最近的机场在斗湖，约 100 公里。这一带属于沙巴东海岸安全区，出行前应查最新的旅行提示。初来的人最容易犯的错，是以为可以住在西巴丹岛上，而岛上不许过夜，潜水者住在马布或镇上。",
     layout:
       "镇子在一个小半岛上，码头区是中心，潜店、旅馆和海鲜餐馆集中在海边；海上的木屋村在镇边。马布岛和卡帕莱岛在南面约40分钟船程，西巴丹在马布岛再往南，是海洋公园、不能住宿；敦沙卡兰海洋公园（珍珠岛、曼达布安岛）在东北约30–45分钟船程。斗湖在西面约100公里，机场在斗湖。",
     gettingAround:
@@ -8744,6 +8837,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sibu: {
     identity:
       "诗巫在马来西亚砂拉越州中部的拉让江（马来西亚最长的河）与伊干河汇合处，离海约60公里，人口约16万（2010年）。1901年福州人黄乃裳带领移民在此垦殖，诗巫因此成为“新福州”，福州话、光饼和干盘面（kampua mee）是城市的印记；1928年大火后幸存的大伯公庙和七层宝塔是地标，天鹅像是城市象征，中央市场是砂拉越最大的市场。从诗巫沿拉让江坐快艇可到加帛、峇拉加的内陆长屋区，7月的婆罗洲文化节在市镇广场举行。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sibu (Sarawak; municipal council appointed; ~300,000 2020; Rajang River ~60 km from the sea, express boats to Kapit; Foochow settlers under Wong Nai Siong 1901, Chinese 52.1%, largely Christian; Tua Pek Kong pagoda; Central Market; timber and 40 shipyards; airport 1994; swan symbol)
+    howItWorks:
+      "诗巫是砂拉越的第三大城市，由诗巫市议会管辖，议员由州政府任命；2020 年人口约 30 万，华人约占一半，且多为基督徒——这在马来西亚的城市里少见。1901 年黄乃裳带着一千多名福州移民来此垦荒，福州话与福州面至今是本地的日常，天鹅是城市的象征。城市在拉让江边，离海约 60 公里，江是砂拉越最长的河，快艇从这里溯江开往加帕，伊班人的长屋散在上游；中央市场是马来西亚最大的原住民市集，永安亭大伯公庙的宝塔在江边；木材加工与四十多家造船厂是它的产业，机场 1994 年启用。初来的人最容易犯的错，是把诗巫当作一座沿海城市，而它在内河上，出海要顺江走一整天。",
     layout:
       "市镇在拉让江北岸，江边是快艇码头、大伯公庙和七层宝塔、中央市场，市镇广场和天鹅像在江边的主街上，老街的店屋在码头后面。诗巫机场在东南约23公里。巴旺阿山的伊班长屋在江下游约40公里，加帛在上游约140公里（快艇约3小时）。",
     gettingAround:
