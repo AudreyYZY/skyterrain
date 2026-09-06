@@ -5424,13 +5424,9 @@ export const ROUTE_NARRATION: Record<
   "can-syd": {
     study: {
     "zh-CN":
-      "广州飞悉尼，向东南跨越南海、菲律宾群岛与珊瑚海，最终抵达澳大利亚东南沿岸。起飞后先进入南海，随后掠过菲律宾南部的阿波山——菲律宾第一高峰，海拔约2954米，是一座休眠层状火山，山体覆盖热带雨林，栖息着国鸟菲律宾雕。" +
-      "越过菲律宾群岛后，飞机进入珊瑚海：西南太平洋一片以珊瑚礁密布著称的边缘海，大堡礁便延伸至此海域的西侧，是全球面积最大的珊瑚礁系统。飞机继续南下，掠过澳大利亚东南昆士兰海岸的玻璃屋山——一组由古火山颈风化残余形成的孤立岩峰，因18世纪航海家詹姆斯·库克远眺形似当时的玻璃熔炉而得名。" +
-      "飞机最终降落在悉尼——澳大利亚人口最多的城市，坐落在杰克逊港畔。一趟航班，跨越了大半个西太平洋。",
+      "广州飞悉尼，一路向东南跨过整个西太平洋，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——这片半封闭的边缘海平均水深超过一千米，中部有深达四千多米的海盆，海面上常见成串的岛礁与浅滩。航线继续南下，掠过菲律宾棉兰老岛上的阿波山，这座海拔约2954米的层状火山是菲律宾最高峰，山顶常年云遮。此后是漫长的越洋段：飞机穿过赤道，跨越印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁与火山岛的白边。夜航时这一段几乎看不到灯光，是全程最安静的一程。再往南进入珊瑚海，这片海的西缘就是大堡礁——世界上最大的珊瑚礁群，晴天时从高空能看到浅水区特有的青绿色。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀后剩下的硬岩芯。最后沿海岸南下，降落在悉尼机场。",
     "en-US":
-      "Guangzhou to Sydney flies south-east across the South China Sea, the Philippine archipelago and the Coral Sea, reaching Australia's south-east coast. After take-off the flight enters the South China Sea, then passes Mount Apo in the southern Philippines — the country's highest peak at about 2,954 metres, a dormant stratovolcano cloaked in tropical rainforest and home to the Philippine eagle, the national bird." +
-      "Beyond the Philippine archipelago the flight enters the Coral Sea, a south-west Pacific marginal sea known for its dense coral reefs — the Great Barrier Reef, the world's largest reef system, extends along its western edge. Continuing south the plane passes the Glass House Mountains on the south-east Queensland coast, a cluster of isolated volcanic plugs left behind by erosion, named by navigator James Cook in the 18th century for their resemblance to the glass furnaces of his time." +
-      "The plane finally lands at Sydney, Australia's most populous city, on the shores of Port Jackson. One flight has crossed most of the western Pacific.",
+      "Guangzhou to Sydney runs south-east across the whole western Pacific and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea averaging more than a thousand metres deep, with a central basin over four thousand metres down and long chains of reefs and shoals breaking its surface. The route continues south past Mount Apo on Mindanao in the Philippines, a stratovolcano of about 2,954 metres and the highest peak in the country, its summit usually under cloud. Then comes the long oceanic stretch: the aircraft crosses the equator and passes the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional white rim of an atoll or volcanic island. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south lies the Coral Sea, whose western edge carries the Great Barrier Reef, the largest coral reef system in the world, its shallows showing the distinctive green of reef water on a clear day. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground, the hard cores of vents left standing after more than twenty million years of erosion stripped the softer rock away. The flight then runs south along the coast and lands at Sydney Airport.",
     },
     travel: {
     "zh-CN":
@@ -5470,13 +5466,9 @@ export const ROUTE_NARRATION: Record<
   "pvg-zrh": {
     study: {
     "zh-CN":
-      "上海飞苏黎世，是从长江三角洲一路向西北横跨欧亚大陆，最终抵达阿尔卑斯山北麓的瑞士高原。起飞后先掠过华北平原——黄河下游冲积而成的广阔平原，随后地势抬升，进入蒙古高原南缘的戈壁荒漠，砾漠地貌一直延伸到天际线。" +
-      "继续向西，进入哈萨克丘陵腹地的萨雷阿尔卡草原：一片起伏平缓的干旱草原，是欧亚大草原带的重要组成部分。飞越中亚腹地后，地貌重新过渡为东欧平原的农田与河网。" +
-      "飞机继续向西南，越过中欧的丘陵与谷地，逐渐接近阿尔卑斯山脉北侧——瑞士高原正夹在阿尔卑斯山与汝拉山之间，湖泊与丘陵交错。最终降落在苏黎世机场。从长江口到阿尔卑斯山麓，一趟航班跨越了大半个亚欧大陆。",
+      "上海飞苏黎世，从长江口一路向西北横穿亚欧大陆，终点是阿尔卑斯山北麓的一片高地。起飞后先掠过华北平原，黄河与海河冲积出的这片平原地势极低平，耕地与城镇连成一片，河渠纵横。再往西北进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，河流稀少且多为季节性；这一带昼夜温差极大，几乎没有连续植被，聚落之间常隔上百公里。接着是萨雷阿尔卡草原——哈萨克丘陵上的一片干草原，地势起伏和缓，春季融雪在洼地里积成大量季节性湖泊，是候鸟迁徙路线上的重要中继，湖群已列入世界遗产。再往西草原让位给耕地，河流转为常年有水，村镇开始密集起来。飞越东欧平原后，地势仍旧平缓，直到中欧的丘陵与河谷把地面切得细碎；莱茵河与多瑙河的分水岭就在这一带。最后飞机进入瑞士高原——夹在汝拉山与阿尔卑斯山之间的一条带状低地，瑞士大部分人口和城市都集中在这里，苏黎世湖北端就是苏黎世，飞机降落在城北的苏黎世机场。",
     "en-US":
-      "Shanghai to Zurich flies north-west across Eurasia from the Yangtze Delta, ending on the Swiss Plateau at the northern foot of the Alps. After take-off the flight first crosses the North China Plain, built up by sediment from the lower Yellow River, before climbing onto the southern edge of the Mongolian Plateau, where the gravel desert of the Gobi stretches to the horizon." +
-      "Farther west the route crosses the Saryarka Steppe in the Kazakh Uplands — a broad, gently rolling dry steppe and part of the Eurasian steppe belt. Past the interior of Central Asia, the landscape gives way to the farmland and river network of the East European Plain." +
-      "The plane continues south-west over the hills and valleys of central Europe, approaching the northern side of the Alps — the Swiss Plateau sits between the Alps and the Jura Mountains, a landscape of lakes and low hills. It finally lands at Zurich Airport. From the mouth of the Yangtze to the foot of the Alps, one flight has crossed most of Eurasia.",
+      "Shanghai to Zurich runs north-west from the mouth of the Yangtze across the Eurasian landmass to a plateau on the northern flank of the Alps. After take-off the flight crosses the North China Plain, low and level ground built by the silt of the Yellow and Hai rivers, its farmland and towns running together and threaded with canals. Farther north-west it reaches the Gobi on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon with few and largely seasonal rivers; the daily temperature swing is extreme, no continuous vegetation forms, and settlements can lie a hundred kilometres apart. Next comes the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where the spring melt pools into great numbers of seasonal lakes, an important staging ground on the migratory bird routes, with the lake systems inscribed as World Heritage. Farther west the steppe gives way to cultivated land, rivers begin to run year-round, and villages and towns grow dense. Beyond the East European Plain the ground stays gentle until the hills and valleys of central Europe break it up; the watershed between the Rhine and the Danube lies along here. The aircraft finally enters the Swiss Plateau, a belt of lower ground caught between the Jura and the Alps where most of the country's people and cities are concentrated, with Zurich at the northern end of its lake, and lands at Zurich Airport north of the city.",
     },
     travel: {
     "zh-CN":
@@ -5493,13 +5485,9 @@ export const ROUTE_NARRATION: Record<
   "pvg-vie": {
     study: {
     "zh-CN":
-      "上海飞维也纳，航线整体走向与飞苏黎世相近，同样横跨欧亚大陆，但落点更偏中欧腹地的多瑙河沿岸。起飞后先经过华北平原，再进入蒙古高原南缘的戈壁荒漠。" +
-      "继续向西，飞越哈萨克丘陵一带的萨雷阿尔卡草原，之后进入东欧平原，农田与河流交错的地貌一路向西延伸。" +
-      "飞机转向西南，越过喀尔巴阡山脉外缘的丘陵地带，最终进入维也纳盆地——阿尔卑斯山与喀尔巴阡山之间一片由多瑙河冲积形成的低地，维也纳正坐落其间。飞机沿多瑙河进近，降落在维也纳国际机场。",
+      "上海飞维也纳，从长江口向西北横穿亚欧大陆，终点在阿尔卑斯山东端的一片低地。起飞后先掠过华北平原，黄河与海河冲积出的这片平原地势极低平，耕地与城镇连成一片，是中国人口最密集的区域之一。再往西北进入蒙古高原南缘的戈壁，地表以砾石为主，河流稀少且多为季节性；这里昼夜温差极大，夏季地表能到五六十度，冬季又降到零下三四十度，几乎没有连续植被。接着是萨雷阿尔卡草原——哈萨克丘陵上的一片干草原，地势起伏和缓，春季融雪在洼地里积成成千上万个季节性湖泊，是候鸟迁徙路线上的重要中继站，这一带的湖群已列入世界遗产。再往西，草原逐渐让位给耕地，河流开始稳定，聚落密度肉眼可见地上升。飞越东欧平原之后，地势依旧平缓，直到喀尔巴阡山在南面拉出一道弧线。飞机最后进入维也纳盆地，这片低地夹在阿尔卑斯山与喀尔巴阡山之间，多瑙河从中穿过，维也纳就建在河的两岸，飞机降落在城市东南的维也纳国际机场。",
     "en-US":
-      "Shanghai to Vienna follows a track similar to the Zurich flight, also crossing Eurasia, but ends farther into central Europe along the Danube. After take-off the flight first crosses the North China Plain, then climbs onto the southern edge of the Mongolian Plateau and its Gobi desert." +
-      "Farther west it crosses the Saryarka Steppe in the Kazakh Uplands, then enters the East European Plain, where farmland and rivers stretch on toward the west." +
-      "The flight turns south-west, crossing the outer hill country of the Carpathians, and finally enters the Vienna Basin — a lowland built up by the Danube between the Alps and the Carpathians, where Vienna sits. The plane follows the Danube on its final approach, landing at Vienna International Airport.",
+      "Shanghai to Vienna runs north-west from the mouth of the Yangtze across the Eurasian landmass to a lowland at the eastern end of the Alps. After take-off the flight crosses the North China Plain, low and level ground built by the silt of the Yellow and Hai rivers, its farmland and towns running together as one of the most densely settled parts of China. Farther north-west it reaches the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel where rivers are few and largely seasonal; the daily temperature swing is extreme, ground temperatures climbing above 50°C in summer and falling to −30°C or lower in winter, and no continuous vegetation forms. Next comes the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where the spring melt pools into many thousands of seasonal lakes, an important staging ground on the migratory bird routes, and the lake systems here are inscribed as World Heritage. Farther west the steppe gives way to cultivated land, rivers run more reliably, and the density of settlement visibly rises. Beyond the East European Plain the ground stays gentle until the Carpathians draw an arc across the south. The flight finally enters the Vienna Basin, a lowland caught between the Alps and the Carpathians with the Danube running through it and Vienna built on both banks, landing at Vienna International Airport south-east of the city.",
     },
     travel: {
     "zh-CN":
@@ -5535,13 +5523,9 @@ export const ROUTE_NARRATION: Record<
   "pek-osl": {
     study: {
     "zh-CN":
-      "北京飞奥斯陆，向西北横跨亚欧大陆北部，最终抵达斯堪的纳维亚半岛南端。起飞后先掠过蒙古高原南缘的戈壁荒漠，随后进入西西伯利亚平原——地势极其平坦，河网与沼泽密布，是世界上最大的平原之一。" +
-      "继续向西，飞越东欧大陆北部，抵达波罗的海沿岸。跨过波罗的海后，地貌逐渐过渡为斯堪的纳维亚半岛南部的丘陵与湖沼。" +
-      "飞机沿格洛马河河谷一带下降——这条挪威最长的河流由厄斯特达尔向南流入奥斯陆峡湾一带，最终降落在奥斯陆以北的加勒穆恩机场。这条航线2026年恢复运营，是目前中国与挪威之间唯一的直飞航线。",
+      "北京飞奥斯陆，向西北横跨亚欧大陆北部，终点在斯堪的纳维亚半岛南端。起飞后向西北爬升，进入蒙古高原南缘的戈壁，砾石滩铺到天际线；这片荒漠年降水多在两百毫米以下，风把细沙吹走后留下一层坚硬的砾幂，地表看上去像被打磨过。再往北是西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小。鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久；沼泽面积之大，使这一带成为地球上重要的碳汇之一。越过乌拉尔以西之后，飞机接近波罗的海沿岸，海岸线低平、多沙洲与潟湖，冬季部分海湾结冰。最后跨过格洛马河——挪威最长的河流，从山地南流注入海峡，两岸是连片的针叶林与湖泊，飞机降落在奥斯陆以北的加勒穆恩机场。",
     "en-US":
-      "Beijing to Oslo flies north-west across the northern part of Eurasia, ending at the southern tip of the Scandinavian Peninsula. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the West Siberian Plain — remarkably flat and dense with rivers and marshes, one of the largest plains on Earth." +
-      "Farther west the route crosses the northern part of continental Europe, reaching the Baltic coast. Past the Baltic Sea, the landscape shifts to the hills and lake country of southern Scandinavia." +
-      "The plane descends along the Glomma River valley — Norway's longest river, flowing south from Østerdalen toward the Oslo Fjord area — before landing at Gardermoen Airport north of Oslo. This route resumed operation in 2026 and is currently the only nonstop link between China and Norway.",
+      "Beijing to Oslo runs north-west across the northern half of Eurasia to the southern end of the Scandinavian Peninsula. After take-off the aircraft climbs north-west into the Gobi on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon; this desert takes under 200 millimetres of rain in most years, and wind has carried off the fine sand to leave a hard pavement that looks polished from above. Farther north lies the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across with almost no change in elevation. The Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave wide stands of conifer forest standing in water for weeks; the sheer extent of its marshland makes this one of the significant carbon stores on the planet. West of the Urals the flight approaches the Baltic coast, a low shoreline of sandbars and lagoons where some of the bays freeze in winter. It finally crosses the Glomma, the longest river in Norway, running south out of the highlands to the strait between forest and lakes, and lands at Gardermoen Airport north of Oslo.",
     },
     travel: {
     "zh-CN":
@@ -5673,13 +5657,9 @@ export const ROUTE_NARRATION: Record<
   "pek-fco": {
     study: {
     "zh-CN":
-      "北京飞罗马，向西南横穿整个亚欧大陆腹地，最终抵达地中海北岸的亚平宁半岛。起飞后先经过蒙古高原南缘的戈壁荒漠，随后进入中亚腹地——哈萨克丘陵一带的萨雷阿尔卡草原，地势平缓开阔、干旱少雨，是欧亚大草原带的一段。" +
-      "飞越中亚后，飞机掠过里海北部——世界上面积最大的内陆水体，沿岸多为低平的荒漠与半荒漠地貌。继续向西南，进入巴尔干半岛：欧洲东南部一片多山的半岛，地形以褶皱山地与河谷盆地交错为主。" +
-      "越过巴尔干半岛后，飞机进入亚平宁山脉——纵贯意大利半岛全境的褶皱山系，宛如意大利的“脊梁”。飞机沿台伯河谷降落在罗马菲乌米奇诺机场。一趟航班，从亚欧大陆腹地一路飞抵地中海畔的亚平宁半岛。",
+      "北京飞罗马，向西横跨亚欧大陆，终点在地中海中部的意大利半岛。起飞后先进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，河流稀少；这一带干旱少雨，地表几乎没有连续植被，冬季常有强风扬起沙尘。再往西是萨雷阿尔卡草原——哈萨克丘陵上的干草原，地势和缓，春季洼地里积成大量季节性湖泊，是候鸟迁徙的重要中继站。接着飞临里海，这是地球上面积最大的内陆水体，水面低于海平面约二十八米，北浅南深，沿岸多盐沼与三角洲；由于没有出海口，水位随入流与蒸发逐年变化。越过黑海之后进入巴尔干半岛上空，这里以石灰岩为主，喀斯特地貌发育，山脊与谷地大体平行排列，向东南方向延伸。最后飞机跨过亚平宁山脉——纵贯意大利半岛的这条褶皱山系是全境的脊梁，随后下降到台伯河下游平原，降落在罗马西南的菲乌米奇诺机场。",
     "en-US":
-      "Beijing to Rome flies south-west across the interior of Eurasia, ending on the Apennine Peninsula on the Mediterranean's northern shore. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the heart of Central Asia — the Saryarka Steppe of the Kazakh Uplands, a broad, flat, arid landscape that forms part of the wider Eurasian steppe belt." +
-      "Past Central Asia the flight skirts the northern Caspian Sea, the world's largest inland body of water, ringed by low-lying desert and semi-desert. Farther south-west the route enters the Balkan Peninsula, a mountainous peninsula in south-east Europe where folded ranges alternate with river valleys and basins." +
-      "Beyond the Balkans the flight crosses the Apennines, the folded mountain chain that runs the length of the Italian peninsula like a spine. The plane makes its final approach along the Tiber valley and lands at Rome's Fiumicino Airport. One flight has carried the flight from the interior of Eurasia to the Apennine Peninsula on the Mediterranean's shore.",
+      "Beijing to Rome runs west across the Eurasian landmass to the Italian peninsula in the central Mediterranean. After take-off the flight enters the Gobi on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon with few rivers; the country is dry, almost no continuous vegetation forms, and strong winter winds often lift dust off the surface. Farther west lies the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where spring meltwater gathers into great numbers of seasonal lakes, an important staging ground for migratory birds. The route then reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level, shallow in the north and deep in the south, with salt marsh and delta along much of its shore; having no outlet to the ocean, its level shifts from year to year with inflow and evaporation. Beyond the Black Sea the flight crosses the Balkan Peninsula, largely limestone country with well-developed karst, its ridges and valleys running broadly parallel and trending south-east. The aircraft finally crosses the Apennines, the folded range that forms the spine of the Italian peninsula, then descends over the lower Tiber plain to land at Fiumicino Airport south-west of Rome.",
     },
     travel: {
     "zh-CN":
