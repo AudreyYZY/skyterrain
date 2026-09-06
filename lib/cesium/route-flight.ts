@@ -198,6 +198,145 @@ export function buildRouteProgressMap(input: {
   };
 }
 
+// ── 按解说锚点排的进度映射 ────────────────────────────────────────────
+
+/**
+ * 一段锚点连续相同的句子在整段解说里占的时间，前多少比例用来「停下来看」，
+ * 其余用来飞向下一个锚点。取 0.35：讲到某个地方时先停着看一会儿，
+ * 再一边说完这段一边飞过去，正好在下一句开口时到位。
+ */
+const ANCHOR_HOLD_FRAC = 0.35;
+
+/** 限速后抹平速度突变的时间窗（秒）——直接决定加速度上限 */
+const SPEED_SMOOTH_SEC = 3;
+
+export interface AnchoredMapInput {
+  /** 每句话锚在哪个航点（下标），长度 = 句数，单调不减 */
+  anchors: number[];
+  /** 每句话的起始时间（秒），长度 = 句数 */
+  sentenceStartSec: number[];
+  /** 解说总时长（秒） */
+  narrationSec: number;
+  cum: number[];
+  total: number;
+  durationSec: number;
+}
+
+/**
+ * 进度 → 距离，按解说锚点排：讲到某个航点时，镜头正好在那里。
+ *
+ * 这是「文字播报的地方和地图上的位置对不上」的正解 —— 原来镜头位置只由时间
+ * 均匀推进，与解说内容毫无关系，文稿前三成还在讲北京，镜头已经到西伯利亚了。
+ *
+ * 排法：把锚点相同的连续句子合成一「段」，段首镜头必须已经到达该航点，
+ * 段的前 ANCHOR_HOLD_FRAC 停住看，剩下的时间飞向下一段的航点，
+ * 恰好在下一段第一句开口时到位。解说播完后若还有航程，匀速收到终点。
+ */
+export function buildAnchoredProgressMap(
+  input: AnchoredMapInput & { maxAlongSpeed: number },
+): { map: (p: number) => number; reachedTotal: boolean } {
+  const { anchors, sentenceStartSec, narrationSec, cum, total, durationSec, maxAlongSpeed } = input;
+  const n = anchors.length;
+  if (n === 0 || n !== sentenceStartSec.length || durationSec <= 0 || total <= 0) {
+    return { map: (p: number) => clamp(p, 0, 1) * total, reachedTotal: true };
+  }
+
+  // 锚点相同的连续句子合成一段
+  const runs: { anchor: number; tStart: number }[] = [];
+  for (let i = 0; i < n; i++) {
+    if (i === 0 || anchors[i] !== anchors[i - 1]) {
+      runs.push({ anchor: anchors[i]!, tStart: sentenceStartSec[i]! });
+    }
+  }
+
+  const pts: { t: number; d: number }[] = [{ t: 0, d: 0 }];
+  const pushPt = (t: number, d: number) => {
+    const last = pts[pts.length - 1]!;
+    // 时间/距离都不允许回退；同一时刻重复给点则以后者为准
+    const tt = Math.max(last.t, t);
+    const dd = Math.max(last.d, d);
+    if (tt === last.t) last.d = dd;
+    else pts.push({ t: tt, d: dd });
+  };
+
+  for (let i = 0; i < runs.length; i++) {
+    const run = runs[i]!;
+    const tEnd = i + 1 < runs.length ? runs[i + 1]!.tStart : narrationSec;
+    const d = cum[Math.min(run.anchor, cum.length - 1)] ?? 0;
+    pushPt(run.tStart, d);                                        // 到位
+    pushPt(run.tStart + (tEnd - run.tStart) * ANCHOR_HOLD_FRAC, d); // 停着看
+  }
+  pushPt(durationSec, total);
+
+  const idealAt = (t: number): number => {
+    if (t <= 0) return 0;
+    if (t >= durationSec) return total;
+    for (let i = 1; i < pts.length; i++) {
+      const b = pts[i]!;
+      if (t <= b.t) {
+        const a = pts[i - 1]!;
+        if (b.t <= a.t || b.d === a.d) return a.d;
+        return a.d + (b.d - a.d) * easeTrapezoid((t - a.t) / (b.t - a.t));
+      }
+    }
+    return total;
+  };
+
+  // 限速。
+  //
+  // 严格按解说排镜头在物理上是走不通的：解说会在两句之间从一个地方跳到三千公里
+  // 外的另一个地方，照排镜头地速要到每秒几百公里（自检实测最高 460 km/s），
+  // 那不是画面是糊团。这里把速度卡在「不锚定时本来就会达到的峰值」以内 ——
+  // 锚定改的是「什么时候在哪」，不该让镜头飞得更快。
+  //
+  // 代价是文字跳得太急时镜头会落在后面，之后利用停留段追回来。这是有意的取舍：
+  // 宁可短暂不同步，也不要一段糊掉的画面。
+  const SAMPLES = 2000;
+  const dt = durationSec / SAMPLES;
+  const step = Math.max(1, maxAlongSpeed) * dt;
+  const raw = new Float64Array(SAMPLES + 1);
+  for (let i = 1; i <= SAMPLES; i++) {
+    const ideal = idealAt(i * dt);
+    raw[i] = Math.min(Math.max(ideal, raw[i - 1]!), raw[i - 1]! + step);
+  }
+
+  // 限速会把速度削成「顶着上限跑 → 追上理想曲线后戛然而止」的方波，
+  // 加速度因此爆掉（自检实测最高 17 个取景高度/秒²）。用时间窗做滑动平均把
+  // 速度变化摊开；均值滤波不破坏单调性，边界按端值补齐以免把终点拉回来。
+  const hw = Math.max(1, Math.round(SPEED_SMOOTH_SEC / 2 / dt));
+  const table = new Float64Array(SAMPLES + 1);
+  let acc = 0;
+  for (let k = -hw; k <= hw; k++) acc += raw[clamp(k, 0, SAMPLES)]!;
+  const win = 2 * hw + 1;
+  for (let i = 0; i <= SAMPLES; i++) {
+    table[i] = acc / win;
+    acc -= raw[clamp(i - hw, 0, SAMPLES)]!;
+    acc += raw[clamp(i + hw + 1, 0, SAMPLES)]!;
+  }
+  table[0] = 0;
+  for (let i = 1; i <= SAMPLES; i++) if (table[i]! < table[i - 1]!) table[i] = table[i - 1]!;
+
+  // 滑动平均会把终点略微拉回来。差得少就整体按比例拉满（单调性与平滑性都不破坏，
+  // 距离只被拉伸千分之几）；差得多说明限速下本来就飞不完，交给上层延长时长。
+  const shortfall = total - table[SAMPLES]!;
+  const reachedTotal = shortfall <= total * 0.02;
+  if (reachedTotal && shortfall > 0 && table[SAMPLES]! > 0) {
+    const k = total / table[SAMPLES]!;
+    for (let i = 0; i <= SAMPLES; i++) table[i] *= k;
+  }
+
+  return {
+    reachedTotal,
+    map: (p: number) => {
+      const x = clamp(p, 0, 1) * SAMPLES;
+      const i = Math.floor(x);
+      if (i >= SAMPLES) return table[SAMPLES]!;
+      const a = table[i]!;
+      return a + (table[i + 1]! - a) * (x - i);
+    },
+  };
+}
+
 /** 球面近似的地球半径，仅用于估算曲线相对折线的拉伸系数 */
 const R_EARTH = 6_371_000;
 
@@ -343,6 +482,13 @@ export function catmullRomByArcLength(
 
 // ── 总装 ──────────────────────────────────────────────────────────────
 
+/** 有锚点与逐句时间时，镜头按解说内容排；缺任一项则退回按航点均匀停留 */
+export interface RouteAnchoring {
+  anchors: number[];
+  sentenceStartSec: number[];
+  narrationSec: number;
+}
+
 export interface RoutePlanInput {
   /** 每个航点的累计弧长（米） */
   cum: number[];
@@ -354,6 +500,8 @@ export interface RoutePlanInput {
   narrationSec: number;
   /** 沿途地貌要求的最低取景高度（米） */
   baseHeightM: number;
+  /** 解说锚点（可选）。给了就按解说排镜头，否则按航点均匀停留 */
+  anchoring?: RouteAnchoring | null;
 }
 
 export interface RoutePlan {
@@ -381,20 +529,55 @@ export interface RoutePlan {
 export function planRouteFlight(
   input: RoutePlanInput & { headings: number[]; latLon: { lat: number; lon: number }[] },
 ): RoutePlan {
-  const { cum, total, holdIndices, narrationSec, baseHeightM, headings, latLon } = input;
+  const { cum, total, holdIndices, narrationSec, baseHeightM, headings, latLon, anchoring } = input;
 
   const byDistance = clamp(total / TARGET_GROUND_SPEED, MIN_FLIGHT_SEC, MAX_FLIGHT_SEC);
   let durationSec = Math.max(byDistance, Math.max(0, narrationSec));
 
-  const solve = (sec: number) => {
-    const holds = thinHoldIndices(holdIndices, cum, total, sec);
-    const map = buildRouteProgressMap({
-      holdIndices: holds, cum, total, holdSecEach: WAYPOINT_HOLD_SEC, durationSec: sec,
+  /** 不锚定时的均匀映射，同时用作锚定映射的限速基准 */
+  const uniformMap = (sec: number) =>
+    buildRouteProgressMap({
+      holdIndices: thinHoldIndices(holdIndices, cum, total, sec),
+      cum,
+      total,
+      holdSecEach: WAYPOINT_HOLD_SEC,
+      durationSec: sec,
     });
-    return { map, peak: peakCurveSpeed(latLon, cum, map, sec) };
+
+  /** 沿线（非三维曲线）的最大推进速度，供限速用 */
+  const maxAlongSpeedOf = (f: (p: number) => number, sec: number, samples = 2000) => {
+    let peakV = 0;
+    let prev = f(0);
+    for (let i = 1; i <= samples; i++) {
+      const cur = f(i / samples);
+      peakV = Math.max(peakV, (cur - prev) / (sec / samples));
+      prev = cur;
+    }
+    return peakV;
+  };
+
+  let reachedTotal = true;
+  const solve = (sec: number) => {
+    const uni = uniformMap(sec);
+    if (!anchoring) {
+      reachedTotal = true;
+      return { map: uni, peak: peakCurveSpeed(latLon, cum, uni, sec) };
+    }
+    const limit = maxAlongSpeedOf(uni, sec);
+    const built = buildAnchoredProgressMap({
+      ...anchoring, cum, total, durationSec: sec, maxAlongSpeed: limit,
+    });
+    reachedTotal = built.reachedTotal;
+    return { map: built.map, peak: peakCurveSpeed(latLon, cum, built.map, sec) };
   };
 
   let { map, peak } = solve(durationSec);
+
+  // 限速之后没能飞到终点 → 延长时长（解说时间点不变，多出来的时间全给收尾航段）
+  if (!reachedTotal && durationSec < HARD_MAX_FLIGHT_SEC) {
+    durationSec = Math.min(HARD_MAX_FLIGHT_SEC, durationSec * 1.6);
+    ({ map, peak } = solve(durationSec));
+  }
 
   // 峰值太高 → 高度会被顶到上限，压不住每秒扫过的画面比例，改为延长时长
   const needed = peak * HEIGHT_PER_PEAK_SPEED_SEC;

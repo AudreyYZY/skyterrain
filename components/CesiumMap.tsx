@@ -19,6 +19,7 @@ import {
   planRouteFlight,
   sampleFlight,
   type FlightCurve,
+  type RouteAnchoring,
 } from "@/lib/cesium/route-flight";
 import { quarticEaseOut, sleep, waitForTilesSettled } from "@/lib/cesium/utils";
 import {
@@ -81,6 +82,11 @@ export interface RouteFlyCallbacks {
    * —— 跟着 audio.currentTime 走会把媒体元素的台阶式播放位置变成画面抖动。
    */
   estNarrationSec?: number;
+  /**
+   * 解说锚点（仅学习模式有）。给了就按解说排镜头 —— 讲到某个航点时镜头正好在
+   * 那里，这是「文字播报的地方和地图上的位置对不上」的正解。缺省则按航点均匀停留。
+   */
+  anchoring?: RouteAnchoring | null;
   onPreparingRoute?: () => void;
   onRouteReady?: () => void;
   onComplete: () => void;
@@ -486,6 +492,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             baseHeightM: baseHeight,
             headings,
             latLon: waypoints.map((w) => ({ lat: w.lat, lon: w.lon })),
+            anchoring: callbacks.anchoring ?? null,
           });
           const flyHeight = plan.cruiseHeightM;
 

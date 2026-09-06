@@ -46,6 +46,7 @@ import {
   getCountryOverview,
 } from "@/lib/places-registry";
 import { resolveTravelGuide, travelGuideToSections } from "@/lib/travel-lesson";
+import { buildAnchoringForNarration } from "@/lib/route-anchors";
 import { travelRailGroups } from "@/lib/travel-rail";
 import { createSectionNarration } from "@/lib/section-narration";
 import TravelPoiMarkers from "@/components/TravelPoiMarkers";
@@ -986,6 +987,8 @@ export default function ExplorerApp() {
           // 飞行时长由航线距离与这个估算共同决定（见 lib/cesium/route-flight.ts）；
           // 镜头节拍是帧率驱动的，不再跟随音频进度
           estNarrationSec: estimateSpeechDurationSec(narrText, SPEECH_RATE, language),
+          // 学习模式有锚点表时按解说排镜头：讲到哪个航点，镜头就在哪里
+          anchoring: buildAnchoringForNarration(route.id, language, mode, narrText),
           // 镜头经过某航点 — 更新「当前在哪」（解说里提到地名时由高亮同步更精确，见上方 effect）
           onFlyoverWaypoint: (wp, index) => {
             const en = language === "en-US";

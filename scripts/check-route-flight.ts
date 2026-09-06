@@ -26,6 +26,8 @@ import {
   type Vec3,
 } from "../lib/cesium/route-flight.ts";
 import { bearingRadians, haversineMeters } from "../lib/geo.ts";
+import { ROUTE_ANCHORS } from "../lib/route-anchors.data.ts";
+import { splitSentences } from "../lib/sentences.ts";
 
 // ── 阈值 ──────────────────────────────────────────────────────────────
 /** 每秒扫过的距离 / 取景高度。0.6 意味着画面最快约 1.7 秒换一遍 */
@@ -76,6 +78,7 @@ interface Row {
   oldMeanKmS: number;
 }
 const rows: Row[] = [];
+let anchoredCount = 0;
 
 for (const route of getAllRoutes()) {
   const wps = resolveRouteWaypoints(route);
@@ -112,6 +115,29 @@ for (const route of getAllRoutes()) {
     return bearingRadians(a.lat, a.lon, b.lat, b.lon);
   });
 
+  // 有锚点表就按解说锚点排镜头（第 4 步）。逐句起始时间在浏览器里来自 TTS 的
+  // word boundary；这里按各句字数比例切分总时长估算，与运行时的兜底口径一致。
+  let anchoring = null as null | { anchors: number[]; sentenceStartSec: number[]; narrationSec: number };
+  {
+    const zh = getRouteNarration(route.id, "zh-CN", "study");
+    const entry = ROUTE_ANCHORS[route.id]?.["zh-CN"];
+    if (zh && entry) {
+      const sents = splitSentences(zh);
+      if (sents.length === entry.perSentence.length) {
+        const totalChars = sents.reduce((a, x) => a + x.trim().length, 0) || 1;
+        const dur = estimateSpeechDurationSec(zh, 0.88, "zh-CN");
+        const starts: number[] = [];
+        let acc = 0;
+        for (const x of sents) {
+          starts.push((acc / totalChars) * dur);
+          acc += x.trim().length;
+        }
+        anchoring = { anchors: entry.perSentence, sentenceStartSec: starts, narrationSec: dur };
+        anchoredCount++;
+      }
+    }
+  }
+
   const plan = planRouteFlight({
     cum,
     total,
@@ -120,6 +146,7 @@ for (const route of getAllRoutes()) {
     baseHeightM: route.cruiseHeight ?? 11000,
     headings,
     latLon: wps.map((w) => ({ lat: w.lat, lon: w.lon })),
+    anchoring,
   });
   const progressToDistance = plan.progressToDistance;
 
@@ -230,5 +257,6 @@ console.log(
   `\n转向速率最大 ${p(rows.map((r) => r.turnDegS), 1).toFixed(1)} 度/秒（上限 ${MAX_TURN_DEG_PER_SEC}）`,
 );
 
+console.log(`\n其中 ${anchoredCount} 条按解说锚点排镜头（第 4 步），其余按航点均匀停留`);
 console.log(`\n${rows.length} 条航线, ${failures} 项异常`);
 process.exit(failures > 0 ? 1 : 0);

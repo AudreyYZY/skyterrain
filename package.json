@@ -19,7 +19,8 @@
     "check:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-tts-cache.ts",
     "warm:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/warm-tts.ts",
     "check:flight": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-flight.ts",
-    "check:anchors": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-anchors.ts"
+    "check:anchors": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-anchors.ts",
+    "gen:anchors": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/gen-route-anchors.ts"
   },
   "dependencies": {
     "cesium": "^1.141.0",
