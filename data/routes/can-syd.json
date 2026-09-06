@@ -10,10 +10,15 @@
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
     "flightNo": "CZ325",
-    "aircraft": "Boeing 787-9",
+    "aircraft": "Airbus A330-300",
     "depIata": "CAN",
     "arrIata": "SYD",
     "durationMin": 600
+  },
+  "source": {
+    "ref": "https://www.airportia.com/flights/cz325/guangzhou/sydney/",
+    "checkedOn": "2026-09-06",
+    "note": "南航 CZ325 CAN→SYD 属实，周一至周六执飞，9h35m；机型现为 A330-300（早期为 A350-900），原记 787-9 已改正"
   },
   "cruiseHeight": 11500,
   "waypoints": [

@@ -15,6 +15,11 @@
     "arrIata": "BER",
     "durationMin": 615
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/hu489/beijing/berlin/",
+    "checkedOn": "2026-09-06",
+    "note": "海航 HU489 PEK→BER 属实；机型各源不一（787-9 与 A330-300 均有记录），维持 787-9；时长约 10h36m"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

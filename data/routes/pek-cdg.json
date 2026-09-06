@@ -15,6 +15,11 @@
     "arrIata": "CDG",
     "durationMin": 645
   },
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/CCA933",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA933 PEK→CDG 属实，每日执飞，10h45m 与记录的 645min 吻合；机型 777-300ER 一致（2026-03 曾短期改 747-8I）"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

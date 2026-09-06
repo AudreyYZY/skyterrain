@@ -15,6 +15,11 @@
     "arrIata": "ZRH",
     "durationMin": 720
   },
+  "source": {
+    "ref": "https://airserviceone.com/new-route-of-the-day-18-june-2026-china-eastern-airlines-between-shanghai-pvg-and-zurich/",
+    "checkedOn": "2026-09-06",
+    "note": "东航 MU255 PVG→ZRH 属实，2026-06-18 开航，周二/四/日，A350-900 与记录一致；约 11h55m"
+  },
   "cruiseHeight": 11300,
   "waypoints": [
     {

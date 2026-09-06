@@ -10,10 +10,15 @@
     "airline": "中国国际航空",
     "airlineEn": "Air China",
     "flightNo": "CA737",
-    "aircraft": "Boeing 777-300ER",
+    "aircraft": "Airbus A330-300",
     "depIata": "PEK",
     "arrIata": "WAW",
     "durationMin": 510
+  },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca737/beijing/warsaw/",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA737 PEK→WAW 属实，周一/三/六执飞，约 9h10m；机型实为 A330-300（302 座），原记 777-300ER 已改正；与 LOT LO5322 联运"
   },
   "cruiseHeight": 11500,
   "waypoints": [

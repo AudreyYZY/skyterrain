@@ -15,6 +15,11 @@
     "arrIata": "MNL",
     "durationMin": 155
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/cz3091/guangzhou/manila/",
+    "checkedOn": "2026-09-06",
+    "note": "南航 CZ3091 CAN→MNL 属实，每日执飞，787-9（B-209D）与记录一致；约 1h54m"
+  },
   "cruiseHeight": 10600,
   "waypoints": [
     {

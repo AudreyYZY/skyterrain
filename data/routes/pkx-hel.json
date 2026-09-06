@@ -15,6 +15,11 @@
     "arrIata": "HEL",
     "durationMin": 555
   },
+  "source": {
+    "ref": "https://www.finavia.fi/en/newsroom/2026/china-southern-airlines-inaugural-flight-beijing-celebrated-helsinki-airport",
+    "checkedOn": "2026-09-06",
+    "note": "南航 CZ609 PKX→HEL 属实，2026 年复航（停飞五年后），初期每周三班、2026-06-20 起加密至每日，787-9 与记录一致"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

@@ -15,6 +15,11 @@
     "arrIata": "CPH",
     "durationMin": 600
   },
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Air+China-Beijing-Copenhagen/CA877",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA877 PEK→CPH 属实，每日执飞，A350-900 与记录一致；约 9h40m"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {
@@ -56,7 +61,7 @@
       "id": "cph",
       "name": "哥本哈根卡斯特鲁普",
       "nameEn": "Copenhagen Kastrup",
-      "lat": 55.6180,
+      "lat": 55.618,
       "lon": 12.6476,
       "airport": true
     }

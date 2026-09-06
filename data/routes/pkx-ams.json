@@ -15,6 +15,11 @@
     "arrIata": "AMS",
     "durationMin": 625
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/cz345/beijing/amsterdam/",
+    "checkedOn": "2026-09-06",
+    "note": "南航 CZ345 PKX→AMS 属实，每日执飞，A350-900（323 座）与记录一致；约 9h36m"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

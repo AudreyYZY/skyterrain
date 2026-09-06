@@ -15,6 +15,11 @@
     "arrIata": "HAN",
     "durationMin": 195
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/vn533/shanghai/hanoi/",
+    "checkedOn": "2026-09-06",
+    "note": "越南航空 VN533 PVG→HAN 属实，每日执飞，A321-231（VN-A615）与记录一致；3h15m 与记录的 195min 吻合"
+  },
   "cruiseHeight": 10700,
   "waypoints": [
     {

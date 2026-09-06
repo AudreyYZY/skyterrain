@@ -15,6 +15,11 @@
     "arrIata": "ARN",
     "durationMin": 670
   },
+  "source": {
+    "ref": "https://airserviceone.com/new-route-of-the-day-22-june-2026-china-eastern-airlines-between-shanghai-pvg-and-stockholm-arn/",
+    "checkedOn": "2026-09-06",
+    "note": "东航 MU289 PVG→ARN 属实，2026-06-22 复航（停飞六年后），周一/四/六，A330-200 与记录一致；约 11h30m"
+  },
   "cruiseHeight": 11100,
   "waypoints": [
     {

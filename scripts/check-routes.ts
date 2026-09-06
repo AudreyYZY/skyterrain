@@ -11,7 +11,7 @@
  */
 
 import { TERRAIN_REGISTRY } from "../lib/terrain-registry.ts";
-import { ROUTE_NARRATION } from "../lib/route-narration.ts";
+import { ROUTE_NARRATION, getRouteNarration } from "../lib/route-narration.ts";
 import { ALL_ROUTES } from "../data/routes/manifest.ts";
 import { COUNTRIES } from "../lib/regions.ts";
 import type { RouteWaypoint } from "../types/route.ts";
@@ -81,6 +81,28 @@ for (const r of ROUTES) {
   if (narr?.["zh-CN"] && narr["zh-CN"].length > 900) fail(r.id, "中文学习模式解说过长（>3 分钟）");
   const tnarr = ROUTE_NARRATION[r.id]?.travel;
   if (tnarr?.["zh-CN"] && tnarr["zh-CN"].length > 900) fail(r.id, "中文旅游模式解说过长（>3 分钟）");
+
+  // 解说里若点名机型，必须与 flight.aircraft 对得上。
+  // 实测踩过两次：北京—华沙解说写「波音777」而数据是 A330；北京—乌兰巴托解说写
+  // C919 而数据是 737 MAX 8（C919 实际飞的是 CA723，不是 CA901）。
+  // 「747」在蒙特利尔—温哥华那篇指的是机场快线巴士线路号，不是机型，故排除。
+  if (r.flight?.aircraft) {
+    const acn = r.flight.aircraft.replace(/[^0-9A-Za-z]/g, "").toLowerCase();
+    for (const mode of ["study", "travel"] as const) {
+      for (const lang of ["zh-CN", "en-US"] as const) {
+        const text = getRouteNarration(r.id, lang, mode);
+        if (!text) continue;
+        const hits = [...new Set(text.match(/(波音\s?7\d\d|Boeing\s?7\d\d|空客\s?A3\d\d|Airbus\s?A3\d\d|C919)/g) ?? [])];
+        for (const h of hits) {
+          const key = h.replace(/[^0-9A-Za-z]/g, "").replace(/^(boeing|airbus)/i, "").toLowerCase();
+          if (key === "747" && /747\s?(快线|express)/i.test(text)) continue; // 机场巴士线路号
+          if (!acn.includes(key) && !acn.includes(key.slice(0, 3))) {
+            fail(r.id, `${mode}/${lang} 解说提到机型「${h}」，与数据 flight.aircraft「${r.flight.aircraft}」不符`);
+          }
+        }
+      }
+    }
+  }
 
   // 解析坐标序列
   const coords: [number, number][] = [];

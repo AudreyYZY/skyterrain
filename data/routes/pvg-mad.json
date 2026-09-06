@@ -15,6 +15,11 @@
     "arrIata": "MAD",
     "durationMin": 835
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/mu709/shanghai/madrid/",
+    "checkedOn": "2026-09-06",
+    "note": "东航 MU709 PVG→MAD 属实，每日执飞，A350-900（B-329E）与记录一致；13h55m 与记录的 835min 吻合"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

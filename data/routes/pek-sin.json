@@ -15,6 +15,11 @@
     "arrIata": "SIN",
     "durationMin": 370
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/sq805/beijing/singapore/",
+    "checkedOn": "2026-09-06",
+    "note": "新航 SQ805 PEK→SIN 属实，每日执飞，A350-900（9V-SHK）与记录一致，部分班次用 777-300ER；约 5h33m"
+  },
   "cruiseHeight": 11900,
   "waypoints": [
     {

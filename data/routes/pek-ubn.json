@@ -9,16 +9,16 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA901",
-    "aircraft": "Boeing 737 MAX 8",
+    "flightNo": "CA723",
+    "aircraft": "COMAC C919",
     "depIata": "PEK",
     "arrIata": "UBN",
     "durationMin": 135
   },
   "source": {
-    "ref": "https://www.airnavradar.com/data/flights/CCA901",
+    "ref": "https://www.chinadaily.com.cn/a/202608/12/WS6a7c0337a310986e2b46a599.html",
     "checkedOn": "2026-09-06",
-    "note": "国航 CA901 PEK→UBN 属实，约 2h10m–2h15m，与记录的 135min 吻合；机型实为 Boeing 737 MAX 8，C919 飞的是 CA723/CA724，原记 C919 已改正"
+    "note": "国航 PEK→UBN 属实。**原记 CA901 + C919 是错配**：C919 执飞的是 CA723（去程）/CA724（回程），2026-08-12 起每日一班，15:00 起飞 17:15 抵达（2h15m，与记录的 135min 吻合），为 C919 首条国际定期航线；CA901 同航线但由 737 MAX 8 执飞。已改为 CA723 + C919，与解说所述一致"
   },
   "cruiseHeight": 10400,
   "waypoints": [

@@ -5621,11 +5621,11 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "北京到华沙约8小时30分钟，由中国国际航空波音777客机执飞。两地时差6-7小时（波兰夏令时期间6小时）。波兰冬季寒冷多雪，夏季温和，春秋最适合游览。" +
+      "北京到华沙约8小时30分钟，由中国国际航空空客A330客机执飞。两地时差6-7小时（波兰夏令时期间6小时）。波兰冬季寒冷多雪，夏季温和，春秋最适合游览。" +
       "华沙肖邦机场距市中心约10公里，地铁M1线或城市快铁（SKM/KM）均可进城，车程约20-30分钟。华沙老城（二战后按原貌重建，UNESCO世界遗产）、瓦津基公园、华沙起义博物馆是市内代表性景点。" +
       "波兰属申根区，签证按国籍不同、以波兰外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。华沙老城石板路较多，建议穿舒适的鞋子。",
     "en-US":
-      "Beijing to Warsaw takes about 8 hours 30 minutes on an Air China Boeing 777. The time difference is 6-7 hours (6 hours during Polish summer time). Poland has cold, snowy winters and mild summers, with spring and autumn best for sightseeing." +
+      "Beijing to Warsaw takes about 8 hours 30 minutes on an Air China Airbus A330. The time difference is 6-7 hours (6 hours during Polish summer time). Poland has cold, snowy winters and mild summers, with spring and autumn best for sightseeing." +
       "Warsaw Chopin Airport is about 10 km from the city centre; the M1 metro line or the SKM/KM city rail both run into town in about 20-30 minutes. Warsaw's Old Town (rebuilt after WWII to its original appearance, a UNESCO World Heritage Site), Łazienki Park and the Warsaw Uprising Museum are among the city's landmark sights." +
       "Poland is in the Schengen area; visa rules vary by nationality — check the latest from the Polish Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. The Old Town has a lot of cobblestone streets, so comfortable shoes are worth packing.",
     },
