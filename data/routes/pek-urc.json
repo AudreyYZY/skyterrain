@@ -9,18 +9,18 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA1287",
-    "aircraft": "Airbus A330-300",
+    "flightNo": "CA1293",
+    "aircraft": "Boeing 737 MAX 8",
     "depIata": "PEK",
     "arrIata": "URC",
     "durationMin": 245
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca1293/beijing/%C3%9Cr%C3%BCmqi/",
+    "checkedOn": "2026-09-06",
+    "note": "**原记 CA1287 有误**：CA1287 实际飞的是北京→敦煌，不是乌鲁木齐。改为国航 CA1293（PEK→URC 地窝堡，737 MAX 8，约 4h，2431km）"
+  },
   "cruiseHeight": 11000,
-  "minLegDurationSec": 42,
-  "dwellSecAtWaypoint": 6,
-  "cruiseSpeedMps": 230,
-  "overviewDwellSec": 5,
-  "dwellDuringFlightSec": 10,
   "waypoints": [
     {
       "kind": "city",
@@ -67,5 +67,10 @@
       "lon": 87.474,
       "airport": true
     }
-  ]
+  ],
+  "minLegDurationSec": 42,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 230,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 10
 }

@@ -15,6 +15,11 @@
     "arrIata": "SHA",
     "durationMin": 150
   },
+  "source": {
+    "ref": "https://www.flightsfrom.com/TFU-SHA",
+    "checkedOn": "2026-09-06",
+    "note": "**待修正**：原记 CA4519 有误 —— CA4519 实际飞的是成都双流→杭州萧山，不是天府→上海虹桥。国航在 TFU→SHA 每周确有 18 班直飞，但本次未能核实到具体航班号，**航班号尚不可信，待补**"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
     {

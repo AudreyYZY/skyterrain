@@ -10,10 +10,15 @@
     "airline": "中国东方航空",
     "airlineEn": "China Eastern Airlines",
     "flightNo": "MU5104",
-    "aircraft": "Boeing 777-300ER",
+    "aircraft": "Airbus A330-300",
     "depIata": "PEK",
     "arrIata": "SHA",
     "durationMin": 135
+  },
+  "source": {
+    "ref": "https://info.flightmapper.net/flight/China_Eastern_MU_5104",
+    "checkedOn": "2026-09-06",
+    "note": "东航 MU5104 PEK→SHA（虹桥）属实，每日执飞，2h15m 与记录的 135min 吻合；机型实为 A330-200/A330-300，原记 777-300ER 已改正"
   },
   "cruiseHeight": 10500,
   "waypoints": [
