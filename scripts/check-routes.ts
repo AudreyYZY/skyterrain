@@ -86,7 +86,22 @@ for (const r of ROUTES) {
   // 实测踩过两次：北京—华沙解说写「波音777」而数据是 A330；北京—乌兰巴托解说写
   // C919 而数据是 737 MAX 8（C919 实际飞的是 CA723，不是 CA901）。
   // 「747」在蒙特利尔—温哥华那篇指的是机场快线巴士线路号，不是机型，故排除。
-  if (r.flight?.aircraft) {
+  // 未核实的航线，解说里不得点名机型或航班号 —— 那等于把没核过的断言摆出去当真。
+  // 界面与搜索已由 lib/routes.ts isFlightVerified 挡住，解说是最后一处出口。
+  if (!r.source) {
+    for (const mode of ["study", "travel"] as const) {
+      for (const lang of ["zh-CN", "en-US"] as const) {
+        const text = getRouteNarration(r.id, lang, mode);
+        if (!text) continue;
+        const bad = [...new Set(text.match(/(空客\s?A3\d\d|波音\s?7\d\d|Airbus\s?A3\d\d|Boeing\s?7\d\d|C919|[A-Z]{2}\d{3,4}航班|flight\s[A-Z]{2}\d{3,4})/g) ?? [])];
+        if (bad.length > 0) {
+          fail(r.id, `未核实航线的 ${mode}/${lang} 解说点名了「${bad.join("、")}」，未核实就不应写出机型/航班号`);
+        }
+      }
+    }
+  }
+
+  if (r.source && r.flight?.aircraft) {
     const acn = r.flight.aircraft.replace(/[^0-9A-Za-z]/g, "").toLowerCase();
     for (const mode of ["study", "travel"] as const) {
       for (const lang of ["zh-CN", "en-US"] as const) {
@@ -179,8 +194,10 @@ for (const r of ROUTES) {
 
 if (missingSource > 0) {
   console.log(
-    `\n· ${missingSource}/${ROUTES.length} 条航线尚未填写 source（核查留痕）` +
-      "\n  逐条核实后补 source.ref / checkedOn / note；全部补齐后把这里改成硬失败",
+    `\n· ${missingSource}/${ROUTES.length} 条航线尚未核实（无 source 留痕）` +
+      "\n  未核实不是错误：这些航线照常可飞、地理解说照常播，只是**界面与搜索都不显示" +
+      "\n  航班号/机型**（见 lib/routes.ts isFlightVerified），解说里也不得点名机型。" +
+      "\n  逐条核实后补 source.ref / checkedOn / note，航班信息随即对外显示。",
   );
 }
 console.log(`\n${ROUTES.length} 条航线, ${failures} 项异常`);

@@ -3186,9 +3186,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，是北欧航空运营的季节性航班之一（空客A320neo机型），也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，是北欧航空运营的季节性航班之一，也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Copenhagen to Bornholm is about 35 minutes, same time zone, operated by SAS (Airbus A320neo) as a seasonal domestic route; a ferry is another option. Bornholm Airport is about 5 km from Rønne. Known as \"Denmark's sunshine island\" for its abundant sunshine, Bornholm is an ideal destination for exploring the granite coast and its historic castle. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Copenhagen to Bornholm is about 35 minutes, same time zone, operated by SAS as a seasonal domestic route; a ferry is another option. Bornholm Airport is about 5 km from Rønne. Known as \"Denmark's sunshine island\" for its abundant sunshine, Bornholm is an ideal destination for exploring the granite coast and its historic castle. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3203,9 +3203,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "斯德哥尔摩到基律纳飞约95分钟，同一时区，是北欧航空运营的国内航班之一（空客A320neo机型），也可选择约17小时的夜间火车。基律纳机场离市区约8公里。基律纳是探索凯布讷山、萨雷克国家公园与阿比斯库极光的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到基律纳飞约95分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约17小时的夜间火车。基律纳机场离市区约8公里。基律纳是探索凯布讷山、萨雷克国家公园与阿比斯库极光的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Kiruna is about 95 minutes, same time zone, operated by SAS (Airbus A320neo) as one of Sweden's domestic routes; an overnight train (about 17 hours) is another option. Kiruna Airport is about 8 km from the centre. Kiruna is an ideal gateway for exploring Kebnekaise, Sarek National Park and the northern lights at Abisko. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Kiruna is about 95 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; an overnight train (about 17 hours) is another option. Kiruna Airport is about 8 km from the centre. Kiruna is an ideal gateway for exploring Kebnekaise, Sarek National Park and the northern lights at Abisko. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3220,9 +3220,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "斯德哥尔摩到哥德堡飞约43分钟，同一时区，是北欧航空运营的国内航班之一（空客A320neo机型），也可选择约3小时的城际火车。哥德堡兰德维特机场离市区约25公里。哥德堡是探索布胡斯兰海岸礁岛地貌的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到哥德堡飞约43分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约3小时的城际火车。哥德堡兰德维特机场离市区约25公里。哥德堡是探索布胡斯兰海岸礁岛地貌的理想门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Gothenburg is about 43 minutes, same time zone, operated by SAS (Airbus A320neo) as one of Sweden's domestic routes; an intercity train (about 3 hours) is another option. Göteborg Landvetter Airport is about 25 km from the centre. Gothenburg is an ideal gateway for exploring the skerry landforms of the Bohuslän Coast. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Gothenburg is about 43 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; an intercity train (about 3 hours) is another option. Göteborg Landvetter Airport is about 25 km from the centre. Gothenburg is an ideal gateway for exploring the skerry landforms of the Bohuslän Coast. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3237,9 +3237,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "斯德哥尔摩到马尔默飞约55分钟，同一时区，是北欧航空运营的国内航班之一（空客A320neo机型），也可选择约4.5小时的城际火车。马尔默机场离市区约28公里。马尔默是探索斯科讷平原、并经厄勒海峡大桥连接丹麦的便捷门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到马尔默飞约55分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约4.5小时的城际火车。马尔默机场离市区约28公里。马尔默是探索斯科讷平原、并经厄勒海峡大桥连接丹麦的便捷门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Malmö is about 55 minutes, same time zone, operated by SAS (Airbus A320neo) as one of Sweden's domestic routes; an intercity train (about 4.5 hours) is another option. Malmö Airport is about 28 km from the centre. Malmö is a convenient gateway for exploring the Skåne Plain and for a cross-border trip to Denmark via the Øresund Bridge. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Malmö is about 55 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; an intercity train (about 4.5 hours) is another option. Malmö Airport is about 28 km from the centre. Malmö is a convenient gateway for exploring the Skåne Plain and for a cross-border trip to Denmark via the Øresund Bridge. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3254,9 +3254,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "斯德哥尔摩到维斯比飞约35分钟，同一时区，是北欧航空运营的国内航班之一（空客A320neo机型），也可选择乘渡轮往返。维斯比机场离市区约4公里。维斯比是探索哥得兰岛中世纪古城与大阿尔瓦荒原的理想起点。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到维斯比飞约35分钟，同一时区，是北欧航空运营的国内航班之一，也可选择乘渡轮往返。维斯比机场离市区约4公里。维斯比是探索哥得兰岛中世纪古城与大阿尔瓦荒原的理想起点。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Visby is about 35 minutes, same time zone, operated by SAS (Airbus A320neo) as one of Sweden's domestic routes; a ferry is another option. Visby Airport is about 4 km from the centre. Visby is an ideal starting point for exploring Gotland's medieval old town and Stora Alvaret. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Visby is about 35 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; a ferry is another option. Visby Airport is about 4 km from the centre. Visby is an ideal starting point for exploring Gotland's medieval old town and Stora Alvaret. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3271,9 +3271,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "斯德哥尔摩到卡尔马飞约45分钟，同一时区，是北欧航空运营的国内航班之一（空客A320neo机型），也可选择约4.5小时的城际火车。卡尔马机场离市区约6公里。卡尔马是探索厄兰岛大阿尔瓦石灰岩荒原最便捷的门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到卡尔马飞约45分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约4.5小时的城际火车。卡尔马机场离市区约6公里。卡尔马是探索厄兰岛大阿尔瓦石灰岩荒原最便捷的门户。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Kalmar is about 45 minutes, same time zone, operated by SAS (Airbus A320neo) as one of Sweden's domestic routes; an intercity train (about 4.5 hours) is another option. Kalmar Airport is about 6 km from the centre. Kalmar is the most convenient gateway for exploring Öland's Stora Alvaret limestone plateau. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Kalmar is about 45 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; an intercity train (about 4.5 hours) is another option. Kalmar Airport is about 6 km from the centre. Kalmar is the most convenient gateway for exploring Öland's Stora Alvaret limestone plateau. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3288,9 +3288,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "斯德哥尔摩到奥勒—厄斯特松德飞约60分钟，同一时区，是北欧航空运营的国内航班之一（空客A320neo机型），也可选择约6.5小时的城际火车。机场离奥勒镇区约65公里。奥勒是北欧规模最大的高山滑雪度假地。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "斯德哥尔摩到奥勒—厄斯特松德飞约60分钟，同一时区，是北欧航空运营的国内航班之一，也可选择约6.5小时的城际火车。机场离奥勒镇区约65公里。奥勒是北欧规模最大的高山滑雪度假地。瑞典属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Stockholm to Åre Östersund is about 60 minutes, same time zone, operated by SAS (Airbus A320neo) as one of Sweden's domestic routes; an intercity train (about 6.5 hours) is another option. The airport is about 65 km from Åre. Åre is Northern Europe's largest alpine ski resort. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Stockholm to Åre Östersund is about 60 minutes, same time zone, operated by SAS as one of Sweden's domestic routes; an intercity train (about 6.5 hours) is another option. The airport is about 65 km from Åre. Åre is Northern Europe's largest alpine ski resort. Sweden is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3305,9 +3305,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "赫尔辛基到罗瓦涅米飞约85分钟，同一时区，是芬兰航空运营的国内航班之一（空客A321机型），也可选择约12小时的夜间火车。罗瓦涅米机场离市区约10公里。罗瓦涅米是圣诞老人村所在地，也是探索拉普兰荒原的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "赫尔辛基到罗瓦涅米飞约85分钟，同一时区，是芬兰航空运营的国内航班之一，也可选择约12小时的夜间火车。罗瓦涅米机场离市区约10公里。罗瓦涅米是圣诞老人村所在地，也是探索拉普兰荒原的理想门户。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Helsinki to Rovaniemi is about 85 minutes, same time zone, operated by Finnair (Airbus A321) as one of Finland's domestic routes; an overnight train (about 12 hours) is another option. Rovaniemi Airport is about 10 km from the centre. Rovaniemi is home to Santa Claus Village and an ideal gateway for exploring the Lapland wilderness. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Helsinki to Rovaniemi is about 85 minutes, same time zone, operated by Finnair as one of Finland's domestic routes; an overnight train (about 12 hours) is another option. Rovaniemi Airport is about 10 km from the centre. Rovaniemi is home to Santa Claus Village and an ideal gateway for exploring the Lapland wilderness. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3356,9 +3356,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "赫尔辛基到伊瓦洛飞约100分钟，同一时区，是芬兰航空运营的国内航班之一（空客A320机型）。伊瓦洛机场离伊纳里村约40公里。伊瓦洛是探索伊纳里湖与萨米文化的门户机场，也是观测极光条件最佳的地区之一。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "赫尔辛基到伊瓦洛飞约100分钟，同一时区，是芬兰航空运营的国内航班之一。伊瓦洛机场离伊纳里村约40公里。伊瓦洛是探索伊纳里湖与萨米文化的门户机场，也是观测极光条件最佳的地区之一。芬兰属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Helsinki to Ivalo is about 100 minutes, same time zone, operated by Finnair (Airbus A320) as one of Finland's domestic routes. Ivalo Airport is about 40 km from the village of Inari. Ivalo is the gateway airport for exploring Lake Inari and Sámi culture, and one of the best regions in Finland for viewing the northern lights. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Helsinki to Ivalo is about 100 minutes, same time zone, operated by Finnair as one of Finland's domestic routes. Ivalo Airport is about 40 km from the village of Inari. Ivalo is the gateway airport for exploring Lake Inari and Sámi culture, and one of the best regions in Finland for viewing the northern lights. Finland is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3407,9 +3407,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "曼谷到清迈飞约80分钟，同一时区，是泰国国际航空运营的国内航班之一（空客A320机型），也可选择长途大巴或火车。曼谷素万那普机场距市区约30公里；清迈国际机场距市区约3公里。清迈是探索泰国北部山地与手工艺文化的理想门户。",
+      "曼谷到清迈飞约80分钟，同一时区，是泰国国际航空运营的国内航班之一，也可选择长途大巴或火车。曼谷素万那普机场距市区约30公里；清迈国际机场距市区约3公里。清迈是探索泰国北部山地与手工艺文化的理想门户。",
     "en-US":
-      "Bangkok to Chiang Mai takes about 80 minutes, same time zone, operated by Thai Airways (Airbus A320) as one of Thailand's domestic routes; buses and trains are other options. Suvarnabhumi Airport is about 30 km from central Bangkok; Chiang Mai International Airport is about 3 km from the city centre. Chiang Mai is an ideal gateway for exploring northern Thailand's mountains and craft culture.",
+      "Bangkok to Chiang Mai takes about 80 minutes, same time zone, operated by Thai Airways as one of Thailand's domestic routes; buses and trains are other options. Suvarnabhumi Airport is about 30 km from central Bangkok; Chiang Mai International Airport is about 3 km from the city centre. Chiang Mai is an ideal gateway for exploring northern Thailand's mountains and craft culture.",
     },
   },
 
@@ -3441,9 +3441,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "曼谷廊曼到乌隆他尼飞约65分钟，同一时区，是泰国亚洲航空运营的国内航班之一（空客A320机型），也可选择乘火车经廊开线前往。廊曼机场距曼谷市区约25公里；乌隆他尼国际机场距市区约5公里。乌隆他尼是探索班清世界遗产考古遗址的理想门户。",
+      "曼谷廊曼到乌隆他尼飞约65分钟，同一时区，是泰国亚洲航空运营的国内航班之一，也可选择乘火车经廊开线前往。廊曼机场距曼谷市区约25公里；乌隆他尼国际机场距市区约5公里。乌隆他尼是探索班清世界遗产考古遗址的理想门户。",
     "en-US":
-      "Bangkok Don Mueang to Udon Thani takes about 65 minutes, same time zone, operated by Thai AirAsia (Airbus A320) as one of Thailand's domestic routes; a train via the Nong Khai line is another option. Don Mueang Airport is about 25 km from central Bangkok; Udon Thani International Airport is about 5 km from the city centre. Udon Thani is an ideal gateway for exploring the Ban Chiang World Heritage archaeological site.",
+      "Bangkok Don Mueang to Udon Thani takes about 65 minutes, same time zone, operated by Thai AirAsia as one of Thailand's domestic routes; a train via the Nong Khai line is another option. Don Mueang Airport is about 25 km from central Bangkok; Udon Thani International Airport is about 5 km from the city centre. Udon Thani is an ideal gateway for exploring the Ban Chiang World Heritage archaeological site.",
     },
   },
 
@@ -3458,9 +3458,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "曼谷廊曼到清莱飞约80分钟，同一时区，是皇雀航空运营的国内航班之一（波音737-800机型）。廊曼机场距曼谷市区约25公里；清莱国际机场距市区约8公里。清莱是探索金三角景观区与白庙等当代宗教艺术建筑的理想门户。",
+      "曼谷廊曼到清莱飞约80分钟，同一时区，是皇雀航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；清莱国际机场距市区约8公里。清莱是探索金三角景观区与白庙等当代宗教艺术建筑的理想门户。",
     "en-US":
-      "Bangkok Don Mueang to Chiang Rai takes about 80 minutes, same time zone, operated by Nok Air (Boeing 737-800) as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Chiang Rai International Airport is about 8 km from the city centre. Chiang Rai is an ideal gateway for the Golden Triangle viewpoint and contemporary religious-art buildings such as the White Temple.",
+      "Bangkok Don Mueang to Chiang Rai takes about 80 minutes, same time zone, operated by Nok Air as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Chiang Rai International Airport is about 8 km from the city centre. Chiang Rai is an ideal gateway for the Golden Triangle viewpoint and contemporary religious-art buildings such as the White Temple.",
     },
   },
 
@@ -3475,9 +3475,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "曼谷廊曼到普吉岛飞约85分钟，同一时区，是泰国亚洲航空运营的国内航班之一（空客A320机型）。廊曼机场距曼谷市区约25公里；普吉国际机场距普吉镇约32公里。普吉岛是探索攀牙湾喀斯特岛群的理想门户。",
+      "曼谷廊曼到普吉岛飞约85分钟，同一时区，是泰国亚洲航空运营的国内航班之一。廊曼机场距曼谷市区约25公里；普吉国际机场距普吉镇约32公里。普吉岛是探索攀牙湾喀斯特岛群的理想门户。",
     "en-US":
-      "Bangkok Don Mueang to Phuket takes about 85 minutes, same time zone, operated by Thai AirAsia (Airbus A320) as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Phuket International Airport is about 32 km from Phuket Town. Phuket is an ideal gateway for exploring the karst islands of Ao Phang Nga.",
+      "Bangkok Don Mueang to Phuket takes about 85 minutes, same time zone, operated by Thai AirAsia as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Phuket International Airport is about 32 km from Phuket Town. Phuket is an ideal gateway for exploring the karst islands of Ao Phang Nga.",
     },
   },
 
@@ -3492,9 +3492,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "曼谷廊曼到甲米飞约85分钟，同一时区，是泰国狮航运营的国内航班之一（波音737-900机型）。廊曼机场距曼谷市区约25公里；甲米国际机场距甲米镇约18公里。甲米是探索莱利岬角攀岩与皮皮群岛跳岛游的理想门户。",
+      "曼谷廊曼到甲米飞约85分钟，同一时区，是泰国狮航运营的国内航班之一。廊曼机场距曼谷市区约25公里；甲米国际机场距甲米镇约18公里。甲米是探索莱利岬角攀岩与皮皮群岛跳岛游的理想门户。",
     "en-US":
-      "Bangkok Don Mueang to Krabi takes about 85 minutes, same time zone, operated by Thai Lion Air (Boeing 737-900) as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Krabi International Airport is about 18 km from Krabi Town. Krabi is an ideal gateway for rock climbing at Railay Peninsula and island-hopping to the Phi Phi Islands.",
+      "Bangkok Don Mueang to Krabi takes about 85 minutes, same time zone, operated by Thai Lion Air as one of Thailand's domestic routes. Don Mueang Airport is about 25 km from central Bangkok; Krabi International Airport is about 18 km from Krabi Town. Krabi is an ideal gateway for rock climbing at Railay Peninsula and island-hopping to the Phi Phi Islands.",
     },
   },
 
@@ -3509,9 +3509,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "首尔金浦到济州飞约75分钟，同一时区，是大韩航空运营的国内航班之一（空客A220-300机型），这条航线因客流密集常被称为全球最繁忙的国内航线。金浦机场位于首尔市区西部；济州国际机场就在济州市区西侧。韩国境内多国公民短期旅游的电子旅行许可豁免安排以官方最新公布为准。",
+      "首尔金浦到济州飞约75分钟，同一时区，是大韩航空运营的国内航班之一，这条航线因客流密集常被称为全球最繁忙的国内航线。金浦机场位于首尔市区西部；济州国际机场就在济州市区西侧。韩国境内多国公民短期旅游的电子旅行许可豁免安排以官方最新公布为准。",
     "en-US":
-      "Seoul Gimpo to Jeju takes about 75 minutes, same time zone, operated by Korean Air (Airbus A220-300) as one of Korea's domestic routes; this route is often cited as the busiest domestic air route in the world by passenger volume. Gimpo Airport sits on the western side of Seoul; Jeju International Airport is right on the west side of Jeju City. South Korea's electronic travel-authorisation exemption arrangements for short-term visitors follow the latest official announcements.",
+      "Seoul Gimpo to Jeju takes about 75 minutes, same time zone, operated by Korean Air as one of Korea's domestic routes; this route is often cited as the busiest domestic air route in the world by passenger volume. Gimpo Airport sits on the western side of Seoul; Jeju International Airport is right on the west side of Jeju City. South Korea's electronic travel-authorisation exemption arrangements for short-term visitors follow the latest official announcements.",
     },
   },
 
@@ -3526,9 +3526,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "首尔金浦到釜山飞约55分钟，同一时区，是大韩航空运营的国内航班之一（空客A220-300机型），也可选择约2.5小时的KTX高铁。金浦机场位于首尔市区西部；金海国际机场距釜山市区约20公里。釜山是探索海云台与甘川文化村的理想门户。",
+      "首尔金浦到釜山飞约55分钟，同一时区，是大韩航空运营的国内航班之一，也可选择约2.5小时的KTX高铁。金浦机场位于首尔市区西部；金海国际机场距釜山市区约20公里。釜山是探索海云台与甘川文化村的理想门户。",
     "en-US":
-      "Seoul Gimpo to Busan takes about 55 minutes, same time zone, operated by Korean Air (Airbus A220-300) as one of Korea's domestic routes; the KTX high-speed rail (about 2.5 hours) is another option. Gimpo Airport sits on the western side of Seoul; Gimhae International Airport is about 20 km from central Busan. Busan is an ideal gateway for Haeundae Beach and Gamcheon Culture Village.",
+      "Seoul Gimpo to Busan takes about 55 minutes, same time zone, operated by Korean Air as one of Korea's domestic routes; the KTX high-speed rail (about 2.5 hours) is another option. Gimpo Airport sits on the western side of Seoul; Gimhae International Airport is about 20 km from central Busan. Busan is an ideal gateway for Haeundae Beach and Gamcheon Culture Village.",
     },
   },
 
@@ -3560,9 +3560,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "首尔金浦到丽水飞约60分钟，同一时区，是真航空运营的国内航班之一（波音737-800机型），也可选择约3小时的KTX高铁。金浦机场位于首尔市区西部；丽水机场距市区约20公里。丽水是探索梧桐岛与突山大桥的理想门户。",
+      "首尔金浦到丽水飞约60分钟，同一时区，是真航空运营的国内航班之一，也可选择约3小时的KTX高铁。金浦机场位于首尔市区西部；丽水机场距市区约20公里。丽水是探索梧桐岛与突山大桥的理想门户。",
     "en-US":
-      "Seoul Gimpo to Yeosu takes about 60 minutes, same time zone, operated by Jin Air (Boeing 737-800) as one of Korea's domestic routes; the KTX (about 3 hours) is another option. Gimpo Airport sits on the western side of Seoul; Yeosu Airport is about 20 km from the city centre. Yeosu is an ideal gateway for Odongdo Island and Dolsan Bridge.",
+      "Seoul Gimpo to Yeosu takes about 60 minutes, same time zone, operated by Jin Air as one of Korea's domestic routes; the KTX (about 3 hours) is another option. Gimpo Airport sits on the western side of Seoul; Yeosu Airport is about 20 km from the city centre. Yeosu is an ideal gateway for Odongdo Island and Dolsan Bridge.",
     },
   },
 
@@ -3577,9 +3577,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "首尔金浦到浦项庆州飞约55分钟，同一时区，是真航空运营的国内航班之一（波音737-800机型），也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；浦项庆州机场距浦项市区约10公里、距庆州市区约35公里。这座机场是探索新罗古都庆州历史遗址群的理想门户。",
+      "首尔金浦到浦项庆州飞约55分钟，同一时区，是真航空运营的国内航班之一，也可选择约2小时的KTX高铁。金浦机场位于首尔市区西部；浦项庆州机场距浦项市区约10公里、距庆州市区约35公里。这座机场是探索新罗古都庆州历史遗址群的理想门户。",
     "en-US":
-      "Seoul Gimpo to Pohang Gyeongju takes about 55 minutes, same time zone, operated by Jin Air (Boeing 737-800) as one of Korea's domestic routes; the KTX (about 2 hours) is another option. Gimpo Airport sits on the western side of Seoul; Pohang Gyeongju Airport is about 10 km from central Pohang and about 35 km from central Gyeongju. This airport is an ideal gateway for exploring the Silla-era heritage sites of Gyeongju.",
+      "Seoul Gimpo to Pohang Gyeongju takes about 55 minutes, same time zone, operated by Jin Air as one of Korea's domestic routes; the KTX (about 2 hours) is another option. Gimpo Airport sits on the western side of Seoul; Pohang Gyeongju Airport is about 10 km from central Pohang and about 35 km from central Gyeongju. This airport is an ideal gateway for exploring the Silla-era heritage sites of Gyeongju.",
     },
   },
 
@@ -3594,9 +3594,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "釜山到济州飞约60分钟，同一时区，是济州航空运营的国内航班之一（波音737-800机型），大韩航空也运营同一航线。金海国际机场距釜山市区约20公里；济州国际机场就在济州市区西侧。",
+      "釜山到济州飞约60分钟，同一时区，是济州航空运营的国内航班之一，大韩航空也运营同一航线。金海国际机场距釜山市区约20公里；济州国际机场就在济州市区西侧。",
     "en-US":
-      "Busan to Jeju takes about 60 minutes, same time zone, operated by Jeju Air (Boeing 737-800) as one of Korea's domestic routes, with Korean Air also operating the same sector. Gimhae International Airport is about 20 km from central Busan; Jeju International Airport is right on the west side of Jeju City.",
+      "Busan to Jeju takes about 60 minutes, same time zone, operated by Jeju Air as one of Korea's domestic routes, with Korean Air also operating the same sector. Gimhae International Airport is about 20 km from central Busan; Jeju International Airport is right on the west side of Jeju City.",
     },
   },
 
@@ -3713,9 +3713,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "河内到胡志明市飞约120分钟，同一时区，是越南航空运营的国内航班之一（空客A321机型），这条航线是全球客流量最高的国内航线之一。内排机场距河内市区约35公里；新山一机场距胡志明市中心约8公里。这条航线连接越南南北两大门户城市。",
+      "河内到胡志明市飞约120分钟，同一时区，是越南航空运营的国内航班之一，这条航线是全球客流量最高的国内航线之一。内排机场距河内市区约35公里；新山一机场距胡志明市中心约8公里。这条航线连接越南南北两大门户城市。",
     "en-US":
-      "Hanoi to Ho Chi Minh City takes about 120 minutes, same time zone, operated by Vietnam Airlines (Airbus A321) as one of Vietnam's domestic routes; this route is among the busiest domestic air routes in the world by passenger volume. Noi Bai Airport is about 35 km from central Hanoi; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route links Vietnam's two great gateway cities in the north and south.",
+      "Hanoi to Ho Chi Minh City takes about 120 minutes, same time zone, operated by Vietnam Airlines as one of Vietnam's domestic routes; this route is among the busiest domestic air routes in the world by passenger volume. Noi Bai Airport is about 35 km from central Hanoi; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route links Vietnam's two great gateway cities in the north and south.",
     },
   },
 
@@ -3730,9 +3730,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "河内到岘港飞约83分钟，同一时区，是越捷航空运营的国内航班之一（空客A321机型）。内排机场距河内市区约35公里；岘港国际机场距市中心约3公里。岘港是探索会安古镇与顺化皇城的理想门户。",
+      "河内到岘港飞约83分钟，同一时区，是越捷航空运营的国内航班之一。内排机场距河内市区约35公里；岘港国际机场距市中心约3公里。岘港是探索会安古镇与顺化皇城的理想门户。",
     "en-US":
-      "Hanoi to Da Nang takes about 83 minutes, same time zone, operated by VietJet Air (Airbus A321) as one of Vietnam's domestic routes. Noi Bai Airport is about 35 km from central Hanoi; Da Nang International Airport is about 3 km from the city centre. Da Nang is an ideal gateway for the ancient town of Hoi An and the imperial citadel of Hue.",
+      "Hanoi to Da Nang takes about 83 minutes, same time zone, operated by VietJet Air as one of Vietnam's domestic routes. Noi Bai Airport is about 35 km from central Hanoi; Da Nang International Airport is about 3 km from the city centre. Da Nang is an ideal gateway for the ancient town of Hoi An and the imperial citadel of Hue.",
     },
   },
 
@@ -3747,9 +3747,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "胡志明市到富国岛飞约65分钟，同一时区，是越捷航空运营的国内航班之一（空客A320机型）。新山一机场距胡志明市中心约8公里；富国国际机场距阳东镇约15公里。富国岛是越南南部重要的海岛度假目的地。",
+      "胡志明市到富国岛飞约65分钟，同一时区，是越捷航空运营的国内航班之一。新山一机场距胡志明市中心约8公里；富国国际机场距阳东镇约15公里。富国岛是越南南部重要的海岛度假目的地。",
     "en-US":
-      "Ho Chi Minh City to Phu Quoc takes about 65 minutes, same time zone, operated by VietJet Air (Airbus A320) as one of Vietnam's domestic routes. Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City; Phu Quoc International Airport is about 15 km from Duong Dong town. Phu Quoc is an important island resort destination in southern Vietnam.",
+      "Ho Chi Minh City to Phu Quoc takes about 65 minutes, same time zone, operated by VietJet Air as one of Vietnam's domestic routes. Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City; Phu Quoc International Airport is about 15 km from Duong Dong town. Phu Quoc is an important island resort destination in southern Vietnam.",
     },
   },
 
@@ -3764,9 +3764,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "河内到芹苴飞约135分钟，同一时区，是越南航空运营的国内航班之一（空客A321机型）。内排机场距河内市区约35公里；芹苴国际机场距市区约10公里。芹苴是探索凤凰水上市场的理想门户。",
+      "河内到芹苴飞约135分钟，同一时区，是越南航空运营的国内航班之一。内排机场距河内市区约35公里；芹苴国际机场距市区约10公里。芹苴是探索凤凰水上市场的理想门户。",
     "en-US":
-      "Hanoi to Can Tho takes about 135 minutes, same time zone, operated by Vietnam Airlines (Airbus A321) as one of Vietnam's domestic routes. Noi Bai Airport is about 35 km from central Hanoi; Can Tho International Airport is about 10 km from the city centre. Can Tho is an ideal gateway for the Cai Rang floating market.",
+      "Hanoi to Can Tho takes about 135 minutes, same time zone, operated by Vietnam Airlines as one of Vietnam's domestic routes. Noi Bai Airport is about 35 km from central Hanoi; Can Tho International Airport is about 10 km from the city centre. Can Tho is an ideal gateway for the Cai Rang floating market.",
     },
   },
 
@@ -3781,9 +3781,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "河内到顺化飞约70分钟，同一时区，是越南航空运营的国内航班之一（空客A321机型），每日往返约3班。内排机场距河内市区约35公里；富牌国际机场距顺化市中心约15公里。顺化是探索阮朝皇城与皇陵的理想门户。",
+      "河内到顺化飞约70分钟，同一时区，是越南航空运营的国内航班之一，每日往返约3班。内排机场距河内市区约35公里；富牌国际机场距顺化市中心约15公里。顺化是探索阮朝皇城与皇陵的理想门户。",
     "en-US":
-      "Hanoi to Hue takes about 70 minutes, same time zone, operated by Vietnam Airlines (Airbus A321) as one of Vietnam's domestic routes, with about 3 round trips daily. Noi Bai Airport is about 35 km from central Hanoi; Phu Bai International Airport is about 15 km from central Hue. Hue is an ideal gateway for the Nguyen dynasty's imperial citadel and royal tombs.",
+      "Hanoi to Hue takes about 70 minutes, same time zone, operated by Vietnam Airlines as one of Vietnam's domestic routes, with about 3 round trips daily. Noi Bai Airport is about 35 km from central Hanoi; Phu Bai International Airport is about 15 km from central Hue. Hue is an ideal gateway for the Nguyen dynasty's imperial citadel and royal tombs.",
     },
   },
 
@@ -3798,9 +3798,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "岘港到胡志明市飞约90分钟，同一时区，是竹子航空运营的国内航班之一（空客A321机型）。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
+      "岘港到胡志明市飞约90分钟，同一时区，是竹子航空运营的国内航班之一。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
     "en-US":
-      "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by Bamboo Airways (Airbus A321) as one of Vietnam's domestic routes. Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
+      "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by Bamboo Airways as one of Vietnam's domestic routes. Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
     },
   },
 
@@ -3815,9 +3815,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "吉隆坡到槟城飞约55分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型，每日约9班）。吉隆坡国际机场距市区约45公里；槟城国际机场距乔治市约18公里。这是马来西亚客流量最高的国内航线之一。",
+      "吉隆坡到槟城飞约55分钟，同一时区，是亚洲航空运营的国内航班之一（每日约9班）。吉隆坡国际机场距市区约45公里；槟城国际机场距乔治市约18公里。这是马来西亚客流量最高的国内航线之一。",
     "en-US":
-      "Kuala Lumpur to Penang is about 55 minutes, same time zone, operated by AirAsia (Airbus A320, about 9 flights daily) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Penang International Airport is about 18 km from George Town. This is one of Malaysia's highest-volume domestic air routes.",
+      "Kuala Lumpur to Penang is about 55 minutes, same time zone, operated by AirAsia (about 9 flights daily) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Penang International Airport is about 18 km from George Town. This is one of Malaysia's highest-volume domestic air routes.",
     },
   },
 
@@ -3832,9 +3832,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "吉隆坡到亚庇飞约150分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型），是马来西亚境内客流量最大的单一航线（每日多达14至16班）。吉隆坡国际机场距市区约45公里；亚庇国际机场距市区约7公里。",
+      "吉隆坡到亚庇飞约150分钟，同一时区，是亚洲航空运营的国内航班之一，是马来西亚境内客流量最大的单一航线（每日多达14至16班）。吉隆坡国际机场距市区约45公里；亚庇国际机场距市区约7公里。",
     "en-US":
-      "Kuala Lumpur to Kota Kinabalu is about 150 minutes, same time zone, operated by AirAsia (Airbus A320) as one of Malaysia's domestic routes, and the single busiest air route within the country (up to 14–16 daily flights). Kuala Lumpur International Airport is about 45 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
+      "Kuala Lumpur to Kota Kinabalu is about 150 minutes, same time zone, operated by AirAsia as one of Malaysia's domestic routes, and the single busiest air route within the country (up to 14–16 daily flights). Kuala Lumpur International Airport is about 45 km from the city centre; Kota Kinabalu International Airport is about 7 km from the city centre.",
     },
   },
 
@@ -3849,9 +3849,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "吉隆坡到古晋飞约110分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型，全天多班）。吉隆坡国际机场距市区约45公里；古晋国际机场距市区约11公里。",
+      "吉隆坡到古晋飞约110分钟，同一时区，是亚洲航空运营的国内航班之一（全天多班）。吉隆坡国际机场距市区约45公里；古晋国际机场距市区约11公里。",
     "en-US":
-      "Kuala Lumpur to Kuching is about 110 minutes, same time zone, operated by AirAsia (Airbus A320, multiple flights daily) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Kuching International Airport is about 11 km from the city centre.",
+      "Kuala Lumpur to Kuching is about 110 minutes, same time zone, operated by AirAsia (multiple flights daily) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Kuching International Airport is about 11 km from the city centre.",
     },
   },
 
@@ -3866,9 +3866,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "吉隆坡到浮罗交怡飞约65分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型）。吉隆坡国际机场距市区约45公里；浮罗交怡国际机场距瓜镇约11公里。浮罗交怡是马来西亚知名的免税购物与度假岛屿。",
+      "吉隆坡到浮罗交怡飞约65分钟，同一时区，是亚洲航空运营的国内航班之一。吉隆坡国际机场距市区约45公里；浮罗交怡国际机场距瓜镇约11公里。浮罗交怡是马来西亚知名的免税购物与度假岛屿。",
     "en-US":
-      "Kuala Lumpur to Langkawi is about 65 minutes, same time zone, operated by AirAsia (Airbus A320) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Langkawi International Airport is about 11 km from Kuah town. Langkawi is a well-known duty-free shopping and resort island in Malaysia.",
+      "Kuala Lumpur to Langkawi is about 65 minutes, same time zone, operated by AirAsia as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Langkawi International Airport is about 11 km from Kuah town. Langkawi is a well-known duty-free shopping and resort island in Malaysia.",
     },
   },
 
@@ -3883,9 +3883,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "吉隆坡到哥打巴鲁飞约60分钟，同一时区，是亚洲航空运营的国内航班之一（空客A320机型）。吉隆坡国际机场距市区约45公里；苏丹依斯迈布特拉机场距市区约8公里。",
+      "吉隆坡到哥打巴鲁飞约60分钟，同一时区，是亚洲航空运营的国内航班之一。吉隆坡国际机场距市区约45公里；苏丹依斯迈布特拉机场距市区约8公里。",
     "en-US":
-      "Kuala Lumpur to Kota Bharu is about 60 minutes, same time zone, operated by AirAsia (Airbus A320) as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Sultan Ismail Petra Airport is about 8 km from the city centre.",
+      "Kuala Lumpur to Kota Bharu is about 60 minutes, same time zone, operated by AirAsia as one of Malaysia's domestic routes. Kuala Lumpur International Airport is about 45 km from the city centre; Sultan Ismail Petra Airport is about 8 km from the city centre.",
     },
   },
 
@@ -3933,9 +3933,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "乌兰巴托到科布多飞约120分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；科布多机场距市区很近。科布多是探索蒙古西部多民族聚居区与蒙古阿尔泰山的重要门户。",
+      "乌兰巴托到科布多飞约120分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；科布多机场距市区很近。科布多是探索蒙古西部多民族聚居区与蒙古阿尔泰山的重要门户。",
     "en-US":
-      "Ulaanbaatar to Khovd is about 120 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Khovd Airport is close to the city centre. Khovd is an important gateway for western Mongolia's multi-ethnic communities and the Mongol Altai.",
+      "Ulaanbaatar to Khovd is about 120 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Khovd Airport is close to the city centre. Khovd is an important gateway for western Mongolia's multi-ethnic communities and the Mongol Altai.",
     },
   },
 
@@ -3950,9 +3950,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "乌兰巴托到乌力吉飞约140分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型），每年4至10月运营。成吉思汗国际机场距市区约52公里；乌力吉国际机场距市区很近。乌力吉是探索塔王博格达山群与哈萨克族传统文化的重要门户。",
+      "乌兰巴托到乌力吉飞约140分钟，同一时区，是航蒙航空运营的国内航班之一，每年4至10月运营。成吉思汗国际机场距市区约52公里；乌力吉国际机场距市区很近。乌力吉是探索塔王博格达山群与哈萨克族传统文化的重要门户。",
     "en-US":
-      "Ulaanbaatar to Ölgii is about 140 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes, running April through October. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Ölgii International Airport is close to the city centre. Ölgii is an important gateway to the Tavan Bogd massif and traditional Kazakh culture.",
+      "Ulaanbaatar to Ölgii is about 140 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes, running April through October. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Ölgii International Airport is close to the city centre. Ölgii is an important gateway to the Tavan Bogd massif and traditional Kazakh culture.",
     },
   },
 
@@ -3967,9 +3967,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "乌兰巴托到木伦飞约70分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；木伦机场距市区很近。木伦是探索库苏古尔湖的理想门户，从市区到湖南岸的哈特嘎尔村约需1至1.5小时车程。",
+      "乌兰巴托到木伦飞约70分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；木伦机场距市区很近。木伦是探索库苏古尔湖的理想门户，从市区到湖南岸的哈特嘎尔村约需1至1.5小时车程。",
     "en-US":
-      "Ulaanbaatar to Mörön is about 70 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Mörön Airport is close to the city centre. Mörön is an ideal gateway for exploring Lake Khövsgöl; the drive from town to Khatgal village on the south shore takes about 1 to 1.5 hours.",
+      "Ulaanbaatar to Mörön is about 70 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Mörön Airport is close to the city centre. Mörön is an ideal gateway for exploring Lake Khövsgöl; the drive from town to Khatgal village on the south shore takes about 1 to 1.5 hours.",
     },
   },
 
@@ -3984,9 +3984,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "乌兰巴托到达兰扎德嘎德飞约60分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；达兰扎德嘎德机场距市区很近。达兰扎德嘎德是探索洪戈林额勒斯沙丘、约林音峡谷与巴彦扎格的理想门户。",
+      "乌兰巴托到达兰扎德嘎德飞约60分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；达兰扎德嘎德机场距市区很近。达兰扎德嘎德是探索洪戈林额勒斯沙丘、约林音峡谷与巴彦扎格的理想门户。",
     "en-US":
-      "Ulaanbaatar to Dalanzadgad is about 60 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Dalanzadgad Airport is close to the city centre. Dalanzadgad is an ideal gateway for exploring Khongoryn Els, Yolyn Am and Bayanzag.",
+      "Ulaanbaatar to Dalanzadgad is about 60 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Dalanzadgad Airport is close to the city centre. Dalanzadgad is an ideal gateway for exploring Khongoryn Els, Yolyn Am and Bayanzag.",
     },
   },
 
@@ -4001,9 +4001,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "乌兰巴托到乔巴山飞约75分钟，同一时区，是航蒙航空运营的国内航班之一（空客A319机型）。成吉思汗国际机场距市区约52公里；乔巴山机场距市区很近。乔巴山是探索蒙古达乌尔严格保护区与东部草原游牧生活的理想门户。",
+      "乌兰巴托到乔巴山飞约75分钟，同一时区，是航蒙航空运营的国内航班之一。成吉思汗国际机场距市区约52公里；乔巴山机场距市区很近。乔巴山是探索蒙古达乌尔严格保护区与东部草原游牧生活的理想门户。",
     "en-US":
-      "Ulaanbaatar to Choibalsan is about 75 minutes, same time zone, operated by Aero Mongolia (Airbus A319) as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Choibalsan Airport is close to the city centre. Choibalsan is an ideal gateway for exploring the Mongol Daguur Strictly Protected Area and nomadic life on the eastern steppe.",
+      "Ulaanbaatar to Choibalsan is about 75 minutes, same time zone, operated by Aero Mongolia as one of Mongolia's domestic routes. Chinggis Khaan International Airport is about 52 km from Ulaanbaatar; Choibalsan Airport is close to the city centre. Choibalsan is an ideal gateway for exploring the Mongol Daguur Strictly Protected Area and nomadic life on the eastern steppe.",
     },
   },
 
@@ -4018,9 +4018,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "马尼拉到宿务飞约95分钟，同一时区，是宿务太平洋航空运营的国内航班之一（空客A320机型，全天多班），是菲律宾客流量最高的国内航线。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；麦克坦—宿务国际机场距宿务市区约16公里。",
+      "马尼拉到宿务飞约95分钟，同一时区，是宿务太平洋航空运营的国内航班之一（全天多班），是菲律宾客流量最高的国内航线。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；麦克坦—宿务国际机场距宿务市区约16公里。",
     "en-US":
-      "Manila to Cebu is about 95 minutes, same time zone, operated by Cebu Pacific (Airbus A320, multiple flights daily) as one of the Philippines' domestic routes, and the country's busiest domestic route by passenger volume. Ninoy Aquino International Airport is about 7 km from central Manila; Mactan-Cebu International Airport is about 16 km from central Cebu City.",
+      "Manila to Cebu is about 95 minutes, same time zone, operated by Cebu Pacific (multiple flights daily) as one of the Philippines' domestic routes, and the country's busiest domestic route by passenger volume. Ninoy Aquino International Airport is about 7 km from central Manila; Mactan-Cebu International Airport is about 16 km from central Cebu City.",
     },
   },
 
@@ -4035,9 +4035,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空运营的国内航班之一（波音777机型）。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
+      "马尼拉到达沃飞约130分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
     "en-US":
-      "Manila to Davao is about 130 minutes, same time zone, operated by Philippine Airlines (Boeing 777) as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Francisco Bangoy International Airport is about 11 km from central Davao.",
+      "Manila to Davao is about 130 minutes, same time zone, operated by Philippine Airlines as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Francisco Bangoy International Airport is about 11 km from central Davao.",
     },
   },
 
@@ -4052,9 +4052,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "马尼拉到普林塞萨港飞约90分钟，同一时区，是宿务太平洋航空运营的国内航班之一（空客A320机型）。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；普林塞萨港国际机场距市区约4公里。",
+      "马尼拉到普林塞萨港飞约90分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；普林塞萨港国际机场距市区约4公里。",
     "en-US":
-      "Manila to Puerto Princesa is about 90 minutes, same time zone, operated by Cebu Pacific (Airbus A320) as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Puerto Princesa International Airport is about 4 km from the city centre.",
+      "Manila to Puerto Princesa is about 90 minutes, same time zone, operated by Cebu Pacific as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Puerto Princesa International Airport is about 4 km from the city centre.",
     },
   },
 
@@ -4069,9 +4069,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "马尼拉到长滩岛飞约75分钟，同一时区，是宿务太平洋航空运营的国内航班之一（空客A320机型）。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；卡蒂克兰机场距长滩岛需转乘渡船约10分钟。",
+      "马尼拉到长滩岛飞约75分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；卡蒂克兰机场距长滩岛需转乘渡船约10分钟。",
     "en-US":
-      "Manila to Boracay is about 75 minutes, same time zone, operated by Cebu Pacific (Airbus A320) as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; from Caticlan Airport, a roughly 10-minute ferry ride is needed to reach Boracay Island.",
+      "Manila to Boracay is about 75 minutes, same time zone, operated by Cebu Pacific as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; from Caticlan Airport, a roughly 10-minute ferry ride is needed to reach Boracay Island.",
     },
   },
 
@@ -4086,9 +4086,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "马尼拉到科隆飞约65分钟，同一时区，是菲律宾航空运营的国内航班之一（空客A320机型）。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；布桑加机场距科隆镇区约30公里，需转乘公路前往。",
+      "马尼拉到科隆飞约65分钟，同一时区，是菲律宾航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；布桑加机场距科隆镇区约30公里，需转乘公路前往。",
     "en-US":
-      "Manila to Coron is about 65 minutes, same time zone, operated by Philippine Airlines (Airbus A320) as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Busuanga Airport is about 30 km from Coron town, requiring a road transfer.",
+      "Manila to Coron is about 65 minutes, same time zone, operated by Philippine Airlines as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Busuanga Airport is about 30 km from Coron town, requiring a road transfer.",
     },
   },
 
@@ -4103,9 +4103,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "马尼拉到塔比拉兰飞约100分钟，同一时区，是宿务太平洋航空运营的国内航班之一（空客A320机型）。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；保和—邦劳国际机场距塔比拉兰市区约18公里。",
+      "马尼拉到塔比拉兰飞约100分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；保和—邦劳国际机场距塔比拉兰市区约18公里。",
     "en-US":
-      "Manila to Tagbilaran is about 100 minutes, same time zone, operated by Cebu Pacific (Airbus A320) as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Bohol-Panglao International Airport is about 18 km from central Tagbilaran.",
+      "Manila to Tagbilaran is about 100 minutes, same time zone, operated by Cebu Pacific as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Bohol-Panglao International Airport is about 18 km from central Tagbilaran.",
     },
   },
 
@@ -4120,9 +4120,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "马尼拉到黎牙实比飞约60分钟，同一时区，是宿务太平洋航空运营的国内航班之一（空客A320机型）。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；比科尔国际机场距黎牙实比市区约8公里。",
+      "马尼拉到黎牙实比飞约60分钟，同一时区，是宿务太平洋航空运营的国内航班之一。尼诺伊·阿基诺国际机场距马尼拉市区约7公里；比科尔国际机场距黎牙实比市区约8公里。",
     "en-US":
-      "Manila to Legazpi is about 60 minutes, same time zone, operated by Cebu Pacific (Airbus A320) as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Bicol International Airport is about 8 km from central Legazpi.",
+      "Manila to Legazpi is about 60 minutes, same time zone, operated by Cebu Pacific as one of the Philippines' domestic routes. Ninoy Aquino International Airport is about 7 km from central Manila; Bicol International Airport is about 8 km from central Legazpi.",
     },
   },
 
@@ -4137,9 +4137,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "宿务到达沃飞约65分钟，同一时区，是宿务太平洋航空运营的国内航班之一（空客A320机型）。麦克坦—宿务国际机场距宿务市区约16公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
+      "宿务到达沃飞约65分钟，同一时区，是宿务太平洋航空运营的国内航班之一。麦克坦—宿务国际机场距宿务市区约16公里；弗朗西斯科·邦戈伊国际机场距达沃市区约11公里。",
     "en-US":
-      "Cebu to Davao is about 65 minutes, same time zone, operated by Cebu Pacific (Airbus A320) as one of the Philippines' domestic routes. Mactan-Cebu International Airport is about 16 km from central Cebu City; Francisco Bangoy International Airport is about 11 km from central Davao.",
+      "Cebu to Davao is about 65 minutes, same time zone, operated by Cebu Pacific as one of the Philippines' domestic routes. Mactan-Cebu International Airport is about 16 km from central Cebu City; Francisco Bangoy International Airport is about 11 km from central Davao.",
     },
   },
 
@@ -4154,9 +4154,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "雅加达到登巴萨飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型），是印尼客流量最大的单一航线。苏加诺—哈达国际机场距雅加达市区约20公里；伍拉赖国际机场距登巴萨市区约13公里。",
+      "雅加达到登巴萨飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一，是印尼客流量最大的单一航线。苏加诺—哈达国际机场距雅加达市区约20公里；伍拉赖国际机场距登巴萨市区约13公里。",
     "en-US":
-      "Jakarta to Denpasar is about 100 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as Indonesia's single busiest domestic route. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Ngurah Rai International Airport is about 13 km from central Denpasar.",
+      "Jakarta to Denpasar is about 100 minutes, same time zone, operated by Garuda Indonesia as Indonesia's single busiest domestic route. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Ngurah Rai International Airport is about 13 km from central Denpasar.",
     },
   },
 
@@ -4171,9 +4171,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "雅加达到泗水飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型），全天多个班次往返。苏加诺—哈达国际机场距雅加达市区约20公里；朱安达国际机场距泗水市区约20公里。",
+      "雅加达到泗水飞约100分钟，同一时区，是鹰航印尼运营的国内航班之一，全天多个班次往返。苏加诺—哈达国际机场距雅加达市区约20公里；朱安达国际机场距泗水市区约20公里。",
     "en-US":
-      "Jakarta to Surabaya is about 100 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as one of Indonesia's domestic routes, with multiple daily flights. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Juanda International Airport is about 20 km from central Surabaya.",
+      "Jakarta to Surabaya is about 100 minutes, same time zone, operated by Garuda Indonesia as one of Indonesia's domestic routes, with multiple daily flights. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Juanda International Airport is about 20 km from central Surabaya.",
     },
   },
 
@@ -4188,9 +4188,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "雅加达到棉兰飞约145分钟，同一时区，是鹰航印尼GA118航班运营的国内航线之一（波音737-800机型，每周7班）。苏加诺—哈达国际机场距雅加达市区约20公里；瓜拉纳姆国际机场距棉兰市区约39公里。",
+      "雅加达到棉兰飞约145分钟，同一时区，是鹰航印尼运营的国内航线之一（每周7班）。苏加诺—哈达国际机场距雅加达市区约20公里；瓜拉纳姆国际机场距棉兰市区约39公里。",
     "en-US":
-      "Jakarta to Medan is about 145 minutes, same time zone, operated by Garuda Indonesia flight GA118 (Boeing 737-800, 7 flights weekly) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Kualanamu International Airport is about 39 km from central Medan.",
+      "Jakarta to Medan is about 145 minutes, same time zone, operated by Garuda Indonesia (7 flights weekly) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Kualanamu International Airport is about 39 km from central Medan.",
     },
   },
 
@@ -4205,9 +4205,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "雅加达到望加锡飞约150分钟，同一时区，是鹰航印尼GA608航班运营的国内航线之一（空客A330-900机型）。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹哈桑努丁国际机场距望加锡市区约21公里。",
+      "雅加达到望加锡飞约150分钟，同一时区，是鹰航印尼运营的国内航线之一。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹哈桑努丁国际机场距望加锡市区约21公里。",
     "en-US":
-      "Jakarta to Makassar is about 150 minutes, same time zone, operated by Garuda Indonesia flight GA608 (Airbus A330-900) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Sultan Hasanuddin International Airport is about 21 km from central Makassar.",
+      "Jakarta to Makassar is about 150 minutes, same time zone, operated by Garuda Indonesia as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Sultan Hasanuddin International Airport is about 21 km from central Makassar.",
     },
   },
 
@@ -4222,9 +4222,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "雅加达到巴厘巴板飞约135分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型）。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹阿吉穆罕默德苏莱曼机场距巴厘巴板市区约11公里。",
+      "雅加达到巴厘巴板飞约135分钟，同一时区，是鹰航印尼运营的国内航班之一。苏加诺—哈达国际机场距雅加达市区约20公里；苏丹阿吉穆罕默德苏莱曼机场距巴厘巴板市区约11公里。",
     "en-US":
-      "Jakarta to Balikpapan is about 135 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Sultan Aji Muhammad Sulaiman Airport is about 11 km from central Balikpapan.",
+      "Jakarta to Balikpapan is about 135 minutes, same time zone, operated by Garuda Indonesia as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Sultan Aji Muhammad Sulaiman Airport is about 11 km from central Balikpapan.",
     },
   },
 
@@ -4239,9 +4239,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "雅加达到邦卡兰文飞约85分钟，同一时区，是巴迪克航空运营的国内航班之一（空客A320机型）。苏加诺—哈达国际机场距雅加达市区约20公里；伊斯坎达尔机场距邦卡兰文市区约3公里。",
+      "雅加达到邦卡兰文飞约85分钟，同一时区，是巴迪克航空运营的国内航班之一。苏加诺—哈达国际机场距雅加达市区约20公里；伊斯坎达尔机场距邦卡兰文市区约3公里。",
     "en-US":
-      "Jakarta to Pangkalan Bun is about 85 minutes, same time zone, operated by Batik Air (Airbus A320) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Iskandar Airport is about 3 km from central Pangkalan Bun.",
+      "Jakarta to Pangkalan Bun is about 85 minutes, same time zone, operated by Batik Air as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Iskandar Airport is about 3 km from central Pangkalan Bun.",
     },
   },
 
@@ -4256,9 +4256,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "登巴萨到拉布安巴焦飞约80分钟，同一时区，是巴迪克航空运营的国内航班之一（空客A320机型，每周28班）。伍拉赖国际机场距登巴萨市区约13公里；科莫多机场距拉布安巴焦市区约2公里。",
+      "登巴萨到拉布安巴焦飞约80分钟，同一时区，是巴迪克航空运营的国内航班之一（每周28班）。伍拉赖国际机场距登巴萨市区约13公里；科莫多机场距拉布安巴焦市区约2公里。",
     "en-US":
-      "Denpasar to Labuan Bajo is about 80 minutes, same time zone, operated by Batik Air (Airbus A320, 28 flights weekly) as one of Indonesia's domestic routes. Ngurah Rai International Airport is about 13 km from central Denpasar; Komodo Airport is about 2 km from central Labuan Bajo.",
+      "Denpasar to Labuan Bajo is about 80 minutes, same time zone, operated by Batik Air as one of Indonesia's domestic routes. Ngurah Rai International Airport is about 13 km from central Denpasar; Komodo Airport is about 2 km from central Labuan Bajo.",
     },
   },
 
@@ -4273,9 +4273,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "望加锡到万鸦老飞约115分钟，同一时区，是鹰航印尼运营的国内航班之一（波音737-800机型）。苏丹哈桑努丁国际机场距望加锡市区约21公里；萨姆拉图兰吉国际机场距万鸦老市区约13公里。",
+      "望加锡到万鸦老飞约115分钟，同一时区，是鹰航印尼运营的国内航班之一。苏丹哈桑努丁国际机场距望加锡市区约21公里；萨姆拉图兰吉国际机场距万鸦老市区约13公里。",
     "en-US":
-      "Makassar to Manado is about 115 minutes, same time zone, operated by Garuda Indonesia (Boeing 737-800) as one of Indonesia's domestic routes. Sultan Hasanuddin International Airport is about 21 km from central Makassar; Sam Ratulangi International Airport is about 13 km from central Manado.",
+      "Makassar to Manado is about 115 minutes, same time zone, operated by Garuda Indonesia as one of Indonesia's domestic routes. Sultan Hasanuddin International Airport is about 21 km from central Makassar; Sam Ratulangi International Airport is about 13 km from central Manado.",
     },
   },
 
@@ -4290,9 +4290,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "雅加达到日惹飞约75分钟，同一时区，是鹰航印尼GA206航班运营的国内航线之一（波音737-800机型，每日运营）。苏加诺—哈达国际机场距雅加达市区约20公里；日惹国际机场（YIA）距日惹市区约45公里，有机场铁路直达。",
+      "雅加达到日惹飞约75分钟，同一时区，是鹰航印尼运营的国内航线之一（每日运营）。苏加诺—哈达国际机场距雅加达市区约20公里；日惹国际机场（YIA）距日惹市区约45公里，有机场铁路直达。",
     "en-US":
-      "Jakarta to Yogyakarta is about 75 minutes, same time zone, operated by Garuda Indonesia flight GA206 (Boeing 737-800, daily service) as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Yogyakarta International Airport (YIA) is about 45 km from central Yogyakarta, with a direct airport rail link.",
+      "Jakarta to Yogyakarta is about 75 minutes, same time zone, operated by Garuda Indonesia as one of Indonesia's domestic routes. Soekarno-Hatta International Airport is about 20 km from central Jakarta; Yogyakarta International Airport (YIA) is about 45 km from central Yogyakarta, with a direct airport rail link.",
     },
   },
 
@@ -4307,9 +4307,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿斯塔纳到阿拉木图飞约110分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（空客A321机型，全天约9班），是哈萨克斯坦客流量最大的单一航线。阿斯塔纳国际机场距市区约17公里；阿拉木图国际机场距市区约18公里。",
+      "阿斯塔纳到阿拉木图飞约110分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（全天约9班），是哈萨克斯坦客流量最大的单一航线。阿斯塔纳国际机场距市区约17公里；阿拉木图国际机场距市区约18公里。",
     "en-US":
-      "Astana to Almaty is about 110 minutes, same time zone, operated by Air Astana (Airbus A321, about 9 flights daily) as Kazakhstan's single busiest domestic route. Astana International Airport is about 17 km from the city centre; Almaty International Airport is about 18 km from the city centre.",
+      "Astana to Almaty is about 110 minutes, same time zone, operated by Air Astana (about 9 flights daily) as Kazakhstan's single busiest domestic route. Astana International Airport is about 17 km from the city centre; Almaty International Airport is about 18 km from the city centre.",
     },
   },
 
@@ -4324,9 +4324,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿拉木图到阿克套飞约200分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（波音757机型，每周约33班）。阿拉木图国际机场距市区约18公里；阿克套国际机场距市区约25公里。",
+      "阿拉木图到阿克套飞约200分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约33班）。阿拉木图国际机场距市区约18公里；阿克套国际机场距市区约25公里。",
     "en-US":
-      "Almaty to Aktau is about 200 minutes, same time zone, operated by Air Astana (Boeing 757, about 33 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
+      "Almaty to Aktau is about 200 minutes, same time zone, operated by Air Astana (about 33 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
     },
   },
 
@@ -4341,9 +4341,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿斯塔纳到希姆肯特飞约100分钟，同一时区，是哈萨克斯坦航空/飞阿雷斯坦/天狼星航空共同运营的国内航班之一（空客A320机型，每周约54班）。阿斯塔纳国际机场距市区约17公里；希姆肯特国际机场距市区约12公里。",
+      "阿斯塔纳到希姆肯特飞约100分钟，同一时区，是哈萨克斯坦航空/飞阿雷斯坦/天狼星航空共同运营的国内航班之一（每周约54班）。阿斯塔纳国际机场距市区约17公里；希姆肯特国际机场距市区约12公里。",
     "en-US":
-      "Astana to Shymkent is about 100 minutes, same time zone, jointly operated by Air Astana, FlyArystan and SCAT (Airbus A320, about 54 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
+      "Astana to Shymkent is about 100 minutes, same time zone, jointly operated by Air Astana, FlyArystan and SCAT (about 54 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
     },
   },
 
@@ -4358,9 +4358,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿拉木图到希姆肯特飞约80分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（空客A320机型，每周约10班）。阿拉木图国际机场距市区约18公里；希姆肯特国际机场距市区约12公里。",
+      "阿拉木图到希姆肯特飞约80分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约10班）。阿拉木图国际机场距市区约18公里；希姆肯特国际机场距市区约12公里。",
     "en-US":
-      "Almaty to Shymkent is about 80 minutes, same time zone, operated by Air Astana (Airbus A320, about 10 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
+      "Almaty to Shymkent is about 80 minutes, same time zone, operated by Air Astana (about 10 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Shymkent International Airport is about 12 km from the city centre.",
     },
   },
 
@@ -4375,9 +4375,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿斯塔纳到谢梅伊飞约85分钟，同一时区，是哈萨克斯坦航空KC7352航班运营的国内航线之一（巴西航空工业E190机型）。阿斯塔纳国际机场距市区约17公里；谢梅伊机场距市区约7公里。",
+      "阿斯塔纳到谢梅伊飞约85分钟，同一时区，是哈萨克斯坦航空运营的国内航线之一（巴西航空工业E190机型）。阿斯塔纳国际机场距市区约17公里；谢梅伊机场距市区约7公里。",
     "en-US":
-      "Astana to Semey is about 85 minutes, same time zone, operated by Air Astana flight KC7352 (Embraer E190) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Semey Airport is about 7 km from the city centre.",
+      "Astana to Semey is about 85 minutes, same time zone, operated by Air Astana (Embraer E190) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Semey Airport is about 7 km from the city centre.",
     },
   },
 
@@ -4392,9 +4392,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿斯塔纳到巴甫洛达尔飞约75分钟，同一时区，是哈萨克航空IQ372航班运营的国内航线之一（德哈维兰Dash 8机型）。阿斯塔纳国际机场距市区约17公里；巴甫洛达尔机场距市区约13公里。",
+      "阿斯塔纳到巴甫洛达尔飞约75分钟，同一时区，是哈萨克航空运营的国内航线之一（德哈维兰Dash 8机型）。阿斯塔纳国际机场距市区约17公里；巴甫洛达尔机场距市区约13公里。",
     "en-US":
-      "Astana to Pavlodar is about 75 minutes, same time zone, operated by Qazaq Air flight IQ372 (De Havilland Dash 8) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Pavlodar Airport is about 13 km from the city centre.",
+      "Astana to Pavlodar is about 75 minutes, same time zone, operated by Qazaq Air (De Havilland Dash 8) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Pavlodar Airport is about 13 km from the city centre.",
     },
   },
 
@@ -4409,9 +4409,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿斯塔纳到阿克套飞约165分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（空客A321机型，每周约11班）。阿斯塔纳国际机场距市区约17公里；阿克套国际机场距市区约25公里。",
+      "阿斯塔纳到阿克套飞约165分钟，同一时区，是哈萨克斯坦航空运营的国内航班之一（每周约11班）。阿斯塔纳国际机场距市区约17公里；阿克套国际机场距市区约25公里。",
     "en-US":
-      "Astana to Aktau is about 165 minutes, same time zone, operated by Air Astana (Airbus A321, about 11 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
+      "Astana to Aktau is about 165 minutes, same time zone, operated by Air Astana (about 11 flights weekly) as one of Kazakhstan's domestic routes. Astana International Airport is about 17 km from the city centre; Aktau International Airport is about 25 km from the city centre.",
     },
   },
 
@@ -4426,9 +4426,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "阿拉木图到突厥斯坦飞约95分钟，同一时区，是飞阿雷斯坦航空FS7161航班运营的国内航线之一（空客A320机型，每周约3班）。阿拉木图国际机场距市区约18公里；哈兹拉特苏丹国际机场距突厥斯坦市区约16公里。",
+      "阿拉木图到突厥斯坦飞约95分钟，同一时区，是飞阿雷斯坦航空运营的国内航线之一（每周约3班）。阿拉木图国际机场距市区约18公里；哈兹拉特苏丹国际机场距突厥斯坦市区约16公里。",
     "en-US":
-      "Almaty to Turkestan is about 95 minutes, same time zone, operated by FlyArystan flight FS7161 (Airbus A320, about 3 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Hazrat Sultan International Airport is about 16 km from central Turkestan.",
+      "Almaty to Turkestan is about 95 minutes, same time zone, operated by FlyArystan (about 3 flights weekly) as one of Kazakhstan's domestic routes. Almaty International Airport is about 18 km from the city centre; Hazrat Sultan International Airport is about 16 km from central Turkestan.",
     },
   },
 
@@ -4443,9 +4443,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到安卡拉飞约55分钟，同一时区，是土耳其航空运营的国内航班之一（空客A321机型），是土耳其两大城市间客流量最大的航线之一。伊斯坦布尔机场距欧洲区市中心约35公里；埃森博阿机场距安卡拉市区约28公里。",
+      "伊斯坦布尔到安卡拉飞约55分钟，同一时区，是土耳其航空运营的国内航班之一，是土耳其两大城市间客流量最大的航线之一。伊斯坦布尔机场距欧洲区市中心约35公里；埃森博阿机场距安卡拉市区约28公里。",
     "en-US":
-      "Istanbul to Ankara is about 55 minutes, same time zone, operated by Turkish Airlines (Airbus A321) as one of the busiest domestic routes between Turkey's two largest cities. Istanbul Airport is about 35 km from the European-side city centre; Esenboğa Airport is about 28 km from central Ankara.",
+      "Istanbul to Ankara is about 55 minutes, same time zone, operated by Turkish Airlines as one of the busiest domestic routes between Turkey's two largest cities. Istanbul Airport is about 35 km from the European-side city centre; Esenboğa Airport is about 28 km from central Ankara.",
     },
   },
 
@@ -4460,9 +4460,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到伊兹密尔飞约70分钟，同一时区，是土耳其航空运营的国内航班之一（波音737-800机型）。伊斯坦布尔机场距欧洲区市中心约35公里；阿德南·门德雷斯机场距伊兹密尔市区约18公里。",
+      "伊斯坦布尔到伊兹密尔飞约70分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；阿德南·门德雷斯机场距伊兹密尔市区约18公里。",
     "en-US":
-      "Istanbul to Izmir is about 70 minutes, same time zone, operated by Turkish Airlines (Boeing 737-800) as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Adnan Menderes Airport is about 18 km from central Izmir.",
+      "Istanbul to Izmir is about 70 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Adnan Menderes Airport is about 18 km from central Izmir.",
     },
   },
 
@@ -4477,9 +4477,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到安塔利亚飞约85分钟，同一时区，是土耳其航空运营的国内航班之一（空客A321机型），是土耳其客流量最大的国内航线之一。伊斯坦布尔机场距欧洲区市中心约35公里；安塔利亚机场距市区约13公里。",
+      "伊斯坦布尔到安塔利亚飞约85分钟，同一时区，是土耳其航空运营的国内航班之一，是土耳其客流量最大的国内航线之一。伊斯坦布尔机场距欧洲区市中心约35公里；安塔利亚机场距市区约13公里。",
     "en-US":
-      "Istanbul to Antalya is about 85 minutes, same time zone, operated by Turkish Airlines (Airbus A321) as one of Turkey's busiest domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Antalya Airport is about 13 km from the city centre.",
+      "Istanbul to Antalya is about 85 minutes, same time zone, operated by Turkish Airlines as one of Turkey's busiest domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Antalya Airport is about 13 km from the city centre.",
     },
   },
 
@@ -4494,9 +4494,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到卡帕多奇亚飞约80分钟，同一时区，是AJet运营的国内航班之一（波音737 MAX 8机型）。伊斯坦布尔机场距欧洲区市中心约35公里；内夫谢希尔卡帕多奇亚机场距格雷梅约40公里，需再转乘约35至40分钟车程。",
+      "伊斯坦布尔到卡帕多奇亚飞约80分钟，同一时区，是AJet运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；内夫谢希尔卡帕多奇亚机场距格雷梅约40公里，需再转乘约35至40分钟车程。",
     "en-US":
-      "Istanbul to Cappadocia is about 80 minutes, same time zone, operated by AJet (Boeing 737 MAX 8) as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Nevşehir Kapadokya Airport is about 40 km from Göreme, requiring a further 35–40 minute transfer.",
+      "Istanbul to Cappadocia is about 80 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Nevşehir Kapadokya Airport is about 40 km from Göreme, requiring a further 35–40 minute transfer.",
     },
   },
 
@@ -4511,9 +4511,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到特拉布宗飞约105分钟，同一时区，是飞马航空运营的国内航班之一（波音737-800机型）。伊斯坦布尔机场距欧洲区市中心约35公里；特拉布宗机场距市区约6公里。",
+      "伊斯坦布尔到特拉布宗飞约105分钟，同一时区，是飞马航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；特拉布宗机场距市区约6公里。",
     "en-US":
-      "Istanbul to Trabzon is about 105 minutes, same time zone, operated by Pegasus Airlines (Boeing 737-800) as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Trabzon Airport is about 6 km from the city centre.",
+      "Istanbul to Trabzon is about 105 minutes, same time zone, operated by Pegasus Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Trabzon Airport is about 6 km from the city centre.",
     },
   },
 
@@ -4528,9 +4528,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是AJet运营的国内航班之一（空客A320neo机型）。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
+      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是AJet运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
     "en-US":
-      "Istanbul to Denizli is about 80 minutes, same time zone, operated by AJet (Airbus A320neo) as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport is about 65 km from Pamukkale.",
+      "Istanbul to Denizli is about 80 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport is about 65 km from Pamukkale.",
     },
   },
 
@@ -4545,9 +4545,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到博德鲁姆飞约75分钟，同一时区，是土耳其航空运营的国内航班之一（空客A321机型）。伊斯坦布尔机场距欧洲区市中心约35公里；米拉斯—博德鲁姆机场距博德鲁姆市区约36公里。",
+      "伊斯坦布尔到博德鲁姆飞约75分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；米拉斯—博德鲁姆机场距博德鲁姆市区约36公里。",
     "en-US":
-      "Istanbul to Bodrum is about 75 minutes, same time zone, operated by Turkish Airlines (Airbus A321) as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Milas–Bodrum Airport is about 36 km from central Bodrum.",
+      "Istanbul to Bodrum is about 75 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Milas–Bodrum Airport is about 36 km from central Bodrum.",
     },
   },
 
@@ -4562,9 +4562,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "安卡拉到安塔利亚飞约75分钟，同一时区，是AJet运营的国内航班之一（波音737-800机型）。埃森博阿机场距安卡拉市区约28公里；安塔利亚机场距市区约13公里。",
+      "安卡拉到安塔利亚飞约75分钟，同一时区，是AJet运营的国内航班之一。埃森博阿机场距安卡拉市区约28公里；安塔利亚机场距市区约13公里。",
     "en-US":
-      "Ankara to Antalya is about 75 minutes, same time zone, operated by AJet (Boeing 737-800) as one of Turkey's domestic routes. Esenboğa Airport is about 28 km from central Ankara; Antalya Airport is about 13 km from the city centre.",
+      "Ankara to Antalya is about 75 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Esenboğa Airport is about 28 km from central Ankara; Antalya Airport is about 13 km from the city centre.",
     },
   },
 
@@ -4579,9 +4579,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "安卡拉到科尼亚飞约50分钟，同一时区，是AJet运营的国内航班之一（空客A320机型）。埃森博阿机场距安卡拉市区约28公里；科尼亚机场距市区约18公里。",
+      "安卡拉到科尼亚飞约50分钟，同一时区，是AJet运营的国内航班之一。埃森博阿机场距安卡拉市区约28公里；科尼亚机场距市区约18公里。",
     "en-US":
-      "Ankara to Konya is about 50 minutes, same time zone, operated by AJet (Airbus A320) as one of Turkey's domestic routes. Esenboğa Airport is about 28 km from central Ankara; Konya Airport is about 18 km from the city centre.",
+      "Ankara to Konya is about 50 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Esenboğa Airport is about 28 km from central Ankara; Konya Airport is about 18 km from the city centre.",
     },
   },
 
@@ -4596,9 +4596,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "萨格勒布到斯普利特飞约50分钟，同一时区，是克罗地亚航空运营的国内航班之一（空客A220-300机型），是克罗地亚最繁忙的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；斯普利特机场距市区约19公里。",
+      "萨格勒布到斯普利特飞约50分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚最繁忙的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；斯普利特机场距市区约19公里。",
     "en-US":
-      "Zagreb to Split is about 50 minutes, same time zone, operated by Croatia Airlines (Airbus A220-300) as one of Croatia's busiest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Split Airport is about 19 km from the city centre.",
+      "Zagreb to Split is about 50 minutes, same time zone, operated by Croatia Airlines as one of Croatia's busiest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Split Airport is about 19 km from the city centre.",
     },
   },
 
@@ -4613,9 +4613,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "萨格勒布到杜布罗夫尼克飞约65分钟，同一时区，是克罗地亚航空运营的国内航班之一（空客A319机型），是克罗地亚跨度最大的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；杜布罗夫尼克机场距市区约20公里。",
+      "萨格勒布到杜布罗夫尼克飞约65分钟，同一时区，是克罗地亚航空运营的国内航班之一，是克罗地亚跨度最大的国内航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；杜布罗夫尼克机场距市区约20公里。",
     "en-US":
-      "Zagreb to Dubrovnik is about 65 minutes, same time zone, operated by Croatia Airlines (Airbus A319) as one of Croatia's longest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Dubrovnik Airport is about 20 km from the city centre.",
+      "Zagreb to Dubrovnik is about 65 minutes, same time zone, operated by Croatia Airlines as one of Croatia's longest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Dubrovnik Airport is about 20 km from the city centre.",
     },
   },
 
@@ -5686,10 +5686,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到卡拉马约2小时10分钟，智利南美航空空客A321执飞。卡拉马埃尔洛阿机场是前往圣佩德罗德阿塔卡马的主要中转站，机场有出租车与酒店接驳车，转陆路约1.5小时可达。" +
+      "圣地亚哥到卡拉马约2小时10分钟，智利南美航空执飞。卡拉马埃尔洛阿机场是前往圣佩德罗德阿塔卡马的主要中转站，机场有出租车与酒店接驳车，转陆路约1.5小时可达。" +
       "阿塔卡马地区海拔较高、气候极度干燥，紫外线强烈，建议随身携带防晒霜、墨镜与保暖衣物应对昼夜温差；月亮谷、塔蒂奥间歇泉等景点均需报名当地旅行团或包车前往。",
     "en-US":
-      "Santiago to Calama takes about 2 hours 10 minutes on a LATAM Airlines Chile Airbus A321. Calama's El Loa Airport is the main transfer point for San Pedro de Atacama, with taxis and hotel shuttles available and about a 1.5-hour drive overland." +
+      "Santiago to Calama takes about 2 hours 10 minutes on LATAM Airlines Chile. Calama's El Loa Airport is the main transfer point for San Pedro de Atacama, with taxis and hotel shuttles available and about a 1.5-hour drive overland." +
       "The Atacama region sits at higher elevation with an extremely dry climate and intense UV exposure — pack sunscreen, sunglasses, and warm layers for the temperature swing between day and night; sights like Valle de la Luna and the El Tatio geysers require a local tour or private transfer.",
     },
   },
@@ -5706,10 +5706,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到安托法加斯塔约2小时，智利南美航空空客A320执飞。塞罗莫雷诺机场距市区约22公里，出租车约20多分钟到市中心。" +
+      "圣地亚哥到安托法加斯塔约2小时，智利南美航空执飞。塞罗莫雷诺机场距市区约22公里，出租车约20多分钟到市中心。" +
       "当地气候极度干燥、几乎全年无雨，紫外线强烈，需做好防晒；拉波塔达海蚀拱是市郊最著名的自然景点，可包车或参加当地半日游前往。",
     "en-US":
-      "Santiago to Antofagasta takes about 2 hours on a LATAM Airlines Chile Airbus A320. Cerro Moreno Airport is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
+      "Santiago to Antofagasta takes about 2 hours on LATAM Airlines Chile. Cerro Moreno Airport is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
       "The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the most famous natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
     },
   },
@@ -5726,10 +5726,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到拉塞雷纳约1小时10分钟，智利南美航空空客A321执飞。拉弗洛里达机场距市区约5公里，出租车很快可到市中心。" +
+      "圣地亚哥到拉塞雷纳约1小时10分钟，智利南美航空执飞。拉弗洛里达机场距市区约5公里，出租车很快可到市中心。" +
       "拉塞雷纳本身有绵延的海滩与殖民风格老城区，若想探访埃尔基谷或预约天文台观星，建议报名当地旅行团或自驾，天文台参观多需提前预约。",
     "en-US":
-      "Santiago to La Serena takes about 1 hour 10 minutes on a LATAM Airlines Chile Airbus A321. La Florida Airport is about 5 km from downtown, a short taxi ride to the city center." +
+      "Santiago to La Serena takes about 1 hour 10 minutes on LATAM Airlines Chile. La Florida Airport is about 5 km from downtown, a short taxi ride to the city center." +
       "La Serena itself has long stretches of beach and a colonial-era old town; to visit Elqui Valley or book an observatory stargazing session, a local tour or rental car is recommended, and most observatories require advance reservations.",
     },
   },
@@ -5746,10 +5746,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到康塞普西翁约55分钟，智利南美航空空客A320执飞。卡列尔苏尔机场距市区约15公里，有公交与出租车往返市区。" +
+      "圣地亚哥到康塞普西翁约55分钟，智利南美航空执飞。卡列尔苏尔机场距市区约15公里，有公交与出租车往返市区。" +
       "康塞普西翁是重要的大学城，比奥比奥大学校园及周边是年轻人聚集的活力街区；当地冬季多雨，出行建议携带雨具，沿海区域入住时可留意酒店的海啸疏散指示。",
     "en-US":
-      "Santiago to Concepción takes about 55 minutes on a LATAM Airlines Chile Airbus A320. Carriel Sur Airport is about 15 km from downtown, with buses and taxis into the city." +
+      "Santiago to Concepción takes about 55 minutes on LATAM Airlines Chile. Carriel Sur Airport is about 15 km from downtown, with buses and taxis into the city." +
       "Concepción is an important university city, with the University of Concepción campus and surrounding streets forming a lively student district; winters here are rainy, so pack rain gear, and it's worth noting hotel tsunami-evacuation signage in coastal areas.",
     },
   },
@@ -5766,10 +5766,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到特木科约1小时25分钟，智利南美航空空客A320执飞。拉阿劳卡尼亚机场距市区约6公里，有出租车与公交往返市区。" +
+      "圣地亚哥到特木科约1小时25分钟，智利南美航空执飞。拉阿劳卡尼亚机场距市区约6公里，有出租车与公交往返市区。" +
       "特木科本身是湖区门户城市，多数游客会在此换乘长途大巴或包车前往普孔、维亚里卡等热门小镇（车程约1小时）；埃斯特角农贸集市是体验马普切传统手工艺的重要窗口。",
     "en-US":
-      "Santiago to Temuco takes about 1 hour 25 minutes on a LATAM Airlines Chile Airbus A320. La Araucanía Airport is about 6 km from downtown, with taxis and buses into the city." +
+      "Santiago to Temuco takes about 1 hour 25 minutes on LATAM Airlines Chile. La Araucanía Airport is about 6 km from downtown, with taxis and buses into the city." +
       "Temuco itself is the Lake District's gateway city, and most visitors transfer here by long-distance bus or private transfer to reach popular towns like Pucón and Villarrica (about an hour's drive); the Feria Pinto market is an important place to experience Mapuche traditional crafts.",
     },
   },
@@ -5786,10 +5786,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到普埃托蒙特约1小时45分钟，智利南美航空空客A320执飞。埃尔特帕尔机场距市区约16公里，有出租车与酒店接驳车往返市区。" +
+      "圣地亚哥到普埃托蒙特约1小时45分钟，智利南美航空执飞。埃尔特帕尔机场距市区约16公里，有出租车与酒店接驳车往返市区。" +
       "普埃托蒙特是探访湖区南段（普埃托瓦拉斯、奥索尔诺）与奇洛埃群岛的重要基地，安赫尔莫渔人码头的海鲜市场是体验当地饮食文化的核心场所；当地全年降水较多，建议随身携带雨具。",
     "en-US":
-      "Santiago to Puerto Montt takes about 1 hour 45 minutes on a LATAM Airlines Chile Airbus A320. El Tepual Airport is about 16 km from downtown, with taxis and hotel shuttles into the city." +
+      "Santiago to Puerto Montt takes about 1 hour 45 minutes on LATAM Airlines Chile. El Tepual Airport is about 16 km from downtown, with taxis and hotel shuttles into the city." +
       "Puerto Montt is an important base for exploring the southern Lake District (Puerto Varas, Osorno) and the Chiloé Archipelago; the seafood market at the Angelmó wharf is the best place to experience local food culture. Rainfall is heavy year-round, so pack rain gear.",
     },
   },
@@ -5806,10 +5806,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到蓬塔阿雷纳斯约3小时35分钟，智利南美航空空客A321执飞，是智利国内最长的航线之一。卡洛斯·伊瓦涅斯·德尔坎波总统机场距市区约20公里，有出租车与巴士往返市区。" +
+      "圣地亚哥到蓬塔阿雷纳斯约3小时35分钟，智利南美航空执飞，是智利国内最长的航线之一。卡洛斯·伊瓦涅斯·德尔坎波总统机场距市区约20公里，有出租车与巴士往返市区。" +
       "蓬塔阿雷纳斯是前往百内国家公园（经普埃托纳塔莱斯转乘，车程约3小时）的主要门户，全年风力强劲，即使夏季也建议携带厚外套；前往南极的邮轮多从这里出发，旺季船票需提前数月预订。",
     "en-US":
-      "Santiago to Punta Arenas takes about 3 hours 35 minutes on a LATAM Airlines Chile Airbus A321, one of the longest domestic routes in Chile. Presidente Carlos Ibáñez del Campo Airport is about 20 km from downtown, with taxis and buses into the city." +
+      "Santiago to Punta Arenas takes about 3 hours 35 minutes on LATAM Airlines Chile, one of the longest domestic routes in Chile. Presidente Carlos Ibáñez del Campo Airport is about 20 km from downtown, with taxis and buses into the city." +
       "Punta Arenas is the main gateway to Torres del Paine National Park (via a roughly 3-hour transfer through Puerto Natales), with strong winds year-round — pack a heavy jacket even in summer; most Antarctic cruises depart from here, and tickets should be booked months ahead during peak season.",
     },
   },
@@ -5826,10 +5826,10 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "圣地亚哥到复活节岛约5小时35分钟，智利南美航空波音787-9执飞，是全球最孤立的航线之一。马塔维里机场就在汉加罗阿镇边缘，是全岛唯一的机场。" +
+      "圣地亚哥到复活节岛约5小时35分钟，智利南美航空执飞，是全球最孤立的航线之一。马塔维里机场就在汉加罗阿镇边缘，是全岛唯一的机场。" +
       "岛上物资依赖空运，物价普遍高于智利大陆，建议提前预订住宿与门票（拉帕努伊国家公园门票需在机场或岛上指定地点购买）；岛上无公共交通，租车或报名当地旅行团是探访分散遗址的主要方式，摩艾石像严禁攀爬或触摸。",
     "en-US":
-      "Santiago to Easter Island takes about 5 hours 35 minutes on a LATAM Airlines Chile Boeing 787-9, one of the most isolated air routes in the world. Mataveri Airport sits right at the edge of Hanga Roa town, the island's only airport." +
+      "Santiago to Easter Island takes about 5 hours 35 minutes on LATAM Airlines Chile, one of the most isolated air routes in the world. Mataveri Airport sits right at the edge of Hanga Roa town, the island's only airport." +
       "Since supplies are flown in, prices are generally higher than on mainland Chile, so book accommodation and tickets ahead (Rapa Nui National Park entry tickets must be purchased at the airport or designated points on the island); there's no public transit on the island, so renting a car or joining a local tour is the main way to reach the scattered archaeological sites, and climbing or touching the moai is strictly forbidden.",
     },
   },

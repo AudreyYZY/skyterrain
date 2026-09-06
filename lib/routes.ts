@@ -29,6 +29,25 @@ export function getRouteById(id: string): FlightRoute | undefined {
   return ROUTES.find((r) => r.id === id);
 }
 
+/**
+ * 航班信息是否已核实。
+ *
+ * 判据就是有没有 `source` 留痕。**未核实的航线一律不对外显示航班号/机型/时长**：
+ * 实测国际线 35 条查出 9 处错误、中国国内前 6 条查出 5 处，其中多条是「这个航班号
+ * 根本不飞这条航线」（CA1287 实飞北京→敦煌、CZ3101 实际落地大兴、3U8633 实飞重庆→拉萨）。
+ * 与其把没核过的数字照样摆出去，不如只显示核过的 —— 没核的就不装作可信。
+ *
+ * 航线本身与沿途地理不受影响：航点来自地形注册表，另有各自的 source。
+ */
+export function isFlightVerified(route: FlightRoute): boolean {
+  return Boolean(route.source?.ref && route.source?.checkedOn);
+}
+
+/** 已核实才返回航班信息，否则 undefined —— 界面与搜索都只认这个 */
+export function verifiedFlight(route: FlightRoute): FlightRoute["flight"] | undefined {
+  return isFlightVerified(route) ? route.flight : undefined;
+}
+
 export function isDomesticRoute(route: FlightRoute): boolean {
   return route.depCountry === route.arrCountry;
 }
@@ -72,9 +91,11 @@ export function routeSearchText(route: FlightRoute): string {
   if (route.nameEn) parts.push(route.nameEn);
   if (route.description) parts.push(route.description);
   if (route.descriptionEn) parts.push(route.descriptionEn);
-  if (route.flight) {
-    parts.push(route.flight.flightNo, route.flight.depIata, route.flight.arrIata);
-    parts.push(route.flight.airline, route.flight.airlineEn);
+  // 只有核实过的航班号/IATA/航司才进搜索索引 —— 未核实的不该被搜出来当真
+  const vf = verifiedFlight(route);
+  if (vf) {
+    parts.push(vf.flightNo, vf.depIata, vf.arrIata);
+    parts.push(vf.airline, vf.airlineEn);
   }
   for (const wp of route.waypoints) {
     if (wp.kind === "city") {
