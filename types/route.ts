@@ -49,6 +49,15 @@ export interface RouteSource {
   ref: string;
   /** 核实日期 YYYY-MM-DD */
   checkedOn: string;
+  /**
+   * 核实结论。缺省视为 "verified"。
+   *
+   * "wrong" = 查过了，且查明记录里的航班信息不对（航班号不飞这条航线、
+   * 实际是经停航班、落地机场不同等），但暂时没找到可靠的替代航班号。
+   * 这类同样按「未核实」处理：界面与搜索都不显示航班号/机型。
+   * 单独留这个状态是为了**记住已经查过**，避免下一轮重复劳动。
+   */
+  status?: "verified" | "wrong";
   /** 核实到的要点，便于下次比对（如「每日执飞，11h05m，777-300ER」） */
   note?: string;
 }

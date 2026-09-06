@@ -10,18 +10,51 @@
     "airline": "海南航空",
     "airlineEn": "Hainan Airlines",
     "flightNo": "HU7282",
-    "aircraft": "Boeing 787-9",
+    "aircraft": "Boeing 737-800",
     "depIata": "PEK",
     "arrIata": "HAK",
     "durationMin": 230
   },
+  "source": {
+    "ref": "https://info.flightmapper.net/flight/Hainan_Airlines_HU_7282",
+    "checkedOn": "2026-09-07",
+    "note": "海航 HU7282 PEK→HAK 属实，每日执飞，约 4h 与记录的 230min 接近；机型实为 737-800（164 座），原记 787-9 已改正"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "taihang" },
-    { "kind": "terrain", "terrainId": "dabie" },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "terrain", "terrainId": "hainan" },
-    { "kind": "city", "id": "hak", "name": "海口美兰", "nameEn": "Haikou Meilan", "lat": 19.935, "lon": 110.459, "airport": true }
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "taihang"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dabie"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hainan"
+    },
+    {
+      "kind": "city",
+      "id": "hak",
+      "name": "海口美兰",
+      "nameEn": "Haikou Meilan",
+      "lat": 19.935,
+      "lon": 110.459,
+      "airport": true
+    }
   ]
 }

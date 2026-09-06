@@ -15,6 +15,12 @@
     "arrIata": "HRB",
     "durationMin": 135
   },
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Air+China-Beijing-Shenyang/CA1601",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：CA1601 实际飞的是北京→**沈阳**桃仙（A321，约 1h35m），不是哈尔滨。未找到可靠的北京→哈尔滨替代航班号，暂不显示航班信息"
+  },
   "cruiseHeight": 10500,
   "waypoints": [
     {

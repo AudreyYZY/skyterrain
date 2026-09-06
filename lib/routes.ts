@@ -40,7 +40,10 @@ export function getRouteById(id: string): FlightRoute | undefined {
  * 航线本身与沿途地理不受影响：航点来自地形注册表，另有各自的 source。
  */
 export function isFlightVerified(route: FlightRoute): boolean {
-  return Boolean(route.source?.ref && route.source?.checkedOn);
+  const s = route.source;
+  if (!s?.ref || !s?.checkedOn) return false;
+  // 查过但查明有误 —— 与没查过一样，不对外显示
+  return s.status !== "wrong";
 }
 
 /** 已核实才返回航班信息，否则 undefined —— 界面与搜索都只认这个 */

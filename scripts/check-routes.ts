@@ -12,6 +12,7 @@
 
 import { TERRAIN_REGISTRY } from "../lib/terrain-registry.ts";
 import { ROUTE_NARRATION, getRouteNarration } from "../lib/route-narration.ts";
+import { isFlightVerified } from "../lib/routes.ts";
 import { ALL_ROUTES } from "../data/routes/manifest.ts";
 import { COUNTRIES } from "../lib/regions.ts";
 import type { RouteWaypoint } from "../types/route.ts";
@@ -38,6 +39,7 @@ function haversineKm(a: [number, number], b: [number, number]): number {
 
 let failures = 0;
 let missingSource = 0;
+let knownWrong = 0;
 const fail = (id: string, msg: string) => {
   failures++;
   console.error(`  ✗ ${id}: ${msg}`);
@@ -59,8 +61,9 @@ for (const r of ROUTES) {
   // 核查留痕：城市与地形一直强制 source，航线补齐这一档。
   // 只能验「有没有留痕、格式对不对」，验不了「内容是不是真的」——
   // 真伪要靠人按 ref 复核，checkedOn 用来判断这份快照有多旧。
-  if (!r.source) {
-    missingSource++;
+  if (!r.source || r.source.status === "wrong") {
+    if (!r.source) missingSource++;
+    else knownWrong++;
   } else {
     if (!r.source.ref?.trim()) fail(r.id, "source.ref 为空");
     if (!/^\d{4}-\d{2}-\d{2}$/.test(r.source.checkedOn ?? "")) {
@@ -88,20 +91,20 @@ for (const r of ROUTES) {
   // 「747」在蒙特利尔—温哥华那篇指的是机场快线巴士线路号，不是机型，故排除。
   // 未核实的航线，解说里不得点名机型或航班号 —— 那等于把没核过的断言摆出去当真。
   // 界面与搜索已由 lib/routes.ts isFlightVerified 挡住，解说是最后一处出口。
-  if (!r.source) {
+  if (!isFlightVerified(r)) {
     for (const mode of ["study", "travel"] as const) {
       for (const lang of ["zh-CN", "en-US"] as const) {
         const text = getRouteNarration(r.id, lang, mode);
         if (!text) continue;
         const bad = [...new Set(text.match(/(空客\s?A3\d\d|波音\s?7\d\d|Airbus\s?A3\d\d|Boeing\s?7\d\d|C919|[A-Z]{2}\d{3,4}航班|flight\s[A-Z]{2}\d{3,4})/g) ?? [])];
         if (bad.length > 0) {
-          fail(r.id, `未核实航线的 ${mode}/${lang} 解说点名了「${bad.join("、")}」，未核实就不应写出机型/航班号`);
+          fail(r.id, `未核实/已查明有误的航线，其 ${mode}/${lang} 解说点名了「${bad.join("、")}」——不应写出机型/航班号`);
         }
       }
     }
   }
 
-  if (r.source && r.flight?.aircraft) {
+  if (isFlightVerified(r) && r.flight?.aircraft) {
     const acn = r.flight.aircraft.replace(/[^0-9A-Za-z]/g, "").toLowerCase();
     for (const mode of ["study", "travel"] as const) {
       for (const lang of ["zh-CN", "en-US"] as const) {
@@ -192,6 +195,13 @@ for (const r of ROUTES) {
   );
 }
 
+if (knownWrong > 0) {
+  console.log(
+    `\n· ${knownWrong}/${ROUTES.length} 条航线已核实**且查明航班信息有误**（source.status="wrong"）` +
+      "\n  这类与未核实同样处理：不显示航班号/机型。留这个状态是为了记住已经查过，" +
+      "\n  待找到可靠的替代航班号后改回 verified。",
+  );
+}
 if (missingSource > 0) {
   console.log(
     `\n· ${missingSource}/${ROUTES.length} 条航线尚未核实（无 source 留痕）` +
