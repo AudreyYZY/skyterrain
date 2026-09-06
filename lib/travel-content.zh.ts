@@ -3469,6 +3469,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   keflavik: {
     identity:
       "凯夫拉维克是雷克雅内斯半岛上的一座港口小镇，与邻镇合并后正式名为“雷克雅内斯拜尔”，人口约 2 万。冰岛的国际机场就在旁边，多数游客抵离冰岛都经过这里。半岛本身几乎全是熔岩原和地热区，2021 年以来附近多次火山喷发。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Keflavík (Iceland; a town within the municipality of Reykjanesbær, formed by the merger of Keflavík, Njarðvík and Hafnir in the mid-1990s; about 15,930 people with Njarðvík as of 2018; the name means driftwood bay; settled from the 16th century around fishing and fish processing; the US military built the airport in the Second World War and Naval Air Station Keflavik was strategically important through the Cold War, American forces withdrawing in 2006; Keflavík International Airport adjacent to the town is Iceland's main international gateway near Reykjavík; nicknamed bítlabærinn, the Beatles town, for the musicians it produced in the 1960s and 1970s; basalt rubble landscape)
+    howItWorks:
+      "凯夫拉维克是冰岛西南雷恰角半岛上的城镇，1990 年代中期它与纳尔兹维克、哈布尼尔合并成雷恰内斯拜市镇，2018 年与纳尔兹维克合计约 1.6 万人；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名意为“浮木湾”，16 世纪起这里因渔业与鱼加工成镇，四周是玄武岩碎石与苔藓的荒野。二战期间美军在镇旁修建机场，冷战时期凯夫拉维克海军航空站是监视北方海域的重要基地，2006 年美军撤离，营区改作民用与住宅。凯夫拉维克国际机场就在镇边，是冰岛的国际门户，几乎所有进出冰岛的航班都在这里起降，雷克雅未克在东北约 50 公里。1960、70 年代这里出了许多乐手，本地因此有“披头士镇”的绰号。初来的人最容易犯的错，是把机场当作雷克雅未克的一部分，而它在另一个市镇，进城还要坐将近一小时的车。",
     layout:
       "凯夫拉维克在半岛西侧海边，机场在镇西南。整个雷克雅内斯半岛是一片年轻的黑色熔岩台地，几乎没有树，地表冒着地热蒸汽；著名的蓝湖（Blue Lagoon）在半岛中部，是地热发电站排出的富矿物温水形成的。半岛南岸有海崖、灯塔和大陆桥（横跨美洲-欧亚板块裂缝的小桥）。",
     gettingAround:
@@ -3484,6 +3487,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   vik: {
     identity:
       "维克（全名 Vík í Mýrdal）是冰岛最南端的小镇，人口只有几百人，却因为正好在环岛公路上、周围景点密集而成为南岸最重要的旅游据点。小镇夹在黑色的海崖、绿色的苔藓山和北面米尔达斯冰盖之间，冰盖下压着卡特拉火山。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vík í Mýrdal (Iceland; village in Mýrdalshreppur municipality with about 750 inhabitants as of 2021, the southernmost village in Iceland, on the Ring Road about 180 km south-east of Reykjavík; the largest settlement for some 70 km around and the service centre for the coast between Skógar and Mýrdalssandur; the black sand beach named among the ten most beautiful beaches on earth by Islands Magazine in 1991, with the Reynisdrangar sea stacks offshore; the wettest coastal town in Iceland with about 2,250 mm of rain a year; the Katla volcano, which last erupted in 1918, with an evacuation plan giving residents little time to reach the hilltop church)
+    howItWorks:
+      "维克是冰岛南岸的村子，属米尔达尔市镇，2021 年人口约 750，是冰岛最南端的聚落；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。它的作用是服务：从斯科加尔到米尔达尔沙原约 70 公里的海岸线上，只有这里有加油站、超市与旅馆，因此环岛公路上的人几乎都在此停一次。黑沙滩与海面上的雷尼斯德朗格岩柱是它最出名的景观，1991 年一家美国杂志把这片沙滩列入全球最美十大海滩；但这里的浪有突然涌上岸的“暗涌”，海边立有警示，每年都有人被卷走。它是冰岛沿海降水最多的地方，年降水约 2,250 毫米。村子北面的卡特拉火山压在米尔达尔冰盖之下，1918 年最后一次喷发，一旦喷发冰盖融水会在很短时间内冲下来，山坡上的教堂是全村的疏散集合点。初来的人最容易犯的错，是在黑沙滩背对海拍照，而那正是被浪卷走的方式。",
     layout:
       "维克沿一条主路展开，山坡上的白色小教堂是地标和洪水时的避难点。镇子东西两侧都是黑沙滩：西边是著名的雷尼斯黑沙滩，有柱状玄武岩崖和海蚀柱；镇子正南的海滩一直延伸向东。北面翻过山口是米尔达斯冰盖和索尔黑马冰川舌。",
     gettingAround:
@@ -3499,6 +3505,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hofn: {
     identity:
       "赫本（全名 Höfn í Hornafirði，“赫本”在冰岛语里就是“港口”）是冰岛东南部的渔港小镇，人口约 1700 人，坐落在一处潟湖口的沙嘴上，背后是欧洲最大的冰川——瓦特纳冰原，及其一条条从山间伸下来的冰川舌。这里以龙虾（langoustine）出名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Höfn (Iceland; town in Hornafjörður municipality in the south-east with 1,802 residents in 2025, on a peninsula surrounded by sea on three sides; the name means harbour; founded in 1897 by the merchant Ottó Tuliníus, who moved a trading post from Papós, with growth after the Hornafjarðarbrú bridge of 1961; fishing, particularly langoustine and saltfish, and tourism around Vatnajökull, Europe's largest ice cap by volume, and the nearby glaciers; the annual lobster festival in early July; on the Ring Road about 455 km from Reykjavík, the Almannaskarðsgöng tunnel of 2005 improving winter access; a regional airport with flights to Reykjavík)
+    howItWorks:
+      "赫本是冰岛东南部霍尔纳峡湾市镇的城镇，2025 年人口约 1,800；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名就是“港”的意思，镇子建在一处三面环海的小半岛上。它 1897 年由商人奥托·图利尼乌斯创立，把原在帕波斯的贸易点迁到这里，1961 年霍尔纳峡湾大桥通车后才真正长起来。渔业是老本行，尤以海螯虾与咸鳕鱼闻名，每年七月初办海螯虾节。它的另一半生计来自身后的冰：瓦特纳冰原是欧洲体积最大的冰盖，就压在镇北的山上，杰古沙龙冰河湖在西面约 80 公里，冰川旅游把这座小镇变成了东南岸的落脚点。环岛公路从这里经过，雷克雅未克在西面约 455 公里；2005 年通车的阿尔曼纳斯卡兹隧道改善了冬季通行，另有支线机场飞雷克雅未克。初来的人最容易犯的错，是以为冰河湖在镇边，而那是一小时以上的车程。",
     layout:
       "赫本在一条低平的沙嘴末端，三面环水，天气好时从镇上就能望见瓦特纳冰原白色的边缘和几座冰帽下的高峰（包括冰岛最高点华纳达尔斯赫努克）。环岛公路从镇北经过；镇和冰川之间是一片冰水冲积平原和潟湖。",
     gettingAround:
@@ -3514,6 +3523,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   egilsstadir: {
     identity:
       "埃伊尔斯塔济是冰岛东部最大的城镇，人口约 2500 人，是东部峡湾地区的交通、服务和行政中心。它坐落在冰岛第三大湖——拉加尔湖（Lagarfljót）畔，湖细长，据当地民间传说里住着一条“湖怪”。周围是冰岛少见的大片林地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Egilsstaðir (Iceland; town in east Iceland on the banks of the Lagarfljót, 2,632 residents in 2024, the largest settlement in the eastern region; formally established only in 1947, though the farmer Jón Bergsson had begun developing the site earlier in the 20th century; growth during the 2004–2008 hydropower and aluminium boom; a crossroads where the main regional routes meet, the area's transport, service and administrative centre, with airport, gymnasium and health clinic; Hallormsstaðaskógur, the biggest forest in Iceland, plus Hengifoss and Skriðuklaustur nearby; subarctic climate with mild summers, a record 29.8 °C in August 2025)
+    howItWorks:
+      "埃伊尔斯塔济是冰岛东部最大的城镇，2024 年人口 2,632，在拉加尔湖流出的河边；冰岛只有国家与市镇两级，本镇属于 2020 年合并成立的穆拉辛市镇，市镇管学校、规划与地方服务，医疗与警察归国家。这是一座很年轻的城镇：1947 年才正式建镇，在此之前只有一处农场，20 世纪初农场主约恩·贝格松开始在此建设，2004 至 2008 年间东部的水电与铝厂工程带来了一轮扩张。它的位置解释了它的存在——东部几条主要公路在这里交汇，因此机场、医院门诊、中学与政府机构都设在此地，周边峡湾的居民办事都要进城。冰岛最大的森林哈德洛尔姆斯塔泽尔就在湖的南岸，亨吉瀑布与斯克里祖克劳斯图尔庄园在附近。翻过山口是塞济斯菲厄泽，开往丹麦与法罗群岛的渡轮从那里出发。初来的人最容易犯的错，是来找一座老镇，而这座城镇比多数居民的年纪还小。",
     layout:
       "埃伊尔斯塔济在东部内陆的一处河谷平地上，拉加尔湖从镇边向西南延伸。环岛公路经过这里，往东翻山约 25 分钟到峡湾港口城镇塞济斯菲厄泽（Seyðisfjörður，以彩虹街和渡轮码头出名）。镇子本身不大、以实用为主。",
     gettingAround:
@@ -3547,6 +3559,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   husavik: {
     identity:
       "胡萨维克是冰岛北部一座渔港小镇，人口约 2300 人，被称为“欧洲观鲸之都”——外海的斯基亚尔万迪湾食物丰富，夏季能稳定看到座头鲸，有时还有蓝鲸。镇上有一座全木结构的老教堂和一座专门的鲸鱼博物馆。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Húsavík (Iceland; town in Norðurþing municipality on the north coast with about 2,300–2,500 residents, on Skjálfandi bay; a centre of whale watching in Iceland because whales of several species enter the bay; the wooden church Húsavíkurkirkja of 1907 the chief landmark; the Húsavík Whale Museum, the Exploration Museum and a Eurovision museum opened in 2021; recorded as the first place in Iceland settled by a Norseman, the Swedish Viking Garðar Svavarsson wintering here around 870; the 2020 film Eurovision Song Contest: The Story of Fire Saga set here, its title song Oscar-nominated; Akureyri within an hour via the Vaðlaheiðargöng tunnel of 2019; flights ended in 2024)
+    howItWorks:
+      "胡萨维克是冰岛北岸的城镇，属北辛市镇，人口约 2,300 至 2,500；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子面朝斯乔尔万迪湾，几种鲸每年夏天进湾觅食，因此这里成了冰岛观鲸的中心——出海的船从港口发出，鲸鱼博物馆就在码头边，本地经济由此从渔业转向了旅游。1907 年建成的木造教堂立在坡上，是全镇的标志。按记载，这里是冰岛最早被北欧人过冬居住的地方：约公元 870 年瑞典人加尔达尔·斯瓦瓦尔松在此越冬。2020 年一部以欧洲歌唱大赛为题材的电影把故事放在这座镇上，主题曲获奥斯卡提名，之后镇里开了一间相关的小博物馆。2019 年瓦兹拉海济隧道通车后，到阿克雷里只要一小时；本地机场的定期航班 2024 年停飞。初来的人最容易犯的错，是把观鲸当作全年项目，而它按季节与天气开船。",
     layout:
       "胡萨维克在斯基亚尔万迪湾东岸，背靠低山，港口是全镇的中心，观鲸船就从这里出发。天气好时隔着海湾能看到远处的雪山。镇子很小，几条街就走完。",
     gettingAround:
@@ -3562,6 +3577,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   isafjordur: {
     identity:
       "伊萨菲厄泽是冰岛“西部峡湾”地区最大的城镇，人口约 2700 人。西部峡湾是冰岛最古老、最偏远的一角，一片被无数深峡湾和陡峭平顶山切碎的半岛，公路少、隧道多、冬季常被大雪封住。伊萨菲厄泽是这里的中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ísafjörður (Iceland; the largest town in the Westfjords, in Ísafjarðarbær municipality, with about 2,744 residents in January 2023, on a sandy spit in Skutulsfjörður off Ísafjarðardjúp; settled in the 9th century according to the Landnámabók, a trading centre from the 1500s, granted municipal status in 1786; timber buildings surviving from the 1700s including Krambúð 1757, Faktorshús 1765, Tjöruhúsið 1781 and Turnhúsið 1784; the coolest area in Iceland at sea level with a tundra climate, high winds and few sunny days; fishing historically dominant, now also the University Centre of the Westfjords and a gateway to the Hornstrandir nature reserve; the Aldrei fór ég suður music festival)
+    howItWorks:
+      "伊萨菲厄泽是冰岛西部峡湾地区最大的城镇，2023 年 1 月人口约 2,744，属伊萨菲厄泽市镇；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子建在斯库图尔峡湾里一条伸进水面的沙嘴上，三面是几百米高的陡壁，只有一条窄路通往外面——这种地形决定了西部峡湾的一切：冬天雪崩与封路是常事，镇上因此修了防雪崩的导流堤，山下也打了隧道。按《定居之书》，9 世纪已有人在此定居；16 世纪起它是贸易点，1786 年获得城镇地位，港边还留着 18 世纪的几栋木屋，最早的建于 1757 年。这里是冰岛海平面上最冷的一片，属苔原气候，风大、晴天少。渔业曾是全部生计，如今西部峡湾大学中心也设在这里，霍恩斯特兰迪尔自然保护区从这里出发。初来的人最容易犯的错，是按公路里程安排行程，而冬天这条路随时可能关闭。",
     layout:
       "伊萨菲厄泽建在一条峡湾里伸出的一个 L 形沙嘴上，三面是几乎垂直升起的平顶山，只有一条路进出。老城有一片 18–19 世纪的木屋。周围峡湾里散布着更小的渔村和被废弃的村落。",
     gettingAround:
@@ -3646,6 +3664,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lucerne: {
     identity:
       "卢塞恩在瑞士中部、卢塞恩湖（德语 Vierwaldstättersee，“四林州湖”）西端、罗伊斯河出湖处，市区人口约 8 万，是中部德语区最受游客欢迎的城市，被雪山环抱，湖光山色是它的招牌。瑞士联邦最早的几个州就在这个湖周围，1291 年的结盟传说也发生在湖边的吕特利草地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lucerne (Switzerland; capital of the canton of Lucerne, about 82,000 residents, the most populous city in Central Switzerland; where Lake Lucerne drains into the Reuss; a Benedictine monastery from about 750, independence 1178, joined the Swiss Confederacy in 1332, Battle of Sempach 1386; the Chapel Bridge of 1333, 204 m, the oldest covered bridge in Europe, its interior largely destroyed by fire in 1993 and restored by 1994; the Musegg wall with eight towers; the Lion Monument; the twin-towered Church of St Leodegar; Lucerne Festival)
+    howItWorks:
+      "卢塞恩是瑞士卢塞恩州的首府，人口约 8.2 万，是中部瑞士最大的城市；瑞士是联邦制，州在教育、警务与税收上拥有相当大的自主权，市镇再管本地事务，因此这座城首先属于它的州。地形决定了城市的形态：琉森湖在这里收窄，湖水注入罗伊斯河，老城就骑在河的两岸，桥是它的骨架。1333 年建成的卡佩尔廊桥长 204 米，是欧洲最古老的有顶木桥，1993 年一场大火烧毁了桥内的大部分绘画，1994 年修复通行；穆塞格城墙上留着八座塔，可以走上去。狮子纪念碑凿在城北的岩壁上，圣莱奥德伽尔教堂的双塔在湖边。这座城约 750 年从一座本笃会修道院起步，1178 年获得独立地位，1332 年加入瑞士邦联。夏天的琉森音乐节是欧洲重要的古典音乐节之一，皮拉图斯山与瑞吉山的登山铁路从湖边出发。初来的人最容易犯的错，是把琉森湖当作一个圆湖，而它是伸进群山的几条湖臂。",
     layout:
       "卢塞恩老城在罗伊斯河北岸，保留着带壁画的老房子和两座中世纪木廊桥——卡佩尔桥（欧洲最古老的有顶木桥之一，桥塔曾作水塔）和斯普洛耶桥。城墙和塔楼在山坡上。湖岸有大型火车站、KKL 文化会议中心和游船码头。城南是皮拉图斯山，城东是里吉山，都可乘齿轨或缆车上。",
     gettingAround:
@@ -3679,6 +3700,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lausanne: {
     identity:
       "洛桑（法语 Lausanne）在日内瓦湖北岸、一片陡坡上，市区人口约 14 万，是沃州首府、法语区第二大城市。它是国际奥林匹克委员会的总部所在地（1915 年迁来），被称为“奥林匹克之都”，有奥林匹克博物馆和多个国际体育组织。也是一座大学城。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lausanne (Switzerland; capital of the canton of Vaud, the fourth-largest Swiss city with about 150,000 residents, on Lake Geneva with roughly 500 m of vertical range across steep slopes; the Olympic Capital — International Olympic Committee headquarters, the Court of Arbitration for Sport and about 55 international sports organisations; the m2 metro, making it the smallest city in the world with a rapid transit system, 28 stations; Gothic cathedral; the Roman settlement Lousanna; the Treaty of Lausanne signed here in 1923; University of Lausanne and EPFL; about 42 per cent foreign nationals; French-speaking)
+    howItWorks:
+      "洛桑是瑞士沃州的首府，人口约 15 万，是瑞士第四大城市；瑞士是联邦制，州在教育、警务与税收上有相当大的自主权，市镇再管本地事务，法语是这里的语言。城市建在日内瓦湖北岸的陡坡上，从湖边的乌希到山脊的老城，垂直落差约 500 米——这一点决定了它的日常：街道分层，桥从一条街跨到另一条街的屋顶高度，出行靠 m2 地铁上下爬坡，那是瑞士唯一的地铁，也让洛桑成为世界上拥有地铁的最小城市之一。它是“奥林匹克之都”：国际奥委会总部自 20 世纪初设在这里，国际体育仲裁院与约五十五个国际体育组织也在城内，奥林匹克博物馆在湖边。哥特式的大教堂立在老城最高处，守夜人至今每晚在钟楼上报时。洛桑大学与洛桑联邦理工学院在西郊，外国籍居民约占四成。初来的人最容易犯的错，是按平面地图估计步行距离，而这座城的距离要算高差。",
     layout:
       "洛桑从湖边一直爬到山上，落差约 500 米，是欧洲少见的建在陡坡上的城市，有一条全自动地铁（m2 线）像缆车一样把湖边、市中心和上城连起来。老城和哥特式大教堂在高处；乌希（Ouchy）在湖边，是公园、码头和奥林匹克博物馆所在。",
     gettingAround:
@@ -3694,6 +3718,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   interlaken: {
     identity:
       "因特拉肯（德语意为“两湖之间”）是伯尔尼高地的门户小镇，夹在图恩湖和布里恩茨湖之间的一片冲积平原上，常住人口约 5600，却是瑞士山地旅游最集中的据点之一。天气好时从镇中心的草坪（Höhematte）能直接望见少女峰、僧侣峰、艾格峰三座名峰。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Interlaken (Switzerland; municipality in the canton of Bern, 5,719 residents in December 2020 over 4.27 km², the agglomeration about 23,300; on the flat alluvial Bödeli between Lake Thun and Lake Brienz, the name meaning "between lakes"; the Interlaken monastery first mentioned in 1133; called Aarmühle until the name Interlaken was adopted in 1891; a destination from about 1800; the gateway to the Jungfrau 4,158 m, Mönch 4,107 m and Eiger 3,967 m, with two stations, Interlaken Ost and West, and the Jungfrau railway to Jungfraujoch at 3,454 m; Harder Kulm; the Unspunnenfest every twelve years)
+    howItWorks:
+      "因特拉肯是瑞士伯尔尼州的一个市镇，2020 年 12 月常住人口 5,719，市域仅 4.27 平方公里，连同周边的聚居区约 2.3 万人；瑞士是联邦制，州管教育与警务，市镇管本地事务。它的名字是拉丁语的“湖与湖之间”：图恩湖与布里恩茨湖之间只有一块由河流冲积成的平地，当地叫“伯德利”，整座镇就摆在这块平地上，两侧是几乎垂直的山壁。镇中心的“高地草坪”是一大片始终不许建房的草地，因此从街上可以直接望见少女峰。1133 年这里已有修道院的记载，镇子原名阿尔米勒，1891 年才改用今名；约 1800 年起它成为旅游目的地。它是通往少女峰（4,158 米）、僧侣峰（4,107 米）与艾格峰（3,967 米）的门户，东站与西站两个车站分别接不同方向的线路，少女峰铁路通到海拔 3,454 米的少女峰车站。初来的人最容易犯的错，是以为山村就在镇上，而格林德尔瓦尔德与劳特布龙嫩在山谷更深处，还要再坐一段火车。",
     layout:
       "因特拉肯很小，主街 Höheweg 沿着一片开阔草坪，两头各一个火车站（东站、西站）。两侧是两个颜色不同的冰川湖：西边图恩湖偏绿、东边布里恩茨湖偏蓝。往南进山的窄轨铁路从这里出发，经劳特布龙嫩或格林德瓦上到少女峰地区。",
     gettingAround:
@@ -3709,6 +3736,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zermatt: {
     identity:
       "采尔马特在瑞士瓦莱州、一条深谷的尽头，正对马特洪峰（德语 Matterhorn，意大利语 Cervino，法语 Cervin，4478 米）——这座近乎完美的金字塔形孤峰是瑞士乃至阿尔卑斯最出名的山。全镇约 5800 人，海拔约 1600 米，为了空气和安静，镇内禁止燃油机动车，只有电动小车和马车。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zermatt (Switzerland; municipality in the canton of Valais, about 5,800 permanent residents at 1,608 m at the head of the Matter valley; combustion-engine vehicles banned, almost all local vehicles battery-driven, visitors arriving by rack railway from Täsch, with electric taxis and horse carriages in the village; famous after the first ascent of the Matterhorn in 1865; four ski areas, the highest cable car reaching the Klein Matterhorn at 3,883 m; the Gornergratbahn of 1898, the highest open-air railway in Europe; about half of all jobs in hospitality; 39 per cent foreign nationals, a third of residents born in the town)
+    howItWorks:
+      "采尔马特是瑞士瓦莱州的一个市镇，常住人口约 5,800，海拔 1,608 米，位于马特谷的尽头；瑞士是联邦制，州管教育与警务，市镇管本地事务。这座村子最独特的规则是它自己定的：内燃机车辆不得进入，外来车停在山下的泰施，游客换乘齿轨火车上来，村里跑的是电瓶车与马车，因此街上安静，空气与雪线上的视野都得以保留。1865 年马特洪峰首登之后它成名，此后一百六十年，登山与滑雪就是这里的全部产业——约一半的就业在住宿餐饮业，四个滑雪区连成一片，最高的缆车通到海拔 3,883 米的小马特洪峰，是欧洲最高的缆车站，夏季仍可滑雪；1898 年通车的戈尔内格拉特铁路是欧洲最高的露天铁路。居民里约四成是外国籍，只有约三分之一在本村出生。冰川快车在这里始发或终到。初来的人最容易犯的错，是打算开车上来，而车只能停到泰施。",
     layout:
       "采尔马特建在一条南北向深谷的底部，两侧山坡陡峭，马特洪峰在镇子正南方、谷口的方向。主街 Bahnhofstrasse 从火车站延伸，两侧是酒店、餐馆和登山装备店。老镇区还有一片被石板顶、木桩支起（防鼠）的旧粮仓。周围是欧洲海拔最高的一批缆车和滑雪区。",
     gettingAround:
@@ -3724,6 +3754,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "st-moritz": {
     identity:
       "圣莫里茨在瑞士格劳宾登州的恩加丁河谷、一个高山湖畔，海拔约 1800 米，常住人口约 5000。它是现代冬季度假的发源地之一——1864 年一位旅馆老板和几位英国客人打赌“冬天来也好玩”，从此开创了阿尔卑斯冬季旅游，后来两次举办冬奥会。这里日照特别多，被注册为品牌的口号是“世界之巅”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): St. Moritz (Switzerland; municipality in the Engadin valley, canton of Graubünden, about 4,945 permanent residents at roughly 1,800 m; mineral springs used since Celtic times; winter tourism in the Alps began here in 1864 on hotelier Johannes Badrutt's wager with British summer guests that they would return in winter; host of the Winter Olympics in 1928 and 1948, one of only four places to have hosted twice; the Cresta Run and the St. Moritz-Celerina bobsleigh run, a rare natural ice track; White Turf horse racing on the frozen lake; Romansh and German; the Glacier Express and Bernina Express on the Rhaetian Railway)
+    howItWorks:
+      "圣莫里茨是瑞士格劳宾登州上恩加丁谷地的一个市镇，常住人口约 4,900，海拔约 1,800 米；瑞士是联邦制，州管教育与警务，市镇管本地事务，格劳宾登是唯一以德语、意大利语与罗曼什语三语并行的州。镇子分成两块：山坡上的“村”是酒店与商店所在，湖边低处的“浴场”得名于这里的矿泉，凯尔特时代人们就来饮用。阿尔卑斯的冬季旅游是从这里开始的——1864 年旅馆主约翰内斯·巴德鲁特与几位英国夏客打赌，说冬天来这里同样舒适，若不满意路费由他承担，客人来了，冬季度假这门生意就此成立。1928 与 1948 年它两次举办冬季奥运会，是全世界仅有的四个两次办冬奥的地方之一；克雷斯塔滑道与圣莫里茨—切莱里纳雪车道是少见的天然冰赛道，每年重砌。冬天湖面结冰后在冰上办赛马。雷蒂亚铁路的冰川快车与伯尔尼纳快车在此交汇。初来的人最容易犯的错，是以为这里的雪季才有生活，而夏天的恩加丁是徒步季。",
     layout:
       "圣莫里茨分“村”（Dorf，在湖北岸山坡上，是高端酒店和精品店集中的地方）和“浴场”（Bad，在湖西端，因矿泉得名）。周围是恩加丁宽阔的 U 形谷、一串冰川湖和三千米级的山峰。冬天湖面结冰，上面办赛马、马球和板球。",
     gettingAround:
@@ -3739,6 +3772,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lugano: {
     identity:
       "卢加诺在瑞士南部提契诺州、卢加诺湖畔，市区人口约 6 万，是瑞士说意大利语的地区最大的城市。翻过阿尔卑斯主脊到了南坡，这里的气候、建筑、饮食和生活节奏都更像意大利北部——棕榈树、廊柱广场、傍晚的散步（passeggiata）——但仍是瑞士。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lugano (Switzerland; the largest city of Ticino, the Italian-speaking canton, 63,495 residents in December 2024, the ninth-largest Swiss city and the country's third financial centre after Zurich and Geneva, with over a hundred banking institutions; on Lake Lugano between Monte Brè at 925 m and Monte San Salvatore at 912 m, the municipality about 75 km² across both sides of the lake after mergers absorbed surrounding villages; 80.3 per cent Italian-speaking, 38.1 per cent without Swiss citizenship, cross-border commuters about 13 per cent of the workforce; humid subtropical climate with about 1,560 mm of rain, among the sunniest Swiss cities; about 38,000 service jobs)
+    howItWorks:
+      "卢加诺是瑞士提契诺州最大的城市，2024 年 12 月人口 63,495，是瑞士第九大城市；提契诺是瑞士唯一以意大利语为主的州，全城八成人口讲意大利语，瑞士的联邦制让这个州在教育与文化上按自己的语言运行。城市在卢加诺湖畔的一道弧形岸线上，布雷山与圣萨尔瓦托雷山从两侧夹住它；2004 年起本市多次与周边村镇合并，市域扩到约 75 平方公里，跨到湖的两岸，因此“卢加诺”今天包含许多原本独立的村子。它是继苏黎世与日内瓦之后瑞士的第三大金融中心，一百多家银行机构在此设点，服务业提供约 3.8 万个岗位；居民中约 38% 不持瑞士国籍，跨境通勤者约占劳动力的 13%，意大利边境就在城南。气候比阿尔卑斯以北温暖湿润，年降水约 1,560 毫米，日照在瑞士各城中居前列。初来的人最容易犯的错，是按瑞士其他城市的习惯来预期这里，而卢加诺在语言、作息与气候上更接近意大利北部。",
     layout:
       "卢加诺在湖的一个弯里，被两座锥形山——圣萨尔瓦托雷山和布雷山——夹住。老城是无车的意式石板街区和拱廊广场，湖滨是一条长长的公园和棕榈道。城市周围山坡上散布着别墅和小镇。湖向南延伸进入意大利。",
     gettingAround:
@@ -3787,6 +3823,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lillehammer: {
     identity:
       "利勒哈默尔在奥斯陆以北约 180 公里、挪威最大的湖——姆约萨湖的北端，古德布兰河谷的谷口，市区人口约 2.8 万。它因 1994 年冬奥会而为世界所知，至今保留着跳台、雪橇赛道和滑雪场，是挪威内陆冬季运动的中心之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lillehammer (Norway; municipality in Innlandet county, 29,011 residents in 2025, 39th most populous, 478 km²; at the northern tip of Lake Mjøsa, Norway's largest lake; market rights in 1827, merged with Fåberg in 1964; host of the 1994 Winter Olympics and the 2016 Winter Youth Olympics; Maihaugen, the largest open-air museum in Norway with 185 historic buildings, and the Norwegian Olympic Museum, the only museum in northern Europe devoted to the whole history of the Games; the Lysgårdsbakkene ski jumps and alpine venues; Sigrid Undset, Nobel laureate of 1928, lived at Bjerkebæk from 1919 to 1940; UNESCO City of Literature 2017)
+    howItWorks:
+      "利勒哈默尔是挪威内陆郡的市镇，2025 年人口 29,011，市域约 478 平方公里；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市在挪威最大湖米约萨湖的北端，1827 年获得集市权，1964 年与法贝格市镇合并。1994 年冬季奥运会在这里举办，是这座三万人的城市至今的分水岭：吕斯戈兹跳台、雪车赛道与几处山地赛场都留了下来，成为长期使用的训练与比赛设施，2016 年又办了冬季青年奥运会，奥林匹克博物馆是北欧唯一一座讲述奥运会全史的博物馆。迈豪根露天博物馆有 185 栋迁建的老建筑，是挪威最大的露天博物馆。1928 年诺贝尔文学奖得主西格丽德·温塞特 1919 至 1940 年住在城中的比耶克贝克，2017 年这座城获评联合国教科文组织“文学之都”。初来的人最容易犯的错，是把它当作滑雪场，而山上的哈菲尔与克维特菲尔才是雪场，城在湖边。",
     layout:
       "利勒哈默尔沿姆约萨湖西北岸的山坡而建，一条铺石的步行主街（Storgata）两侧是彩色木屋。城北山上是奥运跳台，能俯瞰湖和谷。往北进入狭长的古德布兰河谷——一条沿断层发育、两侧是农庄和森林的大河谷，是奥斯陆通往西北峡湾和特隆赫姆的历史通道。",
     gettingAround:
@@ -3802,6 +3841,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kristiansand: {
     identity:
       "克里斯蒂安桑在挪威最南端、面朝斯卡格拉克海峡，市区人口约 11 万，是南部海岸（Sørlandet）最大的城市，也是通往丹麦的渡轮口岸。城市 1641 年由国王克里斯蒂安四世按棋盘格规划建立，老城区“Kvadraturen”至今是规整的方格。夏天是挪威人自己的度假胜地——白色木屋、光滑的礁石海岸、相对温暖的海水。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kristiansand (Norway; administrative centre of its municipality and of Agder county, about 67,920 residents in 2025, the fifth-largest urban area in Norway; founded on 5 July 1641 by King Christian IV on a Renaissance grid plan still visible in the central Kvadraturen; five urban boroughs plus Songdalen and Søgne after the 2020 merger; the sunniest part of Norway with a temperate oceanic climate; Kristiansand Zoo and Amusement Park with over 900,000 visitors a year; beaches at Hamresanden and Bystranda; ferry across the Skagerrak; University of Agder)
+    howItWorks:
+      "克里斯蒂安桑是挪威阿格德尔郡的行政中心，2025 年人口约 6.8 万，是挪威第五大城区；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市 1641 年 7 月 5 日由国王克里斯蒂安四世下令建立，按文艺复兴时期的棋盘格一次规划，这套方格街区至今叫“卡德拉图伦”，是市中心的形状，也是理解这座城的钥匙——它不是自然长出来的港口聚落，而是国王为控制斯卡格拉克海峡而设的城。2020 年它与松格达伦、瑟格内两个市镇合并，如今分五个城区加两片原市镇的乡村地带。这一带是挪威日照最多的地方，气候温和，夏天挪威人南下到这里的海滩；动物园与游乐园每年接待九十多万人，是全国参观人数最多的旅游景点之一。渡轮跨海通往丹麦，阿格德尔大学在城里。初来的人最容易犯的错，是以为挪威南部也是峡湾，而这一段海岸是低平的岩石与沙滩。",
     layout:
       "克里斯蒂安桑建在一片平坦的沙洲和礁石海岸上，老城是国王规划的方格网，木屋刷成白色。市中心有鱼市、要塞和一片老木屋区（Posebyen）。海边是长长的沙滩（Bystranda）和栈桥。城市周围是南部典型的低缓丘陵、松林和无数小岛。",
     gettingAround:
@@ -3853,6 +3895,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   alesund: {
     identity:
       "奥勒松在挪威西海岸、几座小岛之间，市区人口约 5 万，是挪威重要的渔业和海产加工港。1904 年一场大火几乎烧光全城，之后几年里用当时流行的新艺术风格（Jugendstil）统一重建，因此整座市中心是罕见的、成片的新艺术建筑——塔楼、尖顶、石雕花草，是它最大的特色。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ålesund (Norway; town in Møre og Romsdal county with 55,684 residents in 2024 over 28.93 km², the ninth-largest town in Norway, built across islands; the fire of 23 January 1904 destroyed the wooden town, one person died and more than 10,000 lost their homes, and Kaiser Wilhelm II, a frequent visitor, sent four warships with material for temporary shelter; rebuilt in stone, brick and mortar in Jugendstil between 1904 and 1907 by about fifty builders and architects trained across Europe, giving the town its uniform Art Nouveau centre; the Jugendstilsenteret museum; a major fishing port and the clipfish trade; an NTNU campus with about 1,800 students; the Aksla viewpoint)
+    howItWorks:
+      "奥勒松是挪威默勒-鲁姆斯达尔郡的城镇，2024 年人口 55,684，市区约 29 平方公里，是挪威第九大城镇；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市摊在几座相连的岛上，港湾从中间穿过。它今天的样子来自一场火：1904 年 1 月 23 日大火烧毁了整座木造城镇，一人遇难，一万多人无家可归，常来此地的德皇威廉二世派了四艘军舰送来搭建临时住所的材料。1904 至 1907 年间，约五十位在欧洲各地受训的建筑师与营造商用石与砖重建全城，统一采用当时流行的新艺术风格，因此奥勒松成为北欧少见的整片新艺术城区，新艺术中心博物馆讲的就是这段。它是挪威最大的渔港之一，干鳕鱼贸易是老行业，挪威科技大学在此设校区，约一千八百名学生。阿克斯拉观景台有 418 级台阶通上去。初来的人最容易犯的错，是以为盖朗厄尔峡湾就在城边，而那还要几小时车程或船程。",
     layout:
       "奥勒松建在几座由桥连接的小岛上，市中心夹在一条内港运河两岸，新艺术风格的石楼一栋挨一栋。城边的阿克斯拉山（Aksla）有 418 级台阶（或开车）上到观景台，能看到城市、岛屿和远处松恩莫勒的雪峰。城市往东是通往盖朗厄尔峡湾的门户。",
     gettingAround:
@@ -3886,6 +3931,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bodo: {
     identity:
       "博德在挪威北部、北极圈以北约 80 公里，是诺尔兰郡的首府、北部铁路的终点，市区人口约 5 万。二战中城市被炸毁、战后重建，外观比较现代。它是通往罗弗敦群岛的门户，城外就是世界上最强的潮汐涡流之一——萨尔特海峡。2024 年它是欧洲文化之都。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bodø (Norway; town and municipality, capital of Nordland county, 53,712 residents in 2024 over 1,395 km², the town itself about 42,831, just north of the Arctic Circle with midnight sun from 1 to 13 June and about 22.1 hours of sun a day in June; Saltstraumen about 30 km away, among the strongest tidal currents in the world with water speeds reaching 22 knots; Bodø Main Air Station long housed Norwegian and NATO forces, its role reduced after the F-16s were retired in January 2022; the northern terminus of the Nordland railway and a coastal express port; European Capital of Culture 2024)
+    howItWorks:
+      "博德是挪威诺尔兰郡的首府，2024 年市镇人口 53,712，市域约 1,395 平方公里，城区约 4.3 万人，位置略在北极圈以北；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。它是挪威北部的交通节点：诺尔兰铁路的终点在这里，再往北没有铁路，只能换公路、船或飞机；海岸快船在此停靠，罗弗敦群岛的渡轮从这里出发。1940 年 5 月德军轰炸几乎摧毁了全城，如今的市区是战后重建的，因此没有老城。机场紧贴市区，长期是挪威空军的主基地之一，2022 年 1 月 F-16 退役后作用下降，机场迁址的规划正在推进。城外约 30 公里的萨尔特流是世界上最强的潮汐海流之一，流速可达 22 节，涨落潮时在桥上能看见漩涡。6 月 1 日到 13 日太阳不落。2024 年它是欧洲文化之都。初来的人最容易犯的错，是把博德当作看极光的目的地，而它更多是往北与往岛上去的中转站。",
     layout:
       "博德建在一个伸进海里的半岛尖端，三面环水，背后是山。市中心紧凑、以火车站和港口为核心。城南的萨尔特海峡（Saltstraumen）是一条窄水道，每天四次涨落潮时，几亿立方米海水挤过去，形成巨大的漩涡和急流。城市周围是诺尔兰典型的尖峭花岗岩山峰。",
     gettingAround:
@@ -3901,6 +3949,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   narvik: {
     identity:
       "纳尔维克在挪威北部、一条深峡湾（Ofotfjord）的尽头，北极圈以北，市区人口约 1.4 万。它的存在几乎全因为一条铁路：19 世纪末为了把瑞典基律纳的铁矿石运到一个终年不冻的深水港，修了跨境的 Ofoten 铁路，纳尔维克就此建城。城市被高山夹住，二战初期这里有过激烈的山地和海上战斗。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Narvik (Norway; town and municipality in Nordland county inside the Arctic Circle on the Ofotfjord, 21,580 residents in 2024, 61st among Norwegian municipalities; separated from Ankenes in 1902; developed as an all-year ice-free port for the Swedish iron mines at Kiruna and Gällivare, its deep harbour kept open by the Gulf Stream, with the Ofoten railway to Sweden; strategically critical in the Second World War, the Allies capturing it briefly in May 1940 in what is considered the first Allied infantry victory of the war before withdrawing in June; the Narvik War Museum; the Narvikfjellet alpine facility, host of the 2029 FIS Alpine World Ski Championships; merged with Ballangen and part of Tysfjord in 2020)
+    howItWorks:
+      "纳尔维克是挪威诺尔兰郡的市镇，在北极圈以内的欧福特峡湾深处，2024 年人口 21,580；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。这座城的存在只有一个理由：北大西洋暖流让这处深水港终年不冻，而瑞典基律纳与耶利瓦勒的铁矿在冬天无法从波的尼亚湾出海，于是 1902 年欧福特铁路修通，矿石从瑞典运到这里装船，城市也在同年从安肯内斯市镇分出。铁矿港的地位使它在二战中成为焦点，1940 年 5 月盟军一度夺下该城，被认为是二战中盟军首次陆战胜利，同年 6 月因战局变化撤出；战争博物馆讲述这段历史。2020 年它与巴朗恩及蒂斯峡湾的一部分合并，面积大增。纳尔维克山的缆车通到峰顶，2029 年高山滑雪世锦赛将在此举办；本地机场 2017 年关闭，航班改在埃文内斯。初来的人最容易犯的错，是以为矿在挪威，而矿在瑞典，纳尔维克只是它的出海口。",
     layout:
       "纳尔维克建在峡湾北岸一道陡坡上，铁路和矿石装船码头在水边，城区在坡上。峡湾对岸和背后都是尖峭的雪山，城边的 Narvikfjellet 山有缆车，冬天从山顶能一路滑到接近海平面、还能同时看到峡湾。往东铁路和公路翻山进入瑞典。",
     gettingAround:
@@ -6665,6 +6716,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kilkenny: {
     identity:
       "基尔肯尼是爱尔兰东南部伦斯特省一座保存完好的中世纪城镇，人口约2.7万，以诺曼城堡与中世纪街巷闻名，被称为爱尔兰的“中世纪之都”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kilkenny (Ireland; city in County Kilkenny in Leinster with 27,184 residents in 2022, the thirteenth-largest urban centre in the country; a 6th-century ecclesiastical settlement of Saint Canice, a town charter from William Marshall in 1207 and city status by royal charter of James I in 1609; the Confederation of Kilkenny operated here from 1642 to 1649; Kilkenny Castle, formerly the Butler seat; St Canice's Cathedral with its 9th-century round tower; nicknamed the Marble City for the local black limestone with white fossils; the Kilkenny Arts Festival, the Cat Laughs comedy festival and the Roots Festival; Cartoon Saloon and a craft and design scene; rail to Dublin and Waterford)
+    howItWorks:
+      "基尔肯尼是爱尔兰东南部的城市，2022 年人口 27,184，是全国第十三大城区。它在法律上是城市：1609 年詹姆斯一世授予城市特许状，但爱尔兰 2014 年废除了市镇一级议会，如今由基尔肯尼郡议会统一管辖，因此“城市”是历史身份而非行政层级。城市的骨架是一条“中世纪一英里”：南端是巴特勒家族的基尔肯尼城堡，北端是圣卡尼斯大教堂与 9 世纪的圆塔，两者之间由几条窄巷串起，1207 年威廉·马歇尔颁发的城镇特许状划定的范围大致就是这一段。它得名“大理石之城”是因为本地黑色石灰岩里嵌着白色化石，磨光后像大理石，老建筑多用它砌成。1642 至 1649 年“基尔肯尼同盟”在此运作，是爱尔兰史上常被提及的一段。夏天的艺术节与喜剧节把全城占满，铁路通往都柏林与沃特福德。初来的人最容易犯的错，是按“城市”二字预期规模，而这里步行半小时可以走穿。",
     layout:
       "老城沿诺尔河而建，城堡与主教座堂分别位于河两岸的制高点，中世纪街巷格局至今保留完整，是爱尔兰保存最完好的中世纪城镇之一。",
     gettingAround:
@@ -6696,6 +6750,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   killarney: {
     identity:
       "基拉尼是爱尔兰西南部凯里郡的小城，人口约1.4万，紧邻麦吉利卡迪山脉与基拉尼湖群，是探索凯里之环与爱尔兰最高峰的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Killarney (Ireland; town in County Kerry with 14,412 residents in 2022, the second largest in the county; a monastery founded on Innisfallen Island in 640; tourism has underpinned the town's economy for more than two and a half centuries, with Queen Victoria's visit of 1861 raising its profile; the Lakes of Killarney, Ross Castle, Muckross House and Abbey, MacGillycuddy's Reeks and the Gap of Dunloe; the Muckross estate presented to the Irish state in 1932 to create the country's first national park; tourism worth about 410 million euros a year with about 1.1 million visitors; the Liebherr plant of 1958 a major employer; the N22, rail to Dublin, Cork and Tralee, and Kerry Airport at Farranfore)
+    howItWorks:
+      "基拉尼是爱尔兰凯里郡的城镇，2022 年人口 14,412，是全郡第二大；爱尔兰 2014 年废除了市镇一级议会，本地事务由凯里郡议会办理。这座镇的经济两个半世纪以来一直靠旅游，1861 年维多利亚女王来访使它在英语世界出名，如今每年约一百一十万人次到访，旅游收入约四亿一千万欧元。它的资本是身后的山与湖：基拉尼国家公园是爱尔兰第一座国家公园，1932 年马克罗斯庄园捐给国家而设立，此后不断扩大，园内有基拉尼三湖、罗斯城堡、马克罗斯宅邸与修道院；麦吉利卡迪山脉是爱尔兰最高的山群，敦洛峡在其中，“凯里之环”环形公路从镇上出发。马车至今在公园里载客。1958 年设厂的利勃海尔是镇上另一大雇主，铁路通往都柏林、科克与特拉利，凯里机场在法兰福尔。初来的人最容易犯的错，是把“凯里之环”当作一天的轻松兜风，而它是一条约 180 公里的窄路。",
     layout:
       "小城中心紧凑，基拉尼国家公园与湖群紧邻城区西南侧，麦吉利卡迪山脉屏立在国家公园西侧，构成典型的山湖相依格局。",
     gettingAround:
@@ -6710,6 +6767,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dingle: {
     identity:
       "丁格尔是丁格尔半岛上的小渔港小镇，人口约2千，是爱尔兰语（盖尔语）保存较好的地区之一，也是探索半岛海崖与史前遗迹的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dingle (Ireland; town in County Kerry on the Dingle Peninsula, the only town on the peninsula, about 50 km south-west of Tralee; 1,671 residents in the 2022 census, down from 2016, with the oldest average age of any town in Ireland at 44.4 years; within a Gaeltacht region, about 13.7 per cent speaking Irish daily in 2016; more goods exported through Dingle than Limerick by the 13th century; tourism, fishing and agriculture the principal industries, with Dingle Mart serving the region; Fungie, a bottlenose dolphin, sought human contact in Dingle Bay from 1983 and disappeared in 2020; a 2005 order on Gaeltacht place names, and after a 2006 plebiscite in which about 90 per cent supported bilingual signage, legislation designates Dingle as the English name and Daingean Uí Chúis as the Irish)
+    howItWorks:
+      "丁格尔是爱尔兰凯里郡丁格尔半岛上唯一的城镇，2022 年人口 1,671，在特拉利西南约 50 公里；爱尔兰 2014 年废除了市镇一级议会，本地事务由凯里郡议会办理。它在“盖尔塔赫特”范围内——这是政府划定的爱尔兰语社区，公共标识、学校与地方行政都要用爱尔兰语，2016 年约 13.7% 的居民每天讲爱尔兰语。地名本身就是这套制度的例子：2005 年的法令一度只承认爱尔兰语名，2006 年的公投中约九成居民支持双语并用，此后立法把 Dingle 定为英文名、Daingean Uí Chúis 定为爱尔兰文名。13 世纪它的出口量一度超过利默里克，如今渔业、农业与旅游是三大行业，镇上的牲畜市场服务整个半岛。斯利海角环线沿海岸绕行，路边有蜂窝状的石屋遗迹，布拉斯基特群岛在西面海上。这座镇的平均年龄 44.4 岁，是全国城镇中最高的。初来的人最容易犯的错，是以为爱尔兰语只是装饰，而在这里它是社区的日常语言。",
     layout:
       "小镇沿丁格尔湾港口而建，街巷紧凑，半岛沿岸的斯利亚角与布兰登山构成小镇周边的主要地貌背景。",
     gettingAround:
@@ -6724,6 +6784,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   waterford: {
     identity:
       "沃特福德是爱尔兰最古老的城市，由维京人于914年建立，人口约6万，位于爱尔兰东南部苏尔河口，以水晶工艺闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Waterford (Ireland; city in the south-east in Munster, the oldest city in the state, founded by Vikings in 914, with 60,079 residents in 2022, the fifth most populous city in the state; the Viking Triangle is the tenth-century settlement, with Reginald's Tower of the 13th to 14th century as its landmark; the motto Urbs Intacta Manet Waterfordia earned after repelling sieges in the 15th century; Waterford Crystal made here from 1783 until early 2009 and resumed in 2010; the port handles about 12 per cent of Ireland's external trade by value, on the River Suir; South East Technological University established 2022; the M9 to Dublin and rail from Plunkett station; the airport currently without scheduled flights)
+    howItWorks:
+      "沃特福德是爱尔兰东南部的城市，2022 年人口 60,079，是爱尔兰共和国第五大城市，也是最古老的一座——公元 914 年由维京人建城，比都柏林还早。城市治理归沃特福德市与郡议会：2014 年爱尔兰的地方改革把原来的市议会与郡议会合并，如今一个议会同时管城与郡。老城最核心的一块叫“维京三角”，就是 10 世纪的原始聚落所在，13 至 14 世纪的雷金纳德塔立在河边，是全国现存最古老的城市建筑之一；15 世纪它两次挡住围城，因此得了“沃特福德城完好无损”的城市箴言。沃特福德水晶自 1783 年在此生产，2009 年初停产，2010 年恢复了规模较小的生产与展示。港口在舒尔河上，按货值约占爱尔兰对外贸易的一成二；东南理工大学 2022 年成立，M9 高速与铁路通往都柏林，本地机场目前没有定期航班。初来的人最容易犯的错，是以为都柏林最老，而这座城早了将近半个世纪。",
     layout:
       "老城沿苏尔河北岸而建，维京三角区保留着中世纪街巷格局，市郊沿河口向外延伸至沃特福德港。",
     gettingAround:
@@ -6772,6 +6835,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   westport: {
     identity:
       "韦斯特波特是爱尔兰西部梅奥郡的小镇，人口约6千，是探索克罗帕特里克圣山与阿基尔岛的传统门户，被认为是爱尔兰最宜居的小镇之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Westport (Ireland; town in County Mayo at the south-east corner of Clew Bay, 6,872 residents in 2022; one of only a few planned towns in Ireland, laid out in the 18th century around Westport House, with the Carrowbeg river channelled into the design to make the tree-lined Mall and its stone bridges; Croagh Patrick, locally the Reek, about 10 km west, with the Reek Sunday pilgrimage; the Great Western Greenway, a 42 km cycling route on the former railway; winner of the Irish Tidy Towns Competition in 2001, 2006 and 2008 and named Best Place to Live in Ireland in 2012; AbbVie employs about 1,400, roughly a quarter of the workforce; rail to Dublin Heuston 250 km away)
+    howItWorks:
+      "韦斯特波特是爱尔兰梅奥郡的城镇，位于克卢湾东南角，2022 年人口 6,872；爱尔兰 2014 年废除了市镇一级议会，本地事务由梅奥郡议会办理。它是爱尔兰少见的“规划市镇”之一：18 世纪围绕韦斯特波特庄园整体设计，卡罗贝格河被引入城中，两岸筑石堤、种行道树，形成叫作“林荫道”的中轴，几座石桥横跨其上——今天的街区形状仍是那次规划的产物。城西约 10 公里是克罗帕特里克山，当地人叫它“the Reek”，每年七月最后一个星期日有大批人徒步上山朝圣。旧铁路改成的“大西部绿道”长 42 公里，从这里通往阿基尔岛，是爱尔兰最早的长距离自行车道之一。艾伯维制药厂雇了约一千四百人，约占本地劳动力的四分之一。这座镇三次拿过全国“整洁市镇”冠军。铁路通往 250 公里外的都柏林。初来的人最容易犯的错，是以为它是自然长成的老镇，而它的街道是一次画出来的。",
     layout:
       "小镇按18世纪的规划建成（一般归于英国建筑师詹姆斯·怀亚特1780年前后的设计），运河与林荫大道贯穿镇中心，是爱尔兰少有的规划型小镇。",
     gettingAround:
@@ -6786,6 +6852,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "donegal-town": {
     identity:
       "多尼戈尔镇是爱尔兰西北部多尼戈尔郡的小镇，人口约2.8千，是探索斯利夫利格悬崖与格伦维国家公园的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Donegal Town (Ireland; town in County Donegal with an urban population of 2,749 in 2022; although it gave the county its name, Lifford is the county town; from the 15th to the early 17th century the capital of Tyrconnell under the O'Donnell dynasty, rebuilt by Captain Basil Brooke around 1611 after the Flight of the Earls of 1607, who laid out the square known as the Diamond; Donegal Castle, the former O'Donnell stronghold, restored by the Office of Public Works; Donegal Abbey, a 15th-century Franciscan friary; the Annals of the Four Masters compiled nearby between 1632 and 1636; at the mouth of the River Eske on Donegal Bay below the Blue Stack Mountains)
+    howItWorks:
+      "多尼戈尔镇是爱尔兰多尼戈尔郡的城镇，2022 年城区人口 2,749；爱尔兰 2014 年废除了市镇一级议会，本地事务由多尼戈尔郡议会办理。这里有一处常被弄错的关系：郡以这座镇命名，但郡治并不在此，而在东北边境上的利福德。15 世纪到 17 世纪初，它是奥唐奈家族统治的蒂尔康奈尔的首府，1607 年“伯爵出走”之后，巴兹尔·布鲁克上尉在 1611 年前后重建市镇，画出了今天中心那个叫“钻石”的三角形广场，镇上的道路都从这里发散。奥唐奈家族的多尼戈尔城堡经国家公共工程局修复后开放，15 世纪的方济各会修道院废墟在河口；著名的《四大师年鉴》1632 至 1636 年间在附近编成。镇子在埃斯克河入海处、多尼戈尔湾边，蓝石山在背后，粗花呢是本地的老手艺，“野性大西洋之路”沿海岸经过。初来的人最容易犯的错，是以为这里是郡治，而郡政府在利福德。",
     layout:
       "小镇以三角形市集广场为中心，多尼戈尔城堡与河口相邻，是多尼戈尔湾沿岸的历史贸易据点。",
     gettingAround:
@@ -9204,6 +9273,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   olgii: {
     identity:
       "乌力吉是蒙古最西端巴彦乌列盖省首府，人口约3万，是蒙古境内哈萨克族的主要聚居区，也是探索塔王博格达山群的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ölgii and Bayan-Ölgii Province (Mongolia; the westernmost province, established 1940 with its capital at Ölgii, 45,704.89 km², about 110,799 residents in 2024, the country's only Kazakh-majority and Muslim aimag with about 93 per cent Kazakh; the Abu-Bakr Siddiq central mosque in Ölgii; an estimated 80 per cent of the world's eagle hunters live in the province, with a Golden Eagle Festival each October; Altai Tavan Bogd National Park 6,362 km² with Khüiten Peak 4,374 m, Mongolia's highest; the Khovd river rises here; Ölgii Airport with flights to Ulaanbaatar; 2.3 million head of livestock in 2022)
+    howItWorks:
+      "乌力吉是蒙古国巴彦乌列盖省的省会；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的行政、医疗与中等教育。这个省 1940 年设立，位于蒙古最西端，面积约 4.57 万平方公里，2024 年人口约 11 万，其中约九成三是哈萨克族——它是蒙古唯一以哈萨克族为主、以伊斯兰教为主要信仰的省，因此城里通行哈萨克语，阿布伯克尔清真寺立在中心，节庆与饮食都与蒙古其他地方不同。据估计，世界上约八成的驯鹰人生活在这个省，每年十月的金雕节把他们聚到乌力吉城外，是本地最大的活动。科布多河发源于这一带；阿尔泰塔班博格德国家公园面积 6,362 平方公里，蒙古最高峰奎屯峰海拔 4,374 米在其中。畜牧是主业，2022 年全省牲畜 230 万头。初来的人最容易犯的错，是以为蒙古各地都一样，而这里的语言与宗教自成一格。",
     layout:
       "城市坐落于蒙古阿尔泰山麓的河谷地带，是巴彦乌列盖省的行政与文化中心，哈萨克传统文化在此地保留完整。",
     gettingAround:
