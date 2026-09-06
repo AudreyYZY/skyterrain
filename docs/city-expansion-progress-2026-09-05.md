@@ -93,8 +93,11 @@ WA 卡拉萨；SA 惠亚拉、奥古斯塔港、维克多港；TAS 弗雷西内�
 **2026-09-06 用户新要求（优先级高于继续加城）**：城市介绍太浅、像模板，要写出"在当地生活多年才懂"的结构性差异
 （如悉尼 = Greater Sydney 下几十个各有 Council 的 LGA、City of Sydney 只是其中很小的一个、Blacktown City 是
 人口约 46 万的独立地方政府而非"悉尼的一个区"、多中心结构 Parramatta/Blacktown/Penrith 各有 CBD；而上海是
-单一市政府下的区）。方案见 `docs/city-depth-redesign-2026-09-06.md`。**2026-09-06：`howItWorks` 板块已在全部 228 座 Tier A 城市
-（capital + major）写完并推送到 `feat/cities-usa-nz-batch1`（PR #136）**；加城（§3 候选）在 Tier B 决定前继续暂停。
+单一市政府下的区）。方案见 `docs/city-depth-redesign-2026-09-06.md`。**2026-09-06：`howItWorks` 板块已在全部 691 座城市写完并推送到
+`feat/cities-usa-nz-batch1`（PR #136）——Tier A（capital + major）228 座分 12 批，Tier B（notable）463 座分 13 批，
+中英双语齐全，逐条带 `// howItWorks sources:` 注释；铺开记录见 `docs/city-depth-redesign-2026-09-06.md` §3.1/§3.2**。
+自检口径：`node --experimental-strip-types scripts/check-places.ts` 输出 691 城市 / 38 概览 / 3191 POI / 0 项异常。
+城市深度重构至此收尾，加城（§3 候选）可以恢复——新加城时必须同时写 `howItWorks`，否则新条目会比既有条目少一段。
 
 各国现有旅游城市数（2026-09-05，本批后）：新加坡 6（城邦，已按区拆分，不再加）· 捷克 8 ·
 克罗地亚 9 · 冰岛 9 · 哈萨克斯坦 10 · 卢森堡 10（小国，不再加）· 加拿大 11 · 爱尔兰 11 ·

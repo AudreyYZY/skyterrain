@@ -2141,6 +2141,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rotorua: {
     identity:
       "罗托鲁瓦在北岛中部的火山地带，罗托鲁瓦湖边，市区人口约6万。它坐落在一个古老的破火山口里，地热活动强烈——间歇泉、沸泥塘、彩色热泉遍布，空气里常有硫磺味。这里也是毛利文化尤其是蒂阿拉瓦（Te Arawa）部族文化的中心之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rotorua (Rotorua Lakes Council, Bay of Plenty; urban area ~58,500, 13th largest in NZ; southern shore of Lake Rotorua in the Rotorua Caldera; Pōhutu Geyser at Whakarewarewa; hydrogen sulfide smell, "Sulphur City"; Te Arawa settled from the 14th century, Ohinemutu; highest proportion of Māori of any NZ city, 46%; health care and hospitality the largest employers)
+    howItWorks:
+      "罗托鲁瓦是新西兰丰盛湾大区的一座城，由罗托鲁瓦湖区议会管辖，城区人口约 5.85 万，是全国第 13 大城区；议会管垃圾、道路与规划，警察、学校与医院归中央政府。城市建在罗托鲁瓦破火山口的湖南岸，地热从地下涌上来：华卡雷瓦雷瓦的波胡图间歇泉、蒸腾的泥浆池与硫磺的气味是它的日常，“硫磺城”是它的绰号。14 世纪起特阿拉瓦部族在此定居，欧希内穆图的村落就在湖边，全市约 46% 的居民是毛利人，是新西兰比例最高的城市，毛利文化表演与地热景观是它的旅游支柱，红木森林的山地车道在城东。奥克兰在西北约 220 公里，陶波在南面约 80 公里，机场在城东北，没有客运铁路。初来的人最容易犯的错，是以为地热景观都在城外，而市区的公园与街边就在冒着蒸汽。",
     layout:
       "城市在罗托鲁瓦湖南岸、政府花园一带。地热区分布在城内外：库伊劳公园就在市区，怀奥塔普（“地热仙境”）、蒂普亚、怀曼古在城南；红木森林（Whakarewarewa Forest）在城东南，是骑行和跑步的地方。周边有十几个火山湖。",
     gettingAround:
@@ -2174,6 +2177,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   queenstown: {
     identity:
       "皇后镇在南岛南部、瓦卡蒂普湖边，被卓越山脉等群山环抱，镇区常住人口不到3万（整个皇后镇—湖区约5万），却是新西兰的旅游和户外运动中心。它以“探险之都”闻名——蹦极（世界上第一个商业蹦极点在附近）、跳伞、喷射快艇、滑雪都在这里。城市名的由来有几种说法，未有定论。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Queenstown (largest town of Queenstown-Lakes District, Otago; urban population ~29,000 June 2025; north-eastern shore of Lake Wakatipu at 310 m; The Remarkables and Coronet Peak; bungy jumping; Skyline gondola on Bob's Peak; Arrowtown and Wānaka in the same district; least affordable housing in NZ, average price over NZ$1.7 million by late 2022; airport)
+    howItWorks:
+      "皇后镇是新西兰奥塔哥地区的度假镇，属于皇后镇湖区议会，是辖区内最大的镇，2025 年 6 月城区人口约 2.9 万；议会管垃圾、道路与规划，警察、学校与医院归中央政府。镇子在瓦卡蒂普湖的东北岸，海拔 310 米，四面是山：卓越山与皇冠峰的雪场在冬天开放，天空缆车从镇中心上到鲍勃峰，蹦极从卡瓦劳大桥开始成为一门生意；箭镇与瓦纳卡在同一个辖区内，米尔福德峡湾是一日游的终点。旅游是它的全部经济，房价是全国最贵的，2022 年底均价超过 170 万纽元，住房短缺是本地长期的难题；机场在镇东，但克赖斯特彻奇与但尼丁各在几百公里外。初来的人最容易犯的错，是把皇后镇当作一座城市，而它是一个不到三万人的镇，价格却按国际度假地来定。",
     layout:
       "皇后镇建在瓦卡蒂普湖一个 Z 形转角的湖湾边，市中心紧凑、步行可达，天际缆车直接从镇上通到山顶观景台。湖对岸是卓越山脉，湖的西北通向格林诺奇和《指环王》取景的山谷。往东北翻山是箭镇（淘金时代的老镇）和瓦纳卡，往南是蒂阿瑙和峡湾。",
     gettingAround:
@@ -2189,6 +2195,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dunedin: {
     identity:
       "达尼丁在南岛东南岸、奥塔哥半岛根部，都会区约13万人，是南岛第二大城市。它由苏格兰长老会移民在19世纪中叶建立，城名 Dunedin 是爱丁堡的苏格兰盖尔语旧称（Dùn Èideann），街道名、教堂和大学都带着浓厚的苏格兰印记。周边的野生动物（信天翁、黄眼企鹅、海狮）是一大看点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dunedin (second city of the South Island, Otago; territorial authority ~3,286 km², larger than Rhode Island; ~132,800 June 2025; founded 1848 by Scottish settlers, name from Gaelic for Edinburgh; 1860s gold rush briefly made it NZ's largest city; University of Otago 1869, oldest in NZ, "Scarfies"; Baldwin Street the world's steepest residential street; Otago Peninsula albatross and penguins; Dunedin sound)
+    howItWorks:
+      "但尼丁是新西兰南岛的第二大城市，由但尼丁市议会管辖，辖区约 3,286 平方公里，比美国罗德岛州还大，2025 年 6 月人口约 13.3 万；议会管垃圾、道路与规划，警察、学校与医院归中央政府。1848 年苏格兰自由教会的移民建起这座城，名字来自爱丁堡的盖尔语写法，市中心的八角广场与维多利亚式的火车站是那个年代的产物；1860 年代奥塔哥的淘金热一度让它成为新西兰最大的城市，如今的石砌建筑是那时的钱留下的。1869 年创办的奥塔哥大学是新西兰最老的大学，学生的“围巾族”文化与八十年代的“但尼丁之声”是这座城的另一面；鲍德温街是世界最陡的住宅街，奥塔哥半岛上有信天翁与黄眼企鹅的栖息地，机场在南面的莫莫纳。初来的人最容易犯的错，是把但尼丁当作一座小城，而它的辖区大过一些国家的省，市区之外是农场与海岸。",
     layout:
       "达尼丁建在一个狭长海港（奥塔哥港）尽头的山谷和陡坡上，八角广场（The Octagon）是市中心。奥塔哥大学（新西兰最古老的大学）在市中心以北。往东沿港是奥塔哥半岛——一条多山的半岛，尽头的泰亚罗阿角有全世界唯一的大陆皇家信天翁繁殖地。城郊的鲍德温街曾被认为是世界最陡的街道之一。",
     gettingAround:
@@ -2205,6 +2214,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   napier: {
     identity:
       "内皮尔在北岛东岸的霍克斯湾，人口约6.6万（2025年估计），是世界上装饰艺术（Art Deco）建筑最集中的城镇之一：1931年2月3日霍克斯湾大地震夷平了市中心并造成256人死亡，随后几年整座城以当时流行的装饰艺术风格重建，海滨大道上的帕尼亚雕像是城市标志。霍克斯湾是新西兰第二大葡萄酒产区，有七十多家酒庄；南面的绑架者角（Cape Kidnappers）有世界上最大的大陆塘鹅繁殖地之一。当地的毛利部族是恩加蒂卡洪古努（Ngāti Kahungunu）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Napier (Napier City Council, Hawke's Bay; 105 km²; ~66,400 June 2025; 3 February 1931 earthquake killed 256 and the city was rebuilt in Art Deco; Marine Parade; Pania of the Reef; Napier Port; Hastings ~18 km, the "Twin Cities", combined ~133,240; Hawke's Bay the second-largest NZ wine region; Cape Kidnappers gannets; Art Deco festival February)
+    howItWorks:
+      "内皮尔是新西兰霍克斯湾大区的城市，由内皮尔市议会管辖，市域约 105 平方公里，2025 年 6 月人口约 6.6 万；议会管垃圾、道路与规划，警察、学校与医院归中央政府。1931 年 2 月 3 日的地震摧毁了整座城、夺去 256 条人命，重建正赶上装饰艺术风行的年代，于是市中心成了世界上保存最完整的装饰艺术街区之一，每年二月的装饰艺术节是它的名片；海滨大道与礁石女神帕尼亚的雕像在海边，港口在城北。南面 18 公里是黑斯廷斯，两城合称“双子城”，各有自己的市议会，合计约 13.3 万人；霍克斯湾是新西兰第二大葡萄酒产区，凯德纳普斯角的塘鹅栖息地在东南，机场在城北。初来的人最容易犯的错，是把内皮尔与黑斯廷斯当作一座城，而它们是两个议会、两个市中心。",
     layout:
       "市中心在布拉夫山南侧的平地上，艾默生街、坦尼森街一带是装饰艺术建筑最密集的街区；海滨大道沿海边向南延伸，有花园、喷泉、水族馆和帕尼亚雕像；布拉夫山顶可俯瞰港口。1931年地震抬升了阿胡里里潟湖，如今是城北的湿地和机场所在地。哈斯丁斯在南面约20公里，特马塔峰在哈斯丁斯东南，绑架者角在东南约30公里的海岬尽头。酒庄分布在内皮尔与哈斯丁斯之间的平原和吉姆布利特砾石区。",
     gettingAround:
@@ -2219,6 +2231,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   taupo: {
     identity:
       "陶波在北岛中部的陶波湖北岸，人口约2.7万（2025年估计）。陶波湖面积约616平方公里，是新西兰最大的湖，湖盆本身是陶波火山的破火山口——约2.6万年前的奥鲁阿努伊喷发是地球近十万年里规模最大的火山喷发之一。怀卡托河从湖的北端流出，在镇北约5公里冲过胡卡瀑布；周围有月亮火山口等地热区和多座地热电站。1890年代引入的虹鳟鱼让陶波成为世界知名的钓鳟地。汤加里罗国家公园在湖南面约50公里。当地毛利部族是恩加蒂图瓦雷托阿（Ngāti Tūwharetoa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Taupō (Taupō District Council, Waikato region; urban area ~27,000 June 2025, second-largest in Waikato; north-eastern edge of Lake Taupō, New Zealand's largest lake, a caldera; Huka Falls; Wairakei geothermal power station 1958 and seven stations in the region; Ngāti Tūwharetoa; Tongariro National Park south; Ironman NZ; trout fishing)
+    howItWorks:
+      "陶波是新西兰怀卡托大区的一座镇，由陶波区议会管辖，2025 年 6 月城区人口约 2.7 万，是大区内第二大城区；议会管垃圾、道路与规划，警察、学校与医院归中央政府。镇子在陶波湖的东北角，湖是新西兰最大的淡水湖，也是一座巨型火山的破火山口，湖底至今有地热活动；胡卡瀑布在镇北的怀卡托河上，1958 年投产的怀拉基地热电站让这一带成为地热发电的中心，附近共有七座电站，人口也是从那时起涨起来的。湖床的所有权属于恩加提图法雷托阿部族，汤加里罗国家公园在湖的南岸，鳟鱼垂钓与铁人三项是它的两件事，罗托鲁瓦在北面约 80 公里。初来的人最容易犯的错，是把陶波湖当作一个普通的湖，而它是一座火山口，湖底与四周至今都在冒热气。",
     layout:
       "镇子沿湖北岸展开，湖滨有码头、公园和温泉，主街在湖边一两条街内。怀卡托河出湖口在镇东，胡卡瀑布、月亮火山口、怀拉基地热区都在镇北沿河一线；湖西岸的矿湾岩雕只能乘船或皮划艇到达。湖对岸南面是图朗伊和汤加里罗国家公园（鲁阿佩胡、瑙鲁霍伊、汤加里罗三座火山），罗托鲁瓦在北面约80公里。机场在镇南约8公里。",
     gettingAround:
@@ -2250,6 +2265,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nelson: {
     identity:
       "尼尔森在南岛北端的塔斯曼湾畔，人口约5.4万（2025年估计），1841年由新西兰公司建立，是南岛最早的城市。它以日照著称（年日照超过2400小时，有“阳光尼尔森”之称），是三个国家公园——阿贝尔·塔斯曼、卡胡朗伊、尼尔森湖——的门户，也是新西兰手工艺和艺术家最集中的地区之一：可穿戴艺术大赛（WOW）1987年在这里创办，为《指环王》电影打造“至尊魔戒”的金匠也在此。植物园山上的标志被称为“新西兰中心”（实际是早期大地测量的原点）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nelson (city and unitary authority at the top of the South Island; 422 km²; ~54,300, urban ~50,800; oldest city in the South Island, settled 1841, royal charter 1858; Tasman Bay; over 2,400 sunshine hours, the sunniest in NZ; Abel Tasman National Park in the separate Tasman District; Port Nelson the biggest fishing port in Australasia; World of Wearable Art founded 1987; airport ~1 million passengers)
+    howItWorks:
+      "尼尔森在新西兰的地方政府体系里是一个“单一制议会”——它同时行使市议会与大区议会的职权，全国只有六个这样的辖区；市域约 422 平方公里，人口约 5.4 万，城区约 5.1 万。1841 年欧洲移民在这里定居，1858 年获得王室特许，是南岛最老的城市。城市在塔斯曼湾的东岸，年日照超过 2,400 小时，是新西兰日照最多的地方，“阳光尼尔森”是它的自称；尼尔森港是澳新地区最大的渔港，海鲜、园艺、林业、农业与旅游是本地的“五大产业”，1987 年在这里创办的“可穿戴艺术大赛”如今在惠灵顿举行。阿贝尔塔斯曼国家公园在西面，属于隔壁的塔斯曼区议会；机场每年约一百万旅客，皮克顿的渡轮码头在东面约 110 公里。初来的人最容易犯的错，是把阿贝尔塔斯曼当作尼尔森的公园，而它在另一个议会的辖区里。",
     layout:
       "市中心在麦泰河口的平地上，特拉法加街是主街，主教座堂在街尾的小山上，周六市集在市中心的蒙哥马利广场。植物园山（“新西兰中心”）在市中心东侧。塔胡纳努伊海滩在城西南约5公里，机场就在海滩旁。往西经里奇蒙、莫图埃卡到阿贝尔·塔斯曼国家公园入口马拉豪约65公里；尼尔森湖国家公园在南面约90公里的圣阿诺；马尔堡酒乡在东面约110公里。",
     gettingAround:
@@ -2264,6 +2282,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kaikoura: {
     identity:
       "凯库拉是南岛东北海岸的小镇，在基督城以北约180公里，人口只有约2350（2025年估计），却是新西兰最著名的观鲸地：海岸外的凯库拉海底峡谷从30米骤降到2000米深，深海抹香鲸常年在这里出没，观鲸船几乎全年可见；半岛上有新西兰毛皮海狮栖息地。镇名在毛利语里意为“吃小龙虾”（kai 食物，kōura 小龙虾）。2016年11月14日的7.8级地震抬升了海岸线、切断公路和铁路，之后重建。海边耸立的向海凯库拉山脉让小镇有“雪山下的海岸”的景观。当地毛利部族是恩盖塔胡（Ngāi Tahu）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kaikōura (Kaikōura District Council; town ~2,350, district ~4,340; peninsula between the Seaward Kaikōura Range and the Pacific; name means "meal of crayfish"; Kaikōura Canyon close inshore supports sperm whales, dusky and Hector's dolphins, fur seals; ~1 million visitors a year, tourism ~40% of district GDP; 2016 magnitude 7.8 earthquake cut all road and rail, NZ$1.1 billion of repairs; Christchurch ~180 km)
+    howItWorks:
+      "凯库拉是新西兰南岛东岸的一个小镇，由凯库拉区议会管辖，镇上约 2,350 人，全区约 4,340 人；议会管垃圾、道路与规划，警察、学校与医院归中央政府。镇子在一个伸进太平洋的半岛上，背后是海边凯库拉山脉，山与海之间只有一条窄带；名字在毛利语里是“一顿龙虾饭”的意思，路边卖龙虾的摊子至今在。它的特别之处在海底：凯库拉海沟离岸很近，深水把抹香鲸、暗色海豚、贺氏海豚与毛皮海豹带到岸边，观鲸从捕鲸与农渔业之后成了主业，每年约一百万游客，旅游占全区 GDP 近四成。2016 年 7.8 级地震切断了所有公路与铁路，修复花了约 11 亿纽元；克赖斯特彻奇在南面约 180 公里。初来的人最容易犯的错，是以为要坐很久的船才看得到鲸，而海沟就在岸边几公里外。",
     layout:
       "小镇在凯库拉半岛根部的海岸平地上，主街西端街靠北面的海湾；半岛向东伸入海中，角点有海豹栖息地和环半岛步道；南湾在半岛南侧，观鲸船从这里出发。1号国道和太平洋海岸列车沿海岸穿过小镇，奥豪角海豹区在镇北约25公里的海边。向海凯库拉山脉在镇西紧贴海岸。",
     gettingAround:
@@ -2278,6 +2299,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wanaka: {
     identity:
       "瓦纳卡在南岛奥塔哥内陆的瓦纳卡湖南端，海拔约290米，人口约1.3万（2025年估计）。它是奥斯派灵山国家公园（毛利名 Tititea，南岛西南部世界遗产荒野区的一部分）的门户，也是卡德罗纳、特雷布尔科恩两座滑雪场的基地——比皇后镇安静，同样有雪山和湖。湖里的那棵柳树“瓦纳卡树”是新西兰被拍照最多的树之一，罗伊峰步道能俯瞰整片湖山。恩盖塔胡（Ngāi Tahu）毛利人历史上季节性来此狩猎、捕鱼和采集绿玉。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Wānaka (town in Queenstown-Lakes District, Otago, the council seat being Queenstown; ~13,200 June 2025, population tripled between 2000 and 2020; southern end of Lake Wānaka; gateway to Mount Aspiring National Park; That Wānaka Tree; Roys Peak; Treble Cone, Cardrona, Snow Farm; Warbirds over Wanaka biennial; Queenstown 120 km over the Crown Range; semi-continental climate)
+    howItWorks:
+      "瓦纳卡是新西兰奥塔哥地区的一座镇，与皇后镇同属皇后镇湖区议会，议会所在地在皇后镇；2025 年 6 月人口约 1.32 万，2000 至 2020 年间翻了三倍。镇子在瓦纳卡湖的南端，是通往阿斯派灵山国家公园的门户；湖里的那棵柳树因社交媒体成了名，罗伊斯峰的步道从湖边爬上山脊；特里布尔科恩、卡德罗纳与雪场农庄的雪场在冬天开放，两年一度的“瓦纳卡战机展”把老飞机开上天。它的气候是新西兰少见的半大陆性，四季分明。皇后镇在南面约 120 公里，翻皇冠山口过去，机场只有小型飞机。初来的人最容易犯的错，是把瓦纳卡当作皇后镇的一部分，而它们是同一个议会下的两个镇，中间隔着一道山口。",
     layout:
       "镇子在瓦纳卡湖南岸的罗伊斯湾边，湖滨步道两三百米就是镇中心；“瓦纳卡树”在镇西的湖滩上。罗伊峰登山口在湖西岸约6公里；奥斯派灵山国家公园的马图基图基谷（罗布罗伊冰川）在西北约55公里，最后一段是砂石路；卡德罗纳滑雪场在南面约35公里的皇冠山脉公路上，特雷布尔科恩在西面约20公里；哈威亚湖在东北约15公里。皇后镇在南面，经皇冠山脉公路约70公里。",
     gettingAround:
@@ -2362,6 +2386,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "new-orleans": {
     identity:
       "新奥尔良在密西西比河下游、墨西哥湾附近，市区人口约 37 万。它由法国人在 18 世纪初建立，后来经西班牙统治、再回到法国、1803 年随“路易斯安那购地”并入美国，因此把法、西、非、加勒比的建筑、饮食和音乐混在一起，是爵士乐的发源地。城市名（法语 la Nouvelle-Orléans）是 1718 年建城时为致敬当时的法国摄政王奥尔良公爵菲利普二世而取；路易斯安那这个名字则来自法王路易十四。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): New Orleans (Louisiana; a consolidated city-parish coextensive with Orleans Parish — Louisiana uses parishes, not counties; 383,997 in 2020, the most populous in Louisiana; founded 1718 by the French, Spanish rule, Louisiana Purchase 1803, third-most populous US city by 1840; French Quarter Creole architecture; half the city at or below sea level, the federal levee system failed during Hurricane Katrina on 29 August 2005, flooding over 80 per cent of the city; Mardi Gras; jazz; port; streetcars)
+    howItWorks:
+      "新奥尔良在行政上是一个“市与教区合一”的政府，与奥尔良教区同域——路易斯安那州不设县，而叫“教区”，这是法国与西班牙统治留下的痕迹之一；2020 年人口约 38.4 万，是路易斯安那人口最多的城市。1718 年法国人建城，其后归西班牙，1803 年随路易斯安那购地并入美国，1840 年前后它是全美第三大城市；法国区的克里奥尔式骑楼、街名与料理都从那段历史来，爵士乐在这里成形，狂欢节是全城一年的节点。城市在密西西比河三角洲上，约一半的地面在海平面或以下，靠堤坝与泵站维持；2005 年 8 月 29 日卡特里娜飓风期间联邦堤防系统失效，八成以上的市区被淹，人口至今未回到灾前。港口是墨西哥湾沿岸的重要商港，有轨电车仍在运行。初来的人最容易犯的错，是以为法国区就是新奥尔良，而它只是河湾高地上的一小片，城市的大部分在更低的地方。",
     layout:
       "新奥尔良建在密西西比河的一个大弯里（“新月城”），地势极低、部分低于海平面，靠堤坝和泵站防洪。最老的法国区（French Quarter）在河边，方格街道、铁艺阳台、庭院；往上游是花园区的老宅和有轨电车线；北面是庞恰特雷恩湖。",
     gettingAround:
@@ -2553,6 +2580,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   orlando: {
     identity:
       "奥兰多在佛罗里达州中部，人口约30.8万、都会区约270万（2020年普查），是世界上最大的主题公园集中地：1971年开园的华特迪士尼世界在城西南约34公里的贝湖和布埃纳维斯塔湖一带（不在市界内），1990年开园的奥兰多环球影城在市区西南（是唯一在市界内的主题公园），另有海洋世界等。城东约80公里的卡纳维拉尔角有肯尼迪航天中心。奥兰多国际机场是美国最繁忙的机场之一，市中心本身以伊奥拉湖和周边的湖泊、橡树街区为特色。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Orlando (Florida; county seat of Orange County; ~119 sq mi; 307,573 in 2020, fourth-most populous in Florida, metro ~2.7 million; fourth-most visited US destination, more theme parks than anywhere in the world; Walt Disney World opened 1971 and lies in Bay Lake and Lake Buena Vista, not the city; Universal Orlando in the city area; International Drive; Orange County Convention Center second-largest in the US; MCO seventh-busiest US airport; University of Central Florida ~69,320 students)
+    howItWorks:
+      "奥兰多是佛罗里达州奥兰治县的县治，市域约 310 平方公里，2020 年人口约 30.8 万，是佛州第四大城市，都会区约 270 万人；市议会管地方服务，县与州分管其余，学校由县学区办。它是全美第四大旅游目的地，主题公园的数量居世界之首，但最有名的那一座不在市界之内：1971 年开业的华特迪士尼世界在西南约 30 公里的贝湖与布埃纳文图拉湖两个自治市镇里，那片土地长期由一个特别管理区自治；环球影城则在市区范围内，国际大道是酒店与餐厅的走廊，奥兰治县会展中心是全美第二大。中佛罗里达大学有约六万九千名学生，是全美最大的公立大学之一；奥兰多国际机场是全美第七繁忙的。城市在内陆，四周是湖，没有海滩。初来的人最容易犯的错，是以为迪士尼在奥兰多市里，而它在两个另设的市镇里，市政府管不到那片地。",
     layout:
       "市中心在伊奥拉湖周围，橙街是主街，冬园镇在城东北是老派的富人小镇。主题公园区在市区西南：国际大道是酒店、餐饮和会展集中的走廊，环球影城、海洋世界在它两侧；迪士尼世界再往西南，自成一个度假区（四座主题公园、水上乐园、迪士尼之泉）。基西米在迪士尼南面。机场在市中心东南约10公里，肯尼迪航天中心在东面的大西洋岸。",
     gettingAround:
@@ -2584,6 +2614,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nashville: {
     identity:
       "纳什维尔是田纳西州首府，在坎伯兰河畔，1779年建立，人口约68.9万（2020年普查）。它是“音乐之城”：1925年开播的大奥普里（Grand Ole Opry）广播节目让它成为乡村音乐之都，莱曼礼堂是大奥普里的老家，音乐街（Music Row）集中了唱片公司和录音室，百老汇街下段的酒吧从中午到深夜都有现场演出。百年公园里有为1897年田纳西百年博览会建造、后改建为永久建筑的帕特农神庙全尺寸复制品，因此又有“南方雅典”之称。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nashville (Tennessee; consolidated city-county government with Davidson County since 1963; 689,447 in 2020, 20th-most populous US city, metro ~2.15 million; capital of Tennessee; "Music City" after a 1950 WSM radio broadcast; Grand Ole Opry from 1925; Ryman; Broadway honky-tonks; HCA Healthcare, Bridgestone Americas, Asurion; Vanderbilt, Tennessee State, Belmont; metro gained 343,319 people 2010–2020; hottest US housing market in 2017)
+    howItWorks:
+      "纳什维尔是田纳西州的州府，1963 年起市政府与戴维森县政府合并为一个“市县合一”的政府，2020 年人口约 68.9 万，是全美第 20 大城市，都会区约 215 万人；这个合并政府管警察、消防、学校与规划，是南方最早的市县合并之一。它自称“音乐之城”——1950 年 WSM 电台的一句播报把这个称呼定了下来，1925 年开播的“大奥普里”乡村音乐节目至今每周演出，莱曼礼堂与百老汇大街上的酒吧是听现场的地方，唱片公司与录音棚集中在音乐街。但这座城真正的钱在别处：HCA 医疗、普利司通美洲与 Asurion 的总部在此，医疗产业是最大的雇主，范德堡等几所大学在城里。2010 至 2020 年间都会区增加了三十多万人，房价随之涨到全美最热的一档。初来的人最容易犯的错，是把纳什维尔当作一座只有音乐的城，而它是南方增长最快的医疗与商业中心之一。",
     layout:
       "市中心在坎伯兰河西岸，百老汇街下段从河边向西，两侧是酒吧和乡村音乐名人堂、莱曼礼堂；州议会大厦在市中心北面的小山上。音乐街在市中心西南，范德堡大学和百年公园（帕特农神庙）再往西。东纳什维尔在河对岸，是餐饮和独立商店区；12 South、Germantown 是热门街区。大奥普里剧院在城东北约15公里的奥普里兰。机场在市中心东南约14公里。",
     gettingAround:
@@ -2598,6 +2631,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   austin: {
     identity:
       "奥斯汀是得克萨斯州首府，在科罗拉多河畔，1839年成为得克萨斯共和国的首都，人口约96.2万（2020年普查），是美国增长最快的大城市之一。它自称“世界现场音乐之都”，SXSW 音乐、电影与科技节每年3月举办，《奥斯汀城市极限》是播出时间最长的电视音乐节目；得州大学奥斯汀分校有五万多学生。1888年落成的州议会大厦比美国国会大厦还高；国会大道桥下栖息着约150万只墨西哥犬吻蝠，夏季傍晚成群飞出。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Austin (Texas; capital of Texas and seat of Travis County; 961,855 in 2020, fifth-largest in Texas and 12th-largest US city, metro ~2.55 million; among the fastest-growing large US cities since 2010; "Live Music Capital of the World" and Austin City Limits; SXSW; Tesla, Google, Apple and Oracle operations; University of Texas at Austin over 50,000 students; Lady Bird Lake and Barton Springs; Austin FC 2021)
+    howItWorks:
+      "奥斯汀是得克萨斯州的州府，也是特拉维斯县的县治，2020 年人口约 96.2 万，是得州第五大、全美第 12 大城市，都会区约 255 万人；2010 年以来它是全美增长最快的大城市之一。州议会大厦在市中心的高地上，得克萨斯大学奥斯汀分校有五万多名学生，政府与大学曾是这座城的全部；1990 年代起科技产业进来，特斯拉、谷歌、苹果与甲骨文在此设厂或迁来总部，房价与人口一起翻了上去。它自称“世界现场音乐之都”，第六街的酒吧与 PBS 的《奥斯汀城市限制》节目是这个称号的来源，三月的西南偏南与秋天的音乐节把全城塞满；科罗拉多河在市中心拦成伯德夫人湖，巴顿泉是天然泳池，国会大道桥下夏天飞出上百万只蝙蝠。初来的人最容易犯的错，是按“得州”的印象来预期奥斯汀，而它在政治与文化上一直与州内其他城市不同。",
     layout:
       "市中心在科罗拉多河（此段叫伯德夫人湖）北岸，国会大道从河边一直通到北端的州议会大厦；第六街是酒吧街，雷尼街是老屋改的酒吧区，南国会大道（SoCo）过桥在河南岸。得州大学在议会大厦北面。锡尔克公园和巴顿泉泳池在河南岸偏西，伯德夫人湖环湖步道约16公里。东奥斯汀是新兴的餐饮艺术区。机场在市中心东南约13公里，得州丘陵地（Hill Country）在城西。",
     gettingAround:
@@ -2612,6 +2648,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "santa-fe": {
     identity:
       "圣塔菲是新墨西哥州首府，海拔约2133米，是美国海拔最高、建城最早的州首府——1610年由西班牙殖民者佩德罗·德·佩拉尔塔建立，人口约8.8万（2020年普查）。城市以土坯（adobe）风格建筑著称，市中心的总督府（1610）是美国持续使用最久的公共建筑之一；这里是普韦布洛原住民、西班牙裔和英裔三种文化交汇的地方，也是画家乔治亚·奥基夫的创作地，峡谷路上有上百家画廊。每年8月的圣塔菲印第安市场是北美最大的原住民艺术市集。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santa Fe (New Mexico; capital of New Mexico, founded 1610, the oldest state capital in the US and the highest at about 2,133 m; 87,505 in 2020, fourth-most populous in the state, metro ~158,000; 52.34 sq mi; Santa Fe Plaza and the Palace of the Governors; adobe Pueblo Revival and Territorial Revival architecture protected by a 1957 historic zoning ordinance; UNESCO Creative City 2005; over 250 galleries and Canyon Road; Indian Market; about 51% Hispanic or Latino; Los Alamos nearby)
+    howItWorks:
+      "圣菲是新墨西哥州的州府，1610 年建城，是美国最古老的州府，也是海拔最高的一座，约 2,133 米；2020 年人口约 8.75 万，都会区约 15.8 万，由民选的市长与市议会治理，县与州分管其余。城市的模样是法律定下来的：1957 年的历史区划条例规定新建筑必须用土坯风格的普韦布洛复兴式或领地复兴式，于是整座城是一片土黄色的平顶房子，连加油站与超市也照办。中心是圣菲广场，总督府在广场北侧，是美国持续使用最久的公共建筑之一，原住民在廊下摆摊卖银饰；坎宁路上有两百五十多家画廊，每年八月的印第安市集是全美最大的原住民艺术市场，2005 年它成为联合国教科文组织的手工艺与民间艺术之都。约一半市民是西班牙裔，洛斯阿拉莫斯在西北，阿尔伯克基与机场在南面约 100 公里。初来的人最容易犯的错，是以为土坯建筑都是老房子，而其中很多是 20 世纪按条例新建的。",
     layout:
       "老城以圣塔菲广场为中心，总督府在广场北侧，圣方济各主教座堂在东侧，广场周边几个街区是土坯风格的老城和博物馆区；峡谷路画廊街从老城向东南延伸约1公里。博物馆山在城东南，有国际民间艺术博物馆和印第安艺术文化博物馆。铁路广场在老城南面，是艺术区和火车站。桑格雷德克里斯托山在城东北，滑雪场在山上；班德利尔国家纪念地（普韦布洛先民崖居）在西北约50公里，陶斯在北面约110公里，阿布奎基在南面约100公里。",
     gettingAround:
@@ -2626,6 +2665,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   anchorage: {
     identity:
       "安克雷奇是阿拉斯加最大的城市，在库克湾的两条支湾（克尼克湾、特纳根湾）之间，人口约29.1万（2020年普查），占全州人口近四成。它1914年作为阿拉斯加铁路的建设营地建立，1964年3月27日的9.2级“耶稣受难日地震”是有记录以来第二强的地震，重创了城市。安克雷奇是进入阿拉斯加荒野的门户——东面紧挨楚加奇山脉和楚加奇州立公园，北面是迪纳利，胡德湖是世界上最繁忙的水上飞机基地；夏至前后白天近19小时，冬至只有约6小时。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Anchorage (Alaska; a unified home rule municipality merging city and borough since 1975, about 1,946 sq mi, less than 10 per cent of it populated; 291,247 in 2020, nearly 40 per cent of Alaska; founded 1914 as a railroad construction camp, incorporated 1920; on a peninsula between the Knik and Turnagain arms of Cook Inlet, Chugach Mountains behind; magnitude 9.2 earthquake in 1964; Ted Stevens airport the world's third-busiest for cargo; about 250 black bears and 1,000 moose; Juneau is the state capital)
+    howItWorks:
+      "安克雷奇是阿拉斯加最大的城市，1975 年市与自治市镇合并为一个“统一自治市”，辖区约 5,000 平方公里，其中住人的不到一成；2020 年人口约 29.1 万，接近全州的四成。它 1914 年作为阿拉斯加铁路的施工营地出现，1920 年设市，是一座完全的 20 世纪城市。市区在库克湾两条海湾之间的半岛上，楚加奇山脉在东面，1964 年 9.2 级地震——有记录以来第二强——把市区的一片街区震塌滑入海中，如今那里是公园。特德·史蒂文斯机场是世界第三繁忙的货运机场，亚洲与北美之间的大圆航线在这里加油；阿拉斯加铁路的总站在城里，伊迪塔罗德狗拉雪橇赛每年三月从市中心的街上出发。冬天约有一千头驼鹿进城，黑熊约两百五十头。州府不在这里，而在南面的朱诺。初来的人最容易犯的错，是以为安克雷奇是州府，而朱诺才是，且只能坐船或飞机到达。",
     layout:
       "市中心在克尼克湾南岸的台地上，街道成格网，安克雷奇博物馆、周末市集和铁路车站都在市中心；托尼·诺尔斯海岸步道从市中心沿海岸向西南延伸约18公里到金凯德公园。机场和胡德湖在市中心西南，阿拉斯加原住民遗产中心在城东北。楚加奇山脉在城东，弗拉特托普山是最常爬的山；特纳根湾沿苏厄德公路向南，是看白鲸和潮涌的路段，阿利耶斯卡滑雪场在南面约60公里的格德伍德。迪纳利国家公园在北面约380公里。",
     gettingAround:
@@ -2640,6 +2682,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "salt-lake-city": {
     identity:
       "盐湖城是犹他州首府，在瓦萨奇山脉西麓、大盐湖东南，海拔约1300米，人口约20万（2020年普查），都会区约126万。1847年由杨百翰率领的耶稣基督后期圣徒教会（摩门教）先驱建立，圣殿广场是城市规划的原点和教会总部所在地；2002年举办冬奥会，2024年又获选主办2034年冬奥会。瓦萨奇山的雪以干燥松软著称，市区一小时车程内有十余座滑雪场（雪鸟、阿尔塔、帕克城等）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Salt Lake City (Utah; capital of Utah and seat of Salt Lake County; 199,723 in 2020, metro ~1.3 million, 46th-largest US metro; founded 1847 by settlers under Brigham Young, originally Great Salt Lake City until 1868; wide streets of 132 feet on a grid centred on Temple Square, from the Plat of the City of Zion; church headquarters at Temple Square; the Great Salt Lake receding, exposing arsenic; Wasatch ski resorts; 2002 Winter Olympics and 2034 awarded in July 2024; SLC airport hub; University of Utah)
+    howItWorks:
+      "盐湖城是犹他州的州府与盐湖县的县治，2020 年市区人口约 20 万，都会区约 130 万，是全美第 46 大都会区；市议会管地方服务，县与州分管其余。1847 年杨百翰带领后期圣徒教会的移民在这里定居，城市按“锡安城规划图”一次画定：街道宽达 40 米，地址以圣殿广场为原点，按“东南西北 + 街区数”编号，因此每个门牌都能直接算出它离原点几个街区——这套系统至今在用，也是外来者最先要适应的东西。教会总部与圣殿在广场上，犹他大学在城东的山脚。四周是山：瓦萨奇山脉的雪场在一小时车程内，2002 年冬奥会在这里举办，2034 年再次获得主办权；西面的大盐湖水位持续下降，湖底裸露带来的粉尘是当地的环境难题，冬天的逆温层让盆地里的空气变差。初来的人最容易犯的错，是按普通城市的方式记地址，而这里的门牌是一套坐标。",
     layout:
       "城市是以圣殿广场为原点的大格网，街道按与广场的距离编号（如 300 South）；州议会大厦在市中心北面的山坡上。市中心有会议中心、城溪购物中心和历史街区；犹他大学和自然历史博物馆在城东的山脚。瓦萨奇山脉在东面耸立，大杨木峡谷、小杨木峡谷通往滑雪场（约40分钟车程），帕克城在山另一侧约50公里；大盐湖在西北，羚羊岛州立公园是最好的湖岸观景点，约70公里。机场在市中心西约6公里。",
     gettingAround:
@@ -3424,6 +3469,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   keflavik: {
     identity:
       "凯夫拉维克是雷克雅内斯半岛上的一座港口小镇，与邻镇合并后正式名为“雷克雅内斯拜尔”，人口约 2 万。冰岛的国际机场就在旁边，多数游客抵离冰岛都经过这里。半岛本身几乎全是熔岩原和地热区，2021 年以来附近多次火山喷发。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Keflavík (Iceland; a town within the municipality of Reykjanesbær, formed by the merger of Keflavík, Njarðvík and Hafnir in the mid-1990s; about 15,930 people with Njarðvík as of 2018; the name means driftwood bay; settled from the 16th century around fishing and fish processing; the US military built the airport in the Second World War and Naval Air Station Keflavik was strategically important through the Cold War, American forces withdrawing in 2006; Keflavík International Airport adjacent to the town is Iceland's main international gateway near Reykjavík; nicknamed bítlabærinn, the Beatles town, for the musicians it produced in the 1960s and 1970s; basalt rubble landscape)
+    howItWorks:
+      "凯夫拉维克是冰岛西南雷恰角半岛上的城镇，1990 年代中期它与纳尔兹维克、哈布尼尔合并成雷恰内斯拜市镇，2018 年与纳尔兹维克合计约 1.6 万人；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名意为“浮木湾”，16 世纪起这里因渔业与鱼加工成镇，四周是玄武岩碎石与苔藓的荒野。二战期间美军在镇旁修建机场，冷战时期凯夫拉维克海军航空站是监视北方海域的重要基地，2006 年美军撤离，营区改作民用与住宅。凯夫拉维克国际机场就在镇边，是冰岛的国际门户，几乎所有进出冰岛的航班都在这里起降，雷克雅未克在东北约 50 公里。1960、70 年代这里出了许多乐手，本地因此有“披头士镇”的绰号。初来的人最容易犯的错，是把机场当作雷克雅未克的一部分，而它在另一个市镇，进城还要坐将近一小时的车。",
     layout:
       "凯夫拉维克在半岛西侧海边，机场在镇西南。整个雷克雅内斯半岛是一片年轻的黑色熔岩台地，几乎没有树，地表冒着地热蒸汽；著名的蓝湖（Blue Lagoon）在半岛中部，是地热发电站排出的富矿物温水形成的。半岛南岸有海崖、灯塔和大陆桥（横跨美洲-欧亚板块裂缝的小桥）。",
     gettingAround:
@@ -3439,6 +3487,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   vik: {
     identity:
       "维克（全名 Vík í Mýrdal）是冰岛最南端的小镇，人口只有几百人，却因为正好在环岛公路上、周围景点密集而成为南岸最重要的旅游据点。小镇夹在黑色的海崖、绿色的苔藓山和北面米尔达斯冰盖之间，冰盖下压着卡特拉火山。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vík í Mýrdal (Iceland; village in Mýrdalshreppur municipality with about 750 inhabitants as of 2021, the southernmost village in Iceland, on the Ring Road about 180 km south-east of Reykjavík; the largest settlement for some 70 km around and the service centre for the coast between Skógar and Mýrdalssandur; the black sand beach named among the ten most beautiful beaches on earth by Islands Magazine in 1991, with the Reynisdrangar sea stacks offshore; the wettest coastal town in Iceland with about 2,250 mm of rain a year; the Katla volcano, which last erupted in 1918, with an evacuation plan giving residents little time to reach the hilltop church)
+    howItWorks:
+      "维克是冰岛南岸的村子，属米尔达尔市镇，2021 年人口约 750，是冰岛最南端的聚落；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。它的作用是服务：从斯科加尔到米尔达尔沙原约 70 公里的海岸线上，只有这里有加油站、超市与旅馆，因此环岛公路上的人几乎都在此停一次。黑沙滩与海面上的雷尼斯德朗格岩柱是它最出名的景观，1991 年一家美国杂志把这片沙滩列入全球最美十大海滩；但这里的浪有突然涌上岸的“暗涌”，海边立有警示，每年都有人被卷走。它是冰岛沿海降水最多的地方，年降水约 2,250 毫米。村子北面的卡特拉火山压在米尔达尔冰盖之下，1918 年最后一次喷发，一旦喷发冰盖融水会在很短时间内冲下来，山坡上的教堂是全村的疏散集合点。初来的人最容易犯的错，是在黑沙滩背对海拍照，而那正是被浪卷走的方式。",
     layout:
       "维克沿一条主路展开，山坡上的白色小教堂是地标和洪水时的避难点。镇子东西两侧都是黑沙滩：西边是著名的雷尼斯黑沙滩，有柱状玄武岩崖和海蚀柱；镇子正南的海滩一直延伸向东。北面翻过山口是米尔达斯冰盖和索尔黑马冰川舌。",
     gettingAround:
@@ -3454,6 +3505,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hofn: {
     identity:
       "赫本（全名 Höfn í Hornafirði，“赫本”在冰岛语里就是“港口”）是冰岛东南部的渔港小镇，人口约 1700 人，坐落在一处潟湖口的沙嘴上，背后是欧洲最大的冰川——瓦特纳冰原，及其一条条从山间伸下来的冰川舌。这里以龙虾（langoustine）出名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Höfn (Iceland; town in Hornafjörður municipality in the south-east with 1,802 residents in 2025, on a peninsula surrounded by sea on three sides; the name means harbour; founded in 1897 by the merchant Ottó Tuliníus, who moved a trading post from Papós, with growth after the Hornafjarðarbrú bridge of 1961; fishing, particularly langoustine and saltfish, and tourism around Vatnajökull, Europe's largest ice cap by volume, and the nearby glaciers; the annual lobster festival in early July; on the Ring Road about 455 km from Reykjavík, the Almannaskarðsgöng tunnel of 2005 improving winter access; a regional airport with flights to Reykjavík)
+    howItWorks:
+      "赫本是冰岛东南部霍尔纳峡湾市镇的城镇，2025 年人口约 1,800；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。地名就是“港”的意思，镇子建在一处三面环海的小半岛上。它 1897 年由商人奥托·图利尼乌斯创立，把原在帕波斯的贸易点迁到这里，1961 年霍尔纳峡湾大桥通车后才真正长起来。渔业是老本行，尤以海螯虾与咸鳕鱼闻名，每年七月初办海螯虾节。它的另一半生计来自身后的冰：瓦特纳冰原是欧洲体积最大的冰盖，就压在镇北的山上，杰古沙龙冰河湖在西面约 80 公里，冰川旅游把这座小镇变成了东南岸的落脚点。环岛公路从这里经过，雷克雅未克在西面约 455 公里；2005 年通车的阿尔曼纳斯卡兹隧道改善了冬季通行，另有支线机场飞雷克雅未克。初来的人最容易犯的错，是以为冰河湖在镇边，而那是一小时以上的车程。",
     layout:
       "赫本在一条低平的沙嘴末端，三面环水，天气好时从镇上就能望见瓦特纳冰原白色的边缘和几座冰帽下的高峰（包括冰岛最高点华纳达尔斯赫努克）。环岛公路从镇北经过；镇和冰川之间是一片冰水冲积平原和潟湖。",
     gettingAround:
@@ -3469,6 +3523,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   egilsstadir: {
     identity:
       "埃伊尔斯塔济是冰岛东部最大的城镇，人口约 2500 人，是东部峡湾地区的交通、服务和行政中心。它坐落在冰岛第三大湖——拉加尔湖（Lagarfljót）畔，湖细长，据当地民间传说里住着一条“湖怪”。周围是冰岛少见的大片林地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Egilsstaðir (Iceland; town in east Iceland on the banks of the Lagarfljót, 2,632 residents in 2024, the largest settlement in the eastern region; formally established only in 1947, though the farmer Jón Bergsson had begun developing the site earlier in the 20th century; growth during the 2004–2008 hydropower and aluminium boom; a crossroads where the main regional routes meet, the area's transport, service and administrative centre, with airport, gymnasium and health clinic; Hallormsstaðaskógur, the biggest forest in Iceland, plus Hengifoss and Skriðuklaustur nearby; subarctic climate with mild summers, a record 29.8 °C in August 2025)
+    howItWorks:
+      "埃伊尔斯塔济是冰岛东部最大的城镇，2024 年人口 2,632，在拉加尔湖流出的河边；冰岛只有国家与市镇两级，本镇属于 2020 年合并成立的穆拉辛市镇，市镇管学校、规划与地方服务，医疗与警察归国家。这是一座很年轻的城镇：1947 年才正式建镇，在此之前只有一处农场，20 世纪初农场主约恩·贝格松开始在此建设，2004 至 2008 年间东部的水电与铝厂工程带来了一轮扩张。它的位置解释了它的存在——东部几条主要公路在这里交汇，因此机场、医院门诊、中学与政府机构都设在此地，周边峡湾的居民办事都要进城。冰岛最大的森林哈德洛尔姆斯塔泽尔就在湖的南岸，亨吉瀑布与斯克里祖克劳斯图尔庄园在附近。翻过山口是塞济斯菲厄泽，开往丹麦与法罗群岛的渡轮从那里出发。初来的人最容易犯的错，是来找一座老镇，而这座城镇比多数居民的年纪还小。",
     layout:
       "埃伊尔斯塔济在东部内陆的一处河谷平地上，拉加尔湖从镇边向西南延伸。环岛公路经过这里，往东翻山约 25 分钟到峡湾港口城镇塞济斯菲厄泽（Seyðisfjörður，以彩虹街和渡轮码头出名）。镇子本身不大、以实用为主。",
     gettingAround:
@@ -3502,6 +3559,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   husavik: {
     identity:
       "胡萨维克是冰岛北部一座渔港小镇，人口约 2300 人，被称为“欧洲观鲸之都”——外海的斯基亚尔万迪湾食物丰富，夏季能稳定看到座头鲸，有时还有蓝鲸。镇上有一座全木结构的老教堂和一座专门的鲸鱼博物馆。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Húsavík (Iceland; town in Norðurþing municipality on the north coast with about 2,300–2,500 residents, on Skjálfandi bay; a centre of whale watching in Iceland because whales of several species enter the bay; the wooden church Húsavíkurkirkja of 1907 the chief landmark; the Húsavík Whale Museum, the Exploration Museum and a Eurovision museum opened in 2021; recorded as the first place in Iceland settled by a Norseman, the Swedish Viking Garðar Svavarsson wintering here around 870; the 2020 film Eurovision Song Contest: The Story of Fire Saga set here, its title song Oscar-nominated; Akureyri within an hour via the Vaðlaheiðargöng tunnel of 2019; flights ended in 2024)
+    howItWorks:
+      "胡萨维克是冰岛北岸的城镇，属北辛市镇，人口约 2,300 至 2,500；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子面朝斯乔尔万迪湾，几种鲸每年夏天进湾觅食，因此这里成了冰岛观鲸的中心——出海的船从港口发出，鲸鱼博物馆就在码头边，本地经济由此从渔业转向了旅游。1907 年建成的木造教堂立在坡上，是全镇的标志。按记载，这里是冰岛最早被北欧人过冬居住的地方：约公元 870 年瑞典人加尔达尔·斯瓦瓦尔松在此越冬。2020 年一部以欧洲歌唱大赛为题材的电影把故事放在这座镇上，主题曲获奥斯卡提名，之后镇里开了一间相关的小博物馆。2019 年瓦兹拉海济隧道通车后，到阿克雷里只要一小时；本地机场的定期航班 2024 年停飞。初来的人最容易犯的错，是把观鲸当作全年项目，而它按季节与天气开船。",
     layout:
       "胡萨维克在斯基亚尔万迪湾东岸，背靠低山，港口是全镇的中心，观鲸船就从这里出发。天气好时隔着海湾能看到远处的雪山。镇子很小，几条街就走完。",
     gettingAround:
@@ -3517,6 +3577,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   isafjordur: {
     identity:
       "伊萨菲厄泽是冰岛“西部峡湾”地区最大的城镇，人口约 2700 人。西部峡湾是冰岛最古老、最偏远的一角，一片被无数深峡湾和陡峭平顶山切碎的半岛，公路少、隧道多、冬季常被大雪封住。伊萨菲厄泽是这里的中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ísafjörður (Iceland; the largest town in the Westfjords, in Ísafjarðarbær municipality, with about 2,744 residents in January 2023, on a sandy spit in Skutulsfjörður off Ísafjarðardjúp; settled in the 9th century according to the Landnámabók, a trading centre from the 1500s, granted municipal status in 1786; timber buildings surviving from the 1700s including Krambúð 1757, Faktorshús 1765, Tjöruhúsið 1781 and Turnhúsið 1784; the coolest area in Iceland at sea level with a tundra climate, high winds and few sunny days; fishing historically dominant, now also the University Centre of the Westfjords and a gateway to the Hornstrandir nature reserve; the Aldrei fór ég suður music festival)
+    howItWorks:
+      "伊萨菲厄泽是冰岛西部峡湾地区最大的城镇，2023 年 1 月人口约 2,744，属伊萨菲厄泽市镇；冰岛只有国家与市镇两级，市镇管学校、规划与地方服务，医疗与警察归国家。镇子建在斯库图尔峡湾里一条伸进水面的沙嘴上，三面是几百米高的陡壁，只有一条窄路通往外面——这种地形决定了西部峡湾的一切：冬天雪崩与封路是常事，镇上因此修了防雪崩的导流堤，山下也打了隧道。按《定居之书》，9 世纪已有人在此定居；16 世纪起它是贸易点，1786 年获得城镇地位，港边还留着 18 世纪的几栋木屋，最早的建于 1757 年。这里是冰岛海平面上最冷的一片，属苔原气候，风大、晴天少。渔业曾是全部生计，如今西部峡湾大学中心也设在这里，霍恩斯特兰迪尔自然保护区从这里出发。初来的人最容易犯的错，是按公路里程安排行程，而冬天这条路随时可能关闭。",
     layout:
       "伊萨菲厄泽建在一条峡湾里伸出的一个 L 形沙嘴上，三面是几乎垂直升起的平顶山，只有一条路进出。老城有一片 18–19 世纪的木屋。周围峡湾里散布着更小的渔村和被废弃的村落。",
     gettingAround:
@@ -3601,6 +3664,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lucerne: {
     identity:
       "卢塞恩在瑞士中部、卢塞恩湖（德语 Vierwaldstättersee，“四林州湖”）西端、罗伊斯河出湖处，市区人口约 8 万，是中部德语区最受游客欢迎的城市，被雪山环抱，湖光山色是它的招牌。瑞士联邦最早的几个州就在这个湖周围，1291 年的结盟传说也发生在湖边的吕特利草地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lucerne (Switzerland; capital of the canton of Lucerne, about 82,000 residents, the most populous city in Central Switzerland; where Lake Lucerne drains into the Reuss; a Benedictine monastery from about 750, independence 1178, joined the Swiss Confederacy in 1332, Battle of Sempach 1386; the Chapel Bridge of 1333, 204 m, the oldest covered bridge in Europe, its interior largely destroyed by fire in 1993 and restored by 1994; the Musegg wall with eight towers; the Lion Monument; the twin-towered Church of St Leodegar; Lucerne Festival)
+    howItWorks:
+      "卢塞恩是瑞士卢塞恩州的首府，人口约 8.2 万，是中部瑞士最大的城市；瑞士是联邦制，州在教育、警务与税收上拥有相当大的自主权，市镇再管本地事务，因此这座城首先属于它的州。地形决定了城市的形态：琉森湖在这里收窄，湖水注入罗伊斯河，老城就骑在河的两岸，桥是它的骨架。1333 年建成的卡佩尔廊桥长 204 米，是欧洲最古老的有顶木桥，1993 年一场大火烧毁了桥内的大部分绘画，1994 年修复通行；穆塞格城墙上留着八座塔，可以走上去。狮子纪念碑凿在城北的岩壁上，圣莱奥德伽尔教堂的双塔在湖边。这座城约 750 年从一座本笃会修道院起步，1178 年获得独立地位，1332 年加入瑞士邦联。夏天的琉森音乐节是欧洲重要的古典音乐节之一，皮拉图斯山与瑞吉山的登山铁路从湖边出发。初来的人最容易犯的错，是把琉森湖当作一个圆湖，而它是伸进群山的几条湖臂。",
     layout:
       "卢塞恩老城在罗伊斯河北岸，保留着带壁画的老房子和两座中世纪木廊桥——卡佩尔桥（欧洲最古老的有顶木桥之一，桥塔曾作水塔）和斯普洛耶桥。城墙和塔楼在山坡上。湖岸有大型火车站、KKL 文化会议中心和游船码头。城南是皮拉图斯山，城东是里吉山，都可乘齿轨或缆车上。",
     gettingAround:
@@ -3634,6 +3700,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lausanne: {
     identity:
       "洛桑（法语 Lausanne）在日内瓦湖北岸、一片陡坡上，市区人口约 14 万，是沃州首府、法语区第二大城市。它是国际奥林匹克委员会的总部所在地（1915 年迁来），被称为“奥林匹克之都”，有奥林匹克博物馆和多个国际体育组织。也是一座大学城。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lausanne (Switzerland; capital of the canton of Vaud, the fourth-largest Swiss city with about 150,000 residents, on Lake Geneva with roughly 500 m of vertical range across steep slopes; the Olympic Capital — International Olympic Committee headquarters, the Court of Arbitration for Sport and about 55 international sports organisations; the m2 metro, making it the smallest city in the world with a rapid transit system, 28 stations; Gothic cathedral; the Roman settlement Lousanna; the Treaty of Lausanne signed here in 1923; University of Lausanne and EPFL; about 42 per cent foreign nationals; French-speaking)
+    howItWorks:
+      "洛桑是瑞士沃州的首府，人口约 15 万，是瑞士第四大城市；瑞士是联邦制，州在教育、警务与税收上有相当大的自主权，市镇再管本地事务，法语是这里的语言。城市建在日内瓦湖北岸的陡坡上，从湖边的乌希到山脊的老城，垂直落差约 500 米——这一点决定了它的日常：街道分层，桥从一条街跨到另一条街的屋顶高度，出行靠 m2 地铁上下爬坡，那是瑞士唯一的地铁，也让洛桑成为世界上拥有地铁的最小城市之一。它是“奥林匹克之都”：国际奥委会总部自 20 世纪初设在这里，国际体育仲裁院与约五十五个国际体育组织也在城内，奥林匹克博物馆在湖边。哥特式的大教堂立在老城最高处，守夜人至今每晚在钟楼上报时。洛桑大学与洛桑联邦理工学院在西郊，外国籍居民约占四成。初来的人最容易犯的错，是按平面地图估计步行距离，而这座城的距离要算高差。",
     layout:
       "洛桑从湖边一直爬到山上，落差约 500 米，是欧洲少见的建在陡坡上的城市，有一条全自动地铁（m2 线）像缆车一样把湖边、市中心和上城连起来。老城和哥特式大教堂在高处；乌希（Ouchy）在湖边，是公园、码头和奥林匹克博物馆所在。",
     gettingAround:
@@ -3649,6 +3718,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   interlaken: {
     identity:
       "因特拉肯（德语意为“两湖之间”）是伯尔尼高地的门户小镇，夹在图恩湖和布里恩茨湖之间的一片冲积平原上，常住人口约 5600，却是瑞士山地旅游最集中的据点之一。天气好时从镇中心的草坪（Höhematte）能直接望见少女峰、僧侣峰、艾格峰三座名峰。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Interlaken (Switzerland; municipality in the canton of Bern, 5,719 residents in December 2020 over 4.27 km², the agglomeration about 23,300; on the flat alluvial Bödeli between Lake Thun and Lake Brienz, the name meaning "between lakes"; the Interlaken monastery first mentioned in 1133; called Aarmühle until the name Interlaken was adopted in 1891; a destination from about 1800; the gateway to the Jungfrau 4,158 m, Mönch 4,107 m and Eiger 3,967 m, with two stations, Interlaken Ost and West, and the Jungfrau railway to Jungfraujoch at 3,454 m; Harder Kulm; the Unspunnenfest every twelve years)
+    howItWorks:
+      "因特拉肯是瑞士伯尔尼州的一个市镇，2020 年 12 月常住人口 5,719，市域仅 4.27 平方公里，连同周边的聚居区约 2.3 万人；瑞士是联邦制，州管教育与警务，市镇管本地事务。它的名字是拉丁语的“湖与湖之间”：图恩湖与布里恩茨湖之间只有一块由河流冲积成的平地，当地叫“伯德利”，整座镇就摆在这块平地上，两侧是几乎垂直的山壁。镇中心的“高地草坪”是一大片始终不许建房的草地，因此从街上可以直接望见少女峰。1133 年这里已有修道院的记载，镇子原名阿尔米勒，1891 年才改用今名；约 1800 年起它成为旅游目的地。它是通往少女峰（4,158 米）、僧侣峰（4,107 米）与艾格峰（3,967 米）的门户，东站与西站两个车站分别接不同方向的线路，少女峰铁路通到海拔 3,454 米的少女峰车站。初来的人最容易犯的错，是以为山村就在镇上，而格林德尔瓦尔德与劳特布龙嫩在山谷更深处，还要再坐一段火车。",
     layout:
       "因特拉肯很小，主街 Höheweg 沿着一片开阔草坪，两头各一个火车站（东站、西站）。两侧是两个颜色不同的冰川湖：西边图恩湖偏绿、东边布里恩茨湖偏蓝。往南进山的窄轨铁路从这里出发，经劳特布龙嫩或格林德瓦上到少女峰地区。",
     gettingAround:
@@ -3664,6 +3736,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zermatt: {
     identity:
       "采尔马特在瑞士瓦莱州、一条深谷的尽头，正对马特洪峰（德语 Matterhorn，意大利语 Cervino，法语 Cervin，4478 米）——这座近乎完美的金字塔形孤峰是瑞士乃至阿尔卑斯最出名的山。全镇约 5800 人，海拔约 1600 米，为了空气和安静，镇内禁止燃油机动车，只有电动小车和马车。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zermatt (Switzerland; municipality in the canton of Valais, about 5,800 permanent residents at 1,608 m at the head of the Matter valley; combustion-engine vehicles banned, almost all local vehicles battery-driven, visitors arriving by rack railway from Täsch, with electric taxis and horse carriages in the village; famous after the first ascent of the Matterhorn in 1865; four ski areas, the highest cable car reaching the Klein Matterhorn at 3,883 m; the Gornergratbahn of 1898, the highest open-air railway in Europe; about half of all jobs in hospitality; 39 per cent foreign nationals, a third of residents born in the town)
+    howItWorks:
+      "采尔马特是瑞士瓦莱州的一个市镇，常住人口约 5,800，海拔 1,608 米，位于马特谷的尽头；瑞士是联邦制，州管教育与警务，市镇管本地事务。这座村子最独特的规则是它自己定的：内燃机车辆不得进入，外来车停在山下的泰施，游客换乘齿轨火车上来，村里跑的是电瓶车与马车，因此街上安静，空气与雪线上的视野都得以保留。1865 年马特洪峰首登之后它成名，此后一百六十年，登山与滑雪就是这里的全部产业——约一半的就业在住宿餐饮业，四个滑雪区连成一片，最高的缆车通到海拔 3,883 米的小马特洪峰，是欧洲最高的缆车站，夏季仍可滑雪；1898 年通车的戈尔内格拉特铁路是欧洲最高的露天铁路。居民里约四成是外国籍，只有约三分之一在本村出生。冰川快车在这里始发或终到。初来的人最容易犯的错，是打算开车上来，而车只能停到泰施。",
     layout:
       "采尔马特建在一条南北向深谷的底部，两侧山坡陡峭，马特洪峰在镇子正南方、谷口的方向。主街 Bahnhofstrasse 从火车站延伸，两侧是酒店、餐馆和登山装备店。老镇区还有一片被石板顶、木桩支起（防鼠）的旧粮仓。周围是欧洲海拔最高的一批缆车和滑雪区。",
     gettingAround:
@@ -3679,6 +3754,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "st-moritz": {
     identity:
       "圣莫里茨在瑞士格劳宾登州的恩加丁河谷、一个高山湖畔，海拔约 1800 米，常住人口约 5000。它是现代冬季度假的发源地之一——1864 年一位旅馆老板和几位英国客人打赌“冬天来也好玩”，从此开创了阿尔卑斯冬季旅游，后来两次举办冬奥会。这里日照特别多，被注册为品牌的口号是“世界之巅”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): St. Moritz (Switzerland; municipality in the Engadin valley, canton of Graubünden, about 4,945 permanent residents at roughly 1,800 m; mineral springs used since Celtic times; winter tourism in the Alps began here in 1864 on hotelier Johannes Badrutt's wager with British summer guests that they would return in winter; host of the Winter Olympics in 1928 and 1948, one of only four places to have hosted twice; the Cresta Run and the St. Moritz-Celerina bobsleigh run, a rare natural ice track; White Turf horse racing on the frozen lake; Romansh and German; the Glacier Express and Bernina Express on the Rhaetian Railway)
+    howItWorks:
+      "圣莫里茨是瑞士格劳宾登州上恩加丁谷地的一个市镇，常住人口约 4,900，海拔约 1,800 米；瑞士是联邦制，州管教育与警务，市镇管本地事务，格劳宾登是唯一以德语、意大利语与罗曼什语三语并行的州。镇子分成两块：山坡上的“村”是酒店与商店所在，湖边低处的“浴场”得名于这里的矿泉，凯尔特时代人们就来饮用。阿尔卑斯的冬季旅游是从这里开始的——1864 年旅馆主约翰内斯·巴德鲁特与几位英国夏客打赌，说冬天来这里同样舒适，若不满意路费由他承担，客人来了，冬季度假这门生意就此成立。1928 与 1948 年它两次举办冬季奥运会，是全世界仅有的四个两次办冬奥的地方之一；克雷斯塔滑道与圣莫里茨—切莱里纳雪车道是少见的天然冰赛道，每年重砌。冬天湖面结冰后在冰上办赛马。雷蒂亚铁路的冰川快车与伯尔尼纳快车在此交汇。初来的人最容易犯的错，是以为这里的雪季才有生活，而夏天的恩加丁是徒步季。",
     layout:
       "圣莫里茨分“村”（Dorf，在湖北岸山坡上，是高端酒店和精品店集中的地方）和“浴场”（Bad，在湖西端，因矿泉得名）。周围是恩加丁宽阔的 U 形谷、一串冰川湖和三千米级的山峰。冬天湖面结冰，上面办赛马、马球和板球。",
     gettingAround:
@@ -3694,6 +3772,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lugano: {
     identity:
       "卢加诺在瑞士南部提契诺州、卢加诺湖畔，市区人口约 6 万，是瑞士说意大利语的地区最大的城市。翻过阿尔卑斯主脊到了南坡，这里的气候、建筑、饮食和生活节奏都更像意大利北部——棕榈树、廊柱广场、傍晚的散步（passeggiata）——但仍是瑞士。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lugano (Switzerland; the largest city of Ticino, the Italian-speaking canton, 63,495 residents in December 2024, the ninth-largest Swiss city and the country's third financial centre after Zurich and Geneva, with over a hundred banking institutions; on Lake Lugano between Monte Brè at 925 m and Monte San Salvatore at 912 m, the municipality about 75 km² across both sides of the lake after mergers absorbed surrounding villages; 80.3 per cent Italian-speaking, 38.1 per cent without Swiss citizenship, cross-border commuters about 13 per cent of the workforce; humid subtropical climate with about 1,560 mm of rain, among the sunniest Swiss cities; about 38,000 service jobs)
+    howItWorks:
+      "卢加诺是瑞士提契诺州最大的城市，2024 年 12 月人口 63,495，是瑞士第九大城市；提契诺是瑞士唯一以意大利语为主的州，全城八成人口讲意大利语，瑞士的联邦制让这个州在教育与文化上按自己的语言运行。城市在卢加诺湖畔的一道弧形岸线上，布雷山与圣萨尔瓦托雷山从两侧夹住它；2004 年起本市多次与周边村镇合并，市域扩到约 75 平方公里，跨到湖的两岸，因此“卢加诺”今天包含许多原本独立的村子。它是继苏黎世与日内瓦之后瑞士的第三大金融中心，一百多家银行机构在此设点，服务业提供约 3.8 万个岗位；居民中约 38% 不持瑞士国籍，跨境通勤者约占劳动力的 13%，意大利边境就在城南。气候比阿尔卑斯以北温暖湿润，年降水约 1,560 毫米，日照在瑞士各城中居前列。初来的人最容易犯的错，是按瑞士其他城市的习惯来预期这里，而卢加诺在语言、作息与气候上更接近意大利北部。",
     layout:
       "卢加诺在湖的一个弯里，被两座锥形山——圣萨尔瓦托雷山和布雷山——夹住。老城是无车的意式石板街区和拱廊广场，湖滨是一条长长的公园和棕榈道。城市周围山坡上散布着别墅和小镇。湖向南延伸进入意大利。",
     gettingAround:
@@ -3742,6 +3823,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lillehammer: {
     identity:
       "利勒哈默尔在奥斯陆以北约 180 公里、挪威最大的湖——姆约萨湖的北端，古德布兰河谷的谷口，市区人口约 2.8 万。它因 1994 年冬奥会而为世界所知，至今保留着跳台、雪橇赛道和滑雪场，是挪威内陆冬季运动的中心之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lillehammer (Norway; municipality in Innlandet county, 29,011 residents in 2025, 39th most populous, 478 km²; at the northern tip of Lake Mjøsa, Norway's largest lake; market rights in 1827, merged with Fåberg in 1964; host of the 1994 Winter Olympics and the 2016 Winter Youth Olympics; Maihaugen, the largest open-air museum in Norway with 185 historic buildings, and the Norwegian Olympic Museum, the only museum in northern Europe devoted to the whole history of the Games; the Lysgårdsbakkene ski jumps and alpine venues; Sigrid Undset, Nobel laureate of 1928, lived at Bjerkebæk from 1919 to 1940; UNESCO City of Literature 2017)
+    howItWorks:
+      "利勒哈默尔是挪威内陆郡的市镇，2025 年人口 29,011，市域约 478 平方公里；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市在挪威最大湖米约萨湖的北端，1827 年获得集市权，1964 年与法贝格市镇合并。1994 年冬季奥运会在这里举办，是这座三万人的城市至今的分水岭：吕斯戈兹跳台、雪车赛道与几处山地赛场都留了下来，成为长期使用的训练与比赛设施，2016 年又办了冬季青年奥运会，奥林匹克博物馆是北欧唯一一座讲述奥运会全史的博物馆。迈豪根露天博物馆有 185 栋迁建的老建筑，是挪威最大的露天博物馆。1928 年诺贝尔文学奖得主西格丽德·温塞特 1919 至 1940 年住在城中的比耶克贝克，2017 年这座城获评联合国教科文组织“文学之都”。初来的人最容易犯的错，是把它当作滑雪场，而山上的哈菲尔与克维特菲尔才是雪场，城在湖边。",
     layout:
       "利勒哈默尔沿姆约萨湖西北岸的山坡而建，一条铺石的步行主街（Storgata）两侧是彩色木屋。城北山上是奥运跳台，能俯瞰湖和谷。往北进入狭长的古德布兰河谷——一条沿断层发育、两侧是农庄和森林的大河谷，是奥斯陆通往西北峡湾和特隆赫姆的历史通道。",
     gettingAround:
@@ -3757,6 +3841,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kristiansand: {
     identity:
       "克里斯蒂安桑在挪威最南端、面朝斯卡格拉克海峡，市区人口约 11 万，是南部海岸（Sørlandet）最大的城市，也是通往丹麦的渡轮口岸。城市 1641 年由国王克里斯蒂安四世按棋盘格规划建立，老城区“Kvadraturen”至今是规整的方格。夏天是挪威人自己的度假胜地——白色木屋、光滑的礁石海岸、相对温暖的海水。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kristiansand (Norway; administrative centre of its municipality and of Agder county, about 67,920 residents in 2025, the fifth-largest urban area in Norway; founded on 5 July 1641 by King Christian IV on a Renaissance grid plan still visible in the central Kvadraturen; five urban boroughs plus Songdalen and Søgne after the 2020 merger; the sunniest part of Norway with a temperate oceanic climate; Kristiansand Zoo and Amusement Park with over 900,000 visitors a year; beaches at Hamresanden and Bystranda; ferry across the Skagerrak; University of Agder)
+    howItWorks:
+      "克里斯蒂安桑是挪威阿格德尔郡的行政中心，2025 年人口约 6.8 万，是挪威第五大城区；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市 1641 年 7 月 5 日由国王克里斯蒂安四世下令建立，按文艺复兴时期的棋盘格一次规划，这套方格街区至今叫“卡德拉图伦”，是市中心的形状，也是理解这座城的钥匙——它不是自然长出来的港口聚落，而是国王为控制斯卡格拉克海峡而设的城。2020 年它与松格达伦、瑟格内两个市镇合并，如今分五个城区加两片原市镇的乡村地带。这一带是挪威日照最多的地方，气候温和，夏天挪威人南下到这里的海滩；动物园与游乐园每年接待九十多万人，是全国参观人数最多的旅游景点之一。渡轮跨海通往丹麦，阿格德尔大学在城里。初来的人最容易犯的错，是以为挪威南部也是峡湾，而这一段海岸是低平的岩石与沙滩。",
     layout:
       "克里斯蒂安桑建在一片平坦的沙洲和礁石海岸上，老城是国王规划的方格网，木屋刷成白色。市中心有鱼市、要塞和一片老木屋区（Posebyen）。海边是长长的沙滩（Bystranda）和栈桥。城市周围是南部典型的低缓丘陵、松林和无数小岛。",
     gettingAround:
@@ -3808,6 +3895,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   alesund: {
     identity:
       "奥勒松在挪威西海岸、几座小岛之间，市区人口约 5 万，是挪威重要的渔业和海产加工港。1904 年一场大火几乎烧光全城，之后几年里用当时流行的新艺术风格（Jugendstil）统一重建，因此整座市中心是罕见的、成片的新艺术建筑——塔楼、尖顶、石雕花草，是它最大的特色。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ålesund (Norway; town in Møre og Romsdal county with 55,684 residents in 2024 over 28.93 km², the ninth-largest town in Norway, built across islands; the fire of 23 January 1904 destroyed the wooden town, one person died and more than 10,000 lost their homes, and Kaiser Wilhelm II, a frequent visitor, sent four warships with material for temporary shelter; rebuilt in stone, brick and mortar in Jugendstil between 1904 and 1907 by about fifty builders and architects trained across Europe, giving the town its uniform Art Nouveau centre; the Jugendstilsenteret museum; a major fishing port and the clipfish trade; an NTNU campus with about 1,800 students; the Aksla viewpoint)
+    howItWorks:
+      "奥勒松是挪威默勒-鲁姆斯达尔郡的城镇，2024 年人口 55,684，市区约 29 平方公里，是挪威第九大城镇；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市摊在几座相连的岛上，港湾从中间穿过。它今天的样子来自一场火：1904 年 1 月 23 日大火烧毁了整座木造城镇，一人遇难，一万多人无家可归，常来此地的德皇威廉二世派了四艘军舰送来搭建临时住所的材料。1904 至 1907 年间，约五十位在欧洲各地受训的建筑师与营造商用石与砖重建全城，统一采用当时流行的新艺术风格，因此奥勒松成为北欧少见的整片新艺术城区，新艺术中心博物馆讲的就是这段。它是挪威最大的渔港之一，干鳕鱼贸易是老行业，挪威科技大学在此设校区，约一千八百名学生。阿克斯拉观景台有 418 级台阶通上去。初来的人最容易犯的错，是以为盖朗厄尔峡湾就在城边，而那还要几小时车程或船程。",
     layout:
       "奥勒松建在几座由桥连接的小岛上，市中心夹在一条内港运河两岸，新艺术风格的石楼一栋挨一栋。城边的阿克斯拉山（Aksla）有 418 级台阶（或开车）上到观景台，能看到城市、岛屿和远处松恩莫勒的雪峰。城市往东是通往盖朗厄尔峡湾的门户。",
     gettingAround:
@@ -3841,6 +3931,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bodo: {
     identity:
       "博德在挪威北部、北极圈以北约 80 公里，是诺尔兰郡的首府、北部铁路的终点，市区人口约 5 万。二战中城市被炸毁、战后重建，外观比较现代。它是通往罗弗敦群岛的门户，城外就是世界上最强的潮汐涡流之一——萨尔特海峡。2024 年它是欧洲文化之都。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bodø (Norway; town and municipality, capital of Nordland county, 53,712 residents in 2024 over 1,395 km², the town itself about 42,831, just north of the Arctic Circle with midnight sun from 1 to 13 June and about 22.1 hours of sun a day in June; Saltstraumen about 30 km away, among the strongest tidal currents in the world with water speeds reaching 22 knots; Bodø Main Air Station long housed Norwegian and NATO forces, its role reduced after the F-16s were retired in January 2022; the northern terminus of the Nordland railway and a coastal express port; European Capital of Culture 2024)
+    howItWorks:
+      "博德是挪威诺尔兰郡的首府，2024 年市镇人口 53,712，市域约 1,395 平方公里，城区约 4.3 万人，位置略在北极圈以北；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。它是挪威北部的交通节点：诺尔兰铁路的终点在这里，再往北没有铁路，只能换公路、船或飞机；海岸快船在此停靠，罗弗敦群岛的渡轮从这里出发。1940 年 5 月德军轰炸几乎摧毁了全城，如今的市区是战后重建的，因此没有老城。机场紧贴市区，长期是挪威空军的主基地之一，2022 年 1 月 F-16 退役后作用下降，机场迁址的规划正在推进。城外约 30 公里的萨尔特流是世界上最强的潮汐海流之一，流速可达 22 节，涨落潮时在桥上能看见漩涡。6 月 1 日到 13 日太阳不落。2024 年它是欧洲文化之都。初来的人最容易犯的错，是把博德当作看极光的目的地，而它更多是往北与往岛上去的中转站。",
     layout:
       "博德建在一个伸进海里的半岛尖端，三面环水，背后是山。市中心紧凑、以火车站和港口为核心。城南的萨尔特海峡（Saltstraumen）是一条窄水道，每天四次涨落潮时，几亿立方米海水挤过去，形成巨大的漩涡和急流。城市周围是诺尔兰典型的尖峭花岗岩山峰。",
     gettingAround:
@@ -3856,6 +3949,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   narvik: {
     identity:
       "纳尔维克在挪威北部、一条深峡湾（Ofotfjord）的尽头，北极圈以北，市区人口约 1.4 万。它的存在几乎全因为一条铁路：19 世纪末为了把瑞典基律纳的铁矿石运到一个终年不冻的深水港，修了跨境的 Ofoten 铁路，纳尔维克就此建城。城市被高山夹住，二战初期这里有过激烈的山地和海上战斗。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Narvik (Norway; town and municipality in Nordland county inside the Arctic Circle on the Ofotfjord, 21,580 residents in 2024, 61st among Norwegian municipalities; separated from Ankenes in 1902; developed as an all-year ice-free port for the Swedish iron mines at Kiruna and Gällivare, its deep harbour kept open by the Gulf Stream, with the Ofoten railway to Sweden; strategically critical in the Second World War, the Allies capturing it briefly in May 1940 in what is considered the first Allied infantry victory of the war before withdrawing in June; the Narvik War Museum; the Narvikfjellet alpine facility, host of the 2029 FIS Alpine World Ski Championships; merged with Ballangen and part of Tysfjord in 2020)
+    howItWorks:
+      "纳尔维克是挪威诺尔兰郡的市镇，在北极圈以内的欧福特峡湾深处，2024 年人口 21,580；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。这座城的存在只有一个理由：北大西洋暖流让这处深水港终年不冻，而瑞典基律纳与耶利瓦勒的铁矿在冬天无法从波的尼亚湾出海，于是 1902 年欧福特铁路修通，矿石从瑞典运到这里装船，城市也在同年从安肯内斯市镇分出。铁矿港的地位使它在二战中成为焦点，1940 年 5 月盟军一度夺下该城，被认为是二战中盟军首次陆战胜利，同年 6 月因战局变化撤出；战争博物馆讲述这段历史。2020 年它与巴朗恩及蒂斯峡湾的一部分合并，面积大增。纳尔维克山的缆车通到峰顶，2029 年高山滑雪世锦赛将在此举办；本地机场 2017 年关闭，航班改在埃文内斯。初来的人最容易犯的错，是以为矿在挪威，而矿在瑞典，纳尔维克只是它的出海口。",
     layout:
       "纳尔维克建在峡湾北岸一道陡坡上，铁路和矿石装船码头在水边，城区在坡上。峡湾对岸和背后都是尖峭的雪山，城边的 Narvikfjellet 山有缆车，冬天从山顶能一路滑到接近海平面、还能同时看到峡湾。往东铁路和公路翻山进入瑞典。",
     gettingAround:
@@ -3889,6 +3985,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   alta: {
     identity:
       "阿尔塔在挪威最北的芬马克郡（北萨米语 Finnmárku）、一条峡湾的尽头、阿尔塔河出海处，市区人口约 1.5 万，是芬马克人口最多的城镇。城外的岩画群记录了约 7000 年前到 2000 年前当地狩猎、捕鱼、驯鹿人群的生活，1985 年列入世界遗产，是北欧规模最大的史前狩猎采集者岩画群之一。芬马克高原（Finnmarksvidda / Finnmárkkoduottar）自古是萨米人放牧驯鹿的区域。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alta (Norway; the largest populated municipality in Finnmark county at 3,849 km² with about 21,708 residents in 2025, 59th most populous in Norway, up 9.5 per cent over the previous decade; just below the 70th parallel, the northernmost settlement of urban significance in the European Economic Area; the Rock Art of Alta, roughly 7000–500 BC, UNESCO World Heritage; the town badly damaged by fire in the Second World War and rebuilt; the Northern Lights Cathedral completed 2013; the Sautso canyon on the Altaelva among the largest in Europe; slate quarrying, education and aurora tourism; midnight sun 18 May–27 July, polar night 26 November–16 January; Alta Airport)
+    howItWorks:
+      "阿尔塔是挪威芬马克郡最大的市镇，市域约 3,849 平方公里，2025 年人口约 21,708，过去十年增长约 9.5%；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。它在北纬 70 度线略南，是欧洲经济区内最北的具规模城镇。城外的阿尔塔岩画约刻于公元前 7000 至前 500 年，1985 年列入世界遗产，是挪威唯一的史前世界遗产，博物馆就建在岩画所在的海岸坡地上。二战末期镇子在大火中损毁，战后重建，因此城区是新的；2013 年落成的“北极光教堂”是新的地标。阿尔塔河切出的绍措峡谷是欧洲较大的峡谷之一，河上的水电站建于 1980 年代前后。板岩开采、教育与极光旅游是本地产业；5 月 18 日至 7 月 27 日太阳不落，11 月 26 日至次年 1 月 16 日太阳不升。初来的人最容易犯的错，是以为纬度这么高就没有森林，而暖流让这一带长着成片的桦树与松林。",
     layout:
       "阿尔塔散布在峡湾底和几条河谷里，几个中心（Bossekop、Elvebakken、Bukta）之间有点距离。标志性的现代建筑“北极光大教堂”是一座螺旋形的钛板建筑。城南是阿尔塔河切出的峡谷（北欧最大的峡谷之一）和通往内陆芬马克高原的路，高原上是矮桦、湖泊和驯鹿。",
     gettingAround:
@@ -3937,6 +4036,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lille: {
     identity:
       "里尔在法国最北端、靠近比利时边境，都会区约 120 万人，历史上是佛兰德地区的纺织和工业中心，建筑风格明显带佛兰德砖石山墙特征、和巴黎很不一样。它是法国北部最大的城市，也是伦敦-巴黎-布鲁塞尔三角高铁网的枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lille (commune 35 km²; ~238,000 2023; Métropole Européenne de Lille 95 communes ~1.2 million, Eurometropolis with Kortrijk/Tournai ~2 million; Hauts-de-France capital; Vieux-Lille Flemish brick; Grand Place; Euralille with Lille-Europe Eurostar; VAL metro 1983, first automated network; Braderie September; Belgium ~15 km; ~110,000 students)
+    howItWorks:
+      "里尔是上法兰西大区的首府与诺尔省的省会，由市长和市议会治理，市域约 35 平方公里，2023 年人口约 24 万；2015 年起的里尔欧洲都会区有 95 个市镇、约 120 万人，再往外与比利时的科特赖克、图尔奈组成约 200 万人的跨境“欧洲都会区”，边境在 15 公里外。老里尔是佛兰德风格的红砖街区，大广场是它的中心，欧洲里尔是 1990 年代在两座车站之间建起的新区，欧洲之星与 TGV 在里尔欧洲站停靠，到巴黎一小时、到伦敦一个半小时、到布鲁塞尔 38 分钟；1983 年通车的 VAL 是世界第一条全自动地铁，每年九月的旧货集市涌入三百万人，约 11 万学生让它是法国北部最大的大学城。初来的人最容易犯的错，是把里尔当作法国的边城，而它的日常横跨法比两国，语言与建筑都带着佛兰德的底子。",
     layout:
       "里尔老城（Vieux-Lille）有一片保存完好的 17 世纪佛兰德式砖石街区，主广场（Grand Place）是市中心地标。城市周围曾是繁荣的纺织工业区，如今不少老工厂改造成文化空间。地势平坦，是法国北部大平原的一部分。",
     gettingAround:
@@ -3952,6 +4054,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   strasbourg: {
     identity:
       "斯特拉斯堡在法国东北部、莱茵河支流伊尔河畔、紧邻德国边境，都会区约 78 万人，是阿尔萨斯地区的中心。历史上在法德之间数次易手，因此建筑、语言（阿尔萨斯语接近德语方言）和饮食都带有明显的德法混合特征。它是欧洲议会所在地之一，也是欧洲理事会总部所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Strasbourg (commune 78 km²; ~295,000 2023; Eurométropole 33 communes; metro area ~875,000; Grand Est capital and prefecture of Bas-Rhin; European Parliament, Council of Europe, ECHR; Grande Île UNESCO 1988 + Neustadt 2017; cathedral; Petite France; Kehl across the Rhine, tram since 2017; Alsatian; Christmas market; TGV ~1 h 45 Paris)
+    howItWorks:
+      "斯特拉斯堡是大东部大区的首府与下莱茵省的省会，由市长和市议会治理，市域约 78 平方公里，2023 年人口约 29.5 万；2015 年起的斯特拉斯堡欧洲都会区有 33 个市镇，城市连绵区约 87.5 万人。它是欧洲三座“首都”之一：欧洲议会、欧洲委员会与欧洲人权法院都在城北的欧洲区，每月议会开会时城里的酒店订满。老城在伊尔河环抱的大岛上，1988 年列入世界遗产，2017 年德意志帝国时期规划的新城区也被列入，砂岩大教堂与小法兰西的木筋屋在岛上；莱茵河对岸就是德国的凯尔，2017 年起有轨电车直接开过去，阿尔萨斯方言仍在乡下使用，圣诞市场是全法最老的之一，TGV 到巴黎约一小时三刻。初来的人最容易犯的错，是把斯特拉斯堡当作一座法国省城，而它的制度、建筑与日常都跨在法德之间。",
     layout:
       "斯特拉斯堡老城核心“大岛”（Grande Île）被伊尔河的两条支流环抱，是整个古城区第一个被列为世界遗产的老城。大教堂（粉红砂岩、单塔）是老城制高点。小法兰西区（Petite France）沿运河的木筋墙房子是最上镜的一角。欧洲区（欧洲议会等机构）在老城以东。",
     gettingAround:
@@ -3985,6 +4090,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   grenoble: {
     identity:
       "格勒诺布尔在法国东南部、伊泽尔河谷中，四面被三条山脉（韦科尔、沙特勒兹、贝勒多讷）环抱，都会区约 45 万人，是法国阿尔卑斯地区的科研和高科技中心（有“法国硅谷”之称），1968 年冬奥会举办地。城市本身平坦，一抬头就能看到雪山，是这座城市最鲜明的印象。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Grenoble (commune 18 km²; ~156,100 2023; Grenoble-Alpes Métropole 49 communes, urban area ~727,000, largest metropolis in the Alps; prefecture of Isère; flat basin ringed by Chartreuse, Vercors, Belledonne; Bastille cable car "Les Bulles" 1934; ~70,000 students; STMicroelectronics, Schneider, CEA; 1968 Olympics; trams; Lyon ~100 km)
+    howItWorks:
+      "格勒诺布尔是伊泽尔省的省会，由市长和市议会治理，市域只有约 18 平方公里，是法国最密集的市镇之一，2023 年人口约 15.6 万；2015 年起的格勒诺布尔阿尔卑斯都会区有 49 个市镇，城市连绵区约 72.7 万人，是阿尔卑斯山区最大的都会。城市建在德拉克河与伊泽尔河交汇处的一片平地上，三面被沙特勒兹、韦科尔与贝勒多讷三条山脉围住，1934 年建成的巴士底缆车用一串球形吊舱把人从市中心送上北面的山崖；约 7 万学生与法国原子能委员会、意法半导体、施耐德电气让它成为法国的科研与微电子中心，1968 年冬奥会在这里举办，五条有轨电车线连起都会区，滑雪场在三四十到六十公里外，里昂在西面约 100 公里。初来的人最容易犯的错，是把格勒诺布尔当作一座山城，而市区平坦得像一张桌子，山在四周立着。",
     layout:
       "格勒诺布尔建在伊泽尔河和德拉克河交汇处的平坦谷底，老城在旧城墙内、街道狭窄。城北有一座建在巴士底要塞旧址上的缆车站（“泡泡缆车”是标志性的圆球形车厢），几分钟就能上到俯瞰全城和三面雪山的观景点。城市周边散布着大学园区和科研机构。",
     gettingAround:
@@ -4072,6 +4180,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nantes: {
     identity:
       "南特在法国西部、卢瓦尔河下游入海口附近，都会区约 96 万人，历史上是重要的大西洋港口和造船中心（也曾是三角贸易的港口之一，这段历史现有专门的纪念场所如实呈现）。18 世纪的石造建筑和近年大胆的当代公共艺术（如巨型机械大象）让这座城市气质独特，多次被评为法国宜居城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nantes (commune 65 km²; 327,734 2023, sixth in France; Nantes Métropole 24 communes ~680,000; prefecture of Loire-Atlantique and capital of Pays de la Loire, historically Brittany; Loire, Île de Nantes with the Machines; Château des ducs de Bretagne; Passage Pommeraye; trams since 1985; European Green Capital 2013; Atlantic ~50 km)
+    howItWorks:
+      "南特是卢瓦尔大西洋省的省会与卢瓦尔河地区大区的首府，由市长和市议会治理，市域约 65 平方公里，2023 年人口约 32.8 万，是法国第六大城市；南特都会区有 24 个市镇、约 68 万人。历史与文化上它属于布列塔尼，布列塔尼公爵城堡就在市中心，1532 年布列塔尼并入法国的条约在这里签署，今天的行政区划却把它划在卢瓦尔河地区，本地的“归还布列塔尼”争论至今存在。卢瓦尔河从城南流过，南特岛上的“机械岛”有一头会走路的大象，波姆莱拱廊是 19 世纪的商业街；1985 年这里恢复了法国第一条现代有轨电车线，2013 年它是欧洲绿色首都，大西洋在西面 50 公里，圣纳泽尔的造船厂在河口。初来的人最容易犯的错，是把南特当作一座内陆城，而它曾是法国最大的贩奴港，河与海是它的历史。",
     layout:
       "南特建在卢瓦尔河与几条支流交汇处，老城以布列塔尼公爵城堡为核心。城岛（Île de Nantes，原造船厂区）是当代艺术和创意产业改造区，机械岛（Les Machines de l'île）的巨型机械大象和旋转木马就在这里。往西沿卢瓦尔河可通向大西洋。",
     gettingAround:
@@ -4087,6 +4198,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ajaccio: {
     identity:
       "阿雅克肖在科西嘉岛西岸，是科西嘉岛的首府，市区人口约 7 万，拿破仑·波拿巴的出生地（故居现为国家级博物馆）。科西嘉岛多山，中央脊由一系列 2000 米以上的花岗岩峰组成，海岸线曲折，兼有海滩、峡湾式港湾和悬崖，历史上先后受多个地中海势力影响，1768 年并入法国。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ajaccio (commune 82 km²; ~76,300 2023; prefecture of Corse-du-Sud and seat of the Collectivité de Corse, the single territorial collectivity since 2018 with its own assembly; Maison Bonaparte, Napoleon born 1769; citadel; Sanguinaires; airport 5 km; ferries Marseille/Nice/Toulon; Corsican language; Bastia ~150 km; first French city liberated 1943)
+    howItWorks:
+      "阿雅克肖是南科西嘉省的省会，也是科西嘉地方行政区的所在地——2018 年起科西嘉的两个省与大区合并成一个“单一地方行政区”，有自己的议会与执行委员会，权限比普通大区大；市镇由市长和市议会治理，市域约 82 平方公里，2023 年人口约 7.6 万。城市在一个朝西的海湾边，1492 年由热那亚人重建，拿破仑 1769 年生在老城的波拿巴故居里，城堡与老港在旁边，血岛群岛在湾口；1943 年 9 月它是法国第一座被解放的城市；科西嘉语在学校与路牌上与法语并列，机场在城东 5 公里，渡轮通往马赛、尼斯与土伦，巴斯蒂亚在东北约 150 公里。初来的人最容易犯的错，是把科西嘉当作一个普通的法国大区，而它有自己的议会、语言与身份，阿雅克肖是它的行政中心。",
     layout:
       "阿雅克肖围着一个宽阔的海湾展开，老城在海湾东北角，拿破仑故居博物馆和大教堂在老城核心。海湾西侧是防波堤和游艇港，沿岸有沙滩。城市背后不远就是科西嘉多山的地形，晴天能看到内陆的高山轮廓。",
     gettingAround:
@@ -4103,6 +4217,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   annecy: {
     identity:
       "安纳西在法国阿尔卑斯山麓的安纳西湖北端，是上萨瓦省的省会，人口约13.2万（2023年），离日内瓦只有45公里。蒂乌河和几条运河穿过老城，河中央十二世纪的岛宫（曾是监狱和法院）是城市的标志，山坡上的城堡俯瞰老城，因此它被称为“阿尔卑斯的威尼斯”。安纳西湖以水质清澈著称，环湖有自行车道，周围的塞姆诺兹山和图尔内特山是登山与滑翔伞胜地；每年6月的安纳西国际动画电影节是全球动画界的年度盛会。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Annecy (commune ~67 km² after the 2017 merger of six communes; ~132,000 2023; Grand Annecy 34 communes ~300,000; prefecture of Haute-Savoie; Lake Annecy; Thiou canals and Palais de l'Isle; château; animation festival since 1963; Geneva ~35–40 km cross-border commuting; Salomon; no airport)
+    howItWorks:
+      "安纳西是上萨瓦省的省会，由市长和市议会治理；2017 年它与周围五个市镇合并，市域扩到约 67 平方公里，2023 年人口约 13.2 万，大安纳西聚合区有 34 个市镇、约 30 万人。城市在安纳西湖的北端，蒂乌河与几条运河从湖里流出，穿过老城，岛宫立在河心，因此有“阿尔卑斯的威尼斯”之称，城堡在老城背后的坡上；湖水是欧洲最清的之一，环湖有一条自行车道；日内瓦在北面约 35 公里，大量居民每天跨境去瑞士上班，萨洛蒙等户外品牌总部在此，1963 年起的国际动画电影节每年六月举行，没有机场，用日内瓦。初来的人最容易犯的错，是把安纳西当作一座湖边度假村，而它是一个省的省会，也是跨境通勤者的居住地。",
     layout:
       "老城在湖北端蒂乌河出湖处，岛宫在河中，运河两岸是彩色房屋、拱廊和市场街，城堡在老城西南的坡上。湖滨的欧洲花园和爱之桥在老城东侧，帕基埃草坪沿湖向东延伸。火车站在老城北面约500米。塞姆诺兹山在城南，湖东岸的塔卢瓦尔、湖南端的杜萨尔是常去的湖畔村落；环湖自行车道约40公里。",
     gettingAround:
@@ -4117,6 +4234,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   avignon: {
     identity:
       "阿维尼翁在普罗旺斯的罗讷河左岸，人口约9.2万（2023年）。1309年至1377年，七位教皇先后驻跸于此，十四世纪建成的教皇宫是欧洲最大的哥特式宫殿之一；歌谣里的“阿维尼翁桥”（圣贝内泽桥，1171–1185年建）如今只剩伸向河中的四个桥墩；4.3公里长的中世纪城墙仍完整地环绕老城。教皇宫、主教建筑群和桥1995年列入世界遗产。1947年创办的阿维尼翁戏剧节每年7月把整座城变成舞台。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Avignon (commune 64.8 km²; 92,188 2023; Grand Avignon 16 communes ~200,000, straddling Vaucluse and Gard; prefecture of Vaucluse; 4,330 m of ramparts; Palais des Papes, popes 1309–1377, papal territory until 1791; Pont Saint-Bénézet; UNESCO 1995; festival July ~100,000; TGV station 3 km, ~2 h 40 Paris; mistral 120–160 days)
+    howItWorks:
+      "阿维尼翁是沃克吕兹省的省会，由市长和市议会治理，市域约 65 平方公里，2023 年人口约 9.2 万；大阿维尼翁聚合区有 16 个市镇、约 20 万人，跨在罗讷河两岸的沃克吕兹省与加尔省之间，河对岸的新城属于另一个省。1309 至 1377 年七位教皇住在这里，1348 年教廷买下这座城，直到 1791 年法国大革命才并入法国；4,330 米的中世纪城墙至今完整，教皇宫与圣贝内泽桥 1995 年列入世界遗产；每年七月的戏剧节有约十万人涌入，把整座城变成剧场；TGV 车站在城外 3 公里，到巴黎约两小时四十分，密史脱拉风一年吹一百二十到一百六十天。初来的人最容易犯的错，是以为城墙内就是全部，而市域向外延伸，河对岸还有另一个省的城镇。",
     layout:
       "老城被完整的城墙围住，在罗讷河东岸：教皇宫和主教座堂在老城北端的岩石上，岩石公园在宫后可俯瞰河和桥，圣贝内泽桥从城墙边伸向河中；钟楼广场（市政厅、歌剧院）在教皇宫南面，共和国街从广场一直通到南城墙外的火车站（阿维尼翁中央站）。TGV 站在城南约4公里的库尔蒂纳区，有接驳火车。河对岸是新城阿维尼翁（另一座塔楼和城堡）。",
     gettingAround:
@@ -4148,6 +4268,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   reims: {
     identity:
       "兰斯在法国东北部的香槟地区，人口约17.8万（2023年），是香槟省最大的城市。从496年克洛维受洗起，法国国王的加冕礼传统上在兰斯主教座堂举行（用圣油瓶施膏），所以它被称为“加冕之城”；主教座堂、托宫和圣雷米修道院1991年列入世界遗产，香槟的山坡、酒庄和白垩酒窖2015年再次列入。城市地下有绵延数十公里的白垩岩洞（部分可追溯到罗马时代）存放着泰廷哲、凯歌、波默里等香槟大厂的酒。1945年5月7日德军在兰斯签署无条件投降书。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Reims (commune 47 km²; 177,674 2023, largest in Marne though Châlons-en-Champagne is the prefecture; Grand Reims 143 communes ~300,000; cathedral of coronations with Palais du Tau and Saint-Remi UNESCO 1991; champagne houses and chalk cellars UNESCO 2015; Art Deco rebuild after WWI; German surrender signed 1945; TGV ~45 min Paris; trams; Épernay ~25 km)
+    howItWorks:
+      "兰斯是马恩省人口最多的城市，2023 年约 17.8 万人，却不是省会——省会是更小的沙隆昂香槟；它由市长和市议会治理，大兰斯共同体有 143 个市镇、约 30 万人。历代法国国王在兰斯大教堂加冕，大教堂与塔宫、圣雷米修道院 1991 年列入世界遗产；一战几乎把这座城炸平，重建留下了一批装饰艺术建筑；白垩岩里挖出的酒窖属于凯歌、泰亭哲、伯瑞等香槟酒庄，2015 年“香槟山丘、酒庄与酒窖”列入世界遗产；1945 年 5 月德国的无条件投降书在这里签署，TGV 到巴黎约 45 分钟，埃佩尔奈在南面约 25 公里。初来的人最容易犯的错，是以为兰斯是省会，而马恩省的省会在沙隆昂香槟，兰斯只是最大的城市。",
     layout:
       "市中心在韦勒河边的平地上，主教座堂和托宫在正中，市政厅和德鲁埃-德尔隆广场（餐饮区）在它北面，火车站在西北。圣雷米修道院在市中心南面约1.5公里，泰廷哲、波默里、凯歌、吕纳尔等香槟酒窖多在圣雷米周围的圣尼凯斯山坡上。投降博物馆在火车站北面。香槟-阿登 TGV 站在城南约5公里。埃佩尔奈（酩悦等）在南面约30公里，香槟山坡的村庄在两城之间。",
     gettingAround:
@@ -4162,6 +4285,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   colmar: {
     identity:
       "科尔马在阿尔萨斯的莱茵平原上，孚日山脚下，人口约6.7万（2023年），是上莱茵省的省会。它的老城几乎完好地保留了中世纪到文艺复兴的半木结构房屋，劳赫河穿过的“小威尼斯”街区是最著名的一角；恩特林登博物馆藏有格吕内瓦尔德的《伊森海姆祭坛画》（1512–1516年），自由女神像的作者巴托尔迪出生于此。科尔马自称阿尔萨斯葡萄酒之都，位于阿尔萨斯葡萄酒之路的中段，圣诞市集是欧洲最有名的之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Colmar (commune 66.6 km²; ~67,000 2023, third in Alsace; Colmar Agglomération; prefecture of Haut-Rhin, in the European Collectivity of Alsace; free imperial city 1226; Little Venice; Unterlinden with the Isenheim altarpiece; Bartholdi birthplace; Alsace wine route; ~595 mm rain, among the driest in France; Strasbourg ~64 km)
+    howItWorks:
+      "科尔马是上莱茵省的省会，也是 2021 年设立的阿尔萨斯欧洲地方行政区的一部分——这个行政区把上下莱茵两省合并，保留在大东部大区之内；市镇由市长和市议会治理，市域约 67 平方公里，2023 年人口约 6.7 万，是阿尔萨斯第三大城市。老城是木筋屋的迷宫，1226 年起它是神圣罗马帝国的自由城市，“小威尼斯”是运河边的一段街区，菩提树下博物馆里是伊森海姆祭坛画，自由女神像的雕塑家巴托尔迪生在这里；它自称阿尔萨斯葡萄酒之路的首府，年降水只有约 595 毫米，是法国最干的城市之一；斯特拉斯堡在北面约 64 公里，德国边境在东面 20 公里，最近的机场是米卢斯—巴塞尔。初来的人最容易犯的错，是把科尔马当作一处圣诞市场，而它是一个省的省会，冬天之外还有一年的日子。",
     layout:
       "老城很紧凑：恩特林登博物馆在北端，商人街、人头屋、普菲斯特屋等老屋沿着通向圣马丁教堂的街道分布，巴托尔迪博物馆在中间，小威尼斯在老城南端的劳赫河两岸，有平底船。火车站在老城西南约1公里。周围是葡萄园和酒村：里克维尔、里博维莱、凯泽贝尔在西北约10–15公里，埃吉桑在西南约7公里；上科尼斯堡城堡在北面约25公里。",
     gettingAround:
@@ -4176,6 +4302,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rouen: {
     identity:
       "鲁昂在诺曼底的塞纳河下游，是诺曼底大区的首府，人口约11.8万、都会区约71万（2023年）。它是中世纪欧洲最大最富裕的城市之一，鲁昂主教座堂的哥特式立面（莫奈画了三十多幅）和151米的铸铁尖塔是城市的标志，市中心有上千座半木结构房屋和十四世纪的大钟楼；1431年5月30日圣女贞德在老集市广场被处以火刑。福楼拜出生于此，塞纳河港是法国重要的河港。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rouen (commune 21 km²; 117,662 2023; Métropole Rouen Normandie 71 communes ~715,000; prefecture of Seine-Maritime and capital of the Normandy region; Seine; right-bank old town with cathedral, Gros-Horloge, half-timbered houses; Joan of Arc burned 1431 at the Vieux-Marché; Monet's cathedral series; river port; train ~1 h 20 Paris, no TGV; Le Havre ~90 km)
+    howItWorks:
+      "鲁昂是滨海塞纳省的省会与诺曼底大区的首府，由市长和市议会治理，市域只有约 21 平方公里，2023 年人口约 11.8 万；鲁昂诺曼底都会区有 71 个市镇、约 71.5 万人。塞纳河把城市分成两岸：右岸是老城，大教堂、大钟楼与成片的木筋屋在这里，1431 年圣女贞德在老市场广场被处死，广场上如今是一座现代教堂；莫奈在对面的窗口画了三十多幅大教堂；左岸是 19 世纪以来的工业与住宅区。鲁昂港沿塞纳河深入内陆，是法国第五大港，谷物从这里出海；火车到巴黎约一小时二十分，没有 TGV 直达，勒阿弗尔在西北约 90 公里。初来的人最容易犯的错，是把鲁昂当作巴黎的近郊，而它是诺曼底的首府，也是塞纳河上的一座海港。",
     layout:
       "老城在塞纳河右岸：主教座堂在中心，大钟街从主教座堂向西穿过大钟楼到老集市广场（圣女贞德教堂和纪念地），圣马克卢教堂和圣旺修道院在东面，美术馆在北面靠火车站（右岸站）。河左岸是新城区。圣凯瑟琳山在东面可俯瞰全城和河湾。塞纳河下游有诺曼底修道院之路和吉维尼（莫奈花园，上游约60公里）。",
     gettingAround:
@@ -4260,6 +4389,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   turin: {
     identity:
       "都灵在意大利西北部、波河上游河谷，都会区约 180 万人，是意大利统一运动的发源地和第一个首都（1861–1865），也是菲亚特汽车工业的发祥地。城市有巴洛克风格的规整街道和大量拱廊，2006 年冬奥会举办地，背靠阿尔卑斯山，晴天从市中心能看到雪山。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Turin (comune 130 km²; ~855,700 2026; 8 circoscrizioni; Metropolitan City of Turin ~2.2 million; Piedmont capital; Po; Baroque grid; Mole Antonelliana 167 m; Savoy residences UNESCO 1997; Fiat/Lingotto; metro 1 line; 2006 Olympics; first capital of Italy 1861–65)
+    howItWorks:
+      "都灵是皮埃蒙特大区的首府，由市长和市议会治理，市下分 8 个区（circoscrizione）；市域约 130 平方公里，2026 年人口约 86 万，而 2015 年取代省而设的都灵大都会市有 312 个市镇、约 220 万人。1861 至 1865 年它是意大利王国的第一个首都，萨伏依王室留下的巴洛克格网与宫殿群 1997 年列入世界遗产，城堡广场是坐标原点，安托内利尖塔高 167 米；波河从城东流过，阿尔卑斯山在西面 50 公里外的天际线上；菲亚特的林戈托厂房与米拉菲奥里厂区在城南，是意大利汽车工业的发源地，一条地铁线连起市区，2006 年冬奥会在这里举办。初来的人最容易犯的错，是把都灵当作一座工业城，而它的市中心是一座王室都城，拱廊街长达十几公里。",
     layout:
       "都灵沿波河西岸的平原展开，城市规划规整、街道呈网格状，大量拱廊连接建筑（雨天可不打伞逛街）。城堡广场是市中心核心，王宫和马达马宫都在这里。城市西侧不远就是阿尔卑斯山前坡，苏佩尔加圣殿在城东一座山丘上，可俯瞰全城和远处的雪山。",
     gettingAround:
@@ -4293,6 +4425,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bologna: {
     identity:
       "博洛尼亚在意大利东北部、亚平宁山脉北麓的波河平原边缘，都会区约 100 万人，是艾米利亚-罗马涅大区首府。它拥有世界上持续运作历史最悠久的大学（博洛尼亚大学，创立于 1088 年），也被公认为意大利的美食之都之一——博洛尼亚肉酱面、帕尔玛干酪、帕尔玛火腿等名菜都产自这一带。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bologna (comune 140.9 km²; ~390,700; 6 quartieri; Metropolitan City of Bologna 55 comuni ~1 million; Emilia-Romagna capital; porticoes UNESCO 2021, ~38 km in the centre; Two Towers; university 1088 oldest; Centrale high-speed junction; Marconi airport with monorail)
+    howItWorks:
+      "博洛尼亚是艾米利亚—罗马涅大区的首府，由市长和市议会治理，市下分 6 个区（quartiere）；市域约 141 平方公里，人口约 39 万，而取代省而设的博洛尼亚大都会市有 55 个市镇、约 100 万人。老城的柱廊是它的形制：市中心约 38 公里的连续拱廊 2021 年列入世界遗产，下雨天可以不打伞穿过半座城，两座斜塔立在老城中央，马焦雷广场是坐标原点；1088 年创办的博洛尼亚大学是世界上连续办学最久的大学，学生让这座城比周围年轻；博洛尼亚中央站是意大利南北与东西高铁的十字路口，马可尼机场有单轨直达车站，肉酱面与火腿是这一带的日常。初来的人最容易犯的错，是把博洛尼亚当作一个换乘站，而它是意大利的美食之都与最老的大学城。",
     layout:
       "博洛尼亚老城以两座斜塔（阿西内利塔和加里森达塔）为地标，全城连拱廊总长约 62 公里（历史中心区约 42 公里）是它最独特的城市景观，几乎可以在雨天不打伞走遍全城；2021 年其中 12 段最具代表性的拱廊列入世界遗产。马焦雷广场是市中心核心，圣白托略圣殿在广场南侧。老城因大量红砖建筑被称为“红色之城”。",
     gettingAround:
@@ -4326,6 +4461,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bari: {
     identity:
       "巴里在意大利东南部普利亚大区、亚得里亚海边，都会区约 75 万人，是普利亚大区首府，也是意大利通往希腊、阿尔巴尼亚等巴尔干国家的重要渡轮港口。城市以圣尼古拉（Santa Claus 原型圣人之一）的圣髑安放地闻名，老城是一片保存完好的白色石灰岩巷弄。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bari (comune 117.4 km²; ~316,000; municipi; Metropolitan City of Bari ~1.2 million; Apulia capital; Bari Vecchia peninsula with San Nicola; Murat grid 19th c.; lungomare; ferries to Greece/Albania/Montenegro; airport; Fiera del Levante)
+    howItWorks:
+      "巴里是普利亚大区的首府，由市长和市议会治理；市域约 117 平方公里，人口约 32 万，而取代省而设的巴里大都会市有 41 个市镇、约 120 万人。城市分两片：伸进亚得里亚海的半岛上是老城巴里维基亚，圣尼古拉大教堂与诺曼—施瓦本城堡在里面，1087 年圣尼古拉的圣髑从米拉运到这里，手擀耳朵面的街巷是它的日常；老城以南是 19 世纪的穆拉特新区，方格街道与商业街在这里，海滨大道沿海岸展开；港口有开往希腊、阿尔巴尼亚与黑山的渡轮，机场在城西，东方博览会每年秋天举行。初来的人最容易犯的错，是把巴里当作去阿尔贝罗贝洛或马泰拉的中转站，而它是意大利南方大陆最重要的经济中心之一。",
     layout:
       "巴里老城（Bari Vecchia）建在一个伸入海中的小半岛上，街道狭窄曲折像迷宫，圣尼古拉圣殿和主教座堂都在这里。新城区呈规整网格，19 世纪按当时的规划理念建造，与老城形成鲜明对比。城市往内陆是普利亚典型的橄榄园平原，往北是阿尔塔穆尔杰石灰岩台地，往北再远一些是加尔加诺半岛。",
     gettingAround:
@@ -4341,6 +4479,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   palermo: {
     identity:
       "巴勒莫是西西里岛首府，位于岛屿西北岸的一个海湾边，都会区约 130 万人，历史上先后被腓尼基人、希腊人、罗马人、阿拉伯人、诺曼人统治，建筑和文化因此融合了地中海多种传统，诺曼-阿拉伯风格的宫殿和教堂是巴勒莫最独特的标志，已列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Palermo (comune 161 km²; 626,273 2026; 8 circoscrizioni; Metropolitan City of Palermo ~1.2 million; capital of the autonomous Sicilian Region with its own parliament; Arab-Norman UNESCO 2015 with Monreale and Cefalù in other comuni; Quattro Canti; Ballarò/Vucciria/Capo markets; Mondello in comune; Punta Raisi airport ~35 km)
+    howItWorks:
+      "巴勒莫是西西里大区的首府，西西里是意大利的自治大区，有自己的议会与立法权；市镇由市长和市议会治理，市下分 8 个区，市域约 161 平方公里，2026 年人口约 63 万，大都会市有 82 个市镇、约 120 万人。城市在一片被山围住的“金色盆地”里，四角场是老城十字街的交点，巴拉罗、乌奇利亚与卡波三个市场至今是阿拉伯式的叫卖，2015 年列入世界遗产的“阿拉伯—诺曼式巴勒莫”包括王宫的帕拉蒂那礼拜堂，但同一项遗产里的蒙雷阿莱大教堂在 8 公里外的另一个市镇，切法卢在更远的海边；蒙德罗的海滩在市域北端，机场在西面 35 公里。初来的人最容易犯的错，是以为蒙雷阿莱在巴勒莫城里，而它是山上的另一座市镇。",
     layout:
       "巴勒莫老城核心是四个角（Quattro Canti）路口，四条主街在此交汇，划出四个历史街区。诺曼王宫、巴拉丁礼拜堂（拜占庭马赛克装饰）是城中最重要的古迹。巴勒莫大教堂融合了多个历史时期的建筑风格。城市背靠佩莱格里诺山，面朝一片开阔海湾。",
     gettingAround:
@@ -4356,6 +4497,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   catania: {
     identity:
       "卡塔尼亚在西西里岛东岸，紧挨着欧洲最高的活火山埃特纳，都会区约 78 万人。城市历史上多次被埃特纳火山的熔岩流和地震摧毁又重建，现在的巴洛克风格老城建于 1693 年大地震之后，大量用埃特纳的黑色火山岩建造，因此又被称为“黑色巴洛克之城”，已列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Catania (comune 183 km²; ~297,000; Metropolitan City of Catania 58 comuni ~1.07 million; second city of Sicily; Etna, comune reaches the slopes; Baroque centre rebuilt after 1693, Val di Noto UNESCO 2002; Piazza Duomo elephant; via Etnea; metro 1 line; Fontanarossa busiest in Sicily; university 1434)
+    howItWorks:
+      "卡塔尼亚是西西里的第二大城市，由市长和市议会治理，市域约 183 平方公里，人口约 30 万，大都会市有 58 个市镇、约 107 万人；西西里是自治大区，有自己的议会。城市建在埃特纳火山的东南脚下，市域一直伸到火山的坡上，1669 年的熔岩与 1693 年的地震毁了旧城，之后用黑色火山岩与白石重建，这批巴洛克建筑 2002 年作为“诺托谷晚期巴洛克城镇”列入世界遗产；大教堂广场的象雕是城市的标志，埃特内亚大道从广场笔直向北指向火山，鱼市在广场背后；一条地铁线连起市区，丰塔纳罗萨机场是西西里最繁忙的，1434 年创办的大学是岛上最老的。初来的人最容易犯的错，是把卡塔尼亚当作陶尔米纳的机场，而它是一座三十万人的巴洛克城市。",
     layout:
       "卡塔尼亚老城以主教座堂广场为核心，广场中央的“大象喷泉”（用一座古罗马黑色玄武岩象雕做基座）是城市象征。老城街道用黑色火山岩铺就，建筑立面也常见黑白相间的火山岩装饰。城市西北方向就是埃特纳火山，晴天能看到山顶的烟柱。",
     gettingAround:
@@ -4371,6 +4515,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cagliari: {
     identity:
       "卡利亚里是撒丁岛首府，位于岛屿南岸一个海湾边，都会区约 43 万人，是撒丁岛的政治、经济中心。撒丁岛是地中海最古老的陆块之一，早在史前时期就有独特的努拉吉文明（岛上散布着数千座巨石塔状建筑“努拉吉”，已列入世界遗产候选/部分列入名录），与意大利本土的历史脉络有所不同。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cagliari (comune 85 km²; ~146,000; Metropolitan City of Cagliari ~536,000; capital of the autonomous Sardinian Region; Castello on the hill, Marina, Stampace, Villanova; Poetto ~8 km in comune; port fourth in Italy by cargo; Elmas airport 7 km; Molentargius flamingos)
+    howItWorks:
+      "卡利亚里是撒丁大区的首府，撒丁是意大利的自治大区，有自己的议会与立法权；市镇由市长和市议会治理，市域约 85 平方公里，人口约 15 万，大都会市有 17 个市镇、约 54 万人。城市建在一片石灰岩丘上：卡斯泰洛区在山顶，比萨人筑的城墙与塔楼围着它，玛丽娜、斯坦帕切、维拉诺瓦三个老区在山下向港口铺开；波埃托海滩在城东约 8 公里，仍在市域之内，莫伦塔杰乌斯的盐塘里有火烈鸟；港口是意大利货运量第四的港，埃尔马斯机场在西面 7 公里，撒丁语与意大利语并用。初来的人最容易犯的错，是把卡利亚里当作撒丁岛度假区的门口，而它是一座有自治议会的岛屿首府，度假海岸在几十公里外。",
     layout:
       "卡利亚里老城建在一座俯瞰海湾的山丘上，被称为“城堡区”（Castello），保留着比萨共和国时期（13 世纪）修建的城墙和塔楼。城市脚下是莫尔塔咸水湖，是火烈鸟的栖息地，从老城高处能同时看到海湾、盐湖和城市。",
     gettingAround:
@@ -4387,6 +4534,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   verona: {
     identity:
       "维罗纳在意大利东北部阿迪杰河的河湾里，人口约25.5万（2025年）。公元一世纪建成的维罗纳竞技场是意大利保存最完好的罗马圆形剧场之一，自1913年起每年夏季举办歌剧节；莎士比亚把《罗密欧与朱丽叶》设定在这里，朱丽叶之家的阳台每天挤满游客。老城的百草广场（古罗马广场遗址）、斯卡拉家族的老城堡和圣泽诺大殿代表了从罗马到中世纪的层层历史，2000年整座老城列入世界遗产。加尔达湖在西面约30公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Verona (comune 206 km²; ~255,000; 8 circoscrizioni; Province of Verona, Veneto; Adige bend; Arena with opera festival, 25,000 seats originally; Piazza delle Erbe; UNESCO 2000; Castelvecchio; rail junction Milan–Venice/Brenner, ~68,000 passengers/day; Villafranca airport; Lake Garda ~30 km; Vinitaly)
+    howItWorks:
+      "维罗纳是威尼托大区维罗纳省的省会，由市长和市议会治理，市下分 8 个区；市域约 206 平方公里，人口约 25.5 万。老城在阿迪杰河的一个大河湾里，2000 年整片列入世界遗产：罗马时期的竞技场就在市中心的布拉广场上，如今是夏天的露天歌剧场，草药广场是罗马集市的原址，斯卡拉家族 13 至 14 世纪统治这里，老城堡与桥是他们留下的；莎士比亚把《罗密欧与朱丽叶》放在这座城里，朱丽叶的阳台是后世的附会；火车站是米兰—威尼斯与布伦纳山口两条干线的交点，每天约 6.8 万旅客，机场在西南的维拉弗兰卡，加尔达湖在西面 30 公里，瓦尔波利切拉的酒庄在城北。初来的人最容易犯的错，是把维罗纳当作一处爱情景点，而它是意大利北部的铁路枢纽与葡萄酒之都。",
     layout:
       "老城在阿迪杰河的一个大河湾里，几乎被河三面环绕：布拉广场和竞技场在南端入口，从这里沿马志尼街走到百草广场和领主广场（但丁像、斯卡拉家族墓），朱丽叶之家在百草广场旁的小街上；主教座堂在老城北端，老城堡和斯卡拉桥在西侧河边。河对岸是罗马剧场和圣彼得城堡观景台。圣泽诺大殿在老城西面约1公里。新门火车站在老城南面约1.5公里，机场在西南约10公里。",
     gettingAround:
@@ -4418,6 +4568,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pisa: {
     identity:
       "比萨在托斯卡纳的阿诺河下游，离海约10公里，人口约9.9万（2023年）。奇迹广场上的斜塔（1173–1372年建，因地基下沉倾斜）、主教座堂、洗礼堂和圣墓园1987年列入世界遗产；中世纪的比萨是海上共和国，与热那亚、威尼斯争雄。伽利略出生于此，比萨大学和拿破仑1810年创办的高等师范学校让它成为意大利的学术重镇。比萨机场是托斯卡纳的主要机场之一，很多游客从这里进入托斯卡纳。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pisa (comune 185 km²; ~90,000; Province of Pisa, Tuscany; Piazza dei Miracoli UNESCO 1987 at the north-west edge of the walled city; Arno lungarni; university 1343, Scuola Normale, Sant'Anna, ~50,000 students; Galileo Galilei airport busiest in Tuscany with PisaMover; maritime republic; Florence ~80 km)
+    howItWorks:
+      "比萨是托斯卡纳大区比萨省的省会，由市长和市议会治理；市域约 185 平方公里，人口约 9 万。斜塔、大教堂与洗礼堂并不在市中心，而在城墙西北角的“奇迹广场”上，1987 年列入世界遗产；老城的重心在阿诺河两岸的滨河路与骑士广场，中世纪它是与热那亚、威尼斯并列的海上共和国，1284 年梅洛里亚海战之后衰落；1343 年创办的比萨大学、高等师范学校与圣安娜高等学校让约 5 万学生住在这座 9 万人的城里；伽利略机场是托斯卡纳最繁忙的，有轻轨直达火车站，佛罗伦萨在东面约 80 公里。初来的人最容易犯的错，是把比萨当作一座只有斜塔的镇，而斜塔在城的一角，城本身是一座学生占了一半的大学城。",
     layout:
       "奇迹广场在老城西北角靠城墙，斜塔、主教座堂、洗礼堂、圣墓园都在同一片草坪上；从广场向南穿过老城到骑士广场和博尔戈街，再到阿诺河边的荆棘圣母小教堂和河畔步道。中央火车站在河南岸约1.5公里，机场就在火车站南面约2公里，Pisamover 自动列车5分钟直达。卢卡在东北约20公里，海滩在西面的马里纳迪比萨。",
     gettingAround:
@@ -4432,6 +4585,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   siena: {
     identity:
       "锡耶纳在托斯卡纳中部的丘陵上，人口约5.3万，老城1995年列入世界遗产，是意大利保存最完整的中世纪城市之一。贝壳形的田野广场（Piazza del Campo）是城市的心脏，每年7月2日和8月16日的赛马节（Palio）由城内的17个街区（contrade）在广场上竞赛；曼贾塔高约88米，主教座堂的黑白条纹大理石和镶嵌地板是托斯卡纳哥特的杰作。1472年成立的锡耶纳牧山银行是世界上仍在营业的最古老的银行。老城自1966年起禁止汽车通行。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Siena (comune 118.5 km²; 53,180 2026; Province of Siena, Tuscany; historic centre UNESCO 1995; Piazza del Campo; Palio 2 July/16 August, 17 contrade; cathedral; Torre del Mangia; ZTL; university 1240 ~16,000 students; Monte dei Paschi 1472; Florence ~70 km)
+    howItWorks:
+      "锡耶纳是托斯卡纳大区锡耶纳省的省会，由市长和市议会治理；市域约 118 平方公里，2026 年人口约 5.3 万。老城建在三道山脊上，1995 年列入世界遗产，扇形的坎波广场是它的心脏，市政厅的曼贾塔在广场一角；城市在行政区之下还有一层：17 个“contrada”是中世纪留下的街区自治体，各有自己的旗帜、教堂与博物馆，每年 7 月 2 日与 8 月 16 日其中十个在广场上赛马，即帕里奥赛马节，本地人一生属于出生的那个 contrada；老城划为限行区，1240 年创办的大学约 1.6 万学生，1472 年成立的西雅那银行是世界上仍在营业的最老银行之一，佛罗伦萨在北面约 70 公里。初来的人最容易犯的错，是把帕里奥当作一场表演给游客看的比赛，而它是本地街区之间一年一度的正经较量。",
     layout:
       "老城建在三条山脊上，田野广场在三条山脊交汇的洼地，市政厅和曼贾塔在广场南侧；主教座堂在西面山脊的最高处，旁边是主教座堂博物馆和圣母医院；圣多明我教堂在西北山脊，卡莫利亚门在北端。主街从卡莫利亚门经田野广场到南面的罗马门。火车站在老城北面约2公里的山下（有自动扶梯上山），长途巴士站在老城北缘的格拉姆西广场。基安蒂酒乡在北面，蒙塔尔奇诺、皮恩扎、瓦尔多尔恰在南面。",
     gettingAround:
@@ -4446,6 +4602,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   matera: {
     identity:
       "马泰拉在意大利南部巴西利卡塔大区的石灰岩高地上，人口约6万。它以“石窟民居”（Sassi）闻名——在格拉维纳峡谷崖壁上凿出的洞穴住宅层层叠叠，有人居住的历史可追溯到史前，被认为是世界上持续有人居住最久的聚落之一。1950年代因贫困和卫生问题，政府把居民迁出石窟区，1986年立法允许修复回迁；1993年石窟区和周围的岩洞教堂公园列入世界遗产，2019年马泰拉是欧洲文化之都。峡谷对岸的穆尔贾高原上有约150座岩洞教堂，这里也是《基督受难》等电影的取景地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matera (comune 392 km²; ~60,400; Province of Matera, Basilicata; Sassi cave districts UNESCO 1993, evacuated 1950s–70s, reoccupation law 1986; Civita; modern town on the plateau; Gravina ravine, Murgia park; ECoC 2019; Bari ~60 km with airport; FAL narrow-gauge rail)
+    howItWorks:
+      "马泰拉是巴西利卡塔大区马泰拉省的省会，由市长和市议会治理；市域约 392 平方公里，人口约 6 万。人们心中的马泰拉是“萨西”——凿在峡谷石灰岩壁上的两片洞穴街区，从公元前八千年起就有人住，是世界上连续居住时间最长的聚落之一，1993 年列入世界遗产；1950 至 70 年代政府把居民整体迁出萨西，称其为“意大利的耻辱”，1986 年的一部法律又开启了修复与重新入住，如今那里是旅馆与餐厅；今天的市政府、学校与大多数居民在台地上的新城里，格拉维纳峡谷与穆尔贾公园在萨西的对面；2019 年它是欧洲文化之都，巴里与机场在东北约 60 公里。初来的人最容易犯的错，是把萨西当作马泰拉，而它是老城的一半，市民的日常在台地上的新城。",
     layout:
       "石窟区分为北面的巴里萨诺（Sasso Barisano）和南面的卡韦奥索（Sasso Caveoso），两者之间的高地上是主教座堂所在的奇维塔区；石窟区沿峡谷西壁自上而下分布，最下面是格拉维纳河。十九世纪以后的新城在石窟区西面的台地上，维托里奥·威尼托广场是新城与石窟区的交界，中央火车站（FAL 窄轨）在新城北面。峡谷对岸是穆尔贾高原（观景台和岩洞教堂），从卡韦奥索有步道和吊桥可过。",
     gettingAround:
@@ -4460,6 +4619,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   trieste: {
     identity:
       "的里雅斯特在意大利东北角的亚得里亚海边，是弗留利-威尼斯朱利亚大区的首府，人口约19.9万（2025年）。它从1382年到1918年属哈布斯堡王朝，是奥匈帝国最重要的港口和第四大城市，市中心的新古典建筑、咖啡馆文化和面朝大海的意大利统一广场（欧洲最大的临海广场之一）都带着中欧气质；詹姆斯·乔伊斯1904–1915年在此写作，本地作家斯韦沃与他相交。米拉马雷城堡（1856–1860年）立在城北的海岬上。的里雅斯特是意大利的咖啡之港，秋季的巴尔科拉纳帆船赛是世界规模最大的帆船赛之一；冬季的布拉风可达140公里/小时。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trieste (comune 84 km²; ~198,700 2025; capital of the autonomous Friuli-Venezia Giulia region; Habsburg port until 1918, fourth city of Austria-Hungary; Piazza Unità on the sea; Canal Grande; Miramare ~8 km; Karst plateau; Slovenia ~5 km; Slovene community; bora; largest Italian port by tonnage; free port; ICTP/SISSA; Ronchi airport ~30 km)
+    howItWorks:
+      "的里雅斯特是弗留利—威尼斯朱利亚大区的首府，这是意大利五个自治大区之一，有自己的立法权；市镇由市长和市议会治理，市域约 84 平方公里，2025 年人口约 20 万。1382 至 1918 年它属于哈布斯堡王朝，是奥匈帝国的主要出海口与第四大城市，市中心的统一广场三面是帝国时期的宫殿、一面朝海，运河、咖啡馆与文学传统都是那个时代留下的；卡尔斯特高原从城背后升起，斯洛文尼亚边境在 5 公里外，斯洛文尼亚族是本地的少数民族，冬天的“布拉风”能吹到每小时百公里以上；港口按吨位是意大利最大的，仍保有自由港地位，米拉马雷城堡在西北 8 公里，国际理论物理中心等研究机构让它成为科研城，机场在西北 30 公里。初来的人最容易犯的错，是按意大利的印象来想象的里雅斯特，而它的建筑、咖啡与口音都带着中欧的底子。",
     layout:
       "市中心围绕意大利统一广场和大运河（博尔戈·特雷西诺区，圣安东尼教堂和塞尔维亚东正教堂）在海边的平地上，圣朱斯托山在市中心背后，山顶有城堡、主教座堂和罗马遗迹。中央火车站在市中心北面，港口在南北两侧。米拉马雷城堡在北面约8公里的海岸，沿海大道有电车和步道。喀斯特高原在城市背后，巨人洞在北面约10公里，奥皮奇纳有观景台。机场在西北约40公里的隆基。",
     gettingAround:
@@ -4897,6 +5059,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dresden: {
     identity:
       "德累斯顿是萨克森州首府，坐落在易北河畔，以保存完好的巴洛克老城和丰富的艺术收藏闻名，历史上曾被称为“易北河畔的佛罗伦萨”。是探访萨克森瑞士砂岩地貌的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dresden (capital of Saxony; ~565,000, urban area ~790,000, second in Saxony after Leipzig; Elbe; Frauenkirche rebuilt 1994–2005, Zwinger, Semperoper, State Art Collections; "Elbflorenz"; February 1945 bombing destroyed the centre; Elbe Valley UNESCO 2004, delisted 2009 over a bridge; Silicon Saxony; 4.7 million overnight stays)
+    howItWorks:
+      "德累斯顿是萨克森州的州府，人口约 56.5 万，城市连绵区约 79 万，是州内第二大城市——最大的是莱比锡；市议会与州议会都在城里，警察与学校归州。易北河把城市分成两岸：南岸的老城是奥古斯特二世时代的巴洛克建筑群，茨温格宫、森佩尔歌剧院与国家艺术收藏馆在这里，圣母教堂 1994 至 2005 年按原样重建，成为战后重建的象征；北岸的新城区是酒吧与年轻人的街区。1945 年 2 月的轰炸摧毁了整个市中心，约两万五千人遇难；易北河谷 2004 年列入世界遗产，2009 年因新建的大桥被除名。半导体产业让这一带被称为“硅萨克森”，撒克逊小瑞士在东南 30 公里。初来的人最容易犯的错，是把德累斯顿当作萨克森最大的城市，而莱比锡比它大。",
     layout:
       "茨温格宫、圣母教堂、德累斯顿城堡集中在老城核心区，沿易北河一线展开，是德国保存最完整的巴洛克城市景观之一；新城区在河对岸，是更年轻、更有活力的街区。",
     gettingAround:
@@ -4912,6 +5077,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nuremberg: {
     identity:
       "纽伦堡是巴伐利亚州第二大城市，保留着德国最典型的中世纪老城风貌，是通往弗兰肯汝拉山和弗兰肯葡萄酒产区的门户，也是德国传统圣诞市场文化的代表城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nuremberg (Bavaria, capital of Middle Franconia; ~529,500, second in Bavaria; metropolitan region ~3.6 million; Fürth adjoining; Free Imperial City, Imperial Regalia 1424–1806; Dürer; Kaiserburg; bombing of 2 January 1945 destroyed about eighty per cent of the old town; Nuremberg trials 1945–46; Christkindlesmarkt; Toy Fair; first German railway 1835 to Fürth)
+    howItWorks:
+      "纽伦堡是巴伐利亚州第二大城市与中弗兰肯行政区的首府，人口约 53 万，都会区约 360 万，紧邻的菲尔特是另一座独立的市；市议会管地方服务，警察与学校归州。老城被中世纪的城墙围着，皇帝堡在北端的岩丘上，1424 至 1806 年帝国宝物存放在这里，丢勒的故居在城内，佩格尼茨河从城中穿过；1945 年 1 月 2 日的一次轰炸摧毁了约八成的老城，战后按原貌重建，同年起的纽伦堡审判在司法宫的 600 号法庭举行，帝国党代会旧址如今是文献中心。圣诞市场与国际玩具展是它每年的两件大事，1835 年德国第一条铁路从这里通往菲尔特，地铁有全自动线路。弗兰肯人的口音与身份与巴伐利亚南部不同。初来的人最容易犯的错，是把纽伦堡当作巴伐利亚的一部分来理解，而弗兰肯有自己的方言、啤酒与香肠。",
     layout:
       "老城被中世纪城墙环绕，佩格尼茨河穿城而过；纽伦堡城堡俯瞰整座老城；圣劳伦茨教堂和圣塞巴尔杜斯教堂是老城两大哥特式地标；老城中心广场每年11—12月举办德国最著名的圣诞市场之一。",
     gettingAround:
@@ -4927,6 +5095,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   freiburg: {
     identity:
       "弗赖堡在德国西南角黑森林山脚下，是巴登-符腾堡州气候最温和、日照最充足的城市之一，被称为德国的“生态之都”，是探访黑森林的主要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Freiburg im Breisgau (fourth city of Baden-Württemberg; 153 km²; ~237,500 2024, urban area ~354,500; founded 1120 as a free market town; Münster 1200–1530; Bächle runnels; university 1457; Schauinsland cable car 3.6 km, longest in Germany; Vauban and green-city reputation; held the German heat record 2003–2015; trams)
+    howItWorks:
+      "弗赖堡是巴登—符腾堡州西南角的城市，也是弗赖堡行政区的首府，市域约 153 平方公里，2024 年人口约 23.7 万，城市连绵区约 35 万；市议会管地方服务，警察与学校归州。城市 1120 年作为自由市场镇建立，老城的中心是 1200 至 1530 年间建成的大教堂，街边的“Bächle”水渠是中世纪引来的水道，至今哗哗地流；1457 年创办的大学是德国最老的之一，学生占了市民的一大块。它以“绿色城市”著称：沃邦区是 1990 年代按低能耗与少汽车的原则建的住宅区，太阳能与有轨电车是它的标签；2003 至 2015 年德国的最高气温纪录由这里保持，是全国最温暖、日照最多的城市之一。绍因斯兰的缆车长 3.6 公里，是德国最长的，黑森林从城东开始，法国与巴塞尔各在几十公里外。初来的人最容易犯的错，是以为“绿色”只是宣传，而这座城的规划、交通与住宅确实按这条线走了几十年。",
     layout:
       "老城中心保留着中世纪的“小溪”（Bächle）——沿街的浅水渠，据传踩入水渠会带来婚姻好运；弗赖堡大教堂尖塔是老城制高点；老城周边被葡萄园和黑森林山地环绕。",
     gettingAround:
@@ -4942,6 +5113,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   heidelberg: {
     identity:
       "海德堡在内卡河畔，以海德堡城堡遗址和德国最古老的大学（海德堡大学，1386年创立）闻名，浪漫主义时期是众多诗人和艺术家钟爱的题材，至今保留着完整的老城风貌。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Heidelberg (fifth city of Baden-Württemberg; ~155,000, about a quarter of them students; Heidelberg University 1386, oldest in Germany; castle ruin above the Altstadt; old bridge 1786–88; Philosophers' Walk; Neckar; spared Allied bombing; US forces left 2013, Patrick Henry Village conversion; Bahnstadt; UNESCO City of Literature; Frankfurt ~78 km)
+    howItWorks:
+      "海德堡是巴登—符腾堡州的第五大城市，人口约 15.5 万，其中约四分之一是学生；市议会管地方服务，警察与学校归州；它在莱茵—内卡都会区里，隔壁的曼海姆比它大。1386 年创办的海德堡大学是德国最老的大学，校区散在老城与内卡河北岸；老城沿河一条主街长约 1.6 公里，城堡的废墟悬在南岸的山坡上，1786 至 1788 年建的老桥连着两岸，北岸的哲学家小路是看城的地方。二战中它几乎未遭轰炸，因此老城是原物；美军在此驻扎到 2013 年，撤离后留下的营区正在改建成住宅区，车站西面的“铁路城”是新建的低能耗街区。法兰克福机场在西北约 78 公里，SAP 的总部在南面的瓦尔多夫。初来的人最容易犯的错，是把海德堡当作一座只有游客的老城，而它是一座大学与研究机构撑起来的城市。",
     layout:
       "海德堡城堡遗址俯瞰整座老城和内卡河谷；老桥连接内卡河两岸，桥上可远眺城堡与老城全景；老城主街是欧洲最长的步行街之一，两侧是巴洛克风格建筑。",
     gettingAround:
@@ -4957,6 +5131,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   trier: {
     identity:
       "特里尔在摩泽尔河畔，是德国最古老的城市，公元前16年由古罗马人建城，保留着阿尔卑斯山以北最丰富的古罗马遗迹群，是探访摩泽尔河谷葡萄酒产区的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trier (fourth city of Rhineland-Palatinate; ~113,000; Augusta Treverorum founded about 17 BC, oldest city in Germany; one of four imperial capitals under the Tetrarchy; Roman and medieval monuments UNESCO 1986 — Porta Nigra, Imperial Baths, Aula Palatina, cathedral with the Holy Tunic; Karl Marx born 1818; University of Trier; Moselle wine)
+    howItWorks:
+      "特里尔是莱茵兰—普法尔茨州第四大城市，人口约 11.3 万，在摩泽尔河谷里，靠近卢森堡；市议会管地方服务，警察与学校归州。公元前约 17 年罗马人在这里建起奥古斯塔·特雷维罗鲁姆，因此它自称德国最古老的城市；公元 3 世纪末到 4 世纪，它是四帝共治时期罗马帝国的四座都城之一，尼格拉城门、皇帝浴场、君士坦丁巴西利卡与大教堂 1986 年一并列入世界遗产，大教堂里存着“圣袍”。1818 年卡尔·马克思生在城中的一栋房子里，如今是博物馆；摩泽尔河两岸的葡萄园是本地的产业，特里尔大学在城南。卢森堡在西面约 50 公里，大量居民每天跨境去卢森堡上班，没有机场。初来的人最容易犯的错，是把特里尔当作一座边境小城，而它是德国最古老的城市，罗马遗迹是原物而非复制。",
     layout:
       "黑门（Porta Nigra，古罗马城门，世界文化遗产）是老城最醒目的地标；老城中心还保留着古罗马大浴场、圆形剧场等遗迹；沿摩泽尔河两岸是层层叠叠的葡萄园梯田。",
     gettingAround:
@@ -4972,6 +5149,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   stralsund: {
     identity:
       "施特拉尔松在德国东北部波罗的海沿岸，是保存完好的汉萨同盟古城，2002年与维斯马老城一同整体列入世界文化遗产，也是通往吕根岛白垩崖的主要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Stralsund (fifth city of Mecklenburg-Vorpommern, seat of Vorpommern-Rügen district; 54 km²; ~54,000; charter 1234, oldest city in Pomerania; Hanseatic; old town UNESCO 2002 with Wismar; St Mary's the world's tallest structure 1625–1647; Ozeaneum; Gorch Fock; Rügen bridge; Swedish rule 1648–1815; shipbuilding)
+    howItWorks:
+      "施特拉尔松德是梅克伦堡—前波美拉尼亚州的第五大城市，也是前波美拉尼亚—吕根县的县治，市域约 54 平方公里，人口约 5.4 万；市议会管地方服务，警察与学校归州。老城建在斯特雷拉松海峡与几片水塘之间的一座岛上，四面环水，1234 年获得城市权，是波美拉尼亚最老的城市，13 世纪末加入汉萨同盟；砖砌哥特式的圣尼古拉教堂、圣玛丽教堂与市政厅是它的骨架，圣玛丽教堂 1625 至 1647 年间曾是世界最高的建筑，2002 年老城与维斯马一起列入世界遗产。1648 至 1815 年这里属于瑞典。海洋馆在旧港边，“戈尔希·福克号”帆船停在码头，吕根岛的大桥从城北跨过海峡，造船业至今是它的产业。初来的人最容易犯的错，是把施特拉尔松德当作去吕根岛的过路站，而它是一座汉萨老城，桥只是它北面的出口。",
     layout:
       "老城建在一座三面环水的半岛上，尼古拉教堂等几座砖砌哥特式教堂是老城天际线的标志；海洋博物馆（Ozeaneum）位于港口区，是德国知名的海洋生物展馆；施特拉尔松海峡对岸就是吕根岛。",
     gettingAround:
@@ -5039,6 +5219,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lubeck: {
     identity:
       "吕贝克在德国北部波罗的海附近的特拉沃河上，人口约21.7万（2024年），中世纪时是汉萨同盟的事实首都和“汉萨女王”。老城建在特拉沃河环绕的岛上，1478年建成的霍尔斯滕门是城市的标志，七座教堂尖塔构成天际线，圣玛丽教堂是波罗的海沿岸砖砌哥特建筑的典范；1987年老城列入世界遗产，是德国最早入选的老城之一。托马斯·曼在此出生，《布登勃洛克一家》以家族老宅为背景，君特·格拉斯晚年也住在附近；尼德埃格公司自1806年起在这里做杏仁糖。特拉沃明德是吕贝克的海滨区，有波罗的海海滩和渡轮港。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lübeck (independent city in Schleswig-Holstein; ~220,000, second-largest on the German Baltic coast; leading city of the Hanseatic League; old town on an island in the Trave UNESCO 1987; Holstentor; "city of seven towers", six church towers over 100 m; St Mary's 1265–1351 brick Gothic; Thomas Mann and Günter Grass; Niederegger marzipan; Travemünde Germany's most important ferry port; Hamburg ~65 km)
+    howItWorks:
+      "吕贝克是石勒苏益格—荷尔斯泰因州的一座独立市，人口约 22 万，是德国波罗的海沿岸的第二大城市；市议会管地方服务，警察与学校归州。中世纪它是汉萨同盟的盟主，“汉萨女王”是它的旧称，老城建在特拉沃河环绕的一座岛上，1987 年列入世界遗产，霍尔斯滕门是它的标志；七座塔的天际线来自五座教堂，其中六座塔超过 100 米，1265 至 1351 年建成的圣玛丽教堂是砖砌哥特式的范本，托马斯·曼的《布登勃洛克一家》写的就是这座城的商人家族，君特·格拉斯晚年也住在附近。尼德艾格的杏仁糖是它的特产。特拉沃明德的海滩与渡轮港在市域北端，是德国最重要的渡轮港，通往斯堪的纳维亚，汉堡在西南约 65 公里。初来的人最容易犯的错，是把吕贝克当作汉堡的郊区，而它曾是波罗的海贸易的中心，汉堡当年只是它的对手。",
     layout:
       "老城在被特拉沃河和运河环绕的椭圆形岛上，霍尔斯滕门和盐仓在岛西侧的入口，市场广场、市政厅和圣玛丽教堂在岛中央的最高处，布登勃洛克之家和尼德埃格咖啡馆就在教堂旁；主教座堂在岛南端，圣雅各教堂和欧洲汉萨博物馆在北端，岛上的小巷和庭院（Gänge und Höfe）是特色。中央车站在岛西面，过桥步行约10分钟到霍尔斯滕门。特拉沃明德在东北约20公里的河口海边。",
     gettingAround:
@@ -5053,6 +5236,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rothenburg: {
     identity:
       "陶伯河畔罗滕堡在巴伐利亚西北部弗兰肯地区的陶伯河谷上方，人口约1.1万（2024年），是德国保存最完整的中世纪小镇之一，也是浪漫之路上最著名的一站。它是德国仅有的四座城墙完整环绕的城镇之一（另三座是讷德林根、丁克尔斯比尔、贝尔兴），十七世纪三十年战争后长期停滞让它保留了中世纪面貌；普伦莱茵的岔路口是德国最常被拍照的街景之一，市政厅塔楼可俯瞰红瓦屋顶。二战末期约三分之一建筑被炸毁，战后按原样重建。凯特·沃尔法特圣诞村和德国圣诞博物馆全年营业，“雪球”酥点是本地特产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rothenburg ob der Tauber (town in Ansbach district, Middle Franconia, Bavaria; 41.67 km²; 11,365 at end-2024; plateau above the Tauber; one of only four German towns with complete walls; free imperial city until 1803; Romantic Road; a 1945 raid destroyed about 32% of the town, rebuilt; Plönlein; night watchman; Käthe Wohlfahrt)
+    howItWorks:
+      "罗滕堡是巴伐利亚州中弗兰肯安斯巴赫县的一座镇，市域约 42 平方公里，2024 年底人口约 11,400，由民选的镇议会与镇长治理，警察与学校归州。镇子建在陶伯河上方的一片台地上，城墙至今完整——德国只有四座城镇保住了完整的城墙——1803 年以前它是神圣罗马帝国的自由城市，之后并入巴伐利亚；市集广场、普勒莱因的岔路口与夜巡人的导览是游客的三件事，全年营业的圣诞用品店在主街上，它是“浪漫之路”上最有名的一站。1945 年的一次空袭毁了约三分之一的镇子，战后按原样重建。铁路只有从施泰纳赫来的支线，纽伦堡在东面约 80 公里，维尔茨堡在北面约 60 公里。初来的人最容易犯的错，是以为整座镇都是中世纪原物，而三分之一是 1950 年代按旧图纸重建的。",
     layout:
       "小镇在陶伯河谷东侧的高地上，被城墙完整环绕：集市广场和市政厅在中心，从广场向南沿施密德巷到普伦莱茵和西伯塔，再到医院门；城堡门和城堡花园在西端俯瞰河谷，圣雅各教堂（里门施奈德的圣血祭坛）在集市广场北面，城墙可从多处上去绕行（约2.5公里带顶的步道）。火车站在城墙东面约500米。陶伯河谷里有双桥和托普勒小城堡，可步行下去。",
     gettingAround:
@@ -5067,6 +5253,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   regensburg: {
     identity:
       "雷根斯堡在巴伐利亚东部多瑙河最北端的河湾上，雷根河与纳布河在此汇入，人口约15.1万（2024年）。公元179年罗马人在此建立雷吉纳军营（Castra Regina），中世纪它是神圣罗马帝国最繁荣的城市之一，1663–1806年帝国议会长期在此召开；老城近乎完整地保留了中世纪面貌，有近1500座受保护建筑，2006年列入世界遗产，被称为“阿尔卑斯以北最大的中世纪城市”。1135–1146年建成的石桥是中世纪桥梁的杰作，圣彼得主教座堂是巴伐利亚哥特的代表，主教座堂麻雀合唱团（Domspatzen）有上千年历史；桥头的历史香肠厨房自称世界最古老的香肠店。图恩与塔克西斯家族的宫殿在城南，瓦尔哈拉神殿在下游约10公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Regensburg (fourth city of Bavaria, capital of the Upper Palatinate; over 150,000; confluence of Danube, Naab and Regen, the Danube's northernmost point; Castra Regina 179 AD; permanent Imperial Diet 1663–1806; old town with Stadtamhof UNESCO 2006, the largest medieval city site north of the Alps, nearly 1,500 listed buildings; Stone Bridge 1135–46; cathedral from 1275; BMW plant; Domspatzen)
+    howItWorks:
+      "雷根斯堡是巴伐利亚州第四大城市与上普法尔茨行政区的首府，人口超过 15 万；市议会管地方服务，警察与学校归州。城市在多瑙河、纳布河与雷根河的汇合处，是多瑙河的最北点，公元 179 年罗马人在这里筑起卡斯特拉·雷吉纳的军团要塞；1663 至 1806 年神圣罗马帝国的“永久帝国议会”常设于此，德意志各邦的代表在市政厅里开了一百四十多年的会。老城与对岸的施塔特安霍夫 2006 年列入世界遗产，是阿尔卑斯以北最大的一片中世纪城区，近 1,500 座建筑受保护，1135 至 1146 年建成的石桥与 1275 年动工的大教堂是它的两个坐标；二战中它几乎未遭破坏。宝马的工厂与雷根斯堡大学是今天的经济支柱，瓦尔哈拉神殿在下游 10 公里，慕尼黑在南面约 120 公里。初来的人最容易犯的错，是把雷根斯堡当作一座小镇，而它是一座有大学与汽车厂的城市，老城只是它的中心。",
     layout:
       "老城在多瑙河南岸，石桥从老城北缘过河到施塔特阿姆霍夫区（也在世界遗产范围内）；桥头是盐仓、游客中心和历史香肠厨房，主教座堂在桥南约200米，哈德广场、老市政厅（帝国议会博物馆）和商人塔楼在老城中西部。图恩与塔克西斯宫（圣埃默拉姆修道院）在老城南缘，火车站再往南约500米。瓦尔哈拉神殿在东面多瑙河北岸的多瑙施陶夫，可坐船去。",
     gettingAround:
@@ -5752,6 +5941,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ghent: {
     identity:
       "根特是东弗兰德省首府，人口约26万，保留着规模宏大的中世纪老城，历史上曾是欧洲重要的纺织业中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ghent (city and municipality in East Flanders, capital of the province; 157.77 km²; ~265,000–270,000, metro ~560,000; third-largest in Belgium; Scheldt and Leie; ~50,000 people by 1300; Gravensteen, St Bavo's with the Ghent Altarpiece, Graslei; car-free centre, 400+ km of cycle paths; Gentse Feesten 1–1.5 million)
+    howItWorks:
+      "根特是比利时东佛兰德省的省会，也是佛兰德大区的第三大城市，由民选的市长和市议会治理，市域约 158 平方公里，含 13 个并入的郊区，人口约 26.5 万，都会区约 56 万；佛兰德大区管教育与交通，警察归市与联邦分层负责。老城在斯海尔德河与莱厄河的汇合处：1300 年前后它已有约五万人，是北欧最富的城市之一，此后几百年的衰落反而把中世纪的城区原样留了下来——伯爵城堡、圣巴夫大教堂里的《根特祭坛画》与草药河岸的行会屋都在这一片。市中心基本禁止汽车，全市有四百多公里自行车道，根特大学的学生占了市民的一大块，七月的根特节吸引上百万人，港口在城北。初来的人最容易犯的错，是把根特当作布鲁日那样的博物馆城，而它是一座有大学与港口、白天在上班的城市。",
     layout:
       "圣巴夫主教座堂、钟楼与圣尼古拉教堂三座尖塔并立，是老城天际线的标志；根特伯爵城堡是保存完好的中世纪城堡；老城沿莱斯河与斯海尔德河交汇处展开。",
     gettingAround:
@@ -5767,6 +5959,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   liege: {
     identity:
       "列日是列日省首府，人口约20万，坐落在默兹河畔，是瓦隆大区最大的城市，也是比利时东部重要的工商业中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Liège (capital of Liège Province, Wallonia; ~195,000, metro ~750,000 over 52 municipalities; Meuse near the Dutch and German borders; Prince-Bishopric 985–1794 with wide independence; Montagne de Bueren 374 steps; Guillemins station by Calatrava; steel decline and diversification; La Batte Sunday market; airport cargo; French-speaking)
+    howItWorks:
+      "列日是瓦隆大区列日省的省会，由民选的市长和市议会治理，市区人口约 19.5 万，由 52 个市镇组成的都会区约 75 万人；瓦隆大区与法语共同体分管经济与教育，法语是这里的语言。城市在默兹河谷里，离荷兰与德国边境都不远。985 至 1794 年它是列日采邑主教区的首府——一个名义上属于神圣罗马帝国、实际上高度独立的教会国家，七座中世纪的教士教堂与主教宫是那段历史的遗存；19 世纪它成为欧洲大陆最早的钢铁中心之一，钢铁与煤炭的衰退让这座城经历了漫长的调整，如今转向航空零件、生物技术与物流，机场是欧洲重要的货运枢纽。布伦山的 374 级台阶从老城通到城堡，卡拉特拉瓦设计的吉耶曼车站是新的地标，星期天的拉巴特集市沿河摆开。初来的人最容易犯的错，是把列日当作一座衰落的工业城，而它有自己的大学、剧院与一千年的主教城史。",
     layout:
       "圣朗贝尔广场与列日主教座堂是老城核心；老城沿默兹河两岸分布，蒙塔涌台阶（374级）连接老城与山丘上的观景点；列日圭勒明车站是知名的现代建筑地标。",
     gettingAround:
@@ -5782,6 +5977,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   namur: {
     identity:
       "那慕尔是瓦隆大区首府，人口约11万，坐落在默兹河与桑布尔河交汇处，山丘上的城堡是这座城市的标志。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Namur (capital of Wallonia — the Walloon Parliament and government sit here, so designated in 1986 — and of Namur Province; 175.93 km²; ~115,330 2026; 24 sub-municipalities; confluence of the Sambre and Meuse; citadel; stilt jousting UNESCO intangible 2021; French-speaking; rail to Brussels, Luxembourg, Lille, Liège)
+    howItWorks:
+      "那慕尔是瓦隆大区的首府——1986 年瓦隆议会与政府定址于此——同时也是那慕尔省的省会，由民选的市长和市议会治理，市域约 176 平方公里，下含 24 个并入的市镇，2026 年人口约 11.5 万，是比利时法语区的行政中心之一。城市在桑布尔河汇入默兹河的尖角上，城堡建在两河之间的岩丘上，如今已解除军事用途，老城在山脚，18 世纪的圣欧班主教座堂是它的地标；踩高跷比武是这里从 1411 年传下来的习俗，2021 年列入非物质文化遗产名录。铁路把它与布鲁塞尔、卢森堡、里尔与列日连起来，机械、皮革与瓷器是老工业。初来的人最容易犯的错，是以为瓦隆的首府是列日或沙勒罗瓦这样更大的城市，而议会与政府在这座 11 万人的城里。",
     layout:
       "那慕尔城堡矗立在默兹河与桑布尔河交汇处的山丘上，俯瞰全城；老城位于城堡脚下，沿两河岸展开。",
     gettingAround:
@@ -5797,6 +5995,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   leuven: {
     identity:
       "鲁汶是佛兰芒布拉班特省首府，人口约10万，鲁汶大学始建于1425年，是低地国家历史最悠久的大学，城市因此充满青年活力。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Leuven (capital of Flemish Brabant; over 100,000, eighth-largest in Belgium; ~25 km east of Brussels; a university city since 1425, the oldest in the Low Countries; KU Leuven the largest Dutch-speaking university in the world, over 50,000 students; Brabantine Gothic town hall 1439–63; St Peter's; AB InBev headquarters and Stella Artois; imec; ECoC 2030)
+    howItWorks:
+      "鲁汶是佛兰德布拉班特省的省会，由民选的市长和市议会治理，人口超过 10 万，是比利时第八大城市，在布鲁塞尔以东约 25 公里；佛兰德大区管教育，荷兰语是这里的语言。1425 年起它就是大学城，是低地国家最古老的一座——今天的鲁汶大学是世界上最大的荷兰语大学，五万多名学生住在一座十万人的城里，学期与假期决定了这座城的节奏。1439 至 1463 年建成的布拉班特哥特式市政厅是它的地标，圣彼得教堂在对面，老市集广场沿街全是酒吧；百威英博的总部在城里，时代啤酒从这里出产，纳米电子研究所 imec 让它同时是欧洲的芯片研究重镇。2030 年它将是欧洲文化之都。初来的人最容易犯的错，是把鲁汶当作布鲁塞尔的郊区，而它是一座自成一体的大学城，暑假里街上会空掉一半。",
     layout:
       "市政厅哥特式建筑是老城的标志；大贝居安会院是老城内保存完好的历史街区；鲁汶大学各学院建筑分布在老城各处，与城市融为一体。",
     gettingAround:
@@ -5812,6 +6013,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mons: {
     identity:
       "蒙斯是埃诺省首府，人口约9.5万，2015年曾获选欧洲文化之都，是瓦隆大区西部重要的文化城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mons (capital of Hainaut Province, Wallonia; 147.56 km², ~95,299 in 2018, 19 sub-municipalities; belfry 87 m, UNESCO 1999 among the Belfries of Belgium and France; Ducasse de Mons/Doudou on Trinity Sunday, UNESCO intangible; SHAPE, NATO's Supreme Headquarters Allied Powers Europe, at nearby Casteau; Battle of Mons August 1914 and liberation 11 November 1918; European Capital of Culture 2015; French-speaking)
+    howItWorks:
+      "蒙斯是瓦隆大区埃诺省的省会，由民选的市长和市议会治理，市域约 148 平方公里，下含 19 个并入的市镇，2018 年人口约 9.5 万；瓦隆大区与法语共同体分管经济与教育，法语是这里的语言。老城在一座缓丘上，17 世纪落成的钟楼高 87 米，是比利时唯一的巴洛克钟楼，1999 年随“比利时与法国的钟楼群”列入世界遗产，圣沃德吕教堂在它脚下。每年三一主日的“杜杜节”把圣人的圣髑车拉上街，再演一场圣乔治与龙的搏斗，是列入非物质文化遗产名录的老习俗。1914 年 8 月英军与德军在这里首次交火，1918 年 11 月 11 日停战当天加拿大军队解放此城，城郊的公墓与纪念碑都与这段历史有关；北约的欧洲盟军最高司令部设在城外的卡斯托，2015 年它是欧洲文化之都。初来的人最容易犯的错，是把蒙斯当作一座工业城，而它是一座省会与大学城，北约的军事总部只是它的邻居。",
     layout:
       "大广场与市政厅是老城中心；贝尔弗里钟楼（列入联合国教科文组织世界遗产的比利时与法国钟楼系列之一）俯瞰全城；圣沃德鲁教堂是老城内重要的哥特式建筑。",
     gettingAround:
@@ -5827,6 +6031,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dinant: {
     identity:
       "迪南是那慕尔省一座默兹河畔的小城，人口约1.3万，以河岸崖壁上的城堡与萨克斯管发明者阿道夫·萨克斯的出生地而闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dinant (city in Namur Province, Wallonia; ~100 km²; 13,544 2018; a long thin town along the Meuse under limestone cliffs; collegiate church with onion dome and 11th-century citadel above; Adolphe Sax born 1814, saxophone; couque de Dinant; kayaking on the Lesse; 674 inhabitants executed by German troops on 23 August 1914; Brussels ~90 km)
+    howItWorks:
+      "迪南是瓦隆大区那慕尔省的一座小城，由民选的市长和市议会治理，市域约 100 平方公里，2018 年人口约 1.35 万。地形决定了它的形状：默兹河与陡峭的石灰岩崖之间只有一条窄地，城市因此沿河南北铺成细长的一条；洋葱顶的圣母教堂贴着崖脚，11 世纪的城堡在崖顶，缆车与 400 多级台阶通上去。1814 年萨克斯管的发明者阿道夫·萨克斯生在这里，河上的桥栏杆装饰着各国的萨克斯管；迪南硬饼干是本地的老食品，莱斯河的皮划艇从上游漂下来。1914 年 8 月 23 日，德军在此处决了 674 名居民，是一战最早的屠杀之一。布鲁塞尔在东北约 90 公里。初来的人最容易犯的错，是把迪南当作一座可以走遍的老城，而它是一条长街，看点分布在几公里的河岸上。",
     layout:
       "迪南城堡矗立在默兹河东岸的陡峭崖壁上，俯瞰整座城市；老城沿默兹河西岸展开，圣母教堂洋葱形尖顶是城市天际线的标志。",
     gettingAround:
@@ -5842,6 +6049,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ostend: {
     identity:
       "奥斯坦德是西弗兰德省一座北海海滨城市，人口约7万，是比利时海岸最大的海滨度假与港口城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ostend (city in West Flanders; ~71,557 2022; largest city on the Belgian coast; boroughs Mariakerke, Raversijde, Stene, Zandvoorde; beach and dijk; royal resort under Leopold II; James Ensor; Kursaal; most bombed Belgian city in WWII; ferry to England until 2013; Coastal tram; airport mainly freight)
+    howItWorks:
+      "奥斯坦德是西佛兰德省的一座城，也是比利时海岸线上最大的城市，由民选的市长和市议会治理，2022 年人口约 7.2 万，含玛丽亚凯尔克、拉弗塞德、斯特讷与赞德福尔德几个并入的镇。19 世纪它是比利时王室的海滨度假地，利奥波德二世在这里修了长廊与柱廊，赌场与堤岸大道是那时的格局，画家詹姆斯·恩索尔生在这里；二战中它是比利时被炸得最狠的城市，战后的海滨是重建的。通往英国的渡轮 2013 年停航，如今港口以渔业与海上风电为主，机场以货运为主；沿海岸有轨电车从德帕内一直开到克诺克，是世界上最长的有轨电车线，从这座城穿过。布鲁日在东南约 25 公里。初来的人最容易犯的错，是把奥斯坦德当作一处沙滩，而它是一座有渔港、赌场与全年生活的城市，沙滩只是它的一条边。",
     layout:
       "海滨长堤与沙滩是城市的核心休闲区域；老渔港区保留着传统渔业城镇的风貌；玛丽亚·亨德里卡公园是市内重要的绿地。",
     gettingAround:
@@ -5857,6 +6067,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   spa: {
     identity:
       "斯帕是列日省阿登高原上一座温泉小镇，人口约1.1万，“水疗”（spa）一词即由此地得名，是欧洲历史最悠久的温泉度假胜地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Spa (municipality in Liège Province, Wallonia; 39.85 km²; 10,378 2018; more than 300 cold mineral springs, locally "pouhons"; the name gave English its word "spa"; Great Spa Towns of Europe UNESCO 2021; Circuit de Spa-Francorchamps actually at Stavelot; Spa Monopole water; casino; Thermes 2005; Ardennes; Liège ~35 km)
+    howItWorks:
+      "斯帕是瓦隆大区列日省的一个市镇，由民选的市长和市议会治理，市域约 40 平方公里，2018 年人口约 1 万，在阿登山的一处林间谷地里。它的名字进了英语：因为这里的三百多处冷矿泉，“spa”成了世界上所有矿泉浴场的通名，本地人把泉眼叫“pouhon”。18 至 19 世纪欧洲的王公贵族来此饮泉，赌场、长廊与旅馆是那个时代留下的，2021 年它与欧洲其他十座温泉城一起列入世界遗产；2005 年山上建了新的温泉中心，缆车从镇上通上去，斯帕矿泉水从这里装瓶。以它命名的斯帕—弗朗科尔尚赛道其实在东面的斯塔沃洛与马尔梅迪境内，不在本镇。列日在西北约 35 公里。初来的人最容易犯的错，是以为 F1 赛道在斯帕镇上，而它在十几公里外的另一个市镇。",
     layout:
       "温泉浴场与赌场是小镇的核心设施；老城街道环绕温泉水源分布；斯帕—弗朗科尔尚赛道（F1比利时大奖赛举办地）位于小镇周边的阿登森林中。",
     gettingAround:
@@ -6506,6 +6719,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kilkenny: {
     identity:
       "基尔肯尼是爱尔兰东南部伦斯特省一座保存完好的中世纪城镇，人口约2.7万，以诺曼城堡与中世纪街巷闻名，被称为爱尔兰的“中世纪之都”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kilkenny (Ireland; city in County Kilkenny in Leinster with 27,184 residents in 2022, the thirteenth-largest urban centre in the country; a 6th-century ecclesiastical settlement of Saint Canice, a town charter from William Marshall in 1207 and city status by royal charter of James I in 1609; the Confederation of Kilkenny operated here from 1642 to 1649; Kilkenny Castle, formerly the Butler seat; St Canice's Cathedral with its 9th-century round tower; nicknamed the Marble City for the local black limestone with white fossils; the Kilkenny Arts Festival, the Cat Laughs comedy festival and the Roots Festival; Cartoon Saloon and a craft and design scene; rail to Dublin and Waterford)
+    howItWorks:
+      "基尔肯尼是爱尔兰东南部的城市，2022 年人口 27,184，是全国第十三大城区。它在法律上是城市：1609 年詹姆斯一世授予城市特许状，但爱尔兰 2014 年废除了市镇一级议会，如今由基尔肯尼郡议会统一管辖，因此“城市”是历史身份而非行政层级。城市的骨架是一条“中世纪一英里”：南端是巴特勒家族的基尔肯尼城堡，北端是圣卡尼斯大教堂与 9 世纪的圆塔，两者之间由几条窄巷串起，1207 年威廉·马歇尔颁发的城镇特许状划定的范围大致就是这一段。它得名“大理石之城”是因为本地黑色石灰岩里嵌着白色化石，磨光后像大理石，老建筑多用它砌成。1642 至 1649 年“基尔肯尼同盟”在此运作，是爱尔兰史上常被提及的一段。夏天的艺术节与喜剧节把全城占满，铁路通往都柏林与沃特福德。初来的人最容易犯的错，是按“城市”二字预期规模，而这里步行半小时可以走穿。",
     layout:
       "老城沿诺尔河而建，城堡与主教座堂分别位于河两岸的制高点，中世纪街巷格局至今保留完整，是爱尔兰保存最完好的中世纪城镇之一。",
     gettingAround:
@@ -6537,6 +6753,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   killarney: {
     identity:
       "基拉尼是爱尔兰西南部凯里郡的小城，人口约1.4万，紧邻麦吉利卡迪山脉与基拉尼湖群，是探索凯里之环与爱尔兰最高峰的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Killarney (Ireland; town in County Kerry with 14,412 residents in 2022, the second largest in the county; a monastery founded on Innisfallen Island in 640; tourism has underpinned the town's economy for more than two and a half centuries, with Queen Victoria's visit of 1861 raising its profile; the Lakes of Killarney, Ross Castle, Muckross House and Abbey, MacGillycuddy's Reeks and the Gap of Dunloe; the Muckross estate presented to the Irish state in 1932 to create the country's first national park; tourism worth about 410 million euros a year with about 1.1 million visitors; the Liebherr plant of 1958 a major employer; the N22, rail to Dublin, Cork and Tralee, and Kerry Airport at Farranfore)
+    howItWorks:
+      "基拉尼是爱尔兰凯里郡的城镇，2022 年人口 14,412，是全郡第二大；爱尔兰 2014 年废除了市镇一级议会，本地事务由凯里郡议会办理。这座镇的经济两个半世纪以来一直靠旅游，1861 年维多利亚女王来访使它在英语世界出名，如今每年约一百一十万人次到访，旅游收入约四亿一千万欧元。它的资本是身后的山与湖：基拉尼国家公园是爱尔兰第一座国家公园，1932 年马克罗斯庄园捐给国家而设立，此后不断扩大，园内有基拉尼三湖、罗斯城堡、马克罗斯宅邸与修道院；麦吉利卡迪山脉是爱尔兰最高的山群，敦洛峡在其中，“凯里之环”环形公路从镇上出发。马车至今在公园里载客。1958 年设厂的利勃海尔是镇上另一大雇主，铁路通往都柏林、科克与特拉利，凯里机场在法兰福尔。初来的人最容易犯的错，是把“凯里之环”当作一天的轻松兜风，而它是一条约 180 公里的窄路。",
     layout:
       "小城中心紧凑，基拉尼国家公园与湖群紧邻城区西南侧，麦吉利卡迪山脉屏立在国家公园西侧，构成典型的山湖相依格局。",
     gettingAround:
@@ -6551,6 +6770,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dingle: {
     identity:
       "丁格尔是丁格尔半岛上的小渔港小镇，人口约2千，是爱尔兰语（盖尔语）保存较好的地区之一，也是探索半岛海崖与史前遗迹的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dingle (Ireland; town in County Kerry on the Dingle Peninsula, the only town on the peninsula, about 50 km south-west of Tralee; 1,671 residents in the 2022 census, down from 2016, with the oldest average age of any town in Ireland at 44.4 years; within a Gaeltacht region, about 13.7 per cent speaking Irish daily in 2016; more goods exported through Dingle than Limerick by the 13th century; tourism, fishing and agriculture the principal industries, with Dingle Mart serving the region; Fungie, a bottlenose dolphin, sought human contact in Dingle Bay from 1983 and disappeared in 2020; a 2005 order on Gaeltacht place names, and after a 2006 plebiscite in which about 90 per cent supported bilingual signage, legislation designates Dingle as the English name and Daingean Uí Chúis as the Irish)
+    howItWorks:
+      "丁格尔是爱尔兰凯里郡丁格尔半岛上唯一的城镇，2022 年人口 1,671，在特拉利西南约 50 公里；爱尔兰 2014 年废除了市镇一级议会，本地事务由凯里郡议会办理。它在“盖尔塔赫特”范围内——这是政府划定的爱尔兰语社区，公共标识、学校与地方行政都要用爱尔兰语，2016 年约 13.7% 的居民每天讲爱尔兰语。地名本身就是这套制度的例子：2005 年的法令一度只承认爱尔兰语名，2006 年的公投中约九成居民支持双语并用，此后立法把 Dingle 定为英文名、Daingean Uí Chúis 定为爱尔兰文名。13 世纪它的出口量一度超过利默里克，如今渔业、农业与旅游是三大行业，镇上的牲畜市场服务整个半岛。斯利海角环线沿海岸绕行，路边有蜂窝状的石屋遗迹，布拉斯基特群岛在西面海上。这座镇的平均年龄 44.4 岁，是全国城镇中最高的。初来的人最容易犯的错，是以为爱尔兰语只是装饰，而在这里它是社区的日常语言。",
     layout:
       "小镇沿丁格尔湾港口而建，街巷紧凑，半岛沿岸的斯利亚角与布兰登山构成小镇周边的主要地貌背景。",
     gettingAround:
@@ -6565,6 +6787,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   waterford: {
     identity:
       "沃特福德是爱尔兰最古老的城市，由维京人于914年建立，人口约6万，位于爱尔兰东南部苏尔河口，以水晶工艺闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Waterford (Ireland; city in the south-east in Munster, the oldest city in the state, founded by Vikings in 914, with 60,079 residents in 2022, the fifth most populous city in the state; the Viking Triangle is the tenth-century settlement, with Reginald's Tower of the 13th to 14th century as its landmark; the motto Urbs Intacta Manet Waterfordia earned after repelling sieges in the 15th century; Waterford Crystal made here from 1783 until early 2009 and resumed in 2010; the port handles about 12 per cent of Ireland's external trade by value, on the River Suir; South East Technological University established 2022; the M9 to Dublin and rail from Plunkett station; the airport currently without scheduled flights)
+    howItWorks:
+      "沃特福德是爱尔兰东南部的城市，2022 年人口 60,079，是爱尔兰共和国第五大城市，也是最古老的一座——公元 914 年由维京人建城，比都柏林还早。城市治理归沃特福德市与郡议会：2014 年爱尔兰的地方改革把原来的市议会与郡议会合并，如今一个议会同时管城与郡。老城最核心的一块叫“维京三角”，就是 10 世纪的原始聚落所在，13 至 14 世纪的雷金纳德塔立在河边，是全国现存最古老的城市建筑之一；15 世纪它两次挡住围城，因此得了“沃特福德城完好无损”的城市箴言。沃特福德水晶自 1783 年在此生产，2009 年初停产，2010 年恢复了规模较小的生产与展示。港口在舒尔河上，按货值约占爱尔兰对外贸易的一成二；东南理工大学 2022 年成立，M9 高速与铁路通往都柏林，本地机场目前没有定期航班。初来的人最容易犯的错，是以为都柏林最老，而这座城早了将近半个世纪。",
     layout:
       "老城沿苏尔河北岸而建，维京三角区保留着中世纪街巷格局，市郊沿河口向外延伸至沃特福德港。",
     gettingAround:
@@ -6613,6 +6838,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   westport: {
     identity:
       "韦斯特波特是爱尔兰西部梅奥郡的小镇，人口约6千，是探索克罗帕特里克圣山与阿基尔岛的传统门户，被认为是爱尔兰最宜居的小镇之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Westport (Ireland; town in County Mayo at the south-east corner of Clew Bay, 6,872 residents in 2022; one of only a few planned towns in Ireland, laid out in the 18th century around Westport House, with the Carrowbeg river channelled into the design to make the tree-lined Mall and its stone bridges; Croagh Patrick, locally the Reek, about 10 km west, with the Reek Sunday pilgrimage; the Great Western Greenway, a 42 km cycling route on the former railway; winner of the Irish Tidy Towns Competition in 2001, 2006 and 2008 and named Best Place to Live in Ireland in 2012; AbbVie employs about 1,400, roughly a quarter of the workforce; rail to Dublin Heuston 250 km away)
+    howItWorks:
+      "韦斯特波特是爱尔兰梅奥郡的城镇，位于克卢湾东南角，2022 年人口 6,872；爱尔兰 2014 年废除了市镇一级议会，本地事务由梅奥郡议会办理。它是爱尔兰少见的“规划市镇”之一：18 世纪围绕韦斯特波特庄园整体设计，卡罗贝格河被引入城中，两岸筑石堤、种行道树，形成叫作“林荫道”的中轴，几座石桥横跨其上——今天的街区形状仍是那次规划的产物。城西约 10 公里是克罗帕特里克山，当地人叫它“the Reek”，每年七月最后一个星期日有大批人徒步上山朝圣。旧铁路改成的“大西部绿道”长 42 公里，从这里通往阿基尔岛，是爱尔兰最早的长距离自行车道之一。艾伯维制药厂雇了约一千四百人，约占本地劳动力的四分之一。这座镇三次拿过全国“整洁市镇”冠军。铁路通往 250 公里外的都柏林。初来的人最容易犯的错，是以为它是自然长成的老镇，而它的街道是一次画出来的。",
     layout:
       "小镇按18世纪的规划建成（一般归于英国建筑师詹姆斯·怀亚特1780年前后的设计），运河与林荫大道贯穿镇中心，是爱尔兰少有的规划型小镇。",
     gettingAround:
@@ -6627,6 +6855,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "donegal-town": {
     identity:
       "多尼戈尔镇是爱尔兰西北部多尼戈尔郡的小镇，人口约2.8千，是探索斯利夫利格悬崖与格伦维国家公园的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Donegal Town (Ireland; town in County Donegal with an urban population of 2,749 in 2022; although it gave the county its name, Lifford is the county town; from the 15th to the early 17th century the capital of Tyrconnell under the O'Donnell dynasty, rebuilt by Captain Basil Brooke around 1611 after the Flight of the Earls of 1607, who laid out the square known as the Diamond; Donegal Castle, the former O'Donnell stronghold, restored by the Office of Public Works; Donegal Abbey, a 15th-century Franciscan friary; the Annals of the Four Masters compiled nearby between 1632 and 1636; at the mouth of the River Eske on Donegal Bay below the Blue Stack Mountains)
+    howItWorks:
+      "多尼戈尔镇是爱尔兰多尼戈尔郡的城镇，2022 年城区人口 2,749；爱尔兰 2014 年废除了市镇一级议会，本地事务由多尼戈尔郡议会办理。这里有一处常被弄错的关系：郡以这座镇命名，但郡治并不在此，而在东北边境上的利福德。15 世纪到 17 世纪初，它是奥唐奈家族统治的蒂尔康奈尔的首府，1607 年“伯爵出走”之后，巴兹尔·布鲁克上尉在 1611 年前后重建市镇，画出了今天中心那个叫“钻石”的三角形广场，镇上的道路都从这里发散。奥唐奈家族的多尼戈尔城堡经国家公共工程局修复后开放，15 世纪的方济各会修道院废墟在河口；著名的《四大师年鉴》1632 至 1636 年间在附近编成。镇子在埃斯克河入海处、多尼戈尔湾边，蓝石山在背后，粗花呢是本地的老手艺，“野性大西洋之路”沿海岸经过。初来的人最容易犯的错，是以为这里是郡治，而郡政府在利福德。",
     layout:
       "小镇以三角形市集广场为中心，多尼戈尔城堡与河口相邻，是多尼戈尔湾沿岸的历史贸易据点。",
     gettingAround:
@@ -6674,6 +6905,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   helsingoer: {
     identity:
       "赫尔辛格是西兰岛东北岸的港口小城，人口约4.7万，与瑞典赫尔辛堡隔厄勒海峡相望，因克伦堡城堡是莎士比亚《哈姆雷特》的故事原型地而闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Helsingør/Elsinore (Denmark; municipality ~48,450 2026, 14th most populous urban area; founded in the 1420s by Eric of Pomerania; Kronborg Castle UNESCO, setting of Hamlet; narrowest point of the Øresund, 4 km to Helsingborg; Sound Dues made it Denmark's third-largest town by 1672, abolished 1857; Kulturhavn Kronborg 2013; train to Copenhagen every 20 minutes)
+    howItWorks:
+      "赫尔辛格是丹麦西兰岛北端的市镇，2026 年人口约 4.8 万，由民选的市议会与市长治理；丹麦的市镇管学校、养老与地方道路，大区管医院，国家管警察。城市的位置就是它的历史：这里是厄勒海峡最窄的地方，到瑞典的赫尔辛堡只有 4 公里，渡轮一直在开。1420 年代波美拉尼亚的埃里克国王在此建城并开始征收“海峡通行税”，凡过海峡的船都要在这里交钱，靠这笔收入它到 1672 年成了丹麦第三大城，1857 年税废之后城市随之衰落。克伦堡宫守在海角上，是世界遗产，也是《哈姆雷特》的舞台，每年夏天在城堡里演这出戏；旧船厂改成的海事博物馆挖在地下的干船坞里。哥本哈根的火车每 20 分钟一班。初来的人最容易犯的错，是把赫尔辛格当作一座城堡，而城堡是这座城收税与守海峡的工具，城因税而兴、因税废而衰。",
     layout:
       "老城沿港口而建，克伦堡城堡扼守厄勒海峡最窄处，历史上是控制波罗的海航运的战略要地，与瑞典的往来渡轮频繁。",
     gettingAround:
@@ -6688,6 +6922,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   roskilde: {
     identity:
       "罗斯基勒是西兰岛北部的历史古城，人口约5.1万，10世纪起长期是丹麦的宗教与政治中心，如今以罗斯基勒大教堂与维京船博物馆闻名，也是欧洲知名音乐节的举办地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Roskilde (Denmark; ~53,897 2026, tenth-largest; 30 km west of Copenhagen; founded in the 980s by Harald Bluetooth, capital from the 11th century until 1443; cathedral UNESCO 1995 with 39 royal tombs, first Gothic brick cathedral in Scandinavia, completed 1275; Viking Ship Museum with five 11th-century ships; Roskilde Festival since 1971, ~80,000; Roskilde University 1972)
+    howItWorks:
+      "罗斯基勒是丹麦西兰岛的市镇，2026 年人口约 5.4 万，是丹麦第十大城市，在哥本哈根以西 30 公里，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。10 世纪 80 年代蓝牙王哈拉尔在这里建城，11 世纪起到 1443 年它是丹麦的首都，之后让位给哥本哈根；1275 年落成的大教堂是斯堪的纳维亚第一座砖砌哥特式教堂，1995 年列入世界遗产，历代丹麦君主的 39 座陵墓在里面，至今仍在使用。峡湾里 1960 年代打捞出的五艘 11 世纪维京船存在海边的维京船博物馆里，当年它们是被凿沉用来封锁航道、保卫这座都城的。1971 年起的罗斯基勒音乐节每年吸引约八万人，是北欧最大的音乐节之一，罗斯基勒大学 1972 年创办。初来的人最容易犯的错，是把罗斯基勒当作哥本哈根的卫星城，而在哥本哈根成为首都之前，它做了四百年的都城。",
     layout:
       "老城建于罗斯基勒峡湾南端，大教堂矗立在城市制高点，维京船博物馆则紧邻峡湾水岸，两者构成城市历史轴线的起止点。",
     gettingAround:
@@ -6719,6 +6956,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   esbjerg: {
     identity:
       "埃斯比约是丹麦西海岸最大的港口城市，人口约7.2万，19世纪末因港口建设兴起，是丹麦北海石油产业与瓦登海生态旅游的重要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Esbjerg (Denmark; urban population 71,371 January 2026, fifth-largest and the largest in West Jutland; founded 1868 as a replacement harbour after the Second Schleswig War; 13,000 by 1901; fishing then agricultural export, now the main town for Danish oil and offshore, handling 65 per cent of Danish wind turbines; Man Meets the Sea; performing arts centre 1997; Fanø ferry; Ribe in the same municipality)
+    howItWorks:
+      "埃斯比约是丹麦日德兰半岛西岸的港口城市，2026 年 1 月城区人口约 7.1 万，是丹麦第五大城市、西日德兰最大的城市，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。这座城不是慢慢长出来的：1864 年第二次石勒苏益格战争后丹麦失去了阿尔托纳港，1868 年国家决定在这片只有农场的海岸上建一座新港，城市随港而生，1901 年已有一万三千人。它先是渔港，后来出口黄油与肉类，如今是丹麦石油与海上产业的基地，全国六成五的风机从这里的码头装船出海。“人与海”的四座白色巨像坐在海边望着水面，法诺岛的渡轮从港口开出，丹麦最古老的城市里伯在同一个市镇内。初来的人最容易犯的错，是以为埃斯比约有个老城，而它 1868 年才动工，最老的房子也不过一百五十年。",
     layout:
       "城市沿北海港口而建，19世纪末规划的方格状街道格局工整，是丹麦少有的“年轻城市”规划范例，港口区至今仍是城市经济核心。",
     gettingAround:
@@ -6733,6 +6973,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ribe: {
     identity:
       "里伯是丹麦现存最古老的城镇，建城可追溯至约公元704年，人口约8千，保留有丹麦最完整的中世纪街巷格局。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ribe (Denmark; town ~8,403 2026; the oldest town in Denmark, a trading centre from the early 8th century; part of Esbjerg Municipality since 2007; seat of the Diocese of Ribe, cathedral begun 1150 on an earlier church; marks of the Burchardi flood of 1634 on the cathedral wall; cathedral school from at least 1145; Viking Centre and Museum; Wadden Sea)
+    howItWorks:
+      "里伯是丹麦南日德兰的一座小镇，2026 年人口约 8,400，2007 年市镇合并后属于埃斯比约市镇，不再单独设市；市镇管学校与养老，大区管医院，国家管警察。它是丹麦最古老的城镇：8 世纪初这里已是一处活跃的市集，维京时代的商船在河口装卸货物，9 世纪就有基督徒的踪迹。1150 年动工的里伯主教座堂建在更早的教堂之上，至今是里伯教区的主教座堂，教堂墙上刻着 1634 年布尔哈迪大洪水的水位线——那次风暴潮淹没了整片瓦登海沿岸；教堂学校的记载至少可追到 1145 年。老城的矮房与鹅卵石街道保留完整，屋顶上有鹳巢，瓦登海国家公园在西面，维京中心在城外。埃斯比约在北面约 30 公里。初来的人最容易犯的错，是把里伯当作一个复原的旅游村，而它是一座活了一千三百年的镇，只是从未长大。",
     layout:
       "老城沿里伯河而建，大教堂位于城市制高点，中世纪石砌与木骨架建筑街巷至今保存完好，几乎未经现代化改造。",
     gettingAround:
@@ -6764,6 +7007,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   silkeborg: {
     identity:
       "锡尔克堡是丹麦湖区的核心城镇，人口约4.6万，坐落于古德诺河沿岸的湖泊群中，是探索日德兰中部丘陵与内河游船的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Silkeborg (Denmark; town ~53,000, municipality 102,753 in 2026, eleventh-largest urban area; on the Gudenå among the Søhøjlandet lakes and forests, "Denmark's outdoor capital"; grew from a paper mill of 1844, 30 people in 1844 to 556 in 1850; Museum Silkeborg with the Tollund Man; Museum Jorn; Hjejlen the world's oldest steamboat; Jyske Bank; Aarhus ~45 km)
+    howItWorks:
+      "锡尔克堡是丹麦中日德兰的市镇，镇上约 5.3 万人，2026 年全市镇约 10.3 万，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。这座城 1844 年才从一座造纸厂开始：那一年这里只有 30 人，1850 年已有 556 人，工厂招来的工人建起了街道。它在古登河与一串湖泊、森林之间，因此自称丹麦的“户外之都”，天山在湖边，1861 年下水的“麦鸡号”是世界上仍在运营的最老蒸汽船，夏天在湖上跑。锡尔克堡博物馆里躺着公元前 4 世纪的“图伦男子”，是欧洲保存最完好的沼泽木乃伊之一；约恩美术馆收藏眼镜蛇画派的阿斯格·约恩的作品，他生在这里。日德兰银行的总部在城里，奥胡斯在东面约 45 公里。初来的人最容易犯的错，是以为丹麦没有山水，而这一带的湖群与丘陵是全国最集中的一片。",
     layout:
       "小城沿古德诺河与其串联的湖泊分布，19世纪造纸工业厂房沿河而建，如今部分已改造为文化场馆，湖岸步道贯穿城区。",
     gettingAround:
@@ -6795,6 +7041,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   skagen: {
     identity:
       "斯卡恩是日德兰半岛最北端的小镇，人口约7.7千，19世纪末因独特的北欧光线吸引画家聚居，形成著名的“斯卡恩画派”，如今是丹麦知名的度假小镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Skagen (Denmark; town ~7,250 January 2026, down from a peak of 14,050 in 1980; in Frederikshavn Municipality; northernmost town in Denmark; Grenen where the North Sea and the Baltic meet; the Skagen Painters from the late 1870s; the Sand-Covered Church closed 1795, replaced 1841; the Port of Skagen is Denmark's main fishing port; Skagensbanen railway, most northerly station; ~2 million visitors)
+    howItWorks:
+      "斯卡恩是丹麦日德兰半岛最北端的镇，2026 年 1 月人口约 7,250，1980 年曾有 14,050 人；它属于腓特烈港市镇，不再单独设市，市镇管学校与养老，大区管医院，国家管警察。镇子在一条向东北伸出的沙嘴上，尽头的格伦是丹麦的最北点，斯卡格拉克海峡与卡特加特海峡的浪在那里对撞，站在沙尖上可以看见两片海的分界线。19 世纪 70 年代末起，一群北欧画家每年夏天来这里画渔民与光线，形成了“斯卡恩画派”，他们的作品与故居是今天的博物馆；14 世纪的教堂被流沙埋掉，1795 年关闭，只剩塔尖露在沙上，1841 年另建了新教堂。斯卡恩港按渔获价值是丹麦最大的渔港，斯卡恩铁路的终点是丹麦最北的车站，每年约两百万游客。初来的人最容易犯的错，是以为镇子就在海角上，而格伦在镇外几公里，最后一段要走沙路。",
     layout:
       "小镇以黄色灰泥墙、红瓦顶的传统渔村建筑为特色，格伦角沙嘴向北延伸至镇外，是小镇最重要的自然地标。",
     gettingAround:
@@ -6809,6 +7058,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   roenne: {
     identity:
       "龙讷是博恩霍尔姆岛的主要城镇，人口约1.3万，是岛上最大的港口与行政中心，也是探索全岛花岗岩地貌与历史城堡的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rønne (Denmark; urban area ~13,589 2026, municipality 38,677; largest town on Bornholm and its administrative centre; Bornholm Regional Municipality within the Capital Region; founded around 1327; herring port; bombed by Soviet aircraft 7–8 May 1945, 212 houses destroyed; ferries to Køge, Ystad, Sassnitz, Świnoujście; Bornholm Airport; ceramics)
+    howItWorks:
+      "伦讷是波罗的海上博恩霍尔姆岛最大的镇，2026 年城区人口约 1.36 万，全岛所在的博恩霍尔姆区域市镇约 3.9 万人——整座岛只有一个市镇，行政上归首都大区，市镇管学校、养老与地方事务，国家管警察。镇子约 1327 年建立，天然港与波罗的海的位置让它靠鲱鱼渔业起家，鹅卵石街与半木结构的房子是老城的样子。1945 年 5 月 7 至 8 日苏联飞机轰炸了这里，212 栋房子被毁，战后重建。今天渡轮从伦讷开往丹麦本土的克厄、瑞典的于斯塔德、德国的萨斯尼茨与波兰的希维诺乌伊希切，去哥本哈根最快的方式是经瑞典；博恩霍尔姆机场在镇南，陶艺是岛上的老手艺，圆形教堂与哈默斯胡斯城堡在岛的其他地方。初来的人最容易犯的错，是把伦讷当作博恩霍尔姆，而它只是岛西岸的门户，岛上的看点分散在四周。",
     layout:
       "老城沿港口而建，鹅卵石街道与烟熏黄的传统民居保存完好，是丹麦保存最完整的历史城镇之一，全岛其它景点均以龙讷为交通枢纽向外辐射。",
     gettingAround:
@@ -6823,6 +7075,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   billund: {
     identity:
       "比隆是丹麦中日德兰大区南部的小镇，人口约6.6千，是世界第一座乐高乐园的所在地，乐高集团的全球总部亦设于此。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Billund (town in Billund Municipality, Denmark; 7,446 in January 2026; 13 km east of Grindsted, 27 km west of Vejle; The Lego Group founded here in 1932 and still headquartered here, from about 200 workers in 1960 to 20,000 in 2022 with over a quarter in Billund; Legoland opened 7 June 1968, about 2 million visitors a year; Lego House, Lalandia; Billund Airport built by Lego as a private airfield in 1962, opened publicly 1964, Denmark's second-busiest with 3.7 million passengers in 2022)
+    howItWorks:
+      "比隆是丹麦日德兰半岛中部的小镇，2026 年 1 月人口约 7,450，属于比隆市镇，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。这是一座由一家公司长出来的镇：1932 年乐高在此创办，总部至今设在这里，公司从 1960 年的约两百名工人增长到 2022 年的两万人，其中四分之一以上在比隆上班，镇的兴衰与公司几乎同步。1968 年 6 月 7 日乐高乐园开园，开业当天来了三千人，第一年六十二万人，如今每年约两百万；乐高之家、拉兰迪亚水上乐园与几家酒店都围着这条产业。机场也是公司修的：1962 年乐高把它作为私人机场建起来，1964 年对公众开放，如今是丹麦第二繁忙的机场，2022 年运送三百七十万人次。韦勒在东面 27 公里。初来的人最容易犯的错，是把比隆当作一座普通的丹麦小镇，而它的机场、乐园与就业几乎都来自同一家企业。",
     layout:
       "小镇规模不大，乐高乐园与乐高之家博物馆构成镇中心的主要地标，比隆机场是丹麦第二繁忙的机场，为小镇带来远超其人口规模的国际客流。",
     gettingAround:
@@ -6870,6 +7125,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   uppsala: {
     identity:
       "乌普萨拉是瑞典历史最悠久的大学城，人口约17万，坐落于斯德哥尔摩以北约70公里，乌普萨拉大学创立于1477年，是北欧最古老的大学。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Uppsala (Sweden; fourth-largest urban area, 177,074 in 2019; 71 km north of Stockholm; seat of the Archbishop of Sweden since 1164, cathedral inaugurated 1435, the largest in Scandinavia at about 119 m; Uppsala University 1477, the oldest centre of higher education in Scandinavia, Celsius and Linnaeus; Fyris river divides old west from modern east; Central Station ~45,000 passengers a day; Gamla Uppsala mounds 5 km north; Arlanda ~30 km)
+    howItWorks:
+      "乌普萨拉是瑞典第四大城区，2019 年人口约 17.7 万，在斯德哥尔摩以北 71 公里，由民选的市议会治理；瑞典的市镇管学校、养老与规划，大区管医院与公共交通，国家管警察与大学。这座城有两个身份：1164 年起它是瑞典大主教的驻地，1435 年落成的大教堂高约 119 米，是斯堪的纳维亚最大的教堂，至今是瑞典教会的中心；1477 年创办的乌普萨拉大学是北欧最古老的高等学府，摄氏温标的创立者摄尔修斯与分类学的林奈都在这里任教，学生的社团与四月三十日的春节庆典是城市的节奏。菲吕斯河把城市分成两半：西岸是大教堂与城堡的老城，东岸是车站与现代街区；旧乌普萨拉的王家土丘在城北 5 公里，是基督教之前的祭祀中心。中央车站每天约 4.5 万旅客，阿兰达机场在南面约 30 公里。初来的人最容易犯的错，是把乌普萨拉当作斯德哥尔摩的卧城，而它是瑞典教会与最老大学的所在地。",
     layout:
       "老城以乌普萨拉大教堂（斯堪的纳维亚最高的教堂建筑）为中心，大学主楼与植物园环绕周边，弗于里斯河穿城而过。",
     gettingAround:
@@ -6918,6 +7176,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   visby: {
     identity:
       "维斯比是哥得兰岛的主要城镇，人口约2.5万，完整保留中世纪城墙与建筑格局，12世纪起是汉萨同盟重要的贸易城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Visby (Sweden; ~24,330; the most populous Swedish locality outside the mainland, reached only by ferry or air; on Gotland; former Hanseatic centre, flourishing in the 14th century; Valdemar IV of Denmark took Gotland in 1361; UNESCO 1995, one of the best-preserved medieval cities in Scandinavia; 3.4 km town wall from about 1300; Almedalen Week; Medieval Week; ferries from Nynäshamn and Oskarshamn; airport)
+    howItWorks:
+      "维斯比是哥特兰岛上的城镇，人口约 2.4 万，是瑞典本土之外人口最多的聚落，只能坐船或飞机到达；整座哥特兰岛是一个市镇，同时行使大区的职权，称为“哥特兰区域”，管学校、养老与医院，国家管警察。中世纪它是汉萨同盟在波罗的海的重要商埠，14 世纪最盛，1361 年丹麦国王瓦尔德马四世攻占哥特兰，城下战死一千八百人；此后城市长期衰落，反而把中世纪的城区原样留住，1995 年列入世界遗产，是斯堪的纳维亚保存最完好的中世纪城市之一。约 1300 年建成的城墙长 3.4 公里，至今围着老城，城内散着十几座教堂废墟。每年七月的“阿尔梅达尔周”把瑞典的政党、媒体与游说者都请到这里开会，中世纪周则让全城穿上戏服；渡轮从尼奈斯港与奥斯卡港开来，机场在城北。初来的人最容易犯的错，是把维斯比当作哥特兰，而岛长约 170 公里，村庄与海滩散在四周。",
     layout:
       "老城被长约3.4公里的中世纪城墙环绕，鹅卵石街巷、玫瑰花墙与教堂遗址密布其间，是波罗的海地区保存最完好的中世纪商贸城市之一。",
     gettingAround:
@@ -6932,6 +7193,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   karlskrona: {
     identity:
       "卡尔斯克鲁纳是瑞典东南部布莱金厄省的核心城市，人口约6.6万，自1680年建城起即为瑞典皇家海军基地，1998年其海军城规划列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Karlskrona (Sweden; 66,675 in 2018; capital of Blekinge County; founded 10 August 1680 by Charles XI as an ice-free naval base south of Stockholm, built across an archipelago; Sweden's only baroque city with its original grid; Naval Port of Karlskrona UNESCO 1998; still the main Swedish naval base and Coast Guard headquarters; Blekinge Institute of Technology ~8,000 students; Stena Line ferry to Gdynia, nearly 500,000 passengers)
+    howItWorks:
+      "卡尔斯克鲁纳是瑞典布莱金厄省的省会，2018 年人口约 6.7 万，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察与海军。这座城不是长出来的，是造出来的：1658 年瑞典取得布莱金厄后，需要一个比斯德哥尔摩更靠南、冬天不结冰的海军基地，1680 年 8 月 10 日国王卡尔十一世下令在这片群岛上建城，街道按巴洛克的格网一次规划到位，是瑞典唯一一座巴洛克城市，中心的弗雷德里克教堂与广场都是那时的作品。1998 年“卡尔斯克鲁纳军港”列入世界遗产，瑞典海军的主基地与海岸警卫队总部至今在这里，1989 年创办的布莱金厄理工学院约八千名学生。斯泰纳航运的渡轮通往波兰的格丁尼亚，每年近五十万人次。初来的人最容易犯的错，是把卡尔斯克鲁纳当作一座老渔镇，而它是一座 17 世纪按图纸建起的海军城，至今仍是军港。",
     layout:
       "城市建于特罗索岛及周边多座小岛上，17世纪规划的巴洛克式城市格局保存完好，海军船坞与堡垒建筑群沿海岸线分布。",
     gettingAround:
@@ -6946,6 +7210,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalmar: {
     identity:
       "卡尔马是瑞典东南部小科鲁德省的核心城市，人口约4万，卡尔马城堡是瑞典保存最完好的文艺复兴城堡之一，也是探索厄兰岛的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalmar (Sweden; ~42,600; capital of Kalmar County; Kalmar Castle, where the Kalmar Union of Sweden, Norway and Denmark was signed on 13 July 1397, lasting until 1523; castle rebuilt in the Renaissance; Öland bridge 6 km, the longest in Sweden, opened 1972; Linnaeus University campus; cathedral 1703; airport 5 km; harbour)
+    howItWorks:
+      "卡尔马是瑞典卡尔马省的省会，人口约 4.3 万，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。城市在波罗的海西岸，正对厄兰岛。1397 年 7 月 13 日，丹麦、挪威与瑞典的代表在卡尔马城堡里签订了卡尔马联盟条约，三国共戴一君，直到 1523 年瑞典退出；城堡后来在文艺复兴时期改建成今天的样子，仍立在城南的水边。老城在城堡北面，1703 年落成的巴洛克大教堂在广场上。1972 年通车的厄兰大桥长 6 公里，是瑞典最长的桥，把它与厄兰岛连起来，夏天全国的人从这座桥上过去度假；林奈大学在城里有校区，机场在城西 5 公里。初来的人最容易犯的错，是把卡尔马当作去厄兰岛的路过点，而它是一座有城堡、大教堂与六百年历史的省会。",
     layout:
       "老城以卡尔马城堡为核心沿海岸展开，17世纪规划的巴洛克式新城街区保存完好，一座跨海大桥连接卡尔马与厄兰岛。",
     gettingAround:
@@ -6960,6 +7227,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kiruna: {
     identity:
       "基律纳是瑞典最北端的城市，人口约1.8万，地处北极圈以北约145公里，是世界最大的地下铁矿所在地，也是探索凯布讷山与萨雷克国家公园的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kiruna (Sweden; the northernmost city in Sweden, in Lapland, 145 km north of the Arctic Circle, Norrbotten County; built in the 1890s to serve the Kiruna mine; the Kiirunavaara iron ore mine, whose underground extraction causes subsidence; since 2004 the town centre is being moved 3 km east, and Kiruna Church was relocated in August 2025; Icehotel at Jukkasjärvi; Esrange space centre 1966; midnight sun 28 May–16 July; winters below −30 °C)
+    howItWorks:
+      "基律纳是瑞典最北的城市，在拉普兰、北极圈以北 145 公里，属北博滕省，由民选的市议会治理，市镇是瑞典面积最大的；市镇管学校与规划，大区管医院，国家管警察。这座城 1890 年代为了基律纳铁矿而建，基鲁纳瓦拉是世界上最大的地下铁矿，矿脉斜插在城下——正因为如此，采矿造成的地面沉降正在吞掉老城：2004 年起市中心整体东移 3 公里，新中心 2022 年启用，2025 年 8 月连教堂都被整栋抬起来运到了新址。这是一座为一座矿而生、又为同一座矿而搬家的城市。1966 年设立的埃斯兰奇航天中心在东面，尤卡斯耶尔维的冰旅馆每年冬天重建，阿比斯库与凯布讷山在西面，萨米人的驯鹿放牧在四周的山地上；5 月 28 日到 7 月 16 日太阳不落，冬天常在零下 30 度以下。初来的人最容易犯的错，是按地图找基律纳的市中心，而它正在往东挪。",
     layout:
       "城市因地下采矿导致地表沉降，2014年起启动了整体城市搬迁计划，部分历史建筑（如基律纳教堂）被整体平移至新址，是世界罕见的“搬城”工程案例。",
     gettingAround:
@@ -6974,6 +7244,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lulea: {
     identity:
       "吕勒奥是瑞典北部诺尔博滕省的核心城市，人口约4.9万，坐落于波的尼亚湾沿岸，是探索瑞典北部群岛与拉普兰的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Luleå (Sweden; ~49,646 in the urban core; capital of Norrbotten County; chartered 1621 by Gustavus Adolphus, moved in 1649 because post-glacial rebound made the harbour too shallow; 1887 fire; Gammelstad Church Town UNESCO 1996; the world's largest brackish-water archipelago with 1,312 islands; Luleå University of Technology; SSAB steelworks; Facebook's first European data centre from 2012; fifth-largest airport; seventh-busiest cargo port; northern lights September–March)
+    howItWorks:
+      "吕勒奥是瑞典北博滕省的省会，城区人口约 5 万，在波的尼亚湾北端，由民选的市议体治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。1621 年古斯塔夫二世·阿道夫给它城市特许状，1649 年它整体搬了一次家——冰后回弹让陆地不断抬升，原来的港口太浅了，城只好往海边挪；旧址留下的“加梅尔斯塔德教堂村”有四百多栋教友过夜用的小木屋，1996 年列入世界遗产。1887 年的大火烧掉了大半个城，1893 年落成的新哥特式大教堂是幸存下来的最高建筑。今天 SSAB 的钢厂与吕勒奥理工大学是最大的雇主，2012 年脸书把它在欧洲的第一座数据中心建在这里，看中的是冷空气与水电；外海是世界最大的半咸水群岛，有 1,312 座岛，冬天在冰上开车通行。初来的人最容易犯的错，是把加梅尔斯塔德当作一座村，而它是这座城原来的位置。",
     layout:
       "市中心格默尔斯塔德教堂村是保存完好的木结构教堂村落，1996年列入世界遗产；现代城区沿波的尼亚湾海岸展开，冬季海湾结冰后形成独特的冰上通行景观。",
     gettingAround:
@@ -6988,6 +7261,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   harnosand: {
     identity:
       "海讷桑德是瑞典中北部一座临海小城，人口约1.8万，是探索高海岸世界遗产的传统门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Härnösand (Sweden; municipality seat, 25,012 in 2023; capital of Västernorrland County; on the island of Härnön; seat of the Diocese of Härnösand, the county governor's residence and the county museum; the first Swedish town with electric street lighting, 10 December 1885, from the Gådeå power station; "the gate to the High Coast", the Höga Kusten UNESCO landscape just north)
+    howItWorks:
+      "海讷桑德是瑞典西诺尔兰省的省会，2023 年人口约 2.5 万，建在海讷岛上，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。它虽小，却是一个省的行政与教会中心：海讷桑德教区的主教座堂、省长官邸与省博物馆都在这里，大教堂是瑞典最小的主教座堂。1885 年 12 月 10 日，它成为瑞典第一座用电力照明街道的城市，电来自城外的约德奥水电站。城市自称“高海岸之门”：北面几十公里的高海岸是世界遗产，那里的陆地在冰后回弹中抬升了近 300 米，是全世界记录到的最高幅度，海岸线因此年年在变。松兹瓦尔在南面约 50 公里，斯德哥尔摩在南面约 400 公里。初来的人最容易犯的错，是把海讷桑德当作一个小镇，而它是一个省的首府，只是这个省的人口本来就少。",
     layout:
       "老城沿海讷河口而建，19世纪木结构建筑街区保存完好，是高海岸沿线重要的历史港口城镇。",
     gettingAround:
@@ -7002,6 +7278,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   are: {
     identity:
       "奥勒是瑞典中西部耶姆特兰省的度假小镇，人口约1.4万，是北欧最大的高山滑雪度假地，坐落于奥勒湖畔的奥勒斯基山脚下。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Åre (Sweden; village ~3,200 in Åre Municipality, Jämtland; at about 400 m by Åresjön below Åreskutan; the largest alpine ski resort in northern Europe with more than 30 lifts; tourism about 25 per cent of the local economy; visitors came after the railway of 1882 as "air-guests"; Alpine World Championships 1954, 1977 and 2007 and 2019, over 100 World Cup races; the largest mountain-bike resort in Sweden since the 1990s; on the line from Östersund to Trondheim)
+    howItWorks:
+      "奥勒是瑞典耶姆特兰省的一个村，常住人口约 3,200，属于奥勒市镇，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。村子在奥勒湖边、奥勒山脚下，海拔约 400 米。1882 年铁路通到这里之后，斯德哥尔摩的人开始来“吸空气看山”，当年称他们“空气客”，旅游从那时起成了本地的生意，如今约占经济的四分之一。它是北欧最大的高山滑雪场，有三十多部缆车，是瑞典唯一能办奥运级速降的场地，1954、2007 与 2019 年三次举办高山滑雪世锦赛，世界杯赛在这里跑过一百多场；1990 年代起夏天又成了瑞典最大的山地车场。铁路从厄斯特松德通往挪威的特隆赫姆，从村口经过。初来的人最容易犯的错，是按常住人口预期这里的规模，而旺季的奥勒住着几万人。",
     layout:
       "小镇沿奥勒湖北岸而建，缆车站直通山顶滑雪区，夏季小镇转型为徒步、骑行与钓鱼的户外休闲目的地。",
     gettingAround:
@@ -7066,6 +7345,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mariehamn: {
     identity:
       "玛丽港是奥兰群岛的首府，人口约1.2万，是芬兰唯一的瑞典语单一官方语言自治区的行政与文化中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mariehamn (capital of Åland, an autonomous Swedish-speaking region of Finland and the seat of its government and parliament; ~11,957 in late 2025, about 40 per cent of Åland's population; founded 21 February 1861 and named after Empress Maria Alexandrovna; Western Harbour with daily ferries to Sweden, Estonia and mainland Finland, Eastern Harbour a large marina; the four-masted Pommern as a museum ship; Mariehamn Airport; about 1.5 million visitors a year)
+    howItWorks:
+      "玛丽港是奥兰的首府，人口约 1.2 万，约占奥兰总人口的四成。奥兰是芬兰的一个自治区，讲瑞典语，有自己的议会与政府，也有自己的居民权制度；政府与议会都设在这座城里，因此它虽小，却是一整个自治区的行政中心，学校、医疗与地方立法都在这里决定。城市 1861 年 2 月 21 日建立，名字取自当时的俄国皇后玛丽亚·亚历山德罗夫娜，“玛丽的港”是它的字面意思。它有两个港：西港是国际港，每天有渡轮开往瑞典、爱沙尼亚与芬兰本土，四桅帆船“波美恩号”作为博物馆船停在这里；东港是北欧最大的游艇码头之一。机场在城外，每年约一百五十万人次到访。初来的人最容易犯的错，是把玛丽港当作芬兰本土的一座小城，而它是一个讲瑞典语的自治区的首府，规则与本土并不相同。",
     layout:
       "小城分为西港与东港两片港区，西港以现代游艇码头为主，东港保留传统渔港风貌，市中心街道以瑞典风格建筑为主。",
     gettingAround:
@@ -7097,6 +7379,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jyvaskyla: {
     identity:
       "于韦斯屈莱是芬兰中部的大学城，人口约14万，坐落于派耶内湖北端，是探索芬兰湖区北部的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jyväskylä (Finland; regional capital of Central Finland, about 150,000 residents, the seventh-largest municipality; about 270 km north of Helsinki on the northern shore of Lake Päijänne; the world's first junior secondary school taught in Finnish, 1858, Finland's first teacher-training college 1863 and girls' school 1864, hence "Athens of Finland"; over 30 per cent of the population students, about 45,000 enrolled; University of Jyväskylä 1966; more Alvar Aalto buildings than any other city in the world; Rally Finland, over 500,000 spectators)
+    howItWorks:
+      "于韦斯屈莱是芬兰中芬兰区的首府，人口约 15 万，是全国第七大市镇，在赫尔辛基以北约 270 公里、派延奈湖的北岸；芬兰的市镇管学校、规划与地方服务，2023 年起医疗与社会服务归新设的福祉服务县，国家管警察与大学。它被称作“芬兰的雅典”，是因为教育的起点都在这里：1858 年世界上第一所用芬兰语授课的初级中学在此开办，1863 年芬兰第一所师范学院、1864 年第一所女子学校也在这里，直到今天全城三成以上的人口是学生，各级在读者约四万五千人。它同时是阿尔瓦·阿尔托建筑最集中的城市，全世界没有第二座城有这么多——阿尔托在这里长大，把湖畔的坡地比作意大利的葡萄园。八月的芬兰拉力赛是北欧规模最大的年度赛事，观众超过五十万。初来的人最容易犯的错，是按人口把它当作一座省城，而它的节奏由大学与学期决定。",
     layout:
       "城市沿派耶内湖北岸展开，芬兰知名建筑师阿尔瓦·阿尔托的多座建筑作品分布城中，大学校区与湖岸风光相互交融。",
     gettingAround:
@@ -7111,6 +7396,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   savonlinna: {
     identity:
       "萨翁林纳是芬兰湖区东部的小城，人口约3.3万，坐落于塞马湖水系之中，奥拉维林纳城堡是芬兰最具代表性的湖畔城堡。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Savonlinna (Finland; municipality in South Savo, about 31,000 residents, down from 41,359 in 1990; in the heart of the Saimaa lakeland, the "capital of Saimaa"; Olavinlinna castle founded 1475 by Erik Axelsson Tott on an island; Savonlinna Opera Festival held in the castle since 1912; Kerimäki Church the largest wooden church in the world; Lusto forest museum at Punkaharju; 335 km from Helsinki, about four hours by train; regional airport)
+    howItWorks:
+      "萨翁林纳是芬兰南萨沃区的市镇，人口约 3.1 万，1990 年时曾有 41,359 人，此后持续减少；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。它在塞马湖区的中心，因此自称“塞马之都”——城市散在湖与湖之间的水道上，桥比街多。1475 年埃里克·阿克塞尔松·托特在一座小岛上建起奥拉维城堡，是北欧保存最完好的中世纪石堡之一；1912 年起城堡的内院被用作歌剧舞台，七月的萨翁林纳歌剧节把这座三万人的城塞满，是芬兰最著名的音乐节之一。附近的凯里迈基教堂是世界上最大的木造教堂，蓬卡哈尤的冰碛脊上有森林博物馆，塞马环斑海豹只生活在这片湖里。赫尔辛基在西南 335 公里，火车约四小时。初来的人最容易犯的错，是把歌剧节当作全年的样子，而节期之外这是一座安静、正在变小的湖城。",
     layout:
       "老城建在塞马湖水系中的几座小岛与半岛之上，奥拉维林纳城堡矗立在水道要冲，是控制湖区航运的历史要塞。",
     gettingAround:
@@ -7125,6 +7413,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kuopio: {
     identity:
       "库奥皮奥是芬兰中东部湖区的核心城市，人口约12万，坐落于卡拉韦西湖畔，普宜奥山观景塔是俯瞰湖区群岛的经典地点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuopio (Finland; regional capital of North Savo, about 126,572 residents, the eighth-most populous municipality, the region about 148,000; nearly surrounded by Lake Kallavesi, Finland's tenth-largest lake at 472.76 km²; Puijo tower and ski jumps with annual World Cup ski jumping; kalakukko, the Savonian fish pastry; the market square and market hall; until 2018 the seat of the primate of the Finnish Orthodox Church; University of Eastern Finland; Kuopio Airport in Siilinjärvi, the fifth busiest in Finland)
+    howItWorks:
+      "库奥皮奥是芬兰北萨沃区的首府，人口约 12.7 万，是全国第八大市镇，周边地区约 14.8 万；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市几乎被卡拉韦西湖围住——这是芬兰第十大湖，面积约 473 平方公里，因此从任何一条主街往下走几百米都是水。普伊约山的塔与跳台立在城北的高地上，每年办跳台滑雪世界杯的分站；集市广场与市场大厅是本地生活的中心，那里卖的“鱼库库”是把鱼裹进黑麦面团烤成的萨沃老食品，这座城因此得了“鱼库库应许之地”的绰号。芬兰东方大学的校区在这里，医药与公共卫生研究是它的强项；直到 2018 年芬兰东正教会的首牧驻此，教会博物馆仍在城中。机场在邻镇锡林耶尔维，是芬兰第五繁忙的。初来的人最容易犯的错，是以为芬兰的东正教会只是少数人的事，而它是这个国家的两个国教会之一。",
     layout:
       "市中心紧凑，沿卡拉韦西湖西岸展开，普宜奥山位于市区北侧，是城市重要的地标制高点。",
     gettingAround:
@@ -7156,6 +7447,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rovaniemi: {
     identity:
       "罗瓦涅米是芬兰拉普兰省的首府，人口约6.3万，坐落于北极圈线上，是圣诞老人村所在地与探索拉普兰荒原的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rovaniemi (Finland; regional capital of Lapland, about 66,191 residents, the 17th largest city, one of the largest municipalities in Europe by area; about 6 km south of the Arctic Circle at the confluence of the Kemijoki and Ounasjoki; about 90 per cent of buildings destroyed by German forces in 1944, rebuilt to Alvar Aalto's plan in the shape of a reindeer's head with the roads as antlers; Santa Claus Village at the Arctic Circle, the slogan trademarked in 2009; midnight sun 7 June–6 July, December under six minutes of sunshine a day; auroras up to 200 nights a year; University of Lapland)
+    howItWorks:
+      "罗瓦涅米是芬兰拉普兰区的首府，人口约 6.6 万，是芬兰第 17 大城市，市镇面积在欧洲各地方行政体中名列前茅；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市在凯米河与奥纳斯河的交汇处，北极圈以南约 6 公里。1944 年拉普兰战争中约九成的建筑被摧毁，战后按阿尔瓦·阿尔托的规划重建——他把城市的路网画成一只驯鹿的头，主干道是鹿角，这一形状在地图上仍能看出来，因此这里几乎没有老城。北极圈线上的圣诞老人村在城北 8 公里，1985 年起对外接待，城市 2009 年把“圣诞老人的家乡”注册为商标，冬季旅游是本地最大的产业之一。6 月 7 日到 7 月 6 日太阳不落，12 月每天的日照不足六分钟，极光一年可见近两百次；拉普兰大学在城里。初来的人最容易犯的错，是来找一座北极老城，而这座城是 1945 年之后按图纸重建的。",
     layout:
       "市区位于凯米约基河与其支流交汇处，二战后按建筑师阿尔瓦·阿尔托的规划重建（城市呈驯鹿头形布局），北极圈线穿过市郊的圣诞老人村。",
     gettingAround:
@@ -7170,6 +7464,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kuusamo: {
     identity:
       "库萨莫是芬兰东北部的小城，人口约1.5万，是探索奥兰卡国家公园与“熊之路”徒步路线的传统门户，也是芬兰知名的鲁卡滑雪度假地所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuusamo (Finland; town and municipality in North Ostrobothnia near the eastern border; population 14,800 over 5,809 km², the eleventh largest municipality by area; about 60 km south of the Arctic Circle; Ruka ski resort on the 492 m Rukatunturi; about a million tourists a year, tourism 149 million euros in 2024, 18 per cent of output; Oulanka National Park and the 80 km Karhunkierros trail; snow cover about 200 days a year, late October to mid-May; 166 lakes, forests 90 per cent of the land; Kuusamo Airport 6 km from town, 129,373 passengers in 2024)
+    howItWorks:
+      "库萨莫是芬兰北博滕区的市镇，人口约 1.48 万，市域约 5,809 平方公里，是全国面积第 11 大的市镇，在北极圈以南约 60 公里；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。人少地大是这里的常态：森林占了九成的土地，境内有 166 个湖，河流分别流向白海与波的尼亚湾。经济几乎押在旅游上——2024 年旅游收入 1.49 亿欧元，占本地产出的约 18%，每年约一百万人次到访，主要去的是城北 25 公里、鲁卡山上的鲁卡滑雪场；奥兰卡国家公园与全长 80 公里的“熊之径”徒步道在东面靠边境处。这里一年约有两百天积雪，从十月底到五月中；空气质量按国际监测常年居前列。机场在镇外 6 公里，2024 年运送约 12.9 万人次，赫尔辛基有直飞。初来的人最容易犯的错，是把鲁卡当作库萨莫的市中心，而它是山上的度假区，镇子在山下另一个地方。",
     layout:
       "小城本身规模不大，鲁卡滑雪度假区位于城北约25公里处，奥兰卡国家公园则在更北的芬兰—俄罗斯边境附近。",
     gettingAround:
@@ -7184,6 +7481,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   inari: {
     identity:
       "伊纳里是芬兰北极圈内拉普兰地区的村落，人口约550人，坐落于伊纳里湖畔，是芬兰萨米原住民文化的核心聚居区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Inari (Finland; the largest municipality in Finland by area at 17,333.65 km² and among the most sparsely populated, 7,244 residents in December 2025, density 0.48 per km²; four official languages — Finnish (86.4 per cent), Northern Sámi, Inari Sámi and Skolt Sámi; widely called the capital of Sámi culture; the Sámi Parliament of Finland and the Siida museum at Inari village; registered Sámi about 31 per cent of residents; Lake Inari 1,043 km², Finland's third-largest; Ivalo Airport and European route E75; tourism, services and cold-climate testing)
+    howItWorks:
+      "伊纳里是芬兰面积最大的市镇，约 17,334 平方公里，2025 年底人口 7,244，每平方公里不到半个人，是全国人口最稀的地方之一；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。它最特别的地方是语言：这里有四种官方语言——芬兰语，以及北萨米语、伊纳里萨米语与斯科尔特萨米语三种萨米语言，其中伊纳里萨米语只在这一个市镇使用，路牌与公文都要并列。芬兰的萨米议会设在伊纳里村的萨约斯文化中心，旁边是介绍萨米文化与北方自然的西达博物馆，因此这里常被称作芬兰萨米文化的中心，登记的萨米人约占居民的三成。伊纳里湖面积 1,043 平方公里，是芬兰第三大湖；最大的村落与机场都在伊瓦洛，E75 公路穿境通往挪威。初来的人最容易犯的错，是把萨米文化当作展演项目，而它是这里日常使用的语言与生计。",
     layout:
       "村落规模很小，沿伊纳里湖南岸而建，萨米议会与萨米博物馆西伊达设于此，是芬兰境内萨米文化的行政与展示中心。",
     gettingAround:
@@ -7248,6 +7548,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   echternach: {
     identity:
       "埃希特纳赫是卢森堡现存最古老的城镇，建城可追溯至公元698年圣威利布罗德创立的本笃会修道院，人口约6千，是探索米勒达尔“小瑞士”的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Echternach (Luxembourg; commune with city status in the east near the German border on the Sûre; 5,936 residents in 2025 over 20.49 km²; the oldest town in Luxembourg, grown around the abbey founded in 698 by St Willibrord, an English monk from Ripon, who was abbot until his death in 739 and became the first bishop of Utrecht; the dancing procession on Whit Tuesday, UNESCO intangible heritage 2010; Basilica of St Willibrord with his tomb in the crypt; gateway to the Mullerthal hiking region)
+    howItWorks:
+      "埃希特纳赫是卢森堡东部的一个市镇，享有城市地位，2025 年人口约 5,900，市域约 20.5 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省，因此小镇直接对着国家部门办事。它是卢森堡最古老的城镇：698 年，来自英格兰里彭的修士维利布罗德在这里创立本笃会修道院，此后他任院长直到 739 年去世，并成为乌得勒支的第一位主教，镇子就是围着这座修道院长起来的。每年圣灵降临节后的星期二举行“跳舞游行”，队伍以特定的步伐边跳边前进到圣维利布罗德大教堂，那里的地下室安放着他的墓，这项习俗 2010 年列入非物质文化遗产名录。苏尔河是这里与德国的界河，对岸有桥相通；镇西是“小瑞士”米勒塔尔的砂岩谷地徒步区。初来的人最容易犯的错，是把这座五千多人的镇当村子，而它是卢森堡第一座城。",
     layout:
       "老城沿苏尔河而建，本笃会修道院与老城市集广场构成历史核心，紧邻德国边境，米勒达尔砂岩地貌区在城镇西南侧展开。",
     gettingAround:
@@ -7262,6 +7565,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   remich: {
     identity:
       "雷米希是摩泽尔河谷卢森堡段的核心小镇，人口约3.5千，是卢森堡唯一葡萄酒产区的中心，被称为“摩泽尔明珠”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Remich (Luxembourg; commune with city status on the left bank of the Moselle, which forms the border with Germany; the smallest commune in Luxembourg by area at 5.29 km², 4,149 residents in 2025, 46th largest commune; from the Roman Remacum; the St Nicolas gate of 952 a protected monument; one of the most prominent wine towns of the Moselle valley; the three-day Fuesend Karneval with the Stréimännchen burned from the Moselle bridge)
+    howItWorks:
+      "雷米希是卢森堡东南部的市镇，享有城市地位，市域约 5.3 平方公里，是全国面积最小的市镇，2025 年人口约 4,150，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。它在摩泽尔河的左岸，河的对岸就是德国，因此这条河既是风景也是国界，沿岸的公路与河上的游船是本地的日常。地名来自罗马时期的 Remacum，罗马人撤走后演变成今天的写法；952 年的圣尼古拉门是受保护的古迹，是老城墙留下的一段。这一带是卢森堡摩泽尔葡萄酒区的核心，白葡萄酒与起泡酒“克雷芒”是当地的产业，酒庄沿河排开，河堤上的长廊夏天全是人。狂欢节持续三天，最后把稻草人从摩泽尔桥上点燃投下，是本地特有的做法。初来的人最容易犯的错，是把摩泽尔当作一条普通的河，而它是国界，过桥就是另一个国家。",
     layout:
       "小镇沿摩泽尔河而建，河对岸即为德国，滨河步道与葡萄酒庄园构成小镇景观核心。",
     gettingAround:
@@ -7276,6 +7582,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   diekirch: {
     identity:
       "迪基希是卢森堡北部苏尔河畔的历史小镇，人口约7千，以国家军事历史博物馆闻名，是探索苏尔河谷与埃斯灵高原的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Diekirch (Luxembourg; commune with city status on the Sûre in the north-east, 7,336 residents in 2025 over 12.42 km², 21st of 100 communes; the name from Diet-Kirch, people's church; St Laurence church a Roman building and remains of a large Roman villa; fortified in the 14th century by John the Blind; National Museum of Military History and the Battle of the Bulge, headquarters of the Luxembourg Army's operational command at the Haerebierg centre; the donkey as town mascot; International March of Diekirch since 1968; Paul Eyschen born here)
+    howItWorks:
+      "迪基希是卢森堡东北部的市镇，享有城市地位，2025 年人口约 7,340，市域约 12.4 平方公里，在全国 100 个市镇中排第 21，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。城市在苏尔河边、厄斯林丘陵的谷地里，地名出自“Diet-Kirch”，意为“民众的教堂”。罗马时期这里已有大型庄园，圣洛朗教堂的底层就是罗马建筑，14 世纪盲人约翰给它筑了城墙。1944 至 1945 年的阿登战役在这一带打了几个月，国家军事历史博物馆因此设在城中，卢森堡军队的作战指挥部也驻在附近的哈尔山营区。驴是这座城的吉祥物，街心的喷泉都做成驴的样子；1968 年起的迪基希国际徒步大会每年吸引各国走路的人。埃特尔布吕克在西面 5 公里，有铁路通往卢森堡市。初来的人最容易犯的错，是把这座七千人的城当作旅游小镇，而它是卢森堡北部的行政与驻军中心之一。",
     layout:
       "老城沿苏尔河而建，历史街区保留中世纪格局，国家军事历史博物馆是小镇最重要的地标。",
     gettingAround:
@@ -7290,6 +7599,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ettelbruck: {
     identity:
       "埃特尔布吕克是卢森堡北部阿尔泽特河与苏尔河交汇处的小镇，人口约9千，是埃斯灵高原地区重要的交通枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ettelbruck (Luxembourg; commune with city status at the confluence of the Sûre, Alzette and Wark, about 10,149 residents; a major transport hub second only to Luxembourg City, the railway junction where the Diekirch line branches from the Luxembourg–Liège main line, with the A7 reached via trunk road B7; occupied 10 May 1940, liberated 11 September 1944, retaken 16 December, liberated again by Patton's forces on Christmas Day 1944; General Patton Memorial Museum opened July 1995; the national anthem first performed publicly here in 1864)
+    howItWorks:
+      "埃特尔布吕克是卢森堡北部的市镇，享有城市地位，人口约 1.02 万，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。它的分量来自位置：苏尔河、阿尔泽特河与瓦尔克河在这里汇合，铁路上通往迪基希的支线从卢森堡—列日主干线在此分出，公路经 B7 接入 A7 高速，因此它是全国仅次于首都的交通枢纽，北部各镇的人换车都在这一站。1940 年 5 月 10 日德军占领此地，1944 年 9 月 11 日美军解放，同年 12 月 16 日阿登战役中再度失守，圣诞节当天巴顿的部队重新夺回并在阿尔泽特河谷挡住了德军攻势；1995 年开放的巴顿将军纪念馆与“巴顿广场”都是这段历史的标记。1864 年卢森堡国歌在这里首次公开演唱。初来的人最容易犯的错，是把它与相邻的迪基希混为一谈，两座城相距 5 公里，是两个各自独立的市镇。",
     layout:
       "小镇位于两河交汇的谷地平坦处，是连接卢森堡市与北部埃斯灵高原各城镇的铁路与公路枢纽。",
     gettingAround:
@@ -7304,6 +7616,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   vianden: {
     identity:
       "维安登是卢森堡北部奥尔河谷畔的小镇，人口约2千，维安登城堡是卢森堡现存规模最大的封建城堡，也是国内最具代表性的河谷城堡景观。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vianden (Luxembourg; commune in the north-east on the Our near the German border, 2,221 residents in 2025; Vianden Castle built between the 11th and 14th centuries, one of the largest fortified castles west of the Rhine, sold in 1820 and left to decay until Grand Duke Jean ceded it to the State in 1977, since restored as a museum; Victor Hugo stayed here several times between 1862 and 1871, his house now a museum; seasonal chairlift; the Vianden pumped-storage hydro plant; about 47 km from Luxembourg City, buses from Diekirch and Ettelbruck)
+    howItWorks:
+      "维安登是卢森堡东北部的市镇，2025 年人口约 2,220，在乌尔河的谷地里，河对岸就是德国；卢森堡只有市镇与国家两级，中间没有省，由民选的市长与市议会治理。维安登城堡建于 11 至 14 世纪，是莱茵河以西规模最大的封建城堡之一，1820 年被出售后长期荒废，直到 1977 年让大公把它移交给国家，此后逐步修复，如今作为博物馆开放，谷底的镇子就在它的脚下沿河铺开。雨果 1862 至 1871 年间数次在这里居住，写下过关于这一带的文字，他的故居也是博物馆。缆椅在旅游季运行，从河谷通到对面的山脊看城堡。山体里另有一处抽水蓄能电站，是欧洲较早的一批，与旅游业并行支撑着这个小镇。卢森堡市在南面约 47 公里，需从迪基希或埃特尔布吕克换乘公共汽车。初来的人最容易犯的错，是以为有火车直达，而这里只有公路进出。",
     layout:
       "小镇沿奥尔河谷底而建，城堡矗立在河谷东岸悬崖之上，一座缆车连接谷底小镇与城堡所在高地。",
     gettingAround:
@@ -7318,6 +7633,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   clervaux: {
     identity:
       "克莱尔沃是卢森堡北部克莱尔沃河谷畔的小镇，人口约1.6千，中世纪城堡雄踞谷地中央高地，是突出部战役的重要历史见证地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Clervaux (Luxembourg; commune in the north, town population 1,609 in 2025 and commune 6,289 over 85.05 km² after mergers; Clervaux Castle, its oldest parts from the 12th century built by Gerard, Count of Sponheim, damaged in the Battle of the Bulge in December 1944 and rebuilt; the castle houses Edward Steichen's The Family of Man exhibition and a Battle of the Bulge museum; French Benedictine monks founded Clervaux Abbey in 1910; railway station with trains to Luxembourg City and Liège)
+    howItWorks:
+      "克莱尔沃是卢森堡北部的市镇，2025 年镇上约 1,600 人，合并后的整个市镇约 6,290 人，市域约 85 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。镇子挤在克莱尔沃河的一道深谷里，城堡在谷中的岩台上，最早的部分是 12 世纪斯庞海姆伯爵格哈德所建，1944 年 12 月阿登战役中被打坏，战后重建。城堡里如今有两处展览：一是爱德华·斯泰肯 1955 年策划的摄影展《人类一家》的永久陈列，2003 年列入世界记忆名录；二是阿登战役博物馆。1910 年一批法国本笃会修士来此创建克莱尔沃修道院，教堂立在对面的山坡上，俯瞰全镇。铁路从卢森堡市通到这里并继续往比利时的列日，是北上出境的主线。初来的人最容易犯的错，是把这座镇当作一处景点，而它是山谷里少见的铁路小城，两侧的坡把它压成了长长的一条。",
     layout:
       "小镇沿克莱尔沃河谷两岸而建，城堡位于谷地中央的高地上，本笃会修道院坐落在附近的山丘上，俯瞰整个谷地。",
     gettingAround:
@@ -7332,6 +7650,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "esch-sur-sure": {
     identity:
       "埃施叙尔苏尔是上苏尔湖畔的小镇，人口约3百，古老城堡与老城依苏尔河河曲而建，是探索上苏尔自然公园与湖区的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Esch-sur-Sûre (Luxembourg; commune in the Wiltz canton in the north-west, 3,279 residents in 2025 over 51.26 km² after Neunhausen and Heiderscheid were merged in 2011; the town proper about 415 people, set on a spur within a sharp meander of the Sûre, entered through a tunnel; 10th-century castle ruins above; the Upper Sûre Lake, an artificial reservoir built in the 1960s and extending about 10 km up the valley, supplying drinking water; Upper Sûre Natural Park)
+    howItWorks:
+      "埃施叙尔苏尔是卢森堡西北维尔茨县的市镇，2011 年与诺伊豪森、海德沙伊德合并后人口约 3,280，市域约 51 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。镇子本身只有约 415 人，地形是它的全部说明：苏尔河在这里绕了一个近乎闭合的急弯，把一块岩脊几乎围成孤岛，房子挤在这块岩脊上，进镇要穿过一条开在山体里的隧道，10 世纪的城堡废墟压在最高处。1960 年代国家在上游筑坝，形成了长约十公里的上苏尔湖——这座水库是卢森堡全国最主要的饮用水源，因此湖区的活动受管理，围绕它设立了上苏尔自然公园。卢森堡市在东南约 45 公里。初来的人最容易犯的错，是把水库当作普通的游泳湖，而它是全国的水源地，哪些水面可以下水由规定说了算。",
     layout:
       "小镇建在苏尔河一处近乎闭合的河曲半岛上，城堡遗址俯瞰整个老城与河曲，上苏尔湖水库紧邻小镇西侧。",
     gettingAround:
@@ -7751,6 +8072,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ulsan: {
     identity:
       "蔚山是韩国重要的重工业城市，人口约110万，以造船、汽车与石化产业闻名，同时也是太和江生态与鲸鱼文化的所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ulsan Metropolitan City (4 gu + Ulju county; 1,057 km²; ~1.1 million; Hyundai Motor plant and Hyundai Heavy shipyard; SK refinery; Taehwa River; Bangudae petroglyphs; Yeongnam Alps; no subway, KTX from 2010; hydrogen town)
+    howItWorks:
+      "蔚山是韩国的“广域市”，与道同级，由民选市长治理，下分 5 个自治区与蔚州郡，各区有自己的区长和区议会；面积约 1,057 平方公里，人口约 110 万。它是韩国的工业首都：现代汽车的蔚山工厂是世界最大的整车厂，现代重工的船厂与 SK 的炼油厂也在这里，人均收入长期居全国前列，市区因此分成几片各挨着一座工厂的居住区。太和江穿城而过，江边的公园是市民的去处，盘龟台的史前岩刻在西面的山谷里，岭南阿尔卑斯的山地在市域西缘。没有地铁；2010 年通车的 KTX 蔚山站在西面的蔚州郡，离市中心约 20 公里，釜山在南面约 60 公里。初来的人最容易犯的错，是以为高铁站在市区，而它在郊外的郡里。",
     layout:
       "城市以太和江为轴线展开，太和江国家庭院沿江分布，工业区、住宅区与自然生态公园各处不同片区。",
     gettingAround:
@@ -7765,6 +8089,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yeosu: {
     identity:
       "丽水是韩国南部沿海港口城市，人口约28万，2012年举办世界博览会后成为热门的夜景与海景旅游目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Yeosu (city on the south coast; 268,823; formed 1998 by merging Yeosu city, Yeocheon city and Yeocheon county; from 2026-07-01 under Jeonnam-Gwangju Special Metropolitan City after South Jeolla merged with Gwangju; ~365 islands; Dolsan bridge and cable car; Hyangiram; Odongdo; Expo 2012; Joseon naval headquarters from 1479, Yi Sun-sin's base)
+    howItWorks:
+      "丽水是韩国南海岸的一座市，人口约 27 万，1998 年由旧丽水市、丽川市与丽川郡合并而成；2026 年 7 月 1 日全罗南道与光州合并为“全南光州特别市”后，丽水直属于这个新的省级行政区。城市在一个半岛与约 365 座岛屿之间：市中心在半岛尖端，突山大桥与海上缆车通往对岸的突山岛，向日庵在岛的南端，梧桐岛的山茶花在港口外，2012 年世博会的场地在海边，如今是会展与酒店区；1479 年起朝鲜王朝把全罗左道水军节度使司设在这里，李舜臣以此为基地。丽水国家产业园的石化工厂在市域西侧，是这座城的经济支柱。KTX 的终点丽水世博站就在世博会场旁。初来的人最容易犯的错，是把丽水当作一座旅游小城，而石化产业才是它的主业。",
     layout:
       "城市沿丽水半岛海岸展开，市中心与丽水世博会展馆片区相邻，突山岛与丽水本岛由大桥相连。",
     gettingAround:
@@ -7779,6 +8106,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pohang: {
     identity:
       "浦项是韩国重要的钢铁工业城市，人口约50万，是浦项制铁（POSCO）总部所在地，同时也是探索迎日湾海岸与虎尾串日出景观的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pohang (largest city of North Gyeongsang; ~491,000–499,000; 2 gu; POSCO 1968, production 1972, among the world's largest steelmakers; Homigot Hands of Harmony; Yeongildae beach; Jukdo fish market; POSTECH and Handong; KTX from 2015; airport; ferry to Ulleungdo; gwamegi)
+    howItWorks:
+      "浦项是庆尚北道人口最多的城市，约 49 万人，市下分南、北两个自治区，各有自己的区长和区议会。1968 年浦项制铁在这里创立、1972 年投产，如今的浦斯科是世界最大的钢铁企业之一，厂区在迎日湾南岸，几乎决定了城市的形状与就业；1986 年创办的浦项工科大学与韩东大学让它同时是一座研究型城市。城市面朝东海：迎日台海滩在市中心北侧，虎尾串的“相生之手”雕塑立在海里，是元旦看日出的地方，竹岛市场是东海岸最大的鱼市，郁陵岛的渡轮从这里开出。2015 年 KTX 通到浦项站，机场在南面，庆州在西南约 30 公里。初来的人最容易犯的错，是把浦项当作一座钢铁厂，而它是有大学、渔港与海滩的东海岸中心城市。",
     layout:
       "城市沿迎日湾海岸展开，钢铁工业区与住宅区、迎日台海边公园分处不同片区，虎尾串公园位于海岸最东端的观日出地点。",
     gettingAround:
@@ -7793,6 +8123,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   gangneung: {
     identity:
       "江陵是江原道东海岸的代表性城市，人口约21万，2018年冬奥会主办地之一，也是韩国知名的咖啡文化与镜浦湖潟湖景观所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Gangneung (city in Gangwon State; ~1,040 km²; ~208,000 2024; east coast below the Taebaek range; Gyeongpo beach and lagoon; Jeongdongjin; Anmok coffee street; Ojukheon; Danoje UNESCO 2005; 2018 Olympic ice venues; Gyeonggang KTX 2017 ~114 min from Seoul)
+    howItWorks:
+      "江陵是江原特别自治道的一座市，市域约 1,040 平方公里，2024 年人口约 21 万，由民选市长治理，市下分洞与面。城市在太白山脉以东、东海之滨，山与海之间只有一条窄带：镜浦台的海滩与镜浦湖在市区北侧，正东津在南面的海崖上，是看日出的地方，安木海边的咖啡街从 1990 年代的自动贩卖机长成了今天的产业，乌竹轩是申师任堂与李珥的故居；1,300 年的江陵端午祭 2005 年列入非物质文化遗产。2018 年冬奥会的全部冰上项目在这里举行，场馆至今在城东；2017 年通车的京江线 KTX 把首尔到这里的时间从六小时缩到约一小时五十分。初来的人最容易犯的错，是把江陵当作一处海滩，而它是岭东地区的中心城市，海滩只是它的东缘。",
     layout:
       "城市沿东海岸展开，镜浦湖与镜浦海滩相邻分布于市区北侧，安木咖啡街沿海岸线排列着众多海景咖啡馆。",
     gettingAround:
@@ -7807,6 +8140,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sokcho: {
     identity:
       "束草是江原道东北部海岸城市，人口约8万，是探索雪岳山国家公园的传统门户，与朝鲜半岛军事分界线相距不远。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sokcho (city in Gangwon State; 105.76 km²; ~81,000; under North Korean control until August 1951, then South Korean after the 1953 armistice; Seoraksan National Park with Sinheungsa and cable car; Abai village; Yeongnang lake; Daepo harbour; KTX/express ~86 minutes from Seoul; Yangyang airport)
+    howItWorks:
+      "束草是江原特别自治道的一座市，市域约 106 平方公里，是韩国面积最小的市之一，人口约 8 万。这座城的位置决定了它的历史：1945 年划界时它在北纬 38 度以北，1951 年 8 月由韩国军队占领，1953 年停战后归韩国，当年南下的实乡人在青湖洞聚居，形成了“阿爸村”，那里的手摇渡船与鱼糕至今是本地的标志。市区夹在东海与雪岳山之间：雪岳山国家公园的入口在西面 10 公里，新兴寺与缆车在里面，永郎湖在市区中央，大浦港的鱼市在南端。首尔到这里约一个半小时，襄阳机场在南面 20 公里，北面是高城与非军事区。初来的人最容易犯的错，是把束草当作雪岳山的山门，而它是一座有渔港与自己历史的边境城市。",
     layout:
       "城市紧邻东海岸，青草湖潟湖与束草港分布于市区，雪岳山国家公园入口位于市区西侧内陆约15公里处。",
     gettingAround:
@@ -7821,6 +8157,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chuncheon: {
     identity:
       "春川是江原道道厅所在地，人口约28万，坐落于昭阳江与北汉江交汇处，是韩国知名的湖泊风光与辣炒鸡料理发源地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chuncheon (capital of Gangwon State; 1,166.8 km²; ~290,000; confluence of the Soyang and Bukhan rivers; Soyang and Uiam dams; Nami Island; Legoland Korea 2022; dak-galbi invented here in the 1960s and mak-guksu; Gyeongchun line and ITX-Cheongchun from Seoul; Kangwon National University; mime festival)
+    howItWorks:
+      "春川是江原特别自治道的道厅所在地，市域约 1,167 平方公里，人口约 29 万，由民选市长治理，道政府与道议会都在城里。城市在昭阳江与北汉江汇合的谷地里，昭阳江大坝与衣岩坝把河拦成一串湖，市区被水环着，因此叫“湖城”；1960 年代一位猪肉店老板发明的辣炒鸡排与荞麦凉面是本地的两样吃食；南怡岛在西南约 25 公里，行政上属于京畿道加平郡，2022 年开业的乐高乐园在衣岩湖的中岛上。京春线与 ITX 青春列车从首尔上鹤站直达，约一小时，江原大学与翰林大学在城里。初来的人最容易犯的错，是把南怡岛当作春川的景点，而它在隔壁道的郡里，只是从春川过去最方便。",
     layout:
       "城市被昭阳湖与义岩湖等水域环绕，市中心明洞商圈与南怡岛、昭阳江大坝分处市区不同方向。",
     gettingAround:
@@ -7835,6 +8174,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   andong: {
     identity:
       "安东是庆尚北道东北部的历史文化城市，人口约15万，河回村是韩国保存最完好的传统聚落之一，也是安东炖鸡的发源地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Andong (city in North Gyeongsang, provincial seat; 1,590.91 km²; ~153,000 2024; Hahoe folk village UNESCO 2010; Dosan Seowon; mask dance festival October; Confucian and folk traditions; heotjesabap, jjimdak, Andong soju; Andong dam 1976; nearest airport Daegu 92 km)
+    howItWorks:
+      "安东是庆尚北道的道厅所在地，市域约 1,591 平方公里，2024 年人口约 15 万，由民选市长治理；道政府与道议会 2016 年从大邱迁到安东与醴泉交界的新城，安东因此从一座农业市镇变成了省级行政中心。城市在洛东江上游，安东大坝 1976 年建成后市区北面成了湖；它是朝鲜时代儒学与两班文化的核心地带：河回村 2010 年列入世界遗产，在市区西面约 25 公里，陶山书院在北面，凤停寺在西北，十月的假面舞节是全国最大的民俗节庆之一。安东炖鸡、祭祀饭与安东烧酒是本地的味道，最近的机场是 92 公里外的大邱。初来的人最容易犯的错，是把安东当作一座民俗村，而它是一个道的行政中心，民俗村在市区之外几十公里的河湾里。",
     layout:
       "城市沿洛东江上游展开，河回村位于市区西侧洛东江曲流内侧的独立台地上，与市区有一定距离。",
     gettingAround:
@@ -7849,6 +8191,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jeonju: {
     identity:
       "全州是全罗北道道厅所在地，人口约65万，全州韩屋村保存有数百栋传统韩屋建筑，是韩国美食之都与传统文化体验的代表性城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jeonju (capital of Jeonbuk State; 2 gu Wansan and Deokjin; 206.22 km²; ~638,000 2026; Hanok Village with over 800 hanok; Gyeonggijeon with the portrait of Yi Seong-gye; Jeondong Cathedral 1908–14; Pungnammun; bibimbap; UNESCO City of Gastronomy 2012; film festival; ancestral home of the Joseon royal house)
+    howItWorks:
+      "全州是全北特别自治道的道厅所在地，市下分完山、德津两个自治区，市域约 206 平方公里，2026 年人口约 64 万，由民选市长治理，道政府与道议会都在城里。它是朝鲜王朝李氏的本贯之地，庆基殿里供着太祖李成桂的御真，丰南门是老城墙仅存的一座；韩屋村在完山区，八百多座传统韩屋连成一片，是韩国最大的城市韩屋群，1908 至 1914 年建成的殿洞圣堂在门外；全州拌饭与米酒让它 2012 年成为联合国教科文组织美食之都，每年的全州国际电影节吸引约五万人。KTX 到首尔约一个半小时，市内没有机场。初来的人最容易犯的错，是把韩屋村当作全州，而它只是完山区的一片街区，城本身是一座 64 万人的道厅所在地。",
     layout:
       "全州韩屋村位于市中心一隅，与周边现代化商业区形成鲜明对照，殿洞天主教堂与庆基殿分布于韩屋村边缘。",
     gettingAround:
@@ -7882,6 +8227,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   suwon: {
     identity:
       "水原是京畿道的道厅所在地，在首尔以南约30公里，人口约123万（2026年）。1794–1796年朝鲜正祖为迁葬父亲思悼世子而建的华城是朝鲜后期城郭建筑的代表，5.7公里的城墙、四座城门、行宫和炮楼保存完好，1997年列入世界遗产；正祖每年从汉阳到水原的行幸是华城文化节的原型。三星电子1969年创立于水原，总部和研发园区在灵通区。水原排骨（烤牛排骨）是本地名菜，邻近的龙仁有韩国民俗村。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Suwon (capital of Gyeonggi Province; special case city with lesser self-governance than a metropolitan city; 4 gu; population over 1.2 million; Hwaseong Fortress built under King Jeongjo 1796, UNESCO with the Hwaseong Seongyeok Uigwe record; Samsung Electronics headquarters in Yeongtong since 2016; three Seoul Metro lines, 14 stations, ~30 km from Seoul; Suwon galbi; World Cup Stadium 2002)
+    howItWorks:
+      "水原是京畿道的道厅所在地，人口超过 120 万，比不少广域市还多，却因为在道之下，只是一座“特例市”，自治权限比广域市小一级；市下分 4 个自治区，由民选市长治理。1796 年正祖为迁葬父亲而建的华城把老城围起来，城墙与行宫 1997 年列入世界遗产，当年的施工记录《华城城役仪轨》详尽到战后能照着重建；三星电子 1973 年把总部迁来，研究园区与总部在东面的灵通区，是这座城最大的雇主。首尔地铁的三条线在市内设了十几个站，KTX 也停靠，首尔在北面约 30 公里；水原排骨与光教新城是它的另外两个名字。初来的人最容易犯的错，是以为水原是首尔的一个卫星镇，而它是京畿道的道厅所在地，人口比首尔的多数自治区都多。",
     layout:
       "华城围绕水原老城：八达门在南，长安门在北，华虹门跨水原川在东北，西将台在西侧的八达山顶；华城行宫在城内正中，八达门市场在南门边。水原站在城墙西南约2公里，水原综合运动场和世界杯球场在城外。三星园区在城东的灵通区，光教新城在东北。韩国民俗村在东面约15公里的龙仁，爱宝乐园再往东。",
     gettingAround:
@@ -7947,6 +8295,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tongyeong: {
     identity:
       "统营在韩国东南岸的闲丽海上国立公园里，人口约11.9万（2024年），被称为“韩国的那不勒斯”。1592年壬辰倭乱时李舜臣在闲山岛设立三道水军统制营，“统营”由此得名（旧称忠武，取李舜臣的谥号）；港口里停着龟船复制品，闲山岛上有制胜堂。弥勒山缆车俯瞰散布着数百座岛屿的海面，东崖壁画村和西崖的夜景是热门去处；作曲家尹伊桑、小说家朴景利出生于此，每年春季有统营国际音乐节。牡蛎是本地特产，忠武紫菜包饭是本地小吃。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tongyeong (city in South Gyeongsang; 236.5 km² over the Goseong peninsula, Hansando, Mireuk and Yokji islands, 41 inhabited and 110 uninhabited islands; ~119,000 2024; formerly Chungmu, merged with Tongyeong county 1995; name from Yi Sun-sin's Tongjeyeong naval command on Hansan Island; Yun Isang and Park Kyung-ni; ~6–7 million visitors; chungmu gimbap and kkulppang)
+    howItWorks:
+      "统营是庆尚南道南海岸的一座市，市域约 237 平方公里，散在固城半岛与闲山岛、弥勒岛、欲知岛等 41 座有人岛与 110 座无人岛之间，2024 年人口约 12 万。它的名字来自李舜臣设在闲山岛的“三道水军统制营”，1995 年旧忠武市与统营郡合并后改用今名——忠武是李舜臣的谥号，忠武紫菜卷至今叫这个名字。市区在弥勒岛与半岛之间的江口港，东皮郎的壁画村爬在港边的坡上，弥勒山的缆车通到山顶，闲丽海上国家公园的岛屿从这里坐船去；作曲家尹伊桑与作家朴景利生在这里，尹伊桑音乐节每年举行。牡蛎养殖是本地的产业，没有铁路，釜山在东面约 100 公里。初来的人最容易犯的错，是把统营当作一处海港小镇，而它是一片跨着一百多座岛的市域，岛与岛之间只能坐船。",
     layout:
       "市区在统营半岛的南端，江口岸港口是中心：中央市场、龟船、东崖壁画村在港口东侧的坡上，西崖在西侧；弥勒岛与市区隔运河相连（统营运河和海底隧道），弥勒山缆车站在弥勒岛上，达牙公园在岛南端。闲山岛在港口东南约6公里，坐船约25分钟；小每勿岛、欲知岛等外岛坐船1–2小时。巨济岛在东面，由巨济大桥相连。",
     gettingAround:
@@ -8010,6 +8361,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zakopane: {
     identity:
       "扎科帕内是波兰南部塔特拉山脉北麓的山城，人口约2.7万，被称为波兰的“冬季首都”，是探索塔特拉国家公园的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakopane (Poland; town in Lesser Poland Voivodeship at the foot of the Tatra Mountains near the Slovak border, 27,266 residents in 2017, at 800–1,100 m; called the winter capital of Poland with more than 2.5 million visitors a year; the centre at the crossing of Krupówki and Kościuszko streets; the Zakopane Style of Stanisław Witkiewicz joining Carpathian vernacular with modern design, as in Villa Koliba of 1892–93 and the Tatra Museum of 1913–24; a centre of Góral highlander culture, costume, music and oscypek cheese; the Kasprowy Wierch cable car completed 1936, Gubałówka, and the Wielka Krokiew ski jump opened 1925; Nordic World Ski Championships in 1929, 1939 and 1962)
+    howItWorks:
+      "扎科帕内是波兰小波兰省的城镇，2017 年人口 27,266，海拔 800 至 1,100 米，在塔特拉山北麓、靠近斯洛伐克边境；波兰的地方行政分省、县与市镇三级，本镇属塔特拉县，市镇管本地事务，省管区域规划。它自称波兰的“冬都”，每年到访者超过两百五十万，几乎全国的滑雪、登山与暑期避暑都往这一处集中，克鲁普夫基街与科希丘什科街的交叉口是全城的中心。这里是戈拉尔高地人文化的中心，服饰、音乐、木屋与羊奶熏酪“奥斯齐佩克”都出自这一支；19 世纪末画家斯坦尼斯瓦夫·维特凯维奇把当地木构做法与现代设计合成“扎科帕内风格”，1892 年的科利巴别墅与 1913 至 1924 年的塔特拉博物馆是代表作，这套样式后来被视为波兰的民族建筑语言。1936 年通车的卡斯普罗维山缆车与 1925 年启用的大克罗基耶夫跳台仍在使用，1929、1939 与 1962 年三次举办北欧滑雪世锦赛。初来的人最容易犯的错，是把它当作单纯的雪场，而它同时是一个文化流派的发源地。",
     layout:
       "小城沿塔特拉山脉北麓山谷而建，克鲁普夫基大街是当地最热闹的商业步行街，多座缆车站连接城区与周边山峰。",
     gettingAround:
@@ -8024,6 +8378,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rzeszow: {
     identity:
       "热舒夫是波兰东南部小波兰地区的城市，人口约19.6万，是探索别什恰迪山脉的门户，也是波兰重要的航空工业中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rzeszów (Poland; capital of Subcarpathian Voivodeship and the largest city in south-eastern Poland, about 198,540 inhabitants in January 2026, the 15th largest Polish city, on both banks of the Wisłok in the Sandomierz Basin; unusually among Polish cities of its size the population is growing, with municipal boundaries extended between 2017 and 2021; town rights from Casimir III the Great in 1354; historically on the east-west trade route; Asseco Poland and G2A.COM, and aerospace manufacturing including one of the world's two makers of F-16 engines; the Renaissance town hall, Rzeszów Castle and preserved synagogues; the underground tourist route; Rzeszów-Jasionka Airport; the A4 motorway)
+    howItWorks:
+      "热舒夫是波兰喀尔巴阡山省的省会，也是波兰东南部最大的城市，2026 年 1 月人口约 19.9 万，是波兰第 15 大城市；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会的所在。它在维斯沃克河两岸的桑多梅日盆地里，1354 年由卡齐米日三世授予城市权，历史上位于连接欧洲与东方的商路上。与波兰同等规模的城市普遍收缩不同，热舒夫的人口在增长，2017 至 2021 年间还多次扩大市界并入周边乡镇。支撑它的是两样产业：一是软件与信息技术，Asseco Poland 与 G2A 的总部在此；二是航空制造，本地的“航空谷”产业集群与热舒夫工业大学相互支撑，世界上仅有的两家 F-16 发动机制造商之一在这里设厂。文艺复兴式的市政厅与老城堡在市中心，地下有一条穿过老城地窖的参观通道，保存下来的犹太会堂建筑也在老城。亚西翁卡机场在城北，A4 高速从旁经过。初来的人最容易犯的错，是把波兰东南部当作农业地带，而这里是航空工业的集中区。",
     layout:
       "老城中心保留文艺复兴风格市集广场，市郊近年发展为波兰重要的航空产业集群，得名“波兰航空谷”。",
     gettingAround:
@@ -8089,6 +8446,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   szczecin: {
     identity:
       "什切青是波兰西北部奥得河口的港口城市，人口约39万，紧邻德国边境，是波兰重要的海港与工业城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Szczecin (Poland; capital of West Pomeranian Voivodeship and the seventh-largest Polish city, the largest city of north-western Poland; on the Oder south of the Szczecin Lagoon and the Bay of Pomerania, a major seaport; recorded from the 8th century, a major Baltic trading town under the House of Griffin, under the Swedish Empire from 1630 and Prussia from 1720, becoming part of Poland after the Second World War under the Potsdam Agreement; the 19th-century street plan influenced by Haussmann's Paris with star-shaped junctions and much green space; the Ducal Castle; the Wały Chrobrego terraces; headquarters of NATO's Multinational Corps Northeast since 1999; several universities)
+    howItWorks:
+      "什切青是波兰西滨海省的省会，是波兰第七大城市，也是西北部最大的城市；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。城市在奥得河下游、什切青潟湖以南，与外海之间隔着一段内水航道，港口与更靠海的希维诺乌伊希切共同构成波兰最大的港口群之一，柏林在西面约 130 公里。它的记载可追到 8 世纪，中世纪在格里芬王朝治下成为波罗的海重要商埠，1630 年起属瑞典，1720 年归普鲁士，二战后依波茨坦协定划归波兰。今天最能看出它历史的是街道：19 世纪的改造仿照奥斯曼改造后的巴黎，放射状的星形广场与宽林荫道贯穿全城，市区绿地与水面的比例在波兰各大城市中居前列。格里芬王朝的公爵城堡与河岸上的赫罗布雷堤台是主要地标，1999 年起北约的东北多国军团总部设在此。初来的人最容易犯的错，是以为这座港口城市临海，而它在河上，离开阔海面还有约 65 公里。",
     layout:
       "老城沿奥得河支流而建，波美拉尼亚公爵城堡矗立在城市高地，港口区沿奥得河展开，是波兰面积最大的城市绿地系统之一的所在地。",
     gettingAround:
@@ -8103,6 +8463,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   torun: {
     identity:
       "托伦是波兰中北部维斯瓦河畔的历史古城，人口约19.6万，是天文学家哥白尼的出生地，完整保留的中世纪老城1997年列入世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Toruń (Poland; city in Kuyavian-Pomeranian Voivodeship, one of two regional capitals alongside Bydgoszcz, about 196,935 residents, on the Vistula; founded by the Teutonic Knights in 1233, joined the Hanseatic League in 1264 and remained a significant trading centre, a royal city from 1506 with voting rights in Polish royal elections; the city avoided damage in both world wars and retained its Gothic to Baroque architecture, the Medieval Town of Toruń inscribed by UNESCO in 1997 for its intact layout and brick Gothic buildings; Nicolaus Copernicus born here in 1473, his birthplace now a museum; gingerbread made here for nearly a millennium; the Camerimage film festival)
+    howItWorks:
+      "托伦是波兰库亚维滨海省的城市，人口约 19.7 万，在维斯瓦河边；这个省有一个少见的安排——省会一分为二，省议会与省长（marszałek）在托伦，中央派驻的省督（wojewoda）在比得哥什，两座城市各占一半，这在波兰十六个省里是唯一的。城市 1233 年由条顿骑士团建立，1264 年加入汉萨同盟，长期是维斯瓦河上的贸易重镇，1506 年起成为王室直辖城市，可参与国王选举。它最不寻常的地方是完好：两次世界大战都没有波及市中心，从哥特式到巴洛克的建筑连片保存，1997 年“托伦中世纪城区”以其完整的城市格局与砖砌哥特建筑列入世界遗产。1473 年哥白尼生在这里，故居现为博物馆；姜饼在此制作了近千年，是本地的老行业。哥白尼大学在城中。初来的人最容易犯的错，是以为省会只有一个，而这个省的行政机构分设在两座城市。",
     layout:
       "老城沿维斯瓦河北岸而建，哥特式砖砌建筑密布，哥白尼故居博物馆与老城市政厅是老城核心地标。",
     gettingAround:
@@ -8117,6 +8480,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   olsztyn: {
     identity:
       "奥尔什丁是波兰东北部瓦尔米亚—马祖里地区的核心城市，人口约17万，是探索马祖里湖区的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Olsztyn (Poland; capital of Warmian-Masurian Voivodeship, about 169,793 residents in 2021, on the Łyna; a watchtower from 1334 and municipal rights in 1353 granted by the cathedral chapter of the Bishopric of Warmia; Nicolaus Copernicus lived in the town castle as administrator from 1516 to 1521 and directed its defence; 15 lakes within the administrative boundary covering about 725 ha and forest over 21 per cent of the city area, part of the Land of a Thousand Lakes; the Gothic co-cathedral of St James; the University of Warmia and Mazury founded 1999; the Michelin plant the largest employer)
+    howItWorks:
+      "奥尔什丁是波兰瓦尔米亚-马祖里省的省会，2021 年人口约 17 万，在瓦纳河边；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。它 1334 年从一座瞭望塔起步，1353 年由瓦尔米亚主教区的座堂议事会授予城市权——这一带中世纪长期由主教区治理，而不是世俗诸侯，城堡与教堂因此是城市的核心。哥白尼 1516 至 1521 年作为瓦尔米亚的管理者住在这座城堡里，并在 1520 至 1521 年主持了城市的防务。它最鲜明的特征是水与林：市界之内有十五个湖，水面约 725 公顷，森林占市域两成以上，因此它被视为马祖里湖区的门户，全省最著名的资源就是这一片湖群。圣雅各布哥特式共同主教座堂在老城，1999 年成立的瓦尔米亚与马祖里大学是本地最大的学校，米其林轮胎厂是最大的雇主。初来的人最容易犯的错，是把湖区想成城外的远方，而这座城本身就有十几个湖。",
     layout:
       "老城建于奥卡瓦河畔的高地上，哥特式砖砌城堡矗立城市核心，历史上是天文学家哥白尼曾任职管理的城堡之一。",
     gettingAround:
@@ -8131,6 +8497,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bialystok: {
     identity:
       "比亚韦斯托克是波兰东北部波德拉谢地区的核心城市，人口约29.7万，是探索比亚沃维耶扎原始森林与别布扎沼泽的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Białystok (Poland; capital of Podlaskie Voivodeship and the largest city in north-eastern Poland, about 289,000 residents, tenth nationally, with the second-highest population density among Polish cities; about 200 km north-east of Warsaw on the Białystok Uplands along the Biała; recorded from about 1437 when a member of the Raczków family received a wilderness area along the river; flourished in the 18th century under the Branicki family, the Branicki Palace compared to Versailles; a major textile centre in the 19th century, called the Manchester of the North; L. L. Zamenhof, creator of Esperanto, born here in 1859; a historically multi-ethnic and multi-faith city with Orthodox churches; the fifth most forested Polish municipality, about 1,846 ha or 18 per cent)
+    howItWorks:
+      "比亚韦斯托克是波兰波德拉谢省的省会，也是波兰东北部最大的城市，人口约 28.9 万，居全国第十，人口密度在波兰各大城市中位居第二；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。华沙在西南约 200 公里。城市约 1437 年见于记载，18 世纪在布拉尼茨基家族治下成型：他们把这里建成一座宫廷城市，巴洛克的布拉尼茨基宫与法式园林至今是市中心的核心，因此本地常称它“波德拉谢的凡尔赛”。19 世纪它成为纺织业中心，一度被称作“北方的曼彻斯特”。这一带历史上族群与信仰混杂，天主教堂与东正教堂并立至今，波兰的东正教徒有相当一部分集中在这个省；1859 年世界语的创制者柴门霍夫生于此城，他自述这种混杂的语言环境促成了他的想法。全市森林约 1,846 公顷、占市域一成八，比亚沃维耶扎原始森林在东南。初来的人最容易犯的错，是以为波兰只有天主教，而这里长期是多信仰并存之地。",
     layout:
       "老城以布拉尼茨基宫及其巴洛克花园为核心，被称为“波德拉谢的凡尔赛”，多元宗教建筑（天主教、东正教、犹太教堂遗址）见证了当地历史上的多元文化格局。",
     gettingAround:
@@ -8602,6 +8971,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kota-bharu": {
     identity:
       "哥打巴鲁是吉兰丹州首府，人口约49万，坐落于吉兰丹河口，是马来西亚东北部马来传统文化保存最完整的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kota Bharu (capital of Kelantan; MPKB-BRI "Islamic City" municipal council, appointed like all Malaysian councils since 1976; ~569,000 2022 district; founded 1844; Kelantan River; Siti Khadijah market; Istana Jahar; Kelantanese dialect; Sultan Ismail Petra airport; Thai border ~40 km; Pantai Cahaya Bulan ~10 km)
+    howItWorks:
+      "哥打巴鲁是吉兰丹州的首府，由哥打巴鲁市政局管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选；县域 2022 年人口约 57 万，九成以上是马来人，穆斯林占绝大多数。城市 1844 年由苏丹建为新的州府，名字就是“新城”的意思，市中心在吉兰丹河东岸，司提卡迪嘉市场是全马最大的、几乎全由女性经营的市场，扎哈宫与州博物馆在旁边，2005 年州政府把它定位为“伊斯兰城”；吉兰丹方言与半岛其他地方的马来语差别很大，本地人自己听得懂；机场在城郊，泰国边境在西北约 40 公里，月光海滩在东北 10 公里。初来的人最容易犯的错，是按吉隆坡的印象来预期这里的作息，而这座城的节奏与规矩由本地的宗教与传统定。",
     layout:
       "市中心以中央市场为核心，周边分布传统手工艺作坊与蜡染纺织工坊，吉兰丹河沿岸保留渔村聚落。",
     gettingAround:
@@ -8616,6 +8988,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kuantan: {
     identity:
       "关丹是彭亨州首府，人口约61万，坐落于彭亨河口，是马来半岛东岸重要的港口城市与探索彭亨河流域的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuantan (capital of Pahang, largest state in Peninsular Malaysia; Kuantan City Council MBK, city status 2021, appointed; 548,014 2020; capital moved from Kuala Lipis 1955; Teluk Cempedak ~5 km; Sungai Lembing; Cherating ~45 km; ECER; Gebeng petrochemicals; Sultan Ahmad Shah airport; ECRL expected 2027; royal town Pekan)
+    howItWorks:
+      "关丹是彭亨州的首府，马来西亚半岛最大州的行政中心，2021 年获得城市地位，由关丹市政厅管辖，市长与议员由州政府任命；市域约 324 平方公里，2020 年人口约 55 万。1955 年州府从内陆的瓜拉立卑迁到这里，市中心在关丹河口，皇城仍在南面 50 公里的北根——苏丹的王宫在那里；直落尖不辣海滩在城东 5 公里，是市民的海滩，双溪灵明的旧锡矿在西面山里，浮罗地不佬在北面 45 公里；格宾的石化工业区、关丹港与东海岸经济特区是它的经济支柱，机场在城郊，东海岸铁路预计 2027 年通车。初来的人最容易犯的错，是把关丹当作彭亨的王城，而王室在北根，关丹只是行政与商业中心。",
     layout:
       "市中心沿彭亨河口两岸分布，德立海滩是本地知名的休闲海滩，河口渔村保留传统渔业生活方式。",
     gettingAround:
@@ -8630,6 +9005,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sandakan: {
     identity:
       "山打根是沙巴州东海岸港口城市，人口约44万，20世纪初曾是英属北婆罗洲首府，是探索京那巴当岸河的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sandakan (Sabah; municipal council, appointed; 439,050 2020 district; capital of British North Borneo until 1946, destroyed in WWII; "Little Hong Kong"; Sandakan Bay; Agnes Keith house; Puu Jih Shih; Sepilok ~25 km; Kinabatangan ~100 km; Turtle Islands by boat; airport; palm oil)
+    howItWorks:
+      "山打根是沙巴的第二大城市，由山打根市议会管辖，议员由州政府任命；县域 2020 年人口约 44 万。1884 至 1946 年它是英属北婆罗洲的首府，香港来的华人移民让它有“小香港”之称，二战的轰炸把整座城夷平，战后首府迁到了亚庇，山打根按新规划重建；今天它是棕榈油与木材的出港口，海湾边的市区不大，普济寺在山上，作家艾格尼丝·基思的故居是英治时期的遗存；西比洛的红毛猩猩保护中心在西面 25 公里，京那巴当岸河在南面约 100 公里，海龟岛要坐船，机场在城郊。初来的人最容易犯的错，是把山打根当作看野生动物的地方，而动物在几十到上百公里外的保护区，城本身是一座港口。",
     layout:
       "市中心沿海湾分布，山打根中央市场是本地知名的海鲜与农产品交易场所，市郊分布多处历史遗迹与自然保护区。",
     gettingAround:
@@ -8644,6 +9022,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   miri: {
     identity:
       "美里是砂拉越州东北部港口城市，人口约30万，是探索姆鲁山国家公园与尼亚洞穴的核心门户，也是马来西亚石油工业的发源地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Miri (Sarawak; Miri City Council, city status 2005 — first non-state-capital city in Malaysia; ~248,900 2020; first oil well 1910 "Grand Old Lady" on Canada Hill; Shell/Petronas; Niah ~110 km; Mulu by flight; Lambir ~30 km; Brunei border ~30 km; airport; second city of Sarawak)
+    howItWorks:
+      "美里是砂拉越的第二大城市，2005 年成为马来西亚第一个非州府的城市，由美里市政厅管辖，市长与议员由州政府任命；2020 年人口约 25 万。1910 年壳牌在加拿大山上钻出马来西亚第一口油井，那口井至今立在山顶，称“老奶奶”，石油与天然气从此定义了这座城，壳牌与国油的办公楼在市区；姆鲁国家公园要坐飞机进去，尼亚洞在西南 110 公里，蓝卑尔山在南面 30 公里，文莱边境在东北 30 公里，机场在城郊。华人、伊班人与马来人是主要的人口构成。初来的人最容易犯的错，是把美里当作去姆鲁的中转站，而它是砂拉越的石油之都，姆鲁只能飞进去。",
     layout:
       "市中心沿海岸线分布，加拿大山油井是马来西亚第一口油井旧址，如今辟为纪念公园，城市周边分布有多处石油工业遗迹。",
     gettingAround:
@@ -8658,6 +9039,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "langkawi-city": {
     identity:
       "瓜镇是浮罗交怡群岛的主要市镇，人口约2.7万，坐落于浮罗交怡岛东南岸，是探索浮罗交怡地质公园的门户市镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Langkawi (archipelago of 99 islands, Kedah; district/municipal council appointed; ~94,000 2020, ~65,000 on the main island; duty-free since 1987; Kuah town (jetty, district office) vs Pantai Cenang; airport at Padang Matsirat; cable car/Sky Bridge; UNESCO Global Geopark 2007; ferries Kuala Perlis/Kuala Kedah/Penang)
+    howItWorks:
+      "浮罗交怡是吉打州西北海上的 99 座岛组成的群岛，主岛南北约 25 公里，由浮罗交怡市议会管辖，议员由州政府任命；2020 年全岛约 9.4 万人，其中约 6.5 万在主岛，九成是马来人。1987 年起全岛免税，这是它的经济基础；瓜镇在东南角，是县政府、渡轮码头与本地人购物的地方，珍南海滩在西南角，是游客的旅馆带，两者相距约 20 公里；机场在中部的巴东马硕，东方村的缆车通往马西琅山顶的天空之桥，2007 年整片群岛成为联合国教科文组织的世界地质公园，渡轮从瓜拉玻璃市、瓜拉吉打与槟城开来。初来的人最容易犯的错，是把瓜镇当作度假区，而海滩在岛的另一头，没有车寸步难行。",
     layout:
       "瓜镇码头区是岛上主要的商业与渡轮枢纽，周边分布免税购物区，岛屿内陆则是地质公园的喀斯特与雨林景观。",
     gettingAround:
@@ -8674,6 +9058,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   putrajaya: {
     identity:
       "布城是马来西亚的联邦行政中心，在吉隆坡以南约25公里，1995年开始规划建设，1999年联邦政府从吉隆坡迁来，2001年成为联邦直辖区，人口约12万（2024年）。整座城市围绕人工湖布城湖布局，38%的面积是绿地：粉红色的布特拉清真寺和首相署、造型各异的桥梁（斯里瓦瓦桑桥等）、“铁清真寺”和湿地公园是它的看点。布城是有意规划的花园城市与智慧城市，白天是政府办公区，傍晚和周末市民来湖边散步骑行；每年有热气球节。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Putrajaya (Federal Territory since 2001, ~49 km²; ~119,700 2024; planned federal administrative capital, government moved from KL from 1999; Putrajaya Corporation, not an elected council; 20 precincts; Perdana Putra, Palace of Justice; Putrajaya Lake; ~25 km south of KL; KLIA Transit and MRT Putrajaya line; parliament and the King remain in KL)
+    howItWorks:
+      "布城是马来西亚 2001 年设立的第三个联邦直辖区，约 49 平方公里，2024 年人口约 12 万，绝大多数是公务员与家属。它不是自然长出来的城市，而是 1995 年动工、1999 年起把首相署与各部委从吉隆坡整体迁来的行政首都；管理它的是布城机构（Putrajaya Corporation），不是民选议会，全城按 20 个“分区”规划，首相署的绿顶建筑在人工湖畔的高地上，司法宫在另一端，布城清真寺与广场在中间，湖与桥是规划的骨架。宪法上的首都仍是吉隆坡，国会与国家元首都在那里；机场快线与地铁把它与吉隆坡、机场连起来，赛城在隔壁的雪兰莪州。初来的人最容易犯的错，是把布城当作首都，而它只是政府办公的地方，国会在 25 公里外的吉隆坡。",
     layout:
       "城市在布城湖周围的丘陵上，分成若干区（Presint）：核心区在湖北岸的高地，布特拉广场周围是布特拉清真寺、首相署和主要部委，布特拉大道向南延伸；铁清真寺和司法宫在核心区南侧；湖上有多座造型桥连接各区。湿地公园在城北的湖上游，植物园在核心区东侧。布城中央站（KLIA Transit 和 MRT）在城西南，机场在南面约25公里。",
     gettingAround:
@@ -8688,6 +9075,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "cameron-highlands": {
     identity:
       "金马仑高原在马来西亚中部的蒂迪旺沙山脉上，海拔800–1600米，吉隆坡以北约200公里，是英国殖民时期开辟的避暑山庄（1885年由测绘师威廉·卡梅伦勘察，1930年代开发），全区人口约4.4万。这里全年气温约18℃，是马来西亚最大的茶叶产区——BOH 茶园1929年创立——也是草莓、蔬菜和花卉的产地；布林昌山（2031米）顶上的苔藓森林是云雾中的高山雨林。丹那拉打和碧兰璋是两个主要的镇子，殖民时期的都铎式建筑和下午茶传统仍在。1967年泰国丝绸大王吉姆·汤普森在此失踪。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cameron Highlands (district of Pahang, 712 km²; ~40,000; district council appointed; named after William Cameron 1885, British hill station from the 1930s; Tanah Rata administrative, Brinchang, Ringlet; 800–1,603 m; BOH tea, strawberries, vegetables; Orang Asli; ~71% forested; roads from Tapah/Simpang Pulai/Gua Musang; no rail or airport)
+    howItWorks:
+      "金马仑高原是彭亨州的一个县，约 712 平方公里，人口约 4 万，由县议会管辖，议员由州政府任命；名字来自 1885 年勘测这一带的苏格兰人威廉·卡梅伦，1930 年代英国人把它建成避暑高原。它不是一座镇，而是海拔 800 到 1,600 米之间沿公路串起的一串聚落：丹那拉打是县政府与学校所在，碧兰璋是最大的商业镇，林伦是南端的入口；BOH 的茶园、草莓园与蔬菜农场铺在山坡上，供应半个马来西亚的高地蔬菜，原住民村落散在林中，约七成的县域仍是森林；从怡保方向的双溪毛糯与丹那拉打各有一条盘山公路，没有铁路也没有机场，吉隆坡在南面约 200 公里。初来的人最容易犯的错，是把金马仑当作一个地点，而它是一条几十公里长的公路沿线，镇与镇之间要开半小时。",
     layout:
       "高原沿一条山路展开：从南面的冷力（Ringlet）上来，先到丹那拉打（行政中心，酒店、餐馆、旅行社集中，步道起点），再往北约5公里是碧兰璋（市集、草莓园），碧兰璋北面是双溪帕拉斯的 BOH 茶园和布林昌山的上山路（苔藓森林在山顶附近），继续向北是甘榜拉惹和更多菜园。冷力附近的湖边有 BOH 的另一处茶园。",
     gettingAround:
@@ -8702,6 +9092,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   taiping: {
     identity:
       "太平在马来西亚霹雳州北部，是马来西亚最多雨的城镇（年降水约3200毫米），人口约24.5万（2013年）。十九世纪它因拉律锡矿而兴起，1874年后是霹雳的首府，留下了马来西亚的一串“第一”：1880年的太平湖公园是马来西亚第一座公园，1886年的霹雳博物馆是最早的博物馆，1885年通车的太平—威德港铁路是第一条铁路，拉律山（麦斯威尔山）是最早的山间避暑地，太平动物园是最早的动物园。湖公园里的雨树垂枝拂水是它最有名的画面。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Taiping (Perak, Larut district; municipal council appointed; ~245,000; capital of Perak 1876–1937 before Ipoh; Lake Gardens 1880, first public garden; wettest in Peninsular Malaysia ~3,200 mm; Perak Museum 1886 oldest; first railway 1885 to Port Weld; Maxwell Hill; Larut wars/tin; Ipoh ~48 km)
+    howItWorks:
+      "太平是霹雳州拉律县的一座镇，由太平市议会管辖，议员由州政府任命；人口约 24.5 万，华人约占四成六。1876 至 1937 年它是霹雳的州府，之后让位给怡保；锡矿带来的移民与 1860 年代的拉律械斗是它的开端，“太平”这个名字就是械斗平息后取的。它保留了一串“马来西亚第一”：1880 年的太平湖公园是第一座公共花园，1886 年的霹雳博物馆是第一座博物馆，1885 年到十八丁港的铁路是第一条铁路；年降水约 3,200 毫米，是半岛最多雨的地方，太平山（麦斯威尔山）在城背后，怡保在南面约 48 公里。初来的人最容易犯的错，是把太平当作一座旅游小镇，而它是霹雳的旧州府，那些“第一”都是行政中心时代留下的。",
     layout:
       "老城在铁路以东的规整街区里，旧市场、钟楼、圣公会教堂和殖民时期店屋集中在这里；太平湖公园在老城东侧，由废弃的锡矿坑改成，动物园在湖公园东北角；拉律山的上山路在动物园旁，山顶约1000米，靠四驱吉普上山。霹雳博物馆在老城北面。十八丁（旧威德港）在西面约15公里的海边，有红树林、炭窑和萤火虫。",
     gettingAround:
@@ -8716,6 +9109,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "alor-setar": {
     identity:
       "亚罗士打是马来西亚吉打州的首府，在半岛西北部的稻田平原上，人口约41.8万（2020年），是马来西亚第二古老的州首府。吉打是“马来西亚的米仓”，城外是一望无际的稻田，稻米博物馆有360度的稻田壁画；1912年建成的扎希尔清真寺是马来西亚最美的清真寺之一，1735年的大会堂是苏丹王朝的礼仪厅，165.5米的亚罗士打塔是马来西亚第三高的塔。前首相马哈蒂尔出生于此，故居开放参观。去兰卡威的渡轮从西面约15公里的瓜拉吉打出发。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alor Setar (capital of Kedah; MBAS city council, city status 2003, appointed; ~417,800 2020 district; founded 1735; Zahir Mosque 1915; Alor Setar Tower; Balai Besar; Pekan Rabu; Kedah rice plains; birthplace of two prime ministers; Sultan Abdul Halim airport; Thai border ~50 km; Kuala Kedah ferry to Langkawi 12 km; KL ~430 km)
+    howItWorks:
+      "亚罗士打是吉打州的首府，2003 年获得城市地位，由亚罗士打市政厅管辖，市长与议员由州政府任命；县域 2020 年人口约 42 万。城市 1735 年由苏丹建立，名字取自河边的一种树，市中心是一片王城格局：大礼堂、皇家音乐亭与 1915 年落成的查希尔清真寺围着广场，星期三市集是老市场，吉打塔在旁边；四周是马来西亚最大的稻田平原，“马来西亚的米仓”指的就是这里，两位首相出生在这座城；机场在城郊，泰国边境在北面约 50 公里，瓜拉吉打的渡轮码头在西面 12 公里，通往浮罗交怡，吉隆坡在南面约 430 公里。初来的人最容易犯的错，是把亚罗士打当作去浮罗交怡的中转站，而它是一个州的首府，四周的稻田养着半个国家。",
     layout:
       "市中心在吉打河边，扎希尔清真寺、大会堂、皇家博物馆和大钟楼在同一片皇家广场周围，亚罗士打塔在旁边，星期三市集（Pekan Rabu）在市中心；马哈蒂尔故居在市区南面的西港路。稻米博物馆在城北约5公里的稻田里，古农杰莱山在东面约15公里。火车站在市中心南侧，机场在北面约15公里，瓜拉吉打码头在西面约15公里。",
     gettingAround:
@@ -8730,6 +9126,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   semporna: {
     identity:
       "仙本那在马来西亚沙巴州东南岸的苏禄海边，人口约3.5万（2010年），是世界级潜水地西巴丹岛（距镇约36公里）和马布岛、卡帕莱岛的门户；敦沙卡兰海洋公园（2004年设立）的珍珠岛火山口是网红观景点。这里的巴瑶族海上人（Bajau Laut）世代住在船上和海上高脚屋，每年4月的雷帕帆船节展示他们的彩帆；仙本那也是马来西亚唯一说查瓦卡诺语（源自菲律宾）的社区所在地。镇上以海鲜和珍珠养殖闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Semporna (town and district in eastern Sabah; district council appointed; ~140,000 district 2020; Bajau Laut stilt villages; gateway to Sipadan (permits, day trips only), Mabul, Kapalai, Tun Sakaran Marine Park; Chavacano-speaking Moro refugee community; Tawau airport ~100 km; ESSZONE security area — check current travel advisories)
+    howItWorks:
+      "仙本那是沙巴东海岸的一个镇与县，由县议会管辖，议员由州政府任命；县域 2020 年人口约 14 万，巴瑶族是主要族群，还有苏禄人、菲律宾人与客家华人，是马来西亚唯一有查瓦卡诺语社群的地方。镇子本身很小，一条海边的街与水上木屋村，海鲜市场是它的中心；它是潜水的出发港：西巴丹岛在东南 36 公里，每天限量发放许可、只能当天往返，马布岛与卡帕莱的水上屋在附近，敦沙卡兰海洋公园的博安波岛在北面；最近的机场在斗湖，约 100 公里。这一带属于沙巴东海岸安全区，出行前应查最新的旅行提示。初来的人最容易犯的错，是以为可以住在西巴丹岛上，而岛上不许过夜，潜水者住在马布或镇上。",
     layout:
       "镇子在一个小半岛上，码头区是中心，潜店、旅馆和海鲜餐馆集中在海边；海上的木屋村在镇边。马布岛和卡帕莱岛在南面约40分钟船程，西巴丹在马布岛再往南，是海洋公园、不能住宿；敦沙卡兰海洋公园（珍珠岛、曼达布安岛）在东北约30–45分钟船程。斗湖在西面约100公里，机场在斗湖。",
     gettingAround:
@@ -8744,6 +9143,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sibu: {
     identity:
       "诗巫在马来西亚砂拉越州中部的拉让江（马来西亚最长的河）与伊干河汇合处，离海约60公里，人口约16万（2010年）。1901年福州人黄乃裳带领移民在此垦殖，诗巫因此成为“新福州”，福州话、光饼和干盘面（kampua mee）是城市的印记；1928年大火后幸存的大伯公庙和七层宝塔是地标，天鹅像是城市象征，中央市场是砂拉越最大的市场。从诗巫沿拉让江坐快艇可到加帛、峇拉加的内陆长屋区，7月的婆罗洲文化节在市镇广场举行。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sibu (Sarawak; municipal council appointed; ~300,000 2020; Rajang River ~60 km from the sea, express boats to Kapit; Foochow settlers under Wong Nai Siong 1901, Chinese 52.1%, largely Christian; Tua Pek Kong pagoda; Central Market; timber and 40 shipyards; airport 1994; swan symbol)
+    howItWorks:
+      "诗巫是砂拉越的第三大城市，由诗巫市议会管辖，议员由州政府任命；2020 年人口约 30 万，华人约占一半，且多为基督徒——这在马来西亚的城市里少见。1901 年黄乃裳带着一千多名福州移民来此垦荒，福州话与福州面至今是本地的日常，天鹅是城市的象征。城市在拉让江边，离海约 60 公里，江是砂拉越最长的河，快艇从这里溯江开往加帕，伊班人的长屋散在上游；中央市场是马来西亚最大的原住民市集，永安亭大伯公庙的宝塔在江边；木材加工与四十多家造船厂是它的产业，机场 1994 年启用。初来的人最容易犯的错，是把诗巫当作一座沿海城市，而它在内河上，出海要顺江走一整天。",
     layout:
       "市镇在拉让江北岸，江边是快艇码头、大伯公庙和七层宝塔、中央市场，市镇广场和天鹅像在江边的主街上，老街的店屋在码头后面。诗巫机场在东南约23公里。巴旺阿山的伊班长屋在江下游约40公里，加帛在上游约140公里（快艇约3小时）。",
     gettingAround:
@@ -8824,6 +9226,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kharkhorin: {
     identity:
       "哈拉和林是13至14世纪蒙古帝国的都城遗址所在地，坐落于鄂尔浑河谷，如今是探索鄂尔浑河谷文化景观（2004年列入世界遗产）的核心门户。这条河谷水草丰美、扼中部草原要冲，在蒙古帝国之前就已是突厥、回鹘等草原政权的中心（回鹘都城哈剌巴剌哈孙遗址就在附近），窝阔台把帝国都城定在这里也是沿袭了这一传统；1260年忽必烈即位后将都城迁往上都，哈拉和林自此逐渐衰落。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kharkhorin (Mongolia; town and sum centre of Övörkhangai Province, 14,765 residents in 2017 over 20.5 km²; in the lower Orkhon valley where the Khangai mountains meet the central steppe; the site of Karakorum, capital of the Mongol Empire in the 13th century; Erdene Zuu monastery; the Orkhon Valley Cultural Landscape UNESCO World Heritage; Kharakhorum Museum; tourism and irrigated agriculture; airport with flights to Ulaanbaatar; coal-fired heating September to May)
+    howItWorks:
+      "哈拉和林是蒙古国前杭爱省的一个苏木中心，2017 年人口约 1.48 万；蒙古的地方行政分省（艾马格）与苏木两级，省长由中央任命、地方议会选举产生，教育与医疗按省统筹。镇子在鄂尔浑河下游的谷地，杭爱山脉在这里落到中部草原上。它的分量全在脚下：13 世纪蒙古帝国的都城哈拉和林就在此处，1235 年前后建成，是当时横跨欧亚的这个帝国的政治中心，后来被毁，如今地面上只剩基址与散落的石构件。1585 年建成的额尔德尼召寺就用废墟里的石料砌起，围墙上一百零八座白塔是它的标志，寺院至今在使用。鄂尔浑河谷文化景观 2004 年列入世界遗产，覆盖的正是这一带。旅游与河谷的灌溉农业是本地经济，乌兰巴托在东面约 360 公里。初来的人最容易犯的错，是以为能看到一座都城，而地面上的城早已不存，看的是遗址与寺。",
     layout:
       "现代哈拉和林镇紧邻古城遗址与额尔德尼召寺而建，遗址范围大部分尚待考古发掘，地表可见部分城墙与建筑基址痕迹。",
     gettingAround:
@@ -8838,6 +9243,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   moron: {
     identity:
       "木伦是蒙古北部库苏古尔省首府，人口约4.7万，是探索库苏古尔湖的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mörön (Mongolia; administrative centre of Khövsgöl Province, about 46,918 residents, the fifth most populous city in Mongolia; on the Delgermörön river at 1,710 m, the name meaning "river"; grown from a monastery of about 1809–1811 that housed some 1,300 monks before its destruction in 1937; Danzadardscha Khiid rebuilt in 1990; Museum of Khövsgöl Province with over 3,600 artifacts; electricity in 2004, paved road to Ulaanbaatar completed December 2014; Mörön Airport since 1957; record low −47.2 °C)
+    howItWorks:
+      "木伦是蒙古国库苏古尔省的省会，人口约 4.7 万，是蒙古第五大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中了全省的行政、医疗与中学。城市在德勒格尔木伦河边，海拔约 1,710 米，名字在蒙古语里就是“河”的意思。它从一座寺院长起来：约 1809 至 1811 年间此地建寺，鼎盛时住着约一千三百名僧人，1937 年被毁，1990 年在原址附近重建了丹赞达尔扎寺。省博物馆藏有三千六百多件文物。这座城的现代化来得很晚——2004 年才通电，到乌兰巴托的柏油公路 2014 年 12 月才修通，机场则从 1957 年就在运行，因此长期以来飞机比公路更管用。库苏古尔湖在北面约 100 公里的哈特嘎勒，省内还有驯鹿放牧的查坦人。冬季最低纪录约零下 47 度。初来的人最容易犯的错，是把木伦当作湖边的镇，而湖在一百公里之外。",
     layout:
       "城市坐落于德勒格尔河谷平地，周边被森林覆盖的山地环绕，与库苏古尔湖之间由公路相连。",
     gettingAround:
@@ -8852,6 +9260,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dalanzadgad: {
     identity:
       "达兰扎德嘎德是蒙古南部南戈壁省首府，人口约3.3万，是探索戈壁古尔班赛罕国家公园的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dalanzadgad (Mongolia; capital of Ömnögovi (South Gobi) Province, about 32,674 residents in 2024 over 476 km², divided into ten bags; 540 km south of Ulaanbaatar, paved road completed 2014; one of the warmest places in Mongolia in winter, extremes −36.1 °C to 39.9 °C, annual precipitation 134 mm; Yolyn Am gorge in Gurvan Saikhan National Park with streams and grass in the desert; dinosaur fossil sites and major mining in the province; airport runway the second longest in the country)
+    howItWorks:
+      "达兰扎德嘎德是蒙古国南戈壁省的省会，2024 年人口约 3.3 万，市域约 476 平方公里，下分十个“巴格”；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。它在戈壁的中部，乌兰巴托在北面 540 公里，柏油公路 2014 年才通到这里。这里的气候是戈壁式的：年降水量只有约 134 毫米，极端气温从零下 36 度到近 40 度，但按蒙古的标准，它的冬天算是全国最暖的地方之一。城西约 50 公里的三美山国家公园里有约林安峡谷，谷底有流水与青草，夏天仍能见到残冰，与四周的荒漠形成反差；洪高林沙丘与巴彦扎格的“火焰崖”分别在更远处，后者以恐龙蛋化石的发现闻名。省内的奥尤陶勒盖与塔本陶勒盖是蒙古最重要的两处矿区，采矿与旅游共同支撑本地。机场的跑道长度在全国仅次于乌兰巴托。初来的人最容易犯的错，是以为景点就在城边，而戈壁的距离以数百公里计。",
     layout:
       "城市坐落于古尔班赛罕山北麓的戈壁荒漠边缘，是南戈壁地区行政与物资补给中心。",
     gettingAround:
@@ -8866,6 +9277,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   khovd: {
     identity:
       "科布多是蒙古西部科布多省首府，人口约3.1万，坐落于科布多河畔，是探索蒙古阿尔泰山与西部多民族聚居区的重要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Khovd (Mongolia; capital of Khovd Province in the west, about 29,800 residents in 2017; at the foot of the Altai mountains, bisected by the Buyant river; founded in 1685 by Galdan Boshugtu Khan of the Dzungar Khanate, later moved to the present site on the Buyant; Mongolian forces took the city on 7 August 1912 and destroyed the garrisons; ethnically diverse — Khalkha, Zakhchin, Torghut, Uriankhai, Kazakh and others; Khar-Us Lake protected area about 25 km east; Museum of Khovd Province; cold desert climate with records near −45 °C)
+    howItWorks:
+      "科布多是蒙古国西部科布多省的省会，2017 年人口约 2.98 万；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的行政、医疗与高等教育，科布多大学在这里。城市在阿尔泰山脉的东麓，布延特河把它分成两半。1685 年准噶尔的噶尔丹博硕克图汗在这一带筑城，后来城址迁到布延特河边的今址；清代它是西部边疆的驻防重镇，1912 年 8 月 7 日蒙古军队攻下此城并摧毁了驻军营地，老城墙的遗迹仍在城外。这里是蒙古族群最杂的城市之一，哈拉哈、扎哈沁、土尔扈特、乌梁海与哈萨克等十多个族群共居，语言与习俗各不相同。东面约 25 公里是哈日乌斯湖国家公园，是候鸟的重要栖息地。气候属寒漠，冬季最低纪录接近零下 45 度。初来的人最容易犯的错，是以为蒙古西部只有牧民，而这座城是一整个省的行政与大学中心。",
     layout:
       "城市沿科布多河两岸展开，是蒙古西部历史上多民族（蒙古族、哈萨克族、图瓦人等）聚居与贸易往来的传统中心。",
     gettingAround:
@@ -8880,6 +9294,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   olgii: {
     identity:
       "乌力吉是蒙古最西端巴彦乌列盖省首府，人口约3万，是蒙古境内哈萨克族的主要聚居区，也是探索塔王博格达山群的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ölgii and Bayan-Ölgii Province (Mongolia; the westernmost province, established 1940 with its capital at Ölgii, 45,704.89 km², about 110,799 residents in 2024, the country's only Kazakh-majority and Muslim aimag with about 93 per cent Kazakh; the Abu-Bakr Siddiq central mosque in Ölgii; an estimated 80 per cent of the world's eagle hunters live in the province, with a Golden Eagle Festival each October; Altai Tavan Bogd National Park 6,362 km² with Khüiten Peak 4,374 m, Mongolia's highest; the Khovd river rises here; Ölgii Airport with flights to Ulaanbaatar; 2.3 million head of livestock in 2022)
+    howItWorks:
+      "乌力吉是蒙古国巴彦乌列盖省的省会；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的行政、医疗与中等教育。这个省 1940 年设立，位于蒙古最西端，面积约 4.57 万平方公里，2024 年人口约 11 万，其中约九成三是哈萨克族——它是蒙古唯一以哈萨克族为主、以伊斯兰教为主要信仰的省，因此城里通行哈萨克语，阿布伯克尔清真寺立在中心，节庆与饮食都与蒙古其他地方不同。据估计，世界上约八成的驯鹰人生活在这个省，每年十月的金雕节把他们聚到乌力吉城外，是本地最大的活动。科布多河发源于这一带；阿尔泰塔班博格德国家公园面积 6,362 平方公里，蒙古最高峰奎屯峰海拔 4,374 米在其中。畜牧是主业，2022 年全省牲畜 230 万头。初来的人最容易犯的错，是以为蒙古各地都一样，而这里的语言与宗教自成一格。",
     layout:
       "城市坐落于蒙古阿尔泰山麓的河谷地带，是巴彦乌列盖省的行政与文化中心，哈萨克传统文化在此地保留完整。",
     gettingAround:
@@ -8894,6 +9311,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   choibalsan: {
     identity:
       "乔巴山是蒙古东部道尔诺德省首府，人口约3.9万，坐落于克鲁伦河畔，是探索蒙古东部达乌尔草原的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Choibalsan (Mongolia; capital of Dornod Province in the east, 38,537 residents in 2025, the fourth-largest city in Mongolia after Ulaanbaatar, Darkhan and Erdenet; on the Kherlen river at 747 m; called Bayan Tümen until 1941, renamed for the 20th anniversary of the 1921 revolution after Khorloogiin Choibalsan; mainly Khalkha with Buryat and other groups; Choibalsan Airport with flights to Ulaanbaatar and Chinese cities; a railway to the Trans-Siberian, passenger service ending at Chuluunkhoroot on the border; museum to Georgy Zhukov near the site of the Battle of Khalkhin Gol; extremes −41.1 °C to 41.9 °C)
+    howItWorks:
+      "乔巴山是蒙古国东部道尔诺德省的省会，2025 年人口约 3.85 万，是继乌兰巴托、达尔汗与额尔登特之后蒙古第四大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。城市在克鲁伦河边，海拔约 747 米，四周是蒙古东部一望无际的草原——这片草原是世界上保存最完整的温带草原之一，蒙原羚成群迁徙的地方就在附近。它原名巴彦图门，1941 年为纪念 1921 年革命二十周年，改用当时领导人霍尔洛·乔巴山的名字。20 世纪它是通往北方铁路的节点，一条支线从这里接上西伯利亚大铁路，但客运只开到边境的楚伦霍洛特。城郊有纪念格奥尔基·朱可夫的博物馆，因为 1939 年的哈拉哈河战役就发生在这个省。机场有飞往乌兰巴托与中国城市的航班。极端气温从零下 41 度到近 42 度。初来的人最容易犯的错，是以为可以坐火车从这里出境，而客运列车只到边境为止。",
     layout:
       "城市沿克鲁伦河两岸展开，是蒙古东部草原地带最大的城市与区域行政中心。",
     gettingAround:
@@ -8908,6 +9328,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tsetserleg: {
     identity:
       "车车尔勒格是蒙古中部阿尔汗盖省首府，人口约1.7万，坐落于杭爱山东麓，是探索科尔戈—特日和音查干湖国家公园的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tsetserleg (Mongolia; capital of Arkhangai Province, 21,620 residents in 2017 over 536 km² at 1,691 m; 600 km south-west of Ulaanbaatar on the north-eastern slopes of the Khangai mountains; founded around 1631, the Zayiin Gegeen Monastery established in the early 1680s, its main temple now the provincial museum; a dry-winter subarctic climate milder than the surrounding region, January nights about −15 °C to −25 °C; airport with connections to Ulaanbaatar; theatre, hospital and agricultural college; food processing the main industry)
+    howItWorks:
+      "车车尔勒格是蒙古国阿尔汗盖省的省会，2017 年人口约 2.16 万，市域约 536 平方公里，海拔约 1,691 米；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的医院、剧院与中等教育。城市在杭爱山脉的东北坡上，背靠布尔干山，乌兰巴托在东面约 600 公里。它约建于 1631 年，1680 年代初这里建起扎音格根寺，20 世纪寺庙停用，主殿如今是阿尔汗盖省博物馆，山坡上的白色佛像与寺墙是全城的背景。地形给了它一个特别之处：虽在高原上，它的冬天比周边缓和，一月夜间约在零下 15 至 25 度，在蒙古已算温和。食品加工是本地的主要工业，另有农牧学院。城外的岑赫尔温泉与更西的白湖是省内的去处，都需数小时车程。初来的人最容易犯的错，是把它与同省另一个叫车车尔勒格的苏木混淆，那是省北部的另一个行政单位。",
     layout:
       "城市依托山谷地形而建，藏传佛教寺院建筑与苏联时期规划的城镇格局并存。",
     gettingAround:
@@ -9022,6 +9445,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   legazpi: {
     identity:
       "黎牙实比是阿尔拜省首府，人口逾21万，坐落于阿尔拜湾岸边、马荣火山南麓，是眺望马荣火山对称锥形景观的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Legazpi (Philippines; component city and capital of Albay province and the regional centre of Bicol, 153.70 km² with 210,616 residents in the 2024 census, about 560 km south-east of Manila on Albay Gulf; south of Mayon Volcano, an active stratovolcano of near-symmetrical cone; originally the coastal settlement of Sawangan, a Spanish mission town from 1587, renamed in 1856 after Miguel López de Legazpi; served by Bicol International Airport in neighbouring Daraga; topped the National Competitiveness Council index for component cities in 2018)
+    howItWorks:
+      "黎牙实比是菲律宾阿尔拜省的省会，属“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，同时是比科尔大区的行政中心；市域约 154 平方公里，2024 年人口约 21.1 万，在马尼拉东南约 560 公里的阿尔拜湾边。城市的一切都在马荣火山脚下展开：这座活火山以近乎完美的对称锥体著称，从市区抬头就能看见，也决定了这里的风险——熔岩与火山泥流的路径、疏散区的划分都按它来定，1814 年喷发掩埋的卡格沙瓦教堂只剩钟楼露在地面，如今是遗址公园。它原是名叫萨望甘的海边聚落，1587 年成为西班牙传教据点，1856 年改用远征队指挥官米格尔·洛佩斯·德·黎牙实比的名字。机场不在市内，而在相邻的达拉加，2021 年启用。台风季这一带首当其冲。初来的人最容易犯的错，是按晴天的照片来安排行程，而马荣多数日子被云挡住。",
     layout:
       "市中心沿阿尔拜湾分布，甲描育遗址等历史地标位于市郊，多个观景点可从不同角度眺望马荣火山完整锥体。",
     gettingAround:
@@ -9036,6 +9462,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tagaytay: {
     identity:
       "塔加泰是甲米地省一座高原小城，人口逾10万，坐落于海拔约640米的高地，是眺望塔阿尔湖火山嵌套景观的知名观景城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tagaytay (Philippines; component city in Cavite province about 59 km from Manila via Aguinaldo Highway, at roughly 634 m on the Tagaytay Ridge; 87,811 residents in the 2024 census; the ridge looks across the caldera to Taal Volcano and Taal Lake, which lie in Batangas province, not in Tagaytay; average temperature about 22 °C, rarely above 31 °C; chartered as a city in 1938; called the second summer capital of the Philippines after Baguio; bulalo and tilapia from Taal Lake; Sky Ranch, People's Park in the Sky; agriculture in pineapples, coffee and cut flowers)
+    howItWorks:
+      "塔加泰是菲律宾甲米地省的一座“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，2024 年人口约 8.8 万，在马尼拉以南约 59 公里。它建在一道海拔约 634 米的山脊上，气温常年在 22 度上下，很少超过 31 度，因此被称作菲律宾继碧瑶之后的“第二避暑之都”，周末马尼拉人上山，公路常年堵塞。山脊的另一侧是一个巨大的破火山口，口中蓄水成塔尔湖，湖中又有塔尔火山——这是它最著名的景观，但湖与火山都在南面的八打雁省境内，不属于这座城，塔加泰提供的是看它们的位置。2020 年 1 月塔尔火山喷发，火山灰落到马尼拉，湖区的村落疏散。本地饮食以牛骨汤“布拉洛”与塔尔湖的罗非鱼闻名，农业产菠萝、咖啡与鲜花。初来的人最容易犯的错，是以为火山在塔加泰境内，而这座城只是对岸的观景台。",
     layout:
       "城镇沿塔阿尔湖北岸山脊分布，多处观景台与餐厅面向塔阿尔湖开放，是马尼拉都会区居民周末近郊出游的热门目的地。",
     gettingAround:
@@ -9050,6 +9479,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   boracay: {
     identity:
       "长滩岛是阿克兰省马来镇辖下一座知名度假岛屿，常住人口约3.8万，以白沙滩闻名，是菲律宾最知名的海岛度假目的地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Boracay (Philippines; a 10.32 km² island in Aklan province about 0.8 km off the north-west coast of Panay, 37,802 residents in 2020 across three barangays under the municipality of Malay, Western Visayas; originally inhabited by the Panay Bukidnon and Ati peoples; a six-month closure from April 2018 ordered to fix sewage and environmental damage, administered by an inter-agency task force, reopened in October with a 30-metre buffer zone from the waterline; e-trikes and bicycles on the island; access via Caticlan jetty and the airports at Caticlan and Kalibo; 2,155,217 visitors in 2025)
+    howItWorks:
+      "长滩岛是菲律宾阿克兰省的一座小岛，面积约 10.3 平方公里，2020 年人口约 3.8 万；岛不是一级行政区，而是分成三个“描笼涯”，归班乃岛上的马来镇管辖，因此这里的市政、税与执照都在对岸的镇政府。岛原是班乃布基农人与阿埃塔人的居住地。白沙滩长约四公里，沿岸按“一号、二号、三号站”分段，是全岛的主轴，酒店与餐厅都排在这条线上。2018 年 4 月起，为整治污水排放与环境破坏，政府下令全岛封闭半年，由跨部门工作组接管，同年 10 月重开，此后实行离岸 30 米的建筑退线与游客承载量上限——这套规则至今在执行，是理解这座岛现状的关键。岛上不通大型车辆，出行靠电动三轮与自行车；进岛经卡蒂克兰码头，机场在卡蒂克兰与卡利博。初来的人最容易犯的错，是以为岛上有机场，而航班落在对岸。",
     layout:
       "岛屿呈狭长哑铃形，白沙滩沿岛屿西岸绵延约4公里，分为一号、二号、三号站，岛屿东岸相对开发较少、保留自然海岸景观。",
     gettingAround:
@@ -9064,6 +9496,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "el-nido-town": {
     identity:
       "艾尔尼多镇是巴拉望岛北端一座小镇，人口约4.6万，是探索巴奎特群岛喀斯特岛礁景观的核心门户城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): El Nido (Philippines; municipality in northern Palawan with about 51,367 residents in the 2024 census, on Bacuit Bay among 45 islands and islets, the highest point Cadlao Island at 640 m; known as Bacuit until 17 June 1954, renamed El Nido, Spanish for "the nest", after the edible swiftlet nests in its limestone cliffs; the El Nido-Taytay Managed Resource Protected Area covers 903.21 km², the largest marine protected area in the Philippines, with mangroves, about 100 coral species and endangered turtles; about 269 km north-east of Puerto Princesa; El Nido (Lio) Airport)
+    howItWorks:
+      "艾尔尼多是菲律宾巴拉望省北端的一个市镇，由民选的镇长与议会治理，在省的管辖之下，2024 年人口约 5.1 万。镇区挤在一排石灰岩崖与海之间的窄地上，面朝布库特湾，湾里散着四十五座岛屿与礁石，最高的卡德劳岛达 640 米——这种喀斯特地貌是这里的全部卖点，也是行程的组织方式：镇上出发的跳岛游按 A、B、C、D 四条固定路线编排，由市镇统一管理。地名来自西班牙语的“巢”：崖壁上的金丝燕巢自古被采集，1954 年 6 月 17 日镇名由原来的巴库伊特改成艾尔尼多。整片海域属于艾尔尼多—泰泰资源管理保护区，面积 903 平方公里，是菲律宾最大的海洋保护区，进入需交环境费。普林塞萨港在南面约 269 公里，陆路要走五六个小时；本地有小型机场。初来的人最容易犯的错，是以为镇上就有沙滩，而好的海滩都在船程之外的岛上。",
     layout:
       "镇中心沿艾尔尼多湾分布，多家潜水店与跳岛游服务集中于海滨主街，镇区背靠陡峭的喀斯特山体。",
     gettingAround:
@@ -9078,6 +9513,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "coron-town": {
     identity:
       "科隆镇是巴拉望岛东北部布桑加岛上一座小镇，人口约5.5万，是探索科隆—卡拉棉群岛石灰岩地貌与二战沉船潜水的核心门户城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Coron (Philippines; municipality covering the eastern part of Busuanga Island, Coron Island and about 50 islets in northern Palawan, 689.10 km² with about 69,439 residents in 2024; the town proper is on Busuanga while Coron Island lies opposite; originally Bancuang, renamed by the Spanish, a municipality from 2 June 1902; Japanese occupation May 1942 to March 1945; about a dozen sunken Japanese warships from the aerial raid of September 1944 lie at 10–40 m and are the main dive sites; Siete Pecados Marine Park, 2024 Blue Park Award; Francisco B. Reyes Airport with flights to Manila, Cebu and Angeles City)
+    howItWorks:
+      "科隆镇是菲律宾巴拉望省北部的一个市镇，由民选的镇长与议会治理，辖布桑加岛的东半部、科隆岛以及约五十座小岛，总面积约 689 平方公里，2024 年人口约 6.9 万。这里有一个常被弄混的关系：镇子在布桑加岛上，而对面那座峭壁林立、有卡扬根湖与梭鱼湖的科隆岛是另一座岛，属于原住民塔格班瓦人的祖传领地，出入受他们管理，只能按规定的路线与时间进入。镇名原为班庫昂，西班牙人改成今天的写法，1902 年 6 月 2 日设镇。1944 年 9 月美军空袭击沉了停泊在这片海域的日本船只，十多艘沉船躺在水下十到四十米，成为世界知名的沉船潜点，与镇外的温泉一起支撑着旅游业；七罪岛海洋公园 2024 年获得蓝色公园奖。机场在布桑加岛，有飞往马尼拉与宿务的航班。初来的人最容易犯的错，是把科隆镇与科隆岛当成一个地方，而它们隔着一道海。",
     layout:
       "镇中心沿科隆湾分布，是布桑加岛及周边卡拉棉群岛的行政与物资补给中心，通往卡杨甘湖等岛内景点需转乘公路或渡船。",
     gettingAround:
@@ -9092,6 +9530,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tagbilaran: {
     identity:
       "塔比拉兰是保和省首府，人口逾10.6万，坐落于保和岛西南岸，是探索巧克力山与保和岛自然景观的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tagbilaran (Philippines; component city and capital of Bohol province in Central Visayas, 36.50 km² with 106,120 residents in the 2024 census, the most populous in the province; about 630 km south-east of Manila and 72 km south of Cebu City; established as a town in 1742 and chartered as a city in 1966; the blood compact between Miguel López de Legazpi and Datu Sikatuna in 1565; the Chocolate Hills at Carmen and tarsier sanctuaries inland; Panglao island across a causeway with Bohol-Panglao International Airport opened 2018; ferry to Cebu about two hours; magnitude 7.2 earthquake in 2013)
+    howItWorks:
+      "塔比拉兰是菲律宾保和省的省会，属“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，市域约 36.5 平方公里，2024 年人口约 10.6 万，是全省人口最多的地方。它的角色是门户而不是目的地：省内著名的巧克力山在内陆的卡门镇，眼镜猴保护区在科雷利亚，都要从这里出发走一到两小时；邦劳岛在南面，一条堤道相连，2018 年启用的保和—邦劳国际机场就在那座岛上，海滩与潜点也在那边。城市 1742 年设镇，1966 年设市；1565 年米格尔·洛佩斯·德·黎牙实比与本地首领西卡图纳在这一带以血为盟，是菲律宾史上常被引用的一幕，纪念碑立在城郊。宿务在北面，渡轮约两小时。2013 年 7.2 级地震损毁了保和岛多座西班牙时期的石造教堂，修复工作持续多年。初来的人最容易犯的错，是以为机场在市内，而它在跨过堤道的邦劳岛上。",
     layout:
       "市中心沿保和海峡分布，是保和岛行政与交通枢纽，前往巧克力山与内陆眼镜猴保护区需向岛屿中部行进。",
     gettingAround:
@@ -9106,6 +9547,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   vigan: {
     identity:
       "维甘是伊罗戈斯苏尔省首府，人口逾5.4万，坐落于吕宋岛西北海岸，是菲律宾保存最完整的西班牙殖民时期老城，1999年列入UNESCO世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vigan (Philippines; component city and capital of Ilocos Sur on the west coast of Luzon, about 404 km from Manila, 54,498 residents in the 2024 census; the Historic Town of Vigan inscribed by UNESCO in 1999 as the best preserved example of a Spanish colonial town in Asia, and named one of the New7Wonders Cities in 2015; a fusion of Filipino, Chinese, Spanish, European and Mexican influences; Calle Crisologo with its sett paving and ancestral houses; the Mestizo District of merchant dwellings; bahay na bato houses with capiz-shell windows; kalesa horse carriages; Plaza Salcedo and Plaza Burgos; Pagburnayan pottery and weaving; Vigan longganisa)
+    howItWorks:
+      "维甘是菲律宾南伊罗戈省的省会，属“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，2024 年人口约 5.4 万，在吕宋岛西岸、马尼拉以北约 404 公里。1999 年“维甘历史城镇”列入世界遗产，理由是它是亚洲保存最完好的西班牙殖民城镇范例之一，2015 年又入选“新七大奇迹城市”。它保存下来的原因在于结构：老城以萨尔塞多广场与布尔戈斯广场为中心，四周是“混血区”，那是华人与西班牙人通婚的商人家族聚居之处，他们的宅子叫“石屋”——下层石砌、上层木造、窗格镶贝壳，把闽南、西班牙与热带气候的做法合在一起。克里索洛戈街的石块路面与两侧连排的老宅是这一片的核心，马车至今在街上载客。帕格布尔纳扬的陶窑与手织布仍在生产，维甘香肠是本地食物。机场在北面 80 公里的拉瓦格。初来的人最容易犯的错，是把老城当作复原的布景，而这些宅子多为原物，至今有人住。",
     layout:
       "老城核心区街道呈棋盘式布局，两侧保留大量西班牙殖民时期石砌建筑与骑楼商铺，横甘街是老城最具代表性的历史街区。",
     gettingAround:
@@ -9152,6 +9596,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sentosa: {
     identity:
       "圣淘沙是新加坡南部一座占地约500公顷的度假岛屿，原名“背后是死亡之岛”，1972年更名为“圣淘沙”（马来语意为“和平与宁静”），如今是新加坡最主要的海岛度假与主题乐园目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sentosa (Singapore; an island of about 4.71 km² off the southern coast across Keppel Harbour, the fourth-largest island apart from the main island; formerly Pulau Blakang Mati, a British military fortress and a Japanese prisoner-of-war camp in the Second World War, renamed Sentosa in 1972, the name from Sanskrit for peace and tranquillity; developed and managed by the Sentosa Development Corporation, a statutory board established in 1972, rather than as an ordinary planning area; about 25 million visitors a year; Resorts World Sentosa and Universal Studios Singapore; the artificial beaches Palawan, Siloso and Tanjong; the cable car, the Sentosa Express monorail and the boardwalk; Fort Siloso)
+    howItWorks:
+      "圣淘沙是新加坡南岸外的一座岛，面积约 4.71 平方公里，与本岛之间隔着吉宝海港。新加坡没有地方政府层级，全岛由中央政府直接治理，但这座岛更特别：它由 1972 年设立的法定机构“圣淘沙发展局”开发与管理，规划、经营与设施都归这一个机构，而不是像普通规划区那样由市区重建局与各部门分管。它原名“布拉干玛蒂岛”，长期是英军的海防要塞，二战期间曾用作战俘营，1972 年改名圣淘沙，名字取自梵语，意为“安宁”。此后它被整体改造成度假岛：圣淘沙名胜世界与新加坡环球影城在岛的中部，西罗索、巴拉湾与丹戎三片沙滩是人工填出来的，西罗索炮台保留着军事遗迹。上岛有三条路——缆车、圣淘沙捷运轻轨与一条步行栈道，每年约两千五百万人次到访。初来的人最容易犯的错，是以为这是一座天然的海岛，而它的沙滩与地形大半是造出来的。",
     layout:
       "岛屿近70%仍为天然雨林覆盖，南岸分布有多处沙滩与度假村，圣淘沙名胜世界（环球影城所在地）位于岛屿北部，与新加坡本岛之间有跨海缆车、单轨列车与堤道相连。",
     gettingAround:
@@ -9166,6 +9613,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "chinatown-singapore": {
     identity:
       "牛车水是新加坡历史最悠久的华人聚居区之一，中文旧称源于早年当地靠牛车运水供应居民用水；这里从19世纪的移民落脚点，逐渐发展为如今保留大量骑楼与庙宇的历史文化街区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chinatown, Singapore (a subzone and historic enclave within the Outram planning area of the Central Area, made up of five precincts developed between the 1820s and 1920s; under the Raffles Town Plan of 1822 areas were designated for different communities, the Chinese allotted land south-west of the Singapore River; the Chinese and Malay names, Kreta Ayer, come from the bullock water-carts that carried the district's water supply in the 19th century; the Buddha Tooth Relic Temple, Sri Mariamman Temple and Thian Hock Keng; the Chinatown Complex hawker centre; MRT connections; debate over conservation and commercialisation; spans the Tanjong Pagar and Jalan Besar constituencies)
+    howItWorks:
+      "牛车水是新加坡中区欧南规划区之下的一个分区，由 1820 至 1920 年代陆续成形的五个片区组成。新加坡没有地方政府层级，全岛由中央政府直接治理，市区重建局负责规划与保护，1989 年起把这一带的店屋整片列为保留区，因此外墙、门窗与屋顶的做法都受规定约束，改建只能在框架内进行。这片街区的由来是一次行政划分：1822 年的莱佛士市镇规划把新加坡河西南一带划给华人聚居，族群分区的格局由此定下。中文名“牛车水”与马来名 Kreta Ayer 同义，都指 19 世纪用牛车从别处运水到这一带的做法——这里当年没有自来水。今天它并不只有华人庙宇：佛牙寺、马里安曼兴都庙、天福宫与詹美回教堂在几条街之内并立，这种并置正是老城区的常态。牛车水熟食中心是本地最大的小贩中心之一。初来的人最容易犯的错，是把牛车水当作新加坡华人的聚居区，而全岛七成以上是华人，这里是历史街区而非族群飞地。",
     layout:
       "街区以史密斯街、宝塔街、丁加奴街等几条老街为核心，两三层高的南洋骑楼沿街密集排列，昔日按方言群聚居（福建、潮州、广东、海南、客家、兴化、福州人分区而居），如今仍能从街巷名称与庙宇分布看出这种早期分区的痕迹；佛牙寺与马里安曼兴都庙相距仅几百米，是华人与印度裔信仰在同一街区并存的直观例证。",
     gettingAround:
@@ -9180,6 +9630,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kampong-glam": {
     identity:
       "甘榜格南是新加坡的马来—穆斯林历史文化区，1822年莱佛士城市规划将这片区域划给马来人、武吉士人与阿拉伯人，1823年英属东印度公司正式把其中一块划给柔佛苏丹侯赛因沙阿作为王室驻地，是新加坡少数保留完整王室历史脉络的街区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kampong Glam (Singapore; a neighbourhood in the Rochor planning area known as the Muslim quarter; the name from the gelam tree, a Melaleuca species; home to Malay aristocracy before 1819, and under the Raffles Plan of 1822 designated for the Sultan and his household and for the Malay and Arab communities; the Sultan Mosque and Istana Kampong Glam, now the Malay Heritage Centre; restored shophouses along Arab Street, Haji Lane and Bussorah Street; traditional textile, blacksmith and religious-goods trades alongside galleries, cafes and design firms; the One Kampong Gelam association formed in 2014)
+    howItWorks:
+      "甘榜格南是新加坡梧槽规划区里的一片街区，常被称作“回教区”。新加坡没有地方政府层级，全岛由中央政府直接治理，市区重建局负责规划与保护，1989 年起这一带被划为保留区，店屋的立面与结构按规定修复，因此整片街区的外观是被制度固定下来的。地名来自本地的“格南树”，是一种白千层。1819 年之前这里是马来贵族的居住地；1822 年的莱佛士市镇规划把这一带划给苏丹及其家族，以及马来与阿拉伯社群——族群分区的安排在这里体现得最直接。苏丹回教堂的金顶是全区的地标，旁边的甘榜格南王宫现为马来文化馆。阿拉伯街与武吉士街一带原是布料、金饰、香料与朝觐用品的集散地，历史上前往麦加朝觐的行程多从这里安排；哈芝巷如今是小店与画廊。初来的人最容易犯的错，是以为这里只是餐饮与拍照的街区，而它至今仍是马来穆斯林社群的宗教与商业中心之一。",
     layout:
       "街区以苏丹回教堂为地理与视觉中心，哈芝巷与亚拉街一带的老店屋如今改造为咖啡馆、独立设计店与街头壁画聚集地，与庙宇周边保留的传统纺织品、香水与地毯商铺形成新旧混搭的街区肌理；旧王宫建筑群则是了解这段本土王室历史的核心场所。",
     gettingAround:
@@ -9194,6 +9647,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "little-india-singapore": {
     identity:
       "小印度是新加坡的印度裔历史文化区，19世纪因当地石灰窑与制砖业需要大量劳工而聚集印度移民，逐渐形成以实龙岗路为主轴的印度裔聚居与商贸区，1989年被列为保护区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Little India, Singapore (a district in the Rochor planning area east of the Singapore River, across from Chinatown and north of Kampong Glam, known within the Indian Singaporean community as Tekka; it grew from 19th-century cattle trading rather than from an allocation in the 1822 Raffles Town Plan, Indian migrant workers finding work in cattle rearing along the Serangoon River and settling permanently as Europeans left and the swamps were drained; gazetted as a conservation area on 7 July 1989; the Sri Veeramakaliamman Temple, the Tekka Centre market, Mustafa Centre and several mosques and temples; Deepavali and Thaipusam; served by the North East and Downtown MRT lines)
+    howItWorks:
+      "小印度是新加坡梧槽规划区里的一片街区，在新加坡河以东，与牛车水隔河相对，甘榜格南在其南面；本地印度裔社群多称它“竹脚”。新加坡没有地方政府层级，全岛由中央政府直接治理，市区重建局负责规划与保护，1989 年 7 月 7 日这一带被正式划为保留区。它的来历与牛车水、甘榜格南不同：1822 年的莱佛士市镇规划并没有把这里划给印度人，它是自己长出来的——19 世纪实龙岗河一带是牛只交易与砖窑集中的地方，需要大量劳力，印度移民因这份工作聚居于此，欧洲商人迁走、沼泽排干之后便定居下来。因此这片街区的中心是实龙岗路，沿街是维拉玛卡里雅曼兴都庙、清真寺与竹脚巴刹，慕斯达法中心几乎彻夜营业。屠妖节与大宝森节期间街道张灯，周日是外籍劳工聚会的日子。初来的人最容易犯的错，是把三个族群街区当作同一套安排的产物，而小印度不是规划出来的。",
     layout:
       "实龙岗路是街区主轴，沿线密集分布香料铺、金饰店、纱丽布庄与印度教庙宇；竹脚中心（前身竹脚巴刹1915年建成，现建筑1982年迁建落成）是新加坡最大的湿货市场之一，也是品尝印度裔美食的核心场所；街区建筑保留大量色彩鲜艳的南洋骑楼立面，与庙宇的多彩塔楼相互呼应。",
     gettingAround:
@@ -9342,6 +9798,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "labuan-bajo": {
     identity:
       "拉布安巴焦是弗洛雷斯岛西端的港口小镇，人口约3万，是探索科莫多国家公园与周边岛屿的核心门户，近年因潜水与快艇跳岛游迅速发展为国际旅游城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Labuan Bajo (Indonesia; a fishing town and the seat of West Manggarai Regency in East Nusa Tenggara, on the western tip of Flores, with a mid-2024 population of about 7,226; the main entry point to Komodo National Park, a UNESCO World Heritage Site of 128 islands, the largest being Komodo and Rinca, home to the Komodo dragon; designated in 2018 as one of five "super-priority" tourism destinations to spread visitors beyond Bali, with 13 five-star hotels, 68 other hotels, 4 villas and 26 dormitories by 2019; Komodo Airport 3 km from the centre; waste management a growing pressure, with the park and surrounding area producing an average of about 13 tonnes of rubbish a day)
+    howItWorks:
+      "拉布安巴焦是印度尼西亚东努沙登加拉省西曼加莱县的县城，在弗洛勒斯岛西端，2024 年中人口约 7,226；印尼实行地方自治，省与县（市）两级的行政首长均由直选产生，县政府管本地事务，国家公园则由中央的林业与环境部门管辖，两套系统并行。这座镇的角色是门户：科莫多国家公园由 128 座岛屿组成，其中科莫多岛与林卡岛最大，科莫多巨蜥只分布在这一带，1991 年列入世界遗产，而进园的船几乎都从这个港口出发。2018 年印尼把它列为五个“超级优先”旅游目的地之一，用意是把游客从巴厘岛分流出去，此后新建了大量住宿——到 2019 年已有 13 家五星级酒店与近百家其他住宿。快速增长也带来压力：公园与周边区域平均每天产生约 13 吨垃圾，其中不少是难以回收的塑料。科莫多机场在镇外 3 公里，巴厘岛有直飞。初来的人最容易犯的错，是以为在镇上就能看到巨蜥，而它们只在几座岛上，需坐船前往。",
     layout:
       "小镇沿港湾分布，主街集中了酒店、潜水店与餐厅；前往科莫多国家公园需从港口乘船，单日往返或多日跳岛游是常见的游览方式。",
     gettingAround:
@@ -9356,6 +9815,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   balikpapan: {
     identity:
       "巴厘巴板是东加里曼丹省的石油工业城市，人口约70万，是印尼在婆罗洲最重要的经济中心之一，也是通往正在建设中的新首都努桑塔拉的主要空中门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Balikpapan (Indonesia; a seaport city on the east coast of Borneo in East Kalimantan, 757,418 residents in mid-2024, the second-largest city in the province after Samarinda, which is the provincial capital; the financial centre of Kalimantan; the first oil drilling began here on 10 February 1897, making it the birthplace of the Indonesian oil industry, with the Pertamina refinery still central and international energy companies keeping regional offices; originally a Buginese fishing settlement, developed by the Dutch Bataafsche Petroleum Maatschappij from 1907, devastated in the Second World War and the refinery rebuilt by 1950; the Sungai Wain protected forest and its sun bears, orangutans and proboscis monkeys under pressure; Sultan Aji Muhammad Sulaiman Sepinggan International Airport; a toll road to Samarinda completed in 2021)
+    howItWorks:
+      "巴厘巴板是印尼东加里曼丹省的港口城市，2024 年中人口 757,418；印尼实行地方自治，省与市（县）两级首长均由直选产生。这里有一处常被弄错的关系：巴厘巴板是全省最大的经济中心，却不是省会——省会在东北的三马林达，两地之间 2021 年通了收费高速。它的存在源于石油：1897 年 2 月 10 日这里打出第一口油井，是印尼石油工业的起点，1907 年起荷兰的石油公司在此建厂，二战中城市与炼油厂被摧毁，1950 年重建，如今国营的佩尔塔米纳炼油厂仍是全城的核心，国际能源公司在此设区域办公室，加里曼丹的金融业务也集中于此。因为围绕工业统一规划，这座城市的街道与市容比同规模的印尼城市整齐。近年它又多了一重身份：印尼正在建设的新首都努山塔拉就在西北邻近的两个县内，进出工地多经此城。宋盖韦恩保护林在市郊，是马来熊与长鼻猴的栖息地。初来的人最容易犯的错，是以为它是省会，而省会在三马林达。",
     layout:
       "城市沿望加锡海峡分布，市区以现代化商业区与石油产业设施为主；努桑塔拉新首都建设工地位于巴厘巴板以北约60至70公里处，是印尼正在推进的国家级迁都项目所在地。",
     gettingAround:
@@ -9370,6 +9832,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   manado: {
     identity:
       "万鸦老是北苏拉威西省首府，人口约45万，是印尼东部重要港口城市，也是布纳肯国家公园潜水胜地的门户，与全国以穆斯林为主体的宗教构成不同，本地以基督教徒为多数。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Manado (Indonesia; capital of North Sulawesi Province with about 462,658 residents in mid-2025 over 162.35 km²; the indigenous Minahasa people form the majority; Protestant Christianity is the major religion at about 62.89 per cent of residents in 2023, and the city is nicknamed the city of a thousand churches, hosting Indonesia's largest annual Christmas celebration; Bunaken National Marine Park offshore is the principal attraction; Mount Lokon, Mount Mahawu and Lake Linow nearby; Sam Ratulangi International Airport connects to major Asian cities; the local motto that all are family)
+    howItWorks:
+      "万鸦老是印尼北苏拉威西省的省会，2025 年中人口约 46.3 万，市域约 162 平方公里；印尼实行地方自治，省与市（县）两级首长均由直选产生，省会集中全省的行政、医疗与高等教育。这座城最鲜明的特征是它的构成：本地米纳哈萨人是主体族群，2023 年约 62.89% 的居民信奉基督新教，是印尼基督徒比例最高的大城市之一，市内教堂密集，本地因此自称“千教堂之城”，每年的圣诞庆典是全国规模最大的。它的地理同样特别：城市在苏拉威西岛北端的火山带上，洛孔火山与马哈武火山就在南面的托莫洪一带，利瑙湖是火山口湖；外海的布纳肯国家海洋公园以陡直的珊瑚墙闻名，是印尼最早设立的海洋公园之一，潜水者多为此而来。萨姆拉图兰吉国际机场有通往东亚多座城市的航班。本地菜以辛辣著称。初来的人最容易犯的错，是按印尼其他地区的习惯预期这里的饮食与节庆，而万鸦老在这两件事上都自成一格。",
     layout:
       "城市沿海湾分布，博尔瓦海滨大道是观赏日落与用餐的热门去处；万鸦老以北海域是布纳肯国家公园，是本地最主要的潜水与浮潜目的地。",
     gettingAround:
@@ -9384,6 +9849,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "pangkalan-bun": {
     identity:
       "邦卡兰文是中加里曼丹省一座沿河小城，人口约7万，是前往丹绒普丁国家公园观察野生红毛猩猩的主要门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pangkalan Bun (Indonesia; the seat of West Kotawaringin Regency in Central Kalimantan on Borneo, mostly on the eastern bank of the Arut river, with about 108,814 residents in mid-2024; Iskandar Airport connects to Jakarta, Surabaya and Semarang; Birutė Galdikas established Camp Leakey about 30 miles upriver for orangutan study and conservation, now part of Tanjung Puting National Park, reached by klotok riverboat from Kumai; a tropical rainforest climate with more than 2,600 mm of rain a year, at 24 m above sea level; the operational centre for the search after the 2014 AirAsia Flight 8501 crash in the nearby Karimata Strait)
+    howItWorks:
+      "邦卡兰文是印尼中加里曼丹省西哥打瓦林金县的县城，大部分市区在阿鲁特河东岸，2024 年中人口约 10.9 万；印尼实行地方自治，省与县（市）两级首长均由直选产生，县政府管本地事务，国家公园由中央的林业与环境部门管辖。这座镇的意义在于它是丹戎普丁国家公园的入口：公园在南面的半岛上，没有公路直达，游客要先到邻近的库迈港，换乘当地称作“克洛托克”的木船，沿塞科涅尔河逆流而上，通常在船上过夜——这套走法本身就是行程的一部分。1971 年比鲁特·加尔迪卡斯在河上游约五十公里处建立利基营地，研究并放归红毛猩猩，如今营地是公园的核心区之一。伊斯坎达尔机场在镇边，有飞雅加达、泗水与三宝垄的航班。这里属热带雨林气候，年降水超过 2,600 毫米，海拔仅 24 米，棕榈油种植是本地的大产业。初来的人最容易犯的错，是打算当天往返看猩猩，而进园至少要在船上住一晚。",
     layout:
       "城镇沿阿鲁河支流分布，前往丹绒普丁国家公园需从当地码头乘坐传统客船（克罗托克船）沿塞孔耶尔河深入园区，是当地最具特色的游览方式。",
     gettingAround:
@@ -9481,6 +9949,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   turkestan: {
     identity:
       "突厥斯坦是哈萨克斯坦南部一座历史古城，人口约20万，曾是丝绸之路上的重要商贸与宗教中心，因城内的亚萨维陵墓而闻名，是哈萨克斯坦最重要的伊斯兰朝圣与历史文化目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Turkistan (Kazakhstan; capital of Turkistan Region, 160 km north-west of Shymkent near the Syr Darya; the region was renamed and the capital moved here in 2018 when Shymkent became a city of republican status; population about 300,000 in 2023, about 52.5 per cent Kazakh and 45.2 per cent Uzbek; archaeological records from the 4th century, capital of the Kazakh Khanate between the 16th and 18th centuries; the Mausoleum of Khoja Ahmed Yasawi built by Timur in the 1390s, UNESCO World Heritage and on Kazakh banknotes until 2006; local tradition holds that three visits equal one pilgrimage to Mecca; proclaimed Spiritual Capital of the Turkic World by the Organization of Turkic States in 2021; Hazrat Sultan International Airport opened 2021; Ahmet Yassawi University)
+    howItWorks:
+      "突厥斯坦是哈萨克斯坦突厥斯坦州的首府，在奇姆肯特西北约 160 公里、锡尔河附近，2023 年人口约 30 万；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。它成为州府是近年的事：2018 年奇姆肯特升格为共和国直辖市，原南哈萨克斯坦州改名突厥斯坦州并把首府迁到这里，此后城市按规划大规模新建，2021 年启用了新的国际机场。这座城的分量来自一座建筑：14 世纪 90 年代帖木儿下令为苏非导师霍加·艾哈迈德·亚萨维修建陵墓，工程未完工即停，因此正面至今保留着未装饰的砖砌，反而成为研究帖木儿时期建筑做法的实物，2003 年列入世界遗产，是哈萨克斯坦第一处。16 至 18 世纪它是哈萨克汗国的都城，历代可汗葬在陵旁。当地有“来此三次相当于一次朝觐”的说法，2021 年突厥国家组织称它为“突厥世界的精神首都”。居民中哈萨克族约五成二、乌兹别克族约四成五。初来的人最容易犯的错，是以为这是一座老城，而城区大部分是近年新建的。",
     layout:
       "亚萨维陵墓是老城的核心地标，周边分布考古遗址公园与新建的宗教文化设施；城市近年经历大规模现代化改造，新建的哈兹拉特苏丹国际机场与整洁的市政广场是这一改造的直观体现。",
     gettingAround:
@@ -9495,6 +9966,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   karaganda: {
     identity:
       "卡拉干达是哈萨克丘陵中部的工业城市，人口逾50万，历史上因煤炭开采而兴起，是哈萨克斯坦中部重要的矿业与工业中心，也是探索卡尔卡拉雷山与别克套阿塔的门户之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Karaganda (Kazakhstan; capital of Karaganda Region in central Kazakhstan about 230 km south-east of Astana, 497,777 residents in the 2020 census, the fifth-most populous city in the country; coal mining anchors the economy, production beginning in 1930 and the railway arriving in February 1931 bringing supplies and qualified staff, with 8 coal mines today against as many as 26 in the Soviet period; the Karlag camp was in the region and by 1939 the city held about 100,000 people; ethnic Germans, many deported Volga Germans, were a large share of inhabitants in the 1940s and more than 100,000 people have emigrated to Germany since 1991; Karaganda State University; Sary-Arka Airport 20 km south-east; the highest PM2.5 levels measured among Kazakh cities from 2017 to 2022)
+    howItWorks:
+      "卡拉干达是哈萨克斯坦卡拉干达州的首府，在阿斯塔纳东南约 230 公里，2020 年人口 497,777，是全国第五大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这座城因煤而生：1930 年这里开始大规模采煤，1931 年 2 月铁路通到矿区，物资与技术人员随之进入，城市在草原上迅速成形，苏联时期最多时有 26 座煤矿，如今在产的约 8 座，钢铁重镇特米尔套在北面，两地构成一个连片的工业区。20 世纪的人口来源也与制度有关：卡拉干达劳改营设在本州，1939 年全城约十万人；1940 年代大量被强制迁移的伏尔加德意志人被安置在此，德裔曾占相当比例，1991 年后有十万以上的人移居德国，城市的族群构成因此几经变化。卡拉干达大学在城中，萨雷阿尔卡机场在东南 20 公里。2017 至 2022 年的监测中，这里的细颗粒物浓度在哈萨克斯坦各城市中最高。初来的人最容易犯的错，是以为草原上的城都很古老，而它不到一百年。",
     layout:
       "城市由苏联时期围绕煤矿工业发展而成，市中心保留大量苏联时期建筑，城市以东约220公里是卡尔卡拉雷国家公园，以南约300公里、巴尔喀什湖以北约70公里处是别克套阿塔花岗岩山。",
     gettingAround:
@@ -9509,6 +9983,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   semey: {
     identity:
       "谢梅伊是哈萨克斯坦东部沿额尔齐斯河而建的历史城市，人口逾30万，历史上曾是苏联时期塞米巴拉金斯克核试验场的行政中心，如今是额尔齐斯河沿岸重要的文化与教育城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Semey (Kazakhstan; formerly Semipalatinsk, capital of Abai Region, created in 2022, on the Irtysh near the Russian border, population 312,764 in November 2024; the settlement began in 1718 as a Russian fort near ruins of seven buildings that gave it the name meaning seven-chambered city; capital of the Alash Autonomy as Alash-Qala between 1917 and 1920; renamed Semey in 2007; Dostoevsky was exiled here from 1854 to 1859 and the Dostoevsky Literary Memorial Museum is the only one outside Russia; the poet and philosopher Abai Qunanbaiuly and the Abai Museum; the Semipalatinsk nuclear test site established 180 km west in 1949, where 456 tests took place between 1949 and 1989, the site closed on 29 August 1991)
+    howItWorks:
+      "谢梅伊是哈萨克斯坦阿拜州的首府——这个州 2022 年新设，首府定在此城；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。城市在额尔齐斯河边、靠近俄罗斯边境，2024 年 11 月人口 312,764。1718 年俄国在此建堡，堡址附近有一处七间房的遗迹，“七间房之城”即塞米巴拉金斯克一名的来历；1917 至 1920 年它以“阿拉什城”之名作过阿拉什自治政府的所在地，2007 年市名改为谢梅伊。俄国作家陀思妥耶夫斯基 1854 至 1859 年在此服流刑，本地的陀思妥耶夫斯基文学纪念馆是俄罗斯境外唯一的一座；哈萨克近代诗人与思想家阿拜·库南巴耶夫也与这座城关系密切，阿拜博物馆在城中，新设的州即以他命名。1949 年苏联在城西约 180 公里设塞米巴拉金斯克核试验场，1949 至 1989 年间在此进行了 456 次核试验，1991 年 8 月 29 日关闭，这一日期后来成为国际禁止核试验日。2001 年跨额尔齐斯河的悬索桥通车。初来的人最容易犯的错，是把这两个名字当作两座城，而它们是同一处。",
     layout:
       "城市沿额尔齐斯河两岸分布，河上的谢梅伊斜拉桥是城市地标之一；老城区保留部分19世纪末至20世纪初的历史建筑，与作家陀思妥耶夫斯基曾在此流放居住的历史有关。",
     gettingAround:
@@ -9523,6 +10000,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pavlodar: {
     identity:
       "巴甫洛达尔是哈萨克斯坦东部沿额尔齐斯河而建的城市，人口逾35万，是巴甫洛达尔州首府，历史上因铝、石化等重工业而兴起，是额尔齐斯河沿岸重要的工业与文化城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pavlodar (Kazakhstan; capital of Pavlodar Region in the north-east, about 450 km north-east of Astana on the Irtysh, estimated population 367,254 in 2023; founded in 1720 as the Koryakovsky outpost of Imperial Russia and renamed Pavlodar in 1861, the name meaning the gift of Paul, for the birth of Grand Duke Paul Alexandrovich; the economy centres on aluminium, industrial chemicals and farm machinery, with an oil refinery completed in 1978 and the pharmaceutical company Romat; about 46.5 per cent Kazakh and 41.6 per cent Russian with Ukrainian, German and Tatar communities; an 89 km tram network in service since 1965; a river port on the Irtysh; Pavlodar Airport)
+    howItWorks:
+      "巴甫洛达尔是哈萨克斯坦巴甫洛达尔州的首府，在阿斯塔纳东北约 450 公里、额尔齐斯河边，2023 年估计人口 367,254；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。它 1720 年作为俄国的科里亚科夫哨所设立，1861 年改名巴甫洛达尔，字面意思是“保罗的礼物”，取自当年出生的俄国大公保罗·亚历山德罗维奇。20 世纪它被建成重工业城市：铝厂、化工厂与农机制造是支柱，1978 年建成炼油厂；东面埃基巴斯图兹的露天煤矿与坑口电站为这片工业区供电，是哈萨克斯坦最重要的能源基地之一。额尔齐斯河上的河港把货运往下游送出，这条河最终流入俄罗斯与北冰洋。居民中哈萨克族约 46.5%、俄罗斯族约 41.6%，另有乌克兰、德意志与鞑靼等社群，俄语在日常中使用广泛。1965 年通车的有轨电车网长约 89 公里，至今在运营。初来的人最容易犯的错，是以为哈萨克斯坦到处是草原牧区，而这里是一片工厂与电厂。",
     layout:
       "城市沿额尔齐斯河右岸分布，河滨步道与中心广场是市民休闲核心区；老城区保留部分苏联及更早时期建筑。",
     gettingAround:
@@ -9537,6 +10017,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kokshetau: {
     identity:
       "科克舍套是哈萨克斯坦北部阿克莫拉州首府，人口约15万，坐落于科克舍套丘陵地带，是前往布拉拜国家公园（“哈萨克斯坦的瑞士”）的主要门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kokshetau (Kazakhstan; capital of Akmola Region about 300 km north-west of Astana, stretching along the southern shore of Lake Kopa in the Kokshetau Hills at 234 m; estimated population 176,849 in 2024, the 17th-largest city in the country; founded in 1824 as a Russian administrative outpost and given city status in 1895, the administrative centre of Kokshetau Oblast from 1944 until its dissolution in 1997, then capital of Akmola Region from 1999; about 62 per cent Kazakh, up from 36 per cent in 1999, and about 23 per cent Russian; Burabay National Park about 70 km away; the Akmola Regional Museum; named Kazakhstan's City of Culture for 2021)
+    howItWorks:
+      "科克舍套是哈萨克斯坦阿克莫拉州的首府，在阿斯塔纳西北约 300 公里，沿科帕湖南岸铺开，海拔 234 米，2024 年估计人口 176,849，是全国第 17 大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这里有一个容易混淆的关系：阿克莫拉州的首府不在同名的阿克莫拉——那个名字后来成了首都阿斯塔纳的旧称，州府设在这座城。它 1824 年作为俄国的行政据点建立，1895 年获城市地位，1944 年起为科克舍套州首府，1997 年该州撤销，1999 年它成为阿克莫拉州首府。城市的族群构成变化很快：哈萨克族的比例从 1999 年的约 36% 升到 2024 年的约 62%，俄罗斯族约占 23%。真正让这一带出名的是东南约 70 公里的布拉拜国家公园：松林、花岗岩丘与湖泊连成一片，在一望无际的草原上显得突兀，本地称之为“哈萨克的瑞士”。初来的人最容易犯的错，是把它与阿斯塔纳的旧称阿克莫拉混为一谈。",
     layout:
       "城市规模不大、以行政与交通功能为主，城市以北约70公里是布拉拜国家公园，是本地区最主要的自然旅游目的地。",
     gettingAround:
@@ -9634,6 +10117,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cappadocia: {
     identity:
       "卡帕多奇亚是中安纳托利亚一片以精灵烟囱火山灰地貌与热气球飞行闻名的地区，核心镇格雷梅人口约2000人，是土耳其最具辨识度的旅游目的地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cappadocia and Göreme (Turkey; a historical region of Central Anatolia spanning Nevşehir, Kayseri, Aksaray, Kırşehir, Sivas and Niğde provinces, the name from Old Persian Katpatuka; the landscape formed by erosion of thick volcanic deposits from eruptions of Erciyes, Hasan Dağ and Göllüdağ, producing the fairy chimneys; ruled in turn by Persian, Greek, Roman, Byzantine and Ottoman powers, an early Christian centre with the Cappadocian Fathers of the 4th century; the Göreme Open Air Museum with more than 30 rock-cut churches and chapels with Byzantine frescoes, Göreme National Park and the Rock Sites of Cappadocia inscribed by UNESCO in 1985; the underground cities of Derinkuyu and Kaymaklı; cave hotels and hot-air ballooning)
+    howItWorks:
+      "卡帕多奇亚是土耳其中安纳托利亚的一片历史地区，跨内夫谢希尔、开塞利、阿克萨赖等数省，游客常住的格雷梅是内夫谢希尔省的一个镇；土耳其 2012 年第 6360 号法之后，人口较多的省实行“大市”制，市界与省界重合，本地事务由市与区两级办理。这片地貌来自火山：埃尔吉耶斯山、哈桑山与格柳山的多次喷发把厚层火山灰盖在这一带，其后的流水与风把松软的凝灰岩切成柱与谷，硬质岩帽留在柱顶，形成当地所称的“仙人烟囱”。凝灰岩好挖不易塌，因此人们直接在岩体里凿出住房、教堂与整座地下城——代林库尤与卡伊马克勒的地下城可深入数层，用于避难；格雷梅露天博物馆里有三十多座岩凿教堂，壁画属拜占庭时期。1985 年“格雷梅国家公园与卡帕多奇亚岩石遗址”列入世界遗产。热气球在日出前起飞，由民航主管部门按天气与流量管控。初来的人最容易犯的错，是把卡帕多奇亚当作一个城，而它是一片跨省的地区。",
     layout:
       "格雷梅、于尔居普、阿瓦诺斯与于奇希萨尔等多个小镇散布于火山灰地貌区内，格雷梅国家公园与露天博物馆是区域核心，德林库尤等地下城位于区域南部。",
     gettingAround:
@@ -9648,6 +10134,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bodrum: {
     identity:
       "博德鲁姆是土耳其爱琴海南岸半岛度假胜地，人口约20万，因白色建筑、风车与圣彼得城堡闻名，是土耳其地中海式生活方式的代表城镇之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bodrum (Turkey; town and district of Muğla Province, the ancient Halicarnassus, whose Mausoleum was one of the Seven Wonders of the Ancient World; Bodrum Castle built by the Knights of St John from 1402 using stone from the Mausoleum, now the Museum of Underwater Archaeology; the district population grew from about 26,000 in 1965 to about 198,000 in 2023 as tourism replaced fishing and sponge diving; white-washed building mandated since 2006; peninsula villages including Yalıkavak, Gümüşlük and Türkbükü; marinas and gulet yachting; Milas-Bodrum Airport; ferries to Kos)
+    howItWorks:
+      "博德鲁姆是土耳其穆拉省的一个县与同名县城，在爱琴海边的一处半岛上；穆拉是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。它是古代的哈利卡纳苏斯：公元前 4 世纪的摩索拉斯陵墓曾是世界七大奇迹之一，后毁于地震，1402 年起圣约翰骑士团用陵墓的石料在海岬上建起博德鲁姆城堡，如今这座城堡是水下考古博物馆，藏有从附近海域打捞的古代沉船。20 世纪中期这里还是渔业与采海绵的小镇，1965 年全县约 2.6 万人，2023 年已约 19.8 万，旅游把它彻底改写；2006 年起当地规定新建筑一律刷白，因此整个半岛外观统一。真正的度假区分散在半岛上的村子里——亚勒卡瓦克、居米什吕克、蒂尔克比库各有不同的气质，县城只是港口与交通的中心。米拉斯—博德鲁姆机场在东北，渡轮通往希腊的科斯岛。初来的人最容易犯的错，是把住宿定在县城，而多数人想去的海湾在半岛另一侧，开车还要半小时以上。",
     layout:
       "城市围绕博德鲁姆湾呈半圆形分布，圣彼得城堡（博德鲁姆城堡）矗立于港湾中央的岬角上，将港湾分为东、西两个海湾；半岛周边分布图尔古特雷斯、亚利卡瓦克等多个度假小镇。",
     gettingAround:
@@ -9662,6 +10151,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pamukkale: {
     identity:
       "棉花堡是土耳其西南部一处以洁白钙化梯田闻名的地热景观，隶属代尼兹利省，与山顶的希拉波利斯古城共同构成UNESCO世界遗产地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pamukkale (Turkey; in Denizli Province, the name meaning cotton castle; travertine terraces deposited by mineral water from hot springs, with 17 springs ranging from about 35 °C to 100 °C; the ancient Greek city of Hierapolis built above the terraces as a thermal spa, with theatre and necropolis, important in the Phrygian, Roman and Byzantine periods and an early Christian centre; Hierapolis-Pamukkale inscribed by UNESCO in 1988 for both cultural and natural value; over two million visitors a year, with UNESCO and local authorities regulating water flow and closing sections in turn to let the formations regenerate)
+    howItWorks:
+      "棉花堡在土耳其代尼兹利省，土耳其语的字面意思就是“棉花城堡”；代尼兹利是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。这片白色台地是水造出来的：山坡上有十七处温泉，水温从约 35 度到接近沸点，泉水溶着大量碳酸钙，流出地表后二氧化碳逸散、碳酸钙析出，一层层沉积成钙华梯田，因此这片“雪”其实是石头，而且还在长。台地之上是古希腊城市希拉波利斯，公元前 2 世纪起就作为温泉疗养城建设，剧场与城外规模巨大的墓地保存至今，它也是早期基督教的重要地点。1988 年“希拉波利斯—棉花堡”以文化与自然双重价值列入世界遗产。为保护钙华，20 世纪 90 年代拆除了建在台地上的旅馆与公路，如今游客只能赤脚沿指定路线行走，管理方还按季轮流封闭部分区段、调控放水，让沉积恢复。初来的人最容易犯的错，是以为可以随处下水，而能踩的只有划定的一条线。",
     layout:
       "棉花堡台地位于代尼兹利市以北约20公里处，台地顶端是希拉波利斯古城遗址，山脚下的棉花堡镇为游客提供住宿与餐饮服务。",
     gettingAround:
@@ -9676,6 +10168,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   trabzon: {
     identity:
       "特拉布宗是土耳其黑海东岸重要港口城市，人口逾80万，历史上曾是丝绸之路支线港口与拜占庭特拉比松帝国都城，是探索黑海山地景观的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trabzon (Turkey; city and capital of Trabzon Province on the north-eastern Black Sea coast, urban population about 335,000; founded in 756 BC as the Greek colony Trapezus, capital of the Empire of Trebizond, a successor state of Byzantium after the Fourth Crusade of 1204, until Ottoman rule began in 1461; the Hagia Sophia of Trabzon; Sumela Monastery about 45 km away at Maçka; steep mountains behind the coast and the wettest region of Turkey; hazelnuts and tea the main exports, anchovies known throughout Turkey as hamsi; Uzungöl; Trabzonspor; Trabzon Airport)
+    howItWorks:
+      "特拉布宗是土耳其特拉布宗省的省会，在黑海东南岸，城区人口约 33.5 万；特拉布宗是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。地形决定了这座城的形状：庞廷山脉在离岸很近的地方陡然升起，可用的平地只有沿海一条窄带，因此城市顺着海岸拉长，往山上一层层叠着建，公路与隧道是日常。公元前 756 年它作为希腊殖民城市特拉佩苏斯建立，1204 年第四次十字军东征之后成为特拉比松帝国的都城，1461 年起入奥斯曼治下；13 世纪的圣索菲亚教堂建筑保存至今，苏梅拉修道院嵌在城南约 45 公里马奇卡的悬崖上。这一带是土耳其降水最多的地区，山坡上密植茶树与榛子，两者是本地的主要出口；黑海的凤尾鱼在土耳其称“哈姆西”，是这座城最有名的食物。乌宗湖在南面山中。初来的人最容易犯的错，是按地中海沿岸的印象预期这里，而黑海岸多雨、多云、山陡。",
     layout:
       "城市沿黑海海岸带状分布，老城区保留拜占庭时期特拉布宗圣索菲亚教堂等历史建筑，市郊山区分布苏美拉修道院与乌宗湖等自然与人文景观。",
     gettingAround:
@@ -9690,6 +10185,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   konya: {
     identity:
       "科尼亚是土耳其中安纳托利亚重要城市，人口逾220万，历史上是塞尔柱王朝在安纳托利亚的都城，因苏菲派诗人鲁米与旋转苦行僧传统闻名，是土耳其重要的宗教文化中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Konya (Turkey; city and capital of Konya Province, the largest province of Turkey by area, the metropolitan municipality counting 2,330,024 in 2024 and the sixth most populous city in Turkey; historically Iconium, capital of the Seljuk Sultanate of Rum in the 12th and 13th centuries with its Seljuk architecture; Rumi, called Mevlâna, spent his last years here and his turquoise-domed tomb is the chief visitor site, with authentic sema performances each Saturday at the Mevlana Cultural Centre and the Şeb-i Arûs in December; on the south-western edge of the Central Anatolian Plateau in Turkey's largest plain, a cold semi-arid climate; among the Anatolian Tigers economically; high-speed rail to Ankara, Istanbul and Karaman; Çatalhöyük nearby; etli ekmek)
+    howItWorks:
+      "科尼亚是土耳其科尼亚省的省会，科尼亚是土耳其面积最大的省；这里实行“大市”制，市界与省界重合，2024 年大市辖区人口 2,330,024——因此这个数字包括了广阔的农村，不是市区人口，市区在其中约占一半，全国排第六。城市在中安纳托利亚高原西南缘的大平原上，气候属冷半干旱，冬冷夏热、雨少，这片平原是土耳其最大的产粮区，小麦与甜菜是它的支柱，本地因经济活跃被归入“安纳托利亚之虎”。12 至 13 世纪它是塞尔柱罗姆苏丹国的首都，城中的塞尔柱式清真寺与经学院留自那个时代。13 世纪的苏非诗人鲁米在此度过晚年，绿松石圆顶的梅夫拉纳陵是全城最主要的参观地，每周六在文化中心有旋转舞“塞玛”的正式演出，12 月的“谢比阿鲁斯”纪念活动规模最大。高铁通往安卡拉与伊斯坦布尔，恰塔霍裕克遗址在东南约 40 公里。初来的人最容易犯的错，是用大市人口来估计城市规模，而那是全省的数字。",
     layout:
       "梅夫拉纳博物馆（鲁米陵墓所在地）是老城核心地标，周边分布阿拉丁清真寺、细长尖塔神学院博物馆等塞尔柱时期建筑，是科尼亚历史城区的核心区域。",
     gettingAround:
@@ -9704,6 +10202,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bursa: {
     identity:
       "布尔萨是土耳其第四大城市，人口逾216万，是奥斯曼帝国首个都城（1326至1365年），因清真寺众多与紧邻乌鲁山滑雪场而被称为“绿色布尔萨”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bursa (Turkey; city and capital of Bursa Province, the fourth most populous city in Turkey and second in the Marmara Region after Istanbul; captured from the Byzantines in 1326 and the capital of the early Ottoman state until the 1360s, when the capital moved to Edirne; Bursa and Cumalıkızık: the Birth of the Ottoman Empire, UNESCO World Heritage 2014; the Grand Mosque with twenty domes in four rows of five, the Green Mosque and Green Tomb, the Koza Han silk market; Mount Uludağ above the city with skiing and thermal springs used since Roman times; the largest production centre of the Turkish automotive industry with Fiat, Renault and Bosch, plus textiles and food; called Yeşil Bursa, green Bursa)
+    howItWorks:
+      "布尔萨是土耳其布尔萨省的省会，是土耳其第四大城市、马尔马拉地区仅次于伊斯坦布尔的第二大城市；布尔萨实行“大市”制，市界与省界重合，本地事务由大市与县两级办理。1326 年奥斯曼势力从拜占庭手中取得此城，此后到 1360 年代它是奥斯曼国家的第一个主要都城，之后迁往埃迪尔内；2014 年“布尔萨与楚马勒克兹克：奥斯曼帝国的诞生”列入世界遗产，涵盖大清真寺、绿色清真寺与绿陵以及山坡上的老村楚马勒克兹克。大清真寺的屋顶由二十个穹顶按四排五列排开，科扎商栈曾是丝绸交易的中心——布尔萨长期是丝绸之路西端的丝织重镇。城市贴着乌鲁山的北坡，山上有滑雪场与缆车，罗马时代起就利用这里的温泉，因此市内多浴场，绿地多，本地自称“绿布尔萨”。今天它是土耳其汽车工业最大的生产中心，菲亚特、雷诺与博世都在此设厂。初来的人最容易犯的错，是把它当作伊斯坦布尔的一日游，而它是一座工业与遗产并重的大城。",
     layout:
       "老城区集中分布布尔萨大清真寺、绿色清真寺等奥斯曼早期建筑，科扎商队旅馆一带是传统丝绸贸易市集所在地；乌鲁山耸立于城市南侧，山顶为滑雪度假区。",
     gettingAround:
@@ -9801,6 +10302,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zadar: {
     identity:
       "扎达尔是北达尔马提亚古城，人口约7万，城市历史可追溯至古罗马时期，是克罗地亚保留罗马遗迹最丰富的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zadar (Croatia; the seat of Zadar County and the fifth-largest city in the country, with 70,779 residents in the 2021 census; the oldest continuously inhabited city in Croatia, beginning as the Liburnian settlement Iader in the 9th century BC, a Roman municipality in 59 BC and a Roman colony in 48 BC, held in turn by Byzantine, Venetian, Hungarian and Austrian rule; the 9th-century Church of St Donatus, the cathedral and the Roman forum; the Sea Organ and the Monument to the Sun installed in the 2000s; the fortified city inscribed by UNESCO in 2017 as part of the Venetian defensive works; a ferry port for the Zadar archipelago; Zadar Airport)
+    howItWorks:
+      "扎达尔是克罗地亚扎达尔县的首府，2021 年普查人口 70,779，是全国第五大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理，县管区域事务。它是克罗地亚有人连续居住时间最长的城市：公元前 9 世纪利布尔尼亚人在此建聚落，称“亚德尔”，公元前 59 年成为罗马自治市、前 48 年升为殖民城，此后历经拜占庭、威尼斯共和国、匈牙利与哈布斯堡的治理。老城建在一条伸入海中的半岛上，街道至今沿用罗马时期的方格布局，广场上留着罗马集市的遗址；9 世纪的圣多纳特教堂是达尔马提亚早期教堂建筑的代表，主教座堂在旁。2017 年这座城的防御工事随“威尼斯共和国防御体系”列入世界遗产。海边的“海风琴”与“向太阳致敬”是 2000 年代加建的两件装置，前者用海浪推动管风琴发声。渡轮从这里通往扎达尔群岛，1396 年创办的大学是克罗地亚最早的一所。初来的人最容易犯的错，是把老城当作步行几分钟的小片，而半岛上层层叠着从罗马到威尼斯的两千年。",
     layout:
       "老城建于一处狭长半岛之上，罗马广场遗址与圣多纳特教堂位于半岛核心；海滨步道尽头设有海之风琴与向太阳致敬装置，是当代地标。",
     gettingAround:
@@ -9815,6 +10319,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pula: {
     identity:
       "普拉是伊斯特拉半岛最大城市，人口约5万，因保存完好的古罗马竞技场闻名，历史上先后受古罗马、威尼斯共和国、奥匈帝国治理。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pula (Croatia; the largest city in Istria County and the seventh-largest in the country with 52,220 residents in 2021, though it was the administrative centre of Istria from Roman times until superseded by Pazin in 1991; the Pula Arena, one of the best preserved Roman amphitheatres and among the six largest surviving, still used for concerts and a film festival; the Temple of Augustus and the 1st-century Arch of the Sergii; under Austro-Hungarian rule the natural harbour became Austria's main naval base and a major shipbuilding centre from 1856; James Joyce taught English here from 30 October 1904 to March 1905; Brijuni National Park nearby; Pula Airport)
+    howItWorks:
+      "普拉是克罗地亚伊斯特拉县最大的城市，2021 年人口 52,220，是全国第七大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。这里有一处容易弄错的关系：从罗马时代起普拉一直是伊斯特拉半岛的行政中心，但 1991 年之后县治迁到了内陆的帕津，如今它是最大的城市而非首府。城中的圆形竞技场是保存最完好的罗马竞技场之一，也是现存规模最大的六座之一，四座边塔完整保留，至今用于演出与电影节；奥古斯都神庙与公元 1 世纪的塞尔吉凯旋门也在老城。它的近代面貌来自军港：1856 年起奥匈帝国把这处天然良港建成海军主基地与造船中心，城市因此扩张，乌利亚尼克船厂沿用至今。1904 年 10 月至次年 3 月，乔伊斯曾在此教英语。布里俄尼国家公园在西北的海上，普拉机场在城东。初来的人最容易犯的错，是以为普拉是伊斯特拉的首府，而县政府在帕津。",
     layout:
       "老城以古罗马竞技场为核心地标，罗马广场、凯旋门等古迹散布于紧凑的老城街巷之间；港区位于老城东南侧，是伊斯特拉半岛的传统海军与造船中心。",
     gettingAround:
@@ -9829,6 +10336,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   osijek: {
     identity:
       "奥西耶克是斯拉沃尼亚地区最大城市，人口约9.6万，克罗地亚第四大城市，德拉瓦河穿城而过，历史上曾先后受奥斯曼帝国、哈布斯堡王朝治理。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Osijek (Croatia; the fourth-largest city in the country and the seat of Osijek-Baranja County, the largest city in Slavonia, with 96,313 residents in 2021; on the Drava about 25 km upstream from its confluence with the Danube; the Roman settlement of Mursa, an important military colony, later under Ottoman control for over 150 years until Habsburg forces took it in 1687; the Tvrđa, an 18th-century Baroque fortress quarter; the neo-Gothic co-cathedral whose 90 m tower is the second-highest church tower in Croatia; agriculture and food industry, with Saponia, the Osječko brewery and Kandit; Kopački rit nature park; a tram system running since 1884, the only one in Croatia outside Zagreb; Osijek Airport and the university)
+    howItWorks:
+      "奥西耶克是克罗地亚第四大城市，也是奥西耶克-巴拉尼亚县的首府与斯拉沃尼亚地区最大的城市，2021 年人口 96,313；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。城市在德拉瓦河边，往下游约 25 公里就是德拉瓦河汇入多瑙河之处，四周是潘诺尼亚平原——这片平原是克罗地亚的粮仓，因此本地的产业以农业与食品加工为主，肥皂与洗涤剂厂萨波尼亚、奥西耶克啤酒厂与糖果厂坎迪特都是老企业。罗马时期这里是名为“穆尔萨”的军事殖民城；此后奥斯曼治理了一个半世纪以上，1687 年哈布斯堡军队取得此城，并在 18 世纪沿河建起“特弗尔贾”棱堡城区，那一整片巴洛克营房与广场至今完整保留，是全城最有辨识度的地方。新哥特式共同主教座堂的塔高 90 米，在克罗地亚居第二。1884 年通车的有轨电车是萨格勒布之外克罗地亚唯一仍在运营的一套。科帕奇基里特自然公园在东北的河汊湿地上。初来的人最容易犯的错，是以为克罗地亚都是海岸，而这里离海很远。",
     layout:
       "老城特维尔扎堡垒区保留18世纪哈布斯堡时期巴洛克风格街区与星形要塞轮廓；市中心沿德拉瓦河北岸展开，河滨步道是市民日常休闲场所。",
     gettingAround:
@@ -9843,6 +10353,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hvar-town": {
     identity:
       "赫瓦尔镇是赫瓦尔岛的主要城镇，是克罗地亚著名的度假岛屿门户，历史上曾是威尼斯共和国在亚得里亚海的重要据点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hvar Town (Croatia; the town on the island of Hvar in Split-Dalmatia County; the island is about 68 km long with 10,678 residents in 2021; the island markets itself as the sunniest spot in Europe with over 2,715 hours of sunshine in an average year; a fertile coastal plain, fresh water springs, pine-covered hillsides, vineyards, olive groves, orchards and lavender fields; the Greeks founded the colony of Pharos in 384 BC, and in medieval times the town of Hvar became a major naval base within the Venetian empire; churches on the island hold paintings by Venetian artists including Tintoretto, Veronese and Bellini; lavender oil and Plavac Mali wine; the Stari Grad Plain on the same island inscribed by UNESCO in 2008; ferries and catamarans from Split)
+    howItWorks:
+      "赫瓦尔镇是克罗地亚斯普利特-达尔马提亚县赫瓦尔岛上的城镇；全岛长约 68 公里，2021 年人口 10,678，由几个市镇分治，本镇由民选的市长与市议会治理，县管区域事务。它当年的地位来自海：中世纪它是威尼斯共和国在亚得里亚海东岸的重要海军基地，船队在此过冬补给，因此这座小镇有与规模不相称的建筑——广场是达尔马提亚最大的城市广场之一，1612 年落成的市立剧院是欧洲最早的公共剧院之一，岛上教堂里存有丁托列托、委罗内塞与贝利尼等威尼斯画派的作品。公元前 384 年希腊人在岛上建立法罗斯殖民地，其耕地划分至今可辨，斯塔里格拉德平原 2008 年以此列入世界遗产。岛上另一半生计来自阳光：年日照超过 2,715 小时，薰衣草与葡萄种在山坡上，普拉瓦茨马利是本地的红葡萄品种。斯普利特有渡轮与快艇通航。初来的人最容易犯的错，是以为赫瓦尔镇就是赫瓦尔岛，而岛长近七十公里，古城斯塔里格拉德与农地在另一头。",
     layout:
       "老城环绕圣斯特凡广场展开——达尔马提亚地区最大的广场之一，广场一端是圣斯特凡主教座堂，另一端连接港口；城镇后方山丘上的福尔蒂察堡垒可俯瞰全镇与外海帕克莱尼岛群。",
     gettingAround:
@@ -9939,6 +10452,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "cesky-krumlov": {
     identity:
       "切斯基克鲁姆洛夫是南波希米亚一座中世纪小城，人口约1.3万，因伏尔塔瓦河深切曲流几乎环绕古城核心而得名（“克鲁姆洛夫”源自德语“弯曲的草甸”），1992年历史城区列入世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Český Krumlov (Czechia; town in the South Bohemian Region about 20 km south-west of České Budějovice, about 13,000 inhabitants over 22.16 km²; the historic centre inscribed by UNESCO in 1992 for well-preserved Gothic, Renaissance and Baroque architecture within its medieval street layout; Český Krumlov Castle, one of the largest castle complexes in Central Europe at 7 hectares, its moat filled not with water but with bears, referring to the Orsini family; the castle Baroque theatre built in 1680–1682 and renovated in 1765–1766, among the oldest surviving 18th-century theatres in the world with its original stage machinery; the Five-Petalled Rose Festival at the summer solstice and an international music festival in July and August; among the most visited places in the country)
+    howItWorks:
+      "切斯基克鲁姆洛夫是捷克南波希米亚州的城镇，人口约 1.3 万，市域约 22 平方公里，在捷克布杰约维采西南约 20 公里；捷克的地方行政分州与市镇两级，市镇由民选的市长与市议会治理，州管区域事务。它的形状是伏尔塔瓦河给的：河在这里绕了一个近乎闭合的 S 形弯，老城被圈在弯内，城堡建在弯外的岩脊上，两者隔水相望，因此这座镇几百年来无法向外扩张，中世纪的街道格局与哥特、文艺复兴、巴洛克三个时期的房子就此保留下来，1992 年老城区列入世界遗产。城堡占地约 7 公顷，是中欧最大的城堡建筑群之一；护城壕里养的不是水而是熊，源自领主与意大利奥尔西尼家族攀附的传说。城堡里 1680 年代建、1765 至 1766 年改建的巴洛克剧院至今保有原装的舞台机械，是世界上仅存的几座之一。夏至前后的五瓣玫瑰节与七八月的音乐节是全年最忙的时候。初来的人最容易犯的错，是按常住人口预期这里的人流，而它是捷克参观人数最多的地方之一。",
     layout:
       "古城建于伏尔塔瓦河双重马蹄形曲流之上，克鲁姆洛夫城堡矗立于曲流内侧崖丘，是捷克境内规模第二大的城堡建筑群（仅次于布拉格城堡）；老城核心步行即可游览。",
     gettingAround:
@@ -9953,6 +10469,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kutna-hora": {
     identity:
       "库特纳霍拉是中波希米亚一座历史银矿小城，人口约2万，14至15世纪因银矿开采一度成为波希米亚王国仅次于布拉格的第二富庶城市，1995年历史城区列入世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kutná Hora (Czechia; town in the Central Bohemian Region about 50 km east of Prague with about 22,000 inhabitants; silver mining from the 13th century after ore was found near Sedlec made it wealthy, and by 1300 it was the seat of the central mint of the Czech lands where the Prague groschen were struck, making it the second most important town of the Kingdom of Bohemia after Prague; the mint closed in 1727 and the town ceased to be a mining town; the historic centre with the Church of St Barbara and the Cathedral of Our Lady at Sedlec inscribed by UNESCO in 1995, both outstanding Gothic work; the Sedlec Ossuary decorated with the bones of more than 40,000 skeletons; manufacturing today including tobacco and electronics)
+    howItWorks:
+      "库特纳霍拉是捷克中波希米亚州的城镇，人口约 2.2 万，在布拉格以东约 50 公里；捷克的地方行政分州与市镇两级，市镇由民选的市长与市议会治理，州管区域事务。这座镇的一切都建在白银之上：13 世纪塞德莱茨附近发现银矿后，采矿与冶炼把这里迅速推上去，1300 年前后波希米亚王国的中央铸币厂设在此地，著名的“布拉格格罗申”银币就在这座城铸造，它因此成为王国仅次于布拉格的第二重镇，圣芭芭拉教堂——献给矿工的主保圣人——正是矿主与市民出资建起的，规模与工艺远超一座小城应有的水平。银脉枯竭之后城市随之衰落，1727 年铸币厂关闭，采矿城的身份就此结束，反而使中世纪的城区留了下来，1995 年历史城区与塞德莱茨的圣母主教座堂一并列入世界遗产。塞德莱茨的人骨教堂用四万多具遗骨装饰内部，是本地最常被提到的地方。今天烟草与电子制造是主要产业。初来的人最容易犯的错，是以为看点都在老城，而人骨教堂在塞德莱茨，离老城还有两公里多。",
     layout:
       "老城以圣芭芭拉教堂为核心地标，教堂矗立于城市边缘的山丘之上，可俯瞰河谷与周边景观；城郊塞德莱茨区的万圣教堂地下即著名的“白骨教堂”。",
     gettingAround:
@@ -11955,6 +12474,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   calama: {
     identity:
       "卡拉马是智利北部一座矿业城市，坐落在阿塔卡马沙漠腹地、洛阿河畔，因毗邻丘基卡马塔铜矿（世界最大的露天铜矿之一）而发展起来，也是通往圣佩德罗德阿塔卡马旅游区的主要空中门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Calama (Chile; capital of El Loa Province in the Antofagasta Region, governed as a commune under an elected mayor; 166,334 residents in 2024, the second-largest city in the region, up from about 9,525 in the early 1900s; in the Atacama Desert at about 2,260 m on the Río Loa, Chile's longest river, forming an oasis; one of the driest cities in the world with average annual precipitation of just 5 mm; the Chuquicamata copper mine nearby, once the largest open-pit copper mine in the world, its company town dismantled in 2003 for environmental reasons, bringing residents and workers to Calama; El Loa Airport)
+    howItWorks:
+      "卡拉马是智利安托法加斯塔大区埃尔洛阿省的省会，2024 年人口 166,334，是该大区第二大城市；智利的地方行政以“市镇”为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选，中央另派代表负责国家事务。城市在阿塔卡马沙漠里、海拔约 2,260 米的洛阿河边——这条河是智利最长的河，正是它让这里成为一片绿洲，否则寸草不生：年均降水只有约 5 毫米，是世界上最干燥的城市之一。它的规模来自铜：附近的丘基卡马塔曾是世界上最大的露天铜矿，20 世纪初这里还只有约九千五百人。2003 年因粉尘与环境问题，矿区的公司城镇被整体拆除，居民与工人迁到卡拉马，此后矿工多以班次通勤的方式在矿与城之间往返，城市因此带着明显的工班节奏。埃尔洛阿机场是本地与圣佩德罗一带的空中门户。初来的人最容易犯的错，是把卡拉马当作旅游基地，而它是一座矿业城，游客通常只在此转车。",
     layout:
       "城市规模不大，围绕洛阿河形成的绿洲地带布局，市中心是主要的商业与生活区，周边被开阔的沙漠戈壁包围；机场位于城市东侧，是前往阿塔卡马内陆景区的中转枢纽。",
     gettingAround:
@@ -11969,6 +12491,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "san-pedro-de-atacama": {
     identity:
       "圣佩德罗德阿塔卡马是阿塔卡马沙漠腹地一座历史悠久的绿洲小镇，海拔约2400米，是探访月亮谷、塔蒂奥间歇泉、阿塔卡马盐沼等周边地貌的核心基地，也是智利北部最重要的旅游中心之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): San Pedro de Atacama (Chile; town and commune in El Loa Province, Antofagasta Region, governed as a commune under an elected mayor; 10,960 residents in the 2012 census, most of them rural rather than in the town; at about 2,400 m overlooking the Salar de Atacama below the Licancabur volcano; extreme aridity, summer highs of 25–30 °C and winter nights routinely below 0 °C; the oasis originally inhabited by the Atacameño people, passing from Bolivian to Chilean control after the War of the Pacific; the adobe church of San Pedro and the R. P. Gustavo Le Paige archaeological museum; El Tatio with over 80 active geysers, and Valle de la Luna; the ALMA radio-telescope array)
+    howItWorks:
+      "圣佩德罗德阿塔卡马是智利安托法加斯塔大区埃尔洛阿省的一个市镇，2012 年普查人口 10,960，其中多数住在镇外的乡村；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。镇子在海拔约 2,400 米的一处绿洲上，俯瞰阿塔卡马盐沼，利坎卡武尔火山在东面的边界一带。它的一切都由干燥决定：夏季白天 25 至 30 度，冬夜常在零度以下，房屋用土坯砌成以对付昼夜温差，17 世纪的圣佩德罗教堂也是土坯的。这片绿洲原是阿塔卡梅诺人的居住地，太平洋战争后由玻利维亚划归智利，勒帕日考古博物馆藏有本地出土的文物，周边一些景点由原住民社区自行管理并收费。埃尔塔蒂奥有八十多处活跃的间歇泉，月亮谷在镇西。同样因为干燥与高海拔，阿塔卡马大型毫米波阵列等天文台建在这一带。初来的人最容易犯的错，是当天从海边直接上来，而这里的海拔需要适应。",
     layout:
       "小镇规模不大，以土坯建筑风格的中心广场与圣佩德罗教堂为核心，街道两旁分布着旅行社、餐厅与手工艺品店；镇子四周被开阔的沙漠与远处的安第斯火山群环绕，是典型的绿洲聚落格局。",
     gettingAround:
@@ -12034,6 +12559,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pucon: {
     identity:
       "普孔是智利南部湖区最热门的户外旅游小镇，坐落在维亚里卡湖畔、正对着终年冒着蒸汽的维亚里卡火山，是攀登火山口、泡温泉与水上运动的中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pucón (Chile; city and commune in Cautín Province, Araucanía Region, governed as a commune under an elected mayor; about 32,321 residents in 2024, having grown 47 per cent between 1992 and 2002; on the eastern shore of Lake Villarrica about 100 km south-east of Temuco, with the Villarrica volcano about 17 km south; the Spanish founded Villarrica in this district in 1552 and took gold from placer deposits, presumed buried by lahars in the 16th century, the modern settlement dating from 1883; lahars destroyed nearby Coñaripe in 1964; adventure tourism with hiking, rafting, skiing, riding, hot springs and volcano ascents; national parks nearby)
+    howItWorks:
+      "普孔是智利阿劳卡尼亚大区考廷省的一个市镇，2024 年人口约 3.2 万，1992 至 2002 年间增长了 47%；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。镇子在维亚里卡湖东岸，特木科在西北约 100 公里，南面约 17 公里就是维亚里卡火山——这是南美最活跃的火山之一，山顶常年冒着蒸汽，晴夜能看见火口的红光。火山不是背景而是制度的一部分：镇上有分区的疏散路线与警报等级，火山泥流的路径被划出来限制建设，1964 年附近的科尼亚里佩就曾被泥流摧毁。西班牙人 1552 年在这一带建维亚里卡城并淘取砂金，据推测 16 世纪的火山泥流把金矿掩埋，今天的镇子建于 1883 年。它现在是智利南部的户外运动中心：登火山、漂流、滑雪、骑马与温泉都在周边，一二月的旺季人流集中。初来的人最容易犯的错，是把登火山当作随时可去的项目，而是否开放要看当日的火山与天气状况。",
     layout:
       "小镇规模不大，沿维亚里卡湖岸展开，主街奥希金斯大道两侧集中了大量旅行社、餐厅与户外装备店；黑沙滩紧邻小镇中心，是当地人夏季戏水的主要去处。",
     gettingAround:
@@ -12048,6 +12576,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "puerto-varas": {
     identity:
       "普埃托瓦拉斯是智利南部湖区一座以德国移民建筑风格著称的小城，坐落在亚科多湖畔，正对奥索尔诺火山，是探访湖区南段与奇洛埃群岛的重要基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Puerto Varas (Chile; city and commune in Llanquihue Province, Los Lagos Region, governed as a commune under an elected mayor; about 52,942 residents in 2024, about 20 km from Puerto Montt; on the shore of Lake Llanquihue with views of the Osorno and Calbuco volcanoes; the Llanquihue Lake Colonization Territory created on 27 June 1853, drawing about 212 German families by the end of that year, with Sudeten German settlers from Bohemia arriving in 1875 to found Nueva Braunau; the wooden Sacred Heart church of 1918; called the City of Roses after Mayor Teobaldo Kuschel planted roses in public spaces in the 1950s; Vicente Pérez Rosales National Park and the Petrohué falls; the Andes crossing to Bariloche)
+    howItWorks:
+      "普埃托瓦拉斯是智利湖大区兰基韦省的一个市镇，2024 年人口约 5.3 万，在蒙特港西北约 20 公里；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。城市在兰基韦湖南岸，晴天可以同时看见奥索尔诺与卡尔布科两座火山。它的形成来自一次有组织的移民：1853 年 6 月 27 日智利政府划出“兰基韦湖殖民地区”招募欧洲移民，当年年底已有约 212 户德意志家庭落户，1875 年又有来自波希米亚的苏台德德意志人建起新布劳瑙。因此这一带的木构房屋、教堂样式、姓氏与食物都带着德语区的痕迹，1918 年落成的耶稣圣心堂是木造教堂的代表。1950 年代市长在公共空间大量种植玫瑰，本地由此得名“玫瑰之城”。比森特·佩雷斯·罗萨莱斯国家公园与佩特罗韦瀑布在东面，翻越安第斯山经湖区到阿根廷巴里洛切的水陆联运也从这里出发。初来的人最容易犯的错，是把德式外观当作主题装饰，而它来自一段真实的移民史。",
     layout:
       "城市沿亚科多湖岸展开，湖滨大道两侧保留着大量19世纪德国移民建造的木构别墅；圣弗朗西斯科哈维尔教堂是城市地标之一，仿照德国黑森林地区教堂样式建造。",
     gettingAround:
@@ -12079,6 +12610,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   coyhaique: {
     identity:
       "科伊艾克是智利艾森大区首府，坐落在巴塔哥尼亚北部内陆，是这一片人烟稀少的荒野地带中最大的城镇，也是探访卡雷特拉奥斯特拉尔公路（南部公路）沿线景观的重要补给站。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Coyhaique (Chile; capital of the Aysén Region and of Coyhaique Province, governed as a commune under an elected mayor; 57,823 residents in the 2024 census; east of the Andes at about 310 m; founded on 12 October 1929 as Baquedano and renamed in 1934, a municipality in 1948 and regional capital from 1974, one of the youngest regional capitals in Chile; the main square laid out as a pentagon in honour of the Carabineros; mountains that may stay snow-covered all year, hence the city of eternal snow; the Carretera Austral; a 2018 World Health Organization study showed the worst air quality in the Americas, from winter wood smoke trapped by the valley; Balmaceda Airport about 40 km away)
+    howItWorks:
+      "科伊艾克是智利艾森大区与科伊艾克省的首府，2024 年普查人口 57,823，占了整个大区人口的一大半；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。这是智利最年轻的大区首府之一：1929 年 10 月 12 日建镇，原名巴克达诺，1934 年改今名，1948 年设市，1974 年成为大区首府。城市在安第斯山以东、海拔约 310 米的谷地里，中心广场做成五边形，是为纪念国家警察而设计的，全城的街道由此放射出去。地理上它长期是孤立的：与智利其他地方之间没有连续的陆路，往来靠经阿根廷绕行、坐船，或走后来修通的南部公路，这条公路至今仍是本地的主干。谷地地形也带来一个具体的问题——冬天家家烧柴取暖，烟被逆温层压在谷底，2018 年世界卫生组织的一项研究显示这里的空气质量在美洲最差。巴尔马塞达机场在东南约 40 公里。初来的人最容易犯的错，是以为沿智利南下就能开到这里，而路要绕。",
     layout:
       "城市中心广场呈五边形，是智利少见的非方形城市布局；西门斯基山公园紧邻市区，是俯瞰城镇与周边巴塔哥尼亚山地的观景点；城镇规模不大，是方圆数百公里内唯一有较完整基础设施的定居点。",
     gettingAround:
@@ -12110,6 +12644,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hanga-roa": {
     identity:
       "汉加罗阿是复活节岛唯一的城镇与聚落，也是全岛人口的聚居地，坐落在岛屿西南岸，是探访摩艾石像与拉帕努伊文化遗址的唯一基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hanga Roa (Chile; the main town, harbour and seat of Easter Island, a municipality of Chile in the Valparaíso Region; about 7,322 residents of the island's roughly 7,750, close to 95 per cent of the population; the town established after Chile annexed the island in 1888; the Chilean Navy administered the territory from 1953 to 1966; Mataveri International Airport with direct flights to Santiago, one of the most remote airports in the world; a hospital of 16 beds opened in 2013; Rapa Nui National Park with the moai covers much of the island; tourism the mainstay of the economy)
+    howItWorks:
+      "汉加罗阿是复活节岛上唯一的城镇，也是港口与行政中心；这座岛在行政上是智利瓦尔帕莱索大区下的一个市镇，由民选的市长与市议会治理，同时具有“特别领地”的地位。岛上约 7,750 人中约 7,322 人住在这个镇里，接近九成五——原因很直接：岛的大部分面积属于拉帕努伊国家公园，摩艾石像与考古遗址都在园内，公园自 2017 年起由拉帕努伊社区的组织与国家共同管理，居住与建设集中在这一小块。1888 年智利将该岛并入版图后镇子成形，1953 至 1966 年间由智利海军管理。马塔维里国际机场就在镇南，跑道横在岛上，飞圣地亚哥约五小时，是世界上最偏远的机场之一；岛上的医院 2013 年启用，只有 16 张床位，重病需转运。淡水、垃圾与运输都受岛屿条件限制，旅游是主要收入。初来的人最容易犯的错，是把这里当作普通海岛度假地，而岛上的多数土地是受保护的遗址。",
     layout:
       "小镇规模不大，沿海岸线呈带状展开，主要街道集中了旅行社、餐厅与手工艺品店；塔哈伊仪式中心紧邻小镇，是岛上距市区最近的一处摩艾遗址群，日落时分是当地人与游客聚集的经典观景点。",
     gettingAround:
