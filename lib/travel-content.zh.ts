@@ -2685,6 +2685,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "quebec-city": {
     identity:
       "魁北克市是魁北克省的省会，坐落在圣劳伦斯河骤然收窄处的一块峭壁（钻石角）上，都会区约 85 万人。城市名来自阿尔冈昆语“kébec”，意思正是“河流变窄的地方”。老城区是北美唯一保存完整城墙的城市，1608 年由法国人建立，是北美最早的欧洲人定居点之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Quebec City (Ville de Québec, 6 boroughs since 2002; 549,459 2021; metro ~839,000 with Lévis separate; capital of Quebec, National Assembly; Old Quebec UNESCO 1985; Upper/Lower Town; ~91% French mother tongue; RTC buses)
+    howItWorks:
+      "魁北克市是魁北克省的首府，省议会在这里，省政府掌管医疗与教育，市政府管公交、供水与规划；2002 年合并后市下分 6 个区，2021 年人口约 55 万，都会区约 84 万，河对岸的莱维斯是另一座市。老城在圣劳伦斯河收窄处的岬角上，分上城与下城，是北美墨西哥以北唯一保留城墙的城，1985 年列入世界遗产，芳堤娜城堡是坐标，亚伯拉罕平原在城墙外，圣福瓦是西面的商业与大学区；约九成市民以法语为母语，渡轮通往莱维斯，机场在城西。初来的人最容易犯的错，是把城墙内的老城当作魁北克市，而它只是一个 55 万人城市的一角。",
     layout:
       "魁北克市分“上城”和“下城”：上城在峭壁顶上，有城墙、星形要塞（Citadelle）和标志性的芳堤娜城堡酒店；下城在河边，是最早的定居点，皇家广场和小尚普兰街是石砌老街。峭壁上下有缆车和陡峭的楼梯相连。",
     gettingAround:
@@ -2700,6 +2703,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   halifax: {
     identity:
       "哈利法克斯是新斯科舍省的省会、加拿大大西洋省份最大的城市，都会区约 50 万人，是一座天然良港城市，历史上是英国在北美的重要海军基地。城市名来自 18 世纪的英国政治家、哈利法克斯伯爵（英格兰约克郡也有一座同名的市镇）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Halifax (Halifax Regional Municipality, amalgamated 1996 from Halifax, Dartmouth, Bedford and Halifax County; ~5,476 km², urban core ~238 km²; 439,819 2021; capital of Nova Scotia; Citadel; waterfront; Dartmouth across the harbour; naval base; airport 35 km)
+    howItWorks:
+      "哈利法克斯是新斯科舍省的首府，省政府掌管医疗与教育；今天的哈利法克斯区域市是 1996 年由哈利法克斯市、达特茅斯市、贝德福德镇与哈利法克斯县合并而成，市域约 5,500 平方公里，大部分是乡村与海岸，2021 年人口约 44 万，城区只占约 240 平方公里。市中心在哈利法克斯半岛上，城堡山俯瞰港口，滨水木栈道沿港湾展开，达特茅斯在港湾对岸，靠两座桥与渡轮往来，海军基地在港内，达尔豪斯大学在半岛上，机场在北面 35 公里。初来的人最容易犯的错，是把达特茅斯当作另一座城，而它是同一个市的一部分；反过来，市域的两百多个社区大多离城区几十公里。",
     layout:
       "哈利法克斯建在一条狭长深水港湾西岸的山坡上，港口对面是达特茅斯市，两地有渡轮和大桥相连。市中心紧贴海边，山顶上是星形的城堡山（Citadel）要塞，俯瞰全港。海滨步道从赌场一直延伸到码头集市。",
     gettingAround:
@@ -2715,6 +2721,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "st-johns": {
     identity:
       "圣约翰斯是纽芬兰-拉布拉多省的省会，位于纽芬兰岛最东端，都会区约 20 多万人，是北美大陆最靠东的城市，也是欧洲人在北美最早建立的定居点之一。相传其名来自施洗者圣约翰的节日（1497 年 6 月 24 日，传统上认为约翰·卡伯特在这一天抵达此地）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): St. John's (City of St. John's ~446 km²; 110,525 2021; metro ~212,600 with Mount Pearl, Paradise, CBS separate; capital of Newfoundland and Labrador; the Narrows; Signal Hill; Jellybean Row; Cape Spear; offshore oil; fog; UTC−3:30)
+    howItWorks:
+      "圣约翰斯是纽芬兰与拉布拉多省的首府，省政府掌管医疗与教育，市政府管公交、供水与规划；市域约 446 平方公里，2021 年人口约 11 万，都会区约 21 万，芒特珀尔、帕拉代斯各是独立的市镇。城市围着一个从“窄口”进入的天然港生长，信号山守在港口的北侧，彩色的联排屋沿坡而上，沃特街是北美最老的商业街之一，斯皮尔角在东南 15 公里，是北美大陆的最东点；海上油田让它成为加拿大东部的石油中心，一年有一百多天雾，时区比东部时间早一个半小时。初来的人最容易犯的错，是按加拿大其他城市来算时差，而纽芬兰有自己的时区，比多伦多早一个半小时。",
     layout:
       "圣约翰斯抱着一个几乎被陆地包围的小港湾，只有一条狭窄的水道（“The Narrows”）通向大西洋，水道两侧是陡崖，北崖顶上是信号山。市中心的房子沿陡坡而建、漆成鲜艳的糖果色（“Jellybean Row”）。城市之外很快就是空旷的岩石荒原和海岸。",
     gettingAround:
@@ -2730,6 +2739,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   winnipeg: {
     identity:
       "温尼伯是曼尼托巴省的省会，位于加拿大中部大草原的东缘、红河与阿西尼博因河交汇处，都会区约 85 万人。这里自古是原住民和皮毛贸易的交汇点，19 世纪末因铁路成为“通往西部的门户”。城市名来自克里语“wīnipēk”，意为“浑浊的水”，指北面的温尼伯湖。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Winnipeg (single-tier city, Unicity 1972; ~464 km²; ~750,000 2021; metro ~835,000 ≈ 60% of Manitoba; capital of Manitoba; The Forks; Exchange District; Portage and Main; St. Boniface francophone; winter −16°C)
+    howItWorks:
+      "温尼伯是马尼托巴省的首府，省政府掌管医疗与教育；1972 年“统一市”改革把周围的市镇并成一座单层市，市域约 464 平方公里，2021 年人口约 75 万，都会区约 84 万，占全省的六成。市中心在红河与阿西尼博因河汇合处的“叉口”，波蒂奇与梅因路口是城市的坐标，交易区是 1900 年前后的仓库街区，圣博尼法斯在红河东岸，是西部最大的法语社区，人权博物馆在叉口边，冬天平均零下 16 度，“温特尼伯”是它的绰号，机场在城西。初来的人最容易犯的错，是把温尼伯当作一座草原小城，而它是全省六成人口所在、有芭蕾舞团与交响乐团的都会。",
     layout:
       "温尼伯建在一片极其平坦的湖积平原上（史前冰川湖阿加西的湖底），没有任何山。两河交汇处叫“The Forks”，是历史和现在的城市中心，有市集和步道。街道是大网格，市中心的 Portage and Main 十字路口号称“加拿大的十字路口”，也以风大、寒冷出名。",
     gettingAround:
@@ -2763,6 +2775,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   edmonton: {
     identity:
       "埃德蒙顿是艾伯塔省的省会，位于该省中部、北萨斯喀彻温河谷两岸，都会区约 150 万人，是加拿大最靠北的大城市之一，也是通往北方油砂产区和西北地区的补给基地。城市名来自英国伦敦的一个地区埃德蒙顿——经由一位哈得孙湾公司官员的家乡传来。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Edmonton (single-tier city ~766 km²; 1,010,899 2021; metro 1,418,118 with St. Albert, Strathcona County, Leduc separate; capital of Alberta; river valley parks; Strathcona merged 1912; West Edmonton Mall; LRT; airport ~30 km at Leduc)
+    howItWorks:
+      "埃德蒙顿是阿尔伯塔省的首府，省议会在河谷的高地上，省政府掌管医疗与教育，市政府管公交、供水与警察；市域约 766 平方公里，2021 年人口约 101 万，都会区约 142 万，圣艾伯特、斯特拉斯科纳县各是独立的市镇。北萨斯喀彻温河的河谷穿过市中心，是北美最大的城市公园带之一，市中心与冰区在北岸，怀特大道所在的老斯特拉斯科纳 1912 年并入，在南岸；西埃德蒙顿购物中心在西郊，轻轨连起南北，机场在南面 30 公里的勒杜克，它是通往油砂区的门户。初来的人最容易犯的错，是把埃德蒙顿当作卡尔加里的陪衬，而它是省会，人口与卡尔加里相当。",
     layout:
       "埃德蒙顿跨北萨斯喀彻温河而建，河谷两岸是北美最大的相连城市公园系统之一（“河谷带”）。市中心在河北岸的平原上，往南过河是老斯特拉思科纳的历史街区和大学。城市平坦、网格状、摊得很开。",
     gettingAround:
@@ -2797,6 +2812,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   victoria: {
     identity:
       "维多利亚是不列颠哥伦比亚省的省会，在温哥华岛南端，人口约9.2万、都会区约40万（2021年普查）。它1843年以哈德逊湾公司的维多利亚堡起家，1871年成为省会，内港边的省议会大厦（1897年）和皇后酒店（1908年）是城市的标志，1904年开放的布查特花园是从采石场改造的著名花园。维多利亚是加拿大气候最温和的城市之一，有“花园城市”之称，从这里坐渡轮可到温哥华和西雅图。这片土地是勒昆恩（Lekwungen，今松希斯和埃斯奎莫尔特民族）的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Victoria (City of Victoria ~19.5 km², 91,867 2021; Greater Victoria/Capital Regional District 13 municipalities ~397,000; capital of BC, legislature; Inner Harbour; Empress; Chinatown; Butchart in Central Saanich; ferries Swartz Bay 32 km; airport at Sidney; seaplanes)
+    howItWorks:
+      "维多利亚是不列颠哥伦比亚省的首府，省议会在内港边，省政府掌管医疗与教育；维多利亚市本身只有约 20 平方公里、2021 年约 9.2 万人，而大维多利亚由 13 个市镇组成，约 40 万人，萨尼奇、橡树湾、埃斯奎莫尔特、兰福德各有自己的市议会，首都区域局统管供水与区域规划。市中心在内港的三面，帝后饭店与议会大厦是坐标，唐人街是加拿大最老的；布查特花园在中萨尼奇，渡轮码头在北面 32 公里的斯沃茨湾，机场在悉尼，水上飞机从内港直飞温哥华。初来的人最容易犯的错，一是以为维多利亚在大陆上，而它在温哥华岛，二是把维多利亚市当作整座城，而它只占大维多利亚的四分之一。",
     layout:
       "市中心围绕内港：省议会大厦在港南岸，皇后酒店和皇家不列颠哥伦比亚博物馆在港东岸，政府街向北是商业街和唐人街（加拿大最老的唐人街之一）。比肯山公园在市中心南面的海边，海洋大道沿海岸向东。布查特花园在城北约20公里的布伦特伍德湾，机场在北面约25公里的悉尼镇，去温哥华（茨瓦森）的BC渡轮码头在斯瓦茨湾，去西雅图的船从内港出发。",
     gettingAround:
@@ -2811,6 +2829,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   whistler: {
     identity:
       "惠斯勒在不列颠哥伦比亚省海岸山脉里，温哥华以北约125公里，海拔约670米，常住人口约1.4万（2021年普查），每年接待游客超过200万。惠斯勒—黑梳山是北美最大的滑雪度假区之一，两座山之间的“峰顶对峰顶”缆车跨度4.4公里；2010年温哥华冬奥会的高山滑雪、雪橇和北欧项目在这里举行。夏季有山地自行车公园、徒步和湖泊。这里是斯阔米什（Squamish）和利尔瓦特（Lil'wat）民族的传统领地，两族共建的文化中心在村里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Whistler (Resort Municipality of Whistler, special status 1975; ~240 km²; 13,982 2021; >2 million visitors/yr; Whistler Village 1980; Whistler Blackcomb; Sea-to-Sky Highway 125 km from Vancouver; 2010 Olympics; Lil'wat/Squamish; no airport)
+    howItWorks:
+      "惠斯勒是加拿大第一个“度假市”，1975 年省政府为它专门立法设立，市域约 240 平方公里，2021 年常住人口约 1.4 万，每年游客超过 200 万；市议会管地方服务，其余归省政府。惠斯勒村是 1980 年建成的步行街区，在两座山的脚下，惠斯勒山与黑梳山的缆车从村里直接上山，峰对峰缆车把两山连起来，2010 年冬奥会的高山项目在这里举行；海天公路到温哥华约 125 公里，没有机场，利尔瓦特与斯阔米什两个原住民族是这片土地的主人。初来的人最容易犯的错，是把惠斯勒当作一座雪场，而它是一个全年运行、夏天靠山地自行车的度假市。",
     layout:
       "惠斯勒村是步行街区，酒店、餐馆和缆车站集中在一起，惠斯勒山和黑梳山的缆车分别从村中和上村出发；奥林匹克广场在村北，斯阔米什—利尔瓦特文化中心在上村。洛斯特湖在村东北，阿尔塔湖在村西南，谷地步道把它们和克里克赛德连起来。海天公路（99号公路）从温哥华经斯阔米什到这里，再往北是彭伯顿。",
     gettingAround:
@@ -2825,6 +2846,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   banff: {
     identity:
       "班夫是加拿大落基山里的小镇，在艾伯塔省卡尔加里以西约126公里，海拔约1400米，人口约8300（2021年普查）。它位于1885年设立的班夫国家公园——加拿大第一个国家公园——内，是加拿大唯一在国家公园内设市的镇（1990年）。国家公园因1883年发现的洞穴与盆地温泉而设立，1985年与贾斯珀等一起列入世界遗产“加拿大落基山公园群”。露易丝湖在西北约58公里，冰原大道从这里通往贾斯珀。这片土地是斯托尼纳科达等民族的传统领地，属《第七号条约》区域。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Banff (Town of Banff, incorporated 1990 within Banff National Park on federal land; need-to-reside rule; 4.08 km²; 8,305 2021; Banff Avenue; Bow River; Sulphur Mountain gondola; Lake Louise 57 km in Improvement District 9; Calgary 126 km; Roam transit; no airport)
+    howItWorks:
+      "班夫镇是加拿大第一个设在国家公园内的市镇，1990 年成立，土地属于联邦的加拿大公园局，镇域只有约 4 平方公里，2021 年人口约 8,300；镇议会管地方服务，但商业面积有上限，只有在镇上工作的人才有资格居住，房子不能随便买。镇子在弓河与班夫大道两侧，硫磺山缆车从镇边上山，温泉在山脚；露易丝湖在西北 57 公里，属于另一个行政区，卡尔加里在东面 126 公里，进入公园要买门票，Roam 公交连接镇内与周边，没有机场。初来的人最容易犯的错，是把班夫镇当作班夫国家公园，而公园有 6,600 平方公里，镇只是里面的一个点。",
     layout:
       "小镇在弓河河谷里，班夫大道是主街，两端是卡斯凯德山和硫磺山：硫磺山有缆车和上温泉，山脚是费尔蒙班夫温泉酒店和弓河瀑布；洞穴与盆地国家历史遗址在弓河南岸。明尼万卡湖在镇东北约10公里，弗米利恩湖在镇西。露易丝湖和梦莲湖在西北，冰原大道从露易丝湖向北到哥伦比亚冰原和贾斯珀。坎莫尔在东面约25公里的公园外。",
     gettingAround:
@@ -2839,6 +2863,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jasper: {
     identity:
       "贾斯珀是加拿大落基山北部的小镇，在艾伯塔省埃德蒙顿以西约360公里，海拔约1060米，人口约4700（2021年普查），是贾斯珀国家公园（1907年设立，加拿大落基山最大的国家公园）的服务中心，也是世界遗产“加拿大落基山公园群”和暗夜星空保护区的一部分。玛琳湖、哥伦比亚冰原的阿萨巴斯卡冰川、贾斯珀天空缆车都在这里。2024年7月22日开始的山火烧毁了镇上约三分之一的建筑，小镇随后重建、逐步恢复接待；VIA 铁路的“加拿大人”号横贯列车和到鲁珀特王子港的列车在此停靠。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jasper (Municipality of Jasper, specialized municipality 2001 within Jasper National Park on Parks Canada land; 4,738 2021; Athabasca; Icefields Parkway; VIA Rail; Edmonton ~360 km; July 2024 wildfire destroyed 358 buildings, about a third of structures)
+    howItWorks:
+      "贾斯珀是贾斯珀国家公园里的一座镇，2001 年起是阿尔伯塔省的“特设市镇”，土地属于加拿大公园局，只有在公园里工作的人才能居住，2021 年人口约 4,700；镇议会与公园局共同管理地方事务。镇子在阿萨巴斯卡河谷的铁路旁，是国家公园的商业中心，VIA 铁路的“加拿大人号”在这里停靠，冰原大道向南通往哥伦比亚冰原与露易丝湖，马林湖在东南 45 公里，天空缆车在镇外，埃德蒙顿在东面约 360 公里。2024 年 7 月的山火烧毁了镇上约三分之一的建筑，重建仍在进行。初来的人最容易犯的错，是把贾斯珀当作一座普通的山镇，而它是公园里受管制的居住区，进出要买公园门票。",
     layout:
       "小镇在阿萨巴斯卡河谷里，火车站和主街康诺特大道在中心，镇子很小、步行即可。金字塔湖和帕特里夏湖在镇北约6公里，天空缆车在镇南约7公里的惠斯勒斯山上，玛琳峡谷、梅迪辛湖和玛琳湖在镇东南（玛琳湖约48公里），米耶特温泉在东北约60公里。冰原大道从镇南向南到哥伦比亚冰原（约105公里）和班夫，伊迪丝·卡维尔山在冰原大道旁。",
     gettingAround:
@@ -2853,6 +2880,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   regina: {
     identity:
       "里贾纳是萨斯喀彻温省的省会，在加拿大草原的中部，人口约22.6万（2021年普查）。它1882年由路易丝公主以维多利亚女王的拉丁语称号命名（此前克里语地名 Wascana 意为“野牛骨”），1906年成为新成立的萨省的省会。市中心南面的瓦斯卡纳中心是围绕人工湖建成的9.3平方公里城市公园，1912年落成的省议会大厦立在湖边；加拿大皇家骑警（RCMP）的全国训练基地“兵站”自1885年起在里贾纳，旁边有骑警遗产中心。这里是《第四号条约》区域，克里、索尔托、纳科达等民族的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Regina (single-tier city ~179 km²; 226,404 2021; metro ~249,000; capital of Saskatchewan, legislature 1912; Wascana Centre 9.3 km²; RCMP Depot; flat prairie; Saskatoon larger)
+    howItWorks:
+      "里贾纳是萨斯喀彻温省的首府，省议会大厦在瓦斯卡纳湖边，省政府掌管医疗与教育，市政府管公交、供水与警察；市域约 179 平方公里，2021 年人口约 23 万，都会区约 25 万，是全省第二大城市，萨斯卡通更大。城市建在一片没有树的平坦草原上，瓦斯卡纳中心是北美最大的城市公园之一，博物馆与美术馆都在里面，市中心在公园北面，大教堂区是老街区，皇家骑警的训练基地在城西，横加公路从城边经过，机场在西南。初来的人最容易犯的错，是以为省会就是最大的城市，而萨斯喀彻温的最大城市在北面 260 公里的萨斯卡通。",
     layout:
       "市中心在维多利亚公园周围，是规整的街区；瓦斯卡纳中心和湖在市中心正南，省议会大厦在湖南岸，皇家萨斯喀彻温博物馆和麦肯齐美术馆在湖边。骑警兵站和遗产中心在市区西侧。市区四周是平坦的草原，机场在西南约7公里。萨斯卡通在北面约260公里，穆斯乔在西面约70公里。",
     gettingAround:
@@ -2867,6 +2897,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   charlottetown: {
     identity:
       "夏洛特敦是爱德华王子岛省的省会，人口约3.9万（2021年普查）。1864年9月，各殖民地代表在这里的省议会大楼开会讨论联合，促成了1867年的加拿大联邦，所以它被称为“联邦诞生地”。露西·莫德·蒙哥马利的小说《绿山墙的安妮》以岛上的卡文迪什为背景（距市区约40公里），联邦艺术中心每年夏季上演安妮的音乐剧。1997年通车的联邦大桥长12.9公里，把岛与新不伦瑞克连起来。这片土地是米克马克（Mi'kmaq）民族的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Charlottetown (City of Charlottetown ~44 km²; 38,809 2021; metro ~80,000; capital of PEI; Province House, 1864 conference; harbour; Confederation Bridge 1997 ~55 km; airport; Cavendish 35 km; no rail)
+    howItWorks:
+      "夏洛特敦是爱德华王子岛省的首府，省议会在省府大厦，1864 年的夏洛特敦会议在那里开启了加拿大联邦，省政府掌管医疗与教育，市政府管地方服务；市域约 44 平方公里，2021 年人口约 3.9 万，都会区约 8 万，整个省只有约 17 万人。市中心在港湾边的维多利亚时期街区，联邦艺术中心是坐标，滨水区改成了公园；联邦大桥在西面约 55 公里，1997 年通车，13 公里长，是与大陆的唯一陆路，机场在城北，绿山墙的安妮在北面 35 公里的卡文迪什，岛上没有铁路。初来的人最容易犯的错，是把夏洛特敦当作一座大城，而它是一个 17 万人小省的首府，整座岛开车两小时可到两头。",
     layout:
       "市中心在希尔斯伯勒河口的港湾边，是十九世纪的街道格局：省议会大楼和联邦艺术中心在格拉夫顿街中心，维多利亚街是步行餐饮街，港口边有码头和游船。维多利亚公园在市区西南的海角上。卡文迪什和绿山墙在岛北岸约40公里，联邦大桥在岛西南约55公里的博登—卡尔顿，红沙滩和灯塔沿岛的海岸分布。机场在市区北约6公里。",
     gettingAround:
@@ -2881,6 +2914,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "niagara-falls": {
     identity:
       "尼亚加拉瀑布城在安大略省尼亚加拉河西岸，与美国纽约州的同名城市隔河相望，人口约9.4万（2021年普查）。尼亚加拉瀑布由马蹄瀑布（高约57米、宽约790米，大部分在加拿大一侧）、美国瀑布和新娘面纱瀑布组成，平均流量约2400立方米/秒，是北美流量最大的瀑布，约1万年前由冰川消退形成。加拿大一侧正对马蹄瀑布，视野最好，游船、瀑布后隧道和观景塔都在这里；北面约20公里的滨湖尼亚加拉是保存完好的十九世纪小镇和葡萄酒产区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Niagara Falls (lower-tier city in Regional Municipality of Niagara; ~210 km²; 94,415 2021; Horseshoe Falls; Clifton Hill; Niagara Parks Commission provincial agency; Rainbow Bridge to Niagara Falls NY; WEGO; seasonal GO; Toronto ~130 km)
+    howItWorks:
+      "尼亚加拉瀑布城是安大略省尼亚加拉区域市之下的一座下级市，市域约 210 平方公里，2021 年人口约 9.4 万；区域市管警察、供水与区域道路，市政府管地方服务，瀑布沿岸的公园与观景设施由省属的尼亚加拉公园委员会管理，不归市政府。马蹄瀑布在加拿大一侧，克利夫顿山是瀑布上方的游乐街，高层酒店与赌场沿崖顶排开，彩虹桥通往对岸美国的同名城市，尼亚加拉湖畔镇的酒庄在北面 20 公里，多伦多在 130 公里外，夏季有 GO 火车，WEGO 公交连接景区。初来的人最容易犯的错，是不知道河两岸各有一座叫“尼亚加拉瀑布”的城市，分属两个国家，过桥要过海关。",
     layout:
       "市区沿尼亚加拉河西岸的峭壁展开：桌岩观景台正对马蹄瀑布，瀑布后之旅入口就在旁边；沿河向北是游船码头、彩虹桥（通往美国）和克利夫顿山游乐街，瀑布景观区（Fallsview）的酒店和赌场在河崖上方，天塔在中间。维多利亚女王公园沿河岸伸展。尼亚加拉公园大道沿河向北到旋涡、花钟和滨湖尼亚加拉；瀑布上游是水电站和大瀑布上方的湍流。GO 火车站在市区北部。",
     gettingAround:
@@ -2895,6 +2931,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   fredericton: {
     identity:
       "弗雷德里克顿是新不伦瑞克省的省会，在圣约翰河（沃拉斯托克河）畔，人口约6.3万（2021年普查）。它1785年由效忠英王的美洲移民建立并成为省会，河南岸的驻军区保留着十九世纪英军营房，比弗布鲁克美术馆是加拿大大西洋省份最重要的美术馆之一，新不伦瑞克大学（1785年）是加拿大最早的英语大学之一。这片土地是沃拉斯托克（Wolastoqiyik，又称马利西特）民族的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Fredericton (City of Fredericton ~134 km²; 63,116 2021; metro ~108,600; capital of New Brunswick, bilingual province; Saint John River; UNB 1785; Beaverbrook Art Gallery; third-largest city after Moncton and Saint John; airport)
+    howItWorks:
+      "弗雷德里克顿是新不伦瑞克省的首府，省议会在圣约翰河南岸的市中心，这是加拿大唯一法定双语的省，省政府掌管医疗与教育，市政府管地方服务；市域约 134 平方公里，2021 年人口约 6.3 万，都会区约 11 万，是全省第三大城市，蒙克顿与圣约翰都比它大。市中心在河的南岸，驻军区的老兵营与比弗布鲁克美术馆在那里，1785 年创办的新不伦瑞克大学在山坡上，河北岸是住宅区，步道沿着旧铁路环绕全城，机场在东南。初来的人最容易犯的错，是以为省会是最大的城市，而弗雷德里克顿是一座以政府与大学为生的小城。",
     layout:
       "市中心在圣约翰河南岸，皇后街和国王街平行于河，驻军区、比弗布鲁克美术馆、省议会大厦、基督教堂主教座堂都在河边几个街区内。新不伦瑞克大学和圣托马斯大学在市中心南面的山坡上。河北岸是居民区和步道，旧铁路桥改成的步行桥连接两岸。奥德尔公园在城西南。机场在市区东南约15公里。圣约翰市在南面约110公里，蒙克顿在东面约180公里。",
     gettingAround:
@@ -2909,6 +2948,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yellowknife: {
     identity:
       "黄刀镇是西北地区的首府，在大奴湖北岸的加拿大地盾岩石上，北极圈以南约400公里，人口约2万（2021年普查）。它1930年代因淘金而兴起，1967年成为首府，最后一座金矿2004年关闭；1991年在北面300公里发现钻石后成为加拿大钻石业的中心。因位于极光带正下方、冬季晴夜多，它是世界上观赏极光条件最好的地方之一，8月中到4月都有机会。老城的木屋、船屋和飞行员纪念碑保留着早期的样子。城市以耶洛奈夫斯（Yellowknives）德内民族命名，这里是他们的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Yellowknife (City of Yellowknife ~136 km²; 20,340 2021 ≈ half of NWT; capital of Northwest Territories, consensus government; Great Slave Lake; Old Town/houseboats; gold 1934–2004, diamonds since 1991; aurora; August 2023 wildfire evacuation)
+    howItWorks:
+      "耶洛奈夫是西北地区的首府，2021 年人口约 2 万，占全地区的一半；地区议会实行没有政党的协商制政府，掌管医疗与教育，市政府管地方服务。城市在大奴湖的北岸，1934 年因金矿而建，最后的金矿 2004 年关闭，1991 年起北面的钻石矿接替了它；老城在岩石半岛与拉瑟姆岛上，湖上的船屋是它的标志，新城在山坡上，市中心是几座政府楼与商店；冬天的极光吸引着大量游客，冰上公路通往湖对岸，机场在城郊。2023 年 8 月的山火让近九成居民撤离了三周。初来的人最容易犯的错，是把耶洛奈夫当作一座极地小村，而它是一个比法国还大的地区的首府。",
     layout:
       "市区在大奴湖北岸的岩石半岛上，新城（市中心，威尔士亲王北方遗产中心、议会大厦）在半岛中部，老城在半岛北端的湖边，飞行员纪念碑的小山是老城最高点，拉瑟姆岛和乔利夫岛的船屋在老城外的湖上。机场在城西约5公里。冬季有冰路穿过湖面到德塔（德内村落）。城外是无数小湖和地盾岩石，极光营地分布在城外的湖边。",
     gettingAround:
@@ -2923,6 +2965,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   whitehorse: {
     identity:
       "白马市是育空地区的首府，在育空河上游的河谷里，人口约2.8万（2021年普查），育空四分之三的人口住在这里。它因1896年开始的克朗代克淘金热而兴起——淘金者从斯卡圭翻过白隘口到这里再乘船北上道森，1900年通车的白隘口与育空铁路和1942年修建的阿拉斯加公路把它变成交通枢纽，1953年取代道森成为首府。育空河上的“克朗代克号”汽轮是那个时代的纪念，迈尔斯峡谷在城南。这片土地是宽林顿（Kwanlin Dün）和塔安宽奇（Ta'an Kwäch'än）民族的传统领地。夏季白天超过19小时，冬季可见极光。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Whitehorse (City of Whitehorse ~416 km²; 28,201 2021 ≈ 70% of Yukon; capital of Yukon since 1953; Yukon River; Klondike 1896 staging, White Pass railway 1900, SS Klondike; Alaska Highway km 1,426; Kwanlin Dün/Ta'an Kwäch'än; driest city in Canada; Dawson City ~530 km)
+    howItWorks:
+      "白马是育空地区的首府，1953 年从道森接过这一地位，市域约 416 平方公里，2021 年人口约 2.8 万，占全地区的七成；地区议会掌管医疗与教育，市政府管地方服务。市中心是育空河西岸的一片格网，克朗代克号蒸汽船停在河边，1900 年建成的白山口铁路曾从斯卡圭把淘金者送到这里，阿拉斯加公路在 1,426 公里处经过市区，机场在河谷上方的台地上，850 公里的步道网在市域内，冬天有极光；这里是关林敦与塔安克瓦昌两个原住民族的土地。初来的人最容易犯的错，是以为克朗代克淘金热发生在白马，而金矿在北面 530 公里的道森，白马只是路上的补给站。",
     layout:
       "市中心在育空河西岸的河谷平地上，主街和第二大道平行于河，克朗代克号汽轮泊在河边的公园里，麦克布莱德博物馆、宽林顿文化中心也在河边。机场在市区西侧的台地上，从市中心开车约5分钟。迈尔斯峡谷和施瓦特卡湖在城南约8公里，鱼梯和水电站在城边。育空白令陆桥中心和交通博物馆在机场旁。塔基尼温泉在西北约30公里，克卢恩国家公园在西面约150公里。",
     gettingAround:
@@ -2971,6 +3016,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bristol: {
     identity:
       "布里斯托尔在英格兰西南部、雅芳河下游，市区人口约 47 万，历史上是重要的港口和造船城市，如今以创意产业、街头艺术（涂鸦艺术家班克西的家乡）和独立文化闻名。美国有多座以它命名的城市。城市紧邻威尔士边界，是进入威尔士南部和西南半岛的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bristol (unitary authority, city and county since 1373; ~110 km²; ~494,000 2024; West of England Combined Authority with South Gloucestershire and BaNES; Floating Harbour; Clifton Suspension Bridge; no rail transit)
+    howItWorks:
+      "布里斯托是英格兰西南部最大的城市，1373 年起既是城又是郡，今天是一个单一制议会，市域约 110 平方公里，2024 年人口约 49 万；议会管教育、住房与垃圾，2017 年起与南格洛斯特郡、巴斯及东北萨默塞特合成的西英格兰联合管理局有民选市长管交通与规划，警察与医院归国家机构。市中心围着旧港区“浮动港”，克利夫顿吊桥跨在埃文峡谷上，坦普尔米兹是火车站，机场在南面 13 公里，没有轨道交通。初来的人最容易犯的错，是把布里斯托议会的辖区当作整座城，而城区的北半在南格洛斯特郡议会，市界紧得像一件小一号的衣服。",
     layout:
       "布里斯托尔建在雅芳河切出的峡谷和周围的丘陵上，地势起伏。老港区（Harbourside）经过改造，是博物馆和餐饮区；克利夫顿的乔治王朝式排屋在峡谷边，著名的克利夫顿悬索桥横跨雅芳峡谷。市中心紧凑，但坡多。",
     gettingAround:
@@ -3022,6 +3070,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   liverpool: {
     identity:
       "利物浦在英格兰西北、默西河口北岸，市区人口约 50 万，历史上是大西洋航运的大港（移民、货物、也包括奴隶贸易），船坞沿河绵延数公里。今天以音乐（一支世界闻名的乐队来自这里）、两家足球俱乐部和被列为世界遗产又除名的海滨建筑群闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Liverpool (metropolitan borough; ~509,000 2024; Liverpool City Region Combined Authority of 6 boroughs incl. Wirral/Sefton/Knowsley, >1.5 million, mayor since 2017; Merseyrail; Pier Head; Albert Dock; Mersey ferries; airport)
+    howItWorks:
+      "利物浦是默西塞德的都市自治市，2024 年人口约 51 万；它是利物浦城市区域的核心，2017 年起这个由威勒尔、塞夫顿、诺斯利等 6 个自治市组成的联合管理局有民选的区域市长，管交通与经济，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在默西河东岸，码头总部的“三女神”与阿尔伯特码头是它的门面，乔治时期街区在山坡上，安菲尔德与古迪逊在城北，默西铁路把河两岸连成网，渡轮开往对岸的威勒尔，机场在城南。初来的人最容易犯的错，是把河对岸的伯肯黑德当作利物浦的一部分，而威勒尔是另一个自治市，过河就换了议会。",
     layout:
       "利物浦沿默西河东岸的一道缓坡展开，河很宽、有轮渡往返对岸的伯肯헤德。“三女神”建筑和阿尔伯特码头在河边，是城市的门面；市中心的商业区和两座大教堂（一座现代、一座哥特复兴）在坡上。默西河底有隧道通向对岸。",
     gettingAround:
@@ -3037,6 +3088,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   york: {
     identity:
       "约克在英格兰北部、乌斯河与福斯河交汇处，市区人口约 20 万，是英格兰保存最完好的中世纪城市之一，有近乎完整的中世纪城墙、狭窄的老街和一座巨大的哥特式大教堂。城市由罗马人建立（“埃博拉库姆”），维京时期叫“约维克”。1664 年英国从荷兰手中接管北美殖民地后，把新阿姆斯特丹改名为“新约克”——也就是今天的纽约——纪念当时的约克公爵。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): York (City of York unitary authority ~272 km²; ~202,800 2021; York and North Yorkshire Combined Authority mayor 2024; Ouse/Foss; walled city; Minster; Shambles; NRM; flooding)
+    howItWorks:
+      "约克是北约克郡的大教堂城市，约克市议会是一个单一制议会，辖区约 272 平方公里，2021 年人口约 20 万，2024 年起与北约克郡合成的联合管理局有民选市长；议会管教育、住房与垃圾，警察与医院归国家机构。老城在乌斯河与福斯河汇合处的城墙之内，大教堂、肉铺街与城堡塔在里面，火车站与国家铁路博物馆在城墙外的西侧，大学在东南郊；乌斯河的洪水是这座城反复经历的事。初来的人最容易犯的错，是把城墙内的老城当作约克市，而议会辖区包括城墙外几十个村庄，大多数市民住在城墙之外。",
     layout:
       "约克的老城区被城墙围在乌斯河两岸，可以沿墙走一圈（约 3.4 公里）。大教堂（York Minster）是老城的制高点和方向标；“肉铺街”（The Shambles）是最有名的一条中世纪窄巷。河边低地历史上常发洪水。城墙外是维多利亚时期随铁路发展起来的街区。",
     gettingAround:
@@ -3052,6 +3106,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   edinburgh: {
     identity:
       "爱丁堡是苏格兰的首府，人口约 55 万，建在几座火山岩丘和冰川刻蚀的地形上，老城和新城一起被列为世界遗产。城市以城堡、8 月的国际艺术节和军乐节、以及启蒙运动的历史闻名。它不是英国首都，但有自己的议会。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Edinburgh (City of Edinburgh Council unitary ~263 km²; ~530,700 2024; Scottish Parliament at Holyrood; Old and New Towns UNESCO 1995; Leith merged 1920; trams to airport; Festival August)
+    howItWorks:
+      "爱丁堡是苏格兰的首府，苏格兰议会与政府都在这里，医疗、教育与警察由苏格兰政府掌管；爱丁堡市议会是一个单一制议会，辖区约 263 平方公里，2024 年人口约 53 万，管教育、住房与垃圾。城市分成两片：城堡山下的老城是中世纪的街巷，皇家一英里从城堡通到荷里路德宫，王子街对面的新城是 18 世纪的格网，两者 1995 年一起列入世界遗产；利斯是 1920 年并入的港口区，亚瑟王座在城东，有轨电车通往机场，八月的艺术节把人口翻倍。初来的人最容易犯的错，是把老城与新城当作整个爱丁堡，而城市向南、向西延伸了十几公里，利斯的港口是另一种生活。",
     layout:
       "爱丁堡的地形很特别：城堡坐落在一块火山岩塞（volcanic plug）上，从岩塞向东拖出一道由冰川堆积形成的斜坡，中世纪老城就沿这道“皇家一英里”排布，尽头是荷里路德宫和一座叫“亚瑟王座”的死火山。北边隔着一条填平的谷地是 18 世纪规划的乔治王朝式新城，网格状、宽街道。",
     gettingAround:
@@ -3085,6 +3142,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   aberdeen: {
     identity:
       "阿伯丁是苏格兰东北部的港口城市，在迪河与顿河之间入海处，都会区约 23 万人。因为大量本地建筑用当地的灰色花岗岩，被称为“花岗岩之城”，晴天云母在阳光下会闪光。20 世纪 70 年代北海油田开发后，它成了欧洲的“石油之都”和海上作业的补给、直升机基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Aberdeen (Aberdeen City Council unitary ~186 km²; ~224,000 2022; separate from Aberdeenshire; Granite City; university 1495; Dee/Don; harbour, oil since 1970s; heliport; airport at Dyce)
+    howItWorks:
+      "阿伯丁是苏格兰的第三大城市，阿伯丁市议会是一个单一制议会，辖区约 186 平方公里，2022 年人口约 22 万，与四周的阿伯丁郡议会是两个政府；议会管教育、住房与垃圾，医疗与警察归苏格兰政府。城市在迪河与唐河两个河口之间，联合街是市中心的主街，灰色花岗岩让它被叫作“花岗岩城”，1495 年创办的大学在北面的老阿伯丁；1970 年代北海发现石油后，港口与直升机场成了欧洲海上油气的基地，机场在戴斯。初来的人最容易犯的错，是把阿伯丁当作一座渔港小城，而它是欧洲石油工业的陆上总部之一。",
     layout:
       "阿伯丁建在两条河之间的一道花岗岩台地上，主街联合街（Union Street）是一条笔直的花岗岩长街。城市有一片长长的沙滩就在市区边上，港口繁忙、以海上供应船和渔船为主。老城（Old Aberdeen）在北面顿河一侧，保留着中世纪大学和大教堂。",
     gettingAround:
@@ -3100,6 +3160,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   inverness: {
     identity:
       "因弗内斯是苏格兰高地的首府，位于尼斯河汇入马里湾处、大峡谷（Great Glen）的东北端，市区人口约 6 万，是英国最北的城市之一，也是探索高地、天空岛和北部海岸线的门户。名字在盖尔语里意为“尼斯河口”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Inverness (~48,000 2022; seat of the Highland Council, largest council area in the UK ~25,000 km², ~235,000; city status 2000; River Ness; Loch Ness ~10 km; Culloden; Kessock Bridge; airport)
+    howItWorks:
+      "因弗内斯是苏格兰高地的首府，2022 年人口约 4.8 万，2000 年获得城市地位；它是高地议会的所在地，这个议会管着英国面积最大的地方辖区，约 2.5 万平方公里、23 万人，从这里一直到北海岸，议会管教育、住房与道路，医疗与警察归苏格兰政府。城市在内斯河注入马里湾的河口，市中心在河的东岸，凯索克大桥通向北面的黑岛，卡洛登古战场在城东，尼斯湖在西南约 10 公里，机场在城东北。盖尔语的地名随处可见。初来的人最容易犯的错，是以为尼斯湖在城里，而它在城外，而且“高地”是一片比比利时还大的辖区，因弗内斯只是它的一角。",
     layout:
       "因弗内斯很小，尼斯河穿城而过，河心有几座相连的小林地岛。红砂岩的城堡（现为法院）立在河边高地上。城市西南方就是大峡谷——一条沿断层带笔直切开苏格兰的谷地，串起尼斯湖等几个狭长深湖，喀里多尼亚运河把它们连通、可通航。",
     gettingAround:
@@ -3115,6 +3178,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cardiff: {
     identity:
       "卡迪夫是威尔士的首府，位于威尔士南部、塔夫河入海处，都会区约 48 万人。19 世纪它是世界最大的煤炭输出港之一，如今是威尔士的政治、媒体和体育中心，威尔士议会和一座常办大型赛事的体育场都在市中心。威尔士（Wales）这个名字也被带到了世界各地——比如澳大利亚的“新南威尔士州”，是库克在 1770 年命名的。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cardiff (City and County of Cardiff ~141 km²; 362,400 2021; capital of Wales 1955; Senedd at Cardiff Bay 1999; Welsh Government at Cathays Park; castle; Cardiff Bay barrage; Penarth in Vale of Glamorgan; bilingual)
+    howItWorks:
+      "加的夫是威尔士的首府，1955 年起是首都，威尔士议会在加的夫湾，威尔士政府在卡赛斯公园，掌管医疗与教育；加的夫市郡议会是一个单一制议会，辖区约 141 平方公里，2021 年人口约 36 万，管教育、住房与垃圾，警察归国家机构。市中心在城堡与拱廊街一带，千禧体育场在市中心的河边，加的夫湾是 1990 年代拦坝后改造的旧码头区，卡赛斯是大学区，路牌威尔士语与英语并列，机场在西南 20 公里的罗斯。初来的人最容易犯的错，是把海湾对岸的彭纳斯当作加的夫，而它在格拉摩根谷议会，是另一座镇。",
     layout:
       "卡迪夫建在几条河汇入布里斯托尔湾处的低地上，地势平缓，北面渐渐升高为山谷区（historic 采煤谷地）。市中心紧凑，城堡就在正中间；往南是改造过的卡迪夫湾（旧码头区），有威尔士千禧中心和议会大楼。城市多公园绿地。",
     gettingAround:
@@ -3130,6 +3196,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   belfast: {
     identity:
       "贝尔法斯特是北爱尔兰的首府，位于爱尔兰岛东北、拉甘河汇入贝尔法斯特湾处，都会区约 67 万人。19 世纪末到 20 世纪初它是世界级的造船、亚麻和烟草工业中心，泰坦尼克号就在这里建造。经历过数十年的冲突后，近二三十年城市面貌和经济有很大变化。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Belfast (Belfast City Council ~133 km²; 345,418 2021; metro ~700,000; capital of Northern Ireland, Stormont; Lagan; City Hall; Titanic Quarter; Queen's University; Cave Hill; two airports; UNESCO City of Music 2021)
+    howItWorks:
+      "贝尔法斯特是北爱尔兰的首府，北爱尔兰议会在城东的斯托蒙特，医疗、教育与警察由北爱尔兰的行政机构掌管；贝尔法斯特市议会辖区约 133 平方公里，2021 年人口约 35 万，都会区约 70 万，市议会管垃圾、公园与规划，职责比英格兰的议会小。市中心在拉根河西岸的市政厅与多尼戈尔广场，泰坦尼克区是旧船厂改成的新区，哈兰德与沃尔夫的两座黄色龙门吊是天际线，大教堂区是酒吧与画廊的街区，女王大学在城南，凯夫山在城北俯瞰全城；市区机场在河边，国际机场在西面约 25 公里。初来的人最容易犯的错，是把贝尔法斯特当作一座小城，而它是一个 70 万人都会区的核心，两座机场分属两个方向。",
     layout:
       "贝尔法斯特建在被丘陵环抱的河口低地上，市中心以维多利亚式的市政厅为核心。拉甘河东岸是重新开发的“泰坦尼克区”（旧船厂）。城市西部和北部有一些以路牌、壁画和界墙区分的社区，历史话题比较敏感。周围的丘陵（如卡文山）从市里就能看到。",
     gettingAround:
@@ -3146,6 +3215,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bath: {
     identity:
       "巴斯在英格兰西南部的埃文河谷里，人口约9.4万（2021年普查），是英国唯一有天然温泉的城市。罗马人约公元60年在泉眼上建起浴场和神庙，称这里为“苏利斯之水”（Aquae Sulis）；十八世纪它成为时髦的温泉疗养地，用蜂蜜色石灰岩建起皇家新月楼（1774年）、圆形广场和普尔特尼桥等乔治王时代建筑。1987年巴斯整座城市列入世界遗产，2021年又作为“欧洲大温泉城镇”之一再次列入。简·奥斯汀曾在此居住，2006年开放的巴斯温泉浴场让人重新泡上温泉水。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bath (~94,000 2021 built-up area; within Bath and North East Somerset unitary council ~193,000; UNESCO 1987 whole city + Great Spa Towns 2021; Roman Baths; Royal Crescent; Avon; Bath Spa station; Bristol 20 km; two universities; ~6 million visitors)
+    howItWorks:
+      "巴斯是萨默塞特的一座城，2021 年城区人口约 9.4 万，但它没有自己的市议会：管理它的是巴斯及东北萨默塞特议会，辖区约 19 万人，议会所在地在巴斯，管教育、住房与垃圾，警察与医院归国家机构。整座城 1987 年列入世界遗产，2021 年又作为“欧洲大温泉城”之一再次列入：罗马浴场与修道院在埃文河湾的老城中心，皇家新月楼与圆形广场在北面的山坡上，巴斯温泉站在城南，布里斯托在西面 20 公里，每年约 600 万游客涌入。初来的人最容易犯的错，是去找“巴斯市议会”，而这座城由一个更大的议会管理，巴斯只是它的首府。",
     layout:
       "市中心在埃文河北岸的河湾里，罗马浴场、巴斯修道院和泵房在正中的修道院广场；普尔特尼桥在东侧跨河，桥上有商店，桥下是马蹄形堰。乔治王时代的街区在市中心北面的坡上：圆形广场、皇家新月楼和皇家维多利亚公园；简·奥斯汀中心在盖伊街。巴斯温泉站在市中心南面靠河。城市四周是丘陵，南面的普赖尔公园景观园和东北的巴斯萨姆丘有俯瞰全城的视野。",
     gettingAround:
@@ -3160,6 +3232,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   oxford: {
     identity:
       "牛津在英格兰中南部泰晤士河（这段叫伊西斯河）与查韦尔河的交汇处，人口约16.2万（2021年普查）。牛津大学从十一世纪末开始有教学活动，是英语世界最古老的大学，三十多个学院散布在市中心，尖塔林立，所以有“尖塔之城”之称：博德利图书馆（1602年）、拉德克利夫图书馆的圆顶、基督教会学院的大食堂和阿什莫林博物馆（1683年，英国最早的公共博物馆）都是标志。北面约13公里的布莱尼姆宫是丘吉尔的出生地和世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Oxford (Oxford City Council district ~46 km², 166,034 2024, under Oxfordshire County Council two-tier; university of 39 colleges without a campus; Cowley Mini plant; park-and-ride; no airport; station)
+    howItWorks:
+      "牛津是牛津郡的一座城，2024 年人口约 16.6 万，实行两级地方政府：牛津市议会管住房、垃圾与规划审批，牛津郡议会管学校、道路与社会服务，警察与医院归国家机构。牛津大学没有校园，39 个学院散在市中心的街巷里，博德利图书馆与拉德克利夫图书馆在中心，考利的汽车厂在城东南，泰晤士河在这里叫伊西斯河；市区限制汽车，五个停车换乘场在环路上，火车站在城西，没有机场，希思罗在东南 65 公里。初来的人最容易犯的错，是打听“牛津大学在哪里”，而它没有一个入口，整座老城就是它。",
     layout:
       "市中心很紧凑：卡尔法克斯塔是老城的十字路口，高街向东到莫德林桥，宽街上有博德利图书馆、谢尔登剧院和布莱克韦尔书店，拉德克利夫广场在两街之间；基督教会学院在圣奥尔德盖特街南段，草地一直延伸到河边。阿什莫林博物馆在博蒙特街，牛津火车站在城西。查韦尔河沿大学公园和莫德林学院流过，撑篙从莫德林桥或查韦尔船屋出发。杰里科区在城北是餐饮区，考利路在东面。",
     gettingAround:
@@ -3174,6 +3249,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cambridge: {
     identity:
       "剑桥在英格兰东部的剑河畔，人口约14.6万（2021年普查）。剑桥大学1209年由从牛津出走的学者建立，三十一个学院沿剑河排列，国王学院礼拜堂（1446年动工）的扇形拱顶是英国哥特建筑的代表，三一学院的大庭院、皇后学院的数学桥、圣约翰学院的叹息桥都在河边；“后园”（The Backs）是学院背后临河的草地和花园，撑篙是看它们的经典方式。菲茨威廉博物馆收藏丰富。城市周边是被称为“硅沼”的科技产业带。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cambridge (Cambridge City Council district ~41 km², ~145,700 2021, under Cambridgeshire County Council; Cambridgeshire and Peterborough Combined Authority mayor 2017; 31 colleges along the Cam; Silicon Fen/Science Park; Addenbrooke's; guided busway; cycling; London ~50 min)
+    howItWorks:
+      "剑桥是剑桥郡的一座城，2021 年人口约 14.6 万，实行两级地方政府：剑桥市议会管住房、垃圾与规划审批，剑桥郡议会管学校与道路，2017 年起剑桥郡与彼得伯勒联合管理局有民选市长管交通与经济。大学的 31 个学院沿着剑河与“后园”排开，没有校园，国王学院礼拜堂是坐标；城北的科学园是“硅沼”科技集群的发源地，城南的阿登布鲁克医院周围是生物医药园区，导向公交专用道连接它们，火车到伦敦约 50 分钟，自行车是市内出行的主角。初来的人最容易犯的错，是把剑桥当作一座大学城，而它同时是欧洲最大的科技产业集群之一，学生在市民里只占少数。",
     layout:
       "老城和学院集中在剑河东岸约1平方公里内：国王学院、三一学院、圣约翰学院沿国王大道和三一街一线，皇后学院在南端，后园在河西岸；市场广场在中心。菲茨威廉博物馆在特朗平顿街南段。撑篙从磨坊巷、奎赛德（麦格达伦桥）出发，往北到格兰切斯特草地是另一条撑篙线。火车站在市中心东南约2公里。",
     gettingAround:
@@ -3188,6 +3266,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   brighton: {
     identity:
       "布莱顿在英格兰南岸的英吉利海峡边，伦敦以南约80公里，与霍夫合为布莱顿—霍夫市，人口约28.4万（2021年普查）。十八世纪起它是伦敦人的海滨疗养地，摄政王（后来的乔治四世）在这里建了印度—伊斯兰风格的皇家行宫（1787–1823年）；1899年开放的布莱顿宫码头是英国最著名的游乐码头，2016年建成的 i360 观景塔高162米。小巷区（The Lanes）是渔村时代留下的窄巷，如今是独立商店和餐馆。布莱顿以开放多元著称，8月的骄傲节是英国最大的之一；东面约13公里是七姐妹白垩崖。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Brighton and Hove (unitary authority, city 2001; ~83 km²; ~283,900 2024; Brighton and Hove merged 1997; Palace Pier; Royal Pavilion; The Lanes; Hove separate identity; South Downs; London ~1 h; two universities)
+    howItWorks:
+      "布莱顿在行政上叫“布莱顿与霍夫”，是 1997 年由两座镇合并而成的单一制议会，2001 年获得城市地位，市域约 83 平方公里，2024 年人口约 28 万；议会管教育、住房与垃圾，警察与医院归国家机构。布莱顿是东半边的海滨度假城，宫殿码头、皇家行宫与巷子区在这里；霍夫是西半边的住宅区，有自己的海滨与身份，“其实是霍夫”是本地人的口头禅；南唐斯在城北，火车到伦敦约一小时，两所大学在城郊。初来的人最容易犯的错，是把布莱顿当作整座城的名字，而它只是一半，另一半的人会纠正你。",
     layout:
       "市区沿海岸东西展开：皇家行宫和皇家行宫花园在市中心，旁边是小巷区和北莱恩（North Laine）的独立商店街；海滨大道下面是海滩、码头和沿海的酒吧、餐馆，宫码头在市中心正南的海边，i360 在西面的海滨，老西码头的残骸在它旁边。霍夫在西面，是安静的住宅区和草坪海滨；凯姆普顿在东面，有马场和沙滩小火车。火车站在市中心北面的坡上。七姐妹白崖和比奇角在东面。",
     gettingAround:
@@ -3202,6 +3283,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "newcastle-upon-tyne": {
     identity:
       "泰恩河畔纽卡斯尔是英格兰东北部的中心城市，在泰恩河北岸，人口约32万（2021年普查），与南岸的盖茨黑德隔河相望。它从罗马时代的泰恩河桥堡起家，1080年的城堡给了它名字，十九世纪靠煤炭和造船兴盛，1928年的泰恩桥是城市的标志，河两岸的码头区如今是酒吧、餐馆和艺术空间（BALTIC 当代艺术中心、盖茨黑德音乐厅），2001年的千禧桥是可倾转的步行桥。格雷街被称为英格兰最美的街道之一，格兰杰镇是1830年代规划的新古典街区；哈德良长城的遗迹从市区向西延伸；盖茨黑德南面的“北方天使”雕塑高20米。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Newcastle upon Tyne (metropolitan borough ~114 km²; ~320,600 2024; Tyneside urban area ~800,000 with Gateshead across the Tyne as a separate borough; North East Combined Authority mayor 2024; Quayside bridges; Grainger Town; Tyne and Wear Metro; two universities; airport)
+    howItWorks:
+      "纽卡斯尔是泰恩河北岸的都市自治市，市域约 114 平方公里，2024 年人口约 32 万，泰恩赛德城区约 80 万人，河南岸的盖茨黑德是另一个自治市；2024 年起东北联合管理局有民选市长管交通，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在河岸的高地上，格雷街与格兰杰镇是 1830 年代的新古典街区，码头区的七座桥连着两岸，泰恩桥 1928 年建成，圣詹姆斯公园球场就在市中心，泰恩威尔地铁贯通两岸与机场，两所大学在市中心北侧。初来的人最容易犯的错，是把河对岸的盖茨黑德当作纽卡斯尔，而过桥就换了议会，赛奇音乐厅与波罗的海美术馆都在盖茨黑德。",
     layout:
       "市中心在泰恩河北岸的坡上：码头区在河边，泰恩桥、千禧桥和中世纪的城堡在河岸上方，格雷街从纪念碑向南通到河边，格兰杰镇和格雷纪念碑周围是商业中心，中央车站在西南。杰斯蒙德在北面是学生和餐饮区，奥斯本路一带酒吧多。对岸的盖茨黑德码头有 BALTIC 和音乐厅。北方天使在盖茨黑德南郊的 A1 公路旁；哈德良长城的博物馆和沃尔森德的塞格杜努姆堡在东面，长城主体在西面的乡间。机场在西北约12公里。",
     gettingAround:
@@ -3216,6 +3300,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   stirling: {
     identity:
       "斯特灵在苏格兰中部福斯河的渡口上，是高地与低地之间的门户，人口约3.9万（2021年，2002年获城市地位）。斯特灵城堡立在火山岩上，是苏格兰王室的城堡之一（玛丽女王在此加冕）；1297年的斯特灵桥之战（威廉·华莱士）和1314年的班诺克本之战（罗伯特·布鲁斯）都在城边，1869年建成的华莱士纪念碑在河对岸的修道院峭壁上。老城的石头街道从城堡沿山脊向下，圣路德教堂是1567年詹姆斯六世加冕的地方。洛蒙德湖与特罗萨克斯国家公园在西北约30公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Stirling (~38,600 2022; Stirling Council area ~2,200 km², ~93,750 incl. Trossachs/Callander; city status 2002; castle on the crag; Wallace Monument; Bannockburn; Highland Boundary Fault; university at Bridge of Allan; rail ~45 min to Edinburgh/Glasgow)
+    howItWorks:
+      "斯特灵是苏格兰中部的小城，2022 年人口约 3.9 万，2002 年获得城市地位；它是斯特灵议会的所在地，议会辖区约 2,200 平方公里、9.4 万人，向北一直伸进特罗萨克斯的高地，管教育、住房与道路，医疗与警察归苏格兰政府。城堡建在火山岩的岩壁上，老城沿坡而下，华莱士纪念碑在河对岸的山上，班诺克本古战场在城南，高地边界断层从城边穿过，“像一枚胸针把高地与低地扣在一起”；大学在北面的布里奇奥夫艾伦，火车到爱丁堡与格拉斯哥各约 45 分钟。初来的人最容易犯的错，是把斯特灵当作一座城堡镇，而它曾是苏格兰的都城，议会辖区里有湖泊与山地。",
     layout:
       "城堡在老城最高处的岩山顶上，老城沿山脊向下：阿盖尔宅邸、圣路德教堂、老市政厅（旧监狱）和市场十字沿城堡崖街分布；新城和火车站在山脚下的平地，商店集中在默里广场一带。福斯河从城北流过，斯特灵老桥（十五世纪）在河上，华莱士纪念碑在河对岸的修道院峭壁上（约3公里）；班诺克本战场遗址在城南约3公里。斯特灵大学在北面的布里奇奥夫艾伦。",
     gettingAround:
@@ -3230,6 +3317,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   portree: {
     identity:
       "波特里是苏格兰内赫布里底群岛斯凯岛的首府和最大的镇，人口约2300（2022年普查），盖尔语名 Port Rìgh 意为“国王的港口”。小镇围着一个被峭壁环抱的天然港湾，港边一排彩色房子和托马斯·特尔福德设计的码头是它的标志。它是斯凯岛观光的中心：北面的老人石、奎雷因，西南的仙女池和库林山，西面的邓韦根城堡（麦克劳德家族的城堡，苏格兰有人持续居住最久的城堡之一）和塔利斯克酒厂都从这里出发。斯凯岛约四成居民会说盖尔语。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Portree (2,281 2022; largest settlement of Skye; within Highland Council area, no island council; harbour; Skye Bridge via A87; ~74 miles from Inverness; Gaelic ~38%)
+    howItWorks:
+      "波特里是斯凯岛上最大的聚落，2022 年人口约 2,300，是岛上唯一称得上镇的地方，但它没有自己的议会：斯凯岛属于因弗内斯的高地议会，议会的办事处在镇上，医疗与警察归苏格兰政府。镇子围着一个小海港，彩色的房子排在码头边，是岛上的商店、医院与公交的中心；斯凯桥在东南 55 公里的凯利金，老人石、奎雷因、仙女池散在岛的各处，岛长约 80 公里，公交稀少，约四成居民说盖尔语。初来的人最容易犯的错，是把波特里当作斯凯岛，而岛上的景点都在几十公里外，没有车寸步难行。",
     layout:
       "小镇在港湾西岸的坡上，萨默莱德广场是中心，港口在下方，港边的彩色房屋和码头在东侧。老人石在北面约10公里的特罗特尼什半岛上，再往北是基尔特岩、奎雷因和斯塔芬；仙女池在西南约30公里的格伦布里特尔，库林山在它上方；邓韦根城堡在西面约35公里，塔利斯克酒厂在西南约25公里的卡博斯特；斯利特半岛和阿马代尔渡轮码头在岛南。斯凯桥在岛东南的凯尔，连接大陆的洛哈尔什凯尔。",
     gettingAround:
@@ -3244,6 +3334,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   windermere: {
     identity:
       "温德米尔是英格兰湖区国家公园的门户小镇，在坎布里亚郡，人口约4800（2021年）；它与湖边的鲍内斯连成一片，是湖区最热闹的地方。温德米尔湖长约17公里，是英格兰最大的天然湖；湖区国家公园1951年设立，2017年以“湖区”之名列入世界遗产，表彰其被浪漫主义诗人和田园文化塑造的景观：华兹华斯在格拉斯米尔的鸽舍，比阿特丽克斯·波特在附近索里的山顶农舍，都从这里出发。1847年通车的温德米尔支线铁路让它成为最容易坐火车到达的湖区小镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Windermere (town ~8,000 with Bowness 2021; Westmorland and Furness unitary council 2023; Lake District National Park Authority for planning; the town lies 1.5 km from the lake, Bowness on the shore; railway 1847; lake is the largest in England; UNESCO Lake District 2017)
+    howItWorks:
+      "温德米尔既是英格兰最大的湖的名字，也是湖边一座镇的名字，2021 年镇与鲍内斯合计约 8,000 人；它属于 2023 年设立的威斯特摩兰与弗内斯单一制议会，而建设与规划由湖区国家公园管理局审批，警察与医院归国家机构。温德米尔镇在 1847 年铁路终点站周围长出来，离湖还有 1.5 公里；湖边的镇是鲍内斯，码头、游船与餐馆都在那里，安布尔赛德在湖的北端，湖区 2017 年列入世界遗产。初来的人最容易犯的错，一是在温德米尔火车站下车就找湖，而湖在鲍内斯，二是把湖叫作“温德米尔湖”，本地人只说“温德米尔”。",
     layout:
       "温德米尔镇在火车站周围的坡上，鲍内斯在西南约2公里的湖边，有码头、游船和商店；奥雷斯特山头在火车站北面约1公里，20分钟步道就能俯瞰全湖。湖西岸是山顶农舍所在的索里和格里泽代尔森林，从鲍内斯坐渡船过湖；湖北端是安布尔赛德（约8公里），再往北是赖德尔和格拉斯米尔（约15公里）；朗代尔山谷在西北，凯西克和德文特湖在北面约35公里。",
     gettingAround:
@@ -7094,6 +7187,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   krabi: {
     identity:
       "甲米是泰国南部安达曼海沿岸的府份，人口约47万，以陡峭的石灰岩喀斯特海岸与莱利岬角攀岩胜地闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Krabi (thesaban mueang ~19 km², 32,644 2020; capital of Krabi province, appointed governor; Krabi River/Phang Nga Bay; Ao Nang ~20 km separate subdistrict; Railay boat only; Ko Phi Phi/Ko Lanta in province; airport 12 km)
+    howItWorks:
+      "甲米镇是甲米府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，约 19 平方公里，2020 年人口约 3.3 万，有民选的镇长。镇子在甲米河注入攀牙湾的河口，是府政府、医院、长途车站与夜市所在的地方，机场在东北 12 公里；人们来甲米要去的海滩都不在镇上：奥南在西面约 20 公里，属于另一个自治机构，莱利只能坐船，皮皮岛与兰达岛在海上一两个小时。初来的人最容易犯的错，是在甲米镇找海滩，而镇上只有河与红树林，海滩在奥南与岛上。",
     layout:
       "甲米镇位于甲米河口，是前往莱利岬角、奥南海滩与皮皮群岛的交通枢纽，多个跳岛游船码头分布于镇区周边。",
     gettingAround:
@@ -7108,6 +7204,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pattaya: {
     identity:
       "芭提雅是泰国东部湾区一座海滨度假城市，人口约12万（旅游旺季实际流动人口更多），距曼谷约150公里，是曼谷居民周末度假的传统目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pattaya (special local administrative area since 1978 with elected mayor, in Chonburi province; 53.4 km²; registered ~116,000–120,000, Greater Pattaya ~351,000; Naklua/Pattaya Beach/Jomtien; Ko Larn; U-Tapao 45 km; Bangkok 150 km; EEC)
+    howItWorks:
+      "芭堤雅是泰国除曼谷外唯一的“特别地方行政区”，1978 年起有民选的市长和市议会，但它仍在春武里府之内，府尹由内政部任命，警察与学校归中央。市域约 53 平方公里，登记人口约 12 万，实际居住者几倍于此，大芭堤雅约 35 万人。城市沿海岸分成三段：北面的纳克鲁阿、中间的芭堤雅海滩与步行街、南面的中天海滩，各有自己的气质，兰岛在海上，乌塔堡机场在南面 45 公里，曼谷在 150 公里外，东部经济走廊的高铁在建。初来的人最容易犯的错，是把芭堤雅当作一座独立的市，而它是春武里府下的一个特别行政区，府政府在 30 公里外的春武里。",
     layout:
       "城市沿芭提雅湾海岸展开，芭提雅海滩、京畿海滩与查安海滩自北向南分布，芭提雅步行街是夜生活集中区域。",
     gettingAround:
@@ -7122,6 +7221,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "chiang-rai": {
     identity:
       "清莱是泰国最北端的府份首府，人口约7万，紧邻缅甸与老挝边境的“金三角”地区，以白庙、蓝庙等当代宗教艺术建筑闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chiang Rai (thesaban nakhon ~70,000; capital of Chiang Rai province, appointed governor; founded 1262 by Mangrai, first Lanna capital; Kok River; White Temple 13 km; Golden Triangle ~55 km; Mae Sai border; airport; no rail; UNESCO Design City)
+    howItWorks:
+      "清莱是清莱府的府治，府尹由内政部任命；清莱市是一个“城市自治市”，有民选的市长，人口约 7 万，而全府约 130 万人。市区在滚河边，1262 年孟莱王在此建立兰纳王国的第一座都城，钟楼与夜市是市中心的坐标，机场在城北，没有铁路；白庙在南面 13 公里，蓝庙在城北，黑屋在城外，金三角在东北约 55 公里的清盛，美塞的缅甸边境约 60 公里，董山在西北。初来的人最容易犯的错，是以为白庙与金三角在清莱城里，而它们各在几十公里外，市区本身是一座安静的府城。",
     layout:
       "清莱镇规模较小，白龙寺（白庙）位于城郊，蓝庙与黑屋博物馆分布在市区不同方向，湄公河与湄赛河交汇处的金三角景观区位于府境北部。",
     gettingAround:
@@ -7136,6 +7238,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "koh-samui": {
     identity:
       "苏梅岛是泰国湾第二大岛屿，人口约6.4万，以查汶、拉迈两大海滩度假区与椰子种植传统闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Samui (228.7 km²; ~70,000 registered, 200,000+ with migrants/tourists; district of Surat Thani province; Ko Samui City Municipality since 2012 with elected mayor; Nathon port/district office west vs Chaweng/Lamai east; ring road 51 km; Bangkok Airways-owned airport 1989; ferries from Don Sak)
+    howItWorks:
+      "苏梅岛是泰国第二大岛，约 229 平方公里，登记人口约 7 万，加上外来务工者与游客常住二十多万；它是素叻他尼府下的一个县，2012 年起整座岛是一个有民选市长的“城市自治市”，府尹由内政部任命。岛的西岸是纳通，港口、县政府与本地人的市场都在那里；东岸的查汶与拉迈是游客的海滩，机场在东北角，由曼谷航空私营，1989 年启用，51 公里的环岛公路把它们连起来，渡轮从大陆的东萨码头开来，帕岸岛与涛岛在北面。初来的人最容易犯的错，是把查汶当作苏梅岛的市中心，而岛的行政中心与本地生活在西岸的纳通。",
     layout:
       "岛屿海岸线环绕分布多个海滩度假区，查汶海滩是岛上最繁华的区域，岛屿内陆保留大片传统椰林。",
     gettingAround:
@@ -7150,6 +7255,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ayutthaya: {
     identity:
       "大城的选址是一次刻意的地利算计——1350年，拉玛铁菩提一世把新都定在湄南河、华富里河与巴莎河三江环抱形成的天然岛屿上，河道本身就是护城河，又便于连通出海口做国际贸易；此后417年（1350–1767年）间，这里发展成东南亚最大的国际都会之一，直到1767年被缅甸军队攻陷、焚毁殆尽。大城是泰国中部的历史古都，人口约5.5万，1991年大城历史公园列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ayutthaya (Phra Nakhon Si Ayutthaya city municipality ~50,800; capital of Ayutthaya province; island between Chao Phraya, Pa Sak and Lopburi rivers; Historical Park UNESCO 1991; capital of Siam 1351–1767; train ~1.5 h from Bangkok, ~80 km)
+    howItWorks:
+      "大城是大城府的府治，府尹由内政部任命；大城市是一个“城市自治市”，有民选的市长，人口约 5 万。城市在昭披耶河、巴塞河与华富里河围成的岛上，1351 至 1767 年是暹罗的都城，岛的西半是历史公园，玛哈泰寺、帕斯桑碧寺的塔群在这里，1991 年列入世界遗产，柴瓦塔那兰寺在河对岸；岛的东半是今天的市镇，火车站在岛外的河东岸，到曼谷约一个半小时，岛上靠自行车与嘟嘟车，工业区在城外。初来的人最容易犯的错，是把大城当作一片废墟，而废墟与市镇在同一座岛上，市民就住在古塔之间。",
     layout:
       "历史公园位于湄南河、华富里河与巴莎河三江环绕形成的岛状区域，佛寺遗址密集分布，与周边现代市镇相邻。",
     gettingAround:
@@ -7164,6 +7272,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sukhothai: {
     identity:
       "泰文字母的诞生，据传就发生在素可泰这座都城里——1238年建都后，第三代君主兰甘亨大帝在位期间（1279–1298年）把这个原本弱小的政权扩张成暹罗人的第一个强国，相传他在1283年创制了泰文字母，一块刻于1283–1290年间的碑文（兰甘亨碑）至今是已知最早的泰文文献。素可泰王朝定都于此约一个世纪（1238–1347年，此后阿瑜陀耶王朝崛起取而代之），是泰国最早的独立王国故都，人口约2万，1991年素可泰历史公园列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sukhothai Thani (town municipality 3.5 km², ~37,000; capital of Sukhothai province; Yom River; Old Sukhothai/Historical Park UNESCO 1991 ~12 km west; established 1937; airport ~27 km; Bangkok 427 km)
+    howItWorks:
+      "素可泰的新城叫素可泰他尼，是素可泰府的府治，府尹由内政部任命；新城是一个“镇级自治市”，只有约 3.5 平方公里，人口约 3.7 万，1937 年才设立，在永河边，长途车站与市场都在这里。老城在西面约 12 公里，是 13 世纪第一个暹罗王国的都城，兰甘亨王的碑铭出自这里，历史公园 1991 年列入世界遗产，园内靠自行车；西萨查那莱古城在北面 55 公里，机场在北面约 27 公里，由曼谷航空经营，彭世洛在东面 60 公里。初来的人最容易犯的错，是在新城找古迹，而古城在 12 公里外，两地之间要坐双条车。",
     layout:
       "历史公园分为城内、城北、城西、城南四个区域，玛哈泰寺遗址位于城内区域核心，周边环绕护城河与城墙遗迹。",
     gettingAround:
@@ -7178,6 +7289,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hua-hin": {
     identity:
       "华欣是泰国湾沿岸的海滨小城，人口约1.9万，自20世纪初泰国王室在此修建行宫起即成为传统的皇家度假胜地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hua Hin (town municipality; district 838.9 km², ~126,000 2025; Prachuap Khiri Khan province; royal resort since 1920s, Klai Kangwon Palace; railway station 1911; Khao Takiab; Cha-am in Phetchaburi 25 km; Bangkok ~200 km; airport limited)
+    howItWorks:
+      "华欣是巴蜀府下的一个县和一个“镇级自治市”，县约 840 平方公里，2025 年人口约 12.6 万，府尹由内政部任命，镇长由市民选出。1920 年代王室在这里建起铁路旅馆与“忘忧宫”，华欣从此是泰国最早、最体面的海滨度假地，王宫至今在镇北的海边；镇中心在 1911 年的火车站与夜市一带，海滩沿镇的东侧展开，考他基在南面 7 公里，北面 25 公里的差安属于碧武里府，是另一座度假镇；曼谷在北面约 200 公里，机场只有零星航班，退休的外国人与高尔夫球场是这里的日常。初来的人最容易犯的错，是把华欣当作一座海滩，而它是一座有王宫、有市场、有几万本地人的镇，海滩只是它的东边。",
     layout:
       "城市沿华欣海滩展开，市中心保留有华欣火车站等殖民地风格建筑，海滩南北两端分布度假酒店与高尔夫球场。",
     gettingAround:
@@ -7192,6 +7306,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "udon-thani": {
     identity:
       "乌隆他尼是泰国东北部依善地区的重要城市，人口约14万，是探索班清史前遗址的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Udon Thani (thesaban nakhon 130,531 2019; urban ~400,000; capital of Udon Thani province; Isan; US air base 1960s–70s; Ban Chiang UNESCO 1992 ~55 km; Red Lotus Sea ~40 km; Nong Khai/Vientiane ~80 km; airport; rail)
+    howItWorks:
+      "乌隆他尼是乌隆府的府治，府尹由内政部任命；乌隆市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 40 万，是伊桑地区的“四大城市”之一。市区在铁路两侧的格网上，农帕差公园是市中心的湖，1960 至 70 年代的美军空军基地留下了西式的街区与酒吧，机场在城南，火车与公路通往北面 80 公里的廊开与老挝万象；班清遗址在东面约 55 公里，1992 年列入世界遗产，红莲花海在南面约 40 公里。伊桑话是本地的语言。初来的人最容易犯的错，是把乌隆当作去老挝的过路站，而它是伊桑北部的商业与医疗中心。",
     layout:
       "城市呈典型泰国省会格局，市中心农贵湖公园是当地居民日常休闲的核心场所。",
     gettingAround:
@@ -7206,6 +7323,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "nakhon-ratchasima": {
     identity:
       "呵叻（那空叻差是玛）是泰国东北部依善地区的门户城市，人口约14万，是探索考艾山国家公园与呵叻高原的重要基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nakhon Ratchasima/Korat (thesaban nakhon ~126,000 registered 2019; urban ~466,000 2021; capital of the largest province ~2.6 million, ~20,000 km²; Thao Suranari monument; Terminal 21; Khao Yai ~100 km at Pak Chong; Phimai ~60 km; Bangkok 250 km; high-speed rail planned 2027)
+    howItWorks:
+      "呵叻是泰国面积最大的府——那空叻差是玛府——的府治，府尹由内政部任命，全府约 260 万人；呵叻市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 47 万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
     layout:
       "城市保留有他玛叻古城墙与护城河遗迹，是连接曼谷与依善地区的传统交通枢纽。",
     gettingAround:
@@ -7222,6 +7342,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kanchanaburi: {
     identity:
       "北碧在曼谷以西约120公里，在桂诺河与桂艾河汇成湄公河（Mae Klong）的地方，市镇人口约2.6万。二战期间日军用盟军战俘和亚洲劳工修建泰缅铁路（“死亡铁路”），约半数劳工死于疾病、虐待和事故，桂河大桥、北碧战争公墓、泰缅铁路中心和地狱火通道是这段历史的纪念地。北碧府境内还有七层的爱侣湾瀑布、赛育瀑布和缅甸边境的桑卡武里孟族木桥，是曼谷周边最受欢迎的一日和两日游目的地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kanchanaburi (town municipality ~25,700 2017; capital of Kanchanaburi province ~19,000 km², Myanmar border; Kwai Yai/Kwai Noi confluence; Bridge on the River Kwai 1942–43; war cemeteries; Hellfire Pass ~80 km; Erawan NP ~65 km; Bangkok ~120 km; train)
+    howItWorks:
+      "北碧镇是北碧府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，有民选的镇长，人口约 2.6 万，而北碧府约 1.9 万平方公里，是泰国第三大府，一直伸到缅甸边境。镇子在桂河大支流与小支流汇合处，桂河大桥就在镇北的河上，1942 至 43 年由战俘与劳工修建，两座战争公墓与博物馆在镇内，河上的筏屋是本地的旅馆；地狱火通道在西北约 80 公里，爱侣湾瀑布在北面约 65 公里，曼谷在东面约 120 公里，火车从吞武里开来。初来的人最容易犯的错，是把北碧当作一座桥，而桥在镇上，府域的森林与瀑布要再走一两个小时。",
     layout:
       "市镇在桂艾河东岸，河边一带是酒店、水上屋和餐馆，桂河大桥在市镇北面约3公里的河上，战争公墓和泰缅铁路中心在火车站旁，JEATH 战争博物馆在河边。死亡铁路从桂河大桥向西北沿桂诺河到南多（Nam Tok），沿途有塔告山岩栈道；地狱火通道在西北约80公里。爱侣湾国家公园在北面约65公里，赛育在西北约100公里，桑卡武里在西北约220公里。",
     gettingAround:
@@ -7236,6 +7359,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lampang: {
     identity:
       "南邦在泰国北部的旺河谷里，清迈东南约100公里，人口约5.8万，是兰纳古都之一，也是泰国唯一仍用马车载客的城市（1916年引入）。南邦銮寺（Wat Phra That Lampang Luang）是兰纳木构寺庙的代表，保存着十九世纪壁画；十九世纪缅甸柚木商在此建的缅式寺庙，泰国现存的31座中有9座在南邦。郊外的泰国大象保护中心是泰国官方的大象机构，湛山（Chae Son）国家公园有温泉和瀑布；南邦以陶瓷出名，公鸡碗是它的符号。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lampang (thesaban nakhon ~58,000 2010, 22 km²; capital of Lampang province; Wang River valley; horse carriages; Wat Phra That Lampang Luang ~18 km; ceramics; Elephant Conservation Center; Chiang Mai 101 km; rail; airport; Mae Moh lignite)
+    howItWorks:
+      "南邦是南邦府的府治，府尹由内政部任命；南邦市是一个“城市自治市”，有民选的市长，约 22 平方公里、人口约 6 万，是泰国北部第三大城市。市区在汪河河谷里，老街区沿河排开，马车至今是它的标志，陶瓷厂散在城郊，公鸡碗从这里出产；南邦銮寺在西南约 18 公里的高卡，泰国大象保护中心在西面约 30 公里，清迈在西北 101 公里，铁路是曼谷—清迈线的一站，机场在城南，湄莫的褐煤电厂在东面。初来的人最容易犯的错，是把南邦当作清迈的过路站，而它是一座保留了兰纳与柚木时代街景、节奏比清迈慢得多的府城。",
     layout:
       "老城在旺河南岸，空达（Kad Kong Ta）老街沿河，周末变成步行街夜市，河上的拉差纳达拉桥（1917年）是地标；缅式寺庙散布在市区（如 Wat Si Rong Muang、Wat Pratu Pong）。南邦銮寺在市区西南约18公里的高开（Ko Kha），大象保护中心在西北约30公里的杭猜，湛山国家公园在北面约70公里。火车站在市区西侧，机场紧邻市区南侧。",
     gettingAround:
@@ -7267,6 +7393,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ko-chang": {
     identity:
       "象岛在泰国东部达叻府的暹罗湾里，靠近柬埔寨边境，面积约210平方公里，是泰国第三大岛（仅次于普吉和苏梅），人口约8500。全岛85%属于象岛群岛国家公园，内陆是雨林山地（最高峰744米），西岸有白沙滩、孤独海滩等一串海滩，南端的邦宝渔村建在海上的木桩上。与普吉、苏梅相比它开发较晚、更安静，从曼谷约300公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Chang (~217 km², population ~8,000; Ko Chang district of Trat province; ~70% Mu Ko Chang National Park 1982; west-coast beaches White Sand/Klong Prao/Kai Bae/Lonely Beach vs east-coast villages; ferries from Laem Ngop ~30 min; Trat airport ~40 km from pier; Bangkok ~315 km)
+    howItWorks:
+      "象岛是泰国最大的岛之一，约 217 平方公里，常住人口约 8,000，它是达叻府下的一个县，府尹由内政部任命，岛上的乡镇有自己的自治机构，约七成的岛是 1982 年设立的国家公园。岛的西岸是一串海滩——白沙滩、孔抛、凯贝、孤独海滩——旅馆与餐馆都在那里，东岸是渔村与红树林，萨拉佩村在南端，一条环岛未合拢的公路把它们连起来；渡轮从大陆的莱恩戈普码头开来约 30 分钟，达叻机场在码头东面约 40 公里，由曼谷航空经营，曼谷在 315 公里外，库德岛与麦岛在南面。初来的人最容易犯的错，是把象岛当作一处度假村，而它是一座大半是山林的岛，海滩只在西岸的一条窄带上。",
     layout:
       "岛呈南北向，主要海滩都在西岸从北到南排列：白沙滩最热闹，往南是空帕劳、卡贝、孤独海滩，南端是邦宝渔村和码头（去外岛的船从这里出发）；东岸安静，有红树林和渔村。渡轮从大陆的 Ao Thammachat 到岛北端的菠萝湾码头约30分钟，环岛公路沿海岸走（不闭环，南端山路陡）。空普瀑布在岛中部。象岛以南的库德岛、玛岛是外岛。",
     gettingAround:
@@ -7281,6 +7410,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "khao-lak": {
     identity:
       "考拉在泰国安达曼海岸的攀牙府，普吉岛以北约60公里，是沿海约20–25公里的一串度假村落（邦娘、南通、库克卡等海滩），背靠考拉—蓝鲁国家公园的雨林山地。它是去斯米兰群岛和苏林群岛潜水（船宿）的主要出发地。2004年12月26日的印度洋海啸在这里造成泰国最严重的伤亡，被冲到内陆1.25公里的813号巡逻艇成为纪念地，重建后的考拉以安静的长海滩、家庭度假村著称，比普吉安静得多。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Khao Lak (string of beach villages — Bang Niang, Nang Thong, Khuk Khak, Bang Sak — in Takua Pa district, Phang Nga province, not a municipality; ~25 km of coast; 2004 tsunami; Similan liveaboards from Thap Lamu; Phuket airport ~60–70 km; low-rise resort rules)
+    howItWorks:
+      "考拉不是一座镇，而是攀牙府达瓜巴县沿海约 25 公里的一串村子——邦尼昂、南通、库卡、邦萨——它们没有一个共同的市政府，各村属于县下的乡镇自治机构，府尹由内政部任命。度假村沿海岸公路散开，没有市中心，2004 年海啸在这里夺去四千多人的生命，被冲上岸的警艇留在邦尼昂作纪念，之后的规则限制了建筑高度；斯米兰群岛的船宿从南面的塔兰姆码头出发，普吉机场在南面六七十公里，达瓜巴老镇在北面约 30 公里。初来的人最容易犯的错，是在地图上找“考拉镇”，而它只是一个泛称，住在哪个村就在哪个村的海滩上。",
     layout:
       "考拉沿4号公路和海岸南北展开：南端的考拉海滩和南通海滩靠近国家公园，往北是邦娘（813号巡逻艇纪念地和海啸博物馆在此）、库克卡、白沙滩，北端是帕卡朗角；塔迈昂码头在南面约15公里，斯米兰和苏林的船从这里出发。达瓜巴老城在北面约25公里，考索国家公园（喀斯特雨林和绰兰湖）在东北约80公里。普吉机场在南面约60公里。",
     gettingAround:
@@ -7295,6 +7427,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ko-lanta": {
     identity:
       "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，人口约1.1万。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Lanta (district of Krabi province; Ko Lanta Yai ~80 km², ~20,000; Sala Dan pier town north; west-coast beaches Klong Dao/Long Beach/Klong Nin; Lanta Old Town east coast, Chinese/Urak Lawoi heritage; Muslim majority; bridge from Ko Lanta Noi 2016 + car ferry; Krabi airport ~70 km; Mu Ko Lanta NP; low season)
+    howItWorks:
+      "兰达岛是甲米府下的一个县，府尹由内政部任命，岛上的乡镇有自己的自治机构；主岛兰达耶约 80 平方公里，常住人口约 2 万，穆斯林占多数。萨拉丹是北端的码头镇，渡轮与商店在那里，2016 年通车的大桥把它与小兰达岛连起来，再靠汽车渡轮到大陆；西岸是一串海滩——孔道、长滩、孔宁——旅馆都在那里，东岸的兰达老镇是华人与乌拉克拉沃伊海上民族留下的木屋街，国家公园在南端的灯塔处，甲米机场在东北约 70 公里，约两小时。雨季大半的店会关门。初来的人最容易犯的错，是把萨拉丹当作兰达岛的全部，而岛长 27 公里，海滩越往南越安静。",
     layout:
       "大岛北端的沙拉丹是港口和主镇，渡轮和快艇从这里出发；海滩从北到南沿西岸排列：空道、长滩、空孔、空宁、干藤湾，越往南越安静，路也越差；国家公园在最南端。老镇在东岸中部，面向大陆一侧的海湾。小岛在大岛北面，桥连接两岛和大陆的渡口。",
     gettingAround:
