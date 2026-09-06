@@ -968,7 +968,7 @@ export default function ExplorerApp() {
             }
             return null;
           },
-          estNarrationSec: estimateSpeechDurationSec(narrText, SPEECH_RATE),
+          estNarrationSec: estimateSpeechDurationSec(narrText, SPEECH_RATE, language),
           // 镜头经过某航点 — 更新「当前在哪」（解说里提到地名时由高亮同步更精确，见上方 effect）
           onFlyoverWaypoint: (wp, index) => {
             const en = language === "en-US";
