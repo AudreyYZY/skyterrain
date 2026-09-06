@@ -2141,6 +2141,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rotorua: {
     identity:
       "罗托鲁瓦在北岛中部的火山地带，罗托鲁瓦湖边，市区人口约6万。它坐落在一个古老的破火山口里，地热活动强烈——间歇泉、沸泥塘、彩色热泉遍布，空气里常有硫磺味。这里也是毛利文化尤其是蒂阿拉瓦（Te Arawa）部族文化的中心之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rotorua (Rotorua Lakes Council, Bay of Plenty; urban area ~58,500, 13th largest in NZ; southern shore of Lake Rotorua in the Rotorua Caldera; Pōhutu Geyser at Whakarewarewa; hydrogen sulfide smell, "Sulphur City"; Te Arawa settled from the 14th century, Ohinemutu; highest proportion of Māori of any NZ city, 46%; health care and hospitality the largest employers)
+    howItWorks:
+      "罗托鲁瓦是新西兰丰盛湾大区的一座城，由罗托鲁瓦湖区议会管辖，城区人口约 5.85 万，是全国第 13 大城区；议会管垃圾、道路与规划，警察、学校与医院归中央政府。城市建在罗托鲁瓦破火山口的湖南岸，地热从地下涌上来：华卡雷瓦雷瓦的波胡图间歇泉、蒸腾的泥浆池与硫磺的气味是它的日常，“硫磺城”是它的绰号。14 世纪起特阿拉瓦部族在此定居，欧希内穆图的村落就在湖边，全市约 46% 的居民是毛利人，是新西兰比例最高的城市，毛利文化表演与地热景观是它的旅游支柱，红木森林的山地车道在城东。奥克兰在西北约 220 公里，陶波在南面约 80 公里，机场在城东北，没有客运铁路。初来的人最容易犯的错，是以为地热景观都在城外，而市区的公园与街边就在冒着蒸汽。",
     layout:
       "城市在罗托鲁瓦湖南岸、政府花园一带。地热区分布在城内外：库伊劳公园就在市区，怀奥塔普（“地热仙境”）、蒂普亚、怀曼古在城南；红木森林（Whakarewarewa Forest）在城东南，是骑行和跑步的地方。周边有十几个火山湖。",
     gettingAround:
@@ -2174,6 +2177,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   queenstown: {
     identity:
       "皇后镇在南岛南部、瓦卡蒂普湖边，被卓越山脉等群山环抱，镇区常住人口不到3万（整个皇后镇—湖区约5万），却是新西兰的旅游和户外运动中心。它以“探险之都”闻名——蹦极（世界上第一个商业蹦极点在附近）、跳伞、喷射快艇、滑雪都在这里。城市名的由来有几种说法，未有定论。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Queenstown (largest town of Queenstown-Lakes District, Otago; urban population ~29,000 June 2025; north-eastern shore of Lake Wakatipu at 310 m; The Remarkables and Coronet Peak; bungy jumping; Skyline gondola on Bob's Peak; Arrowtown and Wānaka in the same district; least affordable housing in NZ, average price over NZ$1.7 million by late 2022; airport)
+    howItWorks:
+      "皇后镇是新西兰奥塔哥地区的度假镇，属于皇后镇湖区议会，是辖区内最大的镇，2025 年 6 月城区人口约 2.9 万；议会管垃圾、道路与规划，警察、学校与医院归中央政府。镇子在瓦卡蒂普湖的东北岸，海拔 310 米，四面是山：卓越山与皇冠峰的雪场在冬天开放，天空缆车从镇中心上到鲍勃峰，蹦极从卡瓦劳大桥开始成为一门生意；箭镇与瓦纳卡在同一个辖区内，米尔福德峡湾是一日游的终点。旅游是它的全部经济，房价是全国最贵的，2022 年底均价超过 170 万纽元，住房短缺是本地长期的难题；机场在镇东，但克赖斯特彻奇与但尼丁各在几百公里外。初来的人最容易犯的错，是把皇后镇当作一座城市，而它是一个不到三万人的镇，价格却按国际度假地来定。",
     layout:
       "皇后镇建在瓦卡蒂普湖一个 Z 形转角的湖湾边，市中心紧凑、步行可达，天际缆车直接从镇上通到山顶观景台。湖对岸是卓越山脉，湖的西北通向格林诺奇和《指环王》取景的山谷。往东北翻山是箭镇（淘金时代的老镇）和瓦纳卡，往南是蒂阿瑙和峡湾。",
     gettingAround:
@@ -2189,6 +2195,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dunedin: {
     identity:
       "达尼丁在南岛东南岸、奥塔哥半岛根部，都会区约13万人，是南岛第二大城市。它由苏格兰长老会移民在19世纪中叶建立，城名 Dunedin 是爱丁堡的苏格兰盖尔语旧称（Dùn Èideann），街道名、教堂和大学都带着浓厚的苏格兰印记。周边的野生动物（信天翁、黄眼企鹅、海狮）是一大看点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dunedin (second city of the South Island, Otago; territorial authority ~3,286 km², larger than Rhode Island; ~132,800 June 2025; founded 1848 by Scottish settlers, name from Gaelic for Edinburgh; 1860s gold rush briefly made it NZ's largest city; University of Otago 1869, oldest in NZ, "Scarfies"; Baldwin Street the world's steepest residential street; Otago Peninsula albatross and penguins; Dunedin sound)
+    howItWorks:
+      "但尼丁是新西兰南岛的第二大城市，由但尼丁市议会管辖，辖区约 3,286 平方公里，比美国罗德岛州还大，2025 年 6 月人口约 13.3 万；议会管垃圾、道路与规划，警察、学校与医院归中央政府。1848 年苏格兰自由教会的移民建起这座城，名字来自爱丁堡的盖尔语写法，市中心的八角广场与维多利亚式的火车站是那个年代的产物；1860 年代奥塔哥的淘金热一度让它成为新西兰最大的城市，如今的石砌建筑是那时的钱留下的。1869 年创办的奥塔哥大学是新西兰最老的大学，学生的“围巾族”文化与八十年代的“但尼丁之声”是这座城的另一面；鲍德温街是世界最陡的住宅街，奥塔哥半岛上有信天翁与黄眼企鹅的栖息地，机场在南面的莫莫纳。初来的人最容易犯的错，是把但尼丁当作一座小城，而它的辖区大过一些国家的省，市区之外是农场与海岸。",
     layout:
       "达尼丁建在一个狭长海港（奥塔哥港）尽头的山谷和陡坡上，八角广场（The Octagon）是市中心。奥塔哥大学（新西兰最古老的大学）在市中心以北。往东沿港是奥塔哥半岛——一条多山的半岛，尽头的泰亚罗阿角有全世界唯一的大陆皇家信天翁繁殖地。城郊的鲍德温街曾被认为是世界最陡的街道之一。",
     gettingAround:
@@ -2205,6 +2214,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   napier: {
     identity:
       "内皮尔在北岛东岸的霍克斯湾，人口约6.6万（2025年估计），是世界上装饰艺术（Art Deco）建筑最集中的城镇之一：1931年2月3日霍克斯湾大地震夷平了市中心并造成256人死亡，随后几年整座城以当时流行的装饰艺术风格重建，海滨大道上的帕尼亚雕像是城市标志。霍克斯湾是新西兰第二大葡萄酒产区，有七十多家酒庄；南面的绑架者角（Cape Kidnappers）有世界上最大的大陆塘鹅繁殖地之一。当地的毛利部族是恩加蒂卡洪古努（Ngāti Kahungunu）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Napier (Napier City Council, Hawke's Bay; 105 km²; ~66,400 June 2025; 3 February 1931 earthquake killed 256 and the city was rebuilt in Art Deco; Marine Parade; Pania of the Reef; Napier Port; Hastings ~18 km, the "Twin Cities", combined ~133,240; Hawke's Bay the second-largest NZ wine region; Cape Kidnappers gannets; Art Deco festival February)
+    howItWorks:
+      "内皮尔是新西兰霍克斯湾大区的城市，由内皮尔市议会管辖，市域约 105 平方公里，2025 年 6 月人口约 6.6 万；议会管垃圾、道路与规划，警察、学校与医院归中央政府。1931 年 2 月 3 日的地震摧毁了整座城、夺去 256 条人命，重建正赶上装饰艺术风行的年代，于是市中心成了世界上保存最完整的装饰艺术街区之一，每年二月的装饰艺术节是它的名片；海滨大道与礁石女神帕尼亚的雕像在海边，港口在城北。南面 18 公里是黑斯廷斯，两城合称“双子城”，各有自己的市议会，合计约 13.3 万人；霍克斯湾是新西兰第二大葡萄酒产区，凯德纳普斯角的塘鹅栖息地在东南，机场在城北。初来的人最容易犯的错，是把内皮尔与黑斯廷斯当作一座城，而它们是两个议会、两个市中心。",
     layout:
       "市中心在布拉夫山南侧的平地上，艾默生街、坦尼森街一带是装饰艺术建筑最密集的街区；海滨大道沿海边向南延伸，有花园、喷泉、水族馆和帕尼亚雕像；布拉夫山顶可俯瞰港口。1931年地震抬升了阿胡里里潟湖，如今是城北的湿地和机场所在地。哈斯丁斯在南面约20公里，特马塔峰在哈斯丁斯东南，绑架者角在东南约30公里的海岬尽头。酒庄分布在内皮尔与哈斯丁斯之间的平原和吉姆布利特砾石区。",
     gettingAround:
@@ -2219,6 +2231,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   taupo: {
     identity:
       "陶波在北岛中部的陶波湖北岸，人口约2.7万（2025年估计）。陶波湖面积约616平方公里，是新西兰最大的湖，湖盆本身是陶波火山的破火山口——约2.6万年前的奥鲁阿努伊喷发是地球近十万年里规模最大的火山喷发之一。怀卡托河从湖的北端流出，在镇北约5公里冲过胡卡瀑布；周围有月亮火山口等地热区和多座地热电站。1890年代引入的虹鳟鱼让陶波成为世界知名的钓鳟地。汤加里罗国家公园在湖南面约50公里。当地毛利部族是恩加蒂图瓦雷托阿（Ngāti Tūwharetoa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Taupō (Taupō District Council, Waikato region; urban area ~27,000 June 2025, second-largest in Waikato; north-eastern edge of Lake Taupō, New Zealand's largest lake, a caldera; Huka Falls; Wairakei geothermal power station 1958 and seven stations in the region; Ngāti Tūwharetoa; Tongariro National Park south; Ironman NZ; trout fishing)
+    howItWorks:
+      "陶波是新西兰怀卡托大区的一座镇，由陶波区议会管辖，2025 年 6 月城区人口约 2.7 万，是大区内第二大城区；议会管垃圾、道路与规划，警察、学校与医院归中央政府。镇子在陶波湖的东北角，湖是新西兰最大的淡水湖，也是一座巨型火山的破火山口，湖底至今有地热活动；胡卡瀑布在镇北的怀卡托河上，1958 年投产的怀拉基地热电站让这一带成为地热发电的中心，附近共有七座电站，人口也是从那时起涨起来的。湖床的所有权属于恩加提图法雷托阿部族，汤加里罗国家公园在湖的南岸，鳟鱼垂钓与铁人三项是它的两件事，罗托鲁瓦在北面约 80 公里。初来的人最容易犯的错，是把陶波湖当作一个普通的湖，而它是一座火山口，湖底与四周至今都在冒热气。",
     layout:
       "镇子沿湖北岸展开，湖滨有码头、公园和温泉，主街在湖边一两条街内。怀卡托河出湖口在镇东，胡卡瀑布、月亮火山口、怀拉基地热区都在镇北沿河一线；湖西岸的矿湾岩雕只能乘船或皮划艇到达。湖对岸南面是图朗伊和汤加里罗国家公园（鲁阿佩胡、瑙鲁霍伊、汤加里罗三座火山），罗托鲁瓦在北面约80公里。机场在镇南约8公里。",
     gettingAround:
@@ -2250,6 +2265,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nelson: {
     identity:
       "尼尔森在南岛北端的塔斯曼湾畔，人口约5.4万（2025年估计），1841年由新西兰公司建立，是南岛最早的城市。它以日照著称（年日照超过2400小时，有“阳光尼尔森”之称），是三个国家公园——阿贝尔·塔斯曼、卡胡朗伊、尼尔森湖——的门户，也是新西兰手工艺和艺术家最集中的地区之一：可穿戴艺术大赛（WOW）1987年在这里创办，为《指环王》电影打造“至尊魔戒”的金匠也在此。植物园山上的标志被称为“新西兰中心”（实际是早期大地测量的原点）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nelson (city and unitary authority at the top of the South Island; 422 km²; ~54,300, urban ~50,800; oldest city in the South Island, settled 1841, royal charter 1858; Tasman Bay; over 2,400 sunshine hours, the sunniest in NZ; Abel Tasman National Park in the separate Tasman District; Port Nelson the biggest fishing port in Australasia; World of Wearable Art founded 1987; airport ~1 million passengers)
+    howItWorks:
+      "尼尔森在新西兰的地方政府体系里是一个“单一制议会”——它同时行使市议会与大区议会的职权，全国只有六个这样的辖区；市域约 422 平方公里，人口约 5.4 万，城区约 5.1 万。1841 年欧洲移民在这里定居，1858 年获得王室特许，是南岛最老的城市。城市在塔斯曼湾的东岸，年日照超过 2,400 小时，是新西兰日照最多的地方，“阳光尼尔森”是它的自称；尼尔森港是澳新地区最大的渔港，海鲜、园艺、林业、农业与旅游是本地的“五大产业”，1987 年在这里创办的“可穿戴艺术大赛”如今在惠灵顿举行。阿贝尔塔斯曼国家公园在西面，属于隔壁的塔斯曼区议会；机场每年约一百万旅客，皮克顿的渡轮码头在东面约 110 公里。初来的人最容易犯的错，是把阿贝尔塔斯曼当作尼尔森的公园，而它在另一个议会的辖区里。",
     layout:
       "市中心在麦泰河口的平地上，特拉法加街是主街，主教座堂在街尾的小山上，周六市集在市中心的蒙哥马利广场。植物园山（“新西兰中心”）在市中心东侧。塔胡纳努伊海滩在城西南约5公里，机场就在海滩旁。往西经里奇蒙、莫图埃卡到阿贝尔·塔斯曼国家公园入口马拉豪约65公里；尼尔森湖国家公园在南面约90公里的圣阿诺；马尔堡酒乡在东面约110公里。",
     gettingAround:
@@ -2264,6 +2282,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kaikoura: {
     identity:
       "凯库拉是南岛东北海岸的小镇，在基督城以北约180公里，人口只有约2350（2025年估计），却是新西兰最著名的观鲸地：海岸外的凯库拉海底峡谷从30米骤降到2000米深，深海抹香鲸常年在这里出没，观鲸船几乎全年可见；半岛上有新西兰毛皮海狮栖息地。镇名在毛利语里意为“吃小龙虾”（kai 食物，kōura 小龙虾）。2016年11月14日的7.8级地震抬升了海岸线、切断公路和铁路，之后重建。海边耸立的向海凯库拉山脉让小镇有“雪山下的海岸”的景观。当地毛利部族是恩盖塔胡（Ngāi Tahu）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kaikōura (Kaikōura District Council; town ~2,350, district ~4,340; peninsula between the Seaward Kaikōura Range and the Pacific; name means "meal of crayfish"; Kaikōura Canyon close inshore supports sperm whales, dusky and Hector's dolphins, fur seals; ~1 million visitors a year, tourism ~40% of district GDP; 2016 magnitude 7.8 earthquake cut all road and rail, NZ$1.1 billion of repairs; Christchurch ~180 km)
+    howItWorks:
+      "凯库拉是新西兰南岛东岸的一个小镇，由凯库拉区议会管辖，镇上约 2,350 人，全区约 4,340 人；议会管垃圾、道路与规划，警察、学校与医院归中央政府。镇子在一个伸进太平洋的半岛上，背后是海边凯库拉山脉，山与海之间只有一条窄带；名字在毛利语里是“一顿龙虾饭”的意思，路边卖龙虾的摊子至今在。它的特别之处在海底：凯库拉海沟离岸很近，深水把抹香鲸、暗色海豚、贺氏海豚与毛皮海豹带到岸边，观鲸从捕鲸与农渔业之后成了主业，每年约一百万游客，旅游占全区 GDP 近四成。2016 年 7.8 级地震切断了所有公路与铁路，修复花了约 11 亿纽元；克赖斯特彻奇在南面约 180 公里。初来的人最容易犯的错，是以为要坐很久的船才看得到鲸，而海沟就在岸边几公里外。",
     layout:
       "小镇在凯库拉半岛根部的海岸平地上，主街西端街靠北面的海湾；半岛向东伸入海中，角点有海豹栖息地和环半岛步道；南湾在半岛南侧，观鲸船从这里出发。1号国道和太平洋海岸列车沿海岸穿过小镇，奥豪角海豹区在镇北约25公里的海边。向海凯库拉山脉在镇西紧贴海岸。",
     gettingAround:
@@ -2278,6 +2299,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wanaka: {
     identity:
       "瓦纳卡在南岛奥塔哥内陆的瓦纳卡湖南端，海拔约290米，人口约1.3万（2025年估计）。它是奥斯派灵山国家公园（毛利名 Tititea，南岛西南部世界遗产荒野区的一部分）的门户，也是卡德罗纳、特雷布尔科恩两座滑雪场的基地——比皇后镇安静，同样有雪山和湖。湖里的那棵柳树“瓦纳卡树”是新西兰被拍照最多的树之一，罗伊峰步道能俯瞰整片湖山。恩盖塔胡（Ngāi Tahu）毛利人历史上季节性来此狩猎、捕鱼和采集绿玉。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Wānaka (town in Queenstown-Lakes District, Otago, the council seat being Queenstown; ~13,200 June 2025, population tripled between 2000 and 2020; southern end of Lake Wānaka; gateway to Mount Aspiring National Park; That Wānaka Tree; Roys Peak; Treble Cone, Cardrona, Snow Farm; Warbirds over Wanaka biennial; Queenstown 120 km over the Crown Range; semi-continental climate)
+    howItWorks:
+      "瓦纳卡是新西兰奥塔哥地区的一座镇，与皇后镇同属皇后镇湖区议会，议会所在地在皇后镇；2025 年 6 月人口约 1.32 万，2000 至 2020 年间翻了三倍。镇子在瓦纳卡湖的南端，是通往阿斯派灵山国家公园的门户；湖里的那棵柳树因社交媒体成了名，罗伊斯峰的步道从湖边爬上山脊；特里布尔科恩、卡德罗纳与雪场农庄的雪场在冬天开放，两年一度的“瓦纳卡战机展”把老飞机开上天。它的气候是新西兰少见的半大陆性，四季分明。皇后镇在南面约 120 公里，翻皇冠山口过去，机场只有小型飞机。初来的人最容易犯的错，是把瓦纳卡当作皇后镇的一部分，而它们是同一个议会下的两个镇，中间隔着一道山口。",
     layout:
       "镇子在瓦纳卡湖南岸的罗伊斯湾边，湖滨步道两三百米就是镇中心；“瓦纳卡树”在镇西的湖滩上。罗伊峰登山口在湖西岸约6公里；奥斯派灵山国家公园的马图基图基谷（罗布罗伊冰川）在西北约55公里，最后一段是砂石路；卡德罗纳滑雪场在南面约35公里的皇冠山脉公路上，特雷布尔科恩在西面约20公里；哈威亚湖在东北约15公里。皇后镇在南面，经皇冠山脉公路约70公里。",
     gettingAround:
@@ -4960,6 +4984,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dresden: {
     identity:
       "德累斯顿是萨克森州首府，坐落在易北河畔，以保存完好的巴洛克老城和丰富的艺术收藏闻名，历史上曾被称为“易北河畔的佛罗伦萨”。是探访萨克森瑞士砂岩地貌的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dresden (capital of Saxony; ~565,000, urban area ~790,000, second in Saxony after Leipzig; Elbe; Frauenkirche rebuilt 1994–2005, Zwinger, Semperoper, State Art Collections; "Elbflorenz"; February 1945 bombing destroyed the centre; Elbe Valley UNESCO 2004, delisted 2009 over a bridge; Silicon Saxony; 4.7 million overnight stays)
+    howItWorks:
+      "德累斯顿是萨克森州的州府，人口约 56.5 万，城市连绵区约 79 万，是州内第二大城市——最大的是莱比锡；市议会与州议会都在城里，警察与学校归州。易北河把城市分成两岸：南岸的老城是奥古斯特二世时代的巴洛克建筑群，茨温格宫、森佩尔歌剧院与国家艺术收藏馆在这里，圣母教堂 1994 至 2005 年按原样重建，成为战后重建的象征；北岸的新城区是酒吧与年轻人的街区。1945 年 2 月的轰炸摧毁了整个市中心，约两万五千人遇难；易北河谷 2004 年列入世界遗产，2009 年因新建的大桥被除名。半导体产业让这一带被称为“硅萨克森”，撒克逊小瑞士在东南 30 公里。初来的人最容易犯的错，是把德累斯顿当作萨克森最大的城市，而莱比锡比它大。",
     layout:
       "茨温格宫、圣母教堂、德累斯顿城堡集中在老城核心区，沿易北河一线展开，是德国保存最完整的巴洛克城市景观之一；新城区在河对岸，是更年轻、更有活力的街区。",
     gettingAround:
@@ -4975,6 +5002,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nuremberg: {
     identity:
       "纽伦堡是巴伐利亚州第二大城市，保留着德国最典型的中世纪老城风貌，是通往弗兰肯汝拉山和弗兰肯葡萄酒产区的门户，也是德国传统圣诞市场文化的代表城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nuremberg (Bavaria, capital of Middle Franconia; ~529,500, second in Bavaria; metropolitan region ~3.6 million; Fürth adjoining; Free Imperial City, Imperial Regalia 1424–1806; Dürer; Kaiserburg; bombing of 2 January 1945 destroyed about eighty per cent of the old town; Nuremberg trials 1945–46; Christkindlesmarkt; Toy Fair; first German railway 1835 to Fürth)
+    howItWorks:
+      "纽伦堡是巴伐利亚州第二大城市与中弗兰肯行政区的首府，人口约 53 万，都会区约 360 万，紧邻的菲尔特是另一座独立的市；市议会管地方服务，警察与学校归州。老城被中世纪的城墙围着，皇帝堡在北端的岩丘上，1424 至 1806 年帝国宝物存放在这里，丢勒的故居在城内，佩格尼茨河从城中穿过；1945 年 1 月 2 日的一次轰炸摧毁了约八成的老城，战后按原貌重建，同年起的纽伦堡审判在司法宫的 600 号法庭举行，帝国党代会旧址如今是文献中心。圣诞市场与国际玩具展是它每年的两件大事，1835 年德国第一条铁路从这里通往菲尔特，地铁有全自动线路。弗兰肯人的口音与身份与巴伐利亚南部不同。初来的人最容易犯的错，是把纽伦堡当作巴伐利亚的一部分来理解，而弗兰肯有自己的方言、啤酒与香肠。",
     layout:
       "老城被中世纪城墙环绕，佩格尼茨河穿城而过；纽伦堡城堡俯瞰整座老城；圣劳伦茨教堂和圣塞巴尔杜斯教堂是老城两大哥特式地标；老城中心广场每年11—12月举办德国最著名的圣诞市场之一。",
     gettingAround:
@@ -4990,6 +5020,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   freiburg: {
     identity:
       "弗赖堡在德国西南角黑森林山脚下，是巴登-符腾堡州气候最温和、日照最充足的城市之一，被称为德国的“生态之都”，是探访黑森林的主要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Freiburg im Breisgau (fourth city of Baden-Württemberg; 153 km²; ~237,500 2024, urban area ~354,500; founded 1120 as a free market town; Münster 1200–1530; Bächle runnels; university 1457; Schauinsland cable car 3.6 km, longest in Germany; Vauban and green-city reputation; held the German heat record 2003–2015; trams)
+    howItWorks:
+      "弗赖堡是巴登—符腾堡州西南角的城市，也是弗赖堡行政区的首府，市域约 153 平方公里，2024 年人口约 23.7 万，城市连绵区约 35 万；市议会管地方服务，警察与学校归州。城市 1120 年作为自由市场镇建立，老城的中心是 1200 至 1530 年间建成的大教堂，街边的“Bächle”水渠是中世纪引来的水道，至今哗哗地流；1457 年创办的大学是德国最老的之一，学生占了市民的一大块。它以“绿色城市”著称：沃邦区是 1990 年代按低能耗与少汽车的原则建的住宅区，太阳能与有轨电车是它的标签；2003 至 2015 年德国的最高气温纪录由这里保持，是全国最温暖、日照最多的城市之一。绍因斯兰的缆车长 3.6 公里，是德国最长的，黑森林从城东开始，法国与巴塞尔各在几十公里外。初来的人最容易犯的错，是以为“绿色”只是宣传，而这座城的规划、交通与住宅确实按这条线走了几十年。",
     layout:
       "老城中心保留着中世纪的“小溪”（Bächle）——沿街的浅水渠，据传踩入水渠会带来婚姻好运；弗赖堡大教堂尖塔是老城制高点；老城周边被葡萄园和黑森林山地环绕。",
     gettingAround:
@@ -5005,6 +5038,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   heidelberg: {
     identity:
       "海德堡在内卡河畔，以海德堡城堡遗址和德国最古老的大学（海德堡大学，1386年创立）闻名，浪漫主义时期是众多诗人和艺术家钟爱的题材，至今保留着完整的老城风貌。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Heidelberg (fifth city of Baden-Württemberg; ~155,000, about a quarter of them students; Heidelberg University 1386, oldest in Germany; castle ruin above the Altstadt; old bridge 1786–88; Philosophers' Walk; Neckar; spared Allied bombing; US forces left 2013, Patrick Henry Village conversion; Bahnstadt; UNESCO City of Literature; Frankfurt ~78 km)
+    howItWorks:
+      "海德堡是巴登—符腾堡州的第五大城市，人口约 15.5 万，其中约四分之一是学生；市议会管地方服务，警察与学校归州；它在莱茵—内卡都会区里，隔壁的曼海姆比它大。1386 年创办的海德堡大学是德国最老的大学，校区散在老城与内卡河北岸；老城沿河一条主街长约 1.6 公里，城堡的废墟悬在南岸的山坡上，1786 至 1788 年建的老桥连着两岸，北岸的哲学家小路是看城的地方。二战中它几乎未遭轰炸，因此老城是原物；美军在此驻扎到 2013 年，撤离后留下的营区正在改建成住宅区，车站西面的“铁路城”是新建的低能耗街区。法兰克福机场在西北约 78 公里，SAP 的总部在南面的瓦尔多夫。初来的人最容易犯的错，是把海德堡当作一座只有游客的老城，而它是一座大学与研究机构撑起来的城市。",
     layout:
       "海德堡城堡遗址俯瞰整座老城和内卡河谷；老桥连接内卡河两岸，桥上可远眺城堡与老城全景；老城主街是欧洲最长的步行街之一，两侧是巴洛克风格建筑。",
     gettingAround:
@@ -5020,6 +5056,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   trier: {
     identity:
       "特里尔在摩泽尔河畔，是德国最古老的城市，公元前16年由古罗马人建城，保留着阿尔卑斯山以北最丰富的古罗马遗迹群，是探访摩泽尔河谷葡萄酒产区的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trier (fourth city of Rhineland-Palatinate; ~113,000; Augusta Treverorum founded about 17 BC, oldest city in Germany; one of four imperial capitals under the Tetrarchy; Roman and medieval monuments UNESCO 1986 — Porta Nigra, Imperial Baths, Aula Palatina, cathedral with the Holy Tunic; Karl Marx born 1818; University of Trier; Moselle wine)
+    howItWorks:
+      "特里尔是莱茵兰—普法尔茨州第四大城市，人口约 11.3 万，在摩泽尔河谷里，靠近卢森堡；市议会管地方服务，警察与学校归州。公元前约 17 年罗马人在这里建起奥古斯塔·特雷维罗鲁姆，因此它自称德国最古老的城市；公元 3 世纪末到 4 世纪，它是四帝共治时期罗马帝国的四座都城之一，尼格拉城门、皇帝浴场、君士坦丁巴西利卡与大教堂 1986 年一并列入世界遗产，大教堂里存着“圣袍”。1818 年卡尔·马克思生在城中的一栋房子里，如今是博物馆；摩泽尔河两岸的葡萄园是本地的产业，特里尔大学在城南。卢森堡在西面约 50 公里，大量居民每天跨境去卢森堡上班，没有机场。初来的人最容易犯的错，是把特里尔当作一座边境小城，而它是德国最古老的城市，罗马遗迹是原物而非复制。",
     layout:
       "黑门（Porta Nigra，古罗马城门，世界文化遗产）是老城最醒目的地标；老城中心还保留着古罗马大浴场、圆形剧场等遗迹；沿摩泽尔河两岸是层层叠叠的葡萄园梯田。",
     gettingAround:
@@ -5035,6 +5074,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   stralsund: {
     identity:
       "施特拉尔松在德国东北部波罗的海沿岸，是保存完好的汉萨同盟古城，2002年与维斯马老城一同整体列入世界文化遗产，也是通往吕根岛白垩崖的主要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Stralsund (fifth city of Mecklenburg-Vorpommern, seat of Vorpommern-Rügen district; 54 km²; ~54,000; charter 1234, oldest city in Pomerania; Hanseatic; old town UNESCO 2002 with Wismar; St Mary's the world's tallest structure 1625–1647; Ozeaneum; Gorch Fock; Rügen bridge; Swedish rule 1648–1815; shipbuilding)
+    howItWorks:
+      "施特拉尔松德是梅克伦堡—前波美拉尼亚州的第五大城市，也是前波美拉尼亚—吕根县的县治，市域约 54 平方公里，人口约 5.4 万；市议会管地方服务，警察与学校归州。老城建在斯特雷拉松海峡与几片水塘之间的一座岛上，四面环水，1234 年获得城市权，是波美拉尼亚最老的城市，13 世纪末加入汉萨同盟；砖砌哥特式的圣尼古拉教堂、圣玛丽教堂与市政厅是它的骨架，圣玛丽教堂 1625 至 1647 年间曾是世界最高的建筑，2002 年老城与维斯马一起列入世界遗产。1648 至 1815 年这里属于瑞典。海洋馆在旧港边，“戈尔希·福克号”帆船停在码头，吕根岛的大桥从城北跨过海峡，造船业至今是它的产业。初来的人最容易犯的错，是把施特拉尔松德当作去吕根岛的过路站，而它是一座汉萨老城，桥只是它北面的出口。",
     layout:
       "老城建在一座三面环水的半岛上，尼古拉教堂等几座砖砌哥特式教堂是老城天际线的标志；海洋博物馆（Ozeaneum）位于港口区，是德国知名的海洋生物展馆；施特拉尔松海峡对岸就是吕根岛。",
     gettingAround:
@@ -5102,6 +5144,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lubeck: {
     identity:
       "吕贝克在德国北部波罗的海附近的特拉沃河上，人口约21.7万（2024年），中世纪时是汉萨同盟的事实首都和“汉萨女王”。老城建在特拉沃河环绕的岛上，1478年建成的霍尔斯滕门是城市的标志，七座教堂尖塔构成天际线，圣玛丽教堂是波罗的海沿岸砖砌哥特建筑的典范；1987年老城列入世界遗产，是德国最早入选的老城之一。托马斯·曼在此出生，《布登勃洛克一家》以家族老宅为背景，君特·格拉斯晚年也住在附近；尼德埃格公司自1806年起在这里做杏仁糖。特拉沃明德是吕贝克的海滨区，有波罗的海海滩和渡轮港。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lübeck (independent city in Schleswig-Holstein; ~220,000, second-largest on the German Baltic coast; leading city of the Hanseatic League; old town on an island in the Trave UNESCO 1987; Holstentor; "city of seven towers", six church towers over 100 m; St Mary's 1265–1351 brick Gothic; Thomas Mann and Günter Grass; Niederegger marzipan; Travemünde Germany's most important ferry port; Hamburg ~65 km)
+    howItWorks:
+      "吕贝克是石勒苏益格—荷尔斯泰因州的一座独立市，人口约 22 万，是德国波罗的海沿岸的第二大城市；市议会管地方服务，警察与学校归州。中世纪它是汉萨同盟的盟主，“汉萨女王”是它的旧称，老城建在特拉沃河环绕的一座岛上，1987 年列入世界遗产，霍尔斯滕门是它的标志；七座塔的天际线来自五座教堂，其中六座塔超过 100 米，1265 至 1351 年建成的圣玛丽教堂是砖砌哥特式的范本，托马斯·曼的《布登勃洛克一家》写的就是这座城的商人家族，君特·格拉斯晚年也住在附近。尼德艾格的杏仁糖是它的特产。特拉沃明德的海滩与渡轮港在市域北端，是德国最重要的渡轮港，通往斯堪的纳维亚，汉堡在西南约 65 公里。初来的人最容易犯的错，是把吕贝克当作汉堡的郊区，而它曾是波罗的海贸易的中心，汉堡当年只是它的对手。",
     layout:
       "老城在被特拉沃河和运河环绕的椭圆形岛上，霍尔斯滕门和盐仓在岛西侧的入口，市场广场、市政厅和圣玛丽教堂在岛中央的最高处，布登勃洛克之家和尼德埃格咖啡馆就在教堂旁；主教座堂在岛南端，圣雅各教堂和欧洲汉萨博物馆在北端，岛上的小巷和庭院（Gänge und Höfe）是特色。中央车站在岛西面，过桥步行约10分钟到霍尔斯滕门。特拉沃明德在东北约20公里的河口海边。",
     gettingAround:
@@ -5116,6 +5161,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rothenburg: {
     identity:
       "陶伯河畔罗滕堡在巴伐利亚西北部弗兰肯地区的陶伯河谷上方，人口约1.1万（2024年），是德国保存最完整的中世纪小镇之一，也是浪漫之路上最著名的一站。它是德国仅有的四座城墙完整环绕的城镇之一（另三座是讷德林根、丁克尔斯比尔、贝尔兴），十七世纪三十年战争后长期停滞让它保留了中世纪面貌；普伦莱茵的岔路口是德国最常被拍照的街景之一，市政厅塔楼可俯瞰红瓦屋顶。二战末期约三分之一建筑被炸毁，战后按原样重建。凯特·沃尔法特圣诞村和德国圣诞博物馆全年营业，“雪球”酥点是本地特产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rothenburg ob der Tauber (town in Ansbach district, Middle Franconia, Bavaria; 41.67 km²; 11,365 at end-2024; plateau above the Tauber; one of only four German towns with complete walls; free imperial city until 1803; Romantic Road; a 1945 raid destroyed about 32% of the town, rebuilt; Plönlein; night watchman; Käthe Wohlfahrt)
+    howItWorks:
+      "罗滕堡是巴伐利亚州中弗兰肯安斯巴赫县的一座镇，市域约 42 平方公里，2024 年底人口约 11,400，由民选的镇议会与镇长治理，警察与学校归州。镇子建在陶伯河上方的一片台地上，城墙至今完整——德国只有四座城镇保住了完整的城墙——1803 年以前它是神圣罗马帝国的自由城市，之后并入巴伐利亚；市集广场、普勒莱因的岔路口与夜巡人的导览是游客的三件事，全年营业的圣诞用品店在主街上，它是“浪漫之路”上最有名的一站。1945 年的一次空袭毁了约三分之一的镇子，战后按原样重建。铁路只有从施泰纳赫来的支线，纽伦堡在东面约 80 公里，维尔茨堡在北面约 60 公里。初来的人最容易犯的错，是以为整座镇都是中世纪原物，而三分之一是 1950 年代按旧图纸重建的。",
     layout:
       "小镇在陶伯河谷东侧的高地上，被城墙完整环绕：集市广场和市政厅在中心，从广场向南沿施密德巷到普伦莱茵和西伯塔，再到医院门；城堡门和城堡花园在西端俯瞰河谷，圣雅各教堂（里门施奈德的圣血祭坛）在集市广场北面，城墙可从多处上去绕行（约2.5公里带顶的步道）。火车站在城墙东面约500米。陶伯河谷里有双桥和托普勒小城堡，可步行下去。",
     gettingAround:
@@ -5130,6 +5178,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   regensburg: {
     identity:
       "雷根斯堡在巴伐利亚东部多瑙河最北端的河湾上，雷根河与纳布河在此汇入，人口约15.1万（2024年）。公元179年罗马人在此建立雷吉纳军营（Castra Regina），中世纪它是神圣罗马帝国最繁荣的城市之一，1663–1806年帝国议会长期在此召开；老城近乎完整地保留了中世纪面貌，有近1500座受保护建筑，2006年列入世界遗产，被称为“阿尔卑斯以北最大的中世纪城市”。1135–1146年建成的石桥是中世纪桥梁的杰作，圣彼得主教座堂是巴伐利亚哥特的代表，主教座堂麻雀合唱团（Domspatzen）有上千年历史；桥头的历史香肠厨房自称世界最古老的香肠店。图恩与塔克西斯家族的宫殿在城南，瓦尔哈拉神殿在下游约10公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Regensburg (fourth city of Bavaria, capital of the Upper Palatinate; over 150,000; confluence of Danube, Naab and Regen, the Danube's northernmost point; Castra Regina 179 AD; permanent Imperial Diet 1663–1806; old town with Stadtamhof UNESCO 2006, the largest medieval city site north of the Alps, nearly 1,500 listed buildings; Stone Bridge 1135–46; cathedral from 1275; BMW plant; Domspatzen)
+    howItWorks:
+      "雷根斯堡是巴伐利亚州第四大城市与上普法尔茨行政区的首府，人口超过 15 万；市议会管地方服务，警察与学校归州。城市在多瑙河、纳布河与雷根河的汇合处，是多瑙河的最北点，公元 179 年罗马人在这里筑起卡斯特拉·雷吉纳的军团要塞；1663 至 1806 年神圣罗马帝国的“永久帝国议会”常设于此，德意志各邦的代表在市政厅里开了一百四十多年的会。老城与对岸的施塔特安霍夫 2006 年列入世界遗产，是阿尔卑斯以北最大的一片中世纪城区，近 1,500 座建筑受保护，1135 至 1146 年建成的石桥与 1275 年动工的大教堂是它的两个坐标；二战中它几乎未遭破坏。宝马的工厂与雷根斯堡大学是今天的经济支柱，瓦尔哈拉神殿在下游 10 公里，慕尼黑在南面约 120 公里。初来的人最容易犯的错，是把雷根斯堡当作一座小镇，而它是一座有大学与汽车厂的城市，老城只是它的中心。",
     layout:
       "老城在多瑙河南岸，石桥从老城北缘过河到施塔特阿姆霍夫区（也在世界遗产范围内）；桥头是盐仓、游客中心和历史香肠厨房，主教座堂在桥南约200米，哈德广场、老市政厅（帝国议会博物馆）和商人塔楼在老城中西部。图恩与塔克西斯宫（圣埃默拉姆修道院）在老城南缘，火车站再往南约500米。瓦尔哈拉神殿在东面多瑙河北岸的多瑙施陶夫，可坐船去。",
     gettingAround:
@@ -7814,6 +7865,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ulsan: {
     identity:
       "蔚山是韩国重要的重工业城市，人口约110万，以造船、汽车与石化产业闻名，同时也是太和江生态与鲸鱼文化的所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ulsan Metropolitan City (4 gu + Ulju county; 1,057 km²; ~1.1 million; Hyundai Motor plant and Hyundai Heavy shipyard; SK refinery; Taehwa River; Bangudae petroglyphs; Yeongnam Alps; no subway, KTX from 2010; hydrogen town)
+    howItWorks:
+      "蔚山是韩国的“广域市”，与道同级，由民选市长治理，下分 5 个自治区与蔚州郡，各区有自己的区长和区议会；面积约 1,057 平方公里，人口约 110 万。它是韩国的工业首都：现代汽车的蔚山工厂是世界最大的整车厂，现代重工的船厂与 SK 的炼油厂也在这里，人均收入长期居全国前列，市区因此分成几片各挨着一座工厂的居住区。太和江穿城而过，江边的公园是市民的去处，盘龟台的史前岩刻在西面的山谷里，岭南阿尔卑斯的山地在市域西缘。没有地铁；2010 年通车的 KTX 蔚山站在西面的蔚州郡，离市中心约 20 公里，釜山在南面约 60 公里。初来的人最容易犯的错，是以为高铁站在市区，而它在郊外的郡里。",
     layout:
       "城市以太和江为轴线展开，太和江国家庭院沿江分布，工业区、住宅区与自然生态公园各处不同片区。",
     gettingAround:
@@ -7828,6 +7882,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yeosu: {
     identity:
       "丽水是韩国南部沿海港口城市，人口约28万，2012年举办世界博览会后成为热门的夜景与海景旅游目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Yeosu (city on the south coast; 268,823; formed 1998 by merging Yeosu city, Yeocheon city and Yeocheon county; from 2026-07-01 under Jeonnam-Gwangju Special Metropolitan City after South Jeolla merged with Gwangju; ~365 islands; Dolsan bridge and cable car; Hyangiram; Odongdo; Expo 2012; Joseon naval headquarters from 1479, Yi Sun-sin's base)
+    howItWorks:
+      "丽水是韩国南海岸的一座市，人口约 27 万，1998 年由旧丽水市、丽川市与丽川郡合并而成；2026 年 7 月 1 日全罗南道与光州合并为“全南光州特别市”后，丽水直属于这个新的省级行政区。城市在一个半岛与约 365 座岛屿之间：市中心在半岛尖端，突山大桥与海上缆车通往对岸的突山岛，向日庵在岛的南端，梧桐岛的山茶花在港口外，2012 年世博会的场地在海边，如今是会展与酒店区；1479 年起朝鲜王朝把全罗左道水军节度使司设在这里，李舜臣以此为基地。丽水国家产业园的石化工厂在市域西侧，是这座城的经济支柱。KTX 的终点丽水世博站就在世博会场旁。初来的人最容易犯的错，是把丽水当作一座旅游小城，而石化产业才是它的主业。",
     layout:
       "城市沿丽水半岛海岸展开，市中心与丽水世博会展馆片区相邻，突山岛与丽水本岛由大桥相连。",
     gettingAround:
@@ -7842,6 +7899,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pohang: {
     identity:
       "浦项是韩国重要的钢铁工业城市，人口约50万，是浦项制铁（POSCO）总部所在地，同时也是探索迎日湾海岸与虎尾串日出景观的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pohang (largest city of North Gyeongsang; ~491,000–499,000; 2 gu; POSCO 1968, production 1972, among the world's largest steelmakers; Homigot Hands of Harmony; Yeongildae beach; Jukdo fish market; POSTECH and Handong; KTX from 2015; airport; ferry to Ulleungdo; gwamegi)
+    howItWorks:
+      "浦项是庆尚北道人口最多的城市，约 49 万人，市下分南、北两个自治区，各有自己的区长和区议会。1968 年浦项制铁在这里创立、1972 年投产，如今的浦斯科是世界最大的钢铁企业之一，厂区在迎日湾南岸，几乎决定了城市的形状与就业；1986 年创办的浦项工科大学与韩东大学让它同时是一座研究型城市。城市面朝东海：迎日台海滩在市中心北侧，虎尾串的“相生之手”雕塑立在海里，是元旦看日出的地方，竹岛市场是东海岸最大的鱼市，郁陵岛的渡轮从这里开出。2015 年 KTX 通到浦项站，机场在南面，庆州在西南约 30 公里。初来的人最容易犯的错，是把浦项当作一座钢铁厂，而它是有大学、渔港与海滩的东海岸中心城市。",
     layout:
       "城市沿迎日湾海岸展开，钢铁工业区与住宅区、迎日台海边公园分处不同片区，虎尾串公园位于海岸最东端的观日出地点。",
     gettingAround:
@@ -7856,6 +7916,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   gangneung: {
     identity:
       "江陵是江原道东海岸的代表性城市，人口约21万，2018年冬奥会主办地之一，也是韩国知名的咖啡文化与镜浦湖潟湖景观所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Gangneung (city in Gangwon State; ~1,040 km²; ~208,000 2024; east coast below the Taebaek range; Gyeongpo beach and lagoon; Jeongdongjin; Anmok coffee street; Ojukheon; Danoje UNESCO 2005; 2018 Olympic ice venues; Gyeonggang KTX 2017 ~114 min from Seoul)
+    howItWorks:
+      "江陵是江原特别自治道的一座市，市域约 1,040 平方公里，2024 年人口约 21 万，由民选市长治理，市下分洞与面。城市在太白山脉以东、东海之滨，山与海之间只有一条窄带：镜浦台的海滩与镜浦湖在市区北侧，正东津在南面的海崖上，是看日出的地方，安木海边的咖啡街从 1990 年代的自动贩卖机长成了今天的产业，乌竹轩是申师任堂与李珥的故居；1,300 年的江陵端午祭 2005 年列入非物质文化遗产。2018 年冬奥会的全部冰上项目在这里举行，场馆至今在城东；2017 年通车的京江线 KTX 把首尔到这里的时间从六小时缩到约一小时五十分。初来的人最容易犯的错，是把江陵当作一处海滩，而它是岭东地区的中心城市，海滩只是它的东缘。",
     layout:
       "城市沿东海岸展开，镜浦湖与镜浦海滩相邻分布于市区北侧，安木咖啡街沿海岸线排列着众多海景咖啡馆。",
     gettingAround:
@@ -7870,6 +7933,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sokcho: {
     identity:
       "束草是江原道东北部海岸城市，人口约8万，是探索雪岳山国家公园的传统门户，与朝鲜半岛军事分界线相距不远。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sokcho (city in Gangwon State; 105.76 km²; ~81,000; under North Korean control until August 1951, then South Korean after the 1953 armistice; Seoraksan National Park with Sinheungsa and cable car; Abai village; Yeongnang lake; Daepo harbour; KTX/express ~86 minutes from Seoul; Yangyang airport)
+    howItWorks:
+      "束草是江原特别自治道的一座市，市域约 106 平方公里，是韩国面积最小的市之一，人口约 8 万。这座城的位置决定了它的历史：1945 年划界时它在北纬 38 度以北，1951 年 8 月由韩国军队占领，1953 年停战后归韩国，当年南下的实乡人在青湖洞聚居，形成了“阿爸村”，那里的手摇渡船与鱼糕至今是本地的标志。市区夹在东海与雪岳山之间：雪岳山国家公园的入口在西面 10 公里，新兴寺与缆车在里面，永郎湖在市区中央，大浦港的鱼市在南端。首尔到这里约一个半小时，襄阳机场在南面 20 公里，北面是高城与非军事区。初来的人最容易犯的错，是把束草当作雪岳山的山门，而它是一座有渔港与自己历史的边境城市。",
     layout:
       "城市紧邻东海岸，青草湖潟湖与束草港分布于市区，雪岳山国家公园入口位于市区西侧内陆约15公里处。",
     gettingAround:
@@ -7884,6 +7950,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chuncheon: {
     identity:
       "春川是江原道道厅所在地，人口约28万，坐落于昭阳江与北汉江交汇处，是韩国知名的湖泊风光与辣炒鸡料理发源地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chuncheon (capital of Gangwon State; 1,166.8 km²; ~290,000; confluence of the Soyang and Bukhan rivers; Soyang and Uiam dams; Nami Island; Legoland Korea 2022; dak-galbi invented here in the 1960s and mak-guksu; Gyeongchun line and ITX-Cheongchun from Seoul; Kangwon National University; mime festival)
+    howItWorks:
+      "春川是江原特别自治道的道厅所在地，市域约 1,167 平方公里，人口约 29 万，由民选市长治理，道政府与道议会都在城里。城市在昭阳江与北汉江汇合的谷地里，昭阳江大坝与衣岩坝把河拦成一串湖，市区被水环着，因此叫“湖城”；1960 年代一位猪肉店老板发明的辣炒鸡排与荞麦凉面是本地的两样吃食；南怡岛在西南约 25 公里，行政上属于京畿道加平郡，2022 年开业的乐高乐园在衣岩湖的中岛上。京春线与 ITX 青春列车从首尔上鹤站直达，约一小时，江原大学与翰林大学在城里。初来的人最容易犯的错，是把南怡岛当作春川的景点，而它在隔壁道的郡里，只是从春川过去最方便。",
     layout:
       "城市被昭阳湖与义岩湖等水域环绕，市中心明洞商圈与南怡岛、昭阳江大坝分处市区不同方向。",
     gettingAround:
@@ -7898,6 +7967,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   andong: {
     identity:
       "安东是庆尚北道东北部的历史文化城市，人口约15万，河回村是韩国保存最完好的传统聚落之一，也是安东炖鸡的发源地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Andong (city in North Gyeongsang, provincial seat; 1,590.91 km²; ~153,000 2024; Hahoe folk village UNESCO 2010; Dosan Seowon; mask dance festival October; Confucian and folk traditions; heotjesabap, jjimdak, Andong soju; Andong dam 1976; nearest airport Daegu 92 km)
+    howItWorks:
+      "安东是庆尚北道的道厅所在地，市域约 1,591 平方公里，2024 年人口约 15 万，由民选市长治理；道政府与道议会 2016 年从大邱迁到安东与醴泉交界的新城，安东因此从一座农业市镇变成了省级行政中心。城市在洛东江上游，安东大坝 1976 年建成后市区北面成了湖；它是朝鲜时代儒学与两班文化的核心地带：河回村 2010 年列入世界遗产，在市区西面约 25 公里，陶山书院在北面，凤停寺在西北，十月的假面舞节是全国最大的民俗节庆之一。安东炖鸡、祭祀饭与安东烧酒是本地的味道，最近的机场是 92 公里外的大邱。初来的人最容易犯的错，是把安东当作一座民俗村，而它是一个道的行政中心，民俗村在市区之外几十公里的河湾里。",
     layout:
       "城市沿洛东江上游展开，河回村位于市区西侧洛东江曲流内侧的独立台地上，与市区有一定距离。",
     gettingAround:
@@ -7912,6 +7984,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jeonju: {
     identity:
       "全州是全罗北道道厅所在地，人口约65万，全州韩屋村保存有数百栋传统韩屋建筑，是韩国美食之都与传统文化体验的代表性城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jeonju (capital of Jeonbuk State; 2 gu Wansan and Deokjin; 206.22 km²; ~638,000 2026; Hanok Village with over 800 hanok; Gyeonggijeon with the portrait of Yi Seong-gye; Jeondong Cathedral 1908–14; Pungnammun; bibimbap; UNESCO City of Gastronomy 2012; film festival; ancestral home of the Joseon royal house)
+    howItWorks:
+      "全州是全北特别自治道的道厅所在地，市下分完山、德津两个自治区，市域约 206 平方公里，2026 年人口约 64 万，由民选市长治理，道政府与道议会都在城里。它是朝鲜王朝李氏的本贯之地，庆基殿里供着太祖李成桂的御真，丰南门是老城墙仅存的一座；韩屋村在完山区，八百多座传统韩屋连成一片，是韩国最大的城市韩屋群，1908 至 1914 年建成的殿洞圣堂在门外；全州拌饭与米酒让它 2012 年成为联合国教科文组织美食之都，每年的全州国际电影节吸引约五万人。KTX 到首尔约一个半小时，市内没有机场。初来的人最容易犯的错，是把韩屋村当作全州，而它只是完山区的一片街区，城本身是一座 64 万人的道厅所在地。",
     layout:
       "全州韩屋村位于市中心一隅，与周边现代化商业区形成鲜明对照，殿洞天主教堂与庆基殿分布于韩屋村边缘。",
     gettingAround:
@@ -7945,6 +8020,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   suwon: {
     identity:
       "水原是京畿道的道厅所在地，在首尔以南约30公里，人口约123万（2026年）。1794–1796年朝鲜正祖为迁葬父亲思悼世子而建的华城是朝鲜后期城郭建筑的代表，5.7公里的城墙、四座城门、行宫和炮楼保存完好，1997年列入世界遗产；正祖每年从汉阳到水原的行幸是华城文化节的原型。三星电子1969年创立于水原，总部和研发园区在灵通区。水原排骨（烤牛排骨）是本地名菜，邻近的龙仁有韩国民俗村。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Suwon (capital of Gyeonggi Province; special case city with lesser self-governance than a metropolitan city; 4 gu; population over 1.2 million; Hwaseong Fortress built under King Jeongjo 1796, UNESCO with the Hwaseong Seongyeok Uigwe record; Samsung Electronics headquarters in Yeongtong since 2016; three Seoul Metro lines, 14 stations, ~30 km from Seoul; Suwon galbi; World Cup Stadium 2002)
+    howItWorks:
+      "水原是京畿道的道厅所在地，人口超过 120 万，比不少广域市还多，却因为在道之下，只是一座“特例市”，自治权限比广域市小一级；市下分 4 个自治区，由民选市长治理。1796 年正祖为迁葬父亲而建的华城把老城围起来，城墙与行宫 1997 年列入世界遗产，当年的施工记录《华城城役仪轨》详尽到战后能照着重建；三星电子 1973 年把总部迁来，研究园区与总部在东面的灵通区，是这座城最大的雇主。首尔地铁的三条线在市内设了十几个站，KTX 也停靠，首尔在北面约 30 公里；水原排骨与光教新城是它的另外两个名字。初来的人最容易犯的错，是以为水原是首尔的一个卫星镇，而它是京畿道的道厅所在地，人口比首尔的多数自治区都多。",
     layout:
       "华城围绕水原老城：八达门在南，长安门在北，华虹门跨水原川在东北，西将台在西侧的八达山顶；华城行宫在城内正中，八达门市场在南门边。水原站在城墙西南约2公里，水原综合运动场和世界杯球场在城外。三星园区在城东的灵通区，光教新城在东北。韩国民俗村在东面约15公里的龙仁，爱宝乐园再往东。",
     gettingAround:
@@ -8010,6 +8088,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tongyeong: {
     identity:
       "统营在韩国东南岸的闲丽海上国立公园里，人口约11.9万（2024年），被称为“韩国的那不勒斯”。1592年壬辰倭乱时李舜臣在闲山岛设立三道水军统制营，“统营”由此得名（旧称忠武，取李舜臣的谥号）；港口里停着龟船复制品，闲山岛上有制胜堂。弥勒山缆车俯瞰散布着数百座岛屿的海面，东崖壁画村和西崖的夜景是热门去处；作曲家尹伊桑、小说家朴景利出生于此，每年春季有统营国际音乐节。牡蛎是本地特产，忠武紫菜包饭是本地小吃。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tongyeong (city in South Gyeongsang; 236.5 km² over the Goseong peninsula, Hansando, Mireuk and Yokji islands, 41 inhabited and 110 uninhabited islands; ~119,000 2024; formerly Chungmu, merged with Tongyeong county 1995; name from Yi Sun-sin's Tongjeyeong naval command on Hansan Island; Yun Isang and Park Kyung-ni; ~6–7 million visitors; chungmu gimbap and kkulppang)
+    howItWorks:
+      "统营是庆尚南道南海岸的一座市，市域约 237 平方公里，散在固城半岛与闲山岛、弥勒岛、欲知岛等 41 座有人岛与 110 座无人岛之间，2024 年人口约 12 万。它的名字来自李舜臣设在闲山岛的“三道水军统制营”，1995 年旧忠武市与统营郡合并后改用今名——忠武是李舜臣的谥号，忠武紫菜卷至今叫这个名字。市区在弥勒岛与半岛之间的江口港，东皮郎的壁画村爬在港边的坡上，弥勒山的缆车通到山顶，闲丽海上国家公园的岛屿从这里坐船去；作曲家尹伊桑与作家朴景利生在这里，尹伊桑音乐节每年举行。牡蛎养殖是本地的产业，没有铁路，釜山在东面约 100 公里。初来的人最容易犯的错，是把统营当作一处海港小镇，而它是一片跨着一百多座岛的市域，岛与岛之间只能坐船。",
     layout:
       "市区在统营半岛的南端，江口岸港口是中心：中央市场、龟船、东崖壁画村在港口东侧的坡上，西崖在西侧；弥勒岛与市区隔运河相连（统营运河和海底隧道），弥勒山缆车站在弥勒岛上，达牙公园在岛南端。闲山岛在港口东南约6公里，坐船约25分钟；小每勿岛、欲知岛等外岛坐船1–2小时。巨济岛在东面，由巨济大桥相连。",
     gettingAround:
