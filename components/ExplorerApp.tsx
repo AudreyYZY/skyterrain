@@ -960,14 +960,8 @@ export default function ExplorerApp() {
               if (session.active) stopHighlight();
             }
           },
-          // 镜头飞行以解说进度为节拍 —— 解说播完时航线也飞完
-          narrationProgress: () => {
-            const a = getCurrentAudio();
-            if (a && Number.isFinite(a.duration) && a.duration > 0) {
-              return Math.min(1, a.currentTime / a.duration);
-            }
-            return null;
-          },
+          // 飞行时长由航线距离与这个估算共同决定（见 lib/cesium/route-flight.ts）；
+          // 镜头节拍是帧率驱动的，不再跟随音频进度
           estNarrationSec: estimateSpeechDurationSec(narrText, SPEECH_RATE, language),
           // 镜头经过某航点 — 更新「当前在哪」（解说里提到地名时由高亮同步更精确，见上方 effect）
           onFlyoverWaypoint: (wp, index) => {

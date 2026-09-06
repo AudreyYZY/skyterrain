@@ -14,11 +14,12 @@ import {
   tickTerrainRegions,
   type RegionEntry,
 } from "@/lib/cesium/region-highlight";
+import { viewHeightForTerrain } from "@/lib/cesium/route-progress";
 import {
-  buildRouteProgressMap,
-  viewHeightForTerrain,
-  WAYPOINT_HOLD_SEC,
-} from "@/lib/cesium/route-progress";
+  planRouteFlight,
+  sampleFlight,
+  type FlightCurve,
+} from "@/lib/cesium/route-flight";
 import { quarticEaseOut, sleep, waitForTilesSettled } from "@/lib/cesium/utils";
 import {
   forwardRef,
@@ -75,21 +76,16 @@ export interface RouteFlyCallbacks {
   /** 镜头经过某航点（非阻塞，仅用于同步面板显示当前地形名） */
   onFlyoverWaypoint?: (waypoint: ResolvedWaypoint, index: number) => void;
   /**
-   * 当前解说进度 0..1（由解说音频 currentTime/duration 得出）。
-   * 返回 null = 音频还没开始 / 无法测量（浏览器 TTS）→ 用时长估算兜底。
-   * 镜头飞行以此为节拍，保证「解说播完时航线也飞完」。
+   * 解说时长估算（秒）。飞行时长取「按距离算出来的」与它的较大值，
+   * 保证解说永远不会被镜头甩在后面。镜头节拍本身是帧率驱动的，与音频无关
+   * —— 跟着 audio.currentTime 走会把媒体元素的台阶式播放位置变成画面抖动。
    */
-  narrationProgress?: () => number | null;
-  /** 解说时长估算（秒），仅在 narrationProgress 不可用时作兜底节拍 */
   estNarrationSec?: number;
   onPreparingRoute?: () => void;
   onRouteReady?: () => void;
   onComplete: () => void;
   onCancelled?: () => void;
 }
-
-/** 兜底：无法测量解说进度时的镜头飞行总时长（秒） */
-const ROUTE_FLIGHT_SEC = 150;
 
 export type TerrainMode = "world" | "ellipsoid";
 
@@ -442,10 +438,10 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
             return;
           }
 
-          // 飞行途中把地形细节稍微调粗 —— 减少切片加载，过洋 / 长途更顺、少抖。
-          // 结束后恢复（见下方 restoreDetail）。
+          // 飞行途中把地形细节略调粗。取景高度现在随地速提高（见 planRouteFlight），
+          // 长航线不再需要靠大幅降精度来换流畅，所以从 4 收回到 3。
           const prevSSE = viewer.scene.globe.maximumScreenSpaceError;
-          viewer.scene.globe.maximumScreenSpaceError = 4;
+          viewer.scene.globe.maximumScreenSpaceError = 3;
           const restoreDetail = () => {
             viewer.scene.globe.maximumScreenSpaceError = prevSSE;
             viewer.scene.requestRender();
@@ -453,12 +449,45 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
 
           const n = waypoints.length;
 
-          // 全程恒定的巡航取景高度（取沿途最高需求，避免忽上忽下的"俯冲"感）
-          let flyHeight = route.cruiseHeight ?? 11000;
-          for (const w of waypoints) {
-            flyHeight = Math.max(flyHeight, viewHeightForTerrain(w.terrain, route.cruiseHeight ?? 11000));
+          // 沿航线累计弧长（大圆距离）—— 先算距离，因为时长与取景高度都由它推出来
+          const cum = [0];
+          for (let i = 1; i < n; i++) {
+            cum.push(cum[i - 1]! + Math.max(1, haversineMeters(
+              waypoints[i - 1]!.lat, waypoints[i - 1]!.lon, waypoints[i]!.lat, waypoints[i]!.lon)));
           }
-          flyHeight = Math.min(Math.max(flyHeight, 42000), 130000);
+          const total = cum[n - 1]!;
+
+          // 沿途地貌要求的最低取景高度（山脉要低一点看出体量，沙漠要高一点看出辽阔）
+          let baseHeight = route.cruiseHeight ?? 11000;
+          for (const w of waypoints) {
+            baseHeight = Math.max(baseHeight, viewHeightForTerrain(w.terrain, route.cruiseHeight ?? 11000));
+          }
+
+          // 会触发「停一下看清楚」的航点（首尾机场各有自己的停顿，不计入）
+          const holdIndices: number[] = [];
+          for (let i = 1; i < n - 1; i++) {
+            const k = waypoints[i]!.kind;
+            if (k === "terrain" || k === "feature") holdIndices.push(i);
+          }
+
+          // 每个航点的朝向 = 前后航点连线的切向（端点用相邻段）
+          const headings = waypoints.map((_, i) => {
+            const a = waypoints[Math.max(0, i - 1)]!;
+            const b = waypoints[Math.min(n - 1, i + 1)]!;
+            return bearingRadians(a.lat, a.lon, b.lat, b.lon);
+          });
+
+          // 时长按距离定，取景高度跟着峰值地速涨 —— 见 lib/cesium/route-flight.ts 顶部说明
+          const plan = planRouteFlight({
+            cum,
+            total,
+            holdIndices,
+            narrationSec: callbacks.estNarrationSec ?? 0,
+            baseHeightM: baseHeight,
+            headings,
+            latLon: waypoints.map((w) => ({ lat: w.lat, lon: w.lon })),
+          });
+          const flyHeight = plan.cruiseHeightM;
 
           // 预取所有航点的镜头位置（含地表高程）—— 飞行过程中不再有异步停顿
           const camPts: import("cesium").Cartesian3[] = [];
@@ -471,28 +500,13 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           }
           if (flightCancelledRef.current) { restoreDetail(); setRoutePreparing(false); callbacks.onCancelled?.(); return; }
 
-          // 每个航点的朝向 = 前后航点连线的切向（端点用相邻段）
-          const headings = waypoints.map((_, i) => {
-            const a = waypoints[Math.max(0, i - 1)]!;
-            const b = waypoints[Math.min(n - 1, i + 1)]!;
-            return bearingRadians(a.lat, a.lon, b.lat, b.lon);
-          });
-
-          // 沿航线累计弧长（大圆距离）
-          const cum = [0];
-          for (let i = 1; i < n; i++) {
-            cum.push(cum[i - 1]! + Math.max(1, haversineMeters(
-              waypoints[i - 1]!.lat, waypoints[i - 1]!.lon, waypoints[i]!.lat, waypoints[i]!.lon)));
-          }
-          const total = cum[n - 1]!;
-
           const pitchRad = Cesium.Math.toRadians(WINDOW_PITCH_DEG);
           const rollRad = Cesium.Math.toRadians(CRUISE_ROLL_DEG);
 
           // 摆到起点位（用与飞行同一高度，衔接不跳）
           viewer.camera.setView({
             destination: camPts[0]!,
-            orientation: { heading: headings[0]!, pitch: pitchRad, roll: rollRad },
+            orientation: { heading: plan.headingAtDistance(0), pitch: pitchRad, roll: rollRad },
           });
           viewer.scene.requestRender();
 
@@ -503,11 +517,8 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           await sleep(2200);
           if (flightCancelledRef.current) { restoreDetail(); callbacks.onCancelled?.(); return; }
 
-          // 解说与镜头飞行并行
-          let narrationOver = false;
-          const narrationDone = Promise.resolve(callbacks.onNarrate())
-            .catch(() => {})
-            .finally(() => { narrationOver = true; });
+          // 解说与镜头飞行并行；镜头节拍不再依赖解说进度，只在收尾处等它播完
+          const narrationDone = Promise.resolve(callbacks.onNarrate()).catch(() => {});
 
           // 用户一旦自己滚轮/拖动地图 → 交还控制权（解说与地形名继续同步）
           let userTookOver = false;
@@ -516,81 +527,46 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           canvas.addEventListener("wheel", relinquish, { passive: true });
           canvas.addEventListener("pointerdown", relinquish, { passive: true });
 
-          const catmull = (
-            p0: import("cesium").Cartesian3, p1: import("cesium").Cartesian3,
-            p2: import("cesium").Cartesian3, p3: import("cesium").Cartesian3, t: number,
-          ) => {
-            const t2 = t * t, t3 = t2 * t;
-            const term = (a: number, b: number, c: number, d: number) =>
-              0.5 * ((2 * b) + (-a + c) * t + (2 * a - 5 * b + 4 * c - d) * t2 + (-a + 3 * b - 3 * c + d) * t3);
-            return new Cesium.Cartesian3(
-              term(p0.x, p1.x, p2.x, p3.x),
-              term(p0.y, p1.y, p2.y, p3.y),
-              term(p0.z, p1.z, p2.z, p3.z),
-            );
-          };
-          const lerpAngle = (a: number, b: number, t: number) => {
-            let d = b - a;
-            while (d > Math.PI) d -= 2 * Math.PI;
-            while (d < -Math.PI) d += 2 * Math.PI;
-            return a + d * t;
-          };
+          // 运动模型全部在 lib/cesium/route-flight.ts（纯函数，可离线对全部航线跑断言）
+          const curve: FlightCurve = { camPoints: camPts, cum, plan };
 
-          // 兜底节拍：无法测量解说进度时用估算时长
-          const estimatedTotalSec = Math.max(45, callbacks.estNarrationSec ?? ROUTE_FLIGHT_SEC);
-          const fallbackMs = estimatedTotalSec * 1000;
-          const startMs = performance.now();
+          const durationMs = plan.durationSec * 1000;
+          let elapsedMs = 0;
+          let lastFrameMs = performance.now();
           let firedUpTo = 0;
-          let smoothP = 0; // 平滑后的进度，防止解说进度回跳/抖动
-          // 进度→距离映射：在每个地形/地标航点插入停留平台，见函数注释
-          const progressToDistance = buildRouteProgressMap(
-            waypoints, cum, total, WAYPOINT_HOLD_SEC, estimatedTotalSec,
-          );
 
           await new Promise<void>((resolve) => {
             const tick = () => {
               if (flightCancelledRef.current) { resolve(); return; }
 
-              // 进度以解说为准（解说播完时航线也飞完）
-              const np = callbacks.narrationProgress?.();
-              const elapsed = performance.now() - startMs;
-              if (narrationOver) {
-                // 解说已结束：从当前位置指数平滑收到终点（~1.5s）
-                smoothP = Math.min(1, smoothP + (1 - smoothP) * 0.06 + 0.003);
-              } else if (np != null) {
-                // 跟随解说进度（currentTime/duration 本身平滑单调）——镜头与地形名不落后
-                smoothP = Math.max(smoothP, np);
-              } else {
-                // 解说还没出声 / 浏览器 TTS 不可测 → 按估算时长走
-                smoothP = Math.max(smoothP, Math.min(0.97, elapsed / fallbackMs));
-              }
-              const p = smoothP;
-              const targetDist = progressToDistance(p);
-
-              let j = 0;
-              while (j < n - 2 && cum[j + 1]! <= targetDist) j++;
-              const segLen = Math.max(1, cum[j + 1]! - cum[j]!);
-              const lt = Math.min(1, Math.max(0, (targetDist - cum[j]!) / segLen));
-
-              const pos = catmull(
-                camPts[Math.max(0, j - 1)]!, camPts[j]!,
-                camPts[Math.min(n - 1, j + 1)]!, camPts[Math.min(n - 1, j + 2)]!, lt,
-              );
-              const heading = lerpAngle(headings[j]!, headings[Math.min(n - 1, j + 1)]!, lt);
+              // 帧率驱动：进度只由时间推进。
+              // 原来是跟着 audio.currentTime/duration 走，媒体元素的播放位置是台阶式
+              // 更新的，没有帧间插值，高地速下每级台阶就是几公里的跳跃 —— 那是「抖」
+              // 的主要来源。时长已经在 planRouteFlight 里保证 ≥ 解说时长，解说不会被切。
+              //
+              // 单帧推进封顶 100ms：标签页被切走时浏览器会停发 requestAnimationFrame，
+              // 若直接用挂钟时间差，切回来的那一帧会把积攒的几十秒一次性走完，镜头瞬移。
+              const now = performance.now();
+              elapsedMs += Math.min(100, Math.max(0, now - lastFrameMs));
+              lastFrameMs = now;
+              const p = Math.min(1, elapsedMs / durationMs);
+              const { position, heading, segmentIndex } = sampleFlight(curve, p);
 
               if (!userTookOver) {
-                viewer.camera.setView({ destination: pos, orientation: { heading, pitch: pitchRad, roll: rollRad } });
+                viewer.camera.setView({
+                  destination: new Cesium.Cartesian3(position.x, position.y, position.z),
+                  orientation: { heading, pitch: pitchRad, roll: rollRad },
+                });
               }
               viewer.scene.requestRender();
 
-              while (firedUpTo < j) {
+              while (firedUpTo < segmentIndex) {
                 firedUpTo++;
                 const w = waypoints[firedUpTo]!;
                 if (w.kind === "terrain" || w.kind === "feature") callbacks.onFlyoverWaypoint?.(w, firedUpTo);
               }
 
-              // 收尾条件：解说结束且已到终点，或（无解说）估算时长到
-              if (p >= 0.999 && (narrationOver || np == null)) { resolve(); return; }
+              if (p >= 1) { resolve(); return; }
               requestAnimationFrame(tick);
             };
             requestAnimationFrame(tick);
