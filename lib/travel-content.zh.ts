@@ -9596,6 +9596,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sentosa: {
     identity:
       "圣淘沙是新加坡南部一座占地约500公顷的度假岛屿，原名“背后是死亡之岛”，1972年更名为“圣淘沙”（马来语意为“和平与宁静”），如今是新加坡最主要的海岛度假与主题乐园目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sentosa (Singapore; an island of about 4.71 km² off the southern coast across Keppel Harbour, the fourth-largest island apart from the main island; formerly Pulau Blakang Mati, a British military fortress and a Japanese prisoner-of-war camp in the Second World War, renamed Sentosa in 1972, the name from Sanskrit for peace and tranquillity; developed and managed by the Sentosa Development Corporation, a statutory board established in 1972, rather than as an ordinary planning area; about 25 million visitors a year; Resorts World Sentosa and Universal Studios Singapore; the artificial beaches Palawan, Siloso and Tanjong; the cable car, the Sentosa Express monorail and the boardwalk; Fort Siloso)
+    howItWorks:
+      "圣淘沙是新加坡南岸外的一座岛，面积约 4.71 平方公里，与本岛之间隔着吉宝海港。新加坡没有地方政府层级，全岛由中央政府直接治理，但这座岛更特别：它由 1972 年设立的法定机构“圣淘沙发展局”开发与管理，规划、经营与设施都归这一个机构，而不是像普通规划区那样由市区重建局与各部门分管。它原名“布拉干玛蒂岛”，长期是英军的海防要塞，二战期间曾用作战俘营，1972 年改名圣淘沙，名字取自梵语，意为“安宁”。此后它被整体改造成度假岛：圣淘沙名胜世界与新加坡环球影城在岛的中部，西罗索、巴拉湾与丹戎三片沙滩是人工填出来的，西罗索炮台保留着军事遗迹。上岛有三条路——缆车、圣淘沙捷运轻轨与一条步行栈道，每年约两千五百万人次到访。初来的人最容易犯的错，是以为这是一座天然的海岛，而它的沙滩与地形大半是造出来的。",
     layout:
       "岛屿近70%仍为天然雨林覆盖，南岸分布有多处沙滩与度假村，圣淘沙名胜世界（环球影城所在地）位于岛屿北部，与新加坡本岛之间有跨海缆车、单轨列车与堤道相连。",
     gettingAround:
@@ -9610,6 +9613,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "chinatown-singapore": {
     identity:
       "牛车水是新加坡历史最悠久的华人聚居区之一，中文旧称源于早年当地靠牛车运水供应居民用水；这里从19世纪的移民落脚点，逐渐发展为如今保留大量骑楼与庙宇的历史文化街区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chinatown, Singapore (a subzone and historic enclave within the Outram planning area of the Central Area, made up of five precincts developed between the 1820s and 1920s; under the Raffles Town Plan of 1822 areas were designated for different communities, the Chinese allotted land south-west of the Singapore River; the Chinese and Malay names, Kreta Ayer, come from the bullock water-carts that carried the district's water supply in the 19th century; the Buddha Tooth Relic Temple, Sri Mariamman Temple and Thian Hock Keng; the Chinatown Complex hawker centre; MRT connections; debate over conservation and commercialisation; spans the Tanjong Pagar and Jalan Besar constituencies)
+    howItWorks:
+      "牛车水是新加坡中区欧南规划区之下的一个分区，由 1820 至 1920 年代陆续成形的五个片区组成。新加坡没有地方政府层级，全岛由中央政府直接治理，市区重建局负责规划与保护，1989 年起把这一带的店屋整片列为保留区，因此外墙、门窗与屋顶的做法都受规定约束，改建只能在框架内进行。这片街区的由来是一次行政划分：1822 年的莱佛士市镇规划把新加坡河西南一带划给华人聚居，族群分区的格局由此定下。中文名“牛车水”与马来名 Kreta Ayer 同义，都指 19 世纪用牛车从别处运水到这一带的做法——这里当年没有自来水。今天它并不只有华人庙宇：佛牙寺、马里安曼兴都庙、天福宫与詹美回教堂在几条街之内并立，这种并置正是老城区的常态。牛车水熟食中心是本地最大的小贩中心之一。初来的人最容易犯的错，是把牛车水当作新加坡华人的聚居区，而全岛七成以上是华人，这里是历史街区而非族群飞地。",
     layout:
       "街区以史密斯街、宝塔街、丁加奴街等几条老街为核心，两三层高的南洋骑楼沿街密集排列，昔日按方言群聚居（福建、潮州、广东、海南、客家、兴化、福州人分区而居），如今仍能从街巷名称与庙宇分布看出这种早期分区的痕迹；佛牙寺与马里安曼兴都庙相距仅几百米，是华人与印度裔信仰在同一街区并存的直观例证。",
     gettingAround:
@@ -9624,6 +9630,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kampong-glam": {
     identity:
       "甘榜格南是新加坡的马来—穆斯林历史文化区，1822年莱佛士城市规划将这片区域划给马来人、武吉士人与阿拉伯人，1823年英属东印度公司正式把其中一块划给柔佛苏丹侯赛因沙阿作为王室驻地，是新加坡少数保留完整王室历史脉络的街区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kampong Glam (Singapore; a neighbourhood in the Rochor planning area known as the Muslim quarter; the name from the gelam tree, a Melaleuca species; home to Malay aristocracy before 1819, and under the Raffles Plan of 1822 designated for the Sultan and his household and for the Malay and Arab communities; the Sultan Mosque and Istana Kampong Glam, now the Malay Heritage Centre; restored shophouses along Arab Street, Haji Lane and Bussorah Street; traditional textile, blacksmith and religious-goods trades alongside galleries, cafes and design firms; the One Kampong Gelam association formed in 2014)
+    howItWorks:
+      "甘榜格南是新加坡梧槽规划区里的一片街区，常被称作“回教区”。新加坡没有地方政府层级，全岛由中央政府直接治理，市区重建局负责规划与保护，1989 年起这一带被划为保留区，店屋的立面与结构按规定修复，因此整片街区的外观是被制度固定下来的。地名来自本地的“格南树”，是一种白千层。1819 年之前这里是马来贵族的居住地；1822 年的莱佛士市镇规划把这一带划给苏丹及其家族，以及马来与阿拉伯社群——族群分区的安排在这里体现得最直接。苏丹回教堂的金顶是全区的地标，旁边的甘榜格南王宫现为马来文化馆。阿拉伯街与武吉士街一带原是布料、金饰、香料与朝觐用品的集散地，历史上前往麦加朝觐的行程多从这里安排；哈芝巷如今是小店与画廊。初来的人最容易犯的错，是以为这里只是餐饮与拍照的街区，而它至今仍是马来穆斯林社群的宗教与商业中心之一。",
     layout:
       "街区以苏丹回教堂为地理与视觉中心，哈芝巷与亚拉街一带的老店屋如今改造为咖啡馆、独立设计店与街头壁画聚集地，与庙宇周边保留的传统纺织品、香水与地毯商铺形成新旧混搭的街区肌理；旧王宫建筑群则是了解这段本土王室历史的核心场所。",
     gettingAround:
@@ -9638,6 +9647,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "little-india-singapore": {
     identity:
       "小印度是新加坡的印度裔历史文化区，19世纪因当地石灰窑与制砖业需要大量劳工而聚集印度移民，逐渐形成以实龙岗路为主轴的印度裔聚居与商贸区，1989年被列为保护区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Little India, Singapore (a district in the Rochor planning area east of the Singapore River, across from Chinatown and north of Kampong Glam, known within the Indian Singaporean community as Tekka; it grew from 19th-century cattle trading rather than from an allocation in the 1822 Raffles Town Plan, Indian migrant workers finding work in cattle rearing along the Serangoon River and settling permanently as Europeans left and the swamps were drained; gazetted as a conservation area on 7 July 1989; the Sri Veeramakaliamman Temple, the Tekka Centre market, Mustafa Centre and several mosques and temples; Deepavali and Thaipusam; served by the North East and Downtown MRT lines)
+    howItWorks:
+      "小印度是新加坡梧槽规划区里的一片街区，在新加坡河以东，与牛车水隔河相对，甘榜格南在其南面；本地印度裔社群多称它“竹脚”。新加坡没有地方政府层级，全岛由中央政府直接治理，市区重建局负责规划与保护，1989 年 7 月 7 日这一带被正式划为保留区。它的来历与牛车水、甘榜格南不同：1822 年的莱佛士市镇规划并没有把这里划给印度人，它是自己长出来的——19 世纪实龙岗河一带是牛只交易与砖窑集中的地方，需要大量劳力，印度移民因这份工作聚居于此，欧洲商人迁走、沼泽排干之后便定居下来。因此这片街区的中心是实龙岗路，沿街是维拉玛卡里雅曼兴都庙、清真寺与竹脚巴刹，慕斯达法中心几乎彻夜营业。屠妖节与大宝森节期间街道张灯，周日是外籍劳工聚会的日子。初来的人最容易犯的错，是把三个族群街区当作同一套安排的产物，而小印度不是规划出来的。",
     layout:
       "实龙岗路是街区主轴，沿线密集分布香料铺、金饰店、纱丽布庄与印度教庙宇；竹脚中心（前身竹脚巴刹1915年建成，现建筑1982年迁建落成）是新加坡最大的湿货市场之一，也是品尝印度裔美食的核心场所；街区建筑保留大量色彩鲜艳的南洋骑楼立面，与庙宇的多彩塔楼相互呼应。",
     gettingAround:
@@ -9786,6 +9798,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "labuan-bajo": {
     identity:
       "拉布安巴焦是弗洛雷斯岛西端的港口小镇，人口约3万，是探索科莫多国家公园与周边岛屿的核心门户，近年因潜水与快艇跳岛游迅速发展为国际旅游城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Labuan Bajo (Indonesia; a fishing town and the seat of West Manggarai Regency in East Nusa Tenggara, on the western tip of Flores, with a mid-2024 population of about 7,226; the main entry point to Komodo National Park, a UNESCO World Heritage Site of 128 islands, the largest being Komodo and Rinca, home to the Komodo dragon; designated in 2018 as one of five "super-priority" tourism destinations to spread visitors beyond Bali, with 13 five-star hotels, 68 other hotels, 4 villas and 26 dormitories by 2019; Komodo Airport 3 km from the centre; waste management a growing pressure, with the park and surrounding area producing an average of about 13 tonnes of rubbish a day)
+    howItWorks:
+      "拉布安巴焦是印度尼西亚东努沙登加拉省西曼加莱县的县城，在弗洛勒斯岛西端，2024 年中人口约 7,226；印尼实行地方自治，省与县（市）两级的行政首长均由直选产生，县政府管本地事务，国家公园则由中央的林业与环境部门管辖，两套系统并行。这座镇的角色是门户：科莫多国家公园由 128 座岛屿组成，其中科莫多岛与林卡岛最大，科莫多巨蜥只分布在这一带，1991 年列入世界遗产，而进园的船几乎都从这个港口出发。2018 年印尼把它列为五个“超级优先”旅游目的地之一，用意是把游客从巴厘岛分流出去，此后新建了大量住宿——到 2019 年已有 13 家五星级酒店与近百家其他住宿。快速增长也带来压力：公园与周边区域平均每天产生约 13 吨垃圾，其中不少是难以回收的塑料。科莫多机场在镇外 3 公里，巴厘岛有直飞。初来的人最容易犯的错，是以为在镇上就能看到巨蜥，而它们只在几座岛上，需坐船前往。",
     layout:
       "小镇沿港湾分布，主街集中了酒店、潜水店与餐厅；前往科莫多国家公园需从港口乘船，单日往返或多日跳岛游是常见的游览方式。",
     gettingAround:
@@ -9800,6 +9815,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   balikpapan: {
     identity:
       "巴厘巴板是东加里曼丹省的石油工业城市，人口约70万，是印尼在婆罗洲最重要的经济中心之一，也是通往正在建设中的新首都努桑塔拉的主要空中门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Balikpapan (Indonesia; a seaport city on the east coast of Borneo in East Kalimantan, 757,418 residents in mid-2024, the second-largest city in the province after Samarinda, which is the provincial capital; the financial centre of Kalimantan; the first oil drilling began here on 10 February 1897, making it the birthplace of the Indonesian oil industry, with the Pertamina refinery still central and international energy companies keeping regional offices; originally a Buginese fishing settlement, developed by the Dutch Bataafsche Petroleum Maatschappij from 1907, devastated in the Second World War and the refinery rebuilt by 1950; the Sungai Wain protected forest and its sun bears, orangutans and proboscis monkeys under pressure; Sultan Aji Muhammad Sulaiman Sepinggan International Airport; a toll road to Samarinda completed in 2021)
+    howItWorks:
+      "巴厘巴板是印尼东加里曼丹省的港口城市，2024 年中人口 757,418；印尼实行地方自治，省与市（县）两级首长均由直选产生。这里有一处常被弄错的关系：巴厘巴板是全省最大的经济中心，却不是省会——省会在东北的三马林达，两地之间 2021 年通了收费高速。它的存在源于石油：1897 年 2 月 10 日这里打出第一口油井，是印尼石油工业的起点，1907 年起荷兰的石油公司在此建厂，二战中城市与炼油厂被摧毁，1950 年重建，如今国营的佩尔塔米纳炼油厂仍是全城的核心，国际能源公司在此设区域办公室，加里曼丹的金融业务也集中于此。因为围绕工业统一规划，这座城市的街道与市容比同规模的印尼城市整齐。近年它又多了一重身份：印尼正在建设的新首都努山塔拉就在西北邻近的两个县内，进出工地多经此城。宋盖韦恩保护林在市郊，是马来熊与长鼻猴的栖息地。初来的人最容易犯的错，是以为它是省会，而省会在三马林达。",
     layout:
       "城市沿望加锡海峡分布，市区以现代化商业区与石油产业设施为主；努桑塔拉新首都建设工地位于巴厘巴板以北约60至70公里处，是印尼正在推进的国家级迁都项目所在地。",
     gettingAround:
@@ -9814,6 +9832,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   manado: {
     identity:
       "万鸦老是北苏拉威西省首府，人口约45万，是印尼东部重要港口城市，也是布纳肯国家公园潜水胜地的门户，与全国以穆斯林为主体的宗教构成不同，本地以基督教徒为多数。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Manado (Indonesia; capital of North Sulawesi Province with about 462,658 residents in mid-2025 over 162.35 km²; the indigenous Minahasa people form the majority; Protestant Christianity is the major religion at about 62.89 per cent of residents in 2023, and the city is nicknamed the city of a thousand churches, hosting Indonesia's largest annual Christmas celebration; Bunaken National Marine Park offshore is the principal attraction; Mount Lokon, Mount Mahawu and Lake Linow nearby; Sam Ratulangi International Airport connects to major Asian cities; the local motto that all are family)
+    howItWorks:
+      "万鸦老是印尼北苏拉威西省的省会，2025 年中人口约 46.3 万，市域约 162 平方公里；印尼实行地方自治，省与市（县）两级首长均由直选产生，省会集中全省的行政、医疗与高等教育。这座城最鲜明的特征是它的构成：本地米纳哈萨人是主体族群，2023 年约 62.89% 的居民信奉基督新教，是印尼基督徒比例最高的大城市之一，市内教堂密集，本地因此自称“千教堂之城”，每年的圣诞庆典是全国规模最大的。它的地理同样特别：城市在苏拉威西岛北端的火山带上，洛孔火山与马哈武火山就在南面的托莫洪一带，利瑙湖是火山口湖；外海的布纳肯国家海洋公园以陡直的珊瑚墙闻名，是印尼最早设立的海洋公园之一，潜水者多为此而来。萨姆拉图兰吉国际机场有通往东亚多座城市的航班。本地菜以辛辣著称。初来的人最容易犯的错，是按印尼其他地区的习惯预期这里的饮食与节庆，而万鸦老在这两件事上都自成一格。",
     layout:
       "城市沿海湾分布，博尔瓦海滨大道是观赏日落与用餐的热门去处；万鸦老以北海域是布纳肯国家公园，是本地最主要的潜水与浮潜目的地。",
     gettingAround:
@@ -9828,6 +9849,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "pangkalan-bun": {
     identity:
       "邦卡兰文是中加里曼丹省一座沿河小城，人口约7万，是前往丹绒普丁国家公园观察野生红毛猩猩的主要门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pangkalan Bun (Indonesia; the seat of West Kotawaringin Regency in Central Kalimantan on Borneo, mostly on the eastern bank of the Arut river, with about 108,814 residents in mid-2024; Iskandar Airport connects to Jakarta, Surabaya and Semarang; Birutė Galdikas established Camp Leakey about 30 miles upriver for orangutan study and conservation, now part of Tanjung Puting National Park, reached by klotok riverboat from Kumai; a tropical rainforest climate with more than 2,600 mm of rain a year, at 24 m above sea level; the operational centre for the search after the 2014 AirAsia Flight 8501 crash in the nearby Karimata Strait)
+    howItWorks:
+      "邦卡兰文是印尼中加里曼丹省西哥打瓦林金县的县城，大部分市区在阿鲁特河东岸，2024 年中人口约 10.9 万；印尼实行地方自治，省与县（市）两级首长均由直选产生，县政府管本地事务，国家公园由中央的林业与环境部门管辖。这座镇的意义在于它是丹戎普丁国家公园的入口：公园在南面的半岛上，没有公路直达，游客要先到邻近的库迈港，换乘当地称作“克洛托克”的木船，沿塞科涅尔河逆流而上，通常在船上过夜——这套走法本身就是行程的一部分。1971 年比鲁特·加尔迪卡斯在河上游约五十公里处建立利基营地，研究并放归红毛猩猩，如今营地是公园的核心区之一。伊斯坎达尔机场在镇边，有飞雅加达、泗水与三宝垄的航班。这里属热带雨林气候，年降水超过 2,600 毫米，海拔仅 24 米，棕榈油种植是本地的大产业。初来的人最容易犯的错，是打算当天往返看猩猩，而进园至少要在船上住一晚。",
     layout:
       "城镇沿阿鲁河支流分布，前往丹绒普丁国家公园需从当地码头乘坐传统客船（克罗托克船）沿塞孔耶尔河深入园区，是当地最具特色的游览方式。",
     gettingAround:
@@ -10278,6 +10302,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zadar: {
     identity:
       "扎达尔是北达尔马提亚古城，人口约7万，城市历史可追溯至古罗马时期，是克罗地亚保留罗马遗迹最丰富的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zadar (Croatia; the seat of Zadar County and the fifth-largest city in the country, with 70,779 residents in the 2021 census; the oldest continuously inhabited city in Croatia, beginning as the Liburnian settlement Iader in the 9th century BC, a Roman municipality in 59 BC and a Roman colony in 48 BC, held in turn by Byzantine, Venetian, Hungarian and Austrian rule; the 9th-century Church of St Donatus, the cathedral and the Roman forum; the Sea Organ and the Monument to the Sun installed in the 2000s; the fortified city inscribed by UNESCO in 2017 as part of the Venetian defensive works; a ferry port for the Zadar archipelago; Zadar Airport)
+    howItWorks:
+      "扎达尔是克罗地亚扎达尔县的首府，2021 年普查人口 70,779，是全国第五大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理，县管区域事务。它是克罗地亚有人连续居住时间最长的城市：公元前 9 世纪利布尔尼亚人在此建聚落，称“亚德尔”，公元前 59 年成为罗马自治市、前 48 年升为殖民城，此后历经拜占庭、威尼斯共和国、匈牙利与哈布斯堡的治理。老城建在一条伸入海中的半岛上，街道至今沿用罗马时期的方格布局，广场上留着罗马集市的遗址；9 世纪的圣多纳特教堂是达尔马提亚早期教堂建筑的代表，主教座堂在旁。2017 年这座城的防御工事随“威尼斯共和国防御体系”列入世界遗产。海边的“海风琴”与“向太阳致敬”是 2000 年代加建的两件装置，前者用海浪推动管风琴发声。渡轮从这里通往扎达尔群岛，1396 年创办的大学是克罗地亚最早的一所。初来的人最容易犯的错，是把老城当作步行几分钟的小片，而半岛上层层叠着从罗马到威尼斯的两千年。",
     layout:
       "老城建于一处狭长半岛之上，罗马广场遗址与圣多纳特教堂位于半岛核心；海滨步道尽头设有海之风琴与向太阳致敬装置，是当代地标。",
     gettingAround:
@@ -10292,6 +10319,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pula: {
     identity:
       "普拉是伊斯特拉半岛最大城市，人口约5万，因保存完好的古罗马竞技场闻名，历史上先后受古罗马、威尼斯共和国、奥匈帝国治理。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pula (Croatia; the largest city in Istria County and the seventh-largest in the country with 52,220 residents in 2021, though it was the administrative centre of Istria from Roman times until superseded by Pazin in 1991; the Pula Arena, one of the best preserved Roman amphitheatres and among the six largest surviving, still used for concerts and a film festival; the Temple of Augustus and the 1st-century Arch of the Sergii; under Austro-Hungarian rule the natural harbour became Austria's main naval base and a major shipbuilding centre from 1856; James Joyce taught English here from 30 October 1904 to March 1905; Brijuni National Park nearby; Pula Airport)
+    howItWorks:
+      "普拉是克罗地亚伊斯特拉县最大的城市，2021 年人口 52,220，是全国第七大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。这里有一处容易弄错的关系：从罗马时代起普拉一直是伊斯特拉半岛的行政中心，但 1991 年之后县治迁到了内陆的帕津，如今它是最大的城市而非首府。城中的圆形竞技场是保存最完好的罗马竞技场之一，也是现存规模最大的六座之一，四座边塔完整保留，至今用于演出与电影节；奥古斯都神庙与公元 1 世纪的塞尔吉凯旋门也在老城。它的近代面貌来自军港：1856 年起奥匈帝国把这处天然良港建成海军主基地与造船中心，城市因此扩张，乌利亚尼克船厂沿用至今。1904 年 10 月至次年 3 月，乔伊斯曾在此教英语。布里俄尼国家公园在西北的海上，普拉机场在城东。初来的人最容易犯的错，是以为普拉是伊斯特拉的首府，而县政府在帕津。",
     layout:
       "老城以古罗马竞技场为核心地标，罗马广场、凯旋门等古迹散布于紧凑的老城街巷之间；港区位于老城东南侧，是伊斯特拉半岛的传统海军与造船中心。",
     gettingAround:
@@ -10306,6 +10336,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   osijek: {
     identity:
       "奥西耶克是斯拉沃尼亚地区最大城市，人口约9.6万，克罗地亚第四大城市，德拉瓦河穿城而过，历史上曾先后受奥斯曼帝国、哈布斯堡王朝治理。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Osijek (Croatia; the fourth-largest city in the country and the seat of Osijek-Baranja County, the largest city in Slavonia, with 96,313 residents in 2021; on the Drava about 25 km upstream from its confluence with the Danube; the Roman settlement of Mursa, an important military colony, later under Ottoman control for over 150 years until Habsburg forces took it in 1687; the Tvrđa, an 18th-century Baroque fortress quarter; the neo-Gothic co-cathedral whose 90 m tower is the second-highest church tower in Croatia; agriculture and food industry, with Saponia, the Osječko brewery and Kandit; Kopački rit nature park; a tram system running since 1884, the only one in Croatia outside Zagreb; Osijek Airport and the university)
+    howItWorks:
+      "奥西耶克是克罗地亚第四大城市，也是奥西耶克-巴拉尼亚县的首府与斯拉沃尼亚地区最大的城市，2021 年人口 96,313；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。城市在德拉瓦河边，往下游约 25 公里就是德拉瓦河汇入多瑙河之处，四周是潘诺尼亚平原——这片平原是克罗地亚的粮仓，因此本地的产业以农业与食品加工为主，肥皂与洗涤剂厂萨波尼亚、奥西耶克啤酒厂与糖果厂坎迪特都是老企业。罗马时期这里是名为“穆尔萨”的军事殖民城；此后奥斯曼治理了一个半世纪以上，1687 年哈布斯堡军队取得此城，并在 18 世纪沿河建起“特弗尔贾”棱堡城区，那一整片巴洛克营房与广场至今完整保留，是全城最有辨识度的地方。新哥特式共同主教座堂的塔高 90 米，在克罗地亚居第二。1884 年通车的有轨电车是萨格勒布之外克罗地亚唯一仍在运营的一套。科帕奇基里特自然公园在东北的河汊湿地上。初来的人最容易犯的错，是以为克罗地亚都是海岸，而这里离海很远。",
     layout:
       "老城特维尔扎堡垒区保留18世纪哈布斯堡时期巴洛克风格街区与星形要塞轮廓；市中心沿德拉瓦河北岸展开，河滨步道是市民日常休闲场所。",
     gettingAround:
@@ -10320,6 +10353,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hvar-town": {
     identity:
       "赫瓦尔镇是赫瓦尔岛的主要城镇，是克罗地亚著名的度假岛屿门户，历史上曾是威尼斯共和国在亚得里亚海的重要据点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hvar Town (Croatia; the town on the island of Hvar in Split-Dalmatia County; the island is about 68 km long with 10,678 residents in 2021; the island markets itself as the sunniest spot in Europe with over 2,715 hours of sunshine in an average year; a fertile coastal plain, fresh water springs, pine-covered hillsides, vineyards, olive groves, orchards and lavender fields; the Greeks founded the colony of Pharos in 384 BC, and in medieval times the town of Hvar became a major naval base within the Venetian empire; churches on the island hold paintings by Venetian artists including Tintoretto, Veronese and Bellini; lavender oil and Plavac Mali wine; the Stari Grad Plain on the same island inscribed by UNESCO in 2008; ferries and catamarans from Split)
+    howItWorks:
+      "赫瓦尔镇是克罗地亚斯普利特-达尔马提亚县赫瓦尔岛上的城镇；全岛长约 68 公里，2021 年人口 10,678，由几个市镇分治，本镇由民选的市长与市议会治理，县管区域事务。它当年的地位来自海：中世纪它是威尼斯共和国在亚得里亚海东岸的重要海军基地，船队在此过冬补给，因此这座小镇有与规模不相称的建筑——广场是达尔马提亚最大的城市广场之一，1612 年落成的市立剧院是欧洲最早的公共剧院之一，岛上教堂里存有丁托列托、委罗内塞与贝利尼等威尼斯画派的作品。公元前 384 年希腊人在岛上建立法罗斯殖民地，其耕地划分至今可辨，斯塔里格拉德平原 2008 年以此列入世界遗产。岛上另一半生计来自阳光：年日照超过 2,715 小时，薰衣草与葡萄种在山坡上，普拉瓦茨马利是本地的红葡萄品种。斯普利特有渡轮与快艇通航。初来的人最容易犯的错，是以为赫瓦尔镇就是赫瓦尔岛，而岛长近七十公里，古城斯塔里格拉德与农地在另一头。",
     layout:
       "老城环绕圣斯特凡广场展开——达尔马提亚地区最大的广场之一，广场一端是圣斯特凡主教座堂，另一端连接港口；城镇后方山丘上的福尔蒂察堡垒可俯瞰全镇与外海帕克莱尼岛群。",
     gettingAround:
@@ -10416,6 +10452,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "cesky-krumlov": {
     identity:
       "切斯基克鲁姆洛夫是南波希米亚一座中世纪小城，人口约1.3万，因伏尔塔瓦河深切曲流几乎环绕古城核心而得名（“克鲁姆洛夫”源自德语“弯曲的草甸”），1992年历史城区列入世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Český Krumlov (Czechia; town in the South Bohemian Region about 20 km south-west of České Budějovice, about 13,000 inhabitants over 22.16 km²; the historic centre inscribed by UNESCO in 1992 for well-preserved Gothic, Renaissance and Baroque architecture within its medieval street layout; Český Krumlov Castle, one of the largest castle complexes in Central Europe at 7 hectares, its moat filled not with water but with bears, referring to the Orsini family; the castle Baroque theatre built in 1680–1682 and renovated in 1765–1766, among the oldest surviving 18th-century theatres in the world with its original stage machinery; the Five-Petalled Rose Festival at the summer solstice and an international music festival in July and August; among the most visited places in the country)
+    howItWorks:
+      "切斯基克鲁姆洛夫是捷克南波希米亚州的城镇，人口约 1.3 万，市域约 22 平方公里，在捷克布杰约维采西南约 20 公里；捷克的地方行政分州与市镇两级，市镇由民选的市长与市议会治理，州管区域事务。它的形状是伏尔塔瓦河给的：河在这里绕了一个近乎闭合的 S 形弯，老城被圈在弯内，城堡建在弯外的岩脊上，两者隔水相望，因此这座镇几百年来无法向外扩张，中世纪的街道格局与哥特、文艺复兴、巴洛克三个时期的房子就此保留下来，1992 年老城区列入世界遗产。城堡占地约 7 公顷，是中欧最大的城堡建筑群之一；护城壕里养的不是水而是熊，源自领主与意大利奥尔西尼家族攀附的传说。城堡里 1680 年代建、1765 至 1766 年改建的巴洛克剧院至今保有原装的舞台机械，是世界上仅存的几座之一。夏至前后的五瓣玫瑰节与七八月的音乐节是全年最忙的时候。初来的人最容易犯的错，是按常住人口预期这里的人流，而它是捷克参观人数最多的地方之一。",
     layout:
       "古城建于伏尔塔瓦河双重马蹄形曲流之上，克鲁姆洛夫城堡矗立于曲流内侧崖丘，是捷克境内规模第二大的城堡建筑群（仅次于布拉格城堡）；老城核心步行即可游览。",
     gettingAround:
@@ -10430,6 +10469,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kutna-hora": {
     identity:
       "库特纳霍拉是中波希米亚一座历史银矿小城，人口约2万，14至15世纪因银矿开采一度成为波希米亚王国仅次于布拉格的第二富庶城市，1995年历史城区列入世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kutná Hora (Czechia; town in the Central Bohemian Region about 50 km east of Prague with about 22,000 inhabitants; silver mining from the 13th century after ore was found near Sedlec made it wealthy, and by 1300 it was the seat of the central mint of the Czech lands where the Prague groschen were struck, making it the second most important town of the Kingdom of Bohemia after Prague; the mint closed in 1727 and the town ceased to be a mining town; the historic centre with the Church of St Barbara and the Cathedral of Our Lady at Sedlec inscribed by UNESCO in 1995, both outstanding Gothic work; the Sedlec Ossuary decorated with the bones of more than 40,000 skeletons; manufacturing today including tobacco and electronics)
+    howItWorks:
+      "库特纳霍拉是捷克中波希米亚州的城镇，人口约 2.2 万，在布拉格以东约 50 公里；捷克的地方行政分州与市镇两级，市镇由民选的市长与市议会治理，州管区域事务。这座镇的一切都建在白银之上：13 世纪塞德莱茨附近发现银矿后，采矿与冶炼把这里迅速推上去，1300 年前后波希米亚王国的中央铸币厂设在此地，著名的“布拉格格罗申”银币就在这座城铸造，它因此成为王国仅次于布拉格的第二重镇，圣芭芭拉教堂——献给矿工的主保圣人——正是矿主与市民出资建起的，规模与工艺远超一座小城应有的水平。银脉枯竭之后城市随之衰落，1727 年铸币厂关闭，采矿城的身份就此结束，反而使中世纪的城区留了下来，1995 年历史城区与塞德莱茨的圣母主教座堂一并列入世界遗产。塞德莱茨的人骨教堂用四万多具遗骨装饰内部，是本地最常被提到的地方。今天烟草与电子制造是主要产业。初来的人最容易犯的错，是以为看点都在老城，而人骨教堂在塞德莱茨，离老城还有两公里多。",
     layout:
       "老城以圣芭芭拉教堂为核心地标，教堂矗立于城市边缘的山丘之上，可俯瞰河谷与周边景观；城郊塞德莱茨区的万圣教堂地下即著名的“白骨教堂”。",
     gettingAround:
@@ -12432,6 +12474,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   calama: {
     identity:
       "卡拉马是智利北部一座矿业城市，坐落在阿塔卡马沙漠腹地、洛阿河畔，因毗邻丘基卡马塔铜矿（世界最大的露天铜矿之一）而发展起来，也是通往圣佩德罗德阿塔卡马旅游区的主要空中门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Calama (Chile; capital of El Loa Province in the Antofagasta Region, governed as a commune under an elected mayor; 166,334 residents in 2024, the second-largest city in the region, up from about 9,525 in the early 1900s; in the Atacama Desert at about 2,260 m on the Río Loa, Chile's longest river, forming an oasis; one of the driest cities in the world with average annual precipitation of just 5 mm; the Chuquicamata copper mine nearby, once the largest open-pit copper mine in the world, its company town dismantled in 2003 for environmental reasons, bringing residents and workers to Calama; El Loa Airport)
+    howItWorks:
+      "卡拉马是智利安托法加斯塔大区埃尔洛阿省的省会，2024 年人口 166,334，是该大区第二大城市；智利的地方行政以“市镇”为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选，中央另派代表负责国家事务。城市在阿塔卡马沙漠里、海拔约 2,260 米的洛阿河边——这条河是智利最长的河，正是它让这里成为一片绿洲，否则寸草不生：年均降水只有约 5 毫米，是世界上最干燥的城市之一。它的规模来自铜：附近的丘基卡马塔曾是世界上最大的露天铜矿，20 世纪初这里还只有约九千五百人。2003 年因粉尘与环境问题，矿区的公司城镇被整体拆除，居民与工人迁到卡拉马，此后矿工多以班次通勤的方式在矿与城之间往返，城市因此带着明显的工班节奏。埃尔洛阿机场是本地与圣佩德罗一带的空中门户。初来的人最容易犯的错，是把卡拉马当作旅游基地，而它是一座矿业城，游客通常只在此转车。",
     layout:
       "城市规模不大，围绕洛阿河形成的绿洲地带布局，市中心是主要的商业与生活区，周边被开阔的沙漠戈壁包围；机场位于城市东侧，是前往阿塔卡马内陆景区的中转枢纽。",
     gettingAround:
@@ -12446,6 +12491,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "san-pedro-de-atacama": {
     identity:
       "圣佩德罗德阿塔卡马是阿塔卡马沙漠腹地一座历史悠久的绿洲小镇，海拔约2400米，是探访月亮谷、塔蒂奥间歇泉、阿塔卡马盐沼等周边地貌的核心基地，也是智利北部最重要的旅游中心之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): San Pedro de Atacama (Chile; town and commune in El Loa Province, Antofagasta Region, governed as a commune under an elected mayor; 10,960 residents in the 2012 census, most of them rural rather than in the town; at about 2,400 m overlooking the Salar de Atacama below the Licancabur volcano; extreme aridity, summer highs of 25–30 °C and winter nights routinely below 0 °C; the oasis originally inhabited by the Atacameño people, passing from Bolivian to Chilean control after the War of the Pacific; the adobe church of San Pedro and the R. P. Gustavo Le Paige archaeological museum; El Tatio with over 80 active geysers, and Valle de la Luna; the ALMA radio-telescope array)
+    howItWorks:
+      "圣佩德罗德阿塔卡马是智利安托法加斯塔大区埃尔洛阿省的一个市镇，2012 年普查人口 10,960，其中多数住在镇外的乡村；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。镇子在海拔约 2,400 米的一处绿洲上，俯瞰阿塔卡马盐沼，利坎卡武尔火山在东面的边界一带。它的一切都由干燥决定：夏季白天 25 至 30 度，冬夜常在零度以下，房屋用土坯砌成以对付昼夜温差，17 世纪的圣佩德罗教堂也是土坯的。这片绿洲原是阿塔卡梅诺人的居住地，太平洋战争后由玻利维亚划归智利，勒帕日考古博物馆藏有本地出土的文物，周边一些景点由原住民社区自行管理并收费。埃尔塔蒂奥有八十多处活跃的间歇泉，月亮谷在镇西。同样因为干燥与高海拔，阿塔卡马大型毫米波阵列等天文台建在这一带。初来的人最容易犯的错，是当天从海边直接上来，而这里的海拔需要适应。",
     layout:
       "小镇规模不大，以土坯建筑风格的中心广场与圣佩德罗教堂为核心，街道两旁分布着旅行社、餐厅与手工艺品店；镇子四周被开阔的沙漠与远处的安第斯火山群环绕，是典型的绿洲聚落格局。",
     gettingAround:
@@ -12511,6 +12559,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pucon: {
     identity:
       "普孔是智利南部湖区最热门的户外旅游小镇，坐落在维亚里卡湖畔、正对着终年冒着蒸汽的维亚里卡火山，是攀登火山口、泡温泉与水上运动的中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pucón (Chile; city and commune in Cautín Province, Araucanía Region, governed as a commune under an elected mayor; about 32,321 residents in 2024, having grown 47 per cent between 1992 and 2002; on the eastern shore of Lake Villarrica about 100 km south-east of Temuco, with the Villarrica volcano about 17 km south; the Spanish founded Villarrica in this district in 1552 and took gold from placer deposits, presumed buried by lahars in the 16th century, the modern settlement dating from 1883; lahars destroyed nearby Coñaripe in 1964; adventure tourism with hiking, rafting, skiing, riding, hot springs and volcano ascents; national parks nearby)
+    howItWorks:
+      "普孔是智利阿劳卡尼亚大区考廷省的一个市镇，2024 年人口约 3.2 万，1992 至 2002 年间增长了 47%；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。镇子在维亚里卡湖东岸，特木科在西北约 100 公里，南面约 17 公里就是维亚里卡火山——这是南美最活跃的火山之一，山顶常年冒着蒸汽，晴夜能看见火口的红光。火山不是背景而是制度的一部分：镇上有分区的疏散路线与警报等级，火山泥流的路径被划出来限制建设，1964 年附近的科尼亚里佩就曾被泥流摧毁。西班牙人 1552 年在这一带建维亚里卡城并淘取砂金，据推测 16 世纪的火山泥流把金矿掩埋，今天的镇子建于 1883 年。它现在是智利南部的户外运动中心：登火山、漂流、滑雪、骑马与温泉都在周边，一二月的旺季人流集中。初来的人最容易犯的错，是把登火山当作随时可去的项目，而是否开放要看当日的火山与天气状况。",
     layout:
       "小镇规模不大，沿维亚里卡湖岸展开，主街奥希金斯大道两侧集中了大量旅行社、餐厅与户外装备店；黑沙滩紧邻小镇中心，是当地人夏季戏水的主要去处。",
     gettingAround:
@@ -12525,6 +12576,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "puerto-varas": {
     identity:
       "普埃托瓦拉斯是智利南部湖区一座以德国移民建筑风格著称的小城，坐落在亚科多湖畔，正对奥索尔诺火山，是探访湖区南段与奇洛埃群岛的重要基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Puerto Varas (Chile; city and commune in Llanquihue Province, Los Lagos Region, governed as a commune under an elected mayor; about 52,942 residents in 2024, about 20 km from Puerto Montt; on the shore of Lake Llanquihue with views of the Osorno and Calbuco volcanoes; the Llanquihue Lake Colonization Territory created on 27 June 1853, drawing about 212 German families by the end of that year, with Sudeten German settlers from Bohemia arriving in 1875 to found Nueva Braunau; the wooden Sacred Heart church of 1918; called the City of Roses after Mayor Teobaldo Kuschel planted roses in public spaces in the 1950s; Vicente Pérez Rosales National Park and the Petrohué falls; the Andes crossing to Bariloche)
+    howItWorks:
+      "普埃托瓦拉斯是智利湖大区兰基韦省的一个市镇，2024 年人口约 5.3 万，在蒙特港西北约 20 公里；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。城市在兰基韦湖南岸，晴天可以同时看见奥索尔诺与卡尔布科两座火山。它的形成来自一次有组织的移民：1853 年 6 月 27 日智利政府划出“兰基韦湖殖民地区”招募欧洲移民，当年年底已有约 212 户德意志家庭落户，1875 年又有来自波希米亚的苏台德德意志人建起新布劳瑙。因此这一带的木构房屋、教堂样式、姓氏与食物都带着德语区的痕迹，1918 年落成的耶稣圣心堂是木造教堂的代表。1950 年代市长在公共空间大量种植玫瑰，本地由此得名“玫瑰之城”。比森特·佩雷斯·罗萨莱斯国家公园与佩特罗韦瀑布在东面，翻越安第斯山经湖区到阿根廷巴里洛切的水陆联运也从这里出发。初来的人最容易犯的错，是把德式外观当作主题装饰，而它来自一段真实的移民史。",
     layout:
       "城市沿亚科多湖岸展开，湖滨大道两侧保留着大量19世纪德国移民建造的木构别墅；圣弗朗西斯科哈维尔教堂是城市地标之一，仿照德国黑森林地区教堂样式建造。",
     gettingAround:
@@ -12556,6 +12610,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   coyhaique: {
     identity:
       "科伊艾克是智利艾森大区首府，坐落在巴塔哥尼亚北部内陆，是这一片人烟稀少的荒野地带中最大的城镇，也是探访卡雷特拉奥斯特拉尔公路（南部公路）沿线景观的重要补给站。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Coyhaique (Chile; capital of the Aysén Region and of Coyhaique Province, governed as a commune under an elected mayor; 57,823 residents in the 2024 census; east of the Andes at about 310 m; founded on 12 October 1929 as Baquedano and renamed in 1934, a municipality in 1948 and regional capital from 1974, one of the youngest regional capitals in Chile; the main square laid out as a pentagon in honour of the Carabineros; mountains that may stay snow-covered all year, hence the city of eternal snow; the Carretera Austral; a 2018 World Health Organization study showed the worst air quality in the Americas, from winter wood smoke trapped by the valley; Balmaceda Airport about 40 km away)
+    howItWorks:
+      "科伊艾克是智利艾森大区与科伊艾克省的首府，2024 年普查人口 57,823，占了整个大区人口的一大半；智利的地方行政以市镇为基本单位，由民选的市长与市议会治理，2021 年起大区首长也改为直选。这是智利最年轻的大区首府之一：1929 年 10 月 12 日建镇，原名巴克达诺，1934 年改今名，1948 年设市，1974 年成为大区首府。城市在安第斯山以东、海拔约 310 米的谷地里，中心广场做成五边形，是为纪念国家警察而设计的，全城的街道由此放射出去。地理上它长期是孤立的：与智利其他地方之间没有连续的陆路，往来靠经阿根廷绕行、坐船，或走后来修通的南部公路，这条公路至今仍是本地的主干。谷地地形也带来一个具体的问题——冬天家家烧柴取暖，烟被逆温层压在谷底，2018 年世界卫生组织的一项研究显示这里的空气质量在美洲最差。巴尔马塞达机场在东南约 40 公里。初来的人最容易犯的错，是以为沿智利南下就能开到这里，而路要绕。",
     layout:
       "城市中心广场呈五边形，是智利少见的非方形城市布局；西门斯基山公园紧邻市区，是俯瞰城镇与周边巴塔哥尼亚山地的观景点；城镇规模不大，是方圆数百公里内唯一有较完整基础设施的定居点。",
     gettingAround:
@@ -12587,6 +12644,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hanga-roa": {
     identity:
       "汉加罗阿是复活节岛唯一的城镇与聚落，也是全岛人口的聚居地，坐落在岛屿西南岸，是探访摩艾石像与拉帕努伊文化遗址的唯一基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hanga Roa (Chile; the main town, harbour and seat of Easter Island, a municipality of Chile in the Valparaíso Region; about 7,322 residents of the island's roughly 7,750, close to 95 per cent of the population; the town established after Chile annexed the island in 1888; the Chilean Navy administered the territory from 1953 to 1966; Mataveri International Airport with direct flights to Santiago, one of the most remote airports in the world; a hospital of 16 beds opened in 2013; Rapa Nui National Park with the moai covers much of the island; tourism the mainstay of the economy)
+    howItWorks:
+      "汉加罗阿是复活节岛上唯一的城镇，也是港口与行政中心；这座岛在行政上是智利瓦尔帕莱索大区下的一个市镇，由民选的市长与市议会治理，同时具有“特别领地”的地位。岛上约 7,750 人中约 7,322 人住在这个镇里，接近九成五——原因很直接：岛的大部分面积属于拉帕努伊国家公园，摩艾石像与考古遗址都在园内，公园自 2017 年起由拉帕努伊社区的组织与国家共同管理，居住与建设集中在这一小块。1888 年智利将该岛并入版图后镇子成形，1953 至 1966 年间由智利海军管理。马塔维里国际机场就在镇南，跑道横在岛上，飞圣地亚哥约五小时，是世界上最偏远的机场之一；岛上的医院 2013 年启用，只有 16 张床位，重病需转运。淡水、垃圾与运输都受岛屿条件限制，旅游是主要收入。初来的人最容易犯的错，是把这里当作普通海岛度假地，而岛上的多数土地是受保护的遗址。",
     layout:
       "小镇规模不大，沿海岸线呈带状展开，主要街道集中了旅行社、餐厅与手工艺品店；塔哈伊仪式中心紧邻小镇，是岛上距市区最近的一处摩艾遗址群，日落时分是当地人与游客聚集的经典观景点。",
     gettingAround:
