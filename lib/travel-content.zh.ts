@@ -2386,6 +2386,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "new-orleans": {
     identity:
       "新奥尔良在密西西比河下游、墨西哥湾附近，市区人口约 37 万。它由法国人在 18 世纪初建立，后来经西班牙统治、再回到法国、1803 年随“路易斯安那购地”并入美国，因此把法、西、非、加勒比的建筑、饮食和音乐混在一起，是爵士乐的发源地。城市名（法语 la Nouvelle-Orléans）是 1718 年建城时为致敬当时的法国摄政王奥尔良公爵菲利普二世而取；路易斯安那这个名字则来自法王路易十四。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): New Orleans (Louisiana; a consolidated city-parish coextensive with Orleans Parish — Louisiana uses parishes, not counties; 383,997 in 2020, the most populous in Louisiana; founded 1718 by the French, Spanish rule, Louisiana Purchase 1803, third-most populous US city by 1840; French Quarter Creole architecture; half the city at or below sea level, the federal levee system failed during Hurricane Katrina on 29 August 2005, flooding over 80 per cent of the city; Mardi Gras; jazz; port; streetcars)
+    howItWorks:
+      "新奥尔良在行政上是一个“市与教区合一”的政府，与奥尔良教区同域——路易斯安那州不设县，而叫“教区”，这是法国与西班牙统治留下的痕迹之一；2020 年人口约 38.4 万，是路易斯安那人口最多的城市。1718 年法国人建城，其后归西班牙，1803 年随路易斯安那购地并入美国，1840 年前后它是全美第三大城市；法国区的克里奥尔式骑楼、街名与料理都从那段历史来，爵士乐在这里成形，狂欢节是全城一年的节点。城市在密西西比河三角洲上，约一半的地面在海平面或以下，靠堤坝与泵站维持；2005 年 8 月 29 日卡特里娜飓风期间联邦堤防系统失效，八成以上的市区被淹，人口至今未回到灾前。港口是墨西哥湾沿岸的重要商港，有轨电车仍在运行。初来的人最容易犯的错，是以为法国区就是新奥尔良，而它只是河湾高地上的一小片，城市的大部分在更低的地方。",
     layout:
       "新奥尔良建在密西西比河的一个大弯里（“新月城”），地势极低、部分低于海平面，靠堤坝和泵站防洪。最老的法国区（French Quarter）在河边，方格街道、铁艺阳台、庭院；往上游是花园区的老宅和有轨电车线；北面是庞恰特雷恩湖。",
     gettingAround:
@@ -2577,6 +2580,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   orlando: {
     identity:
       "奥兰多在佛罗里达州中部，人口约30.8万、都会区约270万（2020年普查），是世界上最大的主题公园集中地：1971年开园的华特迪士尼世界在城西南约34公里的贝湖和布埃纳维斯塔湖一带（不在市界内），1990年开园的奥兰多环球影城在市区西南（是唯一在市界内的主题公园），另有海洋世界等。城东约80公里的卡纳维拉尔角有肯尼迪航天中心。奥兰多国际机场是美国最繁忙的机场之一，市中心本身以伊奥拉湖和周边的湖泊、橡树街区为特色。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Orlando (Florida; county seat of Orange County; ~119 sq mi; 307,573 in 2020, fourth-most populous in Florida, metro ~2.7 million; fourth-most visited US destination, more theme parks than anywhere in the world; Walt Disney World opened 1971 and lies in Bay Lake and Lake Buena Vista, not the city; Universal Orlando in the city area; International Drive; Orange County Convention Center second-largest in the US; MCO seventh-busiest US airport; University of Central Florida ~69,320 students)
+    howItWorks:
+      "奥兰多是佛罗里达州奥兰治县的县治，市域约 310 平方公里，2020 年人口约 30.8 万，是佛州第四大城市，都会区约 270 万人；市议会管地方服务，县与州分管其余，学校由县学区办。它是全美第四大旅游目的地，主题公园的数量居世界之首，但最有名的那一座不在市界之内：1971 年开业的华特迪士尼世界在西南约 30 公里的贝湖与布埃纳文图拉湖两个自治市镇里，那片土地长期由一个特别管理区自治；环球影城则在市区范围内，国际大道是酒店与餐厅的走廊，奥兰治县会展中心是全美第二大。中佛罗里达大学有约六万九千名学生，是全美最大的公立大学之一；奥兰多国际机场是全美第七繁忙的。城市在内陆，四周是湖，没有海滩。初来的人最容易犯的错，是以为迪士尼在奥兰多市里，而它在两个另设的市镇里，市政府管不到那片地。",
     layout:
       "市中心在伊奥拉湖周围，橙街是主街，冬园镇在城东北是老派的富人小镇。主题公园区在市区西南：国际大道是酒店、餐饮和会展集中的走廊，环球影城、海洋世界在它两侧；迪士尼世界再往西南，自成一个度假区（四座主题公园、水上乐园、迪士尼之泉）。基西米在迪士尼南面。机场在市中心东南约10公里，肯尼迪航天中心在东面的大西洋岸。",
     gettingAround:
@@ -2608,6 +2614,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nashville: {
     identity:
       "纳什维尔是田纳西州首府，在坎伯兰河畔，1779年建立，人口约68.9万（2020年普查）。它是“音乐之城”：1925年开播的大奥普里（Grand Ole Opry）广播节目让它成为乡村音乐之都，莱曼礼堂是大奥普里的老家，音乐街（Music Row）集中了唱片公司和录音室，百老汇街下段的酒吧从中午到深夜都有现场演出。百年公园里有为1897年田纳西百年博览会建造、后改建为永久建筑的帕特农神庙全尺寸复制品，因此又有“南方雅典”之称。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nashville (Tennessee; consolidated city-county government with Davidson County since 1963; 689,447 in 2020, 20th-most populous US city, metro ~2.15 million; capital of Tennessee; "Music City" after a 1950 WSM radio broadcast; Grand Ole Opry from 1925; Ryman; Broadway honky-tonks; HCA Healthcare, Bridgestone Americas, Asurion; Vanderbilt, Tennessee State, Belmont; metro gained 343,319 people 2010–2020; hottest US housing market in 2017)
+    howItWorks:
+      "纳什维尔是田纳西州的州府，1963 年起市政府与戴维森县政府合并为一个“市县合一”的政府，2020 年人口约 68.9 万，是全美第 20 大城市，都会区约 215 万人；这个合并政府管警察、消防、学校与规划，是南方最早的市县合并之一。它自称“音乐之城”——1950 年 WSM 电台的一句播报把这个称呼定了下来，1925 年开播的“大奥普里”乡村音乐节目至今每周演出，莱曼礼堂与百老汇大街上的酒吧是听现场的地方，唱片公司与录音棚集中在音乐街。但这座城真正的钱在别处：HCA 医疗、普利司通美洲与 Asurion 的总部在此，医疗产业是最大的雇主，范德堡等几所大学在城里。2010 至 2020 年间都会区增加了三十多万人，房价随之涨到全美最热的一档。初来的人最容易犯的错，是把纳什维尔当作一座只有音乐的城，而它是南方增长最快的医疗与商业中心之一。",
     layout:
       "市中心在坎伯兰河西岸，百老汇街下段从河边向西，两侧是酒吧和乡村音乐名人堂、莱曼礼堂；州议会大厦在市中心北面的小山上。音乐街在市中心西南，范德堡大学和百年公园（帕特农神庙）再往西。东纳什维尔在河对岸，是餐饮和独立商店区；12 South、Germantown 是热门街区。大奥普里剧院在城东北约15公里的奥普里兰。机场在市中心东南约14公里。",
     gettingAround:
@@ -2622,6 +2631,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   austin: {
     identity:
       "奥斯汀是得克萨斯州首府，在科罗拉多河畔，1839年成为得克萨斯共和国的首都，人口约96.2万（2020年普查），是美国增长最快的大城市之一。它自称“世界现场音乐之都”，SXSW 音乐、电影与科技节每年3月举办，《奥斯汀城市极限》是播出时间最长的电视音乐节目；得州大学奥斯汀分校有五万多学生。1888年落成的州议会大厦比美国国会大厦还高；国会大道桥下栖息着约150万只墨西哥犬吻蝠，夏季傍晚成群飞出。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Austin (Texas; capital of Texas and seat of Travis County; 961,855 in 2020, fifth-largest in Texas and 12th-largest US city, metro ~2.55 million; among the fastest-growing large US cities since 2010; "Live Music Capital of the World" and Austin City Limits; SXSW; Tesla, Google, Apple and Oracle operations; University of Texas at Austin over 50,000 students; Lady Bird Lake and Barton Springs; Austin FC 2021)
+    howItWorks:
+      "奥斯汀是得克萨斯州的州府，也是特拉维斯县的县治，2020 年人口约 96.2 万，是得州第五大、全美第 12 大城市，都会区约 255 万人；2010 年以来它是全美增长最快的大城市之一。州议会大厦在市中心的高地上，得克萨斯大学奥斯汀分校有五万多名学生，政府与大学曾是这座城的全部；1990 年代起科技产业进来，特斯拉、谷歌、苹果与甲骨文在此设厂或迁来总部，房价与人口一起翻了上去。它自称“世界现场音乐之都”，第六街的酒吧与 PBS 的《奥斯汀城市限制》节目是这个称号的来源，三月的西南偏南与秋天的音乐节把全城塞满；科罗拉多河在市中心拦成伯德夫人湖，巴顿泉是天然泳池，国会大道桥下夏天飞出上百万只蝙蝠。初来的人最容易犯的错，是按“得州”的印象来预期奥斯汀，而它在政治与文化上一直与州内其他城市不同。",
     layout:
       "市中心在科罗拉多河（此段叫伯德夫人湖）北岸，国会大道从河边一直通到北端的州议会大厦；第六街是酒吧街，雷尼街是老屋改的酒吧区，南国会大道（SoCo）过桥在河南岸。得州大学在议会大厦北面。锡尔克公园和巴顿泉泳池在河南岸偏西，伯德夫人湖环湖步道约16公里。东奥斯汀是新兴的餐饮艺术区。机场在市中心东南约13公里，得州丘陵地（Hill Country）在城西。",
     gettingAround:
@@ -2636,6 +2648,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "santa-fe": {
     identity:
       "圣塔菲是新墨西哥州首府，海拔约2133米，是美国海拔最高、建城最早的州首府——1610年由西班牙殖民者佩德罗·德·佩拉尔塔建立，人口约8.8万（2020年普查）。城市以土坯（adobe）风格建筑著称，市中心的总督府（1610）是美国持续使用最久的公共建筑之一；这里是普韦布洛原住民、西班牙裔和英裔三种文化交汇的地方，也是画家乔治亚·奥基夫的创作地，峡谷路上有上百家画廊。每年8月的圣塔菲印第安市场是北美最大的原住民艺术市集。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santa Fe (New Mexico; capital of New Mexico, founded 1610, the oldest state capital in the US and the highest at about 2,133 m; 87,505 in 2020, fourth-most populous in the state, metro ~158,000; 52.34 sq mi; Santa Fe Plaza and the Palace of the Governors; adobe Pueblo Revival and Territorial Revival architecture protected by a 1957 historic zoning ordinance; UNESCO Creative City 2005; over 250 galleries and Canyon Road; Indian Market; about 51% Hispanic or Latino; Los Alamos nearby)
+    howItWorks:
+      "圣菲是新墨西哥州的州府，1610 年建城，是美国最古老的州府，也是海拔最高的一座，约 2,133 米；2020 年人口约 8.75 万，都会区约 15.8 万，由民选的市长与市议会治理，县与州分管其余。城市的模样是法律定下来的：1957 年的历史区划条例规定新建筑必须用土坯风格的普韦布洛复兴式或领地复兴式，于是整座城是一片土黄色的平顶房子，连加油站与超市也照办。中心是圣菲广场，总督府在广场北侧，是美国持续使用最久的公共建筑之一，原住民在廊下摆摊卖银饰；坎宁路上有两百五十多家画廊，每年八月的印第安市集是全美最大的原住民艺术市场，2005 年它成为联合国教科文组织的手工艺与民间艺术之都。约一半市民是西班牙裔，洛斯阿拉莫斯在西北，阿尔伯克基与机场在南面约 100 公里。初来的人最容易犯的错，是以为土坯建筑都是老房子，而其中很多是 20 世纪按条例新建的。",
     layout:
       "老城以圣塔菲广场为中心，总督府在广场北侧，圣方济各主教座堂在东侧，广场周边几个街区是土坯风格的老城和博物馆区；峡谷路画廊街从老城向东南延伸约1公里。博物馆山在城东南，有国际民间艺术博物馆和印第安艺术文化博物馆。铁路广场在老城南面，是艺术区和火车站。桑格雷德克里斯托山在城东北，滑雪场在山上；班德利尔国家纪念地（普韦布洛先民崖居）在西北约50公里，陶斯在北面约110公里，阿布奎基在南面约100公里。",
     gettingAround:
@@ -2650,6 +2665,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   anchorage: {
     identity:
       "安克雷奇是阿拉斯加最大的城市，在库克湾的两条支湾（克尼克湾、特纳根湾）之间，人口约29.1万（2020年普查），占全州人口近四成。它1914年作为阿拉斯加铁路的建设营地建立，1964年3月27日的9.2级“耶稣受难日地震”是有记录以来第二强的地震，重创了城市。安克雷奇是进入阿拉斯加荒野的门户——东面紧挨楚加奇山脉和楚加奇州立公园，北面是迪纳利，胡德湖是世界上最繁忙的水上飞机基地；夏至前后白天近19小时，冬至只有约6小时。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Anchorage (Alaska; a unified home rule municipality merging city and borough since 1975, about 1,946 sq mi, less than 10 per cent of it populated; 291,247 in 2020, nearly 40 per cent of Alaska; founded 1914 as a railroad construction camp, incorporated 1920; on a peninsula between the Knik and Turnagain arms of Cook Inlet, Chugach Mountains behind; magnitude 9.2 earthquake in 1964; Ted Stevens airport the world's third-busiest for cargo; about 250 black bears and 1,000 moose; Juneau is the state capital)
+    howItWorks:
+      "安克雷奇是阿拉斯加最大的城市，1975 年市与自治市镇合并为一个“统一自治市”，辖区约 5,000 平方公里，其中住人的不到一成；2020 年人口约 29.1 万，接近全州的四成。它 1914 年作为阿拉斯加铁路的施工营地出现，1920 年设市，是一座完全的 20 世纪城市。市区在库克湾两条海湾之间的半岛上，楚加奇山脉在东面，1964 年 9.2 级地震——有记录以来第二强——把市区的一片街区震塌滑入海中，如今那里是公园。特德·史蒂文斯机场是世界第三繁忙的货运机场，亚洲与北美之间的大圆航线在这里加油；阿拉斯加铁路的总站在城里，伊迪塔罗德狗拉雪橇赛每年三月从市中心的街上出发。冬天约有一千头驼鹿进城，黑熊约两百五十头。州府不在这里，而在南面的朱诺。初来的人最容易犯的错，是以为安克雷奇是州府，而朱诺才是，且只能坐船或飞机到达。",
     layout:
       "市中心在克尼克湾南岸的台地上，街道成格网，安克雷奇博物馆、周末市集和铁路车站都在市中心；托尼·诺尔斯海岸步道从市中心沿海岸向西南延伸约18公里到金凯德公园。机场和胡德湖在市中心西南，阿拉斯加原住民遗产中心在城东北。楚加奇山脉在城东，弗拉特托普山是最常爬的山；特纳根湾沿苏厄德公路向南，是看白鲸和潮涌的路段，阿利耶斯卡滑雪场在南面约60公里的格德伍德。迪纳利国家公园在北面约380公里。",
     gettingAround:
@@ -2664,6 +2682,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "salt-lake-city": {
     identity:
       "盐湖城是犹他州首府，在瓦萨奇山脉西麓、大盐湖东南，海拔约1300米，人口约20万（2020年普查），都会区约126万。1847年由杨百翰率领的耶稣基督后期圣徒教会（摩门教）先驱建立，圣殿广场是城市规划的原点和教会总部所在地；2002年举办冬奥会，2024年又获选主办2034年冬奥会。瓦萨奇山的雪以干燥松软著称，市区一小时车程内有十余座滑雪场（雪鸟、阿尔塔、帕克城等）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Salt Lake City (Utah; capital of Utah and seat of Salt Lake County; 199,723 in 2020, metro ~1.3 million, 46th-largest US metro; founded 1847 by settlers under Brigham Young, originally Great Salt Lake City until 1868; wide streets of 132 feet on a grid centred on Temple Square, from the Plat of the City of Zion; church headquarters at Temple Square; the Great Salt Lake receding, exposing arsenic; Wasatch ski resorts; 2002 Winter Olympics and 2034 awarded in July 2024; SLC airport hub; University of Utah)
+    howItWorks:
+      "盐湖城是犹他州的州府与盐湖县的县治，2020 年市区人口约 20 万，都会区约 130 万，是全美第 46 大都会区；市议会管地方服务，县与州分管其余。1847 年杨百翰带领后期圣徒教会的移民在这里定居，城市按“锡安城规划图”一次画定：街道宽达 40 米，地址以圣殿广场为原点，按“东南西北 + 街区数”编号，因此每个门牌都能直接算出它离原点几个街区——这套系统至今在用，也是外来者最先要适应的东西。教会总部与圣殿在广场上，犹他大学在城东的山脚。四周是山：瓦萨奇山脉的雪场在一小时车程内，2002 年冬奥会在这里举办，2034 年再次获得主办权；西面的大盐湖水位持续下降，湖底裸露带来的粉尘是当地的环境难题，冬天的逆温层让盆地里的空气变差。初来的人最容易犯的错，是按普通城市的方式记地址，而这里的门牌是一套坐标。",
     layout:
       "城市是以圣殿广场为原点的大格网，街道按与广场的距离编号（如 300 South）；州议会大厦在市中心北面的山坡上。市中心有会议中心、城溪购物中心和历史街区；犹他大学和自然历史博物馆在城东的山脚。瓦萨奇山脉在东面耸立，大杨木峡谷、小杨木峡谷通往滑雪场（约40分钟车程），帕克城在山另一侧约50公里；大盐湖在西北，羚羊岛州立公园是最好的湖岸观景点，约70公里。机场在市中心西约6公里。",
     gettingAround:
@@ -5866,6 +5887,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ghent: {
     identity:
       "根特是东弗兰德省首府，人口约26万，保留着规模宏大的中世纪老城，历史上曾是欧洲重要的纺织业中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ghent (city and municipality in East Flanders, capital of the province; 157.77 km²; ~265,000–270,000, metro ~560,000; third-largest in Belgium; Scheldt and Leie; ~50,000 people by 1300; Gravensteen, St Bavo's with the Ghent Altarpiece, Graslei; car-free centre, 400+ km of cycle paths; Gentse Feesten 1–1.5 million)
+    howItWorks:
+      "根特是比利时东佛兰德省的省会，也是佛兰德大区的第三大城市，由民选的市长和市议会治理，市域约 158 平方公里，含 13 个并入的郊区，人口约 26.5 万，都会区约 56 万；佛兰德大区管教育与交通，警察归市与联邦分层负责。老城在斯海尔德河与莱厄河的汇合处：1300 年前后它已有约五万人，是北欧最富的城市之一，此后几百年的衰落反而把中世纪的城区原样留了下来——伯爵城堡、圣巴夫大教堂里的《根特祭坛画》与草药河岸的行会屋都在这一片。市中心基本禁止汽车，全市有四百多公里自行车道，根特大学的学生占了市民的一大块，七月的根特节吸引上百万人，港口在城北。初来的人最容易犯的错，是把根特当作布鲁日那样的博物馆城，而它是一座有大学与港口、白天在上班的城市。",
     layout:
       "圣巴夫主教座堂、钟楼与圣尼古拉教堂三座尖塔并立，是老城天际线的标志；根特伯爵城堡是保存完好的中世纪城堡；老城沿莱斯河与斯海尔德河交汇处展开。",
     gettingAround:
@@ -5881,6 +5905,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   liege: {
     identity:
       "列日是列日省首府，人口约20万，坐落在默兹河畔，是瓦隆大区最大的城市，也是比利时东部重要的工商业中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Liège (capital of Liège Province, Wallonia; ~195,000, metro ~750,000 over 52 municipalities; Meuse near the Dutch and German borders; Prince-Bishopric 985–1794 with wide independence; Montagne de Bueren 374 steps; Guillemins station by Calatrava; steel decline and diversification; La Batte Sunday market; airport cargo; French-speaking)
+    howItWorks:
+      "列日是瓦隆大区列日省的省会，由民选的市长和市议会治理，市区人口约 19.5 万，由 52 个市镇组成的都会区约 75 万人；瓦隆大区与法语共同体分管经济与教育，法语是这里的语言。城市在默兹河谷里，离荷兰与德国边境都不远。985 至 1794 年它是列日采邑主教区的首府——一个名义上属于神圣罗马帝国、实际上高度独立的教会国家，七座中世纪的教士教堂与主教宫是那段历史的遗存；19 世纪它成为欧洲大陆最早的钢铁中心之一，钢铁与煤炭的衰退让这座城经历了漫长的调整，如今转向航空零件、生物技术与物流，机场是欧洲重要的货运枢纽。布伦山的 374 级台阶从老城通到城堡，卡拉特拉瓦设计的吉耶曼车站是新的地标，星期天的拉巴特集市沿河摆开。初来的人最容易犯的错，是把列日当作一座衰落的工业城，而它有自己的大学、剧院与一千年的主教城史。",
     layout:
       "圣朗贝尔广场与列日主教座堂是老城核心；老城沿默兹河两岸分布，蒙塔涌台阶（374级）连接老城与山丘上的观景点；列日圭勒明车站是知名的现代建筑地标。",
     gettingAround:
@@ -5896,6 +5923,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   namur: {
     identity:
       "那慕尔是瓦隆大区首府，人口约11万，坐落在默兹河与桑布尔河交汇处，山丘上的城堡是这座城市的标志。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Namur (capital of Wallonia — the Walloon Parliament and government sit here, so designated in 1986 — and of Namur Province; 175.93 km²; ~115,330 2026; 24 sub-municipalities; confluence of the Sambre and Meuse; citadel; stilt jousting UNESCO intangible 2021; French-speaking; rail to Brussels, Luxembourg, Lille, Liège)
+    howItWorks:
+      "那慕尔是瓦隆大区的首府——1986 年瓦隆议会与政府定址于此——同时也是那慕尔省的省会，由民选的市长和市议会治理，市域约 176 平方公里，下含 24 个并入的市镇，2026 年人口约 11.5 万，是比利时法语区的行政中心之一。城市在桑布尔河汇入默兹河的尖角上，城堡建在两河之间的岩丘上，如今已解除军事用途，老城在山脚，18 世纪的圣欧班主教座堂是它的地标；踩高跷比武是这里从 1411 年传下来的习俗，2021 年列入非物质文化遗产名录。铁路把它与布鲁塞尔、卢森堡、里尔与列日连起来，机械、皮革与瓷器是老工业。初来的人最容易犯的错，是以为瓦隆的首府是列日或沙勒罗瓦这样更大的城市，而议会与政府在这座 11 万人的城里。",
     layout:
       "那慕尔城堡矗立在默兹河与桑布尔河交汇处的山丘上，俯瞰全城；老城位于城堡脚下，沿两河岸展开。",
     gettingAround:
@@ -5911,6 +5941,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   leuven: {
     identity:
       "鲁汶是佛兰芒布拉班特省首府，人口约10万，鲁汶大学始建于1425年，是低地国家历史最悠久的大学，城市因此充满青年活力。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Leuven (capital of Flemish Brabant; over 100,000, eighth-largest in Belgium; ~25 km east of Brussels; a university city since 1425, the oldest in the Low Countries; KU Leuven the largest Dutch-speaking university in the world, over 50,000 students; Brabantine Gothic town hall 1439–63; St Peter's; AB InBev headquarters and Stella Artois; imec; ECoC 2030)
+    howItWorks:
+      "鲁汶是佛兰德布拉班特省的省会，由民选的市长和市议会治理，人口超过 10 万，是比利时第八大城市，在布鲁塞尔以东约 25 公里；佛兰德大区管教育，荷兰语是这里的语言。1425 年起它就是大学城，是低地国家最古老的一座——今天的鲁汶大学是世界上最大的荷兰语大学，五万多名学生住在一座十万人的城里，学期与假期决定了这座城的节奏。1439 至 1463 年建成的布拉班特哥特式市政厅是它的地标，圣彼得教堂在对面，老市集广场沿街全是酒吧；百威英博的总部在城里，时代啤酒从这里出产，纳米电子研究所 imec 让它同时是欧洲的芯片研究重镇。2030 年它将是欧洲文化之都。初来的人最容易犯的错，是把鲁汶当作布鲁塞尔的郊区，而它是一座自成一体的大学城，暑假里街上会空掉一半。",
     layout:
       "市政厅哥特式建筑是老城的标志；大贝居安会院是老城内保存完好的历史街区；鲁汶大学各学院建筑分布在老城各处，与城市融为一体。",
     gettingAround:
@@ -5941,6 +5974,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dinant: {
     identity:
       "迪南是那慕尔省一座默兹河畔的小城，人口约1.3万，以河岸崖壁上的城堡与萨克斯管发明者阿道夫·萨克斯的出生地而闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dinant (city in Namur Province, Wallonia; ~100 km²; 13,544 2018; a long thin town along the Meuse under limestone cliffs; collegiate church with onion dome and 11th-century citadel above; Adolphe Sax born 1814, saxophone; couque de Dinant; kayaking on the Lesse; 674 inhabitants executed by German troops on 23 August 1914; Brussels ~90 km)
+    howItWorks:
+      "迪南是瓦隆大区那慕尔省的一座小城，由民选的市长和市议会治理，市域约 100 平方公里，2018 年人口约 1.35 万。地形决定了它的形状：默兹河与陡峭的石灰岩崖之间只有一条窄地，城市因此沿河南北铺成细长的一条；洋葱顶的圣母教堂贴着崖脚，11 世纪的城堡在崖顶，缆车与 400 多级台阶通上去。1814 年萨克斯管的发明者阿道夫·萨克斯生在这里，河上的桥栏杆装饰着各国的萨克斯管；迪南硬饼干是本地的老食品，莱斯河的皮划艇从上游漂下来。1914 年 8 月 23 日，德军在此处决了 674 名居民，是一战最早的屠杀之一。布鲁塞尔在东北约 90 公里。初来的人最容易犯的错，是把迪南当作一座可以走遍的老城，而它是一条长街，看点分布在几公里的河岸上。",
     layout:
       "迪南城堡矗立在默兹河东岸的陡峭崖壁上，俯瞰整座城市；老城沿默兹河西岸展开，圣母教堂洋葱形尖顶是城市天际线的标志。",
     gettingAround:
@@ -5956,6 +5992,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ostend: {
     identity:
       "奥斯坦德是西弗兰德省一座北海海滨城市，人口约7万，是比利时海岸最大的海滨度假与港口城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ostend (city in West Flanders; ~71,557 2022; largest city on the Belgian coast; boroughs Mariakerke, Raversijde, Stene, Zandvoorde; beach and dijk; royal resort under Leopold II; James Ensor; Kursaal; most bombed Belgian city in WWII; ferry to England until 2013; Coastal tram; airport mainly freight)
+    howItWorks:
+      "奥斯坦德是西佛兰德省的一座城，也是比利时海岸线上最大的城市，由民选的市长和市议会治理，2022 年人口约 7.2 万，含玛丽亚凯尔克、拉弗塞德、斯特讷与赞德福尔德几个并入的镇。19 世纪它是比利时王室的海滨度假地，利奥波德二世在这里修了长廊与柱廊，赌场与堤岸大道是那时的格局，画家詹姆斯·恩索尔生在这里；二战中它是比利时被炸得最狠的城市，战后的海滨是重建的。通往英国的渡轮 2013 年停航，如今港口以渔业与海上风电为主，机场以货运为主；沿海岸有轨电车从德帕内一直开到克诺克，是世界上最长的有轨电车线，从这座城穿过。布鲁日在东南约 25 公里。初来的人最容易犯的错，是把奥斯坦德当作一处沙滩，而它是一座有渔港、赌场与全年生活的城市，沙滩只是它的一条边。",
     layout:
       "海滨长堤与沙滩是城市的核心休闲区域；老渔港区保留着传统渔业城镇的风貌；玛丽亚·亨德里卡公园是市内重要的绿地。",
     gettingAround:
@@ -5971,6 +6010,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   spa: {
     identity:
       "斯帕是列日省阿登高原上一座温泉小镇，人口约1.1万，“水疗”（spa）一词即由此地得名，是欧洲历史最悠久的温泉度假胜地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Spa (municipality in Liège Province, Wallonia; 39.85 km²; 10,378 2018; more than 300 cold mineral springs, locally "pouhons"; the name gave English its word "spa"; Great Spa Towns of Europe UNESCO 2021; Circuit de Spa-Francorchamps actually at Stavelot; Spa Monopole water; casino; Thermes 2005; Ardennes; Liège ~35 km)
+    howItWorks:
+      "斯帕是瓦隆大区列日省的一个市镇，由民选的市长和市议会治理，市域约 40 平方公里，2018 年人口约 1 万，在阿登山的一处林间谷地里。它的名字进了英语：因为这里的三百多处冷矿泉，“spa”成了世界上所有矿泉浴场的通名，本地人把泉眼叫“pouhon”。18 至 19 世纪欧洲的王公贵族来此饮泉，赌场、长廊与旅馆是那个时代留下的，2021 年它与欧洲其他十座温泉城一起列入世界遗产；2005 年山上建了新的温泉中心，缆车从镇上通上去，斯帕矿泉水从这里装瓶。以它命名的斯帕—弗朗科尔尚赛道其实在东面的斯塔沃洛与马尔梅迪境内，不在本镇。列日在西北约 35 公里。初来的人最容易犯的错，是以为 F1 赛道在斯帕镇上，而它在十几公里外的另一个市镇。",
     layout:
       "温泉浴场与赌场是小镇的核心设施；老城街道环绕温泉水源分布；斯帕—弗朗科尔尚赛道（F1比利时大奖赛举办地）位于小镇周边的阿登森林中。",
     gettingAround:
@@ -6788,6 +6830,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   helsingoer: {
     identity:
       "赫尔辛格是西兰岛东北岸的港口小城，人口约4.7万，与瑞典赫尔辛堡隔厄勒海峡相望，因克伦堡城堡是莎士比亚《哈姆雷特》的故事原型地而闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Helsingør/Elsinore (Denmark; municipality ~48,450 2026, 14th most populous urban area; founded in the 1420s by Eric of Pomerania; Kronborg Castle UNESCO, setting of Hamlet; narrowest point of the Øresund, 4 km to Helsingborg; Sound Dues made it Denmark's third-largest town by 1672, abolished 1857; Kulturhavn Kronborg 2013; train to Copenhagen every 20 minutes)
+    howItWorks:
+      "赫尔辛格是丹麦西兰岛北端的市镇，2026 年人口约 4.8 万，由民选的市议会与市长治理；丹麦的市镇管学校、养老与地方道路，大区管医院，国家管警察。城市的位置就是它的历史：这里是厄勒海峡最窄的地方，到瑞典的赫尔辛堡只有 4 公里，渡轮一直在开。1420 年代波美拉尼亚的埃里克国王在此建城并开始征收“海峡通行税”，凡过海峡的船都要在这里交钱，靠这笔收入它到 1672 年成了丹麦第三大城，1857 年税废之后城市随之衰落。克伦堡宫守在海角上，是世界遗产，也是《哈姆雷特》的舞台，每年夏天在城堡里演这出戏；旧船厂改成的海事博物馆挖在地下的干船坞里。哥本哈根的火车每 20 分钟一班。初来的人最容易犯的错，是把赫尔辛格当作一座城堡，而城堡是这座城收税与守海峡的工具，城因税而兴、因税废而衰。",
     layout:
       "老城沿港口而建，克伦堡城堡扼守厄勒海峡最窄处，历史上是控制波罗的海航运的战略要地，与瑞典的往来渡轮频繁。",
     gettingAround:
@@ -6802,6 +6847,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   roskilde: {
     identity:
       "罗斯基勒是西兰岛北部的历史古城，人口约5.1万，10世纪起长期是丹麦的宗教与政治中心，如今以罗斯基勒大教堂与维京船博物馆闻名，也是欧洲知名音乐节的举办地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Roskilde (Denmark; ~53,897 2026, tenth-largest; 30 km west of Copenhagen; founded in the 980s by Harald Bluetooth, capital from the 11th century until 1443; cathedral UNESCO 1995 with 39 royal tombs, first Gothic brick cathedral in Scandinavia, completed 1275; Viking Ship Museum with five 11th-century ships; Roskilde Festival since 1971, ~80,000; Roskilde University 1972)
+    howItWorks:
+      "罗斯基勒是丹麦西兰岛的市镇，2026 年人口约 5.4 万，是丹麦第十大城市，在哥本哈根以西 30 公里，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。10 世纪 80 年代蓝牙王哈拉尔在这里建城，11 世纪起到 1443 年它是丹麦的首都，之后让位给哥本哈根；1275 年落成的大教堂是斯堪的纳维亚第一座砖砌哥特式教堂，1995 年列入世界遗产，历代丹麦君主的 39 座陵墓在里面，至今仍在使用。峡湾里 1960 年代打捞出的五艘 11 世纪维京船存在海边的维京船博物馆里，当年它们是被凿沉用来封锁航道、保卫这座都城的。1971 年起的罗斯基勒音乐节每年吸引约八万人，是北欧最大的音乐节之一，罗斯基勒大学 1972 年创办。初来的人最容易犯的错，是把罗斯基勒当作哥本哈根的卫星城，而在哥本哈根成为首都之前，它做了四百年的都城。",
     layout:
       "老城建于罗斯基勒峡湾南端，大教堂矗立在城市制高点，维京船博物馆则紧邻峡湾水岸，两者构成城市历史轴线的起止点。",
     gettingAround:
@@ -6833,6 +6881,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   esbjerg: {
     identity:
       "埃斯比约是丹麦西海岸最大的港口城市，人口约7.2万，19世纪末因港口建设兴起，是丹麦北海石油产业与瓦登海生态旅游的重要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Esbjerg (Denmark; urban population 71,371 January 2026, fifth-largest and the largest in West Jutland; founded 1868 as a replacement harbour after the Second Schleswig War; 13,000 by 1901; fishing then agricultural export, now the main town for Danish oil and offshore, handling 65 per cent of Danish wind turbines; Man Meets the Sea; performing arts centre 1997; Fanø ferry; Ribe in the same municipality)
+    howItWorks:
+      "埃斯比约是丹麦日德兰半岛西岸的港口城市，2026 年 1 月城区人口约 7.1 万，是丹麦第五大城市、西日德兰最大的城市，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。这座城不是慢慢长出来的：1864 年第二次石勒苏益格战争后丹麦失去了阿尔托纳港，1868 年国家决定在这片只有农场的海岸上建一座新港，城市随港而生，1901 年已有一万三千人。它先是渔港，后来出口黄油与肉类，如今是丹麦石油与海上产业的基地，全国六成五的风机从这里的码头装船出海。“人与海”的四座白色巨像坐在海边望着水面，法诺岛的渡轮从港口开出，丹麦最古老的城市里伯在同一个市镇内。初来的人最容易犯的错，是以为埃斯比约有个老城，而它 1868 年才动工，最老的房子也不过一百五十年。",
     layout:
       "城市沿北海港口而建，19世纪末规划的方格状街道格局工整，是丹麦少有的“年轻城市”规划范例，港口区至今仍是城市经济核心。",
     gettingAround:
@@ -6847,6 +6898,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ribe: {
     identity:
       "里伯是丹麦现存最古老的城镇，建城可追溯至约公元704年，人口约8千，保留有丹麦最完整的中世纪街巷格局。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ribe (Denmark; town ~8,403 2026; the oldest town in Denmark, a trading centre from the early 8th century; part of Esbjerg Municipality since 2007; seat of the Diocese of Ribe, cathedral begun 1150 on an earlier church; marks of the Burchardi flood of 1634 on the cathedral wall; cathedral school from at least 1145; Viking Centre and Museum; Wadden Sea)
+    howItWorks:
+      "里伯是丹麦南日德兰的一座小镇，2026 年人口约 8,400，2007 年市镇合并后属于埃斯比约市镇，不再单独设市；市镇管学校与养老，大区管医院，国家管警察。它是丹麦最古老的城镇：8 世纪初这里已是一处活跃的市集，维京时代的商船在河口装卸货物，9 世纪就有基督徒的踪迹。1150 年动工的里伯主教座堂建在更早的教堂之上，至今是里伯教区的主教座堂，教堂墙上刻着 1634 年布尔哈迪大洪水的水位线——那次风暴潮淹没了整片瓦登海沿岸；教堂学校的记载至少可追到 1145 年。老城的矮房与鹅卵石街道保留完整，屋顶上有鹳巢，瓦登海国家公园在西面，维京中心在城外。埃斯比约在北面约 30 公里。初来的人最容易犯的错，是把里伯当作一个复原的旅游村，而它是一座活了一千三百年的镇，只是从未长大。",
     layout:
       "老城沿里伯河而建，大教堂位于城市制高点，中世纪石砌与木骨架建筑街巷至今保存完好，几乎未经现代化改造。",
     gettingAround:
@@ -6878,6 +6932,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   silkeborg: {
     identity:
       "锡尔克堡是丹麦湖区的核心城镇，人口约4.6万，坐落于古德诺河沿岸的湖泊群中，是探索日德兰中部丘陵与内河游船的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Silkeborg (Denmark; town ~53,000, municipality 102,753 in 2026, eleventh-largest urban area; on the Gudenå among the Søhøjlandet lakes and forests, "Denmark's outdoor capital"; grew from a paper mill of 1844, 30 people in 1844 to 556 in 1850; Museum Silkeborg with the Tollund Man; Museum Jorn; Hjejlen the world's oldest steamboat; Jyske Bank; Aarhus ~45 km)
+    howItWorks:
+      "锡尔克堡是丹麦中日德兰的市镇，镇上约 5.3 万人，2026 年全市镇约 10.3 万，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。这座城 1844 年才从一座造纸厂开始：那一年这里只有 30 人，1850 年已有 556 人，工厂招来的工人建起了街道。它在古登河与一串湖泊、森林之间，因此自称丹麦的“户外之都”，天山在湖边，1861 年下水的“麦鸡号”是世界上仍在运营的最老蒸汽船，夏天在湖上跑。锡尔克堡博物馆里躺着公元前 4 世纪的“图伦男子”，是欧洲保存最完好的沼泽木乃伊之一；约恩美术馆收藏眼镜蛇画派的阿斯格·约恩的作品，他生在这里。日德兰银行的总部在城里，奥胡斯在东面约 45 公里。初来的人最容易犯的错，是以为丹麦没有山水，而这一带的湖群与丘陵是全国最集中的一片。",
     layout:
       "小城沿古德诺河与其串联的湖泊分布，19世纪造纸工业厂房沿河而建，如今部分已改造为文化场馆，湖岸步道贯穿城区。",
     gettingAround:
@@ -6909,6 +6966,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   skagen: {
     identity:
       "斯卡恩是日德兰半岛最北端的小镇，人口约7.7千，19世纪末因独特的北欧光线吸引画家聚居，形成著名的“斯卡恩画派”，如今是丹麦知名的度假小镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Skagen (Denmark; town ~7,250 January 2026, down from a peak of 14,050 in 1980; in Frederikshavn Municipality; northernmost town in Denmark; Grenen where the North Sea and the Baltic meet; the Skagen Painters from the late 1870s; the Sand-Covered Church closed 1795, replaced 1841; the Port of Skagen is Denmark's main fishing port; Skagensbanen railway, most northerly station; ~2 million visitors)
+    howItWorks:
+      "斯卡恩是丹麦日德兰半岛最北端的镇，2026 年 1 月人口约 7,250，1980 年曾有 14,050 人；它属于腓特烈港市镇，不再单独设市，市镇管学校与养老，大区管医院，国家管警察。镇子在一条向东北伸出的沙嘴上，尽头的格伦是丹麦的最北点，斯卡格拉克海峡与卡特加特海峡的浪在那里对撞，站在沙尖上可以看见两片海的分界线。19 世纪 70 年代末起，一群北欧画家每年夏天来这里画渔民与光线，形成了“斯卡恩画派”，他们的作品与故居是今天的博物馆；14 世纪的教堂被流沙埋掉，1795 年关闭，只剩塔尖露在沙上，1841 年另建了新教堂。斯卡恩港按渔获价值是丹麦最大的渔港，斯卡恩铁路的终点是丹麦最北的车站，每年约两百万游客。初来的人最容易犯的错，是以为镇子就在海角上，而格伦在镇外几公里，最后一段要走沙路。",
     layout:
       "小镇以黄色灰泥墙、红瓦顶的传统渔村建筑为特色，格伦角沙嘴向北延伸至镇外，是小镇最重要的自然地标。",
     gettingAround:
@@ -6923,6 +6983,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   roenne: {
     identity:
       "龙讷是博恩霍尔姆岛的主要城镇，人口约1.3万，是岛上最大的港口与行政中心，也是探索全岛花岗岩地貌与历史城堡的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rønne (Denmark; urban area ~13,589 2026, municipality 38,677; largest town on Bornholm and its administrative centre; Bornholm Regional Municipality within the Capital Region; founded around 1327; herring port; bombed by Soviet aircraft 7–8 May 1945, 212 houses destroyed; ferries to Køge, Ystad, Sassnitz, Świnoujście; Bornholm Airport; ceramics)
+    howItWorks:
+      "伦讷是波罗的海上博恩霍尔姆岛最大的镇，2026 年城区人口约 1.36 万，全岛所在的博恩霍尔姆区域市镇约 3.9 万人——整座岛只有一个市镇，行政上归首都大区，市镇管学校、养老与地方事务，国家管警察。镇子约 1327 年建立，天然港与波罗的海的位置让它靠鲱鱼渔业起家，鹅卵石街与半木结构的房子是老城的样子。1945 年 5 月 7 至 8 日苏联飞机轰炸了这里，212 栋房子被毁，战后重建。今天渡轮从伦讷开往丹麦本土的克厄、瑞典的于斯塔德、德国的萨斯尼茨与波兰的希维诺乌伊希切，去哥本哈根最快的方式是经瑞典；博恩霍尔姆机场在镇南，陶艺是岛上的老手艺，圆形教堂与哈默斯胡斯城堡在岛的其他地方。初来的人最容易犯的错，是把伦讷当作博恩霍尔姆，而它只是岛西岸的门户，岛上的看点分散在四周。",
     layout:
       "老城沿港口而建，鹅卵石街道与烟熏黄的传统民居保存完好，是丹麦保存最完整的历史城镇之一，全岛其它景点均以龙讷为交通枢纽向外辐射。",
     gettingAround:
@@ -6984,6 +7047,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   uppsala: {
     identity:
       "乌普萨拉是瑞典历史最悠久的大学城，人口约17万，坐落于斯德哥尔摩以北约70公里，乌普萨拉大学创立于1477年，是北欧最古老的大学。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Uppsala (Sweden; fourth-largest urban area, 177,074 in 2019; 71 km north of Stockholm; seat of the Archbishop of Sweden since 1164, cathedral inaugurated 1435, the largest in Scandinavia at about 119 m; Uppsala University 1477, the oldest centre of higher education in Scandinavia, Celsius and Linnaeus; Fyris river divides old west from modern east; Central Station ~45,000 passengers a day; Gamla Uppsala mounds 5 km north; Arlanda ~30 km)
+    howItWorks:
+      "乌普萨拉是瑞典第四大城区，2019 年人口约 17.7 万，在斯德哥尔摩以北 71 公里，由民选的市议会治理；瑞典的市镇管学校、养老与规划，大区管医院与公共交通，国家管警察与大学。这座城有两个身份：1164 年起它是瑞典大主教的驻地，1435 年落成的大教堂高约 119 米，是斯堪的纳维亚最大的教堂，至今是瑞典教会的中心；1477 年创办的乌普萨拉大学是北欧最古老的高等学府，摄氏温标的创立者摄尔修斯与分类学的林奈都在这里任教，学生的社团与四月三十日的春节庆典是城市的节奏。菲吕斯河把城市分成两半：西岸是大教堂与城堡的老城，东岸是车站与现代街区；旧乌普萨拉的王家土丘在城北 5 公里，是基督教之前的祭祀中心。中央车站每天约 4.5 万旅客，阿兰达机场在南面约 30 公里。初来的人最容易犯的错，是把乌普萨拉当作斯德哥尔摩的卧城，而它是瑞典教会与最老大学的所在地。",
     layout:
       "老城以乌普萨拉大教堂（斯堪的纳维亚最高的教堂建筑）为中心，大学主楼与植物园环绕周边，弗于里斯河穿城而过。",
     gettingAround:
@@ -7032,6 +7098,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   visby: {
     identity:
       "维斯比是哥得兰岛的主要城镇，人口约2.5万，完整保留中世纪城墙与建筑格局，12世纪起是汉萨同盟重要的贸易城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Visby (Sweden; ~24,330; the most populous Swedish locality outside the mainland, reached only by ferry or air; on Gotland; former Hanseatic centre, flourishing in the 14th century; Valdemar IV of Denmark took Gotland in 1361; UNESCO 1995, one of the best-preserved medieval cities in Scandinavia; 3.4 km town wall from about 1300; Almedalen Week; Medieval Week; ferries from Nynäshamn and Oskarshamn; airport)
+    howItWorks:
+      "维斯比是哥特兰岛上的城镇，人口约 2.4 万，是瑞典本土之外人口最多的聚落，只能坐船或飞机到达；整座哥特兰岛是一个市镇，同时行使大区的职权，称为“哥特兰区域”，管学校、养老与医院，国家管警察。中世纪它是汉萨同盟在波罗的海的重要商埠，14 世纪最盛，1361 年丹麦国王瓦尔德马四世攻占哥特兰，城下战死一千八百人；此后城市长期衰落，反而把中世纪的城区原样留住，1995 年列入世界遗产，是斯堪的纳维亚保存最完好的中世纪城市之一。约 1300 年建成的城墙长 3.4 公里，至今围着老城，城内散着十几座教堂废墟。每年七月的“阿尔梅达尔周”把瑞典的政党、媒体与游说者都请到这里开会，中世纪周则让全城穿上戏服；渡轮从尼奈斯港与奥斯卡港开来，机场在城北。初来的人最容易犯的错，是把维斯比当作哥特兰，而岛长约 170 公里，村庄与海滩散在四周。",
     layout:
       "老城被长约3.4公里的中世纪城墙环绕，鹅卵石街巷、玫瑰花墙与教堂遗址密布其间，是波罗的海地区保存最完好的中世纪商贸城市之一。",
     gettingAround:
@@ -7046,6 +7115,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   karlskrona: {
     identity:
       "卡尔斯克鲁纳是瑞典东南部布莱金厄省的核心城市，人口约6.6万，自1680年建城起即为瑞典皇家海军基地，1998年其海军城规划列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Karlskrona (Sweden; 66,675 in 2018; capital of Blekinge County; founded 10 August 1680 by Charles XI as an ice-free naval base south of Stockholm, built across an archipelago; Sweden's only baroque city with its original grid; Naval Port of Karlskrona UNESCO 1998; still the main Swedish naval base and Coast Guard headquarters; Blekinge Institute of Technology ~8,000 students; Stena Line ferry to Gdynia, nearly 500,000 passengers)
+    howItWorks:
+      "卡尔斯克鲁纳是瑞典布莱金厄省的省会，2018 年人口约 6.7 万，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察与海军。这座城不是长出来的，是造出来的：1658 年瑞典取得布莱金厄后，需要一个比斯德哥尔摩更靠南、冬天不结冰的海军基地，1680 年 8 月 10 日国王卡尔十一世下令在这片群岛上建城，街道按巴洛克的格网一次规划到位，是瑞典唯一一座巴洛克城市，中心的弗雷德里克教堂与广场都是那时的作品。1998 年“卡尔斯克鲁纳军港”列入世界遗产，瑞典海军的主基地与海岸警卫队总部至今在这里，1989 年创办的布莱金厄理工学院约八千名学生。斯泰纳航运的渡轮通往波兰的格丁尼亚，每年近五十万人次。初来的人最容易犯的错，是把卡尔斯克鲁纳当作一座老渔镇，而它是一座 17 世纪按图纸建起的海军城，至今仍是军港。",
     layout:
       "城市建于特罗索岛及周边多座小岛上，17世纪规划的巴洛克式城市格局保存完好，海军船坞与堡垒建筑群沿海岸线分布。",
     gettingAround:
@@ -7060,6 +7132,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalmar: {
     identity:
       "卡尔马是瑞典东南部小科鲁德省的核心城市，人口约4万，卡尔马城堡是瑞典保存最完好的文艺复兴城堡之一，也是探索厄兰岛的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalmar (Sweden; ~42,600; capital of Kalmar County; Kalmar Castle, where the Kalmar Union of Sweden, Norway and Denmark was signed on 13 July 1397, lasting until 1523; castle rebuilt in the Renaissance; Öland bridge 6 km, the longest in Sweden, opened 1972; Linnaeus University campus; cathedral 1703; airport 5 km; harbour)
+    howItWorks:
+      "卡尔马是瑞典卡尔马省的省会，人口约 4.3 万，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。城市在波罗的海西岸，正对厄兰岛。1397 年 7 月 13 日，丹麦、挪威与瑞典的代表在卡尔马城堡里签订了卡尔马联盟条约，三国共戴一君，直到 1523 年瑞典退出；城堡后来在文艺复兴时期改建成今天的样子，仍立在城南的水边。老城在城堡北面，1703 年落成的巴洛克大教堂在广场上。1972 年通车的厄兰大桥长 6 公里，是瑞典最长的桥，把它与厄兰岛连起来，夏天全国的人从这座桥上过去度假；林奈大学在城里有校区，机场在城西 5 公里。初来的人最容易犯的错，是把卡尔马当作去厄兰岛的路过点，而它是一座有城堡、大教堂与六百年历史的省会。",
     layout:
       "老城以卡尔马城堡为核心沿海岸展开，17世纪规划的巴洛克式新城街区保存完好，一座跨海大桥连接卡尔马与厄兰岛。",
     gettingAround:
@@ -7074,6 +7149,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kiruna: {
     identity:
       "基律纳是瑞典最北端的城市，人口约1.8万，地处北极圈以北约145公里，是世界最大的地下铁矿所在地，也是探索凯布讷山与萨雷克国家公园的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kiruna (Sweden; the northernmost city in Sweden, in Lapland, 145 km north of the Arctic Circle, Norrbotten County; built in the 1890s to serve the Kiruna mine; the Kiirunavaara iron ore mine, whose underground extraction causes subsidence; since 2004 the town centre is being moved 3 km east, and Kiruna Church was relocated in August 2025; Icehotel at Jukkasjärvi; Esrange space centre 1966; midnight sun 28 May–16 July; winters below −30 °C)
+    howItWorks:
+      "基律纳是瑞典最北的城市，在拉普兰、北极圈以北 145 公里，属北博滕省，由民选的市议会治理，市镇是瑞典面积最大的；市镇管学校与规划，大区管医院，国家管警察。这座城 1890 年代为了基律纳铁矿而建，基鲁纳瓦拉是世界上最大的地下铁矿，矿脉斜插在城下——正因为如此，采矿造成的地面沉降正在吞掉老城：2004 年起市中心整体东移 3 公里，新中心 2022 年启用，2025 年 8 月连教堂都被整栋抬起来运到了新址。这是一座为一座矿而生、又为同一座矿而搬家的城市。1966 年设立的埃斯兰奇航天中心在东面，尤卡斯耶尔维的冰旅馆每年冬天重建，阿比斯库与凯布讷山在西面，萨米人的驯鹿放牧在四周的山地上；5 月 28 日到 7 月 16 日太阳不落，冬天常在零下 30 度以下。初来的人最容易犯的错，是按地图找基律纳的市中心，而它正在往东挪。",
     layout:
       "城市因地下采矿导致地表沉降，2014年起启动了整体城市搬迁计划，部分历史建筑（如基律纳教堂）被整体平移至新址，是世界罕见的“搬城”工程案例。",
     gettingAround:
@@ -7088,6 +7166,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lulea: {
     identity:
       "吕勒奥是瑞典北部诺尔博滕省的核心城市，人口约4.9万，坐落于波的尼亚湾沿岸，是探索瑞典北部群岛与拉普兰的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Luleå (Sweden; ~49,646 in the urban core; capital of Norrbotten County; chartered 1621 by Gustavus Adolphus, moved in 1649 because post-glacial rebound made the harbour too shallow; 1887 fire; Gammelstad Church Town UNESCO 1996; the world's largest brackish-water archipelago with 1,312 islands; Luleå University of Technology; SSAB steelworks; Facebook's first European data centre from 2012; fifth-largest airport; seventh-busiest cargo port; northern lights September–March)
+    howItWorks:
+      "吕勒奥是瑞典北博滕省的省会，城区人口约 5 万，在波的尼亚湾北端，由民选的市议体治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。1621 年古斯塔夫二世·阿道夫给它城市特许状，1649 年它整体搬了一次家——冰后回弹让陆地不断抬升，原来的港口太浅了，城只好往海边挪；旧址留下的“加梅尔斯塔德教堂村”有四百多栋教友过夜用的小木屋，1996 年列入世界遗产。1887 年的大火烧掉了大半个城，1893 年落成的新哥特式大教堂是幸存下来的最高建筑。今天 SSAB 的钢厂与吕勒奥理工大学是最大的雇主，2012 年脸书把它在欧洲的第一座数据中心建在这里，看中的是冷空气与水电；外海是世界最大的半咸水群岛，有 1,312 座岛，冬天在冰上开车通行。初来的人最容易犯的错，是把加梅尔斯塔德当作一座村，而它是这座城原来的位置。",
     layout:
       "市中心格默尔斯塔德教堂村是保存完好的木结构教堂村落，1996年列入世界遗产；现代城区沿波的尼亚湾海岸展开，冬季海湾结冰后形成独特的冰上通行景观。",
     gettingAround:
@@ -7102,6 +7183,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   harnosand: {
     identity:
       "海讷桑德是瑞典中北部一座临海小城，人口约1.8万，是探索高海岸世界遗产的传统门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Härnösand (Sweden; municipality seat, 25,012 in 2023; capital of Västernorrland County; on the island of Härnön; seat of the Diocese of Härnösand, the county governor's residence and the county museum; the first Swedish town with electric street lighting, 10 December 1885, from the Gådeå power station; "the gate to the High Coast", the Höga Kusten UNESCO landscape just north)
+    howItWorks:
+      "海讷桑德是瑞典西诺尔兰省的省会，2023 年人口约 2.5 万，建在海讷岛上，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。它虽小，却是一个省的行政与教会中心：海讷桑德教区的主教座堂、省长官邸与省博物馆都在这里，大教堂是瑞典最小的主教座堂。1885 年 12 月 10 日，它成为瑞典第一座用电力照明街道的城市，电来自城外的约德奥水电站。城市自称“高海岸之门”：北面几十公里的高海岸是世界遗产，那里的陆地在冰后回弹中抬升了近 300 米，是全世界记录到的最高幅度，海岸线因此年年在变。松兹瓦尔在南面约 50 公里，斯德哥尔摩在南面约 400 公里。初来的人最容易犯的错，是把海讷桑德当作一个小镇，而它是一个省的首府，只是这个省的人口本来就少。",
     layout:
       "老城沿海讷河口而建，19世纪木结构建筑街区保存完好，是高海岸沿线重要的历史港口城镇。",
     gettingAround:
@@ -7116,6 +7200,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   are: {
     identity:
       "奥勒是瑞典中西部耶姆特兰省的度假小镇，人口约1.4万，是北欧最大的高山滑雪度假地，坐落于奥勒湖畔的奥勒斯基山脚下。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Åre (Sweden; village ~3,200 in Åre Municipality, Jämtland; at about 400 m by Åresjön below Åreskutan; the largest alpine ski resort in northern Europe with more than 30 lifts; tourism about 25 per cent of the local economy; visitors came after the railway of 1882 as "air-guests"; Alpine World Championships 1954, 1977 and 2007 and 2019, over 100 World Cup races; the largest mountain-bike resort in Sweden since the 1990s; on the line from Östersund to Trondheim)
+    howItWorks:
+      "奥勒是瑞典耶姆特兰省的一个村，常住人口约 3,200，属于奥勒市镇，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。村子在奥勒湖边、奥勒山脚下，海拔约 400 米。1882 年铁路通到这里之后，斯德哥尔摩的人开始来“吸空气看山”，当年称他们“空气客”，旅游从那时起成了本地的生意，如今约占经济的四分之一。它是北欧最大的高山滑雪场，有三十多部缆车，是瑞典唯一能办奥运级速降的场地，1954、2007 与 2019 年三次举办高山滑雪世锦赛，世界杯赛在这里跑过一百多场；1990 年代起夏天又成了瑞典最大的山地车场。铁路从厄斯特松德通往挪威的特隆赫姆，从村口经过。初来的人最容易犯的错，是按常住人口预期这里的规模，而旺季的奥勒住着几万人。",
     layout:
       "小镇沿奥勒湖北岸而建，缆车站直通山顶滑雪区，夏季小镇转型为徒步、骑行与钓鱼的户外休闲目的地。",
     gettingAround:
