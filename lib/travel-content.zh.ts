@@ -3985,6 +3985,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   alta: {
     identity:
       "阿尔塔在挪威最北的芬马克郡（北萨米语 Finnmárku）、一条峡湾的尽头、阿尔塔河出海处，市区人口约 1.5 万，是芬马克人口最多的城镇。城外的岩画群记录了约 7000 年前到 2000 年前当地狩猎、捕鱼、驯鹿人群的生活，1985 年列入世界遗产，是北欧规模最大的史前狩猎采集者岩画群之一。芬马克高原（Finnmarksvidda / Finnmárkkoduottar）自古是萨米人放牧驯鹿的区域。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alta (Norway; the largest populated municipality in Finnmark county at 3,849 km² with about 21,708 residents in 2025, 59th most populous in Norway, up 9.5 per cent over the previous decade; just below the 70th parallel, the northernmost settlement of urban significance in the European Economic Area; the Rock Art of Alta, roughly 7000–500 BC, UNESCO World Heritage; the town badly damaged by fire in the Second World War and rebuilt; the Northern Lights Cathedral completed 2013; the Sautso canyon on the Altaelva among the largest in Europe; slate quarrying, education and aurora tourism; midnight sun 18 May–27 July, polar night 26 November–16 January; Alta Airport)
+    howItWorks:
+      "阿尔塔是挪威芬马克郡最大的市镇，市域约 3,849 平方公里，2025 年人口约 21,708，过去十年增长约 9.5%；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。它在北纬 70 度线略南，是欧洲经济区内最北的具规模城镇。城外的阿尔塔岩画约刻于公元前 7000 至前 500 年，1985 年列入世界遗产，是挪威唯一的史前世界遗产，博物馆就建在岩画所在的海岸坡地上。二战末期镇子在大火中损毁，战后重建，因此城区是新的；2013 年落成的“北极光教堂”是新的地标。阿尔塔河切出的绍措峡谷是欧洲较大的峡谷之一，河上的水电站建于 1980 年代前后。板岩开采、教育与极光旅游是本地产业；5 月 18 日至 7 月 27 日太阳不落，11 月 26 日至次年 1 月 16 日太阳不升。初来的人最容易犯的错，是以为纬度这么高就没有森林，而暖流让这一带长着成片的桦树与松林。",
     layout:
       "阿尔塔散布在峡湾底和几条河谷里，几个中心（Bossekop、Elvebakken、Bukta）之间有点距离。标志性的现代建筑“北极光大教堂”是一座螺旋形的钛板建筑。城南是阿尔塔河切出的峡谷（北欧最大的峡谷之一）和通往内陆芬马克高原的路，高原上是矮桦、湖泊和驯鹿。",
     gettingAround:
@@ -8358,6 +8361,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zakopane: {
     identity:
       "扎科帕内是波兰南部塔特拉山脉北麓的山城，人口约2.7万，被称为波兰的“冬季首都”，是探索塔特拉国家公园的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakopane (Poland; town in Lesser Poland Voivodeship at the foot of the Tatra Mountains near the Slovak border, 27,266 residents in 2017, at 800–1,100 m; called the winter capital of Poland with more than 2.5 million visitors a year; the centre at the crossing of Krupówki and Kościuszko streets; the Zakopane Style of Stanisław Witkiewicz joining Carpathian vernacular with modern design, as in Villa Koliba of 1892–93 and the Tatra Museum of 1913–24; a centre of Góral highlander culture, costume, music and oscypek cheese; the Kasprowy Wierch cable car completed 1936, Gubałówka, and the Wielka Krokiew ski jump opened 1925; Nordic World Ski Championships in 1929, 1939 and 1962)
+    howItWorks:
+      "扎科帕内是波兰小波兰省的城镇，2017 年人口 27,266，海拔 800 至 1,100 米，在塔特拉山北麓、靠近斯洛伐克边境；波兰的地方行政分省、县与市镇三级，本镇属塔特拉县，市镇管本地事务，省管区域规划。它自称波兰的“冬都”，每年到访者超过两百五十万，几乎全国的滑雪、登山与暑期避暑都往这一处集中，克鲁普夫基街与科希丘什科街的交叉口是全城的中心。这里是戈拉尔高地人文化的中心，服饰、音乐、木屋与羊奶熏酪“奥斯齐佩克”都出自这一支；19 世纪末画家斯坦尼斯瓦夫·维特凯维奇把当地木构做法与现代设计合成“扎科帕内风格”，1892 年的科利巴别墅与 1913 至 1924 年的塔特拉博物馆是代表作，这套样式后来被视为波兰的民族建筑语言。1936 年通车的卡斯普罗维山缆车与 1925 年启用的大克罗基耶夫跳台仍在使用，1929、1939 与 1962 年三次举办北欧滑雪世锦赛。初来的人最容易犯的错，是把它当作单纯的雪场，而它同时是一个文化流派的发源地。",
     layout:
       "小城沿塔特拉山脉北麓山谷而建，克鲁普夫基大街是当地最热闹的商业步行街，多座缆车站连接城区与周边山峰。",
     gettingAround:
@@ -8372,6 +8378,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rzeszow: {
     identity:
       "热舒夫是波兰东南部小波兰地区的城市，人口约19.6万，是探索别什恰迪山脉的门户，也是波兰重要的航空工业中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rzeszów (Poland; capital of Subcarpathian Voivodeship and the largest city in south-eastern Poland, about 198,540 inhabitants in January 2026, the 15th largest Polish city, on both banks of the Wisłok in the Sandomierz Basin; unusually among Polish cities of its size the population is growing, with municipal boundaries extended between 2017 and 2021; town rights from Casimir III the Great in 1354; historically on the east-west trade route; Asseco Poland and G2A.COM, and aerospace manufacturing including one of the world's two makers of F-16 engines; the Renaissance town hall, Rzeszów Castle and preserved synagogues; the underground tourist route; Rzeszów-Jasionka Airport; the A4 motorway)
+    howItWorks:
+      "热舒夫是波兰喀尔巴阡山省的省会，也是波兰东南部最大的城市，2026 年 1 月人口约 19.9 万，是波兰第 15 大城市；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会的所在。它在维斯沃克河两岸的桑多梅日盆地里，1354 年由卡齐米日三世授予城市权，历史上位于连接欧洲与东方的商路上。与波兰同等规模的城市普遍收缩不同，热舒夫的人口在增长，2017 至 2021 年间还多次扩大市界并入周边乡镇。支撑它的是两样产业：一是软件与信息技术，Asseco Poland 与 G2A 的总部在此；二是航空制造，本地的“航空谷”产业集群与热舒夫工业大学相互支撑，世界上仅有的两家 F-16 发动机制造商之一在这里设厂。文艺复兴式的市政厅与老城堡在市中心，地下有一条穿过老城地窖的参观通道，保存下来的犹太会堂建筑也在老城。亚西翁卡机场在城北，A4 高速从旁经过。初来的人最容易犯的错，是把波兰东南部当作农业地带，而这里是航空工业的集中区。",
     layout:
       "老城中心保留文艺复兴风格市集广场，市郊近年发展为波兰重要的航空产业集群，得名“波兰航空谷”。",
     gettingAround:
@@ -8437,6 +8446,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   szczecin: {
     identity:
       "什切青是波兰西北部奥得河口的港口城市，人口约39万，紧邻德国边境，是波兰重要的海港与工业城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Szczecin (Poland; capital of West Pomeranian Voivodeship and the seventh-largest Polish city, the largest city of north-western Poland; on the Oder south of the Szczecin Lagoon and the Bay of Pomerania, a major seaport; recorded from the 8th century, a major Baltic trading town under the House of Griffin, under the Swedish Empire from 1630 and Prussia from 1720, becoming part of Poland after the Second World War under the Potsdam Agreement; the 19th-century street plan influenced by Haussmann's Paris with star-shaped junctions and much green space; the Ducal Castle; the Wały Chrobrego terraces; headquarters of NATO's Multinational Corps Northeast since 1999; several universities)
+    howItWorks:
+      "什切青是波兰西滨海省的省会，是波兰第七大城市，也是西北部最大的城市；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。城市在奥得河下游、什切青潟湖以南，与外海之间隔着一段内水航道，港口与更靠海的希维诺乌伊希切共同构成波兰最大的港口群之一，柏林在西面约 130 公里。它的记载可追到 8 世纪，中世纪在格里芬王朝治下成为波罗的海重要商埠，1630 年起属瑞典，1720 年归普鲁士，二战后依波茨坦协定划归波兰。今天最能看出它历史的是街道：19 世纪的改造仿照奥斯曼改造后的巴黎，放射状的星形广场与宽林荫道贯穿全城，市区绿地与水面的比例在波兰各大城市中居前列。格里芬王朝的公爵城堡与河岸上的赫罗布雷堤台是主要地标，1999 年起北约的东北多国军团总部设在此。初来的人最容易犯的错，是以为这座港口城市临海，而它在河上，离开阔海面还有约 65 公里。",
     layout:
       "老城沿奥得河支流而建，波美拉尼亚公爵城堡矗立在城市高地，港口区沿奥得河展开，是波兰面积最大的城市绿地系统之一的所在地。",
     gettingAround:
@@ -8451,6 +8463,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   torun: {
     identity:
       "托伦是波兰中北部维斯瓦河畔的历史古城，人口约19.6万，是天文学家哥白尼的出生地，完整保留的中世纪老城1997年列入世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Toruń (Poland; city in Kuyavian-Pomeranian Voivodeship, one of two regional capitals alongside Bydgoszcz, about 196,935 residents, on the Vistula; founded by the Teutonic Knights in 1233, joined the Hanseatic League in 1264 and remained a significant trading centre, a royal city from 1506 with voting rights in Polish royal elections; the city avoided damage in both world wars and retained its Gothic to Baroque architecture, the Medieval Town of Toruń inscribed by UNESCO in 1997 for its intact layout and brick Gothic buildings; Nicolaus Copernicus born here in 1473, his birthplace now a museum; gingerbread made here for nearly a millennium; the Camerimage film festival)
+    howItWorks:
+      "托伦是波兰库亚维滨海省的城市，人口约 19.7 万，在维斯瓦河边；这个省有一个少见的安排——省会一分为二，省议会与省长（marszałek）在托伦，中央派驻的省督（wojewoda）在比得哥什，两座城市各占一半，这在波兰十六个省里是唯一的。城市 1233 年由条顿骑士团建立，1264 年加入汉萨同盟，长期是维斯瓦河上的贸易重镇，1506 年起成为王室直辖城市，可参与国王选举。它最不寻常的地方是完好：两次世界大战都没有波及市中心，从哥特式到巴洛克的建筑连片保存，1997 年“托伦中世纪城区”以其完整的城市格局与砖砌哥特建筑列入世界遗产。1473 年哥白尼生在这里，故居现为博物馆；姜饼在此制作了近千年，是本地的老行业。哥白尼大学在城中。初来的人最容易犯的错，是以为省会只有一个，而这个省的行政机构分设在两座城市。",
     layout:
       "老城沿维斯瓦河北岸而建，哥特式砖砌建筑密布，哥白尼故居博物馆与老城市政厅是老城核心地标。",
     gettingAround:
@@ -8465,6 +8480,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   olsztyn: {
     identity:
       "奥尔什丁是波兰东北部瓦尔米亚—马祖里地区的核心城市，人口约17万，是探索马祖里湖区的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Olsztyn (Poland; capital of Warmian-Masurian Voivodeship, about 169,793 residents in 2021, on the Łyna; a watchtower from 1334 and municipal rights in 1353 granted by the cathedral chapter of the Bishopric of Warmia; Nicolaus Copernicus lived in the town castle as administrator from 1516 to 1521 and directed its defence; 15 lakes within the administrative boundary covering about 725 ha and forest over 21 per cent of the city area, part of the Land of a Thousand Lakes; the Gothic co-cathedral of St James; the University of Warmia and Mazury founded 1999; the Michelin plant the largest employer)
+    howItWorks:
+      "奥尔什丁是波兰瓦尔米亚-马祖里省的省会，2021 年人口约 17 万，在瓦纳河边；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。它 1334 年从一座瞭望塔起步，1353 年由瓦尔米亚主教区的座堂议事会授予城市权——这一带中世纪长期由主教区治理，而不是世俗诸侯，城堡与教堂因此是城市的核心。哥白尼 1516 至 1521 年作为瓦尔米亚的管理者住在这座城堡里，并在 1520 至 1521 年主持了城市的防务。它最鲜明的特征是水与林：市界之内有十五个湖，水面约 725 公顷，森林占市域两成以上，因此它被视为马祖里湖区的门户，全省最著名的资源就是这一片湖群。圣雅各布哥特式共同主教座堂在老城，1999 年成立的瓦尔米亚与马祖里大学是本地最大的学校，米其林轮胎厂是最大的雇主。初来的人最容易犯的错，是把湖区想成城外的远方，而这座城本身就有十几个湖。",
     layout:
       "老城建于奥卡瓦河畔的高地上，哥特式砖砌城堡矗立城市核心，历史上是天文学家哥白尼曾任职管理的城堡之一。",
     gettingAround:
@@ -8479,6 +8497,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bialystok: {
     identity:
       "比亚韦斯托克是波兰东北部波德拉谢地区的核心城市，人口约29.7万，是探索比亚沃维耶扎原始森林与别布扎沼泽的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Białystok (Poland; capital of Podlaskie Voivodeship and the largest city in north-eastern Poland, about 289,000 residents, tenth nationally, with the second-highest population density among Polish cities; about 200 km north-east of Warsaw on the Białystok Uplands along the Biała; recorded from about 1437 when a member of the Raczków family received a wilderness area along the river; flourished in the 18th century under the Branicki family, the Branicki Palace compared to Versailles; a major textile centre in the 19th century, called the Manchester of the North; L. L. Zamenhof, creator of Esperanto, born here in 1859; a historically multi-ethnic and multi-faith city with Orthodox churches; the fifth most forested Polish municipality, about 1,846 ha or 18 per cent)
+    howItWorks:
+      "比亚韦斯托克是波兰波德拉谢省的省会，也是波兰东北部最大的城市，人口约 28.9 万，居全国第十，人口密度在波兰各大城市中位居第二；波兰的地方行政分省、县与市镇三级，省会同时是省政府与省议会所在。华沙在西南约 200 公里。城市约 1437 年见于记载，18 世纪在布拉尼茨基家族治下成型：他们把这里建成一座宫廷城市，巴洛克的布拉尼茨基宫与法式园林至今是市中心的核心，因此本地常称它“波德拉谢的凡尔赛”。19 世纪它成为纺织业中心，一度被称作“北方的曼彻斯特”。这一带历史上族群与信仰混杂，天主教堂与东正教堂并立至今，波兰的东正教徒有相当一部分集中在这个省；1859 年世界语的创制者柴门霍夫生于此城，他自述这种混杂的语言环境促成了他的想法。全市森林约 1,846 公顷、占市域一成八，比亚沃维耶扎原始森林在东南。初来的人最容易犯的错，是以为波兰只有天主教，而这里长期是多信仰并存之地。",
     layout:
       "老城以布拉尼茨基宫及其巴洛克花园为核心，被称为“波德拉谢的凡尔赛”，多元宗教建筑（天主教、东正教、犹太教堂遗址）见证了当地历史上的多元文化格局。",
     gettingAround:
@@ -9904,6 +9925,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   turkestan: {
     identity:
       "突厥斯坦是哈萨克斯坦南部一座历史古城，人口约20万，曾是丝绸之路上的重要商贸与宗教中心，因城内的亚萨维陵墓而闻名，是哈萨克斯坦最重要的伊斯兰朝圣与历史文化目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Turkistan (Kazakhstan; capital of Turkistan Region, 160 km north-west of Shymkent near the Syr Darya; the region was renamed and the capital moved here in 2018 when Shymkent became a city of republican status; population about 300,000 in 2023, about 52.5 per cent Kazakh and 45.2 per cent Uzbek; archaeological records from the 4th century, capital of the Kazakh Khanate between the 16th and 18th centuries; the Mausoleum of Khoja Ahmed Yasawi built by Timur in the 1390s, UNESCO World Heritage and on Kazakh banknotes until 2006; local tradition holds that three visits equal one pilgrimage to Mecca; proclaimed Spiritual Capital of the Turkic World by the Organization of Turkic States in 2021; Hazrat Sultan International Airport opened 2021; Ahmet Yassawi University)
+    howItWorks:
+      "突厥斯坦是哈萨克斯坦突厥斯坦州的首府，在奇姆肯特西北约 160 公里、锡尔河附近，2023 年人口约 30 万；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。它成为州府是近年的事：2018 年奇姆肯特升格为共和国直辖市，原南哈萨克斯坦州改名突厥斯坦州并把首府迁到这里，此后城市按规划大规模新建，2021 年启用了新的国际机场。这座城的分量来自一座建筑：14 世纪 90 年代帖木儿下令为苏非导师霍加·艾哈迈德·亚萨维修建陵墓，工程未完工即停，因此正面至今保留着未装饰的砖砌，反而成为研究帖木儿时期建筑做法的实物，2003 年列入世界遗产，是哈萨克斯坦第一处。16 至 18 世纪它是哈萨克汗国的都城，历代可汗葬在陵旁。当地有“来此三次相当于一次朝觐”的说法，2021 年突厥国家组织称它为“突厥世界的精神首都”。居民中哈萨克族约五成二、乌兹别克族约四成五。初来的人最容易犯的错，是以为这是一座老城，而城区大部分是近年新建的。",
     layout:
       "亚萨维陵墓是老城的核心地标，周边分布考古遗址公园与新建的宗教文化设施；城市近年经历大规模现代化改造，新建的哈兹拉特苏丹国际机场与整洁的市政广场是这一改造的直观体现。",
     gettingAround:
@@ -9918,6 +9942,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   karaganda: {
     identity:
       "卡拉干达是哈萨克丘陵中部的工业城市，人口逾50万，历史上因煤炭开采而兴起，是哈萨克斯坦中部重要的矿业与工业中心，也是探索卡尔卡拉雷山与别克套阿塔的门户之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Karaganda (Kazakhstan; capital of Karaganda Region in central Kazakhstan about 230 km south-east of Astana, 497,777 residents in the 2020 census, the fifth-most populous city in the country; coal mining anchors the economy, production beginning in 1930 and the railway arriving in February 1931 bringing supplies and qualified staff, with 8 coal mines today against as many as 26 in the Soviet period; the Karlag camp was in the region and by 1939 the city held about 100,000 people; ethnic Germans, many deported Volga Germans, were a large share of inhabitants in the 1940s and more than 100,000 people have emigrated to Germany since 1991; Karaganda State University; Sary-Arka Airport 20 km south-east; the highest PM2.5 levels measured among Kazakh cities from 2017 to 2022)
+    howItWorks:
+      "卡拉干达是哈萨克斯坦卡拉干达州的首府，在阿斯塔纳东南约 230 公里，2020 年人口 497,777，是全国第五大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这座城因煤而生：1930 年这里开始大规模采煤，1931 年 2 月铁路通到矿区，物资与技术人员随之进入，城市在草原上迅速成形，苏联时期最多时有 26 座煤矿，如今在产的约 8 座，钢铁重镇特米尔套在北面，两地构成一个连片的工业区。20 世纪的人口来源也与制度有关：卡拉干达劳改营设在本州，1939 年全城约十万人；1940 年代大量被强制迁移的伏尔加德意志人被安置在此，德裔曾占相当比例，1991 年后有十万以上的人移居德国，城市的族群构成因此几经变化。卡拉干达大学在城中，萨雷阿尔卡机场在东南 20 公里。2017 至 2022 年的监测中，这里的细颗粒物浓度在哈萨克斯坦各城市中最高。初来的人最容易犯的错，是以为草原上的城都很古老，而它不到一百年。",
     layout:
       "城市由苏联时期围绕煤矿工业发展而成，市中心保留大量苏联时期建筑，城市以东约220公里是卡尔卡拉雷国家公园，以南约300公里、巴尔喀什湖以北约70公里处是别克套阿塔花岗岩山。",
     gettingAround:
@@ -9932,6 +9959,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   semey: {
     identity:
       "谢梅伊是哈萨克斯坦东部沿额尔齐斯河而建的历史城市，人口逾30万，历史上曾是苏联时期塞米巴拉金斯克核试验场的行政中心，如今是额尔齐斯河沿岸重要的文化与教育城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Semey (Kazakhstan; formerly Semipalatinsk, capital of Abai Region, created in 2022, on the Irtysh near the Russian border, population 312,764 in November 2024; the settlement began in 1718 as a Russian fort near ruins of seven buildings that gave it the name meaning seven-chambered city; capital of the Alash Autonomy as Alash-Qala between 1917 and 1920; renamed Semey in 2007; Dostoevsky was exiled here from 1854 to 1859 and the Dostoevsky Literary Memorial Museum is the only one outside Russia; the poet and philosopher Abai Qunanbaiuly and the Abai Museum; the Semipalatinsk nuclear test site established 180 km west in 1949, where 456 tests took place between 1949 and 1989, the site closed on 29 August 1991)
+    howItWorks:
+      "谢梅伊是哈萨克斯坦阿拜州的首府——这个州 2022 年新设，首府定在此城；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。城市在额尔齐斯河边、靠近俄罗斯边境，2024 年 11 月人口 312,764。1718 年俄国在此建堡，堡址附近有一处七间房的遗迹，“七间房之城”即塞米巴拉金斯克一名的来历；1917 至 1920 年它以“阿拉什城”之名作过阿拉什自治政府的所在地，2007 年市名改为谢梅伊。俄国作家陀思妥耶夫斯基 1854 至 1859 年在此服流刑，本地的陀思妥耶夫斯基文学纪念馆是俄罗斯境外唯一的一座；哈萨克近代诗人与思想家阿拜·库南巴耶夫也与这座城关系密切，阿拜博物馆在城中，新设的州即以他命名。1949 年苏联在城西约 180 公里设塞米巴拉金斯克核试验场，1949 至 1989 年间在此进行了 456 次核试验，1991 年 8 月 29 日关闭，这一日期后来成为国际禁止核试验日。2001 年跨额尔齐斯河的悬索桥通车。初来的人最容易犯的错，是把这两个名字当作两座城，而它们是同一处。",
     layout:
       "城市沿额尔齐斯河两岸分布，河上的谢梅伊斜拉桥是城市地标之一；老城区保留部分19世纪末至20世纪初的历史建筑，与作家陀思妥耶夫斯基曾在此流放居住的历史有关。",
     gettingAround:
@@ -9946,6 +9976,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pavlodar: {
     identity:
       "巴甫洛达尔是哈萨克斯坦东部沿额尔齐斯河而建的城市，人口逾35万，是巴甫洛达尔州首府，历史上因铝、石化等重工业而兴起，是额尔齐斯河沿岸重要的工业与文化城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pavlodar (Kazakhstan; capital of Pavlodar Region in the north-east, about 450 km north-east of Astana on the Irtysh, estimated population 367,254 in 2023; founded in 1720 as the Koryakovsky outpost of Imperial Russia and renamed Pavlodar in 1861, the name meaning the gift of Paul, for the birth of Grand Duke Paul Alexandrovich; the economy centres on aluminium, industrial chemicals and farm machinery, with an oil refinery completed in 1978 and the pharmaceutical company Romat; about 46.5 per cent Kazakh and 41.6 per cent Russian with Ukrainian, German and Tatar communities; an 89 km tram network in service since 1965; a river port on the Irtysh; Pavlodar Airport)
+    howItWorks:
+      "巴甫洛达尔是哈萨克斯坦巴甫洛达尔州的首府，在阿斯塔纳东北约 450 公里、额尔齐斯河边，2023 年估计人口 367,254；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。它 1720 年作为俄国的科里亚科夫哨所设立，1861 年改名巴甫洛达尔，字面意思是“保罗的礼物”，取自当年出生的俄国大公保罗·亚历山德罗维奇。20 世纪它被建成重工业城市：铝厂、化工厂与农机制造是支柱，1978 年建成炼油厂；东面埃基巴斯图兹的露天煤矿与坑口电站为这片工业区供电，是哈萨克斯坦最重要的能源基地之一。额尔齐斯河上的河港把货运往下游送出，这条河最终流入俄罗斯与北冰洋。居民中哈萨克族约 46.5%、俄罗斯族约 41.6%，另有乌克兰、德意志与鞑靼等社群，俄语在日常中使用广泛。1965 年通车的有轨电车网长约 89 公里，至今在运营。初来的人最容易犯的错，是以为哈萨克斯坦到处是草原牧区，而这里是一片工厂与电厂。",
     layout:
       "城市沿额尔齐斯河右岸分布，河滨步道与中心广场是市民休闲核心区；老城区保留部分苏联及更早时期建筑。",
     gettingAround:
@@ -9960,6 +9993,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kokshetau: {
     identity:
       "科克舍套是哈萨克斯坦北部阿克莫拉州首府，人口约15万，坐落于科克舍套丘陵地带，是前往布拉拜国家公园（“哈萨克斯坦的瑞士”）的主要门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kokshetau (Kazakhstan; capital of Akmola Region about 300 km north-west of Astana, stretching along the southern shore of Lake Kopa in the Kokshetau Hills at 234 m; estimated population 176,849 in 2024, the 17th-largest city in the country; founded in 1824 as a Russian administrative outpost and given city status in 1895, the administrative centre of Kokshetau Oblast from 1944 until its dissolution in 1997, then capital of Akmola Region from 1999; about 62 per cent Kazakh, up from 36 per cent in 1999, and about 23 per cent Russian; Burabay National Park about 70 km away; the Akmola Regional Museum; named Kazakhstan's City of Culture for 2021)
+    howItWorks:
+      "科克舍套是哈萨克斯坦阿克莫拉州的首府，在阿斯塔纳西北约 300 公里，沿科帕湖南岸铺开，海拔 234 米，2024 年估计人口 176,849，是全国第 17 大城市；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。这里有一个容易混淆的关系：阿克莫拉州的首府不在同名的阿克莫拉——那个名字后来成了首都阿斯塔纳的旧称，州府设在这座城。它 1824 年作为俄国的行政据点建立，1895 年获城市地位，1944 年起为科克舍套州首府，1997 年该州撤销，1999 年它成为阿克莫拉州首府。城市的族群构成变化很快：哈萨克族的比例从 1999 年的约 36% 升到 2024 年的约 62%，俄罗斯族约占 23%。真正让这一带出名的是东南约 70 公里的布拉拜国家公园：松林、花岗岩丘与湖泊连成一片，在一望无际的草原上显得突兀，本地称之为“哈萨克的瑞士”。初来的人最容易犯的错，是把它与阿斯塔纳的旧称阿克莫拉混为一谈。",
     layout:
       "城市规模不大、以行政与交通功能为主，城市以北约70公里是布拉拜国家公园，是本地区最主要的自然旅游目的地。",
     gettingAround:
@@ -10057,6 +10093,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cappadocia: {
     identity:
       "卡帕多奇亚是中安纳托利亚一片以精灵烟囱火山灰地貌与热气球飞行闻名的地区，核心镇格雷梅人口约2000人，是土耳其最具辨识度的旅游目的地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cappadocia and Göreme (Turkey; a historical region of Central Anatolia spanning Nevşehir, Kayseri, Aksaray, Kırşehir, Sivas and Niğde provinces, the name from Old Persian Katpatuka; the landscape formed by erosion of thick volcanic deposits from eruptions of Erciyes, Hasan Dağ and Göllüdağ, producing the fairy chimneys; ruled in turn by Persian, Greek, Roman, Byzantine and Ottoman powers, an early Christian centre with the Cappadocian Fathers of the 4th century; the Göreme Open Air Museum with more than 30 rock-cut churches and chapels with Byzantine frescoes, Göreme National Park and the Rock Sites of Cappadocia inscribed by UNESCO in 1985; the underground cities of Derinkuyu and Kaymaklı; cave hotels and hot-air ballooning)
+    howItWorks:
+      "卡帕多奇亚是土耳其中安纳托利亚的一片历史地区，跨内夫谢希尔、开塞利、阿克萨赖等数省，游客常住的格雷梅是内夫谢希尔省的一个镇；土耳其 2012 年第 6360 号法之后，人口较多的省实行“大市”制，市界与省界重合，本地事务由市与区两级办理。这片地貌来自火山：埃尔吉耶斯山、哈桑山与格柳山的多次喷发把厚层火山灰盖在这一带，其后的流水与风把松软的凝灰岩切成柱与谷，硬质岩帽留在柱顶，形成当地所称的“仙人烟囱”。凝灰岩好挖不易塌，因此人们直接在岩体里凿出住房、教堂与整座地下城——代林库尤与卡伊马克勒的地下城可深入数层，用于避难；格雷梅露天博物馆里有三十多座岩凿教堂，壁画属拜占庭时期。1985 年“格雷梅国家公园与卡帕多奇亚岩石遗址”列入世界遗产。热气球在日出前起飞，由民航主管部门按天气与流量管控。初来的人最容易犯的错，是把卡帕多奇亚当作一个城，而它是一片跨省的地区。",
     layout:
       "格雷梅、于尔居普、阿瓦诺斯与于奇希萨尔等多个小镇散布于火山灰地貌区内，格雷梅国家公园与露天博物馆是区域核心，德林库尤等地下城位于区域南部。",
     gettingAround:
@@ -10071,6 +10110,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bodrum: {
     identity:
       "博德鲁姆是土耳其爱琴海南岸半岛度假胜地，人口约20万，因白色建筑、风车与圣彼得城堡闻名，是土耳其地中海式生活方式的代表城镇之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bodrum (Turkey; town and district of Muğla Province, the ancient Halicarnassus, whose Mausoleum was one of the Seven Wonders of the Ancient World; Bodrum Castle built by the Knights of St John from 1402 using stone from the Mausoleum, now the Museum of Underwater Archaeology; the district population grew from about 26,000 in 1965 to about 198,000 in 2023 as tourism replaced fishing and sponge diving; white-washed building mandated since 2006; peninsula villages including Yalıkavak, Gümüşlük and Türkbükü; marinas and gulet yachting; Milas-Bodrum Airport; ferries to Kos)
+    howItWorks:
+      "博德鲁姆是土耳其穆拉省的一个县与同名县城，在爱琴海边的一处半岛上；穆拉是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。它是古代的哈利卡纳苏斯：公元前 4 世纪的摩索拉斯陵墓曾是世界七大奇迹之一，后毁于地震，1402 年起圣约翰骑士团用陵墓的石料在海岬上建起博德鲁姆城堡，如今这座城堡是水下考古博物馆，藏有从附近海域打捞的古代沉船。20 世纪中期这里还是渔业与采海绵的小镇，1965 年全县约 2.6 万人，2023 年已约 19.8 万，旅游把它彻底改写；2006 年起当地规定新建筑一律刷白，因此整个半岛外观统一。真正的度假区分散在半岛上的村子里——亚勒卡瓦克、居米什吕克、蒂尔克比库各有不同的气质，县城只是港口与交通的中心。米拉斯—博德鲁姆机场在东北，渡轮通往希腊的科斯岛。初来的人最容易犯的错，是把住宿定在县城，而多数人想去的海湾在半岛另一侧，开车还要半小时以上。",
     layout:
       "城市围绕博德鲁姆湾呈半圆形分布，圣彼得城堡（博德鲁姆城堡）矗立于港湾中央的岬角上，将港湾分为东、西两个海湾；半岛周边分布图尔古特雷斯、亚利卡瓦克等多个度假小镇。",
     gettingAround:
@@ -10085,6 +10127,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pamukkale: {
     identity:
       "棉花堡是土耳其西南部一处以洁白钙化梯田闻名的地热景观，隶属代尼兹利省，与山顶的希拉波利斯古城共同构成UNESCO世界遗产地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pamukkale (Turkey; in Denizli Province, the name meaning cotton castle; travertine terraces deposited by mineral water from hot springs, with 17 springs ranging from about 35 °C to 100 °C; the ancient Greek city of Hierapolis built above the terraces as a thermal spa, with theatre and necropolis, important in the Phrygian, Roman and Byzantine periods and an early Christian centre; Hierapolis-Pamukkale inscribed by UNESCO in 1988 for both cultural and natural value; over two million visitors a year, with UNESCO and local authorities regulating water flow and closing sections in turn to let the formations regenerate)
+    howItWorks:
+      "棉花堡在土耳其代尼兹利省，土耳其语的字面意思就是“棉花城堡”；代尼兹利是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。这片白色台地是水造出来的：山坡上有十七处温泉，水温从约 35 度到接近沸点，泉水溶着大量碳酸钙，流出地表后二氧化碳逸散、碳酸钙析出，一层层沉积成钙华梯田，因此这片“雪”其实是石头，而且还在长。台地之上是古希腊城市希拉波利斯，公元前 2 世纪起就作为温泉疗养城建设，剧场与城外规模巨大的墓地保存至今，它也是早期基督教的重要地点。1988 年“希拉波利斯—棉花堡”以文化与自然双重价值列入世界遗产。为保护钙华，20 世纪 90 年代拆除了建在台地上的旅馆与公路，如今游客只能赤脚沿指定路线行走，管理方还按季轮流封闭部分区段、调控放水，让沉积恢复。初来的人最容易犯的错，是以为可以随处下水，而能踩的只有划定的一条线。",
     layout:
       "棉花堡台地位于代尼兹利市以北约20公里处，台地顶端是希拉波利斯古城遗址，山脚下的棉花堡镇为游客提供住宿与餐饮服务。",
     gettingAround:
@@ -10099,6 +10144,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   trabzon: {
     identity:
       "特拉布宗是土耳其黑海东岸重要港口城市，人口逾80万，历史上曾是丝绸之路支线港口与拜占庭特拉比松帝国都城，是探索黑海山地景观的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trabzon (Turkey; city and capital of Trabzon Province on the north-eastern Black Sea coast, urban population about 335,000; founded in 756 BC as the Greek colony Trapezus, capital of the Empire of Trebizond, a successor state of Byzantium after the Fourth Crusade of 1204, until Ottoman rule began in 1461; the Hagia Sophia of Trabzon; Sumela Monastery about 45 km away at Maçka; steep mountains behind the coast and the wettest region of Turkey; hazelnuts and tea the main exports, anchovies known throughout Turkey as hamsi; Uzungöl; Trabzonspor; Trabzon Airport)
+    howItWorks:
+      "特拉布宗是土耳其特拉布宗省的省会，在黑海东南岸，城区人口约 33.5 万；特拉布宗是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。地形决定了这座城的形状：庞廷山脉在离岸很近的地方陡然升起，可用的平地只有沿海一条窄带，因此城市顺着海岸拉长，往山上一层层叠着建，公路与隧道是日常。公元前 756 年它作为希腊殖民城市特拉佩苏斯建立，1204 年第四次十字军东征之后成为特拉比松帝国的都城，1461 年起入奥斯曼治下；13 世纪的圣索菲亚教堂建筑保存至今，苏梅拉修道院嵌在城南约 45 公里马奇卡的悬崖上。这一带是土耳其降水最多的地区，山坡上密植茶树与榛子，两者是本地的主要出口；黑海的凤尾鱼在土耳其称“哈姆西”，是这座城最有名的食物。乌宗湖在南面山中。初来的人最容易犯的错，是按地中海沿岸的印象预期这里，而黑海岸多雨、多云、山陡。",
     layout:
       "城市沿黑海海岸带状分布，老城区保留拜占庭时期特拉布宗圣索菲亚教堂等历史建筑，市郊山区分布苏美拉修道院与乌宗湖等自然与人文景观。",
     gettingAround:
@@ -10113,6 +10161,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   konya: {
     identity:
       "科尼亚是土耳其中安纳托利亚重要城市，人口逾220万，历史上是塞尔柱王朝在安纳托利亚的都城，因苏菲派诗人鲁米与旋转苦行僧传统闻名，是土耳其重要的宗教文化中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Konya (Turkey; city and capital of Konya Province, the largest province of Turkey by area, the metropolitan municipality counting 2,330,024 in 2024 and the sixth most populous city in Turkey; historically Iconium, capital of the Seljuk Sultanate of Rum in the 12th and 13th centuries with its Seljuk architecture; Rumi, called Mevlâna, spent his last years here and his turquoise-domed tomb is the chief visitor site, with authentic sema performances each Saturday at the Mevlana Cultural Centre and the Şeb-i Arûs in December; on the south-western edge of the Central Anatolian Plateau in Turkey's largest plain, a cold semi-arid climate; among the Anatolian Tigers economically; high-speed rail to Ankara, Istanbul and Karaman; Çatalhöyük nearby; etli ekmek)
+    howItWorks:
+      "科尼亚是土耳其科尼亚省的省会，科尼亚是土耳其面积最大的省；这里实行“大市”制，市界与省界重合，2024 年大市辖区人口 2,330,024——因此这个数字包括了广阔的农村，不是市区人口，市区在其中约占一半，全国排第六。城市在中安纳托利亚高原西南缘的大平原上，气候属冷半干旱，冬冷夏热、雨少，这片平原是土耳其最大的产粮区，小麦与甜菜是它的支柱，本地因经济活跃被归入“安纳托利亚之虎”。12 至 13 世纪它是塞尔柱罗姆苏丹国的首都，城中的塞尔柱式清真寺与经学院留自那个时代。13 世纪的苏非诗人鲁米在此度过晚年，绿松石圆顶的梅夫拉纳陵是全城最主要的参观地，每周六在文化中心有旋转舞“塞玛”的正式演出，12 月的“谢比阿鲁斯”纪念活动规模最大。高铁通往安卡拉与伊斯坦布尔，恰塔霍裕克遗址在东南约 40 公里。初来的人最容易犯的错，是用大市人口来估计城市规模，而那是全省的数字。",
     layout:
       "梅夫拉纳博物馆（鲁米陵墓所在地）是老城核心地标，周边分布阿拉丁清真寺、细长尖塔神学院博物馆等塞尔柱时期建筑，是科尼亚历史城区的核心区域。",
     gettingAround:
@@ -10127,6 +10178,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bursa: {
     identity:
       "布尔萨是土耳其第四大城市，人口逾216万，是奥斯曼帝国首个都城（1326至1365年），因清真寺众多与紧邻乌鲁山滑雪场而被称为“绿色布尔萨”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bursa (Turkey; city and capital of Bursa Province, the fourth most populous city in Turkey and second in the Marmara Region after Istanbul; captured from the Byzantines in 1326 and the capital of the early Ottoman state until the 1360s, when the capital moved to Edirne; Bursa and Cumalıkızık: the Birth of the Ottoman Empire, UNESCO World Heritage 2014; the Grand Mosque with twenty domes in four rows of five, the Green Mosque and Green Tomb, the Koza Han silk market; Mount Uludağ above the city with skiing and thermal springs used since Roman times; the largest production centre of the Turkish automotive industry with Fiat, Renault and Bosch, plus textiles and food; called Yeşil Bursa, green Bursa)
+    howItWorks:
+      "布尔萨是土耳其布尔萨省的省会，是土耳其第四大城市、马尔马拉地区仅次于伊斯坦布尔的第二大城市；布尔萨实行“大市”制，市界与省界重合，本地事务由大市与县两级办理。1326 年奥斯曼势力从拜占庭手中取得此城，此后到 1360 年代它是奥斯曼国家的第一个主要都城，之后迁往埃迪尔内；2014 年“布尔萨与楚马勒克兹克：奥斯曼帝国的诞生”列入世界遗产，涵盖大清真寺、绿色清真寺与绿陵以及山坡上的老村楚马勒克兹克。大清真寺的屋顶由二十个穹顶按四排五列排开，科扎商栈曾是丝绸交易的中心——布尔萨长期是丝绸之路西端的丝织重镇。城市贴着乌鲁山的北坡，山上有滑雪场与缆车，罗马时代起就利用这里的温泉，因此市内多浴场，绿地多，本地自称“绿布尔萨”。今天它是土耳其汽车工业最大的生产中心，菲亚特、雷诺与博世都在此设厂。初来的人最容易犯的错，是把它当作伊斯坦布尔的一日游，而它是一座工业与遗产并重的大城。",
     layout:
       "老城区集中分布布尔萨大清真寺、绿色清真寺等奥斯曼早期建筑，科扎商队旅馆一带是传统丝绸贸易市集所在地；乌鲁山耸立于城市南侧，山顶为滑雪度假区。",
     gettingAround:
