@@ -5959,6 +5959,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mons: {
     identity:
       "蒙斯是埃诺省首府，人口约9.5万，2015年曾获选欧洲文化之都，是瓦隆大区西部重要的文化城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mons (capital of Hainaut Province, Wallonia; 147.56 km², ~95,299 in 2018, 19 sub-municipalities; belfry 87 m, UNESCO 1999 among the Belfries of Belgium and France; Ducasse de Mons/Doudou on Trinity Sunday, UNESCO intangible; SHAPE, NATO's Supreme Headquarters Allied Powers Europe, at nearby Casteau; Battle of Mons August 1914 and liberation 11 November 1918; European Capital of Culture 2015; French-speaking)
+    howItWorks:
+      "蒙斯是瓦隆大区埃诺省的省会，由民选的市长和市议会治理，市域约 148 平方公里，下含 19 个并入的市镇，2018 年人口约 9.5 万；瓦隆大区与法语共同体分管经济与教育，法语是这里的语言。老城在一座缓丘上，17 世纪落成的钟楼高 87 米，是比利时唯一的巴洛克钟楼，1999 年随“比利时与法国的钟楼群”列入世界遗产，圣沃德吕教堂在它脚下。每年三一主日的“杜杜节”把圣人的圣髑车拉上街，再演一场圣乔治与龙的搏斗，是列入非物质文化遗产名录的老习俗。1914 年 8 月英军与德军在这里首次交火，1918 年 11 月 11 日停战当天加拿大军队解放此城，城郊的公墓与纪念碑都与这段历史有关；北约的欧洲盟军最高司令部设在城外的卡斯托，2015 年它是欧洲文化之都。初来的人最容易犯的错，是把蒙斯当作一座工业城，而它是一座省会与大学城，北约的军事总部只是它的邻居。",
     layout:
       "大广场与市政厅是老城中心；贝尔弗里钟楼（列入联合国教科文组织世界遗产的比利时与法国钟楼系列之一）俯瞰全城；圣沃德鲁教堂是老城内重要的哥特式建筑。",
     gettingAround:
@@ -7000,6 +7003,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   billund: {
     identity:
       "比隆是丹麦中日德兰大区南部的小镇，人口约6.6千，是世界第一座乐高乐园的所在地，乐高集团的全球总部亦设于此。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Billund (town in Billund Municipality, Denmark; 7,446 in January 2026; 13 km east of Grindsted, 27 km west of Vejle; The Lego Group founded here in 1932 and still headquartered here, from about 200 workers in 1960 to 20,000 in 2022 with over a quarter in Billund; Legoland opened 7 June 1968, about 2 million visitors a year; Lego House, Lalandia; Billund Airport built by Lego as a private airfield in 1962, opened publicly 1964, Denmark's second-busiest with 3.7 million passengers in 2022)
+    howItWorks:
+      "比隆是丹麦日德兰半岛中部的小镇，2026 年 1 月人口约 7,450，属于比隆市镇，由民选的市议会与市长治理；市镇管学校与养老，大区管医院，国家管警察。这是一座由一家公司长出来的镇：1932 年乐高在此创办，总部至今设在这里，公司从 1960 年的约两百名工人增长到 2022 年的两万人，其中四分之一以上在比隆上班，镇的兴衰与公司几乎同步。1968 年 6 月 7 日乐高乐园开园，开业当天来了三千人，第一年六十二万人，如今每年约两百万；乐高之家、拉兰迪亚水上乐园与几家酒店都围着这条产业。机场也是公司修的：1962 年乐高把它作为私人机场建起来，1964 年对公众开放，如今是丹麦第二繁忙的机场，2022 年运送三百七十万人次。韦勒在东面 27 公里。初来的人最容易犯的错，是把比隆当作一座普通的丹麦小镇，而它的机场、乐园与就业几乎都来自同一家企业。",
     layout:
       "小镇规模不大，乐高乐园与乐高之家博物馆构成镇中心的主要地标，比隆机场是丹麦第二繁忙的机场，为小镇带来远超其人口规模的国际客流。",
     gettingAround:
@@ -7267,6 +7273,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mariehamn: {
     identity:
       "玛丽港是奥兰群岛的首府，人口约1.2万，是芬兰唯一的瑞典语单一官方语言自治区的行政与文化中心。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mariehamn (capital of Åland, an autonomous Swedish-speaking region of Finland and the seat of its government and parliament; ~11,957 in late 2025, about 40 per cent of Åland's population; founded 21 February 1861 and named after Empress Maria Alexandrovna; Western Harbour with daily ferries to Sweden, Estonia and mainland Finland, Eastern Harbour a large marina; the four-masted Pommern as a museum ship; Mariehamn Airport; about 1.5 million visitors a year)
+    howItWorks:
+      "玛丽港是奥兰的首府，人口约 1.2 万，约占奥兰总人口的四成。奥兰是芬兰的一个自治区，讲瑞典语，有自己的议会与政府，也有自己的居民权制度；政府与议会都设在这座城里，因此它虽小，却是一整个自治区的行政中心，学校、医疗与地方立法都在这里决定。城市 1861 年 2 月 21 日建立，名字取自当时的俄国皇后玛丽亚·亚历山德罗夫娜，“玛丽的港”是它的字面意思。它有两个港：西港是国际港，每天有渡轮开往瑞典、爱沙尼亚与芬兰本土，四桅帆船“波美恩号”作为博物馆船停在这里；东港是北欧最大的游艇码头之一。机场在城外，每年约一百五十万人次到访。初来的人最容易犯的错，是把玛丽港当作芬兰本土的一座小城，而它是一个讲瑞典语的自治区的首府，规则与本土并不相同。",
     layout:
       "小城分为西港与东港两片港区，西港以现代游艇码头为主，东港保留传统渔港风貌，市中心街道以瑞典风格建筑为主。",
     gettingAround:
@@ -7298,6 +7307,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jyvaskyla: {
     identity:
       "于韦斯屈莱是芬兰中部的大学城，人口约14万，坐落于派耶内湖北端，是探索芬兰湖区北部的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jyväskylä (Finland; regional capital of Central Finland, about 150,000 residents, the seventh-largest municipality; about 270 km north of Helsinki on the northern shore of Lake Päijänne; the world's first junior secondary school taught in Finnish, 1858, Finland's first teacher-training college 1863 and girls' school 1864, hence "Athens of Finland"; over 30 per cent of the population students, about 45,000 enrolled; University of Jyväskylä 1966; more Alvar Aalto buildings than any other city in the world; Rally Finland, over 500,000 spectators)
+    howItWorks:
+      "于韦斯屈莱是芬兰中芬兰区的首府，人口约 15 万，是全国第七大市镇，在赫尔辛基以北约 270 公里、派延奈湖的北岸；芬兰的市镇管学校、规划与地方服务，2023 年起医疗与社会服务归新设的福祉服务县，国家管警察与大学。它被称作“芬兰的雅典”，是因为教育的起点都在这里：1858 年世界上第一所用芬兰语授课的初级中学在此开办，1863 年芬兰第一所师范学院、1864 年第一所女子学校也在这里，直到今天全城三成以上的人口是学生，各级在读者约四万五千人。它同时是阿尔瓦·阿尔托建筑最集中的城市，全世界没有第二座城有这么多——阿尔托在这里长大，把湖畔的坡地比作意大利的葡萄园。八月的芬兰拉力赛是北欧规模最大的年度赛事，观众超过五十万。初来的人最容易犯的错，是按人口把它当作一座省城，而它的节奏由大学与学期决定。",
     layout:
       "城市沿派耶内湖北岸展开，芬兰知名建筑师阿尔瓦·阿尔托的多座建筑作品分布城中，大学校区与湖岸风光相互交融。",
     gettingAround:
@@ -7312,6 +7324,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   savonlinna: {
     identity:
       "萨翁林纳是芬兰湖区东部的小城，人口约3.3万，坐落于塞马湖水系之中，奥拉维林纳城堡是芬兰最具代表性的湖畔城堡。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Savonlinna (Finland; municipality in South Savo, about 31,000 residents, down from 41,359 in 1990; in the heart of the Saimaa lakeland, the "capital of Saimaa"; Olavinlinna castle founded 1475 by Erik Axelsson Tott on an island; Savonlinna Opera Festival held in the castle since 1912; Kerimäki Church the largest wooden church in the world; Lusto forest museum at Punkaharju; 335 km from Helsinki, about four hours by train; regional airport)
+    howItWorks:
+      "萨翁林纳是芬兰南萨沃区的市镇，人口约 3.1 万，1990 年时曾有 41,359 人，此后持续减少；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。它在塞马湖区的中心，因此自称“塞马之都”——城市散在湖与湖之间的水道上，桥比街多。1475 年埃里克·阿克塞尔松·托特在一座小岛上建起奥拉维城堡，是北欧保存最完好的中世纪石堡之一；1912 年起城堡的内院被用作歌剧舞台，七月的萨翁林纳歌剧节把这座三万人的城塞满，是芬兰最著名的音乐节之一。附近的凯里迈基教堂是世界上最大的木造教堂，蓬卡哈尤的冰碛脊上有森林博物馆，塞马环斑海豹只生活在这片湖里。赫尔辛基在西南 335 公里，火车约四小时。初来的人最容易犯的错，是把歌剧节当作全年的样子，而节期之外这是一座安静、正在变小的湖城。",
     layout:
       "老城建在塞马湖水系中的几座小岛与半岛之上，奥拉维林纳城堡矗立在水道要冲，是控制湖区航运的历史要塞。",
     gettingAround:
@@ -7326,6 +7341,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kuopio: {
     identity:
       "库奥皮奥是芬兰中东部湖区的核心城市，人口约12万，坐落于卡拉韦西湖畔，普宜奥山观景塔是俯瞰湖区群岛的经典地点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuopio (Finland; regional capital of North Savo, about 126,572 residents, the eighth-most populous municipality, the region about 148,000; nearly surrounded by Lake Kallavesi, Finland's tenth-largest lake at 472.76 km²; Puijo tower and ski jumps with annual World Cup ski jumping; kalakukko, the Savonian fish pastry; the market square and market hall; until 2018 the seat of the primate of the Finnish Orthodox Church; University of Eastern Finland; Kuopio Airport in Siilinjärvi, the fifth busiest in Finland)
+    howItWorks:
+      "库奥皮奥是芬兰北萨沃区的首府，人口约 12.7 万，是全国第八大市镇，周边地区约 14.8 万；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市几乎被卡拉韦西湖围住——这是芬兰第十大湖，面积约 473 平方公里，因此从任何一条主街往下走几百米都是水。普伊约山的塔与跳台立在城北的高地上，每年办跳台滑雪世界杯的分站；集市广场与市场大厅是本地生活的中心，那里卖的“鱼库库”是把鱼裹进黑麦面团烤成的萨沃老食品，这座城因此得了“鱼库库应许之地”的绰号。芬兰东方大学的校区在这里，医药与公共卫生研究是它的强项；直到 2018 年芬兰东正教会的首牧驻此，教会博物馆仍在城中。机场在邻镇锡林耶尔维，是芬兰第五繁忙的。初来的人最容易犯的错，是以为芬兰的东正教会只是少数人的事，而它是这个国家的两个国教会之一。",
     layout:
       "市中心紧凑，沿卡拉韦西湖西岸展开，普宜奥山位于市区北侧，是城市重要的地标制高点。",
     gettingAround:
@@ -7357,6 +7375,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rovaniemi: {
     identity:
       "罗瓦涅米是芬兰拉普兰省的首府，人口约6.3万，坐落于北极圈线上，是圣诞老人村所在地与探索拉普兰荒原的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rovaniemi (Finland; regional capital of Lapland, about 66,191 residents, the 17th largest city, one of the largest municipalities in Europe by area; about 6 km south of the Arctic Circle at the confluence of the Kemijoki and Ounasjoki; about 90 per cent of buildings destroyed by German forces in 1944, rebuilt to Alvar Aalto's plan in the shape of a reindeer's head with the roads as antlers; Santa Claus Village at the Arctic Circle, the slogan trademarked in 2009; midnight sun 7 June–6 July, December under six minutes of sunshine a day; auroras up to 200 nights a year; University of Lapland)
+    howItWorks:
+      "罗瓦涅米是芬兰拉普兰区的首府，人口约 6.6 万，是芬兰第 17 大城市，市镇面积在欧洲各地方行政体中名列前茅；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市在凯米河与奥纳斯河的交汇处，北极圈以南约 6 公里。1944 年拉普兰战争中约九成的建筑被摧毁，战后按阿尔瓦·阿尔托的规划重建——他把城市的路网画成一只驯鹿的头，主干道是鹿角，这一形状在地图上仍能看出来，因此这里几乎没有老城。北极圈线上的圣诞老人村在城北 8 公里，1985 年起对外接待，城市 2009 年把“圣诞老人的家乡”注册为商标，冬季旅游是本地最大的产业之一。6 月 7 日到 7 月 6 日太阳不落，12 月每天的日照不足六分钟，极光一年可见近两百次；拉普兰大学在城里。初来的人最容易犯的错，是来找一座北极老城，而这座城是 1945 年之后按图纸重建的。",
     layout:
       "市区位于凯米约基河与其支流交汇处，二战后按建筑师阿尔瓦·阿尔托的规划重建（城市呈驯鹿头形布局），北极圈线穿过市郊的圣诞老人村。",
     gettingAround:
@@ -7371,6 +7392,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kuusamo: {
     identity:
       "库萨莫是芬兰东北部的小城，人口约1.5万，是探索奥兰卡国家公园与“熊之路”徒步路线的传统门户，也是芬兰知名的鲁卡滑雪度假地所在地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuusamo (Finland; town and municipality in North Ostrobothnia near the eastern border; population 14,800 over 5,809 km², the eleventh largest municipality by area; about 60 km south of the Arctic Circle; Ruka ski resort on the 492 m Rukatunturi; about a million tourists a year, tourism 149 million euros in 2024, 18 per cent of output; Oulanka National Park and the 80 km Karhunkierros trail; snow cover about 200 days a year, late October to mid-May; 166 lakes, forests 90 per cent of the land; Kuusamo Airport 6 km from town, 129,373 passengers in 2024)
+    howItWorks:
+      "库萨莫是芬兰北博滕区的市镇，人口约 1.48 万，市域约 5,809 平方公里，是全国面积第 11 大的市镇，在北极圈以南约 60 公里；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。人少地大是这里的常态：森林占了九成的土地，境内有 166 个湖，河流分别流向白海与波的尼亚湾。经济几乎押在旅游上——2024 年旅游收入 1.49 亿欧元，占本地产出的约 18%，每年约一百万人次到访，主要去的是城北 25 公里、鲁卡山上的鲁卡滑雪场；奥兰卡国家公园与全长 80 公里的“熊之径”徒步道在东面靠边境处。这里一年约有两百天积雪，从十月底到五月中；空气质量按国际监测常年居前列。机场在镇外 6 公里，2024 年运送约 12.9 万人次，赫尔辛基有直飞。初来的人最容易犯的错，是把鲁卡当作库萨莫的市中心，而它是山上的度假区，镇子在山下另一个地方。",
     layout:
       "小城本身规模不大，鲁卡滑雪度假区位于城北约25公里处，奥兰卡国家公园则在更北的芬兰—俄罗斯边境附近。",
     gettingAround:
@@ -7385,6 +7409,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   inari: {
     identity:
       "伊纳里是芬兰北极圈内拉普兰地区的村落，人口约550人，坐落于伊纳里湖畔，是芬兰萨米原住民文化的核心聚居区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Inari (Finland; the largest municipality in Finland by area at 17,333.65 km² and among the most sparsely populated, 7,244 residents in December 2025, density 0.48 per km²; four official languages — Finnish (86.4 per cent), Northern Sámi, Inari Sámi and Skolt Sámi; widely called the capital of Sámi culture; the Sámi Parliament of Finland and the Siida museum at Inari village; registered Sámi about 31 per cent of residents; Lake Inari 1,043 km², Finland's third-largest; Ivalo Airport and European route E75; tourism, services and cold-climate testing)
+    howItWorks:
+      "伊纳里是芬兰面积最大的市镇，约 17,334 平方公里，2025 年底人口 7,244，每平方公里不到半个人，是全国人口最稀的地方之一；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。它最特别的地方是语言：这里有四种官方语言——芬兰语，以及北萨米语、伊纳里萨米语与斯科尔特萨米语三种萨米语言，其中伊纳里萨米语只在这一个市镇使用，路牌与公文都要并列。芬兰的萨米议会设在伊纳里村的萨约斯文化中心，旁边是介绍萨米文化与北方自然的西达博物馆，因此这里常被称作芬兰萨米文化的中心，登记的萨米人约占居民的三成。伊纳里湖面积 1,043 平方公里，是芬兰第三大湖；最大的村落与机场都在伊瓦洛，E75 公路穿境通往挪威。初来的人最容易犯的错，是把萨米文化当作展演项目，而它是这里日常使用的语言与生计。",
     layout:
       "村落规模很小，沿伊纳里湖南岸而建，萨米议会与萨米博物馆西伊达设于此，是芬兰境内萨米文化的行政与展示中心。",
     gettingAround:
@@ -7449,6 +7476,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   echternach: {
     identity:
       "埃希特纳赫是卢森堡现存最古老的城镇，建城可追溯至公元698年圣威利布罗德创立的本笃会修道院，人口约6千，是探索米勒达尔“小瑞士”的传统门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Echternach (Luxembourg; commune with city status in the east near the German border on the Sûre; 5,936 residents in 2025 over 20.49 km²; the oldest town in Luxembourg, grown around the abbey founded in 698 by St Willibrord, an English monk from Ripon, who was abbot until his death in 739 and became the first bishop of Utrecht; the dancing procession on Whit Tuesday, UNESCO intangible heritage 2010; Basilica of St Willibrord with his tomb in the crypt; gateway to the Mullerthal hiking region)
+    howItWorks:
+      "埃希特纳赫是卢森堡东部的一个市镇，享有城市地位，2025 年人口约 5,900，市域约 20.5 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省，因此小镇直接对着国家部门办事。它是卢森堡最古老的城镇：698 年，来自英格兰里彭的修士维利布罗德在这里创立本笃会修道院，此后他任院长直到 739 年去世，并成为乌得勒支的第一位主教，镇子就是围着这座修道院长起来的。每年圣灵降临节后的星期二举行“跳舞游行”，队伍以特定的步伐边跳边前进到圣维利布罗德大教堂，那里的地下室安放着他的墓，这项习俗 2010 年列入非物质文化遗产名录。苏尔河是这里与德国的界河，对岸有桥相通；镇西是“小瑞士”米勒塔尔的砂岩谷地徒步区。初来的人最容易犯的错，是把这座五千多人的镇当村子，而它是卢森堡第一座城。",
     layout:
       "老城沿苏尔河而建，本笃会修道院与老城市集广场构成历史核心，紧邻德国边境，米勒达尔砂岩地貌区在城镇西南侧展开。",
     gettingAround:
@@ -7463,6 +7493,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   remich: {
     identity:
       "雷米希是摩泽尔河谷卢森堡段的核心小镇，人口约3.5千，是卢森堡唯一葡萄酒产区的中心，被称为“摩泽尔明珠”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Remich (Luxembourg; commune with city status on the left bank of the Moselle, which forms the border with Germany; the smallest commune in Luxembourg by area at 5.29 km², 4,149 residents in 2025, 46th largest commune; from the Roman Remacum; the St Nicolas gate of 952 a protected monument; one of the most prominent wine towns of the Moselle valley; the three-day Fuesend Karneval with the Stréimännchen burned from the Moselle bridge)
+    howItWorks:
+      "雷米希是卢森堡东南部的市镇，享有城市地位，市域约 5.3 平方公里，是全国面积最小的市镇，2025 年人口约 4,150，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。它在摩泽尔河的左岸，河的对岸就是德国，因此这条河既是风景也是国界，沿岸的公路与河上的游船是本地的日常。地名来自罗马时期的 Remacum，罗马人撤走后演变成今天的写法；952 年的圣尼古拉门是受保护的古迹，是老城墙留下的一段。这一带是卢森堡摩泽尔葡萄酒区的核心，白葡萄酒与起泡酒“克雷芒”是当地的产业，酒庄沿河排开，河堤上的长廊夏天全是人。狂欢节持续三天，最后把稻草人从摩泽尔桥上点燃投下，是本地特有的做法。初来的人最容易犯的错，是把摩泽尔当作一条普通的河，而它是国界，过桥就是另一个国家。",
     layout:
       "小镇沿摩泽尔河而建，河对岸即为德国，滨河步道与葡萄酒庄园构成小镇景观核心。",
     gettingAround:
@@ -7477,6 +7510,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   diekirch: {
     identity:
       "迪基希是卢森堡北部苏尔河畔的历史小镇，人口约7千，以国家军事历史博物馆闻名，是探索苏尔河谷与埃斯灵高原的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Diekirch (Luxembourg; commune with city status on the Sûre in the north-east, 7,336 residents in 2025 over 12.42 km², 21st of 100 communes; the name from Diet-Kirch, people's church; St Laurence church a Roman building and remains of a large Roman villa; fortified in the 14th century by John the Blind; National Museum of Military History and the Battle of the Bulge, headquarters of the Luxembourg Army's operational command at the Haerebierg centre; the donkey as town mascot; International March of Diekirch since 1968; Paul Eyschen born here)
+    howItWorks:
+      "迪基希是卢森堡东北部的市镇，享有城市地位，2025 年人口约 7,340，市域约 12.4 平方公里，在全国 100 个市镇中排第 21，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。城市在苏尔河边、厄斯林丘陵的谷地里，地名出自“Diet-Kirch”，意为“民众的教堂”。罗马时期这里已有大型庄园，圣洛朗教堂的底层就是罗马建筑，14 世纪盲人约翰给它筑了城墙。1944 至 1945 年的阿登战役在这一带打了几个月，国家军事历史博物馆因此设在城中，卢森堡军队的作战指挥部也驻在附近的哈尔山营区。驴是这座城的吉祥物，街心的喷泉都做成驴的样子；1968 年起的迪基希国际徒步大会每年吸引各国走路的人。埃特尔布吕克在西面 5 公里，有铁路通往卢森堡市。初来的人最容易犯的错，是把这座七千人的城当作旅游小镇，而它是卢森堡北部的行政与驻军中心之一。",
     layout:
       "老城沿苏尔河而建，历史街区保留中世纪格局，国家军事历史博物馆是小镇最重要的地标。",
     gettingAround:
@@ -7491,6 +7527,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ettelbruck: {
     identity:
       "埃特尔布吕克是卢森堡北部阿尔泽特河与苏尔河交汇处的小镇，人口约9千，是埃斯灵高原地区重要的交通枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ettelbruck (Luxembourg; commune with city status at the confluence of the Sûre, Alzette and Wark, about 10,149 residents; a major transport hub second only to Luxembourg City, the railway junction where the Diekirch line branches from the Luxembourg–Liège main line, with the A7 reached via trunk road B7; occupied 10 May 1940, liberated 11 September 1944, retaken 16 December, liberated again by Patton's forces on Christmas Day 1944; General Patton Memorial Museum opened July 1995; the national anthem first performed publicly here in 1864)
+    howItWorks:
+      "埃特尔布吕克是卢森堡北部的市镇，享有城市地位，人口约 1.02 万，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。它的分量来自位置：苏尔河、阿尔泽特河与瓦尔克河在这里汇合，铁路上通往迪基希的支线从卢森堡—列日主干线在此分出，公路经 B7 接入 A7 高速，因此它是全国仅次于首都的交通枢纽，北部各镇的人换车都在这一站。1940 年 5 月 10 日德军占领此地，1944 年 9 月 11 日美军解放，同年 12 月 16 日阿登战役中再度失守，圣诞节当天巴顿的部队重新夺回并在阿尔泽特河谷挡住了德军攻势；1995 年开放的巴顿将军纪念馆与“巴顿广场”都是这段历史的标记。1864 年卢森堡国歌在这里首次公开演唱。初来的人最容易犯的错，是把它与相邻的迪基希混为一谈，两座城相距 5 公里，是两个各自独立的市镇。",
     layout:
       "小镇位于两河交汇的谷地平坦处，是连接卢森堡市与北部埃斯灵高原各城镇的铁路与公路枢纽。",
     gettingAround:
@@ -7505,6 +7544,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   vianden: {
     identity:
       "维安登是卢森堡北部奥尔河谷畔的小镇，人口约2千，维安登城堡是卢森堡现存规模最大的封建城堡，也是国内最具代表性的河谷城堡景观。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vianden (Luxembourg; commune in the north-east on the Our near the German border, 2,221 residents in 2025; Vianden Castle built between the 11th and 14th centuries, one of the largest fortified castles west of the Rhine, sold in 1820 and left to decay until Grand Duke Jean ceded it to the State in 1977, since restored as a museum; Victor Hugo stayed here several times between 1862 and 1871, his house now a museum; seasonal chairlift; the Vianden pumped-storage hydro plant; about 47 km from Luxembourg City, buses from Diekirch and Ettelbruck)
+    howItWorks:
+      "维安登是卢森堡东北部的市镇，2025 年人口约 2,220，在乌尔河的谷地里，河对岸就是德国；卢森堡只有市镇与国家两级，中间没有省，由民选的市长与市议会治理。维安登城堡建于 11 至 14 世纪，是莱茵河以西规模最大的封建城堡之一，1820 年被出售后长期荒废，直到 1977 年让大公把它移交给国家，此后逐步修复，如今作为博物馆开放，谷底的镇子就在它的脚下沿河铺开。雨果 1862 至 1871 年间数次在这里居住，写下过关于这一带的文字，他的故居也是博物馆。缆椅在旅游季运行，从河谷通到对面的山脊看城堡。山体里另有一处抽水蓄能电站，是欧洲较早的一批，与旅游业并行支撑着这个小镇。卢森堡市在南面约 47 公里，需从迪基希或埃特尔布吕克换乘公共汽车。初来的人最容易犯的错，是以为有火车直达，而这里只有公路进出。",
     layout:
       "小镇沿奥尔河谷底而建，城堡矗立在河谷东岸悬崖之上，一座缆车连接谷底小镇与城堡所在高地。",
     gettingAround:
@@ -7519,6 +7561,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   clervaux: {
     identity:
       "克莱尔沃是卢森堡北部克莱尔沃河谷畔的小镇，人口约1.6千，中世纪城堡雄踞谷地中央高地，是突出部战役的重要历史见证地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Clervaux (Luxembourg; commune in the north, town population 1,609 in 2025 and commune 6,289 over 85.05 km² after mergers; Clervaux Castle, its oldest parts from the 12th century built by Gerard, Count of Sponheim, damaged in the Battle of the Bulge in December 1944 and rebuilt; the castle houses Edward Steichen's The Family of Man exhibition and a Battle of the Bulge museum; French Benedictine monks founded Clervaux Abbey in 1910; railway station with trains to Luxembourg City and Liège)
+    howItWorks:
+      "克莱尔沃是卢森堡北部的市镇，2025 年镇上约 1,600 人，合并后的整个市镇约 6,290 人，市域约 85 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。镇子挤在克莱尔沃河的一道深谷里，城堡在谷中的岩台上，最早的部分是 12 世纪斯庞海姆伯爵格哈德所建，1944 年 12 月阿登战役中被打坏，战后重建。城堡里如今有两处展览：一是爱德华·斯泰肯 1955 年策划的摄影展《人类一家》的永久陈列，2003 年列入世界记忆名录；二是阿登战役博物馆。1910 年一批法国本笃会修士来此创建克莱尔沃修道院，教堂立在对面的山坡上，俯瞰全镇。铁路从卢森堡市通到这里并继续往比利时的列日，是北上出境的主线。初来的人最容易犯的错，是把这座镇当作一处景点，而它是山谷里少见的铁路小城，两侧的坡把它压成了长长的一条。",
     layout:
       "小镇沿克莱尔沃河谷两岸而建，城堡位于谷地中央的高地上，本笃会修道院坐落在附近的山丘上，俯瞰整个谷地。",
     gettingAround:
@@ -7533,6 +7578,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "esch-sur-sure": {
     identity:
       "埃施叙尔苏尔是上苏尔湖畔的小镇，人口约3百，古老城堡与老城依苏尔河河曲而建，是探索上苏尔自然公园与湖区的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Esch-sur-Sûre (Luxembourg; commune in the Wiltz canton in the north-west, 3,279 residents in 2025 over 51.26 km² after Neunhausen and Heiderscheid were merged in 2011; the town proper about 415 people, set on a spur within a sharp meander of the Sûre, entered through a tunnel; 10th-century castle ruins above; the Upper Sûre Lake, an artificial reservoir built in the 1960s and extending about 10 km up the valley, supplying drinking water; Upper Sûre Natural Park)
+    howItWorks:
+      "埃施叙尔苏尔是卢森堡西北维尔茨县的市镇，2011 年与诺伊豪森、海德沙伊德合并后人口约 3,280，市域约 51 平方公里，由民选的市长与市议会治理；卢森堡只有市镇与国家两级，中间没有省。镇子本身只有约 415 人，地形是它的全部说明：苏尔河在这里绕了一个近乎闭合的急弯，把一块岩脊几乎围成孤岛，房子挤在这块岩脊上，进镇要穿过一条开在山体里的隧道，10 世纪的城堡废墟压在最高处。1960 年代国家在上游筑坝，形成了长约十公里的上苏尔湖——这座水库是卢森堡全国最主要的饮用水源，因此湖区的活动受管理，围绕它设立了上苏尔自然公园。卢森堡市在东南约 45 公里。初来的人最容易犯的错，是把水库当作普通的游泳湖，而它是全国的水源地，哪些水面可以下水由规定说了算。",
     layout:
       "小镇建在苏尔河一处近乎闭合的河曲半岛上，城堡遗址俯瞰整个老城与河曲，上苏尔湖水库紧邻小镇西侧。",
     gettingAround:
@@ -9088,6 +9136,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kharkhorin: {
     identity:
       "哈拉和林是13至14世纪蒙古帝国的都城遗址所在地，坐落于鄂尔浑河谷，如今是探索鄂尔浑河谷文化景观（2004年列入世界遗产）的核心门户。这条河谷水草丰美、扼中部草原要冲，在蒙古帝国之前就已是突厥、回鹘等草原政权的中心（回鹘都城哈剌巴剌哈孙遗址就在附近），窝阔台把帝国都城定在这里也是沿袭了这一传统；1260年忽必烈即位后将都城迁往上都，哈拉和林自此逐渐衰落。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kharkhorin (Mongolia; town and sum centre of Övörkhangai Province, 14,765 residents in 2017 over 20.5 km²; in the lower Orkhon valley where the Khangai mountains meet the central steppe; the site of Karakorum, capital of the Mongol Empire in the 13th century; Erdene Zuu monastery; the Orkhon Valley Cultural Landscape UNESCO World Heritage; Kharakhorum Museum; tourism and irrigated agriculture; airport with flights to Ulaanbaatar; coal-fired heating September to May)
+    howItWorks:
+      "哈拉和林是蒙古国前杭爱省的一个苏木中心，2017 年人口约 1.48 万；蒙古的地方行政分省（艾马格）与苏木两级，省长由中央任命、地方议会选举产生，教育与医疗按省统筹。镇子在鄂尔浑河下游的谷地，杭爱山脉在这里落到中部草原上。它的分量全在脚下：13 世纪蒙古帝国的都城哈拉和林就在此处，1235 年前后建成，是当时横跨欧亚的这个帝国的政治中心，后来被毁，如今地面上只剩基址与散落的石构件。1585 年建成的额尔德尼召寺就用废墟里的石料砌起，围墙上一百零八座白塔是它的标志，寺院至今在使用。鄂尔浑河谷文化景观 2004 年列入世界遗产，覆盖的正是这一带。旅游与河谷的灌溉农业是本地经济，乌兰巴托在东面约 360 公里。初来的人最容易犯的错，是以为能看到一座都城，而地面上的城早已不存，看的是遗址与寺。",
     layout:
       "现代哈拉和林镇紧邻古城遗址与额尔德尼召寺而建，遗址范围大部分尚待考古发掘，地表可见部分城墙与建筑基址痕迹。",
     gettingAround:
@@ -9102,6 +9153,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   moron: {
     identity:
       "木伦是蒙古北部库苏古尔省首府，人口约4.7万，是探索库苏古尔湖的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mörön (Mongolia; administrative centre of Khövsgöl Province, about 46,918 residents, the fifth most populous city in Mongolia; on the Delgermörön river at 1,710 m, the name meaning "river"; grown from a monastery of about 1809–1811 that housed some 1,300 monks before its destruction in 1937; Danzadardscha Khiid rebuilt in 1990; Museum of Khövsgöl Province with over 3,600 artifacts; electricity in 2004, paved road to Ulaanbaatar completed December 2014; Mörön Airport since 1957; record low −47.2 °C)
+    howItWorks:
+      "木伦是蒙古国库苏古尔省的省会，人口约 4.7 万，是蒙古第五大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中了全省的行政、医疗与中学。城市在德勒格尔木伦河边，海拔约 1,710 米，名字在蒙古语里就是“河”的意思。它从一座寺院长起来：约 1809 至 1811 年间此地建寺，鼎盛时住着约一千三百名僧人，1937 年被毁，1990 年在原址附近重建了丹赞达尔扎寺。省博物馆藏有三千六百多件文物。这座城的现代化来得很晚——2004 年才通电，到乌兰巴托的柏油公路 2014 年 12 月才修通，机场则从 1957 年就在运行，因此长期以来飞机比公路更管用。库苏古尔湖在北面约 100 公里的哈特嘎勒，省内还有驯鹿放牧的查坦人。冬季最低纪录约零下 47 度。初来的人最容易犯的错，是把木伦当作湖边的镇，而湖在一百公里之外。",
     layout:
       "城市坐落于德勒格尔河谷平地，周边被森林覆盖的山地环绕，与库苏古尔湖之间由公路相连。",
     gettingAround:
@@ -9116,6 +9170,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dalanzadgad: {
     identity:
       "达兰扎德嘎德是蒙古南部南戈壁省首府，人口约3.3万，是探索戈壁古尔班赛罕国家公园的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dalanzadgad (Mongolia; capital of Ömnögovi (South Gobi) Province, about 32,674 residents in 2024 over 476 km², divided into ten bags; 540 km south of Ulaanbaatar, paved road completed 2014; one of the warmest places in Mongolia in winter, extremes −36.1 °C to 39.9 °C, annual precipitation 134 mm; Yolyn Am gorge in Gurvan Saikhan National Park with streams and grass in the desert; dinosaur fossil sites and major mining in the province; airport runway the second longest in the country)
+    howItWorks:
+      "达兰扎德嘎德是蒙古国南戈壁省的省会，2024 年人口约 3.3 万，市域约 476 平方公里，下分十个“巴格”；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。它在戈壁的中部，乌兰巴托在北面 540 公里，柏油公路 2014 年才通到这里。这里的气候是戈壁式的：年降水量只有约 134 毫米，极端气温从零下 36 度到近 40 度，但按蒙古的标准，它的冬天算是全国最暖的地方之一。城西约 50 公里的三美山国家公园里有约林安峡谷，谷底有流水与青草，夏天仍能见到残冰，与四周的荒漠形成反差；洪高林沙丘与巴彦扎格的“火焰崖”分别在更远处，后者以恐龙蛋化石的发现闻名。省内的奥尤陶勒盖与塔本陶勒盖是蒙古最重要的两处矿区，采矿与旅游共同支撑本地。机场的跑道长度在全国仅次于乌兰巴托。初来的人最容易犯的错，是以为景点就在城边，而戈壁的距离以数百公里计。",
     layout:
       "城市坐落于古尔班赛罕山北麓的戈壁荒漠边缘，是南戈壁地区行政与物资补给中心。",
     gettingAround:
@@ -9130,6 +9187,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   khovd: {
     identity:
       "科布多是蒙古西部科布多省首府，人口约3.1万，坐落于科布多河畔，是探索蒙古阿尔泰山与西部多民族聚居区的重要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Khovd (Mongolia; capital of Khovd Province in the west, about 29,800 residents in 2017; at the foot of the Altai mountains, bisected by the Buyant river; founded in 1685 by Galdan Boshugtu Khan of the Dzungar Khanate, later moved to the present site on the Buyant; Mongolian forces took the city on 7 August 1912 and destroyed the garrisons; ethnically diverse — Khalkha, Zakhchin, Torghut, Uriankhai, Kazakh and others; Khar-Us Lake protected area about 25 km east; Museum of Khovd Province; cold desert climate with records near −45 °C)
+    howItWorks:
+      "科布多是蒙古国西部科布多省的省会，2017 年人口约 2.98 万；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的行政、医疗与高等教育，科布多大学在这里。城市在阿尔泰山脉的东麓，布延特河把它分成两半。1685 年准噶尔的噶尔丹博硕克图汗在这一带筑城，后来城址迁到布延特河边的今址；清代它是西部边疆的驻防重镇，1912 年 8 月 7 日蒙古军队攻下此城并摧毁了驻军营地，老城墙的遗迹仍在城外。这里是蒙古族群最杂的城市之一，哈拉哈、扎哈沁、土尔扈特、乌梁海与哈萨克等十多个族群共居，语言与习俗各不相同。东面约 25 公里是哈日乌斯湖国家公园，是候鸟的重要栖息地。气候属寒漠，冬季最低纪录接近零下 45 度。初来的人最容易犯的错，是以为蒙古西部只有牧民，而这座城是一整个省的行政与大学中心。",
     layout:
       "城市沿科布多河两岸展开，是蒙古西部历史上多民族（蒙古族、哈萨克族、图瓦人等）聚居与贸易往来的传统中心。",
     gettingAround:
@@ -9158,6 +9218,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   choibalsan: {
     identity:
       "乔巴山是蒙古东部道尔诺德省首府，人口约3.9万，坐落于克鲁伦河畔，是探索蒙古东部达乌尔草原的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Choibalsan (Mongolia; capital of Dornod Province in the east, 38,537 residents in 2025, the fourth-largest city in Mongolia after Ulaanbaatar, Darkhan and Erdenet; on the Kherlen river at 747 m; called Bayan Tümen until 1941, renamed for the 20th anniversary of the 1921 revolution after Khorloogiin Choibalsan; mainly Khalkha with Buryat and other groups; Choibalsan Airport with flights to Ulaanbaatar and Chinese cities; a railway to the Trans-Siberian, passenger service ending at Chuluunkhoroot on the border; museum to Georgy Zhukov near the site of the Battle of Khalkhin Gol; extremes −41.1 °C to 41.9 °C)
+    howItWorks:
+      "乔巴山是蒙古国东部道尔诺德省的省会，2025 年人口约 3.85 万，是继乌兰巴托、达尔汗与额尔登特之后蒙古第四大城市；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生。城市在克鲁伦河边，海拔约 747 米，四周是蒙古东部一望无际的草原——这片草原是世界上保存最完整的温带草原之一，蒙原羚成群迁徙的地方就在附近。它原名巴彦图门，1941 年为纪念 1921 年革命二十周年，改用当时领导人霍尔洛·乔巴山的名字。20 世纪它是通往北方铁路的节点，一条支线从这里接上西伯利亚大铁路，但客运只开到边境的楚伦霍洛特。城郊有纪念格奥尔基·朱可夫的博物馆，因为 1939 年的哈拉哈河战役就发生在这个省。机场有飞往乌兰巴托与中国城市的航班。极端气温从零下 41 度到近 42 度。初来的人最容易犯的错，是以为可以坐火车从这里出境，而客运列车只到边境为止。",
     layout:
       "城市沿克鲁伦河两岸展开，是蒙古东部草原地带最大的城市与区域行政中心。",
     gettingAround:
@@ -9172,6 +9235,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tsetserleg: {
     identity:
       "车车尔勒格是蒙古中部阿尔汗盖省首府，人口约1.7万，坐落于杭爱山东麓，是探索科尔戈—特日和音查干湖国家公园的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tsetserleg (Mongolia; capital of Arkhangai Province, 21,620 residents in 2017 over 536 km² at 1,691 m; 600 km south-west of Ulaanbaatar on the north-eastern slopes of the Khangai mountains; founded around 1631, the Zayiin Gegeen Monastery established in the early 1680s, its main temple now the provincial museum; a dry-winter subarctic climate milder than the surrounding region, January nights about −15 °C to −25 °C; airport with connections to Ulaanbaatar; theatre, hospital and agricultural college; food processing the main industry)
+    howItWorks:
+      "车车尔勒格是蒙古国阿尔汗盖省的省会，2017 年人口约 2.16 万，市域约 536 平方公里，海拔约 1,691 米；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的医院、剧院与中等教育。城市在杭爱山脉的东北坡上，背靠布尔干山，乌兰巴托在东面约 600 公里。它约建于 1631 年，1680 年代初这里建起扎音格根寺，20 世纪寺庙停用，主殿如今是阿尔汗盖省博物馆，山坡上的白色佛像与寺墙是全城的背景。地形给了它一个特别之处：虽在高原上，它的冬天比周边缓和，一月夜间约在零下 15 至 25 度，在蒙古已算温和。食品加工是本地的主要工业，另有农牧学院。城外的岑赫尔温泉与更西的白湖是省内的去处，都需数小时车程。初来的人最容易犯的错，是把它与同省另一个叫车车尔勒格的苏木混淆，那是省北部的另一个行政单位。",
     layout:
       "城市依托山谷地形而建，藏传佛教寺院建筑与苏联时期规划的城镇格局并存。",
     gettingAround:
@@ -9286,6 +9352,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   legazpi: {
     identity:
       "黎牙实比是阿尔拜省首府，人口逾21万，坐落于阿尔拜湾岸边、马荣火山南麓，是眺望马荣火山对称锥形景观的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Legazpi (Philippines; component city and capital of Albay province and the regional centre of Bicol, 153.70 km² with 210,616 residents in the 2024 census, about 560 km south-east of Manila on Albay Gulf; south of Mayon Volcano, an active stratovolcano of near-symmetrical cone; originally the coastal settlement of Sawangan, a Spanish mission town from 1587, renamed in 1856 after Miguel López de Legazpi; served by Bicol International Airport in neighbouring Daraga; topped the National Competitiveness Council index for component cities in 2018)
+    howItWorks:
+      "黎牙实比是菲律宾阿尔拜省的省会，属“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，同时是比科尔大区的行政中心；市域约 154 平方公里，2024 年人口约 21.1 万，在马尼拉东南约 560 公里的阿尔拜湾边。城市的一切都在马荣火山脚下展开：这座活火山以近乎完美的对称锥体著称，从市区抬头就能看见，也决定了这里的风险——熔岩与火山泥流的路径、疏散区的划分都按它来定，1814 年喷发掩埋的卡格沙瓦教堂只剩钟楼露在地面，如今是遗址公园。它原是名叫萨望甘的海边聚落，1587 年成为西班牙传教据点，1856 年改用远征队指挥官米格尔·洛佩斯·德·黎牙实比的名字。机场不在市内，而在相邻的达拉加，2021 年启用。台风季这一带首当其冲。初来的人最容易犯的错，是按晴天的照片来安排行程，而马荣多数日子被云挡住。",
     layout:
       "市中心沿阿尔拜湾分布，甲描育遗址等历史地标位于市郊，多个观景点可从不同角度眺望马荣火山完整锥体。",
     gettingAround:
@@ -9300,6 +9369,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tagaytay: {
     identity:
       "塔加泰是甲米地省一座高原小城，人口逾10万，坐落于海拔约640米的高地，是眺望塔阿尔湖火山嵌套景观的知名观景城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tagaytay (Philippines; component city in Cavite province about 59 km from Manila via Aguinaldo Highway, at roughly 634 m on the Tagaytay Ridge; 87,811 residents in the 2024 census; the ridge looks across the caldera to Taal Volcano and Taal Lake, which lie in Batangas province, not in Tagaytay; average temperature about 22 °C, rarely above 31 °C; chartered as a city in 1938; called the second summer capital of the Philippines after Baguio; bulalo and tilapia from Taal Lake; Sky Ranch, People's Park in the Sky; agriculture in pineapples, coffee and cut flowers)
+    howItWorks:
+      "塔加泰是菲律宾甲米地省的一座“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，2024 年人口约 8.8 万，在马尼拉以南约 59 公里。它建在一道海拔约 634 米的山脊上，气温常年在 22 度上下，很少超过 31 度，因此被称作菲律宾继碧瑶之后的“第二避暑之都”，周末马尼拉人上山，公路常年堵塞。山脊的另一侧是一个巨大的破火山口，口中蓄水成塔尔湖，湖中又有塔尔火山——这是它最著名的景观，但湖与火山都在南面的八打雁省境内，不属于这座城，塔加泰提供的是看它们的位置。2020 年 1 月塔尔火山喷发，火山灰落到马尼拉，湖区的村落疏散。本地饮食以牛骨汤“布拉洛”与塔尔湖的罗非鱼闻名，农业产菠萝、咖啡与鲜花。初来的人最容易犯的错，是以为火山在塔加泰境内，而这座城只是对岸的观景台。",
     layout:
       "城镇沿塔阿尔湖北岸山脊分布，多处观景台与餐厅面向塔阿尔湖开放，是马尼拉都会区居民周末近郊出游的热门目的地。",
     gettingAround:
@@ -9314,6 +9386,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   boracay: {
     identity:
       "长滩岛是阿克兰省马来镇辖下一座知名度假岛屿，常住人口约3.8万，以白沙滩闻名，是菲律宾最知名的海岛度假目的地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Boracay (Philippines; a 10.32 km² island in Aklan province about 0.8 km off the north-west coast of Panay, 37,802 residents in 2020 across three barangays under the municipality of Malay, Western Visayas; originally inhabited by the Panay Bukidnon and Ati peoples; a six-month closure from April 2018 ordered to fix sewage and environmental damage, administered by an inter-agency task force, reopened in October with a 30-metre buffer zone from the waterline; e-trikes and bicycles on the island; access via Caticlan jetty and the airports at Caticlan and Kalibo; 2,155,217 visitors in 2025)
+    howItWorks:
+      "长滩岛是菲律宾阿克兰省的一座小岛，面积约 10.3 平方公里，2020 年人口约 3.8 万；岛不是一级行政区，而是分成三个“描笼涯”，归班乃岛上的马来镇管辖，因此这里的市政、税与执照都在对岸的镇政府。岛原是班乃布基农人与阿埃塔人的居住地。白沙滩长约四公里，沿岸按“一号、二号、三号站”分段，是全岛的主轴，酒店与餐厅都排在这条线上。2018 年 4 月起，为整治污水排放与环境破坏，政府下令全岛封闭半年，由跨部门工作组接管，同年 10 月重开，此后实行离岸 30 米的建筑退线与游客承载量上限——这套规则至今在执行，是理解这座岛现状的关键。岛上不通大型车辆，出行靠电动三轮与自行车；进岛经卡蒂克兰码头，机场在卡蒂克兰与卡利博。初来的人最容易犯的错，是以为岛上有机场，而航班落在对岸。",
     layout:
       "岛屿呈狭长哑铃形，白沙滩沿岛屿西岸绵延约4公里，分为一号、二号、三号站，岛屿东岸相对开发较少、保留自然海岸景观。",
     gettingAround:
@@ -9328,6 +9403,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "el-nido-town": {
     identity:
       "艾尔尼多镇是巴拉望岛北端一座小镇，人口约4.6万，是探索巴奎特群岛喀斯特岛礁景观的核心门户城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): El Nido (Philippines; municipality in northern Palawan with about 51,367 residents in the 2024 census, on Bacuit Bay among 45 islands and islets, the highest point Cadlao Island at 640 m; known as Bacuit until 17 June 1954, renamed El Nido, Spanish for "the nest", after the edible swiftlet nests in its limestone cliffs; the El Nido-Taytay Managed Resource Protected Area covers 903.21 km², the largest marine protected area in the Philippines, with mangroves, about 100 coral species and endangered turtles; about 269 km north-east of Puerto Princesa; El Nido (Lio) Airport)
+    howItWorks:
+      "艾尔尼多是菲律宾巴拉望省北端的一个市镇，由民选的镇长与议会治理，在省的管辖之下，2024 年人口约 5.1 万。镇区挤在一排石灰岩崖与海之间的窄地上，面朝布库特湾，湾里散着四十五座岛屿与礁石，最高的卡德劳岛达 640 米——这种喀斯特地貌是这里的全部卖点，也是行程的组织方式：镇上出发的跳岛游按 A、B、C、D 四条固定路线编排，由市镇统一管理。地名来自西班牙语的“巢”：崖壁上的金丝燕巢自古被采集，1954 年 6 月 17 日镇名由原来的巴库伊特改成艾尔尼多。整片海域属于艾尔尼多—泰泰资源管理保护区，面积 903 平方公里，是菲律宾最大的海洋保护区，进入需交环境费。普林塞萨港在南面约 269 公里，陆路要走五六个小时；本地有小型机场。初来的人最容易犯的错，是以为镇上就有沙滩，而好的海滩都在船程之外的岛上。",
     layout:
       "镇中心沿艾尔尼多湾分布，多家潜水店与跳岛游服务集中于海滨主街，镇区背靠陡峭的喀斯特山体。",
     gettingAround:
@@ -9342,6 +9420,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "coron-town": {
     identity:
       "科隆镇是巴拉望岛东北部布桑加岛上一座小镇，人口约5.5万，是探索科隆—卡拉棉群岛石灰岩地貌与二战沉船潜水的核心门户城镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Coron (Philippines; municipality covering the eastern part of Busuanga Island, Coron Island and about 50 islets in northern Palawan, 689.10 km² with about 69,439 residents in 2024; the town proper is on Busuanga while Coron Island lies opposite; originally Bancuang, renamed by the Spanish, a municipality from 2 June 1902; Japanese occupation May 1942 to March 1945; about a dozen sunken Japanese warships from the aerial raid of September 1944 lie at 10–40 m and are the main dive sites; Siete Pecados Marine Park, 2024 Blue Park Award; Francisco B. Reyes Airport with flights to Manila, Cebu and Angeles City)
+    howItWorks:
+      "科隆镇是菲律宾巴拉望省北部的一个市镇，由民选的镇长与议会治理，辖布桑加岛的东半部、科隆岛以及约五十座小岛，总面积约 689 平方公里，2024 年人口约 6.9 万。这里有一个常被弄混的关系：镇子在布桑加岛上，而对面那座峭壁林立、有卡扬根湖与梭鱼湖的科隆岛是另一座岛，属于原住民塔格班瓦人的祖传领地，出入受他们管理，只能按规定的路线与时间进入。镇名原为班庫昂，西班牙人改成今天的写法，1902 年 6 月 2 日设镇。1944 年 9 月美军空袭击沉了停泊在这片海域的日本船只，十多艘沉船躺在水下十到四十米，成为世界知名的沉船潜点，与镇外的温泉一起支撑着旅游业；七罪岛海洋公园 2024 年获得蓝色公园奖。机场在布桑加岛，有飞往马尼拉与宿务的航班。初来的人最容易犯的错，是把科隆镇与科隆岛当成一个地方，而它们隔着一道海。",
     layout:
       "镇中心沿科隆湾分布，是布桑加岛及周边卡拉棉群岛的行政与物资补给中心，通往卡杨甘湖等岛内景点需转乘公路或渡船。",
     gettingAround:
@@ -9356,6 +9437,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tagbilaran: {
     identity:
       "塔比拉兰是保和省首府，人口逾10.6万，坐落于保和岛西南岸，是探索巧克力山与保和岛自然景观的核心门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tagbilaran (Philippines; component city and capital of Bohol province in Central Visayas, 36.50 km² with 106,120 residents in the 2024 census, the most populous in the province; about 630 km south-east of Manila and 72 km south of Cebu City; established as a town in 1742 and chartered as a city in 1966; the blood compact between Miguel López de Legazpi and Datu Sikatuna in 1565; the Chocolate Hills at Carmen and tarsier sanctuaries inland; Panglao island across a causeway with Bohol-Panglao International Airport opened 2018; ferry to Cebu about two hours; magnitude 7.2 earthquake in 2013)
+    howItWorks:
+      "塔比拉兰是菲律宾保和省的省会，属“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，市域约 36.5 平方公里，2024 年人口约 10.6 万，是全省人口最多的地方。它的角色是门户而不是目的地：省内著名的巧克力山在内陆的卡门镇，眼镜猴保护区在科雷利亚，都要从这里出发走一到两小时；邦劳岛在南面，一条堤道相连，2018 年启用的保和—邦劳国际机场就在那座岛上，海滩与潜点也在那边。城市 1742 年设镇，1966 年设市；1565 年米格尔·洛佩斯·德·黎牙实比与本地首领西卡图纳在这一带以血为盟，是菲律宾史上常被引用的一幕，纪念碑立在城郊。宿务在北面，渡轮约两小时。2013 年 7.2 级地震损毁了保和岛多座西班牙时期的石造教堂，修复工作持续多年。初来的人最容易犯的错，是以为机场在市内，而它在跨过堤道的邦劳岛上。",
     layout:
       "市中心沿保和海峡分布，是保和岛行政与交通枢纽，前往巧克力山与内陆眼镜猴保护区需向岛屿中部行进。",
     gettingAround:
@@ -9370,6 +9454,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   vigan: {
     identity:
       "维甘是伊罗戈斯苏尔省首府，人口逾5.4万，坐落于吕宋岛西北海岸，是菲律宾保存最完整的西班牙殖民时期老城，1999年列入UNESCO世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vigan (Philippines; component city and capital of Ilocos Sur on the west coast of Luzon, about 404 km from Manila, 54,498 residents in the 2024 census; the Historic Town of Vigan inscribed by UNESCO in 1999 as the best preserved example of a Spanish colonial town in Asia, and named one of the New7Wonders Cities in 2015; a fusion of Filipino, Chinese, Spanish, European and Mexican influences; Calle Crisologo with its sett paving and ancestral houses; the Mestizo District of merchant dwellings; bahay na bato houses with capiz-shell windows; kalesa horse carriages; Plaza Salcedo and Plaza Burgos; Pagburnayan pottery and weaving; Vigan longganisa)
+    howItWorks:
+      "维甘是菲律宾南伊罗戈省的省会，属“组成型城市”，即在省的管辖之下、由民选市长与市议会治理，2024 年人口约 5.4 万，在吕宋岛西岸、马尼拉以北约 404 公里。1999 年“维甘历史城镇”列入世界遗产，理由是它是亚洲保存最完好的西班牙殖民城镇范例之一，2015 年又入选“新七大奇迹城市”。它保存下来的原因在于结构：老城以萨尔塞多广场与布尔戈斯广场为中心，四周是“混血区”，那是华人与西班牙人通婚的商人家族聚居之处，他们的宅子叫“石屋”——下层石砌、上层木造、窗格镶贝壳，把闽南、西班牙与热带气候的做法合在一起。克里索洛戈街的石块路面与两侧连排的老宅是这一片的核心，马车至今在街上载客。帕格布尔纳扬的陶窑与手织布仍在生产，维甘香肠是本地食物。机场在北面 80 公里的拉瓦格。初来的人最容易犯的错，是把老城当作复原的布景，而这些宅子多为原物，至今有人住。",
     layout:
       "老城核心区街道呈棋盘式布局，两侧保留大量西班牙殖民时期石砌建筑与骑楼商铺，横甘街是老城最具代表性的历史街区。",
     gettingAround:
