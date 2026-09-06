@@ -47,7 +47,7 @@ const HARD_MAX_FLIGHT_SEC = 420;
  */
 const HEIGHT_PER_PEAK_SPEED_SEC = 2.5;
 const MIN_CRUISE_HEIGHT = 42_000;
-const MAX_CRUISE_HEIGHT = 320_000;
+const MAX_CRUISE_HEIGHT = 400_000;
 
 /** 每个地形/地标航点停留的目标秒数 */
 export const WAYPOINT_HOLD_SEC = 1.8;
@@ -531,8 +531,16 @@ export function planRouteFlight(
 ): RoutePlan {
   const { cum, total, holdIndices, narrationSec, baseHeightM, headings, latLon, anchoring } = input;
 
+  // 锚定的航线：时长跟着解说走。
+  //
+  // 同步在数学上要求「飞行时长 = 解说时长」——只要镜头比解说慢，讲到后面的地方时
+  // 镜头必然还在前面，补锚点、限速都救不了。所以锚定时不再按距离拉长时长，
+  // 只保留最短时长兜底；镜头因此可能飞得快，由取景高度去吸收（高度跟着峰值地速走）。
+  // 未锚定的航线维持原样：按距离定时长，慢慢看。
   const byDistance = clamp(total / TARGET_GROUND_SPEED, MIN_FLIGHT_SEC, MAX_FLIGHT_SEC);
-  let durationSec = Math.max(byDistance, Math.max(0, narrationSec));
+  let durationSec = anchoring
+    ? Math.max(MIN_FLIGHT_SEC, narrationSec)
+    : Math.max(byDistance, Math.max(0, narrationSec));
 
   /** 不锚定时的均匀映射，同时用作锚定映射的限速基准 */
   const uniformMap = (sec: number) =>
@@ -563,12 +571,28 @@ export function planRouteFlight(
       reachedTotal = true;
       return { map: uni, peak: peakCurveSpeed(latLon, cum, uni, sec) };
     }
-    const limit = maxAlongSpeedOf(uni, sec);
-    const built = buildAnchoredProgressMap({
-      ...anchoring, cum, total, durationSec: sec, maxAlongSpeed: limit,
-    });
+    // 限速基准取「取景高度上限所允许的地速」，不是「不锚定时的峰值」。
+    // 真正的画质约束是「每秒扫过多少个取景高度」，而高度会跟着峰值地速抬升，
+    // 所以只要高度还没顶到上限，跟着解说飞得快一点并不会让画面变糊。
+    // 用不锚定的峰值作上限过严，会让镜头无谓地落在解说后面。
+    // 除以 1.15 是给三维曲线相对折线的拉伸留余量。
+    const limit = Math.max(
+      maxAlongSpeedOf(uni, sec),
+      MAX_CRUISE_HEIGHT / HEIGHT_PER_PEAK_SPEED_SEC / 1.15,
+    );
+    // 限速定完还要回头看：三维曲线比折线长，实际峰值可能仍把取景高度顶出上限。
+    // 顶出去就按比例压低限速再来一次（两三轮就收敛），保证「每秒扫过多少个取景
+    // 高度」这条画质约束始终成立 —— 宁可镜头再落后一点，也不要糊。
+    let lim = limit;
+    let built = buildAnchoredProgressMap({ ...anchoring, cum, total, durationSec: sec, maxAlongSpeed: lim });
+    let pk = peakCurveSpeed(latLon, cum, built.map, sec);
+    for (let iter = 0; iter < 3 && pk * HEIGHT_PER_PEAK_SPEED_SEC > MAX_CRUISE_HEIGHT; iter++) {
+      lim *= (MAX_CRUISE_HEIGHT / HEIGHT_PER_PEAK_SPEED_SEC) / pk;
+      built = buildAnchoredProgressMap({ ...anchoring, cum, total, durationSec: sec, maxAlongSpeed: lim });
+      pk = peakCurveSpeed(latLon, cum, built.map, sec);
+    }
     reachedTotal = built.reachedTotal;
-    return { map: built.map, peak: peakCurveSpeed(latLon, cum, built.map, sec) };
+    return { map: built.map, peak: pk };
   };
 
   let { map, peak } = solve(durationSec);
