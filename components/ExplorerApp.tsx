@@ -352,11 +352,14 @@ export default function ExplorerApp() {
 
   /** 停止音频 + 高亮（用户主动取消时调用） */
   const stopSpeaking = useCallback(() => {
-    console.log("[Narration] stopSpeaking");
     narrationManager.cancelCurrent();
     narrationRef.current?.cancel();
     narrationRef.current = null;
     setNarrationPreparing(false);
+    // isSpeaking 必须在这里直接落回 false，不能只等分段播报的 onDone 回调：
+    // 那个回调依赖音频 Promise 结束，一旦漏掉就会把 isSpeaking 永久卡在 true，
+    // 后续任何一次「开始播报」都不再是状态跃迁，阅读面板也就不会自动展开。
+    setIsSpeaking(false);
     stopAudio();
     stopHighlight();
   }, [stopAudio, stopHighlight]);
@@ -553,10 +556,19 @@ export default function ExplorerApp() {
       setNarrationPreparing(true);
       setIsSpeaking(true);
 
+      // 被取消的那次播报，其回调可能在新播报已经启动之后才姗姗来迟（音频 pause
+      // 事件是异步派发的）。不加这个身份判断，旧回调的 onDone 会把新播报的
+      // isSpeaking/preparing 抹成 false —— 表现就是「声音在放，面板却显示没在播、
+      // 停在卡片态」。只有仍是当前播报时才允许改状态。
+      const isCurrent = () => narrationRef.current === ctrl;
+
       return new Promise<void>((resolve) => {
         void ctrl.run(sections, language, {
-          onFirstAudio: () => setNarrationPreparing(false),
+          onFirstAudio: () => {
+            if (isCurrent()) setNarrationPreparing(false);
+          },
           onSectionStart: ({ key, baseIndex, text, wordBoundaries, audio }) => {
+            if (!isCurrent()) return;
             if (wordBoundaries.length > 0 && audio) {
               startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex);
             } else {
@@ -564,6 +576,10 @@ export default function ExplorerApp() {
             }
           },
           onDone: (wasCancelled) => {
+            if (!isCurrent()) {
+              resolve();
+              return;
+            }
             setNarrationPreparing(false);
             setIsSpeaking(false);
             if (!wasCancelled) stopHighlight();
@@ -588,12 +604,18 @@ export default function ExplorerApp() {
       setNarrationPreparing(true);
       setIsSpeaking(true);
 
+      // 同 speakLessonWithHighlight：旧播报的回调可能迟到，只有仍是当前播报才改状态
+      const isCurrent = () => narrationRef.current === ctrl;
+
       void ctrl.run(
         sections.map((s) => ({ key: s.key, text: s.text })),
         language,
         {
-          onFirstAudio: () => setNarrationPreparing(false),
+          onFirstAudio: () => {
+            if (isCurrent()) setNarrationPreparing(false);
+          },
           onSectionStart: ({ key, baseIndex, text, wordBoundaries, audio }) => {
+            if (!isCurrent()) return;
             if (wordBoundaries.length > 0 && audio) {
               startHighlightWithTiming([{ key, text }], wordBoundaries, audio, baseIndex);
             } else {
@@ -601,6 +623,7 @@ export default function ExplorerApp() {
             }
           },
           onDone: (wasCancelled) => {
+            if (!isCurrent()) return;
             setNarrationPreparing(false);
             setIsSpeaking(false);
             if (!wasCancelled) stopHighlight();

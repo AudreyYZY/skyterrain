@@ -220,23 +220,24 @@ async function speakEdgeAndWait(
       if (currentAudio === audio) currentAudio = null;
     };
 
+    let settled = false;
+    const settle = (ok: boolean) => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      resolve(ok ? { ok: true, wordBoundaries } : { ok: false, wordBoundaries: [] });
+    };
+
     audio.onplaying = () => {
       onPlaying?.();
     };
-
-    audio.onended = () => {
-      cleanup();
-      resolve({ ok: true, wordBoundaries });
+    audio.onended = () => settle(true);
+    audio.onerror = () => settle(false);
+    // 同 playSynthesized：stopSpeech() 只 pause，不加这条 Promise 不会结束
+    audio.onpause = () => {
+      if (!audio.ended) settle(false);
     };
-    audio.onerror = () => {
-      cleanup();
-      resolve({ ok: false, wordBoundaries: [] });
-    };
-
-    void audio.play().catch(() => {
-      cleanup();
-      resolve({ ok: false, wordBoundaries: [] });
-    });
+    void audio.play().catch(() => settle(false));
   });
 }
 
@@ -338,25 +339,26 @@ export function playSynthesized(
     currentAudio = audio;
     currentObjectUrl = url;
 
-    const cleanup = () => {
+    let settled = false;
+    const settle = (ok: boolean) => {
+      if (settled) return;
+      settled = true;
       URL.revokeObjectURL(url);
       if (currentObjectUrl === url) currentObjectUrl = null;
       if (currentAudio === audio) currentAudio = null;
+      resolve({ ok });
     };
 
     audio.onplaying = () => onPlaying?.();
-    audio.onended = () => {
-      cleanup();
-      resolve({ ok: true });
+    audio.onended = () => settle(true);
+    audio.onerror = () => settle(false);
+    // stopSpeech() 走的是 pause()，不会触发 ended/error。少了这一条，
+    // 分段播报的 await 会永远挂住 —— onDone 不再执行，isSpeaking 卡在 true，
+    // 于是切模式后再点城市，阅读面板收不到「开始播报」的状态变化，停在卡片态。
+    audio.onpause = () => {
+      if (!audio.ended) settle(false);
     };
-    audio.onerror = () => {
-      cleanup();
-      resolve({ ok: false });
-    };
-    void audio.play().catch(() => {
-      cleanup();
-      resolve({ ok: false });
-    });
+    void audio.play().catch(() => settle(false));
   });
 }
 
