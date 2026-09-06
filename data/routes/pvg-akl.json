@@ -15,6 +15,11 @@
     "arrIata": "AKL",
     "durationMin": 700
   },
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/CES779",
+    "checkedOn": "2026-09-06",
+    "note": "东航 MU779 PVG→AKL 属实；机型实为 Boeing 777-300ER（777-39P(ER)），原记 787-9 已改正"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

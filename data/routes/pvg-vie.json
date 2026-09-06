@@ -15,6 +15,11 @@
     "arrIata": "VIE",
     "durationMin": 745
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/os16/bangkok/vienna/",
+    "checkedOn": "2026-09-06",
+    "note": "奥地利航空 OS16 PVG→VIE，周二/三/六执飞，约 12h19m–12h55m，机型 Boeing 777-2Q8(ER)，与记录的 777-200 吻合"
+  },
   "cruiseHeight": 11200,
   "waypoints": [
     {

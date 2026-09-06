@@ -10,10 +10,15 @@
     "airline": "中国国际航空",
     "airlineEn": "Air China",
     "flightNo": "CA901",
-    "aircraft": "COMAC C919",
+    "aircraft": "Boeing 737 MAX 8",
     "depIata": "PEK",
     "arrIata": "UBN",
     "durationMin": 135
+  },
+  "source": {
+    "ref": "https://www.airnavradar.com/data/flights/CCA901",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA901 PEK→UBN 属实，约 2h10m–2h15m，与记录的 135min 吻合；机型实为 Boeing 737 MAX 8，C919 飞的是 CA723/CA724，原记 C919 已改正"
   },
   "cruiseHeight": 10400,
   "waypoints": [

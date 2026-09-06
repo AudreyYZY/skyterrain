@@ -44,6 +44,15 @@ export interface FlightInfo {
   durationMin: number;
 }
 
+export interface RouteSource {
+  /** 核实所依据的来源（航司官网 / 航班追踪站 / 机场时刻表等） */
+  ref: string;
+  /** 核实日期 YYYY-MM-DD */
+  checkedOn: string;
+  /** 核实到的要点，便于下次比对（如「每日执飞，11h05m，777-300ER」） */
+  note?: string;
+}
+
 export interface FlightRoute {
   id: string;
   name: string;
@@ -55,6 +64,17 @@ export interface FlightRoute {
   /** 到达国家 slug。与 depCountry 相同 → 国内航线；不同 → 国际航线 */
   arrCountry: string;
   flight?: FlightInfo;
+  /**
+   * 航班信息的核查留痕：核实用的来源 + 核实日期（YYYY-MM-DD）。
+   *
+   * 城市与地形注册表一直强制 `source`，航线此前是唯一没有的一档 —— 于是
+   * 「这条航线是真的吗、机型对不对」没法离线回答，只能重新上网查。
+   * 实测确有失效案例：上海—奥克兰 MU779 的机型原记为 787-9，实际是 777-300ER。
+   *
+   * **航班号、机型、时长都是核实当日的快照**，航司改期换机不会自动同步；
+   * checkedOn 就是用来判断这份快照有多旧的。
+   */
+  source?: RouteSource;
   waypoints: RouteWaypoint[];
   /** 巡航高度（米，离地） */
   cruiseHeight: number;

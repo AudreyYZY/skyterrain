@@ -16,6 +16,7 @@ import {
 } from "@/lib/cesium/region-highlight";
 import { viewHeightForTerrain } from "@/lib/cesium/route-progress";
 import {
+  cameraHeightAt,
   planRouteFlight,
   sampleFlight,
   type FlightCurve,
@@ -511,10 +512,15 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           const rollRad = Cesium.Math.toRadians(CRUISE_ROLL_DEG);
 
           // 摆到起点位（用与飞行同一高度，衔接不跳）
-          viewer.camera.setView({
-            destination: camPts[0]!,
-            orientation: { heading: plan.headingAtDistance(0), pitch: pitchRad, roll: rollRad },
-          });
+          {
+            const c0 = Cesium.Cartographic.fromCartesian(camPts[0]!);
+            viewer.camera.setView({
+              destination: Cesium.Cartesian3.fromRadians(
+                c0.longitude, c0.latitude, cameraHeightAt(0, plan.cruiseHeightM),
+              ),
+              orientation: { heading: plan.headingAtDistance(0), pitch: pitchRad, roll: rollRad },
+            });
+          }
           viewer.scene.requestRender();
 
           setRoutePreparing(false);
@@ -560,8 +566,18 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
               const { position, heading, segmentIndex } = sampleFlight(curve, p);
 
               if (!userTookOver) {
+                // 起降段把取景高度压下来：巡航高度按地速可以到几百公里，
+                // 那个高度上机场和城市完全认不出来，用户无从判断「到了没有」。
+                const carto = Cesium.Cartographic.fromCartesian(
+                  new Cesium.Cartesian3(position.x, position.y, position.z),
+                );
+                const dest = Cesium.Cartesian3.fromRadians(
+                  carto.longitude,
+                  carto.latitude,
+                  cameraHeightAt(p, plan.cruiseHeightM),
+                );
                 viewer.camera.setView({
-                  destination: new Cesium.Cartesian3(position.x, position.y, position.z),
+                  destination: dest,
                   orientation: { heading, pitch: pitchRad, roll: rollRad },
                 });
               }

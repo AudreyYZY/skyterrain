@@ -37,6 +37,7 @@ function haversineKm(a: [number, number], b: [number, number]): number {
 }
 
 let failures = 0;
+let missingSource = 0;
 const fail = (id: string, msg: string) => {
   failures++;
   console.error(`  ✗ ${id}: ${msg}`);
@@ -54,6 +55,18 @@ for (const r of ROUTES) {
     fail(r.id, "flight 字段不完整");
   }
   if (!r.nameEn || !r.descriptionEn) fail(r.id, "缺少英文名/描述");
+
+  // 核查留痕：城市与地形一直强制 source，航线补齐这一档。
+  // 只能验「有没有留痕、格式对不对」，验不了「内容是不是真的」——
+  // 真伪要靠人按 ref 复核，checkedOn 用来判断这份快照有多旧。
+  if (!r.source) {
+    missingSource++;
+  } else {
+    if (!r.source.ref?.trim()) fail(r.id, "source.ref 为空");
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(r.source.checkedOn ?? "")) {
+      fail(r.id, `source.checkedOn 不是 YYYY-MM-DD：${r.source.checkedOn}`);
+    }
+  }
 
   if (seenIds.has(r.id)) fail(r.id, "航线 id 重复");
   seenIds.add(r.id);
@@ -142,5 +155,11 @@ for (const r of ROUTES) {
   );
 }
 
+if (missingSource > 0) {
+  console.log(
+    `\n· ${missingSource}/${ROUTES.length} 条航线尚未填写 source（核查留痕）` +
+      "\n  逐条核实后补 source.ref / checkedOn / note；全部补齐后把这里改成硬失败",
+  );
+}
 console.log(`\n${ROUTES.length} 条航线, ${failures} 项异常`);
 process.exit(failures > 0 ? 1 : 0);

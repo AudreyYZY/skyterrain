@@ -15,6 +15,11 @@
     "arrIata": "JFK",
     "durationMin": 930
   },
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/CCA981",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA981 PEK→JFK 属实，机型 Boeing 747-8I（747-89L，注册号 B-2486），与记录一致；时长未单独核实"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {
