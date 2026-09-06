@@ -394,6 +394,20 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 
 ## 语音播报
 
+- **缓存是第一道防线，不是优化**：`lib/tts-cache.ts` 是缓存键/白名单/超时/合成的
+  唯一实现，`app/api/tts/route.ts` 与 `scripts/warm-tts.ts` 共用。缓存键是
+  `sha256(voice + " " + text)`，改键算法等于作废整个 `.tts-cache/`。
+  预热 `npm run warm:tts`（可中断可续跑，支持 `--kinds/--langs/--ids/--limit`），
+  覆盖率 `npm run check:tts`。全站 23,802 段播报、约 4.9 GB、167 小时音频。
+  **`.tts-cache/` 是本机 gitignore 目录，不进仓库**；换机器/换服务器重跑预热即可。
+- 播报文本清单由 `lib/tts-manifest.ts` 生成，一律调用客户端同一套函数
+  （`resolveLesson`+`lessonSections` / `resolveTravelGuide`+`travelGuideToSections` /
+  `getRouteNarration`），保证与线上请求逐字节一致 —— 不一致则预热白做。
+- **语速常数分语言**（`lib/speech.ts` `CHARS_PER_SEC`：zh 4.44 / en 15.24 字符每秒），
+  从缓存音频的 word boundary 实测而来；`npm run check:tts` 会复算并比对。
+  以前只有一个按中文校准的 4.5，英文被高估 3.4 倍，航线兜底节拍因此错得离谱。
+- 降级策略是**连续失败计数**（`lib/section-narration.ts`，连续 2 段才整篇降级），
+  不是「一段失败就永久降级」——后者会让一次瞬时超时把整篇变成机械音。
 - `app/api/tts/route.ts`：Edge TTS，默认 `zh-CN-XiaoxiaoNeural`（最自然的中文女声），
   `PROSODY` 常量控制 rate/pitch（大幅放缓会有机械感，保持 -6% 左右）。
 - 逐句高亮：Edge TTS 成功 → `startHighlightWithTiming`（word boundary 精确同步）；
@@ -402,9 +416,20 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 
 ## 航线飞行
 
-- 每条航线一次 ≤3 分钟：`CesiumMap.flyRoute` 把镜头立即摆到起点机场上空 → 立刻开始播
-  `route-narration.ts` 里这条航线专属的连贯解说 → 同时镜头沿航点匀速飞完
-  （总时长 `ROUTE_FLIGHT_SEC ≈165s`，`LINEAR_NONE` 缓动）。
+- **运动模型全部在 `lib/cesium/route-flight.ts`（纯函数，不依赖 Cesium/React）**，
+  自检 `npm run check:flight` 对全部 295 条航线按 60 Hz 跑断言：进度映射单调、
+  地速/取景高度比 ≤0.6、加速度、转向速率 ≤25 度/秒、飞行时长 ≥ 解说时长。
+  **改这块必须先跑这个脚本**，别靠肉眼看。
+- 时长**按距离分级**（90–300s，必要时延到 420s），且永远 ≥ 解说时长；
+  取景高度跟随**峰值**地速（高度 = 峰值 × 2.5 秒），保证「每秒扫过多少个取景高度」
+  在长短航线上恒定（实测国内 0.41 / 国际 0.42）。航线距离相差 108 倍，
+  用同一个时长必然让长航线糊掉。
+- 进度是**帧率驱动**，单帧推进封顶 100ms。**不要改回跟随 `audio.currentTime`**——
+  媒体元素的播放位置是台阶式更新的，高地速下每级台阶就是几公里跳跃，那是「抖」的来源。
+- 位置曲线用以弧长为节点的 Barry-Goldman（弦长参数化）Catmull-Rom，航点处 C1 连续；
+  停留平台两侧用梯形速度曲线；朝向按固定行进时间窗滑动平均（否则密集航点会甩头几百度/秒）。
+- `CesiumMap.flyRoute` 把镜头摆到起点机场上空 → 开始播 `route-narration.ts` 里这条
+  航线专属的连贯解说 → 同时镜头沿航点飞完。
 - **不再逐个航点念地形讲解**。`onFlyoverWaypoint` 只把当前飞越的地形名同步到右侧面板，
   面板显示整条解说 + 逐句高亮。
 - `RouteFlyCallbacks`：`onNarrate`（返回 Promise，播解说）/ `onFlyoverWaypoint` / `onComplete` / `onCancelled`。
