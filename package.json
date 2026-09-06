@@ -18,7 +18,8 @@
     "check": "npm run typecheck && npm run lint && npm run check:regions && npm run check:camera && npm run check:places && npm run check:routes && npm run check:tts && npm run check:flight",
     "check:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-tts-cache.ts",
     "warm:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/warm-tts.ts",
-    "check:flight": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-flight.ts"
+    "check:flight": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-flight.ts",
+    "check:anchors": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-anchors.ts"
   },
   "dependencies": {
     "cesium": "^1.141.0",
