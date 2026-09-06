@@ -1466,6 +1466,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   naha: {
     identity:
       "那霸是冲绳县的首府，也是南西诸岛这片亚热带岛屿地区的中心城市，人口约31万。它是进出冲绳的门户，本身以国际通商业街、市场和二战、琉球王国时期的历史遗迹为主，海滩多在周边和离岛。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Naha (Okinawa capital; ~40 km²; ~313,000 2025; Kokusai-dori 1.6 km; Shuri Castle UNESCO 2000, burned 2019; Yui Rail monorail only rail in prefecture; Tomari wharf to Kerama; airport; Okinawa Island ~100 km long; bases mostly outside Naha)
+    howItWorks:
+      "那霸是冲绳县的县厅所在地，一座核心市，市域只有约 40 平方公里，2025 年人口约 31 万；市政府管地方服务，警察与学校归县，冲绳的美军基地大多在那霸以外的宜野湾、嘉手纳。市中心在国际通一带，1.6 公里的商店街是它的主轴，首里城在东面的高地上，2000 年列入世界遗产，2019 年正殿烧毁后重建，机场在市区西南角，单轨电车“Yui Rail”从机场穿过市区到首里，是全县唯一的轨道交通，泊港的船开往庆良间群岛。初来的人最容易犯的错，是把那霸当作冲绳，而冲绳本岛南北长约 100 公里，没有车几乎哪里都去不了。",
     layout:
       "那霸在冲绳本岛南部、面向东海。市中心是国际通及其周边的商店街和市场（第一牧志公设市场），首里城公园在城市东侧的高地上（2019年火灾后正殿等在复原中）。港口连接周边离岛，机场在市区西南。",
     gettingAround:
@@ -1805,6 +1808,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sendai: {
     identity:
       "仙台是日本东北地方最大的城市，宫城县首府，都会区约150万人。它三面环山、面向太平洋，市中心绿树成荫，被称为“杜之都”，也是进入松岛、山寺、鸣子温泉和东北其它地方的枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sendai (designated city 1989, 5 wards; 786 km²; ~1.1 million; Miyagi capital, largest in Tōhoku; Date Masamune 1600; zelkova avenues; Tanabata August; subway 2 lines; Shinkansen ~1.5 h; airport at Natori with rail 2007; Matsushima ~25 km; 2011 tsunami hit coast)
+    howItWorks:
+      "仙台是宫城县的县厅所在地，东北地方最大的城市，1989 年起是政令指定都市，市下分 5 个区，市域约 786 平方公里，人口约 110 万；区是市的派出机构，市政府管地方服务，警察与学校归县。伊达政宗 1600 年在青叶山筑城，城市从城下町长出来，定禅寺通与青叶通的榉树让它被叫作“杜之都”，八月的七夕祭是日本最大的，两条地铁线穿过市中心，新干线到东京约一个半小时，机场在南面的名取市，2007 年通了铁路；松岛在东北约 25 公里，2011 年的海啸淹没了东面若林区的海岸。初来的人最容易犯的错，是把仙台当作一座工业城，而它是一座以大学与商业为主、从山到海的百万人城市。",
     layout:
       "仙台建在广濑川切出的河谷平原上，背靠奥羽山脉、面向仙台平原和太平洋。市中心在仙台站以西，青叶城（仙台城）遗址在城西的高台上。往东北沿海到松岛湾，往西南进山到作并、秋保温泉，往北到鸣子。2011年的地震和海啸对沿海一带影响很大，部分区域重建后设有纪念设施。",
     gettingAround:
@@ -1856,6 +1862,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kanazawa: {
     identity:
       "金泽是石川县首府，日本海一侧、加贺地区的中心城市，市区人口约45万。它在江户时代是加贺藩的城下町，长期富庶、重视工艺（金箔、漆器、加贺友禅、九谷烧），战争中受损小，保留了大片老街区和一座名园，被称为“小京都”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kanazawa (core city; ~469 km²; ~466,000; Ishikawa capital; Maeda/Kaga domain; Kenroku-en; Higashi Chaya/Nagamachi; gold leaf 99% of Japan; Hokuriku Shinkansen 2015 ~2.5 h Tokyo; Komatsu airport ~30 km; buses, no subway)
+    howItWorks:
+      "金泽是石川县的县厅所在地，一座核心市，市域约 469 平方公里，人口约 47 万；市政府管地方服务，警察与学校归县。江户时代前田家的加贺藩以这里为城下町，武家、町人与寺町的分区至今保留：兼六园与金泽城在市中心的高地上，东茶屋街在浅野川对岸，长町的武家屋敷在犀川一侧，近江町市场在两者之间，日本九成以上的金箔产自这里；北陆新干线 2015 年通车，到东京约两个半小时，小松机场在西南约 30 公里，市内没有轨道交通，靠公交。初来的人最容易犯的错，是把金泽当作京都的缩小版，而它是一座没有经历过空袭、城下町格局完整的北陆首府。",
     layout:
       "金泽建在犀川和浅野川之间的丘陵和平地上。中心是金泽城和兼六园一带，往北过浅野川是东茶屋街（老艺伎街区），往西南过犀川是西茶屋街和寺町的寺院群，长町还留着武家宅邸的土墙。金泽站是新的门户，有一座木造大鼓门。",
     gettingAround:
@@ -1871,6 +1880,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nara: {
     identity:
       "奈良是奈良县首府，京都以南约40公里，是公元8世纪日本的都城（平城京），比京都更早。市区不大，几座规模宏大的古寺、神社和一大片有野生鹿出没的公园集中在一起，是感受奈良时代和早期佛教艺术的地方。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nara (core city; ~277 km²; ~367,000 2022; Nara Prefecture capital; capital of Japan 710–784; Nara Park deer; Tōdai-ji/Kōfuku-ji/Kasuga UNESCO 1998; Kintetsu Nara near park vs JR Nara; Kyoto 45 min/Osaka 40 min; Hōryū-ji in Ikaruga)
+    howItWorks:
+      "奈良市是奈良县的县厅所在地，一座核心市，市域约 277 平方公里，2022 年人口约 37 万；市政府管地方服务，警察与学校归县。710 至 784 年这里是日本的都城平城京，宫殿遗址在城西的田野里，东大寺、兴福寺、春日大社在城东的奈良公园里，约 1,200 头鹿在公园里游走，1998 年这一组古迹列入世界遗产；近铁奈良站就在公园边，JR 奈良站在西面 1 公里，京都约 45 分钟，大阪约 40 分钟，大多数人当天往返。初来的人最容易犯的错，一是把奈良市与奈良县混为一谈，二是以为法隆寺在奈良市，而它在西南 12 公里的斑鸠町。",
     layout:
       "奈良的核心是奈良公园——一大片草地和林地，东大寺、春日大社、兴福寺、国立博物馆和几百头野生鹿都在里面，从近铁奈良站步行可达。往西的郊外是平城宫迹和唐招提寺、药师寺（西之京）；再往西南是法隆寺（斑鸠）。市区其余部分是安静的住宅区。",
     gettingAround:
@@ -1904,6 +1916,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   takamatsu: {
     identity:
       "高松是香川县首府，四国北岸、濑户内海边的城市，市区人口约42万。它是四国的海上门户，以栗林公园、讃岐乌冬和濑户内海的岛屿（直岛、丰岛的当代艺术）为人所知。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Takamatsu (core city 1999; ~375 km²; ~414,000 2022; Kagawa capital, smallest prefecture; Sunport; Ritsurin Garden; castle with seawater moat; Kotoden; ferries to Naoshima/Shodoshima; Seto Ohashi from Sakaide; udon; Yashima)
+    howItWorks:
+      "高松是香川县的县厅所在地，日本面积最小的县的首府，一座核心市，市域约 375 平方公里，2022 年人口约 41 万，是四国最大的市镇；市政府管地方服务，警察与学校归县。城市面朝濑户内海围成一个半圆，高松港与阳光港是它的门面，高松城的护城河引的是海水，栗林公园在城南，琴电的小火车穿过市区，屋岛在城东；渡轮从港口开往直岛、丰岛与小豆岛，濑户大桥从西面 20 公里的坂出跨海通往本州，讃岐乌冬是日常。初来的人最容易犯的错，是把直岛当作高松的一部分，而它是另一个町，高松只是去岛上的码头。",
     layout:
       "高松建在濑户内海边的狭长平地上，背后是象征高松的“御盆山”屋岛。中心在高松站和丸龟町商店街一带，栗林公园在城南。高松港有开往直岛、小豆岛、女木岛等的渡轮。往西是丸龟、琴平（金刀比罗宫），往东是德岛。",
     gettingAround:
@@ -1919,6 +1934,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nagasaki: {
     identity:
       "长崎是长崎县首府，九州西端、面向东海的港口城市，市区人口约40万。它在江户时代是日本唯一对外（荷兰、中国）开放的口岸，留下出岛、唐人屋敷和大片依山而建的西式、中式建筑；1945年8月遭原子弹轰炸，也建有和平纪念设施。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nagasaki (core city; ~406 km²; ~392,000 2024; prefecture capital; hillside harbour; trams; Urakami atomic bombing 1945; Dejima; Glover Garden; Oura church UNESCO 2018; Gunkanjima boats; Nishi-Kyushu Shinkansen 2022; Ōmura airport ~40 km)
+    howItWorks:
+      "长崎是长崎县的县厅所在地，一座核心市，市域约 406 平方公里，2024 年人口约 39 万；市政府管地方服务，警察与学校归县。城市沿一个狭长的港湾爬上两侧的山坡，有轨电车沿港湾底部的平地行驶，市中心在港口的东岸，出岛、唐人街与哥拉巴园在南面，1945 年原子弹在北面的浦上上空爆炸，和平公园在那里，大浦天主堂 2018 年作为潜伏基督徒遗产列入世界遗产，军舰岛的船从港口出发，稻佐山在港湾西侧；西九州新干线 2022 年通车，机场在东北约 40 公里的大村。初来的人最容易犯的错，是把长崎当作一座平坦的港口城，而它的住宅爬满山坡，出门就是台阶。",
     layout:
       "长崎是典型的港湾城市，市区沿一个深入内陆的海湾两岸的山坡展开，房子层层叠叠、坡道和石阶很多。中心在长崎站到浜町商店街一带，出岛在其南，哥拉巴园和大浦天主堂在海湾东岸的南山手，稻佐山在西岸。往北是原爆落下中心与和平公园。",
     gettingAround:
@@ -1952,6 +1970,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   himeji: {
     identity:
       "姬路在兵库县西部的播磨平原上，人口约51.8万（2025年），以姬路城闻名——这座1609年建成的天守是日本现存最完整、规模最大的城堡建筑群，1993年列入世界遗产（日本首批），因白色灰泥外墙被称为“白鹭城”。二战空袭烧毁了市区大半，城堡却完好保存。城堡旁的好古园是复原的大名庭园，城西北的书写山圆教寺是有千年历史的天台宗寺院，也是电影《最后的武士》的取景地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Himeji (core city; ~534 km²; ~518,000; Hyōgo Prefecture, capital Kobe; castle UNESCO 1993 ~1 km from station; Kōko-en; Engyō-ji on Mount Shosha; Shinkansen ~1 h Osaka/Kyoto; no airport; industrial coast)
+    howItWorks:
+      "姬路是兵库县的一座核心市，不是县厅所在地——县厅在神户——市域约 534 平方公里，人口约 52 万，是播磨地区的中心；市政府管地方服务，警察与学校归县。姬路城在车站正北 1 公里的大道尽头，1993 年列入世界遗产，是日本保存最完整的城堡，好古园在城边，书写山的圆教寺在城西北的山上；新干线到大阪、京都约一小时，没有机场，用神户或关西，南面的海岸是钢铁与化工的工业带，家岛群岛也在市域内。初来的人最容易犯的错，是把姬路当作一座只有城堡的小镇，而它是一座 50 万人的工业与商业城市，城堡只是车站北面的一角。",
     layout:
       "姬路城在市区正北，从 JR 姬路站出来沿大手前通向北走约1公里就到城堡，这条大道两侧是商店街和市中心。好古园在城堡西侧，姬路市立美术馆在城东。书写山在市区西北约8公里，坐巴士到山下再乘缆车上山。海边的姬路港有去家岛群岛和小豆岛的船。神户在东面约55公里，冈山在西面约90公里。",
     gettingAround:
@@ -1966,6 +1987,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   takayama: {
     identity:
       "高山在岐阜县北部的飞驒山地里，人口约8.2万（2025年），面积2178平方公里，是日本面积最大的市。江户时代它是幕府直辖的飞驒地区中心，三町老街保留着成片的江户商家町屋，高山阵屋是日本唯一现存的幕府直辖地代官所。春秋两季的高山祭（4月14–15日山王祭、10月9–10日八幡祭）以精美的屋台（彩车）闻名，被视为日本最美的祭典之一。它也是世界遗产白川乡合掌村的门户，飞驒牛是本地名物，年降雪超过3米。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Takayama (city ~2,178 km², largest in Japan by area after 2005 merger; ~82,000 2025; ~570 m; Hotaka 3,190 m within city; Sanmachi; festivals Apr/Oct; Hida beef; JR Takayama Line ~2.5 h Nagoya; Shirakawa-go bus ~50 min; snow ~5 m/yr; no airport)
+    howItWorks:
+      "高山是岐阜县的一座市，2005 年合并周围的町村后，市域约 2,178 平方公里，是日本面积最大的市，比东京都还大，人口却只有约 8 万；市政府管地方服务，警察与学校归县。市区在海拔约 570 米的盆地里，三町的老街与朝市是它的中心，春秋两次的高山祭是它的节日，飞驒牛是它的味道；市域向东一直伸进北阿尔卑斯，3,190 米的奥穗高岳、上高地与乘鞍岳都在高山市内，白川乡在西北，公交约 50 分钟，JR 高山本线到名古屋约两个半小时，没有机场，冬天的积雪超过 5 米。初来的人最容易犯的错，是把高山当作一座老街小镇，而它的市域是一整片山地，老街只是盆地里的几条街。",
     layout:
       "高山市区在宫川两岸的小盆地里，JR 高山站在西侧，过宫川就是三町老街和高山阵屋，宫川沿岸每天早上有朝市，阵屋前也有一处。樱山八幡宫（高山祭屋台会馆）在市区北面，飞驒之里在西南的山坡上。白川乡在西北约50公里，奥飞驒温泉乡和新穗高缆车在东面约50公里的北阿尔卑斯山麓，下吕温泉在南面约50公里。",
     gettingAround:
@@ -1980,6 +2004,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   matsumoto: {
     identity:
       "松本在长野县中部的松本盆地里，海拔约610米，人口约23.6万（2025年），是日本阿尔卑斯的门户。松本城建于十六世纪末，是日本仅有的五座国宝天守之一，黑色外墙被称为“乌城”；1876年建成的旧开智学校是日本最早的近代小学之一，也是国宝。上高地——北阿尔卑斯山麓的高原河谷——从松本坐车约1.5小时；艺术家草间弥生出生于此，松本市美术馆有她的常设展。中町通的仓造老街、安昙野的大王山葵农场是常去的地方。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matsumoto (core city 2021; ~978 km²; ~236,000; Nagano Prefecture second city; castle national treasure; ~590 m; Kamikōchi gateway; Shinshu University; Suzuki Method; Azusa ~2.5 h Shinjuku; airport; Nagano city 75 km north)
+    howItWorks:
+      "松本是长野县的第二大城市，2021 年起是核心市，市域约 978 平方公里，人口约 24 万，县厅在北面 75 公里的长野市；市政府管地方服务，警察与学校归县。城市在海拔约 590 米的松本盆地里，松本城的黑色天守是国宝，中町与绳手通的老街在城南，信州大学在城里，铃木镇一的音乐教学法从这里传出；上高地与乘鞍的巴士从新岛岛出发，美原高原在东面，“梓”号特急到新宿约两个半小时，机场在城西南。初来的人最容易犯的错，是把松本当作长野的郊县，而它是一座有自己城堡、大学与机场的独立城市，通往阿尔卑斯的门在这里而不在长野。",
     layout:
       "松本市区在女鸟羽川两岸，JR 松本站在西侧，向东步行约15分钟到松本城；中町通和绳手通在城与车站之间的河边，松本市美术馆在市区东南。旧开智学校在城北。安昙野（大王山葵农场）在北面约15公里；上高地在西面的山里，从松本坐电车到新岛岛再转巴士；美原高原在东面的山上，乘鞍高原、白骨温泉在西南。松本机场在市区西南约9公里。",
     gettingAround:
@@ -1994,6 +2021,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hakodate: {
     identity:
       "函馆在北海道最南端的渡岛半岛上，人口约24万（2024年），是1854年《日美和亲条约》后最早对外开港的日本港口之一（1859年正式开港）。元町坡道上的教堂、领事馆和洋馆，金森红砖仓库，以及1864年建成的西洋式星形要塞五棱郭，都是开港时代的遗产。海拔334米的函馆山夜景是日本最著名的夜景之一。函馆朝市以海鲜（乌贼、海胆、螃蟹）出名，2016年北海道新干线开通到新函馆北斗站。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hakodate (core city; ~678 km²; ~240,000; Hokkaido, Oshima subprefecture; Mount Hakodate night view; Motomachi churches; red brick warehouses; morning market; trams; Goryōkaku; open port 1859; Shinkansen at Shin-Hakodate-Hokuto ~18 km 2016; airport; ferry to Aomori)
+    howItWorks:
+      "函馆是北海道南端的核心市，渡岛振兴局的所在地，市域约 678 平方公里，人口约 24 万；市政府管地方服务，警察与学校归道。城市建在连接函馆山与大陆的一条沙洲上，1859 年作为最早的开港地之一开放，元町的教堂与坡道、红砖仓库群在山脚的西侧，朝市在车站旁，五棱郭的星形城郭在北面，有轨电车沿沙洲把它们连起来，函馆山的夜景在西端；北海道新干线 2016 年通车，但车站在北面约 18 公里的新函馆北斗，机场在东面，渡轮通往青森。初来的人最容易犯的错，是以为新干线直达函馆市区，而下车还要换乘 20 分钟的接驳列车。",
     layout:
       "函馆市区在一条连接函馆山与陆地的沙洲上，两侧都是海：JR 函馆站和朝市在沙洲中部，往西南是元町和金森仓库（海湾区），再往前是函馆山；五棱郭在市区东北约4公里，汤川温泉在东面的海边，机场在汤川再往东。新函馆北斗站在市区北面约20公里。大沼国定公园在北面约30公里，特拉皮斯汀修道院在城东。",
     gettingAround:
@@ -2008,6 +2038,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kumamoto: {
     identity:
       "熊本是熊本县县厅所在地，在九州中部的熊本平原上，人口约73.8万（2025年）。1607年由加藤清正建成的熊本城是日本三大名城之一，以陡峭的“武者返”石垣闻名；2016年4月14日和16日的两次强震（最大7.1级）严重损坏城堡，天守于2021年修复重开，石垣和其他建筑的复原仍在进行。水前寺成趣园是江户时代细川家的回游式庭园，阿苏山——世界最大级的破火山口之一——在城东约40公里，熊本熊（Kumamon）是县的吉祥物。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kumamoto (designated city 2012, 5 wards; ~390 km²; ~738,000 2025; prefecture capital; castle damaged 2016 earthquake, under restoration; Suizenji; trams; Shimotori/Kamitori arcades; groundwater city; Aso ~40 km; Kyushu Shinkansen; airport ~20 km; TSMC at Kikuyō 2024)
+    howItWorks:
+      "熊本是熊本县的县厅所在地，2012 年起是政令指定都市，市下分 5 个区，市域约 390 平方公里，2025 年人口约 74 万；区是市的派出机构，市政府管地方服务，警察与学校归县。熊本城在市中心的高地上，2016 年地震损毁后仍在修复，下通与上通的拱廊街在城南是商业中心，水前寺成趣园在城东，有轨电车穿过市区，全市的自来水都来自地下水；阿苏山在东面约 40 公里，九州新干线的熊本站在城西，机场在东面约 20 公里，台积电的工厂 2024 年在东郊的菊阳町投产。初来的人最容易犯的错，是把熊本当作去阿苏的过路站，而它是一座 74 万人的县厅城市，城堡与拱廊街是它自己的中心。",
     layout:
       "熊本城在市中心北侧的高地上，城下的樱之马场城彩苑是餐饮和特产区，通町筋、下通商店街在城堡南面是市中心，路面电车贯穿。水前寺成趣园在市区东南约3公里的电车沿线。JR 熊本站在市区西南约2公里，新干线也停这里。阿苏山在东面，从熊本坐 JR 丰肥线到阿苏站约1.5小时再换巴士；机场在东面约20公里的益城町，天草群岛在西南约2小时。",
     gettingAround:
@@ -2022,6 +2055,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kagoshima: {
     identity:
       "鹿儿岛在九州最南端的锦江湾（鹿儿岛湾）西岸，人口约58.4万（2024年），对岸4公里处是至今活跃的樱岛火山——火山灰时常落到市区，市民备有专门的“灰袋”。这里是萨摩藩岛津家的领地，幕末的萨摩藩推动了明治维新，仙岩园（岛津家别邸）和旁边的旧集成馆是2015年列入世界遗产的“明治工业革命遗产”的一部分。鹿儿岛是去屋久岛、种子岛的港口，南面的指宿以砂蒸温泉出名；本地有黑猪、烧酒和白熊刨冰。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kagoshima (core city; ~547 km²; ~590,000; prefecture capital; Sakurajima within the city since 2004 merger, ferry 15 min, ash; Tenmonkan; trams; Sengan-en; Satsuma domain, Saigō; Kyushu Shinkansen terminus Kagoshima-Chūō; airport ~40 km at Kirishima; ferries to Yakushima)
+    howItWorks:
+      "鹿儿岛是鹿儿岛县的县厅所在地，一座核心市，市域约 547 平方公里，人口约 59 万；市政府管地方服务，警察与学校归县。城市面朝锦江湾，樱岛火山就在湾对面 4 公里处，2004 年合并后樱岛也在鹿儿岛市内，渡轮 15 分钟一趟，火山灰是市民的日常，学童戴着头盔上学；天文馆的拱廊街是市中心，有轨电车穿过市区，仙岩园在城北的海边，萨摩藩与西乡隆盛的历史在城里随处可见；九州新干线的终点鹿儿岛中央站在市中心，机场在北面约 40 公里的雾岛，渡轮通往屋久岛。初来的人最容易犯的错，是把樱岛当作对岸另一个町，而它是鹿儿岛市的一部分，火山灰也是这座城的一部分。",
     layout:
       "鹿儿岛市区在锦江湾西岸的平地上，鹿儿岛中央站在西侧，天文馆商业区在市中心，路面电车连接两者；城山在市中心北面，山顶展望台正对樱岛。樱岛渡轮码头在市区北端的海边，渡轮15分钟到樱岛；仙岩园在市区北面约5公里的海岸。指宿在南面约50公里，雾岛温泉和机场在东北约30公里，去屋久岛的高速船从南码头出发。",
     gettingAround:
@@ -2036,6 +2072,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   matsuyama: {
     identity:
       "松山是爱媛县县厅所在地、四国最大的城市，人口约49.4万（2026年）。道后温泉有三千年传说，是日本最古老的温泉之一，1894年建成的道后温泉本馆是国家重要文化财、至今营业的木造公共浴场；松山城（1602年始建）是日本十二座现存天守之一，立在市中心的胜山上。夏目漱石的小说《少爷》以松山为背景，俳人正冈子规是松山人，市内有子规纪念博物馆，路面电车从1887年运营至今。石手寺是四国八十八所遍路的第51号寺，岛波海道的四国起点今治在北面。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matsuyama (core city; ~429 km²; ~494,000, largest in Shikoku; Ehime capital; castle on Katsuyama with ropeway; Dōgo Onsen 1894 bathhouse ~3 km; Iyotetsu trams since 1887, Botchan train; Sōseki/Shiki haiku; airport 6 km; ferries to Hiroshima; Shimanami Kaidō from Imabari ~40 km)
+    howItWorks:
+      "松山是爱媛县的县厅所在地，四国最大的城市，一座核心市，市域约 429 平方公里，人口约 49 万；市政府管地方服务，警察与学校归县。松山城在市中心的胜山上，缆车从山下的商店街上去，道后温泉在东面 3 公里，1894 年的本馆是日本最老的公共浴场之一，1887 年起运行的伊予铁道有轨电车把车站、城下与道后连起来，“少爷列车”是它的复古车；夏目漱石的《少爷》以这里为舞台，正冈子规让它成为俳句之城，机场在城西 6 公里，渡轮从松山观光港开往广岛，岛波海道从北面 40 公里的今治出发。初来的人最容易犯的错，是把道后温泉当作松山的市中心，而市中心在城堡脚下，道后是电车终点的温泉町。",
     layout:
       "松山市区在松山平原上，松山城在中心的胜山山顶，山脚是大街道、银天街商店街和县厅；JR 松山站在城西，伊予铁松山市站在城南，两站都有路面电车。道后温泉在市区东北约3公里，是电车的终点，本馆、商店街和旅馆区集中在一起；石手寺在道后再往东约1公里。松山机场在市区西南约6公里，松山观光港在城西北，今治在东北约40公里。",
     gettingAround:
@@ -5304,6 +5343,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sintra: {
     identity:
       "辛特拉在里斯本西北约30公里，坐落于辛特拉山北麓，因常年受大西洋雾气影响、气候凉爽湿润，自摩尔人时期起就是避暑胜地。19世纪葡萄牙王室在此大规模营建宫殿园林，色彩斑斓的佩纳宫是最具代表性的建筑。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sintra (municipality 319 km², 385,654 2021, second most populous in Portugal, mostly Lisbon suburbs — Queluz, Cacém, Algueirão; historic vila in the hills UNESCO 1995: Pena, Moorish castle, Regaleira; Cabo da Roca; train from Rossio 35–45 min; bus 434)
+    howItWorks:
+      "辛特拉在行政上是一个市镇，由民选的市政厅治理，市域约 319 平方公里，2021 年人口约 39 万，是葡萄牙人口第二多的市镇——但这些人大多住在克鲁什、卡森、阿尔盖朗这些里斯本通勤线上的郊区。人们心中的辛特拉只是山里的那座小镇，几千人，1995 年作为文化景观列入世界遗产，佩纳宫、摩尔人城堡与雷加莱拉庄园在镇周围的山上，罗卡角在市镇的西端，是欧洲大陆的最西点；火车从里斯本罗西乌站约 40 分钟到辛特拉站，434 路公交环绕景点。初来的人最容易犯的错，是把辛特拉当作一座山中小镇，而这个市镇的绝大部分是里斯本的郊区，小镇只是它的一角。",
     layout:
       "辛特拉小镇本身不大，历史中心是老城区，宫殿和城堡则散布在周边的辛特拉山间：佩纳宫在山顶、雷加莱拉宫在半山、摩尔人城堡遗迹沿山脊延伸，几处景点之间有一定距离，多靠接驳巴士往返。",
     gettingAround:
@@ -5337,6 +5379,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   braga: {
     identity:
       "布拉加在波尔图东北约50公里，是葡萄牙最古老的城市之一（罗马时期建城），也是天主教在葡萄牙的宗教中心，教堂密度极高，有“葡萄牙的罗马”之称。城郊山顶的仁慈耶稣朝圣教堂及其巴洛克阶梯是最著名的地标。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Braga (municipality 183 km², ~193,000 2021; third urban area of Portugal; Braga district capital; Bracara Augusta; oldest archdiocese; Bom Jesus do Monte funicular UNESCO 2019 ~5 km; University of Minho; tech; Porto 55 km ~1 h train; no airport)
+    howItWorks:
+      "布拉加是葡萄牙北部的市镇与布拉加区的首府，由民选的市政厅治理，市域约 183 平方公里，2021 年人口约 19 万，城区是葡萄牙第三大；市政厅管地方服务，医疗、教育与警察归国家。罗马时期它是布拉卡拉·奥古斯塔，是伊比利亚最老的大主教区的所在地，被称为“葡萄牙的罗马”，大教堂与自由大道在市中心，山上仁慈耶稣圣所在东面 5 公里，靠一条老缆车上山，2019 年列入世界遗产；米尼奥大学让它成为葡萄牙最年轻的城市之一，波尔图在南面 55 公里，火车约一小时，没有机场。初来的人最容易犯的错，是把布拉加当作一座宗教古城，而它是葡萄牙增长最快的科技与大学城之一。",
     layout:
       "布拉加老城以主教座堂为核心，步行区密集分布着巴洛克风格的教堂和广场。城东的邦热苏斯山（仁慈耶稣山）是重要朝圣地，之字形的巴洛克阶梯从山脚一直通向山顶教堂。",
     gettingAround:
@@ -5352,6 +5397,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   guimaraes: {
     identity:
       "吉马良斯在布拉加以东约20公里，被称为葡萄牙的“摇篮城市”——传说葡萄牙王国的开国君主阿方索一世在此出生并宣布建国，城市老城因此整体列入联合国教科文组织世界遗产名录。10世纪的城堡至今矗立在城市高处。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Guimarães (municipality 241 km², ~157,000 2021; Braga district; birthplace of Portugal, 1128; historic centre UNESCO 2001; castle and Dukes' palace; Penha cable car 613 m; ECoC 2012; textiles; Porto 55 km train; Green Capital 2026)
+    howItWorks:
+      "吉马良斯是葡萄牙北部布拉加区的一个市镇，由民选的市政厅治理，市域约 241 平方公里，2021 年人口约 16 万；市政厅管地方服务，其余归国家。它被称为“葡萄牙的摇篮”：第一位国王阿方索一世据信生于此，1128 年的圣马梅德战役在城外，城堡与布拉干萨公爵宫在老城的高处，老城 2001 年列入世界遗产，佩尼亚山在城东，缆车上到 613 米；纺织、制鞋与金属加工让它成为葡萄牙工业化程度最高的市镇之一，2012 年它是欧洲文化之都，波尔图在南面 55 公里，火车约一小时。初来的人最容易犯的错，是把吉马良斯当作一座博物馆式的古城，而它是一座靠工厂生活的城市，老城只是它的中心一片。",
     layout:
       "吉马良斯老城围绕主广场展开，中世纪石造建筑保存完整，木构外廊房屋是当地特色。城堡和布拉干萨公爵宫在老城北侧的高地上，可俯瞰全城。",
     gettingAround:
@@ -5367,6 +5415,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   aveiro: {
     identity:
       "阿威罗在波尔图以南约60公里，因城中运河纵横、有轻轨式的传统彩绘平底船（moliceiro）往来其间，被称为“葡萄牙的威尼斯”。城市历史上以海藻采集和制盐业为主，如今是大学城和旅游小城。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Aveiro (municipality 198 km², ~81,000 2021; district capital; Ria de Aveiro lagoon, canals, moliceiro boats; Art Nouveau; salt pans; university 1973; Costa Nova ~10 km in Ílhavo municipality; ovos moles; Porto 75 km ~1 h train)
+    howItWorks:
+      "阿威罗是葡萄牙中部的市镇与阿威罗区的首府，由民选的市政厅治理，市域约 198 平方公里，2021 年人口约 8 万；市政厅管地方服务，其余归国家。城市在阿威罗潟湖的岸边，几条运河穿过市中心，彩绘的摩利塞罗船在运河里，新艺术风格的建筑沿运河排开，盐田在城西，1973 年创办的大学在城南，软蛋是它的甜点；科斯塔诺瓦的条纹房子与海滩在西面约 10 公里，属于伊利亚沃市镇，波尔图在北面 75 公里，火车约一小时。初来的人最容易犯的错，是以为阿威罗在海边，而它在潟湖边，海滩在另一个市镇，要坐公交过去。",
     layout:
       "阿威罗中心有几条相连的运河，两岸是新艺术风格的彩色建筑。城市紧邻阿威罗潟湖——葡萄牙北部最大的潟湖湿地系统，传统盐田和海藻采集场散布其间。",
     gettingAround:
@@ -5382,6 +5433,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   coimbra: {
     identity:
       "科英布拉在里斯本和波尔图之间、蒙德古河畔，都会区约 15 万人，曾是葡萄牙首都（12-13世纪）。科英布拉大学由迪尼斯国王1290年创办于里斯本，此后在里斯本与科英布拉之间几经迁移，1537年才最终永久落户科英布拉，是葡萄牙最古老、欧洲最古老的大学之一，2013年大学城区整体列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Coimbra (municipality 319 km², ~141,000 2021; district capital; capital of Portugal 1131–1255; university 1290 UNESCO 2013, Joanina library; Alta/Baixa; Mondego; ~28,000 students; Queima das Fitas; Coimbra-B station; Lisbon 197 km/Porto 116 km; no airport)
+    howItWorks:
+      "科英布拉是葡萄牙中部的市镇与科英布拉区的首府，由民选的市政厅治理，市域约 319 平方公里，2021 年人口约 14 万；市政厅管地方服务，其余归国家。1131 至 1255 年它是葡萄牙的首都，1290 年创办的大学是葡语世界最老的，校园在蒙德戈河北岸的山顶上城，乔安娜图书馆在其中，2013 年列入世界遗产，下城是河边的商业街区，圣克拉拉在河对岸；约 2.8 万学生穿着黑袍，五月的“烧丝带节”是他们的毕业节，火车站科英布拉 B 在里斯本—波尔图干线上，没有机场。初来的人最容易犯的错，是把科英布拉当作一座大学，而它是一座有自己老城与产业的区首府，大学只占了山顶。",
     layout:
       "科英布拉老城沿蒙德古河北岸的山坡而建，大学城区在山顶，标志性的钟塔（Torre da Universidade）俯瞰全城。老城下坡通向河边，是商业和生活区。",
     gettingAround:
@@ -5397,6 +5451,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   evora: {
     identity:
       "埃武拉是阿连特茹大区首府，都会区约 5.7 万人，老城保存了从罗马、摩尔到中世纪的多层历史遗迹，1986年整体列入联合国教科文组织世界遗产名录，被称为“博物馆城市”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Évora (municipality 1,307 km², ~54,000 2021; district capital and Alentejo centre; walled historic centre UNESCO 1986; Roman temple; Chapel of Bones; university 1559; Lisbon ~140 km, train ~1.5 h; ECoC 2027; hot summers)
+    howItWorks:
+      "埃武拉是阿连特茹地区的中心与埃武拉区的首府，由民选的市政厅治理，市域约 1,300 平方公里，大部分是软木橡树与麦田的平原，2021 年人口约 5.4 万，几乎都住在城里；市政厅管地方服务，其余归国家。城墙围住的老城 1986 年列入世界遗产，罗马神庙、大教堂与人骨礼拜堂都在墙内，1559 年创办的大学在老城里，1531 年的引水渠从城外伸进来；里斯本在西面约 140 公里，火车约一个半时，2027 年它将是欧洲文化之都，夏天是葡萄牙最热的城市之一。初来的人最容易犯的错，是把埃武拉的市镇当作一座城，而它的辖区有半个香港那么大，城墙内只是其中一点。",
     layout:
       "埃武拉老城被中世纪城墙环绕，罗马神庙遗址就在市中心广场旁，白墙黄边的传统阿连特茹式民居沿窄巷分布。老城核心紧凑，步行即可逛完主要景点。",
     gettingAround:
@@ -5430,6 +5487,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   funchal: {
     identity:
       "丰沙尔是马德拉群岛首府，都会区约 11 万人，坐落在马德拉岛南岸一个天然海湾，因气候常年温和被称为“大西洋的花园”。城市依山而建，从海边到山腰层层叠叠，有一条经典的悬崖滑索式雪橇缆车。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Funchal (municipality 76 km², ~106,000 2021, ~40% of Madeira; capital of the Autonomous Region of Madeira with its own government and assembly; amphitheatre bay; Zona Velha; Monte cable car and toboggan; hotel zone west; airport ~18 km; cruise port; island ~57 km long)
+    howItWorks:
+      "丰沙尔是马德拉自治区的首府，自治区有自己的政府与议会，掌管医疗、教育与大部分公共服务，市镇由民选的市政厅治理，管地方事务；市域约 76 平方公里，2021 年人口约 10.6 万，占全岛的四成。城市建在一个从海边升到 1,200 米的半圆形山坡上，老城区在港口的东侧，缆车从海边上到蒙特，再坐藤篮雪橇滑下来，酒店区在西面的利多，邮轮码头在港口，机场在东面约 18 公里的圣克鲁斯；莱瓦达水渠的步道散在全岛。初来的人最容易犯的错，是把丰沙尔当作马德拉，而岛长约 57 公里，北岸与山顶是另一种气候，从城里开车要一两个小时。",
     layout:
       "丰沙尔沿海湾展开，老城区在东侧，历史悠久的酒庄和市场集中于此；西侧是现代化的酒店度假区。城市背后山势陡峭，蒙特村（Monte）在山腰，是缆车终点和传统雪橇滑道起点。",
     gettingAround:
@@ -5445,6 +5505,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ponta-delgada": {
     identity:
       "蓬塔德尔加达是亚速尔群岛首府，位于圣米格尔岛（亚速尔最大岛屿）南岸，都会区约 6.8 万人。城市因1522年一场地震摧毁了原首府而兴起，如今是探索圣米格尔岛火山地貌的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ponta Delgada (municipality 233 km², ~67,000 2021; executive seat of the Autonomous Region of the Azores — assembly at Horta, judiciary at Angra; São Miguel; Portas da Cidade; airport 3 km, ~3.3 million passengers 2024; Sete Cidades within municipality; Furnas in Povoação)
+    howItWorks:
+      "蓬塔德尔加达是亚速尔自治区最大的城市，也是自治区政府的所在地——但亚速尔没有单一的首府：政府在这里，议会在法亚尔岛的奥尔塔，法院在特塞拉岛的英雄港，三座岛分掌三种职能。市镇由民选的市政厅治理，市域约 233 平方公里，2021 年人口约 6.7 万，占了圣米格尔岛的西半；城门与海滨大道是市中心的坐标，机场在城西 3 公里，2024 年旅客约 330 万，七城湖的火山口就在市镇的西端，富尔纳斯的温泉在岛东的另一个市镇，里斯本飞约两个半小时。初来的人最容易犯的错，是把蓬塔德尔加达当作亚速尔的首都，而群岛的三权分在三座岛上，这里只是行政的一角。",
     layout:
       "蓬塔德尔加达老城沿海湾展开，标志性的三座黑白拱门城门立于海滨广场。城市本身不大，多数景点靠近港口区域，岛上的火山湖和地热区（七城破火山口、富尔纳斯）分布在城外不同方向，需要开车前往。",
     gettingAround:
@@ -5461,6 +5524,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lagos: {
     identity:
       "拉戈斯在阿尔加维西部的海岸上，人口约3.3万（2021年），是大航海时代的重要港口：航海家亨利王子常驻于此指挥探险，1444年这里建起了欧洲殖民时代第一个奴隶市场（建筑今为博物馆）。十六世纪的城墙、海边的圣安东尼奥教堂（1715年）和老城的鹅卵石街道保留下来。城南的虔诚角是阿尔加维最壮观的海蚀崖和岩柱群，多娜安娜海滩、卡米洛海滩夹在金色岩壁之间，梅亚海滩是长达数公里的开阔沙滩；西面约35公里是萨格里什和圣文森特角（欧洲大陆西南角）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lagos (municipality 213 km², ~33,500 2021; Algarve/Faro district; Bensafrim mouth; walled town, marina; Ponta da Piedade; Dona Ana/Meia Praia; Henry the Navigator; Faro airport ~90 km; rail terminus; Sagres ~30 km)
+    howItWorks:
+      "拉古什是阿尔加维西部的一个市镇，由民选的市政厅治理，市域约 213 平方公里，2021 年人口约 3.4 万；市政厅管地方服务，其余归国家。老城在本萨芬河口的城墙内，游艇港在河的对岸，15 世纪航海王子恩里克的船队从这里出发，皮耶达德角的岩柱在南面的海角上，多娜安娜海滩在城边，梅亚海滩在河对岸绵延几公里；法鲁机场在东面约 90 公里，铁路的阿尔加维线在这里到头，萨格里什在西面约 30 公里。初来的人最容易犯的错，是把拉古什当作一处海滩，而它是一座有城墙、有市场、冬天也有人住的老城，海滩在城外的海角上。",
     layout:
       "老城在本萨弗林河口的西岸，城墙内是步行街、教堂和广场，奴隶市场博物馆在河边广场，游艇码头在河对岸。虔诚角在城南约3公里的海角，多娜安娜和卡米洛海滩在去海角的路上；梅亚海滩在河东岸向东延伸。火车站在河东岸的码头旁。萨格里什在西面，贝纳吉尔洞在东面约25公里。",
     gettingAround:
@@ -5475,6 +5541,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tavira: {
     identity:
       "塔维拉在阿尔加维东部的吉朗河口，法鲁以东约28公里，人口约2.6万，是阿尔加维最有古城气质的小镇。腓尼基人在公元前八世纪就在此定居，摩尔人统治了五百年，1242年被基督徒收复；河上的“罗马桥”其实是摩尔时期所建，老城据说有37座教堂。它曾是金枪鱼捕捞重镇，如今以慢生活著称（是“慢城”成员），旁边的里亚福尔莫萨自然公园有盐田、火烈鸟和坐渡船可达的塔维拉岛长沙滩。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tavira (municipality 607 km², ~27,000 2021; eastern Algarve; Gilão river, Roman bridge; castle; 37 churches; Ria Formosa; Ilha de Tavira by ferry; salt pans; Faro ~28 km; train; Spain ~30 km)
+    howItWorks:
+      "塔维拉是阿尔加维东部的一个市镇，由民选的市政厅治理，市域约 607 平方公里，向北伸进山地，2021 年人口约 2.7 万；市政厅管地方服务，其余归国家。老城在希朗河的两岸，罗马桥把两岸连起来，城堡在西岸的坡上，三十几座教堂散在城里，盐田在城南的潟湖边；海滩在福尔摩沙潟湖外的塔维拉岛上，要从城南的码头坐渡船过去，法鲁在西面约 28 公里，火车站在城边，西班牙边境在东面约 30 公里。初来的人最容易犯的错，是在塔维拉城里找海，而海滩在潟湖外的沙洲岛上，冬天渡船很少。",
     layout:
       "老城在吉朗河两岸，罗马桥连接两岸，共和国广场和城堡废墟在西岸的坡上，教堂和白房子沿坡分布；河东岸是市场和餐馆。火车站在老城北侧。去塔维拉岛的渡船从河口的四水（Quatro Águas）码头出发，约10分钟；盐田在河口两侧。圣卢西亚渔村在西南约3公里。",
     gettingAround:
@@ -5489,6 +5558,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nazare: {
     identity:
       "纳扎雷在葡萄牙中部的大西洋岸，里斯本以北约100公里，人口约1.5万，是传统渔村和海滨度假地，如今以世界上最大的可冲浪巨浪出名：海底的纳扎雷峡谷把冬季的涌浪放大，北滩的浪高可达20多米，2011年加勒特·麦克纳马拉在此冲浪后引来全球关注，2020年塞巴斯蒂安·施托伊特纳在这里创下26.2米的世界纪录。崖顶的西蒂奥村有1889年的缆车、纳扎雷圣母教堂和圣米格尔堡灯塔（观浪点）；渔妇的七条裙子和9月8日的圣母节是本地传统。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nazaré (municipality 82 km², ~14,900 2021; Leiria district; Praia beach town, Sítio on the cliff with funicular, Pederneira inland; Praia do Norte big waves, record 26.2 m 2020, Nazaré Canyon; fishing tradition; Lisbon ~120 km; no rail)
+    howItWorks:
+      "纳扎雷是葡萄牙中部海岸的一个市镇，由民选的市政厅治理，市域约 82 平方公里，2021 年人口约 1.5 万；市政厅管地方服务，其余归国家。镇子分成三层：海边的普拉亚是渔村与度假区，悬崖上的西蒂奥有圣母堂与堡垒，缆车把两者连起来，内陆的佩德内拉是老镇；巨浪在西蒂奥北面的北滩，海底峡谷把冬天的涌浪抬到 20 多米，2020 年 26.2 米的纪录在这里创下，堡垒的灯塔是看浪的地方，里斯本在南面约 120 公里，没有铁路。初来的人最容易犯的错，是以为镇前的海滩就有巨浪，而巨浪在崖北的另一片海滩，而且只在冬天。",
     layout:
       "小镇分三部分：海滩区（Praia）在海边的平地上，是老渔村和度假区，纳扎雷海滩在这里；西蒂奥在北面约100米高的崖顶上，缆车从海滩区上去，圣母教堂和广场在崖顶，圣米格尔堡在崖顶西端的海角上，北滩在海角北侧；佩德内拉在东面的山坡上。汽车站在海滩区。",
     gettingAround:
@@ -5503,6 +5575,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   obidos: {
     identity:
       "奥比杜什在里斯本以北约80公里的山丘上，是葡萄牙保存最完整的中世纪城墙小镇，镇内人口约3100。1210年阿方索二世把它赠给王后，此后几百年它一直是历代王后的属地，因此被称为“王后之镇”；城堡今为国营古堡酒店（pousada），完整的城墙可以环走，白墙蓝黄边的房子沿直街排开。樱桃酒 ginja 装在巧克力杯里是这里的招牌，7月的中世纪集市和3月的国际巧克力节是大活动，2015年它被评为联合国教科文组织“文学之城”，镇上有十几家书店。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Óbidos (municipality 142 km², ~12,000 2021; Leiria district; walled medieval vila ~3,000 inside walls; queens' town; castle pousada; medieval fair July, chocolate festival March; City of Literature 2015; Lisbon ~85 km; no rail)
+    howItWorks:
+      "奥比杜什是葡萄牙中部的一个市镇，由民选的市政厅治理，市域约 142 平方公里，2021 年人口约 1.2 万；市政厅管地方服务，其余归国家。人们心中的奥比杜什是城墙围住的中世纪小村，约 3,000 人住在墙内，城堡如今是国营旅馆，中世纪起历代王后以此为封地，樱桃酒是它的特产，七月的中世纪集市与三月的巧克力节把游客塞满一条主街，2015 年它是联合国教科文组织的文学之都；里斯本在南面约 85 公里，没有铁路，靠大巴，奥比杜什潟湖与海岸在市镇的西端。初来的人最容易犯的错，是把城墙内的小村当作整个奥比杜什，而市镇的大部分是农田与海岸，村子只是它的招牌。",
     layout:
       "小镇在城墙内的山脊上：城门（内有瓷砖礼拜堂）在南端，直街从城门一路向北到城堡，圣玛利亚教堂和广场在中段，城墙环绕全镇约1.5公里可登临。停车场和汽车站在城墙外南侧。奥比杜什潟湖在西北约8公里的海边，纳扎雷在北面约40公里，卡尔达斯达赖尼亚在东北约6公里。",
     gettingAround:
@@ -5517,6 +5592,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "viana-do-castelo": {
     identity:
       "维亚纳堡在葡萄牙北部米尼奥地区的利马河口，波尔图以北约60公里，市镇人口约8.6万（2021年）。它在大航海时代是造船和远洋渔业的港口，1882年建成的埃菲尔桥（埃菲尔公司设计）跨过利马河；圣卢西亚山上1904年动工的圣心圣殿俯瞰河口和海岸，是葡萄牙北部的标志。8月的痛苦圣母朝圣节是葡萄牙最大的民间节庆之一，米尼奥的传统服饰和金丝首饰在游行中展示；曾在纽芬兰渔场服务的吉尔·埃亚内斯医院船停在港口作博物馆，河对岸的卡贝德洛海滩是冲浪地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Viana do Castelo (municipality 319 km², ~85,800 2021; district capital; Lima mouth; Santa Luzia funicular; Praça da República; Gil Eannes ship; Cabedelo beach; Agonia festival August; Minho line; Porto ~70 km; Spain ~25 km; shipyard; WindFloat 2020)
+    howItWorks:
+      "维亚纳堡是葡萄牙最北端的区首府，由民选的市政厅治理，市域约 319 平方公里，2021 年人口约 8.6 万；市政厅管地方服务，其余归国家。城市在利马河口的北岸，共和国广场是老城的中心，圣卢西亚圣殿在城北的山顶上，缆车上山，医院船吉尔·埃亚内斯号停在河边，卡贝德洛海滩在河对岸的沙嘴上，八月的圣母痛苦节是葡萄牙最大的宗教节庆之一，金丝首饰与米尼奥的民俗是它的身份；米尼奥铁路线通往波尔图与西班牙，波尔图在南面约 70 公里，边境在北面约 25 公里，造船厂与海上风电场在河口外。初来的人最容易犯的错，是把维亚纳堡当作波尔图的远郊，而它是一座有自己港口、节庆与工业的区首府。",
     layout:
       "老城在利马河北岸，共和国广场（喷泉、仁慈堂、老市政厅）是中心，主教座堂和文艺复兴建筑在周围，河边有码头和医院船。圣卢西亚山在城北，缆车（葡萄牙最长的缆车）从火车站旁上山，山顶是圣殿和铁器时代遗址。埃菲尔桥在老城东侧，过桥是达尔克和卡贝德洛海滩。火车站在老城北缘。",
     gettingAround:
@@ -7986,6 +8064,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hoi-an": {
     identity:
       "会安是越南中部一座保存完好的古代贸易港口小镇，人口约9万，16至19世纪曾是东南亚重要的国际贸易港，1999年古镇列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hội An (former city of Quảng Nam dissolved 2025; now wards of Da Nang after Quảng Nam merged into Da Nang 2025-07-01; Ancient Town UNESCO 1999; Thu Bồn; An Bàng/Cửa Đại; Da Nang airport ~30 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "会安在 2025 年 7 月 1 日之后不再是一座市：广南省并入岘港市，县级单位撤销，会安分成几个直属岘港的坊，古城所在的那一片就叫会安坊。古城在秋盆河的北岸，1999 年列入世界遗产，进入老街要买门票，安邦与浯岱海滩在东面 4 公里，占婆岛在海上，岘港机场在北面约 30 公里。夜里的灯笼与裁缝店是它的生意。初来的人最容易犯的错，是把会安当作一座独立的城市，而它如今是岘港的几个坊，市政府在 30 公里外的岘港。",
     layout:
       "古镇沿秋盆河而建，日本廊桥是古镇标志性建筑，黄色外墙的传统商屋与中式会馆沿古街密集分布。",
     gettingAround:
@@ -8000,6 +8081,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hue: {
     identity:
       "顺化被选为都城，很大程度上是香江给的地利——阮朝开国君主嘉隆帝1802年统一越南后，看中这里背山面水、香江从市区蜿蜒而过的格局，仿照中国紫禁城的规制建起皇城，此后143年（1802–1945年）里，越南末代王朝的历代皇帝都在这里治理国家、也葬在香江沿岸的皇陵群里。顺化是越南中部古都，人口约45万，1993年顺化古迹群列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Huế (centrally-governed city since 2025-01-01; ~4,947 km²; over a million people; wards/communes directly under city from July 2025; Perfume River; Citadel north bank UNESCO 1993; French quarter south; tombs south; Phu Bai airport ~15 km; Nguyen capital 1802–1945) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "顺化 2025 年 1 月 1 日起是越南的中央直辖市，由原承天顺化省整体升格，市域约 4,950 平方公里，人口一百多万，同年 7 月县级单位撤销后，坊与社直属于市。香江把市区分成两岸：北岸是 1802 至 1945 年阮朝的皇城与紫禁城，1993 年列入世界遗产，南岸是法国时期的街区与今天的商业中心，阮朝皇陵散在南面的丘陵里，顺安海滩在东面，富牌机场在南面约 15 公里，海云关隔开岘港。初来的人最容易犯的错，是把顺化当作皇城那一片，而它是一个从山到海、比岘港市区大得多的直辖市。",
     layout:
       "香江贯穿城市，河北岸皇城与紫禁城遗址保留阮朝宫廷格局，河南岸为现代市区，多座皇陵分布于城郊香江沿岸。",
     gettingAround:
@@ -8014,6 +8098,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sapa: {
     identity:
       "沙巴是越南西北部老街省一座山地小镇，海拔约1500米，是探索番西邦峰与梯田景观的门户，多个少数民族在此聚居。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sa Pa (former district-level town of Lào Cai; since 2025 ward/commune under Lào Cai province, which merged with Yên Bái; ~1,600 m; 70,663 2022; Hmong 52%, Dao 25%; Fansipan 3,143 m cable car 2016; Lào Cai city ~35 km, railway from Hanoi; ~250 km from Hanoi) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "沙坝原是老街省的一个县级市镇，2025 年 7 月县级单位撤销后成为老街省直辖的坊，老街省同年与安沛省合并。镇子在海拔约 1,600 米的黄连山脉上，2022 年人口约 7 万，苗族约占一半、瑶族约四分之一，京族只是少数；镇中心在石教堂周围的一片坡地，梯田在南面的芒花谷，猫猫村、塔万村散在谷里，番西邦峰的缆车 2016 年从镇边直达 3,143 米的山顶，老街市与火车站在东面 35 公里，河内在 250 公里外。雾与冷是这里的常态。初来的人最容易犯的错，是把沙坝当作一座山村，而它是一个游客数量是居民几十倍的旅游镇，村寨要走出镇外才看得到。",
     layout:
       "镇区依山而建，周边山谷分布着苗族、瑶族、岱依族等少数民族村寨与层叠的梯田景观。",
     gettingAround:
@@ -8028,6 +8115,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ha-long-city": {
     identity:
       "下龙市是越南东北部广宁省省会，人口约30万，是探索下龙湾喀斯特岛群的主要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hạ Long (former provincial city ceased 2025-07-01; capital of Quảng Ninh; 270,054 2019; Bãi Cháy tourist west vs Hòn Gai administrative/coal east, Bãi Cháy Bridge 2006; Ha Long Bay UNESCO 1994; cruises from Tuần Châu; Vân Đồn airport ~50 km; Hanoi ~165 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "下龙是广宁省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属广宁省的坊，2019 年人口约 27 万。城市分成两半：西面的拜寨是酒店与游乐场的旅游区，东面的鸿基是省政府、市场与煤矿的老城，2006 年建成的拜寨大桥把两岸连起来；下龙湾 1994 年列入世界遗产，游船大多从西面的巡洲岛码头出发，云屯机场在东面约 50 公里，河内在西面约 165 公里，高速公路两个多小时。煤是这座城的老本行。初来的人最容易犯的错，是把下龙市当作下龙湾，而湾在海上，城在岸上，游船码头在城外的岛上。",
     layout:
       "城市沿下龙湾海岸展开，多个游船码头分布于沿海地带，是游客乘船游览下龙湾的出发点。",
     gettingAround:
@@ -8042,6 +8132,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "nha-trang-city": {
     identity:
       "芽庄是越南南中部沿海城市，人口约54万，坐落于芽庄湾畔，是越南知名的海滨度假与潜水目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nha Trang (former city ~500,000; since 2025-06-16 the core is Nha Trang ward, 47 km², 136,118, under Khánh Hòa province, which absorbed Ninh Thuận, capital Nha Trang; 6 km Trần Phú beach; Po Nagar; Vinpearl Hòn Tre; Cam Ranh airport ~35 km; railway) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "芽庄是庆和省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属庆和省的坊，市中心的那一片就叫芽庄坊，约 47 平方公里、13.6 万人，整个原市区约 50 万人；庆和省同年并入了宁顺省。城市沿 6 公里的海滩展开，陈富路是海滨的主轴，酒店排在路的一侧，本地人的街区在后面几个街区，婆那加占塔在城北的河口，珍珠岛度假区在海上的竹岛，靠缆车与渡轮往来，火车站在市中心，金兰机场在南面约 35 公里。初来的人最容易犯的错，是把海滨大道当作芽庄，而本地人的市场与生活在离海几条街的后面。",
     layout:
       "城市沿芽庄湾海滩展开，占婆塔遗址位于市区北侧，多座离岛分布于海湾之中，是跳岛游的主要目的地。",
     gettingAround:
@@ -8056,6 +8149,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "da-lat": {
     identity:
       "大叻是越南中部高原一座避暑山城，人口约23万，海拔约1500米，法国殖民时期即被开发为避暑胜地，如今是越南重要的花卉与农产品产区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Đà Lạt (former provincial city ceased 2025-07-01; capital of Lâm Đồng province, which absorbed Bình Thuận and Đắk Nông; ~1,500 m Langbiang plateau; Yersin 1893, French hill station; Xuân Hương lake; Liên Khương airport ~30 km; no rail) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "大叻是林同省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属林同省的坊；林同省同年并入了平顺与得农两省，省域从高原一直到海边。城市在海拔约 1,500 米的朗平高原上，1893 年耶尔森发现这片高地后，法国人把它建成避暑地，别墅与松林是它的底色，春香湖在市中心，市场在湖边的坡上，花与蔬菜的农场围着市区，莲姜机场在南面约 30 公里，没有铁路，老火车站只留作纪念。初来的人最容易犯的错，是按越南的气候来想象大叻，而这里一天有四季，晚上要穿外套。",
     layout:
       "城市依山而建，春香湖是市中心地标，法式别墅与教堂建筑散布于起伏的山地地形之间。",
     gettingAround:
@@ -8070,6 +8166,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "can-tho": {
     identity:
       "芹苴是湄公河三角洲最大城市，人口约120万，是探索三角洲水上市场与水乡风情的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cần Thơ (centrally-governed city; merged with Hậu Giang and Sóc Trăng 2025; ~6,360 km²; ~4.2 million; 31 wards + 72 communes; Hậu River; Ninh Kiều; Cái Răng floating market; airport ~9 km; Khmer community in Sóc Trăng; HCMC ~170 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "芹苴是越南的中央直辖市，2025 年后江省与朔庄省并入后，市域约 6,360 平方公里，人口约 420 万，县级单位撤销后市之下直接是 31 个坊与 72 个社。它是湄公河三角洲的中心，市区在后江（巴萨河）的西岸，宁桥码头是市中心的坐标，丐冷水上市场在城南的河道上，2010 年建成的芹苴大桥把它与对岸连起来，机场在西北 9 公里；朔庄一带有大量高棉族社区。胡志明市在东北约 170 公里。初来的人最容易犯的错，是把芹苴当作一座水上市场的小城，而它是一个 400 万人、覆盖半个三角洲的直辖市。",
     layout:
       "城市沿后江（湄公河支流）而建，宁桥横跨江面，市区周边河汊纵横，水上市场分布于郊外河道之上。",
     gettingAround:
@@ -8084,6 +8183,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "phu-quoc-city": {
     identity:
       "阳东是富国岛最主要的城镇，人口约2万，是富国岛旅游与渔业活动的核心区域。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Phú Quốc (island 575 km², Vietnam's largest; city 2021; since 2025-06 a special zone under An Giang province, which absorbed Kiên Giang; ~180,000; Dương Đông main town west; An Thới south; airport 2012; visa-free 30 days since 2014; fish sauce/pepper) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "富国岛是越南最大的岛，约 575 平方公里，2021 年设市，2025 年 6 月县级单位撤销后改为“特区”，直属安江省——坚江省同年并入安江，省会在迪石。岛上人口约 18 万，主镇阳东在西岸，机场、夜市与长滩都在附近，安泰在南端，缆车通往海上的香岛，北面是新建的度假城，鱼露与胡椒是老产业，2012 年启用的国际机场与 30 天免签让它成为面向国际的度假岛。初来的人最容易犯的错，是把富国当作一座度假村，而它是一个有 18 万居民、南北 50 公里的岛，特区政府在阳东。",
     layout:
       "镇区沿阳东河入海口展开，阳东夜市是镇上最热闹的商业街区，周边海滩度假酒店密集分布。",
     gettingAround:
@@ -8098,6 +8200,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ninh-binh": {
     identity:
       "宁平的华闾曾是越南历史上第一个统一王朝的都城——968年丁部领在此建立大瞿越国、定都华闾，看中的正是这里喀斯特峰丛环绕、易守难攻的地形；丁朝与前黎朝先后在此建都四十余年，直到1010年李太祖认为这里地势过于闭塞、不利发展，才把都城迁往河内（升龙）。宁平是越南北部一座以喀斯特稻田景观闻名的城市，人口约13万，是探索长安名胜群与陆龙湾的核心门户，常被称为“陆上下龙湾”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ninh Bình (province merged with Hà Nam and Nam Định 2025, capital at Hoa Lư ward — the former Ninh Bình city; Đáy river; Tràng An complex UNESCO 2014 — Tam Cốc, Tràng An, Bái Đính, Hoa Lư 10th-century capital — 7–15 km west; Hanoi ~95 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "宁平原是宁平省的省会城市，2025 年宁平省与河南、南定两省合并，省会设在华闾坊——也就是原宁平市与华闾县合并后的市区，县级单位撤销后坊直属于省。市镇在沱河边，是一座平淡的省城，火车站与长途车站在这里，河内在北面约 95 公里；人们来宁平要看的都在城西 7 到 15 公里的喀斯特山里：长安与三谷的游船、拜顶寺、10 世纪的华闾古都，2014 年一起列入世界遗产。初来的人最容易犯的错，是在宁平城里找山水，而山水在城外的田野与河道里，城只是一个下车的地方。",
     layout:
       "城市周边被喀斯特石灰岩峰丛环绕，稻田与河道交织分布于峰丛之间的谷地平地。",
     gettingAround:
@@ -8131,6 +8236,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "dong-hoi": {
     identity:
       "洞海在越南中部的海岸上，是通往风牙—己榜国家公园的门户城市，2025年7月起原广平省并入广治省。风牙—己榜是世界上最重要的喀斯特洞穴区之一，2003年列入世界遗产、2015年扩展，2025年与老挝的欣南诺国家公园合并为跨境世界遗产；这里有世界最大的洞穴韩松洞（1991年当地人发现、2009年英国探险队公布，长逾5公里、高约200米）、长31公里的天堂洞和有地下河的风牙洞。洞海本身有日丽海滩、广平门和残存的城墙，北面不远是1954–1975年的南北分界（非军事区）和永牧地道。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Đồng Hới (former city; since 2025 Đồng Hới ward under Quảng Trị province — Quảng Bình merged with Quảng Trị, capital at Đồng Hới; Nhật Lệ river/beach; airport; railway; Phong Nha-Kẻ Bàng UNESCO 2003 ~45 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "洞海原是广平省的省会城市，2025 年广平省与广治省合并为新的广治省，省会设在洞海，县级单位撤销后市区分成直属省的坊，市中心的那一片叫洞海坊。城市在日丽河的入海口，河东岸是海滩，西岸是市区，广平门是老城墙的遗存，机场在城北，火车站在城西；峰牙—己榜国家公园在西北约 45 公里的山里，2003 年列入世界遗产，天堂洞与韩松洞都在那里。初来的人最容易犯的错，是把洞海当作峰牙的门口，而洞穴在一小时车程外的山里，洞海是一座海边的省城。",
     layout:
       "洞海市区在日丽河口，日丽海滩在河东岸的沙洲上（保宁半岛），广平门和古城墙在市中心，火车站在市区西侧，机场在北面约6公里。风牙镇在西北约45公里，是洞穴区的住宿基地，风牙洞、天堂洞、黑洞都从那里出发；韩松洞在公园深处，只能参加限额的多日探险团。永牧地道和边海河（原分界线）在南面约60–70公里。",
     gettingAround:
@@ -8145,6 +8253,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "quy-nhon": {
     identity:
       "归仁在越南南中部海岸的一个弯月形海湾里，人口约58万（2024年，改制前口径），2025年7月起原平定省并入嘉莱省，归仁是新省的省会所在地。这里是古代占婆王国的核心地区之一（十一世纪的毗阇耶），市区有双塔、郊外有平定占婆塔群；十五世纪郑和的船队曾在此停靠。越南民国时期诗人韩墨子在归化的麻风病院去世并葬于此，西山起义的发源地和光中博物馆在西面。奇姑海滩、风口的海崖是近年走红的景点，平定是越南武术之乡。归仁比芽庄安静得多。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Quy Nhơn (former city ceased 2025-07-01; 481,110 2022, 286 km²; now wards under Gia Lai province — Bình Định merged with Gia Lai, capital Quy Nhơn; crescent beach; Kỳ Co/Eo Gió ~20 km; Cham towers; Phù Cát airport ~30 km; Diêu Trì station) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "归仁原是平定省的省会城市，2022 年人口约 48 万，2025 年平定省与嘉莱省合并为新的嘉莱省，省会设在归仁，县级单位撤销后市区分成直属省的坊。城市沿一道新月形的海湾展开，海滨大道与市中心在湾的中段，双塔占婆塔在市区里，绮庭、风口在北面芳梅半岛约 20 公里的海角上，富吉机场在北面约 30 公里，火车站在西面的沼池；西山起义的故乡在西面的山区。初来的人最容易犯的错，是把归仁当作一座海滩小城，而它如今是一个从海岸到中部高原的合并省的省会。",
     layout:
       "市区沿弯月形海湾展开，海滩就在市区边，海滨大道是酒店和餐馆带；双塔在市区西北，火车站（支线已停运）在市中心。归化和韩墨子墓在城南的山谷里；奇姑海滩和风口在东北约20公里的富才半岛（Phuong Mai）；平定占婆塔（银塔 Banh It）在北面约20公里；光中博物馆在西面约45公里的西山。机场在西北约30公里。",
     gettingAround:
@@ -8159,6 +8270,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "phan-thiet": {
     identity:
       "潘切在越南南部海岸，胡志明市东北约200公里，2025年7月起原平顺省并入林同省。它以东面约20公里的美奈出名——原本是渔村的美奈海岸如今是长约15公里的度假带，红沙丘、白沙丘和仙女溪是标志景观，稳定的季风让它成为亚洲最好的风筝冲浪地之一。潘切自古产鱼露，占婆时期的波沙努塔立在城东的山上，塔库山有越南最大的卧佛之一，南面的科加灯塔是1899年法国人建的。胡志明早年曾在潘切的育青学校任教。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Phan Thiết (former city ~230,000; since 2025-06-16 Phan Thiết ward 4.46 km², 85,493, under Lâm Đồng province — Bình Thuận merged into Lâm Đồng, capital Đà Lạt; Cà Ty river; fish sauce; Mũi Né ~20 km separate ward; dunes; HCMC ~200 km, expressway 2023) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "潘切原是平顺省的省会城市，约 23 万人，2025 年平顺省并入林同省，省会迁到大叻，县级单位撤销后市区分成直属林同省的坊，市中心的那一片叫潘切坊，只有约 4.5 平方公里。城市在格底河的河口，鱼露厂沿河排开，市场与老街在河的两岸；美奈是东面约 20 公里的另一个坊，度假村沿海岸公路排成一条带，红沙丘与白沙丘在更东面，胡志明市在西南约 200 公里，2023 年高速通车后约两个半小时，火车到潘切站，机场在建。初来的人最容易犯的错，是把美奈当作潘切，而潘切是一座渔港与鱼露的城，美奈是它 20 公里外的海滩。",
     layout:
       "潘切市区在卡蒂河口，鱼露厂和渔港在河边，波沙努占婆塔在城东的山上。美奈度假带沿海岸从潘切向东北延伸：阮廷炤路一线是酒店区，美奈渔村在东端，红沙丘在渔村附近，白沙丘再往东北约25公里；仙女溪在酒店区中段。塔库山在西南约30公里，科加灯塔在西南约30公里的海角。火车站在市区北侧。",
     gettingAround:
@@ -8173,6 +8287,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "vung-tau": {
     identity:
       "头顿在胡志明市东南约95公里的半岛尖端，是南部最方便的海滨城市，2025年7月起原巴地头顿省并入胡志明市。法国殖民时期这里叫圣雅克角（Cap Saint-Jacques），1910年的灯塔和总督别墅“白宫”留存至今；小山上的头顿耶稣像1974年动工、1993年完工，高约32米，是越南最著名的地标之一。前滩和后滩是两片主海滩，海上油气田让头顿成为越南石油工业的基地；去昆岛的渡轮从这里出发。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vũng Tàu (former city ~350,000; since 2025-06-16 Vũng Tàu ward 16.86 km², 117,413, of Ho Chi Minh City — Bà Rịa–Vũng Tàu merged into HCMC; peninsula, Front/Back Beach; Christ statue; lighthouse; Vietsovpetro; ~95 km from Saigon; expressway 2023; Côn Đảo ferries) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "头顿原是巴地—头顿省的省辖市，约 35 万人，2025 年该省并入胡志明市，县级单位撤销后市区分成直属胡志明市的坊，半岛尖端的那一片叫头顿坊，约 17 平方公里、12 万人。城市在一个伸进海里的半岛上，前滩在西面朝着港湾，后滩在东面朝着大海，大山与小山两座山丘夹着市区，小山上的耶稣像与灯塔是坐标，越苏石油的基地让它成为越南的海上油气中心；西贡在西北约 95 公里，2023 年高速通车后约一个半小时，渡轮通往昆岛。周末西贡人涌来。初来的人最容易犯的错，是把头顿当作一座独立的海滨城市，而它如今是胡志明市的一个坊，市政府在 95 公里外。",
     layout:
       "头顿在一个狭长的半岛上：大山（Núi Lớn）和小山（Núi Nhỏ）是半岛上的两座山，灯塔在小山顶，耶稣像在小山南坡，白宫在大山脚下的海边；前滩（Bãi Trước）在半岛西侧面向港湾，是老城和码头所在，后滩（Bãi Sau）在东侧，是长沙滩和酒店区。半岛南端的迎风角（Mũi Nghinh Phong）是最南点。客运码头和去昆岛的渡轮在前滩一侧。",
     gettingAround:
@@ -8187,6 +8304,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ha-giang": {
     identity:
       "河江在越南最北端的泸江河谷里，河内以北约320公里，是“河江环线”的起点，2025年6月起原河江省并入宣光省。河江以北的同文喀斯特高原是越南第一个联合国教科文组织世界地质公园（2010年），石灰岩峰林、深谷和梯田绵延到中越边境；马皮冷山口（海拔约1500米）俯瞰儒桂河峡谷，是环线最壮观的一段，龙鼓旗台立在越南最北端。这里是苗、岱、瑶、侬等二十多个民族的家园，周末集市和民族服饰是主要看点。环线通常骑摩托车或包车三到四天。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hà Giang city (former capital of Hà Giang province; 2025 Hà Giang merged into Tuyên Quang province, capital Tuyên Quang; now wards under Tuyên Quang; Lô river; ~100 m; start of the Hà Giang Loop — Đồng Văn karst plateau UNESCO Global Geopark 2010, Mã Pí Lèng, Lũng Cú ~180 km; no airport; Hanoi ~300 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "河江原是河江省的省会城市，2025 年河江省并入宣光省，省会迁到宣光，县级单位撤销后市区分成直属宣光省的坊。城市在泸江河谷里，海拔只有约 100 米，是一座普通的边境小城，河内在南面约 300 公里，只有公路，没有机场，中国边境在北面 20 公里；人们来这里是为了向北出发：同文喀斯特高原 2010 年成为世界地质公园，马皮冷山口与陆丘旗台在 150 到 180 公里外的山里，苗族、岱族、瑶族的村寨散在沿途，租摩托车是这趟路的常规方式。初来的人最容易犯的错，是把河江市当作风景所在，而它只是环线的起点，风景在山里三四天的路上。",
     layout:
       "河江市在泸江两岸的谷地里，零公里碑是环线起点。向北经关坝（“天门”和双峰山）、安明到同文（老街、王氏府邸、龙鼓旗台）约150公里，再经马皮冷山口到苗旺（周日集市）约25公里，然后南下经边海、北光回河江，全程约350公里。各镇之间是盘山公路，同文、苗旺是常用住宿点。",
     gettingAround:
