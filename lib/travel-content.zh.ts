@@ -65,6 +65,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   geelong: {
     identity:
       "吉朗在墨尔本西南约75公里的科里奥湾畔，都会区人口约27万，是维多利亚州第二大城市，也是澳式足球联赛（AFL）老牌球队吉朗猫队的主场所在。它曾是羊毛贸易和制造业重镇，如今是通往大洋路和贝拉林半岛的门户，很多人把它当作大洋路自驾的起点或中途落脚点，而不只是路过。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Geelong (City of Greater Geelong 1,329 km², ~283,000 2021; Corio Bay; Avalon airport; V/Line ~1 h; Torquay in Surf Coast Shire)
+    howItWorks:
+      "吉朗是维多利亚州的第二大城市，由大吉朗市议会管辖，辖区约 1,330 平方公里，2021 年人口约 28 万；议会管垃圾、公园与规划审批，铁路、警察与学校归州政府。市中心在科里奥湾的西岸，滨水区是它的门面，阿瓦隆机场在城北，V/Line 火车到墨尔本约一小时。初来的人最容易犯的错，是把吉朗当作大洋路的起点，而托基与冲浪海岸属于另一个郡议会，大洋路的风景从那里才开始。",
     layout:
       "市中心紧贴科里奥湾的东沿海滨，滨海步道（Waterfront）串起考宁厄姆码头、东海滩海水浴场和103根彩绘系船柱（Baywalk Bollards）。老城区街道方整，国家羊毛博物馆和一批19世纪石砌建筑在市中心步行范围内。往西南出城不远就是欧特威山脉和大洋路的起点托尔坎；往东是贝拉林半岛，昆斯克利夫等历史小镇和葡萄酒产区都在半岛上。",
     gettingAround:
@@ -134,6 +137,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cairns: {
     identity:
       "凯恩斯在昆士兰州最北部的热带地区，是一座小城（都会区约15万人），几乎完全围绕旅游运转。它是探访大堡礁北段和戴恩树雨林的基地——世界上少有的“雨林紧挨珊瑚礁”的地方。全年炎热，分旱季和雨季。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Cairns (Cairns Regional Council; ~169,000 2021; Trinity Inlet CBD, Esplanade lagoon, no city beach; northern beaches; airport 7th busiest; Port Douglas in Douglas Shire)
+    howItWorks:
+      "凯恩斯是昆士兰远北的中心城市，由凯恩斯区域议会管辖，2021 年人口约 17 万；议会管地方服务，警察、医院与学校归州政府。市中心在三一湾的泥滩边，没有海滩，滨海大道上的人工泻湖代替了它，北面的海滩区是一串郊区，机场在城北，大堡礁靠船出海。初来的人最容易犯的错，是以为凯恩斯市区有海滩，而海滩在北面的郊区，道格拉斯港与丹翠雨林属于另一个郡议会，在 60 公里外。",
     layout:
       "凯恩斯夹在珊瑚海和陡峭的雨林覆盖的山脉之间，平地很窄。市中心沿海滨步道展开（市区本身没有沙滩，有一个人工泻湖泳池）；往北是一串海滩郊区和道格拉斯港，往内陆上山是阿瑟顿高地，往海上出去就是大堡礁。",
     gettingAround:
@@ -239,6 +245,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   launceston: {
     identity:
       "朗塞斯顿在塔斯马尼亚北部，是该州第二大城市（约8.7万人），也是澳大利亚较早的内陆城市之一。它在三条河的汇合处，紧挨着一道叫卡塔拉克特峡谷（Cataract Gorge）的岩石峡谷。城市名取自英格兰康沃尔郡的朗塞斯顿。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Launceston (City of Launceston; ~91,000 urban 2021; head of the Tamar; Cataract Gorge; UNESCO City of Gastronomy 2021; Tamar Valley wine in West Tamar/George Town councils)
+    howItWorks:
+      "朗塞斯顿是塔斯马尼亚的第二大城市，由朗塞斯顿市议会管辖，2021 年城区人口约 9 万；议会管地方服务，警察与学校归州政府。市中心在塔玛河的源头，北埃斯克河与南埃斯克河在此汇合，卡塔拉特峡谷就在市中心几百米外，2021 年它被评为联合国教科文组织美食之都，霍巴特在南面约 200 公里。初来的人最容易犯的错，是把塔玛河谷的酒庄当作朗塞斯顿的一部分，而它们分属西塔玛与乔治镇两个议会。",
     layout:
       "市中心保留了大量维多利亚和爱德华时代的建筑，围绕几个广场展开，适合步行。塔马河从城边流过，往北是塔马河谷葡萄酒产区。卡塔拉克特峡谷在市区步行可达的范围内。",
     gettingAround:
@@ -254,6 +263,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "alice-springs": {
     identity:
       "爱丽斯泉（原住民阿兰特语 Mparntwe）在澳大利亚正中心、麦克唐奈山脉之间，约2.5万人，是“红色中心”最大的居民点和补给站，到最近的大城市都约1500公里。它是探访乌鲁鲁、卡塔丘塔、国王峡谷和麦克唐奈山脉的基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Alice Springs (Alice Springs Town Council; ~24,900 2021; Todd River; MacDonnell Ranges; Arrernte/Mparntwe; Uluru ~450 km by road; Ghan)
+    howItWorks:
+      "爱丽斯泉是北领地的第三大聚落，由爱丽斯泉镇议会管辖，2021 年人口约 2.5 万；镇议会管地方服务，警察、医院与学校归领地政府。镇子建在多半干涸的托德河两岸，麦克唐奈山脉在南面，阿伦特人是这片土地的传统所有者，机场在镇南，甘号列车从这里通往达尔文与阿德莱德。初来的人最容易犯的错，是以为乌鲁鲁在爱丽斯泉附近，而它在西南约 450 公里的尤拉拉，要开五个小时。",
     layout:
       "小城被麦克唐奈山脉的一道缺口（Heavitree Gap）夹住，托德河（多数时候是干河床）穿城而过，市中心几个街区就能走完。四周立刻是红色的山脊和荒漠。乌鲁鲁其实在约450公里外、车程约5小时，不算“近郊”。",
     gettingAround:
@@ -269,6 +281,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   katherine: {
     identity:
       "凯瑟琳在北领地、达尔文以南约3小时车程，约6千人，是北领地“上端”仅次于达尔文的居民点，也是南北向斯图尔特公路和东西向路线的交叉点。它紧挨着尼特米卢克（凯瑟琳峡谷）国家公园，当地贾沃因人称这一带 Nitmiluk。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Katherine (Katherine Town Council; ~9,600 2021; Katherine River; Nitmiluk Gorge ~30 km; RAAF Tindal; Stuart Highway; Darwin 320 km)
+    howItWorks:
+      "凯瑟琳是北领地南部的枢纽镇，由凯瑟琳镇议会管辖，2021 年人口约 9,600；镇议会管地方服务，其余归领地政府。镇子在凯瑟琳河边、斯图尔特公路与萨凡纳之路的交叉口，达尔文在北面 320 公里，廷德尔空军基地在镇外；尼特米鲁克峡谷在东北约 30 公里的国家公园里，由贾沃因人与公园共管。初来的人最容易犯的错，是以为峡谷就在镇上，而它在半小时车程外的公园里，镇子本身是一个公路补给站。",
     layout:
       "镇子沿凯瑟琳河和公路展开，几条街就是全部。往东约30公里是尼特米卢克峡谷群，往北是伊迪丝瀑布，往西南是大片荒野和更远的西澳。",
     gettingAround:
@@ -284,6 +299,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   broome: {
     identity:
       "布鲁姆在西澳大利亚西北的金伯利海岸，约1.5万人，是一座偏远的海滨小城，以红色的岩石海岸、长沙滩和采珍珠的历史闻名，到珀斯约2200公里。它是从海路进入金伯利地区的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Broome (Shire of Broome; 14,660 2021; Cable Beach vs Chinatown; pearling; Yawuru native title 2006; Perth ~2,050 km)
+    howItWorks:
+      "布鲁姆是金伯利地区最大的镇，由布鲁姆郡议会管辖，2021 年人口约 1.5 万；郡议会管地方服务，其余归州政府，珀斯在南面两千多公里。镇子分两片：老镇以“唐人街”为中心，是 1880 年代珍珠业留下的街区，日本、中国、马来潜水员的墓地记着那段历史；凯布尔海滩在西面几公里，是度假区。雅乌鲁人 2006 年获得这片土地的原住民所有权。初来的人最容易犯的错，是把布鲁姆当作凯布尔海滩，而镇中心在另一边的海湾上，两者之间要开车。",
     layout:
       "布鲁姆在一个半岛上：西侧是长约22公里的凯布尔海滩（面朝印度洋，看日落），东侧是罗巴克湾的红树林和大潮泥滩。“中国城”一带是老城中心，如今是餐饮和店铺区。城市尺度小。",
     gettingAround:
@@ -299,6 +317,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   exmouth: {
     identity:
       "埃克斯茅斯在西澳大利亚西北的一条半岛上，约2800人，是紧贴宁格罗礁的门户小镇——世界上少有能“从沙滩直接游到珊瑚礁上”的地方。镇名取自英国海军将领埃克斯茅斯子爵（英格兰德文郡也有同名小镇）。旁边是凯普山脉国家公园。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Exmouth (Shire of Exmouth; ~2,800 2021, ~6,000 in season; founded 1964/1967 for Harold E. Holt naval station; Ningaloo on the west side of the cape ~40 km; Learmonth airport 37 km)
+    howItWorks:
+      "埃克斯茅斯是西澳西北角的一座小镇，由埃克斯茅斯郡议会管辖，2021 年人口约 2,800，旅游季会涨到 6,000；郡议会管地方服务，其余归州政府。镇子 1964 年为美国海军通信站而建，在北西角的东岸；宁加洛礁与开普山脉国家公园在半岛的西岸，离镇上约 40 公里，2011 年列入世界遗产，鲸鲨季在三到七月；机场在南面 37 公里的利尔蒙斯。初来的人最容易犯的错，是以为珊瑚礁就在镇边，而它在半岛的另一侧，每天都要开车过去。",
     layout:
       "镇子在半岛东侧、埃克斯茅斯湾边，几条街的规模。半岛西侧是宁格罗礁和凯普山脉国家公园——珊瑚湾、蜥蜴岛、亚迪溪峡谷都在那一侧，从镇上开车约40分钟到一小时。半岛最南是勒尔蒙斯机场。",
     gettingAround:
@@ -314,6 +335,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "coober-pedy": {
     identity:
       "库伯佩迪在南澳大利亚北部的荒漠里，位于阿德莱德到爱丽斯泉的公路和铁路中途，约1800人，是世界上主要的蛋白石（opal）产区之一。因为地表太热，当地很多住宅、旅馆、教堂都挖在地下。名字来自原住民卡卡塔语 kupa piti。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Coober Pedy (District Council of Coober Pedy; 1,437 2021; opal 1915; dugouts; Stuart Highway; Adelaide 846 km; Umoona)
+    howItWorks:
+      "库伯佩迪是南澳内陆的一座欧泊矿镇，由库伯佩迪区议会管辖，2021 年人口约 1,400，阿德莱德在南面 846 公里；区议会管地方服务，其余归州政府。1915 年发现欧泊之后，镇子在七十多个矿区之间长出来，夏天超过 40 度的高温让一半居民住在挖进山坡的地下屋里，教堂、旅馆也在地下；斯图尔特公路 1987 年铺通后旅游成了第二产业。初来的人最容易犯的错，是在地面上找镇中心，而这座镇的大半在地下，地面只有矿堆和几条街。",
     layout:
       "地表上是一片布满采矿废石堆（像小火山锥）的褐色平地，几条主街上有加油站、商店和矿场入口。真正的“城市”有相当一部分在地下——恒温的地下旅馆和民居冬暖夏凉。周边荒漠常被用作科幻电影取景地。",
     gettingAround:
@@ -330,6 +354,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wollongong: {
     identity:
       "卧龙岗（Wollongong）是新南威尔士州的第三大城市，在悉尼以南约85公里的伊拉瓦拉地区，城区人口约30.6万（2021年普查）。城市夹在塔斯曼海与伊拉瓦拉断崖之间一条狭长的海岸平原上，背后是陡直的砂岩崖壁，面前是一串海滩。它因煤矿和肯布拉港的钢铁工业而兴起（1834年正式设镇，1942年设市），今天是大学城和悉尼人的周末海滨去处。传统土地所有者是达拉瓦尔人（Dharawal）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Wollongong (City of Wollongong LGA ~220,000; metro 305,691 2021 incl. Shellharbour/Kiama councils; escarpment strip; Port Kembla; UOW; train ~1.5 h to Sydney)
+    howItWorks:
+      "卧龙岗是新南威尔士的第三大城市，市议会辖区 2021 年约 22 万人，加上南面的谢尔哈伯与凯阿马两个议会的都会区约 31 万；议会管地方服务，警察、学校与铁路归州政府。城市是伊拉瓦拉悬崖与海之间的一条窄带，市中心在海边，肯布拉港的钢铁厂在南面，卧龙岗大学在西面，火车到悉尼约一个半小时。初来的人最容易犯的错，是把整条伊拉瓦拉海岸当作卧龙岗，而谢尔哈伯、凯阿马各是一个市议会。",
     layout:
       "城市沿海岸南北展开，市中心和卧龙岗海港（灯塔、海滩）在中段，北面是一串海滩郊区，再往北的海崖公路上有2005年通车的海崖大桥（Sea Cliff Bridge），悬在悬崖外的海面上。西面的伊拉瓦拉断崖顶上是基拉山（Mount Keira，464米）观景台，能俯瞰整条海岸线。南面是肯布拉港的工业区和南天寺（Nan Tien Temple，1995年建，南半球规模最大的佛教寺院之一）。再往南约40公里是凯阿玛的喷水洞。",
     gettingAround:
@@ -344,6 +371,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "byron-bay": {
     identity:
       "拜伦湾（Byron Bay）是新南威尔士州最东北角的一座海滨小镇，常住人口只有约6300（2021年普查），每年却接待约200万游客。镇旁的拜伦角（Cape Byron）是澳大利亚大陆的最东端，1901年建成的灯塔立在岬角顶上。这里从二十世纪七十年代起因冲浪者和另类文化社区而出名，今天以海滩、冲浪、观鲸、瑜伽和音乐节著称。传统土地所有者是邦贾隆族（Bundjalung）的阿拉夸尔人（Arakwal），传统地名Cavvanbah意为“相聚之地”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Byron Bay (town ~6,300–10,900 2021 in Byron Shire ~35,000; easternmost point; Bundjalung; Ballina airport 30 km; ~2 million visitors/yr)
+    howItWorks:
+      "拜伦湾是新南威尔士北海岸的一座海滨小镇，2021 年常住人口约一万，属于拜伦郡议会（约 3.5 万人，郡府在马伦宾比）；郡议会管地方服务，其余归州政府。镇子在澳大利亚大陆最东端的拜伦角下，灯塔在岬角上，每年约 200 万游客涌入一个几千人的镇，房价是全国最高的一档；腹地的班加洛、马伦宾比是另一种生活，机场在南面 30 公里的巴利纳。初来的人最容易犯的错，是把拜伦湾当作一座城，而它是一个郡里的一个镇，郡政府不在这里。",
     layout:
       "小镇在拜伦角西侧的海湾边，主街是Jonson Street，从镇中心走到主海滩只要几分钟。拜伦角向东伸入太平洋，从镇上沿海岸步道到灯塔约4公里，沿途经过瓦特戈斯海滩（Wategos）和最东端观景点。镇北是塔洛湾（Tallow Beach）的长沙滩，镇南沿海是萨福克公园和布罗肯黑德。往内陆是起伏的丘陵和小镇（班加罗、尼姆宾）。机场在南面的巴利纳。",
     gettingAround:
@@ -358,6 +388,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "coffs-harbour": {
     identity:
       "科夫斯港（Coffs Harbour）在新南威尔士州中北海岸，悉尼以北约530公里、布里斯班以南约390公里，人口约7.9万（2021年普查）。这里是新南威尔士州唯一大分水岭直接抵达太平洋的地方，山地雨林和海岸在几公里内相接。它曾靠木材和香蕉种植业发展，1964年建成的“大香蕉”是澳大利亚最早的“大物件”地标之一；今天以海滩、海洋公园和通往冈瓦纳雨林世界遗产的门户地位为主。传统土地所有者是甘拜恩吉尔人（Gumbaynggirr）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Coffs Harbour (City of Coffs Harbour LGA ~78,800 2021; Gumbaynggirr; jetty; Big Banana; airport; Pacific Highway bypass under construction; Sydney 529 km)
+    howItWorks:
+      "科夫斯港是新南威尔士中北海岸的城市，由科夫斯港市议会管辖，2021 年人口约 7.9 万；议会管地方服务，其余归州政府。市中心在太平洋公路边的内陆一侧，港口与木栈桥在海边几公里外，麦特恩鸟岛靠防波堤相连，大香蕉在城北的公路上，机场在城南；太平洋公路的绕城段正在建设。这里是古姆拜恩吉尔人的土地。初来的人最容易犯的错，是以为市中心在海边，而市中心与港口之间隔着铁路与几公里的路。",
     layout:
       "市区在海岸平原上，港口和木结构的老码头在市中心东侧，防波堤连着海燕岛（Muttonbird Island）自然保护区，岛上是短尾鹱的繁殖地。往北沿海是帕克海滩和一串海滩郊区，大香蕉在市区北面的太平洋公路旁；孤岛海洋公园（Solitary Islands）从这里向北延伸约75公里。往西约60公里翻上大分水岭是多里戈国家公园（冈瓦纳雨林世界遗产的一部分）。机场在市区南约3公里。",
     gettingAround:
@@ -372,6 +405,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   katoomba: {
     identity:
       "卡通巴（Katoomba）是蓝山地区的主镇，在悉尼以西约100公里的大分水岭高地上，海拔约1017米，人口约8300（2021年普查）。蓝山因桉树释放的油雾在阳光下呈蓝色而得名，2000年以“大蓝山地区”列入世界自然遗产。卡通巴从十九世纪八十年代起就是悉尼人的山地度假地，镇南的回音角能看到三姐妹峰和贾米森谷的砂岩崖壁。地名来自原住民语言，意为“闪亮的落水”。传统土地所有者是贡东古拉人（Gundungurra）和达鲁格人（Darug）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Katoomba (8,268 2021; chief town of City of Blue Mountains ~80,000, a string of towns along highway/railway; Three Sisters/Echo Point 2 km; train ~2 h; Greater Blue Mountains WHA 2000)
+    howItWorks:
+      "卡通巴是蓝山市议会的首府镇，2021 年人口约 8,300；蓝山市不是一座城，而是沿大西部公路与铁路排成一串的二十多个镇，合计约 8 万人，议会管地方服务，国家公园归州政府。三姐妹峰的观景台回声角在镇南 2 公里，景观世界在旁边，火车到悉尼约两小时，大蓝山 2000 年列入世界遗产。初来的人最容易犯的错，是把卡通巴当作蓝山的入口，而蓝山是一片有几十个镇的山脊，每个镇都通向不同的峡谷。",
     layout:
       "小镇沿大西部公路和铁路展开，火车站在镇北的主街上，主街（Katoomba Street）向南下坡约2公里到回音角。回音角是三姐妹峰的正面观景台，向下有巨人阶梯通向谷底；景观世界（Scenic World）在回音角西面，有倾角52度的景观铁路（世界上最陡的客运铁路之一）、缆车和谷底雨林步道。东面相邻的鲁拉小镇有花园和悬崖步道，再往东是温特沃斯瀑布；西面是布莱克希思和格罗斯谷的观景台。",
     gettingAround:
@@ -386,6 +422,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ballarat: {
     identity:
       "巴拉瑞特（Ballarat）在维多利亚州中部高地，墨尔本西北约110公里，人口约11.6万（2021年普查），是澳大利亚人口最多的内陆城市之一。1851年8月这里发现黄金，几年内涌入数万淘金者；1854年12月3日的尤里卡栅栏事件（矿工武装抗议采矿执照制度，22名矿工死亡）被视为澳大利亚民主史上的标志性事件。淘金时代留下了宽阔的林荫大道和维多利亚式建筑群，1970年开放的疏芬山（Sovereign Hill）露天博物馆复原了1850年代的金矿镇。传统土地所有者是瓦达乌龙人（Wadawurrung）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Ballarat (City of Ballarat; ~116,000 2021; 110 km from Melbourne; gold 1851; Eureka 1854; Sovereign Hill; Lydiard Street; Lake Wendouree)
+    howItWorks:
+      "巴拉瑞特是维多利亚州的内陆城市，由巴拉瑞特市议会管辖，2021 年人口约 11.6 万，墨尔本在东南 110 公里，火车约一个多小时；议会管地方服务，其余归州政府。1851 年的淘金热建起了这座城，利迪亚德街的维多利亚式石楼是那个年代的遗产，1854 年的尤里卡起义在城东，疏芬山是重建的淘金镇，温杜里湖在城西。初来的人最容易犯的错，是把巴拉瑞特当作一座主题公园的所在，而它是一座有大学与医院的区域首府，疏芬山只是城郊的一角。",
     layout:
       "市中心在斯特尔特街（Sturt Street）两侧，这条林荫大道从火车站向西延伸到温多利湖，两侧是十九世纪的银行、剧院和酒店；巴拉瑞特美术馆（1884年建，澳大利亚最早的地区美术馆）在市中心。温多利湖在城西，湖畔是植物园和1956年墨尔本奥运会的赛艇场地。疏芬山在城南约3公里的山坡上，尤里卡中心在城东。周围是起伏的农田和火山高原。",
     gettingAround:
@@ -400,6 +439,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bendigo: {
     identity:
       "本迪戈（Bendigo）在维多利亚州中部，墨尔本西北约150公里，人口约10.3万（2021年普查），是维多利亚州第四大城市。1851年10月本迪戈溪发现黄金，此后它成为世界上产金最多的金矿区之一（历史产量超过600吨），淘金时代的财富留下了大批维多利亚式公共建筑；华人矿工的到来则留下了澳大利亚最深厚的华人历史之一，金龙博物馆和每年复活节的舞龙游行延续至今。传统土地所有者是贾贾乌龙人（Dja Dja Wurrung）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bendigo (City of Greater Bendigo ~3,000 km²; urban ~103,000 2021; gold 1851; Sandhurst 1853–1891; Chinese heritage/Golden Dragon Museum; UNESCO City of Gastronomy 2019; 150 km from Melbourne)
+    howItWorks:
+      "本迪戈是维多利亚州中北部的城市，由大本迪戈市议会管辖，辖区约 3,000 平方公里，2021 年城区人口约 10 万，墨尔本在南面 150 公里；议会管地方服务，其余归州政府。1851 年淘金热建起了这座城，1853 至 1891 年间官方名为桑德赫斯特，市中心的圣心大教堂、三叶草旅馆是那个年代的建筑，19 世纪中叶约五分之一的居民是华人，金龙博物馆记着这段历史，2019 年它被评为联合国教科文组织美食之都。初来的人最容易犯的错，是把本迪戈当作一座采矿小镇，而它是维多利亚第四大城市，本迪戈银行的总部在此。",
     layout:
       "市中心在帕尔街（Pall Mall）一带，亚历山德拉喷泉、邮局大楼、莎玛剧院和罗莎琳德公园构成核心；圣心大教堂（1977年完工，澳大利亚最大的教区教堂之一）的尖塔在市中心西南是全城地标。中央德博拉金矿在市中心南面，游客可以下到地下矿道；金龙博物馆在市中心东侧的华人区（毗邻中式花园和关帝庙）。老式有轨电车沿主街往返。周围是矮丘和桉树林，本迪戈溪穿城。",
     gettingAround:
@@ -448,6 +490,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   toowoomba: {
     identity:
       "图文巴（Toowoomba）在昆士兰州东南部大分水岭的山脊上，布里斯班以西约130公里，海拔约690米，人口约14.2万（2021年普查），是澳大利亚人口第二多的内陆城市（仅次于堪培拉）。它以“花园之城”著称，每年9月的花卉嘉年华自1949年起举办；高地气候比昆士兰沿海凉爽，冬季有霜。2014年通车的韦尔坎普机场是澳大利亚几十年来第一座新建的大型民用机场。传统土地所有者是吉阿巴尔人（Giabal）和贾罗韦尔人（Jarowair）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Toowoomba (Toowoomba Region ~13,000 km²; urban 142,163 2021; crest of the Great Dividing Range ~700 m; Carnival of Flowers Sept; Wellcamp airport 2014; Brisbane 132 km)
+    howItWorks:
+      "图文巴是澳大利亚人口第二多的内陆城市，由图文巴区域议会管辖，辖区约 1.3 万平方公里，2021 年城区人口约 14 万，布里斯班在东面 132 公里；议会管地方服务，其余归州政府。城市建在大分水岭的山脊上，海拔约 700 米，大部分市区在分水岭以西，是达令草地的门户，159 座公园让它自称“花园城市”，每年九月的花卉节是它的名片，威尔坎普机场 2014 年由私人建成。初来的人最容易犯的错，是把图文巴当作布里斯班的郊区，而它在山脊上的另一侧，气候与平原完全不同。",
     layout:
       "城市建在山脊顶部的平台上，东缘是大分水岭的陡崖，野餐点（Picnic Point）等观景台俯瞰洛克耶谷和通往布里斯班的方向。市中心在鲁斯文街一带，女王公园和植物园在市中心东侧，是花卉嘉年华的主场地。西面缓坡向达令丘陵农业区展开。机场在市中心以西约16公里。周边有克罗斯山国家公园和布尼亚山（西北约150公里）。",
     gettingAround:
@@ -462,6 +507,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "airlie-beach": {
     identity:
       "埃尔利海滩（Airlie Beach）是昆士兰州中部海岸的一座度假小镇，常住人口只有约1300（2021年普查），却是圣灵群岛（Whitsundays）和大堡礁中段的出发港。海湾外散布着74座岛屿，其中圣灵岛上的白天堂海滩以近乎纯白的硅砂闻名，汉密尔顿岛是主要的度假岛。小镇本身以海滨人工泻湖、游艇码头和帆船、跳岛出海活动为核心。传统土地所有者是恩加罗人（Ngaro）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Airlie Beach (1,312 2021; Whitsunday Region, seat Proserpine; two marinas; lagoon; Whitsunday Coast airport 39 km at Proserpine)
+    howItWorks:
+      "艾尔利海滩是昆士兰圣灵群岛海岸的度假小镇，2021 年常住人口约 1,300，属于圣灵群岛区域议会，议会所在地在内陆 26 公里的普罗瑟派恩；议会管地方服务，其余归州政府。镇子沿一条主街与两座游艇码头展开，是去圣灵群岛与大堡礁的出发点，海边的人工泻湖代替了会有水母的海，机场在南面 39 公里的普罗瑟派恩。初来的人最容易犯的错，是把艾尔利海滩当作圣灵群岛本身，而岛屿在海上，白天堂海滩要坐一两个小时的船。",
     layout:
       "小镇沿一条海湾展开，主街和餐馆酒吧集中在中段，海边是免费的人工泻湖泳池（约4300平方米）。两座游艇码头（珊瑚海码头、埃尔利港码头）是出海的起点。北面是康韦国家公园的雨林山地，南面隔一道海湾是舒特港（大型客船码头）。圣灵群岛在海湾外东面，白天堂海滩约1.5–2小时船程，汉密尔顿岛有自己的机场。机场在南面的普罗瑟派恩附近。",
     gettingAround:
@@ -476,6 +524,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   albany: {
     identity:
       "奥尔巴尼（Albany）在西澳大利亚州南海岸，珀斯东南约420公里，人口约3.5万（2021年普查）。1826年12月26日英国在此建立据点，比珀斯和弗里曼特尔早两年多，是西澳最早的殖民定居点。乔治王湾是天然深水良港，1914年第一批澳新军团的运兵船队从这里出发；2014年开放的国家澳新军团中心以此为主题。城南托恩迪拉普国家公园的“大裂口”和“天然桥”是花岗岩海岸的地标，1978年关闭的捕鲸站是澳大利亚最后一座。传统土地所有者是努恩加人（Noongar）中的梅南人（Menang）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Albany (City of Albany; 35,053 2021; founded 1826, oldest colonial settlement in WA; King George Sound; National Anzac Centre 2014; whaling station closed 1978; Perth 418 km)
+    howItWorks:
+      "奥尔巴尼是西澳大南部地区的港口城市，由奥尔巴尼市议会管辖，2021 年人口约 3.5 万，珀斯在北面 418 公里；议会管地方服务，其余归州政府。1826 年建立的这座城比珀斯还早两年，是西澳最早的殖民聚落，市中心在两座山之间俯瞰公主皇家港，1914 年澳新军团的船队从乔治王湾出发，国家澳新军团中心 2014 年建在山上；1978 年关闭的捕鲸站在城外的海角，如今是博物馆。初来的人最容易犯的错，是把奥尔巴尼当作珀斯的边缘小镇，而它是这个州最老的城，有自己的港口与历史。",
     layout:
       "城市坐落在公主皇家港北岸的山坡上，克拉伦斯山和梅尔维尔山夹着老城，老城区沿斯特灵台地和约克街有大批殖民时期建筑。公主皇家港向东通向乔治王湾，湾口的国家澳新军团中心在克拉伦斯山的澳新军团公园里。城南隔港是托恩迪拉普半岛，大裂口、天然桥、鲸鱼世界（旧捕鲸站）都在那里；城东约35公里是双子峰国家公园。机场在城西北约11公里。",
     gettingAround:
@@ -490,6 +541,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   busselton: {
     identity:
       "巴瑟尔顿（Busselton）在西澳大利亚州西南部的地理湾畔，珀斯以南约220公里，人口约2.7万（2021年普查），是通往玛格丽特河葡萄酒产区和利文—纳图拉利斯特角的门户。它的地标是伸入海湾1841米的木栈桥——南半球最长的木结构栈桥，1864年开建、上世纪六十年代才停止延长，桥头有海底观测站。地理湾水浅、平静，是西澳最受欢迎的家庭海滩之一。传统土地所有者是努恩加人中的瓦丹迪人（Wadandi）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Busselton (City of Busselton ~40,600 2021, town 27,233; Geographe Bay; jetty 1,841 m; Margaret River in Shire of Augusta–Margaret River; Dunsborough in Busselton LGA; Perth 220 km)
+    howItWorks:
+      "巴瑟尔顿是西澳西南部增长最快的城市之一，由巴瑟尔顿市议会管辖，2021 年辖区人口约 4 万，珀斯在北面 220 公里；议会管地方服务，其余归州政府。镇子在地理湾的南岸，1,841 米长的木栈桥伸进海里，是南半球最长的；邓斯伯勒与亚林加普在辖区西端，机场在镇外。初来的人最容易犯的错，是把玛格丽特河酒区当作巴瑟尔顿的一部分，而玛格丽特河属于南面另一个郡议会，巴瑟尔顿只是它的北门。",
     layout:
       "城镇沿地理湾南岸展开，栈桥从市中心海滩笔直伸入海中，桥上有小火车。西面沿湾是邓斯伯勒和纳图拉利斯特角（灯塔1903年建，鲸鱼观景），南面约50公里是玛格丽特河镇和上百家酒庄，利文—纳图拉利斯特国家公园沿海岸从北角一直延伸到南面的利文角，沿途有石灰岩洞穴（恩吉尔吉洞、猛犸洞、珠宝洞）和冲浪海滩。机场在镇南约6.5公里。",
     gettingAround:
@@ -504,6 +558,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "mount-gambier": {
     identity:
       "甘比尔山（Mount Gambier）在南澳大利亚州东南角的石灰岩海岸地区，阿德莱德东南约450公里、墨尔本西北约435公里，人口约2.7万（2021年普查），是南澳人口第二多的城市。城市建在一座数千年前才停止喷发的休眠火山（玛珥火山）的山坡上，火口湖蓝湖是它的象征——每年11月前后湖水从冬季的灰蓝变为夏季的钴蓝，机制与水温和碳酸钙有关。城内还有多处石灰岩塌陷形成的天坑花园。传统土地所有者是博安迪克人（Boandik）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mount Gambier (City of Mount Gambier, small area surrounded by District Council of Grant; 26,878 2021; Blue Lake crater; 17 km from Victorian border; Adelaide 450 km; airport in Grant)
+    howItWorks:
+      "甘比尔山是南澳最大的区域城市，由甘比尔山市议会管辖，辖区很小，四周被格兰特区议会包围，2021 年人口约 2.7 万，阿德莱德在西北 450 公里，维多利亚州界在东面 17 公里；议会管地方服务，其余归州政府。城市建在一座死火山的脚下，蓝湖是火山口湖，也是城市的水源，每年十一月变成钴蓝色，恩弗斯顿天坑与洞穴花园在市中心，石灰岩海岸的洞穴潜水以这里为基地，机场在格兰特区议会境内。初来的人最容易犯的错，是把甘比尔山当作一座山，而它是一座建在火山脚下的城，山只是城边的一圈丘陵。",
     layout:
       "市中心在火山锥北麓的平地上，商业街是商业街（Commercial Street）；蓝湖在市中心南面的火口里，环湖有公路和步道，旁边是山谷湖和另外两个较小的火口湖。恩弗斯顿天坑（1886年辟为花园）在市中心东侧，洞穴花园（Cave Garden）就在市中心步行街旁。周边是松树林和牧场，往北约50公里是库纳瓦拉葡萄酒产区，再往北约100公里是纳拉库特洞穴国家公园（1994年列入世界遗产）。机场在城北约9公里。",
     gettingAround:
@@ -518,6 +575,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   devonport: {
     identity:
       "德文波特（Devonport）在塔斯马尼亚州西北海岸、默西河口，人口约2.6万（2021年普查），是塔州第三大城市。它最重要的身份是塔斯马尼亚精神号（Spirit of Tasmania）渡轮的港口——从维多利亚州吉朗开来的过夜渡轮在这里靠岸，自驾游客多从这里开始环塔之旅。河口西侧的默西崖灯塔（1889年建）是地标，崖上的蒂阿加拉（1976年开放）是塔斯马尼亚原住民文化中心。往内陆约80公里是摇篮山。传统土地所有者是塔斯马尼亚原住民（palawa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Devonport (City of Devonport; 26,150 2021; Mersey River mouth; Spirit of Tasmania to Geelong; busiest freight port in Tasmania; Cradle Mountain ~80 km in other LGAs; airport)
+    howItWorks:
+      "德文波特是塔斯马尼亚北海岸的港口城市，由德文波特市议会管辖，2021 年人口约 2.6 万，是塔州第三大城市；议会管地方服务，其余归州政府。城市在默西河口的两岸，塔斯马尼亚精神号渡轮从这里开往吉朗，港口承担了全岛一半以上的货物进出，机场在城东，朗塞斯顿在东南约 100 公里；摇篮山在西南约 80 公里的另一个议会区。初来的人最容易犯的错，是把德文波特当作摇篮山的山门，而它是一座渡轮与货运的港口城，摇篮山要再开一个多小时。",
     layout:
       "城市分在默西河两岸，西岸是市中心和渡轮码头，东岸是东德文波特和机场方向。市中心以北是默西崖，崖上有灯塔、蒂阿加拉和海岸步道，崖下是海滩。沿海往西约47公里是伯尼，往东是拉特罗布和谢菲尔德（壁画小镇），往东南约100公里是朗塞斯顿；摇篮山—圣克莱尔湖国家公园在西南约80公里的山里。机场在城东约10公里。",
     gettingAround:
@@ -532,6 +592,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yulara: {
     identity:
       "尤拉拉（Yulara）是北领地中部沙漠里为乌鲁鲁—卡塔丘塔国家公园服务的度假镇，常住人口约850（2021年普查），距乌鲁鲁约18公里、距爱丽斯泉约430公里。乌鲁鲁（艾尔斯岩）是高出平原348米的巨型砂岩独立山体，卡塔丘塔（奥尔加山）是36座圆顶岩丘群；国家公园1987年以自然遗产、1994年又以文化景观列入世界遗产，是澳大利亚原住民阿南古人（Anangu）的圣地。公园土地1985年归还阿南古人并租给联邦公园管理局共同管理；2019年10月起禁止攀登乌鲁鲁。镇子是1970年代规划、1980年代建成的，把住宿和设施集中在公园之外。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Yulara (853 2021; purpose-built resort town 1984 outside Uluru-Kata Tjuta NP, Anangu-owned jointly managed park; unincorporated NT; Ayers Rock airport 6 km; Uluru 18 km; Alice Springs 428 km)
+    howItWorks:
+      "尤拉拉不是一座普通的镇，而是 1984 年在乌鲁鲁—卡塔丘塔国家公园外专门建起的度假村，2021 年常住人口约 850，几乎全是度假村的员工；它在北领地是一块不设地方议会的飞地，由领地政府直接管理。国家公园是阿南古人的土地，由他们与公园管理局共管，进入要买门票，乌鲁鲁在南面 18 公里，机场在镇外 6 公里，爱丽斯泉在东北 428 公里。初来的人最容易犯的错，是以为可以住在乌鲁鲁脚下，而公园内没有住宿，所有人都住在尤拉拉。",
     layout:
       "尤拉拉是一个环形规划的度假村，酒店、露营地、超市和游客中心围着中央的沙丘观景台，镇内有免费环线巴士。机场在镇北约6公里。乌鲁鲁在镇东南约18公里，环岩公路一圈约10公里，有日出、日落观景区和文化中心；卡塔丘塔在乌鲁鲁以西约40公里，有风之谷和瓦尔帕峡谷步道。周围是红沙丘和沙漠橡树，地平线上能看到远处的康纳山。",
     gettingAround:
@@ -548,6 +611,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   gosford: {
     identity:
       "戈斯福德（Gosford）是新南威尔士州中央海岸地区的中心城市，在悉尼以北约77公里、纽卡斯尔以南约86公里，戈斯福德统计区人口约17.8万（2021年普查），整个中央海岸城区是悉尼与纽卡斯尔之间的都市走廊。城市坐落在布里斯班水域（Brisbane Water）这片内湾的北岸，东面是特里加尔、阿沃卡等冲浪海滩和布迪国家公园。1839年以戈斯福德伯爵命名，1980年设市。传统土地所有者是达金荣人（Darkinjung）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Gosford (CBD suburb; seat of Central Coast Council ~350,000 formed 2016 from Gosford and Wyong; Brisbane Water; train ~1.2 h to Sydney; Terrigal/Avoca beaches in other suburbs)
+    howItWorks:
+      "戈斯福德是中央海岸市议会的所在地，议会 2016 年由戈斯福德与怀昂两个议会合并而成，管辖约 35 万人，是新南威尔士人口最多的地方议会之一；议会管地方服务，警察、学校与铁路归州政府。戈斯福德本身只是布里斯班水域北端的一个市镇中心，有火车站、医院与体育场，火车到悉尼约一小时十几分，大多数居民住在周围的郊区，海滩在东面的特里格尔与阿沃卡。初来的人最容易犯的错，是把戈斯福德当作一座城，而“中央海岸”才是这座城，戈斯福德只是它的行政中心。",
     layout:
       "戈斯福德市中心在布里斯班水域北端的山坡上，火车站和商业区靠近水边。往东约10公里是特里加尔（海滩、海滨步道）和阿沃卡海滩，再往南是布迪国家公园的海岸步道；往北是奥里米巴和澳大利亚爬行动物公园所在的森林；往南过布里斯班水域是伍伊伍伊和半岛的海滩。中央海岸的城区从戈斯福德一直向北延伸到怀昂和图格拉湖。",
     gettingAround:
@@ -562,6 +628,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "port-macquarie": {
     identity:
       "麦夸里港（Port Macquarie）在新南威尔士州中北海岸、黑斯廷斯河口，悉尼以北约390公里，人口约5.2万（2023年）。它1821年作为流放地建立，是新南威尔士州最早的殖民定居点之一；今天以温和的气候、海滩和考拉出名——镇上的考拉医院专门救治受伤的考拉。塔金角灯塔（1879年）和9公里长的海岸步道是它的地标。传统土地所有者是比里帕伊人（Birpai）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Port Macquarie (urban ~48,000 2021; Port Macquarie-Hastings Council ~86,700; Hastings River mouth; convict settlement 1821; Birpai; beaches; Koala Hospital; airport; Sydney 390 km)
+    howItWorks:
+      "麦夸里港是新南威尔士中北海岸的城市，2021 年城区人口约 4.8 万，属于麦夸里港—黑斯廷斯议会，辖区约 8.7 万人；议会管地方服务，其余归州政府。城市在黑斯廷斯河口的南岸，1821 年作为流放地建立，市中心在河口，镇滩、弗林斯滩、灯塔滩沿海岸向南排开，考拉医院在市中心，机场在城西，悉尼在南面 390 公里。退休人口占了很大比例。初来的人最容易犯的错，是把麦夸里港当作一座度假镇，而它是一座有大学校区与医院的区域城市，退休者比游客多。",
     layout:
       "镇中心在黑斯廷斯河口南岸，河口防波堤和镇海滩就在市中心旁边。海岸线向南延伸：从西港公园经市中心到塔金角灯塔的海岸步道串起一串海滩（弗林斯、诺比斯、雪莱、米纳）；海崖雨林国家公园（Sea Acres）在雪莱海滩旁，有雨林栈道；考拉医院在镇中心南侧的罗托庄园。机场在镇西约4公里。往西内陆是黑斯廷斯河谷和沃丘普。",
     gettingAround:
@@ -576,6 +645,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "wagga-wagga": {
     identity:
       "瓦加瓦加（Wagga Wagga）在新南威尔士州南部的里弗赖纳地区、马兰比吉河畔，悉尼和墨尔本之间各约450公里、堪培拉以西约245公里，城区人口约5.7万（2021年普查），是新南威尔士州最大的内陆城市之一。地名来自维拉朱里语，市政府2019年采纳的释义是“许多舞蹈与庆典之地”。它是军事重镇（卡普卡陆军新兵训练中心、瓦加空军基地），也是查尔斯特大学的所在地和里弗赖纳农业区的中心。传统土地所有者是维拉朱里人（Wiradjuri）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Wagga Wagga (City of Wagga Wagga; 57,003 urban 2021; Murrumbidgee; Sydney 452 km / Melbourne 456 km; CSU; Kapooka; RAAF Wagga; Wiradjuri; airport)
+    howItWorks:
+      "沃加沃加是新南威尔士最大的内陆城市，由沃加沃加市议会管辖，2021 年城区人口约 5.7 万，在悉尼与墨尔本正中间，各约 450 公里；议会管地方服务，其余归州政府。城市在马兰比吉河的冲积谷地里，市中心在河的南岸，查尔斯·斯特大学、卡普卡陆军训练基地与沃加空军基地让它成为军队与大学的城，机场有到三大城市的航班。这里是维拉朱里人的土地。初来的人最容易犯的错，是把沃加沃加当作一个公路休息站，而它是里弗赖纳地区的首府。",
     layout:
       "市中心在马兰比吉河南岸，有堤坝防洪，主街是贝利斯街和菲茨莫里斯街，河边是滩地公园和沙滩（瓦加海滩）。植物园和动物园在城南的威利南斯山上，查尔斯特大学在城北的埃斯特拉，机场和空军基地在东南的森林山。周围是麦田、葡萄园和绵羊牧场，休姆高速在东面经过。",
     gettingAround:
@@ -590,6 +662,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mildura: {
     identity:
       "米尔迪拉（Mildura）在维多利亚州西北角的墨累河畔，墨尔本西北约545公里、阿德莱德以东约400公里，城区人口约3.6万（2021年普查，含周边城镇约5.9万）。它1887年由查菲兄弟建立，是澳大利亚第一个灌溉殖民地——引墨累河水把半干旱的马利灌木地变成了葡萄园和柑橘园，今天出产维多利亚州约八成的葡萄和澳大利亚七成以上的葡萄干。明轮船、柑橘和热气球是它的旅游名片；向北约110公里是蒙戈国家公园（维兰德拉湖区世界遗产）。传统土地所有者是拉蒂拉蒂人（Latji Latji）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mildura (Rural City of Mildura ~22,000 km²; city 35,652, urban 58,914 2021; Murray River; Chaffey irrigation colony 1887; Sunraysia grapes; Melbourne 545 km; airport busiest regional in Victoria)
+    howItWorks:
+      "米尔迪拉是维多利亚州西北角的城市，由米尔迪拉乡村市议会管辖，辖区约 2.2 万平方公里，2021 年市区人口约 3.6 万，加上河对岸新南威尔士的布龙加等镇约 5.9 万；议会管地方服务，其余归州政府。城市建在墨累河南岸，1887 年查菲兄弟在这里建起澳大利亚第一个规划灌溉区，如今这一带产全国九成的出口鲜食葡萄；机场是维多利亚最繁忙的区域机场，墨尔本在东南 545 公里，阿德莱德反而更近。初来的人最容易犯的错，是把米尔迪拉当作维多利亚的城市来算距离，而它离阿德莱德更近，河对岸就是另一个州。",
     layout:
       "米尔迪拉市区在墨累河南岸（维多利亚州一侧），河对岸是新南威尔士州；市中心的迪金大道是一条宽阔的林荫街。墨累河上有第11号船闸和码头，明轮船从这里出发；沿河向东是灌溉区的果园和小镇雷德克利夫斯。蒙戈国家公园在东北约110公里的新南威尔士州境内，有“中国长城”状的月牙沙丘和4万年前的人类遗骨出土地。机场在城西南约7公里。",
     gettingAround:
@@ -604,6 +679,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "phillip-island": {
     identity:
       "菲利普岛（Phillip Island）在维多利亚州南部的西港湾口，墨尔本东南约140公里，主镇考斯（Cowes）人口约6600（2021年普查），1940年起有桥与大陆的圣雷莫相连。岛的西南端是世界闻名的企鹅归巢——每天日落后成群的小企鹅从海上回到萨默兰海滩的巢穴；诺比斯角外的海豹岩是澳大利亚最大的海狗群落之一。岛上还有摩托车大奖赛赛道和冲浪海滩。传统土地所有者是布努龙人（Bunurong）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Phillip Island (~101 km²; 13,799 2021, ~40,000 in summer; Cowes 6,593; Bass Coast Shire, seat Wonthaggi; bridge from San Remo 1940; Penguin Parade ~40,000 penguins; MotoGP circuit; Melbourne 125 km)
+    howItWorks:
+      "菲利普岛是墨尔本东南 125 公里的一座岛，面积约 100 平方公里，2021 年常住人口约 1.4 万，夏天涨到 4 万，属于巴斯海岸郡议会，郡府在大陆的旺萨吉；郡议会管地方服务，其余归州政府。考斯是岛上的主镇，在北岸，1940 年建成的大桥把岛与圣雷莫连起来，企鹅归巢在岛的西南角，由菲利普岛自然公园管理，赛车场在岛的中部，没有铁路。初来的人最容易犯的错，是把企鹅归巢当作岛的全部，而岛上有一座镇、一条赛道和一整圈海岸。",
     layout:
       "菲利普岛东西约26公里，考斯在岛北岸的平静海湾边，是住宿和餐饮的中心；企鹅归巢、诺比斯角、海豹岩在岛西南端；大奖赛赛道在岛中南部；南岸是伍拉迈和考拉海滩等冲浪海滩；东端的丘吉尔岛有历史农场。桥在岛东端的纽黑文与圣雷莫之间。",
     gettingAround:
@@ -618,6 +696,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mackay: {
     identity:
       "麦凯（Mackay）在昆士兰州中部海岸、先锋河口，布里斯班以北约970公里、汤斯维尔以南约390公里，人口约8.4万（2021年普查）。它因甘蔗种植而兴起，被称为澳大利亚的“糖都”，港口和糖厂至今运转，近年采矿成为主要产业。1918年气旋后重建的市中心留下了大批装饰艺术风格的建筑；内陆的尤金拉国家公园是澳大利亚少数能稳定看到野生鸭嘴兽的地方，希尔斯伯勒角的沙滩上清晨有袋鼠。传统土地所有者是尤维巴拉人（Yuwibara）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mackay (Mackay Regional Council; 84,333 urban 2021; Pioneer River; sugar; Bowen Basin coal, Hay Point; Eungella NP; airport; Art Deco after 1918 cyclone)
+    howItWorks:
+      "麦凯是昆士兰中北部的城市，由麦凯区域议会管辖，2021 年城区人口约 8.4 万；议会管地方服务，其余归州政府。城市在先锋河的河口，甘蔗田从四周一直铺到海边，糖厂是它的老本行，如今博文盆地的煤矿与海波因特的煤港是经济的主力，大量矿工在这里落脚；1918 年的气旋几乎毁掉了市中心，重建留下了一批装饰艺术风格的建筑，机场在城南，尤金拉国家公园在西面。初来的人最容易犯的错，是把麦凯当作去圣灵群岛的过路站，而它是昆士兰采矿与制糖的重镇。",
     layout:
       "市中心在先锋河南岸，河口东侧是港口和滨海区。蓝水步道沿河和海岸连接蓝水泻湖、植物园和市场。希尔斯伯勒角在市区北约50公里，是国家公园和海滩；尤金拉在西面约80公里的山上，山下的布罗肯河是看鸭嘴兽的地方；南面是萨里纳的糖厂。机场在市区南侧。",
     gettingAround:
@@ -632,6 +713,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rockhampton: {
     identity:
       "罗克汉普顿（Rockhampton）在昆士兰州中部的菲茨罗伊河畔，距河口约45公里，布里斯班以北约630公里，人口约8万（2021年普查）。它就在南回归线以北，市内立有回归线标志；因周边广阔的牧场自称“澳大利亚牛肉之都”。河边的奎街保留着十九世纪的砂岩商业建筑群，东面的阿彻山俯瞰全城，卡普里康海岸的雅蓬和大凯佩尔岛在东面约40公里。传统土地所有者是达伦巴尔人（Darumbal）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Rockhampton (Rockhampton Region; ~79,000 2021; Fitzroy River; Tropic of Capricorn; beef capital; Quay Street; Yeppoon in Livingstone Shire; airport)
+    howItWorks:
+      "罗克汉普顿是昆士兰中部的城市，由罗克汉普顿区域议会管辖，2021 年人口约 7.9 万；议会管地方服务，其余归州政府。城市在菲茨罗伊河两岸，南回归线从城边穿过，自称“牛肉之都”，两座屠宰场是最大的雇主之一，码头街的 19 世纪街景是淘金年代留下的，阿彻山在城东俯瞰全城，机场在城西。初来的人最容易犯的错，是把海边的耶蓬当作罗克汉普顿的海滩区，而耶蓬属于利文斯顿郡议会，是另一座镇，罗克汉普顿本身在内陆 40 公里。",
     layout:
       "市中心在菲茨罗伊河南岸，奎街沿河，河上有几座桥连接北罗克汉普顿。阿彻山在城东，山顶有观景台和树顶栈道；植物园和动物园在城南。往北约25公里是卡普里康溶洞；往东约40公里是雅蓬和卡普里康海岸，从罗斯林湾坐船到大凯佩尔岛。机场在城西约6公里。",
     gettingAround:
@@ -646,6 +730,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "port-douglas": {
     identity:
       "道格拉斯港（Port Douglas）在昆士兰州最北部的海岸，凯恩斯以北约60公里，常住人口约3700（2021年普查），是通往大堡礁外礁和戴恩树雨林的度假小镇。它1877年因霍奇金森金矿发现而建港，衰落后在二十世纪八十年代重生为度假地。四英里海滩是一条棕榈树边的长沙滩，从镇上坐船可到低岛和阿金库尔礁，往北约20公里是莫斯曼峡谷，再往北是戴恩树雨林。传统土地所有者是库库亚兰吉人（Kuku Yalanji），传统地名Jabulkanji。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Port Douglas (3,650 2021; Shire of Douglas, seat Mossman; Four Mile Beach; Macrossan Street; reef/Daintree gateway; Cairns airport 60 km; resort development late 1980s)
+    howItWorks:
+      "道格拉斯港是昆士兰远北的度假小镇，2021 年人口约 3,700，属于道格拉斯郡议会，郡府在内陆 20 公里的莫斯曼；郡议会管地方服务，其余归州政府。镇子在一个岬角上，四英里海滩在一侧，游艇码头在另一侧，麦克罗森街是唯一的主街，1980 年代末的度假村开发把一个衰落的港口变成了今天的样子；大堡礁的船从码头出发，丹翠雨林在北面，机场在南面 60 公里的凯恩斯。初来的人最容易犯的错，是把道格拉斯港当作一座城，而它是一个几千人的度假镇，郡政府在别处，医院与机场都在别的镇。",
     layout:
       "小镇在一个伸入海中的小半岛上，马库森街是主街，尽头是码头和游艇港（出海点），半岛北端的弗拉格斯塔夫山有观景台。四英里海滩沿半岛东岸向南延伸。往北沿库克公路约20公里是莫斯曼镇和莫斯曼峡谷（戴恩树国家公园的南部入口），再往北过戴恩树河渡口是雨林、海角艰险角；往南是凯恩斯。",
     gettingAround:
@@ -660,6 +747,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bunbury: {
     identity:
       "邦伯里（Bunbury）在西澳大利亚州西南海岸，珀斯以南约175公里，人口约7.6万（2021年），是西澳第三大人口中心。它建在莱舍诺尔特湾与地理湾之间的一个半岛上，港口是西南地区的货运港；库姆巴纳湾的海豚探索中心让人可以在浅水区近距离看到野生宽吻海豚。它也是玛格丽特河和西南部森林、酒庄之旅的门户。传统土地所有者是努恩加人中的瓦丹迪人（Wardandi），传统地名Goomburrup。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bunbury (City of Bunbury ~33,000; Greater Bunbury 76,452 2021 across 4 LGAs incl. Capel/Dardanup/Harvey; port; Koombana Bay dolphins; Perth 175 km; Australind train)
+    howItWorks:
+      "班伯里是西澳的第三大城市，班伯里市议会本身辖区很小，约 3.3 万人，而包括东面的伊顿、奥斯特拉林德在内的大班伯里 2021 年约 7.6 万人，分属四个议会；议会管地方服务，其余归州政府。市中心在半岛上，港口在一侧，库姆巴纳湾的海豚在另一侧，珀斯在北面 175 公里，奥斯特拉林德号列车两小时到珀斯，矿产加工与港口是经济的主力。初来的人最容易犯的错，是把班伯里市议会的辖区当作整座城，而一半以上的居民住在河对岸另外三个郡议会的郊区里。",
     layout:
       "市中心在半岛上，西面是印度洋的后海滩，东面是莱舍诺尔特湾的平静水面，北面是库姆巴纳湾和港口；灯塔（黑白格纹）在半岛北端的山上。海豚探索中心在库姆巴纳湾岸边。往南沿海岸约50公里到巴瑟尔顿，往东内陆是科利的煤矿和林区，往西南是玛格丽特河方向。机场在城东南约8公里，只做通用航空。",
     gettingAround:
@@ -674,6 +764,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalgoorlie: {
     identity:
       "卡尔古利—博尔德（Kalgoorlie-Boulder）在西澳大利亚州内陆的金矿区，珀斯以东约595公里，人口约2.9万（2021年普查）。1893年6月帕迪·汉南在这里发现黄金，随后的淘金潮催生了“金英里”——号称世界最富的一平方英里；今天的“超级坑”（Fimiston露天矿）长约3.6公里、宽1.6公里、深逾600米，是澳大利亚最大的露天金矿之一，至今仍在开采。1903年建成的金矿区输水管道从珀斯附近引水近600公里，是当年的工程壮举。传统土地所有者是万加伊人（Wangkatha）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Kalgoorlie-Boulder (City of Kalgoorlie-Boulder ~95,000 km²; 29,072 2021; gold 1893 Hannan; Super Pit 3.6 km long; Boulder merged 1989; Hannan Street; Prospector train; Perth 595 km)
+    howItWorks:
+      "卡尔古利—博尔德是西澳金矿区的中心，由卡尔古利—博尔德市议会管辖，辖区约 9.5 万平方公里，2021 年人口约 2.9 万，珀斯在西面 595 公里；议会管地方服务，其余归州政府。1893 年帕迪·汉南在这里发现黄金，卡尔古利与南面的矿镇博尔德 1989 年合并成一座市，汉南街是市中心的主街，超级坑金矿在城东，长 3.6 公里、深 600 多米，全天开采，四分之一的劳动力在矿上；探矿者号列车与航班通往珀斯。初来的人最容易犯的错，是把卡尔古利当作一座淘金遗迹的镇，而它是一座至今靠一个巨型矿坑活着的工作城市。",
     layout:
       "卡尔古利和博尔德原是两座相邻的矿镇，1989年合并。卡尔古利的汉南街是宽阔的主街，两侧是淘金时代的酒店和公共建筑；博尔德在东南约5公里，伯特街有历史建筑和市集。超级坑在两镇之间的东侧，观景台在博尔德一侧。周围是红土、盐湖和灌木荒原。机场在城南约6公里。",
     gettingAround:
@@ -688,6 +781,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "port-lincoln": {
     identity:
       "林肯港（Port Lincoln）在南澳大利亚州艾尔半岛南端的波士顿湾畔，阿德莱德以西约280公里（陆路约650公里），人口约1.4万（2021年普查）。它拥有澳大利亚最大的商业渔船队，自称“海鲜之都”——南方蓝鳍金枪鱼的围网养殖、生蚝、鲍鱼、贻贝都在这里；也是南澳唯一能与大白鲨笼潜、与海狮同游的地方。传统土地所有者是巴恩加拉人（Barngarla），传统地名Galinyala意为“甜水之地”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Port Lincoln (City of Port Lincoln; ~14,400 2021; Boston Bay, Eyre Peninsula tip; seafood capital, tuna; shark cage diving; Barngarla/Galinyala; Adelaide 650 km by road, 50 min flight)
+    howItWorks:
+      "林肯港是南澳艾尔半岛南端的城市，由林肯港市议会管辖，2021 年人口约 1.4 万，阿德莱德在东面 650 公里公路，飞机约 50 分钟；议会管地方服务，其余归州政府。城市在波士顿湾的岸边，自称澳大利亚的海鲜之都，蓝鳍金枪鱼、生蚝与鲍鱼的养殖是它的经济，粮食码头是另一条命脉，鲨鱼笼潜从港口出发去海王星群岛，林肯国家公园在城南。这里是巴恩加拉人的土地。初来的人最容易犯的错，是按公路距离把林肯港想成阿德莱德的远郊，而它隔着斯宾塞湾自成一片，大多数人坐飞机来往。",
     layout:
       "镇子在波士顿湾西岸，波士顿湾是向斯宾塞湾开口的天然深水良港，码头和金枪鱼加工区在镇南。林肯国家公园在镇东南约15公里的半岛上，有沙丘和海湾；往西约50公里是科芬湾（生蚝）；大白鲨笼潜的船去南面的海王星群岛，海狮在贝尔德湾（西北）。机场在镇北约13公里。",
     gettingAround:
@@ -702,6 +798,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   burnie: {
     identity:
       "伯尼（Burnie）在塔斯马尼亚州西北海岸的鸸鹋湾畔，德文波特以西约47公里、朗塞斯顿以西约135公里，人口约2万（2021年普查）。它是塔斯马尼亚最大的散货港，1936年至2010年间的造纸厂曾是城市支柱（1939年世界上首次完全用桉树浆造纸）；今天以海边的小企鹅观察点、手工艺中心和周边的郁金香田、雨林出名。传统土地所有者是塔斯马尼亚原住民（palawa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Burnie (City of Burnie; 19,918 2021; Emu Bay port, largest general cargo port in Tasmania; paper mill closed 2010; UTAS Cradle Coast campus; Cradle Mountain ~1.5 h; Wynyard airport)
+    howItWorks:
+      "伯尼是塔斯马尼亚西北海岸的港口城市，由伯尼市议会管辖，2021 年人口约 2 万，是塔州第四大城市；议会管地方服务，其余归州政府。城市在鸸鹋湾边，港口是塔州最大的杂货港，承担全岛近一半的集装箱，1936 年建的造纸厂曾是城市的支柱，2010 年关闭后转向教育、医疗与物流，塔斯马尼亚大学的摇篮海岸校区在此，机场在西面的温亚德，摇篮山在南面约一个半小时。初来的人最容易犯的错，是把伯尼当作一座衰落的工业港，而它是西北海岸的医疗与大学中心。",
     layout:
       "市中心在鸸鹋湾的港口旁，港口的码头和货运区占据海岸中段，西面是西海滩和小企鹅观察中心。往西约17公里是温亚德和机场，再往西是台角（郁金香田、灯塔）和斯坦利（“大坚果”火山颈）；往南进内陆是弗恩格莱德的雨林和吉尼斯瀑布；往东沿海是德文波特。",
     gettingAround:
@@ -718,6 +817,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   albury: {
     identity:
       "奥尔伯里（Albury）在新南威尔士州与维多利亚州交界的墨累河北岸，与河对岸维多利亚州的沃东加合称奥尔伯里—沃东加，两城城区人口约9.8万（2021年普查，奥尔伯里本身约5.4万），是悉尼与墨尔本之间休姆公路上最大的城市。上游约10公里的休姆湖是1936年建成的大型水库；1947年设立的博内吉拉移民中心是澳大利亚第一个移民接待中心，战后三十万移民从这里进入澳大利亚。南面的拉瑟格伦是维多利亚州的加强型葡萄酒产区。传统土地所有者是维拉朱里人（Wiradjuri）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Albury (City of Albury; 53,677 2021; twin city with Wodonga VIC, combined ~97,800; Murray River state border; Hume Highway/railway; Lake Hume; airport second busiest regional in NSW)
+    howItWorks:
+      "奥尔伯里是新南威尔士墨累河畔的城市，由奥尔伯里市议会管辖，2021 年人口约 5.4 万；河对岸的沃东加属于维多利亚州，有自己的市议会，两城合成约 9.8 万人的一片城区，却分属两个州、两套法律、两个议会。市中心在河的北岸，休姆公路与铁路从这里过河，机场是新南威尔士第二繁忙的区域机场，休姆湖在东面，悉尼与墨尔本各在三百多公里外。初来的人最容易犯的错，是把奥尔伯里—沃东加当作一座城，而过一座桥就换了州，学校、警察与假期都不一样。",
     layout:
       "奥尔伯里市中心在墨累河北岸的平缓山坡上，迪恩街是主街，河边是诺瑞尔公园和墨累河步道；过河（休姆公路大桥）就是维多利亚州的沃东加。休姆湖大坝在城东约10公里，博内吉拉在湖边的沃东加一侧。拉瑟格伦的酒庄在西南约45公里，比奇沃思的淘金古镇在南面约40公里。机场在城东约4公里。",
     gettingAround:
@@ -732,6 +834,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dubbo: {
     identity:
       "达博（Dubbo）在新南威尔士州中部的麦夸里河畔，悉尼西北约390公里，人口约4.4万（2021年普查），是西部平原的服务中心。它最出名的是塔龙加西部平原动物园——1977年开放的开放式动物园，按大洲布局的大型围场里有犀牛、长颈鹿等濒危动物，可以骑自行车或开车游览；市中心的旧达博监狱是保存完整的殖民时期监狱。往东约50公里是惠灵顿溶洞。传统土地所有者是维拉朱里人（Wiradjuri），当地有四万年以上的人类活动证据。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Dubbo (Dubbo Regional Council; 43,516 2021; Orana; Macquarie River; Taronga Western Plains Zoo; three highways; rail 1881; Sydney 392 km; ~15.6% Aboriginal)
+    howItWorks:
+      "达博是新南威尔士奥拉纳地区最大的城市，由达博区域议会管辖，2021 年人口约 4.4 万，悉尼在东南 392 公里；议会管地方服务，其余归州政府。城市在麦夸里河边，三条国道在这里交叉，是通往西部的公路与铁路枢纽，塔龙加西部平原动物园在城郊，老监狱在市中心，约 16% 的居民是原住民，这里是维拉朱里人的土地。初来的人最容易犯的错，是把达博当作去动物园的过路站，而它是新南威尔士西部的医疗、商业与交通中心。",
     layout:
       "市中心在麦夸里河东岸，麦夸里街是主街，旧达博监狱就在街上；西部平原文化中心在城东。塔龙加西部平原动物园在城西南约5公里的欧比高速路旁。东面是大分水岭的丘陵，西面是达令盆地的平原；惠灵顿溶洞在东南约50公里，往西北约200公里是沃伦班戈国家公园的天文台和火山地貌。机场在城西北约4公里。",
     gettingAround:
@@ -746,6 +851,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tamworth: {
     identity:
       "塔姆沃思（Tamworth）在新南威尔士州东北部的皮尔河畔，悉尼以北约420公里，海拔约400米，人口约4.4万（2021年普查），是新南威尔士州第三大内陆城市。它是澳大利亚的乡村音乐之都：每年1月下旬的塔姆沃思乡村音乐节自1973年起举办，为期十天，是世界第二大乡村音乐节；12米高的“金吉他”是城市地标。1888年11月9日塔姆沃思成为澳大利亚第一个用市营电站供电点亮街灯的城镇，因此有“灯光第一城”之称。传统土地所有者是卡米拉罗伊人（Kamilaroi），英语里的“budgerigar”（虎皮鹦鹉）来自他们的语言。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Tamworth (Tamworth Regional Council; 43,874 2021; Peel River; Country Music Festival January, Golden Guitar; first electric street lights 1888; equine centre; Sydney ~420 km)
+    howItWorks:
+      "塔姆沃思是新南威尔士新英格兰地区的中心，由塔姆沃思区域议会管辖，2021 年人口约 4.4 万，悉尼在南面约 420 公里；议会管地方服务，其余归州政府。城市在皮尔河边，1888 年它是澳大利亚第一个用市政电站点亮路灯的镇，每年一月的乡村音乐节是世界第二大，金吉他是城市的标志，马术中心是南半球最大的，机场在城西。初来的人最容易犯的错，是把塔姆沃思当作只在音乐节那两周才存在的镇，而它一年到头都是这一带的行政与医疗中心。",
     layout:
       "市中心在皮尔河北岸，皮尔街是主街，河边是比克罗夫特公园；金吉他和乡村音乐名人堂在城南的新英格兰公路旁。市中心有电灯博物馆纪念1888年的街灯。周围是新英格兰高地的丘陵和马场（塔姆沃思是澳大利亚马业中心之一）。机场在城西约10公里。往北是新英格兰高原和阿米代尔，往东翻山是麦夸里港的海岸。",
     gettingAround:
@@ -760,6 +868,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cessnock: {
     identity:
       "塞斯诺克（Cessnock）在新南威尔士州猎人谷的下游，纽卡斯尔以西约52公里、悉尼以北约154公里，城区人口约2.3万（2021年普查，全市约6.4万）。它是猎人谷葡萄酒产区的中心镇——猎人谷是澳大利亚最早的葡萄酒产区之一，1820年代已有葡萄园，波科尔宾一带集中了一百多家酒庄，以赛美蓉和设拉子闻名。二十世纪初塞斯诺克曾是煤矿镇，如今以酒庄、热气球和猎人谷花园为主。传统土地所有者是沃纳鲁阿人（Wonnarua）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Cessnock (City of Cessnock LGA 63,632 2021, town 23,211; former coal town; Hunter Valley vineyards at Pokolbin ~15 km, ~1,800 ha; Newcastle 52 km; no passenger rail)
+    howItWorks:
+      "塞斯诺克是新南威尔士猎人谷的城市，由塞斯诺克市议会管辖，辖区 2021 年约 6.4 万人，镇本身约 2.3 万，纽卡斯尔在东面 52 公里；议会管地方服务，其余归州政府。镇子是 1903 至 1923 年间煤矿带起来的，市中心的街道仍是矿镇的格局；猎人谷的酒庄在西北约 15 公里的波高尔宾，是澳大利亚最老的葡萄酒产区，约 1,800 公顷葡萄园散在乡间。没有客运铁路，出行靠汽车。初来的人最容易犯的错，是在塞斯诺克镇上找酒庄，而酒庄在镇外的乡村，镇子本身是一座矿工的老镇。",
     layout:
       "塞斯诺克镇在猎人谷南缘的平地上，主街有老矿镇的建筑。酒庄集中在镇北和西北约10公里的波科尔宾、洛夫代尔、罗斯伯里、芒特维尤一带，猎人谷花园（大型观赏园林）在波科尔宾；布罗克和沃伦比在更西面的山谷里。北面是布罗肯巴克山脉，翻山可到猎人谷上游的辛格尔顿。纽卡斯尔机场在东面约53公里。",
     gettingAround:
@@ -774,6 +885,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   warrnambool: {
     identity:
       "瓦南布尔（Warrnambool）在维多利亚州西南海岸，是大洋路的西端城市（大洋路在城东约13公里的阿兰斯福德结束），人口约3.3万（2021年普查）。每年6–9月南露脊鲸带着幼鲸来到城边的洛根斯海滩育幼，从岸上的观景台就能看到；弗拉格斯塔夫山海事村复原了十九世纪的港口小镇，收藏沉船文物。城西的塔山是一座休眠火山，火山口里有野生动物保护区。传统土地所有者是贡迪杰马拉人（Gunditjmara）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Warrnambool (City of Warrnambool; 32,894 2021; western end of the Great Ocean Road; Logans Beach southern right whales late May–Aug; Flagstaff Hill; dairy; train to Melbourne ~3.5 h; Melbourne 265 km)
+    howItWorks:
+      "沃南布尔是维多利亚州西南海岸的城市，由沃南布尔市议会管辖，辖区很小，2021 年人口约 3.3 万，墨尔本在东面 265 公里，火车约三个半小时；议会管地方服务，其余归州政府。城市在大洋路的西端，市中心在海边的高地上，旗杆山海事博物馆保留着老灯塔与沉船的遗物，洛根斯海滩是南露脊鲸的育儿场，每年五月底到八月母鲸带着幼鲸在岸边逗留；乳业是这一带的经济。初来的人最容易犯的错，是把沃南布尔当作大洋路的一个观景点，而它是大洋路尽头一座有自己港口与产业的城市。",
     layout:
       "市中心在海边的台地上，利比格街是主街，弗拉格斯塔夫山海事村在市中心南侧俯瞰港湾；洛根斯海滩的观鲸台在城东约5公里的霍普金斯河口外。塔山火山口在城西约15公里，再往西约15公里是港湾小镇菲利港；往东走大洋路约80公里到十二使徒岩和坎贝尔港。霍普金斯瀑布在城北。机场在城西北约11公里，只做通用航空。",
     gettingAround:
@@ -788,6 +902,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bright: {
     identity:
       "布赖特（Bright）是维多利亚州东北部高山地区的小镇，在奥文斯河谷里，海拔约320米，墨尔本东北约320公里，人口约2600（2021年普查）。它以秋天的彩叶闻名——镇上和河谷里种满欧洲的落叶树，每年4–5月有秋色节；它也是维多利亚高山区的门户，往上是布法罗山国家公园、霍瑟姆山和福尔斯溪滑雪场，维多利亚州最高峰博贡山（1986米）在附近。95公里长的“墨累到山区”自行车道沿旧铁路经过这里。十九世纪这里是淘金地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bright (2,620 2021; Alpine Shire seat; Ovens Valley 319 m; Autumn Festival; gateway to Mount Buffalo/Hotham/Feathertop; Murray to Mountains Rail Trail; Melbourne ~310 km; no rail)
+    howItWorks:
+      "布莱特是维多利亚州东北阿尔卑斯山脚下的小镇，2021 年人口约 2,600，是阿尔卑斯郡议会的所在地，郡议会管地方服务，其余归州政府。镇子在欧文斯河谷的尽头，海拔 319 米，欧洲树种的秋色与每年的秋季节是它的名片，布法罗山、霍瑟姆山与羽顶山的雪场与步道都从这里上山，废弃的铁路改成了“墨累到山地”自行车道，墨尔本在西南约 310 公里，没有铁路。初来的人最容易犯的错，是以为布莱特在山上，而它在谷底，雪场在一小时车程外的山顶。",
     layout:
       "小镇沿奥文斯河展开，主街是加文街，河边是步道和游泳区，秋色最集中在河谷和镇中心的林荫道。布法罗山在镇西约30公里（高原、花岗岩巨石、瞭望台），霍瑟姆山滑雪场在东南约55公里，福尔斯溪在东面翻山约100公里；往南是哈里埃特维尔和费瑟托普山的登山口。自行车道向西经迈特尔福德、比奇沃思到旺加拉塔。",
     gettingAround:
@@ -802,6 +919,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bundaberg: {
     identity:
       "班达伯格（Bundaberg）在昆士兰州中部海岸的伯内特河畔，布里斯班以北约370公里，城区人口约7.4万（2021年普查）。它因甘蔗而兴起，1888年创立的班达伯格朗姆酒厂用糖蜜酿酒，是澳大利亚最知名的朗姆酒品牌，1960年起的班达伯格姜汁啤酒同样出自这里。海边的蒙雷波斯是南半球大陆最大的红海龟产卵地之一，11月至次年3月有海龟上岸产卵和孵化的夜间观察；从班达伯格出海可到大堡礁南端的马斯格雷夫夫人岛和埃利奥特夫人岛，因此它被称为“大堡礁南门户”。传统土地所有者包括塔里贝朗·邦达人（Taribelang Bunda）等。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bundaberg (Bundaberg Region; 73,747 urban 2021; Burnett River ~20 km inland; sugar/rum 1888; Bargara beach 13 km; Mon Repos turtles; reef gateway to Lady Elliot/Musgrave; airport; backpacker farm work)
+    howItWorks:
+      "班达伯格是昆士兰的第九大城市，由班达伯格区域议会管辖，2021 年城区人口约 7.4 万；议会管地方服务，其余归州政府。城市在伯内特河的两岸，离海岸约 20 公里，甘蔗田围着市区，1888 年起的班达伯格朗姆酒厂是它的名片，海边的巴加拉在东面 13 公里，蒙雷波斯的海龟在十一月到三月上岸产卵，伊丽特女士岛的航班让它自称大堡礁的南门，机场在城南，背包客来这里做农活换签证。初来的人最容易犯的错，是以为班达伯格在海边，而市区在内陆的河边，海滩要再开 15 分钟。",
     layout:
       "市中心在伯内特河南岸，河口在东面约20公里的伯内特角。朗姆酒厂在市区东侧的河边，姜汁啤酒厂在城南。蒙雷波斯海龟保护区在城东北约15公里的海边；巴加拉是城东的海滨度假区，有海滩和珊瑚礁浮潜；埃利奥特夫人岛坐小飞机从班达伯格约30分钟，马斯格雷夫夫人岛从1770镇或班达伯格坐船。周围是甘蔗田。机场在城西南约5公里。",
     gettingAround:
@@ -816,6 +936,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hervey-bay": {
     identity:
       "赫维湾（Hervey Bay）在昆士兰州弗雷泽海岸，布里斯班以北约290公里，人口约5.8万（2021年普查）。它是澳大利亚最著名的观鲸地——每年7–11月座头鲸在南下途中进入这片平静的海湾停留，2019年它被世界鲸类联盟评为全球第一个“鲸鱼遗产地”。海湾外的卡丽（K'gari，即弗雷泽岛）是世界最大的沙岛，1992年列入世界遗产，从赫维湾南面的河头码头坐渡轮上岛。乌兰甘码头伸入海中近900米，是小城的地标。传统土地所有者是巴查拉人（Butchulla）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Hervey Bay (57,722 2021; Fraser Coast Region formed 2008; string of suburbs along the Esplanade — Pialba, Torquay, Scarness, Urangan; whales Jul–Oct; K'gari ferries from River Heads; Whale Heritage Site 2019; airport)
+    howItWorks:
+      "赫维湾是昆士兰弗雷泽海岸的城市，2021 年人口约 5.8 万，属于 2008 年合并而成的弗雷泽海岸区域议会，议会管地方服务，其余归州政府。这座城没有传统的市中心：皮亚尔巴、托基、斯卡尼斯、乌兰甘这些原本各自独立的小镇沿滨海大道连成十几公里的一条带，乌兰甘码头是海边的坐标，去卡里岛（弗雷泽岛）的渡轮从南面的河口开出，七到十月的观鲸船让它 2019 年成为世界第一个“鲸鱼遗产地”，机场在城南，退休人口比例很高。初来的人最容易犯的错，是在赫维湾找市中心，而它是一串沿海的郊区，各有自己的商店街。",
     layout:
       "赫维湾是几个海滨社区连成的城镇，沿海湾南岸从皮亚尔巴到乌兰甘一线展开，海滨大道贯穿全程，海滩平缓无浪。乌兰甘码头和游艇港在东端，观鲸船从这里出发；机场就在乌兰甘旁。河头渡轮码头在城南约20公里，渡轮约50分钟到卡丽的金格斯海滩。卡丽岛上有七十五英里海滩、麦肯锡湖、雨林和沙丘。",
     gettingAround:
@@ -830,6 +953,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   geraldton: {
     identity:
       "杰拉尔顿（Geraldton）在西澳大利亚州中部海岸，珀斯以北约420公里，人口约3.9万（2021年普查），是珀斯以北最大的城市。它是岩龙虾捕捞和小麦出口港，也是风帆冲浪的胜地。城内斯科特山上的“悉尼号纪念碑”（2001年）纪念1941年沉没的澳大利亚巡洋舰“悉尼II号”，645只不锈钢海鸥代表阵亡官兵。海上约60公里的阿布罗霍斯群岛是1629年“巴达维亚号”沉船的地方；往北约100公里是粉红色的赫特潟湖，约160公里到卡尔巴里的峡谷海岸。传统土地所有者是雅马奇人（Yamatji）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Geraldton (City of Greater Geraldton; 38,595 urban 2021; port with 7 bulk berths; HMAS Sydney II Memorial; Abrolhos Islands 60 km; Batavia 1629; Point Moore lighthouse 1878; Perth 424 km; windsurfing)
+    howItWorks:
+      "杰拉尔顿是西澳中西部的港口城市，由大杰拉尔顿市议会管辖，2021 年城区人口约 3.9 万，珀斯在南面 424 公里；议会管地方服务，其余归州政府。城市围着港口生长，七个散货泊位运出铁矿、粮食与矿砂，市中心在港口边的海岸，悉尼号纪念碑在城东的山上，645 只不锈钢海鸥纪念 1941 年沉没的舰员；阿布罗霍斯群岛在海上 60 公里，1629 年巴达维亚号在那里沉没；春夏的风让它成为风帆与风筝冲浪的场地，机场在城东。初来的人最容易犯的错，是把杰拉尔顿当作去珀斯路上的一站，而它是中西部矿区与农区的出海口。",
     layout:
       "市中心在海边，海滨步道和港口在城北，圣方济各·沙勿略主教座堂（建筑师霍斯设计）在市中心，悉尼号纪念碑在城东的斯科特山顶。往南是海滩和风帆冲浪点，往北沿海岸走印度洋公路到卡尔巴里；赫特潟湖在格里高利港旁。阿布罗霍斯群岛坐飞机或船前往。机场在城东约11公里。",
     gettingAround:
@@ -844,6 +970,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   esperance: {
     identity:
       "埃斯佩兰斯（Esperance）在西澳大利亚州南海岸，珀斯东南约720公里，人口约1.4万（2021年普查）。它以澳大利亚最白的沙滩和碧绿的海水著称：东面约50公里的勒格朗角国家公园里，幸运湾的沙滩上常有袋鼠晒太阳；海湾外散布着雷谢什群岛的一百多座岛屿；城西的大洋公路一圈40公里串起一串海滩和悬崖。1979年美国天空实验室的残骸落在这一带。传统土地所有者是努恩加人中的伍贾里人（Wudjari），传统地名Kepa Kurl意为“水像回旋镖一样躺着的地方”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Esperance (Shire of Esperance ~42,000 km²; 13,883 2021; deep port; Twilight Beach; Cape Le Grand NP ~60 km; Recherche Archipelago; Skylab 1979; Perth 720 km; airport)
+    howItWorks:
+      "埃斯佩兰斯是西澳南海岸的小镇，由埃斯佩兰斯郡议会管辖，辖区约 4.2 万平方公里，2021 年人口约 1.4 万，珀斯在西北 720 公里；郡议会管地方服务，其余归州政府。镇子在埃斯佩兰斯湾边，港口是南澳大利亚海岸最深的之一，粮食与矿产从这里出海，黄昏海滩沿着镇西的海岸公路排开，勒格朗角国家公园与幸运湾的袋鼠在东面约 60 公里，勒谢尔什群岛在海上，1979 年天空实验室的碎片落在镇外；机场在镇北。初来的人最容易犯的错，是以为幸运湾就在镇边，而它在一小时车程外的国家公园里。",
     layout:
       "小镇在埃斯佩兰斯湾西岸，海滨步道和码头在镇中心，镇外西面是大洋公路环线（双人湾、蓝天湾、观景台），粉湖（如今很少呈粉色）在镇西。勒格朗角国家公园在东面约50公里（幸运湾、地狱湾、法国人峰）；再往东是阿里德角。雷谢什群岛在湾外，有观光船。机场在镇西北约20公里的吉布森。",
     gettingAround:
@@ -858,6 +987,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tanunda: {
     identity:
       "塔南达（Tanunda）是南澳大利亚州巴罗萨谷的中心小镇，阿德莱德东北约70公里，人口约4700（2021年普查）。巴罗萨谷是澳大利亚最著名的葡萄酒产区之一：1840年代普鲁士移民在这里建立了贝萨尼、朗迈尔等村庄，德国的路德宗教堂、烘焙和熏肉传统延续至今；塔南达的火鸡坪酒庄有1847年种下的设拉子老藤，被认为是世界上仍在商业生产的最古老葡萄园之一，塞佩尔特菲尔德、奔富、杰卡斯等名庄都在山谷里。塔南达铜管乐团是南半球最古老的铜管乐团之一。传统土地所有者是佩拉曼克人（Peramangk）和恩加朱里人（Ngadjuri）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Tanunda (4,710 2021; The Barossa Council, seat Nuriootpa; Barossa Valley; Prussian/Silesian Lutheran settlement 1840s; Turkey Flat Shiraz 1847; Adelaide ~66 km; no rail)
+    howItWorks:
+      "塔努恩达是南澳巴罗萨谷的小镇，2021 年人口约 4,700，属于巴罗萨议会，议会所在地在北面几公里的努里乌特帕；议会管地方服务，其余归州政府。镇子在谷底的主街两侧，1840 年代普鲁士与西里西亚的路德宗移民建起了周围的村庄，男声合唱团与铜管乐队至今还在，1847 年种下的西拉葡萄藤据信是世界上最老的仍在商业生产的葡萄园，杰卡斯、赛佩尔特斯菲尔德的酒庄散在谷里，阿德莱德在西南约 66 公里，没有铁路。初来的人最容易犯的错，是把塔努恩达当作巴罗萨的首府，而议会在努里乌特帕，酒庄在谷里各处。",
     layout:
       "塔南达在巴罗萨谷的中部，主街是默雷街，镇上有德式教堂和老店。往北约7公里是努里乌特帕（奔富等大型酒庄），往西北约10公里是塞佩尔特菲尔德（棕榈大道和百年酒庄），往南约8公里是罗兰弗拉特（杰卡斯）和莱恩多克；曼格尔山观景台在镇东。伊甸谷在东面的山上，以雷司令出名。阿德莱德机场在西南约70公里。",
     gettingAround:
@@ -872,6 +1004,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   strahan: {
     identity:
       "斯特拉恩（Strahan）是塔斯马尼亚州西海岸麦夸里港畔的小渔村，人口只有约630（2021年普查），却是进入塔斯马尼亚荒野世界遗产区的门户。游船从这里穿过港口出海口“地狱之门”，沿戈登河深入富兰克林—戈登野河国家公园的温带雨林；港内的萨拉岛是1822年至1833年间澳大利亚殖民地最严酷的流放地之一。西海岸荒野铁路从斯特拉恩沿旧矿山铁路通往昆士敦。传统土地所有者是塔斯马尼亚原住民（palawa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Strahan (634 2021; West Coast Council, seat Queenstown; Macquarie Harbour; Gordon River cruises into the Tasmanian Wilderness WHA; Sarah Island; West Coast Wilderness Railway; Hobart ~302 km)
+    howItWorks:
+      "斯特拉恩是塔斯马尼亚西海岸的一个小村，2021 年人口约 630，属于西海岸议会，议会所在地在内陆 40 公里的昆士敦；议会管地方服务，其余归州政府。村子在麦夸里港的岸边，19 世纪是休恩松木材与矿产的出港口，如今靠旅游：戈登河的游船从这里驶进塔斯马尼亚荒野世界遗产区，萨拉岛的流放地遗址在港湾里，西海岸荒野铁路通往昆士敦，霍巴特在东南约 300 公里。初来的人最容易犯的错，是把斯特拉恩当作一座镇，而它是一个几百人的码头村，医院、加油站与议会都在昆士敦。",
     layout:
       "小村在麦夸里港北端的斯特拉恩港湾边，码头、老海关和店铺沿海滨一条街排开，游船和铁路都从这里出发（铁路车站在里加塔角）。麦夸里港向西南延伸约30公里，出海口地狱之门在西面；戈登河从港口南端汇入；萨拉岛在港口南部。西面海岸是大洋海滩和亨蒂沙丘。昆士敦在东北约40公里的山里，霍巴特在东南约300公里。",
     gettingAround:
@@ -1064,6 +1199,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   guilin: {
     identity:
       "桂林在广西东北部，是以喀斯特山水闻名的旅游城市，市区人口约130万。漓江两岸拔地而起的石灰岩峰丛，是中国最具代表性的自然景观之一。城市本身不大，功能主要围绕旅游。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 桂林市（地级市；6区1县级市8县2自治县；27,667 km²；2020 普查 493 万；阳朔/龙胜/兴安分属各县；两江机场在临桂）
+    howItWorks:
+      "桂林是广西的地级市，市域约 2.8 万平方公里，2020 年人口约 493 万，下辖 17 个区县，市政府 2013 年后迁到临桂区。老城在漓江与桃花江之间，象山一带是市中心。初来的人最容易犯的错，是把“桂林山水”当作市区的风景，而漓江精华段在阳朔县，龙脊梯田在龙胜县，灵渠在兴安县，都在几十公里之外。",
     layout:
       "桂林城区跨漓江两岸，被一座座孤峰点缀，市中心紧凑、步行可达。最经典的漓江风光在桂林到阳朔之间约80公里的江段；阳朔是一座更小的旅游县城，田园和峰林更集中，很多人以阳朔作为住宿基地。龙脊梯田在桂林以北的山区。",
     gettingAround:
@@ -1097,6 +1235,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sanya: {
     identity:
       "三亚在海南岛最南端，是中国主要的热带海滨度假城市，常住人口约100万，冬季游客大量涌入。它的卖点是全年温暖的气候、海湾沙滩和度假酒店群，城市功能几乎完全围绕旅游和度假。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 三亚市（海南省地级市；4 区；1,920 km²；2020 普查 103 万，黎族 23.65%；各湾分属吉阳/海棠/天涯/崖州区）
+    howItWorks:
+      "三亚是海南省的地级市，市域约 1,920 平方公里，下辖吉阳、天涯、海棠、崖州四个区，2020 年人口约 103 万，黎族约占四分之一。市中心在三亚河与大东海一带，属吉阳区；亚龙湾在吉阳区，海棠湾在海棠区，天涯海角与南山在天涯区、崖州区，各湾之间相隔二三十公里。初来的人最容易犯的错，是把三亚当作一片连着的海滩，而它是一串被山隔开的海湾，住在哪个湾就困在哪个湾。",
     layout:
       "三亚市区在三亚河口，两侧是几个各有性格的海湾：大东海离市区近、方便；亚龙湾在东侧约25公里，沙质好、以高端度假村为主；海棠湾更东，是新的酒店和免税购物区；西侧的天涯海角、南山一带则偏观光。市区背后是低矮的热带丘陵。",
     gettingAround:
@@ -1166,6 +1307,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhangjiajie: {
     identity:
       "张家界在湖南西北部，因为武陵源的石英砂岩峰林而成为热门自然旅游地。市区本身不大，功能几乎完全服务于景区。这里的地貌是一根根拔地而起、顶上长树的石柱，在云雾里若隐若现。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 张家界市（湖南地级市；永定区、武陵源区、慈利县、桑植县；9,534 km²；2020 普查 151.7 万；天门山在永定区；荷花机场约 30 km）
+    howItWorks:
+      "张家界是湖南的地级市，下辖永定、武陵源两区和慈利、桑植两县，市域约 9,500 平方公里，2020 年人口约 152 万。市政府在永定区，市区的地标是南面的天门山；砂岩峰林集中在武陵源区，与市区相邻但另有一套管理与门票。初来的人最容易犯的错，是把“张家界”当作一个景区，而它是一座市，森林公园在武陵源，天门山在市区，两者相隔约 30 公里。",
     layout:
       "要分清几个地名：张家界市区（有机场和高铁站）；武陵源区（多数峰林景区的入口和住宿集中地，离市区约30公里）；核心景区包括张家界国家森林公园（袁家界、金鞭溪、天子山等）和杨家界。天门山则紧挨市区、单独一座。城市和景区都在山地里，海拔和地形起伏大。",
     gettingAround:
@@ -1181,6 +1325,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lijiang: {
     identity:
       "丽江古城的水系里藏着纳西先民的智慧——玉龙雪山脚下的黑龙潭泉群水引入城中后，沿街分成一张网状水系流到家家户户门前；取水点常见“三眼井”，泉眼由高到低分三级，上池饮用、中池洗菜、下池洗衣，全靠地势落差自然分隔，不用管理也不会互相污染。丽江在云南西北部，以纳西族的古城和玉龙雪山闻名，是滇西北旅游的枢纽之一，海拔约2400米，多数人适应良好，古城是世界文化遗产，也是商业化程度很高的旅游区，白天安静、夜里热闹。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 丽江市（云南地级市；古城区 + 玉龙/永胜/华坪/宁蒗 4 县；20,555 km²；2020 普查 125 万，古城区 28.9 万；古城世界遗产 1997；三义机场）
+    howItWorks:
+      "丽江是云南的地级市，市域约 2 万平方公里，2020 年人口约 125 万，下辖古城区和玉龙、永胜、华坪、宁蒗四县，少数民族过半，纳西族是主体。人们心中的丽江只是古城区：大研古城 1997 年列入世界遗产，束河、白沙在城北，玉龙雪山在玉龙县，泸沽湖在宁蒗县，离市区两百多公里。初来的人最容易犯的错，是把古城当作丽江的全部，而市域的大半是山地与彝族、傈僳族的县份。",
     layout:
       "丽江坝子是横断山区里一块相对平坦的高原盆地。大研古城（一般说的“丽江古城”）在坝子中心，束河古镇在西北、更安静，白沙古镇更小、离玉龙雪山最近。玉龙雪山在城北约25公里，是纳西族的圣山。往北是虎跳峡、香格里拉方向，往南是大理。",
     gettingAround:
@@ -1196,6 +1343,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dunhuang: {
     identity:
       "敦煌在甘肃最西端、河西走廊的尽头，是古丝绸之路上的重镇，因为莫高窟的壁画和塑像而闻名于世。这是一座沙漠绿洲小城，常住人口约十几万，靠党河的水维持，四周是戈壁和沙漠。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 敦煌市（酒泉市代管县级市；26,718 km²；2020 普查 18.5 万；莫高窟 25 km；敦煌机场；敦煌站）
+    howItWorks:
+      "敦煌是甘肃酒泉市代管的县级市，市域约 2.7 万平方公里，2020 年人口约 18.5 万，几乎全部住在党河冲出的一片绿洲上，四周是沙漠与戈壁。市区在绿洲中心，鸣沙山月牙泉在城南五公里，莫高窟在东南约 25 公里，玉门关、阳关在西面七八十公里外。初来的人最容易犯的错，是以为敦煌是一座沙漠里的小镇，而它是一片有机场、有火车站的绿洲城市，只是市域的绝大部分无人居住。",
     layout:
       "敦煌城区是绿洲的中心，紧凑、步行可达。莫高窟在城东南约25公里的砾石戈壁边缘；鸣沙山和月牙泉紧挨城南；玉门关、汉长城遗址和雅丹地貌（“魔鬼城”）在城西约80–180公里的戈壁里，需要大半天到一天。城市之外几乎全是荒漠。",
     gettingAround:
@@ -1316,6 +1466,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   naha: {
     identity:
       "那霸是冲绳县的首府，也是南西诸岛这片亚热带岛屿地区的中心城市，人口约31万。它是进出冲绳的门户，本身以国际通商业街、市场和二战、琉球王国时期的历史遗迹为主，海滩多在周边和离岛。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Naha (Okinawa capital; ~40 km²; ~313,000 2025; Kokusai-dori 1.6 km; Shuri Castle UNESCO 2000, burned 2019; Yui Rail monorail only rail in prefecture; Tomari wharf to Kerama; airport; Okinawa Island ~100 km long; bases mostly outside Naha)
+    howItWorks:
+      "那霸是冲绳县的县厅所在地，一座核心市，市域只有约 40 平方公里，2025 年人口约 31 万；市政府管地方服务，警察与学校归县，冲绳的美军基地大多在那霸以外的宜野湾、嘉手纳。市中心在国际通一带，1.6 公里的商店街是它的主轴，首里城在东面的高地上，2000 年列入世界遗产，2019 年正殿烧毁后重建，机场在市区西南角，单轨电车“Yui Rail”从机场穿过市区到首里，是全县唯一的轨道交通，泊港的船开往庆良间群岛。初来的人最容易犯的错，是把那霸当作冲绳，而冲绳本岛南北长约 100 公里，没有车几乎哪里都去不了。",
     layout:
       "那霸在冲绳本岛南部、面向东海。市中心是国际通及其周边的商店街和市场（第一牧志公设市场），首里城公园在城市东侧的高地上（2019年火灾后正殿等在复原中）。港口连接周边离岛，机场在市区西南。",
     gettingAround:
@@ -1655,6 +1808,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sendai: {
     identity:
       "仙台是日本东北地方最大的城市，宫城县首府，都会区约150万人。它三面环山、面向太平洋，市中心绿树成荫，被称为“杜之都”，也是进入松岛、山寺、鸣子温泉和东北其它地方的枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sendai (designated city 1989, 5 wards; 786 km²; ~1.1 million; Miyagi capital, largest in Tōhoku; Date Masamune 1600; zelkova avenues; Tanabata August; subway 2 lines; Shinkansen ~1.5 h; airport at Natori with rail 2007; Matsushima ~25 km; 2011 tsunami hit coast)
+    howItWorks:
+      "仙台是宫城县的县厅所在地，东北地方最大的城市，1989 年起是政令指定都市，市下分 5 个区，市域约 786 平方公里，人口约 110 万；区是市的派出机构，市政府管地方服务，警察与学校归县。伊达政宗 1600 年在青叶山筑城，城市从城下町长出来，定禅寺通与青叶通的榉树让它被叫作“杜之都”，八月的七夕祭是日本最大的，两条地铁线穿过市中心，新干线到东京约一个半小时，机场在南面的名取市，2007 年通了铁路；松岛在东北约 25 公里，2011 年的海啸淹没了东面若林区的海岸。初来的人最容易犯的错，是把仙台当作一座工业城，而它是一座以大学与商业为主、从山到海的百万人城市。",
     layout:
       "仙台建在广濑川切出的河谷平原上，背靠奥羽山脉、面向仙台平原和太平洋。市中心在仙台站以西，青叶城（仙台城）遗址在城西的高台上。往东北沿海到松岛湾，往西南进山到作并、秋保温泉，往北到鸣子。2011年的地震和海啸对沿海一带影响很大，部分区域重建后设有纪念设施。",
     gettingAround:
@@ -1706,6 +1862,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kanazawa: {
     identity:
       "金泽是石川县首府，日本海一侧、加贺地区的中心城市，市区人口约45万。它在江户时代是加贺藩的城下町，长期富庶、重视工艺（金箔、漆器、加贺友禅、九谷烧），战争中受损小，保留了大片老街区和一座名园，被称为“小京都”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kanazawa (core city; ~469 km²; ~466,000; Ishikawa capital; Maeda/Kaga domain; Kenroku-en; Higashi Chaya/Nagamachi; gold leaf 99% of Japan; Hokuriku Shinkansen 2015 ~2.5 h Tokyo; Komatsu airport ~30 km; buses, no subway)
+    howItWorks:
+      "金泽是石川县的县厅所在地，一座核心市，市域约 469 平方公里，人口约 47 万；市政府管地方服务，警察与学校归县。江户时代前田家的加贺藩以这里为城下町，武家、町人与寺町的分区至今保留：兼六园与金泽城在市中心的高地上，东茶屋街在浅野川对岸，长町的武家屋敷在犀川一侧，近江町市场在两者之间，日本九成以上的金箔产自这里；北陆新干线 2015 年通车，到东京约两个半小时，小松机场在西南约 30 公里，市内没有轨道交通，靠公交。初来的人最容易犯的错，是把金泽当作京都的缩小版，而它是一座没有经历过空袭、城下町格局完整的北陆首府。",
     layout:
       "金泽建在犀川和浅野川之间的丘陵和平地上。中心是金泽城和兼六园一带，往北过浅野川是东茶屋街（老艺伎街区），往西南过犀川是西茶屋街和寺町的寺院群，长町还留着武家宅邸的土墙。金泽站是新的门户，有一座木造大鼓门。",
     gettingAround:
@@ -1721,6 +1880,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nara: {
     identity:
       "奈良是奈良县首府，京都以南约40公里，是公元8世纪日本的都城（平城京），比京都更早。市区不大，几座规模宏大的古寺、神社和一大片有野生鹿出没的公园集中在一起，是感受奈良时代和早期佛教艺术的地方。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nara (core city; ~277 km²; ~367,000 2022; Nara Prefecture capital; capital of Japan 710–784; Nara Park deer; Tōdai-ji/Kōfuku-ji/Kasuga UNESCO 1998; Kintetsu Nara near park vs JR Nara; Kyoto 45 min/Osaka 40 min; Hōryū-ji in Ikaruga)
+    howItWorks:
+      "奈良市是奈良县的县厅所在地，一座核心市，市域约 277 平方公里，2022 年人口约 37 万；市政府管地方服务，警察与学校归县。710 至 784 年这里是日本的都城平城京，宫殿遗址在城西的田野里，东大寺、兴福寺、春日大社在城东的奈良公园里，约 1,200 头鹿在公园里游走，1998 年这一组古迹列入世界遗产；近铁奈良站就在公园边，JR 奈良站在西面 1 公里，京都约 45 分钟，大阪约 40 分钟，大多数人当天往返。初来的人最容易犯的错，一是把奈良市与奈良县混为一谈，二是以为法隆寺在奈良市，而它在西南 12 公里的斑鸠町。",
     layout:
       "奈良的核心是奈良公园——一大片草地和林地，东大寺、春日大社、兴福寺、国立博物馆和几百头野生鹿都在里面，从近铁奈良站步行可达。往西的郊外是平城宫迹和唐招提寺、药师寺（西之京）；再往西南是法隆寺（斑鸠）。市区其余部分是安静的住宅区。",
     gettingAround:
@@ -1754,6 +1916,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   takamatsu: {
     identity:
       "高松是香川县首府，四国北岸、濑户内海边的城市，市区人口约42万。它是四国的海上门户，以栗林公园、讃岐乌冬和濑户内海的岛屿（直岛、丰岛的当代艺术）为人所知。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Takamatsu (core city 1999; ~375 km²; ~414,000 2022; Kagawa capital, smallest prefecture; Sunport; Ritsurin Garden; castle with seawater moat; Kotoden; ferries to Naoshima/Shodoshima; Seto Ohashi from Sakaide; udon; Yashima)
+    howItWorks:
+      "高松是香川县的县厅所在地，日本面积最小的县的首府，一座核心市，市域约 375 平方公里，2022 年人口约 41 万，是四国最大的市镇；市政府管地方服务，警察与学校归县。城市面朝濑户内海围成一个半圆，高松港与阳光港是它的门面，高松城的护城河引的是海水，栗林公园在城南，琴电的小火车穿过市区，屋岛在城东；渡轮从港口开往直岛、丰岛与小豆岛，濑户大桥从西面 20 公里的坂出跨海通往本州，讃岐乌冬是日常。初来的人最容易犯的错，是把直岛当作高松的一部分，而它是另一个町，高松只是去岛上的码头。",
     layout:
       "高松建在濑户内海边的狭长平地上，背后是象征高松的“御盆山”屋岛。中心在高松站和丸龟町商店街一带，栗林公园在城南。高松港有开往直岛、小豆岛、女木岛等的渡轮。往西是丸龟、琴平（金刀比罗宫），往东是德岛。",
     gettingAround:
@@ -1769,6 +1934,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nagasaki: {
     identity:
       "长崎是长崎县首府，九州西端、面向东海的港口城市，市区人口约40万。它在江户时代是日本唯一对外（荷兰、中国）开放的口岸，留下出岛、唐人屋敷和大片依山而建的西式、中式建筑；1945年8月遭原子弹轰炸，也建有和平纪念设施。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nagasaki (core city; ~406 km²; ~392,000 2024; prefecture capital; hillside harbour; trams; Urakami atomic bombing 1945; Dejima; Glover Garden; Oura church UNESCO 2018; Gunkanjima boats; Nishi-Kyushu Shinkansen 2022; Ōmura airport ~40 km)
+    howItWorks:
+      "长崎是长崎县的县厅所在地，一座核心市，市域约 406 平方公里，2024 年人口约 39 万；市政府管地方服务，警察与学校归县。城市沿一个狭长的港湾爬上两侧的山坡，有轨电车沿港湾底部的平地行驶，市中心在港口的东岸，出岛、唐人街与哥拉巴园在南面，1945 年原子弹在北面的浦上上空爆炸，和平公园在那里，大浦天主堂 2018 年作为潜伏基督徒遗产列入世界遗产，军舰岛的船从港口出发，稻佐山在港湾西侧；西九州新干线 2022 年通车，机场在东北约 40 公里的大村。初来的人最容易犯的错，是把长崎当作一座平坦的港口城，而它的住宅爬满山坡，出门就是台阶。",
     layout:
       "长崎是典型的港湾城市，市区沿一个深入内陆的海湾两岸的山坡展开，房子层层叠叠、坡道和石阶很多。中心在长崎站到浜町商店街一带，出岛在其南，哥拉巴园和大浦天主堂在海湾东岸的南山手，稻佐山在西岸。往北是原爆落下中心与和平公园。",
     gettingAround:
@@ -1802,6 +1970,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   himeji: {
     identity:
       "姬路在兵库县西部的播磨平原上，人口约51.8万（2025年），以姬路城闻名——这座1609年建成的天守是日本现存最完整、规模最大的城堡建筑群，1993年列入世界遗产（日本首批），因白色灰泥外墙被称为“白鹭城”。二战空袭烧毁了市区大半，城堡却完好保存。城堡旁的好古园是复原的大名庭园，城西北的书写山圆教寺是有千年历史的天台宗寺院，也是电影《最后的武士》的取景地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Himeji (core city; ~534 km²; ~518,000; Hyōgo Prefecture, capital Kobe; castle UNESCO 1993 ~1 km from station; Kōko-en; Engyō-ji on Mount Shosha; Shinkansen ~1 h Osaka/Kyoto; no airport; industrial coast)
+    howItWorks:
+      "姬路是兵库县的一座核心市，不是县厅所在地——县厅在神户——市域约 534 平方公里，人口约 52 万，是播磨地区的中心；市政府管地方服务，警察与学校归县。姬路城在车站正北 1 公里的大道尽头，1993 年列入世界遗产，是日本保存最完整的城堡，好古园在城边，书写山的圆教寺在城西北的山上；新干线到大阪、京都约一小时，没有机场，用神户或关西，南面的海岸是钢铁与化工的工业带，家岛群岛也在市域内。初来的人最容易犯的错，是把姬路当作一座只有城堡的小镇，而它是一座 50 万人的工业与商业城市，城堡只是车站北面的一角。",
     layout:
       "姬路城在市区正北，从 JR 姬路站出来沿大手前通向北走约1公里就到城堡，这条大道两侧是商店街和市中心。好古园在城堡西侧，姬路市立美术馆在城东。书写山在市区西北约8公里，坐巴士到山下再乘缆车上山。海边的姬路港有去家岛群岛和小豆岛的船。神户在东面约55公里，冈山在西面约90公里。",
     gettingAround:
@@ -1816,6 +1987,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   takayama: {
     identity:
       "高山在岐阜县北部的飞驒山地里，人口约8.2万（2025年），面积2178平方公里，是日本面积最大的市。江户时代它是幕府直辖的飞驒地区中心，三町老街保留着成片的江户商家町屋，高山阵屋是日本唯一现存的幕府直辖地代官所。春秋两季的高山祭（4月14–15日山王祭、10月9–10日八幡祭）以精美的屋台（彩车）闻名，被视为日本最美的祭典之一。它也是世界遗产白川乡合掌村的门户，飞驒牛是本地名物，年降雪超过3米。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Takayama (city ~2,178 km², largest in Japan by area after 2005 merger; ~82,000 2025; ~570 m; Hotaka 3,190 m within city; Sanmachi; festivals Apr/Oct; Hida beef; JR Takayama Line ~2.5 h Nagoya; Shirakawa-go bus ~50 min; snow ~5 m/yr; no airport)
+    howItWorks:
+      "高山是岐阜县的一座市，2005 年合并周围的町村后，市域约 2,178 平方公里，是日本面积最大的市，比东京都还大，人口却只有约 8 万；市政府管地方服务，警察与学校归县。市区在海拔约 570 米的盆地里，三町的老街与朝市是它的中心，春秋两次的高山祭是它的节日，飞驒牛是它的味道；市域向东一直伸进北阿尔卑斯，3,190 米的奥穗高岳、上高地与乘鞍岳都在高山市内，白川乡在西北，公交约 50 分钟，JR 高山本线到名古屋约两个半小时，没有机场，冬天的积雪超过 5 米。初来的人最容易犯的错，是把高山当作一座老街小镇，而它的市域是一整片山地，老街只是盆地里的几条街。",
     layout:
       "高山市区在宫川两岸的小盆地里，JR 高山站在西侧，过宫川就是三町老街和高山阵屋，宫川沿岸每天早上有朝市，阵屋前也有一处。樱山八幡宫（高山祭屋台会馆）在市区北面，飞驒之里在西南的山坡上。白川乡在西北约50公里，奥飞驒温泉乡和新穗高缆车在东面约50公里的北阿尔卑斯山麓，下吕温泉在南面约50公里。",
     gettingAround:
@@ -1830,6 +2004,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   matsumoto: {
     identity:
       "松本在长野县中部的松本盆地里，海拔约610米，人口约23.6万（2025年），是日本阿尔卑斯的门户。松本城建于十六世纪末，是日本仅有的五座国宝天守之一，黑色外墙被称为“乌城”；1876年建成的旧开智学校是日本最早的近代小学之一，也是国宝。上高地——北阿尔卑斯山麓的高原河谷——从松本坐车约1.5小时；艺术家草间弥生出生于此，松本市美术馆有她的常设展。中町通的仓造老街、安昙野的大王山葵农场是常去的地方。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matsumoto (core city 2021; ~978 km²; ~236,000; Nagano Prefecture second city; castle national treasure; ~590 m; Kamikōchi gateway; Shinshu University; Suzuki Method; Azusa ~2.5 h Shinjuku; airport; Nagano city 75 km north)
+    howItWorks:
+      "松本是长野县的第二大城市，2021 年起是核心市，市域约 978 平方公里，人口约 24 万，县厅在北面 75 公里的长野市；市政府管地方服务，警察与学校归县。城市在海拔约 590 米的松本盆地里，松本城的黑色天守是国宝，中町与绳手通的老街在城南，信州大学在城里，铃木镇一的音乐教学法从这里传出；上高地与乘鞍的巴士从新岛岛出发，美原高原在东面，“梓”号特急到新宿约两个半小时，机场在城西南。初来的人最容易犯的错，是把松本当作长野的郊县，而它是一座有自己城堡、大学与机场的独立城市，通往阿尔卑斯的门在这里而不在长野。",
     layout:
       "松本市区在女鸟羽川两岸，JR 松本站在西侧，向东步行约15分钟到松本城；中町通和绳手通在城与车站之间的河边，松本市美术馆在市区东南。旧开智学校在城北。安昙野（大王山葵农场）在北面约15公里；上高地在西面的山里，从松本坐电车到新岛岛再转巴士；美原高原在东面的山上，乘鞍高原、白骨温泉在西南。松本机场在市区西南约9公里。",
     gettingAround:
@@ -1844,6 +2021,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hakodate: {
     identity:
       "函馆在北海道最南端的渡岛半岛上，人口约24万（2024年），是1854年《日美和亲条约》后最早对外开港的日本港口之一（1859年正式开港）。元町坡道上的教堂、领事馆和洋馆，金森红砖仓库，以及1864年建成的西洋式星形要塞五棱郭，都是开港时代的遗产。海拔334米的函馆山夜景是日本最著名的夜景之一。函馆朝市以海鲜（乌贼、海胆、螃蟹）出名，2016年北海道新干线开通到新函馆北斗站。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hakodate (core city; ~678 km²; ~240,000; Hokkaido, Oshima subprefecture; Mount Hakodate night view; Motomachi churches; red brick warehouses; morning market; trams; Goryōkaku; open port 1859; Shinkansen at Shin-Hakodate-Hokuto ~18 km 2016; airport; ferry to Aomori)
+    howItWorks:
+      "函馆是北海道南端的核心市，渡岛振兴局的所在地，市域约 678 平方公里，人口约 24 万；市政府管地方服务，警察与学校归道。城市建在连接函馆山与大陆的一条沙洲上，1859 年作为最早的开港地之一开放，元町的教堂与坡道、红砖仓库群在山脚的西侧，朝市在车站旁，五棱郭的星形城郭在北面，有轨电车沿沙洲把它们连起来，函馆山的夜景在西端；北海道新干线 2016 年通车，但车站在北面约 18 公里的新函馆北斗，机场在东面，渡轮通往青森。初来的人最容易犯的错，是以为新干线直达函馆市区，而下车还要换乘 20 分钟的接驳列车。",
     layout:
       "函馆市区在一条连接函馆山与陆地的沙洲上，两侧都是海：JR 函馆站和朝市在沙洲中部，往西南是元町和金森仓库（海湾区），再往前是函馆山；五棱郭在市区东北约4公里，汤川温泉在东面的海边，机场在汤川再往东。新函馆北斗站在市区北面约20公里。大沼国定公园在北面约30公里，特拉皮斯汀修道院在城东。",
     gettingAround:
@@ -1858,6 +2038,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kumamoto: {
     identity:
       "熊本是熊本县县厅所在地，在九州中部的熊本平原上，人口约73.8万（2025年）。1607年由加藤清正建成的熊本城是日本三大名城之一，以陡峭的“武者返”石垣闻名；2016年4月14日和16日的两次强震（最大7.1级）严重损坏城堡，天守于2021年修复重开，石垣和其他建筑的复原仍在进行。水前寺成趣园是江户时代细川家的回游式庭园，阿苏山——世界最大级的破火山口之一——在城东约40公里，熊本熊（Kumamon）是县的吉祥物。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kumamoto (designated city 2012, 5 wards; ~390 km²; ~738,000 2025; prefecture capital; castle damaged 2016 earthquake, under restoration; Suizenji; trams; Shimotori/Kamitori arcades; groundwater city; Aso ~40 km; Kyushu Shinkansen; airport ~20 km; TSMC at Kikuyō 2024)
+    howItWorks:
+      "熊本是熊本县的县厅所在地，2012 年起是政令指定都市，市下分 5 个区，市域约 390 平方公里，2025 年人口约 74 万；区是市的派出机构，市政府管地方服务，警察与学校归县。熊本城在市中心的高地上，2016 年地震损毁后仍在修复，下通与上通的拱廊街在城南是商业中心，水前寺成趣园在城东，有轨电车穿过市区，全市的自来水都来自地下水；阿苏山在东面约 40 公里，九州新干线的熊本站在城西，机场在东面约 20 公里，台积电的工厂 2024 年在东郊的菊阳町投产。初来的人最容易犯的错，是把熊本当作去阿苏的过路站，而它是一座 74 万人的县厅城市，城堡与拱廊街是它自己的中心。",
     layout:
       "熊本城在市中心北侧的高地上，城下的樱之马场城彩苑是餐饮和特产区，通町筋、下通商店街在城堡南面是市中心，路面电车贯穿。水前寺成趣园在市区东南约3公里的电车沿线。JR 熊本站在市区西南约2公里，新干线也停这里。阿苏山在东面，从熊本坐 JR 丰肥线到阿苏站约1.5小时再换巴士；机场在东面约20公里的益城町，天草群岛在西南约2小时。",
     gettingAround:
@@ -1872,6 +2055,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kagoshima: {
     identity:
       "鹿儿岛在九州最南端的锦江湾（鹿儿岛湾）西岸，人口约58.4万（2024年），对岸4公里处是至今活跃的樱岛火山——火山灰时常落到市区，市民备有专门的“灰袋”。这里是萨摩藩岛津家的领地，幕末的萨摩藩推动了明治维新，仙岩园（岛津家别邸）和旁边的旧集成馆是2015年列入世界遗产的“明治工业革命遗产”的一部分。鹿儿岛是去屋久岛、种子岛的港口，南面的指宿以砂蒸温泉出名；本地有黑猪、烧酒和白熊刨冰。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kagoshima (core city; ~547 km²; ~590,000; prefecture capital; Sakurajima within the city since 2004 merger, ferry 15 min, ash; Tenmonkan; trams; Sengan-en; Satsuma domain, Saigō; Kyushu Shinkansen terminus Kagoshima-Chūō; airport ~40 km at Kirishima; ferries to Yakushima)
+    howItWorks:
+      "鹿儿岛是鹿儿岛县的县厅所在地，一座核心市，市域约 547 平方公里，人口约 59 万；市政府管地方服务，警察与学校归县。城市面朝锦江湾，樱岛火山就在湾对面 4 公里处，2004 年合并后樱岛也在鹿儿岛市内，渡轮 15 分钟一趟，火山灰是市民的日常，学童戴着头盔上学；天文馆的拱廊街是市中心，有轨电车穿过市区，仙岩园在城北的海边，萨摩藩与西乡隆盛的历史在城里随处可见；九州新干线的终点鹿儿岛中央站在市中心，机场在北面约 40 公里的雾岛，渡轮通往屋久岛。初来的人最容易犯的错，是把樱岛当作对岸另一个町，而它是鹿儿岛市的一部分，火山灰也是这座城的一部分。",
     layout:
       "鹿儿岛市区在锦江湾西岸的平地上，鹿儿岛中央站在西侧，天文馆商业区在市中心，路面电车连接两者；城山在市中心北面，山顶展望台正对樱岛。樱岛渡轮码头在市区北端的海边，渡轮15分钟到樱岛；仙岩园在市区北面约5公里的海岸。指宿在南面约50公里，雾岛温泉和机场在东北约30公里，去屋久岛的高速船从南码头出发。",
     gettingAround:
@@ -1886,6 +2072,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   matsuyama: {
     identity:
       "松山是爱媛县县厅所在地、四国最大的城市，人口约49.4万（2026年）。道后温泉有三千年传说，是日本最古老的温泉之一，1894年建成的道后温泉本馆是国家重要文化财、至今营业的木造公共浴场；松山城（1602年始建）是日本十二座现存天守之一，立在市中心的胜山上。夏目漱石的小说《少爷》以松山为背景，俳人正冈子规是松山人，市内有子规纪念博物馆，路面电车从1887年运营至今。石手寺是四国八十八所遍路的第51号寺，岛波海道的四国起点今治在北面。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matsuyama (core city; ~429 km²; ~494,000, largest in Shikoku; Ehime capital; castle on Katsuyama with ropeway; Dōgo Onsen 1894 bathhouse ~3 km; Iyotetsu trams since 1887, Botchan train; Sōseki/Shiki haiku; airport 6 km; ferries to Hiroshima; Shimanami Kaidō from Imabari ~40 km)
+    howItWorks:
+      "松山是爱媛县的县厅所在地，四国最大的城市，一座核心市，市域约 429 平方公里，人口约 49 万；市政府管地方服务，警察与学校归县。松山城在市中心的胜山上，缆车从山下的商店街上去，道后温泉在东面 3 公里，1894 年的本馆是日本最老的公共浴场之一，1887 年起运行的伊予铁道有轨电车把车站、城下与道后连起来，“少爷列车”是它的复古车；夏目漱石的《少爷》以这里为舞台，正冈子规让它成为俳句之城，机场在城西 6 公里，渡轮从松山观光港开往广岛，岛波海道从北面 40 公里的今治出发。初来的人最容易犯的错，是把道后温泉当作松山的市中心，而市中心在城堡脚下，道后是电车终点的温泉町。",
     layout:
       "松山市区在松山平原上，松山城在中心的胜山山顶，山脚是大街道、银天街商店街和县厅；JR 松山站在城西，伊予铁松山市站在城南，两站都有路面电车。道后温泉在市区东北约3公里，是电车的终点，本馆、商店街和旅馆区集中在一起；石手寺在道后再往东约1公里。松山机场在市区西南约6公里，松山观光港在城西北，今治在东北约40公里。",
     gettingAround:
@@ -2535,6 +2724,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "quebec-city": {
     identity:
       "魁北克市是魁北克省的省会，坐落在圣劳伦斯河骤然收窄处的一块峭壁（钻石角）上，都会区约 85 万人。城市名来自阿尔冈昆语“kébec”，意思正是“河流变窄的地方”。老城区是北美唯一保存完整城墙的城市，1608 年由法国人建立，是北美最早的欧洲人定居点之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Quebec City (Ville de Québec, 6 boroughs since 2002; 549,459 2021; metro ~839,000 with Lévis separate; capital of Quebec, National Assembly; Old Quebec UNESCO 1985; Upper/Lower Town; ~91% French mother tongue; RTC buses)
+    howItWorks:
+      "魁北克市是魁北克省的首府，省议会在这里，省政府掌管医疗与教育，市政府管公交、供水与规划；2002 年合并后市下分 6 个区，2021 年人口约 55 万，都会区约 84 万，河对岸的莱维斯是另一座市。老城在圣劳伦斯河收窄处的岬角上，分上城与下城，是北美墨西哥以北唯一保留城墙的城，1985 年列入世界遗产，芳堤娜城堡是坐标，亚伯拉罕平原在城墙外，圣福瓦是西面的商业与大学区；约九成市民以法语为母语，渡轮通往莱维斯，机场在城西。初来的人最容易犯的错，是把城墙内的老城当作魁北克市，而它只是一个 55 万人城市的一角。",
     layout:
       "魁北克市分“上城”和“下城”：上城在峭壁顶上，有城墙、星形要塞（Citadelle）和标志性的芳堤娜城堡酒店；下城在河边，是最早的定居点，皇家广场和小尚普兰街是石砌老街。峭壁上下有缆车和陡峭的楼梯相连。",
     gettingAround:
@@ -2550,6 +2742,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   halifax: {
     identity:
       "哈利法克斯是新斯科舍省的省会、加拿大大西洋省份最大的城市，都会区约 50 万人，是一座天然良港城市，历史上是英国在北美的重要海军基地。城市名来自 18 世纪的英国政治家、哈利法克斯伯爵（英格兰约克郡也有一座同名的市镇）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Halifax (Halifax Regional Municipality, amalgamated 1996 from Halifax, Dartmouth, Bedford and Halifax County; ~5,476 km², urban core ~238 km²; 439,819 2021; capital of Nova Scotia; Citadel; waterfront; Dartmouth across the harbour; naval base; airport 35 km)
+    howItWorks:
+      "哈利法克斯是新斯科舍省的首府，省政府掌管医疗与教育；今天的哈利法克斯区域市是 1996 年由哈利法克斯市、达特茅斯市、贝德福德镇与哈利法克斯县合并而成，市域约 5,500 平方公里，大部分是乡村与海岸，2021 年人口约 44 万，城区只占约 240 平方公里。市中心在哈利法克斯半岛上，城堡山俯瞰港口，滨水木栈道沿港湾展开，达特茅斯在港湾对岸，靠两座桥与渡轮往来，海军基地在港内，达尔豪斯大学在半岛上，机场在北面 35 公里。初来的人最容易犯的错，是把达特茅斯当作另一座城，而它是同一个市的一部分；反过来，市域的两百多个社区大多离城区几十公里。",
     layout:
       "哈利法克斯建在一条狭长深水港湾西岸的山坡上，港口对面是达特茅斯市，两地有渡轮和大桥相连。市中心紧贴海边，山顶上是星形的城堡山（Citadel）要塞，俯瞰全港。海滨步道从赌场一直延伸到码头集市。",
     gettingAround:
@@ -2565,6 +2760,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "st-johns": {
     identity:
       "圣约翰斯是纽芬兰-拉布拉多省的省会，位于纽芬兰岛最东端，都会区约 20 多万人，是北美大陆最靠东的城市，也是欧洲人在北美最早建立的定居点之一。相传其名来自施洗者圣约翰的节日（1497 年 6 月 24 日，传统上认为约翰·卡伯特在这一天抵达此地）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): St. John's (City of St. John's ~446 km²; 110,525 2021; metro ~212,600 with Mount Pearl, Paradise, CBS separate; capital of Newfoundland and Labrador; the Narrows; Signal Hill; Jellybean Row; Cape Spear; offshore oil; fog; UTC−3:30)
+    howItWorks:
+      "圣约翰斯是纽芬兰与拉布拉多省的首府，省政府掌管医疗与教育，市政府管公交、供水与规划；市域约 446 平方公里，2021 年人口约 11 万，都会区约 21 万，芒特珀尔、帕拉代斯各是独立的市镇。城市围着一个从“窄口”进入的天然港生长，信号山守在港口的北侧，彩色的联排屋沿坡而上，沃特街是北美最老的商业街之一，斯皮尔角在东南 15 公里，是北美大陆的最东点；海上油田让它成为加拿大东部的石油中心，一年有一百多天雾，时区比东部时间早一个半小时。初来的人最容易犯的错，是按加拿大其他城市来算时差，而纽芬兰有自己的时区，比多伦多早一个半小时。",
     layout:
       "圣约翰斯抱着一个几乎被陆地包围的小港湾，只有一条狭窄的水道（“The Narrows”）通向大西洋，水道两侧是陡崖，北崖顶上是信号山。市中心的房子沿陡坡而建、漆成鲜艳的糖果色（“Jellybean Row”）。城市之外很快就是空旷的岩石荒原和海岸。",
     gettingAround:
@@ -2580,6 +2778,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   winnipeg: {
     identity:
       "温尼伯是曼尼托巴省的省会，位于加拿大中部大草原的东缘、红河与阿西尼博因河交汇处，都会区约 85 万人。这里自古是原住民和皮毛贸易的交汇点，19 世纪末因铁路成为“通往西部的门户”。城市名来自克里语“wīnipēk”，意为“浑浊的水”，指北面的温尼伯湖。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Winnipeg (single-tier city, Unicity 1972; ~464 km²; ~750,000 2021; metro ~835,000 ≈ 60% of Manitoba; capital of Manitoba; The Forks; Exchange District; Portage and Main; St. Boniface francophone; winter −16°C)
+    howItWorks:
+      "温尼伯是马尼托巴省的首府，省政府掌管医疗与教育；1972 年“统一市”改革把周围的市镇并成一座单层市，市域约 464 平方公里，2021 年人口约 75 万，都会区约 84 万，占全省的六成。市中心在红河与阿西尼博因河汇合处的“叉口”，波蒂奇与梅因路口是城市的坐标，交易区是 1900 年前后的仓库街区，圣博尼法斯在红河东岸，是西部最大的法语社区，人权博物馆在叉口边，冬天平均零下 16 度，“温特尼伯”是它的绰号，机场在城西。初来的人最容易犯的错，是把温尼伯当作一座草原小城，而它是全省六成人口所在、有芭蕾舞团与交响乐团的都会。",
     layout:
       "温尼伯建在一片极其平坦的湖积平原上（史前冰川湖阿加西的湖底），没有任何山。两河交汇处叫“The Forks”，是历史和现在的城市中心，有市集和步道。街道是大网格，市中心的 Portage and Main 十字路口号称“加拿大的十字路口”，也以风大、寒冷出名。",
     gettingAround:
@@ -2613,6 +2814,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   edmonton: {
     identity:
       "埃德蒙顿是艾伯塔省的省会，位于该省中部、北萨斯喀彻温河谷两岸，都会区约 150 万人，是加拿大最靠北的大城市之一，也是通往北方油砂产区和西北地区的补给基地。城市名来自英国伦敦的一个地区埃德蒙顿——经由一位哈得孙湾公司官员的家乡传来。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Edmonton (single-tier city ~766 km²; 1,010,899 2021; metro 1,418,118 with St. Albert, Strathcona County, Leduc separate; capital of Alberta; river valley parks; Strathcona merged 1912; West Edmonton Mall; LRT; airport ~30 km at Leduc)
+    howItWorks:
+      "埃德蒙顿是阿尔伯塔省的首府，省议会在河谷的高地上，省政府掌管医疗与教育，市政府管公交、供水与警察；市域约 766 平方公里，2021 年人口约 101 万，都会区约 142 万，圣艾伯特、斯特拉斯科纳县各是独立的市镇。北萨斯喀彻温河的河谷穿过市中心，是北美最大的城市公园带之一，市中心与冰区在北岸，怀特大道所在的老斯特拉斯科纳 1912 年并入，在南岸；西埃德蒙顿购物中心在西郊，轻轨连起南北，机场在南面 30 公里的勒杜克，它是通往油砂区的门户。初来的人最容易犯的错，是把埃德蒙顿当作卡尔加里的陪衬，而它是省会，人口与卡尔加里相当。",
     layout:
       "埃德蒙顿跨北萨斯喀彻温河而建，河谷两岸是北美最大的相连城市公园系统之一（“河谷带”）。市中心在河北岸的平原上，往南过河是老斯特拉思科纳的历史街区和大学。城市平坦、网格状、摊得很开。",
     gettingAround:
@@ -2647,6 +2851,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   victoria: {
     identity:
       "维多利亚是不列颠哥伦比亚省的省会，在温哥华岛南端，人口约9.2万、都会区约40万（2021年普查）。它1843年以哈德逊湾公司的维多利亚堡起家，1871年成为省会，内港边的省议会大厦（1897年）和皇后酒店（1908年）是城市的标志，1904年开放的布查特花园是从采石场改造的著名花园。维多利亚是加拿大气候最温和的城市之一，有“花园城市”之称，从这里坐渡轮可到温哥华和西雅图。这片土地是勒昆恩（Lekwungen，今松希斯和埃斯奎莫尔特民族）的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Victoria (City of Victoria ~19.5 km², 91,867 2021; Greater Victoria/Capital Regional District 13 municipalities ~397,000; capital of BC, legislature; Inner Harbour; Empress; Chinatown; Butchart in Central Saanich; ferries Swartz Bay 32 km; airport at Sidney; seaplanes)
+    howItWorks:
+      "维多利亚是不列颠哥伦比亚省的首府，省议会在内港边，省政府掌管医疗与教育；维多利亚市本身只有约 20 平方公里、2021 年约 9.2 万人，而大维多利亚由 13 个市镇组成，约 40 万人，萨尼奇、橡树湾、埃斯奎莫尔特、兰福德各有自己的市议会，首都区域局统管供水与区域规划。市中心在内港的三面，帝后饭店与议会大厦是坐标，唐人街是加拿大最老的；布查特花园在中萨尼奇，渡轮码头在北面 32 公里的斯沃茨湾，机场在悉尼，水上飞机从内港直飞温哥华。初来的人最容易犯的错，一是以为维多利亚在大陆上，而它在温哥华岛，二是把维多利亚市当作整座城，而它只占大维多利亚的四分之一。",
     layout:
       "市中心围绕内港：省议会大厦在港南岸，皇后酒店和皇家不列颠哥伦比亚博物馆在港东岸，政府街向北是商业街和唐人街（加拿大最老的唐人街之一）。比肯山公园在市中心南面的海边，海洋大道沿海岸向东。布查特花园在城北约20公里的布伦特伍德湾，机场在北面约25公里的悉尼镇，去温哥华（茨瓦森）的BC渡轮码头在斯瓦茨湾，去西雅图的船从内港出发。",
     gettingAround:
@@ -2661,6 +2868,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   whistler: {
     identity:
       "惠斯勒在不列颠哥伦比亚省海岸山脉里，温哥华以北约125公里，海拔约670米，常住人口约1.4万（2021年普查），每年接待游客超过200万。惠斯勒—黑梳山是北美最大的滑雪度假区之一，两座山之间的“峰顶对峰顶”缆车跨度4.4公里；2010年温哥华冬奥会的高山滑雪、雪橇和北欧项目在这里举行。夏季有山地自行车公园、徒步和湖泊。这里是斯阔米什（Squamish）和利尔瓦特（Lil'wat）民族的传统领地，两族共建的文化中心在村里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Whistler (Resort Municipality of Whistler, special status 1975; ~240 km²; 13,982 2021; >2 million visitors/yr; Whistler Village 1980; Whistler Blackcomb; Sea-to-Sky Highway 125 km from Vancouver; 2010 Olympics; Lil'wat/Squamish; no airport)
+    howItWorks:
+      "惠斯勒是加拿大第一个“度假市”，1975 年省政府为它专门立法设立，市域约 240 平方公里，2021 年常住人口约 1.4 万，每年游客超过 200 万；市议会管地方服务，其余归省政府。惠斯勒村是 1980 年建成的步行街区，在两座山的脚下，惠斯勒山与黑梳山的缆车从村里直接上山，峰对峰缆车把两山连起来，2010 年冬奥会的高山项目在这里举行；海天公路到温哥华约 125 公里，没有机场，利尔瓦特与斯阔米什两个原住民族是这片土地的主人。初来的人最容易犯的错，是把惠斯勒当作一座雪场，而它是一个全年运行、夏天靠山地自行车的度假市。",
     layout:
       "惠斯勒村是步行街区，酒店、餐馆和缆车站集中在一起，惠斯勒山和黑梳山的缆车分别从村中和上村出发；奥林匹克广场在村北，斯阔米什—利尔瓦特文化中心在上村。洛斯特湖在村东北，阿尔塔湖在村西南，谷地步道把它们和克里克赛德连起来。海天公路（99号公路）从温哥华经斯阔米什到这里，再往北是彭伯顿。",
     gettingAround:
@@ -2675,6 +2885,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   banff: {
     identity:
       "班夫是加拿大落基山里的小镇，在艾伯塔省卡尔加里以西约126公里，海拔约1400米，人口约8300（2021年普查）。它位于1885年设立的班夫国家公园——加拿大第一个国家公园——内，是加拿大唯一在国家公园内设市的镇（1990年）。国家公园因1883年发现的洞穴与盆地温泉而设立，1985年与贾斯珀等一起列入世界遗产“加拿大落基山公园群”。露易丝湖在西北约58公里，冰原大道从这里通往贾斯珀。这片土地是斯托尼纳科达等民族的传统领地，属《第七号条约》区域。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Banff (Town of Banff, incorporated 1990 within Banff National Park on federal land; need-to-reside rule; 4.08 km²; 8,305 2021; Banff Avenue; Bow River; Sulphur Mountain gondola; Lake Louise 57 km in Improvement District 9; Calgary 126 km; Roam transit; no airport)
+    howItWorks:
+      "班夫镇是加拿大第一个设在国家公园内的市镇，1990 年成立，土地属于联邦的加拿大公园局，镇域只有约 4 平方公里，2021 年人口约 8,300；镇议会管地方服务，但商业面积有上限，只有在镇上工作的人才有资格居住，房子不能随便买。镇子在弓河与班夫大道两侧，硫磺山缆车从镇边上山，温泉在山脚；露易丝湖在西北 57 公里，属于另一个行政区，卡尔加里在东面 126 公里，进入公园要买门票，Roam 公交连接镇内与周边，没有机场。初来的人最容易犯的错，是把班夫镇当作班夫国家公园，而公园有 6,600 平方公里，镇只是里面的一个点。",
     layout:
       "小镇在弓河河谷里，班夫大道是主街，两端是卡斯凯德山和硫磺山：硫磺山有缆车和上温泉，山脚是费尔蒙班夫温泉酒店和弓河瀑布；洞穴与盆地国家历史遗址在弓河南岸。明尼万卡湖在镇东北约10公里，弗米利恩湖在镇西。露易丝湖和梦莲湖在西北，冰原大道从露易丝湖向北到哥伦比亚冰原和贾斯珀。坎莫尔在东面约25公里的公园外。",
     gettingAround:
@@ -2689,6 +2902,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jasper: {
     identity:
       "贾斯珀是加拿大落基山北部的小镇，在艾伯塔省埃德蒙顿以西约360公里，海拔约1060米，人口约4700（2021年普查），是贾斯珀国家公园（1907年设立，加拿大落基山最大的国家公园）的服务中心，也是世界遗产“加拿大落基山公园群”和暗夜星空保护区的一部分。玛琳湖、哥伦比亚冰原的阿萨巴斯卡冰川、贾斯珀天空缆车都在这里。2024年7月22日开始的山火烧毁了镇上约三分之一的建筑，小镇随后重建、逐步恢复接待；VIA 铁路的“加拿大人”号横贯列车和到鲁珀特王子港的列车在此停靠。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jasper (Municipality of Jasper, specialized municipality 2001 within Jasper National Park on Parks Canada land; 4,738 2021; Athabasca; Icefields Parkway; VIA Rail; Edmonton ~360 km; July 2024 wildfire destroyed 358 buildings, about a third of structures)
+    howItWorks:
+      "贾斯珀是贾斯珀国家公园里的一座镇，2001 年起是阿尔伯塔省的“特设市镇”，土地属于加拿大公园局，只有在公园里工作的人才能居住，2021 年人口约 4,700；镇议会与公园局共同管理地方事务。镇子在阿萨巴斯卡河谷的铁路旁，是国家公园的商业中心，VIA 铁路的“加拿大人号”在这里停靠，冰原大道向南通往哥伦比亚冰原与露易丝湖，马林湖在东南 45 公里，天空缆车在镇外，埃德蒙顿在东面约 360 公里。2024 年 7 月的山火烧毁了镇上约三分之一的建筑，重建仍在进行。初来的人最容易犯的错，是把贾斯珀当作一座普通的山镇，而它是公园里受管制的居住区，进出要买公园门票。",
     layout:
       "小镇在阿萨巴斯卡河谷里，火车站和主街康诺特大道在中心，镇子很小、步行即可。金字塔湖和帕特里夏湖在镇北约6公里，天空缆车在镇南约7公里的惠斯勒斯山上，玛琳峡谷、梅迪辛湖和玛琳湖在镇东南（玛琳湖约48公里），米耶特温泉在东北约60公里。冰原大道从镇南向南到哥伦比亚冰原（约105公里）和班夫，伊迪丝·卡维尔山在冰原大道旁。",
     gettingAround:
@@ -2703,6 +2919,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   regina: {
     identity:
       "里贾纳是萨斯喀彻温省的省会，在加拿大草原的中部，人口约22.6万（2021年普查）。它1882年由路易丝公主以维多利亚女王的拉丁语称号命名（此前克里语地名 Wascana 意为“野牛骨”），1906年成为新成立的萨省的省会。市中心南面的瓦斯卡纳中心是围绕人工湖建成的9.3平方公里城市公园，1912年落成的省议会大厦立在湖边；加拿大皇家骑警（RCMP）的全国训练基地“兵站”自1885年起在里贾纳，旁边有骑警遗产中心。这里是《第四号条约》区域，克里、索尔托、纳科达等民族的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Regina (single-tier city ~179 km²; 226,404 2021; metro ~249,000; capital of Saskatchewan, legislature 1912; Wascana Centre 9.3 km²; RCMP Depot; flat prairie; Saskatoon larger)
+    howItWorks:
+      "里贾纳是萨斯喀彻温省的首府，省议会大厦在瓦斯卡纳湖边，省政府掌管医疗与教育，市政府管公交、供水与警察；市域约 179 平方公里，2021 年人口约 23 万，都会区约 25 万，是全省第二大城市，萨斯卡通更大。城市建在一片没有树的平坦草原上，瓦斯卡纳中心是北美最大的城市公园之一，博物馆与美术馆都在里面，市中心在公园北面，大教堂区是老街区，皇家骑警的训练基地在城西，横加公路从城边经过，机场在西南。初来的人最容易犯的错，是以为省会就是最大的城市，而萨斯喀彻温的最大城市在北面 260 公里的萨斯卡通。",
     layout:
       "市中心在维多利亚公园周围，是规整的街区；瓦斯卡纳中心和湖在市中心正南，省议会大厦在湖南岸，皇家萨斯喀彻温博物馆和麦肯齐美术馆在湖边。骑警兵站和遗产中心在市区西侧。市区四周是平坦的草原，机场在西南约7公里。萨斯卡通在北面约260公里，穆斯乔在西面约70公里。",
     gettingAround:
@@ -2717,6 +2936,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   charlottetown: {
     identity:
       "夏洛特敦是爱德华王子岛省的省会，人口约3.9万（2021年普查）。1864年9月，各殖民地代表在这里的省议会大楼开会讨论联合，促成了1867年的加拿大联邦，所以它被称为“联邦诞生地”。露西·莫德·蒙哥马利的小说《绿山墙的安妮》以岛上的卡文迪什为背景（距市区约40公里），联邦艺术中心每年夏季上演安妮的音乐剧。1997年通车的联邦大桥长12.9公里，把岛与新不伦瑞克连起来。这片土地是米克马克（Mi'kmaq）民族的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Charlottetown (City of Charlottetown ~44 km²; 38,809 2021; metro ~80,000; capital of PEI; Province House, 1864 conference; harbour; Confederation Bridge 1997 ~55 km; airport; Cavendish 35 km; no rail)
+    howItWorks:
+      "夏洛特敦是爱德华王子岛省的首府，省议会在省府大厦，1864 年的夏洛特敦会议在那里开启了加拿大联邦，省政府掌管医疗与教育，市政府管地方服务；市域约 44 平方公里，2021 年人口约 3.9 万，都会区约 8 万，整个省只有约 17 万人。市中心在港湾边的维多利亚时期街区，联邦艺术中心是坐标，滨水区改成了公园；联邦大桥在西面约 55 公里，1997 年通车，13 公里长，是与大陆的唯一陆路，机场在城北，绿山墙的安妮在北面 35 公里的卡文迪什，岛上没有铁路。初来的人最容易犯的错，是把夏洛特敦当作一座大城，而它是一个 17 万人小省的首府，整座岛开车两小时可到两头。",
     layout:
       "市中心在希尔斯伯勒河口的港湾边，是十九世纪的街道格局：省议会大楼和联邦艺术中心在格拉夫顿街中心，维多利亚街是步行餐饮街，港口边有码头和游船。维多利亚公园在市区西南的海角上。卡文迪什和绿山墙在岛北岸约40公里，联邦大桥在岛西南约55公里的博登—卡尔顿，红沙滩和灯塔沿岛的海岸分布。机场在市区北约6公里。",
     gettingAround:
@@ -2731,6 +2953,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "niagara-falls": {
     identity:
       "尼亚加拉瀑布城在安大略省尼亚加拉河西岸，与美国纽约州的同名城市隔河相望，人口约9.4万（2021年普查）。尼亚加拉瀑布由马蹄瀑布（高约57米、宽约790米，大部分在加拿大一侧）、美国瀑布和新娘面纱瀑布组成，平均流量约2400立方米/秒，是北美流量最大的瀑布，约1万年前由冰川消退形成。加拿大一侧正对马蹄瀑布，视野最好，游船、瀑布后隧道和观景塔都在这里；北面约20公里的滨湖尼亚加拉是保存完好的十九世纪小镇和葡萄酒产区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Niagara Falls (lower-tier city in Regional Municipality of Niagara; ~210 km²; 94,415 2021; Horseshoe Falls; Clifton Hill; Niagara Parks Commission provincial agency; Rainbow Bridge to Niagara Falls NY; WEGO; seasonal GO; Toronto ~130 km)
+    howItWorks:
+      "尼亚加拉瀑布城是安大略省尼亚加拉区域市之下的一座下级市，市域约 210 平方公里，2021 年人口约 9.4 万；区域市管警察、供水与区域道路，市政府管地方服务，瀑布沿岸的公园与观景设施由省属的尼亚加拉公园委员会管理，不归市政府。马蹄瀑布在加拿大一侧，克利夫顿山是瀑布上方的游乐街，高层酒店与赌场沿崖顶排开，彩虹桥通往对岸美国的同名城市，尼亚加拉湖畔镇的酒庄在北面 20 公里，多伦多在 130 公里外，夏季有 GO 火车，WEGO 公交连接景区。初来的人最容易犯的错，是不知道河两岸各有一座叫“尼亚加拉瀑布”的城市，分属两个国家，过桥要过海关。",
     layout:
       "市区沿尼亚加拉河西岸的峭壁展开：桌岩观景台正对马蹄瀑布，瀑布后之旅入口就在旁边；沿河向北是游船码头、彩虹桥（通往美国）和克利夫顿山游乐街，瀑布景观区（Fallsview）的酒店和赌场在河崖上方，天塔在中间。维多利亚女王公园沿河岸伸展。尼亚加拉公园大道沿河向北到旋涡、花钟和滨湖尼亚加拉；瀑布上游是水电站和大瀑布上方的湍流。GO 火车站在市区北部。",
     gettingAround:
@@ -2745,6 +2970,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   fredericton: {
     identity:
       "弗雷德里克顿是新不伦瑞克省的省会，在圣约翰河（沃拉斯托克河）畔，人口约6.3万（2021年普查）。它1785年由效忠英王的美洲移民建立并成为省会，河南岸的驻军区保留着十九世纪英军营房，比弗布鲁克美术馆是加拿大大西洋省份最重要的美术馆之一，新不伦瑞克大学（1785年）是加拿大最早的英语大学之一。这片土地是沃拉斯托克（Wolastoqiyik，又称马利西特）民族的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Fredericton (City of Fredericton ~134 km²; 63,116 2021; metro ~108,600; capital of New Brunswick, bilingual province; Saint John River; UNB 1785; Beaverbrook Art Gallery; third-largest city after Moncton and Saint John; airport)
+    howItWorks:
+      "弗雷德里克顿是新不伦瑞克省的首府，省议会在圣约翰河南岸的市中心，这是加拿大唯一法定双语的省，省政府掌管医疗与教育，市政府管地方服务；市域约 134 平方公里，2021 年人口约 6.3 万，都会区约 11 万，是全省第三大城市，蒙克顿与圣约翰都比它大。市中心在河的南岸，驻军区的老兵营与比弗布鲁克美术馆在那里，1785 年创办的新不伦瑞克大学在山坡上，河北岸是住宅区，步道沿着旧铁路环绕全城，机场在东南。初来的人最容易犯的错，是以为省会是最大的城市，而弗雷德里克顿是一座以政府与大学为生的小城。",
     layout:
       "市中心在圣约翰河南岸，皇后街和国王街平行于河，驻军区、比弗布鲁克美术馆、省议会大厦、基督教堂主教座堂都在河边几个街区内。新不伦瑞克大学和圣托马斯大学在市中心南面的山坡上。河北岸是居民区和步道，旧铁路桥改成的步行桥连接两岸。奥德尔公园在城西南。机场在市区东南约15公里。圣约翰市在南面约110公里，蒙克顿在东面约180公里。",
     gettingAround:
@@ -2759,6 +2987,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yellowknife: {
     identity:
       "黄刀镇是西北地区的首府，在大奴湖北岸的加拿大地盾岩石上，北极圈以南约400公里，人口约2万（2021年普查）。它1930年代因淘金而兴起，1967年成为首府，最后一座金矿2004年关闭；1991年在北面300公里发现钻石后成为加拿大钻石业的中心。因位于极光带正下方、冬季晴夜多，它是世界上观赏极光条件最好的地方之一，8月中到4月都有机会。老城的木屋、船屋和飞行员纪念碑保留着早期的样子。城市以耶洛奈夫斯（Yellowknives）德内民族命名，这里是他们的传统领地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Yellowknife (City of Yellowknife ~136 km²; 20,340 2021 ≈ half of NWT; capital of Northwest Territories, consensus government; Great Slave Lake; Old Town/houseboats; gold 1934–2004, diamonds since 1991; aurora; August 2023 wildfire evacuation)
+    howItWorks:
+      "耶洛奈夫是西北地区的首府，2021 年人口约 2 万，占全地区的一半；地区议会实行没有政党的协商制政府，掌管医疗与教育，市政府管地方服务。城市在大奴湖的北岸，1934 年因金矿而建，最后的金矿 2004 年关闭，1991 年起北面的钻石矿接替了它；老城在岩石半岛与拉瑟姆岛上，湖上的船屋是它的标志，新城在山坡上，市中心是几座政府楼与商店；冬天的极光吸引着大量游客，冰上公路通往湖对岸，机场在城郊。2023 年 8 月的山火让近九成居民撤离了三周。初来的人最容易犯的错，是把耶洛奈夫当作一座极地小村，而它是一个比法国还大的地区的首府。",
     layout:
       "市区在大奴湖北岸的岩石半岛上，新城（市中心，威尔士亲王北方遗产中心、议会大厦）在半岛中部，老城在半岛北端的湖边，飞行员纪念碑的小山是老城最高点，拉瑟姆岛和乔利夫岛的船屋在老城外的湖上。机场在城西约5公里。冬季有冰路穿过湖面到德塔（德内村落）。城外是无数小湖和地盾岩石，极光营地分布在城外的湖边。",
     gettingAround:
@@ -2773,6 +3004,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   whitehorse: {
     identity:
       "白马市是育空地区的首府，在育空河上游的河谷里，人口约2.8万（2021年普查），育空四分之三的人口住在这里。它因1896年开始的克朗代克淘金热而兴起——淘金者从斯卡圭翻过白隘口到这里再乘船北上道森，1900年通车的白隘口与育空铁路和1942年修建的阿拉斯加公路把它变成交通枢纽，1953年取代道森成为首府。育空河上的“克朗代克号”汽轮是那个时代的纪念，迈尔斯峡谷在城南。这片土地是宽林顿（Kwanlin Dün）和塔安宽奇（Ta'an Kwäch'än）民族的传统领地。夏季白天超过19小时，冬季可见极光。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Whitehorse (City of Whitehorse ~416 km²; 28,201 2021 ≈ 70% of Yukon; capital of Yukon since 1953; Yukon River; Klondike 1896 staging, White Pass railway 1900, SS Klondike; Alaska Highway km 1,426; Kwanlin Dün/Ta'an Kwäch'än; driest city in Canada; Dawson City ~530 km)
+    howItWorks:
+      "白马是育空地区的首府，1953 年从道森接过这一地位，市域约 416 平方公里，2021 年人口约 2.8 万，占全地区的七成；地区议会掌管医疗与教育，市政府管地方服务。市中心是育空河西岸的一片格网，克朗代克号蒸汽船停在河边，1900 年建成的白山口铁路曾从斯卡圭把淘金者送到这里，阿拉斯加公路在 1,426 公里处经过市区，机场在河谷上方的台地上，850 公里的步道网在市域内，冬天有极光；这里是关林敦与塔安克瓦昌两个原住民族的土地。初来的人最容易犯的错，是以为克朗代克淘金热发生在白马，而金矿在北面 530 公里的道森，白马只是路上的补给站。",
     layout:
       "市中心在育空河西岸的河谷平地上，主街和第二大道平行于河，克朗代克号汽轮泊在河边的公园里，麦克布莱德博物馆、宽林顿文化中心也在河边。机场在市区西侧的台地上，从市中心开车约5分钟。迈尔斯峡谷和施瓦特卡湖在城南约8公里，鱼梯和水电站在城边。育空白令陆桥中心和交通博物馆在机场旁。塔基尼温泉在西北约30公里，克卢恩国家公园在西面约150公里。",
     gettingAround:
@@ -2821,6 +3055,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bristol: {
     identity:
       "布里斯托尔在英格兰西南部、雅芳河下游，市区人口约 47 万，历史上是重要的港口和造船城市，如今以创意产业、街头艺术（涂鸦艺术家班克西的家乡）和独立文化闻名。美国有多座以它命名的城市。城市紧邻威尔士边界，是进入威尔士南部和西南半岛的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bristol (unitary authority, city and county since 1373; ~110 km²; ~494,000 2024; West of England Combined Authority with South Gloucestershire and BaNES; Floating Harbour; Clifton Suspension Bridge; no rail transit)
+    howItWorks:
+      "布里斯托是英格兰西南部最大的城市，1373 年起既是城又是郡，今天是一个单一制议会，市域约 110 平方公里，2024 年人口约 49 万；议会管教育、住房与垃圾，2017 年起与南格洛斯特郡、巴斯及东北萨默塞特合成的西英格兰联合管理局有民选市长管交通与规划，警察与医院归国家机构。市中心围着旧港区“浮动港”，克利夫顿吊桥跨在埃文峡谷上，坦普尔米兹是火车站，机场在南面 13 公里，没有轨道交通。初来的人最容易犯的错，是把布里斯托议会的辖区当作整座城，而城区的北半在南格洛斯特郡议会，市界紧得像一件小一号的衣服。",
     layout:
       "布里斯托尔建在雅芳河切出的峡谷和周围的丘陵上，地势起伏。老港区（Harbourside）经过改造，是博物馆和餐饮区；克利夫顿的乔治王朝式排屋在峡谷边，著名的克利夫顿悬索桥横跨雅芳峡谷。市中心紧凑，但坡多。",
     gettingAround:
@@ -2872,6 +3109,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   liverpool: {
     identity:
       "利物浦在英格兰西北、默西河口北岸，市区人口约 50 万，历史上是大西洋航运的大港（移民、货物、也包括奴隶贸易），船坞沿河绵延数公里。今天以音乐（一支世界闻名的乐队来自这里）、两家足球俱乐部和被列为世界遗产又除名的海滨建筑群闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Liverpool (metropolitan borough; ~509,000 2024; Liverpool City Region Combined Authority of 6 boroughs incl. Wirral/Sefton/Knowsley, >1.5 million, mayor since 2017; Merseyrail; Pier Head; Albert Dock; Mersey ferries; airport)
+    howItWorks:
+      "利物浦是默西塞德的都市自治市，2024 年人口约 51 万；它是利物浦城市区域的核心，2017 年起这个由威勒尔、塞夫顿、诺斯利等 6 个自治市组成的联合管理局有民选的区域市长，管交通与经济，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在默西河东岸，码头总部的“三女神”与阿尔伯特码头是它的门面，乔治时期街区在山坡上，安菲尔德与古迪逊在城北，默西铁路把河两岸连成网，渡轮开往对岸的威勒尔，机场在城南。初来的人最容易犯的错，是把河对岸的伯肯黑德当作利物浦的一部分，而威勒尔是另一个自治市，过河就换了议会。",
     layout:
       "利物浦沿默西河东岸的一道缓坡展开，河很宽、有轮渡往返对岸的伯肯헤德。“三女神”建筑和阿尔伯特码头在河边，是城市的门面；市中心的商业区和两座大教堂（一座现代、一座哥特复兴）在坡上。默西河底有隧道通向对岸。",
     gettingAround:
@@ -2887,6 +3127,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   york: {
     identity:
       "约克在英格兰北部、乌斯河与福斯河交汇处，市区人口约 20 万，是英格兰保存最完好的中世纪城市之一，有近乎完整的中世纪城墙、狭窄的老街和一座巨大的哥特式大教堂。城市由罗马人建立（“埃博拉库姆”），维京时期叫“约维克”。1664 年英国从荷兰手中接管北美殖民地后，把新阿姆斯特丹改名为“新约克”——也就是今天的纽约——纪念当时的约克公爵。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): York (City of York unitary authority ~272 km²; ~202,800 2021; York and North Yorkshire Combined Authority mayor 2024; Ouse/Foss; walled city; Minster; Shambles; NRM; flooding)
+    howItWorks:
+      "约克是北约克郡的大教堂城市，约克市议会是一个单一制议会，辖区约 272 平方公里，2021 年人口约 20 万，2024 年起与北约克郡合成的联合管理局有民选市长；议会管教育、住房与垃圾，警察与医院归国家机构。老城在乌斯河与福斯河汇合处的城墙之内，大教堂、肉铺街与城堡塔在里面，火车站与国家铁路博物馆在城墙外的西侧，大学在东南郊；乌斯河的洪水是这座城反复经历的事。初来的人最容易犯的错，是把城墙内的老城当作约克市，而议会辖区包括城墙外几十个村庄，大多数市民住在城墙之外。",
     layout:
       "约克的老城区被城墙围在乌斯河两岸，可以沿墙走一圈（约 3.4 公里）。大教堂（York Minster）是老城的制高点和方向标；“肉铺街”（The Shambles）是最有名的一条中世纪窄巷。河边低地历史上常发洪水。城墙外是维多利亚时期随铁路发展起来的街区。",
     gettingAround:
@@ -2902,6 +3145,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   edinburgh: {
     identity:
       "爱丁堡是苏格兰的首府，人口约 55 万，建在几座火山岩丘和冰川刻蚀的地形上，老城和新城一起被列为世界遗产。城市以城堡、8 月的国际艺术节和军乐节、以及启蒙运动的历史闻名。它不是英国首都，但有自己的议会。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Edinburgh (City of Edinburgh Council unitary ~263 km²; ~530,700 2024; Scottish Parliament at Holyrood; Old and New Towns UNESCO 1995; Leith merged 1920; trams to airport; Festival August)
+    howItWorks:
+      "爱丁堡是苏格兰的首府，苏格兰议会与政府都在这里，医疗、教育与警察由苏格兰政府掌管；爱丁堡市议会是一个单一制议会，辖区约 263 平方公里，2024 年人口约 53 万，管教育、住房与垃圾。城市分成两片：城堡山下的老城是中世纪的街巷，皇家一英里从城堡通到荷里路德宫，王子街对面的新城是 18 世纪的格网，两者 1995 年一起列入世界遗产；利斯是 1920 年并入的港口区，亚瑟王座在城东，有轨电车通往机场，八月的艺术节把人口翻倍。初来的人最容易犯的错，是把老城与新城当作整个爱丁堡，而城市向南、向西延伸了十几公里，利斯的港口是另一种生活。",
     layout:
       "爱丁堡的地形很特别：城堡坐落在一块火山岩塞（volcanic plug）上，从岩塞向东拖出一道由冰川堆积形成的斜坡，中世纪老城就沿这道“皇家一英里”排布，尽头是荷里路德宫和一座叫“亚瑟王座”的死火山。北边隔着一条填平的谷地是 18 世纪规划的乔治王朝式新城，网格状、宽街道。",
     gettingAround:
@@ -2935,6 +3181,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   aberdeen: {
     identity:
       "阿伯丁是苏格兰东北部的港口城市，在迪河与顿河之间入海处，都会区约 23 万人。因为大量本地建筑用当地的灰色花岗岩，被称为“花岗岩之城”，晴天云母在阳光下会闪光。20 世纪 70 年代北海油田开发后，它成了欧洲的“石油之都”和海上作业的补给、直升机基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Aberdeen (Aberdeen City Council unitary ~186 km²; ~224,000 2022; separate from Aberdeenshire; Granite City; university 1495; Dee/Don; harbour, oil since 1970s; heliport; airport at Dyce)
+    howItWorks:
+      "阿伯丁是苏格兰的第三大城市，阿伯丁市议会是一个单一制议会，辖区约 186 平方公里，2022 年人口约 22 万，与四周的阿伯丁郡议会是两个政府；议会管教育、住房与垃圾，医疗与警察归苏格兰政府。城市在迪河与唐河两个河口之间，联合街是市中心的主街，灰色花岗岩让它被叫作“花岗岩城”，1495 年创办的大学在北面的老阿伯丁；1970 年代北海发现石油后，港口与直升机场成了欧洲海上油气的基地，机场在戴斯。初来的人最容易犯的错，是把阿伯丁当作一座渔港小城，而它是欧洲石油工业的陆上总部之一。",
     layout:
       "阿伯丁建在两条河之间的一道花岗岩台地上，主街联合街（Union Street）是一条笔直的花岗岩长街。城市有一片长长的沙滩就在市区边上，港口繁忙、以海上供应船和渔船为主。老城（Old Aberdeen）在北面顿河一侧，保留着中世纪大学和大教堂。",
     gettingAround:
@@ -2950,6 +3199,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   inverness: {
     identity:
       "因弗内斯是苏格兰高地的首府，位于尼斯河汇入马里湾处、大峡谷（Great Glen）的东北端，市区人口约 6 万，是英国最北的城市之一，也是探索高地、天空岛和北部海岸线的门户。名字在盖尔语里意为“尼斯河口”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Inverness (~48,000 2022; seat of the Highland Council, largest council area in the UK ~25,000 km², ~235,000; city status 2000; River Ness; Loch Ness ~10 km; Culloden; Kessock Bridge; airport)
+    howItWorks:
+      "因弗内斯是苏格兰高地的首府，2022 年人口约 4.8 万，2000 年获得城市地位；它是高地议会的所在地，这个议会管着英国面积最大的地方辖区，约 2.5 万平方公里、23 万人，从这里一直到北海岸，议会管教育、住房与道路，医疗与警察归苏格兰政府。城市在内斯河注入马里湾的河口，市中心在河的东岸，凯索克大桥通向北面的黑岛，卡洛登古战场在城东，尼斯湖在西南约 10 公里，机场在城东北。盖尔语的地名随处可见。初来的人最容易犯的错，是以为尼斯湖在城里，而它在城外，而且“高地”是一片比比利时还大的辖区，因弗内斯只是它的一角。",
     layout:
       "因弗内斯很小，尼斯河穿城而过，河心有几座相连的小林地岛。红砂岩的城堡（现为法院）立在河边高地上。城市西南方就是大峡谷——一条沿断层带笔直切开苏格兰的谷地，串起尼斯湖等几个狭长深湖，喀里多尼亚运河把它们连通、可通航。",
     gettingAround:
@@ -2965,6 +3217,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cardiff: {
     identity:
       "卡迪夫是威尔士的首府，位于威尔士南部、塔夫河入海处，都会区约 48 万人。19 世纪它是世界最大的煤炭输出港之一，如今是威尔士的政治、媒体和体育中心，威尔士议会和一座常办大型赛事的体育场都在市中心。威尔士（Wales）这个名字也被带到了世界各地——比如澳大利亚的“新南威尔士州”，是库克在 1770 年命名的。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cardiff (City and County of Cardiff ~141 km²; 362,400 2021; capital of Wales 1955; Senedd at Cardiff Bay 1999; Welsh Government at Cathays Park; castle; Cardiff Bay barrage; Penarth in Vale of Glamorgan; bilingual)
+    howItWorks:
+      "加的夫是威尔士的首府，1955 年起是首都，威尔士议会在加的夫湾，威尔士政府在卡赛斯公园，掌管医疗与教育；加的夫市郡议会是一个单一制议会，辖区约 141 平方公里，2021 年人口约 36 万，管教育、住房与垃圾，警察归国家机构。市中心在城堡与拱廊街一带，千禧体育场在市中心的河边，加的夫湾是 1990 年代拦坝后改造的旧码头区，卡赛斯是大学区，路牌威尔士语与英语并列，机场在西南 20 公里的罗斯。初来的人最容易犯的错，是把海湾对岸的彭纳斯当作加的夫，而它在格拉摩根谷议会，是另一座镇。",
     layout:
       "卡迪夫建在几条河汇入布里斯托尔湾处的低地上，地势平缓，北面渐渐升高为山谷区（historic 采煤谷地）。市中心紧凑，城堡就在正中间；往南是改造过的卡迪夫湾（旧码头区），有威尔士千禧中心和议会大楼。城市多公园绿地。",
     gettingAround:
@@ -2980,6 +3235,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   belfast: {
     identity:
       "贝尔法斯特是北爱尔兰的首府，位于爱尔兰岛东北、拉甘河汇入贝尔法斯特湾处，都会区约 67 万人。19 世纪末到 20 世纪初它是世界级的造船、亚麻和烟草工业中心，泰坦尼克号就在这里建造。经历过数十年的冲突后，近二三十年城市面貌和经济有很大变化。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Belfast (Belfast City Council ~133 km²; 345,418 2021; metro ~700,000; capital of Northern Ireland, Stormont; Lagan; City Hall; Titanic Quarter; Queen's University; Cave Hill; two airports; UNESCO City of Music 2021)
+    howItWorks:
+      "贝尔法斯特是北爱尔兰的首府，北爱尔兰议会在城东的斯托蒙特，医疗、教育与警察由北爱尔兰的行政机构掌管；贝尔法斯特市议会辖区约 133 平方公里，2021 年人口约 35 万，都会区约 70 万，市议会管垃圾、公园与规划，职责比英格兰的议会小。市中心在拉根河西岸的市政厅与多尼戈尔广场，泰坦尼克区是旧船厂改成的新区，哈兰德与沃尔夫的两座黄色龙门吊是天际线，大教堂区是酒吧与画廊的街区，女王大学在城南，凯夫山在城北俯瞰全城；市区机场在河边，国际机场在西面约 25 公里。初来的人最容易犯的错，是把贝尔法斯特当作一座小城，而它是一个 70 万人都会区的核心，两座机场分属两个方向。",
     layout:
       "贝尔法斯特建在被丘陵环抱的河口低地上，市中心以维多利亚式的市政厅为核心。拉甘河东岸是重新开发的“泰坦尼克区”（旧船厂）。城市西部和北部有一些以路牌、壁画和界墙区分的社区，历史话题比较敏感。周围的丘陵（如卡文山）从市里就能看到。",
     gettingAround:
@@ -2996,6 +3254,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bath: {
     identity:
       "巴斯在英格兰西南部的埃文河谷里，人口约9.4万（2021年普查），是英国唯一有天然温泉的城市。罗马人约公元60年在泉眼上建起浴场和神庙，称这里为“苏利斯之水”（Aquae Sulis）；十八世纪它成为时髦的温泉疗养地，用蜂蜜色石灰岩建起皇家新月楼（1774年）、圆形广场和普尔特尼桥等乔治王时代建筑。1987年巴斯整座城市列入世界遗产，2021年又作为“欧洲大温泉城镇”之一再次列入。简·奥斯汀曾在此居住，2006年开放的巴斯温泉浴场让人重新泡上温泉水。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bath (~94,000 2021 built-up area; within Bath and North East Somerset unitary council ~193,000; UNESCO 1987 whole city + Great Spa Towns 2021; Roman Baths; Royal Crescent; Avon; Bath Spa station; Bristol 20 km; two universities; ~6 million visitors)
+    howItWorks:
+      "巴斯是萨默塞特的一座城，2021 年城区人口约 9.4 万，但它没有自己的市议会：管理它的是巴斯及东北萨默塞特议会，辖区约 19 万人，议会所在地在巴斯，管教育、住房与垃圾，警察与医院归国家机构。整座城 1987 年列入世界遗产，2021 年又作为“欧洲大温泉城”之一再次列入：罗马浴场与修道院在埃文河湾的老城中心，皇家新月楼与圆形广场在北面的山坡上，巴斯温泉站在城南，布里斯托在西面 20 公里，每年约 600 万游客涌入。初来的人最容易犯的错，是去找“巴斯市议会”，而这座城由一个更大的议会管理，巴斯只是它的首府。",
     layout:
       "市中心在埃文河北岸的河湾里，罗马浴场、巴斯修道院和泵房在正中的修道院广场；普尔特尼桥在东侧跨河，桥上有商店，桥下是马蹄形堰。乔治王时代的街区在市中心北面的坡上：圆形广场、皇家新月楼和皇家维多利亚公园；简·奥斯汀中心在盖伊街。巴斯温泉站在市中心南面靠河。城市四周是丘陵，南面的普赖尔公园景观园和东北的巴斯萨姆丘有俯瞰全城的视野。",
     gettingAround:
@@ -3010,6 +3271,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   oxford: {
     identity:
       "牛津在英格兰中南部泰晤士河（这段叫伊西斯河）与查韦尔河的交汇处，人口约16.2万（2021年普查）。牛津大学从十一世纪末开始有教学活动，是英语世界最古老的大学，三十多个学院散布在市中心，尖塔林立，所以有“尖塔之城”之称：博德利图书馆（1602年）、拉德克利夫图书馆的圆顶、基督教会学院的大食堂和阿什莫林博物馆（1683年，英国最早的公共博物馆）都是标志。北面约13公里的布莱尼姆宫是丘吉尔的出生地和世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Oxford (Oxford City Council district ~46 km², 166,034 2024, under Oxfordshire County Council two-tier; university of 39 colleges without a campus; Cowley Mini plant; park-and-ride; no airport; station)
+    howItWorks:
+      "牛津是牛津郡的一座城，2024 年人口约 16.6 万，实行两级地方政府：牛津市议会管住房、垃圾与规划审批，牛津郡议会管学校、道路与社会服务，警察与医院归国家机构。牛津大学没有校园，39 个学院散在市中心的街巷里，博德利图书馆与拉德克利夫图书馆在中心，考利的汽车厂在城东南，泰晤士河在这里叫伊西斯河；市区限制汽车，五个停车换乘场在环路上，火车站在城西，没有机场，希思罗在东南 65 公里。初来的人最容易犯的错，是打听“牛津大学在哪里”，而它没有一个入口，整座老城就是它。",
     layout:
       "市中心很紧凑：卡尔法克斯塔是老城的十字路口，高街向东到莫德林桥，宽街上有博德利图书馆、谢尔登剧院和布莱克韦尔书店，拉德克利夫广场在两街之间；基督教会学院在圣奥尔德盖特街南段，草地一直延伸到河边。阿什莫林博物馆在博蒙特街，牛津火车站在城西。查韦尔河沿大学公园和莫德林学院流过，撑篙从莫德林桥或查韦尔船屋出发。杰里科区在城北是餐饮区，考利路在东面。",
     gettingAround:
@@ -3024,6 +3288,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cambridge: {
     identity:
       "剑桥在英格兰东部的剑河畔，人口约14.6万（2021年普查）。剑桥大学1209年由从牛津出走的学者建立，三十一个学院沿剑河排列，国王学院礼拜堂（1446年动工）的扇形拱顶是英国哥特建筑的代表，三一学院的大庭院、皇后学院的数学桥、圣约翰学院的叹息桥都在河边；“后园”（The Backs）是学院背后临河的草地和花园，撑篙是看它们的经典方式。菲茨威廉博物馆收藏丰富。城市周边是被称为“硅沼”的科技产业带。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cambridge (Cambridge City Council district ~41 km², ~145,700 2021, under Cambridgeshire County Council; Cambridgeshire and Peterborough Combined Authority mayor 2017; 31 colleges along the Cam; Silicon Fen/Science Park; Addenbrooke's; guided busway; cycling; London ~50 min)
+    howItWorks:
+      "剑桥是剑桥郡的一座城，2021 年人口约 14.6 万，实行两级地方政府：剑桥市议会管住房、垃圾与规划审批，剑桥郡议会管学校与道路，2017 年起剑桥郡与彼得伯勒联合管理局有民选市长管交通与经济。大学的 31 个学院沿着剑河与“后园”排开，没有校园，国王学院礼拜堂是坐标；城北的科学园是“硅沼”科技集群的发源地，城南的阿登布鲁克医院周围是生物医药园区，导向公交专用道连接它们，火车到伦敦约 50 分钟，自行车是市内出行的主角。初来的人最容易犯的错，是把剑桥当作一座大学城，而它同时是欧洲最大的科技产业集群之一，学生在市民里只占少数。",
     layout:
       "老城和学院集中在剑河东岸约1平方公里内：国王学院、三一学院、圣约翰学院沿国王大道和三一街一线，皇后学院在南端，后园在河西岸；市场广场在中心。菲茨威廉博物馆在特朗平顿街南段。撑篙从磨坊巷、奎赛德（麦格达伦桥）出发，往北到格兰切斯特草地是另一条撑篙线。火车站在市中心东南约2公里。",
     gettingAround:
@@ -3038,6 +3305,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   brighton: {
     identity:
       "布莱顿在英格兰南岸的英吉利海峡边，伦敦以南约80公里，与霍夫合为布莱顿—霍夫市，人口约28.4万（2021年普查）。十八世纪起它是伦敦人的海滨疗养地，摄政王（后来的乔治四世）在这里建了印度—伊斯兰风格的皇家行宫（1787–1823年）；1899年开放的布莱顿宫码头是英国最著名的游乐码头，2016年建成的 i360 观景塔高162米。小巷区（The Lanes）是渔村时代留下的窄巷，如今是独立商店和餐馆。布莱顿以开放多元著称，8月的骄傲节是英国最大的之一；东面约13公里是七姐妹白垩崖。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Brighton and Hove (unitary authority, city 2001; ~83 km²; ~283,900 2024; Brighton and Hove merged 1997; Palace Pier; Royal Pavilion; The Lanes; Hove separate identity; South Downs; London ~1 h; two universities)
+    howItWorks:
+      "布莱顿在行政上叫“布莱顿与霍夫”，是 1997 年由两座镇合并而成的单一制议会，2001 年获得城市地位，市域约 83 平方公里，2024 年人口约 28 万；议会管教育、住房与垃圾，警察与医院归国家机构。布莱顿是东半边的海滨度假城，宫殿码头、皇家行宫与巷子区在这里；霍夫是西半边的住宅区，有自己的海滨与身份，“其实是霍夫”是本地人的口头禅；南唐斯在城北，火车到伦敦约一小时，两所大学在城郊。初来的人最容易犯的错，是把布莱顿当作整座城的名字，而它只是一半，另一半的人会纠正你。",
     layout:
       "市区沿海岸东西展开：皇家行宫和皇家行宫花园在市中心，旁边是小巷区和北莱恩（North Laine）的独立商店街；海滨大道下面是海滩、码头和沿海的酒吧、餐馆，宫码头在市中心正南的海边，i360 在西面的海滨，老西码头的残骸在它旁边。霍夫在西面，是安静的住宅区和草坪海滨；凯姆普顿在东面，有马场和沙滩小火车。火车站在市中心北面的坡上。七姐妹白崖和比奇角在东面。",
     gettingAround:
@@ -3052,6 +3322,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "newcastle-upon-tyne": {
     identity:
       "泰恩河畔纽卡斯尔是英格兰东北部的中心城市，在泰恩河北岸，人口约32万（2021年普查），与南岸的盖茨黑德隔河相望。它从罗马时代的泰恩河桥堡起家，1080年的城堡给了它名字，十九世纪靠煤炭和造船兴盛，1928年的泰恩桥是城市的标志，河两岸的码头区如今是酒吧、餐馆和艺术空间（BALTIC 当代艺术中心、盖茨黑德音乐厅），2001年的千禧桥是可倾转的步行桥。格雷街被称为英格兰最美的街道之一，格兰杰镇是1830年代规划的新古典街区；哈德良长城的遗迹从市区向西延伸；盖茨黑德南面的“北方天使”雕塑高20米。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Newcastle upon Tyne (metropolitan borough ~114 km²; ~320,600 2024; Tyneside urban area ~800,000 with Gateshead across the Tyne as a separate borough; North East Combined Authority mayor 2024; Quayside bridges; Grainger Town; Tyne and Wear Metro; two universities; airport)
+    howItWorks:
+      "纽卡斯尔是泰恩河北岸的都市自治市，市域约 114 平方公里，2024 年人口约 32 万，泰恩赛德城区约 80 万人，河南岸的盖茨黑德是另一个自治市；2024 年起东北联合管理局有民选市长管交通，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在河岸的高地上，格雷街与格兰杰镇是 1830 年代的新古典街区，码头区的七座桥连着两岸，泰恩桥 1928 年建成，圣詹姆斯公园球场就在市中心，泰恩威尔地铁贯通两岸与机场，两所大学在市中心北侧。初来的人最容易犯的错，是把河对岸的盖茨黑德当作纽卡斯尔，而过桥就换了议会，赛奇音乐厅与波罗的海美术馆都在盖茨黑德。",
     layout:
       "市中心在泰恩河北岸的坡上：码头区在河边，泰恩桥、千禧桥和中世纪的城堡在河岸上方，格雷街从纪念碑向南通到河边，格兰杰镇和格雷纪念碑周围是商业中心，中央车站在西南。杰斯蒙德在北面是学生和餐饮区，奥斯本路一带酒吧多。对岸的盖茨黑德码头有 BALTIC 和音乐厅。北方天使在盖茨黑德南郊的 A1 公路旁；哈德良长城的博物馆和沃尔森德的塞格杜努姆堡在东面，长城主体在西面的乡间。机场在西北约12公里。",
     gettingAround:
@@ -3066,6 +3339,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   stirling: {
     identity:
       "斯特灵在苏格兰中部福斯河的渡口上，是高地与低地之间的门户，人口约3.9万（2021年，2002年获城市地位）。斯特灵城堡立在火山岩上，是苏格兰王室的城堡之一（玛丽女王在此加冕）；1297年的斯特灵桥之战（威廉·华莱士）和1314年的班诺克本之战（罗伯特·布鲁斯）都在城边，1869年建成的华莱士纪念碑在河对岸的修道院峭壁上。老城的石头街道从城堡沿山脊向下，圣路德教堂是1567年詹姆斯六世加冕的地方。洛蒙德湖与特罗萨克斯国家公园在西北约30公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Stirling (~38,600 2022; Stirling Council area ~2,200 km², ~93,750 incl. Trossachs/Callander; city status 2002; castle on the crag; Wallace Monument; Bannockburn; Highland Boundary Fault; university at Bridge of Allan; rail ~45 min to Edinburgh/Glasgow)
+    howItWorks:
+      "斯特灵是苏格兰中部的小城，2022 年人口约 3.9 万，2002 年获得城市地位；它是斯特灵议会的所在地，议会辖区约 2,200 平方公里、9.4 万人，向北一直伸进特罗萨克斯的高地，管教育、住房与道路，医疗与警察归苏格兰政府。城堡建在火山岩的岩壁上，老城沿坡而下，华莱士纪念碑在河对岸的山上，班诺克本古战场在城南，高地边界断层从城边穿过，“像一枚胸针把高地与低地扣在一起”；大学在北面的布里奇奥夫艾伦，火车到爱丁堡与格拉斯哥各约 45 分钟。初来的人最容易犯的错，是把斯特灵当作一座城堡镇，而它曾是苏格兰的都城，议会辖区里有湖泊与山地。",
     layout:
       "城堡在老城最高处的岩山顶上，老城沿山脊向下：阿盖尔宅邸、圣路德教堂、老市政厅（旧监狱）和市场十字沿城堡崖街分布；新城和火车站在山脚下的平地，商店集中在默里广场一带。福斯河从城北流过，斯特灵老桥（十五世纪）在河上，华莱士纪念碑在河对岸的修道院峭壁上（约3公里）；班诺克本战场遗址在城南约3公里。斯特灵大学在北面的布里奇奥夫艾伦。",
     gettingAround:
@@ -3080,6 +3356,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   portree: {
     identity:
       "波特里是苏格兰内赫布里底群岛斯凯岛的首府和最大的镇，人口约2300（2022年普查），盖尔语名 Port Rìgh 意为“国王的港口”。小镇围着一个被峭壁环抱的天然港湾，港边一排彩色房子和托马斯·特尔福德设计的码头是它的标志。它是斯凯岛观光的中心：北面的老人石、奎雷因，西南的仙女池和库林山，西面的邓韦根城堡（麦克劳德家族的城堡，苏格兰有人持续居住最久的城堡之一）和塔利斯克酒厂都从这里出发。斯凯岛约四成居民会说盖尔语。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Portree (2,281 2022; largest settlement of Skye; within Highland Council area, no island council; harbour; Skye Bridge via A87; ~74 miles from Inverness; Gaelic ~38%)
+    howItWorks:
+      "波特里是斯凯岛上最大的聚落，2022 年人口约 2,300，是岛上唯一称得上镇的地方，但它没有自己的议会：斯凯岛属于因弗内斯的高地议会，议会的办事处在镇上，医疗与警察归苏格兰政府。镇子围着一个小海港，彩色的房子排在码头边，是岛上的商店、医院与公交的中心；斯凯桥在东南 55 公里的凯利金，老人石、奎雷因、仙女池散在岛的各处，岛长约 80 公里，公交稀少，约四成居民说盖尔语。初来的人最容易犯的错，是把波特里当作斯凯岛，而岛上的景点都在几十公里外，没有车寸步难行。",
     layout:
       "小镇在港湾西岸的坡上，萨默莱德广场是中心，港口在下方，港边的彩色房屋和码头在东侧。老人石在北面约10公里的特罗特尼什半岛上，再往北是基尔特岩、奎雷因和斯塔芬；仙女池在西南约30公里的格伦布里特尔，库林山在它上方；邓韦根城堡在西面约35公里，塔利斯克酒厂在西南约25公里的卡博斯特；斯利特半岛和阿马代尔渡轮码头在岛南。斯凯桥在岛东南的凯尔，连接大陆的洛哈尔什凯尔。",
     gettingAround:
@@ -3094,6 +3373,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   windermere: {
     identity:
       "温德米尔是英格兰湖区国家公园的门户小镇，在坎布里亚郡，人口约4800（2021年）；它与湖边的鲍内斯连成一片，是湖区最热闹的地方。温德米尔湖长约17公里，是英格兰最大的天然湖；湖区国家公园1951年设立，2017年以“湖区”之名列入世界遗产，表彰其被浪漫主义诗人和田园文化塑造的景观：华兹华斯在格拉斯米尔的鸽舍，比阿特丽克斯·波特在附近索里的山顶农舍，都从这里出发。1847年通车的温德米尔支线铁路让它成为最容易坐火车到达的湖区小镇。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Windermere (town ~8,000 with Bowness 2021; Westmorland and Furness unitary council 2023; Lake District National Park Authority for planning; the town lies 1.5 km from the lake, Bowness on the shore; railway 1847; lake is the largest in England; UNESCO Lake District 2017)
+    howItWorks:
+      "温德米尔既是英格兰最大的湖的名字，也是湖边一座镇的名字，2021 年镇与鲍内斯合计约 8,000 人；它属于 2023 年设立的威斯特摩兰与弗内斯单一制议会，而建设与规划由湖区国家公园管理局审批，警察与医院归国家机构。温德米尔镇在 1847 年铁路终点站周围长出来，离湖还有 1.5 公里；湖边的镇是鲍内斯，码头、游船与餐馆都在那里，安布尔赛德在湖的北端，湖区 2017 年列入世界遗产。初来的人最容易犯的错，一是在温德米尔火车站下车就找湖，而湖在鲍内斯，二是把湖叫作“温德米尔湖”，本地人只说“温德米尔”。",
     layout:
       "温德米尔镇在火车站周围的坡上，鲍内斯在西南约2公里的湖边，有码头、游船和商店；奥雷斯特山头在火车站北面约1公里，20分钟步道就能俯瞰全湖。湖西岸是山顶农舍所在的索里和格里泽代尔森林，从鲍内斯坐渡船过湖；湖北端是安布尔赛德（约8公里），再往北是赖德尔和格拉斯米尔（约15公里）；朗代尔山谷在西北，凯西克和德文特湖在北面约35公里。",
     gettingAround:
@@ -4280,6 +4562,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   granada: {
     identity:
       "格拉纳达在安达卢西亚，内华达山脉脚下，以阿尔罕布拉宫闻名——这是伊比利亚半岛保存最完好的伊斯兰王朝宫殿建筑群，1492年这里是摩尔人在西班牙的最后据点。加勒比岛国格林纳达（Grenada）的名字即源自“格拉纳达”，1498年哥伦布以此为其命名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Granada (municipality ~88 km²; 233,532 2024; metro ~573,000; province capital, Andalusia; 738 m; Alhambra UNESCO 1984, Albaicín; Sacromonte; Sierra Nevada ~30 km; university ~47,000; metro 2017; airport ~15 km; 1492)
+    howItWorks:
+      "格拉纳达是安达卢西亚格拉纳达省的省会，由民选的市政厅治理，市域约 88 平方公里，2024 年人口约 23 万，都会区约 57 万；自治区管医疗与教育，市政府管规划与地方服务。城市建在海拔 738 米的山脚，四条河在此汇合：阿尔罕布拉宫在东面的山上，1984 年与对面的阿尔拜辛区一起列入世界遗产，萨克罗蒙特的洞穴在山谷里，大教堂与市中心在平地上，1492 年最后的纳斯里德王国在这里终结；约 4.7 万学生让它成为一座大学城，轻轨 2017 年通车，机场在西面 15 公里，内华达山的雪场在东南 30 公里，酒吧的小吃免费。初来的人最容易犯的错，是把格拉纳达当作一座宫殿，而宫殿在山上，城在山下，两者之间要爬坡。",
     layout:
       "阿尔罕布拉宫建在城市东侧的一座山丘上，俯瞰全城；阿尔拜辛区是老城西北一片保留摩尔风格窄巷的白墙街区，与阿尔罕布拉宫隔一条河谷相望；市中心大教堂周边是主要商业区。",
     gettingAround:
@@ -4295,6 +4580,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   malaga: {
     identity:
       "马拉加是安达卢西亚地中海沿岸的港口城市，是“太阳海岸”（Costa del Sol）的门户，也是画家毕加索的出生地。城市历史可追溯至腓尼基时代，是伊比利亚半岛最古老的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Málaga (municipality ~398 km²; ~590,000 2024, sixth in Spain; province capital; Costa del Sol with Torremolinos/Marbella separate; Alcazaba/Gibralfaro; Picasso, Pompidou; airport third busiest; cruise port; AVE 2007 ~2.5 h Madrid; technology park 1992)
+    howItWorks:
+      "马拉加是安达卢西亚马拉加省的省会，西班牙第六大城市，由民选的市政厅治理，市域约 398 平方公里，2024 年人口约 59 万；自治区管医疗与教育，市政府管规划与地方服务。城市围着港口生长：老城在阿尔卡萨巴城堡与大教堂之间，毕加索博物馆与蓬皮杜分馆在城里，一号码头是改造后的海滨，东面的马拉盖塔是市区的海滩；太阳海岸的度假地托雷莫利诺斯、马贝拉各是独立的市镇，机场是西班牙第三繁忙的，近郊铁路连着机场与海岸，高铁 2007 年通车，到马德里约两个半小时，1992 年建的科技园有近 3 万人在此工作。初来的人最容易犯的错，是把马拉加当作太阳海岸的一个度假村，而它是一座有大学、科技园与港口的省会，度假村在西面的别的市镇。",
     layout:
       "老城以毕加索博物馆和阿尔卡萨巴摩尔城堡为中心，希布拉法罗山城堡俯瞰全城和港口；马拉格塔海滩就在老城边缘，是少有的市中心步行可达的城市沙滩；蓬皮杜中心马拉加分馆等新美术馆近年在港口区落成。",
     gettingAround:
@@ -4310,6 +4598,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bilbao: {
     identity:
       "毕尔巴鄂是西班牙北部巴斯克自治区最大的城市，内维隆河穿城而过，历史上是工业和港口重镇，1997年古根海姆博物馆落成后，城市从传统工业城市转型为当代建筑与艺术地标，被称为“毕尔巴鄂效应”的起点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bilbao (municipality 41.5 km²; 347,342 2024; metro ~1.04 million with Barakaldo/Getxo separate; Biscay capital; largest Basque city, government seat Vitoria-Gasteiz; charter 1300; Guggenheim 1997; Foster metro; Basque/Spanish; airport ~12 km)
+    howItWorks:
+      "毕尔巴鄂是比斯开省的省会，巴斯克自治区最大的城市，由民选的市政厅治理，市域只有约 42 平方公里，2024 年人口约 35 万，而沿河口的大毕尔巴鄂约 104 万人，巴拉卡尔多、赫乔各是独立的市镇；巴斯克政府在维多利亚，管医疗与教育，比斯开省有自己征税的权力。城市沿内维翁河的河口展开，1300 年建城的七条街老城在河的一侧，阿班多的商业区在另一侧，1997 年的古根海姆博物馆把废弃的码头区变成了新城，福斯特设计的地铁贯通河口两岸；巴斯克语与西班牙语并为官方语言，机场在北面 12 公里。初来的人最容易犯的错，是把毕尔巴鄂当作巴斯克的首府，而政府在维多利亚，毕尔巴鄂是它的经济中心。",
     layout:
       "老城（Casco Viejo）在内维隆河东岸，七条老街是历史商业区；河对岸的阿班多伊巴拉一带是原港口工业区改造成的现代滨河区，古根海姆博物馆的钛金属曲面建筑就矗立在这里；埃切瓦里亚广场周边是主要商业区。",
     gettingAround:
@@ -4325,6 +4616,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "santiago-de-compostela": {
     identity:
       "圣地亚哥-德孔波斯特拉是西班牙西北部加利西亚自治区首府，是天主教三大朝圣地之一“圣雅各之路”（Camino de Santiago）的终点，中世纪以来吸引欧洲各地的朝圣者步行数百公里前来。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santiago de Compostela (municipality 220 km²; ~100,000 2025; capital of Galicia (Xunta), though A Coruña and Vigo larger; old town UNESCO 1985; cathedral, end of the Camino, hundreds of thousands of pilgrims/yr; university 1495; Galician/Spanish; airport 12 km; ~1,800 mm rain)
+    howItWorks:
+      "圣地亚哥—德孔波斯特拉是加利西亚自治区的首府，自治区政府与议会在这里，管医疗与教育，但它不是最大的城市，拉科鲁尼亚与维戈都比它大；市镇由民选的市政厅治理，市域约 220 平方公里，2025 年人口约 10 万。老城 1985 年列入世界遗产，大教堂与奥布拉多伊罗广场是圣雅各之路的终点，每年数十万朝圣者走到这里，1495 年创办的大学让四分之一的市民是学生；加利西亚语与西班牙语并为官方语言，机场在东面 12 公里，火车到马德里约 3 小时，年降水约 1,800 毫米，雨是它的日常。初来的人最容易犯的错，是把圣地亚哥当作一座朝圣终点的小镇，而它是一个自治区的政治中心与大学城。",
     layout:
       "老城以圣地亚哥主教座堂（据传埋葬使徒圣雅各遗骸）为中心，石板小巷、修道院和罗马式—巴洛克风格建筑交织，整个老城1985年列入世界文化遗产；主教座堂前的奥夫拉多依罗广场是朝圣者步行数百公里后的终点标志。",
     gettingAround:
@@ -4340,6 +4634,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zaragoza: {
     identity:
       "萨拉戈萨是阿拉贡自治区首府，西班牙第五大城市，坐落在埃布罗河与其支流的交汇处，自罗马时代起就是埃布罗盆地的核心城市，也是通往比利牛斯山和北部沿海的交通枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zaragoza (municipality 974 km²; ~699,000 2024, among the five largest in Spain, ~half of Aragon; Aragon capital (Cortes); Ebro; Basílica del Pilar; Aljafería; Caesaraugusta; Expo 2008; tram; AVE Madrid ~75 min/Barcelona ~90 min; Opel 1982; Cierzo)
+    howItWorks:
+      "萨拉戈萨是阿拉贡自治区的首府，自治区议会与政府在这里，管医疗与教育；市镇由民选的市政厅治理，市域约 974 平方公里，2024 年人口约 70 万，是西班牙人口最多的五座城市之一，占了阿拉贡的一半。城市在埃布罗河的南岸，皮拉尔圣母大教堂与罗马时期的凯撒奥古斯塔遗址在老城，阿尔哈费里亚宫在城西，2008 年世博会的场地在河湾里，一条有轨电车线穿过市区，高铁到马德里约 75 分钟、到巴塞罗那约 90 分钟，欧宝工厂与物流园区是它的产业，冬天的“西尔索”风从西北吹来。初来的人最容易犯的错，是把萨拉戈萨当作马德里与巴塞罗那之间的过路站，而它是西班牙第五大城市，阿拉贡一半的人住在这里。",
     layout:
       "老城以皮拉尔圣母大教堂（巴洛克风格，濒临埃布罗河）和罗马时代城墙遗迹为中心，穆德哈尔风格建筑（融合伊斯兰装饰工艺的基督教建筑）是本地一大特色，2001年列入世界文化遗产。",
     gettingAround:
@@ -4355,6 +4652,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   palma: {
     identity:
       "帕尔马是巴利阿里群岛最大岛屿马略卡岛的首府，濒临帕尔马湾，背靠特拉蒙塔纳山脉，是地中海最受欢迎的度假目的地之一，也保留着深厚的历史城区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Palma (municipality 208.6 km²; 438,234 2024, ~half of Mallorca; capital of the Balearic Islands (parliament, government) and seat of the Consell de Mallorca; La Seu; Bellver; Playa de Palma in municipality; Catalan/Spanish; airport 8 km, 31 million passengers 2023; cruise port; Sóller train)
+    howItWorks:
+      "帕尔马是巴利阿里群岛自治区的首府，自治区议会与政府在这里，管医疗与教育，马略卡岛议会也在城里，管岛内的道路与社会服务；市镇由民选的市政厅治理，市域约 209 平方公里，2024 年人口约 44 万，占了马略卡岛的一半。大教堂在海湾边的老城顶上，贝尔维尔城堡在西面的山上，海滨大道沿海湾向西，帕尔马海滩的度假带在东面的市域内，加泰罗尼亚语与西班牙语并为官方语言；机场在东面 8 公里，2023 年旅客 3,100 万，是西班牙第三繁忙的，邮轮码头在港口，索列尔的老火车从市中心出发。初来的人最容易犯的错，是把帕尔马当作一个度假村，而它是一座 44 万人的首府，度假村在岛的四周。",
     layout:
       "老城以帕尔马主教座堂（哥特式，濒海而建）为中心，贝尔维尔城堡俯瞰全城；帕尔马湾沿岸是绵延的沙滩度假区；岛屿西北的特拉蒙塔纳山脉是徒步和骑行胜地，东岸则分布着众多岩洞和小海湾。",
     gettingAround:
@@ -4370,6 +4670,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "santa-cruz-de-tenerife": {
     identity:
       "圣克鲁斯-德特内里费是加那利群岛最大岛屿特内里费岛的首府，濒临大西洋，是通往泰德峰的门户城市。加那利群岛虽然靠近非洲西北沿海，但整体属西班牙领土，气候常年温和，是欧洲人的冬季度假热门地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santa Cruz de Tenerife (municipality ~150 km²; ~212,000 2025; urban ~538,000; co-capital of the Canaries alternating with Las Palmas; province capital; Cabildo de Tenerife; port; Auditorio; Anaga biosphere 2015, 82% of municipality natural; Las Teresitas; tram to La Laguna; Tenerife North 10 km, South 60 km; carnival)
+    howItWorks:
+      "圣克鲁斯—德特内里费是加那利群岛自治区的两个首府之一，与拉斯帕尔马斯轮流承担自治区政府的所在地，也是同名省的省会与特内里费岛议会的所在地——岛议会管岛内的道路、水与社会服务；市镇由民选的市政厅治理，市域约 150 平方公里，2025 年人口约 21 万，城区约 54 万。城市围着港口生长，西班牙广场与卡拉特拉瓦的音乐厅在海边，有轨电车通向内陆的拉拉古纳，拉斯特雷西塔斯海滩在东北，阿纳加山脉占了市域的大半，是生物圈保护区；北部机场在 10 公里外，南部机场与度假区在南面 60 公里，二月的狂欢节是世界上最大的之一。初来的人最容易犯的错，是把圣克鲁斯当作度假地，而度假区在岛的南端，这里是岛民的省会与港口。",
     layout:
       "市中心沿海湾展开，西班牙广场是城市地标；从市区向内陆驱车约40分钟可到达泰德国家公园的入口，海拔迅速攀升，沿途能看到从沿海亚热带植被到高山火山荒漠的植被带变化；岛屿北岸多云雾潮湿，南岸干燥晴朗，气候差异明显。",
     gettingAround:
@@ -4386,6 +4689,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "san-sebastian": {
     identity:
       "圣塞瓦斯蒂安（巴斯克语 Donostia）在西班牙北部比斯开湾岸的巴斯克地区，离法国边境约20公里，人口约18.8万（2024年）。贝壳形的拉孔查海滩被认为是欧洲最美的城市海滩之一，两端是乌尔古尔山和伊格尔多山；老城的小吃（pintxos）酒吧和城里密集的米其林餐厅让它成为世界美食之都之一。1953年创办的圣塞瓦斯蒂安国际电影节是欧洲重要的电影节，2016年它是欧洲文化之都；奇利达的雕塑《风之梳》立在海滨西端的礁石上。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): San Sebastián/Donostia (municipality ~61 km²; 188,487 2024; metro ~436,500; Gipuzkoa capital; La Concha; Parte Vieja pintxos; Zurriola surf; Urgull/Igueldo; film festival September; Michelin density; official name Donostia/San Sebastián; France ~20 km; ECoC 2016)
+    howItWorks:
+      "圣塞巴斯蒂安是吉普斯夸省的省会，官方名是双语的“多诺斯蒂亚/圣塞巴斯蒂安”，由民选的市政厅治理，市域约 61 平方公里，2024 年人口约 19 万，都会区约 44 万；巴斯克自治区管医疗与教育，市政府管规划与地方服务。城市围着贝壳湾展开：老城在乌尔古尔山脚，小吃酒吧挤在几条街里，孔查海滩沿湾弯成弧线，伊格尔多山在湾的另一端，乌鲁梅亚河对岸的格罗斯区有祖里奥拉冲浪滩；九月的电影节与密集的米其林餐厅是它的名片，法国边境在东面约 20 公里，机场在边境的翁达里维亚，毕尔巴鄂在西面 100 公里。初来的人最容易犯的错，是把圣塞巴斯蒂安当作一处海滩，而它是一座省会，海滩只是它面朝的那一面。",
     layout:
       "城市围着拉孔查湾展开：老城在乌尔古尔山脚下的港口边，宪法广场是中心，小吃酒吧密集；十九世纪的“中心区”在老城南面，格罗斯区在乌鲁梅亚河对岸，有冲浪的苏里奥拉海滩和库尔萨尔会议中心；拉孔查海滩和翁达雷塔海滩沿湾向西到伊格尔多山（缆车、老游乐园），风之梳在最西端。火车站在河东岸，机场在东面约20公里的翁达里维亚。",
     gettingAround:
@@ -4400,6 +4706,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   toledo: {
     identity:
       "托莱多在马德里以南约70公里的塔霍河大河湾里，建在陡峭的岩石上，人口约8.7万（2025年），是卡斯蒂利亚-拉曼恰自治区的首府。它是西哥特王国的都城、1085年后卡斯蒂利亚王国的重镇，中世纪基督徒、穆斯林和犹太人在此共存，被称为“三种文化之城”；主教座堂（1226–1493年）、阿尔卡萨尔堡、圣玛丽亚·拉·布兰卡犹太会堂（欧洲现存最古老的犹太会堂建筑之一）、圣多梅教堂里埃尔·格列柯的《奥尔加斯伯爵的葬礼》是它的名片，1986年整座老城列入世界遗产。托莱多钢剑和杏仁糖是传统特产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Toledo (municipality 232 km²; ~86,500 2024; capital of Castilla–La Mancha (Cortes) and Toledo province; old city on a hill in a Tagus bend UNESCO 1986; cathedral, Alcázar; three cultures; escalators; AVE ~30 min from Madrid 70 km; new town Santa María de Benquerencia)
+    howItWorks:
+      "托莱多是卡斯蒂利亚—拉曼恰自治区的首府，自治区议会在这里，管医疗与教育，也是托莱多省的省会；市镇由民选的市政厅治理，市域约 232 平方公里，2024 年人口约 8.7 万。老城建在塔霍河环绕的一座山丘上，城墙外的自动扶梯把人送上去，1986 年整座老城列入世界遗产，大教堂、阿尔卡萨堡与犹太会堂挤在陡巷里，“三种文化之城”指的是中世纪基督徒、穆斯林与犹太人在此共处；1561 年腓力二世把宫廷迁往马德里后它衰落了四百年，新城在河对岸的工业区，高铁到马德里约 30 分钟，大多数人当天往返。初来的人最容易犯的错，是把托莱多当作马德里的郊游地，而它是一个自治区的首府，老城之外还有一座 8 万人的现代城。",
     layout:
       "老城在被塔霍河三面环绕的山丘上，街道狭窄陡峭：索科多韦尔广场是入口和中心，阿尔卡萨尔在东侧最高处，主教座堂在中心偏南，圣多梅教堂、犹太区（两座犹太会堂、埃尔·格列柯博物馆）和圣胡安修道院在西南坡上。老城靠桥连接两岸：阿尔坎塔拉桥在东、圣马丁桥在西。河对岸南面的环城公路上有“河谷观景台”，可看老城全景。火车站在河东岸的新城，离老城约20分钟步行（有自动扶梯上山）。",
     gettingAround:
@@ -4414,6 +4723,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cordoba: {
     identity:
       "科尔多瓦在安达卢西亚的瓜达尔基维尔河畔，人口约32.5万（2024年）。十世纪它是后倭马亚王朝哈里发国的都城，人口可能达数十万，是当时欧洲最大最繁荣的城市之一；785年始建的大清真寺以数百根双层红白拱柱闻名，十六世纪在其中央建起主教座堂，成为今天的清真寺—主教座堂，1984年列入世界遗产（1994年扩展到整个老城）。城外西北约8公里的麦地那·阿萨哈拉哈里发宫城2018年也列入世界遗产。每年5月的庭院节（居民开放自家鲜花庭院）2012年列入人类非物质文化遗产。夏季是欧洲最热的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Córdoba (municipality 1,254 km², fourth-largest in Spain; ~325,000 2024; province capital, Andalusia; Mezquita-Cathedral UNESCO 1984, historic centre; Medina Azahara UNESCO 2018; Judería; Roman bridge; caliphate 10th c.; AVE Madrid ~1 h 45, Seville ~45 min; no airport; hottest summers)
+    howItWorks:
+      "科尔多瓦是安达卢西亚科尔多瓦省的省会，由民选的市政厅治理，市域约 1,254 平方公里，是西班牙面积第四大的市镇，大部分是山地与农田，2024 年人口约 32 万；自治区管医疗与教育，市政府管规划与地方服务。老城在瓜达尔基维尔河的北岸，清真寺—大教堂 1984 年列入世界遗产，犹太区的白墙小巷围着它，罗马桥跨过河，10 世纪这里是科尔多瓦哈里发国的都城，欧洲第二大的城市，麦地那·阿萨哈拉的宫城遗址在西面 8 公里，2018 年也列入遗产，五月的庭院节把私家院子向公众打开；高铁到马德里约 1 小时 45 分、到塞维利亚约 45 分钟，没有机场，七八月的平均高温 37 度是欧洲之最。初来的人最容易犯的错，是把科尔多瓦当作一座清真寺，而它是一座 32 万人的省会，夏天下午的街道空无一人。",
     layout:
       "老城在瓜达尔基维尔河北岸：清真寺—主教座堂在河边，罗马桥从它南面过河到卡拉奥拉塔，基督教君主城堡在清真寺西侧，犹太区（花巷、犹太会堂）在清真寺西北的一片白墙小巷里；老城向北延伸到滕迪利亚斯广场和科雷德拉广场。庭院节的庭院集中在圣巴西利奥区（清真寺西面）。火车站在老城北面约2公里，麦地那·阿萨哈拉在城西北约8公里。",
     gettingAround:
@@ -4428,6 +4740,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   salamanca: {
     identity:
       "萨拉曼卡在西班牙西北部卡斯蒂利亚高原的托尔梅斯河畔，人口约14.4万（2024年）。萨拉曼卡大学1218年创立，是西班牙最古老的大学、欧洲最古老的大学之一，十六世纪的“萨拉曼卡学派”影响深远；整座老城用当地金黄色的砂岩建成，日落时呈金色，1988年列入世界遗产。巴洛克式的马约尔广场（1729–1755年）被认为是西班牙最美的广场之一，新旧两座主教座堂相连，贝壳之家立面上的三百多个贝壳和大学正门上的小青蛙是游客必找的细节。萨拉曼卡是学习西班牙语的热门城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Salamanca (municipality 39.6 km²; 144,458 2024; province capital, Castile and León; old city UNESCO 1988; Plaza Mayor 1729–56; university 1218, oldest in Spain; two cathedrals; Tormes; 800 m; Spanish-language schools; Madrid ~210 km; Portugal ~80 km)
+    howItWorks:
+      "萨拉曼卡是卡斯蒂利亚—莱昂萨拉曼卡省的省会，由民选的市政厅治理，市域只有约 40 平方公里，2024 年人口约 14.4 万；自治区管医疗与教育，市政府管规划与地方服务。老城在托尔梅斯河北岸海拔 800 米的台地上，1988 年列入世界遗产，金色砂岩的建筑是它的底色：1218 年创办的大学是西班牙最老的，新旧两座大教堂并排，主广场是 18 世纪巴洛克的杰作，贝壳之家在大学街上；约 3 万学生与大量来学西班牙语的外国人让老城一年到头是年轻人，马德里在东面约 210 公里，葡萄牙边境在西面约 80 公里，没有正常运营的机场。初来的人最容易犯的错，是把萨拉曼卡当作一座只有大学的城，而它是省会，新城的居民区在老城四周铺开。",
     layout:
       "老城在托尔梅斯河北岸的坡地上，马约尔广场在中心偏北，向南沿鲁阿街到贝壳之家、克莱雷西亚教堂和大学，再往南是新旧主教座堂，主教座堂下方就是罗马桥。圣埃斯特万修道院在东南。火车站在老城东北约1.5公里，巴士站在西北。河南岸有看老城天际线的步道。",
     gettingAround:
@@ -4442,6 +4757,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   girona: {
     identity:
       "赫罗纳在加泰罗尼亚东北部四条河交汇处，巴塞罗那以北约100公里，人口约10.9万（2025年）。主教座堂的哥特式中殿宽约23米，是世界上最宽的哥特中殿；老城的犹太区（El Call）是欧洲保存最好的中世纪犹太街区之一，中世纪犹太学者纳赫曼尼德出生于此；沿奥尼亚尔河的彩色房屋、阿拉伯浴场和可以步行的城墙是老城的标志。《权力的游戏》曾在此取景。5月的“花之时”（Temps de Flors）用鲜花装点老城。赫罗纳是布拉瓦海岸和达利故乡菲格雷斯的门户，也是职业自行车手的训练基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Girona (municipality ~39 km²; ~106,000 2024; province capital, Catalonia; Barri Vell on the Onyar, coloured houses; cathedral vault 22.98 m; Call; walls; Costa Brava gateway, Lloret/Tossa separate; airport 12 km; AVE 37 min Barcelona 99 km; cycling hub; Catalan)
+    howItWorks:
+      "赫罗纳是加泰罗尼亚赫罗纳省的省会，由民选的市政厅治理，市域约 39 平方公里，2024 年人口约 10.6 万；自治区管医疗与教育，市政府管规划与地方服务。老城在奥尼亚尔河的东岸，河边的彩色房子是它的门面，大教堂的中殿是世界上最宽的哥特式石拱顶，犹太区“卡尔”是欧洲保存最完整的之一，城墙可以走一圈；新城在河的西岸，火车站也在那里，高铁到巴塞罗那约 37 分钟，机场在南面 12 公里，是廉价航空的基地，布拉瓦海岸的度假镇略雷特、托萨各是独立的市镇，加泰罗尼亚语是日常语言，职业车手把这里当作训练基地。初来的人最容易犯的错，是把赫罗纳当作布拉瓦海岸的一部分，而它在内陆，海滩在 40 公里外的别的市镇。",
     layout:
       "老城在奥尼亚尔河东岸的山坡上，河上的桥（埃菲尔设计的铁桥）通向新城；主教座堂在老城最高处，犹太区在主教座堂下方的坡上，阿拉伯浴场和圣佩雷修道院在北面，城墙步道沿老城东侧的高处从北走到南。新城在河西岸，独立广场是餐饮区，火车站（含 AVE）在新城西南约1公里。机场在西南约12公里，菲格雷斯在北面约40公里，布拉瓦海岸的海滩在东面约30–40公里。",
     gettingAround:
@@ -4833,6 +5151,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chania: {
     identity:
       "哈尼亚是克里特岛西部的主要城市，人口约5万，威尼斯时期的老港口与建筑保存完好，常被认为是克里特岛最具风情的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chania (municipality 351 km² after Kallikratis 2011; 111,375 2021; Chania regional unit capital, Crete; Venetian harbour, lighthouse 1864; Kastelli/Splantzia/Topanas; capital of Crete until 1971; airport 14 km Akrotiri; ferry from Souda to Piraeus; Samaria ~45 km)
+    howItWorks:
+      "哈尼亚是克里特岛哈尼亚地区单位的首府，2011 年的卡利克拉底改革后市镇扩到约 351 平方公里，2021 年人口约 11 万；市镇由民选的市长治理，克里特大区有民选的大区长，警察与学校归中央。老城围着威尼斯时期的港口，1864 年的灯塔在防波堤尽头，卡斯特利、斯普兰齐亚、托帕纳斯是老城的几片街区，1971 年以前这里是克里特的首府；新城在老城南面的平地上，机场在东面 14 公里的阿克罗蒂里半岛，苏达湾的港口有到比雷埃夫斯的夜船，萨马利亚峡谷在南面约 45 公里，巴洛斯与埃拉福尼西的海滩在西面六七十公里。初来的人最容易犯的错，是把威尼斯港当作哈尼亚，而它只是老城的一角，市镇一直伸到白山的山脚。",
     layout:
       "威尼斯老港是城市核心，环绕港口的彩色建筑、灯塔与清真寺是标志性景观；老城内街巷狭窄曲折，保留着威尼斯与奥斯曼时期的建筑风格；老城以西是当地居民生活区。",
     gettingAround:
@@ -4848,6 +5169,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "rhodes-town": {
     identity:
       "罗德城是罗德岛的首府，人口约5万，中世纪古城由医院骑士团于14至16世纪修筑城防，是欧洲保存最完好的中世纪城防城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rhodes city (seat of the municipality of Rhodes covering the whole island since 2011, ~1,400 km², ~125,000; city ~56,000 2021; capital of the South Aegean region and Dodecanese; Old Town UNESCO 1988, Knights 1309–1523; Mandraki; airport 14 km Paradisi; ferries Piraeus; Lindos ~50 km; Turkey ~18 km)
+    howItWorks:
+      "罗得市是罗得岛的主城，2011 年起整座岛是一个市镇，约 1,400 平方公里、12.5 万人，由民选的市长治理，市本身约 5.6 万人；它也是南爱琴海大区与十二群岛的首府，大区有民选的大区长，警察与学校归中央。中世纪的城墙围住老城，1309 至 1523 年间圣约翰骑士团在此建起骑士大街与大团长宫，1988 年列入世界遗产，曼德拉基港在城墙北面，据传巨像曾跨在港口上；新城与埃利海滩在老城以北，机场在西南 14 公里的帕拉迪西，林多斯在南面约 50 公里，土耳其海岸在对面约 18 公里，比雷埃夫斯的渡轮要十几个小时。初来的人最容易犯的错，是把老城当作罗得，而市镇是整座 80 公里长的岛，老城只是北端的一角。",
     layout:
       "中世纪古城被完整的城墙环绕，骑士团大街纵贯其中，两侧是骑士团时期的建筑；大团长宫殿位于古城最高点；新城区（曼德拉基港周边）是现代商业与港口区域。",
     gettingAround:
@@ -4863,6 +5187,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   santorini: {
     identity:
       "圣托里尼（锡拉岛）是基克拉泽斯群岛中最具标志性的岛屿之一，因公元前约1600年的火山喷发形成新月形的火山口地貌而闻名，费拉、伊亚等城镇建在高约300米的火口崖顶上。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santorini/Thira (municipality ~90 km²; 15,480 2021; ~2 million visitors/yr; caldera from Minoan eruption ~1600 BC; Fira capital on the rim, Oia north, Kamari/Perissa black beaches east, Akrotiri; airport; Athinios port; cable car/donkeys from old port; wine)
+    howItWorks:
+      "圣托里尼在行政上是一个市镇，官方名锡拉，覆盖整个岛群约 90 平方公里，由民选的市长治理，2021 年常住人口约 1.5 万，每年游客约 200 万；南爱琴海大区有民选的大区长，警察与学校归中央。岛是一座火山口的边缘，约 3,600 年前的米诺斯大喷发留下了今天的悬崖：费拉是市镇的首府，在火山口的崖顶上，伊亚在北端，卡马里与佩里萨的黑沙滩在东岸的另一面，阿克罗蒂里的青铜时代遗址在南端；机场在东岸，渡轮码头阿西尼奥斯在崖下，老港靠缆车或驴上到费拉，水靠海水淡化，葡萄酒是老产业。初来的人最容易犯的错，是把火山口一侧的白房子当作整座岛，而岛的另一面是平坦的黑沙滩与葡萄园，居民多住在那边。",
     layout:
       "费拉是岛上的主要城镇与行政中心，沿火口崖分布着白墙蓝顶的传统基克拉泽斯建筑；伊亚位于岛屿西北角，以观赏日落闻名；岛屿东侧海岸相对平缓，分布着黑色、红色的火山沙滩。",
     gettingAround:
@@ -4878,6 +5205,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "corfu-town": {
     identity:
       "科孚城是科孚岛的首府，人口约3万，威尼斯式城防建筑群于1386年至1797年间陆续建成，2007年列入联合国教科文组织世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Corfu city/Kerkyra (seat of Central Corfu municipality since 2019; island ~610 km², ~99,000; city ~24,000–32,000 2021; capital of the Ionian Islands region; Old Town UNESCO 2007, Venetian fortresses, Liston, Spianada; never Ottoman; cricket; airport 3 km; Achilleion ~10 km; ferries Igoumenitsa)
+    howItWorks:
+      "科孚城是科孚岛的主城，2019 年岛分成三个市镇后它是中央科孚市镇的所在地，由民选的市长治理，城本身约 3 万人，全岛约 10 万；它也是伊奥尼亚群岛大区的首府，大区有民选的大区长，警察与学校归中央。老城夹在两座威尼斯要塞之间的半岛上，2007 年列入世界遗产，利斯顿拱廊与斯皮亚纳达广场是它的中心，威尼斯、法国与英国统治的痕迹叠在一起，板球至今在广场上打，科孚是希腊唯一从未被奥斯曼统治的地方；机场在城南 3 公里，阿喀琉斯宫在南面约 10 公里，渡轮通往伊古迈尼察与意大利，阿尔巴尼亚海岸在对面几公里。初来的人最容易犯的错，是把科孚城当作科孚，而岛长 60 公里，度假区散在南北两端。",
     layout:
       "老城被两座威尼斯要塞（旧堡垒与新堡垒）环抱，中间是密集的老城街巷；利斯顿林荫大道仿照巴黎里沃利街风格建造，是城市地标之一；斯皮亚纳达广场是欧洲最大的广场之一，紧邻老城东侧。",
     gettingAround:
@@ -4893,6 +5223,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nafplio: {
     identity:
       "纳夫普利翁位于伯罗奔尼撒半岛东北部，人口约1.4万，1829至1834年曾是现代希腊独立后的第一个首都，是希腊保存最完好的新古典主义城镇之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nafplio (municipality ~390 km², ~33,600 2021, town ~14,500; Argolis capital; first capital of Greece 1829–1834; Palamidi; Bourtzi; Acronauplia; Venetian old town; Mycenae 25 km, Epidaurus 30 km; Athens ~140 km, 2 h; no airport)
+    howItWorks:
+      "纳夫普利翁是伯罗奔尼撒阿尔戈利斯地区单位的首府，市镇约 390 平方公里、2021 年约 3.4 万人，由民选的市长治理，镇本身约 1.5 万人；大区有民选的大区长，警察与学校归中央。1829 至 1834 年它是现代希腊的第一座首都，第一任国家元首卡波季斯特里亚斯在这里遇刺，之后首都迁往雅典。老城在阿克罗纳夫普利亚半岛的脚下，威尼斯时期的街巷与宪法广场是中心，帕拉米迪要塞在山上，999 级台阶上去，布尔齐堡在港中的小岛上；迈锡尼在北面 25 公里，埃皮达鲁斯在东面 30 公里，雅典在 140 公里外，约两小时，没有机场，周末雅典人涌来。初来的人最容易犯的错，是把纳夫普利翁当作一处度假地，而它是希腊的第一座首都，也是这一带的行政中心。",
     layout:
       "老城依山傍海，帕拉米迪要塞矗立在城市上方的山丘上，需登数百级台阶抵达；布尔齐堡垒是港湾中一座小岛上的威尼斯要塞；老城街巷保留着威尼斯与新古典主义时期的建筑风貌。",
     gettingAround:
@@ -4908,6 +5241,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ioannina: {
     identity:
       "约阿尼纳是伊庇鲁斯地区的中心城市，人口约7万，坐落在帕姆沃蒂斯湖畔，是希腊西北部品都斯山区的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ioannina (municipality ~403 km²; 113,978 2021, city 64,896; Epirus capital; 500 m; Lake Pamvotis with island; castle with mosques; silversmithing; university ~25,000; Ottoman 1430–1913; Zagori/Vikos ~40 km; Egnatia; airport)
+    howItWorks:
+      "约阿尼纳是伊庇鲁斯大区的首府，市镇约 403 平方公里、2021 年约 11.4 万人，由民选的市长治理，城本身约 6.5 万；大区有民选的大区长，警察与学校归中央。城市在海拔 500 米的帕姆沃提斯湖西岸，城堡在湖边的半岛上，里面是拜占庭与奥斯曼时期的建筑，湖中的小岛有六座修道院，靠渡船往来，1430 至 1913 年间这里是奥斯曼帝国的重要行政中心，银器是它的老手艺；1970 年创办的大学约 2.5 万学生，扎戈里的石头村与维科斯峡谷在北面约 40 公里，埃格纳提亚高速把它与塞萨洛尼基连起来，机场在城北。初来的人最容易犯的错，是把约阿尼纳当作去扎戈里的中转站，而它是希腊西北部的大学城与行政中心。",
     layout:
       "老城建在湖畔的一处岬角上，保留着奥斯曼时期的城堡与清真寺；湖中有一座小岛，岛上分布着多座修道院；新城区沿湖岸向外扩展，是行政与商业中心。",
     gettingAround:
@@ -4923,6 +5259,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalamata: {
     identity:
       "卡拉马塔是伯罗奔尼撒半岛南部的主要城市，人口约5.5万，坐落在迈锡尼湾畔、泰格特斯山脚下，以同名橄榄与橄榄油闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalamata (municipality ~440 km²; 72,906 2021; Messenia capital, second city of the Peloponnese; Messenian Gulf; castle; 1986 earthquake rebuild; olives PDO; dance festival July; airport 10 km; Athens ~240 km motorway; Ancient Messene ~30 km; Mani gateway)
+    howItWorks:
+      "卡拉马塔是伯罗奔尼撒麦西尼亚地区单位的首府，半岛的第二大城市，市镇约 440 平方公里，2021 年人口约 7.3 万，由民选的市长治理；大区有民选的大区长，警察与学校归中央。城市在麦西尼亚湾的顶端，老城与城堡在内陆的山脚，海滨大道纳瓦里努沿着海湾向东，1986 年的地震毁了大半市区，之后重建；卡拉马塔橄榄是受保护的原产地名称，七月的国际舞蹈节是它的文化名片，机场在西面 10 公里，高速公路到雅典约 240 公里，古麦西尼在西北 30 公里，马尼半岛从这里向南。初来的人最容易犯的错，是把卡拉马塔当作一个橄榄的牌子，而它是一座有港口、大学校区与机场的地区首府。",
     layout:
       "城堡区位于老城制高点，俯瞰全城与海湾；滨海大道沿迈锡尼湾延伸，是市民休闲区域；老城中心保留有拜占庭教堂与新古典主义建筑。",
     gettingAround:
@@ -4938,6 +5277,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   volos: {
     identity:
       "沃洛斯是色萨利地区的主要港口城市，人口约8.6万，坐落在帕加西提库斯湾畔、皮利翁山脚下，是探索皮利翁半岛的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Volos (municipality ~387 km², ~140,000; municipal unit 85,803 2021; Magnesia capital, Thessaly; Pagasetic Gulf, third port of mainland Greece; Argonauts waterfront; tsipouradika; Pelion villages 20–40 km; ferries to Sporades; University of Thessaly; steel; 2023 storm Daniel)
+    howItWorks:
+      "沃洛斯是色萨利马格尼西亚地区单位的首府，市镇约 387 平方公里、约 14 万人，由民选的市长治理，城区约 8.6 万；大区有民选的大区长，警察与学校归中央。城市在帕加西提科斯湾的顶端、皮利翁山的脚下，是希腊大陆第三大港，阿尔戈英雄大道沿着海滨，齐普罗酒馆是它的日常，色萨利大学在城里，钢铁与水泥是它的工业；皮利翁山的村庄在东面 20 到 40 公里的山坡上，小火车从城郊开上山，渡轮从港口开往斯基亚索斯与斯科佩洛斯，2023 年的风暴“丹尼尔”淹了城区。初来的人最容易犯的错，是把沃洛斯当作去斯波拉泽斯群岛的码头，而它是一座有港口、大学与工业的地区首府，皮利翁的村庄在山上。",
     layout:
       "滨海大道沿港湾延伸，是城市的主要休闲区域；老城中心保留有新古典主义建筑；皮利翁山的传统石砌村落分布在城市东侧的山坡上。",
     gettingAround:
@@ -4954,6 +5296,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mykonos: {
     identity:
       "米科诺斯是基克拉泽斯群岛中最有名的岛屿之一，全岛人口约1.1万（2021年），大多住在西岸的米科诺斯镇（霍拉）。白墙蓝窗的迷宫小巷、山坡上十六世纪威尼斯人建的卡托米利风车、悬在海上的“小威尼斯”房屋和洁白的帕拉波尔蒂亚尼教堂是它的标志；1954年来到岛上的鹈鹕彼得罗斯成了几十年的吉祥物。米科诺斯以海滩俱乐部和夜生活著称，也是通往提洛岛（阿波罗诞生地、世界遗产）的出发点——提洛岛就在西南约2公里。夏季的梅尔特米北风让炎热干燥的夏天变得凉爽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mykonos (island municipality 85.5 km²; 10,704 2021; Cyclades, South Aegean; Chora with windmills, Little Venice; south beaches; Delos 2 km UNESCO; airport 4 km; new port Tourlos; ~1.5 million visitors; Island of the Winds)
+    howItWorks:
+      "米科诺斯在行政上是一个市镇，覆盖约 86 平方公里的整座岛，由民选的市长治理，2021 年常住人口约 1.1 万，每年游客约 150 万；南爱琴海大区有民选的大区长，警察与学校归中央。霍拉是岛的主镇，在西岸，风车与“小威尼斯”的临水房子是它的门面，白色的巷子是为挡风而设计的迷宫，岛上常年刮风，得名“风之岛”；天堂、超级天堂等海滩在南岸，靠公交与船往来，新港在北面 2 公里的图尔洛斯，机场在城南 4 公里，提洛岛的遗址在西面 2 公里的海上，是世界遗产。初来的人最容易犯的错，是把霍拉当作整座岛，而海滩在南岸，夜生活散在岛的各处，没有车或船哪里都到不了。",
     layout:
       "米科诺斯镇在岛西岸的海湾里：老港在北面，风车在镇南的坡上，小威尼斯就在风车下方的海边，帕拉波尔蒂亚尼教堂在老港西侧的卡斯特罗区，镇中的小巷（马托扬尼街）是商店和餐馆。新港（大型渡轮）在镇北约2公里的图尔洛斯。海滩沿南岸分布：奥尔诺斯、普萨鲁、普拉蒂斯亚洛斯、天堂海滩、超级天堂海滩；埃利亚海滩在东南。机场在镇东南约4公里。去提洛岛的船从老港出发。",
     gettingAround:
@@ -4968,6 +5313,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   naxos: {
     identity:
       "纳克索斯是基克拉泽斯群岛中最大、最肥沃的岛，面积约430平方公里，全岛人口约2.1万（2021年），岛都纳克索斯镇（霍拉）约9000人。港口边小岛上的波尔塔拉——公元前六世纪未完成的阿波罗神庙大门——是岛的标志，镇上山顶的卡斯特罗是十三世纪威尼斯人的城堡区；岛内的宙斯山（1001米）是基克拉泽斯最高峰，哈尔基、阿佩兰托斯等山村保留着大理石街道和拜占庭教堂，古代采石场留下未完成的库罗斯巨像。纳克索斯以土豆、格拉维拉奶酪、柑橘酒（kitron）和西岸的长沙滩著称，比米科诺斯、圣托里尼便宜安静得多。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Naxos (largest Cycladic island ~430 km²; 20,578 2021; Chora 8,897; municipality of Naxos and Lesser Cyclades; Portara; Venetian Kastro; Mount Zas 1,001 m; farming island — potatoes, cheese, marble; beaches Agios Prokopios/Plaka; ferries Piraeus 5+ h; small airport)
+    howItWorks:
+      "纳克索斯是基克拉泽斯群岛最大的岛，约 430 平方公里，在行政上是“纳克索斯与小基克拉泽斯”市镇，由民选的市长治理，2021 年人口约 2.1 万，霍拉约 8,900 人；南爱琴海大区有民选的大区长，警察与学校归中央。霍拉在西岸的港口边，波尔塔拉的神庙大门立在港口的小岛上，威尼斯人的城堡区在镇的高处；扎斯山 1,001 米，是群岛的最高峰，让岛有足够的水，土豆、奶酪、柑橘酒与大理石让它不靠旅游也能活，哈尔基、阿佩兰托斯的山村在内陆，海滩在西岸的圣普罗科皮奥斯与普拉卡，渡轮到比雷埃夫斯五个多小时，机场很小。初来的人最容易犯的错，是把纳克索斯当作另一个米科诺斯，而它是一座有农田、山村与大理石矿的岛，游客只占一角。",
     layout:
       "纳克索斯镇在岛西岸的港口边：波尔塔拉在港北的小岛上（有堤道相连），老市场区和卡斯特罗在港口后面的山坡上，港口大道是餐馆和渡轮码头。海滩从镇南沿西岸排开：圣乔治海滩紧邻镇子，圣普罗科皮奥斯、圣安娜、普拉卡再往南。哈尔基在岛中部约16公里，阿佩兰托斯在东北山区约28公里，宙斯山登山口在菲洛蒂村附近。机场在镇南约3公里。",
     gettingAround:
@@ -4982,6 +5330,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalabaka: {
     identity:
       "卡兰巴卡在希腊中部色萨利平原的西缘、品都斯山脚下，镇人口约8600，是迈泰奥拉的门户。迈泰奥拉是一片高达300多米的砂岩石柱群，十四世纪起东正教修士在柱顶建起修道院，鼎盛时有二十多座，如今仍有六座开放：大迈泰奥拉（十四世纪创建）、瓦尔拉姆、鲁萨努、圣尼古拉、圣斯特凡诺和圣三一；1988年迈泰奥拉作为自然与文化双重遗产列入世界遗产。修道院原本靠绳梯和吊篮上下，1920年代才凿出台阶。卡斯特拉基村紧贴岩柱脚下，是另一处住宿地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalabaka (seat of the municipality of Meteora; town 8,573 2021; Trikala regional unit, Thessaly; Meteora monasteries UNESCO 1988 on rock pillars directly above town, six active; Kastraki at the base; railway terminus from Athens ~4.5 h; Trikala ~20 km)
+    howItWorks:
+      "卡兰巴卡是色萨利特里卡拉地区单位的一座镇，2021 年人口约 8,600，是以梅泰奥拉命名的市镇的所在地，市镇由民选的市长治理，警察与学校归中央。镇子紧贴在梅泰奥拉的砂岩石柱脚下，六座仍在使用的修道院立在石柱顶上，1988 年列入世界遗产，从镇上的街道抬头就能看见，卡斯特拉基村在石柱更近的山脚，环路把各修道院连起来，步行或坐车上去；铁路从雅典开到这里终点，约四个半小时，特里卡拉在东面约 20 公里，品都斯山在西面。初来的人最容易犯的错，是把卡兰巴卡当作梅泰奥拉，而镇是镇、石柱是石柱，修道院各有自己的开放日，一天走不完。",
     layout:
       "卡兰巴卡镇在岩柱群南面的平地上，火车站和汽车站在镇南，主街向北通向岩石；卡斯特拉基村在西北约2公里，紧贴岩柱下。修道院分布在镇北的岩柱顶上：圣斯特凡诺和圣三一在东侧（离镇最近，圣斯特凡诺有桥可直接进入），鲁萨努在中间，瓦尔拉姆和大迈泰奥拉在西北最高处，圣尼古拉在卡斯特拉基上方；一条环路把它们连起来，约15公里。",
     gettingAround:
@@ -5013,6 +5364,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zakynthos: {
     identity:
       "扎金索斯（意大利语名扎金特）是伊奥尼亚群岛南部的岛屿，岛都扎金索斯镇人口约1万，全岛约4万。1953年的大地震几乎摧毁了全镇，战后按威尼斯风格重建，索洛莫斯广场以希腊国歌作者狄奥尼修斯·索洛莫斯命名，圣狄奥尼修斯教堂是岛的守护圣人教堂。西北海岸的纳瓦吉奥（沉船湾）——1980年搁浅的走私船“帕纳约蒂斯”号躺在白崖下的沙滩上——是希腊最著名的风景之一，2022年地震后因落石风险沙滩本身关闭，只能从崖顶观景台或船上远看；南岸的拉加纳斯湾是1999年设立的国家海洋公园，蠵龟在此产卵，夏季机场夜间禁飞以保护它们。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakynthos town (seat of the island municipality; island ~406 km², ~40,000; municipal unit ~17,000, town ~9,800 2021; Ionian Islands region; rebuilt after 1953 earthquake; Solomos square; Bochali castle; Navagio ~30 km; Laganas turtles/marine park 8 km; airport 4 km; ferry Kyllini 1 h)
+    howItWorks:
+      "扎金索斯镇是扎金索斯岛的主镇，整座岛约 406 平方公里、4 万人，是一个市镇，由民选的市长治理，镇本身约 1 万人；伊奥尼亚群岛大区有民选的大区长，警察与学校归中央。1953 年的地震把威尼斯时期的镇子几乎夷平，今天的镇是按抗震标准重建的，索洛莫斯广场与海滨大道是它的中心，博哈利的城堡在镇上方的山上；沉船湾在西北约 30 公里的悬崖下，只能从海上看，拉加纳斯在南面 8 公里，是海龟保护区也是派对海滩，蓝洞在北端，机场在镇南 4 公里，渡轮到基利尼约一小时。初来的人最容易犯的错，是把沉船湾当作扎金索斯，而它在岛的另一头，镇上的生活与明信片上的悬崖毫不相干。",
     layout:
       "扎金索斯镇在岛东岸的港湾里，索洛莫斯广场在海边，圣狄奥尼修斯教堂在港南，博哈利城堡在镇西北的山上俯瞰全镇。机场在镇南约4公里。拉加纳斯湾和海龟海滩在岛南，拉加纳斯是最热闹的度假区；纳瓦吉奥在西北海岸（观景台从岛北的沃利梅斯方向到达，船从北端的圣尼古拉港或镇上出发）；蓝洞在岛最北端的斯基纳里角。基里岩洞和西岸的悬崖在西南。",
     gettingAround:
@@ -5061,6 +5415,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sintra: {
     identity:
       "辛特拉在里斯本西北约30公里，坐落于辛特拉山北麓，因常年受大西洋雾气影响、气候凉爽湿润，自摩尔人时期起就是避暑胜地。19世纪葡萄牙王室在此大规模营建宫殿园林，色彩斑斓的佩纳宫是最具代表性的建筑。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sintra (municipality 319 km², 385,654 2021, second most populous in Portugal, mostly Lisbon suburbs — Queluz, Cacém, Algueirão; historic vila in the hills UNESCO 1995: Pena, Moorish castle, Regaleira; Cabo da Roca; train from Rossio 35–45 min; bus 434)
+    howItWorks:
+      "辛特拉在行政上是一个市镇，由民选的市政厅治理，市域约 319 平方公里，2021 年人口约 39 万，是葡萄牙人口第二多的市镇——但这些人大多住在克鲁什、卡森、阿尔盖朗这些里斯本通勤线上的郊区。人们心中的辛特拉只是山里的那座小镇，几千人，1995 年作为文化景观列入世界遗产，佩纳宫、摩尔人城堡与雷加莱拉庄园在镇周围的山上，罗卡角在市镇的西端，是欧洲大陆的最西点；火车从里斯本罗西乌站约 40 分钟到辛特拉站，434 路公交环绕景点。初来的人最容易犯的错，是把辛特拉当作一座山中小镇，而这个市镇的绝大部分是里斯本的郊区，小镇只是它的一角。",
     layout:
       "辛特拉小镇本身不大，历史中心是老城区，宫殿和城堡则散布在周边的辛特拉山间：佩纳宫在山顶、雷加莱拉宫在半山、摩尔人城堡遗迹沿山脊延伸，几处景点之间有一定距离，多靠接驳巴士往返。",
     gettingAround:
@@ -5094,6 +5451,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   braga: {
     identity:
       "布拉加在波尔图东北约50公里，是葡萄牙最古老的城市之一（罗马时期建城），也是天主教在葡萄牙的宗教中心，教堂密度极高，有“葡萄牙的罗马”之称。城郊山顶的仁慈耶稣朝圣教堂及其巴洛克阶梯是最著名的地标。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Braga (municipality 183 km², ~193,000 2021; third urban area of Portugal; Braga district capital; Bracara Augusta; oldest archdiocese; Bom Jesus do Monte funicular UNESCO 2019 ~5 km; University of Minho; tech; Porto 55 km ~1 h train; no airport)
+    howItWorks:
+      "布拉加是葡萄牙北部的市镇与布拉加区的首府，由民选的市政厅治理，市域约 183 平方公里，2021 年人口约 19 万，城区是葡萄牙第三大；市政厅管地方服务，医疗、教育与警察归国家。罗马时期它是布拉卡拉·奥古斯塔，是伊比利亚最老的大主教区的所在地，被称为“葡萄牙的罗马”，大教堂与自由大道在市中心，山上仁慈耶稣圣所在东面 5 公里，靠一条老缆车上山，2019 年列入世界遗产；米尼奥大学让它成为葡萄牙最年轻的城市之一，波尔图在南面 55 公里，火车约一小时，没有机场。初来的人最容易犯的错，是把布拉加当作一座宗教古城，而它是葡萄牙增长最快的科技与大学城之一。",
     layout:
       "布拉加老城以主教座堂为核心，步行区密集分布着巴洛克风格的教堂和广场。城东的邦热苏斯山（仁慈耶稣山）是重要朝圣地，之字形的巴洛克阶梯从山脚一直通向山顶教堂。",
     gettingAround:
@@ -5109,6 +5469,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   guimaraes: {
     identity:
       "吉马良斯在布拉加以东约20公里，被称为葡萄牙的“摇篮城市”——传说葡萄牙王国的开国君主阿方索一世在此出生并宣布建国，城市老城因此整体列入联合国教科文组织世界遗产名录。10世纪的城堡至今矗立在城市高处。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Guimarães (municipality 241 km², ~157,000 2021; Braga district; birthplace of Portugal, 1128; historic centre UNESCO 2001; castle and Dukes' palace; Penha cable car 613 m; ECoC 2012; textiles; Porto 55 km train; Green Capital 2026)
+    howItWorks:
+      "吉马良斯是葡萄牙北部布拉加区的一个市镇，由民选的市政厅治理，市域约 241 平方公里，2021 年人口约 16 万；市政厅管地方服务，其余归国家。它被称为“葡萄牙的摇篮”：第一位国王阿方索一世据信生于此，1128 年的圣马梅德战役在城外，城堡与布拉干萨公爵宫在老城的高处，老城 2001 年列入世界遗产，佩尼亚山在城东，缆车上到 613 米；纺织、制鞋与金属加工让它成为葡萄牙工业化程度最高的市镇之一，2012 年它是欧洲文化之都，波尔图在南面 55 公里，火车约一小时。初来的人最容易犯的错，是把吉马良斯当作一座博物馆式的古城，而它是一座靠工厂生活的城市，老城只是它的中心一片。",
     layout:
       "吉马良斯老城围绕主广场展开，中世纪石造建筑保存完整，木构外廊房屋是当地特色。城堡和布拉干萨公爵宫在老城北侧的高地上，可俯瞰全城。",
     gettingAround:
@@ -5124,6 +5487,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   aveiro: {
     identity:
       "阿威罗在波尔图以南约60公里，因城中运河纵横、有轻轨式的传统彩绘平底船（moliceiro）往来其间，被称为“葡萄牙的威尼斯”。城市历史上以海藻采集和制盐业为主，如今是大学城和旅游小城。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Aveiro (municipality 198 km², ~81,000 2021; district capital; Ria de Aveiro lagoon, canals, moliceiro boats; Art Nouveau; salt pans; university 1973; Costa Nova ~10 km in Ílhavo municipality; ovos moles; Porto 75 km ~1 h train)
+    howItWorks:
+      "阿威罗是葡萄牙中部的市镇与阿威罗区的首府，由民选的市政厅治理，市域约 198 平方公里，2021 年人口约 8 万；市政厅管地方服务，其余归国家。城市在阿威罗潟湖的岸边，几条运河穿过市中心，彩绘的摩利塞罗船在运河里，新艺术风格的建筑沿运河排开，盐田在城西，1973 年创办的大学在城南，软蛋是它的甜点；科斯塔诺瓦的条纹房子与海滩在西面约 10 公里，属于伊利亚沃市镇，波尔图在北面 75 公里，火车约一小时。初来的人最容易犯的错，是以为阿威罗在海边，而它在潟湖边，海滩在另一个市镇，要坐公交过去。",
     layout:
       "阿威罗中心有几条相连的运河，两岸是新艺术风格的彩色建筑。城市紧邻阿威罗潟湖——葡萄牙北部最大的潟湖湿地系统，传统盐田和海藻采集场散布其间。",
     gettingAround:
@@ -5139,6 +5505,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   coimbra: {
     identity:
       "科英布拉在里斯本和波尔图之间、蒙德古河畔，都会区约 15 万人，曾是葡萄牙首都（12-13世纪）。科英布拉大学由迪尼斯国王1290年创办于里斯本，此后在里斯本与科英布拉之间几经迁移，1537年才最终永久落户科英布拉，是葡萄牙最古老、欧洲最古老的大学之一，2013年大学城区整体列入世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Coimbra (municipality 319 km², ~141,000 2021; district capital; capital of Portugal 1131–1255; university 1290 UNESCO 2013, Joanina library; Alta/Baixa; Mondego; ~28,000 students; Queima das Fitas; Coimbra-B station; Lisbon 197 km/Porto 116 km; no airport)
+    howItWorks:
+      "科英布拉是葡萄牙中部的市镇与科英布拉区的首府，由民选的市政厅治理，市域约 319 平方公里，2021 年人口约 14 万；市政厅管地方服务，其余归国家。1131 至 1255 年它是葡萄牙的首都，1290 年创办的大学是葡语世界最老的，校园在蒙德戈河北岸的山顶上城，乔安娜图书馆在其中，2013 年列入世界遗产，下城是河边的商业街区，圣克拉拉在河对岸；约 2.8 万学生穿着黑袍，五月的“烧丝带节”是他们的毕业节，火车站科英布拉 B 在里斯本—波尔图干线上，没有机场。初来的人最容易犯的错，是把科英布拉当作一座大学，而它是一座有自己老城与产业的区首府，大学只占了山顶。",
     layout:
       "科英布拉老城沿蒙德古河北岸的山坡而建，大学城区在山顶，标志性的钟塔（Torre da Universidade）俯瞰全城。老城下坡通向河边，是商业和生活区。",
     gettingAround:
@@ -5154,6 +5523,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   evora: {
     identity:
       "埃武拉是阿连特茹大区首府，都会区约 5.7 万人，老城保存了从罗马、摩尔到中世纪的多层历史遗迹，1986年整体列入联合国教科文组织世界遗产名录，被称为“博物馆城市”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Évora (municipality 1,307 km², ~54,000 2021; district capital and Alentejo centre; walled historic centre UNESCO 1986; Roman temple; Chapel of Bones; university 1559; Lisbon ~140 km, train ~1.5 h; ECoC 2027; hot summers)
+    howItWorks:
+      "埃武拉是阿连特茹地区的中心与埃武拉区的首府，由民选的市政厅治理，市域约 1,300 平方公里，大部分是软木橡树与麦田的平原，2021 年人口约 5.4 万，几乎都住在城里；市政厅管地方服务，其余归国家。城墙围住的老城 1986 年列入世界遗产，罗马神庙、大教堂与人骨礼拜堂都在墙内，1559 年创办的大学在老城里，1531 年的引水渠从城外伸进来；里斯本在西面约 140 公里，火车约一个半时，2027 年它将是欧洲文化之都，夏天是葡萄牙最热的城市之一。初来的人最容易犯的错，是把埃武拉的市镇当作一座城，而它的辖区有半个香港那么大，城墙内只是其中一点。",
     layout:
       "埃武拉老城被中世纪城墙环绕，罗马神庙遗址就在市中心广场旁，白墙黄边的传统阿连特茹式民居沿窄巷分布。老城核心紧凑，步行即可逛完主要景点。",
     gettingAround:
@@ -5187,6 +5559,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   funchal: {
     identity:
       "丰沙尔是马德拉群岛首府，都会区约 11 万人，坐落在马德拉岛南岸一个天然海湾，因气候常年温和被称为“大西洋的花园”。城市依山而建，从海边到山腰层层叠叠，有一条经典的悬崖滑索式雪橇缆车。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Funchal (municipality 76 km², ~106,000 2021, ~40% of Madeira; capital of the Autonomous Region of Madeira with its own government and assembly; amphitheatre bay; Zona Velha; Monte cable car and toboggan; hotel zone west; airport ~18 km; cruise port; island ~57 km long)
+    howItWorks:
+      "丰沙尔是马德拉自治区的首府，自治区有自己的政府与议会，掌管医疗、教育与大部分公共服务，市镇由民选的市政厅治理，管地方事务；市域约 76 平方公里，2021 年人口约 10.6 万，占全岛的四成。城市建在一个从海边升到 1,200 米的半圆形山坡上，老城区在港口的东侧，缆车从海边上到蒙特，再坐藤篮雪橇滑下来，酒店区在西面的利多，邮轮码头在港口，机场在东面约 18 公里的圣克鲁斯；莱瓦达水渠的步道散在全岛。初来的人最容易犯的错，是把丰沙尔当作马德拉，而岛长约 57 公里，北岸与山顶是另一种气候，从城里开车要一两个小时。",
     layout:
       "丰沙尔沿海湾展开，老城区在东侧，历史悠久的酒庄和市场集中于此；西侧是现代化的酒店度假区。城市背后山势陡峭，蒙特村（Monte）在山腰，是缆车终点和传统雪橇滑道起点。",
     gettingAround:
@@ -5202,6 +5577,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ponta-delgada": {
     identity:
       "蓬塔德尔加达是亚速尔群岛首府，位于圣米格尔岛（亚速尔最大岛屿）南岸，都会区约 6.8 万人。城市因1522年一场地震摧毁了原首府而兴起，如今是探索圣米格尔岛火山地貌的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ponta Delgada (municipality 233 km², ~67,000 2021; executive seat of the Autonomous Region of the Azores — assembly at Horta, judiciary at Angra; São Miguel; Portas da Cidade; airport 3 km, ~3.3 million passengers 2024; Sete Cidades within municipality; Furnas in Povoação)
+    howItWorks:
+      "蓬塔德尔加达是亚速尔自治区最大的城市，也是自治区政府的所在地——但亚速尔没有单一的首府：政府在这里，议会在法亚尔岛的奥尔塔，法院在特塞拉岛的英雄港，三座岛分掌三种职能。市镇由民选的市政厅治理，市域约 233 平方公里，2021 年人口约 6.7 万，占了圣米格尔岛的西半；城门与海滨大道是市中心的坐标，机场在城西 3 公里，2024 年旅客约 330 万，七城湖的火山口就在市镇的西端，富尔纳斯的温泉在岛东的另一个市镇，里斯本飞约两个半小时。初来的人最容易犯的错，是把蓬塔德尔加达当作亚速尔的首都，而群岛的三权分在三座岛上，这里只是行政的一角。",
     layout:
       "蓬塔德尔加达老城沿海湾展开，标志性的三座黑白拱门城门立于海滨广场。城市本身不大，多数景点靠近港口区域，岛上的火山湖和地热区（七城破火山口、富尔纳斯）分布在城外不同方向，需要开车前往。",
     gettingAround:
@@ -5218,6 +5596,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lagos: {
     identity:
       "拉戈斯在阿尔加维西部的海岸上，人口约3.3万（2021年），是大航海时代的重要港口：航海家亨利王子常驻于此指挥探险，1444年这里建起了欧洲殖民时代第一个奴隶市场（建筑今为博物馆）。十六世纪的城墙、海边的圣安东尼奥教堂（1715年）和老城的鹅卵石街道保留下来。城南的虔诚角是阿尔加维最壮观的海蚀崖和岩柱群，多娜安娜海滩、卡米洛海滩夹在金色岩壁之间，梅亚海滩是长达数公里的开阔沙滩；西面约35公里是萨格里什和圣文森特角（欧洲大陆西南角）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lagos (municipality 213 km², ~33,500 2021; Algarve/Faro district; Bensafrim mouth; walled town, marina; Ponta da Piedade; Dona Ana/Meia Praia; Henry the Navigator; Faro airport ~90 km; rail terminus; Sagres ~30 km)
+    howItWorks:
+      "拉古什是阿尔加维西部的一个市镇，由民选的市政厅治理，市域约 213 平方公里，2021 年人口约 3.4 万；市政厅管地方服务，其余归国家。老城在本萨芬河口的城墙内，游艇港在河的对岸，15 世纪航海王子恩里克的船队从这里出发，皮耶达德角的岩柱在南面的海角上，多娜安娜海滩在城边，梅亚海滩在河对岸绵延几公里；法鲁机场在东面约 90 公里，铁路的阿尔加维线在这里到头，萨格里什在西面约 30 公里。初来的人最容易犯的错，是把拉古什当作一处海滩，而它是一座有城墙、有市场、冬天也有人住的老城，海滩在城外的海角上。",
     layout:
       "老城在本萨弗林河口的西岸，城墙内是步行街、教堂和广场，奴隶市场博物馆在河边广场，游艇码头在河对岸。虔诚角在城南约3公里的海角，多娜安娜和卡米洛海滩在去海角的路上；梅亚海滩在河东岸向东延伸。火车站在河东岸的码头旁。萨格里什在西面，贝纳吉尔洞在东面约25公里。",
     gettingAround:
@@ -5232,6 +5613,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tavira: {
     identity:
       "塔维拉在阿尔加维东部的吉朗河口，法鲁以东约28公里，人口约2.6万，是阿尔加维最有古城气质的小镇。腓尼基人在公元前八世纪就在此定居，摩尔人统治了五百年，1242年被基督徒收复；河上的“罗马桥”其实是摩尔时期所建，老城据说有37座教堂。它曾是金枪鱼捕捞重镇，如今以慢生活著称（是“慢城”成员），旁边的里亚福尔莫萨自然公园有盐田、火烈鸟和坐渡船可达的塔维拉岛长沙滩。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tavira (municipality 607 km², ~27,000 2021; eastern Algarve; Gilão river, Roman bridge; castle; 37 churches; Ria Formosa; Ilha de Tavira by ferry; salt pans; Faro ~28 km; train; Spain ~30 km)
+    howItWorks:
+      "塔维拉是阿尔加维东部的一个市镇，由民选的市政厅治理，市域约 607 平方公里，向北伸进山地，2021 年人口约 2.7 万；市政厅管地方服务，其余归国家。老城在希朗河的两岸，罗马桥把两岸连起来，城堡在西岸的坡上，三十几座教堂散在城里，盐田在城南的潟湖边；海滩在福尔摩沙潟湖外的塔维拉岛上，要从城南的码头坐渡船过去，法鲁在西面约 28 公里，火车站在城边，西班牙边境在东面约 30 公里。初来的人最容易犯的错，是在塔维拉城里找海，而海滩在潟湖外的沙洲岛上，冬天渡船很少。",
     layout:
       "老城在吉朗河两岸，罗马桥连接两岸，共和国广场和城堡废墟在西岸的坡上，教堂和白房子沿坡分布；河东岸是市场和餐馆。火车站在老城北侧。去塔维拉岛的渡船从河口的四水（Quatro Águas）码头出发，约10分钟；盐田在河口两侧。圣卢西亚渔村在西南约3公里。",
     gettingAround:
@@ -5246,6 +5630,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nazare: {
     identity:
       "纳扎雷在葡萄牙中部的大西洋岸，里斯本以北约100公里，人口约1.5万，是传统渔村和海滨度假地，如今以世界上最大的可冲浪巨浪出名：海底的纳扎雷峡谷把冬季的涌浪放大，北滩的浪高可达20多米，2011年加勒特·麦克纳马拉在此冲浪后引来全球关注，2020年塞巴斯蒂安·施托伊特纳在这里创下26.2米的世界纪录。崖顶的西蒂奥村有1889年的缆车、纳扎雷圣母教堂和圣米格尔堡灯塔（观浪点）；渔妇的七条裙子和9月8日的圣母节是本地传统。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nazaré (municipality 82 km², ~14,900 2021; Leiria district; Praia beach town, Sítio on the cliff with funicular, Pederneira inland; Praia do Norte big waves, record 26.2 m 2020, Nazaré Canyon; fishing tradition; Lisbon ~120 km; no rail)
+    howItWorks:
+      "纳扎雷是葡萄牙中部海岸的一个市镇，由民选的市政厅治理，市域约 82 平方公里，2021 年人口约 1.5 万；市政厅管地方服务，其余归国家。镇子分成三层：海边的普拉亚是渔村与度假区，悬崖上的西蒂奥有圣母堂与堡垒，缆车把两者连起来，内陆的佩德内拉是老镇；巨浪在西蒂奥北面的北滩，海底峡谷把冬天的涌浪抬到 20 多米，2020 年 26.2 米的纪录在这里创下，堡垒的灯塔是看浪的地方，里斯本在南面约 120 公里，没有铁路。初来的人最容易犯的错，是以为镇前的海滩就有巨浪，而巨浪在崖北的另一片海滩，而且只在冬天。",
     layout:
       "小镇分三部分：海滩区（Praia）在海边的平地上，是老渔村和度假区，纳扎雷海滩在这里；西蒂奥在北面约100米高的崖顶上，缆车从海滩区上去，圣母教堂和广场在崖顶，圣米格尔堡在崖顶西端的海角上，北滩在海角北侧；佩德内拉在东面的山坡上。汽车站在海滩区。",
     gettingAround:
@@ -5260,6 +5647,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   obidos: {
     identity:
       "奥比杜什在里斯本以北约80公里的山丘上，是葡萄牙保存最完整的中世纪城墙小镇，镇内人口约3100。1210年阿方索二世把它赠给王后，此后几百年它一直是历代王后的属地，因此被称为“王后之镇”；城堡今为国营古堡酒店（pousada），完整的城墙可以环走，白墙蓝黄边的房子沿直街排开。樱桃酒 ginja 装在巧克力杯里是这里的招牌，7月的中世纪集市和3月的国际巧克力节是大活动，2015年它被评为联合国教科文组织“文学之城”，镇上有十几家书店。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Óbidos (municipality 142 km², ~12,000 2021; Leiria district; walled medieval vila ~3,000 inside walls; queens' town; castle pousada; medieval fair July, chocolate festival March; City of Literature 2015; Lisbon ~85 km; no rail)
+    howItWorks:
+      "奥比杜什是葡萄牙中部的一个市镇，由民选的市政厅治理，市域约 142 平方公里，2021 年人口约 1.2 万；市政厅管地方服务，其余归国家。人们心中的奥比杜什是城墙围住的中世纪小村，约 3,000 人住在墙内，城堡如今是国营旅馆，中世纪起历代王后以此为封地，樱桃酒是它的特产，七月的中世纪集市与三月的巧克力节把游客塞满一条主街，2015 年它是联合国教科文组织的文学之都；里斯本在南面约 85 公里，没有铁路，靠大巴，奥比杜什潟湖与海岸在市镇的西端。初来的人最容易犯的错，是把城墙内的小村当作整个奥比杜什，而市镇的大部分是农田与海岸，村子只是它的招牌。",
     layout:
       "小镇在城墙内的山脊上：城门（内有瓷砖礼拜堂）在南端，直街从城门一路向北到城堡，圣玛利亚教堂和广场在中段，城墙环绕全镇约1.5公里可登临。停车场和汽车站在城墙外南侧。奥比杜什潟湖在西北约8公里的海边，纳扎雷在北面约40公里，卡尔达斯达赖尼亚在东北约6公里。",
     gettingAround:
@@ -5274,6 +5664,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "viana-do-castelo": {
     identity:
       "维亚纳堡在葡萄牙北部米尼奥地区的利马河口，波尔图以北约60公里，市镇人口约8.6万（2021年）。它在大航海时代是造船和远洋渔业的港口，1882年建成的埃菲尔桥（埃菲尔公司设计）跨过利马河；圣卢西亚山上1904年动工的圣心圣殿俯瞰河口和海岸，是葡萄牙北部的标志。8月的痛苦圣母朝圣节是葡萄牙最大的民间节庆之一，米尼奥的传统服饰和金丝首饰在游行中展示；曾在纽芬兰渔场服务的吉尔·埃亚内斯医院船停在港口作博物馆，河对岸的卡贝德洛海滩是冲浪地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Viana do Castelo (municipality 319 km², ~85,800 2021; district capital; Lima mouth; Santa Luzia funicular; Praça da República; Gil Eannes ship; Cabedelo beach; Agonia festival August; Minho line; Porto ~70 km; Spain ~25 km; shipyard; WindFloat 2020)
+    howItWorks:
+      "维亚纳堡是葡萄牙最北端的区首府，由民选的市政厅治理，市域约 319 平方公里，2021 年人口约 8.6 万；市政厅管地方服务，其余归国家。城市在利马河口的北岸，共和国广场是老城的中心，圣卢西亚圣殿在城北的山顶上，缆车上山，医院船吉尔·埃亚内斯号停在河边，卡贝德洛海滩在河对岸的沙嘴上，八月的圣母痛苦节是葡萄牙最大的宗教节庆之一，金丝首饰与米尼奥的民俗是它的身份；米尼奥铁路线通往波尔图与西班牙，波尔图在南面约 70 公里，边境在北面约 25 公里，造船厂与海上风电场在河口外。初来的人最容易犯的错，是把维亚纳堡当作波尔图的远郊，而它是一座有自己港口、节庆与工业的区首府。",
     layout:
       "老城在利马河北岸，共和国广场（喷泉、仁慈堂、老市政厅）是中心，主教座堂和文艺复兴建筑在周围，河边有码头和医院船。圣卢西亚山在城北，缆车（葡萄牙最长的缆车）从火车站旁上山，山顶是圣殿和铁器时代遗址。埃菲尔桥在老城东侧，过桥是达尔克和卡贝德洛海滩。火车站在老城北缘。",
     gettingAround:
@@ -5513,6 +5906,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   haarlem: {
     identity:
       "哈勒姆是北荷兰省首府，都会区约16万人，位于阿姆斯特丹以西约20公里、荷兰沙丘海岸内侧，是荷兰历史最悠久的城市之一，17世纪曾是重要的纺织业和啤酒酿造中心，也是荷兰黄金时代画家弗兰斯·哈尔斯的家乡。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Haarlem (municipality 32 km²; ~163,000 2021; North Holland capital though Amsterdam larger; Grote Markt/St Bavo organ; Frans Hals Museum; Teylers oldest museum; Spaarne; Zandvoort 10 km separate; Amsterdam 20 km, train 15 min; mayor appointed by Crown)
+    howItWorks:
+      "哈勒姆是北荷兰省的省会，尽管阿姆斯特丹比它大得多；市镇约 32 平方公里，2021 年人口约 16 万，由民选的市议会治理，市长像荷兰所有市长一样由国王任命，警察归国家。老城围着大市场广场，圣巴福教堂的管风琴莫扎特弹过，弗兰斯·哈尔斯博物馆与荷兰最老的泰勒斯博物馆都在老城里，斯帕纳河穿城而过，1839 年荷兰第一条铁路从阿姆斯特丹通到这里，火车至今约 15 分钟；赞德福特的海滩在西面 10 公里，是另一个市镇，球茎花田在南面。初来的人最容易犯的错，是把哈勒姆当作阿姆斯特丹的郊区，而它是省会，有自己的老城与博物馆，历史比阿姆斯特丹还老。",
     layout:
       "哈勒姆老城围绕中心大广场（格罗特马克特）展开，圣巴弗大教堂是全城地标。老城保留大量17世纪山墙式建筑，斯帕尔讷河穿城而过。城西不远即是荷兰沙丘海岸的国家公园。",
     gettingAround:
@@ -5528,6 +5924,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   texel: {
     identity:
       "特塞尔岛是西弗里西亚群岛中面积最大、人口最多的一座，位于荷兰最北端海域，常住人口约1.4万，是荷兰境内一处独特的岛屿生态旅游目的地，岛上沙丘、滩涂、牧场和灯塔构成的景观与荷兰本土截然不同。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Texel (island municipality, land ~162 km²; ~13,800; largest Wadden island; Den Burg seat, De Koog resort, Oudeschild harbour; ferry from Den Helder 20 min; ~70% of economy tourism; sheep; cycling; Wadden Sea UNESCO 2009)
+    howItWorks:
+      "泰瑟尔是荷兰最大的瓦登海岛，也是一个市镇，陆地约 162 平方公里，人口约 1.4 万，由民选的市议会治理，市长由国王任命；瓦登海 2009 年列入世界遗产。岛上有七个村：登堡是市镇的所在地，在岛的中部，德科赫是西岸沙丘后的海滩度假村，奥德斯希尔德是东岸的渔港，渡轮从大陆的登海尔德开到南端的码头，约 20 分钟；西岸是 30 公里的沙滩与沙丘国家公园，东岸是圩田与羊，约七成的经济靠旅游，岛上靠自行车。初来的人最容易犯的错，是把泰瑟尔当作一个海滩村，而它是一座 24 公里长的岛，村子之间要骑半小时。",
     layout:
       "特塞尔岛狭长，北海一侧是连续的沙滩和沙丘，瓦登海一侧是潮间带滩涂，岛屿中部是牧场和小村镇。登堡是岛上最大的村镇和渡轮码头所在地，北端的埃尔哈斯特角有一座历史悠久的灯塔。",
     gettingAround:
@@ -5561,6 +5960,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "the-hague": {
     identity:
       "海牙是荷兰政府所在地、荷兰国王的官邸所在地，都会区约110万人，虽然不是法定首都（首都是阿姆斯特丹），却是荷兰实际的政治中心；同时也是国际法院、国际刑事法院等多个国际司法机构的所在地，被称为“国际法之都”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): The Hague (municipality ~98 km²; ~549,000 2021; third city; seat of government, States General, Supreme Court, monarch, ~200 international organisations incl. ICJ/ICC; not the capital; 8 stadsdelen; Scheveningen beach in municipality; RandstadRail; Rotterdam The Hague Airport; mayor appointed by Crown)
+    howItWorks:
+      "海牙是荷兰的政府所在地，却不是首都：议会、内阁、最高法院、国王的办公与住所都在这里，宪法上的首都是阿姆斯特丹。市镇约 98 平方公里，2021 年人口约 55 万，是荷兰第三大城市，由民选的市议会治理，市长由国王任命，市下分 8 个区。市中心围着议会所在的内庭，和平宫里是国际法院，国际刑事法院与约 200 个国际机构散在城里，让它自称“和平与正义之城”；斯海弗宁恩的海滩与码头在市域的北缘，是荷兰最大的海滨度假地，兰斯塔德铁路与鹿特丹的地铁相连，机场与鹿特丹共用。初来的人最容易犯的错，是把海牙当作荷兰的首都，而首都是阿姆斯特丹，海牙只是政府住的地方。",
     layout:
       "海牙市中心以内庭院（Binnenhof，荷兰议会所在地）为核心，周边是政府机构和使馆区。城西的席凡宁根是荷兰最大的海滨度假区，有连绵的沙滩和历史悠久的海滨栈桥。莫瑞泰斯皇家美术馆等重要博物馆集中在市中心。",
     gettingAround:
@@ -5576,6 +5978,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   delft: {
     identity:
       "代尔夫特在海牙和鹿特丹之间，都会区约10万人，是荷兰黄金时代画家维米尔的故乡，也是“代尔夫特蓝陶”（Delft Blue，一种蓝白釉彩瓷器）的发源地，代尔夫特理工大学是荷兰规模最大的理工院校之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Delft (municipality 24 km²; ~104,000; South Holland; Markt with Nieuwe Kerk (royal burials) and town hall; Oude Kerk; Vermeer; Delftware/Royal Delft; TU Delft ~26,500 students; 1654 explosion; between The Hague 10 km and Rotterdam 15 km; mayor appointed by Crown)
+    howItWorks:
+      "代尔夫特是南荷兰省的一座市镇，约 24 平方公里，人口约 10 万，由民选的市议会治理，市长由国王任命，警察归国家。老城在运河围成的一圈之内，市场广场两端是市政厅与新教堂，奥兰治家族从沉默者威廉起葬在新教堂里，老教堂在另一条运河边，维米尔在这里画了一辈子，皇家代尔夫特的蓝陶厂在城南，1654 年的火药库爆炸毁了半座城；代尔夫特理工大学约 2.6 万学生，校园在老城南面，海牙在北面 10 公里，鹿特丹在南面 15 公里，火车与有轨电车把三座城连成一片。初来的人最容易犯的错，是把代尔夫特当作一座蓝陶的博物馆小镇，而它是一座以理工大学为生的城，学生占了四分之一。",
     layout:
       "代尔夫特老城不大，运河纵横，老市场广场（旧教堂和新教堂分立两端）是核心区域。城南是代尔夫特理工大学校区，为这座历史小城注入年轻气息。",
     gettingAround:
@@ -5591,6 +5996,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   leiden: {
     identity:
       "莱顿在阿姆斯特丹和海牙之间，都会区约14万人，1575年建立的莱顿大学是荷兰最古老的大学，笛卡尔、惠更斯、格劳秀斯、斯宾诺莎等众多学者曾在此求学或任教，也是伦勃朗的出生地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Leiden (municipality ~23 km²; ~127,000; South Holland; university 1575, oldest in NL, ~35,000 students, 13 Nobel laureates; Pilgrims 1609–20; Rijksmuseum van Oudheden; Naturalis; Bio Science Park; Leiden Centraal; The Hague 20 km, Amsterdam 40 km; Katwijk beach separate; mayor appointed by Crown)
+    howItWorks:
+      "莱顿是南荷兰省的一座市镇，约 23 平方公里，人口约 13 万，由民选的市议会治理，市长由国王任命，警察归国家。1575 年创办的莱顿大学是荷兰最老的，约 3.5 万学生散在老城的运河之间，没有单独的校园，十三位诺贝尔奖得主出自这里，“发现之城”是它的自称；老城在旧莱茵河的两条河汊之间，城堡在中心的土丘上，国立古物博物馆与自然史博物馆在城里，清教徒先辈 1609 至 1620 年在此避难后去了美洲，城西的生物科学园是新的产业，莱顿中央站是荷兰最繁忙的换乘站之一，海牙在南面 20 公里，阿姆斯特丹在北面 40 公里，卡特韦克的海滩在西面 10 公里的另一个市镇。初来的人最容易犯的错，是在莱顿找大学校园，而大学就是老城本身。",
     layout:
       "莱顿老城运河环绕，市中心的城堡遗址高地（De Burcht）是俯瞰全城的制高点。莱顿大学的建筑和植物园（欧洲最古老的植物园之一）散布在老城各处，与市井生活融为一体。",
     gettingAround:
@@ -5624,6 +6032,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   maastricht: {
     identity:
       "马斯特里赫特是林堡省首府，都会区约12万人，位于荷兰最南端、马斯河畔，是荷兰最古老的城市之一，因扼守马斯河渡口自罗马时代起就是重要城镇。1992年《马斯特里赫特条约》在此签署，是欧盟成立的奠基性文件之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Maastricht (municipality ~60 km²; ~120,000 2021; Limburg capital; Meuse dividing Wyck (station) from the centre (Vrijthof, Markt); Sint Pietersberg; Treaty 1992; university 1976, international; Limburgish; Belgium 5 km, Aachen 30 km, Liège 30 km; airport at Beek; TEFAF; carnival)
+    howItWorks:
+      "马斯特里赫特是林堡省的省会，荷兰最南端的城市，市镇约 60 平方公里，2021 年人口约 12 万，由民选的市议会治理，市长由国王任命，警察归国家。默兹河把城市分成两岸：西岸是老城，弗莱特霍夫广场、圣塞尔瓦斯教堂与市场广场在那里，东岸的维克区有火车站，圣彼得山的洞穴在城南；1992 年欧盟条约在这里签署，1976 年创办的大学一半以上是外国学生，林堡方言是本地的语言，狂欢节是它一年的高潮，欧洲艺术博览会每年三月在此举办；比利时边境在 5 公里外，亚琛与列日各在 30 公里，机场在北面的贝克。初来的人最容易犯的错，是按荷兰的印象来想象马斯特里赫特，而它的口音、饮食与天主教传统更近比利时与德国，荷兰在这里只是国籍。",
     layout:
       "马斯特里赫特老城横跨马斯河两岸，圣瑟法斯桥连接两岸，是荷兰最古老的桥梁之一。老城保留大量中世纪城墙和教堂建筑，弗赖特霍夫广场是市中心核心。因地处荷、比、德三国交界一带，城市气质融合了荷兰、比利时和德国的建筑与饮食文化。",
     gettingAround:
@@ -5639,6 +6050,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   groningen: {
     identity:
       "格罗宁根是荷兰北部最大的城市，都会区约23万人，是格罗宁根省首府，也是格罗宁根大学（荷兰顶尖大学之一）所在地，因大学生占城市人口比例很高，被称为荷兰“最年轻的城市”之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Groningen (municipality ~198 km²; ~245,000 2025; province capital, largest city of the north; university 1614 + Hanze, students ~25%; 57% of commutes by bicycle, car-free centre; Martinitoren; Groninger Museum; Eelde airport; Amsterdam 180 km ~2 h; Gronings dialect)
+    howItWorks:
+      "格罗宁根是格罗宁根省的省会，荷兰北部最大的城市，市镇约 198 平方公里，2025 年人口约 24.5 万，由民选的市议会治理，市长由国王任命，警察归国家。1614 年创办的大学与汉斯应用科学大学让四分之一的市民是学生，是荷兰最年轻的城市；老城围着大市场广场，马蒂尼塔是坐标，格罗宁根博物馆在车站对面的运河上，市中心 1970 年代起禁止穿行的汽车，约六成的通勤靠自行车，是世界上骑车比例最高的城市之一；阿姆斯特丹在西南 180 公里，火车约两小时，机场在南面的埃尔德，格罗宁根方言仍在乡下使用。初来的人最容易犯的错，是把格罗宁根当作一座偏远的省城，而它是北部的首府，节奏与年龄都是荷兰最年轻的。",
     layout:
       "格罗宁根老城被环形运河环绕，标志性的马蒂尼塔（教堂钟塔）是全城最高点。大市场广场是市中心核心，周边分布着大学建筑、商店和咖啡馆，城市整体规模不大、适合步行和骑行探索。",
     gettingAround:
@@ -5654,6 +6068,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zwolle: {
     identity:
       "兹沃勒是上艾瑟尔省首府，都会区约13万人，位于艾瑟尔河畔，中世纪曾是汉萨同盟（欧洲北部贸易城市联盟）的重要成员，老城至今保留完整的星形防御工事和城墙，是通往羊角村等上艾瑟尔省景点的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zwolle (municipality ~119 km²; ~130,000; Overijssel capital; Hanseatic 1294; star-shaped old town within moat; Sassenpoort; Peperbus; Museum de Fundatie; rail junction; De Librije; ~half of trips cycled; Giethoorn ~30 km; Amsterdam ~1 h 10)
+    howItWorks:
+      "兹沃勒是上艾瑟尔省的省会，市镇约 119 平方公里，人口约 13 万，由民选的市议会治理，市长由国王任命，警察归国家。老城是一颗星形的堡垒，护城河至今环绕，萨森门与“胡椒瓶”教堂塔是它的地标，1294 年它加入汉萨同盟，15 世纪是它的黄金时代，方达蒂博物馆的椭圆屋顶是新的地标，三星餐厅利布里耶在老城里；它是荷兰第二繁忙的铁路枢纽，到阿姆斯特丹约一小时十分，一半的出行靠自行车，羊角村在东北约 30 公里。初来的人最容易犯的错，是把兹沃勒当作去羊角村的换乘站，而它是一座有护城河与汉萨历史的省会。",
     layout:
       "兹沃勒老城呈典型的星形防御工事格局，护城河环绕城墙一周，城内街道以圣米迦勒大教堂为中心呈放射状分布。老城规模不大，历史建筑保存完好，是荷兰保存最完整的中世纪城市格局之一。",
     gettingAround:
@@ -5687,6 +6104,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   arnhem: {
     identity:
       "阿纳姆是海尔德兰省的省会，在莱茵河（下莱茵）北岸，人口约16.2万（2021年）。1944年9月“市场花园行动”中英军空降兵在此争夺莱茵河桥，是二战著名的“遥远的桥”，约翰·弗罗斯特桥和奥斯特贝克的空降兵博物馆纪念这段历史。城北的荷兰露天博物馆收集了全国的老房子和风车，伯格斯动物园以生态馆出名，松斯贝克公园是城中的英式园林；北面的德霍赫费吕韦国家公园里有克勒勒-米勒博物馆（梵高作品第二大收藏）。阿纳姆是荷兰唯一有无轨电车的城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Arnhem (municipality ~102 km²; ~162,000; Gelderland capital; Rhine, John Frost Bridge (Market Garden 1944), Airborne Museum in Oosterbeek; Sonsbeek; Burgers' Zoo; Openluchtmuseum; Hoge Veluwe ~15 km; only trolleybus system in NL; Germany ~15 km; Nijmegen ~20 km)
+    howItWorks:
+      "阿纳姆是海尔德兰省的省会，市镇约 102 平方公里，人口约 16 万，由民选的市议会治理，市长由国王任命，警察归国家。城市在下莱茵河的北岸，1944 年“市场花园行动”的空降部队在这里的桥上苦战，重建的桥以约翰·弗罗斯特命名，空降博物馆在西面的奥斯特贝克；松斯贝克公园在市中心北侧，伯格斯动物园与露天博物馆在城北，霍赫费吕韦国家公园与克勒勒—米勒美术馆在西北约 15 公里，市内的无轨电车是荷兰唯一的，德国边境在东面约 15 公里，奈梅亨在南面 20 公里。初来的人最容易犯的错，是把阿纳姆当作一座战争纪念地，而它是一座绿地围绕、以时装学院闻名的省会。",
     layout:
       "市中心在莱茵河北岸的坡上，中央车站在西北，购物区在中间，约翰·弗罗斯特桥在市中心东南跨河；松斯贝克公园在市中心北面，露天博物馆和伯格斯动物园再往北约3公里。奥斯特贝克（空降兵博物馆、英军公墓）在西面约5公里。德霍赫费吕韦国家公园在北面约15公里（奥特洛入口），克勒勒-米勒博物馆在公园内。",
     gettingAround:
@@ -5701,6 +6121,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   giethoorn: {
     identity:
       "羊角村在荷兰上艾瑟尔省西北的湿地里，人口约2800，是荷兰最有名的水乡村落，被称为“北方威尼斯”：老村没有汽车路，一条运河串起茅草顶的农舍，176座木桥连接两岸，交通靠小船和“耳语船”（电动小艇）。它起源于中世纪的泥炭开采，挖出的水道和湖泊变成了今天的景观；村子紧邻韦里本—维登国家公园（荷兰最大的低地泥炭沼泽），冬天运河结冰时可以滑冰。2015年它被选入国际版大富翁游戏。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Giethoorn (village ~2,800 in Steenwijkerland municipality, Overijssel; 176 bridges; car-free old core, boats only; Weerribben-Wieden peat landscape; ~1 million visitors/yr; whisper boats; Zwolle ~30 km; no rail; independent municipality until 1973)
+    howItWorks:
+      "羊角村不是一座镇，而是上艾瑟尔省斯滕韦克兰市镇里的一个村，约 2,800 人，1973 年以前它有自己的市镇，如今由斯滕韦克兰的市议会管理，市长由国王任命。老村沿一条运河排开，茅草顶的农舍各在自己的小岛上，176 座木桥把它们连起来，老村的核心没有车道，只能走路、骑车或划船，泥炭开采留下的湖泊与湿地是韦里本—维登国家公园；每年约一百万游客涌入，电动的“低语船”是游览的方式，兹沃勒在南面约 30 公里，没有铁路，从斯滕韦克坐公交过来。初来的人最容易犯的错，是以为整个羊角村都没有车，而只有老村的核心是这样，村外的新区与停车场都在公路边。",
     layout:
       "村子沿一条南北向的主运河（Dorpsgracht）和平行的步行道（Binnenpad）展开，茅草农舍和小桥在运河两岸，博物馆和餐馆在村中段；南端通向博文维德湖。汽车停在村外的停车场。斯滕韦克在西北约5公里，是最近的火车站；兹沃勒在南面约35公里。",
     gettingAround:
@@ -5715,6 +6138,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   middelburg: {
     identity:
       "米德尔堡是泽兰省的省会，在瓦尔赫伦岛（今为半岛）的中央，人口约4.9万（2021年）。十七世纪它是荷兰东印度公司仅次于阿姆斯特丹的商会所在地，富商的宅邸和市政厅（十五世纪哥特式）见证了那段繁荣；修道院建筑群里的“长约翰”塔是城市的标志，十六、十七世纪这里的眼镜匠（利珀希、扬森）与望远镜和显微镜的发明相关。1940年5月17日轰炸毁掉了约三分之一的老城，战后按原样重建。费勒古港、东堡海滩和东斯海尔德风暴潮屏障（三角洲工程的核心）都在附近。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Middelburg (municipality ~53 km²; ~50,000; Zeeland capital; Walcheren; abbey/Lange Jan; town hall; ring canals; VOC chamber second to Amsterdam; 1940 bombing; Vlissingen 6 km separate; Domburg ~12 km; rail Rotterdam ~1 h 15; microscope/telescope claim)
+    howItWorks:
+      "米德尔堡是泽兰省的省会，在瓦尔赫伦岛上，市镇约 53 平方公里，人口约 5 万，由民选的市议会治理，市长由国王任命，警察归国家。老城被一圈运河围着，修道院与“长约翰”塔在中心，省政府就设在修道院里，哥特式的市政厅在市场广场上，17 世纪它是东印度公司仅次于阿姆斯特丹的第二大分部，望远镜与显微镜据传出自这里的眼镜匠，1940 年的轰炸毁了三分之一的老城，之后重建；弗利辛恩的港口在南面 6 公里，是另一个市镇，东堡的海滩在西面 12 公里，三角洲工程在岛的周围，火车到鹿特丹约一小时一刻。初来的人最容易犯的错，是把米德尔堡当作一座海边的镇，而它在岛的中央，海在几个市镇之外。",
     layout:
       "老城被运河和星形城墙围住，集市广场和市政厅在中心，修道院建筑群（长约翰塔、泽兰博物馆、省政府）在广场东侧；运河边的老仓库和商人宅邸沿旧港分布。火车站在老城南侧的运河对岸。费勒在东北约7公里，东堡和海滩在西北约15公里，东斯海尔德屏障在北面约25公里，弗利辛恩在南面约8公里。",
     gettingAround:
@@ -5729,6 +6155,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   alkmaar: {
     identity:
       "阿尔克马尔在北荷兰省阿姆斯特丹以北约40公里，人口约11.3万（2022年），以奶酪市场闻名：从4月的第一个周五到9月的第一个周五，每周五上午在称重楼前的广场上，穿白衣戴彩帽的搬运工用担架抬着奶酪、按几百年前的方式交易，这个传统可追溯到1365年获得称重权。1573年阿尔克马尔击退西班牙军队的围攻，是荷兰起义的转折点，“胜利从阿尔克马尔开始”成为俗语。老城有近400座保护建筑，运河环绕；西面约10公里是埃赫蒙德和贝亨的沙滩与沙丘。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alkmaar (municipality ~117 km²; ~113,000 2023; North Holland; cheese market Fridays April–September at the Waag 1582; 1573 siege; Grote Kerk; 399 monuments; Egmond/Bergen beaches ~8 km; Amsterdam 30 min train; AZ Alkmaar)
+    howItWorks:
+      "阿尔克马尔是北荷兰省的一座市镇，约 117 平方公里，2023 年人口约 11 万，由民选的市议会治理，市长由国王任命，警察归国家。老城被运河围着，1582 年的称重房前每年四到九月的星期五上午举行奶酪市场，是这座城最有名的场景，大教堂在城西，近四百座历史建筑散在街巷里，1573 年西班牙军队围城失败，“胜利从阿尔克马尔开始”成了荷兰独立战争的口号；埃赫蒙德与贝亨的海滩在西面约 8 公里，属于另一个市镇，火车到阿姆斯特丹约 30 分钟，AZ 是它的球队。初来的人最容易犯的错，是把阿尔克马尔当作一个只在星期五上午存在的奶酪市场，而它是一座 11 万人的城，市场只是一年里的几十个上午。",
     layout:
       "老城在运河环绕的椭圆形区域里：称重楼和奶酪市场在东侧的称重楼广场，圣劳伦斯大教堂在西端，购物街（Langestraat）连接两者，运河（Oudegracht 等）和老房子在城内。火车站在老城西北。埃赫蒙德海滩在西面约10公里，贝亨在西北，扎恩风车村在南面约25公里。",
     gettingAround:
@@ -5814,6 +6243,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   graz: {
     identity:
       "格拉茨是施泰尔马克州首府，奥地利第二大城市，人口约29万，坐落在穆尔河畔，老城1999年列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Graz (statutory city, Styria capital; 127.6 km²; ~308,000 2026; 17 districts; Mur; Schlossberg; old town UNESCO 1999 + Eggenberg 2010; Kunsthaus/Murinsel; 4 universities ~60,000 students; trams; airport; ECoC 2003)
+    howItWorks:
+      "格拉茨是施蒂利亚州的州府，奥地利第二大城市，一座“特许市”，市政府同时承担县级职能，市下分 17 个区，市域约 128 平方公里，2026 年人口约 31 万；州议会与州政府在城里，警察与学校归州。穆尔河把老城分成两岸：东岸是 1999 年列入世界遗产的老城，城堡山的钟楼在上面俯瞰，西岸是美术馆与河中的穆尔岛，埃根贝格宫在城西，2010 年也列入遗产；四所大学约 6 万学生让它成为一座大学城，有轨电车穿过市区，机场在城南，维也纳在东北约 200 公里。初来的人最容易犯的错，是把格拉茨当作维也纳的翻版，而它是奥地利南部自成一体的首府，日照比维也纳多，节奏也慢。",
     layout:
       "施洛斯山（城堡山）是城市中心的制高点，山顶钟楼是格拉茨的标志性建筑；老城街区保留着文艺复兴与巴洛克风格建筑；格拉茨现代艺术博物馆位于穆尔河畔，以未来主义建筑风格著称。",
     gettingAround:
@@ -5829,6 +6261,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   linz: {
     identity:
       "林茨是上奥地利州首府，奥地利第三大城市，人口约21万，坐落在多瑙河畔，是奥地利重要的工业与文化城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Linz (statutory city, Upper Austria capital; 96 km²; ~214,000 2024; metro ~823,500; Danube; Hauptplatz; Pöstlingberg; Ars Electronica; Lentos; voestalpine; ECoC 2009; UNESCO City of Media Arts 2014; trams; airport Hörsching; Vienna ~1.25 h)
+    howItWorks:
+      "林茨是上奥地利州的州府，奥地利第三大城市，一座“特许市”，市域约 96 平方公里，2024 年人口约 21 万，都会区约 82 万；州议会与州政府在城里，警察与学校归州。城市在多瑙河两岸，南岸的主广场与老城是中心，北岸的电子艺术中心与波斯特林山的朝圣教堂隔河相望，伏斯特钢铁厂在城东的河边，是这座城的工业根基；2009 年它是欧洲文化之都，2014 年成为联合国教科文组织媒体艺术之都，有轨电车穿过市区，机场在西面的赫尔兴，火车到维也纳约一小时一刻。初来的人最容易犯的错，是把林茨当作一座钢铁城，而它是奥地利最早转向数字艺术的城市，河两岸各是一种面貌。",
     layout:
       "老城广场是林茨的历史中心，巴洛克风格建筑环绕；林茨白教堂大教堂是奥地利最大的教堂之一；阿尔斯电子艺术中心位于多瑙河畔，是林茨作为“媒体艺术之都”的地标。",
     gettingAround:
@@ -5844,6 +6279,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   klagenfurt: {
     identity:
       "克拉根福是克恩顿州首府，人口约10万，坐落在沃尔特湖东端，是奥地利南部重要的湖区旅游城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Klagenfurt am Wörthersee (statutory city, Carinthia capital; ~120 km²; ~105,800 2025; Lindwurm/Neuer Platz; Renaissance old town; Wörthersee 4 km west; cultural centre of the Carinthian Slovenes; airport; Ljubljana 88 km)
+    howItWorks:
+      "克拉根福是克恩顿州的州府，一座“特许市”，市域约 120 平方公里，2025 年人口约 10.6 万；州议会与州政府在城里，警察与学校归州。老城是 16 世纪按文艺复兴的格网重建的，新广场上的龙泉是城市的标志，拱廊庭院散在街区里；沃尔特湖在城西 4 公里，一条运河把湖水引到老城边，湖滨浴场是夏天的中心，米尼蒙德的微缩公园在湖边；这里是克恩顿斯洛文尼亚人的文化中心，有自己的学校与媒体，机场在城北，卢布尔雅那在南面 88 公里。初来的人最容易犯的错，是以为克拉根福在湖边，而湖在城外 4 公里，老城本身是一座内陆的文艺复兴城。",
     layout:
       "老城中心的新广场以龙喷泉为地标；老城保留着文艺复兴风格建筑；米纳米湖公园沿沃尔特湖东岸展开，是市民休闲的核心区域。",
     gettingAround:
@@ -5859,6 +6297,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   villach: {
     identity:
       "菲拉赫是克恩顿州第二大城市，人口约6万，坐落在德拉瓦河畔，靠近意大利与斯洛文尼亚边境，是奥地利南部重要的交通枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Villach (statutory city, Carinthia; ~135 km²; ~65,700 2025, second in Carinthia; Drau/Gail; Hauptplatz; Warmbad thermal spa; Dobratsch; Lake Ossiach; Infineon; rail hub Tauern/Karawanken; Italy/Slovenia borders ~15–20 km; Fasching)
+    howItWorks:
+      "菲拉赫是克恩顿州的第二大城市，一座“特许市”，市域约 135 平方公里，从多布拉奇山坡一直到奥西阿赫湖，2025 年人口约 6.6 万；市政府管地方服务，警察与学校归州。老城在德劳河与盖尔河汇合处的南岸，主广场是它的中心，瓦姆巴德的温泉在城南，英飞凌的芯片厂是最大的雇主，菲拉赫火车站是陶恩线与卡拉万肯线交会的枢纽，意大利与斯洛文尼亚的边境各在一二十公里外，狂欢节是它一年的高潮。初来的人最容易犯的错，是把菲拉赫当作克拉根福的卫星城，而它是通往意大利与斯洛文尼亚的铁路门户，三国的日常在这里交汇。",
     layout:
       "老城中心的主广场保留着传统建筑风貌；德拉瓦河穿城而过，河畔是市民休闲区域；周边环绕着多座阿尔卑斯山南麓的湖泊。",
     gettingAround:
@@ -5874,6 +6315,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hallstatt: {
     identity:
       "哈尔施塔特是上奥地利州萨尔茨卡默古特地区一座湖畔村落，人口仅约780人，依达赫斯坦山而建，1997年作为文化景观列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hallstatt (municipality in Gmunden district, Upper Austria; ~740 2026; Hallstätter See under the Dachstein; UNESCO 1997 Hallstatt-Dachstein/Salzkammergut; oldest salt mine; up to 10,000–30,000 visitors/day 2020; station across the lake by boat; Salzburg ~75 km)
+    howItWorks:
+      "哈尔施塔特是上奥地利州格蒙登县的一个市镇，2026 年常住人口约 740，有自己的民选镇议会与镇长，警察与学校归州。村子挤在哈尔施塔特湖的西岸与达赫施泰因山的陡坡之间，只有一条沿湖的街与几层依山的房子，盐矿在村上方的山里，是世界上最老的仍在开采的盐矿，缆车上山，人骨屋在教堂旁，1997 年整片山湖列入世界遗产；火车站在湖对岸，要坐船过来，村里限制汽车进入，旺季每天涌进上万游客，是居民的十几倍，萨尔茨堡在西北约 75 公里。初来的人最容易犯的错，是把哈尔施塔特当作一座镇，而它是一个几百人的村，一天里大多数时候游客比居民多。",
     layout:
       "村落沿哈尔施塔特湖东岸狭窄的山坡而建，彩色房屋层叠分布；市集广场是村落的中心；盐矿缆车可从村内直达山上的盐矿参观区。",
     gettingAround:
@@ -5889,6 +6333,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kitzbuhel-city": {
     identity:
       "基茨比厄尔是蒂罗尔州一座知名的阿尔卑斯山滑雪小镇，人口约8千，坐落在基茨比厄尔阿尔卑斯山间，以每年一月举办的高山滑雪世界杯“哈内考姆赛道”闻名国际。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kitzbühel (town in Tyrol, district seat; 58 km²; ~8,300; 762 m; walled centre; Hahnenkamm/Streif race January; Kitzbüheler Horn; rail Salzburg–Innsbruck; Innsbruck ~100 km)
+    howItWorks:
+      "基茨比厄尔是蒂罗尔州的一座镇与基茨比厄尔县的县治，市域约 58 平方公里，人口约 8,300，有民选的镇议会与镇长，警察与学校归州。镇子在海拔 762 米的谷底，1271 年建城的老城被城墙围着，彩绘的房子、奢侈品店与餐馆挤在两条主街上，无车；哈嫩卡姆山在西面，每年一月的斯特雷夫滑降赛是世界杯里最有名的一站，基茨比厄尔峰在东面，雪场与基希贝格相连，夏天有高尔夫与网球赛，火车站在萨尔茨堡—因斯布鲁克线上，因斯布鲁克在西面约 100 公里。初来的人最容易犯的错，是把基茨比厄尔当作一个雪场，而它是一座有七百多年城墙的镇，雪场只是它一月的名声。",
     layout:
       "老城中心保留着中世纪街道格局与彩色房屋，是欧洲保存较好的阿尔卑斯山地小镇之一；缆车站分布在小镇周边，直接连接滑雪场。",
     gettingAround:
@@ -5904,6 +6351,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bregenz: {
     identity:
       "布雷根茨是福拉尔贝格州首府，人口约3万，坐落在博登湖东岸，是奥地利最西端的城市，与瑞士、德国隔湖相望。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bregenz (Vorarlberg capital; 29.5 km²; ~29,600 2023; smaller than Dornbirn; Lake Constance; Bregenz Festival floating stage ~7,000 seats July–Aug; Pfänderbahn; Oberstadt; Landtag; Zurich airport ~120 km)
+    howItWorks:
+      "布雷根茨是福拉尔贝格州的州府，市域约 30 平方公里，2023 年人口约 3 万，比州内最大的城市多恩比恩还小；州议会与州政府在城里，市政府管地方服务，警察与学校归州。城市在博登湖的东岸，湖边的水上舞台每年七八月上演歌剧，能坐 7,000 人，是世界上最大的湖上舞台，普凡德山的缆车从湖边上山，上城是中世纪的老城，湖的对岸就是德国与瑞士；阿勒曼尼方言让这里的口音更像瑞士，最近的大机场在苏黎世，约 120 公里。初来的人最容易犯的错，是以为州府就是最大的城市，而福拉尔贝格的经济与人口重心在南面的多恩比恩。",
     layout:
       "老城建在山丘上，保留着中世纪城墙与街道；新城沿博登湖岸展开，湖上剧场是布雷根茨音乐节的标志性演出场地；普芬芬山缆车可登高俯瞰博登湖全景。",
     gettingAround:
@@ -5919,6 +6369,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "zell-am-see": {
     identity:
       "采尔湖畔采尔是萨尔茨堡州皮恩茨高地区一座湖畔小镇，人口约1万，坐落在采尔湖畔、基茨施泰因峰脚下，是阿尔卑斯山区兼具湖泊与雪山景观的度假地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zell am See (town in Salzburg state, district seat; 55 km²; ~9,900; Lake Zell; Schmittenhöhe 138 km pistes; Kaprun/Kitzsteinhorn 10 km separate municipality; Grossglockner ~30 km; rail 1875; Salzburg ~80 km)
+    howItWorks:
+      "采尔湖畔采尔是萨尔茨堡州的一座镇与采尔湖县的县治，市域约 55 平方公里，人口约 9,900，有民选的镇议会与镇长，警察与学校归州。镇子在采尔湖的西岸，1875 年铁路通车后成为贵族的避暑地，施米滕山的缆车从镇边上山，有 138 公里雪道，卡普伦在南面 10 公里，是另一个市镇，基茨施泰因峰的冰川雪场在那里，两地合称一个度假区，大格洛克纳山在南面约 30 公里，夏天海湾国家的游客把镇子填满，萨尔茨堡在北面约 80 公里。初来的人最容易犯的错，是把“采尔湖—卡普伦”当作一个镇，而它们是两个市镇，冰川在卡普伦，湖在采尔。",
     layout:
       "老城中心保留着中世纪街道格局，沿采尔湖西岸展开；缆车站连接小镇与基茨施泰因峰滑雪区（山顶常年积雪，可全年滑雪）。",
     gettingAround:
@@ -5935,6 +6388,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "sankt-polten": {
     identity:
       "圣珀尔滕是下奥地利州的州府，在维也纳以西约60公里的特赖森河畔，人口约6万（2025年）。它建在罗马城市埃利乌姆·凯提乌姆的遗址上，是奥地利最早获得城市权的城镇之一（1159年）；1986年下奥地利州议会决定把州府从维也纳迁来，1997年州政府正式迁入，因此老城的巴洛克街区旁有一片1990年代建成的州政府区，音塔（Klangturm）和节日剧院是新区的地标。它是维也纳到瓦豪河谷的中途站。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sankt Pölten (statutory city, Lower Austria capital since 1986, government moved 1997; 108 km²; ~59,800 2025; Traisen; Roman Aelium Cetium; Baroque old town; Landhaus/Klangturm; Westbahn Vienna ~25 min; charter 1159)
+    howItWorks:
+      "圣珀尔滕是下奥地利州的州府，1986 年州议会决定把首府从维也纳迁到这里，1997 年州政府搬入新建的政府区；它是一座“特许市”，市域约 108 平方公里，2025 年人口约 6 万。老城在特赖森河西岸，巴洛克的市政厅广场是中心，1159 年的城市特许状让它自称奥地利最老的城，罗马时期的遗址在老城之下；州政府区在河东岸，音塔是它的地标，火车站在西线铁路上，到维也纳约 25 分钟。初来的人最容易犯的错，是以为下奥地利州的首府在维也纳，而维也纳自 1922 年起是独立的州，下奥地利的政府在这座 6 万人的小城里。",
     layout:
       "巴洛克老城很紧凑：市政厅广场（方济各会教堂、市政厅）是中心，主教座堂在广场东北，步行街连接两者；州政府区（州议会、音塔、节日剧院、州立博物馆）在老城东南的特赖森河边。火车站在老城北面步行约10分钟。瓦豪河谷的梅尔克和克雷姆斯都在北面约30公里，利林费尔德修道院在南面约25公里。",
     gettingAround:
@@ -5949,6 +6405,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   krems: {
     identity:
       "克雷姆斯在多瑙河瓦豪河谷的东端，维也纳以西约70公里，人口约2.5万（2023年），是奥地利最古老的城镇之一（995年首见记载，城中发现过2.7万年前的儿童墓葬）。瓦豪河谷——从梅尔克到克雷姆斯约35公里的多瑙河段——以葡萄园梯田、杏树、修道院和古镇著称，2000年列入世界遗产；克雷姆斯是绿维特利纳和雷司令的重要产区，1480年的施泰纳门是老城的标志，“艺术之路”（Kunstmeile）有漫画博物馆和州立美术馆。河对岸山上是格特魏格修道院，上游约8公里是杜恩施泰因（狮心王理查曾被囚禁的城堡废墟）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Krems an der Donau (statutory city, Lower Austria; ~25,000; eastern gate of the Wachau UNESCO 2000; Steiner Tor 1480; Stein district; Danube University; Grüner Veltliner; Göttweig; Vienna ~70 km, ~1 h rail; Marillenschnaps)
+    howItWorks:
+      "克雷姆斯是下奥地利州的一座“特许市”，人口约 2.5 万，市政府同时承担县级职能，警察与学校归州。城市在克雷姆斯河注入多瑙河的地方，是瓦豪河谷的东门，河谷 2000 年列入世界遗产：老城的施泰因门建于 1480 年，施泰因区沿多瑙河北岸排开，艺术馆与多瑙大学在两者之间，葡萄园爬满城后的山坡，绿维特利纳白葡萄酒与杏子白兰地是它的产品，格特韦格修道院在河对岸的山上，杜恩施泰因与梅尔克在上游，游船从码头出发，火车到维也纳约一小时。初来的人最容易犯的错，是把克雷姆斯当作瓦豪的一个村，而它是河谷东端一座有大学与港口的城。",
     layout:
       "克雷姆斯老城在多瑙河北岸的坡上，施泰纳门在老城西端，步行街和市政厅广场在城内，艺术之路（州立美术馆、漫画博物馆）在老城西南靠河。施泰因（Stein）是与克雷姆斯相连的另一片老街区，在西面。火车站在老城南侧靠河。格特魏格修道院在河南岸的山上（约6公里），杜恩施泰因在上游约8公里，多瑙河自行车道沿河经过。",
     gettingAround:
@@ -5963,6 +6422,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "bad-ischl": {
     identity:
       "巴特伊舍尔在上奥地利的萨尔茨卡默古特地区，特劳恩河与伊舍尔河交汇处，人口约1.4万。十九世纪盐水疗养让它成为时髦的温泉小镇，1854年皇帝弗朗茨·约瑟夫一世的母亲把皇帝别墅作为结婚礼物送给他，此后近60年他每年夏天都在这里避暑，1914年7月28日对塞尔维亚的宣战书就在别墅里签署。作曲家莱哈尔在此居住，勃拉姆斯、布鲁克纳都来过；1832年创办的察乌纳糕点店是皇家御用。2024年巴特伊舍尔与萨尔茨卡默古特一起是欧洲文化之都，哈尔施塔特、沃尔夫冈湖都在附近。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bad Ischl (town in Gmunden district, Upper Austria; 163 km²; ~14,000; Salzkammergut centre; Kaiservilla 1854; Zauner 1832; Lehár villa; ECoC 2024 with Salzkammergut; Traun; Salzburg ~55 km; Hallstatt ~20 km)
+    howItWorks:
+      "巴特伊舍尔是上奥地利州格蒙登县的一座镇，市域约 163 平方公里，人口约 1.4 万，有民选的镇议会与镇长，警察与学校归州。它是萨尔茨卡默古特地区的中心：19 世纪初因盐水疗养成为时髦的温泉地，1854 年起皇帝弗朗茨·约瑟夫每年夏天住在城北的皇帝别墅，宫廷与作曲家随之而来，莱哈尔的别墅在河边，1832 年开业的曹纳咖啡馆至今在主街上；镇子在特劳恩河与伊舍尔河汇合处，2024 年它与整个地区一起是欧洲文化之都，萨尔茨堡在西面约 55 公里，哈尔施塔特在南面约 20 公里。初来的人最容易犯的错，是把巴特伊舍尔当作去哈尔施塔特的过路站，而它是这片湖区的历史中心与交通枢纽。",
     layout:
       "小镇在两河交汇的谷地里，步行街（Pfarrgasse）、察乌纳咖啡馆和教堂在特劳恩河东岸的中心，皇帝别墅和公园在河西岸的山脚，莱哈尔别墅在特劳恩河边。火车站在中心南侧。盐矿在镇东南的山里。哈尔施塔特在南面约20公里，沃尔夫冈湖在西面约10公里，格蒙登和特劳恩湖在北面约30公里。",
     gettingAround:
@@ -5977,6 +6439,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   eisenstadt: {
     identity:
       "艾森施塔特是奥地利最东部的布尔根兰州的州府，在莱塔山南麓，维也纳东南约50公里，人口约1.6万（2025年），是奥地利最小的州府。埃斯特哈齐家族的宫殿是城市的核心，作曲家海顿1761年起在这里为埃斯特哈齐亲王服务近三十年，他的故居是博物馆，遗骨安葬在山教堂；1732年建立的犹太区是历史上“七社区”之一，奥地利犹太博物馆就在其中。1925年布尔根兰并入奥地利后它成为州府。东面约10公里是新锡德尔湖（2001年世界遗产文化景观），周围是葡萄酒产区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Eisenstadt (statutory city, Burgenland capital since 1925; 42.9 km²; ~16,100 2025; smallest state capital; Esterházy Palace; Haydn, Bergkirche tomb; Leitha hills; wine; Hungarian border ~12 km; Vienna ~50 km)
+    howItWorks:
+      "艾森施塔特是布尔根兰州的州府，奥地利最小的州府，一座“特许市”，市域约 43 平方公里，2025 年人口约 1.6 万；州议会与州政府在城里，警察与学校归州。这片土地 1921 年才从匈牙利划归奥地利，1925 年设为州府；埃斯特哈齐宫在老城的顶端，海顿在这里做了几十年宫廷乐师，山教堂里是他的墓，葡萄园在莱塔山的坡上，匈牙利边境在东面约 12 公里，维也纳在西北约 50 公里，克罗地亚族与匈牙利族是州里的少数民族。初来的人最容易犯的错，是把艾森施塔特当作维也纳的郊区小镇，而它是一个州的首府，有自己的宫廷、议会与葡萄酒。",
     layout:
       "老城很小：埃斯特哈齐宫在老城西端，宫前是主广场和步行街（Hauptstraße），海顿故居在步行街上，山教堂在宫殿西面的小山上，犹太区在宫殿北侧。火车站在老城东南。新锡德尔湖畔的鲁斯特（鹳巢和酒村）在东南约15公里，湖边的莫尔比施有夏季湖上轻歌剧节。",
     gettingAround:
@@ -5991,6 +6456,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "st-anton": {
     identity:
       "圣安东在蒂罗尔州西端的阿尔贝格山口下，海拔约1300米，常住人口约2400，是阿尔卑斯滑雪运动的发源地之一：1901年成立的阿尔贝格滑雪俱乐部和1921年汉内斯·施奈德的滑雪学校奠定了现代滑雪教学，1930年代这里的教练把滑雪带到了美国。阿尔贝格滑雪区（圣安东、莱希、聚尔斯等，2016年缆车全线连通）有94条缆车、340公里雪道，是奥地利最大的滑雪区，瓦卢加峰海拔2811米；2001年在此举办高山滑雪世锦赛。夏季是徒步和登山基地，阿尔贝格铁路和隧道让它在维也纳—苏黎世干线上。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): St. Anton am Arlberg (municipality in Landeck district, Tyrol; 166 km²; ~2,400 2021; 1,304 m; Arlberg ski area 94 lifts, 340 km pistes; cradle of alpine skiing, instructors emigrated 1930s; Arlberg railway Zurich–Innsbruck; 2001 World Championships; Innsbruck ~100 km)
+    howItWorks:
+      "圣安东是蒂罗尔州兰德克县的一个市镇，市域约 166 平方公里，2021 年常住人口约 2,400，有民选的镇议会与镇长，警察与学校归州。村子在海拔 1,304 米的阿尔贝格山口下，是阿尔贝格雪区的核心，这片雪区与莱赫、楚尔斯、圣克里斯托夫共用一张雪票，94 部缆车、340 公里雪道，是奥地利最大的；1920 年代的滑雪学校从这里把高山滑雪教遍世界，1930 年代教练移民美国带去了这项运动，2001 年世锦赛在此举行，火车站在苏黎世—因斯布鲁克的阿尔贝格线上，因斯布鲁克在东面约 100 公里。初来的人最容易犯的错，是把圣安东当作一座村庄来预期，而它是冬天挤满游客、夏天几乎空城的雪场镇。",
     layout:
       "村子沿罗萨纳河谷东西展开，步行街是中心，加尔齐格缆车站在村西端，火车站在村南侧；圣克里斯托夫在阿尔贝格山口下方约5公里，莱希和聚尔斯在山口另一侧的福拉尔贝格州。雪道从村里的缆车直接上到加尔齐格、瓦卢加和伦德尔山。夏季步道从缆车上站出发。",
     gettingAround:
@@ -6944,6 +7412,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   krabi: {
     identity:
       "甲米是泰国南部安达曼海沿岸的府份，人口约47万，以陡峭的石灰岩喀斯特海岸与莱利岬角攀岩胜地闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Krabi (thesaban mueang ~19 km², 32,644 2020; capital of Krabi province, appointed governor; Krabi River/Phang Nga Bay; Ao Nang ~20 km separate subdistrict; Railay boat only; Ko Phi Phi/Ko Lanta in province; airport 12 km)
+    howItWorks:
+      "甲米镇是甲米府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，约 19 平方公里，2020 年人口约 3.3 万，有民选的镇长。镇子在甲米河注入攀牙湾的河口，是府政府、医院、长途车站与夜市所在的地方，机场在东北 12 公里；人们来甲米要去的海滩都不在镇上：奥南在西面约 20 公里，属于另一个自治机构，莱利只能坐船，皮皮岛与兰达岛在海上一两个小时。初来的人最容易犯的错，是在甲米镇找海滩，而镇上只有河与红树林，海滩在奥南与岛上。",
     layout:
       "甲米镇位于甲米河口，是前往莱利岬角、奥南海滩与皮皮群岛的交通枢纽，多个跳岛游船码头分布于镇区周边。",
     gettingAround:
@@ -6958,6 +7429,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pattaya: {
     identity:
       "芭提雅是泰国东部湾区一座海滨度假城市，人口约12万（旅游旺季实际流动人口更多），距曼谷约150公里，是曼谷居民周末度假的传统目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pattaya (special local administrative area since 1978 with elected mayor, in Chonburi province; 53.4 km²; registered ~116,000–120,000, Greater Pattaya ~351,000; Naklua/Pattaya Beach/Jomtien; Ko Larn; U-Tapao 45 km; Bangkok 150 km; EEC)
+    howItWorks:
+      "芭堤雅是泰国除曼谷外唯一的“特别地方行政区”，1978 年起有民选的市长和市议会，但它仍在春武里府之内，府尹由内政部任命，警察与学校归中央。市域约 53 平方公里，登记人口约 12 万，实际居住者几倍于此，大芭堤雅约 35 万人。城市沿海岸分成三段：北面的纳克鲁阿、中间的芭堤雅海滩与步行街、南面的中天海滩，各有自己的气质，兰岛在海上，乌塔堡机场在南面 45 公里，曼谷在 150 公里外，东部经济走廊的高铁在建。初来的人最容易犯的错，是把芭堤雅当作一座独立的市，而它是春武里府下的一个特别行政区，府政府在 30 公里外的春武里。",
     layout:
       "城市沿芭提雅湾海岸展开，芭提雅海滩、京畿海滩与查安海滩自北向南分布，芭提雅步行街是夜生活集中区域。",
     gettingAround:
@@ -6972,6 +7446,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "chiang-rai": {
     identity:
       "清莱是泰国最北端的府份首府，人口约7万，紧邻缅甸与老挝边境的“金三角”地区，以白庙、蓝庙等当代宗教艺术建筑闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chiang Rai (thesaban nakhon ~70,000; capital of Chiang Rai province, appointed governor; founded 1262 by Mangrai, first Lanna capital; Kok River; White Temple 13 km; Golden Triangle ~55 km; Mae Sai border; airport; no rail; UNESCO Design City)
+    howItWorks:
+      "清莱是清莱府的府治，府尹由内政部任命；清莱市是一个“城市自治市”，有民选的市长，人口约 7 万，而全府约 130 万人。市区在滚河边，1262 年孟莱王在此建立兰纳王国的第一座都城，钟楼与夜市是市中心的坐标，机场在城北，没有铁路；白庙在南面 13 公里，蓝庙在城北，黑屋在城外，金三角在东北约 55 公里的清盛，美塞的缅甸边境约 60 公里，董山在西北。初来的人最容易犯的错，是以为白庙与金三角在清莱城里，而它们各在几十公里外，市区本身是一座安静的府城。",
     layout:
       "清莱镇规模较小，白龙寺（白庙）位于城郊，蓝庙与黑屋博物馆分布在市区不同方向，湄公河与湄赛河交汇处的金三角景观区位于府境北部。",
     gettingAround:
@@ -6986,6 +7463,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "koh-samui": {
     identity:
       "苏梅岛是泰国湾第二大岛屿，人口约6.4万，以查汶、拉迈两大海滩度假区与椰子种植传统闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Samui (228.7 km²; ~70,000 registered, 200,000+ with migrants/tourists; district of Surat Thani province; Ko Samui City Municipality since 2012 with elected mayor; Nathon port/district office west vs Chaweng/Lamai east; ring road 51 km; Bangkok Airways-owned airport 1989; ferries from Don Sak)
+    howItWorks:
+      "苏梅岛是泰国第二大岛，约 229 平方公里，登记人口约 7 万，加上外来务工者与游客常住二十多万；它是素叻他尼府下的一个县，2012 年起整座岛是一个有民选市长的“城市自治市”，府尹由内政部任命。岛的西岸是纳通，港口、县政府与本地人的市场都在那里；东岸的查汶与拉迈是游客的海滩，机场在东北角，由曼谷航空私营，1989 年启用，51 公里的环岛公路把它们连起来，渡轮从大陆的东萨码头开来，帕岸岛与涛岛在北面。初来的人最容易犯的错，是把查汶当作苏梅岛的市中心，而岛的行政中心与本地生活在西岸的纳通。",
     layout:
       "岛屿海岸线环绕分布多个海滩度假区，查汶海滩是岛上最繁华的区域，岛屿内陆保留大片传统椰林。",
     gettingAround:
@@ -7000,6 +7480,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ayutthaya: {
     identity:
       "大城的选址是一次刻意的地利算计——1350年，拉玛铁菩提一世把新都定在湄南河、华富里河与巴莎河三江环抱形成的天然岛屿上，河道本身就是护城河，又便于连通出海口做国际贸易；此后417年（1350–1767年）间，这里发展成东南亚最大的国际都会之一，直到1767年被缅甸军队攻陷、焚毁殆尽。大城是泰国中部的历史古都，人口约5.5万，1991年大城历史公园列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ayutthaya (Phra Nakhon Si Ayutthaya city municipality ~50,800; capital of Ayutthaya province; island between Chao Phraya, Pa Sak and Lopburi rivers; Historical Park UNESCO 1991; capital of Siam 1351–1767; train ~1.5 h from Bangkok, ~80 km)
+    howItWorks:
+      "大城是大城府的府治，府尹由内政部任命；大城市是一个“城市自治市”，有民选的市长，人口约 5 万。城市在昭披耶河、巴塞河与华富里河围成的岛上，1351 至 1767 年是暹罗的都城，岛的西半是历史公园，玛哈泰寺、帕斯桑碧寺的塔群在这里，1991 年列入世界遗产，柴瓦塔那兰寺在河对岸；岛的东半是今天的市镇，火车站在岛外的河东岸，到曼谷约一个半小时，岛上靠自行车与嘟嘟车，工业区在城外。初来的人最容易犯的错，是把大城当作一片废墟，而废墟与市镇在同一座岛上，市民就住在古塔之间。",
     layout:
       "历史公园位于湄南河、华富里河与巴莎河三江环绕形成的岛状区域，佛寺遗址密集分布，与周边现代市镇相邻。",
     gettingAround:
@@ -7014,6 +7497,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sukhothai: {
     identity:
       "泰文字母的诞生，据传就发生在素可泰这座都城里——1238年建都后，第三代君主兰甘亨大帝在位期间（1279–1298年）把这个原本弱小的政权扩张成暹罗人的第一个强国，相传他在1283年创制了泰文字母，一块刻于1283–1290年间的碑文（兰甘亨碑）至今是已知最早的泰文文献。素可泰王朝定都于此约一个世纪（1238–1347年，此后阿瑜陀耶王朝崛起取而代之），是泰国最早的独立王国故都，人口约2万，1991年素可泰历史公园列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sukhothai Thani (town municipality 3.5 km², ~37,000; capital of Sukhothai province; Yom River; Old Sukhothai/Historical Park UNESCO 1991 ~12 km west; established 1937; airport ~27 km; Bangkok 427 km)
+    howItWorks:
+      "素可泰的新城叫素可泰他尼，是素可泰府的府治，府尹由内政部任命；新城是一个“镇级自治市”，只有约 3.5 平方公里，人口约 3.7 万，1937 年才设立，在永河边，长途车站与市场都在这里。老城在西面约 12 公里，是 13 世纪第一个暹罗王国的都城，兰甘亨王的碑铭出自这里，历史公园 1991 年列入世界遗产，园内靠自行车；西萨查那莱古城在北面 55 公里，机场在北面约 27 公里，由曼谷航空经营，彭世洛在东面 60 公里。初来的人最容易犯的错，是在新城找古迹，而古城在 12 公里外，两地之间要坐双条车。",
     layout:
       "历史公园分为城内、城北、城西、城南四个区域，玛哈泰寺遗址位于城内区域核心，周边环绕护城河与城墙遗迹。",
     gettingAround:
@@ -7028,6 +7514,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hua-hin": {
     identity:
       "华欣是泰国湾沿岸的海滨小城，人口约1.9万，自20世纪初泰国王室在此修建行宫起即成为传统的皇家度假胜地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hua Hin (town municipality; district 838.9 km², ~126,000 2025; Prachuap Khiri Khan province; royal resort since 1920s, Klai Kangwon Palace; railway station 1911; Khao Takiab; Cha-am in Phetchaburi 25 km; Bangkok ~200 km; airport limited)
+    howItWorks:
+      "华欣是巴蜀府下的一个县和一个“镇级自治市”，县约 840 平方公里，2025 年人口约 12.6 万，府尹由内政部任命，镇长由市民选出。1920 年代王室在这里建起铁路旅馆与“忘忧宫”，华欣从此是泰国最早、最体面的海滨度假地，王宫至今在镇北的海边；镇中心在 1911 年的火车站与夜市一带，海滩沿镇的东侧展开，考他基在南面 7 公里，北面 25 公里的差安属于碧武里府，是另一座度假镇；曼谷在北面约 200 公里，机场只有零星航班，退休的外国人与高尔夫球场是这里的日常。初来的人最容易犯的错，是把华欣当作一座海滩，而它是一座有王宫、有市场、有几万本地人的镇，海滩只是它的东边。",
     layout:
       "城市沿华欣海滩展开，市中心保留有华欣火车站等殖民地风格建筑，海滩南北两端分布度假酒店与高尔夫球场。",
     gettingAround:
@@ -7042,6 +7531,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "udon-thani": {
     identity:
       "乌隆他尼是泰国东北部依善地区的重要城市，人口约14万，是探索班清史前遗址的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Udon Thani (thesaban nakhon 130,531 2019; urban ~400,000; capital of Udon Thani province; Isan; US air base 1960s–70s; Ban Chiang UNESCO 1992 ~55 km; Red Lotus Sea ~40 km; Nong Khai/Vientiane ~80 km; airport; rail)
+    howItWorks:
+      "乌隆他尼是乌隆府的府治，府尹由内政部任命；乌隆市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 40 万，是伊桑地区的“四大城市”之一。市区在铁路两侧的格网上，农帕差公园是市中心的湖，1960 至 70 年代的美军空军基地留下了西式的街区与酒吧，机场在城南，火车与公路通往北面 80 公里的廊开与老挝万象；班清遗址在东面约 55 公里，1992 年列入世界遗产，红莲花海在南面约 40 公里。伊桑话是本地的语言。初来的人最容易犯的错，是把乌隆当作去老挝的过路站，而它是伊桑北部的商业与医疗中心。",
     layout:
       "城市呈典型泰国省会格局，市中心农贵湖公园是当地居民日常休闲的核心场所。",
     gettingAround:
@@ -7056,6 +7548,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "nakhon-ratchasima": {
     identity:
       "呵叻（那空叻差是玛）是泰国东北部依善地区的门户城市，人口约14万，是探索考艾山国家公园与呵叻高原的重要基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nakhon Ratchasima/Korat (thesaban nakhon ~126,000 registered 2019; urban ~466,000 2021; capital of the largest province ~2.6 million, ~20,000 km²; Thao Suranari monument; Terminal 21; Khao Yai ~100 km at Pak Chong; Phimai ~60 km; Bangkok 250 km; high-speed rail planned 2027)
+    howItWorks:
+      "呵叻是泰国面积最大的府——那空叻差是玛府——的府治，府尹由内政部任命，全府约 260 万人；呵叻市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 47 万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
     layout:
       "城市保留有他玛叻古城墙与护城河遗迹，是连接曼谷与依善地区的传统交通枢纽。",
     gettingAround:
@@ -7072,6 +7567,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kanchanaburi: {
     identity:
       "北碧在曼谷以西约120公里，在桂诺河与桂艾河汇成湄公河（Mae Klong）的地方，市镇人口约2.6万。二战期间日军用盟军战俘和亚洲劳工修建泰缅铁路（“死亡铁路”），约半数劳工死于疾病、虐待和事故，桂河大桥、北碧战争公墓、泰缅铁路中心和地狱火通道是这段历史的纪念地。北碧府境内还有七层的爱侣湾瀑布、赛育瀑布和缅甸边境的桑卡武里孟族木桥，是曼谷周边最受欢迎的一日和两日游目的地之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kanchanaburi (town municipality ~25,700 2017; capital of Kanchanaburi province ~19,000 km², Myanmar border; Kwai Yai/Kwai Noi confluence; Bridge on the River Kwai 1942–43; war cemeteries; Hellfire Pass ~80 km; Erawan NP ~65 km; Bangkok ~120 km; train)
+    howItWorks:
+      "北碧镇是北碧府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，有民选的镇长，人口约 2.6 万，而北碧府约 1.9 万平方公里，是泰国第三大府，一直伸到缅甸边境。镇子在桂河大支流与小支流汇合处，桂河大桥就在镇北的河上，1942 至 43 年由战俘与劳工修建，两座战争公墓与博物馆在镇内，河上的筏屋是本地的旅馆；地狱火通道在西北约 80 公里，爱侣湾瀑布在北面约 65 公里，曼谷在东面约 120 公里，火车从吞武里开来。初来的人最容易犯的错，是把北碧当作一座桥，而桥在镇上，府域的森林与瀑布要再走一两个小时。",
     layout:
       "市镇在桂艾河东岸，河边一带是酒店、水上屋和餐馆，桂河大桥在市镇北面约3公里的河上，战争公墓和泰缅铁路中心在火车站旁，JEATH 战争博物馆在河边。死亡铁路从桂河大桥向西北沿桂诺河到南多（Nam Tok），沿途有塔告山岩栈道；地狱火通道在西北约80公里。爱侣湾国家公园在北面约65公里，赛育在西北约100公里，桑卡武里在西北约220公里。",
     gettingAround:
@@ -7086,6 +7584,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lampang: {
     identity:
       "南邦在泰国北部的旺河谷里，清迈东南约100公里，人口约5.8万，是兰纳古都之一，也是泰国唯一仍用马车载客的城市（1916年引入）。南邦銮寺（Wat Phra That Lampang Luang）是兰纳木构寺庙的代表，保存着十九世纪壁画；十九世纪缅甸柚木商在此建的缅式寺庙，泰国现存的31座中有9座在南邦。郊外的泰国大象保护中心是泰国官方的大象机构，湛山（Chae Son）国家公园有温泉和瀑布；南邦以陶瓷出名，公鸡碗是它的符号。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lampang (thesaban nakhon ~58,000 2010, 22 km²; capital of Lampang province; Wang River valley; horse carriages; Wat Phra That Lampang Luang ~18 km; ceramics; Elephant Conservation Center; Chiang Mai 101 km; rail; airport; Mae Moh lignite)
+    howItWorks:
+      "南邦是南邦府的府治，府尹由内政部任命；南邦市是一个“城市自治市”，有民选的市长，约 22 平方公里、人口约 6 万，是泰国北部第三大城市。市区在汪河河谷里，老街区沿河排开，马车至今是它的标志，陶瓷厂散在城郊，公鸡碗从这里出产；南邦銮寺在西南约 18 公里的高卡，泰国大象保护中心在西面约 30 公里，清迈在西北 101 公里，铁路是曼谷—清迈线的一站，机场在城南，湄莫的褐煤电厂在东面。初来的人最容易犯的错，是把南邦当作清迈的过路站，而它是一座保留了兰纳与柚木时代街景、节奏比清迈慢得多的府城。",
     layout:
       "老城在旺河南岸，空达（Kad Kong Ta）老街沿河，周末变成步行街夜市，河上的拉差纳达拉桥（1917年）是地标；缅式寺庙散布在市区（如 Wat Si Rong Muang、Wat Pratu Pong）。南邦銮寺在市区西南约18公里的高开（Ko Kha），大象保护中心在西北约30公里的杭猜，湛山国家公园在北面约70公里。火车站在市区西侧，机场紧邻市区南侧。",
     gettingAround:
@@ -7117,6 +7618,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ko-chang": {
     identity:
       "象岛在泰国东部达叻府的暹罗湾里，靠近柬埔寨边境，面积约210平方公里，是泰国第三大岛（仅次于普吉和苏梅），人口约8500。全岛85%属于象岛群岛国家公园，内陆是雨林山地（最高峰744米），西岸有白沙滩、孤独海滩等一串海滩，南端的邦宝渔村建在海上的木桩上。与普吉、苏梅相比它开发较晚、更安静，从曼谷约300公里。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Chang (~217 km², population ~8,000; Ko Chang district of Trat province; ~70% Mu Ko Chang National Park 1982; west-coast beaches White Sand/Klong Prao/Kai Bae/Lonely Beach vs east-coast villages; ferries from Laem Ngop ~30 min; Trat airport ~40 km from pier; Bangkok ~315 km)
+    howItWorks:
+      "象岛是泰国最大的岛之一，约 217 平方公里，常住人口约 8,000，它是达叻府下的一个县，府尹由内政部任命，岛上的乡镇有自己的自治机构，约七成的岛是 1982 年设立的国家公园。岛的西岸是一串海滩——白沙滩、孔抛、凯贝、孤独海滩——旅馆与餐馆都在那里，东岸是渔村与红树林，萨拉佩村在南端，一条环岛未合拢的公路把它们连起来；渡轮从大陆的莱恩戈普码头开来约 30 分钟，达叻机场在码头东面约 40 公里，由曼谷航空经营，曼谷在 315 公里外，库德岛与麦岛在南面。初来的人最容易犯的错，是把象岛当作一处度假村，而它是一座大半是山林的岛，海滩只在西岸的一条窄带上。",
     layout:
       "岛呈南北向，主要海滩都在西岸从北到南排列：白沙滩最热闹，往南是空帕劳、卡贝、孤独海滩，南端是邦宝渔村和码头（去外岛的船从这里出发）；东岸安静，有红树林和渔村。渡轮从大陆的 Ao Thammachat 到岛北端的菠萝湾码头约30分钟，环岛公路沿海岸走（不闭环，南端山路陡）。空普瀑布在岛中部。象岛以南的库德岛、玛岛是外岛。",
     gettingAround:
@@ -7131,6 +7635,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "khao-lak": {
     identity:
       "考拉在泰国安达曼海岸的攀牙府，普吉岛以北约60公里，是沿海约20–25公里的一串度假村落（邦娘、南通、库克卡等海滩），背靠考拉—蓝鲁国家公园的雨林山地。它是去斯米兰群岛和苏林群岛潜水（船宿）的主要出发地。2004年12月26日的印度洋海啸在这里造成泰国最严重的伤亡，被冲到内陆1.25公里的813号巡逻艇成为纪念地，重建后的考拉以安静的长海滩、家庭度假村著称，比普吉安静得多。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Khao Lak (string of beach villages — Bang Niang, Nang Thong, Khuk Khak, Bang Sak — in Takua Pa district, Phang Nga province, not a municipality; ~25 km of coast; 2004 tsunami; Similan liveaboards from Thap Lamu; Phuket airport ~60–70 km; low-rise resort rules)
+    howItWorks:
+      "考拉不是一座镇，而是攀牙府达瓜巴县沿海约 25 公里的一串村子——邦尼昂、南通、库卡、邦萨——它们没有一个共同的市政府，各村属于县下的乡镇自治机构，府尹由内政部任命。度假村沿海岸公路散开，没有市中心，2004 年海啸在这里夺去四千多人的生命，被冲上岸的警艇留在邦尼昂作纪念，之后的规则限制了建筑高度；斯米兰群岛的船宿从南面的塔兰姆码头出发，普吉机场在南面六七十公里，达瓜巴老镇在北面约 30 公里。初来的人最容易犯的错，是在地图上找“考拉镇”，而它只是一个泛称，住在哪个村就在哪个村的海滩上。",
     layout:
       "考拉沿4号公路和海岸南北展开：南端的考拉海滩和南通海滩靠近国家公园，往北是邦娘（813号巡逻艇纪念地和海啸博物馆在此）、库克卡、白沙滩，北端是帕卡朗角；塔迈昂码头在南面约15公里，斯米兰和苏林的船从这里出发。达瓜巴老城在北面约25公里，考索国家公园（喀斯特雨林和绰兰湖）在东北约80公里。普吉机场在南面约60公里。",
     gettingAround:
@@ -7145,6 +7652,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ko-lanta": {
     identity:
       "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，人口约1.1万。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Lanta (district of Krabi province; Ko Lanta Yai ~80 km², ~20,000; Sala Dan pier town north; west-coast beaches Klong Dao/Long Beach/Klong Nin; Lanta Old Town east coast, Chinese/Urak Lawoi heritage; Muslim majority; bridge from Ko Lanta Noi 2016 + car ferry; Krabi airport ~70 km; Mu Ko Lanta NP; low season)
+    howItWorks:
+      "兰达岛是甲米府下的一个县，府尹由内政部任命，岛上的乡镇有自己的自治机构；主岛兰达耶约 80 平方公里，常住人口约 2 万，穆斯林占多数。萨拉丹是北端的码头镇，渡轮与商店在那里，2016 年通车的大桥把它与小兰达岛连起来，再靠汽车渡轮到大陆；西岸是一串海滩——孔道、长滩、孔宁——旅馆都在那里，东岸的兰达老镇是华人与乌拉克拉沃伊海上民族留下的木屋街，国家公园在南端的灯塔处，甲米机场在东北约 70 公里，约两小时。雨季大半的店会关门。初来的人最容易犯的错，是把萨拉丹当作兰达岛的全部，而岛长 27 公里，海滩越往南越安静。",
     layout:
       "大岛北端的沙拉丹是港口和主镇，渡轮和快艇从这里出发；海滩从北到南沿西岸排列：空道、长滩、空孔、空宁、干藤湾，越往南越安静，路也越差；国家公园在最南端。老镇在东岸中部，面向大陆一侧的海湾。小岛在大岛北面，桥连接两岛和大陆的渡口。",
     gettingAround:
@@ -7701,6 +8211,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hoi-an": {
     identity:
       "会安是越南中部一座保存完好的古代贸易港口小镇，人口约9万，16至19世纪曾是东南亚重要的国际贸易港，1999年古镇列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hội An (former city of Quảng Nam dissolved 2025; now wards of Da Nang after Quảng Nam merged into Da Nang 2025-07-01; Ancient Town UNESCO 1999; Thu Bồn; An Bàng/Cửa Đại; Da Nang airport ~30 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "会安在 2025 年 7 月 1 日之后不再是一座市：广南省并入岘港市，县级单位撤销，会安分成几个直属岘港的坊，古城所在的那一片就叫会安坊。古城在秋盆河的北岸，1999 年列入世界遗产，进入老街要买门票，安邦与浯岱海滩在东面 4 公里，占婆岛在海上，岘港机场在北面约 30 公里。夜里的灯笼与裁缝店是它的生意。初来的人最容易犯的错，是把会安当作一座独立的城市，而它如今是岘港的几个坊，市政府在 30 公里外的岘港。",
     layout:
       "古镇沿秋盆河而建，日本廊桥是古镇标志性建筑，黄色外墙的传统商屋与中式会馆沿古街密集分布。",
     gettingAround:
@@ -7715,6 +8228,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hue: {
     identity:
       "顺化被选为都城，很大程度上是香江给的地利——阮朝开国君主嘉隆帝1802年统一越南后，看中这里背山面水、香江从市区蜿蜒而过的格局，仿照中国紫禁城的规制建起皇城，此后143年（1802–1945年）里，越南末代王朝的历代皇帝都在这里治理国家、也葬在香江沿岸的皇陵群里。顺化是越南中部古都，人口约45万，1993年顺化古迹群列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Huế (centrally-governed city since 2025-01-01; ~4,947 km²; over a million people; wards/communes directly under city from July 2025; Perfume River; Citadel north bank UNESCO 1993; French quarter south; tombs south; Phu Bai airport ~15 km; Nguyen capital 1802–1945) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "顺化 2025 年 1 月 1 日起是越南的中央直辖市，由原承天顺化省整体升格，市域约 4,950 平方公里，人口一百多万，同年 7 月县级单位撤销后，坊与社直属于市。香江把市区分成两岸：北岸是 1802 至 1945 年阮朝的皇城与紫禁城，1993 年列入世界遗产，南岸是法国时期的街区与今天的商业中心，阮朝皇陵散在南面的丘陵里，顺安海滩在东面，富牌机场在南面约 15 公里，海云关隔开岘港。初来的人最容易犯的错，是把顺化当作皇城那一片，而它是一个从山到海、比岘港市区大得多的直辖市。",
     layout:
       "香江贯穿城市，河北岸皇城与紫禁城遗址保留阮朝宫廷格局，河南岸为现代市区，多座皇陵分布于城郊香江沿岸。",
     gettingAround:
@@ -7729,6 +8245,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   sapa: {
     identity:
       "沙巴是越南西北部老街省一座山地小镇，海拔约1500米，是探索番西邦峰与梯田景观的门户，多个少数民族在此聚居。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sa Pa (former district-level town of Lào Cai; since 2025 ward/commune under Lào Cai province, which merged with Yên Bái; ~1,600 m; 70,663 2022; Hmong 52%, Dao 25%; Fansipan 3,143 m cable car 2016; Lào Cai city ~35 km, railway from Hanoi; ~250 km from Hanoi) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "沙坝原是老街省的一个县级市镇，2025 年 7 月县级单位撤销后成为老街省直辖的坊，老街省同年与安沛省合并。镇子在海拔约 1,600 米的黄连山脉上，2022 年人口约 7 万，苗族约占一半、瑶族约四分之一，京族只是少数；镇中心在石教堂周围的一片坡地，梯田在南面的芒花谷，猫猫村、塔万村散在谷里，番西邦峰的缆车 2016 年从镇边直达 3,143 米的山顶，老街市与火车站在东面 35 公里，河内在 250 公里外。雾与冷是这里的常态。初来的人最容易犯的错，是把沙坝当作一座山村，而它是一个游客数量是居民几十倍的旅游镇，村寨要走出镇外才看得到。",
     layout:
       "镇区依山而建，周边山谷分布着苗族、瑶族、岱依族等少数民族村寨与层叠的梯田景观。",
     gettingAround:
@@ -7743,6 +8262,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ha-long-city": {
     identity:
       "下龙市是越南东北部广宁省省会，人口约30万，是探索下龙湾喀斯特岛群的主要门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hạ Long (former provincial city ceased 2025-07-01; capital of Quảng Ninh; 270,054 2019; Bãi Cháy tourist west vs Hòn Gai administrative/coal east, Bãi Cháy Bridge 2006; Ha Long Bay UNESCO 1994; cruises from Tuần Châu; Vân Đồn airport ~50 km; Hanoi ~165 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "下龙是广宁省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属广宁省的坊，2019 年人口约 27 万。城市分成两半：西面的拜寨是酒店与游乐场的旅游区，东面的鸿基是省政府、市场与煤矿的老城，2006 年建成的拜寨大桥把两岸连起来；下龙湾 1994 年列入世界遗产，游船大多从西面的巡洲岛码头出发，云屯机场在东面约 50 公里，河内在西面约 165 公里，高速公路两个多小时。煤是这座城的老本行。初来的人最容易犯的错，是把下龙市当作下龙湾，而湾在海上，城在岸上，游船码头在城外的岛上。",
     layout:
       "城市沿下龙湾海岸展开，多个游船码头分布于沿海地带，是游客乘船游览下龙湾的出发点。",
     gettingAround:
@@ -7757,6 +8279,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "nha-trang-city": {
     identity:
       "芽庄是越南南中部沿海城市，人口约54万，坐落于芽庄湾畔，是越南知名的海滨度假与潜水目的地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nha Trang (former city ~500,000; since 2025-06-16 the core is Nha Trang ward, 47 km², 136,118, under Khánh Hòa province, which absorbed Ninh Thuận, capital Nha Trang; 6 km Trần Phú beach; Po Nagar; Vinpearl Hòn Tre; Cam Ranh airport ~35 km; railway) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "芽庄是庆和省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属庆和省的坊，市中心的那一片就叫芽庄坊，约 47 平方公里、13.6 万人，整个原市区约 50 万人；庆和省同年并入了宁顺省。城市沿 6 公里的海滩展开，陈富路是海滨的主轴，酒店排在路的一侧，本地人的街区在后面几个街区，婆那加占塔在城北的河口，珍珠岛度假区在海上的竹岛，靠缆车与渡轮往来，火车站在市中心，金兰机场在南面约 35 公里。初来的人最容易犯的错，是把海滨大道当作芽庄，而本地人的市场与生活在离海几条街的后面。",
     layout:
       "城市沿芽庄湾海滩展开，占婆塔遗址位于市区北侧，多座离岛分布于海湾之中，是跳岛游的主要目的地。",
     gettingAround:
@@ -7771,6 +8296,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "da-lat": {
     identity:
       "大叻是越南中部高原一座避暑山城，人口约23万，海拔约1500米，法国殖民时期即被开发为避暑胜地，如今是越南重要的花卉与农产品产区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Đà Lạt (former provincial city ceased 2025-07-01; capital of Lâm Đồng province, which absorbed Bình Thuận and Đắk Nông; ~1,500 m Langbiang plateau; Yersin 1893, French hill station; Xuân Hương lake; Liên Khương airport ~30 km; no rail) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "大叻是林同省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属林同省的坊；林同省同年并入了平顺与得农两省，省域从高原一直到海边。城市在海拔约 1,500 米的朗平高原上，1893 年耶尔森发现这片高地后，法国人把它建成避暑地，别墅与松林是它的底色，春香湖在市中心，市场在湖边的坡上，花与蔬菜的农场围着市区，莲姜机场在南面约 30 公里，没有铁路，老火车站只留作纪念。初来的人最容易犯的错，是按越南的气候来想象大叻，而这里一天有四季，晚上要穿外套。",
     layout:
       "城市依山而建，春香湖是市中心地标，法式别墅与教堂建筑散布于起伏的山地地形之间。",
     gettingAround:
@@ -7785,6 +8313,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "can-tho": {
     identity:
       "芹苴是湄公河三角洲最大城市，人口约120万，是探索三角洲水上市场与水乡风情的核心门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cần Thơ (centrally-governed city; merged with Hậu Giang and Sóc Trăng 2025; ~6,360 km²; ~4.2 million; 31 wards + 72 communes; Hậu River; Ninh Kiều; Cái Răng floating market; airport ~9 km; Khmer community in Sóc Trăng; HCMC ~170 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "芹苴是越南的中央直辖市，2025 年后江省与朔庄省并入后，市域约 6,360 平方公里，人口约 420 万，县级单位撤销后市之下直接是 31 个坊与 72 个社。它是湄公河三角洲的中心，市区在后江（巴萨河）的西岸，宁桥码头是市中心的坐标，丐冷水上市场在城南的河道上，2010 年建成的芹苴大桥把它与对岸连起来，机场在西北 9 公里；朔庄一带有大量高棉族社区。胡志明市在东北约 170 公里。初来的人最容易犯的错，是把芹苴当作一座水上市场的小城，而它是一个 400 万人、覆盖半个三角洲的直辖市。",
     layout:
       "城市沿后江（湄公河支流）而建，宁桥横跨江面，市区周边河汊纵横，水上市场分布于郊外河道之上。",
     gettingAround:
@@ -7799,6 +8330,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "phu-quoc-city": {
     identity:
       "阳东是富国岛最主要的城镇，人口约2万，是富国岛旅游与渔业活动的核心区域。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Phú Quốc (island 575 km², Vietnam's largest; city 2021; since 2025-06 a special zone under An Giang province, which absorbed Kiên Giang; ~180,000; Dương Đông main town west; An Thới south; airport 2012; visa-free 30 days since 2014; fish sauce/pepper) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "富国岛是越南最大的岛，约 575 平方公里，2021 年设市，2025 年 6 月县级单位撤销后改为“特区”，直属安江省——坚江省同年并入安江，省会在迪石。岛上人口约 18 万，主镇阳东在西岸，机场、夜市与长滩都在附近，安泰在南端，缆车通往海上的香岛，北面是新建的度假城，鱼露与胡椒是老产业，2012 年启用的国际机场与 30 天免签让它成为面向国际的度假岛。初来的人最容易犯的错，是把富国当作一座度假村，而它是一个有 18 万居民、南北 50 公里的岛，特区政府在阳东。",
     layout:
       "镇区沿阳东河入海口展开，阳东夜市是镇上最热闹的商业街区，周边海滩度假酒店密集分布。",
     gettingAround:
@@ -7813,6 +8347,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ninh-binh": {
     identity:
       "宁平的华闾曾是越南历史上第一个统一王朝的都城——968年丁部领在此建立大瞿越国、定都华闾，看中的正是这里喀斯特峰丛环绕、易守难攻的地形；丁朝与前黎朝先后在此建都四十余年，直到1010年李太祖认为这里地势过于闭塞、不利发展，才把都城迁往河内（升龙）。宁平是越南北部一座以喀斯特稻田景观闻名的城市，人口约13万，是探索长安名胜群与陆龙湾的核心门户，常被称为“陆上下龙湾”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ninh Bình (province merged with Hà Nam and Nam Định 2025, capital at Hoa Lư ward — the former Ninh Bình city; Đáy river; Tràng An complex UNESCO 2014 — Tam Cốc, Tràng An, Bái Đính, Hoa Lư 10th-century capital — 7–15 km west; Hanoi ~95 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "宁平原是宁平省的省会城市，2025 年宁平省与河南、南定两省合并，省会设在华闾坊——也就是原宁平市与华闾县合并后的市区，县级单位撤销后坊直属于省。市镇在沱河边，是一座平淡的省城，火车站与长途车站在这里，河内在北面约 95 公里；人们来宁平要看的都在城西 7 到 15 公里的喀斯特山里：长安与三谷的游船、拜顶寺、10 世纪的华闾古都，2014 年一起列入世界遗产。初来的人最容易犯的错，是在宁平城里找山水，而山水在城外的田野与河道里，城只是一个下车的地方。",
     layout:
       "城市周边被喀斯特石灰岩峰丛环绕，稻田与河道交织分布于峰丛之间的谷地平地。",
     gettingAround:
@@ -7846,6 +8383,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "dong-hoi": {
     identity:
       "洞海在越南中部的海岸上，是通往风牙—己榜国家公园的门户城市，2025年7月起原广平省并入广治省。风牙—己榜是世界上最重要的喀斯特洞穴区之一，2003年列入世界遗产、2015年扩展，2025年与老挝的欣南诺国家公园合并为跨境世界遗产；这里有世界最大的洞穴韩松洞（1991年当地人发现、2009年英国探险队公布，长逾5公里、高约200米）、长31公里的天堂洞和有地下河的风牙洞。洞海本身有日丽海滩、广平门和残存的城墙，北面不远是1954–1975年的南北分界（非军事区）和永牧地道。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Đồng Hới (former city; since 2025 Đồng Hới ward under Quảng Trị province — Quảng Bình merged with Quảng Trị, capital at Đồng Hới; Nhật Lệ river/beach; airport; railway; Phong Nha-Kẻ Bàng UNESCO 2003 ~45 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "洞海原是广平省的省会城市，2025 年广平省与广治省合并为新的广治省，省会设在洞海，县级单位撤销后市区分成直属省的坊，市中心的那一片叫洞海坊。城市在日丽河的入海口，河东岸是海滩，西岸是市区，广平门是老城墙的遗存，机场在城北，火车站在城西；峰牙—己榜国家公园在西北约 45 公里的山里，2003 年列入世界遗产，天堂洞与韩松洞都在那里。初来的人最容易犯的错，是把洞海当作峰牙的门口，而洞穴在一小时车程外的山里，洞海是一座海边的省城。",
     layout:
       "洞海市区在日丽河口，日丽海滩在河东岸的沙洲上（保宁半岛），广平门和古城墙在市中心，火车站在市区西侧，机场在北面约6公里。风牙镇在西北约45公里，是洞穴区的住宿基地，风牙洞、天堂洞、黑洞都从那里出发；韩松洞在公园深处，只能参加限额的多日探险团。永牧地道和边海河（原分界线）在南面约60–70公里。",
     gettingAround:
@@ -7860,6 +8400,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "quy-nhon": {
     identity:
       "归仁在越南南中部海岸的一个弯月形海湾里，人口约58万（2024年，改制前口径），2025年7月起原平定省并入嘉莱省，归仁是新省的省会所在地。这里是古代占婆王国的核心地区之一（十一世纪的毗阇耶），市区有双塔、郊外有平定占婆塔群；十五世纪郑和的船队曾在此停靠。越南民国时期诗人韩墨子在归化的麻风病院去世并葬于此，西山起义的发源地和光中博物馆在西面。奇姑海滩、风口的海崖是近年走红的景点，平定是越南武术之乡。归仁比芽庄安静得多。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Quy Nhơn (former city ceased 2025-07-01; 481,110 2022, 286 km²; now wards under Gia Lai province — Bình Định merged with Gia Lai, capital Quy Nhơn; crescent beach; Kỳ Co/Eo Gió ~20 km; Cham towers; Phù Cát airport ~30 km; Diêu Trì station) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "归仁原是平定省的省会城市，2022 年人口约 48 万，2025 年平定省与嘉莱省合并为新的嘉莱省，省会设在归仁，县级单位撤销后市区分成直属省的坊。城市沿一道新月形的海湾展开，海滨大道与市中心在湾的中段，双塔占婆塔在市区里，绮庭、风口在北面芳梅半岛约 20 公里的海角上，富吉机场在北面约 30 公里，火车站在西面的沼池；西山起义的故乡在西面的山区。初来的人最容易犯的错，是把归仁当作一座海滩小城，而它如今是一个从海岸到中部高原的合并省的省会。",
     layout:
       "市区沿弯月形海湾展开，海滩就在市区边，海滨大道是酒店和餐馆带；双塔在市区西北，火车站（支线已停运）在市中心。归化和韩墨子墓在城南的山谷里；奇姑海滩和风口在东北约20公里的富才半岛（Phuong Mai）；平定占婆塔（银塔 Banh It）在北面约20公里；光中博物馆在西面约45公里的西山。机场在西北约30公里。",
     gettingAround:
@@ -7874,6 +8417,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "phan-thiet": {
     identity:
       "潘切在越南南部海岸，胡志明市东北约200公里，2025年7月起原平顺省并入林同省。它以东面约20公里的美奈出名——原本是渔村的美奈海岸如今是长约15公里的度假带，红沙丘、白沙丘和仙女溪是标志景观，稳定的季风让它成为亚洲最好的风筝冲浪地之一。潘切自古产鱼露，占婆时期的波沙努塔立在城东的山上，塔库山有越南最大的卧佛之一，南面的科加灯塔是1899年法国人建的。胡志明早年曾在潘切的育青学校任教。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Phan Thiết (former city ~230,000; since 2025-06-16 Phan Thiết ward 4.46 km², 85,493, under Lâm Đồng province — Bình Thuận merged into Lâm Đồng, capital Đà Lạt; Cà Ty river; fish sauce; Mũi Né ~20 km separate ward; dunes; HCMC ~200 km, expressway 2023) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "潘切原是平顺省的省会城市，约 23 万人，2025 年平顺省并入林同省，省会迁到大叻，县级单位撤销后市区分成直属林同省的坊，市中心的那一片叫潘切坊，只有约 4.5 平方公里。城市在格底河的河口，鱼露厂沿河排开，市场与老街在河的两岸；美奈是东面约 20 公里的另一个坊，度假村沿海岸公路排成一条带，红沙丘与白沙丘在更东面，胡志明市在西南约 200 公里，2023 年高速通车后约两个半小时，火车到潘切站，机场在建。初来的人最容易犯的错，是把美奈当作潘切，而潘切是一座渔港与鱼露的城，美奈是它 20 公里外的海滩。",
     layout:
       "潘切市区在卡蒂河口，鱼露厂和渔港在河边，波沙努占婆塔在城东的山上。美奈度假带沿海岸从潘切向东北延伸：阮廷炤路一线是酒店区，美奈渔村在东端，红沙丘在渔村附近，白沙丘再往东北约25公里；仙女溪在酒店区中段。塔库山在西南约30公里，科加灯塔在西南约30公里的海角。火车站在市区北侧。",
     gettingAround:
@@ -7888,6 +8434,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "vung-tau": {
     identity:
       "头顿在胡志明市东南约95公里的半岛尖端，是南部最方便的海滨城市，2025年7月起原巴地头顿省并入胡志明市。法国殖民时期这里叫圣雅克角（Cap Saint-Jacques），1910年的灯塔和总督别墅“白宫”留存至今；小山上的头顿耶稣像1974年动工、1993年完工，高约32米，是越南最著名的地标之一。前滩和后滩是两片主海滩，海上油气田让头顿成为越南石油工业的基地；去昆岛的渡轮从这里出发。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Vũng Tàu (former city ~350,000; since 2025-06-16 Vũng Tàu ward 16.86 km², 117,413, of Ho Chi Minh City — Bà Rịa–Vũng Tàu merged into HCMC; peninsula, Front/Back Beach; Christ statue; lighthouse; Vietsovpetro; ~95 km from Saigon; expressway 2023; Côn Đảo ferries) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "头顿原是巴地—头顿省的省辖市，约 35 万人，2025 年该省并入胡志明市，县级单位撤销后市区分成直属胡志明市的坊，半岛尖端的那一片叫头顿坊，约 17 平方公里、12 万人。城市在一个伸进海里的半岛上，前滩在西面朝着港湾，后滩在东面朝着大海，大山与小山两座山丘夹着市区，小山上的耶稣像与灯塔是坐标，越苏石油的基地让它成为越南的海上油气中心；西贡在西北约 95 公里，2023 年高速通车后约一个半小时，渡轮通往昆岛。周末西贡人涌来。初来的人最容易犯的错，是把头顿当作一座独立的海滨城市，而它如今是胡志明市的一个坊，市政府在 95 公里外。",
     layout:
       "头顿在一个狭长的半岛上：大山（Núi Lớn）和小山（Núi Nhỏ）是半岛上的两座山，灯塔在小山顶，耶稣像在小山南坡，白宫在大山脚下的海边；前滩（Bãi Trước）在半岛西侧面向港湾，是老城和码头所在，后滩（Bãi Sau）在东侧，是长沙滩和酒店区。半岛南端的迎风角（Mũi Nghinh Phong）是最南点。客运码头和去昆岛的渡轮在前滩一侧。",
     gettingAround:
@@ -7902,6 +8451,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ha-giang": {
     identity:
       "河江在越南最北端的泸江河谷里，河内以北约320公里，是“河江环线”的起点，2025年6月起原河江省并入宣光省。河江以北的同文喀斯特高原是越南第一个联合国教科文组织世界地质公园（2010年），石灰岩峰林、深谷和梯田绵延到中越边境；马皮冷山口（海拔约1500米）俯瞰儒桂河峡谷，是环线最壮观的一段，龙鼓旗台立在越南最北端。这里是苗、岱、瑶、侬等二十多个民族的家园，周末集市和民族服饰是主要看点。环线通常骑摩托车或包车三到四天。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hà Giang city (former capital of Hà Giang province; 2025 Hà Giang merged into Tuyên Quang province, capital Tuyên Quang; now wards under Tuyên Quang; Lô river; ~100 m; start of the Hà Giang Loop — Đồng Văn karst plateau UNESCO Global Geopark 2010, Mã Pí Lèng, Lũng Cú ~180 km; no airport; Hanoi ~300 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    howItWorks:
+      "河江原是河江省的省会城市，2025 年河江省并入宣光省，省会迁到宣光，县级单位撤销后市区分成直属宣光省的坊。城市在泸江河谷里，海拔只有约 100 米，是一座普通的边境小城，河内在南面约 300 公里，只有公路，没有机场，中国边境在北面 20 公里；人们来这里是为了向北出发：同文喀斯特高原 2010 年成为世界地质公园，马皮冷山口与陆丘旗台在 150 到 180 公里外的山里，苗族、岱族、瑶族的村寨散在沿途，租摩托车是这趟路的常规方式。初来的人最容易犯的错，是把河江市当作风景所在，而它只是环线的起点，风景在山里三四天的路上。",
     layout:
       "河江市在泸江两岸的谷地里，零公里碑是环线起点。向北经关坝（“天门”和双峰山）、安明到同文（老街、王氏府邸、龙鼓旗台）约150公里，再经马皮冷山口到苗旺（周日集市）约25公里，然后南下经边海、北光回河江，全程约350公里。各镇之间是盘山公路，同文、苗旺是常用住宿点。",
     gettingAround:
@@ -9543,6 +10095,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dalian: {
     identity:
       "大连是计划单列市，辽东半岛南端的海滨城市，全市常住人口约754万。因20世纪初分别由沙俄和日本规划建设，城市中心保留大量欧式广场建筑，是中国最早的国家卫生城市和园林城市之一，也是北方重要的港口与造船工业基地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 大连市（副省级市、计划单列市；7 区 1 县 2 县级市；13,237 km²；2020 普查 745 万，中心四区约 409 万；旅顺口区；周水子机场；地铁）
+    howItWorks:
+      "大连是辽宁的副省级市和计划单列市，市域约 1.3 万平方公里，2020 年人口约 745 万，下辖 7 区 1 县 2 县级市，庄河、瓦房店各是一座县级市。市中心在半岛南端的中山、西岗、沙河口、甘井子四区，约 409 万人，中山广场与星海广场是坐标；旅顺是市辖的旅顺口区，金州与开发区在北面。初来的人最容易犯的错，是把半岛尖上的市区当作大连，而市域向北延伸两百公里，大半是农村与县级市。",
     layout:
       "中山广场是老城核心，周边环绕十条放射状道路和多座殖民时期银行、酒店建筑；星海广场在城市南部海岸，填海而成，是亚洲最大的城市广场之一；老虎滩在东部海岸，是海洋公园聚集区。整座城市依山面海，海岸线曲折。",
     gettingAround:
@@ -9558,6 +10113,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ningbo: {
     identity:
       "宁波是计划单列市，甬江入海口的港口城市，全市常住人口约978万。是海上丝绸之路的历史起点之一，也是中国现存最古老的私家藏书楼——天一阁的所在地；宁波帮商人历史上活跃于长三角乃至海外华人商界。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 宁波市（副省级市、计划单列市；6 区 2 县级市 2 县；9,366 km²；2020 普查 761 万，市区 349 万；三江口；北仑港；栎社机场）
+    howItWorks:
+      "宁波是浙江的副省级市和计划单列市，市域约 9,400 平方公里，2020 年人口约 761 万，下辖 6 区 2 县级市 2 县，慈溪、余姚各是工业重镇，宁海、象山是沿海的县。市中心在三江口，海曙、江北、鄞州三区在此交界；宁波舟山港的主港区在东面的北仑，与市区相隔三十多公里。初来的人最容易犯的错，是把宁波当作港口城市本身，而港口在北仑，市区是三江口的老城与鄞州的新城。",
     layout:
       "老城区（海曙区）以天一广场、月湖为核心，天一阁就在月湖畔；三江口是甬江、奉化江、余姚江交汇处，江北区保留近代开埠后的外滩建筑群；东部新城和南部的鄞州区是近年城市扩展方向。",
     gettingAround:
@@ -9573,6 +10131,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   suzhou: {
     identity:
       "苏州是江南水乡代表城市，京杭大运河沿线的历史名城，全市常住人口约1299万。以“人间天堂”之称闻名，古典园林、水巷石桥和评弹昆曲构成典型的江南文化景观，是长三角重要的制造业和旅游城市。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 苏州市（江苏地级市；5 区 4 县级市；8,657 km²；2020 普查 1,275 万；姑苏区古城；工业园区金鸡湖；无机场；园林世界遗产 1997）
+    howItWorks:
+      "苏州是江苏的地级市，市域约 8,700 平方公里，2020 年人口约 1,275 万，下辖 5 区和昆山、张家港、常熟、太仓 4 个县级市，这 4 座县级市的经济总量各自相当于一座中等城市。古城在姑苏区护城河之内，园林 1997 年列入世界遗产；东面金鸡湖畔的工业园区是新的商务中心，西面是高新区。苏州没有机场，靠上海虹桥与无锡硕放。初来的人最容易犯的错，是把古城当作苏州，而它是一个千万人口、由几座城拼成的市。",
     layout:
       "古城区（姑苏区）保留“水陆并行、河街相邻”的传统格局，观前街是老城商业核心；拙政园、狮子林、留园等古典园林散布在古城内外；金鸡湖、独墅湖一带的工业园区是近年城市新中心；周边的周庄、同里等水乡古镇可作一日往返。",
     gettingAround:
@@ -9588,6 +10149,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   luoyang: {
     identity:
       "洛阳是中国四大古都之一，黄河南岸伊洛盆地的历史名城，全市常住人口约708万。先后有多个朝代在此建都，是佛教传入中国后重要的传播中心，龙门石窟、白马寺均在此地，牡丹是这座城市的市花，每年4月举办牡丹文化节。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 洛阳市（河南地级市；7 区 7 县；15,236 km²；2020 普查 706 万，市区 230 万；洛龙区新区 2002；龙门石窟在洛龙区；地铁 1/2 号线）
+    howItWorks:
+      "洛阳是河南的地级市，市域约 1.5 万平方公里，2020 年人口约 706 万，市区约 230 万，下辖 7 区 7 县。洛河把城市分成两岸：北岸的老城、西工、涧西是老市区，南岸的洛龙区是 2002 年起建的新区，市政府与龙门高铁站在那里，龙门石窟在洛龙区南端。初来的人最容易犯的错，是把洛阳当作一座只有古迹的古都，而它是一座有地铁、有重工业、市区二百多万人的城市，古都遗址多在市区之外的田野里。",
     layout:
       "老城区保留明清格局的街巷肌理；隋唐洛阳城遗址在老城以南，应天门、明堂等遗址已建成遗址公园；龙门石窟在市区南郊约12公里的伊河两岸；西工区是近现代以来的行政商业中心。",
     gettingAround:
@@ -9603,6 +10167,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   datong: {
     identity:
       "大同是山西省地级市，晋北盆地的历史名城，全市常住人口约305万。曾为北魏首都平城，也是明清“九边重镇”之一，因煤炭资源丰富被称为“中国煤都”，近年围绕云冈石窟、古城墙修复大力发展文化旅游。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 大同市（山西地级市；4 区 6 县；14,056 km²；2020 普查 311 万；平城区古城复建 2008 起；云冈石窟在云冈区 16 km；悬空寺在浑源县）
+    howItWorks:
+      "大同是山西的地级市，市域约 1.4 万平方公里，2020 年人口约 311 万，下辖 4 区 6 县。老城在平城区，2008 年起整体复建了城墙与街区，御东新区在东面；云冈石窟在西面的云冈区，离市区约 16 公里，悬空寺在东南的浑源县，约 65 公里。城市因煤而兴，正在转型。初来的人最容易犯的错，是把复建的古城当作古城本身，而大同真正的古迹在城外的石窟与寺庙里。",
     layout:
       "古城区四面城墙已按明代规制修复，四条大街呈十字对称格局，九龙壁在古城内东南；云冈石窟在市区以西约16公里处的武州山南麓；悬空寺在更远的浑源县境内，距市区约65公里，是恒山十八景之一。",
     gettingAround:
@@ -9618,6 +10185,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   huangshan: {
     identity:
       "黄山市是安徽省地级市，皖南山区的旅游城市，全市常住人口约132万。1987年由徽州地区更名而来，是黄山风景区的门户城市，也是徽州文化的发祥地——粉墙黛瓦的徽派建筑、徽商历史和新安理学都源出于此。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 黄山市（安徽地级市，1987 年由徽州地区改设；3 区 4 县；9,807 km²；2020 普查 133 万；屯溪区距黄山风景区约 60 km；宏村西递在黟县）
+    howItWorks:
+      "黄山市是安徽的地级市，1987 年由徽州地区改设，市域约 9,800 平方公里，2020 年人口约 133 万，下辖屯溪、黄山、徽州三区和歙县、休宁、黟县、祁门四县。市政府、机场与老街在屯溪区；黄山风景区在北面黄山区的汤口镇，离屯溪约 60 公里；宏村、西递在黟县。初来的人最容易犯的错，是把“黄山市”“黄山区”“黄山风景区”当作一处，而三者各在一地，从市区到山脚要一个多小时。",
     layout:
       "屯溪区是市政府所在地和主要城区，新安江穿城而过，屯溪老街是保留最完整的明清商业街之一；黄山风景区在市区以北约40公里；徽州古城（歙县）、宏村、西递等徽派古村落散布在市域各处，多数需一到两小时车程。",
     gettingAround:
@@ -9633,6 +10203,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   quanzhou: {
     identity:
       "泉州是福建省地级市，晋江下游的历史港口城市，全市常住人口约891万。宋元时期是“东方第一大港”，海上丝绸之路的重要起点，2021年“泉州：宋元中国的世界海洋商贸中心”作为22处代表性古迹和遗址被列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 泉州市（福建地级市；4 区 3 县级市 5 县；11,287 km²；2020 普查 878 万，福建人口最多；鲤城区古城；晋江机场在晋江市；世界遗产 2021）
+    howItWorks:
+      "泉州是福建的地级市，市域约 1.1 万平方公里，2020 年人口约 878 万，是福建人口最多的市，下辖 4 区、晋江、石狮、南安 3 个县级市和 5 个县。古城在鲤城区，西街与开元寺在那里，2021 年“宋元中国的世界海洋商贸中心”列入世界遗产；丰泽区是新城；晋江、石狮是民营经济的重镇，机场在晋江市。闽南语是日常语言，这里是重要的侨乡。初来的人最容易犯的错，是把古城当作泉州，而泉州的经济与人口大半在晋江、石狮、南安这些县级市里。",
     layout:
       "鲤城区是老城核心，开元寺、府文庙等古迹集中在这一带；晋江下游两岸分布着历史上的对外贸易码头遗迹；丰泽区、洛江区是近现代城市扩展方向；晋江、石狮等下辖县级市是重要的制造业和侨乡。",
     gettingAround:
@@ -9648,6 +10221,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhangye: {
     identity:
       "张掖是甘肃省地级市，河西走廊中段的绿洲城市，全市常住人口约110万。地处祁连山北麓，历史上是丝绸之路重镇，相传“张国臂掖，以通西域”是这座城市得名的由来；近年因七彩丹霞地貌成为热门旅游目的地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 张掖市（甘肃地级市；甘州区 + 4 县 1 自治县；36,552 km²；2020 普查 113 万，甘州区 52 万；七彩丹霞在临泽/肃南约 30 km；张掖机场）
+    howItWorks:
+      "张掖是甘肃的地级市，市域约 3.7 万平方公里，2020 年人口约 113 万，下辖甘州区、四个县和肃南裕固族自治县。市区在甘州区，大佛寺与鼓楼是老城的坐标，城市是河西走廊中段黑河灌出的绿洲；七彩丹霞在市区西面约 30 公里，跨临泽与肃南两县，山丹军马场在东面的山丹县。初来的人最容易犯的错，是以为丹霞在张掖城边，而它在另外两个县里，市区本身是一座平淡的绿洲城。",
     layout:
       "甘州区是老城核心，大佛寺、镇远楼等古迹集中于此；张掖丹霞地质公园在市区西南约30公里；祁连山雪线和黑河湿地分别在城市南侧和北侧，绿洲、荒漠、雪山在这里的距离很近，是河西走廊地貌的典型缩影。",
     gettingAround:
@@ -9663,6 +10239,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wenzhou: {
     identity:
       "温州是浙江省地级市，东南沿海的港口城市，全市常住人口约976万（2023年）。以“温州模式”民营经济闻名，自宋代起就有全国最早的个体工商户传统，是中国民营经济的发祥地之一；同时也是著名侨乡，约245万温州人在外经商，遍布全国各地和130多个国家和地区。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 温州市（浙江地级市；4 区 3 县级市 5 县；12,103 km²；2020 普查 957 万，市区 312 万；鹿城区五马街；雁荡山在乐清市；龙湾机场）
+    howItWorks:
+      "温州是浙江的地级市，市域约 1.2 万平方公里，2020 年人口约 957 万，市区约 312 万，下辖 4 区、瑞安、乐清、龙港 3 个县级市和 5 个县。市中心在瓯江南岸的鹿城区，五马街是老城的坐标，龙湾、瓯海是产业区；雁荡山在北面的乐清市，楠溪江在永嘉县。温州话是本地的语言，民营经济是它的底色。初来的人最容易犯的错，是把温州当作一座城，而它是一群各自为政的县级市与县，靠同一种方言和生意连在一起。",
     layout:
       "鹿城区是老城核心，沿瓯江分布；江心屿是瓯江中的江心岛，历史上是重要的航运地标与宗教场所；龙湾区、瓯海区是近现代产业和港口扩展区；乐清市的雁荡山是境内著名的山岳景区，距市区有一定车程。",
     gettingAround:
@@ -9678,6 +10257,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yangzhou: {
     identity:
       "扬州是江苏省地级市，长江与京杭大运河交汇处的历史文化名城，全市常住人口约459万（2023年）。是“淮扬菜”发源地之一，2019年被联合国教科文组织评为“世界美食之都”；古典园林、盐商文化和大运河遗产共同构成这座城市的历史底色。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 扬州市（江苏地级市；3 区 1 县 2 县级市；6,591 km²；2020 普查 456 万，市区约 260 万；广陵区古城；扬泰机场在江都区；扬州东站 2020；运河世界遗产 2014）
+    howItWorks:
+      "扬州是江苏的地级市，市域约 6,600 平方公里，2020 年人口约 456 万，市区约 260 万，下辖广陵、邗江、江都三区和高邮、仪征两个县级市、宝应县。古城在广陵区，东关街与瘦西湖在那里；大运河从城中穿过，2014 年列入世界遗产；机场在江都区，与泰州共用，高铁站扬州东站 2020 年通车。淮扬菜以这里为名。初来的人最容易犯的错，是把扬州当作一座江边的城，而它在长江北岸，与镇江隔江相望，市区离江还有十几公里。",
     layout:
       "广陵区是老城核心，文昌阁、瘦西湖一带保留传统街巷格局；个园、何园等清代盐商私家园林散布在老城内外；三湾湿地公园一带是中国大运河博物馆所在地，系统展示大运河两千余年的历史；新城西区是近年城市扩展方向。",
     gettingAround:
@@ -9693,6 +10275,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhuhai: {
     identity:
       "珠海是广东省地级市，中国最早设立的经济特区之一（1980年），毗邻澳门，全市常住人口约248万（2022年）。以宜居的滨海环境著称，情侣路沿岸风光是城市名片，也是粤港澳大湾区连接港澳的重要节点城市。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 珠海市（广东地级市、经济特区 1980；香洲/金湾/斗门 3 区；陆地 1,736 km²；2020 普查 244 万；横琴粤澳深度合作区 2021；金湾机场；港珠澳大桥口岸）
+    howItWorks:
+      "珠海是广东的地级市，1980 年设立的经济特区，陆地约 1,700 平方公里、海岛 262 个，2020 年人口约 244 万，下辖香洲、金湾、斗门三区。市中心在香洲区，情侣路沿海，拱北口岸直通澳门；横琴岛与澳门相邻，2021 年设为粤澳深度合作区，有自己的管理机构；机场在金湾区，港珠澳大桥的口岸在人工岛上。初来的人最容易犯的错，是把珠海当作澳门的附属，而它是一座比澳门大几十倍、有自己特区身份的城市。",
     layout:
       "香洲区是主城区，情侣路沿香炉湾海岸线延伸约30余公里，串联多个滨海景点；拱北口岸是与澳门陆路相连的主要通道；横琴粤澳深度合作区在城市南部，与澳门一河之隔，是近年重点开发的区域；金湾区是机场和产业新区所在地。",
     gettingAround:
@@ -9708,6 +10293,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chengde: {
     identity:
       "承德是河北省地级市，燕山山地间的历史名城，全市常住人口约330万（2023年）。清代曾为皇家避暑与秋狝之地，避暑山庄及周围寺庙群1994年列入联合国教科文组织世界遗产名录，是现存规模最大的皇家园林。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 承德市（河北地级市，河北面积最大；3 区 1 县级市 4 县 3 自治县；39,490 km²；2020 普查 335 万；双桥区避暑山庄世界遗产 1994；坝上草原在围场/丰宁；承德机场 2017；京沈高铁）
+    howItWorks:
+      "承德是河北面积最大的地级市，市域约 3.9 万平方公里，2020 年人口约 335 万，下辖 3 区、平泉市和 7 个县与自治县。市区在南部的双桥区，避暑山庄与外八庙就在城里，1994 年列入世界遗产；坝上草原在西北的围场、丰宁，离市区一百多公里，金山岭长城在滦平县。京沈高铁 2021 年后到北京约一小时。初来的人最容易犯的错，是以为草原在承德城外，而市区被山围着，草原在几小时车程之外的高原上。",
     layout:
       "双桥区是主城区，避暑山庄占地约564公顷，是主城区的地理与历史核心；山庄以北的山丘地带分布着普宁寺、普陀宗乘之庙等藏传佛教寺庙群，统称“外八庙”；武烈河沿岸的磬锤峰是另一处标志性自然景观。",
     gettingAround:
@@ -9723,6 +10311,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wuyishan: {
     identity:
       "武夷山市是福建省地级市，闽北山区的旅游城市，全市常住人口约26万（2023年）。境内的武夷山风景名胜区1999年被联合国教科文组织列为世界文化与自然双遗产，是中国仅有的少数几处“双世遗”之一，也是乌龙茶和红茶的发源地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 武夷山市（南平市代管县级市，原崇安县 1989；2,802 km²；2020 普查 26 万；市区距景区约 15 km；世界双遗产 1999；武夷山机场；武夷山北站 2015）
+    howItWorks:
+      "武夷山市是福建南平市代管的县级市，1989 年由崇安县改名，市域约 2,800 平方公里，2020 年人口约 26 万。市区在崇安街道，是一座普通的县城；武夷山风景区与度假区在市区南面约 15 公里，1999 年列入世界文化与自然双遗产，机场在两者之间，高铁站武夷山北站在市区北郊。大红袍与岩茶是这里的产业。初来的人最容易犯的错，是把三个名字当作一处：武夷山市是县级市，武夷山景区在它南面，南平市是管辖它的地级市。",
     layout:
       "崇安街道一带是城区核心；武夷山风景名胜区在城区以南，九曲溪蜿蜒穿行其间，两岸三十六峰对峙；星村镇一带是茶产业核心区，武夷岩茶（以大红袍为代表）的主产地。",
     gettingAround:
@@ -9738,6 +10329,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jingdezhen: {
     identity:
       "景德镇是江西省地级市，昌江畔的历史名城，全市常住人口约162万（2023年）。有2000多年冶陶史、1000多年官窑史、600多年御窑史，宋真宗以年号“景德”赐名并延续至今，是公认的“千年瓷都”，陶瓷是这座城市最核心的文化标识。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 景德镇市（江西地级市；珠山区、昌江区、乐平市、浮梁县；5,262 km²；2020 普查 162 万，市区 58 万；御窑厂/陶溪川在珠山区；罗家机场；景德镇北站）
+    howItWorks:
+      "景德镇是江西的地级市，市域约 5,300 平方公里，2020 年人口约 162 万，市区约 58 万，下辖珠山、昌江两区、乐平市和浮梁县。老城在珠山区昌江东岸，御窑厂遗址与陶溪川在那里，瑶里古镇在北面的浮梁县，机场在城郊，高铁站景德镇北站在昌景黄线上。上千年的制瓷传统吸引着被称为“景漂”的年轻陶艺人。初来的人最容易犯的错，是把景德镇当作一座只有作坊的小镇，而它是一座有 60 万市民的地级市，乐平市的人口比市区还多。",
     layout:
       "珠山区是老城核心，御窑厂遗址、陶瓷历史街区一带保留传统制瓷格局；昌江区是市政府驻地；陶溪川文创街区由原国营宇宙瓷厂工业旧址改建而成，是近年陶瓷文创产业的新地标；乐平、浮梁等下辖县市保留传统制瓷村落。",
     gettingAround:
@@ -9753,6 +10347,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jinghong: {
     identity:
       "景洪市是云南省西双版纳傣族自治州首府，澜沧江畔的边境城市，全市常住人口约67万（2024年）。地处北回归线以南，是中国为数不多的热带雨林气候区，傣族、哈尼族、基诺族等13个世居民族在此聚居，是通往东南亚的重要门户城市。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 景洪市（西双版纳傣族自治州首府，县级市；6,867 km²；2020 普查 64 万，傣族 33%；嘎洒机场 6 km；中老铁路西双版纳站；植物园在勐腊县）
+    howItWorks:
+      "景洪是西双版纳傣族自治州的首府，一座县级市，市域约 6,900 平方公里，2020 年人口约 64 万，傣族约占三分之一。市区在澜沧江西岸，告庄西双景与夜市在江边，机场在城南 6 公里，中老铁路的西双版纳站在城郊；傣族园、野象谷在景洪市内，中科院植物园在东南的勐腊县勐仑镇。初来的人最容易犯的错，是把“西双版纳”当作一座城，而它是一个州，景洪只是州府，热带雨林与植物园在别的县。",
     layout:
       "城区沿澜沧江两岸展开，江北是主要商业和行政区；曼听公园一带保留传统傣族村寨风貌；勐养镇方向分布着野象谷等自然保护区；橄榄坝（傣族园）在城区东南，是傣族传统村落聚居地。",
     gettingAround:
@@ -9768,6 +10365,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wuxi: {
     identity:
       "无锡是江苏省地级市，太湖北岸的历史文化名城，全市常住人口约750万（2023年）。因古时锡矿枯竭而得名“无锡”，是中国民族工商业的重要发祥地之一，太湖风光和江南园林是这座城市最具代表性的旅游资源。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 无锡市（江苏地级市；5 区 2 县级市；4,627 km²；2020 普查 746 万，市区约 520 万；梁溪区；鼋头渚在滨湖区；苏南硕放机场与苏州共用；地铁 5 线）
+    howItWorks:
+      "无锡是江苏的地级市，市域约 4,600 平方公里，2020 年人口约 746 万，市区约 520 万，下辖 5 区和江阴、宜兴两个县级市，宜兴与市区之间隔着常州，是一块飞地。市中心在梁溪区，崇安寺与南长街是老城的坐标，太湖边的鼋头渚在滨湖区，灵山在西面；机场苏南硕放与苏州共用，地铁五条线。初来的人最容易犯的错，是把无锡当作苏州的邻县，而它是一座市区五百万人、地铁成网的城市，江阴的经济与市区不相上下。",
     layout:
       "梁溪区是老城核心，崇安寺一带保留传统商业街区格局；太湖新城和蠡湖一带是近年城市扩展方向；鼋头渚位于太湖北岸的一处半岛，是观赏太湖风光的经典地点；惠山古镇保留明清祠堂建筑群，是江南祠堂文化的代表。",
     gettingAround:
@@ -9784,6 +10384,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kashgar: {
     identity:
       "喀什是新疆维吾尔自治区喀什地区首府，地处塔里木盆地最西缘、帕米尔高原东麓，2020年人口普查常住人口约78万。历史上是丝绸之路南道与中道交汇、翻越帕米尔进入中亚南亚的门户，两千多年商贸重镇，汉代属疏勒国。今天以维吾尔族为主，是南疆的经济文化中心。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 喀什市（喀什地区行署驻地，县级市；1,003 km²；2020 普查 78 万，维吾尔族约八成；老城艾提尕尔/高台民居；喀什机场 9 km；南疆铁路）
+    howItWorks:
+      "喀什市是喀什地区行署的驻地，一座县级市，市域约 1,000 平方公里，2020 年人口约 78 万，维吾尔族约占八成。老城以艾提尕尔清真寺为中心，高台民居在东面的土崖上，新城与经济开发区在老城之外；机场在城北 9 公里，南疆铁路与喀和铁路在此交会。初来的人最容易犯的错，是把“喀什”当作一座城，而喀什地区是一个管着 12 个县市、四百多万人的地区，喀什市只是它的驻地。",
     layout:
       "喀什市分老城与新城两部分。老城（喀什噶尔古城）以艾提尕尔清真寺为中心，高台民居保留传统生土建筑街区；新城在外围，是行政、商业和现代居住区。艾提尕尔广场是全城地标。城市西面不远是帕米尔高原山地，东面和南面是塔克拉玛干沙漠边缘的绿洲农田。",
     gettingAround:
@@ -9799,6 +10402,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hotan: {
     identity:
       "和田是新疆维吾尔自治区和田地区首府，地处昆仑山北麓、塔克拉玛干沙漠南缘，2020年人口普查常住人口约50万。自古以盛产和田玉闻名——“玉石之路”比丝绸之路更早，也是古于阗国故地、丝路南道重镇，曾是西域重要的佛教中心之一。今天以维吾尔族为主，以玉石、艾德莱斯绸和地毯闻名。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 和田市（和田地区行署驻地，县级市；466 km²；2020 普查 50 万；玉龙喀什河/喀拉喀什河；和田机场；和若铁路；和田县政府曾同驻市内至 2023）
+    howItWorks:
+      "和田市是和田地区行署的驻地，一座县级市，市域约 470 平方公里，2020 年人口约 50 万，是塔克拉玛干沙漠南缘、昆仑山脚下的一片绿洲。市区在玉龙喀什河与喀拉喀什河之间，团结广场与大巴扎是坐标，机场在城西，和若铁路 2022 年把它与若羌连起来。和田玉、地毯与丝绸是它的“三宝”。初来的人最容易犯的错，是把和田市与和田县、和田地区混作一处，而三者是三级不同的行政单位，县政府直到 2023 年还设在市内。",
     layout:
       "市区被玉龙喀什河（白玉河）和喀拉喀什河（墨玉河）两条河流的绿洲带环抱，两河在城市以北汇合成和田河，向北穿越塔克拉玛干沙漠。市中心是行政商业区，和田大巴扎在城市东北。老城区保留部分传统维吾尔民居。",
     gettingAround:
@@ -9814,6 +10420,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   turpan: {
     identity:
       "吐鲁番是新疆维吾尔自治区地级市，位于吐鲁番盆地内、天山博格达峰南麓，2023年末全市常住人口约69万。盆地内的艾丁湖海拔约-154米，是中国大陆海拔最低点；吐鲁番也是中国夏季气温最高的地区之一，“火洲”之称由此而来。历史上先后是车师、高昌国、西州回鹘的中心，交河故城、高昌故城等遗址至今犹存。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 吐鲁番市（地级市 2015；高昌区 + 鄯善/托克逊；69,759 km²；2020 普查 69 万，高昌区 32 万；艾丁湖 -155 m；吐鲁番北站；交河机场）
+    howItWorks:
+      "吐鲁番是新疆的地级市，2015 年由地区改设，市域约 7 万平方公里，2020 年人口约 69 万，下辖高昌区和鄯善、托克逊两县。市区在高昌区，交河故城在城西，高昌故城、火焰山、葡萄沟在城东，艾丁湖低于海平面 155 米，是中国陆地的最低点，坎儿井把天山的雪水引进绿洲。兰新高铁的吐鲁番北站与交河机场都在市区北面。初来的人最容易犯的错，是把吐鲁番当作一片绿洲小城，而市域是一整个盆地，鄯善的库木塔格沙漠离市区一百多公里。",
     layout:
       "市区所在的高昌区是行政商业中心；火焰山在城区东北，是横贯盆地的红色砂岩山脊；葡萄沟在火焰山西麓峡谷内，是主要葡萄种植区；交河故城在市区西约10公里，高昌故城在市区东约40公里。绿洲农田、戈壁与火焰山赭红色山体在盆地内呈鲜明对比。",
     gettingAround:
@@ -9829,6 +10438,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bachu: {
     identity:
       "巴楚是新疆维吾尔自治区喀什地区下辖县，地处塔里木盆地西缘、叶尔羌河下游冲积平原，位于喀什与阿克苏之间的通道上，2020年人口普查常住人口约37万。这里不是热门旅游目的地，而是一个以农业为主的县城，绿洲、荒漠草原和天然胡杨林在此交错分布，是塔里木盆地“河到哪里、绿洲就到哪里”的典型样本。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 巴楚县（喀什地区所辖县；18,377 km²；2020 普查 36.6 万；县城巴楚镇；南疆铁路/314 国道；胡杨林红海景区；棉花）
+    howItWorks:
+      "巴楚是喀什地区所辖的一个县，面积约 1.8 万平方公里，2020 年人口约 37 万，县城在巴楚镇，南疆铁路与 314 国道从这里经过。县域是叶尔羌河与喀什噶尔河汇合处的一片绿洲，棉花是主要产业，胡杨林沿河分布，红海景区是最集中的一片。没有机场，也不是市，出行靠铁路与公路。初来的人最容易犯的错，是在地图上把它当作一座城，而它是一个以县城为中心、村镇散在绿洲上的农业县。",
     layout:
       "县城本身规模不大，是全县的行政和商业中心；叶尔羌河从县境穿过，河道两侧分布着大片胡杨林带；东侧不远即为塔克拉玛干沙漠边缘。当地更多是一处途经或短暂停留的县城，而非目的地型景区。",
     gettingAround:
@@ -9844,6 +10456,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   maigaiti: {
     identity:
       "麦盖提是新疆维吾尔自治区喀什地区下辖县，地处塔里木盆地西南、叶尔羌河东岸，2020年人口普查常住人口约22万。当地常被称为全国唯一嵌入沙漠的县城——县城三面被塔克拉玛干沙漠环抱，沙漠一度占全县面积的九成，全靠叶尔羌河维持一条绿洲带。这里是“刀郎人”聚居的核心区，刀郎木卡姆、刀郎麦西热甫是国家级非物质文化遗产（木卡姆并入联合国教科文组织世界级名录）。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 麦盖提县（喀什地区所辖县；10,927 km²；2020 普查 22.4 万；县城在叶尔羌河畔；刀郎木卡姆国家级非遗；无机场无铁路）
+    howItWorks:
+      "麦盖提是喀什地区所辖的一个县，面积约 1.1 万平方公里，2020 年人口约 22 万，县城在叶尔羌河畔，东面紧贴塔克拉玛干沙漠。它以刀郎文化闻名，刀郎木卡姆是国家级非物质文化遗产，县域的另一半是沙漠与胡杨。没有机场，没有铁路，只有公路通往喀什与巴楚。初来的人最容易犯的错，是把“刀郎”当作歌手的名字，而它是这里维吾尔族一支的自称，木卡姆比任何流行歌都早得多。",
     layout:
       "县城规模不大，是行政商业中心；东河滩一带有沙棘林湿地；绿洲外缘即为塔克拉玛干标志性的纵向沙垄。同巴楚一样，麦盖提以农业和刀郎文化为主，不是成熟的旅游目的地。",
     gettingAround:
@@ -9860,6 +10475,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hulunbuir: {
     identity:
       "呼伦贝尔市（政府驻海拉尔区）是内蒙古自治区地级市，地处大兴安岭西麓、呼伦贝尔草原核心区，2020年人口普查全市常住人口约211万。以“世界四大草原”之一的呼伦贝尔草原闻名，是中国草原生态保存较好的地区之一，也是蒙古族、鄂温克族、达斡尔族等多民族聚居区。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 呼伦贝尔市（内蒙古地级市，2001 年撤盟设市；2 区 5 县级市 4 旗 3 自治旗；约 25.3 万 km²；2020 普查 224 万；海拉尔区；满洲里市；海拉尔机场）
+    howItWorks:
+      "呼伦贝尔是内蒙古的地级市，2001 年由盟改设，市域约 25 万平方公里，比许多国家还大，2020 年人口约 224 万，下辖海拉尔、扎赉诺尔两区，满洲里、额尔古纳、根河等 5 个县级市和 7 个旗。市政府在海拉尔区，一座约 30 万人的城，机场就在城边；满洲里是边境口岸城市，额尔古纳、根河在北面的林区。初来的人最容易犯的错，是把呼伦贝尔当作一座城，而它是一片西边草原、中间林海的地区，从海拉尔到根河要走三百公里。",
     layout:
       "海拉尔区是市政府驻地，伊敏河穿城而过，是全市的交通、商业中心；草原主要分布在海拉尔以南、以西的广大区域，莫日格勒河、呼伦湖是草原腹地代表性景观；北部大兴安岭林区森林覆盖，室韦、恩和等边境小镇沿额尔古纳河、中俄边境一线分布。",
     gettingAround:
@@ -9875,6 +10493,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "jilin-city": {
     identity:
       "吉林市是吉林省地级市，省内仅次于长春的第二大城市，2020年人口普查常住人口约401万。地处长白山余脉与松花江中游河谷，因清代“吉林乌拉”（满语“沿江的城池”）得名，历史上是清代北方重要的水师基地和造船中心，今天以雾凇奇观和松花湖冬季运动闻名。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 吉林市（吉林省地级市，与省同名；4 区 1 县 4 县级市；27,711 km²；2020 普查 362 万，市区约 182 万；松花江穿城；无民用机场；吉林站高铁；1954 年前省会）
+    howItWorks:
+      "吉林市是吉林省的地级市，中国唯一与省同名的城市，1954 年以前是省会。市域约 2.8 万平方公里，2020 年人口约 362 万，市区约 182 万，下辖 4 区 1 县和舒兰、桦甸、蛟河、磐石 4 个县级市。松花江绕市区而过，船营、昌邑是老城，丰满区在南面靠着松花湖，冬天江边的雾凇是它的名片，北大湖滑雪场在南郊；没有民用机场，靠长春龙嘉，高铁到长春约 40 分钟。初来的人最容易犯的错，是把吉林市与吉林省混为一谈，而省会在长春。",
     layout:
       "松花江自东南向西北穿城而过，将市区分为江南、江北两部分；船营区、昌邑区是老城核心；丰满区南部是丰满水电站及其形成的松花湖；雾凇岛（乌拉街满族镇下辖的曾通、韩屯两处沿江村落）在市区以东约30–40公里处，因丰满水电站冬季不冻的江水遇冷空气形成雾凇而闻名。",
     gettingAround:
@@ -9890,6 +10511,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mohe: {
     identity:
       "漠河市是黑龙江省辖县级市，中国大陆最北端的城市，地处大兴安岭北麓、黑龙江上游南岸，与俄罗斯隔江相望，2020年人口普查常住人口约6万。因地处高纬、冬季漫长严寒被称为“中国北极”，也是国内为数不多有机会观测到极光和极昼现象的地方。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 漠河市（大兴安岭地区所辖县级市，2018 撤县设市；18,427 km²；2020 普查 5.4 万；西林吉镇；北极村约 80 km；漠河机场；最北火车站）
+    howItWorks:
+      "漠河是黑龙江大兴安岭地区所辖的县级市，2018 年由县改设，市域约 1.8 万平方公里，2020 年人口约 5.4 万，是中国最北的市。市区在西林吉镇，有机场和中国最北的客运火车站；北极村在市区北面约 80 公里的黑龙江边，是看极光与极昼的地方，北红村更北。冬天常在零下 40 度以下。初来的人最容易犯的错，是以为到了漠河市区就到了中国最北，而最北的点在北极村和北红村，还要再走一两个小时。",
     layout:
       "西林吉镇是市政府驻地和主要生活区；北极村在市区以北约77公里的黑龙江畔，是漠河旅游的核心区域；北极乡、图强等林场小镇散布在大兴安岭林区内。",
     gettingAround:
@@ -9905,6 +10529,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yichang: {
     identity:
       "宜昌是湖北省地级市，长江中上游分界点，地处长江三峡出口、鄂西山地与江汉平原过渡地带，2020年人口普查常住人口约400万。自古有“三峡门户”“川鄂咽喉”之称，是长江三峡工程和葛洲坝工程所在地，也是三国时期夷陵之战古战场。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 宜昌市（湖北地级市；5 区 3 县级市 3 县 2 自治县；21,084 km²；2020 普查 402 万，市区 160 万；西陵区；三峡大坝在夷陵区三斗坪约 40 km；三峡机场；宜昌东站）
+    howItWorks:
+      "宜昌是湖北的地级市，市域约 2.1 万平方公里，2020 年人口约 402 万，市区约 160 万，下辖 5 区、3 个县级市、3 县和 2 个土家族自治县。市中心在长江边的西陵区，葛洲坝就在市区上游；三峡大坝在夷陵区三斗坪镇，离市区约 40 公里，需要专门前往。三峡机场与宜昌东站在市区东郊。初来的人最容易犯的错，是以为三峡大坝在宜昌城边，而市区看到的是葛洲坝，大坝在上游几十公里的峡口。",
     layout:
       "西陵区、伍家岗区、点军区是主城核心，长江穿城而过；三峡大坝和葛洲坝分别在城区上游约40公里和市区内，两坝之间的西陵峡江段是“两坝一峡”游览区；主城以西是逐渐抬升的鄂西山地，长江在此切穿巫山山脉形成三峡。",
     gettingAround:
@@ -9920,6 +10547,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   leshan: {
     identity:
       "乐山是四川省地级市，地处四川盆地西南、岷江—青衣江—大渡河三江交汇处，2020年人口普查常住人口约315万。因岷江东岸凌云山临江而立的乐山大佛闻名于世，是国家历史文化名城，与相邻的峨眉山共同构成“乐山大佛—峨眉山”世界文化与自然双遗产。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 乐山市（四川地级市；4 区 1 县级市 4 县 2 自治县；12,720 km²；2020 普查 316 万，市区约 123 万；三江汇流市中区；峨眉山市代管县级市约 30 km；无机场；世界遗产 1996）
+    howItWorks:
+      "乐山是四川的地级市，市域约 1.3 万平方公里，2020 年人口约 316 万，市区约 123 万，下辖 4 区、峨眉山市和 6 个县与自治县。市中心在岷江、大渡河、青衣江汇流的市中区，乐山大佛就在对岸的凌云山上；峨眉山是另一座县级市，山脚离乐山市区约 30 公里，两者 1996 年一起列入世界遗产。没有民用机场，靠成都，高铁到成都约一小时。初来的人最容易犯的错，是把峨眉山当作乐山的一个景区，而它是一座有自己政府的县级市。",
     layout:
       "市中区是主城核心，三江在此交汇，乐山大佛就凿刻在岷江东岸的凌云山崖壁上；峨眉山景区在乐山市西南约30余公里、行政上属峨眉山市（由乐山代管）；主城之外多为四川盆地西南边缘的丘陵与河谷农田。",
     gettingAround:
@@ -9935,6 +10565,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kaili: {
     identity:
       "凯里是贵州省黔东南苗族侗族自治州首府，地处苗岭山地、清水江支流巴拉河流域，2020年人口普查常住人口约54万。是中国苗族人口最集中的地区之一，“苗都”之称由此而来，也是进入西江千户苗寨、镇远古镇等黔东南景区的主要门户城市。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 凯里市（黔东南苗族侗族自治州首府，县级市；1,570 km²；2020 普查 71 万；西江千户苗寨在雷山县约 35 km；肇兴侗寨在黎平县；黄平机场；凯里南站）
+    howItWorks:
+      "凯里是黔东南苗族侗族自治州的首府，一座县级市，市域约 1,570 平方公里，2020 年人口约 71 万，苗族是主体民族。市区在清水江支流的河谷里，高铁站凯里南站在城南，机场在北面的黄平县；人们来这里要看的苗寨侗寨都在别的县：西江千户苗寨在雷山县，约 35 公里，肇兴侗寨在黎平县，镇远古城在镇远县，各在一两百公里外。初来的人最容易犯的错，是把凯里当作苗寨所在，而它是一座普通的州府，村寨散在全州 16 个县里。",
     layout:
       "市区沿清水江支流分布，是黔东南州的行政、商业与交通中心；西江千户苗寨在凯里以东约35公里的雷山县境内，是全国乃至世界最大的苗族聚居村寨；周边分布着大量苗族、侗族传统村寨。",
     gettingAround:
@@ -9950,6 +10583,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yanan: {
     identity:
       "延安是陕西省地级市，地处黄土高原中部、延河与南川河交汇处，2020年人口普查常住人口约228万。1935年至1948年是中共中央和陕甘宁边区政府所在地，是中国近现代史上重要的历史节点城市，也是黄土高原塬—梁—峁沟壑地貌的典型代表区域。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 延安市（陕西地级市；宝塔区、安塞区、子长市 + 10 县；37,031 km²；2020 普查 228 万；黄帝陵在黄陵县；壶口瀑布在宜川县；南泥湾机场 2018）
+    howItWorks:
+      "延安是陕西的地级市，市域约 3.7 万平方公里，2020 年人口约 228 万，下辖宝塔、安塞两区、子长市和 10 个县。市区在宝塔区的延河河谷里，宝塔山是坐标，杨家岭、枣园等革命旧址就在城里或近郊；黄帝陵在南面的黄陵县，壶口瀑布在东面的宜川县，各在一百多公里外。南泥湾机场 2018 年启用，动车到西安约两小时。初来的人最容易犯的错，是以为壶口瀑布在延安城边，而它在黄河岸边的另一个县里。",
     layout:
       "宝塔区是主城核心，延河穿城而过，宝塔山在城区东南、隔河与市区相望；枣园、杨家岭等革命旧址分布在城区西北；市域大部分是黄土高原沟壑丘陵地貌，窑洞是传统民居形式，部分至今仍在使用。",
     gettingAround:
@@ -9965,6 +10601,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   golmud: {
     identity:
       "格尔木是青海省海西蒙古族藏族自治州辖县级市，地处柴达木盆地南缘、昆仑山北麓，是中国面积最大的县级市之一，2020年人口普查常住人口约21万。因盐湖资源丰富、青藏公路和青藏铁路在此交汇，被称为“戈壁上生长出来的盐湖新城”，也是进出西藏的重要中转站。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 格尔木市（海西州代管县级市，非州府；约 12.45 万 km² 含唐古拉山镇飞地；2020 普查 22 万；海拔约 2,800 m；青藏/敦格/格库铁路枢纽；察尔汗盐湖；格尔木机场）
+    howItWorks:
+      "格尔木是青海海西蒙古族藏族自治州代管的县级市，州府却在德令哈。市域约 12 万平方公里，包括远在唐古拉山的一块飞地，2020 年人口约 22 万，几乎都住在海拔约 2,800 米的市区。它是青藏铁路、敦格铁路、格库铁路和三条国道交会的枢纽，察尔汗盐湖在城北，昆仑山口在城南；机场在城西。初来的人最容易犯的错，一是把格尔木当作州府，二是以为它是一座高原小站，而它是青藏线上最重要的补给城市，市域的大半是无人区。",
     layout:
       "市区是1950年代随青藏公路建设而兴起的规划城市，街道方正；察尔汗盐湖在市区西北约60公里，是全国最大的钾肥生产基地；昆仑山口在市区以南约160公里的青藏公路沿线，是进入可可西里、通往拉萨的门户。",
     gettingAround:
@@ -9980,6 +10619,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhongwei: {
     identity:
       "中卫是宁夏回族自治区地级市，地处宁夏西部、黄河中卫段两岸，腾格里沙漠南缘，2020年人口普查常住人口约102万。因沙坡头景区集大漠、黄河、绿洲、高山于一体的独特景观闻名，是中国首批国家5A级旅游景区之一，也是较早开展沙漠治理实践并取得成果的地区之一。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 中卫市（宁夏地级市 2004；沙坡头区 + 中宁/海原；17,442 km²；2020 普查 107 万，沙坡头区 40 万；沙坡头景区西约 20 km；中卫机场；高铁站；云计算基地）
+    howItWorks:
+      "中卫是宁夏的地级市，2004 年设立，市域约 1.7 万平方公里，2020 年人口约 107 万，下辖沙坡头区和中宁、海原两县。市区在黄河北岸的沙坡头区，约 40 万人，高铁站与机场都在城边；沙坡头景区在市区西面约 20 公里，黄河与腾格里沙漠在那里相接。近年这里因西部云计算基地为人所知，中宁的枸杞是老牌产业。初来的人最容易犯的错，是把沙坡头当作市区的名字，而它既是区名也是景区名，景区在城外的沙漠边上。",
     layout:
       "沙坡头区是主城核心，黄河自西向东穿城而过；沙坡头景区在城区以西约16公里处，腾格里沙漠在此与黄河直接相接；中卫南部是香山、卫宁北山等低山丘陵，属祁连山余脉。",
     gettingAround:
@@ -9996,6 +10638,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dali: {
     identity:
       "大理是云南省大理白族自治州的州府所在地（大理市），常住人口约77万（2020年普查），夹在苍山与洱海之间的一条南北向狭长坝子里。这里先后是唐代南诏国和宋代大理国的都城，两个政权前后延续五百多年，白族至今是大理的主体民族。“下关风、上关花、苍山雪、洱海月”这句老话说的就是大理坝子的四样标志——风从洱海南端的下关谷口灌进来，花和雪分别在坝子北端和苍山顶上，月亮映在洱海里。大理市的行政中心在南端的下关，游客集中的大理古城在北边约13公里处。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 大理市（大理白族自治州首府，县级市；1,739 km²；2020 普查 77 万，白族 68%；下关为市政府/火车站所在，古城在西北约 13 km；大理机场；大理站）
+    howItWorks:
+      "大理市是大理白族自治州的首府，一座县级市，市域约 1,740 平方公里，环着洱海，2020 年人口约 77 万，白族约占三分之二。市政府、火车站与商业中心在洱海南端的下关，本地人说的“大理”通常指这里；大理古城在西北约 13 公里的苍山脚下，双廊在洱海东北岸，崇圣寺三塔在古城北边，机场在洱海东岸。初来的人最容易犯的错，是把古城当作市中心，而市区在下关，古城只是环湖一圈里的一站。",
     layout:
       "苍山十九峰在西面一字排开（最高马龙峰4122米），洱海在东面南北铺展（面积约250平方公里，云南第二大高原湖泊），两者之间就是大理坝子，从南到北依次是下关（市区、火车站、机场方向）、大理古城（明洪武十五年即1382年建，方形城墙、南北城楼、街巷棋盘格）、崇圣寺三塔（古城西北，主塔千寻塔高69.13米，建于南诏时期）、喜洲（白族民居村落）、上关。洱海东岸是双廊、挖色等湖畔村镇，环湖公路一圈约120公里。",
     gettingAround:
@@ -10010,6 +10655,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "shangri-la": {
     identity:
       "香格里拉是云南省迪庆藏族自治州的州府所在地（香格里拉市），在滇西北的高原上，市区海拔约3300米，常住人口约19万。这里原名中甸，2001年更名为香格里拉，2014年撤县设市。市区以独克宗古城（藏语意为“月光城”，建城一千三百余年，海拔约3300米）为核心，是滇藏茶马古道上的重镇，也是从丽江进入藏区的第一站。藏族是主体民族，同时有纳西、彝、白、傈僳等多个民族。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 香格里拉市（迪庆藏族自治州首府，县级市；原中甸县 2001 更名，2014 设市；11,418 km²；2020 普查 18.6 万；海拔约 3,300 m；独克宗古城 2014 火灾；香格里拉机场；丽香铁路 2023）
+    howItWorks:
+      "香格里拉是迪庆藏族自治州的首府，一座县级市，原名中甸县，2001 年改名、2014 年设市，市域约 1.1 万平方公里，2020 年人口约 19 万，藏族为主。市区在海拔约 3,300 米的高原上，独克宗古城在城南，2014 年火灾后重建，松赞林寺在城北，普达措国家公园在东面 20 多公里，虎跳峡在南面与丽江交界处；机场在城郊，丽香铁路 2023 年通车。初来的人最容易犯的错，是把“香格里拉”当作小说里的地名去找，而它是一座真实的州府，2001 年才叫这个名字。",
     layout:
       "香格里拉市区在一片高原盆地的中央，四周是山地和牧场。独克宗古城在市区东南，古城边的大龟山上立着一座大型转经筒；松赞林寺在市区北面约5公里的山坡上，是云南规模最大的藏传佛教寺院，依山而建、层层叠叠，有“小布达拉宫”之称。市区西面是纳帕海湿地和依拉草原，东面约20公里是普达措国家公园（属都湖、碧塔海，海拔3500–4159米）。往南约100公里是金沙江上的虎跳峡，往西北约180公里是德钦县的梅里雪山。",
     gettingAround:
@@ -10024,6 +10672,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kaifeng: {
     identity:
       "开封是河南省的地级市，在郑州以东约70公里的黄河南岸平原上，常住人口约470万（2024年末）。它是北宋的都城东京（960–1127年），当时是世界上人口最多的城市之一，《清明上河图》画的就是这座城。此后黄河一次次改道泛滥、泥沙把旧城一层层埋在地下，今天的地面下叠压着几座不同朝代的城，考古上称为“城摞城”。开封因此被称为“八朝古都”，也是黄河“地上悬河”现象最典型的城市之一——黄河河床高出市区地面约10米。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 开封市（河南地级市；5 区 4 县；6,240 km²；2020 普查 482 万；鼓楼区/龙亭区老城；黄河距市区约 10 km；无机场；郑开城际 20 分钟）
+    howItWorks:
+      "开封是河南的地级市，市域约 6,200 平方公里，2020 年人口约 482 万，下辖 5 区 4 县。老城在城墙之内的鼓楼、龙亭一带，清明上河园、龙亭与鼓楼夜市都在这里，新区向西朝郑州方向生长，郑开城际 20 分钟到郑州；黄河在城北约 10 公里，河床高于城市，是“地上悬河”。没有机场，用郑州新郑。初来的人最容易犯的错，是想在开封找到北宋的汴京，而古城早已被黄河的泥沙埋在地下十几米，地面上的是明清城池。",
     layout:
       "老城被明清城墙围着，格局仍是宋代以来的方正结构。核心景点集中在城北：龙亭公园（清代建筑，在北宋皇宫遗址之上）、清明上河园（按《清明上河图》复建的主题园区）和开封府（复建）围着龙亭湖、包公湖两片水面；铁塔在城东北角（建于北宋1049年，高55.88米，通体琉璃砖）；大相国寺在城中偏南；鼓楼和书店街一带是夜市和老商业区。黄河在城北约10公里，柳园口一带能看到悬河。郑开大道和城际铁路向西直通郑州。",
     gettingAround:
@@ -10038,6 +10689,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pingyao: {
     identity:
       "平遥是山西省晋中市下辖的一个县，县城就是平遥古城——中国保存最完整的明清县城之一，1997年与城外的双林寺、镇国寺一起列入世界文化遗产。全县常住人口约44万。古城现存的城墙建于明洪武三年（1370年），周长约6.4公里；城内三千多处传统民居、票号、县衙和庙宇沿袭明清格局。清代道光三年（1823年）中国第一家票号“日升昌”在这里创立，此后平遥票号一度掌控全国大半的汇兑业务，古城因此被称作清代的金融中心。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 平遥县（晋中市所辖县；1,254 km²；2020 普查 45 万；古城世界遗产 1997；平遥古城站高铁；无机场）
+    howItWorks:
+      "平遥是山西晋中市所辖的一个县，面积约 1,250 平方公里，2020 年人口约 45 万。人们心中的平遥是城墙围住的古城，约 2.25 平方公里，1997 年列入世界遗产，票号日升昌在城内；城墙之外是县城的新区，县政府与大多数居民都在那里。高铁站平遥古城站在城外，没有机场，靠太原。初来的人最容易犯的错，是把古城当作整个平遥，而古城只是县城的一角，城墙外才是本地人生活的地方。",
     layout:
       "古城平面近方形，六座城门、南门外有护城河，俯瞰像一只乌龟，民间称“龟城”。南大街是中轴线，市楼跨街而立，日升昌等票号集中在西大街，县衙在西南，文庙、城隍庙在东南。城墙可以登上环行一周（约6.4公里）。双林寺在城西南约6公里，以两千余尊宋元明彩塑闻名；镇国寺在城东北约12公里，万佛殿是五代北汉时期（963年）的木构建筑，是中国现存最早的木构建筑之一。",
     gettingAround:
@@ -10052,6 +10706,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   qufu: {
     identity:
       "曲阜是山东省济宁市代管的县级市，在鲁西南的平原上，常住人口约62万。它是孔子（公元前551–前479年）的故乡，孔庙、孔府、孔林合称“三孔”，1994年列入世界文化遗产。孔庙自孔子去世次年立庙起不断扩建，现存规模是明清两代奠定的；孔府是孔子嫡长子孙“衍圣公”世代居住的府第；孔林是孔子及其后裔延续两千余年的家族墓地。城市本身不大，明代的城墙把三孔中的两处围在城内。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 曲阜市（济宁市代管县级市；896 km²；2020 普查 62 万；三孔世界遗产 1994；尼山约 25 km；曲阜东站；无机场）
+    howItWorks:
+      "曲阜是山东济宁市代管的县级市，市域约 900 平方公里，2020 年人口约 62 万。明故城在市区中心，孔庙、孔府、孔林三处 1994 年列入世界遗产，占了老城的大半；城外是新区与工业区，孔子出生地尼山在东南约 25 公里。高铁站曲阜东站在京沪线上，没有机场，靠济宁或济南。初来的人最容易犯的错，是把曲阜当作一座只有“三孔”的古城，而它是一座有工厂和大学的县级市，老城只是它的中心一片。",
     layout:
       "曲阜老城是明代嘉靖年间（16世纪）为护卫孔庙而修的方城，孔庙在城中央、孔府紧邻其东，孔林在城北约1.5公里，三处由神道相连。城南和城东是新城区。孔子出生地尼山在城东南约25公里，山不高（约340米），有尼山孔庙和2018年开放的尼山圣境园区。周公庙、少昊陵在城东。曲阜东站（京沪高铁）在城东约6公里。",
     gettingAround:
@@ -10066,6 +10723,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   taian: {
     identity:
       "泰安是山东省的地级市，在济南以南约70公里，常住人口约540万（2024年末）。城市因泰山而立，名字取“泰山安则四海皆安”之意。泰山是“五岳之首”的东岳，主峰玉皇顶海拔1545米，1987年列入世界文化与自然双重遗产，是中国第一处双遗产；自秦汉以来多位帝王在此封禅，山上山下留下数量极多的庙宇、碑刻和摩崖题字。城区就在山南麓，岱庙是城市的中心，从岱庙出发沿一条中轴线一路向北登顶，是古代帝王封禅的路线。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 泰安市（山东地级市；2 区 2 县级市 2 县；7,761 km²；2020 普查 547 万，市区约 177 万；泰山世界遗产 1987，红门在市区北缘；泰安站高铁；无机场）
+    howItWorks:
+      "泰安是山东的地级市，市域约 7,800 平方公里，2020 年人口约 547 万，市区约 177 万，下辖泰山、岱岳两区和新泰、肥城两个县级市、宁阳、东平两县。市区在泰山南麓，岱庙在城中，红门登山口就在市区北缘，从城里步行可到山脚，泰山 1987 年列入世界遗产；高铁站泰安站在城西，没有机场，靠济南。初来的人最容易犯的错，是以为泰安只是泰山脚下的一个镇，而它是一座一百多万人的城，市域一直延伸到东平湖。",
     layout:
       "泰安城在泰山南麓的山前平原上，泰山从城北拔地而起。岱庙在老城中央，历代帝王祭祀泰山神的地方，天贶殿是北宋建筑、内有宋代壁画。登山主线从岱庙北门起：红门—万仙楼—中天门—十八盘—南天门—天街—玉皇顶，全程约7公里、六千多级台阶；中天门到南天门有索道。西路从天外村坐景区大巴到中天门；桃花峪索道从西北面上山；后山天烛峰是清静的野线。泰安站在老城南，泰安高铁站在城西。",
     gettingAround:
@@ -10080,6 +10740,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yantai: {
     identity:
       "烟台是山东省的地级市，在山东半岛北岸、渤海与黄海交界处，常住人口约700万。1861年烟台开埠，是山东最早开放的通商口岸，烟台山上至今保留着当年各国领事馆建筑群；1892年张裕葡萄酒公司在此创立，是中国第一家工业化葡萄酒企业。烟台以苹果、樱桃、海鲜和温和的海滨气候闻名，冬季的“冷流雪”让它和邻近的威海有“雪窝”之称。所辖蓬莱有中国古代四大名楼之一的蓬莱阁。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 烟台市（山东地级市；5 区 6 县级市；36,352 km²；2020 普查 710 万；芝罘区老城，莱山区市政府；蓬莱 2020 撤市设区；蓬莱机场；烟大轮渡）
+    howItWorks:
+      "烟台是山东的地级市，市域约 3.6 万平方公里，2020 年人口约 710 万，下辖芝罘、福山、牟平、莱山、蓬莱 5 区和龙口、莱阳、莱州、招远、栖霞、海阳 6 个县级市。老城在芝罘区，烟台山与滨海路是坐标，市政府在东面的莱山区；蓬莱 2020 年由县级市改为区，机场在蓬莱，烟大轮渡从港口开往大连。初来的人最容易犯的错，是把烟台当作一座海滨城市，而它是一片胶东半岛的北岸，六座县级市各有自己的港口与市中心。",
     layout:
       "烟台市区（芝罘区、莱山区等）沿黄海海岸东西展开，烟台山伸入海中，是市区北端的地标，山下是老港和近代街区；沿海向东是第一海水浴场、滨海路和莱山区，再往东到牟平的养马岛。蓬莱区在市区西北约70公里，蓬莱阁建在丹崖山上、临海而立，机场就在蓬莱境内。市区南面是山地和果园。长岛（庙岛群岛）在蓬莱以北的海上，需坐船。",
     gettingAround:
@@ -10094,6 +10757,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   qinhuangdao: {
     identity:
       "秦皇岛是河北省的地级市，在渤海北岸、燕山南麓，北京以东约300公里，常住人口约310万。名字来自秦始皇东巡求仙入海的传说，是中国唯一以帝王称号命名的城市。它由三块性格不同的城区组成：山海关是明长城东端的关城，长城在老龙头一头扎进渤海；北戴河从1898年起就是避暑海滨区，是中国最早的近代海滨度假地之一；海港区是市区和港口。夏季凉爽、沙滩连绵，是华北传统的避暑地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 秦皇岛市（河北地级市；4 区 3 县；7,803 km²；2020 普查 314 万；海港区市政府；北戴河区/山海关区各约 15 km；北戴河机场在昌黎县 2016）
+    howItWorks:
+      "秦皇岛是河北的地级市，市域约 7,800 平方公里，2020 年人口约 314 万，下辖海港、山海关、北戴河、抚宁 4 区和 3 个县。市政府在海港区，港口是中国最大的能源输出港之一；北戴河区在西南约 15 公里，是避暑地，山海关区在东北约 15 公里，老龙头与“天下第一关”在那里；机场在昌黎县，2016 年启用。初来的人最容易犯的错，是把北戴河、山海关当作独立的城镇，而它们都是秦皇岛的市辖区，市区则是一座港口工业城。",
     layout:
       "市区（海港区）在中间，秦皇岛港是北方重要的煤炭输出港。山海关区在东北约15公里，天下第一关城楼建于明洪武十四年（1381年），关城四方、城墙完整，长城从这里北上角山、南下到老龙头入海。北戴河区在西南约15公里，海岸线平缓，联峰山和鸽子窝（看日出、观候鸟）是两头的地标。再往西南是昌黎的黄金海岸、阿那亚和葡萄酒产区，北戴河机场在昌黎境内。",
     gettingAround:
@@ -10108,6 +10774,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yanji: {
     identity:
       "延吉是吉林省延边朝鲜族自治州的州府（县级市），在长白山北麓的布尔哈通河河谷里，常住人口约67万（2024年末）。延边是中国朝鲜族的主要聚居区，延吉街头的招牌、路牌都是朝鲜文与汉字并列，饮食、服饰和节庆都有鲜明的朝鲜族特色。它也是去长白山北坡最常用的门户城市，机场、高铁齐全，市区到长白山北坡景区约150公里。近年因为“穿韩服打卡”和特色小吃在年轻游客中很热门。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 延吉市（延边朝鲜族自治州首府，县级市；1,332 km²；2020 普查约 70 万，朝鲜族 48.6%；朝阳川机场；延吉西站；长白山在安图约 200 km）
+    howItWorks:
+      "延吉是延边朝鲜族自治州的首府，一座县级市，市域约 1,300 平方公里，2020 年人口约 70 万，朝鲜族约占一半，路牌与招牌汉朝双语。布尔哈通河把市区分成两岸，机场在城西的朝阳川，高铁站延吉西站是全州最大的车站。长白山在安图县的二道白河，离延吉约 200 公里。初来的人最容易犯的错，一是把延吉与延边混为一谈，二是以为长白山在延吉城边，而它要走三小时。",
     layout:
       "延吉市区沿布尔哈通河两岸展开，河南岸是老城和主要商业区（延吉西市场、光明街），河北岸是新区和州政府。帽儿山国家森林公园在市区南郊，海拔517米，山形像草帽，是俯瞰全城的地方。中国朝鲜族民俗园在市区西南。往西南约150公里到长白山北坡的二道白河镇，往东约100公里到珲春。",
     gettingAround:
@@ -10122,6 +10791,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nyingchi: {
     identity:
       "林芝是西藏自治区的地级市，在西藏东南部，市区（巴宜区）海拔约3000米，是西藏海拔较低、气候最湿润的地区之一，因森林茂密、雨水多而有“西藏江南”之称，常住人口约24万（2020年普查）。雅鲁藏布江在这里绕南迦巴瓦峰（7782米）拐一个大弯，切出雅鲁藏布大峡谷——峡谷长约505公里、最深处约6000米，是地球上最深的峡谷之一。尼洋河从市区流过汇入雅鲁藏布江。每年春天的桃花是林芝最出名的季节景观。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 林芝市（西藏地级市 2015；巴宜区 + 米林市 + 5 县；114,215 km²；2020 普查 23.9 万，巴宜区 8.4 万；八一镇海拔约 3,000 m；米林机场；拉林铁路 2021；外国游客需西藏旅行许可）
+    howItWorks:
+      "林芝是西藏的地级市，2015 年由地区改设，市域约 11.4 万平方公里，2020 年人口约 24 万，下辖巴宜区、米林市和 5 个县。市区是巴宜区的八一镇，海拔约 3,000 米，是西藏海拔最低、最湿润的城镇之一；雅鲁藏布大峡谷与南迦巴瓦峰在米林，鲁朗在东面的山口下，机场在米林，拉林铁路 2021 年通车。外国游客进入西藏须持西藏旅行许可并随有资质旅行社出行。初来的人最容易犯的错，是把林芝当作一座城，而它是一片比浙江还大的市域，八一镇只是它的一角。",
     layout:
       "林芝市区在尼洋河与雅鲁藏布江汇合处以北的尼洋河谷里，城市不大、沿河展开。往东南沿雅鲁藏布江到派镇（约80公里）是进入大峡谷和看南迦巴瓦的方向，索松村是看雪山的主要观景村；往东翻色季拉山到鲁朗镇（约80公里，海拔3300米，林海和草甸，色季拉山口也能望见南迦巴瓦）；往西北到工布江达县的巴松措（湖面海拔约3700米，湖心岛上有小寺）。米林机场在市区西南约50公里的雅鲁藏布江河谷里。",
     gettingAround:
@@ -10136,6 +10808,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zunyi: {
     identity:
       "遵义是贵州省的地级市，在贵州北部的大娄山南麓，是贵州第二大城市，常住人口约660万。城市因1935年1月在此召开的遵义会议而为人熟知，会址是老城一栋中西合璧的二层小楼。遵义同时拥有两处世界遗产：赤水丹霞（2010年作为“中国丹霞”的组成部分列入世界自然遗产）和海龙屯（2015年作为“土司遗址”的组成部分列入世界文化遗产，是一座始建于1257年的山顶军事城堡）。所辖仁怀市的茅台镇是茅台酒的产地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 遵义市（贵州地级市；3 区 2 县级市 7 县 2 自治县；30,767 km²；2020 普查约 660 万；红花岗区老城；茅台镇在仁怀市；赤水丹霞在赤水市；新舟机场；遵义站高铁）
+    howItWorks:
+      "遵义是贵州的地级市，市域约 3.1 万平方公里，2020 年人口约 660 万，是贵州第二大城市，下辖 3 区、仁怀、赤水两个县级市和 9 个县与自治县。老城在红花岗区，遵义会议会址在那里，新蒲新区是新的行政中心，高铁站在城郊，机场在东面的新舟；茅台镇在西面的仁怀市，赤水河边，离市区约 100 公里，赤水丹霞在更远的赤水市。初来的人最容易犯的错，是以为茅台在遵义城边，而它在另一座县级市的河谷里。",
     layout:
       "遵义市区在湘江河（乌江支流）两岸的山间盆地里，老城在河西，遵义会议会址、红军街在老城核心，凤凰山公园隔河可望。海龙屯在市区西北约30公里的龙岩山顶，需徒步上山。娄山关在市区北面约50公里的川黔公路上。赤水市在西北约250公里的赤水河下游，丹霞、瀑布和竹海都在那里；茅台镇在市区西面约100公里的赤水河畔。新舟机场在市区东北约35公里。",
     gettingAround:
@@ -10150,6 +10825,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   shantou: {
     identity:
       "汕头是广东省东部的地级市，在韩江、榕江、练江三条河的入海口，常住人口约556万，是潮汕地区的中心城市。1860年汕头开埠，此后成为华南重要的通商口岸和潮汕人下南洋的出发地，海外潮籍华侨人数众多，“华侨之乡”的身份影响至今；1981年它成为最早的经济特区之一。汕头话属闽南语系的潮汕话，饮食（牛肉火锅、卤鹅、生腌、各种粿）在全国有很高的知名度。所辖南澳岛是广东唯一的海岛县。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 汕头市（广东地级市、经济特区；6 区 1 县；2,199 km²；2020 普查 550 万，中心三区 168 万；金平区小公园骑楼；南澳大桥 2015；机场在揭阳、潮汕站在潮州）
+    howItWorks:
+      "汕头是广东的地级市和经济特区，市域约 2,200 平方公里，2020 年人口约 550 万，中心城区约 168 万，下辖 6 区和南澳县。老城在金平区的小公园开埠区，是大陆最大的骑楼街区，龙湖区与东海岸新城在东面，南澳岛 2015 年起有跨海大桥。揭阳潮汕机场在揭阳市，高铁潮汕站在潮州市，汕头自己只有普速的汕头站。潮汕话是日常语言。初来的人最容易犯的错，是把“潮汕”当作汕头，而汕头、潮州、揭阳是三座各自独立的地级市。",
     layout:
       "汕头市区在韩江出海口的海湾北岸，老城小公园开埠区在金平区西南角：以中山纪念亭为圆心，几条骑楼街道呈放射状展开，是二十世纪二三十年代的华侨建筑群。海湾对岸是礐石风景区的山和老别墅。往东是龙湖、澄海的新城区和工业区；汕头大学在市区北面。南澳岛在东面海上，2015年南澳大桥通车后可以开车上岛，岛上青澳湾有北回归线标志。揭阳潮汕机场在西北约30公里的揭阳境内。",
     gettingAround:
@@ -10164,6 +10842,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chaozhou: {
     identity:
       "潮州是广东省东部的地级市，在韩江中下游，常住人口约257万，是潮汕文化的发源地和历史上的潮州府城。这里东晋时设郡，隋代（591年）始称“潮州”，此后一直是粤东的政治文化中心。潮州古城至今保留着府城的格局：韩江上的广济桥、临江的广济门城楼、贯穿古城的牌坊街、唐代的开元寺和纪念韩愈的韩文公祠。潮州工夫茶、潮绣、潮州木雕、潮剧和潮州菜是最有辨识度的文化名片。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 潮州市（广东地级市；湘桥区、潮安区、饶平县；3,146 km²；2020 普查 257 万，市区 175 万；牌坊街/广济桥；潮汕站在潮安区沙溪约 20 km；揭阳潮汕机场约 40 km）
+    howItWorks:
+      "潮州是广东的地级市，市域约 3,100 平方公里，2020 年人口约 257 万，下辖湘桥、潮安两区和饶平县。古城在韩江西岸的湘桥区，牌坊街、广济桥与开元寺都在这里，潮安区是南面的平原与工厂区；高铁潮汕站在潮安区的沙溪，离古城约 20 公里，揭阳潮汕机场约 40 公里。潮州话与工夫茶是日常。初来的人最容易犯的错，是以为“潮汕站”在汕头，而它在潮州市域内，下车就是潮州。",
     layout:
       "潮州古城在韩江西岸，东临江、西倚金山和葫芦山，明代城墙沿江一线保存完整，广济门城楼正对广济桥。牌坊街（太平路）南北贯穿古城，两侧巷弄里是祠堂、老宅和小吃店；开元寺在古城东部，己略黄公祠在西南。韩江东岸的笔架山上是韩文公祠，与古城隔江相望。新城区在古城西面和南面；高铁潮汕站在城南约20公里的潮安区。",
     gettingAround:
@@ -10178,6 +10859,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   shaoxing: {
     identity:
       "绍兴是浙江省的地级市，在杭州湾南岸、会稽山北麓的水乡平原上，杭州以东约60公里，常住人口约543万（2024年末）。它是春秋时越国的都城，越王勾践的故事发生在这里；王羲之在城郊的兰亭写下《兰亭序》，陆游与唐琬在沈园留下《钗头凤》，鲁迅、蔡元培、周恩来都是绍兴人。河网密布，乌篷船、石桥、黄酒和越剧构成了它的日常。绍兴黄酒以鉴湖水酿造，是中国最著名的黄酒产地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 绍兴市（浙江地级市；越城/柯桥/上虞 3 区 + 诸暨/嵊州 + 新昌；8,275 km²；2020 普查 527 万，市区约 272 万；无机场，萧山机场 45 km；绍兴北站；杭绍城际）
+    howItWorks:
+      "绍兴是浙江的地级市，市域约 8,300 平方公里，2020 年人口约 527 万，市区约 272 万，下辖越城、柯桥、上虞三区和诸暨、嵊州两个县级市、新昌县。老城在越城区，鲁迅故里与仓桥直街在那里，柯桥区的轻纺城是世界最大的纺织品市场之一；没有机场，杭州萧山机场约 45 公里，高铁站绍兴北站在柯桥，杭绍城际与地铁相连。黄酒是这里的产业与身份。初来的人最容易犯的错，是把绍兴当作杭州的郊县，而它是一座五百万人的市，柯桥的纺织业撑起了半个市。",
     layout:
       "绍兴老城（越城区）被河道和环城河围绕，鲁迅故里、沈园在老城东南角一片，仓桥直街、八字桥（南宋）在老城中部的河巷里，府山、塔山是城内的小山。兰亭在城西南约13公里的兰渚山下；大禹陵在城东南的会稽山麓；东湖在城东约6公里，是明清采石留下的水潭峭壁；安昌古镇在城西北约20公里。高铁绍兴北站在城北，绍兴站在老城北侧。",
     gettingAround:
@@ -10192,6 +10876,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   beihai: {
     identity:
       "北海是广西壮族自治区南部的地级市，在北部湾北岸，常住人口约190万。1876年北海按《烟台条约》开埠，是中国近代较早对外通商的港口之一，老街的骑楼就是那个时代留下的；所辖合浦县在汉代是海上丝绸之路的重要始发港之一。今天的北海以海滨度假闻名：银滩绵延十余公里、沙质洁白，海上的涠洲岛是中国最年轻的火山岛之一，冬季温暖，是北方游客过冬的热门地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 北海市（广西地级市；海城/银海/铁山港 3 区 + 合浦县；3,989 km²；2020 普查 185 万，市区 78 万；老街在海城区；银滩在银海区；涠洲岛海上约 36 km；福成机场；北海站高铁；1984 沿海开放）
+    howItWorks:
+      "北海是广西的地级市，1984 年首批沿海开放城市之一，市域约 4,000 平方公里，2020 年人口约 185 万，市区约 78 万，下辖海城、银海、铁山港三区和合浦县。老城在海城区，老街的骑楼是坐标；银滩在银海区，离老城约 10 公里；涠洲岛在海上约 36 公里，属海城区，靠船往来；机场在东北的福成，高铁北海站在城北。初来的人最容易犯的错，是把北海当作银滩，而市区在老街与港口一带，海滩与海岛各在一处。",
     layout:
       "北海市区在一个伸入北部湾的半岛上，老街（珠海路）在半岛北岸、靠近老港口；银滩在半岛南岸，往东是金海湾红树林湿地；侨港镇在市区南面，是海鲜和糖水小吃的集中地。冠头岭在半岛西端。涠洲岛在市区正南约36公里的海上，从国际客运港坐船约1小时多。合浦县在市区东北约30公里。福成机场在市区东北约25公里。",
     gettingAround:
@@ -10206,6 +10893,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jiayuguan: {
     identity:
       "嘉峪关是甘肃省的地级市，在河西走廊中段，因明长城最西端的关口嘉峪关而得名，常住人口约32万（2024年末）。关城建于明洪武五年（1372年），是明长城沿线现存最完整的关城之一，被称为“天下第一雄关”，作为长城的一部分列入世界文化遗产。城市本身很年轻：1958年为建设酒泉钢铁公司而兴起，1965年设市，是一座典型的工业城市。南面是终年积雪的祁连山，北面是黑山和戈壁。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 嘉峪关市（甘肃省直辖不设区县的地级市；1,224 km²；2020 普查 31 万；1958 年因酒钢建城；关城在市区西约 6 km；嘉峪关酒泉机场；嘉峪关南站；三面被酒泉市包围）
+    howItWorks:
+      "嘉峪关是甘肃省直辖的地级市，不设区县，市域约 1,200 平方公里，2020 年人口约 31 万，三面被酒泉市包围，与酒泉市区相距约 20 公里。这座城因 1958 年建设酒泉钢铁公司而生，市区是一座工业城；明长城西端的嘉峪关关城在市区西面约 6 公里，悬壁长城在北面的山上。机场与酒泉共用，高铁站嘉峪关南站在城南。初来的人最容易犯的错，是把嘉峪关当作一座古城，而它是 1965 年才设立的钢铁城市，关城在城外的戈壁上。",
     layout:
       "嘉峪关市区在关城以东约6公里，方正的现代城区，酒钢厂区在市区北侧。关城在市区西面的戈壁上，内城、外城和罗城三重，关楼、柔远楼、光化楼三座三层楼阁东西一线；从关城往北约8公里是黑山上的悬壁长城（1539年建），往南约7.5公里是讨赖河北岸崖顶上的“长城第一墩”（同年建），三处组成嘉峪关长城景区。新城魏晋壁画墓群在市区东北约20公里的戈壁上。机场在市区东北约10公里。",
     gettingAround:
@@ -10222,6 +10912,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhoushan: {
     identity:
       "舟山是浙江省的地级市，也是中国唯一以群岛设市的地级市，在杭州湾外的东海上，由一千三百余座岛屿组成，常住人口约118万（2024年末）。市区在最大的舟山本岛（定海、普陀两区），2009年舟山跨海大桥通车后与宁波陆路相连。普陀山是佛教四大名山之一的观音道场，沈家门是中国规模最大的渔港之一，朱家尖、东极岛、桃花岛是海岛度假地。舟山渔场是中国最大的近海渔场，海鲜是这里的日常。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 舟山市（浙江地级市，1987 年群岛设市；定海/普陀 2 区 + 岱山/嵊泗；陆地约 1,440 km²，海域 2.08 万 km²，2,085 岛；2020 普查 116 万；普陀山在普陀区；朱家尖机场；舟山跨海大桥）
+    howItWorks:
+      "舟山是浙江的地级市，1987 年以群岛设市，2,085 座岛屿的陆地只有约 1,440 平方公里，海域却有 2 万平方公里，2020 年人口约 116 万，下辖定海、普陀两区和岱山、嵊泗两县。市政府在舟山本岛的定海区，普陀区的沈家门是渔港与商业中心，机场在朱家尖岛；普陀山是普陀区的一座小岛，靠船往来；舟山跨海大桥把本岛与宁波连在一起，与宁波港合成宁波舟山港。初来的人最容易犯的错，是把普陀山当作舟山，而它只是两千多座岛里的一座。",
     layout:
       "舟山本岛上，定海是老城和行政中心（西侧），普陀区的沈家门渔港在东南岸，港外隔水就是朱家尖岛（沙滩、机场）和普陀山岛（普陀山全岛即景区，从朱家尖或沈家门坐船十几分钟）。本岛以北是岱山、嵊泗等列岛，东面海上约50公里是东极诸岛（庙子湖、东福山，中国大陆最东端的有人岛之一）。跨海大桥从本岛西端经金塘岛连到宁波镇海。",
     gettingAround:
@@ -10236,6 +10929,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tengchong: {
     identity:
       "腾冲是云南省保山市代管的县级市，在滇西的高黎贡山西麓、靠近中缅边境，市区海拔约1640米，常住人口约64万（2020年普查）。这里是中国最典型的年轻火山地热区之一：境内分布着近百座第四纪火山（火山地质公园的大空山、小空山是保存最好的火山锥），热海景区的“大滚锅”常年沸腾。腾冲又是著名侨乡，和顺古镇是明代屯军形成、后来靠“走夷方”（下缅甸经商）致富的村落，六百年来中西合璧的民居保存完整。翡翠加工和秋天的银杏是它的另外两张名片。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 腾冲市（保山市代管县级市 2015；5,697 km²；2020 普查 64 万；和顺古镇约 4 km；驼峰机场；猴桥口岸；侨乡）
+    howItWorks:
+      "腾冲是云南保山市代管的县级市，2015 年由县改设，市域约 5,700 平方公里，2020 年人口约 64 万，与缅甸有 150 公里的边界。市区在腾越街道，和顺古镇在城西约 4 公里，火山地质公园与热海温泉在城郊，银杏村在北面的江东；驼峰机场在城边，猴桥口岸通往缅甸。这里是著名的侨乡，边贸是它的老本行。初来的人最容易犯的错，是把腾冲当作一座边远小城，而它是一座有机场、有温泉与火山、旅游成熟的县级市。",
     layout:
       "腾冲城在一片火山高原的坝子里，四周是低矮的火山锥和温泉。和顺古镇在城西南约3公里，倚山面田，古镇前是一片湿地和洗衣亭；热海在城南约8公里的山谷里；火山地质公园在城北约25公里的马站乡；北海湿地（浮毯状的草排湖）在城北约12公里；江东银杏村在城北约40公里的固东镇。往西翻高黎贡山约2小时到保山；往西南是猴桥口岸方向的边境线。",
     gettingAround:
@@ -10250,6 +10946,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dujiangyan: {
     identity:
       "都江堰是四川省成都市代管的县级市，在成都平原西北缘、岷江出山的谷口，常住人口约71万。公元前256年前后，秦国蜀郡守李冰主持修建的都江堰水利工程在这里把岷江一分为二，无坝引水灌溉成都平原，两千多年来一直在使用，是世界上现存最古老、仍在运行的大型无坝引水工程之一；2000年都江堰与城西南的道教名山青城山一起列入世界文化遗产，2018年又列入世界灌溉工程遗产。城市因堰得名，宋代以前叫灌县。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 都江堰市（成都市代管县级市，原灌县 1988；1,208 km²；2020 普查 71 万；水利工程 + 青城山世界遗产 2000；成灌快铁；无机场；2008 地震极重灾区）
+    howItWorks:
+      "都江堰是成都市代管的县级市，1988 年由灌县改名，市域约 1,200 平方公里，2020 年人口约 71 万，在成都平原西北缘岷江出山的地方。市区紧靠都江堰水利工程，工程在城西北的江口，青城山在西南约 15 公里，两者 2000 年一起列入世界遗产；成灌快铁半小时到成都，没有机场。2008 年地震中市区严重受损，之后整体重建。初来的人最容易犯的错，是把“都江堰”只当作一处水利工程，而它是一座 70 万人的城，工程只是城边的一角。",
     layout:
       "都江堰水利工程在城区西侧的岷江上：江心的鱼嘴把岷江分成外江（排洪）和内江（引水），内江经飞沙堰溢流排沙，再穿过人工凿开的宝瓶口进入灌区。景区里离堆公园、伏龙观在宝瓶口边，二王庙在对岸山坡上，安澜索桥横跨江面。城区在堰以东的平原上，柏条河等内江支流穿城。青城山在城西南约15公里，前山是道教宫观（建福宫、天师洞、上清宫，最高处老君阁海拔约1260米），后山是溪谷徒步区。都江堰熊猫谷在城北。",
     gettingAround:
@@ -10264,6 +10963,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   fenghuang: {
     identity:
       "凤凰是湖南省湘西土家族苗族自治州的一个县，县城凤凰古城建在沱江边，常住人口约34万（2024年末）。古城始建于清康熙年间（1704年前后），是明清时期湘西的军事和行政据点之一，沱江两岸的吊脚楼、石板街、城楼和虹桥构成了它的经典画面。作家沈从文（1902年生于此）的《边城》让凤凰广为人知，画家黄永玉也是凤凰人。苗族和土家族是当地的主要民族。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 凤凰县（湘西土家族苗族自治州所辖县；1,750 km²；2020 普查 35 万，少数民族 79%；古城即县城沱江镇；凤凰古城站 2021；铜仁凤凰机场在贵州）
+    howItWorks:
+      "凤凰是湖南湘西土家族苗族自治州所辖的一个县，面积约 1,750 平方公里，2020 年人口约 35 万，苗族约占六成。凤凰古城就是县城，沱江从城中穿过，吊脚楼沿江排开，县政府也在这里；高铁站凤凰古城站 2021 年通车，在城外几公里，机场是贵州铜仁的铜仁凤凰机场，约 30 公里。初来的人最容易犯的错，是以为凤凰是一座旅游镇，而它是一个 35 万人的县，古城只是县城沿江的老街区，县域的大部分是苗族的山寨。",
     layout:
       "沱江自西向东穿过古城，北岸是老城主体（东门、北门城楼，沿江的吊脚楼群，石板老街），南岸是回龙阁一带的吊脚楼和民宿；虹桥横跨江上，江中有跳岩和石墩桥。沈从文故居、熊希龄故居在城内的巷子里。古城西面山上有明代修筑的“南方长城”遗迹（苗疆边墙）。周边的苗寨（山江、老家寨等）在县城以西的山里。凤凰古城高铁站在县城北面约8公里。",
     gettingAround:
@@ -10278,6 +10980,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   shiyan: {
     identity:
       "十堰是湖北省西北部的地级市，在秦巴山区、汉江中游，常住人口约320万。城市本身很年轻——1969年为建设第二汽车制造厂（今东风汽车）而兴起，被称为“东风汽车城”；它更为人熟知的是境内的武当山：道教名山、主峰天柱峰海拔1612米，山上的明代皇家道教建筑群1994年列入世界文化遗产。丹江口水库在市区东北，是南水北调中线工程的水源地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 十堰市（湖北地级市；3 区 1 县级市 4 县；23,666 km²；2020 普查 321 万，市区约 137 万；东风汽车 1969；武当山在丹江口市约 30 km；武当山机场 2016；十堰东站）
+    howItWorks:
+      "十堰是湖北的地级市，市域约 2.4 万平方公里，2020 年人口约 321 万，市区约 137 万，下辖茅箭、张湾、郧阳三区、丹江口市和 4 个县。这座城因 1969 年东风汽车（原第二汽车制造厂）落户而从山谷里长出来，市区沿山谷铺开，没有传统的老城；武当山在东面的丹江口市，离市区约 30 公里，1994 年列入世界遗产，丹江口水库是南水北调中线的源头。机场在武当山脚，高铁站十堰东站在城东。初来的人最容易犯的错，是把十堰当作武当山的山门，而它是一座汽车工业城，武当山在另一座县级市里。",
     layout:
       "十堰市区在一条山间河谷里，东西狭长，汽车厂区和城区混在一起。武当山在市区东南约30公里，山下的武当山镇（旅游经济特区）是登山起点：从山门经太子坡、紫霄宫、南岩宫到金顶，明永乐年间（1412–1424年）修建的宫观沿一条古神道分布，金顶的金殿是铜铸鎏金的。丹江口水库在武当山以北，坝区在丹江口市。武当山机场在市区东侧。",
     gettingAround:
@@ -10292,6 +10997,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   anyang: {
     identity:
       "安阳是河南省最北部的地级市，在太行山东麓、华北平原西缘，常住人口约539万（2024年末）。城西北的殷墟是商代晚期的都城遗址（约公元前1300—前1046年），甲骨文在这里出土，是中国有文字记载可考的最早都城，2006年列入世界文化遗产；因此安阳被称为“甲骨文的故乡”，中国文字博物馆也建在这里。所辖林州市的红旗渠是二十世纪六十年代在太行山腰开凿的引水渠，与太行大峡谷相邻。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 安阳市（河南地级市；4 区 1 县级市 4 县；7,352 km²；2020 普查 548 万，市区约 99 万；殷墟世界遗产 2006 市区西北；红旗渠/太行大峡谷在林州市；红旗渠机场 2023；安阳东站）
+    howItWorks:
+      "安阳是河南的地级市，市域约 7,400 平方公里，2020 年人口约 548 万，市区约 99 万，下辖 4 区、林州市和 4 县。市区在洹河两岸，殷墟在城西北的河湾里，2006 年列入世界遗产，中国文字博物馆在城东；红旗渠与太行大峡谷在西面的林州市，离市区五六十公里。红旗渠机场 2023 年启用，京广高铁的安阳东站在城东。初来的人最容易犯的错，是把安阳当作一座遗址上的小城，而它是一座五百万人的市，殷墟只是市区边上的一片田野。",
     layout:
       "安阳市区在洹河两岸的平原上，老城在中部（文峰塔、仓巷街）。殷墟在市区西北的洹河两岸，宫殿宗庙区（含妇好墓）和王陵区隔河相望，2024年开放的殷墟博物馆新馆在洹河北岸。中国文字博物馆在市区东部。汤阴县在城南约25公里，有岳飞庙和羑里城；林州市在城西约50公里，红旗渠总干渠沿太行山腰而行，太行大峡谷在其北。红旗渠机场在汤阴县境内。",
     gettingAround:
@@ -10306,6 +11014,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   huashan: {
     identity:
       "华山在陕西省渭南市华阴市境内，西安以东约120公里，是“五岳”中的西岳，以险峻著称，主峰南峰海拔2154.9米，是五岳中最高的。华阴市是华山脚下的县级市，常住人口约21万（2020年普查）。华山是花岗岩山体，五座主峰（东、西、南、北、中峰）如莲花瓣般环列，千尺幢、百尺峡、苍龙岭、长空栈道等险道是它最出名的地方；山下的西岳庙是历代帝王祭祀华山的庙宇，山北的华山北站让它成为从西安当日可往返的名山。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 华阴市（渭南市代管县级市；676 km²；2020 普查 20.5 万；华山在市区南约 5 km；华山北站高铁；西岳庙；无机场，西安咸阳机场）
+    howItWorks:
+      "华阴是陕西渭南市代管的县级市，市域约 680 平方公里，2020 年人口约 20.5 万，华山就在市区南面约 5 公里的山脚下。市区在渭河平原上，西岳庙在城中，华山北站在城北，高铁到西安约半小时，没有机场，靠西安咸阳；上山的索道与游客中心在山脚的玉泉院一带。初来的人最容易犯的错，是去找“华山市”，而并不存在这样一座市，华山在华阴市境内，市区是一座平淡的县城。",
     layout:
       "华山从渭河平原南缘拔地而起，华阴市区在山北的平原上，西岳庙在市区东部；玉泉院是徒步登山的起点，在山脚的华山镇。传统登山道从玉泉院经五里关、千尺幢、百尺峡到北峰，再经苍龙岭、金锁关上到中峰、东峰、南峰、西峰。北峰索道从瓮峪进山口上到北峰，西峰索道从仙峪口直达西峰。长空栈道在南峰东侧的绝壁上，鹞子翻身在东峰。华山北站在市区北侧。",
     gettingAround:
@@ -10320,6 +11031,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wutaishan: {
     identity:
       "五台山在山西省忻州市五台县，是佛教四大名山之一的文殊菩萨道场，也是汉传佛教与藏传佛教并存的佛教圣地，2009年以“五台山”文化景观列入世界文化遗产。它不是一座山峰，而是五座平顶山峰（东台、南台、西台、北台、中台）环抱的一片区域，最高的北台叶斗峰海拔3061米，是华北最高峰，因此有“华北屋脊”之称，山中气候寒凉。核心的台怀镇海拔约1700米，寺院集中在这里；现存寺院四十余处，多为历代敕建。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 五台山（忻州市五台县台怀镇；世界遗产 2009；北台 3,061 m；景区 2,837 km²；五台山机场在定襄县；五台山站距景区约 50 km；台怀镇非县城）
+    howItWorks:
+      "五台山不是一座市，而是山西忻州市五台县境内的一片山地与景区，2009 年列入世界遗产，最高的北台海拔 3,061 米。寺庙集中在群山环抱的台怀镇，那里是进香与住宿的中心，常住人口只有几千人；五台县城在南面几十公里外，是行政中心。五台山机场在忻州定襄县，五台山火车站离景区约 50 公里，进山都要换乘。初来的人最容易犯的错，一是以为五台山是一座山峰，而它是五座台顶围成的一圈，二是把台怀镇当作县城。",
     layout:
       "台怀镇在五座台顶围合的谷地中央，清水河穿镇而过。镇中心的塔院寺大白塔（高56.4米）是全山地标，紧邻的显通寺是五台山规模最大、历史最久的寺院，菩萨顶在其后的山坡上、是清代的藏传佛教寺院；镇东山上是黛螺顶（登顶要走1080级台阶），镇南有殊像寺、南山寺、镇海寺。五座台顶各有寺庙，由环山公路相连，需坐景区车或包车。唐代木构佛光寺（857年建东大殿）在台外的豆村镇，距台怀镇约50公里；南禅寺更远。忻州五台山机场在定襄县。",
     gettingAround:
@@ -10334,6 +11048,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tianshui: {
     identity:
       "天水是甘肃省东南部的地级市，在渭河上游的河谷里，是甘肃最靠近关中的城市，常住人口约295万，因气候相对温润而被称为“陇上江南”。城东南的麦积山石窟开凿于十六国后秦以来，现存194个洞窟、七千余尊泥塑，2014年作为“丝绸之路：长安—天山廊道的路网”的组成部分列入世界文化遗产，泥塑艺术在中国石窟中独树一帜。天水也是传说中伏羲的诞生地，明代的伏羲庙是全国规模最大的伏羲祭祀建筑群；秦人早期也在这一带发祥。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 天水市（甘肃地级市；秦州区、麦积区 + 5 县；14,277 km²；2020 普查 298 万，市区 122 万；两城区相距约 15 km，有轨电车相连；麦积山石窟世界遗产 2014 约 30 km；天水机场；天水南站 2017）
+    howItWorks:
+      "天水是甘肃的地级市，市域约 1.4 万平方公里，2020 年人口约 298 万，市区约 122 万，下辖秦州、麦积两区和 5 个县与自治县。市区是两座相距约 15 公里的城：西面的秦州区是老城，伏羲庙在那里，东面的麦积区是火车站与新的发展区，有轨电车把两者连起来；麦积山石窟在麦积区东南约 30 公里，2014 年列入世界遗产；天水南站高铁在麦积，机场也在麦积区。初来的人最容易犯的错，是以为天水有一个市中心，而它是渭河谷地里一东一西两座城。",
     layout:
       "天水市区分秦州区（老城，伏羲庙、南郭寺）和麦积区（东部新区、机场、火车站）两片，沿渭河支流藉河东西展开。麦积山在市区东南约45公里的小陇山林区里，山形像麦垛，石窟凿在陡直的崖壁上，靠悬空栈道相连；附近还有仙人崖、石门等景区。伏羲庙在秦州老城西关，南郭寺在城南的慧音山上。天水南站（高铁）在麦积区，天水站（普速）也在麦积区。",
     gettingAround:
@@ -10348,6 +11065,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jiujiang: {
     identity:
       "九江是江西省北部的地级市，在长江南岸、鄱阳湖入江口的西侧，常住人口约450余万。它古称浔阳、江州，是长江中游的重要港口和古战场、诗文之城，白居易在此写下《琵琶行》。城南的庐山是九江最大的名片：1996年以文化景观列入世界文化遗产，山上的牯岭镇是近代避暑地，山下有朱熹讲学的白鹿洞书院；中国最大的淡水湖鄱阳湖约三分之二在九江境内，冬季是候鸟越冬地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 九江市（江西地级市；3 区 3 县级市 7 县；19,078 km²；2020 普查 460 万，市区约 75 万；浔阳区；庐山市为代管县级市，庐山约 30 km，世界遗产 1996；庐山机场；九江站高铁）
+    howItWorks:
+      "九江是江西的地级市，市域约 1.9 万平方公里，2020 年人口约 460 万，市区约 75 万，下辖浔阳、濂溪、柴桑三区，瑞昌、共青城、庐山三个县级市和 7 个县。市中心在长江南岸的浔阳区，甘棠湖与浔阳楼是坐标；庐山在南面约 30 公里，1996 年列入世界遗产，山下的庐山市是另一座县级市；鄱阳湖的三分之二在九江境内；机场在庐山脚下，高铁九江站在城南。初来的人最容易犯的错，是把“庐山市”当作山上的城镇，而山上的牯岭镇属于庐山管理局，庐山市在山的另一侧。",
     layout:
       "九江市区在长江南岸，甘棠湖在老城中央（烟水亭在湖中），浔阳楼、锁江楼在江边。庐山在市区以南约20公里，主体是一座断块山，最高峰汉阳峰海拔1474米，牯岭镇在山顶约1160米的谷地里，是景区的中心；三叠泉、五老峰在山东侧，含鄱口面向鄱阳湖，花径、锦绣谷、仙人洞在牯岭西侧。白鹿洞书院在庐山南麓的五老峰下，东林寺在西北麓。鄱阳湖出口的石钟山在湖口县。庐山机场在庐山西侧。",
     gettingAround:
@@ -10362,6 +11082,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   anshun: {
     identity:
       "安顺是贵州省中西部的地级市，在云贵高原的喀斯特台地上，常住人口约247万（2020年普查）。这里是中国最典型的喀斯特瀑布与溶洞地区：黄果树瀑布高77.8米、宽101米，是中国最大的瀑布之一，也是亚洲最大的瀑布之一；龙宫是暗河溶洞。安顺又以“屯堡文化”出名——明初为镇守西南，朝廷在这里屯军，六百年来这些军户后裔保留着明代的服饰、方言和地戏，天龙屯堡是代表。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 安顺市（贵州地级市；西秀区、平坝区 + 普定 + 3 自治县；9,228 km²；2020 普查 247 万，市区约 108 万；黄果树在镇宁/关岭约 45 km；天龙屯堡在平坝区；黄果树机场；安顺西站）
+    howItWorks:
+      "安顺是贵州的地级市，市域约 9,200 平方公里，2020 年人口约 247 万，市区约 108 万，下辖西秀、平坝两区、普定县和镇宁、关岭、紫云三个自治县。市中心在西秀区，黄果树机场与安顺西站高铁在城边；黄果树瀑布在西南约 45 公里的镇宁、关岭交界处，龙宫在城南，天龙屯堡在东面的平坝区。屯堡文化——明代驻军后裔的村寨——是这里的特色。初来的人最容易犯的错，是以为黄果树在安顺城边，而它在一小时车程外的另一个县里。",
     layout:
       "安顺市区在西秀区的坝子里，文庙和老城在市中心。黄果树瀑布在市区西南约45公里的镇宁县，景区由大瀑布、天星桥、陡坡塘三部分组成，瀑布后有水帘洞可穿行；龙宫在市区西南约30公里，坐船进洞；天龙屯堡在市区东北约30公里的平坝区；格凸河、紫云的喀斯特在南面。黄果树机场在市区西侧，安顺西站（高铁）在市区西北。",
     gettingAround:
@@ -10376,6 +11099,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yining: {
     identity:
       "伊宁是新疆伊犁哈萨克自治州的州府（县级市），在天山北支之间的伊犁河谷中央，常住人口约78万（2020年普查）。伊犁河谷是新疆最湿润、最富饶的地方，河谷向西敞开，来自大西洋的水汽让这里草原、果园和薰衣草田连绵，因此有“塞外江南”之称。伊宁是多民族城市，维吾尔、哈萨克、汉、回、锡伯等民族共居，城里的喀赞其街区、六星街保留着有一百多年历史的民居和街巷。它也是去赛里木湖、那拉提草原、霍尔果斯口岸的门户。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 伊宁市（伊犁哈萨克自治州首府，县级市；州为副省级、辖伊犁/塔城/阿勒泰；644 km²；2020 普查 78 万；伊犁河北岸；喀赞其；伊宁机场；伊宁站；与伊宁县不同）
+    howItWorks:
+      "伊宁是伊犁哈萨克自治州的首府，一座县级市，市域约 640 平方公里，2020 年人口约 78 万；伊犁州是中国唯一的副省级自治州，管辖伊犁、塔城、阿勒泰三个地区。市区在伊犁河北岸，六星街与喀赞其是老街区，维吾尔、汉、回、哈萨克、锡伯等多民族杂居，绿化与湿润的气候让它被称为“塞外江南”；机场在城北，伊宁站通往乌鲁木齐。那拉提草原与赛里木湖各在一两百公里外。初来的人最容易犯的错，一是把伊宁市与伊宁县混为一处，二是把“伊犁”当作一座城，而它是管着新疆北部大半的一个州。",
     layout:
       "伊宁市区在伊犁河北岸的平原上，伊犁河从城南流过，河上的伊犁河大桥是看落日的地方。喀赞其民俗旅游区在市区东南，是维吾尔族传统街区；六星街在市区西部，是二十世纪三十年代规划的六边形放射状街区，有俄式、维吾尔式老房子。往西约90公里是霍尔果斯口岸和霍城的薰衣草田；往北约160公里是赛里木湖；往东约270公里是那拉提草原；察布查尔锡伯自治县在河南岸。机场在市区北郊。",
     gettingAround:
@@ -10390,6 +11116,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   shigatse: {
     identity:
       "日喀则是西藏自治区的地级市，在雅鲁藏布江与年楚河汇流处，市区海拔约3836米，是西藏第二大城市，常住人口约80万（2020年普查）。它是后藏的中心，扎什伦布寺（1447年建，格鲁派重要寺院）是城市的核心；市域向南一直延伸到喜马拉雅山脉的珠穆朗玛峰北坡，珠峰大本营（海拔约5200米）在所辖定日县。萨迦寺、江孜白居寺等重要寺院也在日喀则境内。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 日喀则市（西藏地级市 2014；桑珠孜区 + 17 县；约 17.99 万 km²；2020 普查 80 万，桑珠孜区 15.8 万，藏族 94%；扎什伦布寺；珠峰在定日县；和平机场；拉日铁路 2014；西藏旅行许可）
+    howItWorks:
+      "日喀则是西藏的地级市，2014 年由地区改设，市域约 18 万平方公里，2020 年人口约 80 万，下辖桑珠孜区和 17 个县，藏族约占 94%。市区是桑珠孜区，海拔约 3,840 米，扎什伦布寺在城西的山脚下；珠穆朗玛峰在南面的定日县，大本营离市区三百多公里；机场在城郊，拉日铁路 2014 年通车，到拉萨约 3 小时。外国游客进入西藏须持西藏旅行许可并随有资质旅行社出行。初来的人最容易犯的错，是把日喀则当作珠峰脚下的城，而珠峰在市域南缘的另一个县，要走一整天。",
     layout:
       "日喀则市区在年楚河汇入雅鲁藏布江的河谷平地上，扎什伦布寺在市区西侧的尼色日山脚，寺后山坡有晒佛台；老城在寺东。往东约90公里是江孜（白居寺、宗山），往西南约150公里是萨迦县城的萨迦寺，再往西南经定日县到珠峰大本营约350公里，途中翻越嘉措拉山口（5200余米）。和平机场在市区东约43公里的江当乡；定日机场在珠峰方向。",
     gettingAround:
@@ -10406,6 +11135,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   weihai: {
     identity:
       "威海是山东省东端、山东半岛最东部的地级市，三面环海，常住人口约291万（2024年末）。它以干净的海岸线和宜居环境出名，市区沿威海湾展开，湾口的刘公岛是清代北洋水师的基地（1888年成军），1894–1895年甲午战争中北洋水师在此覆灭；1898年至1930年威海卫曾被英国租借。所辖荣成的成山头是中国大陆海岸线的最东端，冬季的荣成天鹅湖有大群越冬的大天鹅。威海与烟台同处半岛北部，冬季有海效应“冷流雪”。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 威海市（山东地级市；环翠/文登 2 区 + 荣成/乳山；5,797 km²；2020 普查 291 万，市区约 116 万；刘公岛对岸；成山头在荣成；大水泊机场在文登；1984 沿海开放）
+    howItWorks:
+      "威海是山东最东端的地级市，1984 年首批沿海开放城市之一，市域约 5,800 平方公里，2020 年人口约 291 万，市区约 116 万，下辖环翠、文登两区和荣成、乳山两个县级市。市中心在环翠区的海湾边，幸福门与刘公岛隔水相望，刘公岛是甲午海战的遗址；成山头在东面的荣成市，是山东半岛的最东点；机场在文登区，高铁经烟台通向济南。初来的人最容易犯的错，是把威海当作环翠区的那片海湾，而市域向南延伸一百多公里，荣成、乳山各是一座县级市。",
     layout:
       "威海市区（环翠区）围着威海湾呈弧形，幸福门、海滨公园在湾底的市中心，刘公岛在湾口约2公里的海上，坐船十几分钟。市区往西是国际海水浴场和高新区，往南是文登区（机场所在）和南海新区。荣成市在东面：成山头在最东端，天鹅湖在荣成东北的海边，烟墩角一带有海草房村落。乳山在西南。半岛内陆是低山丘陵。",
     gettingAround:
@@ -10420,6 +11152,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhenjiang: {
     identity:
       "镇江是江苏省南部的地级市，在长江与京杭大运河交汇处、南京以东约70公里，常住人口约322万（2022年末）。它自古是长江下游的渡口和军事要地，“三山”——金山、焦山、北固山——沿江排开，金山寺以白娘子“水漫金山”的传说闻名，北固山有辛弃疾登临的甘露寺，焦山有摩崖碑林；西津渡是保存完整的千年古渡街区。镇江香醋、肴肉、锅盖面合称“镇江三怪”，恒顺醋厂始于1840年。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 镇江市（江苏地级市；京口/润州/丹徒 + 丹阳/扬中/句容；3,840 km²；2020 普查 321 万，市区约 123 万；金山/北固山/焦山；西津渡；无机场；镇江站/镇江南站；润扬大桥）
+    howItWorks:
+      "镇江是江苏的地级市，市域约 3,800 平方公里，2020 年人口约 321 万，市区约 123 万，下辖京口、润州、丹徒三区和丹阳、扬中、句容三个县级市。市中心在长江南岸的京口、润州两区，金山、北固山、焦山沿江排开，西津渡古街在山下；没有机场，靠南京或常州，沪宁城际的镇江站在城中，京沪高铁的镇江南站在城南，润扬大桥通向对岸的扬州。锅盖面、香醋与肴肉是这里的味道。初来的人最容易犯的错，是把镇江当作南京的郊县，而它是一座有自己三山与港口的地级市，丹阳的人口比市区还多。",
     layout:
       "镇江老城（京口区）在长江南岸，三山自西向东：金山在城西北（原是江中岛，清代与陆地相连，山上金山寺层层叠叠），北固山在城北临江（甘露寺、多景楼），焦山在城东北的江心岛上（定慧寺、碑林，需坐船）。西津渡在金山与北固山之间的老城北缘，昭关石塔是元代过街塔。城南是丹徒新区和镇江南站。长江对岸是扬州，润扬大桥相连。",
     gettingAround:
@@ -10434,6 +11169,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yueyang: {
     identity:
       "岳阳是湖南省北部的地级市，在洞庭湖与长江交汇处的东岸，常住人口约505万。城市因岳阳楼而闻名：这座楼相传由三国时东吴鲁肃建阅军楼而起，北宋范仲淹的《岳阳楼记》让它成为“江南三大名楼”之一，现存主楼是清光绪六年（1880年）重建的纯木结构。洞庭湖是中国第二大淡水湖，湖中的君山岛出产君山银针茶；所辖汨罗是屈原投江之地，端午龙舟的传统与此相关。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 岳阳市（湖南地级市；3 区 2 县级市 4 县；14,858 km²；2020 普查 505 万；岳阳楼区；君山岛；三荷机场 2018；岳阳东站；城陵矶港）
+    howItWorks:
+      "岳阳是湖南的地级市，市域约 1.5 万平方公里，2020 年人口约 505 万，下辖岳阳楼、云溪、君山三区，汨罗、临湘两个县级市和 4 个县。市中心在洞庭湖东岸的岳阳楼区，岳阳楼在湖边的城墙上，君山岛在湖中，靠船或大桥往来；城陵矶港在长江与洞庭湖交汇处，是长江上的大港，三荷机场 2018 年通航，京广高铁的岳阳东站在城东。初来的人最容易犯的错，是把岳阳当作一座只有一座楼的小城，而它是一座五百万人的港口城市，楼只是湖边的一角。",
     layout:
       "岳阳老城在洞庭湖东岸、湖水出长江口的南侧，岳阳楼就立在城西的湖边城墙上，楼下是汴河街仿古街和洞庭湖大桥。君山岛在楼西面的湖上，坐船或经大桥可达。市区往东是新城和岳阳东站；往北是长江边的城陵矶港。汨罗市在市区南约70公里，张谷英村（明清民居村落）在东南约80公里。三荷机场在市区东南。",
     gettingAround:
@@ -10448,6 +11186,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hanzhong: {
     identity:
       "汉中是陕西省西南部的地级市，在秦岭与大巴山之间的汉中盆地里、汉江上游，常住人口约317万（2023年末）。它是“汉”这个字的地理来源之一：刘邦在此受封汉王，古汉台是他的行宫遗址；诸葛亮北伐时以汉中为大本营，勉县有武侯祠和武侯墓；张骞是城固人，他的墓2014年作为丝绸之路遗产的组成部分列入世界文化遗产。盆地气候湿润，每年三月油菜花开满田野，洋县是朱鹮的最后栖息地和重新发现地（1981年）。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 汉中市（陕西地级市；汉台区、南郑区 + 9 县；27,097 km²；2020 普查 321 万，汉台区约 62 万；汉江两岸；秦巴之间盆地；城固机场；汉中站西成高铁；气候文化近四川）
+    howItWorks:
+      "汉中是陕西的地级市，市域约 2.7 万平方公里，2020 年人口约 321 万，下辖汉台、南郑两区和 9 个县。市区在汉江北岸的汉台区，古汉台与拜将坛是坐标，南郑区在江的南岸；城市在秦岭与大巴山之间的盆地里，气候湿润，春天的油菜花是它的名片；机场在东面的城固，西成高铁的汉中站在城北，到西安约一小时。初来的人最容易犯的错，是按陕西的印象来想象汉中，而它的气候、饮食与口音更近四川，秦岭把它与关中隔在两个世界。",
     layout:
       "汉中市区（汉台区、南郑区）在汉江北岸的盆地中央，古汉台（汉中市博物馆）在老城中心，馆内藏有石门栈道的汉魏摩崖石刻“石门十三品”。石门栈道景区在城北约20公里的褒河谷口，是古褒斜道的南端，原石门隧道已淹没在水库下。勉县在西面约40公里（武侯祠、武侯墓、定军山），城固在东面约30公里（张骞墓、机场），洋县在东北约60公里（朱鹮）。北面翻秦岭到西安，南面翻巴山到四川。",
     gettingAround:
@@ -10462,6 +11203,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   xiangyang: {
     identity:
       "襄阳是湖北省西北部的地级市，在汉江中游，常住人口约528万（2024年末）。它由汉江南岸的襄城和北岸的樊城合成，历史上是南北交通和军事要冲。襄阳古城墙至今完整，护城河最宽处超过250米，是中国现存最宽的古代护城河之一；城西的古隆中传统上被认为是诸葛亮青年时隐居躬耕的地方。北宋书法家米芾是襄阳人，城内有米公祠。近年还有仿唐建筑群“唐城”影视基地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 襄阳市（湖北地级市，2010 年由襄樊改名；3 区 3 县级市 3 县；19,728 km²；2020 普查 526 万，市区 218 万；襄城南岸古城 / 樊城北岸商业；古隆中；刘集机场 18 km；襄阳东站）
+    howItWorks:
+      "襄阳是湖北的地级市，2010 年由襄樊改名，市域约 2 万平方公里，2020 年人口约 526 万，市区约 218 万，下辖襄城、樊城、襄州三区和 3 个县级市、3 个县。汉江把市区分成两岸：南岸的襄城是古城，城墙沿江完整，北岸的樊城是商业中心，两座城合成了今天的市区；古隆中在城西约 15 公里，机场在城东北 18 公里，高铁襄阳东站在东面。初来的人最容易犯的错，是把襄城与樊城当作两座城，而它们是同一座市被汉江分开的两半，几座桥把两岸连在一起。",
     layout:
       "襄城在汉江南岸，城墙围着老城，北街是老城的步行街，临汉门、夫人城在城北临江处，米公祠在江对岸的樊城。樊城是北岸的商业区和火车站所在。古隆中在襄城西面约13公里的山间，唐城在其附近。汉江上有多座大桥连接两岸。往北约30公里是隆中所在的丘陵，往南是荆山山脉。刘集机场在市区东北。",
     gettingAround:
@@ -10476,6 +11220,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ordos: {
     identity:
       "鄂尔多斯是内蒙古自治区西南部的地级市，在黄河“几”字弯环抱的鄂尔多斯高原上，平均海拔约1400米，常住人口约228万（2024年末）。它因煤炭、天然气和羊绒而富裕，鄂尔多斯羊绒制品的名字来自这里；市政府所在的康巴什区是2004年起在草原上新建的城区，宽阔的街道和大体量的公共建筑是它的特点，老城区东胜在其北面。伊金霍洛旗的成吉思汗陵是蒙古族祭祀成吉思汗的圣地，达拉特旗的响沙湾是库布其沙漠边缘的沙漠景区。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 鄂尔多斯市（内蒙古地级市，2001 年撤盟设市；2 区 7 旗；86,882 km²；2020 普查 215 万，市区约 66 万；康巴什区市政府 2004 起，东胜区老城，相距约 25 km；成吉思汗陵在伊金霍洛旗；鄂尔多斯机场；人均 GDP 全国前列）
+    howItWorks:
+      "鄂尔多斯是内蒙古的地级市，2001 年由伊克昭盟改设，市域约 8.7 万平方公里，2020 年人口约 215 万，市区约 66 万，下辖东胜、康巴什两区和 7 个旗。市区是两座城：东胜区是老城，康巴什区是 2004 年起在草原上新建的市政府所在地，曾因空置被称为“鬼城”，如今是行政与商业中心，两城相距约 25 公里，机场在两城之间；成吉思汗陵在南面的伊金霍洛旗，响沙湾在北面的达拉特旗。煤炭让这里的人均 GDP 居全国前列。初来的人最容易犯的错，是把东胜当作市中心，而市政府在康巴什，两座城之间是二十多公里的草原。",
     layout:
       "鄂尔多斯的城区分成两块：康巴什（市政府、博物馆、大剧院，乌兰木伦湖畔）在南，东胜（老城、商业和火车站）在北，两者相距约25公里，中间是伊金霍洛旗的阿勒腾席热镇。成吉思汗陵在康巴什以南约30公里的甘德尔草原上；响沙湾在东胜以北约80公里的库布其沙漠南缘、黄河南岸；再往北过黄河是包头。乌审旗的萨拉乌苏遗址（河套人）在西南，秦直道遗迹穿过东部。机场在康巴什东南约13公里。",
     gettingAround:
@@ -10490,6 +11237,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   shangrao: {
     identity:
       "上饶是江西省东北部的地级市，在赣、浙、闽、皖四省交界一带，常住人口约640万。它的旅游资源集中在县域：三清山是花岗岩峰林的道教名山，2008年作为江西第一处世界自然遗产列入名录；婺源是徽派古村落和油菜花的代名词，篁岭的“晒秋”和江湾、李坑等村落是每年春秋的热门；弋阳龟峰的丹霞地貌是“中国丹霞”世界遗产的组成部分；鄱阳县在鄱阳湖东岸。上饶站是沪昆高铁与合福高铁十字交会的枢纽站。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 上饶市（江西地级市；3 区 1 县级市 8 县；22,737 km²；2020 普查 649 万，信州区约 119 万；三清山在玉山/德兴约 100 km，世界遗产 2008；婺源县；龟峰在弋阳；三清山机场；上饶站高铁枢纽）
+    howItWorks:
+      "上饶是江西的地级市，市域约 2.3 万平方公里，2020 年人口约 649 万，下辖信州、广丰、广信三区、德兴市和 8 个县。市中心在信州区的信江边，上饶站是沪昆与合福两条高铁十字交会的枢纽，三清山机场在城郊；人们来这里要去的地方都在别的县：三清山在玉山县，约 100 公里，2008 年列入世界遗产，婺源在北面约 100 公里，龟峰在弋阳。初来的人最容易犯的错，是把上饶当作三清山或婺源的所在，而它是一座普通的地级市市区，景区各在一两小时车程之外。",
     layout:
       "上饶市区（信州区）在信江边的盆地里，是交通中转地，本身景点不多。三清山在市区东北约80公里的玉山县与德兴市交界处，主峰玉京峰海拔1819.9米，有三条索道上山；婺源县在市区以北约100公里，古村落散布在县境的山谷里（江湾、李坑、晓起在东线，思溪延村、彩虹桥在北线，篁岭在东南）；龟峰在西面约80公里的弋阳县；鄱阳湖在西北的鄱阳县、余干县。三清山机场在市区南面。",
     gettingAround:
@@ -10504,6 +11254,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   korla: {
     identity:
       "库尔勒是新疆巴音郭楞蒙古自治州的州府（县级市），在天山南麓、塔里木盆地东北缘的绿洲上，常住人口五十余万，是南疆最大的城市之一。孔雀河从博斯腾湖流出、穿过铁门关峡谷后流经市区，给了这座沙漠边缘的城市水和绿；库尔勒香梨是它最出名的物产。作为塔里木盆地东部的门户，它是去博斯腾湖、罗布人村寨、塔克拉玛干沙漠公路和巴音布鲁克草原的中转站。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 库尔勒市（巴音郭楞蒙古自治州首府，县级市；州约 47 万 km² 为中国面积最大地级行政区；市 7,378 km²；2020 普查 78 万；孔雀河穿城；香梨；塔里木油田总部；梨城机场；南疆铁路/格库铁路）
+    howItWorks:
+      "库尔勒是巴音郭楞蒙古自治州的首府，一座县级市，市域约 7,400 平方公里，2020 年人口约 78 万；巴州约 47 万平方公里，是中国面积最大的地级行政区，比德国还大。市区在孔雀河两岸，冬天河上有天鹅，塔里木油田的总部与油城的气质在此，香梨让它被叫作“梨城”；机场在城郊，南疆铁路与格库铁路在此交会，塔克拉玛干沙漠公路从这里向南。初来的人最容易犯的错，是把“巴州”当作一座城，而它是一个横跨天山南北的州，库尔勒只是它北缘的首府。",
     layout:
       "库尔勒市区在孔雀河两岸的绿洲平原上，河边是市民休闲的风景带；城北约8公里是铁门关，孔雀河在这里切穿天山余脉的峡谷，古代是丝绸之路的关隘。博斯腾湖在市区东北约60公里的博湖县，是中国最大的内陆淡水湖之一；罗布人村寨在东南约85公里的尉犁县，塔里木河边的胡杨林和沙漠相接；塔克拉玛干沙漠公路的北端在西南约100公里的轮台县；巴音布鲁克草原在西北约300公里的和静县山中。机场在市区西南。",
     gettingAround:
@@ -10520,6 +11273,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   xichang: {
     identity:
       "西昌是四川省凉山彝族自治州的州府（县级市），在安宁河谷的高原盆地里，海拔约1500米，常住人口约96万（2020年普查）。这里日照充足、冬暖夏凉，有“小春城”“月城”之称；市区南面的邛海是四川第二大淡水湖，泸山倚湖而立。凉山是中国最大的彝族聚居区，每年农历六月二十四的火把节是最盛大的节日。市区以北约60公里的冕宁县境内是西昌卫星发射中心，中国多数探月与北斗卫星从这里升空。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 西昌市（凉山彝族自治州首府，县级市；2,651 km²；2020 普查 96 万；邛海边海拔约 1,500 m；卫星发射中心在冕宁县约 65 km；青山机场 11 km；西昌西站成昆铁路；火把节）
+    howItWorks:
+      "西昌是凉山彝族自治州的首府，一座县级市，市域约 2,650 平方公里，2020 年人口约 96 万，是凉山最大的城市。市区在邛海西岸，海拔约 1,500 米，气候温和，泸山与邛海是城边的风景；西昌卫星发射中心在北面约 65 公里的冕宁县，机场在城北 11 公里，成昆铁路的西昌西站在城南。彝族火把节在每年农历六月。初来的人最容易犯的错，是以为卫星发射中心在西昌城里，而它在另一个县的山谷里，只是借用了西昌的名字。",
     layout:
       "西昌市区在安宁河东侧的平坝上，老城（建昌古城）在市区北部，新城向南延伸到邛海北岸。邛海在市区东南，湖面约31平方公里，环湖有湿地公园和自行车道，泸山在湖西岸、山上有光福寺和凉山彝族奴隶社会博物馆。青山机场在市区北约13公里。往北约60公里是卫星发射中心，往西北约80公里翻山到盐源的泸沽湖（川滇交界），往南是螺髻山。",
     gettingAround:
@@ -10534,6 +11290,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   arxan: {
     identity:
       "阿尔山是内蒙古自治区兴安盟的县级市，在大兴安岭西南麓的林区里，海拔约1000米，常住人口约3.2万（2020年普查），是中国人口最少的县级市之一。地名是蒙古语“热的圣水”的意思，全市有四十余处温泉；阿尔山国家森林公园里有火山喷发形成的天池、石塘林（熔岩台地）、杜鹃湖和三潭峡，是第四纪火山地貌与森林、湿地的组合。1937年建成的日式火车站是小城的地标。冬季极寒、积雪期长，夏季是避暑地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 阿尔山市（兴安盟所辖县级市 1996；7,398 km²；2020 普查 3.2 万；温泉 42 处；天池/森林公园约 70 km；伊尔施机场；阿尔山站；阿尔山口岸；冬季 -40°C）
+    howItWorks:
+      "阿尔山是内蒙古兴安盟所辖的县级市，1996 年设市，市域约 7,400 平方公里，2020 年人口约 3.2 万，是中国人口最少的县级市之一。“阿尔山”是蒙古语“热的圣水”，市区建在温泉群上，有 42 处泉眼，日式的老火车站是城里的地标；阿尔山天池与森林公园在北面约 70 公里，机场在伊尔施，阿尔山口岸通往蒙古国。冬天可到零下 40 度。初来的人最容易犯的错，是把阿尔山当作一座山，而它是一座温泉小城，森林与天池在大兴安岭深处。",
     layout:
       "阿尔山市区在哈拉哈河支流的河谷里，小城不大，火车站在市区中心，温泉在市区西北。阿尔山国家森林公园在市区以北约70公里的伊尔施镇一带：天池（火口湖）、石塘林、三潭峡、杜鹃湖、驼峰岭天池分布在森林公路沿线；白狼镇在市区南面约30公里，是林场小镇。伊尔施机场在市区北约17公里。往西约60公里是中蒙边境的松贝尔口岸方向，往东约200公里是乌兰浩特。",
     gettingAround:
@@ -10548,6 +11307,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhangzhou: {
     identity:
       "漳州是福建省南部的地级市，在九龙江下游平原、厦门以西，常住人口约507万（2022年末）。它是国家历史文化名城，唐代设州（“开漳圣王”陈元光的故事从这里开始），闽南文化的核心区之一；市花水仙花是全国闻名的特产。所辖南靖县的土楼是2008年列入世界文化遗产的“福建土楼”的重要组成部分（田螺坑土楼群、云水谣），东山岛是福建南部的海岛度假地。漳州古城保留着骑楼老街和明清牌坊。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 漳州市（福建地级市；4 区 7 县；12,882 km²；2020 普查 505 万，市区约 212 万；芗城区古城；土楼在南靖/华安 60–80 km，世界遗产 2008；东山岛；无机场用厦门；漳州站；厦漳同城）
+    howItWorks:
+      "漳州是福建的地级市，市域约 1.3 万平方公里，2020 年人口约 505 万，市区约 212 万，下辖芗城、龙文、龙海、长泰四区和 7 个县。市中心在九龙江北岸的芗城区，古城的老街在那里，九龙江下游的平原是福建最大的平原；土楼在西面的南靖、华安两县，离市区六七十公里，2008 年列入世界遗产，东山岛在南面的东山县；没有机场，用厦门，高铁漳州站在城南，与厦门同城化。闽南语是日常语言。初来的人最容易犯的错，是以为土楼在漳州城边，而它们在山区的县里，要开一个多小时。",
     layout:
       "漳州市区在九龙江西溪、北溪汇流处的平原上，古城在市中心（台湾路、香港路的骑楼，明代的“尚书探花”等石牌坊，文庙）。南靖土楼在市区西南约60公里的山区：田螺坑（“四菜一汤”）、裕昌楼（东歪西斜楼）、云水谣古镇（和贵楼、怀远楼）；华安大地土楼群在西北约70公里。东山岛在市区东南约80公里的海上，有风动石和金銮湾；漳浦有火山岛地质公园。厦门在东面约50公里。",
     gettingAround:
@@ -10562,6 +11324,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   altay: {
     identity:
       "阿勒泰是新疆最北端阿勒泰地区的行政中心（县级市），在阿尔泰山南麓、额尔齐斯河上游，常住人口约22万（2020年普查），哈萨克族是主要民族之一。它是通往喀纳斯湖、禾木、白哈巴和可可托海的门户，冬季是中国积雪期最长、雪质最好的滑雪区之一——将军山滑雪场就在市区旁边，因而有“中国雪都”之名。额尔齐斯河是中国唯一注入北冰洋的河流，从市区北侧流过。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 阿勒泰市（阿勒泰地区行署驻地，县级市；地区隶属伊犁州；10,826 km²；2020 普查 22 万；克兰河边海拔约 700 m；喀纳斯在布尔津县约 250 km；可可托海在富蕴县；雪都机场；将军山滑雪场）
+    howItWorks:
+      "阿勒泰市是阿勒泰地区行署的驻地，一座县级市，市域约 1.1 万平方公里，2020 年人口约 22 万，哈萨克族是主要的少数民族；阿勒泰地区又隶属于伊犁州。市区在克兰河边的山谷里，海拔约 700 米，将军山滑雪场就在城边，机场与火车站在城郊；喀纳斯在西北的布尔津县，约 250 公里，可可托海在东面的富蕴县。初来的人最容易犯的错，是以为喀纳斯在阿勒泰市，而它在另一个县里，要走四五个小时。",
     layout:
       "阿勒泰市区在阿尔泰山前的河谷里，克兰河穿城而过，将军山滑雪场在市区东侧的山坡上，桦林公园在河边。喀纳斯在市区西北约250公里的布尔津县山中（禾木、白哈巴在更北的边境山谷），可可托海（额尔齐斯大峡谷、稀有金属矿坑遗址）在东南约230公里的富蕴县，乌伦古湖在南面约150公里的福海县。雪都机场在市区西北约10公里。",
     gettingAround:
@@ -10576,6 +11341,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   baoding: {
     identity:
       "保定是河北省中部的地级市，北京西南约140公里，常住人口约905万（2024年末）。清代它是直隶省的省会，直隶总督署至今完整保存，是中国现存唯一一座完整的清代省级衙署；古莲花池是元代以来的园林，清代曾为莲池书院。所辖的雄安新区跨白洋淀而设。西部太行山区有清西陵（2000年作为明清皇家陵寝列入世界遗产）、野三坡、白石山等景区；驴肉火烧是保定最出名的小吃。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 保定市（河北地级市，河北人口最多；5 区 4 县级市 15 县；22,185 km²；2020 普查 1,154 万，市区约 315 万；直隶总督署；雄安新区划出雄县/容城/安新；白洋淀；无机场；保定东站）
+    howItWorks:
+      "保定是河北的地级市，市域约 2.2 万平方公里，2020 年人口约 1,154 万，是河北人口最多的市，市区约 315 万，下辖 5 区、涿州、定州等 4 个县级市和 15 个县，是河北下辖县最多的市。市中心在莲池、竞秀两区，直隶总督署与古莲花池在老城里，这里曾是直隶省会与 1958 年前的河北省会；2017 年设立的雄安新区划出了东面的雄县、容城、安新，白洋淀就在那里；野三坡在西北的涞水县。没有机场，靠北京大兴或石家庄，京广高铁的保定东站在城东。初来的人最容易犯的错，是把保定当作一座普通的地级市，而它的市域从太行山一直铺到白洋淀，二十几个县各是一片天地。",
     layout:
       "保定市区在华北平原西缘的平原上，老城在市中心：直隶总督署、古莲花池、大慈阁相距不远。城东是高铁保定东站，再往东约40公里是白洋淀和雄安新区。往西北进入太行山：清西陵在易县（约60公里），野三坡在涞水县（约100公里，拒马河峡谷），白石山在涞源县（约130公里，大理岩峰林）；狼牙山在易县境内。保定没有民用机场。",
     gettingAround:
@@ -10607,6 +11375,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zhaoqing: {
     identity:
       "肇庆是广东省中西部的地级市，在西江中下游，广州以西约110公里，常住人口约411万（2020年普查）。它是国家历史文化名城，明清时曾是两广总督驻地（1564–1746年），宋代城墙保存完整；七星岩的喀斯特石峰与湖泊组成城市中心的山水园林，鼎湖山是1956年设立的中国第一个自然保护区。端砚是中国“四大名砚”之首，产自肇庆的斧柯山。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 肇庆市（广东地级市；端州/鼎湖/高要 + 四会 + 4 县；14,891 km²；2020 普查 411 万，市区 155 万；七星岩；鼎湖山；无机场用广州；肇庆东站；广佛肇城际；端砚）
+    howItWorks:
+      "肇庆是广东的地级市，市域约 1.5 万平方公里，2020 年人口约 411 万，市区约 155 万，下辖端州、鼎湖、高要三区、四会市和 4 个县。市中心在西江北岸的端州区，七星岩就在城边，宋代的城墙围着老城；鼎湖山在东面的鼎湖区，是岭南的自然保护区；没有机场，靠广州，贵广、南广高铁的肇庆东站在鼎湖，广佛肇城际通往佛山与广州。端砚以端州为名。初来的人最容易犯的错，是把肇庆当作珠三角的边缘，而它的市域向西北延伸到广西边界，怀集、封开是山区的县。",
     layout:
       "肇庆市区（端州区）在西江北岸，星湖（七星岩）就在市区北侧，七座石峰立在湖中，环湖有步道和牌坊广场；宋城墙围着老城，披云楼、阅江楼在城内和江边。鼎湖山在市区东北约18公里，是南亚热带常绿阔叶林保护区，有飞水潭和庆云寺。往北是怀集的燕岩，往西是封开的龙山溶洞和德庆的悦城龙母祖庙。肇庆东站（高铁）在城东约20公里的鼎湖区。",
     gettingAround:
@@ -10621,6 +11392,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   anqing: {
     identity:
       "安庆是安徽省西南部的地级市，在长江北岸、大别山东南麓，常住人口约416万（2022年末）。它建城于1217年（南宋），1760年至1949年间长期是安徽省会，近代中国第一座机器工业局（安庆内军械所，1861年）在此创办。安庆是黄梅戏的故乡，也是清代“桐城派”散文的发源地；所辖潜山市的天柱山是世界地质公园（2011年），主峰天柱峰海拔1489.8米。江边的迎江寺振风塔是长江沿岸的标志性古塔。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 安庆市（安徽地级市；迎江/大观/宜秀 + 桐城/潜山 + 5 县；13,538 km²；2020 普查 417 万，市区约 82 万；振风塔；天柱山在潜山市约 50 km；天柱山机场；清代安徽省会；黄梅戏）
+    howItWorks:
+      "安庆是安徽的地级市，市域约 1.4 万平方公里，2020 年人口约 417 万，市区约 82 万，下辖迎江、大观、宜秀三区，桐城、潜山两个县级市和 5 个县。市中心在长江北岸的迎江区，振风塔是江边的坐标，1760 至 1853 年这里是安徽的省会；天柱山在西北约 50 公里的潜山市，机场在城郊，高铁安庆站在城北。黄梅戏从这里起源。初来的人最容易犯的错，是把安庆当作一座衰落的江边小城，而它是一座四百万人的市，桐城、潜山各是一座有自己历史的县级市。",
     layout:
       "安庆市区在长江北岸的江湾里，老城临江，迎江寺和振风塔在江边，菱湖公园在老城北侧。天柱山在市区西北约50公里的潜山市境内，是花岗岩峰林，有索道上山；花亭湖在太湖县（西北约70公里）；桐城在市区北约60公里，有桐城派文庙和“六尺巷”。安庆天柱山机场在市区北侧。长江对岸是江西和安徽池州方向。",
     gettingAround:
@@ -10635,6 +11409,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   qiqihar: {
     identity:
       "齐齐哈尔是黑龙江省西部的地级市，在嫩江东岸的松嫩平原上，常住人口约373万（2024年末）。它1691年建城，1699年至1954年间是黑龙江的省会（清代黑龙江将军驻地），是东北最早的城市之一。城市因扎龙湿地的丹顶鹤而有“鹤城”之称——扎龙国家级自然保护区在市区东南约30公里，是世界上重要的丹顶鹤繁殖地。齐齐哈尔烤肉在全国知名，重工业（第一重型机械、轨道车辆）是它的现代底色。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 齐齐哈尔市（黑龙江地级市；7 区 1 县级市 8 县；42,255 km²；2020 普查 407 万，市区（北三区）约 96 万；扎龙湿地约 30 km；三家子机场；齐齐哈尔南站；1699–1954 省会）
+    howItWorks:
+      "齐齐哈尔是黑龙江的地级市，市域约 4.2 万平方公里，2020 年人口约 407 万，市区约 96 万，下辖 7 区、讷河市和 8 个县，1699 至 1954 年间是黑龙江的省会。市中心在嫩江东岸的龙沙、建华、铁锋“北三区”，市政府在建华区；扎龙湿地在东南约 30 公里，是丹顶鹤的保护区；机场在城南，高铁齐齐哈尔南站在城东。达斡尔族是这里的世居民族。初来的人最容易犯的错，是把齐齐哈尔当作扎龙的门户小城，而它是黑龙江第二大城市，曾做了 255 年的省会。",
     layout:
       "齐齐哈尔市区在嫩江东岸，龙沙公园在市中心，是东北较早的城市公园之一，园内有望江楼和清代的寿公祠；嫩江边有江桥和明月岛。扎龙湿地在市区东南约30公里，保护区面积约2100平方公里，观鹤区在保护区南部。往北是嫩江上游的林区，往西是内蒙古草原。三家子机场在市区南约15公里；高铁齐齐哈尔南站在城南。",
     gettingAround:
@@ -10649,6 +11426,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wanning: {
     identity:
       "万宁是海南省东南部的县级市，三亚以北约110公里、海口以南约140公里，常住人口约55万（2020年普查）。它是海南冲浪的代名词——日月湾常年有稳定的浪，是国家冲浪队训练基地；石梅湾、神州半岛是安静的海湾度假区。内陆的兴隆是上世纪五十年代起安置归国华侨的农场，兴隆咖啡和热带植物园由此而来。东山岭是海南的道教名山之一。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 万宁市（海南省直辖县级市；陆地 1,884 km²；2020 普查 55 万；市区万城镇；日月湾/石梅湾/神州半岛；兴隆华侨农场咖啡；无机场；环岛高铁万宁站/神州站）
+    howItWorks:
+      "万宁是海南省直辖的县级市，陆地约 1,900 平方公里，2020 年人口约 55 万，在海南岛东南沿海。市区在万城镇，离海岸几公里，是一座普通的县城；日月湾是冲浪的海滩，石梅湾与神州半岛是度假区，兴隆是华侨农场与咖啡的产地，各在海岸线上散开；没有机场，靠三亚或博鳌，环岛高铁的万宁站在城边，神州站在半岛。初来的人最容易犯的错，是把万宁当作一处海滩，而它是一座县级市，市区在内陆，海湾各在几十公里的海岸线上。",
     layout:
       "万宁市区（万城镇）在内陆的平原上，海岸线在东侧：从北到南是神州半岛（高尔夫和度假村）、石梅湾（长沙滩和青皮林）、日月湾（冲浪）；兴隆镇在市区西南约15公里，有热带植物园、温泉和咖啡园；东山岭在市区东侧。海南环岛高铁的万宁站在市区，神州站在神州半岛附近。三亚、博鳌方向走环岛高速。",
     gettingAround:
@@ -10680,6 +11460,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   danzhou: {
     identity:
       "儋州是海南省西北部的地级市（2015年由县级市升格），常住人口约108万（2022年），是海南人口第二多的城市。它的名字来自西汉的儋耳郡（公元前110年）；1097年苏轼被贬到这里，居住三年并讲学，东坡书院是海南最重要的人文古迹之一。洋浦经济开发区是国家级开发区和港口，古盐田（洋浦盐田村）有一千多年的日晒制盐传统；海花岛是近年填海建成的大型度假区。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 儋州市（海南省直辖地级市 2015；洋浦经济开发区并入；3,394 km²；2022 户籍 108 万；市区那大镇内陆；东坡书院在中和镇；无机场；西环高铁白马井站；儋州话）
+    howItWorks:
+      "儋州是海南省直辖的地级市，2015 年由县级市升格，市域约 3,400 平方公里，人口超过 100 万，是海南人口第二多的市，不设区县，洋浦经济开发区 2021 年并入市域。市区在内陆的那大镇，是西部的行政与商业中心；洋浦港在西北的海岸，海花岛在白马井对面的海上，东坡书院在中和镇，各在市区几十公里之外；没有机场，靠海口，西环高铁的白马井站在海边、儋州站在内陆。儋州话是本地的方言，儋州调声是它的民歌。初来的人最容易犯的错，是以为儋州在海边，而市区在内陆，海港与海岛各在另一头。",
     layout:
       "儋州市区在那大镇，位于海南岛西北部的内陆丘陵间；东坡书院在市区西北约40公里的中和镇（宋代儋州州城所在）。洋浦半岛在市区西北约50公里的海边，有洋浦港、千年古盐田和海花岛；松涛水库在市区东南，是海南最大的水库。环岛高铁西段的白马井站和海头站在儋州境内。海口在东北约140公里。",
     gettingAround:
@@ -10696,6 +11479,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   huzhou: {
     identity:
       "湖州是浙江省北部的地级市，在太湖南岸，因太湖而得名，常住人口约347万（2024年末）。它是国家历史文化名城，古称乌程、吴兴，隋代始称湖州；自古以蚕桑丝绸闻名，“湖丝衣天下”，境内出土过世界最早的蚕丝织物之一；湖笔（善琏）是“文房四宝”里的名品。南浔古镇是大运河沿线的江南水乡名镇，德清的莫干山是近代以来的避暑地，安吉以竹海和白茶出名。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 湖州市（浙江地级市；吴兴/南浔 + 德清/长兴/安吉；5,820 km²；2020 普查 337 万；吴兴区衣裳街；莫干山在德清；安吉竹海余村；无机场用杭州；湖州站高铁）
+    howItWorks:
+      "湖州是浙江的地级市，市域约 5,800 平方公里，2020 年人口约 337 万，下辖吴兴、南浔两区和德清、长兴、安吉三县，在太湖的南岸。市中心在吴兴区，衣裳街是老城的坐标，太湖边的滨湖是新区；南浔古镇在东面的南浔区，莫干山在南面的德清县，安吉的竹海与余村在西南，各在市区几十公里外；没有机场，靠杭州，高铁湖州站在城南。初来的人最容易犯的错，是把莫干山、安吉当作湖州城边的去处，而它们各在一个县里，从市区过去要一个小时。",
     layout:
       "湖州市区在太湖南岸的平原上，老城有飞英塔和衣裳街，太湖边是南太湖新区和湖滨度假带。南浔古镇在市区东约30公里（嘉业堂藏书楼、小莲庄、百间楼）；莫干山在南面德清县的山里（约40公里，民国别墅群、竹林）；安吉在西南约60公里（大竹海、余村、天荒坪）；长兴在西面有顾渚山紫笋茶园。高铁湖州站在市区南侧。",
     gettingAround:
@@ -10727,6 +11513,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jiaozuo: {
     identity:
       "焦作是河南省西北部的地级市，在太行山南麓、黄河北岸，常住人口约352万（2022年末）。它古称怀庆府，二十世纪初因煤矿兴起，近年转向旅游：北部太行山里的云台山（2004年首批世界地质公园之一）以红石峡的丹霞峡谷和茱萸峰闻名，是河南最著名的山岳景区之一；温县陈家沟是陈氏太极拳的发源地，2020年太极拳列入联合国教科文组织人类非物质文化遗产。“四大怀药”（怀山药等）是本地物产。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 焦作市（河南地级市；4 区 2 县级市 4 县；3,972 km²；2020 普查 352 万；解放区市政府；云台山在修武县约 30 km；陈家沟在温县；无机场用郑州；焦作站/焦作东站；煤城转型）
+    howItWorks:
+      "焦作是河南的地级市，市域约 4,000 平方公里，2020 年人口约 352 万，下辖 4 区、沁阳、孟州两个县级市和 4 个县，在太行山南麓。市中心在解放区与山阳区，这座城因煤而起，煤尽之后转向旅游，被称为“焦作现象”；云台山在东北的修武县，离市区约 30 公里，是世界地质公园，太极拳的发源地陈家沟在南面的温县；没有机场，靠郑州，焦作站与焦作东站有高铁。初来的人最容易犯的错，是以为云台山在焦作城边，而它在另一个县的山里，市区本身是一座平原上的老工业城。",
     layout:
       "焦作市区在太行山前的平原上，煤矿旧区在城区北部和东部。云台山在市区北面约35公里的修武县，景区含红石峡、潭瀑峡、泉瀑峡、茱萸峰（海拔1300余米）和万善寺等片区；青天河在西北的博爱县，神农山在沁阳，青龙峡在修武。陈家沟在南面约40公里的温县，黄河边的嘉应观（清雍正年间建的河神庙）在武陟。高铁焦作站在市区，焦作西站在城西。",
     gettingAround:
@@ -10741,6 +11530,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jingzhou: {
     identity:
       "荆州是湖北省中南部的地级市，在长江中游的江汉平原上，常住人口约514万（2022年末）。这里从战国楚国的都城纪南城算起有三千多年建城史，古称江陵，是长江中游的军事和商贸重镇，三国故事里“大意失荆州”说的就是这座城。荆州古城墙保存完整，是中国南方保存最好的古城墙之一；荆州博物馆藏有大量楚文化和汉代文物。荆州也是中国小龙虾的核心产区。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 荆州市（湖北地级市，1994 年沙市 + 荆州地区合并；沙市区/荆州区 + 4 县级市 2 县；14,099 km²；2020 普查 523 万；古城在荆州区、商业在沙市区；荆州博物馆；沙市机场 2021；荆州站高铁）
+    howItWorks:
+      "荆州是湖北的地级市，1994 年由沙市市与荆州地区合并而成，市域约 1.4 万平方公里，2020 年人口约 523 万，下辖沙市、荆州两区、4 个县级市和 2 个县。市区是两座城：荆州区是保存完整的明清古城，城墙环绕，荆州博物馆在城内；沙市区在东面，是商业与交通的中心，高铁荆州站与 2021 年通航的沙市机场都在沙市一侧。初来的人最容易犯的错，是把沙市当作另一座城市，而它是荆州的一个区，两城早已连成一片。",
     layout:
       "荆州古城在长江北岸，城墙周长约11公里，六座城门（东门宾阳楼可登），护城河环绕；关帝庙、荆州博物馆在城内和城外西侧。沙市区在古城以东，是近代开埠后的商业区和港口。楚纪南故城遗址在古城北面约5公里，熊家冢楚墓在川店镇；洪湖在东南。沙市机场在城西约18公里，高铁荆州站在城北。",
     gettingAround:
@@ -10772,6 +11564,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yibin: {
     identity:
       "宜宾是四川省南部的地级市，在岷江与金沙江汇合处，两江在这里合流后才称长江，因此有“万里长江第一城”之称，常住人口约459万（2020年普查）。它是五粮液的产地，酿酒历史与城市相伴；南部长宁县的蜀南竹海是中国最大的连片竹林之一，兴文石海是喀斯特石林和天坑地貌，翠屏区的李庄古镇在抗战时期曾接纳同济大学和中央研究院等机构内迁。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 宜宾市（四川地级市；翠屏/南溪/叙州 + 7 县；13,271 km²；2020 普查 459 万，市区约 118 万；三江汇流长江零公里；五粮液市区；蜀南竹海在长宁县；兴文石海；五粮液机场；宜宾西站）
+    howItWorks:
+      "宜宾是四川的地级市，市域约 1.3 万平方公里，2020 年人口约 459 万，市区约 118 万，下辖翠屏、南溪、叙州三区和 7 个县。市中心在金沙江与岷江汇合的翠屏区，长江从这里开始叫长江，五粮液的厂区就在市区；蜀南竹海在东南的长宁县，兴文石海在兴文县，各在市区几十公里外；五粮液机场在城郊，高铁宜宾西站在城西。初来的人最容易犯的错，是以为竹海在宜宾城边，而它在另一个县的山里，市区是一座三江汇流的酒城。",
     layout:
       "宜宾主城在三江口：岷江从北、金沙江从西南汇合，合江门是看两江汇流的地方，老城在合江门一带，翠屏山在城西。五粮液厂区在城北的岷江边。李庄古镇在城东约20公里的长江南岸；蜀南竹海在东南约60公里的长宁县；兴文石海在东南约100公里；南面沿金沙江是屏山、向家坝。五粮液机场在城北约11公里，高铁宜宾西站在城西。",
     gettingAround:
@@ -10786,6 +11581,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mudanjiang: {
     identity:
       "牡丹江是黑龙江省东南部的地级市，在牡丹江（松花江支流）畔的山间盆地里，常住人口约229万（2020年普查）。它是黑龙江东部的交通枢纽，以两处景观出名：镜泊湖是中国最大的高山堰塞湖之一，湖口的吊水楼瀑布是玄武岩上的宽幅瀑布；大海林林区的“雪乡”因积雪深厚、雪蘑菇般的屋顶成为冬季热门目的地。宁安的渤海国上京龙泉府遗址是唐代渤海国的都城。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 牡丹江市（黑龙江地级市；4 区 5 县级市 1 县；38,827 km²；2020 普查 229 万，市区约 92 万；镜泊湖在宁安市约 100 km；雪乡在海林市约 200 km；绥芬河口岸；海浪机场；牡丹江站）
+    howItWorks:
+      "牡丹江是黑龙江的地级市，市域约 3.9 万平方公里，2020 年人口约 229 万，市区约 92 万，下辖 4 区、绥芬河、海林、宁安等 5 个县级市和林口县，是黑龙江第三大城市。市中心在牡丹江北岸的东安、爱民、西安三区，海浪机场在城西，哈牡高铁的牡丹江站在城中；镜泊湖在南面的宁安市，约 100 公里，雪乡在海林市的山里，约 200 公里，绥芬河是对俄的口岸城市。初来的人最容易犯的错，是以为雪乡、镜泊湖在牡丹江城边，而它们各在一两百公里外的县级市里。",
     layout:
       "牡丹江市区在牡丹江两岸，老城在江北，江滨公园和牡丹峰是市民休闲地。镜泊湖在市区南面约100公里的宁安市（吊水楼瀑布在湖北端，火山口地下森林在湖西北）；渤海国上京遗址在宁安渤海镇，距市区约30公里；雪乡在市区西南约90公里的大海林林区；横道河子（俄式老镇、东北虎林园）在西面约60公里；绥芬河口岸在东面约150公里。海浪机场在市区西南约9公里。",
     gettingAround:
@@ -10800,6 +11598,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chizhou: {
     identity:
       "池州是安徽省南部的地级市，在长江南岸、皖南山地北缘，常住人口约133万（2022年）。九华山是它的核心——佛教四大名山之一的地藏菩萨道场，主峰十王峰海拔1344米，山中寺庙近百座；唐代诗人杜牧任池州刺史时写下“清明时节雨纷纷，路上行人欲断魂。借问酒家何处有，牧童遥指杏花村”，杏花村由此得名。升金湖是长江边重要的候鸟越冬湿地，秋浦河因李白的诗而闻名。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 池州市（安徽地级市 2000；贵池区 + 东至/石台/青阳；8,399 km²；2020 普查 134 万，贵池区约 62 万；九华山在青阳县约 40 km；九华山机场；池州站宁安高铁 2015）
+    howItWorks:
+      "池州是安徽的地级市，2000 年设立，市域约 8,400 平方公里，2020 年人口约 134 万，下辖贵池区和东至、石台、青阳三县，是安徽人口最少的地级市之一。市中心在长江南岸的贵池区，约 62 万人，杏花村在城郊；九华山在东南约 40 公里的青阳县，是四大佛教名山之一，机场以九华山为名建在两者之间，宁安高铁的池州站在城南。初来的人最容易犯的错，是把池州当作九华山下的镇，而九华山在另一个县，市区是一座江边的地级市。",
     layout:
       "池州市区在长江南岸的平原上，老城有清溪塔和杏花村。九华山在市区南面约40公里的青阳县，九华街是山中的寺庙集中区（化城寺、祇园寺、肉身宝殿），天台正顶和十王峰在山顶，有索道；大愿文化园（99米地藏菩萨圣像）在山下的柯村。升金湖在西南的东至县，秋浦河在石台县，牯牛降自然保护区在石台南部。九华山机场在市区与九华山之间。",
     gettingAround:
@@ -10814,6 +11615,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tongren: {
     identity:
       "铜仁是贵州省东北部的地级市，在武陵山区、锦江之畔，常住人口约330万（2020年普查），土家族、苗族、侗族人口过半。梵净山是它的名片：武陵山脉的主峰，海拔2572米，山顶的红云金顶是一柱孤立的岩峰，山上有大片原始森林和黔金丝猴等珍稀物种，2018年列入世界自然遗产。铜仁老城的中南门古城是明清街区，锦江穿城而过。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 铜仁市（贵州地级市 2011；碧江/万山 + 4 县 4 自治县；18,014 km²；2020 普查 330 万，市区约 43 万；梵净山在江口/印江/松桃交界约 60 km，世界遗产 2018；铜仁凤凰机场；铜仁站；少数民族 70%）
+    howItWorks:
+      "铜仁是贵州的地级市，2011 年由地区改设，市域约 1.8 万平方公里，2020 年人口约 330 万，市区约 43 万，下辖碧江、万山两区和 8 个县与自治县，土家族、苗族等少数民族约占七成。市中心在锦江边的碧江区，铜仁凤凰机场在城郊，与湖南凤凰共用，沪昆高铁的铜仁站在城南；梵净山在西面约 60 公里，跨江口、印江、松桃三县，2018 年列入世界遗产。初来的人最容易犯的错，是以为梵净山在铜仁城边，而它在一个多小时车程外的三县交界处。",
     layout:
       "铜仁市区在锦江两岸的谷地里，中南门古城在江边，东山、西山夹着老城。梵净山在市区西北约80公里的江口县，东线（黑湾河）和西线（印江）两个入口，东线索道上到山顶一带，步行经蘑菇石到红云金顶；山脚的寨沙侗寨、云舍土家村是住宿地。往东约30公里是湖南凤凰古城方向，铜仁凤凰机场就在市区与凤凰之间。石阡温泉在西南，思南的乌江在西面。",
     gettingAround:
@@ -10828,6 +11632,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jiuquan: {
     identity:
       "酒泉是甘肃省西北部的地级市，在河西走廊西端，是甘肃面积最大的市（约16.8万平方公里，占全省近四成），常住人口约106万（2020年普查）。它是汉代河西四郡之一，地名相传来自汉武帝赐御酒、霍去病倾酒入泉与将士共饮的故事；市区的钟鼓楼和酒泉公园（西汉酒泉胜迹）是这段历史的印记。敦煌是它代管的县级市，莫高窟、鸣沙山月牙泉都在辖区内；酒泉卫星发射中心在北面的额济纳旗境内。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 酒泉市（甘肃地级市，甘肃面积最大约 16.8 万 km²；肃州区 + 玉门/敦煌 + 2 县 2 自治县；2020 普查 106 万，肃州区 46 万；与嘉峪关相邻 20 km；卫星发射中心在内蒙古额济纳旗；无自有机场用嘉峪关；酒泉南站）
+    howItWorks:
+      "酒泉是甘肃面积最大的地级市，市域约 17 万平方公里，2020 年人口约 106 万，市区肃州区约 46 万，下辖肃州区、玉门与敦煌两个县级市、金塔与瓜州两县和肃北、阿克塞两个自治县。市区在河西走廊西段的绿洲上，钟鼓楼与酒泉公园是坐标，嘉峪关市在西面约 20 公里，机场与之共用，高铁酒泉南站在城南；敦煌在西面四百公里，是酒泉代管的县级市。初来的人最容易犯的错，是以为酒泉卫星发射中心在酒泉市里，而它在内蒙古的额济纳旗，只是借了酒泉的名。",
     layout:
       "酒泉市区（肃州区）与嘉峪关市相邻，两城相距约20公里，共用嘉峪关机场。市区以钟鼓楼为中心，酒泉公园在城东。往西沿河西走廊约120公里是玉门，约380公里到敦煌；瓜州的榆林窟在敦煌以东；金塔的胡杨林在市区北约80公里；酒泉卫星发射中心在东北约250公里的戈壁上。南面是祁连山。高铁酒泉南站在城南。",
     gettingAround:
@@ -10842,6 +11649,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chifeng: {
     identity:
       "赤峰是内蒙古自治区东南部的地级市，在大兴安岭南段与燕山交接的丘陵地带，常住人口约400万（2022年末），是内蒙古人口最多的城市之一。它是红山文化的命名地——新石器时代的“C形玉龙”在这里出土；辽代的上京临潢府遗址在巴林左旗。克什克腾旗有阿斯哈图石林（世界地质公园）、达里诺尔湖和乌兰布统草原，是赤峰最集中的自然景观区。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 赤峰市（内蒙古地级市，1983 撤盟设市；3 区 2 县 7 旗；90,021 km²；2020 普查 404 万，内蒙古人口最多；市区约 214 万；红山；克什克腾石林/草原约 200 km；玉龙机场；高铁站）
+    howItWorks:
+      "赤峰是内蒙古的地级市，1983 年由昭乌达盟改设，市域约 9 万平方公里，2020 年人口约 404 万，是内蒙古人口最多的市，下辖红山、松山、元宝山三区、2 个县和 7 个旗。市区在英金河边，城北的红山是城市的名字来源，也是红山文化的命名地，市政府在松山区，玉龙机场与高铁站在城郊；克什克腾旗的阿斯哈图石林与贡格尔草原在北面约 200 公里。初来的人最容易犯的错，是以为草原在赤峰城外，而市区周围是丘陵与农田，草原要走三四个小时。",
     layout:
       "赤峰市区在英金河畔，城东的红山是市名的由来，红山文化博物馆在市区。克什克腾旗在市区西北约250公里：阿斯哈图石林、达里湖、黄岗梁、乌兰布统草原（与河北围场相邻）分布在旗境内，经棚镇是旗府；辽上京遗址在东北约270公里的巴林左旗林东镇；宁城的辽中京遗址在南面。玉龙机场在市区西南约11公里。",
     gettingAround:
@@ -10856,6 +11666,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   shannan: {
     identity:
       "山南是西藏自治区南部的地级市，在雅鲁藏布江中游的河谷里，市区泽当海拔约3600米，常住人口约35万（2020年普查）。这里被称为藏民族的发祥地：雍布拉康是西藏第一座宫殿，昌珠寺是最早的佛殿之一，桑耶寺（779年建成）是西藏第一座剃度僧人出家的寺院，琼结的藏王墓是吐蕃时期赞普的陵墓群。羊卓雍措在市境西部，拉萨贡嘎机场也在山南的贡嘎县境内。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 山南市（西藏地级市 2016；乃东区 + 11 县；约 7.93 万 km²；2020 普查 35 万；泽当镇海拔约 3,560 m 雅砻河谷；桑耶寺、雍布拉康、羊卓雍措；贡嘎机场在山南贡嘎县；拉林铁路山南站；西藏旅行许可）
+    howItWorks:
+      "山南是西藏的地级市，2016 年由地区改设，市域约 7.9 万平方公里，2020 年人口约 35 万，下辖乃东区和 11 个县。市区是乃东区的泽当镇，海拔约 3,560 米，在雅砻河谷里，是藏族文化的发源地之一，雍布拉康在城南，桑耶寺在西面的扎囊县，羊卓雍措在浪卡子县；拉林铁路的山南站在城郊。拉萨贡嘎机场其实在山南的贡嘎县，离泽当约 100 公里。外国游客进入西藏须持西藏旅行许可并随有资质旅行社出行。初来的人最容易犯的错，是把贡嘎机场算作拉萨的地界，而它在山南市域之内。",
     layout:
       "山南市区泽当在雅鲁藏布江南岸的乃东区，雍布拉康在泽当东南约10公里的山顶上，昌珠寺在泽当南面约5公里。桑耶寺在雅鲁藏布江北岸的扎囊县，距泽当约40公里；藏王墓在南面约30公里的琼结县；羊卓雍措在西面约100公里的浪卡子县，从拉萨走南线到山南会经过。贡嘎机场在西北约90公里的贡嘎县，也是拉萨的机场。",
     gettingAround:
@@ -10872,6 +11685,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nantong: {
     identity:
       "南通是江苏省东南部的地级市，在长江入海口北岸，与上海隔江相望，常住人口约774万（2022年）。清末状元张謇在这里兴办实业和教育，1905年创办的南通博物苑是中国最早的公共博物馆之一，南通因此被称为“中国近代第一城”。市中心被濠河环绕，江边的狼山是长江下游少见的临江小山群；2008年苏通大桥、2020年沪苏通长江大桥先后通车，南通与上海的联系越来越紧。蓝印花布是本地传统工艺。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 南通市（江苏地级市；崇川/通州/海门 + 如东 + 如皋/启东/海安；8,544 km²；2020 普查 773 万，市区约 544 万；濠河/狼山；苏通大桥 2008/沪苏通大桥 2020；兴东机场；地铁 1 号线 2022；张謇）
+    howItWorks:
+      "南通是江苏的地级市，市域约 8,500 平方公里，2020 年人口约 773 万，市区约 544 万，下辖崇川、通州、海门三区、如东县和如皋、启东、海安三个县级市，在长江北岸与上海隔江相望。市中心在崇川区，濠河环绕老城，狼山在江边；苏通大桥 2008 年、沪苏通大桥 2020 年把它与南岸连起来，兴东机场在城北，地铁 1 号线 2022 年通车。张謇在清末建起的工业与学校是这座城的近代起点。初来的人最容易犯的错，是把南通当作上海的北郊，而它是一座七百万人的市，启东、海门各有自己的港口与城区。",
     layout:
       "南通老城被濠河（宋代以来的护城河）围成一圈，濠河两岸是公园、博物苑和张謇故居，是市区的核心风景带。狼山、军山等“五山”在城南的长江边，狼山上有广教寺；江边是滨江公园和港口。往东是通州、如东的滩涂和海岸，往南过江是苏州、上海。兴东机场在市区东北约18公里，高铁南通站在市区北部。",
     gettingAround:
@@ -10886,6 +11702,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   linyi: {
     identity:
       "临沂是山东省东南部的地级市，在沂河与沂蒙山区之间，常住人口约1102万（2020年普查），是山东人口最多的城市。它是书圣王羲之的故乡，市区有王羲之故居；1972年银雀山汉墓出土的《孙子兵法》《孙膑兵法》竹简是二十世纪中国最重要的考古发现之一。临沂商城是中国规模最大的批发市场群之一，物流业发达。北部的蒙山（龟蒙顶海拔1156米）是沂蒙山区的主峰，沂蒙山旅游区以山地和红色历史资源出名。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 临沂市（山东地级市，山东面积最大人口最多；3 区 9 县；17,191 km²；2020 普查 1,102 万；兰山区商城；沂蒙山在北部；启阳机场；临沂北站日兰高铁）
+    howItWorks:
+      "临沂是山东面积最大、人口最多的地级市，市域约 1.7 万平方公里，2020 年人口约 1,102 万，下辖兰山、罗庄、河东三区和 9 个县。市中心在沂河西岸的兰山区，批发市场群让它成为北方的商贸物流中心，罗庄、河东在南面与东面；沂蒙山区在北部的平邑、蒙阴等县，是革命老区；启阳机场在城郊，日兰高铁的临沂北站在城北。初来的人最容易犯的错，是把临沂当作一座商城，而它是一个千万人口的市，九个县各是一片丘陵或平原。",
     layout:
       "临沂市区在沂河两岸的平原上，老城在河西：王羲之故居、银雀山汉墓竹简博物馆在市中心，沂河两岸是滨河风景带（沂河上的小埠东橡胶坝是市区地标）。临沂商城在市区西部和北部。蒙山在市区北约60公里的平邑、蒙阴县境内，沂蒙山旅游区（沂山、蒙山、云蒙景区）分布在北部山区；沂南有诸葛亮故里，费县有天蒙山。启阳机场在市区南侧，临沂北站在城北。",
     gettingAround:
@@ -10900,6 +11719,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   weifang: {
     identity:
       "潍坊是山东省中部的地级市，在山东半岛的根部，常住人口约942万（2022年）。它是“世界风筝之都”——国际风筝联合会总部设在这里，每年4月的国际风筝节自1984年起举办；杨家埠是中国三大木版年画产地之一，也是风筝作坊集中的村落。所辖青州是国家历史文化名城，青州博物馆的龙兴寺佛教造像是二十世纪重要的考古发现；寿光是中国最大的蔬菜生产基地之一，每年有蔬菜博览会。老城的十笏园是清代的私家园林。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 潍坊市（山东地级市 1983；4 区 2 县 6 县级市；16,143 km²；2020 普查 939 万；奎文区市政府；白浪河；寿光蔬菜；青州古城；南苑机场；潍坊北站枢纽；风筝）
+    howItWorks:
+      "潍坊是山东的地级市，市域约 1.6 万平方公里，2020 年人口约 939 万，下辖潍城、寒亭、坊子、奎文四区、2 个县和青州、诸城、寿光、高密等 6 个县级市。市中心在白浪河两岸，市政府在奎文区，风筝广场是坐标，每年四月的国际风筝节是它的名片；寿光的蔬菜供给半个中国，青州是古城，各是一座县级市；南苑机场仍在运营，潍坊北站是半岛高铁的枢纽。初来的人最容易犯的错，是把潍坊当作风筝之城的小城，而它是一个九百多万人的市，六座县级市各有自己的产业与市中心。",
     layout:
       "潍坊市区在白浪河两岸的平原上，老城有十笏园和世界风筝博物馆，白浪河沿岸是市区的绿带。杨家埠在市区东北约10公里的寒亭区；青州在市区西约50公里（青州古城、云门山、青州博物馆）；寿光在北面约40公里（蔬菜博览园）；沂山在南面临朐县。潍坊南苑机场在市区南侧约7公里（寿光的新机场在建）；潍坊北站在城北。",
     gettingAround:
@@ -10914,6 +11736,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   changde: {
     identity:
       "常德是湖南省西北部的地级市，在沅江下游、洞庭湖西岸，古称武陵，常住人口约521万（2022年）。它因陶渊明《桃花源记》而闻名——所辖桃源县的桃花源景区被认为是这篇文章的原型地之一；市区沅江边的常德诗墙长约3公里，镌刻历代诗词书法。柳叶湖是城边的湖泊度假区，石门县的壶瓶山海拔2098.7米，是湖南的最高峰之一，有“湖南屋脊”之称。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 常德市（湖南地级市；武陵/鼎城 + 津市 + 6 县；18,177 km²；2020 普查 528 万，市区 297 万；诗墙；柳叶湖；桃花源在桃源县；桃花源机场 14 km；常德站高铁）
+    howItWorks:
+      "常德是湖南的地级市，市域约 1.8 万平方公里，2020 年人口约 528 万，市区约 297 万，下辖武陵、鼎城两区、津市市和 6 个县，在洞庭湖的西岸。市中心在沅江北岸的武陵区，沿江的诗墙是坐标，柳叶湖在城北；桃花源在西面的桃源县，约 40 公里，壶瓶山在石门县；桃花源机场在城郊 14 公里，高铁常德站在城北。初来的人最容易犯的错，是以为桃花源在常德城里，而它在另一个县的山脚下，市区是一座沅江边的大城。",
     layout:
       "常德市区在沅江北岸，诗墙沿江而建，老西门和河街是复建的老城街区；柳叶湖在市区东北，环湖有公园和度假区。桃花源在市区西南约35公里的桃源县沅江边；壶瓶山在西北约150公里的石门县；西洞庭湖在东面（汉寿），澧水在北面。桃花源机场在市区西南约14公里，常德站在市区。",
     gettingAround:
@@ -10928,6 +11753,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ganzhou: {
     identity:
       "赣州是江西省南部的地级市，是江西面积最大、人口最多的市，常住人口约896万（2025年）。章江与贡江在市区汇合成赣江，“赣”字由此而来。老城保留着宋代的砖砌城墙（现存约3.6公里）、宋代的排水系统福寿沟，以及八境台、郁孤台（辛弃疾词中的“郁孤台下清江水”）等古迹；通天岩有唐宋摩崖造像。赣南是客家人的聚居区，龙南、安远等地有大量围屋；赣南脐橙是全国知名的地理标志产品。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 赣州市（江西地级市，江西面积最大人口最多；3 区 2 县级市 13 县；39,363 km²；2020 普查 897 万；章贡区章贡二江汇流；宋城墙/郁孤台/浮桥；黄金机场；赣州西站；客家）
+    howItWorks:
+      "赣州是江西面积最大、人口最多的地级市，市域约 3.9 万平方公里，占江西近四分之一，2020 年人口约 897 万，下辖章贡、南康、赣县三区、瑞金、龙南两个县级市和 13 个县。市中心在章江与贡江汇流成赣江的章贡区，宋代的城墙、郁孤台与浮桥是老城的坐标；黄金机场在城西，高铁赣州西站在城郊。客家人是这里的主体，赣州被称为客家摇篮。初来的人最容易犯的错，是把赣州当作市区那座宋城，而它的市域有 18 个县市，从市区到最远的县要走三四个小时。",
     layout:
       "赣州老城在章江与贡江之间的半岛上，宋城墙沿贡江一侧保存最完整，八境台在两江汇合处的城角，郁孤台在城内的贺兰山上；灶儿巷是老城的传统街巷。章江新区在章江南岸。通天岩在市区西北约10公里；客家围屋集中在南面约150公里的龙南（关西新围、燕翼围）；瑞金在东面约150公里；三百山在安远。黄金机场在市区西约16公里，赣州西站在城西。",
     gettingAround:
@@ -10942,6 +11770,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mianyang: {
     identity:
       "绵阳是四川省西北部的地级市，在涪江畔，常住人口约492万（2024年），是四川第二大城市，也是国务院批准建设的“中国科技城”（有多家国防科研机构）。它是李白的故乡——李白出生地在所辖江油市的青莲镇；涪江边的越王楼是唐代建筑的复建，梓潼的七曲山大庙是文昌帝君的祖庙。北川羌族自治县在西北山区，是羌族聚居地，2008年汶川地震中的北川老县城作为地震遗址被保留下来。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 绵阳市（四川地级市，四川第二大城市；涪城/游仙/安州 + 江油 + 5 县；20,257 km²；2020 普查 487 万，市区约 280 万；科学城/长虹；北川羌族自治县；南郊机场；绵阳站高铁）
+    howItWorks:
+      "绵阳是四川的地级市，市域约 2 万平方公里，2020 年人口约 487 万，市区约 280 万，是四川第二大城市，下辖涪城、游仙、安州三区、江油市和 5 个县与自治县。市中心在涪江两岸的涪城、游仙两区，中国工程物理研究院的科学城与长虹让它被称为“中国科技城”；北川羌族自治县在西北，2008 年地震后另建了新县城；南郊机场在城南，高铁绵阳站在城中，到成都约 40 分钟。初来的人最容易犯的错，是把绵阳当作成都的卫星城，而它是一座有自己科研与工业体系的大城市。",
     layout:
       "绵阳市区在涪江与安昌河汇合处，越王楼在涪江东岸的龟山上，富乐山公园在城东，科学城在城郊。江油在北面约40公里（李白故里、窦圌山），梓潼在东北约50公里（七曲山大庙、翠云廊古柏道），北川新县城在西北约30公里（老县城地震遗址再往北约20公里），安州、平武在西北山区（平武有王朗自然保护区和大熊猫）。南郊机场在市区南约10公里，绵阳站在市区。",
     gettingAround:
@@ -10956,6 +11787,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   luzhou: {
     identity:
       "泸州是四川省东南部的地级市，在长江与沱江汇合处，与贵州、重庆相邻，常住人口约425万（2020年普查）。它是中国白酒的重要产地：泸州老窖有建于1573年、连续使用至今的“国宝窖池”，赤水河畔古蔺县二郎镇的郎酒也在这里。市区的长江两岸有张坝桂圆林（世界上最北的大片桂圆林之一），合江的尧坝古镇、福宝古镇保留着明清川南民居，分水油纸伞是传统工艺。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 泸州市（四川地级市 1983；江阳/纳溪/龙马潭 + 4 县；12,229 km²；2020 普查 425 万，市辖区约 76 万；长江沱江汇流江阳区；泸州老窖市区；郎酒在古蔺二郎镇；云龙机场 2018；泸州站渝昆高铁；泸州港）
+    howItWorks:
+      "泸州是四川的地级市，市域约 1.2 万平方公里，2020 年人口约 425 万，市辖区约 76 万，下辖江阳、纳溪、龙马潭三区和 4 个县。市中心在长江与沱江汇合处的江阳区，泸州老窖的老窖池就在市区，郎酒在南面古蔺县赤水河边的二郎镇，两者让它被称为“酒城”；泸州港是四川第一大港，云龙机场 2018 年启用，渝昆高铁的泸州站在城郊。初来的人最容易犯的错，是把泸州当作一座只有酒厂的小城，而它是四川南部的港口与工业城市，郎酒的产地在一百多公里外的山里。",
     layout:
       "泸州市区在长江与沱江汇合处的江阳区，老窖景区（国窖1573窖池群）在市区，报恩塔在老城，张坝桂圆林在城东南的长江边。合江县在东面约60公里（尧坝、福宝古镇，佛宝森林公园），古蔺县在南面约130公里的赤水河畔（二郎镇郎酒庄园），叙永在西南。云龙机场在市区北约21公里，泸州站在城北。",
     gettingAround:
@@ -10970,6 +11804,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   lishui: {
     identity:
       "丽水是浙江省西南部的地级市，在瓯江上游的山区里，常住人口约251万（2020年普查），森林覆盖率超过80%，是浙江生态最好的地区，被称为“浙江绿谷”。它的看点分散在各县：缙云仙都的鼎湖峰是一柱孤立的石峰，云和梯田是浙江最集中的高山梯田，松阳保存着上百座传统村落，龙泉的青瓷烧制技艺2009年列入联合国教科文组织非遗名录、龙泉宝剑同样出名，景宁是全国唯一的畲族自治县。市区边的瓯江古堰画乡是画家写生地。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 丽水市（浙江地级市，浙江面积最大；莲都区 + 龙泉市 + 6 县 + 景宁畲族自治县；17,275 km²；2020 普查 251 万，浙江人口最少之一；古堰画乡/松阳/龙泉青瓷；丽水机场 2025；丽水站）
+    howItWorks:
+      "丽水是浙江面积最大的地级市，市域约 1.7 万平方公里，占浙江六分之一，2020 年人口约 251 万，却是浙江人口最少的市之一，下辖莲都区、龙泉市、6 个县和景宁畲族自治县。市中心在瓯江边的莲都区，古堰画乡在城西；松阳的古村落、龙泉的青瓷与宝剑、青田的石雕与侨乡，各在一个县里；丽水机场 2025 年启用，金温铁路的丽水站在城中。“丽”在这里读第二声。初来的人最容易犯的错，是把丽水当作一座城，而它是浙西南一整片山地，九个县市散在山谷里，从市区到龙泉要一个多小时。",
     layout:
       "丽水市区在瓯江中游的盆地里，古堰画乡（通济堰、大港头）在市区西南约20公里的瓯江边。缙云在东北约50公里（仙都鼎湖峰），云和在西南约50公里（梯田），松阳在西面约60公里（古村落、松阴溪），龙泉在西南约130公里（青瓷小镇、龙泉山），景宁在南面约60公里，遂昌在西北（金矿、南尖岩）。丽水机场在市区西南，丽水站在市区。",
     gettingAround:
@@ -10984,6 +11821,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   karamay: {
     identity:
       "克拉玛依是新疆西北部的地级市，在准噶尔盆地西北缘的戈壁上，常住人口约49万（2022年）。“克拉玛依”是维吾尔语“黑油”的意思：1955年10月黑油山一号井喷出工业油流，1958年建市，是新中国第一个大油田所在的城市，市区就是随油田规划建起来的。乌尔禾区的“世界魔鬼城”是风蚀雅丹地貌，独山子区有独山子大峡谷；穿城而过的克拉玛依河是人工河。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 克拉玛依市（新疆直辖地级市；4 区，独山子为飞地约 150 km；7,733 km²；2020 普查 49 万，市区（2015）约 26 万；1955 油田建城；黑油山；魔鬼城在乌尔禾区；古海机场；克拉玛依站；人均 GDP 全国前列）
+    howItWorks:
+      "克拉玛依是新疆直辖的地级市，1955 年发现油田后建城，市域约 7,700 平方公里，2020 年人口约 49 万，下辖克拉玛依、白碱滩、乌尔禾、独山子四个区，各区相隔几十到一百多公里，独山子是南面 150 公里外的一块飞地。市中心在克拉玛依区，黑油山的天然沥青丘是城市名字的来源，克拉玛依河穿过市区；世界魔鬼城在北面的乌尔禾区，约 100 公里；古海机场与火车站在城郊。人均 GDP 居全国前列。初来的人最容易犯的错，是把四个区当作一座连成片的城，而它们是戈壁上四座各自独立的石油城镇。",
     layout:
       "克拉玛依市区在戈壁上的一片规整街区，克拉玛依河（人工河）穿城，黑油山在市区东北（沥青丘和一号井纪念地）。世界魔鬼城在市区北约100公里的乌尔禾区，艾里克湖在魔鬼城附近；白碱滩区在市区东北；独山子区在南面约150公里的天山北麓，独山子大峡谷是奎屯河切出的峡谷，独库公路从独山子出发。古海机场在市区东南约16公里。乌鲁木齐在东南约300多公里。",
     gettingAround:
@@ -10998,6 +11838,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   daqing: {
     identity:
       "大庆是黑龙江省西部的地级市，在松嫩平原上，常住人口约278万（2020年普查）。1959年9月松基三井喷油、发现大庆油田，恰逢建国十周年，“大庆”由此得名；此后几十年它是中国最大的油田，“铁人”王进喜的故事就发生在这里。城市沿油田分布，采油的“磕头机”遍布城郊，市区却有大片湖泊和湿地——黎明湖、龙凤湿地都在城中。杜尔伯特是蒙古族自治县。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 大庆市（黑龙江地级市；5 区 3 县 1 自治县；21,205 km²；2020 普查 278 万；1959 松基三井；市区分散无单一中心（萨尔图/让胡路/龙凤）；铁人纪念馆；萨尔图机场；大庆东站）
+    howItWorks:
+      "大庆是黑龙江的地级市，1959 年油田喷油后建城，市域约 2.1 万平方公里，2020 年人口约 278 万，下辖萨尔图、让胡路、龙凤、红岗、大同五区、3 个县和杜尔伯特蒙古族自治县。这座城没有传统的市中心：萨尔图区是市政府与机场所在，让胡路区是油田公司的所在，龙凤区在东面，几个区之间隔着油井、湖泊与草地，各自成片；铁人王进喜纪念馆在让胡路，高铁大庆东站在龙凤。石油与石化仍是支柱。初来的人最容易犯的错，是在大庆找一个市中心，而它是一片散在油田上的城区群，从萨尔图到让胡路要开半小时。",
     layout:
       "大庆市区分为萨尔图、让胡路、龙凤等几片，由油田道路连接，铁人王进喜纪念馆在让胡路区，黎明湖在市中心，龙凤湿地在市区东南、是城中的国家级湿地保护区。油田的采油区分布在市区四周。杜尔伯特蒙古族自治县在西南约60公里（连环湖温泉、草原），肇源在南面的松花江边。萨尔图机场在市区东北约25公里，大庆东站在城东。",
     gettingAround:
@@ -11012,6 +11855,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   baishan: {
     identity:
       "白山是吉林省东南部的地级市，在长白山西南麓的山区里，市区（浑江区）在浑江边，常住人口约91万（2022年）。它是长白山西坡和南坡的门户：西坡有天池观景的1400余级台阶和锦江大峡谷，南坡在长白县，两处都比北坡人少；抚松县的长白山机场是通往西坡最近的机场。抚松是人参之乡，万良镇有大型人参交易市场；临江市在鸭绿江畔。白山曾以林业和煤矿为主，现在转向生态旅游。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 白山市（吉林地级市；浑江区、江源区 + 临江市 + 抚松/靖宇 + 长白朝鲜族自治县；2020 普查约 95 万；长白山西坡在抚松，长白山保护开发区为省直属；长白山机场在池西；鸭绿江边境；无自有机场）
+    howItWorks:
+      "白山是吉林的地级市，市域约 1.7 万平方公里，2020 年人口约 95 万，下辖浑江、江源两区、临江市、抚松、靖宇两县和长白朝鲜族自治县，南面隔鸭绿江与朝鲜相望。市中心在浑江区的河谷里，是一座林业与矿业的老城；长白山的西坡在东面的抚松县，但长白山保护开发区由吉林省直属的管委会管理，长白山机场在抚松的池西，与市区相距一百多公里。市区没有机场，火车通往通化与长春。初来的人最容易犯的错，是把白山当作长白山的门户，而山区归省里的管委会，市区离山有两三个小时。",
     layout:
       "白山市区在浑江河谷里，是行政和交通中心，本身景点不多。抚松县在东面约100公里，长白山西坡景区在抚松东部（松江河镇是西坡的住宿地，机场在其附近），锦江大峡谷、王池、高山花园都在西坡；长白县在东南，南坡景区和望天鹅在那里；露水河国家森林公园在抚松北部；临江市在市区南面约60公里的鸭绿江边。长春在西北约300公里。",
     gettingAround:
@@ -11026,6 +11872,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ngari: {
     identity:
       "阿里是西藏自治区最西部的地区，行政中心狮泉河镇海拔约4300米，全地区常住人口约12.3万（2020年普查），平均海拔4500米以上，是世界上人口密度最低、海拔最高的地区之一。普兰县的冈仁波齐（海拔6638米）是多个宗教共同的神山，山下的玛旁雍错是圣湖；札达县有十世纪建立的古格王国的遗址和大片土林；日土县有班公湖。从拉萨到狮泉河约1600公里，是西藏最远的旅程。",
+    // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 阿里地区（西藏所辖地区，非地级市；7 县；约 33.7 万 km²；2020 普查 12.3 万，密度 0.3 人/km²；行署驻噶尔县狮泉河镇海拔约 4,300 m；冈仁波齐/玛旁雍措在普兰县约 300 km；古格在札达县；昆莎机场；新藏公路；西藏旅行许可）
+    howItWorks:
+      "阿里不是一座城，而是西藏自治区所辖的一个地区，下辖 7 个县，面积约 34 万平方公里，占西藏的四分之一以上，2020 年人口约 12 万，每平方公里不到一个人。行署驻在噶尔县的狮泉河镇，海拔约 4,300 米，是这片高原上唯一称得上城镇的地方，昆莎机场在镇外几十公里；冈仁波齐与玛旁雍措在南面的普兰县，离狮泉河约 300 公里，古格王国遗址在札达县。外国游客进入西藏须持西藏旅行许可并随有资质旅行社出行。初来的人最容易犯的错，是把“阿里”当作一个地名去找，而它是一片比德国还大的地区，狮泉河只是它的一个点。",
     layout:
       "狮泉河镇在噶尔县的河谷里，是阿里唯一的城镇，昆莎机场在镇西南约45公里。冈仁波齐和玛旁雍错在东南约300公里的普兰县（塔尔钦是转山的起点，普兰县城在南面）；札达在西南约250公里（古格王国遗址、托林寺、土林）；班公湖在西北约130公里的日土县。往东沿新藏公路经改则、措勤可到拉萨，往北经界山达坂进入新疆。",
     gettingAround:
