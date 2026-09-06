@@ -4562,6 +4562,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   granada: {
     identity:
       "格拉纳达在安达卢西亚，内华达山脉脚下，以阿尔罕布拉宫闻名——这是伊比利亚半岛保存最完好的伊斯兰王朝宫殿建筑群，1492年这里是摩尔人在西班牙的最后据点。加勒比岛国格林纳达（Grenada）的名字即源自“格拉纳达”，1498年哥伦布以此为其命名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Granada (municipality ~88 km²; 233,532 2024; metro ~573,000; province capital, Andalusia; 738 m; Alhambra UNESCO 1984, Albaicín; Sacromonte; Sierra Nevada ~30 km; university ~47,000; metro 2017; airport ~15 km; 1492)
+    howItWorks:
+      "格拉纳达是安达卢西亚格拉纳达省的省会，由民选的市政厅治理，市域约 88 平方公里，2024 年人口约 23 万，都会区约 57 万；自治区管医疗与教育，市政府管规划与地方服务。城市建在海拔 738 米的山脚，四条河在此汇合：阿尔罕布拉宫在东面的山上，1984 年与对面的阿尔拜辛区一起列入世界遗产，萨克罗蒙特的洞穴在山谷里，大教堂与市中心在平地上，1492 年最后的纳斯里德王国在这里终结；约 4.7 万学生让它成为一座大学城，轻轨 2017 年通车，机场在西面 15 公里，内华达山的雪场在东南 30 公里，酒吧的小吃免费。初来的人最容易犯的错，是把格拉纳达当作一座宫殿，而宫殿在山上，城在山下，两者之间要爬坡。",
     layout:
       "阿尔罕布拉宫建在城市东侧的一座山丘上，俯瞰全城；阿尔拜辛区是老城西北一片保留摩尔风格窄巷的白墙街区，与阿尔罕布拉宫隔一条河谷相望；市中心大教堂周边是主要商业区。",
     gettingAround:
@@ -4577,6 +4580,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   malaga: {
     identity:
       "马拉加是安达卢西亚地中海沿岸的港口城市，是“太阳海岸”（Costa del Sol）的门户，也是画家毕加索的出生地。城市历史可追溯至腓尼基时代，是伊比利亚半岛最古老的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Málaga (municipality ~398 km²; ~590,000 2024, sixth in Spain; province capital; Costa del Sol with Torremolinos/Marbella separate; Alcazaba/Gibralfaro; Picasso, Pompidou; airport third busiest; cruise port; AVE 2007 ~2.5 h Madrid; technology park 1992)
+    howItWorks:
+      "马拉加是安达卢西亚马拉加省的省会，西班牙第六大城市，由民选的市政厅治理，市域约 398 平方公里，2024 年人口约 59 万；自治区管医疗与教育，市政府管规划与地方服务。城市围着港口生长：老城在阿尔卡萨巴城堡与大教堂之间，毕加索博物馆与蓬皮杜分馆在城里，一号码头是改造后的海滨，东面的马拉盖塔是市区的海滩；太阳海岸的度假地托雷莫利诺斯、马贝拉各是独立的市镇，机场是西班牙第三繁忙的，近郊铁路连着机场与海岸，高铁 2007 年通车，到马德里约两个半小时，1992 年建的科技园有近 3 万人在此工作。初来的人最容易犯的错，是把马拉加当作太阳海岸的一个度假村，而它是一座有大学、科技园与港口的省会，度假村在西面的别的市镇。",
     layout:
       "老城以毕加索博物馆和阿尔卡萨巴摩尔城堡为中心，希布拉法罗山城堡俯瞰全城和港口；马拉格塔海滩就在老城边缘，是少有的市中心步行可达的城市沙滩；蓬皮杜中心马拉加分馆等新美术馆近年在港口区落成。",
     gettingAround:
@@ -4592,6 +4598,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bilbao: {
     identity:
       "毕尔巴鄂是西班牙北部巴斯克自治区最大的城市，内维隆河穿城而过，历史上是工业和港口重镇，1997年古根海姆博物馆落成后，城市从传统工业城市转型为当代建筑与艺术地标，被称为“毕尔巴鄂效应”的起点。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bilbao (municipality 41.5 km²; 347,342 2024; metro ~1.04 million with Barakaldo/Getxo separate; Biscay capital; largest Basque city, government seat Vitoria-Gasteiz; charter 1300; Guggenheim 1997; Foster metro; Basque/Spanish; airport ~12 km)
+    howItWorks:
+      "毕尔巴鄂是比斯开省的省会，巴斯克自治区最大的城市，由民选的市政厅治理，市域只有约 42 平方公里，2024 年人口约 35 万，而沿河口的大毕尔巴鄂约 104 万人，巴拉卡尔多、赫乔各是独立的市镇；巴斯克政府在维多利亚，管医疗与教育，比斯开省有自己征税的权力。城市沿内维翁河的河口展开，1300 年建城的七条街老城在河的一侧，阿班多的商业区在另一侧，1997 年的古根海姆博物馆把废弃的码头区变成了新城，福斯特设计的地铁贯通河口两岸；巴斯克语与西班牙语并为官方语言，机场在北面 12 公里。初来的人最容易犯的错，是把毕尔巴鄂当作巴斯克的首府，而政府在维多利亚，毕尔巴鄂是它的经济中心。",
     layout:
       "老城（Casco Viejo）在内维隆河东岸，七条老街是历史商业区；河对岸的阿班多伊巴拉一带是原港口工业区改造成的现代滨河区，古根海姆博物馆的钛金属曲面建筑就矗立在这里；埃切瓦里亚广场周边是主要商业区。",
     gettingAround:
@@ -4607,6 +4616,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "santiago-de-compostela": {
     identity:
       "圣地亚哥-德孔波斯特拉是西班牙西北部加利西亚自治区首府，是天主教三大朝圣地之一“圣雅各之路”（Camino de Santiago）的终点，中世纪以来吸引欧洲各地的朝圣者步行数百公里前来。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santiago de Compostela (municipality 220 km²; ~100,000 2025; capital of Galicia (Xunta), though A Coruña and Vigo larger; old town UNESCO 1985; cathedral, end of the Camino, hundreds of thousands of pilgrims/yr; university 1495; Galician/Spanish; airport 12 km; ~1,800 mm rain)
+    howItWorks:
+      "圣地亚哥—德孔波斯特拉是加利西亚自治区的首府，自治区政府与议会在这里，管医疗与教育，但它不是最大的城市，拉科鲁尼亚与维戈都比它大；市镇由民选的市政厅治理，市域约 220 平方公里，2025 年人口约 10 万。老城 1985 年列入世界遗产，大教堂与奥布拉多伊罗广场是圣雅各之路的终点，每年数十万朝圣者走到这里，1495 年创办的大学让四分之一的市民是学生；加利西亚语与西班牙语并为官方语言，机场在东面 12 公里，火车到马德里约 3 小时，年降水约 1,800 毫米，雨是它的日常。初来的人最容易犯的错，是把圣地亚哥当作一座朝圣终点的小镇，而它是一个自治区的政治中心与大学城。",
     layout:
       "老城以圣地亚哥主教座堂（据传埋葬使徒圣雅各遗骸）为中心，石板小巷、修道院和罗马式—巴洛克风格建筑交织，整个老城1985年列入世界文化遗产；主教座堂前的奥夫拉多依罗广场是朝圣者步行数百公里后的终点标志。",
     gettingAround:
@@ -4622,6 +4634,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zaragoza: {
     identity:
       "萨拉戈萨是阿拉贡自治区首府，西班牙第五大城市，坐落在埃布罗河与其支流的交汇处，自罗马时代起就是埃布罗盆地的核心城市，也是通往比利牛斯山和北部沿海的交通枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zaragoza (municipality 974 km²; ~699,000 2024, among the five largest in Spain, ~half of Aragon; Aragon capital (Cortes); Ebro; Basílica del Pilar; Aljafería; Caesaraugusta; Expo 2008; tram; AVE Madrid ~75 min/Barcelona ~90 min; Opel 1982; Cierzo)
+    howItWorks:
+      "萨拉戈萨是阿拉贡自治区的首府，自治区议会与政府在这里，管医疗与教育；市镇由民选的市政厅治理，市域约 974 平方公里，2024 年人口约 70 万，是西班牙人口最多的五座城市之一，占了阿拉贡的一半。城市在埃布罗河的南岸，皮拉尔圣母大教堂与罗马时期的凯撒奥古斯塔遗址在老城，阿尔哈费里亚宫在城西，2008 年世博会的场地在河湾里，一条有轨电车线穿过市区，高铁到马德里约 75 分钟、到巴塞罗那约 90 分钟，欧宝工厂与物流园区是它的产业，冬天的“西尔索”风从西北吹来。初来的人最容易犯的错，是把萨拉戈萨当作马德里与巴塞罗那之间的过路站，而它是西班牙第五大城市，阿拉贡一半的人住在这里。",
     layout:
       "老城以皮拉尔圣母大教堂（巴洛克风格，濒临埃布罗河）和罗马时代城墙遗迹为中心，穆德哈尔风格建筑（融合伊斯兰装饰工艺的基督教建筑）是本地一大特色，2001年列入世界文化遗产。",
     gettingAround:
@@ -4637,6 +4652,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   palma: {
     identity:
       "帕尔马是巴利阿里群岛最大岛屿马略卡岛的首府，濒临帕尔马湾，背靠特拉蒙塔纳山脉，是地中海最受欢迎的度假目的地之一，也保留着深厚的历史城区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Palma (municipality 208.6 km²; 438,234 2024, ~half of Mallorca; capital of the Balearic Islands (parliament, government) and seat of the Consell de Mallorca; La Seu; Bellver; Playa de Palma in municipality; Catalan/Spanish; airport 8 km, 31 million passengers 2023; cruise port; Sóller train)
+    howItWorks:
+      "帕尔马是巴利阿里群岛自治区的首府，自治区议会与政府在这里，管医疗与教育，马略卡岛议会也在城里，管岛内的道路与社会服务；市镇由民选的市政厅治理，市域约 209 平方公里，2024 年人口约 44 万，占了马略卡岛的一半。大教堂在海湾边的老城顶上，贝尔维尔城堡在西面的山上，海滨大道沿海湾向西，帕尔马海滩的度假带在东面的市域内，加泰罗尼亚语与西班牙语并为官方语言；机场在东面 8 公里，2023 年旅客 3,100 万，是西班牙第三繁忙的，邮轮码头在港口，索列尔的老火车从市中心出发。初来的人最容易犯的错，是把帕尔马当作一个度假村，而它是一座 44 万人的首府，度假村在岛的四周。",
     layout:
       "老城以帕尔马主教座堂（哥特式，濒海而建）为中心，贝尔维尔城堡俯瞰全城；帕尔马湾沿岸是绵延的沙滩度假区；岛屿西北的特拉蒙塔纳山脉是徒步和骑行胜地，东岸则分布着众多岩洞和小海湾。",
     gettingAround:
@@ -4652,6 +4670,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "santa-cruz-de-tenerife": {
     identity:
       "圣克鲁斯-德特内里费是加那利群岛最大岛屿特内里费岛的首府，濒临大西洋，是通往泰德峰的门户城市。加那利群岛虽然靠近非洲西北沿海，但整体属西班牙领土，气候常年温和，是欧洲人的冬季度假热门地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santa Cruz de Tenerife (municipality ~150 km²; ~212,000 2025; urban ~538,000; co-capital of the Canaries alternating with Las Palmas; province capital; Cabildo de Tenerife; port; Auditorio; Anaga biosphere 2015, 82% of municipality natural; Las Teresitas; tram to La Laguna; Tenerife North 10 km, South 60 km; carnival)
+    howItWorks:
+      "圣克鲁斯—德特内里费是加那利群岛自治区的两个首府之一，与拉斯帕尔马斯轮流承担自治区政府的所在地，也是同名省的省会与特内里费岛议会的所在地——岛议会管岛内的道路、水与社会服务；市镇由民选的市政厅治理，市域约 150 平方公里，2025 年人口约 21 万，城区约 54 万。城市围着港口生长，西班牙广场与卡拉特拉瓦的音乐厅在海边，有轨电车通向内陆的拉拉古纳，拉斯特雷西塔斯海滩在东北，阿纳加山脉占了市域的大半，是生物圈保护区；北部机场在 10 公里外，南部机场与度假区在南面 60 公里，二月的狂欢节是世界上最大的之一。初来的人最容易犯的错，是把圣克鲁斯当作度假地，而度假区在岛的南端，这里是岛民的省会与港口。",
     layout:
       "市中心沿海湾展开，西班牙广场是城市地标；从市区向内陆驱车约40分钟可到达泰德国家公园的入口，海拔迅速攀升，沿途能看到从沿海亚热带植被到高山火山荒漠的植被带变化；岛屿北岸多云雾潮湿，南岸干燥晴朗，气候差异明显。",
     gettingAround:
@@ -4668,6 +4689,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "san-sebastian": {
     identity:
       "圣塞瓦斯蒂安（巴斯克语 Donostia）在西班牙北部比斯开湾岸的巴斯克地区，离法国边境约20公里，人口约18.8万（2024年）。贝壳形的拉孔查海滩被认为是欧洲最美的城市海滩之一，两端是乌尔古尔山和伊格尔多山；老城的小吃（pintxos）酒吧和城里密集的米其林餐厅让它成为世界美食之都之一。1953年创办的圣塞瓦斯蒂安国际电影节是欧洲重要的电影节，2016年它是欧洲文化之都；奇利达的雕塑《风之梳》立在海滨西端的礁石上。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): San Sebastián/Donostia (municipality ~61 km²; 188,487 2024; metro ~436,500; Gipuzkoa capital; La Concha; Parte Vieja pintxos; Zurriola surf; Urgull/Igueldo; film festival September; Michelin density; official name Donostia/San Sebastián; France ~20 km; ECoC 2016)
+    howItWorks:
+      "圣塞巴斯蒂安是吉普斯夸省的省会，官方名是双语的“多诺斯蒂亚/圣塞巴斯蒂安”，由民选的市政厅治理，市域约 61 平方公里，2024 年人口约 19 万，都会区约 44 万；巴斯克自治区管医疗与教育，市政府管规划与地方服务。城市围着贝壳湾展开：老城在乌尔古尔山脚，小吃酒吧挤在几条街里，孔查海滩沿湾弯成弧线，伊格尔多山在湾的另一端，乌鲁梅亚河对岸的格罗斯区有祖里奥拉冲浪滩；九月的电影节与密集的米其林餐厅是它的名片，法国边境在东面约 20 公里，机场在边境的翁达里维亚，毕尔巴鄂在西面 100 公里。初来的人最容易犯的错，是把圣塞巴斯蒂安当作一处海滩，而它是一座省会，海滩只是它面朝的那一面。",
     layout:
       "城市围着拉孔查湾展开：老城在乌尔古尔山脚下的港口边，宪法广场是中心，小吃酒吧密集；十九世纪的“中心区”在老城南面，格罗斯区在乌鲁梅亚河对岸，有冲浪的苏里奥拉海滩和库尔萨尔会议中心；拉孔查海滩和翁达雷塔海滩沿湾向西到伊格尔多山（缆车、老游乐园），风之梳在最西端。火车站在河东岸，机场在东面约20公里的翁达里维亚。",
     gettingAround:
@@ -4682,6 +4706,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   toledo: {
     identity:
       "托莱多在马德里以南约70公里的塔霍河大河湾里，建在陡峭的岩石上，人口约8.7万（2025年），是卡斯蒂利亚-拉曼恰自治区的首府。它是西哥特王国的都城、1085年后卡斯蒂利亚王国的重镇，中世纪基督徒、穆斯林和犹太人在此共存，被称为“三种文化之城”；主教座堂（1226–1493年）、阿尔卡萨尔堡、圣玛丽亚·拉·布兰卡犹太会堂（欧洲现存最古老的犹太会堂建筑之一）、圣多梅教堂里埃尔·格列柯的《奥尔加斯伯爵的葬礼》是它的名片，1986年整座老城列入世界遗产。托莱多钢剑和杏仁糖是传统特产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Toledo (municipality 232 km²; ~86,500 2024; capital of Castilla–La Mancha (Cortes) and Toledo province; old city on a hill in a Tagus bend UNESCO 1986; cathedral, Alcázar; three cultures; escalators; AVE ~30 min from Madrid 70 km; new town Santa María de Benquerencia)
+    howItWorks:
+      "托莱多是卡斯蒂利亚—拉曼恰自治区的首府，自治区议会在这里，管医疗与教育，也是托莱多省的省会；市镇由民选的市政厅治理，市域约 232 平方公里，2024 年人口约 8.7 万。老城建在塔霍河环绕的一座山丘上，城墙外的自动扶梯把人送上去，1986 年整座老城列入世界遗产，大教堂、阿尔卡萨堡与犹太会堂挤在陡巷里，“三种文化之城”指的是中世纪基督徒、穆斯林与犹太人在此共处；1561 年腓力二世把宫廷迁往马德里后它衰落了四百年，新城在河对岸的工业区，高铁到马德里约 30 分钟，大多数人当天往返。初来的人最容易犯的错，是把托莱多当作马德里的郊游地，而它是一个自治区的首府，老城之外还有一座 8 万人的现代城。",
     layout:
       "老城在被塔霍河三面环绕的山丘上，街道狭窄陡峭：索科多韦尔广场是入口和中心，阿尔卡萨尔在东侧最高处，主教座堂在中心偏南，圣多梅教堂、犹太区（两座犹太会堂、埃尔·格列柯博物馆）和圣胡安修道院在西南坡上。老城靠桥连接两岸：阿尔坎塔拉桥在东、圣马丁桥在西。河对岸南面的环城公路上有“河谷观景台”，可看老城全景。火车站在河东岸的新城，离老城约20分钟步行（有自动扶梯上山）。",
     gettingAround:
@@ -4696,6 +4723,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cordoba: {
     identity:
       "科尔多瓦在安达卢西亚的瓜达尔基维尔河畔，人口约32.5万（2024年）。十世纪它是后倭马亚王朝哈里发国的都城，人口可能达数十万，是当时欧洲最大最繁荣的城市之一；785年始建的大清真寺以数百根双层红白拱柱闻名，十六世纪在其中央建起主教座堂，成为今天的清真寺—主教座堂，1984年列入世界遗产（1994年扩展到整个老城）。城外西北约8公里的麦地那·阿萨哈拉哈里发宫城2018年也列入世界遗产。每年5月的庭院节（居民开放自家鲜花庭院）2012年列入人类非物质文化遗产。夏季是欧洲最热的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Córdoba (municipality 1,254 km², fourth-largest in Spain; ~325,000 2024; province capital, Andalusia; Mezquita-Cathedral UNESCO 1984, historic centre; Medina Azahara UNESCO 2018; Judería; Roman bridge; caliphate 10th c.; AVE Madrid ~1 h 45, Seville ~45 min; no airport; hottest summers)
+    howItWorks:
+      "科尔多瓦是安达卢西亚科尔多瓦省的省会，由民选的市政厅治理，市域约 1,254 平方公里，是西班牙面积第四大的市镇，大部分是山地与农田，2024 年人口约 32 万；自治区管医疗与教育，市政府管规划与地方服务。老城在瓜达尔基维尔河的北岸，清真寺—大教堂 1984 年列入世界遗产，犹太区的白墙小巷围着它，罗马桥跨过河，10 世纪这里是科尔多瓦哈里发国的都城，欧洲第二大的城市，麦地那·阿萨哈拉的宫城遗址在西面 8 公里，2018 年也列入遗产，五月的庭院节把私家院子向公众打开；高铁到马德里约 1 小时 45 分、到塞维利亚约 45 分钟，没有机场，七八月的平均高温 37 度是欧洲之最。初来的人最容易犯的错，是把科尔多瓦当作一座清真寺，而它是一座 32 万人的省会，夏天下午的街道空无一人。",
     layout:
       "老城在瓜达尔基维尔河北岸：清真寺—主教座堂在河边，罗马桥从它南面过河到卡拉奥拉塔，基督教君主城堡在清真寺西侧，犹太区（花巷、犹太会堂）在清真寺西北的一片白墙小巷里；老城向北延伸到滕迪利亚斯广场和科雷德拉广场。庭院节的庭院集中在圣巴西利奥区（清真寺西面）。火车站在老城北面约2公里，麦地那·阿萨哈拉在城西北约8公里。",
     gettingAround:
@@ -4710,6 +4740,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   salamanca: {
     identity:
       "萨拉曼卡在西班牙西北部卡斯蒂利亚高原的托尔梅斯河畔，人口约14.4万（2024年）。萨拉曼卡大学1218年创立，是西班牙最古老的大学、欧洲最古老的大学之一，十六世纪的“萨拉曼卡学派”影响深远；整座老城用当地金黄色的砂岩建成，日落时呈金色，1988年列入世界遗产。巴洛克式的马约尔广场（1729–1755年）被认为是西班牙最美的广场之一，新旧两座主教座堂相连，贝壳之家立面上的三百多个贝壳和大学正门上的小青蛙是游客必找的细节。萨拉曼卡是学习西班牙语的热门城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Salamanca (municipality 39.6 km²; 144,458 2024; province capital, Castile and León; old city UNESCO 1988; Plaza Mayor 1729–56; university 1218, oldest in Spain; two cathedrals; Tormes; 800 m; Spanish-language schools; Madrid ~210 km; Portugal ~80 km)
+    howItWorks:
+      "萨拉曼卡是卡斯蒂利亚—莱昂萨拉曼卡省的省会，由民选的市政厅治理，市域只有约 40 平方公里，2024 年人口约 14.4 万；自治区管医疗与教育，市政府管规划与地方服务。老城在托尔梅斯河北岸海拔 800 米的台地上，1988 年列入世界遗产，金色砂岩的建筑是它的底色：1218 年创办的大学是西班牙最老的，新旧两座大教堂并排，主广场是 18 世纪巴洛克的杰作，贝壳之家在大学街上；约 3 万学生与大量来学西班牙语的外国人让老城一年到头是年轻人，马德里在东面约 210 公里，葡萄牙边境在西面约 80 公里，没有正常运营的机场。初来的人最容易犯的错，是把萨拉曼卡当作一座只有大学的城，而它是省会，新城的居民区在老城四周铺开。",
     layout:
       "老城在托尔梅斯河北岸的坡地上，马约尔广场在中心偏北，向南沿鲁阿街到贝壳之家、克莱雷西亚教堂和大学，再往南是新旧主教座堂，主教座堂下方就是罗马桥。圣埃斯特万修道院在东南。火车站在老城东北约1.5公里，巴士站在西北。河南岸有看老城天际线的步道。",
     gettingAround:
@@ -4724,6 +4757,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   girona: {
     identity:
       "赫罗纳在加泰罗尼亚东北部四条河交汇处，巴塞罗那以北约100公里，人口约10.9万（2025年）。主教座堂的哥特式中殿宽约23米，是世界上最宽的哥特中殿；老城的犹太区（El Call）是欧洲保存最好的中世纪犹太街区之一，中世纪犹太学者纳赫曼尼德出生于此；沿奥尼亚尔河的彩色房屋、阿拉伯浴场和可以步行的城墙是老城的标志。《权力的游戏》曾在此取景。5月的“花之时”（Temps de Flors）用鲜花装点老城。赫罗纳是布拉瓦海岸和达利故乡菲格雷斯的门户，也是职业自行车手的训练基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Girona (municipality ~39 km²; ~106,000 2024; province capital, Catalonia; Barri Vell on the Onyar, coloured houses; cathedral vault 22.98 m; Call; walls; Costa Brava gateway, Lloret/Tossa separate; airport 12 km; AVE 37 min Barcelona 99 km; cycling hub; Catalan)
+    howItWorks:
+      "赫罗纳是加泰罗尼亚赫罗纳省的省会，由民选的市政厅治理，市域约 39 平方公里，2024 年人口约 10.6 万；自治区管医疗与教育，市政府管规划与地方服务。老城在奥尼亚尔河的东岸，河边的彩色房子是它的门面，大教堂的中殿是世界上最宽的哥特式石拱顶，犹太区“卡尔”是欧洲保存最完整的之一，城墙可以走一圈；新城在河的西岸，火车站也在那里，高铁到巴塞罗那约 37 分钟，机场在南面 12 公里，是廉价航空的基地，布拉瓦海岸的度假镇略雷特、托萨各是独立的市镇，加泰罗尼亚语是日常语言，职业车手把这里当作训练基地。初来的人最容易犯的错，是把赫罗纳当作布拉瓦海岸的一部分，而它在内陆，海滩在 40 公里外的别的市镇。",
     layout:
       "老城在奥尼亚尔河东岸的山坡上，河上的桥（埃菲尔设计的铁桥）通向新城；主教座堂在老城最高处，犹太区在主教座堂下方的坡上，阿拉伯浴场和圣佩雷修道院在北面，城墙步道沿老城东侧的高处从北走到南。新城在河西岸，独立广场是餐饮区，火车站（含 AVE）在新城西南约1公里。机场在西南约12公里，菲格雷斯在北面约40公里，布拉瓦海岸的海滩在东面约30–40公里。",
     gettingAround:
@@ -5115,6 +5151,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   chania: {
     identity:
       "哈尼亚是克里特岛西部的主要城市，人口约5万，威尼斯时期的老港口与建筑保存完好，常被认为是克里特岛最具风情的城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chania (municipality 351 km² after Kallikratis 2011; 111,375 2021; Chania regional unit capital, Crete; Venetian harbour, lighthouse 1864; Kastelli/Splantzia/Topanas; capital of Crete until 1971; airport 14 km Akrotiri; ferry from Souda to Piraeus; Samaria ~45 km)
+    howItWorks:
+      "哈尼亚是克里特岛哈尼亚地区单位的首府，2011 年的卡利克拉底改革后市镇扩到约 351 平方公里，2021 年人口约 11 万；市镇由民选的市长治理，克里特大区有民选的大区长，警察与学校归中央。老城围着威尼斯时期的港口，1864 年的灯塔在防波堤尽头，卡斯特利、斯普兰齐亚、托帕纳斯是老城的几片街区，1971 年以前这里是克里特的首府；新城在老城南面的平地上，机场在东面 14 公里的阿克罗蒂里半岛，苏达湾的港口有到比雷埃夫斯的夜船，萨马利亚峡谷在南面约 45 公里，巴洛斯与埃拉福尼西的海滩在西面六七十公里。初来的人最容易犯的错，是把威尼斯港当作哈尼亚，而它只是老城的一角，市镇一直伸到白山的山脚。",
     layout:
       "威尼斯老港是城市核心，环绕港口的彩色建筑、灯塔与清真寺是标志性景观；老城内街巷狭窄曲折，保留着威尼斯与奥斯曼时期的建筑风格；老城以西是当地居民生活区。",
     gettingAround:
@@ -5130,6 +5169,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "rhodes-town": {
     identity:
       "罗德城是罗德岛的首府，人口约5万，中世纪古城由医院骑士团于14至16世纪修筑城防，是欧洲保存最完好的中世纪城防城市之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rhodes city (seat of the municipality of Rhodes covering the whole island since 2011, ~1,400 km², ~125,000; city ~56,000 2021; capital of the South Aegean region and Dodecanese; Old Town UNESCO 1988, Knights 1309–1523; Mandraki; airport 14 km Paradisi; ferries Piraeus; Lindos ~50 km; Turkey ~18 km)
+    howItWorks:
+      "罗得市是罗得岛的主城，2011 年起整座岛是一个市镇，约 1,400 平方公里、12.5 万人，由民选的市长治理，市本身约 5.6 万人；它也是南爱琴海大区与十二群岛的首府，大区有民选的大区长，警察与学校归中央。中世纪的城墙围住老城，1309 至 1523 年间圣约翰骑士团在此建起骑士大街与大团长宫，1988 年列入世界遗产，曼德拉基港在城墙北面，据传巨像曾跨在港口上；新城与埃利海滩在老城以北，机场在西南 14 公里的帕拉迪西，林多斯在南面约 50 公里，土耳其海岸在对面约 18 公里，比雷埃夫斯的渡轮要十几个小时。初来的人最容易犯的错，是把老城当作罗得，而市镇是整座 80 公里长的岛，老城只是北端的一角。",
     layout:
       "中世纪古城被完整的城墙环绕，骑士团大街纵贯其中，两侧是骑士团时期的建筑；大团长宫殿位于古城最高点；新城区（曼德拉基港周边）是现代商业与港口区域。",
     gettingAround:
@@ -5145,6 +5187,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   santorini: {
     identity:
       "圣托里尼（锡拉岛）是基克拉泽斯群岛中最具标志性的岛屿之一，因公元前约1600年的火山喷发形成新月形的火山口地貌而闻名，费拉、伊亚等城镇建在高约300米的火口崖顶上。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Santorini/Thira (municipality ~90 km²; 15,480 2021; ~2 million visitors/yr; caldera from Minoan eruption ~1600 BC; Fira capital on the rim, Oia north, Kamari/Perissa black beaches east, Akrotiri; airport; Athinios port; cable car/donkeys from old port; wine)
+    howItWorks:
+      "圣托里尼在行政上是一个市镇，官方名锡拉，覆盖整个岛群约 90 平方公里，由民选的市长治理，2021 年常住人口约 1.5 万，每年游客约 200 万；南爱琴海大区有民选的大区长，警察与学校归中央。岛是一座火山口的边缘，约 3,600 年前的米诺斯大喷发留下了今天的悬崖：费拉是市镇的首府，在火山口的崖顶上，伊亚在北端，卡马里与佩里萨的黑沙滩在东岸的另一面，阿克罗蒂里的青铜时代遗址在南端；机场在东岸，渡轮码头阿西尼奥斯在崖下，老港靠缆车或驴上到费拉，水靠海水淡化，葡萄酒是老产业。初来的人最容易犯的错，是把火山口一侧的白房子当作整座岛，而岛的另一面是平坦的黑沙滩与葡萄园，居民多住在那边。",
     layout:
       "费拉是岛上的主要城镇与行政中心，沿火口崖分布着白墙蓝顶的传统基克拉泽斯建筑；伊亚位于岛屿西北角，以观赏日落闻名；岛屿东侧海岸相对平缓，分布着黑色、红色的火山沙滩。",
     gettingAround:
@@ -5160,6 +5205,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "corfu-town": {
     identity:
       "科孚城是科孚岛的首府，人口约3万，威尼斯式城防建筑群于1386年至1797年间陆续建成，2007年列入联合国教科文组织世界遗产。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Corfu city/Kerkyra (seat of Central Corfu municipality since 2019; island ~610 km², ~99,000; city ~24,000–32,000 2021; capital of the Ionian Islands region; Old Town UNESCO 2007, Venetian fortresses, Liston, Spianada; never Ottoman; cricket; airport 3 km; Achilleion ~10 km; ferries Igoumenitsa)
+    howItWorks:
+      "科孚城是科孚岛的主城，2019 年岛分成三个市镇后它是中央科孚市镇的所在地，由民选的市长治理，城本身约 3 万人，全岛约 10 万；它也是伊奥尼亚群岛大区的首府，大区有民选的大区长，警察与学校归中央。老城夹在两座威尼斯要塞之间的半岛上，2007 年列入世界遗产，利斯顿拱廊与斯皮亚纳达广场是它的中心，威尼斯、法国与英国统治的痕迹叠在一起，板球至今在广场上打，科孚是希腊唯一从未被奥斯曼统治的地方；机场在城南 3 公里，阿喀琉斯宫在南面约 10 公里，渡轮通往伊古迈尼察与意大利，阿尔巴尼亚海岸在对面几公里。初来的人最容易犯的错，是把科孚城当作科孚，而岛长 60 公里，度假区散在南北两端。",
     layout:
       "老城被两座威尼斯要塞（旧堡垒与新堡垒）环抱，中间是密集的老城街巷；利斯顿林荫大道仿照巴黎里沃利街风格建造，是城市地标之一；斯皮亚纳达广场是欧洲最大的广场之一，紧邻老城东侧。",
     gettingAround:
@@ -5175,6 +5223,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nafplio: {
     identity:
       "纳夫普利翁位于伯罗奔尼撒半岛东北部，人口约1.4万，1829至1834年曾是现代希腊独立后的第一个首都，是希腊保存最完好的新古典主义城镇之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nafplio (municipality ~390 km², ~33,600 2021, town ~14,500; Argolis capital; first capital of Greece 1829–1834; Palamidi; Bourtzi; Acronauplia; Venetian old town; Mycenae 25 km, Epidaurus 30 km; Athens ~140 km, 2 h; no airport)
+    howItWorks:
+      "纳夫普利翁是伯罗奔尼撒阿尔戈利斯地区单位的首府，市镇约 390 平方公里、2021 年约 3.4 万人，由民选的市长治理，镇本身约 1.5 万人；大区有民选的大区长，警察与学校归中央。1829 至 1834 年它是现代希腊的第一座首都，第一任国家元首卡波季斯特里亚斯在这里遇刺，之后首都迁往雅典。老城在阿克罗纳夫普利亚半岛的脚下，威尼斯时期的街巷与宪法广场是中心，帕拉米迪要塞在山上，999 级台阶上去，布尔齐堡在港中的小岛上；迈锡尼在北面 25 公里，埃皮达鲁斯在东面 30 公里，雅典在 140 公里外，约两小时，没有机场，周末雅典人涌来。初来的人最容易犯的错，是把纳夫普利翁当作一处度假地，而它是希腊的第一座首都，也是这一带的行政中心。",
     layout:
       "老城依山傍海，帕拉米迪要塞矗立在城市上方的山丘上，需登数百级台阶抵达；布尔齐堡垒是港湾中一座小岛上的威尼斯要塞；老城街巷保留着威尼斯与新古典主义时期的建筑风貌。",
     gettingAround:
@@ -5190,6 +5241,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ioannina: {
     identity:
       "约阿尼纳是伊庇鲁斯地区的中心城市，人口约7万，坐落在帕姆沃蒂斯湖畔，是希腊西北部品都斯山区的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ioannina (municipality ~403 km²; 113,978 2021, city 64,896; Epirus capital; 500 m; Lake Pamvotis with island; castle with mosques; silversmithing; university ~25,000; Ottoman 1430–1913; Zagori/Vikos ~40 km; Egnatia; airport)
+    howItWorks:
+      "约阿尼纳是伊庇鲁斯大区的首府，市镇约 403 平方公里、2021 年约 11.4 万人，由民选的市长治理，城本身约 6.5 万；大区有民选的大区长，警察与学校归中央。城市在海拔 500 米的帕姆沃提斯湖西岸，城堡在湖边的半岛上，里面是拜占庭与奥斯曼时期的建筑，湖中的小岛有六座修道院，靠渡船往来，1430 至 1913 年间这里是奥斯曼帝国的重要行政中心，银器是它的老手艺；1970 年创办的大学约 2.5 万学生，扎戈里的石头村与维科斯峡谷在北面约 40 公里，埃格纳提亚高速把它与塞萨洛尼基连起来，机场在城北。初来的人最容易犯的错，是把约阿尼纳当作去扎戈里的中转站，而它是希腊西北部的大学城与行政中心。",
     layout:
       "老城建在湖畔的一处岬角上，保留着奥斯曼时期的城堡与清真寺；湖中有一座小岛，岛上分布着多座修道院；新城区沿湖岸向外扩展，是行政与商业中心。",
     gettingAround:
@@ -5205,6 +5259,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalamata: {
     identity:
       "卡拉马塔是伯罗奔尼撒半岛南部的主要城市，人口约5.5万，坐落在迈锡尼湾畔、泰格特斯山脚下，以同名橄榄与橄榄油闻名。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalamata (municipality ~440 km²; 72,906 2021; Messenia capital, second city of the Peloponnese; Messenian Gulf; castle; 1986 earthquake rebuild; olives PDO; dance festival July; airport 10 km; Athens ~240 km motorway; Ancient Messene ~30 km; Mani gateway)
+    howItWorks:
+      "卡拉马塔是伯罗奔尼撒麦西尼亚地区单位的首府，半岛的第二大城市，市镇约 440 平方公里，2021 年人口约 7.3 万，由民选的市长治理；大区有民选的大区长，警察与学校归中央。城市在麦西尼亚湾的顶端，老城与城堡在内陆的山脚，海滨大道纳瓦里努沿着海湾向东，1986 年的地震毁了大半市区，之后重建；卡拉马塔橄榄是受保护的原产地名称，七月的国际舞蹈节是它的文化名片，机场在西面 10 公里，高速公路到雅典约 240 公里，古麦西尼在西北 30 公里，马尼半岛从这里向南。初来的人最容易犯的错，是把卡拉马塔当作一个橄榄的牌子，而它是一座有港口、大学校区与机场的地区首府。",
     layout:
       "城堡区位于老城制高点，俯瞰全城与海湾；滨海大道沿迈锡尼湾延伸，是市民休闲区域；老城中心保留有拜占庭教堂与新古典主义建筑。",
     gettingAround:
@@ -5220,6 +5277,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   volos: {
     identity:
       "沃洛斯是色萨利地区的主要港口城市，人口约8.6万，坐落在帕加西提库斯湾畔、皮利翁山脚下，是探索皮利翁半岛的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Volos (municipality ~387 km², ~140,000; municipal unit 85,803 2021; Magnesia capital, Thessaly; Pagasetic Gulf, third port of mainland Greece; Argonauts waterfront; tsipouradika; Pelion villages 20–40 km; ferries to Sporades; University of Thessaly; steel; 2023 storm Daniel)
+    howItWorks:
+      "沃洛斯是色萨利马格尼西亚地区单位的首府，市镇约 387 平方公里、约 14 万人，由民选的市长治理，城区约 8.6 万；大区有民选的大区长，警察与学校归中央。城市在帕加西提科斯湾的顶端、皮利翁山的脚下，是希腊大陆第三大港，阿尔戈英雄大道沿着海滨，齐普罗酒馆是它的日常，色萨利大学在城里，钢铁与水泥是它的工业；皮利翁山的村庄在东面 20 到 40 公里的山坡上，小火车从城郊开上山，渡轮从港口开往斯基亚索斯与斯科佩洛斯，2023 年的风暴“丹尼尔”淹了城区。初来的人最容易犯的错，是把沃洛斯当作去斯波拉泽斯群岛的码头，而它是一座有港口、大学与工业的地区首府，皮利翁的村庄在山上。",
     layout:
       "滨海大道沿港湾延伸，是城市的主要休闲区域；老城中心保留有新古典主义建筑；皮利翁山的传统石砌村落分布在城市东侧的山坡上。",
     gettingAround:
@@ -5236,6 +5296,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mykonos: {
     identity:
       "米科诺斯是基克拉泽斯群岛中最有名的岛屿之一，全岛人口约1.1万（2021年），大多住在西岸的米科诺斯镇（霍拉）。白墙蓝窗的迷宫小巷、山坡上十六世纪威尼斯人建的卡托米利风车、悬在海上的“小威尼斯”房屋和洁白的帕拉波尔蒂亚尼教堂是它的标志；1954年来到岛上的鹈鹕彼得罗斯成了几十年的吉祥物。米科诺斯以海滩俱乐部和夜生活著称，也是通往提洛岛（阿波罗诞生地、世界遗产）的出发点——提洛岛就在西南约2公里。夏季的梅尔特米北风让炎热干燥的夏天变得凉爽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mykonos (island municipality 85.5 km²; 10,704 2021; Cyclades, South Aegean; Chora with windmills, Little Venice; south beaches; Delos 2 km UNESCO; airport 4 km; new port Tourlos; ~1.5 million visitors; Island of the Winds)
+    howItWorks:
+      "米科诺斯在行政上是一个市镇，覆盖约 86 平方公里的整座岛，由民选的市长治理，2021 年常住人口约 1.1 万，每年游客约 150 万；南爱琴海大区有民选的大区长，警察与学校归中央。霍拉是岛的主镇，在西岸，风车与“小威尼斯”的临水房子是它的门面，白色的巷子是为挡风而设计的迷宫，岛上常年刮风，得名“风之岛”；天堂、超级天堂等海滩在南岸，靠公交与船往来，新港在北面 2 公里的图尔洛斯，机场在城南 4 公里，提洛岛的遗址在西面 2 公里的海上，是世界遗产。初来的人最容易犯的错，是把霍拉当作整座岛，而海滩在南岸，夜生活散在岛的各处，没有车或船哪里都到不了。",
     layout:
       "米科诺斯镇在岛西岸的海湾里：老港在北面，风车在镇南的坡上，小威尼斯就在风车下方的海边，帕拉波尔蒂亚尼教堂在老港西侧的卡斯特罗区，镇中的小巷（马托扬尼街）是商店和餐馆。新港（大型渡轮）在镇北约2公里的图尔洛斯。海滩沿南岸分布：奥尔诺斯、普萨鲁、普拉蒂斯亚洛斯、天堂海滩、超级天堂海滩；埃利亚海滩在东南。机场在镇东南约4公里。去提洛岛的船从老港出发。",
     gettingAround:
@@ -5250,6 +5313,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   naxos: {
     identity:
       "纳克索斯是基克拉泽斯群岛中最大、最肥沃的岛，面积约430平方公里，全岛人口约2.1万（2021年），岛都纳克索斯镇（霍拉）约9000人。港口边小岛上的波尔塔拉——公元前六世纪未完成的阿波罗神庙大门——是岛的标志，镇上山顶的卡斯特罗是十三世纪威尼斯人的城堡区；岛内的宙斯山（1001米）是基克拉泽斯最高峰，哈尔基、阿佩兰托斯等山村保留着大理石街道和拜占庭教堂，古代采石场留下未完成的库罗斯巨像。纳克索斯以土豆、格拉维拉奶酪、柑橘酒（kitron）和西岸的长沙滩著称，比米科诺斯、圣托里尼便宜安静得多。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Naxos (largest Cycladic island ~430 km²; 20,578 2021; Chora 8,897; municipality of Naxos and Lesser Cyclades; Portara; Venetian Kastro; Mount Zas 1,001 m; farming island — potatoes, cheese, marble; beaches Agios Prokopios/Plaka; ferries Piraeus 5+ h; small airport)
+    howItWorks:
+      "纳克索斯是基克拉泽斯群岛最大的岛，约 430 平方公里，在行政上是“纳克索斯与小基克拉泽斯”市镇，由民选的市长治理，2021 年人口约 2.1 万，霍拉约 8,900 人；南爱琴海大区有民选的大区长，警察与学校归中央。霍拉在西岸的港口边，波尔塔拉的神庙大门立在港口的小岛上，威尼斯人的城堡区在镇的高处；扎斯山 1,001 米，是群岛的最高峰，让岛有足够的水，土豆、奶酪、柑橘酒与大理石让它不靠旅游也能活，哈尔基、阿佩兰托斯的山村在内陆，海滩在西岸的圣普罗科皮奥斯与普拉卡，渡轮到比雷埃夫斯五个多小时，机场很小。初来的人最容易犯的错，是把纳克索斯当作另一个米科诺斯，而它是一座有农田、山村与大理石矿的岛，游客只占一角。",
     layout:
       "纳克索斯镇在岛西岸的港口边：波尔塔拉在港北的小岛上（有堤道相连），老市场区和卡斯特罗在港口后面的山坡上，港口大道是餐馆和渡轮码头。海滩从镇南沿西岸排开：圣乔治海滩紧邻镇子，圣普罗科皮奥斯、圣安娜、普拉卡再往南。哈尔基在岛中部约16公里，阿佩兰托斯在东北山区约28公里，宙斯山登山口在菲洛蒂村附近。机场在镇南约3公里。",
     gettingAround:
@@ -5264,6 +5330,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalabaka: {
     identity:
       "卡兰巴卡在希腊中部色萨利平原的西缘、品都斯山脚下，镇人口约8600，是迈泰奥拉的门户。迈泰奥拉是一片高达300多米的砂岩石柱群，十四世纪起东正教修士在柱顶建起修道院，鼎盛时有二十多座，如今仍有六座开放：大迈泰奥拉（十四世纪创建）、瓦尔拉姆、鲁萨努、圣尼古拉、圣斯特凡诺和圣三一；1988年迈泰奥拉作为自然与文化双重遗产列入世界遗产。修道院原本靠绳梯和吊篮上下，1920年代才凿出台阶。卡斯特拉基村紧贴岩柱脚下，是另一处住宿地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalabaka (seat of the municipality of Meteora; town 8,573 2021; Trikala regional unit, Thessaly; Meteora monasteries UNESCO 1988 on rock pillars directly above town, six active; Kastraki at the base; railway terminus from Athens ~4.5 h; Trikala ~20 km)
+    howItWorks:
+      "卡兰巴卡是色萨利特里卡拉地区单位的一座镇，2021 年人口约 8,600，是以梅泰奥拉命名的市镇的所在地，市镇由民选的市长治理，警察与学校归中央。镇子紧贴在梅泰奥拉的砂岩石柱脚下，六座仍在使用的修道院立在石柱顶上，1988 年列入世界遗产，从镇上的街道抬头就能看见，卡斯特拉基村在石柱更近的山脚，环路把各修道院连起来，步行或坐车上去；铁路从雅典开到这里终点，约四个半小时，特里卡拉在东面约 20 公里，品都斯山在西面。初来的人最容易犯的错，是把卡兰巴卡当作梅泰奥拉，而镇是镇、石柱是石柱，修道院各有自己的开放日，一天走不完。",
     layout:
       "卡兰巴卡镇在岩柱群南面的平地上，火车站和汽车站在镇南，主街向北通向岩石；卡斯特拉基村在西北约2公里，紧贴岩柱下。修道院分布在镇北的岩柱顶上：圣斯特凡诺和圣三一在东侧（离镇最近，圣斯特凡诺有桥可直接进入），鲁萨努在中间，瓦尔拉姆和大迈泰奥拉在西北最高处，圣尼古拉在卡斯特拉基上方；一条环路把它们连起来，约15公里。",
     gettingAround:
@@ -5295,6 +5364,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zakynthos: {
     identity:
       "扎金索斯（意大利语名扎金特）是伊奥尼亚群岛南部的岛屿，岛都扎金索斯镇人口约1万，全岛约4万。1953年的大地震几乎摧毁了全镇，战后按威尼斯风格重建，索洛莫斯广场以希腊国歌作者狄奥尼修斯·索洛莫斯命名，圣狄奥尼修斯教堂是岛的守护圣人教堂。西北海岸的纳瓦吉奥（沉船湾）——1980年搁浅的走私船“帕纳约蒂斯”号躺在白崖下的沙滩上——是希腊最著名的风景之一，2022年地震后因落石风险沙滩本身关闭，只能从崖顶观景台或船上远看；南岸的拉加纳斯湾是1999年设立的国家海洋公园，蠵龟在此产卵，夏季机场夜间禁飞以保护它们。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zakynthos town (seat of the island municipality; island ~406 km², ~40,000; municipal unit ~17,000, town ~9,800 2021; Ionian Islands region; rebuilt after 1953 earthquake; Solomos square; Bochali castle; Navagio ~30 km; Laganas turtles/marine park 8 km; airport 4 km; ferry Kyllini 1 h)
+    howItWorks:
+      "扎金索斯镇是扎金索斯岛的主镇，整座岛约 406 平方公里、4 万人，是一个市镇，由民选的市长治理，镇本身约 1 万人；伊奥尼亚群岛大区有民选的大区长，警察与学校归中央。1953 年的地震把威尼斯时期的镇子几乎夷平，今天的镇是按抗震标准重建的，索洛莫斯广场与海滨大道是它的中心，博哈利的城堡在镇上方的山上；沉船湾在西北约 30 公里的悬崖下，只能从海上看，拉加纳斯在南面 8 公里，是海龟保护区也是派对海滩，蓝洞在北端，机场在镇南 4 公里，渡轮到基利尼约一小时。初来的人最容易犯的错，是把沉船湾当作扎金索斯，而它在岛的另一头，镇上的生活与明信片上的悬崖毫不相干。",
     layout:
       "扎金索斯镇在岛东岸的港湾里，索洛莫斯广场在海边，圣狄奥尼修斯教堂在港南，博哈利城堡在镇西北的山上俯瞰全镇。机场在镇南约4公里。拉加纳斯湾和海龟海滩在岛南，拉加纳斯是最热闹的度假区；纳瓦吉奥在西北海岸（观景台从岛北的沃利梅斯方向到达，船从北端的圣尼古拉港或镇上出发）；蓝洞在岛最北端的斯基纳里角。基里岩洞和西岸的悬崖在西南。",
     gettingAround:
@@ -5834,6 +5906,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   haarlem: {
     identity:
       "哈勒姆是北荷兰省首府，都会区约16万人，位于阿姆斯特丹以西约20公里、荷兰沙丘海岸内侧，是荷兰历史最悠久的城市之一，17世纪曾是重要的纺织业和啤酒酿造中心，也是荷兰黄金时代画家弗兰斯·哈尔斯的家乡。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Haarlem (municipality 32 km²; ~163,000 2021; North Holland capital though Amsterdam larger; Grote Markt/St Bavo organ; Frans Hals Museum; Teylers oldest museum; Spaarne; Zandvoort 10 km separate; Amsterdam 20 km, train 15 min; mayor appointed by Crown)
+    howItWorks:
+      "哈勒姆是北荷兰省的省会，尽管阿姆斯特丹比它大得多；市镇约 32 平方公里，2021 年人口约 16 万，由民选的市议会治理，市长像荷兰所有市长一样由国王任命，警察归国家。老城围着大市场广场，圣巴福教堂的管风琴莫扎特弹过，弗兰斯·哈尔斯博物馆与荷兰最老的泰勒斯博物馆都在老城里，斯帕纳河穿城而过，1839 年荷兰第一条铁路从阿姆斯特丹通到这里，火车至今约 15 分钟；赞德福特的海滩在西面 10 公里，是另一个市镇，球茎花田在南面。初来的人最容易犯的错，是把哈勒姆当作阿姆斯特丹的郊区，而它是省会，有自己的老城与博物馆，历史比阿姆斯特丹还老。",
     layout:
       "哈勒姆老城围绕中心大广场（格罗特马克特）展开，圣巴弗大教堂是全城地标。老城保留大量17世纪山墙式建筑，斯帕尔讷河穿城而过。城西不远即是荷兰沙丘海岸的国家公园。",
     gettingAround:
@@ -5849,6 +5924,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   texel: {
     identity:
       "特塞尔岛是西弗里西亚群岛中面积最大、人口最多的一座，位于荷兰最北端海域，常住人口约1.4万，是荷兰境内一处独特的岛屿生态旅游目的地，岛上沙丘、滩涂、牧场和灯塔构成的景观与荷兰本土截然不同。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Texel (island municipality, land ~162 km²; ~13,800; largest Wadden island; Den Burg seat, De Koog resort, Oudeschild harbour; ferry from Den Helder 20 min; ~70% of economy tourism; sheep; cycling; Wadden Sea UNESCO 2009)
+    howItWorks:
+      "泰瑟尔是荷兰最大的瓦登海岛，也是一个市镇，陆地约 162 平方公里，人口约 1.4 万，由民选的市议会治理，市长由国王任命；瓦登海 2009 年列入世界遗产。岛上有七个村：登堡是市镇的所在地，在岛的中部，德科赫是西岸沙丘后的海滩度假村，奥德斯希尔德是东岸的渔港，渡轮从大陆的登海尔德开到南端的码头，约 20 分钟；西岸是 30 公里的沙滩与沙丘国家公园，东岸是圩田与羊，约七成的经济靠旅游，岛上靠自行车。初来的人最容易犯的错，是把泰瑟尔当作一个海滩村，而它是一座 24 公里长的岛，村子之间要骑半小时。",
     layout:
       "特塞尔岛狭长，北海一侧是连续的沙滩和沙丘，瓦登海一侧是潮间带滩涂，岛屿中部是牧场和小村镇。登堡是岛上最大的村镇和渡轮码头所在地，北端的埃尔哈斯特角有一座历史悠久的灯塔。",
     gettingAround:
@@ -5882,6 +5960,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "the-hague": {
     identity:
       "海牙是荷兰政府所在地、荷兰国王的官邸所在地，都会区约110万人，虽然不是法定首都（首都是阿姆斯特丹），却是荷兰实际的政治中心；同时也是国际法院、国际刑事法院等多个国际司法机构的所在地，被称为“国际法之都”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): The Hague (municipality ~98 km²; ~549,000 2021; third city; seat of government, States General, Supreme Court, monarch, ~200 international organisations incl. ICJ/ICC; not the capital; 8 stadsdelen; Scheveningen beach in municipality; RandstadRail; Rotterdam The Hague Airport; mayor appointed by Crown)
+    howItWorks:
+      "海牙是荷兰的政府所在地，却不是首都：议会、内阁、最高法院、国王的办公与住所都在这里，宪法上的首都是阿姆斯特丹。市镇约 98 平方公里，2021 年人口约 55 万，是荷兰第三大城市，由民选的市议会治理，市长由国王任命，市下分 8 个区。市中心围着议会所在的内庭，和平宫里是国际法院，国际刑事法院与约 200 个国际机构散在城里，让它自称“和平与正义之城”；斯海弗宁恩的海滩与码头在市域的北缘，是荷兰最大的海滨度假地，兰斯塔德铁路与鹿特丹的地铁相连，机场与鹿特丹共用。初来的人最容易犯的错，是把海牙当作荷兰的首都，而首都是阿姆斯特丹，海牙只是政府住的地方。",
     layout:
       "海牙市中心以内庭院（Binnenhof，荷兰议会所在地）为核心，周边是政府机构和使馆区。城西的席凡宁根是荷兰最大的海滨度假区，有连绵的沙滩和历史悠久的海滨栈桥。莫瑞泰斯皇家美术馆等重要博物馆集中在市中心。",
     gettingAround:
@@ -5897,6 +5978,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   delft: {
     identity:
       "代尔夫特在海牙和鹿特丹之间，都会区约10万人，是荷兰黄金时代画家维米尔的故乡，也是“代尔夫特蓝陶”（Delft Blue，一种蓝白釉彩瓷器）的发源地，代尔夫特理工大学是荷兰规模最大的理工院校之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Delft (municipality 24 km²; ~104,000; South Holland; Markt with Nieuwe Kerk (royal burials) and town hall; Oude Kerk; Vermeer; Delftware/Royal Delft; TU Delft ~26,500 students; 1654 explosion; between The Hague 10 km and Rotterdam 15 km; mayor appointed by Crown)
+    howItWorks:
+      "代尔夫特是南荷兰省的一座市镇，约 24 平方公里，人口约 10 万，由民选的市议会治理，市长由国王任命，警察归国家。老城在运河围成的一圈之内，市场广场两端是市政厅与新教堂，奥兰治家族从沉默者威廉起葬在新教堂里，老教堂在另一条运河边，维米尔在这里画了一辈子，皇家代尔夫特的蓝陶厂在城南，1654 年的火药库爆炸毁了半座城；代尔夫特理工大学约 2.6 万学生，校园在老城南面，海牙在北面 10 公里，鹿特丹在南面 15 公里，火车与有轨电车把三座城连成一片。初来的人最容易犯的错，是把代尔夫特当作一座蓝陶的博物馆小镇，而它是一座以理工大学为生的城，学生占了四分之一。",
     layout:
       "代尔夫特老城不大，运河纵横，老市场广场（旧教堂和新教堂分立两端）是核心区域。城南是代尔夫特理工大学校区，为这座历史小城注入年轻气息。",
     gettingAround:
@@ -5912,6 +5996,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   leiden: {
     identity:
       "莱顿在阿姆斯特丹和海牙之间，都会区约14万人，1575年建立的莱顿大学是荷兰最古老的大学，笛卡尔、惠更斯、格劳秀斯、斯宾诺莎等众多学者曾在此求学或任教，也是伦勃朗的出生地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Leiden (municipality ~23 km²; ~127,000; South Holland; university 1575, oldest in NL, ~35,000 students, 13 Nobel laureates; Pilgrims 1609–20; Rijksmuseum van Oudheden; Naturalis; Bio Science Park; Leiden Centraal; The Hague 20 km, Amsterdam 40 km; Katwijk beach separate; mayor appointed by Crown)
+    howItWorks:
+      "莱顿是南荷兰省的一座市镇，约 23 平方公里，人口约 13 万，由民选的市议会治理，市长由国王任命，警察归国家。1575 年创办的莱顿大学是荷兰最老的，约 3.5 万学生散在老城的运河之间，没有单独的校园，十三位诺贝尔奖得主出自这里，“发现之城”是它的自称；老城在旧莱茵河的两条河汊之间，城堡在中心的土丘上，国立古物博物馆与自然史博物馆在城里，清教徒先辈 1609 至 1620 年在此避难后去了美洲，城西的生物科学园是新的产业，莱顿中央站是荷兰最繁忙的换乘站之一，海牙在南面 20 公里，阿姆斯特丹在北面 40 公里，卡特韦克的海滩在西面 10 公里的另一个市镇。初来的人最容易犯的错，是在莱顿找大学校园，而大学就是老城本身。",
     layout:
       "莱顿老城运河环绕，市中心的城堡遗址高地（De Burcht）是俯瞰全城的制高点。莱顿大学的建筑和植物园（欧洲最古老的植物园之一）散布在老城各处，与市井生活融为一体。",
     gettingAround:
@@ -5945,6 +6032,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   maastricht: {
     identity:
       "马斯特里赫特是林堡省首府，都会区约12万人，位于荷兰最南端、马斯河畔，是荷兰最古老的城市之一，因扼守马斯河渡口自罗马时代起就是重要城镇。1992年《马斯特里赫特条约》在此签署，是欧盟成立的奠基性文件之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Maastricht (municipality ~60 km²; ~120,000 2021; Limburg capital; Meuse dividing Wyck (station) from the centre (Vrijthof, Markt); Sint Pietersberg; Treaty 1992; university 1976, international; Limburgish; Belgium 5 km, Aachen 30 km, Liège 30 km; airport at Beek; TEFAF; carnival)
+    howItWorks:
+      "马斯特里赫特是林堡省的省会，荷兰最南端的城市，市镇约 60 平方公里，2021 年人口约 12 万，由民选的市议会治理，市长由国王任命，警察归国家。默兹河把城市分成两岸：西岸是老城，弗莱特霍夫广场、圣塞尔瓦斯教堂与市场广场在那里，东岸的维克区有火车站，圣彼得山的洞穴在城南；1992 年欧盟条约在这里签署，1976 年创办的大学一半以上是外国学生，林堡方言是本地的语言，狂欢节是它一年的高潮，欧洲艺术博览会每年三月在此举办；比利时边境在 5 公里外，亚琛与列日各在 30 公里，机场在北面的贝克。初来的人最容易犯的错，是按荷兰的印象来想象马斯特里赫特，而它的口音、饮食与天主教传统更近比利时与德国，荷兰在这里只是国籍。",
     layout:
       "马斯特里赫特老城横跨马斯河两岸，圣瑟法斯桥连接两岸，是荷兰最古老的桥梁之一。老城保留大量中世纪城墙和教堂建筑，弗赖特霍夫广场是市中心核心。因地处荷、比、德三国交界一带，城市气质融合了荷兰、比利时和德国的建筑与饮食文化。",
     gettingAround:
@@ -5960,6 +6050,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   groningen: {
     identity:
       "格罗宁根是荷兰北部最大的城市，都会区约23万人，是格罗宁根省首府，也是格罗宁根大学（荷兰顶尖大学之一）所在地，因大学生占城市人口比例很高，被称为荷兰“最年轻的城市”之一。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Groningen (municipality ~198 km²; ~245,000 2025; province capital, largest city of the north; university 1614 + Hanze, students ~25%; 57% of commutes by bicycle, car-free centre; Martinitoren; Groninger Museum; Eelde airport; Amsterdam 180 km ~2 h; Gronings dialect)
+    howItWorks:
+      "格罗宁根是格罗宁根省的省会，荷兰北部最大的城市，市镇约 198 平方公里，2025 年人口约 24.5 万，由民选的市议会治理，市长由国王任命，警察归国家。1614 年创办的大学与汉斯应用科学大学让四分之一的市民是学生，是荷兰最年轻的城市；老城围着大市场广场，马蒂尼塔是坐标，格罗宁根博物馆在车站对面的运河上，市中心 1970 年代起禁止穿行的汽车，约六成的通勤靠自行车，是世界上骑车比例最高的城市之一；阿姆斯特丹在西南 180 公里，火车约两小时，机场在南面的埃尔德，格罗宁根方言仍在乡下使用。初来的人最容易犯的错，是把格罗宁根当作一座偏远的省城，而它是北部的首府，节奏与年龄都是荷兰最年轻的。",
     layout:
       "格罗宁根老城被环形运河环绕，标志性的马蒂尼塔（教堂钟塔）是全城最高点。大市场广场是市中心核心，周边分布着大学建筑、商店和咖啡馆，城市整体规模不大、适合步行和骑行探索。",
     gettingAround:
@@ -5975,6 +6068,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   zwolle: {
     identity:
       "兹沃勒是上艾瑟尔省首府，都会区约13万人，位于艾瑟尔河畔，中世纪曾是汉萨同盟（欧洲北部贸易城市联盟）的重要成员，老城至今保留完整的星形防御工事和城墙，是通往羊角村等上艾瑟尔省景点的门户城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zwolle (municipality ~119 km²; ~130,000; Overijssel capital; Hanseatic 1294; star-shaped old town within moat; Sassenpoort; Peperbus; Museum de Fundatie; rail junction; De Librije; ~half of trips cycled; Giethoorn ~30 km; Amsterdam ~1 h 10)
+    howItWorks:
+      "兹沃勒是上艾瑟尔省的省会，市镇约 119 平方公里，人口约 13 万，由民选的市议会治理，市长由国王任命，警察归国家。老城是一颗星形的堡垒，护城河至今环绕，萨森门与“胡椒瓶”教堂塔是它的地标，1294 年它加入汉萨同盟，15 世纪是它的黄金时代，方达蒂博物馆的椭圆屋顶是新的地标，三星餐厅利布里耶在老城里；它是荷兰第二繁忙的铁路枢纽，到阿姆斯特丹约一小时十分，一半的出行靠自行车，羊角村在东北约 30 公里。初来的人最容易犯的错，是把兹沃勒当作去羊角村的换乘站，而它是一座有护城河与汉萨历史的省会。",
     layout:
       "兹沃勒老城呈典型的星形防御工事格局，护城河环绕城墙一周，城内街道以圣米迦勒大教堂为中心呈放射状分布。老城规模不大，历史建筑保存完好，是荷兰保存最完整的中世纪城市格局之一。",
     gettingAround:
@@ -6008,6 +6104,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   arnhem: {
     identity:
       "阿纳姆是海尔德兰省的省会，在莱茵河（下莱茵）北岸，人口约16.2万（2021年）。1944年9月“市场花园行动”中英军空降兵在此争夺莱茵河桥，是二战著名的“遥远的桥”，约翰·弗罗斯特桥和奥斯特贝克的空降兵博物馆纪念这段历史。城北的荷兰露天博物馆收集了全国的老房子和风车，伯格斯动物园以生态馆出名，松斯贝克公园是城中的英式园林；北面的德霍赫费吕韦国家公园里有克勒勒-米勒博物馆（梵高作品第二大收藏）。阿纳姆是荷兰唯一有无轨电车的城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Arnhem (municipality ~102 km²; ~162,000; Gelderland capital; Rhine, John Frost Bridge (Market Garden 1944), Airborne Museum in Oosterbeek; Sonsbeek; Burgers' Zoo; Openluchtmuseum; Hoge Veluwe ~15 km; only trolleybus system in NL; Germany ~15 km; Nijmegen ~20 km)
+    howItWorks:
+      "阿纳姆是海尔德兰省的省会，市镇约 102 平方公里，人口约 16 万，由民选的市议会治理，市长由国王任命，警察归国家。城市在下莱茵河的北岸，1944 年“市场花园行动”的空降部队在这里的桥上苦战，重建的桥以约翰·弗罗斯特命名，空降博物馆在西面的奥斯特贝克；松斯贝克公园在市中心北侧，伯格斯动物园与露天博物馆在城北，霍赫费吕韦国家公园与克勒勒—米勒美术馆在西北约 15 公里，市内的无轨电车是荷兰唯一的，德国边境在东面约 15 公里，奈梅亨在南面 20 公里。初来的人最容易犯的错，是把阿纳姆当作一座战争纪念地，而它是一座绿地围绕、以时装学院闻名的省会。",
     layout:
       "市中心在莱茵河北岸的坡上，中央车站在西北，购物区在中间，约翰·弗罗斯特桥在市中心东南跨河；松斯贝克公园在市中心北面，露天博物馆和伯格斯动物园再往北约3公里。奥斯特贝克（空降兵博物馆、英军公墓）在西面约5公里。德霍赫费吕韦国家公园在北面约15公里（奥特洛入口），克勒勒-米勒博物馆在公园内。",
     gettingAround:
@@ -6022,6 +6121,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   giethoorn: {
     identity:
       "羊角村在荷兰上艾瑟尔省西北的湿地里，人口约2800，是荷兰最有名的水乡村落，被称为“北方威尼斯”：老村没有汽车路，一条运河串起茅草顶的农舍，176座木桥连接两岸，交通靠小船和“耳语船”（电动小艇）。它起源于中世纪的泥炭开采，挖出的水道和湖泊变成了今天的景观；村子紧邻韦里本—维登国家公园（荷兰最大的低地泥炭沼泽），冬天运河结冰时可以滑冰。2015年它被选入国际版大富翁游戏。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Giethoorn (village ~2,800 in Steenwijkerland municipality, Overijssel; 176 bridges; car-free old core, boats only; Weerribben-Wieden peat landscape; ~1 million visitors/yr; whisper boats; Zwolle ~30 km; no rail; independent municipality until 1973)
+    howItWorks:
+      "羊角村不是一座镇，而是上艾瑟尔省斯滕韦克兰市镇里的一个村，约 2,800 人，1973 年以前它有自己的市镇，如今由斯滕韦克兰的市议会管理，市长由国王任命。老村沿一条运河排开，茅草顶的农舍各在自己的小岛上，176 座木桥把它们连起来，老村的核心没有车道，只能走路、骑车或划船，泥炭开采留下的湖泊与湿地是韦里本—维登国家公园；每年约一百万游客涌入，电动的“低语船”是游览的方式，兹沃勒在南面约 30 公里，没有铁路，从斯滕韦克坐公交过来。初来的人最容易犯的错，是以为整个羊角村都没有车，而只有老村的核心是这样，村外的新区与停车场都在公路边。",
     layout:
       "村子沿一条南北向的主运河（Dorpsgracht）和平行的步行道（Binnenpad）展开，茅草农舍和小桥在运河两岸，博物馆和餐馆在村中段；南端通向博文维德湖。汽车停在村外的停车场。斯滕韦克在西北约5公里，是最近的火车站；兹沃勒在南面约35公里。",
     gettingAround:
@@ -6036,6 +6138,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   middelburg: {
     identity:
       "米德尔堡是泽兰省的省会，在瓦尔赫伦岛（今为半岛）的中央，人口约4.9万（2021年）。十七世纪它是荷兰东印度公司仅次于阿姆斯特丹的商会所在地，富商的宅邸和市政厅（十五世纪哥特式）见证了那段繁荣；修道院建筑群里的“长约翰”塔是城市的标志，十六、十七世纪这里的眼镜匠（利珀希、扬森）与望远镜和显微镜的发明相关。1940年5月17日轰炸毁掉了约三分之一的老城，战后按原样重建。费勒古港、东堡海滩和东斯海尔德风暴潮屏障（三角洲工程的核心）都在附近。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Middelburg (municipality ~53 km²; ~50,000; Zeeland capital; Walcheren; abbey/Lange Jan; town hall; ring canals; VOC chamber second to Amsterdam; 1940 bombing; Vlissingen 6 km separate; Domburg ~12 km; rail Rotterdam ~1 h 15; microscope/telescope claim)
+    howItWorks:
+      "米德尔堡是泽兰省的省会，在瓦尔赫伦岛上，市镇约 53 平方公里，人口约 5 万，由民选的市议会治理，市长由国王任命，警察归国家。老城被一圈运河围着，修道院与“长约翰”塔在中心，省政府就设在修道院里，哥特式的市政厅在市场广场上，17 世纪它是东印度公司仅次于阿姆斯特丹的第二大分部，望远镜与显微镜据传出自这里的眼镜匠，1940 年的轰炸毁了三分之一的老城，之后重建；弗利辛恩的港口在南面 6 公里，是另一个市镇，东堡的海滩在西面 12 公里，三角洲工程在岛的周围，火车到鹿特丹约一小时一刻。初来的人最容易犯的错，是把米德尔堡当作一座海边的镇，而它在岛的中央，海在几个市镇之外。",
     layout:
       "老城被运河和星形城墙围住，集市广场和市政厅在中心，修道院建筑群（长约翰塔、泽兰博物馆、省政府）在广场东侧；运河边的老仓库和商人宅邸沿旧港分布。火车站在老城南侧的运河对岸。费勒在东北约7公里，东堡和海滩在西北约15公里，东斯海尔德屏障在北面约25公里，弗利辛恩在南面约8公里。",
     gettingAround:
@@ -6050,6 +6155,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   alkmaar: {
     identity:
       "阿尔克马尔在北荷兰省阿姆斯特丹以北约40公里，人口约11.3万（2022年），以奶酪市场闻名：从4月的第一个周五到9月的第一个周五，每周五上午在称重楼前的广场上，穿白衣戴彩帽的搬运工用担架抬着奶酪、按几百年前的方式交易，这个传统可追溯到1365年获得称重权。1573年阿尔克马尔击退西班牙军队的围攻，是荷兰起义的转折点，“胜利从阿尔克马尔开始”成为俗语。老城有近400座保护建筑，运河环绕；西面约10公里是埃赫蒙德和贝亨的沙滩与沙丘。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alkmaar (municipality ~117 km²; ~113,000 2023; North Holland; cheese market Fridays April–September at the Waag 1582; 1573 siege; Grote Kerk; 399 monuments; Egmond/Bergen beaches ~8 km; Amsterdam 30 min train; AZ Alkmaar)
+    howItWorks:
+      "阿尔克马尔是北荷兰省的一座市镇，约 117 平方公里，2023 年人口约 11 万，由民选的市议会治理，市长由国王任命，警察归国家。老城被运河围着，1582 年的称重房前每年四到九月的星期五上午举行奶酪市场，是这座城最有名的场景，大教堂在城西，近四百座历史建筑散在街巷里，1573 年西班牙军队围城失败，“胜利从阿尔克马尔开始”成了荷兰独立战争的口号；埃赫蒙德与贝亨的海滩在西面约 8 公里，属于另一个市镇，火车到阿姆斯特丹约 30 分钟，AZ 是它的球队。初来的人最容易犯的错，是把阿尔克马尔当作一个只在星期五上午存在的奶酪市场，而它是一座 11 万人的城，市场只是一年里的几十个上午。",
     layout:
       "老城在运河环绕的椭圆形区域里：称重楼和奶酪市场在东侧的称重楼广场，圣劳伦斯大教堂在西端，购物街（Langestraat）连接两者，运河（Oudegracht 等）和老房子在城内。火车站在老城西北。埃赫蒙德海滩在西面约10公里，贝亨在西北，扎恩风车村在南面约25公里。",
     gettingAround:
@@ -6135,6 +6243,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   graz: {
     identity:
       "格拉茨是施泰尔马克州首府，奥地利第二大城市，人口约29万，坐落在穆尔河畔，老城1999年列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Graz (statutory city, Styria capital; 127.6 km²; ~308,000 2026; 17 districts; Mur; Schlossberg; old town UNESCO 1999 + Eggenberg 2010; Kunsthaus/Murinsel; 4 universities ~60,000 students; trams; airport; ECoC 2003)
+    howItWorks:
+      "格拉茨是施蒂利亚州的州府，奥地利第二大城市，一座“特许市”，市政府同时承担县级职能，市下分 17 个区，市域约 128 平方公里，2026 年人口约 31 万；州议会与州政府在城里，警察与学校归州。穆尔河把老城分成两岸：东岸是 1999 年列入世界遗产的老城，城堡山的钟楼在上面俯瞰，西岸是美术馆与河中的穆尔岛，埃根贝格宫在城西，2010 年也列入遗产；四所大学约 6 万学生让它成为一座大学城，有轨电车穿过市区，机场在城南，维也纳在东北约 200 公里。初来的人最容易犯的错，是把格拉茨当作维也纳的翻版，而它是奥地利南部自成一体的首府，日照比维也纳多，节奏也慢。",
     layout:
       "施洛斯山（城堡山）是城市中心的制高点，山顶钟楼是格拉茨的标志性建筑；老城街区保留着文艺复兴与巴洛克风格建筑；格拉茨现代艺术博物馆位于穆尔河畔，以未来主义建筑风格著称。",
     gettingAround:
@@ -6150,6 +6261,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   linz: {
     identity:
       "林茨是上奥地利州首府，奥地利第三大城市，人口约21万，坐落在多瑙河畔，是奥地利重要的工业与文化城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Linz (statutory city, Upper Austria capital; 96 km²; ~214,000 2024; metro ~823,500; Danube; Hauptplatz; Pöstlingberg; Ars Electronica; Lentos; voestalpine; ECoC 2009; UNESCO City of Media Arts 2014; trams; airport Hörsching; Vienna ~1.25 h)
+    howItWorks:
+      "林茨是上奥地利州的州府，奥地利第三大城市，一座“特许市”，市域约 96 平方公里，2024 年人口约 21 万，都会区约 82 万；州议会与州政府在城里，警察与学校归州。城市在多瑙河两岸，南岸的主广场与老城是中心，北岸的电子艺术中心与波斯特林山的朝圣教堂隔河相望，伏斯特钢铁厂在城东的河边，是这座城的工业根基；2009 年它是欧洲文化之都，2014 年成为联合国教科文组织媒体艺术之都，有轨电车穿过市区，机场在西面的赫尔兴，火车到维也纳约一小时一刻。初来的人最容易犯的错，是把林茨当作一座钢铁城，而它是奥地利最早转向数字艺术的城市，河两岸各是一种面貌。",
     layout:
       "老城广场是林茨的历史中心，巴洛克风格建筑环绕；林茨白教堂大教堂是奥地利最大的教堂之一；阿尔斯电子艺术中心位于多瑙河畔，是林茨作为“媒体艺术之都”的地标。",
     gettingAround:
@@ -6165,6 +6279,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   klagenfurt: {
     identity:
       "克拉根福是克恩顿州首府，人口约10万，坐落在沃尔特湖东端，是奥地利南部重要的湖区旅游城市。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Klagenfurt am Wörthersee (statutory city, Carinthia capital; ~120 km²; ~105,800 2025; Lindwurm/Neuer Platz; Renaissance old town; Wörthersee 4 km west; cultural centre of the Carinthian Slovenes; airport; Ljubljana 88 km)
+    howItWorks:
+      "克拉根福是克恩顿州的州府，一座“特许市”，市域约 120 平方公里，2025 年人口约 10.6 万；州议会与州政府在城里，警察与学校归州。老城是 16 世纪按文艺复兴的格网重建的，新广场上的龙泉是城市的标志，拱廊庭院散在街区里；沃尔特湖在城西 4 公里，一条运河把湖水引到老城边，湖滨浴场是夏天的中心，米尼蒙德的微缩公园在湖边；这里是克恩顿斯洛文尼亚人的文化中心，有自己的学校与媒体，机场在城北，卢布尔雅那在南面 88 公里。初来的人最容易犯的错，是以为克拉根福在湖边，而湖在城外 4 公里，老城本身是一座内陆的文艺复兴城。",
     layout:
       "老城中心的新广场以龙喷泉为地标；老城保留着文艺复兴风格建筑；米纳米湖公园沿沃尔特湖东岸展开，是市民休闲的核心区域。",
     gettingAround:
@@ -6180,6 +6297,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   villach: {
     identity:
       "菲拉赫是克恩顿州第二大城市，人口约6万，坐落在德拉瓦河畔，靠近意大利与斯洛文尼亚边境，是奥地利南部重要的交通枢纽。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Villach (statutory city, Carinthia; ~135 km²; ~65,700 2025, second in Carinthia; Drau/Gail; Hauptplatz; Warmbad thermal spa; Dobratsch; Lake Ossiach; Infineon; rail hub Tauern/Karawanken; Italy/Slovenia borders ~15–20 km; Fasching)
+    howItWorks:
+      "菲拉赫是克恩顿州的第二大城市，一座“特许市”，市域约 135 平方公里，从多布拉奇山坡一直到奥西阿赫湖，2025 年人口约 6.6 万；市政府管地方服务，警察与学校归州。老城在德劳河与盖尔河汇合处的南岸，主广场是它的中心，瓦姆巴德的温泉在城南，英飞凌的芯片厂是最大的雇主，菲拉赫火车站是陶恩线与卡拉万肯线交会的枢纽，意大利与斯洛文尼亚的边境各在一二十公里外，狂欢节是它一年的高潮。初来的人最容易犯的错，是把菲拉赫当作克拉根福的卫星城，而它是通往意大利与斯洛文尼亚的铁路门户，三国的日常在这里交汇。",
     layout:
       "老城中心的主广场保留着传统建筑风貌；德拉瓦河穿城而过，河畔是市民休闲区域；周边环绕着多座阿尔卑斯山南麓的湖泊。",
     gettingAround:
@@ -6195,6 +6315,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   hallstatt: {
     identity:
       "哈尔施塔特是上奥地利州萨尔茨卡默古特地区一座湖畔村落，人口仅约780人，依达赫斯坦山而建，1997年作为文化景观列入联合国教科文组织世界遗产名录。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hallstatt (municipality in Gmunden district, Upper Austria; ~740 2026; Hallstätter See under the Dachstein; UNESCO 1997 Hallstatt-Dachstein/Salzkammergut; oldest salt mine; up to 10,000–30,000 visitors/day 2020; station across the lake by boat; Salzburg ~75 km)
+    howItWorks:
+      "哈尔施塔特是上奥地利州格蒙登县的一个市镇，2026 年常住人口约 740，有自己的民选镇议会与镇长，警察与学校归州。村子挤在哈尔施塔特湖的西岸与达赫施泰因山的陡坡之间，只有一条沿湖的街与几层依山的房子，盐矿在村上方的山里，是世界上最老的仍在开采的盐矿，缆车上山，人骨屋在教堂旁，1997 年整片山湖列入世界遗产；火车站在湖对岸，要坐船过来，村里限制汽车进入，旺季每天涌进上万游客，是居民的十几倍，萨尔茨堡在西北约 75 公里。初来的人最容易犯的错，是把哈尔施塔特当作一座镇，而它是一个几百人的村，一天里大多数时候游客比居民多。",
     layout:
       "村落沿哈尔施塔特湖东岸狭窄的山坡而建，彩色房屋层叠分布；市集广场是村落的中心；盐矿缆车可从村内直达山上的盐矿参观区。",
     gettingAround:
@@ -6210,6 +6333,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "kitzbuhel-city": {
     identity:
       "基茨比厄尔是蒂罗尔州一座知名的阿尔卑斯山滑雪小镇，人口约8千，坐落在基茨比厄尔阿尔卑斯山间，以每年一月举办的高山滑雪世界杯“哈内考姆赛道”闻名国际。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kitzbühel (town in Tyrol, district seat; 58 km²; ~8,300; 762 m; walled centre; Hahnenkamm/Streif race January; Kitzbüheler Horn; rail Salzburg–Innsbruck; Innsbruck ~100 km)
+    howItWorks:
+      "基茨比厄尔是蒂罗尔州的一座镇与基茨比厄尔县的县治，市域约 58 平方公里，人口约 8,300，有民选的镇议会与镇长，警察与学校归州。镇子在海拔 762 米的谷底，1271 年建城的老城被城墙围着，彩绘的房子、奢侈品店与餐馆挤在两条主街上，无车；哈嫩卡姆山在西面，每年一月的斯特雷夫滑降赛是世界杯里最有名的一站，基茨比厄尔峰在东面，雪场与基希贝格相连，夏天有高尔夫与网球赛，火车站在萨尔茨堡—因斯布鲁克线上，因斯布鲁克在西面约 100 公里。初来的人最容易犯的错，是把基茨比厄尔当作一个雪场，而它是一座有七百多年城墙的镇，雪场只是它一月的名声。",
     layout:
       "老城中心保留着中世纪街道格局与彩色房屋，是欧洲保存较好的阿尔卑斯山地小镇之一；缆车站分布在小镇周边，直接连接滑雪场。",
     gettingAround:
@@ -6225,6 +6351,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bregenz: {
     identity:
       "布雷根茨是福拉尔贝格州首府，人口约3万，坐落在博登湖东岸，是奥地利最西端的城市，与瑞士、德国隔湖相望。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bregenz (Vorarlberg capital; 29.5 km²; ~29,600 2023; smaller than Dornbirn; Lake Constance; Bregenz Festival floating stage ~7,000 seats July–Aug; Pfänderbahn; Oberstadt; Landtag; Zurich airport ~120 km)
+    howItWorks:
+      "布雷根茨是福拉尔贝格州的州府，市域约 30 平方公里，2023 年人口约 3 万，比州内最大的城市多恩比恩还小；州议会与州政府在城里，市政府管地方服务，警察与学校归州。城市在博登湖的东岸，湖边的水上舞台每年七八月上演歌剧，能坐 7,000 人，是世界上最大的湖上舞台，普凡德山的缆车从湖边上山，上城是中世纪的老城，湖的对岸就是德国与瑞士；阿勒曼尼方言让这里的口音更像瑞士，最近的大机场在苏黎世，约 120 公里。初来的人最容易犯的错，是以为州府就是最大的城市，而福拉尔贝格的经济与人口重心在南面的多恩比恩。",
     layout:
       "老城建在山丘上，保留着中世纪城墙与街道；新城沿博登湖岸展开，湖上剧场是布雷根茨音乐节的标志性演出场地；普芬芬山缆车可登高俯瞰博登湖全景。",
     gettingAround:
@@ -6240,6 +6369,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "zell-am-see": {
     identity:
       "采尔湖畔采尔是萨尔茨堡州皮恩茨高地区一座湖畔小镇，人口约1万，坐落在采尔湖畔、基茨施泰因峰脚下，是阿尔卑斯山区兼具湖泊与雪山景观的度假地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zell am See (town in Salzburg state, district seat; 55 km²; ~9,900; Lake Zell; Schmittenhöhe 138 km pistes; Kaprun/Kitzsteinhorn 10 km separate municipality; Grossglockner ~30 km; rail 1875; Salzburg ~80 km)
+    howItWorks:
+      "采尔湖畔采尔是萨尔茨堡州的一座镇与采尔湖县的县治，市域约 55 平方公里，人口约 9,900，有民选的镇议会与镇长，警察与学校归州。镇子在采尔湖的西岸，1875 年铁路通车后成为贵族的避暑地，施米滕山的缆车从镇边上山，有 138 公里雪道，卡普伦在南面 10 公里，是另一个市镇，基茨施泰因峰的冰川雪场在那里，两地合称一个度假区，大格洛克纳山在南面约 30 公里，夏天海湾国家的游客把镇子填满，萨尔茨堡在北面约 80 公里。初来的人最容易犯的错，是把“采尔湖—卡普伦”当作一个镇，而它们是两个市镇，冰川在卡普伦，湖在采尔。",
     layout:
       "老城中心保留着中世纪街道格局，沿采尔湖西岸展开；缆车站连接小镇与基茨施泰因峰滑雪区（山顶常年积雪，可全年滑雪）。",
     gettingAround:
@@ -6256,6 +6388,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "sankt-polten": {
     identity:
       "圣珀尔滕是下奥地利州的州府，在维也纳以西约60公里的特赖森河畔，人口约6万（2025年）。它建在罗马城市埃利乌姆·凯提乌姆的遗址上，是奥地利最早获得城市权的城镇之一（1159年）；1986年下奥地利州议会决定把州府从维也纳迁来，1997年州政府正式迁入，因此老城的巴洛克街区旁有一片1990年代建成的州政府区，音塔（Klangturm）和节日剧院是新区的地标。它是维也纳到瓦豪河谷的中途站。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sankt Pölten (statutory city, Lower Austria capital since 1986, government moved 1997; 108 km²; ~59,800 2025; Traisen; Roman Aelium Cetium; Baroque old town; Landhaus/Klangturm; Westbahn Vienna ~25 min; charter 1159)
+    howItWorks:
+      "圣珀尔滕是下奥地利州的州府，1986 年州议会决定把首府从维也纳迁到这里，1997 年州政府搬入新建的政府区；它是一座“特许市”，市域约 108 平方公里，2025 年人口约 6 万。老城在特赖森河西岸，巴洛克的市政厅广场是中心，1159 年的城市特许状让它自称奥地利最老的城，罗马时期的遗址在老城之下；州政府区在河东岸，音塔是它的地标，火车站在西线铁路上，到维也纳约 25 分钟。初来的人最容易犯的错，是以为下奥地利州的首府在维也纳，而维也纳自 1922 年起是独立的州，下奥地利的政府在这座 6 万人的小城里。",
     layout:
       "巴洛克老城很紧凑：市政厅广场（方济各会教堂、市政厅）是中心，主教座堂在广场东北，步行街连接两者；州政府区（州议会、音塔、节日剧院、州立博物馆）在老城东南的特赖森河边。火车站在老城北面步行约10分钟。瓦豪河谷的梅尔克和克雷姆斯都在北面约30公里，利林费尔德修道院在南面约25公里。",
     gettingAround:
@@ -6270,6 +6405,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   krems: {
     identity:
       "克雷姆斯在多瑙河瓦豪河谷的东端，维也纳以西约70公里，人口约2.5万（2023年），是奥地利最古老的城镇之一（995年首见记载，城中发现过2.7万年前的儿童墓葬）。瓦豪河谷——从梅尔克到克雷姆斯约35公里的多瑙河段——以葡萄园梯田、杏树、修道院和古镇著称，2000年列入世界遗产；克雷姆斯是绿维特利纳和雷司令的重要产区，1480年的施泰纳门是老城的标志，“艺术之路”（Kunstmeile）有漫画博物馆和州立美术馆。河对岸山上是格特魏格修道院，上游约8公里是杜恩施泰因（狮心王理查曾被囚禁的城堡废墟）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Krems an der Donau (statutory city, Lower Austria; ~25,000; eastern gate of the Wachau UNESCO 2000; Steiner Tor 1480; Stein district; Danube University; Grüner Veltliner; Göttweig; Vienna ~70 km, ~1 h rail; Marillenschnaps)
+    howItWorks:
+      "克雷姆斯是下奥地利州的一座“特许市”，人口约 2.5 万，市政府同时承担县级职能，警察与学校归州。城市在克雷姆斯河注入多瑙河的地方，是瓦豪河谷的东门，河谷 2000 年列入世界遗产：老城的施泰因门建于 1480 年，施泰因区沿多瑙河北岸排开，艺术馆与多瑙大学在两者之间，葡萄园爬满城后的山坡，绿维特利纳白葡萄酒与杏子白兰地是它的产品，格特韦格修道院在河对岸的山上，杜恩施泰因与梅尔克在上游，游船从码头出发，火车到维也纳约一小时。初来的人最容易犯的错，是把克雷姆斯当作瓦豪的一个村，而它是河谷东端一座有大学与港口的城。",
     layout:
       "克雷姆斯老城在多瑙河北岸的坡上，施泰纳门在老城西端，步行街和市政厅广场在城内，艺术之路（州立美术馆、漫画博物馆）在老城西南靠河。施泰因（Stein）是与克雷姆斯相连的另一片老街区，在西面。火车站在老城南侧靠河。格特魏格修道院在河南岸的山上（约6公里），杜恩施泰因在上游约8公里，多瑙河自行车道沿河经过。",
     gettingAround:
@@ -6284,6 +6422,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "bad-ischl": {
     identity:
       "巴特伊舍尔在上奥地利的萨尔茨卡默古特地区，特劳恩河与伊舍尔河交汇处，人口约1.4万。十九世纪盐水疗养让它成为时髦的温泉小镇，1854年皇帝弗朗茨·约瑟夫一世的母亲把皇帝别墅作为结婚礼物送给他，此后近60年他每年夏天都在这里避暑，1914年7月28日对塞尔维亚的宣战书就在别墅里签署。作曲家莱哈尔在此居住，勃拉姆斯、布鲁克纳都来过；1832年创办的察乌纳糕点店是皇家御用。2024年巴特伊舍尔与萨尔茨卡默古特一起是欧洲文化之都，哈尔施塔特、沃尔夫冈湖都在附近。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bad Ischl (town in Gmunden district, Upper Austria; 163 km²; ~14,000; Salzkammergut centre; Kaiservilla 1854; Zauner 1832; Lehár villa; ECoC 2024 with Salzkammergut; Traun; Salzburg ~55 km; Hallstatt ~20 km)
+    howItWorks:
+      "巴特伊舍尔是上奥地利州格蒙登县的一座镇，市域约 163 平方公里，人口约 1.4 万，有民选的镇议会与镇长，警察与学校归州。它是萨尔茨卡默古特地区的中心：19 世纪初因盐水疗养成为时髦的温泉地，1854 年起皇帝弗朗茨·约瑟夫每年夏天住在城北的皇帝别墅，宫廷与作曲家随之而来，莱哈尔的别墅在河边，1832 年开业的曹纳咖啡馆至今在主街上；镇子在特劳恩河与伊舍尔河汇合处，2024 年它与整个地区一起是欧洲文化之都，萨尔茨堡在西面约 55 公里，哈尔施塔特在南面约 20 公里。初来的人最容易犯的错，是把巴特伊舍尔当作去哈尔施塔特的过路站，而它是这片湖区的历史中心与交通枢纽。",
     layout:
       "小镇在两河交汇的谷地里，步行街（Pfarrgasse）、察乌纳咖啡馆和教堂在特劳恩河东岸的中心，皇帝别墅和公园在河西岸的山脚，莱哈尔别墅在特劳恩河边。火车站在中心南侧。盐矿在镇东南的山里。哈尔施塔特在南面约20公里，沃尔夫冈湖在西面约10公里，格蒙登和特劳恩湖在北面约30公里。",
     gettingAround:
@@ -6298,6 +6439,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   eisenstadt: {
     identity:
       "艾森施塔特是奥地利最东部的布尔根兰州的州府，在莱塔山南麓，维也纳东南约50公里，人口约1.6万（2025年），是奥地利最小的州府。埃斯特哈齐家族的宫殿是城市的核心，作曲家海顿1761年起在这里为埃斯特哈齐亲王服务近三十年，他的故居是博物馆，遗骨安葬在山教堂；1732年建立的犹太区是历史上“七社区”之一，奥地利犹太博物馆就在其中。1925年布尔根兰并入奥地利后它成为州府。东面约10公里是新锡德尔湖（2001年世界遗产文化景观），周围是葡萄酒产区。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Eisenstadt (statutory city, Burgenland capital since 1925; 42.9 km²; ~16,100 2025; smallest state capital; Esterházy Palace; Haydn, Bergkirche tomb; Leitha hills; wine; Hungarian border ~12 km; Vienna ~50 km)
+    howItWorks:
+      "艾森施塔特是布尔根兰州的州府，奥地利最小的州府，一座“特许市”，市域约 43 平方公里，2025 年人口约 1.6 万；州议会与州政府在城里，警察与学校归州。这片土地 1921 年才从匈牙利划归奥地利，1925 年设为州府；埃斯特哈齐宫在老城的顶端，海顿在这里做了几十年宫廷乐师，山教堂里是他的墓，葡萄园在莱塔山的坡上，匈牙利边境在东面约 12 公里，维也纳在西北约 50 公里，克罗地亚族与匈牙利族是州里的少数民族。初来的人最容易犯的错，是把艾森施塔特当作维也纳的郊区小镇，而它是一个州的首府，有自己的宫廷、议会与葡萄酒。",
     layout:
       "老城很小：埃斯特哈齐宫在老城西端，宫前是主广场和步行街（Hauptstraße），海顿故居在步行街上，山教堂在宫殿西面的小山上，犹太区在宫殿北侧。火车站在老城东南。新锡德尔湖畔的鲁斯特（鹳巢和酒村）在东南约15公里，湖边的莫尔比施有夏季湖上轻歌剧节。",
     gettingAround:
@@ -6312,6 +6456,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "st-anton": {
     identity:
       "圣安东在蒂罗尔州西端的阿尔贝格山口下，海拔约1300米，常住人口约2400，是阿尔卑斯滑雪运动的发源地之一：1901年成立的阿尔贝格滑雪俱乐部和1921年汉内斯·施奈德的滑雪学校奠定了现代滑雪教学，1930年代这里的教练把滑雪带到了美国。阿尔贝格滑雪区（圣安东、莱希、聚尔斯等，2016年缆车全线连通）有94条缆车、340公里雪道，是奥地利最大的滑雪区，瓦卢加峰海拔2811米；2001年在此举办高山滑雪世锦赛。夏季是徒步和登山基地，阿尔贝格铁路和隧道让它在维也纳—苏黎世干线上。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short): St. Anton am Arlberg (municipality in Landeck district, Tyrol; 166 km²; ~2,400 2021; 1,304 m; Arlberg ski area 94 lifts, 340 km pistes; cradle of alpine skiing, instructors emigrated 1930s; Arlberg railway Zurich–Innsbruck; 2001 World Championships; Innsbruck ~100 km)
+    howItWorks:
+      "圣安东是蒂罗尔州兰德克县的一个市镇，市域约 166 平方公里，2021 年常住人口约 2,400，有民选的镇议会与镇长，警察与学校归州。村子在海拔 1,304 米的阿尔贝格山口下，是阿尔贝格雪区的核心，这片雪区与莱赫、楚尔斯、圣克里斯托夫共用一张雪票，94 部缆车、340 公里雪道，是奥地利最大的；1920 年代的滑雪学校从这里把高山滑雪教遍世界，1930 年代教练移民美国带去了这项运动，2001 年世锦赛在此举行，火车站在苏黎世—因斯布鲁克的阿尔贝格线上，因斯布鲁克在东面约 100 公里。初来的人最容易犯的错，是把圣安东当作一座村庄来预期，而它是冬天挤满游客、夏天几乎空城的雪场镇。",
     layout:
       "村子沿罗萨纳河谷东西展开，步行街是中心，加尔齐格缆车站在村西端，火车站在村南侧；圣克里斯托夫在阿尔贝格山口下方约5公里，莱希和聚尔斯在山口另一侧的福拉尔贝格州。雪道从村里的缆车直接上到加尔齐格、瓦卢加和伦德尔山。夏季步道从缆车上站出发。",
     gettingAround:
