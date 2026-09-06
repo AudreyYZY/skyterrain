@@ -65,6 +65,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   geelong: {
     identity:
       "吉朗在墨尔本西南约75公里的科里奥湾畔，都会区人口约27万，是维多利亚州第二大城市，也是澳式足球联赛（AFL）老牌球队吉朗猫队的主场所在。它曾是羊毛贸易和制造业重镇，如今是通往大洋路和贝拉林半岛的门户，很多人把它当作大洋路自驾的起点或中途落脚点，而不只是路过。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Geelong (City of Greater Geelong 1,329 km², ~283,000 2021; Corio Bay; Avalon airport; V/Line ~1 h; Torquay in Surf Coast Shire)
+    howItWorks:
+      "吉朗是维多利亚州的第二大城市，由大吉朗市议会管辖，辖区约 1,330 平方公里，2021 年人口约 28 万；议会管垃圾、公园与规划审批，铁路、警察与学校归州政府。市中心在科里奥湾的西岸，滨水区是它的门面，阿瓦隆机场在城北，V/Line 火车到墨尔本约一小时。初来的人最容易犯的错，是把吉朗当作大洋路的起点，而托基与冲浪海岸属于另一个郡议会，大洋路的风景从那里才开始。",
     layout:
       "市中心紧贴科里奥湾的东沿海滨，滨海步道（Waterfront）串起考宁厄姆码头、东海滩海水浴场和103根彩绘系船柱（Baywalk Bollards）。老城区街道方整，国家羊毛博物馆和一批19世纪石砌建筑在市中心步行范围内。往西南出城不远就是欧特威山脉和大洋路的起点托尔坎；往东是贝拉林半岛，昆斯克利夫等历史小镇和葡萄酒产区都在半岛上。",
     gettingAround:
@@ -134,6 +137,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cairns: {
     identity:
       "凯恩斯在昆士兰州最北部的热带地区，是一座小城（都会区约15万人），几乎完全围绕旅游运转。它是探访大堡礁北段和戴恩树雨林的基地——世界上少有的“雨林紧挨珊瑚礁”的地方。全年炎热，分旱季和雨季。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Cairns (Cairns Regional Council; ~169,000 2021; Trinity Inlet CBD, Esplanade lagoon, no city beach; northern beaches; airport 7th busiest; Port Douglas in Douglas Shire)
+    howItWorks:
+      "凯恩斯是昆士兰远北的中心城市，由凯恩斯区域议会管辖，2021 年人口约 17 万；议会管地方服务，警察、医院与学校归州政府。市中心在三一湾的泥滩边，没有海滩，滨海大道上的人工泻湖代替了它，北面的海滩区是一串郊区，机场在城北，大堡礁靠船出海。初来的人最容易犯的错，是以为凯恩斯市区有海滩，而海滩在北面的郊区，道格拉斯港与丹翠雨林属于另一个郡议会，在 60 公里外。",
     layout:
       "凯恩斯夹在珊瑚海和陡峭的雨林覆盖的山脉之间，平地很窄。市中心沿海滨步道展开（市区本身没有沙滩，有一个人工泻湖泳池）；往北是一串海滩郊区和道格拉斯港，往内陆上山是阿瑟顿高地，往海上出去就是大堡礁。",
     gettingAround:
@@ -239,6 +245,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   launceston: {
     identity:
       "朗塞斯顿在塔斯马尼亚北部，是该州第二大城市（约8.7万人），也是澳大利亚较早的内陆城市之一。它在三条河的汇合处，紧挨着一道叫卡塔拉克特峡谷（Cataract Gorge）的岩石峡谷。城市名取自英格兰康沃尔郡的朗塞斯顿。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Launceston (City of Launceston; ~91,000 urban 2021; head of the Tamar; Cataract Gorge; UNESCO City of Gastronomy 2021; Tamar Valley wine in West Tamar/George Town councils)
+    howItWorks:
+      "朗塞斯顿是塔斯马尼亚的第二大城市，由朗塞斯顿市议会管辖，2021 年城区人口约 9 万；议会管地方服务，警察与学校归州政府。市中心在塔玛河的源头，北埃斯克河与南埃斯克河在此汇合，卡塔拉特峡谷就在市中心几百米外，2021 年它被评为联合国教科文组织美食之都，霍巴特在南面约 200 公里。初来的人最容易犯的错，是把塔玛河谷的酒庄当作朗塞斯顿的一部分，而它们分属西塔玛与乔治镇两个议会。",
     layout:
       "市中心保留了大量维多利亚和爱德华时代的建筑，围绕几个广场展开，适合步行。塔马河从城边流过，往北是塔马河谷葡萄酒产区。卡塔拉克特峡谷在市区步行可达的范围内。",
     gettingAround:
@@ -254,6 +263,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "alice-springs": {
     identity:
       "爱丽斯泉（原住民阿兰特语 Mparntwe）在澳大利亚正中心、麦克唐奈山脉之间，约2.5万人，是“红色中心”最大的居民点和补给站，到最近的大城市都约1500公里。它是探访乌鲁鲁、卡塔丘塔、国王峡谷和麦克唐奈山脉的基地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Alice Springs (Alice Springs Town Council; ~24,900 2021; Todd River; MacDonnell Ranges; Arrernte/Mparntwe; Uluru ~450 km by road; Ghan)
+    howItWorks:
+      "爱丽斯泉是北领地的第三大聚落，由爱丽斯泉镇议会管辖，2021 年人口约 2.5 万；镇议会管地方服务，警察、医院与学校归领地政府。镇子建在多半干涸的托德河两岸，麦克唐奈山脉在南面，阿伦特人是这片土地的传统所有者，机场在镇南，甘号列车从这里通往达尔文与阿德莱德。初来的人最容易犯的错，是以为乌鲁鲁在爱丽斯泉附近，而它在西南约 450 公里的尤拉拉，要开五个小时。",
     layout:
       "小城被麦克唐奈山脉的一道缺口（Heavitree Gap）夹住，托德河（多数时候是干河床）穿城而过，市中心几个街区就能走完。四周立刻是红色的山脊和荒漠。乌鲁鲁其实在约450公里外、车程约5小时，不算“近郊”。",
     gettingAround:
@@ -269,6 +281,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   katherine: {
     identity:
       "凯瑟琳在北领地、达尔文以南约3小时车程，约6千人，是北领地“上端”仅次于达尔文的居民点，也是南北向斯图尔特公路和东西向路线的交叉点。它紧挨着尼特米卢克（凯瑟琳峡谷）国家公园，当地贾沃因人称这一带 Nitmiluk。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Katherine (Katherine Town Council; ~9,600 2021; Katherine River; Nitmiluk Gorge ~30 km; RAAF Tindal; Stuart Highway; Darwin 320 km)
+    howItWorks:
+      "凯瑟琳是北领地南部的枢纽镇，由凯瑟琳镇议会管辖，2021 年人口约 9,600；镇议会管地方服务，其余归领地政府。镇子在凯瑟琳河边、斯图尔特公路与萨凡纳之路的交叉口，达尔文在北面 320 公里，廷德尔空军基地在镇外；尼特米鲁克峡谷在东北约 30 公里的国家公园里，由贾沃因人与公园共管。初来的人最容易犯的错，是以为峡谷就在镇上，而它在半小时车程外的公园里，镇子本身是一个公路补给站。",
     layout:
       "镇子沿凯瑟琳河和公路展开，几条街就是全部。往东约30公里是尼特米卢克峡谷群，往北是伊迪丝瀑布，往西南是大片荒野和更远的西澳。",
     gettingAround:
@@ -284,6 +299,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   broome: {
     identity:
       "布鲁姆在西澳大利亚西北的金伯利海岸，约1.5万人，是一座偏远的海滨小城，以红色的岩石海岸、长沙滩和采珍珠的历史闻名，到珀斯约2200公里。它是从海路进入金伯利地区的门户。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Broome (Shire of Broome; 14,660 2021; Cable Beach vs Chinatown; pearling; Yawuru native title 2006; Perth ~2,050 km)
+    howItWorks:
+      "布鲁姆是金伯利地区最大的镇，由布鲁姆郡议会管辖，2021 年人口约 1.5 万；郡议会管地方服务，其余归州政府，珀斯在南面两千多公里。镇子分两片：老镇以“唐人街”为中心，是 1880 年代珍珠业留下的街区，日本、中国、马来潜水员的墓地记着那段历史；凯布尔海滩在西面几公里，是度假区。雅乌鲁人 2006 年获得这片土地的原住民所有权。初来的人最容易犯的错，是把布鲁姆当作凯布尔海滩，而镇中心在另一边的海湾上，两者之间要开车。",
     layout:
       "布鲁姆在一个半岛上：西侧是长约22公里的凯布尔海滩（面朝印度洋，看日落），东侧是罗巴克湾的红树林和大潮泥滩。“中国城”一带是老城中心，如今是餐饮和店铺区。城市尺度小。",
     gettingAround:
@@ -299,6 +317,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   exmouth: {
     identity:
       "埃克斯茅斯在西澳大利亚西北的一条半岛上，约2800人，是紧贴宁格罗礁的门户小镇——世界上少有能“从沙滩直接游到珊瑚礁上”的地方。镇名取自英国海军将领埃克斯茅斯子爵（英格兰德文郡也有同名小镇）。旁边是凯普山脉国家公园。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Exmouth (Shire of Exmouth; ~2,800 2021, ~6,000 in season; founded 1964/1967 for Harold E. Holt naval station; Ningaloo on the west side of the cape ~40 km; Learmonth airport 37 km)
+    howItWorks:
+      "埃克斯茅斯是西澳西北角的一座小镇，由埃克斯茅斯郡议会管辖，2021 年人口约 2,800，旅游季会涨到 6,000；郡议会管地方服务，其余归州政府。镇子 1964 年为美国海军通信站而建，在北西角的东岸；宁加洛礁与开普山脉国家公园在半岛的西岸，离镇上约 40 公里，2011 年列入世界遗产，鲸鲨季在三到七月；机场在南面 37 公里的利尔蒙斯。初来的人最容易犯的错，是以为珊瑚礁就在镇边，而它在半岛的另一侧，每天都要开车过去。",
     layout:
       "镇子在半岛东侧、埃克斯茅斯湾边，几条街的规模。半岛西侧是宁格罗礁和凯普山脉国家公园——珊瑚湾、蜥蜴岛、亚迪溪峡谷都在那一侧，从镇上开车约40分钟到一小时。半岛最南是勒尔蒙斯机场。",
     gettingAround:
@@ -314,6 +335,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "coober-pedy": {
     identity:
       "库伯佩迪在南澳大利亚北部的荒漠里，位于阿德莱德到爱丽斯泉的公路和铁路中途，约1800人，是世界上主要的蛋白石（opal）产区之一。因为地表太热，当地很多住宅、旅馆、教堂都挖在地下。名字来自原住民卡卡塔语 kupa piti。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Coober Pedy (District Council of Coober Pedy; 1,437 2021; opal 1915; dugouts; Stuart Highway; Adelaide 846 km; Umoona)
+    howItWorks:
+      "库伯佩迪是南澳内陆的一座欧泊矿镇，由库伯佩迪区议会管辖，2021 年人口约 1,400，阿德莱德在南面 846 公里；区议会管地方服务，其余归州政府。1915 年发现欧泊之后，镇子在七十多个矿区之间长出来，夏天超过 40 度的高温让一半居民住在挖进山坡的地下屋里，教堂、旅馆也在地下；斯图尔特公路 1987 年铺通后旅游成了第二产业。初来的人最容易犯的错，是在地面上找镇中心，而这座镇的大半在地下，地面只有矿堆和几条街。",
     layout:
       "地表上是一片布满采矿废石堆（像小火山锥）的褐色平地，几条主街上有加油站、商店和矿场入口。真正的“城市”有相当一部分在地下——恒温的地下旅馆和民居冬暖夏凉。周边荒漠常被用作科幻电影取景地。",
     gettingAround:
@@ -330,6 +354,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   wollongong: {
     identity:
       "卧龙岗（Wollongong）是新南威尔士州的第三大城市，在悉尼以南约85公里的伊拉瓦拉地区，城区人口约30.6万（2021年普查）。城市夹在塔斯曼海与伊拉瓦拉断崖之间一条狭长的海岸平原上，背后是陡直的砂岩崖壁，面前是一串海滩。它因煤矿和肯布拉港的钢铁工业而兴起（1834年正式设镇，1942年设市），今天是大学城和悉尼人的周末海滨去处。传统土地所有者是达拉瓦尔人（Dharawal）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Wollongong (City of Wollongong LGA ~220,000; metro 305,691 2021 incl. Shellharbour/Kiama councils; escarpment strip; Port Kembla; UOW; train ~1.5 h to Sydney)
+    howItWorks:
+      "卧龙岗是新南威尔士的第三大城市，市议会辖区 2021 年约 22 万人，加上南面的谢尔哈伯与凯阿马两个议会的都会区约 31 万；议会管地方服务，警察、学校与铁路归州政府。城市是伊拉瓦拉悬崖与海之间的一条窄带，市中心在海边，肯布拉港的钢铁厂在南面，卧龙岗大学在西面，火车到悉尼约一个半小时。初来的人最容易犯的错，是把整条伊拉瓦拉海岸当作卧龙岗，而谢尔哈伯、凯阿马各是一个市议会。",
     layout:
       "城市沿海岸南北展开，市中心和卧龙岗海港（灯塔、海滩）在中段，北面是一串海滩郊区，再往北的海崖公路上有2005年通车的海崖大桥（Sea Cliff Bridge），悬在悬崖外的海面上。西面的伊拉瓦拉断崖顶上是基拉山（Mount Keira，464米）观景台，能俯瞰整条海岸线。南面是肯布拉港的工业区和南天寺（Nan Tien Temple，1995年建，南半球规模最大的佛教寺院之一）。再往南约40公里是凯阿玛的喷水洞。",
     gettingAround:
@@ -344,6 +371,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "byron-bay": {
     identity:
       "拜伦湾（Byron Bay）是新南威尔士州最东北角的一座海滨小镇，常住人口只有约6300（2021年普查），每年却接待约200万游客。镇旁的拜伦角（Cape Byron）是澳大利亚大陆的最东端，1901年建成的灯塔立在岬角顶上。这里从二十世纪七十年代起因冲浪者和另类文化社区而出名，今天以海滩、冲浪、观鲸、瑜伽和音乐节著称。传统土地所有者是邦贾隆族（Bundjalung）的阿拉夸尔人（Arakwal），传统地名Cavvanbah意为“相聚之地”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Byron Bay (town ~6,300–10,900 2021 in Byron Shire ~35,000; easternmost point; Bundjalung; Ballina airport 30 km; ~2 million visitors/yr)
+    howItWorks:
+      "拜伦湾是新南威尔士北海岸的一座海滨小镇，2021 年常住人口约一万，属于拜伦郡议会（约 3.5 万人，郡府在马伦宾比）；郡议会管地方服务，其余归州政府。镇子在澳大利亚大陆最东端的拜伦角下，灯塔在岬角上，每年约 200 万游客涌入一个几千人的镇，房价是全国最高的一档；腹地的班加洛、马伦宾比是另一种生活，机场在南面 30 公里的巴利纳。初来的人最容易犯的错，是把拜伦湾当作一座城，而它是一个郡里的一个镇，郡政府不在这里。",
     layout:
       "小镇在拜伦角西侧的海湾边，主街是Jonson Street，从镇中心走到主海滩只要几分钟。拜伦角向东伸入太平洋，从镇上沿海岸步道到灯塔约4公里，沿途经过瓦特戈斯海滩（Wategos）和最东端观景点。镇北是塔洛湾（Tallow Beach）的长沙滩，镇南沿海是萨福克公园和布罗肯黑德。往内陆是起伏的丘陵和小镇（班加罗、尼姆宾）。机场在南面的巴利纳。",
     gettingAround:
@@ -358,6 +388,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "coffs-harbour": {
     identity:
       "科夫斯港（Coffs Harbour）在新南威尔士州中北海岸，悉尼以北约530公里、布里斯班以南约390公里，人口约7.9万（2021年普查）。这里是新南威尔士州唯一大分水岭直接抵达太平洋的地方，山地雨林和海岸在几公里内相接。它曾靠木材和香蕉种植业发展，1964年建成的“大香蕉”是澳大利亚最早的“大物件”地标之一；今天以海滩、海洋公园和通往冈瓦纳雨林世界遗产的门户地位为主。传统土地所有者是甘拜恩吉尔人（Gumbaynggirr）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Coffs Harbour (City of Coffs Harbour LGA ~78,800 2021; Gumbaynggirr; jetty; Big Banana; airport; Pacific Highway bypass under construction; Sydney 529 km)
+    howItWorks:
+      "科夫斯港是新南威尔士中北海岸的城市，由科夫斯港市议会管辖，2021 年人口约 7.9 万；议会管地方服务，其余归州政府。市中心在太平洋公路边的内陆一侧，港口与木栈桥在海边几公里外，麦特恩鸟岛靠防波堤相连，大香蕉在城北的公路上，机场在城南；太平洋公路的绕城段正在建设。这里是古姆拜恩吉尔人的土地。初来的人最容易犯的错，是以为市中心在海边，而市中心与港口之间隔着铁路与几公里的路。",
     layout:
       "市区在海岸平原上，港口和木结构的老码头在市中心东侧，防波堤连着海燕岛（Muttonbird Island）自然保护区，岛上是短尾鹱的繁殖地。往北沿海是帕克海滩和一串海滩郊区，大香蕉在市区北面的太平洋公路旁；孤岛海洋公园（Solitary Islands）从这里向北延伸约75公里。往西约60公里翻上大分水岭是多里戈国家公园（冈瓦纳雨林世界遗产的一部分）。机场在市区南约3公里。",
     gettingAround:
@@ -372,6 +405,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   katoomba: {
     identity:
       "卡通巴（Katoomba）是蓝山地区的主镇，在悉尼以西约100公里的大分水岭高地上，海拔约1017米，人口约8300（2021年普查）。蓝山因桉树释放的油雾在阳光下呈蓝色而得名，2000年以“大蓝山地区”列入世界自然遗产。卡通巴从十九世纪八十年代起就是悉尼人的山地度假地，镇南的回音角能看到三姐妹峰和贾米森谷的砂岩崖壁。地名来自原住民语言，意为“闪亮的落水”。传统土地所有者是贡东古拉人（Gundungurra）和达鲁格人（Darug）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Katoomba (8,268 2021; chief town of City of Blue Mountains ~80,000, a string of towns along highway/railway; Three Sisters/Echo Point 2 km; train ~2 h; Greater Blue Mountains WHA 2000)
+    howItWorks:
+      "卡通巴是蓝山市议会的首府镇，2021 年人口约 8,300；蓝山市不是一座城，而是沿大西部公路与铁路排成一串的二十多个镇，合计约 8 万人，议会管地方服务，国家公园归州政府。三姐妹峰的观景台回声角在镇南 2 公里，景观世界在旁边，火车到悉尼约两小时，大蓝山 2000 年列入世界遗产。初来的人最容易犯的错，是把卡通巴当作蓝山的入口，而蓝山是一片有几十个镇的山脊，每个镇都通向不同的峡谷。",
     layout:
       "小镇沿大西部公路和铁路展开，火车站在镇北的主街上，主街（Katoomba Street）向南下坡约2公里到回音角。回音角是三姐妹峰的正面观景台，向下有巨人阶梯通向谷底；景观世界（Scenic World）在回音角西面，有倾角52度的景观铁路（世界上最陡的客运铁路之一）、缆车和谷底雨林步道。东面相邻的鲁拉小镇有花园和悬崖步道，再往东是温特沃斯瀑布；西面是布莱克希思和格罗斯谷的观景台。",
     gettingAround:
@@ -386,6 +422,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   ballarat: {
     identity:
       "巴拉瑞特（Ballarat）在维多利亚州中部高地，墨尔本西北约110公里，人口约11.6万（2021年普查），是澳大利亚人口最多的内陆城市之一。1851年8月这里发现黄金，几年内涌入数万淘金者；1854年12月3日的尤里卡栅栏事件（矿工武装抗议采矿执照制度，22名矿工死亡）被视为澳大利亚民主史上的标志性事件。淘金时代留下了宽阔的林荫大道和维多利亚式建筑群，1970年开放的疏芬山（Sovereign Hill）露天博物馆复原了1850年代的金矿镇。传统土地所有者是瓦达乌龙人（Wadawurrung）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Ballarat (City of Ballarat; ~116,000 2021; 110 km from Melbourne; gold 1851; Eureka 1854; Sovereign Hill; Lydiard Street; Lake Wendouree)
+    howItWorks:
+      "巴拉瑞特是维多利亚州的内陆城市，由巴拉瑞特市议会管辖，2021 年人口约 11.6 万，墨尔本在东南 110 公里，火车约一个多小时；议会管地方服务，其余归州政府。1851 年的淘金热建起了这座城，利迪亚德街的维多利亚式石楼是那个年代的遗产，1854 年的尤里卡起义在城东，疏芬山是重建的淘金镇，温杜里湖在城西。初来的人最容易犯的错，是把巴拉瑞特当作一座主题公园的所在，而它是一座有大学与医院的区域首府，疏芬山只是城郊的一角。",
     layout:
       "市中心在斯特尔特街（Sturt Street）两侧，这条林荫大道从火车站向西延伸到温多利湖，两侧是十九世纪的银行、剧院和酒店；巴拉瑞特美术馆（1884年建，澳大利亚最早的地区美术馆）在市中心。温多利湖在城西，湖畔是植物园和1956年墨尔本奥运会的赛艇场地。疏芬山在城南约3公里的山坡上，尤里卡中心在城东。周围是起伏的农田和火山高原。",
     gettingAround:
@@ -400,6 +439,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bendigo: {
     identity:
       "本迪戈（Bendigo）在维多利亚州中部，墨尔本西北约150公里，人口约10.3万（2021年普查），是维多利亚州第四大城市。1851年10月本迪戈溪发现黄金，此后它成为世界上产金最多的金矿区之一（历史产量超过600吨），淘金时代的财富留下了大批维多利亚式公共建筑；华人矿工的到来则留下了澳大利亚最深厚的华人历史之一，金龙博物馆和每年复活节的舞龙游行延续至今。传统土地所有者是贾贾乌龙人（Dja Dja Wurrung）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bendigo (City of Greater Bendigo ~3,000 km²; urban ~103,000 2021; gold 1851; Sandhurst 1853–1891; Chinese heritage/Golden Dragon Museum; UNESCO City of Gastronomy 2019; 150 km from Melbourne)
+    howItWorks:
+      "本迪戈是维多利亚州中北部的城市，由大本迪戈市议会管辖，辖区约 3,000 平方公里，2021 年城区人口约 10 万，墨尔本在南面 150 公里；议会管地方服务，其余归州政府。1851 年淘金热建起了这座城，1853 至 1891 年间官方名为桑德赫斯特，市中心的圣心大教堂、三叶草旅馆是那个年代的建筑，19 世纪中叶约五分之一的居民是华人，金龙博物馆记着这段历史，2019 年它被评为联合国教科文组织美食之都。初来的人最容易犯的错，是把本迪戈当作一座采矿小镇，而它是维多利亚第四大城市，本迪戈银行的总部在此。",
     layout:
       "市中心在帕尔街（Pall Mall）一带，亚历山德拉喷泉、邮局大楼、莎玛剧院和罗莎琳德公园构成核心；圣心大教堂（1977年完工，澳大利亚最大的教区教堂之一）的尖塔在市中心西南是全城地标。中央德博拉金矿在市中心南面，游客可以下到地下矿道；金龙博物馆在市中心东侧的华人区（毗邻中式花园和关帝庙）。老式有轨电车沿主街往返。周围是矮丘和桉树林，本迪戈溪穿城。",
     gettingAround:
@@ -448,6 +490,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   toowoomba: {
     identity:
       "图文巴（Toowoomba）在昆士兰州东南部大分水岭的山脊上，布里斯班以西约130公里，海拔约690米，人口约14.2万（2021年普查），是澳大利亚人口第二多的内陆城市（仅次于堪培拉）。它以“花园之城”著称，每年9月的花卉嘉年华自1949年起举办；高地气候比昆士兰沿海凉爽，冬季有霜。2014年通车的韦尔坎普机场是澳大利亚几十年来第一座新建的大型民用机场。传统土地所有者是吉阿巴尔人（Giabal）和贾罗韦尔人（Jarowair）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Toowoomba (Toowoomba Region ~13,000 km²; urban 142,163 2021; crest of the Great Dividing Range ~700 m; Carnival of Flowers Sept; Wellcamp airport 2014; Brisbane 132 km)
+    howItWorks:
+      "图文巴是澳大利亚人口第二多的内陆城市，由图文巴区域议会管辖，辖区约 1.3 万平方公里，2021 年城区人口约 14 万，布里斯班在东面 132 公里；议会管地方服务，其余归州政府。城市建在大分水岭的山脊上，海拔约 700 米，大部分市区在分水岭以西，是达令草地的门户，159 座公园让它自称“花园城市”，每年九月的花卉节是它的名片，威尔坎普机场 2014 年由私人建成。初来的人最容易犯的错，是把图文巴当作布里斯班的郊区，而它在山脊上的另一侧，气候与平原完全不同。",
     layout:
       "城市建在山脊顶部的平台上，东缘是大分水岭的陡崖，野餐点（Picnic Point）等观景台俯瞰洛克耶谷和通往布里斯班的方向。市中心在鲁斯文街一带，女王公园和植物园在市中心东侧，是花卉嘉年华的主场地。西面缓坡向达令丘陵农业区展开。机场在市中心以西约16公里。周边有克罗斯山国家公园和布尼亚山（西北约150公里）。",
     gettingAround:
@@ -462,6 +507,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "airlie-beach": {
     identity:
       "埃尔利海滩（Airlie Beach）是昆士兰州中部海岸的一座度假小镇，常住人口只有约1300（2021年普查），却是圣灵群岛（Whitsundays）和大堡礁中段的出发港。海湾外散布着74座岛屿，其中圣灵岛上的白天堂海滩以近乎纯白的硅砂闻名，汉密尔顿岛是主要的度假岛。小镇本身以海滨人工泻湖、游艇码头和帆船、跳岛出海活动为核心。传统土地所有者是恩加罗人（Ngaro）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Airlie Beach (1,312 2021; Whitsunday Region, seat Proserpine; two marinas; lagoon; Whitsunday Coast airport 39 km at Proserpine)
+    howItWorks:
+      "艾尔利海滩是昆士兰圣灵群岛海岸的度假小镇，2021 年常住人口约 1,300，属于圣灵群岛区域议会，议会所在地在内陆 26 公里的普罗瑟派恩；议会管地方服务，其余归州政府。镇子沿一条主街与两座游艇码头展开，是去圣灵群岛与大堡礁的出发点，海边的人工泻湖代替了会有水母的海，机场在南面 39 公里的普罗瑟派恩。初来的人最容易犯的错，是把艾尔利海滩当作圣灵群岛本身，而岛屿在海上，白天堂海滩要坐一两个小时的船。",
     layout:
       "小镇沿一条海湾展开，主街和餐馆酒吧集中在中段，海边是免费的人工泻湖泳池（约4300平方米）。两座游艇码头（珊瑚海码头、埃尔利港码头）是出海的起点。北面是康韦国家公园的雨林山地，南面隔一道海湾是舒特港（大型客船码头）。圣灵群岛在海湾外东面，白天堂海滩约1.5–2小时船程，汉密尔顿岛有自己的机场。机场在南面的普罗瑟派恩附近。",
     gettingAround:
@@ -476,6 +524,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   albany: {
     identity:
       "奥尔巴尼（Albany）在西澳大利亚州南海岸，珀斯东南约420公里，人口约3.5万（2021年普查）。1826年12月26日英国在此建立据点，比珀斯和弗里曼特尔早两年多，是西澳最早的殖民定居点。乔治王湾是天然深水良港，1914年第一批澳新军团的运兵船队从这里出发；2014年开放的国家澳新军团中心以此为主题。城南托恩迪拉普国家公园的“大裂口”和“天然桥”是花岗岩海岸的地标，1978年关闭的捕鲸站是澳大利亚最后一座。传统土地所有者是努恩加人（Noongar）中的梅南人（Menang）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Albany (City of Albany; 35,053 2021; founded 1826, oldest colonial settlement in WA; King George Sound; National Anzac Centre 2014; whaling station closed 1978; Perth 418 km)
+    howItWorks:
+      "奥尔巴尼是西澳大南部地区的港口城市，由奥尔巴尼市议会管辖，2021 年人口约 3.5 万，珀斯在北面 418 公里；议会管地方服务，其余归州政府。1826 年建立的这座城比珀斯还早两年，是西澳最早的殖民聚落，市中心在两座山之间俯瞰公主皇家港，1914 年澳新军团的船队从乔治王湾出发，国家澳新军团中心 2014 年建在山上；1978 年关闭的捕鲸站在城外的海角，如今是博物馆。初来的人最容易犯的错，是把奥尔巴尼当作珀斯的边缘小镇，而它是这个州最老的城，有自己的港口与历史。",
     layout:
       "城市坐落在公主皇家港北岸的山坡上，克拉伦斯山和梅尔维尔山夹着老城，老城区沿斯特灵台地和约克街有大批殖民时期建筑。公主皇家港向东通向乔治王湾，湾口的国家澳新军团中心在克拉伦斯山的澳新军团公园里。城南隔港是托恩迪拉普半岛，大裂口、天然桥、鲸鱼世界（旧捕鲸站）都在那里；城东约35公里是双子峰国家公园。机场在城西北约11公里。",
     gettingAround:
@@ -490,6 +541,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   busselton: {
     identity:
       "巴瑟尔顿（Busselton）在西澳大利亚州西南部的地理湾畔，珀斯以南约220公里，人口约2.7万（2021年普查），是通往玛格丽特河葡萄酒产区和利文—纳图拉利斯特角的门户。它的地标是伸入海湾1841米的木栈桥——南半球最长的木结构栈桥，1864年开建、上世纪六十年代才停止延长，桥头有海底观测站。地理湾水浅、平静，是西澳最受欢迎的家庭海滩之一。传统土地所有者是努恩加人中的瓦丹迪人（Wadandi）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Busselton (City of Busselton ~40,600 2021, town 27,233; Geographe Bay; jetty 1,841 m; Margaret River in Shire of Augusta–Margaret River; Dunsborough in Busselton LGA; Perth 220 km)
+    howItWorks:
+      "巴瑟尔顿是西澳西南部增长最快的城市之一，由巴瑟尔顿市议会管辖，2021 年辖区人口约 4 万，珀斯在北面 220 公里；议会管地方服务，其余归州政府。镇子在地理湾的南岸，1,841 米长的木栈桥伸进海里，是南半球最长的；邓斯伯勒与亚林加普在辖区西端，机场在镇外。初来的人最容易犯的错，是把玛格丽特河酒区当作巴瑟尔顿的一部分，而玛格丽特河属于南面另一个郡议会，巴瑟尔顿只是它的北门。",
     layout:
       "城镇沿地理湾南岸展开，栈桥从市中心海滩笔直伸入海中，桥上有小火车。西面沿湾是邓斯伯勒和纳图拉利斯特角（灯塔1903年建，鲸鱼观景），南面约50公里是玛格丽特河镇和上百家酒庄，利文—纳图拉利斯特国家公园沿海岸从北角一直延伸到南面的利文角，沿途有石灰岩洞穴（恩吉尔吉洞、猛犸洞、珠宝洞）和冲浪海滩。机场在镇南约6.5公里。",
     gettingAround:
@@ -504,6 +558,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "mount-gambier": {
     identity:
       "甘比尔山（Mount Gambier）在南澳大利亚州东南角的石灰岩海岸地区，阿德莱德东南约450公里、墨尔本西北约435公里，人口约2.7万（2021年普查），是南澳人口第二多的城市。城市建在一座数千年前才停止喷发的休眠火山（玛珥火山）的山坡上，火口湖蓝湖是它的象征——每年11月前后湖水从冬季的灰蓝变为夏季的钴蓝，机制与水温和碳酸钙有关。城内还有多处石灰岩塌陷形成的天坑花园。传统土地所有者是博安迪克人（Boandik）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mount Gambier (City of Mount Gambier, small area surrounded by District Council of Grant; 26,878 2021; Blue Lake crater; 17 km from Victorian border; Adelaide 450 km; airport in Grant)
+    howItWorks:
+      "甘比尔山是南澳最大的区域城市，由甘比尔山市议会管辖，辖区很小，四周被格兰特区议会包围，2021 年人口约 2.7 万，阿德莱德在西北 450 公里，维多利亚州界在东面 17 公里；议会管地方服务，其余归州政府。城市建在一座死火山的脚下，蓝湖是火山口湖，也是城市的水源，每年十一月变成钴蓝色，恩弗斯顿天坑与洞穴花园在市中心，石灰岩海岸的洞穴潜水以这里为基地，机场在格兰特区议会境内。初来的人最容易犯的错，是把甘比尔山当作一座山，而它是一座建在火山脚下的城，山只是城边的一圈丘陵。",
     layout:
       "市中心在火山锥北麓的平地上，商业街是商业街（Commercial Street）；蓝湖在市中心南面的火口里，环湖有公路和步道，旁边是山谷湖和另外两个较小的火口湖。恩弗斯顿天坑（1886年辟为花园）在市中心东侧，洞穴花园（Cave Garden）就在市中心步行街旁。周边是松树林和牧场，往北约50公里是库纳瓦拉葡萄酒产区，再往北约100公里是纳拉库特洞穴国家公园（1994年列入世界遗产）。机场在城北约9公里。",
     gettingAround:
@@ -518,6 +575,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   devonport: {
     identity:
       "德文波特（Devonport）在塔斯马尼亚州西北海岸、默西河口，人口约2.6万（2021年普查），是塔州第三大城市。它最重要的身份是塔斯马尼亚精神号（Spirit of Tasmania）渡轮的港口——从维多利亚州吉朗开来的过夜渡轮在这里靠岸，自驾游客多从这里开始环塔之旅。河口西侧的默西崖灯塔（1889年建）是地标，崖上的蒂阿加拉（1976年开放）是塔斯马尼亚原住民文化中心。往内陆约80公里是摇篮山。传统土地所有者是塔斯马尼亚原住民（palawa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Devonport (City of Devonport; 26,150 2021; Mersey River mouth; Spirit of Tasmania to Geelong; busiest freight port in Tasmania; Cradle Mountain ~80 km in other LGAs; airport)
+    howItWorks:
+      "德文波特是塔斯马尼亚北海岸的港口城市，由德文波特市议会管辖，2021 年人口约 2.6 万，是塔州第三大城市；议会管地方服务，其余归州政府。城市在默西河口的两岸，塔斯马尼亚精神号渡轮从这里开往吉朗，港口承担了全岛一半以上的货物进出，机场在城东，朗塞斯顿在东南约 100 公里；摇篮山在西南约 80 公里的另一个议会区。初来的人最容易犯的错，是把德文波特当作摇篮山的山门，而它是一座渡轮与货运的港口城，摇篮山要再开一个多小时。",
     layout:
       "城市分在默西河两岸，西岸是市中心和渡轮码头，东岸是东德文波特和机场方向。市中心以北是默西崖，崖上有灯塔、蒂阿加拉和海岸步道，崖下是海滩。沿海往西约47公里是伯尼，往东是拉特罗布和谢菲尔德（壁画小镇），往东南约100公里是朗塞斯顿；摇篮山—圣克莱尔湖国家公园在西南约80公里的山里。机场在城东约10公里。",
     gettingAround:
@@ -532,6 +592,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   yulara: {
     identity:
       "尤拉拉（Yulara）是北领地中部沙漠里为乌鲁鲁—卡塔丘塔国家公园服务的度假镇，常住人口约850（2021年普查），距乌鲁鲁约18公里、距爱丽斯泉约430公里。乌鲁鲁（艾尔斯岩）是高出平原348米的巨型砂岩独立山体，卡塔丘塔（奥尔加山）是36座圆顶岩丘群；国家公园1987年以自然遗产、1994年又以文化景观列入世界遗产，是澳大利亚原住民阿南古人（Anangu）的圣地。公园土地1985年归还阿南古人并租给联邦公园管理局共同管理；2019年10月起禁止攀登乌鲁鲁。镇子是1970年代规划、1980年代建成的，把住宿和设施集中在公园之外。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Yulara (853 2021; purpose-built resort town 1984 outside Uluru-Kata Tjuta NP, Anangu-owned jointly managed park; unincorporated NT; Ayers Rock airport 6 km; Uluru 18 km; Alice Springs 428 km)
+    howItWorks:
+      "尤拉拉不是一座普通的镇，而是 1984 年在乌鲁鲁—卡塔丘塔国家公园外专门建起的度假村，2021 年常住人口约 850，几乎全是度假村的员工；它在北领地是一块不设地方议会的飞地，由领地政府直接管理。国家公园是阿南古人的土地，由他们与公园管理局共管，进入要买门票，乌鲁鲁在南面 18 公里，机场在镇外 6 公里，爱丽斯泉在东北 428 公里。初来的人最容易犯的错，是以为可以住在乌鲁鲁脚下，而公园内没有住宿，所有人都住在尤拉拉。",
     layout:
       "尤拉拉是一个环形规划的度假村，酒店、露营地、超市和游客中心围着中央的沙丘观景台，镇内有免费环线巴士。机场在镇北约6公里。乌鲁鲁在镇东南约18公里，环岩公路一圈约10公里，有日出、日落观景区和文化中心；卡塔丘塔在乌鲁鲁以西约40公里，有风之谷和瓦尔帕峡谷步道。周围是红沙丘和沙漠橡树，地平线上能看到远处的康纳山。",
     gettingAround:
@@ -548,6 +611,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   gosford: {
     identity:
       "戈斯福德（Gosford）是新南威尔士州中央海岸地区的中心城市，在悉尼以北约77公里、纽卡斯尔以南约86公里，戈斯福德统计区人口约17.8万（2021年普查），整个中央海岸城区是悉尼与纽卡斯尔之间的都市走廊。城市坐落在布里斯班水域（Brisbane Water）这片内湾的北岸，东面是特里加尔、阿沃卡等冲浪海滩和布迪国家公园。1839年以戈斯福德伯爵命名，1980年设市。传统土地所有者是达金荣人（Darkinjung）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Gosford (CBD suburb; seat of Central Coast Council ~350,000 formed 2016 from Gosford and Wyong; Brisbane Water; train ~1.2 h to Sydney; Terrigal/Avoca beaches in other suburbs)
+    howItWorks:
+      "戈斯福德是中央海岸市议会的所在地，议会 2016 年由戈斯福德与怀昂两个议会合并而成，管辖约 35 万人，是新南威尔士人口最多的地方议会之一；议会管地方服务，警察、学校与铁路归州政府。戈斯福德本身只是布里斯班水域北端的一个市镇中心，有火车站、医院与体育场，火车到悉尼约一小时十几分，大多数居民住在周围的郊区，海滩在东面的特里格尔与阿沃卡。初来的人最容易犯的错，是把戈斯福德当作一座城，而“中央海岸”才是这座城，戈斯福德只是它的行政中心。",
     layout:
       "戈斯福德市中心在布里斯班水域北端的山坡上，火车站和商业区靠近水边。往东约10公里是特里加尔（海滩、海滨步道）和阿沃卡海滩，再往南是布迪国家公园的海岸步道；往北是奥里米巴和澳大利亚爬行动物公园所在的森林；往南过布里斯班水域是伍伊伍伊和半岛的海滩。中央海岸的城区从戈斯福德一直向北延伸到怀昂和图格拉湖。",
     gettingAround:
@@ -562,6 +628,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "port-macquarie": {
     identity:
       "麦夸里港（Port Macquarie）在新南威尔士州中北海岸、黑斯廷斯河口，悉尼以北约390公里，人口约5.2万（2023年）。它1821年作为流放地建立，是新南威尔士州最早的殖民定居点之一；今天以温和的气候、海滩和考拉出名——镇上的考拉医院专门救治受伤的考拉。塔金角灯塔（1879年）和9公里长的海岸步道是它的地标。传统土地所有者是比里帕伊人（Birpai）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Port Macquarie (urban ~48,000 2021; Port Macquarie-Hastings Council ~86,700; Hastings River mouth; convict settlement 1821; Birpai; beaches; Koala Hospital; airport; Sydney 390 km)
+    howItWorks:
+      "麦夸里港是新南威尔士中北海岸的城市，2021 年城区人口约 4.8 万，属于麦夸里港—黑斯廷斯议会，辖区约 8.7 万人；议会管地方服务，其余归州政府。城市在黑斯廷斯河口的南岸，1821 年作为流放地建立，市中心在河口，镇滩、弗林斯滩、灯塔滩沿海岸向南排开，考拉医院在市中心，机场在城西，悉尼在南面 390 公里。退休人口占了很大比例。初来的人最容易犯的错，是把麦夸里港当作一座度假镇，而它是一座有大学校区与医院的区域城市，退休者比游客多。",
     layout:
       "镇中心在黑斯廷斯河口南岸，河口防波堤和镇海滩就在市中心旁边。海岸线向南延伸：从西港公园经市中心到塔金角灯塔的海岸步道串起一串海滩（弗林斯、诺比斯、雪莱、米纳）；海崖雨林国家公园（Sea Acres）在雪莱海滩旁，有雨林栈道；考拉医院在镇中心南侧的罗托庄园。机场在镇西约4公里。往西内陆是黑斯廷斯河谷和沃丘普。",
     gettingAround:
@@ -576,6 +645,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "wagga-wagga": {
     identity:
       "瓦加瓦加（Wagga Wagga）在新南威尔士州南部的里弗赖纳地区、马兰比吉河畔，悉尼和墨尔本之间各约450公里、堪培拉以西约245公里，城区人口约5.7万（2021年普查），是新南威尔士州最大的内陆城市之一。地名来自维拉朱里语，市政府2019年采纳的释义是“许多舞蹈与庆典之地”。它是军事重镇（卡普卡陆军新兵训练中心、瓦加空军基地），也是查尔斯特大学的所在地和里弗赖纳农业区的中心。传统土地所有者是维拉朱里人（Wiradjuri）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Wagga Wagga (City of Wagga Wagga; 57,003 urban 2021; Murrumbidgee; Sydney 452 km / Melbourne 456 km; CSU; Kapooka; RAAF Wagga; Wiradjuri; airport)
+    howItWorks:
+      "沃加沃加是新南威尔士最大的内陆城市，由沃加沃加市议会管辖，2021 年城区人口约 5.7 万，在悉尼与墨尔本正中间，各约 450 公里；议会管地方服务，其余归州政府。城市在马兰比吉河的冲积谷地里，市中心在河的南岸，查尔斯·斯特大学、卡普卡陆军训练基地与沃加空军基地让它成为军队与大学的城，机场有到三大城市的航班。这里是维拉朱里人的土地。初来的人最容易犯的错，是把沃加沃加当作一个公路休息站，而它是里弗赖纳地区的首府。",
     layout:
       "市中心在马兰比吉河南岸，有堤坝防洪，主街是贝利斯街和菲茨莫里斯街，河边是滩地公园和沙滩（瓦加海滩）。植物园和动物园在城南的威利南斯山上，查尔斯特大学在城北的埃斯特拉，机场和空军基地在东南的森林山。周围是麦田、葡萄园和绵羊牧场，休姆高速在东面经过。",
     gettingAround:
@@ -590,6 +662,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mildura: {
     identity:
       "米尔迪拉（Mildura）在维多利亚州西北角的墨累河畔，墨尔本西北约545公里、阿德莱德以东约400公里，城区人口约3.6万（2021年普查，含周边城镇约5.9万）。它1887年由查菲兄弟建立，是澳大利亚第一个灌溉殖民地——引墨累河水把半干旱的马利灌木地变成了葡萄园和柑橘园，今天出产维多利亚州约八成的葡萄和澳大利亚七成以上的葡萄干。明轮船、柑橘和热气球是它的旅游名片；向北约110公里是蒙戈国家公园（维兰德拉湖区世界遗产）。传统土地所有者是拉蒂拉蒂人（Latji Latji）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mildura (Rural City of Mildura ~22,000 km²; city 35,652, urban 58,914 2021; Murray River; Chaffey irrigation colony 1887; Sunraysia grapes; Melbourne 545 km; airport busiest regional in Victoria)
+    howItWorks:
+      "米尔迪拉是维多利亚州西北角的城市，由米尔迪拉乡村市议会管辖，辖区约 2.2 万平方公里，2021 年市区人口约 3.6 万，加上河对岸新南威尔士的布龙加等镇约 5.9 万；议会管地方服务，其余归州政府。城市建在墨累河南岸，1887 年查菲兄弟在这里建起澳大利亚第一个规划灌溉区，如今这一带产全国九成的出口鲜食葡萄；机场是维多利亚最繁忙的区域机场，墨尔本在东南 545 公里，阿德莱德反而更近。初来的人最容易犯的错，是把米尔迪拉当作维多利亚的城市来算距离，而它离阿德莱德更近，河对岸就是另一个州。",
     layout:
       "米尔迪拉市区在墨累河南岸（维多利亚州一侧），河对岸是新南威尔士州；市中心的迪金大道是一条宽阔的林荫街。墨累河上有第11号船闸和码头，明轮船从这里出发；沿河向东是灌溉区的果园和小镇雷德克利夫斯。蒙戈国家公园在东北约110公里的新南威尔士州境内，有“中国长城”状的月牙沙丘和4万年前的人类遗骨出土地。机场在城西南约7公里。",
     gettingAround:
@@ -604,6 +679,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "phillip-island": {
     identity:
       "菲利普岛（Phillip Island）在维多利亚州南部的西港湾口，墨尔本东南约140公里，主镇考斯（Cowes）人口约6600（2021年普查），1940年起有桥与大陆的圣雷莫相连。岛的西南端是世界闻名的企鹅归巢——每天日落后成群的小企鹅从海上回到萨默兰海滩的巢穴；诺比斯角外的海豹岩是澳大利亚最大的海狗群落之一。岛上还有摩托车大奖赛赛道和冲浪海滩。传统土地所有者是布努龙人（Bunurong）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Phillip Island (~101 km²; 13,799 2021, ~40,000 in summer; Cowes 6,593; Bass Coast Shire, seat Wonthaggi; bridge from San Remo 1940; Penguin Parade ~40,000 penguins; MotoGP circuit; Melbourne 125 km)
+    howItWorks:
+      "菲利普岛是墨尔本东南 125 公里的一座岛，面积约 100 平方公里，2021 年常住人口约 1.4 万，夏天涨到 4 万，属于巴斯海岸郡议会，郡府在大陆的旺萨吉；郡议会管地方服务，其余归州政府。考斯是岛上的主镇，在北岸，1940 年建成的大桥把岛与圣雷莫连起来，企鹅归巢在岛的西南角，由菲利普岛自然公园管理，赛车场在岛的中部，没有铁路。初来的人最容易犯的错，是把企鹅归巢当作岛的全部，而岛上有一座镇、一条赛道和一整圈海岸。",
     layout:
       "菲利普岛东西约26公里，考斯在岛北岸的平静海湾边，是住宿和餐饮的中心；企鹅归巢、诺比斯角、海豹岩在岛西南端；大奖赛赛道在岛中南部；南岸是伍拉迈和考拉海滩等冲浪海滩；东端的丘吉尔岛有历史农场。桥在岛东端的纽黑文与圣雷莫之间。",
     gettingAround:
@@ -618,6 +696,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   mackay: {
     identity:
       "麦凯（Mackay）在昆士兰州中部海岸、先锋河口，布里斯班以北约970公里、汤斯维尔以南约390公里，人口约8.4万（2021年普查）。它因甘蔗种植而兴起，被称为澳大利亚的“糖都”，港口和糖厂至今运转，近年采矿成为主要产业。1918年气旋后重建的市中心留下了大批装饰艺术风格的建筑；内陆的尤金拉国家公园是澳大利亚少数能稳定看到野生鸭嘴兽的地方，希尔斯伯勒角的沙滩上清晨有袋鼠。传统土地所有者是尤维巴拉人（Yuwibara）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mackay (Mackay Regional Council; 84,333 urban 2021; Pioneer River; sugar; Bowen Basin coal, Hay Point; Eungella NP; airport; Art Deco after 1918 cyclone)
+    howItWorks:
+      "麦凯是昆士兰中北部的城市，由麦凯区域议会管辖，2021 年城区人口约 8.4 万；议会管地方服务，其余归州政府。城市在先锋河的河口，甘蔗田从四周一直铺到海边，糖厂是它的老本行，如今博文盆地的煤矿与海波因特的煤港是经济的主力，大量矿工在这里落脚；1918 年的气旋几乎毁掉了市中心，重建留下了一批装饰艺术风格的建筑，机场在城南，尤金拉国家公园在西面。初来的人最容易犯的错，是把麦凯当作去圣灵群岛的过路站，而它是昆士兰采矿与制糖的重镇。",
     layout:
       "市中心在先锋河南岸，河口东侧是港口和滨海区。蓝水步道沿河和海岸连接蓝水泻湖、植物园和市场。希尔斯伯勒角在市区北约50公里，是国家公园和海滩；尤金拉在西面约80公里的山上，山下的布罗肯河是看鸭嘴兽的地方；南面是萨里纳的糖厂。机场在市区南侧。",
     gettingAround:
@@ -632,6 +713,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   rockhampton: {
     identity:
       "罗克汉普顿（Rockhampton）在昆士兰州中部的菲茨罗伊河畔，距河口约45公里，布里斯班以北约630公里，人口约8万（2021年普查）。它就在南回归线以北，市内立有回归线标志；因周边广阔的牧场自称“澳大利亚牛肉之都”。河边的奎街保留着十九世纪的砂岩商业建筑群，东面的阿彻山俯瞰全城，卡普里康海岸的雅蓬和大凯佩尔岛在东面约40公里。传统土地所有者是达伦巴尔人（Darumbal）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Rockhampton (Rockhampton Region; ~79,000 2021; Fitzroy River; Tropic of Capricorn; beef capital; Quay Street; Yeppoon in Livingstone Shire; airport)
+    howItWorks:
+      "罗克汉普顿是昆士兰中部的城市，由罗克汉普顿区域议会管辖，2021 年人口约 7.9 万；议会管地方服务，其余归州政府。城市在菲茨罗伊河两岸，南回归线从城边穿过，自称“牛肉之都”，两座屠宰场是最大的雇主之一，码头街的 19 世纪街景是淘金年代留下的，阿彻山在城东俯瞰全城，机场在城西。初来的人最容易犯的错，是把海边的耶蓬当作罗克汉普顿的海滩区，而耶蓬属于利文斯顿郡议会，是另一座镇，罗克汉普顿本身在内陆 40 公里。",
     layout:
       "市中心在菲茨罗伊河南岸，奎街沿河，河上有几座桥连接北罗克汉普顿。阿彻山在城东，山顶有观景台和树顶栈道；植物园和动物园在城南。往北约25公里是卡普里康溶洞；往东约40公里是雅蓬和卡普里康海岸，从罗斯林湾坐船到大凯佩尔岛。机场在城西约6公里。",
     gettingAround:
@@ -646,6 +730,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "port-douglas": {
     identity:
       "道格拉斯港（Port Douglas）在昆士兰州最北部的海岸，凯恩斯以北约60公里，常住人口约3700（2021年普查），是通往大堡礁外礁和戴恩树雨林的度假小镇。它1877年因霍奇金森金矿发现而建港，衰落后在二十世纪八十年代重生为度假地。四英里海滩是一条棕榈树边的长沙滩，从镇上坐船可到低岛和阿金库尔礁，往北约20公里是莫斯曼峡谷，再往北是戴恩树雨林。传统土地所有者是库库亚兰吉人（Kuku Yalanji），传统地名Jabulkanji。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Port Douglas (3,650 2021; Shire of Douglas, seat Mossman; Four Mile Beach; Macrossan Street; reef/Daintree gateway; Cairns airport 60 km; resort development late 1980s)
+    howItWorks:
+      "道格拉斯港是昆士兰远北的度假小镇，2021 年人口约 3,700，属于道格拉斯郡议会，郡府在内陆 20 公里的莫斯曼；郡议会管地方服务，其余归州政府。镇子在一个岬角上，四英里海滩在一侧，游艇码头在另一侧，麦克罗森街是唯一的主街，1980 年代末的度假村开发把一个衰落的港口变成了今天的样子；大堡礁的船从码头出发，丹翠雨林在北面，机场在南面 60 公里的凯恩斯。初来的人最容易犯的错，是把道格拉斯港当作一座城，而它是一个几千人的度假镇，郡政府在别处，医院与机场都在别的镇。",
     layout:
       "小镇在一个伸入海中的小半岛上，马库森街是主街，尽头是码头和游艇港（出海点），半岛北端的弗拉格斯塔夫山有观景台。四英里海滩沿半岛东岸向南延伸。往北沿库克公路约20公里是莫斯曼镇和莫斯曼峡谷（戴恩树国家公园的南部入口），再往北过戴恩树河渡口是雨林、海角艰险角；往南是凯恩斯。",
     gettingAround:
@@ -660,6 +747,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bunbury: {
     identity:
       "邦伯里（Bunbury）在西澳大利亚州西南海岸，珀斯以南约175公里，人口约7.6万（2021年），是西澳第三大人口中心。它建在莱舍诺尔特湾与地理湾之间的一个半岛上，港口是西南地区的货运港；库姆巴纳湾的海豚探索中心让人可以在浅水区近距离看到野生宽吻海豚。它也是玛格丽特河和西南部森林、酒庄之旅的门户。传统土地所有者是努恩加人中的瓦丹迪人（Wardandi），传统地名Goomburrup。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bunbury (City of Bunbury ~33,000; Greater Bunbury 76,452 2021 across 4 LGAs incl. Capel/Dardanup/Harvey; port; Koombana Bay dolphins; Perth 175 km; Australind train)
+    howItWorks:
+      "班伯里是西澳的第三大城市，班伯里市议会本身辖区很小，约 3.3 万人，而包括东面的伊顿、奥斯特拉林德在内的大班伯里 2021 年约 7.6 万人，分属四个议会；议会管地方服务，其余归州政府。市中心在半岛上，港口在一侧，库姆巴纳湾的海豚在另一侧，珀斯在北面 175 公里，奥斯特拉林德号列车两小时到珀斯，矿产加工与港口是经济的主力。初来的人最容易犯的错，是把班伯里市议会的辖区当作整座城，而一半以上的居民住在河对岸另外三个郡议会的郊区里。",
     layout:
       "市中心在半岛上，西面是印度洋的后海滩，东面是莱舍诺尔特湾的平静水面，北面是库姆巴纳湾和港口；灯塔（黑白格纹）在半岛北端的山上。海豚探索中心在库姆巴纳湾岸边。往南沿海岸约50公里到巴瑟尔顿，往东内陆是科利的煤矿和林区，往西南是玛格丽特河方向。机场在城东南约8公里，只做通用航空。",
     gettingAround:
@@ -674,6 +764,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kalgoorlie: {
     identity:
       "卡尔古利—博尔德（Kalgoorlie-Boulder）在西澳大利亚州内陆的金矿区，珀斯以东约595公里，人口约2.9万（2021年普查）。1893年6月帕迪·汉南在这里发现黄金，随后的淘金潮催生了“金英里”——号称世界最富的一平方英里；今天的“超级坑”（Fimiston露天矿）长约3.6公里、宽1.6公里、深逾600米，是澳大利亚最大的露天金矿之一，至今仍在开采。1903年建成的金矿区输水管道从珀斯附近引水近600公里，是当年的工程壮举。传统土地所有者是万加伊人（Wangkatha）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Kalgoorlie-Boulder (City of Kalgoorlie-Boulder ~95,000 km²; 29,072 2021; gold 1893 Hannan; Super Pit 3.6 km long; Boulder merged 1989; Hannan Street; Prospector train; Perth 595 km)
+    howItWorks:
+      "卡尔古利—博尔德是西澳金矿区的中心，由卡尔古利—博尔德市议会管辖，辖区约 9.5 万平方公里，2021 年人口约 2.9 万，珀斯在西面 595 公里；议会管地方服务，其余归州政府。1893 年帕迪·汉南在这里发现黄金，卡尔古利与南面的矿镇博尔德 1989 年合并成一座市，汉南街是市中心的主街，超级坑金矿在城东，长 3.6 公里、深 600 多米，全天开采，四分之一的劳动力在矿上；探矿者号列车与航班通往珀斯。初来的人最容易犯的错，是把卡尔古利当作一座淘金遗迹的镇，而它是一座至今靠一个巨型矿坑活着的工作城市。",
     layout:
       "卡尔古利和博尔德原是两座相邻的矿镇，1989年合并。卡尔古利的汉南街是宽阔的主街，两侧是淘金时代的酒店和公共建筑；博尔德在东南约5公里，伯特街有历史建筑和市集。超级坑在两镇之间的东侧，观景台在博尔德一侧。周围是红土、盐湖和灌木荒原。机场在城南约6公里。",
     gettingAround:
@@ -688,6 +781,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "port-lincoln": {
     identity:
       "林肯港（Port Lincoln）在南澳大利亚州艾尔半岛南端的波士顿湾畔，阿德莱德以西约280公里（陆路约650公里），人口约1.4万（2021年普查）。它拥有澳大利亚最大的商业渔船队，自称“海鲜之都”——南方蓝鳍金枪鱼的围网养殖、生蚝、鲍鱼、贻贝都在这里；也是南澳唯一能与大白鲨笼潜、与海狮同游的地方。传统土地所有者是巴恩加拉人（Barngarla），传统地名Galinyala意为“甜水之地”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Port Lincoln (City of Port Lincoln; ~14,400 2021; Boston Bay, Eyre Peninsula tip; seafood capital, tuna; shark cage diving; Barngarla/Galinyala; Adelaide 650 km by road, 50 min flight)
+    howItWorks:
+      "林肯港是南澳艾尔半岛南端的城市，由林肯港市议会管辖，2021 年人口约 1.4 万，阿德莱德在东面 650 公里公路，飞机约 50 分钟；议会管地方服务，其余归州政府。城市在波士顿湾的岸边，自称澳大利亚的海鲜之都，蓝鳍金枪鱼、生蚝与鲍鱼的养殖是它的经济，粮食码头是另一条命脉，鲨鱼笼潜从港口出发去海王星群岛，林肯国家公园在城南。这里是巴恩加拉人的土地。初来的人最容易犯的错，是按公路距离把林肯港想成阿德莱德的远郊，而它隔着斯宾塞湾自成一片，大多数人坐飞机来往。",
     layout:
       "镇子在波士顿湾西岸，波士顿湾是向斯宾塞湾开口的天然深水良港，码头和金枪鱼加工区在镇南。林肯国家公园在镇东南约15公里的半岛上，有沙丘和海湾；往西约50公里是科芬湾（生蚝）；大白鲨笼潜的船去南面的海王星群岛，海狮在贝尔德湾（西北）。机场在镇北约13公里。",
     gettingAround:
@@ -702,6 +798,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   burnie: {
     identity:
       "伯尼（Burnie）在塔斯马尼亚州西北海岸的鸸鹋湾畔，德文波特以西约47公里、朗塞斯顿以西约135公里，人口约2万（2021年普查）。它是塔斯马尼亚最大的散货港，1936年至2010年间的造纸厂曾是城市支柱（1939年世界上首次完全用桉树浆造纸）；今天以海边的小企鹅观察点、手工艺中心和周边的郁金香田、雨林出名。传统土地所有者是塔斯马尼亚原住民（palawa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Burnie (City of Burnie; 19,918 2021; Emu Bay port, largest general cargo port in Tasmania; paper mill closed 2010; UTAS Cradle Coast campus; Cradle Mountain ~1.5 h; Wynyard airport)
+    howItWorks:
+      "伯尼是塔斯马尼亚西北海岸的港口城市，由伯尼市议会管辖，2021 年人口约 2 万，是塔州第四大城市；议会管地方服务，其余归州政府。城市在鸸鹋湾边，港口是塔州最大的杂货港，承担全岛近一半的集装箱，1936 年建的造纸厂曾是城市的支柱，2010 年关闭后转向教育、医疗与物流，塔斯马尼亚大学的摇篮海岸校区在此，机场在西面的温亚德，摇篮山在南面约一个半小时。初来的人最容易犯的错，是把伯尼当作一座衰落的工业港，而它是西北海岸的医疗与大学中心。",
     layout:
       "市中心在鸸鹋湾的港口旁，港口的码头和货运区占据海岸中段，西面是西海滩和小企鹅观察中心。往西约17公里是温亚德和机场，再往西是台角（郁金香田、灯塔）和斯坦利（“大坚果”火山颈）；往南进内陆是弗恩格莱德的雨林和吉尼斯瀑布；往东沿海是德文波特。",
     gettingAround:
@@ -718,6 +817,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   albury: {
     identity:
       "奥尔伯里（Albury）在新南威尔士州与维多利亚州交界的墨累河北岸，与河对岸维多利亚州的沃东加合称奥尔伯里—沃东加，两城城区人口约9.8万（2021年普查，奥尔伯里本身约5.4万），是悉尼与墨尔本之间休姆公路上最大的城市。上游约10公里的休姆湖是1936年建成的大型水库；1947年设立的博内吉拉移民中心是澳大利亚第一个移民接待中心，战后三十万移民从这里进入澳大利亚。南面的拉瑟格伦是维多利亚州的加强型葡萄酒产区。传统土地所有者是维拉朱里人（Wiradjuri）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Albury (City of Albury; 53,677 2021; twin city with Wodonga VIC, combined ~97,800; Murray River state border; Hume Highway/railway; Lake Hume; airport second busiest regional in NSW)
+    howItWorks:
+      "奥尔伯里是新南威尔士墨累河畔的城市，由奥尔伯里市议会管辖，2021 年人口约 5.4 万；河对岸的沃东加属于维多利亚州，有自己的市议会，两城合成约 9.8 万人的一片城区，却分属两个州、两套法律、两个议会。市中心在河的北岸，休姆公路与铁路从这里过河，机场是新南威尔士第二繁忙的区域机场，休姆湖在东面，悉尼与墨尔本各在三百多公里外。初来的人最容易犯的错，是把奥尔伯里—沃东加当作一座城，而过一座桥就换了州，学校、警察与假期都不一样。",
     layout:
       "奥尔伯里市中心在墨累河北岸的平缓山坡上，迪恩街是主街，河边是诺瑞尔公园和墨累河步道；过河（休姆公路大桥）就是维多利亚州的沃东加。休姆湖大坝在城东约10公里，博内吉拉在湖边的沃东加一侧。拉瑟格伦的酒庄在西南约45公里，比奇沃思的淘金古镇在南面约40公里。机场在城东约4公里。",
     gettingAround:
@@ -732,6 +834,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dubbo: {
     identity:
       "达博（Dubbo）在新南威尔士州中部的麦夸里河畔，悉尼西北约390公里，人口约4.4万（2021年普查），是西部平原的服务中心。它最出名的是塔龙加西部平原动物园——1977年开放的开放式动物园，按大洲布局的大型围场里有犀牛、长颈鹿等濒危动物，可以骑自行车或开车游览；市中心的旧达博监狱是保存完整的殖民时期监狱。往东约50公里是惠灵顿溶洞。传统土地所有者是维拉朱里人（Wiradjuri），当地有四万年以上的人类活动证据。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Dubbo (Dubbo Regional Council; 43,516 2021; Orana; Macquarie River; Taronga Western Plains Zoo; three highways; rail 1881; Sydney 392 km; ~15.6% Aboriginal)
+    howItWorks:
+      "达博是新南威尔士奥拉纳地区最大的城市，由达博区域议会管辖，2021 年人口约 4.4 万，悉尼在东南 392 公里；议会管地方服务，其余归州政府。城市在麦夸里河边，三条国道在这里交叉，是通往西部的公路与铁路枢纽，塔龙加西部平原动物园在城郊，老监狱在市中心，约 16% 的居民是原住民，这里是维拉朱里人的土地。初来的人最容易犯的错，是把达博当作去动物园的过路站，而它是新南威尔士西部的医疗、商业与交通中心。",
     layout:
       "市中心在麦夸里河东岸，麦夸里街是主街，旧达博监狱就在街上；西部平原文化中心在城东。塔龙加西部平原动物园在城西南约5公里的欧比高速路旁。东面是大分水岭的丘陵，西面是达令盆地的平原；惠灵顿溶洞在东南约50公里，往西北约200公里是沃伦班戈国家公园的天文台和火山地貌。机场在城西北约4公里。",
     gettingAround:
@@ -746,6 +851,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tamworth: {
     identity:
       "塔姆沃思（Tamworth）在新南威尔士州东北部的皮尔河畔，悉尼以北约420公里，海拔约400米，人口约4.4万（2021年普查），是新南威尔士州第三大内陆城市。它是澳大利亚的乡村音乐之都：每年1月下旬的塔姆沃思乡村音乐节自1973年起举办，为期十天，是世界第二大乡村音乐节；12米高的“金吉他”是城市地标。1888年11月9日塔姆沃思成为澳大利亚第一个用市营电站供电点亮街灯的城镇，因此有“灯光第一城”之称。传统土地所有者是卡米拉罗伊人（Kamilaroi），英语里的“budgerigar”（虎皮鹦鹉）来自他们的语言。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Tamworth (Tamworth Regional Council; 43,874 2021; Peel River; Country Music Festival January, Golden Guitar; first electric street lights 1888; equine centre; Sydney ~420 km)
+    howItWorks:
+      "塔姆沃思是新南威尔士新英格兰地区的中心，由塔姆沃思区域议会管辖，2021 年人口约 4.4 万，悉尼在南面约 420 公里；议会管地方服务，其余归州政府。城市在皮尔河边，1888 年它是澳大利亚第一个用市政电站点亮路灯的镇，每年一月的乡村音乐节是世界第二大，金吉他是城市的标志，马术中心是南半球最大的，机场在城西。初来的人最容易犯的错，是把塔姆沃思当作只在音乐节那两周才存在的镇，而它一年到头都是这一带的行政与医疗中心。",
     layout:
       "市中心在皮尔河北岸，皮尔街是主街，河边是比克罗夫特公园；金吉他和乡村音乐名人堂在城南的新英格兰公路旁。市中心有电灯博物馆纪念1888年的街灯。周围是新英格兰高地的丘陵和马场（塔姆沃思是澳大利亚马业中心之一）。机场在城西约10公里。往北是新英格兰高原和阿米代尔，往东翻山是麦夸里港的海岸。",
     gettingAround:
@@ -760,6 +868,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   cessnock: {
     identity:
       "塞斯诺克（Cessnock）在新南威尔士州猎人谷的下游，纽卡斯尔以西约52公里、悉尼以北约154公里，城区人口约2.3万（2021年普查，全市约6.4万）。它是猎人谷葡萄酒产区的中心镇——猎人谷是澳大利亚最早的葡萄酒产区之一，1820年代已有葡萄园，波科尔宾一带集中了一百多家酒庄，以赛美蓉和设拉子闻名。二十世纪初塞斯诺克曾是煤矿镇，如今以酒庄、热气球和猎人谷花园为主。传统土地所有者是沃纳鲁阿人（Wonnarua）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Cessnock (City of Cessnock LGA 63,632 2021, town 23,211; former coal town; Hunter Valley vineyards at Pokolbin ~15 km, ~1,800 ha; Newcastle 52 km; no passenger rail)
+    howItWorks:
+      "塞斯诺克是新南威尔士猎人谷的城市，由塞斯诺克市议会管辖，辖区 2021 年约 6.4 万人，镇本身约 2.3 万，纽卡斯尔在东面 52 公里；议会管地方服务，其余归州政府。镇子是 1903 至 1923 年间煤矿带起来的，市中心的街道仍是矿镇的格局；猎人谷的酒庄在西北约 15 公里的波高尔宾，是澳大利亚最老的葡萄酒产区，约 1,800 公顷葡萄园散在乡间。没有客运铁路，出行靠汽车。初来的人最容易犯的错，是在塞斯诺克镇上找酒庄，而酒庄在镇外的乡村，镇子本身是一座矿工的老镇。",
     layout:
       "塞斯诺克镇在猎人谷南缘的平地上，主街有老矿镇的建筑。酒庄集中在镇北和西北约10公里的波科尔宾、洛夫代尔、罗斯伯里、芒特维尤一带，猎人谷花园（大型观赏园林）在波科尔宾；布罗克和沃伦比在更西面的山谷里。北面是布罗肯巴克山脉，翻山可到猎人谷上游的辛格尔顿。纽卡斯尔机场在东面约53公里。",
     gettingAround:
@@ -774,6 +885,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   warrnambool: {
     identity:
       "瓦南布尔（Warrnambool）在维多利亚州西南海岸，是大洋路的西端城市（大洋路在城东约13公里的阿兰斯福德结束），人口约3.3万（2021年普查）。每年6–9月南露脊鲸带着幼鲸来到城边的洛根斯海滩育幼，从岸上的观景台就能看到；弗拉格斯塔夫山海事村复原了十九世纪的港口小镇，收藏沉船文物。城西的塔山是一座休眠火山，火山口里有野生动物保护区。传统土地所有者是贡迪杰马拉人（Gunditjmara）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Warrnambool (City of Warrnambool; 32,894 2021; western end of the Great Ocean Road; Logans Beach southern right whales late May–Aug; Flagstaff Hill; dairy; train to Melbourne ~3.5 h; Melbourne 265 km)
+    howItWorks:
+      "沃南布尔是维多利亚州西南海岸的城市，由沃南布尔市议会管辖，辖区很小，2021 年人口约 3.3 万，墨尔本在东面 265 公里，火车约三个半小时；议会管地方服务，其余归州政府。城市在大洋路的西端，市中心在海边的高地上，旗杆山海事博物馆保留着老灯塔与沉船的遗物，洛根斯海滩是南露脊鲸的育儿场，每年五月底到八月母鲸带着幼鲸在岸边逗留；乳业是这一带的经济。初来的人最容易犯的错，是把沃南布尔当作大洋路的一个观景点，而它是大洋路尽头一座有自己港口与产业的城市。",
     layout:
       "市中心在海边的台地上，利比格街是主街，弗拉格斯塔夫山海事村在市中心南侧俯瞰港湾；洛根斯海滩的观鲸台在城东约5公里的霍普金斯河口外。塔山火山口在城西约15公里，再往西约15公里是港湾小镇菲利港；往东走大洋路约80公里到十二使徒岩和坎贝尔港。霍普金斯瀑布在城北。机场在城西北约11公里，只做通用航空。",
     gettingAround:
@@ -788,6 +902,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bright: {
     identity:
       "布赖特（Bright）是维多利亚州东北部高山地区的小镇，在奥文斯河谷里，海拔约320米，墨尔本东北约320公里，人口约2600（2021年普查）。它以秋天的彩叶闻名——镇上和河谷里种满欧洲的落叶树，每年4–5月有秋色节；它也是维多利亚高山区的门户，往上是布法罗山国家公园、霍瑟姆山和福尔斯溪滑雪场，维多利亚州最高峰博贡山（1986米）在附近。95公里长的“墨累到山区”自行车道沿旧铁路经过这里。十九世纪这里是淘金地。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bright (2,620 2021; Alpine Shire seat; Ovens Valley 319 m; Autumn Festival; gateway to Mount Buffalo/Hotham/Feathertop; Murray to Mountains Rail Trail; Melbourne ~310 km; no rail)
+    howItWorks:
+      "布莱特是维多利亚州东北阿尔卑斯山脚下的小镇，2021 年人口约 2,600，是阿尔卑斯郡议会的所在地，郡议会管地方服务，其余归州政府。镇子在欧文斯河谷的尽头，海拔 319 米，欧洲树种的秋色与每年的秋季节是它的名片，布法罗山、霍瑟姆山与羽顶山的雪场与步道都从这里上山，废弃的铁路改成了“墨累到山地”自行车道，墨尔本在西南约 310 公里，没有铁路。初来的人最容易犯的错，是以为布莱特在山上，而它在谷底，雪场在一小时车程外的山顶。",
     layout:
       "小镇沿奥文斯河展开，主街是加文街，河边是步道和游泳区，秋色最集中在河谷和镇中心的林荫道。布法罗山在镇西约30公里（高原、花岗岩巨石、瞭望台），霍瑟姆山滑雪场在东南约55公里，福尔斯溪在东面翻山约100公里；往南是哈里埃特维尔和费瑟托普山的登山口。自行车道向西经迈特尔福德、比奇沃思到旺加拉塔。",
     gettingAround:
@@ -802,6 +919,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   bundaberg: {
     identity:
       "班达伯格（Bundaberg）在昆士兰州中部海岸的伯内特河畔，布里斯班以北约370公里，城区人口约7.4万（2021年普查）。它因甘蔗而兴起，1888年创立的班达伯格朗姆酒厂用糖蜜酿酒，是澳大利亚最知名的朗姆酒品牌，1960年起的班达伯格姜汁啤酒同样出自这里。海边的蒙雷波斯是南半球大陆最大的红海龟产卵地之一，11月至次年3月有海龟上岸产卵和孵化的夜间观察；从班达伯格出海可到大堡礁南端的马斯格雷夫夫人岛和埃利奥特夫人岛，因此它被称为“大堡礁南门户”。传统土地所有者包括塔里贝朗·邦达人（Taribelang Bunda）等。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bundaberg (Bundaberg Region; 73,747 urban 2021; Burnett River ~20 km inland; sugar/rum 1888; Bargara beach 13 km; Mon Repos turtles; reef gateway to Lady Elliot/Musgrave; airport; backpacker farm work)
+    howItWorks:
+      "班达伯格是昆士兰的第九大城市，由班达伯格区域议会管辖，2021 年城区人口约 7.4 万；议会管地方服务，其余归州政府。城市在伯内特河的两岸，离海岸约 20 公里，甘蔗田围着市区，1888 年起的班达伯格朗姆酒厂是它的名片，海边的巴加拉在东面 13 公里，蒙雷波斯的海龟在十一月到三月上岸产卵，伊丽特女士岛的航班让它自称大堡礁的南门，机场在城南，背包客来这里做农活换签证。初来的人最容易犯的错，是以为班达伯格在海边，而市区在内陆的河边，海滩要再开 15 分钟。",
     layout:
       "市中心在伯内特河南岸，河口在东面约20公里的伯内特角。朗姆酒厂在市区东侧的河边，姜汁啤酒厂在城南。蒙雷波斯海龟保护区在城东北约15公里的海边；巴加拉是城东的海滨度假区，有海滩和珊瑚礁浮潜；埃利奥特夫人岛坐小飞机从班达伯格约30分钟，马斯格雷夫夫人岛从1770镇或班达伯格坐船。周围是甘蔗田。机场在城西南约5公里。",
     gettingAround:
@@ -816,6 +936,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "hervey-bay": {
     identity:
       "赫维湾（Hervey Bay）在昆士兰州弗雷泽海岸，布里斯班以北约290公里，人口约5.8万（2021年普查）。它是澳大利亚最著名的观鲸地——每年7–11月座头鲸在南下途中进入这片平静的海湾停留，2019年它被世界鲸类联盟评为全球第一个“鲸鱼遗产地”。海湾外的卡丽（K'gari，即弗雷泽岛）是世界最大的沙岛，1992年列入世界遗产，从赫维湾南面的河头码头坐渡轮上岛。乌兰甘码头伸入海中近900米，是小城的地标。传统土地所有者是巴查拉人（Butchulla）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Hervey Bay (57,722 2021; Fraser Coast Region formed 2008; string of suburbs along the Esplanade — Pialba, Torquay, Scarness, Urangan; whales Jul–Oct; K'gari ferries from River Heads; Whale Heritage Site 2019; airport)
+    howItWorks:
+      "赫维湾是昆士兰弗雷泽海岸的城市，2021 年人口约 5.8 万，属于 2008 年合并而成的弗雷泽海岸区域议会，议会管地方服务，其余归州政府。这座城没有传统的市中心：皮亚尔巴、托基、斯卡尼斯、乌兰甘这些原本各自独立的小镇沿滨海大道连成十几公里的一条带，乌兰甘码头是海边的坐标，去卡里岛（弗雷泽岛）的渡轮从南面的河口开出，七到十月的观鲸船让它 2019 年成为世界第一个“鲸鱼遗产地”，机场在城南，退休人口比例很高。初来的人最容易犯的错，是在赫维湾找市中心，而它是一串沿海的郊区，各有自己的商店街。",
     layout:
       "赫维湾是几个海滨社区连成的城镇，沿海湾南岸从皮亚尔巴到乌兰甘一线展开，海滨大道贯穿全程，海滩平缓无浪。乌兰甘码头和游艇港在东端，观鲸船从这里出发；机场就在乌兰甘旁。河头渡轮码头在城南约20公里，渡轮约50分钟到卡丽的金格斯海滩。卡丽岛上有七十五英里海滩、麦肯锡湖、雨林和沙丘。",
     gettingAround:
@@ -830,6 +953,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   geraldton: {
     identity:
       "杰拉尔顿（Geraldton）在西澳大利亚州中部海岸，珀斯以北约420公里，人口约3.9万（2021年普查），是珀斯以北最大的城市。它是岩龙虾捕捞和小麦出口港，也是风帆冲浪的胜地。城内斯科特山上的“悉尼号纪念碑”（2001年）纪念1941年沉没的澳大利亚巡洋舰“悉尼II号”，645只不锈钢海鸥代表阵亡官兵。海上约60公里的阿布罗霍斯群岛是1629年“巴达维亚号”沉船的地方；往北约100公里是粉红色的赫特潟湖，约160公里到卡尔巴里的峡谷海岸。传统土地所有者是雅马奇人（Yamatji）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Geraldton (City of Greater Geraldton; 38,595 urban 2021; port with 7 bulk berths; HMAS Sydney II Memorial; Abrolhos Islands 60 km; Batavia 1629; Point Moore lighthouse 1878; Perth 424 km; windsurfing)
+    howItWorks:
+      "杰拉尔顿是西澳中西部的港口城市，由大杰拉尔顿市议会管辖，2021 年城区人口约 3.9 万，珀斯在南面 424 公里；议会管地方服务，其余归州政府。城市围着港口生长，七个散货泊位运出铁矿、粮食与矿砂，市中心在港口边的海岸，悉尼号纪念碑在城东的山上，645 只不锈钢海鸥纪念 1941 年沉没的舰员；阿布罗霍斯群岛在海上 60 公里，1629 年巴达维亚号在那里沉没；春夏的风让它成为风帆与风筝冲浪的场地，机场在城东。初来的人最容易犯的错，是把杰拉尔顿当作去珀斯路上的一站，而它是中西部矿区与农区的出海口。",
     layout:
       "市中心在海边，海滨步道和港口在城北，圣方济各·沙勿略主教座堂（建筑师霍斯设计）在市中心，悉尼号纪念碑在城东的斯科特山顶。往南是海滩和风帆冲浪点，往北沿海岸走印度洋公路到卡尔巴里；赫特潟湖在格里高利港旁。阿布罗霍斯群岛坐飞机或船前往。机场在城东约11公里。",
     gettingAround:
@@ -844,6 +970,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   esperance: {
     identity:
       "埃斯佩兰斯（Esperance）在西澳大利亚州南海岸，珀斯东南约720公里，人口约1.4万（2021年普查）。它以澳大利亚最白的沙滩和碧绿的海水著称：东面约50公里的勒格朗角国家公园里，幸运湾的沙滩上常有袋鼠晒太阳；海湾外散布着雷谢什群岛的一百多座岛屿；城西的大洋公路一圈40公里串起一串海滩和悬崖。1979年美国天空实验室的残骸落在这一带。传统土地所有者是努恩加人中的伍贾里人（Wudjari），传统地名Kepa Kurl意为“水像回旋镖一样躺着的地方”。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Esperance (Shire of Esperance ~42,000 km²; 13,883 2021; deep port; Twilight Beach; Cape Le Grand NP ~60 km; Recherche Archipelago; Skylab 1979; Perth 720 km; airport)
+    howItWorks:
+      "埃斯佩兰斯是西澳南海岸的小镇，由埃斯佩兰斯郡议会管辖，辖区约 4.2 万平方公里，2021 年人口约 1.4 万，珀斯在西北 720 公里；郡议会管地方服务，其余归州政府。镇子在埃斯佩兰斯湾边，港口是南澳大利亚海岸最深的之一，粮食与矿产从这里出海，黄昏海滩沿着镇西的海岸公路排开，勒格朗角国家公园与幸运湾的袋鼠在东面约 60 公里，勒谢尔什群岛在海上，1979 年天空实验室的碎片落在镇外；机场在镇北。初来的人最容易犯的错，是以为幸运湾就在镇边，而它在一小时车程外的国家公园里。",
     layout:
       "小镇在埃斯佩兰斯湾西岸，海滨步道和码头在镇中心，镇外西面是大洋公路环线（双人湾、蓝天湾、观景台），粉湖（如今很少呈粉色）在镇西。勒格朗角国家公园在东面约50公里（幸运湾、地狱湾、法国人峰）；再往东是阿里德角。雷谢什群岛在湾外，有观光船。机场在镇西北约20公里的吉布森。",
     gettingAround:
@@ -858,6 +987,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   tanunda: {
     identity:
       "塔南达（Tanunda）是南澳大利亚州巴罗萨谷的中心小镇，阿德莱德东北约70公里，人口约4700（2021年普查）。巴罗萨谷是澳大利亚最著名的葡萄酒产区之一：1840年代普鲁士移民在这里建立了贝萨尼、朗迈尔等村庄，德国的路德宗教堂、烘焙和熏肉传统延续至今；塔南达的火鸡坪酒庄有1847年种下的设拉子老藤，被认为是世界上仍在商业生产的最古老葡萄园之一，塞佩尔特菲尔德、奔富、杰卡斯等名庄都在山谷里。塔南达铜管乐团是南半球最古老的铜管乐团之一。传统土地所有者是佩拉曼克人（Peramangk）和恩加朱里人（Ngadjuri）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Tanunda (4,710 2021; The Barossa Council, seat Nuriootpa; Barossa Valley; Prussian/Silesian Lutheran settlement 1840s; Turkey Flat Shiraz 1847; Adelaide ~66 km; no rail)
+    howItWorks:
+      "塔努恩达是南澳巴罗萨谷的小镇，2021 年人口约 4,700，属于巴罗萨议会，议会所在地在北面几公里的努里乌特帕；议会管地方服务，其余归州政府。镇子在谷底的主街两侧，1840 年代普鲁士与西里西亚的路德宗移民建起了周围的村庄，男声合唱团与铜管乐队至今还在，1847 年种下的西拉葡萄藤据信是世界上最老的仍在商业生产的葡萄园，杰卡斯、赛佩尔特斯菲尔德的酒庄散在谷里，阿德莱德在西南约 66 公里，没有铁路。初来的人最容易犯的错，是把塔努恩达当作巴罗萨的首府，而议会在努里乌特帕，酒庄在谷里各处。",
     layout:
       "塔南达在巴罗萨谷的中部，主街是默雷街，镇上有德式教堂和老店。往北约7公里是努里乌特帕（奔富等大型酒庄），往西北约10公里是塞佩尔特菲尔德（棕榈大道和百年酒庄），往南约8公里是罗兰弗拉特（杰卡斯）和莱恩多克；曼格尔山观景台在镇东。伊甸谷在东面的山上，以雷司令出名。阿德莱德机场在西南约70公里。",
     gettingAround:
@@ -872,6 +1004,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   strahan: {
     identity:
       "斯特拉恩（Strahan）是塔斯马尼亚州西海岸麦夸里港畔的小渔村，人口只有约630（2021年普查），却是进入塔斯马尼亚荒野世界遗产区的门户。游船从这里穿过港口出海口“地狱之门”，沿戈登河深入富兰克林—戈登野河国家公园的温带雨林；港内的萨拉岛是1822年至1833年间澳大利亚殖民地最严酷的流放地之一。西海岸荒野铁路从斯特拉恩沿旧矿山铁路通往昆士敦。传统土地所有者是塔斯马尼亚原住民（palawa）。",
+    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Strahan (634 2021; West Coast Council, seat Queenstown; Macquarie Harbour; Gordon River cruises into the Tasmanian Wilderness WHA; Sarah Island; West Coast Wilderness Railway; Hobart ~302 km)
+    howItWorks:
+      "斯特拉恩是塔斯马尼亚西海岸的一个小村，2021 年人口约 630，属于西海岸议会，议会所在地在内陆 40 公里的昆士敦；议会管地方服务，其余归州政府。村子在麦夸里港的岸边，19 世纪是休恩松木材与矿产的出港口，如今靠旅游：戈登河的游船从这里驶进塔斯马尼亚荒野世界遗产区，萨拉岛的流放地遗址在港湾里，西海岸荒野铁路通往昆士敦，霍巴特在东南约 300 公里。初来的人最容易犯的错，是把斯特拉恩当作一座镇，而它是一个几百人的码头村，医院、加油站与议会都在昆士敦。",
     layout:
       "小村在麦夸里港北端的斯特拉恩港湾边，码头、老海关和店铺沿海滨一条街排开，游船和铁路都从这里出发（铁路车站在里加塔角）。麦夸里港向西南延伸约30公里，出海口地狱之门在西面；戈登河从港口南端汇入；萨拉岛在港口南部。西面海岸是大洋海滩和亨蒂沙丘。昆士敦在东北约40公里的山里，霍巴特在东南约300公里。",
     gettingAround:
