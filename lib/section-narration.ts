@@ -61,9 +61,17 @@ export function createSectionNarration(): SectionNarration {
 
       let baseIndex = 0;
       let firstFired = false;
-      // 一旦某一段 Edge TTS 合成失败、回退了浏览器 TTS，本次播报剩余的段落
-      // 不再尝试 Edge TTS——避免"前半段自然音质、后半段突然变机械音"的忽好忽坏，
-      // 也省掉后面每段都重复走一遍注定失败的合成请求（更快、更省）。
+      // 合成失败后的降级策略。
+      //
+      // 原来是「一段失败 → 本次播报剩余段落全部回退浏览器 TTS，不再尝试 Edge」。
+      // 本意是避免忽好忽坏，实际效果相反：Edge TTS 走的是微软那个逆向接口，长段落
+      // （英文攻略 p90 约 850 字符）合成耗时本来就压在 13s 超时线上，一次瞬时超时
+      // 就把整篇剩下的段落永久降级 —— 用户听到的就是「只有第一段自然，后面全是机械音」。
+      //
+      // 改成连续失败计数：偶发失败只影响那一段，连着 DEGRADE_AFTER 段都失败才认为
+      // 服务不可用、整篇降级。成功一次即清零。
+      const DEGRADE_AFTER = 2;
+      let consecutiveFailures = 0;
       let degraded = false;
       // 预取管线：先合成第 0 段，播放时再合成下一段
       let nextSynth: Promise<{ url: string; wordBoundaries: WordBoundary[] } | null> | null =
@@ -79,7 +87,14 @@ export function createSectionNarration(): SectionNarration {
         const sentenceCount = splitSentences(s.text).length;
 
         const got = degraded ? null : await nextSynth;
-        if (got === null && !degraded) degraded = true;
+        if (!degraded) {
+          if (got === null) {
+            consecutiveFailures++;
+            if (consecutiveFailures >= DEGRADE_AFTER) degraded = true;
+          } else {
+            consecutiveFailures = 0;
+          }
+        }
         // 播这段时，预取下一段（已降级则不再发起 Edge TTS 请求）
         nextSynth =
           !degraded && i + 1 < parts.length

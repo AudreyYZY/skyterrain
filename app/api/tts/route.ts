@@ -1,42 +1,22 @@
-import { EdgeTTS } from "edge-tts-universal";
 import { NextResponse } from "next/server";
-import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import type { CachedResult } from "@/lib/tts-cache";
+import {
+  ALLOWED_VOICES,
+  DEFAULT_VOICE,
+  SYNTHESIS_TIMEOUT_MS,
+  cacheKeyFor,
+  normalizeText,
+  readCache,
+  synthesizeOnce,
+  writeCache,
+} from "@/lib/tts-cache";
 
 // Vercel 上显式声明这条路径的最长执行时间（需配合下面的超时/重试预算收紧，
 // 避免出现"路由值声明了 45s，但实际最坏情况远超"的情况）。
 export const maxDuration = 45;
 
-const MAX_CHARS = 6000;
-// 晓晓：Azure 中文旗舰女声，最自然流畅
-const DEFAULT_VOICE = "zh-CN-XiaoxiaoNeural";
-// 前端实际会用到的语音——见 lib/voice-preference.ts EDGE_TTS_VOICES + lib/i18n.ts TTS_VOICE_IDS。
-// 任何不在这个白名单里的 voice 一律拒绝，避免这个接口被当成任意文本转任意 Edge TTS 语音的免费代理。
-const ALLOWED_VOICES = new Set([
-  "zh-CN-XiaoxiaoNeural",
-  "zh-CN-XiaoyiNeural",
-  "zh-CN-YunxiNeural",
-  "en-US-AvaMultilingualNeural",
-]);
-// 轻微放缓 + 自然音高（大幅放缓会引入机械感）
-const PROSODY_ZH = { rate: "-6%", pitch: "+0Hz" } as const;
-// Ava 多语种女声本身节奏自然，轻微放缓贴合纪录片旁白
-const PROSODY_EN = { rate: "-4%", pitch: "+0Hz" } as const;
-function prosodyFor(voice: string) {
-  return voice.toLowerCase().startsWith("en-") ? PROSODY_EN : PROSODY_ZH;
-}
-// edge-tts-universal 调的是微软 Edge 内部"朗读"服务的逆向接口，非官方 API——
-// 微软 2025 年底起收紧了反滥用短时 token + 云端 IP 段过滤，现在单次合成经常要
-// 5-9s 才回（实测，短文本如城市攻略单段）。之前 12s×3 次重试最坏要等近 40s；
-// 8s×2 次把最坏情况压到约 17s。**2026-09-04 复核发现**：这个 8s 是按短文本
-// （单段 travel guide 字段，通常 <300 字符）校准的，对**未分段的完整航线解说**
-// （route-narration，尤其英文，同样内容字符数常是中文的 2-4 倍，实测 700-1400
-// 字符区间）系统性不够——en-US-AvaMultilingualNeural 合成这个长度稳定要
-// 10-11.5s，首次请求几乎必然先超时一次再重试，等于每条英文航线解说播放
-// 都白白多等 8s。调到 13s：绝大多数长文本请求能一次成功，不必然触发重试；
-// 短文本（5-9s）依旧远低于这个上限，行为不变。
-const SYNTHESIS_TIMEOUT_MS = 13_000;
+// 缓存键、白名单、prosody、超时、合成本身全部在 lib/tts-cache.ts —— 与
+// scripts/warm-tts.ts 共用同一份实现，保证离线预热出来的文件线上一定命中。
 const MAX_RETRIES = 1;
 
 /**
@@ -82,54 +62,6 @@ function isAllowedOrigin(request: Request): boolean {
   }
 }
 
-interface WordBoundary {
-  /** 开始时间（秒） */
-  start: number;
-  /** 结束时间（秒） */
-  end: number;
-  /** 词文本 */
-  text: string;
-}
-
-interface CachedResult {
-  audio: string; // base64
-  wordBoundaries: WordBoundary[];
-}
-
-/**
- * 磁盘缓存 —— 所有讲解/攻略文字都是提前写好的静态内容，同一 (voice, text) 组合
- * 合成一次之后结果永远不变。之前的问题不是"合成慢"本身，是**每次都重新合成**：
- * 每个访客第一次点开某段内容都要现场扛微软那个不稳定的服务，命中它变慢/超时
- * 的概率就被无限次重复放大。缓存命中后直接读文件返回，不再调用 Edge TTS——
- * 同一段内容只要成功合成过一次，之后永远是同一份音频、同一个自然语速，
- * 不会再出现"这次快这次慢""前面自然后面机械音"的不一致。
- * 本地文件系统缓存，不进 git（见 .gitignore），重启开发服务器不会清空。
- */
-const CACHE_DIR = join(process.cwd(), ".tts-cache");
-
-function cacheKeyFor(voice: string, text: string): string {
-  return createHash("sha256").update(`${voice} ${text}`).digest("hex");
-}
-
-async function readCache(key: string): Promise<CachedResult | null> {
-  try {
-    const raw = await readFile(join(CACHE_DIR, `${key}.json`), "utf-8");
-    return JSON.parse(raw) as CachedResult;
-  } catch {
-    return null; // 不存在或读取失败——当作未命中，走正常合成路径
-  }
-}
-
-async function writeCache(key: string, result: CachedResult): Promise<void> {
-  try {
-    await mkdir(CACHE_DIR, { recursive: true });
-    await writeFile(join(CACHE_DIR, `${key}.json`), JSON.stringify(result));
-  } catch (err) {
-    // 写缓存失败不影响本次请求已经成功返回的结果，只是下次还会重新合成
-    console.warn("[TTS] Cache write failed:", err instanceof Error ? err.message : err);
-  }
-}
-
 function isValidSSML(text: string): boolean {
   if (!text.trim().startsWith("<speak")) return true; // Not SSML, OK
   const openTags = (text.match(/<speak/g) || []).length;
@@ -137,33 +69,19 @@ function isValidSSML(text: string): boolean {
   return openTags === closeTags;
 }
 
-async function synthesizeWithTimeout(
-  tts: InstanceType<typeof EdgeTTS>,
-  timeoutMs: number
-): Promise<{ audio: Buffer; wordBoundaries: WordBoundary[] }> {
-  return new Promise((resolve, reject) => {
-    const timer = setTimeout(() => {
-      reject(new Error(`TTS 合成超时 (${timeoutMs}ms)`));
-    }, timeoutMs);
-
-    tts.synthesize()
-      .then(({ audio, subtitle }) => {
-        clearTimeout(timer);
-        // subtitle: [{offset: 100ns, duration: 100ns, text: string}, ...]
-        const wordBoundaries: WordBoundary[] = subtitle.map((s) => ({
-          start: s.offset / 1e7,      // 100ns → seconds
-          end: (s.offset + s.duration) / 1e7,
-          text: s.text,
-        }));
-        audio.arrayBuffer().then((ab) => {
-          resolve({ audio: Buffer.from(ab), wordBoundaries });
-        });
-      })
-      .catch((err) => {
-        clearTimeout(timer);
-        reject(err);
-      });
+function jsonResult(result: CachedResult): Response {
+  return new Response(JSON.stringify(result), {
+    headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
   });
+}
+
+/** 写缓存失败不影响本次已成功的返回，只是下次还会重新合成 */
+async function writeCacheBestEffort(key: string, result: CachedResult): Promise<void> {
+  try {
+    await writeCache(key, result);
+  } catch (err) {
+    console.warn("[TTS] Cache write failed:", err instanceof Error ? err.message : err);
+  }
 }
 
 export async function POST(request: Request) {
@@ -191,15 +109,13 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "不支持的 voice" }, { status: 400 });
     }
 
-    const clipped = text.slice(0, MAX_CHARS);
+    const clipped = normalizeText(text);
     const cacheKey = cacheKeyFor(voice, clipped);
 
     const cached = await readCache(cacheKey);
     if (cached) {
       console.log(`[TTS] Cache hit voice=${voice} chars=${clipped.length}`);
-      return new Response(JSON.stringify(cached), {
-        headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
-      });
+      return jsonResult(cached);
     }
 
     // SSML 格式校验
@@ -212,34 +128,22 @@ export async function POST(request: Request) {
       if (!stripped) {
         return NextResponse.json({ error: "SSML 内容为空" }, { status: 400 });
       }
-      const tts = new EdgeTTS(stripped, voice, { ...prosodyFor(voice) });
-      const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
-      const result: CachedResult = { audio: audio.toString("base64"), wordBoundaries };
-      await writeCache(cacheKey, result);
-      return new Response(JSON.stringify(result), {
-        headers: { "Content-Type": "application/json", "Cache-Control": "no-store" },
-      });
+      const result = await synthesizeOnce(stripped, voice, SYNTHESIS_TIMEOUT_MS);
+      await writeCacheBestEffort(cacheKey, result);
+      return jsonResult(result);
     }
 
     // 重试逻辑
     let lastError: Error | null = null;
     for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
       try {
-        const tts = new EdgeTTS(clipped, voice, { ...prosodyFor(voice) });
-
-        const { audio, wordBoundaries } = await synthesizeWithTimeout(tts, SYNTHESIS_TIMEOUT_MS);
+        const result = await synthesizeOnce(clipped, voice, SYNTHESIS_TIMEOUT_MS);
         const elapsed = Date.now() - startTime;
 
-        console.log(`[TTS] OK voice=${voice} chars=${clipped.length} elapsed=${elapsed}ms words=${wordBoundaries.length} attempt=${attempt + 1}`);
+        console.log(`[TTS] OK voice=${voice} chars=${clipped.length} elapsed=${elapsed}ms words=${result.wordBoundaries.length} attempt=${attempt + 1}`);
 
-        const result: CachedResult = { audio: audio.toString("base64"), wordBoundaries };
-        await writeCache(cacheKey, result);
-        return new Response(JSON.stringify(result), {
-          headers: {
-            "Content-Type": "application/json",
-            "Cache-Control": "no-store",
-          },
-        });
+        await writeCacheBestEffort(cacheKey, result);
+        return jsonResult(result);
       } catch (err) {
         lastError = err instanceof Error ? err : new Error(String(err));
         const elapsed = Date.now() - startTime;
