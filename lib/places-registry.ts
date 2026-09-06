@@ -188,6 +188,9 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "nl-limburg": { zh: "林堡省", en: "Limburg", order: 163 },
   "nl-groningen-friesland": { zh: "格罗宁根与弗里斯兰", en: "Groningen & Friesland", order: 164 },
   "nl-overijssel": { zh: "上艾瑟尔省", en: "Overijssel", order: 165 },
+  "nl-gelderland": { zh: "海尔德兰省", en: "Gelderland", order: 166 },
+  "nl-noord-brabant": { zh: "北布拉班特省", en: "North Brabant", order: 167 },
+  "nl-zeeland": { zh: "泽兰省", en: "Zeeland", order: 168 },
   // 奥地利（维也纳→蒂罗尔→萨尔茨堡→上奥地利→克恩顿→施泰尔马克→福拉尔贝格）
   "at-wien": { zh: "维也纳", en: "Vienna", order: 170 },
   "at-tirol": { zh: "蒂罗尔", en: "Tyrol", order: 171 },
@@ -196,6 +199,8 @@ export const ZONE_META: Record<string, { zh: string; en: string; order: number }
   "at-karnten": { zh: "克恩顿", en: "Carinthia", order: 174 },
   "at-steiermark": { zh: "施泰尔马克", en: "Styria", order: 175 },
   "at-vorarlberg": { zh: "福拉尔贝格", en: "Vorarlberg", order: 176 },
+  "at-niederosterreich": { zh: "下奥地利", en: "Lower Austria", order: 177 },
+  "at-burgenland": { zh: "布尔根兰", en: "Burgenland", order: 178 },
   // 比利时（order 从 200 开始，与并行分支预留的号段错开）
   "be-brussels": { zh: "布鲁塞尔首都区", en: "Brussels-Capital", order: 200 },
   "be-antwerp": { zh: "安特卫普省", en: "Antwerp Province", order: 201 },
@@ -2808,6 +2813,36 @@ export const CITY_REGISTRY: CityEntry[] = [
     source: "沃洛斯市中心 39.3622,22.9444；VOL 机场：公开资料",
   },
 
+  // ── 希腊 批2（2026-09-05）──
+  {
+    id: "mykonos", nameZh: "米科诺斯", nameEn: "Mykonos (Chora)", country: "greece", tier: "notable", zone: "gr-aegean", admin1Zh: "南爱琴大区", admin1En: "South Aegean",
+    lon: 25.3642, lat: 37.4589,
+    airport: { iata: "JMK", nameZh: "米科诺斯机场", nameEn: "Mykonos Airport", lon: 25.3481, lat: 37.4351 },
+    source: "Mykonos town 37.4589,25.3642（en.wikipedia）；JMK 机场：en.wikipedia（镇东南约 4 公里，夏季有欧洲各地航线）；全岛人口 10,704（2021 普查）",
+  },
+  {
+    id: "naxos", nameZh: "纳克索斯", nameEn: "Naxos (Chora)", country: "greece", tier: "notable", zone: "gr-aegean", admin1Zh: "南爱琴大区", admin1En: "South Aegean",
+    lon: 25.4039, lat: 37.0875,
+    airport: { iata: "JNX", nameZh: "纳克索斯机场", nameEn: "Naxos Island National Airport", lon: 25.3681, lat: 37.0811 },
+    source: "Naxos town 37.0875,25.4039（en.wikipedia）；JNX 机场：en.wikipedia（镇南约 3 公里，雅典航线及季节性航线）；镇人口 8,897、全岛 20,578（2021 普查），基克拉泽斯最大岛",
+  },
+  {
+    id: "kalabaka", nameZh: "卡兰巴卡（迈泰奥拉）", nameEn: "Kalabaka (Meteora)", country: "greece", tier: "notable", zone: "gr-thessaly", admin1Zh: "色萨利大区", admin1En: "Thessaly",
+    lon: 21.6283, lat: 39.7081,
+    source: "Kalabaka 39.7081,21.6283（en.wikipedia）；无机场，最近为塞萨洛尼基（约 200 公里），条目不写机场字段，火车自雅典约 4–5 小时；镇人口 8,573（2021 普查）；迈泰奥拉 1988 世界遗产",
+  },
+  {
+    id: "patras", nameZh: "帕特雷", nameEn: "Patras", country: "greece", tier: "major", zone: "gr-peloponnese", admin1Zh: "西希腊大区", admin1En: "Western Greece",
+    lon: 21.7333, lat: 38.2500,
+    source: "Patras 38.2500,21.7333（en.wikipedia）；本地无民航机场，最近为阿拉克索斯 GPA（约 45 公里，季节性）、雅典（约 215 公里），条目不写机场字段；人口 215,922（2021 普查），希腊第三大城市",
+  },
+  {
+    id: "zakynthos", nameZh: "扎金索斯", nameEn: "Zakynthos (Zante)", country: "greece", tier: "notable", zone: "gr-ionian", admin1Zh: "伊奥尼亚群岛大区", admin1En: "Ionian Islands",
+    lon: 20.9000, lat: 37.7833,
+    airport: { iata: "ZTH", nameZh: "扎金索斯国际机场", nameEn: "Zakynthos International", lon: 20.8842, lat: 37.7508 },
+    source: "Zakynthos town 37.7833,20.9000（en.wikipedia）；ZTH 机场：en.wikipedia（镇南约 4 公里，夏季有欧洲航线，海龟繁殖季夜间禁飞）；镇人口 9,760（2021 普查）",
+  },
+
   // ── 德国 批2（2026-09-05）──
   {
     id: "leipzig", nameZh: "莱比锡", nameEn: "Leipzig", country: "germany", tier: "major", zone: "de-east", admin1Zh: "萨克森州", admin1En: "Saxony",
@@ -2904,6 +2939,36 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: -25.6756, lat: 37.7412,
     airport: { iata: "PDL", nameZh: "蓬塔德尔加达机场", nameEn: "Ponta Delgada Airport", lon: -25.6979, lat: 37.7412 },
     source: "蓬塔德尔加达市中心 37.7412,-25.6756；PDL 机场：公开资料",
+  },
+
+  // ── 葡萄牙 批2（2026-09-05）──
+  {
+    id: "lagos", nameZh: "拉戈斯", nameEn: "Lagos", country: "portugal", tier: "notable", zone: "pt-algarve", admin1Zh: "法鲁区", admin1En: "Faro District",
+    lon: -8.6728, lat: 37.1028,
+    airport: { iata: "FAO", nameZh: "法鲁机场（经法鲁转乘）", nameEn: "Faro Airport (via Faro)", lon: -7.9659, lat: 37.0144 },
+    source: "Lagos 37.1028,-8.6728（en.wikipedia）；无自有机场，与法鲁条目共用 FAO（约 90 公里，火车约 1.5 小时）；人口 33,494（2021 普查）",
+  },
+  {
+    id: "tavira", nameZh: "塔维拉", nameEn: "Tavira", country: "portugal", tier: "notable", zone: "pt-algarve", admin1Zh: "法鲁区", admin1En: "Faro District",
+    lon: -7.6500, lat: 37.1167,
+    airport: { iata: "FAO", nameZh: "法鲁机场（经法鲁转乘）", nameEn: "Faro Airport (via Faro)", lon: -7.9659, lat: 37.0144 },
+    source: "Tavira 37.1167,-7.6500（en.wikipedia）；无自有机场，与法鲁条目共用 FAO（约 28 公里）；人口 26,167（2011 普查）",
+  },
+  {
+    id: "nazare", nameZh: "纳扎雷", nameEn: "Nazaré", country: "portugal", tier: "notable", zone: "pt-central", admin1Zh: "莱里亚区", admin1En: "Leiria District",
+    lon: -9.0706, lat: 39.6011,
+    source: "Nazaré 39.6011,-9.0706（en.wikipedia）；无机场，最近为里斯本（约 120 公里），条目不写机场字段，大巴自里斯本约 1.5–2 小时；人口 14,889（2021）",
+  },
+  {
+    id: "obidos", nameZh: "奥比杜什", nameEn: "Óbidos", country: "portugal", tier: "notable", zone: "pt-central", admin1Zh: "莱里亚区", admin1En: "Leiria District",
+    lon: -9.1578, lat: 39.3581,
+    source: "Óbidos 39.3581,-9.1578（en.wikipedia）；无机场，最近为里斯本（约 80 公里），条目不写机场字段，大巴自里斯本约 1 小时；镇内人口约 3,100，市镇 11,772（2011）",
+  },
+  {
+    id: "viana-do-castelo", nameZh: "维亚纳堡", nameEn: "Viana do Castelo", country: "portugal", tier: "notable", zone: "pt-north", admin1Zh: "维亚纳堡区", admin1En: "Viana do Castelo District",
+    lon: -8.8300, lat: 41.7000,
+    airport: { iata: "OPO", nameZh: "波尔图机场（经波尔图转乘）", nameEn: "Porto Airport (via Porto)", lon: -8.6814, lat: 41.2481 },
+    source: "Viana do Castelo 41.7000,-8.8300（en.wikipedia）；无自有机场，与波尔图条目共用 OPO（约 60 公里，米尼奥线火车约 1.5 小时）；市镇人口 85,778（2021）",
   },
   // ===== 比利时 =====
   {
@@ -3033,6 +3098,35 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 6.0958, lat: 52.5168,
     source: "兹沃勒 52.5168,6.0958：公开资料（无机场，就近用史基浦；艾瑟尔河畔汉萨古城，羊角村门户）",
   },
+
+  // ── 荷兰 批2（2026-09-05）──
+  {
+    id: "eindhoven", nameZh: "埃因霍温", nameEn: "Eindhoven", country: "netherlands", tier: "major", zone: "nl-noord-brabant", admin1Zh: "北布拉班特省", admin1En: "North Brabant",
+    lon: 5.4830, lat: 51.4330,
+    airport: { iata: "EIN", nameZh: "埃因霍温机场", nameEn: "Eindhoven Airport", lon: 5.3744, lat: 51.4500 },
+    source: "Eindhoven 51.4330,5.4830（en.wikipedia）；EIN 机场：en.wikipedia（市中心西约 8 公里，荷兰第二大客运机场）；人口 249,054（2025-01），荷兰第五大城市",
+  },
+  {
+    id: "arnhem", nameZh: "阿纳姆", nameEn: "Arnhem", country: "netherlands", tier: "notable", zone: "nl-gelderland", admin1Zh: "海尔德兰省", admin1En: "Gelderland",
+    lon: 5.9170, lat: 51.9830,
+    source: "Arnhem 51.9830,5.9170（en.wikipedia）；无机场，最近为阿姆斯特丹史基浦（约 100 公里）、埃因霍温，条目不写机场字段，城际列车自阿姆斯特丹约 1 小时 10 分；人口 162,424（2021-01）",
+  },
+  {
+    id: "giethoorn", nameZh: "羊角村", nameEn: "Giethoorn", country: "netherlands", tier: "notable", zone: "nl-overijssel", admin1Zh: "上艾瑟尔省", admin1En: "Overijssel",
+    lon: 6.0781, lat: 52.7389,
+    source: "Giethoorn 52.7389,6.0781（en.wikipedia）；无机场，条目不写机场字段，火车到斯滕韦克再转公交；人口 2,805（2021）",
+  },
+  {
+    id: "middelburg", nameZh: "米德尔堡", nameEn: "Middelburg", country: "netherlands", tier: "notable", zone: "nl-zeeland", admin1Zh: "泽兰省", admin1En: "Zeeland",
+    lon: 3.6135, lat: 51.5000,
+    source: "Middelburg 51.5000,3.6135（en.wikipedia）；无机场，条目不写机场字段，城际列车自阿姆斯特丹约 2.5 小时、鹿特丹约 1.5 小时；人口 48,964（2021-01）",
+  },
+  {
+    id: "alkmaar", nameZh: "阿尔克马尔", nameEn: "Alkmaar", country: "netherlands", tier: "notable", zone: "nl-noord-holland", admin1Zh: "北荷兰省", admin1En: "North Holland",
+    lon: 4.7500, lat: 52.6333,
+    airport: { iata: "AMS", nameZh: "史基浦机场（经阿姆斯特丹转乘）", nameEn: "Amsterdam Schiphol (via Amsterdam)", lon: 4.7683, lat: 52.3105 },
+    source: "Alkmaar 52.6333,4.7500（en.wikipedia）；无自有机场，与阿姆斯特丹条目共用 AMS（约 40 公里）；人口 113,170（2022-11）",
+  },
   // ===== 奥地利 =====
   {
     id: "vienna", nameZh: "维也纳", nameEn: "Vienna", country: "austria", tier: "capital", zone: "at-wien", admin1Zh: "维也纳", admin1En: "Vienna",
@@ -3099,6 +3193,36 @@ export const CITY_REGISTRY: CityEntry[] = [
     lon: 12.7942, lat: 47.3239,
     airport: { iata: "SZG", nameZh: "萨尔茨堡莫扎特机场", nameEn: "Salzburg Airport W. A. Mozart", lon: 13.0043, lat: 47.7933 },
     source: "采尔湖畔采尔市中心 47.3239,12.7942；本地无商业机场，最近机场为萨尔茨堡机场（距市区约80km）：公开资料",
+  },
+
+  // ── 奥地利 批2（2026-09-05）──
+  {
+    id: "sankt-polten", nameZh: "圣珀尔滕", nameEn: "Sankt Pölten", country: "austria", tier: "notable", zone: "at-niederosterreich", admin1Zh: "下奥地利州", admin1En: "Lower Austria",
+    lon: 15.6167, lat: 48.2000,
+    airport: { iata: "VIE", nameZh: "维也纳国际机场（经维也纳转乘）", nameEn: "Vienna International (via Vienna)", lon: 16.5697, lat: 48.1103 },
+    source: "Sankt Pölten 48.2000,15.6167（en.wikipedia）；无自有机场，与维也纳条目共用 VIE（约 85 公里，Railjet 直达）；人口 59,767（2025-01）",
+  },
+  {
+    id: "krems", nameZh: "克雷姆斯（瓦豪）", nameEn: "Krems an der Donau (Wachau)", country: "austria", tier: "notable", zone: "at-niederosterreich", admin1Zh: "下奥地利州", admin1En: "Lower Austria",
+    lon: 15.6167, lat: 48.4167,
+    source: "Krems 48.4167,15.6167（en.wikipedia）；无机场，最近为维也纳 VIE（约 90 公里），条目不写机场字段，火车自维也纳约 1 小时；人口 25,272（2023-01）；瓦豪文化景观 2000 世界遗产",
+  },
+  {
+    id: "bad-ischl", nameZh: "巴特伊舍尔", nameEn: "Bad Ischl", country: "austria", tier: "notable", zone: "at-oberosterreich", admin1Zh: "上奥地利州", admin1En: "Upper Austria",
+    lon: 13.6333, lat: 47.7203,
+    airport: { iata: "SZG", nameZh: "萨尔茨堡机场（经萨尔茨堡转乘）", nameEn: "Salzburg Airport (via Salzburg)", lon: 13.0043, lat: 47.7933 },
+    source: "Bad Ischl 47.7203,13.6333（en.wikipedia）；无自有机场，与萨尔茨堡条目共用 SZG（约 55 公里）；人口 14,133（2018-01）；2024 欧洲文化之都",
+  },
+  {
+    id: "eisenstadt", nameZh: "艾森施塔特", nameEn: "Eisenstadt", country: "austria", tier: "notable", zone: "at-burgenland", admin1Zh: "布尔根兰州", admin1En: "Burgenland",
+    lon: 16.5167, lat: 47.8500,
+    airport: { iata: "VIE", nameZh: "维也纳国际机场（经维也纳转乘）", nameEn: "Vienna International (via Vienna)", lon: 16.5697, lat: 48.1103 },
+    source: "Eisenstadt 47.8500,16.5167（en.wikipedia）；无自有机场，与维也纳条目共用 VIE（约 45 公里）；人口 16,118（2025）",
+  },
+  {
+    id: "st-anton", nameZh: "圣安东（阿尔贝格）", nameEn: "St. Anton am Arlberg", country: "austria", tier: "notable", zone: "at-tirol", admin1Zh: "蒂罗尔州", admin1En: "Tyrol",
+    lon: 10.2667, lat: 47.1167,
+    source: "St. Anton am Arlberg 47.1167,10.2667（en.wikipedia，海拔 1,304 米）；无机场，最近为因斯布鲁克（约 100 公里）、苏黎世（约 200 公里），条目不写机场字段，阿尔贝格铁路直达；人口 2,357（2021）",
   },
   // ===== 爱尔兰 =====
   {

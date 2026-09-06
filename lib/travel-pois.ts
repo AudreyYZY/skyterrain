@@ -2213,6 +2213,47 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "马克里尼察村", nameEn: "Makrinitsa", lon: 23.0011, lat: 39.4106, kind: "district" },
     { nameZh: "波尔塔里亚村", nameEn: "Portaria", lon: 23.0006, lat: 39.3892, kind: "district" },
   ],
+  // ── 希腊 批2（2026-09-05）──
+  mykonos: [
+    { nameZh: "卡托米利风车", nameEn: "Kato Mili Windmills", lon: 25.3260, lat: 37.4440, kind: "landmark" },
+    { nameZh: "小威尼斯", nameEn: "Little Venice", lon: 25.3250, lat: 37.4460, kind: "district" },
+    { nameZh: "帕拉波尔蒂亚尼教堂", nameEn: "Panagia Paraportiani", lon: 25.3240, lat: 37.4480, kind: "landmark" },
+    { nameZh: "老港（提洛岛船）", nameEn: "Old Port (Delos boats)", lon: 25.3290, lat: 37.4490, kind: "transport" },
+    { nameZh: "提洛岛遗址", nameEn: "Delos", lon: 25.2670, lat: 37.3960, kind: "landmark" },
+    { nameZh: "天堂海滩", nameEn: "Paradise Beach", lon: 25.3620, lat: 37.4120, kind: "nature" },
+  ],
+  naxos: [
+    { nameZh: "波尔塔拉（阿波罗神庙门）", nameEn: "Portara", lon: 25.3740, lat: 37.1090, kind: "landmark" },
+    { nameZh: "卡斯特罗（威尼斯城堡区）", nameEn: "Kastro", lon: 25.3770, lat: 37.1060, kind: "district" },
+    { nameZh: "圣普罗科皮奥斯海滩", nameEn: "Agios Prokopios Beach", lon: 25.3560, lat: 37.0700, kind: "nature" },
+    { nameZh: "哈尔基村", nameEn: "Halki", lon: 25.4850, lat: 37.0620, kind: "district" },
+    { nameZh: "阿佩兰托斯村", nameEn: "Apeiranthos", lon: 25.5220, lat: 37.0740, kind: "district" },
+    { nameZh: "宙斯山", nameEn: "Mount Zas", lon: 25.4990, lat: 37.0350, kind: "nature" },
+  ],
+  kalabaka: [
+    { nameZh: "大迈泰奥拉修道院", nameEn: "Great Meteoron Monastery", lon: 21.6270, lat: 39.7250, kind: "landmark" },
+    { nameZh: "瓦尔拉姆修道院", nameEn: "Varlaam Monastery", lon: 21.6300, lat: 39.7220, kind: "landmark" },
+    { nameZh: "圣斯特凡诺修道院", nameEn: "St. Stephen's Monastery", lon: 21.6380, lat: 39.7120, kind: "landmark" },
+    { nameZh: "卡斯特拉基村", nameEn: "Kastraki", lon: 21.6180, lat: 39.7140, kind: "district" },
+    { nameZh: "卡兰巴卡站", nameEn: "Kalambaka Station", lon: 21.6260, lat: 39.7040, kind: "transport" },
+  ],
+  patras: [
+    { nameZh: "圣安德烈主教座堂", nameEn: "St. Andrew's Cathedral", lon: 21.7280, lat: 38.2410, kind: "landmark" },
+    { nameZh: "罗马音乐厅", nameEn: "Roman Odeon", lon: 21.7330, lat: 38.2480, kind: "landmark" },
+    { nameZh: "帕特雷城堡", nameEn: "Patras Castle", lon: 21.7350, lat: 38.2460, kind: "landmark" },
+    { nameZh: "里奥—安蒂里奥大桥", nameEn: "Rio–Antirrio Bridge", lon: 21.7860, lat: 38.3210, kind: "landmark" },
+    { nameZh: "阿凯亚克劳斯酒庄", nameEn: "Achaia Clauss Winery", lon: 21.7800, lat: 38.2100, kind: "landmark" },
+    { nameZh: "帕特雷港", nameEn: "Port of Patras", lon: 21.7300, lat: 38.2500, kind: "transport" },
+  ],
+  zakynthos: [
+    { nameZh: "索洛莫斯广场", nameEn: "Solomos Square", lon: 20.8990, lat: 37.7860, kind: "district" },
+    { nameZh: "圣狄奥尼修斯教堂", nameEn: "Church of St. Dionysios", lon: 20.8990, lat: 37.7790, kind: "landmark" },
+    { nameZh: "博哈利城堡", nameEn: "Bochali Castle", lon: 20.8880, lat: 37.7920, kind: "landmark" },
+    { nameZh: "纳瓦吉奥沉船湾观景台", nameEn: "Navagio (Shipwreck) Viewpoint", lon: 20.6270, lat: 37.8580, kind: "nature" },
+    { nameZh: "拉加纳斯湾（海龟）", nameEn: "Laganas Bay (turtles)", lon: 20.8600, lat: 37.7250, kind: "nature" },
+    { nameZh: "蓝洞", nameEn: "Blue Caves", lon: 20.6420, lat: 37.9270, kind: "nature" },
+  ],
+
 
   // ── 葡萄牙 ──
   lisbon: [
@@ -2288,6 +2329,44 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "富尔纳斯地热区", nameEn: "Furnas Geothermal Area", lon: -25.3181, lat: 37.7697, kind: "nature" },
     { nameZh: "圣米格尔茶园", nameEn: "São Miguel Tea Plantations", lon: -25.3400, lat: 37.8200, kind: "nature" },
   ],
+  // ── 葡萄牙 批2（2026-09-05）──
+  lagos: [
+    { nameZh: "虔诚角", nameEn: "Ponta da Piedade", lon: -8.6690, lat: 37.0800, kind: "nature" },
+    { nameZh: "多娜安娜海滩", nameEn: "Praia Dona Ana", lon: -8.6690, lat: 37.0910, kind: "nature" },
+    { nameZh: "奴隶市场博物馆", nameEn: "Mercado de Escravos", lon: -8.6720, lat: 37.1000, kind: "landmark" },
+    { nameZh: "老城与城墙", nameEn: "Old Town & Walls", lon: -8.6740, lat: 37.1010, kind: "district" },
+    { nameZh: "梅亚海滩", nameEn: "Meia Praia", lon: -8.6500, lat: 37.1100, kind: "nature" },
+    { nameZh: "拉戈斯站", nameEn: "Lagos Station", lon: -8.6760, lat: 37.1060, kind: "transport" },
+  ],
+  tavira: [
+    { nameZh: "罗马桥", nameEn: "Roman Bridge", lon: -7.6500, lat: 37.1270, kind: "landmark" },
+    { nameZh: "塔维拉城堡", nameEn: "Tavira Castle", lon: -7.6510, lat: 37.1250, kind: "landmark" },
+    { nameZh: "共和国广场", nameEn: "Praça da República", lon: -7.6500, lat: 37.1260, kind: "district" },
+    { nameZh: "塔维拉岛渡轮", nameEn: "Ilha de Tavira Ferry", lon: -7.6550, lat: 37.1180, kind: "transport" },
+    { nameZh: "盐田与里亚福尔莫萨", nameEn: "Salt Pans & Ria Formosa", lon: -7.6300, lat: 37.1100, kind: "nature" },
+  ],
+  nazare: [
+    { nameZh: "北滩（巨浪）", nameEn: "Praia do Norte", lon: -9.0850, lat: 39.6080, kind: "nature" },
+    { nameZh: "圣米格尔堡与灯塔", nameEn: "Fort of São Miguel Arcanjo", lon: -9.0850, lat: 39.6040, kind: "landmark" },
+    { nameZh: "西蒂奥与缆车", nameEn: "Sítio & Funicular", lon: -9.0770, lat: 39.6050, kind: "landmark" },
+    { nameZh: "纳扎雷海滩", nameEn: "Praia da Nazaré", lon: -9.0730, lat: 39.6000, kind: "nature" },
+    { nameZh: "纳扎雷圣母教堂", nameEn: "Church of Our Lady of Nazaré", lon: -9.0760, lat: 39.6050, kind: "landmark" },
+  ],
+  obidos: [
+    { nameZh: "城堡与城墙", nameEn: "Castle & Walls", lon: -9.1570, lat: 39.3620, kind: "landmark" },
+    { nameZh: "直街", nameEn: "Rua Direita", lon: -9.1580, lat: 39.3600, kind: "district" },
+    { nameZh: "城门与瓷砖礼拜堂", nameEn: "Porta da Vila", lon: -9.1580, lat: 39.3580, kind: "landmark" },
+    { nameZh: "圣玛利亚教堂", nameEn: "Igreja de Santa Maria", lon: -9.1575, lat: 39.3610, kind: "landmark" },
+    { nameZh: "奥比杜什潟湖", nameEn: "Óbidos Lagoon", lon: -9.2200, lat: 39.4100, kind: "nature" },
+  ],
+  "viana-do-castelo": [
+    { nameZh: "圣卢西亚圣殿", nameEn: "Santa Luzia Sanctuary", lon: -8.8340, lat: 41.7010, kind: "landmark" },
+    { nameZh: "埃菲尔桥", nameEn: "Ponte Eiffel", lon: -8.8270, lat: 41.6900, kind: "landmark" },
+    { nameZh: "共和国广场", nameEn: "Praça da República", lon: -8.8290, lat: 41.6930, kind: "district" },
+    { nameZh: "吉尔·埃亚内斯医院船", nameEn: "Gil Eannes Hospital Ship", lon: -8.8320, lat: 41.6900, kind: "landmark" },
+    { nameZh: "卡贝德洛海滩", nameEn: "Praia do Cabedelo", lon: -8.8450, lat: 41.6800, kind: "nature" },
+  ],
+
   // ── 比利时 ──
   brussels: [
     { nameZh: "大广场", nameEn: "Grand Place", lon: 4.3525, lat: 50.8467, kind: "landmark" },
@@ -2415,6 +2494,46 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "桑德波特城门", nameEn: "Sassenpoort", lon: 6.0994, lat: 52.5089, kind: "landmark" },
     { nameZh: "羊角村", nameEn: "Giethoorn", lon: 6.0800, lat: 52.7400, kind: "district" },
   ],
+  // ── 荷兰 批2（2026-09-05）──
+  eindhoven: [
+    { nameZh: "斯特赖普 S 创意区", nameEn: "Strijp-S", lon: 5.4550, lat: 51.4450, kind: "district" },
+    { nameZh: "范阿贝博物馆", nameEn: "Van Abbemuseum", lon: 5.4820, lat: 51.4340, kind: "landmark" },
+    { nameZh: "埃沃吕翁", nameEn: "Evoluon", lon: 5.4470, lat: 51.4430, kind: "landmark" },
+    { nameZh: "飞利浦博物馆", nameEn: "Philips Museum", lon: 5.4760, lat: 51.4390, kind: "landmark" },
+    { nameZh: "飞利浦球场", nameEn: "Philips Stadion", lon: 5.4680, lat: 51.4420, kind: "landmark" },
+    { nameZh: "纽嫩（梵高村）", nameEn: "Nuenen (Van Gogh Village)", lon: 5.5480, lat: 51.4730, kind: "district" },
+  ],
+  arnhem: [
+    { nameZh: "约翰·弗罗斯特桥", nameEn: "John Frost Bridge", lon: 5.9100, lat: 51.9770, kind: "landmark" },
+    { nameZh: "空降兵博物馆（奥斯特贝克）", nameEn: "Airborne Museum Hartenstein", lon: 5.8480, lat: 51.9860, kind: "landmark" },
+    { nameZh: "荷兰露天博物馆", nameEn: "Netherlands Open Air Museum", lon: 5.9100, lat: 52.0100, kind: "landmark" },
+    { nameZh: "伯格斯动物园", nameEn: "Burgers' Zoo", lon: 5.9000, lat: 52.0080, kind: "nature" },
+    { nameZh: "松斯贝克公园", nameEn: "Sonsbeek Park", lon: 5.9060, lat: 51.9950, kind: "nature" },
+    { nameZh: "克勒勒—米勒博物馆", nameEn: "Kröller-Müller Museum", lon: 5.8170, lat: 52.0950, kind: "landmark" },
+  ],
+  giethoorn: [
+    { nameZh: "羊角村运河（宾嫩帕德）", nameEn: "Giethoorn Canals (Binnenpad)", lon: 6.0780, lat: 52.7390, kind: "district" },
+    { nameZh: "老村博物馆", nameEn: "Museum Giethoorn 't Olde Maat Uus", lon: 6.0790, lat: 52.7400, kind: "landmark" },
+    { nameZh: "博文维德湖", nameEn: "Bovenwijde Lake", lon: 6.1000, lat: 52.7300, kind: "nature" },
+    { nameZh: "韦里本—维登国家公园", nameEn: "Weerribben-Wieden National Park", lon: 6.0500, lat: 52.7700, kind: "nature" },
+    { nameZh: "斯滕韦克站", nameEn: "Steenwijk Station", lon: 6.1190, lat: 52.7860, kind: "transport" },
+  ],
+  middelburg: [
+    { nameZh: "修道院与长约翰塔", nameEn: "Abbey & Lange Jan", lon: 3.6130, lat: 51.4990, kind: "landmark" },
+    { nameZh: "市政厅", nameEn: "Town Hall", lon: 3.6120, lat: 51.5000, kind: "landmark" },
+    { nameZh: "泽兰博物馆", nameEn: "Zeeuws Museum", lon: 3.6135, lat: 51.4990, kind: "landmark" },
+    { nameZh: "费勒", nameEn: "Veere", lon: 3.6650, lat: 51.5480, kind: "district" },
+    { nameZh: "东斯海尔德风暴潮屏障", nameEn: "Oosterschelde Storm Surge Barrier", lon: 3.7300, lat: 51.6300, kind: "landmark" },
+    { nameZh: "东堡海滩", nameEn: "Domburg Beach", lon: 3.5000, lat: 51.5650, kind: "nature" },
+  ],
+  alkmaar: [
+    { nameZh: "奶酪市场与称重楼", nameEn: "Cheese Market & Waag", lon: 4.7460, lat: 52.6320, kind: "landmark" },
+    { nameZh: "圣劳伦斯大教堂", nameEn: "Grote Sint-Laurenskerk", lon: 4.7420, lat: 52.6330, kind: "landmark" },
+    { nameZh: "运河老城", nameEn: "Canal Old Town", lon: 4.7450, lat: 52.6310, kind: "district" },
+    { nameZh: "阿尔克马尔站", nameEn: "Alkmaar Station", lon: 4.7400, lat: 52.6380, kind: "transport" },
+    { nameZh: "埃赫蒙德海滩", nameEn: "Egmond aan Zee Beach", lon: 4.6270, lat: 52.6170, kind: "nature" },
+  ],
+
 
   // ── 奥地利 ──
   vienna: [
@@ -2474,6 +2593,43 @@ export const POIS_BY_CITY: Record<string, CityPoi[]> = {
     { nameZh: "采尔湖沿岸", nameEn: "Zeller See Lakeside", lon: 12.79, lat: 47.32, kind: "nature" },
     { nameZh: "基茨施泰因峰缆车站", nameEn: "Kitzsteinhorn Cable Car Base", lon: 12.6961, lat: 47.2483, kind: "transport" },
   ],
+  // ── 奥地利 批2（2026-09-05）──
+  "sankt-polten": [
+    { nameZh: "市政厅广场", nameEn: "Rathausplatz", lon: 15.6230, lat: 48.2040, kind: "district" },
+    { nameZh: "圣珀尔滕主教座堂", nameEn: "St. Pölten Cathedral", lon: 15.6250, lat: 48.2060, kind: "landmark" },
+    { nameZh: "州政府区与音塔", nameEn: "Landhaus Quarter & Klangturm", lon: 15.6320, lat: 48.2000, kind: "landmark" },
+    { nameZh: "节日剧院", nameEn: "Festspielhaus", lon: 15.6300, lat: 48.2010, kind: "landmark" },
+    { nameZh: "圣珀尔滕站", nameEn: "St. Pölten Hauptbahnhof", lon: 15.6240, lat: 48.2080, kind: "transport" },
+  ],
+  krems: [
+    { nameZh: "施泰纳门", nameEn: "Steiner Tor", lon: 15.5950, lat: 48.4100, kind: "landmark" },
+    { nameZh: "老城与漫画博物馆", nameEn: "Old Town & Karikaturmuseum", lon: 15.5980, lat: 48.4110, kind: "district" },
+    { nameZh: "格特魏格修道院", nameEn: "Göttweig Abbey", lon: 15.6100, lat: 48.3680, kind: "landmark" },
+    { nameZh: "杜恩施泰因", nameEn: "Dürnstein", lon: 15.5200, lat: 48.3950, kind: "district" },
+    { nameZh: "克雷姆斯站", nameEn: "Krems Station", lon: 15.6000, lat: 48.4080, kind: "transport" },
+  ],
+  "bad-ischl": [
+    { nameZh: "皇帝别墅", nameEn: "Kaiservilla", lon: 13.6200, lat: 47.7150, kind: "landmark" },
+    { nameZh: "莱哈尔别墅", nameEn: "Lehár Villa", lon: 13.6250, lat: 47.7100, kind: "landmark" },
+    { nameZh: "察乌纳咖啡馆与步行街", nameEn: "Zauner Café & Pfarrgasse", lon: 13.6230, lat: 47.7120, kind: "district" },
+    { nameZh: "盐矿", nameEn: "Salzbergwerk", lon: 13.6600, lat: 47.6900, kind: "landmark" },
+    { nameZh: "巴特伊舍尔站", nameEn: "Bad Ischl Station", lon: 13.6270, lat: 47.7100, kind: "transport" },
+  ],
+  eisenstadt: [
+    { nameZh: "埃斯特哈齐宫", nameEn: "Esterházy Palace", lon: 16.5200, lat: 47.8460, kind: "landmark" },
+    { nameZh: "山教堂（海顿墓）", nameEn: "Bergkirche (Haydn's tomb)", lon: 16.5130, lat: 47.8470, kind: "landmark" },
+    { nameZh: "海顿故居", nameEn: "Haydn House", lon: 16.5210, lat: 47.8450, kind: "landmark" },
+    { nameZh: "犹太区与奥地利犹太博物馆", nameEn: "Jewish Quarter & Austrian Jewish Museum", lon: 16.5190, lat: 47.8480, kind: "district" },
+    { nameZh: "新锡德尔湖（鲁斯特）", nameEn: "Neusiedler See (Rust)", lon: 16.6700, lat: 47.8000, kind: "nature" },
+  ],
+  "st-anton": [
+    { nameZh: "圣安东村中心", nameEn: "St. Anton Village", lon: 10.2640, lat: 47.1290, kind: "district" },
+    { nameZh: "加尔齐格缆车", nameEn: "Galzigbahn", lon: 10.2600, lat: 47.1280, kind: "transport" },
+    { nameZh: "瓦卢加峰", nameEn: "Valluga", lon: 10.2130, lat: 47.1570, kind: "nature" },
+    { nameZh: "圣安东站", nameEn: "St. Anton Station", lon: 10.2680, lat: 47.1300, kind: "transport" },
+    { nameZh: "莱希", nameEn: "Lech", lon: 10.1420, lat: 47.2080, kind: "district" },
+  ],
+
 
   // ── 爱尔兰 ──
   dublin: [
