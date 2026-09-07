@@ -6,13 +6,51 @@
   "descriptionEn": "Interior Plains · Lake Winnipeg · Canadian Shield",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC168", "aircraft": "Airbus A321", "depIata": "YEG", "arrIata": "YYZ", "durationMin": 230 },
+  "flight": {
+    "airline": "加拿大航空",
+    "airlineEn": "Air Canada",
+    "flightNo": "AC168",
+    "aircraft": "Airbus A321",
+    "depIata": "YEG",
+    "arrIata": "YYZ",
+    "durationMin": 230
+  },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "yeg", "name": "埃德蒙顿", "nameEn": "Edmonton", "lat": 53.3097, "lon": -113.5797, "airport": true },
-    { "kind": "terrain", "terrainId": "interior-plains-ca" },
-    { "kind": "terrain", "terrainId": "lake-winnipeg" },
-    { "kind": "terrain", "terrainId": "canadian-shield" },
-    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yeg",
+      "name": "埃德蒙顿",
+      "nameEn": "Edmonton",
+      "lat": 53.3097,
+      "lon": -113.5797,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "interior-plains-ca"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-winnipeg"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "canadian-shield"
+    },
+    {
+      "kind": "city",
+      "id": "yyz",
+      "name": "多伦多",
+      "nameEn": "Toronto",
+      "lat": 43.6777,
+      "lon": -79.6248,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://flightseatmap.com/flights/AC168",
+    "checkedOn": "2026-09-07",
+    "note": "属实：埃德蒙顿—多伦多不经停，主线运营，主力机型 A321-211 与记录一致（个别日期有 737 MAX 8 替补，属正常调度）。来源级别 3"
+  }
 }

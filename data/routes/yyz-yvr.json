@@ -6,14 +6,55 @@
   "descriptionEn": "Canadian Shield · Lake Winnipeg · Interior Plains · Canadian Rockies",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC103", "aircraft": "Boeing 787-9", "depIata": "YYZ", "arrIata": "YVR", "durationMin": 300 },
+  "flight": {
+    "airline": "加拿大航空",
+    "airlineEn": "Air Canada",
+    "flightNo": "AC103",
+    "aircraft": "Boeing 777-300ER",
+    "depIata": "YYZ",
+    "arrIata": "YVR",
+    "durationMin": 300
+  },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true },
-    { "kind": "terrain", "terrainId": "canadian-shield" },
-    { "kind": "terrain", "terrainId": "lake-winnipeg" },
-    { "kind": "terrain", "terrainId": "interior-plains-ca" },
-    { "kind": "terrain", "terrainId": "canadian-rockies" },
-    { "kind": "city", "id": "yvr", "name": "温哥华", "nameEn": "Vancouver", "lat": 49.1967, "lon": -123.1815, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yyz",
+      "name": "多伦多",
+      "nameEn": "Toronto",
+      "lat": 43.6777,
+      "lon": -79.6248,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "canadian-shield"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-winnipeg"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "interior-plains-ca"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "canadian-rockies"
+    },
+    {
+      "kind": "city",
+      "id": "yvr",
+      "name": "温哥华",
+      "nameEn": "Vancouver",
+      "lat": 49.1967,
+      "lon": -123.1815,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/ACA103",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（每日不经停，主线运营）；机型现为 777-300ER。来源级别 3"
+  }
 }

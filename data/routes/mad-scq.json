@@ -6,12 +6,47 @@
   "descriptionEn": "Meseta Central · Duero River",
   "depCountry": "spain",
   "arrCountry": "spain",
-  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2708", "aircraft": "Airbus A320", "depIata": "MAD", "arrIata": "SCQ", "durationMin": 75 },
+  "flight": {
+    "airline": "伊比利亚支线（Air Nostrum 执飞）",
+    "airlineEn": "Iberia Regional (operated by Air Nostrum)",
+    "flightNo": "IB117",
+    "aircraft": "Bombardier CRJ-1000",
+    "depIata": "MAD",
+    "arrIata": "SCQ",
+    "durationMin": 75
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
-    { "kind": "terrain", "terrainId": "meseta-central" },
-    { "kind": "terrain", "terrainId": "duero-river" },
-    { "kind": "city", "id": "scq", "name": "圣地亚哥-德孔波斯特拉", "nameEn": "Santiago de Compostela", "lat": 42.896, "lon": -8.415, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mad",
+      "name": "马德里",
+      "nameEn": "Madrid",
+      "lat": 40.472,
+      "lon": -3.561,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "meseta-central"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "duero-river"
+    },
+    {
+      "kind": "city",
+      "id": "scq",
+      "name": "圣地亚哥-德孔波斯特拉",
+      "nameEn": "Santiago de Compostela",
+      "lat": 42.896,
+      "lon": -8.415,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Iberia-Madrid-Santiago/IB117",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**航班号与机型都错**：IB2708 现在飞的也是马德里—巴塞罗那。马德里—圣地亚哥-德孔波斯特拉是**伊比利亚支线（Air Nostrum）用 CRJ-1000** 执飞的支线航线，真实号为 IB117，国家航空主干线窄体机不飞这条。来源级别 3；机队佐证级别 2"
+  }
 }

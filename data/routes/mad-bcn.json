@@ -6,12 +6,47 @@
   "descriptionEn": "Sistema Ibérico · Ebro Basin",
   "depCountry": "spain",
   "arrCountry": "spain",
-  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2620", "aircraft": "Airbus A321neo", "depIata": "MAD", "arrIata": "BCN", "durationMin": 85 },
+  "flight": {
+    "airline": "西班牙国家航空",
+    "airlineEn": "Iberia",
+    "flightNo": "IB401",
+    "aircraft": "Airbus A321",
+    "depIata": "MAD",
+    "arrIata": "BCN",
+    "durationMin": 85
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
-    { "kind": "terrain", "terrainId": "sistema-iberico" },
-    { "kind": "terrain", "terrainId": "ebro-basin" },
-    { "kind": "city", "id": "bcn", "name": "巴塞罗那", "nameEn": "Barcelona", "lat": 41.297, "lon": 2.078, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mad",
+      "name": "马德里",
+      "nameEn": "Madrid",
+      "lat": 40.472,
+      "lon": -3.561,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sistema-iberico"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ebro-basin"
+    },
+    {
+      "kind": "city",
+      "id": "bcn",
+      "name": "巴塞罗那",
+      "nameEn": "Barcelona",
+      "lat": 41.297,
+      "lon": 2.078,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ib401/madrid/barcelona/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**IB2620 现在飞的是跨大西洋航线**（洛杉矶/波士顿—巴塞罗那），不是马德里—巴塞罗那的「空中快线」(Puente Aéreo)。该快线号段是 IB401/403/405…（每 30 分钟一班）。机型只能确认是 A321 系列，**未能确证是否 neo**，故按「拿不准不硬写」的口径写 A321。IB401 只是密集班次里的一个示例号。来源级别 3"
+  }
 }

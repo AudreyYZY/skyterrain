@@ -6,11 +6,43 @@
   "descriptionEn": "Tana Toraja Highlands",
   "depCountry": "indonesia",
   "arrCountry": "indonesia",
-  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA610", "aircraft": "Boeing 737-800", "depIata": "UPG", "arrIata": "MDC", "durationMin": 115 },
+  "flight": {
+    "airline": "鹰航印尼",
+    "airlineEn": "Garuda Indonesia",
+    "flightNo": "GA689",
+    "aircraft": "Boeing 737-800",
+    "depIata": "UPG",
+    "arrIata": "MDC",
+    "durationMin": 115
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "upg", "name": "望加锡", "nameEn": "Makassar", "lat": -5.0616, "lon": 119.5541, "airport": true },
-    { "kind": "terrain", "terrainId": "tana-toraja" },
-    { "kind": "city", "id": "mdc", "name": "万鸦老", "nameEn": "Manado", "lat": 1.5492, "lon": 124.9264, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "upg",
+      "name": "望加锡",
+      "nameEn": "Makassar",
+      "lat": -5.0616,
+      "lon": 119.5541,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tana-toraja"
+    },
+    {
+      "kind": "city",
+      "id": "mdc",
+      "name": "万鸦老",
+      "nameEn": "Manado",
+      "lat": 1.5492,
+      "lon": 124.9264,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/GIA689/history/20240517/0740Z/WAAA/WAMM",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**GA610 实际是雅加达→望加锡(CGK→UPG)**，不是望加锡→万鸦老。UPG→MDC 现由 GA689 执飞，机型 737-800。GA689 是 DPS→UPG→MDC 的同号多段航班，UPG–MDC 是其末段、本身不经停。来源级别 3"
+  }
 }

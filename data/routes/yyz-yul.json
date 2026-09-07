@@ -6,12 +6,47 @@
   "descriptionEn": "Niagara Escarpment · St. Lawrence Lowlands",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC410", "aircraft": "Airbus A220-300", "depIata": "YYZ", "arrIata": "YUL", "durationMin": 75 },
+  "flight": {
+    "airline": "加拿大航空",
+    "airlineEn": "Air Canada",
+    "flightNo": "AC410",
+    "aircraft": "Airbus A220-300",
+    "depIata": "YYZ",
+    "arrIata": "YUL",
+    "durationMin": 75
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true },
-    { "kind": "terrain", "terrainId": "niagara-escarpment" },
-    { "kind": "terrain", "terrainId": "saint-lawrence-lowlands" },
-    { "kind": "city", "id": "yul", "name": "蒙特利尔", "nameEn": "Montreal", "lat": 45.4706, "lon": -73.7408, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yyz",
+      "name": "多伦多",
+      "nameEn": "Toronto",
+      "lat": 43.6777,
+      "lon": -79.6248,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "niagara-escarpment"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saint-lawrence-lowlands"
+    },
+    {
+      "kind": "city",
+      "id": "yul",
+      "name": "蒙特利尔",
+      "nameEn": "Montreal",
+      "lat": 45.4706,
+      "lon": -73.7408,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Air+Canada/AC410",
+    "checkedOn": "2026-09-07",
+    "note": "属实：多伦多—蒙特利尔每日不经停，主线运营。加航机队**只有 A220-300、没有 A220-100**，机型记录准确。来源级别 3；机队构成另有空客官方发布佐证（级别 2）"
+  }
 }
