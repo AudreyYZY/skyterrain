@@ -6,10 +6,39 @@
   "descriptionEn": "Eastern Kazakh Uplands",
   "depCountry": "kazakhstan",
   "arrCountry": "kazakhstan",
-  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC7352", "aircraft": "Embraer E190", "depIata": "NQZ", "arrIata": "PLX", "durationMin": 85 },
+  "flight": {
+    "airline": "阿斯塔纳航空",
+    "airlineEn": "Air Astana",
+    "flightNo": "KC7351",
+    "aircraft": "Airbus A320",
+    "depIata": "NQZ",
+    "arrIata": "PLX",
+    "durationMin": 85
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "nqz", "name": "阿斯塔纳", "nameEn": "Astana", "lat": 51.0222, "lon": 71.4669, "airport": true },
-    { "kind": "city", "id": "plx", "name": "谢梅伊", "nameEn": "Semey", "lat": 50.3522, "lon": 80.2350, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "nqz",
+      "name": "阿斯塔纳",
+      "nameEn": "Astana",
+      "lat": 51.0222,
+      "lon": 71.4669,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "plx",
+      "name": "谢梅伊",
+      "nameEn": "Semey",
+      "lat": 50.3522,
+      "lon": 80.235,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.ch-aviation.com/news/151573-air-astana-streamlines-fleet-banks-on-modified-a321lrs",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**双重错误**：① 方向反了，KC7352 是谢梅伊→阿斯塔纳，去程是 **KC7351**；② **Air Astana 的 E190-E2 机队已于 2025-05 全部退役**（CEO 在 2025-03 财报会上说的「史上最简机队」），2026 年不再有该机型在役。KC7351 机型为 A320。**第四起「整支机队退役」**（前三起：SAS 波音 737、Lufthansa CityLine、Air Astana 757）。来源级别 2（行业媒体 ch-aviation）+ 3"
+  }
 }

@@ -6,11 +6,43 @@
   "descriptionEn": "Atacama Desert",
   "depCountry": "chile",
   "arrCountry": "chile",
-  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA148", "aircraft": "Airbus A321", "depIata": "SCL", "arrIata": "CJC", "durationMin": 127 },
+  "flight": {
+    "airline": "智利南美航空",
+    "airlineEn": "LATAM Airlines Chile",
+    "flightNo": "LA148",
+    "aircraft": "Airbus A320 / A321（机队混编，按排班浮动）",
+    "depIata": "SCL",
+    "arrIata": "CJC",
+    "durationMin": 127
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
-    { "kind": "terrain", "terrainId": "atacama-desert" },
-    { "kind": "city", "id": "cjc", "name": "卡拉马", "nameEn": "Calama", "lat": -22.4983, "lon": -68.9036, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "scl",
+      "name": "圣地亚哥",
+      "nameEn": "Santiago",
+      "lat": -33.393,
+      "lon": -70.7858,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "atacama-desert"
+    },
+    {
+      "kind": "city",
+      "id": "cjc",
+      "name": "卡拉马",
+      "nameEn": "Calama",
+      "lat": -22.4983,
+      "lon": -68.9036,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/LATAM+Airlines+Chile-Santiago-Calama/LA148",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号、航段、承运人都对（LATAM 智利主运营、不经停、每周约 6 班），**机型不是固定 A321**：近期由 A320-214 / A320neo 与 A321 混合执飞，看当日机队调度。来源级别 3"
+  }
 }

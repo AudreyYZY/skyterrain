@@ -6,10 +6,39 @@
   "descriptionEn": "Mindoro Strait · Calamian Islands",
   "depCountry": "philippines",
   "arrCountry": "philippines",
-  "flight": { "airline": "菲律宾航空", "airlineEn": "Philippine Airlines", "flightNo": "PR2963", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "USU", "durationMin": 65 },
+  "flight": {
+    "airline": "菲律宾航空快线（PAL Express）",
+    "airlineEn": "PAL Express",
+    "flightNo": "PR2963",
+    "aircraft": "De Havilland Dash 8-400",
+    "depIata": "MNL",
+    "arrIata": "USU",
+    "durationMin": 65
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
-    { "kind": "city", "id": "usu", "name": "科隆（布桑加）", "nameEn": "Coron (Busuanga)", "lat": 12.1447, "lon": 120.1042, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mnl",
+      "name": "马尼拉",
+      "nameEn": "Manila",
+      "lat": 14.5086,
+      "lon": 121.0198,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "usu",
+      "name": "科隆（布桑加）",
+      "nameEn": "Coron (Busuanga)",
+      "lat": 12.1447,
+      "lon": 120.1042,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/GAP2963",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**这条比 mnl-dvo 更隐蔽**：记录的 A320 看起来完全合理，但 PR2963 实际用的是 **De Havilland Dash 8-400 涡桨支线机** —— 布桑加的跑道条件本就适合涡桨机。实际执飞方同样是子公司 **PAL Express**（票号挂 PR）。航线仍在运营，2025 年报道每日 3 班。**教训**：777 飞国内干线一眼可疑，但「小机场航线写着 A320」不可疑——正因为看起来合理才更该查。喷气窄体 vs 涡桨支线是两类完全不同的飞机。另有媒体转述航司公告佐证（级别 2）"
+  }
 }

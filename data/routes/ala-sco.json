@@ -6,10 +6,39 @@
   "descriptionEn": "Kazakhstan's east-west domestic route",
   "depCountry": "kazakhstan",
   "arrCountry": "kazakhstan",
-  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC931", "aircraft": "Boeing 757", "depIata": "ALA", "arrIata": "SCO", "durationMin": 200 },
+  "flight": {
+    "airline": "阿斯塔纳航空",
+    "airlineEn": "Air Astana",
+    "flightNo": "KC859",
+    "aircraft": "Airbus A321neo",
+    "depIata": "ALA",
+    "arrIata": "SCO",
+    "durationMin": 200
+  },
   "cruiseHeight": 10600,
   "waypoints": [
-    { "kind": "city", "id": "ala", "name": "阿拉木图", "nameEn": "Almaty", "lat": 43.3521, "lon": 77.0405, "airport": true },
-    { "kind": "city", "id": "sco", "name": "阿克套", "nameEn": "Aktau", "lat": 43.8600, "lon": 51.0922, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ala",
+      "name": "阿拉木图",
+      "nameEn": "Almaty",
+      "lat": 43.3521,
+      "lon": 77.0405,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "sco",
+      "name": "阿克套",
+      "nameEn": "Aktau",
+      "lat": 43.86,
+      "lon": 51.0922,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://en.airnavradar.com/data/flights/KC859/1682241587",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**双重错误**：① KC931 实际飞阿拉木图→曼谷(ALA→BKK)；② **Air Astana 的 757 机队 2020 年就全部退役了**（换成 A321LR），2026 年机队里根本没有 757。真实航班是 KC859，A321neo（注册 EI-KDF），约 3h20m 与记录 200min 吻合。我起 agent 时怀疑 757 是 2023–24 退役的，实际是 **2020** —— 怀疑的方向对，年份猜错了，以查到的为准。来源级别 3"
+  }
 }

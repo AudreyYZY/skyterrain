@@ -6,11 +6,43 @@
   "descriptionEn": "Titiwangsa Mountains · Gunung Tahan",
   "depCountry": "malaysia",
   "arrCountry": "malaysia",
-  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK6430", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "KBR", "durationMin": 60 },
+  "flight": {
+    "airline": "亚洲航空",
+    "airlineEn": "AirAsia",
+    "flightNo": "AK6430",
+    "aircraft": "Airbus A320",
+    "depIata": "KUL",
+    "arrIata": "KBR",
+    "durationMin": 60
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
-    { "kind": "terrain", "terrainId": "gunung-tahan" },
-    { "kind": "city", "id": "kbr", "name": "哥打巴鲁", "nameEn": "Kota Bharu", "lat": 6.1669, "lon": 102.2922, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "kul",
+      "name": "吉隆坡",
+      "nameEn": "Kuala Lumpur",
+      "lat": 2.7456,
+      "lon": 101.7099,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "gunung-tahan"
+    },
+    {
+      "kind": "city",
+      "id": "kbr",
+      "name": "哥打巴鲁",
+      "nameEn": "Kota Bharu",
+      "lat": 6.1669,
+      "lon": 102.2922,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ak6430/kuala-lumpur/kota-baharu/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：KUL→KBR 不经停，A320（180 座），亚航自营；07:15–08:20 约 65min 与记录 60min 接近。来源级别 3"
+  }
 }

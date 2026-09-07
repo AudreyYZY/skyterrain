@@ -6,11 +6,43 @@
   "descriptionEn": "The Visayas · Mount Kanlaon",
   "depCountry": "philippines",
   "arrCountry": "philippines",
-  "flight": { "airline": "菲律宾航空", "airlineEn": "Philippine Airlines", "flightNo": "PR2803", "aircraft": "Boeing 777", "depIata": "MNL", "arrIata": "DVO", "durationMin": 130 },
+  "flight": {
+    "airline": "菲律宾航空快线（PAL Express）",
+    "airlineEn": "PAL Express",
+    "flightNo": "PR2803",
+    "aircraft": "Airbus A320",
+    "depIata": "MNL",
+    "arrIata": "DVO",
+    "durationMin": 130
+  },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
-    { "kind": "terrain", "terrainId": "mount-kanlaon" },
-    { "kind": "city", "id": "dvo", "name": "达沃", "nameEn": "Davao", "lat": 7.1255, "lon": 125.6458, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mnl",
+      "name": "马尼拉",
+      "nameEn": "Manila",
+      "lat": 14.5086,
+      "lon": 121.0198,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-kanlaon"
+    },
+    {
+      "kind": "city",
+      "id": "dvo",
+      "name": "达沃",
+      "nameEn": "Davao",
+      "lat": 7.1255,
+      "lon": 125.6458,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://en.airnavradar.com/data/registration/rp-c8610/1948056734",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**机型错得离谱且承运人也不对**：777-300ER 是菲航洲际远程机型，不会用在这条 1.5 小时国内干线上。实际登记机型是 A320-214（注册号 RP-C8610），且 PR2xxx 号段确系子公司 **PAL Express** 实际执飞（票号仍挂 PR）。来源级别 3"
+  }
 }

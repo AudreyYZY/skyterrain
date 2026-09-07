@@ -6,10 +6,39 @@
   "descriptionEn": "Mindoro Strait · Palawan",
   "depCountry": "philippines",
   "arrCountry": "philippines",
-  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J645", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "PPS", "durationMin": 90 },
+  "flight": {
+    "airline": "宿务太平洋航空",
+    "airlineEn": "Cebu Pacific",
+    "flightNo": "5J645",
+    "aircraft": "Airbus A321neo",
+    "depIata": "MNL",
+    "arrIata": "PPS",
+    "durationMin": 90
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
-    { "kind": "city", "id": "pps", "name": "普林塞萨港", "nameEn": "Puerto Princesa", "lat": 9.7422, "lon": 118.7583, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mnl",
+      "name": "马尼拉",
+      "nameEn": "Manila",
+      "lat": 14.5086,
+      "lon": 121.0198,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "pps",
+      "name": "普林塞萨港",
+      "nameEn": "Puerto Princesa",
+      "lat": 9.7422,
+      "lon": 118.7583,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://zh.flightaware.com/photos/view/6176254-15ddcda32a973c25254714c60c1dc0e886d7e4ad/aircrafttype/A21N",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航段属实、不经停、仍在运营（约 10:30→12:00，与记录 90min 吻合）。**机型当前是 A321neo**。部分追踪站历史记录出现过 A320/A330，近期核实的登记机型与照片标注均为 A321neo。来源级别 3"
+  }
 }

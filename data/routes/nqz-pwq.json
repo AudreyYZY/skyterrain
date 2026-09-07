@@ -6,10 +6,39 @@
   "descriptionEn": "Northern edge of the Kazakh Uplands",
   "depCountry": "kazakhstan",
   "arrCountry": "kazakhstan",
-  "flight": { "airline": "哈萨克航空", "airlineEn": "Qazaq Air", "flightNo": "IQ372", "aircraft": "De Havilland Dash 8", "depIata": "NQZ", "arrIata": "PWQ", "durationMin": 75 },
+  "flight": {
+    "airline": "Vietjet Qazaqstan（原 Qazaq Air）",
+    "airlineEn": "Vietjet Qazaqstan (formerly Qazaq Air)",
+    "flightNo": "IQ371",
+    "aircraft": "De Havilland Dash 8-Q400",
+    "depIata": "NQZ",
+    "arrIata": "PWQ",
+    "durationMin": 75
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "nqz", "name": "阿斯塔纳", "nameEn": "Astana", "lat": 51.0222, "lon": 71.4669, "airport": true },
-    { "kind": "city", "id": "pwq", "name": "巴甫洛达尔", "nameEn": "Pavlodar", "lat": 52.1958, "lon": 77.0781, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "nqz",
+      "name": "阿斯塔纳",
+      "nameEn": "Astana",
+      "lat": 51.0222,
+      "lon": 71.4669,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "pwq",
+      "name": "巴甫洛达尔",
+      "nameEn": "Pavlodar",
+      "lat": 52.1958,
+      "lon": 77.0781,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flyqazaq.com/en/qazaq-air-resumes-flights-from-astana-to-pavlodar/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**方向反了 + 承运人已更名**：① IQ372 是巴甫洛达尔→阿斯塔纳，去程是 **IQ371**；② **Qazaq Air 已于 2024-12-24 被 Sovico 集团（越捷母公司）财团收购，2025 年起运营品牌改为 Vietjet Qazaqstan**（法律实体仍是 Qazaq Air JSC，IATA 代码 IQ 未变）。**机型 Dash 8-Q400 是对的**。**来源级别 2**（航司官网公告，含 IQ371/IQ372 双向时刻与机型）；更名另有 ch-aviation 佐证"
+  }
 }

@@ -6,11 +6,44 @@
   "descriptionEn": "Crocker Range",
   "depCountry": "malaysia",
   "arrCountry": "malaysia",
-  "flight": { "airline": "婆罗洲航空", "airlineEn": "AirBorneo", "flightNo": "MY3155", "aircraft": "ATR 72-500", "depIata": "SDK", "arrIata": "BKI", "durationMin": 55 },
+  "flight": {
+    "airline": "AirBorneo（原婆罗洲航空 MASwings）",
+    "airlineEn": "AirBorneo (formerly MASwings)",
+    "flightNo": "MY3155",
+    "aircraft": "ATR 72-500",
+    "depIata": "SDK",
+    "arrIata": "BKI",
+    "durationMin": 55
+  },
   "cruiseHeight": 5500,
   "waypoints": [
-    { "kind": "city", "id": "sdk", "name": "山打根", "nameEn": "Sandakan", "lat": 5.9012, "lon": 118.0592, "airport": true },
-    { "kind": "terrain", "terrainId": "crocker-range" },
-    { "kind": "city", "id": "bki", "name": "亚庇", "nameEn": "Kota Kinabalu", "lat": 5.9372, "lon": 116.0517, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "sdk",
+      "name": "山打根",
+      "nameEn": "Sandakan",
+      "lat": 5.9012,
+      "lon": 118.0592,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "crocker-range"
+    },
+    {
+      "kind": "city",
+      "id": "bki",
+      "name": "亚庇",
+      "nameEn": "Kota Kinabalu",
+      "lat": 5.9372,
+      "lon": 116.0517,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/MWG3155/history/20260205/0335Z/WBKS/WBKD",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**已改正**：**承运人已被收购改名**：MASwings 2025 年被砂拉越州政府收购，**2026-01-02 起以 AirBorneo 品牌运营**（IATA 仍是 MY，ICAO/呼号沿用 MWG/MASWINGS）。机型 ATR 72-500 **仍是当前值**——AirBorneo 现役 8 架 ATR 72-500，新订的 5 架 ATR 72-600 要 2027 年才交付（ch-aviation 行业媒体，级别 2）。来源级别 3；**查明有误**：**这个号已经不飞这对城市了**：MY3155 在 2025-03 确实飞过 SDK→BKI，但 2025-06、2025-10、2026-02（最近可查）都已改飞 **SDK→LDU（山打根—拿笃）**。山打根—亚庇这条干线目前主要由亚航喷气机承运，未找到 AirBorneo 当前以不经停 ATR 服务这对城市的确切航班号。**航段本身仍存在**（亚航在飞），所以不属于「整条移除」那一类，只是查不到可信的航班号。来源级别 3"
+  }
 }

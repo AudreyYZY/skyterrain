@@ -6,12 +6,50 @@
   "descriptionEn": "South Pacific · Easter Island",
   "depCountry": "chile",
   "arrCountry": "chile",
-  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA841", "aircraft": "Boeing 787-9", "depIata": "SCL", "arrIata": "IPC", "durationMin": 335 },
+  "flight": {
+    "airline": "智利南美航空",
+    "airlineEn": "LATAM Airlines Chile",
+    "flightNo": "LA841",
+    "aircraft": "Boeing 787-9",
+    "depIata": "SCL",
+    "arrIata": "IPC",
+    "durationMin": 335
+  },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
-    { "kind": "feature", "name": "南太平洋", "nameEn": "South Pacific Ocean", "lat": -30.28, "lon": -90.10 },
-    { "kind": "terrain", "terrainId": "easter-island" },
-    { "kind": "city", "id": "ipc", "name": "汉加罗阿", "nameEn": "Hanga Roa", "lat": -27.1648, "lon": -109.4219, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "scl",
+      "name": "圣地亚哥",
+      "nameEn": "Santiago",
+      "lat": -33.393,
+      "lon": -70.7858,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "南太平洋",
+      "nameEn": "South Pacific Ocean",
+      "lat": -30.28,
+      "lon": -90.1
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "easter-island"
+    },
+    {
+      "kind": "city",
+      "id": "ipc",
+      "name": "汉加罗阿",
+      "nameEn": "Hanga Roa",
+      "lat": -27.1648,
+      "lon": -109.4219,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://worldairlinenews.com/2026/05/31/latam-boeing-787-cc-bbd-is-damaged-at-easter-island/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：LA841 确是圣地亚哥—复活节岛这条著名孤立航线，不经停，LATAM 智利主运营。2026-05-29 一架执飞该班的 787-8（CC-BBD）在复活节岛被客梯车撞坏舱门停场——这起事件反而佐证了该航班号平时确实用宽体机；此后正常运营以 787-9 为主。来源级别 3"
+  }
 }

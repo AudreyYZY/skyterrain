@@ -6,11 +6,43 @@
   "descriptionEn": "South China Sea · Bako National Park",
   "depCountry": "malaysia",
   "arrCountry": "malaysia",
-  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK5204", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "KCH", "durationMin": 110 },
+  "flight": {
+    "airline": "亚洲航空",
+    "airlineEn": "AirAsia",
+    "flightNo": "AK5204",
+    "aircraft": "Airbus A320",
+    "depIata": "KUL",
+    "arrIata": "KCH",
+    "durationMin": 110
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
-    { "kind": "terrain", "terrainId": "bako-national-park" },
-    { "kind": "city", "id": "kch", "name": "古晋", "nameEn": "Kuching", "lat": 1.4847, "lon": 110.3467, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "kul",
+      "name": "吉隆坡",
+      "nameEn": "Kuala Lumpur",
+      "lat": 2.7456,
+      "lon": 101.7099,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "bako-national-park"
+    },
+    {
+      "kind": "city",
+      "id": "kch",
+      "name": "古晋",
+      "nameEn": "Kuching",
+      "lat": 1.4847,
+      "lon": 110.3467,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ak5204/kuala-lumpur/kuching/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：KUL→KCH 不经停，A320，计划 1h50m 与记录 110min 一致，亚航自营。来源级别 3"
+  }
 }

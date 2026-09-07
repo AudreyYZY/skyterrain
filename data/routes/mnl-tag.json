@@ -6,11 +6,43 @@
   "descriptionEn": "The Visayas · the Chocolate Hills",
   "depCountry": "philippines",
   "arrCountry": "philippines",
-  "flight": { "airline": "宿务太平洋航空", "airlineEn": "Cebu Pacific", "flightNo": "5J617", "aircraft": "Airbus A320", "depIata": "MNL", "arrIata": "TAG", "durationMin": 100 },
+  "flight": {
+    "airline": "宿务太平洋航空",
+    "airlineEn": "Cebu Pacific",
+    "flightNo": "5J617",
+    "aircraft": "Airbus A321neo",
+    "depIata": "MNL",
+    "arrIata": "TAG",
+    "durationMin": 100
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "mnl", "name": "马尼拉", "nameEn": "Manila", "lat": 14.5086, "lon": 121.0198, "airport": true },
-    { "kind": "terrain", "terrainId": "chocolate-hills" },
-    { "kind": "city", "id": "tag", "name": "塔比拉兰（邦劳）", "nameEn": "Tagbilaran (Panglao)", "lat": 9.5675, "lon": 123.7622, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mnl",
+      "name": "马尼拉",
+      "nameEn": "Manila",
+      "lat": 14.5086,
+      "lon": 121.0198,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chocolate-hills"
+    },
+    {
+      "kind": "city",
+      "id": "tag",
+      "name": "塔比拉兰（邦劳）",
+      "nameEn": "Tagbilaran (Panglao)",
+      "lat": 9.5675,
+      "lon": 123.7622,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/5j617/manila/tagbilaran-city/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：落地确认是塔比拉兰**新机场**（Bohol–Panglao International，2018 启用，沿用 TAG 代码），记录没错；不经停、仍在运营（09:35→11:20 约 1h45m，比记录 100min 略长但量级相符）。**机型当前是 A321neo**（注册号 RP-C4123）。来源级别 3"
+  }
 }

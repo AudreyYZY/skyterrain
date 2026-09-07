@@ -6,11 +6,43 @@
   "descriptionEn": "Moiynkum Desert",
   "depCountry": "kazakhstan",
   "arrCountry": "kazakhstan",
-  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC972", "aircraft": "Airbus A320", "depIata": "ALA", "arrIata": "CIT", "durationMin": 80 },
+  "flight": {
+    "airline": "阿斯塔纳航空",
+    "airlineEn": "Air Astana",
+    "flightNo": "KC971",
+    "aircraft": "Airbus A320",
+    "depIata": "ALA",
+    "arrIata": "CIT",
+    "durationMin": 80
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "ala", "name": "阿拉木图", "nameEn": "Almaty", "lat": 43.3521, "lon": 77.0405, "airport": true },
-    { "kind": "terrain", "terrainId": "moiynkum-desert" },
-    { "kind": "city", "id": "cit", "name": "希姆肯特", "nameEn": "Shymkent", "lat": 42.3651, "lon": 69.4794, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ala",
+      "name": "阿拉木图",
+      "nameEn": "Almaty",
+      "lat": 43.3521,
+      "lon": 77.0405,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "moiynkum-desert"
+    },
+    {
+      "kind": "city",
+      "id": "cit",
+      "name": "希姆肯特",
+      "nameEn": "Shymkent",
+      "lat": 42.3651,
+      "lon": 69.4794,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/kc971/almaty/shymkent/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**方向反了**：KC972 是希姆肯特→阿拉木图。阿拉木图→希姆肯特是 **KC971**，A320，约 1h30m。来源级别 3"
+  }
 }
