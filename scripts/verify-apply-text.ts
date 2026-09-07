@@ -82,6 +82,21 @@ function escapeRe(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
+/**
+ * 正文是写在 TS 双引号字符串里的，替换文本里出现**未转义的双引号**会直接把文件写坏
+ * （踩过：台北那条的替换文本里写了 "Greater Taipei"，写进去之后 travel-content.en.ts
+ * 直接语法错误，check:claims / tsc 全挂）。中文用「」、英文改用破折号或单引号。
+ */
+function assertNoRawQuote(s: string, where: string, lang: string): void {
+  const bad = s.replace(/\\"/g, "").includes('"');
+  if (bad) {
+    throw new Error(
+      `${where}（${lang}）: 替换文本里有未转义的双引号 —— 正文是写在 TS 双引号字符串里的，` +
+        `这样会把文件写坏。中文用「」，英文改用破折号或单引号，真要双引号就写成 \\"。`,
+    );
+  }
+}
+
 /** 在条目块里替换一段文本；命中次数不是 1 就报错（别静默改错地方） */
 function patchEntry(src: string, id: string, p: TextPatch, where: string): string {
   const [start, end] = entryRange(src, id);
@@ -124,10 +139,12 @@ for (const f of round.findings) {
     throw new Error(`${f.key}: 给了 textPatch/sourceNote 但 resolution 是「${f.resolution}」`);
   }
   if (f.textPatch?.zh) {
+    assertNoRawQuote(f.textPatch.zh.replace, f.key, "zh");
     zh = patchEntry(zh, f.id, f.textPatch.zh, f.key);
     patched++;
   }
   if (f.textPatch?.en) {
+    assertNoRawQuote(f.textPatch.en.replace, f.key, "en");
     en = patchEntry(en, f.id, f.textPatch.en, f.key);
     patched++;
   }
