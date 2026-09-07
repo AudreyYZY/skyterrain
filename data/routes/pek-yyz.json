@@ -15,6 +15,11 @@
     "arrIata": "YYZ",
     "durationMin": 760
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca993/beijing/toronto/",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA993 PEK→YYZ 属实，777-300ER 与记录一致；12h40m 与记录的 760min 吻合"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

@@ -15,6 +15,12 @@
     "arrIata": "LXA",
     "durationMin": 165
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/tv9882/chengdu/lhasa/",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：TV9882 实际飞的是**成都**双流→拉萨（A330，约 2h04m，亦有上海经成都的一站式），不是重庆→拉萨。未找到可靠的重庆→拉萨替代航班号"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

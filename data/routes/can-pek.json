@@ -7,21 +7,54 @@
   "depCountry": "china",
   "arrCountry": "china",
   "flight": {
-    "airline": "中国南方航空",
-    "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ3101",
+    "airline": "中国国际航空",
+    "airlineEn": "Air China",
+    "flightNo": "CA1316",
     "aircraft": "Boeing 777-300ER",
     "depIata": "CAN",
     "arrIata": "PEK",
     "durationMin": 190
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca1316/guangzhou/beijing/",
+    "checkedOn": "2026-09-06",
+    "note": "**原记南航 CZ3101 有误**：CZ3101 实际落地北京大兴(PKX)，不是首都(PEK)，且机型为 787-9。本航线终点是首都机场，故改为国航 CA1316（CAN→PEK，每日执飞）；该航线机型在 777-300ER / A330-300 / 787-9 间轮换，维持 777-300ER"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "terrain", "terrainId": "yangtze" },
-    { "kind": "terrain", "terrainId": "dabie" },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true }
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dabie"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    }
   ]
 }

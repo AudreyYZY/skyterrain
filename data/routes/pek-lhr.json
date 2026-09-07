@@ -15,6 +15,11 @@
     "arrIata": "LHR",
     "durationMin": 665
   },
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/CCA937",
+    "checkedOn": "2026-09-06",
+    "note": "每日执飞 PEK→LHR T2，11h05m，与记录的 665min 吻合；机型 777-300ER"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

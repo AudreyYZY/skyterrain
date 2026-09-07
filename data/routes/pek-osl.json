@@ -15,6 +15,11 @@
     "arrIata": "OSL",
     "durationMin": 544
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/hu769/beijing/oslo/",
+    "checkedOn": "2026-09-06",
+    "note": "海南航空 HU769 PEK→OSL，A330-300，约 9h04m，与记录的 544min 吻合；2025-03 复航"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
     {

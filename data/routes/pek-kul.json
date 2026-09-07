@@ -15,6 +15,11 @@
     "arrIata": "KUL",
     "durationMin": 352
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca871/beijing/kuala-lumpur/",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA871 PEK→KUL 属实，每日执飞，737 MAX 8（B-1399）与记录一致；5h52m 与记录的 352min 吻合"
+  },
   "cruiseHeight": 11300,
   "waypoints": [
     {

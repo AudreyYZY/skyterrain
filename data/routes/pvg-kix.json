@@ -7,13 +7,18 @@
   "depCountry": "china",
   "arrCountry": "japan",
   "flight": {
-    "airline": "全日空",
-    "airlineEn": "All Nippon Airways",
-    "flightNo": "NH970",
-    "aircraft": "Boeing 787-8",
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU225",
+    "aircraft": "Airbus A330-300",
     "depIata": "PVG",
     "arrIata": "KIX",
-    "durationMin": 150
+    "durationMin": 115
+  },
+  "source": {
+    "ref": "https://www.airportia.com/flights/mu225/shanghai/osaka/",
+    "checkedOn": "2026-09-06",
+    "note": "**原记全日空 NH970 有误**：NH970 实际飞的是虹桥(SHA)→东京羽田，与浦东→关西无关。改为东航 MU225（PVG→KIX，每日执飞，约 1h51m）；机型按日在 A321 与 A330-300 间轮换，取 A330-300"
   },
   "cruiseHeight": 11000,
   "waypoints": [

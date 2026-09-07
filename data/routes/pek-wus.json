@@ -15,12 +15,43 @@
     "arrIata": "WUS",
     "durationMin": 160
   },
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Xiamen+Airlines-Wuyishan-Beijing/MF8508",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**未能核实**：公开源查不到 MF8122 北京→武夷山的班次；厦航确有 MF8508 武夷山→北京（反向），但去程航班号未确认"
+  },
   "cruiseHeight": 10200,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "jiangnan-hills" },
-    { "kind": "terrain", "terrainId": "wuyi" },
-    { "kind": "city", "id": "wus", "name": "武夷山", "nameEn": "Wuyishan Airport", "lat": 27.7008, "lon": 118.0003, "airport": true }
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jiangnan-hills"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "wuyi"
+    },
+    {
+      "kind": "city",
+      "id": "wus",
+      "name": "武夷山",
+      "nameEn": "Wuyishan Airport",
+      "lat": 27.7008,
+      "lon": 118.0003,
+      "airport": true
+    }
   ]
 }

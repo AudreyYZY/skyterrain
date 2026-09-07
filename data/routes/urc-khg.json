@@ -15,12 +15,12 @@
     "arrIata": "KHG",
     "durationMin": 105
   },
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/CSN6801",
+    "checkedOn": "2026-09-07",
+    "note": "南航 CZ6801 URC→KHG 属实，21:05 起飞 23:10 抵达（约 2h05m，记录为 105min，略短）；机型未在公开源中确认，维持 737-800 待复核"
+  },
   "cruiseHeight": 10400,
-  "minLegDurationSec": 40,
-  "dwellSecAtWaypoint": 6,
-  "cruiseSpeedMps": 210,
-  "overviewDwellSec": 5,
-  "dwellDuringFlightSec": 10,
   "waypoints": [
     {
       "kind": "city",
@@ -48,5 +48,10 @@
       "lon": 76.02,
       "airport": true
     }
-  ]
+  ],
+  "minLegDurationSec": 40,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 210,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 10
 }

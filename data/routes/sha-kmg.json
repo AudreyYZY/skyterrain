@@ -15,6 +15,12 @@
     "arrIata": "KMG",
     "durationMin": 200
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/mu5843/kunming/chengdu/",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：MU5843 实际飞的是**昆明→成都**（737-800，约 1h），不是上海→昆明。该航班号另与 2022 年 737-800 复飞报道相关联，不宜沿用。未找到可靠替代号，暂不显示航班信息"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
     {

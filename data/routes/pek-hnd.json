@@ -10,10 +10,15 @@
     "airline": "中国国际航空",
     "airlineEn": "Air China",
     "flightNo": "CA181",
-    "aircraft": "Boeing 787-9",
+    "aircraft": "Airbus A321",
     "depIata": "PEK",
     "arrIata": "HND",
     "durationMin": 210
+  },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca181/beijing/tokyo/",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA181 PEK→HND 属实，每日执飞，3h20m；机型实为 A321，原记 787-9 已改正"
   },
   "cruiseHeight": 11500,
   "waypoints": [

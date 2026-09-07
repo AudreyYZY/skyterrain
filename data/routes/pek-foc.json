@@ -10,17 +10,47 @@
     "airline": "中国国际航空",
     "airlineEn": "Air China",
     "flightNo": "CA1505",
-    "aircraft": "Boeing 737-800",
+    "aircraft": "Airbus A321neo",
     "depIata": "PEK",
     "arrIata": "FOC",
     "durationMin": 165
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca1505/beijing/fuzhou/",
+    "checkedOn": "2026-09-07",
+    "note": "国航 CA1505 PEK→FOC 长乐 属实，每日执飞，2h28m 与记录的 165min 接近；机型实为 A321neo（B-32PL），原记 737-800 已改正"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "yangtze-delta" },
-    { "kind": "terrain", "terrainId": "wuyi" },
-    { "kind": "city", "id": "foc", "name": "福州长乐", "nameEn": "Fuzhou Changle", "lat": 25.935, "lon": 119.663, "airport": true }
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-delta"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "wuyi"
+    },
+    {
+      "kind": "city",
+      "id": "foc",
+      "name": "福州长乐",
+      "nameEn": "Fuzhou Changle",
+      "lat": 25.935,
+      "lon": 119.663,
+      "airport": true
+    }
   ]
 }

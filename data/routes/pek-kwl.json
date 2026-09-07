@@ -15,6 +15,12 @@
     "arrIata": "KWL",
     "durationMin": 195
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca1223/beijing/xianyang",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：CA1223 实际飞的是北京→**西安**咸阳（A321），不是桂林。未找到可靠的北京→桂林替代航班号"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
     {

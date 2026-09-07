@@ -15,6 +15,11 @@
     "arrIata": "CGK",
     "durationMin": 404
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca977/beijing/jakarta/",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA977 PEK→CGK 属实，每周三班，A330-300（B-5906）与记录一致；7h15m 与记录的 404min 接近"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

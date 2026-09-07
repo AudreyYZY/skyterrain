@@ -15,6 +15,12 @@
     "arrIata": "CTU",
     "durationMin": 90
   },
+  "source": {
+    "ref": "https://www.flightradar24.com/data/airlines/3u-csc",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**未能核实**：公开源查不到 3U8918 西安→成都的班次记录。川航确以成都为基地、西安为重点城市，该航线存在，但本次未能确认该航班号"
+  },
   "cruiseHeight": 9500,
   "waypoints": [
     {

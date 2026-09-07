@@ -15,6 +15,12 @@
     "arrIata": "LXA",
     "durationMin": 145
   },
+  "source": {
+    "ref": "https://www.tibettourism.com/xining-to-lhasa-flight.html",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**未能核实**：公开源查不到 CA4213 西宁→拉萨的班次记录。西宁—拉萨确有多家航司直飞，但本次未能确认该航班号，暂不显示航班信息"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

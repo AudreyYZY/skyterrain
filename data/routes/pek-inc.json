@@ -15,6 +15,12 @@
     "arrIata": "INC",
     "durationMin": 130
   },
+  "source": {
+    "ref": "https://planefinder.net/data/flight/CA1303",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：CA1303 实际飞的是北京→**深圳**宝安（约 3h25m），不是银川。未找到可靠替代航班号"
+  },
   "cruiseHeight": 10500,
   "waypoints": [
     {

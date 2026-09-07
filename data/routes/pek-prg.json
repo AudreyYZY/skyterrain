@@ -15,6 +15,11 @@
     "arrIata": "PRG",
     "durationMin": 595
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/hu7937/beijing/prague/",
+    "checkedOn": "2026-09-06",
+    "note": "海航 HU7937 PEK→PRG 属实，周一/三/五执飞，A330-300（297 座）与记录一致；9h55m 与记录的 595min 吻合"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {
@@ -64,7 +69,7 @@
       "name": "布拉格瓦茨拉夫·哈维尔",
       "nameEn": "Prague Václav Havel",
       "lat": 50.1008,
-      "lon": 14.2600,
+      "lon": 14.26,
       "airport": true
     }
   ]

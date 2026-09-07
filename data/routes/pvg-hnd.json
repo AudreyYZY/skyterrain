@@ -9,11 +9,16 @@
   "flight": {
     "airline": "中国东方航空",
     "airlineEn": "China Eastern Airlines",
-    "flightNo": "MU523",
-    "aircraft": "Airbus A330-300",
+    "flightNo": "MU575",
+    "aircraft": "Boeing 777-300ER",
     "depIata": "PVG",
     "arrIata": "HND",
-    "durationMin": 180
+    "durationMin": 185
+  },
+  "source": {
+    "ref": "https://flyteam.jp/en/flightnumber/MU575",
+    "checkedOn": "2026-09-06",
+    "note": "**原记 MU523 有误**：MU523 实际飞的是 PVG→成田(NRT)，不是羽田(HND)。改为东航 MU575（PVG→HND，777-300ER，约 3h05m），航班号与机型均已更正"
   },
   "cruiseHeight": 11500,
   "waypoints": [

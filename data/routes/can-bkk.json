@@ -15,6 +15,11 @@
     "arrIata": "BKK",
     "durationMin": 185
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/cz3081/guangzhou/bangkok/",
+    "checkedOn": "2026-09-06",
+    "note": "南航 CZ3081 CAN→BKK 属实，每日执飞，约 2h41m；机型按日轮换（737-800 / A350-900 / A320neo 均有记录），维持 A350-900"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
     {
@@ -39,7 +44,7 @@
       "id": "bkk",
       "name": "曼谷素万那普",
       "nameEn": "Bangkok Suvarnabhumi",
-      "lat": 13.6900,
+      "lat": 13.69,
       "lon": 100.7501,
       "airport": true
     }

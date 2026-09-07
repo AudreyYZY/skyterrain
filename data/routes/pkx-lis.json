@@ -15,6 +15,11 @@
     "arrIata": "LIS",
     "durationMin": 800
   },
+  "source": {
+    "ref": "https://www.aeroroutes.com/eng/260330-jdns26pkxlis",
+    "checkedOn": "2026-09-06",
+    "note": "首都航空 JD627 PKX→LIS 属实，2026-06-22 开航，每周一班（周一），A330 与记录一致，约 13h；**季节性航线，2026-06-22 至 09-28**"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

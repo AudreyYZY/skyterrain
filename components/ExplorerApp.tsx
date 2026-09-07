@@ -50,6 +50,7 @@ import { buildAnchoringForNarration } from "@/lib/route-anchors";
 import { travelRailGroups } from "@/lib/travel-rail";
 import { createSectionNarration } from "@/lib/section-narration";
 import TravelPoiMarkers from "@/components/TravelPoiMarkers";
+import RouteFlightMarkers from "@/components/RouteFlightMarkers";
 import type { PanelSection } from "@/components/ReadingPanel";
 import {
   REGIONS,
@@ -1283,6 +1284,14 @@ export default function ExplorerApp() {
             language={language}
           />
         )}
+        {/* 航线飞行时标出起降机场与沿途航点 —— 学习模式不渲染城市点，
+            没有这层就完全看不出飞到了哪、终点是不是真的那座城市 */}
+        <RouteFlightMarkers
+          mapRef={mapRef}
+          route={isRouteFlying && activeRouteId ? (getRouteById(activeRouteId) ?? null) : null}
+          language={language}
+        />
+
         {mode === "travel" && (
           <CityMarkers
             mapRef={mapRef}

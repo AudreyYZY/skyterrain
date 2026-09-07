@@ -15,6 +15,11 @@
     "arrIata": "ATH",
     "durationMin": 685
   },
+  "source": {
+    "ref": "https://www.aia.gr/en/corporate/news-announcements/2024/successful-inaugural-flight-of-the-new-intercontinental-non-stop-service-between-shanghai-and-athens",
+    "checkedOn": "2026-09-06",
+    "note": "吉祥航空 HO1657 PVG→ATH 属实，2024-04-02 首航，周二/四/六，787-9 与记录一致；11h25m 与记录的 685min 吻合"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

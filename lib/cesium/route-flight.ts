@@ -67,6 +67,32 @@ const RAMP_FRAC = 0.25;
  */
 const MIN_MOVE_SPAN_SEC = 8;
 
+/**
+ * 起降段的取景高度（米）。巡航高度按地速可以到几百公里，那个高度上
+ * 城市与机场完全无法辨认 —— 用户看不出「飞到了没有、停在哪」。
+ * 起飞后从这个高度爬升，进近时再降回来，抵达才认得出是哪座城市。
+ */
+const TERMINAL_HEIGHT = 26_000;
+/** 爬升占全程进度的比例 */
+const CLIMB_FRAC = 0.07;
+/** 下降占全程进度的比例 */
+const DESCENT_FRAC = 0.13;
+
+/**
+ * 某个进度处的取景高度（米）：起飞爬升 → 巡航 → 进近下降。
+ * 两端用 smoothstep 过渡，不会出现高度突变。
+ */
+export function cameraHeightAt(p: number, cruiseHeightM: number): number {
+  const q = clamp(p, 0, 1);
+  if (q < CLIMB_FRAC) {
+    return TERMINAL_HEIGHT + (cruiseHeightM - TERMINAL_HEIGHT) * smoothstep(q / CLIMB_FRAC);
+  }
+  if (q > 1 - DESCENT_FRAC) {
+    return TERMINAL_HEIGHT + (cruiseHeightM - TERMINAL_HEIGHT) * smoothstep((1 - q) / DESCENT_FRAC);
+  }
+  return cruiseHeightM;
+}
+
 /** 朝向的平滑时间窗（秒）：一次大转弯至少摊在这么长的行进时间里 */
 const TURN_SMOOTH_SEC = 8;
 

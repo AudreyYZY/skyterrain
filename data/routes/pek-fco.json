@@ -15,6 +15,11 @@
     "arrIata": "FCO",
     "durationMin": 685
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca939/beijing/rome/",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA939 PEK→FCO 属实，每日执飞，11h25m 与记录的 685min 吻合；机型 777-300 与记录一致"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

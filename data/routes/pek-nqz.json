@@ -15,6 +15,11 @@
     "arrIata": "NQZ",
     "durationMin": 340
   },
+  "source": {
+    "ref": "https://www.aeroroutes.com/eng/260410-caaug26peknqz",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA795 PEK→NQZ 属实，每周三班，737 MAX 8 与记录一致"
+  },
   "cruiseHeight": 10600,
   "waypoints": [
     {

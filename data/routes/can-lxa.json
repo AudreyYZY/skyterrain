@@ -15,12 +15,13 @@
     "arrIata": "LXA",
     "durationMin": 240
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/cz3463/guangzhou/chongqing/",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：CZ3463 广州出发但**经停重庆**再飞拉萨（08:15 起飞 14:00 抵达，全程 5h45m），不是不经停直飞；机型为 A319 而非 A330-200。按本项目既有口径不用经停航班冒充直飞，暂不显示航班信息，待找到真正的直飞航班号"
+  },
   "cruiseHeight": 11600,
-  "minLegDurationSec": 44,
-  "dwellSecAtWaypoint": 6,
-  "cruiseSpeedMps": 225,
-  "overviewDwellSec": 5,
-  "dwellDuringFlightSec": 10,
   "waypoints": [
     {
       "kind": "city",
@@ -52,5 +53,10 @@
       "lon": 90.912,
       "airport": true
     }
-  ]
+  ],
+  "minLegDurationSec": 44,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 225,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 10
 }

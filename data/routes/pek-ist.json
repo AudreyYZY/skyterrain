@@ -15,6 +15,11 @@
     "arrIata": "IST",
     "durationMin": 620
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/tk89/beijing/istanbul/",
+    "checkedOn": "2026-09-06",
+    "note": "土耳其航空 TK89 PEK→IST 属实，每周六班，777-300ER（TC-LJJ）与记录一致，部分班次用 787-9；约 9h33m"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

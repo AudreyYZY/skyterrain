@@ -1,6 +1,6 @@
 "use client";
 
-import { resolveRouteWaypoints, routeCountryLabel, routeMatches } from "@/lib/routes";
+import { resolveRouteWaypoints, routeCountryLabel, routeMatches, verifiedFlight } from "@/lib/routes";
 import { t, type Language } from "@/lib/i18n";
 import type { FlightRoute } from "@/types/route";
 import { useMemo, useState } from "react";
@@ -106,7 +106,8 @@ export default function JourneyBar({
           </span>
         )}
         <span className="mt-0.5 line-clamp-1 text-[10px] text-[color:var(--ink-faint)]">
-          {route.flight ? `${route.flight.flightNo} · ` : ""}
+          {/* 未核实的航班号不显示 —— 见 lib/routes.ts isFlightVerified */}
+          {verifiedFlight(route) ? `${verifiedFlight(route)!.flightNo} · ` : ""}
           {names.join(" · ")}
         </span>
       </button>

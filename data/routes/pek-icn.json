@@ -10,10 +10,15 @@
     "airline": "中国国际航空",
     "airlineEn": "Air China",
     "flightNo": "CA123",
-    "aircraft": "Airbus A330-300",
+    "aircraft": "Airbus A321",
     "depIata": "PEK",
     "arrIata": "ICN",
     "durationMin": 115
+  },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca123/beijing/seoul/",
+    "checkedOn": "2026-09-06",
+    "note": "国航 CA123 PEK→ICN 属实，每日执飞，1h55m 与记录的 115min 吻合；机型实为 A321，原记 A330-300 已改正"
   },
   "cruiseHeight": 10100,
   "waypoints": [

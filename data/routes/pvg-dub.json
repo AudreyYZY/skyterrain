@@ -15,6 +15,11 @@
     "arrIata": "DUB",
     "durationMin": 800
   },
+  "source": {
+    "ref": "https://www.dublinairport.com/latest-news/2026/07/20/china-eastern-commences-new-non-stop-dublin-shanghai-service",
+    "checkedOn": "2026-09-06",
+    "note": "东航 MU231 PVG→DUB 属实，2026-07-20 首航，周一/三/五，A350-900（B-32FQ）与记录一致；9,385km，为都柏林机场最长定期直飞（解说所述属实）"
+  },
   "cruiseHeight": 11400,
   "waypoints": [
     {

@@ -9,18 +9,18 @@
   "flight": {
     "airline": "四川航空",
     "airlineEn": "Sichuan Airlines",
-    "flightNo": "3U8633",
+    "flightNo": "3U8693",
     "aircraft": "Airbus A319",
     "depIata": "CTU",
     "arrIata": "LXA",
     "durationMin": 130
   },
+  "source": {
+    "ref": "https://flight-report.com/en/report/75192/sichuan-airlines-3u8693-chengdu-ctu-lhasa-lxa/",
+    "checkedOn": "2026-09-06",
+    "note": "**原记 3U8633 有误**：3U8633 实际飞的是重庆→拉萨，不是成都→拉萨（该航班号另因 2018 年风挡脱落事件而知名）。改为 3U8693（CTU 双流→LXA，A319）。依据为飞行报告，非航司时刻表，**建议下次以航司官网复核**"
+  },
   "cruiseHeight": 11900,
-  "minLegDurationSec": 46,
-  "dwellSecAtWaypoint": 6,
-  "cruiseSpeedMps": 210,
-  "overviewDwellSec": 5,
-  "dwellDuringFlightSec": 11,
   "waypoints": [
     {
       "kind": "city",
@@ -55,5 +55,10 @@
       "lon": 90.912,
       "airport": true
     }
-  ]
+  ],
+  "minLegDurationSec": 46,
+  "dwellSecAtWaypoint": 6,
+  "cruiseSpeedMps": 210,
+  "overviewDwellSec": 5,
+  "dwellDuringFlightSec": 11
 }

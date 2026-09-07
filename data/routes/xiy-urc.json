@@ -15,6 +15,12 @@
     "arrIata": "URC",
     "durationMin": 210
   },
+  "source": {
+    "ref": "https://www.planemapper.com/flights/MU2103",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：MU2103 实际飞的是西安→**北京**（A321，约 1h50m），不是乌鲁木齐。未找到可靠替代航班号"
+  },
   "cruiseHeight": 11000,
   "waypoints": [
     {
