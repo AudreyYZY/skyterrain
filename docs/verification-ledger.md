@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: a232507
+lastVerifiedCommit: 426c277
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: a232507
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | travel · 加拿大城市人口（C6-d 刷新第 6 批：加拿大 8 城取 StatCan 2025-07-01 估计） | 8 | 0 / 8 / 0 | 当场修 8 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 澳大利亚城市人口与排名（C6-d 刷新第 5 批：澳大利亚 11 城取 ABS 2025 年 ERP，并改掉两处已不成立的排名） | 21 | 3 / 18 / 0 | 当场修 21 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 澳大利亚城市人口（普查数 → 年度 ERP）（C6-d 刷新第 4 批：澳大利亚 12 城取 ABS 2025 年 ERP） | 23 | 1 / 22 / 0 | 当场修 23 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 澳大利亚城市人口（普查数 → 年度 ERP）（C6-d 刷新第 3 批：澳大利亚 11 城取 ABS 2025 年 ERP） | 22 | 0 / 22 / 0 | 当场修 22 条；新开 issue 0、关闭 0 |
