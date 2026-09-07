@@ -590,12 +590,12 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "en-US": { perSentence: [0, 1, 2, 3, 4, 4], source: "auto" },
   },
   "pek-bru": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
   },
   "pek-cdg": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
   },
   "pek-cph": {
     "zh-CN": { perSentence: [0, 1, 2, 3, 4, 4], source: "auto" },
@@ -613,8 +613,8 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 1, 2], source: "auto" },
   },
   "pek-fco": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 4, 5], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 4, 4], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 4, 5], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 4, 4], source: "auto" },
   },
   "pek-foc": {
     "zh-CN": { perSentence: [0, 1, 2, 3, 3], source: "auto" },
@@ -657,12 +657,12 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "en-US": { perSentence: [0, 1, 3, 3, 3, 3], source: "auto" },
   },
   "pek-lhr": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
   },
   "pek-osl": {
-    "zh-CN": { perSentence: [0, 1, 2, 2, 3, 4], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 2, 3, 4], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 2, 2, 2, 3, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 2, 2, 3, 4], source: "auto" },
   },
   "pek-prg": {
     "zh-CN": { perSentence: [0, 1, 2, 3, 4, 5, 5], source: "auto" },
@@ -712,16 +712,16 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "en-US": { perSentence: [0, 1, 2, 2, 2, 2, 2], source: "auto" },
   },
   "pkx-ams": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 3, 3], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 4], source: "auto" },
   },
   "pkx-hel": {
     "zh-CN": { perSentence: [0, 1, 1, 2, 3, 4, 4], source: "auto" },
     "en-US": { perSentence: [0, 1, 1, 2, 3, 4, 4], source: "auto" },
   },
   "pkx-lis": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 3, 4, 5, 6, 6], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 3, 4, 5, 6, 6], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 5, 6, 6], source: "auto" },
+    "en-US": { perSentence: [0, 1, 1, 2, 3, 3, 4, 4, 5, 6, 6], source: "auto" },
   },
   "pus-cju": {
     "zh-CN": { perSentence: [0, 1, 1], source: "auto" },
@@ -732,8 +732,8 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "en-US": { perSentence: [0, 0, 1, 2, 3, 4, 4], source: "auto" },
   },
   "pvg-arn": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 4, 4], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 4, 4], source: "auto" },
+    "zh-CN": { perSentence: [0, 1, 2, 2, 3, 3, 3, 4, 4], source: "auto" },
+    "en-US": { perSentence: [0, 1, 2, 2, 3, 3, 3, 4, 4], source: "auto" },
   },
   "pvg-dat": {
     "zh-CN": { perSentence: [0, 1, 1, 2], source: "auto" },
