@@ -136,6 +136,31 @@ for (const r of ROUTES) {
     }
   }
 
+  // 首尾机场航点必须就是 flight 声明的那两个机场。
+  //
+  // 踩过：成都—兰州把首航点写成**成都天府(TFU)**，而 EU1863 实际从**成都双流(CTU)**
+  // 起飞——镜头从天府起飞、数据说双流，两边各说各的。这一类靠肉眼看不出来，
+  // 因为两个航点名字都对、坐标也都对，只是不是同一个机场。
+  //
+  // 只在航点 id 长得像 IATA 三字码时比对：希腊/奥地利那批用的是 "athens"、
+  // "vienna" 这种城市 slug 作航点 id，不是机场码，不适用这条规则。
+  if (r.flight) {
+    const aps = r.waypoints.filter(
+      (w): w is Extract<RouteWaypoint, { kind: "city" }> => w.kind === "city" && w.airport === true,
+    );
+    if (aps.length >= 2) {
+      const ends: [string, string, string][] = [
+        [aps[0]!.id, r.flight.depIata, "出发"],
+        [aps[aps.length - 1]!.id, r.flight.arrIata, "到达"],
+      ];
+      for (const [wpId, iata, which] of ends) {
+        if (/^[a-z]{3}$/.test(wpId) && wpId.toUpperCase() !== iata) {
+          fail(r.id, `${which}机场对不上：航点是 ${wpId.toUpperCase()}，但 flight.${which === "出发" ? "dep" : "arr"}Iata 是 ${iata}`);
+        }
+      }
+    }
+  }
+
   // 解析坐标序列
   const coords: [number, number][] = [];
   for (const wp of wps) {

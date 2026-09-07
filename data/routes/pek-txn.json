@@ -17,10 +17,40 @@
   },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "yangtze-delta" },
-    { "kind": "terrain", "terrainId": "jiangnan-hills" },
-    { "kind": "city", "id": "txn", "name": "黄山屯溪", "nameEn": "Huangshan Tunxi", "lat": 29.730, "lon": 118.253, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze-delta"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jiangnan-hills"
+    },
+    {
+      "kind": "city",
+      "id": "txn",
+      "name": "黄山屯溪",
+      "nameEn": "Huangshan Tunxi",
+      "lat": 29.73,
+      "lon": 118.253,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://us.trip.com/flights/status-ca1551/",
+    "checkedOn": "2026-09-07",
+    "note": "国航 CA1551 PEK→TXN 属实，737-800、不经停，约 2h10m 与记录 130min 吻合，每周约 5 班，航距 1171km。来源级别 3"
+  }
 }

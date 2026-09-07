@@ -17,9 +17,37 @@
   },
   "cruiseHeight": 9800,
   "waypoints": [
-    { "kind": "city", "id": "sha", "name": "上海虹桥", "nameEn": "Shanghai Hongqiao", "lat": 31.198, "lon": 121.336, "airport": true },
-    { "kind": "terrain", "terrainId": "dabie" },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "city", "id": "lya", "name": "洛阳北郊", "nameEn": "Luoyang Beijiao", "lat": 34.741, "lon": 112.388, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "sha",
+      "name": "上海虹桥",
+      "nameEn": "Shanghai Hongqiao",
+      "lat": 31.198,
+      "lon": 121.336,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dabie"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "city",
+      "id": "lya",
+      "name": "洛阳北郊",
+      "nameEn": "Luoyang Beijiao",
+      "lat": 34.741,
+      "lon": 112.388,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-mu5361",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：MU5361 实际是**上海浦东(PVG)→广州(CAN)**，出发机场（浦东非虹桥）与到达机场都对不上。未找到可核实的 SHA→LYA 替代航班号。来源级别 3（航班追踪站）"
+  }
 }

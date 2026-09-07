@@ -9,8 +9,8 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA1523",
-    "aircraft": "Boeing 737-800",
+    "flightNo": "CA1929",
+    "aircraft": "COMAC C909 (ARJ21)",
     "depIata": "PEK",
     "arrIata": "YIH",
     "durationMin": 145
@@ -40,8 +40,13 @@
       "name": "宜昌三峡",
       "nameEn": "Yichang Sanxia",
       "lat": 30.556,
-      "lon": 111.480,
+      "lon": 111.48,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-ca1929/",
+    "checkedOn": "2026-09-07",
+    "note": "**原记 CA1523 有误**：CA1523 实际飞北京→**上海虹桥**（A330-200/300）。PEK→YIH 由国航与海航执飞、每周 11 班，改为国航 CA1929（C909/原 ARJ21，18:05–20:15 约 2h10m，记录 145min 同量级）。来源级别 3"
+  }
 }

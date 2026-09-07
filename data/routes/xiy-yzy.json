@@ -9,7 +9,7 @@
   "flight": {
     "airline": "中国东方航空",
     "airlineEn": "China Eastern Airlines",
-    "flightNo": "MU6202",
+    "flightNo": "MU6201",
     "aircraft": "Airbus A320",
     "depIata": "XIY",
     "arrIata": "YZY",
@@ -17,10 +17,40 @@
   },
   "cruiseHeight": 9800,
   "waypoints": [
-    { "kind": "city", "id": "xiy", "name": "西安咸阳", "nameEn": "Xi'an Xianyang", "lat": 34.447, "lon": 108.752, "airport": true },
-    { "kind": "terrain", "terrainId": "guanzhong-plain" },
-    { "kind": "terrain", "terrainId": "loess" },
-    { "kind": "terrain", "terrainId": "hexi-corridor" },
-    { "kind": "city", "id": "yzy", "name": "张掖甘州", "nameEn": "Zhangye Ganzhou", "lat": 38.802, "lon": 100.675, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "xiy",
+      "name": "西安咸阳",
+      "nameEn": "Xi'an Xianyang",
+      "lat": 34.447,
+      "lon": 108.752,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "guanzhong-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "loess"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hexi-corridor"
+    },
+    {
+      "kind": "city",
+      "id": "yzy",
+      "name": "张掖甘州",
+      "nameEn": "Zhangye Ganzhou",
+      "lat": 38.802,
+      "lon": 100.675,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-mu6201",
+    "checkedOn": "2026-09-07",
+    "note": "航司/机型/城市对都对，**方向反了**：MU6202 是张掖→西安的回程，去程 XIY→YZY 是 MU6201（A320-212，不经停，约 1h50m）。航班号已改正。来源级别 3"
+  }
 }

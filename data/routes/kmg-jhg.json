@@ -7,20 +7,56 @@
   "depCountry": "china",
   "arrCountry": "china",
   "flight": {
-    "airline": "祥鹏航空",
-    "airlineEn": "Lucky Air",
-    "flightNo": "8L9285",
-    "aircraft": "Airbus A320",
+    "airline": "中国东方航空",
+    "airlineEn": "China Eastern Airlines",
+    "flightNo": "MU5903",
+    "aircraft": "Boeing 737-700",
     "depIata": "KMG",
     "arrIata": "JHG",
     "durationMin": 55
   },
   "cruiseHeight": 7800,
   "waypoints": [
-    { "kind": "city", "id": "kmg", "name": "昆明长水", "nameEn": "Kunming Changshui", "lat": 25.102, "lon": 102.929, "airport": true },
-    { "kind": "terrain", "terrainId": "yunnan-guizhou" },
-    { "kind": "feature", "name": "哀牢山", "nameEn": "Ailao Mountains", "lon": 101.0, "lat": 24.0 },
-    { "kind": "feature", "name": "澜沧江河谷", "nameEn": "Lancang (Mekong) River valley", "lon": 100.8, "lat": 22.5 },
-    { "kind": "city", "id": "jhg", "name": "西双版纳嘎洒", "nameEn": "Xishuangbanna Gasa", "lat": 21.9739, "lon": 100.7596, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "kmg",
+      "name": "昆明长水",
+      "nameEn": "Kunming Changshui",
+      "lat": 25.102,
+      "lon": 102.929,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yunnan-guizhou"
+    },
+    {
+      "kind": "feature",
+      "name": "哀牢山",
+      "nameEn": "Ailao Mountains",
+      "lon": 101.0,
+      "lat": 24.0
+    },
+    {
+      "kind": "feature",
+      "name": "澜沧江河谷",
+      "nameEn": "Lancang (Mekong) River valley",
+      "lon": 100.8,
+      "lat": 22.5
+    },
+    {
+      "kind": "city",
+      "id": "jhg",
+      "name": "西双版纳嘎洒",
+      "nameEn": "Xishuangbanna Gasa",
+      "lat": 21.9739,
+      "lon": 100.7596,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-mu5903/",
+    "checkedOn": "2026-09-07",
+    "note": "**原记祥鹏航空 8L9285 有误**：查不到这个航班号（trip.com 404、FlightAware/Flightradar24 均无），且祥鹏从 JHG 飞的 7 个目的地不含昆明。KMG→JHG 的不经停由东航与上航执飞，改为东航 MU5903（737-700，14:00–15:00 约 1h，与记录 55min 同量级）。来源级别 3"
+  }
 }

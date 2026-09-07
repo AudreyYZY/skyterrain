@@ -305,9 +305,11 @@ const UI_TEXTS: Record<string, Record<Language, string>> = {
     "zh-CN": "航线飞行",
     "en-US": "Fly a route",
   },
+  // 不写「真实航线」：城市对与机场是可查的，但航班号/机型只有核实过的才显示，
+  // 抽查下来相当一部分对不上（见 docs/known-errors.md）。措辞只说做什么，不下断言。
   "journey.hint": {
-    "zh-CN": "选一条真实航线，从舷窗看这片区域的地貌",
-    "en-US": "Pick a real flight and watch this region's terrain from the window",
+    "zh-CN": "选一条航线，从舷窗看这片区域的地貌",
+    "en-US": "Pick a route and watch this region's terrain from the window",
   },
   "journey.all": {
     "zh-CN": "全部",

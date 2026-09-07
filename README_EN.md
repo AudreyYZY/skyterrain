@@ -4,16 +4,23 @@
 
 A documentary-style web app for understanding the world from a passenger's window seat:
 it drops you onto a 3D globe at cruising altitude looking down at one place, frames its most
-telling feature, and pairs it with authoritative, non-AI-generated narration so you actually
+telling feature, and pairs it with a written geography lesson so you actually
 *understand* what you're seeing.
 
 Not a GIS dashboard, not a flight simulator, not a game.
+
+> **Read this before you rely on anything here**: the text and data in this project were
+> **compiled from public sources without a line-by-line human review**. Factual errors have
+> been found before and more certainly remain. The error classes, the ones already fixed, and
+> the automated guards now in place are recorded in
+> [`docs/known-errors.md`](docs/known-errors.md). Do not treat any figure, flight number or
+> airport name here as citable. See [Data reliability](#data-reliability) below.
 
 **Two modes** (one-click switch in the header, remembered in `localStorage`):
 
 | Mode | The question it answers | Content |
 |---|---|---|
-| **Study** | "What landform is that? How did it form?" | Terrain atlas — 1041 landforms + authoritative 6-section lessons |
+| **Study** | "What landform is that? How did it form?" | Terrain atlas — 1041 landforms + 6-section lessons |
 | **Travel** | "I've landed in an unfamiliar city — what do I need to know?" | City overviews — layout / getting around / culture / when to go |
 
 The two content systems run in parallel and don't interfere.
@@ -23,7 +30,7 @@ counts on every run — **trust those over this paragraph if they ever disagree*
 country-by-country breakdown lives in `CLAUDE.md`'s "范围" section, kept current on every
 expansion, and isn't duplicated here to avoid a second copy going stale):
 - Study — Asia · Europe · North America · South America · Oceania, 38 countries, 1041 landforms, bilingual
-- Travel — covers all 38 countries live in study mode, 38 country overviews + 467 cities, bilingual;
+- Travel — covers all 38 countries live in study mode, 38 country overviews + 691 cities, bilingual;
   295 commercial routes (domestic + international) with bilingual study/travel narration each
 
 **Roadmap:** keep expanding study-mode terrain coverage (Africa not yet started) + expand travel-mode city coverage by tourism demand.
@@ -102,7 +109,7 @@ HTML label layer ([`CesiumOverlayLabels.tsx`](components/CesiumOverlayLabels.tsx
   estimate.
 - One-click Chinese / English switch; voice and lesson text switch together.
 
-### Structured lessons — authoritative, not AI-generated
+### Structured lessons — compiled from public sources
 
 Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.ts) `LESSON_SECTION_ORDER`):
 
@@ -116,14 +123,16 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
 | History & people | — |
 
 - Content lives in [`lib/terrain-content.{zh,en}.ts`](lib/terrain-content.zh.ts)
-  (`getTerrainContent(id, lang)`), summarized from widely-accepted geography facts (China
-  National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks
-  Australia, UNESCO) — not documentary voiceover, not free-form generation.
+  (`getTerrainContent(id, lang)`), compiled with reference to widely-accepted geography
+  sources (China National Geographic, CAS, Ministry of Natural Resources, Geoscience
+  Australia, Parks Australia, UNESCO) — not documentary voiceover, but **not
+  individually verified against those sources either**.
 - **All 1041 have bilingual lessons.** An early batch of 61 (China 39 + Australia 22, back when
   those were the only two countries in the registry) went through a dedicated line-by-line
   source-verification pass: comparative / subjective judgments removed, disputed points
   qualified or given side by side, anything unverifiable dropped, figures normalized to
-  authoritative sources. **Verification depth is uneven across the registry**: the `source`
+  authoritative sources. **That was the writing standard, not a sign-off by a reviewer.**
+  **Verification depth is uneven across the registry**: the `source`
   field is populated on every entry, but only a fraction cite a specific, checkable source
   (a named Wikipedia article, a national survey bulletin, etc.) — the rest say something more
   general like "approximate" or just name an agency, and a handful explicitly flag themselves
@@ -131,24 +140,105 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   a quality certification — double-check any figure you plan to rely on.
 - [`lib/terrain-lesson.ts`](lib/terrain-lesson.ts) `resolveLesson(id, lang)` decides which
   lesson to use, in one place.
+- Known failure modes (a mechanism simplified into an outright error, an unqualified
+  superlative, population/area figures with no year or definition) and the specific instances
+  already fixed are listed in [`docs/known-errors.md`](docs/known-errors.md).
 
 ### Route flights
 
-- **295 real commercial routes** (`data/routes/*.json`) across the countries listed above,
-  domestic and China–other-country international, each with airline / flight number /
-  aircraft, departure and arrival airports, and terrain waypoints along the way.
+- **295 routes** (`data/routes/*.json`) across the countries listed above, domestic and
+  China–other-country international. Each is a genuinely connected city pair plus departure
+  and arrival airports and terrain waypoints along the way; the data also carries an
+  airline / flight number / aircraft.
+  **Do not read the set as 295 real commercial flights**: the city pairs and airports check
+  out, but the flight number and aircraft recorded at writing time were an example, and a
+  substantial share do not hold up (of 24 Chinese domestic routes sampled, 19 carried a
+  flight number that does not fly that route at all).
 - Under 3 minutes each: the camera jumps to a slanted view over the departure airport →
   immediately starts a **single continuous narration written for that route**
   ([`lib/route-narration.ts`](lib/route-narration.ts), bilingual, regional-geography-textbook
   register) → and flies the waypoints at a steady pace.
 - Each route has two narrations, following the current mode: `ROUTE_NARRATION[id].{study, travel}`.
 - Self-check: `node --experimental-strip-types scripts/check-routes.ts`.
-- **The city pairs, airlines, and terrain waypoints are researched** (the route genuinely
-  exists, and the terrain it flies over genuinely lies along that path); **the specific flight
-  number / aircraft type is a real example captured at the time the route was written, not a
-  live timetable** — airlines renumber routes, swap aircraft, and drop seasonal service
-  constantly, so these figures aren't guaranteed still accurate. Check the airline's own site
-  or an OTA for current schedules before you fly.
+- **Flight numbers and aircraft are shown only when verified.** `FlightRoute.source`
+  (`ref` / `checkedOn` / `status`) is the verification trail and `isFlightVerified()` in
+  [`lib/routes.ts`](lib/routes.ts) is the single gate: a route with no trail, or one whose
+  trail concluded `wrong`, shows **no** flight number or aircraft anywhere — not in the UI,
+  not in search, not in the narration. The route still flies and its geography narration still
+  plays. `npm run check:routes` hard-fails if an unverified route's narration names an
+  aircraft or a flight number.
+- Where it stands: **59 of 295 verified** (45 confirmed + 14 checked and found wrong),
+  **236 not yet checked**. International routes mostly drifted on aircraft type; Chinese
+  domestic routes were wrong 19 times out of 24 sampled, usually because the flight number
+  does not serve that city pair. **Even the verified 59 are a snapshot taken on `checkedOn`** —
+  airlines renumber and swap aircraft without notice. Check the airline or an OTA before you fly.
+
+---
+
+## Data reliability
+
+This project carries a lot of prose (1041 landforms × 6 sections + 691 cities × 7 sections +
+295 routes × 2 narrations, in two languages). **It was compiled from public sources and nobody
+reviewed it line by line.** A fair number of factual errors have already been found and fixed;
+more are certainly still in there. Here is what holds up, what does not, and what catches it.
+
+### By content type
+
+| Content | Confidence | Notes |
+|---|---|---|
+| Terrain **position and extent** | Higher | Each entry cites a source in `source`; camera geometry is asserted in CI |
+| Terrain **lesson text** | Medium | Compiled from public sources, written to avoid comparatives and disputed claims — but never signed off entry by entry |
+| City **coordinates / IATA / airport** | Higher | `check:places` enforces completeness; renamings are caught only when someone notices (see known-errors) |
+| City **structure and daily-life text** | Medium | Same as terrain lessons; many population/area figures **carry no year or definition** |
+| Route **city pairs and airports** | Higher | All genuinely connected city pairs |
+| Route **flight number / aircraft** | **Low — hidden by default** | Only 59/295 verified; the rest never appear in UI, search or narration |
+
+### Automated guards
+
+```bash
+npm run check          # runs everything below
+npm run check:regions  # continent / subregion / country ↔ terrain count consistency
+npm run check:camera   # camera geometry (1041/1041)
+npm run check:places   # city coordinates / IATA / source / bilingual completeness
+npm run check:routes   # waypoint monotonicity, narration length, verification trail, aircraft consistency
+npm run check:flight   # camera-motion assertions (speed/height ratio, acceleration, turn rate, silent tail)
+npm run check:anchors  # sentence→waypoint anchor tables, camera-lag statistics
+npm run check:claims   # perishable-claim scan (population figures with no year, subjective superlatives, rank claims)
+npm run verify:report -- <findings.json>   # land a verification round: open/close issues + ledger
+```
+
+**These only catch self-contradiction and forbidden phrasing — they cannot tell you whether a
+statement is true.** That needs the web, which is what the flow below is for.
+
+### Content verification flow (run after each batch)
+
+After adding terrain / cities / routes, check the new material against authoritative sources:
+
+```
+/verify-content            # everything added or changed since the last run
+/verify-content cities kul-lgk kch-myy   # or a specific scope
+```
+
+It works out what changed (git diff + the ledger), hands the entries to the
+`content-verifier` subagent in batches to check online against official sources first
+(reporting `unknown` rather than inventing a plausible answer), fixes outright errors on the
+spot, and then hands the verdicts to `npm run verify:report`, which lands them mechanically:
+
+- fixed → if an issue was open for it, comment with the fix and the source, then **close** it
+- not fixed (wrong but no reliable replacement found) → **open an issue** automatically, with
+  a dedupe key in the body so re-runs don't duplicate it, and **reopen** it if the problem
+  recurs after being closed
+- every round → a progress comment on the umbrella issue plus a row appended to
+  [`docs/verification-ledger.md`](docs/verification-ledger.md)
+
+Rules live in [`.claude/skills/verify-content/SKILL.md`](.claude/skills/verify-content/SKILL.md).
+
+### Found an error?
+
+Please open an [issue](../../issues) with the `data-error` label. Known error classes, their
+root causes, how they were fixed and which guard now catches them are in
+[`docs/known-errors.md`](docs/known-errors.md) — **file a new finding under one of those
+classes; if it doesn't fit, it's a new class and needs a new guard alongside the fix.**
 
 ---
 
@@ -228,7 +318,7 @@ lib/
   terrain-lesson.ts         — resolveLesson(id, lang): one place decides which lesson to use
   terrain-label-registry.ts — labels (generated from the registry, with nameEn)
   lesson.ts                 — lesson section order / headings / assembly
-  routes.ts / route-narration.ts — real commercial routes (295 currently, domestic + international) + two continuous narrations each
+  routes.ts / route-narration.ts — routes (295 currently, domestic + international; flight numbers surface only when verified) + two continuous narrations each
   app-mode.ts               — AppMode type + localStorage read/write
   places-registry.ts        — [travel-mode single source of truth] cities + country overviews
   travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
@@ -315,8 +405,9 @@ Selection standard: [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md).
 | Terrain boundaries | Natural Earth 10m Geography Regions |
 | Satellite imagery | Bing Maps (Cesium Ion) |
 | Terrain elevation | Cesium World Terrain |
-| Terrain lessons | Widely-accepted geography facts (China National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks Australia, UNESCO), hand-summarized and line-by-line source-verified |
-| Travel guides | National tourism boards / meteorological-agency climate normals / entry information / established guidebook consensus, hand-summarized |
+| Terrain lessons | Compiled with reference to China National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks Australia, UNESCO and similar public sources — **not individually reviewed by a person** |
+| Travel guides | Compiled with reference to national tourism boards / meteorological climate normals / entry information / established guidebooks — **not individually reviewed by a person** |
+| Flight numbers / aircraft | An example found at writing time; shown only where a `source` trail records a check (currently 59/295), and only as a snapshot of that date |
 
 ---
 

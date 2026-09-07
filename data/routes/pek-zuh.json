@@ -9,19 +9,52 @@
   "flight": {
     "airline": "中国国际航空",
     "airlineEn": "Air China",
-    "flightNo": "CA1341",
-    "aircraft": "Airbus A321",
+    "flightNo": "CA1323",
+    "aircraft": "Boeing 737-800",
     "depIata": "PEK",
     "arrIata": "ZUH",
     "durationMin": 195
   },
   "cruiseHeight": 10800,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "dabie" },
-    { "kind": "terrain", "terrainId": "yangtze" },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "city", "id": "zuh", "name": "珠海金湾", "nameEn": "Zhuhai Jinwan", "lat": 22.0069, "lon": 113.3761, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dabie"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yangtze"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "city",
+      "id": "zuh",
+      "name": "珠海金湾",
+      "nameEn": "Zhuhai Jinwan",
+      "lat": 22.0069,
+      "lon": 113.3761,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://in.trip.com/flights/status-ca1323/",
+    "checkedOn": "2026-09-07",
+    "note": "**原记 CA1341 有误**：CA1341 实际飞北京→**深圳**宝安（A350-900/777-300ER）。PEK→ZUH 由国航与山航执飞，改为国航 CA1323（737-800，14:15–17:40 约 3h25m，记录 195min 同量级）。来源级别 3"
+  }
 }
