@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: b8ff810
+lastVerifiedCommit: e34563f
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: b8ff810
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | travel · 日本城市人口与口径（C6-d 第 17 批：日本 13 城取 2025 年国势调查速报值） | 27 | 0 / 27 / 0 | 当场修 27 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 葡萄牙城市人口与口径（C6-d 第 16 批：葡萄牙 15 城取 INE 2025 年末估计） | 26 | 0 / 26 / 0 | 当场修 26 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 法国城市人口与口径（C6-d/C6-c 第 15 批：法国 16 城取 INSEE 2023 年法定人口，并改掉四处对不上口径的数字与三处口径混用） | 18 | 1 / 17 / 0 | 当场修 18 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 中国城市人口与行政级别（C6-d 刷新第 14 批：中国 6 城（珠海/承德/武夷山/景德镇/无锡/吐鲁番）） | 13 | 0 / 13 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |
