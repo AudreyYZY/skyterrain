@@ -43,9 +43,20 @@ const EN_GENERIC_SUFFIX =
  * 英文按词匹配，不能用裸的 includes：「Easter」会命中「eastern South Pacific」，
  * 于是一句在讲南太平洋的话被判成已经飞到复活节岛。
  */
-function containsWord(haystackLower: string, needle: string): boolean {
+function wordIndexOf(haystackLower: string, needle: string): number {
   const esc = needle.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  return new RegExp(`(^|[^a-z0-9])${esc}([^a-z0-9]|$)`).test(haystackLower);
+  const m = new RegExp(`(^|[^a-z0-9])(${esc})([^a-z0-9]|$)`).exec(haystackLower);
+  return m ? m.index + m[1]!.length : -1;
+}
+
+/** 拆出航点名里的并列名/别名（「A / B」「A·B」「A, B」），长的排前面先试 */
+function splitAliases(name: string): string[] {
+  const parts = name
+    .split(/\s*\/\s*|·|\s*,\s*/)
+    .map((x) => x.trim())
+    .filter(Boolean);
+  const all = parts.length > 1 ? [name, ...parts] : [name];
+  return [...new Set(all)].sort((a, b) => b.length - a.length);
 }
 
 export interface AnchorWaypoint {
@@ -70,7 +81,11 @@ export interface AnchorResult {
 }
 
 /**
- * 一句话里命中的航点下标；一句提到多个时取**最靠前**的那个。
+ * 一句话里命中的航点下标；一句提到多个时取**在句子里出现得最早**的那个。
+ *
+ * 按句中位置挑，不是按航点顺序挑：「进入雪峰山一带——它是江南丘陵和云贵高原
+ * 之间的过渡山地」这句讲的是雪峰山，江南丘陵只是用来说明它夹在哪两者之间；
+ * 按航点顺序挑会返回排在前面的江南丘陵，锚点于是回退、整篇被判成乱序。
  *
  * 取最靠前而不是最靠后：解说常在一句里连着走好几处（「掠过戈壁荒漠，再北上进入
  * 贝加尔湖一带」），这句开口时镜头该在戈壁，后面那几处是这句话说下去的过程中
@@ -84,6 +99,15 @@ export function matchWaypointInSentence(
 ): number {
   const en = lang === "en-US";
   const hay = en ? sentence.toLowerCase() : sentence;
+  /** 命中位置最靠前的那个航点 */
+  let bestAt = Infinity;
+  let best = -1;
+  const take = (at: number, index: number) => {
+    if (at >= 0 && at < bestAt) {
+      bestAt = at;
+      best = index;
+    }
+  };
   for (let i = 0; i < waypoints.length; i++) {
     const w = waypoints[i]!;
     const nm0 = en ? w.nameEn : w.name;
@@ -93,24 +117,25 @@ export function matchWaypointInSentence(
     // 而它偏偏是跨欧亚航线上跨度最大的那个航点。
     const nm = nm0.replace(PARENTHETICAL_SUFFIX, "").trim();
     if (!nm) continue;
-    if (en) {
-      if (containsWord(hay, nm)) return w.index;
-      // 「Gobi Desert」→「Gobi」：英文通名后缀同样可省
-      const core = nm.replace(EN_GENERIC_SUFFIX, "").trim();
-      if (
-        core.length >= 4 &&
-        !EN_CORE_STOPWORDS.has(core.toLowerCase()) &&
-        containsWord(hay, core)
-      ) {
-        return w.index;
+    // 一个航点常带并列名：「Lake Lucerne / Vierwaldstättersee」「Corsica / Corse」
+    //「博恩霍尔姆·阿尔明丁根高地」「Stora Alvaret, Öland」。整串谁都不会写进
+    // 句子里，逐个别名试才行。
+    for (const alt of splitAliases(nm)) {
+      if (en) {
+        take(wordIndexOf(hay, alt), w.index);
+        // 「Gobi Desert」→「Gobi」：英文通名后缀同样可省
+        const core = alt.replace(EN_GENERIC_SUFFIX, "").trim();
+        if (core.length >= 4 && !EN_CORE_STOPWORDS.has(core.toLowerCase())) {
+          take(wordIndexOf(hay, core), w.index);
+        }
+        continue;
       }
-      continue;
+      take(sentence.indexOf(alt), w.index);
+      const core = alt.replace(ZH_GENERIC_SUFFIX, "");
+      if (core.length >= 2) take(sentence.indexOf(core), w.index);
     }
-    if (sentence.includes(nm)) return w.index;
-    const core = nm.replace(ZH_GENERIC_SUFFIX, "");
-    if (core.length >= 2 && sentence.includes(core)) return w.index;
   }
-  return -1;
+  return best;
 }
 
 /**

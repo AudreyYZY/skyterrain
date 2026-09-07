@@ -65,7 +65,8 @@ for (const route of getAllRoutes()) {
         notApplicable++;
         continue;
       }
-      const r = deriveAnchors(text, named, lang);
+      // 与 gen:anchors 同一口径（首句是预告不是位置），否则这里报的原因会对不上
+      const r = deriveAnchors(text, named, lang, { firstSentenceIsStart: true });
       const reason =
         r.distinctHits === 0
           ? "解说未提及任何航点"
