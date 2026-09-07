@@ -48,7 +48,6 @@ import pekTxn from "./pek-txn.json" with { type: "json" };
 // 中国 · 批 7（Tier 2 热门城市批2：景洪/珠海/景德镇/温州/扬州/武夷山）
 import kmgJhg from "./kmg-jhg.json" with { type: "json" };
 import pekZuh from "./pek-zuh.json" with { type: "json" };
-import shaJdz from "./sha-jdz.json" with { type: "json" };
 import canWnz from "./can-wnz.json" with { type: "json" };
 import pekYty from "./pek-yty.json" with { type: "json" };
 import pekWus from "./pek-wus.json" with { type: "json" };
@@ -80,7 +79,6 @@ import sydCns from "./syd-cns.json" with { type: "json" };
 import melSyd from "./mel-syd.json" with { type: "json" };
 import melPer from "./mel-per.json" with { type: "json" };
 import melAdl from "./mel-adl.json" with { type: "json" };
-import adlAyq from "./adl-ayq.json" with { type: "json" };
 import bneDrw from "./bne-drw.json" with { type: "json" };
 import melHba from "./mel-hba.json" with { type: "json" };
 import sydAvv from "./syd-avv.json" with { type: "json" };
@@ -140,7 +138,6 @@ import cdgNce from "./cdg-nce.json" with { type: "json" };
 import cdgMrs from "./cdg-mrs.json" with { type: "json" };
 import cdgTls from "./cdg-tls.json" with { type: "json" };
 import cdgBod from "./cdg-bod.json" with { type: "json" };
-import cdgStr from "./cdg-str.json" with { type: "json" };
 import cdgNte from "./cdg-nte.json" with { type: "json" };
 import lysMrs from "./lys-mrs.json" with { type: "json" };
 import mrsAja from "./mrs-aja.json" with { type: "json" };
@@ -151,7 +148,6 @@ import fcoVce from "./fco-vce.json" with { type: "json" };
 import fcoNap from "./fco-nap.json" with { type: "json" };
 import fcoCta from "./fco-cta.json" with { type: "json" };
 import fcoCag from "./fco-cag.json" with { type: "json" };
-import linVce from "./lin-vce.json" with { type: "json" };
 import linNap from "./lin-nap.json" with { type: "json" };
 import napCta from "./nap-cta.json" with { type: "json" };
 import fcoBri from "./fco-bri.json" with { type: "json" };
@@ -166,7 +162,6 @@ import madTfn from "./mad-tfn.json" with { type: "json" };
 import bcnAgp from "./bcn-agp.json" with { type: "json" };
 // 德国
 import berMuc from "./ber-muc.json" with { type: "json" };
-import berHam from "./ber-ham.json" with { type: "json" };
 import berCgn from "./ber-cgn.json" with { type: "json" };
 import mucHam from "./muc-ham.json" with { type: "json" };
 import fraMuc from "./fra-muc.json" with { type: "json" };
@@ -181,7 +176,6 @@ import athRho from "./ath-rho.json" with { type: "json" };
 import athCfu from "./ath-cfu.json" with { type: "json" };
 import athIoa from "./ath-ioa.json" with { type: "json" };
 import athJtr from "./ath-jtr.json" with { type: "json" };
-import athKlx from "./ath-klx.json" with { type: "json" };
 // 葡萄牙
 import lisFao from "./lis-fao.json" with { type: "json" };
 import lisFnc from "./lis-fnc.json" with { type: "json" };
@@ -297,7 +291,6 @@ import istTzx from "./ist-tzx.json" with { type: "json" };
 import istDnz from "./ist-dnz.json" with { type: "json" };
 import istBjv from "./ist-bjv.json" with { type: "json" };
 import esbAyt from "./esb-ayt.json" with { type: "json" };
-import esbKya from "./esb-kya.json" with { type: "json" };
 // 克罗地亚
 import zagSpu from "./zag-spu.json" with { type: "json" };
 import zagDbv from "./zag-dbv.json" with { type: "json" };
@@ -309,7 +302,6 @@ import zagRjk from "./zag-rjk.json" with { type: "json" };
 import pekHld from "./pek-hld.json" with { type: "json" };
 import pekYih from "./pek-yih.json" with { type: "json" };
 import pekEny from "./pek-eny.json" with { type: "json" };
-import ctuGoq from "./ctu-goq.json" with { type: "json" };
 // 国际 · 中国 ↔ 英国/法国/德国/荷兰/比利时（Phase 3 批 D）
 import pekLhr from "./pek-lhr.json" with { type: "json" };
 import pekCdg from "./pek-cdg.json" with { type: "json" };
@@ -387,7 +379,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekTxn,
   kmgJhg,
   pekZuh,
-  shaJdz,
   canWnz,
   pekYty,
   pekWus,
@@ -415,7 +406,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   melSyd,
   melPer,
   melAdl,
-  adlAyq,
   bneDrw,
   melHba,
   sydAvv,
@@ -467,7 +457,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   cdgMrs,
   cdgTls,
   cdgBod,
-  cdgStr,
   cdgNte,
   lysMrs,
   mrsAja,
@@ -477,7 +466,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   fcoNap,
   fcoCta,
   fcoCag,
-  linVce,
   linNap,
   napCta,
   fcoBri,
@@ -490,7 +478,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   madTfn,
   bcnAgp,
   berMuc,
-  berHam,
   berCgn,
   mucHam,
   fraMuc,
@@ -504,7 +491,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   athCfu,
   athIoa,
   athJtr,
-  athKlx,
   lisFao,
   lisFnc,
   lisPdl,
@@ -603,7 +589,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   istDnz,
   istBjv,
   esbAyt,
-  esbKya,
   zagSpu,
   zagDbv,
   zagZad,
@@ -613,7 +598,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   pekHld,
   pekYih,
   pekEny,
-  ctuGoq,
   pekLhr,
   pekCdg,
   pekBer,
