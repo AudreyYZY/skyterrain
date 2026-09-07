@@ -3412,11 +3412,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   bristol: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   City of Bristol（单一制议会辖区，E06000023）mid-2025 = 495,260。原文既没有年份也没有口径。
     identity:
-      "布里斯托尔在英格兰西南部、雅芳河下游，市区人口约 47 万，历史上是重要的港口和造船城市，如今以创意产业、街头艺术（涂鸦艺术家班克西的家乡）和独立文化闻名。美国有多座以它命名的城市。城市紧邻威尔士边界，是进入威尔士南部和西南半岛的门户。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bristol (unitary authority, city and county since 1373; ~110 km²; ~494,000 2024; West of England Combined Authority with South Gloucestershire and BaNES; Floating Harbour; Clifton Suspension Bridge; no rail transit)
+      "布里斯托尔在英格兰西南部、雅芳河下游，2025年年中人口约49.5万（英国国家统计局ONS），历史上是重要的港口和造船城市，如今以创意产业、街头艺术（涂鸦艺术家班克西的家乡）和独立文化闻名。美国有多座以它命名的城市。城市紧邻威尔士边界，是进入威尔士南部和西南半岛的门户。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   City of Bristol mid-2025 = 495,260。
     howItWorks:
-      "布里斯托是英格兰西南部最大的城市，1373 年起既是城又是郡，今天是一个单一制议会，市域约 110 平方公里，2024 年人口约 49 万；议会管教育、住房与垃圾，2017 年起与南格洛斯特郡、巴斯及东北萨默塞特合成的西英格兰联合管理局有民选市长管交通与规划，警察与医院归国家机构。市中心围着旧港区“浮动港”，克利夫顿吊桥跨在埃文峡谷上，坦普尔米兹是火车站，机场在南面 13 公里，没有轨道交通。初来的人最容易犯的错，是把布里斯托议会的辖区当作整座城，而城区的北半在南格洛斯特郡议会，市界紧得像一件小一号的衣服。",
+      "布里斯托是英格兰西南部最大的城市，1373 年起既是城又是郡，今天是一个单一制议会，市域约 110 平方公里，2025 年年中人口约 49.5 万；议会管教育、住房与垃圾，2017 年起与南格洛斯特郡、巴斯及东北萨默塞特合成的西英格兰联合管理局有民选市长管交通与规划，警察与医院归国家机构。市中心围着旧港区“浮动港”，克利夫顿吊桥跨在埃文峡谷上，坦普尔米兹是火车站，机场在南面 13 公里，没有轨道交通。初来的人最容易犯的错，是把布里斯托议会的辖区当作整座城，而城区的北半在南格洛斯特郡议会，市界紧得像一件小一号的衣服。",
     layout:
       "布里斯托尔建在雅芳河切出的峡谷和周围的丘陵上，地势起伏。老港区（Harbourside）经过改造，是博物馆和餐饮区；克利夫顿的乔治王朝式排屋在峡谷边，著名的克利夫顿悬索桥横跨雅芳峡谷。市中心紧凑，但坡多。",
     gettingAround:
@@ -3430,11 +3439,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   birmingham: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   West Midlands Met County（E11000005，与 WMCA 七个自治市边界一致）mid-2025 = 3,027,190。
     identity:
-      "伯明翰是英格兰第二大城市，位于英格兰中部一片缓丘上，都会区约 290 万人。工业革命时期它以金属加工和制造业迅速壮大，运河总长一度超过威尼斯。今天是英格兰中部的商业、会展和交通中心。美国阿拉巴马州的伯明翰即以这座“钢铁之城”命名。",
-    // howItWorks sources: Wikipedia (2026-09): Birmingham (metropolitan borough; 268 km²; ~1.16 million 2024; council 104 councillors/69 wards; West Midlands Combined Authority 7 councils ~2.9 million, mayor since 2017; no underground; West Midlands Metro; HS2 Curzon Street)
+      "伯明翰是英格兰第二大城市，位于英格兰中部一片缓丘上，西米德兰兹联合管理局辖内约 302.7 万人（2025年年中，英国国家统计局ONS）。工业革命时期它以金属加工和制造业迅速壮大，运河总长一度超过威尼斯。今天是英格兰中部的商业、会展和交通中心。美国阿拉巴马州的伯明翰即以这座“钢铁之城”命名。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   同上。
     howItWorks:
-      "伯明翰是一个拥有城市地位的都市自治市，伯明翰市议会有 104 名议员，是欧洲最大的地方政府之一，管教育、住房、社会服务、垃圾与地方道路；市域约 268 平方公里，2024 年人口约 116 万，是英格兰人口最多的地方政府辖区。2016 年起它与伍尔弗汉普顿、考文垂、索利哈尔等 6 个自治市组成西米德兰兹联合管理局，2017 年起有民选的区域市长，管交通、规划与经济发展，约 290 万人；警察与医院归中央与国家机构。市中心以斗牛场购物中心与新街车站为核心，珠宝区在西北，迪格贝斯是旧工业区改成的创意区，运河网比威尼斯的还长；中环路与外环路是本地人心里的两道边界。没有地铁，Cross-City 铁路线与西米德兰兹地铁有轨电车连起市区，HS2 高铁的库尔松街站在建。地址写“门牌、街道、区、邮编”，邮编以 B 开头。约半数市民在 35 岁以下，族裔构成是英国大城市里最多元的之一。初来的人最容易犯的错，是把伯明翰当作一座工业衰落的城市，而它是英国最年轻的大城市之一。",
+      "伯明翰是一个拥有城市地位的都市自治市，伯明翰市议会有 104 名议员，是欧洲最大的地方政府之一，管教育、住房、社会服务、垃圾与地方道路；市域约 268 平方公里，2025 年年中人口约 117.7 万，是英格兰人口最多的地方政府辖区。2016 年起它与伍尔弗汉普顿、考文垂、索利哈尔等 6 个自治市组成西米德兰兹联合管理局，2017 年起有民选的区域市长，管交通、规划与经济发展，约 302.7 万人（2025年年中）；警察与医院归中央与国家机构。市中心以斗牛场购物中心与新街车站为核心，珠宝区在西北，迪格贝斯是旧工业区改成的创意区，运河网比威尼斯的还长；中环路与外环路是本地人心里的两道边界。没有地铁，Cross-City 铁路线与西米德兰兹地铁有轨电车连起市区，HS2 高铁的库尔松街站在建。地址写“门牌、街道、区、邮编”，邮编以 B 开头。约半数市民在 35 岁以下，族裔构成是英国大城市里最多元的之一。初来的人最容易犯的错，是把伯明翰当作一座工业衰落的城市，而它是英国最年轻的大城市之一。",
     layout:
       "伯明翰不在大河边，而是在几条小河的分水岭上，靠一张密集的运河网连接。市中心是重建过的商业和文化区（斗牛场购物中心、图书馆、交响乐厅），运河区（Brindleyplace、Gas Street Basin）是餐饮酒吧带。城市向四面摊开，是英国高速公路网的枢纽。",
     gettingAround:
@@ -3448,11 +3466,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   manchester: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Greater Manchester Met County（E11000001）mid-2025 = 3,017,590。
     identity:
-      "曼彻斯特在英格兰西北部、奔宁山脉西麓的平原上，都会区约 280 万人，是工业革命的标志城市——世界第一座工业化大城市，19 世纪的棉纺织中心（有“Cottonopolis”之称）。今天是英格兰北部的经济、媒体、音乐和体育中心。美国有多座同名城市，如新罕布什尔州的曼彻斯特。",
-    // howItWorks sources: Wikipedia (2026-09): Manchester (metropolitan borough ~116 km²; ~589,000 2024; Greater Manchester 10 boroughs ~2.87 million; GMCA mayor since 2017 (transport, police); Salford separate; Metrolink; M60; ~100,000 students)
+      "曼彻斯特在英格兰西北部、奔宁山脉西麓的平原上，大曼彻斯特都市郡约 301.8 万人（2025年年中，英国国家统计局ONS），是工业革命的标志城市——世界第一座工业化大城市，19 世纪的棉纺织中心（有“Cottonopolis”之称）。今天是英格兰北部的经济、媒体、音乐和体育中心。美国有多座同名城市，如新罕布什尔州的曼彻斯特。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Manchester（E08000003）mid-2025 = 588,256；Greater Manchester = 3,017,590。**曼彻斯特市本身略降**（2024 年约 58.9 万 → 2025 年 58.8 万）。
     howItWorks:
-      "人们口中的曼彻斯特，在行政上只是大曼彻斯特十个都市自治市里的一个：曼彻斯特市约 116 平方公里，2024 年人口约 59 万，而大曼彻斯特约 287 万人，索尔福德、特拉福德、斯托克波特各是有自己议会的自治市。2017 年起大曼彻斯特联合管理局有了民选的区域市长，管交通与警察：Bee Network 把有轨电车 Metrolink 与重新特许经营的公交纳入一张票制。艾尔韦尔河把曼彻斯特与索尔福德分开，媒体城与索尔福德码头在河对岸，老特拉福德球场在特拉福德自治市——三个最出名的地标里，两个不在曼彻斯特市。市中心以皮卡迪利车站、迪恩斯盖特、北区与斯宾宁菲尔兹为核心，牛津路沿线是约 10 万学生的大学区；M60 环路是本地人心里的都会区边界。曼彻斯特机场由这十个自治市共同拥有。地址写“门牌、街道、区、邮编”，邮编以 M 开头。初来的人最容易犯的错，是把曼彻斯特市当作整个曼彻斯特，而它只是一个十市都会区的核心。",
+      "人们口中的曼彻斯特，在行政上只是大曼彻斯特十个都市自治市里的一个：曼彻斯特市约 116 平方公里，2025 年年中人口约 58.8 万，而大曼彻斯特约 301.8 万人，索尔福德、特拉福德、斯托克波特各是有自己议会的自治市。2017 年起大曼彻斯特联合管理局有了民选的区域市长，管交通与警察：Bee Network 把有轨电车 Metrolink 与重新特许经营的公交纳入一张票制。艾尔韦尔河把曼彻斯特与索尔福德分开，媒体城与索尔福德码头在河对岸，老特拉福德球场在特拉福德自治市——三个最出名的地标里，两个不在曼彻斯特市。市中心以皮卡迪利车站、迪恩斯盖特、北区与斯宾宁菲尔兹为核心，牛津路沿线是约 10 万学生的大学区；M60 环路是本地人心里的都会区边界。曼彻斯特机场由这十个自治市共同拥有。地址写“门牌、街道、区、邮编”，邮编以 M 开头。初来的人最容易犯的错，是把曼彻斯特市当作整个曼彻斯特，而它只是一个十市都会区的核心。",
     layout:
       "曼彻斯特建在几条小河汇合处的平原上，西面是柴郡平原，东面很快抬升为奔宁山脉的丘陵和荒原。市中心由老的仓库、工厂改造的街区组成；索尔福德码头（MediaCityUK）在城西，是媒体和文化新区。城市靠电车网向四周延伸。",
     gettingAround:
@@ -3466,11 +3493,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   liverpool: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Liverpool（E08000012）mid-2025 = 507,915。
     identity:
-      "利物浦在英格兰西北、默西河口北岸，市区人口约 50 万，历史上是大西洋航运的大港（移民、货物、也包括奴隶贸易），船坞沿河绵延数公里。今天以音乐（一支世界闻名的乐队来自这里）、两家足球俱乐部和被列为世界遗产又除名的海滨建筑群闻名。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Liverpool (metropolitan borough; ~509,000 2024; Liverpool City Region Combined Authority of 6 boroughs incl. Wirral/Sefton/Knowsley, >1.5 million, mayor since 2017; Merseyrail; Pier Head; Albert Dock; Mersey ferries; airport)
+      "利物浦在英格兰西北、默西河口北岸，2025年年中人口约50.8万（英国国家统计局ONS），历史上是大西洋航运的大港（移民、货物、也包括奴隶贸易），船坞沿河绵延数公里。今天以音乐（一支世界闻名的乐队来自这里）、两家足球俱乐部和被列为世界遗产又除名的海滨建筑群闻名。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Liverpool mid-2025 = 507,915。利物浦城市区域六个自治市合计约 161.1 万（ONS 各自治市 mid-2025 数字**加总**得出，加总本身非 ONS 原文，故正文不写这个合计数）。
     howItWorks:
-      "利物浦是默西塞德的都市自治市，2024 年人口约 51 万；它是利物浦城市区域的核心，2017 年起这个由威勒尔、塞夫顿、诺斯利等 6 个自治市组成的联合管理局有民选的区域市长，管交通与经济，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在默西河东岸，码头总部的“三女神”与阿尔伯特码头是它的门面，乔治时期街区在山坡上，安菲尔德与古迪逊在城北，默西铁路把河两岸连成网，渡轮开往对岸的威勒尔，机场在城南。初来的人最容易犯的错，是把河对岸的伯肯黑德当作利物浦的一部分，而威勒尔是另一个自治市，过河就换了议会。",
+      "利物浦是默西塞德的都市自治市，2025 年年中人口约 50.8 万；它是利物浦城市区域的核心，2017 年起这个由威勒尔、塞夫顿、诺斯利等 6 个自治市组成的联合管理局有民选的区域市长，管交通与经济，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在默西河东岸，码头总部的“三女神”与阿尔伯特码头是它的门面，乔治时期街区在山坡上，安菲尔德与古迪逊在城北，默西铁路把河两岸连成网，渡轮开往对岸的威勒尔，机场在城南。初来的人最容易犯的错，是把河对岸的伯肯黑德当作利物浦的一部分，而威勒尔是另一个自治市，过河就换了议会。",
     layout:
       "利物浦沿默西河东岸的一道缓坡展开，河很宽、有轮渡往返对岸的伯肯헤德。“三女神”建筑和阿尔伯特码头在河边，是城市的门面；市中心的商业区和两座大教堂（一座现代、一座哥特复兴）在坡上。默西河底有隧道通向对岸。",
     gettingAround:
@@ -3484,11 +3520,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   york: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   City of York（E06000014）mid-2025 = 209,118。
     identity:
-      "约克在英格兰北部、乌斯河与福斯河交汇处，市区人口约 20 万，是英格兰保存最完好的中世纪城市之一，有近乎完整的中世纪城墙、狭窄的老街和一座巨大的哥特式大教堂。城市由罗马人建立（“埃博拉库姆”），维京时期叫“约维克”。1664 年英国从荷兰手中接管北美殖民地后，把新阿姆斯特丹改名为“新约克”——也就是今天的纽约——纪念当时的约克公爵。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): York (City of York unitary authority ~272 km²; ~202,800 2021; York and North Yorkshire Combined Authority mayor 2024; Ouse/Foss; walled city; Minster; Shambles; NRM; flooding)
+      "约克在英格兰北部、乌斯河与福斯河交汇处，2025年年中人口约20.9万（英国国家统计局ONS），是英格兰保存最完好的中世纪城市之一，有近乎完整的中世纪城墙、狭窄的老街和一座巨大的哥特式大教堂。城市由罗马人建立（“埃博拉库姆”），维京时期叫“约维克”。1664 年英国从荷兰手中接管北美殖民地后，把新阿姆斯特丹改名为“新约克”——也就是今天的纽约——纪念当时的约克公爵。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   同上。
     howItWorks:
-      "约克是北约克郡的大教堂城市，约克市议会是一个单一制议会，辖区约 272 平方公里，2021 年人口约 20 万，2024 年起与北约克郡合成的联合管理局有民选市长；议会管教育、住房与垃圾，警察与医院归国家机构。老城在乌斯河与福斯河汇合处的城墙之内，大教堂、肉铺街与城堡塔在里面，火车站与国家铁路博物馆在城墙外的西侧，大学在东南郊；乌斯河的洪水是这座城反复经历的事。初来的人最容易犯的错，是把城墙内的老城当作约克市，而议会辖区包括城墙外几十个村庄，大多数市民住在城墙之外。",
+      "约克是北约克郡的大教堂城市，约克市议会是一个单一制议会，辖区约 272 平方公里，2025 年年中人口约 20.9 万，2024 年起与北约克郡合成的联合管理局有民选市长；议会管教育、住房与垃圾，警察与医院归国家机构。老城在乌斯河与福斯河汇合处的城墙之内，大教堂、肉铺街与城堡塔在里面，火车站与国家铁路博物馆在城墙外的西侧，大学在东南郊；乌斯河的洪水是这座城反复经历的事。初来的人最容易犯的错，是把城墙内的老城当作约克市，而议会辖区包括城墙外几十个村庄，大多数市民住在城墙之外。",
     layout:
       "约克的老城区被城墙围在乌斯河两岸，可以沿墙走一圈（约 3.4 公里）。大教堂（York Minster）是老城的制高点和方向标；“肉铺街”（The Shambles）是最有名的一条中世纪窄巷。河边低地历史上常发洪水。城墙外是维多利亚时期随铁路发展起来的街区。",
     gettingAround:
@@ -3611,11 +3656,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   // ── 英国 批2（2026-09-05）──
   bath: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Bath built-up area 2021 年普查 = 94,080。**这一档不需要更新**：建成区（BUA）只在十年一次的人口普查时重新划定与统计，不属于 ONS 年度年中估计覆盖的口径，下一次要等 2031 年普查。
     identity:
-      "巴斯在英格兰西南部的埃文河谷里，人口约9.4万（2021年普查），是英国唯一有天然温泉的城市。罗马人约公元60年在泉眼上建起浴场和神庙，称这里为“苏利斯之水”（Aquae Sulis）；十八世纪它成为时髦的温泉疗养地，用蜂蜜色石灰岩建起皇家新月楼（1774年）、圆形广场和普尔特尼桥等乔治王时代建筑。1987年巴斯整座城市列入世界遗产，2021年又作为“欧洲大温泉城镇”之一再次列入。简·奥斯汀曾在此居住，2006年开放的巴斯温泉浴场让人重新泡上温泉水。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bath (~94,000 2021 built-up area; within Bath and North East Somerset unitary council ~193,000; UNESCO 1987 whole city + Great Spa Towns 2021; Roman Baths; Royal Crescent; Avon; Bath Spa station; Bristol 20 km; two universities; ~6 million visitors)
+      "巴斯在英格兰西南部的埃文河谷里，建成区人口约9.4万（2021年人口普查；建成区口径只随十年一次普查更新），是英国唯一有天然温泉的城市。罗马人约公元60年在泉眼上建起浴场和神庙，称这里为“苏利斯之水”（Aquae Sulis）；十八世纪它成为时髦的温泉疗养地，用蜂蜜色石灰岩建起皇家新月楼（1774年）、圆形广场和普尔特尼桥等乔治王时代建筑。1987年巴斯整座城市列入世界遗产，2021年又作为“欧洲大温泉城镇”之一再次列入。简·奥斯汀曾在此居住，2006年开放的巴斯温泉浴场让人重新泡上温泉水。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Bath and North East Somerset（E06000022）mid-2025 = 200,898。同条的建成区 9.4 万是普查口径、不逐年更新，两档并存。
     howItWorks:
-      "巴斯是萨默塞特的一座城，2021 年城区人口约 9.4 万，但它没有自己的市议会：管理它的是巴斯及东北萨默塞特议会，辖区约 19 万人，议会所在地在巴斯，管教育、住房与垃圾，警察与医院归国家机构。整座城 1987 年列入世界遗产，2021 年又作为“欧洲大温泉城”之一再次列入：罗马浴场与修道院在埃文河湾的老城中心，皇家新月楼与圆形广场在北面的山坡上，巴斯温泉站在城南，布里斯托在西面 20 公里，每年约 600 万游客涌入。初来的人最容易犯的错，是去找“巴斯市议会”，而这座城由一个更大的议会管理，巴斯只是它的首府。",
+      "巴斯是萨默塞特的一座城，2021 年城区人口约 9.4 万，但它没有自己的市议会：管理它的是巴斯及东北萨默塞特议会，辖区约 20.1 万人（2025年年中），议会所在地在巴斯，管教育、住房与垃圾，警察与医院归国家机构。整座城 1987 年列入世界遗产，2021 年又作为“欧洲大温泉城”之一再次列入：罗马浴场与修道院在埃文河湾的老城中心，皇家新月楼与圆形广场在北面的山坡上，巴斯温泉站在城南，布里斯托在西面 20 公里，每年约 600 万游客涌入。初来的人最容易犯的错，是去找“巴斯市议会”，而这座城由一个更大的议会管理，巴斯只是它的首府。",
     layout:
       "市中心在埃文河北岸的河湾里，罗马浴场、巴斯修道院和泵房在正中的修道院广场；普尔特尼桥在东侧跨河，桥上有商店，桥下是马蹄形堰。乔治王时代的街区在市中心北面的坡上：圆形广场、皇家新月楼和皇家维多利亚公园；简·奥斯汀中心在盖伊街。巴斯温泉站在市中心南面靠河。城市四周是丘陵，南面的普赖尔公园景观园和东北的巴斯萨姆丘有俯瞰全城的视野。",
     gettingAround:
@@ -3628,11 +3682,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–9月最舒服，圣诞市集（11月底–12月）人多；冬季游客少。市区一天到一天半，罗马浴场旺季早去或网上订票。从伦敦当日往返方便，也是科茨沃尔德、巨石阵线路的基地。",
   },
   oxford: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Oxford（E07000178）mid-2025 = 165,940。
     identity:
-      "牛津在英格兰中南部泰晤士河（这段叫伊西斯河）与查韦尔河的交汇处，人口约16.2万（2021年普查）。牛津大学从十一世纪末开始有教学活动，是英语世界最古老的大学，三十多个学院散布在市中心，尖塔林立，所以有“尖塔之城”之称：博德利图书馆（1602年）、拉德克利夫图书馆的圆顶、基督教会学院的大食堂和阿什莫林博物馆（1683年，英国最早的公共博物馆）都是标志。北面约13公里的布莱尼姆宫是丘吉尔的出生地和世界遗产。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Oxford (Oxford City Council district ~46 km², 166,034 2024, under Oxfordshire County Council two-tier; university of 39 colleges without a campus; Cowley Mini plant; park-and-ride; no airport; station)
+      "牛津在英格兰中南部泰晤士河（这段叫伊西斯河）与查韦尔河的交汇处，2025年年中人口约16.6万（英国国家统计局ONS）。牛津大学从十一世纪末开始有教学活动，是英语世界最古老的大学，三十多个学院散布在市中心，尖塔林立，所以有“尖塔之城”之称：博德利图书馆（1602年）、拉德克利夫图书馆的圆顶、基督教会学院的大食堂和阿什莫林博物馆（1683年，英国最早的公共博物馆）都是标志。北面约13公里的布莱尼姆宫是丘吉尔的出生地和世界遗产。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   同上。
     howItWorks:
-      "牛津是牛津郡的一座城，2024 年人口约 16.6 万，实行两级地方政府：牛津市议会管住房、垃圾与规划审批，牛津郡议会管学校、道路与社会服务，警察与医院归国家机构。牛津大学没有校园，39 个学院散在市中心的街巷里，博德利图书馆与拉德克利夫图书馆在中心，考利的汽车厂在城东南，泰晤士河在这里叫伊西斯河；市区限制汽车，五个停车换乘场在环路上，火车站在城西，没有机场，希思罗在东南 65 公里。初来的人最容易犯的错，是打听“牛津大学在哪里”，而它没有一个入口，整座老城就是它。",
+      "牛津是牛津郡的一座城，2025 年年中人口约 16.6 万，实行两级地方政府：牛津市议会管住房、垃圾与规划审批，牛津郡议会管学校、道路与社会服务，警察与医院归国家机构。牛津大学没有校园，39 个学院散在市中心的街巷里，博德利图书馆与拉德克利夫图书馆在中心，考利的汽车厂在城东南，泰晤士河在这里叫伊西斯河；市区限制汽车，五个停车换乘场在环路上，火车站在城西，没有机场，希思罗在东南 65 公里。初来的人最容易犯的错，是打听“牛津大学在哪里”，而它没有一个入口，整座老城就是它。",
     layout:
       "市中心很紧凑：卡尔法克斯塔是老城的十字路口，高街向东到莫德林桥，宽街上有博德利图书馆、谢尔登剧院和布莱克韦尔书店，拉德克利夫广场在两街之间；基督教会学院在圣奥尔德盖特街南段，草地一直延伸到河边。阿什莫林博物馆在博蒙特街，牛津火车站在城西。查韦尔河沿大学公园和莫德林学院流过，撑篙从莫德林桥或查韦尔船屋出发。杰里科区在城北是餐饮区，考利路在东面。",
     gettingAround:
@@ -3645,11 +3708,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–9月最舒服，学院在假期（7–9月）开放时段更多；毕业季和考试季部分学院关闭。市区一天到一天半，布莱尼姆宫半天。从伦敦当日往返方便，与科茨沃尔德连线。",
   },
   cambridge: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Cambridge（E07000008）mid-2025 = 149,872。
     identity:
-      "剑桥在英格兰东部的剑河畔，人口约14.6万（2021年普查）。剑桥大学1209年由从牛津出走的学者建立，三十一个学院沿剑河排列，国王学院礼拜堂（1446年动工）的扇形拱顶是英国哥特建筑的代表，三一学院的大庭院、皇后学院的数学桥、圣约翰学院的叹息桥都在河边；“后园”（The Backs）是学院背后临河的草地和花园，撑篙是看它们的经典方式。菲茨威廉博物馆收藏丰富。城市周边是被称为“硅沼”的科技产业带。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cambridge (Cambridge City Council district ~41 km², ~145,700 2021, under Cambridgeshire County Council; Cambridgeshire and Peterborough Combined Authority mayor 2017; 31 colleges along the Cam; Silicon Fen/Science Park; Addenbrooke's; guided busway; cycling; London ~50 min)
+      "剑桥在英格兰东部的剑河畔，2025年年中人口约15万（英国国家统计局ONS）。剑桥大学1209年由从牛津出走的学者建立，三十一个学院沿剑河排列，国王学院礼拜堂（1446年动工）的扇形拱顶是英国哥特建筑的代表，三一学院的大庭院、皇后学院的数学桥、圣约翰学院的叹息桥都在河边；“后园”（The Backs）是学院背后临河的草地和花园，撑篙是看它们的经典方式。菲茨威廉博物馆收藏丰富。城市周边是被称为“硅沼”的科技产业带。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   同上。
     howItWorks:
-      "剑桥是剑桥郡的一座城，2021 年人口约 14.6 万，实行两级地方政府：剑桥市议会管住房、垃圾与规划审批，剑桥郡议会管学校与道路，2017 年起剑桥郡与彼得伯勒联合管理局有民选市长管交通与经济。大学的 31 个学院沿着剑河与“后园”排开，没有校园，国王学院礼拜堂是坐标；城北的科学园是“硅沼”科技集群的发源地，城南的阿登布鲁克医院周围是生物医药园区，导向公交专用道连接它们，火车到伦敦约 50 分钟，自行车是市内出行的主角。初来的人最容易犯的错，是把剑桥当作一座大学城，而它同时是欧洲最大的科技产业集群之一，学生在市民里只占少数。",
+      "剑桥是剑桥郡的一座城，2025 年年中人口约 15 万，实行两级地方政府：剑桥市议会管住房、垃圾与规划审批，剑桥郡议会管学校与道路，2017 年起剑桥郡与彼得伯勒联合管理局有民选市长管交通与经济。大学的 31 个学院沿着剑河与“后园”排开，没有校园，国王学院礼拜堂是坐标；城北的科学园是“硅沼”科技集群的发源地，城南的阿登布鲁克医院周围是生物医药园区，导向公交专用道连接它们，火车到伦敦约 50 分钟，自行车是市内出行的主角。初来的人最容易犯的错，是把剑桥当作一座大学城，而它同时是欧洲最大的科技产业集群之一，学生在市民里只占少数。",
     layout:
       "老城和学院集中在剑河东岸约1平方公里内：国王学院、三一学院、圣约翰学院沿国王大道和三一街一线，皇后学院在南端，后园在河西岸；市场广场在中心。菲茨威廉博物馆在特朗平顿街南段。撑篙从磨坊巷、奎赛德（麦格达伦桥）出发，往北到格兰切斯特草地是另一条撑篙线。火车站在市中心东南约2公里。",
     gettingAround:
@@ -3662,11 +3734,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–9月最舒服，撑篙在夏季；考试季学院关闭多。市区一天。从伦敦当日往返方便，与伊利主教座堂连线。",
   },
   brighton: {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Brighton and Hove（E06000043）mid-2025 = 284,170 —— 数值几乎没变，但时点该刷新。
     identity:
-      "布莱顿在英格兰南岸的英吉利海峡边，伦敦以南约80公里，与霍夫合为布莱顿—霍夫市，人口约28.4万（2021年普查）。十八世纪起它是伦敦人的海滨疗养地，摄政王（后来的乔治四世）在这里建了印度—伊斯兰风格的皇家行宫（1787–1823年）；1899年开放的布莱顿宫码头是英国最著名的游乐码头，2016年建成的 i360 观景塔高162米。小巷区（The Lanes）是渔村时代留下的窄巷，如今是独立商店和餐馆。布莱顿以开放多元著称，8月的骄傲节是英国最大的之一；东面约13公里是七姐妹白垩崖。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Brighton and Hove (unitary authority, city 2001; ~83 km²; ~283,900 2024; Brighton and Hove merged 1997; Palace Pier; Royal Pavilion; The Lanes; Hove separate identity; South Downs; London ~1 h; two universities)
+      "布莱顿在英格兰南岸的英吉利海峡边，伦敦以南约80公里，与霍夫合为布莱顿—霍夫市，2025年年中人口约28.4万（英国国家统计局ONS）。十八世纪起它是伦敦人的海滨疗养地，摄政王（后来的乔治四世）在这里建了印度—伊斯兰风格的皇家行宫（1787–1823年）；1899年开放的布莱顿宫码头是英国最著名的游乐码头，2016年建成的 i360 观景塔高162米。小巷区（The Lanes）是渔村时代留下的窄巷，如今是独立商店和餐馆。布莱顿以开放多元著称，8月的骄傲节是英国最大的之一；东面约13公里是七姐妹白垩崖。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   同上。
     howItWorks:
-      "布莱顿在行政上叫“布莱顿与霍夫”，是 1997 年由两座镇合并而成的单一制议会，2001 年获得城市地位，市域约 83 平方公里，2024 年人口约 28 万；议会管教育、住房与垃圾，警察与医院归国家机构。布莱顿是东半边的海滨度假城，宫殿码头、皇家行宫与巷子区在这里；霍夫是西半边的住宅区，有自己的海滨与身份，“其实是霍夫”是本地人的口头禅；南唐斯在城北，火车到伦敦约一小时，两所大学在城郊。初来的人最容易犯的错，是把布莱顿当作整座城的名字，而它只是一半，另一半的人会纠正你。",
+      "布莱顿在行政上叫“布莱顿与霍夫”，是 1997 年由两座镇合并而成的单一制议会，2001 年获得城市地位，市域约 83 平方公里，2025 年年中人口约 28.4 万；议会管教育、住房与垃圾，警察与医院归国家机构。布莱顿是东半边的海滨度假城，宫殿码头、皇家行宫与巷子区在这里；霍夫是西半边的住宅区，有自己的海滨与身份，“其实是霍夫”是本地人的口头禅；南唐斯在城北，火车到伦敦约一小时，两所大学在城郊。初来的人最容易犯的错，是把布莱顿当作整座城的名字，而它只是一半，另一半的人会纠正你。",
     layout:
       "市区沿海岸东西展开：皇家行宫和皇家行宫花园在市中心，旁边是小巷区和北莱恩（North Laine）的独立商店街；海滨大道下面是海滩、码头和沿海的酒吧、餐馆，宫码头在市中心正南的海边，i360 在西面的海滨，老西码头的残骸在它旁边。霍夫在西面，是安静的住宅区和草坪海滨；凯姆普顿在东面，有马场和沙滩小火车。火车站在市中心北面的坡上。七姐妹白崖和比奇角在东面。",
     gettingAround:
@@ -3679,11 +3760,21 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–9月最好，8月骄傲节和夏季周末最挤；冬季风大但安静。市区一天，七姐妹半天到一天。从伦敦当日往返极方便。",
   },
   "newcastle-upon-tyne": {
+    // identity sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   Newcastle upon Tyne（E08000021）mid-2025 = 320,838。
     identity:
-      "泰恩河畔纽卡斯尔是英格兰东北部的中心城市，在泰恩河北岸，人口约32万（2021年普查），与南岸的盖茨黑德隔河相望。它从罗马时代的泰恩河桥堡起家，1080年的城堡给了它名字，十九世纪靠煤炭和造船兴盛，1928年的泰恩桥是城市的标志，河两岸的码头区如今是酒吧、餐馆和艺术空间（BALTIC 当代艺术中心、盖茨黑德音乐厅），2001年的千禧桥是可倾转的步行桥。格雷街被称为英格兰最美的街道之一，格兰杰镇是1830年代规划的新古典街区；哈德良长城的遗迹从市区向西延伸；盖茨黑德南面的“北方天使”雕塑高20米。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Newcastle upon Tyne (metropolitan borough ~114 km²; ~320,600 2024; Tyneside urban area ~800,000 with Gateshead across the Tyne as a separate borough; North East Combined Authority mayor 2024; Quayside bridges; Grainger Town; Tyne and Wear Metro; two universities; airport)
+      "泰恩河畔纽卡斯尔是英格兰东北部的中心城市，在泰恩河北岸，2025年年中人口约32.1万（英国国家统计局ONS），与南岸的盖茨黑德隔河相望。它从罗马时代的泰恩河桥堡起家，1080年的城堡给了它名字，十九世纪靠煤炭和造船兴盛，1928年的泰恩桥是城市的标志，河两岸的码头区如今是酒吧、餐馆和艺术空间（BALTIC 当代艺术中心、盖茨黑德音乐厅），2001年的千禧桥是可倾转的步行桥。格雷街被称为英格兰最美的街道之一，格兰杰镇是1830年代规划的新古典街区；哈德良长城的遗迹从市区向西延伸；盖茨黑德南面的“北方天使”雕塑高20米。",
+    // howItWorks sources: 英国国家统计局（ONS）《Population estimates for England and Wales: mid-2025》地方政府辖区明细表（MYE2），时点 2025-06-30，2026-07-29 发布。子代理直接取 ONS 官网数据集，**级别 1**。
+    //   https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/estimatesofthepopulationforenglandandwales
+    //   发布节奏：**每年 7 月下旬**发布上一年年中（6 月 30 日）的数（mid-2024 于 2025-07-30、mid-2025 于 2026-07-29）；下一期 mid-2026 预计 2027-07 下旬。
+    //   **建成区（Built-up Area）是另一条线**：只随十年一次人口普查更新，当前最新是 2021 年普查，下一期要等 2031 年普查后（约 2032–2033）。
+    //   **这条不是「数字过期」，是这个统计单元已经不存在了**：ONS 2011 年普查曾把纽卡斯尔、盖茨黑德、桑德兰等连成一个「Tyneside」建成区（约 77–83 万），但 **2021 年普查改版建成区分类后「Tyneside」不再存在**，纽卡斯尔（286,445）、盖茨黑德（115,280）、桑德兰（168,315）、泰恩茅斯（60,605）各自独立。原文八成来自维基上沿用旧口径的说法。
+    //   **没有拿一个近似值顶替**——把几个 BUA 相加凑到旧口径的 80 万，等于自造一个 ONS 从未发布过的合成口径。改成并列写两个独立建成区，并说明二者相连但统计上分列。
     howItWorks:
-      "纽卡斯尔是泰恩河北岸的都市自治市，市域约 114 平方公里，2024 年人口约 32 万，泰恩赛德城区约 80 万人，河南岸的盖茨黑德是另一个自治市；2024 年起东北联合管理局有民选市长管交通，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在河岸的高地上，格雷街与格兰杰镇是 1830 年代的新古典街区，码头区的七座桥连着两岸，泰恩桥 1928 年建成，圣詹姆斯公园球场就在市中心，泰恩威尔地铁贯通两岸与机场，两所大学在市中心北侧。初来的人最容易犯的错，是把河对岸的盖茨黑德当作纽卡斯尔，而过桥就换了议会，赛奇音乐厅与波罗的海美术馆都在盖茨黑德。",
+      "纽卡斯尔是泰恩河北岸的都市自治市，市域约 114 平方公里，2025 年年中人口约 32.1 万；按 2021 年人口普查的建成区口径，纽卡斯尔建成区约 28.6 万人、河南岸的盖茨黑德建成区约 11.5 万人，两地建成区相连但统计上分列，盖茨黑德是另一个自治市；2024 年起东北联合管理局有民选市长管交通，市议会管教育、住房与垃圾，警察与医院归国家机构。市中心在河岸的高地上，格雷街与格兰杰镇是 1830 年代的新古典街区，码头区的七座桥连着两岸，泰恩桥 1928 年建成，圣詹姆斯公园球场就在市中心，泰恩威尔地铁贯通两岸与机场，两所大学在市中心北侧。初来的人最容易犯的错，是把河对岸的盖茨黑德当作纽卡斯尔，而过桥就换了议会，赛奇音乐厅与波罗的海美术馆都在盖茨黑德。",
     layout:
       "市中心在泰恩河北岸的坡上：码头区在河边，泰恩桥、千禧桥和中世纪的城堡在河岸上方，格雷街从纪念碑向南通到河边，格兰杰镇和格雷纪念碑周围是商业中心，中央车站在西南。杰斯蒙德在北面是学生和餐饮区，奥斯本路一带酒吧多。对岸的盖茨黑德码头有 BALTIC 和音乐厅。北方天使在盖茨黑德南郊的 A1 公路旁；哈德良长城的博物馆和沃尔森德的塞格杜努姆堡在东面，长城主体在西面的乡间。机场在西北约12公里。",
     gettingAround:
