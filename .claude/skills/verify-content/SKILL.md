@@ -55,6 +55,18 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 - 条目的 `kind` / `id`
 - **要核的原文**（把句子贴进去，不要让它自己去读文件猜）
 - 这条属于 `docs/known-errors.md` 的哪一类（如果是 check:claims 报出来的）
+- **它要回答什么形态的答案**。核航班号问的是"对不对"；核人口数字问的不是对不对，
+  而是"年份 + 口径 + 官方来源"这三样各是什么 —— 不把这一点写进 prompt，
+  拿回来的就还是一个没有年份的数字。
+
+**核 C6（数字缺年份）时，要子代理直接给出可以粘贴的成品短句**，中英各一句，格式：
+
+- 中文 `2024年末常住人口约2480万（上海市统计局）`
+- 英文 `a population of about 24.8 million at the end of 2024 (Shanghai Municipal Bureau of Statistics)`
+- 另外单列完整来源，我方写进条目上方的 `// identity sources:` 注释
+
+正文里的机构名只写**能顺畅朗读的简称** —— 这些句子都会被 TTS 念出来，
+《XX年国民经济和社会发展统计公报》这种整名念出来是不可接受的，只进注释。
 
 ### 3. 处理结论
 
@@ -66,16 +78,26 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 | `wrong` | **当场改**，中英两边都改；正文类的在条目上方加 `// <字段> sources:` 注释 |
 | `unknown` | **不要瞎猜**。要么把无法核实的断言删掉/降级（去掉最高级、去掉排名），要么记成待办 |
 
-**航线类不要手写 python 逐条改** —— 前两轮是手改的，18 条就要写一大段字典字面量，
-再多必然出错。findings.json 已经是结构化的，直接让脚本消费：
+**不要手写 python 逐条改** —— 前两轮航线是手改的，18 条就要写一大段字典字面量，
+再多必然出错。findings.json 已经是结构化的，直接让脚本消费。两个应用端按内容类型分：
 
 ```bash
-npm run verify:apply -- <findings.json> --dry-run   # 先看它打算改什么
-npm run verify:apply -- <findings.json>             # 改 data/routes/*.json
+# 航线的结构化字段（data/routes/*.json）
+npm run verify:apply -- <findings.json> --dry-run
+npm run verify:apply -- <findings.json>
+
+# 城市/国家概览的正文句子（lib/travel-content.{zh,en}.ts）
+npm run verify:apply-text -- <findings.json> --dry-run
+npm run verify:apply-text -- <findings.json>
 ```
 
 `verify:apply` 按 `patch` / `waypointPatch` 改航班字段与航点，并统一写 `source`
 留痕（`resolution` 不是 `fixed` 且 `verdict` 不是 `ok` 的自动打 `status: "wrong"`）。
+
+`verify:apply-text` 按 `textPatch.{zh,en}.{find,replace}` 改句子，并把 `sourceNote`
+写成条目上方的 `// <字段> sources:` 注释（中英两个文件都写）。它的关键保护是
+**`find` 必须在该条目内正好命中一次** —— 0 次或多次直接报错退出，
+不会像手改那样静默改到隔壁条目去。
 
 改完必须跑：
 
