@@ -6,11 +6,43 @@
   "descriptionEn": "Great Polish Lowland",
   "depCountry": "poland",
   "arrCountry": "poland",
-  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3851", "aircraft": "Embraer 190", "depIata": "WAW", "arrIata": "WRO", "durationMin": 50 },
+  "flight": {
+    "airline": "波兰航空",
+    "airlineEn": "LOT Polish Airlines",
+    "flightNo": "LO3851",
+    "aircraft": "Embraer E170 / E175 / E190 / E195（LOT 支线混编排班）",
+    "depIata": "WAW",
+    "arrIata": "WRO",
+    "durationMin": 55
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
-    { "kind": "terrain", "terrainId": "great-polish-lowland" },
-    { "kind": "city", "id": "wro", "name": "弗罗茨瓦夫", "nameEn": "Wrocław", "lat": 51.1027, "lon": 16.8858, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "waw",
+      "name": "华沙",
+      "nameEn": "Warsaw",
+      "lat": 52.1657,
+      "lon": 20.9671,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-polish-lowland"
+    },
+    {
+      "kind": "city",
+      "id": "wro",
+      "name": "弗罗茨瓦夫",
+      "nameEn": "Wrocław",
+      "lat": 51.1027,
+      "lon": 16.8858,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/LOT+-+Polish+Airlines-Warsaw-Wroclaw/LO3851",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（07:10–08:05，block time 55min）。**机型查无依据**：多个来源给出 E175（长翼型）或 E195，**没有任何来源把 LO3851 与 E190 对应**。来源级别 3"
+  }
 }

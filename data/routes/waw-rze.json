@@ -6,11 +6,43 @@
   "descriptionEn": "Świętokrzyskie Mountains",
   "depCountry": "poland",
   "arrCountry": "poland",
-  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3807", "aircraft": "Embraer 190", "depIata": "WAW", "arrIata": "RZE", "durationMin": 55 },
+  "flight": {
+    "airline": "波兰航空",
+    "airlineEn": "LOT Polish Airlines",
+    "flightNo": "LO3807",
+    "aircraft": "Embraer E170 / E175 / E190 / E195（LOT 支线混编排班）",
+    "depIata": "WAW",
+    "arrIata": "RZE",
+    "durationMin": 55
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
-    { "kind": "terrain", "terrainId": "swietokrzyskie-mountains" },
-    { "kind": "city", "id": "rze", "name": "热舒夫", "nameEn": "Rzeszów", "lat": 50.1100, "lon": 22.0189, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "waw",
+      "name": "华沙",
+      "nameEn": "Warsaw",
+      "lat": 52.1657,
+      "lon": 20.9671,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "swietokrzyskie-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "rze",
+      "name": "热舒夫",
+      "nameEn": "Rzeszów",
+      "lat": 50.11,
+      "lon": 22.0189,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/lo3807/warsaw/rzeszow/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号、航段、时长都属实（15:10–16:05，55min），热舒夫仍是 LOT 2026 年国内航点。**只有机型错**：来源明确给出 E175，未见任何来源支持 E190。来源级别 3"
+  }
 }
