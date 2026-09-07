@@ -9355,11 +9355,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "地处赤道附近，全年高温多湿；西马半岛东岸11月至次年2月为雨季（部分岛屿季节性关闭）、西岸相对干燥；沙巴、砂拉越全年降水分布较均匀；出行前建议按具体目的地查询季节性天气。",
   },
   "kuala-lumpur": {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   W.P. Kuala Lumpur 2025 = 约 207.4 万。**原文的「都会区约720万」既不是 DOSM 口径、也与同条目 howItWorks 里的「巴生谷约880万」互相矛盾** —— 一个条目里两个「都会区」数字差 160 万。改用有官方数字的联邦直辖区口径。
     identity:
-      "吉隆坡是马来西亚首都，都会区人口约720万，坐落于巴生河与鹅麦河交汇处，是马来西亚政治、经济、文化中心。",
-    // howItWorks sources: Wikipedia (2026-09): Kuala Lumpur (Federal Territory 1974; DBKL appointed mayor; 243 km²; 2024 pop ~2.08 million; Klang Valley ~8.8 million); Local government in Malaysia (local elections abolished 1976)
+      "吉隆坡是马来西亚首都，联邦直辖区人口约207万（2025年，马来西亚统计局DOSM），坐落于巴生河与鹅麦河交汇处，是马来西亚政治、经济、文化中心。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。巴生谷不是 DOSM 的法定统计口径，如实写成「没有官方统计口径 + 非官方估计区间」，而不是挑一个数字装成官方数。
     howItWorks:
-      "吉隆坡自 1974 年起是联邦直辖区，不属于雪兰莪州，由联邦政府直接管辖；管理城市的吉隆坡市政局（DBKL）没有民选议会，市长由联邦直辖区部长任命——马来西亚的地方选举 1965 年中止、1976 年废除，全国的市议会都是任命的。直辖区面积约 243 平方公里，2024 年人口约 208 万，而围绕它的巴生谷都会区约 880 万人，八打灵再也、莎阿南、梳邦再也各是雪兰莪州内有自己市议会的城市，联邦行政中心 1999 年起迁到南面的布城。城市有两个重心：独立广场、茨厂街一带的老城，以及双子塔、武吉免登的新中心。轻轨、地铁、单轨与通勤铁路用一张 Touch 'n Go 卡贯通，但日常生活仍高度依赖汽车。初来的人最容易犯的错，是把直辖区当成整个吉隆坡，而大多数人住在雪兰莪州的边界之外。",
+      "吉隆坡自 1974 年起是联邦直辖区，不属于雪兰莪州，由联邦政府直接管辖；管理城市的吉隆坡市政局（DBKL）没有民选议会，市长由联邦直辖区部长任命——马来西亚的地方选举 1965 年中止、1976 年废除，全国的市议会都是任命的。直辖区面积约 243 平方公里，2025 年人口约 207 万，而围绕它的巴生谷没有官方人口统计口径，非官方估计在 700 万至 900 万之间，八打灵再也、莎阿南、梳邦再也各是雪兰莪州内有自己市议会的城市，联邦行政中心 1999 年起迁到南面的布城。城市有两个重心：独立广场、茨厂街一带的老城，以及双子塔、武吉免登的新中心。轻轨、地铁、单轨与通勤铁路用一张 Touch 'n Go 卡贯通，但日常生活仍高度依赖汽车。初来的人最容易犯的错，是把直辖区当成整个吉隆坡，而大多数人住在雪兰莪州的边界之外。",
     layout:
       "市中心以双峰塔与武吉免登商圈为地标，独立广场周边保留殖民时期建筑，秋杰路是知名的印度裔聚居商业区，唐人街茨厂街则是华人社区核心。",
     gettingAround:
@@ -9372,11 +9381,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年高温多湿，气温常年在24-33摄氏度之间；11月至次年2月降水相对较多，建议携带雨具；商场与地铁站内空调较强，可备薄外套。",
   },
   "george-town": {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   MBPP 辖区 = 东北区（Timur Laut，56.6 万）+ 西南区（Barat Daya，25.0 万）两县合计 = 2025 年约 81.6 万。
     identity:
-      "乔治市是槟城州首府，市区人口约79万，都会区逾284万，坐落于槟榔屿东北角，2008年老城区与马六甲共同列入UNESCO世界遗产名录。",
-    // howItWorks sources: Wikipedia (2026-09): George Town, Penang (MBPP covers whole island since 2015; 2020 pop 794,313; metro ~2.84 million; UNESCO 2008; Rapid Penang); Local government in Malaysia
+      "乔治市是槟城州首府，市区人口约81.6万（2025年，马来西亚统计局DOSM，槟岛市政厅辖区），都会区逾284万，坐落于槟榔屿东北角，2008年老城区与马六甲共同列入UNESCO世界遗产名录。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "乔治市是槟城州的首府，2015 年起由槟岛市政厅（MBPP）管辖整个槟岛，与海峡对岸的威省市政厅各管一边——马来西亚的市议会自 1976 年起不再民选，市长与议员由州政府任命，警察、学校与干道则归州与联邦。2020 年市区人口约 79 万，都会区约 284 万。城市分三层：2008 年列入世界遗产的老城核心，是华人、印度人与马来人街区并排的港口市镇；北面的葛尼道、丹绒道光是高层公寓的新海滨；南面的峇六拜自由工业区是电子业的地盘。两座跨海大桥与渡轮连接大陆，Rapid Penang 的公交覆盖全岛。福建话是老城的日常语言。初来的人最容易犯的错，是把乔治市等同于那几条老街，而它是覆盖整座岛的一座城。",
+      "乔治市是槟城州的首府，2015 年起由槟岛市政厅（MBPP）管辖整个槟岛，与海峡对岸的威省市政厅各管一边——马来西亚的市议会自 1976 年起不再民选，市长与议员由州政府任命，警察、学校与干道则归州与联邦。2025 年市区人口约 81.6 万；「乔治市都会区」不是官方统计口径，可查到的 284 万停在 2020 年。城市分三层：2008 年列入世界遗产的老城核心，是华人、印度人与马来人街区并排的港口市镇；北面的葛尼道、丹绒道光是高层公寓的新海滨；南面的峇六拜自由工业区是电子业的地盘。两座跨海大桥与渡轮连接大陆，Rapid Penang 的公交覆盖全岛。福建话是老城的日常语言。初来的人最容易犯的错，是把乔治市等同于那几条老街，而它是覆盖整座岛的一座城。",
     layout:
       "老城核心区约109公顷，街区保留大量19至20世纪初的店屋建筑，姓氏桥（华人水上聚落）、小印度、清真寺街等多元族群社区交错分布。",
     gettingAround:
@@ -9389,11 +9407,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12月至次年2月气候相对凉爽干燥，是探访老城区的理想季节；老城区街道狭窄，建议穿舒适的鞋子步行游览。",
   },
   "johor-bahru": {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   **原文的「约50万」来源不明**：既不等于 MBJB 辖区（2020 年普查 858,118），也不等于新山县（2025 年约 181.4 万）。改用有出处的普查数并写明它不逐年更新。
     identity:
-      "新山是柔佛州首府，人口约50万，坐落于柔佛海峡北岸，与新加坡隔海相望，是马来半岛最南端的城市。",
-    // howItWorks sources: Wikipedia (2026-09): Johor Bahru (MBJB; 373 km²; 2020 pop 858,118; district ~2.49 million; Causeway 1923; Second Link; RTS Link); Local government in Malaysia
+      "新山是柔佛州首府，市议会辖区人口约85.8万（2020年人口普查；DOSM 不对市议会辖区做年度更新），坐落于柔佛海峡北岸，与新加坡隔海相望，是马来半岛最南端的城市。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Johor Bahru District 2025 = 约 181.4 万。原文的 249 万与 DOSM 的县口径对不上。**这个县比「新山市」大得多**，正文已写明它还含另外两个市议会辖区，不把县数字包装成市数字。
     howItWorks:
-      "新山是柔佛州的首府，由新山市政厅（MBJB）管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选。市域约 373 平方公里，2020 年人口约 86 万，是马来西亚人口最多的州首府，所在的新山县约 249 万人；它是依斯干达经济特区的核心，西面的依斯干达公主城是另一座有自己市政厅的城市。城市的日常被新加坡定义：1923 年建成的新柔长堤和第二通道每天承载着大量往返上班的人流，连接两地的捷运系统 RTS 预计 2027 年 1 月通车。老城在黄亚福街和苏丹阿布峇卡清真寺一带，新的商业区散在 Danga Bay、Medini 等处。城市高度依赖汽车，蔓延成片。初来的人最容易犯的错，是把新山当作新加坡的郊区，而它是一个州的首府，有自己的中心与节奏。",
+      "新山是柔佛州的首府，由新山市政厅（MBJB）管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选。市域约 373 平方公里，2020 年人口普查约 85.8 万（市议会辖区，此后无官方年度更新），是马来西亚人口最多的州首府，所在的新山县 2025 年约 181.4 万人（DOSM 口径，该县还包含依斯干达公主城、巴西古当两个市议会辖区）；它是依斯干达经济特区的核心，西面的依斯干达公主城是另一座有自己市政厅的城市。城市的日常被新加坡定义：1923 年建成的新柔长堤和第二通道每天承载着大量往返上班的人流，连接两地的捷运系统 RTS 预计 2027 年 1 月通车。老城在黄亚福街和苏丹阿布峇卡清真寺一带，新的商业区散在 Danga Bay、Medini 等处。城市高度依赖汽车，蔓延成片。初来的人最容易犯的错，是把新山当作新加坡的郊区，而它是一个州的首府，有自己的中心与节奏。",
     layout:
       "市中心沿柔佛海峡分布，新柔长堤是连接新加坡的重要陆路口岸，市区商业中心与新加坡通勤人口密切相关。",
     gettingAround:
@@ -9408,9 +9435,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "malacca-city": {
     identity:
       "马六甲能成为15世纪东南亚最重要的港口，本质上是一次地理上的精准选址——1402年，流亡的巨港王子拜里米苏拉选中这处扼守马六甲海峡最窄段的港湾建都，往来于印度洋与南中国海之间的商船必须经过这条水道，马六甲苏丹国由此迅速崛起为连接中国、印度、阿拉伯的转口贸易枢纽。马六甲市是马六甲州首府，人口约5万（老城核心区），坐落于马六甲海峡东岸，2008年老城区与乔治市共同列入UNESCO世界遗产名录。",
-    // howItWorks sources: Wikipedia (2026-09): Malacca City (MBMB; 277 km²; 2019 pop ~579,000; UNESCO 2008; Tampin station 38 km); Local government in Malaysia
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Melaka Tengah 2025 = 约 63.3 万。identity 段的「老城核心区约5万」不是统计口径、查无年度数字，保留原样但不作为城市人口。
     howItWorks:
-      "马六甲市是马六甲州的首府，由马六甲历史城市市政厅（MBMB）管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选。市域约 277 平方公里，2019 年人口约 58 万，而整个州是马来西亚最小的州之一，市区几乎就是州的核心。老城在马六甲河口：东岸是荷兰广场与圣保罗山，西岸是鸡场街一带的华人街区，葡萄牙、荷兰、英国三代殖民者的建筑层层叠在同一片街区里，2008 年与乔治市一起列入世界遗产。峇峇娘惹、葡裔社群与马来人、印度人是这座城的居民构成。市内没有铁路，最近的车站在 38 公里外的淡边，出行靠汽车与大巴。初来的人最容易犯的错，是把马六甲当作一天可以走完的老街，而老城之外是一座正在扩张的现代城市。",
+      "马六甲市是马六甲州的首府，由马六甲历史城市市政厅（MBMB）管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选。市域约 277 平方公里，2025 年约 63.3 万（马六甲中央县口径，与市政厅辖区大部分重合），而整个州是马来西亚最小的州之一，市区几乎就是州的核心。老城在马六甲河口：东岸是荷兰广场与圣保罗山，西岸是鸡场街一带的华人街区，葡萄牙、荷兰、英国三代殖民者的建筑层层叠在同一片街区里，2008 年与乔治市一起列入世界遗产。峇峇娘惹、葡裔社群与马来人、印度人是这座城的居民构成。市内没有铁路，最近的车站在 38 公里外的淡边，出行靠汽车与大巴。初来的人最容易犯的错，是把马六甲当作一天可以走完的老街，而老城之外是一座正在扩张的现代城市。",
     layout:
       "老城区以荷兰红屋广场、圣保罗山与鸡场街为核心，保留葡萄牙、荷兰、英国殖民时期及华人峇峇娘惹文化的多层建筑遗产。",
     gettingAround:
@@ -9423,11 +9454,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年高温多湿；老城区景点集中，建议安排一至两日步行游览，夜间鸡场街文化坊与河畔灯光尤为热闹。",
   },
   ipoh: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Kinta District 2025 = 约 92.7 万。怡保市议会（MBI）辖区本身**无 DOSM 年度更新**，最后可核实是 2020 年普查 759,952。正文写明县 ≠ 市。
     identity:
-      "怡保是霹雳州首府，人口逾75万，坐落于近打河谷，19世纪末因锡矿开采而兴起，如今以殖民建筑与美食闻名。",
-    // howItWorks sources: Wikipedia (2026-09): Ipoh (MBI; 2020 pop 759,952; Kinta River Old Town/New Town; ETS ~2.5 h); Local government in Malaysia
+      "怡保是霹雳州首府，近打县人口约92.7万（2025年，马来西亚统计局DOSM；该县还包含打抛市议会辖区，比怡保市本身大），坐落于近打河谷，19世纪末因锡矿开采而兴起，如今以殖民建筑与美食闻名。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "怡保是霹雳州的首府，由怡保市政厅（MBI）管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选。2020 年人口约 76 万，是马来西亚人口最多的城市之一。近打河把城市分成两半：西岸的旧街场是 1880 年代锡矿热潮建起的殖民时期市镇，二奶巷、火车站在那里；东岸的新街场从 1930 年代起发展，是今天的商业与住宅区。石灰岩山丘环绕城市，三宝洞、极乐洞这样的岩洞庙宇就在市郊。粤语是这里华人社群的日常语言，白咖啡从这里起源。ETS 电动列车到吉隆坡约 2.5 小时，市内出行靠汽车。初来的人最容易犯的错，是把怡保当作一座衰落的矿城，而锡矿 1970 年代枯竭之后，它已转成以美食与岩洞闻名的旅游城市。",
+      "怡保是霹雳州的首府，由怡保市政厅（MBI）管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选。2020 年人口普查市议会辖区约 76 万（此后无官方年度更新；所在的近打县 2025 年约 92.7 万），是马来西亚人口最多的城市之一。近打河把城市分成两半：西岸的旧街场是 1880 年代锡矿热潮建起的殖民时期市镇，二奶巷、火车站在那里；东岸的新街场从 1930 年代起发展，是今天的商业与住宅区。石灰岩山丘环绕城市，三宝洞、极乐洞这样的岩洞庙宇就在市郊。粤语是这里华人社群的日常语言，白咖啡从这里起源。ETS 电动列车到吉隆坡约 2.5 小时，市内出行靠汽车。初来的人最容易犯的错，是把怡保当作一座衰落的矿城，而锡矿 1970 年代枯竭之后，它已转成以美食与岩洞闻名的旅游城市。",
     layout:
       "旧城区保留大量英殖民时期建筑与华人店屋，新城区则是现代商业与住宅区，近打河谷周边分布多处石灰岩溶洞。",
     gettingAround:
@@ -9440,11 +9480,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年高温多湿；建议安排半日探访东姑洞、半日漫步旧城区品尝当地美食。",
   },
   "kota-kinabalu": {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Kota Kinabalu 县 2025 = 约 55.2 万。**原文的 61 万卡在市区（50 万）与「大亚庇」（73 万）中间，两个都对不上**，来源不明。
     identity:
-      "亚庇是沙巴州首府，人口约61万，坐落于婆罗洲西北海岸，是探索京那巴鲁山与沙巴海岛的核心门户城市。",
-    // howItWorks sources: Wikipedia (2026-09): Kota Kinabalu (DBKK appointed mayor; 2020 pop 500,421; Greater KK 731,406; Jesselton renamed 1967; Sabah immigration autonomy); Local government in Malaysia
+      "亚庇是沙巴州首府，人口约55.2万（2025年，马来西亚统计局DOSM，亚庇县/市政局辖区），坐落于婆罗洲西北海岸，是探索京那巴鲁山与沙巴海岛的核心门户城市。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   「大亚庇」不是 DOSM 口径，73.1 万停在 2020 年、无年度续更渠道，如实写明。
     howItWorks:
-      "亚庇是沙巴州的首府，由亚庇市政厅（DBKK）管辖，市长由州政府任命——马来西亚的市议会 1976 年起不再民选。2020 年市区人口约 50 万，加上兵南邦、必打丹、斗亚兰的大亚庇约 73 万。这座城在二战中几乎被夷平，战后重建，1967 年从杰斯顿改名为亚庇；市中心在海滨与加雅街一带，填海地上建起了商业区，新的发展向北面的里卡士、实邦加延伸。沙巴依 1963 年协议保有自己的移民管制权，进入沙巴须单独盖章，即使从马来西亚半岛来也一样。卡达山杜顺人、巴瑶人、华人与马来人构成了城市。市内没有轨道交通。初来的人最容易犯的错，是把亚庇当作登神山的中转站，而神山在 90 公里外，城市本身是一个自治程度很高的州的首府。",
+      "亚庇是沙巴州的首府，由亚庇市政厅（DBKK）管辖，市长由州政府任命——马来西亚的市议会 1976 年起不再民选。2025 年市区人口约 55.2 万，加上兵南邦、必打丹、斗亚兰的大亚庇约 73 万。这座城在二战中几乎被夷平，战后重建，1967 年从杰斯顿改名为亚庇；市中心在海滨与加雅街一带，填海地上建起了商业区，新的发展向北面的里卡士、实邦加延伸。沙巴依 1963 年协议保有自己的移民管制权，进入沙巴须单独盖章，即使从马来西亚半岛来也一样。卡达山杜顺人、巴瑶人、华人与马来人构成了城市。市内没有轨道交通。初来的人最容易犯的错，是把亚庇当作登神山的中转站，而神山在 90 公里外，城市本身是一个自治程度很高的州的首府。",
     layout:
       "市中心沿海岸线分布，丹绒亚路海滩以夕阳景观闻名，加雅街是本地知名的周末市集所在地。",
     gettingAround:
@@ -9457,11 +9506,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "3-8月降水相对较少，是攀登京那巴鲁山与海岛活动的较佳季节；攀登京那巴鲁山需提前预订许可与向导。",
   },
   kuching: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Kuching 县（DBKU 北岸 + MBKS 南岸辖区）2025 = 约 62.7 万。
     identity:
-      "古晋是砂拉越州首府，人口约63万，坐落于砂拉越河畔，是探索姆鲁山国家公园与尼亚洞穴的重要门户城市。",
-    // howItWorks sources: Wikipedia (2026-09): Kuching (DBKU + MBKS since 1988; 2020s pop ~514,658; Greater Kuching ~789,000; Brooke era 1841–1946; Petra Jaya); Local government in Malaysia (councils appointed)
+      "古晋是砂拉越州首府，人口约62.7万（2025年，马来西亚统计局DOSM，古晋县），坐落于砂拉越河畔，是探索姆鲁山国家公园与尼亚洞穴的重要门户城市。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上，「大古晋」非 DOSM 口径。
     howItWorks:
-      "古晋是砂拉越州的首府，1988 年升格为市时被砂拉越河一分为二，由两个机构分管：北岸的古晋北市政局（DBKU）和南岸的古晋南市议会（MBKS），首长均由州政府任命——马来西亚的市议会 1976 年起不再民选。2020 年代市区人口约 51 万，大古晋约 79 万。南岸是老巴刹与河滨长廊，华人街区集中在这里；北岸是马来甘榜与新的州行政中心 Petra Jaya，州政府大楼与州议会在那里。这座城的形制来自 1841 至 1946 年统治砂拉越的布鲁克家族——白人拉惹的时代。砂拉越保有自己的移民管制权，进入须单独盖章。华人、马来人、伊班人、比达友人各占相当比例，通婚常见。市内没有铁路。初来的人最容易犯的错，是把古晋当作一座普通的马来西亚城市，而它是一个高度自治的州的首府，由两个市政机构分管两岸。",
+      "古晋是砂拉越州的首府，1988 年升格为市时被砂拉越河一分为二，由两个机构分管：北岸的古晋北市政局（DBKU）和南岸的古晋南市议会（MBKS），首长均由州政府任命——马来西亚的市议会 1976 年起不再民选。2025 年市区人口约 62.7 万，大古晋约 79 万。南岸是老巴刹与河滨长廊，华人街区集中在这里；北岸是马来甘榜与新的州行政中心 Petra Jaya，州政府大楼与州议会在那里。这座城的形制来自 1841 至 1946 年统治砂拉越的布鲁克家族——白人拉惹的时代。砂拉越保有自己的移民管制权，进入须单独盖章。华人、马来人、伊班人、比达友人各占相当比例，通婚常见。市内没有铁路。初来的人最容易犯的错，是把古晋当作一座普通的马来西亚城市，而它是一个高度自治的州的首府，由两个市政机构分管两岸。",
     layout:
       "古晋河滨长廊沿砂拉越河展开，河对岸的马格努宫是历史地标，老城区保留有华人店屋与殖民时期建筑。",
     gettingAround:
@@ -9474,11 +9532,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年高温多湿，降水分布相对均匀；前往姆鲁山与尼亚洞穴等内陆景点建议提前规划国内航班与向导。",
   },
   "kota-bharu": {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Kota Bharu 县 2025 = 约 59.0 万。
     identity:
-      "哥打巴鲁是吉兰丹州首府，人口约49万，坐落于吉兰丹河口，是马来西亚东北部马来传统文化保存最完整的城市之一。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kota Bharu (capital of Kelantan; MPKB-BRI "Islamic City" municipal council, appointed like all Malaysian councils since 1976; ~569,000 2022 district; founded 1844; Kelantan River; Siti Khadijah market; Istana Jahar; Kelantanese dialect; Sultan Ismail Petra airport; Thai border ~40 km; Pantai Cahaya Bulan ~10 km)
+      "哥打巴鲁是吉兰丹州首府，人口约59万（2025年，马来西亚统计局DOSM，哥打巴鲁县），坐落于吉兰丹河口，是马来西亚东北部马来传统文化保存最完整的城市之一。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "哥打巴鲁是吉兰丹州的首府，由哥打巴鲁市政局管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选；县域 2022 年人口约 57 万，九成以上是马来人，穆斯林占绝大多数。城市 1844 年由苏丹建为新的州府，名字就是“新城”的意思，市中心在吉兰丹河东岸，司提卡迪嘉市场是全马最大的、几乎全由女性经营的市场，扎哈宫与州博物馆在旁边，2005 年州政府把它定位为“伊斯兰城”；吉兰丹方言与半岛其他地方的马来语差别很大，本地人自己听得懂；机场在城郊，泰国边境在西北约 40 公里，月光海滩在东北 10 公里。初来的人最容易犯的错，是按吉隆坡的印象来预期这里的作息，而这座城的节奏与规矩由本地的宗教与传统定。",
+      "哥打巴鲁是吉兰丹州的首府，由哥打巴鲁市政局管辖，市长与议员由州政府任命——马来西亚的市议会 1976 年起不再民选；县域 2025 年人口约 59 万，九成以上是马来人，穆斯林占绝大多数。城市 1844 年由苏丹建为新的州府，名字就是“新城”的意思，市中心在吉兰丹河东岸，司提卡迪嘉市场是全马最大的、几乎全由女性经营的市场，扎哈宫与州博物馆在旁边，2005 年州政府把它定位为“伊斯兰城”；吉兰丹方言与半岛其他地方的马来语差别很大，本地人自己听得懂；机场在城郊，泰国边境在西北约 40 公里，月光海滩在东北 10 公里。初来的人最容易犯的错，是按吉隆坡的印象来预期这里的作息，而这座城的节奏与规矩由本地的宗教与传统定。",
     layout:
       "市中心以中央市场为核心，周边分布传统手工艺作坊与蜡染纺织工坊，吉兰丹河沿岸保留渔村聚落。",
     gettingAround:
@@ -9491,11 +9558,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月为东海岸雨季，部分年份有较强降水，出行前建议查询天气；3-10月气候相对干燥，更适合安排户外活动。",
   },
   kuantan: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Kuantan 县 2025 = 约 57.7 万。原文 61 万来源不明。
     identity:
-      "关丹是彭亨州首府，人口约61万，坐落于彭亨河口，是马来半岛东岸重要的港口城市与探索彭亨河流域的门户。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuantan (capital of Pahang, largest state in Peninsular Malaysia; Kuantan City Council MBK, city status 2021, appointed; 548,014 2020; capital moved from Kuala Lipis 1955; Teluk Cempedak ~5 km; Sungai Lembing; Cherating ~45 km; ECER; Gebeng petrochemicals; Sultan Ahmad Shah airport; ECRL expected 2027; royal town Pekan)
+      "关丹是彭亨州首府，人口约57.7万（2025年，马来西亚统计局DOSM，关丹县），坐落于彭亨河口，是马来半岛东岸重要的港口城市与探索彭亨河流域的门户。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "关丹是彭亨州的首府，马来西亚半岛最大州的行政中心，2021 年获得城市地位，由关丹市政厅管辖，市长与议员由州政府任命；市域约 324 平方公里，2020 年人口约 55 万。1955 年州府从内陆的瓜拉立卑迁到这里，市中心在关丹河口，皇城仍在南面 50 公里的北根——苏丹的王宫在那里；直落尖不辣海滩在城东 5 公里，是市民的海滩，双溪灵明的旧锡矿在西面山里，浮罗地不佬在北面 45 公里；格宾的石化工业区、关丹港与东海岸经济特区是它的经济支柱，机场在城郊，东海岸铁路预计 2027 年通车。初来的人最容易犯的错，是把关丹当作彭亨的王城，而王室在北根，关丹只是行政与商业中心。",
+      "关丹是彭亨州的首府，马来西亚半岛最大州的行政中心，2021 年获得城市地位，由关丹市政厅管辖，市长与议员由州政府任命；市域约 324 平方公里，2025 年人口约 57.7 万。1955 年州府从内陆的瓜拉立卑迁到这里，市中心在关丹河口，皇城仍在南面 50 公里的北根——苏丹的王宫在那里；直落尖不辣海滩在城东 5 公里，是市民的海滩，双溪灵明的旧锡矿在西面山里，浮罗地不佬在北面 45 公里；格宾的石化工业区、关丹港与东海岸经济特区是它的经济支柱，机场在城郊，东海岸铁路预计 2027 年通车。初来的人最容易犯的错，是把关丹当作彭亨的王城，而王室在北根，关丹只是行政与商业中心。",
     layout:
       "市中心沿彭亨河口两岸分布，德立海滩是本地知名的休闲海滩，河口渔村保留传统渔业生活方式。",
     gettingAround:
@@ -9508,11 +9584,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月为东海岸雨季，部分月份降水较多；3-10月气候相对干燥，更适合安排海滩与琴宁湖户外活动。",
   },
   sandakan: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Sandakan 县 2025 = 约 50.5 万。
     identity:
-      "山打根是沙巴州东海岸港口城市，人口约44万，20世纪初曾是英属北婆罗洲首府，是探索京那巴当岸河的核心门户。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sandakan (Sabah; municipal council, appointed; 439,050 2020 district; capital of British North Borneo until 1946, destroyed in WWII; "Little Hong Kong"; Sandakan Bay; Agnes Keith house; Puu Jih Shih; Sepilok ~25 km; Kinabatangan ~100 km; Turtle Islands by boat; airport; palm oil)
+      "山打根是沙巴州东海岸港口城市，人口约50.5万（2025年，马来西亚统计局DOSM，山打根县），20世纪初曾是英属北婆罗洲首府，是探索京那巴当岸河的核心门户。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "山打根是沙巴的第二大城市，由山打根市议会管辖，议员由州政府任命；县域 2020 年人口约 44 万。1884 至 1946 年它是英属北婆罗洲的首府，香港来的华人移民让它有“小香港”之称，二战的轰炸把整座城夷平，战后首府迁到了亚庇，山打根按新规划重建；今天它是棕榈油与木材的出港口，海湾边的市区不大，普济寺在山上，作家艾格尼丝·基思的故居是英治时期的遗存；西比洛的红毛猩猩保护中心在西面 25 公里，京那巴当岸河在南面约 100 公里，海龟岛要坐船，机场在城郊。初来的人最容易犯的错，是把山打根当作看野生动物的地方，而动物在几十到上百公里外的保护区，城本身是一座港口。",
+      "山打根是沙巴的第二大城市，由山打根市议会管辖，议员由州政府任命；县域 2025 年人口约 50.5 万。1884 至 1946 年它是英属北婆罗洲的首府，香港来的华人移民让它有“小香港”之称，二战的轰炸把整座城夷平，战后首府迁到了亚庇，山打根按新规划重建；今天它是棕榈油与木材的出港口，海湾边的市区不大，普济寺在山上，作家艾格尼丝·基思的故居是英治时期的遗存；西比洛的红毛猩猩保护中心在西面 25 公里，京那巴当岸河在南面约 100 公里，海龟岛要坐船，机场在城郊。初来的人最容易犯的错，是把山打根当作看野生动物的地方，而动物在几十到上百公里外的保护区，城本身是一座港口。",
     layout:
       "市中心沿海湾分布，山打根中央市场是本地知名的海鲜与农产品交易场所，市郊分布多处历史遗迹与自然保护区。",
     gettingAround:
@@ -9525,11 +9610,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "3-8月降水相对较少，是京那巴当岸河野生动物观察的较佳季节；建议提前预订河流保护区内的住宿以安排清晨与傍晚的观察活动。",
   },
   miri: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Miri 县 2025 = 约 25.8 万。**原文的 30 万高于官方县口径**，来源不明。
     identity:
-      "美里是砂拉越州东北部港口城市，人口约30万，是探索姆鲁山国家公园与尼亚洞穴的核心门户，也是马来西亚石油工业的发源地。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Miri (Sarawak; Miri City Council, city status 2005 — first non-state-capital city in Malaysia; ~248,900 2020; first oil well 1910 "Grand Old Lady" on Canada Hill; Shell/Petronas; Niah ~110 km; Mulu by flight; Lambir ~30 km; Brunei border ~30 km; airport; second city of Sarawak)
+      "美里是砂拉越州东北部港口城市，人口约25.8万（2025年，马来西亚统计局DOSM，美里县），是探索姆鲁山国家公园与尼亚洞穴的核心门户，也是马来西亚石油工业的发源地。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "美里是砂拉越的第二大城市，2005 年成为马来西亚第一个非州府的城市，由美里市政厅管辖，市长与议员由州政府任命；2020 年人口约 25 万。1910 年壳牌在加拿大山上钻出马来西亚第一口油井，那口井至今立在山顶，称“老奶奶”，石油与天然气从此定义了这座城，壳牌与国油的办公楼在市区；姆鲁国家公园要坐飞机进去，尼亚洞在西南 110 公里，蓝卑尔山在南面 30 公里，文莱边境在东北 30 公里，机场在城郊。华人、伊班人与马来人是主要的人口构成。初来的人最容易犯的错，是把美里当作去姆鲁的中转站，而它是砂拉越的石油之都，姆鲁只能飞进去。",
+      "美里是砂拉越的第二大城市，2005 年成为马来西亚第一个非州府的城市，由美里市政厅管辖，市长与议员由州政府任命；2025 年人口约 25.8 万。1910 年壳牌在加拿大山上钻出马来西亚第一口油井，那口井至今立在山顶，称“老奶奶”，石油与天然气从此定义了这座城，壳牌与国油的办公楼在市区；姆鲁国家公园要坐飞机进去，尼亚洞在西南 110 公里，蓝卑尔山在南面 30 公里，文莱边境在东北 30 公里，机场在城郊。华人、伊班人与马来人是主要的人口构成。初来的人最容易犯的错，是把美里当作去姆鲁的中转站，而它是砂拉越的石油之都，姆鲁只能飞进去。",
     layout:
       "市中心沿海岸线分布，加拿大山油井是马来西亚第一口油井旧址，如今辟为纪念公园，城市周边分布有多处石油工业遗迹。",
     gettingAround:
@@ -9561,11 +9655,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   // ── 马来西亚 批2（2026-09-05）──
   putrajaya: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   布城联邦直辖区 2025 = 约 12.1 万。
     identity:
-      "布城是马来西亚的联邦行政中心，在吉隆坡以南约25公里，1995年开始规划建设，1999年联邦政府从吉隆坡迁来，2001年成为联邦直辖区，人口约12万（2024年）。整座城市围绕人工湖布城湖布局，38%的面积是绿地：粉红色的布特拉清真寺和首相署、造型各异的桥梁（斯里瓦瓦桑桥等）、“铁清真寺”和湿地公园是它的看点。布城是有意规划的花园城市与智慧城市，白天是政府办公区，傍晚和周末市民来湖边散步骑行；每年有热气球节。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Putrajaya (Federal Territory since 2001, ~49 km²; ~119,700 2024; planned federal administrative capital, government moved from KL from 1999; Putrajaya Corporation, not an elected council; 20 precincts; Perdana Putra, Palace of Justice; Putrajaya Lake; ~25 km south of KL; KLIA Transit and MRT Putrajaya line; parliament and the King remain in KL)
+      "布城是马来西亚的联邦行政中心，在吉隆坡以南约25公里，1995年开始规划建设，1999年联邦政府从吉隆坡迁来，2001年成为联邦直辖区，人口约12.1万（2025年，马来西亚统计局DOSM）。整座城市围绕人工湖布城湖布局，38%的面积是绿地：粉红色的布特拉清真寺和首相署、造型各异的桥梁（斯里瓦瓦桑桥等）、“铁清真寺”和湿地公园是它的看点。布城是有意规划的花园城市与智慧城市，白天是政府办公区，傍晚和周末市民来湖边散步骑行；每年有热气球节。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "布城是马来西亚 2001 年设立的第三个联邦直辖区，约 49 平方公里，2024 年人口约 12 万，绝大多数是公务员与家属。它不是自然长出来的城市，而是 1995 年动工、1999 年起把首相署与各部委从吉隆坡整体迁来的行政首都；管理它的是布城机构（Putrajaya Corporation），不是民选议会，全城按 20 个“分区”规划，首相署的绿顶建筑在人工湖畔的高地上，司法宫在另一端，布城清真寺与广场在中间，湖与桥是规划的骨架。宪法上的首都仍是吉隆坡，国会与国家元首都在那里；机场快线与地铁把它与吉隆坡、机场连起来，赛城在隔壁的雪兰莪州。初来的人最容易犯的错，是把布城当作首都，而它只是政府办公的地方，国会在 25 公里外的吉隆坡。",
+      "布城是马来西亚 2001 年设立的第三个联邦直辖区，约 49 平方公里，2025 年人口约 12.1 万，绝大多数是公务员与家属。它不是自然长出来的城市，而是 1995 年动工、1999 年起把首相署与各部委从吉隆坡整体迁来的行政首都；管理它的是布城机构（Putrajaya Corporation），不是民选议会，全城按 20 个“分区”规划，首相署的绿顶建筑在人工湖畔的高地上，司法宫在另一端，布城清真寺与广场在中间，湖与桥是规划的骨架。宪法上的首都仍是吉隆坡，国会与国家元首都在那里；机场快线与地铁把它与吉隆坡、机场连起来，赛城在隔壁的雪兰莪州。初来的人最容易犯的错，是把布城当作首都，而它只是政府办公的地方，国会在 25 公里外的吉隆坡。",
     layout:
       "城市在布城湖周围的丘陵上，分成若干区（Presint）：核心区在湖北岸的高地，布特拉广场周围是布特拉清真寺、首相署和主要部委，布特拉大道向南延伸；铁清真寺和司法宫在核心区南侧；湖上有多座造型桥连接各区。湿地公园在城北的湖上游，植物园在核心区东侧。布城中央站（KLIA Transit 和 MRT）在城西南，机场在南面约25公里。",
     gettingAround:
@@ -9578,11 +9681,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年可去，避开中午的高温，傍晚湖边最舒服；雨季（10–1月）午后有雷雨。半天到一天。从吉隆坡当日往返，或从机场进城前顺访。",
   },
   "cameron-highlands": {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   金马仑高原县 2025 = 约 4.5 万。
     identity:
-      "金马仑高原在马来西亚中部的蒂迪旺沙山脉上，海拔800–1600米，吉隆坡以北约200公里，是英国殖民时期开辟的避暑山庄（1885年由测绘师威廉·卡梅伦勘察，1930年代开发），全区人口约4.4万。这里全年气温约18℃，是马来西亚最大的茶叶产区——BOH 茶园1929年创立——也是草莓、蔬菜和花卉的产地；布林昌山（2031米）顶上的苔藓森林是云雾中的高山雨林。丹那拉打和碧兰璋是两个主要的镇子，殖民时期的都铎式建筑和下午茶传统仍在。1967年泰国丝绸大王吉姆·汤普森在此失踪。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cameron Highlands (district of Pahang, 712 km²; ~40,000; district council appointed; named after William Cameron 1885, British hill station from the 1930s; Tanah Rata administrative, Brinchang, Ringlet; 800–1,603 m; BOH tea, strawberries, vegetables; Orang Asli; ~71% forested; roads from Tapah/Simpang Pulai/Gua Musang; no rail or airport)
+      "金马仑高原在马来西亚中部的蒂迪旺沙山脉上，海拔800–1600米，吉隆坡以北约200公里，是英国殖民时期开辟的避暑山庄（1885年由测绘师威廉·卡梅伦勘察，1930年代开发），全区人口约4.5万（2025年，马来西亚统计局DOSM）。这里全年气温约18℃，是马来西亚最大的茶叶产区——BOH 茶园1929年创立——也是草莓、蔬菜和花卉的产地；布林昌山（2031米）顶上的苔藓森林是云雾中的高山雨林。丹那拉打和碧兰璋是两个主要的镇子，殖民时期的都铎式建筑和下午茶传统仍在。1967年泰国丝绸大王吉姆·汤普森在此失踪。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "金马仑高原是彭亨州的一个县，约 712 平方公里，人口约 4 万，由县议会管辖，议员由州政府任命；名字来自 1885 年勘测这一带的苏格兰人威廉·卡梅伦，1930 年代英国人把它建成避暑高原。它不是一座镇，而是海拔 800 到 1,600 米之间沿公路串起的一串聚落：丹那拉打是县政府与学校所在，碧兰璋是最大的商业镇，林伦是南端的入口；BOH 的茶园、草莓园与蔬菜农场铺在山坡上，供应半个马来西亚的高地蔬菜，原住民村落散在林中，约七成的县域仍是森林；从怡保方向的双溪毛糯与丹那拉打各有一条盘山公路，没有铁路也没有机场，吉隆坡在南面约 200 公里。初来的人最容易犯的错，是把金马仑当作一个地点，而它是一条几十公里长的公路沿线，镇与镇之间要开半小时。",
+      "金马仑高原是彭亨州的一个县，约 712 平方公里，2025 年人口约 4.5 万，由县议会管辖，议员由州政府任命；名字来自 1885 年勘测这一带的苏格兰人威廉·卡梅伦，1930 年代英国人把它建成避暑高原。它不是一座镇，而是海拔 800 到 1,600 米之间沿公路串起的一串聚落：丹那拉打是县政府与学校所在，碧兰璋是最大的商业镇，林伦是南端的入口；BOH 的茶园、草莓园与蔬菜农场铺在山坡上，供应半个马来西亚的高地蔬菜，原住民村落散在林中，约七成的县域仍是森林；从怡保方向的双溪毛糯与丹那拉打各有一条盘山公路，没有铁路也没有机场，吉隆坡在南面约 200 公里。初来的人最容易犯的错，是把金马仑当作一个地点，而它是一条几十公里长的公路沿线，镇与镇之间要开半小时。",
     layout:
       "高原沿一条山路展开：从南面的冷力（Ringlet）上来，先到丹那拉打（行政中心，酒店、餐馆、旅行社集中，步道起点），再往北约5公里是碧兰璋（市集、草莓园），碧兰璋北面是双溪帕拉斯的 BOH 茶园和布林昌山的上山路（苔藓森林在山顶附近），继续向北是甘榜拉惹和更多菜园。冷力附近的湖边有 BOH 的另一处茶园。",
     gettingAround:
@@ -9595,11 +9707,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年可去，2–4月和6–9月相对干；周末和马来西亚公共假期极挤、堵车。住两晚。与怡保、槟城连成北部线路。",
   },
   taiping: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   太平市议会（MPT）辖区对应 Larut dan Matang 县（不含实兆远县）2025 = 约 27.8 万。原文停在 2013 年，十二年没动过。
     identity:
-      "太平在马来西亚霹雳州北部，是马来西亚最多雨的城镇（年降水约3200毫米），人口约24.5万（2013年）。十九世纪它因拉律锡矿而兴起，1874年后是霹雳的首府，留下了马来西亚的一串“第一”：1880年的太平湖公园是马来西亚第一座公园，1886年的霹雳博物馆是最早的博物馆，1885年通车的太平—威德港铁路是第一条铁路，拉律山（麦斯威尔山）是最早的山间避暑地，太平动物园是最早的动物园。湖公园里的雨树垂枝拂水是它最有名的画面。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Taiping (Perak, Larut district; municipal council appointed; ~245,000; capital of Perak 1876–1937 before Ipoh; Lake Gardens 1880, first public garden; wettest in Peninsular Malaysia ~3,200 mm; Perak Museum 1886 oldest; first railway 1885 to Port Weld; Maxwell Hill; Larut wars/tin; Ipoh ~48 km)
+      "太平在马来西亚霹雳州北部，是马来西亚最多雨的城镇（年降水约3200毫米），人口约27.8万（2025年，马来西亚统计局DOSM，拉律—马登县）。十九世纪它因拉律锡矿而兴起，1874年后是霹雳的首府，留下了马来西亚的一串“第一”：1880年的太平湖公园是马来西亚第一座公园，1886年的霹雳博物馆是最早的博物馆，1885年通车的太平—威德港铁路是第一条铁路，拉律山（麦斯威尔山）是最早的山间避暑地，太平动物园是最早的动物园。湖公园里的雨树垂枝拂水是它最有名的画面。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "太平是霹雳州拉律县的一座镇，由太平市议会管辖，议员由州政府任命；人口约 24.5 万，华人约占四成六。1876 至 1937 年它是霹雳的州府，之后让位给怡保；锡矿带来的移民与 1860 年代的拉律械斗是它的开端，“太平”这个名字就是械斗平息后取的。它保留了一串“马来西亚第一”：1880 年的太平湖公园是第一座公共花园，1886 年的霹雳博物馆是第一座博物馆，1885 年到十八丁港的铁路是第一条铁路；年降水约 3,200 毫米，是半岛最多雨的地方，太平山（麦斯威尔山）在城背后，怡保在南面约 48 公里。初来的人最容易犯的错，是把太平当作一座旅游小镇，而它是霹雳的旧州府，那些“第一”都是行政中心时代留下的。",
+      "太平是霹雳州拉律县的一座镇，由太平市议会管辖，议员由州政府任命；2025 年人口约 27.8 万，华人约占四成六。1876 至 1937 年它是霹雳的州府，之后让位给怡保；锡矿带来的移民与 1860 年代的拉律械斗是它的开端，“太平”这个名字就是械斗平息后取的。它保留了一串“马来西亚第一”：1880 年的太平湖公园是第一座公共花园，1886 年的霹雳博物馆是第一座博物馆，1885 年到十八丁港的铁路是第一条铁路；年降水约 3,200 毫米，是半岛最多雨的地方，太平山（麦斯威尔山）在城背后，怡保在南面约 48 公里。初来的人最容易犯的错，是把太平当作一座旅游小镇，而它是霹雳的旧州府，那些“第一”都是行政中心时代留下的。",
     layout:
       "老城在铁路以东的规整街区里，旧市场、钟楼、圣公会教堂和殖民时期店屋集中在这里；太平湖公园在老城东侧，由废弃的锡矿坑改成，动物园在湖公园东北角；拉律山的上山路在动物园旁，山顶约1000米，靠四驱吉普上山。霹雳博物馆在老城北面。十八丁（旧威德港）在西面约15公里的海边，有红树林、炭窑和萤火虫。",
     gettingAround:
@@ -9612,11 +9733,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "2–4月相对少雨；其余月份午后有雨，早上出门。市区一天，十八丁半天。作为槟城与怡保之间的一站。",
   },
   "alor-setar": {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   MBAS 辖区 = Kota Setar（38.3 万）+ Pokok Sena（5.1 万）两县合计 2025 = 约 43.5 万。
     identity:
-      "亚罗士打是马来西亚吉打州的首府，在半岛西北部的稻田平原上，人口约41.8万（2020年），是马来西亚第二古老的州首府。吉打是“马来西亚的米仓”，城外是一望无际的稻田，稻米博物馆有360度的稻田壁画；1912年建成的扎希尔清真寺是马来西亚最美的清真寺之一，1735年的大会堂是苏丹王朝的礼仪厅，165.5米的亚罗士打塔是马来西亚第三高的塔。前首相马哈蒂尔出生于此，故居开放参观。去兰卡威的渡轮从西面约15公里的瓜拉吉打出发。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alor Setar (capital of Kedah; MBAS city council, city status 2003, appointed; ~417,800 2020 district; founded 1735; Zahir Mosque 1915; Alor Setar Tower; Balai Besar; Pekan Rabu; Kedah rice plains; birthplace of two prime ministers; Sultan Abdul Halim airport; Thai border ~50 km; Kuala Kedah ferry to Langkawi 12 km; KL ~430 km)
+      "亚罗士打是马来西亚吉打州的首府，在半岛西北部的稻田平原上，人口约43.5万（2025年，马来西亚统计局DOSM，市议会辖区含吉打中央县与保阁士那县），是马来西亚第二古老的州首府。吉打是“马来西亚的米仓”，城外是一望无际的稻田，稻米博物馆有360度的稻田壁画；1912年建成的扎希尔清真寺是马来西亚最美的清真寺之一，1735年的大会堂是苏丹王朝的礼仪厅，165.5米的亚罗士打塔是马来西亚第三高的塔。前首相马哈蒂尔出生于此，故居开放参观。去兰卡威的渡轮从西面约15公里的瓜拉吉打出发。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "亚罗士打是吉打州的首府，2003 年获得城市地位，由亚罗士打市政厅管辖，市长与议员由州政府任命；县域 2020 年人口约 42 万。城市 1735 年由苏丹建立，名字取自河边的一种树，市中心是一片王城格局：大礼堂、皇家音乐亭与 1915 年落成的查希尔清真寺围着广场，星期三市集是老市场，吉打塔在旁边；四周是马来西亚最大的稻田平原，“马来西亚的米仓”指的就是这里，两位首相出生在这座城；机场在城郊，泰国边境在北面约 50 公里，瓜拉吉打的渡轮码头在西面 12 公里，通往浮罗交怡，吉隆坡在南面约 430 公里。初来的人最容易犯的错，是把亚罗士打当作去浮罗交怡的中转站，而它是一个州的首府，四周的稻田养着半个国家。",
+      "亚罗士打是吉打州的首府，2003 年获得城市地位，由亚罗士打市政厅管辖，市长与议员由州政府任命；2025 年两县合计约 43.5 万。城市 1735 年由苏丹建立，名字取自河边的一种树，市中心是一片王城格局：大礼堂、皇家音乐亭与 1915 年落成的查希尔清真寺围着广场，星期三市集是老市场，吉打塔在旁边；四周是马来西亚最大的稻田平原，“马来西亚的米仓”指的就是这里，两位首相出生在这座城；机场在城郊，泰国边境在北面约 50 公里，瓜拉吉打的渡轮码头在西面 12 公里，通往浮罗交怡，吉隆坡在南面约 430 公里。初来的人最容易犯的错，是把亚罗士打当作去浮罗交怡的中转站，而它是一个州的首府，四周的稻田养着半个国家。",
     layout:
       "市中心在吉打河边，扎希尔清真寺、大会堂、皇家博物馆和大钟楼在同一片皇家广场周围，亚罗士打塔在旁边，星期三市集（Pekan Rabu）在市中心；马哈蒂尔故居在市区南面的西港路。稻米博物馆在城北约5公里的稻田里，古农杰莱山在东面约15公里。火车站在市中心南侧，机场在北面约15公里，瓜拉吉打码头在西面约15公里。",
     gettingAround:
@@ -9629,11 +9759,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12–4月较干；稻田在收割前的12月最金黄。市区一天。作为去兰卡威（渡轮约1.5小时）或北上泰国的中转站。",
   },
   semporna: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Semporna 县 2025 = 约 20.1 万（2020 年 16.7 万）。**原文两段自相矛盾且都过期**：identity 用 2010 年镇区 3.5 万、howItWorks 用 2020 年县域 14 万，口径与年份都不同、数字差四倍。统一到县口径最新数。
     identity:
-      "仙本那在马来西亚沙巴州东南岸的苏禄海边，人口约3.5万（2010年），是世界级潜水地西巴丹岛（距镇约36公里）和马布岛、卡帕莱岛的门户；敦沙卡兰海洋公园（2004年设立）的珍珠岛火山口是网红观景点。这里的巴瑶族海上人（Bajau Laut）世代住在船上和海上高脚屋，每年4月的雷帕帆船节展示他们的彩帆；仙本那也是马来西亚唯一说查瓦卡诺语（源自菲律宾）的社区所在地。镇上以海鲜和珍珠养殖闻名。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Semporna (town and district in eastern Sabah; district council appointed; ~140,000 district 2020; Bajau Laut stilt villages; gateway to Sipadan (permits, day trips only), Mabul, Kapalai, Tun Sakaran Marine Park; Chavacano-speaking Moro refugee community; Tawau airport ~100 km; ESSZONE security area — check current travel advisories)
+      "仙本那在马来西亚沙巴州东南岸的苏禄海边，县域人口约20.1万（2025年，马来西亚统计局DOSM），是世界级潜水地西巴丹岛（距镇约36公里）和马布岛、卡帕莱岛的门户；敦沙卡兰海洋公园（2004年设立）的珍珠岛火山口是网红观景点。这里的巴瑶族海上人（Bajau Laut）世代住在船上和海上高脚屋，每年4月的雷帕帆船节展示他们的彩帆；仙本那也是马来西亚唯一说查瓦卡诺语（源自菲律宾）的社区所在地。镇上以海鲜和珍珠养殖闻名。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "仙本那是沙巴东海岸的一个镇与县，由县议会管辖，议员由州政府任命；县域 2020 年人口约 14 万，巴瑶族是主要族群，还有苏禄人、菲律宾人与客家华人，是马来西亚唯一有查瓦卡诺语社群的地方。镇子本身很小，一条海边的街与水上木屋村，海鲜市场是它的中心；它是潜水的出发港：西巴丹岛在东南 36 公里，每天限量发放许可、只能当天往返，马布岛与卡帕莱的水上屋在附近，敦沙卡兰海洋公园的博安波岛在北面；最近的机场在斗湖，约 100 公里。这一带属于沙巴东海岸安全区，出行前应查最新的旅行提示。初来的人最容易犯的错，是以为可以住在西巴丹岛上，而岛上不许过夜，潜水者住在马布或镇上。",
+      "仙本那是沙巴东海岸的一个镇与县，由县议会管辖，议员由州政府任命；县域 2025 年人口约 20.1 万，巴瑶族是主要族群，还有苏禄人、菲律宾人与客家华人，是马来西亚唯一有查瓦卡诺语社群的地方。镇子本身很小，一条海边的街与水上木屋村，海鲜市场是它的中心；它是潜水的出发港：西巴丹岛在东南 36 公里，每天限量发放许可、只能当天往返，马布岛与卡帕莱的水上屋在附近，敦沙卡兰海洋公园的博安波岛在北面；最近的机场在斗湖，约 100 公里。这一带属于沙巴东海岸安全区，出行前应查最新的旅行提示。初来的人最容易犯的错，是以为可以住在西巴丹岛上，而岛上不许过夜，潜水者住在马布或镇上。",
     layout:
       "镇子在一个小半岛上，码头区是中心，潜店、旅馆和海鲜餐馆集中在海边；海上的木屋村在镇边。马布岛和卡帕莱岛在南面约40分钟船程，西巴丹在马布岛再往南，是海洋公园、不能住宿；敦沙卡兰海洋公园（珍珠岛、曼达布安岛）在东北约30–45分钟船程。斗湖在西面约100公里，机场在斗湖。",
     gettingAround:
@@ -9646,11 +9785,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4–11月海况最好，7–8月和马来西亚假期最挤；西巴丹许可要提前订。住三到四晚。与斗湖、山打根、亚庇连成沙巴线路。",
   },
   sibu: {
+    // identity sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   Sibu 县 2025 = 约 25.6 万。原文两段一个用 2010 年 16 万、一个用 2020 年 30 万，互相矛盾且都不是最新。
     identity:
-      "诗巫在马来西亚砂拉越州中部的拉让江（马来西亚最长的河）与伊干河汇合处，离海约60公里，人口约16万（2010年）。1901年福州人黄乃裳带领移民在此垦殖，诗巫因此成为“新福州”，福州话、光饼和干盘面（kampua mee）是城市的印记；1928年大火后幸存的大伯公庙和七层宝塔是地标，天鹅像是城市象征，中央市场是砂拉越最大的市场。从诗巫沿拉让江坐快艇可到加帛、峇拉加的内陆长屋区，7月的婆罗洲文化节在市镇广场举行。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Sibu (Sarawak; municipal council appointed; ~300,000 2020; Rajang River ~60 km from the sea, express boats to Kapit; Foochow settlers under Wong Nai Siong 1901, Chinese 52.1%, largely Christian; Tua Pek Kong pagoda; Central Market; timber and 40 shipyards; airport 1994; swan symbol)
+      "诗巫在马来西亚砂拉越州中部的拉让江（马来西亚最长的河）与伊干河汇合处，离海约60公里，人口约25.6万（2025年，马来西亚统计局DOSM，诗巫县）。1901年福州人黄乃裳带领移民在此垦殖，诗巫因此成为“新福州”，福州话、光饼和干盘面（kampua mee）是城市的印记；1928年大火后幸存的大伯公庙和七层宝塔是地标，天鹅像是城市象征，中央市场是砂拉越最大的市场。从诗巫沿拉让江坐快艇可到加帛、峇拉加的内陆长屋区，7月的婆罗洲文化节在市镇广场举行。",
+    // howItWorks sources: 马来西亚统计局（DOSM）《Current Population Estimates by Administrative District, 2025》（2025-10-02 发布，覆盖 2024/2025 两年估计），子代理直接读官方开放数据 open.dosm.gov.my 的 population_district 表，**级别 1**。
+    //   https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-by-administrative-district-2025
+    //   发布节奏：**州级估计约 7 月、按行政县（daerah）估计约 10 月**。2026 年这一档截至 2026-09-08 尚未发布，本轮用的是 2025 年那一版，10 月后可回来再刷一次。两档都基于 2020 年普查作队列递推，下一次全国普查预计 2030 年。
+    //   **DOSM 不对地方政府辖区（市议会 Majlis）做年度更新** —— 唯一可核实的官方数字来自 2020 年普查按小区的一次性汇总，此后没有续更渠道。「都会区 / conurbation」（Klang Valley、George Town Conurbation、Greater Kota Kinabalu、Greater Kuching）**在 DOSM 官方序列里根本不存在**，是维基百科自定义的地理概念。
+    //   同上。
     howItWorks:
-      "诗巫是砂拉越的第三大城市，由诗巫市议会管辖，议员由州政府任命；2020 年人口约 30 万，华人约占一半，且多为基督徒——这在马来西亚的城市里少见。1901 年黄乃裳带着一千多名福州移民来此垦荒，福州话与福州面至今是本地的日常，天鹅是城市的象征。城市在拉让江边，离海约 60 公里，江是砂拉越最长的河，快艇从这里溯江开往加帕，伊班人的长屋散在上游；中央市场是马来西亚最大的原住民市集，永安亭大伯公庙的宝塔在江边；木材加工与四十多家造船厂是它的产业，机场 1994 年启用。初来的人最容易犯的错，是把诗巫当作一座沿海城市，而它在内河上，出海要顺江走一整天。",
+      "诗巫是砂拉越的第三大城市，由诗巫市议会管辖，议员由州政府任命；2025 年人口约 25.6 万，华人约占一半，且多为基督徒——这在马来西亚的城市里少见。1901 年黄乃裳带着一千多名福州移民来此垦荒，福州话与福州面至今是本地的日常，天鹅是城市的象征。城市在拉让江边，离海约 60 公里，江是砂拉越最长的河，快艇从这里溯江开往加帕，伊班人的长屋散在上游；中央市场是马来西亚最大的原住民市集，永安亭大伯公庙的宝塔在江边；木材加工与四十多家造船厂是它的产业，机场 1994 年启用。初来的人最容易犯的错，是把诗巫当作一座沿海城市，而它在内河上，出海要顺江走一整天。",
     layout:
       "市镇在拉让江北岸，江边是快艇码头、大伯公庙和七层宝塔、中央市场，市镇广场和天鹅像在江边的主街上，老街的店屋在码头后面。诗巫机场在东南约23公里。巴旺阿山的伊班长屋在江下游约40公里，加帛在上游约140公里（快艇约3小时）。",
     gettingAround:

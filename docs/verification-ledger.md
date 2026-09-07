@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 3a07192
+lastVerifiedCommit: 86d5c49
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: 3a07192
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | travel · 马来西亚城市人口与口径（C6-d 刷新第 12 批：马来西亚 17 城取 DOSM 2025 年县级估计） | 34 | 2 / 32 / 0 | 当场修 34 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 中国城市人口（C6-d 刷新第 11 批：中国 10 条（上海/桂林/三亚/哈尔滨/张家界/丽江/敦煌/武汉/澳门/台北）） | 11 | 0 / 9 / 2 | 当场修 11 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 取数受阻（C6-d：取不到最新一期的中国城市） | 2 | 0 / 0 / 2 | 当场修 0 条；新开 issue 2、关闭 0 |
 | 2026-09-07 | travel · 中国地级市人口（C6-d 刷新第 10 批：中国 10 城（大连/宁波/苏州/洛阳/大同/黄山/泉州/张掖/温州/扬州）） | 13 | 0 / 12 / 1 | 当场修 13 条；新开 issue 0、关闭 0 |
