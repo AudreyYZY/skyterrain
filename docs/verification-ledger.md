@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: f398835
+lastVerifiedCommit: dab0d7a
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: f398835
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | routes · 新西兰/丹麦（2026-09-07 新西兰 + 丹麦（9 条，收尾）） | 9 | 1 / 7 / 1 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | routes · 蒙古（2026-09-07 蒙古国内航线（5 条）） | 6 | 0 / 6 / 0 | 当场修 5 条；新开 issue 1、关闭 0 |
 | 2026-09-07 | routes · 瑞士/爱尔兰（2026-09-07 瑞士/爱尔兰（3 条）） | 3 | 2 / 0 / 1 | 当场修 3 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | routes · 克罗地亚（2026-09-07 克罗地亚国内航线（先落 5 条）） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |

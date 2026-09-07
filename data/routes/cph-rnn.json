@@ -6,11 +6,43 @@
   "descriptionEn": "Bornholm / Almindingen",
   "depCountry": "denmark",
   "arrCountry": "denmark",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK6207", "aircraft": "Airbus A320neo", "depIata": "CPH", "arrIata": "RNN", "durationMin": 35 },
+  "flight": {
+    "airline": "丹麦航空运输（Bornholmerflyet）",
+    "airlineEn": "DAT (Danish Air Transport)",
+    "flightNo": "DX34",
+    "aircraft": "ATR 72",
+    "depIata": "CPH",
+    "arrIata": "RNN",
+    "durationMin": 35
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "cph", "name": "哥本哈根", "nameEn": "Copenhagen", "lat": 55.6180, "lon": 12.6476, "airport": true },
-    { "kind": "terrain", "terrainId": "bornholm-almindingen" },
-    { "kind": "city", "id": "rnn", "name": "龙讷", "nameEn": "Rønne", "lat": 55.0633, "lon": 14.7594, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cph",
+      "name": "哥本哈根",
+      "nameEn": "Copenhagen",
+      "lat": 55.618,
+      "lon": 12.6476,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "bornholm-almindingen"
+    },
+    {
+      "kind": "city",
+      "id": "rnn",
+      "name": "龙讷",
+      "nameEn": "Rønne",
+      "lat": 55.0633,
+      "lon": 14.7594,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://bornholm.info/en/plane/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**这条问题最大：博恩霍尔姆航线根本不是 SAS 在飞**。这是丹麦政府招标的 PSO 航线，现任中标方与运营方是 **DAT（Danish Air Transport，品牌 Bornholmerflyet）**，真实航班号是 DX 系列（如 DX34），机型 **ATR 72**。SK6207 这个 SAS 号查无实据。我提的「A320neo 与 PSO 支线航线的常规配置不相符」这个直觉是对的。未能核实确切班次频率。来源级别 3"
+  }
 }

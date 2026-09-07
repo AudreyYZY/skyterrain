@@ -6,11 +6,43 @@
   "descriptionEn": "Mols Bjerge",
   "depCountry": "denmark",
   "arrCountry": "denmark",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK1273", "aircraft": "ATR 72", "depIata": "CPH", "arrIata": "AAR", "durationMin": 40 },
+  "flight": {
+    "airline": "北欧航空（BRA 湿租执飞）",
+    "airlineEn": "SAS (operated by Braathens Regional)",
+    "flightNo": "SK1273",
+    "aircraft": "ATR 72-600",
+    "depIata": "CPH",
+    "arrIata": "AAR",
+    "durationMin": 40
+  },
   "cruiseHeight": 5000,
   "waypoints": [
-    { "kind": "city", "id": "cph", "name": "哥本哈根", "nameEn": "Copenhagen", "lat": 55.6180, "lon": 12.6476, "airport": true },
-    { "kind": "terrain", "terrainId": "mols-bjerge" },
-    { "kind": "city", "id": "aar", "name": "奥胡斯", "nameEn": "Aarhus", "lat": 56.3000, "lon": 10.6190, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cph",
+      "name": "哥本哈根",
+      "nameEn": "Copenhagen",
+      "lat": 55.618,
+      "lon": 12.6476,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mols-bjerge"
+    },
+    {
+      "kind": "city",
+      "id": "aar",
+      "name": "奥胡斯",
+      "nameEn": "Aarhus",
+      "lat": 56.3,
+      "lon": 10.619,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.aeroroutes.com/eng/250218-skns25tf",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号、城市对、不经停都属实且 2026-07 仍在运营。**但不是 SAS 自己执飞**：SAS 自 2024-09 与 Braathens Regional（BRA）签了 7 年 ACMI 湿租协议，2025-01 起丹麦国内 ATR 72 航段从原代运营方 **Xfly（2024 年底破产清算）** 转由 **BRA** 执飞，机型 ATR 72-600。**我猜的代运营方是 DAT/Xfly，实际是 BRA** —— 与瑞典那四条是同一家。湿租这个方向猜对了，具体是谁猜错了。来源级别 3"
+  }
 }

@@ -6,11 +6,43 @@
   "descriptionEn": "Rebild Bakker",
   "depCountry": "denmark",
   "arrCountry": "denmark",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK1225", "aircraft": "ATR 72", "depIata": "CPH", "arrIata": "AAL", "durationMin": 45 },
+  "flight": {
+    "airline": "北欧航空（BRA 湿租执飞）",
+    "airlineEn": "SAS (operated by Braathens Regional)",
+    "flightNo": "SK1225",
+    "aircraft": "ATR 72-600",
+    "depIata": "CPH",
+    "arrIata": "AAL",
+    "durationMin": 45
+  },
   "cruiseHeight": 5500,
   "waypoints": [
-    { "kind": "city", "id": "cph", "name": "哥本哈根", "nameEn": "Copenhagen", "lat": 55.6180, "lon": 12.6476, "airport": true },
-    { "kind": "terrain", "terrainId": "rebild-bakker" },
-    { "kind": "city", "id": "aal", "name": "奥尔堡", "nameEn": "Aalborg", "lat": 57.0928, "lon": 9.8492, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cph",
+      "name": "哥本哈根",
+      "nameEn": "Copenhagen",
+      "lat": 55.618,
+      "lon": 12.6476,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rebild-bakker"
+    },
+    {
+      "kind": "city",
+      "id": "aal",
+      "name": "奥尔堡",
+      "nameEn": "Aalborg",
+      "lat": 57.0928,
+      "lon": 9.8492,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.ch-aviation.com/news/145464-sas-temporarily-cuts-routes-in-4q24-due-to-atr-acmi-switch",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：同 cph-aar：航班号与航段属实，实际执飞方是 BRA（2025-01-19 起接手哥本哈根—奥尔堡），机型 ATR 72-600。来源级别 2（ch-aviation 行业媒体）"
+  }
 }
