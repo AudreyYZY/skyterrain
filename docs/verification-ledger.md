@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 8e611c7
+lastVerifiedCommit: d6583ff
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: 8e611c7
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | travel · 中国城市 identity 段人口数字（C6 第 3 批：中国 30 座城市的人口） | 30 | 7 / 19 / 4 | 当场修 30 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 国家概览 identity 段人口数字（C6 第 2 批：38 个国家概览的全国人口（B 组 19 国）） | 20 | 5 / 14 / 1 | 当场修 19 条；新开 issue 1、关闭 0 |
 | 2026-09-07 | travel · 国家概览 identity 段人口数字（C6 第 1 批：38 个国家概览的全国人口（A 组 19 国）） | 19 | 8 / 11 / 0 | 当场修 19 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | 中国国内线 + 早期批次里 status=wrong / unknown 却无 issue 追踪的条目（补建 issue：早期几轮查明有误但没开 issue 的 14 条） | 14 | 0 / 11 / 3 | 当场修 0 条；新开 issue 14、关闭 0 |
