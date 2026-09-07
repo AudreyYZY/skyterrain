@@ -6,11 +6,43 @@
   "descriptionEn": "Trang An Landscape Complex",
   "depCountry": "vietnam",
   "arrCountry": "vietnam",
-  "flight": { "airline": "越南航空", "airlineEn": "Vietnam Airlines", "flightNo": "VN1541", "aircraft": "Airbus A321", "depIata": "HAN", "arrIata": "HUI", "durationMin": 70 },
+  "flight": {
+    "airline": "越南航空",
+    "airlineEn": "Vietnam Airlines",
+    "flightNo": "VN1541",
+    "aircraft": "Airbus A321",
+    "depIata": "HAN",
+    "arrIata": "HUI",
+    "durationMin": 70
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "han", "name": "河内", "nameEn": "Hanoi", "lat": 21.2212, "lon": 105.8073, "airport": true },
-    { "kind": "terrain", "terrainId": "trang-an-landscape-complex" },
-    { "kind": "city", "id": "hui", "name": "顺化", "nameEn": "Hue", "lat": 16.4015, "lon": 107.7033, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "han",
+      "name": "河内",
+      "nameEn": "Hanoi",
+      "lat": 21.2212,
+      "lon": 105.8073,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "trang-an-landscape-complex"
+    },
+    {
+      "kind": "city",
+      "id": "hui",
+      "name": "顺化",
+      "nameEn": "Hue",
+      "lat": 16.4015,
+      "lon": 107.7033,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/vn1541/hanoi/hue/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：河内—顺化，每周二至周日执飞，A321，约 572km / 1h15m 与记录 70min 量级相符。顺化机场代码 HUI（富牌）无误，越航自营非 VASCO。来源级别 3"
+  }
 }

@@ -6,13 +6,51 @@
   "descriptionEn": "Central Lowlands · Galtee Mountains · MacGillycuddy's Reeks",
   "depCountry": "ireland",
   "arrCountry": "ireland",
-  "flight": { "airline": "瑞安航空", "airlineEn": "Ryanair", "flightNo": "FR611", "aircraft": "Boeing 737-800", "depIata": "DUB", "arrIata": "KIR", "durationMin": 55 },
+  "flight": {
+    "airline": "瑞安航空",
+    "airlineEn": "Ryanair",
+    "flightNo": "FR611",
+    "aircraft": "Boeing 737-800",
+    "depIata": "DUB",
+    "arrIata": "KIR",
+    "durationMin": 55
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "dub", "name": "都柏林", "nameEn": "Dublin", "lat": 53.4213, "lon": -6.2701, "airport": true },
-    { "kind": "terrain", "terrainId": "central-lowlands-bog-of-allen" },
-    { "kind": "terrain", "terrainId": "galtee-mountains" },
-    { "kind": "terrain", "terrainId": "macgillycuddys-reeks" },
-    { "kind": "city", "id": "kir", "name": "凯里", "nameEn": "Kerry", "lat": 52.1809, "lon": -9.5238, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "dub",
+      "name": "都柏林",
+      "nameEn": "Dublin",
+      "lat": 53.4213,
+      "lon": -6.2701,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-lowlands-bog-of-allen"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "galtee-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "macgillycuddys-reeks"
+    },
+    {
+      "kind": "city",
+      "id": "kir",
+      "name": "凯里",
+      "nameEn": "Kerry",
+      "lat": 52.1809,
+      "lon": -9.5238,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://corporate.ryanair.com/news/ryanair-to-launch-unsubsidised-dublin-kerry-route-lower-fares-to-save-irish-taxpayer-e3-95m-p-a/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：每周 7 班、不经停，机型 737-800（瑞安只运营 737 系列）。**承运人性质值得记一笔**：这条线原是 Aer Lingus Regional（Stobart Air 运营）的 PSO 补贴航线，**Stobart Air 2021 年倒闭后由瑞安以商业化、不补贴的方式接手**，故当前已不是 PSO 航线。**来源级别 1**（瑞安官方新闻稿）。与 dub-cfn 性质不同，那条仍是 PSO"
+  }
 }

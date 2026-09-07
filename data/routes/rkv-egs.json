@@ -6,13 +6,51 @@
   "descriptionEn": "Þingvellir rift · Hofsjökull · Vatnajökull",
   "depCountry": "iceland",
   "arrCountry": "iceland",
-  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY303", "aircraft": "Bombardier Q200", "depIata": "RKV", "arrIata": "EGS", "durationMin": 60 },
+  "flight": {
+    "airline": "冰岛航空",
+    "airlineEn": "Icelandair",
+    "flightNo": "FI60",
+    "aircraft": "De Havilland Dash 8-400 (Q400)",
+    "depIata": "RKV",
+    "arrIata": "EGS",
+    "durationMin": 60
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
-    { "kind": "terrain", "terrainId": "thingvellir" },
-    { "kind": "terrain", "terrainId": "hofsjokull" },
-    { "kind": "terrain", "terrainId": "vatnajokull" },
-    { "kind": "city", "id": "egs", "name": "埃伊尔斯塔济", "nameEn": "Egilsstaðir", "lat": 65.2833, "lon": -14.4014, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "rkv",
+      "name": "雷克雅未克",
+      "nameEn": "Reykjavík",
+      "lat": 64.13,
+      "lon": -21.9406,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "thingvellir"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hofsjokull"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vatnajokull"
+    },
+    {
+      "kind": "city",
+      "id": "egs",
+      "name": "埃伊尔斯塔济",
+      "nameEn": "Egilsstaðir",
+      "lat": 65.2833,
+      "lon": -14.4014,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/fi60/reykjav%C3%ADk/egilssta%C3%B0ir/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人代码与机型都错**：① NY 已停用应为 FI；② 埃伊尔斯塔济航线用的是 **Q400** 不是 Q200 —— Icelandair 现役 3 架 Q200 专用于伊萨菲厄泽与赫本两条 PSO 航线。现役号为 FI60/FI62/FI66/FI70。实测约 47–65min，记录 60min 在区间内。来源级别 2（ch-aviation 行业媒体）+ 3"
+  }
 }

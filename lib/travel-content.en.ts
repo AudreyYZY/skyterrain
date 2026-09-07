@@ -13,8 +13,10 @@ import type { TravelGuide } from "@/lib/travel-lesson";
  */
 export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   "australia-overview": {
+    // identity sources: 澳大利亚统计局 ABS《National, state and territory population, September 2025》：2025-09-30 估计常住人口 27,724,744 人。https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/sep-2025
+    //   原文写的是「人口只有约2700万」——没有年份，也没说是 ERP 口径。核实日 2026-09-07，来源级别 1
     identity:
-      "Australia is almost the size of the whole of Europe with a population of only about 27 million, most of whom live in a handful of cities on the east and south-west coasts; the vast interior is nearly empty. It is its own continent, and much of its wildlife and plant life is found nowhere else. As a Southern Hemisphere country its seasons are reversed — December to February is summer, June to August is winter.",
+      "Australia is almost the size of the whole of Europe with a population of only about 27.7 million (estimated resident population, September 2025, Australian Bureau of Statistics), most of whom live in a handful of cities on the east and south-west coasts; the vast interior is nearly empty. It is its own continent, and much of its wildlife and plant life is found nowhere else. As a Southern Hemisphere country its seasons are reversed — December to February is summer, June to August is winter.",
     layout:
       "Australia divides roughly into four parts: the eastern city belt (Sydney, Melbourne, Brisbane — the demographic and economic core); the arid interior (red desert, Uluru, a scatter of mining and pastoral outposts); the west (the single big city of Perth plus large mining regions); and the island state of Tasmania across the strait. The capital, Canberra, is a mid-sized planned city inland — not the largest city.",
     gettingAround:
@@ -1021,8 +1023,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "china-overview": {
+    // identity sources: 国家统计局《中华人民共和国2024年国民经济和社会发展统计公报》（2025-02-28 发布）：2024 年末全国人口 140828 万人。https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
+    //   原文「人口约14亿」数值仍成立，只是没有年份与来源。核实日 2026-09-07，来源级别 1
     identity:
-      "China covers about as much land as the whole of Europe and has a population of roughly 1.4 billion, one of the largest in the world. The land is broadly high in the west and low in the east: the west is the Tibetan Plateau plus large mountain and desert country, thinly populated; the east is plains, hills and great rivers, where most of the people and big cities are. It has thousands of years of continuous written history; dialects vary widely, but Mandarin is the common language.",
+      "China covers about as much land as the whole of Europe and has a population of about 1.408 billion at the end of 2024 (National Bureau of Statistics of China), one of the largest in the world. The land is broadly high in the west and low in the east: the west is the Tibetan Plateau plus large mountain and desert country, thinly populated; the east is plains, hills and great rivers, where most of the people and big cities are. It has thousands of years of continuous written history; dialects vary widely, but Mandarin is the common language.",
     layout:
       "China divides roughly into a few blocks: the eastern coastal city belt (the Beijing–Shanghai–Guangzhou–Shenzhen line, the centre of the economy and population); the North China Plain and Yellow River basin (the heartland of early Chinese civilisation); the Yangtze basin (from the Sichuan Basin down to the lower Yangtze — dense population, rich land); the mountainous southwest (the Yunnan–Guizhou Plateau and Hengduan ranges, many ethnic groups and mountain landscapes); and the vast west (the Tibetan Plateau, and the basins and deserts of Xinjiang). The capital is Beijing; the largest economic centre is Shanghai.",
     gettingAround:
@@ -1364,8 +1368,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "japan-overview": {
+    // identity sources: 総務省統計局 令和7年国勢調査 人口速報集計結果：2025-10-01 时点总人口 123,049,524 人（含在住外国人）。https://www.soumu.go.jp/menu_news/s-news/01toukei03_01000140.html
+    //   英文原文写的是 125 million，比实际高出约 200 万；中文「约1.2亿」数值成立但缺年份。核实日 2026-09-07，来源级别 1
     identity:
-      "Japan is an island country on the western edge of the Pacific, made up of the four large islands of Honshu, Hokkaido, Kyushu and Shikoku and thousands of smaller ones, with a population of about 125 million, most of it concentrated in a few metropolitan areas on the Pacific side of Honshu. The archipelago sits on a plate boundary and is mountainous, with many volcanoes, earthquakes and hot springs, and a very high forest cover.",
+      "Japan is an island country on the western edge of the Pacific, made up of the four large islands of Honshu, Hokkaido, Kyushu and Shikoku and thousands of smaller ones, with a population of about 123 million in the 2025 national census (Statistics Bureau of Japan), most of it concentrated in a few metropolitan areas on the Pacific side of Honshu. The archipelago sits on a plate boundary and is mountainous, with many volcanoes, earthquakes and hot springs, and a very high forest cover.",
     layout:
       "Japan can be divided roughly into sections: Hokkaido (high-latitude, sparsely settled, cool summers and snowy winters); Honshu (the largest island, with the Tokyo, Nagoya and Kyoto–Osaka–Kobe metropolitan areas along the Pacific side, and the 3,000 m Japanese Alps down the centre dividing the climate into a Pacific side and a Sea of Japan side); Shikoku (smaller, mostly the Inland Sea and mountains); Kyushu (concentrated volcanoes and hot springs, with Fukuoka as the gateway); and the southernmost Nansei Islands (subtropical, coral reefs, with Naha as the centre).",
     gettingAround:
@@ -2093,8 +2099,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "new-zealand-overview": {
+    // identity sources: Stats NZ《National population estimates: At 31 December 2025》：估计常住人口 5,342,000 人（临时值）。https://www.stats.govt.nz/information-releases/national-population-estimates-at-31-december-2025/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "New Zealand lies in the south-west Pacific, made up of the North Island, the South Island and some smaller islands, with a population of about 5.3 million, most of it on the North Island. In Māori the country is called Aotearoa (\"land of the long white cloud\"). The official languages are English, Māori and New Zealand Sign Language. It sits on a plate boundary — mountainous, with volcanoes, geothermal areas and earthquakes — and faces Australia across the Tasman Sea.",
+      "New Zealand lies in the south-west Pacific, made up of the North Island, the South Island and some smaller islands, with an estimated resident population of about 5.34 million at the end of 2025, provisional (Stats NZ), most of it on the North Island. In Māori the country is called Aotearoa (\"land of the long white cloud\"). The official languages are English, Māori and New Zealand Sign Language. It sits on a plate boundary — mountainous, with volcanoes, geothermal areas and earthquakes — and faces Australia across the Tasman Sea.",
     layout:
       "The North Island is comparatively gentle, with large areas of pasture, the central volcanic plateau (Ruapehu, Lake Taupō) and the geothermal country around Rotorua; the largest city, Auckland, and the capital, Wellington, are both here. The South Island is split lengthwise by the Southern Alps, with fiords and glaciers on the west, the Canterbury Plains on the east, the largest city being Christchurch, and Queenstown as the tourism centre of the south. Cook Strait separates the islands, with a car ferry across it.",
     gettingAround:
@@ -2320,8 +2328,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "usa-overview": {
+    // identity sources: U.S. Census Bureau Vintage 2025 National Population Estimates：2025-07-01 估计人口 341,784,857 人。https://www.census.gov/newsroom/press-releases/2026/population-growth-slows.html
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The United States is a federal republic across central North America — 48 contiguous states plus Alaska and Hawaii, with a population of about 340 million. From east to west the land runs roughly: the Appalachian mountains, the interior Great Plains, the Rocky Mountains, the intermontane plateaus and basins, and the Pacific coast ranges. The climate spans subtropical to subarctic, rainforest to desert. English is used almost everywhere; Spanish is widespread in the Southwest.",
+      "The United States is a federal republic across central North America — 48 contiguous states plus Alaska and Hawaii, with a population of about 341.8 million as of July 2025 (U.S. Census Bureau). From east to west the land runs roughly: the Appalachian mountains, the interior Great Plains, the Rocky Mountains, the intermontane plateaus and basins, and the Pacific coast ranges. The climate spans subtropical to subarctic, rainforest to desert. English is used almost everywhere; Spanish is widespread in the Southwest.",
     layout:
       "It helps to think of the country in regions: the Northeast (the dense city belt from New York to Washington); the South (Florida and the Gulf coast, warm and humid); the Midwest (the farm and industrial belt around the Great Lakes and the plains, with Chicago as the hub); the Mountain West (the Rockies, Denver, Utah); the Southwest (arid, Las Vegas, the Grand Canyon); and the West Coast (California and the Pacific Northwest). Crossing the country by car takes several days; long trips are almost always flown.",
     gettingAround:
@@ -2703,8 +2713,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "canada-overview": {
+    // identity sources: Statistics Canada《The Daily — Canada's population estimates: Age and gender, July 1, 2025》：41,651,653 人。https://www150.statcan.gc.ca/n1/daily-quotidien/250924/dq250924a-eng.htm
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Canada is the world's second-largest country, spanning northern North America from the Atlantic to the Pacific and up to the Arctic Ocean, with a population of about 40 million — most of it in a narrow southern belt not far from the US border. The official languages are English and French (French mainly in Quebec). From east to west the land runs roughly: the old low mountains of the Atlantic coast, the St Lawrence valley, the Canadian Shield covering most of the country, the interior prairies, the Rockies and the western ranges, and the Coast Mountains on the Pacific; to the north are vast tundra and the Arctic islands.",
+      "Canada is the world's second-largest country, spanning northern North America from the Atlantic to the Pacific and up to the Arctic Ocean, with a population of about 41.65 million as of July 2025 (Statistics Canada) — most of it in a narrow southern belt not far from the US border. The official languages are English and French (French mainly in Quebec). From east to west the land runs roughly: the old low mountains of the Atlantic coast, the St Lawrence valley, the Canadian Shield covering most of the country, the interior prairies, the Rockies and the western ranges, and the Coast Mountains on the Pacific; to the north are vast tundra and the Arctic islands.",
     layout:
       "It helps to divide Canada into regions: Atlantic Canada (Newfoundland, Nova Scotia and others — fishing and coast); Central Canada (Ontario and Quebec, the population and economic core, with Toronto, Montreal, Ottawa and Quebec City); the Prairie provinces (Manitoba, Saskatchewan, Alberta — wheat and oil, with Calgary, Edmonton and Winnipeg); the West Coast (British Columbia, Vancouver, between mountains and sea); and the thinly peopled northern territories. Distances between cities are huge, and crossing the country is almost always done by air.",
     gettingAround:
@@ -3070,8 +3082,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "uk-overview": {
+    // identity sources: ONS《Provisional population estimate for the UK: mid-2025》：2025-06-30 临时估计 69,487,000 人。https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/provisionalpopulationestimatefortheuk/mid2025
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The United Kingdom — in full, the United Kingdom of Great Britain and Northern Ireland — is made up of England, Scotland, Wales and Northern Ireland, with a population of about 68 million. The main body is the island of Great Britain, plus Northern Ireland in the north-east of the island of Ireland. The land is broadly high in the north-west and low in the south-east: the mountains and uplands are in Scotland, Wales, northern England and the south-west, all long-eroded old hills; the south-east is low, gentle hills and plains. It is surrounded by sea, and nowhere is more than about 120 km from the coast.",
+      "The United Kingdom — in full, the United Kingdom of Great Britain and Northern Ireland — is made up of England, Scotland, Wales and Northern Ireland, with a provisional mid-2025 population estimate of about 69.5 million (Office for National Statistics). The main body is the island of Great Britain, plus Northern Ireland in the north-east of the island of Ireland. The land is broadly high in the north-west and low in the south-east: the mountains and uplands are in Scotland, Wales, northern England and the south-west, all long-eroded old hills; the south-east is low, gentle hills and plains. It is surrounded by sea, and nowhere is more than about 120 km from the coast.",
     layout:
       "It helps to divide the UK into: Southern England (London, the southern hills, the south-west peninsula); the Midlands (the industrial cities around Birmingham); Northern England (Manchester, Liverpool, York, and the Lake District and the Pennines); Scotland (Edinburgh and Glasgow in the Central Belt, the Highlands to the north); Wales (Cardiff in the south, mountains in the mid and north); and Northern Ireland (Belfast). The country is small, and trains are often more convenient than flights between cities — flying is mainly for northern Scotland, Northern Ireland and some islands.",
     gettingAround:
@@ -3439,8 +3453,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "iceland-overview": {
+    // identity sources: Hagstofa Íslands《Mannfjöldinn 1. janúar 2025》：389,444 人。https://hagstofa.is/utgafur/frettasafn/mannfjoldi/mannfjoldinn-1-januar-2025/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Iceland is an island nation in the North Atlantic, about 100,000 sq km, with a population of about 390,000 — the least densely populated country in Europe, with over 60% living in the capital area. It sits exactly on the Mid-Atlantic Ridge, where the North American and Eurasian plates pull apart, and over a mantle hotspot, so volcanism and geothermal activity are intense: about thirty active volcanic systems, with geysers, hot springs and lava fields everywhere. At the same time about a tenth of the country is under ice, giving a landscape of 'fire and ice' together.",
+      "Iceland is an island nation in the North Atlantic, about 100,000 sq km, with a population of about 389,000 as of January 2025 (Statistics Iceland) — the least densely populated country in Europe, with over 60% living in the capital area. It sits exactly on the Mid-Atlantic Ridge, where the North American and Eurasian plates pull apart, and over a mantle hotspot, so volcanism and geothermal activity are intense: about thirty active volcanic systems, with geysers, hot springs and lava fields everywhere. At the same time about a tenth of the country is under ice, giving a landscape of 'fire and ice' together.",
     layout:
       "The centre of Iceland is an uninhabitable highland desert and ice cap, and people and roads are concentrated in a ring around the coast. Route 1, the Ring Road, is about 1,330 km and links most towns and sights. The south-west has the capital area and the geothermal belt; the south coast has waterfalls, black beaches and glacier tongues; the south-east has Vatnajökull, the largest glacier in Europe, and a glacier lagoon; the east and north are fjords and farmland; the north-western Westfjords are the most remote.",
     gettingAround:
@@ -3598,8 +3614,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "switzerland-overview": {
+    // identity sources: BFS《Bestand und Entwicklung der Bevölkerung der Schweiz im Jahr 2025: Definitive Ergebnisse》：2025 年末常住人口 9,127,100 人。https://www.bfs.admin.ch/news/de/2026-0167
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Switzerland is a landlocked federal country in central Europe, about 41,000 sq km, with a population of about 8.8 million, made up of 26 cantons. It has four official languages: German (about 60%), French (about 20%, in the west), Italian (about 10%, in the southern canton of Ticino) and Romansh (in parts of Graubünden). The land is a belt of hills and lakes in the middle (the Mittelland), with the Jura Mountains to the north-west and the Alps — covering 60% of the country — to the south and east.",
+      "Switzerland is a landlocked federal country in central Europe, about 41,000 sq km, with a permanent resident population of about 9.13 million at the end of 2025 (Swiss Federal Statistical Office), made up of 26 cantons. It has four official languages: German (about 60%), French (about 20%, in the west), Italian (about 10%, in the southern canton of Ticino) and Romansh (in parts of Graubünden). The land is a belt of hills and lakes in the middle (the Mittelland), with the Jura Mountains to the north-west and the Alps — covering 60% of the country — to the south and east.",
     layout:
       "The population and cities are mainly on the central plateau, strung from Lake Geneva to Lake Constance: Geneva and Lausanne (French-speaking), Bern (the capital), Basel (on the tri-border), Zürich, Lucerne. South into the mountains are the Alpine valleys — the Bernese Oberland (Interlaken, the Jungfrau), the Rhône valley in Valais (Zermatt, the Matterhorn), the Engadin in Graubünden (St. Moritz). Over the main Alpine crest, the southern slope is Italian-speaking, mild-climate Ticino (Lugano).",
     gettingAround:
@@ -3793,8 +3811,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "norway-overview": {
+    // identity sources: SSB Folketall：2025-09-30 人口 5,618,400 人。https://www.ssb.no/befolkning/folketall
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Norway is a country in western Scandinavia, about 320,000 sq km (not counting Svalbard and other dependencies), with a population of about 5.5 million. It stretches about 1,750 km north to south, with an extremely broken coastline of countless fjords and islands. The land is mostly mountains and plateaus: an old range worn by ice (the Scandinavian Mountains, shared with Sweden) runs up the east, and the western side is cut into deep fjords reaching inland. Because of the warm North Atlantic current, Norway's winters are far milder than at similar latitudes elsewhere.",
+      "Norway is a country in western Scandinavia, about 320,000 sq km (not counting Svalbard and other dependencies), with a population of about 5.62 million as of September 2025 (Statistics Norway). It stretches about 1,750 km north to south, with an extremely broken coastline of countless fjords and islands. The land is mostly mountains and plateaus: an old range worn by ice (the Scandinavian Mountains, shared with Sweden) runs up the east, and the western side is cut into deep fjords reaching inland. Because of the warm North Atlantic current, Norway's winters are far milder than at similar latitudes elsewhere.",
     layout:
       "The population is concentrated in the southern half: the east (the lowlands and valleys around Oslo, nearly half the country's people), the southern coast (Kristiansand), the western fjord region (Bergen, Stavanger, Ålesund — mountains meeting sea, and wet), and central Trøndelag (Trondheim). The further north, the fewer people: northern Norway (Bodø, Narvik, the Lofoten Islands), and 'Arctic Norway' north of the Arctic Circle (Tromsø, Alta), the place for the northern lights and the midnight sun, and an area where the Sámi (Sápmi) have traditionally herded reindeer.",
     gettingAround:
@@ -4006,8 +4026,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "france-overview": {
+    // identity sources: INSEE《Bilan démographique 2025》Insee Première n° 2087：2025-01-01 约 68.6 百万（含本土与五个海外省；INSEE 本身即按百万级公布）。https://www.insee.fr/fr/statistiques/8719824
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Metropolitan France covers about 550,000 sq km with a population of about 68 million, the largest country by area in Western Europe. The land is very varied: the north-west and west are old, low blocks (the Armorican Massif) and coastal plains; the centre-south is the Massif Central (extinct volcanoes and plateaus); the south-east and south have the young, high Alps and Pyrenees; in between are the two big sedimentary basins, the Paris Basin and the Aquitaine Basin. On the Mediterranean is Corsica — a mountainous island. Travel mode covers only metropolitan France and Corsica, not the overseas departments and territories.",
+      "Metropolitan France covers about 550,000 sq km with a population of about 68.6 million as of January 2025, including the five overseas departments (INSEE), the largest country by area in Western Europe. The land is very varied: the north-west and west are old, low blocks (the Armorican Massif) and coastal plains; the centre-south is the Massif Central (extinct volcanoes and plateaus); the south-east and south have the young, high Alps and Pyrenees; in between are the two big sedimentary basins, the Paris Basin and the Aquitaine Basin. On the Mediterranean is Corsica — a mountainous island. Travel mode covers only metropolitan France and Corsica, not the overseas departments and territories.",
     layout:
       "It helps to divide France into: the Paris region (the capital and surroundings), the north (the plains around Lille), Alsace (Strasbourg, the Rhine valley, a historically Franco-German border area), Rhône-Alpes (Lyon, Grenoble, toward the high Alps), Provence (Marseille, Nice, the Mediterranean coast), the south-west (Toulouse, Bordeaux, the Pyrenees and wine country), the west (Nantes, the Loire estuary), and the island of Corsica.",
     gettingAround:
@@ -4323,8 +4345,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "italy-overview": {
+    // identity sources: ISTAT《Bilancio demografico mensile gennaio-dicembre 2025》：2025-12-31 常住人口 58,942,828 人。https://www.istat.it/notizia/bilancio-demografico-mensile-gennaio-dicembre-2025/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Italy is a peninsular country in southern Europe, its mainland shaped like a boot reaching into the Mediterranean, plus the two large islands of Sicily and Sardinia, about 300,000 sq km with a population of about 59 million. The land is mostly mountains and hills: the young, high Alps in the north (bordering France, Switzerland and Austria), the Apennines running like a spine down the whole peninsula, large old hill country in the centre (Tuscany and others), the Po Valley in the north — the country's largest continuous plain — and an active volcanic belt in the south, Sicily and the Campi Flegrei area.",
+      "Italy is a peninsular country in southern Europe, its mainland shaped like a boot reaching into the Mediterranean, plus the two large islands of Sicily and Sardinia, about 300,000 sq km with a resident population of about 58.9 million at the end of 2025 (ISTAT). The land is mostly mountains and hills: the young, high Alps in the north (bordering France, Switzerland and Austria), the Apennines running like a spine down the whole peninsula, large old hill country in the centre (Tuscany and others), the Po Valley in the north — the country's largest continuous plain — and an active volcanic belt in the south, Sicily and the Campi Flegrei area.",
     layout:
       "It helps to divide Italy into: the centre (Rome, Florence — the core of classical antiquity and the Renaissance), the north-west (Milan, Turin — the financial and industrial centre, near the Alps), the north-east (Venice, Bologna — the Venetian Lagoon and the Dolomites), the south (Naples, Bari — Mount Vesuvius and the olive groves of Puglia), Sicily (Palermo, Catania — Mount Etna, Europe's highest active volcano), and Sardinia (Cagliari — one of the oldest landmasses in the Mediterranean).",
     gettingAround:
@@ -4640,8 +4664,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "spain-overview": {
+    // identity sources: INE《Estadística Continua de Población (ECP), 1 de enero de 2025, datos provisionales》：49,128,297 人。https://www.ine.es/dyngs/Prensa/ECP4T24.htm
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Spain occupies about four-fifths of the Iberian Peninsula and also includes the Balearic Islands in the Mediterranean and the Canary Islands in the Atlantic; mainland area is about 500,000 km², population about 48 million. The terrain is dominated by plateau and mountains — the Meseta plateau covers nearly half the country in the centre, ringed by younger or older ranges such as the Pyrenees, the Cantabrian Mountains and the Sierra Nevada, with a long coastline that spans both Atlantic and Mediterranean climates.",
+      "Spain occupies about four-fifths of the Iberian Peninsula and also includes the Balearic Islands in the Mediterranean and the Canary Islands in the Atlantic; mainland area is about 500,000 km², population about 49.1 million as of January 2025 (INE). The terrain is dominated by plateau and mountains — the Meseta plateau covers nearly half the country in the centre, ringed by younger or older ranges such as the Pyrenees, the Cantabrian Mountains and the Sierra Nevada, with a long coastline that spans both Atlantic and Mediterranean climates.",
     layout:
       "Roughly: the centre (Madrid on the Meseta plateau, the historical and administrative core); north-east Catalonia (Barcelona, a major Mediterranean economic hub); southern Andalusia (Seville, Granada, Málaga — Moorish heritage and the Costa del Sol); the eastern Mediterranean coast (Valencia, rice and citrus country); the north (Bilbao, San Sebastián — Basque Country and the green Cantabrian coast); north-western Galicia (Santiago de Compostela, the end of the pilgrimage route); and two offshore island groups — the Balearics (Palma) and the volcanic Canary Islands in the Atlantic, mild year-round.",
     gettingAround:
@@ -4957,8 +4983,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "germany-overview": {
+    // identity sources: Destatis Pressemitteilung Nr. 221/2025《Bevölkerung Deutschlands wächst im Jahr 2024 geringfügig um 0,1 %》：2024 年末约 83.6 百万（基于 2022 年人口普查推算）。https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/06/PD25_221_124.html
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Germany, in Central Europe, covers about 358,000 km² with a population of about 84 million, one of Europe's most populous countries. The terrain rises gradually from north to south — a lowland plain in the north shaped by Quaternary glaciation, a belt of old low mountains and hills in the centre, and the Bavarian Alps in the south, home to Germany's highest point, the Zugspitze (2,962 m).",
+      "Germany, in Central Europe, covers about 358,000 km² with a population of about 83.6 million at the end of 2024 (Destatis), one of Europe's most populous countries. The terrain rises gradually from north to south — a lowland plain in the north shaped by Quaternary glaciation, a belt of old low mountains and hills in the centre, and the Bavarian Alps in the south, home to Germany's highest point, the Zugspitze (2,962 m).",
     layout:
       "Roughly: Berlin (the capital, on the north-eastern plain); Bavaria (Munich, Nuremberg — the Alps and traditional beer culture); the north (Hamburg — port city on the North Sea and Baltic coasts); the west (Cologne, Trier — the Rhine and Moselle valleys); the centre (Frankfurt — the financial hub); the east (Dresden — the Elbe and the sandstone landforms of Saxon Switzerland); the south-west (Freiburg, Heidelberg — the Black Forest and the Neckar valley); the north-east (Stralsund — the Baltic coast and Rügen).",
     gettingAround:
@@ -5274,8 +5302,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "greece-overview": {
+    // identity sources: ΕΛΣΤΑΤ《Στοιχεία Εκτιμώμενου Πληθυσμού (1.1.2025)》：10,372,335 人。https://www.statistics.gr/documents/20181/3cdc6530-6451-1ed1-d866-bbfb5eeb3e1f
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Greece occupies the southern tip of the Balkan Peninsula in south-eastern Europe, covering about 132,000 km² with a population of roughly 10.4 million. About 80% of the country is mountainous, with the Pindus range running the length of the western mainland; the coast is scattered with some 6,000 islands and islets, of which about 227 are inhabited, giving Greece an unusually long and intricate coastline.",
+      "Greece occupies the southern tip of the Balkan Peninsula in south-eastern Europe, covering about 132,000 km² with an estimated resident population of about 10.37 million as of January 2025 (ELSTAT). About 80% of the country is mountainous, with the Pindus range running the length of the western mainland; the coast is scattered with some 6,000 islands and islets, of which about 227 are inhabited, giving Greece an unusually long and intricate coastline.",
     layout:
       "Broadly divided into: Attica (Athens, the capital and largest city), Macedonia (Thessaloniki, Greece's second city), Thessaly (Volos, home to Meteora), Epirus (Ioannina, gateway to the Pindus mountains), the Peloponnese (Nafplio and Kalamata, dense with classical sites), Crete (Heraklion and Chania, Greece's largest island), the Ionian Islands (Corfu), and the Aegean Islands (Rhodes, Santorini and others).",
     gettingAround:
@@ -5574,8 +5604,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "portugal-overview": {
+    // identity sources: INE Portugal《Estimativas de População Residente 2025》：2025-12-31 常住人口 11,424,031 人（首次完全基于行政登记数据）。https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_destaques&DESTAQUESdest_boui=770295679&DESTAQUESmodo=2&xlang=pt
+    //   本批偏差最大的一条：原文约 1030 万，实际已达 1142 万（2021 年以来移民持续流入），差约 11%。核实日 2026-09-07，来源级别 1
     identity:
-      "Portugal is the westernmost country on the European mainland, on the western side of the Iberian Peninsula, about 92,000 sq km (excluding the overseas autonomous regions) with a population of about 10.3 million; including the Atlantic autonomous regions of Madeira and the Azores, the total area is about 93,000 sq km. The land is higher in the north and lower in the south: the north and centre are mountainous and hilly, with rivers such as the Douro and Mondego cutting north-east to south-west through old crystalline plateau rock; the south (Alentejo) is a broad rolling plain; the south-western tip (the Algarve) is a limestone coast. Travel mode covers mainland Portugal plus the overseas autonomous regions of Madeira and the Azores.",
+      "Portugal is the westernmost country on the European mainland, on the western side of the Iberian Peninsula, about 92,000 sq km (excluding the overseas autonomous regions) with an estimated resident population of about 11.4 million at the end of 2025 (Statistics Portugal); including the Atlantic autonomous regions of Madeira and the Azores, the total area is about 93,000 sq km. The land is higher in the north and lower in the south: the north and centre are mountainous and hilly, with rivers such as the Douro and Mondego cutting north-east to south-west through old crystalline plateau rock; the south (Alentejo) is a broad rolling plain; the south-western tip (the Algarve) is a limestone coast. Travel mode covers mainland Portugal plus the overseas autonomous regions of Madeira and the Azores.",
     layout:
       "It helps to divide Portugal into: the Lisbon region (the capital and surroundings, including Sintra); the north (Porto, Braga, Guimarães, and the Douro Valley wine region); the centre (Coimbra, its university and the Mondego); the Alentejo (Évora, oak savanna and wine); the Algarve (Faro, the southern coastal resort region); and, in the Atlantic, the Madeira and Azores archipelagos.",
     gettingAround:
@@ -5875,8 +5907,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Belgium ============
   "belgium-overview": {
+    // identity sources: Statbel《België telde 11.825.551 inwoners op 1 januari 2025》：11,825,551 人。https://statbel.fgov.be/nl/nieuws/belgie-telde-11825551-inwoners-op-1-januari-2025
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Belgium sits in Western Europe, covering about 30,500 km² with a population of roughly 11.6 million. It hosts the headquarters of both the EU and NATO. The terrain rises gradually from the north-western coastal plain to the south-eastern Ardennes uplands; the country has three official languages — Dutch (Flemish), French and German — and three regions: Flanders, Wallonia and the Brussels-Capital Region.",
+      "Belgium sits in Western Europe, covering about 30,500 km² with a population of about 11.83 million as of January 2025 (Statbel). It hosts the headquarters of both the EU and NATO. The terrain rises gradually from the north-western coastal plain to the south-eastern Ardennes uplands; the country has three official languages — Dutch (Flemish), French and German — and three regions: Flanders, Wallonia and the Brussels-Capital Region.",
     layout:
       "Broadly divided into: Brussels-Capital Region (the capital, home to the EU institutions), Antwerp Province (Antwerp, a port and diamond-trading centre), West Flanders (Bruges and Ostend, historic towns and seaside resorts), East Flanders (Ghent), Flemish Brabant (Leuven, a university town), Liège Province (Liège and Spa), Namur Province (Namur and Dinant, in the Meuse Valley), and Hainaut (Mons).",
     gettingAround:
@@ -6089,8 +6123,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Netherlands ============
   "netherlands-overview": {
+    // identity sources: CBS《Bevolkingsgroei in eerste helft 2025 ongeveer gelijk aan vorig jaar》：2025-06-30 约 18.08 百万。https://www.cbs.nl/nl-nl/nieuws/2025/31/bevolkingsgroei-in-eerste-helft-2025-ongeveer-gelijk-aan-vorig-jaar
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The Netherlands is an extremely low-lying country in Western Europe, about 42,000 sq km with a population of about 18 million; more than a quarter of the country is below sea level, and even the national high point, Vaalserberg, is only 322.7 m. This is a country that has dealt with the sea and water for centuries — reclaiming land and building dikes is a tradition running through hundreds of years of history, and the Dutch name for the country itself carries the meaning 'low land'.",
+      "The Netherlands is an extremely low-lying country in Western Europe, about 42,000 sq km with a population of about 18.08 million as of mid-2025 (Statistics Netherlands); more than a quarter of the country is below sea level, and even the national high point, Vaalserberg, is only 322.7 m. This is a country that has dealt with the sea and water for centuries — reclaiming land and building dikes is a tradition running through hundreds of years of history, and the Dutch name for the country itself carries the meaning 'low land'.",
     layout:
       "It helps to divide the Netherlands into: North Holland (Amsterdam and surroundings, the dune coast); South Holland (Rotterdam, The Hague — the port and political centre); Utrecht province (the central rail hub); Limburg (Maastricht, the only province with pronounced relief); Groningen and Friesland (the north, near the Wadden Sea); and Overijssel (the historic Hanseatic town on the IJssel).",
     gettingAround:
@@ -6390,8 +6426,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Austria ============
   "austria-overview": {
+    // identity sources: Statistik Austria《Bevölkerungsstand 1. Jänner 2025》：9,198,214 人。https://www.statistik.at/fileadmin/announcement/2025/02/20250211Bevoelkerung1.1.2025.pdf
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Austria sits in Central Europe, covering about 84,000 km² with a population of roughly 9 million. It is a landlocked country, with about 62% of its territory covered by the Alps. The capital, Vienna, was once the seat of the Austro-Hungarian Empire under the Habsburg dynasty and still carries a deep classical-music and coffeehouse tradition.",
+      "Austria sits in Central Europe, covering about 84,000 km² with a population of about 9.2 million as of January 2025 (Statistics Austria). It is a landlocked country, with about 62% of its territory covered by the Alps. The capital, Vienna, was once the seat of the Austro-Hungarian Empire under the Habsburg dynasty and still carries a deep classical-music and coffeehouse tradition.",
     layout:
       "Broadly divided into: Vienna (the capital, in the Vienna Basin in the north-east), Tyrol (Innsbruck, an Alpine ski hub), Salzburg state (Salzburg, Mozart's birthplace and gateway to the Salzkammergut lake district), Upper Austria (Linz, an industrial and cultural city on the Danube), Carinthia (Klagenfurt and Villach, the southern lake district), Styria (Graz, Austria's second city), and Vorarlberg (Bregenz, the western exclave on Lake Constance).",
     gettingAround:

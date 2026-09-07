@@ -6,11 +6,44 @@
   "descriptionEn": "Kherlen River · Eastern Steppe",
   "depCountry": "mongolia",
   "arrCountry": "mongolia",
-  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0809", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "COQ", "durationMin": 75 },
+  "flight": {
+    "airline": "成吉思航空",
+    "airlineEn": "Chingis Airlines",
+    "flightNo": "M0809",
+    "aircraft": "ATR 72-600",
+    "depIata": "UBN",
+    "arrIata": "COQ",
+    "durationMin": 75
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
-    { "kind": "terrain", "terrainId": "kherlen-river" },
-    { "kind": "city", "id": "coq", "name": "乔巴山", "nameEn": "Choibalsan", "lat": 48.0967, "lon": 114.5539, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ubn",
+      "name": "乌兰巴托",
+      "nameEn": "Ulaanbaatar",
+      "lat": 47.6467,
+      "lon": 106.8161,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kherlen-river"
+    },
+    {
+      "kind": "city",
+      "id": "coq",
+      "name": "乔巴山",
+      "nameEn": "Choibalsan",
+      "lat": 48.0967,
+      "lon": 114.5539,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightsfrom.com/UBN-COQ",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**已改正**：同上。这条线的承运历史尤其不稳：Hunnu Air 曾开通但 2021 年停飞；MIAT 是否仍在飞查不清（一处资料称最后一班在 2024-12，另一处 MIAT 官方说国内网络覆盖乔巴山所在的东方省，互相矛盾）。**2026 年 3 月新成立的 Chingis Airlines 用 ATR 72-600 开始运营国内线**，聚合数据显示其提供 UBN–COQ 不经停航班。来源级别 3；**查明有误**：**承运人已能确认（成吉思航空 ATR 72-600），但具体航班号核实不到** —— 子代理未能打开聚合页确认号码，也没有第二来源。按红线不写死一个航班号。承运人与机型已更新，但航班信息不对外显示，直到拿到可核实的航班号。来源级别 3"
+  }
 }

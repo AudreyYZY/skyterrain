@@ -9,8 +9,8 @@
   "flight": {
     "airline": "新西兰航空",
     "airlineEn": "Air New Zealand",
-    "flightNo": "NZ541",
-    "aircraft": "ATR 72-600",
+    "flightNo": "NZ327",
+    "aircraft": "Airbus A320",
     "depIata": "WLG",
     "arrIata": "CHC",
     "durationMin": 50
@@ -50,5 +50,10 @@
       "lon": 172.532,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://en.airnavradar.com/data/flights/NZ327",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**NZ541 实际执飞的是奥克兰—基督城(AKL→CHC)**。惠灵顿—基督城真实在飞的是 NZ327/NZ1205 等，机型是**主线 A320**（记录到 ZK-OXM、ZK-OAB 等 A320-232 机尾号），不是涡桨支线机。我提的「第二繁忙干线不该用涡桨机」这个怀疑成立。来源级别 3"
+  }
 }

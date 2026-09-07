@@ -1716,76 +1716,8 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "aey-egs": {
-    study: {
-    "zh-CN":
-      "阿克雷里飞埃伊尔斯塔济，是一趟很短的北方支线，用小型螺旋桨飞机，低空飞过冰岛最活跃的火山区之一。起飞后往东，很快就到米湖——一个浅浅的湖，湖里和湖边全是各种形状的火山地貌：假火山口、熔岩柱林、还在冒汽的地热田。" +
-      "米湖东边紧挨着克拉夫拉火山：一片破火山口和裂隙喷发区，20 世纪 70–80 年代这里连续喷发了近十年，地面至今能看到还没长草的新黑熔岩和一个亮绿色的火口湖。" +
-      "过了这一带，地面转为东部的高地和河谷，埃伊尔斯塔济就在拉加尔湖畔。",
-    "en-US":
-      "Akureyri to Egilsstaðir is a short northern regional hop on a small propeller aircraft, flying low over one of the most active volcanic areas in Iceland. After take-off you head east and soon reach Mývatn — a shallow lake full of volcanic features of every shape: pseudocraters, lava pillars, and still-steaming geothermal fields around it." +
-      " Just east of Mývatn is the Krafla volcano: an area of caldera and fissure eruptions that erupted almost continuously for a decade in the 1970s–80s, and where you can still see fresh black lava with no grass yet and a bright green crater lake." +
-      " Past this area the land becomes the eastern highland and valleys, and Egilsstaðir is on Lagarfljót.",
-    },
-    travel: {
-    "zh-CN":
-      "阿克雷里到埃伊尔斯塔济飞约 30 分钟，由 Norlandair 用小飞机执飞、班次少。自驾走环岛北段约 2.5 小时（沿途上帝瀑布、米湖、黛提瀑布，值得慢慢开）。" +
-      "米湖一带夏季有大量小咬人的蠓虫，带头网和驱虫液。地热区严格走步道，地表薄、烫。" +
-      "冬季这条线路况差、航班少，多数人夏季来、自驾串米湖和黛提瀑布。",
-    "en-US":
-      "Akureyri to Egilsstaðir is about 30 minutes, flown by Norlandair on a small aircraft with infrequent service. Driving the northern Ring Road is about 2.5 hours (with Goðafoss, Mývatn and Dettifoss on the way — worth taking slowly)." +
-      " The Mývatn area has swarms of biting midges in summer — take a head net and repellent. In geothermal areas stay strictly on the paths; the crust is thin and scalding." +
-      " In winter this route has poor road conditions and few flights, and most people come in summer and drive the Mývatn–Dettifoss stretch.",
-    },
-  },
 
-  "rkv-hzk": {
-    study: {
-    "zh-CN":
-      "雷克雅未克飞胡萨维克，从首都飞到北方的观鲸小镇，航路和飞阿克雷里的差不多，横穿冰岛中央那片人无法居住的高地。起飞后不久，脚下出现辛格维利尔的板块裂谷——北美与欧亚板块在这里被拉开，地面裂成一道道平行的沟壑，中间是冰岛最大的天然湖。" +
-      "往北进入中央高地：一片灰黑色的火山荒漠，几乎没有植被。航线掠过朗格冰原和位于冰岛正中心的霍夫斯冰原——两座圆盾形的冰帽，之间是熔岩、火山砾和冰川融水冲出的辫状河。这片高地夏季才有碎石路（F 公路）穿过，冬季完全封闭、无人居住。" +
-      "越过高地北缘，地面陷成一条条南北向的深谷和峡湾。胡萨维克就在斯基亚尔万迪湾东岸，一个背靠低山的小渔港，外海食物丰富，夏季常有座头鲸。",
-    "en-US":
-      "Reykjavík to Húsavík flies from the capital to the northern whale-watching town, on a track much like the one to Akureyri, crossing the central highland. After take-off you pass the plate rift at Þingvellir, then enter the volcanic desert." +
-      " The route passes Langjökull and Hofsjökull at the very centre of Iceland — two round, shield-shaped ice caps, with grey-black lava and volcanic gravel between them, almost lifeless. This highland has gravel roads (F-roads) only in summer and is completely closed in winter." +
-      " Over the northern edge of the highland the land drops into fjords, and Húsavík is on the eastern shore of Skjálfandi Bay, a small fishing town backed by low hills.",
-    },
-    travel: {
-    "zh-CN":
-      "雷克雅未克到胡萨维克飞约 45 分钟，由 Norlandair 执飞、班次少；多数人先飞或开车到阿克雷里，再开一小时到胡萨维克。" +
-      "胡萨维克被称作“欧洲观鲸之都”，6–8 月能稳定看到座头鲸。船上冷，带防风防水外套，晕船提前吃药。" +
-      "镇上还有 GeoSea 海崖温泉。往南可跑“钻石环线”：上帝瀑布、米湖、黛提瀑布、Ásbyrgi 峡谷。",
-    "en-US":
-      "Reykjavík to Húsavík is about 45 minutes, flown by Norlandair with infrequent service; most people fly or drive to Akureyri first and then drive an hour to Húsavík." +
-      " Húsavík is called the 'whale-watching capital of Europe', with reliable humpback sightings June–August. It is cold on the boat — bring a windproof, waterproof jacket, and take seasickness medication in advance." +
-      " The town also has the GeoSea cliff baths. South you can drive the 'Diamond Circle': Goðafoss, Mývatn, Dettifoss and the Ásbyrgi canyon.",
-    },
-  },
 
-  "zrh-lug": {
-    study: {
-    "zh-CN":
-      "苏黎世飞卢加诺，是一趟很短的航班，却把整条阿尔卑斯山脉从北到南横切了一遍，从德语区飞到意大利语区。起飞后先掠过苏黎世湖——一条冰川挖出、细长弯曲的湖，湖两岸是富裕的“黄金海岸”。" +
-      "往南很快到卢塞恩湖：一个形状极不规则、被陡峭山壁夹住的湖，瑞士联邦最早的几个州就在它周围。" +
-      "接着地面猛然升高，进入阿尔卑斯主脊：圣哥达山块是这里的关键——它是欧洲的一处分水岭，罗讷河、莱茵河、提契诺河都从这一带发源，历史上翻越圣哥达山口是连接南北欧的要道，如今山下有世界最长的铁路隧道（戈特哈德基线隧道，约 57 公里）。" +
-      "翻过主脊，气候和植被立刻变了：南坡是温暖湿润的提契诺，出现栗树和棕榈。马焦雷湖和卢加诺湖是几条伸进意大利的狭长湖，卢加诺就在湖湾里、两座锥形山之间。",
-    "en-US":
-      "Zürich to Lugano is a short flight that cuts across the whole Alpine chain from north to south, from the German-speaking region to the Italian-speaking one. After take-off you skim Lake Zürich — a long, curving lake gouged by a glacier, its shores the wealthy 'Gold Coast'." +
-      " South you soon reach Lake Lucerne: a very irregular lake hemmed in by steep walls, around which the first cantons of the Swiss confederation lay." +
-      " Then the ground rises sharply into the main Alpine crest, where the Gotthard Massif is key — a watershed of Europe, where the Rhône, the Rhine and the Ticino all rise, historically a vital pass between northern and southern Europe, and now with the world's longest rail tunnel (the Gotthard Base Tunnel, about 57 km) beneath it." +
-      " Over the crest the climate and vegetation change at once: the southern slope is warm, humid Ticino, with chestnut trees and palms. Lake Maggiore and Lake Lugano are long lakes reaching into Italy, and Lugano is in a bend of its lake between two conical mountains.",
-    },
-    travel: {
-    "zh-CN":
-      "苏黎世到卢加诺飞约 40 分钟，同一时区、同一国家。其实瑞士几乎没有国内定期航班——火车太方便了：经戈特哈德基线隧道约 2 小时，票价通常比飞机划算，而且风景（走老山线的 Gotthard Panorama Express）好得多。" +
-      "卢加诺说意大利语、气候温和，是瑞士难得能晒太阳吃意面看棕榈的地方，常作为翻越阿尔卑斯的南端落脚点。" +
-      "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Zürich to Lugano is about 40 minutes, same time zone, same country. In fact Switzerland has almost no scheduled domestic flights — the train is so convenient: about 2 hours through the Gotthard Base Tunnel, usually cheaper than flying, and with far better scenery on the old mountain line (the Gotthard Panorama Express)." +
-      " Lugano is Italian-speaking and mild, the rare place in Switzerland to sit in the sun, eat pasta and see palm trees, and a good southern base after crossing the Alps." +
-      " Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "zrh-gva": {
     study: {
@@ -1810,30 +1742,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "gva-lug": {
-    study: {
-    "zh-CN":
-      "日内瓦飞卢加诺，从瑞士最西南飞到最东南，几乎全程贴着阿尔卑斯主脊飞，是这几条线里景观最壮的一条。起飞后沿日内瓦湖北岸——湖边是拉沃的梯田葡萄园，一层层石墙从水边爬到山上。" +
-      "往东进山，脚下是伯尔尼阿尔卑斯：少女峰、僧侣峰、艾格峰一列雪峰，山谷里挂满瀑布（劳特布龙嫩谷）。" +
-      "再往东是阿莱奇冰川——阿尔卑斯最长的冰川，约 20 公里长，三条粒雪流在“康科迪亚广场”汇成一条宽阔的冰河，缓缓向南流。" +
-      "越过圣哥达山块（欧洲的分水岭、戈特哈德基线隧道所在），气候突然转暖，进入说意大利语的提契诺，栗树和棕榈出现，卢加诺就在一个伸向意大利的狭长湖畔。",
-    "en-US":
-      "Geneva to Lugano flies from the far south-west of Switzerland to the far south-east, almost entirely along the main Alpine crest — the most spectacular of these routes. After take-off you follow the north shore of Lake Geneva, lined by the terraced Lavaux vineyards, their stone walls climbing from the water up the hillside." +
-      " East into the mountains, below are the Bernese Alps: the Jungfrau, the Mönch and the Eiger in a row of snow peaks, with waterfalls hanging in the valleys (the Lauterbrunnen valley)." +
-      " Farther east is the Aletsch Glacier — the longest glacier in the Alps, about 20 km, where three firn streams meet at 'Konkordiaplatz' to form one broad river of ice flowing slowly south." +
-      " Over the Gotthard Massif (a watershed of Europe, and the site of the Gotthard Base Tunnel) the climate suddenly warms into Italian-speaking Ticino, with chestnut trees and palms, and Lugano lies on a long lake reaching toward Italy.",
-    },
-    travel: {
-    "zh-CN":
-      "日内瓦到卢加诺飞约 50 分钟，同一时区。火车走这条线要换乘、约 5 小时，所以这条是瑞士少数有点意义的国内航线。" +
-      "从法语区飞到意大利语区，气候和气质都变了：卢加诺温和、松弛、更“意式”。以它为基地可去贝林佐纳看三座世界遗产城堡、坐船游卢加诺湖。" +
-      "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Geneva to Lugano is about 50 minutes, in the same time zone. The train on this route needs changes and takes about 5 hours, so this is one of the few Swiss domestic flights that makes some sense." +
-      " Flying from the French-speaking region to the Italian-speaking one, the climate and feel change: Lugano is mild, relaxed and more 'Italian'. From it you can visit Bellinzona and its three World Heritage castles, or take a boat on Lake Lugano." +
-      " Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "osl-bgo": {
     study: {
@@ -2893,49 +2801,7 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "ams-mst": {
-    study: {
-    "zh-CN":
-      "阿姆斯特丹飞马斯特里赫特，是荷兰境内为数不多的定期国内航班之一——荷兰国土狭小、铁路发达，国内飞行本身就很罕见，这条航线主要服务于两地之间快速通勤和转机需求。起飞后不久，脚下出现乌得勒支丘陵脊：一条末次冰期冰川推挤堆积形成的狭长森林带，在地势平坦的荷兰中部格外醒目。" +
-      "继续南飞，地面逐渐从荷兰典型的低洼围垦地转变为略有起伏的地形，进入马斯河荷兰段：这条发源于法国、流经比利时的河流在荷兰南部林堡省一带切出相对明显的河谷，两岸有低丘。马斯特里赫特就坐落在马斯河两岸，是荷兰地势起伏最明显的地区。",
-    "en-US":
-      "Amsterdam to Maastricht is one of the very few scheduled domestic flights in the Netherlands — the country is small with an extensive rail network, so domestic flying itself is unusual, and this route mainly serves fast commuting and connections between the two cities. Soon after take-off, the Utrechtse Heuvelrug appears below: a narrow band of forest on a moraine ridge from the last ice age, standing out sharply against the otherwise flat central Netherlands." +
-      " Flying on south, the land gradually shifts from the Netherlands' typical low-lying reclaimed polder into slightly rolling terrain, entering the Meuse in the Netherlands: this river, rising in France and flowing through Belgium, cuts a relatively distinct valley through the southern province of Limburg, with low hills on either side. Maastricht sits on both banks of the Meuse, in the region with the most pronounced relief in the country.",
-    },
-    travel: {
-    "zh-CN":
-      "阿姆斯特丹到马斯特里赫特飞约50分钟，同一时区。也可坐火车（约2.5小时），因为国内飞行罕见，这条航线更多是史基浦机场的国际中转旅客用于衔接南部行程。马斯特里赫特气候比荷兰北部略温和。" +
-      "靠窗能看到乌得勒支丘陵脊的森林带和马斯河谷地起伏的地形——这是在荷兰国内航班上难得能看出真实地势变化的一段。马斯特里赫特靠近比利时和德国边境，生活方式偏向悠闲享乐。" +
-      "荷兰属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Amsterdam to Maastricht is about 50 minutes, in the same time zone. The train takes about 2.5 hours; because domestic flights are rare, this route is used more by international transfer passengers at Schiphol connecting onward to the south. Maastricht's climate is slightly milder than the north of the Netherlands." +
-      " From a window you see the forested Utrechtse Heuvelrug and the rolling terrain of the Meuse valley — a rare stretch on a Dutch domestic flight where you can actually see real changes in relief. Maastricht is close to the Belgian and German borders and has a more relaxed, food-and-wine-focused way of life." +
-      " The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
-  "ams-grq": {
-    study: {
-    "zh-CN":
-      "阿姆斯特丹飞格罗宁根，是荷兰境内另一条为数不多的定期国内航班，连接首都与荷兰北部最大的城市。起飞后不久，脚下出现艾瑟尔湖——荷兰最大的湖泊，1932年阿夫鲁戴克大坝建成后由原本的咸水湾须德海逐渐淡化而成，湖岸线曲折、多处已被围垦为陆地。" +
-      "继续北飞，一条相对狭窄的河道出现在视野中——艾瑟尔河，莱茵河在阿纳姆附近分出的支流，向北注入艾瑟尔湖，沿岸的代芬特尔、坎彭等古镇历史上曾是汉萨同盟的贸易城市。" +
-      "接近格罗宁根，脚下出现劳沃斯湖：1969年一条拦海坝将原本与瓦登海相通的海湾封闭后逐渐淡化形成的湖泊与湿地，开阔水面与大片芦苇沼泽交错分布。格罗宁根就在这片湿地以南不远处。",
-    "en-US":
-      "Amsterdam to Groningen is another of the Netherlands' few scheduled domestic flights, linking the capital with the largest city in the north. Soon after take-off, the IJsselmeer appears below — the largest lake in the Netherlands, gradually freshened from the former saline Zuiderzee bay after the Afsluitdijk was completed in 1932, its shoreline irregular with several stretches now reclaimed as land." +
-      " Flying on north, a relatively narrow channel comes into view — the IJssel, a branch the Rhine splits off near Arnhem, flowing north into the IJsselmeer, with historic Hanseatic trading towns such as Deventer and Kampen along its banks." +
-      " Approaching Groningen, the Lauwersmeer appears below: a lake and wetland formed after a 1969 barrier dam sealed off a bay once connected to the Wadden Sea, open water interspersed with extensive reed marsh. Groningen is not far south of this wetland.",
-    },
-    travel: {
-    "zh-CN":
-      "阿姆斯特丹到格罗宁根飞约40分钟，同一时区。也可坐火车（约2小时10分），因国内飞行罕见，这条航线主要服务国际转机旅客和商务出行。格罗宁根是大学城，年轻人口比例高、自行车文化发达。" +
-      "靠窗能看到艾瑟尔湖开阔的淡水湖面、艾瑟尔河沿岸的汉萨古城和劳沃斯湖的湿地景观。以格罗宁根为基地可探索瓦登海沿岸和弗里斯兰地区。" +
-      "荷兰属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Amsterdam to Groningen is about 40 minutes, in the same time zone. The train takes about 2 hours 10 minutes; because domestic flights are rare, this route mainly serves international transfer passengers and business travel. Groningen is a university city with a young population and a strong cycling culture." +
-      " From a window you see the open freshwater expanse of the IJsselmeer, the Hanseatic old towns along the IJssel, and the wetland landscape of the Lauwersmeer. From Groningen you can explore the Wadden Sea coast and the Friesland region." +
-      " The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "vie-inn": {
     study: {
@@ -3092,9 +2958,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，是北欧航空运营的季节性航班之一，也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，由丹麦航空运输（Bornholmerflyet 品牌）以政府招标的公共服务义务航线形式运营，也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Copenhagen to Bornholm is about 35 minutes, same time zone, operated by SAS as a seasonal domestic route; a ferry is another option. Bornholm Airport is about 5 km from Rønne. Known as \"Denmark's sunshine island\" for its abundant sunshine, Bornholm is an ideal destination for exploring the granite coast and its historic castle. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Copenhagen to Bornholm is about 35 minutes, same time zone, operated by Danish Air Transport under the Bornholmerflyet brand as a state-tendered public service obligation route; a ferry is another option. Bornholm Airport is about 5 km from Rønne. Known as \"Denmark's sunshine island\" for its abundant sunshine, Bornholm is an ideal destination for exploring the granite coast and its historic castle. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
@@ -3704,9 +3570,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "岘港到胡志明市飞约90分钟，同一时区，是竹子航空运营的国内航班之一。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
+      "岘港到胡志明市飞约90分钟，同一时区，是越捷航空运营的国内航班之一（原竹子航空已于2026年8月停止全部定期航班）。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
     "en-US":
-      "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by Bamboo Airways as one of Vietnam's domestic routes. Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
+      "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by VietJet Air as one of Vietnam's domestic routes (Bamboo Airways, which used to fly it, stopped all scheduled service in August 2026). Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
     },
   },
 
@@ -4400,9 +4266,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到卡帕多奇亚飞约80分钟，同一时区，是AJet运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；内夫谢希尔卡帕多奇亚机场距格雷梅约40公里，需再转乘约35至40分钟车程。",
+      "伊斯坦布尔到卡帕多奇亚飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；内夫谢希尔卡帕多奇亚机场距格雷梅约40公里，需再转乘约35至40分钟车程。",
     "en-US":
-      "Istanbul to Cappadocia is about 80 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Nevşehir Kapadokya Airport is about 40 km from Göreme, requiring a further 35–40 minute transfer.",
+      "Istanbul to Cappadocia is about 80 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Nevşehir Kapadokya Airport is about 40 km from Göreme, requiring a further 35–40 minute transfer.",
     },
   },
 
@@ -4434,9 +4300,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是AJet运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
+      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
     "en-US":
-      "Istanbul to Denizli is about 80 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport is about 65 km from Pamukkale.",
+      "Istanbul to Denizli is about 80 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport is about 65 km from Pamukkale.",
     },
   },
 
@@ -4560,22 +4426,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "zag-rjk": {
-    study: {
-    "zh-CN":
-      "萨格勒布飞里耶卡，全程约135公里，飞行时间约35分钟，是克罗地亚国内航线中飞行时间最短的一条，连接首都与克罗地亚最大海港。飞机离开萨格勒布后向西南飞行，脚下地势迅速抬升，进入戈尔斯基科塔尔——克罗地亚森林覆盖最茂密的山区，库帕河的源头即隐藏在这片连绵的林海之中。" +
-      "飞机继续向西南飞行，山地地势骤然下降，克瓦内尔湾开阔的蓝色水域与环列其中的克尔克岛、克雷斯岛逐渐显现，最终降落在克尔克岛上的里耶卡机场——克罗地亚最大海港的空中门户。",
-    "en-US":
-      "Flying from Zagreb to Rijeka spans about 135 km and about 35 minutes, the shortest domestic route in Croatia, linking the capital with Croatia's largest seaport. After leaving Zagreb the flight heads southwest, the terrain below rising quickly into Gorski Kotar, Croatia's most densely forested mountain region, where the source of the Kupa River lies hidden within the unbroken forest." +
-      " The flight continues southwest as the mountains drop away sharply, the open blue waters of the Kvarner Gulf and the islands of Krk and Cres ringing it coming into view, before landing at Rijeka Airport on the island of Krk, the aerial gateway to Croatia's largest seaport.",
-    },
-    travel: {
-    "zh-CN":
-      "萨格勒布到里耶卡飞约35分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型），是克罗地亚国内飞行时间最短的航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；里耶卡机场位于克尔克岛，距里耶卡市区约30公里。",
-    "en-US":
-      "Zagreb to Rijeka is about 35 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's shortest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Rijeka Airport, on the island of Krk, is about 30 km from central Rijeka.",
-    },
-  },
 
   "pek-foc": {
     study: {

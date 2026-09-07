@@ -6,12 +6,47 @@
   "descriptionEn": "Khangai Mountains · Great Lakes Depression",
   "depCountry": "mongolia",
   "arrCountry": "mongolia",
-  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0801", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "HVD", "durationMin": 120 },
+  "flight": {
+    "airline": "蒙古国际航空",
+    "airlineEn": "MIAT Mongolian Airlines",
+    "flightNo": "OM31",
+    "aircraft": "Bombardier CRJ-700",
+    "depIata": "UBN",
+    "arrIata": "HVD",
+    "durationMin": 70
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
-    { "kind": "terrain", "terrainId": "khangai-mountains" },
-    { "kind": "terrain", "terrainId": "great-lakes-depression" },
-    { "kind": "city", "id": "hvd", "name": "科布多", "nameEn": "Khovd", "lat": 47.9539, "lon": 91.6289, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ubn",
+      "name": "乌兰巴托",
+      "nameEn": "Ulaanbaatar",
+      "lat": 47.6467,
+      "lon": 106.8161,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "khangai-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-lakes-depression"
+    },
+    {
+      "kind": "city",
+      "id": "hvd",
+      "name": "科布多",
+      "nameEn": "Khovd",
+      "lat": 47.9539,
+      "lon": 91.6289,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightsfrom.com/UBN-HVD",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**这一批的承运人整体是错的**：Aero Mongolia（M0）公司仍在运营、也确实有 2 架 A319，但它的航线网络**只有国际线**（首尔仁川/东京成田/呼和浩特），**当前没有任何蒙古国内定期航班**。M08xx 这个连号奇数序列一个都查不到。UBN–HVD 现由 **MIAT 独家不经停承运**，航班号 OM31，机型 CRJ-700（2024-04-28 起投入国内线，结束了此前 15 年的国内航线空窗）。实际约 70 分钟，记录的 120 分钟也错。另有蒙古国家通讯社报道佐证 MIAT 恢复国内线（级别 2）。来源级别 3"
+  }
 }

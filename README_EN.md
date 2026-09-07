@@ -31,7 +31,7 @@ country-by-country breakdown lives in `CLAUDE.md`'s "范围" section, kept curre
 expansion, and isn't duplicated here to avoid a second copy going stale):
 - Study — Asia · Europe · North America · South America · Oceania, 38 countries, 1041 landforms, bilingual
 - Travel — covers all 38 countries live in study mode, 38 country overviews + 691 cities, bilingual;
-  287 commercial routes (domestic + international) with bilingual study/travel narration each
+  280 commercial routes (domestic + international) with bilingual study/travel narration each
 
 **Roadmap:** keep expanding study-mode terrain coverage (Africa not yet started) + expand travel-mode city coverage by tourism demand.
 
@@ -146,14 +146,13 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
 
 ### Route flights
 
-- **287 routes** (`data/routes/*.json`) across the countries listed above, domestic and
+- **280 routes** (`data/routes/*.json`) across the countries listed above, domestic and
   China–other-country international. Each is a genuinely connected city pair plus departure
   and arrival airports and terrain waypoints along the way; the data also carries an
   airline / flight number / aircraft.
-  **Do not read the set as 287 real commercial flights**: the city pairs and airports check
-  out, but the flight number and aircraft recorded at writing time were an example, and a
-  substantial share do not hold up (of 24 Chinese domestic routes sampled, 19 carried a
-  flight number that does not fly that route at all).
+  **Do not read the set as 280 real commercial flights**: the city pairs and airports check
+  out, but the flight number and aircraft recorded at writing time were an example, and
+  checking all 280 one by one turned up an error in 189 of them (68%).
 - Under 3 minutes each: the camera jumps to a slanted view over the departure airport →
   immediately starts a **single continuous narration written for that route**
   ([`lib/route-narration.ts`](lib/route-narration.ts), bilingual, regional-geography-textbook
@@ -167,18 +166,23 @@ Study-mode lessons have **6 universal sections** ([`lib/lesson.ts`](lib/lesson.t
   not in search, not in the narration. The route still flies and its geography narration still
   plays. `npm run check:routes` hard-fails if an unverified route's narration names an
   aircraft or a flight number.
-- Where it stands: **184 of 287 verified** (45 confirmed + 14 checked and found wrong),
-  **236 not yet checked**. International routes mostly drifted on aircraft type; Chinese
-  domestic routes were wrong 19 times out of 24 sampled, usually because the flight number
-  does not serve that city pair. **Even the verified 59 are a snapshot taken on `checkedOn`** —
-  airlines renumber and swap aircraft without notice. Check the airline or an OTA before you fly.
+- **Where it stands: all 280 have now been checked** (2026-09-07) — 91 held up, 163 were
+  wrong and have been corrected, and 26 were wrong with no reliable replacement found
+  (those 26 show no flight number in the UI, in search or in the narration).
+  **189 of the 280 had at least one error, 68%**; the domestic networks of Iceland, Norway,
+  France, Italy, Spain, Portugal, Denmark and Mongolia were wrong 100% of the time.
+  A further 15 routes that have no nonstop service in reality were removed outright
+  (295 → 280). The usual failure modes are "that flight number does not serve this city
+  pair" and aircraft drift. **Even the ones that held up are a snapshot taken on
+  `checkedOn`** — airlines renumber and swap aircraft without notice. Check the airline or
+  an OTA before you fly.
 
 ---
 
 ## Data reliability
 
 This project carries a lot of prose (1041 landforms × 6 sections + 691 cities × 7 sections +
-287 routes × 2 narrations, in two languages). **It was compiled from public sources and nobody
+280 routes × 2 narrations, in two languages). **It was compiled from public sources and nobody
 reviewed it line by line.** A fair number of factual errors have already been found and fixed;
 more are certainly still in there. Here is what holds up, what does not, and what catches it.
 
@@ -191,7 +195,7 @@ more are certainly still in there. Here is what holds up, what does not, and wha
 | City **coordinates / IATA / airport** | Higher | `check:places` enforces completeness; renamings are caught only when someone notices (see known-errors) |
 | City **structure and daily-life text** | Medium | Same as terrain lessons; many population/area figures **carry no year or definition** |
 | Route **city pairs and airports** | Higher | All genuinely connected city pairs |
-| Route **flight number / aircraft** | **Low — hidden by default** | Only 103/287 unverified; the rest never appear in UI, search or narration |
+| Route **flight number / aircraft** | Medium — all checked once | All 280 checked one by one; the 26 found wrong with no replacement never appear in UI, search or narration |
 
 ### Automated guards
 
@@ -318,7 +322,7 @@ lib/
   terrain-lesson.ts         — resolveLesson(id, lang): one place decides which lesson to use
   terrain-label-registry.ts — labels (generated from the registry, with nameEn)
   lesson.ts                 — lesson section order / headings / assembly
-  routes.ts / route-narration.ts — routes (287 currently, domestic + international; flight numbers surface only when verified) + two continuous narrations each
+  routes.ts / route-narration.ts — routes (280 currently, domestic + international; flight numbers surface only when verified) + two continuous narrations each
   app-mode.ts               — AppMode type + localStorage read/write
   places-registry.ts        — [travel-mode single source of truth] cities + country overviews
   travel-content.{zh,en}.ts — travel-mode 6-section TravelGuide content (zh / en)
@@ -336,7 +340,7 @@ features/
 
 data/
   *.json                    — early terrain data (coordinates now superseded by terrain-registry)
-  routes/                   — real route definitions (287 currently, domestic + international)
+  routes/                   — real route definitions (280 currently, domestic + international)
   gis/                      — raw Natural Earth shp/dbf (git-ignored)
 
 public/data/gis/exports/    — 42 extracted terrain-boundary geojson files
@@ -407,7 +411,7 @@ Selection standard: [`docs/terrain-taxonomy.md`](docs/terrain-taxonomy.md).
 | Terrain elevation | Cesium World Terrain |
 | Terrain lessons | Compiled with reference to China National Geographic, CAS, Ministry of Natural Resources, Geoscience Australia, Parks Australia, UNESCO and similar public sources — **not individually reviewed by a person** |
 | Travel guides | Compiled with reference to national tourism boards / meteorological climate normals / entry information / established guidebooks — **not individually reviewed by a person** |
-| Flight numbers / aircraft | An example found at writing time; shown only where a `source` trail records a check (currently 184/287), and only as a snapshot of that date |
+| Flight numbers / aircraft | All 280 checked online on 2026-09-07 (26 found wrong with no replacement, and hidden); **the rest are still only a snapshot of that date** — reschedules and aircraft swaps do not sync back |
 
 ---
 

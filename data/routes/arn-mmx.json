@@ -6,12 +6,47 @@
   "descriptionEn": "Store Mosse · Skåne Plain",
   "depCountry": "sweden",
   "arrCountry": "sweden",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK107", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "MMX", "durationMin": 55 },
+  "flight": {
+    "airline": "北欧航空（BRA 湿租执飞）",
+    "airlineEn": "SAS (operated by Braathens Regional)",
+    "flightNo": "SK107",
+    "aircraft": "ATR 72-600",
+    "depIata": "ARN",
+    "arrIata": "MMX",
+    "durationMin": 90
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
-    { "kind": "terrain", "terrainId": "store-mosse" },
-    { "kind": "terrain", "terrainId": "skane-plain" },
-    { "kind": "city", "id": "mmx", "name": "马尔默", "nameEn": "Malmö", "lat": 55.5363, "lon": 13.3762, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "arn",
+      "name": "斯德哥尔摩",
+      "nameEn": "Stockholm",
+      "lat": 59.6519,
+      "lon": 17.9186,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "store-mosse"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "skane-plain"
+    },
+    {
+      "kind": "city",
+      "id": "mmx",
+      "name": "马尔默",
+      "nameEn": "Malmö",
+      "lat": 55.5363,
+      "lon": 13.3762,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.aeroroutes.com/eng/250218-skns25tf",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人与机型都错，时长也偏短**：2025 夏秋季时刻表显示 ARN–MMX 由 **BRA（Braathens Regional）湿租代运营 ATR 72**，SK107 具体班次核实为 ATR 72（注册号 SE- 开头），不是 SAS 自营 A320neo。时长实际 12:25→13:55 共 90 分钟——涡桨巡航速度远低于喷气机，532km 走 90 分钟与 ATR 72 剖面吻合，55 分钟是按喷气机算的。出票与品牌仍是 SAS 的 SK 号（不是代码共享），但实际执飞方是 BRA。来源级别 3"
+  }
 }

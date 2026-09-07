@@ -6,12 +6,47 @@
   "descriptionEn": "Thung Salaeng Luang · Doi Suthep",
   "depCountry": "thailand",
   "arrCountry": "thailand",
-  "flight": { "airline": "泰国国际航空", "airlineEn": "Thai Airways", "flightNo": "TG100", "aircraft": "Airbus A320", "depIata": "BKK", "arrIata": "CNX", "durationMin": 80 },
+  "flight": {
+    "airline": "泰国国际航空",
+    "airlineEn": "Thai Airways",
+    "flightNo": "TG102",
+    "aircraft": "Airbus A320",
+    "depIata": "BKK",
+    "arrIata": "CNX",
+    "durationMin": 80
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "bkk", "name": "曼谷素万那普", "nameEn": "Bangkok Suvarnabhumi", "lat": 13.6900, "lon": 100.7501, "airport": true },
-    { "kind": "terrain", "terrainId": "thung-salaeng-luang" },
-    { "kind": "terrain", "terrainId": "doi-suthep-pui" },
-    { "kind": "city", "id": "cnx", "name": "清迈", "nameEn": "Chiang Mai", "lat": 18.7669, "lon": 98.9626, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "bkk",
+      "name": "曼谷素万那普",
+      "nameEn": "Bangkok Suvarnabhumi",
+      "lat": 13.69,
+      "lon": 100.7501,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "thung-salaeng-luang"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "doi-suthep-pui"
+    },
+    {
+      "kind": "city",
+      "id": "cnx",
+      "name": "清迈",
+      "nameEn": "Chiang Mai",
+      "lat": 18.7669,
+      "lon": 98.9626,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightstats.com/v2/flight-tracker/route/BKK/CNX",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**TG100 在当前时刻表里查不到**：FlightStats 当日该航线泰航只有 TG102/TG104，FlightConnections 汇总的号段是 TG102/104/106/110/112/120，都不含 TG100。可核实的替代是 TG102（BKK→CNX，A320，机号 HS-TXO 曾执飞）。**我怀疑的理由错了**：我以为「泰航自己没有 A320」，但 Thai Smile 2024-01 并入泰航后，其 20 架 A320 转入 TG 号段执飞国内线——「泰航 A320 飞这条线」是对的，错的只是航班号。方向对、理由错。来源级别 3"
+  }
 }

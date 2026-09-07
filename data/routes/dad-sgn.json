@@ -6,11 +6,43 @@
   "descriptionEn": "Central Highlands (Tây Nguyên)",
   "depCountry": "vietnam",
   "arrCountry": "vietnam",
-  "flight": { "airline": "竹子航空", "airlineEn": "Bamboo Airways", "flightNo": "QH151", "aircraft": "Airbus A321", "depIata": "DAD", "arrIata": "SGN", "durationMin": 90 },
+  "flight": {
+    "airline": "越捷航空",
+    "airlineEn": "VietJet Air",
+    "flightNo": "VJ625",
+    "aircraft": "Airbus A321",
+    "depIata": "DAD",
+    "arrIata": "SGN",
+    "durationMin": 90
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "dad", "name": "岘港", "nameEn": "Da Nang", "lat": 16.0439, "lon": 108.1994, "airport": true },
-    { "kind": "terrain", "terrainId": "central-highlands-tay-nguyen" },
-    { "kind": "city", "id": "sgn", "name": "胡志明市", "nameEn": "Ho Chi Minh City", "lat": 10.8188, "lon": 106.6520, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "dad",
+      "name": "岘港",
+      "nameEn": "Da Nang",
+      "lat": 16.0439,
+      "lon": 108.1994,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-highlands-tay-nguyen"
+    },
+    {
+      "kind": "city",
+      "id": "sgn",
+      "name": "胡志明市",
+      "nameEn": "Ho Chi Minh City",
+      "lat": 10.8188,
+      "lon": 106.652,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://aviationnews.eu/news/2026/08/bamboo-airways-suspends-all-scheduled-commercial-flights-effective-august-1-amid-major-restructuring/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人已经彻底停止运营**：竹子航空自 **2026-08-01 起停止所有定期商业航班**（最后一班定期航班 8 月 22 日），机队从巅峰 44 架萎缩到仅剩 3 架、可用 1 架。QH151 这个号已失效。该航段客流由越航与越捷接手，越捷 **VJ625**（岘港 07:10→胡志明市 08:30，A321，每日不经停）是可核实的现役替代。**A5 迄今最极端的一例**：不是被接管、不是退出某机场，是航司**整体停飞**，而且就发生在一个月前（2026-08）。航段本身仍有真实商业直飞，所以换承运人而不是整条移除。来源级别 2（航空新闻媒体）"
+  }
 }

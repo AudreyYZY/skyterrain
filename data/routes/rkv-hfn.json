@@ -6,13 +6,51 @@
   "descriptionEn": "Hekla · Vatnajökull · Jökulsárlón",
   "depCountry": "iceland",
   "arrCountry": "iceland",
-  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY171", "aircraft": "Bombardier Q200", "depIata": "RKV", "arrIata": "HFN", "durationMin": 50 },
+  "flight": {
+    "airline": "冰岛航空",
+    "airlineEn": "Icelandair",
+    "flightNo": "FI74",
+    "aircraft": "Bombardier Dash 8-200 (Q200)",
+    "depIata": "RKV",
+    "arrIata": "HFN",
+    "durationMin": 53
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
-    { "kind": "terrain", "terrainId": "hekla" },
-    { "kind": "terrain", "terrainId": "vatnajokull" },
-    { "kind": "terrain", "terrainId": "jokulsarlon" },
-    { "kind": "city", "id": "hfn", "name": "赫本", "nameEn": "Höfn", "lat": 64.2956, "lon": -15.2272, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "rkv",
+      "name": "雷克雅未克",
+      "nameEn": "Reykjavík",
+      "lat": 64.13,
+      "lon": -21.9406,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hekla"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vatnajokull"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jokulsarlon"
+    },
+    {
+      "kind": "city",
+      "id": "hfn",
+      "name": "赫本",
+      "nameEn": "Höfn",
+      "lat": 64.2956,
+      "lon": -15.2272,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.icelandreview.com/news/icelandair-resumes-flights-between-reykjavik-and-hornafjordur/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：城市对、不经停、机型 Q200 都属实。**只有承运人代码错**：NY → FI，现役号 FI74/FI76/FI78。赫本这条 PSO 航线 **2025-09-01 由 Icelandair 恢复经营**（此前一度由 Mýflug 短暂接手，更早属已破产的 Eagle Air）。实测 51–55min，记录 50min 接近，取 53。来源级别 2（冰岛主流媒体）+ 3"
+  }
 }

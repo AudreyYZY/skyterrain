@@ -6,11 +6,43 @@
   "descriptionEn": "Kallavesi",
   "depCountry": "finland",
   "arrCountry": "finland",
-  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY362", "aircraft": "ATR 72-500", "depIata": "HEL", "arrIata": "KUO", "durationMin": 55 },
+  "flight": {
+    "airline": "芬兰航空（Norra 代运营）",
+    "airlineEn": "Finnair (operated by Norra)",
+    "flightNo": "AY361",
+    "aircraft": "ATR 72-500",
+    "depIata": "HEL",
+    "arrIata": "KUO",
+    "durationMin": 55
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
-    { "kind": "terrain", "terrainId": "kallavesi" },
-    { "kind": "city", "id": "kuo", "name": "库奥皮奥", "nameEn": "Kuopio", "lat": 63.0072, "lon": 27.7979, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hel",
+      "name": "赫尔辛基",
+      "nameEn": "Helsinki",
+      "lat": 60.3172,
+      "lon": 24.9633,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kallavesi"
+    },
+    {
+      "kind": "city",
+      "id": "kuo",
+      "name": "库奥皮奥",
+      "nameEn": "Kuopio",
+      "lat": 63.0072,
+      "lon": 27.7979,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ay361/helsinki/kuopio_-_siilinj%C3%A4rvi/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**方向反了**：AY362 实际是库奥皮奥→赫尔辛基的返程（08:30→09:30）。去程 HEL→KUO 是 **AY361**（07:05→08:05，约 55–60min），与记录时长最吻合。机型 ATR 72（Norra 代运营）属实。来源级别 3"
+  }
 }

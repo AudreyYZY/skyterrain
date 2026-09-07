@@ -9,8 +9,8 @@
   "flight": {
     "airline": "新西兰航空",
     "airlineEn": "Air New Zealand",
-    "flightNo": "NZ8215",
-    "aircraft": "Bombardier Q300",
+    "flightNo": "NZ5155",
+    "aircraft": "ATR 72-600 / Bombardier Q300（混合排班）",
     "depIata": "AKL",
     "arrIata": "ROT",
     "durationMin": 35
@@ -43,5 +43,10 @@
       "lon": 176.317,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://en.wikipedia.org/wiki/Air_New_Zealand_fleet",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**查不到 NZ8215 在任何追踪站有记录**。奥克兰—罗托鲁瓦真实在飞的是 NZ5151/NZ5155。**我提的「Q300 已于 2024–2025 退役」不成立** —— 截至 2025-08 新西兰航空仍有 23 架 Q300 在役、无退役时间表；该航线目前 ATR 72-600 与 Q300 混合排班。来源级别 3"
+  }
 }

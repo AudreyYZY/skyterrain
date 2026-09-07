@@ -6,14 +6,55 @@
   "descriptionEn": "Vienna Basin · Wienerwald · Dachstein · Karwendel",
   "depCountry": "austria",
   "arrCountry": "austria",
-  "flight": { "airline": "奥地利航空", "airlineEn": "Austrian Airlines", "flightNo": "OS901", "aircraft": "Embraer E195", "depIata": "VIE", "arrIata": "INN", "durationMin": 55 },
+  "flight": {
+    "airline": "奥地利航空",
+    "airlineEn": "Austrian Airlines",
+    "flightNo": "OS901",
+    "aircraft": "Embraer E195",
+    "depIata": "VIE",
+    "arrIata": "INN",
+    "durationMin": 55
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "vienna", "name": "维也纳", "nameEn": "Vienna", "lat": 48.1103, "lon": 16.5697, "airport": true },
-    { "kind": "terrain", "terrainId": "vienna-basin" },
-    { "kind": "terrain", "terrainId": "wienerwald" },
-    { "kind": "terrain", "terrainId": "dachstein" },
-    { "kind": "terrain", "terrainId": "karwendel" },
-    { "kind": "city", "id": "innsbruck", "name": "因斯布鲁克", "nameEn": "Innsbruck", "lat": 47.2602, "lon": 11.3440, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "vienna",
+      "name": "维也纳",
+      "nameEn": "Vienna",
+      "lat": 48.1103,
+      "lon": 16.5697,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vienna-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "wienerwald"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dachstein"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "karwendel"
+    },
+    {
+      "kind": "city",
+      "id": "innsbruck",
+      "name": "因斯布鲁克",
+      "nameEn": "Innsbruck",
+      "lat": 47.2602,
+      "lon": 11.344,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/os901/vienna/innsbruck/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：OS901 现役，维也纳→因斯布鲁克，E195（E195LR），**运营方就是奥地利航空本身、非湿租**（Tyrolean Airways / Austrian Arrows 已于 2015 年并入母公司，myAustrian 只是品牌）。LH6344/AZ5132 是代码共享方。实际约 40–43min，记录 55min 偏长。我提的湿租怀疑不成立。来源级别 3"
+  }
 }

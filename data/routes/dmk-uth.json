@@ -6,11 +6,43 @@
   "descriptionEn": "Khorat Plateau",
   "depCountry": "thailand",
   "arrCountry": "thailand",
-  "flight": { "airline": "泰国亚洲航空", "airlineEn": "Thai AirAsia", "flightNo": "FD3362", "aircraft": "Airbus A320", "depIata": "DMK", "arrIata": "UTH", "durationMin": 65 },
+  "flight": {
+    "airline": "泰国亚洲航空",
+    "airlineEn": "Thai AirAsia",
+    "flightNo": "FD3362",
+    "aircraft": "Airbus A320",
+    "depIata": "DMK",
+    "arrIata": "UTH",
+    "durationMin": 65
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
-    { "kind": "terrain", "terrainId": "khorat-plateau" },
-    { "kind": "city", "id": "uth", "name": "乌隆他尼", "nameEn": "Udon Thani", "lat": 17.3864, "lon": 102.7881, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "dmk",
+      "name": "曼谷廊曼",
+      "nameEn": "Bangkok Don Mueang",
+      "lat": 13.9126,
+      "lon": 100.6069,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "khorat-plateau"
+    },
+    {
+      "kind": "city",
+      "id": "uth",
+      "name": "乌隆他尼",
+      "nameEn": "Udon Thani",
+      "lat": 17.3864,
+      "lon": 102.7881,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightstats.com/v2/flight-tracker/FD/3362",
+    "checkedOn": "2026-09-07",
+    "note": "属实：FD3362 服务 DMK→UTH，FlightAware 有 2025-05 至 2026-01 多个日期的记录；当日实时追踪显示 15:06 起飞、16:09 到达准点，机型标注 A320neo。记录写「A320」是机型族名，不算错，只是没细到 neo/ceo。泰亚航机队以 A320-200（44 架）为主、A320neo（11 架）较少，族名写法可接受。来源级别 3"
+  }
 }

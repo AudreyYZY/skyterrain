@@ -6,11 +6,43 @@
   "descriptionEn": "Stora Alvaret, Öland",
   "depCountry": "sweden",
   "arrCountry": "sweden",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK195", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "KLR", "durationMin": 45 },
+  "flight": {
+    "airline": "北欧航空（BRA 湿租执飞）",
+    "airlineEn": "SAS (operated by Braathens Regional)",
+    "flightNo": "SK195",
+    "aircraft": "ATR 72-600",
+    "depIata": "ARN",
+    "arrIata": "KLR",
+    "durationMin": 45
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
-    { "kind": "terrain", "terrainId": "oland-alvar" },
-    { "kind": "city", "id": "klr", "name": "卡尔马", "nameEn": "Kalmar", "lat": 56.6855, "lon": 16.2875, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "arn",
+      "name": "斯德哥尔摩",
+      "nameEn": "Stockholm",
+      "lat": 59.6519,
+      "lon": 17.9186,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "oland-alvar"
+    },
+    {
+      "kind": "city",
+      "id": "klr",
+      "name": "卡尔马",
+      "nameEn": "Kalmar",
+      "lat": 56.6855,
+      "lon": 16.2875,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.aeroroutes.com/eng/250218-skns25tf",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人与机型错**：ARN–KLR 由 **BRA 独家执飞 ATR 72**（不在主线名单里），SK195 核实为 ATR 72-600（注册号 SE-MNP）。时长 48 分钟与记录 45 分钟相差不大，可保留。来源级别 3"
+  }
 }

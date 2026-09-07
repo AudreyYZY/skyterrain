@@ -6,12 +6,47 @@
   "descriptionEn": "Pannonian Plain · Drava River",
   "depCountry": "croatia",
   "arrCountry": "croatia",
-  "flight": { "airline": "克罗地亚航空", "airlineEn": "Croatia Airlines", "flightNo": "OU210", "aircraft": "Dash 8 Q400", "depIata": "ZAG", "arrIata": "OSI", "durationMin": 40 },
+  "flight": {
+    "airline": "Trade Air（克罗地亚航空代码共享）",
+    "airlineEn": "Trade Air (codeshare with Croatia Airlines)",
+    "flightNo": "OU5257",
+    "aircraft": "Saab 340B",
+    "depIata": "ZAG",
+    "arrIata": "OSI",
+    "durationMin": 40
+  },
   "cruiseHeight": 6100,
   "waypoints": [
-    { "kind": "city", "id": "zag", "name": "萨格勒布", "nameEn": "Zagreb", "lat": 45.7429, "lon": 16.0688, "airport": true },
-    { "kind": "terrain", "terrainId": "pannonian-plain-croatia" },
-    { "kind": "terrain", "terrainId": "drava-river-croatia" },
-    { "kind": "city", "id": "osi", "name": "奥西耶克", "nameEn": "Osijek", "lat": 45.4626, "lon": 18.8103, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "zag",
+      "name": "萨格勒布",
+      "nameEn": "Zagreb",
+      "lat": 45.7429,
+      "lon": 16.0688,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pannonian-plain-croatia"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "drava-river-croatia"
+    },
+    {
+      "kind": "city",
+      "id": "osi",
+      "name": "奥西耶克",
+      "nameEn": "Osijek",
+      "lat": 45.4626,
+      "lon": 18.8103,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://osijek-airport.hr/en/passenger-information/flight-schedule/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人整个记错了**：萨格勒布—奥西耶克是国内 **PSO 补贴航线**，实际执飞方是 **Trade Air**、机型 **萨博 340B（约 30 座涡桨）**，克航只是代码共享方（OU5257 对应 Trade Air 的 C3820）。且这条线**并非全年稳定**：PSO 合同到期、新一轮招标未及时启动，2026-03 底停航，直到 2026-07-20 才恢复。OU210 本身也查无记录。**来源级别 1**（奥西耶克机场官网时刻表）。这条同时命中 A7（代码共享当自营）与 A4（曾停航近 4 个月）。来源另有媒体报道佐证（级别 2）"
+  }
 }

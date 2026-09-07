@@ -6,13 +6,51 @@
   "descriptionEn": "Þingvellir rift · Langjökull · Hofsjökull",
   "depCountry": "iceland",
   "arrCountry": "iceland",
-  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY201", "aircraft": "Bombardier Q400", "depIata": "RKV", "arrIata": "AEY", "durationMin": 45 },
+  "flight": {
+    "airline": "冰岛航空",
+    "airlineEn": "Icelandair",
+    "flightNo": "FI30",
+    "aircraft": "De Havilland Dash 8-400 (Q400)",
+    "depIata": "RKV",
+    "arrIata": "AEY",
+    "durationMin": 45
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
-    { "kind": "terrain", "terrainId": "thingvellir" },
-    { "kind": "terrain", "terrainId": "langjokull" },
-    { "kind": "terrain", "terrainId": "hofsjokull" },
-    { "kind": "city", "id": "aey", "name": "阿克雷里", "nameEn": "Akureyri", "lat": 65.6600, "lon": -18.0728, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "rkv",
+      "name": "雷克雅未克",
+      "nameEn": "Reykjavík",
+      "lat": 64.13,
+      "lon": -21.9406,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "thingvellir"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "langjokull"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hofsjokull"
+    },
+    {
+      "kind": "city",
+      "id": "aey",
+      "name": "阿克雷里",
+      "nameEn": "Akureyri",
+      "lat": 65.66,
+      "lon": -18.0728,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/fi30/reykjavik/akureyri/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：城市对、不经停、机型 Q400、45min 都属实。**承运人代码已停用**：Air Iceland Connect 于 2021-03-16 并入 Icelandair，**NY 代码停用、统一用 FI**。该航段现役号是 FI30/FI36/FI46/FI50，不存在 NY201。RKV 是雷克雅未克市区国内机场（非 KEF），冰岛国内航班均由此起降，记录没错。来源级别 2（并入公告）+ 3"
+  }
 }

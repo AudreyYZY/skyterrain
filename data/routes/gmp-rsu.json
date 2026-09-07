@@ -6,11 +6,43 @@
   "descriptionEn": "Honam Plain",
   "depCountry": "south-korea",
   "arrCountry": "south-korea",
-  "flight": { "airline": "真航空", "airlineEn": "Jin Air", "flightNo": "LJ671", "aircraft": "Boeing 737-800", "depIata": "GMP", "arrIata": "RSU", "durationMin": 60 },
+  "flight": {
+    "airline": "真航空",
+    "airlineEn": "Jin Air",
+    "flightNo": "LJ671",
+    "aircraft": "Boeing 737-800",
+    "depIata": "GMP",
+    "arrIata": "RSU",
+    "durationMin": 60
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "gmp", "name": "首尔金浦", "nameEn": "Seoul Gimpo", "lat": 37.5583, "lon": 126.7958, "airport": true },
-    { "kind": "terrain", "terrainId": "honam-plain" },
-    { "kind": "city", "id": "rsu", "name": "丽水", "nameEn": "Yeosu", "lat": 34.8423, "lon": 127.6169, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "gmp",
+      "name": "首尔金浦",
+      "nameEn": "Seoul Gimpo",
+      "lat": 37.5583,
+      "lon": 126.7958,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "honam-plain"
+    },
+    {
+      "kind": "city",
+      "id": "rsu",
+      "name": "丽水",
+      "nameEn": "Yeosu",
+      "lat": 34.8423,
+      "lon": 127.6169,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://en.airnavradar.com/data/registration/HL7560",
+    "checkedOn": "2026-09-07",
+    "note": "属实：真航空**实际执飞**（呼号 JNA671，机尾 HL7560 = 737-800），非代码共享，FlightAware 有多次历史记录，航线正常运营。**我提示的 A5 风险经核实尚未生效**：真航空/釜山航空/首尔航空三家整合为「真航空」品牌要到 **2027-03-17** 才完成，当前记录的承运人名称是准确的，不需要改。来源级别 3"
+  }
 }

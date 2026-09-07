@@ -6,11 +6,43 @@
   "descriptionEn": "Faxaflói · Snæfellsjökull",
   "depCountry": "iceland",
   "arrCountry": "iceland",
-  "flight": { "airline": "冰岛航空", "airlineEn": "Icelandair", "flightNo": "NY141", "aircraft": "Bombardier Q200", "depIata": "RKV", "arrIata": "IFJ", "durationMin": 40 },
+  "flight": {
+    "airline": "冰岛航空",
+    "airlineEn": "Icelandair",
+    "flightNo": "FI16",
+    "aircraft": "Bombardier Dash 8-200 (Q200)",
+    "depIata": "RKV",
+    "arrIata": "IFJ",
+    "durationMin": 45
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "rkv", "name": "雷克雅未克", "nameEn": "Reykjavík", "lat": 64.1300, "lon": -21.9406, "airport": true },
-    { "kind": "terrain", "terrainId": "snaefellsjokull" },
-    { "kind": "city", "id": "ifj", "name": "伊萨菲厄泽", "nameEn": "Ísafjörður", "lat": 66.0581, "lon": -23.1353, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "rkv",
+      "name": "雷克雅未克",
+      "nameEn": "Reykjavík",
+      "lat": 64.13,
+      "lon": -21.9406,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "snaefellsjokull"
+    },
+    {
+      "kind": "city",
+      "id": "ifj",
+      "name": "伊萨菲厄泽",
+      "nameEn": "Ísafjörður",
+      "lat": 66.0581,
+      "lon": -23.1353,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/fi16/reykjavik/isafjordur/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：城市对、不经停、机型 Q200 都属实（伊萨菲厄泽是 Icelandair 保留 Q200 服务至 2030 的两条 PSO 航线之一）。**只有承运人代码错**：NY → FI，现役号 FI16/FI26。实测约 45min，记录 40min 偏短，一并改。来源级别 3"
+  }
 }

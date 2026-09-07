@@ -6,15 +6,62 @@
   "descriptionEn": "Canterbury Plains · Mackenzie Basin · Southern Alps · Lake Wakatipu",
   "depCountry": "new-zealand",
   "arrCountry": "new-zealand",
-  "flight": { "airline": "新西兰航空", "airlineEn": "Air New Zealand", "flightNo": "NZ5623", "aircraft": "ATR 72-600", "depIata": "CHC", "arrIata": "ZQN", "durationMin": 60 },
+  "flight": {
+    "airline": "新西兰航空",
+    "airlineEn": "Air New Zealand",
+    "flightNo": "NZ651",
+    "aircraft": "Airbus A320",
+    "depIata": "CHC",
+    "arrIata": "ZQN",
+    "durationMin": 60
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "chc", "name": "基督城", "nameEn": "Christchurch", "lat": -43.489, "lon": 172.532, "airport": true },
-    { "kind": "terrain", "terrainId": "canterbury-plains" },
-    { "kind": "terrain", "terrainId": "mackenzie-basin" },
-    { "kind": "terrain", "terrainId": "aoraki-southern-alps" },
-    { "kind": "terrain", "terrainId": "lake-wakatipu" },
-    { "kind": "feature", "name": "卓越山脉", "nameEn": "The Remarkables", "lon": 168.82, "lat": -45.06 },
-    { "kind": "city", "id": "zqn", "name": "皇后镇", "nameEn": "Queenstown", "lat": -45.021, "lon": 168.739, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "chc",
+      "name": "基督城",
+      "nameEn": "Christchurch",
+      "lat": -43.489,
+      "lon": 172.532,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "canterbury-plains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mackenzie-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "aoraki-southern-alps"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-wakatipu"
+    },
+    {
+      "kind": "feature",
+      "name": "卓越山脉",
+      "nameEn": "The Remarkables",
+      "lon": 168.82,
+      "lat": -45.06
+    },
+    {
+      "kind": "city",
+      "id": "zqn",
+      "name": "皇后镇",
+      "nameEn": "Queenstown",
+      "lat": -45.021,
+      "lon": 168.739,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/nz651/christchurch/queenstown/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**NZ5623 实际执飞的是汉密尔顿—基督城(HLZ→CHC)**，与基督城—皇后镇无关。该航段真实号是 NZ647/651/653/655/659（主线 A320，如 NZ651 11:20→12:20），另有 NZ5405/5433/5467 用 ATR 72/42。取证据更充分的 A320 班次；若要保留涡桨机型可改用 NZ54xx 那组，但那组的机型固定性未能逐一核实。来源级别 3"
+  }
 }

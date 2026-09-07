@@ -6,14 +6,55 @@
   "descriptionEn": "Mondego River · Serra de Aire e Candeeiros · Alentejo Plain · Algarve Coast",
   "depCountry": "portugal",
   "arrCountry": "portugal",
-  "flight": { "airline": "葡萄牙航空", "airlineEn": "TAP Air Portugal", "flightNo": "TP1974", "aircraft": "Airbus A319", "depIata": "OPO", "arrIata": "FAO", "durationMin": 75 },
+  "flight": {
+    "airline": "瑞安航空",
+    "airlineEn": "Ryanair",
+    "flightNo": "FR5486",
+    "aircraft": "Boeing 737-800",
+    "depIata": "OPO",
+    "arrIata": "FAO",
+    "durationMin": 75
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "opo", "name": "波尔图", "nameEn": "Porto", "lat": 41.2481, "lon": -8.6814, "airport": true },
-    { "kind": "terrain", "terrainId": "mondego-river" },
-    { "kind": "terrain", "terrainId": "serra-de-aire-candeeiros" },
-    { "kind": "terrain", "terrainId": "alentejo-plain" },
-    { "kind": "terrain", "terrainId": "algarve-coast" },
-    { "kind": "city", "id": "fao", "name": "法鲁", "nameEn": "Faro", "lat": 37.0144, "lon": -7.9659, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "opo",
+      "name": "波尔图",
+      "nameEn": "Porto",
+      "lat": 41.2481,
+      "lon": -8.6814,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mondego-river"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "serra-de-aire-candeeiros"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "alentejo-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "algarve-coast"
+    },
+    {
+      "kind": "city",
+      "id": "fao",
+      "name": "法鲁",
+      "nameEn": "Faro",
+      "lat": 37.0144,
+      "lon": -7.9659,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-opo-to-fao",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人整个记错了**：TAP 官网波尔图→法鲁购票页返回「无符合条件的票价」（即无 TAP 定期班次），第三方航线统计一致显示这条约 472 公里的不经停航线**目前只有瑞安航空在飞**（约每日 3 班：FR5486/FR8275/FR5452）。TP1974 这个号也查无任何路线记录。**我对这条短程线的怀疑部分成立**：不是航线消失，是 TAP 退出、低成本航司接手 —— 与联合航空退出 JFK 同属 A5 那个「承运人不再服务这对城市」的变种。瑞安该线 737-800 与 737 MAX 8-200 混编，未能查到 FR5486 固定用哪个子型号，取现主力 737-800。来源级别 3"
+  }
 }

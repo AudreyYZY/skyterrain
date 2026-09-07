@@ -6,12 +6,47 @@
   "descriptionEn": "Red River Delta · Central Highlands",
   "depCountry": "vietnam",
   "arrCountry": "vietnam",
-  "flight": { "airline": "越南航空", "airlineEn": "Vietnam Airlines", "flightNo": "VN207", "aircraft": "Airbus A321", "depIata": "HAN", "arrIata": "SGN", "durationMin": 120 },
+  "flight": {
+    "airline": "越南航空",
+    "airlineEn": "Vietnam Airlines",
+    "flightNo": "VN207",
+    "aircraft": "Airbus A350-900",
+    "depIata": "HAN",
+    "arrIata": "SGN",
+    "durationMin": 120
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "han", "name": "河内", "nameEn": "Hanoi", "lat": 21.2212, "lon": 105.8073, "airport": true },
-    { "kind": "terrain", "terrainId": "red-river-delta" },
-    { "kind": "terrain", "terrainId": "central-highlands-tay-nguyen" },
-    { "kind": "city", "id": "sgn", "name": "胡志明市", "nameEn": "Ho Chi Minh City", "lat": 10.8188, "lon": 106.6520, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "han",
+      "name": "河内",
+      "nameEn": "Hanoi",
+      "lat": 21.2212,
+      "lon": 105.8073,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "red-river-delta"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-highlands-tay-nguyen"
+    },
+    {
+      "kind": "city",
+      "id": "sgn",
+      "name": "胡志明市",
+      "nameEn": "Ho Chi Minh City",
+      "lat": 10.8188,
+      "lon": 106.652,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/vn207/hanoi/ho-chi-minh-city/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实、不经停，**机型错**：追踪站明确标注 VN207 固定用 **A350-900**。河内—胡志明市是越航旗舰「VNAXPRESS」航线，2026 年主力已是 A350-900/787-10 宽体机，A321 只承担部分班次、不是这个号。实际约 2h10–15m，记录 120min 偏短十余分钟。来源级别 3"
+  }
 }

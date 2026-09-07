@@ -6,11 +6,43 @@
   "descriptionEn": "Oulanka Canyon",
   "depCountry": "finland",
   "arrCountry": "finland",
-  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY486", "aircraft": "ATR 72-500", "depIata": "HEL", "arrIata": "KAO", "durationMin": 75 },
+  "flight": {
+    "airline": "芬兰航空（Norra 代运营）",
+    "airlineEn": "Finnair (operated by Norra)",
+    "flightNo": "AY485",
+    "aircraft": "ATR 72-500",
+    "depIata": "HEL",
+    "arrIata": "KAO",
+    "durationMin": 95
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
-    { "kind": "terrain", "terrainId": "oulanka-canyon" },
-    { "kind": "city", "id": "kao", "name": "库萨莫", "nameEn": "Kuusamo", "lat": 65.9878, "lon": 29.2394, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hel",
+      "name": "赫尔辛基",
+      "nameEn": "Helsinki",
+      "lat": 60.3172,
+      "lon": 24.9633,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "oulanka-canyon"
+    },
+    {
+      "kind": "city",
+      "id": "kao",
+      "name": "库萨莫",
+      "nameEn": "Kuusamo",
+      "lat": 65.9878,
+      "lon": 29.2394,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/FIN485",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**方向反了**：AY486 实际是库萨莫→赫尔辛基的返程。去程 HEL→KAO 是 **AY485**（08:10→09:55，约 95–105min）。记录的 75min 与去程实际耗时也对不上。另：这条线全年不经停但**非每日**，仅周日/周四/周五/周六。实际执飞方 Norra。来源级别 3"
+  }
 }

@@ -6,11 +6,43 @@
   "descriptionEn": "Chao Phraya Delta",
   "depCountry": "thailand",
   "arrCountry": "thailand",
-  "flight": { "airline": "曼谷航空", "airlineEn": "Bangkok Airways", "flightNo": "PG133", "aircraft": "ATR 72-600", "depIata": "BKK", "arrIata": "USM", "durationMin": 95 },
+  "flight": {
+    "airline": "曼谷航空",
+    "airlineEn": "Bangkok Airways",
+    "flightNo": "PG133",
+    "aircraft": "Airbus A319",
+    "depIata": "BKK",
+    "arrIata": "USM",
+    "durationMin": 95
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "bkk", "name": "曼谷素万那普", "nameEn": "Bangkok Suvarnabhumi", "lat": 13.6900, "lon": 100.7501, "airport": true },
-    { "kind": "terrain", "terrainId": "chao-phraya-delta" },
-    { "kind": "city", "id": "usm", "name": "苏梅岛", "nameEn": "Koh Samui", "lat": 9.5478, "lon": 100.0625, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "bkk",
+      "name": "曼谷素万那普",
+      "nameEn": "Bangkok Suvarnabhumi",
+      "lat": 13.69,
+      "lon": 100.7501,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chao-phraya-delta"
+    },
+    {
+      "kind": "city",
+      "id": "usm",
+      "name": "苏梅岛",
+      "nameEn": "Koh Samui",
+      "lat": 9.5478,
+      "lon": 100.0625,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.hopegoo.com/en-us/hot-flights/flight-number/pg133/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号真实（FlightAware 有 2025 年多个日期的 BKK→USM 记录），**机型错**：曼谷航空在曼谷—苏梅这条主干长航线上用的是 **A319**；ATR 72-600 是用在苏梅—普吉那类短程环岛线上的。该司现役 1 架 A320 + 11 架 A319 + 10 架 ATR 72-600。来源级别 3"
+  }
 }

@@ -6,11 +6,43 @@
   "descriptionEn": "Hallyeohaesang Marine National Park",
   "depCountry": "south-korea",
   "arrCountry": "south-korea",
-  "flight": { "airline": "济州航空", "airlineEn": "Jeju Air", "flightNo": "7C503", "aircraft": "Boeing 737-800", "depIata": "PUS", "arrIata": "CJU", "durationMin": 60 },
+  "flight": {
+    "airline": "济州航空",
+    "airlineEn": "Jeju Air",
+    "flightNo": "7C503",
+    "aircraft": "Boeing 737-800",
+    "depIata": "PUS",
+    "arrIata": "CJU",
+    "durationMin": 60
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "pus", "name": "釜山", "nameEn": "Busan", "lat": 35.1795, "lon": 128.9386, "airport": true },
-    { "kind": "terrain", "terrainId": "hallyeohaesang-marine-park" },
-    { "kind": "city", "id": "cju", "name": "济州", "nameEn": "Jeju", "lat": 33.5113, "lon": 126.4930, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "pus",
+      "name": "釜山",
+      "nameEn": "Busan",
+      "lat": 35.1795,
+      "lon": 128.9386,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hallyeohaesang-marine-park"
+    },
+    {
+      "kind": "city",
+      "id": "cju",
+      "name": "济州",
+      "nameEn": "Jeju",
+      "lat": 33.5113,
+      "lon": 126.493,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/JJA503",
+    "checkedOn": "2026-09-07",
+    "note": "属实：釜山金海→济州，济州航空（与大韩/韩亚整合无关的独立廉航）运营、不经停。机型：济州航空 2026 年机队 44 架客机里只有 10 架 737-8 MAX 且优先投国际线，737-800 仍是合理的当前值。来源级别 3"
+  }
 }

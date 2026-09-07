@@ -6,11 +6,43 @@
   "descriptionEn": "Sete Cidades Caldera",
   "depCountry": "portugal",
   "arrCountry": "portugal",
-  "flight": { "airline": "亚速尔航空", "airlineEn": "SATA Azores Airlines", "flightNo": "S4104", "aircraft": "Airbus A320neo", "depIata": "LIS", "arrIata": "PDL", "durationMin": 150 },
+  "flight": {
+    "airline": "亚速尔航空",
+    "airlineEn": "Azores Airlines",
+    "flightNo": "S4121",
+    "aircraft": "Airbus A320neo",
+    "depIata": "LIS",
+    "arrIata": "PDL",
+    "durationMin": 150
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "lis", "name": "里斯本", "nameEn": "Lisbon", "lat": 38.7813, "lon": -9.1359, "airport": true },
-    { "kind": "terrain", "terrainId": "sete-cidades-caldera" },
-    { "kind": "city", "id": "pdl", "name": "蓬塔德尔加达", "nameEn": "Ponta Delgada", "lat": 37.7412, "lon": -25.6979, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lis",
+      "name": "里斯本",
+      "nameEn": "Lisbon",
+      "lat": 38.7813,
+      "lon": -9.1359,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sete-cidades-caldera"
+    },
+    {
+      "kind": "city",
+      "id": "pdl",
+      "name": "蓬塔德尔加达",
+      "nameEn": "Ponta Delgada",
+      "lat": 37.7412,
+      "lon": -25.6979,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Azores+Airlines-Lisbon-Ponta+Delgada/S4121",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：查不到 S4104 的路线记录。真实号是 S4121（06:00 起飞）/S4123。**承运人写对了**：确认是 Azores Airlines（S4/RZO 国际支线品牌），不是负责群岛内短途、用 Dash 8 涡桨的 SATA Air Açores（SP 代码）。我提的「两个品牌容易混」这一点：记录其实没混错。来源级别 3"
+  }
 }
