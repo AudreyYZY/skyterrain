@@ -15,6 +15,12 @@
     "arrIata": "LXA",
     "durationMin": 165
   },
+  "source": {
+    "ref": "https://en.flightera.net/zh/flight/China+Eastern+Airlines-Kunming-Ninglang/MU5937",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：MU5937 实际飞的是昆明→**宁蒗**（737-700），不是拉萨。昆明—拉萨确有直飞，但未确认航班号"
+  },
   "cruiseHeight": 11500,
   "waypoints": [
     {

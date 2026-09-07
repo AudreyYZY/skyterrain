@@ -15,10 +15,34 @@
     "arrIata": "DLC",
     "durationMin": 70
   },
+  "source": {
+    "ref": "https://www.airportia.com/flights/ca8902/beijing/dalian/",
+    "checkedOn": "2026-09-07",
+    "note": "国航 CA8902 PEK→DLC 属实，每日执飞，737-800 与记录一致；平均 58min，记录 70min（含地面时间）"
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "city", "id": "dlc", "name": "大连周水子", "nameEn": "Dalian Zhoushuizi", "lat": 38.966, "lon": 121.538, "airport": true }
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "city",
+      "id": "dlc",
+      "name": "大连周水子",
+      "nameEn": "Dalian Zhoushuizi",
+      "lat": 38.966,
+      "lon": 121.538,
+      "airport": true
+    }
   ]
 }
