@@ -6,11 +6,43 @@
   "descriptionEn": "Inari",
   "depCountry": "finland",
   "arrCountry": "finland",
-  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY601", "aircraft": "Airbus A320", "depIata": "HEL", "arrIata": "IVL", "durationMin": 100 },
+  "flight": {
+    "airline": "芬兰航空",
+    "airlineEn": "Finnair",
+    "flightNo": "AY601",
+    "aircraft": "Airbus A319 / A320 / A321（冬季主线）· ATR 72（夏季部分班次）",
+    "depIata": "HEL",
+    "arrIata": "IVL",
+    "durationMin": 135
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
-    { "kind": "terrain", "terrainId": "inari-lake" },
-    { "kind": "city", "id": "ivl", "name": "伊瓦洛", "nameEn": "Ivalo", "lat": 68.6072, "lon": 27.4053, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hel",
+      "name": "赫尔辛基",
+      "nameEn": "Helsinki",
+      "lat": 60.3172,
+      "lon": 24.9633,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "inari-lake"
+    },
+    {
+      "kind": "city",
+      "id": "ivl",
+      "name": "伊瓦洛",
+      "nameEn": "Ivalo",
+      "lat": 68.6072,
+      "lon": 27.4053,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/FIN601",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号、方向、承运人（芬兰航空自身、非 Norra）都对。**时长错**：实际 HEL 07:10→IVL 09:25 约 135min，记录 100min 偏短。机型季节性混飞明显：冬季以 A319/A320/A321 为主，夏季 A321 与 Norra 的 ATR 72 混用（2026-08-07 实际执飞就是 ATR 72-212A）。机型按红线如实写季节性混飞。来源级别 3"
+  }
 }

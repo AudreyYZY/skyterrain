@@ -118,8 +118,6 @@ import rkvAey from "./rkv-aey.json" with { type: "json" };
 import rkvEgs from "./rkv-egs.json" with { type: "json" };
 import rkvIfj from "./rkv-ifj.json" with { type: "json" };
 import rkvHfn from "./rkv-hfn.json" with { type: "json" };
-import aeyEgs from "./aey-egs.json" with { type: "json" };
-import rkvHzk from "./rkv-hzk.json" with { type: "json" };
 // 瑞士国内
 import zrhLug from "./zrh-lug.json" with { type: "json" };
 import zrhGva from "./zrh-gva.json" with { type: "json" };
@@ -297,7 +295,6 @@ import zagDbv from "./zag-dbv.json" with { type: "json" };
 import zagZad from "./zag-zad.json" with { type: "json" };
 import zagPuy from "./zag-puy.json" with { type: "json" };
 import zagOsi from "./zag-osi.json" with { type: "json" };
-import zagRjk from "./zag-rjk.json" with { type: "json" };
 // 中国 · 批 8（Tier 2 批3：呼伦贝尔/宜昌/延安/格尔木）
 import pekHld from "./pek-hld.json" with { type: "json" };
 import pekYih from "./pek-yih.json" with { type: "json" };
@@ -440,8 +437,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   rkvEgs,
   rkvIfj,
   rkvHfn,
-  aeyEgs,
-  rkvHzk,
   zrhLug,
   zrhGva,
   gvaLug,
@@ -594,7 +589,6 @@ export const ALL_ROUTES: FlightRoute[] = [
   zagZad,
   zagPuy,
   zagOsi,
-  zagRjk,
   pekHld,
   pekYih,
   pekEny,

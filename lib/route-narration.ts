@@ -1716,51 +1716,7 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "aey-egs": {
-    study: {
-    "zh-CN":
-      "阿克雷里飞埃伊尔斯塔济，是一趟很短的北方支线，用小型螺旋桨飞机，低空飞过冰岛最活跃的火山区之一。起飞后往东，很快就到米湖——一个浅浅的湖，湖里和湖边全是各种形状的火山地貌：假火山口、熔岩柱林、还在冒汽的地热田。" +
-      "米湖东边紧挨着克拉夫拉火山：一片破火山口和裂隙喷发区，20 世纪 70–80 年代这里连续喷发了近十年，地面至今能看到还没长草的新黑熔岩和一个亮绿色的火口湖。" +
-      "过了这一带，地面转为东部的高地和河谷，埃伊尔斯塔济就在拉加尔湖畔。",
-    "en-US":
-      "Akureyri to Egilsstaðir is a short northern regional hop on a small propeller aircraft, flying low over one of the most active volcanic areas in Iceland. After take-off you head east and soon reach Mývatn — a shallow lake full of volcanic features of every shape: pseudocraters, lava pillars, and still-steaming geothermal fields around it." +
-      " Just east of Mývatn is the Krafla volcano: an area of caldera and fissure eruptions that erupted almost continuously for a decade in the 1970s–80s, and where you can still see fresh black lava with no grass yet and a bright green crater lake." +
-      " Past this area the land becomes the eastern highland and valleys, and Egilsstaðir is on Lagarfljót.",
-    },
-    travel: {
-    "zh-CN":
-      "阿克雷里到埃伊尔斯塔济飞约 30 分钟，由 Norlandair 用小飞机执飞、班次少。自驾走环岛北段约 2.5 小时（沿途上帝瀑布、米湖、黛提瀑布，值得慢慢开）。" +
-      "米湖一带夏季有大量小咬人的蠓虫，带头网和驱虫液。地热区严格走步道，地表薄、烫。" +
-      "冬季这条线路况差、航班少，多数人夏季来、自驾串米湖和黛提瀑布。",
-    "en-US":
-      "Akureyri to Egilsstaðir is about 30 minutes, flown by Norlandair on a small aircraft with infrequent service. Driving the northern Ring Road is about 2.5 hours (with Goðafoss, Mývatn and Dettifoss on the way — worth taking slowly)." +
-      " The Mývatn area has swarms of biting midges in summer — take a head net and repellent. In geothermal areas stay strictly on the paths; the crust is thin and scalding." +
-      " In winter this route has poor road conditions and few flights, and most people come in summer and drive the Mývatn–Dettifoss stretch.",
-    },
-  },
 
-  "rkv-hzk": {
-    study: {
-    "zh-CN":
-      "雷克雅未克飞胡萨维克，从首都飞到北方的观鲸小镇，航路和飞阿克雷里的差不多，横穿冰岛中央那片人无法居住的高地。起飞后不久，脚下出现辛格维利尔的板块裂谷——北美与欧亚板块在这里被拉开，地面裂成一道道平行的沟壑，中间是冰岛最大的天然湖。" +
-      "往北进入中央高地：一片灰黑色的火山荒漠，几乎没有植被。航线掠过朗格冰原和位于冰岛正中心的霍夫斯冰原——两座圆盾形的冰帽，之间是熔岩、火山砾和冰川融水冲出的辫状河。这片高地夏季才有碎石路（F 公路）穿过，冬季完全封闭、无人居住。" +
-      "越过高地北缘，地面陷成一条条南北向的深谷和峡湾。胡萨维克就在斯基亚尔万迪湾东岸，一个背靠低山的小渔港，外海食物丰富，夏季常有座头鲸。",
-    "en-US":
-      "Reykjavík to Húsavík flies from the capital to the northern whale-watching town, on a track much like the one to Akureyri, crossing the central highland. After take-off you pass the plate rift at Þingvellir, then enter the volcanic desert." +
-      " The route passes Langjökull and Hofsjökull at the very centre of Iceland — two round, shield-shaped ice caps, with grey-black lava and volcanic gravel between them, almost lifeless. This highland has gravel roads (F-roads) only in summer and is completely closed in winter." +
-      " Over the northern edge of the highland the land drops into fjords, and Húsavík is on the eastern shore of Skjálfandi Bay, a small fishing town backed by low hills.",
-    },
-    travel: {
-    "zh-CN":
-      "雷克雅未克到胡萨维克飞约 45 分钟，由 Norlandair 执飞、班次少；多数人先飞或开车到阿克雷里，再开一小时到胡萨维克。" +
-      "胡萨维克被称作“欧洲观鲸之都”，6–8 月能稳定看到座头鲸。船上冷，带防风防水外套，晕船提前吃药。" +
-      "镇上还有 GeoSea 海崖温泉。往南可跑“钻石环线”：上帝瀑布、米湖、黛提瀑布、Ásbyrgi 峡谷。",
-    "en-US":
-      "Reykjavík to Húsavík is about 45 minutes, flown by Norlandair with infrequent service; most people fly or drive to Akureyri first and then drive an hour to Húsavík." +
-      " Húsavík is called the 'whale-watching capital of Europe', with reliable humpback sightings June–August. It is cold on the boat — bring a windproof, waterproof jacket, and take seasickness medication in advance." +
-      " The town also has the GeoSea cliff baths. South you can drive the 'Diamond Circle': Goðafoss, Mývatn, Dettifoss and the Ásbyrgi canyon.",
-    },
-  },
 
   "zrh-lug": {
     study: {
@@ -4560,22 +4516,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "zag-rjk": {
-    study: {
-    "zh-CN":
-      "萨格勒布飞里耶卡，全程约135公里，飞行时间约35分钟，是克罗地亚国内航线中飞行时间最短的一条，连接首都与克罗地亚最大海港。飞机离开萨格勒布后向西南飞行，脚下地势迅速抬升，进入戈尔斯基科塔尔——克罗地亚森林覆盖最茂密的山区，库帕河的源头即隐藏在这片连绵的林海之中。" +
-      "飞机继续向西南飞行，山地地势骤然下降，克瓦内尔湾开阔的蓝色水域与环列其中的克尔克岛、克雷斯岛逐渐显现，最终降落在克尔克岛上的里耶卡机场——克罗地亚最大海港的空中门户。",
-    "en-US":
-      "Flying from Zagreb to Rijeka spans about 135 km and about 35 minutes, the shortest domestic route in Croatia, linking the capital with Croatia's largest seaport. After leaving Zagreb the flight heads southwest, the terrain below rising quickly into Gorski Kotar, Croatia's most densely forested mountain region, where the source of the Kupa River lies hidden within the unbroken forest." +
-      " The flight continues southwest as the mountains drop away sharply, the open blue waters of the Kvarner Gulf and the islands of Krk and Cres ringing it coming into view, before landing at Rijeka Airport on the island of Krk, the aerial gateway to Croatia's largest seaport.",
-    },
-    travel: {
-    "zh-CN":
-      "萨格勒布到里耶卡飞约35分钟，同一时区，是克罗地亚航空运营的国内航班之一（Dash 8 Q400机型），是克罗地亚国内飞行时间最短的航线之一。弗拉尼奥·图季曼机场距萨格勒布市区约17公里；里耶卡机场位于克尔克岛，距里耶卡市区约30公里。",
-    "en-US":
-      "Zagreb to Rijeka is about 35 minutes, same time zone, operated by Croatia Airlines (Dash 8 Q400) as one of Croatia's shortest domestic routes. Zagreb Franjo Tuđman Airport is about 17 km from central Zagreb; Rijeka Airport, on the island of Krk, is about 30 km from central Rijeka.",
-    },
-  },
 
   "pek-foc": {
     study: {

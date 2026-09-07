@@ -279,12 +279,11 @@ if (missingSource > 0) {
 // 形容词不是航司；中文解说写「Norlandair」而数据写「北方航空」是同一家的两种写法；
 // 「由济州航空执飞，大韩航空也飞这一段」是正常的补充说明。所以维持一张显式的
 // 豁免表，让**新出现**的不一致能从短名单里跳出来。
+// 这些航司名同时是常用的地理/形容词，正文里出现基本都不是在说航司：
+// 「the Norwegian coast」「the Iberian Peninsula」。整词拉黑，比逐条豁免耐用。
+const CARRIER_WORD_COLLISIONS = new Set(["Norwegian", "Iberia", "Vueling"]);
 const BENIGN = new Set([
-  "trd-boo/study/en-US/Norwegian",   // 形容词「挪威的」
-  "svg-bgo/study/en-US/Norwegian",
-  "svg-bgo/travel/en-US/Norwegian",
-  "pek-osl/travel/en-US/Norwegian",
-  "rkv-hzk/travel/zh-CN/Norlandair", // 中文解说用拉丁名，数据用中文名，同一家
+  "rkv-hzk/travel/zh-CN/Norlandair", // 中文解说用拉丁名、数据用中文名，同一家
   "aey-egs/travel/zh-CN/Norlandair",
   "zrh-gva/travel/zh-CN/SWISS",      // 同上
   "pus-cju/study/zh-CN/大韩航空",     // 正文写「大韩航空也飞这一段」，属补充说明
@@ -297,7 +296,9 @@ for (const r of ALL_ROUTES) {
   if (r.flight?.airline) carrierNames.add(r.flight.airline);
   if (r.flight?.airlineEn) carrierNames.add(r.flight.airlineEn);
 }
-const carrierProbes = [...carrierNames].filter((n) => n.length >= 4);
+const carrierProbes = [...carrierNames].filter(
+  (n) => n.length >= 4 && !CARRIER_WORD_COLLISIONS.has(n),
+);
 const carrierMismatch: string[] = [];
 for (const r of ALL_ROUTES) {
   for (const mode of ["study", "travel"] as const) {

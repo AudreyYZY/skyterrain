@@ -6,11 +6,43 @@
   "descriptionEn": "Archipelago Sea",
   "depCountry": "finland",
   "arrCountry": "finland",
-  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY214", "aircraft": "ATR 72-500", "depIata": "HEL", "arrIata": "MHQ", "durationMin": 55 },
+  "flight": {
+    "airline": "芬兰航空（Norra 代运营）",
+    "airlineEn": "Finnair (operated by Norra)",
+    "flightNo": "AY213",
+    "aircraft": "ATR 72-500",
+    "depIata": "HEL",
+    "arrIata": "MHQ",
+    "durationMin": 55
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
-    { "kind": "terrain", "terrainId": "archipelago-sea" },
-    { "kind": "city", "id": "mhq", "name": "玛丽港", "nameEn": "Mariehamn", "lat": 60.1222, "lon": 19.8983, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hel",
+      "name": "赫尔辛基",
+      "nameEn": "Helsinki",
+      "lat": 60.3172,
+      "lon": 24.9633,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "archipelago-sea"
+    },
+    {
+      "kind": "city",
+      "id": "mhq",
+      "name": "玛丽港",
+      "nameEn": "Mariehamn",
+      "lat": 60.1222,
+      "lon": 19.8983,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/FIN213",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**方向反了**：AY214 实际是玛丽港→赫尔辛基的返程。去程 HEL→MHQ 是 **AY213**（07:05→08:00 约 55min，每周约 4 班）。**航线仍在运营、未停飞**；机型确为 ATR 72-212A（Norra 代运营）。**我提的两个怀疑都不成立**：奥兰群岛这条线没有停飞；Amapola Flyg / Fokker 50 是历史运营方，现役是 Norra 的 ATR 72。来源级别 3"
+  }
 }

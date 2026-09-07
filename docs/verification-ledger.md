@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: f74da6f
+lastVerifiedCommit: ddaa451
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,10 @@ lastVerifiedCommit: f74da6f
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | routes · 克罗地亚（2026-09-07 克罗地亚国内航线（先落 5 条）） | 5 | 0 / 5 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
+| 2026-09-07 | routes · 葡萄牙（2026-09-07 葡萄牙国内航线（6 条）） | 6 | 0 / 6 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |
+| 2026-09-07 | routes · 芬兰（2026-09-07 芬兰国内航线（6 条）） | 6 | 2 / 4 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |
+| 2026-09-07 | routes · 冰岛（2026-09-07 冰岛国内航线（先落 4 条）） | 4 | 0 / 4 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | routes · 泰国（2026-09-07 泰国国内航线（6 条）） | 6 | 3 / 3 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | routes · 瑞典（2026-09-07 瑞典国内航线（6 条）） | 6 | 1 / 5 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | routes · 韩国（2026-09-07 韩国国内航线（6 条）） | 6 | 4 / 2 / 0 | 当场修 6 条；新开 issue 0、关闭 0 |

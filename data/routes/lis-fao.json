@@ -6,14 +6,55 @@
   "descriptionEn": "Arrábida Coast · Alentejo Plain · Alqueva Reservoir · Algarve Coast",
   "depCountry": "portugal",
   "arrCountry": "portugal",
-  "flight": { "airline": "葡萄牙航空", "airlineEn": "TAP Air Portugal", "flightNo": "TP1926", "aircraft": "Airbus A320", "depIata": "LIS", "arrIata": "FAO", "durationMin": 55 },
+  "flight": {
+    "airline": "葡萄牙航空",
+    "airlineEn": "TAP Air Portugal",
+    "flightNo": "TP1901",
+    "aircraft": "Airbus A320",
+    "depIata": "LIS",
+    "arrIata": "FAO",
+    "durationMin": 55
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "lis", "name": "里斯本", "nameEn": "Lisbon", "lat": 38.7813, "lon": -9.1359, "airport": true },
-    { "kind": "terrain", "terrainId": "arrabida-coast" },
-    { "kind": "terrain", "terrainId": "alentejo-plain" },
-    { "kind": "terrain", "terrainId": "alqueva-reservoir" },
-    { "kind": "terrain", "terrainId": "algarve-coast" },
-    { "kind": "city", "id": "fao", "name": "法鲁", "nameEn": "Faro", "lat": 37.0144, "lon": -7.9659, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lis",
+      "name": "里斯本",
+      "nameEn": "Lisbon",
+      "lat": 38.7813,
+      "lon": -9.1359,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "arrabida-coast"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "alentejo-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "alqueva-reservoir"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "algarve-coast"
+    },
+    {
+      "kind": "city",
+      "id": "fao",
+      "name": "法鲁",
+      "nameEn": "Faro",
+      "lat": 37.0144,
+      "lon": -7.9659,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/TAP+-+Air+Portugal-Lisbon-Faro/TP1907",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**TP1926 实际飞的是里斯本→波尔图(LIS→OPO)**。里斯本—法鲁这条线本身仍在、且仍由 TAP 独家/主导运营（第三方统计显示 100% 由 TAP 承运，瑞安与易捷都不飞这一段），真实号是 TP1901/1905/1907。**我怀疑这条短程线可能已停飞，不成立** —— TAP 仍在飞，只是记录挑错了号。未见 TAP Express/Portugália 湿租迹象。来源级别 3"
+  }
 }

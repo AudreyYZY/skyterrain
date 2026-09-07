@@ -21,10 +21,6 @@ export interface RouteAnchorEntry {
 }
 
 export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorEntry>>> = {
-  "aey-egs": {
-    "zh-CN": { perSentence: [0, 1, 1, 1], source: "auto" },
-    "en-US": { perSentence: [0, 1, 1, 1], source: "auto" },
-  },
   "akl-chc": {
     "zh-CN": { perSentence: [0, 1, 3, 3, 3, 4, 4, 6], source: "auto" },
     "en-US": { perSentence: [0, 1, 3, 3, 3, 4, 5, 6], source: "auto" },
@@ -873,10 +869,6 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 1, 2, 3, 3], source: "auto" },
     "en-US": { perSentence: [0, 1, 2, 3, 3], source: "auto" },
   },
-  "rkv-hzk": {
-    "zh-CN": { perSentence: [0, 0, 0, 1, 1, 1, 1], source: "auto" },
-    "en-US": { perSentence: [0, 0, 1, 1, 1], source: "auto" },
-  },
   "rkv-ifj": {
     "zh-CN": { perSentence: [0, 0, 1, 1, 1, 1], source: "auto" },
     "en-US": { perSentence: [0, 0, 1, 1, 1, 1], source: "auto" },
@@ -1088,10 +1080,6 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
   "zag-puy": {
     "zh-CN": { perSentence: [0, 1, 2], source: "auto" },
     "en-US": { perSentence: [0, 1, 2], source: "auto" },
-  },
-  "zag-rjk": {
-    "zh-CN": { perSentence: [0, 1, 1], source: "auto" },
-    "en-US": { perSentence: [0, 1, 1], source: "auto" },
   },
   "zag-spu": {
     "zh-CN": { perSentence: [0, 1, 2], source: "auto" },

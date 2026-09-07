@@ -6,12 +6,47 @@
   "descriptionEn": "Douro Valley · Sete Cidades Caldera",
   "depCountry": "portugal",
   "arrCountry": "portugal",
-  "flight": { "airline": "亚速尔航空", "airlineEn": "SATA Azores Airlines", "flightNo": "S4204", "aircraft": "Airbus A320neo", "depIata": "OPO", "arrIata": "PDL", "durationMin": 175 },
+  "flight": {
+    "airline": "亚速尔航空",
+    "airlineEn": "Azores Airlines",
+    "flightNo": "S4172",
+    "aircraft": "Airbus A321neo",
+    "depIata": "OPO",
+    "arrIata": "PDL",
+    "durationMin": 175
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "opo", "name": "波尔图", "nameEn": "Porto", "lat": 41.2481, "lon": -8.6814, "airport": true },
-    { "kind": "terrain", "terrainId": "douro-valley" },
-    { "kind": "terrain", "terrainId": "sete-cidades-caldera" },
-    { "kind": "city", "id": "pdl", "name": "蓬塔德尔加达", "nameEn": "Ponta Delgada", "lat": 37.7412, "lon": -25.6979, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "opo",
+      "name": "波尔图",
+      "nameEn": "Porto",
+      "lat": 41.2481,
+      "lon": -8.6814,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "douro-valley"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sete-cidades-caldera"
+    },
+    {
+      "kind": "city",
+      "id": "pdl",
+      "name": "蓬塔德尔加达",
+      "nameEn": "Ponta Delgada",
+      "lat": 37.7412,
+      "lon": -25.6979,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Azores+Airlines-Ponta+Delgada-Porto/S4172",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：查不到 S4204 的路线记录。真实号是 S4172/4174/4176/4178，承运人写对了。**机型也错**：S4172 明确记录为 **A321-253N（A321neo）**，不是 A320neo。来源级别 3"
+  }
 }

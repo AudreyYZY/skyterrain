@@ -6,12 +6,47 @@
   "descriptionEn": "Päijänne · Kemijoki",
   "depCountry": "finland",
   "arrCountry": "finland",
-  "flight": { "airline": "芬兰航空", "airlineEn": "Finnair", "flightNo": "AY533", "aircraft": "Airbus A321", "depIata": "HEL", "arrIata": "RVN", "durationMin": 85 },
+  "flight": {
+    "airline": "芬兰航空",
+    "airlineEn": "Finnair",
+    "flightNo": "AY533",
+    "aircraft": "Airbus A321",
+    "depIata": "HEL",
+    "arrIata": "RVN",
+    "durationMin": 85
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "hel", "name": "赫尔辛基", "nameEn": "Helsinki", "lat": 60.3172, "lon": 24.9633, "airport": true },
-    { "kind": "terrain", "terrainId": "paijanne" },
-    { "kind": "terrain", "terrainId": "kemijoki" },
-    { "kind": "city", "id": "rvn", "name": "罗瓦涅米", "nameEn": "Rovaniemi", "lat": 66.5648, "lon": 25.8304, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hel",
+      "name": "赫尔辛基",
+      "nameEn": "Helsinki",
+      "lat": 60.3172,
+      "lon": 24.9633,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "paijanne"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kemijoki"
+    },
+    {
+      "kind": "city",
+      "id": "rvn",
+      "name": "罗瓦涅米",
+      "nameEn": "Rovaniemi",
+      "lat": 66.5648,
+      "lon": 25.8304,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.aeroroutes.com/eng/250617-aynw25rvntos",
+    "checkedOn": "2026-09-07",
+    "note": "属实：HEL 11:55→RVN 13:20 共 85min 与记录一致。**我提的湿租怀疑在这条上不成立** —— 该航段自 2025-10-27（NW25 冬季航季）起已从 Norra 的 ATR 72 支线机型**升级为芬兰航空自有主线 A320/A321 混飞**（罗瓦涅米圣诞老人村冬季客流大），承运方就是芬兰航空本身。来源级别 2（航空媒体报道航季调整）"
+  }
 }
