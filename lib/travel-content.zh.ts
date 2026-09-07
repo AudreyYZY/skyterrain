@@ -65,11 +65,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   geelong: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   City of Greater Geelong LGA 2025-06-30 ERP = 295,052（2024 年 288,676，+2.2%）。原文的「都会区」不是 ABS 口径，已改为议会辖区（LGA）。
     identity:
-      "吉朗在墨尔本西南约75公里的科里奥湾畔，都会区人口约27万，是维多利亚州第二大城市，也是澳式足球联赛（AFL）老牌球队吉朗猫队的主场所在。它曾是羊毛贸易和制造业重镇，如今是通往大洋路和贝拉林半岛的门户，很多人把它当作大洋路自驾的起点或中途落脚点，而不只是路过。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Geelong (City of Greater Geelong 1,329 km², ~283,000 2021; Corio Bay; Avalon airport; V/Line ~1 h; Torquay in Surf Coast Shire)
+      "吉朗在墨尔本西南约75公里的科里奥湾畔，辖区人口约29.5万（2025年6月，澳大利亚统计局ABS），是维多利亚州第二大城市，也是澳式足球联赛（AFL）老牌球队吉朗猫队的主场所在。它曾是羊毛贸易和制造业重镇，如今是通往大洋路和贝拉林半岛的门户，很多人把它当作大洋路自驾的起点或中途落脚点，而不只是路过。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   City of Greater Geelong LGA 2025-06-30 ERP = 295,052。
     howItWorks:
-      "吉朗是维多利亚州的第二大城市，由大吉朗市议会管辖，辖区约 1,330 平方公里，2021 年人口约 28 万；议会管垃圾、公园与规划审批，铁路、警察与学校归州政府。市中心在科里奥湾的西岸，滨水区是它的门面，阿瓦隆机场在城北，V/Line 火车到墨尔本约一小时。初来的人最容易犯的错，是把吉朗当作大洋路的起点，而托基与冲浪海岸属于另一个郡议会，大洋路的风景从那里才开始。",
+      "吉朗是维多利亚州的第二大城市，由大吉朗市议会管辖，辖区约 1,330 平方公里，2025 年 6 月辖区人口约 29.5 万；议会管垃圾、公园与规划审批，铁路、警察与学校归州政府。市中心在科里奥湾的西岸，滨水区是它的门面，阿瓦隆机场在城北，V/Line 火车到墨尔本约一小时。初来的人最容易犯的错，是把吉朗当作大洋路的起点，而托基与冲浪海岸属于另一个郡议会，大洋路的风景从那里才开始。",
     layout:
       "市中心紧贴科里奥湾的东沿海滨，滨海步道（Waterfront）串起考宁厄姆码头、东海滩海水浴场和103根彩绘系船柱（Baywalk Bollards）。老城区街道方整，国家羊毛博物馆和一批19世纪石砌建筑在市中心步行范围内。往西南出城不远就是欧特威山脉和大洋路的起点托尔坎；往东是贝拉林半岛，昆斯克利夫等历史小镇和葡萄酒产区都在半岛上。",
     gettingAround:
@@ -137,11 +142,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   cairns: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Cairns Regional Council LGA 2025-06-30 ERP = 179,334（2024 年 177,573，+1.0%）。原文的「都会区约15万」既非 ABS 口径、数值也偏低约 3 万。
     identity:
-      "凯恩斯在昆士兰州最北部的热带地区，是一座小城（都会区约15万人），几乎完全围绕旅游运转。它是探访大堡礁北段和戴恩树雨林的基地——世界上少有的“雨林紧挨珊瑚礁”的地方。全年炎热，分旱季和雨季。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Cairns (Cairns Regional Council; ~169,000 2021; Trinity Inlet CBD, Esplanade lagoon, no city beach; northern beaches; airport 7th busiest; Port Douglas in Douglas Shire)
+      "凯恩斯在昆士兰州最北部的热带地区，是一座小城（辖区约17.9万人（2025年6月，澳大利亚统计局ABS）），几乎完全围绕旅游运转。它是探访大堡礁北段和戴恩树雨林的基地——世界上少有的“雨林紧挨珊瑚礁”的地方。全年炎热，分旱季和雨季。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Cairns Regional Council LGA 2025-06-30 ERP = 179,334。
     howItWorks:
-      "凯恩斯是昆士兰远北的中心城市，由凯恩斯区域议会管辖，2021 年人口约 17 万；议会管地方服务，警察、医院与学校归州政府。市中心在三一湾的泥滩边，没有海滩，滨海大道上的人工泻湖代替了它，北面的海滩区是一串郊区，机场在城北，大堡礁靠船出海。初来的人最容易犯的错，是以为凯恩斯市区有海滩，而海滩在北面的郊区，道格拉斯港与丹翠雨林属于另一个郡议会，在 60 公里外。",
+      "凯恩斯是昆士兰远北的中心城市，由凯恩斯区域议会管辖，2025 年 6 月辖区人口约 17.9 万；议会管地方服务，警察、医院与学校归州政府。市中心在三一湾的泥滩边，没有海滩，滨海大道上的人工泻湖代替了它，北面的海滩区是一串郊区，机场在城北，大堡礁靠船出海。初来的人最容易犯的错，是以为凯恩斯市区有海滩，而海滩在北面的郊区，道格拉斯港与丹翠雨林属于另一个郡议会，在 60 公里外。",
     layout:
       "凯恩斯夹在珊瑚海和陡峭的雨林覆盖的山脉之间，平地很窄。市中心沿海滨步道展开（市区本身没有沙滩，有一个人工泻湖泳池）；往北是一串海滩郊区和道格拉斯港，往内陆上山是阿瑟顿高地，往海上出去就是大堡礁。",
     gettingAround:
@@ -245,11 +255,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   launceston: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Launceston SUA（城区）2025-06-30 ERP = 92,993。
     identity:
-      "朗塞斯顿在塔斯马尼亚北部，是该州第二大城市（约8.7万人），也是澳大利亚较早的内陆城市之一。它在三条河的汇合处，紧挨着一道叫卡塔拉克特峡谷（Cataract Gorge）的岩石峡谷。城市名取自英格兰康沃尔郡的朗塞斯顿。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Launceston (City of Launceston; ~91,000 urban 2021; head of the Tamar; Cataract Gorge; UNESCO City of Gastronomy 2021; Tamar Valley wine in West Tamar/George Town councils)
+      "朗塞斯顿在塔斯马尼亚北部，是该州第二大城市（城区约9.3万人（2025年6月，澳大利亚统计局ABS）），也是澳大利亚较早的内陆城市之一。它在三条河的汇合处，紧挨着一道叫卡塔拉克特峡谷（Cataract Gorge）的岩石峡谷。城市名取自英格兰康沃尔郡的朗塞斯顿。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Launceston SUA 2025-06-30 ERP = 92,993 —— **比 2024 年的 93,048 少了 55 人**，是本轮少见的下降案例，不要写成持续增长。
     howItWorks:
-      "朗塞斯顿是塔斯马尼亚的第二大城市，由朗塞斯顿市议会管辖，2021 年城区人口约 9 万；议会管地方服务，警察与学校归州政府。市中心在塔玛河的源头，北埃斯克河与南埃斯克河在此汇合，卡塔拉特峡谷就在市中心几百米外，2021 年它被评为联合国教科文组织美食之都，霍巴特在南面约 200 公里。初来的人最容易犯的错，是把塔玛河谷的酒庄当作朗塞斯顿的一部分，而它们分属西塔玛与乔治镇两个议会。",
+      "朗塞斯顿是塔斯马尼亚的第二大城市，由朗塞斯顿市议会管辖，2025 年 6 月城区人口约 9.3 万；议会管地方服务，警察与学校归州政府。市中心在塔玛河的源头，北埃斯克河与南埃斯克河在此汇合，卡塔拉特峡谷就在市中心几百米外，2021 年它被评为联合国教科文组织美食之都，霍巴特在南面约 200 公里。初来的人最容易犯的错，是把塔玛河谷的酒庄当作朗塞斯顿的一部分，而它们分属西塔玛与乔治镇两个议会。",
     layout:
       "市中心保留了大量维多利亚和爱德华时代的建筑，围绕几个广场展开，适合步行。塔马河从城边流过，往北是塔马河谷葡萄酒产区。卡塔拉克特峡谷在市区步行可达的范围内。",
     gettingAround:
@@ -263,11 +278,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   "alice-springs": {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Alice Springs Town Council LGA 2025-06-30 ERP = 30,875（2024 年 30,487，+1.3%）。
     identity:
-      "爱丽斯泉（原住民阿兰特语 Mparntwe）在澳大利亚正中心、麦克唐奈山脉之间，约2.5万人，是“红色中心”最大的居民点和补给站，到最近的大城市都约1500公里。它是探访乌鲁鲁、卡塔丘塔、国王峡谷和麦克唐奈山脉的基地。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Alice Springs (Alice Springs Town Council; ~24,900 2021; Todd River; MacDonnell Ranges; Arrernte/Mparntwe; Uluru ~450 km by road; Ghan)
+      "爱丽斯泉（原住民阿兰特语 Mparntwe）在澳大利亚正中心、麦克唐奈山脉之间，约3.1万人（2025年6月，澳大利亚统计局ABS），是“红色中心”最大的居民点和补给站，到最近的大城市都约1500公里。它是探访乌鲁鲁、卡塔丘塔、国王峡谷和麦克唐奈山脉的基地。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Alice Springs Town Council LGA 2025-06-30 ERP = 30,875。
     howItWorks:
-      "爱丽斯泉是北领地的第三大聚落，由爱丽斯泉镇议会管辖，2021 年人口约 2.5 万；镇议会管地方服务，警察、医院与学校归领地政府。镇子建在多半干涸的托德河两岸，麦克唐奈山脉在南面，阿伦特人是这片土地的传统所有者，机场在镇南，甘号列车从这里通往达尔文与阿德莱德。初来的人最容易犯的错，是以为乌鲁鲁在爱丽斯泉附近，而它在西南约 450 公里的尤拉拉，要开五个小时。",
+      "爱丽斯泉是北领地的第三大聚落，由爱丽斯泉镇议会管辖，2025 年 6 月镇辖区人口约 3.1 万；镇议会管地方服务，警察、医院与学校归领地政府。镇子建在多半干涸的托德河两岸，麦克唐奈山脉在南面，阿伦特人是这片土地的传统所有者，机场在镇南，甘号列车从这里通往达尔文与阿德莱德。初来的人最容易犯的错，是以为乌鲁鲁在爱丽斯泉附近，而它在西南约 450 公里的尤拉拉，要开五个小时。",
     layout:
       "小城被麦克唐奈山脉的一道缺口（Heavitree Gap）夹住，托德河（多数时候是干河床）穿城而过，市中心几个街区就能走完。四周立刻是红色的山脊和荒漠。乌鲁鲁其实在约450公里外、车程约5小时，不算“近郊”。",
     gettingAround:
@@ -299,11 +319,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   broome: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Shire of Broome LGA 2025-06-30 ERP = 19,193（2024 年 19,001，+1.0%）。
     identity:
-      "布鲁姆在西澳大利亚西北的金伯利海岸，约1.5万人，是一座偏远的海滨小城，以红色的岩石海岸、长沙滩和采珍珠的历史闻名，到珀斯约2200公里。它是从海路进入金伯利地区的门户。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Broome (Shire of Broome; 14,660 2021; Cable Beach vs Chinatown; pearling; Yawuru native title 2006; Perth ~2,050 km)
+      "布鲁姆在西澳大利亚西北的金伯利海岸，约1.9万人（2025年6月，澳大利亚统计局ABS），是一座偏远的海滨小城，以红色的岩石海岸、长沙滩和采珍珠的历史闻名，到珀斯约2200公里。它是从海路进入金伯利地区的门户。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Shire of Broome LGA 2025-06-30 ERP = 19,193。
     howItWorks:
-      "布鲁姆是金伯利地区最大的镇，由布鲁姆郡议会管辖，2021 年人口约 1.5 万；郡议会管地方服务，其余归州政府，珀斯在南面两千多公里。镇子分两片：老镇以“唐人街”为中心，是 1880 年代珍珠业留下的街区，日本、中国、马来潜水员的墓地记着那段历史；凯布尔海滩在西面几公里，是度假区。雅乌鲁人 2006 年获得这片土地的原住民所有权。初来的人最容易犯的错，是把布鲁姆当作凯布尔海滩，而镇中心在另一边的海湾上，两者之间要开车。",
+      "布鲁姆是金伯利地区最大的镇，由布鲁姆郡议会管辖，2025 年 6 月郡辖区人口约 1.9 万；郡议会管地方服务，其余归州政府，珀斯在南面两千多公里。镇子分两片：老镇以“唐人街”为中心，是 1880 年代珍珠业留下的街区，日本、中国、马来潜水员的墓地记着那段历史；凯布尔海滩在西面几公里，是度假区。雅乌鲁人 2006 年获得这片土地的原住民所有权。初来的人最容易犯的错，是把布鲁姆当作凯布尔海滩，而镇中心在另一边的海湾上，两者之间要开车。",
     layout:
       "布鲁姆在一个半岛上：西侧是长约22公里的凯布尔海滩（面朝印度洋，看日落），东侧是罗巴克湾的红树林和大潮泥滩。“中国城”一带是老城中心，如今是餐饮和店铺区。城市尺度小。",
     gettingAround:
@@ -373,9 +398,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "byron-bay": {
     identity:
       "拜伦湾（Byron Bay）是新南威尔士州最东北角的一座海滨小镇，常住人口只有约6300（2021年普查），每年却接待约200万游客。镇旁的拜伦角（Cape Byron）是澳大利亚大陆的最东端，1901年建成的灯塔立在岬角顶上。这里从二十世纪七十年代起因冲浪者和另类文化社区而出名，今天以海滩、冲浪、观鲸、瑜伽和音乐节著称。传统土地所有者是邦贾隆族（Bundjalung）的阿拉夸尔人（Arakwal），传统地名Cavvanbah意为“相聚之地”。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Byron Bay (town ~6,300–10,900 2021 in Byron Shire ~35,000; easternmost point; Bundjalung; Ballina airport 30 km; ~2 million visitors/yr)
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Byron Bay 有独立于 Byron Shire 的 SUA 编码：Byron Bay SUA 2025-06-30 ERP = 11,482；Byron Shire LGA = 38,784，是镇本身的约 3.4 倍，务必不要用郡数字冒充镇数字。
     howItWorks:
-      "拜伦湾是新南威尔士北海岸的一座海滨小镇，2021 年常住人口约一万，属于拜伦郡议会（约 3.5 万人，郡府在马伦宾比）；郡议会管地方服务，其余归州政府。镇子在澳大利亚大陆最东端的拜伦角下，灯塔在岬角上，每年约 200 万游客涌入一个几千人的镇，房价是全国最高的一档；腹地的班加洛、马伦宾比是另一种生活，机场在南面 30 公里的巴利纳。初来的人最容易犯的错，是把拜伦湾当作一座城，而它是一个郡里的一个镇，郡政府不在这里。",
+      "拜伦湾是新南威尔士北海岸的一座海滨小镇，2025 年 6 月城区常住人口约 1.1 万，属于拜伦郡议会（郡辖区约 3.9 万人，郡府在马伦宾比）；郡议会管地方服务，其余归州政府。镇子在澳大利亚大陆最东端的拜伦角下，灯塔在岬角上，每年约 200 万游客涌入一个几千人的镇，房价是全国最高的一档；腹地的班加洛、马伦宾比是另一种生活，机场在南面 30 公里的巴利纳。初来的人最容易犯的错，是把拜伦湾当作一座城，而它是一个郡里的一个镇，郡政府不在这里。",
     layout:
       "小镇在拜伦角西侧的海湾边，主街是Jonson Street，从镇中心走到主海滩只要几分钟。拜伦角向东伸入太平洋，从镇上沿海岸步道到灯塔约4公里，沿途经过瓦特戈斯海滩（Wategos）和最东端观景点。镇北是塔洛湾（Tallow Beach）的长沙滩，镇南沿海是萨福克公园和布罗肯黑德。往内陆是起伏的丘陵和小镇（班加罗、尼姆宾）。机场在南面的巴利纳。",
     gettingAround:
@@ -388,11 +415,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "9–11月和3–5月最舒服、人相对少；12–1月和复活节音乐节期间住宿极紧、价格高。夏季午后常有雷雨。镇内停车紧张、收费，尽量步行或骑行。去灯塔的步道有陡坡，带水和防晒。",
   },
   "coffs-harbour": {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   City of Coffs Harbour LGA 2025-06-30 ERP = 82,109（2024 年 81,529，+0.7%）。
     identity:
-      "科夫斯港（Coffs Harbour）在新南威尔士州中北海岸，悉尼以北约530公里、布里斯班以南约390公里，人口约7.9万（2021年普查）。这里是新南威尔士州唯一大分水岭直接抵达太平洋的地方，山地雨林和海岸在几公里内相接。它曾靠木材和香蕉种植业发展，1964年建成的“大香蕉”是澳大利亚最早的“大物件”地标之一；今天以海滩、海洋公园和通往冈瓦纳雨林世界遗产的门户地位为主。传统土地所有者是甘拜恩吉尔人（Gumbaynggirr）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Coffs Harbour (City of Coffs Harbour LGA ~78,800 2021; Gumbaynggirr; jetty; Big Banana; airport; Pacific Highway bypass under construction; Sydney 529 km)
+      "科夫斯港（Coffs Harbour）在新南威尔士州中北海岸，悉尼以北约530公里、布里斯班以南约390公里，辖区人口约8.2万（2025年6月，澳大利亚统计局ABS）。这里是新南威尔士州唯一大分水岭直接抵达太平洋的地方，山地雨林和海岸在几公里内相接。它曾靠木材和香蕉种植业发展，1964年建成的“大香蕉”是澳大利亚最早的“大物件”地标之一；今天以海滩、海洋公园和通往冈瓦纳雨林世界遗产的门户地位为主。传统土地所有者是甘拜恩吉尔人（Gumbaynggirr）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   City of Coffs Harbour LGA 2025-06-30 ERP = 82,109。
     howItWorks:
-      "科夫斯港是新南威尔士中北海岸的城市，由科夫斯港市议会管辖，2021 年人口约 7.9 万；议会管地方服务，其余归州政府。市中心在太平洋公路边的内陆一侧，港口与木栈桥在海边几公里外，麦特恩鸟岛靠防波堤相连，大香蕉在城北的公路上，机场在城南；太平洋公路的绕城段正在建设。这里是古姆拜恩吉尔人的土地。初来的人最容易犯的错，是以为市中心在海边，而市中心与港口之间隔着铁路与几公里的路。",
+      "科夫斯港是新南威尔士中北海岸的城市，由科夫斯港市议会管辖，2025 年 6 月辖区人口约 8.2 万；议会管地方服务，其余归州政府。市中心在太平洋公路边的内陆一侧，港口与木栈桥在海边几公里外，麦特恩鸟岛靠防波堤相连，大香蕉在城北的公路上，机场在城南；太平洋公路的绕城段正在建设。这里是古姆拜恩吉尔人的土地。初来的人最容易犯的错，是以为市中心在海边，而市中心与港口之间隔着铁路与几公里的路。",
     layout:
       "市区在海岸平原上，港口和木结构的老码头在市中心东侧，防波堤连着海燕岛（Muttonbird Island）自然保护区，岛上是短尾鹱的繁殖地。往北沿海是帕克海滩和一串海滩郊区，大香蕉在市区北面的太平洋公路旁；孤岛海洋公园（Solitary Islands）从这里向北延伸约75公里。往西约60公里翻上大分水岭是多里戈国家公园（冈瓦纳雨林世界遗产的一部分）。机场在市区南约3公里。",
     gettingAround:
@@ -422,11 +454,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "10–11月和3–5月最舒服，秋季鲁拉的落叶最美；夏季山火风险高、有时封路；冬季冷、偶有雪景。天气比悉尼多变，带外套雨具。景观世界旺季排队，清早去。悉尼当日往返可行，住一晚能看到清晨的云海。",
   },
   ballarat: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   City of Ballarat LGA 2025-06-30 ERP = 122,661（2024 年 120,559，+1.7%）。
     identity:
-      "巴拉瑞特（Ballarat）在维多利亚州中部高地，墨尔本西北约110公里，人口约11.6万（2021年普查），是澳大利亚人口最多的内陆城市之一。1851年8月这里发现黄金，几年内涌入数万淘金者；1854年12月3日的尤里卡栅栏事件（矿工武装抗议采矿执照制度，22名矿工死亡）被视为澳大利亚民主史上的标志性事件。淘金时代留下了宽阔的林荫大道和维多利亚式建筑群，1970年开放的疏芬山（Sovereign Hill）露天博物馆复原了1850年代的金矿镇。传统土地所有者是瓦达乌龙人（Wadawurrung）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Ballarat (City of Ballarat; ~116,000 2021; 110 km from Melbourne; gold 1851; Eureka 1854; Sovereign Hill; Lydiard Street; Lake Wendouree)
+      "巴拉瑞特（Ballarat）在维多利亚州中部高地，墨尔本西北约110公里，辖区人口约12.3万（2025年6月，澳大利亚统计局ABS），是澳大利亚人口最多的内陆城市之一。1851年8月这里发现黄金，几年内涌入数万淘金者；1854年12月3日的尤里卡栅栏事件（矿工武装抗议采矿执照制度，22名矿工死亡）被视为澳大利亚民主史上的标志性事件。淘金时代留下了宽阔的林荫大道和维多利亚式建筑群，1970年开放的疏芬山（Sovereign Hill）露天博物馆复原了1850年代的金矿镇。传统土地所有者是瓦达乌龙人（Wadawurrung）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   City of Ballarat LGA 2025-06-30 ERP = 122,661。
     howItWorks:
-      "巴拉瑞特是维多利亚州的内陆城市，由巴拉瑞特市议会管辖，2021 年人口约 11.6 万，墨尔本在东南 110 公里，火车约一个多小时；议会管地方服务，其余归州政府。1851 年的淘金热建起了这座城，利迪亚德街的维多利亚式石楼是那个年代的遗产，1854 年的尤里卡起义在城东，疏芬山是重建的淘金镇，温杜里湖在城西。初来的人最容易犯的错，是把巴拉瑞特当作一座主题公园的所在，而它是一座有大学与医院的区域首府，疏芬山只是城郊的一角。",
+      "巴拉瑞特是维多利亚州的内陆城市，由巴拉瑞特市议会管辖，2025 年 6 月辖区人口约 12.3 万，墨尔本在东南 110 公里，火车约一个多小时；议会管地方服务，其余归州政府。1851 年的淘金热建起了这座城，利迪亚德街的维多利亚式石楼是那个年代的遗产，1854 年的尤里卡起义在城东，疏芬山是重建的淘金镇，温杜里湖在城西。初来的人最容易犯的错，是把巴拉瑞特当作一座主题公园的所在，而它是一座有大学与医院的区域首府，疏芬山只是城郊的一角。",
     layout:
       "市中心在斯特尔特街（Sturt Street）两侧，这条林荫大道从火车站向西延伸到温多利湖，两侧是十九世纪的银行、剧院和酒店；巴拉瑞特美术馆（1884年建，澳大利亚最早的地区美术馆）在市中心。温多利湖在城西，湖畔是植物园和1956年墨尔本奥运会的赛艇场地。疏芬山在城南约3公里的山坡上，尤里卡中心在城东。周围是起伏的农田和火山高原。",
     gettingAround:
@@ -439,11 +476,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "10–11月和3–5月最舒服，3月秋海棠节最热闹；冬季（6–8月）冷，疏芬山冬季有夜间灯光活动。从墨尔本当日往返方便，疏芬山至少留半天。冬夏温差大，多备衣物。",
   },
   bendigo: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Bendigo SUA（城区）2025-06-30 ERP = 106,493（2024 年 105,610，+0.8%）。
     identity:
-      "本迪戈（Bendigo）在维多利亚州中部，墨尔本西北约150公里，人口约10.3万（2021年普查），是维多利亚州第四大城市。1851年10月本迪戈溪发现黄金，此后它成为世界上产金最多的金矿区之一（历史产量超过600吨），淘金时代的财富留下了大批维多利亚式公共建筑；华人矿工的到来则留下了澳大利亚最深厚的华人历史之一，金龙博物馆和每年复活节的舞龙游行延续至今。传统土地所有者是贾贾乌龙人（Dja Dja Wurrung）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bendigo (City of Greater Bendigo ~3,000 km²; urban ~103,000 2021; gold 1851; Sandhurst 1853–1891; Chinese heritage/Golden Dragon Museum; UNESCO City of Gastronomy 2019; 150 km from Melbourne)
+      "本迪戈（Bendigo）在维多利亚州中部，墨尔本西北约150公里，城区人口约10.6万（2025年6月，澳大利亚统计局ABS），是维多利亚州第四大城市。1851年10月本迪戈溪发现黄金，此后它成为世界上产金最多的金矿区之一（历史产量超过600吨），淘金时代的财富留下了大批维多利亚式公共建筑；华人矿工的到来则留下了澳大利亚最深厚的华人历史之一，金龙博物馆和每年复活节的舞龙游行延续至今。传统土地所有者是贾贾乌龙人（Dja Dja Wurrung）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Bendigo SUA 2025-06-30 ERP = 106,493。
     howItWorks:
-      "本迪戈是维多利亚州中北部的城市，由大本迪戈市议会管辖，辖区约 3,000 平方公里，2021 年城区人口约 10 万，墨尔本在南面 150 公里；议会管地方服务，其余归州政府。1851 年淘金热建起了这座城，1853 至 1891 年间官方名为桑德赫斯特，市中心的圣心大教堂、三叶草旅馆是那个年代的建筑，19 世纪中叶约五分之一的居民是华人，金龙博物馆记着这段历史，2019 年它被评为联合国教科文组织美食之都。初来的人最容易犯的错，是把本迪戈当作一座采矿小镇，而它是维多利亚第四大城市，本迪戈银行的总部在此。",
+      "本迪戈是维多利亚州中北部的城市，由大本迪戈市议会管辖，辖区约 3,000 平方公里，2025 年 6 月城区人口约 10.6 万，墨尔本在南面 150 公里；议会管地方服务，其余归州政府。1851 年淘金热建起了这座城，1853 至 1891 年间官方名为桑德赫斯特，市中心的圣心大教堂、三叶草旅馆是那个年代的建筑，19 世纪中叶约五分之一的居民是华人，金龙博物馆记着这段历史，2019 年它被评为联合国教科文组织美食之都。初来的人最容易犯的错，是把本迪戈当作一座采矿小镇，而它是维多利亚第四大城市，本迪戈银行的总部在此。",
     layout:
       "市中心在帕尔街（Pall Mall）一带，亚历山德拉喷泉、邮局大楼、莎玛剧院和罗莎琳德公园构成核心；圣心大教堂（1977年完工，澳大利亚最大的教区教堂之一）的尖塔在市中心西南是全城地标。中央德博拉金矿在市中心南面，游客可以下到地下矿道；金龙博物馆在市中心东侧的华人区（毗邻中式花园和关帝庙）。老式有轨电车沿主街往返。周围是矮丘和桉树林，本迪戈溪穿城。",
     gettingAround:
@@ -456,11 +498,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "3–5月和9–11月最舒服，复活节游行是最大活动；夏季（1–2月）常超过35℃，冬季早晚冷。从墨尔本当日往返方便，美术馆有特展时需预约。可与巴拉瑞特、戴尔斯福德连线走维州金矿区。",
   },
   "sunshine-coast": {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Sunshine Coast SUA（城区）2025-06-30 ERP = 424,741。
     identity:
-      "阳光海岸（Sunshine Coast）在昆士兰州东南部，布里斯班以北约100公里，是一片约60公里长的海岸城区，城区人口约39.9万（2021年，全澳第九大城区）。它不是一座传统意义上的城市，而是由卡伦德拉、卡瓦纳、马鲁奇多、努萨等海滨城镇连成的一体化都市区，行政中心在马鲁奇多。海滩、努萨国家公园、内陆的玻璃屋山和马莱尼—蒙特维尔丘陵小镇是它的四张名片。传统土地所有者是卡比卡比人（Kabi Kabi）和吉尼巴拉人（Jinibara）。",
-    // howItWorks sources: Wikipedia (2026-09): Sunshine Coast Region (2008 amalgamation, Noosa 2014; Maroochydore; Kabi Kabi/Jinibara); ABS ERP 2025-06 SUA
+      "阳光海岸（Sunshine Coast）在昆士兰州东南部，布里斯班以北约100公里，是一片约60公里长的海岸城区，城区人口约42.5万（2025年6月，澳大利亚统计局ABS，全澳第九大城区）。它不是一座传统意义上的城市，而是由卡伦德拉、卡瓦纳、马鲁奇多、努萨等海滨城镇连成的一体化都市区，行政中心在马鲁奇多。海滩、努萨国家公园、内陆的玻璃屋山和马莱尼—蒙特维尔丘陵小镇是它的四张名片。传统土地所有者是卡比卡比人（Kabi Kabi）和吉尼巴拉人（Jinibara）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   **这条原来不是「数字过时」，是同一段里混用了两个口径**：34 万是 2021 年 LGA（阳光海岸区议会）数，42 万是 2025 年 SUA（城区）数，两句各自都对，但并排放会读成「一件事涨了 8 万人」。已统一到同一年份、两个口径各自标明：LGA 2025-06-30 ERP = 381,957，SUA = 424,741。
     howItWorks:
-      "阳光海岸是一个 2008 年由卡伦德拉市、马鲁奇郡和努萨郡合并而成的地方政府，2014 年努萨郡又独立出去；今天的阳光海岸区面积约 2,254 平方公里，2021 年普查人口约 34 万，2025 年 6 月城区常住人口约 42 万。它没有一个传统的市中心：议会把马鲁奇多尔定为新建的中心商务区，卡伦德拉和内陆的南伯是另外两个主要中心，海岸线上的小镇一个接一个连成带状。火车、公交由昆士兰州政府运营，日常出行几乎全靠汽车。这里是卡比卡比人和吉尼巴拉人的土地。地址写 suburb、QLD 和邮编。初来的人最容易犯的错，是寻找一个不存在的“阳光海岸市中心”，而这里的生活分散在沿海一连串各有性格的小镇之间。",
+      "阳光海岸是一个 2008 年由卡伦德拉市、马鲁奇郡和努萨郡合并而成的地方政府，2014 年努萨郡又独立出去；今天的阳光海岸区面积约 2,254 平方公里，2025 年 6 月辖区常住人口约 38.2 万、城区约 42.5 万。它没有一个传统的市中心：议会把马鲁奇多尔定为新建的中心商务区，卡伦德拉和内陆的南伯是另外两个主要中心，海岸线上的小镇一个接一个连成带状。火车、公交由昆士兰州政府运营，日常出行几乎全靠汽车。这里是卡比卡比人和吉尼巴拉人的土地。地址写 suburb、QLD 和邮编。初来的人最容易犯的错，是寻找一个不存在的“阳光海岸市中心”，而这里的生活分散在沿海一连串各有性格的小镇之间。",
     layout:
       "海岸线从南端的卡伦德拉、卡瓦纳、穆卢拉巴（游艇码头、海滩），经马鲁奇多（商业中心、马鲁奇河口）到北端的努萨（努萨岬、努萨河、黑斯廷斯街），沿海一路是沙滩和冲浪点。内陆西侧是布莱克山脉的丘陵，玻璃屋山（1770年库克船长命名的一组火山岩峰）在南部内陆，澳大利亚动物园在比尔瓦；马莱尼、蒙特维尔在山脊上俯瞰海岸，尤门迪市集在努萨内陆。机场在马鲁奇多以北约10公里的马库拉。",
     gettingAround:
@@ -473,8 +520,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年可来：4–10月最舒服、雨少，6–8月是南方游客的避寒旺季；12–2月湿热、下午雷雨，学校假期海滩很挤。努萨假期住宿要早订、停车难。内陆山区比海边凉，带外套。",
   },
   townsville: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Townsville SUA（城区）2025-06-30 ERP = 190,551（2024 年 188,799，+0.9%）。原文「人口约20万」既没有年份也没有口径。
     identity:
-      "汤斯维尔（Townsville）是昆士兰州北部最大的城市，在凯恩斯以南约350公里的干热带海岸上，人口约20万，1864年建镇。它是北昆士兰的行政、军事和教育中心（詹姆斯库克大学主校区、拉瓦拉克军营），也是大堡礁中段和磁岛的门户；市中心背后的城堡山（286米）是花岗岩独立山，海滨的斯特兰德大道是城市的客厅。与凯恩斯不同，汤斯维尔一年有约300天晴天，属“干热带”。传统土地所有者是伍尔古鲁卡巴人（Wulgurukaba）和宾达尔人（Bindal）。",
+      "汤斯维尔（Townsville）是昆士兰州北部最大的城市，在凯恩斯以南约350公里的干热带海岸上，城区人口约19.1万（2025年6月，澳大利亚统计局ABS），1864年建镇。它是北昆士兰的行政、军事和教育中心（詹姆斯库克大学主校区、拉瓦拉克军营），也是大堡礁中段和磁岛的门户；市中心背后的城堡山（286米）是花岗岩独立山，海滨的斯特兰德大道是城市的客厅。与凯恩斯不同，汤斯维尔一年有约300天晴天，属“干热带”。传统土地所有者是伍尔古鲁卡巴人（Wulgurukaba）和宾达尔人（Bindal）。",
     // howItWorks sources: Wikipedia (2026-09): City of Townsville (2008 Thuringowa merger; 3,731 km²; Bindal/Wulgurukaba); ABS ERP 2025-06 SUA
     howItWorks:
       "汤斯维尔是澳大利亚北部最大的城市，2025 年 6 月城区常住人口约 19 万。2008 年，汤斯维尔市与西面的图林戈瓦市合并成一个议会，如今 City of Townsville 管着约 3,731 平方公里的土地，从南面的鳄鱼溪到北面的帕卢马山地，连海上的磁岛也在其中。学校、医院、公交与警察归昆士兰州政府。城市围绕城堡山展开，中心商务区在海边的半岛上，国防基地和詹姆斯库克大学是城市经济的两根支柱。这里是宾达尔人和伍尔古鲁卡巴人的土地。地址写 suburb、QLD 和邮编。初来的人最容易犯的错，是把汤斯维尔想成凯恩斯那样的度假城市，而它的经济以国防、大学和港口为主。",
@@ -490,11 +540,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–10月最舒服、晴朗少雨；12–3月湿热、有热带气旋风险。海里游泳遵守水母季规定、穿防蜇衣。磁岛渡轮班次多，住岛上一晚更从容。城堡山步道暴晒，清晨或傍晚走。",
   },
   toowoomba: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   排名复核：2025-06-30 SUA 表里人口多于图文巴（153,781）的内陆城区只有堪培拉—奎恩比恩（521,049），其余更大的都是沿海城区。断言成立，补口径限定。
     identity:
-      "图文巴（Toowoomba）在昆士兰州东南部大分水岭的山脊上，布里斯班以西约130公里，海拔约690米，人口约14.2万（2021年普查），是澳大利亚人口第二多的内陆城市（仅次于堪培拉）。它以“花园之城”著称，每年9月的花卉嘉年华自1949年起举办；高地气候比昆士兰沿海凉爽，冬季有霜。2014年通车的韦尔坎普机场是澳大利亚几十年来第一座新建的大型民用机场。传统土地所有者是吉阿巴尔人（Giabal）和贾罗韦尔人（Jarowair）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Toowoomba (Toowoomba Region ~13,000 km²; urban 142,163 2021; crest of the Great Dividing Range ~700 m; Carnival of Flowers Sept; Wellcamp airport 2014; Brisbane 132 km)
+      "图文巴（Toowoomba）在昆士兰州东南部大分水岭的山脊上，布里斯班以西约130公里，海拔约690米，城区人口约15.4万（2025年6月，澳大利亚统计局ABS），按城区人口计是澳大利亚第二多的内陆城市（仅次于堪培拉—奎恩比恩）。它以“花园之城”著称，每年9月的花卉嘉年华自1949年起举办；高地气候比昆士兰沿海凉爽，冬季有霜。2014年通车的韦尔坎普机场是澳大利亚几十年来第一座新建的大型民用机场。传统土地所有者是吉阿巴尔人（Giabal）和贾罗韦尔人（Jarowair）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期 2025–26 财年预计 2027-03。**城市级人口用这个年度 ERP，不用五年一次的普查数。**
+    //   Toowoomba SUA 2025-06-30 ERP = 153,781。
+    //   同条目的「澳大利亚人口第二多的内陆城市」排名断言已用 2025 年 ABS 城区表全量排序复核：全国城区人口比图文巴多的内陆城区只有堪培拉—奎恩比恩（521,049），巴拉瑞特（120,939）与本迪戈（106,493）都在其后，**断言仍成立**；正文已补上「按城区人口计」的口径限定，避免被读成行政区排名。
     howItWorks:
-      "图文巴是澳大利亚人口第二多的内陆城市，由图文巴区域议会管辖，辖区约 1.3 万平方公里，2021 年城区人口约 14 万，布里斯班在东面 132 公里；议会管地方服务，其余归州政府。城市建在大分水岭的山脊上，海拔约 700 米，大部分市区在分水岭以西，是达令草地的门户，159 座公园让它自称“花园城市”，每年九月的花卉节是它的名片，威尔坎普机场 2014 年由私人建成。初来的人最容易犯的错，是把图文巴当作布里斯班的郊区，而它在山脊上的另一侧，气候与平原完全不同。",
+      "图文巴是澳大利亚人口第二多的内陆城市，由图文巴区域议会管辖，辖区约 1.3 万平方公里，2025 年 6 月城区人口约 15.4 万，布里斯班在东面 132 公里；议会管地方服务，其余归州政府。城市建在大分水岭的山脊上，海拔约 700 米，大部分市区在分水岭以西，是达令草地的门户，159 座公园让它自称“花园城市”，每年九月的花卉节是它的名片，威尔坎普机场 2014 年由私人建成。初来的人最容易犯的错，是把图文巴当作布里斯班的郊区，而它在山脊上的另一侧，气候与平原完全不同。",
     layout:
       "城市建在山脊顶部的平台上，东缘是大分水岭的陡崖，野餐点（Picnic Point）等观景台俯瞰洛克耶谷和通往布里斯班的方向。市中心在鲁斯文街一带，女王公园和植物园在市中心东侧，是花卉嘉年华的主场地。西面缓坡向达令丘陵农业区展开。机场在市中心以西约16公里。周边有克罗斯山国家公园和布尼亚山（西北约150公里）。",
     gettingAround:
@@ -524,11 +580,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6–10月最舒服，风稳、水清、少雨，也是旺季；12–3月湿热多雨。出海项目提前订，多日帆船提前更久。晕船者备药。白天堂海滩日晒极强，带足防晒和水。",
   },
   albany: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   City of Albany LGA 2025-06-30 ERP = 42,308（2024 年 41,714，+1.4%）。
     identity:
-      "奥尔巴尼（Albany）在西澳大利亚州南海岸，珀斯东南约420公里，人口约3.5万（2021年普查）。1826年12月26日英国在此建立据点，比珀斯和弗里曼特尔早两年多，是西澳最早的殖民定居点。乔治王湾是天然深水良港，1914年第一批澳新军团的运兵船队从这里出发；2014年开放的国家澳新军团中心以此为主题。城南托恩迪拉普国家公园的“大裂口”和“天然桥”是花岗岩海岸的地标，1978年关闭的捕鲸站是澳大利亚最后一座。传统土地所有者是努恩加人（Noongar）中的梅南人（Menang）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Albany (City of Albany; 35,053 2021; founded 1826, oldest colonial settlement in WA; King George Sound; National Anzac Centre 2014; whaling station closed 1978; Perth 418 km)
+      "奥尔巴尼（Albany）在西澳大利亚州南海岸，珀斯东南约420公里，辖区人口约4.2万（2025年6月，澳大利亚统计局ABS）。1826年12月26日英国在此建立据点，比珀斯和弗里曼特尔早两年多，是西澳最早的殖民定居点。乔治王湾是天然深水良港，1914年第一批澳新军团的运兵船队从这里出发；2014年开放的国家澳新军团中心以此为主题。城南托恩迪拉普国家公园的“大裂口”和“天然桥”是花岗岩海岸的地标，1978年关闭的捕鲸站是澳大利亚最后一座。传统土地所有者是努恩加人（Noongar）中的梅南人（Menang）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   City of Albany LGA 2025-06-30 ERP = 42,308。
     howItWorks:
-      "奥尔巴尼是西澳大南部地区的港口城市，由奥尔巴尼市议会管辖，2021 年人口约 3.5 万，珀斯在北面 418 公里；议会管地方服务，其余归州政府。1826 年建立的这座城比珀斯还早两年，是西澳最早的殖民聚落，市中心在两座山之间俯瞰公主皇家港，1914 年澳新军团的船队从乔治王湾出发，国家澳新军团中心 2014 年建在山上；1978 年关闭的捕鲸站在城外的海角，如今是博物馆。初来的人最容易犯的错，是把奥尔巴尼当作珀斯的边缘小镇，而它是这个州最老的城，有自己的港口与历史。",
+      "奥尔巴尼是西澳大南部地区的港口城市，由奥尔巴尼市议会管辖，2025 年 6 月辖区人口约 4.2 万，珀斯在北面 418 公里；议会管地方服务，其余归州政府。1826 年建立的这座城比珀斯还早两年，是西澳最早的殖民聚落，市中心在两座山之间俯瞰公主皇家港，1914 年澳新军团的船队从乔治王湾出发，国家澳新军团中心 2014 年建在山上；1978 年关闭的捕鲸站在城外的海角，如今是博物馆。初来的人最容易犯的错，是把奥尔巴尼当作珀斯的边缘小镇，而它是这个州最老的城，有自己的港口与历史。",
     layout:
       "城市坐落在公主皇家港北岸的山坡上，克拉伦斯山和梅尔维尔山夹着老城，老城区沿斯特灵台地和约克街有大批殖民时期建筑。公主皇家港向东通向乔治王湾，湾口的国家澳新军团中心在克拉伦斯山的澳新军团公园里。城南隔港是托恩迪拉普半岛，大裂口、天然桥、鲸鱼世界（旧捕鲸站）都在那里；城东约35公里是双子峰国家公园。机场在城西北约11公里。",
     gettingAround:
@@ -541,11 +602,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "10–4月最舒服；6–10月看鲸，但冬季多雨风大。南海岸海况危险，只在有巡逻的海滩游泳。城市与珀斯距离远，通常与玛格丽特河、丹麦镇、埃斯佩兰斯连成南部环线。",
   },
   busselton: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Busselton UCL（城区）2021 年普查 27,233 人 —— **ABS 只在普查年更新 UCL**，所以这个数不是过期，要等 2026 年普查结果公布才会有新数；正文已注明这一点。同一时点 City of Busselton LGA 为 46,184、Busselton SUA 为 46,023，范围都比 UCL 大得多，不能拿来替换。
     identity:
-      "巴瑟尔顿（Busselton）在西澳大利亚州西南部的地理湾畔，珀斯以南约220公里，人口约2.7万（2021年普查），是通往玛格丽特河葡萄酒产区和利文—纳图拉利斯特角的门户。它的地标是伸入海湾1841米的木栈桥——南半球最长的木结构栈桥，1864年开建、上世纪六十年代才停止延长，桥头有海底观测站。地理湾水浅、平静，是西澳最受欢迎的家庭海滩之一。传统土地所有者是努恩加人中的瓦丹迪人（Wadandi）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Busselton (City of Busselton ~40,600 2021, town 27,233; Geographe Bay; jetty 1,841 m; Margaret River in Shire of Augusta–Margaret River; Dunsborough in Busselton LGA; Perth 220 km)
+      "巴瑟尔顿（Busselton）在西澳大利亚州西南部的地理湾畔，珀斯以南约220公里，城区人口约2.7万（2021年人口普查；ABS 的城区口径此后未逐年更新），是通往玛格丽特河葡萄酒产区和利文—纳图拉利斯特角的门户。它的地标是伸入海湾1841米的木栈桥——南半球最长的木结构栈桥，1864年开建、上世纪六十年代才停止延长，桥头有海底观测站。地理湾水浅、平静，是西澳最受欢迎的家庭海滩之一。传统土地所有者是努恩加人中的瓦丹迪人（Wadandi）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   City of Busselton LGA 2025-06-30 ERP = 46,184（2024 年 45,189，+2.2%，西澳增速最快之一）。
     howItWorks:
-      "巴瑟尔顿是西澳西南部增长最快的城市之一，由巴瑟尔顿市议会管辖，2021 年辖区人口约 4 万，珀斯在北面 220 公里；议会管地方服务，其余归州政府。镇子在地理湾的南岸，1,841 米长的木栈桥伸进海里，是南半球最长的；邓斯伯勒与亚林加普在辖区西端，机场在镇外。初来的人最容易犯的错，是把玛格丽特河酒区当作巴瑟尔顿的一部分，而玛格丽特河属于南面另一个郡议会，巴瑟尔顿只是它的北门。",
+      "巴瑟尔顿是西澳西南部增长最快的城市之一，由巴瑟尔顿市议会管辖，2025 年 6 月辖区人口约 4.6 万，珀斯在北面 220 公里；议会管地方服务，其余归州政府。镇子在地理湾的南岸，1,841 米长的木栈桥伸进海里，是南半球最长的；邓斯伯勒与亚林加普在辖区西端，机场在镇外。初来的人最容易犯的错，是把玛格丽特河酒区当作巴瑟尔顿的一部分，而玛格丽特河属于南面另一个郡议会，巴瑟尔顿只是它的北门。",
     layout:
       "城镇沿地理湾南岸展开，栈桥从市中心海滩笔直伸入海中，桥上有小火车。西面沿湾是邓斯伯勒和纳图拉利斯特角（灯塔1903年建，鲸鱼观景），南面约50公里是玛格丽特河镇和上百家酒庄，利文—纳图拉利斯特国家公园沿海岸从北角一直延伸到南面的利文角，沿途有石灰岩洞穴（恩吉尔吉洞、猛犸洞、珠宝洞）和冲浪海滩。机场在镇南约6.5公里。",
     gettingAround:
@@ -558,11 +624,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11–4月最适合海滩，2月海水最暖；秋季（3–5月）葡萄采收、酒庄活动多；冬季多雨但温和、观鲸季开始。玛格丽特河周末和假期住宿紧张。海底观测站提前订票。",
   },
   "mount-gambier": {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   City of Mount Gambier LGA 2025-06-30 ERP = 28,057。
+    //   **「南澳人口第二多的城市」这句已经不成立**：按 ABS 城区（SUA）口径，2025-06-30 维克托港—古尔瓦（Victor Harbor – Goolwa）30,900 已略微反超芒特甘比尔 30,875，只差 25 人，且前者 2023→2025 增 3.5%、后者仅增 0.5%。改成不排名次的「最大的两座之一」。
     identity:
-      "甘比尔山（Mount Gambier）在南澳大利亚州东南角的石灰岩海岸地区，阿德莱德东南约450公里、墨尔本西北约435公里，人口约2.7万（2021年普查），是南澳人口第二多的城市。城市建在一座数千年前才停止喷发的休眠火山（玛珥火山）的山坡上，火口湖蓝湖是它的象征——每年11月前后湖水从冬季的灰蓝变为夏季的钴蓝，机制与水温和碳酸钙有关。城内还有多处石灰岩塌陷形成的天坑花园。传统土地所有者是博安迪克人（Boandik）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mount Gambier (City of Mount Gambier, small area surrounded by District Council of Grant; 26,878 2021; Blue Lake crater; 17 km from Victorian border; Adelaide 450 km; airport in Grant)
+      "甘比尔山（Mount Gambier）在南澳大利亚州东南角的石灰岩海岸地区，阿德莱德东南约450公里、墨尔本西北约435公里，辖区人口约2.8万（2025年6月，澳大利亚统计局ABS），按城区人口计是阿德莱德以外南澳最大的两座城市之一。城市建在一座数千年前才停止喷发的休眠火山（玛珥火山）的山坡上，火口湖蓝湖是它的象征——每年11月前后湖水从冬季的灰蓝变为夏季的钴蓝，机制与水温和碳酸钙有关。城内还有多处石灰岩塌陷形成的天坑花园。传统土地所有者是博安迪克人（Boandik）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   City of Mount Gambier LGA 2025-06-30 ERP = 28,057。
     howItWorks:
-      "甘比尔山是南澳最大的区域城市，由甘比尔山市议会管辖，辖区很小，四周被格兰特区议会包围，2021 年人口约 2.7 万，阿德莱德在西北 450 公里，维多利亚州界在东面 17 公里；议会管地方服务，其余归州政府。城市建在一座死火山的脚下，蓝湖是火山口湖，也是城市的水源，每年十一月变成钴蓝色，恩弗斯顿天坑与洞穴花园在市中心，石灰岩海岸的洞穴潜水以这里为基地，机场在格兰特区议会境内。初来的人最容易犯的错，是把甘比尔山当作一座山，而它是一座建在火山脚下的城，山只是城边的一圈丘陵。",
+      "甘比尔山是南澳最大的区域城市，由甘比尔山市议会管辖，辖区很小，四周被格兰特区议会包围，2025 年 6 月辖区人口约 2.8 万，阿德莱德在西北 450 公里，维多利亚州界在东面 17 公里；议会管地方服务，其余归州政府。城市建在一座死火山的脚下，蓝湖是火山口湖，也是城市的水源，每年十一月变成钴蓝色，恩弗斯顿天坑与洞穴花园在市中心，石灰岩海岸的洞穴潜水以这里为基地，机场在格兰特区议会境内。初来的人最容易犯的错，是把甘比尔山当作一座山，而它是一座建在火山脚下的城，山只是城边的一圈丘陵。",
     layout:
       "市中心在火山锥北麓的平地上，商业街是商业街（Commercial Street）；蓝湖在市中心南面的火口里，环湖有公路和步道，旁边是山谷湖和另外两个较小的火口湖。恩弗斯顿天坑（1886年辟为花园）在市中心东侧，洞穴花园（Cave Garden）就在市中心步行街旁。周边是松树林和牧场，往北约50公里是库纳瓦拉葡萄酒产区，再往北约100公里是纳拉库特洞穴国家公园（1994年列入世界遗产）。机场在城北约9公里。",
     gettingAround:
@@ -575,11 +647,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12–3月蓝湖最蓝，也是最舒服的季节；冬季（6–8月）阴冷多雨、湖色灰蓝。市区一天可看完，加库纳瓦拉和纳拉库特需两天。常作为阿德莱德—墨尔本沿海自驾（大洋路方向）的中途站。",
   },
   devonport: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Devonport City Council LGA 2025-06-30 ERP = 26,994（2024 年 26,978，基本持平）。
     identity:
-      "德文波特（Devonport）在塔斯马尼亚州西北海岸、默西河口，人口约2.6万（2021年普查），是塔州第三大城市。它最重要的身份是塔斯马尼亚精神号（Spirit of Tasmania）渡轮的港口——从维多利亚州吉朗开来的过夜渡轮在这里靠岸，自驾游客多从这里开始环塔之旅。河口西侧的默西崖灯塔（1889年建）是地标，崖上的蒂阿加拉（1976年开放）是塔斯马尼亚原住民文化中心。往内陆约80公里是摇篮山。传统土地所有者是塔斯马尼亚原住民（palawa）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Devonport (City of Devonport; 26,150 2021; Mersey River mouth; Spirit of Tasmania to Geelong; busiest freight port in Tasmania; Cradle Mountain ~80 km in other LGAs; airport)
+      "德文波特（Devonport）在塔斯马尼亚州西北海岸、默西河口，辖区人口约2.7万（2025年6月，澳大利亚统计局ABS），是塔州第三大城市。它最重要的身份是塔斯马尼亚精神号（Spirit of Tasmania）渡轮的港口——从维多利亚州吉朗开来的过夜渡轮在这里靠岸，自驾游客多从这里开始环塔之旅。河口西侧的默西崖灯塔（1889年建）是地标，崖上的蒂阿加拉（1976年开放）是塔斯马尼亚原住民文化中心。往内陆约80公里是摇篮山。传统土地所有者是塔斯马尼亚原住民（palawa）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Devonport City Council LGA 2025-06-30 ERP = 26,994。
     howItWorks:
-      "德文波特是塔斯马尼亚北海岸的港口城市，由德文波特市议会管辖，2021 年人口约 2.6 万，是塔州第三大城市；议会管地方服务，其余归州政府。城市在默西河口的两岸，塔斯马尼亚精神号渡轮从这里开往吉朗，港口承担了全岛一半以上的货物进出，机场在城东，朗塞斯顿在东南约 100 公里；摇篮山在西南约 80 公里的另一个议会区。初来的人最容易犯的错，是把德文波特当作摇篮山的山门，而它是一座渡轮与货运的港口城，摇篮山要再开一个多小时。",
+      "德文波特是塔斯马尼亚北海岸的港口城市，由德文波特市议会管辖，2025 年 6 月辖区人口约 2.7 万，是塔州第三大城市；议会管地方服务，其余归州政府。城市在默西河口的两岸，塔斯马尼亚精神号渡轮从这里开往吉朗，港口承担了全岛一半以上的货物进出，机场在城东，朗塞斯顿在东南约 100 公里；摇篮山在西南约 80 公里的另一个议会区。初来的人最容易犯的错，是把德文波特当作摇篮山的山门，而它是一座渡轮与货运的港口城，摇篮山要再开一个多小时。",
     layout:
       "城市分在默西河两岸，西岸是市中心和渡轮码头，东岸是东德文波特和机场方向。市中心以北是默西崖，崖上有灯塔、蒂阿加拉和海岸步道，崖下是海滩。沿海往西约47公里是伯尼，往东是拉特罗布和谢菲尔德（壁画小镇），往东南约100公里是朗塞斯顿；摇篮山—圣克莱尔湖国家公园在西南约80公里的山里。机场在城东约10公里。",
     gettingAround:
@@ -628,11 +705,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "10–4月适合海滩，1–2月最热；秋季海岸步道最舒服。周末和假期海滩停车紧张。从悉尼当日往返方便，是悉尼到纽卡斯尔、猎人谷沿途的一站。",
   },
   "port-macquarie": {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Port Macquarie SUA（城区）2025-06-30 ERP = 53,369（2024 年 52,769）。identity 的「约5.2万（2023年）」与 howItWorks 的「2021 年约 4.8 万」本来就是同一个 SUA 口径的不同年份，不是口径冲突，统一到 2025 年即可。
     identity:
-      "麦夸里港（Port Macquarie）在新南威尔士州中北海岸、黑斯廷斯河口，悉尼以北约390公里，人口约5.2万（2023年）。它1821年作为流放地建立，是新南威尔士州最早的殖民定居点之一；今天以温和的气候、海滩和考拉出名——镇上的考拉医院专门救治受伤的考拉。塔金角灯塔（1879年）和9公里长的海岸步道是它的地标。传统土地所有者是比里帕伊人（Birpai）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Port Macquarie (urban ~48,000 2021; Port Macquarie-Hastings Council ~86,700; Hastings River mouth; convict settlement 1821; Birpai; beaches; Koala Hospital; airport; Sydney 390 km)
+      "麦夸里港（Port Macquarie）在新南威尔士州中北海岸、黑斯廷斯河口，悉尼以北约390公里，城区人口约5.3万（2025年6月，澳大利亚统计局ABS）。它1821年作为流放地建立，是新南威尔士州最早的殖民定居点之一；今天以温和的气候、海滩和考拉出名——镇上的考拉医院专门救治受伤的考拉。塔金角灯塔（1879年）和9公里长的海岸步道是它的地标。传统土地所有者是比里帕伊人（Birpai）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Port Macquarie SUA 2025-06-30 ERP = 53,369。
     howItWorks:
-      "麦夸里港是新南威尔士中北海岸的城市，2021 年城区人口约 4.8 万，属于麦夸里港—黑斯廷斯议会，辖区约 8.7 万人；议会管地方服务，其余归州政府。城市在黑斯廷斯河口的南岸，1821 年作为流放地建立，市中心在河口，镇滩、弗林斯滩、灯塔滩沿海岸向南排开，考拉医院在市中心，机场在城西，悉尼在南面 390 公里。退休人口占了很大比例。初来的人最容易犯的错，是把麦夸里港当作一座度假镇，而它是一座有大学校区与医院的区域城市，退休者比游客多。",
+      "麦夸里港是新南威尔士中北海岸的城市，2025 年 6 月城区人口约 5.3 万，属于麦夸里港—黑斯廷斯议会，辖区约 8.7 万人；议会管地方服务，其余归州政府。城市在黑斯廷斯河口的南岸，1821 年作为流放地建立，市中心在河口，镇滩、弗林斯滩、灯塔滩沿海岸向南排开，考拉医院在市中心，机场在城西，悉尼在南面 390 公里。退休人口占了很大比例。初来的人最容易犯的错，是把麦夸里港当作一座度假镇，而它是一座有大学校区与医院的区域城市，退休者比游客多。",
     layout:
       "镇中心在黑斯廷斯河口南岸，河口防波堤和镇海滩就在市中心旁边。海岸线向南延伸：从西港公园经市中心到塔金角灯塔的海岸步道串起一串海滩（弗林斯、诺比斯、雪莱、米纳）；海崖雨林国家公园（Sea Acres）在雪莱海滩旁，有雨林栈道；考拉医院在镇中心南侧的罗托庄园。机场在镇西约4公里。往西内陆是黑斯廷斯河谷和沃丘普。",
     gettingAround:
@@ -645,11 +727,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年可来：夏季海滩、冬季看鲸，春秋最舒服。学校假期住宿紧张。海岸步道全程约3小时，带水和帽子。",
   },
   "wagga-wagga": {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Wagga Wagga SUA 2025-06-30 ERP = 58,117（2024 年 58,130，**略降 13 人**）。原文的「约5.7万」用的正是 SUA 口径（2021 年 57,260），不是 UCL（2021 年只有 49,686），口径没问题、只是年份旧。
     identity:
-      "瓦加瓦加（Wagga Wagga）在新南威尔士州南部的里弗赖纳地区、马兰比吉河畔，悉尼和墨尔本之间各约450公里、堪培拉以西约245公里，城区人口约5.7万（2021年普查），是新南威尔士州最大的内陆城市之一。地名来自维拉朱里语，市政府2019年采纳的释义是“许多舞蹈与庆典之地”。它是军事重镇（卡普卡陆军新兵训练中心、瓦加空军基地），也是查尔斯特大学的所在地和里弗赖纳农业区的中心。传统土地所有者是维拉朱里人（Wiradjuri）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Wagga Wagga (City of Wagga Wagga; 57,003 urban 2021; Murrumbidgee; Sydney 452 km / Melbourne 456 km; CSU; Kapooka; RAAF Wagga; Wiradjuri; airport)
+      "瓦加瓦加（Wagga Wagga）在新南威尔士州南部的里弗赖纳地区、马兰比吉河畔，悉尼和墨尔本之间各约450公里、堪培拉以西约245公里，城区人口约5.8万（2025年6月，澳大利亚统计局ABS），是新南威尔士州最大的内陆城市之一。地名来自维拉朱里语，市政府2019年采纳的释义是“许多舞蹈与庆典之地”。它是军事重镇（卡普卡陆军新兵训练中心、瓦加空军基地），也是查尔斯特大学的所在地和里弗赖纳农业区的中心。传统土地所有者是维拉朱里人（Wiradjuri）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Wagga Wagga SUA 2025-06-30 ERP = 58,117。
     howItWorks:
-      "沃加沃加是新南威尔士最大的内陆城市，由沃加沃加市议会管辖，2021 年城区人口约 5.7 万，在悉尼与墨尔本正中间，各约 450 公里；议会管地方服务，其余归州政府。城市在马兰比吉河的冲积谷地里，市中心在河的南岸，查尔斯·斯特大学、卡普卡陆军训练基地与沃加空军基地让它成为军队与大学的城，机场有到三大城市的航班。这里是维拉朱里人的土地。初来的人最容易犯的错，是把沃加沃加当作一个公路休息站，而它是里弗赖纳地区的首府。",
+      "沃加沃加是新南威尔士最大的内陆城市，由沃加沃加市议会管辖，2025 年 6 月城区人口约 5.8 万，在悉尼与墨尔本正中间，各约 450 公里；议会管地方服务，其余归州政府。城市在马兰比吉河的冲积谷地里，市中心在河的南岸，查尔斯·斯特大学、卡普卡陆军训练基地与沃加空军基地让它成为军队与大学的城，机场有到三大城市的航班。这里是维拉朱里人的土地。初来的人最容易犯的错，是把沃加沃加当作一个公路休息站，而它是里弗赖纳地区的首府。",
     layout:
       "市中心在马兰比吉河南岸，有堤坝防洪，主街是贝利斯街和菲茨莫里斯街，河边是滩地公园和沙滩（瓦加海滩）。植物园和动物园在城南的威利南斯山上，查尔斯特大学在城北的埃斯特拉，机场和空军基地在东南的森林山。周围是麦田、葡萄园和绵羊牧场，休姆高速在东面经过。",
     gettingAround:
@@ -662,11 +749,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "3–5月和9–11月最舒服；夏季常超过35℃，冬季早晨霜冻。作为悉尼—墨尔本自驾的中途站很合适，一天足够。",
   },
   mildura: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   **这条是口径陷阱，不是单纯的过期**：原文「约3.6万」对应的是 UCL（Mildura–Buronga 的 Mildura 段）2021 年普查 35,652 人，ABS **不逐年更新 UCL**；而逐年更新的 Mildura–Buronga SUA 2025-06-30 为 54,379 人，范围大得多（把 Red Cliffs、Merbein、Irymple 等周边城镇并了进来）。**直接换成 5.4 万会让读者以为镇区一年暴涨 50%**，所以两个口径并列写明，各自标注。
     identity:
-      "米尔迪拉（Mildura）在维多利亚州西北角的墨累河畔，墨尔本西北约545公里、阿德莱德以东约400公里，城区人口约3.6万（2021年普查，含周边城镇约5.9万）。它1887年由查菲兄弟建立，是澳大利亚第一个灌溉殖民地——引墨累河水把半干旱的马利灌木地变成了葡萄园和柑橘园，今天出产维多利亚州约八成的葡萄和澳大利亚七成以上的葡萄干。明轮船、柑橘和热气球是它的旅游名片；向北约110公里是蒙戈国家公园（维兰德拉湖区世界遗产）。传统土地所有者是拉蒂拉蒂人（Latji Latji）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mildura (Rural City of Mildura ~22,000 km²; city 35,652, urban 58,914 2021; Murray River; Chaffey irrigation colony 1887; Sunraysia grapes; Melbourne 545 km; airport busiest regional in Victoria)
+      "米尔迪拉（Mildura）在维多利亚州西北角的墨累河畔，墨尔本西北约545公里、阿德莱德以东约400公里，镇区人口约3.6万（2021年人口普查，ABS 镇区口径此后未逐年更新；含周边城镇的显著城区2025年6月约5.4万）。它1887年由查菲兄弟建立，是澳大利亚第一个灌溉殖民地——引墨累河水把半干旱的马利灌木地变成了葡萄园和柑橘园，今天出产维多利亚州约八成的葡萄和澳大利亚七成以上的葡萄干。明轮船、柑橘和热气球是它的旅游名片；向北约110公里是蒙戈国家公园（维兰德拉湖区世界遗产）。传统土地所有者是拉蒂拉蒂人（Latji Latji）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   同上：UCL 2021 = 35,652（不逐年更新），Mildura–Buronga SUA 2025-06-30 = 54,379。
     howItWorks:
-      "米尔迪拉是维多利亚州西北角的城市，由米尔迪拉乡村市议会管辖，辖区约 2.2 万平方公里，2021 年市区人口约 3.6 万，加上河对岸新南威尔士的布龙加等镇约 5.9 万；议会管地方服务，其余归州政府。城市建在墨累河南岸，1887 年查菲兄弟在这里建起澳大利亚第一个规划灌溉区，如今这一带产全国九成的出口鲜食葡萄；机场是维多利亚最繁忙的区域机场，墨尔本在东南 545 公里，阿德莱德反而更近。初来的人最容易犯的错，是把米尔迪拉当作维多利亚的城市来算距离，而它离阿德莱德更近，河对岸就是另一个州。",
+      "米尔迪拉是维多利亚州西北角的城市，由米尔迪拉乡村市议会管辖，辖区约 2.2 万平方公里，2021 年人口普查镇区人口约 3.6 万（ABS 镇区口径此后未逐年更新），含周边城镇的显著城区 2025 年 6 月约 5.4 万；议会管地方服务，其余归州政府。城市建在墨累河南岸，1887 年查菲兄弟在这里建起澳大利亚第一个规划灌溉区，如今这一带产全国九成的出口鲜食葡萄；机场是维多利亚最繁忙的区域机场，墨尔本在东南 545 公里，阿德莱德反而更近。初来的人最容易犯的错，是把米尔迪拉当作维多利亚的城市来算距离，而它离阿德莱德更近，河对岸就是另一个州。",
     layout:
       "米尔迪拉市区在墨累河南岸（维多利亚州一侧），河对岸是新南威尔士州；市中心的迪金大道是一条宽阔的林荫街。墨累河上有第11号船闸和码头，明轮船从这里出发；沿河向东是灌溉区的果园和小镇雷德克利夫斯。蒙戈国家公园在东北约110公里的新南威尔士州境内，有“中国长城”状的月牙沙丘和4万年前的人类遗骨出土地。机场在城西南约7公里。",
     gettingAround:
@@ -681,9 +773,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "phillip-island": {
     identity:
       "菲利普岛（Phillip Island）在维多利亚州南部的西港湾口，墨尔本东南约140公里，主镇考斯（Cowes）人口约6600（2021年普查），1940年起有桥与大陆的圣雷莫相连。岛的西南端是世界闻名的企鹅归巢——每天日落后成群的小企鹅从海上回到萨默兰海滩的巢穴；诺比斯角外的海豹岩是澳大利亚最大的海狗群落之一。岛上还有摩托车大奖赛赛道和冲浪海滩。传统土地所有者是布努龙人（Bunurong）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Phillip Island (~101 km²; 13,799 2021, ~40,000 in summer; Cowes 6,593; Bass Coast Shire, seat Wonthaggi; bridge from San Remo 1940; Penguin Parade ~40,000 penguins; MotoGP circuit; Melbourne 125 km)
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   ABS 的 SA2「Phillip Island」（代码 205031091）边界大致就是全岛，且逐年更新：2025-06-30 ERP = 14,503（2024 年 14,253）。不需要退而用巴斯海岸郡（2025 年 44,377，范围含大陆部分）或考斯镇。
     howItWorks:
-      "菲利普岛是墨尔本东南 125 公里的一座岛，面积约 100 平方公里，2021 年常住人口约 1.4 万，夏天涨到 4 万，属于巴斯海岸郡议会，郡府在大陆的旺萨吉；郡议会管地方服务，其余归州政府。考斯是岛上的主镇，在北岸，1940 年建成的大桥把岛与圣雷莫连起来，企鹅归巢在岛的西南角，由菲利普岛自然公园管理，赛车场在岛的中部，没有铁路。初来的人最容易犯的错，是把企鹅归巢当作岛的全部，而岛上有一座镇、一条赛道和一整圈海岸。",
+      "菲利普岛是墨尔本东南 125 公里的一座岛，面积约 100 平方公里，2025 年 6 月常住人口约 1.45 万，夏天涨到 4 万，属于巴斯海岸郡议会，郡府在大陆的旺萨吉；郡议会管地方服务，其余归州政府。考斯是岛上的主镇，在北岸，1940 年建成的大桥把岛与圣雷莫连起来，企鹅归巢在岛的西南角，由菲利普岛自然公园管理，赛车场在岛的中部，没有铁路。初来的人最容易犯的错，是把企鹅归巢当作岛的全部，而岛上有一座镇、一条赛道和一整圈海岸。",
     layout:
       "菲利普岛东西约26公里，考斯在岛北岸的平静海湾边，是住宿和餐饮的中心；企鹅归巢、诺比斯角、海豹岩在岛西南端；大奖赛赛道在岛中南部；南岸是伍拉迈和考拉海滩等冲浪海滩；东端的丘吉尔岛有历史农场。桥在岛东端的纽黑文与圣雷莫之间。",
     gettingAround:
@@ -696,11 +790,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年可看企鹅，夏季（12–2月）企鹅归巢时间晚、人多，冬季日落早但更冷、风大。企鹅归巢门票旺季售罄，务必提前订；带保暖防风衣物，看台无遮蔽。从墨尔本当日往返可行，住一晚更从容。",
   },
   mackay: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Mackay SUA（城区）2025-06-30 ERP = 89,761（2024 年 89,015）。原文的「约8.4万」用的正是 SUA 口径（2021 年 85,408）。
     identity:
-      "麦凯（Mackay）在昆士兰州中部海岸、先锋河口，布里斯班以北约970公里、汤斯维尔以南约390公里，人口约8.4万（2021年普查）。它因甘蔗种植而兴起，被称为澳大利亚的“糖都”，港口和糖厂至今运转，近年采矿成为主要产业。1918年气旋后重建的市中心留下了大批装饰艺术风格的建筑；内陆的尤金拉国家公园是澳大利亚少数能稳定看到野生鸭嘴兽的地方，希尔斯伯勒角的沙滩上清晨有袋鼠。传统土地所有者是尤维巴拉人（Yuwibara）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Mackay (Mackay Regional Council; 84,333 urban 2021; Pioneer River; sugar; Bowen Basin coal, Hay Point; Eungella NP; airport; Art Deco after 1918 cyclone)
+      "麦凯（Mackay）在昆士兰州中部海岸、先锋河口，布里斯班以北约970公里、汤斯维尔以南约390公里，城区人口约9万（2025年6月，澳大利亚统计局ABS）。它因甘蔗种植而兴起，被称为澳大利亚的“糖都”，港口和糖厂至今运转，近年采矿成为主要产业。1918年气旋后重建的市中心留下了大批装饰艺术风格的建筑；内陆的尤金拉国家公园是澳大利亚少数能稳定看到野生鸭嘴兽的地方，希尔斯伯勒角的沙滩上清晨有袋鼠。传统土地所有者是尤维巴拉人（Yuwibara）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Mackay SUA 2025-06-30 ERP = 89,761。
     howItWorks:
-      "麦凯是昆士兰中北部的城市，由麦凯区域议会管辖，2021 年城区人口约 8.4 万；议会管地方服务，其余归州政府。城市在先锋河的河口，甘蔗田从四周一直铺到海边，糖厂是它的老本行，如今博文盆地的煤矿与海波因特的煤港是经济的主力，大量矿工在这里落脚；1918 年的气旋几乎毁掉了市中心，重建留下了一批装饰艺术风格的建筑，机场在城南，尤金拉国家公园在西面。初来的人最容易犯的错，是把麦凯当作去圣灵群岛的过路站，而它是昆士兰采矿与制糖的重镇。",
+      "麦凯是昆士兰中北部的城市，由麦凯区域议会管辖，2025 年 6 月城区人口约 9 万；议会管地方服务，其余归州政府。城市在先锋河的河口，甘蔗田从四周一直铺到海边，糖厂是它的老本行，如今博文盆地的煤矿与海波因特的煤港是经济的主力，大量矿工在这里落脚；1918 年的气旋几乎毁掉了市中心，重建留下了一批装饰艺术风格的建筑，机场在城南，尤金拉国家公园在西面。初来的人最容易犯的错，是把麦凯当作去圣灵群岛的过路站，而它是昆士兰采矿与制糖的重镇。",
     layout:
       "市中心在先锋河南岸，河口东侧是港口和滨海区。蓝水步道沿河和海岸连接蓝水泻湖、植物园和市场。希尔斯伯勒角在市区北约50公里，是国家公园和海滩；尤金拉在西面约80公里的山上，山下的布罗肯河是看鸭嘴兽的地方；南面是萨里纳的糖厂。机场在市区南侧。",
     gettingAround:
@@ -713,11 +812,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–10月最舒服，也是糖厂压榨季；夏季湿热多雨。希尔斯伯勒角的袋鼠在日出前后出现，要早起。尤金拉山路多弯、雾多，白天上山。",
   },
   rockhampton: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Rockhampton Regional Council LGA 2025-06-30 ERP = 85,794（2024 年 85,170）。
     identity:
-      "罗克汉普顿（Rockhampton）在昆士兰州中部的菲茨罗伊河畔，距河口约45公里，布里斯班以北约630公里，人口约8万（2021年普查）。它就在南回归线以北，市内立有回归线标志；因周边广阔的牧场自称“澳大利亚牛肉之都”。河边的奎街保留着十九世纪的砂岩商业建筑群，东面的阿彻山俯瞰全城，卡普里康海岸的雅蓬和大凯佩尔岛在东面约40公里。传统土地所有者是达伦巴尔人（Darumbal）。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Rockhampton (Rockhampton Region; ~79,000 2021; Fitzroy River; Tropic of Capricorn; beef capital; Quay Street; Yeppoon in Livingstone Shire; airport)
+      "罗克汉普顿（Rockhampton）在昆士兰州中部的菲茨罗伊河畔，距河口约45公里，布里斯班以北约630公里，辖区人口约8.6万（2025年6月，澳大利亚统计局ABS）。它就在南回归线以北，市内立有回归线标志；因周边广阔的牧场自称“澳大利亚牛肉之都”。河边的奎街保留着十九世纪的砂岩商业建筑群，东面的阿彻山俯瞰全城，卡普里康海岸的雅蓬和大凯佩尔岛在东面约40公里。传统土地所有者是达伦巴尔人（Darumbal）。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Rockhampton Regional Council LGA 2025-06-30 ERP = 85,794。
     howItWorks:
-      "罗克汉普顿是昆士兰中部的城市，由罗克汉普顿区域议会管辖，2021 年人口约 7.9 万；议会管地方服务，其余归州政府。城市在菲茨罗伊河两岸，南回归线从城边穿过，自称“牛肉之都”，两座屠宰场是最大的雇主之一，码头街的 19 世纪街景是淘金年代留下的，阿彻山在城东俯瞰全城，机场在城西。初来的人最容易犯的错，是把海边的耶蓬当作罗克汉普顿的海滩区，而耶蓬属于利文斯顿郡议会，是另一座镇，罗克汉普顿本身在内陆 40 公里。",
+      "罗克汉普顿是昆士兰中部的城市，由罗克汉普顿区域议会管辖，2025 年 6 月辖区人口约 8.6 万；议会管地方服务，其余归州政府。城市在菲茨罗伊河两岸，南回归线从城边穿过，自称“牛肉之都”，两座屠宰场是最大的雇主之一，码头街的 19 世纪街景是淘金年代留下的，阿彻山在城东俯瞰全城，机场在城西。初来的人最容易犯的错，是把海边的耶蓬当作罗克汉普顿的海滩区，而耶蓬属于利文斯顿郡议会，是另一座镇，罗克汉普顿本身在内陆 40 公里。",
     layout:
       "市中心在菲茨罗伊河南岸，奎街沿河，河上有几座桥连接北罗克汉普顿。阿彻山在城东，山顶有观景台和树顶栈道；植物园和动物园在城南。往北约25公里是卡普里康溶洞；往东约40公里是雅蓬和卡普里康海岸，从罗斯林湾坐船到大凯佩尔岛。机场在城西约6公里。",
     gettingAround:
@@ -747,11 +851,17 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6–10月最舒服，水清、风稳、少雨；12–3月湿热多雨、水母季。外礁出海一天，戴恩树一天，住三晚以上合适。海边游泳穿防蜇衣或在网内。旺季住宿紧张、早订。",
   },
   bunbury: {
+    // identity sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Bunbury SUA 2025-06-30 ERP = 84,332（2024 年 83,000）。
+    //   **「西澳第三大人口中心」这句是错的**：按 ABS 城区（SUA）口径，2025 年西澳珀斯以外的排序是班伯里 84,332 > 巴瑟尔顿 46,023 > 杰拉尔顿 42,104 > 奥尔巴尼 38,287 > 卡尔古利—博尔德 31,016 —— 班伯里是**第一**，不是第三。
     identity:
-      "邦伯里（Bunbury）在西澳大利亚州西南海岸，珀斯以南约175公里，人口约7.6万（2021年），是西澳第三大人口中心。它建在莱舍诺尔特湾与地理湾之间的一个半岛上，港口是西南地区的货运港；库姆巴纳湾的海豚探索中心让人可以在浅水区近距离看到野生宽吻海豚。它也是玛格丽特河和西南部森林、酒庄之旅的门户。传统土地所有者是努恩加人中的瓦丹迪人（Wardandi），传统地名Goomburrup。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short; LGA/state split per Local government in Australia): Bunbury (City of Bunbury ~33,000; Greater Bunbury 76,452 2021 across 4 LGAs incl. Capel/Dardanup/Harvey; port; Koombana Bay dolphins; Perth 175 km; Australind train)
+      "邦伯里（Bunbury）在西澳大利亚州西南海岸，珀斯以南约175公里，城区人口约8.4万（2025年6月，澳大利亚统计局ABS），是珀斯以外西澳人口最多的城市。它建在莱舍诺尔特湾与地理湾之间的一个半岛上，港口是西南地区的货运港；库姆巴纳湾的海豚探索中心让人可以在浅水区近距离看到野生宽吻海豚。它也是玛格丽特河和西南部森林、酒庄之旅的门户。传统土地所有者是努恩加人中的瓦丹迪人（Wardandi），传统地名Goomburrup。",
+    // howItWorks sources: ABS《Regional population, 2024–25 financial year》（2026-03-31 发布），ERP 时点 2025-06-30，子代理直接读取一手数据表 32180DS0002_2024-25.xlsx（LGA）/ 32180DS0004_2001-25.xlsx（SUA）/ 32180DS0003_2001-25.xlsx（SA2）得出。https://www.abs.gov.au/statistics/people/population/regional-population/latest-release （级别 1）
+    //   ABS Regional population 每年 3 月下旬发布上一财年（截至 6 月 30 日）的数，下一期预计 2027-03。
+    //   Bunbury SUA 2025-06-30 ERP = 84,332；排名同上，班伯里是珀斯以外西澳最大的城市。
     howItWorks:
-      "班伯里是西澳的第三大城市，班伯里市议会本身辖区很小，约 3.3 万人，而包括东面的伊顿、奥斯特拉林德在内的大班伯里 2021 年约 7.6 万人，分属四个议会；议会管地方服务，其余归州政府。市中心在半岛上，港口在一侧，库姆巴纳湾的海豚在另一侧，珀斯在北面 175 公里，奥斯特拉林德号列车两小时到珀斯，矿产加工与港口是经济的主力。初来的人最容易犯的错，是把班伯里市议会的辖区当作整座城，而一半以上的居民住在河对岸另外三个郡议会的郊区里。",
+      "班伯里是珀斯以外西澳人口最多的城市，班伯里市议会本身辖区很小，约 3.3 万人，而包括东面的伊顿、奥斯特拉林德在内的大班伯里 2025 年 6 月约 8.4 万人，分属四个议会；议会管地方服务，其余归州政府。市中心在半岛上，港口在一侧，库姆巴纳湾的海豚在另一侧，珀斯在北面 175 公里，奥斯特拉林德号列车两小时到珀斯，矿产加工与港口是经济的主力。初来的人最容易犯的错，是把班伯里市议会的辖区当作整座城，而一半以上的居民住在河对岸另外三个郡议会的郊区里。",
     layout:
       "市中心在半岛上，西面是印度洋的后海滩，东面是莱舍诺尔特湾的平静水面，北面是库姆巴纳湾和港口；灯塔（黑白格纹）在半岛北端的山上。海豚探索中心在库姆巴纳湾岸边。往南沿海岸约50公里到巴瑟尔顿，往东内陆是科利的煤矿和林区，往西南是玛格丽特河方向。机场在城东南约8公里，只做通用航空。",
     gettingAround:

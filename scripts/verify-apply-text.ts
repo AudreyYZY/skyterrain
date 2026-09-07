@@ -15,7 +15,11 @@
  *   id          条目 id（travel-content 里的 key，如 shanghai / china-overview）
  *   field       段名（identity / howItWorks / layout …）
  *   textPatch   { zh?: {find, replace}, en?: {find, replace} }
- *               find 必须在**该条目内**唯一命中，命中 0 次或 >1 次都直接报错退出
+ *               find 必须在**该条目内**唯一命中，命中 0 次或 >1 次都直接报错退出。
+ *               注意「条目」是整个 city 块、**不是单个字段** —— identity 与 howItWorks
+ *               在同一个块里，所以 identity 的 "with about 25,000 people" 会被
+ *               howItWorks 的 "with about 25,000 people in 2021" 一起命中。
+ *               短句是前缀时要把后文一起带上（"…people — the largest settlement"）。
  *   sourceNote  写进 `// <field> sources: ...` 的完整来源（可多行，用 \n 分隔）
  *
  * 只有 resolution === "fixed" 才应用 —— 与 verify-apply.ts 同一条规矩。
