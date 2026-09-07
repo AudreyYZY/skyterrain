@@ -49,7 +49,7 @@ export const ROUTE_NARRATION: Record<
       "飞机几乎贴着这片高原面一路飞到接近拉萨，才顺着雅鲁藏布江的支流拉萨河收拢翅膀、滑进河谷。两个多小时，从常年见不到太阳的湿润盆地，飞到了日光城拉萨——中间只隔着一列山、一片高原，和四千多米的落差。",
     "en-US":
       "Look down and the first thing you see is a green so soft it seems to blur at the edges — the Chengdu Plain, farmland the Dujiangyan works have irrigated from the Min River for more than two thousand years, its fields laid out like a checkerboard under a lid of grey-white haze; the Sichuan Basin rarely sees a clear sun. Within minutes of take-off that soft green is already behind you: the Longmen Mountains rear up abruptly at the basin's rim, and the ground begins to crease." +
-      " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the only belt of high, north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea into the plateau, returning with Tibetan horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
+      " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the only belt of high, north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
       " By the time the plane levels into cruise, the world outside has shifted up an entire elevation class. Past the last ridge of the Hengduan Mountains the terrain suddenly relaxes — no more peaks, no more gorges, just a vast, gently rolling, yellow-brown highland stretching to the horizon: the surface of the Tibetan Plateau, averaging above 4,000 m, the highest and largest plateau on Earth. Deep-blue lakes are scattered across it like spilled ink, and the thin air makes the sunlight look unusually white and hard." +
       " The descent begins late — the plane stays almost level with the plateau surface nearly all the way to Lhasa before finally folding its wings down along the Lhasa River, a tributary of the Yarlung Tsangpo, into its valley. In just over two hours you have flown from a humid basin that rarely sees the sun to Lhasa, the \"Sunlight City\" — separated by nothing more than one mountain range, one plateau, and a 4,000-metre drop.",
   },
@@ -145,12 +145,12 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "成都飞上海，几乎是沿着长江自西向东飞完它的中下游。起飞时脚下是四川盆地——四周被山环抱的红层盆地，底部是密集的方格农田和城镇，常年云雾多、日照少。" +
       "飞机向东，很快进入长江三峡一带：长江在这里横切巫山等一系列山岭，切出瞿塘峡、巫峡、西陵峡三段深谷，两岸是陡直的石灰岩崖壁，三峡水库蓄水后江面变宽。" +
-      "出了三峡，地形豁然开阔，进入长江中下游平原。这是长江及其支流冲积、并接纳众多湖泊的低平原，江湖相连，圩田、水塘和城镇交错，看不出什么起伏。沿途会经过洞庭湖、鄱阳湖这样的通江湖泊。" +
+      "出了三峡，地形豁然开阔，两岸先后出现洞庭湖、鄱阳湖这样的通江湖泊。再往东进入长江中下游平原——由干流及其支流冲积、并接纳众多湖泊形成的低平原，江湖相连，圩田、水塘和城镇交错，看不出什么起伏。" +
       "接近上海时，进入长江三角洲——长江最后一段淤积形成的低平原，河网最密、城镇连成一片。飞机在这里下降，长江在前方入海。一趟航班，把长江从盆地到入海口的下半程连了起来。",
     "en-US":
       "Chengdu to Shanghai follows the Yangtze almost the whole way, west to east, down its middle and lower course. On take-off you are over the Sichuan Basin — a red-bed basin ringed by mountains, its floor a dense grid of fields and towns, often cloudy with little sun." +
       " Flying east, the plane soon reaches the Yangtze Gorges, where the river cuts straight across the Wu Shan and neighbouring ridges in three deep sections — the Qutang, Wu and Xiling gorges — between steep limestone walls; since the Three Gorges reservoir filled, the channel here is wider." +
-      " Past the gorges the land opens out into the Middle–Lower Yangtze Plain, a low plain built by the river and its tributaries and threaded with lakes, where diked fields, ponds and towns interlock with almost no relief. The route passes lakes linked to the Yangtze such as Dongting and Poyang." +
+      " Past the gorges the land opens out and lakes linked to the river appear along both banks — Dongting first, then Poyang. Farther east comes the Middle–Lower Yangtze Plain, a low plain built by the river and its tributaries and threaded with lakes, where diked fields, ponds and towns interlock with almost no relief." +
       " Approaching Shanghai you cross the Yangtze Delta, the low plain of the river's final reach, with the densest water network and continuous built-up land. The plane descends here, with the Yangtze entering the sea ahead. One flight has joined up the lower half of the river, from basin to river mouth.",
     },
     travel: {
@@ -241,7 +241,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "重庆飞拉萨，从长江边的山城，一路爬上青藏高原的东南缘。起飞时脚下是四川盆地——四周被山环抱的红层丘陵盆地，云雾多，重庆的房子顺着山坡和江岸层层叠叠。" +
       "飞机向西爬升，很快进入横断山脉：这是中国唯一一片南北走向的高大山群，一条雪山、一条深谷，再一条雪山，像搓衣板一样排列，金沙江、澜沧江、怒江在这里被挤在一起并行南流。" +
-      "越过横断山脉，进入藏东南。这一带因为有印度洋的水汽顺着河谷灌进来，是青藏高原上最湿润、最绿的角落，森林一直长到很高的地方。雅鲁藏布江在这里绕着南迦巴瓦峰拐了一个大弯，切出很深的峡谷。飞机再往西，地面转为相对平坦开阔的高原面，沿拉萨河谷下降到拉萨。",
+      "越过横断山脉，进入藏东南。这一带因为有印度洋的水汽顺着河谷灌进来，是高原东南缘最湿润、最绿的角落，森林一直长到很高的地方。雅鲁藏布江在这里绕着南迦巴瓦峰拐了一个大弯，切出很深的峡谷。飞机再往西，地面转为相对平坦开阔的高原面，沿拉萨河谷下降到拉萨。",
     "en-US":
       "Chongqing to Lhasa climbs from a river city among hills up onto the south-eastern edge of the Tibetan Plateau. On take-off you are over the Sichuan Basin — a red-bed basin of hills ringed by mountains, often cloudy, with Chongqing's buildings stacked up the slopes and river banks." +
       " Climbing west, the plane soon enters the Hengduan Mountains, the only belt of high ranges in China that runs north–south: a snow range, then a deep gorge, then another, lined up like a washboard, with the Jinsha, Lancang and Nu rivers squeezed together in parallel southward courses." +
@@ -448,7 +448,7 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "昆明飞拉萨，是从云贵高原横穿横断山脉，飞到青藏高原东南缘。起飞时脚下是滇中的高原面，昆明在一片高原湖盆里，旁边是滇池。" +
       "往西北飞，地面被切得越来越破碎，进入横断山脉：南北向排列的雪山和深谷，金沙江、澜沧江、怒江在这里并行南流。金沙江在石鼓一带拐了个急弯，在玉龙雪山和哈巴雪山之间切出很深的虎跳峡。" +
-      "继续往西北，进入藏东南。这一带有印度洋水汽顺河谷灌入，是青藏高原上最湿润、最绿的角落，森林长得很高。雅鲁藏布江绕南迦巴瓦峰拐了一个大弯，切出很深的峡谷。再往西，地面转为相对平坦开阔的青藏高原面，飞机沿拉萨河谷下降到拉萨。",
+      "继续往西北，进入藏东南。这一带有印度洋水汽顺河谷灌入，是高原东南缘最湿润、最绿的角落，森林长得很高。雅鲁藏布江绕南迦巴瓦峰拐了一个大弯，切出很深的峡谷。再往西，地面转为相对平坦开阔的青藏高原面，飞机沿拉萨河谷下降到拉萨。",
     "en-US":
       "Kunming to Lhasa crosses the Yunnan–Guizhou Plateau, cuts through the Hengduan Mountains, and reaches the south-eastern edge of the Tibetan Plateau. On take-off you are over the plateau surface of central Yunnan, with Kunming in a lake basin beside Lake Dian." +
       " Flying north-west, the land becomes ever more broken as you enter the Hengduan Mountains: north–south snow ranges and deep gorges, with the Jinsha, Lancang and Nu rivers running south in parallel. Near Shigu the Jinsha makes a sharp bend, and between the Yulong and Haba snow massifs it cuts the deep Tiger Leaping Gorge." +
@@ -3879,7 +3879,7 @@ export const ROUTE_NARRATION: Record<
       "越过蒂蒂旺沙山脉后，飞机继续向东北飞行，掠过大汉山国家公园大片原始热带雨林，最终降落在哥打巴鲁——吉兰丹州首府，坐落于吉兰丹河口，是马来传统文化保存最完整的城市之一。",
     "en-US":
       "Flying from Kuala Lumpur to Kota Bharu crosses the Malay Peninsula, linking its west and east coasts, spanning about 420 km. After leaving Kuala Lumpur the flight heads northeast, first passing over the Titiwangsa Mountains — the peninsula's backbone range, a continuous green ridge running down its centre." +
-      " Past the Titiwangsa range, the flight continues northeast over the extensive primary rainforest of Taman Negara, before landing in Kota Bharu, capital of Kelantan at the mouth of the Kelantan River, one of the cities where traditional Malay culture is best preserved.",
+      " Past the Titiwangsa range, the flight continues northeast over the extensive primary rainforest of Taman Negara, at whose centre Gunung Tahan rises as the highest peak on the peninsula, before landing in Kota Bharu, capital of Kelantan at the mouth of the Kelantan River, one of the cities where traditional Malay culture is best preserved.",
     },
     travel: {
     "zh-CN":
@@ -5680,11 +5680,11 @@ export const ROUTE_NARRATION: Record<
   "scl-ccp": {
     study: {
     "zh-CN":
-      "圣地亚哥飞康塞普西翁，向南穿越智利中央谷地最富庶的一段。舷窗下方是整齐的方格状农田与成片的葡萄园，两侧分别是低矮的海岸山脉与终年积雪的安第斯山脉，这是理解智利“海岸山脉—中央谷地—安第斯山脉”三段式地貌骨架的经典剖面。" +
+      "圣地亚哥飞康塞普西翁，向南穿越智利中央谷地最富庶的一段。舷窗下方的智利中央谷地是整齐的方格状农田与成片的葡萄园，两侧分别是低矮的海岸山脉与终年积雪的安第斯山脉，这是理解智利“海岸山脉—中央谷地—安第斯山脉”三段式地貌骨架的经典剖面。" +
       "越往南飞，田野逐渐被更为潮湿的绿色植被取代，降水也明显增多——这是地中海式气候向温带海洋性气候过渡的信号。飞机降落在比奥比奥河河口附近的康塞普西翁，这里是智利第二大都会区，也是重要的工业与港口城市。2010年智利大地震及随后引发的海啸曾对这一带造成严重影响，此后完成了大规模重建。" +
       "这条航线展示了中央谷地由北向南逐渐“变绿变湿”的渐变过程，也把乘客带到智利多雨地带的门户。",
     "en-US":
-      "Santiago to Concepción heads south across the richest stretch of Chile's Central Valley. Below is a neat grid of farmland and vineyards, flanked by the low Coastal Range on one side and the permanently snow-capped Andes on the other — a classic cross-section of Chile's three-part landscape structure." +
+      "Santiago to Concepción heads south across the richest stretch of Chile's Central Valley. Below, the Chilean Central Valley is a neat grid of farmland and vineyards, flanked by the low Coastal Range on one side and the permanently snow-capped Andes on the other — a classic cross-section of Chile's three-part landscape structure." +
       " Further south, the fields give way to greener, more humid vegetation as rainfall increases noticeably — a sign of the transition from Mediterranean to temperate maritime climate. The flight lands at Concepción, near the mouth of the Biobío River, Chile's second-largest metro area and an important industrial and port city. The 2010 Chilean earthquake and the tsunami it triggered caused severe damage here, followed by extensive rebuilding." +
       " This route traces the Central Valley's gradual shift from dry to green and wet moving south, delivering passengers to the doorstep of Chile's rainier belt.",
     },

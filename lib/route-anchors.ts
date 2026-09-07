@@ -26,7 +26,7 @@ const ZH_CORE_STOPWORDS = new Set(["长江", "黄河", "珠江", "日本", "中�
 
 /** 中文地名的通名后缀 —— 去掉之后再匹配一次，「戈壁沙漠」也能命中「戈壁」 */
 const ZH_GENERIC_SUFFIX =
-  /(沙漠|沙地|山脉|山地|山系|群山|走廊|谷地|河谷|大峡谷|峡谷|三角洲|半岛|群岛|列岛|诸岛|海岸|沿岸|沿海|海峡|草原|盆地|高原|台地|平原|低地|丘陵|湿地|沼泽|火山区|火山|破火山口|山|湖|河|江|海|岛)$/;
+  /(地质公园|国家公园|自然保护区|钙化梯田|梯田|沙漠|沙地|山脉|山地|山系|群山|走廊|谷地|河谷|大峡谷|峡谷|三角洲|半岛|群岛|列岛|诸岛|海岸|沿岸|沿海|海峡|草原|盆地|高原|台地|平原|低地|丘陵|湿地|沼泽|火山区|火山|破火山口|冰川|冰帽|冰原|冰盖|洞穴|溶洞|海蚀拱|山|湖|河|江|海|岛)$/;
 
 /** 名字末尾的括注（「戈壁（蒙古）」「Gobi Desert (Mongolia)」）—— 匹配前先去掉 */
 const PARENTHETICAL_SUFFIX = /[（(][^）)]*[）)]\s*$/;
@@ -44,7 +44,7 @@ const EN_CORE_STOPWORDS = new Set([
 
 /** 英文地名的通名后缀 —— 去掉之后再匹配一次，「Gobi Desert」也能命中「Gobi」 */
 const EN_GENERIC_SUFFIX =
-  / (Desert|Mountains|Range|Plain|Plains|Plateau|Basin|Valley|Gorge|Delta|Peninsula|Islands|Island|Sea|Strait|Lake|River|Coast|Steppe|Uplands|Highlands)$/i;
+  / (?:UNESCO Global Geopark|Global Geopark|Geopark|National Park|National Monument|Natural Monument|Nature Reserve|Desert|Mountains|Range|Plain|Plains|Plateau|Basin|Valley|Gorge|Delta|Peninsula|Islands|Island|Archipelago|Sea|Strait|Lake|River|Coast|Steppe|Uplands|Highlands|Caldera|Travertines|Caves|Cave|Glacier)$/i;
 
 /**
  * 英文按词匹配，不能用裸的 includes：「Easter」会命中「eastern South Pacific」，
