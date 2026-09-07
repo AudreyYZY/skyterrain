@@ -6729,8 +6729,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Ireland ============
   "ireland-overview": {
+    // identity sources: CSO Ireland《Population and Migration Estimates, April 2025》（2025-08-26 发布）：常住人口估计 5,458,600 人。https://www.cso.ie/en/releasesandpublications/ep/p-pme/populationandmigrationestimatesapril2025/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of Ireland sits on the Atlantic edge of north-western Europe, covering about 70,000 km² with a population of roughly 5.3 million. It is known for green pastoral countryside, Atlantic sea cliffs and a long Celtic-Gaelic cultural tradition; the official languages are Irish and English.",
+      "The Republic of Ireland sits on the Atlantic edge of north-western Europe, covering about 70,000 km² with a population of about 5.46 million as of April 2025 (Central Statistics Office). It is known for green pastoral countryside, Atlantic sea cliffs and a long Celtic-Gaelic cultural tradition; the official languages are Irish and English.",
     layout:
       "Ireland can be divided roughly into: Leinster (Dublin, the eastern plain and capital region), Munster (Cork, Limerick and Kerry, the southern and south-western coast and mountains), Connacht (Galway, the western coast and Gaeltacht areas), and the Republic's portion of Ulster (Donegal, the north-west coast). The centre of the country is dominated by low-lying land and peat bog, with most upland concentrated around the coastal margins.",
     gettingAround:
@@ -6915,8 +6917,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Denmark ============
   "denmark-overview": {
+    // identity sources: Danmarks Statistik《NYT: Befolkningen i Danmark runder 6 mio. indbyggere》：2025-01-01 为 5,992,734 人，2025-05-01 达 6,001,008 人。https://www.dst.dk/nyt/55902
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Denmark sits in Northern Europe, covering about 43,000 km² with a population of roughly 5.9 million. It is the smallest and flattest of the three Scandinavian countries (the entire country's highest point is only 170.86 m), made up of the Jutland peninsula and more than 500 islands, known as a \"kingdom of fairy tales\" and a \"kingdom of design.\"",
+      "Denmark sits in Northern Europe, covering about 43,000 km² with a population of about 5.99 million as of 1 January 2025, crossing 6 million that May (Statistics Denmark). It is the smallest and flattest of the three Scandinavian countries (the entire country's highest point is only 170.86 m), made up of the Jutland peninsula and more than 500 islands, known as a \"kingdom of fairy tales\" and a \"kingdom of design.\"",
     layout:
       "Denmark can be divided roughly into: the Capital Region (Copenhagen and its surroundings, the political and economic centre), Region Zealand (Roskilde, a historic former-capital area), the Region of Southern Denmark (Odense on the island of Funen, and southern Jutland), Central Denmark Region (Aarhus, Denmark's second city, and the lake district), North Denmark Region (Aalborg and Skagen, the peninsula's northern tip), and Bornholm (a standalone island in the Baltic Sea).",
     gettingAround:
@@ -7135,8 +7139,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Sweden ============
   "sweden-overview": {
+    // identity sources: SCB Population statistics 2025：2025-12-31 登记人口（folkbokförd befolkning）10,605,529 人。https://www.scb.se/en/finding-statistics/statistics-by-subject-area/population-and-living-conditions/population-composition-and-development/population-statistics/pong/statistical-news/population-statistics-year-2025-publish-1/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Sweden sits on the eastern side of the Scandinavian Peninsula in Northern Europe, covering about 450,000 km² — the largest country in the Nordic region — with a population of roughly 10.5 million. It spans an enormous range of latitude, from the Skåne Plain in the far south to Arctic Lapland in the far north, with correspondingly dramatic differences in landform and climate.",
+      "Sweden sits on the eastern side of the Scandinavian Peninsula in Northern Europe, covering about 450,000 km² — the largest country in the Nordic region — with a registered population of about 10.61 million at the end of 2025 (Statistics Sweden). It spans an enormous range of latitude, from the Skåne Plain in the far south to Arctic Lapland in the far north, with correspondingly dramatic differences in landform and climate.",
     layout:
       "Sweden can be divided roughly into: Svealand (Stockholm and its surroundings, the political and economic centre), Götaland (Gothenburg, Malmö and the island of Gotland, the southern coastal and farming region), and Norrland (Kiruna and Luleå, the northern forest and Lapland mountain region, covering about two-thirds of the country's area but sparsely populated).",
     gettingAround:
@@ -7338,8 +7344,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Finland ============
   "finland-overview": {
+    // identity sources: Statistics Finland《Population growth slowed down in 2025》：2025 年末初步数 5,652,881 人。https://stat.fi/en/publication/cmg6f46k91y0e07w0qtdt6yl7
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Finland sits in Northern Europe, covering about 340,000 km² with a population of roughly 5.6 million. Known as the \"Land of a Thousand Lakes,\" it actually has more than 188,000 lakes, and forest covers about 73% of the country, ranging from the archipelago coast in the south to the Arctic wilderness of Lapland in the north — a dramatic span of latitude and landform.",
+      "Finland sits in Northern Europe, covering about 340,000 km² with a preliminary population of about 5.65 million at the end of 2025 (Statistics Finland). Known as the \"Land of a Thousand Lakes,\" it actually has more than 188,000 lakes, and forest covers about 73% of the country, ranging from the archipelago coast in the south to the Arctic wilderness of Lapland in the north — a dramatic span of latitude and landform.",
     layout:
       "Finland can be divided roughly into: Uusimaa (Helsinki and its surroundings, the political and economic centre), Southwest Finland (Turku and Mariehamn, the archipelago and the autonomous region), Finnish Lakeland (Tampere, Savonlinna and Kuopio, the core of Finland's inland lake district), and Northern Finland including Lapland (Oulu, Rovaniemi and Inari, the Arctic wilderness and tunturi fell country).",
     gettingAround:
@@ -7541,8 +7549,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Luxembourg ============
   "luxembourg-overview": {
+    // identity sources: STATEC《Lower migration, low fertility: the demographic slowdown continues》：2025-01-01 总人口 681,973 人。https://statistiques.public.lu/en/actualites/2025/stn16-population-2025.html
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The Grand Duchy of Luxembourg sits in Western Europe, covering about 2,586 km² — one of the smallest sovereign states in Europe — with a population of roughly 670,000. It borders France, Germany and Belgium, and is a founding EU member state and an important financial centre.",
+      "The Grand Duchy of Luxembourg sits in Western Europe, covering about 2,586 km² — one of the smallest sovereign states in Europe — with a population of about 682,000 as of 1 January 2025 (STATEC). It borders France, Germany and Belgium, and is a founding EU member state and an important financial centre.",
     layout:
       "The country divides roughly into two regions: the Oesling in the north (an extension of the Ardennes, valleys interwoven with plateau) and the Gutland in the south (gentler terrain, home to the capital, Luxembourg City, plus the sandstone \"Little Switzerland\" of Mullerthal in the east, the Moselle Valley wine region in the south-east, and the Minett red-lands district at the southern tip).",
     gettingAround:
@@ -7709,8 +7719,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "thailand-overview": {
+    // identity sources: NSO Thailand《Statistical Yearbook Thailand 2025》采用内政部地方行政厅（DOPA）户籍登记口径：2025-01-08 为 65,951,210 人。https://www.nso.go.th/public/e-book/Statistical-Yearbook/SYB-2025/55/
+    //   **这是本轮发现的一个新错误模式**：原文「约7100万」与联合国 World Population Prospects 的推算口径（约 7160 万）吻合，与泰国本国官方登记口径差约 560 万。国际机构推算与本国官方统计是两套方法，不能混用——正文只写本国官方口径。核实日 2026-09-07，来源级别 1
     identity:
-      "The Kingdom of Thailand sits at the centre of the Southeast Asian mainland, covering about 510,000 km² with a population of roughly 71 million; the capital is Bangkok, the official language is Thai, and the currency is the Thai baht (THB).",
+      "The Kingdom of Thailand sits at the centre of the Southeast Asian mainland, covering about 510,000 km² with a registered population of about 65.95 million as of January 2025 (National Statistical Office of Thailand); the capital is Bangkok, the official language is Thai, and the currency is the Thai baht (THB).",
     layout:
       "The country divides broadly into five regions: the central plain (Bangkok, Ayutthaya), the northern mountains (Chiang Mai, Chiang Rai, Sukhothai), the north-eastern Isan plateau (Udon Thani, Nakhon Ratchasima), the eastern coast (Pattaya), and the southern peninsula (Phuket, Krabi, Koh Samui).",
     gettingAround:
@@ -8031,8 +8043,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November–April is best, with December–February the peak; the May–October rains are quiet and cheap but boats are few. Stay three or four nights. Linked with Krabi, Phi Phi and Ko Lipe on an Andaman route.",
   },
   "south-korea-overview": {
+    // identity sources: 행정안전부《2025년 지방자치단체 행정구역 및 인구 현황》（2024-12-31 基准）：住民登录人口 51,117,378 人。https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000055&nttId=118777
+    //   韩国有两个并存的官方口径：住民登录人口（行政安全部户籍登记，不含未登记外国人）5112 万，与统计厅 KOSIS 的总人口推算（含外国人居民）5168 万，相差约 57 万。正文取前者并写明口径。核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of Korea occupies the southern half of the Korean Peninsula in East Asia, covering about 100,000 km² with a population of roughly 51 million; the capital is Seoul, the common language is Korean, and the currency is the Korean won (KRW).",
+      "The Republic of Korea occupies the southern half of the Korean Peninsula in East Asia, covering about 100,000 km² with a resident-registered population of about 51.12 million at the end of 2024 (Ministry of the Interior and Safety); the capital is Seoul, the common language is Korean, and the currency is the Korean won (KRW).",
     layout:
       "The country divides broadly into five regions: the Capital Area (Seoul, Incheon and surroundings), the Yeongnam region (Busan, Gyeongju, Ulsan and other south-eastern cities), the Honam region (Jeonju and other south-western cities), Gangwon Province (Gangneung, Sokcho and the eastern coast and mountains), and Jeju Island (a volcanic island to the south).",
     gettingAround:
@@ -8354,8 +8368,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Poland ============
   "poland-overview": {
+    // identity sources: 人口：GUS 数据，2025 年末 37,332,000 人（较上年少 15.7 万）——只找到波兰通讯社 PAP Biznes 对 GUS 公报的转述，未能直取 GUS 官网原页，**来源级别 2**。https://biznes.pap.pl/wiadomosci/gospodarka/liczba-ludnosci-polski-na-koniec-2025-spadla-o-157-tys-rdr-do-37332-mln-gus
+    //   排名：Eurostat《Demography of Europe, 2025 edition》按 2024-01-01 常住人口口径，波兰约 3660 万列欧盟第五（德法意西之后），领先第六名罗马尼亚约 1700 万，排名稳固——**排名断言本身属实**，缺的只是年份与口径。https://ec.europa.eu/eurostat/web/interactive-publications/demography-2025（级别 1）
+    //   核实日 2026-09-07
     identity:
-      "Poland sits in Central Europe, covering about 313,000 km² with the fifth-largest population in the EU (about 38 million); it borders the Baltic Sea to the north and the Carpathians to the south, its terrain gradually rising from north to south, and is an important economic and cultural hub of Eastern Europe.",
+      "Poland sits in Central Europe, covering about 313,000 km² with a population of about 37.33 million at the end of 2025 (Statistics Poland), the fifth-largest in the EU per Eurostat's 2024 figures; it borders the Baltic Sea to the north and the Carpathians to the south, its terrain gradually rising from north to south, and is an important economic and cultural hub of Eastern Europe.",
     layout:
       "Poland can be divided roughly into: Mazovia (Warsaw and its surroundings, the political centre), Lesser Poland/Małopolska (Kraków and Zakopane, the gateway to the Carpathians), Greater Poland and Silesia (Poznań and Wrocław, the western plains and industrial belt), Pomerania (Gdańsk, Szczecin and Toruń, along the Baltic coast), and Warmia-Masuria and Podlasie (Olsztyn and Białystok, the north-eastern lake district and forests).",
     gettingAround:
@@ -8556,8 +8573,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Vietnam ============
   "vietnam-overview": {
+    // identity sources: 越南统计总局（GSO）《Thông cáo báo chí về tình hình dân số, lao động, việc làm quý IV và năm 2025》：2025 年平均人口 102.3 百万人。https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-ve-tinh-hinh-dan-so-lao-dong-viec-lam-quy-iv-va-nam-2025/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The Socialist Republic of Vietnam lies on the eastern side of the Southeast Asian mainland, its territory forming a long S-shape, covering about 330,000 km² with a population of roughly 100 million; the capital is Hanoi, the official language is Vietnamese, and the currency is the Vietnamese dong (VND).",
+      "The Socialist Republic of Vietnam lies on the eastern side of the Southeast Asian mainland, its territory forming a long S-shape, covering about 330,000 km² with an average population of about 102.3 million in 2025 (General Statistics Office of Vietnam); the capital is Hanoi, the official language is Vietnamese, and the currency is the Vietnamese dong (VND).",
     layout:
       "The country divides broadly into four regions: the North (Hanoi, Ha Long Bay, the Sapa highlands), the Centre (the coastal ancient-capital belt of Da Nang, Hoi An, and Hue), the Central Highlands (basalt plateaus including Da Lat), and the South (Ho Chi Minh City, the Mekong Delta).",
     gettingAround:
@@ -8879,8 +8898,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Malaysia ============
   "malaysia-overview": {
+    // identity sources: DOSM《Current Population Estimates, Malaysia, 2025》：34.2 百万（公民 + 非公民）。https://www.dosm.gov.my/uploads/release-content/file_20250821151339.pdf
+    //   原文 3640 万比官方口径高出约 220 万。核实日 2026-09-07，来源级别 1
     identity:
-      "Malaysia is made up of Peninsular Malaysia (West Malaysia) and the states of Sabah and Sarawak in northern Borneo (East Malaysia), covering about 330,000 km² with a population of about 36.4 million; its capital is Kuala Lumpur, the official language is Malay, and its currency is the Malaysian ringgit (MYR).",
+      "Malaysia is made up of Peninsular Malaysia (West Malaysia) and the states of Sabah and Sarawak in northern Borneo (East Malaysia), covering about 330,000 km² with an estimated population of about 34.2 million in 2025 (Department of Statistics Malaysia); its capital is Kuala Lumpur, the official language is Malay, and its currency is the Malaysian ringgit (MYR).",
     layout:
       "The country divides roughly into: the Centre (Kuala Lumpur, the political and economic hub), the Northern Peninsula (George Town/Penang, Ipoh, Langkawi, Kota Bharu), the Southern Peninsula (Johor Bahru, Malacca, Kuantan), Sabah (Kota Kinabalu, Sandakan — Mount Kinabalu and rainforest reserves) and Sarawak (Kuching, Miri — Gunung Mulu and the Niah Caves).",
     gettingAround:
@@ -9202,8 +9223,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Mongolia ============
   "mongolia-overview": {
+    // identity sources: 蒙古国家统计局（NSO）2024 年末人口 3,546,000 人（2025-01 发布）——只找到新华社对 NSO 数据的转述，未能直取 1212.mn 官网原页，**来源级别 2**；也未核到更新的 2025 年末数字。https://english.news.cn/asiapacific/20250121/1b5f31e799b0417c8e8c8dcebe36e62a/c.html
+    //   核实日 2026-09-07
     identity:
-      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.5 million; its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
+      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.55 million at the end of 2024 (National Statistics Office of Mongolia); its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
     layout:
       "The country divides roughly into: the Centre (Ulaanbaatar and the Kharkhorin/Orkhon valley, the political and cultural core), the North (Erdenet, Darkhan, Mörön — forest and lake country), the West (Khovd, Ölgii — the Mongol Altai and the Kazakh community), the South Gobi (Dalanzadgad — the Gobi desert belt), and the East (Choibalsan — the Daurian steppe belt).",
     gettingAround:
@@ -9387,8 +9410,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Philippines ============
   "philippines-overview": {
+    // identity sources: PSA《2024 Census of Population (POPCEN) Population Counts Declared Official by the President》：2024-07-01 普查人口 112,729,484 人。https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president
+    //   原文「逾 1.14 亿」方向就是错的——实际不到 1.14 亿。核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of the Philippines is a Southeast Asian archipelago of about 7,107 islands, covering roughly 299,800 km² with a population of more than 114 million; its capital is Manila, the official languages are Filipino (based on Tagalog) and English, and its currency is the Philippine peso (PHP).",
+      "The Republic of the Philippines is a Southeast Asian archipelago of about 7,107 islands, covering roughly 299,800 km² with a population of 112.7 million in the 2024 census (Philippine Statistics Authority); its capital is Manila, the official languages are Filipino (based on Tagalog) and English, and its currency is the Philippine peso (PHP).",
     layout:
       "The country divides roughly into three major island groups: Luzon (Manila, Baguio, Legazpi and others — the population and economic core), the Visayas (Cebu, Bohol, Boracay and others — the central island cluster) and Mindanao (Davao and others — the southern islands); Palawan lies to the west and forms a relatively self-contained tourism region of its own.",
     gettingAround:
@@ -9606,8 +9631,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Singapore ============
   "singapore-overview": {
+    // identity sources: SingStat《Population Trends, 2025》：2025 年 6 月末总人口 6.11 百万，其中常住人口 420 万、非居民 191 万。https://www.singstat.gov.sg/publication-resources/population-trends-2025
+    //   本批唯一一条数字与官方完全吻合的。核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of Singapore is a city-state island nation in Southeast Asia, covering about 735 km² with a population of about 6.11 million — one of the most densely populated independent countries in the world after Monaco. Its capital is Singapore itself; the official languages are Malay (the national language), English, Mandarin and Tamil, and its currency is the Singapore dollar (SGD).",
+      "The Republic of Singapore is a city-state island nation in Southeast Asia, covering about 735 km² with a total population of about 6.11 million as of end-June 2025 (Singapore Department of Statistics) — one of the most densely populated independent countries in the world after Monaco. Its capital is Singapore itself; the official languages are Malay (the national language), English, Mandarin and Tamil, and its currency is the Singapore dollar (SGD).",
     layout:
       "The country is highly urbanised with no traditional multi-city division: Marina Bay and the city centre form the political and economic core, Sentosa is the well-known resort island to the south, outlying islands such as Pulau Ubin and St John's Island preserve natural and historical landscapes, and the Central Catchment and Bukit Timah reserves are mainland Singapore's only remaining large tracts of forest.",
     gettingAround:
@@ -9706,8 +9733,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Indonesia ============
   "indonesia-overview": {
+    // identity sources: 印尼中央统计局（BPS）2025 年人口间隔调查 SUPAS 2025：2025 年年中 284.67 百万人。只找到 BPS 官方账号发布，未取到 bps.go.id 上的出版物页面，**来源级别按 2 记**。
+    //   另有一个 2.876 亿的数字来自 DTSEN 社会福利登记库，与 SUPAS 人口统计口径不同，不要混用。原文「逾 2.7 亿」字面成立但已滞后一千多万。核实日 2026-09-07
     identity:
-      "Indonesia is a Southeast Asian archipelagic nation of about 17,000 islands, covering roughly 1.91 million km² with a population of more than 270 million — the world's fourth most populous country; its capital is Jakarta, the official language is Indonesian (Bahasa Indonesia), and its currency is the Indonesian rupiah (IDR).",
+      "Indonesia is a Southeast Asian archipelagic nation of about 17,000 islands, covering roughly 1.91 million km² with a mid-2025 population of about 284.7 million (BPS-Statistics Indonesia) — the world's fourth most populous country; its capital is Jakarta, the official language is Indonesian (Bahasa Indonesia), and its currency is the Indonesian rupiah (IDR).",
     layout:
       "The country divides roughly into five main islands and their surrounding archipelagos: Java (Jakarta, Yogyakarta, Surabaya, Bandung — the population and economic core), Sumatra (Medan — volcanoes and rainforest), Kalimantan (Balikpapan — Indonesia's portion of Borneo), Sulawesi (Makassar, Manado — religiously diverse coastlines and coral reefs) and the Bali–Nusa Tenggara islands (Denpasar, Labuan Bajo — volcanoes, rice terraces and island resorts).",
     gettingAround:
@@ -9908,8 +9937,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Kazakhstan ============
   "kazakhstan-overview": {
+    // identity sources: 哈萨克斯坦国家统计局《Population of the Republic of Kazakhstan (as of January 1, 2025)》：2025-01-01 为 20,283,399 人；2025-12-01 为 20,478,879 人。https://stat.gov.kz/en/industries/social-statistics/demography/publications/312581/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Kazakhstan is the world's largest landlocked country, covering about 2.72 million km² with a population of about 20 million; its capital is Astana, the official language is Kazakh, Russian is widely used as the language of interethnic communication, and its currency is the Kazakhstani tenge (KZT).",
+      "Kazakhstan is the world's largest landlocked country, covering about 2.72 million km² with a population of about 20.28 million at the start of 2025, about 20.48 million by year-end (Bureau of National Statistics); its capital is Astana, the official language is Kazakh, Russian is widely used as the language of interethnic communication, and its currency is the Kazakhstani tenge (KZT).",
     layout:
       "The country divides roughly into six regions: the North (Astana, Kokshetau — steppe and lakes), the Southeast (Almaty — the northern Tian Shan foothills, former capital and cultural centre), the South (Shymkent, Turkestan — ancient Silk Road cities and oasis agriculture), the West (Aktau — the Caspian coast and the desert wonders of Mangystau), the Centre (Karaganda — a mining city in the Kazakh Uplands), and the East (Semey, Pavlodar — along the Irtysh River).",
     gettingAround:
@@ -10076,8 +10107,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Turkey ============
   "turkey-overview": {
+    // identity sources: TÜİK《Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları, 2025》：2025-12-31 地址登记人口 86,092,168 人。https://veriportali.tuik.gov.tr/tr/press/53899
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Turkey straddles Europe and Asia, covering about 780,000 km² with a population of roughly 85 million; its capital is Ankara, its largest city Istanbul, its official language Turkish, and its currency the Turkish lira (TRY).",
+      "Turkey straddles Europe and Asia, covering about 780,000 km² with a registered population of about 86.09 million at the end of 2025 (Turkish Statistical Institute); its capital is Ankara, its largest city Istanbul, its official language Turkish, and its currency the Turkish lira (TRY).",
     layout:
       "The country is broadly divided into five regions: Marmara (Istanbul/Bursa, straddling the Bosphorus at the Europe-Asia crossing), the Aegean (Izmir/Bodrum/Pamukkale, deeply indented bays and Greco-Roman ruins), the Mediterranean (Antalya, the 'Turkish Riviera'), Central Anatolia (Ankara/Konya/Cappadocia, plateau and volcanic-ash terrain), and the Black Sea (Trabzon, rainy mountainous coast).",
     gettingAround:
@@ -10261,8 +10294,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Croatia ============
   "croatia-overview": {
+    // identity sources: DZS《STAN-2026-3-1 Procjena stanovništva Republike Hrvatske u 2025》：2025 年年中估计 3,874,993 人。https://podaci.dzs.hr/2026/hr/121477
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Croatia sits in south-central Europe on the eastern Adriatic coast, covering about 56,600 km² with a population of roughly 3.8 million. Its capital is Zagreb, the official language is Croatian, and it has used the euro and been part of the Schengen Area since 2023.",
+      "Croatia sits in south-central Europe on the eastern Adriatic coast, covering about 56,600 km² with an estimated mid-2025 population of about 3.875 million (Croatian Bureau of Statistics). Its capital is Zagreb, the official language is Croatian, and it has used the euro and been part of the Schengen Area since 2023.",
     layout:
       "The country divides broadly into three regions: the Pannonian lowland (Zagreb and Slavonia, inland plains and hills), the Dinaric mountain belt (an inland mountainous zone), and the Adriatic coast (Istria, the Kvarner Gulf, and Dalmatia, with a long, indented coastline and 1,244 islands).",
     gettingAround:
@@ -10411,8 +10446,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "June to September is Hvar's peak season, with July and August the busiest for yachts and visitors. Lavender typically blooms from mid-to-late June through July, the best time to photograph the fields. The island depends on ferries, so book tickets ahead, especially on peak-season weekends.",
   },
   "czechia-overview": {
+    // identity sources: ČSÚ《Pohyb obyvatelstva - rok 2025》：2025-12-31 为 10,915,839 人。https://csu.gov.cz/rychle-informace/pohyb-obyvatelstva-rok-2025
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of roughly 10.9 million. Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
+      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of about 10.92 million at the end of 2025 (Czech Statistical Office). Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
     layout:
       "The country is traditionally divided into three historic regions: Bohemia (west and center, centered on Prague and ringed by ancient mountains), Moravia (southeast, centered on Brno, with rolling hills and vineyards), and Czech Silesia (a small northeastern corner, administratively combined with Moravia). Almost the entire country is bordered by old mountain ranges, with lowlands in the center.",
     gettingAround:
@@ -12450,8 +12487,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "chile-overview": {
+    // identity sources: INE Chile《Estimaciones y Proyecciones de Población, base 2024》（2026-01-28 发布）：2024-04-16 普查基准日经人口学方法调节后的常住人口 19,871,764 人。https://www.ine.gob.cl/docs/default-source/prensa-y-comunicacion/eepp2024.pdf
+    //   **本轮唯一一个官方内部两个数字并存的国家**：2024 年普查原始计数 18,480,432 人（未经漏报调整），INE 估计漏报率约 7%，调节后得到 1987 万；正文取 INE 最终采用的 population base，不取普查原始计数。核实日 2026-09-07，来源级别 1
     identity:
-      "Chile is a long, narrow country on the southwestern edge of South America, stretching roughly 4,300 km north to south while rarely exceeding 200 km east to west — one of the most elongated countries in the world. Population is about 19.6 million, capital Santiago, official language Spanish (with a strong local accent and rich slang). The terrain runs from the driest desert on Earth in the north, through a Mediterranean-climate wine belt in the center, to a rainy lake district, Patagonian ice fields, and fjords in the south, plus the remote Pacific outpost of Easter Island.",
+      "Chile is a long, narrow country on the southwestern edge of South America, stretching roughly 4,300 km north to south while rarely exceeding 200 km east to west — one of the most elongated countries in the world. The adjusted resident-population estimate is about 19.87 million for 2024 (INE Chile), capital Santiago, official language Spanish (with a strong local accent and rich slang). The terrain runs from the driest desert on Earth in the north, through a Mediterranean-climate wine belt in the center, to a rainy lake district, Patagonian ice fields, and fjords in the south, plus the remote Pacific outpost of Easter Island.",
     layout:
       "The country breaks roughly into five bands: Norte Grande (the Atacama Desert, salt flats, and geysers), Norte Chico (Coquimbo, a stargazing and wine-growing region), central Chile (the core around Santiago and Valparaíso, most densely populated), the southern Lake District (volcanoes, lakes, and German-settler towns), and Patagonia (ice fields, fjords, Torres del Paine National Park) — plus two special Pacific territories, Easter Island and the Juan Fernández Archipelago.",
     gettingAround:
