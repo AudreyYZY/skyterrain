@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: d6583ff
+lastVerifiedCommit: 49b227f
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,9 @@ lastVerifiedCommit: d6583ff
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | travel · 取最新一期时受阻的条目（C6-d 刷新：暂时拿不到最新一期的 5 条） | 5 | 0 / 0 / 5 | 当场修 0 条；新开 issue 5、关闭 0 |
+| 2026-09-07 | travel · 取最新一期（2025 年公报）（C6-d 刷新第 2 批：中国 14 城 + 中国/德国概览 + 蒙古面积） | 17 | 0 / 17 / 0 | 当场修 17 条；新开 issue 0、关闭 1 |
+| 2026-09-07 | travel · 中国城市 identity 段人口（取最新一期）（C6-d 刷新第 1 批：中国 13 城 + 港澳取 2025/2026 最新一期） | 15 | 0 / 14 / 1 | 当场修 15 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 中国城市 identity 段人口数字（C6 第 3 批：中国 30 座城市的人口） | 30 | 7 / 19 / 4 | 当场修 30 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 国家概览 identity 段人口数字（C6 第 2 批：38 个国家概览的全国人口（B 组 19 国）） | 20 | 5 / 14 / 1 | 当场修 19 条；新开 issue 1、关闭 0 |
 | 2026-09-07 | travel · 国家概览 identity 段人口数字（C6 第 1 批：38 个国家概览的全国人口（A 组 19 国）） | 19 | 8 / 11 / 0 | 当场修 19 条；新开 issue 0、关闭 0 |
