@@ -6,12 +6,47 @@
   "descriptionEn": "Swabian Jura · Franconian Jura",
   "depCountry": "germany",
   "arrCountry": "germany",
-  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH100", "aircraft": "Airbus A321", "depIata": "FRA", "arrIata": "MUC", "durationMin": 60 },
+  "flight": {
+    "airline": "汉莎航空",
+    "airlineEn": "Lufthansa",
+    "flightNo": "LH100",
+    "aircraft": "Airbus A321",
+    "depIata": "FRA",
+    "arrIata": "MUC",
+    "durationMin": 60
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "fra", "name": "法兰克福", "nameEn": "Frankfurt", "lat": 50.0379, "lon": 8.5622, "airport": true },
-    { "kind": "terrain", "terrainId": "swabian-jura" },
-    { "kind": "terrain", "terrainId": "franconian-jura" },
-    { "kind": "city", "id": "muc", "name": "慕尼黑", "nameEn": "Munich", "lat": 48.3538, "lon": 11.7861, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "fra",
+      "name": "法兰克福",
+      "nameEn": "Frankfurt",
+      "lat": 50.0379,
+      "lon": 8.5622,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "swabian-jura"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "franconian-jura"
+    },
+    {
+      "kind": "city",
+      "id": "muc",
+      "name": "慕尼黑",
+      "nameEn": "Munich",
+      "lat": 48.3538,
+      "lon": 11.7861,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.frankfurt-airport.com/en/flights-and-transfer/departures.html/LH+100",
+    "checkedOn": "2026-09-07",
+    "note": "属实：法兰克福—慕尼黑不经停，汉莎主线执飞，A321，约 55min（记录 60min 接近）。**这个号形状虽整（100），但确系在飞的常规航班**。又一个「形状可疑但真实」的例子，印证 check:routes 的占位号扫描只能提示、不能判错。来源级别 2（法兰克福机场官网）"
+  }
 }

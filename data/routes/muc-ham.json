@@ -6,13 +6,51 @@
   "descriptionEn": "Thuringian Forest · Harz Mountains · North German Plain",
   "depCountry": "germany",
   "arrCountry": "germany",
-  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH2054", "aircraft": "Airbus A321", "depIata": "MUC", "arrIata": "HAM", "durationMin": 75 },
+  "flight": {
+    "airline": "汉莎航空",
+    "airlineEn": "Lufthansa",
+    "flightNo": "LH2054",
+    "aircraft": "Airbus A321",
+    "depIata": "MUC",
+    "arrIata": "HAM",
+    "durationMin": 75
+  },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "muc", "name": "慕尼黑", "nameEn": "Munich", "lat": 48.3538, "lon": 11.7861, "airport": true },
-    { "kind": "terrain", "terrainId": "thuringian-forest" },
-    { "kind": "terrain", "terrainId": "harz-mountains" },
-    { "kind": "terrain", "terrainId": "north-german-plain" },
-    { "kind": "city", "id": "ham", "name": "汉堡", "nameEn": "Hamburg", "lat": 53.6304, "lon": 9.9882, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "muc",
+      "name": "慕尼黑",
+      "nameEn": "Munich",
+      "lat": 48.3538,
+      "lon": 11.7861,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "thuringian-forest"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "harz-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-german-plain"
+    },
+    {
+      "kind": "city",
+      "id": "ham",
+      "name": "汉堡",
+      "nameEn": "Hamburg",
+      "lat": 53.6304,
+      "lon": 9.9882,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://planefinder.net/data/flight/LH2054/history/4-56213767",
+    "checkedOn": "2026-09-07",
+    "note": "属实：慕尼黑—汉堡不经停，汉莎主线执飞（DLH 呼号，非代码共享支线），A321 是可核实使用过的机型之一。航段活跃（每周约 97 班）。来源级别 3"
+  }
 }

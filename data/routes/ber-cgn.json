@@ -6,12 +6,47 @@
   "descriptionEn": "Harz Mountains · Teutoburg Forest",
   "depCountry": "germany",
   "arrCountry": "germany",
-  "flight": { "airline": "欧洲之翼航空", "airlineEn": "Eurowings", "flightNo": "EW9012", "aircraft": "Airbus A320", "depIata": "BER", "arrIata": "CGN", "durationMin": 70 },
+  "flight": {
+    "airline": "欧洲之翼航空",
+    "airlineEn": "Eurowings",
+    "flightNo": "EW8056",
+    "aircraft": "Airbus A319 / A320（同号不同日机型不固定）",
+    "depIata": "BER",
+    "arrIata": "CGN",
+    "durationMin": 70
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "ber", "name": "柏林", "nameEn": "Berlin", "lat": 52.3667, "lon": 13.5033, "airport": true },
-    { "kind": "terrain", "terrainId": "harz-mountains" },
-    { "kind": "terrain", "terrainId": "teutoburg-forest" },
-    { "kind": "city", "id": "cgn", "name": "科隆", "nameEn": "Cologne", "lat": 50.8659, "lon": 7.1427, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ber",
+      "name": "柏林",
+      "nameEn": "Berlin",
+      "lat": 52.3667,
+      "lon": 13.5033,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "harz-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "teutoburg-forest"
+    },
+    {
+      "kind": "city",
+      "id": "cgn",
+      "name": "科隆",
+      "nameEn": "Cologne",
+      "lat": 50.8659,
+      "lon": 7.1427,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Eurowings-Berlin-Cologne/EW8056",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：EW9012 在各主流追踪站查无此号。柏林—科隆/波恩确实仍由欧洲之翼不经停营运（每周约 21 班；汉莎主线不飞这条、只做中转产品），真实号如 EW8056。欧洲之翼本身就是汉莎集团的低成本品牌，不属于第三方代码共享。来源级别 3"
+  }
 }
