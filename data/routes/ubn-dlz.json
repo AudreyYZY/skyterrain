@@ -6,12 +6,47 @@
   "descriptionEn": "Gobi Desert · Gurvan Saikhan Mountains",
   "depCountry": "mongolia",
   "arrCountry": "mongolia",
-  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0807", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "DLZ", "durationMin": 60 },
+  "flight": {
+    "airline": "蒙古国际航空",
+    "airlineEn": "MIAT Mongolian Airlines",
+    "flightNo": "OM91",
+    "aircraft": "Bombardier CRJ-700",
+    "depIata": "UBN",
+    "arrIata": "DLZ",
+    "durationMin": 60
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
-    { "kind": "terrain", "terrainId": "mongolia-gobi" },
-    { "kind": "terrain", "terrainId": "gurvan-saikhan" },
-    { "kind": "city", "id": "dlz", "name": "达兰扎德嘎德", "nameEn": "Dalanzadgad", "lat": 43.5919, "lon": 104.4283, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ubn",
+      "name": "乌兰巴托",
+      "nameEn": "Ulaanbaatar",
+      "lat": 47.6467,
+      "lon": 106.8161,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mongolia-gobi"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "gurvan-saikhan"
+    },
+    {
+      "kind": "city",
+      "id": "dlz",
+      "name": "达兰扎德嘎德",
+      "nameEn": "Dalanzadgad",
+      "lat": 43.5919,
+      "lon": 104.4283,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightsfrom.com/UBN-DLZ",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：同上。UBN–DLZ 现由 MIAT 独家不经停承运，航班号 OM91（返程 OM92），CRJ-700，约 1 小时——**时长与记录一致，承运人与机型全错**。来源级别 3"
+  }
 }

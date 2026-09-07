@@ -41,14 +41,6 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
     "zh-CN": { perSentence: [0, 0, 1], source: "auto" },
     "en-US": { perSentence: [0, 0, 1], source: "auto" },
   },
-  "ams-grq": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 3], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 3, 3], source: "auto" },
-  },
-  "ams-mst": {
-    "zh-CN": { perSentence: [0, 1, 2, 2], source: "auto" },
-    "en-US": { perSentence: [0, 1, 1, 1], source: "auto" },
-  },
   "arn-got": {
     "zh-CN": { perSentence: [0, 1, 1], source: "auto" },
     "en-US": { perSentence: [0, 1, 1], source: "auto" },
@@ -356,10 +348,6 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
   "gmp-usn": {
     "zh-CN": { perSentence: [0, 1, 1], source: "auto" },
     "en-US": { perSentence: [0, 1], source: "auto" },
-  },
-  "gva-lug": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 4], source: "auto" },
-    "en-US": { perSentence: [0, 1, 2, 2, 4], source: "auto" },
   },
   "han-dad": {
     "zh-CN": { perSentence: [0, 1, 2], source: "auto" },
@@ -1092,9 +1080,5 @@ export const ROUTE_ANCHORS: Record<string, Partial<Record<Language, RouteAnchorE
   "zrh-gva": {
     "zh-CN": { perSentence: [0, 1, 3, 3], source: "auto" },
     "en-US": { perSentence: [0, 1, 3, 3], source: "auto" },
-  },
-  "zrh-lug": {
-    "zh-CN": { perSentence: [0, 1, 2, 3, 3, 4], source: "auto" },
-    "en-US": { perSentence: [0, 0, 2, 3, 3, 4], source: "auto" },
   },
 };

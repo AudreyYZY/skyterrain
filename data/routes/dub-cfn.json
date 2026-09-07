@@ -6,11 +6,43 @@
   "descriptionEn": "Glenveagh",
   "depCountry": "ireland",
   "arrCountry": "ireland",
-  "flight": { "airline": "爱尔兰航空支线（爱美拉德航空运营）", "airlineEn": "Aer Lingus Regional (operated by Emerald Airlines)", "flightNo": "EI3408", "aircraft": "ATR 72-600", "depIata": "DUB", "arrIata": "CFN", "durationMin": 50 },
+  "flight": {
+    "airline": "爱尔兰航空支线（爱美拉德航空运营）",
+    "airlineEn": "Aer Lingus Regional (operated by Emerald Airlines)",
+    "flightNo": "EI3408",
+    "aircraft": "ATR 72-600",
+    "depIata": "DUB",
+    "arrIata": "CFN",
+    "durationMin": 50
+  },
   "cruiseHeight": 4500,
   "waypoints": [
-    { "kind": "city", "id": "dub", "name": "都柏林", "nameEn": "Dublin", "lat": 53.4213, "lon": -6.2701, "airport": true },
-    { "kind": "terrain", "terrainId": "glenveagh" },
-    { "kind": "city", "id": "cfn", "name": "多尼戈尔", "nameEn": "Donegal", "lat": 55.0442, "lon": -8.3405, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "dub",
+      "name": "都柏林",
+      "nameEn": "Dublin",
+      "lat": 53.4213,
+      "lon": -6.2701,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "glenveagh"
+    },
+    {
+      "kind": "city",
+      "id": "cfn",
+      "name": "多尼戈尔",
+      "nameEn": "Donegal",
+      "lat": 55.0442,
+      "lon": -8.3405,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.ch-aviation.com/news/163399-ireland-issues-tender-for-donegal-pso-renewal",
+    "checkedOn": "2026-09-07",
+    "note": "属实：这是爱尔兰交通部招标、政府补贴的 PSO 航线（本轮四年合约约 1700 万欧元），**Emerald Airlines 自 2022-02 起以 Aer Lingus Regional 品牌运营**，ATR 72-600。2026-02-10 交通部宣布新一轮招标结果，Emerald 再次中标续约（新时刻表 3-29 生效，取消午后一班但承运人与机型不变）。记录里「（爱美拉德航空运营）」这个括注**写对了**——爱尔兰航空只提供品牌与航班号，实际执飞方是 Emerald。这是 A7 记录正确的范例。来源级别 2"
+  }
 }

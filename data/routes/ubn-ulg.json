@@ -6,12 +6,47 @@
   "descriptionEn": "Khangai Mountains · Great Lakes Depression · Mongol Altai",
   "depCountry": "mongolia",
   "arrCountry": "mongolia",
-  "flight": { "airline": "航蒙航空", "airlineEn": "Aero Mongolia", "flightNo": "M0803", "aircraft": "Airbus A319", "depIata": "UBN", "arrIata": "ULG", "durationMin": 140 },
+  "flight": {
+    "airline": "蒙古国际航空",
+    "airlineEn": "MIAT Mongolian Airlines",
+    "flightNo": "OM67",
+    "aircraft": "Bombardier CRJ-700",
+    "depIata": "UBN",
+    "arrIata": "ULG",
+    "durationMin": 80
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "ubn", "name": "乌兰巴托", "nameEn": "Ulaanbaatar", "lat": 47.6467, "lon": 106.8161, "airport": true },
-    { "kind": "terrain", "terrainId": "khangai-mountains" },
-    { "kind": "terrain", "terrainId": "great-lakes-depression" },
-    { "kind": "city", "id": "ulg", "name": "乌力吉", "nameEn": "Ölgii", "lat": 48.9964, "lon": 89.9308, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ubn",
+      "name": "乌兰巴托",
+      "nameEn": "Ulaanbaatar",
+      "lat": 47.6467,
+      "lon": 106.8161,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "khangai-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-lakes-depression"
+    },
+    {
+      "kind": "city",
+      "id": "ulg",
+      "name": "乌力吉",
+      "nameEn": "Ölgii",
+      "lat": 48.9964,
+      "lon": 89.9308,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.hunnuair.com/en/timetable",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：同上（航蒙航空不飞国内线）。UBN–ULG 现由**两家**承运：MIAT OM67/OM68（CRJ-700，夏季每周三班，约 1h20m）与 Hunnu Air MR181/182/184/186（ATR 72 或 Fokker 50 涡桨）。两者时长都远不到 140 分钟。**来源级别 1**（Hunnu Air 官网时刻表）+ 3。取 MIAT 作为主承运人"
+  }
 }

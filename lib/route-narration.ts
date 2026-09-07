@@ -1718,30 +1718,6 @@ export const ROUTE_NARRATION: Record<
 
 
 
-  "zrh-lug": {
-    study: {
-    "zh-CN":
-      "苏黎世飞卢加诺，是一趟很短的航班，却把整条阿尔卑斯山脉从北到南横切了一遍，从德语区飞到意大利语区。起飞后先掠过苏黎世湖——一条冰川挖出、细长弯曲的湖，湖两岸是富裕的“黄金海岸”。" +
-      "往南很快到卢塞恩湖：一个形状极不规则、被陡峭山壁夹住的湖，瑞士联邦最早的几个州就在它周围。" +
-      "接着地面猛然升高，进入阿尔卑斯主脊：圣哥达山块是这里的关键——它是欧洲的一处分水岭，罗讷河、莱茵河、提契诺河都从这一带发源，历史上翻越圣哥达山口是连接南北欧的要道，如今山下有世界最长的铁路隧道（戈特哈德基线隧道，约 57 公里）。" +
-      "翻过主脊，气候和植被立刻变了：南坡是温暖湿润的提契诺，出现栗树和棕榈。马焦雷湖和卢加诺湖是几条伸进意大利的狭长湖，卢加诺就在湖湾里、两座锥形山之间。",
-    "en-US":
-      "Zürich to Lugano is a short flight that cuts across the whole Alpine chain from north to south, from the German-speaking region to the Italian-speaking one. After take-off you skim Lake Zürich — a long, curving lake gouged by a glacier, its shores the wealthy 'Gold Coast'." +
-      " South you soon reach Lake Lucerne: a very irregular lake hemmed in by steep walls, around which the first cantons of the Swiss confederation lay." +
-      " Then the ground rises sharply into the main Alpine crest, where the Gotthard Massif is key — a watershed of Europe, where the Rhône, the Rhine and the Ticino all rise, historically a vital pass between northern and southern Europe, and now with the world's longest rail tunnel (the Gotthard Base Tunnel, about 57 km) beneath it." +
-      " Over the crest the climate and vegetation change at once: the southern slope is warm, humid Ticino, with chestnut trees and palms. Lake Maggiore and Lake Lugano are long lakes reaching into Italy, and Lugano is in a bend of its lake between two conical mountains.",
-    },
-    travel: {
-    "zh-CN":
-      "苏黎世到卢加诺飞约 40 分钟，同一时区、同一国家。其实瑞士几乎没有国内定期航班——火车太方便了：经戈特哈德基线隧道约 2 小时，票价通常比飞机划算，而且风景（走老山线的 Gotthard Panorama Express）好得多。" +
-      "卢加诺说意大利语、气候温和，是瑞士难得能晒太阳吃意面看棕榈的地方，常作为翻越阿尔卑斯的南端落脚点。" +
-      "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Zürich to Lugano is about 40 minutes, same time zone, same country. In fact Switzerland has almost no scheduled domestic flights — the train is so convenient: about 2 hours through the Gotthard Base Tunnel, usually cheaper than flying, and with far better scenery on the old mountain line (the Gotthard Panorama Express)." +
-      " Lugano is Italian-speaking and mild, the rare place in Switzerland to sit in the sun, eat pasta and see palm trees, and a good southern base after crossing the Alps." +
-      " Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "zrh-gva": {
     study: {
@@ -1766,30 +1742,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "gva-lug": {
-    study: {
-    "zh-CN":
-      "日内瓦飞卢加诺，从瑞士最西南飞到最东南，几乎全程贴着阿尔卑斯主脊飞，是这几条线里景观最壮的一条。起飞后沿日内瓦湖北岸——湖边是拉沃的梯田葡萄园，一层层石墙从水边爬到山上。" +
-      "往东进山，脚下是伯尔尼阿尔卑斯：少女峰、僧侣峰、艾格峰一列雪峰，山谷里挂满瀑布（劳特布龙嫩谷）。" +
-      "再往东是阿莱奇冰川——阿尔卑斯最长的冰川，约 20 公里长，三条粒雪流在“康科迪亚广场”汇成一条宽阔的冰河，缓缓向南流。" +
-      "越过圣哥达山块（欧洲的分水岭、戈特哈德基线隧道所在），气候突然转暖，进入说意大利语的提契诺，栗树和棕榈出现，卢加诺就在一个伸向意大利的狭长湖畔。",
-    "en-US":
-      "Geneva to Lugano flies from the far south-west of Switzerland to the far south-east, almost entirely along the main Alpine crest — the most spectacular of these routes. After take-off you follow the north shore of Lake Geneva, lined by the terraced Lavaux vineyards, their stone walls climbing from the water up the hillside." +
-      " East into the mountains, below are the Bernese Alps: the Jungfrau, the Mönch and the Eiger in a row of snow peaks, with waterfalls hanging in the valleys (the Lauterbrunnen valley)." +
-      " Farther east is the Aletsch Glacier — the longest glacier in the Alps, about 20 km, where three firn streams meet at 'Konkordiaplatz' to form one broad river of ice flowing slowly south." +
-      " Over the Gotthard Massif (a watershed of Europe, and the site of the Gotthard Base Tunnel) the climate suddenly warms into Italian-speaking Ticino, with chestnut trees and palms, and Lugano lies on a long lake reaching toward Italy.",
-    },
-    travel: {
-    "zh-CN":
-      "日内瓦到卢加诺飞约 50 分钟，同一时区。火车走这条线要换乘、约 5 小时，所以这条是瑞士少数有点意义的国内航线。" +
-      "从法语区飞到意大利语区，气候和气质都变了：卢加诺温和、松弛、更“意式”。以它为基地可去贝林佐纳看三座世界遗产城堡、坐船游卢加诺湖。" +
-      "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Geneva to Lugano is about 50 minutes, in the same time zone. The train on this route needs changes and takes about 5 hours, so this is one of the few Swiss domestic flights that makes some sense." +
-      " Flying from the French-speaking region to the Italian-speaking one, the climate and feel change: Lugano is mild, relaxed and more 'Italian'. From it you can visit Bellinzona and its three World Heritage castles, or take a boat on Lake Lugano." +
-      " Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "osl-bgo": {
     study: {
@@ -2849,49 +2801,7 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "ams-mst": {
-    study: {
-    "zh-CN":
-      "阿姆斯特丹飞马斯特里赫特，是荷兰境内为数不多的定期国内航班之一——荷兰国土狭小、铁路发达，国内飞行本身就很罕见，这条航线主要服务于两地之间快速通勤和转机需求。起飞后不久，脚下出现乌得勒支丘陵脊：一条末次冰期冰川推挤堆积形成的狭长森林带，在地势平坦的荷兰中部格外醒目。" +
-      "继续南飞，地面逐渐从荷兰典型的低洼围垦地转变为略有起伏的地形，进入马斯河荷兰段：这条发源于法国、流经比利时的河流在荷兰南部林堡省一带切出相对明显的河谷，两岸有低丘。马斯特里赫特就坐落在马斯河两岸，是荷兰地势起伏最明显的地区。",
-    "en-US":
-      "Amsterdam to Maastricht is one of the very few scheduled domestic flights in the Netherlands — the country is small with an extensive rail network, so domestic flying itself is unusual, and this route mainly serves fast commuting and connections between the two cities. Soon after take-off, the Utrechtse Heuvelrug appears below: a narrow band of forest on a moraine ridge from the last ice age, standing out sharply against the otherwise flat central Netherlands." +
-      " Flying on south, the land gradually shifts from the Netherlands' typical low-lying reclaimed polder into slightly rolling terrain, entering the Meuse in the Netherlands: this river, rising in France and flowing through Belgium, cuts a relatively distinct valley through the southern province of Limburg, with low hills on either side. Maastricht sits on both banks of the Meuse, in the region with the most pronounced relief in the country.",
-    },
-    travel: {
-    "zh-CN":
-      "阿姆斯特丹到马斯特里赫特飞约50分钟，同一时区。也可坐火车（约2.5小时），因为国内飞行罕见，这条航线更多是史基浦机场的国际中转旅客用于衔接南部行程。马斯特里赫特气候比荷兰北部略温和。" +
-      "靠窗能看到乌得勒支丘陵脊的森林带和马斯河谷地起伏的地形——这是在荷兰国内航班上难得能看出真实地势变化的一段。马斯特里赫特靠近比利时和德国边境，生活方式偏向悠闲享乐。" +
-      "荷兰属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Amsterdam to Maastricht is about 50 minutes, in the same time zone. The train takes about 2.5 hours; because domestic flights are rare, this route is used more by international transfer passengers at Schiphol connecting onward to the south. Maastricht's climate is slightly milder than the north of the Netherlands." +
-      " From a window you see the forested Utrechtse Heuvelrug and the rolling terrain of the Meuse valley — a rare stretch on a Dutch domestic flight where you can actually see real changes in relief. Maastricht is close to the Belgian and German borders and has a more relaxed, food-and-wine-focused way of life." +
-      " The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
-  "ams-grq": {
-    study: {
-    "zh-CN":
-      "阿姆斯特丹飞格罗宁根，是荷兰境内另一条为数不多的定期国内航班，连接首都与荷兰北部最大的城市。起飞后不久，脚下出现艾瑟尔湖——荷兰最大的湖泊，1932年阿夫鲁戴克大坝建成后由原本的咸水湾须德海逐渐淡化而成，湖岸线曲折、多处已被围垦为陆地。" +
-      "继续北飞，一条相对狭窄的河道出现在视野中——艾瑟尔河，莱茵河在阿纳姆附近分出的支流，向北注入艾瑟尔湖，沿岸的代芬特尔、坎彭等古镇历史上曾是汉萨同盟的贸易城市。" +
-      "接近格罗宁根，脚下出现劳沃斯湖：1969年一条拦海坝将原本与瓦登海相通的海湾封闭后逐渐淡化形成的湖泊与湿地，开阔水面与大片芦苇沼泽交错分布。格罗宁根就在这片湿地以南不远处。",
-    "en-US":
-      "Amsterdam to Groningen is another of the Netherlands' few scheduled domestic flights, linking the capital with the largest city in the north. Soon after take-off, the IJsselmeer appears below — the largest lake in the Netherlands, gradually freshened from the former saline Zuiderzee bay after the Afsluitdijk was completed in 1932, its shoreline irregular with several stretches now reclaimed as land." +
-      " Flying on north, a relatively narrow channel comes into view — the IJssel, a branch the Rhine splits off near Arnhem, flowing north into the IJsselmeer, with historic Hanseatic trading towns such as Deventer and Kampen along its banks." +
-      " Approaching Groningen, the Lauwersmeer appears below: a lake and wetland formed after a 1969 barrier dam sealed off a bay once connected to the Wadden Sea, open water interspersed with extensive reed marsh. Groningen is not far south of this wetland.",
-    },
-    travel: {
-    "zh-CN":
-      "阿姆斯特丹到格罗宁根飞约40分钟，同一时区。也可坐火车（约2小时10分），因国内飞行罕见，这条航线主要服务国际转机旅客和商务出行。格罗宁根是大学城，年轻人口比例高、自行车文化发达。" +
-      "靠窗能看到艾瑟尔湖开阔的淡水湖面、艾瑟尔河沿岸的汉萨古城和劳沃斯湖的湿地景观。以格罗宁根为基地可探索瓦登海沿岸和弗里斯兰地区。" +
-      "荷兰属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Amsterdam to Groningen is about 40 minutes, in the same time zone. The train takes about 2 hours 10 minutes; because domestic flights are rare, this route mainly serves international transfer passengers and business travel. Groningen is a university city with a young population and a strong cycling culture." +
-      " From a window you see the open freshwater expanse of the IJsselmeer, the Hanseatic old towns along the IJssel, and the wetland landscape of the Lauwersmeer. From Groningen you can explore the Wadden Sea coast and the Friesland region." +
-      " The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "vie-inn": {
     study: {

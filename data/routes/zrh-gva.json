@@ -6,13 +6,51 @@
   "descriptionEn": "Lake Lucerne · Swiss Plateau · Lake Geneva",
   "depCountry": "switzerland",
   "arrCountry": "switzerland",
-  "flight": { "airline": "瑞士国际航空", "airlineEn": "SWISS", "flightNo": "LX2802", "aircraft": "Airbus A220-100", "depIata": "ZRH", "arrIata": "GVA", "durationMin": 45 },
+  "flight": {
+    "airline": "瑞士国际航空",
+    "airlineEn": "SWISS",
+    "flightNo": "LX2802",
+    "aircraft": "Airbus A220 / A320 系列（混编排班，未能锁定）",
+    "depIata": "ZRH",
+    "arrIata": "GVA",
+    "durationMin": 50
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "zrh", "name": "苏黎世", "nameEn": "Zürich", "lat": 47.4647, "lon": 8.5492, "airport": true },
-    { "kind": "terrain", "terrainId": "lake-lucerne" },
-    { "kind": "terrain", "terrainId": "swiss-plateau" },
-    { "kind": "terrain", "terrainId": "lake-geneva" },
-    { "kind": "city", "id": "gva", "name": "日内瓦", "nameEn": "Geneva", "lat": 46.2381, "lon": 6.1090, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "zrh",
+      "name": "苏黎世",
+      "nameEn": "Zürich",
+      "lat": 47.4647,
+      "lon": 8.5492,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-lucerne"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "swiss-plateau"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-geneva"
+    },
+    {
+      "kind": "city",
+      "id": "gva",
+      "name": "日内瓦",
+      "nameEn": "Geneva",
+      "lat": 46.2381,
+      "lon": 6.109,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/SWR2802",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号、城市对、不经停、承运人都核实无误——LX2802 确是瑞士国际航空每日运营的苏黎世—日内瓦国内班次（约 50min），非代码共享/湿租。**机型存疑**：多个追踪站在不同日期把 LX2802 记为 A320/A320neo，A220 更多出现在同航线其他号段（LX2818/LX2824）上；这条国内高频线 A220 与 A320 系列混编排班，具体到这个号是否稳定用 A220-100，免费来源互相矛盾，官网时刻表页访问被拦截。按红线**不硬写单一机型**。这是本轮唯一一条 verdict=unknown 的。来源级别 3"
+  }
 }
