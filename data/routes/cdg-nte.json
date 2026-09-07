@@ -6,12 +6,47 @@
   "descriptionEn": "Paris Basin · Loire",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7602", "aircraft": "Airbus A319", "depIata": "CDG", "arrIata": "NTE", "durationMin": 55 },
+  "flight": {
+    "airline": "法国航空",
+    "airlineEn": "Air France",
+    "flightNo": "AF7500",
+    "aircraft": "Airbus A320",
+    "depIata": "CDG",
+    "arrIata": "NTE",
+    "durationMin": 55
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
-    { "kind": "terrain", "terrainId": "paris-basin" },
-    { "kind": "terrain", "terrainId": "loire-river" },
-    { "kind": "city", "id": "nte", "name": "南特", "nameEn": "Nantes", "lat": 47.1532, "lon": -1.6108, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cdg",
+      "name": "巴黎",
+      "nameEn": "Paris",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "paris-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "loire-river"
+    },
+    {
+      "kind": "city",
+      "id": "nte",
+      "name": "南特",
+      "nameEn": "Nantes",
+      "lat": 47.1532,
+      "lon": -1.6108,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/af7500/paris/nantes/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：查不到 AF7602 服务该航线；CDG—NTE 用 AF750x/751x 号段，机型是 A320-214 不是 A319，每周约 28 班。该航线同属禁飞令豁免，仍正常运营。改为 AF7500（约 65min）。来源级别 3"
+  }
 }

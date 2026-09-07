@@ -6,12 +6,47 @@
   "descriptionEn": "Paris Basin · Massif Central",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7304", "aircraft": "Airbus A220-300", "depIata": "CDG", "arrIata": "TLS", "durationMin": 75 },
+  "flight": {
+    "airline": "法国航空",
+    "airlineEn": "Air France",
+    "flightNo": "AF7404",
+    "aircraft": "Airbus A220-300",
+    "depIata": "CDG",
+    "arrIata": "TLS",
+    "durationMin": 75
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
-    { "kind": "terrain", "terrainId": "paris-basin" },
-    { "kind": "terrain", "terrainId": "massif-central" },
-    { "kind": "city", "id": "tls", "name": "图卢兹", "nameEn": "Toulouse", "lat": 43.6293, "lon": 1.3638, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cdg",
+      "name": "巴黎",
+      "nameEn": "Paris",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "paris-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "massif-central"
+    },
+    {
+      "kind": "city",
+      "id": "tls",
+      "name": "图卢兹",
+      "nameEn": "Toulouse",
+      "lat": 43.6293,
+      "lon": 1.3638,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/AFR7404",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：AF7304 实际是 CDG→**尼斯(NCE)**，不飞图卢兹；CDG—TLS 用 AF74xx 号段。机型 A220-300 这一项本身可信（法航 2021 年起在图卢兹线投放 A220），错的是航班号。改为 AF7404；该航段 A220-300 与 A321 混跑。来源级别 3"
+  }
 }

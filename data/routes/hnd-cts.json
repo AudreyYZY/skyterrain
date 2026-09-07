@@ -10,18 +10,51 @@
     "airline": "日本航空",
     "airlineEn": "Japan Airlines",
     "flightNo": "JL503",
-    "aircraft": "Boeing 767-300",
+    "aircraft": "Airbus A350-900",
     "depIata": "HND",
     "arrIata": "CTS",
     "durationMin": 95
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
-    { "kind": "terrain", "terrainId": "kanto-plain" },
-    { "kind": "terrain", "terrainId": "sanriku-coast" },
-    { "kind": "terrain", "terrainId": "shikotsu-toya" },
-    { "kind": "terrain", "terrainId": "ishikari-plain" },
-    { "kind": "city", "id": "cts", "name": "札幌新千岁", "nameEn": "Sapporo New Chitose", "lat": 42.775, "lon": 141.692, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hnd",
+      "name": "东京羽田",
+      "nameEn": "Tokyo Haneda",
+      "lat": 35.552,
+      "lon": 139.78,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kanto-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sanriku-coast"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "shikotsu-toya"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ishikari-plain"
+    },
+    {
+      "kind": "city",
+      "id": "cts",
+      "name": "札幌新千岁",
+      "nameEn": "Sapporo New Chitose",
+      "lat": 42.775,
+      "lon": 141.692,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightradar24.com/data/flights/jl503",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实、不经停；机型近两年一致显示为 A350-900（JA08XJ/JA02XJ 等）。来源级别 3"
+  }
 }

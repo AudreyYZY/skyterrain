@@ -10,17 +10,47 @@
     "airline": "全日空",
     "airlineEn": "All Nippon Airways",
     "flightNo": "NH293",
-    "aircraft": "Boeing 737-800",
+    "aircraft": "Airbus A321",
     "depIata": "HND",
     "arrIata": "TTJ",
     "durationMin": 80
   },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
-    { "kind": "terrain", "terrainId": "kanto-plain" },
-    { "kind": "terrain", "terrainId": "japanese-alps" },
-    { "kind": "terrain", "terrainId": "tottori-sand-dunes" },
-    { "kind": "city", "id": "ttj", "name": "鸟取", "nameEn": "Tottori", "lat": 35.530, "lon": 134.167, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hnd",
+      "name": "东京羽田",
+      "nameEn": "Tokyo Haneda",
+      "lat": 35.552,
+      "lon": 139.78,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kanto-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "japanese-alps"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tottori-sand-dunes"
+    },
+    {
+      "kind": "city",
+      "id": "ttj",
+      "name": "鸟取",
+      "nameEn": "Tottori",
+      "lat": 35.53,
+      "lon": 134.167,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-nh293/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（约 1h20m 与记录 80min 吻合）；机型近期为 A321。来源级别 3"
+  }
 }

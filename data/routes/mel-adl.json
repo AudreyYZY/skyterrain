@@ -9,18 +9,48 @@
   "flight": {
     "airline": "澳洲航空",
     "airlineEn": "Qantas",
-    "flightNo": "QF680",
-    "aircraft": "Boeing 717",
+    "flightNo": "QF681",
+    "aircraft": "Boeing 737-800",
     "depIata": "MEL",
     "arrIata": "ADL",
     "durationMin": 80
   },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
-    { "kind": "terrain", "terrainId": "twelve-apostles" },
-    { "kind": "terrain", "terrainId": "grampians" },
-    { "kind": "terrain", "terrainId": "murray-darling" },
-    { "kind": "city", "id": "adl", "name": "阿德莱德", "nameEn": "Adelaide", "lat": -34.945, "lon": 138.531, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mel",
+      "name": "墨尔本",
+      "nameEn": "Melbourne",
+      "lat": -37.669,
+      "lon": 144.843,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "twelve-apostles"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "grampians"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "murray-darling"
+    },
+    {
+      "kind": "city",
+      "id": "adl",
+      "name": "阿德莱德",
+      "nameEn": "Adelaide",
+      "lat": -34.945,
+      "lon": 138.531,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/QFA681",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**两处都错**：① QF680 的方向是**阿德莱德→墨尔本**，反了，墨→阿是 QF681；② **Boeing 717 已全部退役**（QantasLink 机队 2024 年底至 2025 年初退完，由 A220-300 替代），QF681 现查到的机型是 737-800（A220 目前投放在阿德莱德—布里斯班等线，2026-03 起）。来源级别 3"
+  }
 }

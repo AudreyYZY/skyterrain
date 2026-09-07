@@ -7,9 +7,9 @@
   "depCountry": "japan",
   "arrCountry": "japan",
   "flight": {
-    "airline": "日本航空",
-    "airlineEn": "Japan Airlines",
-    "flightNo": "JL643",
+    "airline": "Solaseed Air",
+    "airlineEn": "Solaseed Air",
+    "flightNo": "6J85",
     "aircraft": "Boeing 737-800",
     "depIata": "KOJ",
     "arrIata": "OKA",
@@ -17,10 +17,40 @@
   },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "koj", "name": "鹿儿岛", "nameEn": "Kagoshima", "lat": 31.803, "lon": 130.719, "airport": true },
-    { "kind": "terrain", "terrainId": "sakurajima" },
-    { "kind": "terrain", "terrainId": "yakushima" },
-    { "kind": "terrain", "terrainId": "ryukyu-islands" },
-    { "kind": "city", "id": "oka", "name": "那霸", "nameEn": "Naha", "lat": 26.196, "lon": 127.646, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "koj",
+      "name": "鹿儿岛",
+      "nameEn": "Kagoshima",
+      "lat": 31.803,
+      "lon": 130.719,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sakurajima"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yakushima"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ryukyu-islands"
+    },
+    {
+      "kind": "city",
+      "id": "oka",
+      "name": "那霸",
+      "nameEn": "Naha",
+      "lat": 26.196,
+      "lon": 127.646,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/6j85/kagoshima/naha/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人与航班号都错**：JL643 实际是**东京羽田→鹿儿岛**。鹿儿岛—那霸的不经停由独立航司 **Solaseed Air** 执飞，机型确为 737-800（记录这一项是对的）。JAL 在这条线上只卖经停中转票。子代理给的是 SNA83（混用了 ICAO 形式），本轮另查 Solaseed 官网时刻表与 airportia 后改用 IATA 形式 **6J85**（KOJ→OKA，约 1h11m），与本项目其余条目的两字代码写法一致。承运人无通用中文名，中英文字段统一用原名。来源级别 1（航司官网）+ 3"
+  }
 }

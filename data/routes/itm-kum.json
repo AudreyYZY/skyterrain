@@ -9,18 +9,48 @@
   "flight": {
     "airline": "日本航空",
     "airlineEn": "Japan Airlines",
-    "flightNo": "JL2431",
-    "aircraft": "ATR 72-600",
+    "flightNo": "JL2451",
+    "aircraft": "ATR 42-600",
     "depIata": "ITM",
     "arrIata": "KUM",
     "durationMin": 110
   },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "itm", "name": "大阪伊丹", "nameEn": "Osaka Itami", "lat": 34.786, "lon": 135.438, "airport": true },
-    { "kind": "terrain", "terrainId": "osaka-plain" },
-    { "kind": "terrain", "terrainId": "seto-inland-sea" },
-    { "kind": "terrain", "terrainId": "yakushima" },
-    { "kind": "city", "id": "kum", "name": "屋久岛", "nameEn": "Yakushima", "lat": 30.386, "lon": 130.659, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "itm",
+      "name": "大阪伊丹",
+      "nameEn": "Osaka Itami",
+      "lat": 34.786,
+      "lon": 135.438,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "osaka-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "seto-inland-sea"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "yakushima"
+    },
+    {
+      "kind": "city",
+      "id": "kum",
+      "name": "屋久岛",
+      "nameEn": "Yakushima",
+      "lat": 30.386,
+      "lon": 130.659,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://info.flightmapper.net/route/JAL_JL_KUM_ITM",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**航班号错**：大阪伊丹—屋久岛的不经停是 **JL2451**（11:20→13:10，110min 与记录吻合；回程 JL2450），由 **JAC（日本エアコミューター）** 以 JAL 代号执飞。子代理给的机型是「ATR 42-300/320」，本轮另查 ATR 官方与 Flightradar24 机队页后改为 **ATR 42-600** —— JAC 现役 ATR 机队是 42-600（9 架）与 72-600，42-300/320 早已退役。来源级别 1（ATR 官网）+ 3"
+  }
 }

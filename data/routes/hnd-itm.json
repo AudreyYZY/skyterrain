@@ -10,19 +10,55 @@
     "airline": "全日空",
     "airlineEn": "All Nippon Airways",
     "flightNo": "NH015",
-    "aircraft": "Boeing 787-8",
+    "aircraft": "Boeing 787-9",
     "depIata": "HND",
     "arrIata": "ITM",
     "durationMin": 70
   },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
-    { "kind": "terrain", "terrainId": "kanto-plain" },
-    { "kind": "terrain", "terrainId": "mount-fuji" },
-    { "kind": "terrain", "terrainId": "nobi-plain" },
-    { "kind": "terrain", "terrainId": "lake-biwa" },
-    { "kind": "terrain", "terrainId": "osaka-plain" },
-    { "kind": "city", "id": "itm", "name": "大阪伊丹", "nameEn": "Osaka Itami", "lat": 34.786, "lon": 135.438, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hnd",
+      "name": "东京羽田",
+      "nameEn": "Tokyo Haneda",
+      "lat": 35.552,
+      "lon": 139.78,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kanto-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-fuji"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nobi-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-biwa"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "osaka-plain"
+    },
+    {
+      "kind": "city",
+      "id": "itm",
+      "name": "大阪伊丹",
+      "nameEn": "Osaka Itami",
+      "lat": 34.786,
+      "lon": 135.438,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightstats.com/v2/flight-tracker/NH/15",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实、不经停；机型近期为 787-9。ANA/JAL 2025 冬起在羽田—伊丹线整体缩小机型，同一航班号不同批次可能换型，787-9 是当前观察值。来源级别 3"
+  }
 }

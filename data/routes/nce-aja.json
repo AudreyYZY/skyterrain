@@ -6,11 +6,43 @@
   "descriptionEn": "Corsica",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7846", "aircraft": "Airbus A319", "depIata": "NCE", "arrIata": "AJA", "durationMin": 45 },
+  "flight": {
+    "airline": "科西嘉航空",
+    "airlineEn": "Air Corsica",
+    "flightNo": "XK101",
+    "aircraft": "ATR 72",
+    "depIata": "NCE",
+    "arrIata": "AJA",
+    "durationMin": 45
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "nce", "name": "尼斯", "nameEn": "Nice", "lat": 43.6584, "lon": 7.2159, "airport": true },
-    { "kind": "terrain", "terrainId": "corsica" },
-    { "kind": "city", "id": "aja", "name": "阿雅克肖", "nameEn": "Ajaccio", "lat": 41.9236, "lon": 8.8029, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "nce",
+      "name": "尼斯",
+      "nameEn": "Nice",
+      "lat": 43.6584,
+      "lon": 7.2159,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "corsica"
+    },
+    {
+      "kind": "city",
+      "id": "aja",
+      "name": "阿雅克肖",
+      "nameEn": "Ajaccio",
+      "lat": 41.9236,
+      "lon": 8.8029,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightsfrom.com/NCE-AJA",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人整体记错**（同 mrs-aja）：尼斯—阿雅克肖唯一不经停承运人是科西嘉航空，航班号 XK101/103/105，机型 ATR 72；法航提供的是经巴黎等地的中转连接，不是不经停自营。改为实际承运人与机型。来源级别 3"
+  }
 }

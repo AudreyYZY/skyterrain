@@ -6,13 +6,51 @@
   "descriptionEn": "Lake Trasimeno · Po Valley · Venetian Lagoon",
   "depCountry": "italy",
   "arrCountry": "italy",
-  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ1451", "aircraft": "Airbus A320", "depIata": "FCO", "arrIata": "VCE", "durationMin": 65 },
+  "flight": {
+    "airline": "ITA航空",
+    "airlineEn": "ITA Airways",
+    "flightNo": "AZ1475",
+    "aircraft": "Airbus A320",
+    "depIata": "FCO",
+    "arrIata": "VCE",
+    "durationMin": 65
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
-    { "kind": "terrain", "terrainId": "lake-trasimeno" },
-    { "kind": "terrain", "terrainId": "po-valley" },
-    { "kind": "terrain", "terrainId": "venetian-lagoon" },
-    { "kind": "city", "id": "vce", "name": "威尼斯", "nameEn": "Venice", "lat": 45.5053, "lon": 12.3519, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "fco",
+      "name": "罗马",
+      "nameEn": "Rome",
+      "lat": 41.8003,
+      "lon": 12.2389,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-trasimeno"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "po-valley"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "venetian-lagoon"
+    },
+    {
+      "kind": "city",
+      "id": "vce",
+      "name": "威尼斯",
+      "nameEn": "Venice",
+      "lat": 45.5053,
+      "lon": 12.3519,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/az1475/rome/venezia/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：承运人名称过期（同 fco-lin）；AZ1451 查不到任何真实排班，FCO→VCE 的 ITA 号段是 AZ146x/147x。改为 AZ1475（13:20 FCO→14:30 VCE）。来源级别 3"
+  }
 }

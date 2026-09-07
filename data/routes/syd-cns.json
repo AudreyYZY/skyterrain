@@ -9,7 +9,7 @@
   "flight": {
     "airline": "澳洲航空",
     "airlineEn": "Qantas",
-    "flightNo": "QF920",
+    "flightNo": "QF922",
     "aircraft": "Boeing 737-800",
     "depIata": "SYD",
     "arrIata": "CNS",
@@ -54,5 +54,10 @@
       "lon": 145.755,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Qantas-Sydney-Cairns/QF922",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**QF920 实际是墨尔本→阳光海岸(MEL→MCY)**。悉尼—凯恩斯的不经停是 QF922（QantasLink/Eastern Australia 代管，挂 Qantas 品牌），机型确为 737-800。来源级别 3"
+  }
 }

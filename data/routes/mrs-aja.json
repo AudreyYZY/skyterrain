@@ -6,12 +6,47 @@
   "descriptionEn": "Calanques · Corsica",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7834", "aircraft": "Airbus A319", "depIata": "MRS", "arrIata": "AJA", "durationMin": 50 },
+  "flight": {
+    "airline": "科西嘉航空",
+    "airlineEn": "Air Corsica",
+    "flightNo": "XK151",
+    "aircraft": "ATR 72",
+    "depIata": "MRS",
+    "arrIata": "AJA",
+    "durationMin": 50
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "mrs", "name": "马赛", "nameEn": "Marseille", "lat": 43.4393, "lon": 5.2214, "airport": true },
-    { "kind": "terrain", "terrainId": "calanques" },
-    { "kind": "terrain", "terrainId": "corsica" },
-    { "kind": "city", "id": "aja", "name": "阿雅克肖", "nameEn": "Ajaccio", "lat": 41.9236, "lon": 8.8029, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mrs",
+      "name": "马赛",
+      "nameEn": "Marseille",
+      "lat": 43.4393,
+      "lon": 5.2214,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "calanques"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "corsica"
+    },
+    {
+      "kind": "city",
+      "id": "aja",
+      "name": "阿雅克肖",
+      "nameEn": "Ajaccio",
+      "lat": 41.9236,
+      "lon": 8.8029,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightsfrom.com/MRS-AJA",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人整体记错**：马赛—阿雅克肖唯一执飞不经停航班的是**科西嘉航空(Air Corsica)**，航班号 XK151/153/155/157，机型 ATR 72。法航自己没有这条线的自营运力，只用 AF 前缀代码共享出票。改为实际承运人与机型。来源级别 3"
+  }
 }

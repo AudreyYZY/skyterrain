@@ -17,8 +17,32 @@
   },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
-    { "kind": "terrain", "terrainId": "tasmania" },
-    { "kind": "city", "id": "hba", "name": "霍巴特", "nameEn": "Hobart", "lat": -42.836, "lon": 147.510, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mel",
+      "name": "墨尔本",
+      "nameEn": "Melbourne",
+      "lat": -37.669,
+      "lon": 144.843,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tasmania"
+    },
+    {
+      "kind": "city",
+      "id": "hba",
+      "name": "霍巴特",
+      "nameEn": "Hobart",
+      "lat": -42.836,
+      "lon": 147.51,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/jq711/melbourne/hobart/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：墨尔本—霍巴特每日运营，A320，约 1h15m。来源级别 3"
+  }
 }

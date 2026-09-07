@@ -50,5 +50,10 @@
       "lon": 130.877,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/qf824/brisbane/darwin/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：布里斯班—达尔文不经停，737-800，约 4h。来源级别 3"
+  }
 }

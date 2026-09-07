@@ -17,9 +17,36 @@
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
-    { "kind": "terrain", "terrainId": "australian-alps" },
-    { "kind": "terrain", "terrainId": "blue-mountains" },
-    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mel",
+      "name": "墨尔本",
+      "nameEn": "Melbourne",
+      "lat": -37.669,
+      "lon": 144.843,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "australian-alps"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "blue-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "syd",
+      "name": "悉尼",
+      "nameEn": "Sydney",
+      "lat": -33.946,
+      "lon": 151.177,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://aviability.com/en/flight/qf400-qantas",
+    "checkedOn": "2026-09-07",
+    "note": "属实，约 1h25m。来源级别 3"
+  }
 }

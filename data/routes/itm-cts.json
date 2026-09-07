@@ -10,7 +10,7 @@
     "airline": "日本航空",
     "airlineEn": "Japan Airlines",
     "flightNo": "JL2001",
-    "aircraft": "Boeing 767-300",
+    "aircraft": "Boeing 737-800",
     "depIata": "ITM",
     "arrIata": "CTS",
     "durationMin": 110
@@ -62,5 +62,10 @@
       "lon": 141.692,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-jl2001/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（日航本体执飞，非代码共享），约 1h50m 与记录 110min 吻合；机型已换 737-800。767-300ER 只在该航线其他班次（JL2019/2000）上出现。来源级别 3"
+  }
 }

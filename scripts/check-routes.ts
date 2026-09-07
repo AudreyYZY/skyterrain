@@ -38,6 +38,9 @@ function haversineKm(a: [number, number], b: [number, number]): number {
   return 2 * R * Math.asin(Math.sqrt(s));
 }
 
+/** 形状像占位号的航班号（未核实的那些）——只提示，不失败 */
+const suspiciousNo: string[] = [];
+
 let failures = 0;
 let missingSource = 0;
 let knownWrong = 0;
@@ -77,6 +80,23 @@ for (const r of ROUTES) {
 
   if (!COUNTRY_SLUGS.has(r.depCountry)) fail(r.id, `depCountry 不在 COUNTRIES: ${r.depCountry}`);
   if (!COUNTRY_SLUGS.has(r.arrCountry)) fail(r.id, `arrCountry 不在 COUNTRIES: ${r.arrCountry}`);
+
+  // 形状可疑的航班号（连续递增/递减/全同数字）——只作**提示**，不是断言。
+  // 踩过：意大利两条写的是 AZ1234 / FR1234，查下来一个是别的航线的号、一个查无此号，
+  // 都是写入时随手编的占位号（known-errors A6）。但 CA123 北京—首尔、CZ345 北京—
+  // 阿姆斯特丹这类真实航班号也长这个样子，所以**光看形状不能判错**，只能排个优先级。
+  if (r.flight?.flightNo && !isFlightVerified(r)) {
+    const digits = r.flight.flightNo.replace(/^[A-Z0-9]{2}/, "");
+    if (digits.length >= 3) {
+      const same = /^(\d)\1+$/.test(digits);
+      let asc = true, desc = true;
+      for (let i = 1; i < digits.length; i++) {
+        if (Number(digits[i]) !== Number(digits[i - 1]) + 1) asc = false;
+        if (Number(digits[i]) !== Number(digits[i - 1]) - 1) desc = false;
+      }
+      if (same || asc || desc) suspiciousNo.push(`${r.id}（${r.flight.flightNo}）`);
+    }
+  }
 
   const narr = ROUTE_NARRATION[r.id]?.study;
   if (!narr?.["zh-CN"] || !narr?.["en-US"]) fail(r.id, "缺少航线学习模式解说 route-narration.study");
@@ -249,5 +269,12 @@ if (missingSource > 0) {
       "\n  逐条核实后补 source.ref / checkedOn / note，航班信息随即对外显示。",
   );
 }
+if (suspiciousNo.length > 0) {
+  console.log("\n形状像占位号的航班号（未核实，核实时优先看这几条）");
+  console.log(`  ${suspiciousNo.join("  ")}`);
+  console.log("  连续递增/递减或全同数字。注意真实航班号也可能长这样（CA123、CZ345 都已核实属实），");
+  console.log("  所以这只是排优先级，不作断言。见 docs/known-errors.md A6。");
+}
+
 console.log(`\n${ROUTES.length} 条航线, ${failures} 项异常`);
 process.exit(failures > 0 ? 1 : 0);
