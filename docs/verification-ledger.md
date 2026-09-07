@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: ebeea2e
+lastVerifiedCommit: f1495ce
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: ebeea2e
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | travel · 中国城市人口与行政级别（C6-d 刷新第 14 批：中国 6 城（珠海/承德/武夷山/景德镇/无锡/吐鲁番）） | 13 | 0 / 13 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 中国城市人口（C6-d 刷新第 13 批：中国 10 城（麦盖提/呼伦贝尔/吉林市/漠河/宜昌/乐山/凯里/延安/格尔木/中卫）） | 18 | 0 / 16 / 2 | 当场修 18 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 马来西亚城市人口与口径（C6-d 刷新第 12 批：马来西亚 17 城取 DOSM 2025 年县级估计） | 34 | 2 / 32 / 0 | 当场修 34 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 中国城市人口（C6-d 刷新第 11 批：中国 10 条（上海/桂林/三亚/哈尔滨/张家界/丽江/敦煌/武汉/澳门/台北）） | 11 | 0 / 9 / 2 | 当场修 11 条；新开 issue 0、关闭 0 |
