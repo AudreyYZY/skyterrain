@@ -80,6 +80,10 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 `npm run check:claims` 的 `C6d` 规则会把「统计时点早于当前年 − 1」的句子逐条报出来，
 所以这一步偷懒会在下一次跑棘轮时暴露。
 
+**核完之后把发布节奏记进 [`docs/data-refresh-calendar.md`](../../../docs/data-refresh-calendar.md)** ——
+那张表回答的是「一个数字什么时候会过期、到时候去哪里取新的」。发布月份是核实过程的
+副产品，当时不记，下一轮还得再查一遍。新增一个国家时，把它的统计机构一并补进去。
+
 ### 3. 处理结论
 
 先把子代理的输出**整理成一份 findings.json**（格式见下一步），然后：
