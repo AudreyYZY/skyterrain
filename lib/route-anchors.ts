@@ -21,6 +21,13 @@ import type { Language } from "@/lib/i18n";
 const ZH_GENERIC_SUFFIX =
   /(沙漠|沙地|山脉|山地|群山|走廊|谷地|河谷|大峡谷|峡谷|三角洲|半岛|群岛|列岛|诸岛|海岸|海峡|草原|盆地|高原|平原|火山区|火山|破火山口|山|湖|河|江|海|岛)$/;
 
+/** 名字末尾的括注（「戈壁（蒙古）」「Gobi Desert (Mongolia)」）—— 匹配前先去掉 */
+const PARENTHETICAL_SUFFIX = /[（(][^）)]*[）)]\s*$/;
+
+/** 英文地名的通名后缀 —— 去掉之后再匹配一次，「Gobi Desert」也能命中「Gobi」 */
+const EN_GENERIC_SUFFIX =
+  / (Desert|Mountains|Range|Plain|Plains|Plateau|Basin|Valley|Gorge|Delta|Peninsula|Islands|Island|Sea|Strait|Lake|River|Coast|Steppe|Uplands|Highlands)$/i;
+
 export interface AnchorWaypoint {
   /** 在 resolveRouteWaypoints 结果中的下标 */
   index: number;
@@ -59,10 +66,18 @@ export function matchWaypointInSentence(
   const hay = en ? sentence.toLowerCase() : sentence;
   for (let i = 0; i < waypoints.length; i++) {
     const w = waypoints[i]!;
-    const nm = en ? w.nameEn : w.name;
+    const nm0 = en ? w.nameEn : w.name;
+    if (!nm0) continue;
+    // 括注是用来消歧的，不是名字的一部分：「戈壁（蒙古）」/「Gobi Desert (Mongolia)」
+    // 谁都不会这么写进句子里，不去掉的话这类航点在两种语言下都永远匹配不上 ——
+    // 而它偏偏是跨欧亚航线上跨度最大的那个航点。
+    const nm = nm0.replace(PARENTHETICAL_SUFFIX, "").trim();
     if (!nm) continue;
     if (en) {
       if (hay.includes(nm.toLowerCase())) return w.index;
+      // 「Gobi Desert」→「Gobi」：英文通名后缀同样可省
+      const core = nm.replace(EN_GENERIC_SUFFIX, "").trim();
+      if (core.length >= 4 && hay.includes(core.toLowerCase())) return w.index;
       continue;
     }
     if (sentence.includes(nm)) return w.index;

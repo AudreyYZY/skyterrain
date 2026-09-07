@@ -5118,13 +5118,9 @@ export const ROUTE_NARRATION: Record<
   "pek-lhr": {
     study: {
     "zh-CN":
-      "北京飞伦敦，是从东亚大陆一路向西北，横跨整个亚欧大陆到不列颠群岛。起飞后不久，脚下的农田渐渐让位给起伏的高原——已经进入蒙古高原南缘，戈壁荒漠的砾漠地貌一直延伸到天际线。" +
-      "再往西北，戈壁过渡为森林与草原交错的西西伯利亚平原：地势极为平坦，河流蜿蜒、沼泽湖泊星罗棋布，是世界上面积最大的平原之一。" +
-      "飞过乌拉尔山脉——一条南北延伸的古老褶皱山系，地理学上常以它划分亚洲与欧洲——地面重新进入平缓的丘陵与农田，这里已是东欧平原的东部。飞机继续向西，越过波罗的海沿岸和中欧低地，最终沿泰晤士河进近，降落在伦敦西郊的希思罗机场。一趟航班，跨越了大半个亚欧大陆。",
+      "北京飞伦敦，向西北横跨亚欧大陆，终点在不列颠岛东南的泰晤士河下游。起飞后进入蒙古高原南缘的戈壁，砾石滩铺到天际线，年降水多在两百毫米以下，地表几乎没有连续植被，聚落之间常隔上百公里；越往西北，草原的比例越高。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后进入东欧平原——这条南北绵延两千多公里的古老山系海拔不高，却是地理学上划分亚洲与欧洲的界线，东西两坡的森林构成明显不同。再往西横穿中欧与北海南缘，海面下是冰期留下的浅滩沉积。最后飞机跨过英吉利海峡北口，进入泰晤士河下游的低地，降落在伦敦西面的希思罗机场。",
     "en-US":
-      "Beijing to London flies north-west out of East Asia, crossing almost the whole Eurasian landmass to reach the British Isles. Soon after take-off the farmland below gives way to rolling highland — the southern edge of the Mongolian Plateau, where the gravel desert of the Gobi stretches to the horizon." +
-      "Farther north-west the Gobi gives way to the West Siberian Plain, a mix of forest and steppe: remarkably flat, laced with winding rivers and countless marshes and lakes, one of the largest plains on Earth." +
-      "Crossing the Ural Mountains — an old north–south folded range that geographers commonly use to mark the boundary between Asia and Europe — the ground returns to gentle hills and farmland, the eastern edge of the East European Plain. The plane continues west over the Baltic coast and the lowlands of central Europe, then makes its final approach along the Thames, landing at Heathrow on London's western edge. One flight has crossed most of Eurasia.",
+      "Beijing to London runs north-west across the Eurasian landmass to the lower Thames in the south-east of Great Britain. After take-off the flight enters the Gobi on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon under less than 200 millimetres of rain in most years, with no continuous vegetation and settlements often a hundred kilometres apart; the farther north-west it goes, the more steppe replaces desert. Next comes the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding widely when the snow melts in spring. Past the Ural Mountains the route enters the East European Plain — the range runs more than two thousand kilometres north to south and is not high, but it is the conventional divide between Asia and Europe, and the forests on its eastern and western slopes differ markedly. Farther west the flight crosses central Europe and the southern North Sea, whose bed is shallow sediment laid down during the ice ages. It finally passes the northern mouth of the English Channel into the lowlands of the lower Thames and lands at Heathrow, west of London.",
     },
     travel: {
     "zh-CN":
@@ -5141,13 +5137,9 @@ export const ROUTE_NARRATION: Record<
   "pek-cdg": {
     study: {
     "zh-CN":
-      "北京飞巴黎，同样向西北横跨亚欧大陆，但落点更靠南，最终进入法国所在的西欧低地。起飞后先经过蒙古高原南部的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
-      "继续向西，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——常被地理学上作为亚洲与欧洲的分界——之后，进入东欧平原，农田与河流交错的地貌一路延伸。" +
-      "飞机继续向西南，越过中欧的丘陵地带，最终降落在巴黎北郊的戴高乐机场。一路向西横穿整个亚欧大陆，落地时已是欧洲大陆的心脏地带。",
+      "北京飞巴黎，向西北横跨亚欧大陆，全程约八千四百公里，落点在西欧的塞纳河盆地。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、河流稀少的干旱带，风把细沙吹走后留下坚硬的砾幂，昼夜温差可达三十度以上；再往西北，荒漠逐渐让位给稀树草原。接着是西西伯利亚平原，世界上面积最大的平原之一，地表落差极小，河流蜿蜒，沼泽与湖泊连片。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原：由古老地台构成的开阔低地，起伏很小，河流舒缓，冬季常见大范围积雪。再往西掠过中欧的丘陵与河谷，地块与城镇密度肉眼可见地上升，最后进入巴黎盆地——一圈圈同心的沉积岩层构成的浅碟形凹地，塞纳河从中蜿蜒穿过。飞机降落在城市东北的戴高乐机场。",
     "en-US":
-      "Beijing to Paris also flies north-west across Eurasia, but on a track that curves farther south, ending in the lowlands of western Europe where France lies. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
-      "Farther west lies the West Siberian Plain, one of the largest plains in the world, remarkably flat and threaded with forest and marsh. Past the Ural Mountains — commonly used as the geographic boundary between Asia and Europe — the route enters the East European Plain, a landscape of farmland and rivers stretching on and on." +
-      "The flight continues south-west over the hill country of central Europe and lands at Charles de Gaulle Airport north of Paris. Having crossed the whole of Eurasia heading west, it touches down in the heart of the European continent.",
+      "Beijing to Paris runs north-west across the Eurasian landmass, about 8,400 km in all, ending in the Seine basin of western Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi on the southern edge of the Mongolian Plateau, an arid belt of gravel with few rivers where wind has stripped the fine sand away to leave a hard pavement and the daily temperature can swing more than thirty degrees; farther north-west the desert gives way to open steppe. Next comes the West Siberian Plain, one of the largest plains on Earth, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the flight enters the East European Plain: an open lowland on an ancient platform with very little relief, slow rivers and wide winter snow cover. Farther west it crosses the hills and valleys of central Europe, where the density of fields and towns visibly rises, and then reaches the Paris Basin, a shallow dish of concentric sedimentary layers with the Seine winding through it. The flight lands at Charles de Gaulle Airport north-east of the city.",
     },
     travel: {
     "zh-CN":
@@ -5164,13 +5156,9 @@ export const ROUTE_NARRATION: Record<
   "pek-ber": {
     study: {
     "zh-CN":
-      "北京飞柏林，航线比飞伦敦、巴黎略偏北，同样穿越蒙古高原和西西伯利亚平原，再落到中欧的平原上。起飞后先掠过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
-      "往西进入西西伯利亚平原——地势极其平坦、河网与沼泽密布，是地球上最大的平原之一。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原，之后转向中欧的低地平原地带。" +
-      "越过一连串河流冲积的平原和缓丘，飞机降落在柏林东南郊的勃兰登堡机场。一趟航班，从中国的首都飞到德国的首都，途中穿过大半个亚欧大陆的腹地。",
+      "北京飞柏林，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的北德平原。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里；冬季强风把地表的尘土卷上高空，再往西北，荒漠逐渐转为草原。接着是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，鄂毕河等大河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系是亚欧两洲的传统分界，山脊多在一千米上下，长期剥蚀把它磨得浑圆，山间盆地里分布着一串以冶金与机械制造为主的工业城市。再往西是东欧平原，起伏极小的开阔农田，冬季常见大范围积雪。最后掠过中欧的河谷与湖泊，降落在柏林东南的勃兰登堡机场。",
     "en-US":
-      "Beijing to Berlin follows a track slightly farther north than the London or Paris flights, also crossing the Mongolian Plateau and the West Siberian Plain before descending onto the plains of central Europe. After take-off the flight skirts the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
-      "Heading west it crosses the West Siberian Plain — remarkably flat, dense with rivers and marshes, one of the largest plains on Earth. Past the Ural Mountains, the conventional divide between Asia and Europe, the route enters the East European Plain and then the lowland plains of central Europe." +
-      "Past a series of river-built plains and low hills, the plane lands at Brandenburg Airport south-east of Berlin. One flight has gone from the capital of China to the capital of Germany, crossing the interior of most of Eurasia along the way.",
+      "Beijing to Berlin runs north-west across the Eurasian landmass, about 7,600 km in all, ending on the North German Plain in central Europe. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart; strong winter winds lift dust off the surface, and farther north-west the desert turns to steppe. Next comes the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across, where the Ob and other great rivers wind north and the spring flood spills the channels and leaves stands of conifer forest standing in water for weeks. Past the Ural Mountains the flight enters an open lowland: this old range is the conventional divide between Asia and Europe, its ridges mostly around a thousand metres, worn round by long erosion, and the basins between them hold a string of cities built on metallurgy and machine building. Farther west lies the East European Plain, open farmland with very little relief and wide winter snow cover. The route finally crosses the valleys and lakes of central Europe and lands at Brandenburg Airport south-east of Berlin.",
     },
     travel: {
     "zh-CN":
@@ -5187,13 +5175,9 @@ export const ROUTE_NARRATION: Record<
   "pkx-ams": {
     study: {
     "zh-CN":
-      "北京飞阿姆斯特丹，从大兴机场起飞，航线与飞伦敦、巴黎相近，同样横跨蒙古高原、西西伯利亚平原和乌拉尔山脉，落到欧洲大陆西北角的低地。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
-      "往西北进入西西伯利亚平原——地势极为平坦、河网密布，是世界上面积最大的平原之一。飞过乌拉尔山脉这道亚欧地理分界后，飞机进入东欧平原，之后一路向西横穿中欧低地。" +
-      "接近荷兰时，地面变得异常平坦——莱茵河、马斯河下游冲积而成的低地，大片圩田和运河网络清晰可见。飞机降落在阿姆斯特丹史基浦机场，机场本身就建在一片曾经的湖底围垦地上。",
+      "北京大兴飞阿姆斯特丹，向西北横跨亚欧大陆，终点在莱茵河三角洲边缘。起飞后进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，干旱少雨、植被稀疏；越往西北，荒漠逐渐转为草原，河流开始变多。接着是西西伯利亚平原，地势极为平坦，鄂毕河等大河在这里蜿蜒北流，沼泽面积之大使这一带成为重要的碳汇。翻过乌拉尔山脉后进入东欧平原，开阔低地上田块规整，冬季常见大范围低云与积雪。再往西掠过中欧与北海南缘，最后进入荷兰——这个国家有相当一部分国土低于海平面，靠堤坝与排水系统维持，从空中看是被水道切成方格的圩田。飞机降落在阿姆斯特丹西南的史基浦机场，跑道本身就低于海平面。",
     "en-US":
-      "Beijing to Amsterdam departs from Daxing Airport on a track close to the London and Paris routes, likewise crossing the Mongolian Plateau, the West Siberian Plain and the Ural Mountains before descending onto the lowlands of north-west Europe. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
-      "Heading north-west it crosses the West Siberian Plain — remarkably flat and dense with rivers, one of the largest plains in the world. Past the Ural Mountains, the geographic divide between Asia and Europe, the route enters the East European Plain and then heads west across the lowlands of central Europe." +
-      "Approaching the Netherlands the ground becomes remarkably flat — the delta lowland built by the lower Rhine and Meuse rivers, with polders and a dense canal network clearly visible. The plane lands at Amsterdam Schiphol, an airport built on what was once the bed of a drained lake.",
+      "Beijing Daxing to Amsterdam runs north-west across the Eurasian landmass to the edge of the Rhine delta. After take-off the flight enters the Gobi on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon under little rain and sparse vegetation; farther north-west the desert turns to steppe and rivers become more frequent. Next comes the West Siberian Plain, remarkably flat, where the Ob and other great rivers wind north and the sheer extent of marshland makes this a significant carbon store. Past the Urals the route enters the East European Plain, an open lowland of regular fields often under broad winter cloud and snow. Farther west it crosses central Europe and the southern North Sea and reaches the Netherlands, a country with a substantial share of its land below sea level, held by dikes and drainage and reading from the air as polders cut into squares by waterways. The flight lands at Schiphol south-west of Amsterdam, on runways that themselves lie below sea level.",
     },
     travel: {
     "zh-CN":
@@ -5210,13 +5194,9 @@ export const ROUTE_NARRATION: Record<
   "pek-bru": {
     study: {
     "zh-CN":
-      "北京飞布鲁塞尔，是2026年新开通的中比直飞航线，航线走向与飞柏林、阿姆斯特丹接近，同样穿过蒙古高原、西西伯利亚平原和乌拉尔山脉。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
-      "往西进入西西伯利亚平原——地势极其平坦、河网与沼泽密布，是地球上最大的平原之一。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原，随后一路向西横穿中欧低地。" +
-      "接近西欧时，地面转为低缓的丘陵与冲积平原，飞机降落在布鲁塞尔以北的布鲁塞尔机场。一趟航班，把中国首都和欧洲多个国际机构所在的城市连在了一起。",
+      "北京飞布鲁塞尔，2026年3月开航，向西北横跨亚欧大陆，终点在西欧低地国家的腹地。起飞后进入蒙古高原南缘的戈壁：砾漠地貌一直延伸到天际线，河流多为季节性，冬季常有强风扬起沙尘；再往西北，戈壁的砾石逐渐让位给草原。接着是西西伯利亚平原，森林与沼泽交织、河流蜿蜒，是世界上最大的平原之一。翻过乌拉尔山脉后进入东欧平原，这片由古老地台构成的低地起伏极小，是欧洲面积最大的平原，田块与河流的图案从空中看格外规整。再往西是中欧的丘陵与低地，河网密集，运河与公路把地块切成整齐的格子。飞机最后降落在布鲁塞尔以东北的扎芬特姆机场。",
     "en-US":
-      "Beijing to Brussels is a nonstop China–Belgium route launched in 2026, on a track close to the Berlin and Amsterdam flights, also crossing the Mongolian Plateau, the West Siberian Plain and the Ural Mountains. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
-      "Heading west it crosses the West Siberian Plain — remarkably flat, dense with rivers and marshes, one of the largest plains on Earth. Past the Ural Mountains, the conventional divide between Asia and Europe, the route enters the East European Plain and then heads west across the lowlands of central Europe." +
-      "Approaching western Europe the land turns to low hills and alluvial plains, and the plane lands at Brussels Airport north of the city. One flight has linked the capital of China with a city that hosts a number of international institutions.",
+      "Beijing to Brussels, opened in March 2026, runs north-west across the Eurasian landmass to the heart of the Low Countries. After take-off the flight enters the Gobi on the southern edge of the Mongolian Plateau: gravel desert stretching to the horizon, mostly seasonal rivers, and strong winter winds that lift dust off the surface; farther north-west the gravel gives way to steppe. Next comes the West Siberian Plain, threaded with forest, marsh and winding rivers, one of the largest plains on Earth. Past the Urals the route enters the East European Plain, a lowland on an ancient platform with very little relief and the largest plain in Europe, its fields and rivers reading from the air as a strikingly regular pattern. Farther west lie the hills and lowlands of central Europe, densely veined with rivers, canals and roads cutting the ground into neat blocks. The flight lands at Zaventem Airport north-east of Brussels.",
     },
     travel: {
     "zh-CN":
@@ -5443,13 +5423,9 @@ export const ROUTE_NARRATION: Record<
   "pvg-akl": {
     study: {
     "zh-CN":
-      "上海飞奥克兰，是中国到大洋洲最远的直飞航线之一，几乎全程飞越西太平洋开阔海域。起飞后先进入菲律宾海——西太平洋一片被菲律宾群岛、台湾岛与马里亚纳群岛环绕的深海海域，马里亚纳海沟便位于其东侧。" +
-      "继续向东南，飞机掠过俾斯麦海：新几内亚岛以北一片被俾斯麦群岛环抱的海域，火山活动活跃、珊瑚礁资源丰富。再往南进入珊瑚海——大堡礁所在海域，是西南太平洋一片以生物多样性著称的边缘海。" +
-      "飞机最终穿过塔斯曼海——分隔澳大利亚与新西兰的宽阔海域，降落在新西兰北岛的奥克兰。从中国东部沿海到南半球的岛国，这趟航班几乎全程都在大洋之上。",
+      "上海飞奥克兰，向东南穿越西太平洋，全程约九千四百公里，从北半球一直飞到南半球。起飞后先掠过东海，这是一片平均水深不足两百米的陆架海，海底铺着长江搬运来的泥沙，冬季常有寒潮南下带来的大风。接着进入菲律宾海——西太平洋最大的边缘海，被琉球、菲律宾与马里亚纳诸岛围出一片深水盆地，东缘的马里亚纳海沟是地球表面已知最深处，超过一万米；洋面上常年高温高湿，是台风重要的生成海域。越过赤道后是俾斯麦海，夹在新几内亚岛与新不列颠岛之间的一片小而深的海，海底有活跃的扩张中心与热液喷口，周边岛弧火山活动频繁，海岸多被浓密的热带雨林覆盖。再往南是珊瑚海，海底是一系列深海盆地，西侧的大陆架上发育着世界上规模最大的堡礁系统，礁体由造礁石珊瑚在浅暖水中长期堆积而成。接下来横穿塔斯曼海，这片海域西风强劲、涌浪终年不息。最后飞机进入新西兰北岛上空，降落在奥克兰机场。",
     "en-US":
-      "Shanghai to Auckland is one of the longest nonstop routes between China and Oceania, spending almost the whole flight over open water in the western Pacific. After take-off the flight enters the Philippine Sea, a deep-water expanse of the western Pacific bounded by the Philippine archipelago, Taiwan and the Mariana Islands — the Mariana Trench lies just to its east." +
-      "Continuing south-east, the plane passes the Bismarck Sea, a body of water north of New Guinea ringed by the Bismarck Archipelago, with active volcanism and rich coral reefs. Farther south lies the Coral Sea, home to the Great Barrier Reef and known for its biodiversity as a marginal sea of the south-west Pacific." +
-      "The plane finally crosses the Tasman Sea, the wide body of water separating Australia and New Zealand, and lands at Auckland on New Zealand's North Island. From China's eastern coast to an island nation in the southern hemisphere, this flight spends nearly its entire duration over open ocean.",
+      "Shanghai to Auckland runs south-east across the western Pacific, about 9,400 km in all, from the northern hemisphere into the southern. After take-off it crosses the East China Sea, a shelf sea less than two hundred metres deep on average, its floor covered by silt carried out by the Yangtze and its surface swept by strong winds when cold air pushes south in winter. The route then enters the Philippine Sea, the largest marginal sea of the western Pacific, a deep basin enclosed by the Ryukyu, Philippine and Mariana island arcs; along its eastern edge the Mariana Trench reaches the deepest known point on the Earth's surface, more than ten thousand metres down, and the warm, humid air above it is a major birthplace of typhoons. Past the equator comes the Bismarck Sea, a small deep sea between New Guinea and New Britain, with active spreading centres and hydrothermal vents on its floor, frequent volcanic activity along the surrounding island arc and dense rainforest running down to its shores. Farther south lies the Coral Sea, floored by a series of deep basins, with the largest barrier reef system in the world built up on the shelf along its western side by reef-building corals in shallow warm water. The flight then crosses the Tasman Sea, where westerly winds are strong and the swell never fully settles. It finally reaches the North Island of New Zealand and lands at Auckland Airport.",
     },
     travel: {
     "zh-CN":
@@ -5542,13 +5518,9 @@ export const ROUTE_NARRATION: Record<
   "pvg-arn": {
     study: {
     "zh-CN":
-      "上海飞斯德哥尔摩，与飞奥斯陆走向相近，同样横跨亚欧大陆北部，最终抵达波罗的海沿岸的瑞典首都。起飞后先经过华北平原，进入蒙古高原南缘的戈壁荒漠。" +
-      "继续向西北深入西伯利亚腹地，飞越西西伯利亚平原，之后抵达波罗的海沿岸。跨过波罗的海后，飞机进入瑞典东部沿海一带。" +
-      "临近降落前，舷窗下是斯德哥尔摩群岛——由数万座花岗岩小岛和礁石组成的群岛区，斯德哥尔摩正坐落在这片群岛与梅拉伦湖交汇处。飞机最终降落在阿兰达机场。这条航线2020年曾因疫情中断，2026年6月恢复直飞运营。",
+      "上海飞斯德哥尔摩，2026年6月复航，是停飞六年后重开的直飞航线。起飞后先经过华北平原——黄河与海河冲积出的低平耕地，河渠纵横，是中国人口最密集的区域之一。接着进入蒙古高原南缘的戈壁，地表以砾石为主，植被稀疏，聚落之间相隔很远；这里年降水稀少，昼夜温差极大，冬季常有强风。再往西北是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久，再往西平原让位给东欧的农田与城镇。越过波罗的海沿岸后，飞机进入斯德哥尔摩群岛上空——冰后回弹把海底基岩抬出水面，形成两万多座岛屿与礁石。飞机降落在城市以北的阿兰达机场。",
     "en-US":
-      "Shanghai to Stockholm follows a track similar to the Oslo flight, also crossing the northern part of Eurasia, ending at the Swedish capital on the Baltic coast. After take-off the flight first crosses the North China Plain, then the Gobi desert on the southern edge of the Mongolian Plateau." +
-      "Continuing north-west deep into Siberia, the route crosses the West Siberian Plain before reaching the Baltic coast. Past the Baltic Sea, the flight enters the coastal region of eastern Sweden." +
-      "Just before landing, the Stockholm Archipelago comes into view below — tens of thousands of granite islands and skerries, where Stockholm sits at the point where the archipelago meets Lake Mälaren. The plane finally lands at Arlanda Airport. This route was suspended during the pandemic and resumed nonstop service in June 2026.",
+      "Shanghai to Stockholm resumed in June 2026, reopening a nonstop link after six years. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, threaded with canals and among the most densely settled parts of China. It then enters the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel with sparse vegetation and long distances between settlements, little annual rain, an extreme daily temperature swing and strong winter winds. Farther north-west lies the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across with almost no change in elevation; the Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave wide stands of conifer forest standing in water for weeks, before the plain gives way westward to the farmland and towns of eastern Europe. Past the Baltic coast the aircraft reaches the Stockholm archipelago, where post-glacial rebound has lifted the seabed bedrock into more than twenty thousand islands and skerries. The flight lands at Arlanda Airport north of the city.",
     },
     travel: {
     "zh-CN":
@@ -5565,13 +5537,9 @@ export const ROUTE_NARRATION: Record<
   "pek-cph": {
     study: {
     "zh-CN":
-      "北京飞哥本哈根，同样向西北横跨亚欧大陆，但落点更靠北，最终抵达斯堪的纳维亚半岛南缘的丹麦。起飞后先经过蒙古高原南缘的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
-      "继续向西北，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——常被地理学上作为亚洲与欧洲的分界——之后，进入东欧平原，农田与河流交错的地貌一路延伸。" +
-      "飞机继续向西北，越过波罗的海南部，最终降落在西兰岛东岸的哥本哈根——丹麦首都坐落在厄勒海峡边，隔海峡与瑞典相望。一趟航班，向西北横穿了大半个亚欧大陆，抵达波罗的海之滨。",
+      "北京飞哥本哈根，向西北横跨亚欧大陆，全程约七千五百公里，终点在波罗的海入口的厄勒海峡边。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后，飞机进入一片开阔低地——这条南北绵延两千多公里的古老山系海拔不高，却被公认为划分亚洲与欧洲的界线；它形成于约三亿年前的一次大陆碰撞，此后长期剥蚀，如今山脊平缓，两侧的植被与土壤类型截然不同。再往西是东欧平原，开阔低地上田块规整，河流舒缓。最后跨过波罗的海西口，降落在哥本哈根近旁阿迈厄岛上的卡斯特鲁普机场。",
     "en-US":
-      "Beijing to Copenhagen also flies north-west across Eurasia, but on a track that curves farther north, ending on the southern rim of the Scandinavian peninsula where Denmark lies. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
-      "Farther north-west the flight enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh. Crossing the Ural Mountains — commonly used by geographers to mark the boundary between Asia and Europe — the route enters the East European Plain, a landscape of farmland and winding rivers stretching on." +
-      "The plane continues north-west over the southern Baltic Sea and finally lands at Copenhagen on the eastern shore of the island of Zealand — the Danish capital sits beside the Øresund strait, facing Sweden across the water. One flight has crossed most of Eurasia to reach the Baltic shore.",
+      "Beijing to Copenhagen runs north-west across the Eurasian landmass, about 7,500 km in all, ending beside the Øresund at the mouth of the Baltic. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding widely when the snow melts in spring. Past the Ural Mountains the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, yet it is the accepted divide between Asia and Europe; it rose in a continental collision some three hundred million years ago and has been eroded ever since, so its ridges are gentle and the vegetation and soils on its two sides are quite different. Farther west lies the East European Plain, an open lowland of regular fields and slow rivers. The route finally crosses the western mouth of the Baltic and lands at Kastrup Airport on the island of Amager beside Copenhagen.",
     },
     travel: {
     "zh-CN":
@@ -5611,13 +5579,9 @@ export const ROUTE_NARRATION: Record<
   "pek-waw": {
     study: {
     "zh-CN":
-      "北京飞华沙，向西横跨亚欧大陆腹地，最终抵达东欧平原中部。起飞后先经过蒙古高原南缘的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
-      "继续向西，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——地理学上常以此山系划分亚洲与欧洲——之后，飞机进入东欧平原：这片横贯东欧的广袤平原地势低缓，河流蜿蜒、农田密布，华沙便坐落在这片平原中部的维斯瓦河畔。" +
-      "飞机最终沿维斯瓦河谷进近，降落在华沙肖邦机场。一趟航班，横穿了大半个亚欧大陆，抵达东欧平原的心脏地带。",
+      "北京飞华沙，向西北横跨亚欧大陆，全程约七千一百公里，终点在中欧的维斯瓦河畔。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河流蜿蜒北流，沼泽面积之大在全球都少有。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系南北绵延两千多公里，是亚欧两洲的传统分界，海拔不高但地质年代久远，铁、铜、宝石等矿产丰富，沿线因此形成了成片的工业城市。再往西进入东欧平原，冰期留下的低缓丘陵与沙质平原交替出现，河流在其间宽缓地绕行。飞机降落在华沙市区西南的肖邦机场。",
     "en-US":
-      "Beijing to Warsaw flies west across the interior of Eurasia, ending near the middle of the East European Plain. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
-      "Farther west the flight enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh. Crossing the Ural Mountains — the range geographers commonly use to mark the boundary between Asia and Europe — the route enters the East European Plain: a vast, low-lying plain stretching across eastern Europe, threaded with winding rivers and farmland, with Warsaw sitting near its middle on the banks of the Vistula River." +
-      "The plane makes its final approach along the Vistula valley and lands at Warsaw Chopin Airport. One flight has crossed most of Eurasia to reach the heart of the East European Plain.",
+      "Beijing to Warsaw runs north-west across the Eurasian landmass, about 7,100 km in all, ending on the Vistula in central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, remarkably flat, its rivers winding north through marshes of a size found almost nowhere else on Earth. Past the Ural Mountains the flight enters an open lowland: the range runs more than two thousand kilometres north to south as the conventional divide between Asia and Europe, and although it is not high it is geologically very old and rich in iron, copper and gemstones, which is why industrial cities line its length. Farther west the route enters the East European Plain, where low hills left by the ice ages alternate with sandy flats and the rivers wander broadly between them. The flight lands at Chopin Airport south-west of central Warsaw.",
     },
     travel: {
     "zh-CN":
@@ -5634,13 +5598,9 @@ export const ROUTE_NARRATION: Record<
   "pek-prg": {
     study: {
     "zh-CN":
-      "北京飞布拉格，向西横跨亚欧大陆，最终抵达中欧腹地被群山环抱的波希米亚地区。起飞后先经过蒙古高原南缘的戈壁荒漠，随后进入西西伯利亚平原——世界上最大的平原之一，地势极其平坦，森林与沼泽交织。" +
-      "飞越乌拉尔山脉之后，飞机进入东欧平原，农田与河流交错的地貌一路延伸。继续向西南，地势逐渐抬升进入波希米亚高地——一片被古老褶皱山系环绕的高地，捷克全境大部即坐落于此，伏尔塔瓦河便发源于这片高地南部。" +
-      "飞机沿伏尔塔瓦河谷进近，最终降落在布拉格瓦茨拉夫·哈维尔机场。一趟航班，从亚欧大陆东端横穿到中欧被群山环抱的波希米亚地区。",
+      "北京飞布拉格，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的波希米亚盆地。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界，飞机进入一片开阔低地——这条山系南北绵延两千多公里，海拔并不高，却是重要的构造与气候界线，两侧坡地的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往西是东欧平原，古老地台之上起伏很小，田块与河流的图案从空中看格外规整。接近终点时进入波希米亚高地，四周被低山环抱、中间下凹，是一处典型的构造盆地。飞机降落在布拉格西郊的瓦茨拉夫·哈维尔机场。",
     "en-US":
-      "Beijing to Prague flies west across Eurasia, ending in the mountain-ringed Bohemian region at the heart of central Europe. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh." +
-      "Crossing the Ural Mountains, the route enters the East European Plain, a landscape of farmland and winding rivers stretching on. Farther south-west the terrain gradually rises into the Bohemian Uplands, a plateau ringed by ancient folded mountain ranges — most of Czechia sits within this region, and the Vltava River rises in its southern reaches." +
-      "The plane makes its final approach along the Vltava valley and lands at Prague's Václav Havel Airport. One flight has crossed from the eastern edge of Eurasia to the mountain-ringed Bohemian region of central Europe.",
+      "Beijing to Prague runs north-west across the Eurasian landmass, about 7,600 km in all, ending in the Bohemian basin of central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, but it marks a real structural and climatic boundary, the forests on its two flanks differ markedly, and its ore deposits support a string of industrial cities along its length. Farther west lies the East European Plain, an ancient platform with very little relief where fields and rivers read from the air as a strikingly regular pattern. Near the end the route crosses the Bohemian Uplands, a ring of low mountains around a sunken middle — a textbook structural basin. The flight lands at Václav Havel Airport on the western edge of Prague.",
     },
     travel: {
     "zh-CN":
