@@ -6,13 +6,51 @@
   "descriptionEn": "Central Valley · Sierra Nevada · Death Valley",
   "depCountry": "usa",
   "arrCountry": "usa",
-  "flight": { "airline": "西南航空", "airlineEn": "Southwest Airlines", "flightNo": "WN634", "aircraft": "Boeing 737-700", "depIata": "SFO", "arrIata": "LAS", "durationMin": 90 },
+  "flight": {
+    "airline": "西南航空",
+    "airlineEn": "Southwest Airlines",
+    "flightNo": "WN634",
+    "aircraft": "Boeing 737-700",
+    "depIata": "SFO",
+    "arrIata": "LAS",
+    "durationMin": 90
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "sfo", "name": "旧金山", "nameEn": "San Francisco", "lat": 37.6213, "lon": -122.3790, "airport": true },
-    { "kind": "terrain", "terrainId": "central-valley-ca" },
-    { "kind": "terrain", "terrainId": "sierra-nevada-us" },
-    { "kind": "terrain", "terrainId": "death-valley" },
-    { "kind": "city", "id": "las", "name": "拉斯维加斯", "nameEn": "Las Vegas", "lat": 36.0840, "lon": -115.1537, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "sfo",
+      "name": "旧金山",
+      "nameEn": "San Francisco",
+      "lat": 37.6213,
+      "lon": -122.379,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-valley-ca"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sierra-nevada-us"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "death-valley"
+    },
+    {
+      "kind": "city",
+      "id": "las",
+      "name": "拉斯维加斯",
+      "nameEn": "Las Vegas",
+      "lat": 36.084,
+      "lon": -115.1537,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/wn634/las-vegas/san-francisco/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：2026-08-06 至 09-28 有效时刻表核实 WN634 确为 LAS↔SFO 不经停、每日执飞，机型 737-700（带 Scimitar 翼梢小翼）。**西南的 737-700 确在被 MAX 8 替代，但这条线当前时刻表仍是 737-700**。起 agent 时特意让它查 737-700 退役情况，结论是这条线还没换。来源级别 3"
+  }
 }

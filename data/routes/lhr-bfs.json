@@ -6,14 +6,55 @@
   "descriptionEn": "Chilterns · River Severn · Snowdonia · Mourne Mountains",
   "depCountry": "uk",
   "arrCountry": "uk",
-  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1416", "aircraft": "Airbus A320", "depIata": "LHR", "arrIata": "BFS", "durationMin": 85 },
+  "flight": {
+    "airline": "英国航空",
+    "airlineEn": "British Airways",
+    "flightNo": "BA1416",
+    "aircraft": "Airbus A320neo",
+    "depIata": "LHR",
+    "arrIata": "BHD",
+    "durationMin": 85
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
-    { "kind": "terrain", "terrainId": "chilterns" },
-    { "kind": "terrain", "terrainId": "river-severn" },
-    { "kind": "terrain", "terrainId": "snowdonia" },
-    { "kind": "terrain", "terrainId": "mourne-mountains" },
-    { "kind": "city", "id": "bfs", "name": "贝尔法斯特", "nameEn": "Belfast", "lat": 54.6575, "lon": -6.2158, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lhr",
+      "name": "伦敦",
+      "nameEn": "London",
+      "lat": 51.47,
+      "lon": -0.4543,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chilterns"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "river-severn"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "snowdonia"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mourne-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "bhd",
+      "name": "贝尔法斯特城市",
+      "nameEn": "Belfast City",
+      "lat": 54.6181,
+      "lon": -5.8725,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/British+Airways-London-Belfast/BA1416",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**到达机场记错了**：BA1416 航班号、承运人、机型都基本对（实际 A320neo），但英航从希思罗飞贝尔法斯特固定落 **BHD（乔治·贝斯特贝尔法斯特城市机场）**，不是 BFS（贝尔法斯特国际）。BFS 是易捷等航司从别的伦敦机场服务的。**同时改了到达航点**（BFS 阿尔迪格罗夫 → BHD 城市机场），否则会触发 check:routes 的 D5 断言。解说未提及具体机场名，不受影响。同批的 edi-bfs 用的确实是 BFS，不动。来源级别 3"
+  }
 }

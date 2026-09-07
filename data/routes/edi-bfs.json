@@ -6,12 +6,47 @@
   "descriptionEn": "Southern Uplands · Mourne Mountains",
   "depCountry": "uk",
   "arrCountry": "uk",
-  "flight": { "airline": "易捷航空", "airlineEn": "easyJet", "flightNo": "EZY63", "aircraft": "Airbus A319", "depIata": "EDI", "arrIata": "BFS", "durationMin": 50 },
+  "flight": {
+    "airline": "易捷航空",
+    "airlineEn": "easyJet",
+    "flightNo": "EZY325",
+    "aircraft": "Airbus A320",
+    "depIata": "EDI",
+    "arrIata": "BFS",
+    "durationMin": 50
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "edi", "name": "爱丁堡", "nameEn": "Edinburgh", "lat": 55.9500, "lon": -3.3725, "airport": true },
-    { "kind": "terrain", "terrainId": "southern-uplands" },
-    { "kind": "terrain", "terrainId": "mourne-mountains" },
-    { "kind": "city", "id": "bfs", "name": "贝尔法斯特", "nameEn": "Belfast", "lat": 54.6575, "lon": -6.2158, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "edi",
+      "name": "爱丁堡",
+      "nameEn": "Edinburgh",
+      "lat": 55.95,
+      "lon": -3.3725,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "southern-uplands"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mourne-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "bfs",
+      "name": "贝尔法斯特",
+      "nameEn": "Belfast",
+      "lat": 54.6575,
+      "lon": -6.2158,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://uk.flightaware.com/live/flight/EZY63",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：「两位数号形状不对」的怀疑成立：**EZY63 实际飞的是贝尔法斯特国际→格拉斯哥(BFS→GLA)**。EDI→BFS 的真实号是 EZY325（同时段还有 EZY323/331/333），机型 A320 不是 A319，50min 与记录完全吻合。这条到达机场用 BFS 是对的（易捷飞的就是 BFS），与 lhr-bfs 不同。2026-06 数据每周约 29 班。来源级别 3"
+  }
 }

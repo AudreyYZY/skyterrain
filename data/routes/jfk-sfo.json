@@ -6,14 +6,55 @@
   "descriptionEn": "Great Lakes · Great Plains · Great Basin · Central Valley",
   "depCountry": "usa",
   "arrCountry": "usa",
-  "flight": { "airline": "联合航空", "airlineEn": "United Airlines", "flightNo": "UA523", "aircraft": "Boeing 757-200", "depIata": "JFK", "arrIata": "SFO", "durationMin": 370 },
+  "flight": {
+    "airline": "捷蓝航空",
+    "airlineEn": "JetBlue",
+    "flightNo": "B6615",
+    "aircraft": "Airbus A320 / A321（来源间不一致，未能确定）",
+    "depIata": "JFK",
+    "arrIata": "SFO",
+    "durationMin": 370
+  },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "jfk", "name": "纽约", "nameEn": "New York", "lat": 40.6413, "lon": -73.7781, "airport": true },
-    { "kind": "terrain", "terrainId": "great-lakes" },
-    { "kind": "terrain", "terrainId": "great-plains-us" },
-    { "kind": "terrain", "terrainId": "great-basin" },
-    { "kind": "terrain", "terrainId": "central-valley-ca" },
-    { "kind": "city", "id": "sfo", "name": "旧金山", "nameEn": "San Francisco", "lat": 37.6213, "lon": -122.3790, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "jfk",
+      "name": "纽约",
+      "nameEn": "New York",
+      "lat": 40.6413,
+      "lon": -73.7781,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-lakes"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-plains-us"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-valley-ca"
+    },
+    {
+      "kind": "city",
+      "id": "sfo",
+      "name": "旧金山",
+      "nameEn": "San Francisco",
+      "lat": 37.6213,
+      "lon": -122.379,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/b6615/new-york/san-francisco/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人本身就不服务这对城市**：联合航空已于 **2022-10 全面退出 JFK**（时刻额度不足），此后再未复飞；据 2025 年与捷蓝的「Blue Sky」合作，最快 2027 年才借用捷蓝时刻重返。JFK–SFO 目前的不经停承运人是 Alaska / American / Delta / JetBlue 四家。**A5 的一个新变种**：不是承运人停运，是承运人**退出了这个机场**。改用捷蓝 B6615（JFK T5→SFO T1，约 6h40m）；机型两个来源给 A320/A321 不一致，按红线如实写。解说正文未提及任何航司，换承运人不影响。来源级别 3（航司退出 JFK 一事另有航空媒体报道）"
+  }
 }

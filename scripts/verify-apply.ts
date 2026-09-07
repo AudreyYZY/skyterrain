@@ -63,7 +63,22 @@ let changed = 0;
 let sourced = 0;
 const touched = new Set<string>();
 
+const VERDICTS = new Set(["ok", "wrong", "unknown"]);
+const RESOLUTIONS = new Set(["fixed", "open", "blocked"]);
+
 for (const f of round.findings) {
+  // 校验枚举值 —— 不校验的话，findings.json 里一个位置写错的参数会让 patch 被静默丢掉，
+  // 而 source 照样写成「已核实」。实测踩过：resolution 被误传成一个对象，于是
+  // arrIata/waypoint 都没改，条目却被标成了 status: "wrong"。
+  if (!VERDICTS.has(f.verdict)) {
+    throw new Error(`${f.key}: verdict 非法「${JSON.stringify(f.verdict)}」，只能是 ok / wrong / unknown`);
+  }
+  if (!RESOLUTIONS.has(f.resolution)) {
+    throw new Error(`${f.key}: resolution 非法「${JSON.stringify(f.resolution)}」，只能是 fixed / open / blocked`);
+  }
+  if ((f.patch || f.waypointPatch) && f.resolution !== "fixed") {
+    throw new Error(`${f.key}: 给了 patch 但 resolution 是「${f.resolution}」—— patch 只在 fixed 时应用，这多半是写错了`);
+  }
   if (f.kind !== "routes") {
     console.log(`  跳过 ${f.key}（本脚本只处理 kind=routes）`);
     continue;
