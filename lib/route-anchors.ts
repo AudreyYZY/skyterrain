@@ -17,6 +17,13 @@ import { estimateSpeechDurationSec } from "@/lib/speech";
 import { ROUTE_ANCHORS } from "@/lib/route-anchors.data";
 import type { Language } from "@/lib/i18n";
 
+/**
+ * 去掉通名后剩下的这些词太常见，不能拿来判定「讲到哪了」：
+ *「长江三角洲」剩「长江」，于是每一句提到长江的话都被判成已经飞到入海口
+ *（成都—上海几乎每句都在讲长江）；「日本海」剩「日本」同理。
+ */
+const ZH_CORE_STOPWORDS = new Set(["长江", "黄河", "珠江", "日本", "中国"]);
+
 /** 中文地名的通名后缀 —— 去掉之后再匹配一次，「戈壁沙漠」也能命中「戈壁」 */
 const ZH_GENERIC_SUFFIX =
   /(沙漠|沙地|山脉|山地|山系|群山|走廊|谷地|河谷|大峡谷|峡谷|三角洲|半岛|群岛|列岛|诸岛|海岸|沿岸|沿海|海峡|草原|盆地|高原|台地|平原|低地|丘陵|湿地|沼泽|火山区|火山|破火山口|山|湖|河|江|海|岛)$/;
@@ -99,12 +106,17 @@ export function matchWaypointInSentence(
 ): number {
   const en = lang === "en-US";
   const hay = en ? sentence.toLowerCase() : sentence;
-  /** 命中位置最靠前的那个航点 */
+  /** 命中位置最靠前的那个航点；同一位置上取匹配得更长的那个 */
   let bestAt = Infinity;
+  let bestLen = 0;
   let best = -1;
-  const take = (at: number, index: number) => {
-    if (at >= 0 && at < bestAt) {
+  const take = (at: number, len: number, index: number) => {
+    if (at < 0) return;
+    // 同位置取更长：「日本阿尔卑斯山脉」这句里「日本海」的核心「日本」和
+    // 全名都从同一个字开始，取短的会把讲阿尔卑斯的句子判成日本海。
+    if (at < bestAt || (at === bestAt && len > bestLen)) {
       bestAt = at;
+      bestLen = len;
       best = index;
     }
   };
@@ -122,17 +134,19 @@ export function matchWaypointInSentence(
     // 句子里，逐个别名试才行。
     for (const alt of splitAliases(nm)) {
       if (en) {
-        take(wordIndexOf(hay, alt), w.index);
+        take(wordIndexOf(hay, alt), alt.length, w.index);
         // 「Gobi Desert」→「Gobi」：英文通名后缀同样可省
         const core = alt.replace(EN_GENERIC_SUFFIX, "").trim();
         if (core.length >= 4 && !EN_CORE_STOPWORDS.has(core.toLowerCase())) {
-          take(wordIndexOf(hay, core), w.index);
+          take(wordIndexOf(hay, core), core.length, w.index);
         }
         continue;
       }
-      take(sentence.indexOf(alt), w.index);
+      take(sentence.indexOf(alt), alt.length, w.index);
       const core = alt.replace(ZH_GENERIC_SUFFIX, "");
-      if (core.length >= 2) take(sentence.indexOf(core), w.index);
+      if (core.length >= 2 && !ZH_CORE_STOPWORDS.has(core)) {
+        take(sentence.indexOf(core), core.length, w.index);
+      }
     }
   }
   return best;
@@ -156,6 +170,10 @@ export function deriveAnchors(
      * 爪哇岛」「Santiago to Easter Island is…」）——那是预告，不是镜头此刻
      * 的位置。直接采信不只让首句跳到半路，还会顺着「没命中就沿用上一句」
      * 一路带偏后面几句，直到下一次真正命中为止。
+     *
+     * 同时也忽略**最后一句**命中的地名：收尾句几乎都是回望式的总结
+     *（「这趟航班穿越了从戈壁到欧亚大草原的连续地貌带」），提到的是起点
+     * 一带，采信它等于让锚点在最后一句往回跳，整篇被判成乱序。
      */
     firstSentenceIsStart?: boolean;
   } = {},
@@ -166,9 +184,21 @@ export function deriveAnchors(
   let matched = 0;
   let last = -1;
   for (let i = 0; i < sentences.length; i++) {
-    if (i === 0 && opts.firstSentenceIsStart) {
+    if (opts.firstSentenceIsStart && i === 0) {
       last = 0;
       perSentence.push(0);
+      continue;
+    }
+    if (opts.firstSentenceIsStart && i > 0 && i === sentences.length - 1) {
+      // 收尾句往回跳 = 回望式总结（「这趟航班穿越了从戈壁到欧亚大草原的连续
+      // 地貌带」），不是位置；往前走则是真的在讲落地，照常采信。
+      const hit = matchWaypointInSentence(sentences[i]!, waypoints, lang);
+      if (hit >= 0 && hit >= last) {
+        matched++;
+        hits.add(hit);
+        last = hit;
+      }
+      perSentence.push(last);
       continue;
     }
     const hit = matchWaypointInSentence(sentences[i]!, waypoints, lang);
