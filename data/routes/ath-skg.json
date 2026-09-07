@@ -6,12 +6,47 @@
   "descriptionEn": "Thessalian Plain · Mount Olympus",
   "depCountry": "greece",
   "arrCountry": "greece",
-  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3301", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "SKG", "durationMin": 50 },
+  "flight": {
+    "airline": "爱琴海航空",
+    "airlineEn": "Aegean Airlines",
+    "flightNo": "A3116",
+    "aircraft": "Airbus A320 / A321（neo 家族，按日调配）",
+    "depIata": "ATH",
+    "arrIata": "SKG",
+    "durationMin": 50
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
-    { "kind": "terrain", "terrainId": "thessaly-plain" },
-    { "kind": "terrain", "terrainId": "mount-olympus" },
-    { "kind": "city", "id": "thessaloniki", "name": "塞萨洛尼基", "nameEn": "Thessaloniki", "lat": 40.5197, "lon": 22.9709, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "athens",
+      "name": "雅典",
+      "nameEn": "Athens",
+      "lat": 37.9364,
+      "lon": 23.9445,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "thessaly-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-olympus"
+    },
+    {
+      "kind": "city",
+      "id": "thessaloniki",
+      "name": "塞萨洛尼基",
+      "nameEn": "Thessaloniki",
+      "lat": 40.5197,
+      "lon": 22.9709,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/AEE301",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**A3301 实际飞的是伊拉克利翁→雅典(HER→ATH)**。ATH→SKG 的真实号段是 A3102/3104/3110/3114/3116…，其中 A3116 每日执飞（14:03 出发）。来源级别 3"
+  }
 }

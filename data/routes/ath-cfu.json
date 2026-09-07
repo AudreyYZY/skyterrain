@@ -6,12 +6,47 @@
   "descriptionEn": "Gulf of Corinth · Pindus Mountains",
   "depCountry": "greece",
   "arrCountry": "greece",
-  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3320", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "CFU", "durationMin": 65 },
+  "flight": {
+    "airline": "爱琴海航空",
+    "airlineEn": "Aegean Airlines",
+    "flightNo": "A3282",
+    "aircraft": "Airbus A320 / A321neo（按日调配）",
+    "depIata": "ATH",
+    "arrIata": "CFU",
+    "durationMin": 65
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
-    { "kind": "terrain", "terrainId": "gulf-of-corinth" },
-    { "kind": "terrain", "terrainId": "pindus-mountains" },
-    { "kind": "city", "id": "corfu-town", "name": "科孚城", "nameEn": "Corfu Town", "lat": 39.6019, "lon": 19.9117, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "athens",
+      "name": "雅典",
+      "nameEn": "Athens",
+      "lat": 37.9364,
+      "lon": 23.9445,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "gulf-of-corinth"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pindus-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "corfu-town",
+      "name": "科孚城",
+      "nameEn": "Corfu Town",
+      "lat": 39.6019,
+      "lon": 19.9117,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**A3320 属于 ATH→HER（伊拉克利翁）号段**，不是科孚。ATH→CFU 真实号段是 A3282/3284/3286/3288。来源级别 3，且子代理只给到聚合站首页而非具体航班页——这条的来源比同批其他条目更弱，下轮复核时优先重查"
+  }
 }

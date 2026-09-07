@@ -6,12 +6,47 @@
   "descriptionEn": "Milos · Nisyros",
   "depCountry": "greece",
   "arrCountry": "greece",
-  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3345", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "RHO", "durationMin": 55 },
+  "flight": {
+    "airline": "爱琴海航空",
+    "airlineEn": "Aegean Airlines",
+    "flightNo": "A3204",
+    "aircraft": "Airbus A320",
+    "depIata": "ATH",
+    "arrIata": "RHO",
+    "durationMin": 55
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
-    { "kind": "terrain", "terrainId": "milos" },
-    { "kind": "terrain", "terrainId": "nisyros" },
-    { "kind": "city", "id": "rhodes-town", "name": "罗德城", "nameEn": "Rhodes Town", "lat": 36.4054, "lon": 28.0862, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "athens",
+      "name": "雅典",
+      "nameEn": "Athens",
+      "lat": 37.9364,
+      "lon": 23.9445,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "milos"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nisyros"
+    },
+    {
+      "kind": "city",
+      "id": "rhodes-town",
+      "name": "罗德城",
+      "nameEn": "Rhodes Town",
+      "lat": 36.4054,
+      "lon": 28.0862,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/AEE345",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**A3345 实际是哈尼亚→雅典(CHQ→ATH)**，根本不飞罗德城 —— 「345 连续递增」的形状怀疑成立。ATH→RHO 真实号段是 A3200/3202/3204/3206…。A3204 有确凿执飞记录（A320-232，注册号 SX-DGE）。来源级别 3"
+  }
 }

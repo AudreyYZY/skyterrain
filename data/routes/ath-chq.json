@@ -6,11 +6,46 @@
   "descriptionEn": "Cretan Sea",
   "depCountry": "greece",
   "arrCountry": "greece",
-  "flight": { "airline": "爱琴海航空", "airlineEn": "Aegean Airlines", "flightNo": "A3330", "aircraft": "Airbus A320", "depIata": "ATH", "arrIata": "CHQ", "durationMin": 45 },
+  "flight": {
+    "airline": "爱琴海航空",
+    "airlineEn": "Aegean Airlines",
+    "flightNo": "A3330",
+    "aircraft": "Airbus A320",
+    "depIata": "ATH",
+    "arrIata": "CHQ",
+    "durationMin": 45
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "athens", "name": "雅典", "nameEn": "Athens", "lat": 37.9364, "lon": 23.9445, "airport": true },
-    { "kind": "feature", "name": "克里特海", "nameEn": "Cretan Sea", "lon": 24.0471, "lat": 36.7340 },
-    { "kind": "city", "id": "chania", "name": "哈尼亚", "nameEn": "Chania", "lat": 35.5317, "lon": 24.1497, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "athens",
+      "name": "雅典",
+      "nameEn": "Athens",
+      "lat": 37.9364,
+      "lon": 23.9445,
+      "airport": true
+    },
+    {
+      "kind": "feature",
+      "name": "克里特海",
+      "nameEn": "Cretan Sea",
+      "lon": 24.0471,
+      "lat": 36.734
+    },
+    {
+      "kind": "city",
+      "id": "chania",
+      "name": "哈尼亚",
+      "nameEn": "Chania",
+      "lat": 35.5317,
+      "lon": 24.1497,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/AEE330",
+    "checkedOn": "2026-09-07",
+    "note": "属实：A3330 确实执飞雅典→哈尼亚（苏达），A320-232，不经停，爱琴海主线执飞（非代码共享/子公司代飞）。专门确认了 A7（是否子公司代飞），结论是主线自营。来源级别 3"
+  }
 }
