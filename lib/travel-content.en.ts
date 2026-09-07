@@ -1023,10 +1023,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "china-overview": {
-    // identity sources: 国家统计局《中华人民共和国2024年国民经济和社会发展统计公报》（2025-02-28 发布）：2024 年末全国人口 140828 万人。https://www.stats.gov.cn/sj/zxfb/202502/t20250228_1958817.html
-    //   原文「人口约14亿」数值仍成立，只是没有年份与来源。核实日 2026-09-07，来源级别 1
+    // identity sources: 国家统计局《中华人民共和国2025年国民经济和社会发展统计公报》（2026-02-28 发布）：2025 年末全国人口 140489 万人，比上年末**减少** 339 万人，其中城镇常住人口 95380 万人。https://www.stats.gov.cn/sj/zxfbhjd/202602/t20260228_1962662.html （级别 1）
+    //   发布节奏：每年 1 月中旬国新办发布会出上年末人口快报，2 月底出正式统计公报。
     identity:
-      "China covers about as much land as the whole of Europe and has a population of about 1.408 billion at the end of 2024 (National Bureau of Statistics of China), one of the largest in the world. The land is broadly high in the west and low in the east: the west is the Tibetan Plateau plus large mountain and desert country, thinly populated; the east is plains, hills and great rivers, where most of the people and big cities are. It has thousands of years of continuous written history; dialects vary widely, but Mandarin is the common language.",
+      "China covers about as much land as the whole of Europe and has a population of about 1.405 billion at the end of 2025 (National Bureau of Statistics of China), one of the largest in the world. The land is broadly high in the west and low in the east: the west is the Tibetan Plateau plus large mountain and desert country, thinly populated; the east is plains, hills and great rivers, where most of the people and big cities are. It has thousands of years of continuous written history; dialects vary widely, but Mandarin is the common language.",
     layout:
       "China divides roughly into a few blocks: the eastern coastal city belt (the Beijing–Shanghai–Guangzhou–Shenzhen line, the centre of the economy and population); the North China Plain and Yellow River basin (the heartland of early Chinese civilisation); the Yangtze basin (from the Sichuan Basin down to the lower Yangtze — dense population, rich land); the mountainous southwest (the Yunnan–Guizhou Plateau and Hengduan ranges, many ethnic groups and mountain landscapes); and the vast west (the Tibetan Plateau, and the basins and deserts of Xinjiang). The capital is Beijing; the largest economic centre is Shanghai.",
     gettingAround:
@@ -1040,8 +1040,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   beijing: {
+    // identity sources: 北京市统计局《北京市2025年国民经济和社会发展统计公报》（2026-03-25 发布）：2025 年末全市常住人口 2180.0 万人，比上年末**减少** 3.2 万人。https://tjj.beijing.gov.cn/zxfbu/202603/t20260324_4564401.html （级别 1，原文直接抓取确认）。发布月份：次年 3 月。
     identity:
-      "Beijing's site is no accident — the Taihang, Yan and Jundu ranges close around it to the west and north, forming a bay-shaped gap opening southeast that geographers call the 'Beijing Bay': the mountains block the dry, cold air that sweeps down from the north in winter, while the open side catches moisture carried in by the southeast monsoon, and rivers such as the Yongding, descending from the hills, built up a fertile piedmont plain where the ancient city of Ji stood more than three thousand years ago. Today's Beijing is China's capital and its political and cultural centre, with a metropolitan population of about 20 million and more than eight hundred years as a capital; the Ming–Qing imperial city plan is still legible today. The city is large in scale — the main sights are spread between the central axis and a set of ring roads, so expect distances.",
+      "Beijing's site is no accident — the Taihang, Yan and Jundu ranges close around it to the west and north, forming a bay-shaped gap opening southeast that geographers call the 'Beijing Bay': the mountains block the dry, cold air that sweeps down from the north in winter, while the open side catches moisture carried in by the southeast monsoon, and rivers such as the Yongding, descending from the hills, built up a fertile piedmont plain where the ancient city of Ji stood more than three thousand years ago. Today's Beijing is China's capital and its political and cultural centre, with a permanent resident population of about 21.80 million at the end of 2025 (Beijing Municipal Bureau of Statistics) and more than eight hundred years as a capital; the Ming–Qing imperial city plan is still legible today. The city is large in scale — the main sights are spread between the central axis and a set of ring roads, so expect distances.",
     // howItWorks sources: Wikipedia (2026-09): Beijing (16 districts; ring roads; Tongzhou 2019; 2020 census 21,893,095); Municipalities of China
     howItWorks:
       "Beijing is a provincial-level municipality under the central government, and all sixteen of its districts sit beneath a single city government — a district is a tier of administration, not a self-governing body. Dongcheng, Xicheng, Chaoyang, Haidian, Fengtai and Shijingshan are the six urban districts in the traditional sense, while the other ten stretch from the near suburbs to the foothills of the Yan mountains; in 2019 the city government itself moved to the Tongzhou sub-centre in the east. A Beijinger's mental map is a set of ring roads: the Second Ring, completed in 1981, roughly follows the old city wall, and the Third, Fourth, Fifth and Sixth ring outward from it, so that a place is more often described as 'on the east Third Ring' or 'outside the north Fifth Ring' than by its district; the north–south central axis has been the city's spine since the Yuan dynasty. Addresses read district, road or street and number, with hutong names in the old city. The 2020 census counted about 21.9 million residents, and the subway is among the longest networks in the world. Newcomers most often go wrong by picturing Beijing as the old city inside the Second Ring, when the great majority of its people live beyond the Third.",
@@ -1080,8 +1081,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   guangzhou: {
+    // identity sources: 《2025年广州市国民经济和社会发展统计公报》（2026-05-10 发布）：2025 年末常住人口 1910.10 万人，增 12.30 万。https://www.gz.gov.cn/zwgk/sjfb/tjgb/content/post_10804075.html （级别 1）。发布月份：次年 5 月。
     identity:
-      "Guangzhou's two-thousand-year run as a trading port really starts with a canal Qin Shi Huang had dug far to the north — the Lingqu Canal linked the Xiang and Li rivers, letting boats from central China cross the Nanling watershed and drop into the Pearl River system; Guangzhou is the last major port on that river before the sea, where inland cargo transferred onto ocean-going ships, which is why the Maritime Silk Road's starting point fell here rather than elsewhere. Guangzhou is the capital of Guangdong province and the hub of southern China, with a metropolitan population of about 18 million, and hosts the twice-yearly Canton Fair. It is practical, commercial and full of daily life, with a strong culture of morning tea and late-night eating.",
+      "Guangzhou's two-thousand-year run as a trading port really starts with a canal Qin Shi Huang had dug far to the north — the Lingqu Canal linked the Xiang and Li rivers, letting boats from central China cross the Nanling watershed and drop into the Pearl River system; Guangzhou is the last major port on that river before the sea, where inland cargo transferred onto ocean-going ships, which is why the Maritime Silk Road's starting point fell here rather than elsewhere. Guangzhou is the capital of Guangdong province and the hub of southern China, with a permanent resident population of about 19.10 million at the end of 2025 (Guangzhou Municipal Bureau of Statistics), and hosts the twice-yearly Canton Fair. It is practical, commercial and full of daily life, with a strong culture of morning tea and late-night eating.",
     // howItWorks sources: Wikipedia (2026-09): Guangzhou (11 districts; 2020 census 18,676,605; Zhujiang New Town; Guangfo metro 2010)
     howItWorks:
       "Guangzhou is a sub-provincial city and the capital of Guangdong, its eleven districts under one city government. The old city lies on the north bank of the Pearl River in Yuexiu and Liwan — Beijing Road and Shamian — but since 2000 the centre of gravity has moved east to Zhujiang New Town in Tianhe, now the central business district, while the city government remains in Yuexiu; Haizhu lies south of the river, and Panyu, Nansha and Huangpu stretch outward. The 2020 census counted about 18.7 million residents, some 16.5 million of them in the nine urban districts. Guangzhou and neighbouring Foshan agreed a framework for integration in 2009, and the Guangfo metro line opened in 2010 joined the two cities' networks. Addresses read district, road and number, and locals take their bearings from the river and the old city; Cantonese and Mandarin are both spoken. Newcomers most often go wrong by treating Guangzhou as a city centred on its old town, when its business and transport heart has long since moved east to Tianhe.",
@@ -1098,8 +1100,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   shenzhen: {
+    // identity sources: 《深圳市2025年国民经济和社会发展统计公报》（2026-05-25 发布）：2025 年末常住人口 1824.85 万人，增 25.90 万（超大城市增量全国第一）。https://www.sz.gov.cn/cn/xxgk/zfxxgj/tjsj/tjgb/content/post_12805133.html （级别 1）。发布月份：次年 5 月。
     identity:
-      "Shenzhen, in southern Guangdong right next to Hong Kong, grew from a border town into a major city after China's reform and opening, with a metropolitan population of about 17 million and a very young average age. It is known for tech manufacturing, startups and modern urban planning; there are few historic sites and the cityscape is new.",
+      "Shenzhen, in southern Guangdong right next to Hong Kong, grew from a border town into a major city after China's reform and opening, with a permanent resident population of about 18.25 million at the end of 2025 (Shenzhen Municipal Bureau of Statistics) and a very young average age. It is known for tech manufacturing, startups and modern urban planning; there are few historic sites and the cityscape is new.",
     // howItWorks sources: Wikipedia (2026-09): Shenzhen (9 districts + Dapeng; SEZ 1980 → expanded 2010-07-01, 396 → 1,953 km²; 2020 census 17.56 million)
     howItWorks:
       "Shenzhen is a sub-provincial city with independent planning status, its nine districts and the Dapeng new district under one city government. The Special Economic Zone created in 1980 at first covered only Luohu, Futian, Nanshan and Yantian, separated from the rest by a checkpoint line known as the 'second line'; on 1 July 2010 the zone was extended to the whole city and the checkpoints went, yet 'inside the line' and 'outside the line' remain the everyday way of placing a neighbourhood. Futian holds the city government and the business district, Nanshan is the technology hub where Tencent and others cluster, and Bao'an, Longgang and Longhua house the largest populations. The 2020 census counted about 17.6 million residents, one of the youngest big-city populations in China and overwhelmingly born elsewhere. Addresses read district, road and number, and several crossings lead south into Hong Kong. Newcomers most often go wrong by assuming Shenzhen is Futian and Nanshan, when the bulk of its people live in Bao'an and Longgang outside the old line.",
@@ -1116,8 +1119,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   chengdu: {
+    // identity sources: 《2025年成都市国民经济和社会发展统计公报》（2026-04-14 发布）：2025 年末常住人口 2153.5 万人，增 6.1 万。https://cdstats.chengdu.gov.cn/cdstjj/c154795/2026-04/14/content_58dc076a80974f999828b691bfca027f.shtml （官方域名，直接抓取遇 412 拒绝，数字经快照与财经媒体转载交叉核对，**综合级别 2**）。发布月份：次年 4 月。
     identity:
-      "To understand Chengdu, start with the Dujiangyan works, built over two thousand years ago by the engineer Li Bing and his son — instead of a dam holding back the Min River, the Fish Mouth divider uses the river's own bend-driven currents to redirect flow by season with no gates at all: about 60 percent goes to the inner channel for irrigation in the dry season, then the split reverses so 60 percent drains out through the outer channel when floodwater arrives. That self-adjusting system, still running today, has kept the western Chengdu Plain largely free of both flood and drought, and is where the old label 'land of abundance' comes from. The ease the plain provides has shaped the people too: teahouses, mahjong and chilli-laden food are the unhurried pace of life that abundance buys. Chengdu is the capital of Sichuan and a hub of southwest China, with a metropolitan population of about 20 million; an hour or two west, the land suddenly rises into the Hengduan Mountains and the eastern edge of the Tibetan Plateau, making Chengdu the single most important gateway into the western Sichuan plateau and Tibetan areas.",
+      "To understand Chengdu, start with the Dujiangyan works, built over two thousand years ago by the engineer Li Bing and his son — instead of a dam holding back the Min River, the Fish Mouth divider uses the river's own bend-driven currents to redirect flow by season with no gates at all: about 60 percent goes to the inner channel for irrigation in the dry season, then the split reverses so 60 percent drains out through the outer channel when floodwater arrives. That self-adjusting system, still running today, has kept the western Chengdu Plain largely free of both flood and drought, and is where the old label 'land of abundance' comes from. The ease the plain provides has shaped the people too: teahouses, mahjong and chilli-laden food are the unhurried pace of life that abundance buys. Chengdu is the capital of Sichuan and a hub of southwest China, with a permanent resident population of about 21.54 million at the end of 2025 (Chengdu Municipal Bureau of Statistics); an hour or two west, the land suddenly rises into the Hengduan Mountains and the eastern edge of the Tibetan Plateau, making Chengdu the single most important gateway into the western Sichuan plateau and Tibetan areas.",
     // howItWorks sources: Wikipedia (2026-09): Chengdu (12 districts, 5 county-level cities, 3 counties; ring roads; Tianfu New Area 2014; Tianfu Airport 2021; 2020 census 20,937,757)
     howItWorks:
       "Chengdu is a sub-provincial city and the capital of Sichuan, governing twelve districts, five county-level cities and three counties, with about 20.9 million residents at the 2020 census. Its skeleton is a set of ring roads: the Second Ring roughly marks the edge of the old city, Tianfu Square sits at the centre, and the Third and Fourth rings lie further out; the state-level Tianfu New Area, created in 2014, runs south along Tianfu Avenue, and the city's offices, the new business district and Tianfu International Airport, opened in 2021, all lie on this southern axis, facing the older Shuangliu airport across the city. Addresses read district, road and number, and Chengdu people locate places by ring road and by the old city's gates — 'the south gate', 'the north gate'. Newcomers most often go wrong by picturing Chengdu as an old city on the plain around Tianfu Square, when it has stretched tens of kilometres south along Tianfu Avenue.",
@@ -1134,8 +1138,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   chongqing: {
+    // identity sources: 《2025年重庆市国民经济和社会发展统计公报》（2026-03-26 发布）：2025 年末全市常住人口 3187.26 万人，比上年末**减少** 3.21 万人。https://tjj.cq.gov.cn/zwgk_233/fdzdgknr/tjxx/sjzl_55471/tjgb_55472/202603/t20260326_15568538.html （级别 1，原文直接抓取确认）
+    //   **2025 年公报未单列「主城都市区 21 区县」分项**，能查到的最新仍是 2024 年末 2183.24 万（占 68.43%），故正文如实标注这一分项的年份不同。下次复核可查《重庆统计年鉴 2026》分区县表。发布月份：次年 3 月。
     identity:
-      "Chongqing's mountain terrain became a decisive factor in 1937 — after Nanjing fell, the Nationalist government moved west and chose Chongqing as its wartime capital: the Three Gorges and the Daba and Wu mountains close around it to the east, a natural barrier Japanese ground forces never managed to break through, while the confluence of the Yangtze and Jialing rivers made it the upper Yangtze's shipping hub, useful for pulling in resources and industry from the southwest to sustain the war effort. Today Chongqing is a directly-administered municipality in southwest China; its core urban area holds about 10 million people, with more across the wider municipality. Built on hilly ground where the two rivers meet, its three-dimensional terrain stacks roads, rail and buildings on top of each other, and the night views are distinctive; it is also the traditional start of Yangtze Three Gorges cruises.",
+      "Chongqing's mountain terrain became a decisive factor in 1937 — after Nanjing fell, the Nationalist government moved west and chose Chongqing as its wartime capital: the Three Gorges and the Daba and Wu mountains close around it to the east, a natural barrier Japanese ground forces never managed to break through, while the confluence of the Yangtze and Jialing rivers made it the upper Yangtze's shipping hub, useful for pulling in resources and industry from the southwest to sustain the war effort. Today Chongqing is a directly-administered municipality in southwest China; at the end of 2025 the municipality had about 31.87 million permanent residents; the separate figure for the 21 districts and counties of the Greater Chongqing metropolitan area is only published up to end-2024, at about 21.8 million (Chongqing Municipal Bureau of Statistics). Built on hilly ground where the two rivers meet, its three-dimensional terrain stacks roads, rail and buildings on top of each other, and the night views are distinctive; it is also the traditional start of Yangtze Three Gorges cruises.",
     // howItWorks sources: Wikipedia (2026-09): Chongqing (1997; 82,403 km²; 26 districts + 8 counties + 4 autonomous counties; 2020 census 32 million, urban core ~10 million; monorail)
     howItWorks:
       "Chongqing is a provincial-level municipality under the central government, separated from Sichuan in 1997 and governing about 82,400 km² — the size of Austria — divided into 26 districts, 8 counties and 4 autonomous counties. Of the 32 million people counted in the 2020 census, only about 10 million live in the nine central districts around the meeting of the Yangtze and the Jialing; the rest are spread across a mountainous hinterland as large as a province. The centre is the Yuzhong peninsula between the two rivers, with Jiangbei and Nan'an facing it across the water, crossed by bridges, cable cars and rail lines including one of the longest monorails in the world. This is a city built on mountains: addresses read district, road and number, yet the ground floor of a building may open on the tenth floor of the far side of the slope, and bicycles are of little use. Newcomers most often go wrong by taking 32 million for the population of one city, when 'Chongqing' names both the mountain city and a province-sized region.",
@@ -1152,8 +1158,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   xian: {
+    // identity sources: 《西安市2025年国民经济和社会发展统计公报》（2026-05-15 发布）：2025 年末常住人口 1323.63 万人，增 6.87 万。官网 tjj.xa.gov.cn 确认公报存在且发布于该日，但正文是 PDF 附件未取到文本，数字取自媒体转述，**综合级别 2**。发布月份：次年 5 月。
     identity:
-      "Thirteen dynasties chose the Xi'an area as their capital largely for the security this 'land of four passes' provided — the Guanzhong Plain is ringed by the Hangu Pass to the east, the Wu Pass to the south, the Dasan Pass to the west and the Xiao Pass to the north, four choke points that turn the whole plain into a natural fortress you can seal shut to defend or open to strike out from; the name 'Guanzhong,' meaning 'within the passes,' comes directly from this. Xi'an is the capital of Shaanxi province, with a metropolitan population of about 13 million. It was the capital under several Chinese dynasties — the Zhou, Qin, Han and Tang most importantly — and the eastern end of the Silk Road. Its intact Ming-era city wall, the Terracotta Army and a large number of imperial tombs make it one of the most concentrated places to understand ancient Chinese history.",
+      "Thirteen dynasties chose the Xi'an area as their capital largely for the security this 'land of four passes' provided — the Guanzhong Plain is ringed by the Hangu Pass to the east, the Wu Pass to the south, the Dasan Pass to the west and the Xiao Pass to the north, four choke points that turn the whole plain into a natural fortress you can seal shut to defend or open to strike out from; the name 'Guanzhong,' meaning 'within the passes,' comes directly from this. Xi'an is the capital of Shaanxi province, with a permanent resident population of about 13.24 million at the end of 2025 (Xi'an Municipal Bureau of Statistics). It was the capital under several Chinese dynasties — the Zhou, Qin, Han and Tang most importantly — and the eastern end of the Silk Road. Its intact Ming-era city wall, the Terracotta Army and a large number of imperial tombs make it one of the most concentrated places to understand ancient Chinese history.",
     // howItWorks sources: Wikipedia (2026-09): Xi'an (11 districts + 2 counties; Ming wall 1370, 11.9 km; Xixian New Area 2014; 2020 census 12,952,907)
     howItWorks:
       "Xi'an is a sub-provincial city and the capital of Shaanxi, governing eleven districts and two counties, with about 13 million residents at the 2020 census. The Ming wall completed in 1370, 11.9 km around, still fully encloses the old city, with the Bell Tower at its centre and the ring roads spreading outward. The city has grown southward — Qujiang for culture and tourism, Gaoxin for technology — and the state-level Xixian New Area created in 2014 straddles the ground between Xi'an and Xianyang, administered by Xi'an since 2017. Addresses read district, road and number; Xi'an people speak of 'inside the wall', 'inside the Second Ring', 'the southern suburbs' and 'the northern suburbs', and the metro radiates from the Bell Tower. Newcomers most often go wrong by assuming Xi'an is the ancient city within the walls, when its modern life lies in the southern suburbs beyond them.",
@@ -1170,8 +1177,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   hangzhou: {
+    // identity sources: 《2025年杭州市国民经济和社会发展统计公报》（杭州市统计局与国家统计局杭州调查队联合发布，2026-04-30）：2025 年末常住人口 1270.0 万人，增 7.6 万。数字取自杭州日报/杭州网对公报原文的转载，**级别 2**。https://hznews.hangzhou.com.cn/chengshi/content/2026-04/30/content_9214808.htm 发布月份：次年 4 月底。
     identity:
-      "West Lake was not always a lake — it started as a small bay off the Qiantang River, until silt carried down by the river built up a sandbar across its mouth, sealing the seawater inside off from the river; cut off and gradually diluted by the streams feeding in, it turned into today's freshwater lake over more than ten thousand years. Hangzhou is the capital of Zhejiang province, with a metropolitan population of about 12 million; it was the capital of the Southern Song and the southern end of the Grand Canal, combining lake-and-hill gardens with a modern digital economy as a major tourism and tech city in the Yangtze Delta.",
+      "West Lake was not always a lake — it started as a small bay off the Qiantang River, until silt carried down by the river built up a sandbar across its mouth, sealing the seawater inside off from the river; cut off and gradually diluted by the streams feeding in, it turned into today's freshwater lake over more than ten thousand years. Hangzhou is the capital of Zhejiang province, with a permanent resident population of about 12.70 million at the end of 2025 (Hangzhou Municipal Bureau of Statistics); it was the capital of the Southern Song and the southern end of the Grand Canal, combining lake-and-hill gardens with a modern digital economy as a major tourism and tech city in the Yangtze Delta.",
     // howItWorks sources: Wikipedia (2026-09): Hangzhou (2021: 10 districts, 2 counties, 1 county-level city; 2020 census 11,936,010; Qianjiang New City)
     howItWorks:
       "Hangzhou is a sub-provincial city and the capital of Zhejiang; since the 2021 reorganisation it has ten districts, two counties and one county-level city under one city government. The old city surrounds West Lake in Shangcheng district, but from the 1990s the centre of gravity turned to the Qiantang River: Qianjiang New City on the north bank is the new business district, Binjiang on the south bank the high-tech zone, Yuhang the home of Alibaba's headquarters, and Qiantang district, created in 2021, lies downstream on the north bank. The 2020 census counted about 11.9 million residents, and the metro covers both banks. Addresses read district, road and number, and Hangzhou people take their bearings from West Lake and the Qiantang — 'by the lake', 'by the river', 'the west of town' — with the Grand Canal passing through the north. Newcomers most often go wrong by assuming Hangzhou is the city around West Lake, when its business, technology and population have shifted to the two banks of the Qiantang.",
@@ -1188,8 +1196,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   kunming: {
+    // identity sources: 《2025年昆明市国民经济和社会发展统计公报》（2026-05-21 发布）：2025 年末常住人口 874.4 万人，增 5.7 万。官网 tjj.km.gov.cn 页面确认公报存在，正文为 PDF 未取到文本，数字经两处独立转载交叉核实，**综合级别 2**。发布月份：次年 5 月。
     identity:
-      "Kunming is the capital of Yunnan province, with a metropolitan population of about 8.5 million, at an elevation of roughly 1,900 m. Its mild, weakly-seasonal climate has earned it the name 'spring city'. It is the transport hub and staging point for the rest of Yunnan — Dali, Lijiang, Xishuangbanna, Shangri-La — and a gateway city toward Southeast Asia.",
+      "Kunming is the capital of Yunnan province, with a permanent resident population of about 8.74 million at the end of 2025 (Kunming Municipal Bureau of Statistics), at an elevation of roughly 1,900 m. Its mild, weakly-seasonal climate has earned it the name 'spring city'. It is the transport hub and staging point for the rest of Yunnan — Dali, Lijiang, Xishuangbanna, Shangri-La — and a gateway city toward Southeast Asia.",
     // howItWorks sources: Wikipedia (2026-09): Kunming (7 districts, 1 county-level city, 3 counties, 3 autonomous counties; Chenggong 2011; ~1,900 m; 2020 census 8,460,088)
     howItWorks:
       "Kunming is the capital of Yunnan, governing seven districts, one county-level city, three counties and three autonomous counties, with about 8.46 million residents at the 2020 census. The city stands on the plateau at about 1,900 m on the northern shore of Dian Lake; the old city lies in Wuhua and Panlong, but in the 2010s the city government and several universities moved to Chenggong new district in the south-east, and the city now stretches south along the lake's eastern shore. Addresses read district, road and number, Kunming people speak of 'the main city', 'Chenggong' and the direction of the lake, and the metro links the old city with Chenggong and the airport. Newcomers most often go wrong by assuming the centre is still the old city around Green Lake, when the city government and the university town lie tens of kilometres away in Chenggong.",
@@ -1206,8 +1215,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   guilin: {
+    // identity sources: 《2025年桂林市国民经济和社会发展统计公报》（2026-06-18 发布）：2025 年末常住人口 490.86 万人，比上年末**减少** 2.98 万人。guilin.gov.cn 本轮多次抓取超时，数字取自公报转载，**级别 2**。发布月份：次年 6 月。
     identity:
-      "Guilin, in northeastern Guangxi, is a tourism city famous for its karst scenery, with an urban population of about 1.3 million. The limestone pinnacle clusters rising from the banks of the Li River are one of China's most iconic natural landscapes. The city itself is small and largely built around tourism.",
+      "Guilin, in northeastern Guangxi, is a tourism city famous for its karst scenery, with a citywide permanent resident population of about 4.91 million at the end of 2025 (Guilin Municipal Bureau of Statistics). The limestone pinnacle clusters rising from the banks of the Li River are one of China's most iconic natural landscapes. The city itself is small and largely built around tourism.",
     // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 桂林市（地级市；6区1县级市8县2自治县；27,667 km²；2020 普查 493 万；阳朔/龙胜/兴安分属各县；两江机场在临桂）
     howItWorks:
       "Guilin is a prefecture-level city of Guangxi covering about 28,000 km² with about 4.93 million people in 2020 across seventeen counties and districts, its government moved to Lingui district after 2013. The old town lies between the Li and Taohua rivers, with Xiangshan as the centre. Newcomers most often go wrong by taking the 'Guilin landscape' for city scenery, when the best of the Li River is in Yangshuo county, the terraces in Longsheng and the Lingqu canal in Xing'an, all tens of kilometres away.",
@@ -1224,8 +1234,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   nanjing: {
+    // identity sources: 《南京市2025年国民经济和社会发展统计公报》（2026-04-03 发布）：2025 年末常住人口 963.85 万人，增 6.15 万。官网 tjj.nanjing.gov.cn 确认公报存在，正文为 docx 未取到文本，数字取自财经媒体转述，**综合级别 2**。发布月份：次年 4 月初。
     identity:
-      "\"Purple Mountain coils like a dragon, Stone Mountain crouches like a tiger\" is an old line traditionally used to describe Nanjing's terrain: Purple Mountain winds along the city's east side like a dragon at rest, Stone Mountain guards the riverbank to the west like a crouching tiger, and the Yangtze itself blocks the north — a naturally defensible site that was a key reason Sun Quan founded his capital here in 229 CE, opening Nanjing's history as the \"capital of six dynasties.\" Nanjing is the capital of Jiangsu and one of the main cities of the lower Yangtze, with a metropolitan population of about 9 million; it went on to serve as the capital under several further dynasties, and long stretches of Ming-era city wall, several imperial tombs and Republican-era buildings give it a deep historical layering. It is an industrial and academic centre and an important transport hub for eastern China.",
+      "\"Purple Mountain coils like a dragon, Stone Mountain crouches like a tiger\" is an old line traditionally used to describe Nanjing's terrain: Purple Mountain winds along the city's east side like a dragon at rest, Stone Mountain guards the riverbank to the west like a crouching tiger, and the Yangtze itself blocks the north — a naturally defensible site that was a key reason Sun Quan founded his capital here in 229 CE, opening Nanjing's history as the \"capital of six dynasties.\" Nanjing is the capital of Jiangsu and one of the main cities of the lower Yangtze, with a permanent resident population of about 9.64 million at the end of 2025 (Nanjing Municipal Bureau of Statistics); it went on to serve as the capital under several further dynasties, and long stretches of Ming-era city wall, several imperial tombs and Republican-era buildings give it a deep historical layering. It is an industrial and academic centre and an important transport hub for eastern China.",
     // howItWorks sources: Wikipedia (2026-09): Nanjing (11 districts; Ming wall; Hexi; Jiangbei New Area 2015; 2020 census 9,341,685)
     howItWorks:
       "Nanjing is a sub-provincial city and the capital of Jiangsu, governing eleven districts, with about 9.3 million residents at the 2020 census. The Ming city wall still encloses the old city, with Xinjiekou at its heart; from the 1990s the city first crossed the wall westward to Hexi, the new business district by the Yangtze, and then in 2015 created the state-level Jiangbei New Area, carrying the city across the river. Purple Mountain lies against the east side of the old city, and Jiangning and Pukou extend south and north. Addresses read district, road and number, and Nanjing people distinguish inside and outside the wall, Hexi and Jiangbei, with the metro joining both banks. Newcomers most often go wrong by assuming Nanjing lies within its walls, when its new centres have long stood outside them.",
@@ -1242,8 +1253,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   sanya: {
+    // identity sources: 三亚市统计局：2025 年末全市常住人口 113.60 万人，增 1.99 万，居全省市县第二。三亚的来源链条比其他城市绕一层——3 月发布的 2025 年公报本体未提新人口数，这个数字是 2026-07-02 经市政府网站转载媒体报道传出的，**级别 2**。https://lwj.sanya.gov.cn/wljsite/gzdt/202607/64813aabf4554aeaad53a9a779b8a23b.shtml 发布月份：公报本体 3 月，人口数似另有 7 月批次。
     identity:
-      "Sanya is at the southern tip of Hainan Island and is China's main tropical beach resort city, with a resident population of about 1 million and a large influx of visitors in winter. Its draw is the year-round warm climate, the bay beaches and the cluster of resort hotels, and the city functions almost entirely around tourism and holidays.",
+      "Sanya is at the southern tip of Hainan Island and is China's main tropical beach resort city, with a permanent resident population of about 1.14 million at the end of 2025 (Sanya Municipal Bureau of Statistics) and a large influx of visitors in winter. Its draw is the year-round warm climate, the bay beaches and the cluster of resort hotels, and the city functions almost entirely around tourism and holidays.",
     // howItWorks sources: zh.wikipedia (2026-09, Tier B short): 三亚市（海南省地级市；4 区；1,920 km²；2020 普查 103 万，黎族 23.65%；各湾分属吉阳/海棠/天涯/崖州区）
     howItWorks:
       "Sanya is a prefecture-level city of Hainan covering about 1,920 km² in four districts — Jiyang, Tianya, Haitang and Yazhou — with about 1.03 million people in 2020, a quarter of them Li. The centre lies on the Sanya River and Dadonghai in Jiyang district; Yalong Bay is in Jiyang, Haitang Bay in Haitang, Tianya Haijiao and Nanshan in Tianya and Yazhou, the bays twenty to thirty kilometres apart. Newcomers most often go wrong by picturing Sanya as one continuous beach, when it is a string of bays divided by hills, and where you stay is where you are.",
@@ -1278,8 +1290,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   harbin: {
+    // identity sources: 《2024年哈尔滨市国民经济和社会发展统计公报》：2024 年末全市常住人口 985.8 万人。哈尔滨市人民政府官网 PDF 链接存在但抓取失败，数字取自公报转载库并与另一独立检索结果一致，**来源级别 2**。
+    //   **本批偏差最大的一条**：原文 550 万只有实际的 56%，疑似沿用了哈尔滨 2018 年市辖区（不含五县）人口约 550.9 万，被误标成「都会区」。核实日 2026-09-07
     identity:
-      "Harbin's rise began with a siting decision — when Tsarist Russia built the Chinese Eastern Railway in 1896, the junction station was chosen between Harbin and the upstream town of Bodune, and Harbin won out because its stretch of the Songhua River was wide enough for the large barges needed to bring in construction material; a fishing village on the riverbank shot up into a modern city within a few years. Harbin is the capital of Heilongjiang and the main city of the northern north-east, with a metropolitan population of about 5.5 million; the foreign, mostly Russian, community that poured in during its early decades left blocks of European-style architecture and the nickname \"the Oriental Moscow.\" Winters are severe, and it is the leading city for ice-and-snow tourism in China.",
+      "Harbin's rise began with a siting decision — when Tsarist Russia built the Chinese Eastern Railway in 1896, the junction station was chosen between Harbin and the upstream town of Bodune, and Harbin won out because its stretch of the Songhua River was wide enough for the large barges needed to bring in construction material; a fishing village on the riverbank shot up into a modern city within a few years. Harbin is the capital of Heilongjiang and the main city of the northern north-east, with a permanent resident population of about 9.9 million at the end of 2024 (Harbin Municipal Bureau of Statistics); the foreign, mostly Russian, community that poured in during its early decades left blocks of European-style architecture and the nickname \"the Oriental Moscow.\" Winters are severe, and it is the leading city for ice-and-snow tourism in China.",
     // howItWorks sources: Wikipedia (2026-09): Harbin (9 districts, 2 county-level cities, 7 counties; 53,068 km²; Songbei seat; 2020 census 10,009,854 / urban 6,976,136)
     howItWorks:
       "Harbin is a sub-provincial city and the capital of Heilongjiang, governing nine districts, two county-level cities and seven counties over about 53,000 km²; the 2020 census counted about 10 million people in the whole city and about 7 million in the urban area. The Songhua River divides it: Daoli, Nangang and Daowai on the south bank make up the old city of Central Street and Russian architecture, while Songbei on the north bank, where the city government has moved, is the new administrative district. Addresses read district, road and number, Harbin people speak first of 'south of the river' or 'north of the river' and only then of a district, and the metro crosses beneath the water. Newcomers most often go wrong by taking 10 million for the urban population, when a third of it lives in counties and county-level cities a hundred kilometres from the city.",
@@ -1296,8 +1310,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   qingdao: {
+    // identity sources: 《2025年青岛市国民经济和社会发展统计公报》（2026-04-08 发布）：2025 年末常住人口 1051.55 万人，增 7.30 万。qdtj.qingdao.gov.cn 直接抓取因证书主机名不匹配失败，数字经两次独立快照交叉确认，**综合级别 2**。发布月份：次年 4 月初。
     identity:
-      "Qingdao's blocks of European architecture trace back to Jiaozhou Bay — one of the few natural deep-water harbours in North China, which Germany's East Asia fleet commander scouted and pushed hard to seize after an 1896 inspection; the 1897 killing of two German missionaries became the pretext for occupation, and by 1898 Germany had forced a 99-year lease out of the Qing government, turning Qingdao into its bridgehead in East Asia. Qingdao, on the southern coast of the Shandong Peninsula, is an important port and seaside city with a metropolitan population of about 7 million; a later period of Japanese occupation followed, and together the red-roofed European-style buildings left in the old town, the bays, the beer and the seafood give the city a distinct character.",
+      "Qingdao's blocks of European architecture trace back to Jiaozhou Bay — one of the few natural deep-water harbours in North China, which Germany's East Asia fleet commander scouted and pushed hard to seize after an 1896 inspection; the 1897 killing of two German missionaries became the pretext for occupation, and by 1898 Germany had forced a 99-year lease out of the Qing government, turning Qingdao into its bridgehead in East Asia. Qingdao, on the southern coast of the Shandong Peninsula, is an important port and seaside city with a permanent resident population of about 10.52 million at the end of 2025 (Qingdao Municipal Bureau of Statistics); a later period of Japanese occupation followed, and together the red-roofed European-style buildings left in the old town, the bays, the beer and the seafood give the city a distinct character.",
     // howItWorks sources: Wikipedia (2026-09): Qingdao (7 districts + 3 county-level cities; Shinan old town; West Coast New Area 2014; bay bridge 2011; 2020 census ~10 million)
     howItWorks:
       "Qingdao is a sub-provincial city with independent planning status, governing seven districts and three county-level cities, with about 10 million residents at the 2020 census. The old town built under German rule between 1898 and 1914 sits on the peninsula of Shinan district jutting into Jiaozhou Bay; since then the business centre has moved steadily east, to the eastern shore of Shinan and to Laoshan. Jiaozhou Bay separates the old city from the West Coast New Area on the far shore, a state-level new area created in 2014, joined to it by the bay bridge opened in 2011 and an undersea tunnel. Addresses read district, road and number, Qingdao people speak of 'the east' and 'the west', 'the city' and 'the West Coast', and the metro follows the coastline. Newcomers most often go wrong by taking the old town around the Zhanqiao pier for the whole of Qingdao, when the city's centre has moved east and half of it lies across the bay.",
@@ -1493,8 +1508,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   tianjin: {
+    // identity sources: 《2025年天津市国民经济和社会发展统计公报》（2026-03-23 发布）：2025 年末常住人口 1363 万人（天津公报历来只给整数）。https://www.tj.gov.cn/sq/tjgb/202603/t20260327_7271193.html （级别 1，原文直接抓取确认）。发布月份：次年 3 月。
     identity:
-      "Tianjin is a municipality in North China, a port city on the western shore of Bohai Bay, with an urban population of about 11 million. It grew up on the Grand Canal and the Hai River as a major industrial and port hub for the north, and blocks of Western architecture survive from the concession era; the local street culture is strong in xiangsheng (crosstalk) and clapper-talk.",
+      "Tianjin is a municipality in North China, a port city on the western shore of Bohai Bay, with a citywide permanent resident population of about 13.63 million at the end of 2025 (Tianjin Municipal Bureau of Statistics). It grew up on the Grand Canal and the Hai River as a major industrial and port hub for the north, and blocks of Western architecture survive from the concession era; the local street culture is strong in xiangsheng (crosstalk) and clapper-talk.",
     // howItWorks sources: Wikipedia (2026-09): Tianjin (16 districts; Binhai New Area 2,270 km²; 2020 census 13,866,009; Beijing–Tianjin intercity)
     howItWorks:
       "Tianjin is a provincial-level municipality under the central government, its sixteen districts under one city government. Heping, Hedong, Hexi, Nankai, Hebei and Hongqiao, the six core districts, line the Hai River, and the concessions granted to Britain, France, Japan, Germany, Russia and others after 1895 survive as the Five Avenues and the Italian-style quarter; some 45 km to the east lies Binhai New Area, a state-level new area of about 2,270 km² holding the port of Tanggu and the development zones, with 2.3 million people already in 2010 — the city's second core. Addresses read district, road and number, and Tianjin people mark out their world by the two banks of the Hai River and by 'town' versus 'Binhai'. The 2020 census counted about 13.9 million residents, and the Beijing–Tianjin intercity railway brings the two cities within half an hour of each other. Newcomers most often go wrong by taking Binhai New Area for a district of the centre, when it is a separate city in its own right down the river.",
@@ -1511,8 +1527,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   shijiazhuang: {
+    // identity sources: 《石家庄市2025年国民经济和社会发展统计公报》（落款 2026-05-25，发布 2026-05-26）：2025 年末常住人口 1124.69 万人，比上年末仅增 0.03 万，口径明确含代管的辛集市，与旧口径一致。https://www.sjz.gov.cn/columns/3b027198-9da1-4d9f-90e5-278a79356d57/202605/26/ef0e7319-722e-4588-ad83-82a69809b9b7.html （级别 1，原文直接抓取确认）。发布月份：次年 5 月底。
     identity:
-      "Shijiazhuang is the capital of Hebei, a transport-hub city on the North China Plain, with an urban population of about 5 million. It rose quickly where the Beijing–Hankou and Zhengtai railways crossed, so its history is not long, but it sits where the Taihang Mountains meet the plain and is the gateway to Hebei's mountain scenery.",
+      "Shijiazhuang is the capital of Hebei, a transport-hub city on the North China Plain, with a citywide permanent resident population of about 11.25 million at the end of 2025 (Shijiazhuang Municipal Bureau of Statistics). It rose quickly where the Beijing–Hankou and Zhengtai railways crossed, so its history is not long, but it sits where the Taihang Mountains meet the plain and is the gateway to Hebei's mountain scenery.",
     // howItWorks sources: Wikipedia (2026-09): Shijiazhuang (8 districts, 11 counties, 3 county-level cities; railway 1905/1907; capital 1968; 2020 census 11,235,086)
     howItWorks:
       "Shijiazhuang is the capital of Hebei, governing eight districts, eleven counties and three county-level cities, with about 11.2 million residents at the 2020 census and about 6.2 million in the urban area. It is a city that grew out of a railway: the Beijing–Hankou line reached this village in 1905 and the Shijiazhuang–Taiyuan line in 1907, it became the provincial capital in 1968, and its streets run in a north–south grid like Beijing's. Zhengding on the north bank of the Hutuo River is the ancient city, with the airport on that side too. Addresses read district, road and number, locals take their bearings from the railway station and Zhongshan Road, and three metro lines join the urban districts. Newcomers most often go wrong by expecting a provincial capital to have an old town, when Shijiazhuang's ancient city is Zhengding across the river and the city itself is barely a century old.",
@@ -1529,8 +1546,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   taiyuan: {
+    // identity sources: 太原市统计局《太原市2025年国民经济和社会发展统计公报》（2026-05-08 发布）：2025 年末全市常住人口 5,526,060 人。https://stats.taiyuan.gov.cn/tjgb/20260508/30297226.html
+    //   官网页面确认了公报标题与发布日期，但正文数字是图片，精确到个位的 5,526,060 取自媒体对公报的转述，**综合定为级别 2**。发布月份：次年 5 月。
     identity:
-      "Taiyuan is the capital of Shanxi, an old industrial city in the Fen River valley, with an urban population of about 4 million. It has more than 2,500 years of history — the walled city of Jinyang was founded in 497 BCE by Dong Anyu, a retainer of the noble Zhao Jianzi — and served as a dynastic capital nine times over its history, earning it the nickname \"the nine-dynasty capital.\" A long-standing northern military town, with the Jinci temple complex nearby and Pingyao, Datong and Mount Wutai not far off, Taiyuan is the base for a tour of Shanxi's historic architecture and relics.",
+      "Taiyuan is the capital of Shanxi, an old industrial city in the Fen River valley, with a citywide permanent resident population of about 5.53 million at the end of 2025 (Taiyuan Municipal Bureau of Statistics). It has more than 2,500 years of history — the walled city of Jinyang was founded in 497 BCE by Dong Anyu, a retainer of the noble Zhao Jianzi — and served as a dynastic capital nine times over its history, earning it the nickname \"the nine-dynasty capital.\" A long-standing northern military town, with the Jinci temple complex nearby and Pingyao, Datong and Mount Wutai not far off, Taiyuan is the base for a tour of Shanxi's historic architecture and relics.",
     // howItWorks sources: Wikipedia (2026-09): Taiyuan (6 districts, 3 counties, 1 county-level city; Fen river; 2020 census 5,305,061; metro Line 2 2020, Line 1 2025)
     howItWorks:
       "Taiyuan is the capital of Shanxi, governing six districts, three counties and one county-level city, with about 5.3 million residents at the 2020 census and about 4.5 million in the six urban districts. The Fen River runs north–south through the middle, dividing the city into two banks: Yingze and Xinghualing hold the old city and the commercial centre, while the city government and the new business district have moved south to Xiaodian, and the city stretches south along the river. Addresses read district, road and number, Taiyuan people speak of 'east of the river', 'west of the river', 'the south' and 'the old city', and metro Line 2 opened in 2020 with Line 1 following in 2025. Taiyuan is a city of coal and energy, home to the coal trading centre operating since 2012. Newcomers most often go wrong by assuming the centre is still the railway station and Yingze Street, when the administration and the new town lie to the south around Changfeng.",
@@ -1547,8 +1566,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   hohhot: {
+    // identity sources: 《呼和浩特市2025年国民经济和社会发展统计公报》：2025 年末全市常住人口 366.1 万人（较上年增 2.2 万），城镇化率 82.4%。http://www.yuquan.gov.cn/zfxxgkpt/fdzdgknr/tjxxnew/tjgb/202605/t20260525_2008049.html （玉泉区政府门户转发市统计局公报全文，级别 1）。发布月份：次年 5 月。
     identity:
-      "Hohhot is the capital of the Inner Mongolia Autonomous Region, a city on the Tumochuan plain at the southern foot of the Yin Mountains, with an urban population of about 3.5 million. It is the gateway from North China to the Mongolian Plateau; the name means \"blue-green city\" in Mongolian, the city has clusters of Tibetan Buddhist temples, and grassland begins not far outside it.",
+      "Hohhot is the capital of the Inner Mongolia Autonomous Region, a city on the Tumochuan plain at the southern foot of the Yin Mountains, with a citywide permanent resident population of about 3.66 million at the end of 2025 (Hohhot Municipal Bureau of Statistics). It is the gateway from North China to the Mongolian Plateau; the name means \"blue-green city\" in Mongolian, the city has clusters of Tibetan Buddhist temples, and grassland begins not far outside it.",
     // howItWorks sources: Wikipedia (2026-09): Hohhot (4 districts, 4 counties, 1 banner; bilingual signage; 2020 census 3,446,100; no metro)
     howItWorks:
       "Hohhot is the capital of the Inner Mongolia Autonomous Region, governing four districts, four counties and one banner, with about 3.45 million residents at the 2020 census. The city divides into old and new: Yuquan and Huimin districts hold the old town of Guihua with the Dazhao Temple, while Xincheng and Saihan are the new districts that spread east from the 1990s, holding the city government and the business district. By regulation, street signs and public-transport announcements are in both Mongolian and Chinese. Addresses read district, road and number, locals speak of 'the old town', 'the new town' and 'the east', and with no metro the city relies on buses and expressways. Newcomers most often go wrong by assuming Hohhot is the old town around the Dazhao Temple, when its administrative and commercial centre lies in the new districts to the east.",
@@ -1565,8 +1585,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   shenyang: {
+    // identity sources: 沈阳市统计局与国家统计局沈阳调查队《2025年沈阳市国民经济和社会发展统计公报》（2026-05-19 发布）：2025 年末常住人口 927.6 万人（较上年增 3.3 万），城镇化率 85.87%。https://www.shenyang.gov.cn/zwgk/fdzdgknr/tjxx/tjgb/202605/t20260519_5027959.html （级别 1）。发布月份：次年 5 月。
     identity:
-      "Shenyang is the capital of Liaoning and one of the largest cities in the north-east, with an urban population of about 7 million. It sits in the southern part of the Northeast Plain, was the capital of the Qing dynasty before it moved south of the Great Wall, and has since been a centre of heavy industry, so a palace, imperial tombs and a large industrial heritage exist side by side.",
+      "Shenyang is the capital of Liaoning and one of the largest cities in the north-east, with a citywide permanent resident population of about 9.28 million at the end of 2025 (Shenyang Municipal Bureau of Statistics). It sits in the southern part of the Northeast Plain, was the capital of the Qing dynasty before it moved south of the Great Wall, and has since been a centre of heavy industry, so a palace, imperial tombs and a large industrial heritage exist side by side.",
     // howItWorks sources: Wikipedia (2026-09): Shenyang (10 districts, 1 county-level city, 2 counties; Hunnan seat; 2020 census 9,070,093)
     howItWorks:
       "Shenyang is a sub-provincial city and the capital of Liaoning, governing ten districts, one county-level city and two counties, with about 9.07 million residents at the 2020 census. The old city surrounds the Mukden Palace in Shenhe district, the railway-station area of Heping is the traditional commercial centre, and Tiexi was the heavy-industry district of the early People's Republic; the Hun River divides the city north from south, and the city government has moved to Hunnan on the south bank, the new administrative and technology centre. Addresses read district, road and number, Shenyang people place a neighbourhood by the river's two banks and by district names such as Tiexi and Hunnan, and the metro joins the banks. Fushun to the east has all but merged with the city. Newcomers most often go wrong by assuming the centre still lies between the palace and the station, when the administrative heart has crossed the river.",
@@ -1583,8 +1604,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   changchun: {
+    // identity sources: 长春市统计局《长春市2025年国民经济和社会发展统计公报》（2026-05-09 发布）：2025 年末全市总人口 910.50 万人，城镇常住人口 629.65 万人。官网 tjj.changchun.gov.cn 本轮多次 SSL 握手失败无法读取正文，数字取自公报转载库，**级别 2**。http://tjj.changchun.gov.cn/tjgb/202605/t20260509_3486019.html
+    //   注意长春公报沿用「总人口」而非「常住人口」表述，正文照其口径写。发布月份：次年 5 月。
     identity:
-      "Changchun's wide streets and many roundabouts today are a leftover of 1930s planning — Manchukuo chose Changchun as its capital, \"Xinjing,\" partly because it already sat on the Chinese Eastern Railway with good transport links, and partly because land was cheap enough to plan on a large scale; the road network copied Paris's radial-and-ring layout, with plazas and roundabouts at key junctions to disperse traffic, turning a town of little more than 100,000 people into a fully infrastructured city within a few years. Changchun is the capital of Jilin, a city on the Song–Liao plain in the centre of the north-east, with an urban population of about 4.5 million; it is known today for its car industry and film studio, keeps a number of early-20th-century buildings, and is one of the transfer cities on the way to Changbai Shan.",
+      "Changchun's wide streets and many roundabouts today are a leftover of 1930s planning — Manchukuo chose Changchun as its capital, \"Xinjing,\" partly because it already sat on the Chinese Eastern Railway with good transport links, and partly because land was cheap enough to plan on a large scale; the road network copied Paris's radial-and-ring layout, with plazas and roundabouts at key junctions to disperse traffic, turning a town of little more than 100,000 people into a fully infrastructured city within a few years. Changchun is the capital of Jilin, a city on the Song–Liao plain in the centre of the north-east, with a citywide total population of about 9.11 million at the end of 2025 (Changchun Municipal Bureau of Statistics); it is known today for its car industry and film studio, keeps a number of early-20th-century buildings, and is one of the transfer cities on the way to Changbai Shan.",
     // howItWorks sources: Wikipedia (2026-09): Changchun (7 districts, 3 county-level cities, 1 county; 1930s radial plan; FAW; 2020 census 9,066,906)
     howItWorks:
       "Changchun is a sub-provincial city and the capital of Jilin, governing seven districts, three county-level cities and one county, with about 9.07 million residents at the 2020 census and about 5.7 million in the urban area. The skeleton of the city is the radial grid planned in the 1930s: boulevards fan out from the railway-station square through the circular People's Square and Culture Square; the automobile city in the south-west is the home of First Automobile Works, and the city stretches south to Jingyue and the Nanguan new areas. Addresses read district, road and number, Changchun people speak of 'the south', 'the automobile city' and 'Jingyue', and light rail and metro join the districts. Newcomers most often go wrong by taking Changchun for a mere industrial town, when its layout is among the best-preserved planned cities of modern China.",
@@ -1601,8 +1624,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   nanchang: {
+    // identity sources: 南昌市统计局：2024 年末全市常住人口 667.04 万人。https://tjj.nc.gov.cn/ncstjj/tjgb/202504/9c9970f1d6a8479993281c7fca862881.shtml
+    //   **2025 年末数字截至 2026-09-07 仍未公布**——这是反常的：南昌历年在次年 2 月下旬即单列公布人口数据（2024 年数于 2025-02-22 公布），而其余省会城市的 2025 年数普遍已在 2026 年 4—6 月发布，本地媒体也在讨论「南昌 2025 人口增量为何还没公布」。按红线不补数字，正文如实注明尚未公布。下次回访：随时可试，若仍无则 11—12 月大概率补发。
     identity:
-      "Nanchang is the capital of Jiangxi, a city on the lower Gan River and the Poyang Lake plain, with an urban population of about 4 million. It is a historic city — home to the Tengwang Pavilion — and the hub for Lushan, Wuyuan, Jinggangshan and Jingdezhen.",
+      "Nanchang is the capital of Jiangxi, a city on the lower Gan River and the Poyang Lake plain, with a citywide permanent resident population of about 6.67 million at the end of 2024 (Nanchang Municipal Bureau of Statistics); the 2025 year-end figure has not yet been published. It is a historic city — home to the Tengwang Pavilion — and the hub for Lushan, Wuyuan, Jinggangshan and Jingdezhen.",
     // howItWorks sources: Wikipedia (2026-09): Nanchang (6 districts, 3 counties; Gan river; Honggutan seat; 2020 census 6,255,007)
     howItWorks:
       "Nanchang is the capital of Jiangxi, governing six districts and three counties, with about 6.26 million residents at the 2020 census and about 5.4 million in the urban area. The Gan River divides the city: Donghu and Xihu on the east bank form the old city, with the Tengwang Pavilion by the river, while Honggutan New District on the west bank, built since the 2000s, holds the city government and the business district that moved there. Addresses read district, road and number, Nanchang people speak of 'the old city' and 'Honggutan', and the metro crosses the river. Newcomers most often go wrong by assuming the centre is still the old city on the pavilion's side, when the administration and business district lie across the river in Honggutan.",
@@ -1619,8 +1644,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   hefei: {
+    // identity sources: 合肥市统计局《合肥市2025年末分县（市）区常住人口情况》（2026-06-15 发布）：2025 年末常住人口 1000.5 万人，较 2024 年末仅增 0.3 万（2023 年增 21.9 万、2024 年增 14.9 万）。tjj.hefei.gov.cn 本轮 DNS 解析失败无法直达，数字由三家独立转述交叉印证，**级别 2**，建议后续补一次官网直核。https://finance.sina.com.cn/wm/2026-06-19/doc-inicwxnz4992503.shtml 发布月份：次年 6 月。
     identity:
-      "Hefei's reputation for science and education traces back to a hurried wartime evacuation — in 1969 the University of Science and Technology of China was ordered out of Beijing, first relocating to Nanyang in Henan and then to Anqing in Anhui, neither of which could support it under such basic conditions; it finally settled in Hefei in 1970, having lost most of its library and equipment along the way and left with fewer than a hundred faculty, essentially starting over from scratch. That is how a top university put down roots in what was then an unremarkable town between the Yangtze and Huai rivers. Hefei is the capital of Anhui, on the northern shore of Lake Chao, with an urban population of about 5 million; it is now known for science, education and manufacturing, and is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
+      "Hefei's reputation for science and education traces back to a hurried wartime evacuation — in 1969 the University of Science and Technology of China was ordered out of Beijing, first relocating to Nanyang in Henan and then to Anqing in Anhui, neither of which could support it under such basic conditions; it finally settled in Hefei in 1970, having lost most of its library and equipment along the way and left with fewer than a hundred faculty, essentially starting over from scratch. That is how a top university put down roots in what was then an unremarkable town between the Yangtze and Huai rivers. Hefei is the capital of Anhui, on the northern shore of Lake Chao, with a citywide permanent resident population of about 10.005 million at the end of 2025 (Hefei Municipal Bureau of Statistics); it is now known for science, education and manufacturing, and is also the transfer point for Huangshan, Jiuhuashan and the villages of Hongcun.",
     // howItWorks sources: Wikipedia (2026-09): Hefei (4 districts, 1 county-level city, 4 counties; Binhu New District; 2020 census ~5.06 million city / 7.75 million metro; USTC)
     howItWorks:
       "Hefei is the capital of Anhui, governing four districts, one county-level city and four counties, and since absorbing Chaohu in 2011 it holds the whole of Chao Lake within its bounds; the 2020 census counted about 5.06 million in the city proper and about 7.75 million in all. The old city lies in Luyang around the ring park; from the 2000s the city government moved south to Binhu New District on the lakeshore, and the city has stretched along that southern axis to the water. Hefei is home to the University of Science and Technology of China and styles itself a city of science. Addresses read district, road and number, locals speak of 'the old city', 'the government district' and 'Binhu', and the metro links north and south. Newcomers most often go wrong by assuming the centre is still the old city inside the ring park, when the government and the new business district lie tens of kilometres away by the lake.",
@@ -1637,8 +1663,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   xiamen: {
+    // identity sources: 厦门市统计局与国家统计局厦门调查队《2025年厦门市国民经济和社会发展统计公报》：2025 年末常住人口 536.50 万人，城镇化率 91.31%。https://tjj.xm.gov.cn/zfxxgk/zfxxgkml/tjsjzl/ndgb/202603/t20260325_2991064.htm （级别 1）。发布月份：次年 3—4 月。
     identity:
-      "Xiamen is a city on the south-east coast of Fujian, made up of Xiamen Island and several mainland districts, with a resident population of about 5 million. It is known for its islands, the old villas of Gulangyu, its tidy streets and its relaxed pace, and is the gateway to travel in Fujian, near the tulou earth buildings and Wuyishan.",
+      "Xiamen is a city on the south-east coast of Fujian, made up of Xiamen Island and several mainland districts, with a permanent resident population of about 5.365 million at the end of 2025 (Xiamen Municipal Bureau of Statistics). It is known for its islands, the old villas of Gulangyu, its tidy streets and its relaxed pace, and is the gateway to travel in Fujian, near the tulou earth buildings and Wuyishan.",
     // howItWorks sources: Wikipedia (2026-09): Xiamen (6 districts; island Siming/Huli vs mainland; SEZ 1980s; 2020 census 5,163,970)
     howItWorks:
       "Xiamen is a sub-provincial city with independent planning status, governing six districts, with about 5.16 million residents at the 2020 census. The city divides into the island and the mainland: Siming and Huli on Xiamen Island hold the old city and the centre, with Gulangyu under Siming, while Jimei, Haicang, Tong'an and Xiang'an lie on the mainland, joined to the island by bridges and an undersea tunnel. Xiamen was one of the first four special economic zones of the early 1980s. Addresses read district, road and number, Xiamen people speak of 'on the island' and 'off the island', and the metro crosses the water. Hokkien and Mandarin are both spoken. Newcomers most often go wrong by assuming Xiamen is Xiamen Island, when most of its land and its new population lie on the mainland.",
@@ -1655,8 +1682,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   zhengzhou: {
+    // identity sources: 郑州市统计局与国家统计局郑州调查队（2026-04 发布）：2025 年末常住人口 1313.8 万人，较上年增 5.2 万，总量与增量均居河南省首位。https://www.zhengzhou.gov.cn/news1/10084868.jhtml （级别 1）。发布月份：次年 4 月。
     identity:
-      "Zhengzhou is the capital of Henan, a railway-hub city on the North China Plain south of the Yellow River, with an urban population of about 7 million. It grew up where the Beijing–Hankou and Longhai railways crossed and is young in itself, but the area around it is the heartland of early Chinese civilisation — Songshan and the Shaolin Temple, Kaifeng and Luoyang are all within an hour by high-speed rail.",
+      "Zhengzhou is the capital of Henan, a railway-hub city on the North China Plain south of the Yellow River, with a citywide permanent resident population of about 13.14 million at the end of 2025 (Zhengzhou Municipal Bureau of Statistics). It grew up where the Beijing–Hankou and Longhai railways crossed and is young in itself, but the area around it is the heartland of early Chinese civilisation — Songshan and the Shaolin Temple, Kaifeng and Luoyang are all within an hour by high-speed rail.",
     // howItWorks sources: Wikipedia (2026-09): Zhengzhou (6 districts, 5 county-level cities, 1 county; Zhengdong New District 2003; 2020 census 12.6 million; national central city 2017)
     howItWorks:
       "Zhengzhou is the capital of Henan, governing six districts, one county and five county-level cities, with about 12.6 million residents at the 2020 census and named one of China's national central cities in 2017. The old centre is Erqi Square; Zhengdong New District, built from 2003 to a plan by Kisho Kurokawa, lies to the east with a ring-shaped business district that is the new financial centre; and the Airport Economy Zone to the south-east has grown into a third urban area around the airport. Zhengzhou is a city that grew from a railway junction, where the Beijing–Guangzhou and Longhai trunk lines cross. Addresses read district, road and number, locals speak of 'the old city', 'Zhengdong' and 'the port zone', and the metro joins the three. Newcomers most often go wrong by taking the area around Erqi Square for the whole of Zhengzhou, when its finance and new town lie in Zhengdong and its airport city in the south-east.",
@@ -1673,8 +1701,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   wuhan: {
+    // identity sources: 武汉市统计局与国家统计局武汉调查队《2025年武汉市国民经济和社会发展统计公报》（2026-04-09 发布）：2025 年末常住人口 1386.19 万人，城镇化率 85.22%。https://tjj.wuhan.gov.cn/tjfw/tjgb/202604/t20260408_2750693.shtml （级别 1，官网原文直接抓取确认）。发布月份：次年 4 月。
     identity:
-      "Wuhan is the capital of Hubei, a very large city where the Yangtze meets the Han River, with an urban population of about 9 million. It is made up of the \"three towns\" of Wuchang, Hankou and Hanyang across the water, and is the transport, industrial and educational centre of central China and the hub of the middle Yangtze.",
+      "Wuhan is the capital of Hubei, a very large city where the Yangtze meets the Han River, with a citywide permanent resident population of about 13.86 million at the end of 2025 (Wuhan Municipal Bureau of Statistics). It is made up of the \"three towns\" of Wuchang, Hankou and Hanyang across the water, and is the transport, industrial and educational centre of central China and the hub of the middle Yangtze.",
     // howItWorks sources: Wikipedia (2026-09): Wuhan (13 districts; three towns merged 1927; Optics Valley; East Lake 33 km²; 2022 pop 13.74 million)
     howItWorks:
       "Wuhan is a sub-provincial city and the capital of Hubei, governing thirteen districts, with about 13.7 million residents in 2022. It was made from three once-separate cities — Hankou the trading port, Wuchang the seat of government and universities, Hanyang the old industrial quarter — merged in 1927, yet the Yangtze and the Han still keep the three towns apart. In the east, the Donghu high-tech zone known as Optics Valley is the new technology centre, and East Lake, about 33 km², is the largest lake in the city. A dozen bridges and tunnels join the three towns, the Yangtze River Bridge the first of them; locals name 'Hankou', 'Wuchang' or 'Hanyang' before they name a district. Addresses read district, road and number. Newcomers most often go wrong by taking the three towns for one continuous centre, when 'crossing the river' is the greatest distance in Wuhan's daily life.",
@@ -1691,8 +1720,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   guiyang: {
+    // identity sources: 贵阳市统计局与国家统计局贵阳调查队（2026-05 发布）：2025 年末常住人口 666.89 万人，净增 6.64 万且增量全部来自迁入（自然增长率 −0.12‰），城镇化率 81.4%。https://www.guiyang.gov.cn/zwgk/zwgkxwdt/zwgkxwdtjrgy/202605/t20260512_90162734.html （级别 1）。发布月份：次年 5 月。
     identity:
-      "Guiyang is the capital of Guizhou, a basin city ringed by mountains in the eastern part of the Yunnan–Guizhou Plateau, with an urban population of about 4 million. At about 1,100 m, it has cool summers and is nicknamed the \"summer capital\"; it is also the transfer centre for Guizhou's karst scenery (Huangguoshu, Libo, Fanjingshan) and ethnic-minority villages.",
+      "Guiyang is the capital of Guizhou, a basin city ringed by mountains in the eastern part of the Yunnan–Guizhou Plateau, with a citywide permanent resident population of about 6.67 million at the end of 2025 (Guiyang Municipal Bureau of Statistics). At about 1,100 m, it has cool summers and is nicknamed the \"summer capital\"; it is also the transfer centre for Guizhou's karst scenery (Huangguoshu, Libo, Fanjingshan) and ethnic-minority villages.",
     // howItWorks sources: Wikipedia (2026-09): Guiyang (6 districts, 1 county-level city, 3 counties; Guanshanhu seat; Gui'an New Area 2014; ~1,100 m; 2020 census 5,987,018; metro 2017)
     howItWorks:
       "Guiyang is the capital of Guizhou, governing six districts, one county-level city and three counties at about 1,100 m, with about 5.99 million residents at the 2020 census and about 4.5 million in the six urban districts. Karst hills confine the old city to the valley between Nanming and Yunyan; the city government has moved north-west to Guanshanhu, the new administrative and business centre, and the state-level Gui'an New Area created in 2014 lies further west, built around the big-data industry and stretching towards Anshun. Addresses read district, road and number, Guiyang people speak of 'the old city', 'Guanshanhu' and 'Huaxi', and the metro has run since 2017. Newcomers most often go wrong by assuming the centre is still the old city around the Penshuichi fountain, when the government and the new town have crossed the hills to Guanshanhu.",
@@ -1709,8 +1739,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   xining: {
+    // identity sources: 青海省统计局分市州数据（2026-04 发布）：2025 年末西宁市常住人口 247.56 万人，占全省 41.82%。http://www.qinghai.gov.cn/zwgk/system/2026/04/18/030097502.shtml （级别 1）
+    //   **注意方向**：较 2024 年末的 247.69 万**略有下降**，不是增长——刷新这类数字时不要默认「又涨了」。发布月份：次年 4 月。
     identity:
-      "Xining is the capital of Qinghai, a city in the Huangshui valley at about 2,260 m, with an urban population of about 1.5 million. It is the gateway to the north-eastern edge of the Tibetan Plateau — cool in summer as a hill retreat, the base for Qinghai Lake, the Kumbum Monastery, the Qilian range and Hoh Xil, and a stop to acclimatise before Tibet.",
+      "Xining is the capital of Qinghai, a city in the Huangshui valley at about 2,260 m, with a citywide permanent resident population of about 2.476 million at the end of 2025 (Qinghai Provincial Bureau of Statistics). It is the gateway to the north-eastern edge of the Tibetan Plateau — cool in summer as a hill retreat, the base for Qinghai Lake, the Kumbum Monastery, the Qilian range and Hoh Xil, and a stop to acclimatise before Tibet.",
     // howItWorks sources: Wikipedia (2026-09): Xining (5 districts + 2 counties; ~2,275 m; Huangshui valley; 2020 census 2,467,965; Hui 16%, Tibetan 5.5%)
     howItWorks:
       "Xining is the capital of Qinghai, governing five districts and two counties in the Huangshui valley at about 2,275 m on the eastern edge of the Qinghai–Tibet Plateau, with about 2.47 million residents at the 2020 census. The old city lies in Chengzhong and Chengdong, with the Dongguan Mosque in Chengdong; Chengxi and Chengbei stretch along the valley, and the Haihu new district is the new business and residential area. Han, Hui, Tibetan, Tu and Salar peoples share the city, with Hui making up about a sixth of the population. Addresses read district, road and number, Xining people speak of 'the east', 'the west' and the two banks of the Huangshui, and with no metro the city relies on buses. Newcomers most often go wrong by treating Xining as a waypoint on the road to Tibet, when it is a plateau capital with a complete life of its own.",
@@ -1727,8 +1759,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   yinchuan: {
+    // identity sources: 《银川市2025年国民经济和社会发展统计公报》（2026-04-27 发布）：2025 年末常住人口 294.26 万人，较上年增 2.79 万，城镇化率 84.18%。https://www.yinchuan.gov.cn/xxgk/bmxxgkml/stjj/xxgkml_2517/tjxx_7670/tjgb_7671/202604/t20260427_5226142.html （级别 1）。发布月份：次年 4 月。
     identity:
-      "Yinchuan is the capital of the Ningxia Hui Autonomous Region, a city on the Yinchuan Plain of the Yellow River at about 1,100 m, with an urban population of about 1.8 million. Hemmed in by the Helan Mountains, the Yellow River and desert, it is an oasis fed by Yellow River irrigation; it was the capital of the Western Xia, and locals call the area \"the Jiangnan beyond the passes\".",
+      "Yinchuan is the capital of the Ningxia Hui Autonomous Region, a city on the Yinchuan Plain of the Yellow River at about 1,100 m, with a citywide permanent resident population of about 2.943 million at the end of 2025 (Yinchuan Municipal Bureau of Statistics). Hemmed in by the Helan Mountains, the Yellow River and desert, it is an oasis fed by Yellow River irrigation; it was the capital of the Western Xia, and locals call the area \"the Jiangnan beyond the passes\".",
     // howItWorks sources: Wikipedia (2026-09): Yinchuan (3 districts, 1 county-level city, 2 counties; Xingqing old / Jinfeng government; 2020 census 2,859,074; Hui 25.8% 2019)
     howItWorks:
       "Yinchuan is the capital of the Ningxia Hui Autonomous Region, governing three districts, one county-level city and two counties, with about 2.86 million residents at the 2020 census. The city lies on the plain between the Yellow River and the Helan Mountains: Xingqing is the old city and the traditional commercial centre, Jinfeng the government seat and business district built since the 2000s, and Xixia lies to the west against the mountains. Hui people make up about a quarter of the population. Addresses read district, road and number, Yinchuan people speak of 'the old city', 'the new district' and 'Xixia', and with no metro the city relies on buses and expressways. Newcomers most often go wrong by assuming the centre is still the old city of Xingqing, when the administration and business district lie to the west in Jinfeng.",
@@ -1745,8 +1778,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   urumqi: {
+    // identity sources: 《乌鲁木齐市2025年国民经济和社会发展统计公报》（2026-04-21 发布）：2025 年末常住人口 415.39 万人，较上年增 2.55 万。https://www.wlmq.gov.cn/wlmqs/c119359/202604/6070ed21632343cca95db20395862469.shtml （级别 1，官网原文直接抓取确认）。发布月份：次年 4 月。
     identity:
-      "Ürümqi is the capital of the Xinjiang Uygur Autonomous Region, a city on the northern foot of the Tianshan at the southern edge of the Junggar Basin, at about 800 m, with an urban population of about 3.5 million. It is one of the cities farthest from any ocean, and the gateway and transfer point for the rest of Xinjiang — north to Altay and Kanas, west to the Ili valley, south across the Tianshan to Turpan and the southern oases.",
+      "Ürümqi is the capital of the Xinjiang Uygur Autonomous Region, a city on the northern foot of the Tianshan at the southern edge of the Junggar Basin, at about 800 m, with a citywide permanent resident population of about 4.154 million at the end of 2025 (Urumqi Municipal Bureau of Statistics). It is one of the cities farthest from any ocean, and the gateway and transfer point for the rest of Xinjiang — north to Altay and Kanas, west to the Ili valley, south across the Tianshan to Turpan and the southern oases.",
     // howItWorks sources: Wikipedia (2026-09): Ürümqi (7 districts + 1 county; 2020 census 4,054,000; metro line 1 2018–19; most remote city from any sea)
     howItWorks:
       "Ürümqi is the capital of the Xinjiang Uyghur Autonomous Region, governing seven districts and one county, with about 4.05 million residents at the 2020 census — among the cities farthest from any sea in the world. It stretches north–south along the Ürümqi River valley with the Tianshan to the south: Tianshan and Shuimogou districts hold the old city, with the Grand Bazaar in Tianshan, and since the 1980s the city has expanded steadily north into Xinshi and Midong. Addresses read district, road and number, locals speak of 'the south', 'the north', 'the old city' and 'the new city', and metro Line 1 runs the length of the valley. Han, Uyghur, Hui, Kazakh and other peoples share the city, and public signs are commonly multilingual. Newcomers most often go wrong by picturing Ürümqi as a small frontier town, when it is a provincial capital of four million people stretching tens of kilometres from north to south.",
@@ -1763,8 +1797,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   hongkong: {
+    // identity sources: 香港特区政府统计处：2026 年年中人口临时估计 7,518,300 人（2026-08-18 发布），修订数将于 2027 年 2 月公布；年终 2025 修订数为 7,510,800 人（2026-02-12 发布）。https://www.info.gov.hk/gia/general/202608/18/P2026081800255.htm 与 https://www.info.gov.hk/gia/general/202602/12/P2026021200283.htm （级别 1，官方新闻公报原文直接抓取确认）
+    //   发布节奏：年中人口每年 8 月出临时数、次年 2 月出修订数；年终人口每年 2 月。
+    //   同条另一句「世界上人口密度最高的地区之一」带了「之一」限定，按 2025 年密度排名香港居全球第 4（摩纳哥、澳门、新加坡之后），表述成立；但排名只有聚合站来源（级别 3），故正文不写名次。
     identity:
-      "Hong Kong is a Special Administrative Region of China on the eastern side of the Pearl River estuary, made up of Hong Kong Island, the Kowloon Peninsula, the New Territories and more than 200 outlying islands, with a population of about 7.5 million — one of the most densely populated places in the world. It is a major international centre for finance, trade and shipping, with skyscrapers, a harbour and country parks packed into a small area.",
+      "Hong Kong is a Special Administrative Region of China on the eastern side of the Pearl River estuary, made up of Hong Kong Island, the Kowloon Peninsula, the New Territories and more than 200 outlying islands, with a provisional mid-2026 population estimate of about 7.518 million (Hong Kong Census and Statistics Department) — one of the most densely populated places in the world. It is a major international centre for finance, trade and shipping, with skyscrapers, a harbour and country parks packed into a small area.",
     // howItWorks sources: Wikipedia (2026-09): Hong Kong (SAR 1997, Basic Law; 18 districts, advisory District Councils; ~1,114 km²; ~7.5 million)
     howItWorks:
       "Hong Kong is a Special Administrative Region of China, governed since 1997 under the principle of 'one country, two systems' set out in the Basic Law, with a government headed by the Chief Executive handling local affairs. Geographically it falls into three areas — Hong Kong Island, Kowloon and the New Territories, the last including more than two hundred outlying islands; administratively it has 18 districts, each with an advisory District Council and no separate city government. The land area is about 1,114 km² with about 7.5 million people, among the most densely populated places in the world. Central is the traditional business district, Kwun Tong in Kowloon East is the planned second core business district, and new towns such as Sha Tin, Tuen Mun and Tseung Kwan O house a large share of the New Territories' residents. Addresses read area, street, building and floor, and the MTR and the Octopus card run throughout. Newcomers most often go wrong by equating Hong Kong with Hong Kong Island, when most people live in Kowloon and the New Territories.",
@@ -1781,8 +1818,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   macao: {
+    // identity sources: 澳门统计暨普查局（DSEC）《人口统计 2026 年第 2 季》（2026-08 发布）：季末总人口 686,500 人，较上季 688,100 人下降 0.2%，较 2025 年同期 685,900 人增 600 人；2025 年末为 688,900 人。https://www.dsec.gov.mo/getAttachment/ff9a4b34-c83e-4a58-9fa6-3e7099661807/C_DEM_FR_2026_Q2.aspx （级别 1，官方 PDF 原文）
+    //   发布节奏：按季发布，季末后约 6—8 周（Q1→5 月、Q2→8 月、Q3→11 月、Q4/全年→次年 3 月）。
     identity:
-      "Macao is a Special Administrative Region of China on the western side of the Pearl River estuary, about 60 km west of Hong Kong, made up of the Macao Peninsula, Taipa, Cotai and Coloane, with a population of about 680,000 in a very small area. It was long a Portuguese-administered port and mixes Chinese and Portuguese architecture, food and customs; its historic centre is a World Heritage Site.",
+      "Macao is a Special Administrative Region of China on the western side of the Pearl River estuary, about 60 km west of Hong Kong, made up of the Macao Peninsula, Taipa, Cotai and Coloane, with a total population of about 686,500 at the end of Q2 2026 (Statistics and Census Service) in a very small area. It was long a Portuguese-administered port and mixes Chinese and Portuguese architecture, food and customs; its historic centre is a World Heritage Site.",
     // howItWorks sources: Wikipedia (2026-09): Macau (SAR 1999; municipalities abolished 2001, Municipal Affairs Bureau; 7 parishes; land 32.9 km²; 2024 est. 712,651; ~2/3 reclaimed)
     howItWorks:
       "Macau is a Special Administrative Region of China, governed since 1999 under 'one country, two systems' and the Basic Law, with a government headed by the Chief Executive. Since the municipal councils were abolished in 2001, municipal services have been provided by the Municipal Affairs Bureau; the seven traditional parishes are geographical divisions with no administrative role. Macau consists of the Macau Peninsula, Taipa, Cotai and Coloane, with a land area of about 32.9 km² and about 712,000 people in 2024, among the highest densities in the world; roughly two-thirds of its land has been reclaimed from the sea, and the resorts of Cotai stand on reclaimed ground. The old town and most residents are on the peninsula, the university and newer housing on Taipa, and the Guangdong–Macao cooperation zone lies on Hengqin island. Addresses read street, building and floor. Newcomers most often go wrong by assuming Macau is only the old town on the peninsula, or by taking the parishes for administrative districts.",
@@ -4983,10 +5022,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "germany-overview": {
-    // identity sources: Destatis Pressemitteilung Nr. 221/2025《Bevölkerung Deutschlands wächst im Jahr 2024 geringfügig um 0,1 %》：2024 年末约 83.6 百万（基于 2022 年人口普查推算）。https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/06/PD25_221_124.html
-    //   核实日 2026-09-07，来源级别 1
+    // identity sources: Destatis 新闻稿 PD26_203_124（2026-06-16）：2025 年末德国人口 83.5 百万，较 2024 年末**减少**约 11 万（−0.1%），是 2020 年以来首次下降（死亡多于出生 35.2 万，净移民 +23.5 万）。https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/06/PD26_203_124.html （级别 1）
+    //   发布节奏：每年 1 月出上年末初步值，当年 6 月出修正后的正式值——本条用的是 6 月的正式值。
     identity:
-      "Germany, in Central Europe, covers about 358,000 km² with a population of about 83.6 million at the end of 2024 (Destatis), one of Europe's most populous countries. The terrain rises gradually from north to south — a lowland plain in the north shaped by Quaternary glaciation, a belt of old low mountains and hills in the centre, and the Bavarian Alps in the south, home to Germany's highest point, the Zugspitze (2,962 m).",
+      "Germany, in Central Europe, covers about 358,000 km² with a population of about 83.5 million at the end of 2025 (Destatis), one of Europe's most populous countries. The terrain rises gradually from north to south — a lowland plain in the north shaped by Quaternary glaciation, a belt of old low mountains and hills in the centre, and the Bavarian Alps in the south, home to Germany's highest point, the Zugspitze (2,962 m).",
     layout:
       "Roughly: Berlin (the capital, on the north-eastern plain); Bavaria (Munich, Nuremberg — the Alps and traditional beer culture); the north (Hamburg — port city on the North Sea and Baltic coasts); the west (Cologne, Trier — the Rhine and Moselle valleys); the centre (Frankfurt — the financial hub); the east (Dresden — the Elbe and the sandstone landforms of Saxon Switzerland); the south-west (Freiburg, Heidelberg — the Black Forest and the Neckar valley); the north-east (Stralsund — the Baltic coast and Rügen).",
     gettingAround:
@@ -6445,9 +6484,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   vienna: {
     identity:
       "Vienna is Austria's capital and largest city, with a population of about 1.9 million. It was once the capital of the Austro-Hungarian Empire under the Habsburg dynasty and still carries deep classical-music, coffeehouse and imperial-architecture traditions.",
-    // howItWorks sources: Wikipedia (2026-09): Vienna (city + federal state; mayor = governor; 23 Bezirke with elected councils, spiral numbering; ~415 km²; ~2.0 million 2024; metro ~2.9 million; U-Bahn 5 lines; €365 pass; ~60% in subsidised housing; postcode 1010 etc.)
+    // howItWorks sources: 维也纳交通公司（Wiener Linien）2026 年新资费：年票 467 欧元（数字版 461，分期 506.40），2026-01-01 生效；此前自 2012 年起一直是 365 欧元，此次是十四年来首次调整，并宣布今后逐年调价。https://www.derstandard.at/story/3000000285746/wiener-oeffi-jahreskarte-wird-ab-2026-teurer-und-kostet-467-euro （级别 2，主流媒体转述；官方资费页 https://www.wienerlinien.at 亦可核）
+    //   **这条是 C6-e 的原型**：写入时正确、十几年没变，于是没人怀疑它会过期——恰恰在今年变了。核实日 2026-09-07
     howItWorks:
-      "Vienna is both a city and one of Austria's nine federal states: the mayor is also the state governor, and the city council is also the state parliament. It is divided into 23 districts (Bezirke), each with an elected district assembly and head, numbered in a spiral from the centre: the 1st, Innere Stadt, lies inside the Ringstrasse, the 2nd to 9th between the Ring and the Gürtel, and the 10th to 23rd beyond the Gürtel. The city covers about 415 km² with about 2.0 million people in 2024, and the metropolitan area with surrounding Lower Austria about 2.9 million. The Danube flows through the north-east, with the Donauinsel and Donaucity as the new districts by the river, the Vienna Woods on the western edge, and vineyards still within the city boundary. About six in ten residents live in municipal or subsidised housing, the city's housing policy for a century. Addresses give district number, street and house number, and the middle two digits of the postcode are the district — 1010 is the 1st, 1230 the 23rd. Wiener Linien's five U-Bahn lines, trams and buses run on one annual pass of 365 euros. Newcomers most often go wrong by taking the area inside the Ring for Vienna, when it is the smallest of the 23 districts.",
+      "Vienna is both a city and one of Austria's nine federal states: the mayor is also the state governor, and the city council is also the state parliament. It is divided into 23 districts (Bezirke), each with an elected district assembly and head, numbered in a spiral from the centre: the 1st, Innere Stadt, lies inside the Ringstrasse, the 2nd to 9th between the Ring and the Gürtel, and the 10th to 23rd beyond the Gürtel. The city covers about 415 km² with about 2.0 million people in 2024, and the metropolitan area with surrounding Lower Austria about 2.9 million. The Danube flows through the north-east, with the Donauinsel and Donaucity as the new districts by the river, the Vienna Woods on the western edge, and vineyards still within the city boundary. About six in ten residents live in municipal or subsidised housing, the city's housing policy for a century. Addresses give district number, street and house number, and the middle two digits of the postcode are the district — 1010 is the 1st, 1230 the 23rd. Wiener Linien's five U-Bahn lines, trams and buses run on a single annual pass, held at 365 euros from 2012 and raised to 467 euros in January 2026. Newcomers most often go wrong by taking the area inside the Ring for Vienna, when it is the smallest of the 23 districts.",
     layout:
       "The Ringstrasse encircles the old-town core, lined with landmarks including the State Opera and the Kunsthistorisches Museum; Schönbrunn Palace, the Habsburgs' summer residence, sits in the south-west of the city; St. Stephen's Cathedral is the geographic and spiritual centre of the old town.",
     gettingAround:
@@ -6729,8 +6769,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Ireland ============
   "ireland-overview": {
+    // identity sources: CSO Ireland《Population and Migration Estimates, April 2025》（2025-08-26 发布）：常住人口估计 5,458,600 人。https://www.cso.ie/en/releasesandpublications/ep/p-pme/populationandmigrationestimatesapril2025/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of Ireland sits on the Atlantic edge of north-western Europe, covering about 70,000 km² with a population of roughly 5.3 million. It is known for green pastoral countryside, Atlantic sea cliffs and a long Celtic-Gaelic cultural tradition; the official languages are Irish and English.",
+      "The Republic of Ireland sits on the Atlantic edge of north-western Europe, covering about 70,000 km² with a population of about 5.46 million as of April 2025 (Central Statistics Office). It is known for green pastoral countryside, Atlantic sea cliffs and a long Celtic-Gaelic cultural tradition; the official languages are Irish and English.",
     layout:
       "Ireland can be divided roughly into: Leinster (Dublin, the eastern plain and capital region), Munster (Cork, Limerick and Kerry, the southern and south-western coast and mountains), Connacht (Galway, the western coast and Gaeltacht areas), and the Republic's portion of Ulster (Donegal, the north-west coast). The centre of the country is dominated by low-lying land and peat bog, with most upland concentrated around the coastal margins.",
     gettingAround:
@@ -6915,8 +6957,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Denmark ============
   "denmark-overview": {
+    // identity sources: Danmarks Statistik《NYT: Befolkningen i Danmark runder 6 mio. indbyggere》：2025-01-01 为 5,992,734 人，2025-05-01 达 6,001,008 人。https://www.dst.dk/nyt/55902
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Denmark sits in Northern Europe, covering about 43,000 km² with a population of roughly 5.9 million. It is the smallest and flattest of the three Scandinavian countries (the entire country's highest point is only 170.86 m), made up of the Jutland peninsula and more than 500 islands, known as a \"kingdom of fairy tales\" and a \"kingdom of design.\"",
+      "Denmark sits in Northern Europe, covering about 43,000 km² with a population of about 5.99 million as of 1 January 2025, crossing 6 million that May (Statistics Denmark). It is the smallest and flattest of the three Scandinavian countries (the entire country's highest point is only 170.86 m), made up of the Jutland peninsula and more than 500 islands, known as a \"kingdom of fairy tales\" and a \"kingdom of design.\"",
     layout:
       "Denmark can be divided roughly into: the Capital Region (Copenhagen and its surroundings, the political and economic centre), Region Zealand (Roskilde, a historic former-capital area), the Region of Southern Denmark (Odense on the island of Funen, and southern Jutland), Central Denmark Region (Aarhus, Denmark's second city, and the lake district), North Denmark Region (Aalborg and Skagen, the peninsula's northern tip), and Bornholm (a standalone island in the Baltic Sea).",
     gettingAround:
@@ -7135,8 +7179,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Sweden ============
   "sweden-overview": {
+    // identity sources: SCB Population statistics 2025：2025-12-31 登记人口（folkbokförd befolkning）10,605,529 人。https://www.scb.se/en/finding-statistics/statistics-by-subject-area/population-and-living-conditions/population-composition-and-development/population-statistics/pong/statistical-news/population-statistics-year-2025-publish-1/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Sweden sits on the eastern side of the Scandinavian Peninsula in Northern Europe, covering about 450,000 km² — the largest country in the Nordic region — with a population of roughly 10.5 million. It spans an enormous range of latitude, from the Skåne Plain in the far south to Arctic Lapland in the far north, with correspondingly dramatic differences in landform and climate.",
+      "Sweden sits on the eastern side of the Scandinavian Peninsula in Northern Europe, covering about 450,000 km² — the largest country in the Nordic region — with a registered population of about 10.61 million at the end of 2025 (Statistics Sweden). It spans an enormous range of latitude, from the Skåne Plain in the far south to Arctic Lapland in the far north, with correspondingly dramatic differences in landform and climate.",
     layout:
       "Sweden can be divided roughly into: Svealand (Stockholm and its surroundings, the political and economic centre), Götaland (Gothenburg, Malmö and the island of Gotland, the southern coastal and farming region), and Norrland (Kiruna and Luleå, the northern forest and Lapland mountain region, covering about two-thirds of the country's area but sparsely populated).",
     gettingAround:
@@ -7338,8 +7384,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Finland ============
   "finland-overview": {
+    // identity sources: Statistics Finland《Population growth slowed down in 2025》：2025 年末初步数 5,652,881 人。https://stat.fi/en/publication/cmg6f46k91y0e07w0qtdt6yl7
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Finland sits in Northern Europe, covering about 340,000 km² with a population of roughly 5.6 million. Known as the \"Land of a Thousand Lakes,\" it actually has more than 188,000 lakes, and forest covers about 73% of the country, ranging from the archipelago coast in the south to the Arctic wilderness of Lapland in the north — a dramatic span of latitude and landform.",
+      "Finland sits in Northern Europe, covering about 340,000 km² with a preliminary population of about 5.65 million at the end of 2025 (Statistics Finland). Known as the \"Land of a Thousand Lakes,\" it actually has more than 188,000 lakes, and forest covers about 73% of the country, ranging from the archipelago coast in the south to the Arctic wilderness of Lapland in the north — a dramatic span of latitude and landform.",
     layout:
       "Finland can be divided roughly into: Uusimaa (Helsinki and its surroundings, the political and economic centre), Southwest Finland (Turku and Mariehamn, the archipelago and the autonomous region), Finnish Lakeland (Tampere, Savonlinna and Kuopio, the core of Finland's inland lake district), and Northern Finland including Lapland (Oulu, Rovaniemi and Inari, the Arctic wilderness and tunturi fell country).",
     gettingAround:
@@ -7541,8 +7589,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ============ Luxembourg ============
   "luxembourg-overview": {
+    // identity sources: STATEC《Lower migration, low fertility: the demographic slowdown continues》：2025-01-01 总人口 681,973 人。https://statistiques.public.lu/en/actualites/2025/stn16-population-2025.html
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The Grand Duchy of Luxembourg sits in Western Europe, covering about 2,586 km² — one of the smallest sovereign states in Europe — with a population of roughly 670,000. It borders France, Germany and Belgium, and is a founding EU member state and an important financial centre.",
+      "The Grand Duchy of Luxembourg sits in Western Europe, covering about 2,586 km² — one of the smallest sovereign states in Europe — with a population of about 682,000 as of 1 January 2025 (STATEC). It borders France, Germany and Belgium, and is a founding EU member state and an important financial centre.",
     layout:
       "The country divides roughly into two regions: the Oesling in the north (an extension of the Ardennes, valleys interwoven with plateau) and the Gutland in the south (gentler terrain, home to the capital, Luxembourg City, plus the sandstone \"Little Switzerland\" of Mullerthal in the east, the Moselle Valley wine region in the south-east, and the Minett red-lands district at the southern tip).",
     gettingAround:
@@ -7709,8 +7759,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "thailand-overview": {
+    // identity sources: NSO Thailand《Statistical Yearbook Thailand 2025》采用内政部地方行政厅（DOPA）户籍登记口径：2025-01-08 为 65,951,210 人。https://www.nso.go.th/public/e-book/Statistical-Yearbook/SYB-2025/55/
+    //   **这是本轮发现的一个新错误模式**：原文「约7100万」与联合国 World Population Prospects 的推算口径（约 7160 万）吻合，与泰国本国官方登记口径差约 560 万。国际机构推算与本国官方统计是两套方法，不能混用——正文只写本国官方口径。核实日 2026-09-07，来源级别 1
     identity:
-      "The Kingdom of Thailand sits at the centre of the Southeast Asian mainland, covering about 510,000 km² with a population of roughly 71 million; the capital is Bangkok, the official language is Thai, and the currency is the Thai baht (THB).",
+      "The Kingdom of Thailand sits at the centre of the Southeast Asian mainland, covering about 510,000 km² with a registered population of about 65.95 million as of January 2025 (National Statistical Office of Thailand); the capital is Bangkok, the official language is Thai, and the currency is the Thai baht (THB).",
     layout:
       "The country divides broadly into five regions: the central plain (Bangkok, Ayutthaya), the northern mountains (Chiang Mai, Chiang Rai, Sukhothai), the north-eastern Isan plateau (Udon Thani, Nakhon Ratchasima), the eastern coast (Pattaya), and the southern peninsula (Phuket, Krabi, Koh Samui).",
     gettingAround:
@@ -8031,8 +8083,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November–April is best, with December–February the peak; the May–October rains are quiet and cheap but boats are few. Stay three or four nights. Linked with Krabi, Phi Phi and Ko Lipe on an Andaman route.",
   },
   "south-korea-overview": {
+    // identity sources: 행정안전부《2025년 지방자치단체 행정구역 및 인구 현황》（2024-12-31 基准）：住民登录人口 51,117,378 人。https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000055&nttId=118777
+    //   韩国有两个并存的官方口径：住民登录人口（行政安全部户籍登记，不含未登记外国人）5112 万，与统计厅 KOSIS 的总人口推算（含外国人居民）5168 万，相差约 57 万。正文取前者并写明口径。核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of Korea occupies the southern half of the Korean Peninsula in East Asia, covering about 100,000 km² with a population of roughly 51 million; the capital is Seoul, the common language is Korean, and the currency is the Korean won (KRW).",
+      "The Republic of Korea occupies the southern half of the Korean Peninsula in East Asia, covering about 100,000 km² with a resident-registered population of about 51.12 million at the end of 2024 (Ministry of the Interior and Safety); the capital is Seoul, the common language is Korean, and the currency is the Korean won (KRW).",
     layout:
       "The country divides broadly into five regions: the Capital Area (Seoul, Incheon and surroundings), the Yeongnam region (Busan, Gyeongju, Ulsan and other south-eastern cities), the Honam region (Jeonju and other south-western cities), Gangwon Province (Gangneung, Sokcho and the eastern coast and mountains), and Jeju Island (a volcanic island to the south).",
     gettingAround:
@@ -8354,8 +8408,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Poland ============
   "poland-overview": {
+    // identity sources: 人口：GUS 数据，2025 年末 37,332,000 人（较上年少 15.7 万）——只找到波兰通讯社 PAP Biznes 对 GUS 公报的转述，未能直取 GUS 官网原页，**来源级别 2**。https://biznes.pap.pl/wiadomosci/gospodarka/liczba-ludnosci-polski-na-koniec-2025-spadla-o-157-tys-rdr-do-37332-mln-gus
+    //   排名：Eurostat《Demography of Europe, 2025 edition》按 2024-01-01 常住人口口径，波兰约 3660 万列欧盟第五（德法意西之后），领先第六名罗马尼亚约 1700 万，排名稳固——**排名断言本身属实**，缺的只是年份与口径。https://ec.europa.eu/eurostat/web/interactive-publications/demography-2025（级别 1）
+    //   核实日 2026-09-07
     identity:
-      "Poland sits in Central Europe, covering about 313,000 km² with the fifth-largest population in the EU (about 38 million); it borders the Baltic Sea to the north and the Carpathians to the south, its terrain gradually rising from north to south, and is an important economic and cultural hub of Eastern Europe.",
+      "Poland sits in Central Europe, covering about 313,000 km² with a population of about 37.33 million at the end of 2025 (Statistics Poland), the fifth-largest in the EU per Eurostat's 2024 figures; it borders the Baltic Sea to the north and the Carpathians to the south, its terrain gradually rising from north to south, and is an important economic and cultural hub of Eastern Europe.",
     layout:
       "Poland can be divided roughly into: Mazovia (Warsaw and its surroundings, the political centre), Lesser Poland/Małopolska (Kraków and Zakopane, the gateway to the Carpathians), Greater Poland and Silesia (Poznań and Wrocław, the western plains and industrial belt), Pomerania (Gdańsk, Szczecin and Toruń, along the Baltic coast), and Warmia-Masuria and Podlasie (Olsztyn and Białystok, the north-eastern lake district and forests).",
     gettingAround:
@@ -8556,8 +8613,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Vietnam ============
   "vietnam-overview": {
+    // identity sources: 越南统计总局（GSO）《Thông cáo báo chí về tình hình dân số, lao động, việc làm quý IV và năm 2025》：2025 年平均人口 102.3 百万人。https://www.nso.gov.vn/tin-tuc-thong-ke/2026/01/thong-cao-bao-chi-ve-tinh-hinh-dan-so-lao-dong-viec-lam-quy-iv-va-nam-2025/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "The Socialist Republic of Vietnam lies on the eastern side of the Southeast Asian mainland, its territory forming a long S-shape, covering about 330,000 km² with a population of roughly 100 million; the capital is Hanoi, the official language is Vietnamese, and the currency is the Vietnamese dong (VND).",
+      "The Socialist Republic of Vietnam lies on the eastern side of the Southeast Asian mainland, its territory forming a long S-shape, covering about 330,000 km² with an average population of about 102.3 million in 2025 (General Statistics Office of Vietnam); the capital is Hanoi, the official language is Vietnamese, and the currency is the Vietnamese dong (VND).",
     layout:
       "The country divides broadly into four regions: the North (Hanoi, Ha Long Bay, the Sapa highlands), the Centre (the coastal ancient-capital belt of Da Nang, Hoi An, and Hue), the Central Highlands (basalt plateaus including Da Lat), and the South (Ho Chi Minh City, the Mekong Delta).",
     gettingAround:
@@ -8742,9 +8801,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   "phu-quoc-city": {
     identity:
       "Duong Dong is Phu Quoc Island's main town, with a population of about 20,000, and the core hub for the island's tourism and fishing activities.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Phú Quốc (island 575 km², Vietnam's largest; city 2021; since 2025-06 a special zone under An Giang province, which absorbed Kiên Giang; ~180,000; Dương Đông main town west; An Thới south; airport 2012; visa-free 30 days since 2014; fish sauce/pepper) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
+    // howItWorks sources: 免签天数**不写死**，只说以官方最新公布为准 —— 这是项目既有口径（CLAUDE.md「中国政策类内容口径」那一条的通用化），现已由 npm run check:claims 的 C6-f 规则强制。哈萨克斯坦概览那条「多国公民可享受最长30天免签入境，具体以哈萨克斯坦外交部最新公布为准」是正确写法的范例，因为带了转向官方口径的免责语。核实日 2026-09-07
     howItWorks:
-      "Phú Quốc is Vietnam's largest island, about 575 km², made a city in 2021 and, since the district tier was abolished in June 2025, a 'special zone' directly under An Giang province, into which Kiên Giang was merged the same year with its capital at Rạch Giá. The island holds about 180,000 people, the main town of Dương Đông on the west coast with the airport, the night market and Long Beach nearby, An Thới at the southern tip with a cable car to Hòn Thơm island, the new resort city to the north, fish sauce and pepper the old industries, and the international airport of 2012 and 30-day visa-free entry making it an island open to the world. Newcomers most often go wrong by taking Phú Quốc for a resort, when it is an island 50 km long with 180,000 residents and a zone government at Dương Đông.",
+      "Phú Quốc is Vietnam's largest island, about 575 km², made a city in 2021 and, since the district tier was abolished in June 2025, a 'special zone' directly under An Giang province, into which Kiên Giang was merged the same year with its capital at Rạch Giá. The island holds about 180,000 people, the main town of Dương Đông on the west coast with the airport, the night market and Long Beach nearby, An Thới at the southern tip with a cable car to Hòn Thơm island, the new resort city to the north, fish sauce and pepper the old industries, and the international airport of 2012 and visa-free entry for many nationalities — check the Vietnamese authorities for the current length and eligibility — making it an island open to the world. Newcomers most often go wrong by taking Phú Quốc for a resort, when it is an island 50 km long with 180,000 residents and a zone government at Dương Đông.",
     layout:
       "The town extends along the mouth of the Duong Dong River, with the Duong Dong night market as its liveliest commercial street, and beach resort hotels lining the coast nearby.",
     gettingAround:
@@ -8879,8 +8938,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Malaysia ============
   "malaysia-overview": {
+    // identity sources: DOSM《Current Population Estimates, Malaysia, 2025》：34.2 百万（公民 + 非公民）。https://www.dosm.gov.my/uploads/release-content/file_20250821151339.pdf
+    //   原文 3640 万比官方口径高出约 220 万。核实日 2026-09-07，来源级别 1
     identity:
-      "Malaysia is made up of Peninsular Malaysia (West Malaysia) and the states of Sabah and Sarawak in northern Borneo (East Malaysia), covering about 330,000 km² with a population of about 36.4 million; its capital is Kuala Lumpur, the official language is Malay, and its currency is the Malaysian ringgit (MYR).",
+      "Malaysia is made up of Peninsular Malaysia (West Malaysia) and the states of Sabah and Sarawak in northern Borneo (East Malaysia), covering about 330,000 km² with an estimated population of about 34.2 million in 2025 (Department of Statistics Malaysia); its capital is Kuala Lumpur, the official language is Malay, and its currency is the Malaysian ringgit (MYR).",
     layout:
       "The country divides roughly into: the Centre (Kuala Lumpur, the political and economic hub), the Northern Peninsula (George Town/Penang, Ipoh, Langkawi, Kota Bharu), the Southern Peninsula (Johor Bahru, Malacca, Kuantan), Sabah (Kota Kinabalu, Sandakan — Mount Kinabalu and rainforest reserves) and Sarawak (Kuching, Miri — Gunung Mulu and the Niah Caves).",
     gettingAround:
@@ -9202,8 +9263,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Mongolia ============
   "mongolia-overview": {
+    // identity sources: 蒙古土地组织·大地测量·制图总局（ГЗБГЗЗЕГ）「统一土地基金」统计，2023 年末口径：农业用地 134,076.2 千公顷 + 城镇聚落 1,232.6 + 道路及基础设施 869.9 + 森林基金 18,211.1 + 水域基金 2,022.0 = 156,411.6 千公顷 = 1,564,116 平方公里。https://www.gazar.gov.mn/system2/static/unified-land-fund-system （级别 1，蒙古官方土地行政与测绘机构一手数字）
+    //   这条替换掉了上一轮只能拿到的世界银行/FAO 汇编（级别 3）。基准年是 2023 年末而不是 2025 年——国土面积逐年变动极小，可视为现行有效值，但如实标注基准年。
     identity:
-      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1.56 million km² with a population of about 3.5 million; its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
+      "Mongolia is a landlocked country bordered by Russia to the north and China to the south, covering about 1,564,116 km² (Mongolian General Department of Land Affairs, Geodesy and Cartography, end-2023) with a population of about 3.55 million at the end of 2024 (National Statistics Office of Mongolia); its capital is Ulaanbaatar, the official language is Mongolian (written in Cyrillic), and its currency is the tögrög (MNT).",
     layout:
       "The country divides roughly into: the Centre (Ulaanbaatar and the Kharkhorin/Orkhon valley, the political and cultural core), the North (Erdenet, Darkhan, Mörön — forest and lake country), the West (Khovd, Ölgii — the Mongol Altai and the Kazakh community), the South Gobi (Dalanzadgad — the Gobi desert belt), and the East (Choibalsan — the Daurian steppe belt).",
     gettingAround:
@@ -9387,8 +9450,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Philippines ============
   "philippines-overview": {
+    // identity sources: PSA《2024 Census of Population (POPCEN) Population Counts Declared Official by the President》：2024-07-01 普查人口 112,729,484 人。https://psa.gov.ph/content/2024-census-population-popcen-population-counts-declared-official-president
+    //   原文「逾 1.14 亿」方向就是错的——实际不到 1.14 亿。核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of the Philippines is a Southeast Asian archipelago of about 7,107 islands, covering roughly 299,800 km² with a population of more than 114 million; its capital is Manila, the official languages are Filipino (based on Tagalog) and English, and its currency is the Philippine peso (PHP).",
+      "The Republic of the Philippines is a Southeast Asian archipelago of about 7,107 islands, covering roughly 299,800 km² with a population of 112.7 million in the 2024 census (Philippine Statistics Authority); its capital is Manila, the official languages are Filipino (based on Tagalog) and English, and its currency is the Philippine peso (PHP).",
     layout:
       "The country divides roughly into three major island groups: Luzon (Manila, Baguio, Legazpi and others — the population and economic core), the Visayas (Cebu, Bohol, Boracay and others — the central island cluster) and Mindanao (Davao and others — the southern islands); Palawan lies to the west and forms a relatively self-contained tourism region of its own.",
     gettingAround:
@@ -9606,8 +9671,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Singapore ============
   "singapore-overview": {
+    // identity sources: SingStat《Population Trends, 2025》：2025 年 6 月末总人口 6.11 百万，其中常住人口 420 万、非居民 191 万。https://www.singstat.gov.sg/publication-resources/population-trends-2025
+    //   本批唯一一条数字与官方完全吻合的。核实日 2026-09-07，来源级别 1
     identity:
-      "The Republic of Singapore is a city-state island nation in Southeast Asia, covering about 735 km² with a population of about 6.11 million — one of the most densely populated independent countries in the world after Monaco. Its capital is Singapore itself; the official languages are Malay (the national language), English, Mandarin and Tamil, and its currency is the Singapore dollar (SGD).",
+      "The Republic of Singapore is a city-state island nation in Southeast Asia, covering about 735 km² with a total population of about 6.11 million as of end-June 2025 (Singapore Department of Statistics) — one of the most densely populated independent countries in the world after Monaco. Its capital is Singapore itself; the official languages are Malay (the national language), English, Mandarin and Tamil, and its currency is the Singapore dollar (SGD).",
     layout:
       "The country is highly urbanised with no traditional multi-city division: Marina Bay and the city centre form the political and economic core, Sentosa is the well-known resort island to the south, outlying islands such as Pulau Ubin and St John's Island preserve natural and historical landscapes, and the Central Catchment and Bukit Timah reserves are mainland Singapore's only remaining large tracts of forest.",
     gettingAround:
@@ -9706,8 +9773,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Indonesia ============
   "indonesia-overview": {
+    // identity sources: 印尼中央统计局（BPS）2025 年人口间隔调查 SUPAS 2025：2025 年年中 284.67 百万人。只找到 BPS 官方账号发布，未取到 bps.go.id 上的出版物页面，**来源级别按 2 记**。
+    //   另有一个 2.876 亿的数字来自 DTSEN 社会福利登记库，与 SUPAS 人口统计口径不同，不要混用。原文「逾 2.7 亿」字面成立但已滞后一千多万。核实日 2026-09-07
     identity:
-      "Indonesia is a Southeast Asian archipelagic nation of about 17,000 islands, covering roughly 1.91 million km² with a population of more than 270 million — the world's fourth most populous country; its capital is Jakarta, the official language is Indonesian (Bahasa Indonesia), and its currency is the Indonesian rupiah (IDR).",
+      "Indonesia is a Southeast Asian archipelagic nation of about 17,000 islands, covering roughly 1.91 million km² with a mid-2025 population of about 284.7 million (BPS-Statistics Indonesia) — the world's fourth most populous country; its capital is Jakarta, the official language is Indonesian (Bahasa Indonesia), and its currency is the Indonesian rupiah (IDR).",
     layout:
       "The country divides roughly into five main islands and their surrounding archipelagos: Java (Jakarta, Yogyakarta, Surabaya, Bandung — the population and economic core), Sumatra (Medan — volcanoes and rainforest), Kalimantan (Balikpapan — Indonesia's portion of Borneo), Sulawesi (Makassar, Manado — religiously diverse coastlines and coral reefs) and the Bali–Nusa Tenggara islands (Denpasar, Labuan Bajo — volcanoes, rice terraces and island resorts).",
     gettingAround:
@@ -9908,8 +9977,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Kazakhstan ============
   "kazakhstan-overview": {
+    // identity sources: 哈萨克斯坦国家统计局《Population of the Republic of Kazakhstan (as of January 1, 2025)》：2025-01-01 为 20,283,399 人；2025-12-01 为 20,478,879 人。https://stat.gov.kz/en/industries/social-statistics/demography/publications/312581/
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Kazakhstan is the world's largest landlocked country, covering about 2.72 million km² with a population of about 20 million; its capital is Astana, the official language is Kazakh, Russian is widely used as the language of interethnic communication, and its currency is the Kazakhstani tenge (KZT).",
+      "Kazakhstan is the world's largest landlocked country, covering about 2.72 million km² with a population of about 20.28 million at the start of 2025, about 20.48 million by year-end (Bureau of National Statistics); its capital is Astana, the official language is Kazakh, Russian is widely used as the language of interethnic communication, and its currency is the Kazakhstani tenge (KZT).",
     layout:
       "The country divides roughly into six regions: the North (Astana, Kokshetau — steppe and lakes), the Southeast (Almaty — the northern Tian Shan foothills, former capital and cultural centre), the South (Shymkent, Turkestan — ancient Silk Road cities and oasis agriculture), the West (Aktau — the Caspian coast and the desert wonders of Mangystau), the Centre (Karaganda — a mining city in the Kazakh Uplands), and the East (Semey, Pavlodar — along the Irtysh River).",
     gettingAround:
@@ -10076,8 +10147,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Turkey ============
   "turkey-overview": {
+    // identity sources: TÜİK《Adrese Dayalı Nüfus Kayıt Sistemi Sonuçları, 2025》：2025-12-31 地址登记人口 86,092,168 人。https://veriportali.tuik.gov.tr/tr/press/53899
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Turkey straddles Europe and Asia, covering about 780,000 km² with a population of roughly 85 million; its capital is Ankara, its largest city Istanbul, its official language Turkish, and its currency the Turkish lira (TRY).",
+      "Turkey straddles Europe and Asia, covering about 780,000 km² with a registered population of about 86.09 million at the end of 2025 (Turkish Statistical Institute); its capital is Ankara, its largest city Istanbul, its official language Turkish, and its currency the Turkish lira (TRY).",
     layout:
       "The country is broadly divided into five regions: Marmara (Istanbul/Bursa, straddling the Bosphorus at the Europe-Asia crossing), the Aegean (Izmir/Bodrum/Pamukkale, deeply indented bays and Greco-Roman ruins), the Mediterranean (Antalya, the 'Turkish Riviera'), Central Anatolia (Ankara/Konya/Cappadocia, plateau and volcanic-ash terrain), and the Black Sea (Trabzon, rainy mountainous coast).",
     gettingAround:
@@ -10261,8 +10334,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   // ============ Croatia ============
   "croatia-overview": {
+    // identity sources: DZS《STAN-2026-3-1 Procjena stanovništva Republike Hrvatske u 2025》：2025 年年中估计 3,874,993 人。https://podaci.dzs.hr/2026/hr/121477
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Croatia sits in south-central Europe on the eastern Adriatic coast, covering about 56,600 km² with a population of roughly 3.8 million. Its capital is Zagreb, the official language is Croatian, and it has used the euro and been part of the Schengen Area since 2023.",
+      "Croatia sits in south-central Europe on the eastern Adriatic coast, covering about 56,600 km² with an estimated mid-2025 population of about 3.875 million (Croatian Bureau of Statistics). Its capital is Zagreb, the official language is Croatian, and it has used the euro and been part of the Schengen Area since 2023.",
     layout:
       "The country divides broadly into three regions: the Pannonian lowland (Zagreb and Slavonia, inland plains and hills), the Dinaric mountain belt (an inland mountainous zone), and the Adriatic coast (Istria, the Kvarner Gulf, and Dalmatia, with a long, indented coastline and 1,244 islands).",
     gettingAround:
@@ -10411,8 +10486,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "June to September is Hvar's peak season, with July and August the busiest for yachts and visitors. Lavender typically blooms from mid-to-late June through July, the best time to photograph the fields. The island depends on ferries, so book tickets ahead, especially on peak-season weekends.",
   },
   "czechia-overview": {
+    // identity sources: ČSÚ《Pohyb obyvatelstva - rok 2025》：2025-12-31 为 10,915,839 人。https://csu.gov.cz/rychle-informace/pohyb-obyvatelstva-rok-2025
+    //   核实日 2026-09-07，来源级别 1
     identity:
-      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of roughly 10.9 million. Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
+      "Czechia is a landlocked country in Central Europe, covering about 78,900 km² with a population of about 10.92 million at the end of 2025 (Czech Statistical Office). Its capital is Prague, the official language is Czech, and it joined the EU in 2004; it is a Schengen member using the Czech koruna (it has not adopted the euro).",
     layout:
       "The country is traditionally divided into three historic regions: Bohemia (west and center, centered on Prague and ringed by ancient mountains), Moravia (southeast, centered on Brno, with rolling hills and vineyards), and Czech Silesia (a small northeastern corner, administratively combined with Moravia). Almost the entire country is bordered by old mountain ranges, with lowlands in the center.",
     gettingAround:
@@ -10969,8 +11046,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Hotan city is the seat of the Hotan prefecture administration, a county-level city covering about 470 km² with about 500,000 people in 2020, an oasis on the southern rim of the Taklamakan below the Kunlun. The town lies between the Yurungkash and Karakash rivers, with Unity Square and the grand bazaar as reference points, the airport to the west, and the Hotan-Ruoqiang railway linking it east since 2022. Jade, carpets and silk are its 'three treasures'. Newcomers most often go wrong by treating Hotan city, Hotan county and Hotan prefecture as one place, when they are three different tiers, and the county government sat inside the city until 2023.",
     layout:
       "The city sits within the oasis belt of two rivers, the White Jade River (Yurungkash) and the Black Jade River (Karakash), which join north of the city to form the Hotan River, flowing on north across the Taklamakan. The centre holds government and commerce, with the Hotan Bazaar to the north-east; the old quarter retains some traditional Uyghur housing.",
+    // gettingAround sources: 原文写「出租车约20元可达 / a taxi there costs around ¥20」——没有年份、没有来源，出租车运价又由地方价格主管部门定期调整。按红线不补一个查不到出处的金额，改为写车程。核实日 2026-09-07
     gettingAround:
-      "Hotan Kungang Airport (HTN) is about 11.5 km south-west of the city; a taxi there costs around ¥20. Flights to Ürümqi run Monday through Friday, connecting on to major cities nationwide, and there are also direct flights to Kashgar. Daily life runs on the same later schedule as Kashgar, roughly two hours behind eastern China; the climate is warm-temperate continental and arid, with windblown dust common, especially in spring.",
+      "Hotan Kungang Airport (HTN) is about 11.5 km south-west of the city; a taxi takes about ten minutes. Flights to Ürümqi run Monday through Friday, connecting on to major cities nationwide, and there are also direct flights to Kashgar. Daily life runs on the same later schedule as Kashgar, roughly two hours behind eastern China; the climate is warm-temperate continental and arid, with windblown dust common, especially in spring.",
     culture:
       "Mainly Uyghur, with Uyghur and Mandarin both spoken. The Hotan Bazaar and its jade market are central to local life; buy jade from established dealers rather than the loose \"desert jade\" or \"river jade\" sold roadside. Dress modestly at mosques and other religious sites. Most restaurants are halal. No tipping.",
     seeAndDo:
@@ -12450,8 +12528,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "chile-overview": {
+    // identity sources: INE Chile《Estimaciones y Proyecciones de Población, base 2024》（2026-01-28 发布）：2024-04-16 普查基准日经人口学方法调节后的常住人口 19,871,764 人。https://www.ine.gob.cl/docs/default-source/prensa-y-comunicacion/eepp2024.pdf
+    //   **本轮唯一一个官方内部两个数字并存的国家**：2024 年普查原始计数 18,480,432 人（未经漏报调整），INE 估计漏报率约 7%，调节后得到 1987 万；正文取 INE 最终采用的 population base，不取普查原始计数。核实日 2026-09-07，来源级别 1
     identity:
-      "Chile is a long, narrow country on the southwestern edge of South America, stretching roughly 4,300 km north to south while rarely exceeding 200 km east to west — one of the most elongated countries in the world. Population is about 19.6 million, capital Santiago, official language Spanish (with a strong local accent and rich slang). The terrain runs from the driest desert on Earth in the north, through a Mediterranean-climate wine belt in the center, to a rainy lake district, Patagonian ice fields, and fjords in the south, plus the remote Pacific outpost of Easter Island.",
+      "Chile is a long, narrow country on the southwestern edge of South America, stretching roughly 4,300 km north to south while rarely exceeding 200 km east to west — one of the most elongated countries in the world. The adjusted resident-population estimate is about 19.87 million for 2024 (INE Chile), capital Santiago, official language Spanish (with a strong local accent and rich slang). The terrain runs from the driest desert on Earth in the north, through a Mediterranean-climate wine belt in the center, to a rainy lake district, Patagonian ice fields, and fjords in the south, plus the remote Pacific outpost of Easter Island.",
     layout:
       "The country breaks roughly into five bands: Norte Grande (the Atacama Desert, salt flats, and geysers), Norte Chico (Coquimbo, a stargazing and wine-growing region), central Chile (the core around Santiago and Valparaíso, most densely populated), the southern Lake District (volcanoes, lakes, and German-settler towns), and Patagonia (ice fields, fjords, Torres del Paine National Park) — plus two special Pacific territories, Easter Island and the Juan Fernández Archipelago.",
     gettingAround:
