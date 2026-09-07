@@ -93,8 +93,19 @@
 | 加拿大 Statistics Canada | 人口估计 | **按季**，7 月 1 日为年度基准 | 2025-07-01 |
 | 智利 INE | Estimaciones y Proyecciones（EEPP） | **与普查周期绑定**，不是年度例行（base 2017 用了近十年，base 2024 于 2026-01-28 发布） | 2026-01-28 |
 | 澳大利亚 ABS | National, state and territory population | **按季** | 2025-09-30 |
-| 澳大利亚 ABS | **Regional population**（LGA / SUA / UCL 的 ERP） | 年度，6 月 30 日基准 —— 城市级人口应当用这个，**不是**五年一次的普查数 | 见 known-errors C6-d |
+| 澳大利亚 ABS | **Regional population**（LGA / SUA / UCL 的 ERP） | **每年 3 月下旬**发布上一财年（截至 6 月 30 日）的数 —— 城市级人口应当用这个，**不是**五年一次的普查数 | 2026-03-31 发布 2024–25 财年（ERP 时点 2025-06-30）；下一期预计 2027-03 |
 | 新西兰 Stats NZ | National population estimates | **按季** | 2025-12-31 |
+
+## 一手数据表直接可取的来源
+
+有些机构把原始数据表放在公网，能直接读出精确值，比找媒体转述可靠得多：
+
+- **ABS Regional population**：LGA 表 `32180DS0002_<财年>.xlsx`、SUA/LGA 时间序列表
+  `32180DS0004_2001-<年>.xlsx`，都挂在
+  `https://www.abs.gov.au/statistics/people/population/regional-population/<财年>/` 下。
+  **LGA 与 SUA/UCL 是两套不同边界**，同一座城市可以差很多（埃斯佩兰斯郡 14,663 vs
+  镇区 12,580；奥尔伯里市 59,538 vs 奥尔伯里—沃东加两城城区 102,435），
+  取数时必须对准正文用的那一个，并在正文里把口径写出来。
 
 ## 已知的空洞
 
