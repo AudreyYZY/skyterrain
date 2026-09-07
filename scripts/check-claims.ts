@@ -21,15 +21,13 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { collectTtsSegments } from "../lib/tts-manifest.ts";
 import { splitSentences } from "../lib/sentences.ts";
+import { HAS_YEAR, FRESH_SINCE, isMissingYear, isStale } from "./claim-rules.ts";
 
 const BASELINE_PATH = "docs/claims-baseline.json";
 const UPDATE = process.argv.includes("--update-baseline");
 const SHOW = Number(process.argv.find((a) => a.startsWith("--show="))?.slice(7) ?? 8);
 
 // ── 规则 ───────────────────────────────────────────────────────────────
-
-/** 句子里出现年份就算交代了时点 */
-const HAS_YEAR = /(1[89]|20)\d{2}/;
 
 /**
  * C6：**人口**这类逐年变化的量。
@@ -103,43 +101,6 @@ const DEFER_EN = /\b(check|refer to|consult)\b[^.;!?]{0,60}\b(latest|current|off
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;
 
-/**
- * C6-d：**数字有年份，但不是最新一期**。
- *
- * 这条是用户在 2026-09 提出来的：「今年已经是 2026 年了，为什么这些数据还用 2024 年的？」
- * ——补上年份只解决了「不知道是哪一年」，没解决「拿的不是最新一期」。
- *
- * 各国统计机构的节奏基本是：N 年的年度数据在 N+1 年上半年发布。所以在 2026 年，
- * 最新一期应当是 2025 年的数；写着 2024 年就是**落后了整整一期**。
- * 阈值因此定成 `year >= 当前年 - 1`：2026 年时 2025 与 2026 的数放过，2024 及更早报出来。
- *
- * **例外是普查**：人口普查五年或十年一次（菲律宾 2024 年普查就是最新一期），
- * 句子里点明了「普查 / census」的放过。
- *
- * 只对易过期量（人口）生效 —— 不然「1937 年迁都重庆」这种历史叙述会被全部误报。
- */
-/**
- * 「定义上就不逐年更新」的系列 —— 报出来只会让人去改一个本来就正确的句子。
- *
- *   普查：五年或十年一次（菲律宾 2024 年普查、澳大利亚 2021 年普查、英国建成区口径都是）
- *   法国 INSEE 的 populations de référence（原 populations légales）：**按法律就是滞后三年**
- *     —— 2026-01-01 生效的那一版参照的是 2023 年，这不是过期，是这套口径的定义。
- *
- * 加豁免的前提是**句子里点明了口径**（写「法定人口」「参照人口」「人口普查」），
- * 只写个年份是不够的 —— 这样豁免本身也是一种交代。
- */
-const CENSUS_ZH = /(普查|人口普查|国势调查|法定人口|参照人口)/;
-const CENSUS_EN = /\b(census|legal population|reference population)\b/i;
-const CURRENT_YEAR = new Date().getFullYear();
-/** 早于这一年的统计时点视为「不是最新一期」 */
-const FRESH_SINCE = CURRENT_YEAR - 1;
-
-/** 句子里出现的最大年份 —— 用它当这句话的统计时点 */
-function latestYear(s: string): number | null {
-  const ys = [...s.matchAll(/(?:1[89]|20)\d{2}/g)].map((m) => Number(m[0]));
-  return ys.length ? Math.max(...ys) : null;
-}
-
 type Rule =
   | "C6-人口数字缺年份"
   | "C6d-数字不是最新一期"
@@ -170,16 +131,11 @@ for (const seg of segments) {
   }
 
   for (const s of splitSentences(seg.text)) {
-    const perishable = zh ? PERISHABLE_ZH.test(s) : PERISHABLE_EN.test(s);
-    if (!HAS_YEAR.test(s) && perishable) {
+    if (isMissingYear(s, zh)) {
       hits.push({ ...seg, rule: "C6-人口数字缺年份", sentence: s });
     }
-    // 有年份的，再看这个年份是不是最新一期
-    if (HAS_YEAR.test(s) && perishable && !(zh ? CENSUS_ZH : CENSUS_EN).test(s)) {
-      const y = latestYear(s);
-      if (y !== null && y < FRESH_SINCE) {
-        hits.push({ ...seg, rule: "C6d-数字不是最新一期", sentence: s });
-      }
+    if (isStale(s, zh)) {
+      hits.push({ ...seg, rule: "C6d-数字不是最新一期", sentence: s });
     }
     // 「之一」「按…计」这类限定语一出现就放过 —— 达沃「按行政区划面积计菲律宾最大」
     // 是正确写法的范例，不该被报出来。
@@ -217,7 +173,7 @@ const RULES: Rule[] = [
 
 console.log("易过期断言扫描（对应 docs/known-errors.md 的错误类型）");
 console.log(`  扫描了 ${segments.length} 段正文`);
-console.log(`  今年 ${CURRENT_YEAR}，统计时点早于 ${FRESH_SINCE} 年的算「不是最新一期」（普查除外）\n`);
+console.log(`  今年 ${FRESH_SINCE + 1}，统计时点早于 ${FRESH_SINCE} 年的算「不是最新一期」（普查、法定人口等定义上滞后的口径除外）\n`);
 
 for (const rule of RULES) {
   const n = counts[rule] ?? 0;

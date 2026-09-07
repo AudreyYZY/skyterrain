@@ -12,6 +12,7 @@
 import { collectTtsSegments } from "../lib/tts-manifest.ts";
 import { splitSentences } from "../lib/sentences.ts";
 import { CITY_REGISTRY } from "../lib/places-registry.ts";
+import { isMissingYear, isStale } from "./claim-rules.ts";
 
 const args = process.argv.slice(2);
 const val = (k: string) => {
@@ -23,20 +24,6 @@ const COUNTRY = val("--country");
 const IDS = val("--ids")?.split(",");
 const ONLY_COUNTS = args.includes("--countries");
 
-const HAS_YEAR = /(1[89]|20)\d{2}/;
-const PERISHABLE_ZH =
-  /(常住人口|户籍人口|城区人口|都会区人口|市区人口|人口|居民)[^。；！？]{0,20}?\d[\d.,]*\s*(万|亿|人|户)/;
-const PERISHABLE_EN =
-  /\b(population|inhabitants|residents)\b[^.;!?]{0,40}?[\d.,]+\s*(million|billion|thousand|people|residents|inhabitants)/i;
-const CENSUS_ZH = /(普查|人口普查|国势调查)/;
-const CENSUS_EN = /\bcensus\b/i;
-const FRESH_SINCE = new Date().getFullYear() - 1;
-
-const latestYear = (s: string): number | null => {
-  const ys = [...s.matchAll(/(?:1[89]|20)\d{2}/g)].map((m) => Number(m[0]));
-  return ys.length ? Math.max(...ys) : null;
-};
-
 const { segments } = await collectTtsSegments();
 interface Hit { id: string; section: string; lang: string; sentence: string; country: string }
 const hits: Hit[] = [];
@@ -44,15 +31,7 @@ const hits: Hit[] = [];
 for (const seg of segments) {
   const zh = seg.lang === "zh-CN";
   for (const s of splitSentences(seg.text)) {
-    const perishable = zh ? PERISHABLE_ZH.test(s) : PERISHABLE_EN.test(s);
-    if (!perishable) continue;
-    let match = false;
-    if (RULE === "C6") match = !HAS_YEAR.test(s);
-    else if (RULE === "C6d") {
-      if (!HAS_YEAR.test(s) || (zh ? CENSUS_ZH : CENSUS_EN).test(s)) continue;
-      const y = latestYear(s);
-      match = y !== null && y < FRESH_SINCE;
-    }
+    const match = RULE === "C6" ? isMissingYear(s, zh) : isStale(s, zh);
     if (!match) continue;
     const country = CITY_REGISTRY.find((c) => c.id === seg.id)?.country ?? "(概览/其他)";
     hits.push({ id: seg.id, section: seg.section, lang: seg.lang, sentence: s, country });
