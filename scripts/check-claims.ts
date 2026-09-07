@@ -118,8 +118,18 @@ const RUN_ON = /[a-z)][.!?][A-Z]/;
  *
  * 只对易过期量（人口）生效 —— 不然「1937 年迁都重庆」这种历史叙述会被全部误报。
  */
-const CENSUS_ZH = /(普查|人口普查|国势调查)/;
-const CENSUS_EN = /\bcensus\b/i;
+/**
+ * 「定义上就不逐年更新」的系列 —— 报出来只会让人去改一个本来就正确的句子。
+ *
+ *   普查：五年或十年一次（菲律宾 2024 年普查、澳大利亚 2021 年普查、英国建成区口径都是）
+ *   法国 INSEE 的 populations de référence（原 populations légales）：**按法律就是滞后三年**
+ *     —— 2026-01-01 生效的那一版参照的是 2023 年，这不是过期，是这套口径的定义。
+ *
+ * 加豁免的前提是**句子里点明了口径**（写「法定人口」「参照人口」「人口普查」），
+ * 只写个年份是不够的 —— 这样豁免本身也是一种交代。
+ */
+const CENSUS_ZH = /(普查|人口普查|国势调查|法定人口|参照人口)/;
+const CENSUS_EN = /\b(census|legal population|reference population)\b/i;
 const CURRENT_YEAR = new Date().getFullYear();
 /** 早于这一年的统计时点视为「不是最新一期」 */
 const FRESH_SINCE = CURRENT_YEAR - 1;
