@@ -455,6 +455,9 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
      写 N−1 年的数就是落后一期。`npm run check:claims` 的 `C6d` 会把「统计时点早于
      当前年 − 1」的句子逐条报出来（普查除外）。核实时要一并问清该机构的**发布月份**，
      记进注释，好让下一轮知道什么时候回来刷新（known-errors C6-d）。
+     **各机构的发布月份汇总在 [`docs/data-refresh-calendar.md`](docs/data-refresh-calendar.md)**；
+     新增一个国家时顺手把它的统计机构补进那张表——发布节奏是核实过程的副产品，
+     当时不记，下次还得再查一遍。
   ①-c **不要拿国际机构的推算冒充本国官方数字**：UN World Population Prospects /
      World Bank 是模型推算，本国统计机构是登记或普查，可以差几百万（known-errors C6-b）。
   ② 最高级与排名要么给限定语（「之一」「按行政区划面积计」），要么不写；
