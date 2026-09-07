@@ -31,12 +31,22 @@ export interface Vec3 {
 
 // ── 常量 ──────────────────────────────────────────────────────────────
 
-/** 期望的巡航地速（米/秒）。25 km/s 下 300 秒能飞 7,500 km，覆盖多数洲际航线。 */
+/** 期望的巡航地速（米/秒）。25 km/s 下 180 秒能飞 4,500 km，覆盖多数国内航线。 */
 const TARGET_GROUND_SPEED = 25_000;
 /** 再短的航线也至少飞这么久，否则近距离航线一晃就到 */
 const MIN_FLIGHT_SEC = 90;
-/** 常规上限 */
-const MAX_FLIGHT_SEC = 300;
+/**
+ * 常规上限。文档里写的是「每条航线一次 ≤3 分钟」，这里原本却放到 300 秒 ——
+ * 于是旅游模式下的洲际航线（解说只有 60–80 秒，讲的是签证、季节、饮食，不描述
+ * 沿途地貌）镜头要飞满五分钟，解说播完之后还有三分半钟没有声音、看不出飞到哪了。
+ * 收到 180 秒：八千公里对应约 47 km/s，仍远低于自检里量到的地速红线。
+ */
+const MAX_FLIGHT_SEC = 180;
+/**
+ * 解说播完之后最多再干飞这么久。超过这个长度的静默平移读起来就是「卡住了」，
+ * 而不是「还在飞」。
+ */
+const MAX_SILENT_TAIL_SEC = 75;
 /** 为压住峰值地速而延长时长时的硬上限 */
 const HARD_MAX_FLIGHT_SEC = 420;
 
@@ -564,9 +574,13 @@ export function planRouteFlight(
   // 只保留最短时长兜底；镜头因此可能飞得快，由取景高度去吸收（高度跟着峰值地速走）。
   // 未锚定的航线维持原样：按距离定时长，慢慢看。
   const byDistance = clamp(total / TARGET_GROUND_SPEED, MIN_FLIGHT_SEC, MAX_FLIGHT_SEC);
+  // 未锚定时按距离定时长「慢慢看」，但不能让解说播完之后还干飞太久：旅游模式的
+  // 解说讲的是签证、季节、饮食，只有一分钟上下，而洲际航线按距离要飞三分钟——
+  // 剩下两分钟没有声音、画面又在匀速平移，用户只会觉得点了一下之后卡住了。
+  const paced = Math.min(byDistance, narrationSec + MAX_SILENT_TAIL_SEC);
   let durationSec = anchoring
     ? Math.max(MIN_FLIGHT_SEC, narrationSec)
-    : Math.max(byDistance, Math.max(0, narrationSec));
+    : Math.max(MIN_FLIGHT_SEC, paced, Math.max(0, narrationSec));
 
   /** 不锚定时的均匀映射，同时用作锚定映射的限速基准 */
   const uniformMap = (sec: number) =>

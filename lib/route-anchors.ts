@@ -39,6 +39,15 @@ const EN_CORE_STOPWORDS = new Set([
 const EN_GENERIC_SUFFIX =
   / (Desert|Mountains|Range|Plain|Plains|Plateau|Basin|Valley|Gorge|Delta|Peninsula|Islands|Island|Sea|Strait|Lake|River|Coast|Steppe|Uplands|Highlands)$/i;
 
+/**
+ * 英文按词匹配，不能用裸的 includes：「Easter」会命中「eastern South Pacific」，
+ * 于是一句在讲南太平洋的话被判成已经飞到复活节岛。
+ */
+function containsWord(haystackLower: string, needle: string): boolean {
+  const esc = needle.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(^|[^a-z0-9])${esc}([^a-z0-9]|$)`).test(haystackLower);
+}
+
 export interface AnchorWaypoint {
   /** 在 resolveRouteWaypoints 结果中的下标 */
   index: number;
@@ -85,11 +94,14 @@ export function matchWaypointInSentence(
     const nm = nm0.replace(PARENTHETICAL_SUFFIX, "").trim();
     if (!nm) continue;
     if (en) {
-      if (hay.includes(nm.toLowerCase())) return w.index;
+      if (containsWord(hay, nm)) return w.index;
       // 「Gobi Desert」→「Gobi」：英文通名后缀同样可省
       const core = nm.replace(EN_GENERIC_SUFFIX, "").trim();
-      const lower = core.toLowerCase();
-      if (core.length >= 4 && !EN_CORE_STOPWORDS.has(lower) && hay.includes(lower)) {
+      if (
+        core.length >= 4 &&
+        !EN_CORE_STOPWORDS.has(core.toLowerCase()) &&
+        containsWord(hay, core)
+      ) {
         return w.index;
       }
       continue;
@@ -111,14 +123,30 @@ export function deriveAnchors(
   narration: string,
   waypoints: AnchorWaypoint[],
   lang: "zh-CN" | "en-US",
+  opts: {
+    /**
+     * 把第一句当作起点，忽略它命中的地名。
+     *
+     * 开场白几乎都在预告整条航线要飞越什么、终点是哪（「终点是赤道附近的
+     * 爪哇岛」「Santiago to Easter Island is…」）——那是预告，不是镜头此刻
+     * 的位置。直接采信不只让首句跳到半路，还会顺着「没命中就沿用上一句」
+     * 一路带偏后面几句，直到下一次真正命中为止。
+     */
+    firstSentenceIsStart?: boolean;
+  } = {},
 ): AnchorResult {
   const sentences = splitSentences(narration);
   const perSentence: number[] = [];
   const hits = new Set<number>();
   let matched = 0;
   let last = -1;
-  for (const s of sentences) {
-    const hit = matchWaypointInSentence(s, waypoints, lang);
+  for (let i = 0; i < sentences.length; i++) {
+    if (i === 0 && opts.firstSentenceIsStart) {
+      last = 0;
+      perSentence.push(0);
+      continue;
+    }
+    const hit = matchWaypointInSentence(sentences[i]!, waypoints, lang);
     if (hit >= 0) {
       matched++;
       hits.add(hit);
