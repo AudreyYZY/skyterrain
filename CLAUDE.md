@@ -438,9 +438,12 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 - **`/verify-content`** —— 每批新增内容之后跑的联网核实流程
   （[`.claude/skills/verify-content/SKILL.md`](.claude/skills/verify-content/SKILL.md)），
   分批交给 `content-verifier` 子代理（[`.claude/agents/content-verifier.md`](.claude/agents/content-verifier.md)）
-  逐条对权威来源，结论写回 [`docs/verification-ledger.md`](docs/verification-ledger.md)。
-  **拿不准就记 unknown，不要补一个看起来合理的答案** —— 犯过的错里相当一部分正是
-  "看起来很合理"。
+  逐条对权威来源。**拿不准就记 unknown，不要补一个看起来合理的答案** ——
+  犯过的错里相当一部分正是"看起来很合理"。
+- **`npm run verify:report -- <findings.json>`** —— 把一轮核实结果**机械地**落地，
+  不要手工开 issue（手做一定会重复开、忘记关）：当场修掉的自动评论 + 关闭对应 issue；
+  查明有误但找不到替代值的自动开 issue（正文埋 `<!-- verify-key: -->` 去重，
+  重复跑不会重复开、已关闭的会重开）；每轮在总 issue 下留进度评论并追加台账一行。
 - **写新内容时的硬性习惯**（这几条是从实际犯过的错倒推出来的）：
   ① 人口/面积一类数字**必须带年份与统计口径**，并在条目上方写 `// <字段> sources:` 注释；
   ② 最高级与排名要么给限定语（「之一」「按行政区划面积计」），要么不写；

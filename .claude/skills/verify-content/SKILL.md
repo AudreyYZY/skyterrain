@@ -45,6 +45,12 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 每批 8–12 个条目，用 `Agent` 工具、`subagent_type: "content-verifier"`。
 **多批可以同时开**（互不依赖），但不要一次开超过 4 个。
 
+> **坑**：`.claude/agents/content-verifier.md` 是在会话启动时加载的。如果这个文件是
+> 本次会话里刚创建/刚改的，`subagent_type: "content-verifier"` 会报
+> `Agent type not found` —— 重开一个会话即可。临时办法是用 `general-purpose`
+> 并把 `content-verifier.md` 里的来源优先级、返回格式、红线**原样贴进 prompt**，
+> 效果一样，只是每次都要贴。
+
 给子代理的 prompt 里必须包含：
 - 条目的 `kind` / `id`
 - **要核的原文**（把句子贴进去，不要让它自己去读文件猜）
@@ -68,23 +74,59 @@ npx tsc --noEmit && npm run lint
 
 改了航线解说文字还要 `npm run gen:anchors && npm run check:anchors`。
 
-### 4. 写回台账
+### 4. 落地：开 issue、关 issue、记台账 —— 交给脚本，不要手做
 
-在 `docs/verification-ledger.md` 追加一行本轮记录，并把 `lastVerifiedCommit:`
-更新为当前 HEAD。台账要记：日期、范围、核了多少条、ok/wrong/unknown 各多少、
-改了什么、还欠什么。
+把这一轮的结论写成一个 findings JSON，然后：
 
-### 5. 新错误类型 → 补进错误台账 + 开 issue
+```bash
+npm run verify:report -- <findings.json> --dry-run   # 先看它打算做什么
+npm run verify:report -- <findings.json>             # 真做
+```
+
+脚本把三件事做成机械动作，**不要手工开 issue** —— 手做一定会重复开、忘记关、
+正文格式各写各的：
+
+| 这一条的 `resolution` | 脚本做什么 |
+|---|---|
+| `fixed` | 之前为它开过 issue → 评论写清怎么修的 + 来源，然后**关掉**；没开过就不开（当场修完还开一个再关只是噪音） |
+| `open` / `blocked` | **开一个 issue**，正文里埋 `<!-- verify-key: ... -->` 去重；已经开着的只补一条复核评论；已关闭的会**重开** |
+| 每一轮 | 在总 issue（`umbrella`）下留一条进度评论 + 往 `docs/verification-ledger.md` 追加一行 + 更新 `lastVerifiedCommit` |
+
+findings JSON 的形状：
+
+```json
+{
+  "round": "2026-09-07 中国国内航线批5",
+  "scope": "routes · 中国国内",
+  "umbrella": 143,
+  "findings": [
+    {
+      "key": "routes/sha-hrb/flight",
+      "kind": "routes", "id": "sha-hrb", "field": "flight",
+      "verdict": "wrong",
+      "claim": "MU5620 / A321",
+      "finding": "MU5620 实际飞的是…（含年份与来源级别）",
+      "source": "https://…",
+      "resolution": "blocked",
+      "note": "找不到可靠替代航班号，已标 status: wrong",
+      "errorClass": "A1"
+    }
+  ]
+}
+```
+
+`key` 是去重键，**同一个键永远只有一个 issue**。字段含义见
+[`scripts/verify-issues.ts`](../../../scripts/verify-issues.ts) 顶部注释。
+
+### 5. 新错误类型 → 补进错误台账
 
 如果这轮发现的错误**归不进 `docs/known-errors.md` 现有的任何一类**，那就是新类型：
 
 1. 在 `known-errors.md` 新开一节，写清症状 / 实例 / 根因 / 修法 / **防线**
 2. 防线只有三种可能：加一条 `check:*` 断言、写进这个流程、或者老实写"目前无防线"
-3. 开一个 GitHub issue（标签 `data-error`），正文第一行写它属于哪一类
+3. 把新类的敞口 issue 号补进 `known-errors.md` 顶部的索引表
 
-```bash
-gh issue create --label data-error --title "..." --body "..."
-```
+（单条错误的 issue 由 `verify:report` 自动开，这一步只管**类型**层面的登记。）
 
 ## 红线
 

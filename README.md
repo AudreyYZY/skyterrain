@@ -173,7 +173,8 @@ npm run check:routes    # 航点单调性、解说时长、机型与数据是否
                         # 未核实航线的解说不得点名机型或航班号
 npm run check:flight    # 镜头运动断言（地速/高度比、加速度、转向、干飞时长）
 npm run check:anchors   # 解说逐句锚点表与解说句数一致、镜头滞后统计
-npm run check:claims    # 易过期断言扫描：人口/面积数字缺年份、未加限定的最高级
+npm run check:claims   # 易过期断言扫描：人口数字缺年份、主观最高级、排名断言缺口径
+npm run verify:report -- <findings.json>   # 把一轮核实结果落地：开/关 issue + 记台账
 ```
 
 **这些脚本只能查"自相矛盾"和"不该出现的表述"，查不了"写的内容对不对"。**
@@ -188,10 +189,18 @@ npm run check:claims    # 易过期断言扫描：人口/面积数字缺年份�
 /verify-content cities kul-lgk kch-myy   # 或指定范围
 ```
 
-它做三件事：算出这轮改了哪些条目（git diff + 核实台账）→ 分批交给
-`content-verifier` 子代理逐条联网核实（官方来源优先）→ 把结论写回
-[`docs/verification-ledger.md`](docs/verification-ledger.md)，事实错误当场改掉、
-拿不准的记成待办。规则见 [`.claude/skills/verify-content/SKILL.md`](.claude/skills/verify-content/SKILL.md)。
+它做四件事：算出这轮改了哪些条目（git diff + 核实台账）→ 分批交给
+`content-verifier` 子代理逐条联网核实（官方来源优先，拿不准就报 unknown，
+不许补一个看起来合理的答案）→ 事实错误当场改掉 → 结论交给
+`npm run verify:report` **自动落地**：
+
+- 当场修掉的 → 之前若为它开过 issue，评论写清怎么修的 + 来源，然后**关掉**
+- 没修掉的（查明有误但找不到替代值）→ **自动开 issue**，正文埋去重键，
+  重复跑不会重复开；已关闭的若问题重现会**自动重开**
+- 每一轮 → 在对应的总 issue 下留进度评论 + 往
+  [`docs/verification-ledger.md`](docs/verification-ledger.md) 追加一行
+
+规则见 [`.claude/skills/verify-content/SKILL.md`](.claude/skills/verify-content/SKILL.md)。
 
 ### 发现错误了怎么办
 

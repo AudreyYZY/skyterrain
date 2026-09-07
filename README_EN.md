@@ -203,7 +203,8 @@ npm run check:places   # city coordinates / IATA / source / bilingual completene
 npm run check:routes   # waypoint monotonicity, narration length, verification trail, aircraft consistency
 npm run check:flight   # camera-motion assertions (speed/height ratio, acceleration, turn rate, silent tail)
 npm run check:anchors  # sentence→waypoint anchor tables, camera-lag statistics
-npm run check:claims   # perishable-claim scan (population/area figures with no year, unqualified superlatives)
+npm run check:claims   # perishable-claim scan (population figures with no year, subjective superlatives, rank claims)
+npm run verify:report -- <findings.json>   # land a verification round: open/close issues + ledger
 ```
 
 **These only catch self-contradiction and forbidden phrasing — they cannot tell you whether a
@@ -219,10 +220,18 @@ After adding terrain / cities / routes, check the new material against authorita
 ```
 
 It works out what changed (git diff + the ledger), hands the entries to the
-`content-verifier` subagent in batches to check online against official sources first, and
-writes the verdicts back to [`docs/verification-ledger.md`](docs/verification-ledger.md) —
-fixing outright errors on the spot and recording anything uncertain as a to-do. Rules live in
-[`.claude/skills/verify-content/SKILL.md`](.claude/skills/verify-content/SKILL.md).
+`content-verifier` subagent in batches to check online against official sources first
+(reporting `unknown` rather than inventing a plausible answer), fixes outright errors on the
+spot, and then hands the verdicts to `npm run verify:report`, which lands them mechanically:
+
+- fixed → if an issue was open for it, comment with the fix and the source, then **close** it
+- not fixed (wrong but no reliable replacement found) → **open an issue** automatically, with
+  a dedupe key in the body so re-runs don't duplicate it, and **reopen** it if the problem
+  recurs after being closed
+- every round → a progress comment on the umbrella issue plus a row appended to
+  [`docs/verification-ledger.md`](docs/verification-ledger.md)
+
+Rules live in [`.claude/skills/verify-content/SKILL.md`](.claude/skills/verify-content/SKILL.md).
 
 ### Found an error?
 
