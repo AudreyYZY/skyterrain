@@ -6,11 +6,43 @@
   "descriptionEn": "Chilean Central Valley",
   "depCountry": "chile",
   "arrCountry": "chile",
-  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA9", "aircraft": "Airbus A320", "depIata": "SCL", "arrIata": "CCP", "durationMin": 55 },
+  "flight": {
+    "airline": "智利南美航空",
+    "airlineEn": "LATAM Airlines Chile",
+    "flightNo": "LA9",
+    "aircraft": "Airbus A321",
+    "depIata": "SCL",
+    "arrIata": "CCP",
+    "durationMin": 55
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
-    { "kind": "terrain", "terrainId": "central-valley-chile" },
-    { "kind": "city", "id": "ccp", "name": "康塞普西翁", "nameEn": "Concepción", "lat": -36.7727, "lon": -73.0631, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "scl",
+      "name": "圣地亚哥",
+      "nameEn": "Santiago",
+      "lat": -33.393,
+      "lon": -70.7858,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-valley-chile"
+    },
+    {
+      "kind": "city",
+      "id": "ccp",
+      "name": "康塞普西翁",
+      "nameEn": "Concepción",
+      "lat": -36.7727,
+      "lon": -73.0631,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airnavradar.com/data/flights/LA9",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**「LA9 是洲际号被套用」的怀疑不成立** —— LA9 确实是 SCL—康塞普西翁的国内短途（429km、约 69min，与记录量级相符）。**只有机型错**：现查 A321-211。来源级别 3"
+  }
 }

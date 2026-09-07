@@ -6,11 +6,43 @@
   "descriptionEn": "South China Sea · Mount Kinabalu",
   "depCountry": "malaysia",
   "arrCountry": "malaysia",
-  "flight": { "airline": "亚洲航空", "airlineEn": "AirAsia", "flightNo": "AK5109", "aircraft": "Airbus A320", "depIata": "KUL", "arrIata": "BKI", "durationMin": 150 },
+  "flight": {
+    "airline": "亚洲航空",
+    "airlineEn": "AirAsia",
+    "flightNo": "AK5108",
+    "aircraft": "Airbus A320",
+    "depIata": "KUL",
+    "arrIata": "BKI",
+    "durationMin": 150
+  },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "kul", "name": "吉隆坡", "nameEn": "Kuala Lumpur", "lat": 2.7456, "lon": 101.7099, "airport": true },
-    { "kind": "terrain", "terrainId": "mount-kinabalu" },
-    { "kind": "city", "id": "bki", "name": "亚庇", "nameEn": "Kota Kinabalu", "lat": 5.9372, "lon": 116.0517, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "kul",
+      "name": "吉隆坡",
+      "nameEn": "Kuala Lumpur",
+      "lat": 2.7456,
+      "lon": 101.7099,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-kinabalu"
+    },
+    {
+      "kind": "city",
+      "id": "bki",
+      "name": "亚庇",
+      "nameEn": "Kota Kinabalu",
+      "lat": 5.9372,
+      "lon": 116.0517,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ak5108/kuala-lumpur/kota-kinabalu/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**方向记反了**：AK5109 实际是亚庇→吉隆坡。吉隆坡→亚庇是 **AK5108**（06:05→08:40，2h35m，A320）。号段规律（AK5xxx=东马航线）本身没错。来源级别 3"
+  }
 }

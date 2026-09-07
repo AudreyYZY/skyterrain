@@ -6,13 +6,51 @@
   "descriptionEn": "Southern Patagonian Ice Field · Chilean Fjords · Strait of Magellan",
   "depCountry": "chile",
   "arrCountry": "chile",
-  "flight": { "airline": "智利南美航空", "airlineEn": "LATAM Airlines Chile", "flightNo": "LA82", "aircraft": "Airbus A321", "depIata": "SCL", "arrIata": "PUQ", "durationMin": 215 },
+  "flight": {
+    "airline": "智利南美航空",
+    "airlineEn": "LATAM Airlines Chile",
+    "flightNo": "LA81",
+    "aircraft": "Airbus A320 / A321（机队混编，按排班浮动）",
+    "depIata": "SCL",
+    "arrIata": "PUQ",
+    "durationMin": 215
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "scl", "name": "圣地亚哥", "nameEn": "Santiago", "lat": -33.3930, "lon": -70.7858, "airport": true },
-    { "kind": "terrain", "terrainId": "campo-de-hielo-sur" },
-    { "kind": "terrain", "terrainId": "chilean-fjords" },
-    { "kind": "terrain", "terrainId": "strait-of-magellan" },
-    { "kind": "city", "id": "puq", "name": "蓬塔阿雷纳斯", "nameEn": "Punta Arenas", "lat": -53.0026, "lon": -70.8546, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "scl",
+      "name": "圣地亚哥",
+      "nameEn": "Santiago",
+      "lat": -33.393,
+      "lon": -70.7858,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "campo-de-hielo-sur"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chilean-fjords"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "strait-of-magellan"
+    },
+    {
+      "kind": "city",
+      "id": "puq",
+      "name": "蓬塔阿雷纳斯",
+      "nameEn": "Punta Arenas",
+      "lat": -53.0026,
+      "lon": -70.8546,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/LATAM+Airlines+Chile-Santiago-Punta+Arenas/LA81",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**方向反了**：LA82 是蓬塔阿雷纳斯→圣地亚哥的**回程**。去程 SCL→PUQ 是 **LA81**（约 2180km、3h25m，与记录量级相符，每周约 6 班）。这是本批唯一一条航班号真错的。机型 A320/A321 混编（含 A320neo），A321 属实但非唯一。来源级别 3"
+  }
 }

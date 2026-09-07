@@ -923,28 +923,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "adl-ayq": {
-    study: {
-    "zh-CN":
-      "阿德莱德飞乌鲁鲁，是从南岸的葡萄酒乡，一路往北飞进澳大利亚的“红色中心”。起飞后不久，右侧出现一列锯齿状的红色山脊，那是弗林德斯山脉——一片被强烈褶皱和侵蚀的古老山地，威尔潘那凹地是一个环形的天然山谷。" +
-      "再往北，地面越来越干，出现一大片白色的盐壳，那是埃尔湖（卡蒂坦达）——澳大利亚最大的湖，也是大陆的最低点，多数年份是干的盐滩，只有大雨后才短暂积水成湖、引来大批水鸟。" +
-      "继续往北进入沙漠腹地。快到目的地时，两组孤立的红色岩体从平坦的沙原上拔起：先是卡塔丘塔（奥尔加山）一簇圆丘状的巨岩，然后是乌鲁鲁——一整块砂岩，周长约十公里，边坡陡直，随日光变换颜色。它们是当地阿南古人的圣地，按传统不攀爬。飞机在旁边的尤拉拉降落。",
-    "en-US":
-      "Adelaide to Uluṟu flies from the wine country of the south coast straight north into the \"Red Centre\" of Australia. Soon after take-off, a jagged line of red ridges appears to the right: the Flinders Ranges, ancient mountains strongly folded and eroded, with Wilpena Pound a ring-shaped natural basin." +
-      " Farther north the land dries out and a great white salt crust appears: Kati Thanda–Lake Eyre, the largest lake in Australia and the lowest point of the continent — a dry salt flat in most years, filling with water only briefly after heavy rain, when it draws great numbers of waterbirds." +
-      " Continuing north into the desert interior, near the destination two isolated groups of red rock rise from the flat sand plain: first Kata Tjuta (the Olgas), a cluster of dome-shaped monoliths, then Uluṟu — a single block of sandstone about ten kilometres round, steep-sided, changing colour with the light. They are sacred places to the Aṉangu traditional owners and, by their wishes, are not climbed. The plane lands at Yulara beside them.",
-    },
-    travel: {
-    "zh-CN":
-      "阿德莱德到乌鲁鲁飞约两个多小时。这里是沙漠气候：白天极热（夏季常超40°C）、夜里凉甚至冷，昼夜温差大，几乎不下雨，苍蝇多（可备防蝇头网）。" +
-      "游客住在尤拉拉的度假村，看日出日落时乌鲁鲁的颜色变化、沿岩石基部步行、去卡塔丘塔的风之谷徒步。乌鲁鲁是阿南古人的圣地，请遵守园区规定：不攀爬、部分区域不拍照。" +
-      "带足水（每人每天数升）、防晒、遮阳帽和结实的鞋。夏季正午不宜户外活动，多数徒步要一早出发。",
-    "en-US":
-      "Adelaide to Uluṟu is a little over two hours. This is desert climate: extremely hot by day (often above 40°C in summer), cool or cold at night, a wide day-to-night range, almost no rain, and many flies (a fly net helps)." +
-      " Visitors stay at the Yulara resort, watch Uluṟu change colour at sunrise and sunset, walk around the base of the rock, and hike the Valley of the Winds at Kata Tjuta. Uluṟu is a sacred place to the Aṉangu — follow the park's rules: no climbing, and no photography in some areas." +
-      " Carry plenty of water (several litres per person per day), sun protection, a sun hat and sturdy shoes. Midday in summer is not for outdoor activity, and most walks should start early.",
-    },
-  },
 
   "bne-drw": {
     study: {
@@ -2138,28 +2116,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "cdg-str": {
-    study: {
-    "zh-CN":
-      "巴黎飞斯特拉斯堡，是一条很短的东西向航线，从巴黎盆地飞到莱茵河边的阿尔萨斯。起飞后先越过巴黎盆地东缘——塞纳河支流马恩河一带的农田和台地。" +
-      "接近终点，地面隆起成孚日山脉：一列不算太高、被侵蚀得比较圆润的古老山脉，是阿尔萨斯平原和洛林高原之间的分界，山的东坡因为阻挡西风带来的水汽，比西坡更干燥。" +
-      "翻过孚日山，脚下豁然开阔，出现莱茵河谷北段的阿尔萨斯平原：一条南北向的沉积地堑，斯特拉斯堡就在这片平原上、莱茵河支流伊尔河畔，紧邻德国边境。",
-    "en-US":
-      "Paris to Strasbourg is a short east–west flight from the Paris Basin to Alsace on the Rhine. After take-off you cross the eastern edge of the Paris Basin — farmland and terraces around the Marne, a tributary of the Seine." +
-      " Near the end the land rises into the Vosges: a not-very-high, well-rounded old mountain range dividing the Alsace plain from the Lorraine plateau, its eastern slope drier than the western because it blocks moisture carried by westerly winds." +
-      " Over the Vosges the ground opens out below into the Alsace plain, the northern stretch of the Rhine valley: a north–south sedimentary rift, and Strasbourg sits on this plain on the Ill, a Rhine tributary, right on the German border.",
-    },
-    travel: {
-    "zh-CN":
-      "巴黎到斯特拉斯堡飞约五十五分钟，同一时区。高铁约 1.8 小时，很多人会选火车（市中心到市中心更方便）。斯特拉斯堡属大陆性气候，冬冷夏热。" +
-      "靠窗能看到孚日山和阿尔萨斯平原。12 月圣诞市集期间是斯特拉斯堡全年最热闹的时候，也最挤，住宿要早订。" +
-      "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Paris to Strasbourg is about 55 minutes, in the same time zone. High-speed rail is about 1.8 hours, and many people choose the train (more convenient city centre to city centre). Strasbourg has a continental climate, cold winters and hot summers." +
-      " From a window you see the Vosges and the Alsace plain. Strasbourg's December Christmas market is the busiest and most crowded time of year — book lodging early." +
-      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "cdg-nte": {
     study: {
@@ -2368,26 +2324,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "lin-vce": {
-    study: {
-    "zh-CN":
-      "米兰飞威尼斯，是一条很短的东西向航线，全程在波河平原上飞，连接意大利西北和东北两个经济重心。起飞后脚下就是典型的波河平原景观：方格状的农田、纵横的灌渠和密集的村镇，这是意大利人口和农业最密集的一片平地，波河本身及其众多支流在平坦地面上缓缓蜿蜒。" +
-      "接近终点，地面渐渐变得湿润，出现威尼斯潟湖——波河与其他几条河流的泥沙在亚得里亚海边堆积形成的浅水区，被一连串狭长的沙洲和防波堤与外海分隔，潟湖里星罗棋布着上百座小岛。飞机降落前能看到威尼斯运河纵横的城市轮廓从水面上浮现，大运河呈反 S 形贯穿其中。",
-    "en-US":
-      "Milan to Venice is a short east–west flight, entirely over the Po Valley. After take-off, below is the typical Po Valley landscape: a grid of farmland, criss-crossing irrigation channels and dense towns — Italy's most densely populated and farmed plain." +
-      " Near the end the ground gradually grows wetter, and the Venetian Lagoon appears — a shallow-water area built by silt from the Po and other rivers along the Adriatic shore, separated from the open sea by sandbars and breakwaters. Before landing you can see Venice's canal-laced outline rising out of the water.",
-    },
-    travel: {
-    "zh-CN":
-      "米兰到威尼斯飞约三十五分钟，同一时区。高铁约两个半小时，很多人会选火车（更方便、也更环保）。两地气候相近，都属波河平原的温带大陆性气候。" +
-      "靠窗全程是波河平原的农田，接近威尼斯时能看到潟湖的独特形态。威尼斯城内没有汽车，全靠步行和水上巴士。" +
-      "意大利属申根区，多数国家公民短期旅游免签或按申根规定。",
-    "en-US":
-      "Milan to Venice is about 35 minutes, in the same time zone. High-speed rail is about two and a half hours, and many people choose the train (more convenient and greener). Both cities share a similar temperate continental Po Valley climate." +
-      " From a window it is Po Valley farmland the whole way, with the distinctive shape of the lagoon appearing near Venice. There are no cars in Venice — only walking and water buses." +
-      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
-    },
-  },
 
   "lin-nap": {
     study: {
@@ -2607,20 +2543,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "ber-ham": {
-    study: {
-    "zh-CN":
-      "柏林飞汉堡，是一趟很短的航班，全程几乎都在北德平原上空。起飞后脚下是柏林周边平坦的农田与湖泊，很快就进入了典型的北德平原景观——第四纪多次冰期由斯堪的纳维亚冰盖反复塑造留下的低平地形，能看到断续分布的终碛垄和星罗棋布的小湖泊，麦田、牧场和森林大片相间。飞机全程几乎没有明显的地形起伏，一路平缓飞抵汉堡——德国最大的海港城市，坐落在易北河畔，历史上是汉萨同盟的核心城市之一，至今保留着浓厚的港口贸易传统。",
-    "en-US":
-      "Berlin to Hamburg is a short flight, almost entirely over the North German Plain. After take-off the land below is flat farmland and lakes around Berlin, quickly giving way to the classic North German Plain landscape — a low, level terrain repeatedly reshaped by Quaternary glaciation, with discontinuous terminal moraine ridges and scattered small glacial lakes, wheat fields, pasture and forest alternating in broad patches. The flight shows almost no noticeable relief the whole way, gliding gently into Hamburg — Germany's largest seaport, on the Elbe.",
-    },
-    travel: {
-    "zh-CN":
-      "柏林到汉堡飞约50分钟，同一时区，德国铁路网络发达（ICE约1小时40分钟），两地往返飞机和火车都很方便。汉堡属温带海洋性气候，全年温和多雨，随身备雨具。机场离市区约10公里，有地铁直达市中心。汉堡的仓库城和易北爱乐音乐厅是热门景点，旺季建议提前预约参观时段。多数国家公民短期旅游按申根区规定。",
-    "en-US":
-      "Berlin to Hamburg is about 50 minutes, same time zone; Germany's rail network is extensive (ICE about 1 hour 40 minutes), so both flying and the train are convenient between the two cities. Hamburg has a temperate maritime climate, mild and rainy year-round — carry rain gear. The airport is about 10 km from the centre with a metro line running directly there. The Speicherstadt and Elbphilharmonie are popular sights — book visiting slots ahead in peak season. Citizens of most countries follow Schengen-area rules for short visits.",
-    },
-  },
 
   "ber-cgn": {
     study: {
@@ -2831,22 +2753,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "ath-klx": {
-    study: {
-    "zh-CN":
-      "雅典飞卡拉马塔，是一趟深入伯罗奔尼撒半岛南部的航线。起飞后不久，脚下出现科林斯湾——一条因地壳持续拉张形成的狭长海湾，分隔伯罗奔尼撒半岛与希腊大陆，两岸持续拉张的速率在全球大陆裂谷中也较为突出。飞机继续向西南，一座陡然从海边隆起的山脊出现在下方——泰格特斯山，" +
-      "主峰先知伊利亚斯海拔2407米，是希腊本土地势最陡峻的山地之一，山体几乎直接从海边隆起，几乎没有过渡地带，南端逐渐收窄延伸为崎岖的马尼半岛。越过泰格特斯山，飞机降落在迈锡尼湾畔的卡拉马塔——以同名橄榄与橄榄油闻名的城市。",
-    "en-US":
-      "Athens to Kalamata flies deep into the southern Peloponnese. Soon after take-off the Gulf of Corinth appears below, a long, narrow inlet formed by ongoing crustal extension, separating the Peloponnese from mainland Greece. Continuing south-west, a ridge rising abruptly from the sea appears below — Taygetus, its highest peak, Profitis Ilias, reaching 2,407 m, among the steepest terrain on the Greek mainland, its southern end extending into the rugged Mani Peninsula." +
-      " Past Taygetus the flight lands at Kalamata on the Messenian Gulf, a city famous for the olives and olive oil that share its name.",
-    },
-    travel: {
-    "zh-CN":
-      "雅典到卡拉马塔飞约40分钟，两地同一时区，也可选择约3小时的长途巴士。卡拉马塔机场离市区约8公里，有出租车连接市中心。卡拉马塔是探索马尼半岛、迪罗斯洞穴与泰格特斯山区的理想基地，当地出产的卡拉马塔橄榄与橄榄油值得一试。希腊属申根区，多数国家公民短期旅游按申根区规定执行。",
-    "en-US":
-      "Athens to Kalamata is about 40 minutes, same time zone, or about 3 hours by long-distance coach. Kalamata Airport is about 8 km from the centre, with taxis to the city. Kalamata is an ideal base for exploring the Mani Peninsula, the Diros Caves and the Taygetus mountains, and its namesake olives and olive oil are worth trying. Greece is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
-    },
-  },
 
   "lis-fao": {
     study: {
@@ -4568,22 +4474,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "esb-kya": {
-    study: {
-    "zh-CN":
-      "安卡拉飞科尼亚，全程约260公里，飞行时间约50分钟，是中安纳托利亚高原内部一条飞行时间较短的国内航线，也是前往塞尔柱古都最便捷的空中通道之一。飞机离开安卡拉后向南飞行，中安纳托利亚高原开阔的农牧地带在脚下铺展，图兹湖大片近乎纯白的盐壳表面在干旱季节格外醒目。" +
-      "飞机继续向南飞行，逐渐进入科尼亚盆地这片大型内流盆地，规整的灌溉农田景观在脚下延展，最终降落在科尼亚——塞尔柱王朝在安纳托利亚的古都、苏菲派诗人鲁米与旋转苦行僧传统的发源地。",
-    "en-US":
-      "Flying from Ankara to Konya spans about 260 km and about 50 minutes, a short-hop route within the Central Anatolian Plateau. After leaving Ankara the flight heads south, the plateau's open farm-and-pasture land stretching out below, the nearly pure-white salt crust of Lake Tuz especially striking in the dry season." +
-      " The flight continues south, entering the Konya Basin, a large interior-drainage basin, its orderly irrigated farmland extending below, before landing in Konya, the old Seljuk capital in Anatolia and home to the Sufi poet Rumi and the whirling dervish tradition.",
-    },
-    travel: {
-    "zh-CN":
-      "安卡拉到科尼亚飞约50分钟，同一时区，是AJet运营的国内航班之一。埃森博阿机场距安卡拉市区约28公里；科尼亚机场距市区约18公里。",
-    "en-US":
-      "Ankara to Konya is about 50 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Esenboğa Airport is about 28 km from central Ankara; Konya Airport is about 18 km from the city centre.",
-    },
-  },
 
   "zag-spu": {
     study: {
@@ -4897,20 +4787,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "sha-jdz": {
-    study: {
-    "zh-CN":
-      "上海飞景德镇，是一条从长江三角洲一路向西南、抵达昌江河谷的航线。飞机离开虹桥机场，脚下先是长江三角洲——太湖平原与河网交织的滨海平原。向西南飞行，地势逐渐抬升进入江南丘陵——长江以南、南岭以北的低山丘陵地带，黄山正是这片丘陵最具代表性的高峰。景德镇就坐落在江南丘陵西缘的昌江河谷盆地中，自古盛产优质高岭土和瓷石，加上便利的水运，使这里发展成延续千年的制瓷中心，宋真宗以年号“景德”为其赐名，沿用至今。",
-    "en-US":
-      "Shanghai to Jingdezhen flies south-west from the Yangtze Delta to the Chang River valley. Leaving Hongqiao, the flight is first over the Yangtze Delta, a coastal plain woven through with the Tai Lake basin and a dense network of rivers. Heading south-west, the land rises into the Jiangnan Hills, a belt of low hills between the Yangtze and the Nanling whose most iconic high point is Mount Huangshan. Jingdezhen sits in a basin along the Chang River at the western edge of these hills; abundant local deposits of kaolin and porcelain stone, combined with easy river transport, let the city grow into a porcelain-making centre with an unbroken thousand-year history — Song-dynasty emperor Zhenzong granted it his own reign name, 'Jingde,' which it has carried ever since.",
-    },
-    travel: {
-    "zh-CN":
-      "上海到景德镇约1小时30分钟。景德镇有2000多年冶陶史、1000多年官窑史，是公认的“千年瓷都”。陶溪川文创街区由原国营宇宙瓷厂改建而成，是陶瓷创意产业的新地标；古窑民俗博览区展示世界上最古老的制瓷生产作业线。走访陶瓷作坊时，未经许可不要随意触碰坯体或成品。3–5月、9–11月气候最舒适。",
-    "en-US":
-      "Shanghai to Jingdezhen takes about 1 hour 30 minutes. Jingdezhen has more than 2,000 years of pottery-making history and over 1,000 years as an official kiln centre, widely known as the 'Porcelain Capital.' The Taoxichuan creative district, converted from a former state-run porcelain factory, is the newest landmark of the ceramics-creative scene, and the Ancient Kiln Folk Custom Museum shows the world's oldest surviving porcelain production line. When visiting a workshop, don't handle clay or finished pieces without permission. March–May and September–November have the most comfortable weather.",
-    },
-  },
 
   "can-wnz": {
     study: {
@@ -5002,20 +4878,6 @@ export const ROUTE_NARRATION: Record<
     },
   },
 
-  "ctu-goq": {
-    study: {
-    "zh-CN":
-      "成都飞格尔木，是一条从四川盆地翻越横断山脉、穿越青藏高原、抵达柴达木盆地的长距离航线。飞机从成都平原起飞，向西北方向翻越横断山脉——一系列南北走向的高山峡谷，河流深切、山高谷深。越过横断山脉后，飞机进入青藏高原腹地——世界海拔最高的高原，念青唐古拉山雪峰与高原湖泊星罗棋布。飞机继续向西北，地势逐渐下降，进入柴达木盆地——青藏高原东北部的一处巨型高原盆地，盐湖广布，素有“聚宝盆”之称，格尔木正是这片盆地里因盐湖资源和青藏公路建设而兴起的新城。",
-    "en-US":
-      "Chengdu to Golmud crosses the Hengduan Mountains and the Tibetan Plateau on a long haul to the Qaidam Basin. The flight leaves the Chengdu Plain and climbs north-west over the Hengduan Mountains, a belt of north–south-trending high ranges cut by deep river gorges. Beyond the Hengduan the flight enters the heart of the Tibetan Plateau, the world's highest plateau, dotted with the snow peaks of the Nyainqêntanglha range and high-altitude lakes. Flying on north-west, the land gradually descends into the Qaidam Basin, a vast high-altitude basin in the north-east of the Tibetan Plateau known for its extensive salt lakes and nicknamed the 'treasure basin.' Golmud is the new city that grew up in this basin around salt-lake resources and the construction of the Qinghai–Tibet Highway.",
-    },
-    travel: {
-    "zh-CN":
-      "成都到格尔木约2小时30分钟，由西藏航空执飞，是进出青藏高原的重要通道之一。察尔汗盐湖是中国最大盐湖，“万丈盐桥”穿湖而过；昆仑山口是青藏公路的重要关隘，海拔约4768米。格尔木本身海拔约2800米，多数游客无明显高原反应，但继续南行前往昆仑山口方向海拔骤升，需注意适应和保暖。外国游客经此深入西藏，须事先办妥西藏旅行许可证并随有资质旅行社结伴出行。6–9月是最适宜前往的季节。",
-    "en-US":
-      "Chengdu to Golmud takes about 2 hours 30 minutes on Tibet Airlines, one of the key gateways onto the Tibetan Plateau. Qarhan Salt Lake is China's largest salt lake, crossed by the '10,000-zhang salt bridge' causeway; the Kunlun Pass, a key point on the Qinghai–Tibet Highway, sits at about 4,768 m. Golmud itself, at roughly 2,800 m, causes little altitude discomfort for most visitors, but elevation rises sharply heading toward the Kunlun Pass, so acclimatise and dress warmly. Foreign travellers continuing on into Tibet from here must arrange a Tibet Travel Permit in advance and travel with a licensed agency. June–September is the most comfortable season to visit.",
-    },
-  },
 
   // ============================================================
   // 国际 · 中国国际航线 Phase 3 批A（东亚/东南亚：韩国/蒙古/越南/泰国/马来西亚/新加坡）

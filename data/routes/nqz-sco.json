@@ -6,11 +6,43 @@
   "descriptionEn": "Betpak-Dala Desert",
   "depCountry": "kazakhstan",
   "arrCountry": "kazakhstan",
-  "flight": { "airline": "哈萨克斯坦航空", "airlineEn": "Air Astana", "flightNo": "KC921", "aircraft": "Airbus A321", "depIata": "NQZ", "arrIata": "SCO", "durationMin": 165 },
+  "flight": {
+    "airline": "阿斯塔纳航空",
+    "airlineEn": "Air Astana",
+    "flightNo": "KC213",
+    "aircraft": "Airbus A321LR",
+    "depIata": "NQZ",
+    "arrIata": "SCO",
+    "durationMin": 165
+  },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "nqz", "name": "阿斯塔纳", "nameEn": "Astana", "lat": 51.0222, "lon": 71.4669, "airport": true },
-    { "kind": "terrain", "terrainId": "betpak-dala-desert" },
-    { "kind": "city", "id": "sco", "name": "阿克套", "nameEn": "Aktau", "lat": 43.8600, "lon": 51.0922, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "nqz",
+      "name": "阿斯塔纳",
+      "nameEn": "Astana",
+      "lat": 51.0222,
+      "lon": 71.4669,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "betpak-dala-desert"
+    },
+    {
+      "kind": "city",
+      "id": "sco",
+      "name": "阿克套",
+      "nameEn": "Aktau",
+      "lat": 43.86,
+      "lon": 51.0922,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/KZR213/history/20251223/1440Z/UACC/UATE",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**KC921 实际飞的是阿斯塔纳→法兰克福(NQZ→FRA)**。NQZ→SCO 的真实号是 KC213，机型 A321neo/LR（注册 EI-KGG）。实际约 2h16m，与记录 165min 有出入，但主要问题是航班号。来源级别 3"
+  }
 }

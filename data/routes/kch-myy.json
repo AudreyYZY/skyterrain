@@ -6,11 +6,44 @@
   "descriptionEn": "Bornean coastal plain · Niah Caves",
   "depCountry": "malaysia",
   "arrCountry": "malaysia",
-  "flight": { "airline": "婆罗洲航空", "airlineEn": "AirBorneo", "flightNo": "MY3021", "aircraft": "ATR 72-500", "depIata": "KCH", "arrIata": "MYY", "durationMin": 75 },
+  "flight": {
+    "airline": "AirBorneo（原婆罗洲航空 MASwings）",
+    "airlineEn": "AirBorneo (formerly MASwings)",
+    "flightNo": "MY3021",
+    "aircraft": "ATR 72-500",
+    "depIata": "KCH",
+    "arrIata": "MYY",
+    "durationMin": 75
+  },
   "cruiseHeight": 5500,
   "waypoints": [
-    { "kind": "city", "id": "kch", "name": "古晋", "nameEn": "Kuching", "lat": 1.4847, "lon": 110.3467, "airport": true },
-    { "kind": "terrain", "terrainId": "niah-caves" },
-    { "kind": "city", "id": "myy", "name": "美里", "nameEn": "Miri", "lat": 4.3225, "lon": 113.9878, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "kch",
+      "name": "古晋",
+      "nameEn": "Kuching",
+      "lat": 1.4847,
+      "lon": 110.3467,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "niah-caves"
+    },
+    {
+      "kind": "city",
+      "id": "myy",
+      "name": "美里",
+      "nameEn": "Miri",
+      "lat": 4.3225,
+      "lon": 113.9878,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.amazingborneo.com/travel/airborneo-launches-in-2026-what-it-means-for-travellers-flying-around-borneo",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**已改正**：**承运人已被收购改名**（同 sdk-bki）：2026-01 起为 AirBorneo。机型 ATR 72-500 仍是当前值。来源级别 3；**查明有误**：**查不到 MY3021 服务古晋—美里的任何记录**（FlightAware / Airportia / Flightera 均无）。这对城市目前每周约 55 班，主要是亚航 AK6181–AK6193 系列在飞。AirBorneo 官方资料确认其确实用 ATR 72-500 跑古晋（枢纽）与美里（二级基地）之间的高频航线，所以**很可能仍有** AirBorneo 的不经停服务，但具体号码核实不到。航段本身存在，不属于「整条移除」那一类。来源级别 2（区域媒体报道官方信息）+ 3"
+  }
 }
