@@ -65,10 +65,79 @@ const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|highest|longe
 const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|其中)/;
 const QUALIFIER_EN = /\b(one of|among|by (area|population|land)|at the time|then)\b/i;
 
+/**
+ * C6-e：**钱**。票价、门票、通票、打车费 —— 这些比人口过期得还快，
+ * 而且读者会拿它当预算依据。没有年份的价格等于没有价格。
+ * 只报带**具体金额**的句子，「收费参观」这种不带数字的不报。
+ */
+// 一句话里同时出现「金额」和「与花钱有关的词」才算价格 —— 只看金额会把
+// GDP、造价、投资额一起报出来；只看词又会漏掉「一张 365 欧元的年票」这种
+// 数字在前、名词在后的语序。两个条件都要，且不限先后。
+const AMOUNT_ZH =
+  /\d[\d.,]*\s*(元|欧元|美元|日元|英镑|澳元|港币|新元|泰铢|林吉特|比索|卢比|克朗|兹罗提|里拉|坚戈)/;
+const PRICE_WORD_ZH =
+  /(票价|门票|收费|费用|车费|房价|均价|出租车|打车|年票|月票|通票|车票|船票|缆车|人均|起步价)/;
+const AMOUNT_EN =
+  /([€$£¥]\s?\d[\d.,]*|\b\d[\d.,]*\s?(euros?|dollars?|pounds?|yen|baht|ringgit|pesos?|kronor|zloty)\b)/i;
+const PRICE_WORD_EN =
+  /\b(fare|ticket|pass|costs?|price[sd]?|admission|entry fee|taxi|per person|per night)\b/i;
+const isPrice = (s: string, zh: boolean) =>
+  zh ? AMOUNT_ZH.test(s) && PRICE_WORD_ZH.test(s) : AMOUNT_EN.test(s) && PRICE_WORD_EN.test(s);
+
+/**
+ * C6-f：**签证天数写死**。项目早就定过口径（CLAUDE.md「中国政策类内容口径」）：
+ * 免签天数不写死，只说"近年放宽、以官方最新公布为准"。这条把那个口径变成脚本。
+ *
+ * 带了"以…最新公布为准 / check … for the latest"这类**转向官方口径的免责语**就放过 ——
+ * 哈萨克斯坦那条「多国公民可享受最长30天免签入境，具体以哈萨克斯坦外交部最新公布为准」
+ * 正是正确写法的范例，不该被报出来。
+ */
+const VISA_ZH =
+  /(免签|落地签|免办签证)[^。；！？]{0,14}?\d{1,3}\s*(天|日)|\d{1,3}\s*(天|日)[^。；！？]{0,6}(免签|落地签)/;
+const VISA_EN =
+  /\b(visa[- ]free|visa on arrival)\b[^.;!?]{0,20}?\b\d{1,3}[\s-]?days?\b|\b\d{1,3}[\s-]?days?\b[^.;!?]{0,14}\b(visa[- ]free|visa on arrival)\b/i;
+/** 转向官方口径的免责语 —— 有它就说明作者没把政策写死 */
+const DEFER_ZH = /(最新公布|最新规定|最新政策|以.{0,12}(官网|部|局|署).{0,6}为准|请以.{0,10}为准)/;
+const DEFER_EN = /\b(check|refer to|consult)\b[^.;!?]{0,60}\b(latest|current|official|before you (travel|fly|go))\b/i;
+
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;
 
-type Rule = "C6-人口数字缺年份" | "C1a-主观最高级" | "C1b-排名断言缺口径" | "D4-粘连句";
+/**
+ * C6-d：**数字有年份，但不是最新一期**。
+ *
+ * 这条是用户在 2026-09 提出来的：「今年已经是 2026 年了，为什么这些数据还用 2024 年的？」
+ * ——补上年份只解决了「不知道是哪一年」，没解决「拿的不是最新一期」。
+ *
+ * 各国统计机构的节奏基本是：N 年的年度数据在 N+1 年上半年发布。所以在 2026 年，
+ * 最新一期应当是 2025 年的数；写着 2024 年就是**落后了整整一期**。
+ * 阈值因此定成 `year >= 当前年 - 1`：2026 年时 2025 与 2026 的数放过，2024 及更早报出来。
+ *
+ * **例外是普查**：人口普查五年或十年一次（菲律宾 2024 年普查就是最新一期），
+ * 句子里点明了「普查 / census」的放过。
+ *
+ * 只对易过期量（人口）生效 —— 不然「1937 年迁都重庆」这种历史叙述会被全部误报。
+ */
+const CENSUS_ZH = /(普查|人口普查|国势调查)/;
+const CENSUS_EN = /\bcensus\b/i;
+const CURRENT_YEAR = new Date().getFullYear();
+/** 早于这一年的统计时点视为「不是最新一期」 */
+const FRESH_SINCE = CURRENT_YEAR - 1;
+
+/** 句子里出现的最大年份 —— 用它当这句话的统计时点 */
+function latestYear(s: string): number | null {
+  const ys = [...s.matchAll(/(?:1[89]|20)\d{2}/g)].map((m) => Number(m[0]));
+  return ys.length ? Math.max(...ys) : null;
+}
+
+type Rule =
+  | "C6-人口数字缺年份"
+  | "C6d-数字不是最新一期"
+  | "C6e-价格缺年份"
+  | "C6f-签证天数写死"
+  | "C1a-主观最高级"
+  | "C1b-排名断言缺口径"
+  | "D4-粘连句";
 
 interface Hit {
   rule: Rule;
@@ -91,14 +160,28 @@ for (const seg of segments) {
   }
 
   for (const s of splitSentences(seg.text)) {
-    if (!HAS_YEAR.test(s) && (zh ? PERISHABLE_ZH.test(s) : PERISHABLE_EN.test(s))) {
+    const perishable = zh ? PERISHABLE_ZH.test(s) : PERISHABLE_EN.test(s);
+    if (!HAS_YEAR.test(s) && perishable) {
       hits.push({ ...seg, rule: "C6-人口数字缺年份", sentence: s });
+    }
+    // 有年份的，再看这个年份是不是最新一期
+    if (HAS_YEAR.test(s) && perishable && !(zh ? CENSUS_ZH : CENSUS_EN).test(s)) {
+      const y = latestYear(s);
+      if (y !== null && y < FRESH_SINCE) {
+        hits.push({ ...seg, rule: "C6d-数字不是最新一期", sentence: s });
+      }
     }
     // 「之一」「按…计」这类限定语一出现就放过 —— 达沃「按行政区划面积计菲律宾最大」
     // 是正确写法的范例，不该被报出来。
     const qual = (zh ? QUALIFIER_ZH.test(s) : QUALIFIER_EN.test(s)) || HAS_YEAR.test(s);
     if (!qual && (zh ? SUBJECTIVE_SUP_ZH.test(s) : SUBJECTIVE_SUP_EN.test(s))) {
       hits.push({ ...seg, rule: "C1a-主观最高级", sentence: s });
+    }
+    if (!HAS_YEAR.test(s) && isPrice(s, zh)) {
+      hits.push({ ...seg, rule: "C6e-价格缺年份", sentence: s });
+    }
+    if ((zh ? VISA_ZH : VISA_EN).test(s) && !(zh ? DEFER_ZH : DEFER_EN).test(s)) {
+      hits.push({ ...seg, rule: "C6f-签证天数写死", sentence: s });
     }
     const rank = zh ? RANK_ZH.test(s) : RANK_EN.test(s);
     if (rank && !qual) {
@@ -112,10 +195,19 @@ for (const seg of segments) {
 const counts: Record<string, number> = {};
 for (const h of hits) counts[h.rule] = (counts[h.rule] ?? 0) + 1;
 
-const RULES: Rule[] = ["C6-人口数字缺年份", "C1a-主观最高级", "C1b-排名断言缺口径", "D4-粘连句"];
+const RULES: Rule[] = [
+  "C6-人口数字缺年份",
+  "C6d-数字不是最新一期",
+  "C6e-价格缺年份",
+  "C6f-签证天数写死",
+  "C1a-主观最高级",
+  "C1b-排名断言缺口径",
+  "D4-粘连句",
+];
 
 console.log("易过期断言扫描（对应 docs/known-errors.md 的错误类型）");
-console.log(`  扫描了 ${segments.length} 段正文\n`);
+console.log(`  扫描了 ${segments.length} 段正文`);
+console.log(`  今年 ${CURRENT_YEAR}，统计时点早于 ${FRESH_SINCE} 年的算「不是最新一期」（普查除外）\n`);
 
 for (const rule of RULES) {
   const n = counts[rule] ?? 0;
@@ -169,8 +261,9 @@ for (const rule of RULES) {
 
 if (failures > 0) {
   console.error(
-    `\n${failures} 类比基线更差了 —— 新写的内容里加进了没年份的数字、没加限定的最高级，` +
-      `或者拼接漏了空格。要么改掉，要么在 docs/known-errors.md 里说明为什么这次是例外。`,
+    `\n${failures} 类比基线更差了 —— 新写的内容里加进了没年份的数字、引的不是最新一期、` +
+      `没加限定的最高级，或者拼接漏了空格。` +
+      `要么改掉，要么在 docs/known-errors.md 里说明为什么这次是例外。`,
   );
 } else {
   const down = RULES.filter((r) => (counts[r] ?? 0) < (baseline!.counts[r] ?? 0)).length;
