@@ -24,6 +24,17 @@ const ZH_GENERIC_SUFFIX =
 /** 名字末尾的括注（「戈壁（蒙古）」「Gobi Desert (Mongolia)」）—— 匹配前先去掉 */
 const PARENTHETICAL_SUFFIX = /[（(][^）)]*[）)]\s*$/;
 
+/**
+ * 去掉通名后剩下的这些词太常见，不能拿来判定「讲到哪了」：
+ * 「North Sea」剩「North」，那么「runs north-west across…」这种开场白
+ * 就会被判成已经飞到北海，整篇解说的锚点顺序随之乱掉。
+ */
+const EN_CORE_STOPWORDS = new Set([
+  "north", "south", "east", "west", "central", "upper", "lower", "inner",
+  "outer", "great", "new", "red", "black", "white", "yellow", "dead", "high",
+  "low", "big", "little", "long", "deep", "blue", "green", "old", "gulf",
+]);
+
 /** 英文地名的通名后缀 —— 去掉之后再匹配一次，「Gobi Desert」也能命中「Gobi」 */
 const EN_GENERIC_SUFFIX =
   / (Desert|Mountains|Range|Plain|Plains|Plateau|Basin|Valley|Gorge|Delta|Peninsula|Islands|Island|Sea|Strait|Lake|River|Coast|Steppe|Uplands|Highlands)$/i;
@@ -77,7 +88,10 @@ export function matchWaypointInSentence(
       if (hay.includes(nm.toLowerCase())) return w.index;
       // 「Gobi Desert」→「Gobi」：英文通名后缀同样可省
       const core = nm.replace(EN_GENERIC_SUFFIX, "").trim();
-      if (core.length >= 4 && hay.includes(core.toLowerCase())) return w.index;
+      const lower = core.toLowerCase();
+      if (core.length >= 4 && !EN_CORE_STOPWORDS.has(lower) && hay.includes(lower)) {
+        return w.index;
+      }
       continue;
     }
     if (sentence.includes(nm)) return w.index;
