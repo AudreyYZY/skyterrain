@@ -39,5 +39,10 @@
       "lon": 119.825,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-ca9747/",
+    "checkedOn": "2026-09-07",
+    "note": "国航 CA9747 PEK→HLD 属实且为国航自己执飞（非代码共享），机型按日为 A321/A320 系列，不经停，15:55–18:00 约 2h05m 与记录 125min 吻合。来源级别 3"
+  }
 }

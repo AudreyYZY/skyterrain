@@ -9,17 +9,44 @@
   "flight": {
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
-    "flightNo": "CZ3567",
-    "aircraft": "Boeing 737-800",
+    "flightNo": "CZ3763",
+    "aircraft": "Airbus A320",
     "depIata": "CAN",
     "arrIata": "WNZ",
     "durationMin": 125
   },
   "cruiseHeight": 9800,
   "waypoints": [
-    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "terrain", "terrainId": "wuyi" },
-    { "kind": "city", "id": "wnz", "name": "温州龙湾", "nameEn": "Wenzhou Longwan", "lat": 27.9119, "lon": 120.8519, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "wuyi"
+    },
+    {
+      "kind": "city",
+      "id": "wnz",
+      "name": "温州龙湾",
+      "nameEn": "Wenzhou Longwan",
+      "lat": 27.9119,
+      "lon": 120.8519,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-cz3763/",
+    "checkedOn": "2026-09-07",
+    "note": "**原记 CZ3567 有误**：CZ3567 实际飞上海虹桥→深圳（FlightAware 历史 ZSSS→ZGSZ）。CAN→WNZ 每周 72 班、5 家执飞，改为南航 CZ3763（A320，11:10–13:00 约 1h50m）。来源级别 3"
+  }
 }

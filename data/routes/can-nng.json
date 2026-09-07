@@ -17,8 +17,33 @@
   },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
-    { "kind": "terrain", "terrainId": "liangguang-hills" },
-    { "kind": "city", "id": "nng", "name": "南宁吴圩", "nameEn": "Nanning Wuxu", "lat": 22.608, "lon": 108.172, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "liangguang-hills"
+    },
+    {
+      "kind": "city",
+      "id": "nng",
+      "name": "南宁吴圩",
+      "nameEn": "Nanning Wuxu",
+      "lat": 22.608,
+      "lon": 108.172,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-cz3539",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：CZ3539 实际是**广州(CAN)→上海虹桥(SHA)**，出发对、到达错。未找到可核实的 CAN→NNG 替代航班号。来源级别 3（航班追踪站）"
+  }
 }

@@ -17,11 +17,45 @@
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "terrain", "terrainId": "jiangnan-hills" },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "shandong-hills" },
-    { "kind": "city", "id": "tna", "name": "济南遥墙", "nameEn": "Jinan Yaoqiang", "lat": 36.857, "lon": 117.216, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jiangnan-hills"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "shandong-hills"
+    },
+    {
+      "kind": "city",
+      "id": "tna",
+      "name": "济南遥墙",
+      "nameEn": "Jinan Yaoqiang",
+      "lat": 36.857,
+      "lon": 117.216,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-cz3607",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：CZ3607 实际是**大连(DLC)→广州(CAN)**，与广州—济南无关。CAN→TNA 航段本身确有直飞（每周约 68 班），但未查到可核实的具体航班号与机型。来源级别 3（航班追踪站）"
+  }
 }

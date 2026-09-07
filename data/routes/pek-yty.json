@@ -17,9 +17,39 @@
   },
   "cruiseHeight": 9200,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "feature", "name": "苏北平原", "nameEn": "Northern Jiangsu Plain", "lon": 118.6, "lat": 33.8 },
-    { "kind": "city", "id": "yty", "name": "扬州泰州", "nameEn": "Yangzhou Taizhou", "lat": 32.5617, "lon": 119.7150, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "feature",
+      "name": "苏北平原",
+      "nameEn": "Northern Jiangsu Plain",
+      "lon": 118.6,
+      "lat": 33.8
+    },
+    {
+      "kind": "city",
+      "id": "yty",
+      "name": "扬州泰州",
+      "nameEn": "Yangzhou Taizhou",
+      "lat": 32.5617,
+      "lon": 119.715,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-ca1841/",
+    "checkedOn": "2026-09-07",
+    "note": "国航 CA1841 PEK(T2)→YTY 属实，A320、不经停，约 1h50m–2h（记录 105min 落在区间内），FlightAware 逐日可查 ZBAA→ZSYA。近日有个别班次取消属临时运力调整。来源级别 3"
+  }
 }

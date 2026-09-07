@@ -17,11 +17,45 @@
   },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "pek", "name": "北京首都", "nameEn": "Beijing Capital", "lat": 40.080, "lon": 116.585, "airport": true },
-    { "kind": "terrain", "terrainId": "taihang" },
-    { "kind": "terrain", "terrainId": "north-china" },
-    { "kind": "terrain", "terrainId": "dabie" },
-    { "kind": "terrain", "terrainId": "dongting" },
-    { "kind": "city", "id": "csx", "name": "长沙黄花", "nameEn": "Changsha Huanghua", "lat": 28.197, "lon": 113.221, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "pek",
+      "name": "北京首都",
+      "nameEn": "Beijing Capital",
+      "lat": 40.08,
+      "lon": 116.585,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "taihang"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-china"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dabie"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dongting"
+    },
+    {
+      "kind": "city",
+      "id": "csx",
+      "name": "长沙黄花",
+      "nameEn": "Changsha Huanghua",
+      "lat": 28.197,
+      "lon": 113.221,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-cz3245",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：CZ3245 实际是**广州(CAN)→呼和浩特(HET)**，与北京—长沙无关。PEK→CSX 航段确有直飞（每周约 53 班），但未查到可核实的具体航班号。来源级别 3（航班追踪站）"
+  }
 }

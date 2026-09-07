@@ -47,5 +47,11 @@
       "lon": 94.7861,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-ctu-to-goq",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**曾经属实但已停飞**：2024-07-30 格尔木⇌成都双流直飞开通，去程正是 TV9965、西藏航空 A319、每周二/四/六（中新网报道，级别 2）。但现在：① FlightConnections 明确写成都至格尔木无直飞，只有经西宁/拉萨/郑州中转；② TV9965 这个号已被**复用**为重庆江北→大理（A319，每周一）。属 A4（航线停飞 + 航班号被复用）。来源级别 3"
+  }
 }

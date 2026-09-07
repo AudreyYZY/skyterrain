@@ -17,9 +17,37 @@
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "pvg", "name": "上海浦东", "nameEn": "Shanghai Pudong", "lat": 31.143, "lon": 121.805, "airport": true },
-    { "kind": "terrain", "terrainId": "dabie" },
-    { "kind": "terrain", "terrainId": "taihang" },
-    { "kind": "city", "id": "dat", "name": "大同云冈", "nameEn": "Datong Yungang", "lat": 40.060, "lon": 113.482, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "pvg",
+      "name": "上海浦东",
+      "nameEn": "Shanghai Pudong",
+      "lat": 31.143,
+      "lon": 121.805,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dabie"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "taihang"
+    },
+    {
+      "kind": "city",
+      "id": "dat",
+      "name": "大同云冈",
+      "nameEn": "Datong Yungang",
+      "lat": 40.06,
+      "lon": 113.482,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-mu5201",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：MU5201 实际是**上海浦东(PVG)→柳州(LZH)**，出发对、到达错。未找到可核实的 PVG→DAT 替代航班号。来源级别 3（航班追踪站）"
+  }
 }

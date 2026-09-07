@@ -50,5 +50,11 @@
       "lon": 126.25,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-mu5620",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：MU5620 实际是**哈尔滨(HRB)→上海浦东(PVG)**，方向与到达机场都对不上。未找到可靠的虹桥 SHA→HRB 替代航班号（若允许改用浦东，已核实 MU5619 PVG→HRB 不经停）。来源级别 3（航班追踪站）"
+  }
 }

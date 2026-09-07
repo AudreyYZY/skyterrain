@@ -10,16 +10,43 @@
     "airline": "中国南方航空",
     "airlineEn": "China Southern Airlines",
     "flightNo": "CZ3671",
-    "aircraft": "Boeing 737 MAX 8",
+    "aircraft": "Airbus A320",
     "depIata": "CAN",
     "arrIata": "NGB",
     "durationMin": 135
   },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "can", "name": "广州白云", "nameEn": "Guangzhou Baiyun", "lat": 23.392, "lon": 113.299, "airport": true },
-    { "kind": "terrain", "terrainId": "nanling" },
-    { "kind": "terrain", "terrainId": "jiangnan-hills" },
-    { "kind": "city", "id": "ngb", "name": "宁波栎社", "nameEn": "Ningbo Lishe", "lat": 29.827, "lon": 121.462, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "can",
+      "name": "广州白云",
+      "nameEn": "Guangzhou Baiyun",
+      "lat": 23.392,
+      "lon": 113.299,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nanling"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jiangnan-hills"
+    },
+    {
+      "kind": "city",
+      "id": "ngb",
+      "name": "宁波栎社",
+      "nameEn": "Ningbo Lishe",
+      "lat": 29.827,
+      "lon": 121.462,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-cz3671",
+    "checkedOn": "2026-09-07",
+    "note": "南航 CZ3671 CAN→NGB 属实，不经停，约 2h，航距约 1189km；机型实为 A320-212（142 座），原记 737 MAX 8 已改正（planefinder 二次佐证）。来源级别 3"
+  }
 }

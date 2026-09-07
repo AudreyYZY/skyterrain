@@ -7,19 +7,49 @@
   "depCountry": "china",
   "arrCountry": "china",
   "flight": {
-    "airline": "中国联合航空",
-    "airlineEn": "China United Airlines",
+    "airline": "成都航空",
+    "airlineEn": "Chengdu Airlines",
     "flightNo": "EU1863",
-    "aircraft": "Boeing 737-800",
+    "aircraft": "COMAC C909 (ARJ21)",
     "depIata": "CTU",
     "arrIata": "LHW",
     "durationMin": 80
   },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "tfu", "name": "成都天府", "nameEn": "Chengdu Tianfu", "lat": 30.312, "lon": 104.441, "airport": true },
-    { "kind": "terrain", "terrainId": "sichuan" },
-    { "kind": "feature", "name": "甘南高原", "nameEn": "Gannan Plateau", "lon": 102.9, "lat": 35.0 },
-    { "kind": "city", "id": "lhw", "name": "兰州中川", "nameEn": "Lanzhou Zhongchuan", "lat": 36.515, "lon": 103.621, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ctu",
+      "name": "成都双流",
+      "nameEn": "Chengdu Shuangliu",
+      "lat": 30.578,
+      "lon": 103.947,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sichuan"
+    },
+    {
+      "kind": "feature",
+      "name": "甘南高原",
+      "nameEn": "Gannan Plateau",
+      "lon": 102.9,
+      "lat": 35.0
+    },
+    {
+      "kind": "city",
+      "id": "lhw",
+      "name": "兰州中川",
+      "nameEn": "Lanzhou Zhongchuan",
+      "lat": 36.515,
+      "lon": 103.621,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-eu1863",
+    "checkedOn": "2026-09-07",
+    "note": "航段属实（CTU→LHW 不经停，约 1h30m），但承运人与机型均记错：EU 是**成都航空**的代码（中国联合航空是 KN），机型是 COMAC C909（原 ARJ21），成都航空是该机型最大用户之一。已改正。来源级别 3（航班追踪站）；另修正首航点：原写成都天府(TFU)，而该航班从成都双流(CTU)起飞，航点已改为双流"
+  }
 }
