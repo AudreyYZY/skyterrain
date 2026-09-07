@@ -13,6 +13,7 @@
 import { TERRAIN_REGISTRY } from "../lib/terrain-registry.ts";
 import { ROUTE_NARRATION, getRouteNarration } from "../lib/route-narration.ts";
 import { isFlightVerified } from "../lib/routes.ts";
+import { estimateSpeechDurationSec } from "../lib/speech.ts";
 import { ALL_ROUTES } from "../data/routes/manifest.ts";
 import { COUNTRIES } from "../lib/regions.ts";
 import type { RouteWaypoint } from "../types/route.ts";
@@ -80,10 +81,23 @@ for (const r of ROUTES) {
   const narr = ROUTE_NARRATION[r.id]?.study;
   if (!narr?.["zh-CN"] || !narr?.["en-US"]) fail(r.id, "缺少航线学习模式解说 route-narration.study");
   else if (narr["zh-CN"].length < 200) fail(r.id, "中文学习模式解说过短");
-  // ≤3 分钟：中文播报约 4.5 字/秒，180 秒 ≈ 810 字上限（留余量到 900）
-  if (narr?.["zh-CN"] && narr["zh-CN"].length > 900) fail(r.id, "中文学习模式解说过长（>3 分钟）");
+  // 上限按**实测语速换算出的秒数**卡，不再按字数：一次飞行的镜头时长现在跟着
+  // 解说走（见 lib/cesium/route-flight.ts），所以「解说多长」就是「用户要看多久」。
+  // 原先写死 900 字≈3 分钟，那是镜头时长还是个常量时定的；现在最长的北京—纽约
+  // 全程 14,652 公里，解说四分钟才追得上镜头，砍到三分钟只会换来一分钟的静默平移。
+  // 与 check:flight 的绝对上限（300 秒）取齐。
+  const MAX_NARRATION_SEC = 300;
   const tnarr = ROUTE_NARRATION[r.id]?.travel;
-  if (tnarr?.["zh-CN"] && tnarr["zh-CN"].length > 900) fail(r.id, "中文旅游模式解说过长（>3 分钟）");
+  for (const [mode, block] of [["学习", narr], ["旅游", tnarr]] as const) {
+    for (const lang of ["zh-CN", "en-US"] as const) {
+      const text = block?.[lang];
+      if (!text) continue;
+      const sec = estimateSpeechDurationSec(text, 0.88, lang);
+      if (sec > MAX_NARRATION_SEC) {
+        fail(r.id, `${mode}模式 ${lang} 解说 ${sec.toFixed(0)}s 超过 ${MAX_NARRATION_SEC}s`);
+      }
+    }
+  }
 
   // 解说里若点名机型，必须与 flight.aircraft 对得上。
   // 实测踩过两次：北京—华沙解说写「波音777」而数据是 A330；北京—乌兰巴托解说写

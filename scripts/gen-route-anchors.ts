@@ -40,21 +40,21 @@ for (const route of getAllRoutes()) {
 
     const text = getRouteNarration(route.id, lang, "study");
     if (!text) continue;
-    const r = deriveAnchors(text, named, lang);
-    // 只保留可用的：顺序单调，且锚到的航点数达到「该航线可锚航点数」与 2 的较小值。
-    // 用 min(2, 可锚航点数) 而不是死磕 2：126 篇解说所属的航线本来就只有一个
-    // 可锚航点，锚到那一个已经是全覆盖，按 2 卡会把它们误判成待人工补。
-    const needHits = Math.min(2, named.length);
-    if (!r.monotonic || r.distinctHits < needHits || needHits === 0) {
+    // firstSentenceIsStart：首句是预告不是位置，见 deriveAnchors 的说明。
+    const r = deriveAnchors(text, named, lang, { firstSentenceIsStart: true });
+    // 开头几句没提任何地名 → 归到起点机场。
+    const perSentence = r.perSentence.map((x) => (x < 0 ? 0 : x));
+    const monotonic = r.monotonic;
+    // 只保留可用的：顺序单调，且至少锚到一个航点。
+    //
+    // 早先要求锚到两个（或该航线可锚航点数，取较小值），把 51 篇「两个航点只
+    // 提到一个」的解说挡在外面 —— 可那 51 篇挡掉之后走的是「按航点均匀停留」，
+    // 连这一个已知的对应关系都不用了。实测把门槛降到 1 之后镜头滞后没有变差，
+    // 那就没有理由把已有的信息丢掉。
+    if (!monotonic || r.distinctHits < 1) {
       skipped++;
       continue;
     }
-    // 开头几句没提任何地名 → 归到起点机场。
-    // 另外强制第一句锚在起点：解说常在起飞时就先预告整条航线要飞越什么
-    //（「这条航线要越过南阿尔卑斯山」），那是预告不是当前位置，直接采信会让
-    // 镜头一上来就跳到半路。
-    const perSentence = r.perSentence.map((x) => (x < 0 ? 0 : x));
-    if (perSentence.length > 0) perSentence[0] = 0;
     (out[route.id] ??= {})[lang] = { perSentence, source: "auto" };
     kept++;
   }

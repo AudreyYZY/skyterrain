@@ -24,9 +24,9 @@ export const ROUTE_NARRATION: Record<
       "越过祁连山和阿尔金山之间的地带，就进入新疆。最后映入眼帘的是天山——一条连续的东西向雪山，把新疆分成南北两半。飞机沿着天山北麓下降，那里同样是一排冲积扇绿洲，乌鲁木齐就建在其中一片上。短短几个小时，我们从湿润的东部平原，飞到了距离海洋最远的内陆山城。",
     "en-US":
       "Flying west from Beijing to Ürümqi is the most complete cross-section of China's terrain there is. Leaving the capital, you are first over the North China Plain — a vast lowland built by the silt of the Yellow and Hai rivers, an endless grid of fields and dense towns, with almost no relief on the ground." +
-      "Soon a near-straight wall of mountains rises to the west: the Taihang. Its eastern face is a line of cliffs standing right at the edge of the plain. Cross the crest and the land steps up onto the Loess Plateau, where you can see the loess shredded by water into a maze of branching gullies, with silt-laden yellow rivers threading through them." +
-      "Farther north-west the land opens out into the smoother Inner Mongolian Plateau and the gravel gobi of Alxa — grey-brown, thinly peopled. Then a long narrow corridor threads between two ranges: the Hexi Corridor. To its south is the snow-capped Qilian range; at its foot runs a string of oasis cities — Wuwei, Zhangye, Jiuquan — green beads on a thread, with desert on either side. Meltwater from the Qilian is the lifeline of those oases, and the reason the Silk Road ran this way." +
-      "Past the gap between the Qilian and Altun ranges you enter Xinjiang. The last thing to fill the window is the Tianshan — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, and Ürümqi is built on one of them. In a few hours you have flown from the humid eastern plains to the inland city that sits farther from the sea than anywhere else on Earth.",
+      " Soon a near-straight wall of mountains rises to the west: the Taihang. Its eastern face is a line of cliffs standing right at the edge of the plain. Cross the crest and the land steps up onto the Loess Plateau, where you can see the loess shredded by water into a maze of branching gullies, with silt-laden yellow rivers threading through them." +
+      " Farther north-west the land opens out into the smoother Inner Mongolian Plateau and the gravel gobi of Alxa — grey-brown, thinly peopled. Then a long narrow corridor threads between two ranges: the Hexi Corridor. To its south is the snow-capped Qilian range; at its foot runs a string of oasis cities — Wuwei, Zhangye, Jiuquan — green beads on a thread, with desert on either side. Meltwater from the Qilian is the lifeline of those oases, and the reason the Silk Road ran this way." +
+      " Past the gap between the Qilian and Altun ranges you enter Xinjiang. The last thing to fill the window is the Tianshan — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, and Ürümqi is built on one of them. In a few hours you have flown from the humid eastern plains to the inland city that sits farther from the sea than anywhere else on Earth.",
   },
     travel: {
     "zh-CN":
@@ -36,7 +36,7 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Beijing to Ürümqi is a little over four hours, from the political centre of China to its deepest interior. Ürümqi is the capital of Xinjiang, at about 800 m, with a dry climate and large swings between day and night and between seasons — hot summers, very cold winters. It is a city of many ethnic groups, and the food centres on wheat noodles, beef and mutton, pilaf, baked buns and a wide range of melons and fruit. Xinjiang runs on Beijing time, but daily life follows the daylight — business and meals happen about two hours later than in eastern China." +
       "Ürümqi is mainly a gateway and transfer point for the rest of Xinjiang: north to the mountain lakes of Kanas and Altay, west to the grasslands of the Ili valley, south across the Tianshan to the Flaming Mountains and karez of Turpan and on to the southern oases. Xinjiang is vast — cities are often hundreds or over a thousand kilometres apart, so plan in days and cover the long distances by air or long-distance train." +
-      "Some areas near the borders have extra registration or border-permit requirements for foreign visitors; confirm the current rules with your organiser or accommodation before you go and leave time to arrange them. The most comfortable season is roughly early summer to mid-autumn (about May to early October), which is also when the fruit is best.",
+      " Some areas near the borders have extra registration or border-permit requirements for foreign visitors; confirm the current rules with your organiser or accommodation before you go and leave time to arrange them. The most comfortable season is roughly early summer to mid-autumn (about May to early October), which is also when the fruit is best.",
     },
   },
 
@@ -49,9 +49,9 @@ export const ROUTE_NARRATION: Record<
       "飞机几乎贴着这片高原面一路飞到接近拉萨，才顺着雅鲁藏布江的支流拉萨河收拢翅膀、滑进河谷。两个多小时，从常年见不到太阳的湿润盆地，飞到了日光城拉萨——中间只隔着一列山、一片高原，和四千多米的落差。",
     "en-US":
       "Look down and the first thing you see is a green so soft it seems to blur at the edges — the Chengdu Plain, farmland the Dujiangyan works have irrigated from the Min River for more than two thousand years, its fields laid out like a checkerboard under a lid of grey-white haze; the Sichuan Basin rarely sees a clear sun. Within minutes of take-off that soft green is already behind you: the Longmen Mountains rear up abruptly at the basin's rim, and the ground begins to crease." +
-      "Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the only belt of high, north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea into the plateau, returning with Tibetan horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
-      "By the time the plane levels into cruise, the world outside has shifted up an entire elevation class. Past the last ridge of the Hengduan Mountains the terrain suddenly relaxes — no more peaks, no more gorges, just a vast, gently rolling, yellow-brown highland stretching to the horizon: the surface of the Tibetan Plateau, averaging above 4,000 m, the highest and largest plateau on Earth. Deep-blue lakes are scattered across it like spilled ink, and the thin air makes the sunlight look unusually white and hard." +
-      "The descent begins late — the plane stays almost level with the plateau surface nearly all the way to Lhasa before finally folding its wings down along the Lhasa River, a tributary of the Yarlung Tsangpo, into its valley. In just over two hours you have flown from a humid basin that rarely sees the sun to Lhasa, the \"Sunlight City\" — separated by nothing more than one mountain range, one plateau, and a 4,000-metre drop.",
+      " Further west those creases turn into gorges cut like knife strokes — the Hengduan Mountains, the only belt of high, north–south ranges in China: a snow ridge, a deep gorge, another snow ridge, with the Jinsha, Lancang and Nu rivers forced to run south side by side. This stretch lay on the old Sichuan–Tibet Tea-Horse Road — caravans once left Chengdu and Ya'an, crossed passes near Dartsedo (today's Kangding), and carried Sichuan tea up into the highlands, returning with horses. On a clear day an especially steep, solitary peak rises ahead to the right — Gongga Shan, 7,508.9 m, the highest point in the Hengduan Mountains, its summit wrapped in cloud most of the year, its full outline visible only in the moments the cloud breaks." +
+      " By the time the plane levels into cruise, the world outside has shifted up an entire elevation class. Past the last ridge of the Hengduan Mountains the terrain suddenly relaxes — no more peaks, no more gorges, just a vast, gently rolling, yellow-brown highland stretching to the horizon: the surface of the Tibetan Plateau, averaging above 4,000 m, the highest and largest plateau on Earth. Deep-blue lakes are scattered across it like spilled ink, and the thin air makes the sunlight look unusually white and hard." +
+      " The descent begins late — the plane stays almost level with the plateau surface nearly all the way to Lhasa before finally folding its wings down along the Lhasa River, a tributary of the Yarlung Tsangpo, into its valley. In just over two hours you have flown from a humid basin that rarely sees the sun to Lhasa, the \"Sunlight City\" — separated by nothing more than one mountain range, one plateau, and a 4,000-metre drop.",
   },
     travel: {
     "zh-CN":
@@ -60,8 +60,8 @@ export const ROUTE_NARRATION: Record<
       "重要提示：外国游客进入西藏，除中国签证外还需办理西藏旅行许可，并且通常必须随有资质的旅行社、按报备行程结伴出行，不接受散客自由行——务必提前通过旅行社安排。合适的季节大致是4—5月和9—10月；冬季寒冷但天空更清澈、游客也少。",
     "en-US":
       "Chengdu to Lhasa is a little over two hours, landing you straight at about 3,650 m — the one part of this trip to take seriously. Most people feel some degree of altitude sickness on arrival (headache, breathlessness, poor sleep); for the first day or two, slow down, avoid hard exertion, drink plenty of water, skip alcohol, and consider asking a doctor about medication beforehand. Anyone with a serious heart or lung condition should get medical advice on whether to go at all." +
-      "Lhasa is dry with very strong sun — daytime is mild for much of the year and nights are cold, and UV needs real protection year-round. The city is small; the core is the Jokhang and the Barkhor, the Potala Palace and the Norbulingka. Dress modestly at monasteries, follow the etiquette, and walk clockwise." +
-      "Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — independent travel is not permitted, so arrange this through an agency well in advance. The better windows are roughly April–May and September–October; winter is cold but the skies are clearer and there are fewer people.",
+      " Lhasa is dry with very strong sun — daytime is mild for much of the year and nights are cold, and UV needs real protection year-round. The city is small; the core is the Jokhang and the Barkhor, the Potala Palace and the Norbulingka. Dress modestly at monasteries, follow the etiquette, and walk clockwise." +
+      " Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — independent travel is not permitted, so arrange this through an agency well in advance. The better windows are roughly April–May and September–October; winter is cold but the skies are clearer and there are fewer people.",
     },
   },
 
@@ -74,9 +74,9 @@ export const ROUTE_NARRATION: Record<
       "云贵高原以西，地形再次变得险峻，进入横断山脉南段——南北向排列的雪山和深谷。越过它，就上了青藏高原东南缘。这一带因为有印度洋的水汽顺着河谷灌进来，是高原上最湿润、最绿的角落，森林一直长到很高的地方。飞机最后沿雅鲁藏布江水系下降到拉萨。一趟航班，走完了从亚热带季风区到高寒高原的全部气候带。",
     "en-US":
       "Guangzhou to Lhasa crosses China's full gradient from its most hot and humid to its coldest and highest. The plane leaves the Pearl River Delta — a plain built by the river's silt at its mouth plus centuries of reclamation, water-netted and city-covered, one of the most developed regions in China." +
-      "Flying north-west it first meets the Nanling. Unlike the big ranges of the north, this is a low, broken belt of hills separated by wide valleys. The Nanling is the drainage divide between the Yangtze and the Pearl river systems; cross it and rivers begin to flow toward the Yangtze." +
-      "Beyond it the land rises as a whole onto the Yunnan–Guizhou Plateau. Its signature is karst — limestone dissolved by water into countless cone- and dome-shaped hills, with enclosed pockets of flat land between them, called bazi, where the towns and fields crowd in. Surface rivers here often dive underground and re-emerge." +
-      "West of the plateau the terrain turns rugged again in the southern Hengduan Mountains — north–south snow ranges and deep gorges. Past them you are on the south-eastern edge of the Tibetan Plateau. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The plane descends along the Yarlung Tsangpo system into Lhasa. One flight has passed through every climate zone from the subtropical monsoon to the cold high plateau.",
+      " Flying north-west it first meets the Nanling. Unlike the big ranges of the north, this is a low, broken belt of hills separated by wide valleys. The Nanling is the drainage divide between the Yangtze and the Pearl river systems; cross it and rivers begin to flow toward the Yangtze." +
+      " Beyond it the land rises as a whole onto the Yunnan–Guizhou Plateau. Its signature is karst — limestone dissolved by water into countless cone- and dome-shaped hills, with enclosed pockets of flat land between them, called bazi, where the towns and fields crowd in. Surface rivers here often dive underground and re-emerge." +
+      " West of the plateau the terrain turns rugged again in the southern Hengduan Mountains — north–south snow ranges and deep gorges. Past them you are on the south-eastern edge of the Tibetan Plateau. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The plane descends along the Yarlung Tsangpo system into Lhasa. One flight has passed through every climate zone from the subtropical monsoon to the cold high plateau.",
   },
     travel: {
     "zh-CN":
@@ -85,8 +85,8 @@ export const ROUTE_NARRATION: Record<
       "拉萨城市不大，核心是布达拉宫、大昭寺和八廓街；气候干燥、日照强、昼夜温差大，全年都要防晒并备保暖衣物。合适的季节大致是4—5月和9—10月；雨季（约6—8月）部分道路易受泥石流影响，但高原东南缘的林芝一带这时最绿。",
     "en-US":
       "Guangzhou to Lhasa is about four and a half hours, climbing from the near-sea-level Pearl River Delta all the way to Lhasa at about 3,650 m — a bigger jump than on most routes, so treat altitude sickness with extra care: for the first day or two, slow right down, rest, drink plenty of water and avoid alcohol, and get medical advice first if you have a heart or lung condition." +
-      "As on the Chengdu route, foreign visitors need a Tibet Travel Permit on top of their Chinese visa and normally must travel with a licensed operator in a group on a declared itinerary — arrange it through an agency before you leave. Guangzhou is southern China's aviation hub, and many travellers from Southeast Asia connect here for Tibet." +
-      "Lhasa is a small city; its core is the Potala Palace, the Jokhang and the Barkhor. It is dry, with strong sun and a wide day-night temperature range, so bring sun protection and warm layers year-round. The better seasons are roughly April–May and September–October; the rainy season (about June–August) can bring landslides onto roads, though the Nyingchi area on the south-eastern edge of the plateau is at its greenest then.",
+      " As on the Chengdu route, foreign visitors need a Tibet Travel Permit on top of their Chinese visa and normally must travel with a licensed operator in a group on a declared itinerary — arrange it through an agency before you leave. Guangzhou is southern China's aviation hub, and many travellers from Southeast Asia connect here for Tibet." +
+      " Lhasa is a small city; its core is the Potala Palace, the Jokhang and the Barkhor. It is dry, with strong sun and a wide day-night temperature range, so bring sun protection and warm layers year-round. The better seasons are roughly April–May and September–October; the rainy season (about June–August) can bring landslides onto roads, though the Nyingchi area on the south-eastern edge of the plateau is at its greenest then.",
     },
   },
 
@@ -99,9 +99,9 @@ export const ROUTE_NARRATION: Record<
       "接近喀什时，西边天际线上出现极高的雪峰，那是帕米尔高原和昆仑山、天山交汇的“山结”。喀什就建在群山脚下的一片大绿洲上，自古是丝绸之路南、中两道的交汇点。",
     "en-US":
       "Ürümqi to Kashgar runs along the rim of the Tarim Basin, from northern Xinjiang to its far south-western corner. After take-off you are over the oasis belt on the northern foot of the Tianshan — Ürümqi, Changji, Shihezi — patches of farmland and towns watered by Tianshan snowmelt, with the Gurbantunggut Desert beyond." +
-      "The plane flies south-west, crossing the western Tianshan. This is one of the mountain systems farthest from any ocean on Earth, its summits under permanent snow and widespread glaciers. Cross the crest and a huge yellow oval opens up ahead — the Tarim Basin, walled in by the Tianshan, Kunlun and Pamirs, with China's largest desert, the Taklamakan, in its centre. On a clear day you can see regular rows of crescent dunes, like frozen waves." +
-      "The route follows the basin's north-western rim the whole way. Every city and field in the basin must sit at the edge of a piedmont alluvial fan, where water comes down from the mountains; off that lifeline it is barren. The Tarim River skirts the desert along the northern edge." +
-      "Approaching Kashgar, very high snow peaks appear on the western skyline — the \"knot\" where the Pamirs meet the Kunlun and the Tianshan. Kashgar is built on a large oasis at the foot of these mountains, and has been the meeting point of the southern and middle Silk Roads since ancient times.",
+      " The plane flies south-west, crossing the western Tianshan. This is one of the mountain systems farthest from any ocean on Earth, its summits under permanent snow and widespread glaciers. Cross the crest and a huge yellow oval opens up ahead — the Tarim Basin, walled in by the Tianshan, Kunlun and Pamirs, with China's largest desert, the Taklamakan, in its centre. On a clear day you can see regular rows of crescent dunes, like frozen waves." +
+      " The route follows the basin's north-western rim the whole way. Every city and field in the basin must sit at the edge of a piedmont alluvial fan, where water comes down from the mountains; off that lifeline it is barren. The Tarim River skirts the desert along the northern edge." +
+      " Approaching Kashgar, very high snow peaks appear on the western skyline — the \"knot\" where the Pamirs meet the Kunlun and the Tianshan. Kashgar is built on a large oasis at the foot of these mountains, and has been the meeting point of the southern and middle Silk Roads since ancient times.",
   },
     travel: {
     "zh-CN":
@@ -110,8 +110,8 @@ export const ROUTE_NARRATION: Record<
       "这一带靠近边境：外国人在部分区域（尤其去帕米尔、口岸方向）需要办边境通行证，个别路段可能临时管制，务必提前通过当地旅行社或住宿确认最新规定并留出办证时间。作息同样比内地晚约两小时。",
     "en-US":
       "Ürümqi to Kashgar is about an hour and a half, from northern Xinjiang to its far south-western corner. Kashgar, at about 1,300 m, is one of the oldest cities in Xinjiang; its old town of mud-brick houses, bazaars and mosques is relatively intact and the Uyghur cultural presence is strong. Wandering the old town, the bazaar, sampling baked buns and naan, and visiting craft workshops are the main things to do." +
-      "East lie the southern oases toward Yarkand and Hotan; west and south are the roads up to the Pamirs (Tashkurgan, Muztagh Ata) and the Khunjerab pass. Southern Xinjiang summers are hot by day with strong sun and a wide day-night swing; spring and autumn are more comfortable, and the fruit is best in late summer." +
-      "This is border country: in some areas — especially toward the Pamirs and the passes — foreign visitors need a border permit, and individual stretches of road can be temporarily closed, so confirm the current rules through a local agency or your accommodation in advance and leave time to arrange permits. Daily life again runs about two hours later than in eastern China.",
+      " East lie the southern oases toward Yarkand and Hotan; west and south are the roads up to the Pamirs (Tashkurgan, Muztagh Ata) and the Khunjerab pass. Southern Xinjiang summers are hot by day with strong sun and a wide day-night swing; spring and autumn are more comfortable, and the fruit is best in late summer." +
+      " This is border country: in some areas — especially toward the Pamirs and the passes — foreign visitors need a border permit, and individual stretches of road can be temporarily closed, so confirm the current rules through a local agency or your accommodation in advance and leave time to arrange permits. Daily life again runs about two hours later than in eastern China.",
     },
   },
 
@@ -124,9 +124,9 @@ export const ROUTE_NARRATION: Record<
       "昆明就坐落在滇中的一片高原湖盆里，旁边是滇池。一趟航班，从接近海平面的三角洲，飞到了海拔约一千九百米的高原城市。",
     "en-US":
       "Flying south-west from Shanghai to Kunming takes you from the plain at the mouth of the Yangtze all the way up onto the plateau country of the south-west. Leaving Hongqiao, you are over the Yangtze Delta — a low plain built by the river's silt and centuries of reclamation, water-netted and city-covered, one of the most densely settled regions in China." +
-      "Soon a belt of low rolling hills appears to the west: the Jiangnan Hills, small summits of red sandstone and granite alternating with little basins, with tea gardens, bamboo and rice terraces following the slopes. Midway the route passes Poyang Lake, a lake connected to the Yangtze whose open water spreads wide in the flood season and shrinks to winding channels and broad meadows in the dry season." +
-      "Farther west the land rises into the Xuefeng Mountains, the transitional range between the Jiangnan Hills and the Yunnan–Guizhou Plateau. Beyond them the ground steps up to one or two thousand metres onto the plateau itself, where limestone has been dissolved into countless cone- and dome-shaped hills with enclosed pockets of flat land between them, called bazi, where the towns and fields gather; surface rivers here often sink underground." +
-      "Kunming sits in a plateau lake basin in central Yunnan, beside Lake Dian. In one flight you have gone from a near-sea-level delta to a plateau city at about 1,900 m.",
+      " Soon a belt of low rolling hills appears to the west: the Jiangnan Hills, small summits of red sandstone and granite alternating with little basins, with tea gardens, bamboo and rice terraces following the slopes. Midway the route passes Poyang Lake, a lake connected to the Yangtze whose open water spreads wide in the flood season and shrinks to winding channels and broad meadows in the dry season." +
+      " Farther west the land rises into the Xuefeng Mountains, the transitional range between the Jiangnan Hills and the Yunnan–Guizhou Plateau. Beyond them the ground steps up to one or two thousand metres onto the plateau itself, where limestone has been dissolved into countless cone- and dome-shaped hills with enclosed pockets of flat land between them, called bazi, where the towns and fields gather; surface rivers here often sink underground." +
+      " Kunming sits in a plateau lake basin in central Yunnan, beside Lake Dian. In one flight you have gone from a near-sea-level delta to a plateau city at about 1,900 m.",
     },
     travel: {
     "zh-CN":
@@ -135,8 +135,8 @@ export const ROUTE_NARRATION: Record<
       "云南多山，城市间车程往往较长，雨季（约六到十月）山区道路易受塌方、泥石流影响，出行留出机动时间。菌子季野生菌一定要在正规餐厅食用、彻底做熟。",
     "en-US":
       "Shanghai to Kunming is a little over three hours. Kunming sits at about 1,900 m with mild weather year-round and small seasonal swings — hence its nickname, the \"Spring City\" — but the sun is strong, UV is high, and the day-to-night range is wider than in eastern China, so bring a layer for mornings and evenings. Most people adjust to this altitude easily." +
-      "Kunming is the hub for travel in Yunnan: north-west to Dali, Lijiang and Shangri-La, south to Xishuangbanna, east to the Stone Forest and on toward Guizhou. In the city itself there is Lake Dian, Green Lake and the old quarters, and the food centres on rice noodles, wild mushrooms and the sour-and-spicy Yunnan style." +
-      "Yunnan is mountainous and drives between towns are often long; in the rainy season (about June to October) mountain roads are prone to landslides and mudflows, so leave slack in your plans. In mushroom season only eat wild mushrooms at established restaurants and thoroughly cooked.",
+      " Kunming is the hub for travel in Yunnan: north-west to Dali, Lijiang and Shangri-La, south to Xishuangbanna, east to the Stone Forest and on toward Guizhou. In the city itself there is Lake Dian, Green Lake and the old quarters, and the food centres on rice noodles, wild mushrooms and the sour-and-spicy Yunnan style." +
+      " Yunnan is mountainous and drives between towns are often long; in the rainy season (about June to October) mountain roads are prone to landslides and mudflows, so leave slack in your plans. In mushroom season only eat wild mushrooms at established restaurants and thoroughly cooked.",
     },
   },
 
@@ -145,13 +145,13 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "成都飞上海，几乎是沿着长江自西向东飞完它的中下游。起飞时脚下是四川盆地——四周被山环抱的红层盆地，底部是密集的方格农田和城镇，常年云雾多、日照少。" +
       "飞机向东，很快进入长江三峡一带：长江在这里横切巫山等一系列山岭，切出瞿塘峡、巫峡、西陵峡三段深谷，两岸是陡直的石灰岩崖壁，三峡水库蓄水后江面变宽。" +
-      "出了三峡，地形豁然开阔，进入长江中下游平原。这是长江及其支流冲积、并接纳众多湖泊的低平原，江湖相连，圩田、水塘和城镇交错，看不出什么起伏。沿途会经过洞庭湖、鄱阳湖这样的通江湖泊。" +
+      "出了三峡，地形豁然开阔，两岸先后出现洞庭湖、鄱阳湖这样的通江湖泊。再往东进入长江中下游平原——由干流及其支流冲积、并接纳众多湖泊形成的低平原，江湖相连，圩田、水塘和城镇交错，看不出什么起伏。" +
       "接近上海时，进入长江三角洲——长江最后一段淤积形成的低平原，河网最密、城镇连成一片。飞机在这里下降，长江在前方入海。一趟航班，把长江从盆地到入海口的下半程连了起来。",
     "en-US":
       "Chengdu to Shanghai follows the Yangtze almost the whole way, west to east, down its middle and lower course. On take-off you are over the Sichuan Basin — a red-bed basin ringed by mountains, its floor a dense grid of fields and towns, often cloudy with little sun." +
-      "Flying east, the plane soon reaches the Yangtze Gorges, where the river cuts straight across the Wu Shan and neighbouring ridges in three deep sections — the Qutang, Wu and Xiling gorges — between steep limestone walls; since the Three Gorges reservoir filled, the channel here is wider." +
-      "Past the gorges the land opens out into the Middle–Lower Yangtze Plain, a low plain built by the river and its tributaries and threaded with lakes, where diked fields, ponds and towns interlock with almost no relief. The route passes lakes linked to the Yangtze such as Dongting and Poyang." +
-      "Approaching Shanghai you cross the Yangtze Delta, the low plain of the river's final reach, with the densest water network and continuous built-up land. The plane descends here, with the Yangtze entering the sea ahead. One flight has joined up the lower half of the river, from basin to river mouth.",
+      " Flying east, the plane soon reaches the Yangtze Gorges, where the river cuts straight across the Wu Shan and neighbouring ridges in three deep sections — the Qutang, Wu and Xiling gorges — between steep limestone walls; since the Three Gorges reservoir filled, the channel here is wider." +
+      " Past the gorges the land opens out and lakes linked to the river appear along both banks — Dongting first, then Poyang. Farther east comes the Middle–Lower Yangtze Plain, a low plain built by the river and its tributaries and threaded with lakes, where diked fields, ponds and towns interlock with almost no relief." +
+      " Approaching Shanghai you cross the Yangtze Delta, the low plain of the river's final reach, with the densest water network and continuous built-up land. The plane descends here, with the Yangtze entering the sea ahead. One flight has joined up the lower half of the river, from basin to river mouth.",
     },
     travel: {
     "zh-CN":
@@ -160,8 +160,8 @@ export const ROUTE_NARRATION: Record<
       "这里是去江南水乡（苏州、杭州、周庄、乌镇一带）和沿海的门户，高铁一两小时可达。梅雨季（约六月）和夏秋之交的台风期多雨，安排行程时留意天气预报。",
     "en-US":
       "Chengdu to Shanghai is about two and a half hours, from an inland basin to a port city at the mouth of the Yangtze. Shanghai is low-lying and flat, with a subtropical monsoon climate: hot, humid summers with a lot of rain, damp cold winters, and short springs and autumns." +
-      "Shanghai is the transport hub of eastern China, with a dense metro network. The Bund, the old town, the plane-tree streets of the former French Concession and both banks of the Huangpu are the main things to see. The local food leans sweet and savoury, and Shanghainese dishes, dim sum and the wider Jiangnan cuisines are all easy to find." +
-      "It is the gateway to the Jiangnan water towns (around Suzhou, Hangzhou, Zhouzhuang and Wuzhen) and the coast, one or two hours away by high-speed rail. The plum-rain season (around June) and the typhoon period in late summer and autumn are wet, so check the forecast when planning your days.",
+      " Shanghai is the transport hub of eastern China, with a dense metro network. The Bund, the old town, the plane-tree streets of the former French Concession and both banks of the Huangpu are the main things to see. The local food leans sweet and savoury, and Shanghainese dishes, dim sum and the wider Jiangnan cuisines are all easy to find." +
+      " It is the gateway to the Jiangnan water towns (around Suzhou, Hangzhou, Zhouzhuang and Wuzhen) and the coast, one or two hours away by high-speed rail. The plum-rain season (around June) and the typhoon period in late summer and autumn are wet, so check the forecast when planning your days.",
     },
   },
 
@@ -174,9 +174,9 @@ export const ROUTE_NARRATION: Record<
       "越过大别山，进入华北平原——由黄河、淮河、海河冲积出来的大平原，一望无际的方格农田和密集城镇，地面几乎看不出起伏。飞机在平原北缘、燕山脚下的北京降落。",
     "en-US":
       "Guangzhou to Beijing strings together the eastern half of China from south to north. The plane leaves the Pearl River Delta — a plain built by the river's silt at its mouth plus reclamation, water-netted and city-covered." +
-      "Just to the north is the Nanling. Unlike the big continuous ranges of the north, this is a low, broken east–west belt of hills separated by wide valleys, historically the natural threshold between the far south and the interior. The Nanling is roughly the drainage divide between the Pearl and Yangtze systems; cross it and rivers flow toward the Yangtze." +
-      "Farther north the ground becomes the Middle–Lower Yangtze Plain, a low plain of interconnected rivers and lakes where diked fields and towns interlock. Then a modest but distinct range appears — the Dabie Mountains, set between Wuhan and the Central Plain, and the divide between the Huai and the Yangtze." +
-      "Beyond the Dabie you are over the North China Plain, built by the silt of the Yellow, Huai and Hai rivers — an endless grid of fields and dense towns with almost no relief. The plane lands at Beijing on the northern edge of the plain, at the foot of the Yan Mountains.",
+      " Just to the north is the Nanling. Unlike the big continuous ranges of the north, this is a low, broken east–west belt of hills separated by wide valleys, historically the natural threshold between the far south and the interior. The Nanling is roughly the drainage divide between the Pearl and Yangtze systems; cross it and rivers flow toward the Yangtze." +
+      " Farther north the ground becomes the Middle–Lower Yangtze Plain, a low plain of interconnected rivers and lakes where diked fields and towns interlock. Then a modest but distinct range appears — the Dabie Mountains, set between Wuhan and the Central Plain, and the divide between the Huai and the Yangtze." +
+      " Beyond the Dabie you are over the North China Plain, built by the silt of the Yellow, Huai and Hai rivers — an endless grid of fields and dense towns with almost no relief. The plane lands at Beijing on the northern edge of the plain, at the foot of the Yan Mountains.",
     },
     travel: {
     "zh-CN":
@@ -185,8 +185,8 @@ export const ROUTE_NARRATION: Record<
       "春季偶有沙尘或大风天，夏季午后雷阵雨较多，冬季注意保暖。热门景点和长城旺季人多，很多需要提前实名预约，出发前查清当日规定。",
     "en-US":
       "Guangzhou to Beijing is about three hours, from the hot, humid far south to the dry north. Beijing lies on the northern edge of the North China Plain, with a temperate monsoon climate and four clear seasons: short, windy springs and autumns, hot summers with thunderstorms, and dry cold winters." +
-      "Beijing is the capital and a cultural centre. The Forbidden City, the Temple of Heaven, the Summer Palace, the Great Wall and the hutong quarters are the main sights, and the metro network is extensive. The food is wheat-based northern cooking — hotpot, roast duck and zhajiang noodles are typical." +
-      "Spring can bring dust or high winds, summer afternoons often bring thunderstorms, and winters are cold. Popular sites and the Great Wall are crowded in high season and many now require advance ID-based booking, so check the day's rules before you go.",
+      " Beijing is the capital and a cultural centre. The Forbidden City, the Temple of Heaven, the Summer Palace, the Great Wall and the hutong quarters are the main sights, and the metro network is extensive. The food is wheat-based northern cooking — hotpot, roast duck and zhajiang noodles are typical." +
+      " Spring can bring dust or high winds, summer afternoons often bring thunderstorms, and winters are cold. Popular sites and the Great Wall are crowded in high season and many now require advance ID-based booking, so check the day's rules before you go.",
     },
   },
 
@@ -198,8 +198,8 @@ export const ROUTE_NARRATION: Record<
       "过了走廊西端，越过祁连山和阿尔金山之间的缺口进入新疆，正前方是天山——一条连续的东西向雪山，把新疆分成南北两半。飞机沿天山北麓下降，那里同样是一排冲积扇绿洲，乌鲁木齐就建在其中一片上。",
     "en-US":
       "Xi'an to Ürümqi runs along the Hexi Corridor, the old through-route, from the Guanzhong plain all the way to the foot of the Tianshan. On take-off you are over the Guanzhong Plain — an east–west plain built by the Wei River, edged by loess terraces, dense with fields and towns, one of the old farming regions of the middle Yellow River." +
-      "To the north-west the land narrows. The route clips the north–south ridge of the Liupan Mountains, then enters the Hexi Corridor: the snow-capped Qilian range to the south, lower ranges and desert gobi to the north, and a strip of flat land a few hundred kilometres long between them. Meltwater from the Qilian gathers into a string of oases at the mountain foot — Wuwei, Jinchang, Zhangye, Jiuquan — green beads along the corridor, with desert beyond. That belt of water is why the Silk Road ran this way." +
-      "Past the western end of the corridor, through the gap between the Qilian and Altun ranges, you enter Xinjiang, with the Tianshan filling the view ahead — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, with Ürümqi built on one of them.",
+      " To the north-west the land narrows. The route clips the north–south ridge of the Liupan Mountains, then enters the Hexi Corridor: the snow-capped Qilian range to the south, lower ranges and desert gobi to the north, and a strip of flat land a few hundred kilometres long between them. Meltwater from the Qilian gathers into a string of oases at the mountain foot — Wuwei, Jinchang, Zhangye, Jiuquan — green beads along the corridor, with desert beyond. That belt of water is why the Silk Road ran this way." +
+      " Past the western end of the corridor, through the gap between the Qilian and Altun ranges, you enter Xinjiang, with the Tianshan filling the view ahead — a continuous east–west line of snow mountains that splits Xinjiang into a northern and a southern half. The plane descends along the northern foot of the Tianshan, another belt of alluvial-fan oases, with Ürümqi built on one of them.",
     },
     travel: {
     "zh-CN":
@@ -209,7 +209,7 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Xi'an to Ürümqi is about three and a half hours. Ürümqi is the capital of Xinjiang, at about 800 m, with a dry climate and large swings between day and night and between seasons — hot summers, cold winters. Xinjiang runs on Beijing time, but daily life follows the daylight, so business and meals happen about two hours later than in eastern China." +
       "Ürümqi is mainly a gateway to the rest of Xinjiang: north to Kanas and Altay, west to the Ili grasslands, south across the Tianshan to Turpan and on to the southern oases. Xinjiang is vast — cities are often hundreds or over a thousand kilometres apart, so plan in days and travel by air or long-distance train." +
-      "Some areas near the borders have extra registration or border-permit requirements for foreign visitors; confirm the current rules with your organiser or accommodation before you go and leave time to arrange them. The most comfortable season is roughly early summer to mid-autumn.",
+      " Some areas near the borders have extra registration or border-permit requirements for foreign visitors; confirm the current rules with your organiser or accommodation before you go and leave time to arrange them. The most comfortable season is roughly early summer to mid-autumn.",
     },
   },
 
@@ -221,8 +221,8 @@ export const ROUTE_NARRATION: Record<
       "接近拉萨时，右侧出现一列更高、更陡的雪山，那是念青唐古拉山，它旁边就是纳木错——一个高原大湖。飞机翻过念青唐古拉，沿拉萨河谷下降到拉萨。全程几乎都在四千米以上的高原上飞，落地就是海拔约三千六百米的拉萨。",
     "en-US":
       "Xining to Lhasa flies from the north-eastern corner of the Tibetan Plateau into its interior. On take-off Xining lies in the Huangshui valley, already above 2,000 m. A short way west is Qinghai Lake, the largest saline lake in China, ringed by grassland and dunes, its water a deep blue." +
-      "Past the lake the land rises and opens out into the plateau surface itself. The route runs south-west roughly along the line of the Kunlun Mountains, the east–west snow range that forms the plateau's northern edge. Beyond lie the Hoh Xil and the northern Tibetan plateau, almost uninhabited — pale yellow-brown high country scattered with lakes, many of them closed saline basins with no outlet." +
-      "Approaching Lhasa, a higher, steeper snow range appears to the right: the Nyainqêntanglha, and beside it Namtso, a large plateau lake. The plane crosses the range and descends along the Lhasa River valley. Almost the whole flight is above 4,000 m, and it lands at Lhasa at about 3,600 m.",
+      " Past the lake the land rises and opens out into the plateau surface itself. The route runs south-west roughly along the line of the Kunlun Mountains, the east–west snow range that forms the plateau's northern edge. Beyond lie the Hoh Xil and the northern Tibetan plateau, almost uninhabited — pale yellow-brown high country scattered with lakes, many of them closed saline basins with no outlet." +
+      " Approaching Lhasa, a higher, steeper snow range appears to the right: the Nyainqêntanglha, and beside it Namtso, a large plateau lake. The plane crosses the range and descends along the Lhasa River valley. Almost the whole flight is above 4,000 m, and it lands at Lhasa at about 3,600 m.",
     },
     travel: {
     "zh-CN":
@@ -231,8 +231,8 @@ export const ROUTE_NARRATION: Record<
       "高原日照极强、气候干燥，全年都要认真防晒并备保暖衣物。合适的季节大致是四五月和九十月；沿途的青海湖在夏季环湖草原最绿。",
     "en-US":
       "Xining to Lhasa is about two and a half hours. Xining itself sits at around 2,200 m and is often used as a stop to acclimatise before Tibet. Lhasa is at about 3,600 m; for the first day or two slow down, avoid hard exertion, drink plenty of water and skip alcohol, and anyone with a serious heart or lung condition should seek medical advice first." +
-      "Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — independent travel is not permitted, so arrange this through an agency well in advance." +
-      "The plateau sun is very strong and the air dry, so sun protection and warm layers are needed year-round. The better windows are roughly April–May and September–October; Qinghai Lake, on the way, has its greenest lakeshore grassland in summer.",
+      " Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — independent travel is not permitted, so arrange this through an agency well in advance." +
+      " The plateau sun is very strong and the air dry, so sun protection and warm layers are needed year-round. The better windows are roughly April–May and September–October; Qinghai Lake, on the way, has its greenest lakeshore grassland in summer.",
     },
   },
 
@@ -241,11 +241,11 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "重庆飞拉萨，从长江边的山城，一路爬上青藏高原的东南缘。起飞时脚下是四川盆地——四周被山环抱的红层丘陵盆地，云雾多，重庆的房子顺着山坡和江岸层层叠叠。" +
       "飞机向西爬升，很快进入横断山脉：这是中国唯一一片南北走向的高大山群，一条雪山、一条深谷，再一条雪山，像搓衣板一样排列，金沙江、澜沧江、怒江在这里被挤在一起并行南流。" +
-      "越过横断山脉，进入藏东南。这一带因为有印度洋的水汽顺着河谷灌进来，是青藏高原上最湿润、最绿的角落，森林一直长到很高的地方。雅鲁藏布江在这里绕着南迦巴瓦峰拐了一个大弯，切出很深的峡谷。飞机再往西，地面转为相对平坦开阔的高原面，沿拉萨河谷下降到拉萨。",
+      "越过横断山脉，进入藏东南。这一带因为有印度洋的水汽顺着河谷灌进来，是高原东南缘最湿润、最绿的角落，森林一直长到很高的地方。雅鲁藏布江在这里绕着南迦巴瓦峰拐了一个大弯，切出很深的峡谷。飞机再往西，地面转为相对平坦开阔的高原面，沿拉萨河谷下降到拉萨。",
     "en-US":
       "Chongqing to Lhasa climbs from a river city among hills up onto the south-eastern edge of the Tibetan Plateau. On take-off you are over the Sichuan Basin — a red-bed basin of hills ringed by mountains, often cloudy, with Chongqing's buildings stacked up the slopes and river banks." +
-      "Climbing west, the plane soon enters the Hengduan Mountains, the only belt of high ranges in China that runs north–south: a snow range, then a deep gorge, then another, lined up like a washboard, with the Jinsha, Lancang and Nu rivers squeezed together in parallel southward courses." +
-      "Beyond the Hengduan is south-eastern Tibet. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The Yarlung Tsangpo makes a great bend around Namcha Barwa here, cutting a very deep gorge. Farther west the ground becomes the comparatively flat, open plateau surface, and the plane descends along the Lhasa River valley into Lhasa.",
+      " Climbing west, the plane soon enters the Hengduan Mountains, the only belt of high ranges in China that runs north–south: a snow range, then a deep gorge, then another, lined up like a washboard, with the Jinsha, Lancang and Nu rivers squeezed together in parallel southward courses." +
+      " Beyond the Hengduan is south-eastern Tibet. Because Indian Ocean moisture travels up the river valleys here, this is the wettest, greenest corner of the plateau, with forest reaching high up the slopes. The Yarlung Tsangpo makes a great bend around Namcha Barwa here, cutting a very deep gorge. Farther west the ground becomes the comparatively flat, open plateau surface, and the plane descends along the Lhasa River valley into Lhasa.",
     },
     travel: {
     "zh-CN":
@@ -254,8 +254,8 @@ export const ROUTE_NARRATION: Record<
       "拉萨气候干燥、日照强、昼夜温差大，全年防晒并备保暖衣物。合适的季节大致是四五月和九十月；雨季（约六到八月）藏东南的林芝一带最绿，但山区道路易受泥石流影响。",
     "en-US":
       "Chongqing to Lhasa is a little over two hours, landing you at about 3,600 m — a big jump, so take altitude sickness seriously: for the first day or two slow down, rest, drink plenty of water and avoid alcohol, and get medical advice first if you have a heart or lung condition." +
-      "Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa and normally must travel with a licensed operator in a group on a declared itinerary — arrange it through an agency before you leave." +
-      "Lhasa is dry, with strong sun and a wide day-to-night temperature range, so bring sun protection and warm layers year-round. The better windows are roughly April–May and September–October; in the rainy season (about June to August) the Nyingchi area of south-eastern Tibet is at its greenest, but mountain roads are prone to mudflows.",
+      " Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa and normally must travel with a licensed operator in a group on a declared itinerary — arrange it through an agency before you leave." +
+      " Lhasa is dry, with strong sun and a wide day-to-night temperature range, so bring sun protection and warm layers year-round. The better windows are roughly April–May and September–October; in the rainy season (about June to August) the Nyingchi area of south-eastern Tibet is at its greenest, but mountain roads are prone to mudflows.",
     },
   },
 
@@ -267,8 +267,8 @@ export const ROUTE_NARRATION: Record<
       "再往西，降水减少，进入毛乌素沙地——一片半固定沙丘和草滩相间的地带，历史上是农牧交错的边缘。接近银川时，正前方立起一道孤零零的南北向石头山，那是贺兰山。它挡住了西北方腾格里沙漠的风沙，山脚下是黄河冲积出来的银川平原，一片方整的绿色灌区，当地把这里叫“塞上江南”。",
     "en-US":
       "Beijing to Yinchuan crosses the North China Plain, climbs over the Taihang Mountains, and enters the Loess Plateau and the dry north-west. Leaving the capital, you are first over the northern edge of the North China Plain — a lowland built by several rivers, dense with fields and towns, almost without relief." +
-      "Soon a near-straight wall of mountains rises to the west: the Taihang, its eastern face a line of cliffs standing right at the edge of the plain. Cross the crest and the land steps up onto the Loess Plateau, where the loess is shredded by water into a maze of branching gullies." +
-      "Farther west, with less rain, the route crosses the Mu Us Sandy Land — a belt of half-fixed dunes alternating with grassy flats, historically the margin between farming and herding. Approaching Yinchuan, a single north–south rock range stands up ahead: the Helan Mountains, which shelter the area from the sand and wind of the Tengger Desert to the west. At their foot lies the Yinchuan Plain, a neat green irrigation district watered by the Yellow River.",
+      " Soon a near-straight wall of mountains rises to the west: the Taihang, its eastern face a line of cliffs standing right at the edge of the plain. Cross the crest and the land steps up onto the Loess Plateau, where the loess is shredded by water into a maze of branching gullies." +
+      " Farther west, with less rain, the route crosses the Mu Us Sandy Land — a belt of half-fixed dunes alternating with grassy flats, historically the margin between farming and herding. Approaching Yinchuan, a single north–south rock range stands up ahead: the Helan Mountains, which shelter the area from the sand and wind of the Tengger Desert to the west. At their foot lies the Yinchuan Plain, a neat green irrigation district watered by the Yellow River.",
     },
     travel: {
     "zh-CN":
@@ -277,8 +277,8 @@ export const ROUTE_NARRATION: Record<
       "夏秋（约五到十月）较舒适，也是黄河灌区瓜果和稻田最好的时候；进沙漠地带注意防晒、补水，昼夜温差大要带外套。",
     "en-US":
       "Beijing to Yinchuan is a little over two hours. Yinchuan is the capital of Ningxia, on the Yellow River's Yinchuan Plain at about 1,100 m, with a temperate arid climate: little rain year-round, strong sun, a wide day-to-night range, cold winters, hot summers and windy, dusty springs." +
-      "The main sights around Yinchuan are natural and historical: the rock art and canyons of the Helan Mountains, the desert toward Shapotou and the lakes along the Yellow River, and historic sites in and near the city. The food is wheat-based with beef and mutton — hand-pulled lamb, stews and liangpi are common." +
-      "Summer and autumn (about May to October) are the more comfortable months and the best time for the irrigated fields and fruit; in the desert areas take sun protection and water, and pack a jacket for the cold nights.",
+      " The main sights around Yinchuan are natural and historical: the rock art and canyons of the Helan Mountains, the desert toward Shapotou and the lakes along the Yellow River, and historic sites in and near the city. The food is wheat-based with beef and mutton — hand-pulled lamb, stews and liangpi are common." +
+      " Summer and autumn (about May to October) are the more comfortable months and the best time for the irrigated fields and fruit; in the desert areas take sun protection and water, and pack a jacket for the cold nights.",
     },
   },
 
@@ -290,8 +290,8 @@ export const ROUTE_NARRATION: Record<
       "接近哈尔滨时，能看到松花江在平原上蜿蜒。哈尔滨就建在松花江边，是东北北部的中心城市。短短两小时，从暖温带的华北平原，飞到了中温带的东北平原。",
     "en-US":
       "Beijing to Harbin runs north-east from the North China Plain onto the Northeast China Plain. On take-off you are over the northern edge of the North China Plain; soon a belt of low mountains appears — the Yan Mountains and the south-eastern edge of the Inner Mongolian Plateau, where the land begins to roll, with more forest and grassland, the transition zone between farming and herding country." +
-      "Beyond that belt the land opens out flat again onto the Northeast Plain, built by the Songhua, Liao and Nen rivers and divided by low hills and terraces into the Song–Nen, Liao and Sanjiang plains. This is high-latitude country with long winters; the surface is broad, regular dry fields and paddies, with towns strung along the railways and roads." +
-      "Approaching Harbin you can see the Songhua River winding across the plain. Harbin is built on its bank and is the main city of the northern north-east. In about two hours you have flown from the warm-temperate North China Plain to the cold-temperate Northeast Plain.",
+      " Beyond that belt the land opens out flat again onto the Northeast Plain, built by the Songhua, Liao and Nen rivers and divided by low hills and terraces into the Song–Nen, Liao and Sanjiang plains. This is high-latitude country with long winters; the surface is broad, regular dry fields and paddies, with towns strung along the railways and roads." +
+      " Approaching Harbin you can see the Songhua River winding across the plain. Harbin is built on its bank and is the main city of the northern north-east. In about two hours you have flown from the warm-temperate North China Plain to the cold-temperate Northeast Plain.",
     },
     travel: {
     "zh-CN":
@@ -300,8 +300,8 @@ export const ROUTE_NARRATION: Record<
       "冬季（约十二月到次年二月）是冰雪旺季，但要注意保暖和路面结冰；夏季凉爽，适合作为去东北其它地方的中转。",
     "en-US":
       "Beijing to Harbin is a little over two hours. Harbin lies in the northern part of the Northeast Plain, with a cold-temperate monsoon climate and four clear seasons: short cool summers and long, severe winters, often around -20°C in January, so full cold-weather gear is needed." +
-      "Harbin's sights centre on the European-style architecture of Central Street and the old town, both banks of the Songhua River, and winter ice and snow attractions (the Ice and Snow World, and toward Yabuli and the \"Snow Town\"). The food reflects mixed influences — sausage, guo bao rou, Russian-style bread and stews are typical." +
-      "Winter (about December to February) is the ice-and-snow high season, but dress warmly and watch for icy pavements; summers are cool and make Harbin a good base for reaching other parts of the north-east.",
+      " Harbin's sights centre on the European-style architecture of Central Street and the old town, both banks of the Songhua River, and winter ice and snow attractions (the Ice and Snow World, and toward Yabuli and the \"Snow Town\"). The food reflects mixed influences — sausage, guo bao rou, Russian-style bread and stews are typical." +
+      " Winter (about December to February) is the ice-and-snow high season, but dress warmly and watch for icy pavements; summers are cool and make Harbin a good base for reaching other parts of the north-east.",
     },
   },
 
@@ -313,8 +313,8 @@ export const ROUTE_NARRATION: Record<
       "再往南是南岭——一列低矮、破碎的东西向丘陵山地，被宽谷隔开，历史上是岭南和内地之间的门槛，也大致是长江水系和珠江水系的分水岭。翻过南岭，很快就是珠江三角洲：珠江在入海口淤积、加上人工围垦形成的平原，水网密布、城市连成一片。一趟航班，走完了东部季风区从北到南的全部。",
     "en-US":
       "Harbin to Guangzhou flies the eastern half of China from its far north to its far south, down the full gradient from the cold-temperate zone to the southern subtropics. On take-off you are over the Northeast Plain — built by the Songhua, Liao and Nen rivers, an endless grid of dry fields and paddies with towns strung along the railways." +
-      "Past the Liao River country you cross the North China Plain, built by the Yellow, Huai and Hai rivers, with denser population and towns. The land then becomes the Middle–Lower Yangtze Plain, a low plain of interconnected rivers and lakes with diked fields and ponds." +
-      "Farther south is the Nanling — a low, broken east–west belt of hills separated by wide valleys, historically the threshold between the far south and the interior, and roughly the divide between the Yangtze and Pearl river systems. Cross it and you are soon over the Pearl River Delta, a plain built by silt and reclamation, water-netted and city-covered. One flight has crossed the whole eastern monsoon zone, north to south.",
+      " Past the Liao River country you cross the North China Plain, built by the Yellow, Huai and Hai rivers, with denser population and towns. The land then becomes the Middle–Lower Yangtze Plain, a low plain of interconnected rivers and lakes with diked fields and ponds." +
+      " Farther south is the Nanling — a low, broken east–west belt of hills separated by wide valleys, historically the threshold between the far south and the interior, and roughly the divide between the Yangtze and Pearl river systems. Cross it and you are soon over the Pearl River Delta, a plain built by silt and reclamation, water-netted and city-covered. One flight has crossed the whole eastern monsoon zone, north to south.",
     },
     travel: {
     "zh-CN":
@@ -323,8 +323,8 @@ export const ROUTE_NARRATION: Record<
       "从东北出发要注意到广州后的换季：厚衣物基本用不上，改带轻薄透气和雨具。夏季注意防暑、留意台风预报。",
     "en-US":
       "Harbin to Guangzhou is about four hours across a big climate difference: severe winters where you start, warm and humid most of the year where you land. Guangzhou has a southern subtropical monsoon climate — long summers, short winters, hot and wet with typhoons from May to September, mild winters." +
-      "Guangzhou is the gateway and transport hub of southern China; Cantonese food, morning yum cha and the old arcade-street quarters are the main experiences, with the Pearl River Delta cities and Hong Kong and Macau to the south and west." +
-      "Coming from the north-east, plan for the change of season on arrival: heavy clothing is not needed; bring light, breathable clothes and rain gear instead. In summer take care in the heat and watch typhoon forecasts.",
+      " Guangzhou is the gateway and transport hub of southern China; Cantonese food, morning yum cha and the old arcade-street quarters are the main experiences, with the Pearl River Delta cities and Hong Kong and Macau to the south and west." +
+      " Coming from the north-east, plan for the change of season on arrival: heavy clothing is not needed; bring light, breathable clothes and rain gear instead. In summer take care in the heat and watch typhoon forecasts.",
     },
   },
 
@@ -336,8 +336,8 @@ export const ROUTE_NARRATION: Record<
       "过了山东，进入淮河以南、长江以北的苏北平原，河渠纵横。接近上海时进入长江三角洲——长江最后一段淤积形成的低平原，河网最密、城镇连成一片，太湖等湖泊点缀其间。飞机在这里下降。全程都在中国地势最低、最平的第三级阶梯上飞。",
     "en-US":
       "Beijing to Shanghai runs down the eastern coastal belt of China, from the North China Plain to the Yangtze Delta. On take-off you are over the North China Plain — built by the Yellow, Huai and Hai rivers, dense with fields and towns, almost without relief." +
-      "Flying south-east, a distinct band of higher hills appears to the right: the Shandong Hills, a block of bedrock rising out of the middle of the plain, with summits such as Tai Shan standing above otherwise flat surroundings." +
-      "Past Shandong the route crosses the northern Jiangsu plain between the Huai and the Yangtze, threaded with canals. Approaching Shanghai you reach the Yangtze Delta, the low plain of the river's final reach, with the densest water network and continuous built-up land, dotted with lakes such as Tai Hu. The whole flight stays on the lowest, flattest step of China's terrain.",
+      " Flying south-east, a distinct band of higher hills appears to the right: the Shandong Hills, a block of bedrock rising out of the middle of the plain, with summits such as Tai Shan standing above otherwise flat surroundings." +
+      " Past Shandong the route crosses the northern Jiangsu plain between the Huai and the Yangtze, threaded with canals. Approaching Shanghai you reach the Yangtze Delta, the low plain of the river's final reach, with the densest water network and continuous built-up land, dotted with lakes such as Tai Hu. The whole flight stays on the lowest, flattest step of China's terrain.",
     },
     travel: {
     "zh-CN":
@@ -346,8 +346,8 @@ export const ROUTE_NARRATION: Record<
       "从北京到上海，注意湿度变化：上海体感更闷，夏季带轻便透气衣物和雨具；冬季虽然气温不算很低，但湿冷，室内外都要注意保暖。",
     "en-US":
       "Beijing to Shanghai is about two hours. Both cities are on the eastern plain but the climates differ: Beijing is dry, with four clear seasons and cold winters; Shanghai is humid, with damp cold winters and hot, muggy summers, plus the plum rains around June and typhoons in late summer and autumn." +
-      "This is one of the busiest business routes in China, and the Beijing–Shanghai high-speed train takes only about four to five hours, so plans are flexible. Shanghai is the gateway to the Jiangnan water towns and the eastern coast." +
-      "Coming from Beijing, note the change in humidity: Shanghai feels muggier, so bring light breathable clothes and rain gear in summer; winters are not very cold but the damp makes them feel raw, indoors and out.",
+      " This is one of the busiest business routes in China, and the Beijing–Shanghai high-speed train takes only about four to five hours, so plans are flexible. Shanghai is the gateway to the Jiangnan water towns and the eastern coast." +
+      " Coming from Beijing, note the change in humidity: Shanghai feels muggier, so bring light breathable clothes and rain gear in summer; winters are not very cold but the damp makes them feel raw, indoors and out.",
     },
   },
 
@@ -359,8 +359,8 @@ export const ROUTE_NARRATION: Record<
       "半岛尽头是琼州海峡，一条几十公里宽的水道，把海南岛和大陆隔开。越过海峡就是海南岛：岛的中南部是山地，五指山、鹦哥岭等主峰在中间隆起，四周是环岛的沿海平原和台地，海口就在岛北缘的一片这样的平原上。海南岛是中国纬度最低的省级陆地，属热带气候。",
     "en-US":
       "Guangzhou to Haikou is a short over-water flight from the southern edge of the mainland to Hainan Island. After take-off you are over the Pearl River Delta, then quickly the coast of western Guangdong, its shoreline lined with mangroves, salt pans and aquaculture ponds." +
-      "The land then narrows into a peninsula reaching south-west: the Leizhou Peninsula, the southernmost part of the Chinese mainland, a basalt plateau dotted with low extinct craters and crater lakes." +
-      "At its tip is the Qiongzhou Strait, a channel a few tens of kilometres wide separating Hainan from the mainland. Across it lies Hainan Island: mountains in the centre-south, with peaks such as Wuzhi Shan rising in the middle, ringed by coastal plains and terraces. Haikou sits on one of these plains at the island's northern edge. Hainan is the lowest-latitude provincial-level land in China, with a tropical climate.",
+      " The land then narrows into a peninsula reaching south-west: the Leizhou Peninsula, the southernmost part of the Chinese mainland, a basalt plateau dotted with low extinct craters and crater lakes." +
+      " At its tip is the Qiongzhou Strait, a channel a few tens of kilometres wide separating Hainan from the mainland. Across it lies Hainan Island: mountains in the centre-south, with peaks such as Wuzhi Shan rising in the middle, ringed by coastal plains and terraces. Haikou sits on one of these plains at the island's northern edge. Hainan is the lowest-latitude provincial-level land in China, with a tropical climate.",
     },
     travel: {
     "zh-CN":
@@ -369,8 +369,8 @@ export const ROUTE_NARRATION: Record<
       "全年防晒和补水都很重要；台风期航班和轮渡可能延误或取消，行程安排留出机动时间。",
     "en-US":
       "Guangzhou to Haikou is about an hour and a half. Haikou is on the northern edge of Hainan, with a tropical monsoon climate: warm year-round, with winter as the tourist high season and a hot, wet typhoon season in late spring to autumn (about May to October), so watch typhoon forecasts." +
-      "Haikou itself has its arcade old streets, a volcanic geopark and the seafront, but most visitors treat it as the gateway to Hainan: east to Wenchang, south down the east coast to Qionghai, Wanning and Sanya, with tropical rainforest mountains in the interior." +
-      "Sun protection and hydration matter all year; during the typhoon season flights and ferries can be delayed or cancelled, so leave slack in your plans.",
+      " Haikou itself has its arcade old streets, a volcanic geopark and the seafront, but most visitors treat it as the gateway to Hainan: east to Wenchang, south down the east coast to Qionghai, Wanning and Sanya, with tropical rainforest mountains in the interior." +
+      " Sun protection and hydration matter all year; during the typhoon season flights and ferries can be delayed or cancelled, so leave slack in your plans.",
     },
   },
 
@@ -382,8 +382,8 @@ export const ROUTE_NARRATION: Record<
       "再往南是南岭，一列低矮破碎的东西向丘陵山地，翻过它就进入两广。桂林一带是典型的喀斯特峰林：厚层石灰岩被长期溶蚀，留下一座座陡立的、彼此分开的石峰，漓江在峰林之间蜿蜒。这种“平地拔起一片石峰”的地貌，是湿热气候下石灰岩长期溶蚀的结果。",
     "en-US":
       "Beijing to Guilin runs south from the North China Plain to the karst landscape of the south. On take-off you are over the North China Plain, dense with fields and towns and almost without relief." +
-      "Flying south, the route passes Dongting Lake, a lake connected to the Yangtze whose open water spreads wide in the flood season and shrinks to channels and bars in the dry season, surrounded by the paddy plains of Hunan." +
-      "Farther south is the Nanling, a low, broken east–west belt of hills; cross it and you are in Guangxi. The Guilin area is classic peak-forest karst: thick limestone dissolved over a long time into rows of steep, separate stone towers, with the Li River winding between them. This landscape of towers rising straight from flat ground is the result of long dissolution of limestone in a hot, wet climate.",
+      " Flying south, the route passes Dongting Lake, a lake connected to the Yangtze whose open water spreads wide in the flood season and shrinks to channels and bars in the dry season, surrounded by the paddy plains of Hunan." +
+      " Farther south is the Nanling, a low, broken east–west belt of hills; cross it and you are in Guangxi. The Guilin area is classic peak-forest karst: thick limestone dissolved over a long time into rows of steep, separate stone towers, with the Li River winding between them. This landscape of towers rising straight from flat ground is the result of long dissolution of limestone in a hot, wet climate.",
     },
     travel: {
     "zh-CN":
@@ -392,8 +392,8 @@ export const ROUTE_NARRATION: Record<
       "雨季（约五到八月）漓江可能因涨水调整游船航段，山路湿滑；枯水期个别河段水浅。出行前查漓江当日通航情况。",
     "en-US":
       "Beijing to Guilin is about three hours. Guilin has a subtropical monsoon climate, warm and humid: cloudy, drizzly springs; a summer flood season when the Li River runs high; drier, comfortable autumns; and mild winters that can occasionally turn raw." +
-      "The main experiences are the Li River (the Guilin–Yangshuo stretch), the caves and peak-forest countryside around it, and the Longji terraces. Yangshuo is the base for backpackers and cycling." +
-      "In the rainy season (about May to August) Li River cruises may change which section they run because of high water, and mountain paths are slippery; in the dry season some reaches are shallow. Check the day's river conditions before you go.",
+      " The main experiences are the Li River (the Guilin–Yangshuo stretch), the caves and peak-forest countryside around it, and the Longji terraces. Yangshuo is the base for backpackers and cycling." +
+      " In the rainy season (about May to August) Li River cruises may change which section they run because of high water, and mountain paths are slippery; in the dry season some reaches are shallow. Check the day's river conditions before you go.",
     },
   },
 
@@ -405,8 +405,8 @@ export const ROUTE_NARRATION: Record<
       "翻过秦岭主脊，还有一道大巴山，之间夹着汉中盆地。再越过大巴山，地面陷下去、变成红色，进入四川盆地——四周被山环抱的红层盆地，云雾多、日照少，成都平原就在盆地西部，是都江堰两千多年引岷江水灌溉出来的一片沃野。",
     "en-US":
       "Xi'an to Chengdu takes only a little over an hour, but it crosses the Qinling and passes from the Yellow River basin into the Yangtze basin. On take-off you are over the Guanzhong Plain, built by the Wei River, an old farming region of the middle Yellow River." +
-      "Soon a high, broad east–west wall of mountains stands up to the south: the Qinling. It is one of China's important natural dividing lines — roughly separating the warm-temperate zone from the subtropics, wheat country from rice country, and the Yellow River system from the Yangtze. North of it is loess and wheat; south of it the land quickly turns to green paddies and evergreen forest." +
-      "Beyond the main Qinling crest is a second range, the Daba Mountains, with the Hanzhong basin between them. Past the Daba the ground drops and turns red, into the Sichuan Basin — a red-bed basin ringed by mountains, often cloudy with little sun. The Chengdu Plain lies in its west, farmland the Dujiangyan works have irrigated from the Min River for more than two thousand years.",
+      " Soon a high, broad east–west wall of mountains stands up to the south: the Qinling. It is one of China's important natural dividing lines — roughly separating the warm-temperate zone from the subtropics, wheat country from rice country, and the Yellow River system from the Yangtze. North of it is loess and wheat; south of it the land quickly turns to green paddies and evergreen forest." +
+      " Beyond the main Qinling crest is a second range, the Daba Mountains, with the Hanzhong basin between them. Past the Daba the ground drops and turns red, into the Sichuan Basin — a red-bed basin ringed by mountains, often cloudy with little sun. The Chengdu Plain lies in its west, farmland the Dujiangyan works have irrigated from the Min River for more than two thousand years.",
     },
     travel: {
     "zh-CN":
@@ -415,8 +415,8 @@ export const ROUTE_NARRATION: Record<
       "成都的“阴天感”是常态，带件薄外套即可；如果不习惯辣，点餐时可要求微辣或不辣。京昆、西成高铁也很方便，行程可灵活组合。",
     "en-US":
       "Xi'an to Chengdu is about an hour and a half. Both are inland, but the climates differ: Xi'an is dry, with four clear seasons and cold winters; Chengdu, in its basin, is humid and cloudy with little sun, raw in winter and muggy in summer, and rarely bright." +
-      "Chengdu is the hub for travel in Sichuan: in the city there is the Kuanzhai Alley, the Wuhou Shrine and the panda base; north-west lie Jiuzhaigou and Siguniang Shan; west is the route into Tibet; south are Leshan and Emei. The food is Sichuanese and hotpot, leaning hot and numbing." +
-      "Chengdu's overcast feel is normal — a light jacket is enough. If you are not used to chilli, you can ask for mild or none. The high-speed rail links are good, so plans can be mixed and matched.",
+      " Chengdu is the hub for travel in Sichuan: in the city there is the Kuanzhai Alley, the Wuhou Shrine and the panda base; north-west lie Jiuzhaigou and Siguniang Shan; west is the route into Tibet; south are Leshan and Emei. The food is Sichuanese and hotpot, leaning hot and numbing." +
+      " Chengdu's overcast feel is normal — a light jacket is enough. If you are not used to chilli, you can ask for mild or none. The high-speed rail links are good, so plans can be mixed and matched.",
     },
   },
 
@@ -428,8 +428,8 @@ export const ROUTE_NARRATION: Record<
       "沙漠南缘，昆仑山的雪峰从地平线上升起。昆仑山是青藏高原的北界。山前的融水汇成几条河，冲出一小片一小片绿洲，和田就在其中一片上——它是塔里木盆地南缘的古老绿洲，自古以玉和丝绸闻名。",
     "en-US":
       "Ürümqi to Hotan flies straight across the Taklamakan Desert, from the northern foot of the Tianshan to the northern foot of the Kunlun. After take-off you are over the oasis belt on the north side of the Tianshan, then climb over the range, whose summits are under permanent snow with widespread glaciers." +
-      "Beyond the Tianshan a huge yellow oval opens up — the Tarim Basin, walled in by the Tianshan, Kunlun and Pamirs. Instead of following the basin rim, the plane cuts straight into the Taklamakan Desert in its centre. On a clear day you can see regular rows of crescent and grid dunes, almost no vegetation, and no roads or settlements." +
-      "At the desert's southern edge the snow peaks of the Kunlun rise from the horizon; the Kunlun forms the northern edge of the Tibetan Plateau. Meltwater from it feeds a few rivers that build small oases, and Hotan sits on one of them — an old oasis on the southern rim of the Tarim Basin, long known for jade and silk.",
+      " Beyond the Tianshan a huge yellow oval opens up — the Tarim Basin, walled in by the Tianshan, Kunlun and Pamirs. Instead of following the basin rim, the plane cuts straight into the Taklamakan Desert in its centre. On a clear day you can see regular rows of crescent and grid dunes, almost no vegetation, and no roads or settlements." +
+      " At the desert's southern edge the snow peaks of the Kunlun rise from the horizon; the Kunlun forms the northern edge of the Tibetan Plateau. Meltwater from it feeds a few rivers that build small oases, and Hotan sits on one of them — an old oasis on the southern rim of the Tarim Basin, long known for jade and silk.",
     },
     travel: {
     "zh-CN":
@@ -438,8 +438,8 @@ export const ROUTE_NARRATION: Record<
       "这一带靠近边境和沙漠：部分区域外国人需办边境通行证，风沙天能见度低、航班易延误，行程要留机动时间。作息比内地晚约两小时。",
     "en-US":
       "Ürümqi to Hotan is about two hours. Hotan is on the southern rim of the Tarim Basin at the foot of the Kunlun, at about 1,400 m, with an extremely dry climate, frequent dust and sandstorms in spring and summer, hot summers and a wide day-to-night range." +
-      "Hotan is an old oasis of southern Xinjiang, known for jade, carpets, atlas silk and its grand bazaar, with ancient sites such as Yotkan nearby. The food centres on naan, laghman, grilled meat and fruit." +
-      "This area is close to the border and the desert: some parts require a border permit for foreign visitors, dust days cut visibility and delay flights, so leave slack in your plans. Daily life runs about two hours later than in eastern China.",
+      " Hotan is an old oasis of southern Xinjiang, known for jade, carpets, atlas silk and its grand bazaar, with ancient sites such as Yotkan nearby. The food centres on naan, laghman, grilled meat and fruit." +
+      " This area is close to the border and the desert: some parts require a border permit for foreign visitors, dust days cut visibility and delay flights, so leave slack in your plans. Daily life runs about two hours later than in eastern China.",
     },
   },
 
@@ -448,11 +448,11 @@ export const ROUTE_NARRATION: Record<
     "zh-CN":
       "昆明飞拉萨，是从云贵高原横穿横断山脉，飞到青藏高原东南缘。起飞时脚下是滇中的高原面，昆明在一片高原湖盆里，旁边是滇池。" +
       "往西北飞，地面被切得越来越破碎，进入横断山脉：南北向排列的雪山和深谷，金沙江、澜沧江、怒江在这里并行南流。金沙江在石鼓一带拐了个急弯，在玉龙雪山和哈巴雪山之间切出很深的虎跳峡。" +
-      "继续往西北，进入藏东南。这一带有印度洋水汽顺河谷灌入，是青藏高原上最湿润、最绿的角落，森林长得很高。雅鲁藏布江绕南迦巴瓦峰拐了一个大弯，切出很深的峡谷。再往西，地面转为相对平坦开阔的青藏高原面，飞机沿拉萨河谷下降到拉萨。",
+      "继续往西北，进入藏东南。这一带有印度洋水汽顺河谷灌入，是高原东南缘最湿润、最绿的角落，森林长得很高。雅鲁藏布江绕南迦巴瓦峰拐了一个大弯，切出很深的峡谷。再往西，地面转为相对平坦开阔的青藏高原面，飞机沿拉萨河谷下降到拉萨。",
     "en-US":
       "Kunming to Lhasa crosses the Yunnan–Guizhou Plateau, cuts through the Hengduan Mountains, and reaches the south-eastern edge of the Tibetan Plateau. On take-off you are over the plateau surface of central Yunnan, with Kunming in a lake basin beside Lake Dian." +
-      "Flying north-west, the land becomes ever more broken as you enter the Hengduan Mountains: north–south snow ranges and deep gorges, with the Jinsha, Lancang and Nu rivers running south in parallel. Near Shigu the Jinsha makes a sharp bend, and between the Yulong and Haba snow massifs it cuts the deep Tiger Leaping Gorge." +
-      "Continuing north-west you enter south-eastern Tibet, where Indian Ocean moisture up the valleys makes this the wettest, greenest corner of the plateau, with tall forest. The Yarlung Tsangpo makes a great bend around Namcha Barwa, cutting a very deep gorge. Farther west the ground becomes the comparatively flat, open plateau surface, and the plane descends along the Lhasa River valley into Lhasa.",
+      " Flying north-west, the land becomes ever more broken as you enter the Hengduan Mountains: north–south snow ranges and deep gorges, with the Jinsha, Lancang and Nu rivers running south in parallel. Near Shigu the Jinsha makes a sharp bend, and between the Yulong and Haba snow massifs it cuts the deep Tiger Leaping Gorge." +
+      " Continuing north-west you enter south-eastern Tibet, where Indian Ocean moisture up the valleys makes this the wettest, greenest corner of the plateau, with tall forest. The Yarlung Tsangpo makes a great bend around Namcha Barwa, cutting a very deep gorge. Farther west the ground becomes the comparatively flat, open plateau surface, and the plane descends along the Lhasa River valley into Lhasa.",
     },
     travel: {
     "zh-CN":
@@ -461,8 +461,8 @@ export const ROUTE_NARRATION: Record<
       "高原日照极强、气候干燥，全年防晒并备保暖衣物。合适的季节大致是四五月和九十月；雨季（约六到八月）藏东南最绿，但横断山区道路易受泥石流影响。",
     "en-US":
       "Kunming to Lhasa is a little over two hours. Kunming itself is at about 1,900 m and can serve as a step to acclimatise; Lhasa is at about 3,600 m, so for the first day or two slow down, drink plenty of water and avoid alcohol, and get medical advice first if you have a heart or lung condition." +
-      "Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — arrange this through an agency before you leave." +
-      "The plateau sun is very strong and the air dry, so sun protection and warm layers are needed year-round. The better windows are roughly April–May and September–October; in the rainy season (about June to August) south-eastern Tibet is greenest, but roads in the Hengduan ranges are prone to mudflows.",
+      " Important: to enter Tibet, foreign visitors need a Tibet Travel Permit in addition to their Chinese visa, and normally must travel with a licensed tour operator on a pre-declared itinerary in a group — arrange this through an agency before you leave." +
+      " The plateau sun is very strong and the air dry, so sun protection and warm layers are needed year-round. The better windows are roughly April–May and September–October; in the rainy season (about June to August) south-eastern Tibet is greenest, but roads in the Hengduan ranges are prone to mudflows.",
     },
   },
 
@@ -474,8 +474,8 @@ export const ROUTE_NARRATION: Record<
       "越过辽东湾，进入东北平原。东北平原由松花江、辽河、嫩江冲积成，中间被一些低丘和台地分开，习惯上分为辽河平原、松嫩平原和三江平原。这里纬度高、黑土广布，是大片规整的旱地和水田。接近哈尔滨时能看到松花江在平原上蜿蜒，哈尔滨就建在江边。",
     "en-US":
       "Shanghai to Harbin flies up the coast of China to the north-east, from the Yangtze Delta to the Northeast Plain. After take-off you are soon over the Yellow Sea, with cargo ships and aquaculture areas below." +
-      "The route roughly follows the coastline. The Shandong Peninsula lies ahead to the right, and then the plane passes the Liaodong Peninsula — the Liaodong Hills are a belt of low hills, with an indented coast and many islands and bays." +
-      "Across the Liaodong Gulf you reach the Northeast Plain, built by the Songhua, Liao and Nen rivers and divided by low hills and terraces into the Liao, Song–Nen and Sanjiang plains. This is high-latitude country with widespread black soil, in broad, regular dry fields and paddies. Approaching Harbin you can see the Songhua River winding across the plain, with the city on its bank.",
+      " The route roughly follows the coastline. The Shandong Peninsula lies ahead to the right, and then the plane passes the Liaodong Peninsula — the Liaodong Hills are a belt of low hills, with an indented coast and many islands and bays." +
+      " Across the Liaodong Gulf you reach the Northeast Plain, built by the Songhua, Liao and Nen rivers and divided by low hills and terraces into the Liao, Song–Nen and Sanjiang plains. This is high-latitude country with widespread black soil, in broad, regular dry fields and paddies. Approaching Harbin you can see the Songhua River winding across the plain, with the city on its bank.",
     },
     travel: {
     "zh-CN":
@@ -484,8 +484,8 @@ export const ROUTE_NARRATION: Record<
       "冬季（约十二月到次年二月）从上海出发要备足防寒装备，注意室内外温差和路面结冰；夏季凉爽，是避暑和中转的好时候。",
     "en-US":
       "Shanghai to Harbin is about three hours, from the humid Jiangnan to the north-east with its severe winters. Harbin has a cold-temperate monsoon climate: short cool summers and long, severe winters, often around -20°C in January." +
-      "Harbin's sights are the European-style architecture of Central Street and the old town, both banks of the Songhua River, and winter ice and snow activities. South are Changchun and Shenyang; north and east are the forests and wetlands of the north-east." +
-      "In winter (about December to February), leaving from Shanghai, bring full cold-weather gear and watch the indoor–outdoor temperature difference and icy pavements; summers are cool and good for escaping the heat or for transfers.",
+      " Harbin's sights are the European-style architecture of Central Street and the old town, both banks of the Songhua River, and winter ice and snow activities. South are Changchun and Shenyang; north and east are the forests and wetlands of the north-east." +
+      " In winter (about December to February), leaving from Shanghai, bring full cold-weather gear and watch the indoor–outdoor temperature difference and icy pavements; summers are cool and good for escaping the heat or for transfers.",
     },
   },
 
@@ -498,9 +498,9 @@ export const ROUTE_NARRATION: Record<
       "琵琶湖以南、群山之间的低地就是大阪平原，大阪、京都、神户连成一片。飞机在平原北缘的伊丹机场降落。一趟短途航班，飞过了日本的政治中心、象征性的名山和历史古都。",
     "en-US":
       "Tokyo to Osaka takes only a little over an hour, but it flies the length of Honshu's most densely populated \"Pacific corridor\", east to west. On take-off you are over the Kanto Plain — the largest plain in Japan, built by the Tone and other rivers and almost entirely covered by the Tokyo metropolitan area, with little farmland visible." +
-      "Soon an almost perfectly symmetrical snow-capped cone appears ahead to the right: Mount Fuji, a stratovolcano standing alone between plain and hills, clearly seen from the plane on a fine day." +
-      "Beyond the hills around Fuji you cross the Nobi Plain around Nagoya, a delta plain built by the Kiso and other rivers. Farther west a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan, which supplies much of the water for Kyoto and Osaka." +
-      "South of the lake, the lowland among the mountains is the Osaka Plain, where Osaka, Kyoto and Kobe run together. The plane lands at Itami on the northern edge of the plain. In one short flight you have passed the political centre of Japan, its symbolic mountain and its historic capital.",
+      " Soon an almost perfectly symmetrical snow-capped cone appears ahead to the right: Mount Fuji, a stratovolcano standing alone between plain and hills, clearly seen from the plane on a fine day." +
+      " Beyond the hills around Fuji you cross the Nobi Plain around Nagoya, a delta plain built by the Kiso and other rivers. Farther west a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan, which supplies much of the water for Kyoto and Osaka." +
+      " South of the lake, the lowland among the mountains is the Osaka Plain, where Osaka, Kyoto and Kobe run together. The plane lands at Itami on the northern edge of the plain. In one short flight you have passed the political centre of Japan, its symbolic mountain and its historic capital.",
     },
     travel: {
     "zh-CN":
@@ -509,8 +509,8 @@ export const ROUTE_NARRATION: Record<
       "樱花期（3月底到4月初）和红叶期（11月）关西游客最多，京都的热门寺院要趁早去。夏天注意防暑补水，随身带把伞应付雷阵雨。",
     "en-US":
       "Tokyo to Osaka is about an hour in the air, but with airport transfers many people take the Shinkansen instead (about two and a half hours, city centre to city centre). Both cities have a Pacific-side temperate climate: hot, humid summers with a rainy season in June–July, typhoons in autumn, and mild winters with little snow." +
-      "Osaka is the centre of the Kansai region, down-to-earth and known for its food (takoyaki, okonomiyaki, kushikatsu). It is also the hub for Kyoto (about 30 minutes), Nara, Kobe and Himeji. The subway and the JR Loop Line are easy, and a single IC card (ICOCA and others) works throughout." +
-      "During the cherry-blossom season (late March to early April) and the autumn-leaf season (November) Kansai is busiest, and the popular Kyoto temples are best visited early. In summer take care in the heat and carry an umbrella for thunderstorms.",
+      " Osaka is the centre of the Kansai region, down-to-earth and known for its food (takoyaki, okonomiyaki, kushikatsu). It is also the hub for Kyoto (about 30 minutes), Nara, Kobe and Himeji. The subway and the JR Loop Line are easy, and a single IC card (ICOCA and others) works throughout." +
+      " During the cherry-blossom season (late March to early April) and the autumn-leaf season (November) Kansai is busiest, and the popular Kyoto temples are best visited early. In summer take care in the heat and carry an umbrella for thunderstorms.",
     },
   },
 
@@ -523,9 +523,9 @@ export const ROUTE_NARRATION: Record<
       "再往北是石狩平原，由石狩川冲积而成，是北海道人口和农业的重心，田块比本州大得多、更规整。札幌就建在平原南缘、面向石狩湾的位置。",
     "en-US":
       "Tokyo to Sapporo flies from the largest plain on Honshu to the largest on Hokkaido, north along the Pacific coast. On take-off you are over the Kanto Plain and the Tokyo metropolitan area, then over the Pacific side of north-eastern Honshu." +
-      "The route roughly follows the Sanriku Coast. Its southern part is a classic ria coast — drowned river valleys forming a line of jagged bays reaching inland, with the ports tucked at the head of each bay; the northern part is high sea cliffs. This stretch faces the open Pacific." +
-      "Across the Tsugaru Strait you reach Hokkaido. First comes the Shikotsu–Toya volcanic area — Lakes Shikotsu and Toya both fill volcanic craters as deep lakes, with active volcanoes such as Usu and Tarumae beside them, and pale volcanic debris and craters visible on the ground." +
-      "Farther north is the Ishikari Plain, built by the Ishikari River, the centre of Hokkaido's population and farming, with fields much larger and more regular than on Honshu. Sapporo is built on its southern edge, facing Ishikari Bay.",
+      " The route roughly follows the Sanriku Coast. Its southern part is a classic ria coast — drowned river valleys forming a line of jagged bays reaching inland, with the ports tucked at the head of each bay; the northern part is high sea cliffs. This stretch faces the open Pacific." +
+      " Across the Tsugaru Strait you reach Hokkaido. First comes the Shikotsu–Toya volcanic area — Lakes Shikotsu and Toya both fill volcanic craters as deep lakes, with active volcanoes such as Usu and Tarumae beside them, and pale volcanic debris and craters visible on the ground." +
+      " Farther north is the Ishikari Plain, built by the Ishikari River, the centre of Hokkaido's population and farming, with fields much larger and more regular than on Honshu. Sapporo is built on its southern edge, facing Ishikari Bay.",
     },
     travel: {
     "zh-CN":
@@ -534,8 +534,8 @@ export const ROUTE_NARRATION: Record<
       "北海道地广、城市间距离大，自驾较方便但冬季雪地驾驶需经验和冬胎。夏季昼夜温差大、要带外套；冬季务必防寒防滑。",
     "en-US":
       "Tokyo to Sapporo is about an hour and a half. Hokkaido is at a higher latitude and its climate is clearly different from Honshu's: cool, dry summers (July–August) make it a place to escape the heat, while winters are long and severe with very heavy snow — Sapporo is often below freezing in January and February, with icy streets." +
-      "Sapporo is the main city of Hokkaido, laid out on a regular grid. The Snow Festival in February is the big event; in other seasons Sapporo is mostly a hub — east to the flower fields of Furano and Biei and to Daisetsuzan, south-west to Otaru, Toya and Hakodate, east to Shiretoko and the Kushiro marshes." +
-      "Hokkaido is large with long distances between towns; driving is convenient but winter snow driving needs experience and winter tyres. Summers have a wide day-to-night range so bring a jacket; in winter, dress for the cold and for ice underfoot.",
+      " Sapporo is the main city of Hokkaido, laid out on a regular grid. The Snow Festival in February is the big event; in other seasons Sapporo is mostly a hub — east to the flower fields of Furano and Biei and to Daisetsuzan, south-west to Otaru, Toya and Hakodate, east to Shiretoko and the Kushiro marshes." +
+      " Hokkaido is large with long distances between towns; driving is convenient but winter snow driving needs experience and winter tyres. Summers have a wide day-to-night range so bring a jacket; in winter, dress for the cold and for ice underfoot.",
     },
   },
 
@@ -548,9 +548,9 @@ export const ROUTE_NARRATION: Record<
       "濑户内海西端就是关门海峡，过了海峡就是九州。福冈在九州北岸、面向玄界滩，是九州最大的城市，也是日本离亚洲大陆最近的大城市之一。",
     "en-US":
       "Tokyo to Fukuoka flies from the eastern end of Honshu to the northern end of Kyushu, almost the full width of western Japan. After take-off you are over the Kanto Plain and the Tokyo metropolitan area, with the cone of Mount Fuji visible ahead to the right." +
-      "Past Fuji you cross the mountains of central Honshu, then the Kii Mountains — a rugged, densely forested range on the Kii Peninsula, one of the wettest areas in Japan and the setting of the Kumano pilgrimage routes." +
-      "Beyond the peninsula the view opens onto the Seto Inland Sea, an island-filled sea between Honshu, Shikoku and Kyushu, its water calm and its islands close-packed, with narrow coastal plains and port cities on either shore and several long bridges linking the three landmasses." +
-      "At the western end of the Inland Sea is the Kanmon Strait; across it is Kyushu. Fukuoka, on Kyushu's northern coast facing the Genkai Sea, is the largest city on the island and one of the Japanese cities closest to mainland Asia.",
+      " Past Fuji you cross the mountains of central Honshu, then the Kii Mountains — a rugged, densely forested range on the Kii Peninsula, one of the wettest areas in Japan and the setting of the Kumano pilgrimage routes." +
+      " Beyond the peninsula the view opens onto the Seto Inland Sea, an island-filled sea between Honshu, Shikoku and Kyushu, its water calm and its islands close-packed, with narrow coastal plains and port cities on either shore and several long bridges linking the three landmasses." +
+      " At the western end of the Inland Sea is the Kanmon Strait; across it is Kyushu. Fukuoka, on Kyushu's northern coast facing the Genkai Sea, is the largest city on the island and one of the Japanese cities closest to mainland Asia.",
     },
     travel: {
     "zh-CN":
@@ -559,8 +559,8 @@ export const ROUTE_NARRATION: Record<
       "台风季（约7–9月）留意预报。樱花和红叶季市内的舞鹤公园、大濠公园人多但不算夸张。",
     "en-US":
       "Tokyo to Fukuoka is about two hours and one of the busiest domestic routes in Japan. Fukuoka has a milder Pacific–Tsushima Current climate: hot, humid summers with a clear rainy season in June–July, and mild winters with occasional snow, a little warmer than Tokyo." +
-      "Fukuoka is compact, and the airport is only two or three subway stops from the centre — very convenient. It is known for tonkotsu ramen, yatai (street stalls) and seafood. It is the gateway to Kyushu: south to the volcanoes and hot springs of Aso, Yufuin and Beppu, west to Nagasaki, north by ferry or rail to Shimonoseki." +
-      "During the typhoon season (about July to September) watch the forecast. In the cherry-blossom and autumn-leaf seasons Maizuru and Ohori parks in the city are busy but not extreme.",
+      " Fukuoka is compact, and the airport is only two or three subway stops from the centre — very convenient. It is known for tonkotsu ramen, yatai (street stalls) and seafood. It is the gateway to Kyushu: south to the volcanoes and hot springs of Aso, Yufuin and Beppu, west to Nagasaki, north by ferry or rail to Shimonoseki." +
+      " During the typhoon season (about July to September) watch the forecast. In the cherry-blossom and autumn-leaf seasons Maizuru and Ohori parks in the city are busy but not extreme.",
     },
   },
 
@@ -573,9 +573,9 @@ export const ROUTE_NARRATION: Record<
       "那霸在冲绳本岛南部，是这片岛屿地区的中心城市。整趟航线，从温带的活火山，飞到了亚热带的珊瑚礁海。",
     "en-US":
       "Kagoshima to Naha follows the Nansei island chain from the southern tip of Kyushu toward subtropical Okinawa. On take-off a smoking volcanic island stands in Kagoshima Bay: Sakurajima, an active volcano facing the city that has erupted frequently on a small scale in recent decades, with a near-constant plume and slopes of grey-black ash and lava." +
-      "A short way south a near-circular, densely forested high island appears in the sea: Yakushima. It is a single uplifted block of granite, with peaks near 2,000 m in its centre that wring the moisture out of the sea air, making it one of the wettest places in Japan; thousand-year-old cedars grow on its slopes, and it is a World Heritage Site." +
-      "Farther south you reach the main Nansei chain — a string of low coral islands ringed by pale-blue reef flats and white sand, quite unlike the volcanic islands of Kyushu. These islands have a subtropical climate." +
-      "Naha, in the south of Okinawa's main island, is the central city of this island region. The whole flight has gone from a temperate active volcano to a subtropical coral sea.",
+      " A short way south a near-circular, densely forested high island appears in the sea: Yakushima. It is a single uplifted block of granite, with peaks near 2,000 m in its centre that wring the moisture out of the sea air, making it one of the wettest places in Japan; thousand-year-old cedars grow on its slopes, and it is a World Heritage Site." +
+      " Farther south you reach the main Nansei chain — a string of low coral islands ringed by pale-blue reef flats and white sand, quite unlike the volcanic islands of Kyushu. These islands have a subtropical climate." +
+      " Naha, in the south of Okinawa's main island, is the central city of this island region. The whole flight has gone from a temperate active volcano to a subtropical coral sea.",
     },
     travel: {
     "zh-CN":
@@ -584,8 +584,8 @@ export const ROUTE_NARRATION: Record<
       "岛上公共交通有限，单轨电车只覆盖那霸市区，去别处多靠租车（靠左行驶）。全年防晒，潜水浮潜选有资质的经营者。",
     "en-US":
       "Kagoshima to Naha is about an hour and a half. Okinawa has a subtropical maritime climate, warm all year: even winter stays above 15°C, summers are hot and humid, with a rainy season in May–June and a typhoon season from July to October, when flights and ferries often stop." +
-      "Naha is the gateway to Okinawa; the Kokusai-dori shopping street, Shuri Castle Park (partly being rebuilt after a fire), and the nearby beaches and outer islands (Zamami, Tokashiki) are the main draws. Okinawa has its own history and food (bitter melon, sea grapes, awamori spirit), clearly different from Honshu." +
-      "Public transport on the island is limited — the monorail only covers central Naha — so most people hire a car (driving on the left). Use sun protection year-round, and choose licensed operators for diving and snorkelling.",
+      " Naha is the gateway to Okinawa; the Kokusai-dori shopping street, Shuri Castle Park (partly being rebuilt after a fire), and the nearby beaches and outer islands (Zamami, Tokashiki) are the main draws. Okinawa has its own history and food (bitter melon, sea grapes, awamori spirit), clearly different from Honshu." +
+      " Public transport on the island is limited — the monorail only covers central Naha — so most people hire a car (driving on the left). Use sun protection year-round, and choose licensed operators for diving and snorkelling.",
     },
   },
 
@@ -598,9 +598,9 @@ export const ROUTE_NARRATION: Record<
       "再往南是鹿儿岛所在的锦江湾，湾里就是不断喷发的樱岛。鹿儿岛市和樱岛隔着几公里宽的海面相望，市区常常落一层薄薄的火山灰。这条航线把日本两处最有代表性的活火山连在一起看。",
     "en-US":
       "Tokyo to Kagoshima cuts diagonally across western Japan from the eastern end of Honshu to the volcanic country at the southern tip of Kyushu. After take-off comes the Kanto Plain and the Tokyo metropolitan area, then the cone of Mount Fuji in the window." +
-      "Past Fuji and the mountains of central Honshu you cross the Kii Mountains — the wet, forested range of the Kii Peninsula. Beyond the western Seto Inland Sea you reach Kyushu." +
-      "In central Kyushu stands Mount Aso: a huge caldera about 20 km across, one of the largest in the world, with farmland and a railway on its crater floor and several younger cones in the centre still active, of which Nakadake smokes more or less constantly." +
-      "Farther south is Kagoshima Bay, with the continually erupting Sakurajima in it. The city and the volcano face each other across a few kilometres of water, and a thin layer of ash often falls on the city. This flight links two of the most representative active volcanoes in Japan.",
+      " Past Fuji and the mountains of central Honshu you cross the Kii Mountains — the wet, forested range of the Kii Peninsula. Beyond the western Seto Inland Sea you reach Kyushu." +
+      " In central Kyushu stands Mount Aso: a huge caldera about 20 km across, one of the largest in the world, with farmland and a railway on its crater floor and several younger cones in the centre still active, of which Nakadake smokes more or less constantly." +
+      " Farther south is Kagoshima Bay, with the continually erupting Sakurajima in it. The city and the volcano face each other across a few kilometres of water, and a thin layer of ash often falls on the city. This flight links two of the most representative active volcanoes in Japan.",
     },
     travel: {
     "zh-CN":
@@ -609,8 +609,8 @@ export const ROUTE_NARRATION: Record<
       "登山季（屋久岛、雾岛）多雨，装备要防水；市区遇降灰日尽量减少户外活动、开车注意路滑。",
     "en-US":
       "Tokyo to Kagoshima is about two hours. Kagoshima, in southern Kyushu, has a warm, humid climate: hot summers with heavy rain in June–July, mild winters, and a clear typhoon season (July–October). Because of Sakurajima, ash occasionally falls on the city, so watch the wind direction on eruptive days." +
-      "Kagoshima is the centre of southern Kyushu; a ferry of about 15 minutes reaches Sakurajima and its volcanic landforms. South, ferries run to Yakushima and Tanegashima; north lie the hot springs and volcanoes of Kirishima, and Kumamoto and Aso. Local specialities are black-pork dishes, sweet-potato shochu and shirokuma shaved ice." +
-      "The hiking seasons on Yakushima and Kirishima are wet, so bring waterproof gear; on ash-fall days in the city, cut outdoor time and drive carefully on slippery roads.",
+      " Kagoshima is the centre of southern Kyushu; a ferry of about 15 minutes reaches Sakurajima and its volcanic landforms. South, ferries run to Yakushima and Tanegashima; north lie the hot springs and volcanoes of Kirishima, and Kumamoto and Aso. Local specialities are black-pork dishes, sweet-potato shochu and shirokuma shaved ice." +
+      " The hiking seasons on Yakushima and Kirishima are wet, so bring waterproof gear; on ash-fall days in the city, cut outdoor time and drive carefully on slippery roads.",
     },
   },
 
@@ -623,9 +623,9 @@ export const ROUTE_NARRATION: Record<
       "再往西进入濑户内海——本州、四国、九州之间布满岛屿的平静内海。航线沿内海往西，最后越过关门海峡到九州北岸的福冈。一趟航班，飞过了北海道的平原、本州的高山和西日本的内海。",
     "en-US":
       "Sapporo to Fukuoka is a long domestic route from the far north of Japan to the far south, cutting diagonally across almost the whole archipelago. On take-off you are over the Ishikari Plain — the largest plain on Hokkaido, its fields regular and more open than on Honshu." +
-      "Across the Tsugaru Strait into north-eastern Honshu, then south-west into the range of the Japanese Alps: the Hida, Kiso and Akaishi ranges lie side by side across central Honshu, the highest mountains in Japan, with many peaks above 3,000 m, permanent snow on the crests, and the divide between the Sea of Japan side and the Pacific side." +
-      "Beyond the Alps a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan. The lowland west and south of it is the Kansai city belt." +
-      "Farther west you reach the Seto Inland Sea — the calm, island-filled sea between Honshu, Shikoku and Kyushu. The route follows it west and finally crosses the Kanmon Strait to Fukuoka on Kyushu's northern coast. One flight has passed the plains of Hokkaido, the high mountains of Honshu and the inland sea of western Japan.",
+      " Across the Tsugaru Strait into north-eastern Honshu, then south-west into the range of the Japanese Alps: the Hida, Kiso and Akaishi ranges lie side by side across central Honshu, the highest mountains in Japan, with many peaks above 3,000 m, permanent snow on the crests, and the divide between the Sea of Japan side and the Pacific side." +
+      " Beyond the Alps a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan. The lowland west and south of it is the Kansai city belt." +
+      " Farther west you reach the Seto Inland Sea — the calm, island-filled sea between Honshu, Shikoku and Kyushu. The route follows it west and finally crosses the Kanmon Strait to Fukuoka on Kyushu's northern coast. One flight has passed the plains of Hokkaido, the high mountains of Honshu and the inland sea of western Japan.",
     },
     travel: {
     "zh-CN":
@@ -634,8 +634,8 @@ export const ROUTE_NARRATION: Record<
       "从北海道出发，到福冈基本用不上厚羽绒，换季衣物提前准备；夏季两地都可能有雷雨，福冈还要留意台风。",
     "en-US":
       "Sapporo to Fukuoka is a little over two hours and one of the longest domestic routes in Japan — from snow country to the mild south. The climates are very different: severe, snowy winters where you start, mild winters where you land." +
-      "Fukuoka is the gateway to Kyushu with the airport close to the centre; Sapporo is the hub for Hokkaido. This route lets you join a Hokkaido leg and a Kyushu leg without backtracking through Tokyo." +
-      "Coming from Hokkaido, you will not need a heavy down coat in Fukuoka, so plan a change of clothes; both cities can have thunderstorms in summer, and Fukuoka also has typhoons to watch.",
+      " Fukuoka is the gateway to Kyushu with the airport close to the centre; Sapporo is the hub for Hokkaido. This route lets you join a Hokkaido leg and a Kyushu leg without backtracking through Tokyo." +
+      " Coming from Hokkaido, you will not need a heavy down coat in Fukuoka, so plan a change of clothes; both cities can have thunderstorms in summer, and Fukuoka also has typhoons to watch.",
     },
   },
 
@@ -648,9 +648,9 @@ export const ROUTE_NARRATION: Record<
       "知床半岛从道东伸进鄂霍次克海，是一条几乎没有道路的火山山脊，两侧是陡峭的海蚀崖，冬季有流冰漂到岸边，被列为世界自然遗产。",
     "en-US":
       "Sapporo to Memanbetsu is a short flight within Hokkaido, from the centre of the island to the east. After take-off you are over the Ishikari Plain and the surrounding hills and rice fields." +
-      "Eastward the land rises into a mass of high mountains: Daisetsuzan, the volcanic group at the centre of Hokkaido, whose main peak Asahidake exceeds 2,000 m and is the highest in Hokkaido. It is far colder here than at the same latitude on Honshu, the alpine zone starts low, snow comes early and lingers, and craters and lava plateaus are clearly visible; it is the largest national park in Hokkaido." +
-      "Beyond Daisetsuzan the land in eastern Hokkaido becomes gentle hills and terraces, forest and pasture interlocking, thinly peopled. Memanbetsu Airport, near Abashiri, is one of the gateways to the Shiretoko Peninsula." +
-      "The Shiretoko Peninsula reaches from eastern Hokkaido into the Sea of Okhotsk — an almost roadless volcanic ridge with steep sea cliffs on both sides, drift ice against its shore in winter, and World Heritage status.",
+      " Eastward the land rises into a mass of high mountains: Daisetsuzan, the volcanic group at the centre of Hokkaido, whose main peak Asahidake exceeds 2,000 m and is the highest in Hokkaido. It is far colder here than at the same latitude on Honshu, the alpine zone starts low, snow comes early and lingers, and craters and lava plateaus are clearly visible; it is the largest national park in Hokkaido." +
+      " Beyond Daisetsuzan the land in eastern Hokkaido becomes gentle hills and terraces, forest and pasture interlocking, thinly peopled. Memanbetsu Airport, near Abashiri, is one of the gateways to the Shiretoko Peninsula." +
+      " The Shiretoko Peninsula reaches from eastern Hokkaido into the Sea of Okhotsk — an almost roadless volcanic ridge with steep sea cliffs on both sides, drift ice against its shore in winter, and World Heritage status.",
     },
     travel: {
     "zh-CN":
@@ -659,8 +659,8 @@ export const ROUTE_NARRATION: Record<
       "知床部分区域为保护棕熊有进入限制和向导要求，遇到野生动物保持距离、不投喂。冬季道路结冰，自驾要有雪地经验和冬胎。",
     "en-US":
       "Sapporo to Memanbetsu is about 50 minutes. Eastern Hokkaido (around Abashiri and Shiretoko) is colder and drier than Sapporo, with severe winters; in January and February drift ice reaches the Sea of Okhotsk shore, the signature sight of the area in winter, while summers are cool and pleasant." +
-      "Memanbetsu Airport serves Abashiri, Kitami and the Shiretoko direction. Shiretoko's nature centres on the Shiretoko Five Lakes and coastal sightseeing boats, with drift-ice snorkelling and birdwatching in winter. Public transport in the area is sparse, so most people hire a car." +
-      "Parts of Shiretoko have entry restrictions and guide requirements to protect brown bears; keep your distance from wildlife and do not feed it. Winter roads are icy, so driving needs snow experience and winter tyres.",
+      " Memanbetsu Airport serves Abashiri, Kitami and the Shiretoko direction. Shiretoko's nature centres on the Shiretoko Five Lakes and coastal sightseeing boats, with drift-ice snorkelling and birdwatching in winter. Public transport in the area is sparse, so most people hire a car." +
+      " Parts of Shiretoko have entry restrictions and guide requirements to protect brown bears; keep your distance from wildlife and do not feed it. Winter roads are icy, so driving needs snow experience and winter tyres.",
     },
   },
 
@@ -673,9 +673,9 @@ export const ROUTE_NARRATION: Record<
       "越过津轻海峡进入北海道，最后是石狩平原和面向石狩湾的札幌。一趟航班，飞过了关西的湖、本州的高山和东北的火口湖。",
     "en-US":
       "Osaka to Sapporo runs north-east from the city belt of western Japan to Hokkaido. On take-off you are over the Osaka Plain — the Kansai city belt where Osaka, Kyoto and Kobe run together. A short way east a bright sheet of water appears among the mountains: Lake Biwa, the largest lake in Japan." +
-      "Beyond the lake you enter the high mountains of central Honshu — the Japanese Alps. The Hida, Kiso and Akaishi ranges lie side by side, the highest mountains in Japan, with permanent snow on the crests." +
-      "The route follows the spine of Honshu north-east into the Tohoku region. On the border of Aomori and Akita, a near-circular deep-blue lake sits among the mountains: Lake Towada, a lake filling a caldera, whose water drains out through the Oirase stream." +
-      "Across the Tsugaru Strait into Hokkaido, and finally the Ishikari Plain and Sapporo facing Ishikari Bay. One flight has passed a Kansai lake, the high mountains of Honshu and a Tohoku crater lake.",
+      " Beyond the lake you enter the high mountains of central Honshu — the Japanese Alps. The Hida, Kiso and Akaishi ranges lie side by side, the highest mountains in Japan, with permanent snow on the crests." +
+      " The route follows the spine of Honshu north-east into the Tohoku region. On the border of Aomori and Akita, a near-circular deep-blue lake sits among the mountains: Lake Towada, a lake filling a caldera, whose water drains out through the Oirase stream." +
+      " Across the Tsugaru Strait into Hokkaido, and finally the Ishikari Plain and Sapporo facing Ishikari Bay. One flight has passed a Kansai lake, the high mountains of Honshu and a Tohoku crater lake.",
     },
     travel: {
     "zh-CN":
@@ -683,7 +683,7 @@ export const ROUTE_NARRATION: Record<
       "从关西出发去北海道，夏季带一件外套应付早晚温差就够；冬季则要按北海道的标准准备防寒防滑装备。北海道城市间距离大，建议先想好是以札幌为枢纽当日往返，还是分段住宿。",
     "en-US":
       "Osaka to Sapporo is about two hours and links Kansai directly with Hokkaido without going via Tokyo. The climates differ a lot: Osaka has muggy summers and mild winters, Hokkaido has cool summers and severe, snowy winters." +
-      "Coming from Kansai in summer, a jacket for the morning and evening chill is enough; in winter, prepare for the cold and ice to Hokkaido standards. Distances between Hokkaido towns are large, so decide in advance whether to base in Sapporo for day trips or to stay in stages.",
+      " Coming from Kansai in summer, a jacket for the morning and evening chill is enough; in winter, prepare for the cold and ice to Hokkaido standards. Distances between Hokkaido towns are large, so decide in advance whether to base in Sapporo for day trips or to stay in stages.",
     },
   },
 
@@ -695,8 +695,8 @@ export const ROUTE_NARRATION: Record<
       "屋久岛是一整块花岗岩隆起而成，直径约二十多公里，岛中央的宫之浦岳接近两千米，是九州最高峰。这么高的山把黑潮上空的水汽拦下来，让屋久岛成为日本降水最多的地方之一，“一个月下三十五天雨”是当地的说法。丰沛的雨水养出了上千年树龄的屋久杉，森林从海岸一直爬到高山，被列为世界自然遗产。",
     "en-US":
       "Osaka to Yakushima flies from the Kansai city belt to a forested high island in the open sea off the southern tip of Kyushu. On take-off you are over the Osaka Plain, then the Seto Inland Sea — the calm, island-filled sea between Honshu, Shikoku and Kyushu, with narrow coastal plains and ports on either shore." +
-      "The route follows the Inland Sea south-west, crosses southern Kyushu and reaches the open sea. A near-circular island that is almost all mountain appears: Yakushima." +
-      "Yakushima is a single uplifted block of granite, a little over 20 km across, whose central peak Miyanoura-dake approaches 2,000 m and is the highest in Kyushu. Mountains this high wring the moisture out of the air above the Kuroshio Current, making Yakushima one of the wettest places in Japan — locally they say it \"rains 35 days a month\". The heavy rain sustains thousand-year-old Yakusugi cedars, with forest running from the coast right up to the high peaks; it is a World Heritage Site.",
+      " The route follows the Inland Sea south-west, crosses southern Kyushu and reaches the open sea. A near-circular island that is almost all mountain appears: Yakushima." +
+      " Yakushima is a single uplifted block of granite, a little over 20 km across, whose central peak Miyanoura-dake approaches 2,000 m and is the highest in Kyushu. Mountains this high wring the moisture out of the air above the Kuroshio Current, making Yakushima one of the wettest places in Japan — locally they say it \"rains 35 days a month\". The heavy rain sustains thousand-year-old Yakusugi cedars, with forest running from the coast right up to the high peaks; it is a World Heritage Site.",
     },
     travel: {
     "zh-CN":
@@ -705,8 +705,8 @@ export const ROUTE_NARRATION: Record<
       "台风季（夏秋）航班和渡轮易停，行程要留出机动时间。",
     "en-US":
       "Osaka to Yakushima has few flights, mostly small turboprops; you can also connect via Kagoshima by ferry or plane. Yakushima is wet all year with high humidity, and the weather differs sharply between coast and mountains: the coast is subtropical and warm, while the peaks can be very cold or snowy, so bring full waterproof gear." +
-      "The main activities on the island are hiking (the Shiratani Unsuikyo gorge; the Jomon Sugi round trip is about ten hours), the coast and hot springs. The island loop road is about 100 km, and most people hire a car. Hiking into the core area has capacity management and rules; the Jomon Sugi route is a tiring same-day return, so start early, and trails are slippery in rain." +
-      "In the typhoon season (summer and autumn) flights and ferries are easily suspended, so leave slack in your plans.",
+      " The main activities on the island are hiking (the Shiratani Unsuikyo gorge; the Jomon Sugi round trip is about ten hours), the coast and hot springs. The island loop road is about 100 km, and most people hire a car. Hiking into the core area has capacity management and rules; the Jomon Sugi route is a tiring same-day return, so start early, and trails are slippery in rain." +
+      " In the typhoon season (summer and autumn) flights and ferries are easily suspended, so leave slack in your plans.",
     },
   },
 
@@ -719,9 +719,9 @@ export const ROUTE_NARRATION: Record<
       "鸟取市就在沙丘附近。短短一个多小时，从太平洋岸的大平原，飞到了日本海岸的沙丘。",
     "en-US":
       "Tokyo to Tottori flies from the Pacific side to the Sea of Japan side, and in one flight shows how the spine of Honshu splits into two slopes. After take-off you are over the Kanto Plain and the Tokyo metropolitan area." +
-      "Westward you enter the high mountains of central Honshu — the Japanese Alps. The Hida, Kiso and Akaishi ranges lie side by side with permanent snow on the crests, and it is this barrier that divides Honshu into two climates: the Pacific side has dry, low-snow winters, while the Sea of Japan side has cloudy winters with heavy snow." +
-      "Descending to the Sea of Japan side, a distinct patch of yellow appears at the coast: the Tottori Sand Dunes — monsoon winds and currents pile river-borne sand onto the shore, forming a belt of coastal sand more than ten kilometres long with dunes tens of metres high, the largest coastal dune field in Japan. Green fields and pine woods lie right beyond the dunes, a strong contrast." +
-      "The city of Tottori is next to the dunes. In a little over an hour you have flown from the Pacific-coast plain to the Sea of Japan dunes.",
+      " Westward you enter the high mountains of central Honshu — the Japanese Alps. The Hida, Kiso and Akaishi ranges lie side by side with permanent snow on the crests, and it is this barrier that divides Honshu into two climates: the Pacific side has dry, low-snow winters, while the Sea of Japan side has cloudy winters with heavy snow." +
+      " Descending to the Sea of Japan side, a distinct patch of yellow appears at the coast: the Tottori Sand Dunes — monsoon winds and currents pile river-borne sand onto the shore, forming a belt of coastal sand more than ten kilometres long with dunes tens of metres high, the largest coastal dune field in Japan. Green fields and pine woods lie right beyond the dunes, a strong contrast." +
+      " The city of Tottori is next to the dunes. In a little over an hour you have flown from the Pacific-coast plain to the Sea of Japan dunes.",
     },
     travel: {
     "zh-CN":
@@ -730,8 +730,8 @@ export const ROUTE_NARRATION: Record<
       "沙丘上没有遮阴，夏季正午很热、要带水和防晒；起风时会有飞沙，注意护眼和相机。当地公共交通班次少，去周边多靠租车或包车。",
     "en-US":
       "Tokyo to Tottori is about an hour and a half. Tottori is on the Sea of Japan side, with grey, cold winters and more snow than the Pacific side, muggy summers, and comfortable springs and autumns." +
-      "Tottori centres on the Sand Dunes and the adjacent Sand Museum, with walking, camel rides and sandboarding; beyond the dunes are the sea-eroded landforms of the Hakuto and Uradome coasts. West lie Yonago, Sakaiminato (the yokai street of Shigeru Mizuki) and Mount Daisen." +
-      "There is no shade on the dunes; summer midday is very hot, so carry water and sun protection, and when the wind picks up there is blowing sand — protect your eyes and camera. Local public transport is infrequent, so a hire car or charter is usual for getting around.",
+      " Tottori centres on the Sand Dunes and the adjacent Sand Museum, with walking, camel rides and sandboarding; beyond the dunes are the sea-eroded landforms of the Hakuto and Uradome coasts. West lie Yonago, Sakaiminato (the yokai street of Shigeru Mizuki) and Mount Daisen." +
+      " There is no shade on the dunes; summer midday is very hot, so carry water and sun protection, and when the wind picks up there is blowing sand — protect your eyes and camera. Local public transport is infrequent, so a hire car or charter is usual for getting around.",
     },
   },
 
@@ -743,8 +743,8 @@ export const ROUTE_NARRATION: Record<
       "接近日本时，海上先出现一座轮廓极其对称的圆锥形雪山，那是富士山——一座孤立的层状火山，从飞机上很远就能认出来。越过富士所在的丘陵，进入关东平原：日本面积最大的平原，几乎被东京都市圈完全覆盖，方格街区一直铺到山脚。飞机沿东京湾下降到羽田。一趟航班，把亚欧大陆边缘的三角洲和岛国的平原连在一起。",
     "en-US":
       "Shanghai to Tokyo flies from the great plain of eastern China, across the East China Sea, to the great plain of Honshu. On take-off you are over the Yangtze Delta — the low plain of the river's final reach, with the densest water network and continuous built-up land." +
-      "Past the coast is the East China Sea, an open shallow sea with no land in sight. Most of the flight is over water, with scattered islands and cargo ships visible on a clear day." +
-      "Approaching Japan, an almost perfectly symmetrical snow-capped cone appears out of the sea: Mount Fuji, an isolated stratovolcano recognisable from far off. Past the hills around Fuji you cross the Kanto Plain — the largest plain in Japan, almost entirely covered by the Tokyo metropolitan area, its grid of blocks reaching the foot of the mountains. The plane descends along Tokyo Bay to Haneda. One flight has joined a delta on the edge of the Eurasian landmass to the plain of an island country.",
+      " Past the coast is the East China Sea, an open shallow sea with no land in sight. Most of the flight is over water, with scattered islands and cargo ships visible on a clear day." +
+      " Approaching Japan, an almost perfectly symmetrical snow-capped cone appears out of the sea: Mount Fuji, an isolated stratovolcano recognisable from far off. Past the hills around Fuji you cross the Kanto Plain — the largest plain in Japan, almost entirely covered by the Tokyo metropolitan area, its grid of blocks reaching the foot of the mountains. The plane descends along Tokyo Bay to Haneda. One flight has joined a delta on the edge of the Eurasian landmass to the plain of an island country.",
     },
     travel: {
     "zh-CN":
@@ -753,8 +753,8 @@ export const ROUTE_NARRATION: Record<
       "入境日本对肉类、水果、部分药品有限制，如实申报。签证政策按国籍不同，以日本外务省最新公布为准，行前确认并留出办理时间。地震偶发，留意住处的避难指引。",
     "en-US":
       "Shanghai to Tokyo is about three hours. Both cities are on eastern plains with similar climates: hot, humid summers, while Tokyo's winters are drier and colder with little snow." +
-      "Tokyo is Japan's gateway and largest city; Narita Airport is far from the centre (about an hour by express) and Haneda is much closer. The subway and JR lines form a web, and a single Suica or PASMO card covers the city. Food, shopping, museums, and day trips to Kamakura, Hakone and Nikko are all easy." +
-      "Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs and leave time to arrange one. Earthquakes occur occasionally; note the evacuation guidance at your accommodation.",
+      " Tokyo is Japan's gateway and largest city; Narita Airport is far from the centre (about an hour by express) and Haneda is much closer. The subway and JR lines form a web, and a single Suica or PASMO card covers the city. Food, shopping, museums, and day trips to Kamakura, Hakone and Nikko are all easy." +
+      " Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs and leave time to arrange one. Earthquakes occur occasionally; note the evacuation guidance at your accommodation.",
     },
   },
 
@@ -766,8 +766,8 @@ export const ROUTE_NARRATION: Record<
       "过了山东半岛就是黄海，再往东是开阔的外海，航程中段基本在水上。接近日本时进入关东平原——日本面积最大的平原，几乎被东京都市圈完全覆盖，方格街区一直铺到丘陵脚下。飞机沿东京湾下降到羽田。一趟航班，从中国的首都飞到日本的首都，中间隔着两片相连的浅海。",
     "en-US":
       "Beijing to Tokyo flies from the North China Plain across the Yellow Sea to the Kanto Plain of Japan. On take-off you are over the northern edge of the North China Plain — a lowland built by the Yellow, Hai and other rivers, dense with fields and towns, almost without relief." +
-      "Flying south-east, a distinct band of higher hills appears ahead to the right: the Shandong Hills, a block of bedrock rising out of the middle of the plain, with summits such as Tai Shan standing above it." +
-      "Past the Shandong Peninsula is the Yellow Sea, and then open sea, with the middle of the flight over water. Approaching Japan you reach the Kanto Plain — the largest plain in Japan, almost entirely covered by the Tokyo metropolitan area, its grid of blocks reaching the foot of the hills. The plane descends along Tokyo Bay to Haneda. One flight has gone from the capital of China to the capital of Japan, across two connected shallow seas.",
+      " Flying south-east, a distinct band of higher hills appears ahead to the right: the Shandong Hills, a block of bedrock rising out of the middle of the plain, with summits such as Tai Shan standing above it." +
+      " Past the Shandong Peninsula is the Yellow Sea, and then open sea, with the middle of the flight over water. Approaching Japan you reach the Kanto Plain — the largest plain in Japan, almost entirely covered by the Tokyo metropolitan area, its grid of blocks reaching the foot of the hills. The plane descends along Tokyo Bay to Haneda. One flight has gone from the capital of China to the capital of Japan, across two connected shallow seas.",
     },
     travel: {
     "zh-CN":
@@ -776,8 +776,8 @@ export const ROUTE_NARRATION: Record<
       "入境日本对肉类、水果、部分药品有限制，如实申报。签证按国籍不同，以日本外务省最新公布为准。夏季闷热要防暑，台风季（约7–10月）留意航班。",
     "en-US":
       "Beijing to Tokyo is about three and a half hours. Beijing has dry cold winters and dusty, windy springs; Tokyo is more humid year-round with little winter snow." +
-      "Tokyo is Japan's largest city and main gateway. Haneda Airport is close to the centre with a direct metro link; Narita is farther out. Urban rail is extensive — tap in with Suica or PASMO. From Tokyo you can reach Yokohama, Kamakura, Hakone (views of Fuji) and Nikko." +
-      "Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs. Summer is muggy — take heat precautions — and in the typhoon season (about July to October) watch your flights.",
+      " Tokyo is Japan's largest city and main gateway. Haneda Airport is close to the centre with a direct metro link; Narita is farther out. Urban rail is extensive — tap in with Suica or PASMO. From Tokyo you can reach Yokohama, Kamakura, Hakone (views of Fuji) and Nikko." +
+      " Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs. Summer is muggy — take heat precautions — and in the typhoon season (about July to October) watch your flights.",
     },
   },
 
@@ -790,9 +790,9 @@ export const ROUTE_NARRATION: Record<
       "濑户内海的东端就是大阪湾，湾岸的低地是大阪平原，大阪、京都、神户连成一片。关西机场建在大阪湾南部的一座人工岛上，飞机从海上进近降落。一趟航班，从中国东部的三角洲，飞到了日本的第二大城市群。",
     "en-US":
       "Shanghai to Osaka flies from the Yangtze Delta across the East China Sea to the Kansai city belt of Japan. On take-off you are over the low plain of the Yangtze Delta, water-netted and city-covered." +
-      "Past the coast is the East China Sea, an open shallow sea, with most of the flight over water and passing ships visible on a clear day." +
-      "Approaching Japan, a calm island-filled stretch of water appears: the Seto Inland Sea — the sea between Honshu, Shikoku and Kyushu, with narrow coastal plains and port cities on either shore and long bridges linking the three landmasses." +
-      "At its eastern end is Osaka Bay, and the lowland along the bay is the Osaka Plain, where Osaka, Kyoto and Kobe run together. Kansai Airport is built on a man-made island in the southern part of the bay, and the plane makes its approach from the sea. One flight has gone from a delta in eastern China to the second-largest urban region of Japan.",
+      " Past the coast is the East China Sea, an open shallow sea, with most of the flight over water and passing ships visible on a clear day." +
+      " Approaching Japan, a calm island-filled stretch of water appears: the Seto Inland Sea — the sea between Honshu, Shikoku and Kyushu, with narrow coastal plains and port cities on either shore and long bridges linking the three landmasses." +
+      " At its eastern end is Osaka Bay, and the lowland along the bay is the Osaka Plain, where Osaka, Kyoto and Kobe run together. Kansai Airport is built on a man-made island in the southern part of the bay, and the plane makes its approach from the sea. One flight has gone from a delta in eastern China to the second-largest urban region of Japan.",
     },
     travel: {
     "zh-CN":
@@ -801,8 +801,8 @@ export const ROUTE_NARRATION: Record<
       "入境日本对肉类、水果、部分药品有限制，如实申报。签证按国籍不同，以日本外务省最新公布为准。樱花期（4月初）和红叶期（11月）关西最挤，京都热门寺院要趁早。",
     "en-US":
       "Shanghai to Osaka is a little over two hours. Both have hot, humid summers with a lot of rain; Osaka's winters are milder with little snow." +
-      "Kansai Airport is on a man-made island in the sea, about 35–75 minutes to central Osaka and Kyoto by express or local train. Osaka is the centre of Kansai and famous for its food; Kyoto, Nara, Kobe and Himeji are all within an hour. The subway and the JR Loop Line take an IC card." +
-      "Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs. Kansai is busiest during the cherry blossom (early April) and autumn leaves (November) — visit the popular Kyoto temples early.",
+      " Kansai Airport is on a man-made island in the sea, about 35–75 minutes to central Osaka and Kyoto by express or local train. Osaka is the centre of Kansai and famous for its food; Kyoto, Nara, Kobe and Himeji are all within an hour. The subway and the JR Loop Line take an IC card." +
+      " Entry to Japan restricts meat, fruit and some medicines — declare honestly. Visa rules vary by nationality; check the latest from Japan's Ministry of Foreign Affairs. Kansai is busiest during the cherry blossom (early April) and autumn leaves (November) — visit the popular Kyoto temples early.",
     },
   },
 
@@ -815,9 +815,9 @@ export const ROUTE_NARRATION: Record<
       "越过纳拉伯，重新出现农田和小麦带，飞机在印度洋边的珀斯降落。珀斯是世界上最孤立的大城市之一，离最近的大城市有几千公里。",
     "en-US":
       "Sydney to Perth crosses the whole Australian continent, east coast to west, and is one of the longest domestic flights in the world. Soon after take-off, a sandstone plateau cut by deep valleys appears to the west: the Blue Mountains, part of the Great Dividing Range, where the eucalypt forest gives off a blue haze in the sun." +
-      "Over the range, the land opens out into flat inland plains. The route crosses the Murray–Darling system — the largest river system in Australia — winding across the dry plains, with a string of irrigated farms and small towns along the water." +
-      "Farther west the green fades into the Great Victoria Desert: red-brown sand ridges and low scrub, with almost no roads or settlements. Then the ground becomes remarkably flat — the Nullarbor Plain, a single slab of limestone that grows almost no trees, its southern edge a straight line of cliffs dropping into the Southern Ocean, where the trans-continental railway and highway run dead straight for hundreds of kilometres." +
-      "Past the Nullarbor, farmland and the wheatbelt return, and the plane lands at Perth on the Indian Ocean — one of the most isolated large cities in the world, thousands of kilometres from the next.",
+      " Over the range, the land opens out into flat inland plains. The route crosses the Murray–Darling system — the largest river system in Australia — winding across the dry plains, with a string of irrigated farms and small towns along the water." +
+      " Farther west the green fades into the Great Victoria Desert: red-brown sand ridges and low scrub, with almost no roads or settlements. Then the ground becomes remarkably flat — the Nullarbor Plain, a single slab of limestone that grows almost no trees, its southern edge a straight line of cliffs dropping into the Southern Ocean, where the trans-continental railway and highway run dead straight for hundreds of kilometres." +
+      " Past the Nullarbor, farmland and the wheatbelt return, and the plane lands at Perth on the Indian Ocean — one of the most isolated large cities in the world, thousands of kilometres from the next.",
     },
     travel: {
     "zh-CN":
@@ -826,8 +826,8 @@ export const ROUTE_NARRATION: Record<
       "跨州基本靠飞机，城市之间距离极大。全澳紫外线都很强，防晒是常识。入境对食品、木制品、动植物制品检查极严，务必如实申报；多数国家公民需提前在线申请电子旅行许可（ETA），落地不能补办。",
     "en-US":
       "Sydney to Perth is about five hours, plus a 2–3 hour time difference (Perth is behind), so it takes most of a day. Australia is in the southern hemisphere, so the seasons are reversed — December to February is summer." +
-      "Perth is the capital of Western Australia, with a Mediterranean climate: dry, hot summers and mild, wet winters. The city runs along the Swan River; Kings Park, the port old town of Fremantle, the Pinnacles to the north, and the wineries and coast of Margaret River to the south are the main draws." +
-      "Travel between states is essentially by air, and the distances are huge. UV is strong everywhere in Australia — sun protection is basic sense. Border checks on food, wood and plant and animal products are strict, so declare honestly; citizens of most countries need to apply online for an ETA before departure, which cannot be arranged on arrival.",
+      " Perth is the capital of Western Australia, with a Mediterranean climate: dry, hot summers and mild, wet winters. The city runs along the Swan River; Kings Park, the port old town of Fremantle, the Pinnacles to the north, and the wineries and coast of Margaret River to the south are the main draws." +
+      " Travel between states is essentially by air, and the distances are huge. UV is strong everywhere in Australia — sun protection is basic sense. Border checks on food, wood and plant and animal products are strict, so declare honestly; citizens of most countries need to apply online for an ETA before departure, which cannot be arranged on arrival.",
     },
   },
 
@@ -839,8 +839,8 @@ export const ROUTE_NARRATION: Record<
       "越往北，海水越蓝，珊瑚礁越密。快到凯恩斯时，右侧海面上出现深浅斑驳的一大片浅蓝，那是大堡礁——世界上最大的珊瑚礁系统，由几千个独立的礁体和岛屿组成，沿昆士兰海岸延伸两千多公里，从飞机上能清楚看到礁盘、潟湖和深水航道的分界。凯恩斯就是进入大堡礁的主要门户。",
     "en-US":
       "Sydney to Cairns runs north up the east coast of Australia, from the temperate zone into the tropics. Soon after take-off a range of mountains keeps pace on the left: the Great Dividing Range, the longest mountain system in Australia, running from the south-east all the way to Cape York, separating the humid coast from the dry interior and forming the divide for many rivers." +
-      "Off the coast along the way is a huge sand island: K'gari (Fraser Island), the largest sand island in the world — the whole island is made of sand, yet it carries rainforest and freshwater lakes, and it is the traditional Country of the Butchulla people." +
-      "The farther north, the bluer the sea and the denser the reefs. Near Cairns, a mottled expanse of pale blue appears on the sea to the right: the Great Barrier Reef, the largest coral reef system in the world, made up of thousands of separate reefs and islands, running more than 2,000 km along the Queensland coast; from the plane you can clearly see the line between reef flats, lagoons and the deep-water channels. Cairns is the main gateway to the reef.",
+      " Off the coast along the way is a huge sand island: K'gari (Fraser Island), the largest sand island in the world — the whole island is made of sand, yet it carries rainforest and freshwater lakes, and it is the traditional Country of the Butchulla people." +
+      " The farther north, the bluer the sea and the denser the reefs. Near Cairns, a mottled expanse of pale blue appears on the sea to the right: the Great Barrier Reef, the largest coral reef system in the world, made up of thousands of separate reefs and islands, running more than 2,000 km along the Queensland coast; from the plane you can clearly see the line between reef flats, lagoons and the deep-water channels. Cairns is the main gateway to the reef.",
     },
     travel: {
     "zh-CN":
@@ -849,8 +849,8 @@ export const ROUTE_NARRATION: Record<
       "上礁浮潜、潜水选有资质的经营者，检查装备和保险。全年强防晒，雨林里注意防蚊、别碰不认识的植物（有会蜇人的刺树）。",
     "en-US":
       "Sydney to Cairns is about three hours. Cairns is in the tropics, hot and humid all year with a dry and a wet season: the dry season (May–October) has the most settled weather and is high season; the wet (November–April) is muggy and rainy, with tropical cyclones and marine stingers (box jellyfish), so beach swimming depends on the season and the stinger nets." +
-      "Cairns is the gateway to the Great Barrier Reef and the Queensland tropical rainforest: out to the reef by boat or plane for the coral, north to Port Douglas and the Daintree, west up to the Tablelands (Kuranda, Atherton). The city itself is small, with an artificial lagoon pool on the esplanade." +
-      "For snorkelling and diving on the reef, choose licensed operators and check equipment and insurance. Use strong sun protection year-round, and in the rainforest guard against mosquitoes and do not touch unfamiliar plants (there is a stinging tree).",
+      " Cairns is the gateway to the Great Barrier Reef and the Queensland tropical rainforest: out to the reef by boat or plane for the coral, north to Port Douglas and the Daintree, west up to the Tablelands (Kuranda, Atherton). The city itself is small, with an artificial lagoon pool on the esplanade." +
+      " For snorkelling and diving on the reef, choose licensed operators and check equipment and insurance. Use strong sun protection year-round, and in the rainforest guard against mosquitoes and do not touch unfamiliar plants (there is a stinging tree).",
     },
   },
 
@@ -862,8 +862,8 @@ export const ROUTE_NARRATION: Record<
       "沿着大分水岭的走向继续往北，山势不高但连续，把东边狭窄的沿海平原和西边的内陆分开。接近悉尼时，右前方出现被深谷切开的砂岩台地，那是蓝山，尤加利林在阳光下泛蓝。飞机越过蓝山，沿海岸下降到悉尼——这座城市建在一个巨大的天然深水港周围。",
     "en-US":
       "Melbourne to Sydney is the busiest route in Australia and one of the busiest in the world by passenger numbers. It takes only a little over an hour, but it flies over the highest mountains in south-eastern Australia." +
-      "Heading north-east after take-off, a snow-streaked upland soon appears: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland. Snow lies here in winter, in one of the few skiing areas in Australia; the meltwater feeds the Murray and other big rivers that flow inland from here." +
-      "Following the line of the Great Dividing Range north, the mountains are not high but continuous, separating the narrow coastal plain in the east from the interior in the west. Approaching Sydney, a sandstone plateau cut by deep valleys shows ahead to the right: the Blue Mountains, the eucalypt forest hazed blue in the sun. The plane crosses them and descends along the coast to Sydney, a city built around a huge natural deep-water harbour.",
+      " Heading north-east after take-off, a snow-streaked upland soon appears: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland. Snow lies here in winter, in one of the few skiing areas in Australia; the meltwater feeds the Murray and other big rivers that flow inland from here." +
+      " Following the line of the Great Dividing Range north, the mountains are not high but continuous, separating the narrow coastal plain in the east from the interior in the west. Approaching Sydney, a sandstone plateau cut by deep valleys shows ahead to the right: the Blue Mountains, the eucalypt forest hazed blue in the sun. The plane crosses them and descends along the coast to Sydney, a city built around a huge natural deep-water harbour.",
     },
     travel: {
     "zh-CN":
@@ -872,8 +872,8 @@ export const ROUTE_NARRATION: Record<
       "南半球季节相反，12–2月是盛夏、海滩旺季，价格最高；春秋（9–11月、3–5月）气候最舒服。入境海关对食品和动植物制品查得严，如实申报。",
     "en-US":
       "Melbourne to Sydney is about an hour and a half, and the two cities are in the same time zone. They have different characters: Melbourne is arty, known for coffee and laneways, with \"four seasons in one day\" and fast-changing weather; Sydney is outgoing and centred on its harbour and beaches." +
-      "Sydney's sights cluster around the harbour: the Opera House, the Harbour Bridge, ferries to Manly or Taronga Zoo; the Bondi-to-Coogee clifftop walk; and about 90 minutes west, the Blue Mountains. Swim only between the red and yellow flags, follow the lifeguards, and watch for rip currents." +
-      "In the southern hemisphere the seasons are reversed — December to February is high summer and beach high season, the most expensive; spring and autumn (September–November, March–May) have the most comfortable weather. Customs checks on food and plant and animal products are strict — declare honestly.",
+      " Sydney's sights cluster around the harbour: the Opera House, the Harbour Bridge, ferries to Manly or Taronga Zoo; the Bondi-to-Coogee clifftop walk; and about 90 minutes west, the Blue Mountains. Swim only between the red and yellow flags, follow the lifeguards, and watch for rip currents." +
+      " In the southern hemisphere the seasons are reversed — December to February is high summer and beach high season, the most expensive; spring and autumn (September–November, March–May) have the most comfortable weather. Customs checks on food and plant and animal products are strict — declare honestly.",
     },
   },
 
@@ -885,8 +885,8 @@ export const ROUTE_NARRATION: Record<
       "纳拉伯以北是大维多利亚沙漠，红褐色的沙垄和低矮灌丛一直铺到地平线，几乎没有人烟。越过沙漠西缘，重新出现小麦带和农田，飞机在印度洋边的珀斯降落。整条航线，大部分时间脚下是澳大利亚人口最稀、最干旱的地带。",
     "en-US":
       "Melbourne to Perth flies from the south-eastern corner of Australia to the south-western, across the dry country of the continent's south. Heading west after take-off, an isolated line of sandstone ridges soon rises from the plain: the Grampians (Gariwerd), part of the western end of the Great Dividing Range, whose steep rock walls and rock art make it an important cultural place for Aboriginal people." +
-      "Past the Grampians the land becomes open wheat fields and grazing country, then the green fades into the Nullarbor Plain: a single slab of limestone that grows almost no trees, remarkably flat, its southern edge a straight line of cliffs facing the Southern Ocean. The route flies over this stretch just inland of the coast." +
-      "North of the Nullarbor is the Great Victoria Desert, red-brown sand ridges and low scrub to the horizon, almost unpeopled. Over the desert's western edge, the wheatbelt and farmland return, and the plane lands at Perth on the Indian Ocean. For most of the flight, the ground below is the driest, least-peopled belt of Australia.",
+      " Past the Grampians the land becomes open wheat fields and grazing country, then the green fades into the Nullarbor Plain: a single slab of limestone that grows almost no trees, remarkably flat, its southern edge a straight line of cliffs facing the Southern Ocean. The route flies over this stretch just inland of the coast." +
+      " North of the Nullarbor is the Great Victoria Desert, red-brown sand ridges and low scrub to the horizon, almost unpeopled. Over the desert's western edge, the wheatbelt and farmland return, and the plane lands at Perth on the Indian Ocean. For most of the flight, the ground below is the driest, least-peopled belt of Australia.",
     },
     travel: {
     "zh-CN":
@@ -895,8 +895,8 @@ export const ROUTE_NARRATION: Record<
       "全澳紫外线强，防晒是常识。入境对食品、木制品、动植物制品查得严，如实申报；西澳州内跨境（如去往北部）有时也有农产品检查。",
     "en-US":
       "Melbourne to Perth is about four hours, plus a 2–3 hour time difference (Perth is behind), so it takes most of a day. Perth has a Mediterranean climate — dry hot summers, mild wet winters — while Melbourne's weather is changeable." +
-      "Perth runs along the Swan River; Kings Park, Fremantle, Rottnest Island (for the quokkas), the Pinnacles to the north and Margaret River to the south are the main draws. Western Australia is vast, with hundreds or thousands of kilometres between regions, mostly covered by air." +
-      "UV is strong everywhere in Australia — sun protection is basic sense. Border checks on food, wood and plant and animal products are strict, so declare honestly; there are sometimes produce checks within WA too (for example heading north).",
+      " Perth runs along the Swan River; Kings Park, Fremantle, Rottnest Island (for the quokkas), the Pinnacles to the north and Margaret River to the south are the main draws. Western Australia is vast, with hundreds or thousands of kilometres between regions, mostly covered by air." +
+      " UV is strong everywhere in Australia — sun protection is basic sense. Border checks on food, wood and plant and animal products are strict, so declare honestly; there are sometimes produce checks within WA too (for example heading north).",
     },
   },
 
@@ -908,8 +908,8 @@ export const ROUTE_NARRATION: Record<
       "再往西是墨累河的下游河段：这条澳大利亚最大的河在这里已经流了很远，在平原上绕出大弯，最后穿过一串潟湖（库容湖）注入南大洋，河口是一片沙洲和湿地。飞机越过墨累河口一带，沿海岸下降到阿德莱德——一座三面被丘陵和葡萄园环抱、朝向海湾的规划城市。",
     "en-US":
       "Melbourne to Adelaide is a short flight west along the southern coast of Australia. Heading south-west after take-off to the coast, below to the right is the Great Ocean Road area of Victoria — waves have eroded the limestone sea cliffs into a line of isolated stacks standing in the sea, the Twelve Apostles. The stacks keep collapsing to erosion, and new ones form." +
-      "Turning west, the isolated line of sandstone ridges appears inland: the Grampians (Gariwerd), with their steep walls and rock art." +
-      "Farther west is the lower Murray River: Australia's largest river has already run a long way by here, looping across the plain in big bends and finally passing through a chain of lagoons (the Coorong) into the Southern Ocean, its mouth a spread of sandbars and wetland. The plane crosses the Murray mouth area and descends along the coast to Adelaide — a planned city ringed on three sides by hills and vineyards and facing a gulf.",
+      " Turning west, the isolated line of sandstone ridges appears inland: the Grampians (Gariwerd), with their steep walls and rock art." +
+      " Farther west is the lower Murray River: Australia's largest river has already run a long way by here, looping across the plain in big bends and finally passing through a chain of lagoons (the Coorong) into the Southern Ocean, its mouth a spread of sandbars and wetland. The plane crosses the Murray mouth area and descends along the coast to Adelaide — a planned city ringed on three sides by hills and vineyards and facing a gulf.",
     },
     travel: {
     "zh-CN":
@@ -918,8 +918,8 @@ export const ROUTE_NARRATION: Record<
       "南半球季节相反，夏季（12–2月）干热、有热浪，注意补水防晒。入境和跨州对农产品有检查，如实申报。",
     "en-US":
       "Melbourne to Adelaide is a little over an hour, and Adelaide is half an hour behind Melbourne. Adelaide has an unhurried pace and is called a \"20-minute city\". Around it are important Australian wine regions (the Barossa Valley, McLaren Vale, the Adelaide Hills)." +
-      "In the city there is the Central Market, the Botanic Garden and the North Terrace cultural precinct; south is Kangaroo Island (a separate two days, by ferry or light plane), and east are the Murray River and the Coorong lagoons." +
-      "In the southern hemisphere the seasons are reversed; summer (December–February) is dry and hot with heatwaves, so drink plenty of water and use sun protection. There are produce checks on entry and between states — declare honestly.",
+      " In the city there is the Central Market, the Botanic Garden and the North Terrace cultural precinct; south is Kangaroo Island (a separate two days, by ferry or light plane), and east are the Murray River and the Coorong lagoons." +
+      " In the southern hemisphere the seasons are reversed; summer (December–February) is dry and hot with heatwaves, so drink plenty of water and use sun protection. There are produce checks on entry and between states — declare honestly.",
     },
   },
 
@@ -931,8 +931,8 @@ export const ROUTE_NARRATION: Record<
       "继续往北进入沙漠腹地。快到目的地时，两组孤立的红色岩体从平坦的沙原上拔起：先是卡塔丘塔（奥尔加山）一簇圆丘状的巨岩，然后是乌鲁鲁——一整块砂岩，周长约十公里，边坡陡直，随日光变换颜色。它们是当地阿南古人的圣地，按传统不攀爬。飞机在旁边的尤拉拉降落。",
     "en-US":
       "Adelaide to Uluṟu flies from the wine country of the south coast straight north into the \"Red Centre\" of Australia. Soon after take-off, a jagged line of red ridges appears to the right: the Flinders Ranges, ancient mountains strongly folded and eroded, with Wilpena Pound a ring-shaped natural basin." +
-      "Farther north the land dries out and a great white salt crust appears: Kati Thanda–Lake Eyre, the largest lake in Australia and the lowest point of the continent — a dry salt flat in most years, filling with water only briefly after heavy rain, when it draws great numbers of waterbirds." +
-      "Continuing north into the desert interior, near the destination two isolated groups of red rock rise from the flat sand plain: first Kata Tjuta (the Olgas), a cluster of dome-shaped monoliths, then Uluṟu — a single block of sandstone about ten kilometres round, steep-sided, changing colour with the light. They are sacred places to the Aṉangu traditional owners and, by their wishes, are not climbed. The plane lands at Yulara beside them.",
+      " Farther north the land dries out and a great white salt crust appears: Kati Thanda–Lake Eyre, the largest lake in Australia and the lowest point of the continent — a dry salt flat in most years, filling with water only briefly after heavy rain, when it draws great numbers of waterbirds." +
+      " Continuing north into the desert interior, near the destination two isolated groups of red rock rise from the flat sand plain: first Kata Tjuta (the Olgas), a cluster of dome-shaped monoliths, then Uluṟu — a single block of sandstone about ten kilometres round, steep-sided, changing colour with the light. They are sacred places to the Aṉangu traditional owners and, by their wishes, are not climbed. The plane lands at Yulara beside them.",
     },
     travel: {
     "zh-CN":
@@ -941,8 +941,8 @@ export const ROUTE_NARRATION: Record<
       "带足水（每人每天数升）、防晒、遮阳帽和结实的鞋。夏季正午不宜户外活动，多数徒步要一早出发。",
     "en-US":
       "Adelaide to Uluṟu is a little over two hours. This is desert climate: extremely hot by day (often above 40°C in summer), cool or cold at night, a wide day-to-night range, almost no rain, and many flies (a fly net helps)." +
-      "Visitors stay at the Yulara resort, watch Uluṟu change colour at sunrise and sunset, walk around the base of the rock, and hike the Valley of the Winds at Kata Tjuta. Uluṟu is a sacred place to the Aṉangu — follow the park's rules: no climbing, and no photography in some areas." +
-      "Carry plenty of water (several litres per person per day), sun protection, a sun hat and sturdy shoes. Midday in summer is not for outdoor activity, and most walks should start early.",
+      " Visitors stay at the Yulara resort, watch Uluṟu change colour at sunrise and sunset, walk around the base of the rock, and hike the Valley of the Winds at Kata Tjuta. Uluṟu is a sacred place to the Aṉangu — follow the park's rules: no climbing, and no photography in some areas." +
+      " Carry plenty of water (several litres per person per day), sun protection, a sun hat and sturdy shoes. Midday in summer is not for outdoor activity, and most walks should start early.",
     },
   },
 
@@ -954,8 +954,8 @@ export const ROUTE_NARRATION: Record<
       "接近达尔文时，右下方是卡卡杜——一大片季节性泛滥的湿地和石头高地。旱季是一条条干河道和水潭，湿季整片被水淹没；石壁上有数万年的原住民岩画。卡卡杜由传统所有者与国家公园共同管理。达尔文就在它西边的海岸上。",
     "en-US":
       "Brisbane to Darwin flies from a subtropical east-coast city diagonally across the Queensland interior to the \"Top End\" at the northern tip of the continent. Heading north-west after take-off, the route soon leaves the coastal hills and farmland and passes over the Great Artesian Basin — one of the largest groundwater basins in the world, its surface flat, dry grazing country kept in use for stock by bores tapping deep groundwater, with round tanks and radiating stock tracks visible on the ground." +
-      "The farther north, the more tropical: termite mounds and open eucalypt woodland dot the plains. The route clips the Gulf of Carpentaria area, its coast broad mangrove and tidal flats." +
-      "Approaching Darwin, below to the right is Kakadu — a large area of seasonally flooded wetland and stone country. In the dry season it is strings of dry channels and pools; in the wet the whole area floods. There is Aboriginal rock art on the escarpments going back tens of thousands of years. Kakadu is jointly managed by its traditional owners and the national park. Darwin is on the coast just to its west.",
+      " The farther north, the more tropical: termite mounds and open eucalypt woodland dot the plains. The route clips the Gulf of Carpentaria area, its coast broad mangrove and tidal flats." +
+      " Approaching Darwin, below to the right is Kakadu — a large area of seasonally flooded wetland and stone country. In the dry season it is strings of dry channels and pools; in the wet the whole area floods. There is Aboriginal rock art on the escarpments going back tens of thousands of years. Kakadu is jointly managed by its traditional owners and the national park. Darwin is on the coast just to its west.",
     },
     travel: {
     "zh-CN":
@@ -964,8 +964,8 @@ export const ROUTE_NARRATION: Record<
       "全年强防晒、多补水，湿季注意防蚊（有蚊媒疾病）。进国家公园按传统所有者和园方的规定，部分区域不能进入或不能拍照。",
     "en-US":
       "Brisbane to Darwin is about four hours, and Darwin is half an hour behind Brisbane. Darwin is in the tropics, hot all year, with a dry season (about May–October, settled weather, high season) and a wet season (about November–April, muggy, thunderstorms, possible tropical cyclones)." +
-      "Darwin is the gateway to Kakadu, Litchfield National Park and the Arnhem Land direction. Waters in the Northern Territory (estuaries, some pools) have saltwater crocodiles — only enter the water where it is signed safe and follow local advice." +
-      "Use strong sun protection and drink plenty of water year-round, and in the wet season guard against mosquitoes (there are mosquito-borne diseases). In the national parks follow the rules of the traditional owners and the park; some areas cannot be entered or photographed.",
+      " Darwin is the gateway to Kakadu, Litchfield National Park and the Arnhem Land direction. Waters in the Northern Territory (estuaries, some pools) have saltwater crocodiles — only enter the water where it is signed safe and follow local advice." +
+      " Use strong sun protection and drink plenty of water year-round, and in the wet season guard against mosquitoes (there are mosquito-borne diseases). In the national parks follow the rules of the traditional owners and the park; some areas cannot be entered or photographed.",
     },
   },
 
@@ -977,8 +977,8 @@ export const ROUTE_NARRATION: Record<
       "飞机沿岛的东侧南下，越过中部的山地，在德文特河口的霍巴特降落。霍巴特背靠威灵顿山（kunanyi），是澳大利亚第二古老的首府城市。",
     "en-US":
       "Melbourne to Hobart crosses Bass Strait to Tasmania, the island state across the water. Heading south after take-off to the Victorian coast, below is Bass Strait — a shallow sea separating Tasmania from the mainland that was once a land bridge between them, with scattered islands such as King Island and Flinders Island on it." +
-      "The north coast of Tasmania soon comes into view. The island is hilly and densely forested, and its central-west is almost roadless wilderness and highland lakes, listed as a World Heritage Area; it is at a higher latitude, cool and wet, with snow on the mountains in winter. Temperate rainforest and ancient tree species survive in many places." +
-      "The plane runs south down the eastern side of the island, crosses the central mountains, and lands at Hobart on the mouth of the Derwent. Hobart sits below Mount Wellington (kunanyi) and is the second-oldest capital city in Australia.",
+      " The north coast of Tasmania soon comes into view. The island is hilly and densely forested, and its central-west is almost roadless wilderness and highland lakes, listed as a World Heritage Area; it is at a higher latitude, cool and wet, with snow on the mountains in winter. Temperate rainforest and ancient tree species survive in many places." +
+      " The plane runs south down the eastern side of the island, crosses the central mountains, and lands at Hobart on the mouth of the Derwent. Hobart sits below Mount Wellington (kunanyi) and is the second-oldest capital city in Australia.",
     },
     travel: {
     "zh-CN":
@@ -987,8 +987,8 @@ export const ROUTE_NARRATION: Record<
       "岛上自驾方便但距离比看地图远、路多弯，注意夜间和黄昏的野生动物。徒步进荒野区要看天气、留行程给管理部门。入境和从大陆过来对农产品有严格检查。",
     "en-US":
       "Melbourne to Hobart is a little over an hour, in the same time zone. Tasmania is at a higher latitude and cool: summers (December–February) are mild and pleasant and are high season; winters are cold with snow on the mountains, and the weather and the day-to-night range change fast, so bring warm and waterproof clothing in every season." +
-      "Hobart's draws include the Salamanca Market (Saturdays), Mount Wellington for the view over the city and river mouth, and MONA (reached by boat). North are Wineglass Bay and Cradle Mountain; south are the Tasman Peninsula and the Port Arthur historic site." +
-      "Driving on the island is easy but distances are longer than they look and roads are winding — watch for wildlife at dusk and at night. Hiking into the wilderness needs weather checks and leaving your plans with the authorities. Produce checks on entry and from the mainland are strict.",
+      " Hobart's draws include the Salamanca Market (Saturdays), Mount Wellington for the view over the city and river mouth, and MONA (reached by boat). North are Wineglass Bay and Cradle Mountain; south are the Tasman Peninsula and the Port Arthur historic site." +
+      " Driving on the island is easy but distances are longer than they look and roads are winding — watch for wildlife at dusk and at night. Hiking into the wilderness needs weather checks and leaving your plans with the authorities. Produce checks on entry and from the mainland are strict.",
     },
   },
 
@@ -1000,8 +1000,8 @@ export const ROUTE_NARRATION: Record<
       "接近维多利亚境内，地面又抬高，出现一片带雪的高地——澳大利亚阿尔卑斯山脉，大分水岭在这里最高，主峰科修斯科山是澳大利亚大陆的最高点，冬季积雪、是少有的滑雪区。过了阿尔卑斯山脉，地势转为开阔的牧场和农田，飞机沿科里奥湾东岸下降，在阿瓦隆降落——湾对岸就是吉朗，往西南不远即是大洋路的起点。",
     "en-US":
       "Sydney to Avalon does not land at central Melbourne, but at Avalon Airport north-east of Geelong — this route effectively flies Sydney to Geelong, the gateway city to the Great Ocean Road, and crosses much the same terrain as the Sydney–Melbourne route." +
-      "Heading south-west after take-off, a sandstone plateau cut by deep valleys appears ahead to the right: the Blue Mountains, their eucalypt forest hazed blue in the sun, part of the Great Dividing Range rising into a plateau behind Sydney. Past the Blue Mountains the route keeps following the Great Dividing Range south-west, the mountains not high but continuous." +
-      "Approaching Victoria the land rises again into a snow-streaked upland: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland, with snow in winter and one of the few skiing areas in Australia. Past the Alps the land opens into grazing country and farmland, and the plane descends along the eastern shore of Corio Bay to land at Avalon — Geelong sits across the bay, and the start of the Great Ocean Road is a short drive south-west.",
+      " Heading south-west after take-off, a sandstone plateau cut by deep valleys appears ahead to the right: the Blue Mountains, their eucalypt forest hazed blue in the sun, part of the Great Dividing Range rising into a plateau behind Sydney. Past the Blue Mountains the route keeps following the Great Dividing Range south-west, the mountains not high but continuous." +
+      " Approaching Victoria the land rises again into a snow-streaked upland: the Australian Alps, the highest part of the Great Dividing Range, whose main peak, Mount Kosciuszko, is the highest point on the Australian mainland, with snow in winter and one of the few skiing areas in Australia. Past the Alps the land opens into grazing country and farmland, and the plane descends along the eastern shore of Corio Bay to land at Avalon — Geelong sits across the bay, and the start of the Great Ocean Road is a short drive south-west.",
     },
     travel: {
     "zh-CN":
@@ -1010,8 +1010,8 @@ export const ROUTE_NARRATION: Record<
       "南半球季节相反，12–2月是夏天，可能有热浪；入境对食品和动植物制品检查严格，如实申报。",
     "en-US":
       "Sydney to Avalon is about an hour and a half, and the two cities are in the same time zone. Avalon Airport is about 20 km north-east of Geelong; getting into town needs the airport bus or a rideshare, as there is no direct train — the airport bus can also take you straight into Melbourne, about 45 minutes away." +
-      "Geelong itself is worth half a day to a full day: the waterfront promenade, the Baywalk Bollards, the National Wool Museum. Many travellers use it as the starting point for the Great Ocean Road — Torquay, south-west of the city, is where the drive officially begins, with the Twelve Apostles still several hours further on. East is the Bellarine Peninsula, with the historic town of Queenscliff and its wineries." +
-      "In the southern hemisphere the seasons are reversed — December to February is summer and can bring heatwaves. Border checks on food and plant and animal material are strict — declare honestly.",
+      " Geelong itself is worth half a day to a full day: the waterfront promenade, the Baywalk Bollards, the National Wool Museum. Many travellers use it as the starting point for the Great Ocean Road — Torquay, south-west of the city, is where the drive officially begins, with the Twelve Apostles still several hours further on. East is the Bellarine Peninsula, with the historic town of Queenscliff and its wineries." +
+      " In the southern hemisphere the seasons are reversed — December to February is summer and can bring heatwaves. Border checks on food and plant and animal material are strict — declare honestly.",
     },
   },
 
@@ -1023,8 +1023,8 @@ export const ROUTE_NARRATION: Record<
       "越过火山高原，进入北岛南部的山地。塔拉鲁瓦山脉是一列陡峭、多雨、常年被风吹的山岭，把惠灵顿一带和北岛西部的平原分开。飞机翻过塔拉鲁瓦，沿着一个几乎封闭的海港下降到惠灵顿——首都就挤在海港西岸的陡坡上。",
     "en-US":
       "Auckland to Wellington flies from the north of the North Island to the south, and in one trip shows how the island is built: volcanoes down the middle, gentle hills at each end. On take-off you are over the Auckland isthmus and its scattered extinct cones, then over the Waikato farm country — a big river winding through green fields, the Waikato, the longest river in New Zealand." +
-      "Southward the land rises into an upland, and a great sheet of deep-blue water appears: Lake Taupō, which is in fact a huge caldera filled with water, the largest lake in New Zealand. On its southern shore stand several snow-streaked conical peaks, the highest being Mount Ruapehu — the highest point of the North Island, an active stratovolcano with a crater lake at the top and a ski field in winter." +
-      "Beyond the volcanic plateau you enter the mountains of the southern North Island. The Tararua Range is a steep, wet, wind-scoured line of hills separating the Wellington area from the western plains. The plane crosses the Tararua and descends along an almost enclosed harbour to Wellington — the capital, squeezed onto the steep western shore.",
+      " Southward the land rises into an upland, and a great sheet of deep-blue water appears: Lake Taupō, which is in fact a huge caldera filled with water, the largest lake in New Zealand. On its southern shore stand several snow-streaked conical peaks, the highest being Mount Ruapehu — the highest point of the North Island, an active stratovolcano with a crater lake at the top and a ski field in winter." +
+      " Beyond the volcanic plateau you enter the mountains of the southern North Island. The Tararua Range is a steep, wet, wind-scoured line of hills separating the Wellington area from the western plains. The plane crosses the Tararua and descends along an almost enclosed harbour to Wellington — the capital, squeezed onto the steep western shore.",
     },
     travel: {
     "zh-CN":
@@ -1033,8 +1033,8 @@ export const ROUTE_NARRATION: Record<
       "多数国家公民入境新西兰前需在线申请电子旅行许可（NZeTA）并缴游客税，落地不能补办。入境对徒步鞋、帐篷、食品查得极严，务必清洗、如实申报。",
     "en-US":
       "Auckland to Wellington is about an hour, in the same time zone. Both have a temperate maritime climate: Auckland is warmer and wetter, Wellington is famously windy, and the weather changes fast in both — carry a windproof, waterproof jacket. In the southern hemisphere the seasons are reversed; December–February is summer." +
-      "Wellington's centre is compact and walkable; Te Papa (the national museum, free), the Botanic Garden at the top of the cable car, and the cafés around Cuba Street are the main draws, and from here the ferry crosses Cook Strait to the South Island." +
-      "Citizens of most countries need to apply online for an NZeTA and pay a visitor levy before arriving in New Zealand, which cannot be arranged on arrival. Border checks on hiking boots, tents and food are very strict — clean them and declare honestly.",
+      " Wellington's centre is compact and walkable; Te Papa (the national museum, free), the Botanic Garden at the top of the cable car, and the cafés around Cuba Street are the main draws, and from here the ferry crosses Cook Strait to the South Island." +
+      " Citizens of most countries need to apply online for an NZeTA and pay a visitor levy before arriving in New Zealand, which cannot be arranged on arrival. Border checks on hiking boots, tents and food are very strict — clean them and declare honestly.",
     },
   },
 
@@ -1048,8 +1048,8 @@ export const ROUTE_NARRATION: Record<
     "en-US":
       "Auckland to Christchurch flies from the North Island to the South Island, across Cook Strait, which separates them. After take-off come the Waikato farm country and the volcanic plateau around Lake Taupō." +
       "Near the southern end of the North Island, a jagged pattern of drowned-valley bays and peninsulas appears on the sea: the Marlborough Sounds, the northern shore of Cook Strait. Across the strait you are on the South Island." +
-      "The South Island rises straight into mountains at the coast. The Kaikōura Ranges lift almost directly out of the sea, with a narrow coastal road and railway at their foot, and whales and dolphins often in the water." +
-      "Past Kaikōura the land opens out flat: the Canterbury Plains, the largest plain on the South Island, built of gravel washed down from the Southern Alps, with braided rivers spreading from the mountain gaps toward the sea. Christchurch is built on the plains' eastern edge at the foot of Banks Peninsula, an old extinct volcano.",
+      " The South Island rises straight into mountains at the coast. The Kaikōura Ranges lift almost directly out of the sea, with a narrow coastal road and railway at their foot, and whales and dolphins often in the water." +
+      " Past Kaikōura the land opens out flat: the Canterbury Plains, the largest plain on the South Island, built of gravel washed down from the Southern Alps, with braided rivers spreading from the mountain gaps toward the sea. Christchurch is built on the plains' eastern edge at the foot of Banks Peninsula, an old extinct volcano.",
     },
     travel: {
     "zh-CN":
@@ -1058,8 +1058,8 @@ export const ROUTE_NARRATION: Record<
       "入境新西兰对户外装备（徒步鞋、帐篷）和食品查得极严，务必清洗申报。多数国家公民需提前在线办 NZeTA 并缴游客税。",
     "en-US":
       "Auckland to Christchurch is about an hour and a half, in the same time zone. Christchurch is cooler than the North Island, with four clear seasons — dry summers (December–February) and frosty winters, with the occasional dry, hot föhn wind." +
-      "Christchurch is the gateway to the South Island: west over Arthur's Pass with the scenic train to the West Coast, south to Tekapo for the night sky, to Aoraki/Mount Cook and Queenstown, north to Kaikōura for whales. The centre is flat and good for cycling, and since the earthquakes it has filled with transitional spaces made of shipping containers and street art." +
-      "Border checks on outdoor gear (hiking boots, tents) and food entering New Zealand are very strict — clean them and declare. Citizens of most countries need an NZeTA and the visitor levy arranged online in advance.",
+      " Christchurch is the gateway to the South Island: west over Arthur's Pass with the scenic train to the West Coast, south to Tekapo for the night sky, to Aoraki/Mount Cook and Queenstown, north to Kaikōura for whales. The centre is flat and good for cycling, and since the earthquakes it has filled with transitional spaces made of shipping containers and street art." +
+      " Border checks on outdoor gear (hiking boots, tents) and food entering New Zealand are very strict — clean them and declare. Citizens of most countries need an NZeTA and the visitor levy arranged online in advance.",
     },
   },
 
@@ -1072,9 +1072,9 @@ export const ROUTE_NARRATION: Record<
       "过了凯库拉，地面变成开阔平坦的坎特伯雷平原，一条条辫状河从南阿尔卑斯的山口散开。基督城就在平原东缘。整条航线虽短，却看全了“海峡—峡湾—海边高山—大平原”这一串。",
     "en-US":
       "Wellington to Christchurch is a short flight across the strait, joining New Zealand's two main islands. Soon after take-off comes Cook Strait — the windy, rough channel that separates the North and South islands, which the ferry takes over three hours to cross." +
-      "The South Island shore is the Marlborough Sounds: many drowned valleys reaching inland as long, thin bays and peninsulas, forest at the water's edge and quiet deep water in the arms." +
-      "South of the Sounds, the Kaikōura Ranges rise almost straight from the sea, snow on the tops and a road and railway hugging the coast at their foot." +
-      "Past Kaikōura the land becomes the open, flat Canterbury Plains, with braided rivers spreading from the gaps in the Southern Alps. Christchurch is on the plains' eastern edge. Short as it is, the flight takes in the whole sequence — strait, sounds, coastal mountains, great plain.",
+      " The South Island shore is the Marlborough Sounds: many drowned valleys reaching inland as long, thin bays and peninsulas, forest at the water's edge and quiet deep water in the arms." +
+      " South of the Sounds, the Kaikōura Ranges rise almost straight from the sea, snow on the tops and a road and railway hugging the coast at their foot." +
+      " Past Kaikōura the land becomes the open, flat Canterbury Plains, with braided rivers spreading from the gaps in the Southern Alps. Christchurch is on the plains' eastern edge. Short as it is, the flight takes in the whole sequence — strait, sounds, coastal mountains, great plain.",
     },
     travel: {
     "zh-CN":
@@ -1083,8 +1083,8 @@ export const ROUTE_NARRATION: Record<
       "跨海峡渡轮遇大风大浪会延误或取消，坐飞机更稳。入境对户外装备和食品查得极严。",
     "en-US":
       "Wellington to Christchurch is about 50 minutes. You can also take the Cook Strait ferry to Picton and continue by train or car — most of a day, but very scenic. Both have a temperate maritime climate; Christchurch is cooler, with four clear seasons." +
-      "Christchurch is the transport gateway to the South Island, with classic scenic routes west, south and north (the TranzAlpine train, Aoraki/Mount Cook, whale watching at Kaikōura). The centre is flat and good for cycling." +
-      "The Cook Strait ferry is delayed or cancelled in high wind and swell, so flying is more reliable. Border checks on outdoor gear and food are very strict.",
+      " Christchurch is the transport gateway to the South Island, with classic scenic routes west, south and north (the TranzAlpine train, Aoraki/Mount Cook, whale watching at Kaikōura). The centre is flat and good for cycling." +
+      " The Cook Strait ferry is delayed or cancelled in high wind and swell, so flying is more reliable. Border checks on outdoor gear and food are very strict.",
     },
   },
 
@@ -1097,9 +1097,9 @@ export const ROUTE_NARRATION: Record<
       "越过分水岭，地面陷下去，出现一个 Z 形的深色湖，那是瓦卡蒂普湖，皇后镇就在湖湾边，对岸是陡峭的卓越山脉。",
     "en-US":
       "Christchurch to Queenstown flies from the eastern plains across the Southern Alps into the lake-and-mountain country of the south. On take-off you are over the Canterbury Plains, with braided rivers spreading from the mountain gaps to the west." +
-      "South-west the land rises, and the green pasture gives way to grey-gold dry uplands: the Mackenzie Basin, a high basin ringed by mountains, where glacier-fed lakes such as Tekapo and Pūkaki are milky blue because the water carries very fine rock flour ground by the ice. This area is thinly peopled with little light pollution — a dark-sky reserve." +
-      "Farther west is the main crest of the Southern Alps — a line of high mountains under permanent snow and widespread glaciers, with the highest peak, Aoraki/Mount Cook, close by. The western side, facing the moist air off the Tasman Sea, has extreme rainfall and rainforest; the eastern side is dry." +
-      "Over the divide the ground drops away and a dark Z-shaped lake appears: Lake Wakatipu, with Queenstown on a bay and the steep Remarkables on the far shore.",
+      " South-west the land rises, and the green pasture gives way to grey-gold dry uplands: the Mackenzie Basin, a high basin ringed by mountains, where glacier-fed lakes such as Tekapo and Pūkaki are milky blue because the water carries very fine rock flour ground by the ice. This area is thinly peopled with little light pollution — a dark-sky reserve." +
+      " Farther west is the main crest of the Southern Alps — a line of high mountains under permanent snow and widespread glaciers, with the highest peak, Aoraki/Mount Cook, close by. The western side, facing the moist air off the Tasman Sea, has extreme rainfall and rainforest; the eastern side is dry." +
+      " Over the divide the ground drops away and a dark Z-shaped lake appears: Lake Wakatipu, with Queenstown on a bay and the steep Remarkables on the far shore.",
     },
     travel: {
     "zh-CN":
@@ -1108,8 +1108,8 @@ export const ROUTE_NARRATION: Record<
       "冬季山路可能要带防滑链，查路况。入境对户外装备和食品查得极严。",
     "en-US":
       "Christchurch to Queenstown is about an hour. Queenstown is on the lee side of the mountains, with a temperate semi-arid climate: warm, dry summers (the hiking and water-sports high season) and cold, snowy winters (the ski season, June–August), a wide day-to-night range, and expensive, early-booked accommodation in both peaks." +
-      "Queenstown is New Zealand's outdoor-sports centre: the Skyline Gondola, a cruise on the historic steamship TSS Earnslaw, bungy, skydiving and jetboating (use licensed operators), and drives to Glenorchy, Arrowtown and Wānaka. The Milford Sound day trip is about a 4-hour mountain drive each way." +
-      "In winter, mountain roads may need chains — check road conditions. Border checks on outdoor gear and food are very strict.",
+      " Queenstown is New Zealand's outdoor-sports centre: the Skyline Gondola, a cruise on the historic steamship TSS Earnslaw, bungy, skydiving and jetboating (use licensed operators), and drives to Glenorchy, Arrowtown and Wānaka. The Milford Sound day trip is about a 4-hour mountain drive each way." +
+      " In winter, mountain roads may need chains — check road conditions. Border checks on outdoor gear and food are very strict.",
     },
   },
 
@@ -1121,8 +1121,8 @@ export const ROUTE_NARRATION: Record<
       "这一带是北岛陶波火山带的一段——地壳下的岩浆把地下水加热，形成这些地热景观；也是毛利蒂阿拉瓦部族的传统聚居地，很多村落就建在温泉旁边。",
     "en-US":
       "Auckland to Rotorua is a short flight from the largest city into the volcanic and geothermal belt of the North Island. On take-off you are over the Auckland isthmus and its scattered extinct cones, then the Waikato farm country with the Waikato River winding through green fields." +
-      "Rotorua comes up quickly. It sits in an old caldera, and from the air you can see the steaming geothermal areas — geysers, boiling mud pools, brightly coloured hot springs — with Lake Rotorua filling much of the crater. There are a dozen or so volcanic lakes around, and Mount Tarawera." +
-      "This area is part of the Taupō Volcanic Zone of the North Island — magma below the crust heats the groundwater to make these geothermal features — and it is also traditional home of the Te Arawa Māori people, with many villages built beside the hot springs.",
+      " Rotorua comes up quickly. It sits in an old caldera, and from the air you can see the steaming geothermal areas — geysers, boiling mud pools, brightly coloured hot springs — with Lake Rotorua filling much of the crater. There are a dozen or so volcanic lakes around, and Mount Tarawera." +
+      " This area is part of the Taupō Volcanic Zone of the North Island — magma below the crust heats the groundwater to make these geothermal features — and it is also traditional home of the Te Arawa Māori people, with many villages built beside the hot springs.",
     },
     travel: {
     "zh-CN":
@@ -1131,8 +1131,8 @@ export const ROUTE_NARRATION: Record<
       "地热地表薄、烫，务必走在步道上、看好孩子。间歇泉喷发有固定时间。入境对户外装备和食品查得极严。",
     "en-US":
       "Auckland to Rotorua is about 40 minutes, though most people drive from Auckland (about 3 hours). Rotorua is a year-round destination, most comfortable December–March; near the geothermal areas the humidity is high and the sulphur smell strong, and silver jewellery tarnishes, so you can take it off." +
-      "The draws are the geothermal areas such as Wai-O-Tapu and Te Puia, cycling and the treewalk in the Redwoods, the lake-view hot pools, and Māori cultural experiences (a marae visit, performance, a hāngī earth-oven meal)." +
-      "The geothermal crust is thin and scalding — stay on the paths and mind children. Geysers erupt at set times. Border checks on outdoor gear and food are very strict.",
+      " The draws are the geothermal areas such as Wai-O-Tapu and Te Puia, cycling and the treewalk in the Redwoods, the lake-view hot pools, and Māori cultural experiences (a marae visit, performance, a hāngī earth-oven meal)." +
+      " The geothermal crust is thin and scalding — stay on the paths and mind children. Geysers erupt at set times. Border checks on outdoor gear and food are very strict.",
     },
   },
 
@@ -1140,14 +1140,14 @@ export const ROUTE_NARRATION: Record<
     study: {
     "zh-CN":
       "纽约飞洛杉矶，横穿整个美国本土，是了解北美地形结构最完整的一条线。起飞后先越过阿巴拉契亚山脉——一条平行于大西洋岸的古老褶皱山系，久经侵蚀、山势平缓、林木茂密，是北美东部的分水岭。" +
-      "翻过山，地面渐渐展开成大平原：从密西西比河谷一直铺到落基山脚，是一片微微西高的半干旱草原和农田，方格状的田块和圆形喷灌圈从空中很好认。" +
+      "翻过山，地面渐渐展开成北美大平原：从密西西比河谷一直铺到西部群山脚下，是一片微微西高的半干旱草原和农田，方格状的田块和圆形喷灌圈从空中很好认。" +
       "平原尽头，落基山脉突然拔起，一列列南北向的雪岭夹着高山盆地，大陆分水岭就在脊线上。再往西是科罗拉多高原——一块被抬升的厚层水平岩层，被科罗拉多河和支流切出深峡，大峡谷是其中最深的一段。" +
       "最后越过莫哈韦沙漠的荒山和干湖盆，翻过沿海的圣加布里埃尔等山脉，洛杉矶盆地和太平洋就在眼前。",
     "en-US":
       "New York to Los Angeles crosses the entire contiguous United States, and is the most complete way to read the structure of North America from the air. After take-off you cross the Appalachian Mountains — an old folded range running parallel to the Atlantic coast, long eroded to gentle, forested ridges, and the divide of the eastern US." +
-      "Beyond the mountains the land opens into the Great Plains: from the Mississippi valley to the foot of the Rockies, a semi-arid grassland and farmland that rises gently westward, its square fields and circular irrigation pivots easy to pick out from above." +
-      "At the edge of the plains the Rocky Mountains rise abruptly — lines of snowy north–south ranges enclosing high basins, with the Continental Divide along the crest. West of them is the Colorado Plateau, a block of thick, near-horizontal rock layers lifted up and cut into deep canyons by the Colorado River and its tributaries; the Grand Canyon is the deepest stretch." +
-      "Finally you cross the bare hills and dry lake basins of the Mojave Desert, clear the coastal San Gabriel and other ranges, and the Los Angeles basin and the Pacific come into view.",
+      " Beyond the mountains the land opens into the Great Plains: from the Mississippi valley to the foot of the Rockies, a semi-arid grassland and farmland that rises gently westward, its square fields and circular irrigation pivots easy to pick out from above." +
+      " At the edge of the plains the Rocky Mountains rise abruptly — lines of snowy north–south ranges enclosing high basins, with the Continental Divide along the crest. West of them is the Colorado Plateau, a block of thick, near-horizontal rock layers lifted up and cut into deep canyons by the Colorado River and its tributaries; the Grand Canyon is the deepest stretch." +
+      " Finally you cross the bare hills and dry lake basins of the Mojave Desert, clear the coastal San Gabriel and other ranges, and the Los Angeles basin and the Pacific come into view.",
     },
     travel: {
     "zh-CN":
@@ -1156,8 +1156,8 @@ export const ROUTE_NARRATION: Record<
       "两地机场都很大：JFK 有 AirTrain 接地铁，LAX 出租车和网约车分区上客、按牌照颜色分流。多数国家公民入境美国需提前在线办 ESTA 或签证，落地不能补办。",
     "en-US":
       "New York to Los Angeles is about five and a half hours, west across three time zones (set your clock back 3 hours on arrival). The two cities have very different climates: New York has four clear seasons, muggy summers and snowy winters; Los Angeles is warm and dry year-round with little rain and a marked day–night and coast–inland difference." +
-      "This is the classic 'cross the country' flight, and from a window seat you see, in turn, the forested Appalachians, the farmland of the Great Plains, the snowy Rockies, the red canyons of the Colorado Plateau and the western deserts. By day the right-hand (north) side has better light and views." +
-      "Both airports are large: JFK has the AirTrain to the subway, and LAX has zoned pick-up for taxis and rideshare. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US — this cannot be done on arrival.",
+      " This is the classic 'cross the country' flight, and from a window seat you see, in turn, the forested Appalachians, the farmland of the Great Plains, the snowy Rockies, the red canyons of the Colorado Plateau and the western deserts. By day the right-hand (north) side has better light and views." +
+      " Both airports are large: JFK has the AirTrain to the subway, and LAX has zoned pick-up for taxis and rideshare. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US — this cannot be done on arrival.",
     },
   },
 
@@ -1170,9 +1170,9 @@ export const ROUTE_NARRATION: Record<
       "最后翻过内华达山脉北段，脚下豁然是加州中央谷地：一块被两侧山脉夹住的巨大平坦农业盆地，萨克拉门托河与圣华金河在此汇合、经旧金山湾入海。旧金山就在湾口的半岛尖端。",
     "en-US":
       "New York to San Francisco takes a more northerly track and shows the northern half of the country. Soon after take-off come the Great Lakes — a chain of huge freshwater lakes gouged out by the continental ice sheet in the last ice age, with low shores, and the heart of the eastern industrial belt." +
-      "Past the lakes is the northern Great Plains: the wheat fields and grassland of Nebraska and the Dakotas, few rivers, wide horizons, and often snow-covered in winter." +
-      "Beyond the northern Rockies you enter the Great Basin — an arid upland broken by mountains into many closed basins, where rivers never reach the sea but drain into inland salt lakes and flats; the Great Salt Lake is the largest." +
-      "Finally, over the northern Sierra Nevada, the Central Valley of California opens below: a large, flat agricultural basin held between mountain ranges, where the Sacramento and San Joaquin rivers meet and flow out through San Francisco Bay. San Francisco is on the tip of the peninsula at the bay's mouth.",
+      " Past the lakes is the northern Great Plains: the wheat fields and grassland of Nebraska and the Dakotas, few rivers, wide horizons, and often snow-covered in winter." +
+      " Beyond the northern Rockies you enter the Great Basin — an arid upland broken by mountains into many closed basins, where rivers never reach the sea but drain into inland salt lakes and flats; the Great Salt Lake is the largest." +
+      " Finally, over the northern Sierra Nevada, the Central Valley of California opens below: a large, flat agricultural basin held between mountain ranges, where the Sacramento and San Joaquin rivers meet and flow out through San Francisco Bay. San Francisco is on the tip of the peninsula at the bay's mouth.",
     },
     travel: {
     "zh-CN":
@@ -1181,8 +1181,8 @@ export const ROUTE_NARRATION: Record<
       "SFO 有 BART 城市轨道直接进市区，约半小时。旧金山山多、坡陡，市区停车贵且易被砸车窗，多用公交和缆车。多数国家公民入境美国需提前在线办 ESTA 或签证。",
     "en-US":
       "New York to San Francisco is about six hours, west across three time zones. San Francisco often has sea fog in summer and feels cool — carry a jacket in any season; New York is hot in summer and cold in winter." +
-      "On this northern track a window seat shows, in turn, the Great Lakes, the farmland of the Midwest, the white salt flats of the Great Salt Lake, the peaks of the Sierra Nevada, and finally the Central Valley and San Francisco Bay." +
-      "SFO has BART rail straight into the city, about 30 minutes. San Francisco is hilly and steep, downtown parking is expensive and car break-ins common, so use transit and the cable cars. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
+      " On this northern track a window seat shows, in turn, the Great Lakes, the farmland of the Midwest, the white salt flats of the Great Salt Lake, the peaks of the Sierra Nevada, and finally the Central Valley and San Francisco Bay." +
+      " SFO has BART rail straight into the city, about 30 minutes. San Francisco is hilly and steep, downtown parking is expensive and car break-ins common, so use transit and the cable cars. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
     },
   },
 
@@ -1194,8 +1194,8 @@ export const ROUTE_NARRATION: Record<
       "翻过内华达山脉，加州中央谷地在山脚展开：南北长约六百公里、东西被海岸山脉和内华达山夹住，是全美灌溉农业最集中的地方。谷地北端的河流汇成三角洲，经旧金山湾入海。",
     "en-US":
       "Chicago to San Francisco flies from the plains by the Great Lakes to the Pacific coast. On take-off you are over Lake Michigan and the flat lake-plain that Chicago sits on, then the endless farmland of the Midwest — a grid of corn and soybean fields, the wettest and most fertile part of the eastern Great Plains." +
-      "Beyond the Rockies you enter the arid uplands of the Great Basin. The Great Salt Lake is a shallow salt lake with no outlet, ringed by white salt flats and level alkali ground, and from the air it looks like a grey-blue mirror." +
-      "Over the Sierra Nevada, the Central Valley of California opens at the foot of the range: about 600 km long, held between the Coast Ranges and the Sierra, and the most concentrated irrigated farmland in the country. At its northern end the rivers join in a delta and flow out through San Francisco Bay.",
+      " Beyond the Rockies you enter the arid uplands of the Great Basin. The Great Salt Lake is a shallow salt lake with no outlet, ringed by white salt flats and level alkali ground, and from the air it looks like a grey-blue mirror." +
+      " Over the Sierra Nevada, the Central Valley of California opens at the foot of the range: about 600 km long, held between the Coast Ranges and the Sierra, and the most concentrated irrigated farmland in the country. At its northern end the rivers join in a delta and flow out through San Francisco Bay.",
     },
     travel: {
     "zh-CN":
@@ -1204,8 +1204,8 @@ export const ROUTE_NARRATION: Record<
       "SFO 有 BART 进城。多数国家公民入境美国需提前在线办 ESTA 或签证，落地不能补办。",
     "en-US":
       "Chicago to San Francisco is about four and a half hours, west across two time zones. Chicago has hard, snowy winters and warm summers; San Francisco is mild all year, foggy and cool in summer." +
-      "From a window you can see the Midwest farmland, the Rockies, the salt flats of the Great Salt Lake and the peaks of the Sierra Nevada. O'Hare (ORD) is one of the busiest airports in the country and delays are common in bad weather — leave plenty of time for connections." +
-      "SFO has BART into the city. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US — this cannot be done on arrival.",
+      " From a window you can see the Midwest farmland, the Rockies, the salt flats of the Great Salt Lake and the peaks of the Sierra Nevada. O'Hare (ORD) is one of the busiest airports in the country and delays are common in bad weather — leave plenty of time for connections." +
+      " SFO has BART into the city. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US — this cannot be done on arrival.",
     },
   },
 
@@ -1217,8 +1217,8 @@ export const ROUTE_NARRATION: Record<
       "航线南侧不远就是大峡谷——科罗拉多河切得最深的一段，两壁层层叠叠的岩层记录了很长一段地质历史。最后越过一片荒山和干湖盆，拉斯维加斯所在的莫哈韦沙漠盆地就到了。",
     "en-US":
       "Denver to Las Vegas is a short flight, but it cuts across two of the major landform provinces of the American West. Denver is on the eastern foot of the Rockies at the edge of the Great Plains, about a mile high; after take-off you climb straight over the Front Range of the Rockies — lines of snowy north–south ridges enclosing open high 'parks', with the Continental Divide along the crest." +
-      "Beyond the ridges the ground becomes a lifted, dissected plateau of red rock: the Colorado Plateau. The Colorado River and its tributaries have cut deep canyons into the thick horizontal rock layers, and the water runs muddy and reddish most of the year." +
-      "A little to the south of the track is the Grand Canyon — the deepest stretch the Colorado River has cut, its layered walls recording a long span of geological time. Finally, over bare hills and dry lake basins, you reach the Mojave Desert basin that Las Vegas sits in.",
+      " Beyond the ridges the ground becomes a lifted, dissected plateau of red rock: the Colorado Plateau. The Colorado River and its tributaries have cut deep canyons into the thick horizontal rock layers, and the water runs muddy and reddish most of the year." +
+      " A little to the south of the track is the Grand Canyon — the deepest stretch the Colorado River has cut, its layered walls recording a long span of geological time. Finally, over bare hills and dry lake basins, you reach the Mojave Desert basin that Las Vegas sits in.",
     },
     travel: {
     "zh-CN":
@@ -1227,8 +1227,8 @@ export const ROUTE_NARRATION: Record<
       "沙漠和山区手机常没信号，自驾要加满油、带足水。多数国家公民入境美国需提前在线办 ESTA 或签证。",
     "en-US":
       "Denver to Las Vegas is about an hour and forty minutes; set your clock back an hour on arrival (Denver is Mountain time, Las Vegas Pacific). Denver is dry with strong sun and snowy winters; Las Vegas is in the desert, extremely hot and dry in summer." +
-      "From a window you see the snowy ridges of the Rockies and the red canyons of the Colorado Plateau, and in clear weather you can look toward the Grand Canyon. Both cities are gateways for driving into the national parks: Denver for Rocky Mountain, Las Vegas for the Grand Canyon, Zion and Death Valley." +
-      "Phone signal is often absent in the desert and mountains, so fill the tank and carry plenty of water if you drive. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
+      " From a window you see the snowy ridges of the Rockies and the red canyons of the Colorado Plateau, and in clear weather you can look toward the Grand Canyon. Both cities are gateways for driving into the national parks: Denver for Rocky Mountain, Las Vegas for the Grand Canyon, Zion and Death Valley." +
+      " Phone signal is often absent in the desert and mountains, so fill the tank and carry plenty of water if you drive. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
     },
   },
 
@@ -1240,8 +1240,8 @@ export const ROUTE_NARRATION: Record<
       "翻过山脊，地面骤然干旱下陷，出现死亡谷——北美最低、最热、最干的地方，谷底的盐滩低于海平面，两侧是陡峭的荒山。最后飞过莫哈韦沙漠的干湖盆，拉斯维加斯就在群山环抱的盆地里。",
     "en-US":
       "San Francisco to Las Vegas crosses, in a single hour, from the moist valley of the Pacific side over high mountains and down into the interior desert. After take-off you cross the southern Central Valley of California — a flat agricultural basin held between mountain ranges, with few rivers and intensive irrigation." +
-      "Next is the Sierra Nevada: a huge tilted block of granite, gently sloping on the west and steep on the east, snow-capped all year, with many deep U-shaped valleys carved by glaciers in the ice ages." +
-      "Over the crest the land drops suddenly into desert and Death Valley appears — the lowest, hottest and driest place in North America, its floor of salt flats below sea level between steep bare mountains. Finally, over the dry lake basins of the Mojave Desert, Las Vegas lies in its ring of mountains.",
+      " Next is the Sierra Nevada: a huge tilted block of granite, gently sloping on the west and steep on the east, snow-capped all year, with many deep U-shaped valleys carved by glaciers in the ice ages." +
+      " Over the crest the land drops suddenly into desert and Death Valley appears — the lowest, hottest and driest place in North America, its floor of salt flats below sea level between steep bare mountains. Finally, over the dry lake basins of the Mojave Desert, Las Vegas lies in its ring of mountains.",
     },
     travel: {
     "zh-CN":
@@ -1250,8 +1250,8 @@ export const ROUTE_NARRATION: Record<
       "拉斯维加斯机场就在大道（Strip）南端，离酒店很近。夏季正午不宜长时间户外。多数国家公民入境美国需提前在线办 ESTA 或签证。",
     "en-US":
       "San Francisco to Las Vegas is about an hour and a half, in the same time zone. San Francisco is cool and foggy, Las Vegas is in the desert and very hot in summer — the temperature difference on arrival can be large." +
-      "This is a scenic flight: a window seat shows, in turn, the farmland of the Central Valley, the peaks of the Sierra Nevada, and the salt flats and bare mountains of Death Valley — very clear in fine weather." +
-      "Las Vegas airport is at the south end of the Strip, close to the hotels. Midday in summer is not the time for long spells outdoors. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
+      " This is a scenic flight: a window seat shows, in turn, the farmland of the Central Valley, the peaks of the Sierra Nevada, and the salt flats and bare mountains of Death Valley — very clear in fine weather." +
+      " Las Vegas airport is at the south end of the Strip, close to the hotels. Midday in summer is not the time for long spells outdoors. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
     },
   },
 
@@ -1263,8 +1263,8 @@ export const ROUTE_NARRATION: Record<
       "过了切萨皮克湾——一个被淹没的古河口——沿岸平原逐渐收窄，在纽约一带尖灭；哈得孙河的河口和天然良港，正是纽约兴起的地方。",
     "en-US":
       "Miami to New York runs north along the US East Coast and shows the whole sweep of the Atlantic coastal plain. After take-off you are over the Florida peninsula — a low, flat limestone platform dotted with lakes, marshes and karst springs, with the Everglades on its western side, a sheet of shallow water and sawgrass creeping slowly south." +
-      "North of the peninsula the coast is a continuous line of low sand bars, lagoons and estuary wetlands: the Atlantic coastal plain, running from Florida to New York, formed of sea-floor sediments lifted and exposed, very gently sloping, with sandy beaches and barrier islands." +
-      "Past Chesapeake Bay — a drowned ancient river mouth — the coastal plain narrows and pinches out near New York; the mouth of the Hudson River and its natural harbour are exactly where the city grew.",
+      " North of the peninsula the coast is a continuous line of low sand bars, lagoons and estuary wetlands: the Atlantic coastal plain, running from Florida to New York, formed of sea-floor sediments lifted and exposed, very gently sloping, with sandy beaches and barrier islands." +
+      " Past Chesapeake Bay — a drowned ancient river mouth — the coastal plain narrows and pinches out near New York; the mouth of the Hudson River and its natural harbour are exactly where the city grew.",
     },
     travel: {
     "zh-CN":
@@ -1273,8 +1273,8 @@ export const ROUTE_NARRATION: Record<
       "纽约有三个机场，JFK 有 AirTrain 接地铁进城。多数国家公民入境美国需提前在线办 ESTA 或签证，落地不能补办。",
     "en-US":
       "Miami to New York is about three hours, in the same time zone. The climates are very different: Miami is warm all year and hot, muggy and rainy in summer (hurricane season June–November); New York has four clear seasons and cold, snowy winters." +
-      "From a window on the east (right) side you can follow the coast the whole way: the sand bars of Florida, the beaches and barrier islands of the Carolinas, Chesapeake Bay." +
-      "New York has three airports; JFK has the AirTrain to the subway into the city. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US — this cannot be done on arrival.",
+      " From a window on the east (right) side you can follow the coast the whole way: the sand bars of Florida, the beaches and barrier islands of the Carolinas, Chesapeake Bay." +
+      " New York has three airports; JFK has the AirTrain to the subway into the city. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US — this cannot be done on arrival.",
     },
   },
 
@@ -1286,8 +1286,8 @@ export const ROUTE_NARRATION: Record<
       "再往西是索诺兰沙漠，气候稍暖湿一点，长着高大的巨柱仙人掌，是北美最“绿”的沙漠。最后穿过更干旱、多干湖盆的莫哈韦沙漠，翻过沿海山脉，洛杉矶盆地就到了。整条线几乎全程在美国西南部的盆地—山岭地形上飞。",
     "en-US":
       "New Orleans to Los Angeles crosses the arid belt of the southern United States. On take-off you are over the lower Mississippi delta — a low land of river silt cut up by channels and swamps, partly below sea level." +
-      "West across Texas the ground rises and dries out. Into New Mexico is the Chihuahuan Desert — the largest desert in North America, marked by shrubland and gypsum dunes, with White Sands among them." +
-      "Farther west is the Sonoran Desert, a little warmer and wetter, home to the tall saguaro cactus and the 'greenest' desert in North America. Finally you cross the drier, dry-lake-basin country of the Mojave Desert, clear the coastal ranges, and reach the Los Angeles basin. Almost the whole flight is over the basin-and-range country of the American Southwest.",
+      " West across Texas the ground rises and dries out. Into New Mexico is the Chihuahuan Desert — the largest desert in North America, marked by shrubland and gypsum dunes, with White Sands among them." +
+      " Farther west is the Sonoran Desert, a little warmer and wetter, home to the tall saguaro cactus and the 'greenest' desert in North America. Finally you cross the drier, dry-lake-basin country of the Mojave Desert, clear the coastal ranges, and reach the Los Angeles basin. Almost the whole flight is over the basin-and-range country of the American Southwest.",
     },
     travel: {
     "zh-CN":
@@ -1296,8 +1296,8 @@ export const ROUTE_NARRATION: Record<
       "洛杉矶极度依赖开车，机场出租车和网约车分区上客。多数国家公民入境美国需提前在线办 ESTA 或签证。",
     "en-US":
       "New Orleans to Los Angeles is about four hours, west across two time zones. New Orleans is low, humid and hot in summer; Los Angeles is dry, warm and low on rain." +
-      "Most of this flight is over desert, and from a window you see the dry country of Texas, the white gypsum dunes of New Mexico, the cactus desert of Arizona. The first half is mainly farmland and ranching; the landscape opens out once you cross into New Mexico." +
-      "Los Angeles depends heavily on driving, and the airport has zoned pick-up for taxis and rideshare. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
+      " Most of this flight is over desert, and from a window you see the dry country of Texas, the white gypsum dunes of New Mexico, the cactus desert of Arizona. The first half is mainly farmland and ranching; the landscape opens out once you cross into New Mexico." +
+      " Los Angeles depends heavily on driving, and the airport has zoned pick-up for taxis and rideshare. Citizens of most countries need an ESTA or a visa arranged online before travelling to the US.",
     },
   },
 
@@ -1309,8 +1309,8 @@ export const ROUTE_NARRATION: Record<
       "平原尽头，加拿大落基山猛然升起：一列列近乎平行的南北向山岭，是厚层沉积岩被逆冲断层推挤、层层叠瓦堆起来的，山间有冰原、绿松石色的冰川湖和 U 形谷。翻过最后一道海岸山脉，就是温哥华所在的弗雷泽河三角洲和太平洋。",
     "en-US":
       "Toronto to Vancouver crosses the whole of Canada, and is the most complete way to read the country's structure from the air. After take-off come Lake Ontario and the Great Lakes, then the Canadian Shield — a vast old platform of crystalline rock scraped again and again by ice, its surface covered with countless lakes, bogs and bare rounded rock knobs, roadless in the forested interior, covering nearly half of Canada." +
-      "Around Manitoba the Shield sinks under the plains, and Lake Winnipeg is one of the large lakes left from glacial Lake Agassiz. West the land grows flatter and drier — the Interior Plains, Canada's granary and oil country, its square fields running to the foot of the Rockies." +
-      "At the edge of the plains the Canadian Rockies rise abruptly: lines of near-parallel north–south ranges, thick sedimentary layers stacked like shingles by thrust faults, with icefields, turquoise glacial lakes and U-shaped valleys between them. Over a last coastal range is the Fraser River delta and the Pacific, where Vancouver sits.",
+      " Around Manitoba the Shield sinks under the plains, and Lake Winnipeg is one of the large lakes left from glacial Lake Agassiz. West the land grows flatter and drier — the Interior Plains, Canada's granary and oil country, its square fields running to the foot of the Rockies." +
+      " At the edge of the plains the Canadian Rockies rise abruptly: lines of near-parallel north–south ranges, thick sedimentary layers stacked like shingles by thrust faults, with icefields, turquoise glacial lakes and U-shaped valleys between them. Over a last coastal range is the Fraser River delta and the Pacific, where Vancouver sits.",
     },
     travel: {
     "zh-CN":
@@ -1319,8 +1319,8 @@ export const ROUTE_NARRATION: Record<
       "两地机场都有城市轨道进城：YYZ 有 UP Express 到联合车站，YVR 有 Canada Line 到市中心。多数国家公民入境加拿大需提前在线办 eTA 或签证。",
     "en-US":
       "Toronto to Vancouver is about five hours, west across three time zones (set your clock back 3 hours on arrival). The climates are very different: Toronto has four clear seasons, cold winters and muggy summers; Vancouver has mild, rainy winters and dry summers, and rarely snows." +
-      "This is the Canadian 'cross the continent' flight, and from a window you see, in turn, the Great Lakes, the myriad lakes of the Shield, the wheat fields of the prairies, and the snowy ranges and glacial lakes of the Rockies. By day the right-hand (north) side has slightly better views." +
-      "Both airports have rail into the city: the UP Express from YYZ to Union Station, and the Canada Line from YVR to downtown. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
+      " This is the Canadian 'cross the continent' flight, and from a window you see, in turn, the Great Lakes, the myriad lakes of the Shield, the wheat fields of the prairies, and the snowy ranges and glacial lakes of the Rockies. By day the right-hand (north) side has slightly better views." +
+      " Both airports have rail into the city: the UP Express from YYZ to Union Station, and the Canada Line from YVR to downtown. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
     },
   },
 
@@ -1332,8 +1332,8 @@ export const ROUTE_NARRATION: Record<
       "平原尽头，加拿大落基山拔地而起——沉积岩被逆冲推挤成一列列瓦叠的山岭，夹着冰原和冰川湖。最后越过海岸山脉，温哥华、弗雷泽河三角洲和大海就在眼前。",
     "en-US":
       "Montreal to Vancouver crosses Canada from the French-speaking St Lawrence valley to the Pacific coast. Soon after take-off you are over the Canadian Shield — an old platform of crystalline rock, rounded by ice and pitted with countless lakes, covering most of northern Ontario and Quebec as roadless lake-and-forest country." +
-      "On the prairie side the Shield sinks under the plains, and Lake Winnipeg is a large lake left by the melting ice. West are the Interior Plains: semi-arid wheat fields and ranchland tilting gently up to the west, with rivers cutting shallow valleys into the soft layers." +
-      "At the edge of the plains the Canadian Rockies rise straight up — sedimentary rock pushed by thrust faults into lines of shingled ranges, with icefields and glacial lakes between. Finally, over the Coast Mountains, Vancouver, the Fraser delta and the sea come into view.",
+      " On the prairie side the Shield sinks under the plains, and Lake Winnipeg is a large lake left by the melting ice. West are the Interior Plains: semi-arid wheat fields and ranchland tilting gently up to the west, with rivers cutting shallow valleys into the soft layers." +
+      " At the edge of the plains the Canadian Rockies rise straight up — sedimentary rock pushed by thrust faults into lines of shingled ranges, with icefields and glacial lakes between. Finally, over the Coast Mountains, Vancouver, the Fraser delta and the sea come into view.",
     },
     travel: {
     "zh-CN":
@@ -1342,8 +1342,8 @@ export const ROUTE_NARRATION: Record<
       "多数国家公民入境加拿大需提前在线办 eTA 或签证，落地不能补办。魁北克讲法语，出发前会一句 bonjour 很有帮助。",
     "en-US":
       "Montreal to Vancouver is about five and a half hours, west across three time zones. Montreal has cold, snowy winters and hot, festival-filled summers; Vancouver is mild all year and rainy in winter." +
-      "From a window you see, in turn, the lakes of the Shield, the prairies, and the snowy peaks and glacial lakes of the Rockies. YUL has the 747 express bus into the city, YVR the Canada Line." +
-      "Citizens of most countries need an eTA or a visa arranged online before travelling to Canada. Quebec is French-speaking, and a word of 'bonjour' helps.",
+      " From a window you see, in turn, the lakes of the Shield, the prairies, and the snowy peaks and glacial lakes of the Rockies. YUL has the 747 express bus into the city, YVR the Canada Line." +
+      " Citizens of most countries need an eTA or a visa arranged online before travelling to Canada. Quebec is French-speaking, and a word of 'bonjour' helps.",
     },
   },
 
@@ -1354,7 +1354,7 @@ export const ROUTE_NARRATION: Record<
       "接着地面是平坦的圣劳伦斯低地：安大略湖和圣劳伦斯河之间一条肥沃的沉积平原，是安大略和魁北克人口最密的地带，田块、村镇和高速公路排得很规整。蒙特利尔就在圣劳伦斯河中的一座大岛上，岛中央的皇家山从空中很好认。",
     "en-US":
       "Toronto to Montreal is the busiest air route in Canada, short, and flown mostly over the lowlands of the St Lawrence. After take-off you skim the north shore of Lake Ontario; the low ridge along the city's northern edge is the Niagara Escarpment — a hard cap of dolomite over softer rock, eroded into a line of cliff that curves from New York State through Ontario to Lake Huron, and Niagara Falls is where the river drops over it." +
-      "Then the ground is the flat St Lawrence Lowlands: a fertile sedimentary plain between Lake Ontario and the St Lawrence River, the most densely settled belt of Ontario and Quebec, with neatly ordered fields, towns and highways. Montreal sits on a large island in the St Lawrence, and Mount Royal in the middle of the island is easy to pick out from the air.",
+      " Then the ground is the flat St Lawrence Lowlands: a fertile sedimentary plain between Lake Ontario and the St Lawrence River, the most densely settled belt of Ontario and Quebec, with neatly ordered fields, towns and highways. Montreal sits on a large island in the St Lawrence, and Mount Royal in the middle of the island is easy to pick out from the air.",
     },
     travel: {
     "zh-CN":
@@ -1363,8 +1363,8 @@ export const ROUTE_NARRATION: Record<
       "多数国家公民入境加拿大需提前在线办 eTA 或签证。",
     "en-US":
       "Toronto to Montreal is about an hour and fifteen minutes, in the same time zone. Both have a humid continental climate with four clear seasons; Montreal's winter is colder and longer. You can also take the VIA Rail train, about five hours, city centre to city centre." +
-      "Toronto is English-speaking; Montreal is French-first — a 'bonjour' on entering a shop is welcome, and the service industry mostly speaks English. Around 1 July is the traditional Quebec moving day, when transport and lodging are tight." +
-      "Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
+      " Toronto is English-speaking; Montreal is French-first — a 'bonjour' on entering a shop is welcome, and the service industry mostly speaks English. Around 1 July is the traditional Quebec moving day, when transport and lodging are tight." +
+      " Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
     },
   },
 
@@ -1376,8 +1376,8 @@ export const ROUTE_NARRATION: Record<
       "接近终点，海面出现芬迪湾——一条深入陆地的漏斗形海湾，因为形状和长度和大西洋潮汐产生共振，这里的潮差是世界最大的，落潮时露出大片红色泥滩和被冲刷成蘑菇状的礁石。哈利法克斯就在芬迪湾以东、一条狭长深水港湾的岸边。",
     "en-US":
       "Toronto to Halifax flies from the Great Lakes to the Atlantic coast. After take-off come the north shore of Lake Ontario and the dolomite cliff-line of the Niagara Escarpment, then the flat St Lawrence Lowlands — the fertile farm belt between Ontario and Quebec." +
-      "Across the St Lawrence the land begins to roll, into the northern tail of the Appalachian system — long-eroded low mountains and hills, heavily forested." +
-      "Near the end the Bay of Fundy appears on the sea — a funnel-shaped bay reaching inland, whose shape and length resonate with the Atlantic tide, giving it the largest tidal range in the world; at low tide it exposes broad red mud flats and rocks scoured into mushroom shapes. Halifax is east of the bay, on the shore of a long, deep harbour.",
+      " Across the St Lawrence the land begins to roll, into the northern tail of the Appalachian system — long-eroded low mountains and hills, heavily forested." +
+      " Near the end the Bay of Fundy appears on the sea — a funnel-shaped bay reaching inland, whose shape and length resonate with the Atlantic tide, giving it the largest tidal range in the world; at low tide it exposes broad red mud flats and rocks scoured into mushroom shapes. Halifax is east of the bay, on the shore of a long, deep harbour.",
     },
     travel: {
     "zh-CN":
@@ -1386,8 +1386,8 @@ export const ROUTE_NARRATION: Record<
       "哈利法克斯适合作为大西洋省份自驾的起点，往南看佩吉湾灯塔和花岗岩海岸。多数国家公民入境加拿大需提前在线办 eTA 或签证。",
     "en-US":
       "Toronto to Halifax is about an hour and forty minutes; set your clock forward an hour on arrival (Halifax is on Atlantic time). Halifax is milder than inland: cool, foggy summers, with strong wind and rain possible from hurricane remnants in September–October." +
-      "From a window in the later part of the flight you can see the St Lawrence, the low Appalachians and the Bay of Fundy. YHZ airport is about 35 km from the city with an airport bus — plan the transfer time." +
-      "Halifax makes a good start for a drive around Atlantic Canada, south to Peggys Cove for the lighthouse and granite shore. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
+      " From a window in the later part of the flight you can see the St Lawrence, the low Appalachians and the Bay of Fundy. YHZ airport is about 35 km from the city with an airport bus — plan the transfer time." +
+      " Halifax makes a good start for a drive around Atlantic Canada, south to Peggys Cove for the lighthouse and granite shore. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
     },
   },
 
@@ -1399,8 +1399,8 @@ export const ROUTE_NARRATION: Record<
       "岛的内陆是空旷的岩石荒原和无数小湖。圣约翰斯抱着一个几乎被陆地围死的小港湾，只有一条两侧是陡崖的窄水道通向大西洋。",
     "en-US":
       "Halifax to St. John's is a short flight, from Nova Scotia to the far eastern tip of Newfoundland — the easternmost city in North America. Soon after take-off you pass Prince Edward Island: a low, flat island in the Gulf of St Lawrence, its soil a vivid iron-red, its shores red sandstone cliffs and dunes." +
-      "Across the Cabot Strait, the Long Range Mountains rise on the west coast of Newfoundland — the northernmost stretch of the Appalachian system, a plateau of old rock uplifted and then carved by ice into fjords and cliffs (Gros Morne National Park is here, where rock from the Earth's mantle is exposed at the surface)." +
-      "The island's interior is open rocky barrens with countless small lakes. St. John's hugs a nearly landlocked harbour, with only a narrow, cliff-walled channel out to the Atlantic.",
+      " Across the Cabot Strait, the Long Range Mountains rise on the west coast of Newfoundland — the northernmost stretch of the Appalachian system, a plateau of old rock uplifted and then carved by ice into fjords and cliffs (Gros Morne National Park is here, where rock from the Earth's mantle is exposed at the surface)." +
+      " The island's interior is open rocky barrens with countless small lakes. St. John's hugs a nearly landlocked harbour, with only a narrow, cliff-walled channel out to the Atlantic.",
     },
     travel: {
     "zh-CN":
@@ -1409,8 +1409,8 @@ export const ROUTE_NARRATION: Record<
       "岛上景点分散、公交少，租车最方便。多数国家公民入境加拿大需提前在线办 eTA 或签证。",
     "en-US":
       "Halifax to St. John's is about an hour and forty minutes; set your clock forward another hour and a half on arrival (Newfoundland has an unusual half-hour time zone). St. John's is foggy, windy and very changeable — one of the wettest and foggiest cities in Canada — so carry a windproof, waterproof jacket." +
-      "May–June you can see icebergs drifting down from the north, June–July humpback whales and puffins. At the coastal cliffs stay well back from the edge — the wind is strong. Flights are often fog-delayed, so keep the itinerary flexible." +
-      "Attractions on the island are scattered with little transit — a rental car is easiest. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
+      " May–June you can see icebergs drifting down from the north, June–July humpback whales and puffins. At the coastal cliffs stay well back from the edge — the wind is strong. Flights are often fog-delayed, so keep the itinerary flexible." +
+      " Attractions on the island are scattered with little transit — a rental car is easiest. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
     },
   },
 
@@ -1422,8 +1422,8 @@ export const ROUTE_NARRATION: Record<
       "翻过最东边一道山岭（弓河谷的山口），地面骤然下降、展开成开阔的草原，卡尔加里就在落基山脚下、两条河交汇处。",
     "en-US":
       "Vancouver to Calgary crosses the entire Canadian Rockies in a single hour, from the Pacific coast down onto the prairie on the far side. After take-off you cross the Fraser valley and the Coast Mountains, then the rolling interior mountains and dry valleys of British Columbia." +
-      "Mid-flight you reach the main crest of the Canadian Rockies: these mountains are not volcanoes or blocks of granite, but thick layers of limestone and sandstone pushed east and stacked like shingles by thrust faults, so the slopes often show clear horizontal rock lines. Icefields, turquoise glacial lakes and U-shaped valleys are scattered between them, and Banff and Lake Louise are here." +
-      "Over the easternmost ridge (the pass at the head of the Bow valley) the land drops away suddenly into open prairie, and Calgary sits at the foot of the Rockies where two rivers meet.",
+      " Mid-flight you reach the main crest of the Canadian Rockies: these mountains are not volcanoes or blocks of granite, but thick layers of limestone and sandstone pushed east and stacked like shingles by thrust faults, so the slopes often show clear horizontal rock lines. Icefields, turquoise glacial lakes and U-shaped valleys are scattered between them, and Banff and Lake Louise are here." +
+      " Over the easternmost ridge (the pass at the head of the Bow valley) the land drops away suddenly into open prairie, and Calgary sits at the foot of the Rockies where two rivers meet.",
     },
     travel: {
     "zh-CN":
@@ -1432,8 +1432,8 @@ export const ROUTE_NARRATION: Record<
       "冬季山区自驾要冬胎、查山口路况。多数国家公民入境加拿大需提前在线办 eTA 或签证。",
     "en-US":
       "Vancouver to Calgary is about an hour and twenty minutes; set your clock forward an hour on arrival (Calgary is on Mountain time). Vancouver is mild and rainy; Calgary is dry with strong sun, at about a thousand metres, with a warm chinook wind in winter." +
-      "This is a scenic flight, and from a window you look down on the whole line of the Rockies, its snowy ridges and glacial lakes. Calgary is the gateway to Banff National Park, and the airport has a coach straight to Banff." +
-      "Driving in the mountains in winter needs winter tyres and a check of pass conditions. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
+      " This is a scenic flight, and from a window you look down on the whole line of the Rockies, its snowy ridges and glacial lakes. Calgary is the gateway to Banff National Park, and the airport has a coach straight to Banff." +
+      " Driving in the mountains in winter needs winter tyres and a check of pass conditions. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
     },
   },
 
@@ -1445,8 +1445,8 @@ export const ROUTE_NARRATION: Record<
       "接近温尼伯，地面变得极其平坦——那是史前冰川湖阿加西的湖底，比周围还平。温尼伯湖是这个大湖残留的一部分，就在城市北面。温尼伯建在红河与阿西尼博因河交汇处。",
     "en-US":
       "Calgary to Winnipeg is flown almost entirely over the Canadian prairies. Soon after take-off, to the south-east, you can see the badlands the Red Deer River has cut into the plain — the Alberta Badlands, where the river has scoured the soft rock layers into bare earth pillars and mesas, and one of the richest places in North America for dinosaur fossils." +
-      "Then the ground is the endless Interior Plains: gently rolling wheat, canola and ranchland, with square fields and circular irrigation pivots neatly laid out from above; this was the floor of a prehistoric shallow sea, and the rock layers are nearly horizontal." +
-      "Approaching Winnipeg the land becomes extremely flat — the bed of glacial Lake Agassiz, flatter than its surroundings. Lake Winnipeg, north of the city, is a remnant of that lake. Winnipeg sits where the Red and Assiniboine rivers meet.",
+      " Then the ground is the endless Interior Plains: gently rolling wheat, canola and ranchland, with square fields and circular irrigation pivots neatly laid out from above; this was the floor of a prehistoric shallow sea, and the rock layers are nearly horizontal." +
+      " Approaching Winnipeg the land becomes extremely flat — the bed of glacial Lake Agassiz, flatter than its surroundings. Lake Winnipeg, north of the city, is a remnant of that lake. Winnipeg sits where the Red and Assiniboine rivers meet.",
     },
     travel: {
     "zh-CN":
@@ -1455,8 +1455,8 @@ export const ROUTE_NARRATION: Record<
       "若冬天来，防寒装备按 -30°C 准备。多数国家公民入境加拿大需提前在线办 eTA 或签证。",
     "en-US":
       "Calgary to Winnipeg is a bit over two hours; set your clock forward an hour on arrival (Winnipeg is on Central time). Both have a continental prairie climate with a huge annual range: warm summers, and severe cold in winter (a January wind-chill often below −30°C)." +
-      "From a window it is prairie fields almost the whole way. Winnipeg's The Forks and the human-rights museum are worth seeing; in summer there are beaches on Lake Winnipeg, and in winter the northern lights." +
-      "If you come in winter, prepare for −30°C. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
+      " From a window it is prairie fields almost the whole way. Winnipeg's The Forks and the human-rights museum are worth seeing; in summer there are beaches on Lake Winnipeg, and in winter the northern lights." +
+      " If you come in winter, prepare for −30°C. Citizens of most countries need an eTA or a visa arranged online before travelling to Canada.",
     },
   },
 
@@ -1468,8 +1468,8 @@ export const ROUTE_NARRATION: Record<
       "过了温尼伯，绿色的农田戛然而止，换成加拿大地盾：一片被冰川刨光的古老结晶岩台地，湖泊、沼泽和裸岩交错，森林里几乎没有路，从安大略北部一直延伸到魁北克。地盾在安大略湖以北渐渐没入低地，多伦多就在安大略湖北岸的平原上。",
     "en-US":
       "Edmonton to Toronto crosses the prairies and the Shield of Canada to the south-east. On take-off you are over the North Saskatchewan River valley and the Interior Plains — gently rolling wheat and ranchland, the northernmost large farming region in Canada." +
-      "East the land flattens further, into the lake plain of Manitoba, where Lake Winnipeg is a remnant of glacial Lake Agassiz." +
-      "Past Winnipeg the green farmland stops abruptly and gives way to the Canadian Shield: an old platform of crystalline rock planed by ice, a mosaic of lakes, bogs and bare rock, roadless in the forest, running from northern Ontario into Quebec. North of Lake Ontario the Shield sinks under the lowlands, and Toronto is on the plain along the lake's north shore.",
+      " East the land flattens further, into the lake plain of Manitoba, where Lake Winnipeg is a remnant of glacial Lake Agassiz." +
+      " Past Winnipeg the green farmland stops abruptly and gives way to the Canadian Shield: an old platform of crystalline rock planed by ice, a mosaic of lakes, bogs and bare rock, roadless in the forest, running from northern Ontario into Quebec. North of Lake Ontario the Shield sinks under the lowlands, and Toronto is on the plain along the lake's north shore.",
     },
     travel: {
     "zh-CN":
@@ -1478,8 +1478,8 @@ export const ROUTE_NARRATION: Record<
       "多数国家公民入境加拿大需提前在线办 eTA 或签证，落地不能补办。",
     "en-US":
       "Edmonton to Toronto is about three and a half hours, east across two time zones (set your clock forward 2 hours on arrival). Edmonton has long, hard winters and very long summer daylight; Toronto has four clear seasons and muggy summers." +
-      "From a window come, in turn, the prairies, the lakes of Manitoba, and the myriad lakes and forest of the Shield. Edmonton is often used as a hub for going south to the Rockies or north to nature areas." +
-      "Citizens of most countries need an eTA or a visa arranged online before travelling to Canada — this cannot be done on arrival.",
+      " From a window come, in turn, the prairies, the lakes of Manitoba, and the myriad lakes and forest of the Shield. Edmonton is often used as a hub for going south to the Rockies or north to nature areas." +
+      " Citizens of most countries need an eTA or a visa arranged online before travelling to Canada — this cannot be done on arrival.",
     },
   },
 
@@ -1492,9 +1492,9 @@ export const ROUTE_NARRATION: Record<
       "越过英格兰-苏格兰边界，是南部高地：一片平缓的绿色牧羊丘陵。再往北，地面陷成苏格兰的中央地带，爱丁堡就在福斯湾南岸，城堡立在一块火山岩上。",
     "en-US":
       "London to Edinburgh is a short flight that cuts almost straight up England from south to north. After take-off you skim the Chilterns on the northern rim of the Thames valley — a gentle chalk slope that marks the edge of the London basin." +
-      "North are the plains and city belt of the Midlands, and then the ground rises into the Peak District — the southernmost stretch of the Pennines, an upland of limestone and gritstone moor, and England's first national park." +
-      "The Peak District joins the main spine of the Pennines, called 'the backbone of England' — a line of low north–south mountains that divides eastern from western England, its rivers draining to the North Sea and the Irish Sea." +
-      "Over the England–Scotland border are the Southern Uplands: gentle green sheep-farming hills. Farther north the land drops into the Central Belt of Scotland, and Edinburgh is on the south shore of the Firth of Forth, its castle on a plug of volcanic rock.",
+      " North are the plains and city belt of the Midlands, and then the ground rises into the Peak District — the southernmost stretch of the Pennines, an upland of limestone and gritstone moor, and England's first national park." +
+      " The Peak District joins the main spine of the Pennines, called 'the backbone of England' — a line of low north–south mountains that divides eastern from western England, its rivers draining to the North Sea and the Irish Sea." +
+      " Over the England–Scotland border are the Southern Uplands: gentle green sheep-farming hills. Farther north the land drops into the Central Belt of Scotland, and Edinburgh is on the south shore of the Firth of Forth, its castle on a plug of volcanic rock.",
     },
     travel: {
     "zh-CN":
@@ -1503,8 +1503,8 @@ export const ROUTE_NARRATION: Record<
       "英国国内航线安检照做、但不查护照（同属英国）。多数国家公民短期旅游免签或需 ETA，以英国官方最新公布为准。",
     "en-US":
       "London to Edinburgh is about an hour and fifteen minutes, in the same time zone. You can also take the East Coast Main Line train, about 4.5 hours, city centre to city centre, past the coast of eastern England and the North Sea." +
-      "Both have a temperate maritime climate; Edinburgh is cooler and windier. In August the city is packed for the festivals and lodging prices multiply — come specifically for it or avoid it." +
-      "UK domestic flights still have security but no passport check (both are in the UK). Most foreign visitors travel visa-free for short tourism or need an ETA — check the latest UK guidance.",
+      " Both have a temperate maritime climate; Edinburgh is cooler and windier. In August the city is packed for the festivals and lodging prices multiply — come specifically for it or avoid it." +
+      " UK domestic flights still have security but no passport check (both are in the UK). Most foreign visitors travel visa-free for short tourism or need an ETA — check the latest UK guidance.",
     },
   },
 
@@ -1516,8 +1516,8 @@ export const ROUTE_NARRATION: Record<
       "越过英格兰-苏格兰边界，是南部高地的绵延牧羊丘陵。再往北地面陷下去，就是克莱德河所在的苏格兰中央地带，格拉斯哥是这里最大的城市，曾经的造船中心。",
     "en-US":
       "London to Glasgow takes a slightly more westerly track than the flight to Edinburgh. After take-off come the Chiltern chalk hills on the rim of the Thames valley, then the Midlands city belt and the moorland uplands of the Peak District." +
-      "North the route passes the Lake District — the highest ground in England, where glaciers carved deep valleys, ridges and a set of long, narrow lakes out of old volcanic rock and slate, with England's highest peak, Scafell Pike, among them." +
-      "Over the England–Scotland border are the rolling sheep hills of the Southern Uplands. Farther north the land drops into the Central Belt of Scotland on the River Clyde, and Glasgow, once the shipbuilding centre, is its largest city.",
+      " North the route passes the Lake District — the highest ground in England, where glaciers carved deep valleys, ridges and a set of long, narrow lakes out of old volcanic rock and slate, with England's highest peak, Scafell Pike, among them." +
+      " Over the England–Scotland border are the rolling sheep hills of the Southern Uplands. Farther north the land drops into the Central Belt of Scotland on the River Clyde, and Glasgow, once the shipbuilding centre, is its largest city.",
     },
     travel: {
     "zh-CN":
@@ -1526,8 +1526,8 @@ export const ROUTE_NARRATION: Record<
       "英国国内航线不查护照。多数国家公民短期旅游免签或需 ETA。",
     "en-US":
       "London to Glasgow is about an hour and twenty minutes, in the same time zone. The train on the West Coast Main Line is about 4.5 hours. Glasgow is cooler and wetter than London — one of the rainiest big cities in the UK." +
-      "Glasgow's municipal museums are mostly free (Kelvingrove, the Riverside Museum and others). An hour north are Loch Lomond and the southern edge of the Highlands." +
-      "UK domestic flights have no passport check. Most foreign visitors travel visa-free for short tourism or need an ETA.",
+      " Glasgow's municipal museums are mostly free (Kelvingrove, the Riverside Museum and others). An hour north are Loch Lomond and the southern edge of the Highlands." +
+      " UK domestic flights have no passport check. Most foreign visitors travel visa-free for short tourism or need an ETA.",
     },
   },
 
@@ -1539,8 +1539,8 @@ export const ROUTE_NARRATION: Record<
       "凯恩戈姆以北，地面沿一条笔直的谷地——大峡谷（Great Glen）——被断层切开，尼斯湖等几个深湖串在里面。因弗内斯就在尼斯河入海口、大峡谷的东北端。",
     "en-US":
       "London to Inverness flies from south-east England all the way to the northern end of the Scottish Highlands. After take-off come the Chiltern chalk hills and the Midlands plain, then the Pennines — the low spine running up northern England." +
-      "Once over Scotland the land grows noticeably higher and wilder. The route passes the Cairngorms — the largest area of high mountain plateau in Britain, where five peaks over 1,200 m ring a rolling bare tundra of blunt summits, the most Arctic-like environment in the UK, with winter snow and real avalanches." +
-      "North of the Cairngorms the land is sliced along a straight valley — the Great Glen — by a fault, with deep lochs including Loch Ness strung along it. Inverness is at the mouth of the River Ness at the north-eastern end of the Great Glen.",
+      " Once over Scotland the land grows noticeably higher and wilder. The route passes the Cairngorms — the largest area of high mountain plateau in Britain, where five peaks over 1,200 m ring a rolling bare tundra of blunt summits, the most Arctic-like environment in the UK, with winter snow and real avalanches." +
+      " North of the Cairngorms the land is sliced along a straight valley — the Great Glen — by a fault, with deep lochs including Loch Ness strung along it. Inverness is at the mouth of the River Ness at the north-eastern end of the Great Glen.",
     },
     travel: {
     "zh-CN":
@@ -1549,8 +1549,8 @@ export const ROUTE_NARRATION: Record<
       "高地公路多是单车道加会车点，要熟悉会车规则、备足油。英国国内航线不查护照。",
     "en-US":
       "London to Inverness is about an hour and forty minutes, in the same time zone. There is also a sleeper train (the Caledonian Sleeper) overnight from London. Inverness is the gateway to the Highlands, milder than you might expect (warmed by the Gulf Stream) but changeable and windy." +
-      "From Inverness you can drive to the Isle of Skye, Loch Ness and the North Coast 500. From May to September the lowlands have biting midges — take repellent." +
-      "Highland roads are often single-track with passing places — learn the etiquette and keep the tank topped up. UK domestic flights have no passport check.",
+      " From Inverness you can drive to the Isle of Skye, Loch Ness and the North Coast 500. From May to September the lowlands have biting midges — take repellent." +
+      " Highland roads are often single-track with passing places — learn the etiquette and keep the tank topped up. UK domestic flights have no passport check.",
     },
   },
 
@@ -1562,8 +1562,8 @@ export const ROUTE_NARRATION: Record<
       "飞过爱尔兰海，北爱尔兰一侧最先出现的是莫恩山——一片花岗岩的圆顶山，几乎从海边直接拔起。贝尔法斯特就在莫恩山以北、拉甘河汇入贝尔法斯特湾处。",
     "en-US":
       "London to Belfast crosses from south-east England to the north-east of the island of Ireland. After take-off come the Chiltern chalk hills, then the plains of the west Midlands, where the Severn — the longest river in Britain — winds, with a huge tidal range at its mouth." +
-      "Then into Wales and, below, Snowdonia: an old glacier-carved range in north Wales, its highest peak Snowdon (in Welsh, Yr Wyddfa) at 1,085 m, with deep valleys and glacial lakes between the summits." +
-      "Across the Irish Sea, the first thing to appear on the Northern Ireland side is the Mourne Mountains — a cluster of rounded granite domes that rise almost straight from the sea. Belfast is north of the Mournes, where the River Lagan meets Belfast Lough.",
+      " Then into Wales and, below, Snowdonia: an old glacier-carved range in north Wales, its highest peak Snowdon (in Welsh, Yr Wyddfa) at 1,085 m, with deep valleys and glacial lakes between the summits." +
+      " Across the Irish Sea, the first thing to appear on the Northern Ireland side is the Mourne Mountains — a cluster of rounded granite domes that rise almost straight from the sea. Belfast is north of the Mournes, where the River Lagan meets Belfast Lough.",
     },
     travel: {
     "zh-CN":
@@ -1572,8 +1572,8 @@ export const ROUTE_NARRATION: Record<
       "7 月中旬前后有传统游行季，个别地区当天可能有管制或紧张气氛，提前了解、避开相关路线。",
     "en-US":
       "London to Belfast is about an hour and twenty minutes, in the same time zone. Northern Ireland is part of the UK, and the domestic flight has no passport check. Belfast is mild, wet and windy." +
-      "Titanic Belfast, the City Hall, and the Giant's Causeway an hour north are the main draws. Topics touching on history, politics, religion and community belonging are sensitive — it is best not to volunteer opinions." +
-      "Around mid-July there is a traditional marching season, and on the day some areas may have controls or a tense atmosphere — read up in advance and avoid the relevant routes.",
+      " Titanic Belfast, the City Hall, and the Giant's Causeway an hour north are the main draws. Topics touching on history, politics, religion and community belonging are sensitive — it is best not to volunteer opinions." +
+      " Around mid-July there is a traditional marching season, and on the day some areas may have controls or a tense atmosphere — read up in advance and avoid the relevant routes.",
     },
   },
 
@@ -1585,8 +1585,8 @@ export const ROUTE_NARRATION: Record<
       "越过英格兰-苏格兰边界，是南部高地平缓的牧羊丘陵。再往北地面陷成苏格兰中央地带，爱丁堡在福斯湾南岸，城堡立在火山岩上。",
     "en-US":
       "Bristol to Edinburgh flies from south-west England to Scotland. On take-off you are over the wide estuary of the Severn — Britain's longest river reaching the sea here, exposing broad mud flats at low tide, with the occasional tidal wave (the Severn Bore) running up it." +
-      "North are the plains and cities of the west Midlands, then the ground rises into the Pennines — the low spine of northern England, dividing the rivers between the North Sea and the Irish Sea, with peat moor on the tops." +
-      "Over the England–Scotland border are the gentle sheep hills of the Southern Uplands. Farther north the land drops into the Central Belt, and Edinburgh is on the south shore of the Firth of Forth, its castle on volcanic rock.",
+      " North are the plains and cities of the west Midlands, then the ground rises into the Pennines — the low spine of northern England, dividing the rivers between the North Sea and the Irish Sea, with peat moor on the tops." +
+      " Over the England–Scotland border are the gentle sheep hills of the Southern Uplands. Farther north the land drops into the Central Belt, and Edinburgh is on the south shore of the Firth of Forth, its castle on volcanic rock.",
     },
     travel: {
     "zh-CN":
@@ -1595,8 +1595,8 @@ export const ROUTE_NARRATION: Record<
       "英国国内航线不查护照。多数国家公民短期旅游免签或需 ETA。",
     "en-US":
       "Bristol to Edinburgh is about an hour and twenty minutes, in the same time zone. The train needs a change and takes about 6.5 hours. Bristol is warmer and wetter; Edinburgh is cooler and windier." +
-      "In Bristol see the Clifton Suspension Bridge and the SS Great Britain, with Bath an hour east. In Edinburgh see the Old Town and the castle. In August the festivals make the city crowded and expensive." +
-      "UK domestic flights have no passport check. Most foreign visitors travel visa-free for short tourism or need an ETA.",
+      " In Bristol see the Clifton Suspension Bridge and the SS Great Britain, with Bath an hour east. In Edinburgh see the Old Town and the castle. In August the festivals make the city crowded and expensive." +
+      " UK domestic flights have no passport check. Most foreign visitors travel visa-free for short tourism or need an ETA.",
     },
   },
 
@@ -1608,8 +1608,8 @@ export const ROUTE_NARRATION: Record<
       "莫恩山以北是贝尔法斯特所在的低地，被丘陵环抱，拉甘河从这里汇入贝尔法斯特湾。整条航线虽短，却看全了“丘陵—海峡—花岗岩山—河口城市”。",
     "en-US":
       "Edinburgh to Belfast is a short flight across the sea, joining Scotland and Northern Ireland. Soon after take-off come the Southern Uplands — the gentle green sheep hills between Scotland and England, and the side of south-west Scotland that tilts toward the Irish Sea." +
-      "Across the North Channel (at its narrowest, only about 20 km between Scotland and Ireland), the first thing on the Northern Ireland side is the Mourne Mountains: a cluster of rounded granite domes rising almost straight from the sea, the highest hills in this area." +
-      "North of the Mournes is the lowland where Belfast sits, ringed by hills, with the River Lagan flowing into Belfast Lough. Short as it is, the flight takes in the whole sequence — hills, channel, granite mountains, estuary city.",
+      " Across the North Channel (at its narrowest, only about 20 km between Scotland and Ireland), the first thing on the Northern Ireland side is the Mourne Mountains: a cluster of rounded granite domes rising almost straight from the sea, the highest hills in this area." +
+      " North of the Mournes is the lowland where Belfast sits, ringed by hills, with the River Lagan flowing into Belfast Lough. Short as it is, the flight takes in the whole sequence — hills, channel, granite mountains, estuary city.",
     },
     travel: {
     "zh-CN":
@@ -1618,8 +1618,8 @@ export const ROUTE_NARRATION: Record<
       "7 月中旬前后有传统游行季，个别地区当天可能有管制。",
     "en-US":
       "Edinburgh to Belfast is about 50 minutes, in the same time zone, both in the UK, with no passport check. There is also a ferry (Cairnryan–Belfast). Both are mild, wet and windy." +
-      "In Belfast see Titanic Belfast and the City Hall, with the Giant's Causeway an hour north. Topics touching on history, politics and religion are sensitive — don't volunteer opinions." +
-      "Around mid-July there is a traditional marching season, and some areas may have controls on the day.",
+      " In Belfast see Titanic Belfast and the City Hall, with the Giant's Causeway an hour north. Topics touching on history, politics and religion are sensitive — don't volunteer opinions." +
+      " Around mid-July there is a traditional marching season, and some areas may have controls on the day.",
     },
   },
 
@@ -1631,8 +1631,8 @@ export const ROUTE_NARRATION: Record<
       "越过英格兰-苏格兰边界处是切维厄特山——边界上一片浑圆的火山岩丘陵。再往北沿苏格兰东海岸飞，阿伯丁就在迪河与顿河入海处，一座用本地灰花岗岩盖起来的港口城市。",
     "en-US":
       "London to Aberdeen runs north up the east coast of England and Scotland. After take-off come the Chiltern chalk hills, then eastern England — an extremely flat lowland including The Fens, once shallow sea and marsh, drained into farmland near or below sea level, with dead-straight drains and channels." +
-      "North, on the eastern side of Yorkshire, the coast lifts into a heather moor — the North York Moors — right against the cliffs of the North Sea." +
-      "On the England–Scotland border are the Cheviot Hills — rounded hills of volcanic rock along the boundary. Flying on up the east coast of Scotland, Aberdeen sits where the Dee and the Don reach the sea, a port city built of local grey granite.",
+      " North, on the eastern side of Yorkshire, the coast lifts into a heather moor — the North York Moors — right against the cliffs of the North Sea." +
+      " On the England–Scotland border are the Cheviot Hills — rounded hills of volcanic rock along the boundary. Flying on up the east coast of Scotland, Aberdeen sits where the Dee and the Don reach the sea, a port city built of local grey granite.",
     },
     travel: {
     "zh-CN":
@@ -1641,8 +1641,8 @@ export const ROUTE_NARRATION: Record<
       "石油行业会展期间酒店紧张。英国国内航线不查护照。",
     "en-US":
       "London to Aberdeen is about an hour and a half, in the same time zone. The train on the East Coast Main Line is about 7 hours. Aberdeen is colder and windier than England, with winter sea fog (locally, 'haar') that can affect flights." +
-      "Aberdeen is the North Sea oil city, and its airport is a busy heliport too. Seeing the castles and Balmoral area of Royal Deeside out of town usually needs a car or a tour." +
-      "Hotels are tight during oil-industry conferences. UK domestic flights have no passport check.",
+      " Aberdeen is the North Sea oil city, and its airport is a busy heliport too. Seeing the castles and Balmoral area of Royal Deeside out of town usually needs a car or a tour." +
+      " Hotels are tight during oil-industry conferences. UK domestic flights have no passport check.",
     },
   },
 
@@ -1654,8 +1654,8 @@ export const ROUTE_NARRATION: Record<
       "越过高地北缘，地面陷成一条条南北向的深谷，其中最长的埃亚峡湾一直伸向北冰洋方向，阿克雷里就在峡湾尽头、三面雪山环抱处。",
     "en-US":
       "Reykjavík to Akureyri is Iceland's main domestic route, from the south-western capital area to the 'capital of the north', crossing the uninhabitable central highland. Soon after take-off a clear zone of fissures appears below — Þingvellir, where the North American and Eurasian plates are pulled apart, the ground split into parallel rifts around Iceland's largest natural lake." +
-      "North you enter the central highland: a grey-black volcanic desert with almost no vegetation, where a few gentle ice caps lie like white shields — first Langjökull, then Hofsjökull at the very centre of Iceland. Between the ice caps are lava, volcanic gravel and braided rivers of meltwater." +
-      "Over the northern edge of the highland the land drops into deep north–south valleys, the longest of which, Eyjafjörður, reaches toward the Arctic. Akureyri is at its head, ringed on three sides by snow mountains.",
+      " North you enter the central highland: a grey-black volcanic desert with almost no vegetation, where a few gentle ice caps lie like white shields — first Langjökull, then Hofsjökull at the very centre of Iceland. Between the ice caps are lava, volcanic gravel and braided rivers of meltwater." +
+      " Over the northern edge of the highland the land drops into deep north–south valleys, the longest of which, Eyjafjörður, reaches toward the Arctic. Akureyri is at its head, ringed on three sides by snow mountains.",
     },
     travel: {
     "zh-CN":
@@ -1664,8 +1664,8 @@ export const ROUTE_NARRATION: Record<
       "冰岛属申根区，多数国家公民短期旅游免签或按申根规定办理。冬季山口自驾要冬胎、查 road.is。",
     "en-US":
       "Reykjavík to Akureyri is about 45 minutes, in the same time zone. Domestic flights use the city's RKV airport (not the international Keflavík, KEF). You can also drive the Ring Road, about 5 hours." +
-      "Akureyri is the centre of the north, milder than you might expect (at the head of a long fjord), snowy in winter and a ski area. From it you can reach the Mývatn geothermal area, Goðafoss and Dettifoss within an hour, and whale watching at Húsavík is nearby." +
-      "Iceland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Driving mountain passes in winter needs winter tyres and a check of road.is.",
+      " Akureyri is the centre of the north, milder than you might expect (at the head of a long fjord), snowy in winter and a ski area. From it you can reach the Mývatn geothermal area, Goðafoss and Dettifoss within an hour, and whale watching at Húsavík is nearby." +
+      " Iceland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Driving mountain passes in winter needs winter tyres and a check of road.is.",
     },
   },
 
@@ -1677,8 +1677,8 @@ export const ROUTE_NARRATION: Record<
       "越过冰原，地面陷成东部的峡湾和河谷，埃伊尔斯塔济在一条细长的湖边、冰岛少有的大片林地旁。",
     "en-US":
       "Reykjavík to Egilsstaðir flies from the south-western capital area to the eastern fjords, one of the longest domestic routes in Iceland. After take-off you cross the plate rift at Þingvellir, then enter the volcanic desert of the central highland." +
-      "Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, the largest glacier in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
-      "Over the ice cap the land drops into the eastern fjords and valleys, and Egilsstaðir is by a long, thin lake beside one of Iceland's rare large areas of woodland.",
+      " Mid-flight the route passes Hofsjökull at the very centre of Iceland — a round, shield-shaped ice cap over a volcano. Farther south-east, below, is the northern edge of Vatnajökull, the largest glacier in Europe: an endless white plateau, with glacier tongues reaching into black valleys from its edge, and active volcanoes (such as Grímsvötn) under the ice." +
+      " Over the ice cap the land drops into the eastern fjords and valleys, and Egilsstaðir is by a long, thin lake beside one of Iceland's rare large areas of woodland.",
     },
     travel: {
     "zh-CN":
@@ -1687,8 +1687,8 @@ export const ROUTE_NARRATION: Record<
       "东部景点车程长、加油站少，随时留意油量。93 号公路冬季多雪多雾。",
     "en-US":
       "Reykjavík to Egilsstaðir is about an hour, in the same time zone, using the city's RKV airport. Driving the Ring Road to the east takes 8–9 hours, so flying is popular." +
-      "The east is the most sparsely populated and 'remote'-feeling corner of Iceland. From Egilsstaðir you can go over the mountains to Seyðisfjörður with its rainbow street, drive the eastern fjords, or head two hours north to Dettifoss and Mývatn." +
-      "Distances between eastern sights are long and petrol stations few — watch the fuel gauge. Route 93 has snow and fog in winter.",
+      " The east is the most sparsely populated and 'remote'-feeling corner of Iceland. From Egilsstaðir you can go over the mountains to Seyðisfjörður with its rainbow street, drive the eastern fjords, or head two hours north to Dettifoss and Mývatn." +
+      " Distances between eastern sights are long and petrol stations few — watch the fuel gauge. Route 93 has snow and fog in winter.",
     },
   },
 
@@ -1700,8 +1700,8 @@ export const ROUTE_NARRATION: Record<
       "过了半岛，就是西部峡湾：冰岛最古老的一块陆地，被无数深峡湾和陡峭的平顶山切碎，山几乎从海里垂直升起。伊萨菲厄泽藏在一条峡湾里、一个 L 形的沙嘴上，机场的进近以“难”著称，只有一条路进出。",
     "en-US":
       "Reykjavík to Ísafjörður flies from the capital to the most remote corner of Iceland — the Westfjords in the north-west. After take-off you head north-west across Faxaflói bay." +
-      "From the bay's north shore a long, thin peninsula reaches out, ending in Snæfellsjökull — a near-perfect cone of a volcano with an ice cap on top, visible from far away in good weather. This is the mountain Jules Verne used as the entrance in 'Journey to the Centre of the Earth'." +
-      "Past the peninsula are the Westfjords: the oldest land in Iceland, cut into pieces by countless deep fjords and steep flat-topped mountains that rise almost vertically from the sea. Ísafjörður hides in a fjord on an L-shaped spit, its airport approach notoriously difficult, with a single road in and out.",
+      " From the bay's north shore a long, thin peninsula reaches out, ending in Snæfellsjökull — a near-perfect cone of a volcano with an ice cap on top, visible from far away in good weather. This is the mountain Jules Verne used as the entrance in 'Journey to the Centre of the Earth'." +
+      " Past the peninsula are the Westfjords: the oldest land in Iceland, cut into pieces by countless deep fjords and steep flat-topped mountains that rise almost vertically from the sea. Ísafjörður hides in a fjord on an L-shaped spit, its airport approach notoriously difficult, with a single road in and out.",
     },
     travel: {
     "zh-CN":
@@ -1710,8 +1710,8 @@ export const ROUTE_NARRATION: Record<
       "看拉特拉尔角的海鹦、进霍恩斯特兰迪无人区都只在夏季。丁坚地瀑布是这一带的标志。",
     "en-US":
       "Reykjavík to Ísafjörður is about 40 minutes, in the same time zone, using the city's RKV airport. By road on the winding Westfjords roads it is 5–6 hours." +
-      "The Westfjords are the wildest, least-visited part of Iceland, with few roads, many tunnels, and often snowed in during winter. Ísafjörður's airport cancels flights in bad weather, so keep the itinerary flexible." +
-      "Puffins at Látrabjarg and the uninhabited Hornstrandir reserve are summer only. The Dynjandi waterfall is the emblem of this area.",
+      " The Westfjords are the wildest, least-visited part of Iceland, with few roads, many tunnels, and often snowed in during winter. Ísafjörður's airport cancels flights in bad weather, so keep the itinerary flexible." +
+      " Puffins at Látrabjarg and the uninhabited Hornstrandir reserve are summer only. The Dynjandi waterfall is the emblem of this area.",
     },
   },
 
@@ -1723,8 +1723,8 @@ export const ROUTE_NARRATION: Record<
       "接近赫本，冰原边缘出现一个连着海的泻湖，里面漂满淡蓝色的浮冰——杰古沙龙冰河湖，冰是从冰川舌上崩落、顺水流向大海的。赫本就在冰原对面、一处潟湖口的沙嘴上。",
     "en-US":
       "Reykjavík to Höfn runs almost entirely along Iceland's south coast, a 'waterfalls–volcanoes–glaciers' scenic line. After take-off you head east, first past Hekla — one of the most frequently erupting volcanoes in Iceland's history, which medieval Europeans called the 'gateway to Hell', its body a long volcanic ridge." +
-      "South-east the ground grows whiter: Vatnajökull, the largest glacier in Europe, covering about an eighth of Iceland, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
-      "Approaching Höfn, a lagoon connected to the sea appears at the ice edge, full of pale blue floes — Jökulsárlón, where ice breaks off the glacier tongue and drifts to the sea. Höfn is opposite the ice cap, on a spit at the mouth of a lagoon.",
+      " South-east the ground grows whiter: Vatnajökull, the largest glacier in Europe, covering about an eighth of Iceland, with glacier tongues reaching into the outwash plains (sandur) from its edge." +
+      " Approaching Höfn, a lagoon connected to the sea appears at the ice edge, full of pale blue floes — Jökulsárlón, where ice breaks off the glacier tongue and drifts to the sea. Höfn is opposite the ice cap, on a spit at the mouth of a lagoon.",
     },
     travel: {
     "zh-CN":
@@ -1733,8 +1733,8 @@ export const ROUTE_NARRATION: Record<
       "冬季东南段公路遇大风会封，查 road.is 和 vedur.is。",
     "en-US":
       "Reykjavík to Höfn is about 50 minutes, in the same time zone, using the city's RKV airport. Driving the south coast to Höfn is about 6 hours (with many waterfalls, black beaches and glaciers on the way — many people take two days)." +
-      "Höfn is the gateway to Jökulsárlón, Diamond Beach and Vatnajökull National Park. For glacier hikes and winter blue ice caves always go with a certified guide and never go onto the ice alone. The floes and tides at the lagoon are dangerous." +
-      "In winter the south-east road closes for strong wind — check road.is and vedur.is.",
+      " Höfn is the gateway to Jökulsárlón, Diamond Beach and Vatnajökull National Park. For glacier hikes and winter blue ice caves always go with a certified guide and never go onto the ice alone. The floes and tides at the lagoon are dangerous." +
+      " In winter the south-east road closes for strong wind — check road.is and vedur.is.",
     },
   },
 
@@ -1746,8 +1746,8 @@ export const ROUTE_NARRATION: Record<
       "过了这一带，地面转为东部的高地和河谷，埃伊尔斯塔济就在拉加尔湖畔。",
     "en-US":
       "Akureyri to Egilsstaðir is a short northern regional hop on a small propeller aircraft, flying low over one of the most active volcanic areas in Iceland. After take-off you head east and soon reach Mývatn — a shallow lake full of volcanic features of every shape: pseudocraters, lava pillars, and still-steaming geothermal fields around it." +
-      "Just east of Mývatn is the Krafla volcano: an area of caldera and fissure eruptions that erupted almost continuously for a decade in the 1970s–80s, and where you can still see fresh black lava with no grass yet and a bright green crater lake." +
-      "Past this area the land becomes the eastern highland and valleys, and Egilsstaðir is on Lagarfljót.",
+      " Just east of Mývatn is the Krafla volcano: an area of caldera and fissure eruptions that erupted almost continuously for a decade in the 1970s–80s, and where you can still see fresh black lava with no grass yet and a bright green crater lake." +
+      " Past this area the land becomes the eastern highland and valleys, and Egilsstaðir is on Lagarfljót.",
     },
     travel: {
     "zh-CN":
@@ -1756,8 +1756,8 @@ export const ROUTE_NARRATION: Record<
       "冬季这条线路况差、航班少，多数人夏季来、自驾串米湖和黛提瀑布。",
     "en-US":
       "Akureyri to Egilsstaðir is about 30 minutes, flown by Norlandair on a small aircraft with infrequent service. Driving the northern Ring Road is about 2.5 hours (with Goðafoss, Mývatn and Dettifoss on the way — worth taking slowly)." +
-      "The Mývatn area has swarms of biting midges in summer — take a head net and repellent. In geothermal areas stay strictly on the paths; the crust is thin and scalding." +
-      "In winter this route has poor road conditions and few flights, and most people come in summer and drive the Mývatn–Dettifoss stretch.",
+      " The Mývatn area has swarms of biting midges in summer — take a head net and repellent. In geothermal areas stay strictly on the paths; the crust is thin and scalding." +
+      " In winter this route has poor road conditions and few flights, and most people come in summer and drive the Mývatn–Dettifoss stretch.",
     },
   },
 
@@ -1769,8 +1769,8 @@ export const ROUTE_NARRATION: Record<
       "越过高地北缘，地面陷成一条条南北向的深谷和峡湾。胡萨维克就在斯基亚尔万迪湾东岸，一个背靠低山的小渔港，外海食物丰富，夏季常有座头鲸。",
     "en-US":
       "Reykjavík to Húsavík flies from the capital to the northern whale-watching town, on a track much like the one to Akureyri, crossing the central highland. After take-off you pass the plate rift at Þingvellir, then enter the volcanic desert." +
-      "The route passes Langjökull and Hofsjökull at the very centre of Iceland — two round, shield-shaped ice caps, with grey-black lava and volcanic gravel between them, almost lifeless. This highland has gravel roads (F-roads) only in summer and is completely closed in winter." +
-      "Over the northern edge of the highland the land drops into fjords, and Húsavík is on the eastern shore of Skjálfandi Bay, a small fishing town backed by low hills.",
+      " The route passes Langjökull and Hofsjökull at the very centre of Iceland — two round, shield-shaped ice caps, with grey-black lava and volcanic gravel between them, almost lifeless. This highland has gravel roads (F-roads) only in summer and is completely closed in winter." +
+      " Over the northern edge of the highland the land drops into fjords, and Húsavík is on the eastern shore of Skjálfandi Bay, a small fishing town backed by low hills.",
     },
     travel: {
     "zh-CN":
@@ -1779,8 +1779,8 @@ export const ROUTE_NARRATION: Record<
       "镇上还有 GeoSea 海崖温泉。往南可跑“钻石环线”：上帝瀑布、米湖、黛提瀑布、Ásbyrgi 峡谷。",
     "en-US":
       "Reykjavík to Húsavík is about 45 minutes, flown by Norlandair with infrequent service; most people fly or drive to Akureyri first and then drive an hour to Húsavík." +
-      "Húsavík is called the 'whale-watching capital of Europe', with reliable humpback sightings June–August. It is cold on the boat — bring a windproof, waterproof jacket, and take seasickness medication in advance." +
-      "The town also has the GeoSea cliff baths. South you can drive the 'Diamond Circle': Goðafoss, Mývatn, Dettifoss and the Ásbyrgi canyon.",
+      " Húsavík is called the 'whale-watching capital of Europe', with reliable humpback sightings June–August. It is cold on the boat — bring a windproof, waterproof jacket, and take seasickness medication in advance." +
+      " The town also has the GeoSea cliff baths. South you can drive the 'Diamond Circle': Goðafoss, Mývatn, Dettifoss and the Ásbyrgi canyon.",
     },
   },
 
@@ -1793,9 +1793,9 @@ export const ROUTE_NARRATION: Record<
       "翻过主脊，气候和植被立刻变了：南坡是温暖湿润的提契诺，出现栗树和棕榈。马焦雷湖和卢加诺湖是几条伸进意大利的狭长湖，卢加诺就在湖湾里、两座锥形山之间。",
     "en-US":
       "Zürich to Lugano is a short flight that cuts across the whole Alpine chain from north to south, from the German-speaking region to the Italian-speaking one. After take-off you skim Lake Zürich — a long, curving lake gouged by a glacier, its shores the wealthy 'Gold Coast'." +
-      "South you soon reach Lake Lucerne: a very irregular lake hemmed in by steep walls, around which the first cantons of the Swiss confederation lay." +
-      "Then the ground rises sharply into the main Alpine crest, where the Gotthard Massif is key — a watershed of Europe, where the Rhône, the Rhine and the Ticino all rise, historically a vital pass between northern and southern Europe, and now with the world's longest rail tunnel (the Gotthard Base Tunnel, about 57 km) beneath it." +
-      "Over the crest the climate and vegetation change at once: the southern slope is warm, humid Ticino, with chestnut trees and palms. Lake Maggiore and Lake Lugano are long lakes reaching into Italy, and Lugano is in a bend of its lake between two conical mountains.",
+      " South you soon reach Lake Lucerne: a very irregular lake hemmed in by steep walls, around which the first cantons of the Swiss confederation lay." +
+      " Then the ground rises sharply into the main Alpine crest, where the Gotthard Massif is key — a watershed of Europe, where the Rhône, the Rhine and the Ticino all rise, historically a vital pass between northern and southern Europe, and now with the world's longest rail tunnel (the Gotthard Base Tunnel, about 57 km) beneath it." +
+      " Over the crest the climate and vegetation change at once: the southern slope is warm, humid Ticino, with chestnut trees and palms. Lake Maggiore and Lake Lugano are long lakes reaching into Italy, and Lugano is in a bend of its lake between two conical mountains.",
     },
     travel: {
     "zh-CN":
@@ -1804,8 +1804,8 @@ export const ROUTE_NARRATION: Record<
       "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Zürich to Lugano is about 40 minutes, same time zone, same country. In fact Switzerland has almost no scheduled domestic flights — the train is so convenient: about 2 hours through the Gotthard Base Tunnel, usually cheaper than flying, and with far better scenery on the old mountain line (the Gotthard Panorama Express)." +
-      "Lugano is Italian-speaking and mild, the rare place in Switzerland to sit in the sun, eat pasta and see palm trees, and a good southern base after crossing the Alps." +
-      "Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Lugano is Italian-speaking and mild, the rare place in Switzerland to sit in the sun, eat pasta and see palm trees, and a good southern base after crossing the Alps." +
+      " Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -1817,8 +1817,8 @@ export const ROUTE_NARRATION: Record<
       "接近终点，出现一个巨大的新月形湖——日内瓦湖（法语 Lac Léman），是阿尔卑斯北缘最大的湖，罗讷河从东端流入、西端的日内瓦流出。城市几乎被法国领土包住，湖对岸远处是勃朗峰。",
     "en-US":
       "Zürich to Geneva links Switzerland's two largest cities, flown almost entirely over the 'Swiss Plateau' north of the Alps — where the country's population, cities and farmland are concentrated, in this belt of hills and lakes running north-east to south-west." +
-      "After take-off you pass the lake-and-mountain junction around Lake Lucerne, then the typical plateau landscape: patchwork pasture and wheat fields, scattered towns, a few medium lakes (Biel, Neuchâtel), with the wall of the Alps to the south." +
-      "Near the end a huge crescent lake appears — Lake Geneva (Lac Léman), the largest lake on the northern edge of the Alps, with the Rhône flowing in at the east end and out at Geneva in the west. The city is almost surrounded by French territory, and Mont Blanc is visible in the distance across the lake.",
+      " After take-off you pass the lake-and-mountain junction around Lake Lucerne, then the typical plateau landscape: patchwork pasture and wheat fields, scattered towns, a few medium lakes (Biel, Neuchâtel), with the wall of the Alps to the south." +
+      " Near the end a huge crescent lake appears — Lake Geneva (Lac Léman), the largest lake on the northern edge of the Alps, with the Rhône flowing in at the east end and out at Geneva in the west. The city is almost surrounded by French territory, and Mont Blanc is visible in the distance across the lake.",
     },
     travel: {
     "zh-CN":
@@ -1827,8 +1827,8 @@ export const ROUTE_NARRATION: Record<
       "机场取行李处可领 80 分钟市内交通票，住宿通常送交通卡。",
     "en-US":
       "Zürich to Geneva is about 45 minutes, in the same time zone. Domestic travel in Switzerland is essentially by train (about 2 hours 45 minutes, direct, city centre to city centre), and SWISS flies this route mainly for connecting passengers." +
-      "Zürich is German-speaking and Geneva French-speaking, with slightly different lifestyles, and English works in both. Geneva has many international organisations and high prices even for Switzerland, and many museums are free on the first Sunday of the month." +
-      "At baggage claim you can collect an 80-minute transit ticket, and accommodation usually includes a transport card.",
+      " Zürich is German-speaking and Geneva French-speaking, with slightly different lifestyles, and English works in both. Geneva has many international organisations and high prices even for Switzerland, and many museums are free on the first Sunday of the month." +
+      " At baggage claim you can collect an 80-minute transit ticket, and accommodation usually includes a transport card.",
     },
   },
 
@@ -1841,9 +1841,9 @@ export const ROUTE_NARRATION: Record<
       "越过圣哥达山块（欧洲的分水岭、戈特哈德基线隧道所在），气候突然转暖，进入说意大利语的提契诺，栗树和棕榈出现，卢加诺就在一个伸向意大利的狭长湖畔。",
     "en-US":
       "Geneva to Lugano flies from the far south-west of Switzerland to the far south-east, almost entirely along the main Alpine crest — the most spectacular of these routes. After take-off you follow the north shore of Lake Geneva, lined by the terraced Lavaux vineyards, their stone walls climbing from the water up the hillside." +
-      "East into the mountains, below are the Bernese Alps: the Jungfrau, the Mönch and the Eiger in a row of snow peaks, with waterfalls hanging in the valleys (the Lauterbrunnen valley)." +
-      "Farther east is the Aletsch Glacier — the longest glacier in the Alps, about 20 km, where three firn streams meet at 'Konkordiaplatz' to form one broad river of ice flowing slowly south." +
-      "Over the Gotthard Massif (a watershed of Europe, and the site of the Gotthard Base Tunnel) the climate suddenly warms into Italian-speaking Ticino, with chestnut trees and palms, and Lugano lies on a long lake reaching toward Italy.",
+      " East into the mountains, below are the Bernese Alps: the Jungfrau, the Mönch and the Eiger in a row of snow peaks, with waterfalls hanging in the valleys (the Lauterbrunnen valley)." +
+      " Farther east is the Aletsch Glacier — the longest glacier in the Alps, about 20 km, where three firn streams meet at 'Konkordiaplatz' to form one broad river of ice flowing slowly south." +
+      " Over the Gotthard Massif (a watershed of Europe, and the site of the Gotthard Base Tunnel) the climate suddenly warms into Italian-speaking Ticino, with chestnut trees and palms, and Lugano lies on a long lake reaching toward Italy.",
     },
     travel: {
     "zh-CN":
@@ -1852,8 +1852,8 @@ export const ROUTE_NARRATION: Record<
       "瑞士属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Geneva to Lugano is about 50 minutes, in the same time zone. The train on this route needs changes and takes about 5 hours, so this is one of the few Swiss domestic flights that makes some sense." +
-      "Flying from the French-speaking region to the Italian-speaking one, the climate and feel change: Lugano is mild, relaxed and more 'Italian'. From it you can visit Bellinzona and its three World Heritage castles, or take a boat on Lake Lugano." +
-      "Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Flying from the French-speaking region to the Italian-speaking one, the climate and feel change: Lugano is mild, relaxed and more 'Italian'. From it you can visit Bellinzona and its three World Heritage castles, or take a boat on Lake Lugano." +
+      " Switzerland is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -1865,8 +1865,8 @@ export const ROUTE_NARRATION: Record<
       "越过最后一道山地，卑尔根出现在七座山环抱的一个小海湾里，背后就是通往外海的峡湾口。",
     "en-US":
       "Oslo to Bergen is Norway's busiest domestic route, linking the eastern capital with the western fjord region, and follows much the same line as the Bergen Railway. After take-off you cross the eastern forests and farmland, then the ground rises sharply into the Hardangervidda — one of the largest high mountain plateaus in Europe, averaging over 1,100 m, almost treeless, just tundra, lakes and reindeer, snow-covered most of the year." +
-      "Over the western edge of the plateau the land drops into a deep fjord, the Hardangerfjord — Norway's second-longest — its shores lined with orchards and waterfalls, and the white edge of the Folgefonna ice cap visible deep in the fjord." +
-      "Over one last stretch of mountains, Bergen appears in a small bay ringed by seven mountains, with the fjord mouth to the open sea behind it.",
+      " Over the western edge of the plateau the land drops into a deep fjord, the Hardangerfjord — Norway's second-longest — its shores lined with orchards and waterfalls, and the white edge of the Folgefonna ice cap visible deep in the fjord." +
+      " Over one last stretch of mountains, Bergen appears in a small bay ringed by seven mountains, with the fjord mouth to the open sea behind it.",
     },
     travel: {
     "zh-CN":
@@ -1875,8 +1875,8 @@ export const ROUTE_NARRATION: Record<
       "卑尔根常作为峡湾游轮和西海岸自驾的起点，往 Hardangerfjord 方向可顺路看瀑布和果园。挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Oslo to Bergen is about 55 minutes, in the same time zone. You can also take the Bergen Railway (about 6.5 hours, a world-famous scenic line, with a change at Myrdal for the Flåm Railway) — many people fly one way and take the train the other." +
-      "Oslo has four clear seasons with not-extreme winter snow; Bergen is very wet, with about 240 rainy days a year — carry a waterproof jacket." +
-      "Bergen is often the starting point for fjord cruises and west-coast road trips, and the Hardangerfjord road passes waterfalls and orchards. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Oslo has four clear seasons with not-extreme winter snow; Bergen is very wet, with about 240 rainy days a year — carry a waterproof jacket." +
+      " Bergen is often the starting point for fjord cruises and west-coast road trips, and the Hardangerfjord road passes waterfalls and orchards. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -1888,8 +1888,8 @@ export const ROUTE_NARRATION: Record<
       "翻过多夫勒山，地面下降进入特伦德拉格的低地，特隆赫姆就在尼德河汇入特隆赫姆峡湾处。",
     "en-US":
       "Oslo to Trondheim flies along a historic north–south corridor through central Norway, the same line followed by the Gudbrandsdalen railway and the E6 road. After take-off you pass Mjøsa, Norway's largest lake, then enter Gudbrandsdalen: a long, narrow valley along a geological fault, farms and forest on either side." +
-      "To the east of the valley is Rondane — a cluster of rounded old peaks, one of Norway's first national parks. Flying on north, the valley narrows and rises, finally merging into Dovrefjell: an open high mountain plateau, home to musk oxen (introduced from Greenland in the late 19th century, one of the last wild populations on mainland Europe)." +
-      "Over Dovrefjell the land drops into the Trøndelag lowlands, and Trondheim is where the Nidelva meets the Trondheimsfjord.",
+      " To the east of the valley is Rondane — a cluster of rounded old peaks, one of Norway's first national parks. Flying on north, the valley narrows and rises, finally merging into Dovrefjell: an open high mountain plateau, home to musk oxen (introduced from Greenland in the late 19th century, one of the last wild populations on mainland Europe)." +
+      " Over Dovrefjell the land drops into the Trøndelag lowlands, and Trondheim is where the Nidelva meets the Trondheimsfjord.",
     },
     travel: {
     "zh-CN":
@@ -1898,8 +1898,8 @@ export const ROUTE_NARRATION: Record<
       "多夫勒山一带看到麝牛要保持距离（它们体型大、可能有攻击性），别靠近拍照。挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Oslo to Trondheim is about 55 minutes, in the same time zone. You can also take the Dovre Line train (about 7 hours, through exactly the valleys and plateau seen from the air)." +
-      "Trondheim is further north than Oslo but moderated by the fjord, so neither winter nor summer is extreme. From Trondheim you can continue north on the Nordland Line train to Bodø, crossing the Arctic Circle." +
-      "If you see musk oxen around Dovrefjell, keep your distance — they are large and can be aggressive, so don't approach for photos. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Trondheim is further north than Oslo but moderated by the fjord, so neither winter nor summer is extreme. From Trondheim you can continue north on the Nordland Line train to Bodø, crossing the Arctic Circle." +
+      " If you see musk oxen around Dovrefjell, keep your distance — they are large and can be aggressive, so don't approach for photos. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -1911,8 +1911,8 @@ export const ROUTE_NARRATION: Record<
       "斯塔万格就在峡湾外侧、一片被岛屿和浅海包围的半岛上，城外是南部典型的低缓耶伦农业平原。",
     "en-US":
       "Oslo to Stavanger flies from the capital to the oil capital, a route that crosses mountains and hugs the coast. After take-off you cross the eastern lowlands, then the southern edge of the Hardangervidda — the same high plateau, here nearer its southern end." +
-      "Near the end, the Lysefjord appears below — a narrow, straight fjord with near-vertical granite walls, above which hang two famous rocks: the almost-horizontal ledge known as Preikestolen (Pulpit Rock), and Kjeragbolten, a boulder wedged in a crack." +
-      "Stavanger sits outside the fjord, on a peninsula surrounded by islands and shallow sea, with the low, flat farmland of Jæren beyond the city.",
+      " Near the end, the Lysefjord appears below — a narrow, straight fjord with near-vertical granite walls, above which hang two famous rocks: the almost-horizontal ledge known as Preikestolen (Pulpit Rock), and Kjeragbolten, a boulder wedged in a crack." +
+      " Stavanger sits outside the fjord, on a peninsula surrounded by islands and shallow sea, with the low, flat farmland of Jæren beyond the city.",
     },
     travel: {
     "zh-CN":
@@ -1921,8 +1921,8 @@ export const ROUTE_NARRATION: Record<
       "挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Oslo to Stavanger is about 50 minutes, in the same time zone. You can also take the Sørland Line train (about 8 hours, a roundabout route)." +
-      "Stavanger is the oil-industry centre, with prices and wages on the high side even for Norway. From Stavanger, a boat to the Lysefjord to hike Preikestolen is popular — going early in peak season means fewer people; mind your footwear and fitness." +
-      "Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Stavanger is the oil-industry centre, with prices and wages on the high side even for Norway. From Stavanger, a boat to the Lysefjord to hike Preikestolen is popular — going early in peak season means fewer people; mind your footwear and fitness." +
+      " Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -1934,8 +1934,8 @@ export const ROUTE_NARRATION: Record<
       "越过北极圈，海面上出现罗弗敦群岛——一道由尖峭山峰组成的“墙”，从海里陡然升起，是挪威最上镜的风景之一。特罗姆瑟就在再往北的一座峡湾中的小岛上。",
     "en-US":
       "Oslo to Tromsø flies nearly the full length of Norway, from the capital to well north of the Arctic Circle. After take-off you cross the high plateau of Dovrefjell — a major watershed of the country." +
-      "Flying on north, you reach the coastal mountains of Nordland: rows of sharp granite peaks rising almost straight from the sea, with the Svartisen ice cap — the second-largest on mainland Norway — capping the summits here, its glacier tongues reaching down almost to sea level." +
-      "Over the Arctic Circle the Lofoten Islands appear on the sea — a 'wall' of jagged peaks rising sheer from the water, one of Norway's most photographed landscapes. Tromsø is farther north still, on a small island in a fjord.",
+      " Flying on north, you reach the coastal mountains of Nordland: rows of sharp granite peaks rising almost straight from the sea, with the Svartisen ice cap — the second-largest on mainland Norway — capping the summits here, its glacier tongues reaching down almost to sea level." +
+      " Over the Arctic Circle the Lofoten Islands appear on the sea — a 'wall' of jagged peaks rising sheer from the water, one of Norway's most photographed landscapes. Tromsø is farther north still, on a small island in a fjord.",
     },
     travel: {
     "zh-CN":
@@ -1944,8 +1944,8 @@ export const ROUTE_NARRATION: Record<
       "看极光建议留 3–4 晚以上、跟机动向导追晴天。挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Oslo to Tromsø is about 1 hour 50 minutes, in the same time zone. This distance crosses most of Norway by land, so flying is the practical choice." +
-      "Tromsø's winter is far milder than the latitude suggests (moderated by the warm current) but still windy and snowy; late September to March is aurora season, mid-May to mid-July the midnight sun." +
-      "For the aurora, allow at least 3–4 nights and go with a mobile guide chasing clear skies. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Tromsø's winter is far milder than the latitude suggests (moderated by the warm current) but still windy and snowy; late September to March is aurora season, mid-May to mid-July the midnight sun." +
+      " For the aurora, allow at least 3–4 nights and go with a mobile guide chasing clear skies. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -1957,8 +1957,8 @@ export const ROUTE_NARRATION: Record<
       "接近博德，海面出现群岛，博德本身建在一个伸进海里的半岛上，城南就是萨尔特海峡的大漩涡。",
     "en-US":
       "Trondheim to Bodø continues north along the Nordland coast, crossing the Arctic Circle, on the same route as the Nordland railway (just much faster by air). After take-off you follow the coastline, the tail of the Scandinavian Mountains to the right, the Norwegian Sea to the left." +
-      "Mid-flight the route passes Svartisen — the second-largest ice cap on mainland Norway — and from the air you can see several glacier tongues flowing from the main ice cap toward the fjords, their ends already close to sea level. This area is right around the Arctic Circle, a transition zone where both the summer midnight sun and the winter aurora can be seen." +
-      "Approaching Bodø, islands appear on the sea, and Bodø itself is built on a peninsula reaching into the water, with the Saltstraumen maelstrom just south of the city.",
+      " Mid-flight the route passes Svartisen — the second-largest ice cap on mainland Norway — and from the air you can see several glacier tongues flowing from the main ice cap toward the fjords, their ends already close to sea level. This area is right around the Arctic Circle, a transition zone where both the summer midnight sun and the winter aurora can be seen." +
+      " Approaching Bodø, islands appear on the sea, and Bodø itself is built on a peninsula reaching into the water, with the Saltstraumen maelstrom just south of the city.",
     },
     travel: {
     "zh-CN":
@@ -1967,8 +1967,8 @@ export const ROUTE_NARRATION: Record<
       "挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Trondheim to Bodø is about 55 minutes, in the same time zone. The Nordland Line train takes about 10 hours (there is usually an announcement at the moment of crossing the Arctic Circle)." +
-      "Bodø is the gateway to the Lofoten Islands, with a car ferry (about 3.5 hours to Moskenes). To see the Saltstraumen maelstrom, check the tide table and go around the spring tides for the fastest flow." +
-      "Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Bodø is the gateway to the Lofoten Islands, with a car ferry (about 3.5 hours to Moskenes). To see the Saltstraumen maelstrom, check the tide table and go around the spring tides for the fastest flow." +
+      " Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -1980,8 +1980,8 @@ export const ROUTE_NARRATION: Record<
       "阿尔塔就在高原边缘、一条峡湾的尽头，阿尔塔河在这里入海。",
     "en-US":
       "Tromsø to Alta is a short flight within Arctic Norway, from the coast to the inland side of Finnmark county. Soon after take-off, below appear the Lyngen Alps — a row of steep granite spires rising almost straight out of the Lyngenfjord, among the sharpest mountain shapes in Norway, sometimes called 'Norway's little Alps' by climbers." +
-      "Over the mountains the land gradually opens and flattens into the Finnmarksvidda — a rolling inland tundra plateau covered in dwarf birch and lichen, long used by the Sámi for reindeer herding, with herds still making seasonal migrations across it today." +
-      "Alta is at the edge of the plateau, at the end of a fjord, where the Alta river reaches the sea.",
+      " Over the mountains the land gradually opens and flattens into the Finnmarksvidda — a rolling inland tundra plateau covered in dwarf birch and lichen, long used by the Sámi for reindeer herding, with herds still making seasonal migrations across it today." +
+      " Alta is at the edge of the plateau, at the end of a fjord, where the Alta river reaches the sea.",
     },
     travel: {
     "zh-CN":
@@ -1990,8 +1990,8 @@ export const ROUTE_NARRATION: Record<
       "阿尔塔有世界遗产岩画，往内陆去卡拉绍克、考托凯诺能了解萨米文化。挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Tromsø to Alta is about 40 minutes, in the same time zone. Roads here are long, taking several hours by car, so flying is a common way to travel between towns in Arctic Norway." +
-      "Inland Alta has a drier, sunnier climate and is often reckoned one of the more reliable places in Norway to see the aurora. Winters are very cold — prepare for extreme cold." +
-      "Alta has World Heritage rock art, and inland at Karasjok and Kautokeino you can learn about Sámi culture. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " Inland Alta has a drier, sunnier climate and is often reckoned one of the more reliable places in Norway to see the aurora. Winters are very cold — prepare for extreme cold." +
+      " Alta has World Heritage rock art, and inland at Karasjok and Kautokeino you can learn about Sámi culture. Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2004,9 +2004,9 @@ export const ROUTE_NARRATION: Record<
       "最后越过特罗尔海门山地，地面平缓下来，特隆赫姆出现在峡湾尽头。",
     "en-US":
       "Bergen to Trondheim flies up Norway's west coast, the densest of these routes in fjords and glaciers. After take-off you first pass the Sognefjord — Norway's longest and deepest fjord, reaching about 200 km inland from the coast, with steep snow mountains on both sides." +
-      "Right after it is Jostedalsbreen — the largest ice cap on mainland Europe, with dozens of glacier tongues reaching out from the main body in every direction, several of them reachable by road or on foot." +
-      "Flying on north, the Geirangerfjord appears — a narrow fjord known for its sheer cliffs and waterfalls (the 'Seven Sisters' is its most famous stretch), followed by Romsdalen — a straight, deep valley carved by ice, its walls including one of Norway's highest vertical rock faces." +
-      "Finally, over the Trollheimen mountains, the land eases and Trondheim appears at the head of its fjord.",
+      " Right after it is Jostedalsbreen — the largest ice cap on mainland Europe, with dozens of glacier tongues reaching out from the main body in every direction, several of them reachable by road or on foot." +
+      " Flying on north, the Geirangerfjord appears — a narrow fjord known for its sheer cliffs and waterfalls (the 'Seven Sisters' is its most famous stretch), followed by Romsdalen — a straight, deep valley carved by ice, its walls including one of Norway's highest vertical rock faces." +
+      " Finally, over the Trollheimen mountains, the land eases and Trondheim appears at the head of its fjord.",
     },
     travel: {
     "zh-CN":
@@ -2015,8 +2015,8 @@ export const ROUTE_NARRATION: Record<
       "挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Bergen to Trondheim is about 55 minutes, in the same time zone. By land this route is a long detour of ferries and roads, so flying is the practical way, and also the fastest way to see the whole panorama of west-coast fjords." +
-      "The west coast is wet and windy, with weather that can change fast in any season. Using Bergen and Trondheim as the two ends, many people arrange a fjord cruise and a road trip to link up the sights along the way." +
-      "Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " The west coast is wet and windy, with weather that can change fast in any season. Using Bergen and Trondheim as the two ends, many people arrange a fjord cruise and a road trip to link up the sights along the way." +
+      " Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2029,8 +2029,8 @@ export const ROUTE_NARRATION: Record<
       "最后越过一段海岸山地，卑尔根出现在峡湾群和外海之间、被七座山围住的一个小海湾里。",
     "en-US":
       "Stavanger to Bergen is one of the shortest hops on the Norwegian west coast, flown low along the coast and fjords. Soon after take-off, below is the Folgefonna — a relatively isolated ice cap sitting on a peninsula ridge, its slopes dropping steeply into fjords on either side, with glacier tongues reachable by road." +
-      "Then comes the Hardangerfjord — Norway's second-longest fjord, known for its dense orchards on both shores (a famous blossom season in spring), with the route inland toward the Hardangervidda visible deep in the fjord." +
-      "Bergen sits between this cluster of fjords and the open sea, in a small bay ringed by seven mountains.",
+      " Then comes the Hardangerfjord — Norway's second-longest fjord, known for its dense orchards on both shores (a famous blossom season in spring), with the route inland toward the Hardangervidda visible deep in the fjord." +
+      " Bergen sits between this cluster of fjords and the open sea, in a small bay ringed by seven mountains.",
     },
     travel: {
     "zh-CN":
@@ -2039,8 +2039,8 @@ export const ROUTE_NARRATION: Record<
       "挪威属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Stavanger to Bergen is about 40 minutes, in the same time zone. The coastal road also connects them, but with several ferries and the world's longest subsea road tunnel, driving takes much longer." +
-      "In spring (April–May) the orchards along the Hardangerfjord blossom, a season Norwegians themselves travel to see. Both cities have a west-coast maritime climate — wet and windy — so carry a waterproof jacket." +
-      "Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " In spring (April–May) the orchards along the Hardangerfjord blossom, a season Norwegians themselves travel to see. Both cities have a west-coast maritime climate — wet and windy — so carry a waterproof jacket." +
+      " Norway is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2053,9 +2053,9 @@ export const ROUTE_NARRATION: Record<
       "接近尼斯，地面变成普罗旺斯阿尔卑斯的山地，凡尔登峡谷——欧洲最大的峡谷之一，由绿松石色的河水切出——就在这一带，最后飞机沿海岸线降落，蔚蓝海岸的弧形海湾展开在眼前。",
     "en-US":
       "Paris to Nice flies from the north of France to the Mediterranean coast, crossing several of the country's major landform provinces. After take-off you cross the Paris Basin — a huge sedimentary basin where the Seine and its tributaries have carved layered low hills and fields, home to nearly half of France's population." +
-      "South the land gradually rises into the Massif Central: a large old plateau of mostly extinct volcanoes, with the lava domes and crater lakes of the Chaîne des Puys clearly visible — one of the few places in Europe where volcanic shapes are still readable on the surface." +
-      "Over the south-eastern edge of the plateau, the Rhône valley appears below — the great river that rises from Alpine glaciers and gathers tributaries flowing south, historically the corridor linking northern France to the Mediterranean." +
-      "Approaching Nice, the land becomes the mountains of the Provençal Alps, with the Gorges du Verdon — one of the largest canyons in Europe, cut by turquoise water — in this area, and finally the plane follows the coastline down to the curved bay of the Côte d'Azur.",
+      " South the land gradually rises into the Massif Central: a large old plateau of mostly extinct volcanoes, with the lava domes and crater lakes of the Chaîne des Puys clearly visible — one of the few places in Europe where volcanic shapes are still readable on the surface." +
+      " Over the south-eastern edge of the plateau, the Rhône valley appears below — the great river that rises from Alpine glaciers and gathers tributaries flowing south, historically the corridor linking northern France to the Mediterranean." +
+      " Approaching Nice, the land becomes the mountains of the Provençal Alps, with the Gorges du Verdon — one of the largest canyons in Europe, cut by turquoise water — in this area, and finally the plane follows the coastline down to the curved bay of the Côte d'Azur.",
     },
     travel: {
     "zh-CN":
@@ -2064,8 +2064,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Paris to Nice is about an hour and a half, in the same time zone. You can also take high-speed rail (about 5.5 hours), but most people fly. Paris has four clear seasons; Nice has a Mediterranean climate, mild in winter and hot and dry in summer." +
-      "From a window you see, in turn, the farmland of the Paris Basin, the extinct volcanoes of the Massif Central, the Rhône valley, the mountains of Provence and finally the Côte d'Azur. Nice airport is right on the coast, with a tram straight into the city." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see, in turn, the farmland of the Paris Basin, the extinct volcanoes of the Massif Central, the Rhône valley, the mountains of Provence and finally the Côte d'Azur. Nice airport is right on the coast, with a tram straight into the city." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2077,8 +2077,8 @@ export const ROUTE_NARRATION: Record<
       "接近马赛，罗讷河在一片低平的三角洲——卡马尔格——散开入海，这里是大片湿地、盐沼和野生白马、火烈鸟的栖息地。马赛就在卡马尔格以东的一片石灰岩海岸边。",
     "en-US":
       "Paris to Marseille is one of France's classic north–south routes, roughly parallel to the high-speed rail line to the south-east. After take-off you cross the farmland and low hills of the Paris Basin, then the Massif Central — France's largest cluster of extinct volcanoes, the lava domes of the Chaîne des Puys easily picked out from the air." +
-      "Over the southern edge of the plateau, the Rhône valley appears below: the great river separating the Massif Central from the Alps, its banks lined with vineyards (the Rhône valley is an important French wine region)." +
-      "Approaching Marseille, the Rhône spreads into the sea across a flat delta, the Camargue — a wetland of marshes, salt flats, wild white horses and flamingos. Marseille is on a limestone coast just east of the Camargue.",
+      " Over the southern edge of the plateau, the Rhône valley appears below: the great river separating the Massif Central from the Alps, its banks lined with vineyards (the Rhône valley is an important French wine region)." +
+      " Approaching Marseille, the Rhône spreads into the sea across a flat delta, the Camargue — a wetland of marshes, salt flats, wild white horses and flamingos. Marseille is on a limestone coast just east of the Camargue.",
     },
     travel: {
     "zh-CN":
@@ -2087,8 +2087,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Paris to Marseille is about an hour and twenty minutes, in the same time zone. High-speed rail is about 3.2 hours, and many people choose the train. Marseille has a Mediterranean climate, hot and dry in summer, often with the dry, cold Mistral wind." +
-      "From a window you see the volcanic landscape of the Massif Central and the Camargue wetland at the Rhône delta. There's an airport bus into Marseille. From Marseille you can hike the Calanques coast or take a boat to the Château d'If." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the volcanic landscape of the Massif Central and the Camargue wetland at the Rhône delta. There's an airport bus into Marseille. From Marseille you can hike the Calanques coast or take a boat to the Château d'If." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2100,8 +2100,8 @@ export const ROUTE_NARRATION: Record<
       "越过高原，地面变成阿基坦盆地——加龙河及其支流冲积出的一片开阔平原，图卢兹就在盆地东缘、加龙河畔，因大量使用当地烧制的粉红砖瓦而得名“玫瑰之城”。",
     "en-US":
       "Paris to Toulouse flies from the north of France to the 'Pink City' of the south-west, also home to Airbus's headquarters. After take-off you cross the Paris Basin — the layered hills and fields cut by the Seine." +
-      "Mid-flight the route skirts the south-western edge of the Massif Central: this stretch lacks the dense volcanic cones of the Chaîne des Puys, instead cut by deep river gorges (the Gorges du Tarn and others are nearby), with the plateau edge dropping sharply to the Aquitaine Basin." +
-      "Beyond the plateau the land becomes the Aquitaine Basin — a broad plain built by the Garonne and its tributaries — and Toulouse is on the eastern edge of the basin, on the Garonne, named 'the Pink City' for its widespread use of locally fired pink brick.",
+      " Mid-flight the route skirts the south-western edge of the Massif Central: this stretch lacks the dense volcanic cones of the Chaîne des Puys, instead cut by deep river gorges (the Gorges du Tarn and others are nearby), with the plateau edge dropping sharply to the Aquitaine Basin." +
+      " Beyond the plateau the land becomes the Aquitaine Basin — a broad plain built by the Garonne and its tributaries — and Toulouse is on the eastern edge of the basin, on the Garonne, named 'the Pink City' for its widespread use of locally fired pink brick.",
     },
     travel: {
     "zh-CN":
@@ -2110,8 +2110,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Paris to Toulouse is about an hour and fifteen minutes, in the same time zone. High-speed rail is about 4.5 hours, and most business and long-distance travellers fly. Toulouse has hot, dry summers and mild winters, influenced by both the Atlantic and the Mediterranean." +
-      "From a window you see the terrain of the south-western Massif Central and the farmland of the Aquitaine Basin. Toulouse airport has a rail link into the city. Airbus factory tours need booking well ahead online." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the terrain of the south-western Massif Central and the farmland of the Aquitaine Basin. Toulouse airport has a rail link into the city. Airbus factory tours need booking well ahead online." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2123,8 +2123,8 @@ export const ROUTE_NARRATION: Record<
       "波尔多城就建在加龙河一个新月形的河湾里，因此被称为“新月之城”，18 世纪的石造联排建筑沿河岸连成一片。",
     "en-US":
       "Paris to Bordeaux is a short flight between France's two great sedimentary basins. After take-off you cross the Paris Basin — layered low hills and farmland built by the Seine and its tributaries." +
-      "Most of the flight is over the transition zone between the two basins, the land growing flatter and closer to sea level heading south. Approaching Bordeaux, the land is entirely the Aquitaine Basin: a broad plain built by the Garonne and its tributaries, with world-famous vineyards on both banks — the Médoc on the left, Saint-Émilion on the right." +
-      "The city of Bordeaux is built in a crescent-shaped bend of the Garonne, hence its name 'the Port of the Moon'.",
+      " Most of the flight is over the transition zone between the two basins, the land growing flatter and closer to sea level heading south. Approaching Bordeaux, the land is entirely the Aquitaine Basin: a broad plain built by the Garonne and its tributaries, with world-famous vineyards on both banks — the Médoc on the left, Saint-Émilion on the right." +
+      " The city of Bordeaux is built in a crescent-shaped bend of the Garonne, hence its name 'the Port of the Moon'.",
     },
     travel: {
     "zh-CN":
@@ -2133,8 +2133,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Paris to Bordeaux is about an hour and ten minutes, in the same time zone. High-speed rail is about 2 hours (much shorter since the Atlantic line opened), and many people take the train. Bordeaux is moderated by the Atlantic, mild and humid." +
-      "From a window you see the transition between the two basins and the vineyards around Bordeaux. From Bordeaux you can visit Saint-Émilion or a Médoc estate for a tasting (mostly by appointment), or the Dune du Pilat, Europe's tallest sand dune." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the transition between the two basins and the vineyards around Bordeaux. From Bordeaux you can visit Saint-Émilion or a Médoc estate for a tasting (mostly by appointment), or the Dune du Pilat, Europe's tallest sand dune." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2146,8 +2146,8 @@ export const ROUTE_NARRATION: Record<
       "翻过孚日山，脚下豁然开阔，出现莱茵河谷北段的阿尔萨斯平原：一条南北向的沉积地堑，斯特拉斯堡就在这片平原上、莱茵河支流伊尔河畔，紧邻德国边境。",
     "en-US":
       "Paris to Strasbourg is a short east–west flight from the Paris Basin to Alsace on the Rhine. After take-off you cross the eastern edge of the Paris Basin — farmland and terraces around the Marne, a tributary of the Seine." +
-      "Near the end the land rises into the Vosges: a not-very-high, well-rounded old mountain range dividing the Alsace plain from the Lorraine plateau, its eastern slope drier than the western because it blocks moisture carried by westerly winds." +
-      "Over the Vosges the ground opens out below into the Alsace plain, the northern stretch of the Rhine valley: a north–south sedimentary rift, and Strasbourg sits on this plain on the Ill, a Rhine tributary, right on the German border.",
+      " Near the end the land rises into the Vosges: a not-very-high, well-rounded old mountain range dividing the Alsace plain from the Lorraine plateau, its eastern slope drier than the western because it blocks moisture carried by westerly winds." +
+      " Over the Vosges the ground opens out below into the Alsace plain, the northern stretch of the Rhine valley: a north–south sedimentary rift, and Strasbourg sits on this plain on the Ill, a Rhine tributary, right on the German border.",
     },
     travel: {
     "zh-CN":
@@ -2156,8 +2156,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Paris to Strasbourg is about 55 minutes, in the same time zone. High-speed rail is about 1.8 hours, and many people choose the train (more convenient city centre to city centre). Strasbourg has a continental climate, cold winters and hot summers." +
-      "From a window you see the Vosges and the Alsace plain. Strasbourg's December Christmas market is the busiest and most crowded time of year — book lodging early." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the Vosges and the Alsace plain. Strasbourg's December Christmas market is the busiest and most crowded time of year — book lodging early." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2169,8 +2169,8 @@ export const ROUTE_NARRATION: Record<
       "南特就在卢瓦尔河即将入海前的河口一带，历史上是重要的大西洋港口，也曾是造船中心，卢瓦尔河的宽阔和缓慢从空中很好辨认，往西不远就是大西洋。",
     "en-US":
       "Paris to Nantes flies south-west along the watershed between the Seine and Loire basins. After take-off you cross the western edge of the Paris Basin — farmland and low hills sloping gently toward the Atlantic." +
-      "The second half of the flight follows the Loire: France's longest river, rising in the Massif Central and flowing north-west past Tours and Angers, its banks lined with the famous château belt (the Loire valley is a World Heritage Site for these royal and noble castles)." +
-      "Nantes is near the mouth of the Loire, not far from where it reaches the sea, historically an important Atlantic port, and the river's width and slow flow are easy to pick out from the air.",
+      " The second half of the flight follows the Loire: France's longest river, rising in the Massif Central and flowing north-west past Tours and Angers, its banks lined with the famous château belt (the Loire valley is a World Heritage Site for these royal and noble castles)." +
+      " Nantes is near the mouth of the Loire, not far from where it reaches the sea, historically an important Atlantic port, and the river's width and slow flow are easy to pick out from the air.",
     },
     travel: {
     "zh-CN":
@@ -2179,8 +2179,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Paris to Nantes is about 55 minutes, in the same time zone. High-speed rail is about 2 hours, and many people choose the train. Nantes is moderated by the Atlantic, mild and humid, rarely extreme." +
-      "From a window you see the Paris Basin and the Loire. Nantes airport has an airport bus. The city itself has the giant mechanical elephant on the Île de Nantes, and a day trip east to the Loire château cluster is possible (Tours or Blois make a closer base)." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the Paris Basin and the Loire. Nantes airport has an airport bus. The city itself has the giant mechanical elephant on the Île de Nantes, and a day trip east to the Loire château cluster is possible (Tours or Blois make a closer base)." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2192,8 +2192,8 @@ export const ROUTE_NARRATION: Record<
       "接近马赛，罗讷河在卡马尔格散开入海——一片大面积的湿地、盐沼三角洲，是野生白马、黑牛和火烈鸟的栖息地。马赛就在卡马尔格以东的石灰岩海岸边。",
     "en-US":
       "Lyon to Marseille runs south down the Rhône valley, a short flight but rich in landforms. Soon after take-off, to the right (west) is the Vercors plateau — a limestone tableland ringed by cliffs, a stronghold of the French Resistance during the Second World War (a brief historical fact)." +
-      "Flying on south, the Gorges de l'Ardèche appears below: a deep canyon a river has cut into a limestone plateau, with the Pont d'Arc, a natural stone bridge about 59 m across, inside it." +
-      "Approaching Marseille, the Rhône spreads into the sea at the Camargue — a large wetland and salt-marsh delta, home to wild white horses, black cattle and flamingos. Marseille is on the limestone coast just east of the Camargue.",
+      " Flying on south, the Gorges de l'Ardèche appears below: a deep canyon a river has cut into a limestone plateau, with the Pont d'Arc, a natural stone bridge about 59 m across, inside it." +
+      " Approaching Marseille, the Rhône spreads into the sea at the Camargue — a large wetland and salt-marsh delta, home to wild white horses, black cattle and flamingos. Marseille is on the limestone coast just east of the Camargue.",
     },
     travel: {
     "zh-CN":
@@ -2202,8 +2202,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Lyon to Marseille is about 40 minutes, in the same time zone. High-speed rail is about 1.7 hours, and many people choose the train. Both cities have a Mediterranean/temperate transitional climate, Marseille warmer and drier." +
-      "From a window you see the Vercors plateau, the Gorges de l'Ardèche and the Camargue wetland. From Marseille you can continue on to hike the Calanques coast." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the Vercors plateau, the Gorges de l'Ardèche and the Camargue wetland. From Marseille you can continue on to hike the Calanques coast." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2215,8 +2215,8 @@ export const ROUTE_NARRATION: Record<
       "阿雅克肖就在岛屿西岸一个宽阔的海湾里，是拿破仑·波拿巴的出生地。",
     "en-US":
       "Marseille to Ajaccio flies from mainland France to the island of Corsica in the Mediterranean. Soon after take-off comes the Calanques — a limestone fjord coastline between Marseille and Cassis, steep white cliffs dropping straight into deep blue water, one of France's most photographed coastlines." +
-      "Then a stretch of open Mediterranean, and after about an hour the outline of Corsica appears: a mountainous island whose central spine is a series of granite peaks over 2,000 m, with a very indented coastline combining beaches, fjord-like inlets and cliffs." +
-      "Ajaccio is on the island's west coast, in a broad bay, the birthplace of Napoleon Bonaparte.",
+      " Then a stretch of open Mediterranean, and after about an hour the outline of Corsica appears: a mountainous island whose central spine is a series of granite peaks over 2,000 m, with a very indented coastline combining beaches, fjord-like inlets and cliffs." +
+      " Ajaccio is on the island's west coast, in a broad bay, the birthplace of Napoleon Bonaparte.",
     },
     travel: {
     "zh-CN":
@@ -2225,8 +2225,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Marseille to Ajaccio is about 50 minutes, in the same time zone. There is also a ferry (about 6–10 hours, depending on the route). Corsica has a Mediterranean climate, hot and dry in summer, mild and rainy in winter, with snow in the inland mountains in winter." +
-      "From a window you see the Calanques coast and the Mediterranean, and as you approach Corsica the mountainous outline of the island. Getting around the island is mostly by car, with many bends in the mountain roads." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the Calanques coast and the Mediterranean, and as you approach Corsica the mountainous outline of the island. Getting around the island is mostly by car, with many bends in the mountain roads." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2238,8 +2238,8 @@ export const ROUTE_NARRATION: Record<
       "阿雅克肖在岛屿西岸，飞机沿海岸线下降时能看到曲折的海湾、白色沙滩和陡峭的岬角。",
     "en-US":
       "Nice to Ajaccio is the shortest route between the Côte d'Azur and Corsica, flown almost entirely over the Mediterranean. After take-off you soon leave the mainland French coast, crossing open blue water — part of the Ligurian Sea, the triangular sea between France, Italy and Corsica." +
-      "After about 40 minutes the mountain silhouette of northern Corsica appears over the water: the island's centre is a high granite ridge, its highest peak, Monte Cinto, over 2,700 m and often snow-capped." +
-      "Ajaccio is on the island's west coast, and as the plane descends along the coastline you can see the winding bays, white beaches and steep headlands.",
+      " After about 40 minutes the mountain silhouette of northern Corsica appears over the water: the island's centre is a high granite ridge, its highest peak, Monte Cinto, over 2,700 m and often snow-capped." +
+      " Ajaccio is on the island's west coast, and as the plane descends along the coastline you can see the winding bays, white beaches and steep headlands.",
     },
     travel: {
     "zh-CN":
@@ -2248,8 +2248,8 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Nice to Ajaccio is about 45 minutes, in the same time zone. There is also a ferry but it takes much longer. Corsica has hot, dry summers and is a beloved holiday island for the French themselves, so flights and ferries are tight in July–August." +
-      "From a window it is mostly Mediterranean sea the whole way, with the mountainous outline of Corsica appearing near the end. Driving on the island means many bends in the mountain roads — bring motion-sickness medication if needed." +
-      "France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window it is mostly Mediterranean sea the whole way, with the mountainous outline of Corsica appearing near the end. Driving on the island means many bends in the mountain roads — bring motion-sickness medication if needed." +
+      " France is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2261,8 +2261,8 @@ export const ROUTE_NARRATION: Record<
       "越过亚平宁山脉北段的余脉，地面骤然变得极其平坦——波河平原，意大利最大的连片平地，由波河及其支流冲积而成，是全国最重要的农业和工业区。米兰就在平原西部，主教座堂的尖塔从远处就能辨认。",
     "en-US":
       "Rome to Milan is Italy's busiest domestic route, from the centre to the north-western financial hub, running the length of the northern Apennine peninsula. Soon after take-off, Lake Trasimeno appears below — one of the largest lakes in central Italy, shallow and rarely freezing, where Hannibal ambushed a Roman army in 217 BC (a brief historical fact)." +
-      "Flying on north, the land becomes the Tuscan hills: rolling country long shaped by farming, with cypress trees, vineyards and ochre farmhouses the typical scene, the fields' texture following the curves of the hills visible from the air." +
-      "Over the northern tail of the Apennines, the land suddenly becomes extremely flat — the Po Valley, Italy's largest continuous plain, built up by the Po and its tributaries, the country's most important agricultural and industrial region. Milan is in the western part of the plain, its cathedral's spires recognisable from a distance.",
+      " Flying on north, the land becomes the Tuscan hills: rolling country long shaped by farming, with cypress trees, vineyards and ochre farmhouses the typical scene, the fields' texture following the curves of the hills visible from the air." +
+      " Over the northern tail of the Apennines, the land suddenly becomes extremely flat — the Po Valley, Italy's largest continuous plain, built up by the Po and its tributaries, the country's most important agricultural and industrial region. Milan is in the western part of the plain, its cathedral's spires recognisable from a distance.",
     },
     travel: {
     "zh-CN":
@@ -2271,8 +2271,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。历史城区常有限行区（ZTL），自驾进城前查清楚。",
     "en-US":
       "Rome to Milan is about an hour and ten minutes, in the same time zone. High-speed rail is about three hours; many business travellers fly and sightseers more often take the train (better views along the way). Milan is cooler and more humid than Rome, with winter haze common." +
-      "From a window you see, in turn, Lake Trasimeno, the Tuscan hills and the Po Valley. Milan's airport is either Linate (near the city) or Malpensa (the international hub) — confirm which one your flight uses ahead of time." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Historic centres often have restricted traffic zones (ZTL) — check before driving in.",
+      " From a window you see, in turn, Lake Trasimeno, the Tuscan hills and the Po Valley. Milan's airport is either Linate (near the city) or Malpensa (the international hub) — confirm which one your flight uses ahead of time." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Historic centres often have restricted traffic zones (ZTL) — check before driving in.",
     },
   },
 
@@ -2284,8 +2284,8 @@ export const ROUTE_NARRATION: Record<
       "平原东端，波河和其他几条河流冲积出的泥沙在亚得里亚海边形成了威尼斯潟湖——一片被沙洲和防波堤与外海隔开的浅水区，威尼斯的一百多座小岛就散落在潟湖里，飞机降落前能清楚看到运河纵横的城市轮廓和大运河的反 S 形走向。",
     "en-US":
       "Rome to Venice flies from central Italy to the lagoon city in the north-east corner. After take-off you pass Lake Trasimeno, then cross the hilly northern Apennines." +
-      "Approaching the north, the land becomes the Po Valley — Italy's largest continuous plain, its square fields and criss-crossing irrigation channels clearly visible from the air, rivers winding across the flat ground." +
-      "At the eastern end of the plain, silt carried down by the Po and other rivers has built the Venetian Lagoon on the Adriatic shore — a shallow-water area separated from the open sea by sandbars and breakwaters. Venice's hundred-plus small islands are scattered through the lagoon, and before landing you can clearly see the canal-laced city outline and the reverse-S curve of the Grand Canal.",
+      " Approaching the north, the land becomes the Po Valley — Italy's largest continuous plain, its square fields and criss-crossing irrigation channels clearly visible from the air, rivers winding across the flat ground." +
+      " At the eastern end of the plain, silt carried down by the Po and other rivers has built the Venetian Lagoon on the Adriatic shore — a shallow-water area separated from the open sea by sandbars and breakwaters. Venice's hundred-plus small islands are scattered through the lagoon, and before landing you can clearly see the canal-laced city outline and the reverse-S curve of the Grand Canal.",
     },
     travel: {
     "zh-CN":
@@ -2294,8 +2294,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Rome to Venice is about an hour and five minutes, in the same time zone. High-speed rail is about three and a half hours. Venice's airport is on the mainland side of the lagoon's north shore, with an airport bus or water bus into the city (about an hour); there are no cars in the city, only walking and water buses." +
-      "From a window you see Lake Trasimeno, the farmland of the Po Valley and the distinctive shape of the Venetian Lagoon. Venice occasionally has 'acqua alta' (high water) in autumn and winter — check the tide forecast before you go." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see Lake Trasimeno, the farmland of the Po Valley and the distinctive shape of the Venetian Lagoon. Venice occasionally has 'acqua alta' (high water) in autumn and winter — check the tide forecast before you go." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2307,8 +2307,8 @@ export const ROUTE_NARRATION: Record<
       "那不勒斯就在坎皮弗莱格瑞以东的海湾边，飞机下降时湾对岸维苏威火山的完整锥形轮廓清晰可见。",
     "en-US":
       "Rome to Naples is one of Italy's shortest major routes, running almost the whole way down the Tiber valley and the Tyrrhenian coast. Soon after take-off, below is the Tiber — the river running through central Rome, flowing south-west to the Tyrrhenian Sea." +
-      "Approaching Naples, the coastal area shows the Campi Flegrei — an active caldera geothermal area, with sulphurous vents and hot springs visible on the surface; the overall rise and fall of the ground (bradyseism) here is a natural phenomenon under continuous monitoring." +
-      "Naples is on the bay east of the Campi Flegrei, and as the plane descends, the full cone of Mount Vesuvius across the bay is clearly visible.",
+      " Approaching Naples, the coastal area shows the Campi Flegrei — an active caldera geothermal area, with sulphurous vents and hot springs visible on the surface; the overall rise and fall of the ground (bradyseism) here is a natural phenomenon under continuous monitoring." +
+      " Naples is on the bay east of the Campi Flegrei, and as the plane descends, the full cone of Mount Vesuvius across the bay is clearly visible.",
     },
     travel: {
     "zh-CN":
@@ -2317,8 +2317,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。那不勒斯需比其他意大利城市更留意随身财物。",
     "en-US":
       "Rome to Naples is about 45 minutes, in the same time zone. High-speed rail is about an hour to an hour and a half, and many people take the train (city centre to city centre, often more convenient). Naples has a Mediterranean climate, slightly warmer than Rome." +
-      "From a window you see the Tiber and the volcanic-geothermal area of the Campi Flegrei. From Naples you can take a regional train to Pompeii, or a boat to Capri or the Amalfi Coast." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Naples needs more care about belongings than most Italian cities.",
+      " From a window you see the Tiber and the volcanic-geothermal area of the Campi Flegrei. From Naples you can take a regional train to Pompeii, or a boat to Capri or the Amalfi Coast." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Naples needs more care about belongings than most Italian cities.",
     },
   },
 
@@ -2330,8 +2330,8 @@ export const ROUTE_NARRATION: Record<
       "飞越墨西拿海峡上空进入西西里岛，卡塔尼亚就在岛屿东岸、埃特纳火山脚下——这是欧洲最高的活火山，晴天从空中能看到山顶的烟柱和黑色的熔岩流痕迹。",
     "en-US":
       "Rome to Catania flies from central Italy all the way to the east coast of Sicily, one of the longer domestic routes here. After take-off you cross the Tiber, then the Apennines: the range running down the whole peninsula like a spine, with Gran Sasso (Corno Grande) its highest point at almost 2,912 m." +
-      "Over the southern Apennines, the land becomes the Pollino massif — home to southern Italy's largest national park, karst landforms interwoven with high mountain pasture." +
-      "Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — Europe's highest active volcano — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
+      " Over the southern Apennines, the land becomes the Pollino massif — home to southern Italy's largest national park, karst landforms interwoven with high mountain pasture." +
+      " Crossing the Strait of Messina onto Sicily, Catania sits on the island's east coast at the foot of Mount Etna — Europe's highest active volcano — and in clear weather you can see the summit plume and traces of black lava flows from the air.",
     },
     travel: {
     "zh-CN":
@@ -2340,8 +2340,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Rome to Catania is about an hour and five minutes, in the same time zone. Sicily has no direct high-speed rail link — crossing the sea needs a flight or a ferry (trains can be ferried across the strait, but it takes a long time). Catania is hotter and drier than Rome." +
-      "From a window you see the Apennines, the Pollino massif and the outline of Sicily, with Mount Etna visible approaching Catania. From Catania you can climb Etna with a licensed guide, or visit Taormina for the Greek theatre ruins." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the Apennines, the Pollino massif and the outline of Sicily, with Mount Etna visible approaching Catania. From Catania you can climb Etna with a licensed guide, or visit Taormina for the Greek theatre ruins." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2353,8 +2353,8 @@ export const ROUTE_NARRATION: Record<
       "卡利亚里就在岛屿南岸一个海湾边，飞机降落前能看到城堡区所在的山丘和城市脚下莫尔塔咸水湖的粉色轮廓（湖水因藻类和盐度呈现淡粉色，是火烈鸟的栖息地）。",
     "en-US":
       "Rome to Cagliari flies from mainland Italy to Sardinia — one of the oldest landmasses in the Mediterranean. After take-off you cross the Tiber, then fly south-west over the open water of the Tyrrhenian Sea." +
-      "Sardinia has no young high mountains; the island's core is an old granite and schist basement, long eroded into low hills and plateaus, geologically quite different from the young Apennines of mainland Italy." +
-      "Cagliari is on a bay on the island's south coast, and before landing you can see the hill of the Castello district and, below the city, the pink outline of the Molentargius saltwater lagoon (tinted pale pink by algae and salinity, a habitat for flamingos).",
+      " Sardinia has no young high mountains; the island's core is an old granite and schist basement, long eroded into low hills and plateaus, geologically quite different from the young Apennines of mainland Italy." +
+      " Cagliari is on a bay on the island's south coast, and before landing you can see the hill of the Castello district and, below the city, the pink outline of the Molentargius saltwater lagoon (tinted pale pink by algae and salinity, a habitat for flamingos).",
     },
     travel: {
     "zh-CN":
@@ -2363,8 +2363,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Rome to Cagliari is about 55 minutes, in the same time zone. Sardinia has no high-speed rail link to the mainland — travel is by air or ferry only (the ferry takes about eight hours, mostly overnight). Cagliari has hot, dry summers with little rain." +
-      "From a window it is mostly the Tyrrhenian Sea, with the island's outline appearing as you approach Sardinia. Transport on the island is limited — driving is recommended for the nuraghi sites or the south-west coast." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window it is mostly the Tyrrhenian Sea, with the island's outline appearing as you approach Sardinia. Transport on the island is limited — driving is recommended for the nuraghi sites or the south-west coast." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2375,7 +2375,7 @@ export const ROUTE_NARRATION: Record<
       "接近终点，地面渐渐变得湿润，出现威尼斯潟湖——波河与其他几条河流的泥沙在亚得里亚海边堆积形成的浅水区，被一连串狭长的沙洲和防波堤与外海分隔，潟湖里星罗棋布着上百座小岛。飞机降落前能看到威尼斯运河纵横的城市轮廓从水面上浮现，大运河呈反 S 形贯穿其中。",
     "en-US":
       "Milan to Venice is a short east–west flight, entirely over the Po Valley. After take-off, below is the typical Po Valley landscape: a grid of farmland, criss-crossing irrigation channels and dense towns — Italy's most densely populated and farmed plain." +
-      "Near the end the ground gradually grows wetter, and the Venetian Lagoon appears — a shallow-water area built by silt from the Po and other rivers along the Adriatic shore, separated from the open sea by sandbars and breakwaters. Before landing you can see Venice's canal-laced outline rising out of the water.",
+      " Near the end the ground gradually grows wetter, and the Venetian Lagoon appears — a shallow-water area built by silt from the Po and other rivers along the Adriatic shore, separated from the open sea by sandbars and breakwaters. Before landing you can see Venice's canal-laced outline rising out of the water.",
     },
     travel: {
     "zh-CN":
@@ -2384,8 +2384,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Milan to Venice is about 35 minutes, in the same time zone. High-speed rail is about two and a half hours, and many people choose the train (more convenient and greener). Both cities share a similar temperate continental Po Valley climate." +
-      "From a window it is Po Valley farmland the whole way, with the distinctive shape of the lagoon appearing near Venice. There are no cars in Venice — only walking and water buses." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window it is Po Valley farmland the whole way, with the distinctive shape of the lagoon appearing near Venice. There are no cars in Venice — only walking and water buses." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2397,8 +2397,8 @@ export const ROUTE_NARRATION: Record<
       "接近那不勒斯，海岸线一带出现坎皮弗莱格瑞的火山地热区——一片活跃的破火山口，地表能看到冒着硫磺气的火口和温泉；那不勒斯湾和湾对岸维苏威火山完整的锥形轮廓在降落前清晰可见。",
     "en-US":
       "Milan to Naples flies from Italy's industrial and financial centre to the largest city of the south, running the length of the northern and central peninsula. After take-off you cross the Po Valley — Italy's largest continuous plain, its grid of fields easy to pick out from the air." +
-      "Past the southern edge of the plain, the land rises into the Apennines: the range running the length of the peninsula, dividing Italy into east and west, with deep valleys and terraced farmland between the ridges." +
-      "Approaching Naples, the coastal area shows the volcanic-geothermal Campi Flegrei, and the Bay of Naples and the cone of Vesuvius are clearly visible before landing.",
+      " Past the southern edge of the plain, the land rises into the Apennines: the range running the length of the peninsula, dividing Italy into east and west, with deep valleys and terraced farmland between the ridges." +
+      " Approaching Naples, the coastal area shows the volcanic-geothermal Campi Flegrei, and the Bay of Naples and the cone of Vesuvius are clearly visible before landing.",
     },
     travel: {
     "zh-CN":
@@ -2407,8 +2407,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。那不勒斯需比米兰更留意随身财物。",
     "en-US":
       "Milan to Naples is about an hour and 20 minutes, in the same time zone. High-speed rail is about four and a half hours, and many people fly instead. Milan is cooler and more humid than Naples, which has a typical Mediterranean climate." +
-      "From a window you see the Po Valley, the Apennines and the volcanic landscape of the Campi Flegrei. From Naples you can visit Pompeii or take a boat to Capri." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Naples needs more care about belongings than Milan.",
+      " From a window you see the Po Valley, the Apennines and the volcanic landscape of the Campi Flegrei. From Naples you can visit Pompeii or take a boat to Capri." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Naples needs more care about belongings than Milan.",
     },
   },
 
@@ -2420,8 +2420,8 @@ export const ROUTE_NARRATION: Record<
       "越过一片开阔海面进入西西里岛，卡塔尼亚就在埃特纳火山脚下——欧洲最高的活火山，海拔约 3350 米，山顶终年有烟柱。",
     "en-US":
       "Naples to Catania runs south along the Italian coast and the southern Tyrrhenian Sea, a short flight with a volcanic theme throughout. Soon after take-off the full cone of Mount Vesuvius appears on the right — its eruption in 79 AD buried Pompeii, and it remains a closely monitored active volcano today." +
-      "Flying on south, the Aeolian (Lipari) Islands appear over the water: a chain of volcanic islands, including Stromboli, whose volcano has erupted in small bursts almost continuously — called the 'lighthouse of the Mediterranean', a pattern that has held for centuries and one of the longest continuously observed volcanoes in the world." +
-      "Over open water onto Sicily, Catania sits at the foot of Mount Etna — Europe's highest active volcano, about 3,350 m, with a year-round summit plume.",
+      " Flying on south, the Aeolian (Lipari) Islands appear over the water: a chain of volcanic islands, including Stromboli, whose volcano has erupted in small bursts almost continuously — called the 'lighthouse of the Mediterranean', a pattern that has held for centuries and one of the longest continuously observed volcanoes in the world." +
+      " Over open water onto Sicily, Catania sits at the foot of Mount Etna — Europe's highest active volcano, about 3,350 m, with a year-round summit plume.",
     },
     travel: {
     "zh-CN":
@@ -2430,8 +2430,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Naples to Catania is about 45 minutes, in the same time zone. There is also a ferry (much slower). Both cities have a Mediterranean climate, with Catania further south, hotter and drier." +
-      "From a window you see, in turn, Vesuvius, the Aeolian Islands and Mount Etna — the highest 'volcano density' of any of these routes. From Catania you can climb Etna with a licensed guide, or visit Taormina." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see, in turn, Vesuvius, the Aeolian Islands and Mount Etna — the highest 'volcano density' of any of these routes. From Catania you can climb Etna with a licensed guide, or visit Taormina." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2443,8 +2443,8 @@ export const ROUTE_NARRATION: Record<
       "接近巴里，脚下出现阿尔塔穆尔杰——一片喀斯特石灰岩台地，地表干旱多石，地下则有大量溶洞和史前遗迹。巴里就在亚得里亚海边、一个伸入海中的小半岛上。",
     "en-US":
       "Rome to Bari flies from central Italy to Puglia in the south-east, crossing the whole peninsula. After take-off you cross the Tiber, then the Apennines — the range that divides Italy between the Tyrrhenian and Adriatic sides in this stretch." +
-      "Over the eastern slope of the mountains, the land gradually becomes the Gargano Promontory: a limestone upland jutting from an otherwise flat coastline, covered in forest rare for southern Italy, historically nicknamed 'the spur of Italy' for its distinct shape." +
-      "Approaching Bari, the Alta Murgia appears below — a karst limestone plateau, dry and stony on the surface with extensive caves and prehistoric sites underground. Bari sits on the Adriatic coast, on a small peninsula reaching into the sea.",
+      " Over the eastern slope of the mountains, the land gradually becomes the Gargano Promontory: a limestone upland jutting from an otherwise flat coastline, covered in forest rare for southern Italy, historically nicknamed 'the spur of Italy' for its distinct shape." +
+      " Approaching Bari, the Alta Murgia appears below — a karst limestone plateau, dry and stony on the surface with extensive caves and prehistoric sites underground. Bari sits on the Adriatic coast, on a small peninsula reaching into the sea.",
     },
     travel: {
     "zh-CN":
@@ -2453,8 +2453,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，多数国家公民短期旅游免签或按申根规定。巴里也是前往希腊、阿尔巴尼亚的渡轮港口。",
     "en-US":
       "Rome to Bari is about 55 minutes, in the same time zone. High-speed rail is about four hours, and most people fly. Bari is drier than Rome, with hot summers." +
-      "From a window you see the Apennines, the forests of the Gargano Promontory and the karst landscape of the Alta Murgia. From Bari you can visit 'the town of stone houses', Alberobello (a World Heritage Site), or the Gargano coast." +
-      "Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Bari is also a ferry port to Greece and Albania.",
+      " From a window you see the Apennines, the forests of the Gargano Promontory and the karst landscape of the Alta Murgia. From Bari you can visit 'the town of stone houses', Alberobello (a World Heritage Site), or the Gargano coast." +
+      " Italy is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules. Bari is also a ferry port to Greece and Albania.",
     },
   },
 
@@ -2465,7 +2465,7 @@ export const ROUTE_NARRATION: Record<
       "越过伊比利亚山系，地面豁然低平，进入埃布罗盆地——这里在新生代曾是一个完全封闭的内陆咸水湖，直到河流切穿东侧山地才连通地中海，如今是灌溉农田与干燥badland台地相间的低地。快到巴塞罗那时，比利牛斯山的余脉渐渐没入海岸，飞机沿着加泰罗尼亚海岸下降，降落前能看到地中海和城市天际线。",
     "en-US":
       "Madrid to Barcelona flies from the very centre of the Iberian Peninsula to its north-east coast, and along the way shows how this continental watershed range splits the peninsula's drainage. Soon after take-off the ground grows broken and hilly: the Sistema Ibérico, a discontinuous upland whose highest point, Pico de Urbión, is under 2,300 m yet is the source of the Duero — and the divide between the peninsula's Atlantic and Mediterranean drainage." +
-      "Beyond the Sistema Ibérico the land opens out flat: the Ebro Basin, once a fully enclosed inland salt-lake basin in the Cenozoic until a river cut through the mountains to its east and connected it to the Mediterranean — today a lowland of irrigated farmland alternating with dry badland tablelands. Nearing Barcelona the tail of the Pyrenees sinks gradually into the coast, and the plane descends along the Catalan shoreline, the Mediterranean and the city skyline visible before landing.",
+      " Beyond the Sistema Ibérico the land opens out flat: the Ebro Basin, once a fully enclosed inland salt-lake basin in the Cenozoic until a river cut through the mountains to its east and connected it to the Mediterranean — today a lowland of irrigated farmland alternating with dry badland tablelands. Nearing Barcelona the tail of the Pyrenees sinks gradually into the coast, and the plane descends along the Catalan shoreline, the Mediterranean and the city skyline visible before landing.",
     },
     travel: {
     "zh-CN":
@@ -2482,7 +2482,7 @@ export const ROUTE_NARRATION: Record<
       "越过莫雷纳山，地面豁然开阔平坦，进入瓜达尔基维尔谷地——伊比利亚半岛唯一可供远洋船只溯河直达内陆港口的大河谷地，橄榄园按几何网格铺满丘陵，瓜达尔基维尔河本身宽阔平缓地流向塞维利亚。",
     "en-US":
       "Madrid to Seville flies south from the Meseta plateau into Andalusia, a classic route. Soon after take-off the land rises into a low, east–west range: the Sierra Morena, a fault scarp of old metamorphic rock — its north slope grading gently into the Meseta, its south slope dropping hundreds of metres abruptly, historically the natural barrier between Castile and Andalusia, its oak savanna the traditional landscape for free-range Iberian pigs." +
-      "Past the Sierra Morena the land opens out flat: the Guadalquivir Valley, the only Iberian river valley navigable by ocean-going ships all the way inland, olive groves laid out in geometric grids across the hills, the Guadalquivir itself flowing broad and gentle toward Seville.",
+      " Past the Sierra Morena the land opens out flat: the Guadalquivir Valley, the only Iberian river valley navigable by ocean-going ships all the way inland, olive groves laid out in geometric grids across the hills, the Guadalquivir itself flowing broad and gentle toward Seville.",
     },
     travel: {
     "zh-CN":
@@ -2499,7 +2499,7 @@ export const ROUTE_NARRATION: Record<
       "进入安达卢西亚后，地面再次隆起，内华达山脉的雪峰出现在前方——穆拉森峰3479米，是伊比利亚半岛的最高点，却离地中海海岸只有约40公里；飞机沿山脚下降，格拉纳达就坐落在雪峰脚下的河谷平原上。",
     "en-US":
       "Madrid to Granada crosses the southern half of the Meseta and two ranges before reaching Andalusia. After take-off comes the La Mancha Plain — an extremely flat limestone tableland where traditional white windmills still stand along the edges, made famous by Cervantes's Don Quixote. Then the flight crosses the Sierra Morena, the fault scarp dividing the Meseta from Andalusia." +
-      "Once over Andalusia the land rises again, and the snow peaks of the Sierra Nevada appear ahead — Mulhacén at 3,479 m, the highest point on the Iberian Peninsula, yet only about 40 km from the Mediterranean coast; the plane descends along the foot of the range, with Granada sitting in the river valley plain right below the snow peaks.",
+      " Once over Andalusia the land rises again, and the snow peaks of the Sierra Nevada appear ahead — Mulhacén at 3,479 m, the highest point on the Iberian Peninsula, yet only about 40 km from the Mediterranean coast; the plane descends along the foot of the range, with Granada sitting in the river valley plain right below the snow peaks.",
     },
     travel: {
     "zh-CN":
@@ -2516,7 +2516,7 @@ export const ROUTE_NARRATION: Record<
       "越往北，地面逐渐抬升变得破碎，进入欧罗巴峰一带——坎塔布连山脉最陡峭的一段，石炭纪石灰岩被造山运动抬升至2600米以上，再被冰川和喀斯特作用雕琢出尖峭的峰群和遍布的溶洞。翻过山区后，飞机沿着一段绿意盎然的北部海岸下降，毕尔巴鄂就在内维隆河口的谷地里。",
     "en-US":
       "Madrid to Bilbao flies due north from the very centre of the Meseta plateau into the Cantabrian mountains. After take-off the land below is the Meseta Central, the largest ancient tableland on the Iberian Peninsula, covering nearly two-fifths of the country, wheat fields and pasture stretching to the horizon." +
-      "Further north the land rises and grows broken, entering the Picos de Europa — the steepest stretch of the Cantabrian range, Carboniferous limestone uplifted above 2,600 m by mountain building and then carved by glaciers and karst dissolution into sharp peaks and countless caves. Past the mountains the plane descends along a lush green stretch of the northern coast, with Bilbao sitting in the valley at the mouth of the Nervión.",
+      " Further north the land rises and grows broken, entering the Picos de Europa — the steepest stretch of the Cantabrian range, Carboniferous limestone uplifted above 2,600 m by mountain building and then carved by glaciers and karst dissolution into sharp peaks and countless caves. Past the mountains the plane descends along a lush green stretch of the northern coast, with Bilbao sitting in the valley at the mouth of the Nervión.",
     },
     travel: {
     "zh-CN":
@@ -2533,7 +2533,7 @@ export const ROUTE_NARRATION: Record<
       "越过峡谷继续向西北，地形逐渐变得湿润多绿，飞机降落前能看到加利西亚典型的丘陵和农田，圣地亚哥的主教座堂塔楼是朝圣之路的终点标志。",
     "en-US":
       "Madrid to Santiago de Compostela crosses the entire Meseta plateau on its way to Galicia in the north-west corner. After take-off the land below is the Meseta's northern sub-plateau, gently sloping and drained by the Duero. Near the Spain–Portugal border the Duero has cut a deep canyon — the Arribes del Duero, its walls near-vertical, a stark contrast with the gentle plateau upstream; most of this stretch is now dammed into a chain of long, narrow reservoirs." +
-      "Beyond the canyon, heading further north-west, the land grows increasingly green and wet; before landing you can see Galicia's typical hills and farmland, with the towers of Santiago's cathedral marking the end of the pilgrimage route.",
+      " Beyond the canyon, heading further north-west, the land grows increasingly green and wet; before landing you can see Galicia's typical hills and farmland, with the towers of Santiago's cathedral marking the end of the pilgrimage route.",
     },
     travel: {
     "zh-CN":
@@ -2565,7 +2565,7 @@ export const ROUTE_NARRATION: Record<
       "越过西班牙海岸线后，飞机长时间飞越开阔的大西洋，看不到陆地。接近特内里费岛时，一座近乎完美对称的锥形火山出现在海面中央——泰德峰，海拔3715米，是西班牙全境最高点，若从大西洋海底基座算起，是仅次于夏威夷两座火山的世界第三高火山体，飞机绕山而下降落。",
     "en-US":
       "Madrid to Tenerife is Spain's longest domestic route, flying south-west from the centre of the Iberian Peninsula across the Atlantic to the Canary Islands off north-west Africa. After take-off comes the Guadalquivir Valley, Andalusia's largest expanse of farmland, olive groves covering the hills; then the Doñana wetland at the Guadalquivir's mouth, a patchwork of seasonal marsh and shifting dunes, an important European bird habitat." +
-      "Past the Spanish coast the flight crosses open Atlantic for a long stretch with no land in sight. Approaching Tenerife, an almost perfectly symmetrical volcanic cone appears in the middle of the sea: Teide, 3,715 m, the highest point in all of Spain — measured from its base on the Atlantic sea floor, the third-tallest volcanic structure on Earth after Hawaii's two giants — and the plane descends around the mountain to land.",
+      " Past the Spanish coast the flight crosses open Atlantic for a long stretch with no land in sight. Approaching Tenerife, an almost perfectly symmetrical volcanic cone appears in the middle of the sea: Teide, 3,715 m, the highest point in all of Spain — measured from its base on the Atlantic sea floor, the third-tallest volcanic structure on Earth after Hawaii's two giants — and the plane descends around the mountain to land.",
     },
     travel: {
     "zh-CN":
@@ -2582,7 +2582,7 @@ export const ROUTE_NARRATION: Record<
       "接近安达卢西亚东部时，海岸线突然变得陡峭崎岖——那是加塔角，伊比利亚半岛唯一一段完全由火山岩构成的海岸，约1300万年前海底火山喷发堆积而成，如今能看到的陆上部分只占整个火山体的约5%，其余仍淹没在阿尔沃兰海海面之下，柱状节理和熔岩崖清晰可辨。越过加塔角继续向西，飞机沿太阳海岸下降，抵达马拉加。",
     "en-US":
       "Barcelona to Málaga runs far south along the Mediterranean coast, from Catalonia all the way to the Costa del Sol in Andalusia. Most of the flight follows the coastline south, over the Mediterranean coastal plains of Valencia and Murcia." +
-      "Nearing eastern Andalusia the coast suddenly turns steep and rugged: Cabo de Gata, the only stretch of coast on the Iberian Peninsula made entirely of volcanic rock, built up by submarine eruptions about 13 million years ago — only about 5% of the whole volcanic body is above water today, the rest still submerged beneath the Alboran Sea, its columnar joints and lava cliffs clearly visible. Past Cabo de Gata the plane continues west and descends along the Costa del Sol into Málaga.",
+      " Nearing eastern Andalusia the coast suddenly turns steep and rugged: Cabo de Gata, the only stretch of coast on the Iberian Peninsula made entirely of volcanic rock, built up by submarine eruptions about 13 million years ago — only about 5% of the whole volcanic body is above water today, the rest still submerged beneath the Alboran Sea, its columnar joints and lava cliffs clearly visible. Past Cabo de Gata the plane continues west and descends along the Costa del Sol into Málaga.",
     },
     travel: {
     "zh-CN":
@@ -2857,9 +2857,9 @@ export const ROUTE_NARRATION: Record<
       "越过水库，地面骤然变化，进入阿尔加维海岸：金黄色的石灰岩崖壁被海浪侵蚀出连串的海蚀拱和海蚀柱，法鲁就在这段海岸旁、紧邻福尔摩沙潟湖国家公园。",
     "en-US":
       "Lisbon to Faro flies from the capital to the southern Algarve coast, crossing the whole southern half of mainland Portugal. Soon after take-off, the Arrábida Coast appears below — a stretch of limestone mountain on the Setúbal Peninsula dropping steeply into the Atlantic, with an extreme land-to-sea elevation change." +
-      "Flying on south, you enter the Alentejo Plain: a vast, gently rolling open landscape covering about a third of Portugal, dotted with evenly spaced oaks in a savanna-style agroforestry system that the UN Food and Agriculture Organization has designated a Globally Important Agricultural Heritage System." +
-      "At the plain's southern end, a broad blue expanse of water appears — the Alqueva Reservoir, the largest artificial lake in Western Europe, formed by damming the Guadiana River." +
-      "Past the reservoir the land changes abruptly into the Algarve Coast: golden limestone cliffs carved by the waves into a chain of sea arches and stacks, with Faro right beside this stretch of coast, next to Ria Formosa Natural Park.",
+      " Flying on south, you enter the Alentejo Plain: a vast, gently rolling open landscape covering about a third of Portugal, dotted with evenly spaced oaks in a savanna-style agroforestry system that the UN Food and Agriculture Organization has designated a Globally Important Agricultural Heritage System." +
+      " At the plain's southern end, a broad blue expanse of water appears — the Alqueva Reservoir, the largest artificial lake in Western Europe, formed by damming the Guadiana River." +
+      " Past the reservoir the land changes abruptly into the Algarve Coast: golden limestone cliffs carved by the waves into a chain of sea arches and stacks, with Faro right beside this stretch of coast, next to Ria Formosa Natural Park.",
     },
     travel: {
     "zh-CN":
@@ -2868,8 +2868,8 @@ export const ROUTE_NARRATION: Record<
       "葡萄牙属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Lisbon to Faro is about 55 minutes, in the same time zone. You can also take the train (about 3 hours) or a long-distance coach. Faro has a Mediterranean climate and is one of Portugal's sunniest regions, hot and dry in summer." +
-      "From a window you see, in turn, the Arrábida Coast, the oak savanna of the Alentejo, the Alqueva Reservoir and the golden Algarve coast. Renting a car from Faro is convenient for touring the Algarve's coastal resort towns." +
-      "Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see, in turn, the Arrábida Coast, the oak savanna of the Alentejo, the Alqueva Reservoir and the golden Algarve coast. Renting a car from Faro is convenient for touring the Algarve's coastal resort towns." +
+      " Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2881,8 +2881,8 @@ export const ROUTE_NARRATION: Record<
       "丰沙尔就在马德拉岛南岸的一处海湾，城市依山而建，从海边一直延伸到山腰。",
     "en-US":
       "Lisbon to Funchal flies from mainland Europe to the Madeira archipelago in the Atlantic, most of it over open sea. Soon after take-off you pass the steep cliffs of the Arrábida Coast, then Costa Vicentina — a wild, largely undeveloped cliff coastline facing the Atlantic at Portugal's south-western tip, its Palaeozoic metamorphic-rock cliffs running straight and steep." +
-      "Over the continental shelf the plane crosses open Atlantic water, and after a little over an hour the outline of Madeira Island rises from the sea — a high ridge built up by repeated volcanic eruptions, its highest point, Pico Ruivo, at 1,862 m, its slopes covered in dark-green primeval laurel forest." +
-      "Funchal sits in a bay on Madeira's south coast, the city climbing the hillside from the sea.",
+      " Over the continental shelf the plane crosses open Atlantic water, and after a little over an hour the outline of Madeira Island rises from the sea — a high ridge built up by repeated volcanic eruptions, its highest point, Pico Ruivo, at 1,862 m, its slopes covered in dark-green primeval laurel forest." +
+      " Funchal sits in a bay on Madeira's south coast, the city climbing the hillside from the sea.",
     },
     travel: {
     "zh-CN":
@@ -2891,8 +2891,8 @@ export const ROUTE_NARRATION: Record<
       "葡萄牙属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Lisbon to Funchal is about 1 hour 50 minutes, in the same time zone. Madeira's airport runway is built out over a cliff and the approach is somewhat challenging, flown by experienced crews. Madeira's climate is mild year-round, earning it the name 'Garden of the Atlantic'." +
-      "From a window the early part shows the mainland's south-western coast, then mostly open Atlantic water, with Madeira's mountainous outline appearing near the end. Funchal's traditional toboggan run and Madeira wine tastings are popular experiences." +
-      "Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window the early part shows the mainland's south-western coast, then mostly open Atlantic water, with Madeira's mountainous outline appearing near the end. Funchal's traditional toboggan run and Madeira wine tastings are popular experiences." +
+      " Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2905,8 +2905,8 @@ export const ROUTE_NARRATION: Record<
       "蓬塔德尔加达就在圣米格尔岛南岸，是探索这座活跃火山岛屿的门户，城市不大，海滨广场的三座黑白拱门是标志性地标。",
     "en-US":
       "Lisbon to Ponta Delgada flies from mainland Europe all the way to the Azores on the Mid-Atlantic Ridge, about 1,500 km, almost entirely over open Atlantic water — one of Portugal's longest domestic routes." +
-      "After about two and a half hours, the outline of São Miguel Island appears over the water, and a volcanic caldera about 5 km across at the island's western end comes into clear view — Sete Cidades, whose two connected lakes on the floor, one large and one small, often show a striking blue-and-green colour contrast from light refraction." +
-      "Ponta Delgada is on the south coast of São Miguel, the gateway to exploring this active volcanic island.",
+      " After about two and a half hours, the outline of São Miguel Island appears over the water, and a volcanic caldera about 5 km across at the island's western end comes into clear view — Sete Cidades, whose two connected lakes on the floor, one large and one small, often show a striking blue-and-green colour contrast from light refraction." +
+      " Ponta Delgada is on the south coast of São Miguel, the gateway to exploring this active volcanic island.",
     },
     travel: {
     "zh-CN":
@@ -2915,8 +2915,8 @@ export const ROUTE_NARRATION: Record<
       "葡萄牙属申根区，多数国家公民短期旅游免签或按申根规定，冬季部分航班易受天气影响、建议预留缓冲时间。",
     "en-US":
       "Lisbon to Ponta Delgada is about 2 hours 40 minutes; set your clock back 1 hour on arrival (the Azores are an hour behind the mainland). The Azores are mild and rainy year-round, with fast-changing weather." +
-      "From a window it is almost entirely Atlantic water, with the volcanic landscape of São Miguel appearing near the end. From Ponta Delgada you can drive around the island to see the Sete Cidades caldera and the Furnas geothermal area, and it's a popular starting point for whale watching." +
-      "Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules; some winter flights are weather-sensitive, so build in buffer time.",
+      " From a window it is almost entirely Atlantic water, with the volcanic landscape of São Miguel appearing near the end. From Ponta Delgada you can drive around the island to see the Sete Cidades caldera and the Furnas geothermal area, and it's a popular starting point for whale watching." +
+      " Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules; some winter flights are weather-sensitive, so build in buffer time.",
     },
   },
 
@@ -2928,7 +2928,7 @@ export const ROUTE_NARRATION: Record<
       "长时间飞行后马德拉岛才出现在视野中——一座由多次火山喷发堆积形成的高山脊岛屿，最高点皮库鲁伊武海拔1862米，山坡覆盖着深绿色的原始月桂林。丰沙尔就在岛屿南岸的一处海湾，城市依山而建，从海边一直延伸到山腰。",
     "en-US":
       "Porto to Funchal flies from northern Portugal to the Madeira archipelago in the Atlantic, the longest of the routes to Madeira. Soon after take-off, the Douro Valley appears below — the terraced vineyard region on both banks of the middle Douro in northern Portugal, its hand-built stone terraces about 2,000 years old, the source of Port wine." +
-      "Past the coast the plane crosses open Atlantic water, and only after a long stretch does Madeira come into view — an island built up by volcanic eruptions into a high ridge, its slopes covered in dark-green primeval laurel forest. Funchal sits in a bay on the island's south coast.",
+      " Past the coast the plane crosses open Atlantic water, and only after a long stretch does Madeira come into view — an island built up by volcanic eruptions into a high ridge, its slopes covered in dark-green primeval laurel forest. Funchal sits in a bay on the island's south coast.",
     },
     travel: {
     "zh-CN":
@@ -2937,8 +2937,8 @@ export const ROUTE_NARRATION: Record<
       "葡萄牙属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Porto to Funchal is about 2 hours 10 minutes, in the same time zone. This is one of the longer island routes — bring something to read or watch. Porto is cool and rainy while Madeira is mild year-round, so expect a noticeable climate change on arrival." +
-      "From a window the early part shows the terraced vineyards of the Douro Valley, then mostly open water. Funchal's wine-cellar tastings and cliff-edge trails are popular experiences." +
-      "Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window the early part shows the terraced vineyards of the Douro Valley, then mostly open water. Funchal's wine-cellar tastings and cliff-edge trails are popular experiences." +
+      " Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2950,7 +2950,7 @@ export const ROUTE_NARRATION: Record<
       "长时间飞越大西洋后，圣米格尔岛的轮廓才出现，岛屿西端的七城破火山口清晰可见——口底两个相连的湖泊因光线折射呈现蓝绿对比色，是辨认这座岛屿最直观的标志。蓬塔德尔加达就在岛屿南岸，海滨广场的三座黑白拱门是城市地标。",
     "en-US":
       "Porto to Ponta Delgada flies from northern Portugal all the way to the Azores, one of the longest domestic routes in Portugal. After take-off you pass the terraced vineyards of the Douro Valley, then cross the continental shelf into open Atlantic water." +
-      "After a long stretch over the ocean, the outline of São Miguel Island appears, with the Sete Cidades caldera at its western end clearly visible — its two connected lakes showing a blue-green colour contrast from light refraction. Ponta Delgada is on the island's south coast.",
+      " After a long stretch over the ocean, the outline of São Miguel Island appears, with the Sete Cidades caldera at its western end clearly visible — its two connected lakes showing a blue-green colour contrast from light refraction. Ponta Delgada is on the island's south coast.",
     },
     travel: {
     "zh-CN":
@@ -2959,8 +2959,8 @@ export const ROUTE_NARRATION: Record<
       "葡萄牙属申根区，多数国家公民短期旅游免签或按申根规定，冬季部分航班易受天气影响。",
     "en-US":
       "Porto to Ponta Delgada is about 2 hours 55 minutes; set your clock back 1 hour on arrival. This is a longer route — check gate and connection details ahead. The Azores are mild and rainy year-round, with fast-changing weather." +
-      "From a window the early part shows the Douro Valley, then mostly Atlantic water. From Ponta Delgada you can drive around São Miguel Island." +
-      "Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules; some winter flights are weather-sensitive.",
+      " From a window the early part shows the Douro Valley, then mostly Atlantic water. From Ponta Delgada you can drive around São Miguel Island." +
+      " Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules; some winter flights are weather-sensitive.",
     },
   },
 
@@ -2972,8 +2972,8 @@ export const ROUTE_NARRATION: Record<
       "越过高地，进入阿连特茹平原——一望无际的橡树稀树草原，占葡萄牙国土约三分之一。接近终点，地面骤然变化，金黄色的阿尔加维海岸出现在眼前，法鲁就在这段海岸旁。",
     "en-US":
       "Porto to Faro runs the length of mainland Portugal, from the north to the southernmost Algarve coast — the longest flight entirely within mainland Portugal. Soon after take-off, the Mondego River appears below — the longest river to both rise and flow entirely within Portugal, wide and gentle around Coimbra." +
-      "Flying on south, the land becomes Serra de Aire e Candeeiros: a pale grey Jurassic limestone karst upland, its surface dense with pinnacles and sinkholes, with an extensive cave system underground." +
-      "Beyond the upland you enter the Alentejo Plain — an endless expanse of oak savanna covering about a third of Portugal. Near the end the land changes abruptly, and the golden Algarve coast comes into view, with Faro right beside it.",
+      " Flying on south, the land becomes Serra de Aire e Candeeiros: a pale grey Jurassic limestone karst upland, its surface dense with pinnacles and sinkholes, with an extensive cave system underground." +
+      " Beyond the upland you enter the Alentejo Plain — an endless expanse of oak savanna covering about a third of Portugal. Near the end the land changes abruptly, and the golden Algarve coast comes into view, with Faro right beside it.",
     },
     travel: {
     "zh-CN":
@@ -2982,8 +2982,8 @@ export const ROUTE_NARRATION: Record<
       "葡萄牙属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Porto to Faro is about 1 hour 15 minutes, in the same time zone. This north–south route is the longest domestic mainland flight in Portugal, much faster than the train (about 6–7 hours with a change). Porto is cool and rainy while Faro is hot and dry — the climate contrast is significant." +
-      "From a window you see, in turn, the Mondego River, the karst upland of Serra de Aire e Candeeiros, the oak savanna of the Alentejo and the golden Algarve coast — the most complete way to read mainland Portugal's landforms in one flight." +
-      "Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see, in turn, the Mondego River, the karst upland of Serra de Aire e Candeeiros, the oak savanna of the Alentejo and the golden Algarve coast — the most complete way to read mainland Portugal's landforms in one flight." +
+      " Portugal is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -2994,7 +2994,7 @@ export const ROUTE_NARRATION: Record<
       "继续南飞，地面逐渐从荷兰典型的低洼围垦地转变为略有起伏的地形，进入马斯河荷兰段：这条发源于法国、流经比利时的河流在荷兰南部林堡省一带切出相对明显的河谷，两岸有低丘。马斯特里赫特就坐落在马斯河两岸，是荷兰地势起伏最明显的地区。",
     "en-US":
       "Amsterdam to Maastricht is one of the very few scheduled domestic flights in the Netherlands — the country is small with an extensive rail network, so domestic flying itself is unusual, and this route mainly serves fast commuting and connections between the two cities. Soon after take-off, the Utrechtse Heuvelrug appears below: a narrow band of forest on a moraine ridge from the last ice age, standing out sharply against the otherwise flat central Netherlands." +
-      "Flying on south, the land gradually shifts from the Netherlands' typical low-lying reclaimed polder into slightly rolling terrain, entering the Meuse in the Netherlands: this river, rising in France and flowing through Belgium, cuts a relatively distinct valley through the southern province of Limburg, with low hills on either side. Maastricht sits on both banks of the Meuse, in the region with the most pronounced relief in the country.",
+      " Flying on south, the land gradually shifts from the Netherlands' typical low-lying reclaimed polder into slightly rolling terrain, entering the Meuse in the Netherlands: this river, rising in France and flowing through Belgium, cuts a relatively distinct valley through the southern province of Limburg, with low hills on either side. Maastricht sits on both banks of the Meuse, in the region with the most pronounced relief in the country.",
     },
     travel: {
     "zh-CN":
@@ -3003,8 +3003,8 @@ export const ROUTE_NARRATION: Record<
       "荷兰属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Amsterdam to Maastricht is about 50 minutes, in the same time zone. The train takes about 2.5 hours; because domestic flights are rare, this route is used more by international transfer passengers at Schiphol connecting onward to the south. Maastricht's climate is slightly milder than the north of the Netherlands." +
-      "From a window you see the forested Utrechtse Heuvelrug and the rolling terrain of the Meuse valley — a rare stretch on a Dutch domestic flight where you can actually see real changes in relief. Maastricht is close to the Belgian and German borders and has a more relaxed, food-and-wine-focused way of life." +
-      "The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the forested Utrechtse Heuvelrug and the rolling terrain of the Meuse valley — a rare stretch on a Dutch domestic flight where you can actually see real changes in relief. Maastricht is close to the Belgian and German borders and has a more relaxed, food-and-wine-focused way of life." +
+      " The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -3016,8 +3016,8 @@ export const ROUTE_NARRATION: Record<
       "接近格罗宁根，脚下出现劳沃斯湖：1969年一条拦海坝将原本与瓦登海相通的海湾封闭后逐渐淡化形成的湖泊与湿地，开阔水面与大片芦苇沼泽交错分布。格罗宁根就在这片湿地以南不远处。",
     "en-US":
       "Amsterdam to Groningen is another of the Netherlands' few scheduled domestic flights, linking the capital with the largest city in the north. Soon after take-off, the IJsselmeer appears below — the largest lake in the Netherlands, gradually freshened from the former saline Zuiderzee bay after the Afsluitdijk was completed in 1932, its shoreline irregular with several stretches now reclaimed as land." +
-      "Flying on north, a relatively narrow channel comes into view — the IJssel, a branch the Rhine splits off near Arnhem, flowing north into the IJsselmeer, with historic Hanseatic trading towns such as Deventer and Kampen along its banks." +
-      "Approaching Groningen, the Lauwersmeer appears below: a lake and wetland formed after a 1969 barrier dam sealed off a bay once connected to the Wadden Sea, open water interspersed with extensive reed marsh. Groningen is not far south of this wetland.",
+      " Flying on north, a relatively narrow channel comes into view — the IJssel, a branch the Rhine splits off near Arnhem, flowing north into the IJsselmeer, with historic Hanseatic trading towns such as Deventer and Kampen along its banks." +
+      " Approaching Groningen, the Lauwersmeer appears below: a lake and wetland formed after a 1969 barrier dam sealed off a bay once connected to the Wadden Sea, open water interspersed with extensive reed marsh. Groningen is not far south of this wetland.",
     },
     travel: {
     "zh-CN":
@@ -3026,8 +3026,8 @@ export const ROUTE_NARRATION: Record<
       "荷兰属申根区，多数国家公民短期旅游免签或按申根规定。",
     "en-US":
       "Amsterdam to Groningen is about 40 minutes, in the same time zone. The train takes about 2 hours 10 minutes; because domestic flights are rare, this route mainly serves international transfer passengers and business travel. Groningen is a university city with a young population and a strong cycling culture." +
-      "From a window you see the open freshwater expanse of the IJsselmeer, the Hanseatic old towns along the IJssel, and the wetland landscape of the Lauwersmeer. From Groningen you can explore the Wadden Sea coast and the Friesland region." +
-      "The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
+      " From a window you see the open freshwater expanse of the IJsselmeer, the Hanseatic old towns along the IJssel, and the wetland landscape of the Lauwersmeer. From Groningen you can explore the Wadden Sea coast and the Friesland region." +
+      " The Netherlands is in the Schengen area; most foreign visitors travel visa-free for short tourism or follow Schengen rules.",
     },
   },
 
@@ -3879,7 +3879,7 @@ export const ROUTE_NARRATION: Record<
       "越过蒂蒂旺沙山脉后，飞机继续向东北飞行，掠过大汉山国家公园大片原始热带雨林，最终降落在哥打巴鲁——吉兰丹州首府，坐落于吉兰丹河口，是马来传统文化保存最完整的城市之一。",
     "en-US":
       "Flying from Kuala Lumpur to Kota Bharu crosses the Malay Peninsula, linking its west and east coasts, spanning about 420 km. After leaving Kuala Lumpur the flight heads northeast, first passing over the Titiwangsa Mountains — the peninsula's backbone range, a continuous green ridge running down its centre." +
-      " Past the Titiwangsa range, the flight continues northeast over the extensive primary rainforest of Taman Negara, before landing in Kota Bharu, capital of Kelantan at the mouth of the Kelantan River, one of the cities where traditional Malay culture is best preserved.",
+      " Past the Titiwangsa range, the flight continues northeast over the extensive primary rainforest of Taman Negara, at whose centre Gunung Tahan rises as the highest peak on the peninsula, before landing in Kota Bharu, capital of Kelantan at the mouth of the Kelantan River, one of the cities where traditional Malay culture is best preserved.",
     },
     travel: {
     "zh-CN":
@@ -5118,13 +5118,9 @@ export const ROUTE_NARRATION: Record<
   "pek-lhr": {
     study: {
     "zh-CN":
-      "北京飞伦敦，是从东亚大陆一路向西北，横跨整个亚欧大陆到不列颠群岛。起飞后不久，脚下的农田渐渐让位给起伏的高原——已经进入蒙古高原南缘，戈壁荒漠的砾漠地貌一直延伸到天际线。" +
-      "再往西北，戈壁过渡为森林与草原交错的西西伯利亚平原：地势极为平坦，河流蜿蜒、沼泽湖泊星罗棋布，是世界上面积最大的平原之一。" +
-      "飞过乌拉尔山脉——一条南北延伸的古老褶皱山系，地理学上常以它划分亚洲与欧洲——地面重新进入平缓的丘陵与农田，这里已是东欧平原的东部。飞机继续向西，越过波罗的海沿岸和中欧低地，最终沿泰晤士河进近，降落在伦敦西郊的希思罗机场。一趟航班，跨越了大半个亚欧大陆。",
+      "北京飞伦敦，向西北横跨亚欧大陆，全程约八千四百公里，终点在不列颠岛东南的泰晤士河下游。起飞后进入蒙古高原南缘的戈壁，砾石滩铺到天际线，年降水多在两百毫米以下，地表几乎没有连续植被；河流大多是季节性的，雨后短暂过水随即干涸，风蚀留下坚硬的砾幂，冬季强风把地表的尘土卷上高空，能见度骤降，聚落之间常隔上百公里。越往西北，草原的比例越高，牧群重新出现在河谷两侧。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后，飞机进入一片开阔低地。这条南北绵延两千多公里的古老山系海拔不高，却是地理学上划分亚洲与欧洲的界线；长期剥蚀把山脊磨得浑圆，东西两坡的森林构成明显不同，山间盆地里分布着一串以冶金为主的工业城市。再往西是东欧平原，古老地台之上起伏极小，田块与河流的图案从空中看格外规整。飞机继续向西横穿中欧，越过北海南缘——海面下是冰期留下的浅滩沉积，海底至今还能找到当时的河道和陆生动物遗骸。最后跨过英吉利海峡北口，进入泰晤士河下游的低地，降落在伦敦西面的希思罗机场。",
     "en-US":
-      "Beijing to London flies north-west out of East Asia, crossing almost the whole Eurasian landmass to reach the British Isles. Soon after take-off the farmland below gives way to rolling highland — the southern edge of the Mongolian Plateau, where the gravel desert of the Gobi stretches to the horizon." +
-      "Farther north-west the Gobi gives way to the West Siberian Plain, a mix of forest and steppe: remarkably flat, laced with winding rivers and countless marshes and lakes, one of the largest plains on Earth." +
-      "Crossing the Ural Mountains — an old north–south folded range that geographers commonly use to mark the boundary between Asia and Europe — the ground returns to gentle hills and farmland, the eastern edge of the East European Plain. The plane continues west over the Baltic coast and the lowlands of central Europe, then makes its final approach along the Thames, landing at Heathrow on London's western edge. One flight has crossed most of Eurasia.",
+      "Beijing to London runs north-west across the Eurasian landmass, about 8,400 km in all, ending on the lower Thames in the south-east of Great Britain. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon under less than 200 millimetres of rain in most years, with no continuous vegetation; the rivers are mostly seasonal, running briefly after rain and then drying out, wind erosion has left a hard pavement, strong winter winds lift dust high enough to cut visibility sharply, and settlements are often a hundred kilometres apart. The farther north-west it goes, the more steppe replaces desert and herds reappear along the valleys. Next comes the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding widely when the snow melts in spring. Past the Ural Mountains the flight enters an open lowland. The range runs more than two thousand kilometres north to south and is not high, but it is the conventional divide between Asia and Europe; long erosion has worn its ridges round, the forests on its eastern and western slopes differ markedly, and the basins between them hold a string of cities built on metallurgy. Farther west lies the East European Plain, an ancient platform with almost no relief where fields and rivers read from the air as a strikingly regular pattern. The aircraft continues west across central Europe and over the southern North Sea, whose bed is shallow sediment laid down during the ice ages, still yielding old river channels and the bones of land animals. It finally crosses the northern mouth of the English Channel into the lowlands of the lower Thames and lands at Heathrow, west of London.",
     },
     travel: {
     "zh-CN":
@@ -5133,21 +5129,17 @@ export const ROUTE_NARRATION: Record<
       "英国签证需提前在线申请，部分国家/地区护照持有人可能适用电子旅行许可（ETA）政策，具体以英国内政部最新公布为准，行前务必核实并预留办理时间；入境时随身物品与现金如实申报。",
     "en-US":
       "Beijing to London takes about 11 hours, with a 7–8 hour time difference (7 hours during UK summer time). Beijing has dry, cold winters, while London is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
-      "Heathrow is about 25 km from central London; the Piccadilly line or the Heathrow Express both run into town. Public transport is extensive — an Oyster Card or a contactless bank card both work directly on buses and the Underground. Major national museums such as the British Museum and the National Gallery are free year-round." +
-      "A UK visa must be applied for online in advance; some nationalities may qualify for the Electronic Travel Authorisation (ETA) scheme — check the UK Home Office's latest rules and allow time to arrange one before you travel. Declare belongings and cash honestly on arrival.",
+      " Heathrow is about 25 km from central London; the Piccadilly line or the Heathrow Express both run into town. Public transport is extensive — an Oyster Card or a contactless bank card both work directly on buses and the Underground. Major national museums such as the British Museum and the National Gallery are free year-round." +
+      " A UK visa must be applied for online in advance; some nationalities may qualify for the Electronic Travel Authorisation (ETA) scheme — check the UK Home Office's latest rules and allow time to arrange one before you travel. Declare belongings and cash honestly on arrival.",
     },
   },
 
   "pek-cdg": {
     study: {
     "zh-CN":
-      "北京飞巴黎，同样向西北横跨亚欧大陆，但落点更靠南，最终进入法国所在的西欧低地。起飞后先经过蒙古高原南部的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
-      "继续向西，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——常被地理学上作为亚洲与欧洲的分界——之后，进入东欧平原，农田与河流交错的地貌一路延伸。" +
-      "飞机继续向西南，越过中欧的丘陵地带，最终降落在巴黎北郊的戴高乐机场。一路向西横穿整个亚欧大陆，落地时已是欧洲大陆的心脏地带。",
+      "北京飞巴黎，向西北横跨亚欧大陆，全程约八千四百公里，终点在西欧的塞纳河盆地，是中国直飞西欧最繁忙的航线之一。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、河流稀少的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带；昼夜温差可达三十度以上，聚落沿着为数不多的泉水和井分布。越往西北，荒漠逐渐让位给稀树草原。接着是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条古老山系南北绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀，如今山脊平缓；两侧坡地的森林构成明显不同，山中的铁与铜矿支撑起沿线一串工业城市。再往西是东欧平原：由古老地台构成的开阔低地，起伏很小，河流舒缓，冬季常见大范围积雪。飞机在这里转向西南，掠过中欧的丘陵与河谷，地块与城镇的密度肉眼可见地上升，田野被公路和运河切成整齐的格子。最后进入巴黎盆地——一圈圈同心的沉积岩层构成的浅碟形凹地，塞纳河从中蜿蜒穿过，飞机降落在城市东北的戴高乐机场。",
     "en-US":
-      "Beijing to Paris also flies north-west across Eurasia, but on a track that curves farther south, ending in the lowlands of western Europe where France lies. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
-      "Farther west lies the West Siberian Plain, one of the largest plains in the world, remarkably flat and threaded with forest and marsh. Past the Ural Mountains — commonly used as the geographic boundary between Asia and Europe — the route enters the East European Plain, a landscape of farmland and rivers stretching on and on." +
-      "The flight continues south-west over the hill country of central Europe and lands at Charles de Gaulle Airport north of Paris. Having crossed the whole of Eurasia heading west, it touches down in the heart of the European continent.",
+      "Beijing to Paris runs north-west across the Eurasian landmass, about 8,400 km in all, ending in the Seine basin of western Europe, and is one of the busiest nonstop routes from China to western Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel with few rivers where most years bring less than 200 millimetres of rain, the wind has stripped the fine sand away to leave a hard pavement and piled it downwind into belts of dune; the daily temperature can swing more than thirty degrees, and settlements follow the few springs and wells. The farther north-west the route goes, the more the desert gives way to open steppe. Next comes the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the land drops back to the flat almost at once. This old range runs more than two thousand kilometres north to south; it rose in a continental collision some three hundred million years ago and has been eroded ever since, so its ridges are gentle, the forests on its two flanks differ markedly, and its iron and copper support a string of industrial cities along its length. Farther west lies the East European Plain, an open lowland on an ancient platform with very little relief, slow rivers and wide winter snow cover. The flight turns south-west across it and on over the hills and valleys of central Europe, where the density of fields and towns visibly rises and roads and canals cut the ground into neat blocks. It finally reaches the Paris Basin, a shallow dish of concentric sedimentary layers with the Seine winding through it, and lands at Charles de Gaulle Airport north-east of the city.",
     },
     travel: {
     "zh-CN":
@@ -5156,21 +5148,17 @@ export const ROUTE_NARRATION: Record<
       "法国属申根区，签证按国籍不同、以法国驻当地使领馆最新公布为准，行前确认并预留办理时间。留意扒手多发的旅游区，随身财物妥善保管。",
     "en-US":
       "Beijing to Paris takes about 10 hours 45 minutes, with a 7–8 hour time difference (7 hours during French summer time). Paris has distinct seasons — dry summers, cold and wet winters, with spring and autumn best for sightseeing." +
-      "Charles de Gaulle is about 30 km from the city centre; the RER B train takes roughly 35–50 minutes into town, and airport buses also run. The metro network is dense, and a Navigo weekly pass or single tickets cover it. Book ahead online for popular sites such as the Louvre and the Musée d'Orsay to skip the queues." +
-      "France is in the Schengen area; visa rules vary by nationality — check the latest from the French consulate for your location and allow time to arrange one. Watch for pickpockets in busy tourist areas and keep valuables secure.",
+      " Charles de Gaulle is about 30 km from the city centre; the RER B train takes roughly 35–50 minutes into town, and airport buses also run. The metro network is dense, and a Navigo weekly pass or single tickets cover it. Book ahead online for popular sites such as the Louvre and the Musée d'Orsay to skip the queues." +
+      " France is in the Schengen area; visa rules vary by nationality — check the latest from the French consulate for your location and allow time to arrange one. Watch for pickpockets in busy tourist areas and keep valuables secure.",
     },
   },
 
   "pek-ber": {
     study: {
     "zh-CN":
-      "北京飞柏林，航线比飞伦敦、巴黎略偏北，同样穿越蒙古高原和西西伯利亚平原，再落到中欧的平原上。起飞后先掠过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
-      "往西进入西西伯利亚平原——地势极其平坦、河网与沼泽密布，是地球上最大的平原之一。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原，之后转向中欧的低地平原地带。" +
-      "越过一连串河流冲积的平原和缓丘，飞机降落在柏林东南郊的勃兰登堡机场。一趟航班，从中国的首都飞到德国的首都，途中穿过大半个亚欧大陆的腹地。",
+      "北京飞柏林，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的北德平原。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里；冬季强风把地表的尘土卷上高空，再往西北，荒漠逐渐转为草原。接着是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，鄂毕河等大河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系是亚欧两洲的传统分界，山脊多在一千米上下，长期剥蚀把它磨得浑圆，山间盆地里分布着一串以冶金与机械制造为主的工业城市。再往西是东欧平原，起伏极小的开阔农田，冬季常见大范围积雪。最后掠过中欧的河谷与湖泊，降落在柏林东南的勃兰登堡机场。",
     "en-US":
-      "Beijing to Berlin follows a track slightly farther north than the London or Paris flights, also crossing the Mongolian Plateau and the West Siberian Plain before descending onto the plains of central Europe. After take-off the flight skirts the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
-      "Heading west it crosses the West Siberian Plain — remarkably flat, dense with rivers and marshes, one of the largest plains on Earth. Past the Ural Mountains, the conventional divide between Asia and Europe, the route enters the East European Plain and then the lowland plains of central Europe." +
-      "Past a series of river-built plains and low hills, the plane lands at Brandenburg Airport south-east of Berlin. One flight has gone from the capital of China to the capital of Germany, crossing the interior of most of Eurasia along the way.",
+      "Beijing to Berlin runs north-west across the Eurasian landmass, about 7,600 km in all, ending on the North German Plain in central Europe. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart; strong winter winds lift dust off the surface, and farther north-west the desert turns to steppe. Next comes the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across, where the Ob and other great rivers wind north and the spring flood spills the channels and leaves stands of conifer forest standing in water for weeks. Past the Ural Mountains the flight enters an open lowland: this old range is the conventional divide between Asia and Europe, its ridges mostly around a thousand metres, worn round by long erosion, and the basins between them hold a string of cities built on metallurgy and machine building. Farther west lies the East European Plain, open farmland with very little relief and wide winter snow cover. The route finally crosses the valleys and lakes of central Europe and lands at Brandenburg Airport south-east of Berlin.",
     },
     travel: {
     "zh-CN":
@@ -5179,21 +5167,17 @@ export const ROUTE_NARRATION: Record<
       "德国属申根区，签证按国籍不同、以德国驻当地使领馆最新公布为准，行前确认并预留办理时间。乘坐公共交通需自行提前打卡验票，查票时无票会被罚款。",
     "en-US":
       "Beijing to Berlin takes about 10 hours 15 minutes, with a 7–8 hour time difference (7 hours during German summer time). Berlin has mild summers and cold, relatively snow-light winters, with pleasant spring and autumn weather." +
-      "Brandenburg Airport is about 20 km from the city centre, with an airport express train and metro connections. Berlin's public transport (U-Bahn, S-Bahn and trams) runs on a shared ticketing system, and Museum Island, the Brandenburg Gate and the Berlin Wall memorial sites are popular, mostly reachable on foot or by rail." +
-      "Germany is in the Schengen area; visa rules vary by nationality — check the latest from the German consulate for your location and allow time to arrange one. Validate your ticket yourself before boarding public transport, as travelling without one risks a fine if checked.",
+      " Brandenburg Airport is about 20 km from the city centre, with an airport express train and metro connections. Berlin's public transport (U-Bahn, S-Bahn and trams) runs on a shared ticketing system, and Museum Island, the Brandenburg Gate and the Berlin Wall memorial sites are popular, mostly reachable on foot or by rail." +
+      " Germany is in the Schengen area; visa rules vary by nationality — check the latest from the German consulate for your location and allow time to arrange one. Validate your ticket yourself before boarding public transport, as travelling without one risks a fine if checked.",
     },
   },
 
   "pkx-ams": {
     study: {
     "zh-CN":
-      "北京飞阿姆斯特丹，从大兴机场起飞，航线与飞伦敦、巴黎相近，同样横跨蒙古高原、西西伯利亚平原和乌拉尔山脉，落到欧洲大陆西北角的低地。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
-      "往西北进入西西伯利亚平原——地势极为平坦、河网密布，是世界上面积最大的平原之一。飞过乌拉尔山脉这道亚欧地理分界后，飞机进入东欧平原，之后一路向西横穿中欧低地。" +
-      "接近荷兰时，地面变得异常平坦——莱茵河、马斯河下游冲积而成的低地，大片圩田和运河网络清晰可见。飞机降落在阿姆斯特丹史基浦机场，机场本身就建在一片曾经的湖底围垦地上。",
+      "北京大兴飞阿姆斯特丹，向西北横跨亚欧大陆，全程约八千二百公里，终点在莱茵河三角洲边缘。起飞后进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，干旱少雨、植被稀疏，年降水多在两百毫米以下；风把细沙吹走后留下坚硬的砾幂，河流大多是季节性的，昼夜温差常超过三十度，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多。接着是西西伯利亚平原，地势极为平坦，鄂毕河等大河在这里蜿蜒北流，沼泽面积之大使这一带成为重要的碳汇。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系南北绵延两千多公里，是亚欧两洲的传统分界，长期剥蚀把山脊磨得浑圆；山中的矿藏支撑起沿线一串工业城市，两侧坡地的森林构成明显不同。再往西是东欧平原，开阔低地上田块规整，冬季常见大范围低云与积雪。飞机在这里转向西南，掠过中欧的河谷与丘陵，越过北海南缘，海面下是冰期留下的浅滩沉积。最后进入荷兰——这个国家有相当一部分国土低于海平面，靠堤坝与排水系统维持，从空中看是被水道切成方格的圩田。飞机降落在阿姆斯特丹西南的史基浦机场，跑道本身就低于海平面。",
     "en-US":
-      "Beijing to Amsterdam departs from Daxing Airport on a track close to the London and Paris routes, likewise crossing the Mongolian Plateau, the West Siberian Plain and the Ural Mountains before descending onto the lowlands of north-west Europe. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
-      "Heading north-west it crosses the West Siberian Plain — remarkably flat and dense with rivers, one of the largest plains in the world. Past the Ural Mountains, the geographic divide between Asia and Europe, the route enters the East European Plain and then heads west across the lowlands of central Europe." +
-      "Approaching the Netherlands the ground becomes remarkably flat — the delta lowland built by the lower Rhine and Meuse rivers, with polders and a dense canal network clearly visible. The plane lands at Amsterdam Schiphol, an airport built on what was once the bed of a drained lake.",
+      "Beijing Daxing to Amsterdam runs north-west across the Eurasian landmass, about 8,200 km in all, to the edge of the Rhine delta. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon under little rain and sparse vegetation, less than 200 millimetres in most years; the wind has carried the fine sand away to leave a hard pavement, the rivers are mostly seasonal, the daily temperature often swings more than thirty degrees, and settlements follow the few springs. The farther north-west it goes, the more the desert turns to steppe and rivers become frequent. Next comes the West Siberian Plain, remarkably flat, where the Ob and other great rivers wind north and the sheer extent of marshland makes this a significant carbon store. Past the Ural Mountains the flight enters an open lowland. The range runs more than two thousand kilometres north to south as the conventional divide between Asia and Europe, long erosion having worn its ridges round; its ore deposits support a string of industrial cities along its length, and the forests on its two flanks differ markedly. Farther west lies the East European Plain, an open lowland of regular fields often under broad winter cloud and snow. The flight turns south-west across it, over the valleys and hills of central Europe and the southern North Sea, whose bed is shallow sediment laid down during the ice ages. It finally reaches the Netherlands, a country with a substantial share of its land below sea level, held by dikes and drainage and reading from the air as polders cut into squares by waterways, and lands at Schiphol south-west of Amsterdam, on runways that themselves lie below sea level.",
     },
     travel: {
     "zh-CN":
@@ -5202,21 +5186,17 @@ export const ROUTE_NARRATION: Record<
       "荷兰属申根区，签证按国籍不同、以荷兰驻当地使领馆最新公布为准，行前确认并预留办理时间。运河边人行道与自行车道混行，注意避让骑行者。",
     "en-US":
       "Beijing Daxing to Amsterdam takes about 10 hours 25 minutes, with a 7–8 hour time difference (7 hours during Dutch summer time). The Netherlands is mild and windy year-round, with cool summers and damp, low-snow winters — a windproof jacket is worth packing." +
-      "Schiphol is about 15 km from the centre, with frequent trains taking 15–20 minutes to Amsterdam Centraal. Getting around the city relies mainly on bicycles and trams; hiring a bike and getting an OV-chipkaart are the common way to explore. Book ahead online for the Van Gogh Museum and the Rijksmuseum." +
-      "The Netherlands is in the Schengen area; visa rules vary by nationality — check the latest from the Dutch consulate for your location and allow time to arrange one. Footpaths along the canals often run alongside bike lanes, so watch for cyclists.",
+      " Schiphol is about 15 km from the centre, with frequent trains taking 15–20 minutes to Amsterdam Centraal. Getting around the city relies mainly on bicycles and trams; hiring a bike and getting an OV-chipkaart are the common way to explore. Book ahead online for the Van Gogh Museum and the Rijksmuseum." +
+      " The Netherlands is in the Schengen area; visa rules vary by nationality — check the latest from the Dutch consulate for your location and allow time to arrange one. Footpaths along the canals often run alongside bike lanes, so watch for cyclists.",
     },
   },
 
   "pek-bru": {
     study: {
     "zh-CN":
-      "北京飞布鲁塞尔，是2026年新开通的中比直飞航线，航线走向与飞柏林、阿姆斯特丹接近，同样穿过蒙古高原、西西伯利亚平原和乌拉尔山脉。起飞后先经过蒙古高原南缘的戈壁荒漠，大片砾石滩延伸到地平线。" +
-      "往西进入西西伯利亚平原——地势极其平坦、河网与沼泽密布，是地球上最大的平原之一。翻过乌拉尔山脉这道亚欧分界后，飞机进入东欧平原，随后一路向西横穿中欧低地。" +
-      "接近西欧时，地面转为低缓的丘陵与冲积平原，飞机降落在布鲁塞尔以北的布鲁塞尔机场。一趟航班，把中国首都和欧洲多个国际机构所在的城市连在了一起。",
+      "北京飞布鲁塞尔，2026年3月开航，向西北横跨亚欧大陆，全程约八千三百公里，终点在西欧低地国家的腹地。起飞后进入蒙古高原南缘的戈壁：砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流多为季节性，雨后短暂过水随即干涸；风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，昼夜温差常超过三十度。再往西北，戈壁的砾石逐渐让位给草原，河流开始变多。接着是西西伯利亚平原，森林与沼泽交织、河流蜿蜒，是世界上最大的平原之一，春汛时河水漫出河道，大片林地泡在水里数周。翻过乌拉尔山脉后，飞机进入一片开阔低地。这条古老山系是亚欧两洲的传统分界，海拔多在一千米上下，地质年代久远，铁、铜与宝石矿藏丰富，沿线因此形成了成片的工业城市；两侧坡地的植被与土壤类型截然不同。再往西是东欧平原，由古老地台构成的低地起伏极小，是欧洲面积最大的平原，田块与河流的图案从空中看格外规整。飞机在这里转向西南，进入中欧的丘陵与低地，河网密集，运河与公路把地块切成整齐的格子。最后飞机掠过默兹河与斯海尔德河之间的低地，降落在布鲁塞尔以东北的扎芬特姆机场。",
     "en-US":
-      "Beijing to Brussels is a nonstop China–Belgium route launched in 2026, on a track close to the Berlin and Amsterdam flights, also crossing the Mongolian Plateau, the West Siberian Plain and the Ural Mountains. After take-off the flight crosses the Gobi desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon." +
-      "Heading west it crosses the West Siberian Plain — remarkably flat, dense with rivers and marshes, one of the largest plains on Earth. Past the Ural Mountains, the conventional divide between Asia and Europe, the route enters the East European Plain and then heads west across the lowlands of central Europe." +
-      "Approaching western Europe the land turns to low hills and alluvial plains, and the plane lands at Brussels Airport north of the city. One flight has linked the capital of China with a city that hosts a number of international institutions.",
+      "Beijing to Brussels, opened in March 2026, runs north-west across the Eurasian landmass, about 8,300 km in all, to the heart of the Low Countries. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau: gravel desert stretching to the horizon under less than 200 millimetres of rain in most years, its rivers mostly seasonal, running briefly after rain and then drying out; wind erosion has left a hard pavement, strong winter winds lift dust off the surface, and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to steppe and rivers become more frequent. Next comes the West Siberian Plain, threaded with forest, marsh and winding rivers, one of the largest plains on Earth, where the spring flood spills the channels and leaves wide stands of woodland standing in water for weeks. Past the Ural Mountains the flight enters an open lowland. This old range is the conventional divide between Asia and Europe, mostly around a thousand metres high, geologically very old and rich in iron, copper and gemstones, which is why industrial cities line its length; the vegetation and soils on its two flanks are quite different. Farther west lies the East European Plain, a lowland on an ancient platform with very little relief and the largest plain in Europe, its fields and rivers reading from the air as a strikingly regular pattern. The flight turns south-west across it into the hills and lowlands of central Europe, densely veined with rivers, canals and roads that cut the ground into neat blocks. It finally crosses the low country between the Meuse and the Scheldt and lands at Zaventem Airport north-east of Brussels.",
     },
     travel: {
     "zh-CN":
@@ -5225,15 +5205,15 @@ export const ROUTE_NARRATION: Record<
       "比利时属申根区，签证按国籍不同、以比利时驻当地使领馆最新公布为准，行前确认并预留办理时间。这条航线2026年3月才开通，出行前建议再次核实航班班期是否有变动。",
     "en-US":
       "Beijing to Brussels takes about 10 hours 35 minutes, with a 7–8 hour time difference (7 hours during Belgian summer time). Belgium is mild and rainy, so a waterproof jacket is worth packing in any season." +
-      "Brussels Airport is about 13 km from the centre; the airport express train takes about 20 minutes to Brussels Central/South station, with frequent departures. The metro, trams and buses run on one shared ticketing system. The Grand Place, the Galeries Saint-Hubert and the Belgian Comic Strip Center are all within walking distance in the city centre, and waffles, chocolate and beer are the local specialties." +
-      "Belgium is in the Schengen area; visa rules vary by nationality — check the latest from the Belgian consulate for your location and allow time to arrange one. This route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
+      " Brussels Airport is about 13 km from the centre; the airport express train takes about 20 minutes to Brussels Central/South station, with frequent departures. The metro, trams and buses run on one shared ticketing system. The Grand Place, the Galeries Saint-Hubert and the Belgian Comic Strip Center are all within walking distance in the city centre, and waffles, chocolate and beer are the local specialties." +
+      " Belgium is in the Schengen area; visa rules vary by nationality — check the latest from the Belgian consulate for your location and allow time to arrange one. This route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-jfk": {
     study: {
     "zh-CN":
-      "北京飞纽约不走太平洋，而是贴着北极飞一条大圆航线：两地经度几乎相差半个地球。起飞后向西北爬升，越过燕山，进入蒙古高原南缘的戈壁，砾石滩一直铺到天际线，风把细沙吹走，留下一层黑亮的砾幂。再往北是贝加尔湖，世界上最深的淡水湖，最深处超过1600米，蓄水量约占地表未冻淡水的两成。湖体嵌在一条至今仍在扩张的裂谷里，两岸是连片的西伯利亚针叶林；冬季湖面完全封冻，冰层厚到可以行车。航线继续深入西伯利亚腹地，飞越勒拿河三角洲——北极圈内一片由永久冻土和辫状水道织成的湿地。夏季解冻时水网密布，是候鸟迁徙的重要繁殖地；入冬后整片冻实，与周围的冻原连成一色。之后航向转东，掠过白令海。冰期海面下降时这里曾是连接亚洲与北美的陆桥，如今海底大陆架依然很浅，渔业资源丰厚。进入阿拉斯加，晴天时舷窗一侧能看到阿拉斯加山脉，北美最高峰迪纳利就在这条弧形山链上。飞机继续东南，越过育空地区——针叶林与冻原交界的地带，河流深切在冻土之中，地面几乎见不到道路与居民点。这一带冬季漫长、夏季短暂，是北美人烟最稀的区域之一；十九世纪末的淘金热曾把数万人引到这里，热潮退去后又几乎全部散去。再往前是哈德逊湾，一片地势极低的浅海。冰期被冰盖压下去的地壳至今仍在缓慢回弹，湾岸线因此逐年后退。接着飞临五大湖，冰川挖掘出的这组湖泊是地球上面积最大的淡水湖群。最后越过新英格兰的丘陵，沿哈德逊河下降，降落在纽约肯尼迪机场。",
+      "北京飞纽约不走太平洋，而是贴着北极飞一条大圆航线：两地经度几乎相差半个地球，走高纬度的弧线比沿纬线直飞短了两千多公里。起飞后向西北爬升，越过燕山。进入蒙古高原南缘的戈壁，砾石滩一直铺到天际线，风把细沙吹走后留下一层黑亮的砾幂；年降水多在两百毫米以下，河流大多是季节性的，聚落之间常隔上百公里。再往北是贝加尔湖，世界上最深的淡水湖，最深处超过一千六百米，蓄水量约占地表未冻淡水的两成。湖体嵌在一条至今仍在扩张的裂谷里，两岸山地陡直入水，湖底沉积厚达数千米，记录着两千多万年的气候变化；冬季湖面完全封冻，冰层厚到可以行车。湖区四周是连片的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头。航线继续深入西伯利亚腹地，飞越勒拿河三角洲——北极圈内一片由永久冻土和辫状水道织成的湿地，面积超过三万平方公里，是北冰洋沿岸最大的三角洲之一。夏季解冻时水网密布，成千上万个热融湖散在苔原上，是候鸟重要的繁殖地；入冬后整片冻实，与周围的冻原连成一色，河道只剩下雪面上一道道浅痕。之后航向转东，掠过白令海。冰期海面下降时这里曾是连接亚洲与北美的陆桥，人类很可能就是从这条通道进入美洲的；如今海底大陆架依然很浅，冷暖水团在此交汇，营养盐上涌，渔业资源丰厚，海面上常年多雾。进入阿拉斯加后，晴天时舷窗一侧能看到阿拉斯加山脉，北美最高峰迪纳利就在这条弧形山链上，山体由板块碰撞抬升而成，至今仍在长高。飞机继续东南，越过育空地区——针叶林与冻原交界的地带，河流深切在冻土之中，地面几乎见不到道路与居民点。这一带冬季漫长、夏季短暂，是北美人烟最稀的区域之一；地下的多年冻土使建筑必须架空，否则热量传下去会让地面融沉。十九世纪末的淘金热曾把数万人引到这里，沿着克朗代克河一带建起成片的营地，热潮退去后又几乎全部散去，如今只剩下少数保留下来的木屋和采金的痕迹。再往前是哈德逊湾，一片深入北美大陆的浅海，平均水深只有一百多米，冬季完全封冻。冰期被冰盖压下去的地壳至今仍在缓慢回弹，湾岸线因此逐年后退，岸上能看到一道道被抬起的古海滩排成阶梯。接着飞临五大湖，冰川挖掘出的这组湖泊是地球上面积最大的淡水湖群，蓄水量约占全球地表淡水的两成，湖岸边是北美主要的工业带。最后越过新英格兰的丘陵——古老山系被侵蚀之后剩下的低缓地形。飞机沿哈德逊河下降，降落在纽约肯尼迪机场。",
     "en-US":
       "Beijing to New York does not cross the Pacific. It flies a great-circle track that hugs the Arctic, because the two cities sit at nearly opposite longitudes. After take-off the aircraft climbs north-west over the Yan Mountains and reaches the Gobi on the southern edge of the Mongolian Plateau, where gravel flats run to the horizon and wind has stripped the fine sand away to leave a dark polished pavement. Farther north lies Lake Baikal, the deepest freshwater lake in the world at more than 1,600 metres, holding roughly a fifth of the planet's unfrozen surface fresh water. The lake sits in a rift that is still pulling apart, dense Siberian taiga runs down to both shores, and in winter the surface freezes solid enough to drive across. The route continues deep into the Siberian interior and crosses the Lena River Delta, an Arctic wetland woven from permafrost and braided channels. When the ground thaws each summer the delta fills with water and becomes a major breeding ground for migratory birds; by winter it freezes hard and merges into the surrounding tundra. The heading then swings east over the Bering Sea. Lower sea levels during the ice ages exposed a land bridge here between Asia and North America, and the continental shelf is still shallow, supporting one of the richest fisheries anywhere. Entering Alaska, a clear day brings the Alaska Range into view on one side of the cabin, the curved chain that carries Denali, the highest peak in North America. The aircraft continues south-east across the Yukon, where boreal forest gives way to tundra, rivers cut deep into frozen ground, and almost no roads or settlements appear below. Winters are long and summers brief, and this is among the most thinly populated country in North America; the gold rush of the late nineteenth century drew tens of thousands here and then emptied out again almost completely. Ahead lies Hudson Bay, a very shallow sea on ground so low that the crust, pressed down by ice-age glaciers, is still rebounding and pushing the shoreline back year by year. The flight then reaches the Great Lakes, glacially excavated and the largest group of freshwater lakes on Earth by surface area. Finally it crosses the hills of New England and descends along the Hudson River into New York's JFK Airport.",
     },
@@ -5244,17 +5224,17 @@ export const ROUTE_NARRATION: Record<
       "中国公民赴美须提前办妥B1/B2签证并预约面签，建议出行前至少1-2个月申请，具体以美国驻华使领馆最新公布为准；入境时随身行李与现金如实申报。纽约治安整体良好，但部分地铁站夜间人少，贵重物品建议不外露。",
     "en-US":
       "Beijing to New York takes about 15 hours 30 minutes on an Air China Boeing 747. The time difference is 12–13 hours (12 hours during US Eastern Daylight Time, 13 hours during Standard Time) — allow a day or two to adjust on arrival. New York has distinct seasons: hot, humid summers and cold, snowy winters, with spring and autumn the most pleasant times to visit." +
-      "JFK is about 25 km from Manhattan; the AirTrain connects to the subway's E line or the Long Island Rail Road (LIRR) into the city, and taxis or rideshares are also available, taking roughly 45–60 minutes depending on traffic. The subway runs 24 hours a day, and a MetroCard or a contactless bank card both work directly at the turnstiles. The Statue of Liberty, Central Park and the Metropolitan Museum of Art are all reachable by subway." +
-      "Chinese citizens need a B1/B2 visa and an in-person interview well in advance — apply at least 1–2 months ahead, and check the latest requirements from the US Embassy or Consulate. Declare belongings and cash honestly on arrival. New York is generally safe, but some subway stations are quiet late at night, so keep valuables out of sight.",
+      " JFK is about 25 km from Manhattan; the AirTrain connects to the subway's E line or the Long Island Rail Road (LIRR) into the city, and taxis or rideshares are also available, taking roughly 45–60 minutes depending on traffic. The subway runs 24 hours a day, and a MetroCard or a contactless bank card both work directly at the turnstiles. The Statue of Liberty, Central Park and the Metropolitan Museum of Art are all reachable by subway." +
+      " Chinese citizens need a B1/B2 visa and an in-person interview well in advance — apply at least 1–2 months ahead, and check the latest requirements from the US Embassy or Consulate. Declare belongings and cash honestly on arrival. New York is generally safe, but some subway stations are quiet late at night, so keep valuables out of sight.",
     },
   },
 
   "pek-yyz": {
     study: {
     "zh-CN":
-      "北京飞多伦多同样走极地航线，比飞纽约那条更靠北，最高纬度接近北纬八十度。起飞后向西北爬升，掠过蒙古高原南缘的戈壁，砾石滩铺到天际线，地表几乎没有连续植被。接着进入贝加尔湖一带，世界上最深的淡水湖，湖水以清澈著称。两岸是连片针叶林，冬季封冻后冰面可以行车；湖区位于一条仍在扩张的裂谷之上，地震并不少见，湖里还有全球唯一的淡水海豹。航线一路向北，抵达西伯利亚的北冰洋沿岸——欧亚大陆的最北缘。这里常年有浮冰，夏季也只是部分融开，岸上是无树的冻原，短暂的暖季里会开满地衣与低矮花草。越过北冰洋后进入加拿大北极群岛，埃尔斯米尔岛、巴芬岛这些岛屿由永久冻土和冰帽构成，岛与岛之间的水道大半年封冻，从空中看是白色与深色交错的碎块。航向转东南，穿过哈德逊湾——地势极低的浅海，冬季整体结冰；冰盖消退后地壳仍在回弹，岸线逐年外移。最后飞临安大略省的湖泊与丘陵，降落在多伦多皮尔逊国际机场。",
+      "北京飞多伦多，走的是跨越北极圈的大圆航路，全程约一万一千五百公里，是中国直飞北美东部最长的航线之一。起飞后越过燕山，进入蒙古高原南缘的戈壁——砾石铺地、植被稀疏的干旱带，年降水多在两百毫米以下，聚落之间常隔上百公里。再往北是贝加尔湖，地球上最深的湖泊，最深处超过一千六百米，蓄水量约占全球未冻结淡水的五分之一；它坐落在一条仍在缓慢张开的大陆裂谷上，两岸山地陡直入水，冬季湖面完全封冻，冰层厚到可以行车。越过湖区之后是连绵的西伯利亚针叶林，落叶松与云杉一直铺到视野尽头，河流全部向北流。接着抵达西伯利亚北冰洋沿岸——一片被冻土支配的低平苔原，夏季只有表层解冻，水下渗不下去，于是在地表积成无数热融湖，从空中看像撒了一地的碎镜片；海岸线破碎，河口宽阔，浮冰在夏季退向更高纬度。跨过北冰洋后进入加拿大北极群岛，由几十座大岛和上千座小岛组成，岛屿之间是常年结冰或半年结冰的海峡；地表以裸岩、砾石和薄薄一层苔原植被为主，几乎看不到树。再往南是哈德逊湾，一片深入北美大陆的巨大内海，冬季完全封冻；它所在的地壳曾被厚达数公里的冰盖压低，冰盖消融后至今仍在缓慢回弹，海岸线因此持续抬升，湖岸上能看到一道道被抬起的古海滩。飞机最后飞越安大略的森林与湖群，降落在多伦多皮尔逊机场。",
     "en-US":
-      "Beijing to Toronto also flies a polar route, further north than the New York track, reaching close to 80°N at its highest latitude. After take-off the flight climbs north-west across the Gobi on the southern edge of the Mongolian Plateau, gravel flats running to the horizon with no continuous vegetation. It then reaches Lake Baikal, the deepest freshwater lake in the world and famous for the clarity of its water. Unbroken conifer forest lines both shores, the winter ice grows thick enough to drive on, the lake lies along a rift that is still widening so earthquakes are not rare, and it holds the only freshwater seal in the world. The route runs north to the Arctic coast of Siberia, the northernmost edge of the Eurasian landmass. Drifting sea ice persists through the year and opens only partly in summer, while the shore is treeless tundra that flushes with lichen and low flowers during the brief warm season. Crossing the Arctic Ocean the flight enters the Canadian Arctic Archipelago, where islands such as Ellesmere and Baffin are built of permafrost and ice caps and the channels between them stay frozen for most of the year, reading from the air as a mosaic of white and dark fragments. The heading turns south-east across Hudson Bay, a shallow sea on very low ground that freezes over in winter; the crust is still rising after the ice sheet withdrew and the shoreline creeps outward each year. The flight finally passes over the lakes and hill country of Ontario before landing at Toronto Pearson International Airport.",
+      "Beijing to Toronto follows a great-circle track over the Arctic, about 11,500 km in all, one of the longest nonstop routes from China to eastern North America. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and sparse vegetation under less than 200 millimetres of rain in most years, with settlements often a hundred kilometres apart. Farther north lies Lake Baikal, the deepest lake on Earth at more than sixteen hundred metres, holding roughly a fifth of the world's unfrozen fresh water; it sits in a continental rift that is still slowly pulling apart, the mountains on both shores drop straight into the water, and in winter the surface freezes solid enough to drive on. Beyond the lake the Siberian taiga runs unbroken to the horizon, larch and spruce all the way, and every river flows north. The route then reaches the Siberian Arctic Coast, low tundra governed by permafrost: only the surface layer thaws in summer, water cannot drain away, and it collects into countless thaw lakes that read from the air like shards of scattered mirror; the coastline is broken, the river mouths are wide, and the pack ice retreats to higher latitudes through the summer. Across the Arctic Ocean comes the Canadian Arctic Archipelago, dozens of large islands and more than a thousand small ones separated by channels that are frozen year-round or for half the year; the ground is bare rock, gravel and a thin skin of tundra vegetation, with scarcely a tree in sight. Farther south is Hudson Bay, a vast inland sea driven deep into the North American continent and frozen over in winter; the crust beneath it was pressed down by an ice sheet kilometres thick, and it is still rebounding today, so the shoreline keeps rising and raised ancient beaches step back from the water in visible ridges. The flight finally crosses the forests and lakes of Ontario and lands at Toronto Pearson Airport.",
     },
     travel: {
     "zh-CN":
@@ -5263,17 +5243,17 @@ export const ROUTE_NARRATION: Record<
       "中国公民赴加拿大须提前办妥访客签证（中国护照通常不适用电子旅行授权eTA，需申请正式签证），建议出行前至少1个月申请，具体以加拿大移民、难民及公民部（IRCC）最新公布为准；入境时随身行李与现金如实申报。",
     "en-US":
       "Beijing to Toronto takes about 12 hours 40 minutes on an Air China Boeing 777. The time difference is 12–13 hours (12 hours during Canadian Eastern Daylight Time, 13 hours during Standard Time). Toronto has warm, humid summers and cold, snowy winters, with spring and autumn the best times to visit." +
-      "Pearson Airport is about 25 km from downtown; the UP Express train takes about 25 minutes direct to Union Station, and buses or taxis are also available. Toronto's public transit (TTC subway, streetcars and buses) runs on one shared fare system, and a contactless bank card works directly on board. The CN Tower, the Lake Ontario waterfront and Old City Hall are mostly reachable on foot or by streetcar." +
-      "Chinese citizens need a visitor visa for Canada well in advance — Chinese passports generally don't qualify for the eTA and require a full temporary resident visa — apply at least a month ahead, and check the latest requirements from Immigration, Refugees and Citizenship Canada (IRCC). Declare belongings and cash honestly on arrival.",
+      " Pearson Airport is about 25 km from downtown; the UP Express train takes about 25 minutes direct to Union Station, and buses or taxis are also available. Toronto's public transit (TTC subway, streetcars and buses) runs on one shared fare system, and a contactless bank card works directly on board. The CN Tower, the Lake Ontario waterfront and Old City Hall are mostly reachable on foot or by streetcar." +
+      " Chinese citizens need a visitor visa for Canada well in advance — Chinese passports generally don't qualify for the eTA and require a full temporary resident visa — apply at least a month ahead, and check the latest requirements from Immigration, Refugees and Citizenship Canada (IRCC). Declare belongings and cash honestly on arrival.",
     },
   },
 
   "pvg-mad": {
     study: {
     "zh-CN":
-      "上海飞马德里，从长江三角洲一路向西北，横跨整个亚欧大陆，终点是伊比利亚半岛腹地。起飞后先越过华北与内蒙古，地面从稠密的城镇与水网逐渐过渡到干旱的草原。进入蒙古高原南缘的戈壁，砾漠地貌一直延伸到天际线，河流稀少且多为季节性；再往西北，戈壁的砾石逐渐让位给稀树草原，聚落之间的距离越拉越大。接着是西西伯利亚平原：地势极为平坦，河流蜿蜒，沼泽与湖泊星罗棋布，是世界上面积最大的平原之一。翻过乌拉尔山脉——这条南北走向的古老褶皱山系海拔不高，却是地理学上划分亚洲与欧洲的界线。此后飞机一路向西南，横穿东欧平原与中欧的丘陵：这一带是欧洲最重要的农业带之一，田块规整，河流大多向北或向南汇入海洋，冬季常见大范围的低云与积雪。临近伊比利亚半岛前，比利牛斯山脉先在南面拉出一道明显的雪线。飞机掠过山脉西班牙一侧的奥德萨峡谷——佩尔迪多山北坡切出的一道石灰岩深谷，谷壁近乎垂直，属于世界遗产范围。随后进入梅塞塔中央高原，这片古老台地约占半岛面积的五分之二，平均海拔六七百米。马德里就坐落在高原腹地，飞机最终降落在城市以东的巴拉哈斯机场。",
+      "上海飞马德里，从长江三角洲一路向西北，横跨整个亚欧大陆，全程约一万公里，终点在伊比利亚半岛腹地。起飞后先越过华北平原与内蒙古高原，地面从稠密的城镇与水网逐渐过渡到开阔的干旱草原，河流变少，村落之间的距离越拉越大。进入蒙古高原南缘的戈壁，砾漠地貌一直延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；风蚀留下坚硬的砾幂，昼夜温差常超过三十度。再往西北，砾石逐渐让位给稀树草原，牧群和零星的定居点重新出现。接着是西西伯利亚平原，地势极为平坦，河流蜿蜒，沼泽与湖泊星罗棋布。翻过乌拉尔山脉——这条南北走向的古老褶皱山系海拔不高，却被公认为划分亚洲与欧洲的界线，山中的铁、铜与宝石矿藏支撑起沿线一串工业城市。此后飞机一路向西南，横穿东欧平原与中欧的丘陵：这一带是欧洲最重要的农业带之一，田块规整，河流大多向北或向南汇入海洋，冬季常见大范围的低云与积雪。越往西南，地块被河谷和运河切得越细，城镇密度越高。临近伊比利亚半岛前，比利牛斯山脉先在南面拉出一道明显的雪线，山体由花岗岩与石灰岩组成，冰川作用刻出一连串圆谷和陡壁。掠过山脉西班牙一侧的奥德萨峡谷，一道谷壁近乎垂直的石灰岩深谷，属于世界遗产范围。随后进入梅塞塔中央高原，这片古老台地约占半岛面积的五分之二，平均海拔六七百米；马德里就坐落在高原腹地，飞机降落在城市以东的巴拉哈斯机场。",
     "en-US":
-      "Shanghai to Madrid runs north-west out of the Yangtze Delta, crosses the entire Eurasian landmass, and ends in the interior of the Iberian Peninsula. After take-off it passes over northern China and Inner Mongolia, the ground shifting from dense towns and waterways to dry grassland. The flight reaches the Gobi on the southern edge of the Mongolian Plateau, where gravel desert stretches to the horizon and the few rivers are mostly seasonal; farther north-west the gravel gives way to open steppe and the gaps between settlements grow steadily longer. Next comes the West Siberian Plain, remarkably flat, laced with winding rivers and scattered with marshes and lakes, one of the largest plains on Earth. The route then crosses the Ural Mountains, an old north-south folded range of modest height that geographers conventionally use to divide Asia from Europe. Beyond it the aircraft runs south-west across the East European Plain and the hills of central Europe, one of the continent's principal farming belts, its fields laid out in regular blocks, its rivers draining north or south to the sea, and its winters often covered by broad sheets of low cloud and snow. Before the Iberian Peninsula the Pyrenees draw a clear snowline across the south. The flight passes Ordesa Canyon on the Spanish flank of that range, a limestone gorge cut into the north face of Monte Perdido with near-vertical walls, inside a World Heritage area. It then crosses the Meseta Central, the ancient plateau covering about two-fifths of the peninsula at an average elevation of 600 to 800 metres. Madrid sits in the heart of that plateau, and the flight lands at Barajas Airport east of the city.",
+      "Shanghai to Madrid runs north-west out of the Yangtze Delta across the entire Eurasian landmass, about 10,000 km in all, ending in the interior of the Iberian Peninsula. After take-off it passes over the North China Plain and the Inner Mongolian Plateau, the ground shifting from dense towns and waterways to open dry grassland, with fewer rivers and steadily longer gaps between villages. The flight reaches the Gobi on the southern edge of the Mongolian Plateau, where gravel desert stretches to the horizon under less than 200 millimetres of rain in most years and the few rivers are largely seasonal; wind erosion has left a hard pavement and the daily temperature often swings more than thirty degrees. Farther north-west the gravel gives way to open steppe and herds and scattered settlements reappear. Next comes the West Siberian Plain, remarkably flat, laced with winding rivers and scattered with marshes and lakes. The route then crosses the Ural Mountains, an old north-south folded range of modest height that is nonetheless the accepted divide between Asia and Europe, its iron, copper and gemstone deposits supporting a string of industrial cities along its length. Beyond it the aircraft runs south-west across the East European Plain and the hills of central Europe, one of the continent's principal farming belts, its fields laid out in regular blocks, its rivers draining north or south to the sea, and its winters often under broad sheets of low cloud and snow. The farther south-west it goes, the more finely valleys and canals divide the ground and the denser the towns become. Before the Iberian Peninsula the Pyrenees draw a clear snowline across the south, a range of granite and limestone that glaciers have carved into a succession of cirques and cliffs. The flight passes Ordesa Canyon on the Spanish flank of that range, a limestone gorge with near-vertical walls inside a World Heritage area. It then crosses the Meseta Central, the ancient plateau covering about two-fifths of the peninsula at an average elevation of 600 to 800 metres; Madrid sits in the heart of it, and the flight lands at Barajas Airport east of the city.",
     },
     travel: {
     "zh-CN":
@@ -5282,21 +5262,17 @@ export const ROUTE_NARRATION: Record<
       "西班牙属申根区，签证按国籍不同、以西班牙驻当地使领馆最新公布为准，行前确认并预留办理时间。马德里午后气温高、餐厅普遍午休较晚开门，出行安排可相应调整。",
     "en-US":
       "Shanghai to Madrid takes about 13 hours 55 minutes on a China Eastern Airbus A350, one of the busiest direct routes between China and Spain. The time difference is 6–7 hours (6 hours during Spanish summer time). Madrid has hot, dry summers and occasional cold snaps in winter, with spring and autumn the most pleasant seasons." +
-      "Barajas Airport is about 12 km from the centre; Metro Line 8 (pink) runs directly into the city, and a 24-hour airport express bus also operates. The Prado, the Reina Sofía and the Thyssen-Bornemisza together form Madrid's \"Golden Triangle of Art\" and offer free entry during certain hours; Puerta del Sol and Plaza Mayor anchor the walkable old town." +
-      "Spain is in the Schengen area; visa rules vary by nationality — check the latest from the Spanish consulate for your location and allow time to arrange one. Afternoons in Madrid run hot and restaurants often open late for dinner, so plan your schedule accordingly.",
+      " Barajas Airport is about 12 km from the centre; Metro Line 8 (pink) runs directly into the city, and a 24-hour airport express bus also operates. The Prado, the Reina Sofía and the Thyssen-Bornemisza together form Madrid's \"Golden Triangle of Art\" and offer free entry during certain hours; Puerta del Sol and Plaza Mayor anchor the walkable old town." +
+      " Spain is in the Schengen area; visa rules vary by nationality — check the latest from the Spanish consulate for your location and allow time to arrange one. Afternoons in Madrid run hot and restaurants often open late for dinner, so plan your schedule accordingly.",
     },
   },
 
   "pvg-ath": {
     study: {
     "zh-CN":
-      "上海飞雅典，是从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地和小亚细亚半岛，最终抵达爱琴海西岸的希腊首都。起飞后飞机向西横穿中国内陆，进入新疆的塔里木盆地——中国面积最大的内陆盆地，盆地中心是世界第二大流动沙漠塔克拉玛干沙漠。" +
-      "继续向西，飞机翻越帕米尔高原——号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点。再往西，飞机跨过中亚腹地，抵达里海上空——世界上面积最大的内陆水体。" +
-      "飞越里海后，飞机进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水量仅两三百毫米，是土耳其的农牧核心区。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。一趟航班，串起了塔克拉玛干的流沙、帕米尔的雪峰和爱琴海的碧波。",
+      "上海飞雅典，从中国东部沿海一路向西，穿过中国西部干旱区、中亚腹地与小亚细亚半岛，终点是爱琴海西岸的希腊首都。起飞后先越过长江三角洲密集的水网与城镇，再往西是华北平原与黄土高原——黄土层厚达上百米，被流水切成一道道深沟，塬、梁、峁交错，是地球上黄土分布最集中的地区。继续向西进入河西走廊：祁连山的冰雪融水在山前形成一串绿洲，绿洲之间是砾石戈壁，聚落与道路被迫挤在这条狭长的通道里。接着是塔里木盆地——中国面积最大的内陆盆地，四周被天山、昆仑山与帕米尔高原围死，水汽进不来，盆地中心是世界第二大流动沙漠塔克拉玛干。继续向西，飞机翻越帕米尔高原，号称“世界屋脊”的山结，慕士塔格峰等雪峰在此汇聚，是天山、昆仑山、喀喇昆仑山等多条山系的交汇点；冰川从峰顶一直伸到谷底，谷地里的河流全年浑浊，带着大量磨蚀下来的岩粉。再往西跨过中亚腹地的干草原与内流盆地，抵达里海上空——世界上面积最大的内陆水体，水面低于海平面约二十八米，没有出海口，水位随入流与蒸发逐年变化。飞越里海后进入土耳其的中安纳托利亚高原：一片被托罗斯山脉与本都山脉环绕的干旱高原，平均海拔六百到一千二百米，年降水仅两三百毫米，地表分布着盐湖与火山地貌。最后飞机跨过散布着上千座岛屿的爱琴海，降落在雅典以南的埃莱夫塞里奥斯·韦尼泽洛斯国际机场。",
     "en-US":
-      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the Aegean's western shore. Soon after take-off the flight heads west across inland China and reaches the Tarim Basin in Xinjiang — China's largest inland basin, at whose centre lies the Taklamakan, the world's second-largest shifting-sand desert." +
-      "Farther west the flight crosses the Pamir Plateau, a mountain knot often called the \"Roof of the World\" where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge. Beyond the Pamirs the route crosses the heart of Central Asia and reaches the Caspian Sea — the largest inland body of water on Earth." +
-      "Past the Caspian the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600–1,200 metres above sea level with only 200–300 mm of annual rainfall — the agricultural and pastoral heartland of Turkey. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens. One flight links the shifting sands of the Taklamakan, the snow peaks of the Pamirs and the blue waters of the Aegean.",
+      "Shanghai to Athens flies west out of coastal eastern China, crossing China's arid west, the heart of Central Asia and the Anatolian peninsula to reach the Greek capital on the western shore of the Aegean. After take-off it passes over the dense waterways and towns of the Yangtze Delta, then the North China Plain and the Loess Plateau, where wind-blown silt lies more than a hundred metres deep and running water has cut it into a maze of deep gullies, tablelands and ridges — the most concentrated loess country on Earth. Farther west comes the Hexi Corridor: meltwater from the Qilian Mountains feeds a string of oases along the range front, gravel desert lies between them, and settlements and roads are forced into that narrow passage. Next is the Tarim Basin, the largest inland basin in China, sealed off by the Tian Shan, the Kunlun and the Pamirs so that moisture cannot reach it, with the Taklamakan — the world's second-largest shifting-sand desert — at its centre. Continuing west the flight crosses the Pamir Plateau, the mountain knot often called the Roof of the World, where snow peaks such as Muztagh Ata rise and the Tian Shan, Kunlun and Karakoram ranges converge; glaciers run from the summits down to the valley floors, and the rivers below stay milky all year with the rock flour they carry. Farther west, past the dry steppe and closed basins of Central Asia, the route reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level and with no outlet to the ocean, so its level shifts from year to year with inflow and evaporation. Beyond it the flight enters Turkey's Central Anatolian Plateau, an arid tableland ringed by the Taurus and Pontic mountains, sitting 600 to 1,200 metres above sea level with only 200 to 300 millimetres of rain a year, its surface dotted with salt lakes and volcanic terrain. Finally the plane crosses the Aegean Sea, scattered with more than a thousand islands, and lands at Eleftherios Venizelos International Airport south of Athens.",
     },
     travel: {
     "zh-CN":
@@ -5305,17 +5281,17 @@ export const ROUTE_NARRATION: Record<
       "希腊属申根区，签证按国籍不同、以希腊驻当地使领馆最新公布为准，行前确认并预留办理时间。夏季正午气温常超35℃，游览卫城等露天古迹建议避开正午时段。",
     "en-US":
       "Shanghai to Athens takes about 11 hours 25 minutes on a Juneyao Airlines Boeing 787, an intercontinental nonstop route between China and Greece currently operating several times a week. The time difference is 5–6 hours (5 hours during Greek summer time). Athens has hot, dry summers and mild, rainy winters, with spring and autumn best for exploring ancient sites." +
-      "Eleftherios Venizelos Airport is about 27 km from the centre; Metro Line 3 (blue) runs directly into the city in about 40 minutes, and airport buses and suburban rail also operate. The Acropolis, the Plaka old town and the National Archaeological Museum are the city's signature sights, mostly reachable on foot or by metro; olive oil, feta cheese and souvlaki are local staples." +
-      "Greece is in the Schengen area; visa rules vary by nationality — check the latest from the Greek consulate for your location and allow time to arrange one. Midday summer temperatures often top 35°C, so it's worth avoiding the early afternoon when visiting open-air sites like the Acropolis.",
+      " Eleftherios Venizelos Airport is about 27 km from the centre; Metro Line 3 (blue) runs directly into the city in about 40 minutes, and airport buses and suburban rail also operate. The Acropolis, the Plaka old town and the National Archaeological Museum are the city's signature sights, mostly reachable on foot or by metro; olive oil, feta cheese and souvlaki are local staples." +
+      " Greece is in the Schengen area; visa rules vary by nationality — check the latest from the Greek consulate for your location and allow time to arrange one. Midday summer temperatures often top 35°C, so it's worth avoiding the early afternoon when visiting open-air sites like the Acropolis.",
     },
   },
 
   "pkx-lis": {
     study: {
     "zh-CN":
-      "北京飞里斯本同样向西北横跨亚欧大陆，但终点更靠西——里斯本在伊比利亚半岛最西端，直面大西洋。起飞后掠过蒙古高原南缘的戈壁，大片砾石滩延伸到天际线，昼夜温差极大；往西北荒漠逐渐转为草原，河流开始变多，地面重新出现连片的绿色。接着进入西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条山脉海拔不高，南北却绵延两千多公里，东坡与西坡的森林构成明显不同。再往前是东欧平原——由古老地台构成的一片开阔低地，起伏极小，河流舒缓，是欧洲面积最大的平原；飞机在这里一路向西南，穿过中欧与法国南部的丘陵，地块和村镇的密度肉眼可见地增加。临近伊比利亚半岛，飞机掠过梅塞塔中央高原的东北角，这片台地由古生代花岗岩与沉积岩构成。再往西地势逐级下降，抵达葡萄牙的大西洋海岸，海岸线曲折、多河口三角湾。飞机最后降落在特茹河口北岸的里斯本机场。",
+      "北京大兴飞里斯本，同样向西北横跨亚欧大陆，但终点更靠西——里斯本在伊比利亚半岛最西端，直面大西洋。起飞后掠过蒙古高原南缘的戈壁，大片砾石滩延伸到天际线，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂；河流多为季节性，昼夜温差极大，聚落沿着为数不多的泉水分布。越往西北，荒漠逐渐转为草原，河流开始变多，地面重新出现连片的绿色。接着进入西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉这道亚欧分界后，山势很快落回平地。这条山脉海拔不高，南北却绵延两千多公里，形成于约三亿年前的一次大陆碰撞，此后长期剥蚀；东坡与西坡的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往前是东欧平原——由古老地台构成的一片开阔低地，起伏极小，河流舒缓，是欧洲面积最大的平原。飞机在这里一路向西南，穿过中欧的河谷与法国南部的丘陵，地块和村镇的密度肉眼可见地增加，田野被公路和运河切成整齐的格子。临近伊比利亚半岛，飞机掠过梅塞塔中央高原的东北角，这片台地由古生代的花岗岩与沉积岩构成，平均海拔六七百米。再往西地势逐级下降，抵达葡萄牙的大西洋海岸，海岸线曲折、多河口三角湾。飞机最后降落在特茹河口北岸的里斯本机场。",
     "en-US":
-      "Beijing to Lisbon also heads north-west across the Eurasian landmass, but ends further west still, since Lisbon lies at the western tip of the Iberian Peninsula facing the Atlantic. After take-off the flight crosses the Gobi on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon under an extreme daily temperature swing; farther north-west the desert gives way to steppe, rivers become more frequent, and continuous green returns to the ground. It then enters the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding across wide areas when the snow melts in spring. Past the Ural Mountains, the conventional divide between Asia and Europe, the land drops back to the flat almost at once. The range is not high, but it runs more than two thousand kilometres north to south, and the forests on its eastern and western slopes differ markedly. Ahead lies the East European Plain, an open lowland built on an ancient platform with very little relief and slow rivers, the largest plain in Europe; the aircraft runs south-west across it and on through central Europe and the hills of southern France, where the density of fields and towns visibly increases. Approaching Iberia the flight crosses the north-eastern corner of the Meseta Central, a plateau built of Palaeozoic granite and sedimentary rock. The land then steps down westward to the Atlantic coast of Portugal, a deeply indented shoreline cut by river-mouth estuaries. The flight lands at Lisbon Airport on the north bank of the Tagus estuary.",
+      "Beijing Daxing to Lisbon also heads north-west across the Eurasian landmass, but ends further west still, since Lisbon lies at the western tip of the Iberian Peninsula facing the Atlantic. After take-off the flight crosses the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon under less than 200 millimetres of rain in most years, the fine sand long since carried off by wind to leave a hard pavement; the rivers are mostly seasonal, the daily temperature swing is extreme, and settlements follow the few springs. The farther north-west the route goes, the more the desert gives way to steppe, rivers become frequent, and continuous green returns to the ground. It then enters the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding across wide areas when the snow melts in spring. Past the Ural Mountains, the conventional divide between Asia and Europe, the land drops back to the flat almost at once. The range is not high, but it runs more than two thousand kilometres north to south; it rose in a continental collision some three hundred million years ago and has been eroded ever since, the forests on its eastern and western slopes differ markedly, and its ore deposits support a string of industrial cities along its length. Ahead lies the East European Plain, an open lowland built on an ancient platform with very little relief and slow rivers, the largest plain in Europe. The aircraft runs south-west across it and on through the valleys of central Europe and the hills of southern France, where the density of fields and towns visibly increases and roads and canals cut the ground into neat blocks. Approaching Iberia the flight crosses the north-eastern corner of the Meseta Central, a plateau of Palaeozoic granite and sedimentary rock at an average elevation of 600 to 800 metres. The land then steps down westward to the Atlantic coast of Portugal, a deeply indented shoreline cut by river-mouth estuaries. The flight lands at Lisbon Airport on the north bank of the Tagus estuary.",
     },
     travel: {
     "zh-CN":
@@ -5324,21 +5300,17 @@ export const ROUTE_NARRATION: Record<
       "葡萄牙属申根区，签证按国籍不同、以葡萄牙驻当地使领馆最新公布为准，行前确认并预留办理时间。阿尔法玛等老城区坡道多、石板路不平，建议穿舒适防滑的鞋。",
     "en-US":
       "Beijing to Lisbon takes about 13 hours 20 minutes on a Beijing Capital Airlines Airbus A330. This route currently runs seasonally — roughly late June to late September each year, once a week — so it's worth confirming it's still operating before you book. The time difference is 7–8 hours (7 hours during Portuguese summer time). Lisbon has dry, hot summers and mild, rainy winters, with spring and autumn the best seasons to visit." +
-      "Lisbon Airport is about 7 km from the centre; the red metro line runs directly into the city in about 20 minutes, and airport buses also operate. The Belém Tower, the Jerónimos Monastery and a ride on the vintage Tram 28 through the Alfama district are signature experiences; pastéis de nata and bacalhau (dried salt cod) are local specialties." +
-      "Portugal is in the Schengen area; visa rules vary by nationality — check the latest from the Portuguese consulate for your location and allow time to arrange one. The Alfama and other old quarters have steep, uneven cobblestone streets, so comfortable, non-slip shoes are worth packing.",
+      " Lisbon Airport is about 7 km from the centre; the red metro line runs directly into the city in about 20 minutes, and airport buses also operate. The Belém Tower, the Jerónimos Monastery and a ride on the vintage Tram 28 through the Alfama district are signature experiences; pastéis de nata and bacalhau (dried salt cod) are local specialties." +
+      " Portugal is in the Schengen area; visa rules vary by nationality — check the latest from the Portuguese consulate for your location and allow time to arrange one. The Alfama and other old quarters have steep, uneven cobblestone streets, so comfortable, non-slip shoes are worth packing.",
     },
   },
 
   "pek-cgk": {
     study: {
     "zh-CN":
-      "北京飞雅加达，是从东亚大陆一路向南，穿过整个中南半岛以东的南海，抵达赤道附近的爪哇岛。起飞后先飞越中国南部，进入南海——西太平洋最大的边缘海之一，海底散布着众多岛礁。" +
-      "继续向南，飞机掠过南海南部的纳土纳群岛——印度尼西亚最北端的岛群，坐落在南海与马六甲海峡之间的航运要道上。再往南，海面逐渐过渡为爪哇海：这是一片被苏门答腊、爪哇、加里曼丹三大岛环抱的浅海，水深大多不足百米，是巽他陆架的一部分（末次冰期海平面较低时曾是陆地）。" +
-      "飞机最终降落在爪哇岛西北岸的雅加达。从中国华北平原到赤道附近的热带岛屿，这趟航班跨越了近40个纬度。",
+      "北京飞雅加达，从东亚大陆一路向南，全程约五千三百公里，终点是赤道附近的爪哇岛。起飞后先飞越华北平原——黄河与海河冲积出来的低平耕地，河渠纵横；再往南是长江中下游平原，湖泊密布、水网交织，夏季的云层常常连成一片。过了长江之后地形抬起，进入江南丘陵与南岭一带，红色砂岩和花岗岩风化出圆缓的山头，梯田顺着坡面层层排布。再往南，珠江三角洲的城市群沿着河口铺开，海岸线在这里向内凹成一个大湾。越过海岸线后进入南海，西太平洋最大的边缘海之一，北部是宽阔的大陆架，中部急剧下陷成四千多米深的海盆，海底散布着大量珊瑚礁和暗沙；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的航运船只。继续向南掠过纳土纳群岛，印度尼西亚最北端的岛群，坐落在通往马六甲海峡的航道要冲上，岛上以低矮丘陵和椰林为主，周围浅海遍布礁盘。往南则过渡为爪哇海，被苏门答腊、爪哇与加里曼丹环抱的浅海，水深大多不足百米，属于巽他陆架，末次冰期海面较低时这里曾是连片的陆地。飞机降落在爪哇岛西北岸的雅加达。",
     "en-US":
-      "Beijing to Jakarta flies almost due south from mainland East Asia, crossing the South China Sea east of the Indochina peninsula to reach an island near the equator. Soon after take-off the flight crosses southern China and enters the South China Sea — one of the largest marginal seas in the western Pacific, its floor dotted with islands and reefs." +
-      "Farther south the flight passes the Natuna Islands, Indonesia's northernmost island group, sitting astride the shipping lane between the South China Sea and the Strait of Malacca. Beyond that the water becomes the Java Sea, a shallow sea enclosed by Sumatra, Java and Borneo — mostly under 100 metres deep and part of the Sunda Shelf, land during the last ice age when sea levels were lower." +
-      "The plane finally lands at Jakarta on the north-west coast of Java. From the North China Plain to a tropical island near the equator, the flight crosses nearly 40 degrees of latitude.",
+      "Beijing to Jakarta runs almost due south from mainland East Asia, about 5,300 km in all, ending on the island of Java near the equator. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers and threaded with canals; farther south lie the plains of the middle and lower Yangtze, dense with lakes and waterways and often under an unbroken sheet of summer cloud. Past the Yangtze the ground rises into the hills of Jiangnan and the Nanling ranges, where red sandstone and granite weather into rounded summits and terraces step up the slopes. Farther south again the cities of the Pearl River delta spread out around the estuary, where the coastline curves inward into a broad bay. Beyond the coast the route enters the South China Sea, one of the largest marginal seas of the western Pacific: a wide continental shelf in the north drops abruptly to a basin more than four thousand metres deep in the middle, its floor scattered with coral reefs and shoals; the water stays warm all year, typhoons cross it frequently, and shipping traffic is visible on it almost continuously. Continuing south the flight passes the Natuna Islands, Indonesia's northernmost group, sitting astride the shipping lane toward the Strait of Malacca, low hills and coconut palm above, reef platforms in the shallows around. Southward the water becomes the Java Sea, a shallow sea enclosed by Sumatra, Java and Borneo, mostly less than a hundred metres deep and part of the Sunda Shelf, which was continuous dry land when sea level was lower during the last ice age. The flight lands at Jakarta on the north-west coast of Java.",
     },
     travel: {
     "zh-CN":
@@ -5347,8 +5319,8 @@ export const ROUTE_NARRATION: Record<
       "中国公民赴印尼的入境政策近年多次调整，出行前请以印尼移民局最新公布为准；随身携带充足现金和常用药品，饮用瓶装水。",
     "en-US":
       "Beijing to Jakarta takes about 6 hours 45 minutes, with a 1-hour time difference (Western Indonesia Time is 1 hour behind Beijing; Indonesia does not observe daylight saving). Jakarta is hot and humid year-round under a tropical monsoon climate — pack light, quick-dry clothing, and expect sudden heavy downpours during the rainy season (November to March)." +
-      "Soekarno-Hatta Airport is about 20 km from the city centre; the airport railway (Kereta Bandara) takes about an hour into town, and Damri airport buses also run. Traffic congestion is significant, so ride-hailing apps and the TransJakarta bus rapid transit system are commonly used. The National Monument, the Old Town (Kota Tua) and Istiqlal Mosque are among the city's landmark sights." +
-      "Entry requirements for Chinese citizens visiting Indonesia have changed several times in recent years — check Indonesia's immigration authority for the latest rules before you travel, carry enough cash and any regular medication, and stick to bottled water.",
+      " Soekarno-Hatta Airport is about 20 km from the city centre; the airport railway (Kereta Bandara) takes about an hour into town, and Damri airport buses also run. Traffic congestion is significant, so ride-hailing apps and the TransJakarta bus rapid transit system are commonly used. The National Monument, the Old Town (Kota Tua) and Istiqlal Mosque are among the city's landmark sights." +
+      " Entry requirements for Chinese citizens visiting Indonesia have changed several times in recent years — check Indonesia's immigration authority for the latest rules before you travel, carry enough cash and any regular medication, and stick to bottled water.",
     },
   },
 
@@ -5360,8 +5332,8 @@ export const ROUTE_NARRATION: Record<
       "越过皮纳图博火山后不久，飞机便转向东南方向进近，降落在吕宋岛中西部的马尼拉。从中国大陆到菲律宾群岛，一趟航班穿越了南海最繁忙的空中航线之一。",
     "en-US":
       "Guangzhou to Manila flies south-east across the South China Sea, straight to Luzon Island. Soon after take-off the plane enters the South China Sea, spending most of the flight over open water dotted with fishing boats and reefs and islets." +
-      "As it nears the Philippines the flight passes Mount Pinatubo on western Luzon: its 1991 eruption was the second-largest volcanic eruption of the 20th century, and the huge amount of ash it threw into the atmosphere briefly cooled the global average temperature; the crater now holds a calm caldera lake." +
-      "Shortly after passing Pinatubo the plane turns south-east on approach and lands at Manila in west-central Luzon. From mainland China to the Philippine archipelago, this flight crosses one of the busiest air corridors over the South China Sea.",
+      " As it nears the Philippines the flight passes Mount Pinatubo on western Luzon: its 1991 eruption was the second-largest volcanic eruption of the 20th century, and the huge amount of ash it threw into the atmosphere briefly cooled the global average temperature; the crater now holds a calm caldera lake." +
+      " Shortly after passing Pinatubo the plane turns south-east on approach and lands at Manila in west-central Luzon. From mainland China to the Philippine archipelago, this flight crosses one of the busiest air corridors over the South China Sea.",
     },
     travel: {
     "zh-CN":
@@ -5370,8 +5342,8 @@ export const ROUTE_NARRATION: Record<
       "菲律宾近年对中国公民实行短期免签政策，具体天数与条件以菲律宾移民局最新公布为准，出行前建议再次核实。",
     "en-US":
       "Guangzhou to Manila takes about 2 hours 35 minutes, with no time difference (both are UTC+8). Manila is hot and humid year-round under a tropical climate, with a rainy season from May to October that brings frequent typhoons — check weather warnings before you travel." +
-      "Ninoy Aquino International Airport is only about 7 km from the city centre, but Manila traffic is chronically congested, so the ride into town can take over an hour depending on conditions; ride-hailing apps and airport taxis are common choices. Landmark sights include the Spanish colonial-era Intramuros and Rizal Park, and jeepneys are the city's distinctive form of public transport." +
-      "The Philippines has in recent years offered short-term visa-free entry for Chinese citizens — check the Philippine Bureau of Immigration's latest rules on the exact duration and conditions before you travel.",
+      " Ninoy Aquino International Airport is only about 7 km from the city centre, but Manila traffic is chronically congested, so the ride into town can take over an hour depending on conditions; ride-hailing apps and airport taxis are common choices. Landmark sights include the Spanish colonial-era Intramuros and Rizal Park, and jeepneys are the city's distinctive form of public transport." +
+      " The Philippines has in recent years offered short-term visa-free entry for Chinese citizens — check the Philippine Bureau of Immigration's latest rules on the exact duration and conditions before you travel.",
     },
   },
 
@@ -5383,8 +5355,8 @@ export const ROUTE_NARRATION: Record<
       "飞机最终降落在草原深处的阿斯塔纳——一座2024年更名前后延续着努尔苏丹旧称的年轻都城，坐落在伊希姆河畔的平坦草原上。这趟航班穿越了从戈壁到欧亚大草原的连续地貌带。",
     "en-US":
       "Beijing to Astana flies west across northern China and Central Asia, staying over mid-latitude continental interior the whole way. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, a broad expanse of gravel desert stretching to the horizon." +
-      "Farther west the plane crosses the Junggar Basin, an inland basin ringed by desert and oases between the Tianshan and Altai ranges, home to Karamay, one of China's largest oil fields. After crossing the China-Kazakhstan border the landscape becomes the Saryarka Steppe, a gently rolling arid steppe at the heart of the Kazakh Uplands and one of Kazakhstan's largest geographic regions, historically part of the wider Eurasian steppe nomadic world." +
-      "The plane finally lands at Astana, a young capital on the flat steppe beside the Ishim River. From the Gobi to the Eurasian steppe, this flight crosses a continuous belt of continental interior landscapes.",
+      " Farther west the plane crosses the Junggar Basin, an inland basin ringed by desert and oases between the Tianshan and Altai ranges, home to Karamay, one of China's largest oil fields. After crossing the China-Kazakhstan border the landscape becomes the Saryarka Steppe, a gently rolling arid steppe at the heart of the Kazakh Uplands and one of Kazakhstan's largest geographic regions, historically part of the wider Eurasian steppe nomadic world." +
+      " The plane finally lands at Astana, a young capital on the flat steppe beside the Ishim River. From the Gobi to the Eurasian steppe, this flight crosses a continuous belt of continental interior landscapes.",
     },
     travel: {
     "zh-CN":
@@ -5393,21 +5365,17 @@ export const ROUTE_NARRATION: Record<
       "这条中哈直飞航线由国航2026年新开通，班次尚在调整中，出行前建议再次核实班期。哈萨克斯坦对中国公民的免签/落地签政策以哈萨克斯坦外交部最新公布为准。",
     "en-US":
       "Beijing to Astana takes about 5 hours 40 minutes, with a 3-hour time difference (Kazakhstan does not observe daylight saving). Astana is one of the coldest capital cities in the world, with a classic temperate continental climate — bitterly cold winters (sometimes below -30°C) and hot, dry summers, so pack for the season accordingly." +
-      "Astana International Airport is about 17 km from the city centre, reachable by airport bus or taxi. In the city, the Khan Shatyr entertainment centre and the Bayterek observation tower are modern landmarks, and the surrounding Saryarka steppe offers a window into Kazakh nomadic culture." +
-      "This nonstop China-Kazakhstan route was newly launched by Air China in 2026 and its schedule may still be settling in — reconfirm before you travel. Visa-free and visa-on-arrival policies for Chinese citizens visiting Kazakhstan are subject to change; check Kazakhstan's Ministry of Foreign Affairs for the latest rules.",
+      " Astana International Airport is about 17 km from the city centre, reachable by airport bus or taxi. In the city, the Khan Shatyr entertainment centre and the Bayterek observation tower are modern landmarks, and the surrounding Saryarka steppe offers a window into Kazakh nomadic culture." +
+      " This nonstop China-Kazakhstan route was newly launched by Air China in 2026 and its schedule may still be settling in — reconfirm before you travel. Visa-free and visa-on-arrival policies for Chinese citizens visiting Kazakhstan are subject to change; check Kazakhstan's Ministry of Foreign Affairs for the latest rules.",
     },
   },
 
   "pek-ist": {
     study: {
     "zh-CN":
-      "北京飞伊斯坦布尔，向西横穿整个亚欧大陆腹地，是中国到欧洲最长的直飞航线之一。起飞后先经过蒙古高原南缘的戈壁荒漠，随后进入中亚腹地——哈萨克丘陵一带的萨雷阿尔卡草原，地势平缓开阔、干旱少雨，是欧亚大草原带的一段。" +
-      "飞越中亚后，飞机进入安纳托利亚东部山地，掠过阿拉拉特山——土耳其最高峰，一座海拔约5137米的层状火山，山顶终年积雪，是安纳托利亚高原东缘最醒目的地标。再往西，地貌过渡为中安纳托利亚高原：一片被古老山系环绕的内陆高原，地表分布着盐湖与火山地貌，是安纳托利亚半岛的地理核心。" +
-      "飞机最终降落在伊斯坦布尔——这座横跨博斯普鲁斯海峡、地跨亚欧两大洲的城市。一趟航班，从中国的首都飞抵了亚欧大陆的另一端。",
+      "北京飞伊斯坦布尔，向西横穿亚欧大陆腹地，全程约七千四百公里，是中国直飞欧洲最长的航线之一，终点是一座地跨亚欧两洲的城市。起飞后越过燕山与阴山，进入蒙古高原南缘的戈壁——一条以砾石和裸岩为主的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，地表因此呈现出深浅不一的褐色斑块；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，聚落沿着为数不多的泉水和水井分布，彼此往往相隔上百公里。再往西进入中亚腹地的萨雷阿尔卡草原，哈萨克丘陵之上一片起伏平缓的干草原，是横贯欧亚的大草原带的一段；这里降水稀少而蒸发强烈，地表水多汇入没有出海口的内流湖，湖岸常留下白色的盐壳，草场在春季短暂返青后迅速转黄，长期以来是游牧放牧的核心地带，如今也是重要的矿产开采区。越过里海与外高加索的山地后，飞机掠过阿拉拉特山——土耳其最高峰，海拔约五千一百米的层状火山，山顶终年积雪，从空中很远就能认出来。再往西转为中安纳托利亚高原，山系环抱的内陆高原，盐湖与火山地貌交错。飞机降落在博斯普鲁斯海峡西侧的伊斯坦布尔机场。",
     "en-US":
-      "Beijing to Istanbul flies west across the interior of the whole Eurasian landmass, one of the longest nonstop routes between China and Europe. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the heart of Central Asia — the Saryarka Steppe of the Kazakh Uplands, a broad, flat, arid landscape that forms part of the wider Eurasian steppe belt." +
-      "Past Central Asia the flight enters the highlands of eastern Anatolia and passes Mount Ararat, Turkey's highest peak — a stratovolcano roughly 5,137 metres high, capped year-round with snow and the most prominent landmark on the eastern edge of the Anatolian Plateau. Farther west the landscape becomes the Central Anatolian Plateau, an inland plateau ringed by ancient mountain ranges, dotted with salt lakes and volcanic terrain, and the geographic core of the Anatolian peninsula." +
-      "The plane finally lands at Istanbul, a city that straddles the Bosphorus Strait and spans both Asia and Europe. One flight has carried the capital of China to the far end of the Eurasian landmass.",
+      "Beijing to Istanbul flies west through the interior of the Eurasian landmass, about 7,400 km in all, one of the longest nonstop routes from China to Europe, ending in a city that stands on two continents at once. After take-off the aircraft crosses the Yan and Yin mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and bare rock where most years bring less than 200 millimetres of rain and the wind has stripped the fine sand away to leave a hard pavement, so the ground reads from the air as patches of brown in many shades; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and settlements follow the few springs and wells, often a hundred kilometres apart. Farther west the route enters the Saryarka Steppe in the heart of Central Asia, a gently rolling dry grassland on the Kazakh Uplands and part of the great steppe belt that runs across Eurasia; rain is scarce and evaporation strong, so surface water collects in lakes with no outlet to the sea and leaves white salt crusts along their shores, the grass greens briefly in spring and turns quickly to straw, and this has long been core grazing country and is now an important mining region as well. Past the Caspian and the mountains of the Caucasus the flight passes Mount Ararat, the highest peak in Turkey, a stratovolcano about 5,100 metres high, snow-capped year round and recognisable from a long way off. Farther west the ground becomes the Central Anatolian Plateau, an inland plateau ringed by mountains where salt lakes and volcanic terrain alternate. The flight lands at Istanbul Airport, on the western side of the Bosphorus.",
     },
     travel: {
     "zh-CN":
@@ -5416,17 +5384,17 @@ export const ROUTE_NARRATION: Record<
       "土耳其对多国公民提供在线电子签证（e-Visa），中国公民具体签证政策以土耳其外交部/驻华使领馆最新公布为准，建议提前在线申请。随身留意人多拥挤区域的财物安全。",
     "en-US":
       "Beijing to Istanbul takes about 10 hours 20 minutes, with a 5-hour time difference (Turkey has used a fixed UTC+3 year-round since 2016 and no longer switches for daylight saving). Istanbul has distinct seasons — hot, dry summers and cool, wet winters — with spring and autumn best for sightseeing." +
-      "Istanbul Airport is about 35 km from the city centre; the M11 metro line runs directly into town with connections to other lines, and HAVAIST airport buses also operate. The Hagia Sophia, the Blue Mosque and the Grand Bazaar are the city's three must-see landmarks, all clustered in the old town within walking distance of each other." +
-      "Turkey offers an online e-Visa for citizens of many countries; check Turkey's Ministry of Foreign Affairs or its consulates for the latest rules for Chinese citizens and apply online in advance. Keep an eye on your belongings in crowded tourist areas.",
+      " Istanbul Airport is about 35 km from the city centre; the M11 metro line runs directly into town with connections to other lines, and HAVAIST airport buses also operate. The Hagia Sophia, the Blue Mosque and the Grand Bazaar are the city's three must-see landmarks, all clustered in the old town within walking distance of each other." +
+      " Turkey offers an online e-Visa for citizens of many countries; check Turkey's Ministry of Foreign Affairs or its consulates for the latest rules for Chinese citizens and apply online in advance. Keep an eye on your belongings in crowded tourist areas.",
     },
   },
 
   "can-syd": {
     study: {
     "zh-CN":
-      "广州飞悉尼，一路向东南跨过整个西太平洋，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——这片半封闭的边缘海平均水深超过一千米，中部有深达四千多米的海盆，海面上常见成串的岛礁与浅滩。航线继续南下，掠过菲律宾棉兰老岛上的阿波山，这座海拔约2954米的层状火山是菲律宾最高峰，山顶常年云遮。此后是漫长的越洋段：飞机穿过赤道，跨越印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁与火山岛的白边。夜航时这一段几乎看不到灯光，是全程最安静的一程。再往南进入珊瑚海，这片海的西缘就是大堡礁——世界上最大的珊瑚礁群，晴天时从高空能看到浅水区特有的青绿色。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀后剩下的硬岩芯。最后沿海岸南下，降落在悉尼机场。",
+      "广州飞悉尼，向东南跨过整个西太平洋，全程约九千公里，是中澳之间最繁忙的航线之一。起飞后不久便离开陆地进入南海——一片半封闭的边缘海，北部是宽阔的大陆架，中部下陷成四千多米深的海盆，海面上散布着成串的岛礁与浅滩；这一带终年高温，是台风频繁经过的海域，海面上常年可见密集的货轮航迹。继续南下，飞机掠过菲律宾棉兰老岛上的阿波山——海拔约两千九百五十米的层状火山，全国最高峰，山顶常年裹着云，山坡上从热带雨林一路过渡到高山苔藓林。此后是漫长的越洋段：航线穿过赤道，越过印度尼西亚东部与新几内亚一带的岛链，下方大多是深蓝的开阔洋面，偶尔露出环礁一圈白亮的浪线和火山岛陡直的锥形轮廓。这一带正处在太平洋板块与澳大利亚板块碰撞的前沿，海底地形起伏剧烈，深海沟与海底山脉交替出现，岛上火山活动频繁。新几内亚岛中部横亘着一条东西走向的高大山脉，山脊超过四千米，终年留有零星积雪，两侧被浓密的热带雨林覆盖，云层往往从上午就开始堆积。夜航时这一程几乎看不到灯光，是全程最安静的一段。再往南进入珊瑚海，海底是一系列深达三四千米的盆地，西缘的大陆架上发育着世界上最大的堡礁系统；晴天从高空能看到浅水区特有的青绿色，礁体之间是颜色更深的水道。接近澳大利亚东岸时，玻璃屋山的一组火山颈从平地上突兀立起，那是两千多万年前的火山通道被侵蚀之后剩下的坚硬岩芯，周围较软的岩层早已被剥去。飞机沿海岸南下，降落在悉尼机场。",
     "en-US":
-      "Guangzhou to Sydney runs south-east across the whole western Pacific and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea averaging more than a thousand metres deep, with a central basin over four thousand metres down and long chains of reefs and shoals breaking its surface. The route continues south past Mount Apo on Mindanao in the Philippines, a stratovolcano of about 2,954 metres and the highest peak in the country, its summit usually under cloud. Then comes the long oceanic stretch: the aircraft crosses the equator and passes the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional white rim of an atoll or volcanic island. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south lies the Coral Sea, whose western edge carries the Great Barrier Reef, the largest coral reef system in the world, its shallows showing the distinctive green of reef water on a clear day. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground, the hard cores of vents left standing after more than twenty million years of erosion stripped the softer rock away. The flight then runs south along the coast and lands at Sydney Airport.",
+      "Guangzhou to Sydney runs south-east across the whole western Pacific, about 9,000 km in all, and is one of the busiest routes between China and Australia. Soon after take-off the flight leaves land over the South China Sea, a semi-enclosed marginal sea with a wide continental shelf in the north dropping to a basin more than four thousand metres deep in the middle, its surface broken by long chains of reefs and shoals; the water stays warm all year, typhoons cross it frequently, and the wakes of cargo ships are visible on it almost continuously. Continuing south the aircraft passes Mount Apo on Mindanao in the Philippines, a stratovolcano about 2,950 metres high and the country's highest peak, its summit usually wrapped in cloud and its slopes grading from tropical rainforest up into high mossy forest. Then comes the long oceanic stretch: the route crosses the equator and the island chains of eastern Indonesia and New Guinea, with mostly deep blue open water below and only the occasional bright rim of surf around an atoll or the steep cone of a volcanic island. This is the front line where the Pacific and Australian plates collide, so the sea floor is violently uneven, deep trenches alternating with submarine ranges, and volcanic activity on the islands is frequent. Down the middle of New Guinea runs a high east-west range whose ridges pass four thousand metres and hold patches of snow year round, flanked by dense rainforest with cloud that often starts building by mid-morning. On a night flight almost no lights appear along this stretch, the quietest part of the journey. Farther south comes the Coral Sea, floored by a series of basins three to four thousand metres deep, with the largest barrier reef system in the world built up on the shelf along its western edge; on a clear day the distinctive green of the shallows is visible from altitude, cut by darker channels between the reefs. Approaching the Australian east coast, the volcanic plugs of the Glass House Mountains rise abruptly from flat ground — the hard cores of vents left standing after more than twenty million years stripped the softer rock from around them. The flight then runs south along the coast and lands at Sydney Airport.",
     },
     travel: {
     "zh-CN":
@@ -5435,21 +5403,17 @@ export const ROUTE_NARRATION: Record<
       "中国公民赴澳大利亚须提前在线申请电子签证（600类旅游签证等），具体材料与审批时长以澳大利亚内政部最新公布为准，建议预留至少数周办理时间。",
     "en-US":
       "Guangzhou to Sydney takes about 10 hours, with a 2-3 hour time difference (eastern Australia observes daylight saving, giving a 3-hour gap from Beijing between October and April, and 2 hours the rest of the year). Sydney's seasons run opposite the northern hemisphere — summer is December to February, winter June to August — so pack accordingly." +
-      "Sydney Airport is about 8 km from the city centre; the Airport Link train takes about 13 minutes into town. The Opera House, the Harbour Bridge and Bondi Beach are the city's three signature sights, and the Opal card is the standard way to pay for public transport." +
-      "Chinese citizens must apply online for a visa (such as the Subclass 600 tourist visa) before travelling to Australia; check Australia's Department of Home Affairs for the latest requirements and processing times, and allow at least a few weeks to arrange one.",
+      " Sydney Airport is about 8 km from the city centre; the Airport Link train takes about 13 minutes into town. The Opera House, the Harbour Bridge and Bondi Beach are the city's three signature sights, and the Opal card is the standard way to pay for public transport." +
+      " Chinese citizens must apply online for a visa (such as the Subclass 600 tourist visa) before travelling to Australia; check Australia's Department of Home Affairs for the latest requirements and processing times, and allow at least a few weeks to arrange one.",
     },
   },
 
   "pvg-akl": {
     study: {
     "zh-CN":
-      "上海飞奥克兰，是中国到大洋洲最远的直飞航线之一，几乎全程飞越西太平洋开阔海域。起飞后先进入菲律宾海——西太平洋一片被菲律宾群岛、台湾岛与马里亚纳群岛环绕的深海海域，马里亚纳海沟便位于其东侧。" +
-      "继续向东南，飞机掠过俾斯麦海：新几内亚岛以北一片被俾斯麦群岛环抱的海域，火山活动活跃、珊瑚礁资源丰富。再往南进入珊瑚海——大堡礁所在海域，是西南太平洋一片以生物多样性著称的边缘海。" +
-      "飞机最终穿过塔斯曼海——分隔澳大利亚与新西兰的宽阔海域，降落在新西兰北岛的奥克兰。从中国东部沿海到南半球的岛国，这趟航班几乎全程都在大洋之上。",
+      "上海飞奥克兰，向东南穿越西太平洋，全程约九千四百公里，从北半球一直飞到南半球。起飞后先掠过东海，这是一片平均水深不足两百米的陆架海，海底铺着长江搬运来的泥沙，冬季常有寒潮南下带来的大风。接着进入菲律宾海——西太平洋最大的边缘海，被琉球、菲律宾与马里亚纳诸岛围出一片深水盆地，东缘的马里亚纳海沟是地球表面已知最深处，超过一万米；洋面上常年高温高湿，是台风重要的生成海域。越过赤道后是俾斯麦海，夹在新几内亚岛与新不列颠岛之间的一片小而深的海，海底有活跃的扩张中心与热液喷口，周边岛弧火山活动频繁，海岸多被浓密的热带雨林覆盖。再往南是珊瑚海，海底是一系列深海盆地，西侧的大陆架上发育着世界上规模最大的堡礁系统，礁体由造礁石珊瑚在浅暖水中长期堆积而成。接下来横穿塔斯曼海，这片海域西风强劲、涌浪终年不息。最后飞机进入新西兰北岛上空，降落在奥克兰机场。",
     "en-US":
-      "Shanghai to Auckland is one of the longest nonstop routes between China and Oceania, spending almost the whole flight over open water in the western Pacific. After take-off the flight enters the Philippine Sea, a deep-water expanse of the western Pacific bounded by the Philippine archipelago, Taiwan and the Mariana Islands — the Mariana Trench lies just to its east." +
-      "Continuing south-east, the plane passes the Bismarck Sea, a body of water north of New Guinea ringed by the Bismarck Archipelago, with active volcanism and rich coral reefs. Farther south lies the Coral Sea, home to the Great Barrier Reef and known for its biodiversity as a marginal sea of the south-west Pacific." +
-      "The plane finally crosses the Tasman Sea, the wide body of water separating Australia and New Zealand, and lands at Auckland on New Zealand's North Island. From China's eastern coast to an island nation in the southern hemisphere, this flight spends nearly its entire duration over open ocean.",
+      "Shanghai to Auckland runs south-east across the western Pacific, about 9,400 km in all, from the northern hemisphere into the southern. After take-off it crosses the East China Sea, a shelf sea less than two hundred metres deep on average, its floor covered by silt carried out by the Yangtze and its surface swept by strong winds when cold air pushes south in winter. The route then enters the Philippine Sea, the largest marginal sea of the western Pacific, a deep basin enclosed by the Ryukyu, Philippine and Mariana island arcs; along its eastern edge the Mariana Trench reaches the deepest known point on the Earth's surface, more than ten thousand metres down, and the warm, humid air above it is a major birthplace of typhoons. Past the equator comes the Bismarck Sea, a small deep sea between New Guinea and New Britain, with active spreading centres and hydrothermal vents on its floor, frequent volcanic activity along the surrounding island arc and dense rainforest running down to its shores. Farther south lies the Coral Sea, floored by a series of deep basins, with the largest barrier reef system in the world built up on the shelf along its western side by reef-building corals in shallow warm water. The flight then crosses the Tasman Sea, where westerly winds are strong and the swell never fully settles. It finally reaches the North Island of New Zealand and lands at Auckland Airport.",
     },
     travel: {
     "zh-CN":
@@ -5458,17 +5422,17 @@ export const ROUTE_NARRATION: Record<
       "中国公民赴新西兰须提前在线申请电子旅行许可（NZeTA）或签证，具体要求以新西兰移民局最新公布为准，建议出发前至少提前数天完成申请。",
     "en-US":
       "Shanghai to Auckland takes about 11 hours 40 minutes, with a 4-5 hour time difference (New Zealand observes daylight saving, giving a 5-hour gap from Beijing between September and April, and 4 hours the rest of the year). New Zealand's seasons run opposite the northern hemisphere — summer is December to February, winter June to August — pack accordingly, and note that UV levels are strong, so sun protection is worth packing too." +
-      "Auckland Airport is about 21 km from the city centre; the SkyBus/Airport Link express bus takes about 45 minutes into town. The Sky Tower, the Waiheke Island wineries and the Auckland War Memorial Museum (a good introduction to Māori culture) are among the city's signature outings." +
-      "Chinese citizens must apply online for a New Zealand Electronic Travel Authority (NZeTA) or visa before travelling; check New Zealand Immigration for the latest requirements and apply at least a few days ahead of departure.",
+      " Auckland Airport is about 21 km from the city centre; the SkyBus/Airport Link express bus takes about 45 minutes into town. The Sky Tower, the Waiheke Island wineries and the Auckland War Memorial Museum (a good introduction to Māori culture) are among the city's signature outings." +
+      " Chinese citizens must apply online for a New Zealand Electronic Travel Authority (NZeTA) or visa before travelling; check New Zealand Immigration for the latest requirements and apply at least a few days ahead of departure.",
     },
   },
 
   "pvg-zrh": {
     study: {
     "zh-CN":
-      "上海飞苏黎世，从长江口一路向西北横穿亚欧大陆，终点是阿尔卑斯山北麓的一片高地。起飞后先掠过华北平原，黄河与海河冲积出的这片平原地势极低平，耕地与城镇连成一片，河渠纵横。再往西北进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，河流稀少且多为季节性；这一带昼夜温差极大，几乎没有连续植被，聚落之间常隔上百公里。接着是萨雷阿尔卡草原——哈萨克丘陵上的一片干草原，地势起伏和缓，春季融雪在洼地里积成大量季节性湖泊，是候鸟迁徙路线上的重要中继，湖群已列入世界遗产。再往西草原让位给耕地，河流转为常年有水，村镇开始密集起来。飞越东欧平原后，地势仍旧平缓，直到中欧的丘陵与河谷把地面切得细碎；莱茵河与多瑙河的分水岭就在这一带。最后飞机进入瑞士高原——夹在汝拉山与阿尔卑斯山之间的一条带状低地，瑞士大部分人口和城市都集中在这里，苏黎世湖北端就是苏黎世，飞机降落在城北的苏黎世机场。",
+      "上海飞苏黎世，向西北横跨亚欧大陆，全程约九千四百公里，终点在阿尔卑斯山北麓。起飞后先越过长江口，江水带来的泥沙把这一带的海面染成浑黄。接着进入华北平原——黄河与海河长期泛滥淤积出来的低平耕地，地势自西向东缓缓降低，坡度小到肉眼难以察觉；黄河历史上多次改道，留下一条条废弃的古河床和高出地面的堤岸，如今这里是中国耕地与人口最密集的地区之一。再往西北进入蒙古高原南缘的戈壁——以砾石和裸岩为主的干旱带，年降水多在两百毫米以下，风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度。越往西北，砾漠逐渐让位给草原，地表重新出现连续的草皮和季节性的牧场。接着是中亚腹地的萨雷阿尔卡草原，哈萨克丘陵之上起伏平缓的干草原，属于横贯欧亚的大草原带；这里降水稀少、蒸发强烈，地表水多汇入没有出海口的内流湖，湖岸留下白色盐壳，春季短暂返青后草场迅速转黄。再往西地势继续下降，进入里海北岸的低地——世界上面积最大的洼地之一，部分地面低于海平面；伏尔加河从这里注入里海，河口散开成大片芦苇湿地和沙洲，是候鸟迁徙路线上的重要中继站。越过伏尔加河后是东欧平原，古老地台之上起伏极小的开阔低地，河流舒缓，田块与林带的图案从空中看格外规整，冬季常见大范围积雪。最后飞机跨过中欧的丘陵，进入瑞士高原：夹在汝拉山与阿尔卑斯山之间的一条带状低地，冰川退去后留下湖泊与冰碛丘陵，瑞士的大部分城市都集中在这里。飞机降落在苏黎世机场。",
     "en-US":
-      "Shanghai to Zurich runs north-west from the mouth of the Yangtze across the Eurasian landmass to a plateau on the northern flank of the Alps. After take-off the flight crosses the North China Plain, low and level ground built by the silt of the Yellow and Hai rivers, its farmland and towns running together and threaded with canals. Farther north-west it reaches the Gobi on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon with few and largely seasonal rivers; the daily temperature swing is extreme, no continuous vegetation forms, and settlements can lie a hundred kilometres apart. Next comes the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where the spring melt pools into great numbers of seasonal lakes, an important staging ground on the migratory bird routes, with the lake systems inscribed as World Heritage. Farther west the steppe gives way to cultivated land, rivers begin to run year-round, and villages and towns grow dense. Beyond the East European Plain the ground stays gentle until the hills and valleys of central Europe break it up; the watershed between the Rhine and the Danube lies along here. The aircraft finally enters the Swiss Plateau, a belt of lower ground caught between the Jura and the Alps where most of the country's people and cities are concentrated, with Zurich at the northern end of its lake, and lands at Zurich Airport north of the city.",
+      "Shanghai to Zurich runs north-west across the Eurasian landmass, about 9,400 km in all, ending at the northern foot of the Alps. After take-off it crosses the mouth of the Yangtze, where the river's silt stains the sea a muddy yellow. The route then enters the North China Plain, low farmland built up by long flooding of the Yellow and Hai rivers, sloping so gently from west to east that the fall is invisible to the eye; the Yellow River has changed course many times, leaving abandoned channels and raised levees across the ground, and this is now among the most densely farmed and densely settled parts of China. Farther north-west comes the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt of gravel and bare rock where most years bring less than 200 millimetres of rain; the wind has carried the fine sand away to leave a hard pavement and piled it downwind into dune fields, the rivers are mostly seasonal, running briefly after rain and then drying out, and the daily temperature can swing more than thirty degrees. The farther north-west the flight goes, the more the gravel gives way to steppe, with continuous turf and seasonal pasture returning to the surface. Next is the Saryarka Steppe in the heart of Central Asia, gently rolling dry grassland on the Kazakh Uplands and part of the great Eurasian steppe belt; rain is scarce and evaporation strong, surface water collects in lakes with no outlet to the sea and leaves white salt crusts on their shores, and the grass greens briefly in spring before turning to straw. Farther west the land keeps dropping into the lowland north of the Caspian, one of the largest depressions on Earth, parts of it below sea level; the Volga enters the Caspian here, spreading at its mouth into wide reed marsh and sandbars that are an important staging ground on the bird migration routes. Past the Volga lies the East European Plain, an open lowland on an ancient platform with almost no relief, its rivers slow and its fields and shelterbelts reading from the air as a strikingly regular pattern, often under broad winter snow. The flight finally crosses the hills of central Europe onto the Swiss Plateau, a belt of lowland between the Jura and the Alps where retreating glaciers left lakes and moraine hills and where most of the country's cities are concentrated. It lands at Zurich Airport.",
     },
     travel: {
     "zh-CN":
@@ -5477,17 +5441,17 @@ export const ROUTE_NARRATION: Record<
       "瑞士属申根区但非欧盟成员，签证按国籍不同、以瑞士驻当地使领馆最新公布为准，行前确认并预留办理时间。瑞士整体治安良好，但公共设施与物价水平均较高，出行预算需留有余量。",
     "en-US":
       "Shanghai to Zurich takes about 12 hours, with a 6–7 hour time difference (6 hours during Swiss summer time). Switzerland has cool, pleasant summers and cold, snowy winters, with large day–night temperature swings in the Alps — pack layers." +
-      "Zurich Airport is about 10 km from the city centre; the S-Bahn runs directly to Zurich main station in about 10 minutes. Trams, buses and ferries share one ticketing system. Zurich's Old Town, Bahnhofstrasse and the Lindenhof terrace are popular spots, and a stroll along the lakeshore is a local favourite." +
-      "Switzerland is in the Schengen area but not an EU member; visa rules vary by nationality — check the latest from the Swiss consulate for your location and allow time to arrange one. Switzerland is generally very safe, but prices for services and goods run high, so budget accordingly.",
+      " Zurich Airport is about 10 km from the city centre; the S-Bahn runs directly to Zurich main station in about 10 minutes. Trams, buses and ferries share one ticketing system. Zurich's Old Town, Bahnhofstrasse and the Lindenhof terrace are popular spots, and a stroll along the lakeshore is a local favourite." +
+      " Switzerland is in the Schengen area but not an EU member; visa rules vary by nationality — check the latest from the Swiss consulate for your location and allow time to arrange one. Switzerland is generally very safe, but prices for services and goods run high, so budget accordingly.",
     },
   },
 
   "pvg-vie": {
     study: {
     "zh-CN":
-      "上海飞维也纳，从长江口向西北横穿亚欧大陆，终点在阿尔卑斯山东端的一片低地。起飞后先掠过华北平原，黄河与海河冲积出的这片平原地势极低平，耕地与城镇连成一片，是中国人口最密集的区域之一。再往西北进入蒙古高原南缘的戈壁，地表以砾石为主，河流稀少且多为季节性；这里昼夜温差极大，夏季地表能到五六十度，冬季又降到零下三四十度，几乎没有连续植被。接着是萨雷阿尔卡草原——哈萨克丘陵上的一片干草原，地势起伏和缓，春季融雪在洼地里积成成千上万个季节性湖泊，是候鸟迁徙路线上的重要中继站，这一带的湖群已列入世界遗产。再往西，草原逐渐让位给耕地，河流开始稳定，聚落密度肉眼可见地上升。飞越东欧平原之后，地势依旧平缓，直到喀尔巴阡山在南面拉出一道弧线。飞机最后进入维也纳盆地，这片低地夹在阿尔卑斯山与喀尔巴阡山之间，多瑙河从中穿过，维也纳就建在河的两岸，飞机降落在城市东南的维也纳国际机场。",
+      "上海飞维也纳，从长江口向西北横穿亚欧大陆，终点在阿尔卑斯山东端的一片低地。起飞后先掠过华北平原，黄河与海河冲积出来的低平耕地，地势极为平坦，耕地与城镇连成一片，是中国人口最密集的区域之一。再往西北进入蒙古高原南缘的戈壁，地表以砾石为主，河流稀少且多为季节性；昼夜温差极大，夏季地表能升到五六十度，冬季又降到零下三四十度，几乎没有连续植被。风把细沙吹走后留下坚硬的砾幂，被搬走的沙在下风处堆成沙丘带。接着是萨雷阿尔卡草原——哈萨克丘陵上的一片干草原，地势起伏和缓；春季融雪在洼地里积成成千上万个季节性湖泊，是候鸟迁徙路线上的重要中继站，这一带的湖群已列入世界遗产。夏季蒸发强烈，不少湖泊缩小甚至干涸，湖岸留下白色的盐壳，草场随之从绿转黄，牧群向北迁到还有水的洼地。这一带地下埋藏着丰富的铜、铅锌与煤，采矿点散布在草原之间，是哈萨克斯坦最主要的工业地带之一。再往西草原逐渐让位给耕地，河流开始稳定，田块与防风林带成排出现，聚落密度肉眼可见地上升。飞越东欧平原之后，地势依旧平缓，直到喀尔巴阡山在南面拉出一道弧线。飞机最后进入维也纳盆地，这片低地夹在阿尔卑斯山与喀尔巴阡山之间，多瑙河从中穿过，降落在城市东南的维也纳国际机场。",
     "en-US":
-      "Shanghai to Vienna runs north-west from the mouth of the Yangtze across the Eurasian landmass to a lowland at the eastern end of the Alps. After take-off the flight crosses the North China Plain, low and level ground built by the silt of the Yellow and Hai rivers, its farmland and towns running together as one of the most densely settled parts of China. Farther north-west it reaches the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel where rivers are few and largely seasonal; the daily temperature swing is extreme, ground temperatures climbing above 50°C in summer and falling to −30°C or lower in winter, and no continuous vegetation forms. Next comes the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where the spring melt pools into many thousands of seasonal lakes, an important staging ground on the migratory bird routes, and the lake systems here are inscribed as World Heritage. Farther west the steppe gives way to cultivated land, rivers run more reliably, and the density of settlement visibly rises. Beyond the East European Plain the ground stays gentle until the Carpathians draw an arc across the south. The flight finally enters the Vienna Basin, a lowland caught between the Alps and the Carpathians with the Danube running through it and Vienna built on both banks, landing at Vienna International Airport south-east of the city.",
+      "Shanghai to Vienna runs north-west from the mouth of the Yangtze across the Eurasian landmass to a lowland at the eastern end of the Alps. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, so level that fields and towns run together as one of the most densely settled parts of China. Farther north-west it enters the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel where rivers are few and largely seasonal; the daily temperature swing is extreme, ground temperatures climbing above 50°C in summer and falling to −30°C or lower in winter, and no continuous vegetation forms. The wind has carried the fine sand away to leave a hard pavement and piled it downwind into belts of dune. Next comes the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where the spring melt pools into many thousands of seasonal lakes, an important staging ground on the migratory bird routes, with the lake systems here inscribed as World Heritage. Evaporation is strong in summer, so many of the lakes shrink or dry out entirely and leave white salt crusts along their shores, the grass turns from green to straw, and herds move north to the hollows that still hold water. Copper, lead-zinc and coal lie under this ground, and mining sites scattered across the grassland make it one of Kazakhstan's principal industrial belts. Farther west the grassland gives way to cultivated land, rivers run more reliably, fields and shelterbelts appear in rows, and the density of settlement visibly rises. Beyond the East European Plain the ground stays gentle until the Carpathians draw an arc across the south. The flight finally enters the Vienna Basin, a lowland caught between the Alps and the Carpathians with the Danube running through it, and lands at Vienna International Airport south-east of the city.",
     },
     travel: {
     "zh-CN":
@@ -5496,17 +5460,17 @@ export const ROUTE_NARRATION: Record<
       "奥地利属申根区，签证按国籍不同、以奥地利驻当地使领馆最新公布为准，行前确认并预留办理时间。剧院、教堂等场所着装宜整洁得体。",
     "en-US":
       "Shanghai to Vienna takes about 12 hours 25 minutes, with a 6–7 hour time difference (6 hours during Austrian summer time). Vienna has distinct seasons — warm summers, cold winters — with concerts and opera running year-round, plus Christmas markets in winter." +
-      "Vienna International Airport is about 18 km from the city centre; the City Airport Train (CAT) takes about 16 minutes direct into town, and the cheaper S7 suburban line also runs in. Trams and the metro share one ticketing system. Schönbrunn Palace, St. Stephen's Cathedral and the Vienna State Opera are must-sees, and many museums offer student or evening discounts." +
-      "Austria is in the Schengen area; visa rules vary by nationality — check the latest from the Austrian consulate for your location and allow time to arrange one. Dress neatly for theatres and churches.",
+      " Vienna International Airport is about 18 km from the city centre; the City Airport Train (CAT) takes about 16 minutes direct into town, and the cheaper S7 suburban line also runs in. Trams and the metro share one ticketing system. Schönbrunn Palace, St. Stephen's Cathedral and the Vienna State Opera are must-sees, and many museums offer student or evening discounts." +
+      " Austria is in the Schengen area; visa rules vary by nationality — check the latest from the Austrian consulate for your location and allow time to arrange one. Dress neatly for theatres and churches.",
     },
   },
 
   "pvg-dub": {
     study: {
     "zh-CN":
-      "上海飞都柏林是中国与爱尔兰之间的首条直飞航线，向西北横跨整个亚欧大陆。起飞后先经过华北平原——黄河与海河冲积出的这片平原地势低平，耕地连片，是中国最主要的农业区之一。接着进入蒙古高原南缘的戈壁，地表以砾石为主，植被稀疏，聚落之间相隔很远；再往西北，草原逐渐取代荒漠，河流重新出现。继续深入西伯利亚腹地，进入西西伯利亚平原，森林与沼泽交织、河流蜿蜒，是世界上最大的平原之一。这片平原东西宽约一千五百公里，地表落差极小，春汛时河水漫出河道，大片林地泡在水里数周之久；再往西，平原让位给东欧的农田与城镇，地面重新变得规整。飞越欧洲大陆后航线转向西，越过北海——大不列颠岛与欧洲大陆之间的一片浅海，海底是冰期留下的沉积。跨过爱尔兰海后进入爱尔兰中部低地，这里以泥炭沼泽和牧场为主，著名的艾伦沼泽就在这一带。飞机最终降落在都柏林机场；这条航线全程约9400公里，是该机场目前最长的定期直飞航线。",
+      "上海飞都柏林，向西北横跨整个亚欧大陆，是中国与爱尔兰之间的首条直飞航线。起飞后先经过华北平原——黄河与海河冲积出来的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国最主要的农业区之一。接着进入蒙古高原南缘的戈壁，地表以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂；河流稀少且多为季节性，聚落沿着为数不多的泉水分布，彼此相隔很远。再往西北，草原逐渐取代荒漠，河流重新出现。继续深入内陆，进入西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖和沼泽，从空中看像撒了一地的碎镜片。再往西平原让位给东欧的农田与城镇，田块、林带和公路把地表切成整齐的格子。越过欧洲大陆后航线转向西，跨过北海这片浅海，海底是冰期留下的沉积。跨过爱尔兰海后进入以泥炭沼泽和牧场为主的中部低地，飞机降落在都柏林机场。",
     "en-US":
-      "Shanghai to Dublin is the first nonstop route between mainland China and Ireland, flying north-west across the whole of Eurasia. After take-off the flight crosses the North China Plain, low and level ground built by the silt of the Yellow and Hai rivers and one of the country's principal farming regions. It then reaches the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel with sparse vegetation and long distances between settlements; farther north-west steppe replaces desert and rivers reappear. Continuing deep into Siberia, the route crosses the West Siberian Plain, threaded with forest, marsh and winding rivers, one of the largest plains on Earth. The plain runs some fifteen hundred kilometres from east to west with almost no change in elevation, and at the spring flood the rivers spill their channels and leave wide stands of forest standing in water for weeks; farther west the plain gives way to the farmland and towns of eastern Europe and the ground turns regular again. Past continental Europe the track turns west over the North Sea, the shallow water between Great Britain and the mainland, its bed laid down during the ice ages. After the Irish Sea the aircraft enters the Central Lowlands of Ireland, a gentle landscape of peat bog and pasture that includes the well-known Bog of Allen. The flight lands at Dublin Airport; at roughly 9,400 km it is currently that airport's longest scheduled nonstop route.",
+      "Shanghai to Dublin runs north-west across the whole of Eurasia and is the first nonstop route between mainland China and Ireland. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, sloping so gently from west to east that the fall is invisible, threaded with canals and one of the country's principal farming regions. It then enters the Gobi on the southern edge of the Mongolian Plateau, a surface mostly of gravel and bare rock where most years bring less than 200 millimetres of rain and wind erosion has left a hard pavement; rivers are few and largely seasonal, and settlements follow the scarce springs, far apart from one another. Farther north-west steppe replaces desert and rivers reappear. Continuing inland the route reaches the West Siberian Plain, one of the largest plains on Earth, some fifteen hundred kilometres across with almost no change in elevation; the Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave stands of conifer forest standing in water for weeks. Beneath it lies continuous or patchy permafrost, so water cannot drain away and collects into countless shallow lakes and bogs that read from the air like shards of scattered mirror. Farther west the plain gives way to the farmland and towns of eastern Europe, where fields, shelterbelts and roads cut the ground into neat blocks. Past continental Europe the track turns west across the North Sea, shallow water whose bed was laid down during the ice ages. Beyond the Irish Sea it enters the central lowlands of peat bog and pasture, and the flight lands at Dublin Airport.",
     },
     travel: {
     "zh-CN":
@@ -5515,17 +5479,17 @@ export const ROUTE_NARRATION: Record<
       "爱尔兰不属于申根区，签证按国籍不同、以爱尔兰移民局最新公布为准，行前确认并预留办理时间。这条航线2026年7月才开通，出行前建议再次核实航班班期是否有变动。",
     "en-US":
       "Shanghai to Dublin takes about 13 hours 20 minutes, currently the only nonstop route between mainland China and Ireland, with a 7–8 hour time difference (7 hours during Irish summer time). Ireland is mild and rainy year-round — a waterproof jacket is worth packing in any season." +
-      "Dublin Airport is about 10 km from the city centre; the Airlink or Aircoach buses take about 30–45 minutes into town, and taxis are also available. Trinity College, the Guinness Storehouse and St. Patrick's Cathedral are all within walking distance of the centre, and pub culture and live music are local specialties." +
-      "Ireland is not in the Schengen area; visa rules vary by nationality — check the latest from Irish immigration for your nationality and allow time to arrange one. This route only launched in July 2026, so it's worth reconfirming the schedule before you travel.",
+      " Dublin Airport is about 10 km from the city centre; the Airlink or Aircoach buses take about 30–45 minutes into town, and taxis are also available. Trinity College, the Guinness Storehouse and St. Patrick's Cathedral are all within walking distance of the centre, and pub culture and live music are local specialties." +
+      " Ireland is not in the Schengen area; visa rules vary by nationality — check the latest from Irish immigration for your nationality and allow time to arrange one. This route only launched in July 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-osl": {
     study: {
     "zh-CN":
-      "北京飞奥斯陆，向西北横跨亚欧大陆北部，终点在斯堪的纳维亚半岛南端。起飞后向西北爬升，进入蒙古高原南缘的戈壁，砾石滩铺到天际线；这片荒漠年降水多在两百毫米以下，风把细沙吹走后留下一层坚硬的砾幂，地表看上去像被打磨过。再往北是西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小。鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久；沼泽面积之大，使这一带成为地球上重要的碳汇之一。越过乌拉尔以西之后，飞机接近波罗的海沿岸，海岸线低平、多沙洲与潟湖，冬季部分海湾结冰。最后跨过格洛马河——挪威最长的河流，从山地南流注入海峡，两岸是连片的针叶林与湖泊，飞机降落在奥斯陆以北的加勒穆恩机场。",
+      "北京飞奥斯陆，向西北横跨亚欧大陆北部，全程约七千五百公里，终点在斯堪的纳维亚半岛南端。起飞后向西北爬升，进入蒙古高原南缘的戈壁，砾石滩铺到天际线；这片荒漠年降水多在两百毫米以下，风把细沙吹走后留下一层坚硬的砾幂，地表看上去像被打磨过，被搬走的沙在下风处堆成沙丘带。河流大多是季节性的，昼夜温差常超过三十度，聚落之间往往相隔上百公里。再往北是西西伯利亚平原——世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小。鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久；地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖与沼泽，沼泽面积之大，使这一带成为地球上重要的碳汇之一。再往西，针叶林逐渐掺进阔叶树，田块与村镇重新出现。越过乌拉尔以西之后，飞机接近波罗的海沿岸，海岸线低平、多沙洲与潟湖，冬季部分海湾结冰。最后跨过格洛马河——挪威最长的河流，从山地南流注入海峡，两岸是连片的针叶林与湖泊，飞机降落在奥斯陆以北的加勒穆恩机场。",
     "en-US":
-      "Beijing to Oslo runs north-west across the northern half of Eurasia to the southern end of the Scandinavian Peninsula. After take-off the aircraft climbs north-west into the Gobi on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon; this desert takes under 200 millimetres of rain in most years, and wind has carried off the fine sand to leave a hard pavement that looks polished from above. Farther north lies the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across with almost no change in elevation. The Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave wide stands of conifer forest standing in water for weeks; the sheer extent of its marshland makes this one of the significant carbon stores on the planet. West of the Urals the flight approaches the Baltic coast, a low shoreline of sandbars and lagoons where some of the bays freeze in winter. It finally crosses the Glomma, the longest river in Norway, running south out of the highlands to the strait between forest and lakes, and lands at Gardermoen Airport north of Oslo.",
+      "Beijing to Oslo runs north-west across the northern half of Eurasia, about 7,500 km in all, to the southern end of the Scandinavian Peninsula. After take-off the aircraft climbs north-west into the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats reaching the horizon; this desert takes under 200 millimetres of rain in most years, and wind has carried off the fine sand to leave a hard pavement that looks polished from above and piled it downwind into belts of dune. The rivers are mostly seasonal, the daily temperature often swings more than thirty degrees, and settlements can be a hundred kilometres apart. Farther north lies the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across with almost no change in elevation. The Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave wide stands of conifer forest standing in water for weeks; beneath the surface lies continuous or patchy permafrost, so water cannot drain away and collects into countless shallow lakes and bogs, and the sheer extent of that marshland makes this one of the significant carbon stores on the planet. Farther west broadleaf trees begin to mix into the conifers and fields and villages reappear. West of the Urals the flight approaches the Baltic coast, a low shoreline of sandbars and lagoons where some of the bays freeze in winter. It finally crosses the Glomma, the longest river in Norway, running south out of the highlands between forest and lakes, and lands at Gardermoen Airport north of Oslo.",
     },
     travel: {
     "zh-CN":
@@ -5534,21 +5498,17 @@ export const ROUTE_NARRATION: Record<
       "挪威属申根区但非欧盟成员，签证按国籍不同、以挪威驻当地使领馆最新公布为准，行前确认并预留办理时间。挪威物价水平在欧洲居于前列，出行预算需留有余量。",
     "en-US":
       "Beijing to Oslo takes about 9 hours, with a 6–7 hour time difference (6 hours during Norwegian summer time). Norway has very long summer daylight (with midnight sun in the north) and cold, snowy winters, when the aurora can be seen in the north — pack for the season." +
-      "Gardermoen Airport is about 50 km from the city centre; the Flytoget airport express train takes about 20 minutes direct to Oslo Central Station, and regular trains and buses also run at lower fares. The Vigeland sculpture park, the Oslo Opera House and Karl Johans gate are popular spots; public transport is pricey, so a day pass is worth buying." +
-      "Norway is in the Schengen area but not an EU member; visa rules vary by nationality — check the latest from the Norwegian consulate for your location and allow time to arrange one. Prices in Norway are among the highest in Europe, so budget accordingly.",
+      " Gardermoen Airport is about 50 km from the city centre; the Flytoget airport express train takes about 20 minutes direct to Oslo Central Station, and regular trains and buses also run at lower fares. The Vigeland sculpture park, the Oslo Opera House and Karl Johans gate are popular spots; public transport is pricey, so a day pass is worth buying." +
+      " Norway is in the Schengen area but not an EU member; visa rules vary by nationality — check the latest from the Norwegian consulate for your location and allow time to arrange one. Prices in Norway are among the highest in Europe, so budget accordingly.",
     },
   },
 
   "pvg-arn": {
     study: {
     "zh-CN":
-      "上海飞斯德哥尔摩，与飞奥斯陆走向相近，同样横跨亚欧大陆北部，最终抵达波罗的海沿岸的瑞典首都。起飞后先经过华北平原，进入蒙古高原南缘的戈壁荒漠。" +
-      "继续向西北深入西伯利亚腹地，飞越西西伯利亚平原，之后抵达波罗的海沿岸。跨过波罗的海后，飞机进入瑞典东部沿海一带。" +
-      "临近降落前，舷窗下是斯德哥尔摩群岛——由数万座花岗岩小岛和礁石组成的群岛区，斯德哥尔摩正坐落在这片群岛与梅拉伦湖交汇处。飞机最终降落在阿兰达机场。这条航线2020年曾因疫情中断，2026年6月恢复直飞运营。",
+      "上海飞斯德哥尔摩，2026年6月复航，是停飞六年后重开的直飞航线，全程约八千公里。起飞后先经过华北平原——黄河与海河冲积出的低平耕地，地势自西向东缓缓降低，河渠纵横，是中国人口最密集的区域之一。接着进入蒙古高原南缘的戈壁，地表以砾石为主，植被稀疏，聚落之间相隔很远；这里年降水稀少，风把细沙吹走后留下坚硬的砾幂，昼夜温差极大，冬季常有强风扬起沙尘，能见度骤降。越往西北，砾漠逐渐让位给草原，河流开始变多，地面重新出现连片的绿色。再往西北是西西伯利亚平原，世界上面积最大的平原之一，东西宽约一千五百公里，地表落差极小；鄂毕河与叶尼塞河在这里蜿蜒北流，春汛时河水漫出河道，大片针叶林泡在水里数周之久。地下是连续或断续的冻土，水下渗不下去，于是在地表积成无数浅湖与沼泽。再往西平原让位给东欧的农田与城镇，地面重新变得规整。越过波罗的海沿岸后，飞机进入斯德哥尔摩群岛上空——冰后回弹把海底基岩抬出水面，形成两万多座岛屿与礁石。飞机降落在城市以北的阿兰达机场。",
     "en-US":
-      "Shanghai to Stockholm follows a track similar to the Oslo flight, also crossing the northern part of Eurasia, ending at the Swedish capital on the Baltic coast. After take-off the flight first crosses the North China Plain, then the Gobi desert on the southern edge of the Mongolian Plateau." +
-      "Continuing north-west deep into Siberia, the route crosses the West Siberian Plain before reaching the Baltic coast. Past the Baltic Sea, the flight enters the coastal region of eastern Sweden." +
-      "Just before landing, the Stockholm Archipelago comes into view below — tens of thousands of granite islands and skerries, where Stockholm sits at the point where the archipelago meets Lake Mälaren. The plane finally lands at Arlanda Airport. This route was suspended during the pandemic and resumed nonstop service in June 2026.",
+      "Shanghai to Stockholm resumed in June 2026, reopening a nonstop link after six years, about 8,000 km in all. After take-off the flight crosses the North China Plain, low farmland built by the silt of the Yellow and Hai rivers, sloping so gently from west to east that the fall is invisible, threaded with canals and among the most densely settled parts of China. It then enters the Gobi Desert on the southern edge of the Mongolian Plateau, a surface mostly of gravel with sparse vegetation and long distances between settlements; rain is scarce, the wind has carried the fine sand away to leave a hard pavement, the daily temperature swing is extreme, and strong winter winds lift dust sharply enough to cut visibility. The farther north-west it goes, the more the gravel desert gives way to steppe, rivers become frequent and continuous green returns to the ground. Farther north-west lies the West Siberian Plain, one of the largest plains on Earth, roughly fifteen hundred kilometres across with almost no change in elevation; the Ob and the Yenisei wind north through it, and at the spring flood the rivers spill their channels and leave stands of conifer forest standing in water for weeks. Beneath it lies continuous or patchy permafrost, so water cannot drain away and collects into countless shallow lakes and bogs. Farther west the plain gives way to the farmland and towns of eastern Europe and the ground turns regular again. Past the Baltic coast the aircraft reaches the Stockholm archipelago, where post-glacial rebound has lifted the seabed bedrock into more than twenty thousand islands and skerries. The flight lands at Arlanda Airport north of the city.",
     },
     travel: {
     "zh-CN":
@@ -5557,21 +5517,17 @@ export const ROUTE_NARRATION: Record<
       "瑞典属申根区，签证按国籍不同、以瑞典驻当地使领馆最新公布为准，行前确认并预留办理时间。这条航线曾因疫情中断六年，2026年6月才恢复直飞，出行前建议再次核实航班班期。",
     "en-US":
       "Shanghai to Stockholm takes about 11 hours 10 minutes, with a 6–7 hour time difference (6 hours during Swedish summer time). Stockholm has cool summers with long daylight hours and cold, dark winters, with the aurora visible in the north — pack for the season." +
-      "Arlanda Airport is about 40 km from the city centre; the Arlanda Express takes about 20 minutes direct into town, and cheaper commuter trains and buses also run. Gamla Stan (the Old Town), the Vasa Museum and City Hall are popular sights, and the city centre is easy to explore on foot or by bike." +
-      "Sweden is in the Schengen area; visa rules vary by nationality — check the latest from the Swedish consulate for your location and allow time to arrange one. This route was suspended for six years during the pandemic and only resumed nonstop service in June 2026, so it's worth reconfirming the schedule before you travel.",
+      " Arlanda Airport is about 40 km from the city centre; the Arlanda Express takes about 20 minutes direct into town, and cheaper commuter trains and buses also run. Gamla Stan (the Old Town), the Vasa Museum and City Hall are popular sights, and the city centre is easy to explore on foot or by bike." +
+      " Sweden is in the Schengen area; visa rules vary by nationality — check the latest from the Swedish consulate for your location and allow time to arrange one. This route was suspended for six years during the pandemic and only resumed nonstop service in June 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-cph": {
     study: {
     "zh-CN":
-      "北京飞哥本哈根，同样向西北横跨亚欧大陆，但落点更靠北，最终抵达斯堪的纳维亚半岛南缘的丹麦。起飞后先经过蒙古高原南缘的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
-      "继续向西北，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——常被地理学上作为亚洲与欧洲的分界——之后，进入东欧平原，农田与河流交错的地貌一路延伸。" +
-      "飞机继续向西北，越过波罗的海南部，最终降落在西兰岛东岸的哥本哈根——丹麦首都坐落在厄勒海峡边，隔海峡与瑞典相望。一趟航班，向西北横穿了大半个亚欧大陆，抵达波罗的海之滨。",
+      "北京飞哥本哈根，向西北横跨亚欧大陆，全程约七千五百公里，终点在波罗的海入口的厄勒海峡边。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河网与沼泽密布，春季融雪时大范围积水。翻过乌拉尔山脉之后，飞机进入一片开阔低地——这条南北绵延两千多公里的古老山系海拔不高，却被公认为划分亚洲与欧洲的界线；它形成于约三亿年前的一次大陆碰撞，此后长期剥蚀，如今山脊平缓，两侧的植被与土壤类型截然不同。再往西是东欧平原，开阔低地上田块规整，河流舒缓。最后跨过波罗的海西口，降落在哥本哈根近旁阿迈厄岛上的卡斯特鲁普机场。",
     "en-US":
-      "Beijing to Copenhagen also flies north-west across Eurasia, but on a track that curves farther north, ending on the southern rim of the Scandinavian peninsula where Denmark lies. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
-      "Farther north-west the flight enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh. Crossing the Ural Mountains — commonly used by geographers to mark the boundary between Asia and Europe — the route enters the East European Plain, a landscape of farmland and winding rivers stretching on." +
-      "The plane continues north-west over the southern Baltic Sea and finally lands at Copenhagen on the eastern shore of the island of Zealand — the Danish capital sits beside the Øresund strait, facing Sweden across the water. One flight has crossed most of Eurasia to reach the Baltic shore.",
+      "Beijing to Copenhagen runs north-west across the Eurasian landmass, about 7,500 km in all, ending beside the Øresund at the mouth of the Baltic. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, remarkably flat and dense with rivers and marshes, flooding widely when the snow melts in spring. Past the Ural Mountains the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, yet it is the accepted divide between Asia and Europe; it rose in a continental collision some three hundred million years ago and has been eroded ever since, so its ridges are gentle and the vegetation and soils on its two sides are quite different. Farther west lies the East European Plain, an open lowland of regular fields and slow rivers. The route finally crosses the western mouth of the Baltic and lands at Kastrup Airport on the island of Amager beside Copenhagen.",
     },
     travel: {
     "zh-CN":
@@ -5580,21 +5536,17 @@ export const ROUTE_NARRATION: Record<
       "丹麦属申根区，签证按国籍不同、以丹麦外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。哥本哈根餐厅普遍不设小费文化（服务费通常已含在账单中），无需额外支付。",
     "en-US":
       "Beijing to Copenhagen takes about 10 hours, with a 6-7 hour time difference (6 hours during Danish summer time). Denmark is mild and rainy year-round — a waterproof jacket is worth packing in any season, and cycling is one of the most common ways to get around." +
-      "Copenhagen Airport is about 8 km from the city centre; the M2 metro line takes about 15 minutes into town. Public transport is extensive — a Rejsekort card or a contactless bank card both work directly on buses, trains and the metro. The Little Mermaid statue, Nyhavn and Tivoli Gardens are the city's three signature sights, all reachable on foot or by bike." +
-      "Denmark is in the Schengen area; visa rules vary by nationality — check the latest from the Danish Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Tipping is not customary at Copenhagen restaurants (service is generally included in the bill), so no extra payment is expected.",
+      " Copenhagen Airport is about 8 km from the city centre; the M2 metro line takes about 15 minutes into town. Public transport is extensive — a Rejsekort card or a contactless bank card both work directly on buses, trains and the metro. The Little Mermaid statue, Nyhavn and Tivoli Gardens are the city's three signature sights, all reachable on foot or by bike." +
+      " Denmark is in the Schengen area; visa rules vary by nationality — check the latest from the Danish Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Tipping is not customary at Copenhagen restaurants (service is generally included in the bill), so no extra payment is expected.",
     },
   },
 
   "pkx-hel": {
     study: {
     "zh-CN":
-      "北京飞赫尔辛基，走的是中国到北欧最北的一条直飞航路，2026年起由北京大兴机场直飞开通。起飞后先经过蒙古高原南缘的戈壁荒漠，随后一路向西北深入西西伯利亚腹地——西西伯利亚平原是世界上最大的平原之一，地势极其平坦，森林与沼泽湖泊星罗棋布。" +
-      "继续向西北，飞越乌拉尔山脉北段——地理学上常以此山系划分亚洲与欧洲，这一段纬度更高、山势也更平缓。跨过乌拉尔山后，飞机进入芬兰东南部的湖泊地带：塞马湖是芬兰最大的湖泊，由冰川作用形成的复杂水系与数千座岛屿组成，是“千湖之国”地貌的代表区域。" +
-      "飞机最终穿过芬兰湾北岸，降落在赫尔辛基万塔机场。这趟航班沿着中国到北欧最北的直飞航路，飞越了西伯利亚腹地与波罗的海北岸的湖泊森林地带。",
+      "北京大兴飞赫尔辛基，向西北横跨亚欧大陆，全程约六千五百公里，是中国到北欧最北的一条直飞航路。起飞后越过燕山，进入蒙古高原南缘的戈壁——这片干旱带以砾石和裸岩为主，年降水多在两百毫米以下，风蚀之后留下坚硬的砾幂，被吹走的细沙在边缘堆成沙丘；河流多为季节性，昼夜温差常超过三十度，冬季强风把地表尘土卷上高空，能见度骤降。越往西北，砾漠逐渐让位给草原，牧群和零星的定居点重新出现在河谷两侧。接着深入西西伯利亚平原，世界上最大的平原之一，地势极其平坦，森林、沼泽与湖泊交错成片。继续向西北，飞越乌拉尔山脉北段——地理学上常以这条山系划分亚洲与欧洲，越往北山势越平缓，山地被苔原和针叶林覆盖；这里的冻土夏季只融化表层很薄的一段，水下渗不下去，于是在地表积成大片浅水和沼泽。越过山脉后进入芬兰东南部的湖区，塞马湖是芬兰最大的湖泊，由冰川刻蚀出的复杂水系和数千座岛屿组成。飞机最后穿过芬兰湾北岸，降落在赫尔辛基万塔机场。",
     "en-US":
-      "Beijing to Helsinki flies one of the northernmost nonstop routes between China and the Nordics, launched from Beijing Daxing Airport in 2026. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then heads deep into the West Siberian Plain, one of the largest plains on Earth, remarkably flat and dotted with forest, marsh and countless lakes." +
-      "Farther north-west the flight crosses the northern Ural Mountains — the range geographers commonly use to mark the boundary between Asia and Europe — at a higher latitude where the terrain is gentler. Beyond the Urals the route enters south-east Finland's lake district: Lake Saimaa, Finland's largest lake, is a complex glacially carved water system dotted with thousands of islands, emblematic of Finland's identity as the 'land of a thousand lakes'." +
-      "The plane finally crosses the northern shore of the Gulf of Finland and lands at Helsinki-Vantaa Airport. Following the northernmost nonstop corridor between China and the Nordics, this flight crosses the Siberian interior and the lake-and-forest country on the Baltic's northern shore.",
+      "Beijing Daxing to Helsinki runs north-west across the Eurasian landmass, about 6,500 km in all, one of the northernmost nonstop corridors between China and the Nordics. After take-off the flight crosses the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, an arid belt mostly of gravel and bare rock where most years bring less than 200 millimetres of rain, wind erosion has left a hard pavement and the fine sand it carried off has piled into dunes along the margins; the rivers are mostly seasonal, the daily temperature can swing more than thirty degrees, and strong winter winds lift dust high enough to cut visibility sharply. The farther north-west the route goes, the more the gravel desert gives way to steppe, with herds and scattered settlements reappearing along the valleys. The flight then heads deep into the West Siberian Plain, one of the largest plains on Earth, remarkably flat, with forest, marsh and lake interlocking across it. Continuing north-west it crosses the northern Ural Mountains — the range geographers commonly use to divide Asia from Europe — where the relief grows gentler with latitude and tundra and conifer forest cover the slopes; the permafrost thaws only a thin layer each summer, so water cannot drain away and collects on the surface as wide shallow pools and bog. Beyond the range the route enters the lake district of south-east Finland, where Lake Saimaa, the country's largest lake, is a maze of glacially carved waterways and thousands of islands. The flight finally crosses the northern shore of the Gulf of Finland and lands at Helsinki-Vantaa Airport.",
     },
     travel: {
     "zh-CN":
@@ -5603,21 +5555,17 @@ export const ROUTE_NARRATION: Record<
       "芬兰属申根区，签证按国籍不同、以芬兰外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。这条北京大兴—赫尔辛基航线2026年3月才开通，出行前建议再次核实班期是否有变动。",
     "en-US":
       "Beijing to Helsinki takes about 9 hours 15 minutes on a China Southern Airlines Boeing 787, departing from Beijing Daxing Airport. The time difference is 5-6 hours (5 hours during Finnish summer time). Finnish summers bring very long daylight hours (the midnight sun is visible in the north around midsummer), while winters have short days and offer a chance to see the northern lights in the north." +
-      "Helsinki-Vantaa Airport is about 19 km from the city centre; the ring rail line (I/P trains) takes about 30 minutes to Central Station. Public transport (metro, trams and buses) runs on one shared fare system, and an HSL card or a bank card both work directly on board. Temppeliaukio Church, Helsinki Cathedral and the Suomenlinna sea fortress are the city's three signature sights — Suomenlinna requires a short ferry ride." +
-      "Finland is in the Schengen area; visa rules vary by nationality — check the latest from the Finnish Ministry for Foreign Affairs or its consulate for your location and allow time to arrange one. This Beijing Daxing–Helsinki route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
+      " Helsinki-Vantaa Airport is about 19 km from the city centre; the ring rail line (I/P trains) takes about 30 minutes to Central Station. Public transport (metro, trams and buses) runs on one shared fare system, and an HSL card or a bank card both work directly on board. Temppeliaukio Church, Helsinki Cathedral and the Suomenlinna sea fortress are the city's three signature sights — Suomenlinna requires a short ferry ride." +
+      " Finland is in the Schengen area; visa rules vary by nationality — check the latest from the Finnish Ministry for Foreign Affairs or its consulate for your location and allow time to arrange one. This Beijing Daxing–Helsinki route only launched in March 2026, so it's worth reconfirming the schedule before you travel.",
     },
   },
 
   "pek-waw": {
     study: {
     "zh-CN":
-      "北京飞华沙，向西横跨亚欧大陆腹地，最终抵达东欧平原中部。起飞后先经过蒙古高原南缘的戈壁荒漠——大片砾石荒漠一直延伸到地平线。" +
-      "继续向西，进入西西伯利亚平原：世界上最大的平原之一，地势极其平坦，森林与沼泽交织。飞越乌拉尔山脉——地理学上常以此山系划分亚洲与欧洲——之后，飞机进入东欧平原：这片横贯东欧的广袤平原地势低缓，河流蜿蜒、农田密布，华沙便坐落在这片平原中部的维斯瓦河畔。" +
-      "飞机最终沿维斯瓦河谷进近，降落在华沙肖邦机场。一趟航班，横穿了大半个亚欧大陆，抵达东欧平原的心脏地带。",
+      "北京飞华沙，向西北横跨亚欧大陆，全程约七千一百公里，终点在中欧的维斯瓦河畔。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地势极其平坦，河流蜿蜒北流，沼泽面积之大在全球都少有。翻过乌拉尔山脉后，飞机进入一片开阔低地——这条古老山系南北绵延两千多公里，是亚欧两洲的传统分界，海拔不高但地质年代久远，铁、铜、宝石等矿产丰富，沿线因此形成了成片的工业城市。再往西进入东欧平原，冰期留下的低缓丘陵与沙质平原交替出现，河流在其间宽缓地绕行。飞机降落在华沙市区西南的肖邦机场。",
     "en-US":
-      "Beijing to Warsaw flies west across the interior of Eurasia, ending near the middle of the East European Plain. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau — a broad expanse of gravel desert stretching to the horizon." +
-      "Farther west the flight enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh. Crossing the Ural Mountains — the range geographers commonly use to mark the boundary between Asia and Europe — the route enters the East European Plain: a vast, low-lying plain stretching across eastern Europe, threaded with winding rivers and farmland, with Warsaw sitting near its middle on the banks of the Vistula River." +
-      "The plane makes its final approach along the Vistula valley and lands at Warsaw Chopin Airport. One flight has crossed most of Eurasia to reach the heart of the East European Plain.",
+      "Beijing to Warsaw runs north-west across the Eurasian landmass, about 7,100 km in all, ending on the Vistula in central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, remarkably flat, its rivers winding north through marshes of a size found almost nowhere else on Earth. Past the Ural Mountains the flight enters an open lowland: the range runs more than two thousand kilometres north to south as the conventional divide between Asia and Europe, and although it is not high it is geologically very old and rich in iron, copper and gemstones, which is why industrial cities line its length. Farther west the route enters the East European Plain, where low hills left by the ice ages alternate with sandy flats and the rivers wander broadly between them. The flight lands at Chopin Airport south-west of central Warsaw.",
     },
     travel: {
     "zh-CN":
@@ -5626,21 +5574,17 @@ export const ROUTE_NARRATION: Record<
       "波兰属申根区，签证按国籍不同、以波兰外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。华沙老城石板路较多，建议穿舒适的鞋子。",
     "en-US":
       "Beijing to Warsaw takes about 8 hours 30 minutes on an Air China Airbus A330. The time difference is 6-7 hours (6 hours during Polish summer time). Poland has cold, snowy winters and mild summers, with spring and autumn best for sightseeing." +
-      "Warsaw Chopin Airport is about 10 km from the city centre; the M1 metro line or the SKM/KM city rail both run into town in about 20-30 minutes. Warsaw's Old Town (rebuilt after WWII to its original appearance, a UNESCO World Heritage Site), Łazienki Park and the Warsaw Uprising Museum are among the city's landmark sights." +
-      "Poland is in the Schengen area; visa rules vary by nationality — check the latest from the Polish Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. The Old Town has a lot of cobblestone streets, so comfortable shoes are worth packing.",
+      " Warsaw Chopin Airport is about 10 km from the city centre; the M1 metro line or the SKM/KM city rail both run into town in about 20-30 minutes. Warsaw's Old Town (rebuilt after WWII to its original appearance, a UNESCO World Heritage Site), Łazienki Park and the Warsaw Uprising Museum are among the city's landmark sights." +
+      " Poland is in the Schengen area; visa rules vary by nationality — check the latest from the Polish Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. The Old Town has a lot of cobblestone streets, so comfortable shoes are worth packing.",
     },
   },
 
   "pek-prg": {
     study: {
     "zh-CN":
-      "北京飞布拉格，向西横跨亚欧大陆，最终抵达中欧腹地被群山环抱的波希米亚地区。起飞后先经过蒙古高原南缘的戈壁荒漠，随后进入西西伯利亚平原——世界上最大的平原之一，地势极其平坦，森林与沼泽交织。" +
-      "飞越乌拉尔山脉之后，飞机进入东欧平原，农田与河流交错的地貌一路延伸。继续向西南，地势逐渐抬升进入波希米亚高地——一片被古老褶皱山系环绕的高地，捷克全境大部即坐落于此，伏尔塔瓦河便发源于这片高地南部。" +
-      "飞机沿伏尔塔瓦河谷进近，最终降落在布拉格瓦茨拉夫·哈维尔机场。一趟航班，从亚欧大陆东端横穿到中欧被群山环抱的波希米亚地区。",
+      "北京飞布拉格，向西北横跨亚欧大陆，全程约七千六百公里，终点在中欧的波希米亚盆地。起飞后爬升越过燕山，进入蒙古高原南缘的戈壁——这里年降水多在两百毫米以下，地表以砾石和裸岩为主，风把细沙吹走后留下坚硬的砾幂；河流大多是季节性的，雨后短暂过水随即干涸，昼夜温差常超过三十度，越往西北，砾漠越多地让位给草原与稀树草地。接着是西西伯利亚平原，地表落差极小，河流蜿蜒，沼泽与湖泊连成大片。翻过乌拉尔山脉这道亚欧分界，飞机进入一片开阔低地——这条山系南北绵延两千多公里，海拔并不高，却是重要的构造与气候界线，两侧坡地的森林构成明显不同，山中的矿藏支撑起沿线一串工业城市。再往西是东欧平原，古老地台之上起伏很小，田块与河流的图案从空中看格外规整。接近终点时进入波希米亚高地，四周被低山环抱、中间下凹，是一处典型的构造盆地。飞机降落在布拉格西郊的瓦茨拉夫·哈维尔机场。",
     "en-US":
-      "Beijing to Prague flies west across Eurasia, ending in the mountain-ringed Bohemian region at the heart of central Europe. After take-off the flight first crosses the Gobi desert on the southern edge of the Mongolian Plateau, then enters the West Siberian Plain, one of the largest plains on Earth, remarkably flat and laced with forest and marsh." +
-      "Crossing the Ural Mountains, the route enters the East European Plain, a landscape of farmland and winding rivers stretching on. Farther south-west the terrain gradually rises into the Bohemian Uplands, a plateau ringed by ancient folded mountain ranges — most of Czechia sits within this region, and the Vltava River rises in its southern reaches." +
-      "The plane makes its final approach along the Vltava valley and lands at Prague's Václav Havel Airport. One flight has crossed from the eastern edge of Eurasia to the mountain-ringed Bohemian region of central Europe.",
+      "Beijing to Prague runs north-west across the Eurasian landmass, about 7,600 km in all, ending in the Bohemian basin of central Europe. After take-off the aircraft climbs over the Yan Mountains into the Gobi Desert on the southern edge of the Mongolian Plateau, where most years bring less than 200 millimetres of rain and the surface is gravel and bare rock, the fine sand long since stripped away by wind to leave a hard pavement; the rivers are mostly seasonal, running briefly after rain and then drying out, the daily temperature can swing more than thirty degrees, and the farther north-west the flight goes the more the gravel gives way to steppe. Next comes the West Siberian Plain, with almost no change in elevation, winding rivers and unbroken tracts of marsh and lake. Past the Ural Mountains, the conventional divide between Asia and Europe, the flight enters an open lowland: the range runs more than two thousand kilometres north to south and is not high, but it marks a real structural and climatic boundary, the forests on its two flanks differ markedly, and its ore deposits support a string of industrial cities along its length. Farther west lies the East European Plain, an ancient platform with very little relief where fields and rivers read from the air as a strikingly regular pattern. Near the end the route crosses the Bohemian Uplands, a ring of low mountains around a sunken middle — a textbook structural basin. The flight lands at Václav Havel Airport on the western edge of Prague.",
     },
     travel: {
     "zh-CN":
@@ -5649,17 +5593,17 @@ export const ROUTE_NARRATION: Record<
       "捷克属申根区，签证按国籍不同、以捷克外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。捷克境内目前没有真正意义上的国内商业航空网络，城市间以铁路/大巴为主，这条中捷直飞是往返布拉格的主要空中通道。",
     "en-US":
       "Beijing to Prague takes about 9 hours 55 minutes on a Hainan Airlines Airbus A330. The time difference is 6-7 hours (6 hours during Czech summer time). Czechia has cold winters and mild summers, with spring and autumn best for exploring Prague's old town." +
-      "Prague Airport is about 17 km from the city centre; the AE express bus or a bus-to-metro connection takes about 35-45 minutes into town. Old Town Square, Charles Bridge and Prague Castle are the city's three signature sights, all within walking distance of each other in the old town — comfortable shoes are worth packing for the cobblestones." +
-      "Czechia is in the Schengen area; visa rules vary by nationality — check the latest from the Czech Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Czechia currently has no real domestic commercial air network, so travel between its cities relies mainly on rail and coach — this nonstop China route is the main air link in and out of Prague.",
+      " Prague Airport is about 17 km from the city centre; the AE express bus or a bus-to-metro connection takes about 35-45 minutes into town. Old Town Square, Charles Bridge and Prague Castle are the city's three signature sights, all within walking distance of each other in the old town — comfortable shoes are worth packing for the cobblestones." +
+      " Czechia is in the Schengen area; visa rules vary by nationality — check the latest from the Czech Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Czechia currently has no real domestic commercial air network, so travel between its cities relies mainly on rail and coach — this nonstop China route is the main air link in and out of Prague.",
     },
   },
 
   "pek-fco": {
     study: {
     "zh-CN":
-      "北京飞罗马，向西横跨亚欧大陆，终点在地中海中部的意大利半岛。起飞后先进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，河流稀少；这一带干旱少雨，地表几乎没有连续植被，冬季常有强风扬起沙尘。再往西是萨雷阿尔卡草原——哈萨克丘陵上的干草原，地势和缓，春季洼地里积成大量季节性湖泊，是候鸟迁徙的重要中继站。接着飞临里海，这是地球上面积最大的内陆水体，水面低于海平面约二十八米，北浅南深，沿岸多盐沼与三角洲；由于没有出海口，水位随入流与蒸发逐年变化。越过黑海之后进入巴尔干半岛上空，这里以石灰岩为主，喀斯特地貌发育，山脊与谷地大体平行排列，向东南方向延伸。最后飞机跨过亚平宁山脉——纵贯意大利半岛的这条褶皱山系是全境的脊梁，随后下降到台伯河下游平原，降落在罗马西南的菲乌米奇诺机场。",
+      "北京飞罗马，向西横跨亚欧大陆，全程约八千五百公里，终点在地中海中部的意大利半岛。起飞后先进入蒙古高原南缘的戈壁，砾石滩延伸到天际线，年降水多在两百毫米以下，河流稀少且多为季节性；地表几乎没有连续植被，风蚀留下坚硬的砾幂，冬季常有强风扬起沙尘，能见度骤降。越往西，砾漠逐渐让位给草原。再往西是萨雷阿尔卡草原——哈萨克丘陵上的干草原，地势和缓；春季融雪在洼地里积成大量季节性湖泊，是候鸟迁徙的重要中继站，夏季蒸发强烈，湖岸留下白色的盐壳。接着飞临里海，地球上面积最大的内陆水体，水面低于海平面约二十八米，北部浅、南部深，沿岸多盐沼与三角洲；由于没有出海口，水位随入流与蒸发逐年变化，近岸能看到一道道被遗弃的旧岸线。越过黑海之后进入巴尔干半岛上空，这里以石灰岩为主，喀斯特地貌发育，落水洞与地下河密布，山脊与谷地大体平行排列，向东南方向延伸。最后飞机跨过亚平宁山脉——纵贯意大利半岛的褶皱山系，是全境的脊梁，随后下降到台伯河下游平原，降落在罗马西南的菲乌米奇诺机场。",
     "en-US":
-      "Beijing to Rome runs west across the Eurasian landmass to the Italian peninsula in the central Mediterranean. After take-off the flight enters the Gobi on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon with few rivers; the country is dry, almost no continuous vegetation forms, and strong winter winds often lift dust off the surface. Farther west lies the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where spring meltwater gathers into great numbers of seasonal lakes, an important staging ground for migratory birds. The route then reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level, shallow in the north and deep in the south, with salt marsh and delta along much of its shore; having no outlet to the ocean, its level shifts from year to year with inflow and evaporation. Beyond the Black Sea the flight crosses the Balkan Peninsula, largely limestone country with well-developed karst, its ridges and valleys running broadly parallel and trending south-east. The aircraft finally crosses the Apennines, the folded range that forms the spine of the Italian peninsula, then descends over the lower Tiber plain to land at Fiumicino Airport south-west of Rome.",
+      "Beijing to Rome runs west across the Eurasian landmass, about 8,500 km in all, to the Italian peninsula in the central Mediterranean. After take-off the flight enters the Gobi Desert on the southern edge of the Mongolian Plateau, gravel flats stretching to the horizon under less than 200 millimetres of rain in most years, with few rivers and those mostly seasonal; almost no continuous vegetation forms, wind erosion has left a hard pavement, and strong winter winds lift dust off the surface sharply enough to cut visibility. The farther west it goes, the more the gravel desert gives way to steppe. Farther west lies the Saryarka steppe on the Kazakh Uplands, dry grassland on gentle relief where spring meltwater gathers into great numbers of seasonal lakes, an important staging ground for migratory birds; evaporation is strong in summer and leaves white salt crusts along their shores. The route then reaches the Caspian Sea, the largest inland body of water on Earth, its surface about 28 metres below sea level, shallow in the north and deep in the south, with salt marsh and delta along much of its shore; having no outlet to the ocean, its level shifts from year to year with inflow and evaporation, and abandoned former shorelines are visible in steps near the water. Beyond the Black Sea the flight crosses the Balkan Peninsula, largely limestone country with well-developed karst, dense with sinkholes and underground rivers, its ridges and valleys running broadly parallel and trending south-east. The aircraft finally crosses the Apennines, the folded range that forms the spine of the Italian peninsula, then descends over the lower Tiber plain to land at Fiumicino Airport south-west of Rome.",
     },
     travel: {
     "zh-CN":
@@ -5668,8 +5612,8 @@ export const ROUTE_NARRATION: Record<
       "意大利属申根区，签证按国籍不同、以意大利外交部/驻华使领馆最新公布为准，行前务必核实并预留办理时间。罗马部分教堂对衣着有要求（不得穿无袖上衣/短裤入内），参观前建议随身备一件薄外套或披肩。",
     "en-US":
       "Beijing to Rome takes about 11 hours 25 minutes on an Air China Boeing 777. The time difference is 6-7 hours (6 hours during Italian summer time). Italy has hot, dry summers and mild, rainy winters, with spring and autumn best for sightseeing." +
-      "Rome Fiumicino Airport is about 30 km from the city centre; the Leonardo Express train takes about 32 minutes direct to Roma Termini, and regional trains or airport buses are also options. The Colosseum, the Vatican and the Trevi Fountain are the city's three signature sights — book tickets online in advance for the popular ones to skip the lines." +
-      "Italy is in the Schengen area; visa rules vary by nationality — check the latest from the Italian Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Some Roman churches enforce a dress code (no sleeveless tops or shorts) — it's worth carrying a light jacket or shawl for visits.",
+      " Rome Fiumicino Airport is about 30 km from the city centre; the Leonardo Express train takes about 32 minutes direct to Roma Termini, and regional trains or airport buses are also options. The Colosseum, the Vatican and the Trevi Fountain are the city's three signature sights — book tickets online in advance for the popular ones to skip the lines." +
+      " Italy is in the Schengen area; visa rules vary by nationality — check the latest from the Italian Ministry of Foreign Affairs or its consulate for your location and allow time to arrange one. Some Roman churches enforce a dress code (no sleeveless tops or shorts) — it's worth carrying a light jacket or shawl for visits.",
     },
   },
 
@@ -5681,8 +5625,8 @@ export const ROUTE_NARRATION: Record<
       "飞机最终降落在卡拉马——一座因毗邻丘基卡马塔铜矿而发展起来的矿业城市，也是通往圣佩德罗德阿塔卡马、月亮谷、塔蒂奥间歇泉等阿塔卡马腹地景观的主要空中门户。从翠绿农田到赤色荒漠，这条航线浓缩了智利地貌最鲜明的一次转折。",
     "en-US":
       "Santiago to Calama is one of the classic north–south routes within Chile, crossing two starkly different climate zones along the way. The flight departs from the northern Central Valley, with a checkerboard of farmland and vineyards below, hemmed in by the Coastal Range and the Andes — the textbook picture of Chile's three-part landscape structure." +
-      "About an hour north, the green gives way to vast expanses of reddish-brown desert — the Atacama, one of the driest places on Earth outside polar desert valleys. Its extreme aridity comes from two compounding effects: the Andes to the east block moist air from the Amazon, producing a rain shadow, while the cold Humboldt Current offshore suppresses evaporation from the sea. Together they leave some weather stations here with no measurable rainfall for decades." +
-      "The flight lands in Calama, a mining city that grew up beside the Chuquicamata copper mine and now serves as the main air gateway to San Pedro de Atacama, Valle de la Luna, and the El Tatio geysers. From green farmland to red desert, this route condenses one of Chile's sharpest landscape transitions into a single flight.",
+      " About an hour north, the green gives way to vast expanses of reddish-brown desert — the Atacama, one of the driest places on Earth outside polar desert valleys. Its extreme aridity comes from two compounding effects: the Andes to the east block moist air from the Amazon, producing a rain shadow, while the cold Humboldt Current offshore suppresses evaporation from the sea. Together they leave some weather stations here with no measurable rainfall for decades." +
+      " The flight lands in Calama, a mining city that grew up beside the Chuquicamata copper mine and now serves as the main air gateway to San Pedro de Atacama, Valle de la Luna, and the El Tatio geysers. From green farmland to red desert, this route condenses one of Chile's sharpest landscape transitions into a single flight.",
     },
     travel: {
     "zh-CN":
@@ -5690,7 +5634,7 @@ export const ROUTE_NARRATION: Record<
       "阿塔卡马地区海拔较高、气候极度干燥，紫外线强烈，建议随身携带防晒霜、墨镜与保暖衣物应对昼夜温差；月亮谷、塔蒂奥间歇泉等景点均需报名当地旅行团或包车前往。",
     "en-US":
       "Santiago to Calama takes about 2 hours 10 minutes on LATAM Airlines Chile. Calama's El Loa Airport is the main transfer point for San Pedro de Atacama, with taxis and hotel shuttles available and about a 1.5-hour drive overland." +
-      "The Atacama region sits at higher elevation with an extremely dry climate and intense UV exposure — pack sunscreen, sunglasses, and warm layers for the temperature swing between day and night; sights like Valle de la Luna and the El Tatio geysers require a local tour or private transfer.",
+      " The Atacama region sits at higher elevation with an extremely dry climate and intense UV exposure — pack sunscreen, sunglasses, and warm layers for the temperature swing between day and night; sights like Valle de la Luna and the El Tatio geysers require a local tour or private transfer.",
     },
   },
   "scl-anf": {
@@ -5701,8 +5645,8 @@ export const ROUTE_NARRATION: Record<
       "这条航线展示了阿塔卡马沙漠西端另一种收尾方式：不是像卡拉马那样深入内陆矿业城市，而是径直扑向太平洋，让荒漠与海洋在一条海岸线上直接相遇。",
     "en-US":
       "Santiago to Antofagasta likewise flies north across the Atacama Desert, but ends right on the Pacific coast. Not long after leaving the Central Valley, the ground below gives way to unbroken desert, with the coastline and blue Pacific only reappearing shortly before landing." +
-      "Antofagasta is northern Chile's largest port city, with copper exports as the backbone of its economy; the city was historically part of Bolivia. Just before touchdown, passengers can often spot La Portada from the window — a sea arch about 43 m high, carved from Tertiary sedimentary rock by long-term wave erosion, a representative landmark of the boundary where the Atacama Desert meets the ocean directly." +
-      "This route shows a different ending for the Atacama's western edge: rather than reaching an inland mining city like Calama, it heads straight for the Pacific, letting desert and ocean meet directly along a single coastline.",
+      " Antofagasta is northern Chile's largest port city, with copper exports as the backbone of its economy; the city was historically part of Bolivia. Just before touchdown, passengers can often spot La Portada from the window — a sea arch about 43 m high, carved from Tertiary sedimentary rock by long-term wave erosion, a representative landmark of the boundary where the Atacama Desert meets the ocean directly." +
+      " This route shows a different ending for the Atacama's western edge: rather than reaching an inland mining city like Calama, it heads straight for the Pacific, letting desert and ocean meet directly along a single coastline.",
     },
     travel: {
     "zh-CN":
@@ -5710,7 +5654,7 @@ export const ROUTE_NARRATION: Record<
       "当地气候极度干燥、几乎全年无雨，紫外线强烈，需做好防晒；拉波塔达海蚀拱是市郊最著名的自然景点，可包车或参加当地半日游前往。",
     "en-US":
       "Santiago to Antofagasta takes about 2 hours on LATAM Airlines Chile. Cerro Moreno Airport is about 22 km from downtown, with a taxi ride of just over 20 minutes to the city center." +
-      "The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the most famous natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
+      " The local climate is extremely dry with almost no rain year-round and strong UV exposure, so sun protection is essential; La Portada is the most famous natural sight on the city's outskirts, reachable by private transfer or a local half-day tour.",
     },
   },
   "scl-lsc": {
@@ -5721,8 +5665,8 @@ export const ROUTE_NARRATION: Record<
       "这条航线是智利“干旱北部”向“地中海式中部”过渡的缩影——从这里再往北，降水会越来越稀少，直至进入阿塔卡马沙漠的核心地带。",
     "en-US":
       "Santiago to La Serena is a short flight across Chile's Norte Chico — the Coquimbo Region. After leaving the Central Valley, the plane heads north along an increasingly dry coastal belt; below on the right, Elqui Valley comes into view — a narrow oasis carved by the Elqui River through the Andean foothills, its terraced vineyards and pisco distilleries standing out sharply against the dry, tan-colored mountains." +
-      "Because of its moderate elevation, clean air, and near-total lack of cloud cover, Elqui Valley is a globally recognized stargazing destination, with several international observatories including Cerro Tololo Inter-American Observatory built upstream. The flight then descends along the coast to land at La Serena, Chile's second-oldest city, which preserves an unusually large collection of Spanish colonial architecture." +
-      "This route is a snapshot of Chile's transition from an arid north to a Mediterranean-climate center — heading north from here, rainfall grows scarcer and scarcer until the heart of the Atacama Desert.",
+      " Because of its moderate elevation, clean air, and near-total lack of cloud cover, Elqui Valley is a globally recognized stargazing destination, with several international observatories including Cerro Tololo Inter-American Observatory built upstream. The flight then descends along the coast to land at La Serena, Chile's second-oldest city, which preserves an unusually large collection of Spanish colonial architecture." +
+      " This route is a snapshot of Chile's transition from an arid north to a Mediterranean-climate center — heading north from here, rainfall grows scarcer and scarcer until the heart of the Atacama Desert.",
     },
     travel: {
     "zh-CN":
@@ -5730,19 +5674,19 @@ export const ROUTE_NARRATION: Record<
       "拉塞雷纳本身有绵延的海滩与殖民风格老城区，若想探访埃尔基谷或预约天文台观星，建议报名当地旅行团或自驾，天文台参观多需提前预约。",
     "en-US":
       "Santiago to La Serena takes about 1 hour 10 minutes on LATAM Airlines Chile. La Florida Airport is about 5 km from downtown, a short taxi ride to the city center." +
-      "La Serena itself has long stretches of beach and a colonial-era old town; to visit Elqui Valley or book an observatory stargazing session, a local tour or rental car is recommended, and most observatories require advance reservations.",
+      " La Serena itself has long stretches of beach and a colonial-era old town; to visit Elqui Valley or book an observatory stargazing session, a local tour or rental car is recommended, and most observatories require advance reservations.",
     },
   },
   "scl-ccp": {
     study: {
     "zh-CN":
-      "圣地亚哥飞康塞普西翁，向南穿越智利中央谷地最富庶的一段。舷窗下方是整齐的方格状农田与成片的葡萄园，两侧分别是低矮的海岸山脉与终年积雪的安第斯山脉，这是理解智利“海岸山脉—中央谷地—安第斯山脉”三段式地貌骨架的经典剖面。" +
+      "圣地亚哥飞康塞普西翁，向南穿越智利中央谷地最富庶的一段。舷窗下方的智利中央谷地是整齐的方格状农田与成片的葡萄园，两侧分别是低矮的海岸山脉与终年积雪的安第斯山脉，这是理解智利“海岸山脉—中央谷地—安第斯山脉”三段式地貌骨架的经典剖面。" +
       "越往南飞，田野逐渐被更为潮湿的绿色植被取代，降水也明显增多——这是地中海式气候向温带海洋性气候过渡的信号。飞机降落在比奥比奥河河口附近的康塞普西翁，这里是智利第二大都会区，也是重要的工业与港口城市。2010年智利大地震及随后引发的海啸曾对这一带造成严重影响，此后完成了大规模重建。" +
       "这条航线展示了中央谷地由北向南逐渐“变绿变湿”的渐变过程，也把乘客带到智利多雨地带的门户。",
     "en-US":
-      "Santiago to Concepción heads south across the richest stretch of Chile's Central Valley. Below is a neat grid of farmland and vineyards, flanked by the low Coastal Range on one side and the permanently snow-capped Andes on the other — a classic cross-section of Chile's three-part landscape structure." +
-      "Further south, the fields give way to greener, more humid vegetation as rainfall increases noticeably — a sign of the transition from Mediterranean to temperate maritime climate. The flight lands at Concepción, near the mouth of the Biobío River, Chile's second-largest metro area and an important industrial and port city. The 2010 Chilean earthquake and the tsunami it triggered caused severe damage here, followed by extensive rebuilding." +
-      "This route traces the Central Valley's gradual shift from dry to green and wet moving south, delivering passengers to the doorstep of Chile's rainier belt.",
+      "Santiago to Concepción heads south across the richest stretch of Chile's Central Valley. Below, the Chilean Central Valley is a neat grid of farmland and vineyards, flanked by the low Coastal Range on one side and the permanently snow-capped Andes on the other — a classic cross-section of Chile's three-part landscape structure." +
+      " Further south, the fields give way to greener, more humid vegetation as rainfall increases noticeably — a sign of the transition from Mediterranean to temperate maritime climate. The flight lands at Concepción, near the mouth of the Biobío River, Chile's second-largest metro area and an important industrial and port city. The 2010 Chilean earthquake and the tsunami it triggered caused severe damage here, followed by extensive rebuilding." +
+      " This route traces the Central Valley's gradual shift from dry to green and wet moving south, delivering passengers to the doorstep of Chile's rainier belt.",
     },
     travel: {
     "zh-CN":
@@ -5750,7 +5694,7 @@ export const ROUTE_NARRATION: Record<
       "康塞普西翁是重要的大学城，比奥比奥大学校园及周边是年轻人聚集的活力街区；当地冬季多雨，出行建议携带雨具，沿海区域入住时可留意酒店的海啸疏散指示。",
     "en-US":
       "Santiago to Concepción takes about 55 minutes on LATAM Airlines Chile. Carriel Sur Airport is about 15 km from downtown, with buses and taxis into the city." +
-      "Concepción is an important university city, with the University of Concepción campus and surrounding streets forming a lively student district; winters here are rainy, so pack rain gear, and it's worth noting hotel tsunami-evacuation signage in coastal areas.",
+      " Concepción is an important university city, with the University of Concepción campus and surrounding streets forming a lively student district; winters here are rainy, so pack rain gear, and it's worth noting hotel tsunami-evacuation signage in coastal areas.",
     },
   },
   "scl-zco": {
@@ -5761,8 +5705,8 @@ export const ROUTE_NARRATION: Record<
       "飞机最终降落在特木科，这是通往维亚里卡火山、普孔等湖区热门目的地的门户城市，也是智利马普切原住民文化最集中的城市之一。这条航线让乘客在一次飞行里，从中央谷地的农业景观直接过渡到湖区特有的“火山—森林—湖泊”组合地貌。",
     "en-US":
       "Santiago to Temuco flies from the Central Valley into the northern edge of Chile's southern Lake District. After takeoff the familiar grid of farmland lies below; as the flight continues, patches of low forest and scattered lakes begin to appear — the Lake District's distinctive landscape coming into view." +
-      "Shortly before landing, the flight passes near Llaima Volcano, one of south-central Chile's highest and most frequently erupting active volcanoes, with more than 50 recorded eruptions historically. Built from two overlapping cones, its summit stays permanently snow-capped, with old-growth araucaria forest — sometimes called a 'living fossil' — preserved at its base." +
-      "The flight lands at Temuco, the gateway city to Villarrica Volcano, Pucón, and other Lake District highlights, and one of the cities with the largest concentration of Mapuche Indigenous culture in Chile. In a single flight, passengers move from the Central Valley's farmland straight into the Lake District's signature combination of volcano, forest, and lake.",
+      " Shortly before landing, the flight passes near Llaima Volcano, one of south-central Chile's highest and most frequently erupting active volcanoes, with more than 50 recorded eruptions historically. Built from two overlapping cones, its summit stays permanently snow-capped, with old-growth araucaria forest — sometimes called a 'living fossil' — preserved at its base." +
+      " The flight lands at Temuco, the gateway city to Villarrica Volcano, Pucón, and other Lake District highlights, and one of the cities with the largest concentration of Mapuche Indigenous culture in Chile. In a single flight, passengers move from the Central Valley's farmland straight into the Lake District's signature combination of volcano, forest, and lake.",
     },
     travel: {
     "zh-CN":
@@ -5770,7 +5714,7 @@ export const ROUTE_NARRATION: Record<
       "特木科本身是湖区门户城市，多数游客会在此换乘长途大巴或包车前往普孔、维亚里卡等热门小镇（车程约1小时）；埃斯特角农贸集市是体验马普切传统手工艺的重要窗口。",
     "en-US":
       "Santiago to Temuco takes about 1 hour 25 minutes on LATAM Airlines Chile. La Araucanía Airport is about 6 km from downtown, with taxis and buses into the city." +
-      "Temuco itself is the Lake District's gateway city, and most visitors transfer here by long-distance bus or private transfer to reach popular towns like Pucón and Villarrica (about an hour's drive); the Feria Pinto market is an important place to experience Mapuche traditional crafts.",
+      " Temuco itself is the Lake District's gateway city, and most visitors transfer here by long-distance bus or private transfer to reach popular towns like Pucón and Villarrica (about an hour's drive); the Feria Pinto market is an important place to experience Mapuche traditional crafts.",
     },
   },
   "scl-pmc": {
@@ -5781,8 +5725,8 @@ export const ROUTE_NARRATION: Record<
       "飞机最终降落在普埃托蒙特——智利南部通往巴塔哥尼亚与奇洛埃群岛的主要海空交通枢纽，也是重要的三文鱼养殖产业中心。这条航线浓缩了智利从“干燥中部”到“多雨南部”的完整过渡。",
     "en-US":
       "Santiago to Puerto Montt is one of southern Chile's classic Lake District routes and the traditional gateway to Patagonia. After leaving the Central Valley, the flight heads steadily south as farmland gives way to lakes and forest, with humidity rising noticeably along the way." +
-      "Just before landing, Osorno Volcano comes into view — an exceptionally symmetrical stratovolcano often called 'Chile's Mount Fuji' for its resemblance to Japan's iconic peak, standing between Lake Llanquihue and Lake Todos los Santos. Beginning in the 19th century, this area drew large numbers of German immigrants, and lakeside towns such as Puerto Varas still retain a strong German architectural character today." +
-      "The flight lands at Puerto Montt, the main sea-and-air gateway from southern Chile to Patagonia and the Chiloé Archipelago, and an important center of the salmon-farming industry. This route condenses Chile's full transition from a dry center to a rainy south into a single flight.",
+      " Just before landing, Osorno Volcano comes into view — an exceptionally symmetrical stratovolcano often called 'Chile's Mount Fuji' for its resemblance to Japan's iconic peak, standing between Lake Llanquihue and Lake Todos los Santos. Beginning in the 19th century, this area drew large numbers of German immigrants, and lakeside towns such as Puerto Varas still retain a strong German architectural character today." +
+      " The flight lands at Puerto Montt, the main sea-and-air gateway from southern Chile to Patagonia and the Chiloé Archipelago, and an important center of the salmon-farming industry. This route condenses Chile's full transition from a dry center to a rainy south into a single flight.",
     },
     travel: {
     "zh-CN":
@@ -5790,7 +5734,7 @@ export const ROUTE_NARRATION: Record<
       "普埃托蒙特是探访湖区南段（普埃托瓦拉斯、奥索尔诺）与奇洛埃群岛的重要基地，安赫尔莫渔人码头的海鲜市场是体验当地饮食文化的核心场所；当地全年降水较多，建议随身携带雨具。",
     "en-US":
       "Santiago to Puerto Montt takes about 1 hour 45 minutes on LATAM Airlines Chile. El Tepual Airport is about 16 km from downtown, with taxis and hotel shuttles into the city." +
-      "Puerto Montt is an important base for exploring the southern Lake District (Puerto Varas, Osorno) and the Chiloé Archipelago; the seafood market at the Angelmó wharf is the best place to experience local food culture. Rainfall is heavy year-round, so pack rain gear.",
+      " Puerto Montt is an important base for exploring the southern Lake District (Puerto Varas, Osorno) and the Chiloé Archipelago; the seafood market at the Angelmó wharf is the best place to experience local food culture. Rainfall is heavy year-round, so pack rain gear.",
     },
   },
   "scl-puq": {
@@ -5801,8 +5745,8 @@ export const ROUTE_NARRATION: Record<
       "临近降落时，飞机沿麦哲伦海峡北岸下降——这条全长约570公里的天然海峡因葡萄牙航海家麦哲伦1520年经此完成人类首次环球航行的关键航段而得名。飞机最终降落在蓬塔阿雷纳斯，世界最靠南的重要城市之一，也是前往百内国家公园、火地岛与南极的主要门户。",
     "en-US":
       "Santiago to Punta Arenas is the longest and most dramatic domestic route in Chile, taking about 3.5 hours across the country's most remote and sparsely populated stretch of Patagonia. Beyond the Lake District, forest and lake give way to open wilderness, and the landscape below grows increasingly fragmented and complex." +
-      "Later in the flight, the Southern Patagonian Ice Field comes into view — the largest continuous body of ice in the Southern Hemisphere outside Antarctica, its edges splitting into countless glacial tongues, with Pío XI Glacier broad and dramatic on the Chilean side. The flight then passes over the Chilean Fjords — a maze of fjords and channels formed as glaciers deeply carved the coastline and the sea flooded in, with steep cliffs plunging straight into the water, one of the most complex fjord coastlines in the world." +
-      "Approaching landing, the flight descends along the northern shore of the Strait of Magellan — a roughly 570 km natural passage named for Portuguese navigator Ferdinand Magellan, whose expedition passed through it in 1520 during humanity's first circumnavigation of the globe. The flight lands at Punta Arenas, one of the world's most important far-southern cities and the main gateway to Torres del Paine National Park, Tierra del Fuego, and Antarctica.",
+      " Later in the flight, the Southern Patagonian Ice Field comes into view — the largest continuous body of ice in the Southern Hemisphere outside Antarctica, its edges splitting into countless glacial tongues, with Pío XI Glacier broad and dramatic on the Chilean side. The flight then passes over the Chilean Fjords — a maze of fjords and channels formed as glaciers deeply carved the coastline and the sea flooded in, with steep cliffs plunging straight into the water, one of the most complex fjord coastlines in the world." +
+      " Approaching landing, the flight descends along the northern shore of the Strait of Magellan — a roughly 570 km natural passage named for Portuguese navigator Ferdinand Magellan, whose expedition passed through it in 1520 during humanity's first circumnavigation of the globe. The flight lands at Punta Arenas, one of the world's most important far-southern cities and the main gateway to Torres del Paine National Park, Tierra del Fuego, and Antarctica.",
     },
     travel: {
     "zh-CN":
@@ -5810,19 +5754,19 @@ export const ROUTE_NARRATION: Record<
       "蓬塔阿雷纳斯是前往百内国家公园（经普埃托纳塔莱斯转乘，车程约3小时）的主要门户，全年风力强劲，即使夏季也建议携带厚外套；前往南极的邮轮多从这里出发，旺季船票需提前数月预订。",
     "en-US":
       "Santiago to Punta Arenas takes about 3 hours 35 minutes on LATAM Airlines Chile, one of the longest domestic routes in Chile. Presidente Carlos Ibáñez del Campo Airport is about 20 km from downtown, with taxis and buses into the city." +
-      "Punta Arenas is the main gateway to Torres del Paine National Park (via a roughly 3-hour transfer through Puerto Natales), with strong winds year-round — pack a heavy jacket even in summer; most Antarctic cruises depart from here, and tickets should be booked months ahead during peak season.",
+      " Punta Arenas is the main gateway to Torres del Paine National Park (via a roughly 3-hour transfer through Puerto Natales), with strong winds year-round — pack a heavy jacket even in summer; most Antarctic cruises depart from here, and tickets should be booked months ahead during peak season.",
     },
   },
   "scl-ipc": {
     study: {
     "zh-CN":
-      "圣地亚哥飞复活节岛，是智利国内航线中最特殊的一条：全程约5小时35分钟，绝大部分航程都飞越空无一物的南太平洋，是世界上最孤立的定期航班航线之一。飞机离开南美大陆海岸线后，脚下便只剩下一望无际的蓝色海洋，直到航程末段才重新看到陆地。" +
+      "圣地亚哥飞复活节岛，是智利国内航线中最特殊的一条：全程约5小时35分钟，绝大部分航程都飞越空无一物的南太平洋，是世界上最孤立的定期航班航线之一。飞机离开南美大陆海岸线后，脚下便只剩下一望无际的蓝色海洋，直到航程末段才重新看到陆地。这一段飞越的是南太平洋东部：海底是纳斯卡板块，东侧的东太平洋海隆是全球扩张最快的洋中脊之一，海面之下散布着一列列由地幔热点造出的海山，绝大多数从未露出水面。洋面上常年吹东南信风，云带一条条平行排开，航路上数千公里内没有任何陆地或岛屿可供备降。" +
       "复活节岛距智利大陆约3700公里，是一座由三座盾状火山拼合而成的三角形火山岛，因这种极端的地理孤立，演化出了独一无二的玻里尼西亚文化——约公元1200至1250年间，玻里尼西亚人抵达并定居此岛，逐步发展出雕刻近900尊摩艾石像的独特传统。飞机降落前，舷窗下方能看到拉诺拉拉库火山口，这是绝大多数摩艾石像的采石场，至今仍有数百尊未完成的石像散落其中。" +
       "飞机最终降落在汉加罗阿——全岛唯一的城镇，也是探访这座“世界最孤立岛屿”的唯一基地。这条航线本身就是复活节岛极端孤立性的最好证明：从大陆最近的机场出发，也需要飞越大半个太平洋。",
     "en-US":
-      "Santiago to Easter Island is the most unusual domestic route in Chile: the roughly 5-hour-35-minute flight spends most of its time over open South Pacific water, making it one of the most isolated scheduled air routes in the world. After leaving the South American coastline, nothing but blue ocean remains below until land reappears near the end of the flight." +
-      "Easter Island lies about 3,700 km from mainland Chile, a triangular volcanic island formed from three merged shield volcanoes. This extreme geographic isolation gave rise to a unique Polynesian culture — Polynesians arrived and settled the island around 1200–1250 CE, gradually developing the distinctive tradition of carving nearly 900 moai statues. Just before landing, Rano Raraku crater comes into view from the window, the quarry where most of the moai were carved, still scattered with hundreds of unfinished statues today." +
-      "The flight lands at Hanga Roa, the island's only town and the sole base for exploring the world's most isolated inhabited island. The route itself is the best proof of that isolation: even from the nearest mainland airport, reaching the island means crossing most of the Pacific.",
+      "Santiago to Easter Island is the most unusual domestic route in Chile: the roughly 5-hour-35-minute flight spends most of its time over open South Pacific water, making it one of the most isolated scheduled air routes in the world. After leaving the South American coastline, nothing but blue ocean remains below until land reappears near the end of the flight. This stretch crosses the eastern South Pacific: the sea floor here is the Nazca Plate, and the East Pacific Rise along its eastern side is one of the fastest-spreading mid-ocean ridges on Earth, with chains of seamounts built by mantle hotspots below the surface, most of which never break it. The south-east trade winds blow across it year round, drawing cloud out into parallel bands, and for thousands of kilometres along the track there is no land or island to divert to." +
+      " Easter Island lies about 3,700 km from mainland Chile, a triangular volcanic island formed from three merged shield volcanoes. This extreme geographic isolation gave rise to a unique Polynesian culture — Polynesians arrived and settled the island around 1200–1250 CE, gradually developing the distinctive tradition of carving nearly 900 moai statues. Just before landing, Rano Raraku crater comes into view from the window, the quarry where most of the moai were carved, still scattered with hundreds of unfinished statues today." +
+      " The flight lands at Hanga Roa, the island's only town and the sole base for exploring the world's most isolated inhabited island. The route itself is the best proof of that isolation: even from the nearest mainland airport, reaching the island means crossing most of the Pacific.",
     },
     travel: {
     "zh-CN":
@@ -5830,7 +5774,7 @@ export const ROUTE_NARRATION: Record<
       "岛上物资依赖空运，物价普遍高于智利大陆，建议提前预订住宿与门票（拉帕努伊国家公园门票需在机场或岛上指定地点购买）；岛上无公共交通，租车或报名当地旅行团是探访分散遗址的主要方式，摩艾石像严禁攀爬或触摸。",
     "en-US":
       "Santiago to Easter Island takes about 5 hours 35 minutes on LATAM Airlines Chile, one of the most isolated air routes in the world. Mataveri Airport sits right at the edge of Hanga Roa town, the island's only airport." +
-      "Since supplies are flown in, prices are generally higher than on mainland Chile, so book accommodation and tickets ahead (Rapa Nui National Park entry tickets must be purchased at the airport or designated points on the island); there's no public transit on the island, so renting a car or joining a local tour is the main way to reach the scattered archaeological sites, and climbing or touching the moai is strictly forbidden.",
+      " Since supplies are flown in, prices are generally higher than on mainland Chile, so book accommodation and tickets ahead (Rapa Nui National Park entry tickets must be purchased at the airport or designated points on the island); there's no public transit on the island, so renting a car or joining a local tour is the main way to reach the scattered archaeological sites, and climbing or touching the moai is strictly forbidden.",
     },
   },
 };

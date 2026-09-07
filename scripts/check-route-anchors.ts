@@ -65,7 +65,8 @@ for (const route of getAllRoutes()) {
         notApplicable++;
         continue;
       }
-      const r = deriveAnchors(text, named, lang);
+      // 与 gen:anchors 同一口径（首句是预告不是位置），否则这里报的原因会对不上
+      const r = deriveAnchors(text, named, lang, { firstSentenceIsStart: true });
       const reason =
         r.distinctHits === 0
           ? "解说未提及任何航点"
@@ -108,8 +109,14 @@ for (const route of getAllRoutes()) {
         latLon: wps.map((w) => ({ lat: w.lat, lon: w.lon })),
         anchoring,
       });
+      // 只量「这一句头一次点到某个航点」的时刻：讲到它时镜头到了没有。
+      // 沿用上一句锚点的续写句不算 —— 那几句的位置本来就该由锚点之间的插值
+      // 决定，最后一句尤其如此（「飞机降落在戴高乐机场」沿用的是倒数第二个
+      // 航点，而镜头此刻正该在下降进场，把这段算成「超前一千八百公里」
+      // 是量错了对象）。
       let maxLag = 0;
       for (let k = 0; k < anchoring.anchors.length; k++) {
+        if (k > 0 && anchoring.anchors[k] === anchoring.anchors[k - 1]) continue;
         const t = anchoring.sentenceStartSec[k]!;
         const d = plan.progressToDistance(Math.min(1, t / plan.durationSec));
         maxLag = Math.max(maxLag, Math.abs(cum[anchoring.anchors[k]!]! - d));

@@ -27,6 +27,7 @@ import {
 } from "../lib/cesium/route-flight.ts";
 import { bearingRadians, haversineMeters } from "../lib/geo.ts";
 import { ROUTE_ANCHORS } from "../lib/route-anchors.data.ts";
+import { buildAnchoringForNarration } from "../lib/route-anchors.ts";
 import { splitSentences } from "../lib/sentences.ts";
 
 // ── 阈值 ──────────────────────────────────────────────────────────────
@@ -256,6 +257,76 @@ for (const r of worst) {
 console.log(
   `\n转向速率最大 ${p(rows.map((r) => r.turnDegS), 1).toFixed(1)} 度/秒（上限 ${MAX_TURN_DEG_PER_SEC}）`,
 );
+
+// ── 单次飞行有多长（用户点一条航线要坐在那儿看多久）────────────────────
+//
+// 这一段按**每种语言各自的解说**重算一次，不像上面那样取中英里较长的那个：
+// 镜头时长跟着当前语言的解说走，而「锚点排镜头 + 解说太短」会逼出很长的飞行
+// —— 短解说要求镜头在开头几秒里冲过几千公里，速度上限做不到，排镜就把整条
+// 航线拉长来凑，于是解说播完了镜头还在飞。这类篇目要靠补足解说长度来修，
+// 不是调常量。
+/**
+ * 真正要卡的不是「飞得久」，是「解说播完之后还要干飞多久」——那段没有声音、
+ * 画面又在高空匀速移动，用户只会觉得点了一下之后卡住了。北京—纽约的学习模式
+ * 解说本身就有四分钟，镜头陪着飞四分钟没有问题；旅游模式解说只有一分半，
+ * 镜头却要飞满三分钟，就有问题。
+ */
+//
+// 排镜那边把干飞时长压在 75 秒以内（route-flight.ts 的 MAX_SILENT_TAIL_SEC），
+// 但镜头有速度上限：压到 75 秒之后仍然飞不到终点的航线会被再拉长一截。这里
+// 留出这一截的余量，只卡真正失控的。
+const MAX_SILENT_TAIL_SEC = 105;
+/** 无论解说多长，一次飞行的绝对上限 */
+const MAX_SINGLE_FLIGHT_SEC = 300;
+const durRows: { id: string; lang: string; sec: number; narrSec: number; km: number }[] = [];
+for (const route of getAllRoutes()) {
+  const wps = resolveRouteWaypoints(route);
+  if (wps.length < 2) continue;
+  const n = wps.length;
+  const cum = [0];
+  for (let i = 1; i < n; i++) {
+    cum.push(cum[i - 1]! + Math.max(1, haversineMeters(wps[i - 1]!.lat, wps[i - 1]!.lon, wps[i]!.lat, wps[i]!.lon)));
+  }
+  const total = cum[n - 1]!;
+  const holdIndices: number[] = [];
+  for (let i = 1; i < n - 1; i++) {
+    const k = wps[i]!.kind;
+    if (k === "terrain" || k === "feature") holdIndices.push(i);
+  }
+  const headings = wps.map((_, i) =>
+    bearingRadians(
+      wps[Math.max(0, i - 1)]!.lat, wps[Math.max(0, i - 1)]!.lon,
+      wps[Math.min(n - 1, i + 1)]!.lat, wps[Math.min(n - 1, i + 1)]!.lon,
+    ),
+  );
+  for (const mode of ["study", "travel"] as const) {
+    for (const lang of ["zh-CN", "en-US"] as const) {
+      const text = getRouteNarration(route.id, lang, mode);
+      if (!text) continue;
+      const narrSec = estimateSpeechDurationSec(text, 0.88, lang);
+      const plan = planRouteFlight({
+        cum, total, holdIndices,
+        narrationSec: narrSec,
+        baseHeightM: route.cruiseHeight ?? 11000,
+        headings,
+        latLon: wps.map((w) => ({ lat: w.lat, lon: w.lon })),
+        anchoring: buildAnchoringForNarration(route.id, lang, mode, text),
+      });
+          durRows.push({ id: route.id, lang: `${mode}/${lang}`, sec: plan.durationSec, narrSec, km: total / 1000 });
+      if (plan.durationSec > MAX_SINGLE_FLIGHT_SEC) {
+        fail(route.id, `${mode} ${lang} 飞行 ${plan.durationSec.toFixed(0)}s 超过绝对上限 ${MAX_SINGLE_FLIGHT_SEC}s`);
+      } else if (plan.durationSec - narrSec > MAX_SILENT_TAIL_SEC) {
+        fail(route.id, `${mode} ${lang} 解说 ${narrSec.toFixed(0)}s 播完后还要干飞 ${(plan.durationSec - narrSec).toFixed(0)}s（上限 ${MAX_SILENT_TAIL_SEC}s）`);
+      }
+    }
+  }
+}
+durRows.sort((a, b) => b.sec - b.narrSec - (a.sec - a.narrSec));
+console.log("\n解说播完后干飞最久的几条");
+for (const r of durRows.slice(0, 6)) {
+  console.log(`  ${r.id.padEnd(10)} ${r.lang.padEnd(14)} ${r.km.toFixed(0).padStart(6)} km  解说 ${r.narrSec.toFixed(0).padStart(3)}s → 镜头 ${r.sec.toFixed(0).padStart(3)}s  干飞 ${(r.sec - r.narrSec).toFixed(0).padStart(3)}s`);
+}
+console.log(`  镜头时长中位 ${[...durRows].sort((a, b) => a.sec - b.sec)[Math.floor(durRows.length / 2)]!.sec.toFixed(0)}s · 干飞上限 ${MAX_SILENT_TAIL_SEC}s · 绝对上限 ${MAX_SINGLE_FLIGHT_SEC}s`);
 
 console.log(`\n其中 ${anchoredCount} 条按解说锚点排镜头（第 4 步），其余按航点均匀停留`);
 console.log(`\n${rows.length} 条航线, ${failures} 项异常`);
