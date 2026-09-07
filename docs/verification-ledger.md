@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: e34563f
+lastVerifiedCommit: 06b1471
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,8 @@ lastVerifiedCommit: e34563f
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | travel · 取数受阻（C6-d：香格里拉取数受阻） | 3 | 0 / 0 / 3 | 当场修 0 条；新开 issue 3、关闭 0 |
+| 2026-09-07 | travel · 中国城市人口（C6-d 第 18 批：中国 8 城（大理/开封/平遥/泰安/烟台/秦皇岛/延吉/林芝/曲阜）） | 16 | 1 / 13 / 2 | 当场修 16 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 日本城市人口与口径（C6-d 第 17 批：日本 13 城取 2025 年国势调查速报值） | 27 | 0 / 27 / 0 | 当场修 27 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 葡萄牙城市人口与口径（C6-d 第 16 批：葡萄牙 15 城取 INE 2025 年末估计） | 26 | 0 / 26 / 0 | 当场修 26 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 法国城市人口与口径（C6-d/C6-c 第 15 批：法国 16 城取 INSEE 2023 年法定人口，并改掉四处对不上口径的数字与三处口径混用） | 18 | 1 / 17 / 0 | 当场修 18 条；新开 issue 0、关闭 0 |
