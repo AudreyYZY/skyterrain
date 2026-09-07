@@ -41,20 +41,26 @@ for (const route of getAllRoutes()) {
     const text = getRouteNarration(route.id, lang, "study");
     if (!text) continue;
     const r = deriveAnchors(text, named, lang);
+    // 开头几句没提任何地名 → 归到起点机场。
+    // 另外强制第一句锚在起点：解说常在起飞时就先预告整条航线要飞越什么
+    //（「这条航线要越过南阿尔卑斯山」「终点是赤道附近的爪哇岛」），那是预告
+    // 不是当前位置，直接采信会让镜头一上来就跳到半路。
+    const perSentence = r.perSentence.map((x) => (x < 0 ? 0 : x));
+    if (perSentence.length > 0) perSentence[0] = 0;
+    // 单调性按**强制之后**的表判定 —— 否则「首句预告了终点」这一种情况会被
+    // 判成乱序而整篇丢掉，可它恰恰是上面那条规则已经处理掉的情况。
+    let monotonic = true;
+    for (let i = 1; i < perSentence.length; i++) {
+      if (perSentence[i]! < perSentence[i - 1]!) { monotonic = false; break; }
+    }
     // 只保留可用的：顺序单调，且锚到的航点数达到「该航线可锚航点数」与 2 的较小值。
     // 用 min(2, 可锚航点数) 而不是死磕 2：126 篇解说所属的航线本来就只有一个
     // 可锚航点，锚到那一个已经是全覆盖，按 2 卡会把它们误判成待人工补。
     const needHits = Math.min(2, named.length);
-    if (!r.monotonic || r.distinctHits < needHits || needHits === 0) {
+    if (!monotonic || r.distinctHits < needHits || needHits === 0) {
       skipped++;
       continue;
     }
-    // 开头几句没提任何地名 → 归到起点机场。
-    // 另外强制第一句锚在起点：解说常在起飞时就先预告整条航线要飞越什么
-    //（「这条航线要越过南阿尔卑斯山」），那是预告不是当前位置，直接采信会让
-    // 镜头一上来就跳到半路。
-    const perSentence = r.perSentence.map((x) => (x < 0 ? 0 : x));
-    if (perSentence.length > 0) perSentence[0] = 0;
     (out[route.id] ??= {})[lang] = { perSentence, source: "auto" };
     kept++;
   }
