@@ -6,13 +6,51 @@
   "descriptionEn": "Vienna Basin · Rax-Schneeberg Group · Totes Gebirge",
   "depCountry": "austria",
   "arrCountry": "austria",
-  "flight": { "airline": "奥地利航空", "airlineEn": "Austrian Airlines", "flightNo": "OS935", "aircraft": "Bombardier Dash 8-400", "depIata": "VIE", "arrIata": "KLU", "durationMin": 50 },
+  "flight": {
+    "airline": "奥地利航空",
+    "airlineEn": "Austrian Airlines",
+    "flightNo": "OS109",
+    "aircraft": "Embraer E195",
+    "depIata": "VIE",
+    "arrIata": "KLU",
+    "durationMin": 40
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "vienna", "name": "维也纳", "nameEn": "Vienna", "lat": 48.1103, "lon": 16.5697, "airport": true },
-    { "kind": "terrain", "terrainId": "vienna-basin" },
-    { "kind": "terrain", "terrainId": "rax-schneeberg" },
-    { "kind": "terrain", "terrainId": "totes-gebirge" },
-    { "kind": "city", "id": "klagenfurt", "name": "克拉根福", "nameEn": "Klagenfurt", "lat": 46.6425, "lon": 14.3377, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "vienna",
+      "name": "维也纳",
+      "nameEn": "Vienna",
+      "lat": 48.1103,
+      "lon": 16.5697,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vienna-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rax-schneeberg"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "totes-gebirge"
+    },
+    {
+      "kind": "city",
+      "id": "klagenfurt",
+      "name": "克拉根福",
+      "nameEn": "Klagenfurt",
+      "lat": 46.6425,
+      "lon": 14.3377,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.klagenfurt-airport.at/en/flight-schedule",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**航班号与机型都是退役前的老数据**：奥地利航空的 Dash 8-400 机队已于 **2021-05-31 全部退役**（最后一班恰好就是维也纳—因斯布鲁克 OS905/906）。OS935 对应的是退役前的老班次，各追踪站的数据停留在 2020-04 前后、机型仍标 Dash 8-400（OE-LGH），是过时缓存。**航线本身仍在飞**：克拉根福机场官网当日时刻表给出现役号 OS109（VIE 13:20→KLU 14:00，约 40min，E195），回程 OS110。**来源级别 1**（克拉根福机场官网时刻表）。冬季航季（2026-11 起）班次从每周 11 班减到 6 班，但减班不等于停飞。Dash 8-400 退役与冬季减班另有媒体佐证（级别 2/3）"
+  }
 }

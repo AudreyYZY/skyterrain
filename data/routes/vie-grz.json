@@ -6,13 +6,51 @@
   "descriptionEn": "Vienna Basin · Wienerwald · Rax-Schneeberg Group",
   "depCountry": "austria",
   "arrCountry": "austria",
-  "flight": { "airline": "奥地利航空", "airlineEn": "Austrian Airlines", "flightNo": "OS963", "aircraft": "Embraer E195", "depIata": "VIE", "arrIata": "GRZ", "durationMin": 40 },
+  "flight": {
+    "airline": "奥地利航空",
+    "airlineEn": "Austrian Airlines",
+    "flightNo": "OS963",
+    "aircraft": "Embraer E195",
+    "depIata": "VIE",
+    "arrIata": "GRZ",
+    "durationMin": 40
+  },
   "cruiseHeight": 6500,
   "waypoints": [
-    { "kind": "city", "id": "vienna", "name": "维也纳", "nameEn": "Vienna", "lat": 48.1103, "lon": 16.5697, "airport": true },
-    { "kind": "terrain", "terrainId": "vienna-basin" },
-    { "kind": "terrain", "terrainId": "wienerwald" },
-    { "kind": "terrain", "terrainId": "rax-schneeberg" },
-    { "kind": "city", "id": "graz", "name": "格拉茨", "nameEn": "Graz", "lat": 46.9911, "lon": 15.4396, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "vienna",
+      "name": "维也纳",
+      "nameEn": "Vienna",
+      "lat": 48.1103,
+      "lon": 16.5697,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vienna-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "wienerwald"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rax-schneeberg"
+    },
+    {
+      "kind": "city",
+      "id": "graz",
+      "name": "格拉茨",
+      "nameEn": "Graz",
+      "lat": 46.9911,
+      "lon": 15.4396,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airliners.de/austrian-airlines-streicht-verbindung-wien-graz/89410",
+    "checkedOn": "2026-09-07",
+    "note": "**今天属实，但这条航线已被官方宣布停飞**：奥地利航空因国内航线近 12 个月合计亏损约 1200 万欧元，决定随 2026/27 冬季航季结束停掉这条运营了六十多年的航线，**末班约在 2026-10-23/24**。此后格拉茨只能经法兰克福/慕尼黑/苏黎世中转。航班号 OS963、机型 E195、承运方（奥航自营）截至 2026-09-07 都仍准确。**不现在移除**：它现在确实还在飞，按本项目「checkedOn 是快照」的口径，如实记为已核实 + 注明停航日才是准确的。开一个 issue 追到 2026-10-24 之后再处理——这正是 issue 机制该接住的情况。来源级别 2（奥地利本国航空媒体报道官方公告）"
+  }
 }

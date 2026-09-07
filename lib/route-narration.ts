@@ -2958,9 +2958,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，是北欧航空运营的季节性航班之一，也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
+      "哥本哈根到博恩霍尔姆飞约35分钟，同一时区，由丹麦航空运输（Bornholmerflyet 品牌）以政府招标的公共服务义务航线形式运营，也可选择乘渡轮往返。博恩霍尔姆机场离龙讷市区约5公里。博恩霍尔姆岛因阳光充足被称为“丹麦的阳光岛”，是探索花岗岩海岸与历史城堡的理想目的地。丹麦属申根区，多数国家公民短期旅游按申根区规定执行。",
     "en-US":
-      "Copenhagen to Bornholm is about 35 minutes, same time zone, operated by SAS as a seasonal domestic route; a ferry is another option. Bornholm Airport is about 5 km from Rønne. Known as \"Denmark's sunshine island\" for its abundant sunshine, Bornholm is an ideal destination for exploring the granite coast and its historic castle. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
+      "Copenhagen to Bornholm is about 35 minutes, same time zone, operated by Danish Air Transport under the Bornholmerflyet brand as a state-tendered public service obligation route; a ferry is another option. Bornholm Airport is about 5 km from Rønne. Known as \"Denmark's sunshine island\" for its abundant sunshine, Bornholm is an ideal destination for exploring the granite coast and its historic castle. Denmark is a Schengen-area member; citizens of most countries follow Schengen rules for short visits.",
     },
   },
 
