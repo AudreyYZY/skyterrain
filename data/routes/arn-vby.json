@@ -6,11 +6,43 @@
   "descriptionEn": "Stockholm Archipelago",
   "depCountry": "sweden",
   "arrCountry": "sweden",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK93", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "VBY", "durationMin": 35 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS",
+    "flightNo": "SK93",
+    "aircraft": "ATR 72-600 / Airbus A320neo（BRA 与主线混飞，未能锁定）",
+    "depIata": "ARN",
+    "arrIata": "VBY",
+    "durationMin": 48
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
-    { "kind": "terrain", "terrainId": "stockholm-archipelago" },
-    { "kind": "city", "id": "vby", "name": "维斯比", "nameEn": "Visby", "lat": 57.6628, "lon": 18.3462, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "arn",
+      "name": "斯德哥尔摩",
+      "nameEn": "Stockholm",
+      "lat": 59.6519,
+      "lon": 17.9186,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "stockholm-archipelago"
+    },
+    {
+      "kind": "city",
+      "id": "vby",
+      "name": "维斯比",
+      "nameEn": "Visby",
+      "lat": 57.6628,
+      "lon": 18.3462,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightsfrom.com/ARN-VBY",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**机型锁不死、时长偏短**：ARN–VBY 是 BRA ATR 72 与 SAS 主线混飞的城市对，SK93 具体是哪种未能核实到确凿数据。时长实际最快 50 分钟，35 分钟明显偏短。**季节性的担忧不成立**：flysas.com 目的地页列为全年每日运营，夏季只是加密班次。按红线**不硬写单一机型**。来源级别 3"
+  }
 }

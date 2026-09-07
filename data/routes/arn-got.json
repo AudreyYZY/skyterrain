@@ -6,11 +6,43 @@
   "descriptionEn": "Tiveden",
   "depCountry": "sweden",
   "arrCountry": "sweden",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK173", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "GOT", "durationMin": 43 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS",
+    "flightNo": "SK173",
+    "aircraft": "Airbus A320neo",
+    "depIata": "ARN",
+    "arrIata": "GOT",
+    "durationMin": 58
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
-    { "kind": "terrain", "terrainId": "tiveden" },
-    { "kind": "city", "id": "got", "name": "哥德堡", "nameEn": "Gothenburg", "lat": 57.6628, "lon": 12.2798, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "arn",
+      "name": "斯德哥尔摩",
+      "nameEn": "Stockholm",
+      "lat": 59.6519,
+      "lon": 17.9186,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tiveden"
+    },
+    {
+      "kind": "city",
+      "id": "got",
+      "name": "哥德堡",
+      "nameEn": "Gothenburg",
+      "lat": 57.6628,
+      "lon": 12.2798,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/sk173/stockholm/gothenburg/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：机型 A320neo 核实无误（2026-08-12 记录确为 A20N）。**时长错**：Airportia 显示 SK173 是 22:50→23:50 共 60 分钟；「43 分钟」反复出现在比价站的单机页面，高度疑似「距离÷巡航速度」的通用估算值。**与波兰「39 分钟实为 55 分钟」是同一种错法**——精确到个位数的时长往往是算出来的、不是查出来的。来源级别 3"
+  }
 }

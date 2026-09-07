@@ -6,11 +6,43 @@
   "descriptionEn": "Kebnekaise",
   "depCountry": "sweden",
   "arrCountry": "sweden",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK1042", "aircraft": "Airbus A320neo", "depIata": "ARN", "arrIata": "KRN", "durationMin": 95 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS",
+    "flightNo": "SK1042",
+    "aircraft": "Airbus A320neo",
+    "depIata": "ARN",
+    "arrIata": "KRN",
+    "durationMin": 95
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "arn", "name": "斯德哥尔摩", "nameEn": "Stockholm", "lat": 59.6519, "lon": 17.9186, "airport": true },
-    { "kind": "terrain", "terrainId": "kebnekaise-massif" },
-    { "kind": "city", "id": "krn", "name": "基律纳", "nameEn": "Kiruna", "lat": 67.8220, "lon": 20.3369, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "arn",
+      "name": "斯德哥尔摩",
+      "nameEn": "Stockholm",
+      "lat": 59.6519,
+      "lon": 17.9186,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kebnekaise-massif"
+    },
+    {
+      "kind": "city",
+      "id": "krn",
+      "name": "基律纳",
+      "nameEn": "Kiruna",
+      "lat": 67.822,
+      "lon": 20.3369,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/SAS1042/history/20260120/1025Z/ESSA/ESNQ",
+    "checkedOn": "2026-09-07",
+    "note": "属实：ARN→KRN 不经停、每日运营，计划 11:45→13:20（95min 与记录一致），机型近期以 A320neo 为主。**这条是本批唯一由 SAS 主线自营的**——2025 夏秋季时刻表里 ARN–KRN 只排主线机型，不在 BRA 的 ATR 72 名单中。**我提的「四位号=代管」这条不成立**：SK1042 是四位号却是主线自营，而三位号的 SK107/SK195 反倒是 BRA 代运营。位数不是可靠信号，决定因素是具体城市对。来源级别 3"
+  }
 }

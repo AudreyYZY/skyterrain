@@ -3704,9 +3704,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "岘港到胡志明市飞约90分钟，同一时区，是竹子航空运营的国内航班之一。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
+      "岘港到胡志明市飞约90分钟，同一时区，是越捷航空运营的国内航班之一（原竹子航空已于2026年8月停止全部定期航班）。岘港国际机场距市中心约3公里；新山一机场距胡志明市中心约8公里。这条航线是连接越南中部与南部的重要空中通道之一。",
     "en-US":
-      "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by Bamboo Airways as one of Vietnam's domestic routes. Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
+      "Da Nang to Ho Chi Minh City takes about 90 minutes, same time zone, operated by VietJet Air as one of Vietnam's domestic routes (Bamboo Airways, which used to fly it, stopped all scheduled service in August 2026). Da Nang International Airport is about 3 km from the city centre; Tan Son Nhat Airport is about 8 km from central Ho Chi Minh City. This route is an important air link between central and southern Vietnam.",
     },
   },
 
@@ -4400,9 +4400,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到卡帕多奇亚飞约80分钟，同一时区，是AJet运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；内夫谢希尔卡帕多奇亚机场距格雷梅约40公里，需再转乘约35至40分钟车程。",
+      "伊斯坦布尔到卡帕多奇亚飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；内夫谢希尔卡帕多奇亚机场距格雷梅约40公里，需再转乘约35至40分钟车程。",
     "en-US":
-      "Istanbul to Cappadocia is about 80 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Nevşehir Kapadokya Airport is about 40 km from Göreme, requiring a further 35–40 minute transfer.",
+      "Istanbul to Cappadocia is about 80 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Nevşehir Kapadokya Airport is about 40 km from Göreme, requiring a further 35–40 minute transfer.",
     },
   },
 
@@ -4434,9 +4434,9 @@ export const ROUTE_NARRATION: Record<
     },
     travel: {
     "zh-CN":
-      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是AJet运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
+      "伊斯坦布尔到代尼兹利飞约80分钟，同一时区，是土耳其航空运营的国内航班之一。伊斯坦布尔机场距欧洲区市中心约35公里；代尼兹利恰尔达克机场距棉花堡约65公里。",
     "en-US":
-      "Istanbul to Denizli is about 80 minutes, same time zone, operated by AJet as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport is about 65 km from Pamukkale.",
+      "Istanbul to Denizli is about 80 minutes, same time zone, operated by Turkish Airlines as one of Turkey's domestic routes. Istanbul Airport is about 35 km from the European-side city centre; Denizli Çardak Airport is about 65 km from Pamukkale.",
     },
   },
 

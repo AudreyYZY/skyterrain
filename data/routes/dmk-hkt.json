@@ -6,11 +6,43 @@
   "descriptionEn": "Khao Sam Roi Yot",
   "depCountry": "thailand",
   "arrCountry": "thailand",
-  "flight": { "airline": "泰国亚洲航空", "airlineEn": "Thai AirAsia", "flightNo": "FD3031", "aircraft": "Airbus A320", "depIata": "DMK", "arrIata": "HKT", "durationMin": 85 },
+  "flight": {
+    "airline": "泰国亚洲航空",
+    "airlineEn": "Thai AirAsia",
+    "flightNo": "FD3031",
+    "aircraft": "Airbus A321neo",
+    "depIata": "DMK",
+    "arrIata": "HKT",
+    "durationMin": 85
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
-    { "kind": "terrain", "terrainId": "khao-sam-roi-yot" },
-    { "kind": "city", "id": "hkt", "name": "普吉岛", "nameEn": "Phuket", "lat": 8.1132, "lon": 98.3169, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "dmk",
+      "name": "曼谷廊曼",
+      "nameEn": "Bangkok Don Mueang",
+      "lat": 13.9126,
+      "lon": 100.6069,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "khao-sam-roi-yot"
+    },
+    {
+      "kind": "city",
+      "id": "hkt",
+      "name": "普吉岛",
+      "nameEn": "Phuket",
+      "lat": 8.1132,
+      "lon": 98.3169,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/AIQ3031/history/20260330",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号真实、确实服务 DMK→HKT（FlightAware 记录覆盖 2024-01 至 2026-03）。**机型错**：2026-03-30 实际执飞记录显示是 **A321-251NX（A321neo）**，机号 HS-EAD。A321 与 A320 机身长度与载客量都不同，不是同族内的细节差异。来源级别 3"
+  }
 }

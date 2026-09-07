@@ -269,6 +269,57 @@ if (missingSource > 0) {
       "\n  逐条核实后补 source.ref / checkedOn / note，航班信息随即对外显示。",
   );
 }
+// ── 解说点名的航司与数据对不对得上（报告，不失败）────────────────────
+//
+// 起因：越南岘港—胡志明市的承运人从竹子航空改成越捷之后，**解说正文里仍写着
+// 「是竹子航空运营的国内航班之一」** —— check:routes 一直交叉校验机型，却从没查过
+// 航司名。同一轮里土耳其两条也是我自己改了数据没改解说。
+//
+// 为什么只报告不断言：噪音太大且大多合理 ——「Norwegian coast」里的 Norwegian 是
+// 形容词不是航司；中文解说写「Norlandair」而数据写「北方航空」是同一家的两种写法；
+// 「由济州航空执飞，大韩航空也飞这一段」是正常的补充说明。所以维持一张显式的
+// 豁免表，让**新出现**的不一致能从短名单里跳出来。
+const BENIGN = new Set([
+  "trd-boo/study/en-US/Norwegian",   // 形容词「挪威的」
+  "svg-bgo/study/en-US/Norwegian",
+  "svg-bgo/travel/en-US/Norwegian",
+  "pek-osl/travel/en-US/Norwegian",
+  "rkv-hzk/travel/zh-CN/Norlandair", // 中文解说用拉丁名，数据用中文名，同一家
+  "aey-egs/travel/zh-CN/Norlandair",
+  "zrh-gva/travel/zh-CN/SWISS",      // 同上
+  "pus-cju/study/zh-CN/大韩航空",     // 正文写「大韩航空也飞这一段」，属补充说明
+  "pus-cju/travel/zh-CN/大韩航空",
+  "pus-cju/travel/en-US/Korean Air",
+  "nqz-cit/travel/en-US/FlyArystan", // 提到同集团另一品牌，属补充说明
+]);
+const carrierNames = new Set<string>();
+for (const r of ALL_ROUTES) {
+  if (r.flight?.airline) carrierNames.add(r.flight.airline);
+  if (r.flight?.airlineEn) carrierNames.add(r.flight.airlineEn);
+}
+const carrierProbes = [...carrierNames].filter((n) => n.length >= 4);
+const carrierMismatch: string[] = [];
+for (const r of ALL_ROUTES) {
+  for (const mode of ["study", "travel"] as const) {
+    for (const lang of ["zh-CN", "en-US"] as const) {
+      const text = getRouteNarration(r.id, lang, mode);
+      if (!text) continue;
+      const mine = lang === "zh-CN" ? r.flight?.airline : r.flight?.airlineEn;
+      for (const n of carrierProbes) {
+        if (!text.includes(n)) continue;
+        if (mine && (n === mine || mine.includes(n) || n.includes(mine))) continue;
+        if (BENIGN.has(`${r.id}/${mode}/${lang}/${n}`)) continue;
+        carrierMismatch.push(`${r.id} ${mode}/${lang} 提到「${n}」，数据里是「${mine ?? "(无)"}」`);
+      }
+    }
+  }
+}
+if (carrierMismatch.length > 0) {
+  console.log("\n解说点名的航司与数据对不上（新出现的，请核对）");
+  for (const m of carrierMismatch) console.log(`  ${m}`);
+  console.log("  确认无害就加进 scripts/check-routes.ts 的 BENIGN 表并写明理由。");
+}
+
 if (suspiciousNo.length > 0) {
   console.log("\n形状像占位号的航班号（未核实，核实时优先看这几条）");
   console.log(`  ${suspiciousNo.join("  ")}`);

@@ -6,12 +6,47 @@
   "descriptionEn": "Thung Salaeng Luang · Doi Luang Chiang Dao",
   "depCountry": "thailand",
   "arrCountry": "thailand",
-  "flight": { "airline": "皇雀航空", "airlineEn": "Nok Air", "flightNo": "DD108", "aircraft": "Boeing 737-800", "depIata": "DMK", "arrIata": "CEI", "durationMin": 80 },
+  "flight": {
+    "airline": "皇雀航空",
+    "airlineEn": "Nok Air",
+    "flightNo": "DD108",
+    "aircraft": "Boeing 737-800",
+    "depIata": "DMK",
+    "arrIata": "CEI",
+    "durationMin": 80
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
-    { "kind": "terrain", "terrainId": "thung-salaeng-luang" },
-    { "kind": "terrain", "terrainId": "doi-luang-chiang-dao" },
-    { "kind": "city", "id": "cei", "name": "清莱", "nameEn": "Chiang Rai", "lat": 19.9523, "lon": 99.8828, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "dmk",
+      "name": "曼谷廊曼",
+      "nameEn": "Bangkok Don Mueang",
+      "lat": 13.9126,
+      "lon": 100.6069,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "thung-salaeng-luang"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "doi-luang-chiang-dao"
+    },
+    {
+      "kind": "city",
+      "id": "cei",
+      "name": "清莱",
+      "nameEn": "Chiang Rai",
+      "lat": 19.9523,
+      "lon": 99.8828,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.bangkokpost.com/thailand/general/2358014/nok-air-plane-slides-off-runway-in-chiang-rai-all-flights-cancelled",
+    "checkedOn": "2026-09-07",
+    "note": "**我提的破产重整怀疑不成立**：DD108 现在仍在飞 DMK→CEI，多来源确认（2022 年清莱冲出跑道事故报道明确其为 737-800/DMK-CEI；FlightAware 有 2024-12 至 2025-01 多次记录；追踪站显示为每日常规航班 17:20→18:45）。皇雀 2020 年确实经历过破产重整、机队缩减，但仍保有 737-800 并维持这条线。来源级别 2（主流媒体转述）+ 3"
+  }
 }

@@ -6,11 +6,43 @@
   "descriptionEn": "Ao Phang Nga",
   "depCountry": "thailand",
   "arrCountry": "thailand",
-  "flight": { "airline": "泰国狮航", "airlineEn": "Thai Lion Air", "flightNo": "SL806", "aircraft": "Boeing 737-900", "depIata": "DMK", "arrIata": "KBV", "durationMin": 85 },
+  "flight": {
+    "airline": "泰国狮航",
+    "airlineEn": "Thai Lion Air",
+    "flightNo": "SL806",
+    "aircraft": "Boeing 737-900",
+    "depIata": "DMK",
+    "arrIata": "KBV",
+    "durationMin": 85
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "dmk", "name": "曼谷廊曼", "nameEn": "Bangkok Don Mueang", "lat": 13.9126, "lon": 100.6069, "airport": true },
-    { "kind": "terrain", "terrainId": "ao-phang-nga" },
-    { "kind": "city", "id": "kbv", "name": "甲米", "nameEn": "Krabi", "lat": 8.0991, "lon": 98.9863, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "dmk",
+      "name": "曼谷廊曼",
+      "nameEn": "Bangkok Don Mueang",
+      "lat": 13.9126,
+      "lon": 100.6069,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ao-phang-nga"
+    },
+    {
+      "kind": "city",
+      "id": "kbv",
+      "name": "甲米",
+      "nameEn": "Krabi",
+      "lat": 8.0991,
+      "lon": 98.9863,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://planefinder.net/data/flight/SL806/history/5-56501945",
+    "checkedOn": "2026-09-07",
+    "note": "属实：SL806 服务 DMK→KBV，PlaneFinder 有 2026-03-16 实飞记录，多站一致确认为每日常规航班。机型是 737-9GP(ER) 即 737-900ER，与记录的「737-900」口径一致（商业运营的 737-900 基本都是 ER 版）。来源级别 3"
+  }
 }

@@ -6,11 +6,43 @@
   "descriptionEn": "Mekong Delta",
   "depCountry": "vietnam",
   "arrCountry": "vietnam",
-  "flight": { "airline": "越捷航空", "airlineEn": "VietJet Air", "flightNo": "VJ321", "aircraft": "Airbus A320", "depIata": "SGN", "arrIata": "PQC", "durationMin": 65 },
+  "flight": {
+    "airline": "越捷航空",
+    "airlineEn": "VietJet Air",
+    "flightNo": "VJ321",
+    "aircraft": "Airbus A321",
+    "depIata": "SGN",
+    "arrIata": "PQC",
+    "durationMin": 65
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "sgn", "name": "胡志明市", "nameEn": "Ho Chi Minh City", "lat": 10.8188, "lon": 106.6520, "airport": true },
-    { "kind": "terrain", "terrainId": "mekong-delta" },
-    { "kind": "city", "id": "pqc", "name": "富国岛", "nameEn": "Phu Quoc", "lat": 10.1700, "lon": 103.9950, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "sgn",
+      "name": "胡志明市",
+      "nameEn": "Ho Chi Minh City",
+      "lat": 10.8188,
+      "lon": 106.652,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mekong-delta"
+    },
+    {
+      "kind": "city",
+      "id": "pqc",
+      "name": "富国岛",
+      "nameEn": "Phu Quoc",
+      "lat": 10.17,
+      "lon": 103.995,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/VJC321",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**「321 连续递减」的形状怀疑又一次不成立**：VJ321 确系真实航班（FlightAware/airportia/flightera 均可查，每日执飞、不经停）。**只有机型错**：多站一致标注 A321（FlightAware 具体到 A321-211）。**第五个「形状可疑但真实」的实例**（CA123 / CZ345 / LH100 / 5J321 / VJ321）。占位号扫描到此已有五个反例，只能排优先级这条结论很稳。来源级别 3"
+  }
 }
