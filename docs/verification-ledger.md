@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 1934ef1
+lastVerifiedCommit: 8868ce9
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: 1934ef1
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-07 | routes · 土耳其（2026-09-07 土耳其国内航线（先落 6 条，3 条待定）） | 6 | 0 / 6 / 0 | 当场修 5 条；新开 issue 1、关闭 0 |
 | 2026-09-07 | routes · 印度尼西亚（2026-09-07 印尼国内航线（9 条）） | 9 | 4 / 5 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | routes · 西班牙（2026-09-07 西班牙国内航线（8 条）） | 8 | 0 / 8 / 0 | 当场修 8 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | routes · 加拿大（2026-09-07 加拿大国内航线（8 条）） | 8 | 2 / 6 / 0 | 当场修 8 条；新开 issue 0、关闭 0 |

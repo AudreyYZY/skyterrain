@@ -6,11 +6,43 @@
   "descriptionEn": "Taurus Mountains",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "AJet", "airlineEn": "AJet", "flightNo": "VF1206", "aircraft": "Boeing 737-800", "depIata": "ESB", "arrIata": "AYT", "durationMin": 75 },
+  "flight": {
+    "airline": "AJet",
+    "airlineEn": "AJet",
+    "flightNo": "VF4008",
+    "aircraft": "Boeing 737-800",
+    "depIata": "ESB",
+    "arrIata": "AYT",
+    "durationMin": 75
+  },
   "cruiseHeight": 8800,
   "waypoints": [
-    { "kind": "city", "id": "esb", "name": "安卡拉", "nameEn": "Ankara", "lat": 40.1281, "lon": 32.9951, "airport": true },
-    { "kind": "terrain", "terrainId": "toros-mountains" },
-    { "kind": "city", "id": "ayt", "name": "安塔利亚", "nameEn": "Antalya", "lat": 36.8987, "lon": 30.8005, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "esb",
+      "name": "安卡拉",
+      "nameEn": "Ankara",
+      "lat": 40.1281,
+      "lon": 32.9951,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "toros-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "ayt",
+      "name": "安塔利亚",
+      "nameEn": "Antalya",
+      "lat": 36.8987,
+      "lon": 30.8005,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/TKJ4008",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：VF1206 在各主流追踪站查无记录。ESB→AYT 的真实 AJet 号是 VF4008。机型在 737-800（含 MAX 8）与 A321 之间轮换，记录的 737-800 属实。来源级别 3"
+  }
 }
