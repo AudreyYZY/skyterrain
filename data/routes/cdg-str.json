@@ -6,12 +6,48 @@
   "descriptionEn": "Paris Basin · Vosges",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7182", "aircraft": "Airbus A220-300", "depIata": "CDG", "arrIata": "SXB", "durationMin": 55 },
+  "flight": {
+    "airline": "法国航空",
+    "airlineEn": "Air France",
+    "flightNo": "AF7182",
+    "aircraft": "Airbus A220-300",
+    "depIata": "CDG",
+    "arrIata": "SXB",
+    "durationMin": 55
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
-    { "kind": "terrain", "terrainId": "paris-basin" },
-    { "kind": "terrain", "terrainId": "vosges" },
-    { "kind": "city", "id": "sxb", "name": "斯特拉斯堡", "nameEn": "Strasbourg", "lat": 48.5383, "lon": 7.6282, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cdg",
+      "name": "巴黎",
+      "nameEn": "Paris",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "paris-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vosges"
+    },
+    {
+      "kind": "city",
+      "id": "sxb",
+      "name": "斯特拉斯堡",
+      "nameEn": "Strasbourg",
+      "lat": 48.5383,
+      "lon": 7.6282,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.air-journal.fr/2013-04-02-air-france-strasbourg-cdg-en-avion-cest-fini-570792.html",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：**这条不经停航线早已不存在**：法航 2013-04 即停飞 CDG—斯特拉斯堡不经停航班，改为 TGV Air 火车+飞机联运；2025-03-30 法航终止最后一条斯特拉斯堡航线（至里昂）并完全撤出该机场。高铁约 1h46m 已完全替代。来源级别 2（法国航空业媒体报道官方停航决定）；这条是本项目迄今发现停飞最久的一条——写入时就已经停了十年"
+  }
 }

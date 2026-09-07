@@ -6,12 +6,47 @@
   "descriptionEn": "Sierra Morena · Guadalquivir Valley",
   "depCountry": "spain",
   "arrCountry": "spain",
-  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB8461", "aircraft": "Airbus A320", "depIata": "MAD", "arrIata": "SVQ", "durationMin": 65 },
+  "flight": {
+    "airline": "西班牙国家航空",
+    "airlineEn": "Iberia",
+    "flightNo": "IB1755",
+    "aircraft": "Airbus A320",
+    "depIata": "MAD",
+    "arrIata": "SVQ",
+    "durationMin": 65
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
-    { "kind": "terrain", "terrainId": "sierra-morena" },
-    { "kind": "terrain", "terrainId": "guadalquivir-valley" },
-    { "kind": "city", "id": "svq", "name": "塞维利亚", "nameEn": "Seville", "lat": 37.418, "lon": -5.893, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mad",
+      "name": "马德里",
+      "nameEn": "Madrid",
+      "lat": 40.472,
+      "lon": -3.561,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sierra-morena"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "guadalquivir-valley"
+    },
+    {
+      "kind": "city",
+      "id": "svq",
+      "name": "塞维利亚",
+      "nameEn": "Seville",
+      "lat": 37.418,
+      "lon": -5.893,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ib1755/madrid/sevilla/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：查无 IB8461 的任何在飞记录（相近号段属英航 BA8461、easyJet EZY8461 等其他航司）。该航线真实班次为 IB1755（11:35→12:45，约 1h10m，A320，主干线机队执飞非支线）。来源级别 3"
+  }
 }

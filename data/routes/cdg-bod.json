@@ -6,12 +6,47 @@
   "descriptionEn": "Paris Basin · Aquitaine Basin",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7508", "aircraft": "Airbus A320", "depIata": "CDG", "arrIata": "BOD", "durationMin": 70 },
+  "flight": {
+    "airline": "法国航空",
+    "airlineEn": "Air France",
+    "flightNo": "AF7430",
+    "aircraft": "Airbus A321",
+    "depIata": "CDG",
+    "arrIata": "BOD",
+    "durationMin": 70
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
-    { "kind": "terrain", "terrainId": "paris-basin" },
-    { "kind": "terrain", "terrainId": "aquitaine-basin" },
-    { "kind": "city", "id": "bod", "name": "波尔多", "nameEn": "Bordeaux", "lat": 44.8283, "lon": -0.7156, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cdg",
+      "name": "巴黎",
+      "nameEn": "Paris",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "paris-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "aquitaine-basin"
+    },
+    {
+      "kind": "city",
+      "id": "bod",
+      "name": "波尔多",
+      "nameEn": "Bordeaux",
+      "lat": 44.8283,
+      "lon": -0.7156,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/AFR7430",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：AF7508 实际是 CDG→**南特(NTE)**，不飞波尔多；CDG—BOD 用 AF74xx 号段。该航线承担枢纽中转，属 2023 年法国国内短途禁飞令的豁免航线，仍每周约 45 班正常运营。改为 AF7430（约 58–80min）。来源级别 3"
+  }
 }

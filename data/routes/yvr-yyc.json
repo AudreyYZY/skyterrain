@@ -6,11 +6,43 @@
   "descriptionEn": "Canadian Rockies",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "西捷航空", "airlineEn": "WestJet", "flightNo": "WS210", "aircraft": "Boeing 737-800", "depIata": "YVR", "arrIata": "YYC", "durationMin": 85 },
+  "flight": {
+    "airline": "西捷航空",
+    "airlineEn": "WestJet",
+    "flightNo": "WS116",
+    "aircraft": "Boeing 737-800 / MAX 8（机队轮换）",
+    "depIata": "YVR",
+    "arrIata": "YYC",
+    "durationMin": 85
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "yvr", "name": "温哥华", "nameEn": "Vancouver", "lat": 49.1967, "lon": -123.1815, "airport": true },
-    { "kind": "terrain", "terrainId": "canadian-rockies" },
-    { "kind": "city", "id": "yyc", "name": "卡尔加里", "nameEn": "Calgary", "lat": 51.1315, "lon": -114.0106, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yvr",
+      "name": "温哥华",
+      "nameEn": "Vancouver",
+      "lat": 49.1967,
+      "lon": -123.1815,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "canadian-rockies"
+    },
+    {
+      "kind": "city",
+      "id": "yyc",
+      "name": "卡尔加里",
+      "nameEn": "Calgary",
+      "lat": 51.1315,
+      "lon": -114.0106,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/WJA116",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**WS210 实际是卡尔加里→雷湾(YYC→YQT)**，不是这条线。温哥华—卡尔加里的不经停之一是 WS116（主线运营）。机型子代理无法钉死：WestJet 正加速淘汰 737-700、2026 年接收 17 架 MAX 8，该航段在 737-800 与 MAX 8 之间轮换。按「拿不准不硬写一个值」的口径，机型字段如实写轮换。来源级别 3"
+  }
 }

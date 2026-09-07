@@ -6,14 +6,55 @@
   "descriptionEn": "Canadian Shield · Lake Winnipeg · Interior Plains · Canadian Rockies",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC323", "aircraft": "Airbus A321", "depIata": "YUL", "arrIata": "YVR", "durationMin": 330 },
+  "flight": {
+    "airline": "加拿大航空",
+    "airlineEn": "Air Canada",
+    "flightNo": "AC301",
+    "aircraft": "Airbus A330-300",
+    "depIata": "YUL",
+    "arrIata": "YVR",
+    "durationMin": 330
+  },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "yul", "name": "蒙特利尔", "nameEn": "Montreal", "lat": 45.4706, "lon": -73.7408, "airport": true },
-    { "kind": "terrain", "terrainId": "canadian-shield" },
-    { "kind": "terrain", "terrainId": "lake-winnipeg" },
-    { "kind": "terrain", "terrainId": "interior-plains-ca" },
-    { "kind": "terrain", "terrainId": "canadian-rockies" },
-    { "kind": "city", "id": "yvr", "name": "温哥华", "nameEn": "Vancouver", "lat": 49.1967, "lon": -123.1815, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yul",
+      "name": "蒙特利尔",
+      "nameEn": "Montreal",
+      "lat": 45.4706,
+      "lon": -73.7408,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "canadian-shield"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-winnipeg"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "interior-plains-ca"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "canadian-rockies"
+    },
+    {
+      "kind": "city",
+      "id": "yvr",
+      "name": "温哥华",
+      "nameEn": "Vancouver",
+      "lat": 49.1967,
+      "lon": -123.1815,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/ACA301",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**AC323 实际飞的是蒙特利尔→卡尔加里(YUL→YYC)**，根本不服务这条线，机型也是 787-9 不是 A321。蒙特利尔—温哥华的不经停是 AC301（每周 6 班，A330-300）。AC301 每周 6 班而非每日；另有 Avianca/国航/新西兰航空/TAP 代码共享，但本机是加航主线。来源级别 3"
+  }
 }

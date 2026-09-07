@@ -6,12 +6,47 @@
   "descriptionEn": "Pontic Mountains · Black Sea Coast",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "飞马航空", "airlineEn": "Pegasus Airlines", "flightNo": "PC682", "aircraft": "Boeing 737-800", "depIata": "IST", "arrIata": "TZX", "durationMin": 105 },
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK2834",
+    "aircraft": "Boeing 737-800",
+    "depIata": "IST",
+    "arrIata": "TZX",
+    "durationMin": 105
+  },
   "cruiseHeight": 9800,
   "waypoints": [
-    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
-    { "kind": "terrain", "terrainId": "pontus-mountains" },
-    { "kind": "terrain", "terrainId": "black-sea-coast-turkey" },
-    { "kind": "city", "id": "tzx", "name": "特拉布宗", "nameEn": "Trabzon", "lat": 40.9950, "lon": 39.7897, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "nameEn": "Istanbul",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pontus-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "black-sea-coast-turkey"
+    },
+    {
+      "kind": "city",
+      "id": "tzx",
+      "name": "特拉布宗",
+      "nameEn": "Trabzon",
+      "lat": 40.995,
+      "lon": 39.7897,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/tk2834/istanbul/trabzon/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人与出发机场都不成立**：飞马航空在伊斯坦布尔的基地是 SAW、在 IST 没有基地，PC682 也查无记录。土耳其航空确有 IST→TZX 不经停，每周约 41 班（每日运营），约 1h20m–1h50m，925km。同样没有改出发机场，理由见 ist-nav。机型两次独立检索一致。来源级别 3"
+  }
 }

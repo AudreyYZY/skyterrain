@@ -6,13 +6,51 @@
   "descriptionEn": "Chilterns · Pennines · Cairngorms",
   "depCountry": "uk",
   "arrCountry": "uk",
-  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1476", "aircraft": "Airbus A320", "depIata": "LHR", "arrIata": "INV", "durationMin": 110 },
+  "flight": {
+    "airline": "英国航空",
+    "airlineEn": "British Airways",
+    "flightNo": "BA1420",
+    "aircraft": "Airbus A320neo",
+    "depIata": "LHR",
+    "arrIata": "INV",
+    "durationMin": 110
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
-    { "kind": "terrain", "terrainId": "chilterns" },
-    { "kind": "terrain", "terrainId": "pennines" },
-    { "kind": "terrain", "terrainId": "cairngorms" },
-    { "kind": "city", "id": "inv", "name": "因弗内斯", "nameEn": "Inverness", "lat": 57.5425, "lon": -4.0475, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lhr",
+      "name": "伦敦",
+      "nameEn": "London",
+      "lat": 51.47,
+      "lon": -0.4543,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chilterns"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pennines"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "cairngorms"
+    },
+    {
+      "kind": "city",
+      "id": "inv",
+      "name": "因弗内斯",
+      "nameEn": "Inverness",
+      "lat": 57.5425,
+      "lon": -4.0475,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/British+Airways-London-Inverness/BA1420",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**BA1476 实际飞的是 LHR→格拉斯哥(GLA)**，与因弗内斯无关 —— 和同批的 lhr-gla 撞了号段。LHR—INV 的真实号是 BA1420/1424/1426 一档。BA1420 在 2026-09-07 实际执飞机型为 A320-251N（注册号 G-TTNE）。来源级别 3"
+  }
 }

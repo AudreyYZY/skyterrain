@@ -6,10 +6,39 @@
   "descriptionEn": "Java Sea · Sunda Strait",
   "depCountry": "indonesia",
   "arrCountry": "indonesia",
-  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA608", "aircraft": "Airbus A330-900", "depIata": "CGK", "arrIata": "UPG", "durationMin": 150 },
+  "flight": {
+    "airline": "鹰航印尼",
+    "airlineEn": "Garuda Indonesia",
+    "flightNo": "GA608",
+    "aircraft": "Boeing 737-800",
+    "depIata": "CGK",
+    "arrIata": "UPG",
+    "durationMin": 150
+  },
   "cruiseHeight": 10600,
   "waypoints": [
-    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
-    { "kind": "city", "id": "upg", "name": "望加锡", "nameEn": "Makassar", "lat": -5.0616, "lon": 119.5541, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cgk",
+      "name": "雅加达",
+      "nameEn": "Jakarta",
+      "lat": -6.1256,
+      "lon": 106.6559,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "upg",
+      "name": "望加锡",
+      "nameEn": "Makassar",
+      "lat": -5.0616,
+      "lon": 119.5541,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/GIA608/history/20260120/0540Z/WAAA/WAFF",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段仍在，但**机型早已不是宽体**：实际执飞是 737-800（如 PK-GFH / 737-8U3）。鹰航重组后宽体机主要用于国际线与朝觐包机，国内干线已换窄体。GA608 是 CGK→UPG→PLW 的同号多段航班，**但 CGK–UPG 这一段本身不经停**，符合本项目「经停不算直飞」的口径。来源级别 3"
+  }
 }

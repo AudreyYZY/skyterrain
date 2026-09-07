@@ -6,12 +6,47 @@
   "descriptionEn": "Lyngen Alps · Finnmarksvidda",
   "depCountry": "norway",
   "arrCountry": "norway",
-  "flight": { "airline": "维德罗航空", "airlineEn": "Widerøe", "flightNo": "WF976", "aircraft": "Bombardier Q400", "depIata": "TOS", "arrIata": "ALF", "durationMin": 40 },
+  "flight": {
+    "airline": "维德罗航空",
+    "airlineEn": "Widerøe",
+    "flightNo": "WF928",
+    "aircraft": "Bombardier Dash 8-300 / Q400",
+    "depIata": "TOS",
+    "arrIata": "ALF",
+    "durationMin": 40
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "tos", "name": "特罗姆瑟", "nameEn": "Tromsø", "lat": 69.6833, "lon": 18.9189, "airport": true },
-    { "kind": "terrain", "terrainId": "lyngen-alps" },
-    { "kind": "terrain", "terrainId": "finnmarksvidda" },
-    { "kind": "city", "id": "alf", "name": "阿尔塔", "nameEn": "Alta", "lat": 69.9761, "lon": 23.3717, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "tos",
+      "name": "特罗姆瑟",
+      "nameEn": "Tromsø",
+      "lat": 69.6833,
+      "lon": 18.9189,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lyngen-alps"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "finnmarksvidda"
+    },
+    {
+      "kind": "city",
+      "id": "alf",
+      "name": "阿尔塔",
+      "nameEn": "Alta",
+      "lat": 69.9761,
+      "lon": 23.3717,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.avinor.no/en/airport/alta/flight-times/Flight-info/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**WF976 实际飞的是特罗姆瑟→瓦德索(TOS→VDS)**。特罗姆瑟—阿尔塔的真实号是 WF917/920/924/928/934 系列，其中 WF928 耗时 40min 与记录吻合。**来源级别 1**（Avinor 机场官方运营方航班信息页），是本轮少数拿到一手来源的条目。未查到这条 40min/174km 短程线已换 E190-E2 的证据——E190-E2 目前用在斯塔万格—卑尔根等较长航线"
+  }
 }

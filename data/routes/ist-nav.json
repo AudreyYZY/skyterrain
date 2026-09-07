@@ -6,13 +6,51 @@
   "descriptionEn": "Central Anatolian Plateau · Fairy Chimneys",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "AJet", "airlineEn": "AJet", "flightNo": "VF1417", "aircraft": "Boeing 737 MAX 8", "depIata": "IST", "arrIata": "NAV", "durationMin": 80 },
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK2086",
+    "aircraft": "Airbus A321",
+    "depIata": "IST",
+    "arrIata": "NAV",
+    "durationMin": 80
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
-    { "kind": "terrain", "terrainId": "central-anatolian-plateau" },
-    { "kind": "terrain", "terrainId": "kizilirmak-river" },
-    { "kind": "terrain", "terrainId": "cappadocia-fairy-chimneys" },
-    { "kind": "city", "id": "nav", "name": "内夫谢希尔（卡帕多奇亚）", "nameEn": "Nevşehir (Cappadocia)", "lat": 38.7708, "lon": 34.5344, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "nameEn": "Istanbul",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-anatolian-plateau"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kizilirmak-river"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "cappadocia-fairy-chimneys"
+    },
+    {
+      "kind": "city",
+      "id": "nav",
+      "name": "内夫谢希尔（卡帕多奇亚）",
+      "nameEn": "Nevşehir (Cappadocia)",
+      "lat": 38.7708,
+      "lon": 34.5344,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/tk2086/istanbul/nevsehir/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人与出发机场都不成立**：AJet 在伊斯坦布尔的基地是萨比哈·格克琴(SAW)、在 IST 没有基地，VF1417 也查无记录。但**土耳其航空（主基地就是 IST）确有 IST→NAV 的不经停航班**，每周约 20–37 班、约 51min–1h20m。**没有改出发机场**：解说正文明写「伊斯坦布尔机场 / Istanbul Airport」即 IST 的正式名称，改机场要连中英文解说一起改写。追查确认 TK 有 IST 出发的不经停航班后，只换承运人与航班号即可，解说不动。来源级别 3"
+  }
 }

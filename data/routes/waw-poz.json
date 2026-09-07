@@ -6,11 +6,43 @@
   "descriptionEn": "Great Polish Lowland",
   "depCountry": "poland",
   "arrCountry": "poland",
-  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3945", "aircraft": "Embraer 175", "depIata": "WAW", "arrIata": "POZ", "durationMin": 39 },
+  "flight": {
+    "airline": "波兰航空",
+    "airlineEn": "LOT Polish Airlines",
+    "flightNo": "LO3945",
+    "aircraft": "Embraer E170 / E175 / E190 / E195（LOT 支线混编排班）",
+    "depIata": "WAW",
+    "arrIata": "POZ",
+    "durationMin": 55
+  },
   "cruiseHeight": 5500,
   "waypoints": [
-    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
-    { "kind": "terrain", "terrainId": "great-polish-lowland" },
-    { "kind": "city", "id": "poz", "name": "波兹南", "nameEn": "Poznań", "lat": 52.4210, "lon": 16.8263, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "waw",
+      "name": "华沙",
+      "nameEn": "Warsaw",
+      "lat": 52.1657,
+      "lon": 20.9671,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-polish-lowland"
+    },
+    {
+      "kind": "city",
+      "id": "poz",
+      "name": "波兹南",
+      "nameEn": "Poznań",
+      "lat": 52.421,
+      "lon": 16.8263,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/LOT+-+Polish+Airlines-Warsaw-Poznan/LO3945",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（同航段还有 LO3941/3943/3946/3947/3948 等平行号），距离 283km。**记录的「39 分钟」在多个独立来源里都对不上**——时刻 10:25–11:20、block time 55 分钟。这是本批唯一一个精确到分钟却查证是错的数字。机型常见 E170，也用 E175/E195。该航班有以色列航空 LY9297、土耳其航空 TK8059 代码共享，但**执飞方仍是 LOT 本尊**，承运人记录无误（又一个「有代码共享 ≠ 承运人记错」的例子）。来源级别 3"
+  }
 }

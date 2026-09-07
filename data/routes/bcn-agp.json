@@ -6,11 +6,43 @@
   "descriptionEn": "Cabo de Gata",
   "depCountry": "spain",
   "arrCountry": "spain",
-  "flight": { "airline": "伏林航空", "airlineEn": "Vueling", "flightNo": "VY3401", "aircraft": "Airbus A320", "depIata": "BCN", "arrIata": "AGP", "durationMin": 95 },
+  "flight": {
+    "airline": "伏林航空",
+    "airlineEn": "Vueling",
+    "flightNo": "VY2117",
+    "aircraft": "Airbus A320 / A321（随班次轮换）",
+    "depIata": "BCN",
+    "arrIata": "AGP",
+    "durationMin": 95
+  },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "bcn", "name": "巴塞罗那", "nameEn": "Barcelona", "lat": 41.297, "lon": 2.078, "airport": true },
-    { "kind": "terrain", "terrainId": "cabo-de-gata" },
-    { "kind": "city", "id": "agp", "name": "马拉加", "nameEn": "Málaga", "lat": 36.675, "lon": -4.499, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "bcn",
+      "name": "巴塞罗那",
+      "nameEn": "Barcelona",
+      "lat": 41.297,
+      "lon": 2.078,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "cabo-de-gata"
+    },
+    {
+      "kind": "city",
+      "id": "agp",
+      "name": "马拉加",
+      "nameEn": "Málaga",
+      "lat": 36.675,
+      "lon": -4.499,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/Vueling-Barcelona-Malaga/VY2117",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：查无 VY3401 存在的证据。巴塞罗那—马拉加真实班次在 VY211x/VY212x 号段，如 VY2117（约 1h14m）。来源级别 3"
+  }
 }

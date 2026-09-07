@@ -6,13 +6,51 @@
   "descriptionEn": "Lake Trasimeno · Tuscan Hills · Po Valley",
   "depCountry": "italy",
   "arrCountry": "italy",
-  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ2011", "aircraft": "Airbus A320", "depIata": "FCO", "arrIata": "LIN", "durationMin": 70 },
+  "flight": {
+    "airline": "ITA航空",
+    "airlineEn": "ITA Airways",
+    "flightNo": "AZ2011",
+    "aircraft": "Airbus A320",
+    "depIata": "FCO",
+    "arrIata": "LIN",
+    "durationMin": 70
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
-    { "kind": "terrain", "terrainId": "lake-trasimeno" },
-    { "kind": "terrain", "terrainId": "tuscan-hills" },
-    { "kind": "terrain", "terrainId": "po-valley" },
-    { "kind": "city", "id": "lin", "name": "米兰", "nameEn": "Milan", "lat": 45.4451, "lon": 9.2767, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "fco",
+      "name": "罗马",
+      "nameEn": "Rome",
+      "lat": 41.8003,
+      "lon": 12.2389,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-trasimeno"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tuscan-hills"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "po-valley"
+    },
+    {
+      "kind": "city",
+      "id": "lin",
+      "name": "米兰",
+      "nameEn": "Milan",
+      "lat": 45.4451,
+      "lon": 9.2767,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-fco-to-lin",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：AZ2011 本身属实（FCO↔LIN 约 1h10m，A320，ITA 是该航段唯一不经停承运人），但**承运人名称是死的**：Alitalia 已于 2021-10 停运，由 ITA Airways 接手并沿用 AZ 代码。来源级别 3"
+  }
 }

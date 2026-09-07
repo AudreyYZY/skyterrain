@@ -6,11 +6,43 @@
   "descriptionEn": "Dieng Plateau",
   "depCountry": "indonesia",
   "arrCountry": "indonesia",
-  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA206", "aircraft": "Boeing 737-800", "depIata": "CGK", "arrIata": "YIA", "durationMin": 75 },
+  "flight": {
+    "airline": "鹰航印尼",
+    "airlineEn": "Garuda Indonesia",
+    "flightNo": "GA206",
+    "aircraft": "Boeing 737-800",
+    "depIata": "CGK",
+    "arrIata": "YIA",
+    "durationMin": 75
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
-    { "kind": "terrain", "terrainId": "dieng-plateau" },
-    { "kind": "city", "id": "yia", "name": "日惹", "nameEn": "Yogyakarta", "lat": -7.9004, "lon": 110.0570, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cgk",
+      "name": "雅加达",
+      "nameEn": "Jakarta",
+      "lat": -6.1256,
+      "lon": 106.6559,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dieng-plateau"
+    },
+    {
+      "kind": "city",
+      "id": "yia",
+      "name": "日惹",
+      "nameEn": "Yogyakarta",
+      "lat": -7.9004,
+      "lon": 110.057,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ga206/jakarta/yogyakarta-java-island/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：CGK→**YIA**（库隆普罗戈国际机场，不是老的 JOG）鹰航主线不经停，737-800（PK-GFI），每周 7 班。专门确认了 YIA / JOG 之分，记录用的是 YIA、正确。来源级别 3"
+  }
 }

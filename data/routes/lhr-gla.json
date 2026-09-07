@@ -6,14 +6,55 @@
   "descriptionEn": "Chilterns · Peak District · Lake District · Southern Uplands",
   "depCountry": "uk",
   "arrCountry": "uk",
-  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1470", "aircraft": "Airbus A319", "depIata": "LHR", "arrIata": "GLA", "durationMin": 85 },
+  "flight": {
+    "airline": "英国航空",
+    "airlineEn": "British Airways",
+    "flightNo": "BA1470",
+    "aircraft": "Airbus A320 / A320neo",
+    "depIata": "LHR",
+    "arrIata": "GLA",
+    "durationMin": 85
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
-    { "kind": "terrain", "terrainId": "chilterns" },
-    { "kind": "terrain", "terrainId": "peak-district" },
-    { "kind": "terrain", "terrainId": "lake-district" },
-    { "kind": "terrain", "terrainId": "southern-uplands" },
-    { "kind": "city", "id": "gla", "name": "格拉斯哥", "nameEn": "Glasgow", "lat": 55.8719, "lon": -4.4331, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lhr",
+      "name": "伦敦",
+      "nameEn": "London",
+      "lat": 51.47,
+      "lon": -0.4543,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chilterns"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "peak-district"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-district"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "southern-uplands"
+    },
+    {
+      "kind": "city",
+      "id": "gla",
+      "name": "格拉斯哥",
+      "nameEn": "Glasgow",
+      "lat": 55.8719,
+      "lon": -4.4331,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.britishairways.com/content/flights/scotland/glasgow",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号/城市对/承运人都对，**只有机型错**：BA 官网航线页明确写 A320/A320neo。A319 是这条线的旧机型，机队正在退役（现役从 27 架降到约 22 架）。**来源级别 1**（英航官网航线页）"
+  }
 }

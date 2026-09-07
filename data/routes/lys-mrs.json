@@ -6,13 +6,51 @@
   "descriptionEn": "Vercors · Gorges de l'Ardèche · Camargue",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7724", "aircraft": "Embraer E190", "depIata": "LYS", "arrIata": "MRS", "durationMin": 40 },
+  "flight": {
+    "airline": "法航支线 HOP!",
+    "airlineEn": "Air France HOP",
+    "flightNo": "AF1538",
+    "aircraft": "Embraer E190",
+    "depIata": "LYS",
+    "arrIata": "MRS",
+    "durationMin": 40
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "lys", "name": "里昂", "nameEn": "Lyon", "lat": 45.7256, "lon": 5.0811, "airport": true },
-    { "kind": "terrain", "terrainId": "vercors" },
-    { "kind": "terrain", "terrainId": "ardeche-gorge" },
-    { "kind": "terrain", "terrainId": "camargue" },
-    { "kind": "city", "id": "mrs", "name": "马赛", "nameEn": "Marseille", "lat": 43.4393, "lon": 5.2214, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lys",
+      "name": "里昂",
+      "nameEn": "Lyon",
+      "lat": 45.7256,
+      "lon": 5.0811,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vercors"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "ardeche-gorge"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "camargue"
+    },
+    {
+      "kind": "city",
+      "id": "mrs",
+      "name": "马赛",
+      "nameEn": "Marseille",
+      "lat": 43.4393,
+      "lon": 5.2214,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/af1541/marseille/lyon/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：AF7724 实际是 CDG→**菲加里(科西嘉)**；里昂—马赛由法航支线 HOP! 运营，去程 AF1538、回程 AF1541，机型 E190（机型本身记对了）。改为 AF1538（约 50min）。来源级别 3"
+  }
 }

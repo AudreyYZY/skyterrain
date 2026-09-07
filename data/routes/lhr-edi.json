@@ -6,14 +6,55 @@
   "descriptionEn": "Chilterns · Peak District · Pennines · Southern Uplands",
   "depCountry": "uk",
   "arrCountry": "uk",
-  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1442", "aircraft": "Airbus A320", "depIata": "LHR", "arrIata": "EDI", "durationMin": 85 },
+  "flight": {
+    "airline": "英国航空",
+    "airlineEn": "British Airways",
+    "flightNo": "BA1442",
+    "aircraft": "Airbus A320",
+    "depIata": "LHR",
+    "arrIata": "EDI",
+    "durationMin": 85
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
-    { "kind": "terrain", "terrainId": "chilterns" },
-    { "kind": "terrain", "terrainId": "peak-district" },
-    { "kind": "terrain", "terrainId": "pennines" },
-    { "kind": "terrain", "terrainId": "southern-uplands" },
-    { "kind": "city", "id": "edi", "name": "爱丁堡", "nameEn": "Edinburgh", "lat": 55.9500, "lon": -3.3725, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lhr",
+      "name": "伦敦",
+      "nameEn": "London",
+      "lat": 51.47,
+      "lon": -0.4543,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chilterns"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "peak-district"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pennines"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "southern-uplands"
+    },
+    {
+      "kind": "city",
+      "id": "edi",
+      "name": "爱丁堡",
+      "nameEn": "Edinburgh",
+      "lat": 55.95,
+      "lon": -3.3725,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/British+Airways-London-Edinburgh/BA1442",
+    "checkedOn": "2026-09-07",
+    "note": "属实：BA1442 确系 LHR(T5)→EDI 不经停，英航主线执飞（非 CityFlyer/Euroflyer）。机型在 A319/A320/A320neo/A321neo 之间轮换（BA 短途正处 neo 换代期），A320 是其中在飞的机型之一。严格说「当前机型」是一个机队池而非单一值，但记录的 A320 确在池内，不算错。来源级别 3"
+  }
 }

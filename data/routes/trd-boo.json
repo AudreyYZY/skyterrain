@@ -6,11 +6,44 @@
   "descriptionEn": "Svartisen",
   "depCountry": "norway",
   "arrCountry": "norway",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK4110", "aircraft": "Boeing 737-700", "depIata": "TRD", "arrIata": "BOO", "durationMin": 55 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS",
+    "flightNo": "SK4110",
+    "aircraft": "Boeing 737-700",
+    "depIata": "TRD",
+    "arrIata": "BOO",
+    "durationMin": 55
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "trd", "name": "特隆赫姆", "nameEn": "Trondheim", "lat": 63.4578, "lon": 10.9240, "airport": true },
-    { "kind": "terrain", "terrainId": "svartisen" },
-    { "kind": "city", "id": "boo", "name": "博德", "nameEn": "Bodø", "lat": 67.2692, "lon": 14.3653, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "trd",
+      "name": "特隆赫姆",
+      "nameEn": "Trondheim",
+      "lat": 63.4578,
+      "lon": 10.924,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "svartisen"
+    },
+    {
+      "kind": "city",
+      "id": "boo",
+      "name": "博德",
+      "nameEn": "Bodø",
+      "lat": 67.2692,
+      "lon": 14.3653,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-trd-to-boo",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：查不到 SK4110 服务特隆赫姆—博德。SK41xx 系列（4106/4108/4112）实际是奥斯陆—博德。**机型可确定是错的**（SAS 已全面退役 737），但正确航班号未能核实。该航段本身确实存在（SAS 与 Widerøe 共营，约 34 班/周）。航段存在但号码查不到，也不确定实际执飞方是 SAS 自营还是 Widerøe 代管。需查 SAS/Widerøe 官方时刻表"
+  }
 }

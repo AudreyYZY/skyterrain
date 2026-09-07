@@ -6,13 +6,52 @@
   "descriptionEn": "Chihuahuan Desert · Sonoran Desert · Mojave Desert",
   "depCountry": "usa",
   "arrCountry": "usa",
-  "flight": { "airline": "美国航空", "airlineEn": "American Airlines", "flightNo": "AA1477", "aircraft": "Boeing 737-800", "depIata": "MSY", "arrIata": "LAX", "durationMin": 225 },
+  "flight": {
+    "airline": "美国航空",
+    "airlineEn": "American Airlines",
+    "flightNo": "AA1477",
+    "aircraft": "Boeing 737-800",
+    "depIata": "MSY",
+    "arrIata": "LAX",
+    "durationMin": 225
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "msy", "name": "新奥尔良", "nameEn": "New Orleans", "lat": 29.9934, "lon": -90.2580, "airport": true },
-    { "kind": "terrain", "terrainId": "chihuahuan-desert-us" },
-    { "kind": "terrain", "terrainId": "sonoran-desert" },
-    { "kind": "terrain", "terrainId": "mojave-desert" },
-    { "kind": "city", "id": "lax", "name": "洛杉矶", "nameEn": "Los Angeles", "lat": 33.9416, "lon": -118.4085, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "msy",
+      "name": "新奥尔良",
+      "nameEn": "New Orleans",
+      "lat": 29.9934,
+      "lon": -90.258,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chihuahuan-desert-us"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sonoran-desert"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mojave-desert"
+    },
+    {
+      "kind": "city",
+      "id": "lax",
+      "name": "洛杉矶",
+      "nameEn": "Los Angeles",
+      "lat": 33.9416,
+      "lon": -118.4085,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/AAL1477/history/20251027/1216Z/KSRQ/KCLT",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：**AA1477 目前飞的是萨拉索塔→夏洛特(SRQ→CLT)**（近期多个日期一致），更早还查到杜兰戈→达拉斯，**从未见 MSY→LAX**；且 SRQ-CLT 是美鹰支线量级，与记录的主线窄体机也不符。MSY–LAX **现在是否仍有美航不经停航班，来源本身冲突**（一处称每周 8 班直飞，另一处称需中转）。航段是否存在都有分歧，更谈不上定位替代号。来源级别 3"
+  }
 }

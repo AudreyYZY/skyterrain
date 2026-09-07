@@ -9,8 +9,8 @@
   "flight": {
     "airline": "全日空",
     "airlineEn": "All Nippon Airways",
-    "flightNo": "NH287",
-    "aircraft": "Boeing 767-300",
+    "flightNo": "NH1278",
+    "aircraft": "Airbus A321",
     "depIata": "CTS",
     "arrIata": "FUK",
     "durationMin": 145
@@ -58,5 +58,10 @@
       "lon": 130.451,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-nh1278/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**NH287 不飞新千岁—福冈**，实际是东京羽田→德岛(HND→TKS)（查证当日甚至处于取消状态）。真正的 CTS→FUK 不经停是 NH1278（14:30→约 16:55，145min 与记录吻合），机型 A321。来源级别 3"
+  }
 }

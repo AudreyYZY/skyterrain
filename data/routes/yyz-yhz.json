@@ -6,13 +6,51 @@
   "descriptionEn": "Niagara Escarpment · St. Lawrence Lowlands · Bay of Fundy",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC612", "aircraft": "Airbus A320", "depIata": "YYZ", "arrIata": "YHZ", "durationMin": 140 },
+  "flight": {
+    "airline": "加拿大航空",
+    "airlineEn": "Air Canada",
+    "flightNo": "AC612",
+    "aircraft": "Boeing 737 MAX 8",
+    "depIata": "YYZ",
+    "arrIata": "YHZ",
+    "durationMin": 140
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "yyz", "name": "多伦多", "nameEn": "Toronto", "lat": 43.6777, "lon": -79.6248, "airport": true },
-    { "kind": "terrain", "terrainId": "niagara-escarpment" },
-    { "kind": "terrain", "terrainId": "saint-lawrence-lowlands" },
-    { "kind": "terrain", "terrainId": "bay-of-fundy" },
-    { "kind": "city", "id": "yhz", "name": "哈利法克斯", "nameEn": "Halifax", "lat": 44.8808, "lon": -63.5086, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yyz",
+      "name": "多伦多",
+      "nameEn": "Toronto",
+      "lat": 43.6777,
+      "lon": -79.6248,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "niagara-escarpment"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "saint-lawrence-lowlands"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "bay-of-fundy"
+    },
+    {
+      "kind": "city",
+      "id": "yhz",
+      "name": "哈利法克斯",
+      "nameEn": "Halifax",
+      "lat": 44.8808,
+      "lon": -63.5086,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.torontopearson.com/en/departures/flights/aca612",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（不经停，主线运营，非 Express）；机型现为 737 MAX 8。来源级别 2（多伦多皮尔逊机场官网）"
+  }
 }

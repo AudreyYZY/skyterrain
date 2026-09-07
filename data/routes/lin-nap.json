@@ -6,13 +6,51 @@
   "descriptionEn": "Po Valley · Apennines · Campi Flegrei",
   "depCountry": "italy",
   "arrCountry": "italy",
-  "flight": { "airline": "易捷航空", "airlineEn": "easyJet", "flightNo": "EZY6220", "aircraft": "Airbus A320", "depIata": "LIN", "arrIata": "NAP", "durationMin": 80 },
+  "flight": {
+    "airline": "ITA航空",
+    "airlineEn": "ITA Airways",
+    "flightNo": "AZ1281",
+    "aircraft": "Airbus A320",
+    "depIata": "LIN",
+    "arrIata": "NAP",
+    "durationMin": 80
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "lin", "name": "米兰", "nameEn": "Milan", "lat": 45.4451, "lon": 9.2767, "airport": true },
-    { "kind": "terrain", "terrainId": "po-valley" },
-    { "kind": "terrain", "terrainId": "apennines" },
-    { "kind": "terrain", "terrainId": "campi-flegrei" },
-    { "kind": "city", "id": "nap", "name": "那不勒斯", "nameEn": "Naples", "lat": 40.8860, "lon": 14.2908, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lin",
+      "name": "米兰",
+      "nameEn": "Milan",
+      "lat": 45.4451,
+      "lon": 9.2767,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "po-valley"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "apennines"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "campi-flegrei"
+    },
+    {
+      "kind": "city",
+      "id": "nap",
+      "name": "那不勒斯",
+      "nameEn": "Naples",
+      "lat": 40.886,
+      "lon": 14.2908,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/az1281/milan/napoli/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人整个错了**：LIN↔NAP 目前唯一不经停承运人是 ITA（约 14 班/周）；易捷在米兰飞那不勒斯用的是马尔彭萨(MXP)不是利纳特(LIN)。改为 AZ1281（15:25 LIN→16:35 NAP）。来源级别 3"
+  }
 }

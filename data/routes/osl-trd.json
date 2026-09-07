@@ -6,14 +6,55 @@
   "descriptionEn": "Mjøsa · Gudbrandsdalen · Rondane · Dovrefjell",
   "depCountry": "norway",
   "arrCountry": "norway",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK334", "aircraft": "Boeing 737-700", "depIata": "OSL", "arrIata": "TRD", "durationMin": 55 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS",
+    "flightNo": "SK334",
+    "aircraft": "Airbus A320neo / Embraer E195（随班次轮换）",
+    "depIata": "OSL",
+    "arrIata": "TRD",
+    "durationMin": 55
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "osl", "name": "奥斯陆", "nameEn": "Oslo", "lat": 60.1939, "lon": 11.1004, "airport": true },
-    { "kind": "terrain", "terrainId": "mjosa" },
-    { "kind": "terrain", "terrainId": "gudbrandsdalen" },
-    { "kind": "terrain", "terrainId": "rondane" },
-    { "kind": "terrain", "terrainId": "dovrefjell" },
-    { "kind": "city", "id": "trd", "name": "特隆赫姆", "nameEn": "Trondheim", "lat": 63.4578, "lon": 10.9240, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "osl",
+      "name": "奥斯陆",
+      "nameEn": "Oslo",
+      "lat": 60.1939,
+      "lon": 11.1004,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mjosa"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "gudbrandsdalen"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rondane"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dovrefjell"
+    },
+    {
+      "kind": "city",
+      "id": "trd",
+      "name": "特隆赫姆",
+      "nameEn": "Trondheim",
+      "lat": 63.4578,
+      "lon": 10.924,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airwaysmag.com/legacy-posts/sas-to-retire-last-boeing-737-700",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航线与时长都对（55min），**只有机型错**：SAS 已全面退役 737。该航线现由 A320neo 家族与 SAS Link 的 E195 混合执飞。**机型没有硬写一个值**：子代理确认具体到 SK334 某班次会随排班变动，只能确定不是 737-700。SAS 退役 737 有航空媒体报道佐证（级别 2）"
+  }
 }

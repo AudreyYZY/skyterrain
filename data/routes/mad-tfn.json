@@ -6,14 +6,58 @@
   "descriptionEn": "Guadalquivir Valley · Doñana · Atlantic Ocean · Teide",
   "depCountry": "spain",
   "arrCountry": "spain",
-  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2568", "aircraft": "Airbus A321", "depIata": "MAD", "arrIata": "TFN", "durationMin": 170 },
+  "flight": {
+    "airline": "西班牙国家航空",
+    "airlineEn": "Iberia",
+    "flightNo": "IB1569",
+    "aircraft": "Airbus A321neo",
+    "depIata": "MAD",
+    "arrIata": "TFN",
+    "durationMin": 170
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
-    { "kind": "terrain", "terrainId": "guadalquivir-valley" },
-    { "kind": "terrain", "terrainId": "donana" },
-    { "kind": "feature", "name": "大西洋", "nameEn": "Atlantic Ocean", "lon": -11.229, "lat": 33.28 },
-    { "kind": "terrain", "terrainId": "teide" },
-    { "kind": "city", "id": "tfn", "name": "特内里费", "nameEn": "Tenerife", "lat": 28.483, "lon": -16.341, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mad",
+      "name": "马德里",
+      "nameEn": "Madrid",
+      "lat": 40.472,
+      "lon": -3.561,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "guadalquivir-valley"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "donana"
+    },
+    {
+      "kind": "feature",
+      "name": "大西洋",
+      "nameEn": "Atlantic Ocean",
+      "lon": -11.229,
+      "lat": 33.28
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "teide"
+    },
+    {
+      "kind": "city",
+      "id": "tfn",
+      "name": "特内里费",
+      "nameEn": "Tenerife",
+      "lat": 28.483,
+      "lon": -16.341,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://info.flightmapper.net/flight/Iberia_IB_1569",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：查无 IB2568 服务这条航线。**机场方向本身没错**（MAD→TFN 特内里费北确有直飞），真实班次为 IB1569（11:25→13:20，约 2h55m，记录 170min 同量级）。机型在 A321neo 与 A320 之间按日期轮换，取 A321neo。来源级别 3"
+  }
 }

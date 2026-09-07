@@ -6,13 +6,51 @@
   "descriptionEn": "Great Plains · Great Salt Lake · Central Valley",
   "depCountry": "usa",
   "arrCountry": "usa",
-  "flight": { "airline": "联合航空", "airlineEn": "United Airlines", "flightNo": "UA349", "aircraft": "Boeing 737-900", "depIata": "ORD", "arrIata": "SFO", "durationMin": 255 },
+  "flight": {
+    "airline": "联合航空",
+    "airlineEn": "United Airlines",
+    "flightNo": "UA376",
+    "aircraft": "Boeing 737-900",
+    "depIata": "ORD",
+    "arrIata": "SFO",
+    "durationMin": 255
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "ord", "name": "芝加哥", "nameEn": "Chicago", "lat": 41.9742, "lon": -87.9073, "airport": true },
-    { "kind": "terrain", "terrainId": "great-plains-us" },
-    { "kind": "terrain", "terrainId": "great-salt-lake" },
-    { "kind": "terrain", "terrainId": "central-valley-ca" },
-    { "kind": "city", "id": "sfo", "name": "旧金山", "nameEn": "San Francisco", "lat": 37.6213, "lon": -122.3790, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ord",
+      "name": "芝加哥",
+      "nameEn": "Chicago",
+      "lat": 41.9742,
+      "lon": -87.9073,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-plains-us"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-salt-lake"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-valley-ca"
+    },
+    {
+      "kind": "city",
+      "id": "sfo",
+      "name": "旧金山",
+      "nameEn": "San Francisco",
+      "lat": 37.6213,
+      "lon": -122.379,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/United+Airlines/UA349",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**UA349 目前飞的是 BWI→ORD**，历史轨迹显示这个号被复用于 IAH-FLL / LAX-EWR / SAN-ORD / DEN-BZN 等一系列不同航段，**从未见 ORD→SFO**。该航段的真实号是 UA376，**机型正好就是记录里的 737-900**（巧合对上了）。来源级别 3"
+  }
 }

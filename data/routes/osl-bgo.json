@@ -6,12 +6,47 @@
   "descriptionEn": "Hardangervidda · Hardangerfjord",
   "depCountry": "norway",
   "arrCountry": "norway",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK4048", "aircraft": "Boeing 737-800", "depIata": "OSL", "arrIata": "BGO", "durationMin": 55 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS Scandinavian Airlines",
+    "flightNo": "SK269",
+    "aircraft": "Embraer E195",
+    "depIata": "OSL",
+    "arrIata": "BGO",
+    "durationMin": 55
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "osl", "name": "奥斯陆", "nameEn": "Oslo", "lat": 60.1939, "lon": 11.1004, "airport": true },
-    { "kind": "terrain", "terrainId": "hardangervidda" },
-    { "kind": "terrain", "terrainId": "hardangerfjord" },
-    { "kind": "city", "id": "bgo", "name": "卑尔根", "nameEn": "Bergen", "lat": 60.2934, "lon": 5.2181, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "osl",
+      "name": "奥斯陆",
+      "nameEn": "Oslo",
+      "lat": 60.1939,
+      "lon": 11.1004,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hardangervidda"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hardangerfjord"
+    },
+    {
+      "kind": "city",
+      "id": "bgo",
+      "name": "卑尔根",
+      "nameEn": "Bergen",
+      "lat": 60.2934,
+      "lon": 5.2181,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/sk269/oslo/bergen/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**SK4048 实际飞的是斯塔万格→奥斯陆(SVG→OSL)**。且 **SAS 已于 2023-11-19 退役最后一架波音 737**，现主力是 A320neo/A321neo + SAS Link 的 E195，不可能有 737-800。OSL→BGO 的真实号是 SK269。来源级别 3"
+  }
 }

@@ -6,12 +6,47 @@
   "descriptionEn": "Prince Edward Island · Long Range Mountains",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "加拿大航空", "airlineEn": "Air Canada", "flightNo": "AC1662", "aircraft": "Airbus A220-100", "depIata": "YHZ", "arrIata": "YYT", "durationMin": 95 },
+  "flight": {
+    "airline": "PAL Airlines",
+    "airlineEn": "PAL Airlines",
+    "flightNo": "AC7682",
+    "aircraft": "De Havilland Dash 8-400",
+    "depIata": "YHZ",
+    "arrIata": "YYT",
+    "durationMin": 95
+  },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "yhz", "name": "哈利法克斯", "nameEn": "Halifax", "lat": 44.8808, "lon": -63.5086, "airport": true },
-    { "kind": "terrain", "terrainId": "prince-edward-island" },
-    { "kind": "terrain", "terrainId": "long-range-mountains" },
-    { "kind": "city", "id": "yyt", "name": "圣约翰斯", "nameEn": "St. John's", "lat": 47.6186, "lon": -52.7519, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yhz",
+      "name": "哈利法克斯",
+      "nameEn": "Halifax",
+      "lat": 44.8808,
+      "lon": -63.5086,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "prince-edward-island"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "long-range-mountains"
+    },
+    {
+      "kind": "city",
+      "id": "yyt",
+      "name": "圣约翰斯",
+      "nameEn": "St. John's",
+      "lat": 47.6186,
+      "lon": -52.7519,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://sg.trip.com/flights/status-ac7682/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**航班号与承运人都错，且记录的机型在加航机队里根本不存在**：AC1662 实际是多伦多→迈尔斯堡(YYZ→RSW，美国)用 A319；加航从未订购 A220-100（只有 A220-300）。哈利法克斯—圣约翰斯的不经停是 **AC7682**，由 **PAL Airlines** 以 Air Canada Express 名义用 **Dash 8-400** 执飞，不是加航主线。航班号沿用 AC 前缀（Air Canada Express 代号），但承运人与机型按实际执飞方记。来源级别 3"
+  }
 }

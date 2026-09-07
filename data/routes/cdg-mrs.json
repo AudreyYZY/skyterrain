@@ -6,13 +6,51 @@
   "descriptionEn": "Paris Basin · Massif Central · Rhône",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF7684", "aircraft": "Airbus A319", "depIata": "CDG", "arrIata": "MRS", "durationMin": 80 },
+  "flight": {
+    "airline": "法国航空",
+    "airlineEn": "Air France",
+    "flightNo": "AF7674",
+    "aircraft": "Airbus A320",
+    "depIata": "CDG",
+    "arrIata": "MRS",
+    "durationMin": 80
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
-    { "kind": "terrain", "terrainId": "paris-basin" },
-    { "kind": "terrain", "terrainId": "massif-central" },
-    { "kind": "terrain", "terrainId": "rhone-river" },
-    { "kind": "city", "id": "mrs", "name": "马赛", "nameEn": "Marseille", "lat": 43.4393, "lon": 5.2214, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cdg",
+      "name": "巴黎",
+      "nameEn": "Paris",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "paris-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "massif-central"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rhone-river"
+    },
+    {
+      "kind": "city",
+      "id": "mrs",
+      "name": "马赛",
+      "nameEn": "Marseille",
+      "lat": 43.4393,
+      "lon": 5.2214,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-cdg-to-mrs",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：AF7684 实际飞的是 CDG→**蒙彼利埃(MPL)**，不是马赛；CDG—MRS 用 AF76xx/AF73xx 号段，机型以 A320/A321 为主。改为 AF7674；部分班次由法航支线 HOP! 用 E170 执飞。来源级别 3"
+  }
 }

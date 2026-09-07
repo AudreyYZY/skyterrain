@@ -6,11 +6,43 @@
   "descriptionEn": "Central Anatolian Plateau · Taurus Mountains",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2124", "aircraft": "Airbus A321", "depIata": "IST", "arrIata": "AYT", "durationMin": 85 },
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK2424",
+    "aircraft": "Airbus A321 / Boeing 737-800（随班次轮换）",
+    "depIata": "IST",
+    "arrIata": "AYT",
+    "durationMin": 85
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
-    { "kind": "terrain", "terrainId": "central-anatolian-plateau" },
-    { "kind": "city", "id": "ayt", "name": "安塔利亚", "nameEn": "Antalya", "lat": 36.8987, "lon": 30.8005, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "nameEn": "Istanbul",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-anatolian-plateau"
+    },
+    {
+      "kind": "city",
+      "id": "ayt",
+      "name": "安塔利亚",
+      "nameEn": "Antalya",
+      "lat": 36.8987,
+      "lon": 30.8005,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/THY2424",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**TK2124 实际飞的是伊斯坦布尔→安卡拉(IST→ESB)**，不是安塔利亚。IST→AYT 的真实号是 TK2424。个别班次会临时用 A330 宽体顶班。来源级别 3"
+  }
 }

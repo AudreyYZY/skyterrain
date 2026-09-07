@@ -6,12 +6,47 @@
   "descriptionEn": "Folgefonna · Hardangerfjord",
   "depCountry": "norway",
   "arrCountry": "norway",
-  "flight": { "airline": "维德罗航空", "airlineEn": "Widerøe", "flightNo": "WF608", "aircraft": "Bombardier Q400", "depIata": "SVG", "arrIata": "BGO", "durationMin": 40 },
+  "flight": {
+    "airline": "维德罗航空",
+    "airlineEn": "Widerøe",
+    "flightNo": "WF536",
+    "aircraft": "Bombardier Dash 8-400 / Q400",
+    "depIata": "SVG",
+    "arrIata": "BGO",
+    "durationMin": 40
+  },
   "cruiseHeight": 7000,
   "waypoints": [
-    { "kind": "city", "id": "svg", "name": "斯塔万格", "nameEn": "Stavanger", "lat": 58.8767, "lon": 5.6378, "airport": true },
-    { "kind": "terrain", "terrainId": "folgefonna" },
-    { "kind": "terrain", "terrainId": "hardangerfjord" },
-    { "kind": "city", "id": "bgo", "name": "卑尔根", "nameEn": "Bergen", "lat": 60.2934, "lon": 5.2181, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "svg",
+      "name": "斯塔万格",
+      "nameEn": "Stavanger",
+      "lat": 58.8767,
+      "lon": 5.6378,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "folgefonna"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "hardangerfjord"
+    },
+    {
+      "kind": "city",
+      "id": "bgo",
+      "name": "卑尔根",
+      "nameEn": "Bergen",
+      "lat": 60.2934,
+      "lon": 5.2181,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/WIF536",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**查无 WF608 这个号**（多个追踪站均无结果）。斯塔万格—卑尔根是维德罗的高频不经停航线（每周约 51 班、最多每日 8 班），真实号如 WF536。该航线机队是 Dash 8-400 与 E190-E2 混合，WF536 具体查到的是 Dash 8-400（注册 LN-WDK）。来源级别 3"
+  }
 }

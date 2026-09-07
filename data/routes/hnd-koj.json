@@ -10,19 +10,55 @@
     "airline": "全日空",
     "airlineEn": "All Nippon Airways",
     "flightNo": "NH619",
-    "aircraft": "Boeing 787-8",
+    "aircraft": "Airbus A321",
     "depIata": "HND",
     "arrIata": "KOJ",
     "durationMin": 105
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
-    { "kind": "terrain", "terrainId": "kanto-plain" },
-    { "kind": "terrain", "terrainId": "mount-fuji" },
-    { "kind": "terrain", "terrainId": "kii-mountains" },
-    { "kind": "terrain", "terrainId": "mount-aso" },
-    { "kind": "terrain", "terrainId": "sakurajima" },
-    { "kind": "city", "id": "koj", "name": "鹿儿岛", "nameEn": "Kagoshima", "lat": 31.803, "lon": 130.719, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hnd",
+      "name": "东京羽田",
+      "nameEn": "Tokyo Haneda",
+      "lat": 35.552,
+      "lon": 139.78,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kanto-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-fuji"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kii-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-aso"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sakurajima"
+    },
+    {
+      "kind": "city",
+      "id": "koj",
+      "name": "鹿儿岛",
+      "nameEn": "Kagoshima",
+      "lat": 31.803,
+      "lon": 130.719,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.trip.com/flights/status-nh619/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（06:40→08:25 约 105min 与记录吻合）；机型近期为 A321（194 座）。787-8/737-800 只在部分批次出现。来源级别 3"
+  }
 }

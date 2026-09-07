@@ -6,12 +6,47 @@
   "descriptionEn": "Vogelsberg · North German Plain",
   "depCountry": "germany",
   "arrCountry": "germany",
-  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH2032", "aircraft": "Airbus A320", "depIata": "FRA", "arrIata": "HAM", "durationMin": 65 },
+  "flight": {
+    "airline": "汉莎航空",
+    "airlineEn": "Lufthansa",
+    "flightNo": "LH20",
+    "aircraft": "Airbus A320",
+    "depIata": "FRA",
+    "arrIata": "HAM",
+    "durationMin": 65
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "fra", "name": "法兰克福", "nameEn": "Frankfurt", "lat": 50.0379, "lon": 8.5622, "airport": true },
-    { "kind": "terrain", "terrainId": "vogelsberg" },
-    { "kind": "terrain", "terrainId": "north-german-plain" },
-    { "kind": "city", "id": "ham", "name": "汉堡", "nameEn": "Hamburg", "lat": 53.6304, "lon": 9.9882, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "fra",
+      "name": "法兰克福",
+      "nameEn": "Frankfurt",
+      "lat": 50.0379,
+      "lon": 8.5622,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "vogelsberg"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-german-plain"
+    },
+    {
+      "kind": "city",
+      "id": "ham",
+      "name": "汉堡",
+      "nameEn": "Hamburg",
+      "lat": 53.6304,
+      "lon": 9.9882,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/lh20/frankfurt-am-main/hamburg/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**LH2032 实际飞慕尼黑→杜塞尔多夫**。法兰克福—汉堡仍在（每周约 79 班），真实号如 LH20，机型确为 A320、约 65min 与记录一致 —— **除航班号外其余都对**。来源级别 3"
+  }
 }

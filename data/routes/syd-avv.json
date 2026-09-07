@@ -17,9 +17,36 @@
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "syd", "name": "悉尼", "nameEn": "Sydney", "lat": -33.946, "lon": 151.177, "airport": true },
-    { "kind": "terrain", "terrainId": "blue-mountains" },
-    { "kind": "terrain", "terrainId": "australian-alps" },
-    { "kind": "city", "id": "avv", "name": "吉朗（阿瓦隆）", "nameEn": "Geelong (Avalon)", "lat": -38.0406, "lon": 144.4708, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "syd",
+      "name": "悉尼",
+      "nameEn": "Sydney",
+      "lat": -33.946,
+      "lon": 151.177,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "blue-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "australian-alps"
+    },
+    {
+      "kind": "city",
+      "id": "avv",
+      "name": "吉朗（阿瓦隆）",
+      "nameEn": "Geelong (Avalon)",
+      "lat": -38.0406,
+      "lon": 144.4708,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/JST603/history/20260204/1910Z/YSSY/YMAV",
+    "checkedOn": "2026-09-07",
+    "note": "属实：该线 2020 年 3–12 月曾停飞后复航，截至 2026-02 仍正常运营，A320，约 1h35m。专门确认了 A4（是否已停飞）这一项，结论是仍在飞。来源级别 3"
+  }
 }

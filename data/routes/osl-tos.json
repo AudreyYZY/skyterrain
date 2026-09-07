@@ -6,13 +6,51 @@
   "descriptionEn": "Dovrefjell · Svartisen · Lofoten",
   "depCountry": "norway",
   "arrCountry": "norway",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK4416", "aircraft": "Boeing 737-800", "depIata": "OSL", "arrIata": "TOS", "durationMin": 110 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS",
+    "flightNo": "SK4416",
+    "aircraft": "Airbus A320neo",
+    "depIata": "OSL",
+    "arrIata": "TOS",
+    "durationMin": 110
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "osl", "name": "奥斯陆", "nameEn": "Oslo", "lat": 60.1939, "lon": 11.1004, "airport": true },
-    { "kind": "terrain", "terrainId": "dovrefjell" },
-    { "kind": "terrain", "terrainId": "svartisen" },
-    { "kind": "terrain", "terrainId": "lofoten" },
-    { "kind": "city", "id": "tos", "name": "特罗姆瑟", "nameEn": "Tromsø", "lat": 69.6833, "lon": 18.9189, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "osl",
+      "name": "奥斯陆",
+      "nameEn": "Oslo",
+      "lat": 60.1939,
+      "lon": 11.1004,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "dovrefjell"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "svartisen"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lofoten"
+    },
+    {
+      "kind": "city",
+      "id": "tos",
+      "name": "特罗姆瑟",
+      "nameEn": "Tromsø",
+      "lat": 69.6833,
+      "lon": 18.9189,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.travelandtourworld.com/news/article/scandinavian-airlines-flight-sk4416-airbus-a320neo-with-one-hundred-and-eighty-six-passengers-from-oslo-airport-gardermoen-to-tromso-forced-to-make-emergency-landing-after-overheated-power-bank-sparks/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航段本身没错，**只有机型错**：两条独立来源交叉确认该航班现用 A320neo（其中一条是 2026 年一起充电宝过热迫降事件的报道，明确写明机型与注册号 LN-SAE）。来源级别 2（航空新闻报道具体事件）+ 3"
+  }
 }

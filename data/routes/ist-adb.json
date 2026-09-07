@@ -6,10 +6,39 @@
   "descriptionEn": "Aegean Coast",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2374", "aircraft": "Boeing 737-800", "depIata": "IST", "arrIata": "ADB", "durationMin": 70 },
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK2318",
+    "aircraft": "Airbus A321",
+    "depIata": "IST",
+    "arrIata": "ADB",
+    "durationMin": 70
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
-    { "kind": "city", "id": "adb", "name": "伊兹密尔", "nameEn": "Izmir", "lat": 38.2924, "lon": 27.1570, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "nameEn": "Istanbul",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "adb",
+      "name": "伊兹密尔",
+      "nameEn": "Izmir",
+      "lat": 38.2924,
+      "lon": 27.157,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/tk2318/istanbul/izmir/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：TK2374 在 FlightAware / Flightradar24 / Flightera / AirNav Radar 上均查无此号。IST→ADB 的真实号是 TK2318。来源级别 3"
+  }
 }

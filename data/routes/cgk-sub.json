@@ -6,11 +6,43 @@
   "descriptionEn": "Mount Merapi",
   "depCountry": "indonesia",
   "arrCountry": "indonesia",
-  "flight": { "airline": "鹰航印尼", "airlineEn": "Garuda Indonesia", "flightNo": "GA320", "aircraft": "Boeing 737-800", "depIata": "CGK", "arrIata": "SUB", "durationMin": 100 },
+  "flight": {
+    "airline": "鹰航印尼",
+    "airlineEn": "Garuda Indonesia",
+    "flightNo": "GA320",
+    "aircraft": "Boeing 737-800",
+    "depIata": "CGK",
+    "arrIata": "SUB",
+    "durationMin": 100
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
-    { "kind": "terrain", "terrainId": "mount-merapi" },
-    { "kind": "city", "id": "sub", "name": "泗水", "nameEn": "Surabaya", "lat": -7.3798, "lon": 112.7869, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cgk",
+      "name": "雅加达",
+      "nameEn": "Jakarta",
+      "lat": -6.1256,
+      "lon": 106.6559,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-merapi"
+    },
+    {
+      "kind": "city",
+      "id": "sub",
+      "name": "泗水",
+      "nameEn": "Surabaya",
+      "lat": -7.3798,
+      "lon": 112.7869,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/ga320/jakarta/surabaya/",
+    "checkedOn": "2026-09-07",
+    "note": "属实：CGK(T3)→SUB(T1) 鹰航主线不经停，737-800。有 6 家外航（CI/MH/VN/SV/WY/EY）对它做代码共享，但**承运方就是鹰航本身**——这是 A7 的反面：代码共享存在不等于承运人记错。来源级别 3"
+  }
 }

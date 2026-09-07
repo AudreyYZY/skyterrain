@@ -6,11 +6,43 @@
   "descriptionEn": "Great Polish Lowland",
   "depCountry": "poland",
   "arrCountry": "poland",
-  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3937", "aircraft": "Embraer 175", "depIata": "WAW", "arrIata": "SZZ", "durationMin": 50 },
+  "flight": {
+    "airline": "波兰航空",
+    "airlineEn": "LOT Polish Airlines",
+    "flightNo": "LO3937",
+    "aircraft": "Embraer E170 / E175 / E190 / E195（LOT 支线混编排班）",
+    "depIata": "WAW",
+    "arrIata": "SZZ",
+    "durationMin": 50
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
-    { "kind": "terrain", "terrainId": "great-polish-lowland" },
-    { "kind": "city", "id": "szz", "name": "什切青", "nameEn": "Szczecin", "lat": 53.5847, "lon": 14.9022, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "waw",
+      "name": "华沙",
+      "nameEn": "Warsaw",
+      "lat": 52.1657,
+      "lon": 20.9671,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-polish-lowland"
+    },
+    {
+      "kind": "city",
+      "id": "szz",
+      "name": "什切青",
+      "nameEn": "Szczecin",
+      "lat": 53.5847,
+      "lon": 14.9022,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/lo3937/warsaw/goleniow/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（落地 SZZ = Solidarity Szczecin–Goleniów，市区外约 45km），时长约 48min 与记录 50min 基本吻合。**机型坐实为单一 E175 与证据不符**：一处来源写 ERJ-170，另一处写 E170/E175 混编。来源级别 3"
+  }
 }

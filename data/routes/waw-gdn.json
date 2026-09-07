@@ -6,11 +6,43 @@
   "descriptionEn": "Żuławy Wiślane",
   "depCountry": "poland",
   "arrCountry": "poland",
-  "flight": { "airline": "波兰航空", "airlineEn": "LOT Polish Airlines", "flightNo": "LO3839", "aircraft": "Embraer 190", "depIata": "WAW", "arrIata": "GDN", "durationMin": 50 },
+  "flight": {
+    "airline": "波兰航空",
+    "airlineEn": "LOT Polish Airlines",
+    "flightNo": "LO3839",
+    "aircraft": "Embraer E170 / E175 / E190 / E195（LOT 支线混编排班）",
+    "depIata": "WAW",
+    "arrIata": "GDN",
+    "durationMin": 55
+  },
   "cruiseHeight": 6000,
   "waypoints": [
-    { "kind": "city", "id": "waw", "name": "华沙", "nameEn": "Warsaw", "lat": 52.1657, "lon": 20.9671, "airport": true },
-    { "kind": "terrain", "terrainId": "zulawy-wislane" },
-    { "kind": "city", "id": "gdn", "name": "格但斯克", "nameEn": "Gdańsk", "lat": 54.3776, "lon": 18.4662, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "waw",
+      "name": "华沙",
+      "nameEn": "Warsaw",
+      "lat": 52.1657,
+      "lon": 20.9671,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "zulawy-wislane"
+    },
+    {
+      "kind": "city",
+      "id": "gdn",
+      "name": "格但斯克",
+      "nameEn": "Gdańsk",
+      "lat": 54.3776,
+      "lon": 18.4662,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/lo3839/warsaw/gdansk/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实（华沙肖邦机场官方航班列表亦收录），时刻 14:45–15:40、实际 block time **55 分钟**。但**机型查不到针对 LO3839 的确认来源**——LOT 该航段由 E170/E175/E190/E195 混编排班。机型按红线**不硬写单一型号**，如实写混编；时长按来源改为 55min。来源级别 3"
+  }
 }

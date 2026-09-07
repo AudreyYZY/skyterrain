@@ -6,10 +6,39 @@
   "descriptionEn": "Java Sea · gateway to Tanjung Puting National Park",
   "depCountry": "indonesia",
   "arrCountry": "indonesia",
-  "flight": { "airline": "巴迪克航空", "airlineEn": "Batik Air", "flightNo": "ID6270", "aircraft": "Airbus A320", "depIata": "CGK", "arrIata": "PKN", "durationMin": 85 },
+  "flight": {
+    "airline": "巴迪克航空",
+    "airlineEn": "Batik Air",
+    "flightNo": "ID6202",
+    "aircraft": "Airbus A320",
+    "depIata": "CGK",
+    "arrIata": "PKN",
+    "durationMin": 85
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "cgk", "name": "雅加达", "nameEn": "Jakarta", "lat": -6.1256, "lon": 106.6559, "airport": true },
-    { "kind": "city", "id": "pkn", "name": "邦卡兰文", "nameEn": "Pangkalan Bun", "lat": -2.7048, "lon": 111.6725, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cgk",
+      "name": "雅加达",
+      "nameEn": "Jakarta",
+      "lat": -6.1256,
+      "lon": 106.6559,
+      "airport": true
+    },
+    {
+      "kind": "city",
+      "id": "pkn",
+      "name": "邦卡兰文",
+      "nameEn": "Pangkalan Bun",
+      "lat": -2.7048,
+      "lon": 111.6725,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airpaz.com/en/airlines/ID-Batik-Air/city-city/jakarta-id-pangkalan-bun-id",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：出发机场（CGK 非 HLP）与机型（A320）都对，**只有航班号是错的**：实际是 ID6202（06:00 CGK 起飞）与 ID6204（14:05）。来源级别 3"
+  }
 }

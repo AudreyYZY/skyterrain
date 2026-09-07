@@ -6,12 +6,47 @@
   "descriptionEn": "Meseta Central · Picos de Europa",
   "depCountry": "spain",
   "arrCountry": "spain",
-  "flight": { "airline": "西班牙国家航空", "airlineEn": "Iberia", "flightNo": "IB2724", "aircraft": "Airbus A320", "depIata": "MAD", "arrIata": "BIO", "durationMin": 65 },
+  "flight": {
+    "airline": "西班牙国家航空",
+    "airlineEn": "Iberia",
+    "flightNo": "IB429",
+    "aircraft": "Airbus A320 / A321（随班次轮换）",
+    "depIata": "MAD",
+    "arrIata": "BIO",
+    "durationMin": 65
+  },
   "cruiseHeight": 9000,
   "waypoints": [
-    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
-    { "kind": "terrain", "terrainId": "meseta-central" },
-    { "kind": "terrain", "terrainId": "picos-de-europa" },
-    { "kind": "city", "id": "bio", "name": "毕尔巴鄂", "nameEn": "Bilbao", "lat": 43.301, "lon": -2.911, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mad",
+      "name": "马德里",
+      "nameEn": "Madrid",
+      "lat": 40.472,
+      "lon": -3.561,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "meseta-central"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "picos-de-europa"
+    },
+    {
+      "kind": "city",
+      "id": "bio",
+      "name": "毕尔巴鄂",
+      "nameEn": "Bilbao",
+      "lat": 43.301,
+      "lon": -2.911,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://es.flightaware.com/live/flight/IBE429",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**IB2724 现在飞的是马德里—巴塞罗那**，不是毕尔巴鄂。该航线真实号段是 IB429/433/435/437/439/441，主干线机队执飞。机型在 A321-213 与 A320-214 之间轮换，如实写轮换而不硬选一个。来源级别 3"
+  }
 }

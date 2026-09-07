@@ -6,13 +6,51 @@
   "descriptionEn": "La Mancha Plain · Sierra Morena · Sierra Nevada",
   "depCountry": "spain",
   "arrCountry": "spain",
-  "flight": { "airline": "西班牙欧罗巴航空", "airlineEn": "Air Europa", "flightNo": "UX8901", "aircraft": "ATR 72-600", "depIata": "MAD", "arrIata": "GRX", "durationMin": 70 },
+  "flight": {
+    "airline": "伊比利亚支线（Air Nostrum 执飞）",
+    "airlineEn": "Iberia Regional (operated by Air Nostrum)",
+    "flightNo": "IB1026",
+    "aircraft": "Bombardier CRJ-1000",
+    "depIata": "MAD",
+    "arrIata": "GRX",
+    "durationMin": 70
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "mad", "name": "马德里", "nameEn": "Madrid", "lat": 40.472, "lon": -3.561, "airport": true },
-    { "kind": "terrain", "terrainId": "la-mancha-plain" },
-    { "kind": "terrain", "terrainId": "sierra-morena" },
-    { "kind": "terrain", "terrainId": "sierra-nevada-es" },
-    { "kind": "city", "id": "grx", "name": "格拉纳达", "nameEn": "Granada", "lat": 37.189, "lon": -3.777, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mad",
+      "name": "马德里",
+      "nameEn": "Madrid",
+      "lat": 40.472,
+      "lon": -3.561,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "la-mancha-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sierra-morena"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sierra-nevada-es"
+    },
+    {
+      "kind": "city",
+      "id": "grx",
+      "name": "格拉纳达",
+      "nameEn": "Granada",
+      "lat": 37.189,
+      "lon": -3.777,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.aeropuertomadrid-barajas.com/eng/flight-arrival-IB1026",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**承运人整体记错，机型也错**：查无 UX8901；马德里—格拉纳达不是 Air Europa 执飞，实际是**伊比利亚支线（Air Nostrum）用 CRJ-1000**，出票号 IB1026（Air Nostrum 自身代码 YW1026）。机型从 ATR 72-600（涡桨 72 座）到 CRJ-1000（支线喷气 100 座）是两类飞机。机队构成有 Iberia 集团官网佐证（级别 2）；航班号来源级别 3（机场到达页）"
+  }
 }

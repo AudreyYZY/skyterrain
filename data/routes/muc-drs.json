@@ -6,11 +6,43 @@
   "descriptionEn": "Erzgebirge",
   "depCountry": "germany",
   "arrCountry": "germany",
-  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH1176", "aircraft": "Embraer 190", "depIata": "MUC", "arrIata": "DRS", "durationMin": 55 },
+  "flight": {
+    "airline": "汉莎航空",
+    "airlineEn": "Lufthansa",
+    "flightNo": "LH2122",
+    "aircraft": "Airbus A320 系列",
+    "depIata": "MUC",
+    "arrIata": "DRS",
+    "durationMin": 55
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "muc", "name": "慕尼黑", "nameEn": "Munich", "lat": 48.3538, "lon": 11.7861, "airport": true },
-    { "kind": "terrain", "terrainId": "erzgebirge" },
-    { "kind": "city", "id": "drs", "name": "德累斯顿", "nameEn": "Dresden", "lat": 51.1328, "lon": 13.7672, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "muc",
+      "name": "慕尼黑",
+      "nameEn": "Munich",
+      "lat": 48.3538,
+      "lon": 11.7861,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "erzgebirge"
+    },
+    {
+      "kind": "city",
+      "id": "drs",
+      "name": "德累斯顿",
+      "nameEn": "Dresden",
+      "lat": 51.1328,
+      "lon": 13.7672,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-muc-to-drs",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**LH1176 实际飞法兰克福→波尔图(FRA→OPO)**。慕尼黑—德累斯顿仍在（每周约 15 班，约 55min 与记录一致），真实号如 LH2122/2124/2128；机队汇总为 A319/A320/A320neo/A321，**不含 Embraer/CRJ 支线机型**（同受 CityLine 停运影响）。来源级别 3"
+  }
 }

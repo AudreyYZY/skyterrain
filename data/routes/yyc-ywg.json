@@ -6,13 +6,51 @@
   "descriptionEn": "Alberta Badlands · Interior Plains · Lake Winnipeg",
   "depCountry": "canada",
   "arrCountry": "canada",
-  "flight": { "airline": "西捷航空", "airlineEn": "WestJet", "flightNo": "WS548", "aircraft": "Boeing 737-700", "depIata": "YYC", "arrIata": "YWG", "durationMin": 135 },
+  "flight": {
+    "airline": "西捷航空",
+    "airlineEn": "WestJet",
+    "flightNo": "WS530",
+    "aircraft": "Boeing 737 MAX 8",
+    "depIata": "YYC",
+    "arrIata": "YWG",
+    "durationMin": 135
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "yyc", "name": "卡尔加里", "nameEn": "Calgary", "lat": 51.1315, "lon": -114.0106, "airport": true },
-    { "kind": "terrain", "terrainId": "alberta-badlands" },
-    { "kind": "terrain", "terrainId": "interior-plains-ca" },
-    { "kind": "terrain", "terrainId": "lake-winnipeg" },
-    { "kind": "city", "id": "ywg", "name": "温尼伯", "nameEn": "Winnipeg", "lat": 49.9100, "lon": -97.2399, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "yyc",
+      "name": "卡尔加里",
+      "nameEn": "Calgary",
+      "lat": 51.1315,
+      "lon": -114.0106,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "alberta-badlands"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "interior-plains-ca"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "lake-winnipeg"
+    },
+    {
+      "kind": "city",
+      "id": "ywg",
+      "name": "温尼伯",
+      "nameEn": "Winnipeg",
+      "lat": 49.91,
+      "lon": -97.2399,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/WJA530",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**WS548 实际是埃德蒙顿→蒙特利尔(YEG→YUL)**，不是这条线。卡尔加里—温尼伯的不经停是 WS530，机型现为 737 MAX 8（737-700 正在加速退役）。来源级别 3"
+  }
 }

@@ -6,12 +6,47 @@
   "descriptionEn": "Rhön Mountains · Thuringian Forest",
   "depCountry": "germany",
   "arrCountry": "germany",
-  "flight": { "airline": "汉莎航空", "airlineEn": "Lufthansa", "flightNo": "LH1148", "aircraft": "Embraer 190", "depIata": "FRA", "arrIata": "DRS", "durationMin": 65 },
+  "flight": {
+    "airline": "汉莎航空",
+    "airlineEn": "Lufthansa",
+    "flightNo": "LH62",
+    "aircraft": "Airbus A320 系列",
+    "depIata": "FRA",
+    "arrIata": "DRS",
+    "durationMin": 65
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "fra", "name": "法兰克福", "nameEn": "Frankfurt", "lat": 50.0379, "lon": 8.5622, "airport": true },
-    { "kind": "terrain", "terrainId": "rhon-mountains" },
-    { "kind": "terrain", "terrainId": "thuringian-forest" },
-    { "kind": "city", "id": "drs", "name": "德累斯顿", "nameEn": "Dresden", "lat": 51.1328, "lon": 13.7672, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "fra",
+      "name": "法兰克福",
+      "nameEn": "Frankfurt",
+      "lat": 50.0379,
+      "lon": 8.5622,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rhon-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "thuringian-forest"
+    },
+    {
+      "kind": "city",
+      "id": "drs",
+      "name": "德累斯顿",
+      "nameEn": "Dresden",
+      "lat": 51.1328,
+      "lon": 13.7672,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-fra-to-drs",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**航班号与机型都过时**：LH1148 实际飞法兰克福→马拉加(FRA→AGP)。更要紧的是 **Lufthansa CityLine 已于 2026-04-18 永久停运、机队全部停飞** —— 这类原由 CityLine 用 CRJ900/E190/E195 代管的德国支线，现已转由汉莎主线或接班品牌 Lufthansa City Airlines 的 A320 系列执飞，Embraer 190 不再是当前机型。CityLine 停运有德国航空业媒体报道佐证（级别 2）。这是 A5（承运人停运）的又一实例，且影响面可能不止这两条。来源级别 3+2"
+  }
 }

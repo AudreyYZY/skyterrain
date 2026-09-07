@@ -6,11 +6,43 @@
   "descriptionEn": "Aegean Coast",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2260", "aircraft": "Airbus A321", "depIata": "IST", "arrIata": "BJV", "durationMin": 75 },
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK2506",
+    "aircraft": "Boeing 737-800 / Airbus A321（随班次轮换）",
+    "depIata": "IST",
+    "arrIata": "BJV",
+    "durationMin": 75
+  },
   "cruiseHeight": 9200,
   "waypoints": [
-    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
-    { "kind": "terrain", "terrainId": "aegean-coast-turkey" },
-    { "kind": "city", "id": "bjv", "name": "博德鲁姆", "nameEn": "Bodrum", "lat": 37.2506, "lon": 27.6644, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "nameEn": "Istanbul",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "aegean-coast-turkey"
+    },
+    {
+      "kind": "city",
+      "id": "bjv",
+      "name": "博德鲁姆",
+      "nameEn": "Bodrum",
+      "lat": 37.2506,
+      "lon": 27.6644,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://info.flightmapper.net/flight/Turkish_Airlines_TK_2260",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**TK2260 实际飞的是伊斯坦布尔→埃德雷米特(IST→EDO)**（A319），不是博德鲁姆。IST→BJV 的真实号是 TK2506。实际约 54min，记录 75min 含地面时间。来源级别 3"
+  }
 }

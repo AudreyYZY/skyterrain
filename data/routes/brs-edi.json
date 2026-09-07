@@ -6,13 +6,51 @@
   "descriptionEn": "River Severn · Pennines · Southern Uplands",
   "depCountry": "uk",
   "arrCountry": "uk",
-  "flight": { "airline": "易捷航空", "airlineEn": "easyJet", "flightNo": "EZY6021", "aircraft": "Airbus A320", "depIata": "BRS", "arrIata": "EDI", "durationMin": 80 },
+  "flight": {
+    "airline": "易捷航空",
+    "airlineEn": "easyJet",
+    "flightNo": "EZY213",
+    "aircraft": "Airbus A320",
+    "depIata": "BRS",
+    "arrIata": "EDI",
+    "durationMin": 80
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "brs", "name": "布里斯托尔", "nameEn": "Bristol", "lat": 51.3827, "lon": -2.7191, "airport": true },
-    { "kind": "terrain", "terrainId": "river-severn" },
-    { "kind": "terrain", "terrainId": "pennines" },
-    { "kind": "terrain", "terrainId": "southern-uplands" },
-    { "kind": "city", "id": "edi", "name": "爱丁堡", "nameEn": "Edinburgh", "lat": 55.9500, "lon": -3.3725, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "brs",
+      "name": "布里斯托尔",
+      "nameEn": "Bristol",
+      "lat": 51.3827,
+      "lon": -2.7191,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "river-severn"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pennines"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "southern-uplands"
+    },
+    {
+      "kind": "city",
+      "id": "edi",
+      "name": "爱丁堡",
+      "nameEn": "Edinburgh",
+      "lat": 55.95,
+      "lon": -3.3725,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightaware.com/live/flight/EZY6021",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**EZY6021 实际飞的是布里斯托尔→冰岛凯夫拉维克(BRS→KEF)**，与爱丁堡毫无关系。BRS—EDI 的真实号是 EZY213（平行班次还有 EZY217/EZY320），约 1h20m 与记录 80min 吻合。来源级别 3"
+  }
 }

@@ -17,10 +17,40 @@
   },
   "cruiseHeight": 11500,
   "waypoints": [
-    { "kind": "city", "id": "mel", "name": "墨尔本", "nameEn": "Melbourne", "lat": -37.669, "lon": 144.843, "airport": true },
-    { "kind": "terrain", "terrainId": "grampians" },
-    { "kind": "terrain", "terrainId": "nullarbor-plain" },
-    { "kind": "terrain", "terrainId": "great-victoria-desert" },
-    { "kind": "city", "id": "per", "name": "珀斯", "nameEn": "Perth", "lat": -31.940, "lon": 115.967, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mel",
+      "name": "墨尔本",
+      "nameEn": "Melbourne",
+      "lat": -37.669,
+      "lon": 144.843,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "grampians"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "nullarbor-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "great-victoria-desert"
+    },
+    {
+      "kind": "city",
+      "id": "per",
+      "name": "珀斯",
+      "nameEn": "Perth",
+      "lat": -31.94,
+      "lon": 115.967,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://planefinder.net/data/flight/VA697/history/5-56628316",
+    "checkedOn": "2026-09-07",
+    "note": "属实，约 4h25m。维珍正把 737 MAX 8 逐步铺开，但现有可查证据仍显示 VA697 是经典 737-800（737-8FE，属 NG 非 MAX）。MAX 8 是否已排到这个具体航班号无法百分百确认，按现有证据维持 737-800。来源级别 3"
+  }
 }

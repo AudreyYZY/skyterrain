@@ -6,15 +6,59 @@
   "descriptionEn": "Sognefjord · Jostedalsbreen · Geirangerfjord · Romsdalen · Trollheimen",
   "depCountry": "norway",
   "arrCountry": "norway",
-  "flight": { "airline": "北欧航空", "airlineEn": "SAS", "flightNo": "SK4188", "aircraft": "Boeing 737-700", "depIata": "BGO", "arrIata": "TRD", "durationMin": 55 },
+  "flight": {
+    "airline": "北欧航空",
+    "airlineEn": "SAS",
+    "flightNo": "SK4188",
+    "aircraft": "Embraer E195",
+    "depIata": "BGO",
+    "arrIata": "TRD",
+    "durationMin": 55
+  },
   "cruiseHeight": 9500,
   "waypoints": [
-    { "kind": "city", "id": "bgo", "name": "卑尔根", "nameEn": "Bergen", "lat": 60.2934, "lon": 5.2181, "airport": true },
-    { "kind": "terrain", "terrainId": "sognefjord" },
-    { "kind": "terrain", "terrainId": "jostedalsbreen" },
-    { "kind": "terrain", "terrainId": "geirangerfjord" },
-    { "kind": "terrain", "terrainId": "romsdalen" },
-    { "kind": "terrain", "terrainId": "trollheimen" },
-    { "kind": "city", "id": "trd", "name": "特隆赫姆", "nameEn": "Trondheim", "lat": 63.4578, "lon": 10.9240, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "bgo",
+      "name": "卑尔根",
+      "nameEn": "Bergen",
+      "lat": 60.2934,
+      "lon": 5.2181,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sognefjord"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "jostedalsbreen"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "geirangerfjord"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "romsdalen"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "trollheimen"
+    },
+    {
+      "kind": "city",
+      "id": "trd",
+      "name": "特隆赫姆",
+      "nameEn": "Trondheim",
+      "lat": 63.4578,
+      "lon": 10.924,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/SAS+Scandinavian+Airlines-Stavanger-Bergen/SK4188",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航段成立但机型错：SK4188 实际是 **SVG→BGO→TRD 的多段航班**，卑尔根—特隆赫姆是其中不经停的一段；机型是 E190/E195（注册 SE-RSL），不是 737-700。多段同号航班但本航段不经停，符合本项目口径。来源级别 3"
+  }
 }

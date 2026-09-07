@@ -6,13 +6,51 @@
   "descriptionEn": "Rocky Mountains · Colorado River · Grand Canyon",
   "depCountry": "usa",
   "arrCountry": "usa",
-  "flight": { "airline": "西南航空", "airlineEn": "Southwest Airlines", "flightNo": "WN1149", "aircraft": "Boeing 737-800", "depIata": "DEN", "arrIata": "LAS", "durationMin": 105 },
+  "flight": {
+    "airline": "西南航空",
+    "airlineEn": "Southwest Airlines",
+    "flightNo": "WN3040",
+    "aircraft": "Boeing 737-800",
+    "depIata": "DEN",
+    "arrIata": "LAS",
+    "durationMin": 105
+  },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "den", "name": "丹佛", "nameEn": "Denver", "lat": 39.8561, "lon": -104.6737, "airport": true },
-    { "kind": "terrain", "terrainId": "rocky-mountains" },
-    { "kind": "terrain", "terrainId": "colorado-river" },
-    { "kind": "terrain", "terrainId": "grand-canyon" },
-    { "kind": "city", "id": "las", "name": "拉斯维加斯", "nameEn": "Las Vegas", "lat": 36.0840, "lon": -115.1537, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "den",
+      "name": "丹佛",
+      "nameEn": "Denver",
+      "lat": 39.8561,
+      "lon": -104.6737,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rocky-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "colorado-river"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "grand-canyon"
+    },
+    {
+      "kind": "city",
+      "id": "las",
+      "name": "拉斯维加斯",
+      "nameEn": "Las Vegas",
+      "lat": 36.084,
+      "lon": -115.1537,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/wn3040/denver/las-vegas/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**WN1149 在多个航段间轮换**（小石城→丹佛、圣何塞→圣迭戈、堪萨斯城→拉斯维加斯、坦帕→圣路易斯），**没有一段是 DEN→LAS**。西南在这两城间每周约 156 班，其中 WN3040 核实为 DEN→LAS 不经停，**机型也正好是 737-800**。来源级别 3"
+  }
 }

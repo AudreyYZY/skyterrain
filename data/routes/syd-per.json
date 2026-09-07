@@ -58,5 +58,10 @@
       "lon": 115.967,
       "airport": true
     }
-  ]
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/qf575/sydney/perth",
+    "checkedOn": "2026-09-07",
+    "note": "属实：悉尼—珀斯每日不经停，机型仍为 A330-200（2025–2026 在做客舱翻新，未换型），约 5h。来源级别 3"
+  }
 }

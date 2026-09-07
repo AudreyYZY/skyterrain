@@ -6,11 +6,43 @@
   "descriptionEn": "Aegean Coast · Pamukkale Travertines",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "AJet", "airlineEn": "AJet", "flightNo": "VF1873", "aircraft": "Airbus A320neo", "depIata": "IST", "arrIata": "DNZ", "durationMin": 80 },
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK2578",
+    "aircraft": "Airbus A320 / A321（随班次浮动，未能核实唯一机型）",
+    "depIata": "IST",
+    "arrIata": "DNZ",
+    "durationMin": 80
+  },
   "cruiseHeight": 9200,
   "waypoints": [
-    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
-    { "kind": "terrain", "terrainId": "pamukkale-travertines" },
-    { "kind": "city", "id": "dnz", "name": "代尼兹利（棉花堡）", "nameEn": "Denizli (Pamukkale)", "lat": 37.7856, "lon": 29.5614, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "nameEn": "Istanbul",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "pamukkale-travertines"
+    },
+    {
+      "kind": "city",
+      "id": "dnz",
+      "name": "代尼兹利（棉花堡）",
+      "nameEn": "Denizli (Pamukkale)",
+      "lat": 37.7856,
+      "lon": 29.5614,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/tk2578/istanbul/denizli/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：同 ist-nav：AJet 基地在 SAW、VF1873 查无记录。土耳其航空确有 IST→DNZ 不经停，每日约 1 班（19:15→20:25，约 1h10m，396km）。**机型没有硬写一个值**：两个来源分别给出 A320 与 A321，子代理明确说无法确定唯一机型。按「拿不准就不补一个看起来合理的答案」的红线，如实写浮动。来源级别 3"
+  }
 }

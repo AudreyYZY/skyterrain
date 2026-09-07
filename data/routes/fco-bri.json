@@ -6,14 +6,55 @@
   "descriptionEn": "Tiber · Apennines · Gargano Promontory · Alta Murgia",
   "depCountry": "italy",
   "arrCountry": "italy",
-  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ1521", "aircraft": "Airbus A319", "depIata": "FCO", "arrIata": "BRI", "durationMin": 55 },
+  "flight": {
+    "airline": "ITA航空",
+    "airlineEn": "ITA Airways",
+    "flightNo": "AZ1613",
+    "aircraft": "Airbus A320neo",
+    "depIata": "FCO",
+    "arrIata": "BRI",
+    "durationMin": 55
+  },
   "cruiseHeight": 8000,
   "waypoints": [
-    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
-    { "kind": "terrain", "terrainId": "tiber-river" },
-    { "kind": "terrain", "terrainId": "apennines" },
-    { "kind": "terrain", "terrainId": "gargano-promontory" },
-    { "kind": "terrain", "terrainId": "alta-murgia" },
-    { "kind": "city", "id": "bri", "name": "巴里", "nameEn": "Bari", "lat": 41.1389, "lon": 16.7606, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "fco",
+      "name": "罗马",
+      "nameEn": "Rome",
+      "lat": 41.8003,
+      "lon": 12.2389,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tiber-river"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "apennines"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "gargano-promontory"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "alta-murgia"
+    },
+    {
+      "kind": "city",
+      "id": "bri",
+      "name": "巴里",
+      "nameEn": "Bari",
+      "lat": 41.1389,
+      "lon": 16.7606,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.airportia.com/flights/az1613/rome/bari/",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：承运人名称过期；AZ1521 查不到真实排班，FCO→BRI 的 ITA 号段是 AZ160x/161x。改为 AZ1613（13:30 FCO→14:35 BRI）。来源级别 3"
+  }
 }

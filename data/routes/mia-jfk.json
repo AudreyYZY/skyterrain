@@ -6,12 +6,48 @@
   "descriptionEn": "Florida Peninsula · Atlantic Coastal Plain",
   "depCountry": "usa",
   "arrCountry": "usa",
-  "flight": { "airline": "捷蓝航空", "airlineEn": "JetBlue", "flightNo": "B61160", "aircraft": "Airbus A321", "depIata": "MIA", "arrIata": "JFK", "durationMin": 180 },
+  "flight": {
+    "airline": "捷蓝航空",
+    "airlineEn": "JetBlue",
+    "flightNo": "B61160",
+    "aircraft": "Airbus A321",
+    "depIata": "MIA",
+    "arrIata": "JFK",
+    "durationMin": 180
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "mia", "name": "迈阿密", "nameEn": "Miami", "lat": 25.7959, "lon": -80.2870, "airport": true },
-    { "kind": "terrain", "terrainId": "florida-peninsula" },
-    { "kind": "terrain", "terrainId": "atlantic-coastal-plain" },
-    { "kind": "city", "id": "jfk", "name": "纽约", "nameEn": "New York", "lat": 40.6413, "lon": -73.7781, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "mia",
+      "name": "迈阿密",
+      "nameEn": "Miami",
+      "lat": 25.7959,
+      "lon": -80.287,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "florida-peninsula"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "atlantic-coastal-plain"
+    },
+    {
+      "kind": "city",
+      "id": "jfk",
+      "name": "纽约",
+      "nameEn": "New York",
+      "lat": 40.6413,
+      "lon": -73.7781,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightstats.com/v2/flight-tracker/B6/1160",
+    "checkedOn": "2026-09-07",
+    "status": "wrong",
+    "note": "**查明有误**：「1160 形状可疑」的怀疑成立：**B61160 实际飞的是费城→波士顿(PHL→BOS)**，与迈阿密—纽约无关，且常被 Aer Lingus / Etihad / Icelandair / Qatar / TAP 代码共享挂号。捷蓝在 MIA–JFK 上确有不经停航班（每周约 21 班），但**查不到可靠指向某个具体航班号的来源**。子代理明确说「为避免猜一个看起来合理的号，不给替代」——按红线处理。来源级别 3"
+  }
 }

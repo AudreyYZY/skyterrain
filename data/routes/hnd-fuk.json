@@ -10,18 +10,51 @@
     "airline": "全日空",
     "airlineEn": "All Nippon Airways",
     "flightNo": "NH241",
-    "aircraft": "Boeing 777-200",
+    "aircraft": "Boeing 787-10",
     "depIata": "HND",
     "arrIata": "FUK",
     "durationMin": 110
   },
   "cruiseHeight": 10500,
   "waypoints": [
-    { "kind": "city", "id": "hnd", "name": "东京羽田", "nameEn": "Tokyo Haneda", "lat": 35.552, "lon": 139.780, "airport": true },
-    { "kind": "terrain", "terrainId": "kanto-plain" },
-    { "kind": "terrain", "terrainId": "mount-fuji" },
-    { "kind": "terrain", "terrainId": "kii-mountains" },
-    { "kind": "terrain", "terrainId": "seto-inland-sea" },
-    { "kind": "city", "id": "fuk", "name": "福冈", "nameEn": "Fukuoka", "lat": 33.586, "lon": 130.451, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "hnd",
+      "name": "东京羽田",
+      "nameEn": "Tokyo Haneda",
+      "lat": 35.552,
+      "lon": 139.78,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kanto-plain"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "mount-fuji"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "kii-mountains"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "seto-inland-sea"
+    },
+    {
+      "kind": "city",
+      "id": "fuk",
+      "name": "福冈",
+      "nameEn": "Fukuoka",
+      "lat": 33.586,
+      "lon": 130.451,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightradar24.com/data/flights/nh241",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号与航段属实、不经停；机型现为 787-10（ANA 国内线旗舰，JA981A/JA983A 等）。来源级别 3"
+  }
 }

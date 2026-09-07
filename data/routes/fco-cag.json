@@ -6,12 +6,47 @@
   "descriptionEn": "Tiber · Sardinia",
   "depCountry": "italy",
   "arrCountry": "italy",
-  "flight": { "airline": "意大利航空", "airlineEn": "ITA Airways", "flightNo": "AZ1631", "aircraft": "Airbus A319", "depIata": "FCO", "arrIata": "CAG", "durationMin": 55 },
+  "flight": {
+    "airline": "AeroItalia",
+    "airlineEn": "AeroItalia",
+    "flightNo": "XZ2339",
+    "aircraft": "Boeing 737-800",
+    "depIata": "FCO",
+    "arrIata": "CAG",
+    "durationMin": 55
+  },
   "cruiseHeight": 7500,
   "waypoints": [
-    { "kind": "city", "id": "fco", "name": "罗马", "nameEn": "Rome", "lat": 41.8003, "lon": 12.2389, "airport": true },
-    { "kind": "terrain", "terrainId": "tiber-river" },
-    { "kind": "terrain", "terrainId": "sardinia" },
-    { "kind": "city", "id": "cag", "name": "卡利亚里", "nameEn": "Cagliari", "lat": 39.2515, "lon": 9.0543, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "fco",
+      "name": "罗马",
+      "nameEn": "Rome",
+      "lat": 41.8003,
+      "lon": 12.2389,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "tiber-river"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "sardinia"
+    },
+    {
+      "kind": "city",
+      "id": "cag",
+      "name": "卡利亚里",
+      "nameEn": "Cagliari",
+      "lat": 39.2515,
+      "lon": 9.0543,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-fco-to-cag",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**连承运人都要整体换**：撒丁大区 2026 年新一轮「领土连续性」招标（2026-03-29 生效）把 FCO↔CAG 判给 AeroItalia，ITA 目前不经营这条不经停航线。AeroItalia 无通用中文名，中英文字段统一用原名。来源级别 3，招标结果另有地方主流媒体报道（级别 2）"
+  }
 }

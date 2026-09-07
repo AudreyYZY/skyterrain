@@ -6,12 +6,47 @@
   "descriptionEn": "Bosphorus Strait · Central Anatolian Plateau",
   "depCountry": "turkey",
   "arrCountry": "turkey",
-  "flight": { "airline": "土耳其航空", "airlineEn": "Turkish Airlines", "flightNo": "TK2032", "aircraft": "Airbus A321", "depIata": "IST", "arrIata": "ESB", "durationMin": 55 },
+  "flight": {
+    "airline": "土耳其航空",
+    "airlineEn": "Turkish Airlines",
+    "flightNo": "TK2122",
+    "aircraft": "Airbus A321 / Boeing 737-800（随班次轮换）",
+    "depIata": "IST",
+    "arrIata": "ESB",
+    "durationMin": 55
+  },
   "cruiseHeight": 8500,
   "waypoints": [
-    { "kind": "city", "id": "ist", "name": "伊斯坦布尔", "nameEn": "Istanbul", "lat": 41.2753, "lon": 28.7519, "airport": true },
-    { "kind": "terrain", "terrainId": "bosphorus-strait" },
-    { "kind": "terrain", "terrainId": "central-anatolian-plateau" },
-    { "kind": "city", "id": "esb", "name": "安卡拉", "nameEn": "Ankara", "lat": 40.1281, "lon": 32.9951, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "ist",
+      "name": "伊斯坦布尔",
+      "nameEn": "Istanbul",
+      "lat": 41.2753,
+      "lon": 28.7519,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "bosphorus-strait"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "central-anatolian-plateau"
+    },
+    {
+      "kind": "city",
+      "id": "esb",
+      "name": "安卡拉",
+      "nameEn": "Ankara",
+      "lat": 40.1281,
+      "lon": 32.9951,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://info.flightmapper.net/flight/Turkish_Airlines_TK_2032",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：**TK2032 实际飞的是伊斯坦布尔→科尼亚(IST→KYA)**，不是安卡拉。IST→ESB 的真实号是 TK2122。来源级别 3"
+  }
 }

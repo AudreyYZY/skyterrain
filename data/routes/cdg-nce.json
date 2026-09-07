@@ -6,14 +6,55 @@
   "descriptionEn": "Paris Basin · Massif Central · Rhône · Gorges du Verdon",
   "depCountry": "france",
   "arrCountry": "france",
-  "flight": { "airline": "法国航空", "airlineEn": "Air France", "flightNo": "AF6592", "aircraft": "Airbus A320", "depIata": "CDG", "arrIata": "NCE", "durationMin": 90 },
+  "flight": {
+    "airline": "法国航空",
+    "airlineEn": "Air France",
+    "flightNo": "AF7300",
+    "aircraft": "Airbus A320",
+    "depIata": "CDG",
+    "arrIata": "NCE",
+    "durationMin": 90
+  },
   "cruiseHeight": 10000,
   "waypoints": [
-    { "kind": "city", "id": "cdg", "name": "巴黎", "nameEn": "Paris", "lat": 49.0097, "lon": 2.5479, "airport": true },
-    { "kind": "terrain", "terrainId": "paris-basin" },
-    { "kind": "terrain", "terrainId": "massif-central" },
-    { "kind": "terrain", "terrainId": "rhone-river" },
-    { "kind": "terrain", "terrainId": "verdon-gorge" },
-    { "kind": "city", "id": "nce", "name": "尼斯", "nameEn": "Nice", "lat": 43.6584, "lon": 7.2159, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "cdg",
+      "name": "巴黎",
+      "nameEn": "Paris",
+      "lat": 49.0097,
+      "lon": 2.5479,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "paris-basin"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "massif-central"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "rhone-river"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "verdon-gorge"
+    },
+    {
+      "kind": "city",
+      "id": "nce",
+      "name": "尼斯",
+      "nameEn": "Nice",
+      "lat": 43.6584,
+      "lon": 7.2159,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightconnections.com/flights-from-cdg-to-nce",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：查不到 AF6592 服务 CDG—NCE 的任何记录；该航段法航用 AF73xx 号段（每周约 104 班，A320/A321/E190 混跑）。改为 AF7300（07:05 CDG→08:40 NCE）。来源级别 3"
+  }
 }

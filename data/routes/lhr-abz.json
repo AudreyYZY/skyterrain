@@ -6,14 +6,55 @@
   "descriptionEn": "Chilterns · The Fens · North York Moors · Cheviot Hills",
   "depCountry": "uk",
   "arrCountry": "uk",
-  "flight": { "airline": "英国航空", "airlineEn": "British Airways", "flightNo": "BA1306", "aircraft": "Airbus A321", "depIata": "LHR", "arrIata": "ABZ", "durationMin": 95 },
+  "flight": {
+    "airline": "英国航空",
+    "airlineEn": "British Airways",
+    "flightNo": "BA1306",
+    "aircraft": "Airbus A320",
+    "depIata": "LHR",
+    "arrIata": "ABZ",
+    "durationMin": 95
+  },
   "cruiseHeight": 11000,
   "waypoints": [
-    { "kind": "city", "id": "lhr", "name": "伦敦", "nameEn": "London", "lat": 51.4700, "lon": -0.4543, "airport": true },
-    { "kind": "terrain", "terrainId": "chilterns" },
-    { "kind": "terrain", "terrainId": "the-fens" },
-    { "kind": "terrain", "terrainId": "north-york-moors" },
-    { "kind": "terrain", "terrainId": "cheviot-hills" },
-    { "kind": "city", "id": "abz", "name": "阿伯丁", "nameEn": "Aberdeen", "lat": 57.2019, "lon": -2.1978, "airport": true }
-  ]
+    {
+      "kind": "city",
+      "id": "lhr",
+      "name": "伦敦",
+      "nameEn": "London",
+      "lat": 51.47,
+      "lon": -0.4543,
+      "airport": true
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "chilterns"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "the-fens"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "north-york-moors"
+    },
+    {
+      "kind": "terrain",
+      "terrainId": "cheviot-hills"
+    },
+    {
+      "kind": "city",
+      "id": "abz",
+      "name": "阿伯丁",
+      "nameEn": "Aberdeen",
+      "lat": 57.2019,
+      "lon": -2.1978,
+      "airport": true
+    }
+  ],
+  "source": {
+    "ref": "https://www.flightera.net/en/flight/British+Airways-London-Aberdeen/BA1306",
+    "checkedOn": "2026-09-07",
+    "note": "**已改正**：航班号/城市对/承运人/仍在运营都对，**只有机型错**：查到 BA1306 记为 A320-200。这条线整体（不同班次）确有 A321neo/A320neo 在飞，但**针对 BA1306 这个号**没有支持 A321 的证据。来源级别 3"
+  }
 }
