@@ -4501,8 +4501,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   lille: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Métropole Européenne de Lille（95 个市镇）2023 = 1,195,234 —— **原文数字与口径都对**，只是把年份与口径写明确。
     identity:
-      "里尔在法国最北端、靠近比利时边境，都会区约 120 万人，历史上是佛兰德地区的纺织和工业中心，建筑风格明显带佛兰德砖石山墙特征、和巴黎很不一样。它是法国北部最大的城市，也是伦敦-巴黎-布鲁塞尔三角高铁网的枢纽。",
+      "里尔在法国最北端、靠近比利时边境，都会区约 119.5 万人（2023年法定人口，95 个市镇），历史上是佛兰德地区的纺织和工业中心，建筑风格明显带佛兰德砖石山墙特征、和巴黎很不一样。它是法国北部最大的城市，也是伦敦-巴黎-布鲁塞尔三角高铁网的枢纽。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lille (commune 35 km²; ~238,000 2023; Métropole Européenne de Lille 95 communes ~1.2 million, Eurometropolis with Kortrijk/Tournai ~2 million; Hauts-de-France capital; Vieux-Lille Flemish brick; Grand Place; Euralille with Lille-Europe Eurostar; VAL metro 1983, first automated network; Braderie September; Belgium ~15 km; ~110,000 students)
     howItWorks:
       "里尔是上法兰西大区的首府与诺尔省的省会，由市长和市议会治理，市域约 35 平方公里，2023 年人口约 24 万；2015 年起的里尔欧洲都会区有 95 个市镇、约 120 万人，再往外与比利时的科特赖克、图尔奈组成约 200 万人的跨境“欧洲都会区”，边境在 15 公里外。老里尔是佛兰德风格的红砖街区，大广场是它的中心，欧洲里尔是 1990 年代在两座车站之间建起的新区，欧洲之星与 TGV 在里尔欧洲站停靠，到巴黎一小时、到伦敦一个半小时、到布鲁塞尔 38 分钟；1983 年通车的 VAL 是世界第一条全自动地铁，每年九月的旧货集市涌入三百万人，约 11 万学生让它是法国北部最大的大学城。初来的人最容易犯的错，是把里尔当作法国的边城，而它的日常横跨法比两国，语言与建筑都带着佛兰德的底子。",
@@ -4519,11 +4523,18 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   strasbourg: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Eurométropole de Strasbourg（33 个市镇）2023 = 522,596；unité urbaine = 494,536；aire d'attraction（268 个市镇）= 875,163。**原文的「约78万」三个口径都对不上。**
     identity:
-      "斯特拉斯堡在法国东北部、莱茵河支流伊尔河畔、紧邻德国边境，都会区约 78 万人，是阿尔萨斯地区的中心。历史上在法德之间数次易手，因此建筑、语言（阿尔萨斯语接近德语方言）和饮食都带有明显的德法混合特征。它是欧洲议会所在地之一，也是欧洲理事会总部所在地。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Strasbourg (commune 78 km²; ~295,000 2023; Eurométropole 33 communes; metro area ~875,000; Grand Est capital and prefecture of Bas-Rhin; European Parliament, Council of Europe, ECHR; Grande Île UNESCO 1988 + Neustadt 2017; cathedral; Petite France; Kehl across the Rhine, tram since 2017; Alsatian; Christmas market; TGV ~1 h 45 Paris)
+      "斯特拉斯堡在法国东北部、莱茵河支流伊尔河畔、紧邻德国边境，欧洲都会区约 52.3 万人（2023年法定人口，33 个市镇），是阿尔萨斯地区的中心。历史上在法德之间数次易手，因此建筑、语言（阿尔萨斯语接近德语方言）和饮食都带有明显的德法混合特征。它是欧洲议会所在地之一，也是欧洲理事会总部所在地。",
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   **这是典型的口径混用**：原文把「33 个市镇」（Eurométropole 的建制规模）和「87.5 万」（其实是 268 个市镇的吸引区人口）拼进了同一句话。
     howItWorks:
-      "斯特拉斯堡是大东部大区的首府与下莱茵省的省会，由市长和市议会治理，市域约 78 平方公里，2023 年人口约 29.5 万；2015 年起的斯特拉斯堡欧洲都会区有 33 个市镇，城市连绵区约 87.5 万人。它是欧洲三座“首都”之一：欧洲议会、欧洲委员会与欧洲人权法院都在城北的欧洲区，每月议会开会时城里的酒店订满。老城在伊尔河环抱的大岛上，1988 年列入世界遗产，2017 年德意志帝国时期规划的新城区也被列入，砂岩大教堂与小法兰西的木筋屋在岛上；莱茵河对岸就是德国的凯尔，2017 年起有轨电车直接开过去，阿尔萨斯方言仍在乡下使用，圣诞市场是全法最老的之一，TGV 到巴黎约一小时三刻。初来的人最容易犯的错，是把斯特拉斯堡当作一座法国省城，而它的制度、建筑与日常都跨在法德之间。",
+      "斯特拉斯堡是大东部大区的首府与下莱茵省的省会，由市长和市议会治理，市域约 78 平方公里，2023 年人口约 29.5 万；2015 年起的斯特拉斯堡欧洲都会区有 33 个市镇，该都会区本身约 52.3 万人，再往外 268 个市镇组成的城市吸引区约 87.5 万人（2023年法定人口）。它是欧洲三座“首都”之一：欧洲议会、欧洲委员会与欧洲人权法院都在城北的欧洲区，每月议会开会时城里的酒店订满。老城在伊尔河环抱的大岛上，1988 年列入世界遗产，2017 年德意志帝国时期规划的新城区也被列入，砂岩大教堂与小法兰西的木筋屋在岛上；莱茵河对岸就是德国的凯尔，2017 年起有轨电车直接开过去，阿尔萨斯方言仍在乡下使用，圣诞市场是全法最老的之一，TGV 到巴黎约一小时三刻。初来的人最容易犯的错，是把斯特拉斯堡当作一座法国省城，而它的制度、建筑与日常都跨在法德之间。",
     layout:
       "斯特拉斯堡老城核心“大岛”（Grande Île）被伊尔河的两条支流环抱，是整个古城区第一个被列为世界遗产的老城。大教堂（粉红砂岩、单塔）是老城制高点。小法兰西区（Petite France）沿运河的木筋墙房子是最上镜的一角。欧洲区（欧洲议会等机构）在老城以东。",
     gettingAround:
@@ -4537,8 +4548,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   lyon: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Lyon 的 aire d'attraction 2023 = 2,338,789。howItWorks 段的「Métropole de Lyon 59 个市镇约 140 万」是对的（1,436,354），两段说的是不同口径，已各自标明。
     identity:
-      "里昂在法国东南部、索恩河汇入罗讷河处，都会区约 220 万人，是法国第二或第三大城市（与马赛并列），古罗马时期是高卢地区的重要城市。它被普遍认为是法国的美食之都，也是文艺复兴时期丝绸贸易的中心，联合国教科文组织将里昂老城整体列为世界遗产。",
+      "里昂在法国东南部、索恩河汇入罗讷河处，城市吸引区约 234 万人（2023年法定人口），是法国第二或第三大城市（与马赛并列），古罗马时期是高卢地区的重要城市。它被普遍认为是法国的美食之都，也是文艺复兴时期丝绸贸易的中心，联合国教科文组织将里昂老城整体列为世界遗产。",
     // howItWorks sources: Wikipedia (2026-09): Lyon (9 arrondissements; 47.9 km²; 2023 pop 519,127; Métropole de Lyon 58 communes ~1.4 million since 2015; Villeurbanne separate; UNESCO 1998); Communes of France
     howItWorks:
       "里昂在行政上有两层：里昂市分 9 个区（arrondissement），各有区长和区议会，面积约 48 平方公里，2023 年人口约 52 万；2015 年起，里昂与 58 个周边市镇合成“里昂都会区”，这是法国独一无二的地方政府——它在自己的范围内取代了省，议会由直选产生，管交通、垃圾、道路与社会服务，约 140 万人。维勒班是紧贴里昂的另一座市，人口 15 万，不属于里昂市。城市由两条河定义：索恩河与罗讷河之间的半岛是老中心，白莱果广场在那里；索恩河西岸是文艺复兴时期的老里昂和富维耶山；北面的红十字山是丝织工人的旧区；罗讷河东岸的帕尔迪厄是商务区和高铁站。1998 年这一片列入世界遗产。地址写“街道、门牌、邮编”，邮编 6900 之后的一位数是区号。初来的人最容易犯的错，是把里昂市当作整座城，而它只是一个 140 万人都会区的核心。",
@@ -4557,9 +4572,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   grenoble: {
     identity:
       "格勒诺布尔在法国东南部、伊泽尔河谷中，四面被三条山脉（韦科尔、沙特勒兹、贝勒多讷）环抱，都会区约 45 万人，是法国阿尔卑斯地区的科研和高科技中心（有“法国硅谷”之称），1968 年冬奥会举办地。城市本身平坦，一抬头就能看到雪山，是这座城市最鲜明的印象。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Grenoble (commune 18 km²; ~156,100 2023; Grenoble-Alpes Métropole 49 communes, urban area ~727,000, largest metropolis in the Alps; prefecture of Isère; flat basin ringed by Chartreuse, Vercors, Belledonne; Bastille cable car "Les Bulles" 1934; ~70,000 students; STMicroelectronics, Schneider, CEA; 1968 Olympics; trams; Lyon ~100 km)
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   同样的口径混用：Grenoble-Alpes Métropole（49 个市镇）2023 = 450,608，而 72.7 万是 **204 个市镇**的吸引区人口（727,380）。identity 段的「约45万」本身是对的。
     howItWorks:
-      "格勒诺布尔是伊泽尔省的省会，由市长和市议会治理，市域只有约 18 平方公里，是法国最密集的市镇之一，2023 年人口约 15.6 万；2015 年起的格勒诺布尔阿尔卑斯都会区有 49 个市镇，城市连绵区约 72.7 万人，是阿尔卑斯山区最大的都会。城市建在德拉克河与伊泽尔河交汇处的一片平地上，三面被沙特勒兹、韦科尔与贝勒多讷三条山脉围住，1934 年建成的巴士底缆车用一串球形吊舱把人从市中心送上北面的山崖；约 7 万学生与法国原子能委员会、意法半导体、施耐德电气让它成为法国的科研与微电子中心，1968 年冬奥会在这里举办，五条有轨电车线连起都会区，滑雪场在三四十到六十公里外，里昂在西面约 100 公里。初来的人最容易犯的错，是把格勒诺布尔当作一座山城，而市区平坦得像一张桌子，山在四周立着。",
+      "格勒诺布尔是伊泽尔省的省会，由市长和市议会治理，市域只有约 18 平方公里，是法国最密集的市镇之一，2023 年人口约 15.6 万；2015 年起的格勒诺布尔阿尔卑斯都会区有 49 个市镇，该都会区本身约 45.1 万人，再往外 204 个市镇组成的城市吸引区约 72.7 万人（2023年法定人口），是阿尔卑斯山区最大的都会。城市建在德拉克河与伊泽尔河交汇处的一片平地上，三面被沙特勒兹、韦科尔与贝勒多讷三条山脉围住，1934 年建成的巴士底缆车用一串球形吊舱把人从市中心送上北面的山崖；约 7 万学生与法国原子能委员会、意法半导体、施耐德电气让它成为法国的科研与微电子中心，1968 年冬奥会在这里举办，五条有轨电车线连起都会区，滑雪场在三四十到六十公里外，里昂在西面约 100 公里。初来的人最容易犯的错，是把格勒诺布尔当作一座山城，而市区平坦得像一张桌子，山在四周立着。",
     layout:
       "格勒诺布尔建在伊泽尔河和德拉克河交汇处的平坦谷底，老城在旧城墙内、街道狭窄。城北有一座建在巴士底要塞旧址上的缆车站（“泡泡缆车”是标志性的圆球形车厢），几分钟就能上到俯瞰全城和三面雪山的观景点。城市周边散布着大学园区和科研机构。",
     gettingAround:
@@ -4573,11 +4591,18 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   marseille: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Aix-Marseille-Provence（92 个市镇）2023 = 1,939,077。原文的 190 万在「约」的容差内，顺手改精确。
     identity:
-      "马赛在法国东南地中海沿岸，都会区约 190 万人，是法国最古老的城市（公元前约 600 年由希腊人建立）、也是法国最大的商港。城市以老港、地中海饮食（鱼汤 bouillabaisse）和一片被称为“卡朗格”的石灰岩峡湾岸闻名，是通往科西嘉和北非的重要港口。",
-    // howItWorks sources: Wikipedia (2026-09): Marseille (16 arrondissements in 8 sectors; 241 km²; 2023 pop ~886,000; Aix-Marseille-Provence 92 communes ~1.9 million 2016; calanques in 9th); Communes of France
+      "马赛在法国东南地中海沿岸，都会区约 194 万人（2023年法定人口，92 个市镇），是法国最古老的城市（公元前约 600 年由希腊人建立）、也是法国最大的商港。城市以老港、地中海饮食（鱼汤 bouillabaisse）和一片被称为“卡朗格”的石灰岩峡湾岸闻名，是通往科西嘉和北非的重要港口。",
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   同上。
     howItWorks:
-      "马赛是法国面积最大的市镇之一，约 241 平方公里，卡朗格峡湾国家公园的一部分就在市界之内；市下分 16 个区（arrondissement），两两合成 8 个“区域”，各有自己的区长和议会。2023 年人口约 89 万，是法国第二大城市；2016 年起它与 92 个市镇合成艾克斯—马赛—普罗旺斯都会区，约 190 万人，艾克斯是其中另一座有自己市政府的城市。老港是城市的中心与坐标原点，北面的“北区”是工人阶级的街区，南面沿海是海滩与富裕的住宅区，拉若利耶特的欧洲地中海计划把旧港区改成了新的商务区。地址写“街道、门牌、邮编”，邮编 130 之后的两位数是区号。两条地铁线与有轨电车连起市区。初来的人最容易犯的错，是把马赛当作一座紧凑的港口城，而它从北到南绵延几十公里，从山到海都在市界之内。",
+      "马赛是法国面积最大的市镇之一，约 241 平方公里，卡朗格峡湾国家公园的一部分就在市界之内；市下分 16 个区（arrondissement），两两合成 8 个“区域”，各有自己的区长和议会。2023 年人口约 89 万，是法国第二大城市；2016 年起它与 92 个市镇合成艾克斯—马赛—普罗旺斯都会区，约 194 万人（2023年法定人口），艾克斯是其中另一座有自己市政府的城市。老港是城市的中心与坐标原点，北面的“北区”是工人阶级的街区，南面沿海是海滩与富裕的住宅区，拉若利耶特的欧洲地中海计划把旧港区改成了新的商务区。地址写“街道、门牌、邮编”，邮编 130 之后的两位数是区号。两条地铁线与有轨电车连起市区。初来的人最容易犯的错，是把马赛当作一座紧凑的港口城，而它从北到南绵延几十公里，从山到海都在市界之内。",
     layout:
       "马赛围着老港（Vieux-Port）展开，老港是历史核心，游艇和渔船停泊，周边是咖啡馆和鱼市。加尔德圣母圣殿在城南山头，是全城制高点，能看到整个海湾和外海的岛屿（伊夫堡所在的弗留利群岛）。城市东南沿海是卡朗格国家公园——一段石灰岩峡湾海岸，介于马赛和卡西斯之间。",
     gettingAround:
@@ -4591,11 +4616,18 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   nice: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   **原文的「约100万」对不上任何现行口径**：Métropole Nice Côte d'Azur（约 49 个市镇）2023 = 574,287；aire d'attraction des villes（100 个市镇）= 641,721。100 万很可能引的是 **2020 年已被取代的旧口径 aire urbaine**，那套划法覆盖范围大得多，现已废弃。
     identity:
-      "尼斯在法国东南、地中海沿岸，紧邻意大利边境，都会区约 100 万人，是蔚蓝海岸（Côte d'Azur）的中心城市。19 世纪起就是欧洲上流社会的冬季度假地，英国人沿海湾修的“英国人散步大道”（Promenade des Anglais）至今是城市标志。",
-    // howItWorks sources: Wikipedia (2026-09): Nice (prefecture of Alpes-Maritimes; 2023 pop 357,737; Métropole Nice Côte d'Azur 49 communes; 3 tram lines; Italian until 1860; UNESCO 2021); Communes of France
+      "尼斯在法国东南、地中海沿岸，紧邻意大利边境，都会区约 57.4 万人（2023年法定人口，尼斯蔚蓝海岸都会区），是蔚蓝海岸（Côte d'Azur）的中心城市。19 世纪起就是欧洲上流社会的冬季度假地，英国人沿海湾修的“英国人散步大道”（Promenade des Anglais）至今是城市标志。",
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   同上。
     howItWorks:
-      "尼斯是滨海阿尔卑斯省的省会，由市长和市议会治理，2023 年人口约 36 万，是法国第五大城市；2012 年起它与 48 个周边市镇合成“尼斯蔚蓝海岸都会区”，从海岸一直延伸到阿尔卑斯山里的滑雪小镇，城市连绵区近 100 万人。城市沿天使湾展开：英国人散步大道是海岸线本身，老城在东端的城堡山下，19 世纪的格网街区是今天的商业中心，帕永河被覆盖成了绿带与电车走廊。尼斯 1860 年才从萨伏依王国划归法国，意大利的痕迹留在建筑、方言与饮食里；摩纳哥在东面 20 公里，意大利边境约 30 公里。三条有轨电车线连起机场、市中心与港口。地址写“街道、门牌、邮编”。2021 年尼斯以“里维埃拉冬季度假城”列入世界遗产。初来的人最容易犯的错，是把尼斯当作一座海滩度假地，而它是一个大都会区的行政中心，一半的市镇在山里。",
+      "尼斯是滨海阿尔卑斯省的省会，由市长和市议会治理，2023 年人口约 36 万，是法国第五大城市；2012 年起它与 48 个周边市镇合成“尼斯蔚蓝海岸都会区”，从海岸一直延伸到阿尔卑斯山里的滑雪小镇，城市吸引区约 64.2 万人（100 个市镇，2023年法定人口）。城市沿天使湾展开：英国人散步大道是海岸线本身，老城在东端的城堡山下，19 世纪的格网街区是今天的商业中心，帕永河被覆盖成了绿带与电车走廊。尼斯 1860 年才从萨伏依王国划归法国，意大利的痕迹留在建筑、方言与饮食里；摩纳哥在东面 20 公里，意大利边境约 30 公里。三条有轨电车线连起机场、市中心与港口。地址写“街道、门牌、邮编”。2021 年尼斯以“里维埃拉冬季度假城”列入世界遗产。初来的人最容易犯的错，是把尼斯当作一座海滩度假地，而它是一个大都会区的行政中心，一半的市镇在山里。",
     layout:
       "尼斯沿一个宽阔的海湾展开，英国人散步大道贯穿海滨、背后是鹅卵石海滩。老城（Vieux Nice）在东侧，意大利风格的窄巷和彩色建筑（历史上这里曾属萨伏依/意大利统治，1860 年才并入法国）。城堡山（Castle Hill，无城堡，是废墟公园）在老城东端，可俯瞰整个海湾。",
     gettingAround:
@@ -4609,11 +4641,18 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   toulouse: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Toulouse unité urbaine 2023 = 1,093,783；aire d'attraction = 1,529,112；Toulouse Métropole（37 个市镇）= 841,524。原文没说是哪个口径，按数值最接近的建成区标明。
     identity:
-      "图卢兹在法国西南部、加龙河畔，都会区约 100 万人，是法国航空航天工业的中心（空中客车总部在此），也是欧洲航天局的重要基地之一。城市因大量使用当地烧制的粉红色砖瓦建造，被称为“玫瑰之城”（la Ville Rose）。",
-    // howItWorks sources: Wikipedia (2026-09): Toulouse (prefecture of Haute-Garonne and Occitanie; ~515,000; Toulouse Métropole 37 communes ~800,000; Airbus in Blagnac; 2 metro lines; ~130,000 students); Communes of France
+      "图卢兹在法国西南部、加龙河畔，建成区约 109 万人（2023年法定人口），是法国航空航天工业的中心（空中客车总部在此），也是欧洲航天局的重要基地之一。城市因大量使用当地烧制的粉红色砖瓦建造，被称为“玫瑰之城”（la Ville Rose）。",
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Toulouse Métropole（37 个市镇）2023 = 841,524。
     howItWorks:
-      "图卢兹是上加龙省与奥克西塔尼大区的省会和首府，由市长和市议会治理，人口约 52 万，是法国第四大城市；2015 年起它与 36 个周边市镇合成图卢兹都会区，约 80 万人，空客总部所在的布拉尼亚克是其中另一座有自己市政府的市镇。城市的核心是加龙河东岸的粉红砖老城，市政厅所在的卡皮托勒广场是坐标原点；1963 年国家把航空航天工业布局到这里，空客与欧洲航天产业让它成为增长最快的大城市之一，约 13 万学生让它同时是一座大学城。两条地铁线与有轨电车连起市区，米迪运河从城中穿过，1996 年列入世界遗产。地址写“街道、门牌、邮编”。奥克语的痕迹留在街名与文化里。初来的人最容易犯的错，是把图卢兹当作一座宁静的南方古城，而它是欧洲航空工业的中心之一。",
+      "图卢兹是上加龙省与奥克西塔尼大区的省会和首府，由市长和市议会治理，人口约 52 万，是法国第四大城市；2015 年起它与 36 个周边市镇合成图卢兹都会区，约 84.2 万人（2023年法定人口），空客总部所在的布拉尼亚克是其中另一座有自己市政府的市镇。城市的核心是加龙河东岸的粉红砖老城，市政厅所在的卡皮托勒广场是坐标原点；1963 年国家把航空航天工业布局到这里，空客与欧洲航天产业让它成为增长最快的大城市之一，约 13 万学生让它同时是一座大学城。两条地铁线与有轨电车连起市区，米迪运河从城中穿过，1996 年列入世界遗产。地址写“街道、门牌、邮编”。奥克语的痕迹留在街名与文化里。初来的人最容易犯的错，是把图卢兹当作一座宁静的南方古城，而它是欧洲航空工业的中心之一。",
     layout:
       "图卢兹老城沿加龙河东岸展开，主广场（Capitole 广场）前是市政厅，粉红砖石建筑贯穿全城。米迪运河（连接大西洋和地中海的历史运河，世界遗产）从城边经过，两岸是林荫步道。城市周边分布着空客总装厂和航空航天产业园区。",
     gettingAround:
@@ -4627,8 +4666,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   bordeaux: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Bordeaux unité urbaine（73 个市镇）2023 = 1,034,027；Bordeaux Métropole（28 个市镇）= 854,334（howItWorks 段用的是这个，对）；aire d'attraction（275 个市镇）= 1,426,278。**两段中文都叫「都会区」却指两个不同东西**，已各自标明口径。
     identity:
-      "波尔多在法国西南部、加龙河下游，都会区约 100 万人，是世界最负盛名的葡萄酒产区之一的中心城市。18 世纪的石造联排建筑保存完整，老城整体被列为世界遗产，近十几年经过大规模河滨改造，从工业港口转型为热门旅游城市。",
+      "波尔多在法国西南部、加龙河下游，建成区约 103 万人（2023年法定人口，73 个市镇），是世界最负盛名的葡萄酒产区之一的中心城市。18 世纪的石造联排建筑保存完整，老城整体被列为世界遗产，近十几年经过大规模河滨改造，从工业港口转型为热门旅游城市。",
     // howItWorks sources: Wikipedia (2026-09): Bordeaux (49 km²; 2023 pop ~268,000; Bordeaux Métropole 28 communes 854,334; Mérignac airport; UNESCO 2007 ~40% of area; LGV 2017); Communes of France
     howItWorks:
       "波尔多是吉伦特省与新阿基坦大区的省会和首府，由市长和市议会治理，市区只有约 49 平方公里，2023 年人口约 27 万；2015 年起它与 27 个周边市镇合成波尔多都会区，约 85 万人，机场所在的梅里尼亚克、佩萨克、塔朗斯各是独立的市镇。城市沿加龙河的新月形河湾展开，“月亮港”是它的旧称：左岸是 18 世纪的石砌老城与葡萄酒商聚居的沙特龙区，2007 年约四成的市区面积列入世界遗产；右岸的巴斯蒂德曾是沼泽与工业区，如今是新的开发地。四条有轨电车线连起都会区，2017 年高铁通车后到巴黎约 2 小时。地址写“街道、门牌、邮编”。周围约 1 万座酒庄是这座城的经济与身份。初来的人最容易犯的错，是把波尔多市当作整座城，而它只是一个 85 万人都会区的核心。",
@@ -4645,8 +4688,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   nantes: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Nantes Métropole 2023 = 689,456；unité urbaine = 689,036；aire d'attraction（116 个市镇）= 1,050,815。**原文的「约96万」三个口径都对不上**，是个无来源的旧数。已与同条目 howItWorks 的 68 万统一。
     identity:
-      "南特在法国西部、卢瓦尔河下游入海口附近，都会区约 96 万人，历史上是重要的大西洋港口和造船中心（也曾是三角贸易的港口之一，这段历史现有专门的纪念场所如实呈现）。18 世纪的石造建筑和近年大胆的当代公共艺术（如巨型机械大象）让这座城市气质独特，多次被评为法国宜居城市之一。",
+      "南特在法国西部、卢瓦尔河下游入海口附近，南特都会区约 68.9 万人（2023年法定人口，24 个市镇），历史上是重要的大西洋港口和造船中心（也曾是三角贸易的港口之一，这段历史现有专门的纪念场所如实呈现）。18 世纪的石造建筑和近年大胆的当代公共艺术（如巨型机械大象）让这座城市气质独特，多次被评为法国宜居城市之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nantes (commune 65 km²; 327,734 2023, sixth in France; Nantes Métropole 24 communes ~680,000; prefecture of Loire-Atlantique and capital of Pays de la Loire, historically Brittany; Loire, Île de Nantes with the Machines; Château des ducs de Bretagne; Passage Pommeraye; trams since 1985; European Green Capital 2013; Atlantic ~50 km)
     howItWorks:
       "南特是卢瓦尔大西洋省的省会与卢瓦尔河地区大区的首府，由市长和市议会治理，市域约 65 平方公里，2023 年人口约 32.8 万，是法国第六大城市；南特都会区有 24 个市镇、约 68 万人。历史与文化上它属于布列塔尼，布列塔尼公爵城堡就在市中心，1532 年布列塔尼并入法国的条约在这里签署，今天的行政区划却把它划在卢瓦尔河地区，本地的“归还布列塔尼”争论至今存在。卢瓦尔河从城南流过，南特岛上的“机械岛”有一头会走路的大象，波姆莱拱廊是 19 世纪的商业街；1985 年这里恢复了法国第一条现代有轨电车线，2013 年它是欧洲绿色首都，大西洋在西面 50 公里，圣纳泽尔的造船厂在河口。初来的人最容易犯的错，是把南特当作一座内陆城，而它曾是法国最大的贩奴港，河与海是它的历史。",
@@ -4663,8 +4710,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   ajaccio: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Ajaccio commune 2023 = 76,320。identity 的「约7万」偏低，howItWorks 的「约7.6万」是对的 —— 又一处两段不一致。
     identity:
-      "阿雅克肖在科西嘉岛西岸，是科西嘉岛的首府，市区人口约 7 万，拿破仑·波拿巴的出生地（故居现为国家级博物馆）。科西嘉岛多山，中央脊由一系列 2000 米以上的花岗岩峰组成，海岸线曲折，兼有海滩、峡湾式港湾和悬崖，历史上先后受多个地中海势力影响，1768 年并入法国。",
+      "阿雅克肖在科西嘉岛西岸，是科西嘉岛的首府，市区人口约 7.6 万（2023年法定人口），拿破仑·波拿巴的出生地（故居现为国家级博物馆）。科西嘉岛多山，中央脊由一系列 2000 米以上的花岗岩峰组成，海岸线曲折，兼有海滩、峡湾式港湾和悬崖，历史上先后受多个地中海势力影响，1768 年并入法国。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ajaccio (commune 82 km²; ~76,300 2023; prefecture of Corse-du-Sud and seat of the Collectivité de Corse, the single territorial collectivity since 2018 with its own assembly; Maison Bonaparte, Napoleon born 1769; citadel; Sanguinaires; airport 5 km; ferries Marseille/Nice/Toulon; Corsican language; Bastia ~150 km; first French city liberated 1943)
     howItWorks:
       "阿雅克肖是南科西嘉省的省会，也是科西嘉地方行政区的所在地——2018 年起科西嘉的两个省与大区合并成一个“单一地方行政区”，有自己的议会与执行委员会，权限比普通大区大；市镇由市长和市议会治理，市域约 82 平方公里，2023 年人口约 7.6 万。城市在一个朝西的海湾边，1492 年由热那亚人重建，拿破仑 1769 年生在老城的波拿巴故居里，城堡与老港在旁边，血岛群岛在湾口；1943 年 9 月它是法国第一座被解放的城市；科西嘉语在学校与路牌上与法语并列，机场在城东 5 公里，渡轮通往马赛、尼斯与土伦，巴斯蒂亚在东北约 150 公里。初来的人最容易犯的错，是把科西嘉当作一个普通的法国大区，而它有自己的议会、语言与身份，阿雅克肖是它的行政中心。",
@@ -4684,9 +4735,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   annecy: {
     identity:
       "安纳西在法国阿尔卑斯山麓的安纳西湖北端，是上萨瓦省的省会，人口约13.2万（2023年），离日内瓦只有45公里。蒂乌河和几条运河穿过老城，河中央十二世纪的岛宫（曾是监狱和法院）是城市的标志，山坡上的城堡俯瞰老城，因此它被称为“阿尔卑斯的威尼斯”。安纳西湖以水质清澈著称，环湖有自行车道，周围的塞姆诺兹山和图尔内特山是登山与滑翔伞胜地；每年6月的安纳西国际动画电影节是全球动画界的年度盛会。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Annecy (commune ~67 km² after the 2017 merger of six communes; ~132,000 2023; Grand Annecy 34 communes ~300,000; prefecture of Haute-Savoie; Lake Annecy; Thiou canals and Palais de l'Isle; château; animation festival since 1963; Geneva ~35–40 km cross-border commuting; Salomon; no airport)
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Grand Annecy 2023 = 213,415。原文「约30万」高估约 41%。
     howItWorks:
-      "安纳西是上萨瓦省的省会，由市长和市议会治理；2017 年它与周围五个市镇合并，市域扩到约 67 平方公里，2023 年人口约 13.2 万，大安纳西聚合区有 34 个市镇、约 30 万人。城市在安纳西湖的北端，蒂乌河与几条运河从湖里流出，穿过老城，岛宫立在河心，因此有“阿尔卑斯的威尼斯”之称，城堡在老城背后的坡上；湖水是欧洲最清的之一，环湖有一条自行车道；日内瓦在北面约 35 公里，大量居民每天跨境去瑞士上班，萨洛蒙等户外品牌总部在此，1963 年起的国际动画电影节每年六月举行，没有机场，用日内瓦。初来的人最容易犯的错，是把安纳西当作一座湖边度假村，而它是一个省的省会，也是跨境通勤者的居住地。",
+      "安纳西是上萨瓦省的省会，由市长和市议会治理；2017 年它与周围五个市镇合并，市域扩到约 67 平方公里，2023 年人口约 13.2 万，大安纳西聚合区有 34 个市镇、约 21.3 万人（2023年法定人口）。城市在安纳西湖的北端，蒂乌河与几条运河从湖里流出，穿过老城，岛宫立在河心，因此有“阿尔卑斯的威尼斯”之称，城堡在老城背后的坡上；湖水是欧洲最清的之一，环湖有一条自行车道；日内瓦在北面约 35 公里，大量居民每天跨境去瑞士上班，萨洛蒙等户外品牌总部在此，1963 年起的国际动画电影节每年六月举行，没有机场，用日内瓦。初来的人最容易犯的错，是把安纳西当作一座湖边度假村，而它是一个省的省会，也是跨境通勤者的居住地。",
     layout:
       "老城在湖北端蒂乌河出湖处，岛宫在河中，运河两岸是彩色房屋、拱廊和市场街，城堡在老城西南的坡上。湖滨的欧洲花园和爱之桥在老城东侧，帕基埃草坪沿湖向东延伸。火车站在老城北面约500米。塞姆诺兹山在城南，湖东岸的塔卢瓦尔、湖南端的杜萨尔是常去的湖畔村落；环湖自行车道约40公里。",
     gettingAround:
@@ -4718,9 +4772,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   montpellier: {
     identity:
       "蒙彼利埃在法国地中海岸内陆约10公里处，是奥克西塔尼大区的首府，人口约31万（2023年），法国第七大城市，也是近几十年增长最快的大城市之一，约7万学生占人口四分之一。蒙彼利埃大学1160年前后创立，其医学院（1220年）是世界上仍在运营的最古老的医学院；老城埃居松保留着中世纪街巷和十七、十八世纪的府邸，喜剧广场和1888年的歌剧院是城市客厅，安提戈涅区是1980年代博菲尔设计的新古典主义街区。年日照约2700小时。",
-    // howItWorks sources: Wikipedia (2026-09): Montpellier (prefecture of Hérault; 2023 pop 310,240; Montpellier Méditerranée Métropole 31 communes; free transit for residents Dec 2023; 5 tram lines; medical faculty 1220; ~70,000 students); Communes of France
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Montpellier Méditerranée Métropole 2023 = 522,542。
     howItWorks:
-      "蒙彼利埃是埃罗省的省会，由市长和市议会治理，2023 年人口约 31 万，是法国第七大城市，也是 2000 年以来增长最快的大城市；2015 年起它与 30 个周边市镇合成蒙彼利埃地中海都会区，约 50 万人。老城 Écusson 是一片中世纪的椭圆形街区，喜剧广场是坐标原点；从这里向东南，1980 年代的安提戈涅新古典街区和新的马里亚纳港区一路向海延伸，地中海在 10 公里外。约 7 万学生占了市民的近四分之一，1220 年创办的医学院是欧洲最古老的之一。五条有轨电车线连起都会区，2023 年 12 月起公共交通对居民免费。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把蒙彼利埃当作海滨城市，而它在内陆，海滩属于隔壁的市镇。",
+      "蒙彼利埃是埃罗省的省会，由市长和市议会治理，2023 年人口约 31 万，是法国第七大城市，也是 2000 年以来增长最快的大城市；2015 年起它与 30 个周边市镇合成蒙彼利埃地中海都会区，约 52.3 万人（2023年法定人口）。老城 Écusson 是一片中世纪的椭圆形街区，喜剧广场是坐标原点；从这里向东南，1980 年代的安提戈涅新古典街区和新的马里亚纳港区一路向海延伸，地中海在 10 公里外。约 7 万学生占了市民的近四分之一，1220 年创办的医学院是欧洲最古老的之一。五条有轨电车线连起都会区，2023 年 12 月起公共交通对居民免费。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把蒙彼利埃当作海滨城市，而它在内陆，海滩属于隔壁的市镇。",
     layout:
       "老城埃居松在市中心的小山上，喜剧广场在它东南角，是有轨电车和步行街的枢纽；佩鲁广场、圣克莱芒水渠和凯旋门在老城西端最高处，圣皮埃尔主教座堂和医学院在西北。安提戈涅区从喜剧广场东侧的多边形购物中心一直延伸到莱兹河边，市政厅和新城区在更东南。圣罗克火车站在喜剧广场南面。海滩在南面约10公里（帕拉瓦莱弗洛、卡尔农），有电车加巴士或自行车道可达。机场在东南约7公里。",
     gettingAround:
@@ -4767,11 +4824,18 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5–6月和9–10月最舒服，9–10月葡萄采收；12月圣诞市集最热闹也最挤；夏季老城游客多。市区一天，酒村一天。与斯特拉斯堡当日往返方便，是阿尔萨斯酒路的基地。",
   },
   rouen: {
+    // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   Métropole Rouen Normandie（71 个市镇）2023 ≈ 50 万；aire d'attraction（316 个市镇）= 715,234。原文「都会区约71万」数字凑巧接近吸引区、但标成了都会区，有歧义。
     identity:
-      "鲁昂在诺曼底的塞纳河下游，是诺曼底大区的首府，人口约11.8万、都会区约71万（2023年）。它是中世纪欧洲最大最富裕的城市之一，鲁昂主教座堂的哥特式立面（莫奈画了三十多幅）和151米的铸铁尖塔是城市的标志，市中心有上千座半木结构房屋和十四世纪的大钟楼；1431年5月30日圣女贞德在老集市广场被处以火刑。福楼拜出生于此，塞纳河港是法国重要的河港。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rouen (commune 21 km²; 117,662 2023; Métropole Rouen Normandie 71 communes ~715,000; prefecture of Seine-Maritime and capital of the Normandy region; Seine; right-bank old town with cathedral, Gros-Horloge, half-timbered houses; Joan of Arc burned 1431 at the Vieux-Marché; Monet's cathedral series; river port; train ~1 h 20 Paris, no TGV; Le Havre ~90 km)
+      "鲁昂在诺曼底的塞纳河下游，是诺曼底大区的首府，2023年法定人口约11.8万；城市吸引区约71.5万（316 个市镇）。它是中世纪欧洲最大最富裕的城市之一，鲁昂主教座堂的哥特式立面（莫奈画了三十多幅）和151米的铸铁尖塔是城市的标志，市中心有上千座半木结构房屋和十四世纪的大钟楼；1431年5月30日圣女贞德在老集市广场被处以火刑。福楼拜出生于此，塞纳河港是法国重要的河港。",
+    // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
+    //   第三处口径混用：「71 个市镇」是都会区建制规模，「71.5 万」却是 316 个市镇的吸引区人口。
     howItWorks:
-      "鲁昂是滨海塞纳省的省会与诺曼底大区的首府，由市长和市议会治理，市域只有约 21 平方公里，2023 年人口约 11.8 万；鲁昂诺曼底都会区有 71 个市镇、约 71.5 万人。塞纳河把城市分成两岸：右岸是老城，大教堂、大钟楼与成片的木筋屋在这里，1431 年圣女贞德在老市场广场被处死，广场上如今是一座现代教堂；莫奈在对面的窗口画了三十多幅大教堂；左岸是 19 世纪以来的工业与住宅区。鲁昂港沿塞纳河深入内陆，是法国第五大港，谷物从这里出海；火车到巴黎约一小时二十分，没有 TGV 直达，勒阿弗尔在西北约 90 公里。初来的人最容易犯的错，是把鲁昂当作巴黎的近郊，而它是诺曼底的首府，也是塞纳河上的一座海港。",
+      "鲁昂是滨海塞纳省的省会与诺曼底大区的首府，由市长和市议会治理，市域只有约 21 平方公里，2023 年人口约 11.8 万；鲁昂诺曼底都会区有 71 个市镇、约 50 万人，再往外 316 个市镇组成的城市吸引区约 71.5 万人（2023年法定人口）。塞纳河把城市分成两岸：右岸是老城，大教堂、大钟楼与成片的木筋屋在这里，1431 年圣女贞德在老市场广场被处死，广场上如今是一座现代教堂；莫奈在对面的窗口画了三十多幅大教堂；左岸是 19 世纪以来的工业与住宅区。鲁昂港沿塞纳河深入内陆，是法国第五大港，谷物从这里出海；火车到巴黎约一小时二十分，没有 TGV 直达，勒阿弗尔在西北约 90 公里。初来的人最容易犯的错，是把鲁昂当作巴黎的近郊，而它是诺曼底的首府，也是塞纳河上的一座海港。",
     layout:
       "老城在塞纳河右岸：主教座堂在中心，大钟街从主教座堂向西穿过大钟楼到老集市广场（圣女贞德教堂和纪念地），圣马克卢教堂和圣旺修道院在东面，美术馆在北面靠火车站（右岸站）。河左岸是新城区。圣凯瑟琳山在东面可俯瞰全城和河湾。塞纳河下游有诺曼底修道院之路和吉维尼（莫奈花园，上游约60公里）。",
     gettingAround:
