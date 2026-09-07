@@ -58,11 +58,24 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 
 ### 3. 处理结论
 
+先把子代理的输出**整理成一份 findings.json**（格式见下一步），然后：
+
 | verdict | 怎么处理 |
 |---|---|
 | `ok` | 记进台账，正文不动。若原文缺年份/口径而核实拿到了，**顺手补进正文** |
-| `wrong` | **当场改正文**，中英两边都改，并在条目上方加 `// <字段> sources:` 注释写清来源与年份 |
+| `wrong` | **当场改**，中英两边都改；正文类的在条目上方加 `// <字段> sources:` 注释 |
 | `unknown` | **不要瞎猜**。要么把无法核实的断言删掉/降级（去掉最高级、去掉排名），要么记成待办 |
+
+**航线类不要手写 python 逐条改** —— 前两轮是手改的，18 条就要写一大段字典字面量，
+再多必然出错。findings.json 已经是结构化的，直接让脚本消费：
+
+```bash
+npm run verify:apply -- <findings.json> --dry-run   # 先看它打算改什么
+npm run verify:apply -- <findings.json>             # 改 data/routes/*.json
+```
+
+`verify:apply` 按 `patch` / `waypointPatch` 改航班字段与航点，并统一写 `source`
+留痕（`resolution` 不是 `fixed` 且 `verdict` 不是 `ok` 的自动打 `status: "wrong"`）。
 
 改完必须跑：
 
@@ -76,12 +89,15 @@ npx tsc --noEmit && npm run lint
 
 ### 4. 落地：开 issue、关 issue、记台账 —— 交给脚本，不要手做
 
-把这一轮的结论写成一个 findings JSON，然后：
+同一份 findings.json 交给第二个消费端：
 
 ```bash
 npm run verify:report -- <findings.json> --dry-run   # 先看它打算做什么
 npm run verify:report -- <findings.json>             # 真做
 ```
+
+**顺序是先 `verify:apply` 再 `verify:report`** —— 这样 issue 里说的「已修正」
+是真的已经改完了。
 
 脚本把三件事做成机械动作，**不要手工开 issue** —— 手做一定会重复开、忘记关、
 正文格式各写各的：
@@ -99,21 +115,34 @@ findings JSON 的形状：
   "round": "2026-09-07 中国国内航线批5",
   "scope": "routes · 中国国内",
   "umbrella": 143,
+  "checkedOn": "2026-09-07",
   "findings": [
     {
       "key": "routes/sha-hrb/flight",
       "kind": "routes", "id": "sha-hrb", "field": "flight",
       "verdict": "wrong",
       "claim": "MU5620 / A321",
-      "finding": "MU5620 实际飞的是…（含年份与来源级别）",
+      "finding": "MU5620 实际飞的是…（含来源级别）",
       "source": "https://…",
       "resolution": "blocked",
-      "note": "找不到可靠替代航班号，已标 status: wrong",
+      "note": "找不到可靠替代航班号",
       "errorClass": "A1"
+    },
+    {
+      "key": "routes/kmg-jhg/flight",
+      "kind": "routes", "id": "kmg-jhg", "field": "flight",
+      "verdict": "wrong", "claim": "8L9285 / A320",
+      "finding": "查不到这个航班号；该航段由东航执飞",
+      "source": "https://…", "resolution": "fixed", "errorClass": "A1",
+      "patch": { "airline": "中国东方航空", "airlineEn": "China Eastern Airlines",
+                 "flightNo": "MU5903", "aircraft": "Boeing 737-700" }
     }
   ]
 }
 ```
+
+`patch` 只在 `resolution: "fixed"` 时给，字段名与 `FlightInfo` 一致；
+改航点用 `waypointPatch: { "index": 0, "id": "ctu", "name": "成都双流", … }`。
 
 `key` 是去重键，**同一个键永远只有一个 issue**。字段含义见
 [`scripts/verify-issues.ts`](../../../scripts/verify-issues.ts) 顶部注释。

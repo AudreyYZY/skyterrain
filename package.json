@@ -19,6 +19,7 @@
     "check:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-tts-cache.ts",
     "warm:tts": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/warm-tts.ts",
     "check:flight": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-flight.ts",
+    "verify:apply": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/verify-apply.ts",
     "verify:report": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/verify-issues.ts",
     "check:claims": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-claims.ts",
     "check:anchors": "node --experimental-strip-types --import ./scripts/ts-alias-loader.mjs scripts/check-route-anchors.ts",
