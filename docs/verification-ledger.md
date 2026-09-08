@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 6d5ce16
+lastVerifiedCommit: fffe9e2
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: 6d5ce16
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | terrain-content 10 篇 × 6 板块：台湾岛/库车/大娄山/阿尔金山/纳木错/洞庭湖/虎跳峡/雷州半岛/阴山（长度另案）/库布其（地形讲解核实 · 批 13（中国其余 10 篇）） | 10 | 7 / 2 / 1 | 当场修 9 条；新开 issue 1、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块：黄石/优胜美地谷/密西西比河/加州中央谷地/大沼泽/索诺兰沙漠/纪念碑谷/夏威夷群岛/哥伦比亚高原/大盐湖/大西洋沿岸平原/佛罗里达半岛（地形讲解核实 · 批 12（美国 12 篇，第二批）） | 13 | 9 / 3 / 1 | 当场修 12 条；新开 issue 1、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块：落基/阿巴拉契亚/内华达/喀斯喀特/阿拉斯加山脉、科罗拉多高原、大峡谷、大平原、大盆地、死亡谷、莫哈韦沙漠、五大湖（地形讲解核实 · 批 11（美国 12 篇）） | 13 | 8 / 5 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 日本条目的 identity / howItWorks 人口段与都市圏口径（城市人口口径核实 · 日本 9 城） | 16 | 1 / 15 / 0 | 当场修 16 条；新开 issue 0、关闭 0 |

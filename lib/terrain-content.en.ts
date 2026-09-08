@@ -682,7 +682,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   taiwan: {
     seeing:
-      "Taiwan is China's largest island, off the south-east of the mainland at the western edge of the Pacific, facing Fujian across the Taiwan Strait. It is a long, narrow, mountainous island: a Central Range runs the length of it from north to south, splitting the island into an eastern and a western half, and the main summit, Yushan, at 3,952 m, is the highest point in south-eastern China and in north-east Asia (higher than Japan's Mount Fuji).",
+      "Taiwan is China's largest island, off the south-east of the mainland at the western edge of the Pacific, facing Fujian across the Taiwan Strait. It is a long, narrow, mountainous island: a Central Range runs the length of it from north to south, splitting the island into an eastern and a western half, and the main summit, Yushan, at 3,952 m, is the highest point in south-eastern China, higher than Japan's Mount Fuji (3,776 m).",
     formation:
       "Taiwan sits exactly on the collision belt between the Eurasian plate and the Philippine Sea plate; the collision squeezes sea-floor sediments up into mountains, and the island is still rising fast (about 0.5–1 cm a year), with frequent earthquakes and many hot springs. The Central, Xueshan, Yushan, Alishan and Coastal ranges run roughly parallel.",
     observation:
@@ -691,8 +691,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Taiwan versus Hainan: both are continental islands with a range running the length. But Taiwan's mountains are higher, steeper and earthquake-prone (an active collision belt), and span tropical and subtropical lowlands up to an alpine cold zone; Hainan's mountains are low, the geology stable, the whole island tropical, and the terrain a ring.",
     concept:
       "Taiwan is a living specimen of \"young collision mountain-building\": it shows that building mountains does not take tens of millions of years — under fierce plate collision, near-4,000 m mountains can be piled up in a few million years, and they are still growing. The steep-east, gentle-west asymmetry is exactly the direction of the collision squeeze.",
+    // history sources: 玉山主峰 **3952 m**（2003 年内政部土地测量局实测 3951.798 ± 0.072 m，公告值 3952 m）；
+    //   中央山脉现今隆升速率约 1 cm/年、扣除侵蚀后净增约 0.5 cm/年（2 级），与正文「约 0.5—1 厘米」相符。
+    //   2026-09-09 核。
+    //   **`history` 段删掉了两句**：首句的主权断言与末句的近代治理更迭 ——
+    //   CLAUDE.md 零争议红线写明 `history` 只写地质史与广泛记载的前现代史，不碰现代政治与领土。
+    //   中间三句（三国、隋朝的记载；元朝澎湖巡检司；1885 年建省）是前现代行政史，保留。
+    //   **这是同一条原则的第三次应用**：青藏高原「1951 年西藏和平解放」、长白山天池分界比例、这一处。
+    //   **「东北亚地区的最高峰」也已删**：见 terrain/taiwan/rank。
     history:
-      "Taiwan has been Chinese territory since ancient times. The histories record that both the Three Kingdoms and the Sui dynasty sent people there; the Yuan set up the Penghu Inspectorate; and it formally became a province in 1885. After the Treaty of Shimonoseki it was occupied by Japan for fifty years, and it returned to China in 1945 after victory in the war of resistance.",
+      "The histories record that both the Three Kingdoms and the Sui dynasty sent people there; the Yuan set up the Penghu Inspectorate; and it formally became a province in 1885.",
   },
 
   // ================= AUSTRALIA =================
@@ -1588,6 +1596,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kuche: {
+    // seeing sources: 2026-09-09 逐句核实全篇 6 板块：库车大峡谷的中生代—新生代红色砂泥岩侵蚀成因、
+    //   与火焰山的区分、龟兹古国与克孜尔石窟的丝路佛教史 —— 均为前现代史实性表述，无数字类断言。
+    //   **零争议红线复核通过**：不涉现代政治、宗教评价或族群评价。
     seeing:
       "The Kuqa (Kizilya) Grand Canyon lies in the mountains north of Kuqa city, on the southern slope of the Tianshan. It is a narrow canyon cut into red rock, with sheer walls, a slot at its narrowest that admits only one or two people abreast, and only a strip of sky overhead. The rock is an intense ochre-red in the sun.",
     formation:
@@ -1806,6 +1817,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dalou: {
+    // seeing sources: 主峰金佛山（凤凰岭/风吹岭）**2238 m**，多方一致（3 级，2026-09-09 核）；
+    //   赤水河谷为白酒产区、丹霞与喀斯特景观集中，均无误。
+    //   **核实方建议删掉 history 段「1935 年娄山关战斗 + 毛泽东《忆秦娥·娄山关》」，本轮未采纳。**
+    //   理由：仓库里 **六盘山**（1935 年长征翻越 + 《清平乐·六盘山》）、**吕梁**（晋绥根据地）、
+    //   **大巴山**（多个革命根据地）、**大别山**（鄂豫皖苏区、1947 年挺进大别山）四篇早已是同一写法；
+    //   上一轮核中国山地时也明确判过「属历史事实陈述、非评价性表述，与项目现有尺度一致」。
+    //   **只删大娄山会让同类内容尺度不一**，且这一改动超出「核实事实」的范围 ——
+    //   若要调整，应当是一次覆盖全部同类条目的口径决定，不是在某一批里顺手改掉一条。
     seeing:
       "The Dalou Mountains lie in northern Guizhou and southern Chongqing, trending NE–SW, the boundary range between the Yunnan–Guizhou Plateau and the Sichuan Basin. They separate the Guizhou plateau from the Chongqing basin and are the watershed of rivers such as the Wu and the Chishui. The main peak, Jinfo Shan, is about 2,238 m.",
     formation:
@@ -1821,6 +1840,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   altun: {
+    // seeing sources: 主峰苏拉木塔格峰约 **6295 m**，西段最高点约 6161 m —— 均超过 6000 m，与正文相符（3 级，2026-09-09 核）。
+    //   **零争议红线复核通过**：`history` 段只写阿尔金断裂的科学意义与前现代史，不涉现代政治、领土、宗教或族群评价。
     seeing:
       "The Altun Mountains lie in south-eastern Xinjiang and north-western Qinghai, trending roughly NE–SW, across the gap between the Tarim Basin and the Qaidam Basin and the Tibetan Plateau. They are the link between the Kunlun and the Qilian; the range is high, extremely arid and almost uninhabited, with summits over 6,000 m.",
     formation:
@@ -1989,6 +2010,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Kubuqi and the Mu Us Sandy Land (both around Ordos): the Kubuqi is on the northern plateau rim, along the Yellow River, mostly moving dunes; the Mu Us is in the southern plateau, a semi-arid \"sandy land\" with a better vegetation base, mostly fixed and semi-fixed. The Kubuqi and the Tengger: one hugs the Yellow River, the other hugs the river and the railway, both key sand-control areas.",
     concept:
       "The Kubuqi is a case of sand control moving from engineering to industry: combining straw-checkerboard fixing, drought-tolerant planting, solar power and desert cash crops so that fixing the sand also produces income. It also shows that much sand-land expansion has human causes, and that easing grazing and cultivation pressure plus planted measures can reverse part of it.",
+    // history sources: UNCCD **COP13 于 2017-09-06 至 09-16 在内蒙古鄂尔多斯召开**（1 级，UNCCD 官方文件，2026-09-09 核），
+    //   库布其治沙经验作为大会背景素材被广泛报道。
+    //   **面积仍是 unknown**：本轮另找到人民网（2 级）复述 **1.86 万 km²**，与正文一致，
+    //   且「中国第七大沙漠」「距北京最近的沙漠（约 800 余公里）」也由人民网等复述 ——
+    //   **但仍未拿到国家林草局全国荒漠化和沙化调查报告的一手数字**，无法仲裁 1.86 万 vs 另一批来源的 1.39 万。
+    //   证据往 1.86 万那边偏，issue 继续开着等一手来源。
     history:
       "The Kubuqi desert edge was historically a farming–herding frontier. In the late 20th century it was badly desertified and a frequent dust source. Since the 1990s local companies and residents have kept building roads, planting trees and developing desert industries; in 2017 the Kubuqi sand-control experience was presented at the conference of the UN Convention to Combat Desertification.",
   },
@@ -2135,6 +2162,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   namtso: {
+    // seeing sources: 纳木错湖面海拔 **4718 m**；**色林错自 2014 年监测起面积超过纳木错，成为西藏第一大湖**，
+    //   纳木错退居第二 —— https://www.chinanews.com.cn/sh/2014/07-21/6407632.shtml（2 级，2026-09-09 核）。
+    //   对比用的青海湖湖面 3196 m 与中科院口径一致。
+    //   **正文刻意没有给纳木错的具体面积数字** —— 那是会随冰川融水变化的量（近年呈扩张趋势），
+    //   不写死是正确处理（known-errors C6-j）；日后若要加，必须带监测年份与机构。
+    //   `history` 段只写藏传佛教圣湖的民俗事实，零争议红线通过。
     seeing:
       "Nam Co lies in central Tibet at the northern foot of the Nyainqentanglha range, at about 4,718 m — one of the highest large lakes in the world, and the second-largest lake in Tibet (after Serling Co). It is a closed saltwater lake with intensely deep-blue water, and one of the three great sacred lakes of Tibetan Buddhism.",
     formation:
@@ -2150,6 +2183,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dongting: {
+    // seeing sources: 洞庭湖**现有水面 2625 km²，是全国水量最大、水面面积第二的淡水湖泊** ——
+    //   湖南省人民政府 https://www.hunan.gov.cn/topic/2020hnjksc/jkscwzewm/202412/t20241223_33533635.html
+    //   （1 级，2024-12 发布页，2026-09-09 核）；鄱阳湖平水位约 3150 km²、高水位超 4125 km²，均更大。
+    //   **正文只写「退居第二」、没有给具体面积数字，回避了会随季节与围垦剧烈变化的量** —— 正确写法。
+    //   **但这个名次本身也是会变的**（洞庭湖历史上曾是第一），下一轮要连同监测时点一起复核。
     seeing:
       "Dongting Lake lies in northern Hunan on the south bank of the middle Yangtze. It was historically China's largest freshwater lake, and heavy silt accumulation and lake-to-farmland reclamation have dropped it to second (behind Poyang). Like Poyang it \"changes face\" sharply: a vast lake in flood, and in the dry season a set of winding channels plus wide areas of exposed flats.",
     formation:
@@ -2180,6 +2218,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   leizhou: {
+    // seeing sources: 2026-09-09 逐句核实全篇 6 板块：玄武岩台地、湖光岩玛珥湖（玛珥式火山口湖）成因属标准地质表述；
+    //   `history` 段的雷州得名、贬官流放史、热带作物均为前现代与客观地理事实。中英对照一致，无需改动。
     seeing:
       "The Leizhou Peninsula, in south-western Guangdong, is the southernmost peninsula of the Chinese mainland, facing Hainan Island across the Qiongzhou Strait. It is broadly a low basalt platform, mostly below 100 m, with a red weathering soil, an indented coast, and abundant volcanic landforms.",
     formation:
