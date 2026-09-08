@@ -84,17 +84,25 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
   // known-errors C6-c / C6-c-5：中国公报只有「全市常住人口」与「城镇常住人口」两档
   china: [
     { re: /(市区|中心城区|主城区)常住人口/, why: "中国地级市年度公报只有「全市常住人口」与「城镇常住人口」两档" },
-    { re: /都会区人口/, why: "「都会区」在中国不是官方统计口径" },
+    { re: /都会区人口|都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "「都会区」在中国不是官方统计口径" },
   ],
   // known-errors C6-c-5：挪威 SSB 只有 kommune（市镇）与 tettsted（城区）两档，没有「市区」
   // 2026-09-08 那批 8 个挪威条目的 identity 全都写着「市区人口」—— 与中国那批同一形状，
   // 而且更隐蔽：同一个自造标签底下，narvik/alta 的数字其实是 tettsted、其余是 kommune。
   norway: [
     { re: /市区人口/, why: "挪威 SSB 只有 kommune（市镇）与 tettsted（城区）两档" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "同上，SSB 没有「都会区」这一档；数字要么是 tettsted 被贴错标签，要么查无官方来源" },
+    { re: /\bmetro(?:politan)? area\b/i, why: "SSB publishes no metropolitan-area tier" },
   ],
   // known-errors C6-c-5：ISTAT 只有 comune 常住人口；città metropolitana 是行政建制不是统计口径
   italy: [
     { re: /市区人口/, why: "意大利 ISTAT 只发布 comune（市镇）常住人口" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "ISTAT 没有「都会区」这一称谓；该写「大都会市（città metropolitana）」" },
+  ],
+  // known-errors C6-c-5：Stats NZ 只有 region / territorial authority / urban area 三档，
+  // 「都会区」在这批条目里曾同时指代四种不同的东西（大区 / 四市相加 / 自造三区相加 / TA 辖区）。
+  "new-zealand": [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "新西兰 Stats NZ 只有 region / territorial authority / urban area 三档" },
   ],
   // known-errors C6-c-4 ②：丹麦统计局只有 kommune 与 byområde 两档，没有「都会区」
   denmark: [
@@ -108,7 +116,7 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
  * 那正是**正确**的写法（D1b 拦的是「说了没有又给出一个数」，不是「说了没有」本身）。
  */
 const CALIBER_DISCLAIMER =
-  /(未单列|不单列|没有单列|没有这一档|不是官方|非官方|并未发布|没有发布|口径已停|已停止发布|does not (?:report|give|publish)|no official|not an official)/i;
+  /(未单列|不单列|没有单列|没有这一档|不是[^。；]{0,14}官方|非官方|并未发布|没有发布|口径已停|已停止发布|does not (?:report|give|publish)|no official|not an official|not a single official)/i;
 
 /**
  * **合法的例外**，不算命中：

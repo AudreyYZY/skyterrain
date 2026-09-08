@@ -56,14 +56,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   tianshan: {
     seeing:
       "The Tianshan crosses central Xinjiang and splits the region into a southern and a northern half. The whole system runs about 2,500 km east–west, some 1,700 km of it inside China, and is one of the largest independent latitudinal (east–west) mountain systems on Earth. From the air you see white peaks and glaciers, a ring of yellow-green alluvial fans and oases at the foot, and beyond them the Taklamakan and Gurbantunggut deserts.",
-    // formation sources: 新疆天山 2013 年列入世界自然遗产（UNESCO 第 37 届大会，标准 vii、ix）
-    //   https://whc.unesco.org/en/list/1414（1 级，2026-09-08 核）。
-    //   **托木尔峰有两套并存的高程口径**：中国官方 7443 m / 国际常用 7439 m（Jengish Chokusu），
-    //   差 4 m 属测量口径差异 —— 条目取中国官方值，位置写「中国与吉尔吉斯斯坦边界」，准确。
-    //   博格达峰 5445 m、位于阜康市境内，晴天可自乌鲁木齐远眺。
-    //   天山全长约 2500 km、中国境内约 1700 km，与通行表述一致。
+    // formation sources: 托木尔峰海拔 **7443 m**（中国官方 1:100 万地图口径；国际常用值 7439 m，两者是测量口径差异，
+    //   注释里已并列），位于阿克苏地区温宿县与吉尔吉斯斯坦国境线上 —— 正文只陈述地理位置、不涉主权。
+    //   博格达峰主峰 5445 m，在阜康市境内、天山天池所在山。2026-09-08 核。
+    //   **「最有名的地标」是没有限定语的主观最高级，中英两边都踩了**，已改成带范围的说法。
+    //   天山全长约 2500 km、中国境内约 1700 km；「世界上最大的独立纬向山系**之一**」——
+    //   **多数来源写的是不带「之一」的绝对说法，正文反而比来源更保守**，是正确写法的范例。
+    //   雪线 3600–4200 m（《中国国家地理》给天山约 3900–4100 m）、阿尔泰约 2800 m（中国雪线最低处），均核实无误。
+    //   **零争议红线复核通过**：`history` 段只写古丝绸之路北道/中道、绿洲城市历史与 2013 年 UNESCO 列入。
     formation:
-      "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — geomorphologists call it a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Its highest point, Tomur Peak (about 7,443 m), sits on the China–Kyrgyzstan border; Bogda Peak (5,445 m), just beside Ürümqi, is the best-known landmark.",
+      "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — geomorphologists call it a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Its highest point, Tomur Peak (about 7,443 m), sits on the China–Kyrgyzstan border; Bogda Peak (5,445 m), just beside Ürümqi, is a well-known landmark of the range's eastern section.",
     observation:
       "Three things identify the Tianshan: a continuous set of parallel east–west ridges; large modern glaciers and permanent snow on the summits; and a row of huge alluvial fans at the foot, each fan edge holding an oasis city (Ürümqi, Shihezi, Korla). Heavenly Lake (Tianchi), a glacial lake below Bogda Peak, is deep blue and the easiest single point to pick out.",
     distinguish:
@@ -88,6 +90,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     //   是新疆唯一的外流水系，属公认地理事实。
     seeing:
       "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, of which Kanas Lake is the best known.",
+    // formation sources: 友谊峰 4374 m 为中蒙界峰；**中俄蒙三国交界点是它以北约 2.5 km、海拔 4082 m 的奎屯峰
+    //   （Nairamdal Peak）** —— 中科院地理科学与资源研究所《中国地貌·阿尔泰山脉》（2 级）与
+    //   Wikidata/维基「Nairamdal Peak」词条，2026-09-08 复核。
+    //   **复核时撞到一条相反的英文摘要**（称友谊峰就在三国交界点上），来源不明、与 Wikidata 冲突，
+    //   采信力更低，**未据以推翻已核实的结论** —— 记在这里，免得下一轮再被同一条摘要动摇。
+    //   阿尔泰山雪线约 2800 m，是中国雪线最低处。`history` 段只写游牧牧场、哈萨克族转场、岩画鹿石、
+    //   图瓦人村落，均为客观民俗与历史事实，零争议红线通过。
     formation:
       "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak — Khüiten Peak on the Mongolian side — reaches 4,374 m on the China–Mongolia border, while the China–Russia–Mongolia tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
     observation:
@@ -509,13 +518,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the North China Plain is a huge, dense expanse of rectangular fields and towns, with almost no relief visible. The lower Yellow River is a broad golden band clearly higher than the land on either side; at the mouth, silt fans out into the sea as a muddy yellow plume against the blue water.",
     distinguish:
       "The North China Plain versus the Northeast Plain: North China is at lower latitude, dominated by Yellow River loess, two harvests a year, and severely short of water; the Northeast is at higher latitude, black soil, one harvest a year, and relatively water-rich. Versus the Middle-Lower Yangtze Plain: North China is shaped by the Yellow River, drier, dryland farming; the Yangtze plain is shaped by the Yangtze, water-netted, paddy farming.",
-    // concept sources: 黄河含沙量居世界首位 —— 中科院地理科学与资源研究所《输沙量最大的河——黄河》
-    //   http://igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692531.html（1 级）；
-    //   Science Advances 亦称其 exceptional sediment load（2 级），2026-09-08 核。
-    //   **这条断言已自带口径**（比的是「含沙量」这个指标），不属于要补口径的那一类。
-    //   **但有一条会过期的提醒**：近年水土保持与水库拦沙让**年输沙总量**大幅下降 ——
-    //   那是另一个口径。如果以后想改写成强调「输沙总量」，必须另加时间限定。
-    //   「地上悬河」的机制表述与华北平原城市归属经复核准确。
+    // concept sources: 「黄河含沙量世界第一」**在 2026-09 仍然成立** —— 黄委会（1 级）与新华网（2 级）2023—2024 年的
+    //   报道仍称其为「世界上公认含沙量最大、最难治理的河流」，2026-09-08 复核。
+    //   **必须分清两个口径**：**含沙量**（每立方米水含多少泥沙）与**年输沙总量**是两回事。
+    //   后者近二十年因水土保持大幅下降（2001—2020 年中游年均约 2.4 亿吨，较历史峰值降七成以上）——
+    //   **如果以后要改写成强调「输沙总量」，那个数字必须带年份**（known-errors C6-j）。
+    //   地上悬河机制、开封段最典型，均核实无误。
     concept:
       "The most characteristic idea of the North China Plain is the \"suspended river\": the Yellow River carries the world's highest sediment load, which builds up its lower bed until it stands several to more than ten metres above the land (most dramatically at Kaifeng), so a breach is a disaster. The Yellow River has changed course many times through history, and the range of those floods is roughly the outline of today's North China Plain. The plain is also one of China's most water-short, supplied by the South-to-North Water Diversion.",
     history:
@@ -1666,8 +1674,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Lesser and Greater Khingan: the Greater Khingan is the long north–south body dividing the Inner Mongolian Plateau from the Northeast Plain, grassland on its west; the Lesser Khingan lies to the north-east, trends more east–west (NW–SE), divides the Songnen and Sanjiang plains, and is lower, farther east and moister. Versus Changbai Shan: Changbai is an isolated high volcano, the Lesser Khingan a continuous low fold range.",
     concept:
       "The Lesser Khingan is an example of \"a low range as an important geographic line\": it is not high, but as a watershed it separates two great plains of the Songhua system, and it is the northern limit of the Korean pine forest. With the Greater Khingan and Changbai Shan it forms the \"green screen\" on three sides of the Northeast Plain.",
+    // history sources: **黑龙江重点国有林区（含伊春一带）自 2014-04-01 起全面停止天然林商业性采伐**；
+    //   伊春市本身 2013 年即已先行全面停伐 —— 伊春市人民政府
+    //   https://www.yc.gov.cn/ycsrmzf/c101986/202505/400158.shtml（1 级）与新华网（2 级），2026-09-08 核。
+    //   **原文写「近年」——相对时间词本身就是会过期的写法**，与格兰坪「近年恢复官方双名」（实为 1998 年）
+    //   同一形状。海拔 500–800 m、五大连池火山群在其西南缘，均核实无误。
     history:
-      "The Lesser Khingan is traditional hunting ground of the Oroqen and Ewenki, and was once one of China's most important logging regions (the Yichun area was called \"the home of Korean pine\"). Commercial logging of natural forest has now stopped entirely, replaced by conservation and eco-tourism.",
+      "The Lesser Khingan is traditional hunting ground of the Oroqen and Ewenki, and was once one of China's most important logging regions (the Yichun area was called \"the home of Korean pine\"). In 2014, commercial logging of natural forest in Heilongjiang's key state forest areas stopped entirely, replaced by conservation and eco-tourism.",
   },
 
   yinshan: {
@@ -1686,6 +1699,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   luliang: {
+    // seeing sources: 主峰关帝山（又名孝文山、孝文峰）海拔 **2831 m**，位于交城县与方山县之间 —— 多来源一致，2026-09-08 核。
+    //   全篇 6 板块逐句核实无误，本轮无需改动。
     seeing:
       "The Lüliang Mountains run north–south through western Shanxi and are the watershed between the Yellow River (west) and the Fen River (east). The range is buried under thick loess, with rolling ridges and hills cut by a maze of gullies and severe soil erosion. The main peak, Guandi (Xiaowen) Shan, is about 2,831 m.",
     formation:
@@ -1701,6 +1716,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   liupan: {
+    // seeing sources: 主峰米缸山（又名美高山）海拔 **2942 m**，在泾源县与隆德县交界 —— 多来源一致，2026-09-08 核。
+    //   全篇 6 板块逐句核实无误，本轮无需改动。
     seeing:
       "The Liupan Mountains lie in southern Ningxia and eastern Gansu, a rocky north–south range in the western Loess Plateau. It is higher and far moister than the loess hills around it, with stands of forest on its slopes — a \"green island\" on the Loess Plateau. The main peak, Migang Shan, is about 2,942 m.",
     formation:
@@ -1716,6 +1733,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dabashan: {
+    // seeing sources: 主峰化龙山 **2917 m**（大巴山中段）；大巴山分东、中、西三段，米仓山即西段、横亘陕川交界，2026-09-08 核。
+    //   成因：华北与扬子两大板块之间强烈褶皱、逆冲抬升 —— 方向正确；更精确的说法是**秦岭造山带南缘
+    //   中生代以来的复合变形**（《地质通报》大巴山冲断推覆构造研究，2 级）。属常见简化，未被简化成错。
     seeing:
       "The Daba Mountains straddle the borders of Shaanxi, Sichuan, Chongqing and Hubei, lying across the northern rim of the Sichuan Basin and trending roughly NW–SE. With the Qinling to the north they form a double screen against north–south air movement. The main peak, Hualong Shan, is about 2,917 m. The Micang Shan to the west is part of the range.",
     formation:
@@ -1731,6 +1751,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   xuefeng: {
+    // seeing sources: 主峰苏宝顶 **1934 m**；雪峰山是公认的中国地形第二、三级阶梯分界线之一（与大兴安岭、太行山、
+    //   巫山并列）—— **正文用「大致对应」作了限定，是正确写法的范例**，2026-09-08 核。
+    //   1945 年雪峰山会战（湘西会战，04-09 至 06-07）为抗战正面战场最后一次大规模会战，以中国军队获胜结束。
     seeing:
       "The Xuefeng Mountains run NE–SW through western Hunan, a range on the eastern edge of the Yunnan–Guizhou Plateau where it grades into the Hunan hills and the Dongting Lake plain. Within Hunan it roughly marks the boundary between China's second and third topographic steps. The main peak, Subaoding, is about 1,934 m.",
     formation:
@@ -1746,6 +1769,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   wuyi: {
+    // seeing sources: 主峰黄岗山 **2160.8 m**，称「华东最高峰」「东南 10 省区最高峰」——
+    //   **这是有明确地理范围限定的排名断言，不是空泛的主观最高级**，成立（2 级，2026-09-08 核）。
+    //   武夷山 **1999 年**列入世界文化与自然双重遗产（第 23 届世界遗产委员会会议，符合自然标准 vii、x
+    //   与文化标准 iii、vi）—— https://whc.unesco.org/en/list/911/（1 级）。
+    //   `history` 段只写朱子理学与茶文化，零争议红线通过。
     seeing:
       "The Wuyi Mountains straddle the Fujian–Jiangxi border, trending NE–SW, an important range of south-east China. The main peak, Huanggang Shan, is about 2,161 m, the highest point in mainland south-east China. The range is known for two things: the Danxia landform around the Nine-Bend Stream, and well-preserved mid-subtropical forest.",
     formation:
@@ -1763,6 +1791,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   dabie: {
     seeing:
       "The Dabie Mountains straddle the borders of Hubei, Henan and Anhui, trending NW–SE, and are the watershed between the Yangtze and the Huai, roughly also the transition between the northern subtropics and the warm temperate zone. They are not high — the main peak, Baima Jian, is about 1,777 m — with a heavy, rounded profile.",
+    // formation sources: 大别山—苏鲁超高压变质带因出露大量榴辉岩闻名国际地质学界，是大陆深俯冲研究的关键窗口 ——
+    //   公认地质事实，2026-09-08 复核；`concept` 段用的是「关键窗口**之一**」，有限定，写法正确。
     formation:
       "The Dabie Shan is part of the collision belt between the North China and Yangtze blocks and has undergone intense metamorphism; the rock is mostly gneiss and other metamorphic rock, and it also exposes special rocks that record deep geological processes (such as eclogite), making it an important area for geological research. Long erosion has left it as rounded low-to-mid mountains.",
     observation:
@@ -2021,6 +2051,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Jiangnan Hills have varied rock — granite, sandstone, slate and more — deeply weathered by a long hot, wet climate into a thick red crust. Differential uplift has pushed some rock bodies up into mountains: the granite of Huang Shan, the fault block of Lu Shan, the sandstone-conglomerate of Longhu Shan (Danxia) and others are scattered through the hills.",
     observation:
       "From the air the Jiangnan Hills are a continuous, ridge-less, rolling stretch of green low mountains south of the Yangtze, with red-earth slopes and terraces between and paddy fields, towns in the basins. A few famous peaks such as Huang Shan and Lu Shan stand out with sheer rock above the surrounding gentle hills. Seas of cloud often flow among the hills after rain.",
+    // distinguish sources: **镜像交叉核对（2026-09-08）**：与两广丘陵条目的 distinguish / seeing 段逐句对照，
+    //   两篇对「江南丘陵在南岭以北、红壤与花岗岩/砂岩为主」「两广丘陵在南岭以南、石灰岩喀斯特峰林为主」
+    //   的归属完全一致，没有出现上一批乌鲁鲁/卡塔丘塔那种「区分段互相抄错方向」的问题。
+    //   **相邻条目的「区分」段是互相镜像的，一处写错就会传染 —— 这类条目要成对核。**
+    //   南岭作为两者分界为公认地理界线。
     distinguish:
       "The Jiangnan Hills and the Liangguang Hills: both are southern hills, but the Jiangnan Hills are north of the Nanling and mainly red earth with granite/sandstone landforms; the Liangguang Hills are south of the Nanling, with limestone karst (peak forest) most typical. The Jiangnan Hills and the Yunnan–Guizhou Plateau: the plateau is a coherently uplifted highland with scarped edges; the Jiangnan Hills have no clear coherent uplift or edge scarp, and are lower.",
     concept:

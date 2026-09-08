@@ -30,8 +30,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   sydney: {
+    // identity sources: 澳大利亚统计局（ABS）《Regional population》**年度**发布，覆盖截至当年 6 月 30 日的估计常住人口（ERP），
+    //   通常在**次年 3 月下旬**公布（2024–25 财年数据于 2026-03-31 发布，下一期预计 2027-03）。
+    //   另一份《National, state and territory population》是**季度**的，但只到州/领地层级、不含 GCCSA 细分，
+    //   **不能拿来查城市人口**。城市级人口一律用年度那份 ERP，不用五年一次的普查数。2026-09-08 核。
+    //   **ABS 有三档并存口径，差别极大**：GCCSA（大首府城市）/ SUA（主要城区，非首府城市用这一档）/ LGA（地方政府区，
+    //   悉尼市 LGA 只有二十多万人）。写的时候必须点名是哪一档。
+    //   大悉尼（Greater Sydney，GCCSA）2025-06-30 ERP **5,638,830**（1 级，2026-09-08 核）。
+    //   **原 identity 的 530 万与同条目 howItWorks 已引的数字打架** —— 这一批六个首府条目
+    //   （悉尼/墨尔本/布里斯班/珀斯/阿德莱德/达尔文）的 identity **全部是旧数**，是「先写 identity、
+    //   后写 howItWorks 但没回头同步」的批次性遗留，不是编造口径。
     identity:
-      "Sydney is Australia's largest city and the capital of New South Wales, with a metropolitan population of about 5.3 million. It is an outgoing city built around a harbour and its beaches, and it is where many people first enter Australia. Finance, tourism and culture are all strong, and the cost of living is the highest in the country. It is not the national capital — that is Canberra.",
+      "Sydney is Australia's largest city and the capital of New South Wales; Greater Sydney had an estimated resident population of about 5.64 million in June 2025 (Australian Bureau of Statistics). It is an outgoing city built around a harbour and its beaches, and it is where many people first enter Australia. Finance, tourism and culture are all strong, and the cost of living is the highest in the country. It is not the national capital — that is Canberra.",
     // howItWorks sources: ABS Regional population (ERP 30 Jun 2025: Greater Sydney 5,638,830); City of Sydney "City at a glance" (ERP 30 Jun 2022: 218,096; Greater Sydney 34 councils); Wikipedia LGAs of NSW (33, 2024-09) → 正文写"三十多个"; NSW Greater Sydney Region Plan 2018; Local government in Australia. See docs/city-depth-redesign-2026-09-06.md §4
     howItWorks:
       "The Sydney people speak of is a metropolitan region assembled from more than thirty local government areas, known officially as Greater Sydney. Each has its own elected council, in charge of waste, parks, libraries and development approvals, while rail, buses, policing, schools and hospitals are run by the New South Wales state government. The nominal 'City of Sydney' covers only the central business district and its surroundings, about 26 km² with some 218,000 residents in 2022 — a small corner of the whole. In 2018 the state's regional plan described the region as three cities: the Harbour City, the River City centred on Parramatta, and the Western Parkland City growing around the new airport. Here an address never names the council area, only the suburb, the state and a four-digit postcode, and when locals say they are going to 'the city' they mean the central business district alone. Where the railway reaches, daily life reaches too. Newcomers most often go wrong in two ways: taking the City of Sydney for the whole of Sydney, and mistaking a sub-centre such as Parramatta for a suburb.",
@@ -48,8 +58,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   melbourne: {
+    // identity sources: 澳大利亚统计局（ABS）《Regional population》**年度**发布，覆盖截至当年 6 月 30 日的估计常住人口（ERP），
+    //   通常在**次年 3 月下旬**公布（2024–25 财年数据于 2026-03-31 发布，下一期预计 2027-03）。
+    //   另一份《National, state and territory population》是**季度**的，但只到州/领地层级、不含 GCCSA 细分，
+    //   **不能拿来查城市人口**。城市级人口一律用年度那份 ERP，不用五年一次的普查数。2026-09-08 核。
+    //   **ABS 有三档并存口径，差别极大**：GCCSA（大首府城市）/ SUA（主要城区，非首府城市用这一档）/ LGA（地方政府区，
+    //   悉尼市 LGA 只有二十多万人）。写的时候必须点名是哪一档。
+    //   大墨尔本（Greater Melbourne，GCCSA）2025-06-30 ERP **5,435,590**（1 级，2026-09-08 核）。
     identity:
-      "Melbourne is the capital of Victoria, with a metropolitan population of about 5 million — Australia's second city, and often compared with Sydney. Its reputation is for the arts, coffee and sport: laneway cafes and street art, a strong live-music and theatre scene, and the yearly Australian Open and Spring Racing Carnival. The weather is famously changeable — locals say it has \"four seasons in one day.\"",
+      "Melbourne is the capital of Victoria, where Greater Melbourne had an estimated resident population of about 5.44 million in June 2025 (Australian Bureau of Statistics) — Australia's second-most populous capital city area, and often compared with Sydney. Its reputation is for the arts, coffee and sport: laneway cafes and street art, a strong live-music and theatre scene, and the yearly Australian Open and Spring Racing Carnival. The weather is famously changeable — locals say it has \"four seasons in one day.\"",
     // howItWorks sources: ABS Regional population (ERP 30 Jun 2025: Greater Melbourne 5,435,590); Wikipedia: Melbourne (31 LGAs, 9,993 km²); City of Melbourne (37.7 km², 2021 census 149,615); Plan Melbourne 2017–2050. See docs/city-depth-redesign-2026-09-06.md §4
     howItWorks:
       "Greater Melbourne is made up of 31 local government areas, and the City of Melbourne among them runs only the central business district and its surroundings, about 37.7 km² with some 150,000 residents at the 2021 census, under a Lord Mayor. Councils look after waste, libraries, local roads and development approvals, while trains, trams, buses, schools and policing belong to the Victorian government. Unlike Sydney, Melbourne's jobs and transport remain concentrated on the Hoddle Grid of the central business district, into which the railway lines converge like the spokes of a wheel. Addresses here use the suburb, VIC and a four-digit postcode, 3000 for the central business district. The Yarra divides the city into north and south, the tram network is the world's largest by length, and the hook turn at intersections is a driving rule found nowhere else. Newcomers most often go wrong by taking the City of Melbourne for the whole of Melbourne, or by assuming it is as polycentric as Sydney.",
@@ -89,8 +106,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   brisbane: {
+    // identity sources: 澳大利亚统计局（ABS）《Regional population》**年度**发布，覆盖截至当年 6 月 30 日的估计常住人口（ERP），
+    //   通常在**次年 3 月下旬**公布（2024–25 财年数据于 2026-03-31 发布，下一期预计 2027-03）。
+    //   另一份《National, state and territory population》是**季度**的，但只到州/领地层级、不含 GCCSA 细分，
+    //   **不能拿来查城市人口**。城市级人口一律用年度那份 ERP，不用五年一次的普查数。2026-09-08 核。
+    //   **ABS 有三档并存口径，差别极大**：GCCSA（大首府城市）/ SUA（主要城区，非首府城市用这一档）/ LGA（地方政府区，
+    //   悉尼市 LGA 只有二十多万人）。写的时候必须点名是哪一档。
+    //   大布里斯班（Greater Brisbane，GCCSA）2025-06-30 ERP **2,833,524**（1 级，2026-09-08 核）。
+    //   **这是本批矛盾最明显的一条**：同条目 howItWorks 写的就是 283 万，identity 却是 260 万。
     identity:
-      "Brisbane is the capital of Queensland, with a metropolitan population of about 2.6 million — Australia's third-largest city. It is warmer, slower and more casual than Sydney and Melbourne to the south, with sunshine year-round and mild winters. It is the gateway to the Sunshine Coast, the Gold Coast and the southern Great Barrier Reef, and it will host the Summer Olympics in 2032.",
+      "Brisbane is the capital of Queensland, where Greater Brisbane had an estimated resident population of about 2.83 million in June 2025 (Australian Bureau of Statistics) — Australia's third-most populous capital city area. It is warmer, slower and more casual than Sydney and Melbourne to the south, with sunshine year-round and mild winters. It is the gateway to the Sunshine Coast, the Gold Coast and the southern Great Barrier Reef, and it will host the Summer Olympics in 2032.",
     // howItWorks sources: Wikipedia (2026-09): City of Brisbane; LGAs of Queensland; List of cities in Australia by population (ABS ERP 2025-06)
     howItWorks:
       "Brisbane took a different road from Sydney and Melbourne. In 1925 more than twenty towns and shires were merged into a single Brisbane City Council, and ever since one council has governed about 1,343 km² of the urban core, with some 1.24 million residents at the 2021 census — the most populous local government in Australia, led by a Lord Mayor. Around it, Logan, Ipswich, Moreton Bay and Redland are cities in their own right, and together with Brisbane they form a Greater Brisbane of about 2.83 million people in June 2025; trains, buses, ferries, police and schools remain with the Queensland government. The centre sits in a bend of the Brisbane River, and South Bank, Fortitude Valley and West End each have a character of their own as the river winds the city into a chain of peninsulas. Addresses still name only the suburb, QLD and a postcode, and the council boundary scarcely appears in everyday speech. Newcomers most often go wrong by picturing 'Brisbane City Council' as a small downtown authority, when it governs the whole city from the port to the foothills.",
@@ -107,8 +132,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   perth: {
+    // identity sources: 澳大利亚统计局（ABS）《Regional population》**年度**发布，覆盖截至当年 6 月 30 日的估计常住人口（ERP），
+    //   通常在**次年 3 月下旬**公布（2024–25 财年数据于 2026-03-31 发布，下一期预计 2027-03）。
+    //   另一份《National, state and territory population》是**季度**的，但只到州/领地层级、不含 GCCSA 细分，
+    //   **不能拿来查城市人口**。城市级人口一律用年度那份 ERP，不用五年一次的普查数。2026-09-08 核。
+    //   **ABS 有三档并存口径，差别极大**：GCCSA（大首府城市）/ SUA（主要城区，非首府城市用这一档）/ LGA（地方政府区，
+    //   悉尼市 LGA 只有二十多万人）。写的时候必须点名是哪一档。
+    //   大珀斯（Greater Perth，GCCSA）2025-06-30 ERP **2,452,765**（1 级，2026-09-08 核）。
     identity:
-      "Perth is the capital of Western Australia, with a metropolitan population of about 2.2 million, and is called one of the most isolated big cities in the world — thousands of kilometres from the eastern cities, about 5 hours' flight to Sydney with a 2–3 hour time difference. It grew rich on mining and energy, has a Mediterranean climate, and gets the most sunshine of any Australian capital.",
+      "Perth is the capital of Western Australia, where Greater Perth had an estimated resident population of about 2.45 million in June 2025 (Australian Bureau of Statistics), and is called one of the most isolated big cities in the world — thousands of kilometres from the eastern cities, about 5 hours' flight to Sydney with a 2–3 hour time difference. It grew rich on mining and energy, has a Mediterranean climate, and gets the most sunshine of any Australian capital.",
     // howItWorks sources: Wikipedia (2026-09): City of Perth; Perth (30 LGAs per Planning and Development Act 2005); ABS ERP 2025-06
     howItWorks:
       "Perth is a long, narrow metropolis spread some 125 km along the coast, with about 2.45 million residents in June 2025 and 30 local governments; the nominal City of Perth covers only about 20 km² around the central business district, with fewer than 30,000 residents at the 2021 census, one of the smallest capital-city councils in the country. Councils look after waste, parks and development approvals, while trains, buses and ferries are run by the state's Transperth, and the recent Metronet works push the railway further into the suburbs. The Swan River divides the city into north and south, and locals mark out their territory as 'north of the river' or 'south of the river'; the Darling Scarp to the east is the city's edge. Addresses name only the suburb, WA and a postcode. Newcomers most often go wrong by imagining Perth as a compact city, when daily life is scattered through suburbs strung along more than a hundred kilometres of coast.",
@@ -125,8 +157,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   adelaide: {
+    // identity sources: 澳大利亚统计局（ABS）《Regional population》**年度**发布，覆盖截至当年 6 月 30 日的估计常住人口（ERP），
+    //   通常在**次年 3 月下旬**公布（2024–25 财年数据于 2026-03-31 发布，下一期预计 2027-03）。
+    //   另一份《National, state and territory population》是**季度**的，但只到州/领地层级、不含 GCCSA 细分，
+    //   **不能拿来查城市人口**。城市级人口一律用年度那份 ERP，不用五年一次的普查数。2026-09-08 核。
+    //   **ABS 有三档并存口径，差别极大**：GCCSA（大首府城市）/ SUA（主要城区，非首府城市用这一档）/ LGA（地方政府区，
+    //   悉尼市 LGA 只有二十多万人）。写的时候必须点名是哪一档。
+    //   大阿德莱德（Greater Adelaide，GCCSA）2025-06-30 ERP **1,491,015**（1 级，2026-09-08 核）。
     identity:
-      "Adelaide is the capital of South Australia, with a metropolitan population of about 1.4 million. It is a planned city — a square grid in the centre, wrapped by a continuous ring of parkland (the Park Lands). It is known for wine, festivals and a relatively unhurried life, and prices are usually a little lower than in Sydney or Melbourne.",
+      "Adelaide is the capital of South Australia, where Greater Adelaide had an estimated resident population of about 1.49 million in June 2025 (Australian Bureau of Statistics). It is a planned city — a square grid in the centre, wrapped by a continuous ring of parkland (the Park Lands). It is known for wine, festivals and a relatively unhurried life, and prices are usually a little lower than in Sydney or Melbourne.",
     // howItWorks sources: Wikipedia (2026-09): City of Adelaide (15.57 km², 2021 census 25,026; Light 1837 plan; Park Lands); ABS ERP 2025-06
     howItWorks:
       "Adelaide's centre still keeps the grid that Colonel Light laid out in 1837: a square mile of city blocks ringed by about 7.6 km² of Park Lands, with North Adelaide facing it across the Torrens. The City of Adelaide governs precisely this grid and its green belt, about 15.6 km² with some 25,000 residents at the 2021 census; beyond the belt, Greater Adelaide is made up of more than a dozen councils and had about 1.49 million residents in June 2025. Trains, trams and buses are run by the state government's Adelaide Metro. The city lies on the plain between the coast and the Adelaide Hills, and locals take their bearings from 'the hills' and 'the beach' — the eastern suburbs against the hills, the western ones by the sea. Addresses name only the suburb, SA and a postcode. Newcomers most often go wrong by taking the area inside the Park Lands for the whole of Adelaide, when the great majority of people live on the plain beyond it.",
@@ -166,8 +205,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   darwin: {
+    // identity sources: 澳大利亚统计局（ABS）《Regional population》**年度**发布，覆盖截至当年 6 月 30 日的估计常住人口（ERP），
+    //   通常在**次年 3 月下旬**公布（2024–25 财年数据于 2026-03-31 发布，下一期预计 2027-03）。
+    //   另一份《National, state and territory population》是**季度**的，但只到州/领地层级、不含 GCCSA 细分，
+    //   **不能拿来查城市人口**。城市级人口一律用年度那份 ERP，不用五年一次的普查数。2026-09-08 核。
+    //   **ABS 有三档并存口径，差别极大**：GCCSA（大首府城市）/ SUA（主要城区，非首府城市用这一档）/ LGA（地方政府区，
+    //   悉尼市 LGA 只有二十多万人）。写的时候必须点名是哪一档。
+    //   大达尔文（Greater Darwin，GCCSA）2025-06-30 ERP **159,284**（1 级，2026-09-08 核）。
+    //   **小首府最容易把 LGA 与 GCCSA 混用** —— 原文的 14 万像是 2021 年普查或更早的数。
     identity:
-      "Darwin is the capital of the Northern Territory, with a metropolitan population of about 140,000 — the smallest of Australia's capitals and the closest to Asia (Bali is a shorter flight than Sydney). It is in the tropics, with only a dry and a wet season, and is hot year-round. It is the gateway to Kakadu and Litchfield national parks, and has a World War II and multicultural history.",
+      "Darwin is the capital of the Northern Territory, where Greater Darwin had an estimated resident population of about 159,000 in June 2025 (Australian Bureau of Statistics) — the smallest of Australia's capitals and the closest to Asia (Bali is a shorter flight than Sydney). It is in the tropics, with only a dry and a wet season, and is hot year-round. It is the gateway to Kakadu and Litchfield national parks, and has a World War II and multicultural history.",
     // howItWorks sources: Wikipedia (2026-09): Darwin (City of Darwin / Palmerston / Litchfield; Cyclone Tracy 1974; Larrakia); ABS ERP 2025-06
     howItWorks:
       "Darwin is the smallest of the Australian capitals, with about 159,000 residents in Greater Darwin in June 2025 — more than half the population of the Northern Territory. The City of Darwin council governs the central business district and the surrounding suburbs, while the satellite city of Palmerston to the south-east and the rural municipality of Litchfield have councils of their own, the three together forming Greater Darwin; schools, hospitals, buses and police belong to the territory government. Cyclone Tracy destroyed more than seventy per cent of the buildings on Christmas Day 1974, and today's city was rebuilt after it, which is why its buildings are young and its layout orderly: the old town and the business district at one corner of the peninsula, the northern suburbs at another, and the eastern suburbs stretching towards Palmerston. This is the country of the Larrakia people, and Aboriginal people make up more than a tenth of the population, the highest share of any capital. Addresses name the suburb, NT and a postcode. Newcomers most often go wrong by taking Palmerston for a district of Darwin, when it is a city with a government of its own.",
@@ -202,8 +249,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   newcastle: {
+    // identity sources: 澳大利亚统计局（ABS）《Regional population》**年度**发布，覆盖截至当年 6 月 30 日的估计常住人口（ERP），
+    //   通常在**次年 3 月下旬**公布（2024–25 财年数据于 2026-03-31 发布，下一期预计 2027-03）。
+    //   另一份《National, state and territory population》是**季度**的，但只到州/领地层级、不含 GCCSA 细分，
+    //   **不能拿来查城市人口**。城市级人口一律用年度那份 ERP，不用五年一次的普查数。2026-09-08 核。
+    //   **ABS 有三档并存口径，差别极大**：GCCSA（大首府城市）/ SUA（主要城区，非首府城市用这一档）/ LGA（地方政府区，
+    //   悉尼市 LGA 只有二十多万人）。写的时候必须点名是哪一档。
+    //   **纽卡斯尔不是首府城市，ABS 没有「Greater Newcastle」GCCSA** —— 官方口径是
+    //   **SUA（Significant Urban Area）**：纽卡斯尔—梅特兰 SUA 2025-06-30 ERP 约 **541,634**（1 级，2026-09-08 核）。
+    //   「新南威尔士州人口第二多」按 SUA 口径成立（次于悉尼，领先中央海岸）。
+    //   **非首府城市一律用 SUA，不要套「都会区」这个会被读成 GCCSA 的词。**
     identity:
-      "Newcastle is about 160 km north of Sydney, the second-largest city in New South Wales (metropolitan population about 500,000), at the mouth of the Hunter River. It was historically a coal-export port — its name comes from the English coal city of Newcastle upon Tyne, and the Australian city was formally named in 1804. Today it has shifted from heavy industry toward its university, beaches and culture.",
+      "Newcastle is about 160 km north of Sydney, the second-most populous urban area in New South Wales (the Newcastle–Maitland Significant Urban Area had an estimated population of about 542,000 in June 2025, Australian Bureau of Statistics), at the mouth of the Hunter River. It was historically a coal-export port — its name comes from the English coal city of Newcastle upon Tyne, and the Australian city was formally named in 1804. Today it has shifted from heavy industry toward its university, beaches and culture.",
     // howItWorks sources: Wikipedia (2026-09): Newcastle, NSW (Greater Newcastle LGAs, 2021 census 682,465; coal port); ABS ERP 2025-06 SUA
     howItWorks:
       "Newcastle is a metropolitan area assembled from several independent local governments: the City of Newcastle governs the port and the old city, the City of Lake Macquarie to the south has more people, and with Maitland, Cessnock and Port Stephens they form a Greater Newcastle of about 682,000 at the 2021 census, while the Newcastle–Maitland urban area had about 542,000 residents in June 2025. Trains, buses and the light rail are run by the New South Wales government. The city grew around the world's largest coal-export port, the business district sits on the peninsula at the mouth of the Hunter, and the light rail opened in 2019 links the station to the beaches; each council keeps its own identity, and residents of Lake Macquarie seldom say they live in Newcastle. Addresses name the suburb, NSW and a postcode. Newcomers most often go wrong by calling the whole region Newcastle, when to locals only the city by the harbour bears the name.",
@@ -2400,11 +2457,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   auckland: {
+    // identity sources: 新西兰统计局（Stats NZ）《Subnational population estimates》**年度**发布，覆盖截至当年 6 月 30 日的估计，
+    //   最近一期 2025-10-29 发布（基准 2025-06-30），下一期预计 2026-10。region / territorial authority / urban area
+    //   三档口径都在同一份里。2026-09-08 核。
+    //   **新西兰官方没有与美国 MSA 对等的「都会区」口径** —— 本项目今后统一用「城区人口（Stats NZ urban area）」、
+    //   「XX 市议会辖区人口（territorial authority）」、「XX 大区人口（region）」三种可追溯到官方分类的说法。
+    //   奥克兰大区（Auckland Council 统一辖区，2010 年合并）2025-06-30 ERP **1,816,000**；
+    //   同期全国 5,324,700 —— 182/532 ≈ **34.1%**，「约三分之一」成立（1 级，2026-09-08 核）。
     identity:
-      "Auckland is the largest city in New Zealand, with a metropolitan population of about 1.7 million — a third of the country. It is built on a narrow isthmus with a harbour on each side and dozens of low extinct volcanic cones scattered through it, hence \"City of Sails\". It is not the capital — that is Wellington. The city is named after the Earl of Auckland, a 19th-century British politician.",
+      "Auckland is the largest city in New Zealand, where the Auckland region — coterminous with Auckland Council — had an estimated resident population of about 1.82 million in June 2025 (Stats NZ), about a third of the country. It is built on a narrow isthmus with a harbour on each side and dozens of low extinct volcanic cones scattered through it, hence \"City of Sails\". It is not the capital — that is Wellington. The city is named after the Earl of Auckland, a 19th-century British politician.",
     // howItWorks sources: Wikipedia (2026-09): Auckland (unitary Auckland Council since 2010 merger of 7 territorial authorities + regional council; 21 local boards; ~4,900 km² region; ~1.7 million 2024–25 ≈ one-third of NZ; Harbour Bridge 1959; AT HOP); Local government in New Zealand
     howItWorks:
-      "The Auckland people speak of is, administratively, a 'super city' created only in 2010: seven territorial councils and a regional council were merged into one Auckland Council, whose elected mayor and governing body run transport, water, planning and waste for the whole region, while 21 local boards beneath it run parks, libraries and community affairs in their own areas; police, schools and hospitals belong to central government. The Auckland region covers about 4,900 km², the urban area about 1,100 km², with about 1.7 million people in 2024, close to a third of the country, and the largest Pacific and Asian communities of any New Zealand city. The city sits on the isthmus between the Waitematā and Manukau harbours: the central business district lies on the Waitematā, the North Shore across the Harbour Bridge of 1959, South Auckland around Manukau, and West Auckland as another quarter. Addresses give number, street, suburb and four-digit postcode, and locals place things by suburb. Trains, buses and ferries run on one AT HOP card, yet the car remains most people's daily life. The Māori name Tāmaki Makaurau is used alongside the English. Newcomers most often go wrong by taking the central business district for Auckland, when it is one point in a metropolitan area spanning two harbours.",
+      "The Auckland people speak of is, administratively, a 'super city' created only in 2010: seven territorial councils and a regional council were merged into one Auckland Council, whose elected mayor and governing body run transport, water, planning and waste for the whole region, while 21 local boards beneath it run parks, libraries and community affairs in their own areas; police, schools and hospitals belong to central government. The Auckland region covers about 4,900 km², the urban area about 1,100 km², with about 1.82 million people in June 2025, close to a third of the country, and the largest Pacific and Asian communities of any New Zealand city. The city sits on the isthmus between the Waitematā and Manukau harbours: the central business district lies on the Waitematā, the North Shore across the Harbour Bridge of 1959, South Auckland around Manukau, and West Auckland as another quarter. Addresses give number, street, suburb and four-digit postcode, and locals place things by suburb. Trains, buses and ferries run on one AT HOP card, yet the car remains most people's daily life. The Māori name Tāmaki Makaurau is used alongside the English. Newcomers most often go wrong by taking the central business district for Auckland, when it is one point in a metropolitan area spanning two harbours.",
     layout:
       "Auckland straddles the isthmus between the Waitematā Harbour (east) and the Manukau Harbour (west); the city centre and the Sky Tower are on the eastern harbour. The whole city sits on the Auckland Volcanic Field — about 50 extinct cones through the suburbs, and Maungawhau (Mt Eden) and Maungakiekie (One Tree Hill) can both be climbed for a panorama. North over the Harbour Bridge is the North Shore and the way to the Bay of Islands; east are the Hauraki Gulf islands such as Waiheke; south is the Waikato farm country.",
     gettingAround:
@@ -2418,8 +2482,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   wellington: {
+    // identity sources: 新西兰统计局（Stats NZ）《Subnational population estimates》**年度**发布，覆盖截至当年 6 月 30 日的估计，
+    //   最近一期 2025-10-29 发布（基准 2025-06-30），下一期预计 2026-10。region / territorial authority / urban area
+    //   三档口径都在同一份里。2026-09-08 核。
+    //   **新西兰官方没有与美国 MSA 对等的「都会区」口径** —— 本项目今后统一用「城区人口（Stats NZ urban area）」、
+    //   「XX 市议会辖区人口（territorial authority）」、「XX 大区人口（region）」三种可追溯到官方分类的说法。
+    //   惠灵顿市 + 下哈特 + 上哈特 + 波里鲁阿四个 territorial authority 相加，2025-06-30 约 **433,900**
+    //   （3 级汇总，**不是 Stats NZ 的单一统计单元**）；
+    //   Stats NZ 官方 **Wellington Region 2025-06-30 为 543,400**，范围大得多（含凯皮蒂、怀拉拉帕等乡村地区）。
+    //   **两个数字都对，指的却是完全不同的范围** —— 原文用同一批「都会区／XX 区」措辞，读者会以为在说同一件事。
     identity:
-      "Wellington is the capital of New Zealand, at the southern tip of the North Island on Cook Strait, with a metropolitan population of about 420,000. Hills on three sides and the sea on the fourth make the centre compact — it is called one of the smallest capitals in the world — and it is famously windy (\"Windy Wellington\"). The city is named after the Duke of Wellington, who defeated Napoleon; there is also a Wellington in Somerset, England, and one in New South Wales, Australia.",
+      "Wellington is the capital of New Zealand, at the southern tip of the North Island on Cook Strait; Wellington City together with Lower Hutt, Upper Hutt and Porirua had a combined estimated population of about 434,000 in June 2025 — the sum of four councils, not a single official Stats NZ unit. Hills on three sides and the sea on the fourth make the centre compact — it is called one of the smallest capitals in the world — and it is famously windy (\"Windy Wellington\"). The city is named after the Duke of Wellington, who defeated Napoleon; there is also a Wellington in Somerset, England, and one in New South Wales, Australia.",
     // howItWorks sources: Wikipedia (2026-09): Wellington (Wellington City Council ~290 km²; ~210,800 June 2025; region ~550,000 with Lower Hutt/Upper Hutt/Porirua; Greater Wellington Regional Council; capital since 1865; Wellington Fault); Local government in New Zealand
     howItWorks:
       "Wellington has been New Zealand's capital since 1865 — a status resting on constitutional convention rather than statute — with Parliament, the ministries and the Supreme Court in the central business district. Wellington City Council governs about 290 km² with about 210,000 people in 2025, while the Wellington Region holds about 550,000, with Lower Hutt, Upper Hutt and Porirua as cities with councils of their own, the Greater Wellington Regional Council running public transport and environment, and police, schools and hospitals under central government. The city is squeezed between harbour and hills, much of its business district built on land raised by the 1855 earthquake and then reclaimed, with residential suburbs climbing the slopes and the cable car as the old way up; the Wellington Fault runs through the centre, and earthquake risk is the city's constant background. Addresses give number, street, suburb and four-digit postcode. Metlink trains and buses run on one Snapper card, and the Cook Strait ferries leave from here for the South Island. Wind is Wellington's calling card. Newcomers most often go wrong by taking Wellington city for the whole capital region, when the Hutt Valley and Porirua are other cities.",
@@ -2454,11 +2527,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   christchurch: {
+    // identity sources: 新西兰统计局（Stats NZ）《Subnational population estimates》**年度**发布，覆盖截至当年 6 月 30 日的估计，
+    //   最近一期 2025-10-29 发布（基准 2025-06-30），下一期预计 2026-10。region / territorial authority / urban area
+    //   三档口径都在同一份里。2026-09-08 核。
+    //   **新西兰官方没有与美国 MSA 对等的「都会区」口径** —— 本项目今后统一用「城区人口（Stats NZ urban area）」、
+    //   「XX 市议会辖区人口（territorial authority）」、「XX 大区人口（region）」三种可追溯到官方分类的说法。
+    //   基督城市（territorial authority，含班克斯半岛）2025-06 ERP **419,200**；
+    //   Stats NZ 官方城区（urban area）**407,800**；含塞尔文、怀马卡里里两区的都会范围约 **556,500**
+    //   （3 级转引 Stats NZ，2026-09-08 核）。
+    //   **原文里「都会区」一个词在同一条目里指了两个不同的数**（identity 40 万 ≈ urban area，
+    //   howItWorks 56 万 = 含两区）。
     identity:
-      "Christchurch is the largest city on the South Island and the centre of the Canterbury region, with a metropolitan population of about 400,000. It is built on the eastern edge of the Canterbury Plains at the foot of Banks Peninsula; it began as a planned Church of England settlement, laid out on a grid around a cathedral, and is named after Christ Church, a college of Oxford — there is also a Christchurch in Dorset, England. The 2010–2011 earthquakes badly damaged the centre, which has been rebuilding since.",
+      "Christchurch is the largest city on the South Island and the centre of the Canterbury region; Christchurch City (including Banks Peninsula) had an estimated population of about 419,000 in June 2025, its official urban area about 408,000, and the wider metropolitan area including the Selwyn and Waimakariri districts about 556,000 (Stats NZ). It is built on the eastern edge of the Canterbury Plains at the foot of Banks Peninsula; it began as a planned Church of England settlement, laid out on a grid around a cathedral, and is named after Christ Church, a college of Oxford — there is also a Christchurch in Dorset, England. The 2010–2011 earthquakes badly damaged the centre, which has been rebuilding since.",
     // howItWorks sources: Wikipedia (2026-09): Christchurch (Christchurch City Council ~1,415 km² incl. Banks Peninsula; ~419,200 June 2025; metro ~556,500; Four Avenues grid 1850; Lyttelton tunnel 1964; 2010–11 earthquakes; Environment Canterbury); Local government in New Zealand
     howItWorks:
-      "Christchurch is the largest city of the South Island, and Christchurch City Council governs about 1,415 km² — since Banks Peninsula joined in 2006 — with about 419,000 people in 2025 and about 556,000 in the metropolitan area; Environment Canterbury is the regional council for public transport and environment, and police, schools and hospitals belong to central government. The city was laid out on the plain to the Canterbury Association's plan of 1850, a square centre within the Four Avenues with Cathedral Square as the point of reference, the Avon and Hagley Park running through it, the Port Hills to the south and the port of Lyttelton through the tunnel of 1964. The earthquake sequence of 2010–2011 rewrote the city: most of the centre was demolished and rebuilt, more than 8,000 homes in the east were red-zoned, and the Cardboard Cathedral and the new convention centre are the emblems of the rebuild. Rangiora to the north and Rolleston to the south-west lie in two other district councils and are the fastest-growing commuter belt. Addresses give number, street, suburb and four-digit postcode. Public transport is buses only, on the Metro card. The Māori name Ōtautahi is used alongside the English. Newcomers most often go wrong by taking the rebuilt centre for the whole of Christchurch, when the city's life is spread through the suburbs on the plain.",
+      "Christchurch is the largest city of the South Island, and Christchurch City Council governs about 1,415 km² — since Banks Peninsula joined in 2006 — with about 419,000 people in 2025 and about 556,000 across the built-up area together with the Selwyn and Waimakariri districts — Stats NZ publishes no metropolitan-area tier — in the wider area; Environment Canterbury is the regional council for public transport and environment, and police, schools and hospitals belong to central government. The city was laid out on the plain to the Canterbury Association's plan of 1850, a square centre within the Four Avenues with Cathedral Square as the point of reference, the Avon and Hagley Park running through it, the Port Hills to the south and the port of Lyttelton through the tunnel of 1964. The earthquake sequence of 2010–2011 rewrote the city: most of the centre was demolished and rebuilt, more than 8,000 homes in the east were red-zoned, and the Cardboard Cathedral and the new convention centre are the emblems of the rebuild. Rangiora to the north and Rolleston to the south-west lie in two other district councils and are the fastest-growing commuter belt. Addresses give number, street, suburb and four-digit postcode. Public transport is buses only, on the Metro card. The Māori name Ōtautahi is used alongside the English. Newcomers most often go wrong by taking the rebuilt centre for the whole of Christchurch, when the city's life is spread through the suburbs on the plain.",
     layout:
       "Christchurch is built on the flat Canterbury Plains, with the Avon River winding through the grid of the centre and Cathedral Square at the heart. South-east are the port of Lyttelton and Banks Peninsula (an old extinct volcano with a broken coast of small bays); the Port Hills on the peninsula's edge give views over Lyttelton Harbour. West are the plains and the foot of the Southern Alps.",
     gettingAround:
@@ -2472,8 +2555,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   queenstown: {
+    // identity sources: 新西兰统计局（Stats NZ）《Subnational population estimates》**年度**发布，覆盖截至当年 6 月 30 日的估计，
+    //   最近一期 2025-10-29 发布（基准 2025-06-30），下一期预计 2026-10。region / territorial authority / urban area
+    //   三档口径都在同一份里。2026-09-08 核。
+    //   **新西兰官方没有与美国 MSA 对等的「都会区」口径** —— 本项目今后统一用「城区人口（Stats NZ urban area）」、
+    //   「XX 市议会辖区人口（territorial authority）」、「XX 大区人口（region）」三种可追溯到官方分类的说法。
+    //   皇后镇湖区议会辖区（Queenstown-Lakes District）2025-06-30 ERP **53,800**（3 级转引 Stats NZ，2026-09-08 核）；
+    //   镇区约 2.9 万与 howItWorks 一致。**该区年增长率一度高达约 8%，人口数过期得特别快**，下一轮必刷。
     identity:
-      "Queenstown is in the south of the South Island on the shore of Lake Wakatipu, ringed by mountains including The Remarkables, with an urban-area population of under 30,000 (about 52,000 in the wider Queenstown-Lakes District) but serving as the tourism and outdoor-sports centre of New Zealand. It is known as the \"adventure capital\" — bungy jumping (the first commercial bungy site is nearby), skydiving, jetboating and skiing are all here. The origin of the name is uncertain, with several accounts.",
+      "Queenstown is in the south of the South Island on the shore of Lake Wakatipu, ringed by mountains including The Remarkables, with an urban-area population of under 30,000 (about 54,000 in the wider Queenstown-Lakes District in June 2025, Stats NZ) but serving as the tourism and outdoor-sports centre of New Zealand. It is known as the \"adventure capital\" — bungy jumping (the first commercial bungy site is nearby), skydiving, jetboating and skiing are all here. The origin of the name is uncertain, with several accounts.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Queenstown (largest town of Queenstown-Lakes District, Otago; urban population ~29,000 June 2025; north-eastern shore of Lake Wakatipu at 310 m; The Remarkables and Coronet Peak; bungy jumping; Skyline gondola on Bob's Peak; Arrowtown and Wānaka in the same district; least affordable housing in NZ, average price over NZ$1.7 million by late 2022; airport)
     howItWorks:
       "Queenstown is a resort town of the Otago region of New Zealand and the largest town of the Queenstown-Lakes District, with an urban population of about 29,000 in June 2025; the council runs waste, roads and planning, while police, schools and hospitals belong to central government. The town lies on the north-eastern shore of Lake Wakatipu at 310 m with mountains on every side: the ski fields of The Remarkables and Coronet Peak open in winter, the Skyline gondola climbs from the centre to Bob's Peak, and bungy jumping became a business at the Kawarau bridge; Arrowtown and Wānaka lie in the same district and Milford Sound is the end of a long day trip. Tourism is the whole of its economy, housing is the least affordable in the country with an average price over NZ$1.7 million by late 2022, and the shortage of housing is a standing local problem; the airport lies east of town, while Christchurch and Dunedin are each hundreds of kilometres away. Newcomers most often go wrong by taking Queenstown for a city, when it is a town of under thirty thousand priced like an international resort.",
@@ -2490,8 +2580,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   dunedin: {
+    // identity sources: 新西兰统计局（Stats NZ）《Subnational population estimates》**年度**发布，覆盖截至当年 6 月 30 日的估计，
+    //   最近一期 2025-10-29 发布（基准 2025-06-30），下一期预计 2026-10。region / territorial authority / urban area
+    //   三档口径都在同一份里。2026-09-08 核。
+    //   **新西兰官方没有与美国 MSA 对等的「都会区」口径** —— 本项目今后统一用「城区人口（Stats NZ urban area）」、
+    //   「XX 市议会辖区人口（territorial authority）」、「XX 大区人口（region）」三种可追溯到官方分类的说法。
+    //   达尼丁市议会辖区（territorial authority，约 3,286 km²，绝大部分是农村）2025 年约 **133,000**；
+    //   **Stats NZ 官方城区（urban area）只有约 104,000**（3 级转引 Stats NZ，2026-09-08 核）。
+    //   **原文把辖区人口当成了「都会区」人口** —— 这类辖区面积极大、含大片农村的城市尤其要分开写，
+    //   不然会明显高估建成区规模。「南岛人口第二多」按两档口径都成立。
     identity:
-      "Dunedin is on the south-eastern coast of the South Island at the base of the Otago Peninsula, with a metropolitan population of about 130,000 — the second-largest city on the South Island. It was founded by Scottish Presbyterian settlers in the mid-19th century, and the name Dunedin is the old Scots Gaelic name for Edinburgh (Dùn Èideann); the street names, churches and university carry a strong Scottish stamp. The wildlife nearby — albatross, yellow-eyed penguins, sea lions — is a major draw.",
+      "Dunedin is on the south-eastern coast of the South Island at the base of the Otago Peninsula; the Dunedin City territorial authority (about 3,286 km², much of it rural) had an estimated population of about 133,000 in 2025, of which about 104,000 live in the official urban area (Stats NZ) — the second-largest city on the South Island. It was founded by Scottish Presbyterian settlers in the mid-19th century, and the name Dunedin is the old Scots Gaelic name for Edinburgh (Dùn Èideann); the street names, churches and university carry a strong Scottish stamp. The wildlife nearby — albatross, yellow-eyed penguins, sea lions — is a major draw.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dunedin (second city of the South Island, Otago; territorial authority ~3,286 km², larger than Rhode Island; ~132,800 June 2025; founded 1848 by Scottish settlers, name from Gaelic for Edinburgh; 1860s gold rush briefly made it NZ's largest city; University of Otago 1869, oldest in NZ, "Scarfies"; Baldwin Street the world's steepest residential street; Otago Peninsula albatross and penguins; Dunedin sound)
     howItWorks:
       "Dunedin is the second city of New Zealand's South Island in the Otago region, governed by the Dunedin City Council over about 3,286 km², larger than the American state of Rhode Island, with about 132,800 people in June 2025; the council runs waste, roads and planning, while police, schools and hospitals belong to central government. Settlers of the Free Church of Scotland founded the city in 1848 and named it from the Gaelic for Edinburgh, and the Octagon and the Victorian railway station are of that time; the Otago gold rush of the 1860s briefly made it the largest city in New Zealand, and the stone buildings are what that money left. The University of Otago, founded in 1869, is the oldest in the country, its students' 'Scarfie' culture and the Dunedin sound of the 1980s the city's other face; Baldwin Street is the steepest residential street in the world, the Otago Peninsula holds royal albatross and yellow-eyed penguin colonies, and the airport lies south at Momona. Newcomers most often go wrong by taking Dunedin for a small city, when its territory is larger than some countries' provinces and farms and coastline lie beyond the town.",
@@ -4383,11 +4482,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   oslo: {
+    // identity sources: 奥斯陆 kommune 2026 年二季度 **729,437**；**Oslo tettsted 2026-01-01 为 1,119,478，在 SSB 官方城区表里列第 1**
+    //   —— SSB（1 级，2026-09-08 核）。
+    //   **「都会区」不是 SSB 的口径**：原文的 100 万实际对应 tettsted，标签错了、数字也过期。
+    //   **「奥斯陆地区约 160 万」查无 SSB 单一口径** —— 那对应的是 Osloregionen（一个约 65 个市镇组成的
+    //   跨市镇政治合作联盟，非 SSB）或政府白皮书里的 Stor-Oslo 概念，两者定义不同，数字从约 150 万到
+    //   约 210 万不等（一份 2020 年 Stor-Oslo 数据是 1,546,706）。**不是可以钉死的官方数字，已改写成不带精确值的说法。**
     identity:
-      "Oslo is the capital and largest city of Norway, with a metro area of about 1 million, at the innermost end of the Oslofjord, ringed on three sides by forested hills. It is one of the older Scandinavian capitals (its founding goes back to the 11th century), and it has changed a great deal in the last two or three decades with a new waterfront district, an opera house and a set of new museums.",
+      "Oslo is the capital and largest city of Norway, with a municipal population of about 730,000 (Q2 2026, SSB) and an urban-area (tettsted) population of about 1.12 million (1 January 2026), at the innermost end of the Oslofjord, ringed on three sides by forested hills. It is one of the older Scandinavian capitals (its founding goes back to the 11th century), and it has changed a great deal in the last two or three decades with a new waterfront district, an opera house and a set of new museums.",
     // howItWorks sources: Wikipedia (2026-09): Oslo (municipality + county; parliamentary byråd since 1986; 15 bydeler with elected councils; 454 km², two-thirds Marka; ~720,000 2024; Greater Oslo ~1.1 million; region ~1.6 million; Ruter); Municipalities of Norway
     howItWorks:
-      "Oslo is both a municipality and a county, the two governments combined in one; since 1986 it has had a parliamentary system in which a city government (byråd) formed by the council majority governs and the mayor is a ceremonial head, and it is divided into fifteen boroughs (bydeler), each with an elected council responsible for kindergartens, elder care and social services. Norwegian municipalities run primary schools, kindergartens, elder care and planning, counties run upper secondary schools, county roads and the public transport companies, and the state runs hospitals, police and universities. The city covers about 454 km², two-thirds of it the protected forest of Marka, with about 720,000 people in 2024, while the Greater Oslo urban area holds about 1.1 million and the Oslo region about 1.6 million, with Bærum and Lillestrøm as independent municipalities in Akershus county. The fjord and the forest are the two natural boundaries, and the Akerselva river is the east–west divide in local minds: Frogner to the west is the wealthy old quarter, Grünerløkka to the east an old workers' district turned fashionable, and the Barcode towers at Bjørvika the new waterfront. Ruter's metro, trams, buses and ferries are priced by zone, and the toll ring keeps cars out. Gardermoen airport lies about 50 km north. Addresses give street, number and four-digit postcode. Newcomers most often go wrong by picturing Oslo as a compact city, when two-thirds of its territory is forest.",
+      "Oslo is both a municipality and a county, the two governments combined in one; since 1986 it has had a parliamentary system in which a city government (byråd) formed by the council majority governs and the mayor is a ceremonial head, and it is divided into fifteen boroughs (bydeler), each with an elected council responsible for kindergartens, elder care and social services. Norwegian municipalities run primary schools, kindergartens, elder care and planning, counties run upper secondary schools, county roads and the public transport companies, and the state runs hospitals, police and universities. The city covers about 454 km², two-thirds of it the protected forest of Marka, with about 730,000 people in Q2 2026, while the official SSB urban area (tettsted) held about 1.12 million on 1 January 2026; the wider commuting belt is often called the Oslo region, but that is a boundary drawn by a cross-municipal partnership rather than a single official SSB tier, and estimates range from about 1.5 to 2 million depending on how many municipalities are counted, with Bærum and Lillestrøm as independent municipalities in Akershus county. The fjord and the forest are the two natural boundaries, and the Akerselva river is the east–west divide in local minds: Frogner to the west is the wealthy old quarter, Grünerløkka to the east an old workers' district turned fashionable, and the Barcode towers at Bjørvika the new waterfront. Ruter's metro, trams, buses and ferries are priced by zone, and the toll ring keeps cars out. Gardermoen airport lies about 50 km north. Addresses give street, number and four-digit postcode. Newcomers most often go wrong by picturing Oslo as a compact city, when two-thirds of its territory is forest.",
     layout:
       "Oslo is on flat ground at the head of the fjord, with the centre running from the central station along Karl Johans gate to the Royal Palace, past the parliament, the university and the national theatre. The Bjørvika waterfront district has the opera house (you can walk up the roof), the Munch Museum and the public library. Behind the city is the great forest, the Marka, reached by metro for hiking or cross-country skiing, and small islands in the fjord are reachable by ferry.",
     gettingAround:
@@ -4487,9 +4592,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   但不是 SSB 的单一官方口径 —— 下一轮要么找到官方口径，要么改成不带数字的表述。
     identity:
       "Bergen is the second-largest city in Norway and the centre of the western fjord region, with a municipal population of about 295,000 (Q2 2026, SSB), ringed by seven mountains and facing a fjord out to the open sea. In the Middle Ages it was an important Hanseatic League trading post in northern Europe, prospering on dried-cod trade, and the row of coloured wooden merchant houses on the wharf (Bryggen) is a World Heritage Site. It is also the rainiest big city in Norway, with about 240 rainy days a year.",
-    // howItWorks sources: Wikipedia (2026-09): Bergen (parliamentary byråd since 2000; 8 bydeler; 465 km²; ~294,000 2024; Vestland capital 2020; metro ~450,000; Bryggen UNESCO 1979; Bybanen 2010; ~240 precipitation days); Municipalities of Norway
+    // howItWorks sources: 卑尔根 kommune 2026 年二季度 **295,009**；**Bergen tettsted 2026-01-01 为 274,589，SSB 官方城区排名第 2**
+    //   （1 级，2026-09-08 核）。
+    //   **上一轮把「都会区约 45 万」判为 unknown 留着，这一轮查清了：SSB 没有这一档。**
+    //   45 万对应的是第三方/媒体聚合的 Bergen storbyregion（约 43.8—46.9 万，2024），**不是 SSB 的表**，
+    //   且与 tettsted 的 27.5 万相差悬殊、不能互相替代 —— 已删掉硬数字。
+    //   **处理方式与奥胡斯「东日德兰的都会区约 140 万」一致：口径是编的，数字再精确也没意义。**
     howItWorks:
-      "Bergen is Norway's second city and, since 2020, the capital of Vestland county; it has had a parliamentary system since 2000, with a city government (byråd) formed by the council majority, and is divided into eight boroughs (bydeler). The municipality runs primary schools, kindergartens and planning, the county runs upper secondary schools and the transport company Skyss, and the state runs hospitals and police. The municipality covers about 465 km² with about 294,000 people in 2024 and about 450,000 in the metropolitan area. The city is enclosed by seven mountains at the head of a bay: the Hanseatic wooden houses of Bryggen were inscribed as World Heritage in 1979, the fish market stands at the head of Vågen harbour, Torgallmenningen is the central square, the Fløibanen funicular lifts people up to see the whole, and the Bybanen light rail opened in 2010 joins airport, centre and Fyllingsdalen. Precipitation falls on about 240 days a year, and the raincoat is daily wear. The Bergen dialect and the self-image that 'Bergen is not Norway' are the city's character; the Hurtigruten coastal ships sail from here and the Bergen Line runs to Oslo. Addresses give street, number and four-digit postcode beginning with 50. Newcomers most often go wrong by taking Bergen for a gateway to the fjords, when it is a city with seven hundred years of identity of its own.",
+      "Bergen is Norway's second city and, since 2020, the capital of Vestland county; it has had a parliamentary system since 2000, with a city government (byråd) formed by the council majority, and is divided into eight boroughs (bydeler). The municipality runs primary schools, kindergartens and planning, the county runs upper secondary schools and the transport company Skyss, and the state runs hospitals and police. The municipality covers about 465 km² with about 295,000 people in Q2 2026 and an official urban area (tettsted) of about 275,000 on 1 January 2026, the second-largest in the country; the wider commuting belt is sometimes called Greater Bergen, but that is not a single official SSB tier. The city is enclosed by seven mountains at the head of a bay: the Hanseatic wooden houses of Bryggen were inscribed as World Heritage in 1979, the fish market stands at the head of Vågen harbour, Torgallmenningen is the central square, the Fløibanen funicular lifts people up to see the whole, and the Bybanen light rail opened in 2010 joins airport, centre and Fyllingsdalen. Precipitation falls on about 240 days a year, and the raincoat is daily wear. The Bergen dialect and the self-image that 'Bergen is not Norway' are the city's character; the Hurtigruten coastal ships sail from here and the Bergen Line runs to Oslo. Addresses give street, number and four-digit postcode beginning with 50. Newcomers most often go wrong by taking Bergen for a gateway to the fjords, when it is a city with seven hundred years of identity of its own.",
     layout:
       "Bergen's old town wraps around the Vågen harbour, with the gabled wooden houses of Bryggen on the east side and the fish market at the head. The city is hemmed in by mountains and can only spread along valleys and the shore. The funicular station for Mount Fløyen is right by the centre, a few minutes up to a view over the city and fjord. The higher Mount Ulriken has a cable car.",
     gettingAround:
@@ -4528,8 +4638,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   trondheim: {
+    // identity sources: 特隆赫姆 kommune 2026 年二季度 **218,787**，**按市镇人口计为全国第三大市镇**（成立）；
+    //   tettsted 2026-01-01 为 **202,397**，**在 SSB 官方城区表里列第 4** —— SSB（1 级，2026-09-08 核）。
+    //   **原文把「全国第三」的名次和 tettsted 口径的数字拼在一起**，读者会以为按同一档既是第三又是 20 万。
+    //   这与斯塔万格「约 36 万人的城区 + 第三大城市连绵区」是同一形状的错。
     identity:
-      "Trondheim is the centre of the Trøndelag region of central Norway and the country's third-largest city, with a metro area of about 200,000, where the Nidelva river meets the Trondheimsfjord. It was Norway's first capital and the most important medieval pilgrimage destination — Nidaros Cathedral is built over the grave of King Olav II, venerated as a saint, and is the largest medieval church in northern Europe. Today it is a university and technology city.",
+      "Trondheim is the centre of the Trøndelag region of central Norway and with a municipal population of about 219,000 (Q2 2026, SSB) — Norway's third-largest municipality on that measure — and an urban-area (tettsted) population of about 202,000 (1 January 2026), where the Nidelva river meets the Trondheimsfjord. It was Norway's first capital and the most important medieval pilgrimage destination — Nidaros Cathedral is built over the grave of King Olav II, venerated as a saint, and is the largest medieval church in northern Europe. Today it is a university and technology city.",
     // howItWorks sources: Wikipedia (2026-09): Trondheim (merged with Klæbu 2020; 218,460 Jan 2026; Trøndelag seat; Nidaros 997, capital until 1217; 1681 fire Cicignon grid; NTNU ~40,000; AtB; Værnes 35 km); Municipalities of Norway
     howItWorks:
       "Trondheim is Norway's third city and the seat of Trøndelag county, merged with Klæbu in 2020, with about 218,000 people in 2026. The municipality runs primary schools, kindergartens and planning, the county runs upper secondary schools and the transport company AtB, and the state runs hospitals, police and the university. It is Nidaros, founded in 997 by the Viking king Olav Tryggvason and Norway's capital until 1217; Nidaros Cathedral is the most important medieval pilgrimage site in the Nordic countries, and the St Olav's Ways still lead here. The Nidelva loops around the centre: inside the bend lies the grid of broad streets laid out by Cicignon after the great fire of 1681, the Old Town Bridge crosses to the wooden houses of Bakklandet, and Solsiden is an old shipyard turned new quarter. NTNU, with about 40,000 students, is the country's largest university, SINTEF stands beside it, and students make up a quarter of the city. The Gråkallbanen tram is among the northernmost tramways in the world. Værnes airport lies about 35 km north-east, and the Dovre Line runs to Oslo. Addresses give street, number and four-digit postcode beginning with 70. Newcomers most often go wrong by taking Trondheim for a quiet cathedral town, when it is a technology city where a quarter of the people are students.",
@@ -4595,11 +4709,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   tromso: {
+    // identity sources: 特罗姆瑟 kommune 2026 年二季度 **79,932**（SSB，1 级，2026-09-08 核）。
+    //   **原文的「都会区约 7.7 万」在任何官方口径下都不对**：SSB 自 2013 年起把特罗姆瑟的建成区拆成三个
+    //   独立城区（Tromsø / Tromsdalen / Kvaløysletta），特罗姆瑟岛本体 2026-01-01 为 43,835，三者合计约 7.05 万。
+    //   「北极挪威人口最多」按 kommune 成立（远超博德 53,671、阿尔塔 22,155、纳尔维克 21,651）；
+    //   **有意思的是按最窄的单一城区口径，特罗姆瑟 2026 年才首次反超博德**（43,835 vs 43,446，NRK 称
+    //   「自 2012 年以来首次」）—— 同一个「谁更大」的问题，换一档口径答案就不同。
     identity:
-      "Tromsø is in northern Norway about 350 km north of the Arctic Circle, the largest city in Arctic Norway, with a metro area of about 77,000, on a small island in a fjord. Historically it was the departure port for Arctic exploration and hunting, and it is called the 'Paris of the North', with one of the world's northernmost universities, cathedrals, botanic gardens and breweries. It is one of the most convenient cities for seeing the northern lights and the midnight sun.",
+      "Tromsø is in northern Norway about 350 km north of the Arctic Circle, the most populous municipality in Arctic Norway (about 80,000, Q2 2026, SSB), on a small island in a fjord. Historically it was the departure port for Arctic exploration and hunting, and it is called the 'Paris of the North', with one of the world's northernmost universities, cathedrals, botanic gardens and breweries. It is one of the most convenient cities for seeing the northern lights and the midnight sun.",
     // howItWorks sources: Wikipedia (2026-09): Tromsø (~2,520 km²; ~80,000 2024; Troms capital; Tromsøya island, bridge 1960, tunnel to Kvaløya; UiT 1968; midnight sun 19 May–27 July; polar night late Nov–mid Jan; Langnes airport; buses only); Municipalities of Norway
     howItWorks:
-      "Tromsø is the largest city in Norway north of the Arctic Circle and the seat of Troms county; the municipality covers about 2,520 km², most of it mountain and island, with about 80,000 people in 2024. The municipality runs primary schools, kindergartens and planning, the county runs upper secondary schools and buses, and the state runs hospitals, police and the university. The centre lies on the island of Tromsøya, joined by the Tromsø Bridge of 1960 to Tromsdalen and the Arctic Cathedral on the mainland and by an undersea tunnel to Kvaløya to the west, with the wooden houses of the centre mostly built between 1789 and 1904. The University of Tromsø founded in 1968, the 'Arctic University', and the University Hospital of North Norway make it the educational and medical centre of the whole north and a base for polar research. The sun does not set from 19 May to 27 July, the polar night lasts from late November to mid-January, the winter aurora is the largest tourist industry, and the Hurtigruten ships call here. Sámi history and present-day life are part of the city. Public transport is buses only, and Langnes airport lies on the island itself. Addresses give street, number and four-digit postcode beginning with 90. Newcomers most often go wrong by picturing Tromsø as a polar outpost, when it is a northern capital of 80,000 with a university and a hospital.",
+      "Tromsø is the largest city in Norway north of the Arctic Circle and the seat of Troms county; the municipality covers about 2,520 km², most of it mountain and island, with about 80,000 people in Q2 2026. The municipality runs primary schools, kindergartens and planning, the county runs upper secondary schools and buses, and the state runs hospitals, police and the university. The centre lies on the island of Tromsøya, joined by the Tromsø Bridge of 1960 to Tromsdalen and the Arctic Cathedral on the mainland and by an undersea tunnel to Kvaløya to the west, with the wooden houses of the centre mostly built between 1789 and 1904. The University of Tromsø founded in 1968, the 'Arctic University', and the University Hospital of North Norway make it the educational and medical centre of the whole north and a base for polar research. The sun does not set from 19 May to 27 July, the polar night lasts from late November to mid-January, the winter aurora is the largest tourist industry, and the Hurtigruten ships call here. Sámi history and present-day life are part of the city. Public transport is buses only, and Langnes airport lies on the island itself. Addresses give street, number and four-digit postcode beginning with 90. Newcomers most often go wrong by picturing Tromsø as a polar outpost, when it is a northern capital of 80,000 with a university and a hospital.",
     layout:
       "Tromsø's old town is on the east side of Tromsø Island, wooden houses and shops along the shore, with a long bridge and a subsea tunnel to the mainland side. On the mainland side a cable car (Fjellheisen) goes up in a few minutes to 420 m for a panorama of the city, fjord and mountains. The landmark 'Arctic Cathedral' is actually a modern triangular church on the mainland side. Around the city are sharp snow peaks and fjords.",
     gettingAround:
@@ -5109,8 +5229,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   milan: {
+    // identity sources: 米兰大都会市（Città Metropolitana di Milano，2015 年取代省而设，辖 133 个市镇）
+    //   **3,246,455 人（2025-01-01）**，另有 2026-05-31 的月度更新页显示 3,258,021 ——
+    //   大都会市自己的统计办公室（2 级，2026-09-08 核）。米兰 comune 本身约 140 万。
+    //   **「都会区」不是 ISTAT 的称谓** —— 仓库里都灵/那不勒斯/巴里已经在用「大都会市」这个正确说法，
+    //   米兰与博洛尼亚是仅剩的两处旧措辞，本轮统一。
     identity:
-      "Milan is on the Po Valley in north-western Italy, with a metro area of about 3.2 million — Italy's financial, fashion and design centre, host of international fashion weeks and furniture fairs. The city has a long history (Leonardo's Last Supper is painted on the refectory wall of a monastery here), but overall feels modern and among the most commercially oriented of Italian cities.",
+      "Milan is on the Po Valley in north-western Italy, where the Metropolitan City of Milan (133 communes) has about 3.25 million people (1 January 2025) — Italy's financial, fashion and design centre, host of international fashion weeks and furniture fairs. The city has a long history (Leonardo's Last Supper is painted on the refectory wall of a monastery here), but overall feels modern and among the most commercially oriented of Italian cities.",
     // howItWorks sources: 米兰有两套并存的官方数：市政府户籍登记（anagrafe）2025-12-31 = 1,399,079
     //   （2024-12-31 = 1,407,044）；ISTAT 官方估计约 1,362,863。
     //   https://www.milanocittastato.it/news/abitanti-a-milano-quanti-siamo-nel-2026/（3 级，转引市政府 anagrafe，2026-09-08 核）。
@@ -5133,8 +5258,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   turin: {
+    // identity sources: 都灵 comune 2026 年约 86 万；**都灵大都会市（2015 年取代省而设，辖 312 个市镇）约 220 万** ——
+    //   与同条目 howItWorks 已有的核实一致，2026-09-08 复核。
+    //   **「都会区」不是 ISTAT 的称谓**，identity 原本用它配了一个对不上的 180 万；
+    //   **同一条口径问题在一个条目里往往出现两次，修的时候要把整个条目搜一遍。**
     identity:
-      "Turin is in the upper Po valley in north-western Italy, with a metro area of about 1.8 million — the birthplace of Italian unification and the country's first capital (1861–1865), and the home of Fiat's car industry. The city has regular Baroque streets and extensive arcades, hosted the 2006 Winter Olympics, and backs onto the Alps — on a clear day you can see snow mountains from the centre.",
+      "Turin is in the upper Po valley in north-western Italy, where the Metropolitan City of Turin (312 communes) has about 2.2 million people — the birthplace of Italian unification and the country's first capital (1861–1865), and the home of Fiat's car industry. The city has regular Baroque streets and extensive arcades, hosted the 2006 Winter Olympics, and backs onto the Alps — on a clear day you can see snow mountains from the centre.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Turin (comune 130 km²; ~855,700 2026; 8 circoscrizioni; Metropolitan City of Turin ~2.2 million; Piedmont capital; Po; Baroque grid; Mole Antonelliana 167 m; Savoy residences UNESCO 1997; Fiat/Lingotto; metro 1 line; 2006 Olympics; first capital of Italy 1861–65)
     howItWorks:
       "Turin is the capital of Piedmont, governed by a mayor and council with eight boroughs (circoscrizioni); the commune covers about 130 km² with about 856,000 people in 2026, while the Metropolitan City of Turin, which replaced the province in 2015, has 312 communes and about 2.2 million people. From 1861 to 1865 it was the first capital of the Kingdom of Italy, and the Baroque grid and palaces left by the House of Savoy were inscribed as World Heritage in 1997, with Piazza Castello as the point of reference and the Mole Antonelliana rising 167 m; the Po runs along the east of the city and the Alps stand on the skyline 50 km west; the Lingotto works and the Mirafiori plant of Fiat lie to the south as the birthplace of the Italian car industry, one metro line serves the city, and the Winter Olympics were held here in 2006. Newcomers most often go wrong by taking Turin for an industrial city, when its centre is a royal capital with more than ten kilometres of arcaded streets.",
@@ -5174,8 +5303,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   bologna: {
+    // identity sources: 博洛尼亚大都会市（Città Metropolitana di Bologna，55 个市镇）**1,024,290 人（2026-01-01 估计，ISTAT）**；
+    //   博洛尼亚 comune 本身约 391,473（2026-01-01）——3 级转引 ISTAT，2026-09-08 核。
+    //   数字与同条目 howItWorks 一致，**本轮只是把「都会区」统一改成「大都会市（Città Metropolitana）」**，
+    //   并补上此前缺的 identity 来源留痕。
     identity:
-      "Bologna is on the edge of the Po Valley at the northern foot of the Apennines in north-eastern Italy, with a metro area of about 1 million — the capital of Emilia-Romagna. It is home to the world's oldest continuously operating university (the University of Bologna, founded in 1088), and is widely regarded as one of Italy's gastronomic capitals — Bolognese ragù, Parmesan cheese and Parma ham all come from this area.",
+      "Bologna is on the edge of the Po Valley at the northern foot of the Apennines in north-eastern Italy, where the Metropolitan City of Bologna (55 communes) has about 1.02 million people (1 January 2026 estimate, ISTAT) — the capital of Emilia-Romagna. It is home to the world's oldest continuously operating university (the University of Bologna, founded in 1088), and is widely regarded as one of Italy's gastronomic capitals — Bolognese ragù, Parmesan cheese and Parma ham all come from this area.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bologna (comune 140.9 km²; ~390,700; 6 quartieri; Metropolitan City of Bologna 55 comuni ~1 million; Emilia-Romagna capital; porticoes UNESCO 2021, ~38 km in the centre; Two Towers; university 1088 oldest; Centrale high-speed junction; Marconi airport with monorail)
     howItWorks:
       "Bologna is the capital of Emilia-Romagna, governed by a mayor and council with six boroughs (quartieri); the commune covers about 141 km² with about 391,000 people, while the Metropolitan City of Bologna, which replaced the province, has 55 communes and about a million people. The porticoes are the city's form: some 38 km of continuous arcades in the centre were inscribed as World Heritage in 2021, letting one cross half the city in the rain without an umbrella, the Two Towers lean in the middle of the old town and Piazza Maggiore is the point of reference; the University of Bologna, founded in 1088, is the oldest in continuous operation in the world, and its students keep the city younger than its surroundings; Bologna Centrale is the crossing of Italy's north-south and east-west high-speed lines, a monorail runs from Marconi airport to the station, and ragù and ham are the daily fare of the district. Newcomers most often go wrong by taking Bologna for a transfer station, when it is Italy's food capital and its oldest university town.",
@@ -5192,11 +5325,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   naples: {
-    // identity sources: 那不勒斯 comune 905,050（基准日 2026-01-01，ISTAT，2026-03-30 更新，经 tuttitalia 转引，3 级，2026-09-08 核）；
-    //   那不勒斯大都会市约 295 万（**行政建制，不是统计口径**）。
-    //   **发布节奏**：ISTAT 人口按月滚动 + 年度定案，基准日多为 1 月 1 日，当年数约次年 3 月上线。
+    // identity sources: 那不勒斯 comune 约 90 万；**那不勒斯大都会市（2015 年取代省而设，辖 92 个市镇）约 295 万**，
+    //   是欧洲人口最密集的地区之一 —— 与同条目 howItWorks 及既有注释一致，2026-09-08 复核。
+    //   **注释里早已标明「行政建制，不是统计口径」，正文 identity 却还在用「都会区」** ——
+    //   典型的 C6-h（注释写对了、正文没同步）。
     identity:
-      "Naples is on the Bay of Naples in southern Italy, with a metro area of about 3 million — the largest city in southern Italy and one of the oldest cities in the Mediterranean (founded by Greeks in the 6th century BC). It is the birthplace of the Margherita pizza, and the city's character is loud, dense and full of everyday street life, in sharp contrast to the order of northern cities. Mount Vesuvius sits across the bay, and its eruption in 79 AD buried the city of Pompeii.",
+      "Naples is on the Bay of Naples in southern Italy, where the Metropolitan City of Naples (92 communes) has about 2.95 million people — the largest city in southern Italy and one of the oldest cities in the Mediterranean (founded by Greeks in the 6th century BC). It is the birthplace of the Margherita pizza, and the city's character is loud, dense and full of everyday street life, in sharp contrast to the order of northern cities. Mount Vesuvius sits across the bay, and its eruption in 79 AD buried the city of Pompeii.",
     // howItWorks sources: Wikipedia (2026-09): Naples (10 municipalità; ~119 km²; ~905,000 2026; Metropolitan City 92 comuni ~2.95 million; centro storico UNESCO 1995; funiculars; metro 1/2/6); Comune
     howItWorks:
       "Naples is the capital of Campania, governed by a mayor and council, with ten boroughs (municipalità); the commune covers about 119 km² with about 905,000 people, Italy's third city, while the Metropolitan City of Naples, which replaced the province in 2015, has 92 communes and about 2.95 million people, among the densest areas in Europe. The old town follows the Greek and Roman grid, split down the middle by the straight street of Spaccanapoli, and was inscribed as World Heritage in 1995; the Quartieri Spagnoli lie on its western flank, Vomero on the hill above, Chiaia and Posillipo are the wealthy quarters along the sea, and the Centro Direzionale is the tower cluster of the 1980s. Funiculars join the hill to the lower city, and metro lines 1, 2 and 6 serve the city. Vesuvius stands to the south-east and the Campi Flegrei volcanic field to the west, with the city between them. Addresses give street, number and postcode. Newcomers most often go wrong by taking the din of the old town for the whole city, when the Naples of the hill and the seafront keeps another order.",
@@ -5236,8 +5370,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   palermo: {
+    // identity sources: 巴勒莫 comune 2026 年约 63 万；**巴勒莫大都会市（82 个市镇）约 120 万** ——
+    //   与同条目 howItWorks 一致，2026-09-08 复核。identity 原本写「都会区约 130 万」，称谓与数字都不对。
     identity:
-      "Palermo is the capital of Sicily, on a bay on the island's north-west coast, with a metro area of about 1.3 million. It was ruled in turn by Phoenicians, Greeks, Romans, Arabs and Normans, and its architecture and culture blend several Mediterranean traditions — the Norman-Arab palaces and churches are Palermo's most distinctive landmark, listed as a World Heritage Site.",
+      "Palermo is the capital of Sicily, on a bay on the island's north-west coast, where the Metropolitan City of Palermo (82 communes) has about 1.2 million people. It was ruled in turn by Phoenicians, Greeks, Romans, Arabs and Normans, and its architecture and culture blend several Mediterranean traditions — the Norman-Arab palaces and churches are Palermo's most distinctive landmark, listed as a World Heritage Site.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Palermo (comune 161 km²; 626,273 2026; 8 circoscrizioni; Metropolitan City of Palermo ~1.2 million; capital of the autonomous Sicilian Region with its own parliament; Arab-Norman UNESCO 2015 with Monreale and Cefalù in other comuni; Quattro Canti; Ballarò/Vucciria/Capo markets; Mondello in comune; Punta Raisi airport ~35 km)
     howItWorks:
       "Palermo is the capital of Sicily, an autonomous region of Italy with a parliament and legislative powers of its own; the commune is governed by a mayor and council with eight boroughs, covering about 161 km² with about 626,000 people in 2026, and the metropolitan city has 82 communes and about 1.2 million. The city lies in a mountain-ringed basin called the Conca d'Oro, the Quattro Canti marks the crossing of the old town's two main streets, and the markets of Ballarò, Vucciria and Capo still cry their wares in the Arab manner; the 'Arab-Norman Palermo' inscribed as World Heritage in 2015 includes the Palatine Chapel in the royal palace, but the cathedral of Monreale in the same listing stands 8 km away in another commune and Cefalù further along the coast; Mondello beach lies at the northern edge of the commune and the airport 35 km west. Newcomers most often go wrong by expecting Monreale inside Palermo, when it is another commune up the hill.",
