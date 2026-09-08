@@ -20,8 +20,10 @@ import { getAllRoutes, resolveRouteWaypoints } from "../lib/routes.ts";
 import { getRouteNarration } from "../lib/route-narration.ts";
 import { estimateSpeechDurationSec } from "../lib/speech.ts";
 import {
+  buildHeightProfile,
   planRouteFlight,
   sampleFlight,
+  MAX_SPEED_OVER_HEIGHT,
   type FlightCurve,
   type Vec3,
 } from "../lib/cesium/route-flight.ts";
@@ -31,8 +33,8 @@ import { buildAnchoringForNarration } from "../lib/route-anchors.ts";
 import { splitSentences } from "../lib/sentences.ts";
 
 // ── 阈值 ──────────────────────────────────────────────────────────────
-/** 每秒扫过的距离 / 取景高度。0.6 意味着画面最快约 1.7 秒换一遍 */
-const MAX_SPEED_OVER_HEIGHT = 0.6;
+// 「每秒扫过几个取景高度」的上限从 route-flight.ts 取（那边同时拿它当取景高度的地板），
+// 两边写死成两个数就会重演下面这个坑。
 /** 加速度上限，按「每秒改变多少个取景高度」计 */
 const MAX_ACCEL_OVER_HEIGHT = 1.2;
 /** 转向速率上限（度/秒） */
@@ -175,6 +177,7 @@ for (const route of getAllRoutes()) {
   };
 
   // 按帧采样，量速度 / 加速度 / 转向速率
+  const heightAt = buildHeightProfile(curve);
   const frames = Math.max(2, Math.round(plan.durationSec * FPS));
   const dt = plan.durationSec / frames;
   let prevPos: Vec3 | null = null;
@@ -183,11 +186,22 @@ for (const route of getAllRoutes()) {
   let maxSpeed = 0;
   let maxAccel = 0;
   let maxTurn = 0;
+  // 分母必须是**当时的**取景高度，不是巡航高度。起降段高度会压到 26 km，
+  // 拿巡航高度当分母的话，落地前那十几秒无论多快都算不出超标 ——
+  // 实测 52 条航线在下降段超红线、最高 3.25 个高度/秒，旧口径一条都没报。
+  let frameFrac = 0;
+  let fracAtP = 0;
   for (let f = 0; f <= frames; f++) {
-    const { position, heading } = sampleFlight(curve, f / frames);
+    const p = f / frames;
+    const { position, heading } = sampleFlight(curve, p);
     if (prevPos) {
       const speed = dist3(prevPos, position) / dt;
       maxSpeed = Math.max(maxSpeed, speed);
+      const frac = speed / heightAt(p);
+      if (frac > frameFrac) {
+        frameFrac = frac;
+        fracAtP = p;
+      }
       if (f > 1) maxAccel = Math.max(maxAccel, Math.abs(speed - prevSpeed) / dt);
       let dh = heading - prevHeading;
       while (dh > Math.PI) dh -= 2 * Math.PI;
@@ -199,11 +213,10 @@ for (const route of getAllRoutes()) {
     prevHeading = heading;
   }
 
-  const frameFrac = maxSpeed / plan.cruiseHeightM;
   if (frameFrac > MAX_SPEED_OVER_HEIGHT) {
     fail(
       route.id,
-      `地速过快：${(maxSpeed / 1000).toFixed(1)} km/s 相对取景高度 ${(plan.cruiseHeightM / 1000).toFixed(0)} km，每秒扫过 ${frameFrac.toFixed(2)} 个高度`,
+      `地速过快：p=${fracAtP.toFixed(3)} 处取景高度 ${(heightAt(fracAtP) / 1000).toFixed(0)} km，每秒扫过 ${frameFrac.toFixed(2)} 个高度`,
     );
   }
   if (maxAccel / plan.cruiseHeightM > MAX_ACCEL_OVER_HEIGHT) {

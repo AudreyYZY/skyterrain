@@ -89,11 +89,14 @@ const CLIMB_FRAC = 0.07;
 const DESCENT_FRAC = 0.13;
 
 /**
- * 某个进度处的取景高度（米）：起飞爬升 → 巡航 → 进近下降。
- * 两端用 smoothstep 过渡，不会出现高度突变。
+ * 每秒扫过的距离 / 取景高度的上限。0.6 意味着画面最快约 1.7 秒换一遍。
+ * `check:flight` 从这里取阈值 —— 它既是自检的断言值，也是取景高度的地板，
+ * 两边必须是同一个数，否则自检又会放过它拦不住的那一段。
  */
-export function cameraHeightAt(p: number, cruiseHeightM: number): number {
-  const q = clamp(p, 0, 1);
+export const MAX_SPEED_OVER_HEIGHT = 0.6;
+
+/** 起降段的取景高度剖面（米）：起飞爬升 → 巡航 → 进近下降，两端 smoothstep 过渡 */
+function terminalHeightProfile(q: number, cruiseHeightM: number): number {
   if (q < CLIMB_FRAC) {
     return TERMINAL_HEIGHT + (cruiseHeightM - TERMINAL_HEIGHT) * smoothstep(q / CLIMB_FRAC);
   }
@@ -101,6 +104,79 @@ export function cameraHeightAt(p: number, cruiseHeightM: number): number {
     return TERMINAL_HEIGHT + (cruiseHeightM - TERMINAL_HEIGHT) * smoothstep((1 - q) / DESCENT_FRAC);
   }
   return cruiseHeightM;
+}
+
+/**
+ * 进度 p 处镜头的实际地速（米/秒）。
+ *
+ * **必须量曲线上的位移，不能拿 `progressToDistance` 的导数代替**：那个是沿航点
+ * 折线的弧长，而镜头走的是巡航高度上的 Catmull-Rom 样条，两者实测差到 1.83 倍
+ * （中位 1.38）—— 用弧长当地速去压取景高度，压出来的高度会低一截，红线照样破。
+ *
+ * 探针宽度取一帧，前后差分取大的那个：宁可高估，低估就压不住。
+ */
+export function curveSpeedAt(curve: FlightCurve, p: number): number {
+  const { durationSec } = curve.plan;
+  if (durationSec <= 0) return 0;
+  const dp = 1 / Math.max(1, 60 * durationSec);
+  const q = clamp(p, 0, 1);
+  const here = sampleFlight(curve, q).position;
+  const back =
+    q > dp ? dist3(here, sampleFlight(curve, q - dp).position) / (dp * durationSec) : 0;
+  const fwd =
+    q < 1 - dp ? dist3(sampleFlight(curve, q + dp).position, here) / (dp * durationSec) : 0;
+  return Math.max(back, fwd);
+}
+
+function dist3(a: Vec3, b: Vec3): number {
+  return Math.hypot(a.x - b.x, a.y - b.y, a.z - b.z);
+}
+
+/**
+ * 地板留的余量。地板的探针格点与实际渲染帧、与 check:flight 的采样格点都不完全重合，
+ * 不留余量就会正好卡在 0.60 上下抖动 —— 自检报「0.60 超过 0.6」这种没法修的失败。
+ */
+const HEIGHT_FLOOR_MARGIN = 1.05;
+
+/**
+ * 整条航线的取景高度剖面：`p → 取景高度（米）`，飞行开始前算一次。
+ *
+ * 剖面的骨架是「起飞爬升 → 巡航 → 进近下降」，但**起降段还要让位于当时的地速**。
+ * 下降是按进度比例排的（最后 13%），地速是按航段排的，两者互不知情：长航线的
+ * 最后十几秒里镜头一边从 400 km 掉到 26 km、一边还在以每秒几十公里推进，实测
+ * 曾达到 3.25 个取景高度/秒（红线 0.6），52 条航线中招 —— 这就是「落地前突然糊掉」。
+ * 旧的自检看不见它，因为那边拿巡航高度当分母，而真正的分母是这里的返回值。
+ *
+ * 所以给高度加一条地板：不低于当前地速所需的高度。地速在终点停留点必然归零，
+ * 于是抵达时仍然落到 TERMINAL_HEIGHT，认得出是哪座城市。
+ *
+ * 地板逐帧算出来是锯齿状的（最后一段进近本身还有一次加减速），照着飞会「降到
+ * 一半又拉回去」，看着像镜头在犹豫。所以爬升段取前缀最大值、下降段取后缀最大值：
+ * **爬升只许往上、下降只许往下**，全程只升降各一次。
+ *
+ * 采样点与渲染帧对齐（每帧一个），`curveSpeedAt` 的探针宽度也是一帧，
+ * 相邻两个采样点因此盖住了所有帧间隔，不会漏掉某一帧的速度尖峰。
+ */
+export function buildHeightProfile(curve: FlightCurve): (p: number) => number {
+  const { cruiseHeightM, durationSec } = curve.plan;
+  const n = Math.max(2, Math.round(durationSec * 60));
+  const h = new Float64Array(n + 1);
+  for (let i = 0; i <= n; i++) {
+    const p = i / n;
+    const floor = (curveSpeedAt(curve, p) * HEIGHT_FLOOR_MARGIN) / MAX_SPEED_OVER_HEIGHT;
+    h[i] = Math.min(cruiseHeightM, Math.max(terminalHeightProfile(p, cruiseHeightM), floor));
+  }
+  const climbEnd = Math.min(n, Math.ceil(CLIMB_FRAC * n));
+  for (let i = 1; i <= climbEnd; i++) h[i] = Math.max(h[i]!, h[i - 1]!);
+  const descentStart = Math.max(0, Math.floor((1 - DESCENT_FRAC) * n));
+  for (let i = n - 1; i >= descentStart; i--) h[i] = Math.max(h[i]!, h[i + 1]!);
+
+  return (p: number): number => {
+    const x = clamp(p, 0, 1) * n;
+    const i = Math.min(n - 1, Math.floor(x));
+    const f = x - i;
+    return h[i]! + (h[i + 1]! - h[i]!) * f;
+  };
 }
 
 /** 朝向的平滑时间窗（秒）：一次大转弯至少摊在这么长的行进时间里 */
