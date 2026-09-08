@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: c2b0ea4
+lastVerifiedCommit: 76a36b2
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: c2b0ea4
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel-content 中国 12 城 identity/howItWorks 人口数字；另加一次全库中英对照扫描（中国城市人口刷新 · 批 9） | 13 | 5 / 6 / 2 | 当场修 11 条；新开 issue 2、关闭 0 |
 | 2026-09-08 | 已核实「普查数就是最新可查数字」的 4 个条目，把 howItWorks 的年份口径写明（中国城市人口刷新 · 批 8 补丁：把「2020 年人口」写成「2020 年普查人口」） | 4 | 0 / 4 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 中国 12 城 identity/howItWorks 人口数字与由人口派生的排名断言（中国城市人口刷新 · 批 8） | 19 | 1 / 18 / 0 | 当场修 19 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 中国 12 城 identity/howItWorks 人口数字（中国城市人口刷新 · 批 7） | 19 | 1 / 17 / 1 | 当场修 18 条；新开 issue 1、关闭 0 |

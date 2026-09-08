@@ -8,6 +8,7 @@
  *   C6   人口数字没有年份 —— 「上海都会区人口约 2500 万」是哪一年、什么口径？
  *   C1a  主观最高级 —— 「茶马古道最险峻的一段」这种谁也核实不了的判断
  *   C1b  排名断言没有口径 —— 横滨「日本人口第二多的市」错在把两种口径混了
+ *   D1b  「公报未单列市区人口」之后又给出一个市区人口 —— 免责声明与数字自相矛盾
  *   D4   拼接漏空格造成的粘连句 —— 「…of the flight.Easter Island lies…」
  *
  * 存量很大，一次性清不完，所以这里不是「有就报错」，而是**棘轮**：
@@ -101,6 +102,24 @@ const DEFER_EN = /\b(check|refer to|consult)\b[^.;!?]{0,60}\b(latest|current|off
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;
 
+/**
+ * D1b：**一句话里先声明「公报没有单列市区人口」，紧接着又给出一个市区人口**。
+ *
+ * 三个真实实例（吉林市 / 乐山 / 宜昌，都只在英文版里）：中文老老实实写着
+ * 「（公报未单列市区人口）」，英文却在同一句里多出一个「about 1.23 million in the
+ * urban area」——那个 123 万还是隔壁镇江条目的数字。乐山 2024 年的城镇人口实为 177.1 万，
+ * 与它对不上任何官方口径。
+ *
+ * 这不是「数字过期」也不是「查错了」，是**免责声明与数字自相矛盾**，
+ * 逐条人工核只能撞见其中两个，第三个是靠这条规则扫出来的。
+ */
+const NO_URBAN_FIGURE_ZH = /（?(?:公报)?(?:未|不)单列市(?:区|辖区)人口）?/;
+const NO_URBAN_FIGURE_EN =
+  /\bdoes not (?:report|give|publish) a separate urban[- ](?:core|district|area)\b/i;
+const HAS_URBAN_FIGURE_ZH = /市(?:区|辖区)约\s*[\d.,]+\s*万/;
+const HAS_URBAN_FIGURE_EN =
+  /\b(?:about|some|roughly)\s+[\d.,]+\s*(?:million|thousand)?\s+in the urban (?:area|core|districts?)\b/i;
+
 type Rule =
   | "C6-人口数字缺年份"
   | "C6d-数字不是最新一期"
@@ -108,6 +127,7 @@ type Rule =
   | "C6f-签证天数写死"
   | "C1a-主观最高级"
   | "C1b-排名断言缺口径"
+  | "D1b-说了没单列市区人口又给出市区人口"
   | "D4-粘连句";
 
 interface Hit {
@@ -125,6 +145,16 @@ const { segments } = await collectTtsSegments();
 
 for (const seg of segments) {
   const zh = seg.lang === "zh-CN";
+
+  const noUrban = zh ? NO_URBAN_FIGURE_ZH : NO_URBAN_FIGURE_EN;
+  const hasUrban = zh ? HAS_URBAN_FIGURE_ZH : HAS_URBAN_FIGURE_EN;
+  if (noUrban.test(seg.text) && hasUrban.test(seg.text)) {
+    hits.push({
+      ...seg,
+      rule: "D1b-说了没单列市区人口又给出市区人口",
+      sentence: seg.text.match(/.{0,40}(?:未单列|does not (?:report|give|publish) a separate).{0,90}/i)?.[0] ?? "",
+    });
+  }
 
   if (RUN_ON.test(seg.text)) {
     hits.push({ ...seg, rule: "D4-粘连句", sentence: seg.text.match(/.{0,30}[a-z)][.!?][A-Z].{0,30}/)?.[0] ?? "" });
@@ -168,6 +198,7 @@ const RULES: Rule[] = [
   "C6f-签证天数写死",
   "C1a-主观最高级",
   "C1b-排名断言缺口径",
+  "D1b-说了没单列市区人口又给出市区人口",
   "D4-粘连句",
 ];
 
