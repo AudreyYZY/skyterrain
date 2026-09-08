@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: d12ba86
+lastVerifiedCommit: 261df2b
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: d12ba86
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel-content 18 个城市条目的 identity / howItWorks 人口段（城市人口口径核实 · 比利时 9 城 + 丹麦 9 城） | 34 | 3 / 30 / 1 | 当场修 33 条；新开 issue 1、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块（地形讲解核实 · 批 2（12 篇：欧洲 4 + 中国 4 + 澳大利亚 3 + 日本 1）） | 9 | 0 / 8 / 1 | 当场修 8 条；新开 issue 1、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块，含最高级与零争议红线复核（地形讲解核实 · 批 3（12 篇：美加新西兰 4 + 中国 8）） | 9 | 6 / 3 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 芬兰 11 城、瑞典 10 城 identity 的数字与口径（芬兰 + 瑞典城市人口 · 批 1） | 16 | 0 / 16 / 0 | 当场修 16 条；新开 issue 0、关闭 0 |
