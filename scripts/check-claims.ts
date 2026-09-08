@@ -36,6 +36,7 @@ import {
 } from "./claim-rules.ts";
 
 const BASELINE_PATH = "docs/claims-baseline.json";
+const EXEMPT_PATH = "docs/claims-stale-exempt.json";
 const UPDATE = process.argv.includes("--update-baseline");
 const SHOW = Number(process.argv.find((a) => a.startsWith("--show="))?.slice(7) ?? 8);
 
@@ -161,7 +162,21 @@ interface Hit {
   sentence: string;
 }
 
+/**
+ * C6d 的豁免表：这些条目的年份**确实旧**，但已经核实过「这就是能查到的最新一期」
+ * （该级别公报不含人口 / 那年起只发户籍 / 那一版删了人口章节 / 公报取不到数）。
+ *
+ * 没有这张表的话，每一轮核实都会把它们重新报出来，然后下一个人再去核一遍、
+ * 再得出同样的结论 —— 或者更糟，为了让计数下降而硬填一个没核到的数字。
+ * `recheckAfter` 到期会单独提示，那才是这张表真正的用处：它把「什么时候该回来看」
+ * 这件事从人的记忆里搬进了脚本。
+ */
+interface Exempt { key: string; reason: string; confirmedOn: string; recheckAfter: string }
+const exemptFile: { entries: Exempt[] } = JSON.parse(await readFile(EXEMPT_PATH, "utf8"));
+const exemptBy = new Map(exemptFile.entries.map((e) => [e.key, e]));
+
 const hits: Hit[] = [];
+const exempted: { key: string; e: Exempt }[] = [];
 /** C6i 用：按「条目 + 语言」攒 identity / howItWorks 两段的全市人口 */
 const crossByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
 
@@ -206,7 +221,13 @@ for (const seg of segments) {
       hits.push({ ...seg, rule: "C6-人口数字缺年份", sentence: s });
     }
     if (isStale(s, zh)) {
-      hits.push({ ...seg, rule: "C6d-数字不是最新一期", sentence: s });
+      const key = `${seg.kind}/${seg.id}/${seg.section}`;
+      const ex = exemptBy.get(key);
+      if (ex) {
+        if (!exempted.some((x) => x.key === key)) exempted.push({ key, e: ex });
+      } else {
+        hits.push({ ...seg, rule: "C6d-数字不是最新一期", sentence: s });
+      }
     }
     // 判据全部来自 scripts/claim-rules.ts —— 与 list:claims 共用同一份，
     // 「之一」「按…计」这类限定语的豁免也在那里（达沃「按行政区划面积计菲律宾最大」
@@ -260,9 +281,18 @@ const RULES: Rule[] = [
   "D4-粘连句",
 ];
 
+// ── C6d 豁免：已核实「这就是最新一期」的条目 ────────────────────────────
+const today = new Date().toISOString().slice(0, 7);
+const due = exempted.filter((x) => x.e.recheckAfter <= today);
+const stale = [...exemptBy.keys()].filter((k) => !exempted.some((x) => x.key === k));
+
 console.log("易过期断言扫描（对应 docs/known-errors.md 的错误类型）");
 console.log(`  扫描了 ${segments.length} 段正文`);
 console.log(`  今年 ${FRESH_SINCE + 1}，统计时点早于 ${FRESH_SINCE} 年的算「不是最新一期」（普查、法定人口等定义上滞后的口径除外）\n`);
+
+console.log(
+  `  C6d 另有 ${exempted.length} 个条目已核实「这就是最新一期」，列在 ${EXEMPT_PATH} 里不计入\n`,
+);
 
 for (const rule of RULES) {
   const n = counts[rule] ?? 0;
@@ -324,4 +354,17 @@ if (failures > 0) {
   const down = RULES.filter((r) => (counts[r] ?? 0) < (baseline!.counts[r] ?? 0)).length;
   if (down > 0) console.log(`\n有 ${down} 类降下来了 —— 可以跑 npm run check:claims -- --update-baseline 固化`);
 }
+
+// ── 豁免表的两条提醒（不计入失败，但必须看得见）────────────────────────
+if (due.length) {
+  console.log(`\n⏰ ${EXEMPT_PATH} 里有 ${due.length} 条到了该回去复核的时间（recheckAfter ≤ ${today}）：`);
+  for (const x of due) console.log(`   ${x.key}  —— ${x.e.reason.slice(0, 60)}…（${x.e.recheckAfter} 起）`);
+  console.log("   到期不等于数字错了，只是「该去看看有没有新一期」。核完把 confirmedOn / recheckAfter 往后推。");
+}
+if (stale.length) {
+  console.log(`\n🧹 ${EXEMPT_PATH} 里有 ${stale.length} 条已经用不上了（对应句子不再触发 C6d，可能是已经更新到最新一期）：`);
+  for (const k of stale) console.log(`   ${k}`);
+  console.log("   留着会掩盖以后真的过期 —— 确认之后删掉。");
+}
+
 process.exit(failures > 0 ? 1 : 0);

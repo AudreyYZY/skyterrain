@@ -1,0 +1,168 @@
+{
+  "note": "check:claims 的 C6d 豁免表：这些条目的数字**年份确实旧**，但已经联网核实过「这就是能查到的最新一期」。理由分四类：该级别公报本来就不含人口 / 那一年起只发户籍 / 那一版公报删掉了人口章节 / 公报取不到数（纯图片、反爬、证书失效）。写年份而不是普查口径，所以脚本没法自己认出来，只能列在这里。recheckAfter 到期就该回去看一次——那才是这张表的用处。",
+  "howTo": "键是 <kind>/<id>/<field>。加一条之前必须有对应的 // <field> sources: 注释写清为什么；不写理由的豁免等于把问题藏起来。",
+  "entries": [
+    {
+      "key": "travel/qiqihar/identity",
+      "reason": "2025 年公报只公布户籍人口 493.6 万，没有常住人口一项；2024 年末的 373.3 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/yibin/identity",
+      "reason": "2025 年公报起不再公布常住人口，只给户籍总人口 543.5 万；2024 年末的 461.1 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-04"
+    },
+    {
+      "key": "travel/nantong/identity",
+      "reason": "2025 年公报把整个「人口」章节删了（第十二章标题从「人口、人民生活和社会保障」改成「人民生活和社会保障」）；2024 年末的 775.0 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/linyi/identity",
+      "reason": "2025 年公报整版没有人口章节（目录只有八章，逐段核对不含常住人口与城镇化率）；2024 年末的 1084.84 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/linyi/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/zunyi/identity",
+      "reason": "2025 年公报已发布（2026-05-13）但整份是 24 张纯 JPG 扫描件，文字层提不出数字；2024 年末的 649.45 万是最新可核数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/zunyi/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/hanzhong/identity",
+      "reason": "2025 年公报已发布（2026-05-28）但官网正文是纯图片，取不到文字；issue #206 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/beihai/identity",
+      "reason": "2025 年公报已于 2026-07-02 发布（比往年 3—4 月异常延后），但市政府统计栏目证书过期抓不到正文；issue #205 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/beihai/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/qufu/identity",
+      "reason": "市政府官网「解读 2024 年公报」页被反爬拦截（503），四种访问方式都拿不到正文，无法确认是否含常住人口；issue #202 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/qufu/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/qinhuangdao/howItWorks",
+      "reason": "2025 年度公报截至 2026-09-08 确未发布，已过该市常规的次年 5 月窗口；issue #203 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/zhoushan/identity",
+      "reason": "2025 年度公报截至 2026-09-08 未发现；2024 年末的 117.6 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-04"
+    },
+    {
+      "key": "travel/fenghuang/identity",
+      "reason": "凤凰县历年公报列表最新仍是 2020—2022 年，湘西州与县政府网均未见 2025 年数据；issue #210 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/fenghuang/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/zhenjiang/identity",
+      "reason": "统计局公报列表页只抓到 2017—2019 年旧条目（疑为分页/JS 加载），2025 年末数字未能定位，需人工翻页",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/daqing/identity",
+      "reason": "该市公报发布月份是次年 7 月，2025 年公报截至 2026-09-08 未见发布；2024 年末的 266.3 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-08"
+    },
+    {
+      "key": "travel/daqing/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-08"
+    },
+    {
+      "key": "travel/baishan/identity",
+      "reason": "该市公报发布月份在次年 6—8 月之间波动，2025 年公报截至 2026-09-08 未见发布；2024 年末的 88.88 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-09"
+    },
+    {
+      "key": "travel/baishan/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-09"
+    },
+    {
+      "key": "travel/mianyang/identity",
+      "reason": "该市公报发布月份是次年 6 月，2025 年公报是否已发布未能确认（只能确认标题存在、抓不到正文）；2024 年末的 492.20 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/mianyang/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/jiaozuo/identity",
+      "reason": "2025 年公报截至 2026-09-08 未查到（该市常规 5 月发布）；2024 年末的 349.6 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/jiaozuo/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/wanning/identity",
+      "reason": "万宁本级公报发布严重滞后且不规律（2024 年数据拖到 2026-07-04 才发），尚未见 2025 年数据；2024 年末的 55.83 万取自海南省统计局",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/wanning/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    }
+  ]
+}
