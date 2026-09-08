@@ -241,12 +241,6 @@
       "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
-    },
-    {
-      "key": "travel/are/identity",
-      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
     }
   ]
 }

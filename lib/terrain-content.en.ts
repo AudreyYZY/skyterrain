@@ -831,8 +831,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "murray-darling": {
+    // seeing sources: 澳大利亚测绘局（Geoscience Australia）：墨累河干流 **2,508 km**；**达令河干流 1,545 km**；
+    //   达令河 + 最长源头支流（库尔戈阿—巴隆—康达明）合计约 **2,740 km**，是澳大利亚最长水道。
+    //   https://www.ga.gov.au/scientific-topics/national-location-information/landforms/longest-rivers（1 级，2026-09-08 核）。
+    //   **原文把含支流的合计数字当成了达令河本身的长度** —— 河流长度有「干流」与「含最长源头支流」
+    //   两套口径，差了将近一倍，写的时候必须说明是哪一套。
+    //   「跨四个州」是常见简化（实际是四个州 + 首都领地），温特沃斯汇合点、库隆潟湖出海口经复核准确。
     seeing:
-      "The Murray–Darling is Australia's largest river system, draining about one-seventh of the continent across four states. The Murray runs about 2,500 km and the Darling about 2,700 km; they meet at Wentworth in far western New South Wales and reach the sea in South Australia. It is the country's most important farming region — and its most fought-over water.",
+      "The Murray–Darling is Australia's largest river system, draining about one-seventh of the continent across four states. The Murray runs about 2,500 km; the Darling proper is about 1,500 km, reaching roughly 2,700 km once its longest headwater tributaries are counted — Australia's longest waterway on that reckoning; they meet at Wentworth in far western New South Wales and reach the sea in South Australia. It is the country's most important farming region — and its most fought-over water.",
     formation:
       "The rivers flow across the Murray Basin, a very large, very flat lowland floored by river sediments. Because the gradient is so gentle, the Murray winds in tight meanders, cutting off billabongs (oxbow lakes), and the Darling can take weeks to move a flood pulse downstream. The system ends in the Coorong lagoon and a set of barrages at the Murray Mouth.",
     observation:
@@ -1588,8 +1594,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   tengger: {
+    // seeing sources: 腾格里沙漠约 4.27 万 km²，按面积计中国第四大
+    //   （塔克拉玛干 33 万 → 古尔班通古特 4.88 万 → 巴丹吉林 4.43 万 → 腾格里 4.27 万）——3 级，2026-09-08 核。
+    //   **中英不同步的第四种方向：英文丢掉了中文已有的限定词** ——
+    //   中文写「面积第四大」，英文只写 fourth-largest。已补 by area。
+    //   （前三种：英文凭空多出数字、注释与正文不同步、中文把有限定的说法收紧成绝对断言。）
+    //   草方格固沙发源地、1958 年包兰铁路通车经复核属实。
     seeing:
-      "The Tengger Desert lies mostly in Alxa Left Banner in Inner Mongolia, extending south to the edges of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
+      "The Tengger Desert lies mostly in Alxa Left Banner in Inner Mongolia, extending south to the edges of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert by area. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
     formation:
       "The Tengger's sand is debris from the surrounding mountains and old Yellow River channels, moved and piled by the wind. Some of the hollows between the dunes reach groundwater or hold seasonal water, forming lakes and salt marshes of various sizes (locally \"grass lakes\") — the green points in the desert.",
     observation:
@@ -7897,8 +7909,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meuse-river-be": {
+    // seeing sources: 默兹河流域约 3.3 万 km²，按国分布：**比利时约 41%、法国约 28%、荷兰约 19%、德国约 12%**
+    //   （另有卢森堡一小部分）—— IHE Delft 跨境水资源合作研究（3 级，2026-09-08 核）。
+    //   **「占比最高」不等于「占大多数」**：原文两处（seeing 与 concept）都写成了「大部分/绝大部分位于比利时」，
+    //   四成远不到 majority；concept 段那句「集中在单一国家境内的特殊案例」的论点本身也就不成立了。
+    //   列日作为默兹河沿岸中世纪以来的工商业中心属公认史实。
     seeing:
-      "The Meuse is Belgium's most important navigable river; the great majority of the Meuse's drainage basin lies within Belgium, and Liège is Belgium's largest river port on the Meuse.",
+      "The Meuse is Belgium's most important navigable river; of the four countries the basin touches, Belgium holds the largest share of it (roughly 40 per cent), and Liège is Belgium's largest river port on the Meuse.",
     formation:
       "Below Liège the Meuse turns north, eventually joining the Rhine delta in the Netherlands before reaching the sea; along the way its course crosses several landform units, including the Ardennes and Condroz plateaus.",
     observation:
@@ -7906,7 +7923,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "The Meuse River (Belgian stretch, as the river overall) and the Meuse Valley (the specific gorge-like landform stretch) share the same source, but the former emphasises the river's overall hydrology and shipping function, while the latter focuses on the gorge-like landform between Dinant and Namur.",
     concept:
-      "With the great majority of the Meuse's catchment lying within Belgium, it is a distinctive case study in how the main drainage area of an international river can be concentrated within a single country.",
+      "The Meuse's catchment is split unevenly among four countries — roughly 40 per cent in Belgium, 28 per cent in France, 19 per cent in the Netherlands and 12 per cent in Germany — a useful case study in how an international river's drainage area can be divided.",
     history:
       "Liège has grown into an important commercial, industrial and cultural centre of eastern Belgium since medieval times thanks to the Meuse's shipping advantages, and the riverbanks still preserve rich industrial heritage today.",
   },
@@ -8399,8 +8416,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "otztal-alps": {
     seeing:
       "The Ötztal Alps lie in western Tyrol and are Austria's second-highest range; the highest peak, Wildspitze, reaches 3,768 m, and the range is extensively covered in glacial ice.",
+    // formation sources: 盖帕奇冰川约 **14.6 km²**、帕斯特采约 16.7 km²（奥地利冰川清查 Gletscherinventar 2023）——
+    //   Alpenverein 官方新闻稿 https://www.alpenverein.at/portal/news/2026/2026_07_02_pasterze-am-seidenen-faden.php
+    //   （2 级）与 tirol.ORF.at（3 级），2026-09-08 核。原文的 17 km² 已过期。
+    //   **这是一个随时会翻的排名**：帕斯特采因「马蹄形冰裂」（Hufeisenbruch）濒临断裂，
+    //   2026 年 7 月的报道称一旦断开，盖帕奇很可能反超成为奥地利最大冰川 —— 下一轮必须回来看。
+    //   野人峰 3,768 m 为奥地利第二高峰（次于大格洛克纳 3,798 m）；
+    //   冰人奥兹 1991 年发现、测年约公元前 3300 年，均核实属实。
     formation:
-      "The range is built of crystalline rock from the Alpine orogenic belt and lies largely above the snowline; over 200 glaciers cover it, including the Gepatschferner, about 17 km² in area — Austria's second-largest glacier after the Pasterze.",
+      "The range is built of crystalline rock from the Alpine orogenic belt and lies largely above the snowline; over 200 glaciers cover it, including the Gepatschferner, about 14.6 km² in the 2023 Austrian glacier inventory — still Austria's second-largest after the Pasterze, though the gap has narrowed sharply as both shrink.",
     observation:
       "From the air, the Ötztal Alps show broad expanses of white glacial ice against the deep-green valley forests below; Wildspitze's sharp conical summit is the clearest marker for identifying the range.",
     distinguish:
@@ -8667,8 +8691,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "danube-river-at": {
+    // seeing sources: 多瑙河欧洲第二长（全长约 2,888 km），约 350 km 流经奥地利 ——
+    //   奥地利国家旅游局 https://www.austria.info/en-gb/regions/danube/（2 级，2026-09-08 核）。
+    //   **奥地利境内的走向**：约霍恩施泰因入境 → 林茨盆地 → 施特鲁登高/尼伯龙根高/瓦豪河谷 →
+    //   维也纳盆地 → 入斯洛伐克。
+    //   **不流经因河谷** —— 因河是蒂罗尔州的另一条河，与多瑙河在**德国帕绍**（奥地利境外）汇合，
+    //   两条河在奥地利境内没有共同河段。原文在 seeing 与 history 两处都把这两条河混成了一条，
+    //   而同条目的 distinguish 段自己写着「因河则是……区域性河流」—— **一篇之内自相矛盾**。
     seeing:
-      "The Danube is Europe's second-longest river, about 2,888 km in total, with roughly 350 km flowing through Austria, running west to east through the lower Inn Valley, the Linz basin, the Wachau and the Vienna Basin before continuing into Slovakia.",
+      "The Danube is Europe's second-longest river, about 2,888 km in total, with roughly 350 km flowing through Austria, running west to east through the Linz basin, the Wachau and the Vienna Basin before continuing into Slovakia.",
     formation:
       "Within Austria the Danube crosses several distinct landform zones, and its channel form changes accordingly — narrowing into the Wachau's confined valley as it cuts through the hills there, then widening into a broad alluvial plain across the Vienna Basin.",
     observation:
@@ -8678,7 +8709,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Danube's alternating gorge-like and plain-like stretches within Austria are a useful case study in how a major river's channel form adjusts to tectonic structure as it crosses orogenic belts and subsidence basins.",
     history:
-      "The Danube has long been Austria's most important waterway, linking major cities east of Innsbruck and serving as the historical core artery of trade and cultural exchange.",
+      "The Danube has long been Austria's most important waterway, linking major cities including Linz and Vienna and serving as the historical core artery of trade and cultural exchange.",
   },
 
   "mur-river": {
@@ -9879,8 +9910,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Compared with other parts of Sweden (such as the forested hill country of the centre), the Skåne Plain is flatter, more open and far more intensively farmed — the most representative agricultural-plain landform in the country.",
     concept:
       "The fertile moraine and loess-like soil of the Skåne Plain is a classic case for studying how last-glacial sediment can provide an excellent soil foundation for temperate agriculture.",
+    // history sources: 斯科讷在中世纪及之后很长时间是**丹麦领土**（丹麦本土核心区之一），
+    //   **1658 年《罗斯基勒条约》**后割让给瑞典 —— Britannica《Treaty of Roskilde》（3 级，2026-09-08 核）。
+    //   **原文把「这块地方」和「这块地方现在属于哪个国家」混为一谈**，
+    //   写成「自中世纪起即为瑞典重要的农业区」，等于把它几百年的丹麦属性抹掉了。
+    //   **写一片土地的前现代史时，要先确认它当时属于谁** —— 这类错误在边境地带的条目里最容易出现。
+    //   末次冰期冰碛 + 黄土状沉积、瑞典最主要谷物与油菜产区等表述经复核准确。
     history:
-      "The region has been an important agricultural and population centre in Sweden since the Middle Ages; its fertile land historically made it a strategic territory long contested between Sweden and Denmark, and it is now one of Sweden's mildest-climate and most agriculturally developed regions.",
+      "The region has been an important agricultural and population centre since the Middle Ages, though it was Danish territory for most of that time; its fertile land made it a strategic prize long contested between Denmark and Sweden, and it passed to Sweden under the 1658 Treaty of Roskilde, and it is now one of Sweden's mildest-climate and most agriculturally developed regions.",
   },
 
   // ============ Finland ============
