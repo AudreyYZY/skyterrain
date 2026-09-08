@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 48fb947
+lastVerifiedCommit: 7e6fa64
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: 48fb947
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel-content 中国 12 城 identity/howItWorks 人口数字（中国城市人口刷新 · 批 7） | 19 | 1 / 17 / 1 | 当场修 18 条；新开 issue 1、关闭 0 |
 | 2026-09-08 | travel · 取数受阻（C6-d：公报是纯图片格式、取不到数字的三处） | 3 | 0 / 0 / 3 | 当场修 0 条；新开 issue 3、关闭 0 |
 | 2026-09-08 | travel · 中国城市人口（C6-d 第 24 批：中国 12 城（遵义/汕头/潮州/绍兴/北海/嘉峪关/舟山/腾冲/都江堰/凤凰/十堰/安阳）） | 24 | 2 / 22 / 0 | 当场修 24 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 菲律宾城市人口与口径（C6-d 第 23 批：菲律宾 11 城取 PSA 2024 年普查） | 14 | 0 / 12 / 2 | 当场修 14 条；新开 issue 0、关闭 0 |
