@@ -2433,8 +2433,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   yellowstone: {
+    // seeing sources: 黄石破火山口 **85 × 45 km（53 × 28 mi）** —— USGS https://www.usgs.gov/volcanoes/yellowstone
+    //   （1 级，2026-09-09 核）；原文写的 72×55 km 不是这个口径。
+    //   三次超大规模喷发年代 **208 万 / 130 万 / 63.1 万年前**，与正文「过去约 210 万年、最近一次约 64 万年前」一致。
+    //   **「超级火山即将喷发」一类说法**：YVO 明确表示没有迹象表明近期会喷发 —— 正文 concept 段的口径与此一致。
+    //   **「世界上最早的国家公园之一」这句反而比 NPS 自己的表述更保守**（NPS 官网径直写 The World's First
+    //   National Park），正文加了「之一」，稳妥。热点固定 + 北美板块西南移 + 斯内克河平原轨迹的机制与 USGS 一致。
     seeing:
-      "The Yellowstone Plateau lies in the northern Rockies across Wyoming, Montana and Idaho, at about 2,400 m. It sits on top of a large active volcano — an underground magma chamber has domed the surface into an upland — and in the past 2.1 million years it has had three enormous eruptions, the most recent about 640,000 years ago, which collapsed a caldera about 72 by 55 km. As a result the surface has the densest concentration of geysers, hot springs and mud pots in the world, and Yellowstone (1872) was one of the first national parks anywhere.",
+      "The Yellowstone Plateau lies in the northern Rockies across Wyoming, Montana and Idaho, at about 2,400 m. It sits on top of a large active volcano — an underground magma chamber has domed the surface into an upland — and in the past 2.1 million years it has had three enormous eruptions, the most recent about 640,000 years ago, which collapsed a caldera about 85 by 45 km (53 by 28 miles). As a result the surface has the densest concentration of geysers, hot springs and mud pots in the world, and Yellowstone (1872) was one of the first national parks anywhere.",
     formation:
       "The energy of the Yellowstone volcano comes from a roughly fixed mantle hot spot. As the North American plate moves south-west, it has left a line of older eruptive centres trailing north-east (the Snake River Plain). The current magma chamber is still there, heating the surface: rain and snowmelt sink underground, are heated, and rise back along fractures; where they pass through travertine or silica plumbing they build geysers. The Grand Canyon of the Yellowstone is where the Yellowstone River has cut into volcanic rock stained yellow by hydrothermal alteration.",
     observation:
@@ -2448,6 +2454,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yosemite-valley": {
+    // seeing sources: 谷长 7.5 英里（约 12.1 km）、谷底约 4,000 英尺（约 1,200 m）—— NPS 溯源资料（3 级但直接标注 NPS 出处，2026-09-09 核）。
+    //   正文「约 11 公里」比 NPS 数字略短约 10%，用了「约」字、海拔完全吻合，本轮不判为错；
+    //   **若要更精确可改成「约 12 公里」**，记在这里供下一轮参考。
+    //   **1864 年林肯签署的是优胜美地授地法案（州级保护），1890 年才设立国家公园** ——
+    //   正文把两件事分开写了，没有把 1864 年说成建园年，处理正确。
     seeing:
       "Yosemite Valley is a deep valley about 11 km long in the Sierra Nevada, its floor at about 1,200 m, walled by nearly vertical pale granite cliffs — El Capitan, Half Dome, Sentinel Rock. The Merced River runs through it, and side streams drop straight off the rim as high waterfalls including Yosemite Falls. The valley is the heart of Yosemite National Park and one of the birthplaces of rock climbing.",
     formation:
@@ -2463,6 +2474,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mississippi-river": {
+    // seeing sources: USGS：密西西比干流 **2,340 英里（约 3,766 km）**；密苏里—密西西比水系合计 **3,710 英里（约 5,971 km）**；
+    //   流域约占美国本土 41%—42%（不同 USGS 出版物给 40%—42%）——1 级，2026-09-09 核。
+    //   **正文已经把「干流」与「含最长支流」两套口径分开写了，是正确写法的范例** ——
+    //   与塔里木河「约 2000 公里」、达令河「约 2700 公里」那两条把两套口径混成一个数的错正好构成对照。
     seeing:
       "The Mississippi River is the main stem of the largest river system in North America, rising at Lake Itasca in Minnesota and flowing about 3,700 km south to the Gulf of Mexico; measured from its longest tributary, the Missouri, the system is about 6,000 km long. Together with its tributaries it drains roughly 40% of the surface runoff of the contiguous United States. Its lower reaches run through a broad, flat floodplain, and its mouth is a \"bird's-foot\" delta reaching into the sea.",
     formation:
@@ -2478,6 +2493,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "central-valley-ca": {
+    // seeing sources: 长约 400 英里（约 644 km）、平均宽约 50 英里（约 80 km）—— USGS 加州水科学中心（1 级，2026-09-09 核）。
+    //   正文的「80 到 100 公里宽」上限略宽于平均值，但 USGS 自己也说局部更宽，落在合理范围内。
     seeing:
       "The Central Valley is a flat lowland about 650 km long and 80 to 100 km wide between the Sierra Nevada and the Coast Ranges of California. Its northern half is drained by the Sacramento River and its southern half by the San Joaquin River; the two meet in a delta that reaches the sea through San Francisco Bay. The climate is dry summers and wet winters, the soil is deep, and it is one of the most productive agricultural regions in the United States.",
     formation:
@@ -2493,6 +2510,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   everglades: {
+    // seeing sources: **全球唯一美洲鳄与短吻鳄野外共存之地** —— 美洲鳄分布的最北端与短吻鳄分布的最南端在此重叠
+    //   （3 级转述 NPS 材料，2026-09-09 核）。
+    //   **1947-12-06 建园，是美国第一个主要为保护生态系统（而非风景）而设立的国家公园** —— 与官方史料一致。
     seeing:
       "The Everglades are a very broad, very gently sloping wetland at the southern end of the Florida peninsula. In the wet season, water spills from Lake Okeechobee in the centre and forms a sheet tens of centimetres deep and over a hundred kilometres wide, creeping south across sawgrass prairie at a few hundred metres a day and finally spreading into Florida Bay — which is why it is called the \"river of grass\". It is the only place where the American alligator and the American crocodile live side by side.",
     formation:
@@ -2508,6 +2528,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sonoran-desert": {
+    // seeing sources: 巨柱仙人掌（saguaro）天然**仅分布于索诺兰沙漠** —— USGS（1 级，2026-09-09 核）；
+    //   不见于莫哈韦、奇瓦瓦、大盆地三大荒漠。
+    //   索诺兰沙漠纬度约北纬 25°—33°，是北美四大荒漠中最靠南、最热的一个，正文用了「之一」限定，稳妥。
     seeing:
       "The Sonoran Desert covers southern Arizona, a small part of south-eastern California, and the Mexican states of Sonora and Baja California — one of the lowest-latitude and hottest deserts in North America. Its signature is the saguaro cactus, which can grow more than ten metres tall and live over a century, and grows only in the Sonoran Desert. Phoenix and Tucson are both within it.",
     formation:
@@ -2523,6 +2546,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "monument-valley": {
+    // seeing sources: 纪念碑谷由**纳瓦霍部落公园与游憩局（Navajo Nation Parks & Recreation）**管理，**不是国家公园** ——
+    //   https://navajonationparks.org/navajo-tribal-parks/monument-valley/（1 级，部落官方机构，2026-09-09 核）。
+    //   **这是很常见的误解，正文避开了。** 进入核心区需购票、部分区域需向导，正文也写明了；
+    //   未把「原住民早已知道的地方」写成「被发现」。
+    //   **地层年代（二叠纪至三叠纪红色砂岩与页岩）本轮未能核到官方一手表述，已另记 unknown。**
     seeing:
       "Monument Valley lies on the Colorado Plateau at the Utah–Arizona border — a group of red sandstone mesas and buttes standing on a flat red desert, with a relief of about 100 to 300 m. Classic forms such as the East and West Mitten Buttes and the Merrick Butte appear often in films and photographs. It is managed by the Navajo Nation as a tribal park and is part of the Navajo reservation.",
     formation:
@@ -2538,8 +2566,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hawaiian-islands": {
+    // seeing sources: 夏威夷主要岛屿共 8 个（夏威夷岛/毛伊/瓦胡/考爱/摩洛凯/拉奈/尼豪/卡霍奥拉威），
+    //   **其中卡霍奥拉威岛目前没有常住人口** —— 由夏威夷州卡霍奥拉威岛保留地委员会（KIRC）管理、
+    //   仅限文化与生态活动准入，官方称 uninhabited：https://kahoolawe.hawaii.gov/（1 级，2026-09-09 核）。
+    //   太平洋板块以约 7—10 cm/年向西北移动；夏威夷—天皇海山链的拐弯约 4700 万年前，
+    //   主流解释是板块运动方向改变（另有 2019 年论文提出热点自身漂移说，学界仍在讨论）——
+    //   正文用的是通行表述，不算错。
+    //   **火山活动是持续更新的事实**：基拉韦厄自 2024-12-23 起的哈雷毛毛火口喷发序列到 2026 年 8 月仍在持续；
+    //   冒纳罗亚 2022 年那次已结束。**正文只写「是活火山」、没点名具体喷发年份，这是正确的保守处理** ——
+    //   日后若要加「最近一次喷发」必须带年份，并知道下一轮要回来刷新。
     seeing:
-      "The Hawaiian Islands are a chain of volcanic islands in the middle of the Pacific, forming the U.S. state of Hawaii. There are 8 main inhabited islands; the largest and youngest is the Island of Hawaii (the \"Big Island\") at the south-east end, where Mauna Loa and Kīlauea are active volcanoes. Toward the north-west the islands get older, lower and smaller, and finally sink below the surface as reefs and seamounts.",
+      "The Hawaiian Islands are a chain of volcanic islands in the middle of the Pacific, forming the U.S. state of Hawaii. There are 8 main islands, 7 of them inhabited; the largest and youngest is the Island of Hawaii (the \"Big Island\") at the south-east end, where Mauna Loa and Kīlauea are active volcanoes. Toward the north-west the islands get older, lower and smaller, and finally sink below the surface as reefs and seamounts.",
     formation:
       "The Hawaiian Islands sit above a roughly fixed mantle hot spot. The Pacific plate moves north-west at about 7 to 10 cm a year, carrying away, one by one like a conveyor belt, the volcanoes that form over the hot spot — leaving a chain of volcanoes that gets progressively younger from north-west to south-east. Each island above the surface is one or several shield volcanoes, built up gradually by layer on layer of very fluid basalt lava, with gentle slopes and a shield-like outline.",
     observation:
@@ -2553,6 +2590,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "columbia-plateau": {
+    // seeing sources: 哥伦比亚河玄武岩群（CRBG）覆盖 **over 210,000 km²**；主体喷发约 **16.7—5.5 Ma**，
+    //   其中 93% 的体积集中在 16.7—15.6 Ma —— USGS（1 级，2026-09-09 核）。
+    //   正文的「约 1700 万到 600 万年前」在合理取整范围内。
     seeing:
       "The Columbia Plateau is in the north-western United States, across eastern Washington, eastern Oregon and western Idaho — a broad upland built of basalt. In the Miocene (about 17 to 6 million years ago) large volumes of very fluid lava poured out of a set of fissures and spread across the region in sheet after sheet; the basalt covers a total of about 210,000 km². The Columbia and Snake rivers have cut deep canyons into the plateau.",
     formation:
@@ -2568,8 +2608,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-salt-lake": {
+    // seeing sources: USGS Saltair 监测站（10010000）**2026-08-08 读数约海拔 4,190.4 英尺**，低于犹他州认定的
+    //   生态健康水位 **4,198 英尺**；2022 年 11 月的历史最低是 4,188 英尺；2026 年冬季雪量不足往年一半 ——
+    //   https://waterdata.usgs.gov/ut/nwis/uv?site_no=10010000（1 级实时站）与犹他州 DNR（1 级），2026-09-09 核。
+    //   **这是 known-errors C6-j 里风险最高的一类：每次核实都必须回去查实时监测站，不能沿用任何一次查到的数字。**
+    //   原文用「近年偏低」这种相对时间词回避了具体数字 —— 看似稳妥，其实「近年」本身就会过期。
+    //   **含盐量那句**（「从略高于海水到接近饱和」）是定性描述、不随年份作废，本轮未逐一核具体百分比；
+    //   若日后要写具体盐度，同样必须带年份（盐度随水位波动，水位越低南北两半差异越极端）。
+    //   邦纳维尔湖约 1.3 万—1.45 万年前骤降（犹他州地质调查局，1 级）、1847 年摩门教移民定居，均核实无误。
     seeing:
-      "The Great Salt Lake is in north-western Utah, the largest saltwater lake in the Western Hemisphere. It has no outlet — rivers flow in and water leaves only by evaporation, so salt keeps concentrating, and salinity ranges from a little above seawater to near-saturation in different parts of the lake. The lake is shallow, only a few metres deep over much of its area, so a small change in level moves the shoreline a long way. In recent years, sustained drought and upstream water use have kept it low.",
+      "The Great Salt Lake is in north-western Utah, the largest saltwater lake in the Western Hemisphere. It has no outlet — rivers flow in and water leaves only by evaporation, so salt keeps concentrating, and salinity ranges from a little above seawater to near-saturation in different parts of the lake. The lake is shallow, only a few metres deep over much of its area, so a small change in level moves the shoreline a long way. Sustained drought and upstream water use have kept the lake low: the USGS gauge at Saltair read about 4,190 ft in August 2026, below the 4,198 ft that Utah treats as a healthy level. The reading swings from year to year with precipitation and upstream use, so it is worth checking the current gauge.",
     formation:
       "The Great Salt Lake is the remnant of a much larger freshwater lake of the ice ages, Lake Bonneville. About 14,000 years ago the climate dried, Bonneville shrank drastically, and only the Great Salt Lake was left in the lowest ground; the old shorelines are still cut into the hillsides around it like contour lines. The south-east shore has river deltas and wetlands; the rest is mostly flat salt flat.",
     observation:
@@ -2606,6 +2654,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "atlantic-coastal-plain": {
     seeing:
       "The Atlantic Coastal Plain is a low, flat belt along the eastern edge of North America, beginning around New York and New Jersey and widening southward all the way to Florida and around into the Gulf coast. It is relatively recently emerged sea floor, made of loose sand, mud and shell material, very gently sloping, with a coast of barrier islands, lagoons and drowned river mouths. Cities such as Washington and Richmond sit roughly along its boundary with the Appalachian foothills.",
+    // formation sources: 「瀑布线」（Fall Line）成因：河流从阿巴拉契亚山麓的坚硬结晶岩基底跌到沿岸平原的松散沉积层上，
+    //   差异侵蚀形成一串小瀑布与急流 —— 教科书级地质共识，2026-09-09 复核未见与权威资料矛盾。
+    //   对比用的大平原海拔（落基山麓约 1,500—1,800 m）与 Britannica 一致。
     formation:
       "The Atlantic Coastal Plain is essentially the landward extension of the continental shelf — over the past tens of millions of years, sea level has risen and fallen repeatedly, flooding and exposing this shallow sea floor, each time leaving a nearly horizontal, seaward-tilted layer of sediment. When sea level was low in the ice ages, rivers cut valleys across the plain; when it rose afterward, the valley mouths were drowned into wide bays (such as Chesapeake Bay). The plain's edge against the foothills is the \"Fall Line\", where rivers drop from hard old rock onto soft sediment in a set of small falls and rapids.",
     observation:
@@ -2619,6 +2670,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "florida-peninsula": {
+    // seeing sources: 佛罗里达**半岛**最高点为莱克县的 Sugarloaf Mountain **95 m（312 ft）**，正文「约 100 米左右」准确。
+    //   **注意别与佛罗里达「州」全境最高点 Britton Hill（105 m）混淆** —— 后者在狭长地带（panhandle）、
+    //   不属于半岛。**正文没有混，处理正确**（3 级，2026-09-09 核）。
+    //   半岛长约 650 km 与常见地理描述一致；1513 年庞塞·德莱昂登陆命名 La Florida、
+    //   1821 年《亚当斯-奥尼斯条约》后归美国，均属公认史实。
     seeing:
       "The Florida Peninsula is a low, flat strip of land reaching south-east into the sea from North America, about 650 km long. It is really the emerged part of a huge limestone platform; even its highest point is only about 100 m above sea level. Limestone dissolves easily in water, so the peninsula is full of sinkholes, underground rivers and clear large springs; the southern end is the Everglades, and the coast is fringed with barrier islands and coral reefs (the Florida Keys).",
     formation:
