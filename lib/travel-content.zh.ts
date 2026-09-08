@@ -7525,7 +7525,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   klagenfurt: {
     identity:
-      "克拉根福是克恩顿州首府，人口约10万，坐落在沃尔特湖东端，是奥地利南部重要的湖区旅游城市。",
+      "克拉根福是克恩顿州首府，人口约10.6万（2025年），坐落在沃尔特湖东端，是奥地利南部重要的湖区旅游城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Klagenfurt am Wörthersee (statutory city, Carinthia capital; ~120 km²; ~105,800 2025; Lindwurm/Neuer Platz; Renaissance old town; Wörthersee 4 km west; cultural centre of the Carinthian Slovenes; airport; Ljubljana 88 km)
     howItWorks:
       "克拉根福是克恩顿州的州府，一座“特许市”，市域约 120 平方公里，2025 年人口约 10.6 万；州议会与州政府在城里，警察与学校归州。老城是 16 世纪按文艺复兴的格网重建的，新广场上的龙泉是城市的标志，拱廊庭院散在街区里；沃尔特湖在城西 4 公里，一条运河把湖水引到老城边，湖滨浴场是夏天的中心，米尼蒙德的微缩公园在湖边；这里是克恩顿斯洛文尼亚人的文化中心，有自己的学校与媒体，机场在城北，卢布尔雅那在南面 88 公里。初来的人最容易犯的错，是以为克拉根福在湖边，而湖在城外 4 公里，老城本身是一座内陆的文艺复兴城。",
@@ -7543,7 +7543,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   villach: {
     identity:
-      "菲拉赫是克恩顿州第二大城市，人口约6万，坐落在德拉瓦河畔，靠近意大利与斯洛文尼亚边境，是奥地利南部重要的交通枢纽。",
+      "菲拉赫是克恩顿州第二大城市，人口约6.6万（2025年），坐落在德拉瓦河畔，靠近意大利与斯洛文尼亚边境，是奥地利南部重要的交通枢纽。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Villach (statutory city, Carinthia; ~135 km²; ~65,700 2025, second in Carinthia; Drau/Gail; Hauptplatz; Warmbad thermal spa; Dobratsch; Lake Ossiach; Infineon; rail hub Tauern/Karawanken; Italy/Slovenia borders ~15–20 km; Fasching)
     howItWorks:
       "菲拉赫是克恩顿州的第二大城市，一座“特许市”，市域约 135 平方公里，从多布拉奇山坡一直到奥西阿赫湖，2025 年人口约 6.6 万；市政府管地方服务，警察与学校归州。老城在德劳河与盖尔河汇合处的南岸，主广场是它的中心，瓦姆巴德的温泉在城南，英飞凌的芯片厂是最大的雇主，菲拉赫火车站是陶恩线与卡拉万肯线交会的枢纽，意大利与斯洛文尼亚的边境各在一二十公里外，狂欢节是它一年的高潮。初来的人最容易犯的错，是把菲拉赫当作克拉根福的卫星城，而它是通往意大利与斯洛文尼亚的铁路门户，三国的日常在这里交汇。",
@@ -8845,8 +8845,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "泰国湾一侧的雨季与安达曼海一侧不同，苏梅岛全年气候相对温和，但10-11月降雨相对集中，出行前建议留意季节差异。",
   },
   ayutthaya: {
+    // identity sources: 大城市（เทศบาลนครพระนครศรีอยุธยา，「城市自治市」）人口约 5 万 —— **与大城府（จังหวัด）的人口是两回事**，
+    //   府一级是百万量级。原文 identity 写 5.5 万、howItWorks 写 5 万，两段互相对不上且都没有年份与口径。
+    //   **没拿到能确认年份的官方数**（泰国内政部地方行政厅按年发布自治市人口，本轮未取到），
+    //   所以只统一口径措辞、不编年份。下一轮要去 stat.bora.dopa.go.th 取带年份的数。
     identity:
-      "大城的选址是一次刻意的地利算计——1350年，拉玛铁菩提一世把新都定在湄南河、华富里河与巴莎河三江环抱形成的天然岛屿上，河道本身就是护城河，又便于连通出海口做国际贸易；此后417年（1350–1767年）间，这里发展成东南亚最大的国际都会之一，直到1767年被缅甸军队攻陷、焚毁殆尽。大城是泰国中部的历史古都，人口约5.5万，1991年大城历史公园列入联合国教科文组织世界遗产名录。",
+      "大城的选址是一次刻意的地利算计——1350年，拉玛铁菩提一世把新都定在湄南河、华富里河与巴莎河三江环抱形成的天然岛屿上，河道本身就是护城河，又便于连通出海口做国际贸易；此后417年（1350–1767年）间，这里发展成东南亚最大的国际都会之一，直到1767年被缅甸军队攻陷、焚毁殆尽。大城是泰国中部的历史古都，市自治市人口约5万，1991年大城历史公园列入联合国教科文组织世界遗产名录。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ayutthaya (Phra Nakhon Si Ayutthaya city municipality ~50,800; capital of Ayutthaya province; island between Chao Phraya, Pa Sak and Lopburi rivers; Historical Park UNESCO 1991; capital of Siam 1351–1767; train ~1.5 h from Bangkok, ~80 km)
     howItWorks:
       "大城是大城府的府治，府尹由内政部任命；大城市是一个“城市自治市”，有民选的市长，人口约 5 万。城市在昭披耶河、巴塞河与华富里河围成的岛上，1351 至 1767 年是暹罗的都城，岛的西半是历史公园，玛哈泰寺、帕斯桑碧寺的塔群在这里，1991 年列入世界遗产，柴瓦塔那兰寺在河对岸；岛的东半是今天的市镇，火车站在岛外的河东岸，到曼谷约一个半小时，岛上靠自行车与嘟嘟车，工业区在城外。初来的人最容易犯的错，是把大城当作一片废墟，而废墟与市镇在同一座岛上，市民就住在古塔之间。",
@@ -9631,8 +9635,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "10-12月与3-4月气候最宜人；老城区路窄车多，建议步行或乘摩托车出租体验穿梭古街的乐趣。",
   },
   "ho-chi-minh-city": {
+    // identity sources: 2025 年越南把 63 个省市并成 34 个。胡志明市与平阳省、巴地—头顿省合并为新的中央直辖市，
+    //   面积约 6,772 平方公里、人口约 1,400 万、190 个行政单位；决议 2025-09-01 生效、新市 09-15 运作。
+    //   https://en.vietnamplus.vn/hcm-city-set-to-become-megametropolis-after-administrative-merger-post320188.vnp
+    //   （2 级，越南通讯社英文版，2026-09-08 核）。
+    //   **行政区划合并会让人口数一夜之间变一倍**，比年度增减凶得多 —— 越南 2025 年这一轮波及全国，
+    //   凡是越南的城市条目都要按合并后的边界重核。
     identity:
-      "胡志明市（原西贡）是越南最大城市与经济中心，人口约900万，坐落于西贡河畔，是越南南部的商业与文化枢纽。",
+      "胡志明市（原西贡）是越南最大城市与经济中心，2025年与平阳省、巴地—头顿省合并后人口约1400万，坐落于西贡河畔，是越南南部的商业与文化枢纽。",
     // howItWorks sources: Wikipedia (2026-09): Ho Chi Minh City (merged with Bình Dương and Bà Rịa–Vũng Tàu 2025; ~6,781 km²; >14 million; 113 wards, 54 communes, Côn Đảo special zone; Metro Line 1 Dec 2024); Administrative divisions of Vietnam
     howItWorks:
       "胡志明市是越南的“中央直辖市”，级别与省相同；2025 年平阳省与巴地—头顿省并入后，市域约 6,781 平方公里，人口超过 1,400 万，同年 7 月起县区一级撤销，市之下直接是 113 个坊、54 个社和昆岛特区。过去的“第一郡”“第三郡”这些名字虽已不是行政单位，仍是本地人说位置的语言：第一郡是市中心，统一宫、圣母大教堂与滨城市场在这里，2025 年这一带设为“西贡坊”；堤岸是华人聚居的旧城，在原第五、第六郡；守德是东面的大学与科技新区；平阳的工业城与头顿的海滨如今也在市界之内。本地人日常仍称这座城为“西贡”。地址写“门牌、街、坊”，门牌之下常有巷弄编号。2024 年 12 月通车的地铁 1 号线是第一条轨道线，摩托车承担大多数出行；新山一机场在市区内，隆城新机场在东面建设中。初来的人最容易犯的错，是把第一郡当作整座城，而它只是一个 1,400 万人城市的中心一角。",
@@ -9716,8 +9726,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "9-11月梯田金黄稻穗成熟、3-5月插秧灌水期是最佳观景季节；山区昼夜温差大，需备好保暖衣物。",
   },
   "ha-long-city": {
+    // identity sources: 下龙 2019 年普查人口约 27 万。identity 原写的「约30万」既无年份也查无出处，已与 howItWorks 取齐。
+    //   **2025 年 7 月越南撤销县级单位**，下龙原为省辖市，改革后分成若干直属广宁省的坊 ——
+    //   行政边界变了，之后再核实要先确认口径对应的是哪一套区划。
+    //   https://www.vietnam-briefing.com/news/vietnams-government-introduces-official-plan-for-provincial-mergers.html/
+    //   （2 级，2026-09-08 核）。
     identity:
-      "下龙市是越南东北部广宁省省会，人口约30万，是探索下龙湾喀斯特岛群的主要门户。",
+      "下龙市是越南东北部广宁省省会，人口约27万（2019年普查），是探索下龙湾喀斯特岛群的主要门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hạ Long (former provincial city ceased 2025-07-01; capital of Quảng Ninh; 270,054 2019; Bãi Cháy tourist west vs Hòn Gai administrative/coal east, Bãi Cháy Bridge 2006; Ha Long Bay UNESCO 1994; cruises from Tuần Châu; Vân Đồn airport ~50 km; Hanoi ~165 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
     howItWorks:
       "下龙是广宁省的省会，原为省辖市，2025 年 7 月县级单位撤销后分成几个直属广宁省的坊，2019 年人口约 27 万。城市分成两半：西面的拜寨是酒店与游乐场的旅游区，东面的鸿基是省政府、市场与煤矿的老城，2006 年建成的拜寨大桥把两岸连起来；下龙湾 1994 年列入世界遗产，游船大多从西面的巡洲岛码头出发，云屯机场在东面约 50 公里，河内在西面约 165 公里，高速公路两个多小时。煤是这座城的老本行。初来的人最容易犯的错，是把下龙市当作下龙湾，而湾在海上，城在岸上，游船码头在城外的岛上。",
@@ -9767,8 +9782,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "全年气候凉爽宜人，12月至次年3月最为干燥舒适；建议携带薄外套，夜间山城气温较低。",
   },
   "can-tho": {
+    // identity sources: 2025 年芹苴与后江省、朔庄省合并为新的中央直辖市，面积 6,360.83 平方公里、
+    //   2025 年人口 4,199,824，市中心仍在宁桥。后江省 2025-06-12 撤销并入。
+    //   https://en.vietnamplus.vn/party-chief-urges-merged-can-tho-city-to-proactively-set-strategic-breakthroughs-post320450.vnp
+    //   （2 级，越南通讯社英文版，2026-09-08 核）。
     identity:
-      "芹苴是湄公河三角洲最大城市，人口约120万，是探索三角洲水上市场与水乡风情的核心门户。",
+      "芹苴是湄公河三角洲最大城市，2025年与后江省、朔庄省合并后人口约420万，是探索三角洲水上市场与水乡风情的核心门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cần Thơ (centrally-governed city; merged with Hậu Giang and Sóc Trăng 2025; ~6,360 km²; ~4.2 million; 31 wards + 72 communes; Hậu River; Ninh Kiều; Cái Răng floating market; airport ~9 km; Khmer community in Sóc Trăng; HCMC ~170 km) — Vietnam 2025-07-01 two-tier reform (district level abolished) per Administrative divisions of Vietnam
     howItWorks:
       "芹苴是越南的中央直辖市，2025 年后江省与朔庄省并入后，市域约 6,360 平方公里，人口约 420 万，县级单位撤销后市之下直接是 31 个坊与 72 个社。它是湄公河三角洲的中心，市区在后江（巴萨河）的西岸，宁桥码头是市中心的坐标，丐冷水上市场在城南的河道上，2010 年建成的芹苴大桥把它与对岸连起来，机场在西北 9 公里；朔庄一带有大量高棉族社区。胡志明市在东北约 170 公里。初来的人最容易犯的错，是把芹苴当作一座水上市场的小城，而它是一个 400 万人、覆盖半个三角洲的直辖市。",
@@ -10430,7 +10449,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
   erdenet: {
     identity:
-      "额尔登特是蒙古第二大城市，人口约10万余，坐落于蒙古北部鄂尔浑省，因大型铜钼矿开采而发展为蒙古重要的工业城市。",
+      "额尔登特是蒙古第二大城市，人口约11万（2026年），坐落于蒙古北部鄂尔浑省，因大型铜钼矿开采而发展为蒙古重要的工业城市。",
     // howItWorks sources: Wikipedia (2026-09): Erdenet (Orkhon Province capital; 112,520 2026; founded 1974 around copper-molybdenum mine; 240 km NW of Ulaanbaatar; rail branch; carpet factory 1981)
     howItWorks:
       "额尔登特是蒙古国第二大城市，也是鄂尔浑省的省会——这个省 1994 年专为这座城设立，面积很小，几乎就是城市本身。2026 年人口约 11 万。这座城 1974 年为开采额尔登特铜钼矿而建，矿山至今是亚洲最大的铜矿之一，矿业公司曾是蒙苏合资企业，如今由蒙古方面控股，是国家外汇收入的主要来源之一。城市按苏联的规划建成，公寓楼成片排列，矿区在城北的山上；1981 年建成的地毯厂是另一个标志。它在色楞格河与鄂尔浑河之间的谷地里，乌兰巴托在东南约 240 公里，一条铁路支线接入蒙古纵贯铁路，公路已全线铺装。地址写“区、街、楼、门”。初来的人最容易犯的错，是把额尔登特当作一座普通的省城，而它是一座为一座矿山而存在的城市。",
@@ -11189,8 +11208,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月是出行旺季，气候相对温和，适合登山、湖区与荒漠探索；冬季严寒（部分地区可至零下30余摄氏度），出行需充分准备保暖装备。跨区域出行建议预留充足时间，偏远荒漠地区（如曼格斯套）自驾需提前规划补给与向导。",
   },
   astana: {
+    // identity sources: 阿斯塔纳 2025 年初人口约 153 万（哈萨克斯坦国家统计局口径，见 howItWorks 已有留痕），
+    //   是 2002 年的三倍 —— **增长极快的城市，「逾130万」这种不带年份的写法很快就会过期**。
     identity:
-      "阿斯塔纳是哈萨克斯坦现任首都，人口逾130万，1997年由阿拉木图迁都至此，以密集的未来主义地标建筑群闻名，是哈萨克斯坦独立后国家建设的标志性展示窗口。",
+      "阿斯塔纳是哈萨克斯坦现任首都，人口约153万（2025年初），1997年由阿拉木图迁都至此，以密集的未来主义地标建筑群闻名，是哈萨克斯坦独立后国家建设的标志性展示窗口。",
     // howItWorks sources: Wikipedia (2026-09): Astana (capital since 1997; city of republican significance, appointed akim + elected maslikhat; ~810 km²; ~1.53 million Jan 2025; Ishim right/left bank; Kurokawa plan; second-coldest capital; LRT 2026)
     howItWorks:
       "阿斯塔纳自 1997 年 12 月起是哈萨克斯坦的首都，1998 年定名阿斯塔纳，2019 至 2022 年间曾名努尔苏丹；它是“共和国直辖市”，市长由总统任命，市议会由市民选出，市下分数个区。市域约 810 平方公里，2025 年初人口约 153 万，是 2002 年的三倍。伊希姆河把城市分成两岸：右岸是苏联时期的老城切利诺格拉德，街道格网与旧公寓区在这里；左岸是按日本建筑师黑川纪章的总体规划建起的新城，总统府、巴伊杰列克塔与可汗之帐沿着一条轴线排开，政府机关与新住宅区都在左岸。它是世界上仅次于乌兰巴托的第二冷的首都，冬天可到零下 35 度。多年建设的高架轻轨线在 2026 年投入运营，公交与合乘出租车承担大多数出行。哈萨克语与俄语并用。地址写“街道、楼号、门号”。初来的人最容易犯的错，是把左岸的新城当作整个阿斯塔纳，而右岸的老城才是大多数人生活的地方。",
@@ -11206,8 +11227,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "阿斯塔纳冬季极为寒冷漫长（可至零下30余摄氏度），夏季则炎热干燥，5月至9月是较适宜的旅行季节；左岸新城区建筑群集中、建议安排一整天步行结合出租车游览。",
   },
   almaty: {
+    // identity sources: 阿拉木图 2026 年约 235 万（哈萨克斯坦国家统计局口径，见 howItWorks 已有留痕）；
+    //   **加上阿拉木图州周边城镇的约 300 万是另一个口径**，只写在 howItWorks 里，不要混进 identity。
     identity:
-      "阿拉木图是哈萨克斯坦旧都与最大城市，人口逾200万，坐落于北天山外伊犁阿拉套山麓，是哈萨克斯坦的文化、教育与经济中心，也是探索北天山自然景观的核心门户。",
+      "阿拉木图是哈萨克斯坦旧都与最大城市，人口约235万（2026年），坐落于北天山外伊犁阿拉套山麓，是哈萨克斯坦的文化、教育与经济中心，也是探索北天山自然景观的核心门户。",
     // howItWorks sources: Wikipedia (2026-09): Almaty (capital until 1997; city of republican significance; 8 districts; ~2.35 million 2026; agglomeration ~3 million; alluvial fan, uphill = south; Medeu/Shymbulak in city; 1 metro line 2011)
     howItWorks:
       "阿拉木图是哈萨克斯坦最大的城市，1997 年以前是首都；它是“共和国直辖市”，市长由总统任命，市议会由市民选出，市下分 8 个区。2026 年人口约 235 万，加上周边阿拉木图州的城镇约 300 万人。城市建在外伊犁阿拉套山脚下的冲积扇上，整座城向南倾斜上升，本地人说方向不说东西南北，而说“上”与“下”——“上”是南面的山，“下”是北面的草原。苏联时期的中心在潘菲洛夫公园与共和国广场一带，街道是整齐的格网，行道树与水渠沿街而设；麦迪奥滑冰场与琴布拉克滑雪场在市界之内的山上。一条地铁线 2011 年通车，公交承担大多数出行。地震带上的城市，逆温层带来的雾霾是冬天的日常。俄语在这里通行，苹果是城市的名字与象征。地址写“街道、楼号、门号”。初来的人最容易犯的错，是把阿拉木图当作一座平原上的城市，而它从头到尾都是斜坡，方向感由山来定。",
@@ -11224,7 +11247,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
   shymkent: {
     identity:
-      "希姆肯特是哈萨克斯坦第三大城市，人口逾100万，2018年起为直辖市（此前为南哈萨克斯坦州首府，该州同年更名为突厥斯坦州、首府迁至突厥斯坦），历史上是丝绸之路商贸重镇，如今是哈萨克斯坦南部重要的工业与交通枢纽。",
+      "希姆肯特是哈萨克斯坦第三大城市，人口约127万（2025年），2018年起为直辖市（此前为南哈萨克斯坦州首府，该州同年更名为突厥斯坦州、首府迁至突厥斯坦），历史上是丝绸之路商贸重镇，如今是哈萨克斯坦南部重要的工业与交通枢纽。",
     // howItWorks sources: Wikipedia (2026-09): Shymkent (city of republican significance since 2018-06-19; ~1,170 km²; ~1.27 million 2025; Kazakh 67.5%, Uzbek 17.7%, Russian 8.9%; Tashkent 120 km; Sayram)
     howItWorks:
       "奇姆肯特 2018 年 6 月起是“共和国直辖市”，与阿斯塔纳、阿拉木图同级，市长由总统任命，市议会由市民选出；此前它是南哈萨克斯坦州的首府，脱离后该州更名突厥斯坦州，首府迁到突厥斯坦。市域约 1,170 平方公里，2025 年人口约 127 万，是哈萨克斯坦第三大城市。它是丝绸之路上的古城，最初是邻近古城赛拉姆的卫城，今天是南部的商业与工业中心：炼油、制药、冶金与纺织业集中于此，铁路枢纽与机场连接南北。哈萨克族约占三分之二，乌兹别克族约占五分之一，塔什干在南面约 120 公里，哈萨克语在这里比在北方城市更常听到。集市是这座城的日常。地址写“街道、楼号、门号”。初来的人最容易犯的错，是把奇姆肯特当作突厥斯坦州的首府，而它 2018 年起已是直辖市，首府在别处。",
@@ -11258,7 +11281,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
   turkestan: {
     identity:
-      "突厥斯坦是哈萨克斯坦南部一座历史古城，人口约20万，曾是丝绸之路上的重要商贸与宗教中心，因城内的亚萨维陵墓而闻名，是哈萨克斯坦最重要的伊斯兰朝圣与历史文化目的地。",
+      "突厥斯坦是哈萨克斯坦南部一座历史古城，人口约30万（2023年），曾是丝绸之路上的重要商贸与宗教中心，因城内的亚萨维陵墓而闻名，是哈萨克斯坦最重要的伊斯兰朝圣与历史文化目的地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Turkistan (Kazakhstan; capital of Turkistan Region, 160 km north-west of Shymkent near the Syr Darya; the region was renamed and the capital moved here in 2018 when Shymkent became a city of republican status; population about 300,000 in 2023, about 52.5 per cent Kazakh and 45.2 per cent Uzbek; archaeological records from the 4th century, capital of the Kazakh Khanate between the 16th and 18th centuries; the Mausoleum of Khoja Ahmed Yasawi built by Timur in the 1390s, UNESCO World Heritage and on Kazakh banknotes until 2006; local tradition holds that three visits equal one pilgrimage to Mecca; proclaimed Spiritual Capital of the Turkic World by the Organization of Turkic States in 2021; Hazrat Sultan International Airport opened 2021; Ahmet Yassawi University)
     howItWorks:
       "突厥斯坦是哈萨克斯坦突厥斯坦州的首府，在奇姆肯特西北约 160 公里、锡尔河附近，2023 年人口约 30 万；哈萨克斯坦的地方行政分州与区两级，州长由总统任命，地方议会选举产生。它成为州府是近年的事：2018 年奇姆肯特升格为共和国直辖市，原南哈萨克斯坦州改名突厥斯坦州并把首府迁到这里，此后城市按规划大规模新建，2021 年启用了新的国际机场。这座城的分量来自一座建筑：14 世纪 90 年代帖木儿下令为苏非导师霍加·艾哈迈德·亚萨维修建陵墓，工程未完工即停，因此正面至今保留着未装饰的砖砌，反而成为研究帖木儿时期建筑做法的实物，2003 年列入世界遗产，是哈萨克斯坦第一处。16 至 18 世纪它是哈萨克汗国的都城，历代可汗葬在陵旁。当地有“来此三次相当于一次朝觐”的说法，2021 年突厥国家组织称它为“突厥世界的精神首都”。居民中哈萨克族约五成二、乌兹别克族约四成五。初来的人最容易犯的错，是以为这是一座老城，而城区大部分是近年新建的。",

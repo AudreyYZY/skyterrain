@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: d659d83
+lastVerifiedCommit: bc9dea2
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -32,6 +32,8 @@ lastVerifiedCommit: d659d83
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | check:claims 新规则 C6i 扫出的 4 条：identity 的数没有年份且落后于同条目 howItWorks（同条目两段人口互相矛盾 · 第二轮（脚本 C6i 扫出）） | 4 | 0 / 4 / 0 | 当场修 4 条；新开 issue 0、关闭 0 |
+| 2026-09-08 | 新增的中英对照扫描扫出来的 7 条：identity 与 howItWorks 给出互相矛盾的全市人口（同条目两段人口互相矛盾 · 首轮） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 希腊 8 城 howItWorks/identity：把「2021 年人口」写成「2021 年普查人口」，并修一处漏改的「都会区」（希腊城市人口口径补全 · 批 2） | 11 | 0 / 11 / 0 | 当场修 11 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 韩国 8 城 identity/howItWorks 人口数字与口径（韩国城市人口刷新 · 批 1） | 15 | 0 / 15 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 法国 10 城 identity/howItWorks 人口口径与排名口径（法国城市人口口径补全 · 批 1） | 7 | 1 / 6 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |

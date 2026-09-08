@@ -8,6 +8,7 @@
  *   C6   人口数字没有年份 —— 「上海都会区人口约 2500 万」是哪一年、什么口径？
  *   C1a  主观最高级 —— 「茶马古道最险峻的一段」这种谁也核实不了的判断
  *   C1b  排名断言没有口径 —— 横滨「日本人口第二多的市」错在把两种口径混了
+ *   C6i  同一条目的 identity 与 howItWorks 给出两个互相矛盾的「全市人口」
  *   D1b  「公报未单列市区人口」之后又给出一个市区人口 —— 免责声明与数字自相矛盾
  *   D4   拼接漏空格造成的粘连句 —— 「…of the flight.Easter Island lies…」
  *
@@ -22,7 +23,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { collectTtsSegments } from "../lib/tts-manifest.ts";
 import { splitSentences } from "../lib/sentences.ts";
-import { HAS_YEAR, FRESH_SINCE, isMissingYear, isStale } from "./claim-rules.ts";
+import { HAS_YEAR, FRESH_SINCE, CENSUS_ZH, CENSUS_EN, isMissingYear, isStale } from "./claim-rules.ts";
 
 const BASELINE_PATH = "docs/claims-baseline.json";
 const UPDATE = process.argv.includes("--update-baseline");
@@ -120,6 +121,45 @@ const HAS_URBAN_FIGURE_ZH = /市(?:区|辖区)约\s*[\d.,]+\s*万/;
 const HAS_URBAN_FIGURE_EN =
   /\b(?:about|some|roughly)\s+[\d.,]+\s*(?:million|thousand)?\s+in the urban (?:area|core|districts?)\b/i;
 
+/**
+ * C6i：**同一个条目的 identity 与 howItWorks 给出两个互相矛盾的「全市人口」**。
+ *
+ * 这是这一轮反复撞到的形状，而且逐条人工核实很容易滑过去 —— 注意力在「这个数对不对」上，
+ * 不在「同一篇里另一段写的是什么」上。已经抓到的：
+ *   首尔 950 万 / 960 万（两段都过期，还互相打架）
+ *   库尔勒「五十余万」/「2020 年约 78 万」（前者查无出处）
+ *   济州市「含外国籍 50 万」/「内国人 49 万」（两个口径都没写明）
+ *   胡志明市 900 万 /「2025 年并区后 1400 万」（前者是并区前的数）
+ *   芹苴 120 万 / 420 万（同上）
+ *   塞萨洛尼基 identity 改对了「地区单位」、howItWorks 还写着「都会区」
+ *
+ * 判据：两段各取一个「全市档」的人口数（句中带次级口径词的不算），相差超过 5% 就报。
+ * 两段年份不同且其中一段是普查数时放过 —— 普查数与年度估计本来就会差一截。
+ */
+const CROSS_SUB_ZH =
+  /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇)/;
+const CROSS_SUB_EN =
+  /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|New Area|estates)\b/i;
+const CROSS_POP_ZH = /(常住人口|登录人口|普查人口|人口|居民)/;
+const CROSS_POP_EN = /\b(population|people|residents|inhabitants)\b/i;
+/** 中文数字紧跟在「人口」后；英文数字通常在词之前，所以取句中第一个带单位的数 */
+const CROSS_NUM_ZH = /(?:人口|居民)[^。；！？]{0,10}?([\d.,]+)\s*(万|亿)/;
+const CROSS_NUM_EN = /([\d.,]+)\s*(million|thousand)\b/i;
+/** 差多少算矛盾 */
+const CROSS_TOLERANCE = 0.05;
+
+function crossValue(s: string, zh: boolean): number | null {
+  const m = (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s);
+  if (!m) return null;
+  const n = parseFloat(m[1]!.replace(/,/g, ""));
+  if (!Number.isFinite(n)) return null;
+  const unit = m[2]!.toLowerCase();
+  const mult = unit === "亿" ? 1e8 : unit === "万" ? 1e4 : unit === "million" ? 1e6 : 1e3;
+  return n * mult;
+}
+
+interface CrossRow { section: string; sentence: string; v: number; census: boolean }
+
 type Rule =
   | "C6-人口数字缺年份"
   | "C6d-数字不是最新一期"
@@ -127,6 +167,7 @@ type Rule =
   | "C6f-签证天数写死"
   | "C1a-主观最高级"
   | "C1b-排名断言缺口径"
+  | "C6i-同条目两段人口打架"
   | "D1b-说了没单列市区人口又给出市区人口"
   | "D4-粘连句";
 
@@ -140,6 +181,8 @@ interface Hit {
 }
 
 const hits: Hit[] = [];
+/** C6i 用：按「条目 + 语言」攒 identity / howItWorks 两段的全市人口 */
+const crossByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
 
 const { segments } = await collectTtsSegments();
 
@@ -160,7 +203,23 @@ for (const seg of segments) {
     hits.push({ ...seg, rule: "D4-粘连句", sentence: seg.text.match(/.{0,30}[a-z)][.!?][A-Z].{0,30}/)?.[0] ?? "" });
   }
 
+  const crossable =
+    seg.kind === "travel" && (seg.section === "identity" || seg.section === "howItWorks");
+
   for (const s of splitSentences(seg.text)) {
+    if (crossable && (zh ? CROSS_POP_ZH : CROSS_POP_EN).test(s) && !(zh ? CROSS_SUB_ZH : CROSS_SUB_EN).test(s)) {
+      const v = crossValue(s, zh);
+      if (v !== null && v >= 1000) {
+        const key = `${seg.id}|${seg.lang}`;
+        if (!crossByEntry.has(key)) crossByEntry.set(key, { seg, rows: [] });
+        crossByEntry.get(key)!.rows.push({
+          section: seg.section,
+          sentence: s,
+          v,
+          census: (zh ? CENSUS_ZH : CENSUS_EN).test(s),
+        });
+      }
+    }
     if (isMissingYear(s, zh)) {
       hits.push({ ...seg, rule: "C6-人口数字缺年份", sentence: s });
     }
@@ -186,6 +245,23 @@ for (const seg of segments) {
   }
 }
 
+// C6i：两段的「全市档」人口对不上
+for (const [, { seg, rows }] of crossByEntry) {
+  const ident = rows.filter((r) => r.section === "identity");
+  const hiw = rows.filter((r) => r.section === "howItWorks");
+  if (!ident.length || !hiw.length) continue;
+  const a = ident.reduce((m, r) => (r.v > m.v ? r : m));
+  const b = hiw.reduce((m, r) => (r.v > m.v ? r : m));
+  // 普查数与年度估计本来就会差一截，只要写明了就不算矛盾
+  if (a.census !== b.census) continue;
+  if (Math.abs(a.v - b.v) / Math.max(a.v, b.v) <= CROSS_TOLERANCE) continue;
+  hits.push({
+    ...seg,
+    rule: "C6i-同条目两段人口打架",
+    sentence: `identity「${a.sentence.slice(0, 45)}」 vs howItWorks「${b.sentence.slice(0, 45)}」`,
+  });
+}
+
 // ── 报告 ───────────────────────────────────────────────────────────────
 
 const counts: Record<string, number> = {};
@@ -198,6 +274,7 @@ const RULES: Rule[] = [
   "C6f-签证天数写死",
   "C1a-主观最高级",
   "C1b-排名断言缺口径",
+  "C6i-同条目两段人口打架",
   "D1b-说了没单列市区人口又给出市区人口",
   "D4-粘连句",
 ];
