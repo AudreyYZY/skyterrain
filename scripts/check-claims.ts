@@ -86,6 +86,16 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
     { re: /(市区|中心城区|主城区)常住人口/, why: "中国地级市年度公报只有「全市常住人口」与「城镇常住人口」两档" },
     { re: /都会区人口/, why: "「都会区」在中国不是官方统计口径" },
   ],
+  // known-errors C6-c-5：挪威 SSB 只有 kommune（市镇）与 tettsted（城区）两档，没有「市区」
+  // 2026-09-08 那批 8 个挪威条目的 identity 全都写着「市区人口」—— 与中国那批同一形状，
+  // 而且更隐蔽：同一个自造标签底下，narvik/alta 的数字其实是 tettsted、其余是 kommune。
+  norway: [
+    { re: /市区人口/, why: "挪威 SSB 只有 kommune（市镇）与 tettsted（城区）两档" },
+  ],
+  // known-errors C6-c-5：ISTAT 只有 comune 常住人口；città metropolitana 是行政建制不是统计口径
+  italy: [
+    { re: /市区人口/, why: "意大利 ISTAT 只发布 comune（市镇）常住人口" },
+  ],
   // known-errors C6-c-4 ②：丹麦统计局只有 kommune 与 byområde 两档，没有「都会区」
   denmark: [
     { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "丹麦统计局只有 kommune（市镇）与 byområde（城区）两档，没有「都会区」" },

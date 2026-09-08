@@ -962,6 +962,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-barrier-reef": {
+    // seeing sources: 长约 2300 km、约 2900—3000 座礁体、约 900 座岛屿 —— GBRMPA 官方口径，2026-09-08 核；
+    //   1975 年设海洋公园、1981 年列入世界遗产、1770 年库克「奋进号」在此搁浅，均无误。
+    //   **白化的写法要特别注意**：`concept` 段没有把某一年钉死为「最近一次白化」，因此不会过期 ——
+    //   这是正确写法。**如果以后要补一句具体年份，必须知道 AIMS 每年 8 月发布长期监测年报**
+    //   （最近一次 2025-26 年报于 2026 年 8 月发布，显示 2024 年大规模白化后覆盖率正在回升；
+    //   2025 年 3 月又发生一次大规模白化，与宁格罗礁同步，是两处世界遗产礁首次同时白化）。
+    //   **珊瑚覆盖率与白化次数属 known-errors C6-j 那一类会变的量。**
     seeing:
       "The Great Barrier Reef stretches about 2,300 km along the north-east coast of Australia — the largest coral reef system in the world and the largest structure built by living organisms. It is made of roughly 3,000 individual reefs and 900 islands, and is visible from space.",
     formation:
@@ -979,12 +986,26 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "twelve-apostles": {
     seeing:
       "The Twelve Apostles are a group of tall limestone stacks standing in the Southern Ocean just off the Great Ocean Road in Victoria. They rise up to about 45 m out of the surf, a short way from sheer coastal cliffs. Despite the name there were never twelve; today only seven or eight remain standing.",
+    // formation sources: **岩石年代约 860 万—1400 万年前** —— 墨尔本大学 Gallagher 团队，《Australian Journal of
+    //   Earth Sciences》2026-04-24 发表；ABC News（2 级）
+    //   https://www.abc.net.au/news/science/2026-04-24/how-victorias-twelve-apostles-formed-over-millions-of-years/106594348
+    //   与 The Conversation（3 级）报道，2026-09-08 核。
+    //   **这是一项刚发表几个月的单一同行评审研究**，已标注研究年份 —— 下一轮要确认它是否被学界广泛
+    //   采纳、或已有后续修正。（与盖帕奇冰川、罗布泊干涸年代同属「会被新研究修正的量」。）
+    //   **现存岩柱数是会变的量**：2005 年倒了一座、2009 年又倒一座，Parks Victoria 口径现存七座
+    //   （截至 2026-09 核实）—— 下一轮要重新确认是否又有崩塌。
+    //   45 米高度、约 2 cm/年的侵蚀速率、「从未有过十二座」、旧名「母猪与小猪」与 1920 年代改名、
+    //   大洋路由一战归国士兵修建，均核实无误。
     formation:
-      "The cliffs are soft limestone, laid down on a sea floor 10–20 million years ago. The Southern Ocean's waves attack the base of the cliff, cutting caves, then arches, then — when an arch collapses — leaving an isolated pillar, or stack. The stacks are slowly undercut in turn and fall; one dropped in 2005. New ones are being cut from the retreating cliff.",
+      "The cliffs are soft limestone, most of it laid down between roughly 8.6 and 14 million years ago — the 2026 dating by a University of Melbourne team; older accounts gave a vaguer 10–20 million years. The Southern Ocean's waves attack the base of the cliff, cutting caves, then arches, then — when an arch collapses — leaving an isolated pillar, or stack. The stacks are slowly undercut in turn and fall: one dropped in 2005 and another in 2009, leaving seven standing on Parks Victoria's count as of 2026. New ones are being cut from the retreating cliff.",
     observation:
       "From the air the coast is a straight line of yellow cliffs with the stacks standing just offshore, wave trains wrapping around them, and the flat green farmland running right to the cliff edge. Gorges, blowholes and half-collapsed arches (London Bridge, the Grotto) punctuate the cliff line.",
+    // distinguish sources: 「霍伊老人」是**老红砂岩**（Old Red Sandstone，泥盆纪，约 3.7—3.8 亿年前）——
+    //   英国地质学会 https://www.geolsoc.org.uk/GeositesHoy 与英国地质调查局（均 1 级，2026-09-08 核）。
+    //   **原文写成「白垩海蚀柱」是错的**；英国真正的白垩海蚀柱是怀特岛的「针石」或多塞特的「老哈利岩」。
+    //   **拿别处的地貌作类比时，类比的那一头也要核** —— 侵蚀过程写对了，举的例子岩性错了。
     distinguish:
-      "These are sea stacks — erosional remnants of a retreating cliff — not reefs, not volcanic plugs, not deposited features. The process is the same one that made chalk stacks like the Old Man of Hoy, in softer, younger rock.",
+      "These are sea stacks — erosional remnants of a retreating cliff — not reefs, not volcanic plugs, not deposited features. The process is the same one that made Old Red Sandstone stacks like the Old Man of Hoy in Orkney, in softer and younger rock here.",
     concept:
       "Sea stacks record coastal erosion in progress: cliff → cave → arch → stack → stump. The \"Twelve Apostles\" are a snapshot of a coastline eating landward at roughly 2 cm a year. The number will keep changing as old stacks fall and new ones are isolated.",
     history:
@@ -1002,8 +1023,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Like Hainan and Taiwan, Tasmania is a continental island cut off by rising sea level — its rocks and (former) wildlife are mainland stock. Unlike them it is cool, wet and heavily glaciated, with landforms closer to New Zealand's South Island than to tropical China.",
     concept:
       "Tasmania shows what glaciation does to a landscape even at modest altitude: at these latitudes ice-age glaciers reached low, leaving lake-filled cirques and troughs across the highlands. Its isolation also preserved species lost on the mainland — it was the last stronghold of the thylacine.",
+    // history sources: 塔斯马尼亚荒野世界遗产区面积约 **158.4 万公顷**，**覆盖全岛近四分之一**（UNESCO 与澳大利亚
+    //   联邦环境部原文均为 almost a quarter）—— https://www.dcceew.gov.au/parks-heritage/heritage/places/world/tasmanian-wilderness
+    //   （1 级，2026-09-08 核）。全岛约 6.84 万 km²，158,400 ÷ 68,400 ≈ 23%，原文的「五分之一」偏低。
+    //   与大陆分离约 1.2 万年前（巴斯海峡陆桥沉没）、全岛近一半是国家公园/保护区（塔州 DNRE 口径约 40%—50.4%）、
+    //   袋狼最后据点、富兰克林大坝运动史实，均核实无误。
     history:
-      "Tasmanian Aboriginal people lived on the island for tens of thousands of years, cut off after the land bridge drowned; colonisation from 1803 was catastrophic for them. The Tasmanian Wilderness World Heritage Area, secured after the Franklin Dam campaign of the early 1980s, covers about a fifth of the state.",
+      "Tasmanian Aboriginal people lived on the island for tens of thousands of years, cut off after the land bridge drowned; colonisation from 1803 was catastrophic for them. The Tasmanian Wilderness World Heritage Area, secured after the Franklin Dam campaign of the early 1980s, covers almost a quarter of the state.",
   },
 
   "murray-darling": {
@@ -1028,6 +1054,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kgari: {
+    // seeing sources: **K'gari 是 2023-06-07 昆士兰州政府公告正式恢复的原住民名**（原 Fraser Island），
+    //   正文用的正是现行官方名 —— 这一条本轮特意核过，没有停在旧名。
+    //   世界最大沙岛、约 122—123 km 长、1992 年列入世界遗产、逾 40 km 彩色沙崖、
+    //   博曼金湖为世界最大悬湖、约半数世界悬湖在此、1991 年停止伐木次年列世遗，均核实无误。
+    //   布查拉人（Butchulla）作为传统所有者的表述与官方用法一致。2026-09-08 核。
     seeing:
       "K'gari (Fraser Island), off the south-east coast of Queensland, is about 123 km long and the largest sand island in the world. It is made almost entirely of quartz sand, yet grows rainforest over 30 m tall — the only place on Earth where rainforest grows on pure sand. World Heritage-listed in 1992; \"K'gari\" means \"paradise\" in the local language.",
     formation:
@@ -1043,6 +1074,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kakadu: {
+    // seeing sources: 约 2 万 km²（官方精确值 19,804 km²）、断崖长约 500 km 高 30—330 m、约 1.4 亿年前浅海、
+    //   退蚀速率每千年约 1 m、旱季末水鸟可达约 200 万只、玛杰贝贝岩棚约 6.5 万年 ——
+    //   均为 Parks Australia / DCCEEW 一手口径（1 级，2026-09-08 核）。
+    //   比尼／蒙古伊人作为传统所有者的表述与官方用法一致，未转述管理局未公开的内容。
     seeing:
       "Kakadu, in Australia's Northern Territory, covers about 20,000 km² — Australia's largest terrestrial national park, and one of the few places listed as World Heritage for both natural and cultural value. Its frame is the Arnhem Land sandstone plateau and, along its western edge, an escarpment running about 500 km and 30–330 m high, with vast seasonally flooded wetlands below it.",
     formation:
@@ -1068,11 +1103,23 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Grampians' cuestas are different from the body of the Great Dividing Range (a low, gentle upwarp) — they are clear \"cliff-plus-slope\" asymmetric ridges. Their sandstone is older than the Blue Mountains' and much more folded: the Blue Mountains beds are still roughly horizontal, the Grampians beds are visibly tilted.",
     concept:
       "A cuesta is the textbook landform of \"differential erosion on tilted beds\": soft layers are stripped to a gentle slope, the cut edge of a hard sandstone layer stands as a cliff, and the cliff faces the up-dip direction. A whole set of parallel cuestas like the Grampians is the best outcrop for reading the dip of the rock in the field.",
+    // history sources: 1991 年曾一度改名为 Grampians (Gariwerd) National Park，1992 年州政府换届后撤回；
+    //   **1998 年维多利亚州《地名法》确立双名制度后，Gariwerd 作为官方双名被重新确立并沿用至今**
+    //   （3 级，澳大利亚国立大学出版社专著章节，2026-09-08 核）。
+    //   **原文写「近年被恢复」已经过期近三十年** —— 「近年」「最近」「新近」这类相对时间词本身就是
+    //   会过期的写法，写的时候一律换成年份。
+    //   主峰威廉山约 1167 m、约 4 亿年前泥盆纪沉积、约 3.95 亿年前花岗岩侵入、维多利亚州约八成原住民
+    //   岩画在此，均核实无误；雅德瓦贾利与贾布伍隆两族名的拼写与官方用法一致。
     history:
-      "Gariwerd is deeply significant to the Jardwadjali and Djab Wurrung peoples, and holds about 80% of Victoria's known Aboriginal rock art sites. The explorer Thomas Mitchell named the range in 1836 after the Grampian Mountains of Scotland. \"Gariwerd\" has recently been restored as an official dual name.",
+      "Gariwerd is deeply significant to the Jardwadjali and Djab Wurrung peoples, and holds about 80% of Victoria's known Aboriginal rock art sites. The explorer Thomas Mitchell named the range in 1836 after the Grampian Mountains of Scotland. \"Gariwerd\" became the official dual name under Victoria's Geographic Place Names Act 1998 and remains so today.",
   },
 
   ningaloo: {
+    // seeing sources: 长约 300 km（UNESCO 原文 almost 300 km）、澳大利亚最大裾礁、2011 年与凯普山脉一同列入
+    //   世界遗产、3—8 月鲸鲨聚集季 —— https://whc.unesco.org/en/list/1369/（1 级，2026-09-08 核）。
+    //   伊尼古杜拉人作为传统所有者的表述与官方用法一致。
+    //   **注意**：2025 年 3 月宁格罗与大堡礁同步发生大规模白化（两处世界遗产礁首次同时白化），
+    //   正文未写死白化年份，暂时合规；日后要写必须带年份。
     seeing:
       "Ningaloo Reef, on the north-west coast of Western Australia, is about 300 km long and Australia's largest fringing reef — a coral reef growing right against the shore, in places only a hundred metres or two out. It is World Heritage-listed together with the inland Cape Range (2011). Between March and August one of the world's largest aggregations of whale sharks gathers here.",
     formation:
@@ -1090,8 +1137,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "shark-bay": {
     seeing:
       "Shark Bay is a large embayment on the mid-west coast of Western Australia, at the westernmost point of the Australian mainland, where north–south peninsulas and islands divide the water into a series of shallow gulfs. It is World Heritage-listed for three things: its vast seagrass beds, its dugong population, and the living stromatolites of Hamelin Pool.",
+    // formation sources: 厚度 **up to 10 metres** 核实无误 —— 西澳 DBCA 官方公园页
+    //   https://exploreparks.dbca.wa.gov.au/park/shell-beach-conservation-park（1 级，2026-09-08 核）。
+    //   **长度没有统一口径**：DBCA 自己的页面正文一处写 over 70km、另一处写 60km；维基约 60 km；
+    //   鲨鱼湾世界遗产游客中心约 120 km。**原文的「100 公里」在所有来源里都没出现过** ——
+    //   它像是在几个互相矛盾的数字之间取了个中间值。**遇到官方页面自相矛盾，正确做法是写明分歧、
+    //   不写死数字**，而不是每一轮再猜一个中间值。
+    //   哈梅林池盐度约为普通海水两倍、1616 年德克·哈托格登陆并留下锡盘、1991 年列入世界遗产，均核实无误。
     formation:
-      "The parallel peninsulas (Peron and others) are drowned former coastal sand dunes now standing as ridges. Hamelin Pool lies behind a shallow underwater bar at the south of the bay, so seawater exchange is slow; with strong evaporation the water is about twice as saline as normal seawater. Shell Beach is built from the shells of a small cockle that thrives in the low-diversity water, washed ashore over a stretch about 100 km long and up to about 10 m deep.",
+      "The parallel peninsulas (Peron and others) are drowned former coastal sand dunes now standing as ridges. Hamelin Pool lies behind a shallow underwater bar at the south of the bay, so seawater exchange is slow; with strong evaporation the water is about twice as saline as normal seawater. Shell Beach is built from the shells of a small cockle that thrives in the low-diversity water, washed ashore over a stretch several tens of kilometres long — the WA park authority's own page gives both 60 km and over 70 km, and other accounts cite more than 100 km, with no settled figure — and up to about 10 m deep.",
     observation:
       "From the air Shark Bay looks like an open hand: red-brown peninsulas reach into pale-green shallows, with channels of varying depth between them. The water around Hamelin Pool is whitish-green, and dark bands of stromatolite reef show close to shore. Shell Beach is a glaring line of pure white.",
     distinguish:
@@ -1103,6 +1157,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   purnululu: {
+    // seeing sources: 邦格尔邦格尔山高约 200—300 m、约 3.5 亿年前泥盆纪砂岩、约 2000 万年侵蚀成塔、
+    //   1987 年设立国家公园、2003 年列入世界遗产、UNESCO「砂岩喀斯特」表述，均核实无误，2026-09-08。
+    //   **`history` 段写的是 1983 年纪录片使其「进入公众视野」，不是「被发现」** ——
+    //   这个措辞差别很重要：那片地方的传统所有者一直知道它在哪。本批 4 篇（普努鲁鲁、卡尔卢卡尔卢、
+    //   波浪岩、国王峡谷）都用了这种写法，是正确范例。
     seeing:
       "Purnululu National Park is in the Kimberley region of north-eastern Western Australia. Its centrepiece is the Bungle Bungle Range — a mass of orange-and-grey, beehive-shaped sandstone cones rising about 200–300 m above flat surrounding grassland. It came to wide public notice only in the 1980s.",
     formation:
@@ -1118,6 +1177,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "wave-rock": {
+    // seeing sources: 高约 15 m、长约 110 m；岩体属伊尔冈克拉通、约 26 亿年花岗岩；1928 年在岩顶砌截水墙引流蓄水。
+    //   2026-09-08 核，全篇无误。巴拉东·努恩加人的相关表述与官方用法一致。
     seeing:
       "Wave Rock, beside the town of Hyden in the Western Australian wheatbelt, is a granite slope about 15 m high and 110 m long shaped like a breaking ocean wave \"frozen\" in place. It is in fact just a small part of the north side of a large inselberg called Hyden Rock.",
     formation:
@@ -1133,6 +1194,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "karlu-karlu": {
+    // seeing sources: 花岗岩约 16 亿年前（落在业界常见区间内）；**1953 年一块巨石被移走用作约翰·弗林的墓碑，
+    //   2008 年归还** —— 2026-09-08 核。
+    //   瓦鲁蒙古／凯特泰／阿利亚瓦拉／瓦尔皮里四族与官方双名 Karlu Karlu / Devils Marbles 的用法
+    //   与北领地公园管理机构一致，未转述圣地的具体含义。
     seeing:
       "Karlu Karlu, south of Tennant Creek in the Northern Territory, is a field of huge rounded granite boulders scattered across pale-red flat ground — some sitting alone, some balanced two-high as if about to roll — ranging from half a metre to six metres across. It is an important sacred site to the Warumungu and other peoples.",
     formation:
@@ -1148,6 +1213,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "kings-canyon": {
+    // seeing sources: 崖高约 100 m、梅里尼（Mereenie）砂岩约 4 亿年前、1989 年设立瓦塔卡国家公园、
+    //   Watarrka 是当地对一种金合欢的称呼 —— 2026-09-08 核，全篇无误。
+    //   卢里恰人（Luritja）的相关表述与官方用法一致。
     seeing:
       "Kings Canyon, in Watarrka National Park in the Northern Territory, is a deep valley cut by a creek through the George Gill Range, walled by near-vertical red-and-white sandstone cliffs about 100 m high. A permanent waterhole on the canyon floor is known as the \"Garden of Eden.\"",
     formation:
@@ -1271,6 +1339,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   kanas: {
     seeing:
       "Kanas Lake lies deep in the Altai Mountains at the far northern tip of China, at about 1,370 m — a long, narrow alpine lake. Its water changes colour with the weather, the season and the amount of suspended silt, from jade green to near-black blue, which is why it is called the \"colour-changing lake.\" It is ringed by dense Siberian conifer forest.",
+    // formation sources: 海拔 1374 m、长约 24.5 km、最深 197 m（另一说 188.5 m）——
+    //   喀纳斯景区管理委员会 https://www.kns.gov.cn/004/004004/20181122/5c36ad14-a023-450c-b4d3-947f8b9b2e8c.html
+    //   （1 级，2026-09-08 核）。
+    //   **「中国最深的湖泊之一」用了「之一」，且排序成立**（长白山天池最深 373 m > 喀纳斯 188.5 m >
+    //   抚仙湖 158.9 m）—— 正确写法的范例。图瓦人聚落、属北冰洋水系等表述经复核准确。全篇 6 板块无误。
     formation:
       "Kanas is a glacial-scour lake: a Quaternary glacier gouged a U-shaped valley, and after the ice retreated a terminal moraine (a ridge of glacier-carried gravel) dammed the valley mouth, so meltwater and rain pooled behind it. The lake is about 24 km long and around 190 m deep — one of the deepest lakes in China.",
     observation:
@@ -1286,6 +1359,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   sayram: {
     seeing:
       "Sayram Lake sits on the northern slope of the Tianshan at the south-western edge of the Junggar Basin, at about 2,070 m — the largest alpine lake in Xinjiang. It is a closed, internal-drainage lake, walled in by Tianshan mountain country, with deep blue, highly transparent water.",
+    // formation sources: 海拔 2073 m、面积 453 km²，官方表述为「新疆海拔最高、面积最大的高山冷水湖」（3 级，2026-09-08 核）。
+    //   成因：断陷盆地构造湖 + 第四纪冰川改造，与地质研究吻合。全篇 6 板块无误。
     formation:
       "Sayram is generally taken to be a tectonic lake in a fault-depression mountain basin, later modified by glaciers. It is fed by snowmelt and rain off the surrounding mountains, has no outlet, and balances by evaporation, so it is slightly saline. Several old shorelines around the lake show that the water once stood higher than it does now.",
     observation:
@@ -1301,6 +1376,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   tianchi: {
     seeing:
       "Tianchi (Heavenly Lake) of the Tianshan lies on the northern slope of Bogda Peak, about 100 km east of Ürümqi, at around 1,900 m — a glacial-scour lake hung partway up the mountainside. From the window you can see the deep-blue lake, the spruce forest at its shore and the permanently snow-capped Bogda Peak behind it all at once. It was anciently called \"Yaochi.\"",
+    // formation sources: 海拔 1910 m、长 3400 m、最深约 105 m —— 阜康市人民政府
+    //   https://www.fk.gov.cn/zjfk/mlfk/mqgj/842410.htm（1 级，2026-09-08 核）。
+    //   1982 年首批国家重点风景名胜区；「瑶池」传说与长白山天池的成因区分（冰川堰塞 vs 火山口湖）
+    //   经复核准确 —— **这两个「天池」同名不同地、成因也不同，是最容易被混成一件事的一对**。全篇无误。
     formation:
       "Tianchi is a lake where a Quaternary glacier gouged a U-shaped valley, then a moraine ridge dammed the valley mouth after the ice retreated and meltwater pooled behind it. The lake is about 3 km long and around 100 m deep. Glacial striations, roches moutonnées and several moraine ridges around it record repeated advances and retreats of the ice.",
     observation:
@@ -1314,6 +1393,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   bosten: {
+    // seeing sources: 海拔 1048 m；大湖面积约 988 km²，含小湖区共 1646 km² —— 新疆维吾尔自治区文化和旅游厅
+    //   https://wlt.xinjiang.gov.cn/wlt/c112782/202208/008cef60035646c3ae9d0397e613f8fa.shtml（1 级，2026-09-08 核）。
+    //   「中国最大的内陆淡水湖」成立：这个口径专指不入海的内流区淡水湖，呼伦湖微咸且经额尔古纳河
+    //   间歇外泄、洪泽湖属外流区，都不计入；正文用「常被称为」做了软化。
+    //   **面积数字有意没写进正文** —— 湖面面积逐年变化（近年因生态调水水位回升近 2 米），
+    //   日后若要补面积必须注明监测年份（known-errors C6-j）。
     seeing:
       "Bosten Lake lies in the Yanqi Basin at the southern foot of the Tianshan, at about 1,050 m, and is often called China's largest inland freshwater lake. The Kaidu River enters from the north-west and the Konqi River leaves to the south-west — it is an unusual inland lake with both an inflow and an outflow. Its west shore has extensive reed wetlands. It was anciently called the \"Western Sea.\"",
     formation:
@@ -1329,6 +1414,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   aibi: {
+    // seeing sources: 海拔 189 m（博乐市人民政府，1 级）；「新疆最大的咸水湖」为官方与主流媒体一致表述。
+    //   **2007-04-06 国务院办公厅批准艾比湖湿地晋升国家级自然保护区** ——
+    //   https://www.gov.cn/gzdt/2007-05/28/content_628018.htm（1 级，2026-09-08 核）。
+    //   **水域面积有意没写进正文**：受上游用水影响逐年剧烈波动、近几十年萎缩明显，
+    //   日后若要补面积必须标注监测年份与来源，不能写成固定值（known-errors C6-j）。
     seeing:
       "Lake Ebi sits in the south-western corner of the Junggar Basin, just inside the Alataw Pass — the largest saltwater lake in Xinjiang. It is the lowest collecting point of the western Junggar Basin, at about 190 m. Its area swings widely with the season and the inflow, and it is ringed by broad white salt flats and desert.",
     formation:
@@ -1346,8 +1436,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "lop-nur": {
     seeing:
       "Lop Nur lies at the far eastern end of the Tarim Basin. It was once the terminal lake of the Tarim, Konqi and other rivers, and one of the largest lakes of the Western Regions. It dried out completely in the mid-to-late 20th century and is now a plain of salt crust and yardangs. In satellite images, rings of former shoreline make the dry lake bed look like an ear — the \"ear of the Earth.\"",
+    // formation sources: **最后干涸时间约 1962 年** —— 中国科学院新疆生态与地理研究所 2008 年「东方道迩罗布泊大型
+    //   综合考察」依据实地与遥感资料的结论（中新社报道，2 级，2026-09-08 核）
+    //   http://www.chinanews.com.cn/cul/news/2008/12-25/1503302.shtml。
+    //   **原文写「1970 年代前后」，是把「卫星第一次拍到」当成了「实际干涸」**：
+    //   1972 年美国地球资源卫星拍到那张「大耳朵」影像时，湖底早已是干的。
+    //   学界另有二十世纪三四十年代之说，但没有主流研究支持 1970 年代这个年代。
+    //   同条目 `seeing` 段用的「20 世纪中后期」更稳，两处原本口径不一致，已把 formation 收紧到有出处的结论。
+    //   1964-10-16 中国首颗原子弹在罗布泊地区试爆、1980 年彭加木失踪、1996 年余纯顺遇难，均核实无误。
+    //   **这是一个会被新考察结论修正的量**，日后有权威新结论要回来更新。
     formation:
-      "Lop Nur is the lowest collecting area of the Tarim Basin, and historically it \"wandered\" around the basin as the rivers changed course, growing and shrinking. In modern times heavy upstream irrigation plus a drying climate cut the inflow sharply, and the lake dried out completely around the 1970s, leaving a salt crust tens of centimetres thick. Wind erosion has carved fields of yardangs across the dry bed and its surroundings.",
+      "Lop Nur is the lowest collecting area of the Tarim Basin, and historically it \"wandered\" around the basin as the rivers changed course, growing and shrinking. In modern times heavy upstream irrigation plus a drying climate cut the inflow sharply, and a Chinese Academy of Sciences survey concluded the lake dried out completely around 1962, though scholars still disagree on the exact date, leaving a salt crust tens of centimetres thick. Wind erosion has carved fields of yardangs across the dry bed and its surroundings.",
     observation:
       "From the air Lop Nur is a large, stark-white salt-crust plain in the eastern basin, with concentric pale stripes (the \"big ear\") marking shorelines of different ages. To the north-west is a field of yardang mounds; to the south, the gobi of the Altun Mountains. In recent years large, regular blue-green ponds have appeared in the lake area — artificial brine ponds for mining potash.",
     distinguish:
@@ -1360,8 +1459,18 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
 
   "tarim-river": {
+    // seeing sources: **塔里木河长度有两套并存口径，差别接近一倍**：
+    //   ① **干流 1321 km**（三条源流在肖夹克汇合处 → 台特玛湖）—— 新疆塔里木河流域管理局口径（2 级）；
+    //   ② **含最长源流** 2137 / 2179 / 2327 / 2486 km（从叶尔羌河源头算起）—— 各家数字还互不统一，
+    //      新疆水利厅《水利百科》给 2179 km（1 级）
+    //      http://slt.xinjiang.gov.cn/slt/slbk/201803/a23aa18292b54492b41bbda5049991da.shtml，2026-09-08 核。
+    //   **原文的「约 2000 公里」卡在两者中间，哪一套都不是**，而同条目 formation 段写的是「三条源流汇合而成」
+    //   （暗示从汇合点起算）—— 一篇之内自相矛盾。**写正文前先确认是干流还是含源流**，
+    //   这与达令河「干流 1545 km / 含最长源头支流 2740 km」是同一形状的坑。
+    //   20 世纪 70 年代起下游约 400 km 断流、台特玛湖干涸，2000 年起生态输水（至 2024 年已第 25 次、
+    //   累计约 98 亿 m³），台特玛湖重新维持水面 —— 经复核准确。
     seeing:
-      "The Tarim River runs west to east along the northern rim of the Tarim Basin for about 2,000 km — China's longest inland river. It has no outlet to the sea and finally dies away in the desert and terminal lakes of the south-eastern basin. From the air it is a curving line at the edge of the yellow sand sea, fringed with dark-green wild poplar and farmland.",
+      "The Tarim River runs west to east along the northern rim of the Tarim Basin — China's longest inland river; its main stem, from where the three source rivers meet to Lake Taitema, is 1,321 km, or over 2,000 km measured from the source of its longest tributary, the Yarkand. It has no outlet to the sea and finally dies away in the desert and terminal lakes of the south-eastern basin. From the air it is a curving line at the edge of the yellow sand sea, fringed with dark-green wild poplar and farmland.",
     formation:
       "The Tarim forms where three source rivers — the Aksu, the Yarkand and the Hotan — meet near Alar, carrying snowmelt from the Tianshan, Kunlun and Pamirs. The basin floor is extremely flat and the water is silt-laden, so the channel keeps silting up and shifting — a classic \"wandering river\" — and its floodplain grows salt- and drought-tolerant wild poplar.",
     observation:
@@ -1375,6 +1484,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   ertis: {
+    // seeing sources: 「中国唯一流入北冰洋的河流」—— 新疆维吾尔自治区自然资源厅
+    //   https://zrzyt.xinjiang.gov.cn/xjgtzy/mtxc/202106/9e1ee097d1ee466ea7ebf86005ddaa43.shtml（1 级，2026-09-08 核）。
+    //   喀纳斯经喀纳斯河→布尔津河汇入额尔齐斯河、同属该水系，正文的简化表述没有把两条河混成一件事。
+    //   **出境后的流路用的是中性水文表述，不描述边界线、不表态主权** —— 零争议红线复核通过。全篇无误。
     seeing:
       "The Irtysh rises on the southern slope of the Altai and flows from south-east to north-west across northern Xinjiang; beyond the border it runs through Kazakhstan and Russia and finally reaches the Arctic Ocean — the only river in China belonging to an Arctic drainage. From the air it meanders in a broad, flat valley lined with continuous poplar woods and green meadow.",
     formation:
@@ -1390,8 +1503,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yarkant-river": {
+    // seeing sources: 在三源汇合处，**阿克苏河多年平均水量占三源总水量约 78%（33.58 亿 m³）**，是塔里木河干流
+    //   唯一常年补给源；**叶尔羌河同处年均水量仅 0.23 亿 m³（约 0.5%）**，出山后大部分渗漏蒸发于沙漠，
+    //   只有洪水期才有余水汇入干流 —— 中国科学院新疆生态与地理研究所
+    //   https://egi.cas.cn/xwdt/mtsm/202308/t20230814_6859047.html（1 级，2026-09-08 核）。
+    //   **原文的「最大的一条源流」按水量是错的，只有按河道长度才成立** ——
+    //   「最大」这个词在河流里至少可以指长度、水量、流域面积三样，不写明按哪一样就会指向不同的河。
+    //   同条目 distinguish 段写的「主要水源之一」是对的，两处原本自相矛盾。
     seeing:
-      "The Yarkand River rises on the northern slope of the Karakoram and flows from south-west to north-east through the western parts of the Kashgar and Hotan areas — the largest single source of the Tarim River. From the air it comes out of the brown mountains toward the Kunlun and spreads into a huge alluvial fan at the mountain front, with a string of oases along the fan edge.",
+      "The Yarkand River rises on the northern slope of the Karakoram and flows from south-west to north-east through the western parts of the Kashgar and Hotan areas — the longest of the Tarim's three source rivers by course, though it carries far less water than the Aksu, which is the main stem's principal year-round source. From the air it comes out of the brown mountains toward the Kunlun and spreads into a huge alluvial fan at the mountain front, with a string of oases along the fan edge.",
     formation:
       "The Yarkand's water is glacial meltwater from the Karakoram and the Pamirs. It carries a heavy silt load and builds a very large alluvial fan on the south-western rim of the Tarim Basin; the oases of Yarkand, Makit and Bachu all sit on this fan. Its lower channel wanders and shifts.",
     observation:
@@ -1407,6 +1527,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "ili-valley": {
     seeing:
       "The Ili Valley, in western Xinjiang, is a triangular valley in the Tianshan that opens to the west. The Ili River winds along its floor between farmland, orchards and grassland, with the snow peaks of the Tianshan to the north. Greener and moister than anywhere else in Xinjiang, it is called \"the Jiangnan beyond the passes.\"",
+    // formation sources: 伊犁河谷平均年降水量约 417 mm、山区达 600–700 mm，为新疆最湿润区域 —— 中国气象局
+    //   https://www.cma.gov.cn/kppd/kppdsytj/202111/t20211103_4154439.html（1 级，2026-09-08 核）。
+    //   **正文写的是「局部……可达 500 毫米以上」，没有把山区数据当成全谷平均值** —— 正确写法。
+    //   伊犁河向西流入巴尔喀什湖属外流河，是中性水文表述，不涉边界线与主权，红线复核通过。
     formation:
       "The valley mouth faces west, straight into the prevailing westerlies, so moisture from the Atlantic and Central Asia is funnelled in and drops more rain on the windward slopes (locally over 500 mm a year, far more than southern Xinjiang). River alluvium has laid a flat, fertile plain on the valley floor, and the flanking mountains carry vertical belts of forest and meadow.",
     observation:
@@ -1438,6 +1562,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   bayanbulak: {
+    // seeing sources: 平均海拔 2400 m —— 和静县人民政府（1 级，2026-09-08 核）；另有二手资料给 2500 m，两说并存，
+    //   正文与政府侧数据一致。四面环山的高山盆地里的曲流成因、蒙古语词源、天鹅湖国家级自然保护区
+    //   均经复核准确。全篇 6 板块无误。
     seeing:
       "The Bayanbulak grassland lies in a mountain-ringed high basin in the central Tianshan, above about 2,400 m. The basin floor is very flat and poorly drained, with wide areas of marsh and meandering channels. The Kaidu River loops through it in countless tight bends — the famous \"Nine Bends and Eighteen Turns.\"",
     formation:
@@ -1476,6 +1603,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Flaming Mountains are a continuous red rock ridge with regularly spaced gullies on the north side of the Turpan Basin, gobi and karez oasis to the south, the brown mountains of the Tianshan to the north. Several streams (such as Mutou Gully and Grape Valley) cut straight across the range, and those gullies are green strips.",
     distinguish:
       "See the Kuqa Grand Canyon entry. The Flaming Mountains are \"broad and low, regularly gullied, continuous as a ridge\" — you look at the continuous red massif and its sharp contrast with the oasis to the south; the Kuqa Grand Canyon is a single \"narrow and deep\" gorge.",
+    // concept sources: 东西绵延约 100 km（东起鄯善兰干流沙河、西止吐鲁番桃儿沟），最宽处约 10 km，多方一致，2026-09-08 核。
+    //   **「地表温度」与「气象站气温」是两回事**：火焰山地表近年多次测得 80–89℃（景区温度计），
+    //   那是裸露沙石的地表温度；中国最热地区的气温纪录出自吐鲁番的气象站。
+    //   **正文已明确把两者分开、并用「之一」做了限定，是正确写法的范例**，本轮无需改动。
+    //   **具体温度数字有意没写进正文** —— 那是逐年刷新的极值，写死就会过期（known-errors C6-j）。
     concept:
       "The Flaming Mountains are a combination of \"anticline ridge plus dry heat\": the beds were arched into an anticline, the exposed soft red layers were cut by water into regular gullies; add a closed, low basin, clear skies and dark rock that absorbs heat strongly, and you get the extreme ground temperatures here. The actual temperature records come from nearby weather stations, not from the range itself.",
     history:

@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 8d0af66
+lastVerifiedCommit: 2af257f
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,9 @@ lastVerifiedCommit: 8d0af66
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | terrain-content 12 篇 × 6 板块：大堡礁/十二门徒岩/塔斯马尼亚/K'gari/卡卡杜/格兰坪/宁格罗/鲨鱼湾/普努鲁鲁/波浪岩/卡尔卢卡尔卢/国王峡谷（地形讲解核实 · 批 8（澳大利亚海岸/岛屿/奇观 12 篇）） | 14 | 8 / 6 / 0 | 当场修 14 条；新开 issue 0、关闭 0 |
+| 2026-09-08 | travel-content 16 个条目的 identity / howItWorks 人口段与排名（城市人口口径核实 · 挪威 8 城 + 意大利 8 城） | 20 | 0 / 20 / 0 | 当场修 20 条；新开 issue 0、关闭 0 |
+| 2026-09-08 | terrain-content 12 篇 × 6 板块：喀纳斯/赛里木湖/天山天池/博斯腾湖/艾比湖/罗布泊/塔里木河/额尔齐斯河/叶尔羌河/伊犁河谷/巴音布鲁克/火焰山（地形讲解核实 · 批 7（新疆湖泊/河流/山地 12 篇）） | 12 | 9 / 3 / 0 | 当场修 12 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | check:claims 新增 C6k 规则后，全库扫出并清零的三处（C6k 新规则扫出的三处「这个国家没有的口径」） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 1 |
 | 2026-09-08 | travel-content 15 个中国条目的 identity / howItWorks 人口段（城市人口口径核实 · 中国 15 城（C6 专项）） | 15 | 0 / 15 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块：大分水岭/澳洲阿尔卑斯/麦克唐奈/弗林德斯/蓝山/皮尔巴拉/大维多利亚沙漠/纳拉伯/大自流盆地/艾尔湖/乌鲁鲁/卡塔丘塔（地形讲解核实 · 批 6（澳大利亚 12 篇）） | 13 | 9 / 4 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |

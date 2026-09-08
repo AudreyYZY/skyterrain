@@ -4400,8 +4400,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   lillehammer: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   利勒哈默尔 kommune 2026 年二季度 **29,462**；tettsted 2025 年约 2.09–2.17 万（SSB，1 级）。
+    //   原文的「市区人口约 2.8 万」两档都对不上，而同条目 howItWorks 写的 29,011 是 kommune 口径。
     identity:
-      "利勒哈默尔在奥斯陆以北约 180 公里、挪威最大的湖——姆约萨湖的北端，古德布兰河谷的谷口，市区人口约 2.8 万。它因 1994 年冬奥会而为世界所知，至今保留着跳台、雪橇赛道和滑雪场，是挪威内陆冬季运动的中心之一。",
+      "利勒哈默尔在奥斯陆以北约 180 公里、挪威最大的湖——姆约萨湖的北端，古德布兰河谷的谷口，市镇人口约 2.9 万（2026 年第二季度，SSB）。它因 1994 年冬奥会而为世界所知，至今保留着跳台、雪橇赛道和滑雪场，是挪威内陆冬季运动的中心之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lillehammer (Norway; municipality in Innlandet county, 29,011 residents in 2025, 39th most populous, 478 km²; at the northern tip of Lake Mjøsa, Norway's largest lake; market rights in 1827, merged with Fåberg in 1964; host of the 1994 Winter Olympics and the 2016 Winter Youth Olympics; Maihaugen, the largest open-air museum in Norway with 185 historic buildings, and the Norwegian Olympic Museum, the only museum in northern Europe devoted to the whole history of the Games; the Lysgårdsbakkene ski jumps and alpine venues; Sigrid Undset, Nobel laureate of 1928, lived at Bjerkebæk from 1919 to 1940; UNESCO City of Literature 2017)
     howItWorks:
       "利勒哈默尔是挪威内陆郡的市镇，2025 年人口 29,011，市域约 478 平方公里；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市在挪威最大湖米约萨湖的北端，1827 年获得集市权，1964 年与法贝格市镇合并。1994 年冬季奥运会在这里举办，是这座三万人的城市至今的分水岭：吕斯戈兹跳台、雪车赛道与几处山地赛场都留了下来，成为长期使用的训练与比赛设施，2016 年又办了冬季青年奥运会，奥林匹克博物馆是北欧唯一一座讲述奥运会全史的博物馆。迈豪根露天博物馆有 185 栋迁建的老建筑，是挪威最大的露天博物馆。1928 年诺贝尔文学奖得主西格丽德·温塞特 1919 至 1940 年住在城中的比耶克贝克，2017 年这座城获评联合国教科文组织“文学之都”。初来的人最容易犯的错，是把它当作滑雪场，而山上的哈菲尔与克维特菲尔才是雪场，城在湖边。",
@@ -4418,11 +4424,19 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   kristiansand: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   克里斯蒂安桑 kommune 2026 年二季度 **119,720**；tettsted 2026-01-01 **68,300**（SSB，1 级）。
+    //   **「挪威第五大城区」是错的**：SSB 官方城区排名表里（2026-01-01）克里斯蒂安桑城区列**第 8**
+    //   https://www.ssb.no/befolkning/folketall/artikler/de-storste-byene-og-tettstedene-i-norge（1 级）——
+    //   奥斯陆 / 卑尔根 / 斯塔万格-桑内斯 / 特隆赫姆 / 德拉门 / 弗雷德里克斯塔-萨尔普斯堡 / 波什格伦-希恩之后。
     identity:
-      "克里斯蒂安桑在挪威最南端、面朝斯卡格拉克海峡，市区人口约 11 万，是南部海岸（Sørlandet）最大的城市，也是通往丹麦的渡轮口岸。城市 1641 年由国王克里斯蒂安四世按棋盘格规划建立，老城区“Kvadraturen”至今是规整的方格。夏天是挪威人自己的度假胜地——白色木屋、光滑的礁石海岸、相对温暖的海水。",
+      "克里斯蒂安桑在挪威最南端、面朝斯卡格拉克海峡，市镇人口约 12.0 万（2026 年第二季度，SSB），是南部海岸（Sørlandet）最大的城市，也是通往丹麦的渡轮口岸。城市 1641 年由国王克里斯蒂安四世按棋盘格规划建立，老城区“Kvadraturen”至今是规整的方格。夏天是挪威人自己的度假胜地——白色木屋、光滑的礁石海岸、相对温暖的海水。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kristiansand (Norway; administrative centre of its municipality and of Agder county, about 67,920 residents in 2025, the fifth-largest urban area in Norway; founded on 5 July 1641 by King Christian IV on a Renaissance grid plan still visible in the central Kvadraturen; five urban boroughs plus Songdalen and Søgne after the 2020 merger; the sunniest part of Norway with a temperate oceanic climate; Kristiansand Zoo and Amusement Park with over 900,000 visitors a year; beaches at Hamresanden and Bystranda; ferry across the Skagerrak; University of Agder)
     howItWorks:
-      "克里斯蒂安桑是挪威阿格德尔郡的行政中心，2025 年人口约 6.8 万，是挪威第五大城区；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市 1641 年 7 月 5 日由国王克里斯蒂安四世下令建立，按文艺复兴时期的棋盘格一次规划，这套方格街区至今叫“卡德拉图伦”，是市中心的形状，也是理解这座城的钥匙——它不是自然长出来的港口聚落，而是国王为控制斯卡格拉克海峡而设的城。2020 年它与松格达伦、瑟格内两个市镇合并，如今分五个城区加两片原市镇的乡村地带。这一带是挪威日照最多的地方，气候温和，夏天挪威人南下到这里的海滩；动物园与游乐园每年接待九十多万人，是全国参观人数最多的旅游景点之一。渡轮跨海通往丹麦，阿格德尔大学在城里。初来的人最容易犯的错，是以为挪威南部也是峡湾，而这一段海岸是低平的岩石与沙滩。",
+      "克里斯蒂安桑是挪威阿格德尔郡的行政中心，2026 年第二季度市镇人口约 12.0 万；城区（tettsted）2026 年 1 月 1 日约 6.83 万人，按城区人口计列全国第八；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市 1641 年 7 月 5 日由国王克里斯蒂安四世下令建立，按文艺复兴时期的棋盘格一次规划，这套方格街区至今叫“卡德拉图伦”，是市中心的形状，也是理解这座城的钥匙——它不是自然长出来的港口聚落，而是国王为控制斯卡格拉克海峡而设的城。2020 年它与松格达伦、瑟格内两个市镇合并，如今分五个城区加两片原市镇的乡村地带。这一带是挪威日照最多的地方，气候温和，夏天挪威人南下到这里的海滩；动物园与游乐园每年接待九十多万人，是全国参观人数最多的旅游景点之一。渡轮跨海通往丹麦，阿格德尔大学在城里。初来的人最容易犯的错，是以为挪威南部也是峡湾，而这一段海岸是低平的岩石与沙滩。",
     layout:
       "克里斯蒂安桑建在一片平坦的沙洲和礁石海岸上，老城是国王规划的方格网，木屋刷成白色。市中心有鱼市、要塞和一片老木屋区（Posebyen）。海边是长长的沙滩（Bystranda）和栈桥。城市周围是南部典型的低缓丘陵、松林和无数小岛。",
     gettingAround:
@@ -4436,11 +4450,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   stavanger: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   斯塔万格 kommune 2026 年二季度 **151,761**（SSB，1 级）。
+    //   **「约 36 万人的城区」与它自己的排名口径对不上**：SSB 官方城区（tettsted）表里
+    //   斯塔万格/桑内斯城区 2026-01-01 为 **244,378**，确实排第 3 —— 但那是 24.4 万，不是 36 万。
+    //   36 万更接近含索拉、兰达伯格等在内的「雅伦地区 / Stavanger-regionen」这一更宽泛的功能区
+    //   （约 35.4 万，2026），**与「第三大城市连绵区」这个排名所依据的 tettsted 不是同一个数**。已分开写。
     identity:
-      "斯塔万格在挪威西南、一片被峡湾和岛屿切碎的半岛上，市区人口约 14 万。它原本是个靠鲱鱼和沙丁鱼罐头的小城，1969 年北海发现石油后成了挪威的“石油之都”，也是海上油气作业的总部和补给基地。老城有北欧保存最完整的一片 18–19 世纪白色木屋。",
+      "斯塔万格在挪威西南、一片被峡湾和岛屿切碎的半岛上，市镇人口约 15.2 万（2026 年第二季度，SSB）。它原本是个靠鲱鱼和沙丁鱼罐头的小城，1969 年北海发现石油后成了挪威的“石油之都”，也是海上油气作业的总部和补给基地。老城有北欧保存最完整的一片 18–19 世纪白色木屋。",
     // howItWorks sources: Wikipedia (2026-09): Stavanger (merged with Finnøy/Rennesøy 2020; ~151,669 2025; Rogaland capital; Stavanger/Sandnes urban area ~360,000; founded 1125; oil 1969, Equinor HQ; Sola; Jæren Line; Ryfast; Kolumbus); Municipalities of Norway
     howItWorks:
-      "斯塔万格是挪威第四大市镇，罗加兰郡的郡治，2020 年与芬岛、伦内斯岛两个岛屿市镇合并；2025 年人口约 15 万，而它与南面的桑内斯——一个独立的市镇——连成约 36 万人的城区，是挪威第三大城市连绵区。市镇管小学、幼儿园与规划，郡管高中与公共交通公司 Kolumbus，国家管医院与警察。1969 年北海发现石油后，这座城被选为陆上基地，从此是挪威的“石油之都”：国家石油公司 Equinor 的总部与挪威石油博物馆都在这里，约五分之一的居民有移民背景，英语在办公室与街头通行。老城的木屋区 Gamle Stavanger 在瓦根港的西侧，1125 年建成的大教堂是市中心的坐标原点。索拉机场在西南，耶伦铁路线通往桑内斯，Ryfast 海底隧道通往吕瑟峡湾与布道石。没有轻轨，公交与汽车是日常。地址写“街道、门牌、四位邮编”，邮编 40 开头。初来的人最容易犯的错，是把斯塔万格当作布道石的中转站，而它是挪威能源产业的中心。",
+      "斯塔万格是挪威第四大市镇，罗加兰郡的郡治，2020 年与芬岛、伦内斯岛两个岛屿市镇合并；2025 年人口约 15 万，而它与南面的桑内斯——一个独立的市镇——连成挪威第三大的城市连绵区——按官方城区（tettsted）口径 2026 年 1 月 1 日约 24.4 万人；若把索拉、兰达伯格等相连市镇一并计入的「雅伦地区」则约 35 万人。市镇管小学、幼儿园与规划，郡管高中与公共交通公司 Kolumbus，国家管医院与警察。1969 年北海发现石油后，这座城被选为陆上基地，从此是挪威的“石油之都”：国家石油公司 Equinor 的总部与挪威石油博物馆都在这里，约五分之一的居民有移民背景，英语在办公室与街头通行。老城的木屋区 Gamle Stavanger 在瓦根港的西侧，1125 年建成的大教堂是市中心的坐标原点。索拉机场在西南，耶伦铁路线通往桑内斯，Ryfast 海底隧道通往吕瑟峡湾与布道石。没有轻轨，公交与汽车是日常。地址写“街道、门牌、四位邮编”，邮编 40 开头。初来的人最容易犯的错，是把斯塔万格当作布道石的中转站，而它是挪威能源产业的中心。",
     layout:
       "斯塔万格围着一个小港湾（Vågen）展开，港湾一侧是餐饮酒吧带（Øvre Holmegate 是刷成彩色的一条街），另一侧的山坡上是“老斯塔万格”（Gamle Stavanger）成片的白色木屋。城市往外是低缓的耶伦农业平原和一道道深切的峡湾。石油博物馆造型像海上平台，立在水边。",
     gettingAround:
@@ -4454,8 +4477,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   bergen: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   卑尔根 kommune 2026 年二季度 **295,009**（SSB，1 级）；**按 kommune 人口是全国第二大市镇，排名成立**。
+    //   **「都会区约 45 万」保留但注意**：与 Bergen storbyregion 的二手数据（约 43.8–46.9 万，2024）量级相符，
+    //   但不是 SSB 的单一官方口径 —— 下一轮要么找到官方口径，要么改成不带数字的表述。
     identity:
-      "卑尔根是挪威第二大城市，西海岸峡湾区的中心，市区人口约 29 万，被七座山环抱、面朝一条通往外海的峡湾。中世纪它是汉萨同盟在北欧的重要商站，靠鳕鱼干贸易繁荣，港边那排彩色木质商馆（布吕根 Bryggen）是世界遗产。这里也是挪威最多雨的大城市，一年约有 240 天下雨。",
+      "卑尔根是挪威第二大城市，西海岸峡湾区的中心，市镇人口约 29.5 万（2026 年第二季度，SSB），被七座山环抱、面朝一条通往外海的峡湾。中世纪它是汉萨同盟在北欧的重要商站，靠鳕鱼干贸易繁荣，港边那排彩色木质商馆（布吕根 Bryggen）是世界遗产。这里也是挪威最多雨的大城市，一年约有 240 天下雨。",
     // howItWorks sources: Wikipedia (2026-09): Bergen (parliamentary byråd since 2000; 8 bydeler; 465 km²; ~294,000 2024; Vestland capital 2020; metro ~450,000; Bryggen UNESCO 1979; Bybanen 2010; ~240 precipitation days); Municipalities of Norway
     howItWorks:
       "卑尔根是挪威第二大城市，2020 年起是韦斯特兰郡的首府；2000 年起实行议会制，由市议会多数派组成的市政府（byråd）执政，市下分 8 个区（bydel）。市镇管小学、幼儿园与规划，郡管高中与公共交通公司 Skyss，国家管医院与警察。市域约 465 平方公里，2024 年人口约 29 万，都会区约 45 万。城市被七座山围在一个海湾的尽头：布吕根码头的汉萨木屋 1979 年列入世界遗产，鱼市在瓦根港的顶端，托尔加尔门宁根是市中心的广场，弗洛伊恩缆车把人送上山看全城；2010 年通车的 Bybanen 轻轨连起机场、市中心与菲林斯达伦。一年约 240 天有降水，雨衣是市民的日常。卑尔根方言与“卑尔根不是挪威”的自我认同是这座城的性格，海达路德邮轮从这里出发，卑尔根铁路通往奥斯陆。地址写“街道、门牌、四位邮编”，邮编 50 开头。初来的人最容易犯的错，是把卑尔根当作峡湾的门户，而它是一座有自己七百年身份的城市。",
@@ -4472,11 +4502,18 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   alesund: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   奥勒松 kommune 2026 年二季度 **59,790**；tettsted 2026-01-01 **56,763**（SSB，1 级）。
+    //   **「挪威第九大城镇」已过期**：按 SSB 官方城区排名表（2026-01-01），奥勒松城区**已被通斯贝格
+    //   （57,011）反超，现列第 10**。名次是会被反超的量，写的时候要带时点。
     identity:
-      "奥勒松在挪威西海岸、几座小岛之间，市区人口约 5 万，是挪威重要的渔业和海产加工港。1904 年一场大火几乎烧光全城，之后几年里用当时流行的新艺术风格（Jugendstil）统一重建，因此整座市中心是罕见的、成片的新艺术建筑——塔楼、尖顶、石雕花草，是它最大的特色。",
+      "奥勒松在挪威西海岸、几座小岛之间，市镇人口约 6.0 万（2026 年第二季度，SSB），是挪威重要的渔业和海产加工港。1904 年一场大火几乎烧光全城，之后几年里用当时流行的新艺术风格（Jugendstil）统一重建，因此整座市中心是罕见的、成片的新艺术建筑——塔楼、尖顶、石雕花草，是它最大的特色。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ålesund (Norway; town in Møre og Romsdal county with 55,684 residents in 2024 over 28.93 km², the ninth-largest town in Norway, built across islands; the fire of 23 January 1904 destroyed the wooden town, one person died and more than 10,000 lost their homes, and Kaiser Wilhelm II, a frequent visitor, sent four warships with material for temporary shelter; rebuilt in stone, brick and mortar in Jugendstil between 1904 and 1907 by about fifty builders and architects trained across Europe, giving the town its uniform Art Nouveau centre; the Jugendstilsenteret museum; a major fishing port and the clipfish trade; an NTNU campus with about 1,800 students; the Aksla viewpoint)
     howItWorks:
-      "奥勒松是挪威默勒-鲁姆斯达尔郡的城镇，2024 年人口 55,684，市区约 29 平方公里，是挪威第九大城镇；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市摊在几座相连的岛上，港湾从中间穿过。它今天的样子来自一场火：1904 年 1 月 23 日大火烧毁了整座木造城镇，一人遇难，一万多人无家可归，常来此地的德皇威廉二世派了四艘军舰送来搭建临时住所的材料。1904 至 1907 年间，约五十位在欧洲各地受训的建筑师与营造商用石与砖重建全城，统一采用当时流行的新艺术风格，因此奥勒松成为北欧少见的整片新艺术城区，新艺术中心博物馆讲的就是这段。它是挪威最大的渔港之一，干鳕鱼贸易是老行业，挪威科技大学在此设校区，约一千八百名学生。阿克斯拉观景台有 418 级台阶通上去。初来的人最容易犯的错，是以为盖朗厄尔峡湾就在城边，而那还要几小时车程或船程。",
+      "奥勒松是挪威默勒-鲁姆斯达尔郡的城镇，2026 年第二季度市镇人口约 5.98 万，建成区约 29 平方公里；城区（tettsted）2026 年 1 月 1 日为 56,763 人，按城区人口计列全国第十；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。城市摊在几座相连的岛上，港湾从中间穿过。它今天的样子来自一场火：1904 年 1 月 23 日大火烧毁了整座木造城镇，一人遇难，一万多人无家可归，常来此地的德皇威廉二世派了四艘军舰送来搭建临时住所的材料。1904 至 1907 年间，约五十位在欧洲各地受训的建筑师与营造商用石与砖重建全城，统一采用当时流行的新艺术风格，因此奥勒松成为北欧少见的整片新艺术城区，新艺术中心博物馆讲的就是这段。它是挪威最大的渔港之一，干鳕鱼贸易是老行业，挪威科技大学在此设校区，约一千八百名学生。阿克斯拉观景台有 418 级台阶通上去。初来的人最容易犯的错，是以为盖朗厄尔峡湾就在城边，而那还要几小时车程或船程。",
     layout:
       "奥勒松建在几座由桥连接的小岛上，市中心夹在一条内港运河两岸，新艺术风格的石楼一栋挨一栋。城边的阿克斯拉山（Aksla）有 418 级台阶（或开车）上到观景台，能看到城市、岛屿和远处松恩莫勒的雪峰。城市往东是通往盖朗厄尔峡湾的门户。",
     gettingAround:
@@ -4508,8 +4545,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   bodo: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   博德 kommune 2026 年二季度 **53,671**；tettsted 2025 年约 **43,500**（SSB，1 级）。
+    //   原文的「约 5 万」正好卡在两档中间、又不说明是哪一档。
     identity:
-      "博德在挪威北部、北极圈以北约 80 公里，是诺尔兰郡的首府、北部铁路的终点，市区人口约 5 万。二战中城市被炸毁、战后重建，外观比较现代。它是通往罗弗敦群岛的门户，城外就是世界上最强的潮汐涡流之一——萨尔特海峡。2024 年它是欧洲文化之都。",
+      "博德在挪威北部、北极圈以北约 80 公里，是诺尔兰郡的首府、北部铁路的终点，市镇人口约 5.4 万（2026 年第二季度，SSB；城区／tettsted 约 4.3 万，2025 年）。二战中城市被炸毁、战后重建，外观比较现代。它是通往罗弗敦群岛的门户，城外就是世界上最强的潮汐涡流之一——萨尔特海峡。2024 年它是欧洲文化之都。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bodø (Norway; town and municipality, capital of Nordland county, 53,712 residents in 2024 over 1,395 km², the town itself about 42,831, just north of the Arctic Circle with midnight sun from 1 to 13 June and about 22.1 hours of sun a day in June; Saltstraumen about 30 km away, among the strongest tidal currents in the world with water speeds reaching 22 knots; Bodø Main Air Station long housed Norwegian and NATO forces, its role reduced after the F-16s were retired in January 2022; the northern terminus of the Nordland railway and a coastal express port; European Capital of Culture 2024)
     howItWorks:
       "博德是挪威诺尔兰郡的首府，2024 年市镇人口 53,712，市域约 1,395 平方公里，城区约 4.3 万人，位置略在北极圈以北；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。它是挪威北部的交通节点：诺尔兰铁路的终点在这里，再往北没有铁路，只能换公路、船或飞机；海岸快船在此停靠，罗弗敦群岛的渡轮从这里出发。1940 年 5 月德军轰炸几乎摧毁了全城，如今的市区是战后重建的，因此没有老城。机场紧贴市区，长期是挪威空军的主基地之一，2022 年 1 月 F-16 退役后作用下降，机场迁址的规划正在推进。城外约 30 公里的萨尔特流是世界上最强的潮汐海流之一，流速可达 22 节，涨落潮时在桥上能看见漩涡。6 月 1 日到 13 日太阳不落。2024 年它是欧洲文化之都。初来的人最容易犯的错，是把博德当作看极光的目的地，而它更多是往北与往岛上去的中转站。",
@@ -4526,8 +4569,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   narvik: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   纳尔维克 tettsted 2025 年 **14,092–14,200**；kommune 2026 年二季度 **21,651**
+    //   （2020 年与巴朗恩、部分蒂斯菲尤尔合并后）—— SSB（1 级）。
+    //   **两个数字都是对的，错在没说是两档不同口径。**
     identity:
-      "纳尔维克在挪威北部、一条深峡湾（Ofotfjord）的尽头，北极圈以北，市区人口约 1.4 万。它的存在几乎全因为一条铁路：19 世纪末为了把瑞典基律纳的铁矿石运到一个终年不冻的深水港，修了跨境的 Ofoten 铁路，纳尔维克就此建城。城市被高山夹住，二战初期这里有过激烈的山地和海上战斗。",
+      "纳尔维克在挪威北部、一条深峡湾（Ofotfjord）的尽头，北极圈以北，城区（tettsted）人口约 1.42 万（2025 年，SSB）；市镇（kommune，2020 年与巴朗恩等合并后）人口约 2.17 万（2026 年第二季度）。它的存在几乎全因为一条铁路：19 世纪末为了把瑞典基律纳的铁矿石运到一个终年不冻的深水港，修了跨境的 Ofoten 铁路，纳尔维克就此建城。城市被高山夹住，二战初期这里有过激烈的山地和海上战斗。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Narvik (Norway; town and municipality in Nordland county inside the Arctic Circle on the Ofotfjord, 21,580 residents in 2024, 61st among Norwegian municipalities; separated from Ankenes in 1902; developed as an all-year ice-free port for the Swedish iron mines at Kiruna and Gällivare, its deep harbour kept open by the Gulf Stream, with the Ofoten railway to Sweden; strategically critical in the Second World War, the Allies capturing it briefly in May 1940 in what is considered the first Allied infantry victory of the war before withdrawing in June; the Narvik War Museum; the Narvikfjellet alpine facility, host of the 2029 FIS Alpine World Ski Championships; merged with Ballangen and part of Tysfjord in 2020)
     howItWorks:
       "纳尔维克是挪威诺尔兰郡的市镇，在北极圈以内的欧福特峡湾深处，2024 年人口 21,580；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。这座城的存在只有一个理由：北大西洋暖流让这处深水港终年不冻，而瑞典基律纳与耶利瓦勒的铁矿在冬天无法从波的尼亚湾出海，于是 1902 年欧福特铁路修通，矿石从瑞典运到这里装船，城市也在同年从安肯内斯市镇分出。铁矿港的地位使它在二战中成为焦点，1940 年 5 月盟军一度夺下该城，被认为是二战中盟军首次陆战胜利，同年 6 月因战局变化撤出；战争博物馆讲述这段历史。2020 年它与巴朗恩及蒂斯峡湾的一部分合并，面积大增。纳尔维克山的缆车通到峰顶，2029 年高山滑雪世锦赛将在此举办；本地机场 2017 年关闭，航班改在埃文内斯。初来的人最容易犯的错，是以为矿在挪威，而矿在瑞典，纳尔维克只是它的出海口。",
@@ -4562,8 +4612,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   alta: {
+    // identity sources: 挪威统计局（SSB）只发布两档口径：**kommune（市镇）** 与 **tettsted（城区/建成区）**，
+    //   **没有「市区」这个官方称谓**。kommune 按季度发布（Q1 约 5 月中、Q2 约 8 月中、Q3 约 11 月中下旬、
+    //   跨年 1 月 1 日基准数约次年 2 月中）；tettsted 按年、1 月 1 日基准，约当年 5 月发布（本期 2026-05-22）。
+    //   2026-09-08 核。
+    //   阿尔塔 tettsted 约 **15,484**（2025）；kommune 2026 年二季度 **22,155**（SSB，1 级）。
+    //   **两个数字都是对的，错在没说是两档不同口径** —— 与纳尔维克同一形状。
     identity:
-      "阿尔塔在挪威最北的芬马克郡（北萨米语 Finnmárku）、一条峡湾的尽头、阿尔塔河出海处，市区人口约 1.5 万，是芬马克人口最多的城镇。城外的岩画群记录了约 7000 年前到 2000 年前当地狩猎、捕鱼、驯鹿人群的生活，1985 年列入世界遗产，是北欧规模最大的史前狩猎采集者岩画群之一。芬马克高原（Finnmarksvidda / Finnmárkkoduottar）自古是萨米人放牧驯鹿的区域。",
+      "阿尔塔在挪威最北的芬马克郡（北萨米语 Finnmárku）、一条峡湾的尽头、阿尔塔河出海处，城区（tettsted）人口约 1.55 万（2025 年，SSB）、市镇（kommune）人口约 2.22 万（2026 年第二季度），是芬马克人口最多的市镇。城外的岩画群记录了约 7000 年前到 2000 年前当地狩猎、捕鱼、驯鹿人群的生活，1985 年列入世界遗产，是北欧规模最大的史前狩猎采集者岩画群之一。芬马克高原（Finnmarksvidda / Finnmárkkoduottar）自古是萨米人放牧驯鹿的区域。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Alta (Norway; the largest populated municipality in Finnmark county at 3,849 km² with about 21,708 residents in 2025, 59th most populous in Norway, up 9.5 per cent over the previous decade; just below the 70th parallel, the northernmost settlement of urban significance in the European Economic Area; the Rock Art of Alta, roughly 7000–500 BC, UNESCO World Heritage; the town badly damaged by fire in the Second World War and rebuilt; the Northern Lights Cathedral completed 2013; the Sautso canyon on the Altaelva among the largest in Europe; slate quarrying, education and aurora tourism; midnight sun 18 May–27 July, polar night 26 November–16 January; Alta Airport)
     howItWorks:
       "阿尔塔是挪威芬马克郡最大的市镇，市域约 3,849 平方公里，2025 年人口约 21,708，过去十年增长约 9.5%；挪威的市镇管学校、幼托与规划，郡管高中与地方交通，医院归国家的大区健康企业，警察归国家。它在北纬 70 度线略南，是欧洲经济区内最北的具规模城镇。城外的阿尔塔岩画约刻于公元前 7000 至前 500 年，1985 年列入世界遗产，是挪威唯一的史前世界遗产，博物馆就建在岩画所在的海岸坡地上。二战末期镇子在大火中损毁，战后重建，因此城区是新的；2013 年落成的“北极光教堂”是新的地标。阿尔塔河切出的绍措峡谷是欧洲较大的峡谷之一，河上的水电站建于 1980 年代前后。板岩开采、教育与极光旅游是本地产业；5 月 18 日至 7 月 27 日太阳不落，11 月 26 日至次年 1 月 16 日太阳不升。初来的人最容易犯的错，是以为纬度这么高就没有森林，而暖流让这一带长着成片的桦树与松林。",
@@ -5006,11 +5062,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   rome: {
+    // identity sources: 意大利统计局（ISTAT）发布 **comune（市镇）常住人口**（Bilancio demografico，月度滚动 + 年度定案，
+    //   基准日多为 1 月 1 日，当年临时数约次年 3 月上线）。**`città metropolitana`（大都会市）是行政建制，
+    //   不是统计口径** —— 仓库里已经踩过一次。「市区人口」在意大利同样不是 ISTAT 的称谓。2026-09-08 核。
+    //   罗马 comune 常住人口 **约 2,745,062（2026-01-01，ISTAT）**（2025-01-01 为 2,746,898，略降）。
+    //   原文 identity 写「市区人口约 280 万」、howItWorks 写「2025 年约 270 万」—— 口径名是编的、两段还打架，已一并对齐。
     identity:
-      "罗马是意大利首都，市区人口约 280 万，坐落在台伯河畔的丘陵地带，是西方文明最重要的发源地城市之一——古罗马帝国的中心、后来又是天主教会的中心（梵蒂冈城国就完整地嵌在罗马市区内）。城市有近三千年连续的建城史，地表和地下同时叠着古罗马、中世纪、文艺复兴和巴洛克几层遗迹。",
+      "罗马是意大利首都，市镇（comune）常住人口约 274.5 万（2026 年 1 月 1 日，ISTAT），坐落在台伯河畔的丘陵地带，是西方文明最重要的发源地城市之一——古罗马帝国的中心、后来又是天主教会的中心（梵蒂冈城国就完整地嵌在罗马市区内）。城市有近三千年连续的建城史，地表和地下同时叠着古罗马、中世纪、文艺复兴和巴洛克几层遗迹。",
     // howItWorks sources: Wikipedia (2026-09): Rome (Roma Capitale 2010; 15 municipi; ~1,287 km²; ~2.7 million 2025; Metropolitan City 121 comuni ~4.2 million 2015; 22 rioni; GRA; 3 metro lines); Comune
     howItWorks:
-      "罗马自 2010 年起是一个有特殊地位的市镇，称为“首都罗马”，由市长和市议会治理；市下分 15 个区（municipio），各有民选的区长和区议会。市域约 1,287 平方公里，是意大利面积最大的市镇，2025 年人口约 270 万；2015 年起，罗马与周边 120 个市镇合成“首都罗马大都会市”，取代了原来的省，约 420 万人。奥勒良城墙以内的 22 个 rione 是古城，城墙之外是 20 世纪的街区，1930 年代规划的 EUR 是南面的行政与商务新区；大环路 GRA 在本地人心里是城市的边界，市界却远在它之外。梵蒂冈城国是市区里的一块飞地。台伯河从城中穿过。三条地铁线覆盖有限，公交与私家车承担了大多数出行。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把城墙内的古城当作整座城，而罗马从城墙到市界还有几十公里的城市与乡野。",
+      "罗马自 2010 年起是一个有特殊地位的市镇，称为“首都罗马”，由市长和市议会治理；市下分 15 个区（municipio），各有民选的区长和区议会。市域约 1,287 平方公里，是意大利面积最大的市镇，2026 年 1 月 1 日常住人口约 274.5 万；2015 年起，罗马与周边 120 个市镇合成“首都罗马大都会市”，取代了原来的省，约 420 万人。奥勒良城墙以内的 22 个 rione 是古城，城墙之外是 20 世纪的街区，1930 年代规划的 EUR 是南面的行政与商务新区；大环路 GRA 在本地人心里是城市的边界，市界却远在它之外。梵蒂冈城国是市区里的一块飞地。台伯河从城中穿过。三条地铁线覆盖有限，公交与私家车承担了大多数出行。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把城墙内的古城当作整座城，而罗马从城墙到市界还有几十公里的城市与乡野。",
     layout:
       "罗马老城建在台伯河东岸的七座丘陵上，古罗马广场、斗兽场、帕拉蒂尼山这些古代遗址集中在市中心。梵蒂冈城国在台伯河西岸、一块独立的飞地里，圣彼得大教堂是全城最高的圆顶。特拉斯提弗列区在河西岸南侧，是保留较多市井生活气息的老街区。",
     gettingAround:
@@ -5151,8 +5212,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   bari: {
+    // identity sources: 意大利统计局（ISTAT）发布 **comune（市镇）常住人口**（Bilancio demografico，月度滚动 + 年度定案，
+    //   基准日多为 1 月 1 日，当年临时数约次年 3 月上线）。**`città metropolitana`（大都会市）是行政建制，
+    //   不是统计口径** —— 仓库里已经踩过一次。「市区人口」在意大利同样不是 ISTAT 的称谓。2026-09-08 核。
+    //   巴里 comune **约 316,248**（2026-01-01）；**Città Metropolitana di Bari 41 个市镇、约 1,218,073**（3 级转引 ISTAT，2026-09-08 核）。
+    //   howItWorks 段本来就是对的，identity 的「都会区约 75 万」哪一档都不是，已对齐。
     identity:
-      "巴里在意大利东南部普利亚大区、亚得里亚海边，都会区约 75 万人，是普利亚大区首府，也是意大利通往希腊、阿尔巴尼亚等巴尔干国家的重要渡轮港口。城市以圣尼古拉（Santa Claus 原型圣人之一）的圣髑安放地闻名，老城是一片保存完好的白色石灰岩巷弄。",
+      "巴里在意大利东南部普利亚大区、亚得里亚海边，大都会市（città metropolitana）约 122 万人（2026 年，ISTAT），是普利亚大区首府，也是意大利通往希腊、阿尔巴尼亚等巴尔干国家的重要渡轮港口。城市以圣尼古拉（Santa Claus 原型圣人之一）的圣髑安放地闻名，老城是一片保存完好的白色石灰岩巷弄。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bari (comune 117.4 km²; ~316,000; municipi; Metropolitan City of Bari ~1.2 million; Apulia capital; Bari Vecchia peninsula with San Nicola; Murat grid 19th c.; lungomare; ferries to Greece/Albania/Montenegro; airport; Fiera del Levante)
     howItWorks:
       "巴里是普利亚大区的首府，由市长和市议会治理；市域约 117 平方公里，人口约 32 万，而取代省而设的巴里大都会市有 41 个市镇、约 120 万人。城市分两片：伸进亚得里亚海的半岛上是老城巴里维基亚，圣尼古拉大教堂与诺曼—施瓦本城堡在里面，1087 年圣尼古拉的圣髑从米拉运到这里，手擀耳朵面的街巷是它的日常；老城以南是 19 世纪的穆拉特新区，方格街道与商业街在这里，海滨大道沿海岸展开；港口有开往希腊、阿尔巴尼亚与黑山的渡轮，机场在城西，东方博览会每年秋天举行。初来的人最容易犯的错，是把巴里当作去阿尔贝罗贝洛或马泰拉的中转站，而它是意大利南方大陆最重要的经济中心之一。",
@@ -5187,8 +5253,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   catania: {
+    // identity sources: 意大利统计局（ISTAT）发布 **comune（市镇）常住人口**（Bilancio demografico，月度滚动 + 年度定案，
+    //   基准日多为 1 月 1 日，当年临时数约次年 3 月上线）。**`città metropolitana`（大都会市）是行政建制，
+    //   不是统计口径** —— 仓库里已经踩过一次。「市区人口」在意大利同样不是 ISTAT 的称谓。2026-09-08 核。
+    //   卡塔尼亚 comune **约 296,984**（2026-01-01）；**Città Metropolitana di Catania 58 个市镇、约 1,067,550**（3 级转引 ISTAT，2026-09-08 核）。
+    //   「西西里第二大城市」按 comune 人口成立（巴勒莫 comune 约 62.6 万）。
     identity:
-      "卡塔尼亚在西西里岛东岸，紧挨着欧洲最高的活火山埃特纳，都会区约 78 万人。城市历史上多次被埃特纳火山的熔岩流和地震摧毁又重建，现在的巴洛克风格老城建于 1693 年大地震之后，大量用埃特纳的黑色火山岩建造，因此又被称为“黑色巴洛克之城”，已列入世界遗产。",
+      "卡塔尼亚在西西里岛东岸，紧挨着欧洲最高的活火山埃特纳，大都会市（città metropolitana）约 107 万人（2026 年，ISTAT）。城市历史上多次被埃特纳火山的熔岩流和地震摧毁又重建，现在的巴洛克风格老城建于 1693 年大地震之后，大量用埃特纳的黑色火山岩建造，因此又被称为“黑色巴洛克之城”，已列入世界遗产。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Catania (comune 183 km²; ~297,000; Metropolitan City of Catania 58 comuni ~1.07 million; second city of Sicily; Etna, comune reaches the slopes; Baroque centre rebuilt after 1693, Val di Noto UNESCO 2002; Piazza Duomo elephant; via Etnea; metro 1 line; Fontanarossa busiest in Sicily; university 1434)
     howItWorks:
       "卡塔尼亚是西西里的第二大城市，由市长和市议会治理，市域约 183 平方公里，人口约 30 万，大都会市有 58 个市镇、约 107 万人；西西里是自治大区，有自己的议会。城市建在埃特纳火山的东南脚下，市域一直伸到火山的坡上，1669 年的熔岩与 1693 年的地震毁了旧城，之后用黑色火山岩与白石重建，这批巴洛克建筑 2002 年作为“诺托谷晚期巴洛克城镇”列入世界遗产；大教堂广场的象雕是城市的标志，埃特内亚大道从广场笔直向北指向火山，鱼市在广场背后；一条地铁线连起市区，丰塔纳罗萨机场是西西里最繁忙的，1434 年创办的大学是岛上最老的。初来的人最容易犯的错，是把卡塔尼亚当作陶尔米纳的机场，而它是一座三十万人的巴洛克城市。",
@@ -5205,11 +5276,18 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   cagliari: {
+    // identity sources: 意大利统计局（ISTAT）发布 **comune（市镇）常住人口**（Bilancio demografico，月度滚动 + 年度定案，
+    //   基准日多为 1 月 1 日，当年临时数约次年 3 月上线）。**`città metropolitana`（大都会市）是行政建制，
+    //   不是统计口径** —— 仓库里已经踩过一次。「市区人口」在意大利同样不是 ISTAT 的称谓。2026-09-08 核。
+    //   卡利亚里 comune 约 **14.6–15.4 万**；**2025-06-01 起撒丁大区改革撤销南撒丁省（Provincia del Sud Sardegna），
+    //   把其 53 个市镇并入 Città Metropolitana di Cagliari，市镇数由 17 增至 70**，改革后大都会市约 **53.3–53.4 万**
+    //   （2 级，含官方法规引用，2026-09-08 核）。
+    //   **行政区划改革会让「有几个市镇」这种看起来最稳的数字过期** —— 与里昂都会区 2024 年两市镇合并同一形状。
     identity:
-      "卡利亚里是撒丁岛首府，位于岛屿南岸一个海湾边，都会区约 43 万人，是撒丁岛的政治、经济中心。撒丁岛是地中海最古老的陆块之一，早在史前时期就有独特的努拉吉文明（岛上散布着数千座巨石塔状建筑“努拉吉”，已列入世界遗产候选/部分列入名录），与意大利本土的历史脉络有所不同。",
+      "卡利亚里是撒丁岛首府，位于岛屿南岸一个海湾边，大都会市（città metropolitana，2025 年 6 月扩并原南撒丁省后）约 53 万人（2026 年，ISTAT），是撒丁岛的政治、经济中心。撒丁岛是地中海最古老的陆块之一，早在史前时期就有独特的努拉吉文明（岛上散布着数千座巨石塔状建筑“努拉吉”，已列入世界遗产候选/部分列入名录），与意大利本土的历史脉络有所不同。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Cagliari (comune 85 km²; ~146,000; Metropolitan City of Cagliari ~536,000; capital of the autonomous Sardinian Region; Castello on the hill, Marina, Stampace, Villanova; Poetto ~8 km in comune; port fourth in Italy by cargo; Elmas airport 7 km; Molentargius flamingos)
     howItWorks:
-      "卡利亚里是撒丁大区的首府，撒丁是意大利的自治大区，有自己的议会与立法权；市镇由市长和市议会治理，市域约 85 平方公里，人口约 15 万，大都会市有 17 个市镇、约 54 万人。城市建在一片石灰岩丘上：卡斯泰洛区在山顶，比萨人筑的城墙与塔楼围着它，玛丽娜、斯坦帕切、维拉诺瓦三个老区在山下向港口铺开；波埃托海滩在城东约 8 公里，仍在市域之内，莫伦塔杰乌斯的盐塘里有火烈鸟；港口是意大利货运量第四的港，埃尔马斯机场在西面 7 公里，撒丁语与意大利语并用。初来的人最容易犯的错，是把卡利亚里当作撒丁岛度假区的门口，而它是一座有自治议会的岛屿首府，度假海岸在几十公里外。",
+      "卡利亚里是撒丁大区的首府，撒丁是意大利的自治大区，有自己的议会与立法权；市镇由市长和市议会治理，市域约 85 平方公里，人口约 15 万，大都会市在 2025 年 6 月并入原南撒丁省的 53 个市镇后共 70 个市镇、约 53 万人。城市建在一片石灰岩丘上：卡斯泰洛区在山顶，比萨人筑的城墙与塔楼围着它，玛丽娜、斯坦帕切、维拉诺瓦三个老区在山下向港口铺开；波埃托海滩在城东约 8 公里，仍在市域之内，莫伦塔杰乌斯的盐塘里有火烈鸟；港口是意大利货运量第四的港，埃尔马斯机场在西面 7 公里，撒丁语与意大利语并用。初来的人最容易犯的错，是把卡利亚里当作撒丁岛度假区的门口，而它是一座有自治议会的岛屿首府，度假海岸在几十公里外。",
     layout:
       "卡利亚里老城建在一座俯瞰海湾的山丘上，被称为“城堡区”（Castello），保留着比萨共和国时期（13 世纪）修建的城墙和塔楼。城市脚下是莫尔塔咸水湖，是火烈鸟的栖息地，从老城高处能同时看到海湾、盐湖和城市。",
     gettingAround:
@@ -5264,7 +5342,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "比萨在托斯卡纳的阿诺河下游，离海约10公里，市镇人口约8.9万（2024年，意大利国家统计局）。奇迹广场上的斜塔（1173–1372年建，因地基下沉倾斜）、主教座堂、洗礼堂和圣墓园1987年列入世界遗产；中世纪的比萨是海上共和国，与热那亚、威尼斯争雄。伽利略出生于此，比萨大学和拿破仑1810年创办的高等师范学校让它成为意大利的学术重镇。比萨机场是托斯卡纳的主要机场之一，很多游客从这里进入托斯卡纳。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pisa (comune 185 km²; ~90,000; Province of Pisa, Tuscany; Piazza dei Miracoli UNESCO 1987 at the north-west edge of the walled city; Arno lungarni; university 1343, Scuola Normale, Sant'Anna, ~50,000 students; Galileo Galilei airport busiest in Tuscany with PisaMover; maritime republic; Florence ~80 km)
     howItWorks:
-      "比萨是托斯卡纳大区比萨省的省会，由市长和市议会治理；市域约 185 平方公里，人口约 9 万。斜塔、大教堂与洗礼堂并不在市中心，而在城墙西北角的“奇迹广场”上，1987 年列入世界遗产；老城的重心在阿诺河两岸的滨河路与骑士广场，中世纪它是与热那亚、威尼斯并列的海上共和国，1284 年梅洛里亚海战之后衰落；1343 年创办的比萨大学、高等师范学校与圣安娜高等学校让约 5 万学生住在这座 9 万人的城里；伽利略机场是托斯卡纳最繁忙的，有轻轨直达火车站，佛罗伦萨在东面约 80 公里。初来的人最容易犯的错，是把比萨当作一座只有斜塔的镇，而斜塔在城的一角，城本身是一座学生占了一半的大学城。",
+      "比萨是托斯卡纳大区比萨省的省会，由市长和市议会治理；市域约 185 平方公里，人口约 8.9 万（2024 年，ISTAT）。斜塔、大教堂与洗礼堂并不在市中心，而在城墙西北角的“奇迹广场”上，1987 年列入世界遗产；老城的重心在阿诺河两岸的滨河路与骑士广场，中世纪它是与热那亚、威尼斯并列的海上共和国，1284 年梅洛里亚海战之后衰落；1343 年创办的比萨大学、高等师范学校与圣安娜高等学校让约 5 万学生住在这座 9 万人的城里；伽利略机场是托斯卡纳最繁忙的，有轻轨直达火车站，佛罗伦萨在东面约 80 公里。初来的人最容易犯的错，是把比萨当作一座只有斜塔的镇，而斜塔在城的一角，城本身是一座学生占了一半的大学城。",
     layout:
       "奇迹广场在老城西北角靠城墙，斜塔、主教座堂、洗礼堂、圣墓园都在同一片草坪上；从广场向南穿过老城到骑士广场和博尔戈街，再到阿诺河边的荆棘圣母小教堂和河畔步道。中央火车站在河南岸约1.5公里，机场就在火车站南面约2公里，Pisamover 自动列车5分钟直达。卢卡在东北约20公里，海滩在西面的马里纳迪比萨。",
     gettingAround:
@@ -5294,11 +5372,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4–6月和9–10月最舒服；赛马节日人山人海。老城一天到一天半，周边一到两天。从佛罗伦萨当日往返可行，但住一晚能看到无人的田野广场。",
   },
   matera: {
+    // identity sources: 意大利统计局（ISTAT）发布 **comune（市镇）常住人口**（Bilancio demografico，月度滚动 + 年度定案，
+    //   基准日多为 1 月 1 日，当年临时数约次年 3 月上线）。**`città metropolitana`（大都会市）是行政建制，
+    //   不是统计口径** —— 仓库里已经踩过一次。「市区人口」在意大利同样不是 ISTAT 的称谓。2026-09-08 核。
+    //   马泰拉 comune 约 **59,368**（2026 年，3 级转引 ISTAT，2026-09-08 核）。identity 与 howItWorks 两处原本都缺年份，已一并补上。
     identity:
-      "马泰拉在意大利南部巴西利卡塔大区的石灰岩高地上，人口约6万。它以“石窟民居”（Sassi）闻名——在格拉维纳峡谷崖壁上凿出的洞穴住宅层层叠叠，有人居住的历史可追溯到史前，被认为是世界上持续有人居住最久的聚落之一。1950年代因贫困和卫生问题，政府把居民迁出石窟区，1986年立法允许修复回迁；1993年石窟区和周围的岩洞教堂公园列入世界遗产，2019年马泰拉是欧洲文化之都。峡谷对岸的穆尔贾高原上有约150座岩洞教堂，这里也是《基督受难》等电影的取景地。",
+      "马泰拉在意大利南部巴西利卡塔大区的石灰岩高地上，人口约5.9万（2026年，ISTAT）。它以“石窟民居”（Sassi）闻名——在格拉维纳峡谷崖壁上凿出的洞穴住宅层层叠叠，有人居住的历史可追溯到史前，被认为是世界上持续有人居住最久的聚落之一。1950年代因贫困和卫生问题，政府把居民迁出石窟区，1986年立法允许修复回迁；1993年石窟区和周围的岩洞教堂公园列入世界遗产，2019年马泰拉是欧洲文化之都。峡谷对岸的穆尔贾高原上有约150座岩洞教堂，这里也是《基督受难》等电影的取景地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matera (comune 392 km²; ~60,400; Province of Matera, Basilicata; Sassi cave districts UNESCO 1993, evacuated 1950s–70s, reoccupation law 1986; Civita; modern town on the plateau; Gravina ravine, Murgia park; ECoC 2019; Bari ~60 km with airport; FAL narrow-gauge rail)
     howItWorks:
-      "马泰拉是巴西利卡塔大区马泰拉省的省会，由市长和市议会治理；市域约 392 平方公里，人口约 6 万。人们心中的马泰拉是“萨西”——凿在峡谷石灰岩壁上的两片洞穴街区，从公元前八千年起就有人住，是世界上连续居住时间最长的聚落之一，1993 年列入世界遗产；1950 至 70 年代政府把居民整体迁出萨西，称其为“意大利的耻辱”，1986 年的一部法律又开启了修复与重新入住，如今那里是旅馆与餐厅；今天的市政府、学校与大多数居民在台地上的新城里，格拉维纳峡谷与穆尔贾公园在萨西的对面；2019 年它是欧洲文化之都，巴里与机场在东北约 60 公里。初来的人最容易犯的错，是把萨西当作马泰拉，而它是老城的一半，市民的日常在台地上的新城。",
+      "马泰拉是巴西利卡塔大区马泰拉省的省会，由市长和市议会治理；市域约 392 平方公里，人口约 5.9 万（2026 年，ISTAT）。人们心中的马泰拉是“萨西”——凿在峡谷石灰岩壁上的两片洞穴街区，从公元前八千年起就有人住，是世界上连续居住时间最长的聚落之一，1993 年列入世界遗产；1950 至 70 年代政府把居民整体迁出萨西，称其为“意大利的耻辱”，1986 年的一部法律又开启了修复与重新入住，如今那里是旅馆与餐厅；今天的市政府、学校与大多数居民在台地上的新城里，格拉维纳峡谷与穆尔贾公园在萨西的对面；2019 年它是欧洲文化之都，巴里与机场在东北约 60 公里。初来的人最容易犯的错，是把萨西当作马泰拉，而它是老城的一半，市民的日常在台地上的新城。",
     layout:
       "石窟区分为北面的巴里萨诺（Sasso Barisano）和南面的卡韦奥索（Sasso Caveoso），两者之间的高地上是主教座堂所在的奇维塔区；石窟区沿峡谷西壁自上而下分布，最下面是格拉维纳河。十九世纪以后的新城在石窟区西面的台地上，维托里奥·威尼托广场是新城与石窟区的交界，中央火车站（FAL 窄轨）在新城北面。峡谷对岸是穆尔贾高原（观景台和岩洞教堂），从卡韦奥索有步道和吊桥可过。",
     gettingAround:
