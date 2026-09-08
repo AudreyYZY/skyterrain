@@ -8234,7 +8234,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   stockholm: {
     // identity sources: 瑞典统计局（SCB）市镇（kommun）年末登记人口：斯德哥尔摩市 999,200（2025-12-31）；斯德哥尔摩省约 2,486,300—2,488,902。
-    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。
+    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。核实日 2026-09-08。
     //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
       "Stockholm is Sweden's capital and largest city, with a population of about 1 million (end of 2025; about 2.49 million across Stockholm County), sitting where Lake Mälaren meets the Baltic Sea, spread across 14 main islands, and an important Nordic centre for politics, business and design.",
@@ -8271,7 +8271,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   gothenburg: {
     // identity sources: 瑞典统计局（SCB）市镇（kommun）年末登记人口：哥德堡市 613,278（2025-12-31，当年内突破 60 万）；大哥德堡（13 市镇）约 110 万。
-    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。
+    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。核实日 2026-09-08。
     //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
       "Gothenburg is Sweden's second-largest city, with a population of about 613,000 (end of 2025; about 1.1 million across metropolitan Gothenburg), sitting at the mouth of the Göta River on Sweden's west coast, an important port city and gateway for exploring the Bohuslän Coast.",
@@ -8291,7 +8291,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   malmoe: {
     // identity sources: 瑞典统计局（SCB）市镇（kommun）年末登记人口：马尔默市 367,924（2025-12-31），按市镇人口排全国第三。
-    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。
+    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。核实日 2026-09-08。
     //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
       "Malmö is Sweden's third-largest city, with a population of about 368,000 (end of 2025), at the very southern tip of the country, linked to Copenhagen, Denmark by the Øresund Bridge, and the core city of the Skåne Plain.",
@@ -8311,7 +8311,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   visby: {
     // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：维斯比城区 26,305。
-    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。** 核实日 2026-09-08。
     //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     identity:
       "Visby is the main town on the island of Gotland, with an urban-area population of about 26,000 (2023), preserving intact medieval walls and street layout, and an important Hanseatic League trading town from the 12th century.",
@@ -8348,7 +8348,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   kalmar: {
     // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：卡尔马城区 42,622；**卡尔马市镇（含乡村）约 7.3 万，是另一档，别混用**。
-    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。** 核实日 2026-09-08。
     //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     identity:
       "Kalmar is the core city of Kalmar County in south-eastern Sweden, with an urban-area population of about 43,000 (2023); Kalmar Castle is one of the best-preserved Renaissance castles in Sweden, and the city is a gateway for exploring the island of Öland.",
@@ -8368,7 +8368,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   kiruna: {
     // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：基律纳城区 17,284；**市镇 22,399（2026-06-30），是瑞典面积最大的市镇**。
-    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。** 核实日 2026-09-08。
     //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     //   原来写的 1.8 万介于两档之间、更接近城区，但没点名是哪一档。
     identity:
@@ -8406,7 +8406,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   harnosand: {
     // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：海讷桑德城区 18,236；市镇 25,012（2023 年末）。
-    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。** 核实日 2026-09-08。
     //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     //   **这条是「口径先于数字」的典型**：identity 的 1.8 万与 howItWorks 的 2.5 万**两个数字都各自准确**，
     //   一个是城区、一个是市镇，但正文一处都没点名，读者只会看到同一座城两个打架的数。
@@ -8428,7 +8428,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   are: {
     // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：奥勒村/城区 3,699；奥勒市镇 12,770（2025-12-31）。
-    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。** 核实日 2026-09-08。
     //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     //   **同一地名下差了近 4 倍的三个量**：村/城区 3,699、市镇 12,770。
     //   原来 identity 写「1.4 万」（接近市镇但偏高、未点名），howItWorks 写「3,200」（城区，且已过期）。
