@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: f716ca2
+lastVerifiedCommit: 14bbd0d
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: f716ca2
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel · 希腊城市人口与口径（C6-d 第 21 批：希腊 11 城核实（7 条本来就是最新）） | 9 | 2 / 7 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 荷兰城市人口与口径（C6-d 第 20 批：荷兰 10 城取 CBS 2026-01-01 市镇人口） | 20 | 0 / 20 / 0 | 当场修 20 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 口径标注（C6-d 补：把已核实为普查数的六条写明口径 + 删掉第九处「市区人口」） | 7 | 6 / 1 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-07 | travel · 西班牙城市人口与排名（C6-d 第 19 批：西班牙 14 城取 INE 2025-01-01 定案人口，并改掉两处已反转的排名） | 23 | 0 / 23 / 0 | 当场修 23 条；新开 issue 0、关闭 0 |

@@ -5962,11 +5962,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   athens: {
+    // identity sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   雅典—比雷埃夫斯城区（Πολεοδομικό Συγκρότημα Αθηνών–Πειραιώς）2021 年普查 3,059,764，占阿提卡大区的 80.2%。原文数值合理但既没年份也没写明是哪一档口径。
     identity:
-      "Athens is Greece's capital and largest city, the centre of the Attica region, with a metropolitan population of over 3 million. It is one of Europe's oldest cities and an important birthplace of classical democracy, philosophy and drama.",
-    // howItWorks sources: Wikipedia (2026-09): Athens (municipality 39 km², 643,452 2021, 7 districts; urban ~3.06 million; metro ~3.64 million; Attica ~58 municipalities, Piraeus separate; metro 3 lines; polykatoikia)
+      "Athens is Greece's capital and largest city, the centre of the Attica region, with an urban-area population of about 3.06 million (2021 census, Athens–Piraeus urban area). It is one of Europe's oldest cities and an important birthplace of classical democracy, philosophy and drama.",
+    // howItWorks sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   **这条数字是错的**：阿提卡大区 2021 年普查常住人口官方数为 **3,814,064**（约 381 万），不是 364 万。已由 ELSTAT 官方普查结果页直接确认（https://census2021results.statistics.gr/perifereies/attiki ，**级别 1**）。
     howItWorks:
-      "The Athens people speak of is, administratively, only the Municipality of Athens of about 39 km², with about 643,000 people in 2021 and seven municipal districts; the urban area holds about 3.06 million and the Attica region, Piraeus included, about 3.64 million, assembled from some 58 municipalities each with its own mayor and council. Since the Kallikratis reform of 2011 the region has had an elected governor responsible for transport planning and regional affairs, the municipalities run waste, local roads and social services, and police and schools belong to the state. The city fills the Attica basin ringed by four mountains: Syntagma, Plaka and Monastiraki are the centre, the Acropolis and Lycabettus the two points of reference, Kifisia to the north the wealthy suburb, and the west and the port districts the working-class side. The six- or seven-storey post-war apartment block, the polykatoikia, is the building block of the whole city. Addresses give street, number and postcode, and locals place things by neighbourhood name. Three metro lines, trams and the suburban railway to the airport serve the urban area. Newcomers most often go wrong by taking the Municipality of Athens for the city, when it holds only a fifth of the urban population.",
+      "The Athens people speak of is, administratively, only the Municipality of Athens of about 39 km², with about 643,000 people in 2021 and seven municipal districts; the urban area holds about 3.06 million and the Attica region, Piraeus included, about 3.81 million at the 2021 census, assembled from some 58 municipalities each with its own mayor and council. Since the Kallikratis reform of 2011 the region has had an elected governor responsible for transport planning and regional affairs, the municipalities run waste, local roads and social services, and police and schools belong to the state. The city fills the Attica basin ringed by four mountains: Syntagma, Plaka and Monastiraki are the centre, the Acropolis and Lycabettus the two points of reference, Kifisia to the north the wealthy suburb, and the west and the port districts the working-class side. The six- or seven-storey post-war apartment block, the polykatoikia, is the building block of the whole city. Addresses give street, number and postcode, and locals place things by neighbourhood name. Three metro lines, trams and the suburban railway to the airport serve the urban area. Newcomers most often go wrong by taking the Municipality of Athens for the city, when it holds only a fifth of the urban population.",
     layout:
       "The Acropolis hill is the city's geographic and historic centre, with the Parthenon crowning it above the city; below lies the old Plaka quarter, dense with narrow streets and neoclassical buildings. Syntagma Square anchors the modern city centre, home to the Greek Parliament and the Tomb of the Unknown Soldier. Piraeus is Athens's gateway port, from which most ferries to the mainland and Aegean islands depart.",
     gettingAround:
@@ -5980,8 +5989,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   thessaloniki: {
+    // identity sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   **这是标签贴错**：80 万对应的是塞萨洛尼基**城区**（Πολεοδομικό συγκρότημα，2021 年 802,392），不是「都会区」；更大一档的塞萨洛尼基地区单位（Περιφερειακή Ενότητα）2021 年是 1,091,424。**同条目 howItWorks 段自己就写着「城区约80万、都会区约110万」**，两段互相矛盾。
     identity:
-      "Thessaloniki is Greece's second-largest city and the centre of the Macedonia region, with a metropolitan population of about 800,000. Set on the Thermaic Gulf, it is an important port and cultural centre in northern Greece and was, for much of the Byzantine period, the empire's second city after Constantinople.",
+      "Thessaloniki is Greece's second-largest city and the centre of the Macedonia region, with an urban-area population of about 800,000 (2021 census; the wider regional unit holds about 1.09 million). Set on the Thermaic Gulf, it is an important port and cultural centre in northern Greece and was, for much of the Byzantine period, the empire's second city after Constantinople.",
     // howItWorks sources: Wikipedia (2026-09): Thessaloniki (municipality ~19 km², ~320,000 2021; urban ~800,000; metro ~1.1 million; Central Macedonia capital; Hébrard plan after 1917 fire; UNESCO 1988; metro Nov 2024; Aristotle University)
     howItWorks:
       "Thessaloniki is the capital of the Central Macedonia region and Greece's second city; the Municipality of Thessaloniki itself covers only about 19 km² with about 320,000 people in 2021, while the urban area with Kalamaria, Pylaia and other municipalities holds about 800,000 and the metropolitan area about 1.1 million, each municipality with its own mayor and council, the region with an elected governor, and police and schools under the state. The city spreads along its bay: after the fire of 1917, Hébrard's plan remade the centre as a grid on the axis of Aristotelous Square, the waterfront and the White Tower are the point of reference, and Ladadika is an old warehouse quarter turned dining district; the Upper Town on the slope keeps its Byzantine walls and old lanes, a group of early Christian and Byzantine buildings was inscribed as World Heritage in 1988, and Ottoman mosques, synagogues and churches stand in the same city. Aristotle University is the largest in Greece, and its students make the city younger than Athens. The first metro line opened in November 2024; before that there were only buses. Addresses give street, number and postcode. Newcomers most often go wrong by taking Thessaloniki for a smaller Athens, when it has a plan, an accent and a rhythm of its own.",
@@ -5998,8 +6012,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   heraklion: {
+    // identity sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   伊拉克利翁**城市本身/聚落**口径 2021 年普查 145,440。同条目 howItWorks 的「约18万」是**市镇**口径（245 km²，179,302）—— **两个数字都对，只是口径不同**，不是矛盾；缺的是年份与口径标注。
     identity:
-      "Heraklion is Crete's largest city and capital, with a population of about 140,000. It is the island's transport and economic hub, and was an important Mediterranean trading port under Venetian rule.",
+      "Heraklion is Crete's largest city and capital, with a city population of about 145,000 (2021 census). It is the island's transport and economic hub, and was an important Mediterranean trading port under Venetian rule.",
     // howItWorks sources: Wikipedia (2026-09): Heraklion (municipality ~245 km², 179,302 2021; Crete regional capital; Venetian walls; airport 5 km east, second busiest; Kastelli under construction; Knossos 5 km)
     howItWorks:
       "Heraklion is the capital of the Crete region and the largest city on the island; the region has an elected governor, and the municipality its own mayor and council, covering about 245 km² with about 179,000 people in 2021. The old town lies within the Venetian walls, with the Koules fortress guarding the old harbour and the Morosini fountain and the Loggia at the centre, and the post-war quarters beyond the walls. The port is the ferry hub for Piraeus and the Aegean islands; Nikos Kazantzakis Airport, 5 km east, is Greece's second-busiest, and a new airport at Kastelli is under construction to replace it. Knossos lies about 5 km south of the city, and a campus of the University of Crete is in town. Olives and grapes are the industry beyond tourism. There is no rail transit, and buses and cars carry the traffic. Addresses give street, number and postcode. Newcomers most often go wrong by taking Heraklion for a staging post for Knossos, when it is an island capital with an old town and a harbour life of its own.",
@@ -6016,8 +6035,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   chania: {
+    // identity sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   哈尼亚**城市本身**口径 2021 年普查 54,559。同条目 howItWorks 的「约11万」是**市镇**口径（351 km²，111,375），两档都对。原文「约5万」略低估且没有年份。
     identity:
-      "Chania is the main city of western Crete, with a population of about 50,000. Its Venetian-era harbour and buildings are well preserved, and it is often considered one of Crete's most atmospheric cities.",
+      "Chania is the main city of western Crete, with a city population of about 55,000 (2021 census). Its Venetian-era harbour and buildings are well preserved, and it is often considered one of Crete's most atmospheric cities.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chania (municipality 351 km² after Kallikratis 2011; 111,375 2021; Chania regional unit capital, Crete; Venetian harbour, lighthouse 1864; Kastelli/Splantzia/Topanas; capital of Crete until 1971; airport 14 km Akrotiri; ferry from Souda to Piraeus; Samaria ~45 km)
     howItWorks:
       "Chania is the capital of the Chania regional unit of Crete, its municipality enlarged to about 351 km² by the Kallikratis reform of 2011, with about 111,000 people in 2021; the municipality is governed by an elected mayor, the region of Crete by an elected governor, and police and schools belong to the state. The old town wraps around the Venetian harbour, the lighthouse of 1864 at the end of the mole, Kastelli, Splantzia and Topanas its quarters, and until 1971 this was the capital of Crete; the new town lies on the flat south of the old, the airport 14 km east on the Akrotiri peninsula, the port at Souda Bay has the night ferry to Piraeus, the Samaria Gorge lies about 45 km south and the beaches of Balos and Elafonisi sixty or seventy kilometres west. Newcomers most often go wrong by taking the Venetian harbour for Chania, when it is one corner of the old town and the municipality reaches to the foot of the White Mountains.",
@@ -6070,8 +6094,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "corfu-town": {
+    // identity sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   科孚镇本身（Δημοτική Ενότητα Κερκυραίων，即 2019 年科孚岛一分为三前的老科孚市）2021 年普查 34,607。原文「约3万」偏低且没有年份。注意正文**没有**误用 2019 年后的「中央科孚市镇」（67,112）——口径本身是清晰的。
     identity:
-      "Corfu Town is the capital of Corfu, with a population of about 30,000. Its Venetian-era fortifications were built in stages between 1386 and 1797 and were inscribed as a UNESCO World Heritage site in 2007.",
+      "Corfu Town is the capital of Corfu, with a town population of about 35,000 (2021 census). Its Venetian-era fortifications were built in stages between 1386 and 1797 and were inscribed as a UNESCO World Heritage site in 2007.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Corfu city/Kerkyra (seat of Central Corfu municipality since 2019; island ~610 km², ~99,000; city ~24,000–32,000 2021; capital of the Ionian Islands region; Old Town UNESCO 2007, Venetian fortresses, Liston, Spianada; never Ottoman; cricket; airport 3 km; Achilleion ~10 km; ferries Igoumenitsa)
     howItWorks:
       "Corfu city, Kerkyra, is the main town of Corfu, and since the island was split into three municipalities in 2019 it is the seat of Central Corfu municipality under an elected mayor, the city itself about 30,000 people and the island about 100,000; it is also the capital of the Ionian Islands region, which has an elected governor, while police and schools belong to the state. The Old Town lies on a peninsula between two Venetian fortresses, World Heritage since 2007, the Liston arcade and the Spianada its centre, the marks of Venetian, French and British rule laid over one another, cricket still played on the square, and Corfu the only part of Greece never under Ottoman rule; the airport lies 3 km south, the Achilleion about 10 km south, ferries sail to Igoumenitsa and Italy, and the Albanian coast lies a few kilometres across the water. Newcomers most often go wrong by taking Corfu city for Corfu, when the island runs 60 km and the resorts are scattered at its northern and southern ends.",
@@ -6088,11 +6117,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   nafplio: {
+    // identity sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   纳夫普利翁镇本身 2021 年普查 14,532。原文数值吻合，缺的是年份与口径。
     identity:
-      "Nafplio lies in the north-eastern Peloponnese, with a population of about 14,000. It served as the first capital of the modern Greek state from 1829 to 1834 and is one of Greece's best-preserved neoclassical towns.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nafplio (municipality ~390 km², ~33,600 2021, town ~14,500; Argolis capital; first capital of Greece 1829–1834; Palamidi; Bourtzi; Acronauplia; Venetian old town; Mycenae 25 km, Epidaurus 30 km; Athens ~140 km, 2 h; no airport)
+      "Nafplio lies in the north-eastern Peloponnese, with a town population of about 14,500 (2021 census). It served as the first capital of the modern Greek state from 1829 to 1834 and is one of Greece's best-preserved neoclassical towns.",
+    // howItWorks sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   **数字错了**：纳夫普利翁市镇 2021 年普查常住人口为 **32,586**（约 3.3 万），不是 3.4 万；33,356 是 **2011 年**的数 —— 疑似把两次普查的数字搞混了。
     howItWorks:
-      "Nafplio is the capital of the Argolis regional unit of the Peloponnese, a municipality of about 390 km² with about 34,000 people in 2021 under an elected mayor, the town itself about 15,000; the region has an elected governor, and police and schools belong to the state. From 1829 to 1834 it was the first capital of modern Greece, the first head of state, Kapodistrias, was assassinated here, and the capital then moved to Athens. The old town lies at the foot of the Acronauplia peninsula, its Venetian lanes and Syntagma square the centre, the Palamidi fortress on the hill above reached by 999 steps, and the Bourtzi castle on an islet in the harbour; Mycenae lies 25 km north, Epidaurus 30 km east, Athens 140 km away at about two hours, there is no airport, and Athenians pour in at weekends. Newcomers most often go wrong by taking Nafplio for a resort, when it was Greece's first capital and remains the administrative centre of the district.",
+      "Nafplio is the capital of the Argolis regional unit of the Peloponnese, a municipality of about 390 km² with about 32,600 people in 2021 under an elected mayor, the town itself about 15,000; the region has an elected governor, and police and schools belong to the state. From 1829 to 1834 it was the first capital of modern Greece, the first head of state, Kapodistrias, was assassinated here, and the capital then moved to Athens. The old town lies at the foot of the Acronauplia peninsula, its Venetian lanes and Syntagma square the centre, the Palamidi fortress on the hill above reached by 999 steps, and the Bourtzi castle on an islet in the harbour; Mycenae lies 25 km north, Epidaurus 30 km east, Athens 140 km away at about two hours, there is no airport, and Athenians pour in at weekends. Newcomers most often go wrong by taking Nafplio for a resort, when it was Greece's first capital and remains the administrative centre of the district.",
     layout:
       "The old town sits between hill and sea, with the Palamidi Fortress towering on the hill above, reached by several hundred steps; the Bourtzi Fortress, a Venetian stronghold, sits on a small island in the bay. The old town's streets preserve a mix of Venetian and neoclassical architecture.",
     gettingAround:
@@ -6124,8 +6162,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   kalamata: {
+    // identity sources: 希腊统计局（ΕΛΣΤΑΤ / ELSTAT）**2021 年人口普查**常住人口（μόνιμος πληθυσμός），基准日 2021-10-22，最终结果 2023-03-17 公布、政府公报 ΦΕΚ 2802/Β'（2023-04-26）确认。
+    //   **希腊市镇（δήμος）人口只随十年一次的人口普查更新**（欧盟 763/2008 条例），ELSTAT 的年度估计只做到大区（Περιφέρεια）一级、**不下探到市镇** —— 所以 2021 年的数在 **2031 年**之前就是最新一期，不要因为「隔了几年」就当成过期。
+    //   口径分三档，正文各处要写明是哪一档：**城市本身/聚落（οικισμός）< 市镇（δήμος，2011 年 Kallikratis 改革后扩大）< 城区（πολεοδομικό συγκρότημα）/ 地区单位（περιφερειακή ενότητα）**。
+    //   本批除雅典大区那条取自 ELSTAT 官方普查结果页（census2021results.statistics.gr，**级别 1**）外，其余数字多经希腊语维基对 ELSTAT / ΦΕΚ 的转述核对，**级别 2**。
+    //   卡拉马塔**城市本身**口径 2021 年普查 57,706。同条目 howItWorks 的「约7.3万」是**市镇**口径（440 km²，72,906），两档都对。
     identity:
-      "Kalamata is the main city of the southern Peloponnese, with a population of about 55,000, set on the Messenian Gulf at the foot of Taygetus — famous for the olives and olive oil that share its name.",
+      "Kalamata is the main city of the southern Peloponnese, with a city population of about 58,000 (2021 census), set on the Messenian Gulf at the foot of Taygetus — famous for the olives and olive oil that share its name.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalamata (municipality ~440 km²; 72,906 2021; Messenia capital, second city of the Peloponnese; Messenian Gulf; castle; 1986 earthquake rebuild; olives PDO; dance festival July; airport 10 km; Athens ~240 km motorway; Ancient Messene ~30 km; Mani gateway)
     howItWorks:
       "Kalamata is the capital of the Messenia regional unit and the second city of the Peloponnese, a municipality of about 440 km² with about 73,000 people in 2021 under an elected mayor; the region has an elected governor, and police and schools belong to the state. The city lies at the head of the Messenian Gulf, the old town and castle at the foot of the hills inland, the Navarinou waterfront running east along the bay, and the earthquake of 1986 destroyed much of the town, since rebuilt; Kalamata olives carry a protected designation of origin, the international dance festival in July is its cultural emblem, the airport lies 10 km west, the motorway to Athens runs about 240 km, Ancient Messene lies 30 km north-west, and the Mani peninsula runs south from here. Newcomers most often go wrong by taking Kalamata for a brand of olive, when it is a regional capital with a port, a university campus and an airport.",
