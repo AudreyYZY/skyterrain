@@ -77,6 +77,52 @@ for (const [cityId, pois] of Object.entries(POIS_BY_CITY)) {
   if (!seen.has(cityId)) fail(`POIS_BY_CITY "${cityId}" 不在 CITY_REGISTRY`);
 }
 
+/**
+ * **同一个 IATA 在不同城市条目里必须是同一座机场**：名称一致、坐标一致。
+ *
+ * 52 组机场被多个城市共用（无锡与苏州共用苏南硕放、卢森堡 9 个堂区条目共用 LUX…），
+ * 每一处都是手写的，于是同一座机场会出现两个名字：实测到过
+ * 「Marseille Provence Airport」与「Marseille Provence」、
+ * 「萨尔茨堡莫扎特机场」与「萨尔茨堡机场」并存。读者在两座城市的页面上看到的是同一个 IATA、
+ * 不同的名字。
+ *
+ * 「（经 X 转乘）/ (via X)」这个后缀是**有意的约定**（表示这座城市自己没有机场），
+ * 比较前先去掉，否则整批都会被报出来。
+ *
+ * 这条挡不住「机场被改名了而我们不知道」（那要联网，见 known-errors B1 / issue #146），
+ * 但挡得住「改了一处忘了另一处」—— 而改名恰恰是分散在多个条目里的。
+ */
+{
+  const stripVia = (n: string) =>
+    n.replace(/（经[^）]*转乘）/g, "").replace(/\s*\(via [^)]*\)/gi, "").trim();
+  const byIata = new Map<string, { id: string; zh: string; en: string; key: string }[]>();
+  for (const c of CITY_REGISTRY) {
+    if (!c.airport) continue;
+    const a = c.airport;
+    const rows = byIata.get(a.iata) ?? [];
+    rows.push({
+      id: c.id,
+      zh: stripVia(a.nameZh),
+      en: stripVia(a.nameEn),
+      key: `${a.lon.toFixed(4)},${a.lat.toFixed(4)}`,
+    });
+    byIata.set(a.iata, rows);
+  }
+  for (const [iata, rows] of byIata) {
+    if (rows.length < 2) continue;
+    for (const field of ["zh", "en", "key"] as const) {
+      const vals = new Set(rows.map((r) => r[field]));
+      if (vals.size > 1) {
+        const what = field === "key" ? "坐标" : field === "zh" ? "中文名" : "英文名";
+        fail(
+          `IATA ${iata} 在 ${rows.length} 个城市条目里${what}不一致：` +
+            rows.map((r) => `${r.id}=${r[field]}`).join(" / "),
+        );
+      }
+    }
+  }
+}
+
 for (const o of COUNTRY_OVERVIEWS) {
   checkCountry(`${o.country}-overview`, o.country);
   const id = `${o.country}-overview`;

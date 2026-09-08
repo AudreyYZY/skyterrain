@@ -1542,7 +1542,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "shannan", nameZh: "山南", nameEn: "Shannan (Lhoka)", country: "china", tier: "notable", zone: "cn-southwest", admin1Zh: "西藏自治区", admin1En: "Tibet",
     lon: 91.7730, lat: 29.2370,
-    airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.9119, lat: 29.2978 },
+    airport: { iata: "LXA", nameZh: "拉萨贡嘎国际机场", nameEn: "Lhasa Gonggar Int'l", lon: 90.912, lat: 29.298 },
     source: "山南市区泽当 29.2370,91.7730（海拔约 3600 米）；贡嘎机场位于山南市贡嘎县境内（zh.wikipedia），距泽当约 90 公里，与拉萨条目共用同一机场记录",
   },
 
@@ -2445,7 +2445,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "avignon", nameZh: "阿维尼翁", nameEn: "Avignon", country: "france", tier: "notable", zone: "fr-provence", admin1Zh: "普罗旺斯-阿尔卑斯-蓝色海岸大区", admin1En: "Provence-Alpes-Côte d'Azur",
     lon: 4.8075, lat: 43.9500,
-    airport: { iata: "MRS", nameZh: "马赛-普罗旺斯机场（经马赛转乘）", nameEn: "Marseille Provence (via Marseille)", lon: 5.2214, lat: 43.4393 },
+    airport: { iata: "MRS", nameZh: "马赛-普罗旺斯机场（经马赛转乘）", nameEn: "Marseille Provence Airport (via Marseille)", lon: 5.2214, lat: 43.4393 },
     source: "Avignon 43.9500,4.8075（en.wikipedia）；本地 AVN 机场无稳定定期航线，与马赛条目共用 MRS（约 85 公里）；TGV 站在城南；人口 92,188（2023）",
   },
   {
@@ -3124,7 +3124,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "alkmaar", nameZh: "阿尔克马尔", nameEn: "Alkmaar", country: "netherlands", tier: "notable", zone: "nl-noord-holland", admin1Zh: "北荷兰省", admin1En: "North Holland",
     lon: 4.7500, lat: 52.6333,
-    airport: { iata: "AMS", nameZh: "史基浦机场（经阿姆斯特丹转乘）", nameEn: "Amsterdam Schiphol (via Amsterdam)", lon: 4.7683, lat: 52.3105 },
+    airport: { iata: "AMS", nameZh: "史基浦机场（经阿姆斯特丹转乘）", nameEn: "Amsterdam Schiphol Airport (via Amsterdam)", lon: 4.7683, lat: 52.3105 },
     source: "Alkmaar 52.6333,4.7500（en.wikipedia）；无自有机场，与阿姆斯特丹条目共用 AMS（约 40 公里）；人口 113,170（2022-11）",
   },
   // ===== 奥地利 =====
@@ -3199,7 +3199,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "sankt-polten", nameZh: "圣珀尔滕", nameEn: "Sankt Pölten", country: "austria", tier: "notable", zone: "at-niederosterreich", admin1Zh: "下奥地利州", admin1En: "Lower Austria",
     lon: 15.6167, lat: 48.2000,
-    airport: { iata: "VIE", nameZh: "维也纳国际机场（经维也纳转乘）", nameEn: "Vienna International (via Vienna)", lon: 16.5697, lat: 48.1103 },
+    airport: { iata: "VIE", nameZh: "维也纳国际机场（经维也纳转乘）", nameEn: "Vienna International Airport (via Vienna)", lon: 16.5697, lat: 48.1103 },
     source: "Sankt Pölten 48.2000,15.6167（en.wikipedia）；无自有机场，与维也纳条目共用 VIE（约 85 公里，Railjet 直达）；人口 59,767（2025-01）",
   },
   {
@@ -3210,13 +3210,13 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "bad-ischl", nameZh: "巴特伊舍尔", nameEn: "Bad Ischl", country: "austria", tier: "notable", zone: "at-oberosterreich", admin1Zh: "上奥地利州", admin1En: "Upper Austria",
     lon: 13.6333, lat: 47.7203,
-    airport: { iata: "SZG", nameZh: "萨尔茨堡机场（经萨尔茨堡转乘）", nameEn: "Salzburg Airport (via Salzburg)", lon: 13.0043, lat: 47.7933 },
+    airport: { iata: "SZG", nameZh: "萨尔茨堡莫扎特机场（经萨尔茨堡转乘）", nameEn: "Salzburg Airport W. A. Mozart (via Salzburg)", lon: 13.0043, lat: 47.7933 },
     source: "Bad Ischl 47.7203,13.6333（en.wikipedia）；无自有机场，与萨尔茨堡条目共用 SZG（约 55 公里）；人口 14,133（2018-01）；2024 欧洲文化之都",
   },
   {
     id: "eisenstadt", nameZh: "艾森施塔特", nameEn: "Eisenstadt", country: "austria", tier: "notable", zone: "at-burgenland", admin1Zh: "布尔根兰州", admin1En: "Burgenland",
     lon: 16.5167, lat: 47.8500,
-    airport: { iata: "VIE", nameZh: "维也纳国际机场（经维也纳转乘）", nameEn: "Vienna International (via Vienna)", lon: 16.5697, lat: 48.1103 },
+    airport: { iata: "VIE", nameZh: "维也纳国际机场（经维也纳转乘）", nameEn: "Vienna International Airport (via Vienna)", lon: 16.5697, lat: 48.1103 },
     source: "Eisenstadt 47.8500,16.5167（en.wikipedia）；无自有机场，与维也纳条目共用 VIE（约 45 公里）；人口 16,118（2025）",
   },
   {
@@ -3728,7 +3728,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "jeonju", nameZh: "全州", nameEn: "Jeonju", country: "south-korea", tier: "notable", zone: "kr-honam", admin1Zh: "全北特别自治道", admin1En: "Jeonbuk State",
     lon: 127.1480, lat: 35.8242,
-    airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8093, lat: 35.1264 },
+    airport: { iata: "KWJ", nameZh: "光州机场", nameEn: "Gwangju Airport", lon: 126.8089, lat: 35.1264 },
     source: "全州韩屋村一带 35.8242,127.1480；本地无商业机场，最近机场为光州机场（距市区约50km）：公开资料",
   },
 
@@ -4079,7 +4079,7 @@ export const CITY_REGISTRY: CityEntry[] = [
   {
     id: "putrajaya", nameZh: "布城", nameEn: "Putrajaya", country: "malaysia", tier: "notable", zone: "my-central", admin1Zh: "布城联邦直辖区", admin1En: "Federal Territory of Putrajaya",
     lon: 101.6900, lat: 2.9300,
-    airport: { iata: "KUL", nameZh: "吉隆坡国际机场（经吉隆坡转乘）", nameEn: "Kuala Lumpur International (via KL)", lon: 101.7099, lat: 2.7456 },
+    airport: { iata: "KUL", nameZh: "吉隆坡国际机场（经吉隆坡转乘）", nameEn: "Kuala Lumpur International Airport (via Kuala Lumpur)", lon: 101.7099, lat: 2.7456 },
     source: "Putrajaya 2.9300,101.6900（en.wikipedia）；无自有机场，与吉隆坡条目共用 KUL（约 25 公里，KLIA Transit 直达）；人口 119,700（2024-Q1）",
   },
   {
