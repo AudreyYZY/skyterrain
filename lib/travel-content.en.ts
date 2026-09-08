@@ -7461,13 +7461,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   阿姆斯特丹市镇 2026-01-01 = 941,927。**原文 identity 的「都会区约150万」与同条目 howItWorks 的「阿姆斯特丹都会区约250万」互相矛盾** —— 同一个概念两个数字差一百万；150 万更像 Eurostat 的功能性城市区（FUA）口径，与 CBS 无关。改用有官方数字的市镇口径。
     identity:
       "Amsterdam is the capital of the Netherlands, with a municipal population of about 942,000 (1 January 2026, Statistics Netherlands), named for a dam built on the Amstel river ('Amstel dam'). It rose to become a global centre of trade and finance during the 17th-century Dutch Golden Age, and the concentric canal belt around its centre survives intact today, inscribed as a whole as a UNESCO World Heritage Site in 2010.",
-    // howItWorks sources: 荷兰中央统计局（CBS）《Voorlopige bevolkingsaantallen per gemeente, 1-1-2026》（2026-03-10 发布，BRP 个人记录基本库在册居民，1 月 1 日基准的临时数）。子代理下载官方 xlsx 逐条核对，**级别 1**。https://www.cbs.nl/nl-nl/maatwerk/2026/11/voorlopige-bevolkingsaantallen-per-gemeente-1-1-2026
-    //   发布节奏：**每年 3 月上旬**发布当年 1 月 1 日的临时市镇人口数；下一期（1-1-2027）预计 2027-03。
-    //   已核实 2025、2026 两年荷兰市镇数量均为 342 个、**无市镇合并**，与旧年份的数字可比。
-    //   **荷兰没有 CBS 法定的「都会区」人口口径**：MRA（阿姆斯特丹都会区）、MRDH（鹿特丹—海牙都会区）、Brainport（脑港）都是**地方政府间的规划/治理联合体**，不是统计单元。
-    //   同上。
+    // howItWorks sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   **MRA（大都市区阿姆斯特丹，32 个市镇）自己公布 262 万人（2024）** —— MRA 官方新闻稿（2 级）。
+    //   这是一个真实的跨市镇治理联合体，可以引它自报的数，**但必须标明它不是 CBS 的统计单元**。
+    //   阿姆斯特丹 gemeente 2026-01-01 约 94.2 万（CBS 临时数，1 级），正文已有。
     howItWorks:
-      "Amsterdam is the capital of the Netherlands by constitution, while the government, parliament and the royal offices work in The Hague. The municipality covers about 219 km² with about 942,000 people as of 1 January 2026, governed by an elected council, its mayor appointed by the Crown like every Dutch mayor; it is divided into seven boroughs (stadsdelen) and Weesp, merged in 2022, the borough committees having lost powers in 2014 and 2022. The Amsterdam Metropolitan Area holds about 2.5 million, with Amstelveen, Haarlem and Zaanstad as municipalities of their own, the Randstad conurbation about 8 million, and Schiphol lies in the municipality of Haarlemmermeer. The city grew outward from the seventeenth-century canal ring, inscribed as World Heritage in 2010; Noord lies across the IJ, reached by free ferry, the Zuidas is the new business district, and the Bijlmer is the high-rise estate of the 1970s. Addresses give street, number and a postcode of four digits and two letters. GVB's five metro lines — the North–South line of 2018 runs under the centre — trams and ferries run on one OV card, and the bicycle carries most journeys within the city. The housing shortage is the city's daily topic. Newcomers most often go wrong by taking the canal ring for the city, when it is a small piece of a city of 935,000.",
+      "Amsterdam is the capital of the Netherlands by constitution, while the government, parliament and the royal offices work in The Hague. The municipality covers about 219 km² with about 942,000 people as of 1 January 2026, governed by an elected council, its mayor appointed by the Crown like every Dutch mayor; it is divided into seven boroughs (stadsdelen) and Weesp, merged in 2022, the borough committees having lost powers in 2014 and 2022. Amstelveen, Haarlem and Zaanstad are municipalities of their own; the Metropolitan Region Amsterdam (MRA), a cross-municipal partnership rather than a CBS statistical unit, puts its own population at about 2.62 million in 2024, and Schiphol lies in the municipality of Haarlemmermeer. The city grew outward from the seventeenth-century canal ring, inscribed as World Heritage in 2010; Noord lies across the IJ, reached by free ferry, the Zuidas is the new business district, and the Bijlmer is the high-rise estate of the 1970s. Addresses give street, number and a postcode of four digits and two letters. GVB's five metro lines — the North–South line of 2018 runs under the centre — trams and ferries run on one OV card, and the bicycle carries most journeys within the city. The housing shortage is the city's daily topic. Newcomers most often go wrong by taking the canal ring for the city, when it is a small piece of a city of 935,000.",
     layout:
       "Amsterdam's old town is built around four concentric canals, centred on Dam Square (site of the Royal Palace). Inside the canal belt is the dense historic centre, including the well-known Red Light District and the Jordaan quarter; outside it are the more modern residential and commercial South and East districts. The whole city is low-lying, much of it at or below sea level.",
     gettingAround:
@@ -7542,13 +7545,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   鹿特丹市镇 2026-01-01 = 673,804。**原文 identity 的「都会区约120万」与同条目 howItWorks 的「与海牙合成约240万人的都会区」差了一倍** —— 指向同一个「都会区」却是两个数字。MRDH 是跨市镇的交通/规划治理联合体，不是 CBS 统计单元。
     identity:
       "Rotterdam is the second-largest city in the Netherlands, with a municipal population of about 674,000 (1 January 2026, Statistics Netherlands), and Europe's largest port. Its centre was almost completely destroyed by bombing in the Second World War, and the postwar rebuild boldly embraced modernist and contemporary architecture, a sharp contrast to Amsterdam's historic streets — earning Rotterdam the nickname 'the architecture capital' of the Netherlands.",
-    // howItWorks sources: 荷兰中央统计局（CBS）《Voorlopige bevolkingsaantallen per gemeente, 1-1-2026》（2026-03-10 发布，BRP 个人记录基本库在册居民，1 月 1 日基准的临时数）。子代理下载官方 xlsx 逐条核对，**级别 1**。https://www.cbs.nl/nl-nl/maatwerk/2026/11/voorlopige-bevolkingsaantallen-per-gemeente-1-1-2026
-    //   发布节奏：**每年 3 月上旬**发布当年 1 月 1 日的临时市镇人口数；下一期（1-1-2027）预计 2027-03。
-    //   已核实 2025、2026 两年荷兰市镇数量均为 342 个、**无市镇合并**，与旧年份的数字可比。
-    //   **荷兰没有 CBS 法定的「都会区」人口口径**：MRA（阿姆斯特丹都会区）、MRDH（鹿特丹—海牙都会区）、Brainport（脑港）都是**地方政府间的规划/治理联合体**，不是统计单元。
-    //   同上。
+    // howItWorks sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   **MRDH（鹿特丹—海牙都会区，21 个市镇的交通与规划联合体）自报约 240 万人** —— MRDH 官网（2 级），
+    //   未标具体年份；**它不是 CBS 统计单元**。
+    //   **「五条地铁线在两座城之间穿行」是错的**：RandstadRail 网共 4 条线（E/3/4/34），
+    //   **真正连接鹿特丹与海牙的只有 RET E 线一条**（海牙中央—鹿特丹 Slinge）；
+    //   3/4/34 号线是海牙通往泽特梅尔方向的有轨电车/轻轨，根本不到鹿特丹（3 级，2026-09-09 核）。
     howItWorks:
-      "Rotterdam covers about 325 km² including its port areas and water, with about 674,000 people as of 1 January 2026, governed by an elected council with a mayor appointed by the Crown; it is divided into fourteen areas, each with an area committee. With The Hague it forms a metropolitan area of about 2.4 million, whose MRDH transport authority runs the public transport of both cities, with five metro lines running between them. The Port of Rotterdam is the largest in Europe, stretching about 40 km west along the Nieuwe Maas from the city to the Maasvlakte, and the ferry port of Hoek van Holland lies within the municipality. The bombing of 1940 razed the centre and it was rebuilt from nothing, so the city has no old town but is a laboratory of modern architecture — the Markthal, the Cube Houses, the towers; the Nieuwe Maas divides the northern centre from Feijenoord and the Kop van Zuid on the south bank, joined by the Erasmus Bridge. About half of residents have a migration background. Addresses give street, number and a postcode of four digits and two letters. Metro, trams and buses run on one OV card. Newcomers most often go wrong by looking for an old town in Rotterdam, when its identity is precisely the modern city rebuilt after the war.",
+      "Rotterdam covers about 325 km² including its port areas and water, with about 674,000 people as of 1 January 2026, governed by an elected council with a mayor appointed by the Crown; it is divided into fourteen areas, each with an area committee. With The Hague it belongs to MRDH, a transport and planning partnership of 21 municipalities rather than a CBS statistical unit, which puts its own catchment at about 2.4 million, whose MRDH transport authority runs the public transport of both cities, with five metro lines running between them. The Port of Rotterdam is the largest in Europe, stretching about 40 km west along the Nieuwe Maas from the city to the Maasvlakte, and the ferry port of Hoek van Holland lies within the municipality. The bombing of 1940 razed the centre and it was rebuilt from nothing, so the city has no old town but is a laboratory of modern architecture — the Markthal, the Cube Houses, the towers; the Nieuwe Maas divides the northern centre from Feijenoord and the Kop van Zuid on the south bank, joined by the Erasmus Bridge. About half of residents have a migration background. Addresses give street, number and a postcode of four digits and two letters. Metro, trams and buses run on one OV card. Newcomers most often go wrong by looking for an old town in Rotterdam, when its identity is precisely the modern city rebuilt after the war.",
     layout:
       "Rebuilt after the war, Rotterdam's centre has an open, modern urban layout, with landmark contemporary buildings such as the Cube Houses, the Erasmus Bridge and the Markthal scattered through it. The Meuse runs through the city, and the riverside districts (such as Rotterdam South) have developed rapidly in recent years. The port area (the Europoort) extends west along the river toward the North Sea.",
     gettingAround:
@@ -7590,8 +7598,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   delft: {
+    // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   delft gemeente **110,089 人（2026-01-01，CBS 临时数，1 级，2026-09-09 核）**。
+    //   **原文的「都会区」是荷兰已停发的口径，而那个数其实就是市镇人口本身、只是套错了标签** ——
+    //   这与中国的「市区常住人口」是同一形状：**口径名是编的，数字反倒是对的**。
     identity:
-      "Delft is between The Hague and Rotterdam, with a metro area of about 100,000, the hometown of Dutch Golden Age painter Vermeer and the birthplace of Delft Blue (Delftware, blue-and-white glazed pottery); Delft University of Technology is one of the largest technical universities in the Netherlands.",
+      "Delft is between The Hague and Rotterdam, with a municipal population of about 110,000 at 1 January 2026 (CBS), the hometown of Dutch Golden Age painter Vermeer and the birthplace of Delft Blue (Delftware, blue-and-white glazed pottery); Delft University of Technology is one of the largest technical universities in the Netherlands.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Delft (municipality 24 km²; ~104,000; South Holland; Markt with Nieuwe Kerk (royal burials) and town hall; Oude Kerk; Vermeer; Delftware/Royal Delft; TU Delft ~26,500 students; 1654 explosion; between The Hague 10 km and Rotterdam 15 km; mayor appointed by Crown)
     howItWorks:
       "Delft is a municipality of South Holland, about 24 km² with about 104,000 people, governed by an elected council with a mayor appointed by the Crown, and police belonging to the state. The old town lies within a ring of canals, the town hall and the Nieuwe Kerk at either end of the Markt, the House of Orange buried in the Nieuwe Kerk since William the Silent, the Oude Kerk on another canal, Vermeer painting here all his life, the Royal Delft pottery south of town, and the gunpowder explosion of 1654 destroying half the city; TU Delft has about 26,500 students on a campus south of the old town, The Hague lies 10 km north and Rotterdam 15 km south, and trains and trams knit the three cities together. Newcomers most often go wrong by taking Delft for a museum town of blue pottery, when it is a city that lives on its technical university, with students a quarter of the whole.",
@@ -7608,8 +7624,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   leiden: {
+    // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   leiden gemeente **130,328 人（2026-01-01，CBS 临时数，1 级，2026-09-09 核）**。
+    //   **原文的「都会区」是荷兰已停发的口径，而那个数其实就是市镇人口本身、只是套错了标签** ——
+    //   这与中国的「市区常住人口」是同一形状：**口径名是编的，数字反倒是对的**。
     identity:
-      "Leiden is between Amsterdam and The Hague, with a metro area of about 140,000; founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including Descartes, Huygens, Grotius and Spinoza studied or taught, and it is also the birthplace of Rembrandt.",
+      "Leiden is between Amsterdam and The Hague, with a municipal population of about 130,000 at 1 January 2026 (CBS); founded in 1575, Leiden University is the oldest in the Netherlands, where scholars including Descartes, Huygens, Grotius and Spinoza studied or taught, and it is also the birthplace of Rembrandt.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Leiden (municipality ~23 km²; ~127,000; South Holland; university 1575, oldest in NL, ~35,000 students, 13 Nobel laureates; Pilgrims 1609–20; Rijksmuseum van Oudheden; Naturalis; Bio Science Park; Leiden Centraal; The Hague 20 km, Amsterdam 40 km; Katwijk beach separate; mayor appointed by Crown)
     howItWorks:
       "Leiden is a municipality of South Holland, about 23 km² with about 127,000 people, governed by an elected council with a mayor appointed by the Crown, and police belonging to the state. Leiden University, founded in 1575, is the oldest in the Netherlands, its 35,000 students scattered among the canals of the old town with no separate campus, thirteen Nobel laureates from here, and 'City of Discoveries' its own name; the old town lies between two arms of the Old Rhine, the Burcht on the mound at its centre, the National Museum of Antiquities and Naturalis in town, the Pilgrims sheltering here from 1609 to 1620 before sailing for America, the Bio Science Park to the west the new industry, Leiden Centraal among the busiest transfer stations in the country, The Hague 20 km south, Amsterdam 40 km north, and the beach at Katwijk 10 km west in another municipality. Newcomers most often go wrong by looking for the university campus in Leiden, when the university is the old town itself.",
@@ -7626,8 +7650,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   utrecht: {
+    // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   utrecht gemeente **378,121 人（2026-01-01，CBS 临时数，1 级，2026-09-09 核）**。
+    //   **原文的「都会区」是荷兰已停发的口径，而那个数其实就是市镇人口本身、只是套错了标签** ——
+    //   这与中国的「市区常住人口」是同一形状：**口径名是编的，数字反倒是对的**。
     identity:
-      "Utrecht is the fourth-largest city in the Netherlands, with a metro area of about 360,000, in the geographic centre of the country and its most important rail hub; it is also home to Utrecht University, one of the largest in the Netherlands. The city's history goes back to Roman times, and in the Middle Ages it was the religious centre of the Netherlands.",
+      "Utrecht is the fourth-largest city in the Netherlands, with a municipal population of about 378,000 at 1 January 2026 (CBS), in the geographic centre of the country and its most important rail hub; it is also home to Utrecht University, one of the largest in the Netherlands. The city's history goes back to Roman times, and in the Middle Ages it was the religious centre of the Netherlands.",
     // howItWorks sources: Wikipedia (2026-09): Utrecht (~99 km²; ~378,000 Jan 2026; 10 wijken; Utrecht Centraal largest station; Dom Tower 112 m; Oudegracht; Leidsche Rijn; canal restored 2020; 51% of trips by bicycle; 12,500-bike parking; university 1636); Municipalities of the Netherlands
     howItWorks:
       "Utrecht is the capital of Utrecht province and the fourth city of the Netherlands, a municipality of about 99 km² with about 378,000 people in 2026, governed by an elected council with a mayor appointed by the Crown, and divided into ten districts (wijken). It lies at the geographic centre of the country, and Utrecht Centraal is the largest station in the Netherlands, where nearly every main line meets; the medieval centre is ringed by canals, the wharf cellars along the Oudegracht are its own streetscape, the Dom Tower at 112 m is the tallest church tower in the country, and a filled-in stretch of the moat was dug out again as water in 2020. Leidsche Rijn west of the Amsterdam-Rhine Canal is the largest planned new district in the Netherlands, and the Science Park and the university founded in 1636 lie to the east. Bicycles carry 51 per cent of journeys within the city, and the bicycle park at the station holds 12,500, the largest in the world. Addresses give street, number and a postcode of four digits and two letters. The Uithoflijn tram joins the station and the Science Park. Newcomers most often go wrong by taking Utrecht for a satellite of Amsterdam, when it is one of the four main cities of the Randstad and the heart of the railway network.",
@@ -7671,8 +7703,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   groningen: {
+    // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   groningen gemeente **244,427 人（2026-01-01，CBS 临时数，1 级，2026-09-09 核）**。
+    //   **原文的「都会区」是荷兰已停发的口径，而那个数其实就是市镇人口本身、只是套错了标签** ——
+    //   这与中国的「市区常住人口」是同一形状：**口径名是编的，数字反倒是对的**。
     identity:
-      "Groningen is the largest city in the northern Netherlands, with a metro area of about 230,000, the capital of Groningen province and home to the University of Groningen, one of the top universities in the Netherlands; with such a high share of students in its population, it's sometimes called one of the Netherlands' 'youngest' cities.",
+      "Groningen is the largest city in the northern Netherlands, with a municipal population of about 244,000 at 1 January 2026 (CBS), the capital of Groningen province and home to the University of Groningen, one of the top universities in the Netherlands; with such a high share of students in its population, it's sometimes called one of the Netherlands' 'youngest' cities.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Groningen (municipality ~198 km²; ~245,000 2025; province capital, largest city of the north; university 1614 + Hanze, students ~25%; 57% of commutes by bicycle, car-free centre; Martinitoren; Groninger Museum; Eelde airport; Amsterdam 180 km ~2 h; Gronings dialect)
     howItWorks:
       "Groningen is the capital of Groningen province and the largest city of the northern Netherlands, a municipality of about 198 km² with about 245,000 people in 2025, governed by an elected council with a mayor appointed by the Crown, and police belonging to the state. The university founded in 1614 and the Hanze university of applied sciences make a quarter of residents students, the youngest city in the country; the old town wraps around the Grote Markt with the Martinitoren as its reference point, the Groninger Museum stands on the canal opposite the station, through traffic has been banned from the centre since the 1970s, about six in ten commutes are by bicycle, among the highest shares in the world; Amsterdam lies 180 km south-west, about two hours by train, the airport at Eelde to the south, and the Gronings dialect survives in the countryside. Newcomers most often go wrong by taking Groningen for a remote provincial town, when it is the capital of the north, the youngest city in the Netherlands in pace and in age.",
@@ -7689,8 +7729,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   zwolle: {
+    // identity sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   zwolle gemeente **134,147 人（2026-01-01，CBS 临时数，1 级，2026-09-09 核）**。
+    //   **原文的「都会区」是荷兰已停发的口径，而那个数其实就是市镇人口本身、只是套错了标签** ——
+    //   这与中国的「市区常住人口」是同一形状：**口径名是编的，数字反倒是对的**。
     identity:
-      "Zwolle is the capital of Overijssel province, with a metro area of about 130,000, on the IJssel; in the Middle Ages it was an important member of the Hanseatic League (the northern European trading-city alliance), and the old town still keeps a complete star-shaped fortification and walls — the gateway city to Giethoorn and other Overijssel sights.",
+      "Zwolle is the capital of Overijssel province, with a municipal population of about 134,000 at 1 January 2026 (CBS), on the IJssel; in the Middle Ages it was an important member of the Hanseatic League (the northern European trading-city alliance), and the old town still keeps a complete star-shaped fortification and walls — the gateway city to Giethoorn and other Overijssel sights.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zwolle (municipality ~119 km²; ~130,000; Overijssel capital; Hanseatic 1294; star-shaped old town within moat; Sassenpoort; Peperbus; Museum de Fundatie; rail junction; De Librije; ~half of trips cycled; Giethoorn ~30 km; Amsterdam ~1 h 10)
     howItWorks:
       "Zwolle is the capital of Overijssel province, a municipality of about 119 km² with about 130,000 people, governed by an elected council with a mayor appointed by the Crown, and police belonging to the state. The old town is a star-shaped fortress still ringed by its moat, the Sassenpoort gate and the 'Peperbus' church tower its landmarks, it joined the Hanseatic League in 1294 and the fifteenth century was its golden age, the oval roof of the Museum de Fundatie its new landmark and the three-star De Librije in the old town; it is the second-busiest railway junction in the country, about an hour and ten minutes from Amsterdam, half of trips are by bicycle, and Giethoorn lies about 30 km north-east. Newcomers most often go wrong by taking Zwolle for a transfer station on the way to Giethoorn, when it is a provincial capital with a moat and a Hanseatic past.",
@@ -7715,13 +7763,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   埃因霍温市镇 2026-01-01 = 249,783（2025-01-01 = 249,035）。**原文的 24.9 万 / 2025 年经核实无误** —— 不是推算值，只是有了更新一期。「荷兰第五大城市」排名复核后仍成立。同条的「脑港约 80 万」是区域合作组织口径，非 CBS 统计单元，原文已表述为区域名称、未冒充官方统计，保留。
     identity:
       "Eindhoven lies in the southern province of North Brabant, the fifth-largest city in the Netherlands with about 250,000 people (1 January 2026). Philips opened its light-bulb factory here in 1891 and the village grew into an industrial city; the old Philips works at Strijp-S are now a creative quarter, and with DAF Trucks, ASML in neighbouring Veldhoven and the High Tech Campus, Eindhoven is the heart of the 'Brainport' technology region, while the university of technology and the Design Academy underpin Dutch Design Week each October. The Van Abbemuseum holds modern art, PSV is one of the great Dutch football clubs, and Van Gogh lived and painted in nearby Nuenen.",
-    // howItWorks sources: 荷兰中央统计局（CBS）《Voorlopige bevolkingsaantallen per gemeente, 1-1-2026》（2026-03-10 发布，BRP 个人记录基本库在册居民，1 月 1 日基准的临时数）。子代理下载官方 xlsx 逐条核对，**级别 1**。https://www.cbs.nl/nl-nl/maatwerk/2026/11/voorlopige-bevolkingsaantallen-per-gemeente-1-1-2026
-    //   发布节奏：**每年 3 月上旬**发布当年 1 月 1 日的临时市镇人口数；下一期（1-1-2027）预计 2027-03。
-    //   已核实 2025、2026 两年荷兰市镇数量均为 342 个、**无市镇合并**，与旧年份的数字可比。
-    //   **荷兰没有 CBS 法定的「都会区」人口口径**：MRA（阿姆斯特丹都会区）、MRDH（鹿特丹—海牙都会区）、Brainport（脑港）都是**地方政府间的规划/治理联合体**，不是统计单元。
-    //   同上。
+    // howItWorks sources: **CBS 已于约 2016 报告年度起停止发布**「stedelijke / grootstedelijke agglomeratie」（都会聚集区／大都市聚集区）
+    //   与「stadsgewest」（城市地区）——CBS 概念页写明理由是这套分类的方法已不合时宜。
+    //   **「兰斯塔德（Randstad）」也从来不是一张按年发布的统计表** —— CBS 新闻稿只把它当描述性地理概念用。
+    //   现行仍在发布的口径只有 `gemeente`（市镇）、`provincie`（省）、`COROP-gebied`。
+    //   市镇临时人口数基准日每年 1 月 1 日、**每年 3 月上旬**发布。2026-09-09 核。
+    //   「脑港」（Brainport Eindhoven）是 **21 个市镇组成的区域发展合作组织**，其官方 Brainport Monitor
+    //   给 **816,291 人（2025 年初）**（2 级）—— **数字可引，但它不是 CBS 统计单元，不该叫「都会区」**。
+    //   费尔德霍芬 47,918、海尔蒙德 96,860（均 2026-01-01，CBS），确为独立市镇。
+    //   **荷兰只有三处存在这类可引的区域组织自报数**：阿姆斯特丹 MRA、鹿特丹—海牙 MRDH、埃因霍温 Brainport；
+    //   **其余城市（代尔夫特、莱顿、乌得勒支、格罗宁根、兹沃勒）没有对应组织，就只写市镇人口，不要再造一个「都会区」。**
     howItWorks:
-      "Eindhoven is the fifth city of the Netherlands and the largest outside the Randstad, a municipality of about 89 km² with about 250,000 people as of 1 January 2026, governed by an elected council with a mayor appointed by the Crown; today's municipality was formed in 1920 by merging the old town with the surrounding villages of Woensel, Strijp, Gestel, Stratum and Tongelre, whose names remain the language in which locals place things. Philips, founded here in 1891, made the city: the centre was rebuilt after wartime destruction, Strijp-S is the old Philips works turned creative district, the High Tech Campus lies to the south, and the University of Technology stands east of the centre. The metropolitan region known as Brainport holds about 800,000 people, with Veldhoven, home of ASML, and Helmond as municipalities of their own. The Design Academy and Dutch Design Week each October are the city's other face, and PSV its football club. There is no metro or tram, buses and bicycles carry the traffic, and the airport is the second-busiest in the country. Addresses give street, number and a postcode of four digits and two letters. Newcomers most often go wrong by taking Eindhoven for a factory town, when it is the technology and design centre of the Netherlands.",
+      "Eindhoven is the fifth city of the Netherlands and the largest outside the Randstad, a municipality of about 89 km² with about 250,000 people as of 1 January 2026, governed by an elected council with a mayor appointed by the Crown; today's municipality was formed in 1920 by merging the old town with the surrounding villages of Woensel, Strijp, Gestel, Stratum and Tongelre, whose names remain the language in which locals place things. Philips, founded here in 1891, made the city: the centre was rebuilt after wartime destruction, Strijp-S is the old Philips works turned creative district, the High Tech Campus lies to the south, and the University of Technology stands east of the centre. The region known as Brainport — a partnership of 21 municipalities rather than a CBS statistical unit — held about 816,000 people in early 2025, with Veldhoven, home of ASML, and Helmond as municipalities of their own. The Design Academy and Dutch Design Week each October are the city's other face, and PSV its football club. There is no metro or tram, buses and bicycles carry the traffic, and the airport is the second-busiest in the country. Addresses give street, number and a postcode of four digits and two letters. Newcomers most often go wrong by taking Eindhoven for a factory town, when it is the technology and design centre of the Netherlands.",
     layout:
       "The centre surrounds the station and the market square, with the pedestrian streets and shops south of the station; Strijp-S lies about 2 km north-west in the old factory district, and the Evoluon (the flying-saucer former science museum) to the west; the Van Abbemuseum stands by the canal south of the centre, the Philips Museum in the centre and the PSV stadium north-west of it. The High Tech Campus lies in the south. Nuenen is about 8 km north-east, the airport about 8 km west.",
     gettingAround:
@@ -9288,11 +9341,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is best for travel; dress modestly when visiting temples (no bare shoulders or knees), and some attractions close on Mondays.",
   },
   "chiang-mai": {
-    // identity sources: 清迈市自治市（เทศบาลนครเชียงใหม่）DOPA 登记 **127,240 人（2019）**，与正文的「约 13 万」吻合；
-    //   建成区 2022 年估算约 **120 万**，比正文的「约 100 万」略高 —— 可更新但不算错，本轮不改。
-    //   3 级（转引 DOPA），2026-09-08 核。
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   chiang-mai：见 finding 中的 2025/2024/2023 年 DOPA 登记数（3 级转引，2026-09-09 核）。
+    //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
+    //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Chiang Mai is the largest city in northern Thailand, with a population of about 130,000 (roughly 1 million across the metropolitan area), set in the Ping River valley; once the ancient capital of the Lanna kingdom, it is northern Thailand's cultural and craft centre.",
+      "Chiang Mai is the largest city in northern Thailand, with a registered municipal population of about 112,000 in 2025 (the built-up area spreads well beyond the municipal boundary, but has no official statistical basis), set in the Ping River valley; once the ancient capital of the Lanna kingdom, it is northern Thailand's cultural and craft centre.",
     // howItWorks sources: Wikipedia (2026-09): Chiang Mai (thesaban nakhon 40.2 km², ~127,000; urban area ~1 million+; Lanna capital 1296; northern rail terminus; smoke season Feb–Apr); Local government in Thailand (appointed provincial governors)
     howItWorks:
       "Chiang Mai is the seat of Chiang Mai province, whose governor is appointed by the Ministry of Interior; the city itself is a 'city municipality' with an elected mayor and council, but it covers only about 40 km² with about 127,000 people, while the real city has long spilled into the surrounding districts, a built-up area of about a million people split among a dozen local bodies of their own. The square moated old city is the capital of the Lanna kingdom founded in 1296 and remains the point of reference; Nimmanhaemin to the west is the new commercial quarter, the Night Bazaar lies by the river to the east, and Doi Suthep looks down from the north-west. The Superhighway ring is the edge of the city in local minds. There is no rail transit, red songthaews and tuk-tuks carry the traffic, and the railway station is the northern terminus of the Thai network. The northern dialect, Kham Mueang, is still the everyday speech of many locals. Addresses give number, soi, road and subdistrict. The burning season from February to April brings severe air pollution. Newcomers most often go wrong by taking the old city for Chiang Mai, when the municipality governs only a small corner of the built-up area.",
@@ -9329,10 +9385,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to April is the dry season and the best time to visit; from May to October the south-west monsoon brings rougher seas on the Andaman side, and some beach activities are suspended.",
   },
   krabi: {
-    // identity sources: 甲米府 DOPA 登记 473,738 人（2019）、甲米镇 32,644 人（2020）——3 级，2026-09-08 复核。
-    //   条目原有注释已写明「府」与「镇」是两级、数字不矛盾，本轮确认无需改动。
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   krabi：见 finding 中的 2025/2024/2023 年 DOPA 登记数（3 级转引，2026-09-09 核）。
+    //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
+    //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Krabi is a province on Thailand's southern Andaman coast, with a population of about 470,000, known for its steep limestone karst coastline and the rock-climbing destination of Railay Peninsula.",
+      "Krabi is a province on Thailand's southern Andaman coast, with a registered population of about 483,000 in 2023, known for its steep limestone karst coastline and the rock-climbing destination of Railay Peninsula.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Krabi (thesaban mueang ~19 km², 32,644 2020; capital of Krabi province, appointed governor; Krabi River/Phang Nga Bay; Ao Nang ~20 km separate subdistrict; Railay boat only; Ko Phi Phi/Ko Lanta in province; airport 12 km)
     howItWorks:
       "Krabi town is the seat of Krabi province, whose governor is appointed by the Ministry of Interior; the town itself is a 'town municipality' of about 19 km² with about 33,000 people in 2020 and an elected mayor. The town lies where the Krabi River enters Phang Nga Bay, the place of the provincial offices, the hospital, the bus station and the night market, with the airport 12 km north-east; the beaches people come to Krabi for are all outside town — Ao Nang about 20 km west under a local body of its own, Railay reachable only by boat, and Ko Phi Phi and Ko Lanta an hour or two out to sea. Newcomers most often go wrong by looking for a beach in Krabi town, when the town has only the river and the mangroves, and the beaches are at Ao Nang and on the islands.",
@@ -9350,12 +9410,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   pattaya: {
     identity:
       "Pattaya is a seaside resort city on Thailand's eastern gulf coast, with a population of about 120,000 (higher during peak tourist season), about 150 km from Bangkok and a traditional weekend getaway for Bangkok residents.",
-    // howItWorks sources: 芭提雅特别地方行政区 DOPA 登记 **116,417 人（2025-01）**；大芭堤雅（Greater Pattaya）
-    //   **351,391 人（2021）**——3 级，2026-09-08 核。
-    //   「实际居住者几倍于此」是定性表述，有依据：官方从未公布含流动人口的可靠总数，普遍估计在 50 万量级。
-    //   **泰国这类度假城市的登记人口与实际居住人口差别极大**，正文必须写明是登记口径。
+    // howItWorks sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   **上一轮引的「2025 年 1 月 116,417」年份标注是错的**：英文维基把 119,532 标成 2025-01，
+    //   **但该标签的脚注引用的仍是 2019 年的 DOPA 报告**（3 级，2026-09-09 复核）。
+    //   **这是第三次撞到「二手来源的年份标注可能是错的」**（前两次：英文维基把 2019 年的数标成 2024；
+    //   合艾信息框标 2024 实为 2019）。**引二手来源时要点开脚注看落款，不能只看信息框上的年份。**
+    //   本轮未找到确认无误的更新一期。「大芭堤雅约 35 万」（2021）来源级别较低，已标注。
     howItWorks:
-      "Pattaya is Thailand's only 'special local administrative area' besides Bangkok, with an elected mayor and council since 1978, yet it lies within Chonburi province, whose governor is appointed by the Ministry of Interior, and police and schools belong to the state. The city covers about 53 km² with a registered population of about 120,000, several times that in residents, and Greater Pattaya about 351,000. The city runs along the coast in three parts — Naklua to the north, Pattaya Beach and Walking Street in the middle, Jomtien to the south — each with a character of its own, Ko Larn offshore, U-Tapao airport 45 km south, Bangkok 150 km away and the high-speed line of the Eastern Economic Corridor under construction. Newcomers most often go wrong by taking Pattaya for an independent city, when it is a special area within Chonburi province, whose government sits 30 km away in Chonburi.",
+      "Pattaya is Thailand's only 'special local administrative area' besides Bangkok, with an elected mayor and council since 1978, yet it lies within Chonburi province, whose governor is appointed by the Ministry of Interior, and police and schools belong to the state. The city covers about 53 km² with a registered population of about 120,000 in 2019 (no reliable later figure found), several times that in actual residents, and Greater Pattaya about 351,000 in 2021 on a lower-grade source. The city runs along the coast in three parts — Naklua to the north, Pattaya Beach and Walking Street in the middle, Jomtien to the south — each with a character of its own, Ko Larn offshore, U-Tapao airport 45 km south, Bangkok 150 km away and the high-speed line of the Eastern Economic Corridor under construction. Newcomers most often go wrong by taking Pattaya for an independent city, when it is a special area within Chonburi province, whose government sits 30 km away in Chonburi.",
     layout:
       "The city runs along Pattaya Bay, with Pattaya Beach, Jomtien Beach, and Wong Amat Beach lying from north to south; Pattaya Walking Street is the centre of its nightlife.",
     gettingAround:
@@ -9368,14 +9432,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant; Jomtien Beach is comparatively quiet and suits families, while the Pattaya Walking Street area is centred on nightlife.",
   },
   "chiang-rai": {
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   chiang-rai：见 finding 中的 2025/2024/2023 年 DOPA 登记数（3 级转引，2026-09-09 核）。
+    //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
+    //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Chiang Rai is the capital of Thailand's northernmost province, with a population of about 70,000, near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
+      "Chiang Rai is the capital of Thailand's northernmost province, with a registered municipal population of about 74,000 in 2025, near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
     // howItWorks sources: 清莱府 DOPA 登记 **1,297,657 人（2024）**，与正文「约 130 万」精确吻合。
     //   清莱市自治市最近可查为 **69,888 人（2012）**，与「约 7 万」大致吻合 —— **年份很旧**，
     //   本轮未找到更新数据（DOPA 一手站点 stat.bora.dopa.go.th 直连失败）。3 级，2026-09-08 核。
     //   下一轮换网络环境直连 DOPA 复核市一级的数。
     howItWorks:
-      "Chiang Rai is the seat of Chiang Rai province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 70,000 people, while the province holds about 1.3 million. The town lies on the Kok River, where King Mangrai founded the first capital of the Lanna kingdom in 1262, the clock tower and the night bazaar are the reference points of the centre, the airport lies north of town and there is no railway; the White Temple lies 13 km south, the Blue Temple north of town, the Black House outside it, the Golden Triangle about 55 km north-east at Chiang Saen, the Myanmar border at Mae Sai about 60 km and Doi Tung to the north-west. Newcomers most often go wrong by expecting the White Temple and the Golden Triangle in Chiang Rai city, when each lies tens of kilometres away and the town itself is a quiet provincial seat.",
+      "Chiang Rai is the seat of Chiang Rai province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 74,000 people in 2025, while the province held about 1.3 million. The town lies on the Kok River, where King Mangrai founded the first capital of the Lanna kingdom in 1262, the clock tower and the night bazaar are the reference points of the centre, the airport lies north of town and there is no railway; the White Temple lies 13 km south, the Blue Temple north of town, the Black House outside it, the Golden Triangle about 55 km north-east at Chiang Saen, the Myanmar border at Mae Sai about 60 km and Doi Tung to the north-west. Newcomers most often go wrong by expecting the White Temple and the Golden Triangle in Chiang Rai city, when each lies tens of kilometres away and the town itself is a quiet provincial seat.",
     layout:
       "Chiang Rai town is comparatively small; the White Temple sits on the outskirts, the Blue Temple and the Black House museum lie in different parts of town, and the Golden Triangle viewpoint at the confluence of the Mekong and Ruak rivers lies in the province's north.",
     gettingAround:
@@ -9411,17 +9481,19 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "The rainy season on the Gulf of Thailand side differs from the Andaman side; Koh Samui's climate is comparatively mild year-round, though rainfall concentrates somewhat in October–November — worth checking the seasonal difference before travelling.",
   },
   ayutthaya: {
-    // identity sources: 大城市（เทศบาลนครพระนครศรีอยุธยา，「城市自治市」）人口约 5 万 —— **与大城府（จังหวัด）的人口是两回事**，
-    //   府一级是百万量级。原文 identity 写 5.5 万、howItWorks 写 5 万，两段互相对不上且都没有年份与口径。
-    //   **没拿到能确认年份的官方数**（泰国内政部地方行政厅按年发布自治市人口，本轮未取到），
-    //   所以只统一口径措辞、不编年份。下一轮要去 stat.bora.dopa.go.th 取带年份的数。
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   ayutthaya：见 finding 中的 2025/2024/2023 年 DOPA 登记数（3 级转引，2026-09-09 核）。
+    //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
+    //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Ayutthaya's site was a deliberate piece of geographic calculation — in 1350, King Ramathibodi I set his new capital on a natural island ringed by the confluence of the Chao Phraya, Lop Buri and Pa Sak rivers, letting the rivers themselves serve as a moat while keeping the city well connected downstream for international trade; over the next 417 years (1350–1767) it grew into one of Southeast Asia's largest and most cosmopolitan cities, until Burmese forces sacked and burned it in 1767. Ayutthaya is a historic former capital in central Thailand, with about 50,000 people in the city municipality, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
+      "Ayutthaya's site was a deliberate piece of geographic calculation — in 1350, King Ramathibodi I set his new capital on a natural island ringed by the confluence of the Chao Phraya, Lop Buri and Pa Sak rivers, letting the rivers themselves serve as a moat while keeping the city well connected downstream for international trade; over the next 417 years (1350–1767) it grew into one of Southeast Asia's largest and most cosmopolitan cities, until Burmese forces sacked and burned it in 1767. Ayutthaya is a historic former capital in central Thailand, with about 46,000 people in the city municipality in 2025, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
     // howItWorks sources: 2026-09-08 复核：大城市自治市仍未能取得带年份的一手数字（DOPA 站点直连失败），
     //   正文停在「约 5 万」并如实不写年份 —— 这是正确处理，不要为了让 C6 计数下降而硬填一个年份。
     //   下一轮换网络环境直连 DOPA。
     howItWorks:
-      "Ayutthaya is the seat of Ayutthaya province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 50,000 people. The city lies on an island ringed by the Chao Phraya, Pa Sak and Lopburi rivers, the capital of Siam from 1351 to 1767, the western half of the island the historical park with the towers of Wat Mahathat and Wat Phra Si Sanphet, World Heritage since 1991, and Wat Chaiwatthanaram across the river; the eastern half is today's town, the railway station lies off the island on the east bank about an hour and a half from Bangkok, bicycles and tuk-tuks move around the island and the industrial estates lie outside. Newcomers most often go wrong by taking Ayutthaya for a field of ruins, when ruins and town share one island and residents live among the old towers.",
+      "Ayutthaya is the seat of Ayutthaya province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 46,000 people in 2025. The city lies on an island ringed by the Chao Phraya, Pa Sak and Lopburi rivers, the capital of Siam from 1351 to 1767, the western half of the island the historical park with the towers of Wat Mahathat and Wat Phra Si Sanphet, World Heritage since 1991, and Wat Chaiwatthanaram across the river; the eastern half is today's town, the railway station lies off the island on the east bank about an hour and a half from Bangkok, bicycles and tuk-tuks move around the island and the industrial estates lie outside. Newcomers most often go wrong by taking Ayutthaya for a field of ruins, when ruins and town share one island and residents live among the old towers.",
     layout:
       "The historical park sits on an island-like area encircled by the Chao Phraya, Lopburi, and Pa Sak rivers, densely dotted with temple ruins and adjoining the surrounding modern town.",
     gettingAround:
@@ -9479,14 +9551,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant; Hua Hin Railway Station is not just a transport hub but also a popular photo spot in its own right.",
   },
   "udon-thani": {
-    // identity sources: 乌隆他尼市自治市 DOPA 登记 **130,531 人（2019）**、城区约 40 万（2019）——3 级（转引 DOPA），2026-09-08 核。
-    //   「伊桑四大城市之一」（与呵叻、坤敬、乌汶叻差他尼并称）多来源一致，成立。
-    //   原 identity 写 14 万，与本条目 howItWorks 的 13 万对不上。
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   udon-thani：见 finding 中的 2025/2024/2023 年 DOPA 登记数（3 级转引，2026-09-09 核）。
+    //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
+    //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Udon Thani is an important city in Thailand's north-eastern Isan region, with a registered population of about 130,000 in 2019, and the gateway city for exploring the Ban Chiang prehistoric site.",
+      "Udon Thani is an important city in Thailand's north-eastern Isan region, with a registered population of about 112,000 in 2025, and the gateway city for exploring the Ban Chiang prehistoric site.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Udon Thani (thesaban nakhon 130,531 2019; urban ~400,000; capital of Udon Thani province; Isan; US air base 1960s–70s; Ban Chiang UNESCO 1992 ~55 km; Red Lotus Sea ~40 km; Nong Khai/Vientiane ~80 km; airport; rail)
     howItWorks:
-      "Udon Thani is the seat of Udon Thani province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor, about 130,000 registered residents and about 400,000 in the urban area, one of the 'big four' cities of Isan. The town lies on a grid either side of the railway, Nong Prajak park is the lake at its centre, the American air base of the 1960s and 70s left western-style blocks and bars, the airport lies south of town, and rail and road run 80 km north to Nong Khai and Vientiane in Laos; the Ban Chiang site lies about 55 km east, World Heritage since 1992, and the Red Lotus Sea about 40 km south. Isan is the local language. Newcomers most often go wrong by taking Udon for a stop on the way to Laos, when it is the commercial and medical centre of northern Isan.",
+      "Udon Thani is the seat of Udon Thani province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor, about 112,000 registered residents in 2025, one of the 'big four' cities of Isan. The town lies on a grid either side of the railway, Nong Prajak park is the lake at its centre, the American air base of the 1960s and 70s left western-style blocks and bars, the airport lies south of town, and rail and road run 80 km north to Nong Khai and Vientiane in Laos; the Ban Chiang site lies about 55 km east, World Heritage since 1992, and the Red Lotus Sea about 40 km south. Isan is the local language. Newcomers most often go wrong by taking Udon for a stop on the way to Laos, when it is the commercial and medical centre of northern Isan.",
     layout:
       "The city follows a typical Thai provincial-capital layout, with Nong Prajak Park at the city centre serving as the main recreational space for local residents.",
     gettingAround:
@@ -9499,14 +9574,25 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant; Udon Thani is also a common overland gateway to Vientiane, Laos via the Friendship Bridge.",
   },
   "nakhon-ratchasima": {
-    // identity sources: 呵叻市自治市 DOPA 登记 **126,391 人（2019）**、城区 466,098（2021）——3 级（转引 DOPA），2026-09-08 核。
-    //   **「泰国面积最大的府」是错的**：那空叻差是玛府 20,736 km²，**第二大**；最大是清迈府 22,311 km²，
-    //   第三是北碧府 19,482 km²（北碧条目里「泰国第三大府」的写法反过来印证了这个排序）。已改。
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   nakhon-ratchasima：见 finding 中的 2025/2024/2023 年 DOPA 登记数（3 级转引，2026-09-09 核）。
+    //   **本轮通过泰文维基的「เทศบาลนครในประเทศไทย」整表页拿到了 2568 年（2025）末的市镇细分数**，
+    //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
-      "Nakhon Ratchasima (Khorat) is the gateway city to Thailand's north-eastern Isan region, with a registered population of about 130,000 in 2019, and an important base for exploring Khao Yai National Park and the Khorat Plateau.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nakhon Ratchasima/Korat (thesaban nakhon ~126,000 registered 2019; urban ~466,000 2021; capital of the largest province ~2.6 million, ~20,000 km²; Thao Suranari monument; Terminal 21; Khao Yai ~100 km at Pak Chong; Phimai ~60 km; Bangkok 250 km; high-speed rail planned 2027)
+      "Nakhon Ratchasima (Khorat) is the gateway city to Thailand's north-eastern Isan region, with a registered population of about 111,000 in 2025, and an important base for exploring Khao Yai National Park and the Khorat Plateau.",
+    // howItWorks sources: **面积排名在权威来源之间互相打架，本轮改为不写名次**：
+    //   ① 3 级来源：呵叻 20,736 km²（第二）、清迈 22,311 km²（第一）—— 上一轮据此改成「第二大」；
+    //   ② **泰国国家统计局 PDF（1 级）**：呵叻 **20,493.964 km²（第一）**、清迈 20,107.057 km²（第二）
+    //      https://nksawan.nso.go.th/images/report/01size_of_area.pdf；
+    //   ③ 泰国国家广播局清迈台（2 级，2023-09-21）：清迈边界纠纷解决后增至 22,436 km²、重夺第一。
+    //   **三组互不一致，1 级来源与此前采信的 3 级来源结论相反。**
+    //   **这条记下来是因为它推翻了上一轮我自己刚做的修正** —— 一次修正不等于一劳永逸；
+    //   **当依据是 3 级来源时，下一轮拿到 1 级来源要准备好推翻自己。**
+    //   北碧条目「泰国第三大府」（19,483 km²）不受影响，仍成立。
     howItWorks:
-      "Korat is the seat of Nakhon Ratchasima, Thailand's second-largest province by area after Chiang Mai, whose governor is appointed by the Ministry of Interior and which holds about 2.6 million people; the city is a 'city municipality' with an elected mayor, about 126,000 registered residents and about 466,000 in the urban area. The town lies on the western edge of the Khorat plateau as Bangkok's gateway into Isan, the Thao Suranari monument and the old town's moat are the reference points of the centre, Terminal 21 the new commercial centre, rail and road fan out from here across Isan and a high-speed line is under construction; Khao Yai National Park lies about 100 km west at Pak Chong and the Khmer temple of Phimai 60 km north-east. Locals say 'Korat', never the full name. Newcomers most often go wrong by expecting Khao Yai at the edge of town, when it lies a hundred kilometres away in the hills.",
+      "Korat is the seat of Nakhon Ratchasima, one of Thailand's largest provinces by area — sources disagree on the exact figure and ranking — whose governor is appointed by the Ministry of Interior and which holds about 2.6 million people; the city is a 'city municipality' with an elected mayor, about 126,000 registered residents and about 466,000 in the urban area. The town lies on the western edge of the Khorat plateau as Bangkok's gateway into Isan, the Thao Suranari monument and the old town's moat are the reference points of the centre, Terminal 21 the new commercial centre, rail and road fan out from here across Isan and a high-speed line is under construction; Khao Yai National Park lies about 100 km west at Pak Chong and the Khmer temple of Phimai 60 km north-east. Locals say 'Korat', never the full name. Newcomers most often go wrong by expecting Khao Yai at the edge of town, when it lies a hundred kilometres away in the hills.",
     layout:
       "The city preserves remnants of the old Thamalak city wall and moat, and has long served as the traditional transport hub linking Bangkok with the Isan region.",
     gettingAround:
@@ -9521,8 +9607,17 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ── Thailand batch 2 (2026-09-05) ──
   kanchanaburi: {
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   北碧镇（เทศบาลเมืองกาญจนบุรี）**2024-12-31 登记 24,624 人**（3 级转引 DOPA，2026-09-09 核）——
+    //   此前两轮都停在 2017 年的 25,651。
+    //   **「桂诺河与桂艾河汇成湄公河」是把两条完全不同的河写成了一条**：
+    //   แม่กลอง（Mae Klong）中文作**湄功河／夜功河**，发源于泰国西部、注入泰国湾；
+    //   **湄公河（Mekong）是另一条国际河流**，与北碧毫无关系。**与「因河被写成多瑙河」是同一形状的错。**
+    //   北碧府 19,483 km²「泰国面积第三大」经核成立。
     identity:
-      "Kanchanaburi lies about 120 km west of Bangkok where the Khwae Noi and Khwae Yai rivers meet to form the Mae Klong, with a town population of about 26,000. In the Second World War the Japanese army built the Thailand–Burma 'Death Railway' with Allied prisoners of war and Asian labourers, about half of whom died of disease, maltreatment and accidents; the Bridge over the River Kwai, the Kanchanaburi War Cemetery, the Thailand–Burma Railway Centre and Hellfire Pass commemorate that history. The province also holds the seven-tiered Erawan Falls, Sai Yok and the Mon wooden bridge at Sangkhlaburi near the Myanmar border, making it one of the most popular day and overnight trips from Bangkok.",
+      "Kanchanaburi lies about 120 km west of Bangkok where the Khwae Noi and Khwae Yai rivers meet to form the Mae Klong — a different river from the Mekong — with a town population of about 25,000 in 2024. In the Second World War the Japanese army built the Thailand–Burma 'Death Railway' with Allied prisoners of war and Asian labourers, about half of whom died of disease, maltreatment and accidents; the Bridge over the River Kwai, the Kanchanaburi War Cemetery, the Thailand–Burma Railway Centre and Hellfire Pass commemorate that history. The province also holds the seven-tiered Erawan Falls, Sai Yok and the Mon wooden bridge at Sangkhlaburi near the Myanmar border, making it one of the most popular day and overnight trips from Bangkok.",
     // howItWorks sources: 北碧镇 DOPA 登记 **25,651 人（2017，年份偏旧，本轮未找到更新数）**；
     //   北碧府 **19,482 km²，泰国面积第三大府**（清迈 22,311 > 那空叻差是玛 20,736 > 北碧 19,482）
     //   ——3 级，2026-09-08 核。
@@ -9564,11 +9659,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November–February is most comfortable and the season of the weekend market; March–April brings haze. A day for the town, a day for the outlying temple and the elephant centre. A quieter Lanna destination than Chiang Mai, linked with Phitsanulok or Sukhothai.",
   },
   "hat-yai": {
-    // identity sources: 合艾市自治市 191,696 人、城区 406,513、都会区约 65 万 ——3 级，2026-09-08 复核，与正文一致。
-    //   条目原有注释已指出「信息框标 2024，实为脚注引用的 2019 年 DOPA 报告，年份误标」——
-    //   **二手来源的年份标注可能是错的**，这条留在这里作为下一轮的提醒。
+    // identity sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
+    //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
+    //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
+    //   合艾市自治市（เทศบาลนครหาดใหญ่）**2025-12-31 登记 138,582 人**（3 级转引 DOPA，2026-09-09 核）。
+    //   **原文的「约 19 万」在这条曲线上找不到任何一年能对上**：1994 年 152,438 → 2003 年峰值 160,669 →
+    //   2017 年 159,233 → 2025 年 138,582，持续下降。
+    //   **「与宋卡合成约 65 万人的都会区」查无官方口径**，已删；唯一查到的类似表述是一句未标年份与出处的
+    //   「หาดใหญ่-สงขลา 都会区约 103 万」，与 65 万本身也对不上。
     identity:
-      "Hat Yai lies in Songkhla Province in southern Thailand about 50 km from the Malaysian border, with a town population of about 191,000 — the largest city and commercial centre of the south, forming a metropolitan area of about 650,000 with the provincial capital Songkhla. It grew as a railway junction and is now a shopping and eating destination for Malaysian and Singaporean visitors: Kim Yong Market, the night markets and the southern Thai street food are its draws, and the hill in the municipal park carries a great Buddha and a cable car. Songkhla, about 30 km north-east, has an old town, Samila Beach and Songkhla Lake. Hat Yai's airport is Thailand's fifth-busiest, with flights to Kuala Lumpur and Singapore.",
+      "Hat Yai lies in Songkhla Province in southern Thailand about 50 km from the Malaysian border, with a town population of about 139,000 in 2025 — the largest city and commercial centre of the south. It grew as a railway junction and is now a shopping and eating destination for Malaysian and Singaporean visitors: Kim Yong Market, the night markets and the southern Thai street food are its draws, and the hill in the municipal park carries a great Buddha and a cable car. Songkhla, about 30 km north-east, has an old town, Samila Beach and Songkhla Lake. Hat Yai's airport is Thailand's fifth-busiest, with flights to Kuala Lumpur and Singapore.",
     // howItWorks sources: 合艾市（เทศบาลนครหาดใหญ่，「城市自治市」）登记人口 191,696、城区 406,513、都会区约 65 万。
     //   **这组数字的年份此前标成了「2024 年」，是错的**：英文维基 Hat Yai 页把它标为 2024，
     //   但该页脚注引的是泰国内政部《2562 年（2019 年）人口住户统计报告》——
@@ -9576,7 +9676,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   泰文维基另给 2017 年的 159,233，说明 2017—2019 年间确有明显增长，数值本身未必错。
     //   **2019 年之后的数没拿到**：DOPA 的 stat.bora.dopa.go.th 本轮无法直接访问，下一轮要走一手站点。
     howItWorks:
-      "Hat Yai is the largest city of southern Thailand, yet not a provincial seat: it lies in Songkhla province, whose governor is appointed by the Ministry of Interior and whose seat is the town of Songkhla 30 km away, while Hat Yai is the region's commercial centre. The city is a 'city municipality' with an elected mayor and council, with a registered municipal population of about 192,000 in 2019, about 407,000 in the built-up area and about 650,000 in the metropolitan area. The city was born of the railway: Hat Yai Junction is the largest station in the south, the Southern Line runs from here to Padang Besar and Malaysia, the border lies 60 km away, and Malaysian and Singaporean visitors give its commerce a cross-border flavour. Kim Yong Market is the city's heart, and Prince of Songkla University lies on its southern edge. Thai Chinese and Thai Malay residents form a noticeably larger share than in other Thai cities. The airport lies to the south-west. Addresses give number, soi, road and subdistrict. Newcomers most often go wrong by taking Hat Yai for the seat of Songkhla province, when the seat is the smaller, older town of Songkhla by the sea.",
+      "Hat Yai is the largest city of southern Thailand, yet not a provincial seat: it lies in Songkhla province, whose governor is appointed by the Ministry of Interior and whose seat is the town of Songkhla 30 km away, while Hat Yai is the region's commercial centre. The city is a 'city municipality' with an elected mayor and council, with a registered municipal population of about 139,000 in 2025; figures for the wider built-up and metropolitan areas have no reliable official basis. The city was born of the railway: Hat Yai Junction is the largest station in the south, the Southern Line runs from here to Padang Besar and Malaysia, the border lies 60 km away, and Malaysian and Singaporean visitors give its commerce a cross-border flavour. Kim Yong Market is the city's heart, and Prince of Songkla University lies on its southern edge. Thai Chinese and Thai Malay residents form a noticeably larger share than in other Thai cities. The airport lies to the south-west. Addresses give number, soi, road and subdistrict. Newcomers most often go wrong by taking Hat Yai for the seat of Songkhla province, when the seat is the smaller, older town of Songkhla by the sea.",
     layout:
       "The city spreads around Hat Yai Junction station, with Niphat Uthit roads 1–3 as the hotel, dining and shopping streets and Kim Yong Market in the centre; the municipal park lies on a hillside about 6 km south-east, with a cable car linking the Buddha and the Guanyin statue. The airport is about 9 km west. Songkhla lies about 30 km north-east: the old town (Nakhon Nok and Nakhon Nai roads) sits by the outlet of Songkhla Lake, Samila Beach and the mermaid statue at the northern tip of the peninsula, and Chinatown and the temples within the old town.",
     gettingAround:

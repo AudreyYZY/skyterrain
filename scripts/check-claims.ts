@@ -94,6 +94,13 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
     { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "同上，SSB 没有「都会区」这一档；数字要么是 tettsted 被贴错标签，要么查无官方来源" },
     { re: /\bmetro(?:politan)? area\b/i, why: "SSB publishes no metropolitan-area tier" },
   ],
+  // known-errors C6-c-5：CBS 约 2016 报告年度起停止发布 agglomeratie / stadsgewest；
+  // 「兰斯塔德」从来不是一张按年发布的统计表。现行只有 gemeente / provincie / COROP。
+  netherlands: [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "CBS 已停止发布 agglomeratie / stadsgewest，现行只有 gemeente / provincie / COROP" },
+    { re: /兰斯塔德[^。；]{0,14}?[\d.,]+\s*万/, why: "「兰斯塔德」不是按年发布的官方统计单元" },
+    { re: /\bmetro(?:politan)? area\b[^.;]{0,24}?[\d.,]+/i, why: "CBS publishes no agglomeration tier any more" },
+  ],
   // known-errors C6-c-5：日本没有「市区人口」这个复合概念（「市」与「区」是平行的不同层级），
   // 也从未使用「都会区」——総務省的官方专名是「東京圏」「近畿大都市圏」「中京大都市圏」。
   japan: [

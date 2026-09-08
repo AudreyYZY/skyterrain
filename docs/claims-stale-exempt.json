@@ -3,6 +3,12 @@
   "howTo": "键是 <kind>/<id>/<field>。加一条之前必须有对应的 // <field> sources: 注释写清为什么；不写理由的豁免等于把问题藏起来。",
   "entries": [
     {
+      "key": "travel/amsterdam/howItWorks",
+      "reason": "MRA（大都市区阿姆斯特丹）自报 262 万人是 2024 年数，MRA 是跨市镇治理联合体、不按年固定发布；阿姆斯特丹 gemeente 本身的 2026-01-01 数已写在同段前半句。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2027-03"
+    },
+    {
       "key": "travel/ayutthaya/identity",
       "reason": "大城市自治市**完全没有取到带年份的一手数字**，正文如实停在「约 5 万」不写年份；这一条是被句中的 1991 年（世界遗产列入年份）误命中的。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
@@ -105,6 +111,12 @@
       "recheckAfter": "2026-12"
     },
     {
+      "key": "travel/kanchanaburi/identity",
+      "reason": "北碧镇 24,624 人（2024-12-31）是 DOPA「เมือง 级」年末统计表能查到的最新一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
+    },
+    {
       "key": "travel/kharkhorin/howItWorks",
       "reason": "同上；哈拉和林是苏木中心，2017 年的 1.48 万是能核到的最新一期，基准年已九年",
       "confirmedOn": "2026-09-08",
@@ -150,6 +162,12 @@
       "key": "travel/krabi/howItWorks",
       "reason": "甲米镇 32,644 人（2020）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/krabi/identity",
+      "reason": "甲米府 483,221 人（2023-12-31）是 DOPA 能查到的最新一期；泰国 DOPA 的府级细分表由二手渠道零散转引、滞后数周到数月，一手站点 stat.bora.dopa.go.th 连续三轮直连失败。",
+      "confirmedOn": "2026-09-09",
       "recheckAfter": "2026-12"
     },
     {
@@ -211,6 +229,12 @@
       "reason": "同上；市镇 2024 年 50,126、全省约 11 万，是能核到的最新一期",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/pattaya/howItWorks",
+      "reason": "芭提雅 119,532 人（2019-12-31）是能确认年份的最新一期。**英文维基把这个数标成「2025 年 1 月」，但该标签的脚注引用的仍是 2019 年报告** —— 二手来源的年份标注是错的，本轮未找到确认无误的更新一期。",
+      "confirmedOn": "2026-09-09",
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/phuket/identity",
