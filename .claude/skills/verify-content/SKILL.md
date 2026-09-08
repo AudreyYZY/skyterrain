@@ -189,6 +189,20 @@ findings JSON 的形状：
 `key` 是去重键，**同一个键永远只有一个 issue**。字段含义见
 [`scripts/verify-issues.ts`](../../../scripts/verify-issues.ts) 顶部注释。
 
+**`key` 与 `kind` 必须沿用既有写法，否则去重会失效**（2026-09-08 踩过）：
+
+| 档 | `kind` | `key` |
+|---|---|---|
+| 城市 / 国家概览 | `travel` | `travel/<id>/<话题>`，如 `travel/hanzhong/population-2025` |
+| 地形 | `terrain` | `terrain/<id>/<话题>` |
+| 航线 | `routes` | `routes/<id>/flight` |
+
+踩过的坑：中国人口刷新那几批把 `kind` 写成了 `city`、`key` 写成了 `cn7-hanzhong-pop`，
+于是 `travel/hanzhong/population-2025` 这个既有 issue 没被命中，**又重开了一个一模一样的**
+（#209 与 #206、#211 与 #202）。写 findings 之前先 `gh issue list --state all --label
+data-error --search <id>` 看看这个条目有没有已经开着的 issue，有就沿用它正文里
+`<!-- verify-key: -->` 中的那个键。
+
 ### 5. 新错误类型 → 补进错误台账
 
 如果这轮发现的错误**归不进 `docs/known-errors.md` 现有的任何一类**，那就是新类型：
