@@ -64,14 +64,30 @@ const SUBJECTIVE_SUP_EN =
   /\b(most (spectacular|beautiful|famous|important|impressive|striking|scenic|charming|iconic|dramatic|stunning|picturesque)|finest|best[- ](known|loved|preserved))\b/i;
 
 /**
- * C1b：**排名**断言（第二大、第三高…）。横滨「日本人口第二多的市」就是这一类：
- * 排名要看口径（是"市"建制还是都会区？）和年份，两样都没有就不该写。
- * 句子里有年份或限定语则放过。
+ * C1b：**排名断言里口径不明的那一类**。横滨「日本人口第二多的市」是原型：
+ * 「第二多」按的是哪一档人口？市建制、都会区、还是 23 区？两样都不说就不该写。
+ *
+ * **只报口径真的会变的排名**。「第二高峰」「第三长的峡湾」这种，被比较的那个量
+ * 就写在词里（高度、长度），换个口径也不会变名次 —— 报出来只会逼人往
+ * 「日本按海拔计第二高峰」这种句子上加废话。所以 `高 / 长 / 深` 与
+ * `highest / longest / deepest` 不进这张网，留下的是 `大 / 多 / largest / most populous`
+ * 这类**必须说清按什么算**的。
+ *
+ * 句子里有年份或限定语（「之一」「按…计」）则放过。
  */
-const RANK_ZH = /(第[二三四五六七八九十两]大|第[二三四五六七八九十两]高|排名第|位居第|第[二三四五六七八九十两]多)/;
-const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|highest|longest|most populous|busiest)\b/i;
-const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|其中)/;
-const QUALIFIER_EN = /\b(one of|among|by (area|population|land)|at the time|then)\b/i;
+const RANK_ZH = /(第[二三四五六七八九十两]大|排名第|位居第|第[二三四五六七八九十两]多)/;
+const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|most populous|busiest)\b/i;
+/**
+ * 限定语：出现任何一个就放过。
+ *
+ * 「之一」「按…计」是显式限定；**「面积第二大」这类把被比较的量直接写在排名前面的，
+ * 同样是显式限定** —— 「面积」两个字已经把口径说清楚了，再要求写成
+ * 「按面积计面积第二大」就是废话。
+ * 但 **「人口第 N 多」不算**：人口本身还分市建制 / 都会区 / 登记 vs 常住好几档，
+ * 横滨那条错的正是这一层（「日本人口第二多的市」把 23 区和市建制混了）。
+ */
+const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|其中|面积第|长度第|海拔第)/;
+const QUALIFIER_EN = /\b(one of|among|by (area|population|land)|at the time|then|largest by area)\b/i;
 
 /**
  * C6-e：**钱**。票价、门票、通票、打车费 —— 这些比人口过期得还快，
