@@ -1622,8 +1622,18 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   tokyo: {
+    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   **東京圏（1 都 3 県）2025 年国势调查速报合计约 3699 万**：东京都 14,246,219 + 神奈川 9,193,657
+    //   + 埼玉 7,287,169 + 千叶 6,258,512 —— 総務省統計局（1 级，2026-09-08 核）。
+    //   注意「東京圏」与国势调查里 1.5% 通勤定义的「大都市圏」边界略有不同（后者含茨城/栃木南部部分市町村）。
     identity:
-      "Tokyo is the capital and largest city of Japan, and one of the most populous metropolitan areas in the world (about 37 million). It is the undisputed centre of politics, economy, culture and transport, made up of many districts with strong individual characters — skyscrapers and round-the-clock commercial quarters as well as quiet old neighbourhoods and large areas of greenery.",
+      "Tokyo is the capital and largest city of Japan, Greater Tokyo — Tokyo Metropolis together with Kanagawa, Saitama and Chiba prefectures — had about 36.99 million people at the 2025 census (Statistics Bureau of Japan), one of the world's most populous city regions. It is the undisputed centre of politics, economy, culture and transport, made up of many districts with strong individual characters — skyscrapers and round-the-clock commercial quarters as well as quiet old neighbourhoods and large areas of greenery.",
     // howItWorks sources: Wikipedia: Tokyo; Special wards of Tokyo (2024-01 pop; 1943 merger; Local Autonomy Law 1947). See docs/city-depth-redesign-2026-09-06.md §4
     howItWorks:
       "Tokyo is not a city. In 1943 Tokyo City was merged into Tokyo Prefecture to form the prefecture-level Tokyo Metropolis, which governs 23 special wards, the 26 cities and the towns and villages of the Tama area, and islands far out in the Pacific. The 23 wards are precisely the old Tokyo City, about 627 km² with some 9.88 million residents in January 2024. Each has its own mayor and assembly and calls itself a City in English, yet water, sewerage and fire services come from the Metropolitan Government. Tokyo is polycentric: Chiyoda, Chuo and Minato hold government and finance, while Shinjuku, Shibuya, Ikebukuro and Shinagawa on the Yamanote line are the officially designated sub-centres. An address here is written layer by layer — prefecture, ward or city, district, chōme, block, number — most streets have no names, and people give a location by its nearest station. Distance is measured in railway minutes to the inside of the Yamanote loop, and 'inside or outside the 23 wards' is the boundary that matters. Newcomers most often go wrong by treating a single ward as an independent city, or by assuming Tokyo has one downtown.",
@@ -1640,11 +1650,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   kyoto: {
+    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   京都市 **2025 年国势调查速报 1,431,713 人**（较 2020 年 1,463,723 减少 32,010、−2.2%）——
+    //   京都市官网 https://www.city.kyoto.lg.jp/sogo/page/0000353577.html（1 级，2026-09-08 核）。
+    //   **原文的「市区人口」是自造口径**，数值凑巧接近但术语不对、也没年份。
     identity:
-      "Kyoto was the capital of Japan for over a thousand years, and is famous for its well-preserved temples, shrines, gardens and machiya townhouse streets — the core city for experiencing traditional Japan. The urban population is about 1.4 million; the city is not large in scale, but its historic heritage is extremely dense and visitor numbers are high year-round.",
+      "Kyoto was the capital of Japan for over a thousand years, and is famous for its well-preserved temples, shrines, gardens and machiya townhouse streets — the core city for experiencing traditional Japan. The city's population was about 1.43 million at the 2025 census (City of Kyoto); the city is not large in scale, but its historic heritage is extremely dense and visitor numbers are high year-round.",
     // howItWorks sources: Wikipedia (2026-09): Kyoto (designated city, 11 wards; Heian-kyō grid 794; agaru/sagaru address style; 2020 census ~1.46 million; 2 subway lines)
     howItWorks:
-      "Kyoto is the seat of Kyoto Prefecture and a designated city of eleven wards, which are administrative divisions rather than self-governing bodies. Its skeleton is the chessboard grid of Heian-kyō laid out in 794, and locals give addresses not by house number but by the crossing of two streets and a direction — 'agaru' for north, 'sagaru' for south, 'higashi-iru' and 'nishi-iru' for east and west — so that an address is a set of walking instructions. The Kamo River divides the city, with the centre and city hall in Nakagyō ward on the west bank, Gion and Higashiyama at the foot of the eastern hills, the Kyoto Station area the commercial district to the south, and the mountains on three sides the city's edge. The 2020 census counted about 1.46 million residents; buses are the main transport, the subway has only the Karasuma and Tōzai lines, and JR, Hankyu and Keihan carry commuters to Osaka. Newcomers most often go wrong by taking Kyoto for a city of temples, when it is a prefectural capital where 1.46 million people live everyday lives and the temples lie at the edge of the hills.",
+      "Kyoto is the seat of Kyoto Prefecture and a designated city of eleven wards, which are administrative divisions rather than self-governing bodies. Its skeleton is the chessboard grid of Heian-kyō laid out in 794, and locals give addresses not by house number but by the crossing of two streets and a direction — 'agaru' for north, 'sagaru' for south, 'higashi-iru' and 'nishi-iru' for east and west — so that an address is a set of walking instructions. The Kamo River divides the city, with the centre and city hall in Nakagyō ward on the west bank, Gion and Higashiyama at the foot of the eastern hills, the Kyoto Station area the commercial district to the south, and the mountains on three sides the city's edge. The 2025 census counted about 1.43 million residents, down about 32,000 from 2020; buses are the main transport, the subway has only the Karasuma and Tōzai lines, and JR, Hankyu and Keihan carry commuters to Osaka. Newcomers most often go wrong by taking Kyoto for a city of temples, when it is a prefectural capital where about 1.43 million people live everyday lives and the temples lie at the edge of the hills.",
     layout:
       "The Kyoto basin is enclosed by mountains on three sides, and the city is laid out on an ancient Tang-inspired grid, with streets running true north–south and east–west — easy to navigate. The centre is the Shijo–Kawaramachi shopping area and the Gion entertainment district; a line of famous temples runs along the eastern foothills from Kiyomizu-dera and Yasaka through Nanzen-ji to Ginkaku-ji (the Philosopher's Path); Kinkaku-ji and Arashiyama are to the north-west, and Fushimi Inari is to the south.",
     gettingAround:
@@ -1658,11 +1678,23 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "osaka-city": {
+    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   **近畿大都市圏**（総務省 1.5% 通勤圈定义，中心市为大阪、京都、神户、堺）
+    //   **2015 年国势调查 19,302,746 人**（2 级转引総務省口径，2026-09-08 核；未查到已公布的 2020 年该口径更新数）。
+    //   **「京阪神大都市圏」是 2010 年之前的旧称** —— 2010 年堺市升格政令市后正式改名「近畿大都市圏」，
+    //   正文里沿用旧名的地方已一并改。
+    //   「日本第二大都市圈」排名成立（次于東京圏、大于中京大都市圏）。
     identity:
-      "Osaka is the central city of the Kansai region and the core of Japan's second-largest metropolitan area (about 19 million). Historically a centre of commerce and wholesale trade, the city has a direct, down-to-earth character and is famous for its food — a contrast with the restraint of Kyoto.",
+      "Osaka is the central city of the Kansai region and the core of Japan's second-largest metropolitan area — the Kinki Major Metropolitan Area (Statistics Bureau definition, centred on Osaka, Kyoto, Kobe and Sakai) held about 19.3 million at the 2015 census. Historically a centre of commerce and wholesale trade, the city has a direct, down-to-earth character and is famous for its food — a contrast with the restraint of Kyoto.",
     // howItWorks sources: Wikipedia (2026-09): Osaka (designated city, 24 wards; 2015/2020 referendums rejected; Kita/Minami; 2020 census 2.75 million; Keihanshin 19.3 million 2015); Cities designated by government ordinance
     howItWorks:
-      "Osaka has two layers of government: Osaka Prefecture under a governor, and within it the City of Osaka, a designated city under a mayor and council, divided into 24 wards. Unlike Tokyo's special wards, these are administrative divisions of the city with no assemblies of their own; referendums in 2015 and 2020 on reorganising the city into special wards directly under the prefecture were both rejected, and the 24-ward structure remains. The centre has two poles: Kita, around Umeda and Osaka Station, the business and department-store district, and Minami, around Namba, Shinsaibashi and Dōtonbori, the district of restaurants and entertainment, with the Loop Line circling both. The 2020 census counted about 2.75 million people in the city and about 19 million in the Keihanshin metropolitan area including Kyoto and Kobe. Addresses run prefecture, city, ward, district, chōme, block, number. Newcomers most often go wrong by confusing Osaka Prefecture with Osaka City, or by assuming Osaka has a single downtown.",
+      "Osaka has two layers of government: Osaka Prefecture under a governor, and within it the City of Osaka, a designated city under a mayor and council, divided into 24 wards. Unlike Tokyo's special wards, these are administrative divisions of the city with no assemblies of their own; referendums in 2015 and 2020 on reorganising the city into special wards directly under the prefecture were both rejected, and the 24-ward structure remains. The centre has two poles: Kita, around Umeda and Osaka Station, the business and department-store district, and Minami, around Namba, Shinsaibashi and Dōtonbori, the district of restaurants and entertainment, with the Loop Line circling both. The 2020 census counted about 2.75 million people in the city and about 19.3 million in the Kinki Major Metropolitan Area, including Kyoto and Kobe, at the 2015 census. Addresses run prefecture, city, ward, district, chōme, block, number. Newcomers most often go wrong by confusing Osaka Prefecture with Osaka City, or by assuming Osaka has a single downtown.",
     layout:
       "Osaka straddles the Yodo River on the Osaka Plain. The city has roughly two centres — \"Kita\" (around Umeda and Osaka Station, offices and department stores) and \"Minami\" (Namba, Shinsaibashi and Dotonbori, shopping, food and entertainment) — with Osaka Castle between them to the east. West are the waterfront districts and Osaka Bay, where Universal Studios is.",
     gettingAround:
@@ -1722,11 +1754,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   naha: {
+    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   那霸市 **2025 年国势调查速报 311,073 人**（较 2020 年 317,625 减少 6,552、−2.1%）——
+    //   沖縄県企画部統計課《令和 7 年国勢調査速報》PDF 逐行核对（1 级，2026-09-08）。
+    //   **同条目 howItWorks 原写「约 313,000」偏高约 2 千，很可能引的是推算值而不是本次速报** —— 已一并改。
     identity:
-      "Naha is the capital of Okinawa Prefecture and the central city of the subtropical Nansei island region, with a population of about 310,000. It is the gateway to Okinawa, and centres on the Kokusai-dori shopping street, its markets, and historic sites from the Second World War and the Ryukyu Kingdom era; the beaches are mostly around the fringes and on the outer islands.",
+      "Naha is the capital of Okinawa Prefecture and the central city of the subtropical Nansei island region, with a population of about 311,000 at the 2025 census. It is the gateway to Okinawa, and centres on the Kokusai-dori shopping street, its markets, and historic sites from the Second World War and the Ryukyu Kingdom era; the beaches are mostly around the fringes and on the outer islands.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Naha (Okinawa capital; ~40 km²; ~313,000 2025; Kokusai-dori 1.6 km; Shuri Castle UNESCO 2000, burned 2019; Yui Rail monorail only rail in prefecture; Tomari wharf to Kerama; airport; Okinawa Island ~100 km long; bases mostly outside Naha)
     howItWorks:
-      "Naha is the seat of Okinawa Prefecture, a core city of only about 40 km² with about 313,000 people in 2025; the city runs local services, police and schools belong to the prefecture, and Okinawa's US bases lie mostly outside Naha at Ginowan and Kadena. The centre lies around Kokusai-dori, a 1.6 km shopping street as its axis, Shuri Castle on the heights to the east, World Heritage since 2000 and rebuilt after the main hall burned in 2019, the airport at the south-west corner of the city, the Yui Rail monorail running from the airport through the centre to Shuri as the prefecture's only rail line, and boats from Tomari wharf to the Kerama Islands. Newcomers most often go wrong by taking Naha for Okinawa, when the main island runs about 100 km north to south and almost nothing is reached without a car.",
+      "Naha is the seat of Okinawa Prefecture, a core city of only about 40 km² with about 311,000 people at the 2025 census; the city runs local services, police and schools belong to the prefecture, and Okinawa's US bases lie mostly outside Naha at Ginowan and Kadena. The centre lies around Kokusai-dori, a 1.6 km shopping street as its axis, Shuri Castle on the heights to the east, World Heritage since 2000 and rebuilt after the main hall burned in 2019, the airport at the south-west corner of the city, the Yui Rail monorail running from the airport through the centre to Shuri as the prefecture's only rail line, and boats from Tomari wharf to the Kerama Islands. Newcomers most often go wrong by taking Naha for Okinawa, when the main island runs about 100 km north to south and almost nothing is reached without a car.",
     layout:
       "Naha is in the south of Okinawa's main island, facing the East China Sea. The centre is Kokusai-dori and its surrounding shopping streets and markets (the Makishi Public Market), with Shuri Castle Park on higher ground to the east (the main hall and others are being restored after a 2019 fire). The port connects to the outer islands, and the airport is south-west of the centre.",
     gettingAround:
@@ -2150,11 +2192,23 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   nagoya: {
+    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   **中京大都市圏**（総務省 1.5% 通勤圈定义，跨爱知/岐阜/三重）**2020 年国势调查 9,192,193 人**
+    //   （2 级转引官方数据，2026-09-08 核；下一轮用 e-Stat 原表核到 1 级）。
+    //   **原文 identity 写 900 万、howItWorks 写 1,024 万，同条目两处差 124 万**，后者查无出处。
+    //   名古屋市 **2025 年国势调查速报 2,345,892 人**（历史新高，较 2020 年 +13,716、+0.6%）——
+    //   名古屋市官网（1 级）；howItWorks 原写「约 230 万」低了约 4.6 万，已一并改。
     identity:
-      "Nagoya is the capital of Aichi Prefecture and the central city of Japan's Chubu region, with a metropolitan population of about 9 million. It is a manufacturing centre, especially for cars; the city is regular with wide roads, known in itself for Nagoya Castle and its miso-based \"Nagoya food\", and it is also the hub for Shirakawa-go, Takayama, the Tateyama–Kurobe route and Ise.",
+      "Nagoya is the capital of Aichi Prefecture and the central city of Japan's Chubu region, where the Chūkyō Major Metropolitan Area (Statistics Bureau definition, reaching into Gifu and Mie) held about 9.19 million at the 2020 census. It is a manufacturing centre, especially for cars; the city is regular with wide roads, known in itself for Nagoya Castle and its miso-based \"Nagoya food\", and it is also the hub for Shirakawa-go, Takayama, the Tateyama–Kurobe route and Ise.",
     // howItWorks sources: Wikipedia (2026-09): Nagoya (designated city, 16 wards, 326 km²; ~2.3 million 2025; Chūkyō ~10.24 million; Meieki/Sakae)
     howItWorks:
-      "Nagoya is the seat of Aichi Prefecture and a designated city of sixteen wards over about 326 km², with about 2.3 million residents in 2025 — Japan's fourth-largest city — and the Chūkyō metropolitan area reaching into Gifu and Mie holds about 10.2 million. The city has two centres: Meieki around Nagoya Station, the hub of the Shinkansen and the towers, and Sakae to the east, the traditional commercial heart, about two kilometres apart. Tokugawa Ieyasu moved the capital of Owari here in 1610, and the castle and its castle town set the grid of the centre. Nagoya is the home ground of Toyota, the most car-dependent of Japan's big cities — locals joke about 'Nagoya driving' — with the municipal subway covering the main corridors. Addresses run prefecture, city, ward, district, chōme, block, number. Newcomers most often go wrong by taking the station district for downtown, when to locals the centre of the city is Sakae.",
+      "Nagoya is the seat of Aichi Prefecture and a designated city of sixteen wards over about 326 km², with about 2.35 million residents at the 2025 census — Japan's fourth-largest city — and the Chūkyō Major Metropolitan Area reaching into Gifu and Mie held about 9.19 million at the 2020 census. The city has two centres: Meieki around Nagoya Station, the hub of the Shinkansen and the towers, and Sakae to the east, the traditional commercial heart, about two kilometres apart. Tokugawa Ieyasu moved the capital of Owari here in 1610, and the castle and its castle town set the grid of the centre. Nagoya is the home ground of Toyota, the most car-dependent of Japan's big cities — locals joke about 'Nagoya driving' — with the municipal subway covering the main corridors. Addresses run prefecture, city, ward, district, chōme, block, number. Newcomers most often go wrong by taking the station district for downtown, when to locals the centre of the city is Sakae.",
     layout:
       "Nagoya is built on the Nobi Plain, flat, with streets on a regular grid. The centre has two hubs, Nagoya Station (\"Meieki\") and Sakae; Nagoya Castle is to the north and the Atsuta Shrine to the south. North lie Gifu, Takayama and Shirakawa-go; east are the Central Alps and the Kiso valley; south is the Chita Peninsula; west are Ise and Toba.",
     gettingAround:
@@ -2168,11 +2222,22 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   kanazawa: {
+    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   金泽市 **2025 年国势调查速报 454,071 人**（较 2020 年 463,254 减少 9,183、−1.98%）——
+    //   石川県総務部《令和 7 年国勢調査速報集計結果》PDF 逐行核对（1 级，2026-05-29 改订版，2026-09-08 核）。
+    //   **原 identity 写「市区人口约 45 万」（自造口径）、howItWorks 写「约 47 万」（英文维基的估计值 466,000，
+    //   是过时推算数）—— 两段本来就打架**，已一并对齐到速报值。
     identity:
-      "Kanazawa is the capital of Ishikawa Prefecture, the central city of the Kaga area on the Sea of Japan side, with an urban population of about 450,000. It was the castle town of the Kaga domain in the Edo period — long wealthy and devoted to crafts (gold leaf, lacquer, Kaga yuzen dyeing, Kutani ware) — and, spared major war damage, it keeps large old quarters and a famous garden, earning it the nickname \"Little Kyoto\".",
+      "Kanazawa is the capital of Ishikawa Prefecture, the central city of the Kaga area on the Sea of Japan side, with a city population of about 454,000 at the 2025 census. It was the castle town of the Kaga domain in the Edo period — long wealthy and devoted to crafts (gold leaf, lacquer, Kaga yuzen dyeing, Kutani ware) — and, spared major war damage, it keeps large old quarters and a famous garden, earning it the nickname \"Little Kyoto\".",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kanazawa (core city; ~469 km²; ~466,000; Ishikawa capital; Maeda/Kaga domain; Kenroku-en; Higashi Chaya/Nagamachi; gold leaf 99% of Japan; Hokuriku Shinkansen 2015 ~2.5 h Tokyo; Komatsu airport ~30 km; buses, no subway)
     howItWorks:
-      "Kanazawa is the seat of Ishikawa Prefecture, a core city of about 469 km² with about 466,000 people; the city runs local services, and police and schools belong to the prefecture. The Maeda clan's Kaga domain made it their castle town in the Edo period, and the division into samurai, merchant and temple quarters survives: Kenroku-en and the castle on the high ground in the centre, Higashi Chaya across the Asano River, the samurai houses of Nagamachi by the Sai River, Omicho market between them, and more than nine-tenths of Japan's gold leaf made here; the Hokuriku Shinkansen opened in 2015 at about two and a half hours from Tokyo, Komatsu airport lies about 30 km south-west, and there is no rail transit in the city, only buses. Newcomers most often go wrong by taking Kanazawa for a smaller Kyoto, when it is a Hokuriku capital never bombed, with its castle-town plan intact.",
+      "Kanazawa is the seat of Ishikawa Prefecture, a core city of about 469 km² with about 454,000 people at the 2025 census; the city runs local services, and police and schools belong to the prefecture. The Maeda clan's Kaga domain made it their castle town in the Edo period, and the division into samurai, merchant and temple quarters survives: Kenroku-en and the castle on the high ground in the centre, Higashi Chaya across the Asano River, the samurai houses of Nagamachi by the Sai River, Omicho market between them, and more than nine-tenths of Japan's gold leaf made here; the Hokuriku Shinkansen opened in 2015 at about two and a half hours from Tokyo, Komatsu airport lies about 30 km south-west, and there is no rail transit in the city, only buses. Newcomers most often go wrong by taking Kanazawa for a smaller Kyoto, when it is a Hokuriku capital never bombed, with its castle-town plan intact.",
     layout:
       "Kanazawa is built on hills and flat ground between the Sai and Asano rivers. The centre is around Kanazawa Castle and Kenrokuen; north across the Asano is the Higashi Chaya district (an old geisha quarter); south-west across the Sai are the Nishi Chaya district and the temples of Teramachi; the Nagamachi area still has samurai residences behind earthen walls. Kanazawa Station is the modern gateway, with a large wooden Tsuzumi Gate.",
     gettingAround:
@@ -2282,11 +2347,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   神户市 2025-10-01 = 1,497,630 人，较 2020 年减少 27,522（−1.80%）。兵库县官方 PDF 逐行核对。
     identity:
       "Kobe is the capital of Hyōgo Prefecture, on the narrow strip between Mount Rokkō and the northern shore of Osaka Bay, with about 1.50 million people at the 2025 census — Japan's seventh-largest city. Opened to foreign trade in 1868, it was among the first Japanese ports to meet the West, and the Ijinkan (nineteenth-century Western residences) of Kitano, the office buildings of the former foreign settlement and the Nankinmachi Chinatown survive from that era. The Great Hanshin earthquake of 17 January 1995 (magnitude 6.9) killed about 6,434 people and wrecked the port, which remains one of Japan's main container ports. Kobe beef, Arima Onsen and the night view from Rokkō are its bywords; the Akashi Kaikyō Bridge, the world's second-longest suspension span, lies west of the city.",
-    // howItWorks sources: 日本 **令和 7 年（2025 年）国勢調査人口速報集計**，普查时点 2025-10-01，由各都道府县公布市区町村数。子代理逐条核对官方 PDF / xls 原表，**级别 1**。
-    //   发布节奏：国勢調査每五年一次（年份末位 0/5，时点 10-01）；**人口速報集計**在普查后次年 5 月末左右，**人口等基本集計**在次年 9 月末左右。住民基本台帳人口则由各市按月发布，总务省全国汇总每年 7 月。
-    //   同上。
+    // howItWorks sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   **神户没有一个干净的官方「都会区」数字**：学术口径「都市雇用圏」（金本良嗣・徳岡一幸 10% 通勤圈，
+    //   非官方）2010 年为 2,431,076；総務省「相対都市圏」约 250 万、「絶対都市圏」约 273 万 ——
+    //   **三个不同定义三个数字，没有一个叫「都会区」的官方统计**（2/3 级，2026-09-08 核）。
+    //   神户已被「近畿大都市圏」（约 1,930 万，2015 年）整体涵盖。
+    //   **按项目规矩：查不到官方口径就不给这个数字，只描述通勤关系** —— 不为了给个数字而套用非官方
+    //   学术口径冒充官方统计。
     howItWorks:
-      "Kobe is the seat of Hyōgo Prefecture and, since 1956, a designated city of nine wards, with about 1.50 million residents at the 2025 census. Wedged between Mount Rokkō and Osaka Bay, it is long from east to west and narrow from north to south: Sannomiya is the commuter hub and centre, with Motomachi and the former foreign settlement to its west, Port Island and Rokkō Island reach out into the bay, and the rebuilding after the 1995 earthquake shaped today's port district. Kobe lies about 35 km, or 30 minutes by train, from Osaka, and Hanshin commuting folds it into the Keihanshin metropolitan area; its own metropolitan area holds about 2.4 million. Addresses run prefecture, city, ward, district, chōme, block, number, and locals take their bearings from 'the hill side' and 'the sea side'. Newcomers most often go wrong by taking Kobe for Osaka's port, when it is a city with a centre of its own stretching tens of kilometres along the coast.",
+      "Kobe is the seat of Hyōgo Prefecture and, since 1956, a designated city of nine wards, with about 1.50 million residents at the 2025 census. Wedged between Mount Rokkō and Osaka Bay, it is long from east to west and narrow from north to south: Sannomiya is the commuter hub and centre, with Motomachi and the former foreign settlement to its west, Port Island and Rokkō Island reach out into the bay, and the rebuilding after the 1995 earthquake shaped today's port district. Kobe lies about 35 km, or 30 minutes by train, from Osaka, and Hanshin commuting folds it into the Kinki Major Metropolitan Area (Statistics Bureau definition), about 19.3 million at the 2015 census. Addresses run prefecture, city, ward, district, chōme, block, number, and locals take their bearings from 'the hill side' and 'the sea side'. Newcomers most often go wrong by taking Kobe for Osaka's port, when it is a city with a centre of its own stretching tens of kilometres along the coast.",
     layout:
       "The city runs east–west between the foot of Rokkō and the shore: Sannomiya is the transport and commercial hub, the Kitano Ijinkan stand on the slope north of it, the former settlement, Motomachi and Nankinmachi lie south-west, and Meriken Park and the Port Tower are on the waterfront. Port Island and Rokkō Island are artificial islands in the bay, with Kobe Airport at the southern tip of Port Island. Mount Rokkō rises north of the city, reached by cable car, with Arima Onsen on its northern foot. The Suma and Maiko shores and the Akashi Kaikyō Bridge lie west, and Nada is the sake-brewing district.",
     gettingAround:
@@ -2301,7 +2376,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   himeji: {
     identity:
       "Himeji lies on the Harima plain in western Hyōgo Prefecture, with about 518,000 people (2025), and is known for Himeji Castle — the keep completed in 1609 is the most complete and largest surviving castle complex in Japan, inscribed as a World Heritage site in 1993 among Japan's first, and called the 'White Heron Castle' for its white plaster walls. Wartime bombing burned most of the city, but the castle survived intact. Kōko-en beside it is a reconstructed daimyō garden, and Engyō-ji on Mount Shosha north-west of the city is a Tendai temple with a thousand years of history, used as a location for 'The Last Samurai'.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Himeji (core city; ~534 km²; ~518,000; Hyōgo Prefecture, capital Kobe; castle UNESCO 1993 ~1 km from station; Kōko-en; Engyō-ji on Mount Shosha; Shinkansen ~1 h Osaka/Kyoto; no airport; industrial coast)
+    // howItWorks sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   姫路市 **2025 年国势调查速报 518,311 人**（较 2020 年 530,495 减少 12,184、−2.3%）——
+    //   姫路市官网（1 级，2026-09-08 核）。identity 已标注「约 51.8 万（2025 年）」，howItWorks 的「约 52 万」
+    //   是合理取整，两段一致，本轮无需改动。
     howItWorks:
       "Himeji is a core city of Hyōgo Prefecture, not its seat — that is Kobe — covering about 534 km² with about 518,000 people as the centre of the Harima region; the city runs local services, and police and schools belong to the prefecture. Himeji Castle stands at the end of the avenue 1 km north of the station, World Heritage since 1993 and the best-preserved castle in Japan, with Kōko-en beside it and Engyō-ji on Mount Shosha to the north-west; the Shinkansen reaches Osaka and Kyoto in about an hour, there is no airport, Kobe or Kansai serving, the coast to the south is a belt of steel and chemical works, and the Ieshima islands lie within the city. Newcomers most often go wrong by taking Himeji for a small castle town, when it is an industrial and commercial city of half a million, and the castle one corner north of the station.",
     layout:
@@ -2422,11 +2506,23 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "March–May and October–November are most comfortable; summers are hot and in typhoon season; winters are mild for hot springs. A day for the city and Sakurajima, a day for Ibusuki or Kirishima, at least two for Yakushima. Kagoshima is the southern end of the Kyushu Shinkansen, linked with Kumamoto and Fukuoka.",
   },
   matsuyama: {
+    // identity sources: **日本的官方口径**：総務省統計局按「市区町村」逐一发布人口，**没有「市区人口」这个复合概念**
+    //   （「市」与「区」在日本是平行的不同层级，「区」特指政令指定都市下辖的行政区或东京 23 区）。
+    //   都市圏有两套官方定义：**大都市圏**（1.5% 通勤/通学阈值，官方专名如「東京圏」「近畿大都市圏」
+    //   「中京大都市圏」）与**都市圏**（10% 阈值，范围小很多）；**从来没有「都会区」这个词**
+    //   （另有学术口径「都市雇用圏」，非官方）。2026-09-08 核。
+    //   **发布节奏**：国勢調査每 5 年一次（年份末位 0/5，基准日 10 月 1 日）；**速報集計在普查次年 5 月末前后**
+    //   分批公布；**人口等基本集計（确定数）在普查次年 9 月末前后**；住民基本台帳全国汇总每年 7 月。
+    //   松山市 **2025 年国势调查速报 497,041 人** —— 愛媛県《令和 7 年国勢調査 地方集計結果》PDF（1 级，2026-09-08 核）。
+    //   **原文标的「2026 年」是错的口径写法**：国勢調査每五年一次、年份末位 0/5，
+    //   **不存在「2026 年国势调查」**，2026 只是速报的公布年份。
+    //   **把公布年当成基准年**是日本条目上很容易犯的错 —— 与此前高山市/松本市
+    //   「拿人口ビジョン的预测值当 2025 年实测值」是同一类：年份看起来很像已经核到最新一期。
     identity:
-      "Matsuyama is the capital of Ehime Prefecture and the largest city on Shikoku, with about 494,000 people (2026). Dōgo Onsen, with a legend of 3,000 years, is among the oldest hot springs in Japan, and its Honkan bathhouse of 1894 is an Important Cultural Property still in business as a wooden public bath; Matsuyama Castle (begun 1602) is one of Japan's twelve surviving original keeps, standing on Katsuyama hill in the centre. Natsume Sōseki's novel 'Botchan' is set here, the haiku poet Masaoka Shiki was born here and has a memorial museum, and trams have run since 1887. Ishite-ji is temple 51 of the 88-temple Shikoku pilgrimage, and Imabari to the north is the Shikoku end of the Shimanami Kaidō.",
+      "Matsuyama is the capital of Ehime Prefecture and the largest city on Shikoku, with about 497,000 people at the 2025 census. Dōgo Onsen, with a legend of 3,000 years, is among the oldest hot springs in Japan, and its Honkan bathhouse of 1894 is an Important Cultural Property still in business as a wooden public bath; Matsuyama Castle (begun 1602) is one of Japan's twelve surviving original keeps, standing on Katsuyama hill in the centre. Natsume Sōseki's novel 'Botchan' is set here, the haiku poet Masaoka Shiki was born here and has a memorial museum, and trams have run since 1887. Ishite-ji is temple 51 of the 88-temple Shikoku pilgrimage, and Imabari to the north is the Shikoku end of the Shimanami Kaidō.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Matsuyama (core city; ~429 km²; ~494,000, largest in Shikoku; Ehime capital; castle on Katsuyama with ropeway; Dōgo Onsen 1894 bathhouse ~3 km; Iyotetsu trams since 1887, Botchan train; Sōseki/Shiki haiku; airport 6 km; ferries to Hiroshima; Shimanami Kaidō from Imabari ~40 km)
     howItWorks:
-      "Matsuyama is the seat of Ehime Prefecture and the largest city on Shikoku, a core city of about 429 km² with about 494,000 people; the city runs local services, and police and schools belong to the prefecture. Matsuyama Castle stands on Katsuyama in the centre with a ropeway up from the shopping street below, Dōgo Onsen lies 3 km east with its bathhouse of 1894 among the oldest in Japan, the Iyotetsu trams running since 1887 join the station, the castle town and Dōgo, with the 'Botchan train' as their period piece; Sōseki's Botchan is set here, Masaoka Shiki made it the city of haiku, the airport lies 6 km west, ferries sail from Matsuyama Kankō port to Hiroshima, and the Shimanami Kaidō starts at Imabari 40 km north. Newcomers most often go wrong by taking Dōgo Onsen for the centre of Matsuyama, when the centre lies at the foot of the castle and Dōgo is the spa town at the end of the tram line.",
+      "Matsuyama is the seat of Ehime Prefecture and the largest city on Shikoku, a core city of about 429 km² with about 497,000 people at the 2025 census; the city runs local services, and police and schools belong to the prefecture. Matsuyama Castle stands on Katsuyama in the centre with a ropeway up from the shopping street below, Dōgo Onsen lies 3 km east with its bathhouse of 1894 among the oldest in Japan, the Iyotetsu trams running since 1887 join the station, the castle town and Dōgo, with the 'Botchan train' as their period piece; Sōseki's Botchan is set here, Masaoka Shiki made it the city of haiku, the airport lies 6 km west, ferries sail from Matsuyama Kankō port to Hiroshima, and the Shimanami Kaidō starts at Imabari 40 km north. Newcomers most often go wrong by taking Dōgo Onsen for the centre of Matsuyama, when the centre lies at the foot of the castle and Dōgo is the spa town at the end of the tram line.",
     layout:
       "The city lies on the Matsuyama plain with the castle on Katsuyama in the middle; at its foot are the Ōkaidō and Gintengai arcades and the prefectural offices. JR Matsuyama Station is west of the castle and Iyotetsu's Matsuyama-shi Station south of it, both on the tram lines. Dōgo Onsen is about 3 km north-east at the end of the tram line, with the Honkan, the arcade and the ryokan quarter clustered together; Ishite-ji is about 1 km further east. The airport is about 6 km south-west, the ferry port north-west, and Imabari about 40 km north-east.",
     gettingAround:

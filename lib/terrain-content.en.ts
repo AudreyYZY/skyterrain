@@ -1837,8 +1837,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
 
   "chengdu-plain": {
+    // seeing sources: 面积 **1.881 万 km²**（科普中国，2 级）—— 与正文的「约 1.9 万」吻合；
+    //   另有广义 2.29 万、狭义 0.734 万两个常见口径，**写的时候要知道自己用的是哪一个**。
+    //   海拔：从都江堰约 **730 m** 降到成都主城区约 **500 m**（同源），另一独立来源给 460—750 m ——
+    //   **两个来源都不支持原文的 450 m 下限**，已改为 500—730 m。2026-09-08 核。
+    //   **注意别与「成都平原经济区」混用** —— 那是行政/经济概念，不是同一个地貌单元。
     seeing:
-      "The Chengdu Plain occupies the western Sichuan Basin — the largest and flattest plain in the basin, about 19,000 km², at 450–750 m. It was built by the Min, Tuo and other rivers as they left the mountains, and its fertile, easily irrigated land is the core of the \"land of abundance.\"",
+      "The Chengdu Plain occupies the western Sichuan Basin — the largest and flattest plain in the basin, about 19,000 km², at 500–730 m. It was built by the Min, Tuo and other rivers as they left the mountains, and its fertile, easily irrigated land is the core of the \"land of abundance.\"",
     formation:
       "The Chengdu Plain is a compound fan plain made of the alluvial fans of several rivers merged together. The Min River leaves the Longmen Mountains to the west and, below the mountain gap, spreads out the gravel and silt it carries, finer downstream. The Dujiangyan works split the Min River at the fan head into a self-flowing irrigation network covering the whole plain.",
     observation:
@@ -1852,6 +1857,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "guanzhong-plain": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块：断陷地堑盆地机制、「八百里秦川」别称、周秦汉唐建都关中、
+    //   战国郑国渠、「关中」因函谷关/大散关等得名 —— 均为学界公认表述，未发现数字或口径问题。
+    //   `history` 段只涉前现代史，零争议红线通过。
     seeing:
       "The Guanzhong Plain, also called the Wei River Plain, lies in central Shaanxi between the Qinling to the south and the Weibei uplands (the Northern Mountains) to the north, built by the Wei River and its tributaries. It is long east–west and narrow north–south, anciently called \"the eight hundred li of Qin.\" Xi'an sits in the middle of it.",
     formation:
@@ -1867,6 +1875,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hetao-plain": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块。正文不含可核验的量化断言；
+    //   「黄河百害，唯富一套」为广泛流传的谚语；秦汉设郡屯田属广泛记载的前现代史。
+    //   **这是本批两个位于边境地带的条目之一（另一个是戈壁），零争议红线专项核对通过** ——
+    //   没有边界线描述、没有主权表态、没有把现代政治议题带进来。
     seeing:
       "The Hetao Plain lies inside the great \"几\"-shaped bend of the Yellow River, south of the Yin Mountains — a string of plains laid down by the Yellow River as it flows through Ningxia and Inner Mongolia. In the narrow sense it is the Rear Tao (around Bayannur) and the Front Tao (the Tumochuan around Hohhot) inside Inner Mongolia; in a broader sense the Ningxia Plain (the West Tao) upstream is sometimes counted in as well. There is a saying: \"the Yellow River brings a hundred harms and enriches only the one Tao.\"",
     formation:
@@ -1882,8 +1894,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yangtze-delta": {
+    // seeing sources: 长江三角洲（**地貌学口径**，北纬 30°20′—32°30′、东经 119°24′—122°30′）**面积达 4 万 km²** ——
+    //   中科院地理科学与资源研究所引《中国大百科全书》
+    //   https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692356.html（2 级，2026-09-08 核）。
+    //   **原文的「约 5 万」既不是地貌口径的 4 万，也不是国家规划的「长三角地区」（沪苏浙皖一体化范围
+    //   35.8 万 km²）—— 是两个口径之间的一个中间值**，与塔里木河「约 2000 公里」是同一形状的错。
+    //   崇明岛为「世界上最大的河口冲积岛」经上海市崇明区人民政府官网确认（1 级）；
+    //   「近几十年输沙量大幅下降、部分岸段转为侵蚀后退」为学界公认（多站点较建库前降 74.8%—92.7%），
+    //   机制表述没有被简化成错。
     seeing:
-      "The Yangtze Delta is the huge alluvial plain the Yangtze has built at its mouth, spreading east from around Zhenjiang and Yangzhou in Jiangsu to the sea, about 50,000 km². The land is extremely low and flat and water-netted; Lake Tai is its central lake, and Shanghai, Suzhou, Wuxi and Nantong are all on it.",
+      "The Yangtze Delta is the huge alluvial plain the Yangtze has built at its mouth, spreading east from around Zhenjiang and Yangzhou in Jiangsu to the sea, about 40,000 km². The land is extremely low and flat and water-netted; Lake Tai is its central lake, and Shanghai, Suzhou, Wuxi and Nantong are all on it.",
     formation:
       "The Yangtze carries huge amounts of silt to its mouth each year, and under tides and waves the silt keeps building up and prograding on both sides of the mouth and underwater, pushing the coastline far to the east over thousands of years. Sandbars in the channel gradually join the shore or grow — that is how Chongming Island formed, now the largest estuary alluvial island in the world.",
     observation:
@@ -1897,6 +1917,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pearl-delta": {
+    // seeing sources: 珠江三角洲约 **1.1 万—1.13 万 km²**（狭义口径：西北江三角洲 + 东江三角洲 8,601.1 km²）——
+    //   多来源一致，2026-09-08 核（中科院 IGSNRR 原链接证书异常，经搜索摘要交叉确认，2—3 级）。
+    //   **「岛式三角洲」「丘陵性三角洲」是地貌学界的公认描述** —— 发育在一个被海水淹没的多岛屿古海湾里，
+    //   与长江三角洲那种典型的河口沉积三角洲成因不同。桑基鱼塘的运作方式（挖塘养鱼、塘泥上基种桑、
+    //   桑叶养蚕、蚕沙喂鱼）描述准确。
     seeing:
       "The Pearl River Delta, in south-central Guangdong, is the compound delta built where the West, North and East rivers meet near Guangzhou and reach the sea together, about 11,000 km². Its features are an especially dense river network and many isolated small hills scattered through it. Guangzhou, Shenzhen, Foshan, Dongguan, Hong Kong and Macau are all here.",
     formation:
@@ -1969,6 +1994,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ulan-buh": {
+    // seeing sources: 乌兰布和沙漠面积：二手来源收敛在 **0.91 万—1.03 万 km²**，与正文「约 1 万」相符（3 级，2026-09-08 核）。
+    //   **没有一手政府/科研机构的公报数字**（巴彦淖尔市政府原链接已失效 404），下一轮补核。
+    //   汉代文献记载的古湖「屠申泽」干涸后、湖底沙被风扬起再堆积成沙丘 —— 当地地貌与历史地理学界公认的因果链，
+    //   未被简化成错。
     seeing:
       "The Ulan Buh Desert lies in eastern Alxa Left Banner and around Dengkou in Bayannur, Inner Mongolia, about 10,000 km². \"Ulan Buh\" means \"red bull\" in Mongolian. It sits on the west bank of the Yellow River, right next to the Hetao Plain to the north-east — the desert closest to the river and its farmland.",
     formation:
@@ -1985,20 +2014,34 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   muus: {
     seeing:
-      "The Mu Us Sandy Land straddles northern Shaanxi, southern Ordos in Inner Mongolia and eastern Ningxia, about 42,000 km². Note that it is a \"sandy land,\" not a \"desert\": it is in a semi-arid zone with more rainfall than a true desert, has a base of grassland and vegetation, and its dunes are mostly fixed and semi-fixed.",
+      "The Mu Us Sandy Land straddles northern Shaanxi, southern Ordos in Inner Mongolia and eastern Ningxia, about 42,000 km² by a 2023 Shaanxi Provincial Forestry Bureau report, or 38,000 km² in a more recent national forestry monitoring round — two official figures in parallel. Note that it is a \"sandy land,\" not a \"desert\": it is in a semi-arid zone with more rainfall than a true desert, has a base of grassland and vegetation, and its dunes are mostly fixed and semi-fixed.",
     formation:
       "The Mu Us area was historically grassland with fairly good water and grass. Climate swings, shrinking rivers and lakes, and long overgrazing, cultivation and war damage to the vegetation let drifting sand gradually expand, producing a \"sandy land\" of dunes alternating with flats and lake basins. Its desertification is largely reversible.",
     observation:
       "From the air the Mu Us is a mottled landscape on the northern edge of the Loess Plateau: fixed dunes carrying shrubs and planted forest, with grassy flats, farmland and small lakes between them, and only patches of moving dune left. After decades of management most of the area is now green.",
     distinguish:
       "The Mu Us (sandy land) and the Badain Jaran or Taklamakan (deserts): a desert is in an arid zone, almost without vegetation, mostly moving dunes, hard to change fundamentally; a sandy land is in a semi-arid zone, with a vegetation base, mostly fixed and semi-fixed, and can be reversed over large areas by management. The Mu Us and the Kubuqi: the Kubuqi is farther north, drier and has more drifting sand.",
+    // concept sources: **官方口径是「治理率」，不是「治理完成」，而且这是有意的措辞**：
+    //   陕西省林业局（2023-01-13）https://lyj.shaanxi.gov.cn/zwxx/mtbd/202301/t20230113_2271585.html（1 级）：
+    //   「沙区治理率超过 80%，林木覆盖率达 30%，流沙基本『拴牢』」；
+    //   国家林草局 https://www.forestry.gov.cn/c/www/zxdt/593401.jhtml（1 级）：「毛乌素沙地已八成染绿」、
+    //   2020 年榆林沙化土地治理率 93.24% —— **但同一篇特意强调「这个绿是不稳固的，仅仅刚走过初级阶段」**。
+    //   原文的「大部分已经治理完成」把持续过程写成了已完结的结论，与流传很广的
+    //   「毛乌素即将消失／已被消灭」是同一类夸大。2026-09-08 核。
+    //   **治理率本身也是会变的量**，下一轮回来刷新（known-errors C6-j）。
     concept:
-      "The Mu Us represents \"a sandy land is not a desert, and desertification can be reversed\": in a semi-arid zone with some rainfall, simply stopping overgrazing and cultivation, plus planting grass and trees and laying straw checkerboards, can re-fix the dunes and bring the vegetation back. By around 2020 most of the Mu Us Sandy Land in Shaanxi had been brought under control.",
+      "The Mu Us represents \"a sandy land is not a desert, and desertification can be reversed\": in a semi-arid zone with some rainfall, simply stopping overgrazing and cultivation, plus planting grass and trees and laying straw checkerboards, can re-fix the dunes and bring the vegetation back. More than 80 per cent of the Mu Us Sandy Land within Shaanxi has been brought under treatment, according to a 2023 report by the Shaanxi Provincial Forestry Bureau — though officials stress that this new vegetation cover is still fragile and that holding back the sand is an ongoing effort, not a finished job.",
     history:
       "The Mu Us area was once an important base of the Xiongnu (the city of Tongwancheng was built here), when the vegetation was far better than in modern times. In recent decades Yulin in Shaanxi, Ordos in Inner Mongolia and others have kept planting forest and grass and spreading straw checkerboards, turning this sandy land from expanding to shrinking — a model of China's desertification control.",
   },
 
   gobi: {
+    // seeing sources: **「戈壁」有两个意思：地表类型（砾质荒漠）与地名（蒙古国与中国内蒙古之间那片区域）。**
+    //   本篇从头到尾用的是前者，没有把两件事混成一件 —— 这是 2026-09-08 专项核对的结论。
+    //   风力分选留下搬不动的砾石、结成「荒漠砾幂」，是公认的干旱地貌学机制，未被简化成错。
+    //   **酒泉卫星发射中心实际在内蒙古阿拉善盟额济纳旗东风镇，不在甘肃酒泉市** ——
+    //   正文写的是「设在这片戈壁里」，避开了这个很常见的地理误解。居延汉简出土为公认考古史实。
+    //   `history` 段只涉汉代屯戍等前现代史，零争议红线通过。
     seeing:
       "\"Gobi\" here means the large gravel desert of western Inner Mongolia (around Alxa and Ejin). \"Gobi\" is Mongolian for land that can barely grow plants, its surface covered with gravel and coarse sand. It differs from a sand desert — a sand desert's surface is sand, a gobi's surface is stone.",
     formation:
@@ -2015,6 +2058,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
 
   "liaodong-hills": {
+    // seeing sources: 主峰步云山 **1130.7 m**，称「辽南第一峰」—— 多来源一致，2026-09-08 核。
+    //   **与山东丘陵的 distinguish 段交叉核对**：辽东丘陵是长白山脉向西南延伸的余脉（花岗岩、变质岩剥蚀低山），
+    //   山东丘陵中的泰山、鲁山、沂山、蒙山是沿断裂抬升的断块山 —— 两篇的归属与相对高度关系一致，
+    //   没有出现乌鲁鲁/卡塔丘塔那种「区分段互相抄错方向」的问题。
     seeing:
       "The Liaodong Hills occupy the Liaodong Peninsula in south-eastern Liaoning — the south-westward spur of the Changbai mountain system, surrounded by the Yellow and Bohai seas on three sides. They are not high, mostly below 500 m, with the main peak Buyun Shan about 1,130 m, rounded and gentle, covered in forest and orchards.",
     formation:
@@ -2030,6 +2077,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "shandong-hills": {
+    // seeing sources: 泰山（玉皇顶）标准高程 **1532.7 m** —— 2007-04-27 国家测绘局与建设部联合公布，
+    //   是目前最权威、最精确的数据，景区官方与学术文献均沿用（2026-09-08 核）。
+    //   泰山 **1987 年**列入《世界遗产名录》，为文化与自然双重遗产、也是世界第一个双重遗产 ——
+    //   https://whc.unesco.org/zh/list/437（1 级）。
     seeing:
       "The Shandong Hills include the mountains of central-southern Shandong and the hills of the Jiaodong Peninsula, ringed on three sides by the North China Plain and the Yellow River delta. They are a low mountain-and-hill area bulging up in the middle of the plain, mostly around 500 m, with the main peak of Tai Shan about 1,533 m — the highest here.",
     formation:
@@ -2075,6 +2126,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Liangguang Hills' karst and the Yunnan–Guizhou Plateau's karst: the landform types are similar (peak forest, caves), but the Yunnan–Guizhou Plateau is high overall (1,000–2,000 m), an uplifted highland; the Liangguang Hills are far lower, and the peak forest mostly rises from plains. The Liangguang Hills and the Jiangnan Hills: one is marked by karst peak forest, the other by red-earth low hills and famous granite mountains.",
     concept:
       "The Guilin peak forest of the Liangguang Hills is a classic of \"tropical–subtropical karst\": the hotter and wetter the climate, the stronger and faster the limestone dissolves, until a continuous limestone surface is \"eaten\" down to isolated rock peaks standing on a dissolution plain. This \"peak-forest plain\" is a late stage of karst development.",
+    // history sources: 灵渠沟通湘江（长江水系）与漓江（珠江水系），公元前 214 年前后秦始皇为统一岭南而修建 ——
+    //   广泛记载的水利与军事史常识，只涉前现代史，零争议红线通过（2026-09-08 核）。
+    //   **与江南丘陵的 distinguish/seeing 段再次交叉复核**：南岭为界、两广以喀斯特峰林为标志、
+    //   江南以红壤低山与花岗岩名山为标志，两篇互相印证，未出现抄错方向。
     history:
       "The scenery of Guilin has long been called \"the finest under heaven\" and appears again and again in Chinese landscape painting and travel writing. The Lingqu Canal links the Xiang and Li rivers, letting the Central Plains reach the Pearl system by water — a key work in the Qin unification of the far south.",
   },
@@ -2146,6 +2201,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ North America · United States ============
   "rocky-mountains": {
+    // seeing sources: 长约 4800 km、最高峰埃尔伯特山 4401 m、拉勒米造山运动约 8000 万—5500 万年前、
+    //   科罗拉多五十余座 14,000 英尺峰 —— 2026-09-09 逐句核实，全篇 6 板块无误，本轮无需改动。
     seeing:
       "The Rocky Mountains are the backbone of western North America, running about 4,800 km from British Columbia in Canada to New Mexico in the United States. They carry the Continental Divide — rivers on the two sides of the crest drain to the Pacific and (via the Gulf of Mexico) to the Atlantic. The highest peak on the U.S. side is Mount Elbert in Colorado, about 4,401 m.",
     formation:
@@ -2161,6 +2218,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "appalachian-mountains": {
+    // seeing sources: 长约 2400 km、最高峰米切尔山 2037 m、4.8 亿—2.6 亿年前造山、
+    //   阿巴拉契亚步道约 3500 km / 跨 14 州 —— 2026-09-09 逐句核实，全篇 6 板块无误。
     seeing:
       "The Appalachian Mountains run about 2,400 km along the eastern edge of North America, from Newfoundland in Canada to Alabama in the United States. They are not high — the highest, Mount Mitchell, is about 2,037 m — but they are continuous, parallel and heavily forested, the main topographic barrier of eastern North America, and long an obstacle to European settlers moving inland.",
     formation:
@@ -2176,6 +2235,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "sierra-nevada-us": {
+    // seeing sources: 长约 640 km、惠特尼山 4421 m（本土 48 州最高峰，限定语正确）、内华达岩基逾 1 亿年、
+    //   断块抬升 + 冰川雕刻的机制表述准确 —— 2026-09-09 核。
+    //   **条目已主动澄清它与西班牙的 Sierra Nevada 同名不同地** —— 同名不同地正是本项目反复踩的一类，
+    //   这里处理得当。
     seeing:
       "The Sierra Nevada is a range in eastern California about 640 km long, running north–south. Its western slope rises gently from the Central Valley; its eastern side drops as a steep fault scarp into the Owens Valley, a fall of up to about 3,000 m. The high point, Mount Whitney, is about 4,421 m — the highest peak in the 48 contiguous United States. Winter moisture off the Pacific falls here as heavy snow, making the range an important natural reservoir for California.",
     formation:
@@ -2193,6 +2256,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "cascade-range": {
     seeing:
       "The Cascade Range is a volcanic mountain range in the Pacific Northwest of North America, running from southern British Columbia in Canada into northern California. Its signature is a line of widely spaced, steep-sided stratovolcano cones, of which Mount Rainier, about 4,392 m, is the highest and is an active volcano. The range separates the wet coastal region from the dry interior plateau.",
+    // formation sources: 雷尼尔山 4392 m；卡斯卡迪亚俯冲带的火山弧机制（约 100 km 深处脱水熔融产生岩浆）与地质教材一致；
+    //   1980-05-18 圣海伦斯侧向喷发 —— 2026-09-09 核，全篇 6 板块无误。
     formation:
       "The Cascades are a subduction-zone volcanic arc: the Juan de Fuca plate subducts beneath North America from the west, melting at about 100 km depth to produce magma that rises to build volcanoes. The range has two parts — an older, eroded base of volcanic rock in the west, and a line of young stratovolcanoes sitting on it (Rainier, Adams, St. Helens, Hood, Shasta and others). Mount St. Helens had a major lateral eruption in 1980.",
     observation:
@@ -2206,8 +2271,17 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "alaska-range": {
+    // seeing sources: 海拔 **约 6190 m**，USGS **2015 年**实测（此前流传 6,194 m）——
+    //   https://www.usgs.gov/news/national-news-release/new-elevation-nations-highest-peak（1 级，2026-09-09 核）。
+    //   **名称问题按零争议红线处理，正文不断言哪个是「官方名」**：
+    //   联邦名 2015 年由 McKinley 改为 Denali，2025 年 1 月的行政令与 2 月的内政部命令又把 GNIS 主名
+    //   改回 Mount McKinley（迪纳利国家公园与保护区的名称未变，阿拉斯加州政府仍用 Denali）。
+    //   **这不是地质意义上的不确定，而是会随执政更替反复变的政治决定** —— 断言任何一方都会
+    //   ① 过期、② 读作立场表态。现在两个名字并列、都说明在使用。
+    //   山脉长约 650 km；迪纳利断层走滑 + 太平洋板块推挤（Yakutat 地体碰撞）驱动抬升；
+    //   迪纳利国家公园 1917 年设立、约 2.4 万 km² —— 均核实无误。
     seeing:
-      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (U.S. Geological Survey figure; the federal official name is also given as Mount McKinley). Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
+      "The Alaska Range is an arc-shaped range about 650 km long in south-central Alaska, separating the Pacific coast from the Alaskan interior. Rising from its middle is the highest peak in North America, Denali, about 6,190 m (measured by the U.S. Geological Survey in 2015). The peak goes by two current names — Denali, from a local Native language, meaning \"the high one\", and Mount McKinley — and both are in use. Because the lowland at its base is so low, Denali's rise from base to summit is among the greatest of any land mountain on Earth.",
     formation:
       "The Alaska Range runs along a large strike-slip fault (the Denali Fault) and is the result of the Pacific-side plate pushing north, compressing and displacing crust upward; it is still slowly rising and is seismically active. The rock is mostly sedimentary and granitic, and the upper range is covered by huge valley glaciers — the Kahiltna and others flow tens of kilometres down from around Denali.",
     observation:
@@ -2231,6 +2305,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Colorado Plateau and the Tibetan Plateau are both \"plateaus\", but the Tibetan Plateau was squeezed up by continental collision, sits above 4,000 m and has strongly deformed rock; the Colorado Plateau is only 1,500 to 2,100 m, its layers are essentially flat, and it was raised evenly as a block. Versus the neighbouring Great Basin: the Great Basin has been pulled apart into a set of fault troughs and parallel ranges; the Colorado Plateau is one intact block that was not torn.",
     concept:
       "The Colorado Plateau shows that what matters for a \"plateau\" is a large area raised relatively intact — not necessarily great height. A common misconception is that canyons were \"ripped open\": the Grand Canyon was sawn down over millions of years by the Colorado River, faster where the plateau rose faster. Flat layers plus a dry climate make this a classic region worldwide for studying sedimentary rock and river erosion.",
+    // history sources: **「Anasazi」是 NPS 已弃用的他称** —— 纳瓦霍语词，本意接近「敌人的祖先」；
+    //   霍皮等普韦布洛部落自 1990 年代起提出异议，梅萨维德等国家公园的官方材料改用
+    //   Ancestral Puebloan / Ancestral Pueblo people ——
+    //   https://www.nps.gov/meve/learn/historyculture/upload/ancestral_pueblo_people_2018_508_01-24-18-2.pdf（1 级，2026-09-09 核）。
+    //   **这同时是一处中英不同步**：英文版本身没有这个括注，只有中文加了 —— 已删。
+    //   **族群名称的「哪个词现在还在用」是会变的**，与地名更名同类，要按管理机构的现行用法写。
+    //   高原面积约 33.7 万—34 万 km²、平均海拔 1500—2100 m、抬升 1500—2000 m 而岩层未褶皱、
+    //   纳瓦霍族保留地为美国面积最大的印第安保留地，均核实无误。
     history:
       "The Colorado Plateau is home to the Navajo, Hopi, Ute and other Native nations; the Navajo Nation is the largest Indian reservation in the United States, and places such as Monument Valley are managed by Navajo Parks. The plateau also holds many Ancestral Puebloan cliff-dwelling sites, such as Mesa Verde. Today it is dominated by its cluster of national parks and outdoor tourism.",
   },
@@ -2239,18 +2321,28 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     seeing:
       "The Grand Canyon is the vast canyon the Colorado River cut through the Colorado Plateau, in northern Arizona — about 446 km long, up to about 29 km wide, and up to about 1,857 m deep. Its walls of clearly bedded red and yellow rock record nearly 1.8 billion years of Earth history. Most visitors look out from the South Rim, at about 2,100 m.",
     formation:
-      "The Grand Canyon formed mainly over the past 5 to 6 million years, as the Colorado River kept cutting down while the Colorado Plateau was being raised. The river does the \"cutting deeper\"; wall retreat and side gullies do the \"widening\"; and the dry climate slows collapse and plant cover, keeping the layers sharp. The Vishnu Schist exposed at the bottom is about 1.8 billion years old, among the oldest rock in North America; the Kaibab Limestone at the top is about 270 million years old.",
+      "The continuous canyon seen today is, on the mainstream view, the work of the past 5 to 6 million years, as the Colorado River kept cutting down while the Colorado Plateau rose and linked up several older palaeocanyon segments — some cut nearly to their present depth as long as about 70 million years ago. The timing and mechanism of the individual segments are still debated. The river does the \"cutting deeper\"; wall retreat and side gullies do the \"widening\"; and the dry climate slows collapse and plant cover, keeping the layers sharp. The Vishnu Schist exposed at the bottom is about 1.8 billion years old, among the oldest rock in North America; the Kaibab Limestone at the top is about 270 million years old.",
     observation:
       "From the air the Grand Canyon is an extremely deep, wide, crook-edged gash in the plateau surface; inside are stepped-back terraces and cliffs, colours shading from pale at the top to deep, from yellow to red to grey-black going down. A deep-green ribbon of river runs along the bottom. The North Rim is clearly higher than the South Rim and more forested. Low sun at sunrise and sunset makes the layering most three-dimensional.",
     distinguish:
       "The Grand Canyon and China's Yangtze Three Gorges are both canyons cut by a big river, but the Three Gorges is the Yangtze cutting across a mountain belt, with steep V-shaped rock walls; the Grand Canyon is the Colorado cutting into a plateau of flat layers, so its walls are stepped, wider and paler. Versus the Yarlung Tsangpo Grand Canyon: that one is deeper, narrower, wetter and more forested; the Grand Canyon is wider, drier and bare-rock.",
     concept:
       "The Grand Canyon is often wrongly called the \"deepest\" or \"largest\" canyon — by depth and length it is neither first (the Yarlung Tsangpo Grand Canyon is deeper and longer). What is genuinely special is its width, its continuous exposure of rock layers, and the way the dry climate makes about 1.8 billion years of geology legible at a glance. It is a classic case of river down-cutting combined with block uplift.",
+    // history sources: NPS 官方的大峡谷国家公园「传统关联部落」共 11 个：Havasupai、Hopi、Hualapai、
+    //   Kaibab Band of Paiute、Las Vegas Paiute、Moapa Band of Paiute、Navajo Nation、
+    //   Paiute Indian Tribe of Utah、San Juan Southern Paiute、Pueblo of Zuni、Yavapai-Apache Nation ——
+    //   https://www.nps.gov/grca/learn/historyculture/associated-tribes.htm（1 级，2026-09-09 核）。
+    //   **原文写的「犹特（Ute）」不在名单里** —— Ute 与 Paiute 是两个不同的民族，名字相近极易混。
+    //   **写族名要照着管理机构的官方名单核，不能凭发音相近推**。
+    //   长 446 km / 最宽 29 km / 最深 1857 m、南缘约 2100 m、毗湿奴片岩约 18 亿年、
+    //   凯巴布石灰岩约 2.7 亿年、1919 年设园、1979 年列入世界遗产，均核实无误。
     history:
-      "The Grand Canyon and its surroundings have long been home to the Havasupai, Hualapai, Navajo, Hopi, Ute and other Native nations, and tribal communities still live in and around the canyon. Grand Canyon National Park was established in 1919 and listed as a World Heritage site in 1979. Grand Canyon Village on the South Rim is the main visitor hub.",
+      "The Grand Canyon and its surroundings have long been home to the Havasupai, Hualapai, Navajo, Hopi, Paiute and other Native nations, and tribal communities still live in and around the canyon. Grand Canyon National Park was established in 1919 and listed as a World Heritage site in 1979. Grand Canyon Village on the South Rim is the main visitor hub.",
   },
 
   "great-plains-us": {
+    // seeing sources: 西部约 1800 m 降至东部约 500 m、奥加拉拉含水层、内布拉斯加沙丘、1930 年代黑风暴、
+    //   100°W 与 500 mm 年降水线大致重合作为分界 —— 2026-09-09 核，全篇 6 板块无误。
     seeing:
       "The Great Plains are a broad, gently sloping plain east of the Rocky Mountains, running from the Prairie provinces of Canada down to Texas and several hundred kilometres wide. They fall from about 1,800 m in the west to about 500 m in the east so gradually that the slope is barely perceptible. Once continuous tall- and short-grass prairie with huge bison herds, they are now a major U.S. wheat, corn and cattle belt.",
     formation:
@@ -2274,6 +2366,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Great Basin is a strikingly regular set of north–south stripes: brown ranges alternating with pale, flat valleys, one after another. The valley centres often hold white salt flats or dry lake beds (playas). Vegetation is mostly grey-green sagebrush, thinning toward the basin floors. The Great Salt Lake is a shallow, salty, pinkish-white sheet of water in the north-east corner.",
     distinguish:
       "The Great Basin and the Tarim Basin are both dry, internally drained basins, but the Tarim is a single large basin ringed by high mountains with one continuous desert in the middle; the Great Basin is not a basin at all but a whole \"Basin and Range\" province of dozens of small basins and small ranges. Versus the Colorado Plateau: the plateau is an intact block that was not torn; the Great Basin is a block that was stretched apart.",
+    // concept sources: 面积约 50 万 km²、盆岭构造的地壳抻张机制、邦纳维尔湖为冰期古湖、1847 年摩门教徒定居大盐湖畔 ——
+    //   2026-09-09 核，全篇 6 板块无误。
+    //   **「大盆地」有三个不完全重合的范围**：地貌省、水文内流区、沙漠生态区 ——
+    //   **正文自己就把这一点写明了**，是正确写法的范例（与「戈壁」那篇分清地表类型与地名同一类处理）。
     concept:
       "The name \"Great Basin\" is misleading — it is not one bowl-shaped hollow but an area where all water is trapped inland, made of many small basins. The test is the drainage: any region whose rivers ultimately do not reach the sea and vanish inland is an area of internal drainage. It is at once a landform region (Basin and Range), a hydrologic region (internal drainage) and a desert region (the Great Basin Desert), and the three do not match exactly.",
     history:
@@ -2281,8 +2377,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "death-valley": {
+    // seeing sources: 望远镜峰 3,366 m、巴德沃特盆地 −86 m，高差 11,331 英尺（约 3,454 m）——
+    //   NPS https://www.nps.gov/deva/planyourvisit/telescope-peak.htm（1 级，2026-09-09 核），与正文海拔差吻合。
+    //   **水平距离约 15—17 英里（24—27 km）**（3 级，多来源一致）；NPS 官方页面本身没给这个距离。
+    //   **原文的「约 30 公里」偏高 10%—25%，是一次性写错，不属于会被修正的动态数字。**
     seeing:
-      "Death Valley is a deep north–south valley in eastern California, part of the Great Basin. Its floor at Badwater Basin lies at −86 m, the lowest point in North America, while Telescope Peak on its western side rises to 3,366 m — only about 30 km apart horizontally. Summers are extremely hot, among the hottest recorded anywhere on Earth, and it is the driest place in the contiguous United States.",
+      "Death Valley is a deep north–south valley in eastern California, part of the Great Basin. Its floor at Badwater Basin lies at −86 m, the lowest point in North America, while Telescope Peak on its western side rises to 3,366 m — only about 24 to 27 km apart horizontally. Summers are extremely hot, among the hottest recorded anywhere on Earth, and it is the driest place in the contiguous United States.",
     formation:
       "Death Valley is a \"pull-apart basin\" — the crust has been stretched along faults so that the whole valley floor keeps dropping relative to the ranges on either side, while receiving debris washed down from the mountains. With almost no outlet and very strong evaporation, the floor has accumulated thick salt, mud and sand, forming large salt flats, cracked salt crust and seasonal shallow salt lakes. The alluvial fans along the valley edge are large and steep.",
     observation:
@@ -2296,6 +2396,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mojave-desert": {
+    // seeing sources: 海拔 600—1200 m、约书亚树为标志植物、内华达山脉与横断山脉的雨影机制、
+    //   与大盆地（更冷、灌木荒漠）和索诺兰沙漠（夏季降水、柱状仙人掌）按降水季节与植被区分 ——
+    //   2026-09-09 核，全篇 6 板块无误。
     seeing:
       "The Mojave Desert lies in south-eastern California, southern Nevada and the neighbouring corners of Arizona and Utah, wedged between the Great Basin to the north and the Sonoran Desert to the south. It is a relatively high desert, mostly 600 to 1,200 m. Its signature plant is the Joshua tree, a tall yucca that grows only in the Mojave. Las Vegas, Death Valley and Joshua Tree National Park are all within it.",
     formation:
@@ -2311,6 +2414,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-lakes": {
+    // seeing sources: 总面积约 24.4 万 km²、约占全球地表淡水两成、末次冰盖约 1.4 万年前退去 ——
+    //   Michigan Sea Grant（2/3 级，2026-09-09 核）。
+    //   **「密歇根湖与休伦湖在水文上是一体（经麦基诺水道连通、同一水位），习惯上算两个湖」——
+    //   正文写明了这一点**，是正确写法；与东非大湖（裂谷成因）、里海（咸水、内流）的区分也写清了。
     seeing:
       "The Great Lakes are a set of connected large freshwater lakes in the middle of North America — Superior, Michigan, Huron, Erie and Ontario, running from west to east across the U.S.–Canada border. Their combined area is about 244,000 km², and they hold roughly a fifth of the world's surface liquid fresh water. Their water eventually reaches the Atlantic via the St. Lawrence River. Chicago, Toronto and Detroit are among the big cities on their shores.",
     formation:

@@ -94,6 +94,12 @@ const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
     { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "同上，SSB 没有「都会区」这一档；数字要么是 tettsted 被贴错标签，要么查无官方来源" },
     { re: /\bmetro(?:politan)? area\b/i, why: "SSB publishes no metropolitan-area tier" },
   ],
+  // known-errors C6-c-5：日本没有「市区人口」这个复合概念（「市」与「区」是平行的不同层级），
+  // 也从未使用「都会区」——総務省的官方专名是「東京圏」「近畿大都市圏」「中京大都市圏」。
+  japan: [
+    { re: /市区人口/, why: "日本按「市区町村」逐一发布人口，没有「市区人口」这个复合口径" },
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "総務省用的是「大都市圏」（東京圏/近畿/中京），从无「都会区」" },
+  ],
   // known-errors C6-c-5：ISTAT 只有 comune 常住人口；città metropolitana 是行政建制不是统计口径
   italy: [
     { re: /市区人口/, why: "意大利 ISTAT 只发布 comune（市镇）常住人口" },
