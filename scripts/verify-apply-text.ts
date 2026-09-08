@@ -4,8 +4,9 @@
  *
  * 与 verify-apply.ts 的分工：
  *   verify:apply       → 改 data/routes/*.json 的结构化字段
- *   verify:apply-text  → 改 lib/travel-content.{zh,en}.ts 里的**句子**，并补
- *                        条目上方的 `// <field> sources:` 注释
+ *   verify:apply-text  → 改 lib/travel-content.{zh,en}.ts 或 lib/terrain-content.{zh,en}.ts
+ *                        里的**句子**，并补条目上方的 `// <field> sources:` 注释
+ *                        （按 finding 的 kind 选文件：terrain → 地形讲解，其余 → 城市）
  *   verify:report      → 开/关 issue + 记台账（两者共用同一份 findings.json）
  *
  * 为什么要脚本化：C6（数字缺年份）一类就有 524 处、367 个条目，中英各改一句、
@@ -27,10 +28,18 @@
 
 import { readFile, writeFile } from "node:fs/promises";
 
-const FILES = {
-  zh: "lib/travel-content.zh.ts",
-  en: "lib/travel-content.en.ts",
+/**
+ * 两套内容文件，按 finding 的 `kind` 选：
+ *   kind: "terrain" → 地形讲解（6 板块：seeing / formation / observation / distinguish / concept / history）
+ *   其余（travel / city …） → 旅游模式的城市与国家概览
+ * 两个文件的条目形状一样（`  <id>: {` … `  },`），所以补丁逻辑共用。
+ */
+const FILE_SETS = {
+  travel: { zh: "lib/travel-content.zh.ts", en: "lib/travel-content.en.ts" },
+  terrain: { zh: "lib/terrain-content.zh.ts", en: "lib/terrain-content.en.ts" },
 } as const;
+type FileSet = keyof typeof FILE_SETS;
+const setOf = (kind: string): FileSet => (kind === "terrain" ? "terrain" : "travel");
 
 interface TextPatch {
   find: string;
@@ -128,8 +137,17 @@ function upsertSourceNote(src: string, id: string, field: string, note: string, 
   return src.slice(0, start) + block + src.slice(end);
 }
 
-let zh = await readFile(FILES.zh, "utf8");
-let en = await readFile(FILES.en, "utf8");
+const src: Record<FileSet, { zh: string; en: string }> = {
+  travel: {
+    zh: await readFile(FILE_SETS.travel.zh, "utf8"),
+    en: await readFile(FILE_SETS.travel.en, "utf8"),
+  },
+  terrain: {
+    zh: await readFile(FILE_SETS.terrain.zh, "utf8"),
+    en: await readFile(FILE_SETS.terrain.en, "utf8"),
+  },
+};
+const touched = new Set<FileSet>();
 let patched = 0;
 let noted = 0;
 
@@ -138,28 +156,32 @@ for (const f of round.findings) {
   if ((f.textPatch || f.sourceNote) && f.resolution !== "fixed") {
     throw new Error(`${f.key}: 给了 textPatch/sourceNote 但 resolution 是「${f.resolution}」`);
   }
+  const fs = setOf(f.kind);
+  touched.add(fs);
   if (f.textPatch?.zh) {
     assertNoRawQuote(f.textPatch.zh.replace, f.key, "zh");
-    zh = patchEntry(zh, f.id, f.textPatch.zh, f.key);
+    src[fs].zh = patchEntry(src[fs].zh, f.id, f.textPatch.zh, f.key);
     patched++;
   }
   if (f.textPatch?.en) {
     assertNoRawQuote(f.textPatch.en.replace, f.key, "en");
-    en = patchEntry(en, f.id, f.textPatch.en, f.key);
+    src[fs].en = patchEntry(src[fs].en, f.id, f.textPatch.en, f.key);
     patched++;
   }
   if (f.sourceNote) {
     // 来源注释两边都写：谁单看一个文件都能看到这句话是从哪儿来的
-    zh = upsertSourceNote(zh, f.id, f.field, f.sourceNote, f.key);
-    en = upsertSourceNote(en, f.id, f.field, f.sourceNote, f.key);
+    src[fs].zh = upsertSourceNote(src[fs].zh, f.id, f.field, f.sourceNote, f.key);
+    src[fs].en = upsertSourceNote(src[fs].en, f.id, f.field, f.sourceNote, f.key);
     noted += 2;
   }
-  console.log(`  fixed ${f.id.padEnd(22)} ${f.field}`);
+  console.log(`  fixed ${fs === "terrain" ? "[地形] " : ""}${f.id.padEnd(22)} ${f.field}`);
 }
 
 if (!DRY) {
-  await writeFile(FILES.zh, zh);
-  await writeFile(FILES.en, en);
+  for (const fs of touched) {
+    await writeFile(FILE_SETS[fs].zh, src[fs].zh);
+    await writeFile(FILE_SETS[fs].en, src[fs].en);
+  }
 }
 
 console.log(

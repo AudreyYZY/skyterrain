@@ -199,11 +199,14 @@ findings JSON 的形状：
 
 **`key` 与 `kind` 必须沿用既有写法，否则去重会失效**（2026-09-08 踩过）：
 
-| 档 | `kind` | `key` |
-|---|---|---|
-| 城市 / 国家概览 | `travel` | `travel/<id>/<话题>`，如 `travel/hanzhong/population-2025` |
-| 地形 | `terrain` | `terrain/<id>/<话题>` |
-| 航线 | `routes` | `routes/<id>/flight` |
+| 档 | `kind` | `key` | `verify:apply-text` 改哪个文件 |
+|---|---|---|---|
+| 城市 / 国家概览 | `travel` | `travel/<id>/<话题>`，如 `travel/hanzhong/population-2025` | `lib/travel-content.{zh,en}.ts` |
+| 地形 | `terrain` | `terrain/<id>/<话题>` | `lib/terrain-content.{zh,en}.ts` |
+| 航线 | `routes` | `routes/<id>/flight` | `data/routes/*.json`（走 `verify:apply`，不是 apply-text） |
+
+地形条目的 `field` 是那 6 个板块之一：`seeing` / `formation` / `observation` /
+`distinguish` / `concept` / `history`。
 
 踩过的坑：中国人口刷新那几批把 `kind` 写成了 `city`、`key` 写成了 `cn7-hanzhong-pop`，
 于是 `travel/hanzhong/population-2025` 这个既有 issue 没被命中，**又重开了一个一模一样的**
