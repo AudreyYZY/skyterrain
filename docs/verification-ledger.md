@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 2ef748d
+lastVerifiedCommit: adcf1e0
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -32,6 +32,7 @@ lastVerifiedCommit: 2ef748d
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | 18 个条目的 howItWorks 段仍停在 2020 年普查数（中国 howItWorks 与 identity 取齐 · 收尾） | 18 | 0 / 18 / 0 | 当场修 18 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 奥地利 8 城 identity/howItWorks 人口数字与口径（奥地利城市人口刷新 · 批 1（Statistik Austria 2026-01-01）） | 9 | 1 / 8 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 美国 8 城 identity/howItWorks 人口数字与 city / metro 口径（美国城市人口刷新 · 批 1（Census Vintage 2025）） | 16 | 0 / 16 / 0 | 当场修 16 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 中国 11 城 identity/howItWorks 人口数字（中国城市人口刷新 · 批 11） | 17 | 0 / 14 / 2 | 当场修 15 条；新开 issue 2、关闭 0 |
