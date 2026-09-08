@@ -2019,8 +2019,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   taipei: {
+    // identity sources: **「都会区」不是官方统计口径**，「大台北」是媒体与学界的俗称 —— 同条目 howItWorks 段
+    //   已写明这一点并给出三市户籍人口合计与占比，`identity` 这半句是上一轮漏改的。
+    //   三市户籍合计约 682 万（不是七百万）。台北市本身 2026 年 7 月户籍人口约 242 万。
+    //   2026-09-08 由 `check:claims` 新规则 **C6k**（用了这个国家没有的口径）扫出。
+    //   **教训**：同一条口径问题在一个条目里往往出现两次（identity 一次、howItWorks 一次），
+    //   修的时候要把整个条目搜一遍，不能只改报出来的那一处。
     identity:
-      "Taipei is the largest city of China's Taiwan Province, set in the Taipei Basin in the north of the island of Taiwan, with a metropolitan population of about seven million. The city is ringed by mountains on three sides and open to a river on the fourth; it is warm and rainy, and night markets, hot springs, museums and convenient public transport are the first impressions it gives.",
+      "Taipei is the largest city of China's Taiwan Province, set in the Taipei Basin in the north of the island of Taiwan. The city is ringed by mountains on three sides and open to a river on the fourth; it is warm and rainy, and night markets, hot springs, museums and convenient public transport are the first impressions it gives.",
     // howItWorks sources: **两处都要改，且性质不同**：
     //   ① 数字过期：台北市 2026 年 7 月户籍人口 2,424,159 人（较 2023 年的约 249 万续降）；新北市 4,038,031（2026-06）；基隆市 359,836（2025-12，基隆市政府民政处，**级别 1**）。三市合计约 682.2 万。
     //   ② **口径不存在**：台湾官方统计没有「都会区」这个法定口径，「大台北」是媒体与学界的俗称 —— 正文已注明这不是官方统计口径。
@@ -8173,7 +8179,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   **未核**：本段末尾「东日德兰的都会区约 140 万人」—— 丹麦统计局不发布「都会区」这一档，
     //   该数字追不到官方口径，已另记 unknown（见 travel/aarhus/east-jutland-metro）。
     howItWorks:
-      "Aarhus is Denmark's second city and the seat of the Central Denmark Region; Aarhus Municipality covers about 468 km² with about 378,000 people in 2026, about 305,000 in the urban area, governed by a mayor and a council of 31. The municipality runs schools, elder care and social services, the region runs hospitals, and the state runs police and universities. The city grew around the Bay of Aarhus and the Aarhus River, which runs through the centre; the Latin Quarter is the heart of the old town, Aarhus Ø is the new district built on the old docks since 2008, the Old Town museum and the ARoS art museum are two points of reference, and Dokk1 is the new library by the water. Aarhus University, with about 40,000 students, is among the largest in the Nordic countries and makes this the youngest city in Denmark, which calls itself the 'City of Smiles'. The light rail opened in 2017 joins the city to its surroundings, and the East Jutland metropolitan area holds about 1.4 million. Addresses give street, number and four-digit postcode beginning with 8000. Newcomers most often go wrong by taking Aarhus for a foil to Copenhagen, when it is the centre of the Jutland peninsula and a university city.",
+      "Aarhus is Denmark's second city and the seat of the Central Denmark Region; Aarhus Municipality covers about 468 km² with about 378,000 people in 2026, about 305,000 in the urban area, governed by a mayor and a council of 31. The municipality runs schools, elder care and social services, the region runs hospitals, and the state runs police and universities. The city grew around the Bay of Aarhus and the Aarhus River, which runs through the centre; the Latin Quarter is the heart of the old town, Aarhus Ø is the new district built on the old docks since 2008, the Old Town museum and the ARoS art museum are two points of reference, and Dokk1 is the new library by the water. Aarhus University, with about 40,000 students, is among the largest in the Nordic countries and makes this the youngest city in Denmark, which calls itself the 'City of Smiles'. The light rail opened in 2017 joins the city to its surroundings. Addresses give street, number and four-digit postcode beginning with 8000. Newcomers most often go wrong by taking Aarhus for a foil to Copenhagen, when it is the centre of the Jutland peninsula and a university city.",
     layout:
       "The old town is built along the Aarhus River, with the Latin Quarter preserving a medieval street layout; the circular rainbow walkway atop the ARoS Aarhus Art Museum is a new city landmark, and the suburbs extend out along Aarhus Bay.",
     gettingAround:

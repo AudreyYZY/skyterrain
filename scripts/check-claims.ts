@@ -10,6 +10,7 @@
  *   C1b  排名断言没有口径 —— 横滨「日本人口第二多的市」错在把两种口径混了
  *   C6i  同一条目的 identity 与 howItWorks 给出两个互相矛盾的「全市人口」
  *   D1b  「公报未单列市区人口」之后又给出一个市区人口 —— 免责声明与数字自相矛盾
+ *   C6k  用了**这个国家官方统计里根本不存在的口径** —— 「市区常住人口」在中国不是官方称谓
  *   D4   拼接漏空格造成的粘连句 —— 「…of the flight.Easter Island lies…」
  *
  * 存量很大，一次性清不完，所以这里不是「有就报错」，而是**棘轮**：
@@ -23,6 +24,8 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { collectTtsSegments } from "../lib/tts-manifest.ts";
 import { splitSentences } from "../lib/sentences.ts";
+import { CITY_REGISTRY } from "../lib/places-registry.ts";
+import { TERRAIN_REGISTRY } from "../lib/terrain-registry.ts";
 import {
   FRESH_SINCE,
   CENSUS_ZH,
@@ -57,6 +60,62 @@ const PERISHABLE_EN =
 
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;
+
+/**
+ * C6k：**这个国家的官方统计里根本没有这个口径**。
+ *
+ * `C6-c` 一直是靠人核出来的：「口径先于数字 —— 先确认这个口径在该国官方统计里存不存在」。
+ * 2026-09-08 那批把它推到了极端：**福州、济南、长沙、南宁、海口、兰州六个条目的
+ * identity 段全都写着「市区常住人口约 N 百万」**，中英同步，而中国地级市年度公报
+ * 只有「全市常住人口」与「城镇常住人口」两档官方称谓 —— 「市区常住人口」是编的。
+ *
+ * 六条一个错误，说明是同一批写出来的。**逐条核实永远发现不了这种错**（每条单看都
+ * 「有数字、句式规范」），只有把同一国家的条目并排看才显形。这条规则就是把「并排看」
+ * 这件事交给脚本。
+ *
+ * **判据是按国家的**，因为同一个词在不同国家的合法性不同：
+ * 「都会区」在美国（MSA）、日本（都市圏）都有官方口径，在丹麦与中国则没有。
+ *
+ * **只写已经核实过的国家**。没核过的国家不要凭印象往里加 —— 那等于用一条猜测去
+ * 拦另一条猜测。表里每一行都要能指到 known-errors 里的一个实例。
+ */
+interface FakeCaliber { re: RegExp; why: string }
+const FAKE_CALIBER: Record<string, FakeCaliber[]> = {
+  // known-errors C6-c / C6-c-5：中国公报只有「全市常住人口」与「城镇常住人口」两档
+  china: [
+    { re: /(市区|中心城区|主城区)常住人口/, why: "中国地级市年度公报只有「全市常住人口」与「城镇常住人口」两档" },
+    { re: /都会区人口/, why: "「都会区」在中国不是官方统计口径" },
+  ],
+  // known-errors C6-c-4 ②：丹麦统计局只有 kommune 与 byområde 两档，没有「都会区」
+  denmark: [
+    { re: /都会区[^。；]{0,12}?[\d.,]+\s*万/, why: "丹麦统计局只有 kommune（市镇）与 byområde（城区）两档，没有「都会区」" },
+    { re: /\bmetropolitan (?:area|population)\b[^.;]{0,24}?[\d.,]+\s*(?:million|thousand)/i, why: "Statistics Denmark publishes no metropolitan-area tier" },
+  ],
+};
+
+/**
+ * 免责语：句子本身就在说「这个口径不存在 / 公报没单列」时不算命中 ——
+ * 那正是**正确**的写法（D1b 拦的是「说了没有又给出一个数」，不是「说了没有」本身）。
+ */
+const CALIBER_DISCLAIMER =
+  /(未单列|不单列|没有单列|没有这一档|不是官方|非官方|并未发布|没有发布|口径已停|已停止发布|does not (?:report|give|publish)|no official|not an official)/i;
+
+/**
+ * **合法的例外**，不算命中：
+ *
+ * - **普查确实会单列市辖区**。「市区约 122 万（2020 年普查口径）」不是自造口径 ——
+ *   人口普查按市辖区汇总，是有的；不存在的是**年度公报**里的「市区常住人口」。
+ *   句子里点明了普查/市辖区就放过（与 C6d 对普查的豁免同一个道理：**口径写出来了就不算含糊**）。
+ * - **跨境城市群**：哥本哈根—马尔默那句「连成跨国的都会区」说的是厄勒海峡两岸的城市群，
+ *   不是在引用丹麦统计局的某一档数字。
+ */
+const CALIBER_OK =
+  /(普查|市辖区|国势调查|跨国|跨境|census|cross-border)/i;
+
+/** 条目 → 国家（travel 走城市注册表，terrain 走地形注册表） */
+const COUNTRY_OF = new Map<string, string>();
+for (const c of CITY_REGISTRY) COUNTRY_OF.set(`travel/${c.id}`, c.country);
+for (const t of TERRAIN_REGISTRY) COUNTRY_OF.set(`terrain/${t.id}`, t.country);
 
 /**
  * D1b：**一句话里先声明「公报没有单列市区人口」，紧接着又给出一个市区人口**。
@@ -164,6 +223,7 @@ type Rule =
   | "C1b-排名断言缺口径"
   | "C6i-同条目两段人口打架"
   | "D1b-说了没单列市区人口又给出市区人口"
+  | "C6k-用了这个国家没有的口径"
   | "D4-粘连句";
 
 interface Hit {
@@ -257,6 +317,17 @@ for (const seg of segments) {
     if (isUnqualifiedRank(s, zh)) {
       hits.push({ ...seg, rule: "C1b-排名断言缺口径", sentence: s });
     }
+    // C6k：按条目所属国家查「这个国家没有的口径」；句子自己在说「没有这一档」时放过
+    const country = COUNTRY_OF.get(`${seg.kind}/${seg.id}`);
+    const fakes = country ? FAKE_CALIBER[country] : undefined;
+    if (fakes && !CALIBER_DISCLAIMER.test(s) && !CALIBER_OK.test(s)) {
+      for (const f of fakes) {
+        if (f.re.test(s)) {
+          hits.push({ ...seg, rule: "C6k-用了这个国家没有的口径", sentence: `${s}  ← ${f.why}` });
+          break;
+        }
+      }
+    }
   }
 }
 
@@ -291,6 +362,7 @@ const RULES: Rule[] = [
   "C1b-排名断言缺口径",
   "C6i-同条目两段人口打架",
   "D1b-说了没单列市区人口又给出市区人口",
+  "C6k-用了这个国家没有的口径",
   "D4-粘连句",
 ];
 

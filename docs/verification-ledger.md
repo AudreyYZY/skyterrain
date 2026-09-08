@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 6cc3908
+lastVerifiedCommit: 8d0af66
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: 6cc3908
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | check:claims 新增 C6k 规则后，全库扫出并清零的三处（C6k 新规则扫出的三处「这个国家没有的口径」） | 2 | 0 / 2 / 0 | 当场修 2 条；新开 issue 0、关闭 1 |
 | 2026-09-08 | travel-content 15 个中国条目的 identity / howItWorks 人口段（城市人口口径核实 · 中国 15 城（C6 专项）） | 15 | 0 / 15 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块：大分水岭/澳洲阿尔卑斯/麦克唐奈/弗林德斯/蓝山/皮尔巴拉/大维多利亚沙漠/纳拉伯/大自流盆地/艾尔湖/乌鲁鲁/卡塔丘塔（地形讲解核实 · 批 6（澳大利亚 12 篇）） | 13 | 9 / 4 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块：帕米尔/塔里木/柴达木/四川/吐鲁番/东北平原/长江/塔克拉玛干/河西走廊/雅鲁藏布大峡谷/青海湖/鄱阳湖（地形讲解核实 · 批 5（中国盆地/河流/湖泊/走廊 12 篇）） | 12 | 10 / 2 / 0 | 当场修 12 条；新开 issue 0、关闭 0 |
