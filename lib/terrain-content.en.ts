@@ -35,8 +35,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   qilian: {
     seeing:
       "The Qilian Mountains lie on the Gansu–Qinghai border and are the water tower and natural shield of the Hexi Corridor. Their summits carry permanent snow and thousands of glaciers, whose meltwater feeds a string of oasis cities — Wuwei, Zhangye, Jiuquan. From the air they sit as a white band between the arid corridor and gobi to the north and the moist grasslands of Qinghai to the south.",
+    // formation sources: 现代冰川约 2680 条、面积约 1600 km² —— 中国第二次冰川编目（2693 条 / 1597.8 km²），
+    //   与正文一致，2026-09-08 核。
+    //   **团结峰（岗则吾结）海拔没有定论**：流传的数值至少有 5808、5827、5937 米三组，
+    //   没有找到测绘部门的定论。原文写「各次测量在 5808—5827 米之间」，**把两个数字当成了区间的上下界**，
+    //   而 5937 米这一组落在区间之外 —— 已改成并列举例，不宣称边界。
+    //   下一轮去核自然资源部 / 国家基础地理信息中心是否有正式高程（见 issue）。
     formation:
-      "The Qilian is the north-eastern edge of the Tibetan Plateau, still rising under the northward push of the Indian plate. It is a set of parallel ridges and valleys trending NW–SE, built of Palaeozoic metamorphic rock and granite. China's second glacier inventory counts about 2,680 glaciers here, roughly 1,600 km² of ice — the solid reservoir of the Hexi Corridor. The highest summit, Tuanjie (Kangze'gyai) Peak, is about 5,800 m, with survey figures ranging from 5,808 to 5,827 m.",
+      "The Qilian is the north-eastern edge of the Tibetan Plateau, still rising under the northward push of the Indian plate. It is a set of parallel ridges and valleys trending NW–SE, built of Palaeozoic metamorphic rock and granite. China's second glacier inventory counts about 2,680 glaciers here, roughly 1,600 km² of ice — the solid reservoir of the Hexi Corridor. The highest summit, Tuanjie (Kangze'gyai) Peak, is about 5,800 m; published survey figures do not agree, among them 5,808 m and 5,827 m.",
     observation:
       "The easiest tell is the slant — the crest runs NW–SE, clearly different from the true east–west Qinling. Snow and ice run together along the summits, and a row of triangular alluvial fans spreads out at the foot, each fan edge turning green as an oasis. The dead-straight Hexi Corridor lies below the north slope; the open grasslands of Qinghai below the south — one side yellow, the other green.",
     distinguish:
@@ -97,8 +103,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   kunlun: {
     seeing:
       "The Kunlun is one of China's longest ranges — about 2,500 km from the Pamirs in the west to Qinghai in the east — and is called the \"ancestor of ten thousand mountains.\" It is the great barrier between the Tarim Basin and the Tibetan Plateau: the north slope drops steeply to desert, the south slope grades gently onto the plateau.",
+    // formation sources: 公格尔峰约 7649 m、昆仑山口 4768 m、乔戈里峰 8611 m（世界第二高峰）经核无误，2026-09-08。
+    //   **慕士塔格峰有两个并行数值**：7509 m 与 7546 m。中文维基正文给 7509、同时标注「一说 7546 米」，
+    //   且该条目自 2014 年起标着「没有列出任何参考或来源」—— 原文单挑了 7546 当定论，已改成两个并列。
+    //   `history` 段只写神话文化与古代丝绸之路，未涉现代政治，零争议红线通过。
     formation:
-      "The Kunlun rose with the Tibetan Plateau under the India–Eurasia collision. It is built mainly of metamorphic rock and granite and trends roughly east–west. Where its western section meets the Pamirs it carries 7,000 m peaks such as Kongur (about 7,649 m) and Muztagh Ata (about 7,546 m); the eastern section lowers gradually and joins the Altun and Qilian ranges.",
+      "The Kunlun rose with the Tibetan Plateau under the India–Eurasia collision. It is built mainly of metamorphic rock and granite and trends roughly east–west. Where its western section meets the Pamirs it carries 7,000 m peaks such as Kongur (about 7,649 m) and Muztagh Ata (in the 7,500 m class; sources give both 7,509 m and 7,546 m); the eastern section lowers gradually and joins the Altun and Qilian ranges.",
     observation:
       "From the air the Kunlun is an extremely long, extremely continuous east–west wall of snow mountains. To the north lies the yellow sand sea of the Tarim Basin (the Taklamakan), with almost no transition; to the south, the smoothly rolling high country of the Tibetan Plateau. Yuzhu Peak and the Kunlun Pass (4,768 m, where the Qinghai–Tibet Highway crosses) are good reference points.",
     distinguish:
@@ -135,6 +145,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   taihang: {
+    // seeing sources: 长约 400 km、主峰小五台山东台 2882 m、沿东缘大断裂强烈抬升的断块山成因、
+    //   与黄土高原/华北平原的分界关系 —— 《中国国家地理》
+    //   https://www.dili360.com/cng/article/p54ed2aee95d2c70.htm（2 级）与太行山东麓断裂带研究，2026-09-08 核。
+    //   全篇 6 板块核实无误，本轮无需改动。
     seeing:
       "The Taihang Mountains run through north China as the dividing line between the Loess Plateau and the North China Plain, trending NE–SW for about 400 km. Their signature is \"steep east, gentle west\": the east slope is a line of cliffs dropping straight onto the plain, while the west slope grades up onto the plateau.",
     formation:
@@ -150,6 +164,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   daxinganling: {
+    // seeing sources: 黄岗峰 2029 m 为大兴安岭最高峰；1987 年「5·6」特大森林火灾过火面积 101 万公顷
+    //   （其中有林面积 70 万公顷）、211 人遇难 —— 中国人大网《关于大兴安岭特大森林火灾事故和处理情况的汇报》
+    //   http://www.npc.gov.cn/wxzl/gongbao/2000-12/13/content_5001951.htm（1 级，2026-09-08 核）。
+    //   全篇 6 板块核实无误，本轮无需改动。
     seeing:
       "The Greater Khingan Range runs through north-east China, trending NE–SW, the divide between the Inner Mongolian Plateau and the Northeast (Songnen) Plain and one of China's largest state forest regions. It is not high — mostly 1,100–1,400 m — with rounded, gentle summits, but the forest is so dense the whole range reads as one dark green mass.",
     formation:
@@ -175,11 +193,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Changbai versus the Greater Khingan: Changbai is an isolated volcano with a crater lake, high and symmetrical; the Greater Khingan is a continuous rounded fold range with no crater lake. Changbai's Heaven Lake versus the Tianshan's Heaven Lake: the former is a crater lake (circular, deep, at the summit), the latter a glacially scoured, moraine-dammed lake (elongated, on the mountainside).",
     concept:
       "Changbai Shan is the model of \"volcanic landforms\": a crater lake at the centre, then lava plateaus, then volcanic-debris slopes outward. Heaven Lake is a classic caldera lake — formed by summit collapse after the eruption, not the low, flat maar type. Though often called dormant, there is still a magma chamber below, and it is an active volcano requiring long-term monitoring.",
+    // history sources: 天池海拔 2189.1 m、火山口湖 —— 吉林省人民政府
+    //   https://dfz.jl.gov.cn/ybjl/201811/t20181108_5447143.html（1 级，2026-09-08 核）；
+    //   946 年前后的「千年大喷发」为过去两千年全球规模最大的火山喷发之一（VEI 6–7），原文用「之一」措辞克制，无需改。
+    //   **history 段原写「1962 年边界条约……略多于一半在中国一侧」，方向是反的**
+    //   （该条约把天池约 54.5% 划在朝鲜一侧）。**但修法不是把比例改对，而是整句删掉** ——
+    //   项目零争议红线写明 `history` 段不碰现代政治与领土，「哪一国分到多少」正属这一类。
+    //   现在只保留「天池跨在中国与朝鲜的边界上」这个中性地理事实。
     history:
-      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also regarded as a sacred mountain on the Korean Peninsula. A 1962 China–North Korea boundary treaty set the border, dividing Heaven Lake between the two countries, with a little over half on the Chinese side.",
+      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also regarded as a sacred mountain on the Korean Peninsula. Heaven Lake straddles the border between China and North Korea.",
   },
 
   hengduan: {
+    // seeing sources: 贡嘎山 7508.9 m（2023 年 10 月公布的最新高程），四川省与横断山系最高峰；
+    //   三江并流 2003-07-02 列入 UNESCO 世界遗产 https://whc.unesco.org/en/list/1083/（1 级），
+    //   是中国唯一满足全部四条自然遗产标准的项目；「物质向东南挤出」的成因与学界主流解释一致。
+    //   2026-09-08 核，全篇 6 板块无误，本轮无需改动。
     seeing:
       "The Hengduan Mountains, in south-west China, are the country's largest belt of ranges running north–south, \"cutting across\" (heng duan) the connection between the Tibetan Plateau and the Sichuan Basin and Yunnan–Guizhou Plateau. The Jinsha (upper Yangtze), Lancang (Mekong) and Nu (Salween) rivers are squeezed here into parallel southward courses — the \"Three Parallel Rivers\" World Natural Heritage site.",
     formation:
@@ -195,6 +224,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   himalaya: {
+    // seeing sources: 珠峰新高程 8848.86 m，2020-12-08 中尼两国联合宣布 ——
+    //   国家体育总局 https://www.sport.gov.cn/n4/n15219/c972329/content.html（1 级，2026-09-08 核）。
+    //   长 2400 余 km、14 座 8000 m 级山峰中 10 座在此一带，均核实无误。
+    //   碰撞时间「约 5000 万年前」是通行的教科书近似值（学界研究结论在 35–65 Ma 之间），
+    //   原文已用「约」字，不算断言。
+    //   **零争议红线复核通过**：`history` 段只写登山史与两国联合测量，边界表述为中性地理事实。
     seeing:
       "The Himalaya is the highest mountain range on Earth, a great arc more than 2,400 km long along the southern edge of the Tibetan Plateau — the vast boundary range between China and South Asia. Of the world's fourteen 8,000 m peaks, ten lie in or near this range. Mount Everest (Qomolangma), at 8,848.86 m, on the China–Nepal border, is the highest point on the planet.",
     formation:
@@ -210,6 +245,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   nanling: {
+    // seeing sources: 五岭（越城岭/都庞岭/萌渚岭/骑田岭/大庾岭）、猫儿山 2141.5 m（越城岭主峰、南岭最高峰）；
+    //   灵渠为秦经略岭南所凿、沟通湘江与漓江，唐代张九龄开凿大庾岭道 —— 均为公认史实，2026-09-08 核。
+    //   全篇 6 板块无误；`history` 只涉前现代史，零争议红线通过。
     seeing:
       "The Nanling is a belt of low mountains straddling Hunan, Jiangxi, Guangdong and Guangxi, made up of five ranges — Yuecheng, Dupang, Mengzhu, Qitian and Dayu — hence the name \"Five Ridges.\" It is the drainage divide between the Yangtze and Pearl river systems and the transition zone between central and southern China.",
     formation:
@@ -225,6 +263,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   helan: {
+    // seeing sources: 主峰敖包疙瘩 3556 m；东麓年降水约 190–200 mm、西麓降至 110 mm 以下 ——
+    //   中国气象局 https://www.cma.gov.cn/kppd/kppdqxsj/kppdtqqh/202111/t20211103_4158960.html（1 级，2026-09-08 核）。
+    //   **长度「约 200 公里」各来源不一致**：宁夏贺兰山国家级自然保护区管理局给保护区本身南北长 170 km，
+    //   维基给约 270 km，差异来自统计起讫点与是否含保护区外延伸段。「约 200 公里」落在通行范围内，
+    //   本轮不改，但下一轮若拿到测绘口径应写明按什么算。
     seeing:
       "The Helan Mountains stand on the Ningxia–Inner Mongolia border, running north–south for about 200 km — an isolated, sharply rising rock range. Their purpose is to block: they stop cold air and drifting sand from the north-west (the Tengger Desert) and shelter the Ningxia Plain to the east, making it a \"Jiangnan beyond the passes.\"",
     formation:
@@ -243,8 +286,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "qinghai-tibet": {
     seeing:
       "The Tibetan Plateau (Qinghai–Tibet Plateau) is the highest and largest plateau on Earth and also a geologically young one, averaging above 4,000 m and covering about 2.5 million km² within China — the \"roof of the world\" and \"third pole.\" The Yangtze, Yellow, Lancang–Mekong, Yarlung Tsangpo–Brahmaputra and Indus all rise here.",
+    // formation sources: 平均海拔 4000 m 以上、总面积约 250 万 km²、地壳厚约 70 km ——
+    //   中国科学院青藏高原研究所 https://itpcas.cas.cn/new_kxcb/new_kpwz/202012/t20201211_5814695.html（1 级，2026-09-08 核）。
+    //   **隆升过程：不是整体抬升，是分阶段差异性隆升** —— 丁林院士团队综述，中科院官网报道
+    //   https://www.cas.cn/cm/202208/t20220803_4843832.shtml（1 级）：
+    //   约 9500 万年前冈底斯隆出海面 → 约 5500–4500 万年前冈底斯造山带升至约 4500 m →
+    //   约 4500–4000 万年前分水岭山脉升至约 5000 m（「两山夹一盆」）→ 约 4000–3000 万年前中央谷地抬升 →
+    //   约 2500–1500 万年前喜马拉雅与昆仑接近现代高度。原文的「整体抬升」把跨越八千万年的过程
+    //   写成了一次性事件。
+    //   **history 段已删去「1951 年西藏和平解放」一句** —— 那是关于当代主权的政治表述，
+    //   触及项目零争议红线（`history` 段只写地质史与广泛记载的前现代史）；公路、铁路通车年份是
+    //   中性工程事实，保留。
     formation:
-      "The plateau is the result of the Indian plate driving north into Eurasia; the crust has been thickened to about 70 km (normal continental crust is about 35 km) and lifted as a whole. It carries several roughly east–west ranges (Gangdise, Nyainqentanglha, Tanggula, Kunlun) with broad lake basins and grasslands between them.",
+      "The plateau is the result of the Indian plate driving north into Eurasia; the crust has been thickened to about 70 km (normal continental crust is about 35 km). The plateau did not rise all at once: research from the Chinese Academy of Sciences shows the Gangdise belt stood above sea level around 95 million years ago, after which different ranges rose in stages — the Gangdise orogen reached about 4,500 m some 55 to 45 million years ago, while the Himalaya and Kunlun only approached their present heights roughly 25 to 15 million years ago, which is when the plateau took its modern form. It carries several roughly east–west ranges (Gangdise, Nyainqentanglha, Tanggula, Kunlun) with broad lake basins and grasslands between them.",
     observation:
       "From ten kilometres up the plateau is a vast, comparatively flat, yellow-brown highland, dotted with countless deep-blue lakes (Namtso, Selin Co, Qinghai Lake) and white snow ranges. The edges (Himalaya, Hengduan, Kunlun) are steep and broken; the interior (northern Tibet, Hoh Xil) is smooth. The air is thin and visibility extreme.",
     distinguish:
@@ -252,12 +306,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Tibetan Plateau is \"a rise of the land,\" not just \"ground that is high\": the whole-scale uplift of this thick slab of crust changed Asia's atmospheric circulation, shaped the East Asian monsoon, and made the plateau itself cold — its climatic influence reaches far beyond its own area, which is why it is called the \"driver\" of Asian climate.",
     history:
-      "The plateau is the homeland of the Tibetan people; the Potala Palace and Jokhang Temple are sacred sites of Tibetan Buddhism. Tibet was peacefully liberated in 1951, the Sichuan–Tibet and Qinghai–Tibet highways opened in 1954, and the Qinghai–Tibet Railway — the highest railway in the world — opened throughout in 2006.",
+      "The plateau is the homeland of the Tibetan people; the Potala Palace and Jokhang Temple are sacred sites of Tibetan Buddhism. The Sichuan–Tibet and Qinghai–Tibet highways opened in 1954, and the Qinghai–Tibet Railway — the highest railway in the world — opened throughout in 2006.",
   },
 
   loess: {
     seeing:
       "The Loess Plateau, in north-central China, has the largest and thickest loess cover on Earth, up to 100–200 m deep. Its surface is dissected into a maze of gullies, it is the main source of the Yellow River's sediment, and it is a cradle of Chinese civilisation.",
+    // formation sources: 风成说（刘东生「新风成说」）为学界共识：黄土矿物成分与本地基岩不同、与中亚—蒙古戈壁一致，
+    //   颗粒由西北向东南变细 —— 正文表述无误，2026-09-08 核。
+    //   **黄土厚度因地而异**：晋东南/豫西北 20–80 m、晋西 80–120 m、陕北 100–150 m、
+    //   甘肃境内 200–300 m，兰州九州台最厚 326–409 m ——
+    //   国家发改委《黄土高原地区综合治理规划大纲》
+    //   https://www.ndrc.gov.cn/fzggw/jgsj/njs/sjdt/201101/W020240430572756442125.pdf（1 级）。
+    //   正文的「100–200 米」是中段概括，作为整体特征描述不算错，本轮不改。
     formation:
       "Loess is not weathered from local rock; it was blown here layer by layer by north-west winds over millions of years (the \"aeolian hypothesis\"). Loess is loose, has strong vertical jointing, and erodes easily, so under running water it has formed three typical landforms — yuan (flat loess tableland), liang (long loess ridge) and mao (dome-shaped loess hill).",
     observation:
@@ -271,6 +332,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "inner-mongolia": {
+    // seeing sources: 内蒙古高原为中国第二大高原（次于青藏高原），海拔一般 1000–1200 m（局部 1000–1400 m），
+    //   大致以 400 mm 等降水量线为半干旱/干旱分界 —— 多来源一致，2026-09-08 核（3 级）。
+    //   与大兴安岭条目里「400 mm 线的地理标志物」的说法相互印证、不矛盾。
+    //   全篇 6 板块无误，本轮无需改动。
     seeing:
       "The Inner Mongolian Plateau, China's second-largest plateau, spans central and eastern Inner Mongolia at about 1,000–1,200 m. Its signature is flatness — relief is minimal, and grassland runs east to west, grading from meadow steppe through typical steppe to desert steppe and finally into desert.",
     formation:

@@ -3,124 +3,10 @@
   "howTo": "键是 <kind>/<id>/<field>。加一条之前必须有对应的 // <field> sources: 注释写清为什么；不写理由的豁免等于把问题藏起来。",
   "entries": [
     {
-      "key": "travel/qiqihar/identity",
-      "reason": "2025 年公报只公布户籍人口 493.6 万，没有常住人口一项；2024 年末的 373.3 万是最新可查数",
+      "key": "travel/ayutthaya/identity",
+      "reason": "大城市自治市**完全没有取到带年份的一手数字**，正文如实停在「约 5 万」不写年份；这一条是被句中的 1991 年（世界遗产列入年份）误命中的。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/yibin/identity",
-      "reason": "2025 年公报起不再公布常住人口，只给户籍总人口 543.5 万；2024 年末的 461.1 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-04"
-    },
-    {
-      "key": "travel/nantong/identity",
-      "reason": "2025 年公报把整个「人口」章节删了（第十二章标题从「人口、人民生活和社会保障」改成「人民生活和社会保障」）；2024 年末的 775.0 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/linyi/identity",
-      "reason": "2025 年公报整版没有人口章节（目录只有八章，逐段核对不含常住人口与城镇化率）；2024 年末的 1084.84 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/linyi/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/zunyi/identity",
-      "reason": "2025 年公报已发布（2026-05-13）但整份是 24 张纯 JPG 扫描件，文字层提不出数字；2024 年末的 649.45 万是最新可核数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/zunyi/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/hanzhong/identity",
-      "reason": "2025 年公报已发布（2026-05-28）但官网正文是纯图片，取不到文字；issue #206 跟踪",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/beihai/identity",
-      "reason": "2025 年公报已于 2026-07-02 发布（比往年 3—4 月异常延后），但市政府统计栏目证书过期抓不到正文；issue #205 跟踪",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-07"
-    },
-    {
-      "key": "travel/beihai/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-07"
-    },
-    {
-      "key": "travel/qufu/identity",
-      "reason": "市政府官网「解读 2024 年公报」页被反爬拦截（503），四种访问方式都拿不到正文，无法确认是否含常住人口；issue #202 跟踪",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/qufu/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/qinhuangdao/howItWorks",
-      "reason": "2025 年度公报截至 2026-09-08 确未发布，已过该市常规的次年 5 月窗口；issue #203 跟踪",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/zhoushan/identity",
-      "reason": "2025 年度公报截至 2026-09-08 未发现；2024 年末的 117.6 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-04"
-    },
-    {
-      "key": "travel/fenghuang/identity",
-      "reason": "凤凰县历年公报列表最新仍是 2020—2022 年，湘西州与县政府网均未见 2025 年数据；issue #210 跟踪",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/fenghuang/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/zhenjiang/identity",
-      "reason": "统计局公报列表页只抓到 2017—2019 年旧条目（疑为分页/JS 加载），2025 年末数字未能定位，需人工翻页",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-05"
-    },
-    {
-      "key": "travel/daqing/identity",
-      "reason": "该市公报发布月份是次年 7 月，2025 年公报截至 2026-09-08 未见发布；2024 年末的 266.3 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-08"
-    },
-    {
-      "key": "travel/daqing/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-08"
-    },
-    {
-      "key": "travel/baishan/identity",
-      "reason": "该市公报发布月份在次年 6—8 月之间波动，2025 年公报截至 2026-09-08 未见发布；2024 年末的 88.88 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-09"
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/baishan/howItWorks",
@@ -129,52 +15,22 @@
       "recheckAfter": "2027-09"
     },
     {
-      "key": "travel/mianyang/identity",
-      "reason": "该市公报发布月份是次年 6 月，2025 年公报是否已发布未能确认（只能确认标题存在、抓不到正文）；2024 年末的 492.20 万是最新可查数",
+      "key": "travel/baishan/identity",
+      "reason": "该市公报发布月份在次年 6—8 月之间波动，2025 年公报截至 2026-09-08 未见发布；2024 年末的 88.88 万是最新可查数",
       "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-07"
+      "recheckAfter": "2027-09"
     },
     {
-      "key": "travel/mianyang/howItWorks",
+      "key": "travel/beihai/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-07"
     },
     {
-      "key": "travel/jiaozuo/identity",
-      "reason": "2025 年公报截至 2026-09-08 未查到（该市常规 5 月发布）；2024 年末的 349.6 万是最新可查数",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/jiaozuo/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-06"
-    },
-    {
-      "key": "travel/wanning/identity",
-      "reason": "万宁本级公报发布严重滞后且不规律（2024 年数据拖到 2026-07-04 才发），尚未见 2025 年数据；2024 年末的 55.83 万取自海南省统计局",
+      "key": "travel/beihai/identity",
+      "reason": "2025 年公报已于 2026-07-02 发布（比往年 3—4 月异常延后），但市政府统计栏目证书过期抓不到正文；issue #205 跟踪",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-07"
-    },
-    {
-      "key": "travel/wanning/howItWorks",
-      "reason": "同上",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-07"
-    },
-    {
-      "key": "travel/darkhan/howItWorks",
-      "reason": "蒙古国家统计局 1212.mn 证书错误无法直连（2026-09-08 仍如此），2022 年的 8.8 万是能核到的最新一期（只到 3 级：维基 infobox 转引 NSO）",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-03"
-    },
-    {
-      "key": "travel/kharkhorin/howItWorks",
-      "reason": "同上；哈拉和林是苏木中心，2017 年的 1.48 万是能核到的最新一期，基准年已九年",
-      "confirmedOn": "2026-09-08",
-      "recheckAfter": "2027-03"
     },
     {
       "key": "travel/dalanzadgad/howItWorks",
@@ -183,8 +39,74 @@
       "recheckAfter": "2027-03"
     },
     {
-      "key": "travel/khovd/identity",
-      "reason": "同上；2017 年的 2.98 万是能核到的最新一期，基准年已九年",
+      "key": "travel/daqing/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-08"
+    },
+    {
+      "key": "travel/daqing/identity",
+      "reason": "该市公报发布月份是次年 7 月，2025 年公报截至 2026-09-08 未见发布；2024 年末的 266.3 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-08"
+    },
+    {
+      "key": "travel/darkhan/howItWorks",
+      "reason": "蒙古国家统计局 1212.mn 证书错误无法直连（2026-09-08 仍如此），2022 年的 8.8 万是能核到的最新一期（只到 3 级：维基 infobox 转引 NSO）",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/fenghuang/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/fenghuang/identity",
+      "reason": "凤凰县历年公报列表最新仍是 2020—2022 年，湘西州与县政府网均未见 2025 年数据；issue #210 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/hanzhong/identity",
+      "reason": "2025 年公报已发布（2026-05-28）但官网正文是纯图片，取不到文字；issue #206 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/harnosand/identity",
+      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/hat-yai/howItWorks",
+      "reason": "合艾市自治市 191,696 人（2019）是能查到的最新一期；该来源的信息框把年份误标成 2024，脚注才是 2019。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/jiaozuo/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/jiaozuo/identity",
+      "reason": "2025 年公报截至 2026-09-08 未查到（该市常规 5 月发布）；2024 年末的 349.6 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/kalmar/identity",
+      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/kharkhorin/howItWorks",
+      "reason": "同上；哈拉和林是苏木中心，2017 年的 1.48 万是能核到的最新一期，基准年已九年",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
     },
@@ -195,13 +117,91 @@
       "recheckAfter": "2027-03"
     },
     {
-      "key": "travel/tsetserleg/identity",
-      "reason": "同上；2017 年的 2.16 万是能核到的最新一期，基准年已九年",
+      "key": "travel/khovd/identity",
+      "reason": "同上；2017 年的 2.98 万是能核到的最新一期，基准年已九年",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
     },
     {
-      "key": "travel/tsetserleg/howItWorks",
+      "key": "travel/kiruna/identity",
+      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/ko-lanta/howItWorks",
+      "reason": "兰达耶岛 10,830 人（2012）是能查到的唯一有来源的数；县级另有 30,500（2012）与 26,805（2010 普查），口径不同。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/koh-samui/howItWorks",
+      "reason": "同上，苏梅岛 70,059 人（2019）。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/koh-samui/identity",
+      "reason": "苏梅岛 70,059 人（2019）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/krabi/howItWorks",
+      "reason": "甲米镇 32,644 人（2020）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/lampang/howItWorks",
+      "reason": "同上，南邦市自治市（2017）。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/lampang/identity",
+      "reason": "南邦市自治市 53,614 人（2017）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/linyi/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/linyi/identity",
+      "reason": "2025 年公报整版没有人口章节（目录只有八章，逐段核对不含常住人口与城镇化率）；2024 年末的 1084.84 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/mianyang/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/mianyang/identity",
+      "reason": "该市公报发布月份是次年 6 月，2025 年公报是否已发布未能确认（只能确认标题存在、抓不到正文）；2024 年末的 492.20 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/nakhon-ratchasima/identity",
+      "reason": "呵叻市自治市 126,391 人（2019）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/nantong/identity",
+      "reason": "2025 年公报把整个「人口」章节删了（第十二章标题从「人口、人民生活和社会保障」改成「人民生活和社会保障」）；2024 年末的 775.0 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/olgii/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
@@ -213,10 +213,64 @@
       "recheckAfter": "2027-03"
     },
     {
-      "key": "travel/olgii/howItWorks",
+      "key": "travel/phuket/identity",
+      "reason": "普吉府 429,583 人（2024-12-31）是泰国国家统计局普吉府统计报告能取到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/qinhuangdao/howItWorks",
+      "reason": "2025 年度公报截至 2026-09-08 确未发布，已过该市常规的次年 5 月窗口；issue #203 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/qiqihar/identity",
+      "reason": "2025 年公报只公布户籍人口 493.6 万，没有常住人口一项；2024 年末的 373.3 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-06"
+    },
+    {
+      "key": "travel/qufu/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/qufu/identity",
+      "reason": "市政府官网「解读 2024 年公报」页被反爬拦截（503），四种访问方式都拿不到正文，无法确认是否含常住人口；issue #202 跟踪",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/sukhothai/howItWorks",
+      "reason": "同上，素可泰他尼（2023）。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/sukhothai/identity",
+      "reason": "素可泰他尼 15,000 余人（2023）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/tsetserleg/howItWorks",
       "reason": "同上",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/tsetserleg/identity",
+      "reason": "同上；2017 年的 2.16 万是能核到的最新一期，基准年已九年",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/udon-thani/identity",
+      "reason": "乌隆他尼市自治市 130,531 人（2019）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
     },
     {
       "key": "travel/visby/identity",
@@ -225,22 +279,46 @@
       "recheckAfter": "2026-12"
     },
     {
-      "key": "travel/kalmar/identity",
-      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "key": "travel/wanning/howItWorks",
+      "reason": "同上",
       "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
+      "recheckAfter": "2027-07"
     },
     {
-      "key": "travel/kiruna/identity",
-      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "key": "travel/wanning/identity",
+      "reason": "万宁本级公报发布严重滞后且不规律（2024 年数据拖到 2026-07-04 才发），尚未见 2025 年数据；2024 年末的 55.83 万取自海南省统计局",
       "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
+      "recheckAfter": "2027-07"
     },
     {
-      "key": "travel/harnosand/identity",
-      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "key": "travel/yibin/identity",
+      "reason": "2025 年公报起不再公布常住人口，只给户籍总人口 543.5 万；2024 年末的 461.1 万是最新可查数",
       "confirmedOn": "2026-09-08",
-      "recheckAfter": "2026-12"
+      "recheckAfter": "2027-04"
+    },
+    {
+      "key": "travel/zhenjiang/identity",
+      "reason": "统计局公报列表页只抓到 2017—2019 年旧条目（疑为分页/JS 加载），2025 年末数字未能定位，需人工翻页",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/zhoushan/identity",
+      "reason": "2025 年度公报截至 2026-09-08 未发现；2024 年末的 117.6 万是最新可查数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-04"
+    },
+    {
+      "key": "travel/zunyi/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
+    },
+    {
+      "key": "travel/zunyi/identity",
+      "reason": "2025 年公报已发布（2026-05-13）但整份是 24 张纯 JPG 扫描件，文字层提不出数字；2024 年末的 649.45 万是最新可核数",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-05"
     }
   ]
 }

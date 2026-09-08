@@ -4608,7 +4608,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   lille: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Métropole Européenne de Lille（95 个市镇）2023 = 1,195,234 —— **原文数字与口径都对**，只是把年份与口径写明确。
     identity:
@@ -4630,13 +4630,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   strasbourg: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Eurométropole de Strasbourg（33 个市镇）2023 = 522,596；unité urbaine = 494,536；aire d'attraction（268 个市镇）= 875,163。**原文的「约78万」三个口径都对不上。**
     identity:
       "Strasbourg is in north-eastern France on the Ill river, a tributary of the Rhine, right on the German border, with a Eurométropole of about 523,000 (2023 legal population, 33 communes), the centre of the Alsace region. Historically it changed hands between France and Germany several times, so its architecture, language (Alsatian, close to a German dialect) and food all show a clear Franco-German blend. It is one of the seats of the European Parliament and the headquarters of the Council of Europe.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   **这是典型的口径混用**：原文把「33 个市镇」（Eurométropole 的建制规模）和「87.5 万」（其实是 268 个市镇的吸引区人口）拼进了同一句话。
     howItWorks:
@@ -4666,7 +4666,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Lyon is in south-eastern France, where the Saône meets the Rhône, with an aire d'attraction of about 2.34 million (2023 legal population) — France's second-largest city by aire d'attraction and its third-largest by commune population, behind Marseille, an important city of Roman Gaul. It is widely regarded as the gastronomic capital of France, was a centre of the Renaissance silk trade, and its old town is a UNESCO World Heritage Site as a whole.",
     // howItWorks sources: Wikipedia (2026-09): Lyon (9 arrondissements; 47.9 km²; 2023 pop 519,127; Métropole de Lyon 58 communes ~1.4 million since 2015; Villeurbanne separate; UNESCO 1998); Communes of France
     howItWorks:
-      "Lyon has two administrative layers: the city, with nine arrondissements, each with a mayor and council, covering about 48 km² with about 519,000 people in 2023; and, since 2015, the Métropole de Lyon, which joins the city with 58 neighbouring communes into a local government unique in France — it replaces the department within its area, its council is directly elected, and it runs transport, waste, roads and social services for about 1.4 million people. Villeurbanne, pressed against Lyon with 150,000 people, is a separate city. Two rivers define the layout: the Presqu'île between the Saône and the Rhône is the old centre with Place Bellecour; Vieux Lyon and the Fourvière hill lie west of the Saône; the Croix-Rousse to the north is the old silk-weavers' quarter; and Part-Dieu east of the Rhône is the business district and high-speed rail station — the whole inscribed as World Heritage in 1998. Addresses give street, number and postcode, and the last digit after 6900 is the arrondissement. Newcomers most often go wrong by taking the city of Lyon for the whole, when it is the core of a metropolis of 1.4 million.",
+      "Lyon has two administrative layers: the city, with nine arrondissements, each with a mayor and council, covering about 48 km² with about 519,000 people in 2023; and, since 2015, the Métropole de Lyon, which joins the city with its neighbouring communes — 58 in total including Lyon, after two of them merged in 2024 — into a local government unique in France — it replaces the department within its area, its council is directly elected, and it runs transport, waste, roads and social services for about 1.4 million people. Villeurbanne, pressed against Lyon with 150,000 people, is a separate city. Two rivers define the layout: the Presqu'île between the Saône and the Rhône is the old centre with Place Bellecour; Vieux Lyon and the Fourvière hill lie west of the Saône; the Croix-Rousse to the north is the old silk-weavers' quarter; and Part-Dieu east of the Rhône is the business district and high-speed rail station — the whole inscribed as World Heritage in 1998. Addresses give street, number and postcode, and the last digit after 6900 is the arrondissement. Newcomers most often go wrong by taking the city of Lyon for the whole, when it is the core of a metropolis of 1.4 million.",
     layout:
       "Lyon sits between two rivers (the Saône and the Rhône) and the surrounding hills. The old town (Vieux Lyon) is on the west bank of the Saône at the foot of Fourvière hill, a Renaissance ensemble; the Basilica of Notre-Dame de Fourvière is on the hilltop, overlooking the whole city. Between the two rivers is the 'Presqu'île' (peninsula), the main commercial district. The old town has unique 'traboules' — hidden passages linking building courtyards, historically used to carry silk.",
     gettingAround:
@@ -4683,7 +4683,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Grenoble is in south-eastern France in the Isère valley, ringed by three mountain ranges (the Vercors, the Chartreuse and the Belledonne), with a metro area of about 450,000 — the research and high-tech centre of the French Alps (sometimes called 'France's Silicon Valley') and host of the 1968 Winter Olympics. The city itself is flat, and looking up to see snow mountains all around is its most distinctive impression.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   同样的口径混用：Grenoble-Alpes Métropole（49 个市镇）2023 = 450,608，而 72.7 万是 **204 个市镇**的吸引区人口（727,380）。identity 段的「约45万」本身是对的。
     howItWorks:
@@ -4702,13 +4702,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   marseille: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Aix-Marseille-Provence（92 个市镇）2023 = 1,939,077。原文的 190 万在「约」的容差内，顺手改精确。
     identity:
       "Marseille is on the Mediterranean coast of south-eastern France, with a metro area of about 1.94 million (2023 legal population, 92 communes) — France's oldest city (founded by Greeks around 600 BC) and its largest commercial port. The city is known for the Old Port, Mediterranean food (bouillabaisse fish soup) and a limestone fjord-like coastline called the Calanques, and is an important gateway to Corsica and North Africa.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   同上。
     howItWorks:
@@ -4727,13 +4727,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   nice: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   **原文的「约100万」对不上任何现行口径**：Métropole Nice Côte d'Azur（约 49 个市镇）2023 = 574,287；aire d'attraction des villes（100 个市镇）= 641,721。100 万很可能引的是 **2020 年已被取代的旧口径 aire urbaine**，那套划法覆盖范围大得多，现已废弃。
     identity:
       "Nice is on the Mediterranean coast of south-eastern France, close to the Italian border, with a metro area of about 574,000 (2023 legal population, Métropole Nice Côte d'Azur) — the centre of the Côte d'Azur. Since the 19th century it has been a winter resort for European high society, and the seafront 'Promenade des Anglais', built by the English, is still the city's emblem.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   同上。
     howItWorks:
@@ -4752,13 +4752,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   toulouse: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Toulouse unité urbaine 2023 = 1,093,783；aire d'attraction = 1,529,112；Toulouse Métropole（37 个市镇）= 841,524。原文没说是哪个口径，按数值最接近的建成区标明。
     identity:
       "Toulouse is in south-western France on the Garonne, with a built-up area of about 1.09 million (2023 legal population) — the centre of France's aerospace industry (Airbus's headquarters is here) and an important European Space Agency base. Because of the widespread use of locally fired pink brick and tile, it is called 'la Ville Rose' (the Pink City).",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Toulouse Métropole（37 个市镇）2023 = 841,524。
     howItWorks:
@@ -4777,7 +4777,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   bordeaux: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Bordeaux unité urbaine（73 个市镇）2023 = 1,034,027；Bordeaux Métropole（28 个市镇）= 854,334（howItWorks 段用的是这个，对）；aire d'attraction（275 个市镇）= 1,426,278。**两段中文都叫「都会区」却指两个不同东西**，已各自标明口径。
     identity:
@@ -4799,7 +4799,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   nantes: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Nantes Métropole 2023 = 689,456；unité urbaine = 689,036；aire d'attraction（116 个市镇）= 1,050,815。**原文的「约96万」三个口径都对不上**，是个无来源的旧数。已与同条目 howItWorks 的 68 万统一。
     identity:
@@ -4848,12 +4848,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     // identity sources: 安纳西市镇法定人口 132,117（2023 年参照人口，2026-01-01 生效版）——
     //   INSEE https://www.insee.fr/fr/statistiques/2011101?geo=COM-74010（1 级，2026-09-08 核）。
     //   **这个三年滞后是法律定义，不是数据过期**：populations de référence 每年 12 月下旬由法令签署、
-    //   次年 1 月 1 日生效，参照年份固定是生效年的前三年。下一版（参照 2024 年）预计 2026-12 公布。
+    //   次年 1 月 1 日生效；参照年份原为生效年的前三年，2026 年底那一版起压到前两年，**下一版参照 2025 年**（2024 是「空档年」），预计 2026-12 公布。
     //   安纳西是 2017 年由 6 个市镇合并成的新市镇，合并前后的人口数不可比。
     identity:
       "Annecy lies at the northern tip of Lake Annecy at the foot of the French Alps, the capital of Haute-Savoie, with about 132,000 people (2023 commune legal population, after a 2017 merger of six communes), only 45 km from Geneva. The Thiou river and several canals run through the old town, and the twelfth-century Palais de l'Isle in the middle of the river — once a prison and courthouse — is the town's emblem, with the château on the slope above, hence the name 'Venice of the Alps'. Lake Annecy is known for its clear water and ringed by a cycle path; the Semnoz and the Tournette nearby are hiking and paragliding country, and the Annecy International Animation Film Festival each June is the world animation industry's annual gathering.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Grand Annecy 2023 = 213,415。原文「约30万」高估约 41%。
     howItWorks:
@@ -4872,9 +4872,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   avignon: {
     // identity sources: 阿维尼翁市镇法定人口 92,188（2023 年参照人口，2026-01-01 生效版）——
     //   INSEE https://www.insee.fr/fr/statistiques/2011101?geo=COM-84007（1 级，2026-09-08 核）。
-    //   **未核到的一处**：howItWorks 里「大阿维尼翁聚合区 16 个市镇、约 20 万人」只查到 2022 年的
-    //   197,102，没拿到 2023 年的一手精确值。量级站得住，暂不动；下轮直接拉 EPCI-248400251 的
-    //   dossier complet 核到个位数。
+    //   **上一轮欠的那个数已补上（2026-09-08）**：大阿维尼翁聚合区 2023 年参照人口 199,932，
+    //   16 个市镇（含阿维尼翁，跨沃克吕兹与加尔两省）—— INSEE EPCI-248400251
+    //   https://www.insee.fr/fr/statistiques/2011101?geo=EPCI-248400251（1 级）。正文的「约 20 万」本来就对。
     identity:
       "Avignon lies on the left bank of the Rhône in Provence, with about 92,000 people (2023 commune legal population). From 1309 to 1377 seven popes resided here, and the fourteenth-century Palais des Papes is one of the largest Gothic palaces in Europe; the 'Pont d'Avignon' of the song (the Pont Saint-Bénézet, built 1171–1185) now has only four piers reaching into the river; and the 4.3 km medieval wall still fully encloses the old town. The palace, the episcopal ensemble and the bridge were inscribed as a World Heritage site in 1995. The Avignon Festival, founded in 1947, turns the whole city into a stage every July.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Avignon (commune 64.8 km²; 92,188 2023; Grand Avignon 16 communes ~200,000, straddling Vaucluse and Gard; prefecture of Vaucluse; 4,330 m of ramparts; Palais des Papes, popes 1309–1377, papal territory until 1791; Pont Saint-Bénézet; UNESCO 1995; festival July ~100,000; TGV station 3 km, ~2 h 40 Paris; mistral 120–160 days)
@@ -4900,7 +4900,7 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     identity:
       "Montpellier lies about 10 km inland from the Mediterranean in southern France, the capital of the Occitanie region, with about 310,000 people (2023 commune legal population) — the seventh-largest French city by commune population and one of its fastest-growing, with about 70,000 students making up a quarter of the population. The university was founded around 1160, and its medical faculty (1220) is the oldest medical school still in operation in the world; the old town, the Écusson, keeps medieval lanes and seventeenth- and eighteenth-century mansions, the Place de la Comédie with the 1888 opera house is the city's living room, and Antigone is a neoclassical quarter designed by Ricardo Bofill in the 1980s. The city enjoys about 2,700 sunshine hours a year.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Montpellier Méditerranée Métropole 2023 = 522,542。
     howItWorks:
@@ -4957,13 +4957,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
   rouen: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Métropole Rouen Normandie（71 个市镇）2023 ≈ 50 万；aire d'attraction（316 个市镇）= 715,234。原文「都会区约71万」数字凑巧接近吸引区、但标成了都会区，有歧义。
     identity:
       "Rouen lies on the lower Seine in Normandy, the capital of the Normandy region, with about 118,000 people in the city (2023 legal population) and about 715,000 in the wider aire d'attraction of 316 communes. It was one of the largest and richest cities of medieval Europe; the Gothic façade of Rouen Cathedral (painted more than thirty times by Monet) and its 151 m cast-iron spire are the city's emblem, the centre holds more than a thousand half-timbered houses and the fourteenth-century Gros-Horloge clock, and on 30 May 1431 Joan of Arc was burned at the stake in the Place du Vieux-Marché. Flaubert was born here, and the Seine port is one of France's major river ports.",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   第三处口径混用：「71 个市镇」是都会区建制规模，「71.5 万」却是 316 个市镇的吸引区人口。
     howItWorks:
@@ -8939,11 +8939,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is the most pleasant and the peak tourist period; March–May is hot, June–October is the rainy season, and the rainy season timing differs slightly between the peninsula's east and west coasts — worth checking the specific coast's seasonal pattern before travelling.",
   },
   bangkok: {
+    // identity sources: 泰国的人口登记由**内政部地方行政厅（DOPA / กรมการปกครอง）**发布，基准日每年 12 月 31 日，
+    //   次年 1—2 月公布上一年度数据（一手站点 stat.bora.dopa.go.th，2026-09-08 本轮多次直连失败，
+    //   只能经泰媒与维基转引，来源级别 2—3 级）。
+    //   曼谷 DOPA 登记人口 **5,422,568 人（2025-12-31）**；曼谷都会区（曼谷 + 暖武里/巴吞他尼/北榄/
+    //   龙仔厝/北柳）DOPA 登记合计约 **1,087 万（2022-12）**。
+    //   **原 identity 的「1050 万」与「都会区 1700 万」两个数都查无来源** —— 英文维基信息框的
+    //   17,400,000 未标年份与出处，疑为建成区推算。
+    //   **泰国有两套并行口径**：DOPA 登记（户籍）与 NSO 普查（实际居住）。NSO 2025 年初步普查的
+    //   六省规划区数为 1,522 万 —— 与登记数不可混用。本项目统一优先用 DOPA 登记口径并写明。
     identity:
-      "Bangkok is Thailand's capital and largest city, with a population of about 10.5 million (over 17 million across the metropolitan area), built on the Chao Phraya Delta and the country's centre of politics, economy, and culture.",
+      "Bangkok is Thailand's capital and largest city, with a registered population of about 5.42 million in December 2025 and more than 10 million across the Bangkok Metropolitan Region of Bangkok plus its neighbouring provinces, built on the Chao Phraya Delta and the country's centre of politics, economy, and culture.",
     // howItWorks sources: Wikipedia (2026-09): Bangkok (special administrative area; elected governor; 50 khet with appointed directors, 180 khwaeng; 1,569 km²; registered ~5.4 million; BMR with 5 provinces); Local government in Thailand
     howItWorks:
-      "Bangkok is Thailand's only 'special administrative area', ranking with the provinces and governed by the Bangkok Metropolitan Administration, whose governor is directly elected — the only elected provincial-level executive in the country, the governors of every other province being appointed by the Ministry of Interior — with a council elected from the districts. The city is divided into 50 districts (khet), whose directors are appointed by the governor, and 180 subdistricts (khwaeng). It covers about 1,569 km² with a registered population of about 5.4 million, while the Bangkok Metropolitan Region, with Nonthaburi, Samut Prakan, Pathum Thani and other neighbouring provinces, exceeds 10 million, each of those provinces under a government of its own. The Chao Phraya divides the city: Rattanakosin on the east bank is the old city of the Grand Palace, Sukhumvit, Silom and Sathon are the business districts, and Thonburi on the west bank joined Bangkok only in 1972. Addresses give number, soi (lane), road and district, and locals place things by soi number. BTS, MRT and the airport link form a network, congestion remains daily life, and canal boats are the old city's other passage. Newcomers most often go wrong by taking Bangkok for one city, when its metropolitan region straddles several provinces.",
+      "Bangkok is Thailand's only 'special administrative area', ranking with the provinces and governed by the Bangkok Metropolitan Administration, whose governor is directly elected — the only elected provincial-level executive in the country, the governors of every other province being appointed by the Ministry of Interior — with a council elected from the districts. The city is divided into 50 districts (khet), whose directors are appointed by the governor, and 180 subdistricts (khwaeng). It covers about 1,569 km² with a registered population of about 5.42 million in December 2025, while the Bangkok Metropolitan Region — Bangkok with Nonthaburi, Samut Prakan, Pathum Thani and other neighbouring provinces — has more than 10 million registered, each of those provinces under a government of its own. The Chao Phraya divides the city: Rattanakosin on the east bank is the old city of the Grand Palace, Sukhumvit, Silom and Sathon are the business districts, and Thonburi on the west bank joined Bangkok only in 1972. Addresses give number, soi (lane), road and district, and locals place things by soi number. BTS, MRT and the airport link form a network, congestion remains daily life, and canal boats are the old city's other passage. Newcomers most often go wrong by taking Bangkok for one city, when its metropolitan region straddles several provinces.",
     layout:
       "The city is organised along the Chao Phraya River, with the old town (home to the Grand Palace and Wat Phra Kaew) on the east bank, modern commercial districts such as Siam and Silom in the city centre and east, and a canal network still serving as an important mode of transport in some areas.",
     gettingAround:
@@ -8956,6 +8965,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is best for travel; dress modestly when visiting temples (no bare shoulders or knees), and some attractions close on Mondays.",
   },
   "chiang-mai": {
+    // identity sources: 清迈市自治市（เทศบาลนครเชียงใหม่）DOPA 登记 **127,240 人（2019）**，与正文的「约 13 万」吻合；
+    //   建成区 2022 年估算约 **120 万**，比正文的「约 100 万」略高 —— 可更新但不算错，本轮不改。
+    //   3 级（转引 DOPA），2026-09-08 核。
     identity:
       "Chiang Mai is the largest city in northern Thailand, with a population of about 130,000 (roughly 1 million across the metropolitan area), set in the Ping River valley; once the ancient capital of the Lanna kingdom, it is northern Thailand's cultural and craft centre.",
     // howItWorks sources: Wikipedia (2026-09): Chiang Mai (thesaban nakhon 40.2 km², ~127,000; urban area ~1 million+; Lanna capital 1296; northern rail terminus; smoke season Feb–Apr); Local government in Thailand (appointed provincial governors)
@@ -8973,8 +8985,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant; in some years, February–April sees reduced air quality from surrounding agricultural burning, so check the air quality index before travelling.",
   },
   phuket: {
+    // identity sources: 普吉府（即全岛）DOPA 登记人口 **429,583 人（2024-12-31）** ——
+    //   泰国国家统计局普吉府统计报告
+    //   https://phuket.nso.go.th/images/documents/Phuket%20Provincial%20Statistical%20Report/2568/1.demography68.pdf
+    //   （1 级，2026-09-08 核）。原 identity 写 42 万，与本条目 howItWorks 的 43 万对不上。
     identity:
-      "Phuket is Thailand's largest island, with a population of about 420,000, in the Andaman Sea, and the country's most famous island resort destination.",
+      "Phuket is Thailand's largest island, with a registered population of about 430,000 in 2024, in the Andaman Sea, and the country's most famous island resort destination.",
     // howItWorks sources: Wikipedia (2026-09): Phuket (city) (thesaban nakhon ~12 km², 71,284 2024; provincial capital; Old Town Sino-Portuguese; airport 36 km; Patong in Kathu district); Local government in Thailand
     howItWorks:
       "Phuket is a province of Thailand whose governor is appointed by the Ministry of Interior, with three districts on the island; Phuket Town is the provincial seat and itself a 'city municipality' with an elected mayor and council, covering only about 12 km² with about 71,000 people, while the island's registered population is about 430,000 and its real population far larger. Most of what people picture as 'Phuket' lies outside the town: the beach resorts of Patong, Karon and Kata are in Kathu district on the west coast, each under a local body of its own, the airport lies 36 km north in Thalang district, and the Sarasin Bridge ties the island to the mainland. The town is the Chinese trading settlement of the tin-mining era, and its Sino-Portuguese shophouses and Peranakan food and festivals are its identity, recognised in 2015 as a UNESCO Creative City of Gastronomy. Songthaews are the local public transport, and there is no railway. Addresses give number, soi, road and subdistrict. Newcomers most often go wrong by taking Phuket Town for a resort, when it is the provincial seat where islanders live and do business, with the beaches in other districts.",
@@ -8990,10 +9006,8 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to April is the dry season and the best time to visit; from May to October the south-west monsoon brings rougher seas on the Andaman side, and some beach activities are suspended.",
   },
   krabi: {
-    // identity sources: 甲米府（จังหวัดกระบี่）人口约 47 万（泰国内政部地方行政厅登记口径，2019 年 473,738，
-    //   https://citypopulation.de/en/thailand/southern/81__krabi/，3 级，2026-09-08 核）；
-    //   甲米镇（เทศบาลเมืองกระบี่，「镇级自治市」）约 3.2—3.3 万（DOPA，2018/2020 年）。
-    //   **identity 讲的是府、howItWorks 讲的是镇，两处都已写明是哪一档** —— 差 14 倍，别当成矛盾去「修」。
+    // identity sources: 甲米府 DOPA 登记 473,738 人（2019）、甲米镇 32,644 人（2020）——3 级，2026-09-08 复核。
+    //   条目原有注释已写明「府」与「镇」是两级、数字不矛盾，本轮确认无需改动。
     identity:
       "Krabi is a province on Thailand's southern Andaman coast, with a population of about 470,000, known for its steep limestone karst coastline and the rock-climbing destination of Railay Peninsula.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Krabi (thesaban mueang ~19 km², 32,644 2020; capital of Krabi province, appointed governor; Krabi River/Phang Nga Bay; Ao Nang ~20 km separate subdistrict; Railay boat only; Ko Phi Phi/Ko Lanta in province; airport 12 km)
@@ -9013,7 +9027,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   pattaya: {
     identity:
       "Pattaya is a seaside resort city on Thailand's eastern gulf coast, with a population of about 120,000 (higher during peak tourist season), about 150 km from Bangkok and a traditional weekend getaway for Bangkok residents.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pattaya (special local administrative area since 1978 with elected mayor, in Chonburi province; 53.4 km²; registered ~116,000–120,000, Greater Pattaya ~351,000; Naklua/Pattaya Beach/Jomtien; Ko Larn; U-Tapao 45 km; Bangkok 150 km; EEC)
+    // howItWorks sources: 芭提雅特别地方行政区 DOPA 登记 **116,417 人（2025-01）**；大芭堤雅（Greater Pattaya）
+    //   **351,391 人（2021）**——3 级，2026-09-08 核。
+    //   「实际居住者几倍于此」是定性表述，有依据：官方从未公布含流动人口的可靠总数，普遍估计在 50 万量级。
+    //   **泰国这类度假城市的登记人口与实际居住人口差别极大**，正文必须写明是登记口径。
     howItWorks:
       "Pattaya is Thailand's only 'special local administrative area' besides Bangkok, with an elected mayor and council since 1978, yet it lies within Chonburi province, whose governor is appointed by the Ministry of Interior, and police and schools belong to the state. The city covers about 53 km² with a registered population of about 120,000, several times that in residents, and Greater Pattaya about 351,000. The city runs along the coast in three parts — Naklua to the north, Pattaya Beach and Walking Street in the middle, Jomtien to the south — each with a character of its own, Ko Larn offshore, U-Tapao airport 45 km south, Bangkok 150 km away and the high-speed line of the Eastern Economic Corridor under construction. Newcomers most often go wrong by taking Pattaya for an independent city, when it is a special area within Chonburi province, whose government sits 30 km away in Chonburi.",
     layout:
@@ -9030,7 +9047,10 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   "chiang-rai": {
     identity:
       "Chiang Rai is the capital of Thailand's northernmost province, with a population of about 70,000, near the \"Golden Triangle\" area bordering Myanmar and Laos, known for contemporary religious-art buildings such as the White Temple and Blue Temple.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chiang Rai (thesaban nakhon ~70,000; capital of Chiang Rai province, appointed governor; founded 1262 by Mangrai, first Lanna capital; Kok River; White Temple 13 km; Golden Triangle ~55 km; Mae Sai border; airport; no rail; UNESCO Design City)
+    // howItWorks sources: 清莱府 DOPA 登记 **1,297,657 人（2024）**，与正文「约 130 万」精确吻合。
+    //   清莱市自治市最近可查为 **69,888 人（2012）**，与「约 7 万」大致吻合 —— **年份很旧**，
+    //   本轮未找到更新数据（DOPA 一手站点 stat.bora.dopa.go.th 直连失败）。3 级，2026-09-08 核。
+    //   下一轮换网络环境直连 DOPA 复核市一级的数。
     howItWorks:
       "Chiang Rai is the seat of Chiang Rai province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 70,000 people, while the province holds about 1.3 million. The town lies on the Kok River, where King Mangrai founded the first capital of the Lanna kingdom in 1262, the clock tower and the night bazaar are the reference points of the centre, the airport lies north of town and there is no railway; the White Temple lies 13 km south, the Blue Temple north of town, the Black House outside it, the Golden Triangle about 55 km north-east at Chiang Saen, the Myanmar border at Mae Sai about 60 km and Doi Tung to the north-west. Newcomers most often go wrong by expecting the White Temple and the Golden Triangle in Chiang Rai city, when each lies tens of kilometres away and the town itself is a quiet provincial seat.",
     layout:
@@ -9045,8 +9065,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant, with cooler mornings in the hills; the Golden Triangle viewpoint sits at the meeting point of Thailand, Myanmar, and Laos, so stay within official border-crossing areas and follow local border regulations.",
   },
   "koh-samui": {
+    // identity sources: 苏梅岛 DOPA 登记人口 **70,059 人（2019）**；面积约 229 km²，按面积计是泰国第二大岛
+    //   （普吉约 514 km² > 苏梅 229 km² > 象岛 217 km²）—— 3 级，2026-09-08 核。
+    //   **原写「泰国湾第二大岛」的限定语站不住脚**：拿来比的普吉岛在**安达曼海、不在泰国湾**；
+    //   若严格在泰国湾内比，苏梅反而是最大的。限定语用错了范围，比不写限定语更糟 ——
+    //   它读起来像是已经交代了口径。
+    //   identity 原写的 6.4 万查无来源，与本条目 howItWorks 的「约 7 万」也对不上，已一并对齐。
     identity:
-      "Koh Samui is the second-largest island in the Gulf of Thailand, with a population of about 64,000, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
+      "Koh Samui is Thailand's second-largest island by area, after Phuket, with a registered population of about 70,000 in 2019, known for the Chaweng and Lamai beach resort areas and its traditional coconut-growing heritage.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Samui (228.7 km²; ~70,000 registered, 200,000+ with migrants/tourists; district of Surat Thani province; Ko Samui City Municipality since 2012 with elected mayor; Nathon port/district office west vs Chaweng/Lamai east; ring road 51 km; Bangkok Airways-owned airport 1989; ferries from Don Sak)
     howItWorks:
       "Ko Samui is Thailand's second-largest island, about 229 km² with about 70,000 registered residents and more than 200,000 living there with migrant workers and tourists; it is a district of Surat Thani province and since 2012 the whole island has been one 'city municipality' with an elected mayor, while the provincial governor is appointed by the Ministry of Interior. Nathon on the west coast holds the port, the district office and the locals' market; Chaweng and Lamai on the east coast are the tourists' beaches, the airport at the north-east corner is privately owned by Bangkok Airways and opened in 1989, the 51 km ring road joins them, ferries come from Don Sak on the mainland, and Ko Pha Ngan and Ko Tao lie to the north. Newcomers most often go wrong by taking Chaweng for the island's centre, when the administrative centre and local life are at Nathon on the west coast.",
@@ -9068,7 +9094,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   所以只统一口径措辞、不编年份。下一轮要去 stat.bora.dopa.go.th 取带年份的数。
     identity:
       "Ayutthaya's site was a deliberate piece of geographic calculation — in 1350, King Ramathibodi I set his new capital on a natural island ringed by the confluence of the Chao Phraya, Lop Buri and Pa Sak rivers, letting the rivers themselves serve as a moat while keeping the city well connected downstream for international trade; over the next 417 years (1350–1767) it grew into one of Southeast Asia's largest and most cosmopolitan cities, until Burmese forces sacked and burned it in 1767. Ayutthaya is a historic former capital in central Thailand, with about 50,000 people in the city municipality, and Ayutthaya Historical Park was inscribed on the UNESCO World Heritage List in 1991.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ayutthaya (Phra Nakhon Si Ayutthaya city municipality ~50,800; capital of Ayutthaya province; island between Chao Phraya, Pa Sak and Lopburi rivers; Historical Park UNESCO 1991; capital of Siam 1351–1767; train ~1.5 h from Bangkok, ~80 km)
+    // howItWorks sources: 2026-09-08 复核：大城市自治市仍未能取得带年份的一手数字（DOPA 站点直连失败），
+    //   正文停在「约 5 万」并如实不写年份 —— 这是正确处理，不要为了让 C6 计数下降而硬填一个年份。
+    //   下一轮换网络环境直连 DOPA。
     howItWorks:
       "Ayutthaya is the seat of Ayutthaya province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor and about 50,000 people. The city lies on an island ringed by the Chao Phraya, Pa Sak and Lopburi rivers, the capital of Siam from 1351 to 1767, the western half of the island the historical park with the towers of Wat Mahathat and Wat Phra Si Sanphet, World Heritage since 1991, and Wat Chaiwatthanaram across the river; the eastern half is today's town, the railway station lies off the island on the east bank about an hour and a half from Bangkok, bicycles and tuk-tuks move around the island and the industrial estates lie outside. Newcomers most often go wrong by taking Ayutthaya for a field of ruins, when ruins and town share one island and residents live among the old towers.",
     layout:
@@ -9107,11 +9135,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant, with a light-and-sound show held in the historical park during the Loy Krathong festival in November; visit early morning or evening to avoid the midday heat.",
   },
   "hua-hin": {
+    // identity sources: 华欣县 DOPA 登记 **126,355 人（2025-01）**；华欣市自治市 DOPA 登记 **62,111 人（2023 财年）**
+    //   —— 3 级（转引 DOPA），2026-09-08 核。**原 identity 的「约 1.9 万」两层都对不上，差三倍以上，查无来源。**
+    //   **行政层级也已过期**：华欣自治市于 **2024-09-27 由镇级（เทศบาลเมือง）升格为市级（เทศบาลนคร）**，
+    //   原文写「镇级自治市」已不准确，同批一并改。
     identity:
-      "Hua Hin is a seaside town on the Gulf of Thailand coast, with a population of about 19,000; it has been a traditional royal seaside retreat since the Thai royal family built a residence here in the early 20th century.",
+      "Hua Hin is a seaside town on the Gulf of Thailand coast, with about 62,000 registered residents in the municipality in 2023 and about 126,000 across the wider district in 2025; it has been a traditional royal seaside retreat since the Thai royal family built a residence here in the early 20th century.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hua Hin (town municipality; district 838.9 km², ~126,000 2025; Prachuap Khiri Khan province; royal resort since 1920s, Klai Kangwon Palace; railway station 1911; Khao Takiab; Cha-am in Phetchaburi 25 km; Bangkok ~200 km; airport limited)
     howItWorks:
-      "Hua Hin is a district and 'town municipality' of Prachuap Khiri Khan province, the district about 840 km² with about 126,000 people in 2025, the provincial governor appointed by the Ministry of Interior and the mayor elected by residents. In the 1920s the royal family built the Railway Hotel and the Klai Kangwon palace here, and Hua Hin has since been Thailand's oldest and most respectable seaside resort, the palace still standing on the shore north of town; the centre lies around the railway station of 1911 and the night market, the beach runs along the town's east side, Khao Takiab lies 7 km south, Cha-am 25 km north belongs to Phetchaburi province as another resort town, Bangkok lies about 200 km north, the airport has only sporadic flights, and retired foreigners and golf courses are daily life. Newcomers most often go wrong by taking Hua Hin for a beach, when it is a town with a palace, a market and tens of thousands of locals, and the beach is only its eastern edge.",
+      "Hua Hin is a district and municipality of Prachuap Khiri Khan province, upgraded from town to city status in 2024, the district about 840 km² with about 126,000 people in 2025, the provincial governor appointed by the Ministry of Interior and the mayor elected by residents. In the 1920s the royal family built the Railway Hotel and the Klai Kangwon palace here, and Hua Hin has since been Thailand's oldest and most respectable seaside resort, the palace still standing on the shore north of town; the centre lies around the railway station of 1911 and the night market, the beach runs along the town's east side, Khao Takiab lies 7 km south, Cha-am 25 km north belongs to Phetchaburi province as another resort town, Bangkok lies about 200 km north, the airport has only sporadic flights, and retired foreigners and golf courses are daily life. Newcomers most often go wrong by taking Hua Hin for a beach, when it is a town with a palace, a market and tens of thousands of locals, and the beach is only its eastern edge.",
     layout:
       "The town runs along Hua Hin Beach, with the town centre preserving colonial-era buildings such as Hua Hin Railway Station, and resort hotels and golf courses spread along the beach's northern and southern ends.",
     gettingAround:
@@ -9124,8 +9156,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant; Hua Hin Railway Station is not just a transport hub but also a popular photo spot in its own right.",
   },
   "udon-thani": {
+    // identity sources: 乌隆他尼市自治市 DOPA 登记 **130,531 人（2019）**、城区约 40 万（2019）——3 级（转引 DOPA），2026-09-08 核。
+    //   「伊桑四大城市之一」（与呵叻、坤敬、乌汶叻差他尼并称）多来源一致，成立。
+    //   原 identity 写 14 万，与本条目 howItWorks 的 13 万对不上。
     identity:
-      "Udon Thani is an important city in Thailand's north-eastern Isan region, with a population of about 140,000, and the gateway city for exploring the Ban Chiang prehistoric site.",
+      "Udon Thani is an important city in Thailand's north-eastern Isan region, with a registered population of about 130,000 in 2019, and the gateway city for exploring the Ban Chiang prehistoric site.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Udon Thani (thesaban nakhon 130,531 2019; urban ~400,000; capital of Udon Thani province; Isan; US air base 1960s–70s; Ban Chiang UNESCO 1992 ~55 km; Red Lotus Sea ~40 km; Nong Khai/Vientiane ~80 km; airport; rail)
     howItWorks:
       "Udon Thani is the seat of Udon Thani province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor, about 130,000 registered residents and about 400,000 in the urban area, one of the 'big four' cities of Isan. The town lies on a grid either side of the railway, Nong Prajak park is the lake at its centre, the American air base of the 1960s and 70s left western-style blocks and bars, the airport lies south of town, and rail and road run 80 km north to Nong Khai and Vientiane in Laos; the Ban Chiang site lies about 55 km east, World Heritage since 1992, and the Red Lotus Sea about 40 km south. Isan is the local language. Newcomers most often go wrong by taking Udon for a stop on the way to Laos, when it is the commercial and medical centre of northern Isan.",
@@ -9141,11 +9176,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to February, the cool season, is most pleasant; Udon Thani is also a common overland gateway to Vientiane, Laos via the Friendship Bridge.",
   },
   "nakhon-ratchasima": {
+    // identity sources: 呵叻市自治市 DOPA 登记 **126,391 人（2019）**、城区 466,098（2021）——3 级（转引 DOPA），2026-09-08 核。
+    //   **「泰国面积最大的府」是错的**：那空叻差是玛府 20,736 km²，**第二大**；最大是清迈府 22,311 km²，
+    //   第三是北碧府 19,482 km²（北碧条目里「泰国第三大府」的写法反过来印证了这个排序）。已改。
     identity:
-      "Nakhon Ratchasima (Khorat) is the gateway city to Thailand's north-eastern Isan region, with a population of about 140,000, and an important base for exploring Khao Yai National Park and the Khorat Plateau.",
+      "Nakhon Ratchasima (Khorat) is the gateway city to Thailand's north-eastern Isan region, with a registered population of about 130,000 in 2019, and an important base for exploring Khao Yai National Park and the Khorat Plateau.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nakhon Ratchasima/Korat (thesaban nakhon ~126,000 registered 2019; urban ~466,000 2021; capital of the largest province ~2.6 million, ~20,000 km²; Thao Suranari monument; Terminal 21; Khao Yai ~100 km at Pak Chong; Phimai ~60 km; Bangkok 250 km; high-speed rail planned 2027)
     howItWorks:
-      "Korat is the seat of Nakhon Ratchasima, Thailand's largest province by area, whose governor is appointed by the Ministry of Interior and which holds about 2.6 million people; the city is a 'city municipality' with an elected mayor, about 126,000 registered residents and about 466,000 in the urban area. The town lies on the western edge of the Khorat plateau as Bangkok's gateway into Isan, the Thao Suranari monument and the old town's moat are the reference points of the centre, Terminal 21 the new commercial centre, rail and road fan out from here across Isan and a high-speed line is under construction; Khao Yai National Park lies about 100 km west at Pak Chong and the Khmer temple of Phimai 60 km north-east. Locals say 'Korat', never the full name. Newcomers most often go wrong by expecting Khao Yai at the edge of town, when it lies a hundred kilometres away in the hills.",
+      "Korat is the seat of Nakhon Ratchasima, Thailand's second-largest province by area after Chiang Mai, whose governor is appointed by the Ministry of Interior and which holds about 2.6 million people; the city is a 'city municipality' with an elected mayor, about 126,000 registered residents and about 466,000 in the urban area. The town lies on the western edge of the Khorat plateau as Bangkok's gateway into Isan, the Thao Suranari monument and the old town's moat are the reference points of the centre, Terminal 21 the new commercial centre, rail and road fan out from here across Isan and a high-speed line is under construction; Khao Yai National Park lies about 100 km west at Pak Chong and the Khmer temple of Phimai 60 km north-east. Locals say 'Korat', never the full name. Newcomers most often go wrong by expecting Khao Yai at the edge of town, when it lies a hundred kilometres away in the hills.",
     layout:
       "The city preserves remnants of the old Thamalak city wall and moat, and has long served as the traditional transport hub linking Bangkok with the Isan region.",
     gettingAround:
@@ -9162,7 +9200,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   kanchanaburi: {
     identity:
       "Kanchanaburi lies about 120 km west of Bangkok where the Khwae Noi and Khwae Yai rivers meet to form the Mae Klong, with a town population of about 26,000. In the Second World War the Japanese army built the Thailand–Burma 'Death Railway' with Allied prisoners of war and Asian labourers, about half of whom died of disease, maltreatment and accidents; the Bridge over the River Kwai, the Kanchanaburi War Cemetery, the Thailand–Burma Railway Centre and Hellfire Pass commemorate that history. The province also holds the seven-tiered Erawan Falls, Sai Yok and the Mon wooden bridge at Sangkhlaburi near the Myanmar border, making it one of the most popular day and overnight trips from Bangkok.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kanchanaburi (town municipality ~25,700 2017; capital of Kanchanaburi province ~19,000 km², Myanmar border; Kwai Yai/Kwai Noi confluence; Bridge on the River Kwai 1942–43; war cemeteries; Hellfire Pass ~80 km; Erawan NP ~65 km; Bangkok ~120 km; train)
+    // howItWorks sources: 北碧镇 DOPA 登记 **25,651 人（2017，年份偏旧，本轮未找到更新数）**；
+    //   北碧府 **19,482 km²，泰国面积第三大府**（清迈 22,311 > 那空叻差是玛 20,736 > 北碧 19,482）
+    //   ——3 级，2026-09-08 核。
+    //   **这条排序正是发现呵叻条目「泰国面积最大的府」有误的线索** ——
+    //   同一个仓库里两处排名互相矛盾，本身就是可以自查的信号。
     howItWorks:
       "Kanchanaburi town is the seat of Kanchanaburi province, whose governor is appointed by the Ministry of Interior; the town itself is a 'town municipality' with an elected mayor and about 26,000 people, while the province of about 19,000 km² is Thailand's third-largest, reaching to the Myanmar border. The town lies where the Kwai Yai and Kwai Noi rivers meet, the Bridge on the River Kwai spans the river just north of town, built by prisoners of war and labourers in 1942–43, two war cemeteries and museums lie in town and raft houses on the river are the local lodging; Hellfire Pass lies about 80 km north-west, the Erawan falls about 65 km north, Bangkok about 120 km east and the train comes from Thonburi. Newcomers most often go wrong by taking Kanchanaburi for a bridge, when the bridge is in town and the province's forests and waterfalls are another hour or two away.",
     layout:
@@ -9177,11 +9219,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November–February is most comfortable; March–May is hot, and in the rains the falls are full but the paths slippery. A day for the town and railway, a day for Erawan. A day trip from Bangkok works, but a night by the river is more relaxed.",
   },
   lampang: {
+    // identity sources: 南邦市自治市（เทศบาลนครลำปาง）DOPA 登记 **53,614 人（2017）**——3 级（转引 DOPA
+    //   《2017 年人口住户统计报告》），2026-09-08 核；本轮未找到更新数据，一手站点直连失败。
+    //   **注意别和河对岸的 เทศบาลเมืองเขลางค์นคร 混为一谈**，那是另一个独立自治体。
+    //   **「泰国北部第三大城市」已删**：这个说法只见于 3—4 级旅游类来源，找不到任何官方排名口径，
+    //   按项目规矩「排名要么给限定语要么不写」，核不实就不写。
     identity:
-      "Lampang lies in the Wang river valley of northern Thailand about 100 km south-east of Chiang Mai, with about 58,000 people — one of the old Lanna capitals and the only Thai city where horse-drawn carriages (introduced in 1916) still carry passengers. Wat Phra That Lampang Luang is the archetype of Lanna timber temple architecture and keeps nineteenth-century murals; of the 31 Burmese-style temples surviving in Thailand, nine — built by nineteenth-century Burmese teak merchants — are in Lampang. The Thai Elephant Conservation Center outside town is the national elephant institution, Chae Son National Park has hot springs and waterfalls, and Lampang is known for ceramics, with the rooster bowl as its emblem.",
+      "Lampang lies in the Wang river valley of northern Thailand about 100 km south-east of Chiang Mai, with about 54,000 registered residents in 2017 — one of the old Lanna capitals and the only Thai city where horse-drawn carriages (introduced in 1916) still carry passengers. Wat Phra That Lampang Luang is the archetype of Lanna timber temple architecture and keeps nineteenth-century murals; of the 31 Burmese-style temples surviving in Thailand, nine — built by nineteenth-century Burmese teak merchants — are in Lampang. The Thai Elephant Conservation Center outside town is the national elephant institution, Chae Son National Park has hot springs and waterfalls, and Lampang is known for ceramics, with the rooster bowl as its emblem.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lampang (thesaban nakhon ~58,000 2010, 22 km²; capital of Lampang province; Wang River valley; horse carriages; Wat Phra That Lampang Luang ~18 km; ceramics; Elephant Conservation Center; Chiang Mai 101 km; rail; airport; Mae Moh lignite)
     howItWorks:
-      "Lampang is the seat of Lampang province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor, about 22 km² with about 60,000 people, the third city of northern Thailand. The town lies in the valley of the Wang River, the old quarter along the bank, horse carriages still its emblem, ceramics works scattered on the outskirts making the rooster bowls; Wat Phra That Lampang Luang lies about 18 km south-west at Ko Kha, the Thai Elephant Conservation Center about 30 km west, Chiang Mai 101 km north-west, the railway a stop on the Bangkok-Chiang Mai line, the airport south of town and the Mae Moh lignite plant to the east. Newcomers most often go wrong by taking Lampang for a stop on the way to Chiang Mai, when it is a provincial seat that keeps the streets of the Lanna and teak years at a far slower pace than Chiang Mai.",
+      "Lampang is the seat of Lampang province, whose governor is appointed by the Ministry of Interior; the city is a 'city municipality' with an elected mayor, about 22 km² with about 54,000 registered residents in 2017. The town lies in the valley of the Wang River, the old quarter along the bank, horse carriages still its emblem, ceramics works scattered on the outskirts making the rooster bowls; Wat Phra That Lampang Luang lies about 18 km south-west at Ko Kha, the Thai Elephant Conservation Center about 30 km west, Chiang Mai 101 km north-west, the railway a stop on the Bangkok-Chiang Mai line, the airport south of town and the Mae Moh lignite plant to the east. Newcomers most often go wrong by taking Lampang for a stop on the way to Chiang Mai, when it is a provincial seat that keeps the streets of the Lanna and teak years at a far slower pace than Chiang Mai.",
     layout:
       "The old town lies on the south bank of the Wang; the Kad Kong Ta old street follows the river and becomes a walking-street night market at weekends, and the Ratsadaphisek bridge (1917) is the landmark; the Burmese temples (Wat Si Rong Muang, Wat Pratu Pong and others) are scattered through town. Wat Phra That Lampang Luang lies about 18 km south-west at Ko Kha, the elephant centre about 30 km north-west at Hang Chat and Chae Son about 70 km north. The station is on the west side of town and the airport on its southern edge.",
     gettingAround:
@@ -9194,6 +9241,9 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November–February is most comfortable and the season of the weekend market; March–April brings haze. A day for the town, a day for the outlying temple and the elephant centre. A quieter Lanna destination than Chiang Mai, linked with Phitsanulok or Sukhothai.",
   },
   "hat-yai": {
+    // identity sources: 合艾市自治市 191,696 人、城区 406,513、都会区约 65 万 ——3 级，2026-09-08 复核，与正文一致。
+    //   条目原有注释已指出「信息框标 2024，实为脚注引用的 2019 年 DOPA 报告，年份误标」——
+    //   **二手来源的年份标注可能是错的**，这条留在这里作为下一轮的提醒。
     identity:
       "Hat Yai lies in Songkhla Province in southern Thailand about 50 km from the Malaysian border, with a town population of about 191,000 — the largest city and commercial centre of the south, forming a metropolitan area of about 650,000 with the provincial capital Songkhla. It grew as a railway junction and is now a shopping and eating destination for Malaysian and Singaporean visitors: Kim Yong Market, the night markets and the southern Thai street food are its draws, and the hill in the municipal park carries a great Buddha and a cable car. Songkhla, about 30 km north-east, has an old town, Samila Beach and Songkhla Lake. Hat Yai's airport is Thailand's fifth-busiest, with flights to Kuala Lumpur and Singapore.",
     // howItWorks sources: 合艾市（เทศบาลนครหาดใหญ่，「城市自治市」）登记人口 191,696、城区 406,513、都会区约 65 万。
@@ -9252,9 +9302,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   "ko-lanta": {
     identity:
       "Ko Lanta lies in the Andaman Sea off Krabi Province, made up of Lanta Yai and Lanta Noi; the main island is about 25 km long and 6 km wide, about 81 km², with about 11,000 people. Quieter than Phi Phi, it has a chain of long beaches on the west coast (Klong Dao, Long Beach, Kantiang Bay), the lighthouse and headland of Mu Ko Lanta National Park at the southern tip, and on the east coast Lanta Old Town, a wooden fishing port settled in the nineteenth century by Chinese traders and the Urak Lawoi sea people. A bridge opened in 2015 joined the two islands to the mainland, and Ko Rok and the Hin Daeng and Hin Muang pinnacles are among the best dive sites in the Andaman. The 2004 tsunami affected Lanta far less than Phi Phi.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Lanta (district of Krabi province; Ko Lanta Yai ~80 km², ~20,000; Sala Dan pier town north; west-coast beaches Klong Dao/Long Beach/Klong Nin; Lanta Old Town east coast, Chinese/Urak Lawoi heritage; Muslim majority; bridge from Ko Lanta Noi 2016 + car ferry; Krabi airport ~70 km; Mu Ko Lanta NP; low season)
+    // howItWorks sources: 兰达耶岛（主岛）**10,830 人（2012）**；兰达县（含大小兰达岛）30,500 人（2012）
+    //   或 26,805（2010 年 NSO 普查）——3 级，2026-09-08 核。
+    //   **howItWorks 原写的「约 2 万」三个数都对不上**：注释称它转引自英文维基关于苏梅岛的
+    //   「约 80 km²、约 2 万人」，但实际抓取该页找不到这句话，**疑为写作时张冠李戴**。
+    //   identity 的「约 1.1 万」才是对的，已把 howItWorks 对齐过来 ——
+    //   这是 `check:claims` C6i（同条目两段人口打架）报出来的最后一条。
     howItWorks:
-      "Ko Lanta is a district of Krabi province, whose governor is appointed by the Ministry of Interior, with the island's subdistricts having local bodies of their own; the main island of Lanta Yai covers about 80 km² with about 20,000 permanent residents, the majority Muslim. Sala Dan is the pier town at the northern tip with the ferries and shops, the bridge opened in 2016 joins it to Lanta Noi and a car ferry reaches the mainland; the west coast is a string of beaches — Klong Dao, Long Beach, Klong Nin — where the hotels are, Lanta Old Town on the east coast is the street of wooden houses left by the Chinese and the Urak Lawoi sea people, the national park lies at the lighthouse on the southern tip, and Krabi airport about 70 km north-east, about two hours. Most shops close for the rainy season. Newcomers most often go wrong by taking Sala Dan for the whole of Ko Lanta, when the island runs 27 km and the beaches grow quieter the further south they lie.",
+      "Ko Lanta is a district of Krabi province, whose governor is appointed by the Ministry of Interior, with the island's subdistricts having local bodies of their own; the main island of Lanta Yai covers about 80 km² with about 11,000 permanent residents in 2012, the majority Muslim. Sala Dan is the pier town at the northern tip with the ferries and shops, the bridge opened in 2016 joins it to Lanta Noi and a car ferry reaches the mainland; the west coast is a string of beaches — Klong Dao, Long Beach, Klong Nin — where the hotels are, Lanta Old Town on the east coast is the street of wooden houses left by the Chinese and the Urak Lawoi sea people, the national park lies at the lighthouse on the southern tip, and Krabi airport about 70 km north-east, about two hours. Most shops close for the rainy season. Newcomers most often go wrong by taking Sala Dan for the whole of Ko Lanta, when the island runs 27 km and the beaches grow quieter the further south they lie.",
     layout:
       "Saladan at the northern tip of the main island is the port and main town, where ferries and speedboats leave; the beaches run down the west coast from north to south — Klong Dao, Long Beach, Klong Khong, Klong Nin, Kantiang Bay — quieter and rougher-roaded the further south, with the national park at the southern tip. The Old Town lies midway down the east coast, facing the mainland. Lanta Noi lies north of the main island, with the bridge linking both islands to the mainland ferry point.",
     gettingAround:

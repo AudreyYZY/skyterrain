@@ -4607,7 +4607,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   lille: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Métropole Européenne de Lille（95 个市镇）2023 = 1,195,234 —— **原文数字与口径都对**，只是把年份与口径写明确。
     identity:
@@ -4629,13 +4629,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   strasbourg: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Eurométropole de Strasbourg（33 个市镇）2023 = 522,596；unité urbaine = 494,536；aire d'attraction（268 个市镇）= 875,163。**原文的「约78万」三个口径都对不上。**
     identity:
       "斯特拉斯堡在法国东北部、莱茵河支流伊尔河畔、紧邻德国边境，欧洲都会区约 52.3 万人（2023年法定人口，33 个市镇），是阿尔萨斯地区的中心。历史上在法德之间数次易手，因此建筑、语言（阿尔萨斯语接近德语方言）和饮食都带有明显的德法混合特征。它是欧洲议会所在地之一，也是欧洲理事会总部所在地。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   **这是典型的口径混用**：原文把「33 个市镇」（Eurométropole 的建制规模）和「87.5 万」（其实是 268 个市镇的吸引区人口）拼进了同一句话。
     howItWorks:
@@ -4665,7 +4665,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "里昂在法国东南部、索恩河汇入罗讷河处，城市吸引区约 234 万人（2023年法定人口），按城市吸引区口径是法国第二大城市，按市镇人口口径则次于马赛排第三，古罗马时期是高卢地区的重要城市。它被普遍认为是法国的美食之都，也是文艺复兴时期丝绸贸易的中心，联合国教科文组织将里昂老城整体列为世界遗产。",
     // howItWorks sources: Wikipedia (2026-09): Lyon (9 arrondissements; 47.9 km²; 2023 pop 519,127; Métropole de Lyon 58 communes ~1.4 million since 2015; Villeurbanne separate; UNESCO 1998); Communes of France
     howItWorks:
-      "里昂在行政上有两层：里昂市分 9 个区（arrondissement），各有区长和区议会，面积约 48 平方公里，2023 年人口约 52 万；2015 年起，里昂与 58 个周边市镇合成“里昂都会区”，这是法国独一无二的地方政府——它在自己的范围内取代了省，议会由直选产生，管交通、垃圾、道路与社会服务，约 140 万人。维勒班是紧贴里昂的另一座市，人口 15 万，不属于里昂市。城市由两条河定义：索恩河与罗讷河之间的半岛是老中心，白莱果广场在那里；索恩河西岸是文艺复兴时期的老里昂和富维耶山；北面的红十字山是丝织工人的旧区；罗讷河东岸的帕尔迪厄是商务区和高铁站。1998 年这一片列入世界遗产。地址写“街道、门牌、邮编”，邮编 6900 之后的一位数是区号。初来的人最容易犯的错，是把里昂市当作整座城，而它只是一个 140 万人都会区的核心。",
+      "里昂在行政上有两层：里昂市分 9 个区（arrondissement），各有区长和区议会，面积约 48 平方公里，2023 年人口约 52 万；2015 年起，里昂与周边市镇合成“里昂都会区”，2024 年两个市镇合并后共 58 个市镇（含里昂），这是法国独一无二的地方政府——它在自己的范围内取代了省，议会由直选产生，管交通、垃圾、道路与社会服务，约 140 万人。维勒班是紧贴里昂的另一座市，人口 15 万，不属于里昂市。城市由两条河定义：索恩河与罗讷河之间的半岛是老中心，白莱果广场在那里；索恩河西岸是文艺复兴时期的老里昂和富维耶山；北面的红十字山是丝织工人的旧区；罗讷河东岸的帕尔迪厄是商务区和高铁站。1998 年这一片列入世界遗产。地址写“街道、门牌、邮编”，邮编 6900 之后的一位数是区号。初来的人最容易犯的错，是把里昂市当作整座城，而它只是一个 140 万人都会区的核心。",
     layout:
       "里昂坐落在两条河（索恩河、罗讷河）之间和周边的丘陵上。老城（Vieux Lyon）在索恩河西岸的富维耶山脚，是文艺复兴时期建筑群；富维耶圣母圣殿在山顶，可俯瞰全城。两河之间是“半岛”（Presqu'île），是主要商业区。老城里有独特的“通道”（traboules）——串联起建筑内院的隐蔽通道，历史上供丝绸工人运货。",
     gettingAround:
@@ -4682,7 +4682,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     identity:
       "格勒诺布尔在法国东南部、伊泽尔河谷中，四面被三条山脉（韦科尔、沙特勒兹、贝勒多讷）环抱，都会区约 45 万人，是法国阿尔卑斯地区的科研和高科技中心（有“法国硅谷”之称），1968 年冬奥会举办地。城市本身平坦，一抬头就能看到雪山，是这座城市最鲜明的印象。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   同样的口径混用：Grenoble-Alpes Métropole（49 个市镇）2023 = 450,608，而 72.7 万是 **204 个市镇**的吸引区人口（727,380）。identity 段的「约45万」本身是对的。
     howItWorks:
@@ -4701,13 +4701,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   marseille: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Aix-Marseille-Provence（92 个市镇）2023 = 1,939,077。原文的 190 万在「约」的容差内，顺手改精确。
     identity:
       "马赛在法国东南地中海沿岸，都会区约 194 万人（2023年法定人口，92 个市镇），是法国最古老的城市（公元前约 600 年由希腊人建立）、也是法国最大的商港。城市以老港、地中海饮食（鱼汤 bouillabaisse）和一片被称为“卡朗格”的石灰岩峡湾岸闻名，是通往科西嘉和北非的重要港口。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   同上。
     howItWorks:
@@ -4726,13 +4726,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   nice: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   **原文的「约100万」对不上任何现行口径**：Métropole Nice Côte d'Azur（约 49 个市镇）2023 = 574,287；aire d'attraction des villes（100 个市镇）= 641,721。100 万很可能引的是 **2020 年已被取代的旧口径 aire urbaine**，那套划法覆盖范围大得多，现已废弃。
     identity:
       "尼斯在法国东南、地中海沿岸，紧邻意大利边境，都会区约 57.4 万人（2023年法定人口，尼斯蔚蓝海岸都会区），是蔚蓝海岸（Côte d'Azur）的中心城市。19 世纪起就是欧洲上流社会的冬季度假地，英国人沿海湾修的“英国人散步大道”（Promenade des Anglais）至今是城市标志。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   同上。
     howItWorks:
@@ -4751,13 +4751,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   toulouse: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Toulouse unité urbaine 2023 = 1,093,783；aire d'attraction = 1,529,112；Toulouse Métropole（37 个市镇）= 841,524。原文没说是哪个口径，按数值最接近的建成区标明。
     identity:
       "图卢兹在法国西南部、加龙河畔，建成区约 109 万人（2023年法定人口），是法国航空航天工业的中心（空中客车总部在此），也是欧洲航天局的重要基地之一。城市因大量使用当地烧制的粉红色砖瓦建造，被称为“玫瑰之城”（la Ville Rose）。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Toulouse Métropole（37 个市镇）2023 = 841,524。
     howItWorks:
@@ -4776,7 +4776,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   bordeaux: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Bordeaux unité urbaine（73 个市镇）2023 = 1,034,027；Bordeaux Métropole（28 个市镇）= 854,334（howItWorks 段用的是这个，对）；aire d'attraction（275 个市镇）= 1,426,278。**两段中文都叫「都会区」却指两个不同东西**，已各自标明口径。
     identity:
@@ -4798,7 +4798,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   nantes: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Nantes Métropole 2023 = 689,456；unité urbaine = 689,036；aire d'attraction（116 个市镇）= 1,050,815。**原文的「约96万」三个口径都对不上**，是个无来源的旧数。已与同条目 howItWorks 的 68 万统一。
     identity:
@@ -4847,12 +4847,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     // identity sources: 安纳西市镇法定人口 132,117（2023 年参照人口，2026-01-01 生效版）——
     //   INSEE https://www.insee.fr/fr/statistiques/2011101?geo=COM-74010（1 级，2026-09-08 核）。
     //   **这个三年滞后是法律定义，不是数据过期**：populations de référence 每年 12 月下旬由法令签署、
-    //   次年 1 月 1 日生效，参照年份固定是生效年的前三年。下一版（参照 2024 年）预计 2026-12 公布。
+    //   次年 1 月 1 日生效；参照年份原为生效年的前三年，2026 年底那一版起压到前两年，**下一版参照 2025 年**（2024 是「空档年」），预计 2026-12 公布。
     //   安纳西是 2017 年由 6 个市镇合并成的新市镇，合并前后的人口数不可比。
     identity:
       "安纳西在法国阿尔卑斯山麓的安纳西湖北端，是上萨瓦省的省会，人口约13.2万（2023年市镇法定人口，2017年由6个市镇合并而成），离日内瓦只有45公里。蒂乌河和几条运河穿过老城，河中央十二世纪的岛宫（曾是监狱和法院）是城市的标志，山坡上的城堡俯瞰老城，因此它被称为“阿尔卑斯的威尼斯”。安纳西湖以水质清澈著称，环湖有自行车道，周围的塞姆诺兹山和图尔内特山是登山与滑翔伞胜地；每年6月的安纳西国际动画电影节是全球动画界的年度盛会。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Grand Annecy 2023 = 213,415。原文「约30万」高估约 41%。
     howItWorks:
@@ -4871,9 +4871,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   avignon: {
     // identity sources: 阿维尼翁市镇法定人口 92,188（2023 年参照人口，2026-01-01 生效版）——
     //   INSEE https://www.insee.fr/fr/statistiques/2011101?geo=COM-84007（1 级，2026-09-08 核）。
-    //   **未核到的一处**：howItWorks 里「大阿维尼翁聚合区 16 个市镇、约 20 万人」只查到 2022 年的
-    //   197,102，没拿到 2023 年的一手精确值。量级站得住，暂不动；下轮直接拉 EPCI-248400251 的
-    //   dossier complet 核到个位数。
+    //   **上一轮欠的那个数已补上（2026-09-08）**：大阿维尼翁聚合区 2023 年参照人口 199,932，
+    //   16 个市镇（含阿维尼翁，跨沃克吕兹与加尔两省）—— INSEE EPCI-248400251
+    //   https://www.insee.fr/fr/statistiques/2011101?geo=EPCI-248400251（1 级）。正文的「约 20 万」本来就对。
     identity:
       "阿维尼翁在普罗旺斯的罗讷河左岸，人口约9.2万（2023年市镇法定人口）。1309年至1377年，七位教皇先后驻跸于此，十四世纪建成的教皇宫是欧洲最大的哥特式宫殿之一；歌谣里的“阿维尼翁桥”（圣贝内泽桥，1171–1185年建）如今只剩伸向河中的四个桥墩；4.3公里长的中世纪城墙仍完整地环绕老城。教皇宫、主教建筑群和桥1995年列入世界遗产。1947年创办的阿维尼翁戏剧节每年7月把整座城变成舞台。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Avignon (commune 64.8 km²; 92,188 2023; Grand Avignon 16 communes ~200,000, straddling Vaucluse and Gard; prefecture of Vaucluse; 4,330 m of ramparts; Palais des Papes, popes 1309–1377, papal territory until 1791; Pont Saint-Bénézet; UNESCO 1995; festival July ~100,000; TGV station 3 km, ~2 h 40 Paris; mistral 120–160 days)
@@ -4899,7 +4899,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     identity:
       "蒙彼利埃在法国地中海岸内陆约10公里处，是奥克西塔尼大区的首府，人口约31万（2023年市镇法定人口），按市镇人口计是法国第七大城市，也是近几十年增长最快的大城市之一，约7万学生占人口四分之一。蒙彼利埃大学1160年前后创立，其医学院（1220年）是世界上仍在运营的最古老的医学院；老城埃居松保留着中世纪街巷和十七、十八世纪的府邸，喜剧广场和1888年的歌剧院是城市客厅，安提戈涅区是1980年代博菲尔设计的新古典主义街区。年日照约2700小时。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Montpellier Méditerranée Métropole 2023 = 522,542。
     howItWorks:
@@ -4956,13 +4956,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
   rouen: {
     // identity sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   Métropole Rouen Normandie（71 个市镇）2023 ≈ 50 万；aire d'attraction（316 个市镇）= 715,234。原文「都会区约71万」数字凑巧接近吸引区、但标成了都会区，有歧义。
     identity:
       "鲁昂在诺曼底的塞纳河下游，是诺曼底大区的首府，2023年法定人口约11.8万；城市吸引区约71.5万（316 个市镇）。它是中世纪欧洲最大最富裕的城市之一，鲁昂主教座堂的哥特式立面（莫奈画了三十多幅）和151米的铸铁尖塔是城市的标志，市中心有上千座半木结构房屋和十四世纪的大钟楼；1431年5月30日圣女贞德在老集市广场被处以火刑。福楼拜出生于此，塞纳河港是法国重要的河港。",
     // howItWorks sources: 法国国家统计与经济研究所（INSEE）dossier complet / comparateur de territoires，参照 2023 年、2026-01-01 生效的 populations de référence（原 populations légales，由法令 n° 2025-1362 于 2025-12-26 确认）。**级别 1**。https://www.insee.fr/fr/statistiques/2011101
-    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版（参照 2024 年）预计 2026 年 12 月下旬公布、2027-01-01 生效。
+    //   **这套口径按法律就滞后三年**：2026 年生效版参照 2023 年 —— 这不是过期，是定义。下一版**参照 2025 年**（不是 2024 —— INSEE 把发布滞后从三年压到两年，2024 那一档虽同期发布，官方称为「空档年」année blanche、不具规制效力），预计 2026 年底公布、2027-01-01 生效。
     //   法国有三套并行口径不能混：commune（市镇）/ unité urbaine（建成区）/ aire d'attraction des villes（城市吸引区，2020 年起取代旧的 aire urbaine）；另有 Métropole、communauté urbaine 是**行政建制**，与统计口径不是一回事。
     //   第三处口径混用：「71 个市镇」是都会区建制规模，「71.5 万」却是 316 个市镇的吸引区人口。
     howItWorks:
@@ -8938,11 +8938,20 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季气候最宜人，是旅游旺季；3-5月为炎热季，6-10月为雨季，南部半岛东西两岸雨季时间略有差异，出行前建议查询具体海岸的季节安排。",
   },
   bangkok: {
+    // identity sources: 泰国的人口登记由**内政部地方行政厅（DOPA / กรมการปกครอง）**发布，基准日每年 12 月 31 日，
+    //   次年 1—2 月公布上一年度数据（一手站点 stat.bora.dopa.go.th，2026-09-08 本轮多次直连失败，
+    //   只能经泰媒与维基转引，来源级别 2—3 级）。
+    //   曼谷 DOPA 登记人口 **5,422,568 人（2025-12-31）**；曼谷都会区（曼谷 + 暖武里/巴吞他尼/北榄/
+    //   龙仔厝/北柳）DOPA 登记合计约 **1,087 万（2022-12）**。
+    //   **原 identity 的「1050 万」与「都会区 1700 万」两个数都查无来源** —— 英文维基信息框的
+    //   17,400,000 未标年份与出处，疑为建成区推算。
+    //   **泰国有两套并行口径**：DOPA 登记（户籍）与 NSO 普查（实际居住）。NSO 2025 年初步普查的
+    //   六省规划区数为 1,522 万 —— 与登记数不可混用。本项目统一优先用 DOPA 登记口径并写明。
     identity:
-      "曼谷是泰国首都与最大城市，人口约1050万（都会区超1700万），坐落于湄南河三角洲之上，是泰国政治、经济与文化中心。",
+      "曼谷是泰国首都与最大城市，2025年12月登记人口约542万，加上暖武里、巴吞他尼、北榄等邻府的曼谷都会区登记人口超过1000万，坐落于湄南河三角洲之上，是泰国政治、经济与文化中心。",
     // howItWorks sources: Wikipedia (2026-09): Bangkok (special administrative area; elected governor; 50 khet with appointed directors, 180 khwaeng; 1,569 km²; registered ~5.4 million; BMR with 5 provinces); Local government in Thailand
     howItWorks:
-      "曼谷是泰国唯一的“特别行政区”，级别与府相同，由曼谷都市管理局治理，它的市长由市民直选——这是泰国唯一民选的府级行政长官，其余各府的府尹都由内政部任命；市议会由各区选出。市下分 50 个区（khet），区长由市长任命，区之下是 180 个分区（khwaeng）。市域约 1,569 平方公里，登记人口约 540 万，而加上暖武里、北榄、巴吞他尼等邻府的曼谷都会区超过 1,000 万人，这些邻府各有自己的府政府。湄南河把城市分成两岸：东岸的拉达那哥欣岛是大皇宫所在的老城，素坤逸、是隆、沙吞是商务区，西岸的吞武里 1972 年才并入曼谷。地址写“门牌、soi（巷）、路、区”，本地人以巷号说位置。BTS、MRT 与机场线连成网，拥堵仍是日常，运河船是老城的另一条通道。初来的人最容易犯的错，是把曼谷当作一座城，而它的都会区跨着好几个府。",
+      "曼谷是泰国唯一的“特别行政区”，级别与府相同，由曼谷都市管理局治理，它的市长由市民直选——这是泰国唯一民选的府级行政长官，其余各府的府尹都由内政部任命；市议会由各区选出。市下分 50 个区（khet），区长由市长任命，区之下是 180 个分区（khwaeng）。市域约 1,569 平方公里，2025 年 12 月登记人口约 542 万，而加上暖武里、北榄、巴吞他尼等邻府的曼谷都会区登记人口超过 1,000 万，这些邻府各有自己的府政府。湄南河把城市分成两岸：东岸的拉达那哥欣岛是大皇宫所在的老城，素坤逸、是隆、沙吞是商务区，西岸的吞武里 1972 年才并入曼谷。地址写“门牌、soi（巷）、路、区”，本地人以巷号说位置。BTS、MRT 与机场线连成网，拥堵仍是日常，运河船是老城的另一条通道。初来的人最容易犯的错，是把曼谷当作一座城，而它的都会区跨着好几个府。",
     layout:
       "城市以湄南河为轴线展开，老城区（大皇宫、玉佛寺所在地）位于河东岸，暹罗、是隆等现代商业区分布在城市中心与东部，运河网络仍是部分区域重要的交通方式。",
     gettingAround:
@@ -8955,6 +8964,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜出行；建议参观寺庙时着装得体（不露肩不露膝），部分景点周一闭馆。",
   },
   "chiang-mai": {
+    // identity sources: 清迈市自治市（เทศบาลนครเชียงใหม่）DOPA 登记 **127,240 人（2019）**，与正文的「约 13 万」吻合；
+    //   建成区 2022 年估算约 **120 万**，比正文的「约 100 万」略高 —— 可更新但不算错，本轮不改。
+    //   3 级（转引 DOPA），2026-09-08 核。
     identity:
       "清迈是泰国北部最大城市，人口约13万（都会区约100万），坐落于平河河谷，曾是兰纳王国古都，是泰国北部文化与手工艺中心。",
     // howItWorks sources: Wikipedia (2026-09): Chiang Mai (thesaban nakhon 40.2 km², ~127,000; urban area ~1 million+; Lanna capital 1296; northern rail terminus; smoke season Feb–Apr); Local government in Thailand (appointed provincial governors)
@@ -8972,8 +8984,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜人；2-4月部分年份受周边农业焚烧影响空气质量下降，出行前建议查询空气质量指数。",
   },
   phuket: {
+    // identity sources: 普吉府（即全岛）DOPA 登记人口 **429,583 人（2024-12-31）** ——
+    //   泰国国家统计局普吉府统计报告
+    //   https://phuket.nso.go.th/images/documents/Phuket%20Provincial%20Statistical%20Report/2568/1.demography68.pdf
+    //   （1 级，2026-09-08 核）。原 identity 写 42 万，与本条目 howItWorks 的 43 万对不上。
     identity:
-      "普吉岛是泰国最大的岛屿，人口约42万，坐落于安达曼海，是泰国最负盛名的海岛度假目的地。",
+      "普吉岛是泰国最大的岛屿，2024年登记人口约43万，坐落于安达曼海，是泰国最负盛名的海岛度假目的地。",
     // howItWorks sources: Wikipedia (2026-09): Phuket (city) (thesaban nakhon ~12 km², 71,284 2024; provincial capital; Old Town Sino-Portuguese; airport 36 km; Patong in Kathu district); Local government in Thailand
     howItWorks:
       "普吉岛是泰国的一个府，府尹由内政部任命，岛上分 3 个县；普吉镇是府治，本身是一个“城市自治市”，有民选的市长和市议会，市域只有约 12 平方公里、约 7 万人，而全岛登记人口约 43 万，实际居住者远多于此。人们心中的“普吉”多在镇外：芭东、卡伦、卡塔的海滩度假区在西海岸的卡图县，各有自己的自治机构，机场在北面 36 公里的他朗县，萨拉辛桥把岛与大陆连在一起。普吉镇是锡矿时代留下的华人市镇，老城的中葡式骑楼、峇峇娘惹的饮食与节庆是它的身份，2015 年以美食列入联合国教科文组织创意城市网络。双条车是本地的公共交通，没有铁路。地址写“门牌、soi、路、乡镇”。初来的人最容易犯的错，是把普吉镇当作度假区，而它是岛民生活与办事的府治，海滩在别的县。",
@@ -8989,10 +9005,8 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年4月为旱季，是最佳旅游季节；5-10月受西南季风影响，安达曼海一侧风浪较大，部分海滩活动会暂停。",
   },
   krabi: {
-    // identity sources: 甲米府（จังหวัดกระบี่）人口约 47 万（泰国内政部地方行政厅登记口径，2019 年 473,738，
-    //   https://citypopulation.de/en/thailand/southern/81__krabi/，3 级，2026-09-08 核）；
-    //   甲米镇（เทศบาลเมืองกระบี่，「镇级自治市」）约 3.2—3.3 万（DOPA，2018/2020 年）。
-    //   **identity 讲的是府、howItWorks 讲的是镇，两处都已写明是哪一档** —— 差 14 倍，别当成矛盾去「修」。
+    // identity sources: 甲米府 DOPA 登记 473,738 人（2019）、甲米镇 32,644 人（2020）——3 级，2026-09-08 复核。
+    //   条目原有注释已写明「府」与「镇」是两级、数字不矛盾，本轮确认无需改动。
     identity:
       "甲米是泰国南部安达曼海沿岸的府份，人口约47万，以陡峭的石灰岩喀斯特海岸与莱利岬角攀岩胜地闻名。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Krabi (thesaban mueang ~19 km², 32,644 2020; capital of Krabi province, appointed governor; Krabi River/Phang Nga Bay; Ao Nang ~20 km separate subdistrict; Railay boat only; Ko Phi Phi/Ko Lanta in province; airport 12 km)
@@ -9012,7 +9026,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   pattaya: {
     identity:
       "芭提雅是泰国东部湾区一座海滨度假城市，人口约12万（旅游旺季实际流动人口更多），距曼谷约150公里，是曼谷居民周末度假的传统目的地。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pattaya (special local administrative area since 1978 with elected mayor, in Chonburi province; 53.4 km²; registered ~116,000–120,000, Greater Pattaya ~351,000; Naklua/Pattaya Beach/Jomtien; Ko Larn; U-Tapao 45 km; Bangkok 150 km; EEC)
+    // howItWorks sources: 芭提雅特别地方行政区 DOPA 登记 **116,417 人（2025-01）**；大芭堤雅（Greater Pattaya）
+    //   **351,391 人（2021）**——3 级，2026-09-08 核。
+    //   「实际居住者几倍于此」是定性表述，有依据：官方从未公布含流动人口的可靠总数，普遍估计在 50 万量级。
+    //   **泰国这类度假城市的登记人口与实际居住人口差别极大**，正文必须写明是登记口径。
     howItWorks:
       "芭堤雅是泰国除曼谷外唯一的“特别地方行政区”，1978 年起有民选的市长和市议会，但它仍在春武里府之内，府尹由内政部任命，警察与学校归中央。市域约 53 平方公里，登记人口约 12 万，实际居住者几倍于此，大芭堤雅约 35 万人。城市沿海岸分成三段：北面的纳克鲁阿、中间的芭堤雅海滩与步行街、南面的中天海滩，各有自己的气质，兰岛在海上，乌塔堡机场在南面 45 公里，曼谷在 150 公里外，东部经济走廊的高铁在建。初来的人最容易犯的错，是把芭堤雅当作一座独立的市，而它是春武里府下的一个特别行政区，府政府在 30 公里外的春武里。",
     layout:
@@ -9029,7 +9046,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "chiang-rai": {
     identity:
       "清莱是泰国最北端的府份首府，人口约7万，紧邻缅甸与老挝边境的“金三角”地区，以白庙、蓝庙等当代宗教艺术建筑闻名。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Chiang Rai (thesaban nakhon ~70,000; capital of Chiang Rai province, appointed governor; founded 1262 by Mangrai, first Lanna capital; Kok River; White Temple 13 km; Golden Triangle ~55 km; Mae Sai border; airport; no rail; UNESCO Design City)
+    // howItWorks sources: 清莱府 DOPA 登记 **1,297,657 人（2024）**，与正文「约 130 万」精确吻合。
+    //   清莱市自治市最近可查为 **69,888 人（2012）**，与「约 7 万」大致吻合 —— **年份很旧**，
+    //   本轮未找到更新数据（DOPA 一手站点 stat.bora.dopa.go.th 直连失败）。3 级，2026-09-08 核。
+    //   下一轮换网络环境直连 DOPA 复核市一级的数。
     howItWorks:
       "清莱是清莱府的府治，府尹由内政部任命；清莱市是一个“城市自治市”，有民选的市长，人口约 7 万，而全府约 130 万人。市区在滚河边，1262 年孟莱王在此建立兰纳王国的第一座都城，钟楼与夜市是市中心的坐标，机场在城北，没有铁路；白庙在南面 13 公里，蓝庙在城北，黑屋在城外，金三角在东北约 55 公里的清盛，美塞的缅甸边境约 60 公里，董山在西北。初来的人最容易犯的错，是以为白庙与金三角在清莱城里，而它们各在几十公里外，市区本身是一座安静的府城。",
     layout:
@@ -9044,8 +9064,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜人，山区清晨气温较低；金三角景观区涉及泰缅老三国交界，建议在正规口岸区域游览，遵守当地边境管理规定。",
   },
   "koh-samui": {
+    // identity sources: 苏梅岛 DOPA 登记人口 **70,059 人（2019）**；面积约 229 km²，按面积计是泰国第二大岛
+    //   （普吉约 514 km² > 苏梅 229 km² > 象岛 217 km²）—— 3 级，2026-09-08 核。
+    //   **原写「泰国湾第二大岛」的限定语站不住脚**：拿来比的普吉岛在**安达曼海、不在泰国湾**；
+    //   若严格在泰国湾内比，苏梅反而是最大的。限定语用错了范围，比不写限定语更糟 ——
+    //   它读起来像是已经交代了口径。
+    //   identity 原写的 6.4 万查无来源，与本条目 howItWorks 的「约 7 万」也对不上，已一并对齐。
     identity:
-      "苏梅岛是泰国湾第二大岛屿，人口约6.4万，以查汶、拉迈两大海滩度假区与椰子种植传统闻名。",
+      "苏梅岛按面积计是泰国第二大岛屿（次于普吉岛），2019年登记人口约7万，以查汶、拉迈两大海滩度假区与椰子种植传统闻名。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Samui (228.7 km²; ~70,000 registered, 200,000+ with migrants/tourists; district of Surat Thani province; Ko Samui City Municipality since 2012 with elected mayor; Nathon port/district office west vs Chaweng/Lamai east; ring road 51 km; Bangkok Airways-owned airport 1989; ferries from Don Sak)
     howItWorks:
       "苏梅岛是泰国第二大岛，约 229 平方公里，登记人口约 7 万，加上外来务工者与游客常住二十多万；它是素叻他尼府下的一个县，2012 年起整座岛是一个有民选市长的“城市自治市”，府尹由内政部任命。岛的西岸是纳通，港口、县政府与本地人的市场都在那里；东岸的查汶与拉迈是游客的海滩，机场在东北角，由曼谷航空私营，1989 年启用，51 公里的环岛公路把它们连起来，渡轮从大陆的东萨码头开来，帕岸岛与涛岛在北面。初来的人最容易犯的错，是把查汶当作苏梅岛的市中心，而岛的行政中心与本地生活在西岸的纳通。",
@@ -9067,7 +9093,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   所以只统一口径措辞、不编年份。下一轮要去 stat.bora.dopa.go.th 取带年份的数。
     identity:
       "大城的选址是一次刻意的地利算计——1350年，拉玛铁菩提一世把新都定在湄南河、华富里河与巴莎河三江环抱形成的天然岛屿上，河道本身就是护城河，又便于连通出海口做国际贸易；此后417年（1350–1767年）间，这里发展成东南亚最大的国际都会之一，直到1767年被缅甸军队攻陷、焚毁殆尽。大城是泰国中部的历史古都，市自治市人口约5万，1991年大城历史公园列入联合国教科文组织世界遗产名录。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ayutthaya (Phra Nakhon Si Ayutthaya city municipality ~50,800; capital of Ayutthaya province; island between Chao Phraya, Pa Sak and Lopburi rivers; Historical Park UNESCO 1991; capital of Siam 1351–1767; train ~1.5 h from Bangkok, ~80 km)
+    // howItWorks sources: 2026-09-08 复核：大城市自治市仍未能取得带年份的一手数字（DOPA 站点直连失败），
+    //   正文停在「约 5 万」并如实不写年份 —— 这是正确处理，不要为了让 C6 计数下降而硬填一个年份。
+    //   下一轮换网络环境直连 DOPA。
     howItWorks:
       "大城是大城府的府治，府尹由内政部任命；大城市是一个“城市自治市”，有民选的市长，人口约 5 万。城市在昭披耶河、巴塞河与华富里河围成的岛上，1351 至 1767 年是暹罗的都城，岛的西半是历史公园，玛哈泰寺、帕斯桑碧寺的塔群在这里，1991 年列入世界遗产，柴瓦塔那兰寺在河对岸；岛的东半是今天的市镇，火车站在岛外的河东岸，到曼谷约一个半小时，岛上靠自行车与嘟嘟车，工业区在城外。初来的人最容易犯的错，是把大城当作一片废墟，而废墟与市镇在同一座岛上，市民就住在古塔之间。",
     layout:
@@ -9106,11 +9134,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜人，11月的水灯节期间历史公园会举行光影表演；建议清晨或傍晚游览以避开高温。",
   },
   "hua-hin": {
+    // identity sources: 华欣县 DOPA 登记 **126,355 人（2025-01）**；华欣市自治市 DOPA 登记 **62,111 人（2023 财年）**
+    //   —— 3 级（转引 DOPA），2026-09-08 核。**原 identity 的「约 1.9 万」两层都对不上，差三倍以上，查无来源。**
+    //   **行政层级也已过期**：华欣自治市于 **2024-09-27 由镇级（เทศบาลเมือง）升格为市级（เทศบาลนคร）**，
+    //   原文写「镇级自治市」已不准确，同批一并改。
     identity:
-      "华欣是泰国湾沿岸的海滨小城，人口约1.9万，自20世纪初泰国王室在此修建行宫起即成为传统的皇家度假胜地。",
+      "华欣是泰国湾沿岸的海滨小城，2023年市自治市登记人口约6.2万（所属华欣县合计约12.6万，2025年），自20世纪初泰国王室在此修建行宫起即成为传统的皇家度假胜地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Hua Hin (town municipality; district 838.9 km², ~126,000 2025; Prachuap Khiri Khan province; royal resort since 1920s, Klai Kangwon Palace; railway station 1911; Khao Takiab; Cha-am in Phetchaburi 25 km; Bangkok ~200 km; airport limited)
     howItWorks:
-      "华欣是巴蜀府下的一个县和一个“镇级自治市”，县约 840 平方公里，2025 年人口约 12.6 万，府尹由内政部任命，镇长由市民选出。1920 年代王室在这里建起铁路旅馆与“忘忧宫”，华欣从此是泰国最早、最体面的海滨度假地，王宫至今在镇北的海边；镇中心在 1911 年的火车站与夜市一带，海滩沿镇的东侧展开，考他基在南面 7 公里，北面 25 公里的差安属于碧武里府，是另一座度假镇；曼谷在北面约 200 公里，机场只有零星航班，退休的外国人与高尔夫球场是这里的日常。初来的人最容易犯的错，是把华欣当作一座海滩，而它是一座有王宫、有市场、有几万本地人的镇，海滩只是它的东边。",
+      "华欣是巴蜀府下的一个县和一个自治市（2024年由镇级升格为市级），县约 840 平方公里，2025 年人口约 12.6 万，府尹由内政部任命，镇长由市民选出。1920 年代王室在这里建起铁路旅馆与“忘忧宫”，华欣从此是泰国最早、最体面的海滨度假地，王宫至今在镇北的海边；镇中心在 1911 年的火车站与夜市一带，海滩沿镇的东侧展开，考他基在南面 7 公里，北面 25 公里的差安属于碧武里府，是另一座度假镇；曼谷在北面约 200 公里，机场只有零星航班，退休的外国人与高尔夫球场是这里的日常。初来的人最容易犯的错，是把华欣当作一座海滩，而它是一座有王宫、有市场、有几万本地人的镇，海滩只是它的东边。",
     layout:
       "城市沿华欣海滩展开，市中心保留有华欣火车站等殖民地风格建筑，海滩南北两端分布度假酒店与高尔夫球场。",
     gettingAround:
@@ -9123,8 +9155,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜人；华欣火车站不仅是交通枢纽，本身也是热门的拍照打卡地。",
   },
   "udon-thani": {
+    // identity sources: 乌隆他尼市自治市 DOPA 登记 **130,531 人（2019）**、城区约 40 万（2019）——3 级（转引 DOPA），2026-09-08 核。
+    //   「伊桑四大城市之一」（与呵叻、坤敬、乌汶叻差他尼并称）多来源一致，成立。
+    //   原 identity 写 14 万，与本条目 howItWorks 的 13 万对不上。
     identity:
-      "乌隆他尼是泰国东北部依善地区的重要城市，人口约14万，是探索班清史前遗址的门户城市。",
+      "乌隆他尼是泰国东北部依善地区的重要城市，2019年登记人口约13万，是探索班清史前遗址的门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Udon Thani (thesaban nakhon 130,531 2019; urban ~400,000; capital of Udon Thani province; Isan; US air base 1960s–70s; Ban Chiang UNESCO 1992 ~55 km; Red Lotus Sea ~40 km; Nong Khai/Vientiane ~80 km; airport; rail)
     howItWorks:
       "乌隆他尼是乌隆府的府治，府尹由内政部任命；乌隆市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 40 万，是伊桑地区的“四大城市”之一。市区在铁路两侧的格网上，农帕差公园是市中心的湖，1960 至 70 年代的美军空军基地留下了西式的街区与酒吧，机场在城南，火车与公路通往北面 80 公里的廊开与老挝万象；班清遗址在东面约 55 公里，1992 年列入世界遗产，红莲花海在南面约 40 公里。伊桑话是本地的语言。初来的人最容易犯的错，是把乌隆当作去老挝的过路站，而它是伊桑北部的商业与医疗中心。",
@@ -9140,11 +9175,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜人；乌隆他尼也是经由友谊大桥前往老挝万象的常见陆路口岸城市。",
   },
   "nakhon-ratchasima": {
+    // identity sources: 呵叻市自治市 DOPA 登记 **126,391 人（2019）**、城区 466,098（2021）——3 级（转引 DOPA），2026-09-08 核。
+    //   **「泰国面积最大的府」是错的**：那空叻差是玛府 20,736 km²，**第二大**；最大是清迈府 22,311 km²，
+    //   第三是北碧府 19,482 km²（北碧条目里「泰国第三大府」的写法反过来印证了这个排序）。已改。
     identity:
-      "呵叻（那空叻差是玛）是泰国东北部依善地区的门户城市，人口约14万，是探索考艾山国家公园与呵叻高原的重要基地。",
+      "呵叻（那空叻差是玛）是泰国东北部依善地区的门户城市，2019年登记人口约13万，是探索考艾山国家公园与呵叻高原的重要基地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nakhon Ratchasima/Korat (thesaban nakhon ~126,000 registered 2019; urban ~466,000 2021; capital of the largest province ~2.6 million, ~20,000 km²; Thao Suranari monument; Terminal 21; Khao Yai ~100 km at Pak Chong; Phimai ~60 km; Bangkok 250 km; high-speed rail planned 2027)
     howItWorks:
-      "呵叻是泰国面积最大的府——那空叻差是玛府——的府治，府尹由内政部任命，全府约 260 万人；呵叻市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 47 万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
+      "呵叻是那空叻差是玛府的府治，那空叻差是玛是泰国面积第二大的府（次于清迈府），府尹由内政部任命，全府约 260 万人；呵叻市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 47 万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
     layout:
       "城市保留有他玛叻古城墙与护城河遗迹，是连接曼谷与依善地区的传统交通枢纽。",
     gettingAround:
@@ -9161,7 +9199,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   kanchanaburi: {
     identity:
       "北碧在曼谷以西约120公里，在桂诺河与桂艾河汇成湄公河（Mae Klong）的地方，市镇人口约2.6万。二战期间日军用盟军战俘和亚洲劳工修建泰缅铁路（“死亡铁路”），约半数劳工死于疾病、虐待和事故，桂河大桥、北碧战争公墓、泰缅铁路中心和地狱火通道是这段历史的纪念地。北碧府境内还有七层的爱侣湾瀑布、赛育瀑布和缅甸边境的桑卡武里孟族木桥，是曼谷周边最受欢迎的一日和两日游目的地之一。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kanchanaburi (town municipality ~25,700 2017; capital of Kanchanaburi province ~19,000 km², Myanmar border; Kwai Yai/Kwai Noi confluence; Bridge on the River Kwai 1942–43; war cemeteries; Hellfire Pass ~80 km; Erawan NP ~65 km; Bangkok ~120 km; train)
+    // howItWorks sources: 北碧镇 DOPA 登记 **25,651 人（2017，年份偏旧，本轮未找到更新数）**；
+    //   北碧府 **19,482 km²，泰国面积第三大府**（清迈 22,311 > 那空叻差是玛 20,736 > 北碧 19,482）
+    //   ——3 级，2026-09-08 核。
+    //   **这条排序正是发现呵叻条目「泰国面积最大的府」有误的线索** ——
+    //   同一个仓库里两处排名互相矛盾，本身就是可以自查的信号。
     howItWorks:
       "北碧镇是北碧府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，有民选的镇长，人口约 2.6 万，而北碧府约 1.9 万平方公里，是泰国第三大府，一直伸到缅甸边境。镇子在桂河大支流与小支流汇合处，桂河大桥就在镇北的河上，1942 至 43 年由战俘与劳工修建，两座战争公墓与博物馆在镇内，河上的筏屋是本地的旅馆；地狱火通道在西北约 80 公里，爱侣湾瀑布在北面约 65 公里，曼谷在东面约 120 公里，火车从吞武里开来。初来的人最容易犯的错，是把北碧当作一座桥，而桥在镇上，府域的森林与瀑布要再走一两个小时。",
     layout:
@@ -9176,11 +9218,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11–2月最舒服；3–5月炎热，雨季瀑布水量大但路滑。市镇和铁路一天，爱侣湾一天。从曼谷当日往返可行，住一晚在河边更从容。",
   },
   lampang: {
+    // identity sources: 南邦市自治市（เทศบาลนครลำปาง）DOPA 登记 **53,614 人（2017）**——3 级（转引 DOPA
+    //   《2017 年人口住户统计报告》），2026-09-08 核；本轮未找到更新数据，一手站点直连失败。
+    //   **注意别和河对岸的 เทศบาลเมืองเขลางค์นคร 混为一谈**，那是另一个独立自治体。
+    //   **「泰国北部第三大城市」已删**：这个说法只见于 3—4 级旅游类来源，找不到任何官方排名口径，
+    //   按项目规矩「排名要么给限定语要么不写」，核不实就不写。
     identity:
-      "南邦在泰国北部的旺河谷里，清迈东南约100公里，人口约5.8万，是兰纳古都之一，也是泰国唯一仍用马车载客的城市（1916年引入）。南邦銮寺（Wat Phra That Lampang Luang）是兰纳木构寺庙的代表，保存着十九世纪壁画；十九世纪缅甸柚木商在此建的缅式寺庙，泰国现存的31座中有9座在南邦。郊外的泰国大象保护中心是泰国官方的大象机构，湛山（Chae Son）国家公园有温泉和瀑布；南邦以陶瓷出名，公鸡碗是它的符号。",
+      "南邦在泰国北部的旺河谷里，清迈东南约100公里，2017年登记人口约5.4万，是兰纳古都之一，也是泰国唯一仍用马车载客的城市（1916年引入）。南邦銮寺（Wat Phra That Lampang Luang）是兰纳木构寺庙的代表，保存着十九世纪壁画；十九世纪缅甸柚木商在此建的缅式寺庙，泰国现存的31座中有9座在南邦。郊外的泰国大象保护中心是泰国官方的大象机构，湛山（Chae Son）国家公园有温泉和瀑布；南邦以陶瓷出名，公鸡碗是它的符号。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Lampang (thesaban nakhon ~58,000 2010, 22 km²; capital of Lampang province; Wang River valley; horse carriages; Wat Phra That Lampang Luang ~18 km; ceramics; Elephant Conservation Center; Chiang Mai 101 km; rail; airport; Mae Moh lignite)
     howItWorks:
-      "南邦是南邦府的府治，府尹由内政部任命；南邦市是一个“城市自治市”，有民选的市长，约 22 平方公里、人口约 6 万，是泰国北部第三大城市。市区在汪河河谷里，老街区沿河排开，马车至今是它的标志，陶瓷厂散在城郊，公鸡碗从这里出产；南邦銮寺在西南约 18 公里的高卡，泰国大象保护中心在西面约 30 公里，清迈在西北 101 公里，铁路是曼谷—清迈线的一站，机场在城南，湄莫的褐煤电厂在东面。初来的人最容易犯的错，是把南邦当作清迈的过路站，而它是一座保留了兰纳与柚木时代街景、节奏比清迈慢得多的府城。",
+      "南邦是南邦府的府治，府尹由内政部任命；南邦市是一个“城市自治市”，有民选的市长，约 22 平方公里、2017 年登记人口约 5.4 万。市区在汪河河谷里，老街区沿河排开，马车至今是它的标志，陶瓷厂散在城郊，公鸡碗从这里出产；南邦銮寺在西南约 18 公里的高卡，泰国大象保护中心在西面约 30 公里，清迈在西北 101 公里，铁路是曼谷—清迈线的一站，机场在城南，湄莫的褐煤电厂在东面。初来的人最容易犯的错，是把南邦当作清迈的过路站，而它是一座保留了兰纳与柚木时代街景、节奏比清迈慢得多的府城。",
     layout:
       "老城在旺河南岸，空达（Kad Kong Ta）老街沿河，周末变成步行街夜市，河上的拉差纳达拉桥（1917年）是地标；缅式寺庙散布在市区（如 Wat Si Rong Muang、Wat Pratu Pong）。南邦銮寺在市区西南约18公里的高开（Ko Kha），大象保护中心在西北约30公里的杭猜，湛山国家公园在北面约70公里。火车站在市区西侧，机场紧邻市区南侧。",
     gettingAround:
@@ -9193,6 +9240,9 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11–2月最舒服，也是周末夜市最热闹的季节；3–4月有烟霾。市区一天，郊外寺庙和大象中心一天。作为清迈以外更安静的兰纳文化目的地，与彭世洛或素可泰连线。",
   },
   "hat-yai": {
+    // identity sources: 合艾市自治市 191,696 人、城区 406,513、都会区约 65 万 ——3 级，2026-09-08 复核，与正文一致。
+    //   条目原有注释已指出「信息框标 2024，实为脚注引用的 2019 年 DOPA 报告，年份误标」——
+    //   **二手来源的年份标注可能是错的**，这条留在这里作为下一轮的提醒。
     identity:
       "合艾在泰国南部的宋卡府，离马来西亚边境约50公里，市镇人口约19万，是泰南最大的城市和商业中心，与省会宋卡合成约65万人的都会区。它靠铁路枢纽兴起，如今是马来西亚和新加坡游客的购物与美食目的地：金荣市场、夜市和沿街的泰南小吃是它的招牌；市立公园的山上有大佛和缆车。东北约30公里的宋卡有老城、沙米拉海滩和宋卡湖。合艾机场是泰国第五繁忙的机场，有吉隆坡和新加坡航线。",
     // howItWorks sources: 合艾市（เทศบาลนครหาดใหญ่，「城市自治市」）登记人口 191,696、城区 406,513、都会区约 65 万。
@@ -9251,9 +9301,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   "ko-lanta": {
     identity:
       "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，人口约1.1万。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ko Lanta (district of Krabi province; Ko Lanta Yai ~80 km², ~20,000; Sala Dan pier town north; west-coast beaches Klong Dao/Long Beach/Klong Nin; Lanta Old Town east coast, Chinese/Urak Lawoi heritage; Muslim majority; bridge from Ko Lanta Noi 2016 + car ferry; Krabi airport ~70 km; Mu Ko Lanta NP; low season)
+    // howItWorks sources: 兰达耶岛（主岛）**10,830 人（2012）**；兰达县（含大小兰达岛）30,500 人（2012）
+    //   或 26,805（2010 年 NSO 普查）——3 级，2026-09-08 核。
+    //   **howItWorks 原写的「约 2 万」三个数都对不上**：注释称它转引自英文维基关于苏梅岛的
+    //   「约 80 km²、约 2 万人」，但实际抓取该页找不到这句话，**疑为写作时张冠李戴**。
+    //   identity 的「约 1.1 万」才是对的，已把 howItWorks 对齐过来 ——
+    //   这是 `check:claims` C6i（同条目两段人口打架）报出来的最后一条。
     howItWorks:
-      "兰达岛是甲米府下的一个县，府尹由内政部任命，岛上的乡镇有自己的自治机构；主岛兰达耶约 80 平方公里，常住人口约 2 万，穆斯林占多数。萨拉丹是北端的码头镇，渡轮与商店在那里，2016 年通车的大桥把它与小兰达岛连起来，再靠汽车渡轮到大陆；西岸是一串海滩——孔道、长滩、孔宁——旅馆都在那里，东岸的兰达老镇是华人与乌拉克拉沃伊海上民族留下的木屋街，国家公园在南端的灯塔处，甲米机场在东北约 70 公里，约两小时。雨季大半的店会关门。初来的人最容易犯的错，是把萨拉丹当作兰达岛的全部，而岛长 27 公里，海滩越往南越安静。",
+      "兰达岛是甲米府下的一个县，府尹由内政部任命，岛上的乡镇有自己的自治机构；主岛兰达耶约 80 平方公里，2012 年常住人口约 1.1 万，穆斯林占多数。萨拉丹是北端的码头镇，渡轮与商店在那里，2016 年通车的大桥把它与小兰达岛连起来，再靠汽车渡轮到大陆；西岸是一串海滩——孔道、长滩、孔宁——旅馆都在那里，东岸的兰达老镇是华人与乌拉克拉沃伊海上民族留下的木屋街，国家公园在南端的灯塔处，甲米机场在东北约 70 公里，约两小时。雨季大半的店会关门。初来的人最容易犯的错，是把萨拉丹当作兰达岛的全部，而岛长 27 公里，海滩越往南越安静。",
     layout:
       "大岛北端的沙拉丹是港口和主镇，渡轮和快艇从这里出发；海滩从北到南沿西岸排列：空道、长滩、空孔、空宁、干藤湾，越往南越安静，路也越差；国家公园在最南端。老镇在东岸中部，面向大陆一侧的海湾。小岛在大岛北面，桥连接两岛和大陆的渡口。",
     gettingAround:
