@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 1497d82
+lastVerifiedCommit: a578615
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -32,6 +32,7 @@ lastVerifiedCommit: 1497d82
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel-content 意大利 6 城、波兰 6 城 identity/howItWorks 人口数字与口径（意大利 + 波兰城市人口 · 批 1） | 17 | 1 / 16 / 0 | 当场修 17 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 泰国 6 城；菲律宾 7 城核实后全部属实、无改动（泰国城市人口 · 批 1） | 5 | 1 / 3 / 1 | 当场修 4 条；新开 issue 1、关闭 0 |
 | 2026-09-08 | 岘港并区、以及两处「口径词离数字太远」的措辞调整（C6i 收尾 · 第三轮） | 2 | 1 / 1 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | 18 个条目的 howItWorks 段仍停在 2020 年普查数（中国 howItWorks 与 identity 取齐 · 收尾） | 18 | 0 / 18 / 0 | 当场修 18 条；新开 issue 0、关闭 0 |
