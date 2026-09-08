@@ -51,3 +51,96 @@ export function isStale(s: string, zh: boolean): boolean {
   const y = latestYear(s);
   return y !== null && y < FRESH_SINCE;
 }
+
+/**
+ * C1a：**主观**最高级 —— 「最险峻的一段」这种谁也核实不了的判断。
+ *
+ * 不报「最高峰是托木尔峰」这类客观最高级：那是有明确定义、可查、且不随时间变的
+ * 事实描述，报出来只会把信噪比压垮（实测客观最高级有四千多处）。
+ */
+const SUBJECTIVE_SUP_ZH =
+  /最(险峻|壮观|美丽|漂亮|著名|有名|重要|典型|繁华|精彩|值得|经典|迷人|震撼|优美|独特|舒适|适合|理想|好的)/;
+const SUBJECTIVE_SUP_EN =
+  /\b(most (spectacular|beautiful|famous|important|impressive|striking|scenic|charming|iconic|dramatic|stunning|picturesque)|finest|best[- ](known|loved|preserved))\b/i;
+
+/**
+ * C1b：**排名**断言（第二大、第三高…）。横滨「日本人口第二多的市」就是这一类：
+ * 排名要看口径（是"市"建制还是都会区？）和年份，两样都没有就不该写。
+ * 句子里有年份或限定语则放过。
+ */
+const RANK_ZH = /(第[二三四五六七八九十两]大|第[二三四五六七八九十两]高|排名第|位居第|第[二三四五六七八九十两]多)/;
+const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|highest|longest|most populous|busiest)\b/i;
+const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|其中)/;
+const QUALIFIER_EN = /\b(one of|among|by (area|population|land)|at the time|then)\b/i;
+
+/**
+ * C6-e：**钱**。票价、门票、通票、打车费 —— 这些比人口过期得还快，
+ * 而且读者会拿它当预算依据。没有年份的价格等于没有价格。
+ * 只报带**具体金额**的句子，「收费参观」这种不带数字的不报。
+ */
+// 一句话里同时出现「金额」和「与花钱有关的词」才算价格 —— 只看金额会把
+// GDP、造价、投资额一起报出来；只看词又会漏掉「一张 365 欧元的年票」这种
+// 数字在前、名词在后的语序。两个条件都要，且不限先后。
+const AMOUNT_ZH =
+  /\d[\d.,]*\s*(元|欧元|美元|日元|英镑|澳元|港币|新元|泰铢|林吉特|比索|卢比|克朗|兹罗提|里拉|坚戈)/;
+const PRICE_WORD_ZH =
+  /(票价|门票|收费|费用|车费|房价|均价|出租车|打车|年票|月票|通票|车票|船票|缆车|人均|起步价)/;
+const AMOUNT_EN =
+  /([€$£¥]\s?\d[\d.,]*|\b\d[\d.,]*\s?(euros?|dollars?|pounds?|yen|baht|ringgit|pesos?|kronor|zloty)\b)/i;
+const PRICE_WORD_EN =
+  /\b(fare|ticket|pass|costs?|price[sd]?|admission|entry fee|taxi|per person|per night)\b/i;
+const isPrice = (s: string, zh: boolean) =>
+  zh ? AMOUNT_ZH.test(s) && PRICE_WORD_ZH.test(s) : AMOUNT_EN.test(s) && PRICE_WORD_EN.test(s);
+
+/**
+ * C6-f：**签证天数写死**。项目早就定过口径（CLAUDE.md「中国政策类内容口径」）：
+ * 免签天数不写死，只说"近年放宽、以官方最新公布为准"。这条把那个口径变成脚本。
+ *
+ * 带了"以…最新公布为准 / check … for the latest"这类**转向官方口径的免责语**就放过 ——
+ * 哈萨克斯坦那条「多国公民可享受最长30天免签入境，具体以哈萨克斯坦外交部最新公布为准」
+ * 正是正确写法的范例，不该被报出来。
+ */
+const VISA_ZH =
+  /(免签|落地签|免办签证)[^。；！？]{0,14}?\d{1,3}\s*(天|日)|\d{1,3}\s*(天|日)[^。；！？]{0,6}(免签|落地签)/;
+const VISA_EN =
+  /\b(visa[- ]free|visa on arrival)\b[^.;!?]{0,20}?\b\d{1,3}[\s-]?days?\b|\b\d{1,3}[\s-]?days?\b[^.;!?]{0,14}\b(visa[- ]free|visa on arrival)\b/i;
+/** 转向官方口径的免责语 —— 有它就说明作者没把政策写死 */
+const DEFER_ZH = /(最新公布|最新规定|最新政策|以.{0,12}(官网|部|局|署).{0,6}为准|请以.{0,10}为准)/;
+const DEFER_EN = /\b(check|refer to|consult)\b[^.;!?]{0,60}\b(latest|current|official|before you (travel|fly|go))\b/i;
+
+/** C1a：主观最高级（句子里有年份或限定语则放过 —— 那是正确写法的范例） */
+export function isSubjectiveSuperlative(s: string, zh: boolean): boolean {
+  const qual = (zh ? QUALIFIER_ZH : QUALIFIER_EN).test(s) || HAS_YEAR.test(s);
+  if (qual) return false;
+  return (zh ? SUBJECTIVE_SUP_ZH : SUBJECTIVE_SUP_EN).test(s);
+}
+
+/** C1b：排名断言缺口径 */
+export function isUnqualifiedRank(s: string, zh: boolean): boolean {
+  const qual = (zh ? QUALIFIER_ZH : QUALIFIER_EN).test(s) || HAS_YEAR.test(s);
+  if (qual) return false;
+  return (zh ? RANK_ZH : RANK_EN).test(s);
+}
+
+/** C6e：价格缺年份 */
+export const isPriceWithoutYear = (s: string, zh: boolean) => !HAS_YEAR.test(s) && isPrice(s, zh);
+
+/** C6f：签证天数写死（带转向官方口径的免责语则放过） */
+export const isHardcodedVisa = (s: string, zh: boolean) =>
+  (zh ? VISA_ZH : VISA_EN).test(s) && !(zh ? DEFER_ZH : DEFER_EN).test(s);
+
+/**
+ * **逐句判据的唯一注册表**。`check:claims` 与 `list:claims` 都从这里取 ——
+ * 2026-09-08 发现 `list:claims` 只实现了 C6 与 C6d，传别的规则名会**静默地按 C6d 跑**
+ * 却在表头印着你要的那个规则名（`--rule C1b` 报出来的其实是 C6d 的命中）。
+ * 这是与 check:flight 那个「断言的分母写错了对象」同一形状的错：
+ * 工具报出来的东西不是它自称的那个东西。加了这张表之后，未知规则名一律硬失败。
+ */
+export const SENTENCE_RULES: Record<string, (s: string, zh: boolean) => boolean> = {
+  C6: isMissingYear,
+  C6d: isStale,
+  C6e: isPriceWithoutYear,
+  C6f: isHardcodedVisa,
+  C1a: isSubjectiveSuperlative,
+  C1b: isUnqualifiedRank,
+};

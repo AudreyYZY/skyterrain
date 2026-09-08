@@ -23,7 +23,17 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { collectTtsSegments } from "../lib/tts-manifest.ts";
 import { splitSentences } from "../lib/sentences.ts";
-import { HAS_YEAR, FRESH_SINCE, CENSUS_ZH, CENSUS_EN, isMissingYear, isStale } from "./claim-rules.ts";
+import {
+  FRESH_SINCE,
+  CENSUS_ZH,
+  CENSUS_EN,
+  isMissingYear,
+  isStale,
+  isSubjectiveSuperlative,
+  isUnqualifiedRank,
+  isPriceWithoutYear,
+  isHardcodedVisa,
+} from "./claim-rules.ts";
 
 const BASELINE_PATH = "docs/claims-baseline.json";
 const UPDATE = process.argv.includes("--update-baseline");
@@ -43,62 +53,6 @@ const PERISHABLE_ZH =
   /(常住人口|户籍人口|城区人口|都会区人口|市区人口|人口|居民)[^。；！？]{0,20}?\d[\d.,]*\s*(万|亿|人|户)/;
 const PERISHABLE_EN =
   /\b(population|inhabitants|residents)\b[^.;!?]{0,40}?[\d.,]+\s*(million|billion|thousand|people|residents|inhabitants)/i;
-
-/**
- * C1a：**主观**最高级 —— 「最险峻的一段」这种谁也核实不了的判断。
- *
- * 不报「最高峰是托木尔峰」这类客观最高级：那是有明确定义、可查、且不随时间变的
- * 事实描述，报出来只会把信噪比压垮（实测客观最高级有四千多处）。
- */
-const SUBJECTIVE_SUP_ZH =
-  /最(险峻|壮观|美丽|漂亮|著名|有名|重要|典型|繁华|精彩|值得|经典|迷人|震撼|优美|独特|舒适|适合|理想|好的)/;
-const SUBJECTIVE_SUP_EN =
-  /\b(most (spectacular|beautiful|famous|important|impressive|striking|scenic|charming|iconic|dramatic|stunning|picturesque)|finest|best[- ](known|loved|preserved))\b/i;
-
-/**
- * C1b：**排名**断言（第二大、第三高…）。横滨「日本人口第二多的市」就是这一类：
- * 排名要看口径（是"市"建制还是都会区？）和年份，两样都没有就不该写。
- * 句子里有年份或限定语则放过。
- */
-const RANK_ZH = /(第[二三四五六七八九十两]大|第[二三四五六七八九十两]高|排名第|位居第|第[二三四五六七八九十两]多)/;
-const RANK_EN = /\b(second|third|fourth|fifth)[- ](largest|biggest|highest|longest|most populous|busiest)\b/i;
-const QUALIFIER_ZH = /(之一|按|口径|计[，,、]|现存|当时|号称|之称|其中)/;
-const QUALIFIER_EN = /\b(one of|among|by (area|population|land)|at the time|then)\b/i;
-
-/**
- * C6-e：**钱**。票价、门票、通票、打车费 —— 这些比人口过期得还快，
- * 而且读者会拿它当预算依据。没有年份的价格等于没有价格。
- * 只报带**具体金额**的句子，「收费参观」这种不带数字的不报。
- */
-// 一句话里同时出现「金额」和「与花钱有关的词」才算价格 —— 只看金额会把
-// GDP、造价、投资额一起报出来；只看词又会漏掉「一张 365 欧元的年票」这种
-// 数字在前、名词在后的语序。两个条件都要，且不限先后。
-const AMOUNT_ZH =
-  /\d[\d.,]*\s*(元|欧元|美元|日元|英镑|澳元|港币|新元|泰铢|林吉特|比索|卢比|克朗|兹罗提|里拉|坚戈)/;
-const PRICE_WORD_ZH =
-  /(票价|门票|收费|费用|车费|房价|均价|出租车|打车|年票|月票|通票|车票|船票|缆车|人均|起步价)/;
-const AMOUNT_EN =
-  /([€$£¥]\s?\d[\d.,]*|\b\d[\d.,]*\s?(euros?|dollars?|pounds?|yen|baht|ringgit|pesos?|kronor|zloty)\b)/i;
-const PRICE_WORD_EN =
-  /\b(fare|ticket|pass|costs?|price[sd]?|admission|entry fee|taxi|per person|per night)\b/i;
-const isPrice = (s: string, zh: boolean) =>
-  zh ? AMOUNT_ZH.test(s) && PRICE_WORD_ZH.test(s) : AMOUNT_EN.test(s) && PRICE_WORD_EN.test(s);
-
-/**
- * C6-f：**签证天数写死**。项目早就定过口径（CLAUDE.md「中国政策类内容口径」）：
- * 免签天数不写死，只说"近年放宽、以官方最新公布为准"。这条把那个口径变成脚本。
- *
- * 带了"以…最新公布为准 / check … for the latest"这类**转向官方口径的免责语**就放过 ——
- * 哈萨克斯坦那条「多国公民可享受最长30天免签入境，具体以哈萨克斯坦外交部最新公布为准」
- * 正是正确写法的范例，不该被报出来。
- */
-const VISA_ZH =
-  /(免签|落地签|免办签证)[^。；！？]{0,14}?\d{1,3}\s*(天|日)|\d{1,3}\s*(天|日)[^。；！？]{0,6}(免签|落地签)/;
-const VISA_EN =
-  /\b(visa[- ]free|visa on arrival)\b[^.;!?]{0,20}?\b\d{1,3}[\s-]?days?\b|\b\d{1,3}[\s-]?days?\b[^.;!?]{0,14}\b(visa[- ]free|visa on arrival)\b/i;
-/** 转向官方口径的免责语 —— 有它就说明作者没把政策写死 */
-const DEFER_ZH = /(最新公布|最新规定|最新政策|以.{0,12}(官网|部|局|署).{0,6}为准|请以.{0,10}为准)/;
-const DEFER_EN = /\b(check|refer to|consult)\b[^.;!?]{0,60}\b(latest|current|official|before you (travel|fly|go))\b/i;
 
 /** D4：句号后紧跟大写字母 —— 多段字符串拼接漏了空格 */
 const RUN_ON = /[a-z)][.!?][A-Z]/;
@@ -137,16 +91,43 @@ const HAS_URBAN_FIGURE_EN =
  * 两段年份不同且其中一段是普查数时放过 —— 普查数与年度估计本来就会差一截。
  */
 const CROSS_SUB_ZH =
-  /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇)/;
+  /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇|口径|登记人口)/;
 const CROSS_SUB_EN =
-  /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|New Area|estates)\b/i;
+  /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|New Area|estates|register|registered)\b/i;
 const CROSS_POP_ZH = /(常住人口|登录人口|普查人口|人口|居民)/;
 const CROSS_POP_EN = /\b(population|people|residents|inhabitants)\b/i;
 /** 中文数字紧跟在「人口」后；英文数字通常在词之前，所以取句中第一个带单位的数 */
 const CROSS_NUM_ZH = /(?:人口|居民)[^。；！？]{0,10}?([\d.,]+)\s*(万|亿)/;
 const CROSS_NUM_EN = /([\d.,]+)\s*(million|thousand)\b/i;
-/** 差多少算矛盾 */
-const CROSS_TOLERANCE = 0.05;
+/**
+ * 次级口径词只在**数字所在的那个分句**里才算数。
+ *
+ * 整句一刀切会误伤：格拉茨的 identity 是「…人口约29万，坐落在穆尔河畔，**老城**1999年列入
+ * 世界遗产」——「老城」跟人口毫无关系，却把整句排除掉了，这条真的「两段人口打架」因此漏报。
+ * 反过来，定长窗口又太短：「with a **metropolitan** population of about 2.6 million」里
+ * 那个词离数字 35 个字符，固定 22 字的窗口够不着，于是都会区人口被当成了市人口。
+ * 按分句切（逗号/顿号/分号之间）两头都能兼顾。
+ */
+const CLAUSE_SPLIT = /[，,、；;—]/;
+function clauseOf(s: string, at: number, len: number): string {
+  let start = 0;
+  for (let i = at - 1; i >= 0; i--) if (CLAUSE_SPLIT.test(s[i]!)) { start = i + 1; break; }
+  let end = s.length;
+  for (let i = at + len; i < s.length; i++) if (CLAUSE_SPLIT.test(s[i]!)) { end = i; break; }
+  return s.slice(start, end);
+}
+function nearSub(s: string, at: number, len: number, zh: boolean): boolean {
+  return (zh ? CROSS_SUB_ZH : CROSS_SUB_EN).test(clauseOf(s, at, len));
+}
+/**
+ * 差多少算矛盾。
+ *
+ * 定在 20% 而不是 5%：5%–15% 的差绝大多数是「identity 写了个不带年份的整数、
+ * howItWorks 写了个带年份的精确值」，那本来就由 **C6（缺年份）** 管，
+ * 在这里重报一遍只会把真正的冲突淹掉。20% 以上的差才是这条规则要抓的东西 ——
+ * 口径搞错了（拿都会区当市、拿省当市）、主体搞错了、或者行政区划合并后一段没跟上。
+ */
+const CROSS_TOLERANCE = 0.20;
 
 function crossValue(s: string, zh: boolean): number | null {
   const m = (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s);
@@ -207,8 +188,9 @@ for (const seg of segments) {
     seg.kind === "travel" && (seg.section === "identity" || seg.section === "howItWorks");
 
   for (const s of splitSentences(seg.text)) {
-    if (crossable && (zh ? CROSS_POP_ZH : CROSS_POP_EN).test(s) && !(zh ? CROSS_SUB_ZH : CROSS_SUB_EN).test(s)) {
-      const v = crossValue(s, zh);
+    if (crossable && (zh ? CROSS_POP_ZH : CROSS_POP_EN).test(s)) {
+      const nm = (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s);
+      const v = nm && !nearSub(s, nm.index, nm[0].length, zh) ? crossValue(s, zh) : null;
       if (v !== null && v >= 1000) {
         const key = `${seg.id}|${seg.lang}`;
         if (!crossByEntry.has(key)) crossByEntry.set(key, { seg, rows: [] });
@@ -226,20 +208,19 @@ for (const seg of segments) {
     if (isStale(s, zh)) {
       hits.push({ ...seg, rule: "C6d-数字不是最新一期", sentence: s });
     }
-    // 「之一」「按…计」这类限定语一出现就放过 —— 达沃「按行政区划面积计菲律宾最大」
-    // 是正确写法的范例，不该被报出来。
-    const qual = (zh ? QUALIFIER_ZH.test(s) : QUALIFIER_EN.test(s)) || HAS_YEAR.test(s);
-    if (!qual && (zh ? SUBJECTIVE_SUP_ZH.test(s) : SUBJECTIVE_SUP_EN.test(s))) {
+    // 判据全部来自 scripts/claim-rules.ts —— 与 list:claims 共用同一份，
+    // 「之一」「按…计」这类限定语的豁免也在那里（达沃「按行政区划面积计菲律宾最大」
+    // 是正确写法的范例，不该被报出来）。
+    if (isSubjectiveSuperlative(s, zh)) {
       hits.push({ ...seg, rule: "C1a-主观最高级", sentence: s });
     }
-    if (!HAS_YEAR.test(s) && isPrice(s, zh)) {
+    if (isPriceWithoutYear(s, zh)) {
       hits.push({ ...seg, rule: "C6e-价格缺年份", sentence: s });
     }
-    if ((zh ? VISA_ZH : VISA_EN).test(s) && !(zh ? DEFER_ZH : DEFER_EN).test(s)) {
+    if (isHardcodedVisa(s, zh)) {
       hits.push({ ...seg, rule: "C6f-签证天数写死", sentence: s });
     }
-    const rank = zh ? RANK_ZH.test(s) : RANK_EN.test(s);
-    if (rank && !qual) {
+    if (isUnqualifiedRank(s, zh)) {
       hits.push({ ...seg, rule: "C1b-排名断言缺口径", sentence: s });
     }
   }
