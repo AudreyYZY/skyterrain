@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 36e5b5e
+lastVerifiedCommit: 9d71e5d
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,7 @@ lastVerifiedCommit: 36e5b5e
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel · 菲律宾城市人口与口径（C6-d 第 23 批：菲律宾 11 城取 PSA 2024 年普查） | 14 | 0 / 12 / 2 | 当场修 14 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 德国城市人口与双口径（C6-d 第 22 批：德国 9 城取各州统计局 2025 年末数（Zensus 2022 基准）） | 17 | 0 / 17 / 0 | 当场修 17 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 希腊城市人口与口径（C6-d 第 21 批：希腊 11 城核实（7 条本来就是最新）） | 9 | 2 / 7 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 荷兰城市人口与口径（C6-d 第 20 批：荷兰 10 城取 CBS 2026-01-01 市镇人口） | 20 | 0 / 20 / 0 | 当场修 20 条；新开 issue 0、关闭 0 |

@@ -10543,11 +10543,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Hot and humid year-round; December to February is comparatively cool and dry, a good season for exploring the city; June to November is the wet and typhoon season — check the weather before travelling.",
   },
   "cebu-city": {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   宿务市（高度城市化市，独立于宿务省）2024 年普查 **965,332** 人，是中米沙鄢大区人口最多的高度城市化市。原文 identity 的「逾92万」既没年份、又与同条目 howItWorks 的 96 万对不上。
     identity:
-      "Cebu City is the core city of the Visayas, with a population of more than 920,000, on the east coast of Cebu Island; it is the oldest city in the Philippines and an important economic and tourism hub for the central islands.",
-    // howItWorks sources: Wikipedia (2026-09): Cebu City (highly urbanized city independent of Cebu province; 80 barangays; 2020 pop ~964,000; Metro Cebu 13 LGUs ~3.2 million; Mactan airport in Lapu-Lapu; founded 1565); Local government in the Philippines
+      "Cebu City is the core city of the Visayas, with a population of about 965,000 at the 2024 census, on the east coast of Cebu Island; it is the oldest city in the Philippines and an important economic and tourism hub for the central islands.",
+    // howItWorks sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   「宿务都会区」不是 PSA 法定区划，只是本地惯用的非官方组合，已如实标注。
     howItWorks:
-      "Cebu City is a 'highly urbanized city', administratively independent of Cebu province and outside the provincial government's authority, yet still the provincial capital, with the provincial capitol inside the city; it is divided into 80 barangays, each with an elected captain and council. It had about 964,000 people in 2020, while Metro Cebu, with Mandaue, Lapu-Lapu, Talisay and ten other local governments, holds about 3.2 million, and the airport lies on Mactan Island in the city of Lapu-Lapu. The city has two parts: downtown by the port to the south, where the Spanish founded the first city in the Philippines in 1565, with Magellan's Cross, Fort San Pedro and Colon Street; and uptown to the north, with Cebu IT Park and Ayala Center as the new business and living centre; the mountain barangays take up most of the city's area. Cebuano is the everyday language. There is no rail, and jeepneys and cars carry the traffic. Addresses give number, street, barangay and city. Newcomers most often go wrong by confusing Cebu City with Cebu island and Cebu province, when the airport and the resorts are in other cities.",
+      "Cebu City is a 'highly urbanized city', administratively independent of Cebu province and outside the provincial government's authority, yet still the provincial capital, with the provincial capitol inside the city; it is divided into 80 barangays, each with an elected captain and council. It had about 965,000 people at the 2024 census, while Metro Cebu, with Mandaue, Lapu-Lapu, Talisay and ten other local governments, holds about 3.2 million (an informal aggregate, not an official PSA-defined metropolitan area), and the airport lies on Mactan Island in the city of Lapu-Lapu. The city has two parts: downtown by the port to the south, where the Spanish founded the first city in the Philippines in 1565, with Magellan's Cross, Fort San Pedro and Colon Street; and uptown to the north, with Cebu IT Park and Ayala Center as the new business and living centre; the mountain barangays take up most of the city's area. Cebuano is the everyday language. There is no rail, and jeepneys and cars carry the traffic. Addresses give number, street, barangay and city. Newcomers most often go wrong by confusing Cebu City with Cebu island and Cebu province, when the airport and the resorts are in other cities.",
     layout:
       "The old town preserves Spanish colonial-era churches and forts; Mactan Island (linked by a causeway bridge) is home to the international airport and beach resorts, and the downtown IT business park is a modern industry cluster.",
     gettingAround:
@@ -10560,11 +10569,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time to explore Cebu and its surrounding islands; June to November is the wet and typhoon season — check the weather before travelling.",
   },
   "davao-city": {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   达沃市 2024 年普查 **1,848,947** 人（2020 年 1,776,949）。**原文的「逾190万」比任何一期普查都高** —— 2024 年实际数比它还低，方向就是错的。
+    //   同条目「按行政区划面积计菲律宾陆地面积最大」复核后**仍成立**（2,443.61 km²，第二名普林塞萨港 2,381.02 km²）。
     identity:
-      "Davao City is the largest city on Mindanao and, by land area, the largest city in the Philippines, with a population of more than 1.9 million; it is Mindanao's political and economic centre and the core gateway to Mount Apo.",
-    // howItWorks sources: Wikipedia (2026-09): Davao City (highly urbanized; 2,443.61 km²; 3 congressional districts, 182 barangays; 2020 pop ~1.78 million; Poblacion; Mount Apo; Samal); Local government in the Philippines
+      "Davao City is the largest city on Mindanao and, by land area, the largest city in the Philippines, with a population of about 1.85 million at the 2024 census; it is Mindanao's political and economic centre and the core gateway to Mount Apo.",
+    // howItWorks sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   同上。
     howItWorks:
-      "Davao City is a 'highly urbanized city' and the centre of the Davao Region, covering about 2,444 km², the largest city in the Philippines by area, though most of it is mountain and farmland and the urban area is a small corner; it is divided into three congressional districts, eleven administrative districts and 182 barangays, each barangay with an elected captain and council. It had about 1.78 million people in 2020, the most populous city outside Metro Manila. The centre is the Poblacion district, with San Pedro Cathedral and the Roxas night market, while Lanang, Matina and Ecoland are the newer commercial and residential districts. Mount Apo, the highest peak in the Philippines, stands in the city's south-west, and Samal Island lies across the Davao Gulf to the east. Cebuano is the everyday language. The city is known for strict local ordinances — a smoking ban, a firecracker ban, speed limits — and durian is its emblem. There is no rail, and jeepneys, tricycles and cars carry the traffic. Addresses give number, street, barangay and city. Newcomers most often go wrong by picturing Davao as one big city, when most of its territory is mountain.",
+      "Davao City is a 'highly urbanized city' and the centre of the Davao Region, covering about 2,444 km², the largest city in the Philippines by area, though most of it is mountain and farmland and the urban area is a small corner; it is divided into three congressional districts, eleven administrative districts and 182 barangays, each barangay with an elected captain and council. It had about 1.85 million people at the 2024 census, the most populous city outside Metro Manila. The centre is the Poblacion district, with San Pedro Cathedral and the Roxas night market, while Lanang, Matina and Ecoland are the newer commercial and residential districts. Mount Apo, the highest peak in the Philippines, stands in the city's south-west, and Samal Island lies across the Davao Gulf to the east. Cebuano is the everyday language. The city is known for strict local ordinances — a smoking ban, a firecracker ban, speed limits — and durian is its emblem. There is no rail, and jeepneys, tricycles and cars carry the traffic. Addresses give number, street, barangay and city. Newcomers most often go wrong by picturing Davao as one big city, when most of its territory is mountain.",
     layout:
       "The city centre runs along Davao Gulf, with commercial and residential areas spread across a broad administrative territory; the silhouette of Mount Apo is clearly visible to the northeast of the city.",
     gettingAround:
@@ -10577,11 +10596,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Mindanao lies south of the main typhoon belt and has a relatively stable climate year-round; December to May sees less rainfall, a better season for climbing Mount Apo — book a permit and guide in advance.",
   },
   baguio: {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   碧瑶市 2024 年普查 **368,426** 人（2020 年 366,358，四年只增 2,068 人，年均 0.14%）。
+    //   **「逾37万」这个措辞无论哪一期都站不住** —— 2020 与 2024 两期都不到 37 万。这不只是过期，是量级表述本身就错了。
     identity:
-      "Baguio is the capital of Benguet Province, with a population of more than 370,000, on a plateau in the Cordillera Central at about 1,500 m elevation, known as the Philippines' \"summer capital\" for its cool climate.",
-    // howItWorks sources: Wikipedia (2026-09): Baguio (highly urbanized, independent of Benguet; 57.51 km²; 2020 pop 366,358; 129 barangays; Burnham plan, chartered 1909; CAR seat; ~1,500 m); Local government in the Philippines
+      "Baguio is the capital of Benguet Province, with a population of about 368,000 at the 2024 census, on a plateau in the Cordillera Central at about 1,500 m elevation, known as the Philippines' \"summer capital\" for its cool climate.",
+    // howItWorks sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   同上。
     howItWorks:
-      "Baguio is a 'highly urbanized city', administratively independent of Benguet province — whose capital is La Trinidad next door — and at the same time the seat of the Cordillera Administrative Region; it is divided into 129 barangays, each with an elected captain and council. It covers only about 58 km² with about 366,000 people in 2020, built on the mountains at about 1,500 m, where the cool climate made it the 'Summer Capital' of the Philippines from 1903. The city was laid out on Burnham's plan when it was chartered in 1909: Session Road is the commercial centre and Burnham Park the green heart, but the plan was for 25,000 to 30,000 people, and more than ten times that now crowd the same slopes, with congestion as daily life. The Ibaloi are the original inhabitants, joined over time by other Igorot peoples, Ilocanos and Chinese. Several universities make it a college town. Kennon Road and Marcos Highway climb to the city, and jeepneys and taxis serve it. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking Baguio for a hill resort, when it is the administrative and commercial centre of the whole Cordillera.",
+      "Baguio is a 'highly urbanized city', administratively independent of Benguet province — whose capital is La Trinidad next door — and at the same time the seat of the Cordillera Administrative Region; it is divided into 129 barangays, each with an elected captain and council. It covers only about 58 km² with about 368,000 people at the 2024 census, built on the mountains at about 1,500 m, where the cool climate made it the 'Summer Capital' of the Philippines from 1903. The city was laid out on Burnham's plan when it was chartered in 1909: Session Road is the commercial centre and Burnham Park the green heart, but the plan was for 25,000 to 30,000 people, and more than ten times that now crowd the same slopes, with congestion as daily life. The Ibaloi are the original inhabitants, joined over time by other Igorot peoples, Ilocanos and Chinese. Several universities make it a college town. Kennon Road and Marcos Highway climb to the city, and jeepneys and taxis serve it. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking Baguio for a hill resort, when it is the administrative and commercial centre of the whole Cordillera.",
     layout:
       "The city centre is anchored by Baguio Cathedral and Burnham Park, with a ring road following the contours of the surrounding hills; it is an important gateway for exploring the Cordillera Central and Mount Pulag.",
     gettingAround:
@@ -10594,11 +10623,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Cool year-round, with temperatures dropping to around 10°C from December to February — pack warm clothing; leave early in the morning if heading to Mount Pulag to catch the sea of clouds.",
   },
   "puerto-princesa": {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   普林塞萨港 2024 年普查 **316,384** 人（较 2020 年 307,079 增 0.72%）。同条目「按行政区划面积计菲律宾第二大城市」复核后**仍成立**（2,381.02 km²）。
     identity:
-      "Puerto Princesa is the capital of Palawan Province, with a population of more than 300,000, in the centre of Palawan Island, and the core gateway for exploring the Puerto Princesa Underground River and Palawan's natural landscapes.",
-    // howItWorks sources: Wikipedia (2026-09): Puerto Princesa (highly urbanized 2007, independent of Palawan; ~2,381 km²; 66 barangays; 2020 pop ~307,000; Underground River UNESCO 1999 ~80 km; El Nido ~230 km); Local government in the Philippines
+      "Puerto Princesa is the capital of Palawan Province, with a population of about 316,000 at the 2024 census, in the centre of Palawan Island, and the core gateway for exploring the Puerto Princesa Underground River and Palawan's natural landscapes.",
+    // howItWorks sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   同上。
     howItWorks:
-      "Puerto Princesa has been a 'highly urbanized city' since 2007, administratively independent of Palawan province yet still its capital; it covers about 2,381 km², the second-largest city in the Philippines by area, most of it forest and coastline, and is divided into 66 barangays, each with an elected captain and council. It had about 307,000 people in 2020, concentrated in the town on Puerto Princesa Bay, with the airport in the city centre. The Underground River, inscribed as World Heritage in 1999, lies within the city's territory but about 80 km north of town; the island-hopping of Honda Bay is close to town; and El Nido lies about 230 km north in another municipality. The city is known for environmental governance, and rules on cleanliness and logging are part of local life. Tricycles are the main transport in town. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking Puerto Princesa for a transit point for the Underground River or El Nido, when its own territory is large enough to need hours of driving.",
+      "Puerto Princesa has been a 'highly urbanized city' since 2007, administratively independent of Palawan province yet still its capital; it covers about 2,381 km², the second-largest city in the Philippines by area, most of it forest and coastline, and is divided into 66 barangays, each with an elected captain and council. It had about 316,000 people at the 2024 census, concentrated in the town on Puerto Princesa Bay, with the airport in the city centre. The Underground River, inscribed as World Heritage in 1999, lies within the city's territory but about 80 km north of town; the island-hopping of Honda Bay is close to town; and El Nido lies about 230 km north in another municipality. The city is known for environmental governance, and rules on cleanliness and logging are part of local life. Tricycles are the main transport in town. Addresses give number, street, barangay and city. Newcomers most often go wrong by taking Puerto Princesa for a transit point for the Underground River or El Nido, when its own territory is large enough to need hours of driving.",
     layout:
       "The city centre runs along Honda Bay, serving as the administrative and supply centre of Palawan Island, with limestone karst landforms and tropical rainforest scenery in the surrounding area.",
     gettingAround:
@@ -10628,8 +10666,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "December to May is the dry season, a good time for viewing Mayon and outdoor activities; June to November is typhoon season, and Albay Gulf's coastal areas are relatively exposed — check warnings before travelling.",
   },
   tagaytay: {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   塔加泰 2024 年普查 **87,811** 人。**原文的「逾10万」不是过期，是与同条目 howItWorks 已有的 2024 年数直接矛盾** —— 8.8 万离 10 万差得远。
     identity:
-      "Tagaytay is a highland town in Cavite Province, with a population of more than 100,000, at about 640 m elevation, a well-known viewpoint town for the nested volcanic landscape of Taal Lake.",
+      "Tagaytay is a highland town in Cavite Province, with a population of about 87,800 at the 2024 census, at about 640 m elevation, a well-known viewpoint town for the nested volcanic landscape of Taal Lake.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tagaytay (Philippines; component city in Cavite province about 59 km from Manila via Aguinaldo Highway, at roughly 634 m on the Tagaytay Ridge; 87,811 residents in the 2024 census; the ridge looks across the caldera to Taal Volcano and Taal Lake, which lie in Batangas province, not in Tagaytay; average temperature about 22 °C, rarely above 31 °C; chartered as a city in 1938; called the second summer capital of the Philippines after Baguio; bulalo and tilapia from Taal Lake; Sky Ranch, People's Park in the Sky; agriculture in pineapples, coffee and cut flowers)
     howItWorks:
       "Tagaytay is a component city of Cavite province in the Philippines, under provincial jurisdiction and governed by an elected mayor and council, with about 87,800 people in the 2024 census, some 59 km south of Manila. It sits on a ridge at about 634 m where temperatures hold around 22°C and rarely pass 31°C, which is why it is called the country's second summer capital after Baguio, and why Manila drives up at weekends and the highway jams. On the far side of the ridge is a great caldera holding Taal Lake, and within the lake stands Taal Volcano — its most famous view, though both lake and volcano lie in Batangas province to the south and not within this city, which provides the place to look from. In January 2020 Taal erupted, ash fell on Manila and the lakeside villages were evacuated. The local table is known for bulalo, a beef shank soup, and tilapia from Taal Lake, while the farms grow pineapples, coffee and cut flowers. Newcomers most often go wrong by assuming the volcano lies within Tagaytay, when the city is only the balcony opposite it.",
@@ -10645,11 +10688,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "Cooler than Manila year-round; weekends and holidays draw larger crowds, so consider avoiding peak times; Taal Volcano occasionally issues activity advisories — check the latest bulletins from the Philippine Institute of Volcanology and Seismology before travelling.",
   },
   boracay: {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   **这条只能部分更新**：长滩岛不是一级行政区，是马来镇下辖的 3 个 barangay。2024 年普查已知 Manoc-Manoc **22,207**、Balabag **11,275**（两村合计 33,482），但 **Yapak 村的 2024 年数查不到**，全岛官方合计无法给出。
+    //   按红线**不编一个合计数**：如实写明 2020 年基准 + 已知两村的 2024 年数 + 总数待公布。**也没有拿马来镇全镇 64,723 冒充全岛人口。**
     identity:
-      "Boracay is a well-known resort island under the jurisdiction of Malay, Aklan Province, with a resident population of about 38,000, famous for its White Beach, and one of the Philippines' best-known island getaways.",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Boracay (Philippines; a 10.32 km² island in Aklan province about 0.8 km off the north-west coast of Panay, 37,802 residents in 2020 across three barangays under the municipality of Malay, Western Visayas; originally inhabited by the Panay Bukidnon and Ati peoples; a six-month closure from April 2018 ordered to fix sewage and environmental damage, administered by an inter-agency task force, reopened in October with a 30-metre buffer zone from the waterline; e-trikes and bicycles on the island; access via Caticlan jetty and the airports at Caticlan and Kalibo; 2,155,217 visitors in 2025)
+      "Boracay is a well-known resort island under the jurisdiction of Malay, Aklan Province, with a resident population of about 38,000 (2020 census; at the 2024 census the island's two largest barangays alone totalled about 33,500, but an updated island-wide total is not yet available), famous for its White Beach, and one of the Philippines' best-known island getaways.",
+    // howItWorks sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   同上。
     howItWorks:
-      "Boracay is an island of about 10.3 km² in Aklan province in the Philippines with some 37,800 residents in 2020; the island is not a unit of government but three barangays under the municipality of Malay on Panay, so its permits, taxes and municipal services are handled across the water. It was originally inhabited by the Panay Bukidnon and Ati peoples. White Beach runs about four kilometres and is divided into Stations One, Two and Three, the axis along which the hotels and restaurants are strung. In April 2018 the government closed the whole island for six months to deal with sewage discharge and environmental damage, an inter-agency task force taking over, and it reopened that October under a thirty-metre building setback from the waterline and a cap on visitor numbers — rules still enforced and the key to understanding the island today. No large vehicles run here, only e-trikes and bicycles; the way in is by the Caticlan jetty, with airports at Caticlan and Kalibo. Newcomers most often go wrong by expecting an airport on the island, when the flights land on the far shore.",
+      "Boracay is an island of about 10.3 km² in Aklan province in the Philippines with some 37,800 residents at the 2020 census (the two largest barangays alone totalled about 33,500 at the 2024 census; an island-wide total is not yet available); the island is not a unit of government but three barangays under the municipality of Malay on Panay, so its permits, taxes and municipal services are handled across the water. It was originally inhabited by the Panay Bukidnon and Ati peoples. White Beach runs about four kilometres and is divided into Stations One, Two and Three, the axis along which the hotels and restaurants are strung. In April 2018 the government closed the whole island for six months to deal with sewage discharge and environmental damage, an inter-agency task force taking over, and it reopened that October under a thirty-metre building setback from the waterline and a cap on visitor numbers — rules still enforced and the key to understanding the island today. No large vehicles run here, only e-trikes and bicycles; the way in is by the Caticlan jetty, with airports at Caticlan and Kalibo. Newcomers most often go wrong by expecting an airport on the island, when the flights land on the far shore.",
     layout:
       "The island has a narrow, dumbbell-like shape; White Beach runs about 4 km along the west coast, divided into Stations 1, 2 and 3, while the east coast is comparatively less developed and retains a more natural coastline.",
     gettingAround:
@@ -10662,8 +10715,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to April is the dry season, the best time for beach activities; June to October brings the southwest monsoon, with rougher waves on the east coast — kitesurfers in fact prefer this season at Bulabog Beach.",
   },
   "el-nido-town": {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   艾尔尼多市镇 2024 年普查 **51,367** 人（全镇口径，该镇本身就是一级市镇建制）。**identity 停在旧数、howItWorks 已经是 2024 年普查数**，两段矛盾。
     identity:
-      "El Nido is a small town at the northern tip of Palawan, with a population of about 46,000, the core gateway town for exploring the karst islets of the Bacuit Archipelago.",
+      "El Nido is a small town at the northern tip of Palawan, with a population of about 51,400 at the 2024 census, the core gateway town for exploring the karst islets of the Bacuit Archipelago.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): El Nido (Philippines; municipality in northern Palawan with about 51,367 residents in the 2024 census, on Bacuit Bay among 45 islands and islets, the highest point Cadlao Island at 640 m; known as Bacuit until 17 June 1954, renamed El Nido, Spanish for "the nest", after the edible swiftlet nests in its limestone cliffs; the El Nido-Taytay Managed Resource Protected Area covers 903.21 km², the largest marine protected area in the Philippines, with mangroves, about 100 coral species and endangered turtles; about 269 km north-east of Puerto Princesa; El Nido (Lio) Airport)
     howItWorks:
       "El Nido is a municipality at the northern end of Palawan in the Philippines, governed by an elected mayor and council under provincial jurisdiction, with about 51,400 people in the 2024 census. The town is squeezed onto a narrow strip between a wall of limestone cliffs and the sea, facing Bacuit Bay and its forty-five islands and islets, the highest of them Cadlao at 640 m — this karst is the whole of its appeal and also the way a visit is organised, since the island-hopping trips leaving town run on four fixed routes, A, B, C and D, regulated by the municipality. The name is Spanish for the nest: the edible swiftlet nests on those cliffs have long been harvested, and on 17 June 1954 the town changed its name from Bacuit to El Nido. The whole sea area falls within the El Nido-Taytay Managed Resource Protected Area of 903 km², the largest marine protected area in the Philippines, entered on payment of an environmental fee. Puerto Princesa lies about 269 km south, five or six hours by road, and there is a small airport. Newcomers most often go wrong by expecting a beach in town, when the good sand is all a boat ride away.",
@@ -10679,8 +10737,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
       "November to May is the dry season, the best time for island-hopping; from June to October, monsoon conditions may cancel some routes — confirm with local tour operators before travelling.",
   },
   "coron-town": {
+    // identity sources: 菲律宾统计局（PSA）**2024 年人口普查（POPCEN，基准日 2024-07-01）**，已由总统第 973 号公告（2025-07-11）宣布为官方数 —— **这就是当前最新一期**。
+    //   菲律宾人口只随普查更新：自 1970 年起每 5 年一次，2020 年是完整的人口与住房普查（CPH），2024 年是依第 87 号行政令做的期中人口普查；下一次完整普查目前指向 **2030 年**。
+    //   口径提醒：**长滩岛不是一级行政区**，是马来镇下辖的 3 个 barangay，不能用马来镇全镇数（2024 年 64,723）代替；艾尔尼多、科隆本身就是一级市镇建制，用全镇数没问题。
+    //   「宿务都会区」**不是 PSA 的法定区划**（不像国家首都区 NCR 有法律地位），只是本地惯用的非官方地理组合。
+    //   科隆市镇 2024 年普查 **69,439** 人（16,483 户）。同上，两段矛盾。
     identity:
-      "Coron is a small town on Busuanga Island in northeastern Palawan, with a population of about 55,000, the core gateway town for exploring the limestone landforms of the Coron/Calamian Islands and diving on WWII shipwrecks.",
+      "Coron is a small town on Busuanga Island in northeastern Palawan, with a population of about 69,400 at the 2024 census, the core gateway town for exploring the limestone landforms of the Coron/Calamian Islands and diving on WWII shipwrecks.",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Coron (Philippines; municipality covering the eastern part of Busuanga Island, Coron Island and about 50 islets in northern Palawan, 689.10 km² with about 69,439 residents in 2024; the town proper is on Busuanga while Coron Island lies opposite; originally Bancuang, renamed by the Spanish, a municipality from 2 June 1902; Japanese occupation May 1942 to March 1945; about a dozen sunken Japanese warships from the aerial raid of September 1944 lie at 10–40 m and are the main dive sites; Siete Pecados Marine Park, 2024 Blue Park Award; Francisco B. Reyes Airport with flights to Manila, Cebu and Angeles City)
     howItWorks:
       "Coron is a municipality of northern Palawan in the Philippines, governed by an elected mayor and council, covering the eastern half of Busuanga Island, Coron Island and about fifty islets, some 689 km² with about 69,400 people in 2024. One relation is constantly confused here: the town stands on Busuanga, while the cliff-walled island opposite that holds Kayangan and Barracuda lakes is a separate island, ancestral domain of the Tagbanwa people, entered under their management along set routes and hours. The town was originally Bancuang, given its present spelling by the Spanish, and became a municipality on 2 June 1902. In September 1944 an American air raid sank the Japanese ships anchored in these waters, and a dozen or more wrecks lie at ten to forty metres as dive sites known worldwide, carrying the local tourism along with the hot springs outside town; the Siete Pecados Marine Park won a Blue Park Award in 2024. The airport is on Busuanga with flights to Manila and Cebu. Newcomers most often go wrong by treating Coron town and Coron Island as one place, when a stretch of sea lies between them.",
