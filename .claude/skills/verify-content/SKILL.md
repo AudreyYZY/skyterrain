@@ -203,7 +203,14 @@ findings JSON 的形状：
 |---|---|---|---|
 | 城市 / 国家概览 | `travel` | `travel/<id>/<话题>`，如 `travel/hanzhong/population-2025` | `lib/travel-content.{zh,en}.ts` |
 | 地形 | `terrain` | `terrain/<id>/<话题>` | `lib/terrain-content.{zh,en}.ts` |
-| 航线 | `routes` | `routes/<id>/flight` | `data/routes/*.json`（走 `verify:apply`，不是 apply-text） |
+| 航线的航班信息 | `routes` | `routes/<id>/flight` | `data/routes/*.json`（走 `verify:apply`，不是 apply-text） |
+| 航线的**解说文字** | `route` | `route/<id>/<话题>` | `lib/route-narration.ts`，`field` 是 `study` 或 `travel` |
+
+⚠️ **改了航线解说文字必须跑 `npm run gen:anchors`**，否则句数与
+`lib/route-anchors.data.ts` 对不上、`npm run check:anchors` 会报错
+（`source: "auto"` 的锚点会被重跑覆盖，`"manual"` 的保留）。
+`verify:apply-text` 在动过 `route-narration.ts` 之后会把这句提醒打出来。
+航线解说的中英文写在**同一个文件**里，脚本已按这一点处理。
 
 地形条目的 `field` 是那 6 个板块之一：`seeing` / `formation` / `observation` /
 `distinguish` / `concept` / `history`。
