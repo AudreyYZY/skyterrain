@@ -8232,8 +8232,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月是南部旅游旺季，北部拉普兰6-7月可见极昼、12-1月可见极光；跨越南北的行程建议乘国内航班衔接，铁路更适合区域内深度游览。",
   },
   stockholm: {
+    // identity sources: 瑞典统计局（SCB）市镇（kommun）年末登记人口：斯德哥尔摩市 999,200（2025-12-31）；斯德哥尔摩省约 2,486,300—2,488,902。
+    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。
+    //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
-      "斯德哥尔摩是瑞典首都与最大城市，人口约98万（都会区约240万），坐落于梅拉伦湖与波罗的海交汇处，由14座主要岛屿组成，是北欧重要的政治、经济与设计中心。",
+      "斯德哥尔摩是瑞典首都与最大城市，人口约100万（2025年末；斯德哥尔摩省约249万），坐落于梅拉伦湖与波罗的海交汇处，由14座主要岛屿组成，是北欧重要的政治、经济与设计中心。",
     // howItWorks sources: Wikipedia (2026-09): Stockholm (municipality ~188 km²; ~996,000 2025; 11 district councils since 2023; Region Stockholm 26 municipalities ~2.5 million runs healthcare + SL; 14 islands; tunnelbana 3 lines); Municipalities of Sweden
     howItWorks:
       "人们口中的斯德哥尔摩，在行政上只是约 188 平方公里的斯德哥尔摩市，2025 年人口约 100 万，由市议会治理，市长（财政市政委员）由多数派推举；市下分 11 个区（2023 年从 14 个合并而来），各有自己的区委员会，管小学、社会服务与文化。瑞典的市镇管学校、养老与规划，21 个大区管医院与公共交通，国家管警察与大学：斯德哥尔摩大区有 26 个市镇、约 250 万人，SL 的公交网覆盖整个大区，索尔纳、纳卡、松德比贝里各是独立的市镇。城市建在梅拉伦湖入海处的 14 座岛上，三成是水面、三成是绿地：老城在中央的小岛上，南岛、东城、国王岛、北城各是内城的一片，动物园岛是博物馆区；内城之外，南区与西区是战后的郊区。三条地铁线、通勤火车与公交用一张 SL 卡贯通，阿兰达机场在北面约 40 公里。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把斯德哥尔摩市当作整座城，而它只占大区人口的四成。",
@@ -8266,8 +8269,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；从斯德哥尔摩当日往返十分便捷，适合安排半日到一日的历史文化深度游。",
   },
   gothenburg: {
+    // identity sources: 瑞典统计局（SCB）市镇（kommun）年末登记人口：哥德堡市 613,278（2025-12-31，当年内突破 60 万）；大哥德堡（13 市镇）约 110 万。
+    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。
+    //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
-      "哥德堡是瑞典第二大城市，人口约60万，坐落于瑞典西海岸约塔河口，是瑞典重要的港口城市与探索布胡斯兰海岸的门户。",
+      "哥德堡是瑞典第二大城市，人口约61万（2025年末；大哥德堡都会区约110万），坐落于瑞典西海岸约塔河口，是瑞典重要的港口城市与探索布胡斯兰海岸的门户。",
     // howItWorks sources: Wikipedia (2026-09): Gothenburg (municipality ~450 km²; ~612,000; Västra Götaland seat; metro ~1.1 million; Göta älv/Hisingen; largest Nordic port; largest tram network in Scandinavia; founded 1621); Municipalities of Sweden
     howItWorks:
       "哥德堡是瑞典第二大城市，西约塔兰省的省府；市镇约 450 平方公里，包括群岛，人口约 61 万，由市议会治理。市镇管学校、养老与规划，大区管医院与公共交通公司 Västtrafik，国家管警察与大学；都会区约 110 万人，默尔恩达尔、帕蒂勒各是独立的市镇。约塔河把城市分成两岸：南岸是 1621 年按荷兰运河城市规划建起的市中心——城墙内区、林荫大道与哈加老街区，北岸的希辛恩岛是沃尔沃的总部与林德霍尔门科技园，桥与渡轮把两岸连起来。港口是北欧最大的港，有轨电车网是斯堪的纳维亚最大的，哥德堡群岛属于市镇，靠渡轮往来。查尔姆斯理工大学与哥德堡大学是两所大学，里瑟本游乐园是城市的标志。哥德堡人的幽默与冷面笑话是全国有名的性格。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把哥德堡当作一座港口工业城，而它的市中心是一座运河与林荫大道的城市。",
@@ -8283,8 +8289,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人；哥德堡是探索布胡斯兰海岸礁岛地貌的理想门户，租车或跟团一日游可达科斯特群岛。",
   },
   malmoe: {
+    // identity sources: 瑞典统计局（SCB）市镇（kommun）年末登记人口：马尔默市 367,924（2025-12-31），按市镇人口排全国第三。
+    //   **发布节奏**：年度汇总新闻稿于次年 **2 月下旬**发布（2025 年数据 2026-02-24 发布）。
+    //   **瑞典有三档并存口径，混用是这一批最大的坑**：kommun（市镇，含乡村）／tätort（城区/建成区，SCB 每 2—3 年发布一次，最近一期是 2023 年数据、2024-11-28 发布、下一期预计 2026-11-26）／storstadsområde 或 län（都会区/省）。写哪一档必须点名。
     identity:
-      "马尔默是瑞典第三大城市，人口约35万，坐落于瑞典最南端，经厄勒海峡大桥与丹麦哥本哈根相连，是斯科讷平原的核心城市。",
+      "马尔默是瑞典第三大城市，人口约37万（2025年末），坐落于瑞典最南端，经厄勒海峡大桥与丹麦哥本哈根相连，是斯科讷平原的核心城市。",
     // howItWorks sources: Wikipedia (2026-09): Malmö (municipality ~157 km²; 368,135 2024; Skåne seat; Greater Malmö ~780,000/12 municipalities; Øresund Bridge 2000, 30–40 min to Copenhagen; Citytunneln 2010; ~40% commute by bike; trams ceased 1973; ~half foreign background; Danish until 1658); Municipalities of Sweden
     howItWorks:
       "马尔默是瑞典第三大城市，斯科讷省的省府；市镇约 157 平方公里，2024 年人口约 37 万，由市议会治理。市镇管学校、养老与规划，斯科讷大区管医院与公共交通公司 Skånetrafiken，国家管警察与大学；大马尔默 12 个市镇约 78 万人。2000 年通车的厄勒海峡大桥把它与哥本哈根连成一座跨国都会区，火车 30 到 40 分钟一趟，每天有大量人跨境通勤；2010 年通车的城市隧道让火车从中央车站经三角站到许利耶站穿过市区。老城以大广场与小广场为中心，西港是旧船厂改成的新区，旋转中心大楼是它的标志，默勒旺是移民街区与市集，罗森戈德是 1960 年代的住宅区。1658 年以前这座城属于丹麦，考库姆船厂是它的工业过去。约半数市民有外国背景，来自约 180 个国家。有轨电车 1973 年停运，公交与自行车承担出行，约四成通勤靠自行车。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把马尔默当作哥本哈根的郊区，而它是瑞典南部的省府，有自己的大学与港口。",
@@ -8300,8 +8309,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-9月最宜人；马尔默是探索斯科讷平原及经厄勒海峡大桥连接丹麦的便捷门户，适合安排跨国一日游。",
   },
   visby: {
+    // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：维斯比城区 26,305。
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     identity:
-      "维斯比是哥得兰岛的主要城镇，人口约2.5万，完整保留中世纪城墙与建筑格局，12世纪起是汉萨同盟重要的贸易城市。",
+      "维斯比是哥得兰岛的主要城镇，城区人口约2.6万（2023年），完整保留中世纪城墙与建筑格局，12世纪起是汉萨同盟重要的贸易城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Visby (Sweden; ~24,330; the most populous Swedish locality outside the mainland, reached only by ferry or air; on Gotland; former Hanseatic centre, flourishing in the 14th century; Valdemar IV of Denmark took Gotland in 1361; UNESCO 1995, one of the best-preserved medieval cities in Scandinavia; 3.4 km town wall from about 1300; Almedalen Week; Medieval Week; ferries from Nynäshamn and Oskarshamn; airport)
     howItWorks:
       "维斯比是哥特兰岛上的城镇，人口约 2.4 万，是瑞典本土之外人口最多的聚落，只能坐船或飞机到达；整座哥特兰岛是一个市镇，同时行使大区的职权，称为“哥特兰区域”，管学校、养老与医院，国家管警察。中世纪它是汉萨同盟在波罗的海的重要商埠，14 世纪最盛，1361 年丹麦国王瓦尔德马四世攻占哥特兰，城下战死一千八百人；此后城市长期衰落，反而把中世纪的城区原样留住，1995 年列入世界遗产，是斯堪的纳维亚保存最完好的中世纪城市之一。约 1300 年建成的城墙长 3.4 公里，至今围着老城，城内散着十几座教堂废墟。每年七月的“阿尔梅达尔周”把瑞典的政党、媒体与游说者都请到这里开会，中世纪周则让全城穿上戏服；渡轮从尼奈斯港与奥斯卡港开来，机场在城北。初来的人最容易犯的错，是把维斯比当作哥特兰，而岛长约 170 公里，村庄与海滩散在四周。",
@@ -8334,8 +8346,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人；作为探索布莱金厄群岛花岗岩礁岛地貌的门户，建议安排半日至一日的乘船群岛游。",
   },
   kalmar: {
+    // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：卡尔马城区 42,622；**卡尔马市镇（含乡村）约 7.3 万，是另一档，别混用**。
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
     identity:
-      "卡尔马是瑞典东南部小科鲁德省的核心城市，人口约4万，卡尔马城堡是瑞典保存最完好的文艺复兴城堡之一，也是探索厄兰岛的门户。",
+      "卡尔马是瑞典东南部小科鲁德省的核心城市，城区人口约4.3万（2023年），卡尔马城堡是瑞典保存最完好的文艺复兴城堡之一，也是探索厄兰岛的门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kalmar (Sweden; ~42,600; capital of Kalmar County; Kalmar Castle, where the Kalmar Union of Sweden, Norway and Denmark was signed on 13 July 1397, lasting until 1523; castle rebuilt in the Renaissance; Öland bridge 6 km, the longest in Sweden, opened 1972; Linnaeus University campus; cathedral 1703; airport 5 km; harbour)
     howItWorks:
       "卡尔马是瑞典卡尔马省的省会，人口约 4.3 万，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。城市在波罗的海西岸，正对厄兰岛。1397 年 7 月 13 日，丹麦、挪威与瑞典的代表在卡尔马城堡里签订了卡尔马联盟条约，三国共戴一君，直到 1523 年瑞典退出；城堡后来在文艺复兴时期改建成今天的样子，仍立在城南的水边。老城在城堡北面，1703 年落成的巴洛克大教堂在广场上。1972 年通车的厄兰大桥长 6 公里，是瑞典最长的桥，把它与厄兰岛连起来，夏天全国的人从这座桥上过去度假；林奈大学在城里有校区，机场在城西 5 公里。初来的人最容易犯的错，是把卡尔马当作去厄兰岛的路过点，而它是一座有城堡、大教堂与六百年历史的省会。",
@@ -8351,8 +8366,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人；卡尔马是探索厄兰岛大阿尔瓦石灰岩荒原的最便捷门户，跨海大桥车程约十几分钟。",
   },
   kiruna: {
+    // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：基律纳城区 17,284；**市镇 22,399（2026-06-30），是瑞典面积最大的市镇**。
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
+    //   原来写的 1.8 万介于两档之间、更接近城区，但没点名是哪一档。
     identity:
-      "基律纳是瑞典最北端的城市，人口约1.8万，地处北极圈以北约145公里，是世界最大的地下铁矿所在地，也是探索凯布讷山与萨雷克国家公园的门户。",
+      "基律纳是瑞典最北端的城市，城区人口约1.7万（2023年；基律纳市镇整体约2.2万，含大片矿区周边乡村），地处北极圈以北约145公里，是世界最大的地下铁矿所在地，也是探索凯布讷山与萨雷克国家公园的门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kiruna (Sweden; the northernmost city in Sweden, in Lapland, 145 km north of the Arctic Circle, Norrbotten County; built in the 1890s to serve the Kiruna mine; the Kiirunavaara iron ore mine, whose underground extraction causes subsidence; since 2004 the town centre is being moved 3 km east, and Kiruna Church was relocated in August 2025; Icehotel at Jukkasjärvi; Esrange space centre 1966; midnight sun 28 May–16 July; winters below −30 °C)
     howItWorks:
       "基律纳是瑞典最北的城市，在拉普兰、北极圈以北 145 公里，属北博滕省，由民选的市议会治理，市镇是瑞典面积最大的；市镇管学校与规划，大区管医院，国家管警察。这座城 1890 年代为了基律纳铁矿而建，基鲁纳瓦拉是世界上最大的地下铁矿，矿脉斜插在城下——正因为如此，采矿造成的地面沉降正在吞掉老城：2004 年起市中心整体东移 3 公里，新中心 2022 年启用，2025 年 8 月连教堂都被整栋抬起来运到了新址。这是一座为一座矿而生、又为同一座矿而搬家的城市。1966 年设立的埃斯兰奇航天中心在东面，尤卡斯耶尔维的冰旅馆每年冬天重建，阿比斯库与凯布讷山在西面，萨米人的驯鹿放牧在四周的山地上；5 月 28 日到 7 月 16 日太阳不落，冬天常在零下 30 度以下。初来的人最容易犯的错，是按地图找基律纳的市中心，而它正在往东挪。",
@@ -8385,8 +8404,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月适合探索周边群岛，2-3月冬季海冰稳固期可体验独特的冰上徒步与滑雪活动。",
   },
   harnosand: {
+    // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：海讷桑德城区 18,236；市镇 25,012（2023 年末）。
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
+    //   **这条是「口径先于数字」的典型**：identity 的 1.8 万与 howItWorks 的 2.5 万**两个数字都各自准确**，
+    //   一个是城区、一个是市镇，但正文一处都没点名，读者只会看到同一座城两个打架的数。
     identity:
-      "海讷桑德是瑞典中北部一座临海小城，人口约1.8万，是探索高海岸世界遗产的传统门户城市。",
+      "海讷桑德是瑞典中北部一座临海小城，城区人口约1.8万（2023年；海讷桑德市镇整体约2.5万，含周边乡村），是探索高海岸世界遗产的传统门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Härnösand (Sweden; municipality seat, 25,012 in 2023; capital of Västernorrland County; on the island of Härnön; seat of the Diocese of Härnösand, the county governor's residence and the county museum; the first Swedish town with electric street lighting, 10 December 1885, from the Gådeå power station; "the gate to the High Coast", the Höga Kusten UNESCO landscape just north)
     howItWorks:
       "海讷桑德是瑞典西诺尔兰省的省会，2023 年人口约 2.5 万，建在海讷岛上，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。它虽小，却是一个省的行政与教会中心：海讷桑德教区的主教座堂、省长官邸与省博物馆都在这里，大教堂是瑞典最小的主教座堂。1885 年 12 月 10 日，它成为瑞典第一座用电力照明街道的城市，电来自城外的约德奥水电站。城市自称“高海岸之门”：北面几十公里的高海岸是世界遗产，那里的陆地在冰后回弹中抬升了近 300 米，是全世界记录到的最高幅度，海岸线因此年年在变。松兹瓦尔在南面约 50 公里，斯德哥尔摩在南面约 400 公里。初来的人最容易犯的错，是把海讷桑德当作一个小镇，而它是一个省的首府，只是这个省的人口本来就少。",
@@ -8402,8 +8426,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人，也是探索高海岸的最佳季节；建议安排一到两日自驾游览高海岸大桥沿线的抬升海岸地貌。",
   },
   are: {
+    // identity sources: 瑞典统计局（SCB）城区（tätort）人口，最近一期为 **2023 年数据、2024-11-28 发布**：奥勒村/城区 3,699；奥勒市镇 12,770（2025-12-31）。
+    //   **下一期（2025 年数据）预计 2026-11-26 发布，届时这一批城区数字要一起回来刷新。**
+    //   **瑞典三档并存口径**：kommun（市镇，含乡村）／tätort（城区）／storstadsområde 或 län（都会区/省）——本条写的是城区。
+    //   **同一地名下差了近 4 倍的三个量**：村/城区 3,699、市镇 12,770。
+    //   原来 identity 写「1.4 万」（接近市镇但偏高、未点名），howItWorks 写「3,200」（城区，且已过期）。
     identity:
-      "奥勒是瑞典中西部耶姆特兰省的度假小镇，人口约1.4万，是北欧最大的高山滑雪度假地，坐落于奥勒湖畔的奥勒斯基山脚下。",
+      "奥勒是瑞典中西部耶姆特兰省的度假小镇，奥勒村常住人口约3,700（2023年；奥勒市镇整体约1.3万，含周边村镇），是北欧最大的高山滑雪度假地，坐落于奥勒湖畔的奥勒斯基山脚下。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Åre (Sweden; village ~3,200 in Åre Municipality, Jämtland; at about 400 m by Åresjön below Åreskutan; the largest alpine ski resort in northern Europe with more than 30 lifts; tourism about 25 per cent of the local economy; visitors came after the railway of 1882 as "air-guests"; Alpine World Championships 1954, 1977 and 2007 and 2019, over 100 World Cup races; the largest mountain-bike resort in Sweden since the 1990s; on the line from Östersund to Trondheim)
     howItWorks:
       "奥勒是瑞典耶姆特兰省的一个村，常住人口约 3,200，属于奥勒市镇，由民选的市议会治理；市镇管学校与规划，大区管医院与公共交通，国家管警察。村子在奥勒湖边、奥勒山脚下，海拔约 400 米。1882 年铁路通到这里之后，斯德哥尔摩的人开始来“吸空气看山”，当年称他们“空气客”，旅游从那时起成了本地的生意，如今约占经济的四分之一。它是北欧最大的高山滑雪场，有三十多部缆车，是瑞典唯一能办奥运级速降的场地，1954、2007 与 2019 年三次举办高山滑雪世锦赛，世界杯赛在这里跑过一百多场；1990 年代起夏天又成了瑞典最大的山地车场。铁路从厄斯特松德通往挪威的特隆赫姆，从村口经过。初来的人最容易犯的错，是按常住人口预期这里的规模，而旺季的奥勒住着几万人。",
@@ -8437,8 +8466,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月是南部旅游旺季、日照最长；拉普兰地区12-次年3月可观测极光，6-7月可见极昼；跨越南北的行程建议乘国内航班衔接，火车更适合区域内深度游览。",
   },
   helsinki: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：赫尔辛基市镇 694,392（2025-12-31）；**首都圈（4 市镇）约 1,267,272、大赫尔辛基约 1,606,104（2024-12-31）**——
+    //   原来写的「都会区约 150 万」卡在这两个官方口径之间，不对应任何一个。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "赫尔辛基是芬兰首都与最大城市，人口约67万（都会区约150万），坐落于芬兰湾北岸的半岛与群岛之上，是北欧重要的设计、科技与港口城市。",
+      "赫尔辛基是芬兰首都与最大城市，人口约69万（2025年末；首都圈四市约127万，大赫尔辛基约161万），坐落于芬兰湾北岸的半岛与群岛之上，是北欧重要的设计、科技与港口城市。",
     // howItWorks sources: Wikipedia (2026-09): Helsinki (land ~214 km²; ~694,000; mayor elected by council since 2017; capital region 4 municipalities ~1.3 million; Greater Helsinki ~1.6 million ≈ quarter of Finland; HSL zones; bilingual, Swedish 5.4%; Suomenlinna UNESCO 1991; airport in Vantaa); Municipalities of Finland (Helsinki keeps own health services)
     howItWorks:
       "人们口中的赫尔辛基，在行政上只是陆地约 214 平方公里的赫尔辛基市，人口约 69 万；2017 年起它由市议会选出的专职市长治理，是芬兰第一个采用市长制的市镇。芬兰的市镇管学校、规划与地方交通，2023 年起医疗与社会服务移交给福利服务县，唯独赫尔辛基保留了自己的医疗体系，国家管警察与大学。首都圈由赫尔辛基、埃斯波、万塔、考尼艾宁四个独立的市镇组成，约 130 万人，大赫尔辛基约 160 万，占芬兰的四分之一；机场在万塔。HSL 交通局统管首都圈的地铁、有轨电车、通勤火车与渡轮，按 ABCD 票价区计费，一条地铁线的支线 2017 与 2022 年延伸到了埃斯波。参议院广场与克鲁努哈卡是老城，坎皮是商业中心，卡利奥是旧工人区，托洛是 20 世纪初的街区，卡拉萨塔马与耶特卡萨里是旧港区改成的新区，芬兰堡 1991 年列入世界遗产，三百多座岛屿属于市镇。市镇法定双语，路牌先芬兰语后瑞典语，瑞典语人口约 5%。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把赫尔辛基市当作整个首都圈，而埃斯波与万塔是两座有自己市政府的城市。",
@@ -8454,8 +8488,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人、日照最长；苏欧曼林纳要塞乘船约15分钟可达，建议预留半日游览；市内景点集中，步行加电车足以覆盖。",
   },
   turku: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：图尔库市镇 209,633（2025-12-31）。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "图尔库是芬兰最古老的城市与前首都，人口约20万，坐落于奥拉河口，是探索群岛海的门户，也是芬兰瑞典语文化的重要中心之一。",
+      "图尔库是芬兰最古老的城市与前首都，人口约21万（2025年末），坐落于奥拉河口，是探索群岛海的门户，也是芬兰瑞典语文化的重要中心之一。",
     // howItWorks sources: Wikipedia (2026-09): Turku (land ~245 km²; ~210,000; oldest city, capital until 1812; 1827 fire, Engel grid; Aura river; bilingual, Swedish ~5%; two universities ~40,000; ferries to Stockholm; Meyer shipyard; mayor model); Municipalities of Finland
     howItWorks:
       "图尔库是芬兰最古老的城市，1812 年以前是首都；它是西南芬兰区的首府，陆地约 245 平方公里，人口约 21 万，2021 年起由市议会选出的专职市长治理。市镇管学校、规划与地方交通，福利服务县管医疗，国家管警察与大学；图尔库地区约 33 万人，卡里纳、赖西奥、楠塔利各是独立的市镇。奥拉河是城市的轴线：东岸是大教堂与老城，西岸是城堡与新的开发区，河上的小渡船与河船是市民的日常，市集广场在河的东岸。1827 年的大火烧毁了老城，恩格尔的方格规划让它成为欧洲最统一的新古典街区之一。市镇法定双语，瑞典语名是奥布，瑞典语人口约 5%，图尔库大学与奥布学院两所大学约 4 万学生。渡轮通往斯德哥尔摩与奥兰群岛，图尔库群岛在城的西面，迈尔船厂造大型邮轮。没有有轨电车，Föli 的公交承担出行。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把图尔库当作一座退休的旧都，而它是芬兰通往瑞典的门户与造船之城。",
@@ -8488,8 +8526,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人；渡轮往返斯德哥尔摩或图尔库是体验波罗的海航行的经典方式，船上多设有免税购物区。",
   },
   tampere: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：坦佩雷市镇 263,337（2025-12-31），**按市镇人口排全国第三**（赫尔辛基、埃斯波 325,716 在前）——
+    //   原来 identity 写「第二大城市、24 万」，**名次和数字都不对**，而同条目 howItWorks 写的第三、26 万是对的。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "坦佩雷是芬兰第二大城市，人口约24万，建在内西湖与皮哈耶尔维湖之间的地峡上，19世纪起因两湖水力落差发展为芬兰重要的工业城市。",
+      "坦佩雷是芬兰第三大市镇，人口约26万（2025年末），建在内西湖与皮哈耶尔维湖之间的地峡上，19世纪起因两湖水力落差发展为芬兰重要的工业城市。",
     // howItWorks sources: Wikipedia (2026-09): Tampere (land ~525 km²; ~263,000; pormestari since 2007; Pirkanmaa seat; region ~400,000; Näsijärvi/Pyhäjärvi isthmus, Tammerkoski 18 m; Finlayson/Tampella; tram 2021; university ~30,000; Nokia Arena 2021); Municipalities of Finland
     howItWorks:
       "坦佩雷是芬兰第三大市镇，皮尔卡区的首府，陆地约 525 平方公里，人口约 26 万；2007 年起由市议会选出的专职市长治理。市镇管学校、规划与地方交通，福利服务县管医疗，国家管警察与大学；坦佩雷地区约 40 万人，诺基亚市、于勒耶尔维、坎加萨拉各是独立的市镇。城市建在纳西湖与皮哈湖之间的地峡上，两湖之间 18 米的落差形成坦梅尔科斯基急流，19 世纪的芬莱森与坦佩拉纺织厂靠它驱动，“北方的曼彻斯特”由此得名，红砖厂房至今是市中心的骨架。哈梅街是东西向的主街，中央广场在河边，皮尼基山脊是城里的森林，皮斯帕拉是山坡上的旧工人区。2021 年通车的有轨电车连起市区，同年启用的诺基亚竞技场是新的地标。坦佩雷大学约 3 万学生。这座城自称“世界桑拿之都”，公共桑拿是日常。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把坦佩雷当作一座内陆工业城，而它是芬兰南部除首都圈之外最大的都会区。",
@@ -8505,8 +8548,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人；坦佩雷是探索芬兰湖区中西部的便捷门户，市内工业遗址步行可达。",
   },
   jyvaskyla: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：于韦斯屈莱市镇 149,895（2025-12-31），全国第七。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "于韦斯屈莱是芬兰中部的大学城，人口约14万，坐落于派耶内湖北端，是探索芬兰湖区北部的门户城市。",
+      "于韦斯屈莱是芬兰中部的大学城，人口约15万（2025年末），坐落于派耶内湖北端，是探索芬兰湖区北部的门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Jyväskylä (Finland; regional capital of Central Finland, about 150,000 residents, the seventh-largest municipality; about 270 km north of Helsinki on the northern shore of Lake Päijänne; the world's first junior secondary school taught in Finnish, 1858, Finland's first teacher-training college 1863 and girls' school 1864, hence "Athens of Finland"; over 30 per cent of the population students, about 45,000 enrolled; University of Jyväskylä 1966; more Alvar Aalto buildings than any other city in the world; Rally Finland, over 500,000 spectators)
     howItWorks:
       "于韦斯屈莱是芬兰中芬兰区的首府，人口约 15 万，是全国第七大市镇，在赫尔辛基以北约 270 公里、派延奈湖的北岸；芬兰的市镇管学校、规划与地方服务，2023 年起医疗与社会服务归新设的福祉服务县，国家管警察与大学。它被称作“芬兰的雅典”，是因为教育的起点都在这里：1858 年世界上第一所用芬兰语授课的初级中学在此开办，1863 年芬兰第一所师范学院、1864 年第一所女子学校也在这里，直到今天全城三成以上的人口是学生，各级在读者约四万五千人。它同时是阿尔瓦·阿尔托建筑最集中的城市，全世界没有第二座城有这么多——阿尔托在这里长大，把湖畔的坡地比作意大利的葡萄园。八月的芬兰拉力赛是北欧规模最大的年度赛事，观众超过五十万。初来的人最容易犯的错，是按人口把它当作一座省城，而它的节奏由大学与学期决定。",
@@ -8522,8 +8569,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人；于韦斯屈莱是探索派耶内湖及芬兰湖区北部的理想基地。",
   },
   savonlinna: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：萨翁林纳市镇 31,008（2025-12-31）——原来 identity 的 3.3 万偏高，**与同条目「1990 年曾有 41,359 人、持续下降」的叙述自相矛盾**。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "萨翁林纳是芬兰湖区东部的小城，人口约3.3万，坐落于塞马湖水系之中，奥拉维林纳城堡是芬兰最具代表性的湖畔城堡。",
+      "萨翁林纳是芬兰湖区东部的小城，人口约3.1万（2025年末），坐落于塞马湖水系之中，奥拉维林纳城堡是芬兰最具代表性的湖畔城堡。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Savonlinna (Finland; municipality in South Savo, about 31,000 residents, down from 41,359 in 1990; in the heart of the Saimaa lakeland, the "capital of Saimaa"; Olavinlinna castle founded 1475 by Erik Axelsson Tott on an island; Savonlinna Opera Festival held in the castle since 1912; Kerimäki Church the largest wooden church in the world; Lusto forest museum at Punkaharju; 335 km from Helsinki, about four hours by train; regional airport)
     howItWorks:
       "萨翁林纳是芬兰南萨沃区的市镇，人口约 3.1 万，1990 年时曾有 41,359 人，此后持续减少；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。它在塞马湖区的中心，因此自称“塞马之都”——城市散在湖与湖之间的水道上，桥比街多。1475 年埃里克·阿克塞尔松·托特在一座小岛上建起奥拉维城堡，是北欧保存最完好的中世纪石堡之一；1912 年起城堡的内院被用作歌剧舞台，七月的萨翁林纳歌剧节把这座三万人的城塞满，是芬兰最著名的音乐节之一。附近的凯里迈基教堂是世界上最大的木造教堂，蓬卡哈尤的冰碛脊上有森林博物馆，塞马环斑海豹只生活在这片湖里。赫尔辛基在西南 335 公里，火车约四小时。初来的人最容易犯的错，是把歌剧节当作全年的样子，而节期之外这是一座安静、正在变小的湖城。",
@@ -8539,8 +8590,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人，7月歌剧节期间住宿紧张、建议提前预订；蓬卡哈尔尤距市区约30公里，是萨翁林纳周边最经典的一日游目的地。",
   },
   kuopio: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：库奥皮奥市镇 126,572（2025-12-31），全国第八。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "库奥皮奥是芬兰中东部湖区的核心城市，人口约12万，坐落于卡拉韦西湖畔，普宜奥山观景塔是俯瞰湖区群岛的经典地点。",
+      "库奥皮奥是芬兰中东部湖区的核心城市，人口约12.7万（2025年末），坐落于卡拉韦西湖畔，普宜奥山观景塔是俯瞰湖区群岛的经典地点。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuopio (Finland; regional capital of North Savo, about 126,572 residents, the eighth-most populous municipality, the region about 148,000; nearly surrounded by Lake Kallavesi, Finland's tenth-largest lake at 472.76 km²; Puijo tower and ski jumps with annual World Cup ski jumping; kalakukko, the Savonian fish pastry; the market square and market hall; until 2018 the seat of the primate of the Finnish Orthodox Church; University of Eastern Finland; Kuopio Airport in Siilinjärvi, the fifth busiest in Finland)
     howItWorks:
       "库奥皮奥是芬兰北萨沃区的首府，人口约 12.7 万，是全国第八大市镇，周边地区约 14.8 万；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市几乎被卡拉韦西湖围住——这是芬兰第十大湖，面积约 473 平方公里，因此从任何一条主街往下走几百米都是水。普伊约山的塔与跳台立在城北的高地上，每年办跳台滑雪世界杯的分站；集市广场与市场大厅是本地生活的中心，那里卖的“鱼库库”是把鱼裹进黑麦面团烤成的萨沃老食品，这座城因此得了“鱼库库应许之地”的绰号。芬兰东方大学的校区在这里，医药与公共卫生研究是它的强项；直到 2018 年芬兰东正教会的首牧驻此，教会博物馆仍在城中。机场在邻镇锡林耶尔维，是芬兰第五繁忙的。初来的人最容易犯的错，是以为芬兰的东正教会只是少数人的事，而它是这个国家的两个国教会之一。",
@@ -8556,8 +8611,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人；普宜奥山观景塔是俯瞰芬兰湖区地貌的最佳制高点之一，建议傍晚前往观赏日落。",
   },
   oulu: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：奥卢市镇 217,469（2025-12-31），全国第五 —— 名次对，数字四舍五入应是 22 万。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "奥卢是芬兰第五大城市，人口约21万，坐落于波的尼亚湾北岸，是芬兰重要的科技与大学城市，也是探索北芬兰与拉普兰的门户。",
+      "奥卢是芬兰第五大城市，人口约22万（2025年末），坐落于波的尼亚湾北岸，是芬兰重要的科技与大学城市，也是探索北芬兰与拉普兰的门户。",
     // howItWorks sources: Wikipedia (2026-09): Oulu (land ~2,972 km² after 2013 mergers; 217,469 2025; city manager model; North Ostrobothnia seat; Toripolliisi; tar trade; university ~15,000; Nokia; ~20% cycling year-round; ECoC 2026; airport in Oulunsalo); Municipalities of Finland
     howItWorks:
       "奥卢是芬兰北部最大的城市，北博滕区的首府；2013 年与海乌基普达斯、基明基、奥卢恩萨洛、于利伊四个市镇合并后，陆地约 3,000 平方公里，2025 年人口约 22 万，是芬兰第五大市镇，由市议会与任命的市政经理治理。市镇管学校、规划与地方交通，福利服务县管医疗，国家管警察与大学。城市在波的尼亚湾的奥卢河口：市集广场与“集市警察”雕像是市中心的坐标，皮基萨里岛与焦油仓库记着 19 世纪焦油出口的过去，纳利卡里海滩在西面。奥卢大学的林南马校区约 1.5 万学生，诺基亚的无线技术研发让它成为北方的科技城。冬天的雪与冰挡不住自行车，全年约两成的出行靠自行车，奥卢自称“冬季骑行之都”，人行与自行车道超过 950 公里。2026 年它是欧洲文化之都。机场在奥卢恩萨洛，公共交通只有公交，罗瓦涅米在北面约 220 公里。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把奥卢当作一座北极小城，而它是芬兰北部的科技与大学中心。",
@@ -8573,8 +8632,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月适合探索沿海风光，2-3月冬季海冰稳固期可体验独特的破冰船与海冰徒步活动，奥卢也是前往罗瓦涅米的中转门户。",
   },
   rovaniemi: {
+    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：罗瓦涅米市镇 66,191（2025-12-31），在全国市镇人口序列里排第 17。
+    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
+    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
+    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
     identity:
-      "罗瓦涅米是芬兰拉普兰省的首府，人口约6.3万，坐落于北极圈线上，是圣诞老人村所在地与探索拉普兰荒原的传统门户。",
+      "罗瓦涅米是芬兰拉普兰省的首府，人口约6.6万（2025年末），坐落于北极圈线上，是圣诞老人村所在地与探索拉普兰荒原的传统门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rovaniemi (Finland; regional capital of Lapland, about 66,191 residents, the 17th largest city, one of the largest municipalities in Europe by area; about 6 km south of the Arctic Circle at the confluence of the Kemijoki and Ounasjoki; about 90 per cent of buildings destroyed by German forces in 1944, rebuilt to Alvar Aalto's plan in the shape of a reindeer's head with the roads as antlers; Santa Claus Village at the Arctic Circle, the slogan trademarked in 2009; midnight sun 7 June–6 July, December under six minutes of sunshine a day; auroras up to 200 nights a year; University of Lapland)
     howItWorks:
       "罗瓦涅米是芬兰拉普兰区的首府，人口约 6.6 万，是芬兰第 17 大城市，市镇面积在欧洲各地方行政体中名列前茅；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。城市在凯米河与奥纳斯河的交汇处，北极圈以南约 6 公里。1944 年拉普兰战争中约九成的建筑被摧毁，战后按阿尔瓦·阿尔托的规划重建——他把城市的路网画成一只驯鹿的头，主干道是鹿角，这一形状在地图上仍能看出来，因此这里几乎没有老城。北极圈线上的圣诞老人村在城北 8 公里，1985 年起对外接待，城市 2009 年把“圣诞老人的家乡”注册为商标，冬季旅游是本地最大的产业之一。6 月 7 日到 7 月 6 日太阳不落，12 月每天的日照不足六分钟，极光一年可见近两百次；拉普兰大学在城里。初来的人最容易犯的错，是来找一座北极老城，而这座城是 1945 年之后按图纸重建的。",

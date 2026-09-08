@@ -217,6 +217,36 @@
       "reason": "同上",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/visby/identity",
+      "reason": "SCB 的城区（tätort）人口每 2—3 年才发一次，最近一期是 2023 年数据（2024-11-28 发布）；下一期（2025 年数据）预计 2026-11-26 发布",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/kalmar/identity",
+      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/kiruna/identity",
+      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/harnosand/identity",
+      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/are/identity",
+      "reason": "同上，SCB 城区统计最近一期为 2023 年数据",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2026-12"
     }
   ]
 }

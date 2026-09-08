@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: d085073
+lastVerifiedCommit: ad2244b
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -32,6 +32,7 @@ lastVerifiedCommit: d085073
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel-content 芬兰 11 城、瑞典 10 城 identity 的数字与口径（芬兰 + 瑞典城市人口 · 批 1） | 16 | 0 / 16 / 0 | 当场修 16 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | terrain-content 20 篇 × 6 板块，含 C1a/C1b 的最高级与排名一并处理（地形讲解核实 · 批 1（欧洲/日本 10 篇 + 中国 10 篇）） | 9 | 3 / 5 / 1 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | 上海浦东与大连市区两处：数字对、口径也对，但主语离数字太远（C6i 收尾 · 第四轮（把主语挪到数字旁边）） | 2 | 2 / 0 / 0 | 当场修 2 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 印尼 7 城、蒙古 7 城 identity/howItWorks 人口数字与口径（印尼 + 蒙古城市人口 · 批 1） | 16 | 0 / 15 / 1 | 当场修 15 条；新开 issue 1、关闭 0 |
