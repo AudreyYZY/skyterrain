@@ -489,6 +489,9 @@ export const TERRAIN_CONTENT_ZH: Record<string, TerrainLesson> = {
   },
 
   "yangtze-gorges": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
+    //   **这条注释本身是留痕**：批 2 里核过而无需改动的篇目原先不写注释，
+    //   下一轮就会被当成「没核过」再派一遍工 —— 核过无误也要留痕。
     seeing:
       "长江三峡是长江切穿巫山山脉形成的大峡谷，从重庆奉节的白帝城到湖北宜昌的南津关，全长约190公里，由瞿塘峡、巫峡、西陵峡三段峡谷和之间的宽谷组成。两岸悬崖夹江，是长江上最险峻壮丽的一段。",
     formation:
@@ -550,6 +553,7 @@ export const TERRAIN_CONTENT_ZH: Record<string, TerrainLesson> = {
   },
 
   hainan: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "海南岛是中国第二大岛（仅次于台湾岛），位于南海北部，与广东雷州半岛隔琼州海峡相望。它是我国唯一的热带岛屿省份，形状像一个椭圆的“大馒头”：中间高、四周低。",
     formation:
@@ -671,6 +675,7 @@ export const TERRAIN_CONTENT_ZH: Record<string, TerrainLesson> = {
   },
 
   kimberley: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "金伯利是澳大利亚极西北的一片砂岩高原，约42万平方公里，比德国还大，海岸被潮汐峡谷深深切割，属季风气候。它最有名的是普努鲁鲁的班古鲁班古鲁岭——一片橙灰相间的蜂窝状圆丘迷宫。这里的潮差是世界最大之一，超过10米。",
     formation:
@@ -686,6 +691,7 @@ export const TERRAIN_CONTENT_ZH: Record<string, TerrainLesson> = {
   },
 
   "simpson-desert": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "辛普森沙漠覆盖澳大利亚中部约17.6万平方公里，跨三个州。它以沙丘闻名：1100多条平行沙垄，走向北北西—南南东，有的绵延200多公里不断，被认为是世界上最长的平行沙丘之一。伯兹维尔附近的“大红丘”最有名。",
     formation:
@@ -1022,6 +1028,7 @@ export const TERRAIN_CONTENT_ZH: Record<string, TerrainLesson> = {
   },
 
   "great-sandy-desert": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "大沙沙漠在西澳大利亚东北部，跨皮尔巴拉和南金伯利，并向东延进北领地，是澳大利亚面积第二大的沙漠。它主要不是高大沙丘，而是一望无际的低矮沙原，上面横着一道道近乎平行、方向大致东西的长沙脊。",
     formation:
