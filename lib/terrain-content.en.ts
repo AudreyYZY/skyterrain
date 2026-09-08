@@ -47,6 +47,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   tianshan: {
     seeing:
       "The Tianshan crosses central Xinjiang and splits the region into a southern and a northern half. The whole system runs about 2,500 km east–west, some 1,700 km of it inside China, and is one of the largest independent latitudinal (east–west) mountain systems on Earth. From the air you see white peaks and glaciers, a ring of yellow-green alluvial fans and oases at the foot, and beyond them the Taklamakan and Gurbantunggut deserts.",
+    // formation sources: 新疆天山 2013 年列入世界自然遗产（UNESCO 第 37 届大会，标准 vii、ix）
+    //   https://whc.unesco.org/en/list/1414（1 级，2026-09-08 核）。
+    //   **托木尔峰有两套并存的高程口径**：中国官方 7443 m / 国际常用 7439 m（Jengish Chokusu），
+    //   差 4 m 属测量口径差异 —— 条目取中国官方值，位置写「中国与吉尔吉斯斯坦边界」，准确。
+    //   博格达峰 5445 m、位于阜康市境内，晴天可自乌鲁木齐远眺。
+    //   天山全长约 2500 km、中国境内约 1700 km，与通行表述一致。
     formation:
       "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — geomorphologists call it a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Its highest point, Tomur Peak (about 7,443 m), sits on the China–Kyrgyzstan border; Bogda Peak (5,445 m), just beside Ürümqi, is the best-known landmark.",
     observation:
@@ -99,6 +105,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   karakoram: {
     seeing:
       "The Karakoram sits at the far south-west of Xinjiang on the China–Pakistan border, one of the densest concentrations of extreme peaks on Earth. It has four 8,000 m summits, including K2 (Qogir, 8,611 m), the world's second-highest mountain. \"Karakoram\" means \"black gravel mountains.\"",
+    // formation sources: 喀喇昆仑山脉全球 4 座 8000 米级山峰（K2 8611 m、加舒尔布鲁姆 I / II、布洛阿特峰）——
+    //   条目未误称这 4 座都在中国境内，表述准确。红其拉甫达坂约 4700—4733 m；
+    //   喀喇昆仑山口国际资料多给 5540 m（文中 5575 m，差约 35 m，属不同测绘口径）。
+    //   中巴公路施工实际是 1966 年起、1978/79 年完工，文中「1970 年代」是简化但落在主要施工年代内。
+    //   **零争议红线复核通过**，但记两处「离争议最近」的地方供以后优先复核：
+    //   ① 锡亚琴冰川位于印巴克什米尔争议区、是军事对峙前线，条目只引用其长度作地理事实、
+    //      未提归属或争议 —— 是全书里离克什米尔议题最近的一句；
+    //   ② 真正的喀喇昆仑山口位于中国新疆与印控拉达克之间，条目只说「在东侧」、未点国别、
+    //      未描述边界，处理方式已是中性表述。
+    //   两处都符合当前红线，**若以后收紧，从这两处开始看**。
     formation:
       "Like the Himalaya, the Karakoram belongs to the belt of the India–Eurasia collision; it rises fast and is deeply cut, making the terrain exceptionally steep. It holds some of the largest glaciers outside the polar regions — the Siachen is about 70 km long, the Biafo about 63 km. The China–Pakistan Highway crosses at the Khunjerab Pass, about 4,700 m (the true Karakoram Pass lies to the east at about 5,575 m, with no road).",
     observation:
@@ -317,8 +333,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Junggar Basin is roughly triangular: the Gurbantunggut Desert in the centre, but its dunes are mostly fixed by saxaul, so it reads as mottled yellow-green rather than the pure moving yellow of the Taklamakan. Lake Ulungur lies on the northern rim and Lake Ebi on the west (Lake Manas has largely dried up), and the piedmont oasis belt of the northern Tianshan (Ürümqi, Shihezi, Karamay) rings the southern edge.",
     distinguish:
       "See the Tarim entry. The core difference: the Junggar is \"half-open, wetter, fixed dunes, small,\" the Tarim is \"fully closed, extremely arid, moving dunes, large.\" In winter the Junggar Basin develops a very thick temperature inversion and the floor becomes bitterly cold.",
+    // concept sources: 同 `gurbantunggut/seeing` 的来源与口径。
+    //   **同一个排名断言写在两个条目里** —— 修的时候要一起改，否则全站口径不一致。
+    //   准噶尔盆地为中国第二大内陆盆地（中科院地理科学与资源研究所，1 级）；
+    //   艾比湖湖面海拔 189 m 为盆地最低点，与「盆地底部约 500 m」不矛盾（后者是整体底面海拔）。
+    //   克拉玛依油田 1955-10-29 一号井喷油、为新中国第一个大油田（人民网，2 级）—— 均核实属实。
     concept:
-      "The Junggar Basin shows how a single gap can change how wet a region is. The Gurbantunggut is China's largest fixed and semi-fixed desert, because a steady supply of snowmelt and relatively more rain let saxaul forest take root and stop the dunes moving.",
+      "The Junggar Basin shows how a single gap can change how wet a region is. The Gurbantunggut is China's largest fixed-and-semi-fixed desert by area, because a steady supply of snowmelt and relatively more rain let saxaul forest take root and stop the dunes moving.",
     history:
       "The Junggar Basin lay on the northern Silk Road. The Karamay oilfield, discovered in 1955, was the first large oilfield of the People's Republic; \"Karamay\" means \"black oil\" in Uyghur.",
   },
@@ -1259,8 +1280,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   gurbantunggut: {
+    // seeing sources: 古尔班通古特沙漠面积约 4.88 万 km²，按面积计为中国第二大沙漠、中国最大的固定半固定沙漠
+    //   —— 中科院地理科学与资源研究所《中国地貌》
+    //   http://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692337.html（1 级）
+    //   与中国林业科学研究院 https://www.caf.ac.cn/info/1298/30042.htm（1 级），2026-09-08 核。
+    //   纬度范围约 44°11′—46°21′N，「中国纬度最高的沙漠」这一条已给出坐标作为实证。
+    //   **两个排名此前都没写比较口径，已补「按面积计」** —— 数字对、排名也对，缺的是口径。
     seeing:
-      "The Gurbantunggut Desert lies in the centre of the Junggar Basin, about 48,000 km² — China's second-largest desert and its largest fixed and semi-fixed desert. Its dunes are lower and gentler than the Taklamakan's; the surface carries drought-tolerant saxaul and large numbers of spring ephemerals, and snow can be seen in winter.",
+      "The Gurbantunggut Desert lies in the centre of the Junggar Basin, about 48,000 km² — China's second-largest desert by area, and its largest fixed-and-semi-fixed desert by area. Its dunes are lower and gentler than the Taklamakan's; the surface carries drought-tolerant saxaul and large numbers of spring ephemerals, and snow can be seen in winter.",
     formation:
       "The Junggar Basin has gaps in the north-west (the Irtysh valley, the Alataw Pass) that let in some westerly moisture, and steady winter snowmelt on top of that, so annual rainfall is higher than in the Tarim Basin. That moisture lets plants root on the dunes and hold the sand, so this is mostly fixed and semi-fixed dunes rather than a pure sea of moving sand.",
     observation:
@@ -1525,6 +1552,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Badain Jaran is a field of golden sand mountains in violent relief, like frozen giant waves, with small deep-blue or jade-green lakes set in the troughs, often with a patch of green and a temple beside them. Sliding down the steep dune faces makes a roaring sound (\"singing sand\").",
     distinguish:
       "The Badain Jaran and the Taklamakan: both are moving-sand deserts, but the Badain Jaran's sand mountains are far taller and it holds many lakes; the Taklamakan is far larger, drier and almost lakeless. The Badain Jaran and the Tengger (both in Alxa): the Badain Jaran is to the west, with tall sand mountains and many lakes; the Tengger is to the east, its dunes lower, and is closer to the Yellow River and the railway.",
+    // concept sources: 巴丹吉林沙漠—沙山湖泊群 2024-07-26 列入世界自然遗产（UNESCO 第 46 届大会，标准 vii、viii），
+    //   中国首个沙漠类世界自然遗产 —— 教育部官网转发官方通报（1 级，2026-09-08 核）。
+    //   面积约 4.92 万 km²、按面积计中国第三大沙漠（中科院地理科学与资源研究所，1 级）。
+    //   **必鲁图沙峰：相对高度约 460 m，绝对海拔约 1610 m** —— 条目写的是「相对高度」，没混。
+    //   沙山为何这么高，条目如实写了「学界还有讨论」，是正确处理。
     concept:
       "The Badain Jaran is a sample of \"why there are lakes in a desert\": the hollows between the dunes cut down to the water table, so groundwater seeps out and pools. Why the sand mountains grow so tall and are not blown flat is a not-yet-fully-solved problem in desert geomorphology. In 2024 the sand-mountain-and-lake complex of the Badain Jaran was inscribed as World Natural Heritage.",
     history:
@@ -2516,8 +2548,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "japanese-alps": {
+    // seeing sources: 北岳 3,193 m，日本第二高峰（次于富士山 3,776 m），属实。
+    //   飞驒山脉（剑岳、立山一带）确有小规模现代冰川，日本雪冰学会 2012 年起陆续确认 ——
+    //   条目把冰川限定在飞驒山脉、没有和北岳所在的赤石山脉混为一谈，这一点是对的。
+    //   **原文一句话里叠了三个查无口径出处的最高级**（最陡、冰川地貌保存最好、登山运动最发达），
+    //   已改成可核实的事实陈述。
     seeing:
-      "The Japanese Alps is the collective name for the Hida, Kiso and Akaishi ranges — three roughly parallel ranges in central Honshu that hold most of Japan's peaks over 3,000 m. The highest, Mount Kita, is 3,193 m, the second-highest mountain in Japan. This is the most rugged, sharp-crested part of Japan, where its glacial landforms are best preserved and where mountaineering is most developed.",
+      "The Japanese Alps is the collective name for the Hida, Kiso and Akaishi ranges — three roughly parallel ranges in central Honshu that hold most of Japan's peaks over 3,000 m. The highest, Mount Kita, is 3,193 m, the second-highest mountain in Japan. Its slopes are steep and its ridges sharp; it is one of the areas of Japan where glacial landforms are best preserved, and one where mountaineering has long been well established.",
     formation:
       "The uplift of the Japanese Alps is quite young — mainly in the past one to two million years, the result of the Pacific and Philippine Sea plates pressing Honshu from the east and south, strongly shortening and raising the crust; it is still rising fast and is seismically active. During the ice ages, valley glaciers formed on the higher ground, carving the summits into cirques and arêtes; today a few very small modern glaciers survive in shaded spots in the Hida range.",
     observation:
@@ -3366,6 +3403,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Cairngorms and the western Highlands around Ben Nevis are both part of the Scottish Highlands, but the Cairngorms are a \"plateau type\" — a large gentle granite surface with steep corries at the edge; the western Highlands are more of a \"peak type\", with sharp ridges and deeper glens. Compared with the high Alps, the Cairngorms have no permanent glaciers, but the climate and landforms of the plateau top are near-subarctic.",
     concept:
       "The Cairngorms are a case study in selective glacial erosion: in the same upland, glaciers flowing fast at the edge erode strongly, gouging corries and deep valleys; in the centre, the base of the ice cap is frozen and barely moves, so it \"freezes in\" and preserves the ancient gentle surface. A common misconception is that ice-covered ground must be scoured flat — a cold-based ice cap is in fact the best \"protective cover\".",
+    // history sources: 阿伯内西森林是苏格兰现存**面积最大**的原生喀里多尼亚松林，但不是仅存的一片
+    //   （罗西缪库斯、格伦阿弗里克、拉诺赫黑林等都还在），
+    //   https://treesforlife.org.uk/into-the-forest/visiting/（3 级，苏格兰喀里多尼亚森林保护组织，2026-09-08 核）。
+    //   **中文此前写成「仅存」，英文写的是 largest surviving —— 是中文这边把「最大」改写成了「唯一」。**
+    //   这是中英分歧的第三种方向：前两轮抓到的是英文凭空多出数字、以及中文注释与正文不同步，
+    //   这一次是**中文把一个有限定的说法收紧成了绝对断言**。
+    //   凯恩戈姆花岗岩侵入年代约 4.27 亿年前（伦敦地质学会，2 级）；
+    //   国家公园 2003 年设立、2010 年扩界后 4,528 km²、为英国最大（3 级）—— 这两条核实属实。
     history:
       "The Cairngorms area has long been a place for hunting (deer, grouse) and grazing, and the old pine forest in the hills is the largest surviving stand of native forest in Scotland. In the 20th century roads and ski tows were built into the mountains. The Cairngorms National Park was established in 2003, and after a boundary extension in 2010 it became the largest national park in the UK, focused on protecting the alpine ecology and the old pinewoods.",
   },
@@ -4001,8 +4046,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "myrdalsjokull": {
+    // seeing sources: 米尔达斯冰盖面积：1980 年 595 km² → 2016 年 540 km² → **2019 年 520 km²**
+    //   （Hannesdóttir 等 2020 的测量序列，经 en.wikipedia 转引，3 级）；
+    //   卡特拉 UNESCO 地质公园官方页给现势面积 535 km²，
+    //   https://www.katlageopark.com/geosites/mainly-geology/myrdalsjoekull/（2 级，2026-09-08 核）。
+    //   **冰川面积是逐年缩的量**，和人口一样属于「不带年份等于没说」的那一类 ——
+    //   原来写的 590 km² 是四十多年前的值。
+    //   卡特拉破火山口直径约 10 km 属实（若按当前冰面 700 m 等高线量则接近 20 km，是另一个口径）。
     seeing:
-      "Mýrdalsjökull, on Iceland's south coast, is the fourth-largest ice cap in Iceland, about 590 km². Its most important \"identity\" is that directly beneath it lies the Katla volcano's large caldera, about 10 km across. The Sólheimajökull outlet glacier flowing from its south-western edge is one of the easiest glaciers in Iceland to reach and one of the most used for glacier walks.",
+      "Mýrdalsjökull, on Iceland's south coast, is the fourth-largest ice cap in Iceland, about 520 km² as measured in 2019 and still shrinking. Its most important \"identity\" is that directly beneath it lies the Katla volcano's large caldera, about 10 km across. The Sólheimajökull outlet glacier flowing from its south-western edge is one of the easiest glaciers in Iceland to reach and one of the most used for glacier walks.",
     formation:
       "Mýrdalsjökull sits on a volcano cut through by a caldera. The ice cap formed from the abundant snow on the south-coast highlands compacting and flowing outward; being at low latitude, near the sea and with heavy precipitation, it is one of Iceland's ice caps with the most vigorous accumulation and melt. The Katla volcano below gives the base of the ice cap geothermal heat, and an eruption would rapidly melt ice and trigger a glacial flood. Sólheimajökull has retreated hundreds of metres in recent decades, its snout forming a steadily growing proglacial lake.",
     observation:
@@ -6890,8 +6942,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Thessalian Plain appears as a neat patchwork of farmland set sharply against the surrounding mountains; the Pineios River winds across the plain, and the Vale of Tempe in the north-east forms a natural passage toward Macedonia.",
     distinguish:
       "Both the Thessalian Plain and the Lasithi Plateau are agricultural land, but the Thessalian Plain is a broad, low-elevation floodplain built by a major river, while Lasithi is a small, high-elevation karst basin ringed by mountains.",
+    // concept sources: 「超过一半的土地用于农业种植」**查不实，已降级为不带比例的表述**：
+    //   希腊语来源给的「250 万 / 500 万斯特雷马」是**理论灌溉面积**占比，不是种植面积占比；
+    //   另一份皮尼奥斯河流域（范围比平原本身大）的资料给农业用地 36%，与「过半」矛盾。
+    //   ELSTAT 对「色萨利平原」本身的种植面积占比没找到（3 级来源，2026-09-08 核）。
+    //   「希腊本土面积最大的农业平原」这一条核实属实（约 5000 km² 级）。
+    //   history 板块经零争议红线复核合规（只写地质史与广泛记载的古典时期史实）。
     concept:
-      "The Thessalian Plain is Greece's most important grain-producing region, with more than half its land under cultivation — wheat, cotton and maize are the main crops — illustrating how deep alluvial soils support intensive agriculture.",
+      "The Thessalian Plain is Greece's most important grain-producing region, with a large share of its land under cultivation — wheat, cotton and maize are the main crops — illustrating how deep alluvial soils support intensive agriculture.",
     history:
       "The Thessalian Plain has been an important agricultural region since ancient Greek times, and the area was historically noted for raising fine horses.",
   },
