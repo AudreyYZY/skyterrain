@@ -15,6 +15,9 @@ import type { TerrainLesson } from "@/types/terrain";
 export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Mountain systems ============
   qinling: {
+    // seeing sources: 太白山拔仙台海拔 3,771.2 m；广义秦岭山系东西长约 1,600 km ——
+    //   陕西省宁陕县人民政府 https://www.ningshan.gov.cn/Content-644809.html（1 级，2026-09-08 核）。
+    //   「秦岭是长江与黄河的分水岭」等表述经复核准确，中英逐句对应无分歧。
     seeing:
       "The Qinling Mountains run east–west across the exact middle of China; the range system as a whole is about 1,600 km long. They are one of the country's most important natural dividing lines: warm-temperate dry farming to the north, subtropical rice country to the south. From the air the range splits the palette in two — the yellow Guanzhong Plain and Loess Plateau on the north side, the deep green Hanzhong and Sichuan basins on the south.",
     formation:
@@ -73,6 +76,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   //   4,082 m) is the tripoint and is 奎屯峰/Kuitun in Chinese. The two languages' "Friendship
   //   Peak" are different mountains — the original text said the 4,374 m peak was at the tripoint.
   altai: {
+    // seeing sources: 2026-09-08 复核：`formation` 段刚修过的那处（友谊峰是中蒙界峰、三国交界点是奎屯峰）
+    //   **没有回归**，条目上方的命名陷阱注释与中英正文三处一致。
+    //   其余 5 个板块经逐句对照未见中英分歧；额尔齐斯河经俄罗斯注入北冰洋、
+    //   是新疆唯一的外流水系，属公认地理事实。
     seeing:
       "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, of which Kanas Lake is the best known.",
     formation:
@@ -279,8 +286,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yunnan-guizhou": {
+    // seeing sources: 云贵高原海拔 1000–2000 m，跨云南东部与贵州大部；喀斯特为其标志性地貌。
+    //   「工程性缺水」「坝子」「峰林峰丛」等表述经复核准确（2026-09-08 核）。
+    //   **原文「最出名的是」是没有比较口径的主观最高级，已改成直接陈述** —— 事实一点没少。
     seeing:
-      "The Yunnan–Guizhou Plateau, in south-west China, covers eastern Yunnan and most of Guizhou at 1,000–2,000 m. It is best known for karst: limestone dissolved by water into stone forests, caves, sinkholes and underground rivers, leaving a surface where \"there are not three feet of level ground.\"",
+      "The Yunnan–Guizhou Plateau, in south-west China, covers eastern Yunnan and most of Guizhou at 1,000–2,000 m. Karst is its signature landform: limestone dissolved by water into stone forests, caves, sinkholes and underground rivers, leaving a surface where \"there are not three feet of level ground.\"",
     formation:
       "This was shallow sea for long stretches of the geological past, which laid down thick limestone; it was later uplifted in the Cenozoic along with the wider south-west. Limestone dissolves slowly in carbon-dioxide-charged water, and over millions of years both surface and underground have been \"hollowed out\" into fantastic shapes. The Yunnan part is higher with gentler relief (more basins, bazi); the Guizhou part is more deeply cut and broken.",
     observation:
@@ -414,6 +424,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the North China Plain is a huge, dense expanse of rectangular fields and towns, with almost no relief visible. The lower Yellow River is a broad golden band clearly higher than the land on either side; at the mouth, silt fans out into the sea as a muddy yellow plume against the blue water.",
     distinguish:
       "The North China Plain versus the Northeast Plain: North China is at lower latitude, dominated by Yellow River loess, two harvests a year, and severely short of water; the Northeast is at higher latitude, black soil, one harvest a year, and relatively water-rich. Versus the Middle-Lower Yangtze Plain: North China is shaped by the Yellow River, drier, dryland farming; the Yangtze plain is shaped by the Yangtze, water-netted, paddy farming.",
+    // concept sources: 黄河含沙量居世界首位 —— 中科院地理科学与资源研究所《输沙量最大的河——黄河》
+    //   http://igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692531.html（1 级）；
+    //   Science Advances 亦称其 exceptional sediment load（2 级），2026-09-08 核。
+    //   **这条断言已自带口径**（比的是「含沙量」这个指标），不属于要补口径的那一类。
+    //   **但有一条会过期的提醒**：近年水土保持与水库拦沙让**年输沙总量**大幅下降 ——
+    //   那是另一个口径。如果以后想改写成强调「输沙总量」，必须另加时间限定。
+    //   「地上悬河」的机制表述与华北平原城市归属经复核准确。
     concept:
       "The most characteristic idea of the North China Plain is the \"suspended river\": the Yellow River carries the world's highest sediment load, which builds up its lower bed until it stands several to more than ten metres above the land (most dramatically at Kaifeng), so a breach is a disaster. The Yellow River has changed course many times through history, and the range of those floods is roughly the outline of today's North China Plain. The plain is also one of China's most water-short, supplied by the South-to-North Water Diversion.",
     history:
@@ -1228,8 +1245,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air Nalati is a rolling green slope between Tianshan snow peaks, white Kazakh felt tents scattered across it, dark spruce forest running in bands down the shady slopes and valleys. The Kunes River winds along the valley floor. It is deep green in summer, with the spruce edges turning gold in autumn.",
     distinguish:
       "Nalati and Bayanbulak are both in valleys or basins within the Tianshan, but Nalati is lower, warmer, its meadow lusher, with large areas of spruce forest; Bayanbulak is higher (above about 2,400 m), colder, flatter, with more marsh wetland and almost no forest.",
+    // concept sources: 那拉提是天山垂直自然带里介于森林带与高山带之间的草甸带。
+    //   断陷谷地、云杉林、哈萨克族「转场」等表述经复核准确（2026-09-08 核）。
+    //   **原文「最好的夏季牧场」比较对象与评价标准都没给，已降级为「之一」。**
     concept:
-      "Nalati shows how a mountain meadow comes about: high enough that forest cannot grow, not yet so high that only bare rock and ice remain, plus steady rain and snowmelt — the result is this meadow belt between the forest belt and the alpine belt. It is one link in the vertical zonation of the Tianshan, and its best summer pasture.",
+      "Nalati shows how a mountain meadow comes about: high enough that forest cannot grow, not yet so high that only bare rock and ice remain, plus steady rain and snowmelt — the result is this meadow belt between the forest belt and the alpine belt. It is one link in the vertical zonation of the Tianshan, and one of its important summer pastures.",
     history:
       "Nalati is traditional Kazakh summer pasture; each summer the herders move stock up the mountain along fixed routes. The name \"Nalati\" is usually explained as \"the place where the sun is.\" In 2013 the Xinjiang Tianshan (including the Nalati area) was inscribed as World Natural Heritage for its glaciers, snow peaks and vertical natural zones.",
   },
@@ -1301,8 +1321,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kumtag: {
+    // seeing sources: 库姆塔格在突厥语里就是「沙山」。沙丘成因（东北风、地形背风堆积）、
+    //   与古尔班通古特和塔克拉玛干的区分、「锁边」用词经复核准确（2026-09-08 核）。
+    //   **原文的「它最特别的地方是」只是主观框定语，删掉之后后半句的事实照旧成立** ——
+    //   这类不用改写内容，删掉框定词即可。
     seeing:
-      "The Kumtag Desert (this entry refers to the patch south of Shanshan) lies in the eastern Turpan Basin, at the southern foot of the eastern Tianshan. \"Kumtag\" is simply \"sand mountain\" in Turkic. What is most striking here is that the desert runs right up to the edge of Shanshan town, with almost no transition — a few steps out of town and you are at dunes tens of metres high.",
+      "The Kumtag Desert (this entry refers to the patch south of Shanshan) lies in the eastern Turpan Basin, at the southern foot of the eastern Tianshan. \"Kumtag\" is simply \"sand mountain\" in Turkic. The desert runs right up to the edge of Shanshan town, with almost no transition — a few steps out of town and you are at dunes tens of metres high.",
     formation:
       "The sand of this patch is fine sand blown from the surrounding gobi and dry riverbeds by the prevailing north-east wind and piled in the lee at the southern foot of the Tianshan. It is extremely arid, with little rain and very strong evaporation, and the dunes are mostly tall moving dunes — crescent, linear, and tall pyramidal sand mountains.",
     observation:
@@ -2096,6 +2120,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "colorado-river": {
+    // seeing sources: 科罗拉多河长约 2,330 km（≈1,450 mi，不同来源在 1,400—1,450 mi 区间），
+    //   美方流经怀俄明/科罗拉多/犹他/新墨西哥/亚利桑那/内华达/加利福尼亚七州 ——
+    //   USGS《The Colorado》https://pubs.usgs.gov/gip/70039371/report.pdf（1 级，2026-09-08 核）。
+    //   **入海口的表述经专门复核**：条目没有简单断言「注入加利福尼亚湾」，
+    //   而是紧接着写明近几十年多数年份在到达河口前就已断流 —— 这是正确处理。
+    //   history 段只记《科罗拉多河契约》与美墨条约等制度事实，未涉主权表态。
     seeing:
       "The Colorado River rises in the Rocky Mountains and flows south-west through seven states for about 2,330 km to the Gulf of California. It cut the Grand Canyon, Glen Canyon and a series of other deep gorges, and is the most important water source in the arid South-West. The Hoover Dam, Glen Canyon Dam and others built in the 20th century divide it into a chain of reservoirs, and its water is so fully allocated that in most years of recent decades the Colorado runs dry before reaching its mouth.",
     formation:
@@ -2352,6 +2382,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "baffin-island": {
+    // seeing sources: 巴芬岛面积约 507,205 km²，加拿大最大岛、世界第五大岛
+    //   （前四：格陵兰、新几内亚、婆罗洲、马达加斯加）——3 级，2026-09-08 核。
+    //   **岛屿排名按面积是唯一读法**，不属于要补口径的那一类。
+    //   **零争议红线复核通过**：history 段只写因纽特人的传统土地、多塞特/图勒文化、
+    //   17 世纪航海者命名、1999 年努纳武特建制这些客观事实，未评价现代政策。
     seeing:
       "Baffin Island is in the Canadian Arctic Archipelago in the north-east — Canada's largest island and the fifth largest in the world. Its eastern edge is a high mountain belt of hard Shield rock, with large ice caps, deep fjords and several granite cliff faces over a kilometre high (Mount Thor, well known to climbers, is here); the western half of the island is low, flat sedimentary platform. The capital, Iqaluit, is in the south-east.",
     formation:
@@ -2928,6 +2963,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aoraki-southern-alps": {
+    // seeing sources: 奥拉基/库克山现行高程 **3,724 m（2013 年 AORAKI2013 重测）**：
+    //   1991 年岩崩后官方值先降到约 3,754 m，此后侵蚀继续降低，2013 年奥塔哥大学与 GNS 联合重测定为 3,724 m。
+    //   https://www.otago.ac.nz/surveying/research/geodetic/aoraki2013-surveying-the-height-of-aoraki-mt-cook（1 级，2026-09-08 核）。
+    //   **山峰高程也是会变的量** —— 岩崩、侵蚀、重测都会改它，和冰川面积一样要问「这是哪一年测的」。
+    //   毛利语并列地名「Aoraki / Mount Cook」的用法与新西兰官方地名机构 NZGB 一致；
+    //   1998 年和解立法段落只陈述事实经过，未作评价，零争议红线复核通过。
     seeing:
       "The Southern Alps (Māori: Kā Tiritiri o te Moana) run for about 500 km along the western side of New Zealand's South Island, separating the wet West Coast from the drier eastern interior. The highest peak, Aoraki / Mount Cook, is 3,724 m — the highest mountain in New Zealand — and the range holds almost all of the country's 3,000 m peaks and glaciers. Its south-western part lies within the Te Wāhipounamu World Heritage Area.",
     formation:
