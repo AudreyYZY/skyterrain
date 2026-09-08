@@ -124,11 +124,34 @@ const VISA_EN =
 const DEFER_ZH = /(最新公布|最新规定|最新政策|以.{0,12}(官网|部|局|署).{0,6}为准|请以.{0,10}为准)/;
 const DEFER_EN = /\b(check|refer to|consult)\b[^.;!?]{0,60}\b(latest|current|official|before you (travel|fly|go))\b/i;
 
+/**
+ * **同一条目内部的时间比较不算这一类。**
+ *
+ * 「4–5月、10–11月气候最舒适」比较的是同一座城市的**月份之间**，不是这座城市与别的
+ * 地方之间 —— 它既可核实又无争议，和「茶马古道最险峻的一段」完全不是一回事。
+ * 这类占了 C1a 的三分之一（`最舒适` 114 处 + `最适合` 46 处，几乎全在 `whenAndTips` 段）。
+ *
+ * 还有一个旁证：**英文那边一处都没报** —— 英文的判据里本来就没有 "most comfortable"，
+ * 于是同一句话中文报、英文不报。两种语言说的是同一件事却只有一边被标出来，
+ * 说明是中文这条判据画得太宽了。
+ *
+ * 实现上是**逐个匹配**判断，不是整句放过：一句话里如果既有时间比较、
+ * 又有一个跨地点的最高级（「5月最适合来看最壮观的瀑布」），后者照样要报。
+ */
+const TIME_EXPR_ZH = /(\d+\s*[–\-~至]\s*\d+\s*月|\d+\s*月|春季|夏季|秋季|冬季|春秋|旺季|淡季|雨季|旱季)/;
+const TEMPORAL_SUP_ZH = /^最(舒适|适合|好的时候)/;
+
 /** C1a：主观最高级（句子里有年份或限定语则放过 —— 那是正确写法的范例） */
 export function isSubjectiveSuperlative(s: string, zh: boolean): boolean {
   const qual = (zh ? QUALIFIER_ZH : QUALIFIER_EN).test(s) || HAS_YEAR.test(s);
   if (qual) return false;
-  return (zh ? SUBJECTIVE_SUP_ZH : SUBJECTIVE_SUP_EN).test(s);
+  const re = new RegExp((zh ? SUBJECTIVE_SUP_ZH : SUBJECTIVE_SUP_EN).source, zh ? "g" : "gi");
+  const hasTime = zh && TIME_EXPR_ZH.test(s);
+  for (const m of s.matchAll(re)) {
+    if (hasTime && TEMPORAL_SUP_ZH.test(m[0])) continue;
+    return true;
+  }
+  return false;
 }
 
 /** C1b：排名断言缺口径 */
