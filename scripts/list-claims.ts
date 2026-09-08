@@ -6,6 +6,8 @@
  *
  * 支持的规则名见 scripts/claim-rules.ts 的 SENTENCE_RULES（C6 / C6d / C6e / C6f / C1a / C1b）；
  * 传别的名字会直接报错退出，不会像以前那样静默地按 C6d 跑。
+ * C6d 默认扣掉 docs/claims-stale-exempt.json 里已核实「这就是最新一期」的条目
+ * （与 check:claims 口径一致）；`--with-exempt` 可以把它们也列出来。
  *
  * check-claims.ts 负责「有没有问题、比基线好了还是差了」，这个脚本负责
  * 「下一批该核哪些条目、原文是哪几句」—— 分批清存量时每轮都要用，
@@ -15,6 +17,7 @@
 import { collectTtsSegments } from "../lib/tts-manifest.ts";
 import { splitSentences } from "../lib/sentences.ts";
 import { CITY_REGISTRY } from "../lib/places-registry.ts";
+import { readFile } from "node:fs/promises";
 import { SENTENCE_RULES } from "./claim-rules.ts";
 
 const args = process.argv.slice(2);
@@ -38,6 +41,19 @@ if (!match) {
 const COUNTRY = val("--country");
 const IDS = val("--ids")?.split(",");
 const ONLY_COUNTS = args.includes("--countries");
+/**
+ * C6d 的豁免表要在这里也生效，否则 `list:claims` 报出来的条目数会比 `check:claims`
+ * 多出一截（2026-09-08 实测 169 vs 125），拿它去分批就会把已经核实过
+ * 「这就是最新一期」的条目再派一遍。`--with-exempt` 可以把豁免的那些也列出来。
+ */
+const WITH_EXEMPT = args.includes("--with-exempt");
+const exempt: Set<string> = new Set(
+  RULE === "C6d" && !WITH_EXEMPT
+    ? (JSON.parse(await readFile("docs/claims-stale-exempt.json", "utf8")) as {
+        entries: { key: string }[];
+      }).entries.map((e) => e.key)
+    : [],
+);
 
 const { segments } = await collectTtsSegments();
 interface Hit { id: string; section: string; lang: string; sentence: string; country: string }
@@ -47,6 +63,7 @@ for (const seg of segments) {
   const zh = seg.lang === "zh-CN";
   for (const s of splitSentences(seg.text)) {
     if (!match(s, zh)) continue;
+    if (exempt.has(`${seg.kind}/${seg.id}/${seg.section}`)) continue;
     const country = CITY_REGISTRY.find((c) => c.id === seg.id)?.country ?? "(概览/其他)";
     hits.push({ id: seg.id, section: seg.section, lang: seg.lang, sentence: s, country });
   }
