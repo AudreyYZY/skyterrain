@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 19ca03e
+lastVerifiedCommit: 2ef748d
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -32,6 +32,7 @@ lastVerifiedCommit: 19ca03e
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel-content 奥地利 8 城 identity/howItWorks 人口数字与口径（奥地利城市人口刷新 · 批 1（Statistik Austria 2026-01-01）） | 9 | 1 / 8 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 美国 8 城 identity/howItWorks 人口数字与 city / metro 口径（美国城市人口刷新 · 批 1（Census Vintage 2025）） | 16 | 0 / 16 / 0 | 当场修 16 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 中国 11 城 identity/howItWorks 人口数字（中国城市人口刷新 · 批 11） | 17 | 0 / 14 / 2 | 当场修 15 条；新开 issue 2、关闭 0 |
 | 2026-09-08 | travel-content 中国 12 城 identity/howItWorks 人口数字（中国城市人口刷新 · 批 10） | 13 | 0 / 12 / 1 | 当场修 12 条；新开 issue 1、关闭 0 |
