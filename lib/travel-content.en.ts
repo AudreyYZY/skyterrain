@@ -1978,9 +1978,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
     //   同条另一句「世界上人口密度最高的地区之一」带了「之一」限定，按 2025 年密度排名香港居全球第 4（摩纳哥、澳门、新加坡之后），表述成立；但排名只有聚合站来源（级别 3），故正文不写名次。
     identity:
       "Hong Kong is a Special Administrative Region of China on the eastern side of the Pearl River estuary, made up of Hong Kong Island, the Kowloon Peninsula, the New Territories and more than 200 outlying islands, with a provisional mid-2026 population estimate of about 7.518 million (Hong Kong Census and Statistics Department) — one of the most densely populated places in the world. It is a major international centre for finance, trade and shipping, with skyscrapers, a harbour and country parks packed into a small area.",
-    // howItWorks sources: Wikipedia (2026-09): Hong Kong (SAR 1997, Basic Law; 18 districts, advisory District Councils; ~1,114 km²; ~7.5 million)
+    // howItWorks sources: 香港 **2026 年年中人口临时估计 751.83 万**（较 2025 年年中 749.89 万增 0.3%）——
+    //   香港政府统计处新闻公报 https://www.info.gov.hk/gia/general/202608/18/P2026081800255.htm（1 级，2026-09-08 核）。
+    //   **发布节奏：每年 8 月出临时数、次年 2 月出修订数。**
+    //   identity 段本来就写对了，是 howItWorks 复述时把年份与口径丢了。
     howItWorks:
-      "Hong Kong is a Special Administrative Region of China, governed since 1997 under the principle of 'one country, two systems' set out in the Basic Law, with a government headed by the Chief Executive handling local affairs. Geographically it falls into three areas — Hong Kong Island, Kowloon and the New Territories, the last including more than two hundred outlying islands; administratively it has 18 districts, each with an advisory District Council and no separate city government. The land area is about 1,114 km² with about 7.5 million people, among the most densely populated places in the world. Central is the traditional business district, Kwun Tong in Kowloon East is the planned second core business district, and new towns such as Sha Tin, Tuen Mun and Tseung Kwan O house a large share of the New Territories' residents. Addresses read area, street, building and floor, and the MTR and the Octopus card run throughout. Newcomers most often go wrong by equating Hong Kong with Hong Kong Island, when most people live in Kowloon and the New Territories.",
+      "Hong Kong is a Special Administrative Region of China, governed since 1997 under the principle of 'one country, two systems' set out in the Basic Law, with a government headed by the Chief Executive handling local affairs. Geographically it falls into three areas — Hong Kong Island, Kowloon and the New Territories, the last including more than two hundred outlying islands; administratively it has 18 districts, each with an advisory District Council and no separate city government. The land area is about 1,114 km² with a provisional mid-2026 population estimate of about 7.518 million, among the most densely populated places in the world. Central is the traditional business district, Kwun Tong in Kowloon East is the planned second core business district, and new towns such as Sha Tin, Tuen Mun and Tseung Kwan O house a large share of the New Territories' residents. Addresses read area, street, building and floor, and the MTR and the Octopus card run throughout. Newcomers most often go wrong by equating Hong Kong with Hong Kong Island, when most people live in Kowloon and the New Territories.",
     layout:
       "Victoria Harbour divides Hong Kong into a north side and a south side: the north shore of Hong Kong Island holds the business and financial districts of Central, Admiralty, Wan Chai and Causeway Bay, with Victoria Peak behind them; across the water, Kowloon (Tsim Sha Tsui, Mong Kok, Yau Ma Tei) is more densely peopled. North of Kowloon are the New Territories with new towns and large country parks and hills. Lantau, Lamma and other islands are reached by ferry. Hong Kong is divided into 18 districts. Four on Hong Kong Island — Central and Western (Central, Sheung Wan, Mid-Levels, the Peak), Wan Chai (the convention centre, Causeway Bay, Happy Valley), Eastern (North Point, Taikoo, Shau Kei Wan) and Southern (Repulse Bay, Stanley, Ocean Park, the Aberdeen typhoon shelter); five in Kowloon — Yau Tsim Mong (Tsim Sha Tsui, Mong Kok, the Temple Street market in Yau Ma Tei), Sham Shui Po (old-quarter street markets and the electronics market), Kowloon City (the Kowloon Walled City Park, the new Kai Tak area), Wong Tai Sin (the Wong Tai Sin Temple) and Kwun Tong (an industrial zone turned business district); nine in the New Territories — Sha Tin (the racecourse, the Ten Thousand Buddhas Monastery), Tai Po, North (Sheung Shui, Fanling), Yuen Long (the Wetland Park, the Ping Shan Heritage Trail), Tuen Mun, Tsuen Wan, Kwai Tsing (the Kwai Chung container port), Sai Kung (the Geopark, beaches and country parks) and the Islands district (the Big Buddha and Ngong Ping on Lantau, Hong Kong Disneyland and the airport, plus Cheung Chau, Lamma and Peng Chau).",
     gettingAround:
@@ -12197,8 +12200,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ── China · closing the Tier 1 provincial-capital gaps (Fujian/Shandong/Hunan/Guangxi/Hainan/Gansu) ──
   fuzhou: {
+    // identity sources: **「市区常住人口」不是中国官方统计口径** —— 地级市年度公报只有「全市常住人口」与
+    //   「城镇常住人口」两档官方称谓。原文这一句是自造口径，口径是编的，数字再精确也没有意义
+    //   （known-errors C6-c）。已换成公报有的口径。
+    //   2025 年末全市常住人口 **852.1 万**、城镇常住人口 635.9 万、城镇化率 74.63% ——
+    //   福州市统计局《2025 年统计公报》（2026-03-31 发布）
+    //   https://www.fuzhou.gov.cn/zwgk/tjxx/ndbg/202604/t20260414_5308173.htm（1 级，2026-09-08 核）。
     identity:
-      "Fuzhou is the capital of Fujian, a city near the mouth of the Min River, with an urban population of about 5 million. Nicknamed the 'Banyan City' for the old town's banyan trees and 'the Blessed Prefecture' (有福之州), it is Fujian's political and cultural centre, and was one of the first cities named a 'Hot Spring Capital of China' by the then Ministry of Land and Resources in 2010, with some of the richest urban geothermal resources in the country.",
+      "Fuzhou is the capital of Fujian, a city near the mouth of the Min River, with a resident population of about 8.52 million at the end of 2025 (Fuzhou Municipal Bureau of Statistics). Nicknamed the 'Banyan City' for the old town's banyan trees and 'the Blessed Prefecture' (有福之州), it is Fujian's political and cultural centre, and was one of the first cities named a 'Hot Spring Capital of China' by the then Ministry of Land and Resources in 2010, with some of the richest urban geothermal resources in the country.",
     // howItWorks sources: Wikipedia (2026-09): Fuzhou (6 districts, 6 counties, 1 county-level city; Min river; Gulou/Taijiang; Changle airport; 2020 census 8,291,268)
     howItWorks:
       "Fuzhou is the capital of Fujian, governing six districts, six counties and one county-level city, with about 8.29 million residents at the 2020 census. The Min River runs through the city: Gulou and Taijiang on the north bank form the old city, with the Three Lanes and Seven Alleys in Gulou, Cangshan on the south bank holds the universities and newer housing, and Jin'an to the east is the new urban district. Mawei is the port, Changle district at the river mouth holds the airport, and the state-level Fuzhou New Area stretches along the river towards the sea. Addresses read district, road and number, Fuzhou people distinguish the two banks and speak of 'Gulou' and 'Cangshan', and the metro links the two railway stations and both banks. Newcomers most often go wrong by taking the Three Lanes and Seven Alleys for the whole of Fuzhou, when the city is growing east along the Min towards its mouth.",
@@ -12215,8 +12224,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   jinan: {
+    // identity sources: **「市区常住人口」不是中国官方统计口径** —— 地级市年度公报只有「全市常住人口」与
+    //   「城镇常住人口」两档官方称谓。原文这一句是自造口径，口径是编的，数字再精确也没有意义
+    //   （known-errors C6-c）。已换成公报有的口径。
+    //   2025 年末全市常住人口 **961.6 万**、城镇常住人口 743.5 万、城镇化率 77.3% ——
+    //   济南市统计局《2025 年统计公报》（2026-03-30 发布）（1 级，2026-09-08 核）。
     identity:
-      "Jinan is the capital of Shandong, a city on the south bank of the Yellow River at the foot of Mount Tai, with an urban population of about 5 million. Known as the 'Spring City' for the roughly 72 named artesian springs within it (including Baotu Spring and Black Tiger Spring), it is Shandong's political and cultural hub and the gateway to Mount Tai and Qufu.",
+      "Jinan is the capital of Shandong, a city on the south bank of the Yellow River at the foot of Mount Tai, with a resident population of about 9.62 million at the end of 2025 (Jinan Municipal Bureau of Statistics). Known as the 'Spring City' for the roughly 72 named artesian springs within it (including Baotu Spring and Black Tiger Spring), it is Shandong's political and cultural hub and the gateway to Mount Tai and Qufu.",
     // howItWorks sources: Wikipedia (2026-09): Jinan (10 districts + 2 counties after Laiwu 2019; sub-provincial 1994; 2020 census 9,202,432; metro 2019)
     howItWorks:
       "Jinan is a sub-provincial city and the capital of Shandong, governing ten districts and two counties since absorbing Laiwu in 2019, with about 9.2 million residents at the 2020 census. The city is pressed into a long east–west strip between the hills to the south and the Yellow River to the north; the old city surrounds Daming Lake and the springs in Lixia district, the business centre has stretched east along Jingshi Road, and the metro opened in 2019 runs along this axis. The recent 'crossing the river' strategy pushes the city to a start-up zone on the Yellow River's north bank. Addresses read district, road and number, and Jinan people speak of 'the east', 'the west', 'south of town' and 'north of town', with Jingshi Road the usual reference. Newcomers most often go wrong by picturing Jinan as a small old town by its springs, when it is a ribbon city stretching tens of kilometres along the foothills.",
@@ -12233,8 +12247,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   changsha: {
+    // identity sources: **「市区常住人口」不是中国官方统计口径** —— 地级市年度公报只有「全市常住人口」与
+    //   「城镇常住人口」两档官方称谓。原文这一句是自造口径，口径是编的，数字再精确也没有意义
+    //   （known-errors C6-c）。已换成公报有的口径。
+    //   2025 年末全市常住人口 **1072.14 万**、城镇化率 84.51%（公报未单列城镇常住人口绝对数）——
+    //   湖南省统计局代发布《长沙市 2025 年统计公报》（2026-04 发布，1 级，2026-09-08 核）。
     identity:
-      "Changsha is the capital of Hunan, a city on the lower Xiang River with an urban population of about 9 million. Known for its deep modern revolutionary history — the young Mao Zedong studied and was politically active here — and, more recently, for its food scene and nightlife, it has become one of China's best-known 'internet-famous' cities and is the birthplace of Hunanese cuisine and the Cha Yan Yue Se milk-tea chain.",
+      "Changsha is the capital of Hunan, a city on the lower Xiang River with a resident population of about 10.72 million at the end of 2025 (Changsha Municipal Bureau of Statistics). Known for its deep modern revolutionary history — the young Mao Zedong studied and was politically active here — and, more recently, for its food scene and nightlife, it has become one of China's best-known 'internet-famous' cities and is the birthplace of Hunanese cuisine and the Cha Yan Yue Se milk-tea chain.",
     // howItWorks sources: Wikipedia (2026-09): Changsha (6 districts, 1 county, 2 county-level cities; Xiang river; 2020 census 10,047,914; maglev)
     howItWorks:
       "Changsha is the capital of Hunan, governing six districts, one county and two county-level cities, with about 10 million residents at the 2020 census. The Xiang River divides the city: Furong, Tianxin and Kaifu on the east bank hold the old city and the commercial centre, Yuelu district on the west bank holds the universities and the Meixi Lake new district, and Orange Isle lies in midstream. Changsha, Zhuzhou and Xiangtan, only tens of kilometres apart, are being integrated as one metropolitan region. Addresses read district, road and number, Changsha people distinguish 'east of the river' from 'west of the river', the metro crosses the water, and a low-speed maglev links the south railway station to the airport. Newcomers most often go wrong by assuming Changsha is the old city on the east bank, when the universities, the lakes and the new towns lie to the west.",
@@ -12251,8 +12270,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   nanning: {
+    // identity sources: **「市区常住人口」不是中国官方统计口径** —— 地级市年度公报只有「全市常住人口」与
+    //   「城镇常住人口」两档官方称谓。原文这一句是自造口径，口径是编的，数字再精确也没有意义
+    //   （known-errors C6-c）。已换成公报有的口径。
+    //   2025 年末常住人口 **901.66 万**、城镇常住人口 652.82 万、城镇化率 72.4% ——
+    //   南宁市统计局《2025 年统计公报》（2026-05-22 发布）。
+    //   **tj.nanning.gov.cn 当前 DNS 无法解析**，数字取自公报全文转载
+    //   https://finance.sina.cn/2026-05-22/detail-inhyumqm7667712.d.html（2 级）并与另一独立报道互相印证，2026-09-08。
+    //   下一轮直连原网站补一次 1 级核实。
     identity:
-      "Nanning is the capital of Guangxi, a city on the Yong River with an urban population of about 7 million. Known as the 'Green City' for its high tree cover and year-round greenery, it hosts the China–ASEAN Expo and, both geographically and culturally, serves as a gateway city linking China with mainland South-east Asia.",
+      "Nanning is the capital of Guangxi, a city on the Yong River with a resident population of about 9.02 million at the end of 2025 (Nanning Municipal Bureau of Statistics). Known as the 'Green City' for its high tree cover and year-round greenery, it hosts the China–ASEAN Expo and, both geographically and culturally, serves as a gateway city linking China with mainland South-east Asia.",
     // howItWorks sources: Wikipedia (2026-09): Nanning (7 districts, 1 county-level city, 4 counties; Wuxiang New Area; 2020 census 8,741,584; China–ASEAN Expo since 2004)
     howItWorks:
       "Nanning is the capital of the Guangxi Zhuang Autonomous Region, governing seven districts, one county-level city and four counties, with about 8.74 million residents at the 2020 census, and has hosted the China–ASEAN Expo every year since 2004. The old city lies on the north bank of the Yong River in Xingning and Qingxiu, but the city government and the exhibition centre have moved south to Wuxiang New Area, shifting the city's weight across the river. Addresses read district, road and number, locals speak of 'north of the river', 'south of the river', 'the old city' and 'Wuxiang', the metro joins the banks, and street signs commonly pair Chinese with Zhuang. Newcomers most often go wrong by taking the old city around Chaoyang Square for the centre, when the administration and the expo lie south of the river in Wuxiang.",
@@ -12269,8 +12296,16 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   haikou: {
+    // identity sources: **「市区常住人口」不是中国官方统计口径** —— 地级市年度公报只有「全市常住人口」与
+    //   「城镇常住人口」两档官方称谓。原文这一句是自造口径，口径是编的，数字再精确也没有意义
+    //   （known-errors C6-c）。已换成公报有的口径。
+    //   2025 年末全市常住人口 **305.63 万**、城镇化率 83.55% ——
+    //   海南省统计局《2025 年全省常住人口主要数据》（2026-05-09 发布）。
+    //   **海口市统计局 2025 年公报本身是纯图片版**（HTML/PDF 都提不出文字），转载站同样只有图片；
+    //   省局页面正文只展示全省汇总，分市表格未能直接核到原表，**目前只有 3 级转引**，2026-09-08。
+    //   下一轮设法拿到省局分市数据表原始链接，把来源补到 1 级。
     identity:
-      "Haikou is the capital of Hainan, a city on the north coast of Hainan Island facing Guangdong's Leizhou Peninsula across the Qiongzhou Strait, with an urban population of about 3 million. Nicknamed the 'Coconut City', it is a policy core zone of the Hainan Free Trade Port and, for most visitors, the first stop or transit point on and off Hainan Island.",
+      "Haikou is the capital of Hainan, a city on the north coast of Hainan Island facing Guangdong's Leizhou Peninsula across the Qiongzhou Strait, with a resident population of about 3.06 million at the end of 2025 (Hainan Provincial Bureau of Statistics). Nicknamed the 'Coconut City', it is a policy core zone of the Hainan Free Trade Port and, for most visitors, the first stop or transit point on and off Hainan Island.",
     // howItWorks sources: Wikipedia (2026-09): Haikou (4 districts; Qilou old street; 2020 census 3,001,600; no metro)
     howItWorks:
       "Haikou is the capital of Hainan, governing four districts, with about 3 million residents at the 2020 census. The old town lies by the Haidian River, with the Qilou arcade street as its emblem; Jiangdong New Area to the east is being built around the airport as the new district under the Hainan Free Trade Port policy. Addresses read district, road and number, Haikou people speak of 'the old town', 'the west coast' and 'Jiangdong', and with no metro the city relies on buses, taxis and electric scooters, while the island's ring high-speed railway links Haikou with Sanya. Newcomers most often go wrong by picturing Haikou as a beach resort, when it is first of all Hainan's administrative and commercial centre, with the resort areas in Jiangdong to the east and along the west coast.",
@@ -12287,8 +12322,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   lanzhou: {
+    // identity sources: **「市区常住人口」不是中国官方统计口径** —— 地级市年度公报只有「全市常住人口」与
+    //   「城镇常住人口」两档官方称谓。原文这一句是自造口径，口径是编的，数字再精确也没有意义
+    //   （known-errors C6-c）。已换成公报有的口径。
+    //   2025 年末全市常住人口 **445.14 万** —— 兰州市《2025 年统计公报》（2026-05-29 发布）与
+    //   兰州市人民政府「兰州简介」页（2026-07-13 更新）https://www.lanzhou.gov.cn/col/col4/index.html（1 级，2026-09-08 核）。
+    //   **这一条还多踩了一层**：兰州公报里确有「城区」人口这一档（七普城区约 304 万，与原文的「约 300 万」量级接近），
+    //   但它不叫「市区常住人口」—— **一个真实存在的口径被叫错了名字，比纯粹编一个口径更难发现**。
     identity:
-      "Lanzhou is the capital of Gansu, a valley city that the Yellow River runs straight through, with an urban population of about 3 million — the only provincial capital in China where the Yellow River's main channel crosses the core of the city. Sitting at the western edge of the Loess Plateau and the eastern mouth of the Hexi Corridor, it has been a hub linking the Chinese heartland with the Western Regions along the Silk Road since antiquity.",
+      "Lanzhou is the capital of Gansu, a valley city that the Yellow River runs straight through, with a resident population of about 4.45 million at the end of 2025 — the only provincial capital in China where the Yellow River's main channel crosses the core of the city. Sitting at the western edge of the Loess Plateau and the eastern mouth of the Hexi Corridor, it has been a hub linking the Chinese heartland with the Western Regions along the Silk Road since antiquity.",
     // howItWorks sources: Wikipedia (2026-09): Lanzhou (4 core districts + Honggu + Lanzhou New Area 2012 + counties; valley ~35 km × 2–8 km; 2020 census 4,359,446; metro 2019)
     howItWorks:
       "Lanzhou is the capital of Gansu, governing four core districts, one suburban district, one state-level new area and three counties, with about 4.36 million residents at the 2020 census and about 3 million in the urban area. Hemmed in by mountains on both sides, the city is a ribbon along the Yellow River valley, about 35 km long and only 2–8 km wide; Chengguan is the old city and commercial centre, with Qilihe, Anning and Xigu strung out westward along the river. Lanzhou New Area, created in 2012, lies about 60 km to the north near the airport, a separate new town in its own right. Addresses read district, road and number, Lanzhou people speak of 'the east', 'the west' and the two banks of the river, and metro Line 1 runs the length of the valley. Newcomers most often go wrong by taking Lanzhou New Area for part of the city, when tens of kilometres of hills separate the two.",
@@ -12306,8 +12348,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
 
   // ── China · Tier 2 popular cities batch 1 (cities with independent planning status + UNESCO heritage cities) ──
   dalian: {
+    // identity sources: 2024 年末全市常住人口 **754.4 万**。
+    //   **2025 年公报只公布了户籍人口 607.8 万，没有常住人口这一行** —— 2025 年是全国 1% 人口抽样调查年
+    //   （标准时点 2025-11-01），常住人口的抽样推算数要到 2026 年下半年才逐批发布。
+    //   **这不是过期，是那一期公报确实没有这一档**，已进 claims-stale-exempt.json。
+    //   stats.dl.gov.cn 当前 DNS 无法解析，数字经二手转载交叉印证（2 级），2026-09-08。
     identity:
-      "Dalian, a city with independent planning status (jihua danlie shi), sits at the southern tip of the Liaodong Peninsula, with a municipal population of about 7.54 million. Because it was planned and built first by Tsarist Russia and then by Japan in the early 20th century, the city centre still keeps large European-style squares and buildings; it was among China's first National Sanitary Cities and Garden Cities, and remains an important northern port and shipbuilding base.",
+      "Dalian, a city with independent planning status (jihua danlie shi), sits at the southern tip of the Liaodong Peninsula, with a resident population of about 7.544 million at the end of 2024 (the 2025 bulletin reports only hukou-registered population; an updated figure awaits the national sample survey). Because it was planned and built first by Tsarist Russia and then by Japan in the early 20th century, the city centre still keeps large European-style squares and buildings; it was among China's first National Sanitary Cities and Garden Cities, and remains an important northern port and shipbuilding base.",
     // howItWorks sources: 中国地级市《国民经济和社会发展统计公报》，常规发布窗口次年 3 月底—6 月。大连 2024 年末全市常住人口 754.4 万人，城镇化率 83.04%。
     //   **2025 年公报只公布了户籍人口 607.8 万，没有常住人口这一行** —— 2025 年是全国 1% 人口抽样调查年（标准时点 2025-11-01），抽样数据要到 2026 年下半年才逐批处理发布，大连、泉州都遇到同样情况。
     //   stats.dl.gov.cn 当前 DNS 无法解析，数字取自公报转载站，**级别 3**，建议后续补一次官网直核。发布月份：3—5 月。
@@ -12326,8 +12373,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   ningbo: {
+    // identity sources: 2025 年末全市常住人口 **983.3 万** —— 宁波市统计局《2025 年统计公报》（2026-04-23 发布）
+    //   https://tjj.ningbo.gov.cn/col/col1229042825/art/2026/art_b2b660dd55464802bf39f27f4b070f2a.html（1 级，2026-09-08 核）。
+    //   原 identity 写的 978 万是 2024 年末的旧数，**而同条目 howItWorks 已经是最新的** —— 两段打架，已对齐。
     identity:
-      "Ningbo, a city with independent planning status, sits where the Yong River meets the sea, with a municipal population of about 9.78 million. It was one of the historical starting points of the Maritime Silk Road, and is home to Tianyi Pavilion, China's oldest surviving private library; historically, Ningbo-born merchants (the 'Ningbo Gang') were influential across the Yangtze Delta and in overseas Chinese business communities.",
+      "Ningbo, a city with independent planning status, sits where the Yong River meets the sea, with a resident population of about 9.833 million at the end of 2025 (Ningbo Municipal Bureau of Statistics). It was one of the historical starting points of the Maritime Silk Road, and is home to Tianyi Pavilion, China's oldest surviving private library; historically, Ningbo-born merchants (the 'Ningbo Gang') were influential across the Yangtze Delta and in overseas Chinese business communities.",
     // howItWorks sources: 中国地级市《国民经济和社会发展统计公报》，常规发布窗口次年 3 月底—6 月。宁波市统计局《2025年宁波市国民经济和社会发展统计公报》（2026-04-23 发布）：2025 年末常住人口 983.3 万人，比 2024 年末（977.7 万）增 5.6 万（据 2025 年 1% 人口抽样调查推算）。https://tjj.ningbo.gov.cn/col/col1229042825/art/2026/art_b2b660dd55464802bf39f27f4b070f2a.html （**级别 1**）。发布月份：4 月。
     howItWorks:
       "Ningbo is a sub-provincial city of Zhejiang with separate state planning status, covering about 9,400 km² with about 9.83 million at the end of 2025 in six districts, two county-level cities and two counties, Cixi and Yuyao industrial towns, Ninghai and Xiangshan coastal counties. The centre is Sanjiangkou, where the Haishu, Jiangbei and Yinzhou districts meet; the main port of Ningbo-Zhoushan lies at Beilun to the east, thirty-odd kilometres away. Newcomers most often go wrong by taking Ningbo for the port itself, when the port is at Beilun and the city is the old town at Sanjiangkou and the new town of Yinzhou.",
@@ -12344,8 +12394,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   suzhou: {
+    // identity sources: 2025 年末常住人口 **1304.77 万**、城镇化率 82.9% —— 苏州市人民政府《2025 年统计公报》（2026-05 发布）
+    //   https://www.suzhou.gov.cn/szsrmzf/ndgmjjhshfztjsjfb/202605/0543af82405748cd9ffa4cfc81aecccd.shtml（1 级，2026-09-08 核）。
+    //   原 identity 的 1299 万是更早一期的旧数，同条目 howItWorks 已是最新，已对齐。
     identity:
-      "Suzhou, a byword for the Jiangnan water towns, is a historic city on the Grand Canal, with a municipal population of about 12.99 million. Known as 'paradise on earth', its classical gardens, canal-lined lanes and stone bridges, and Pingtan storytelling and Kunqu opera together form a textbook picture of Jiangnan culture; it is also a major manufacturing and tourism city in the Yangtze Delta.",
+      "Suzhou, a byword for the Jiangnan water towns, is a historic city on the Grand Canal, with a resident population of about 13.05 million at the end of 2025 (Suzhou Municipal People's Government). Known as 'paradise on earth', its classical gardens, canal-lined lanes and stone bridges, and Pingtan storytelling and Kunqu opera together form a textbook picture of Jiangnan culture; it is also a major manufacturing and tourism city in the Yangtze Delta.",
     // howItWorks sources: 中国地级市《国民经济和社会发展统计公报》，常规发布窗口次年 3 月底—6 月。苏州市人民政府《2025年苏州市国民经济和社会发展统计公报》（2026-05 发布）：2025 年末常住人口 1304.77 万人，城镇化率 82.9%。https://www.suzhou.gov.cn/szsrmzf/ndgmjjhshfztjsjfb/202605/0543af82405748cd9ffa4cfc81aecccd.shtml （**级别 1**）。发布月份：5 月。
     howItWorks:
       "Suzhou is a prefecture-level city of Jiangsu covering about 8,700 km² with about 13.05 million at the end of 2025, in five districts and the four county-level cities of Kunshan, Zhangjiagang, Changshu and Taicang, each an economy the size of a mid-sized city. The old town lies within the moat in Gusu district, its gardens World Heritage since 1997; the Industrial Park on Jinji Lake to the east is the new business centre and the high-tech zone lies west. Suzhou has no airport, relying on Shanghai Hongqiao and Wuxi Shuofang. Newcomers most often go wrong by taking the old town for Suzhou, when it is a city of ten million assembled from several cities.",
@@ -12362,8 +12415,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   luoyang: {
+    // identity sources: 2025 年末全市常住人口 **708.3 万**、城镇常住人口 489.3 万、城镇化率 69.08% ——
+    //   洛阳市人民政府《2025 年统计公报》（2026-05-11 发布）https://www.ly.gov.cn/2026/05-11/1060335.html（1 级，2026-09-08 核）。
+    //   **公报未单列「市区人口」** —— 此前版本里的「市区约 230 万」已在上一轮删掉，本轮确认公报里确实没有这一档。
     identity:
-      "Luoyang is one of China's Four Great Ancient Capitals, a historic city in the Yi–Luo basin south of the Yellow River, with a municipal population of about 7.08 million. Multiple dynasties made it their capital in turn, and it was an important centre for the spread of Buddhism after it reached China — both the Longmen Grottoes and the White Horse Temple are here. The peony is the city's official flower, celebrated each April at its Peony Culture Festival.",
+      "Luoyang is one of China's Four Great Ancient Capitals, a historic city in the Yi–Luo basin south of the Yellow River, with a resident population of about 7.083 million at the end of 2025. Multiple dynasties made it their capital in turn, and it was an important centre for the spread of Buddhism after it reached China — both the Longmen Grottoes and the White Horse Temple are here. The peony is the city's official flower, celebrated each April at its Peony Culture Festival.",
     // howItWorks sources: 中国地级市《国民经济和社会发展统计公报》，常规发布窗口次年 3 月底—6 月。洛阳市人民政府《2025年洛阳市国民经济和社会发展统计公报》（2026-05-11 发布）：2025 年末全市常住人口 708.3 万人，城镇常住人口 489.3 万人，城镇化率 69.08%。https://www.ly.gov.cn/2026/05-11/1060335.html （**级别 1**）
     //   **「市区常住人口约230万」这一档删掉了**：它不是年度公报的常规指标，2025 年公报未单列，也没查到洛阳官方在其他年份发布过这个口径 —— 按 known-errors C6-c，查不到官方定义的口径不能沿用。发布月份：5 月（统计局自己网站 4 月底先行发布）。
     howItWorks:
@@ -12381,8 +12437,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   datong: {
+    // identity sources: 2025 年末全市常住人口 **304.4 万**（比上年末减少 6,725 人）、城镇常住人口 230.4 万 ——
+    //   大同市人民政府《2025 年统计公报》（2026-04 发布）
+    //   https://www.dt.gov.cn/dtszf/tjgb/202604/400d1c17bc124ef4869c12052aa924c3.shtml（1 级，2026-09-08 核）。
     identity:
-      "Datong is a prefecture-level city in Shanxi, a historic city in the Jinbei basin of northern Shanxi, with a municipal population of about 3.05 million. It was once Pingcheng, capital of the Northern Wei dynasty, and one of the 'Nine Frontier Garrisons' of the Ming and Qing eras; rich coal reserves earned it the nickname 'China's Coal Capital', and in recent years the city has invested heavily in cultural tourism around the Yungang Grottoes and its restored city walls.",
+      "Datong is a prefecture-level city in Shanxi, a historic city in the Jinbei basin of northern Shanxi, with a resident population of about 3.044 million at the end of 2025 (down slightly from the year before). It was once Pingcheng, capital of the Northern Wei dynasty, and one of the 'Nine Frontier Garrisons' of the Ming and Qing eras; rich coal reserves earned it the nickname 'China's Coal Capital', and in recent years the city has invested heavily in cultural tourism around the Yungang Grottoes and its restored city walls.",
     // howItWorks sources: 中国地级市《国民经济和社会发展统计公报》，常规发布窗口次年 3 月底—6 月。大同市人民政府《大同市2025年国民经济和社会发展统计公报》（2026-04 发布）：2025 年末全市常住人口 304.4 万人，**比上年末减少 6,725 人**；城镇常住人口 230.4 万人。https://www.dt.gov.cn/dtszf/tjgb/202604/400d1c17bc124ef4869c12052aa924c3.shtml （**级别 1**）。发布月份：4 月。
     howItWorks:
       "Datong is a prefecture-level city of Shanxi covering about 14,000 km² with about 3.04 million at the end of 2025, in four districts and six counties. The old town lies in Pingcheng district, its walls and streets rebuilt wholesale since 2008, with the Yudong new district to the east; the Yungang Grottoes lie in Yungang district to the west, about 16 km away, and the Hanging Temple in Hunyuan county to the south-east, about 65 km. The city grew on coal and is changing course. Newcomers most often go wrong by taking the rebuilt walled town for the ancient city, when Datong's true antiquities are the grottoes and temples beyond it.",
@@ -12399,8 +12458,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   huangshan: {
+    // identity sources: 2024 年末全市常住人口 **131.7 万** —— 中安在线转引黄山市人民政府官网（2 级，2026-09-08 核）
+    //   http://ah.anhuinews.com/hs/hszhxw/202503/t20250311_8313829.html。
+    //   **黄山市政府官网全站反爬**：2025 年公报确已发布（搜索索引里能看到标题与 GDP 数字），
+    //   但 PDF 直连与阅读器代理均返回 412，本轮仍取不到 2025 年的常住人口数。已进 claims-stale-exempt.json。
+    //   下次先试文本镜像站，或直接向统计局索取 PDF。
     identity:
-      "Huangshan City is a prefecture-level city in Anhui, a tourism-oriented city in the hills of southern Anhui, with a municipal population of about 1.32 million. Renamed from 'Huizhou Prefecture' in 1987, it is the gateway city to the Mount Huangshan scenic area and the birthplace of Huizhou culture — the whitewashed, black-tiled Huizhou architectural style, the historic Huizhou merchants, and the Neo-Confucian 'Xin'an School' all originated here.",
+      "Huangshan City is a prefecture-level city in Anhui, a tourism-oriented city in the hills of southern Anhui, with a resident population of about 1.317 million at the end of 2024 (the 2025 bulletin could not be read because of the official site's anti-scraping protection). Renamed from 'Huizhou Prefecture' in 1987, it is the gateway city to the Mount Huangshan scenic area and the birthplace of Huizhou culture — the whitewashed, black-tiled Huizhou architectural style, the historic Huizhou merchants, and the Neo-Confucian 'Xin'an School' all originated here.",
     // howItWorks sources: 中国地级市《国民经济和社会发展统计公报》，常规发布窗口次年 3 月底—6 月。**本轮未能取到 2025 年数字**：黄山市统计局确已发布《黄山市2025年国民经济和社会发展统计公报》（搜索索引可见标题与开头 GDP 数字），但 huangshan.gov.cn 全站有反爬（412 Precondition Failed / Environment Checking 拦截页），直连、换 UA、reader 代理都取不到 PDF 正文。能确认的最新官方数字仍是 2024 年末 131.7 万人，但同样未能逐字核对全文。
     //   按红线**不补一个没核到的数字**：正文只把口径写明确（2020 年第七次全国人口普查），并开 issue 跟踪。
     howItWorks:
@@ -12418,8 +12482,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   quanzhou: {
+    // identity sources: 2024 年末全市常住人口 **891.4 万**（同期福州 850.1 万，故 howItWorks 里「福建人口最多的地级市」成立）。
+    //   **2025 年公报只公布户籍人口** —— 与大连同一种情形（2025 年是全国 1% 抽样调查年），
+    //   常住人口推算数待 2026 年下半年发布。已进 claims-stale-exempt.json。2026-09-08 复核。
     identity:
-      "Quanzhou is a prefecture-level city in Fujian, a historic port city on the lower Jin River, with a municipal population of about 8.91 million. In the Song and Yuan dynasties it was reputed to be 'the greatest port in the East' and a key starting point of the Maritime Silk Road; in 2021, 'Quanzhou: Emporium of the World in Song–Yuan China', comprising 22 representative sites and monuments, was inscribed on the UNESCO World Heritage List.",
+      "Quanzhou is a prefecture-level city in Fujian, a historic port city on the lower Jin River, with a resident population of about 8.914 million at the end of 2024 (the 2025 bulletin reports only hukou-registered population). In the Song and Yuan dynasties it was reputed to be 'the greatest port in the East' and a key starting point of the Maritime Silk Road; in 2021, 'Quanzhou: Emporium of the World in Song–Yuan China', comprising 22 representative sites and monuments, was inscribed on the UNESCO World Heritage List.",
     // howItWorks sources: 排名复核：2024 年末泉州 891.4 万 vs 福州 850.1 万（两市统计局公报，**级别 1**），泉州市统计局解读原文写「继续保持全省人口总量第一位」，**排名成立**。但两市 2025 年末的分市数据尚未公布，无法用 2025 年数重新验证，故正文加「按 2024 年末数据」的限定。
     howItWorks:
       "Quanzhou is a prefecture-level city of Fujian covering about 11,000 km² with about 8.91 million at the end of 2024 (the 2025 bulletin reports only hukou-registered population; an updated resident figure awaits the sample-survey release), the most populous prefecture-level city in the province as of end-2024, in four districts, the three county-level cities of Jinjiang, Shishi and Nan'an and five counties. The old town lies in Licheng district, with West Street and Kaiyuan Temple, inscribed as World Heritage in 2021 as the Song-Yuan emporium of the world; Fengze is the new town, Jinjiang and Shishi the strongholds of private enterprise, and the airport is in Jinjiang. Southern Min is the daily language, and this is a major overseas-Chinese homeland. Newcomers most often go wrong by taking the old town for Quanzhou, when most of its economy and people lie in the county-level cities of Jinjiang, Shishi and Nan'an.",
@@ -12436,8 +12503,11 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   zhangye: {
+    // identity sources: 2025 年末全市常住人口 **109.11 万**（比上年末减少 0.87 万）、城镇化率 58.03% ——
+    //   张掖市人民政府《2025 年统计公报》（2026-06 发布）
+    //   https://www.zhangye.gov.cn/tjj/ztzl/tjsj/202606/t20260602_1549584.html（1 级，2026-09-08 核）。
     identity:
-      "Zhangye is a prefecture-level city in Gansu, an oasis city in the middle of the Hexi Corridor, with a municipal population of about 1.1 million. Sitting at the northern foot of the Qilian Mountains, it has been a Silk Road hub since antiquity; tradition holds that its name comes from the Han-dynasty phrase 'extending the empire's arm to reach the Western Regions' (zhang guo bi ye). In recent years the city has become a popular destination for its colourful Danxia landforms.",
+      "Zhangye is a prefecture-level city in Gansu, an oasis city in the middle of the Hexi Corridor, with a resident population of about 1.091 million at the end of 2025 (down slightly from the year before). Sitting at the northern foot of the Qilian Mountains, it has been a Silk Road hub since antiquity; tradition holds that its name comes from the Han-dynasty phrase 'extending the empire's arm to reach the Western Regions' (zhang guo bi ye). In recent years the city has become a popular destination for its colourful Danxia landforms.",
     // howItWorks sources: 中国地级市《国民经济和社会发展统计公报》，常规发布窗口次年 3 月底—6 月。张掖市人民政府《2025年张掖市国民经济和社会发展统计公报》（2026-06 发布）：2025 年末全市常住人口 109.11 万人，**比上年末减少 0.87 万人**；城镇化率 58.03%。https://www.zhangye.gov.cn/tjj/ztzl/tjsj/202606/t20260602_1549584.html （**级别 1**）。发布月份：6 月。
     howItWorks:
       "Zhangye is a prefecture-level city of Gansu covering about 37,000 km² with about 1.09 million at the end of 2025, in Ganzhou district, four counties and the Sunan Yugur autonomous county. The town lies in Ganzhou, with the Giant Buddha Temple and the drum tower as its old-town reference points, an oasis watered by the Hei River in the middle of the Hexi Corridor; the Rainbow Danxia lies about 30 km west across Linze and Sunan counties, and the Shandan horse ranch in Shandan county to the east. Newcomers most often go wrong by expecting the Danxia at the edge of town, when it lies in two other counties and the town itself is a plain oasis city.",

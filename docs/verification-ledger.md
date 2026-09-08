@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: ef7c397
+lastVerifiedCommit: 6cc3908
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,9 @@ lastVerifiedCommit: ef7c397
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel-content 15 个中国条目的 identity / howItWorks 人口段（城市人口口径核实 · 中国 15 城（C6 专项）） | 15 | 0 / 15 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
+| 2026-09-08 | terrain-content 12 篇 × 6 板块：大分水岭/澳洲阿尔卑斯/麦克唐奈/弗林德斯/蓝山/皮尔巴拉/大维多利亚沙漠/纳拉伯/大自流盆地/艾尔湖/乌鲁鲁/卡塔丘塔（地形讲解核实 · 批 6（澳大利亚 12 篇）） | 13 | 9 / 4 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |
+| 2026-09-08 | terrain-content 12 篇 × 6 板块：帕米尔/塔里木/柴达木/四川/吐鲁番/东北平原/长江/塔克拉玛干/河西走廊/雅鲁藏布大峡谷/青海湖/鄱阳湖（地形讲解核实 · 批 5（中国盆地/河流/湖泊/走廊 12 篇）） | 12 | 10 / 2 / 0 | 当场修 12 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | lille / lyon / bordeaux / nantes / ajaccio / avignon / reims / colmar 的人口年份、口径、市镇数与排名（城市人口口径核实 · 法国 8 城（C6d 年份口径专项）） | 9 | 8 / 1 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel-content 15 个泰国城市条目的 identity / howItWorks 人口段与排名（城市人口口径核实 · 泰国 15 城） | 20 | 7 / 12 / 1 | 当场修 19 条；新开 issue 1、关闭 0 |
 | 2026-09-08 | terrain-content 12 篇 × 6 板块：祁连/昆仑/太行/大兴安岭/长白/横断/喜马拉雅/南岭/贺兰/青藏高原/黄土高原/内蒙古高原（地形讲解核实 · 批 4（中国主干 12 篇）） | 15 | 8 / 5 / 2 | 当场修 13 条；新开 issue 2、关闭 0 |

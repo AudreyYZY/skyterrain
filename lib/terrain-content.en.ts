@@ -369,6 +369,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   pamir: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误。
+    //   **一处保留意见**：formation 段「帕米尔是青藏高原向西的延伸」是中科院等机构常用的通俗表述；
+    //   严格地质学上帕米尔是印度—欧亚碰撞的独立前缘突出部，不是简单的延伸。
+    //   该简化与官方科普口径一致，本轮不改，但下一轮若要写得更准，这里是可以改进的一句。
+    //   **零争议红线复核通过**：`history` 段只涉丝路古国与前现代史，无边界线描述、无主权表述。
     seeing:
       "The Pamirs, at the far west of China, are the \"knot\" where the Tianshan, Kunlun, Karakoram and Hindu Kush meet, averaging above 4,000 m — the ancient \"Congling\" (Onion Range). Muztagh Ata (about 7,546 m), with its rounded form and large glaciers running from near the summit down to its foot, is called the \"father of ice mountains.\"",
     formation:
@@ -385,8 +390,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Basins ============
   "tarim-basin": {
+    // seeing sources: 塔里木盆地面积约 **53 万平方公里**（东西长约 1500 km、南北宽约 600 km）——
+    //   若羌县人民政府 https://www.xjrq.gov.cn/rqxrmzf/c109233/201412/0ef6e4260694488a8611ae14feb455eb.shtml
+    //   （1 级，2026-09-08 核，原文「面积达53万平方公里」）。
+    //   **原文的「约 40 万」少了约四分之一，任何一手来源里都找不到依据** ——
+    //   它接近塔克拉玛干沙漠本身的量级（33.76 万 km²），像是把盆地和盆地中央的沙漠混了一层。
+    //   盆地底部沉积厚 800–1300 m、塔里木克拉通、绿洲环列等其余表述经复核准确。
     seeing:
-      "The Tarim Basin, in southern Xinjiang, is enclosed on all four sides by the Tianshan, Kunlun, Pamirs and Altun ranges — China's largest inland basin (about 400,000 km²). Its centre is China's largest desert, the Taklamakan, with a ring of oases holding the sand in.",
+      "The Tarim Basin, in southern Xinjiang, is enclosed on all four sides by the Tianshan, Kunlun, Pamirs and Altun ranges — China's largest inland basin (about 530,000 km²). Its centre is China's largest desert, the Taklamakan, with a ring of oases holding the sand in.",
     formation:
       "The Tarim Basin is an old, stable block (the Tarim craton); debris shed from the surrounding rising ranges has long accumulated in it, forming thick sediments that also hold rich oil and gas. The basin floor is about 800–1,300 m.",
     observation:
@@ -420,6 +431,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   qaidam: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（海拔 2600–3000 m、察尔汗盐湖为中国最大盐湖、
+    //   盐壳上修筑公路与铁路、雅丹地貌），未发现事实性错误，本轮无需改动。
     seeing:
       "The Qaidam Basin, in north-western Qinghai, is a large basin on the Tibetan Plateau at 2,600–3,000 m. \"Qaidam\" means \"salt marsh\" in Mongolian — salt lakes are everywhere, and the Qarhan Salt Lake, China's largest, has a salt crust so thick that highways and railways are built directly on it.",
     formation:
@@ -435,6 +448,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   sichuan: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（盆地底部海拔 250–750 m、都江堰公元前 256 年建成、
+    //   三国蜀汉史实），未发现事实性错误，本轮无需改动。
     seeing:
       "The Sichuan Basin, in south-west China, is enclosed by the Tibetan Plateau, the Daba Shan, the Wu Shan and the Yunnan–Guizhou Plateau. It is the only one of China's four great basins that is humid and rich — the historic \"land of abundance.\" Its rocks are largely purple-red sandstone and mudstone, so it is also called the \"Red Basin\" or \"Purple Basin.\"",
     formation:
@@ -450,6 +465,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "turpan-basin": {
+    // seeing sources: 艾丁湖湖面 **−154.31 m**（2008 年国家测绘公布数据），与正文「约 −154 米」相符；
+    //   博格达峰 5445 m、与艾丁湖高差约 5600 m；地表温度实测常达 75–88℃，正文「超 70℃」成立；
+    //   坎儿井与长城、大运河并称「中国古代三大工程」——2026-09-08 逐句核实，全篇 6 板块无误。
     seeing:
       "The Turpan Basin, in the eastern Tianshan of Xinjiang, is the lowest place in China — the surface of Lake Aydingkol in the basin is about 154 m below sea level. It is also one of the hottest and driest places in China, with ground temperatures over 70 °C in summer, hence the name \"the land of fire.\"",
     formation:
@@ -466,6 +484,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Plains ============
   northeast: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（中国面积最大的平原约 35 万 km²、黑土区、闯关东、大庆油田），
+    //   未发现事实性错误。**正文没有写具体面积数字**，因此不构成「缺年份/缺口径」的问题，本轮无需改动。
     seeing:
       "The Northeast Plain is China's largest plain, made up of the Songnen, Liaohe and Sanjiang plains, ringed by the Greater and Lesser Khingan ranges and Changbai Shan. It has vast tracts of fertile black soil and is China's most important commodity-grain base — the \"great northern granary.\"",
     formation:
@@ -503,6 +523,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   yangtze: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（江湖调蓄机制、崇明岛成因、三峡工程对下游水沙节律的影响），
+    //   未发现事实性错误，本轮无需改动 —— 机制类表述没有被简化成错的，这一点专门核过。
     seeing:
       "The Middle-Lower Yangtze Plain runs from Yichang in Hubei to the mouth of the Yangtze — a string of alluvial plains along the river (the Two-Lakes Plain, the Poyang Lake Plain, the Chaohu Plain, the Yangtze Delta). It is water-netted and lake-rich, home to China's largest group of freshwater lakes, and has been a \"land of fish and rice\" since ancient times.",
     formation:
@@ -519,6 +541,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Deserts / corridors / canyons ============
   taklamakan: {
+    // seeing sources: 面积约 33 万 km²（中科院新疆生态与地理研究所口径 33.76 万），中国最大沙漠；
+    //   「世界第二大流动沙漠」次于鲁卜哈利沙漠 —— 正文用「常被称为」的限定写法，成立。
+    //   年降水量不足 100 mm、沙丘相对高度 100–300 m、1995 年塔里木沙漠公路建成，均核实准确。
+    //   **名称释义处理得当**：正文明确写了「有多种说法」并列民间与学界解释，没有单挑一个当定论。
+    //   2026-09-08 核。**零争议红线复核通过**。
     seeing:
       "The Taklamakan Desert lies in the centre of the Tarim Basin, about 330,000 km² — the largest desert in China and often called the second-largest shifting-sand desert in the world. The meaning of \"Taklamakan\" is disputed; it is popularly glossed as \"go in and you won't come out,\" while scholars propose \"old abandoned place\" or \"vineyard place.\" Almost all of it is tall moving dunes, dune chain after dune chain.",
     formation:
@@ -534,6 +561,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hexi-corridor": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块（长约 1000 km、西汉设河西四郡、莫高窟），
+    //   未发现事实性错误，本轮无需改动。
     seeing:
       "The Hexi Corridor, in western Gansu, is a long narrow strip of level ground, about 1,000 km long and anywhere from a few to over a hundred kilometres wide, between the Qilian Mountains and the Heli and Longshou ranges to the north. \"Hexi\" means \"west of the (Yellow) River.\" It is a corridor that links the Central Plains with the Western Regions, the single most important section of the ancient Silk Road.",
     formation:
@@ -567,6 +596,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tsangpo-gorge": {
+    // seeing sources: 长约 504 km、平均深约 2268 m、最深约 6009 m，均据 **1994 年中国科学家测算**，
+    //   正文已如实标注测算方与年份，**没有做无限定的「世界最深」绝对断言** —— 正确写法的范例。
+    //   1998 年中国科考队首次徒步穿越；下游称布拉马普特拉河、汇入孟加拉湾（纯地理事实）。
+    //   2026-09-08 核。**零争议红线复核通过**：`history` 段无边界线描述、无主权表述。
     seeing:
       "The Yarlung Tsangpo Grand Canyon, in south-eastern Tibet, is the huge horseshoe hairpin where the Yarlung Tsangpo swings around Namcha Barwa (7,782 m). By the 1994 measurements of Chinese scientists it runs about 504 km, averages about 2,268 m deep and reaches about 6,009 m at its deepest — the deepest and longest canyon in the world.",
     formation:
@@ -583,8 +616,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ Lakes / islands ============
   "qinghai-lake": {
+    // seeing sources: 青海湖水体面积 **4,650.08 km²（2024-12-20 监测）**，较 2023 年同期增 28.1 km²，
+    //   **已连续约二十年扩张**（2005 年低点约 4,237 km²）；水位约 3,196.72 m（2024-09 监测）——
+    //   新华网转青海省监测数据 http://www.qh.xinhuanet.com/20241222/642252c2ce2b4e60ab173787387bb0b1/c.html
+    //   （2 级）；另见青海省人民政府 2024-03 发布的另一次监测 4,540.98 km²（1 级），2026-09-08 核。
+    //   **同一年里两次监测就差一百多平方公里 —— 湖泊面积必须带监测时点，写一个裸数就是错的。**
+    //   原文的「约 4500 平方公里」是中途某一年的旧数且没交代时点。
+    //   **下一轮回来刷新**：青海省年末例行发布，注意换成当时的最新一期。
     seeing:
-      "Qinghai Lake, in north-eastern Qinghai on the north-eastern Tibetan Plateau, is the largest lake in China and its largest salt lake — surface elevation about 3,196 m, area about 4,500 km². Its Tibetan name is Tso Ngonpo and its Mongolian name Kokonur, both meaning \"blue sea.\"",
+      "Qinghai Lake, in north-eastern Qinghai on the north-eastern Tibetan Plateau, is the largest lake in China and its largest salt lake. It has been expanding for about two decades: monitoring at the end of 2024 put its surface elevation at about 3,196 m and its water area at about 4,650 km². Its Tibetan name is Tso Ngonpo and its Mongolian name Kokonur, both meaning \"blue sea.\"",
     formation:
       "Qinghai Lake was originally an exterior-drainage freshwater lake connected to the Yellow River system. Some hundred-odd thousand years ago the surrounding mountains rose and blocked its outlet, making it an interior-drainage lake: water only enters, is lost to evaporation, and salts accumulate, so it turned salty, and its area has slowly shrunk and rebounded.",
     observation:
@@ -598,6 +638,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   poyang: {
+    // seeing sources: **鄱阳湖面积丰枯水期能差好几倍**，正文写的是「丰水期可达 3000 多 km²、枯水期只有几百 km²」
+    //   这样的季节性区间，**没有给出误导性的单一定数** —— 这是正确写法的范例，与青海湖那条
+    //   （写了一个不带时点的裸数）正好构成对照。
+    //   鄱阳湖之战 36 天鏖战、退田还湖、洞庭湖历史上因淤积围垦让位于鄱阳湖，均核实准确，2026-09-08。
     seeing:
       "Poyang Lake, in northern Jiangxi on the south bank of the Yangtze, is China's largest freshwater lake (at high water). Its signature is transformation: in summer flood it is a vast open lake (over 3,000 km²), in winter drought it shrinks to winding channels plus large grass flats and mudflats (a few hundred km²) — locally, \"a lake at high water, a river at low water.\"",
     formation:
@@ -645,8 +689,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ================= AUSTRALIA =================
   "great-dividing-range": {
+    // seeing sources: 长度 3,500+ km、从昆士兰北部经新南威尔士到维多利亚、是澳大利亚的主分水岭 —— 多方一致，2026-09-08 核。
+    //   **「世界第三长的陆地山系」已删**：这个名次在来源之间自相矛盾（科普站点说第三、英文维基正文写
+    //   fifth-longest），Geoscience Australia 官网没有这一表述，**而且没有任何一方交代按什么口径**
+    //   （「land-based range」含不含分支山系、怎么算起讫）。给不出限定语就不写名次。
+    //   海拔大部 300–1500 m、最高处在南端的澳洲阿尔卑斯、1813 年翻越蓝山，均核实无误。
     seeing:
-      "The Great Dividing Range runs more than 3,500 km down the eastern edge of Australia, from far north Queensland through New South Wales and Victoria — the third-longest land-based range on Earth. It is Australia's main watershed: rivers on the east flow a short way to the Pacific, rivers on the west drain inland toward the Murray–Darling. From the air it reads as a long, low, forested rampart set back from the coast.",
+      "The Great Dividing Range runs more than 3,500 km down the eastern edge of Australia, from far north Queensland through New South Wales and Victoria — among the longest mountain chains lying entirely within a single country. It is Australia's main watershed: rivers on the east flow a short way to the Pacific, rivers on the west drain inland toward the Murray–Darling. From the air it reads as a long, low, forested rampart set back from the coast.",
     formation:
       "Despite the name, it is not a single alpine chain but a broad belt of plateaus, escarpments and low ranges — the uplifted and dissected eastern margin of the continent, worn down over more than 100 million years. Most of it is 300–1,500 m; the highest ground is in the Australian Alps at its southern end. Eastward-flowing rivers have cut deep gorges into its seaward side.",
     observation:
@@ -660,6 +709,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "australian-alps": {
+    // seeing sources: 科修斯科峰 2,228 m。**正文已正确限定为「澳大利亚大陆最高峰」** ——
+    //   赫德岛的莫森峰 2,745 m 更高但属海外领地，原文规避了这个坑，是正确写法的范例。
+    //   蓝湖等四个冰斗湖（Blue / Cootapatamba / Albina / Club）是**澳大利亚大陆上仅有的冰川湖** ——
+    //   DCCEEW https://www.dcceew.gov.au/water/wetlands/australian-ramsar-wetlands/blue-lake（2 级）。
+    //   雪山工程 1949-10-17 动工、1974 年竣工 —— DCCEEW 国家遗产名录（2 级）。2026-09-08 核，全篇无误。
     seeing:
       "The Australian Alps are the highest part of the continent, straddling the New South Wales–Victoria border at the southern end of the Great Dividing Range. Mount Kosciuszko, at 2,228 m, is the highest point in mainland Australia. It is the only substantial area of the Australian mainland that holds a reliable winter snowpack.",
     formation:
@@ -675,6 +729,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "macdonnell-ranges": {
+    // seeing sources: 长约 644 km（正文「约 640 公里」相符）；齐尔山 1,531 m 确为北领地最高峰；
+    //   褶皱年代与 Alice Springs 造山运动约 300–350 Ma 的地质学口径一致；
+    //   陆上电报线 1870–1872 年建成、爱丽斯泉电报站 1871 年选址于 Heavitree Gap —— 2026-09-08 核，全篇无误。
     seeing:
       "The MacDonnell Ranges run east–west across the centre of Australia for about 640 km, with Alice Springs sitting in a gap near their middle. They are a set of sharp parallel ridges rising a few hundred metres above the surrounding desert plain, cut through by dramatic gorges. Mount Zeil (1,531 m) is the highest peak in the Northern Territory.",
     formation:
@@ -690,6 +747,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "flinders-ranges": {
+    // seeing sources: 长约 430 km，圣玛丽峰（Ngarri Mudlanha）1,171 m 为该山脉最高峰。
+    //   **埃迪卡拉丘陵是埃迪卡拉纪（Ediacaran）的命名地**，其 GSSP 于 2004 年获国际地层委员会批准 ——
+    //   正文「已知最早的复杂动物化石之一」用了「之一」，措辞克制。2026-09-08 核，全篇无误。
     seeing:
       "The Flinders Ranges are South Australia's largest mountain range, running about 430 km north from near Adelaide into the arid outback. Their signature is Wilpena Pound (Ikara), a huge natural amphitheatre of rock ringed by cliffs. St Mary Peak, on its rim, reaches 1,171 m.",
     formation:
@@ -705,6 +765,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "blue-mountains": {
+    // seeing sources: 大蓝山地区 **2000-11-29 列入世界遗产**，认定标准聚焦桉树在冈瓦纳分离后的演化多样性 ——
+    //   DCCEEW https://www.dcceew.gov.au/parks-heritage/heritage/places/world/blue-mountains（1 级，2026-09-08 核）。
+    //   卡通巴一带台地海拔约 1000–1050 m、山地内局部制高点约 1100–1200 m，正文「约 1100 米」相符。全篇无误。
     seeing:
       "The Blue Mountains rise just west of Sydney — not really mountains but a deeply dissected sandstone plateau, standing about 1,100 m and slashed by sheer-walled valleys. The famous view is of the Three Sisters and the Jamison Valley from the escarpment at Katoomba. The blue haze that names them is generally attributed to fine oil droplets from the eucalypts, together with the air itself, scattering sunlight.",
     formation:
@@ -720,6 +783,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   pilbara: {
+    // seeing sources: 梅哈里山 1,249 m 为西澳最高峰（Karijini 国家公园哈默斯利岭内）；
+    //   皮尔巴拉克拉通基底逾 30 亿年（部分逾 35 亿年）；哈默斯利群主要条带状铁建造约 2.48–2.5 Ga ——
+    //   与正文「25 亿年前」相符。穆鲁久加（布鲁普半岛）约 100 万—200 万幅岩刻，
+    //   正文「世界上岩画最密集的遗址之一」用了「之一」，成立。2026-09-08 核，全篇无误。
+    //   **下一轮可补**：穆鲁久加已于 2025 年列入 UNESCO 世界遗产，正文未提 —— 不是错误，是可以加的一句。
     seeing:
       "The Pilbara is a vast, ancient, iron-rich region of north-western Australia. Its heart is the Hamersley Range, whose banded rocks are cut by the deep red gorges of Karijini National Park; Mount Meharry (1,249 m) is the highest point in Western Australia. This is one of the oldest, most stable pieces of land on the planet — and the source of most of Australia's iron ore.",
     formation:
@@ -767,6 +835,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-victoria-desert": {
+    // seeing sources: 大维多利亚沙漠约 **348,750 km²**，澳大利亚面积最大的沙漠，正文「约 35 万」属合理取整，2026-09-08 核。
+    //   马拉林加核试验 1950—60 年代、对原住民社区造成长期伤害 —— 官方认定的史实，
+    //   正文作客观陈述、未涉现代政治评价，红线复核通过。
     seeing:
       "The Great Victoria Desert is the largest desert in Australia, about 350,000 km², sprawling across Western Australia and South Australia. It is a mix of long sand dunes, gravel plains and dry salt lakes, sparsely covered with spinifex, mulga and desert oak. It is one of the least-populated regions on Earth.",
     formation:
@@ -782,6 +853,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "nullarbor-plain": {
+    // seeing sources: 纳拉伯平原约 **200,000 km²**，「世界上最大的一整块石灰岩」为广泛认可的表述，未查到有力反例或竞争说法；
+    //   横贯澳大利亚铁路 **478 km（297 英里）直线段**为世界最长完全无弯曲的铁路直线段；
+    //   艾尔与同伴 Wylie 1840—41 年完成有记录的首次欧洲人穿越。2026-09-08 核，全篇无误。
     seeing:
       "The Nullarbor is a vast, flat, treeless plain on the southern edge of Australia — its name is Latin-derived for \"no trees.\" It is the world's largest single slab of limestone, about 200,000 km², and it ends abruptly at the Bunda Cliffs, which drop straight into the Great Australian Bight for hundreds of kilometres.",
     formation:
@@ -797,6 +871,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-artesian-basin": {
+    // seeing sources: 大自流盆地逾 **170 万 km²** —— Geoscience Australia
+    //   https://www.ga.gov.au/scientific-topics/water/groundwater/gab（1 级，2026-09-08 核）。
+    //   **正文没有写「世界最大自流盆地」这类排名断言**，只客观陈述面积，因此不需要补限定语 ——
+    //   这是「不写名次」这条规矩的正面例子。
+    //   首口自流井 1878 年钻于 Bourke 附近的 Kallara 站，正文用「约」字留了余地。
     seeing:
       "The Great Artesian Basin is not a landform you can see as a shape — it is a vast underground reservoir of water beneath about one-fifth of Australia, roughly 1.7 million km². Rain that fell on the eastern highlands hundreds of thousands to a million years ago slowly seeps through porous rock and emerges, sometimes hot, at natural springs and bores far out in the dry inland.",
     formation:
@@ -812,6 +891,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-eyre": {
+    // seeing sources: 卡蒂坦达—埃尔湖湖底约 **−15 m**，澳大利亚陆地最低点；满水时约 9,500 km²，全澳最大湖泊；
+    //   唐纳德·坎贝尔 1964-07-17 驾 Bluebird-Proteus CN7 在干涸湖床创下 648.7 km/h 的陆上极速世界纪录。
+    //   2026-09-08 核，全篇无误。
+    //   **注意**：这个湖大部分时间是干的、满水期面积差别极大，正文没有把「满水面积」当成常态面积来写 ——
+    //   与青海湖那条（写了一个不带时点的裸数）正好构成对照，见 known-errors C6-j。
     seeing:
       "Kati Thanda–Lake Eyre, in the South Australian outback, is the lowest point in Australia — its floor lies about 15 m below sea level. It is the country's largest lake, but it is usually a blinding white salt pan; it fills completely only a few times a century, when monsoon rains far to the north drain down into it.",
     formation:
@@ -833,8 +917,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Uluṟu is the tilted, upturned edge of a thick bed of hard sandstone (arkose), laid down by rivers about 550 million years ago, then folded almost vertical and buried. As the softer surrounding rock eroded away over hundreds of millions of years, this resistant slab was left standing — most of it is still underground. Its surface is grey; the famous red is a thin skin of iron oxide.",
     observation:
       "From the air Uluṟu is an isolated, smooth, elongated dome with steep sides and parallel grooves running down its flanks, marking the near-vertical rock layers. It glows deep red at sunrise and sunset because low-angle light passes through more dust and air. Waterholes and shady gorges hide at its base.",
+    // distinguish sources: 乌鲁鲁高 348 m、底部周长 9.4 km；岩石为 **arkose，粗粒长石砂岩**（course-grained sandstone
+    //   rich in the mineral feldspar）—— Parks Australia《Geology Fact sheet》(uluru.gov.au, 2023-09 版，1 级)
+    //   与 https://uluru.gov.au/discover/highlights/amazing-facts/（1 级），2026-09-08 核。
+    //   **原 distinguish 段写「细砂岩」是错的**，而同条目 formation 段写的「坚硬砂岩（长石砂岩）」是对的 ——
+    //   **同一篇里一处对一处错**；同样的错还被抄到了 kata-tjuta 的 distinguish 段。
+    //   约 5.5 亿年前由河流沉积、之后在 Alice Springs 造山运动中被掀转近 90°（正文只说「之后」、
+    //   没坐实褶皱年代，写法克制、可接受）。
+    //   **「世界上最大的裸露岩石之一」已用「之一」限定** —— 与西澳 Mount Augustus 常被称更大这一点不冲突，
+    //   Parks Australia 官网自己也不做「世界最大」的断言。
+    //   **攀爬于 2019-10-26（归还 34 周年）永久关闭**，正文写的正是这一条，没有过期。
+    //   **原住民文化表述复核通过**：「传统主人」「阿南古」「法与故事」（对应 Tjukurpa）均为管理局公开材料
+    //   里明确使用的词，未转述二手渠道对圣地含义的解释。
     distinguish:
-      "Uluṟu is an inselberg — an \"island mountain\" — not a plateau or a volcano. Nearby Kata Tjuṯa is made of coarse conglomerate and forms many separate domes, whereas Uluṟu is one continuous block of fine sandstone. It is not a meteorite and not hollow.",
+      "Uluṟu is an inselberg — an \"island mountain\" — not a plateau or a volcano. Nearby Kata Tjuṯa is made of coarse conglomerate and forms many separate domes, whereas Uluṟu is one continuous block of coarse-grained sandstone (arkose). It is not a meteorite and not hollow.",
     concept:
       "An inselberg is what is left when erosion strips a plain but a body of especially hard rock resists and stands proud. Uluṟu's near-vertical layering — you can see the bedding running up its sides — shows how far the rock has been tilted from its original flat-lying position.",
     history:
@@ -844,12 +940,21 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "kata-tjuta": {
     seeing:
       "Kata Tjuṯa (\"many heads\"), also called the Olgas, is a cluster of 36 steep-sided rock domes rising from the desert about 30 km west of Uluṟu. The tallest, Mount Olga, stands about 546 m above the plain — higher than Uluṟu. Deep, sheer-walled gorges run between the domes.",
+    // formation sources: 卡塔丘塔 36 座圆丘，最高的奥尔加山高出平原约 546 m（比乌鲁鲁高 198 m）——
+    //   https://uluru.gov.au/discover/highlights/kata-tjuta/（1 级，2026-09-08 核）。
+    //   砾岩的**胶结基质是沙与泥**（cemented by sand and mud），Parks Australia《Geology Fact sheet》
+    //   （1 级）—— 原文写「胶结在砂岩里」不对。砾石成分（花岗岩、玄武岩）、约 5.5 亿年前、
+    //   源自当时耸立在南方的山脉，均核实无误。
+    //   **掀转角度**：乌鲁鲁被掀转近 90°，卡塔丘塔仅约 15—20°，已写进 distinguish 段。
+    //   **「男性圣址、详细故事受限」的表述复核通过**：与管理局官网「the stories and cultural knowledge
+    //   associated with these rock formations are not shared with visitors」完全对应，
+    //   没有僭越去描述管理局未公开的具体含义。
     formation:
-      "Kata Tjuṯa is made of conglomerate — pebbles and boulders of granite and basalt cemented in sandstone — deposited by fast rivers pouring off a mountain range that once stood to the south, around 550 million years ago. Weathering has since worked along cracks in this coarse rock, rounding it into separate domes rather than one block.",
+      "Kata Tjuṯa is made of conglomerate — pebbles and boulders of granite and basalt cemented in a matrix of sand and mud — deposited by fast rivers pouring off a mountain range that once stood to the south, around 550 million years ago. Weathering has since worked along cracks in this coarse rock, rounding it into separate domes rather than one block.",
     observation:
       "From the air Kata Tjuṯa looks like a group of giant red loaves or knuckles set close together, with dark chasms between them — the Valley of the Winds threading through the middle. The rock surface is knobbly with embedded cobbles, unlike Uluṟu's smoother sandstone.",
     distinguish:
-      "Uluṟu and Kata Tjuṯa share an origin — both are the eroded remains of sediment shed off the same vanished mountains — but Uluṟu is fine sandstone tilted almost vertical and eroded into one mass, while Kata Tjuṯa is coarse conglomerate, less steeply tilted, broken into many domes.",
+      "Uluṟu and Kata Tjuṯa share an origin — both are the eroded remains of sediment shed off the same vanished mountains — but Uluṟu is coarse-grained sandstone (arkose) tilted almost vertical and eroded into one mass, while Kata Tjuṯa is coarse conglomerate, tilted only about 15 to 20 degrees, broken into many domes.",
     concept:
       "The pair is a lesson in how rock type controls landform: same age, same setting, different sediment — and one becomes a single monolith, the other a field of domes. The pebbles in Kata Tjuṯa's rock are direct evidence of the ancient mountains that supplied them.",
     history:
