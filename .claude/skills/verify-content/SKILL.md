@@ -189,6 +189,14 @@ findings JSON 的形状：
 `key` 是去重键，**同一个键永远只有一个 issue**。字段含义见
 [`scripts/verify-issues.ts`](../../../scripts/verify-issues.ts) 顶部注释。
 
+**核到「这就是最新一期」的，写进豁免表，不要只留在注释里**：
+`docs/claims-stale-exempt.json` 记 `key / reason / confirmedOn / recheckAfter`，
+`npm run check:claims` 会把它们从 `C6d` 计数里摘出来单列，并在 `recheckAfter` 到期时提示回来复核
+（到期日照 [`docs/data-refresh-calendar.md`](../../../docs/data-refresh-calendar.md) 里那个机构的发布月份填）。
+不写进去的话，下一轮核实会把同一批条目重新报一遍 —— 或者更糟，
+**有人为了让计数下降而硬填一个没核到的数字**。加豁免的前提是条目上方已有
+`// <field> sources:` 注释写清为什么。
+
 **`key` 与 `kind` 必须沿用既有写法，否则去重会失效**（2026-09-08 踩过）：
 
 | 档 | `kind` | `key` |

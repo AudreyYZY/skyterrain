@@ -459,6 +459,11 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
      **各机构的发布月份汇总在 [`docs/data-refresh-calendar.md`](docs/data-refresh-calendar.md)**；
      新增一个国家时顺手把它的统计机构补进那张表——发布节奏是核实过程的副产品，
      当时不记，下次还得再查一遍。
+     **反过来，「年份旧」不等于「过期」**：有些地方就是没有更新的数（该级别公报不含人口、
+     那年起只发户籍、那一版删了人口章节、公报是纯图片取不到数）。这类核实过之后要写进
+     [`docs/claims-stale-exempt.json`](docs/claims-stale-exempt.json)，
+     `check:claims` 会把它们从 C6d 计数里摘出来单列，并在到期时提示回来复核。
+     **不写进去的话，下一个人会为了让计数下降而硬填一个没核到的数字。**
   ①-c **不要拿国际机构的推算冒充本国官方数字**：UN World Population Prospects /
      World Bank 是模型推算，本国统计机构是登记或普查，可以差几百万（known-errors C6-b）。
   ② 最高级与排名要么给限定语（「之一」「按行政区划面积计」），要么不写；
