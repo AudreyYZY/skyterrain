@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 9d71e5d
+lastVerifiedCommit: 48fb947
 
 ## 覆盖现状（截至 2026-09-07）
 
@@ -20,6 +20,8 @@ lastVerifiedCommit: 9d71e5d
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-08 | travel · 取数受阻（C6-d：公报是纯图片格式、取不到数字的三处） | 3 | 0 / 0 / 3 | 当场修 0 条；新开 issue 3、关闭 0 |
+| 2026-09-08 | travel · 中国城市人口（C6-d 第 24 批：中国 12 城（遵义/汕头/潮州/绍兴/北海/嘉峪关/舟山/腾冲/都江堰/凤凰/十堰/安阳）） | 24 | 2 / 22 / 0 | 当场修 24 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 菲律宾城市人口与口径（C6-d 第 23 批：菲律宾 11 城取 PSA 2024 年普查） | 14 | 0 / 12 / 2 | 当场修 14 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 德国城市人口与双口径（C6-d 第 22 批：德国 9 城取各州统计局 2025 年末数（Zensus 2022 基准）） | 17 | 0 / 17 / 0 | 当场修 17 条；新开 issue 0、关闭 0 |
 | 2026-09-08 | travel · 希腊城市人口与口径（C6-d 第 21 批：希腊 11 城核实（7 条本来就是最新）） | 9 | 2 / 7 / 0 | 当场修 9 条；新开 issue 0、关闭 0 |
