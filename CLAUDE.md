@@ -25,8 +25,8 @@
   冰岛 28 + 瑞士 27 + 挪威 28 + 法国 29 + 意大利 30 + 西班牙 26 + 德国 26 + 希腊 26 + 葡萄牙 26 +
   荷兰 24 + 奥地利 26 + 比利时 26 + 瑞典 26 + 芬兰 26 + 爱尔兰 28 + 丹麦 25 + 卢森堡 12 +
   波兰 25 + 克罗地亚 26 + 捷克 26 = 549）+ 北美洲（美国 26 + 加拿大 25 = 51）+
-  大洋洲（澳大利亚 34 + 新西兰 30 = 64），
-  中英双语，共 1013 个
+  南美洲（智利 28 = 28）+ 大洋洲（澳大利亚 34 + 新西兰 30 = 64），
+  中英双语，共 1041 个（38 个国家）
   （`node --experimental-strip-types scripts/check-regions.ts` 每次运行都会打印准确计数，
   这份汇总数字如果又和它对不上，以脚本输出为准并回来改这一行）
   - 地形集选取标准与分类定义见 `docs/terrain-taxonomy.md`（T1 骨架 / T2 地貌省 / T3 标志地点；
@@ -107,7 +107,7 @@ lib/
   terrain-label-registry.ts — 标签（由 terrain-registry 生成，含 nameEn）
   terrain-label-theme.ts — 标签视觉 token；LABEL_FONT_FAMILY = 通用系统字体栈
   lesson.ts              — 板块顺序 / 标题（中英）/ 拼接
-  routes.ts              — 真实商业航线（data/routes/*.json，当前 127 条），机场航点 + 地形航点
+  routes.ts              — 航线（data/routes/*.json，当前 280 条；航班号仅在有核实留痕时对外显示，见「航线的航班信息」一节），机场航点 + 地形航点
   route-narration.ts     — 每条航线两套 ~2.5 分钟连贯解说：ROUTE_NARRATION[id].{study,travel}（中英）；
                            getRouteNarration(id, lang, mode)；CesiumMap.flyRoute 播放
   app-mode.ts            — AppMode 类型 + getStoredMode/setStoredMode（localStorage fge-app-mode）
@@ -130,7 +130,7 @@ features/
 
 ## 当前阶段
 
-**地图/交互/双语已完成**：地形注册表（见 §范围，当前 301 个）+ 数据驱动相机 +
+**地图/交互/双语已完成**：地形注册表（见 §范围，当前 1041 个）+ 数据驱动相机 +
 标签分级（双语）+ 地形抬升高亮 + 自然语音（跟随语言）+ 逐句高亮 + 真实航班航线 +
 纪录片编辑式界面。
 
@@ -256,7 +256,8 @@ features/
     · ✅ 哈萨克斯坦 26（`asia` 300→326，开启中亚次区域 `central-asia`）
     · ✅ 土耳其 28（`asia` 326→354，开启西亚次区域 `western-asia`）
     · ✅ 克罗地亚 26（`europe` 499→525，南欧第五国）
-    · ✅ 捷克 26（`europe` 525→551，东欧第二国，本轮新增）
+    · ✅ 捷克 26（`europe` 525→551，东欧第二国）
+    · ✅ 智利 28（`south-america` 0→28，**首个南美洲国家**，该洲由此上线）
   - **土耳其**：`country: "turkey"`（西亚首个国家，中亚之后第二个新开的亚洲次区域）；零争议红线
     从严执行——阿拉拉特山只作「土耳其最高峰 + 层状火山」的地质地理事实，不涉亚美尼亚民族象征 /
     种族屠杀议题，边境表述比照阿尔卑斯法意瑞交界的中性写法；东南安纳托利亚 / 库尔德相关地形一律
@@ -363,7 +364,7 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
 
 ## 地形集 / 标签 / 区域高亮
 
-- **`TERRAIN_REGISTRY`（当前 301 个，见 §范围）= 单一真实源**：纯地貌图鉴，不含人文聚落
+- **`TERRAIN_REGISTRY`（当前 1041 个，见 §范围）= 单一真实源**：纯地貌图鉴，不含人文聚落
   （`settlement` 分类已于 2026-09-04 废弃移除，见 `docs/terrain-taxonomy.md` §8）。
   `TerrainCategory`：mountain_system / plateau / basin / plain / hills / desert / lake /
   river / valley / gorge / island / grassland / coast / inselberg。
@@ -458,6 +459,11 @@ SHOW_KM_MAX / RANGE_MAX / LANDMARK_SCREEN_FRAC），视觉取景需在真实浏�
      **各机构的发布月份汇总在 [`docs/data-refresh-calendar.md`](docs/data-refresh-calendar.md)**；
      新增一个国家时顺手把它的统计机构补进那张表——发布节奏是核实过程的副产品，
      当时不记，下次还得再查一遍。
+     **反过来，「年份旧」不等于「过期」**：有些地方就是没有更新的数（该级别公报不含人口、
+     那年起只发户籍、那一版删了人口章节、公报是纯图片取不到数）。这类核实过之后要写进
+     [`docs/claims-stale-exempt.json`](docs/claims-stale-exempt.json)，
+     `check:claims` 会把它们从 C6d 计数里摘出来单列，并在到期时提示回来复核。
+     **不写进去的话，下一个人会为了让计数下降而硬填一个没核到的数字。**
   ①-c **不要拿国际机构的推算冒充本国官方数字**：UN World Population Prospects /
      World Bank 是模型推算，本国统计机构是登记或普查，可以差几百万（known-errors C6-b）。
   ② 最高级与排名要么给限定语（「之一」「按行政区划面积计」），要么不写；

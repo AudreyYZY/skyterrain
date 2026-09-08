@@ -15,6 +15,9 @@ import type { TerrainLesson } from "@/types/terrain";
 export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Mountain systems ============
   qinling: {
+    // seeing sources: 太白山拔仙台海拔 3,771.2 m；广义秦岭山系东西长约 1,600 km ——
+    //   陕西省宁陕县人民政府 https://www.ningshan.gov.cn/Content-644809.html（1 级，2026-09-08 核）。
+    //   「秦岭是长江与黄河的分水岭」等表述经复核准确，中英逐句对应无分歧。
     seeing:
       "The Qinling Mountains run east–west across the exact middle of China; the range system as a whole is about 1,600 km long. They are one of the country's most important natural dividing lines: warm-temperate dry farming to the north, subtropical rice country to the south. From the air the range splits the palette in two — the yellow Guanzhong Plain and Loess Plateau on the north side, the deep green Hanzhong and Sichuan basins on the south.",
     formation:
@@ -32,8 +35,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   qilian: {
     seeing:
       "The Qilian Mountains lie on the Gansu–Qinghai border and are the water tower and natural shield of the Hexi Corridor. Their summits carry permanent snow and thousands of glaciers, whose meltwater feeds a string of oasis cities — Wuwei, Zhangye, Jiuquan. From the air they sit as a white band between the arid corridor and gobi to the north and the moist grasslands of Qinghai to the south.",
+    // formation sources: 现代冰川约 2680 条、面积约 1600 km² —— 中国第二次冰川编目（2693 条 / 1597.8 km²），
+    //   与正文一致，2026-09-08 核。
+    //   **团结峰（岗则吾结）海拔没有定论**：流传的数值至少有 5808、5827、5937 米三组，
+    //   没有找到测绘部门的定论。原文写「各次测量在 5808—5827 米之间」，**把两个数字当成了区间的上下界**，
+    //   而 5937 米这一组落在区间之外 —— 已改成并列举例，不宣称边界。
+    //   下一轮去核自然资源部 / 国家基础地理信息中心是否有正式高程（见 issue）。
     formation:
-      "The Qilian is the north-eastern edge of the Tibetan Plateau, still rising under the northward push of the Indian plate. It is a set of parallel ridges and valleys trending NW–SE, built of Palaeozoic metamorphic rock and granite. China's second glacier inventory counts about 2,680 glaciers here, roughly 1,600 km² of ice — the solid reservoir of the Hexi Corridor. The highest summit, Tuanjie (Kangze'gyai) Peak, is about 5,800 m, with survey figures ranging from 5,808 to 5,827 m.",
+      "The Qilian is the north-eastern edge of the Tibetan Plateau, still rising under the northward push of the Indian plate. It is a set of parallel ridges and valleys trending NW–SE, built of Palaeozoic metamorphic rock and granite. China's second glacier inventory counts about 2,680 glaciers here, roughly 1,600 km² of ice — the solid reservoir of the Hexi Corridor. The highest summit, Tuanjie (Kangze'gyai) Peak, is about 5,800 m; published survey figures do not agree, among them 5,808 m and 5,827 m.",
     observation:
       "The easiest tell is the slant — the crest runs NW–SE, clearly different from the true east–west Qinling. Snow and ice run together along the summits, and a row of triangular alluvial fans spreads out at the foot, each fan edge turning green as an oasis. The dead-straight Hexi Corridor lies below the north slope; the open grasslands of Qinghai below the south — one side yellow, the other green.",
     distinguish:
@@ -47,6 +56,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   tianshan: {
     seeing:
       "The Tianshan crosses central Xinjiang and splits the region into a southern and a northern half. The whole system runs about 2,500 km east–west, some 1,700 km of it inside China, and is one of the largest independent latitudinal (east–west) mountain systems on Earth. From the air you see white peaks and glaciers, a ring of yellow-green alluvial fans and oases at the foot, and beyond them the Taklamakan and Gurbantunggut deserts.",
+    // formation sources: 新疆天山 2013 年列入世界自然遗产（UNESCO 第 37 届大会，标准 vii、ix）
+    //   https://whc.unesco.org/en/list/1414（1 级，2026-09-08 核）。
+    //   **托木尔峰有两套并存的高程口径**：中国官方 7443 m / 国际常用 7439 m（Jengish Chokusu），
+    //   差 4 m 属测量口径差异 —— 条目取中国官方值，位置写「中国与吉尔吉斯斯坦边界」，准确。
+    //   博格达峰 5445 m、位于阜康市境内，晴天可自乌鲁木齐远眺。
+    //   天山全长约 2500 km、中国境内约 1700 km，与通行表述一致。
     formation:
       "The Tianshan is a Palaeozoic fold system re-uplifted in the Cenozoic under the push of the Indian plate — geomorphologists call it a \"regenerated\" range. It is made of several parallel ranges with basins between them (the Ili valley, the Yanqi basin). Its highest point, Tomur Peak (about 7,443 m), sits on the China–Kyrgyzstan border; Bogda Peak (5,445 m), just beside Ürümqi, is the best-known landmark.",
     observation:
@@ -59,11 +74,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The northern foot of the Tianshan carried the northern Silk Road; the southern foot, the middle road. Cities such as Ürümqi and Yining were all built on oases watered by Tianshan snowmelt. In 2013 Xinjiang Tianshan was inscribed as a World Natural Heritage site for its glaciers, snowy peaks and vertical natural zones.",
   },
 
+  // altai formation sources: 4,374 m for Youyi/Khüiten — CAS IGSNRR, 《中国地貌·阿尔泰山脉》
+  //   https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692378.html (level 2);
+  //   border attribution and tripoint — en.wikipedia "Nairamdal Peak" / zh.wikipedia 「友谊峰」
+  //   (level 3, checked 2026-09-08). Naming trap: Chinese 「友谊峰」 (Friendship Peak, 4,374 m,
+  //   on the China–Mongolia border) is Mongolian Khüiten; Mongolian Nairamdal ("friendship",
+  //   4,082 m) is the tripoint and is 奎屯峰/Kuitun in Chinese. The two languages' "Friendship
+  //   Peak" are different mountains — the original text said the 4,374 m peak was at the tripoint.
   altai: {
+    // seeing sources: 2026-09-08 复核：`formation` 段刚修过的那处（友谊峰是中蒙界峰、三国交界点是奎屯峰）
+    //   **没有回归**，条目上方的命名陷阱注释与中英正文三处一致。
+    //   其余 5 个板块经逐句对照未见中英分歧；额尔齐斯河经俄罗斯注入北冰洋、
+    //   是新疆唯一的外流水系，属公认地理事实。
     seeing:
       "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, of which Kanas Lake is the best known.",
     formation:
-      "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak, reaches 4,374 m at the China–Russia–Mongolia junction. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
+      "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak — Khüiten Peak on the Mongolian side — reaches 4,374 m on the China–Mongolia border, while the China–Russia–Mongolia tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
     observation:
       "The Altai's forest is denser than the Tianshan's: its slopes carry taiga — Siberian larch, Siberian spruce, Siberian fir and Siberian pine — a conifer forest that in China is found only here and in the northern Greater Khingan. Winding glacial lakes lie in the valley floors, their water tinged green (Kanas is known as a \"colour-changing lake\"). The range runs on a slant (NW–SE), unlike the true east–west Tianshan.",
     distinguish:
@@ -77,8 +103,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   kunlun: {
     seeing:
       "The Kunlun is one of China's longest ranges — about 2,500 km from the Pamirs in the west to Qinghai in the east — and is called the \"ancestor of ten thousand mountains.\" It is the great barrier between the Tarim Basin and the Tibetan Plateau: the north slope drops steeply to desert, the south slope grades gently onto the plateau.",
+    // formation sources: 公格尔峰约 7649 m、昆仑山口 4768 m、乔戈里峰 8611 m（世界第二高峰）经核无误，2026-09-08。
+    //   **慕士塔格峰有两个并行数值**：7509 m 与 7546 m。中文维基正文给 7509、同时标注「一说 7546 米」，
+    //   且该条目自 2014 年起标着「没有列出任何参考或来源」—— 原文单挑了 7546 当定论，已改成两个并列。
+    //   `history` 段只写神话文化与古代丝绸之路，未涉现代政治，零争议红线通过。
     formation:
-      "The Kunlun rose with the Tibetan Plateau under the India–Eurasia collision. It is built mainly of metamorphic rock and granite and trends roughly east–west. Where its western section meets the Pamirs it carries 7,000 m peaks such as Kongur (about 7,649 m) and Muztagh Ata (about 7,546 m); the eastern section lowers gradually and joins the Altun and Qilian ranges.",
+      "The Kunlun rose with the Tibetan Plateau under the India–Eurasia collision. It is built mainly of metamorphic rock and granite and trends roughly east–west. Where its western section meets the Pamirs it carries 7,000 m peaks such as Kongur (about 7,649 m) and Muztagh Ata (in the 7,500 m class; sources give both 7,509 m and 7,546 m); the eastern section lowers gradually and joins the Altun and Qilian ranges.",
     observation:
       "From the air the Kunlun is an extremely long, extremely continuous east–west wall of snow mountains. To the north lies the yellow sand sea of the Tarim Basin (the Taklamakan), with almost no transition; to the south, the smoothly rolling high country of the Tibetan Plateau. Yuzhu Peak and the Kunlun Pass (4,768 m, where the Qinghai–Tibet Highway crosses) are good reference points.",
     distinguish:
@@ -92,6 +122,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   karakoram: {
     seeing:
       "The Karakoram sits at the far south-west of Xinjiang on the China–Pakistan border, one of the densest concentrations of extreme peaks on Earth. It has four 8,000 m summits, including K2 (Qogir, 8,611 m), the world's second-highest mountain. \"Karakoram\" means \"black gravel mountains.\"",
+    // formation sources: 喀喇昆仑山脉全球 4 座 8000 米级山峰（K2 8611 m、加舒尔布鲁姆 I / II、布洛阿特峰）——
+    //   条目未误称这 4 座都在中国境内，表述准确。红其拉甫达坂约 4700—4733 m；
+    //   喀喇昆仑山口国际资料多给 5540 m（文中 5575 m，差约 35 m，属不同测绘口径）。
+    //   中巴公路施工实际是 1966 年起、1978/79 年完工，文中「1970 年代」是简化但落在主要施工年代内。
+    //   **零争议红线复核通过**，但记两处「离争议最近」的地方供以后优先复核：
+    //   ① 锡亚琴冰川位于印巴克什米尔争议区、是军事对峙前线，条目只引用其长度作地理事实、
+    //      未提归属或争议 —— 是全书里离克什米尔议题最近的一句；
+    //   ② 真正的喀喇昆仑山口位于中国新疆与印控拉达克之间，条目只说「在东侧」、未点国别、
+    //      未描述边界，处理方式已是中性表述。
+    //   两处都符合当前红线，**若以后收紧，从这两处开始看**。
     formation:
       "Like the Himalaya, the Karakoram belongs to the belt of the India–Eurasia collision; it rises fast and is deeply cut, making the terrain exceptionally steep. It holds some of the largest glaciers outside the polar regions — the Siachen is about 70 km long, the Biafo about 63 km. The China–Pakistan Highway crosses at the Khunjerab Pass, about 4,700 m (the true Karakoram Pass lies to the east at about 5,575 m, with no road).",
     observation:
@@ -105,6 +145,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   taihang: {
+    // seeing sources: 长约 400 km、主峰小五台山东台 2882 m、沿东缘大断裂强烈抬升的断块山成因、
+    //   与黄土高原/华北平原的分界关系 —— 《中国国家地理》
+    //   https://www.dili360.com/cng/article/p54ed2aee95d2c70.htm（2 级）与太行山东麓断裂带研究，2026-09-08 核。
+    //   全篇 6 板块核实无误，本轮无需改动。
     seeing:
       "The Taihang Mountains run through north China as the dividing line between the Loess Plateau and the North China Plain, trending NE–SW for about 400 km. Their signature is \"steep east, gentle west\": the east slope is a line of cliffs dropping straight onto the plain, while the west slope grades up onto the plateau.",
     formation:
@@ -120,6 +164,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   daxinganling: {
+    // seeing sources: 黄岗峰 2029 m 为大兴安岭最高峰；1987 年「5·6」特大森林火灾过火面积 101 万公顷
+    //   （其中有林面积 70 万公顷）、211 人遇难 —— 中国人大网《关于大兴安岭特大森林火灾事故和处理情况的汇报》
+    //   http://www.npc.gov.cn/wxzl/gongbao/2000-12/13/content_5001951.htm（1 级，2026-09-08 核）。
+    //   全篇 6 板块核实无误，本轮无需改动。
     seeing:
       "The Greater Khingan Range runs through north-east China, trending NE–SW, the divide between the Inner Mongolian Plateau and the Northeast (Songnen) Plain and one of China's largest state forest regions. It is not high — mostly 1,100–1,400 m — with rounded, gentle summits, but the forest is so dense the whole range reads as one dark green mass.",
     formation:
@@ -145,11 +193,22 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Changbai versus the Greater Khingan: Changbai is an isolated volcano with a crater lake, high and symmetrical; the Greater Khingan is a continuous rounded fold range with no crater lake. Changbai's Heaven Lake versus the Tianshan's Heaven Lake: the former is a crater lake (circular, deep, at the summit), the latter a glacially scoured, moraine-dammed lake (elongated, on the mountainside).",
     concept:
       "Changbai Shan is the model of \"volcanic landforms\": a crater lake at the centre, then lava plateaus, then volcanic-debris slopes outward. Heaven Lake is a classic caldera lake — formed by summit collapse after the eruption, not the low, flat maar type. Though often called dormant, there is still a magma chamber below, and it is an active volcano requiring long-term monitoring.",
+    // history sources: 天池海拔 2189.1 m、火山口湖 —— 吉林省人民政府
+    //   https://dfz.jl.gov.cn/ybjl/201811/t20181108_5447143.html（1 级，2026-09-08 核）；
+    //   946 年前后的「千年大喷发」为过去两千年全球规模最大的火山喷发之一（VEI 6–7），原文用「之一」措辞克制，无需改。
+    //   **history 段原写「1962 年边界条约……略多于一半在中国一侧」，方向是反的**
+    //   （该条约把天池约 54.5% 划在朝鲜一侧）。**但修法不是把比例改对，而是整句删掉** ——
+    //   项目零争议红线写明 `history` 段不碰现代政治与领土，「哪一国分到多少」正属这一类。
+    //   现在只保留「天池跨在中国与朝鲜的边界上」这个中性地理事实。
     history:
-      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also regarded as a sacred mountain on the Korean Peninsula. A 1962 China–North Korea boundary treaty set the border, dividing Heaven Lake between the two countries, with a little over half on the Chinese side.",
+      "Changbai Shan is revered by the Manchu as their place of origin and was long closed to entry under the Qing. It is also regarded as a sacred mountain on the Korean Peninsula. Heaven Lake straddles the border between China and North Korea.",
   },
 
   hengduan: {
+    // seeing sources: 贡嘎山 7508.9 m（2023 年 10 月公布的最新高程），四川省与横断山系最高峰；
+    //   三江并流 2003-07-02 列入 UNESCO 世界遗产 https://whc.unesco.org/en/list/1083/（1 级），
+    //   是中国唯一满足全部四条自然遗产标准的项目；「物质向东南挤出」的成因与学界主流解释一致。
+    //   2026-09-08 核，全篇 6 板块无误，本轮无需改动。
     seeing:
       "The Hengduan Mountains, in south-west China, are the country's largest belt of ranges running north–south, \"cutting across\" (heng duan) the connection between the Tibetan Plateau and the Sichuan Basin and Yunnan–Guizhou Plateau. The Jinsha (upper Yangtze), Lancang (Mekong) and Nu (Salween) rivers are squeezed here into parallel southward courses — the \"Three Parallel Rivers\" World Natural Heritage site.",
     formation:
@@ -165,6 +224,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   himalaya: {
+    // seeing sources: 珠峰新高程 8848.86 m，2020-12-08 中尼两国联合宣布 ——
+    //   国家体育总局 https://www.sport.gov.cn/n4/n15219/c972329/content.html（1 级，2026-09-08 核）。
+    //   长 2400 余 km、14 座 8000 m 级山峰中 10 座在此一带，均核实无误。
+    //   碰撞时间「约 5000 万年前」是通行的教科书近似值（学界研究结论在 35–65 Ma 之间），
+    //   原文已用「约」字，不算断言。
+    //   **零争议红线复核通过**：`history` 段只写登山史与两国联合测量，边界表述为中性地理事实。
     seeing:
       "The Himalaya is the highest mountain range on Earth, a great arc more than 2,400 km long along the southern edge of the Tibetan Plateau — the vast boundary range between China and South Asia. Of the world's fourteen 8,000 m peaks, ten lie in or near this range. Mount Everest (Qomolangma), at 8,848.86 m, on the China–Nepal border, is the highest point on the planet.",
     formation:
@@ -180,6 +245,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   nanling: {
+    // seeing sources: 五岭（越城岭/都庞岭/萌渚岭/骑田岭/大庾岭）、猫儿山 2141.5 m（越城岭主峰、南岭最高峰）；
+    //   灵渠为秦经略岭南所凿、沟通湘江与漓江，唐代张九龄开凿大庾岭道 —— 均为公认史实，2026-09-08 核。
+    //   全篇 6 板块无误；`history` 只涉前现代史，零争议红线通过。
     seeing:
       "The Nanling is a belt of low mountains straddling Hunan, Jiangxi, Guangdong and Guangxi, made up of five ranges — Yuecheng, Dupang, Mengzhu, Qitian and Dayu — hence the name \"Five Ridges.\" It is the drainage divide between the Yangtze and Pearl river systems and the transition zone between central and southern China.",
     formation:
@@ -195,6 +263,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   helan: {
+    // seeing sources: 主峰敖包疙瘩 3556 m；东麓年降水约 190–200 mm、西麓降至 110 mm 以下 ——
+    //   中国气象局 https://www.cma.gov.cn/kppd/kppdqxsj/kppdtqqh/202111/t20211103_4158960.html（1 级，2026-09-08 核）。
+    //   **长度「约 200 公里」各来源不一致**：宁夏贺兰山国家级自然保护区管理局给保护区本身南北长 170 km，
+    //   维基给约 270 km，差异来自统计起讫点与是否含保护区外延伸段。「约 200 公里」落在通行范围内，
+    //   本轮不改，但下一轮若拿到测绘口径应写明按什么算。
     seeing:
       "The Helan Mountains stand on the Ningxia–Inner Mongolia border, running north–south for about 200 km — an isolated, sharply rising rock range. Their purpose is to block: they stop cold air and drifting sand from the north-west (the Tengger Desert) and shelter the Ningxia Plain to the east, making it a \"Jiangnan beyond the passes.\"",
     formation:
@@ -213,8 +286,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "qinghai-tibet": {
     seeing:
       "The Tibetan Plateau (Qinghai–Tibet Plateau) is the highest and largest plateau on Earth and also a geologically young one, averaging above 4,000 m and covering about 2.5 million km² within China — the \"roof of the world\" and \"third pole.\" The Yangtze, Yellow, Lancang–Mekong, Yarlung Tsangpo–Brahmaputra and Indus all rise here.",
+    // formation sources: 平均海拔 4000 m 以上、总面积约 250 万 km²、地壳厚约 70 km ——
+    //   中国科学院青藏高原研究所 https://itpcas.cas.cn/new_kxcb/new_kpwz/202012/t20201211_5814695.html（1 级，2026-09-08 核）。
+    //   **隆升过程：不是整体抬升，是分阶段差异性隆升** —— 丁林院士团队综述，中科院官网报道
+    //   https://www.cas.cn/cm/202208/t20220803_4843832.shtml（1 级）：
+    //   约 9500 万年前冈底斯隆出海面 → 约 5500–4500 万年前冈底斯造山带升至约 4500 m →
+    //   约 4500–4000 万年前分水岭山脉升至约 5000 m（「两山夹一盆」）→ 约 4000–3000 万年前中央谷地抬升 →
+    //   约 2500–1500 万年前喜马拉雅与昆仑接近现代高度。原文的「整体抬升」把跨越八千万年的过程
+    //   写成了一次性事件。
+    //   **history 段已删去「1951 年西藏和平解放」一句** —— 那是关于当代主权的政治表述，
+    //   触及项目零争议红线（`history` 段只写地质史与广泛记载的前现代史）；公路、铁路通车年份是
+    //   中性工程事实，保留。
     formation:
-      "The plateau is the result of the Indian plate driving north into Eurasia; the crust has been thickened to about 70 km (normal continental crust is about 35 km) and lifted as a whole. It carries several roughly east–west ranges (Gangdise, Nyainqentanglha, Tanggula, Kunlun) with broad lake basins and grasslands between them.",
+      "The plateau is the result of the Indian plate driving north into Eurasia; the crust has been thickened to about 70 km (normal continental crust is about 35 km). The plateau did not rise all at once: research from the Chinese Academy of Sciences shows the Gangdise belt stood above sea level around 95 million years ago, after which different ranges rose in stages — the Gangdise orogen reached about 4,500 m some 55 to 45 million years ago, while the Himalaya and Kunlun only approached their present heights roughly 25 to 15 million years ago, which is when the plateau took its modern form. It carries several roughly east–west ranges (Gangdise, Nyainqentanglha, Tanggula, Kunlun) with broad lake basins and grasslands between them.",
     observation:
       "From ten kilometres up the plateau is a vast, comparatively flat, yellow-brown highland, dotted with countless deep-blue lakes (Namtso, Selin Co, Qinghai Lake) and white snow ranges. The edges (Himalaya, Hengduan, Kunlun) are steep and broken; the interior (northern Tibet, Hoh Xil) is smooth. The air is thin and visibility extreme.",
     distinguish:
@@ -222,12 +306,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Tibetan Plateau is \"a rise of the land,\" not just \"ground that is high\": the whole-scale uplift of this thick slab of crust changed Asia's atmospheric circulation, shaped the East Asian monsoon, and made the plateau itself cold — its climatic influence reaches far beyond its own area, which is why it is called the \"driver\" of Asian climate.",
     history:
-      "The plateau is the homeland of the Tibetan people; the Potala Palace and Jokhang Temple are sacred sites of Tibetan Buddhism. Tibet was peacefully liberated in 1951, the Sichuan–Tibet and Qinghai–Tibet highways opened in 1954, and the Qinghai–Tibet Railway — the highest railway in the world — opened throughout in 2006.",
+      "The plateau is the homeland of the Tibetan people; the Potala Palace and Jokhang Temple are sacred sites of Tibetan Buddhism. The Sichuan–Tibet and Qinghai–Tibet highways opened in 1954, and the Qinghai–Tibet Railway — the highest railway in the world — opened throughout in 2006.",
   },
 
   loess: {
     seeing:
       "The Loess Plateau, in north-central China, has the largest and thickest loess cover on Earth, up to 100–200 m deep. Its surface is dissected into a maze of gullies, it is the main source of the Yellow River's sediment, and it is a cradle of Chinese civilisation.",
+    // formation sources: 风成说（刘东生「新风成说」）为学界共识：黄土矿物成分与本地基岩不同、与中亚—蒙古戈壁一致，
+    //   颗粒由西北向东南变细 —— 正文表述无误，2026-09-08 核。
+    //   **黄土厚度因地而异**：晋东南/豫西北 20–80 m、晋西 80–120 m、陕北 100–150 m、
+    //   甘肃境内 200–300 m，兰州九州台最厚 326–409 m ——
+    //   国家发改委《黄土高原地区综合治理规划大纲》
+    //   https://www.ndrc.gov.cn/fzggw/jgsj/njs/sjdt/201101/W020240430572756442125.pdf（1 级）。
+    //   正文的「100–200 米」是中段概括，作为整体特征描述不算错，本轮不改。
     formation:
       "Loess is not weathered from local rock; it was blown here layer by layer by north-west winds over millions of years (the \"aeolian hypothesis\"). Loess is loose, has strong vertical jointing, and erodes easily, so under running water it has formed three typical landforms — yuan (flat loess tableland), liang (long loess ridge) and mao (dome-shaped loess hill).",
     observation:
@@ -241,6 +332,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "inner-mongolia": {
+    // seeing sources: 内蒙古高原为中国第二大高原（次于青藏高原），海拔一般 1000–1200 m（局部 1000–1400 m），
+    //   大致以 400 mm 等降水量线为半干旱/干旱分界 —— 多来源一致，2026-09-08 核（3 级）。
+    //   与大兴安岭条目里「400 mm 线的地理标志物」的说法相互印证、不矛盾。
+    //   全篇 6 板块无误，本轮无需改动。
     seeing:
       "The Inner Mongolian Plateau, China's second-largest plateau, spans central and eastern Inner Mongolia at about 1,000–1,200 m. Its signature is flatness — relief is minimal, and grassland runs east to west, grading from meadow steppe through typical steppe to desert steppe and finally into desert.",
     formation:
@@ -256,8 +351,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yunnan-guizhou": {
+    // seeing sources: 云贵高原海拔 1000–2000 m，跨云南东部与贵州大部；喀斯特为其标志性地貌。
+    //   「工程性缺水」「坝子」「峰林峰丛」等表述经复核准确（2026-09-08 核）。
+    //   **原文「最出名的是」是没有比较口径的主观最高级，已改成直接陈述** —— 事实一点没少。
     seeing:
-      "The Yunnan–Guizhou Plateau, in south-west China, covers eastern Yunnan and most of Guizhou at 1,000–2,000 m. It is best known for karst: limestone dissolved by water into stone forests, caves, sinkholes and underground rivers, leaving a surface where \"there are not three feet of level ground.\"",
+      "The Yunnan–Guizhou Plateau, in south-west China, covers eastern Yunnan and most of Guizhou at 1,000–2,000 m. Karst is its signature landform: limestone dissolved by water into stone forests, caves, sinkholes and underground rivers, leaving a surface where \"there are not three feet of level ground.\"",
     formation:
       "This was shallow sea for long stretches of the geological past, which laid down thick limestone; it was later uplifted in the Cenozoic along with the wider south-west. Limestone dissolves slowly in carbon-dioxide-charged water, and over millions of years both surface and underground have been \"hollowed out\" into fantastic shapes. The Yunnan part is higher with gentler relief (more basins, bazi); the Guizhou part is more deeply cut and broken.",
     observation:
@@ -310,8 +408,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Junggar Basin is roughly triangular: the Gurbantunggut Desert in the centre, but its dunes are mostly fixed by saxaul, so it reads as mottled yellow-green rather than the pure moving yellow of the Taklamakan. Lake Ulungur lies on the northern rim and Lake Ebi on the west (Lake Manas has largely dried up), and the piedmont oasis belt of the northern Tianshan (Ürümqi, Shihezi, Karamay) rings the southern edge.",
     distinguish:
       "See the Tarim entry. The core difference: the Junggar is \"half-open, wetter, fixed dunes, small,\" the Tarim is \"fully closed, extremely arid, moving dunes, large.\" In winter the Junggar Basin develops a very thick temperature inversion and the floor becomes bitterly cold.",
+    // concept sources: 同 `gurbantunggut/seeing` 的来源与口径。
+    //   **同一个排名断言写在两个条目里** —— 修的时候要一起改，否则全站口径不一致。
+    //   准噶尔盆地为中国第二大内陆盆地（中科院地理科学与资源研究所，1 级）；
+    //   艾比湖湖面海拔 189 m 为盆地最低点，与「盆地底部约 500 m」不矛盾（后者是整体底面海拔）。
+    //   克拉玛依油田 1955-10-29 一号井喷油、为新中国第一个大油田（人民网，2 级）—— 均核实属实。
     concept:
-      "The Junggar Basin shows how a single gap can change how wet a region is. The Gurbantunggut is China's largest fixed and semi-fixed desert, because a steady supply of snowmelt and relatively more rain let saxaul forest take root and stop the dunes moving.",
+      "The Junggar Basin shows how a single gap can change how wet a region is. The Gurbantunggut is China's largest fixed-and-semi-fixed desert by area, because a steady supply of snowmelt and relatively more rain let saxaul forest take root and stop the dunes moving.",
     history:
       "The Junggar Basin lay on the northern Silk Road. The Karamay oilfield, discovered in 1955, was the first large oilfield of the People's Republic; \"Karamay\" means \"black oil\" in Uyghur.",
   },
@@ -386,6 +489,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the North China Plain is a huge, dense expanse of rectangular fields and towns, with almost no relief visible. The lower Yellow River is a broad golden band clearly higher than the land on either side; at the mouth, silt fans out into the sea as a muddy yellow plume against the blue water.",
     distinguish:
       "The North China Plain versus the Northeast Plain: North China is at lower latitude, dominated by Yellow River loess, two harvests a year, and severely short of water; the Northeast is at higher latitude, black soil, one harvest a year, and relatively water-rich. Versus the Middle-Lower Yangtze Plain: North China is shaped by the Yellow River, drier, dryland farming; the Yangtze plain is shaped by the Yangtze, water-netted, paddy farming.",
+    // concept sources: 黄河含沙量居世界首位 —— 中科院地理科学与资源研究所《输沙量最大的河——黄河》
+    //   http://igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692531.html（1 级）；
+    //   Science Advances 亦称其 exceptional sediment load（2 级），2026-09-08 核。
+    //   **这条断言已自带口径**（比的是「含沙量」这个指标），不属于要补口径的那一类。
+    //   **但有一条会过期的提醒**：近年水土保持与水库拦沙让**年输沙总量**大幅下降 ——
+    //   那是另一个口径。如果以后想改写成强调「输沙总量」，必须另加时间限定。
+    //   「地上悬河」的机制表述与华北平原城市归属经复核准确。
     concept:
       "The most characteristic idea of the North China Plain is the \"suspended river\": the Yellow River carries the world's highest sediment load, which builds up its lower bed until it stands several to more than ten metres above the land (most dramatically at Kaifeng), so a breach is a disaster. The Yellow River has changed course many times through history, and the range of those floods is roughly the outline of today's North China Plain. The plain is also one of China's most water-short, supplied by the South-to-North Water Diversion.",
     history:
@@ -439,6 +549,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yangtze-gorges": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
+    //   **这条注释本身是留痕**：批 2 里核过而无需改动的篇目原先不写注释，
+    //   下一轮就会被当成「没核过」再派一遍工 —— 核过无误也要留痕。
     seeing:
       "The Three Gorges of the Yangtze are the great canyon where the river cuts through the Wu Shan range, from Baidicheng at Fengjie in Chongqing to Nanjinguan at Yichang in Hubei — about 190 km, made up of the Qutang, Wu and Xiling gorges with wider valleys between. It is the most rugged stretch of the Yangtze, cliffs squeezing the river between them.",
     formation:
@@ -500,6 +613,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hainan: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "Hainan Island is China's second-largest island (after Taiwan), in the northern South China Sea, facing the Leizhou Peninsula of Guangdong across the Qiongzhou Strait. It is China's only fully tropical island province, shaped like an oval \"bun\": high in the middle, low around the edges.",
     formation:
@@ -621,6 +735,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kimberley: {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "The Kimberley is a remote sandstone plateau in Australia's far north-west, about 420,000 km² — larger than Germany — with a deeply indented coast of tidal gorges and a monsoon climate. Its best-known feature is the Bungle Bungle Range in Purnululu — a maze of orange-and-grey banded beehive domes. The tides here are among the largest in the world, over 10 m.",
     formation:
@@ -636,6 +751,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "simpson-desert": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "The Simpson Desert covers about 176,000 km² of central Australia, spanning three states. It is famous for its dunes: more than 1,100 parallel sand ridges running NNW–SSE, some over 200 km long without a break — among the longest parallel dunes on Earth. \"Big Red,\" near Birdsville, is the best-known.",
     formation:
@@ -786,8 +902,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "murray-darling": {
+    // seeing sources: 澳大利亚测绘局（Geoscience Australia）：墨累河干流 **2,508 km**；**达令河干流 1,545 km**；
+    //   达令河 + 最长源头支流（库尔戈阿—巴隆—康达明）合计约 **2,740 km**，是澳大利亚最长水道。
+    //   https://www.ga.gov.au/scientific-topics/national-location-information/landforms/longest-rivers（1 级，2026-09-08 核）。
+    //   **原文把含支流的合计数字当成了达令河本身的长度** —— 河流长度有「干流」与「含最长源头支流」
+    //   两套口径，差了将近一倍，写的时候必须说明是哪一套。
+    //   「跨四个州」是常见简化（实际是四个州 + 首都领地），温特沃斯汇合点、库隆潟湖出海口经复核准确。
     seeing:
-      "The Murray–Darling is Australia's largest river system, draining about one-seventh of the continent across four states. The Murray runs about 2,500 km and the Darling about 2,700 km; they meet at Wentworth in far western New South Wales and reach the sea in South Australia. It is the country's most important farming region — and its most fought-over water.",
+      "The Murray–Darling is Australia's largest river system, draining about one-seventh of the continent across four states. The Murray runs about 2,500 km; the Darling proper is about 1,500 km, reaching roughly 2,700 km once its longest headwater tributaries are counted — Australia's longest waterway on that reckoning; they meet at Wentworth in far western New South Wales and reach the sea in South Australia. It is the country's most important farming region — and its most fought-over water.",
     formation:
       "The rivers flow across the Murray Basin, a very large, very flat lowland floored by river sediments. Because the gradient is so gentle, the Murray winds in tight meanders, cutting off billabongs (oxbow lakes), and the Darling can take weeks to move a flood pulse downstream. The system ends in the Coorong lagoon and a set of barrages at the Murray Mouth.",
     observation:
@@ -966,6 +1088,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "great-sandy-desert": {
+    // seeing sources: 2026-09-08 逐句核实全篇 6 板块，未发现事实性错误，本轮无需改动。
     seeing:
       "The Great Sandy Desert is in north-eastern Western Australia, straddling the Pilbara and southern Kimberley and extending east into the Northern Territory — the second-largest desert in Australia. It is mostly not tall dunes but endless low sand plains, crossed by long, near-parallel sand ridges trending roughly east–west.",
     formation:
@@ -1200,8 +1323,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air Nalati is a rolling green slope between Tianshan snow peaks, white Kazakh felt tents scattered across it, dark spruce forest running in bands down the shady slopes and valleys. The Kunes River winds along the valley floor. It is deep green in summer, with the spruce edges turning gold in autumn.",
     distinguish:
       "Nalati and Bayanbulak are both in valleys or basins within the Tianshan, but Nalati is lower, warmer, its meadow lusher, with large areas of spruce forest; Bayanbulak is higher (above about 2,400 m), colder, flatter, with more marsh wetland and almost no forest.",
+    // concept sources: 那拉提是天山垂直自然带里介于森林带与高山带之间的草甸带。
+    //   断陷谷地、云杉林、哈萨克族「转场」等表述经复核准确（2026-09-08 核）。
+    //   **原文「最好的夏季牧场」比较对象与评价标准都没给，已降级为「之一」。**
     concept:
-      "Nalati shows how a mountain meadow comes about: high enough that forest cannot grow, not yet so high that only bare rock and ice remain, plus steady rain and snowmelt — the result is this meadow belt between the forest belt and the alpine belt. It is one link in the vertical zonation of the Tianshan, and its best summer pasture.",
+      "Nalati shows how a mountain meadow comes about: high enough that forest cannot grow, not yet so high that only bare rock and ice remain, plus steady rain and snowmelt — the result is this meadow belt between the forest belt and the alpine belt. It is one link in the vertical zonation of the Tianshan, and one of its important summer pastures.",
     history:
       "Nalati is traditional Kazakh summer pasture; each summer the herders move stock up the mountain along fixed routes. The name \"Nalati\" is usually explained as \"the place where the sun is.\" In 2013 the Xinjiang Tianshan (including the Nalati area) was inscribed as World Natural Heritage for its glaciers, snow peaks and vertical natural zones.",
   },
@@ -1252,8 +1378,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   gurbantunggut: {
+    // seeing sources: 古尔班通古特沙漠面积约 4.88 万 km²，按面积计为中国第二大沙漠、中国最大的固定半固定沙漠
+    //   —— 中科院地理科学与资源研究所《中国地貌》
+    //   http://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692337.html（1 级）
+    //   与中国林业科学研究院 https://www.caf.ac.cn/info/1298/30042.htm（1 级），2026-09-08 核。
+    //   纬度范围约 44°11′—46°21′N，「中国纬度最高的沙漠」这一条已给出坐标作为实证。
+    //   **两个排名此前都没写比较口径，已补「按面积计」** —— 数字对、排名也对，缺的是口径。
     seeing:
-      "The Gurbantunggut Desert lies in the centre of the Junggar Basin, about 48,000 km² — China's second-largest desert and its largest fixed and semi-fixed desert. Its dunes are lower and gentler than the Taklamakan's; the surface carries drought-tolerant saxaul and large numbers of spring ephemerals, and snow can be seen in winter.",
+      "The Gurbantunggut Desert lies in the centre of the Junggar Basin, about 48,000 km² — China's second-largest desert by area, and its largest fixed-and-semi-fixed desert by area. Its dunes are lower and gentler than the Taklamakan's; the surface carries drought-tolerant saxaul and large numbers of spring ephemerals, and snow can be seen in winter.",
     formation:
       "The Junggar Basin has gaps in the north-west (the Irtysh valley, the Alataw Pass) that let in some westerly moisture, and steady winter snowmelt on top of that, so annual rainfall is higher than in the Tarim Basin. That moisture lets plants root on the dunes and hold the sand, so this is mostly fixed and semi-fixed dunes rather than a pure sea of moving sand.",
     observation:
@@ -1267,8 +1399,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   kumtag: {
+    // seeing sources: 库姆塔格在突厥语里就是「沙山」。沙丘成因（东北风、地形背风堆积）、
+    //   与古尔班通古特和塔克拉玛干的区分、「锁边」用词经复核准确（2026-09-08 核）。
+    //   **原文的「它最特别的地方是」只是主观框定语，删掉之后后半句的事实照旧成立** ——
+    //   这类不用改写内容，删掉框定词即可。
     seeing:
-      "The Kumtag Desert (this entry refers to the patch south of Shanshan) lies in the eastern Turpan Basin, at the southern foot of the eastern Tianshan. \"Kumtag\" is simply \"sand mountain\" in Turkic. What is most striking here is that the desert runs right up to the edge of Shanshan town, with almost no transition — a few steps out of town and you are at dunes tens of metres high.",
+      "The Kumtag Desert (this entry refers to the patch south of Shanshan) lies in the eastern Turpan Basin, at the southern foot of the eastern Tianshan. \"Kumtag\" is simply \"sand mountain\" in Turkic. The desert runs right up to the edge of Shanshan town, with almost no transition — a few steps out of town and you are at dunes tens of metres high.",
     formation:
       "The sand of this patch is fine sand blown from the surrounding gobi and dry riverbeds by the prevailing north-east wind and piled in the lee at the southern foot of the Tianshan. It is extremely arid, with little rain and very strong evaporation, and the dunes are mostly tall moving dunes — crescent, linear, and tall pyramidal sand mountains.",
     observation:
@@ -1518,6 +1654,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air the Badain Jaran is a field of golden sand mountains in violent relief, like frozen giant waves, with small deep-blue or jade-green lakes set in the troughs, often with a patch of green and a temple beside them. Sliding down the steep dune faces makes a roaring sound (\"singing sand\").",
     distinguish:
       "The Badain Jaran and the Taklamakan: both are moving-sand deserts, but the Badain Jaran's sand mountains are far taller and it holds many lakes; the Taklamakan is far larger, drier and almost lakeless. The Badain Jaran and the Tengger (both in Alxa): the Badain Jaran is to the west, with tall sand mountains and many lakes; the Tengger is to the east, its dunes lower, and is closer to the Yellow River and the railway.",
+    // concept sources: 巴丹吉林沙漠—沙山湖泊群 2024-07-26 列入世界自然遗产（UNESCO 第 46 届大会，标准 vii、viii），
+    //   中国首个沙漠类世界自然遗产 —— 教育部官网转发官方通报（1 级，2026-09-08 核）。
+    //   面积约 4.92 万 km²、按面积计中国第三大沙漠（中科院地理科学与资源研究所，1 级）。
+    //   **必鲁图沙峰：相对高度约 460 m，绝对海拔约 1610 m** —— 条目写的是「相对高度」，没混。
+    //   沙山为何这么高，条目如实写了「学界还有讨论」，是正确处理。
     concept:
       "The Badain Jaran is a sample of \"why there are lakes in a desert\": the hollows between the dunes cut down to the water table, so groundwater seeps out and pools. Why the sand mountains grow so tall and are not blown flat is a not-yet-fully-solved problem in desert geomorphology. In 2024 the sand-mountain-and-lake complex of the Badain Jaran was inscribed as World Natural Heritage.",
     history:
@@ -1525,8 +1666,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   tengger: {
+    // seeing sources: 腾格里沙漠约 4.27 万 km²，按面积计中国第四大
+    //   （塔克拉玛干 33 万 → 古尔班通古特 4.88 万 → 巴丹吉林 4.43 万 → 腾格里 4.27 万）——3 级，2026-09-08 核。
+    //   **中英不同步的第四种方向：英文丢掉了中文已有的限定词** ——
+    //   中文写「面积第四大」，英文只写 fourth-largest。已补 by area。
+    //   （前三种：英文凭空多出数字、注释与正文不同步、中文把有限定的说法收紧成绝对断言。）
+    //   草方格固沙发源地、1958 年包兰铁路通车经复核属实。
     seeing:
-      "The Tengger Desert lies mostly in Alxa Left Banner in Inner Mongolia, extending south to the edges of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
+      "The Tengger Desert lies mostly in Alxa Left Banner in Inner Mongolia, extending south to the edges of Gansu and Ningxia, about 43,000 km² — China's fourth-largest desert by area. \"Tengger\" means \"sky\" in Mongolian. It is mostly moving dunes, with many lake basins and grassy flats scattered among them.",
     formation:
       "The Tengger's sand is debris from the surrounding mountains and old Yellow River channels, moved and piled by the wind. Some of the hollows between the dunes reach groundwater or hold seasonal water, forming lakes and salt marshes of various sizes (locally \"grass lakes\") — the green points in the desert.",
     observation:
@@ -2057,6 +2204,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "colorado-river": {
+    // seeing sources: 科罗拉多河长约 2,330 km（≈1,450 mi，不同来源在 1,400—1,450 mi 区间），
+    //   美方流经怀俄明/科罗拉多/犹他/新墨西哥/亚利桑那/内华达/加利福尼亚七州 ——
+    //   USGS《The Colorado》https://pubs.usgs.gov/gip/70039371/report.pdf（1 级，2026-09-08 核）。
+    //   **入海口的表述经专门复核**：条目没有简单断言「注入加利福尼亚湾」，
+    //   而是紧接着写明近几十年多数年份在到达河口前就已断流 —— 这是正确处理。
+    //   history 段只记《科罗拉多河契约》与美墨条约等制度事实，未涉主权表态。
     seeing:
       "The Colorado River rises in the Rocky Mountains and flows south-west through seven states for about 2,330 km to the Gulf of California. It cut the Grand Canyon, Glen Canyon and a series of other deep gorges, and is the most important water source in the arid South-West. The Hoover Dam, Glen Canyon Dam and others built in the 20th century divide it into a chain of reservoirs, and its water is so fully allocated that in most years of recent decades the Colorado runs dry before reaching its mouth.",
     formation:
@@ -2313,6 +2466,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "baffin-island": {
+    // seeing sources: 巴芬岛面积约 507,205 km²，加拿大最大岛、世界第五大岛
+    //   （前四：格陵兰、新几内亚、婆罗洲、马达加斯加）——3 级，2026-09-08 核。
+    //   **岛屿排名按面积是唯一读法**，不属于要补口径的那一类。
+    //   **零争议红线复核通过**：history 段只写因纽特人的传统土地、多塞特/图勒文化、
+    //   17 世纪航海者命名、1999 年努纳武特建制这些客观事实，未评价现代政策。
     seeing:
       "Baffin Island is in the Canadian Arctic Archipelago in the north-east — Canada's largest island and the fifth largest in the world. Its eastern edge is a high mountain belt of hard Shield rock, with large ice caps, deep fjords and several granite cliff faces over a kilometre high (Mount Thor, well known to climbers, is here); the western half of the island is low, flat sedimentary platform. The capital, Iqaluit, is in the south-east.",
     formation:
@@ -2509,8 +2667,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "japanese-alps": {
+    // seeing sources: 北岳 3,193 m，日本第二高峰（次于富士山 3,776 m），属实。
+    //   飞驒山脉（剑岳、立山一带）确有小规模现代冰川，日本雪冰学会 2012 年起陆续确认 ——
+    //   条目把冰川限定在飞驒山脉、没有和北岳所在的赤石山脉混为一谈，这一点是对的。
+    //   **原文一句话里叠了三个查无口径出处的最高级**（最陡、冰川地貌保存最好、登山运动最发达），
+    //   已改成可核实的事实陈述。
     seeing:
-      "The Japanese Alps is the collective name for the Hida, Kiso and Akaishi ranges — three roughly parallel ranges in central Honshu that hold most of Japan's peaks over 3,000 m. The highest, Mount Kita, is 3,193 m, the second-highest mountain in Japan. This is the most rugged, sharp-crested part of Japan, where its glacial landforms are best preserved and where mountaineering is most developed.",
+      "The Japanese Alps is the collective name for the Hida, Kiso and Akaishi ranges — three roughly parallel ranges in central Honshu that hold most of Japan's peaks over 3,000 m. The highest, Mount Kita, is 3,193 m, the second-highest mountain in Japan. Its slopes are steep and its ridges sharp; it is one of the areas of Japan where glacial landforms are best preserved, and one where mountaineering has long been well established.",
     formation:
       "The uplift of the Japanese Alps is quite young — mainly in the past one to two million years, the result of the Pacific and Philippine Sea plates pressing Honshu from the east and south, strongly shortening and raising the crust; it is still rising fast and is seismically active. During the ice ages, valley glaciers formed on the higher ground, carving the summits into cirques and arêtes; today a few very small modern glaciers survive in shaded spots in the Hida range.",
     observation:
@@ -2884,6 +3047,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aoraki-southern-alps": {
+    // seeing sources: 奥拉基/库克山现行高程 **3,724 m（2013 年 AORAKI2013 重测）**：
+    //   1991 年岩崩后官方值先降到约 3,754 m，此后侵蚀继续降低，2013 年奥塔哥大学与 GNS 联合重测定为 3,724 m。
+    //   https://www.otago.ac.nz/surveying/research/geodetic/aoraki2013-surveying-the-height-of-aoraki-mt-cook（1 级，2026-09-08 核）。
+    //   **山峰高程也是会变的量** —— 岩崩、侵蚀、重测都会改它，和冰川面积一样要问「这是哪一年测的」。
+    //   毛利语并列地名「Aoraki / Mount Cook」的用法与新西兰官方地名机构 NZGB 一致；
+    //   1998 年和解立法段落只陈述事实经过，未作评价，零争议红线复核通过。
     seeing:
       "The Southern Alps (Māori: Kā Tiritiri o te Moana) run for about 500 km along the western side of New Zealand's South Island, separating the wet West Coast from the drier eastern interior. The highest peak, Aoraki / Mount Cook, is 3,724 m — the highest mountain in New Zealand — and the range holds almost all of the country's 3,000 m peaks and glaciers. Its south-western part lies within the Te Wāhipounamu World Heritage Area.",
     formation:
@@ -3359,6 +3528,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Cairngorms and the western Highlands around Ben Nevis are both part of the Scottish Highlands, but the Cairngorms are a \"plateau type\" — a large gentle granite surface with steep corries at the edge; the western Highlands are more of a \"peak type\", with sharp ridges and deeper glens. Compared with the high Alps, the Cairngorms have no permanent glaciers, but the climate and landforms of the plateau top are near-subarctic.",
     concept:
       "The Cairngorms are a case study in selective glacial erosion: in the same upland, glaciers flowing fast at the edge erode strongly, gouging corries and deep valleys; in the centre, the base of the ice cap is frozen and barely moves, so it \"freezes in\" and preserves the ancient gentle surface. A common misconception is that ice-covered ground must be scoured flat — a cold-based ice cap is in fact the best \"protective cover\".",
+    // history sources: 阿伯内西森林是苏格兰现存**面积最大**的原生喀里多尼亚松林，但不是仅存的一片
+    //   （罗西缪库斯、格伦阿弗里克、拉诺赫黑林等都还在），
+    //   https://treesforlife.org.uk/into-the-forest/visiting/（3 级，苏格兰喀里多尼亚森林保护组织，2026-09-08 核）。
+    //   **中文此前写成「仅存」，英文写的是 largest surviving —— 是中文这边把「最大」改写成了「唯一」。**
+    //   这是中英分歧的第三种方向：前两轮抓到的是英文凭空多出数字、以及中文注释与正文不同步，
+    //   这一次是**中文把一个有限定的说法收紧成了绝对断言**。
+    //   凯恩戈姆花岗岩侵入年代约 4.27 亿年前（伦敦地质学会，2 级）；
+    //   国家公园 2003 年设立、2010 年扩界后 4,528 km²、为英国最大（3 级）—— 这两条核实属实。
     history:
       "The Cairngorms area has long been a place for hunting (deer, grouse) and grazing, and the old pine forest in the hills is the largest surviving stand of native forest in Scotland. In the 20th century roads and ski tows were built into the mountains. The Cairngorms National Park was established in 2003, and after a boundary extension in 2010 it became the largest national park in the UK, focused on protecting the alpine ecology and the old pinewoods.",
   },
@@ -3994,8 +4171,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "myrdalsjokull": {
+    // seeing sources: 米尔达斯冰盖面积：1980 年 595 km² → 2016 年 540 km² → **2019 年 520 km²**
+    //   （Hannesdóttir 等 2020 的测量序列，经 en.wikipedia 转引，3 级）；
+    //   卡特拉 UNESCO 地质公园官方页给现势面积 535 km²，
+    //   https://www.katlageopark.com/geosites/mainly-geology/myrdalsjoekull/（2 级，2026-09-08 核）。
+    //   **冰川面积是逐年缩的量**，和人口一样属于「不带年份等于没说」的那一类 ——
+    //   原来写的 590 km² 是四十多年前的值。
+    //   卡特拉破火山口直径约 10 km 属实（若按当前冰面 700 m 等高线量则接近 20 km，是另一个口径）。
     seeing:
-      "Mýrdalsjökull, on Iceland's south coast, is the fourth-largest ice cap in Iceland, about 590 km². Its most important \"identity\" is that directly beneath it lies the Katla volcano's large caldera, about 10 km across. The Sólheimajökull outlet glacier flowing from its south-western edge is one of the easiest glaciers in Iceland to reach and one of the most used for glacier walks.",
+      "Mýrdalsjökull, on Iceland's south coast, is the fourth-largest ice cap in Iceland, about 520 km² as measured in 2019 and still shrinking. Its most important \"identity\" is that directly beneath it lies the Katla volcano's large caldera, about 10 km across. The Sólheimajökull outlet glacier flowing from its south-western edge is one of the easiest glaciers in Iceland to reach and one of the most used for glacier walks.",
     formation:
       "Mýrdalsjökull sits on a volcano cut through by a caldera. The ice cap formed from the abundant snow on the south-coast highlands compacting and flowing outward; being at low latitude, near the sea and with heavy precipitation, it is one of Iceland's ice caps with the most vigorous accumulation and melt. The Katla volcano below gives the base of the ice cap geothermal heat, and an eruption would rapidly melt ice and trigger a glacial flood. Sólheimajökull has retreated hundreds of metres in recent decades, its snout forming a steadily growing proglacial lake.",
     observation:
@@ -6883,8 +7067,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the Thessalian Plain appears as a neat patchwork of farmland set sharply against the surrounding mountains; the Pineios River winds across the plain, and the Vale of Tempe in the north-east forms a natural passage toward Macedonia.",
     distinguish:
       "Both the Thessalian Plain and the Lasithi Plateau are agricultural land, but the Thessalian Plain is a broad, low-elevation floodplain built by a major river, while Lasithi is a small, high-elevation karst basin ringed by mountains.",
+    // concept sources: 「超过一半的土地用于农业种植」**查不实，已降级为不带比例的表述**：
+    //   希腊语来源给的「250 万 / 500 万斯特雷马」是**理论灌溉面积**占比，不是种植面积占比；
+    //   另一份皮尼奥斯河流域（范围比平原本身大）的资料给农业用地 36%，与「过半」矛盾。
+    //   ELSTAT 对「色萨利平原」本身的种植面积占比没找到（3 级来源，2026-09-08 核）。
+    //   「希腊本土面积最大的农业平原」这一条核实属实（约 5000 km² 级）。
+    //   history 板块经零争议红线复核合规（只写地质史与广泛记载的古典时期史实）。
     concept:
-      "The Thessalian Plain is Greece's most important grain-producing region, with more than half its land under cultivation — wheat, cotton and maize are the main crops — illustrating how deep alluvial soils support intensive agriculture.",
+      "The Thessalian Plain is Greece's most important grain-producing region, with a large share of its land under cultivation — wheat, cotton and maize are the main crops — illustrating how deep alluvial soils support intensive agriculture.",
     history:
       "The Thessalian Plain has been an important agricultural region since ancient Greek times, and the area was historically noted for raising fine horses.",
   },
@@ -7791,8 +7981,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "meuse-river-be": {
+    // seeing sources: 默兹河流域约 3.3 万 km²，按国分布：**比利时约 41%、法国约 28%、荷兰约 19%、德国约 12%**
+    //   （另有卢森堡一小部分）—— IHE Delft 跨境水资源合作研究（3 级，2026-09-08 核）。
+    //   **「占比最高」不等于「占大多数」**：原文两处（seeing 与 concept）都写成了「大部分/绝大部分位于比利时」，
+    //   四成远不到 majority；concept 段那句「集中在单一国家境内的特殊案例」的论点本身也就不成立了。
+    //   列日作为默兹河沿岸中世纪以来的工商业中心属公认史实。
     seeing:
-      "The Meuse is Belgium's most important navigable river; the great majority of the Meuse's drainage basin lies within Belgium, and Liège is Belgium's largest river port on the Meuse.",
+      "The Meuse is Belgium's most important navigable river; of the four countries the basin touches, Belgium holds the largest share of it (roughly 40 per cent), and Liège is Belgium's largest river port on the Meuse.",
     formation:
       "Below Liège the Meuse turns north, eventually joining the Rhine delta in the Netherlands before reaching the sea; along the way its course crosses several landform units, including the Ardennes and Condroz plateaus.",
     observation:
@@ -7800,7 +7995,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     distinguish:
       "The Meuse River (Belgian stretch, as the river overall) and the Meuse Valley (the specific gorge-like landform stretch) share the same source, but the former emphasises the river's overall hydrology and shipping function, while the latter focuses on the gorge-like landform between Dinant and Namur.",
     concept:
-      "With the great majority of the Meuse's catchment lying within Belgium, it is a distinctive case study in how the main drainage area of an international river can be concentrated within a single country.",
+      "The Meuse's catchment is split unevenly among four countries — roughly 40 per cent in Belgium, 28 per cent in France, 19 per cent in the Netherlands and 12 per cent in Germany — a useful case study in how an international river's drainage area can be divided.",
     history:
       "Liège has grown into an important commercial, industrial and cultural centre of eastern Belgium since medieval times thanks to the Meuse's shipping advantages, and the riverbanks still preserve rich industrial heritage today.",
   },
@@ -8293,8 +8488,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "otztal-alps": {
     seeing:
       "The Ötztal Alps lie in western Tyrol and are Austria's second-highest range; the highest peak, Wildspitze, reaches 3,768 m, and the range is extensively covered in glacial ice.",
+    // formation sources: 盖帕奇冰川约 **14.6 km²**、帕斯特采约 16.7 km²（奥地利冰川清查 Gletscherinventar 2023）——
+    //   Alpenverein 官方新闻稿 https://www.alpenverein.at/portal/news/2026/2026_07_02_pasterze-am-seidenen-faden.php
+    //   （2 级）与 tirol.ORF.at（3 级），2026-09-08 核。原文的 17 km² 已过期。
+    //   **这是一个随时会翻的排名**：帕斯特采因「马蹄形冰裂」（Hufeisenbruch）濒临断裂，
+    //   2026 年 7 月的报道称一旦断开，盖帕奇很可能反超成为奥地利最大冰川 —— 下一轮必须回来看。
+    //   野人峰 3,768 m 为奥地利第二高峰（次于大格洛克纳 3,798 m）；
+    //   冰人奥兹 1991 年发现、测年约公元前 3300 年，均核实属实。
     formation:
-      "The range is built of crystalline rock from the Alpine orogenic belt and lies largely above the snowline; over 200 glaciers cover it, including the Gepatschferner, about 17 km² in area — Austria's second-largest glacier after the Pasterze.",
+      "The range is built of crystalline rock from the Alpine orogenic belt and lies largely above the snowline; over 200 glaciers cover it, including the Gepatschferner, about 14.6 km² in the 2023 Austrian glacier inventory — still Austria's second-largest after the Pasterze, though the gap has narrowed sharply as both shrink.",
     observation:
       "From the air, the Ötztal Alps show broad expanses of white glacial ice against the deep-green valley forests below; Wildspitze's sharp conical summit is the clearest marker for identifying the range.",
     distinguish:
@@ -8561,8 +8763,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "danube-river-at": {
+    // seeing sources: 多瑙河欧洲第二长（全长约 2,888 km），约 350 km 流经奥地利 ——
+    //   奥地利国家旅游局 https://www.austria.info/en-gb/regions/danube/（2 级，2026-09-08 核）。
+    //   **奥地利境内的走向**：约霍恩施泰因入境 → 林茨盆地 → 施特鲁登高/尼伯龙根高/瓦豪河谷 →
+    //   维也纳盆地 → 入斯洛伐克。
+    //   **不流经因河谷** —— 因河是蒂罗尔州的另一条河，与多瑙河在**德国帕绍**（奥地利境外）汇合，
+    //   两条河在奥地利境内没有共同河段。原文在 seeing 与 history 两处都把这两条河混成了一条，
+    //   而同条目的 distinguish 段自己写着「因河则是……区域性河流」—— **一篇之内自相矛盾**。
     seeing:
-      "The Danube is Europe's second-longest river, about 2,888 km in total, with roughly 350 km flowing through Austria, running west to east through the lower Inn Valley, the Linz basin, the Wachau and the Vienna Basin before continuing into Slovakia.",
+      "The Danube is Europe's second-longest river, about 2,888 km in total, with roughly 350 km flowing through Austria, running west to east through the Linz basin, the Wachau and the Vienna Basin before continuing into Slovakia.",
     formation:
       "Within Austria the Danube crosses several distinct landform zones, and its channel form changes accordingly — narrowing into the Wachau's confined valley as it cuts through the hills there, then widening into a broad alluvial plain across the Vienna Basin.",
     observation:
@@ -8572,7 +8781,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The Danube's alternating gorge-like and plain-like stretches within Austria are a useful case study in how a major river's channel form adjusts to tectonic structure as it crosses orogenic belts and subsidence basins.",
     history:
-      "The Danube has long been Austria's most important waterway, linking major cities east of Innsbruck and serving as the historical core artery of trade and cultural exchange.",
+      "The Danube has long been Austria's most important waterway, linking major cities including Linz and Vienna and serving as the historical core artery of trade and cultural exchange.",
   },
 
   "mur-river": {
@@ -9773,8 +9982,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Compared with other parts of Sweden (such as the forested hill country of the centre), the Skåne Plain is flatter, more open and far more intensively farmed — the most representative agricultural-plain landform in the country.",
     concept:
       "The fertile moraine and loess-like soil of the Skåne Plain is a classic case for studying how last-glacial sediment can provide an excellent soil foundation for temperate agriculture.",
+    // history sources: 斯科讷在中世纪及之后很长时间是**丹麦领土**（丹麦本土核心区之一），
+    //   **1658 年《罗斯基勒条约》**后割让给瑞典 —— Britannica《Treaty of Roskilde》（3 级，2026-09-08 核）。
+    //   **原文把「这块地方」和「这块地方现在属于哪个国家」混为一谈**，
+    //   写成「自中世纪起即为瑞典重要的农业区」，等于把它几百年的丹麦属性抹掉了。
+    //   **写一片土地的前现代史时，要先确认它当时属于谁** —— 这类错误在边境地带的条目里最容易出现。
+    //   末次冰期冰碛 + 黄土状沉积、瑞典最主要谷物与油菜产区等表述经复核准确。
     history:
-      "The region has been an important agricultural and population centre in Sweden since the Middle Ages; its fertile land historically made it a strategic territory long contested between Sweden and Denmark, and it is now one of Sweden's mildest-climate and most agriculturally developed regions.",
+      "The region has been an important agricultural and population centre since the Middle Ages, though it was Danish territory for most of that time; its fertile land made it a strategic prize long contested between Denmark and Sweden, and it passed to Sweden under the 1658 Treaty of Roskilde, and it is now one of Sweden's mildest-climate and most agriculturally developed regions.",
   },
 
   // ============ Finland ============
@@ -11762,7 +11977,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Mongolia ============
   "mongol-altai": {
     seeing:
-      "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — within the Tavan Bogd massif at the tripoint of Mongolia, Russia and China.",
+      "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — in the Tavan Bogd massif on the Mongolia–China border, and the Mongolia–Russia–China tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north.",
     formation:
       "The Mongol Altai is part of the Altai orogenic belt, uplifted and folded by crustal compression in the late Paleozoic, then repeatedly carved by glaciation through the Quaternary, producing today's landscape of dense high peaks, glaciers and glacial horns.",
     observation:

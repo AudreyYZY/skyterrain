@@ -90,9 +90,15 @@ git diff --name-only <lastVerifiedCommit>..HEAD -- lib/terrain-content.*.ts \
 
 | verdict | 怎么处理 |
 |---|---|
-| `ok` | 记进台账，正文不动。若原文缺年份/口径而核实拿到了，**顺手补进正文** |
+| `ok` | 记进台账，正文不动。若原文缺年份/口径而核实拿到了，**顺手补进正文**。**即使一个字都不用改，也要写一条 `sourceNote` 留痕** |
 | `wrong` | **当场改**，中英两边都改；正文类的在条目上方加 `// <字段> sources:` 注释 |
 | `unknown` | **不要瞎猜**。要么把无法核实的断言删掉/降级（去掉最高级、去掉排名），要么记成待办 |
+
+**`ok` 也要留痕，否则下一轮会重复派工**（2026-09-08 踩到）：地形讲解批 2 里有 5 篇核完
+无需改动，于是 findings 里只写了 `verdict: ok`、没有 `sourceNote` —— 结果这 5 篇在文件里
+和从没核过的一模一样，下一轮排批次时又被算进「未核实」。判断一篇有没有核过，看的是
+条目上方有没有 `// <字段> sources:` 注释；**没有注释 = 没核过**，这是唯一的机器可读凭据。
+所以 `verdict: ok` 的条目也要给一条 `sourceNote`，写明核实日与「本轮无需改动」。
 
 **不要手写 python 逐条改** —— 前两轮航线是手改的，18 条就要写一大段字典字面量，
 再多必然出错。findings.json 已经是结构化的，直接让脚本消费。两个应用端按内容类型分：
@@ -136,6 +142,10 @@ npm run verify:report -- <findings.json>             # 真做
 
 **顺序是先 `verify:apply` 再 `verify:report`** —— 这样 issue 里说的「已修正」
 是真的已经改完了。
+
+**apply 报错就停下，不要接着跑 report**（踩过）：`verify:apply-text` 遇到 find 命中
+0 次或多次会整个退出、一个字都不写；这时候如果习惯性地把 report 也跑了，台账里就会
+多出一行「已修正 N 条」而数据其实没动。改完 find 字符串、apply 真的成功之后再跑 report。
 
 脚本把三件事做成机械动作，**不要手工开 issue** —— 手做一定会重复开、忘记关、
 正文格式各写各的：
@@ -184,6 +194,38 @@ findings JSON 的形状：
 
 `key` 是去重键，**同一个键永远只有一个 issue**。字段含义见
 [`scripts/verify-issues.ts`](../../../scripts/verify-issues.ts) 顶部注释。
+
+**核到「这就是最新一期」的，写进豁免表，不要只留在注释里**：
+`docs/claims-stale-exempt.json` 记 `key / reason / confirmedOn / recheckAfter`，
+`npm run check:claims` 会把它们从 `C6d` 计数里摘出来单列，并在 `recheckAfter` 到期时提示回来复核
+（到期日照 [`docs/data-refresh-calendar.md`](../../../docs/data-refresh-calendar.md) 里那个机构的发布月份填）。
+不写进去的话，下一轮核实会把同一批条目重新报一遍 —— 或者更糟，
+**有人为了让计数下降而硬填一个没核到的数字**。加豁免的前提是条目上方已有
+`// <field> sources:` 注释写清为什么。
+
+**`key` 与 `kind` 必须沿用既有写法，否则去重会失效**（2026-09-08 踩过）：
+
+| 档 | `kind` | `key` | `verify:apply-text` 改哪个文件 |
+|---|---|---|---|
+| 城市 / 国家概览 | `travel` | `travel/<id>/<话题>`，如 `travel/hanzhong/population-2025` | `lib/travel-content.{zh,en}.ts` |
+| 地形 | `terrain` | `terrain/<id>/<话题>` | `lib/terrain-content.{zh,en}.ts` |
+| 航线的航班信息 | `routes` | `routes/<id>/flight` | `data/routes/*.json`（走 `verify:apply`，不是 apply-text） |
+| 航线的**解说文字** | `route` | `route/<id>/<话题>` | `lib/route-narration.ts`，`field` 是 `study` 或 `travel` |
+
+⚠️ **改了航线解说文字必须跑 `npm run gen:anchors`**，否则句数与
+`lib/route-anchors.data.ts` 对不上、`npm run check:anchors` 会报错
+（`source: "auto"` 的锚点会被重跑覆盖，`"manual"` 的保留）。
+`verify:apply-text` 在动过 `route-narration.ts` 之后会把这句提醒打出来。
+航线解说的中英文写在**同一个文件**里，脚本已按这一点处理。
+
+地形条目的 `field` 是那 6 个板块之一：`seeing` / `formation` / `observation` /
+`distinguish` / `concept` / `history`。
+
+踩过的坑：中国人口刷新那几批把 `kind` 写成了 `city`、`key` 写成了 `cn7-hanzhong-pop`，
+于是 `travel/hanzhong/population-2025` 这个既有 issue 没被命中，**又重开了一个一模一样的**
+（#209 与 #206、#211 与 #202）。写 findings 之前先 `gh issue list --state all --label
+data-error --search <id>` 看看这个条目有没有已经开着的 issue，有就沿用它正文里
+`<!-- verify-key: -->` 中的那个键。
 
 ### 5. 新错误类型 → 补进错误台账
 

@@ -16,7 +16,7 @@ import {
 } from "@/lib/cesium/region-highlight";
 import { viewHeightForTerrain } from "@/lib/cesium/route-progress";
 import {
-  cameraHeightAt,
+  buildHeightProfile,
   planRouteFlight,
   sampleFlight,
   type FlightCurve,
@@ -511,12 +511,18 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           const pitchRad = Cesium.Math.toRadians(WINDOW_PITCH_DEG);
           const rollRad = Cesium.Math.toRadians(CRUISE_ROLL_DEG);
 
+          // 运动模型全部在 lib/cesium/route-flight.ts（纯函数，可离线对全部航线跑断言）
+          const curve: FlightCurve = { camPoints: camPts, cum, plan };
+          // 取景高度剖面预先算好：逐帧算要多解三次样条，而且下降段要「只许往下」，
+          // 那是个需要整条看完才能定的量（见 buildHeightProfile 的注释）
+          const heightAt = buildHeightProfile(curve);
+
           // 摆到起点位（用与飞行同一高度，衔接不跳）
           {
             const c0 = Cesium.Cartographic.fromCartesian(camPts[0]!);
             viewer.camera.setView({
               destination: Cesium.Cartesian3.fromRadians(
-                c0.longitude, c0.latitude, cameraHeightAt(0, plan.cruiseHeightM),
+                c0.longitude, c0.latitude, heightAt(0),
               ),
               orientation: { heading: plan.headingAtDistance(0), pitch: pitchRad, roll: rollRad },
             });
@@ -539,9 +545,6 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
           const canvas = viewer.scene.canvas;
           canvas.addEventListener("wheel", relinquish, { passive: true });
           canvas.addEventListener("pointerdown", relinquish, { passive: true });
-
-          // 运动模型全部在 lib/cesium/route-flight.ts（纯函数，可离线对全部航线跑断言）
-          const curve: FlightCurve = { camPoints: camPts, cum, plan };
 
           const durationMs = plan.durationSec * 1000;
           let elapsedMs = 0;
@@ -574,7 +577,7 @@ const CesiumMap = forwardRef<CesiumMapHandle, CesiumMapProps>(
                 const dest = Cesium.Cartesian3.fromRadians(
                   carto.longitude,
                   carto.latitude,
-                  cameraHeightAt(p, plan.cruiseHeightM),
+                  heightAt(p),
                 );
                 viewer.camera.setView({
                   destination: dest,
