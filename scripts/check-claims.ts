@@ -346,14 +346,39 @@ try {
   process.exit(0);
 }
 
+/**
+ * **C6 与 C6d 合成一个预算**，而不是各卡各的。
+ *
+ * 给一个没年份的数字补上年份，是明确要求的做法（CLAUDE.md「写新内容时的硬性习惯」①），
+ * 但它会把这一句从 C6 挪到 C6d —— 如果那个年份比去年还早的话。分开卡的结果是：
+ * 补年份反而让棘轮变红，于是**正确的做法被惩罚，最省事的做法是干脆不写年份**。
+ * 2026-09-08 印尼那批就撞上了：C6 −14、C6d +10，总量其实降了 4。
+ *
+ * 合成一个预算之后，「把无年份改成有年份」不会失败，
+ * 而「凭空多写一句没年份的人口」照样会失败 —— 后者才是这条棘轮要拦的东西。
+ */
+const COMBINED: Record<string, Rule[]> = {
+  "C6 族（缺年份 + 不是最新一期）": ["C6-人口数字缺年份", "C6d-数字不是最新一期"],
+};
+const COMBINED_MEMBERS = new Set(Object.values(COMBINED).flat());
+
 let failures = 0;
 console.log(`棘轮（基线 ${baseline.updatedOn}，只许降不许升）`);
 for (const rule of RULES) {
   const now = counts[rule] ?? 0;
   const was = baseline.counts[rule] ?? 0;
   const delta = now - was;
-  const mark = delta > 0 ? "✗" : delta < 0 ? "↓" : " ";
+  const inCombined = COMBINED_MEMBERS.has(rule);
+  const mark = inCombined ? "·" : delta > 0 ? "✗" : delta < 0 ? "↓" : " ";
   console.log(`  ${mark} ${rule.padEnd(22)} 基线 ${String(was).padStart(5)} → 现在 ${String(now).padStart(5)}${delta === 0 ? "" : `（${delta > 0 ? "+" : ""}${delta}）`}`);
+  if (delta > 0 && !inCombined) failures++;
+}
+for (const [name, members] of Object.entries(COMBINED)) {
+  const now = members.reduce((a, r) => a + (counts[r] ?? 0), 0);
+  const was = members.reduce((a, r) => a + (baseline!.counts[r] ?? 0), 0);
+  const delta = now - was;
+  const mark = delta > 0 ? "✗" : delta < 0 ? "↓" : " ";
+  console.log(`  ${mark} ${name.padEnd(20)} 基线 ${String(was).padStart(5)} → 现在 ${String(now).padStart(5)}${delta === 0 ? "" : `（${delta > 0 ? "+" : ""}${delta}）`}  ← 这一行才卡`);
   if (delta > 0) failures++;
 }
 

@@ -10562,11 +10562,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人、是旅游旺季，也是那达慕大会举办季节；冬季（12-次年2月）严寒漫长，乌兰巴托常为全球最冷首都之一，出行需充分保暖；国土辽阔，跨区域行程建议合理规划国内航班或预留充足公路交通时间。",
   },
   ulaanbaatar: {
+    // identity sources: 乌兰巴托 2025 年约 1,796,045（蒙古国家统计局，经维基 infobox 转引 data.1212.mn，
+    //   **3 级**，2026-09-08 核）。
+    //   **1212.mn 本轮仍无法直连**（unable to verify the first certificate），
+    //   蒙古各城的数字都只能核到这一级 —— 恢复访问后应优先回源核对。
     identity:
-      "乌兰巴托是蒙古国首都，人口约172.5万，占全国近一半人口，坐落于图拉河畔的高原谷地，是蒙古政治、经济、文化中心。",
+      "乌兰巴托是蒙古国首都，人口约179.6万（2025年），占全国近一半人口，坐落于图拉河畔的高原谷地，是蒙古政治、经济、文化中心。",
     // howItWorks sources: Wikipedia (2026-09): Ulaanbaatar (provincial status; 9 districts, 204 khoroo; Citizens' Representatives Khural 45 members; governor appointed by PM on nomination; ~4,700 km²; ~1.7 million 2024 ≈ half of Mongolia; ger districts; buses only; airport 50 km)
     howItWorks:
-      "乌兰巴托是蒙古国的首都，级别与省相同，由民选的市民代表呼拉尔和市长治理，市长由呼拉尔提名、总理任命；市下分 9 个区，区之下是 200 余个“霍罗”，是居民登记与办事的基层单位。市域约 4,700 平方公里，大部分是山地与草原，2024 年人口约 170 万，接近全国的一半。城市建在图拉河谷里，海拔约 1,350 米，南面是博格达汗山：苏赫巴托广场是政治与商业中心，和平大道是贯穿东西的主轴，苏联时期的公寓区围绕中心铺开，而超过一半的市民住在四周山坡上蔓延的蒙古包区——那里多没有自来水与集中供暖，冬天燃煤取暖是空气污染的主要来源。公共交通只有公交，没有轨道；成吉思汗国际机场在南面约 50 公里。地址写“区、霍罗、街、楼、门”。初来的人最容易犯的错，是以为乌兰巴托是一座苏式的紧凑城市，而它的大部分人口住在中心之外的蒙古包区。",
+      "乌兰巴托是蒙古国的首都，级别与省相同，由民选的市民代表呼拉尔和市长治理，市长由呼拉尔提名、总理任命；市下分 9 个区，区之下是 200 余个“霍罗”，是居民登记与办事的基层单位。市域约 4,700 平方公里，大部分是山地与草原，2025 年人口约 179.6 万，接近全国的一半。城市建在图拉河谷里，海拔约 1,350 米，南面是博格达汗山：苏赫巴托广场是政治与商业中心，和平大道是贯穿东西的主轴，苏联时期的公寓区围绕中心铺开，而超过一半的市民住在四周山坡上蔓延的蒙古包区——那里多没有自来水与集中供暖，冬天燃煤取暖是空气污染的主要来源。公共交通只有公交，没有轨道；成吉思汗国际机场在南面约 50 公里。地址写“区、霍罗、街、楼、门”。初来的人最容易犯的错，是以为乌兰巴托是一座苏式的紧凑城市，而它的大部分人口住在中心之外的蒙古包区。",
     layout:
       "市中心以苏赫巴托尔广场（成吉思汗广场）为核心，甘丹寺一带保留传统藏传佛教建筑，城市周边分布有大片传统蒙古包聚居区（格尔区）。",
     gettingAround:
@@ -10664,8 +10668,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5-6月与9月气候最为舒适，7-8月戈壁地区白天气温可超过35摄氏度；冬季严寒且部分景点道路受限，建议避开极端季节前往。",
   },
   khovd: {
+    // identity sources: 科布多市 2017 年 29,800（蒙古国家统计局，经维基 infobox 转引，3 级，2026-09-08 核）。
+    //   **这已是九年前的数**，1212.mn 证书错误无法直连，确认不了有没有更新一期。
+    //   原 identity 的「3.1 万」对不上任何已知年份的官方数。
     identity:
-      "科布多是蒙古西部科布多省首府，人口约3.1万，坐落于科布多河畔，是探索蒙古阿尔泰山与西部多民族聚居区的重要门户。",
+      "科布多是蒙古西部科布多省首府，人口约2.98万（2017年），坐落于科布多河畔，是探索蒙古阿尔泰山与西部多民族聚居区的重要门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Khovd (Mongolia; capital of Khovd Province in the west, about 29,800 residents in 2017; at the foot of the Altai mountains, bisected by the Buyant river; founded in 1685 by Galdan Boshugtu Khan of the Dzungar Khanate, later moved to the present site on the Buyant; Mongolian forces took the city on 7 August 1912 and destroyed the garrisons; ethnically diverse — Khalkha, Zakhchin, Torghut, Uriankhai, Kazakh and others; Khar-Us Lake protected area about 25 km east; Museum of Khovd Province; cold desert climate with records near −45 °C)
     howItWorks:
       "科布多是蒙古国西部科布多省的省会，2017 年人口约 2.98 万；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的行政、医疗与高等教育，科布多大学在这里。城市在阿尔泰山脉的东麓，布延特河把它分成两半。1685 年准噶尔的噶尔丹博硕克图汗在这一带筑城，后来城址迁到布延特河边的今址；清代它是西部边疆的驻防重镇，1912 年 8 月 7 日蒙古军队攻下此城并摧毁了驻军营地，老城墙的遗迹仍在城外。这里是蒙古族群最杂的城市之一，哈拉哈、扎哈沁、土尔扈特、乌梁海与哈萨克等十多个族群共居，语言与习俗各不相同。东面约 25 公里是哈日乌斯湖国家公园，是候鸟的重要栖息地。气候属寒漠，冬季最低纪录接近零下 45 度。初来的人最容易犯的错，是以为蒙古西部只有牧民，而这座城是一整个省的行政与大学中心。",
@@ -10681,8 +10688,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人；作为西部多民族聚居区，建议结合当地节庆（如哈萨克族传统活动）安排行程时间。",
   },
   olgii: {
+    // identity sources: 乌力吉**市镇本身** 2024 年 50,126；**巴彦乌列盖省** 2024 年约 110,800，其中约九成三是哈萨克族
+    //   （蒙古国家统计局，经维基 infobox 转引，3 级，2026-09-08 核）。
+    //   **市与省差一倍多，两段各讲一个而都不写明主体，读者会以为其中一个错了。**
+    //   原 identity 的「约 3 万」既不是市镇也不是省，是过期值。
     identity:
-      "乌力吉是蒙古最西端巴彦乌列盖省首府，人口约3万，是蒙古境内哈萨克族的主要聚居区，也是探索塔王博格达山群的核心门户。",
+      "乌力吉是蒙古最西端巴彦乌列盖省首府，市镇本身2024年人口约5万（全省约11万），是蒙古境内哈萨克族的主要聚居区，也是探索塔王博格达山群的核心门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Ölgii and Bayan-Ölgii Province (Mongolia; the westernmost province, established 1940 with its capital at Ölgii, 45,704.89 km², about 110,799 residents in 2024, the country's only Kazakh-majority and Muslim aimag with about 93 per cent Kazakh; the Abu-Bakr Siddiq central mosque in Ölgii; an estimated 80 per cent of the world's eagle hunters live in the province, with a Golden Eagle Festival each October; Altai Tavan Bogd National Park 6,362 km² with Khüiten Peak 4,374 m, Mongolia's highest; the Khovd river rises here; Ölgii Airport with flights to Ulaanbaatar; 2.3 million head of livestock in 2022)
     howItWorks:
       "乌力吉是蒙古国巴彦乌列盖省的省会；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的行政、医疗与中等教育。这个省 1940 年设立，位于蒙古最西端，面积约 4.57 万平方公里，2024 年人口约 11 万，其中约九成三是哈萨克族——它是蒙古唯一以哈萨克族为主、以伊斯兰教为主要信仰的省，因此城里通行哈萨克语，阿布伯克尔清真寺立在中心，节庆与饮食都与蒙古其他地方不同。据估计，世界上约八成的驯鹰人生活在这个省，每年十月的金雕节把他们聚到乌力吉城外，是本地最大的活动。科布多河发源于这一带；阿尔泰塔班博格德国家公园面积 6,362 平方公里，蒙古最高峰奎屯峰海拔 4,374 米在其中。畜牧是主业，2022 年全省牲畜 230 万头。初来的人最容易犯的错，是以为蒙古各地都一样，而这里的语言与宗教自成一格。",
@@ -10715,8 +10726,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月气候最宜人，也是观赏蒙古原羚（黄羊）大规模迁徙与候鸟活动的较佳季节；东部草原景点分散，建议提前规划路线与向导。",
   },
   tsetserleg: {
+    // identity sources: 车车尔勒格 2017 年 21,620（蒙古国家统计局，经维基 infobox 转引，3 级，2026-09-08 核）。
+    //   原 identity 的「1.7 万」对不上任何已知年份。九年前的数，1212.mn 无法直连确认更新一期。
     identity:
-      "车车尔勒格是蒙古中部阿尔汗盖省首府，人口约1.7万，坐落于杭爱山东麓，是探索科尔戈—特日和音查干湖国家公园的核心门户城市。",
+      "车车尔勒格是蒙古中部阿尔汗盖省首府，人口约2.16万（2017年），坐落于杭爱山东麓，是探索科尔戈—特日和音查干湖国家公园的核心门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Tsetserleg (Mongolia; capital of Arkhangai Province, 21,620 residents in 2017 over 536 km² at 1,691 m; 600 km south-west of Ulaanbaatar on the north-eastern slopes of the Khangai mountains; founded around 1631, the Zayiin Gegeen Monastery established in the early 1680s, its main temple now the provincial museum; a dry-winter subarctic climate milder than the surrounding region, January nights about −15 °C to −25 °C; airport with connections to Ulaanbaatar; theatre, hospital and agricultural college; food processing the main industry)
     howItWorks:
       "车车尔勒格是蒙古国阿尔汗盖省的省会，2017 年人口约 2.16 万，市域约 536 平方公里，海拔约 1,691 米；蒙古的地方行政分省与苏木两级，省长由中央任命、地方议会选举产生，省会集中全省的医院、剧院与中等教育。城市在杭爱山脉的东北坡上，背靠布尔干山，乌兰巴托在东面约 600 公里。它约建于 1631 年，1680 年代初这里建起扎音格根寺，20 世纪寺庙停用，主殿如今是阿尔汗盖省博物馆，山坡上的白色佛像与寺墙是全城的背景。地形给了它一个特别之处：虽在高原上，它的冬天比周边缓和，一月夜间约在零下 15 至 25 度，在蒙古已算温和。食品加工是本地的主要工业，另有农牧学院。城外的岑赫尔温泉与更西的白湖是省内的去处，都需数小时车程。初来的人最容易犯的错，是把它与同省另一个叫车车尔勒格的苏木混淆，那是省北部的另一个行政单位。",
@@ -11137,9 +11150,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   jakarta: {
     identity:
       "雅加达是印度尼西亚首都，都会区人口逾3000万，是全国政治、经济、金融与交通中心，也是东南亚最大的城市之一，坐落于爪哇岛西北岸。",
-    // howItWorks sources: Wikipedia (2026-09): Jakarta (DKI province-level; 5 administrative cities + Thousand Islands; ~662 km²; 2024 pop ~11 million; Jabodetabek ~32 million; 2022/2024 capital laws; MRT/LRT/TransJakarta; RT/RW); Subdivisions of Indonesia
+    // howItWorks sources: 雅加达（2024 年《UU No.2/2024》起法律地位改为 DKJ 雅加达特区）2025 年上半年
+    //   Dukcapil 户籍登记人口 11,010,514；该口径**每半年发布一次**。
+    //   https://m.beritajakarta.id/read/149477/jumlah-penduduk-jakarta-tercatat-1101-juta-jiwa（2 级，2026-09-08 核）。
+    //   **首都地位的表述经复核正确**：依 2022 与 2024 年法律首都功能将迁往努山塔拉，
+    //   但在迁都总统令生效前雅加达法律上仍是首都（印尼国家机关改革部官网，1 级）。
+    //   大雅加达（Jabodetabek）约 3,200 万。
     howItWorks:
-      "雅加达是印度尼西亚的“特别首都区”，行政级别与省相同，由民选省长治理；下面的中、北、南、西、东五个“行政市”和千岛群岛县不是自治体，市长由省长任命，没有议会——与其他省份下面有民选市长的城市不同。市域约 662 平方公里，2024 年人口约 1,100 万，而包括茂物、德博、唐格朗、勿加泗的大雅加达（Jabodetabek）约 3,200 万人，是世界上人口最多的都会区之一，这些卫星城分属西爪哇省和万丹省。城市沿南北轴线生长：北面的老城 Kota Tua 是荷兰时期的巴达维亚，苏迪曼—谭林大道是高楼林立的商务区，居住区向南延伸。地址在街道之下还写 RT/RW 邻里编号。地铁、轻轨与 TransJakarta 快速公交连成网，但拥堵是日常。依 2022 与 2024 年的法律，首都功能将迁往加里曼丹的努山塔拉，在总统令正式生效前雅加达仍是首都。初来的人最容易犯的错，是把这座城当作一个整体的市政府，而它是一个省，五个市只是省的派出机构。",
+      "雅加达是印度尼西亚的“特别首都区”，行政级别与省相同，由民选省长治理；下面的中、北、南、西、东五个“行政市”和千岛群岛县不是自治体，市长由省长任命，没有议会——与其他省份下面有民选市长的城市不同。市域约 662 平方公里，2025 年上半年人口约 1,101 万（户籍登记口径），而包括茂物、德博、唐格朗、勿加泗的大雅加达（Jabodetabek）约 3,200 万人，是世界上人口最多的都会区之一，这些卫星城分属西爪哇省和万丹省。城市沿南北轴线生长：北面的老城 Kota Tua 是荷兰时期的巴达维亚，苏迪曼—谭林大道是高楼林立的商务区，居住区向南延伸。地址在街道之下还写 RT/RW 邻里编号。地铁、轻轨与 TransJakarta 快速公交连成网，但拥堵是日常。依 2022 与 2024 年的法律，首都功能将迁往加里曼丹的努山塔拉，在总统令正式生效前雅加达仍是首都。初来的人最容易犯的错，是把这座城当作一个整体的市政府，而它是一个省，五个市只是省的派出机构。",
     layout:
       "老城巴达维亚（哥打芝哇区）保留荷兰殖民时期建筑，独立广场周边是政治核心区；中央商务区沿苏迪曼—塔姆林大道分布，是现代化摩天楼与购物中心集中地；城市向南、向东大幅扩展，形成大雅加达都会区。",
     gettingAround:
@@ -11152,8 +11170,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月旱季相对干燥，10月至次年4月雨季午后常有强降雨、局部易积水。城市交通拥堵是行程规划的主要制约因素，建议避开早晚高峰、地铁沿线安排行程更省时。",
   },
   yogyakarta: {
+    // identity sources: 日惹市有两套并存官方数：**BPS 基于 2020 年普查的年度推算**，2023 年约 376,000；
+    //   **Dukcapil（内政部民政总局）户籍登记**，2024 年在 415,605—459,797 之间
+    //   （https://dataset.jogjakota.go.id/dataset/kyda2024-37，2 级，市民政局开放数据，2026-09-08 核；
+    //   注意这两个 Dukcapil 数字本身就互相不一致）。
+    //   正文用的是 BPS 推算口径。**印尼这两套口径能差四五万，写哪一套要说明。**
     identity:
-      "日惹是印尼特区之一，由苏丹世袭统治，人口约40万，是爪哇文化、艺术与传统工艺的中心，也是通往婆罗浮屠、普兰巴南神庙与默拉皮火山的门户城市。",
+      "日惹是印尼特区之一，由苏丹世袭统治，市区人口约38万（2023年，官方推算口径），是爪哇文化、艺术与传统工艺的中心，也是通往婆罗浮屠、普兰巴南神庙与默拉皮火山的门户城市。",
     // howItWorks sources: Wikipedia (2026-09): Yogyakarta (14 kemantren; 2023 pop ~375,700; urban area ~4 million; Sultan as governor under 2012 special status law; YIA 2020); Subdivisions of Indonesia
     howItWorks:
       "日惹市是日惹特区的首府，市下分 14 个区——这里的区叫 kemantren，是全国独有的称呼；2023 年人口约 38 万，而包括斯莱曼、班图尔的城市连绵区约 400 万人，日常生活早已越过市界。日惹特区在印度尼西亚独一无二：依 2012 年的特别地位法，世袭的苏丹哈孟古布沃诺依法出任省长，王宫既是文化中心也是政治中心。城市沿一条南北轴线布局：北面的默拉皮火山、中间的王宫、南面的印度洋，马里奥波罗大街是这条轴线上的商业街。爪哇语与宫廷文化——蜡染、皮影、加美兰——在这里保存得最完整。婆罗浮屠在中爪哇省，普兰巴南跨在两省边界上。地址在街道之下还写 RT/RW 邻里编号。2020 年启用的日惹国际机场在西面约 45 公里的库隆普罗戈。初来的人最容易犯的错，是把日惹当作一座普通省会，而它是苏丹依法治理的特区首府。",
@@ -11169,8 +11192,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月旱季最适合登默拉皮火山与婆罗浮屠日出团，10月至次年4月雨季部分户外行程可能受影响。婆罗浮屠日出团需凌晨出发，建议提前预订门票与向导。",
   },
   denpasar: {
+    // identity sources: 登巴萨市 2024 年 670,210（BPS《Kota Denpasar Dalam Angka 2024》，1 级来源页；
+    //   BPS 各站点本轮 WebFetch 均返回 403，数字经明确注明「引 BPS 原始表」的二手转述交叉核实，
+    //   实际置信度按 2 级计，2026-09-08）。
+    //   **原 identity 的「约 90 万」追溯不到任何官方口径** —— 既不是市区人口，
+    //   也不是 Sarbagita 都会区的 220 万。
+    //   **印尼有两套并存官方数**：BPS 的普查/推算，与 Dukcapil（内政部民政总局）的户籍登记，
+    //   能差不少，写的时候要说明是哪一套。
     identity:
-      "登巴萨是巴厘省首府，人口约90万，是巴厘岛的行政与交通枢纽，多数游客会以此为起点前往库塔、水明漾、乌布等岛内其他区域。",
+      "登巴萨是巴厘省首府，人口约67万（2024年，印尼中央统计局），是巴厘岛的行政与交通枢纽，多数游客会以此为起点前往库塔、水明漾、乌布等岛内其他区域。",
     // howItWorks sources: Wikipedia (2026-09): Denpasar (Bali capital; 4 kecamatan; 126 km²; 2024 pop ~670,000; Sarbagita ~2.2 million; Kuta/airport in Badung; desa adat); Subdivisions of Indonesia
     howItWorks:
       "登巴萨是巴厘省的首府，有民选的市长和市议会，市下分东西南北四个区（kecamatan）；面积约 126 平方公里，2024 年人口约 67 万，而包括巴东县、吉安雅县、塔巴南县的都会区约 220 万人。人们心中的“巴厘”大多不在这座城里：库塔、水明漾、努沙杜瓦和机场都在巴东县，乌布在吉安雅县，各有自己的县政府；登巴萨市内只有沙努尔一片海滩。与政府平行，巴厘的社区生活由 banjar（邻里社）与 desa adat（习俗村）组织，节庆、庙宇与集体事务都在这一层决定。印度教徒约占市民的三分之二。地址在街道之下还写 RT/RW 邻里编号。岛上没有铁路，公交只占出行的很小一部分，几乎一切靠汽车与摩托。初来的人最容易犯的错，是把登巴萨当作旅游区，而它是一座本地人生活与办事的省会，度假区在隔壁的县。",
@@ -11186,11 +11216,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月至10月旱季最适合海岛与户外活动，11月至次年3月雨季午后常有阵雨。巴厘岛3月印度教新年（宁静日）全岛停摆一天，包括机场关闭，出行前建议查询具体日期。",
   },
   surabaya: {
+    // identity sources: 泗水市 2024 年 2,942,845（BPS 男女分项合计，经 databoks 转引 BPS 原始表，3 级，2026-09-08 核）；
+    //   BPS 2025 年推算为 3,043,518。
+    //   **原 howItWorks 写的「2024 年约 300 万」是把 2025 年的推算数安到了 2024 年**，
+    //   与 identity 的 290 万自相矛盾。
     identity:
-      "泗水是印度尼西亚第二大城市，人口约290万，是东爪哇省首府与国家主要港口城市，工业与贸易地位重要，也是通往布罗莫火山的门户之一。",
+      "泗水是印度尼西亚第二大城市，人口约294万（2024年，印尼中央统计局），是东爪哇省首府与国家主要港口城市，工业与贸易地位重要，也是通往布罗莫火山的门户之一。",
     // howItWorks sources: Wikipedia (2026-09): Surabaya (East Java capital; 31 kecamatan; 2024 pop ~3 million; Gerbangkertosusila >10 million; Tanjung Perak; Suramadu); Subdivisions of Indonesia
     howItWorks:
-      "泗水是东爪哇省的首府，有民选的市长和市议会，市下分 31 个区（kecamatan）、154 个村级单位；2024 年人口约 300 万，是印度尼西亚第二大城市，而包括西多阿佐、格雷西克等地的都会区超过 1,000 万人，这些邻县各有自己的县长。城市围绕北面的丹戎不碌港生长——印尼第二繁忙的海港，甘蔗、烟草、咖啡曾从这里出口；老城 Kota Lama 在卡里马斯河边，阿拉伯人聚居的安佩尔区和华人街区紧挨着它；新的商业区向南、向西铺开。泗水—马都拉大桥把城市与对岸的马都拉岛连在一起。本地人说的是带马都拉腔的“泗水话”，直率是这里的性格。地址在街道之下还写 RT/RW 邻里编号。出行靠汽车、摩托与公交。初来的人最容易犯的错，是把泗水当作雅加达的翻版，而它是一座以港口和贸易立身的城市，有自己的方言和脾气。",
+      "泗水是东爪哇省的首府，有民选的市长和市议会，市下分 31 个区（kecamatan）、154 个村级单位；2024 年人口约 294 万，是印度尼西亚第二大城市，而包括西多阿佐、格雷西克等地的都会区超过 1,000 万人，这些邻县各有自己的县长。城市围绕北面的丹戎不碌港生长——印尼第二繁忙的海港，甘蔗、烟草、咖啡曾从这里出口；老城 Kota Lama 在卡里马斯河边，阿拉伯人聚居的安佩尔区和华人街区紧挨着它；新的商业区向南、向西铺开。泗水—马都拉大桥把城市与对岸的马都拉岛连在一起。本地人说的是带马都拉腔的“泗水话”，直率是这里的性格。地址在街道之下还写 RT/RW 邻里编号。出行靠汽车、摩托与公交。初来的人最容易犯的错，是把泗水当作雅加达的翻版，而它是一座以港口和贸易立身的城市，有自己的方言和脾气。",
     layout:
       "老城区保留荷兰殖民时期与阿拉伯、华人聚居区的历史街区，城市沿马都拉海峡分布，是爪哇岛东部重要的海港枢纽；市区以南约3小时车程是布罗莫—腾格尔—塞梅鲁国家公园。",
     gettingAround:
@@ -11204,10 +11238,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
   bandung: {
     identity:
-      "万隆是西爪哇省首府，人口约250万，海拔约768米，气候凉爽，是荷兰殖民时期著名的高原度假城市，如今也是印尼时尚、创意产业与理工教育的中心。",
-    // howItWorks sources: Wikipedia (2026-09): Bandung (West Java capital; 30 kecamatan; 2023 pop ~2.5 million; Bandung Basin ~9 million; 768 m; Whoosh 2023); Subdivisions of Indonesia
+      "万隆是西爪哇省首府，人口约261万（2024年，印尼中央统计局），海拔约768米，气候凉爽，是荷兰殖民时期著名的高原度假城市，如今也是印尼时尚、创意产业与理工教育的中心。",
+    // howItWorks sources: 万隆市 BPS：2023 年 2,506,603 → **2024 年 2,609,884**
+    //   （经 databoks 转引 BPS 原始数字，3 级，2026-09-08 核）。
+    //   **「印尼第四大城市」这个名次已删**：多个来源显示勿加泗（2023 年约 254 万）可能已超过万隆，
+    //   没查到 BPS 官方城市人口排名表能确认第四这个具体名次 —— 按红线不写没核实的名次。
     howItWorks:
-      "万隆是西爪哇省的首府，有民选的市长和市议会——2008 年起市长由市民直选——市下分 30 个区（kecamatan）；2023 年人口约 250 万，是印度尼西亚第四大城市，而万隆盆地的都会区约 900 万人，万隆县、西万隆县、芝马墟市各有自己的政府。城市建在海拔约 768 米、被火山环抱的盆地里，气候凉爽，荷兰人曾把它规划为度假地：布拉加街、萨特大厦一带的装饰艺术建筑就是那个时代留下的。巽他语是本地的日常语言。2023 年通车的雅万高铁 Whoosh 从雅加达约 40 分钟到达，但车站在帕达拉朗与德加卢阿尔，都在市区之外。地址在街道之下还写 RT/RW 邻里编号。市内出行靠汽车与摩托，拥堵严重。初来的人最容易犯的错，是把万隆当作雅加达的周末后花园，而它是一个 900 万人盆地的中心。",
+      "万隆是西爪哇省的首府，有民选的市长和市议会——2008 年起市长由市民直选——市下分 30 个区（kecamatan）；2024 年人口约 261 万，是印度尼西亚人口最多的城市之一，而万隆盆地的都会区约 900 万人，万隆县、西万隆县、芝马墟市各有自己的政府。城市建在海拔约 768 米、被火山环抱的盆地里，气候凉爽，荷兰人曾把它规划为度假地：布拉加街、萨特大厦一带的装饰艺术建筑就是那个时代留下的。巽他语是本地的日常语言。2023 年通车的雅万高铁 Whoosh 从雅加达约 40 分钟到达，但车站在帕达拉朗与德加卢阿尔，都在市区之外。地址在街道之下还写 RT/RW 邻里编号。市内出行靠汽车与摩托，拥堵严重。初来的人最容易犯的错，是把万隆当作雅加达的周末后花园，而它是一个 900 万人盆地的中心。",
     layout:
       "老城中心保留大量装饰艺术风格的荷兰殖民建筑，亚非会议纪念博物馆所在的独立大街是历史核心区；城市周边环绕火山与茶园，北部的丹格班佩拉胡火山与南部的芝威德火山是热门郊游地。",
     gettingAround:
@@ -11221,10 +11258,13 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
   medan: {
     identity:
-      "棉兰是苏门答腊岛最大城市，人口约250万，是北苏门答腊省首府与该岛主要经济、贸易中心，也是通往多巴湖与武吉拉旺猩猩保护区的门户。",
-    // howItWorks sources: Wikipedia (2026-09): Medan (North Sumatra capital; 21 kecamatan; 2024 pop ~2.49 million; Mebidangro ~4.94 million; Kualanamu 2013 rail link); Subdivisions of Indonesia
+      "棉兰是苏门答腊岛最大城市，人口约235万（2024年，印尼中央统计局），是北苏门答腊省首府与该岛主要经济、贸易中心，也是通往多巴湖与武吉拉旺猩猩保护区的门户。",
+    // howItWorks sources: 棉兰市 2024 年 2,354,446（BPS 男女分项合计，经 databoks 转引 BPS 原始表，3 级，2026-09-08 核）。
+    //   **原来写的「2024 年约 249 万」是年份错位**：2,494,512 是棉兰 **2020 年人口普查**数，
+    //   被标成了 2024 年。识别这类错误的办法是**把数字放回它自己的年份序列里看**：
+    //   2020 普查 249 万 → 2024 实测 235 万，是下降的。
     howItWorks:
-      "棉兰是北苏门答腊省的首府，有民选的市长和市议会，市下分 21 个区（kecamatan）；2024 年人口约 249 万，是爪哇岛以外人口最多的城市，而包括民礼、日里雪兰莪、卡罗的都会区约 494 万人。这座城由 1860 年代的烟草种植园长出来：日里铁路把烟草、橡胶、棕榈油运到北面 19 公里的勿拉湾港，市区的凯沙湾老街、马依蒙王宫和大清真寺是那个时代的遗存。巴塔克人、爪哇人、华人、马来人与泰米尔人构成城市，穆斯林约占三分之二，基督徒约四分之一。地址在街道之下还写 RT/RW 邻里编号。瓜拉纳穆机场在东南 39 公里，2013 年启用，是印尼第一个有铁路直达的机场；市内靠三轮车、小巴与汽车。初来的人最容易犯的错，是把棉兰只当作去多巴湖的门户，而它是苏门答腊最大的城市，有自己完整的历史和市井。",
+      "棉兰是北苏门答腊省的首府，有民选的市长和市议会，市下分 21 个区（kecamatan）；2024 年人口约 235 万，是爪哇岛以外人口最多的城市，而包括民礼、日里雪兰莪、卡罗的都会区约 494 万人。这座城由 1860 年代的烟草种植园长出来：日里铁路把烟草、橡胶、棕榈油运到北面 19 公里的勿拉湾港，市区的凯沙湾老街、马依蒙王宫和大清真寺是那个时代的遗存。巴塔克人、爪哇人、华人、马来人与泰米尔人构成城市，穆斯林约占三分之二，基督徒约四分之一。地址在街道之下还写 RT/RW 邻里编号。瓜拉纳穆机场在东南 39 公里，2013 年启用，是印尼第一个有铁路直达的机场；市内靠三轮车、小巴与汽车。初来的人最容易犯的错，是把棉兰只当作去多巴湖的门户，而它是苏门答腊最大的城市，有自己完整的历史和市井。",
     layout:
       "老城中心保留荷兰殖民建筑与马来苏丹王宫，城市族群构成多元，华人、马来族、巴塔克族、印度裔社群交错分布；棉兰以南约4至5小时车程是多巴湖区域，以西约3小时车程是武吉拉旺猩猩保护区。",
     gettingAround:
@@ -11305,8 +11345,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月至10月海况相对平稳，是潜水与浮潜的最佳季节；布纳肯一日游建议提前一天通过潜水中心预订船票与装备。",
   },
   "pangkalan-bun": {
+    // identity sources: 邦卡兰文镇区 2024 年年中 108,814（阿鲁特南区 7 个 kelurahan + Pasir Panjang 一个 desa，
+    //   引 BPS 西哥打瓦林金县统计，3 级，2026-09-08 核）。原 identity 的「约 7 万」追溯不到来源。
     identity:
-      "邦卡兰文是中加里曼丹省一座沿河小城，人口约7万，是前往丹绒普丁国家公园观察野生红毛猩猩的主要门户城市。",
+      "邦卡兰文是中加里曼丹省一座沿河小城，人口约10.9万（2024年年中），是前往丹绒普丁国家公园观察野生红毛猩猩的主要门户城市。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pangkalan Bun (Indonesia; the seat of West Kotawaringin Regency in Central Kalimantan on Borneo, mostly on the eastern bank of the Arut river, with about 108,814 residents in mid-2024; Iskandar Airport connects to Jakarta, Surabaya and Semarang; Birutė Galdikas established Camp Leakey about 30 miles upriver for orangutan study and conservation, now part of Tanjung Puting National Park, reached by klotok riverboat from Kumai; a tropical rainforest climate with more than 2,600 mm of rain a year, at 24 m above sea level; the operational centre for the search after the 2014 AirAsia Flight 8501 crash in the nearby Karimata Strait)
     howItWorks:
       "邦卡兰文是印尼中加里曼丹省西哥打瓦林金县的县城，大部分市区在阿鲁特河东岸，2024 年中人口约 10.9 万；印尼实行地方自治，省与县（市）两级首长均由直选产生，县政府管本地事务，国家公园由中央的林业与环境部门管辖。这座镇的意义在于它是丹戎普丁国家公园的入口：公园在南面的半岛上，没有公路直达，游客要先到邻近的库迈港，换乘当地称作“克洛托克”的木船，沿塞科涅尔河逆流而上，通常在船上过夜——这套走法本身就是行程的一部分。1971 年比鲁特·加尔迪卡斯在河上游约五十公里处建立利基营地，研究并放归红毛猩猩，如今营地是公园的核心区之一。伊斯坎达尔机场在镇边，有飞雅加达、泗水与三宝垄的航班。这里属热带雨林气候，年降水超过 2,600 毫米，海拔仅 24 米，棕榈油种植是本地的大产业。初来的人最容易犯的错，是打算当天往返看猩猩，而进园至少要在船上住一晚。",

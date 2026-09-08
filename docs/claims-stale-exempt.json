@@ -163,6 +163,60 @@
       "reason": "同上",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2027-07"
+    },
+    {
+      "key": "travel/darkhan/howItWorks",
+      "reason": "蒙古国家统计局 1212.mn 证书错误无法直连（2026-09-08 仍如此），2022 年的 8.8 万是能核到的最新一期（只到 3 级：维基 infobox 转引 NSO）",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/kharkhorin/howItWorks",
+      "reason": "同上；哈拉和林是苏木中心，2017 年的 1.48 万是能核到的最新一期，基准年已九年",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/dalanzadgad/howItWorks",
+      "reason": "同上；2024 年的 3.3 万是能核到的最新一期",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/khovd/identity",
+      "reason": "同上；2017 年的 2.98 万是能核到的最新一期，基准年已九年",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/khovd/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/tsetserleg/identity",
+      "reason": "同上；2017 年的 2.16 万是能核到的最新一期，基准年已九年",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/tsetserleg/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/olgii/identity",
+      "reason": "同上；市镇 2024 年 50,126、全省约 11 万，是能核到的最新一期",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
+    },
+    {
+      "key": "travel/olgii/howItWorks",
+      "reason": "同上",
+      "confirmedOn": "2026-09-08",
+      "recheckAfter": "2027-03"
     }
   ]
 }
