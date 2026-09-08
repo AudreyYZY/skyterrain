@@ -92,7 +92,7 @@ const HAS_URBAN_FIGURE_EN =
  * 两段年份不同且其中一段是普查数时放过 —— 普查数与年度估计本来就会差一截。
  */
 const CROSS_SUB_ZH =
-  /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇|口径|登记人口)/;
+  /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇|口径|登记人口|城市本身|市镇|县|岛上|全岛|府|州|旧城|市中心)/;
 const CROSS_SUB_EN =
   /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|New Area|estates|register|registered)\b/i;
 const CROSS_POP_ZH = /(常住人口|登录人口|普查人口|人口|居民)/;
@@ -110,9 +110,22 @@ const CROSS_NUM_EN = /([\d.,]+)\s*(million|thousand)\b/i;
  * 按分句切（逗号/顿号/分号之间）两头都能兼顾。
  */
 const CLAUSE_SPLIT = /[，,、；;—]/;
+/**
+ * 取数字所在的分句，**再往前多带一个分句** —— 口径词经常落在前一个分句里：
+ * 「而 1990 年起开发的**浦东新区**，面积约 1,210 平方公里，2025 年末常住人口约 580 万」
+ * 「华欣是巴蜀府下的一个**县**和一个"镇级自治市"，**县**约 840 平方公里，2025 年人口约 12 万」
+ * 只看数字那一句，这两个都会被当成全市人口。往后不多带：格拉茨的「老城1999年列入世界遗产」
+ * 在数字之后，多带就会把一条真的冲突排除掉。
+ */
 function clauseOf(s: string, at: number, len: number): string {
   let start = 0;
-  for (let i = at - 1; i >= 0; i--) if (CLAUSE_SPLIT.test(s[i]!)) { start = i + 1; break; }
+  let seen = 0;
+  for (let i = at - 1; i >= 0; i--) {
+    if (CLAUSE_SPLIT.test(s[i]!)) {
+      seen++;
+      if (seen === 2) { start = i + 1; break; }
+    }
+  }
   let end = s.length;
   for (let i = at + len; i < s.length; i++) if (CLAUSE_SPLIT.test(s[i]!)) { end = i; break; }
   return s.slice(start, end);
