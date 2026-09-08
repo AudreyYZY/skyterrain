@@ -59,11 +59,18 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The northern foot of the Tianshan carried the northern Silk Road; the southern foot, the middle road. Cities such as Ürümqi and Yining were all built on oases watered by Tianshan snowmelt. In 2013 Xinjiang Tianshan was inscribed as a World Natural Heritage site for its glaciers, snowy peaks and vertical natural zones.",
   },
 
+  // altai formation sources: 4,374 m for Youyi/Khüiten — CAS IGSNRR, 《中国地貌·阿尔泰山脉》
+  //   https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692378.html (level 2);
+  //   border attribution and tripoint — en.wikipedia "Nairamdal Peak" / zh.wikipedia 「友谊峰」
+  //   (level 3, checked 2026-09-08). Naming trap: Chinese 「友谊峰」 (Friendship Peak, 4,374 m,
+  //   on the China–Mongolia border) is Mongolian Khüiten; Mongolian Nairamdal ("friendship",
+  //   4,082 m) is the tripoint and is 奎屯峰/Kuitun in Chinese. The two languages' "Friendship
+  //   Peak" are different mountains — the original text said the 4,374 m peak was at the tripoint.
   altai: {
     seeing:
       "The Altai Mountains sit at the far north of Xinjiang, spanning China, Kazakhstan, Russia and Mongolia. \"Altai\" is generally taken to come from a Turkic–Mongolic word for \"gold,\" and the region has historically produced placer gold. It holds greenish glacial lakes and stands of conifer forest, of which Kanas Lake is the best known.",
     formation:
-      "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak, reaches 4,374 m at the China–Russia–Mongolia junction. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
+      "The Altai's folding dates from the Palaeozoic; Quaternary glaciation was strong here and left U-shaped valleys, cirques and moraine-dammed lakes. It trends NW–SE. The Chinese section is over 500 km long, with ridges mostly above 3,000 m; the highest point, Youyi (Friendship) Peak — Khüiten Peak on the Mongolian side — reaches 4,374 m on the China–Mongolia border, while the China–Russia–Mongolia tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north. Kanas Lake is generally explained as a glacially scoured valley dammed by terminal moraine.",
     observation:
       "The Altai's forest is denser than the Tianshan's: its slopes carry taiga — Siberian larch, Siberian spruce, Siberian fir and Siberian pine — a conifer forest that in China is found only here and in the northern Greater Khingan. Winding glacial lakes lie in the valley floors, their water tinged green (Kanas is known as a \"colour-changing lake\"). The range runs on a slant (NW–SE), unlike the true east–west Tianshan.",
     distinguish:
@@ -11762,7 +11769,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   // ============ Mongolia ============
   "mongol-altai": {
     seeing:
-      "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — within the Tavan Bogd massif at the tripoint of Mongolia, Russia and China.",
+      "The Mongol Altai Mountains run about 900 km along Mongolia's western border; its highest peak, Khüiten, reaches 4,374 m — the highest point in the country — in the Tavan Bogd massif on the Mongolia–China border, and the Mongolia–Russia–China tripoint is Nairamdal Peak (4,082 m) about 2.5 km to its north.",
     formation:
       "The Mongol Altai is part of the Altai orogenic belt, uplifted and folded by crustal compression in the late Paleozoic, then repeatedly carved by glaciation through the Quaternary, producing today's landscape of dense high peaks, glaciers and glacial horns.",
     observation:
