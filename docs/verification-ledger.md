@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 5346fab
+lastVerifiedCommit: e690741
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,9 @@ lastVerifiedCommit: 5346fab
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-09 | cities: turkey 6 + croatia 6（第十一轮 c（土耳其 6 城 + 克罗地亚 6 城）） | 22 | 0 / 0 / 0 | 当场修 22 条；新开 issue 0、关闭 0 |
+| 2026-09-09 | terrain: turkey 14（第十一轮 b（土耳其地形第 1 批）） | 10 | 0 / 0 / 0 | 当场修 10 条；新开 issue 0、关闭 0 |
+| 2026-09-09 | terrain: italy 15 + south-korea 14（第十一轮 a（意大利收尾 + 韩国收尾）） | 5 | 0 / 0 / 0 | 当场修 5 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain · 新西兰（山脉 / 平原 / 盆地 / 河流 / 海岸 / 岛屿）（2026-09-10 地形核实：新西兰第 2 批 14 篇（收尾）） | 14 | 9 / 5 / 0 | 当场修 14 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel · 芬兰 / 泰国（2026-09-10 城市核实：芬兰 6 城 + 泰国 6 城） | 14 | 3 / 11 / 0 | 当场修 14 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel · 韩国（红线）（2026-09-10 零争议红线全库扫描（续）：仁川） | 1 | 0 / 1 / 0 | 当场修 1 条；新开 issue 0、关闭 0 |
