@@ -4090,6 +4090,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "scottish-highlands": {
+    // seeing sources: 本尼维斯山 1345 米（OS，2016 年重测 1344.527 米、官方取整；2 级转述），全英最高点无争议；加里东造山（约 4.9–3.9 亿年）与大峡谷断层为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Scottish Highlands are a large area of ancient mountains in the north of the island of Great Britain, separated from the Lowlands to the south by the Highland Boundary Fault. They are not high overall, but rugged, harsh in climate and sparsely populated — the wildest region in Britain. The highest peak, Ben Nevis, is 1,345 m, the highest point in the whole of the United Kingdom.",
     formation:
@@ -4128,6 +4129,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "southern-uplands": {
+    // seeing sources: 梅里克山 843 米（DoBIH / hill-bagging，经转引，3 级）；PeakVisor 的 845 米与主流数据不一致、未采信。**这一条只有 3 级来源**，下一轮若能拿到 Ordnance Survey 的点位数据库应回来复核。2026-09-09 核，本轮无需改动。
     seeing:
       "The Southern Uplands are a belt of hill country in southern Scotland, between the Southern Upland Fault and the border with England, separating the Central Lowlands of Scotland from England. The hills are lower and more rounded than the northern Highlands, covered in grass and pasture, with the highest, the Merrick, at 843 m. Historically this was the country that people and armies had to cross between Scotland and England.",
     formation:
@@ -4143,36 +4145,47 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "snowdonia": {
+    // seeing sources: 官方名：Eryri 国家公园管理局自 2023-11-16 起以威尔士语 Eryri 为对外主用名，主峰正式名 Yr Wyddfa（级别 1，官网，2026-09-09 核）。
+    //   https://eryri.gov.wales/
+    //   **处理方式是不对称的**：英文正文全篇改用 Eryri / Yr Wyddfa（跟随官方用法），中文保留已通行的译名「斯诺登尼亚」「斯诺登峰」并在首句注明改名 —— 因为 Eryri 没有既成的中文译名，生造一个音译等于自造专名，而在中文正文里直接嵌拉丁串会被 TTS 读成字母。下一轮不要把这条「改回一致」。
+    //   主峰 1085 米（OS，2010 年精测 1085.67 米，官方仍取 1085）、1951 年设园为英格兰与威尔士第三个国家公园（Peak District 1951-04-17 → Lake District 1951-05-09 → 此处 1951-10-18 → Dartmoor 1951-10-30）、板岩景观 2021 年列入 UNESCO：均核实无误。
+    //   https://whc.unesco.org/en/list/1633
     seeing:
-      "Snowdonia (Welsh: Eryri), in north-west Wales, is the highest and most rugged mountain area in Wales. Its highest peak, Snowdon (Welsh: Yr Wyddfa), is 1,085 m — the highest mountain in Wales and in England-and-Wales — with a mountain railway to the summit. This is a classic teaching area for glacial landforms in Britain, and a heartland of the Welsh language and culture.",
+      "Eryri, in north-west Wales — known in English as Snowdonia until the national park authority adopted the Welsh name as its official name in 2023 — is the highest and most rugged mountain area in Wales. Its highest peak, Yr Wyddfa (Snowdon in English), is 1,085 m — the highest mountain in Wales and in England-and-Wales — with a mountain railway to the summit. This is a classic teaching area for glacial landforms in Britain, and a heartland of the Welsh language and culture.",
     formation:
-      "Snowdonia's rocks are Cambrian to Ordovician marine sedimentary and volcanic rocks (about 540 to 440 million years old) — in the Ordovician this was an active volcanic arc, and the erupted tuffs and lavas are interbedded with shale and sandstone. The Caledonian orogeny folded and uplifted them. During the ice ages, glaciers cut deep along the valleys, gouging round corries (Welsh: cwm), knife-edged arêtes and a string of corrie lakes and ribbon lakes.",
+      "Eryri's rocks are Cambrian to Ordovician marine sedimentary and volcanic rocks (about 540 to 440 million years old) — in the Ordovician this was an active volcanic arc, and the erupted tuffs and lavas are interbedded with shale and sandstone. The Caledonian orogeny folded and uplifted them. During the ice ages, glaciers cut deep along the valleys, gouging round corries (Welsh: cwm), knife-edged arêtes and a string of corrie lakes and ribbon lakes.",
     observation:
-      "From the air Snowdonia is a set of dark, bare-rock mountain blocks split by deep valleys, the valley floors strung with inky-blue glacial lakes (such as Llyn Llydaw below Snowdon). On the slopes you can see the grey, giant stepped workings and spoil heaps of slate quarries. The valley mouths are green farmland and stone villages.",
+      "From the air Eryri is a set of dark, bare-rock mountain blocks split by deep valleys, the valley floors strung with inky-blue glacial lakes (such as Llyn Llydaw below Yr Wyddfa). On the slopes you can see the grey, giant stepped workings and spoil heaps of slate quarries. The valley mouths are green farmland and stone villages.",
     distinguish:
-      "Snowdonia and the Lake District of England are both old volcanic-rock uplands strongly reshaped by glaciers, both with corries and ribbon lakes, but Snowdonia is more compact, its cliffs steeper, and it is slightly higher. Compared with the Scottish Highlands, Snowdonia is far smaller — an isolated block of high ground.",
+      "Eryri and the Lake District of England are both old volcanic-rock uplands strongly reshaped by glaciers, both with corries and ribbon lakes, but Eryri is more compact, its cliffs steeper, and it is slightly higher. Compared with the Scottish Highlands, Eryri is far smaller — an isolated block of high ground.",
     concept:
-      "Snowdonia is a case study in the corrie (cwm / corrie): snow accumulates first in a shaded hollow on the mountainside and turns to ice, and the ice, rotating under its own weight, scoops the hollow out into a round basin with a steep back wall, a deep floor often holding a lake, and a low rock lip. To recognise a corrie, look at whether it faces the shaded side (north-east in the northern hemisphere) and has a steep back wall and a low rock threshold. A common misconception is to take a corrie lake for a volcanic crater lake.",
+      "Eryri is a case study in the corrie (cwm / corrie): snow accumulates first in a shaded hollow on the mountainside and turns to ice, and the ice, rotating under its own weight, scoops the hollow out into a round basin with a steep back wall, a deep floor often holding a lake, and a low rock lip. To recognise a corrie, look at whether it faces the shaded side (north-east in the northern hemisphere) and has a steep back wall and a low rock threshold. A common misconception is to take a corrie lake for a volcanic crater lake.",
     history:
-      "Snowdonia was the last stronghold of the medieval Principality of Wales. From the 19th century its slate quarrying roofed buildings around the world and was for a time the mainstay of the Welsh economy; the associated quarry landscape was inscribed as a World Heritage Site in 2021. Snowdonia National Park was established in 1951, the third national park in England and Wales.",
+      "Eryri was the last stronghold of the medieval Principality of Wales. From the 19th century its slate quarrying roofed buildings around the world and was for a time the mainstay of the Welsh economy; the associated quarry landscape was inscribed as a World Heritage Site in 2021. The national park was established in 1951, the third in England and Wales, and has been called Eryri National Park since 2023.",
   },
 
   "brecon-beacons": {
+    // seeing sources: 官方名：国家公园管理局 2023-04 起以 Bannau Brycheiniog 为对外官方名（级别 1，官方新闻稿）。
+    //   https://beacons-npa.gov.uk/the-authority/press-and-news/archive/april-2023/brecon-beacons-national-park-reclaims-its-welsh-name
+    //   处理方式与 snowdonia 一致、且同样是不对称的（英文改名、中文保留译名 + 首句注明），理由见 snowdonia 条注释。
+    //   彭伊范山 886 米、1957-04-17 设园（1949 年法案下最后一个）均核实无误。
+    //   https://beacons-npa.gov.uk/wp-content/uploads/basic-facts-about-the-brecon-beacons-national-park.pdf
     seeing:
-      "The Brecon Beacons (Welsh: Bannau Brycheiniog), in south Wales, are a line of flat-topped hills of Old Red Sandstone, with a clean escarpment facing north. The highest, Pen y Fan, is 886 m — the highest point in southern Britain. Close to the cities of south Wales, they are a popular walking area, and the sky is very dark: it is an International Dark Sky Reserve.",
+      "Bannau Brycheiniog, in south Wales — the Brecon Beacons in English until the park authority adopted the Welsh name in April 2023 — is a line of flat-topped hills of Old Red Sandstone, with a clean escarpment facing north. The highest, Pen y Fan, is 886 m — the highest point in southern Britain. Close to the cities of south Wales, they are a popular walking area, and the sky is very dark: it is an International Dark Sky Reserve.",
     formation:
-      "The main body of the Brecon Beacons is Devonian Old Red Sandstone — a suite of red sandstone and mudstone laid down on rivers and floodplains about 400 million years ago. The beds are roughly horizontal, the hard sandstone layers forming flat summits that dip gently south. Erosion and glaciation cut a steep \"cuesta\" escarpment on the north side, with several small corries and corrie lakes below it. The southern edge of the range is Carboniferous Limestone, with cave systems.",
+      "The main body of Bannau Brycheiniog is Devonian Old Red Sandstone — a suite of red sandstone and mudstone laid down on rivers and floodplains about 400 million years ago. The beds are roughly horizontal, the hard sandstone layers forming flat summits that dip gently south. Erosion and glaciation cut a steep \"cuesta\" escarpment on the north side, with several small corries and corrie lakes below it. The southern edge of the range is Carboniferous Limestone, with cave systems.",
     observation:
-      "From the air the Brecon Beacons are several table-topped, turf-covered hills, gentle on the south slope and with a continuous dark escarpment on the north, a line of small lakes and corries at the foot of the cliff. The summits have almost no bare rock — they are broad acid grassland and peat. On the southern foot you can see the sinkholes and quarries of the limestone country.",
+      "From the air Bannau Brycheiniog are several table-topped, turf-covered hills, gentle on the south slope and with a continuous dark escarpment on the north, a line of small lakes and corries at the foot of the cliff. The summits have almost no bare rock — they are broad acid grassland and peat. On the southern foot you can see the sinkholes and quarries of the limestone country.",
     distinguish:
-      "The Brecon Beacons and Snowdonia are both in Wales, but Snowdonia is hard volcanic rock, gouged by glaciers into sharp peaks and deep valleys; the Brecon Beacons are near-horizontal sandstone, characterised by flat tops and long escarpments, with much weaker glaciation. This kind of hill, steep on one side and gentle on the other, is a cuesta.",
+      "The Bannau Brycheiniog and Eryri are both in Wales, but Eryri is hard volcanic rock, gouged by glaciers into sharp peaks and deep valleys; Bannau Brycheiniog are near-horizontal sandstone, characterised by flat tops and long escarpments, with much weaker glaciation. This kind of hill, steep on one side and gentle on the other, is a cuesta.",
     concept:
-      "The Brecon Beacons are a case study in a cuesta: when a suite of gently dipping, alternating hard and soft beds is eroded, the surface of a hard bed becomes the gentle slope (following the dip), and its cut-off end becomes the escarpment, so the hill is gentle on one side and steep on the other. To recognise a cuesta, check whether the gentle slope's angle matches the dip of the beds. A common misconception is to read the escarpment as a fault scarp.",
+      "The Bannau Brycheiniog are a case study in a cuesta: when a suite of gently dipping, alternating hard and soft beds is eroded, the surface of a hard bed becomes the gentle slope (following the dip), and its cut-off end becomes the escarpment, so the hill is gentle on one side and steep on the other. To recognise a cuesta, check whether the gentle slope's angle matches the dip of the beds. A common misconception is to read the escarpment as a fault scarp.",
     history:
-      "The Brecon Beacons have long been upland grazing country (sheep, Welsh mountain ponies) and border-fortress country, with Roman roads and medieval castle remains in the hills. In the 19th century the southern edge of the range was the fringe of the south Wales coalfield and iron industry, with canals and railways cut through the hills. The national park was established in 1957.",
+      "The Bannau Brycheiniog have long been upland grazing country (sheep, Welsh mountain ponies) and border-fortress country, with Roman roads and medieval castle remains in the hills. In the 19th century the southern edge of the range was the fringe of the south Wales coalfield and iron industry, with canals and railways cut through the hills. The national park was established in 1957.",
   },
 
   "lake-district": {
+    // seeing sources: 斯科费尔峰 978 米（Ordnance Survey GetOutside 官方页，级别 1）；2017-07-09 以「文化景观」列入 UNESCO（国家公园管理局官方新闻稿，级别 1）。三段岩性（Skiddaw 群 / Borrowdale 火山群 / 志留系板岩砂岩）为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Lake District, in north-west England, is a region of mountains and long narrow lakes arranged radially. England's highest peak, Scafell Pike (978 m), and its largest natural lake, Windermere, are both here. Known for its pastoral \"lake and mountain\" scenery and the Romantic poets (Wordsworth and others), it is a World Heritage Site and one of the most-visited national parks in Britain.",
     formation:
@@ -4180,7 +4193,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     observation:
       "From the air the Lake District is a set of dark, craggy mountains with valleys reaching out in every direction from a central upland, each main valley holding a long thin lake (Windermere, Ullswater, Coniston Water and others), the lake shores green pasture and drystone-walled fields, the valley slopes carrying sheep and small woods. The crags are steepest around Scafell in the centre.",
     distinguish:
-      "The Lake District, the Scottish Highlands and Snowdonia are all old rock reshaped by glaciers, but the Lake District's \"radial drainage plus ribbon lakes\" pattern is especially clear because it is a near-circular dome. Compared with the Scottish Highlands, the Lake District is small and slightly lower, but the relief and density of lakes per unit area is very high.",
+      "The Lake District, the Scottish Highlands and Eryri are all old rock reshaped by glaciers, but the Lake District's \"radial drainage plus ribbon lakes\" pattern is especially clear because it is a near-circular dome. Compared with the Scottish Highlands, the Lake District is small and slightly lower, but the relief and density of lakes per unit area is very high.",
     concept:
       "The Lake District is a case study in radial drainage and ribbon lakes: once the surface is uplifted into a dome, rivers flow down the steepest line, out from the centre, in a spoke pattern; ice-age glaciers deepen these valleys and leave transverse moraine dams in them, so after the ice retreats they fill with long, narrow lakes. A common misconception is to take a ribbon lake for a stretch of river.",
     history:
@@ -4188,6 +4201,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pennines": {
+    // seeing sources: 克罗斯费尔 893 米（3 级多来源一致）；奔宁之路 1965-04-24 开通、英国第一条国家步道（National Trails 官方，级别 1）。石炭系背斜与磨石粗砂岩为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Pennines are a north-south upland in the north of England, running from the Scottish border down to the Peak District in the middle of the country, often called the \"backbone of England\". Overall it is an open moorland, mostly 400 to 700 m high, with the highest point, Cross Fell, at 893 m. It is the watershed between the east- and west-flowing rivers of England, and it separates the cities on the two sides.",
     formation:
@@ -4203,6 +4217,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mourne-mountains": {
+    // seeing sources: 多纳德山 850 米（3 级多来源一致）；花岗岩古近纪约 56 Ma 侵位（British Geological Survey Earthwise，级别 1）；莫恩墙 1904–1922 年、约 35 公里、翻越 15 座山头（3 级）；C.S. Lewis 的纳尼亚灵感有其本人书信与散文为据，正文用「据说启发了」这种保留措辞与史实相符。**零争议红线本轮专门复核过一遍：通过。**另确认莫恩不是国家公园而是 AONB / National Landscape，正文未误写。2026-09-09 核，本轮无需改动。
+    //   https://earthwise.bgs.ac.uk/index.php/Mourne_Mountains_Complex,_Palaeogene_intrusive_centre,_Northern_Ireland
     seeing:
       "The Mourne Mountains, in the south-east of Northern Ireland in County Down, are a compact group of granite mountains that rise a short distance in from the shore of the Irish Sea. The highest, Slieve Donard, is 850 m — the highest peak in Northern Ireland. The mountains are not high but tightly packed and steep, and the Mourne Wall, about 35 km long, runs over the summits and is the emblem of the range.",
     formation:
@@ -4218,6 +4234,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "peak-district": {
+    // seeing sources: 1951-04-17 英国第一个国家公园、1932-04-24 金德斯科特集体擅入及其立法影响：均据公园管理局官方页（级别 1）。白峰 / 暗峰的石炭系岩性对比为标准地质表述。2026-09-09 核，本轮无需改动。
     seeing:
       "The Peak District, in the middle of England at the southern end of the Pennines, is ringed by big cities — Manchester, Sheffield and others. It divides clearly in two: the \"Dark Peak\" of the north and the eastern and western wings is dark sandstone moorland plateau; the \"White Peak\" of the south and centre is pale limestone plateau and deep-cut dales. The Peak District was the first national park in Britain (1951).",
     formation:
@@ -4233,6 +4250,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "yorkshire-dales": {
+    // seeing sources: 1954 年设园（2 级）；福因斯修道院牧羊庄园与中世纪羊毛贸易史实成立（3 级）；马勒姆湾 70–80 米，正文用「几十米高」的区间表述（2 级公园官方页）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Yorkshire Dales, in the northern Pennines, are a limestone upland cut by broad glacial valleys (\"dales\"). They are known for classic limestone landforms: bare \"limestone pavements\", white cliffs (\"scars\") tens of metres high such as Malham Cove, deep vertical shafts and huge underground cave systems. On the surface there are drystone walls, stone barns and grazing sheep.",
     formation:
@@ -4248,6 +4266,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "north-york-moors": {
+    // seeing sources: 连片欧石南沼地口径与公园管理局官方页一致（级别 1）；Boulby 崖高约 203 米、英格兰东海岸最高（3 级）；1952 年设园；明矾业已带「之一」限定，符合排名断言要写口径的规矩。2026-09-09 核，本轮无需改动。
     seeing:
       "The North York Moors, in the north-east of England, are a sandstone plateau whose top carries the largest continuous expanse of heather moorland in England and Wales — when it flowers in late summer the whole upland turns purple. The plateau is cut by several deep dales, and its eastern edge drops straight into the North Sea as the highest stretch of sea cliff on England's east coast.",
     formation:
@@ -4263,6 +4282,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "dartmoor": {
+    // seeing sources: 花岗岩约 280–290 Ma（2 级转述 BGS / 学界），正文中文「约 2.9 亿年」与英文「295 Ma」都落在区间内，**但中英不是同一个数**——下一轮建议直接查 BGS 达特穆尔地质图说明书统一到一个数；南英格兰最大开阔荒野（公园管理局官方，级别 1）与不列颠青铜时代遗迹最密集（English Heritage 官方，级别 1）核实无误。2026-09-09 核。
     seeing:
       "Dartmoor, in Devon in south-west England, is a granite upland and the largest area of open wild country in southern England. Its signature is the \"tor\" — piles of granite weathered into blocks and stacked in layers, standing alone on the bare moor like natural stone castles. Dartmoor also has the densest concentration of Bronze Age remains in Britain.",
     formation:
@@ -4278,8 +4298,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "exmoor": {
+    // seeing sources: 红鹿：埃克斯穆尔国家公园管理局官方页面口径为「英格兰最大的野生红鹿群」（级别 1，2026-09-09 核）；昆托克丘陵官方监测页佐证英格兰另有独立野生种群（2023 年冬约 643 头，级别 2）。原文「仅存」不成立，已改。
+    //   https://www.exmoor-nationalpark.gov.uk/nature-and-landscape/our-habitats-and-wildlife/red-deer
+    //   https://www.quantockhills.com/surveys-and-monitoring/deer
+    //   海崖「英格兰最高的一段」与 Great Hangman 318 米一致；1954-10-19 设园核实无误。
     seeing:
-      "Exmoor, spanning Devon and Somerset, is a sandstone moorland whose most distinctive feature is its northern edge: the moor does not slope gently to the sea but drops straight into the Bristol Channel as steep sea cliffs hundreds of metres high, among the highest in England. The moor carries the semi-wild Exmoor pony and the last herds of wild red deer in England. It is also an International Dark Sky Reserve.",
+      "Exmoor, spanning Devon and Somerset, is a sandstone moorland whose most distinctive feature is its northern edge: the moor does not slope gently to the sea but drops straight into the Bristol Channel as steep sea cliffs hundreds of metres high, among the highest in England. The moor carries the semi-wild Exmoor pony and England's largest herd of wild red deer. It is also an International Dark Sky Reserve.",
     formation:
       "Exmoor's rocks are Devonian (about 400 to 360 million years old) sandstones and slates, folded and uplifted in the Caledonian and Variscan orogenies. The hard sandstone beds form the gently rolling moorland plateau; the plateau is cool and wet and poorly drained, covered in acid peat and heather. Rivers (the Exe, the Lyn and others) cut steep deep combes north from the plateau straight into the sea — it is precisely because the rivers are short and steep and the coast is retreating fast that the moor \"meets the cliff edge\" as high sea cliffs.",
     observation:
@@ -4595,14 +4619,18 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "hekla": {
     seeing:
       "Hekla is an active volcano in southern Iceland, about 1,491 m high, and one of the most frequently erupting volcanoes in Iceland's history. It is not a cone but a ridge-shaped mountain growing along a fissure, looking from a distance like an overturned boat. After a large eruption in 1104, medieval Europeans imagined Hekla as a \"gateway to Hell\", where the souls of the damned were thrown into its crater.",
+    // formation sources: 预警时间：冰岛气象局（Veðurstofa Íslands / IMO）监测专文，量级为「几十分钟，理想条件下不到一小时」。级别 1，2026-09-09 核；原文的「一两个小时」无官方依据，已删。
+    //   https://en.vedur.is/earthquakes-and-volcanism/articles/monitoring-hekla
     formation:
-      "Hekla sits astride one of Iceland's volcanic fissure zones. Its magma is intermediate between rhyolitic and basaltic in composition, so an eruption begins with a violent explosive phase (throwing out ash and pumice) and then shifts to relatively quiet lava effusion. Because the magma conduit does not fully seal after each eruption, Hekla's warning time from \"dormant\" to \"erupting\" is often only tens of minutes to an hour or two — among the shortest of any volcano in the world.",
+      "Hekla sits astride one of Iceland's volcanic fissure zones. Its magma is intermediate between rhyolitic and basaltic in composition, so an eruption begins with a violent explosive phase (throwing out ash and pumice) and then shifts to relatively quiet lava effusion. Because the magma conduit does not fully seal after each eruption, Hekla's warning time from \"dormant\" to \"erupting\" is often only tens of minutes — under optimal conditions less than an hour — among the shortest of any volcano in the world (Icelandic Met Office).",
     observation:
       "From the air Hekla is a dark, elongated, slightly arched ridge at the junction of the southern lowland and the highlands, its body covered in layers of black lava and pale pumice of different ages, with almost no vegetation; a row of fissure craters runs along the ridge crest. Around it is heath buried under successive ashfalls and several glacial rivers.",
     distinguish:
       "Hekla differs from southern Iceland's ice-covered volcanoes such as Eyjafjallajökull and Katla: those have ice caps and their eruptions bring glacial floods; Hekla has no ice, and its main hazards are ash, volcanic bombs and lava flows. Compared with the purely basaltic shield volcanoes of Hawaii, Hekla's magma is more viscous and more explosive.",
     concept:
       "Hekla is a case study in a fissure volcano: the magma does not erupt from one fixed round crater but rises along a tensional fracture in the crust, so an eruption is often a whole row of craters erupting at once, joined into a \"curtain of fire\". To recognise a fissure volcano, look at whether it is a linear ridge with craters in a row. A common misconception is that all volcanoes are symmetrical cones.",
+    // history sources: 20 世纪喷发年表（1947 / 1970 / 1980–81 / 1991 / 2000）与「2000 年后至今未再喷发」均据 IMO 监测专文。级别 1，2026-09-09 核，本轮无需改动。
+    //   https://en.vedur.is/earthquakes-and-volcanism/articles/monitoring-hekla
     history:
       "Hekla's eruptions are recorded in detail in Iceland's sagas and annals, an important source for the history of volcanic activity. The 1104 eruption destroyed nearby settlements. In the 20th century it was quite active (eruptions in 1947, 1970, 1980, 1991, 2000). Because the warning time is so short, Iceland's civil protection authority issues specific warnings for hikers around Hekla.",
   },
@@ -4618,11 +4646,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Katla and Grímsvötn are both subglacial volcanoes and both produce glacial floods, but Katla is on Iceland's south coast near populated areas, and its floods drive straight down toward the Ring Road; Grímsvötn is deep in the interior within Vatnajökull, and its floods discharge mainly across the uninhabited sandur plains. Compared with Hekla, Katla's main hazard is not ash but flood.",
     concept:
       "Katla is a case study in a subglacial volcano and a jökulhlaup: the volcano's heat rapidly melts the overlying ice, and the meltwater may pond up as a lake under the ice and then burst out suddenly, or burst out directly, at a flow that can exceed that of the world's great rivers for a short time. To assess this risk, look at whether the volcano is covered by thick ice and whether there are glacial river valleys downstream. A common misconception is that an ice-covered volcano is relatively \"safe\".",
+    // history sources: 1918 年喷发洪水的海岸线推进量：Duller et al. 2014, Geophysical Research Letters（基于历史地形测量与野外调查），约 4 公里。等同级别 2，2026-09-09 核；原文「约 3 公里」无来源支持，已改。
+    //   https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2014GL060090
+    //   「大约每世纪喷发两次」与「过去约 1100 年间 21 次以上、平均间隔约 50 年」一致（3 级交叉印证），本轮保留。
     history:
-      "Katla has historically erupted about twice a century, most recently in a large eruption in 1918, whose flood pushed the south coastline out by about 3 km. Katla has had no large eruption since, and is one of the most closely monitored volcanoes in Iceland. The town of Vík has a specific evacuation plan for volcanic floods.",
+      "Katla has historically erupted about twice a century, most recently in a large eruption in 1918, whose flood pushed the south coastline out by about 4 km. Katla has had no large eruption since, and is one of the most closely monitored volcanoes in Iceland. The town of Vík has a specific evacuation plan for volcanic floods.",
   },
 
   "eyjafjallajokull": {
+    // seeing sources: 高程 1651 米、2010 年 4–5 月喷发时序、欧洲空域关闭约六天、1821–1823 年前次喷发：多方交叉印证一致，3 级，2026-09-09 核，本轮无需改动。未找到 Landmælingar Íslands 的逐峰高程公开表，1651 米属广泛一致的常见值。
     seeing:
       "Eyjafjallajökull, on Iceland's south coast, is an ice-capped stratovolcano about 1,651 m high. Its awkward Icelandic name (\"the glacier of the island mountains\") became known around the world overnight in 2010 — that April and May a not-especially-large eruption produced fine ash that drifted toward mainland Europe on the wind, closing most of European airspace for nearly a week and stranding millions of travellers.",
     formation:
@@ -4638,14 +4670,20 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "grimsvotn": {
+    // seeing sources: 喷发频率：冰岛气象局（IMO）火山档案页，近八千年年均约七次每世纪、60–80 年高发/低发交替。级别 1，2026-09-09 核；原文「近百年十几次」查无依据（可查清单仅七八次），已改。
+    //   https://en.vedur.is/volcanoes/about-volcanoes/grimsvotn/
+    //   备忘（本轮未写进正文）：IMO 已把格里姆火山的航空颜色码从绿改黄、冰下湖水位接近 2004/2010 年洪水前水位——警戒级别是随时会变的量，若要写进正文必须带「截至 <日期>」。
     seeing:
-      "Grímsvötn is a volcano in Iceland's interior, beneath the north-western part of the Vatnajökull ice cap — the most frequently erupting volcano in Iceland (more than a dozen eruptions in the last century). It is almost invisible at the surface — just a slightly depressed area of the ice cap, often with crevasses and collapse pits, with a geothermally maintained subglacial lake beneath.",
+      "Grímsvötn is a volcano in Iceland's interior, beneath the north-western part of the Vatnajökull ice cap — one of the most frequently erupting volcanoes in Iceland — the Icelandic Met Office puts the long-term average at about seven eruptions a century over the past 8,000 years, alternating between more and less active spells. It is almost invisible at the surface — just a slightly depressed area of the ice cap, often with crevasses and collapse pits, with a geothermally maintained subglacial lake beneath.",
     formation:
       "Grímsvötn sits at one of the most active points of the Iceland hotspot (mantle upwelling). Constant geothermal heat melts the ice above, and the meltwater collects in the caldera as a subglacial lake, \"sealed\" in by the surrounding and overlying ice. When the lake fills to the point where buoyancy lifts the ice dam, the lake water drains suddenly along the base of the glacier as a glacial flood, delivering large amounts of water, sediment and ice blocks to the Skeiðarársandur plain to the south within a few days. Sometimes an eruption itself triggers a flood directly.",
     observation:
       "From the air the site of Grímsvötn is a clear depression and ice cliff in the Vatnajökull ice cap, with arcuate crevasses and pits where the lake has drained and the ice has collapsed. During an eruption a dark ash column rises straight out of the white ice cap. To the south, the Skeiðará river emerges from under the ice cap and crosses a large braided black sand plain.",
+    // distinguish sources: 「冰岛最近一次较大喷发」这个未限定排名已删：2014–2015 年霍尔赫劳恩喷发岩浆体积约 1.44 立方公里，为 1783–84 年拉基以来最大的熔岩喷发。等同级别 2，2026-09-09 核。
+    //   https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2018.00235/full
+    //   1996 年 Gjálp 裂隙喷发与随后冲毁环岛公路桥梁的冰川洪水（洪峰约 45,000–53,000 立方米每秒）核实一致，本轮不改。
     distinguish:
-      "Grímsvötn and Katla are both subglacial volcanoes and both produce glacial floods, but Grímsvötn is in the uninhabited interior and has a stable subglacial lake, so its floods are more \"regular\"; Katla is near south-coast communities and has no permanent subglacial lake, so its floods are more sudden. Grímsvötn was also the site of Iceland's most recent larger eruption (2011).",
+      "Grímsvötn and Katla are both subglacial volcanoes and both produce glacial floods, but Grímsvötn is in the uninhabited interior and has a stable subglacial lake, so its floods are more \"regular\"; Katla is near south-coast communities and has no permanent subglacial lake, so its floods are more sudden. Grímsvötn last erupted in 2011; Iceland has erupted repeatedly since, including the larger-by-volume but effusive Holuhraun eruption of 2014–2015 and the Reykjanes Peninsula series from 2021.",
     concept:
       "Grímsvötn is a case study in a subglacial lake outburst: volcanic geothermal heat constantly melts ice, the meltwater is sealed in a hollow by ice, and when the water level rises enough, buoyancy lifts the ice dam and the lake drains out along the glacier base — a glacial flood that can recur, and can sometimes even be predicted. To recognise this system, look for a hollow in the ice cap that periodically collapses and refills. A common misconception is that the ice cap is solid ice underneath.",
     history:
@@ -4653,8 +4691,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "fagradalsfjall": {
+    // seeing sources: 雷克雅内斯半岛的喷发序列：法格拉达尔本体 2021 / 2022 / 2023 各一次；2023-12 起活动中心转到桑德努库尔火山口列，至 2026-09-09 已再喷发至少九次（2023-12 / 2024-01 / 02 / 03 / 05 / 08 / 11 / 2025-04 / 2025-07–08），最近一次 2025 年 7–8 月。3 级清单与 IMO / GVP 报告交叉印证，2026-09-09 核。
+    //   ⚠️ 这是典型的会过期内容（known-errors C6-j）：**每一轮都要回来刷新这一句**，写法上只给「最近一次在 <年月>」而不给总次数。
     seeing:
-      "Fagradalsfjall is on the Reykjanes Peninsula in south-west Iceland, not far from the capital Reykjavík or from Keflavík International Airport. After lying quiet for about 800 years, this area began erupting again from 2021 — once each in 2021, 2022 and 2023, all relatively quiet fissure eruptions of flowing lava. Because they were easy to reach and essentially free of explosions and ash, these eruptions drew large numbers of visitors watching from close up.",
+      "Fagradalsfjall is on the Reykjanes Peninsula in south-west Iceland, not far from the capital Reykjavík or from Keflavík International Airport. After lying quiet for about 800 years, this area began erupting again from 2021 — once each in 2021, 2022 and 2023 at Fagradalsfjall itself, all relatively quiet fissure eruptions of flowing lava; from late 2023 the centre of activity shifted to the nearby Sundhnúkur crater row, which has erupted repeatedly since, most recently in July–August 2025. Because they were easy to reach and essentially free of explosions and ash, these eruptions drew large numbers of visitors watching from close up.",
     formation:
       "The Reykjanes Peninsula is a section of the Mid-Atlantic Ridge come ashore in Iceland — the two plates pulling apart here at about 2 cm a year. The crust is stretched and thinned, and basaltic magma from depth rises along sets of parallel fractures. The 2021-onward series of eruptions began with magma first intruding sideways a few kilometres down, jacking the ground apart (accompanied by tens of thousands of small earthquakes), then effusing from the fissures as slow-moving lava flows and low lava mounds.",
     observation:
@@ -4663,11 +4703,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Fagradalsfjall's eruptions are completely different from southern Iceland's subglacial volcanoes (Katla, Grímsvötn): there is no ice, no big explosion, no ash cloud, mainly lava flowing quietly; it is more like a small-scale version of the large fissure effusion at Holuhraun north of Vatnajökull in 2014–2015.",
     concept:
       "Fagradalsfjall is a case study in fissure eruption at a plate-rifting zone: where two plates pull apart, the crust is continually thinned and torn, and basaltic magma comes up along these tensional fractures, often not building a large cone but effusing lava along a line and gradually building new ground. To recognise this kind of eruption, look at whether the vent is a fissure rather than a round hole and whether the lava is very fluid and travels far. A common misconception is to picture every volcanic eruption as explosive.",
+    // history sources: 现状（截至 2026-09-09）：无正在进行的喷发，但 IMO 监测显示岩浆仍在斯瓦特森伊（Svartsengi）下方积累。正文只写「周期仍在继续、等级由 IMO 更新」，**不写死警戒等级** —— 那是随时会变的量。2 级/主流报道 + IMO 页面，2026-09-09 核。
     history:
-      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). The new activity from 2021 is thought likely to continue for decades or longer. From late 2023 the centre of activity shifted toward the town of Grindavík, where magma intrusion cracked the ground and the town was evacuated for a time, and lava approached the town and a geothermal power plant — prompting Iceland to accelerate protective works such as barrier walls.",
+      "The Reykjanes Peninsula's last active period was in the 13th century (the \"Reykjanes Fires\"). The new activity from 2021 is thought likely to continue for decades or longer. From late 2023 the centre of activity shifted toward the town of Grindavík, where magma intrusion cracked the ground and the town was evacuated for a time, and lava approached the town and a geothermal power plant — prompting Iceland to accelerate protective works such as barrier walls. This eruptive episode was still going on in 2026, with the Icelandic Met Office updating the alert level and the likely window for the next eruption from current monitoring.",
   },
 
   "snaefellsjokull": {
+    // seeing sources: 高程 1446 米、火山约 70 万年、末次喷发约 1800 年前、2001 年设立国家公园：多方交叉印证一致，3 级，2026-09-09 核，本轮无需改动。
     seeing:
       "Snæfellsjökull, at the very tip of the Snæfellsnes peninsula in western Iceland, is an about 700,000-year-old stratovolcano with a small ice cap on its summit, about 1,446 m high. On a clear day it can be seen from Reykjavík across Faxaflói bay, its symmetrical white summit standing out. In Jules Verne's novel Journey to the Center of the Earth, the entrance to the centre of the Earth is set in this volcano's crater.",
     formation:
@@ -4683,8 +4725,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "askja": {
+    // seeing sources: 湖深排名：冰岛国家自然历史研究所（Náttúrufræðistofnun Íslands）湖泊页，杰古沙龙约 248 米、厄斯丘湖约 220 米，杰古沙龙自 2009 年起为冰岛最深。级别 1，2026-09-09 核。**这是一条会被冰川退缩改写的排名**（known-errors C6-j），下一轮回来复核。
+    //   https://www.natt.is/en/geology/water/lakes
+    //   1965 / 1967 年 NASA 阿波罗宇航员在此接受地质训练核实无误（2 级）。备忘：阿斯基亚自 2021 年秋持续隆起，截至 2025-11 约 60 厘米、航空颜色码仍为绿——正文未做现状断言，本轮未写入。
     seeing:
-      "Askja, in the Dyngjufjöll mountains of Iceland's central highlands, is a set of nested calderas. The most striking feature is Öskjuvatn, the lake formed by collapse after a large eruption in 1875 — the deepest lake in Iceland, its water icy cold; beside it is a much smaller crater called Víti (\"Hell\"), holding a pool of warm, milky-blue water that visitors can climb down to bathe in. It is over a hundred kilometres from any settlement, one of the remotest places in Iceland.",
+      "Askja, in the Dyngjufjöll mountains of Iceland's central highlands, is a set of nested calderas. The most striking feature is Öskjuvatn, the lake formed by collapse after a large eruption in 1875 — about 220 m at its deepest, the deepest lake in Iceland until 2009 and now the second-deepest, after Jökulsárlón was deepened by glacier retreat — its water icy cold; beside it is a much smaller crater called Víti (\"Hell\"), holding a pool of warm, milky-blue water that visitors can climb down to bathe in. It is over a hundred kilometres from any settlement, one of the remotest places in Iceland.",
     formation:
       "Askja sits on Iceland's northern rift zone. Successive eruptions have emptied the magma chamber below, and the surface has collapsed repeatedly, nesting several calderas of different sizes. The 1875 eruption was a large rhyolitic explosion, whose pumice and ash blanketed the farming districts of north-east Iceland; after it, a block of ground dropped into the emptied magma chamber and filled with water to become Öskjuvatn. Askja also had a basaltic lava eruption in 1961.",
     observation:
@@ -4698,6 +4743,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "thingvellir": {
+    // seeing sources: 扩张速率约 2 厘米/年（2 级）；UNESCO 2004 年列入、冰岛第一处世界遗产；1944-06-17 在此宣告共和国；「现存最古老的议会之一」已带「之一」限定，符合排名断言要写口径的规矩。2026-09-09 核，本轮无需改动。
+    //   https://perlan.is/articles/tectonic-plates-iceland
     seeing:
       "Þingvellir (\"assembly plains\"), a short way east of Reykjavík, is a broad rift valley. It is both a geological wonder — you can walk between the fractures where the North American and Eurasian plates are being pulled apart — and Iceland's historic sacred site: from 930 CE the chieftains of Iceland met here each summer for the \"Alþingi\" assembly, one of the oldest surviving parliaments in the world. It is Iceland's first World Heritage Site.",
     formation:
@@ -4713,8 +4760,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "vatnajokull": {
+    // seeing sources: 冰川面积：瓦特纳冰原国家公园管理局与冰岛国家自然历史研究所，2023 年测得约 7500–7600 平方公里、约占冰岛 7%（原文「7700 / 8%」既偏大又无监测时点）。级别 1，2026-09-09 核。**冰川面积是持续变化量**（known-errors C6-j），下一轮回来刷新。
+    //   https://www.vatnajokulsthjodgardur.is/en/melting-glaciers/vatnajokullglacier
+    //   https://www.natt.is/en/geology/water/glaciers
+    //   最高点华纳达尔斯赫努克峰 2110 米（2005 年官方测量 2109.6 米）核实无误；「按体积算欧洲最大冰帽」已带口径限定、与公园管理局自身表述一致，本轮保留（若把新地岛算作欧洲则另有说法，属地理归属的模糊地带）。2008 年设园、后扩展至约占冰岛 14%、2019 年 UNESCO「冰与火的动态自然」均核实无误。
     seeing:
-      "Vatnajökull, in south-eastern Iceland, is the largest ice cap in Iceland and, by volume, the largest in Europe — about 7,700 km², covering roughly 8% of Iceland, and nearly a kilometre thick at its thickest. It is not a small glacier on a mountain but a whole ice sheet lying on a plateau, sending dozens of outlet glaciers down all around. Hvannadalshnúkur, on its southern rim, is 2,110 m — the highest point in Iceland.",
+      "Vatnajökull, in south-eastern Iceland, is the largest ice cap in Iceland and, by volume, the largest in Europe — about 7,500 to 7,600 km² as measured in 2023, covering roughly 7% of Iceland, nearly a kilometre thick at its thickest and still shrinking. It is not a small glacier on a mountain but a whole ice sheet lying on a plateau, sending dozens of outlet glaciers down all around. Hvannadalshnúkur, on its southern rim, is 2,110 m — the highest point in Iceland.",
     formation:
       "Vatnajökull exists because Iceland is at a high latitude and has heavy precipitation: the snow that falls on the plateau in winter does not melt off in summer, and year on year it accumulates and compacts into ice, which flows slowly downhill under its own weight. Beneath the ice cap are several active volcanoes (Grímsvötn, Bárðarbunga and others), whose geothermal heat and eruptions melt subglacial lakes and trigger glacial floods. In recent decades warming has thinned and shrunk Vatnajökull markedly, and its outlet-glacier snouts have generally retreated.",
     observation:
@@ -4728,8 +4779,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "langjokull": {
+    // seeing sources: 冰川面积：冰岛国家自然历史研究所冰川页，2023 年测得约 820 平方公里（原文「约 900」偏大约 9%、且无监测时点）。级别 1，2026-09-09 核。持续变化量，下一轮回来刷新。
+    //   https://www.natt.is/en/geology/water/glaciers
     seeing:
-      "Langjökull (\"long glacier\"), in Iceland's western highlands, is the second-largest ice cap in Iceland, about 900 km², fairly gentle and elongated in form. It is not far from Reykjavík or the \"Golden Circle\" attractions. Part of its meltwater feeds, through underground flow, Iceland's largest natural lake Þingvallavatn, and part joins the Hvítá river and finally pours over Gullfoss.",
+      "Langjökull (\"long glacier\"), in Iceland's western highlands, is the second-largest ice cap in Iceland, about 820 km² as measured in 2023, fairly gentle and elongated in form. It is not far from Reykjavík or the \"Golden Circle\" attractions. Part of its meltwater feeds, through underground flow, Iceland's largest natural lake Þingvallavatn, and part joins the Hvítá river and finally pours over Gullfoss.",
     formation:
       "Langjökull, like other ice caps, formed from year-round snow on the western highlands compacting and flowing slowly outward. Beneath it are mainly basaltic volcanic rocks and several fissure zones, with subglacial eruptions in the past. Langjökull is thinner than Vatnajökull, slightly lower in altitude, and more exposed to a maritime climate, so it is especially sensitive to warming — at the present melt rate, some studies estimate it could largely disappear within about a century and a half.",
     observation:
@@ -4743,14 +4796,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "hofsjokull": {
+    // seeing sources: 冰川面积：冰岛国家自然历史研究所冰川页，2023 年测得约 795 平方公里。级别 1，2026-09-09 核。持续变化量，下一轮回来刷新。
+    //   https://www.natt.is/en/geology/water/glaciers
     seeing:
-      "Hofsjökull, right in the centre of Iceland, is the third-largest ice cap in Iceland, about 800 km², shield-shaped in form. It is not as famous as Vatnajökull, but it is a key place: Iceland's longest river, the Þjórsá, and another large river, the Blanda, both rise on this ice cap. It lies roughly at the geographic centre of Iceland.",
+      "Hofsjökull, right in the centre of Iceland, is the third-largest ice cap in Iceland, about 795 km² as measured in 2023, shield-shaped in form. It is not as famous as Vatnajökull, but it is a key place: Iceland's longest river, the Þjórsá, and another large river, the Blanda, both rise on this ice cap. It lies roughly at the geographic centre of Iceland.",
+    // formation sources: 破火山口：直径约 6–7 公里、深约 600 米（雷达测冰数据）；史密森尼全球火山活动计划（GVP）记载中央破火山口本体无确认的全新世喷发，全新世熔岩喷发发生在周边侧翼裂隙带。经学术文献转引，等同级别 2，2026-09-09 核。「活动破火山口」这个说法已删。
+    //   https://www.sciencedirect.com/science/article/abs/pii/S0377027321001062
     formation:
-      "Hofsjökull sits on a shield volcano, with an active caldera about 7 km across hidden beneath the ice. The ice cap itself formed from highland snow compacting and flowing outward from the centre. Because there is volcanic geothermal heat below, the base of the ice cap is not frozen everywhere and there is local meltwater; there have also been subglacial eruptions and small glacial floods in the past. The ice cap has likewise been retreating in recent decades.",
+      "Hofsjökull sits on a shield volcano, with a caldera about 7 km across and some 600 m deep hidden beneath the ice — flank fissures around it erupted lava during the Holocene, but the caldera itself has no confirmed Holocene eruption. The ice cap itself formed from highland snow compacting and flowing outward from the centre. Because there is volcanic geothermal heat below, the base of the ice cap is not frozen everywhere and there is local meltwater; there have also been subglacial eruptions and small glacial floods in the past. The ice cap has likewise been retreating in recent decades.",
     observation:
       "From the air Hofsjökull is a near-circular, smooth-edged white ice sheet in Iceland's interior, surrounded by an endless grey-black volcanic highland desert and a few oasis-like patches of grassland (such as the old highland pastures around Nýidalur and Kerlingarfjöll). Several glacial rivers radiate out from the edge of the ice cap, and the one running south is the source of the Þjórsá.",
+    // distinguish sources: 同 formation 段的来源。**这一条是「同一条口径问题在一个条目里几乎总是出现两次」的又一例** —— formation 与 distinguish 各写了一次「活动破火山口」，修的时候要把整个条目搜一遍。
     distinguish:
-      "Hofsjökull and Langjökull are similar in size and both on the highlands, but Hofsjökull is a \"shield volcano plus ice cap\" combination with an active caldera beneath; Langjökull is underlain mainly by fissure zones. Compared with Vatnajökull, Hofsjökull is much smaller and stands more in isolation in the middle of the highland desert.",
+      "Hofsjökull and Langjökull are similar in size and both on the highlands, but Hofsjökull is a \"shield volcano plus ice cap\" combination with a caldera beneath; Langjökull is underlain mainly by fissure zones. Compared with Vatnajökull, Hofsjökull is much smaller and stands more in isolation in the middle of the highland desert.",
     concept:
       "Hofsjökull is a case study in a volcano beneath an ice cap: if a shield volcano is covered by an ice cap, the volcano's circular outline and the position of its caldera can often be inferred from slight depressions and crevasse patterns in the ice surface, and volcanic activity shows itself through subglacial meltwater and sudden floods. To recognise this system, look at whether the ice cap is an unusually regular circle and whether its edge shows signs of periodic drainage. A common misconception is that the ground beneath an ice cap must be an ordinary rock plateau.",
     history:
@@ -4780,6 +4838,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "skeidararsandur": {
+    // seeing sources: 外冲平原面积约 1000 平方公里（可查范围 1000–1300，属区间内的常见估值，3 级）；1996 年 Gjálp 冰下湖溃决洪峰约 5 万立方米每秒（学术文献 45,000–53,000，等同级别 2）；环岛公路最后一段 1974 年通车。2026-09-09 核，本轮无需改动。
+    //   https://www.lpi.usra.edu/meetings/polar2000/pdf/4021.pdf
     seeing:
       "Skeiðarársandur, on Iceland's south-east coast, lies between the Skeiðarárjökull outlet glacier of Vatnajökull and the sea — the largest glacial outwash plain (Icelandic sandur, \"sand plain\") in the world, about 1,000 km². It is an almost perfectly flat, vegetation-free black gravel desert cut by countless braided channels — a long straight section of Iceland's Ring Road runs right across it.",
     formation:
@@ -5020,6 +5080,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "bernese-alps": {
+    // seeing sources: 芬斯特拉尔峰 4274 米、少女峰车站 3454 米（1912 年通车）、艾格峰北壁 1938 年首登（Heckmair / Harrer / Kasparek / Vörg）、少女峰-阿莱奇 2001 年列入 UNESCO 并于 2007 年扩界（官方名 Swiss Alps Jungfrau-Aletsch，阿尔卑斯第一处世界自然遗产）：均核实无误，2026-09-09 核，本轮无需改动。
+    //   https://jungfrauregion.swiss/en/destination/sustainability/unesco-world-heritage-site/unesco-world-heritage-declared.html
     seeing:
       "The Bernese Alps, in west-central Switzerland, are the most heavily glaciated part of the whole Alps. On the north side the Eiger, Mönch and Jungfrau stand in a row directly above the green valleys below; further in are the Finsteraarhorn (4,274 m, the highest peak of the range) and a set of large glaciers. The Jungfrau–Aletsch region was the first natural World Heritage Site in the Alps.",
     formation:
@@ -5035,6 +5097,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "pennine-alps": {
+    // seeing sources: UIAA 官方 4000 米峰名录为 82 座（级别 2，https://www.theuiaa.org/4000-alps/），正文「约 80 座」可接受；杜富尔峰 4634 米 / 瑞士最高点 / 阿尔卑斯第二高峰、戈尔内格拉特铁路 1898 年通车均核实无误（3 级交叉印证）。2026-09-09 核，本轮无需改动。跨境按「瑞士与意大利交界」中性表述。
     seeing:
       "The Pennine Alps run along the border between Switzerland and Italy and are the stretch of the Alps with the densest concentration of 4,000 m peaks — most of the Alps' roughly 80 summits over 4,000 m are here. Among them, the Dufourspitze, the main peak of the Monte Rosa massif, is 4,634 m — the highest point in Switzerland and the second-highest in the Alps after Mont Blanc. The Matterhorn is also on this range (given its own entry).",
     formation:
@@ -5052,8 +5115,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "matterhorn": {
     seeing:
       "The Matterhorn (Italian: Cervino; French: Cervin) is 4,478 m high, standing on the border between Switzerland and Italy — the most recognisable mountain in the Alps, a near-isolated rock pyramid steep on all four faces. Its outline is printed on Swiss chocolate wrappers and countless postcards, and has become almost a symbol of the Alps.",
+    // formation sources: 峰顶岩石归属：当特布朗什岩席（Dent Blanche nappe），属奥地利阿尔卑斯推覆体，源自阿普利亚（亚德里亚）微板块 —— 该微板块在阿尔卑斯造山之前已从非洲大陆边缘裂离。3 级来源交叉印证（英文维基自身亦注明「非洲之峰」是流行化说法），2026-09-09 核。**「峰顶是非洲板块」这个说法流传极广，是典型的「听起来很有画面感所以没人去查」**。
+    //   https://en.wikipedia.org/wiki/Matterhorn
+    //   https://en.wikipedia.org/wiki/Austroalpine
+    //   高度 4478 米、意大利语 Cervino / 法语 Cervin、1865 年 Whymper 首登（七人四死）均核实无误；跨境按「瑞士与意大利交界」中性表述，不涉主权。
     formation:
-      "The Matterhorn is a \"horn\": an originally rounded mountain into which glaciers gouged cirques on the shaded sides from three or four directions, the cirque back walls retreating inward until they met in the centre, whittling the mountain into a sharp pyramid whose faces are the cirque walls. Its rock is also unusual — the summit block is a small slice of the African plate, lifted by nappe thrusting and lying on rock from the European plate below, with a clear boundary between them.",
+      "The Matterhorn is a \"horn\": an originally rounded mountain into which glaciers gouged cirques on the shaded sides from three or four directions, the cirque back walls retreating inward until they met in the centre, whittling the mountain into a sharp pyramid whose faces are the cirque walls. Its rock is also unusual — the summit block belongs to the Dent Blanche nappe and comes from the Apulian (or Adriatic) microplate, a separate block that had already rifted away from the African continental margin before Alpine mountain-building began. Nappe thrusting lifted it and set it on rock from the European plate below, with a clear boundary between them.",
     observation:
       "From the air the Matterhorn is a dark four-sided rock pyramid at the head of the Zermatt valley, its four ridges (edges) pointing roughly north-east, south-east, south-west and north-west, the four faces between them; the north and east faces are permanently shaded and iced. Around its foot is a ring of glaciers and scree, and below that the town of Zermatt.",
     distinguish:
@@ -5065,6 +5132,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhaetian-alps": {
+    // seeing sources: 伯尔尼纳峰高程：瑞士国家地图（swisstopo Landeskarte 1:25,000 图幅 1277）标 4048 米，精测 4048.6 米；瑞士国家旅游局写 4049 米。**两者是同一测量值的不同取整，不是矛盾**，正文保留 4049 米。2026-09-09 核。
+    //   https://www.myswitzerland.com/en-ca/destinations/piz-bernina-4049m-asl/
+    //   圣莫里茨 1928 / 1948 两届冬奥会、雷蒂亚铁路阿尔布拉线与伯尔尼纳线 2008 年列入 UNESCO（官方名 Rhaetian Railway in the Albula / Bernina Landscapes）均核实无误（1 级 https://whc.unesco.org/en/list/1276/ ）。
     seeing:
       "The Rhaetian Alps (also called the Bernina range), in the canton of Graubünden in south-eastern Switzerland near Italy, contain Piz Bernina — 4,049 m, the only 4,000 m peak in the whole Eastern Alps and the easternmost 4,000er in the Alps. East of here the Alps have no mountains this high. The range holds several glaciers, and below it are the Engadine valley and high resorts such as St Moritz.",
     formation:
@@ -5080,6 +5150,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gotthard-massif": {
+    // seeing sources: 圣哥达基线隧道 57 公里、2016 年通车属广泛公认的工程地理事实，多方独立信源一致；圣哥达作为莱茵河 / 罗讷河 / 罗伊斯河 / 提契诺河分水枢纽的描述核实一致。2026-09-09 核，本轮无需改动。
     seeing:
       "The Gotthard Massif, right in the centre of Switzerland, is the \"water-parting hub\" of Europe: the Rhine, the Rhône, the Reuss and the Ticino all rise around it and then flow to the North Sea, the Mediterranean and the Adriatic. It is not the highest of mountains, but because it sits at the throat of north-south travel, the Gotthard Pass has been one of the most important routes across the Alps since the Middle Ages.",
     formation:
@@ -5095,6 +5166,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "jura-mountains": {
+    // seeing sources: 滕德山 1679 米（3 级）；「侏罗纪」得名于汝拉山为地学界公认典故；拉绍德封 / 力洛克钟表城市规划 2009 年列入 UNESCO。2026-09-09 核，本轮无需改动。
     seeing:
       "The Jura Mountains run in an arc along Switzerland's north-western border (and into France) — a set of parallel ridges of moderate height, covered in forest and pasture, the highest (Mont Tendre, on the Swiss side) only 1,679 m. They are far lower and gentler than the Alps, the \"local mountains\" where the Swiss go walking and skiing at weekends. The geological period \"Jurassic\" is named after the limestone here.",
     formation:
@@ -5110,6 +5182,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "glarus-thrust": {
+    // seeing sources: 位移量约 35 公里、Verrucano 二叠纪（2.5–3 亿年）、2008 年列入（官方名 Swiss Tectonic Arena Sardona）：与 IUCN 提交 UNESCO 的官方技术评估文件数字精确吻合（级别 1）。其他学术田野报告对同一断层面给出 35–50 公里不等的估算，35 公里落在常见范围内且与官方评估一致。「格拉鲁斯双重褶皱」是 Escher 1866 年的历史性错误解释、1884 年由 Bertrand 纠正为逆冲构造 —— 这段认识史核实无误。2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1179/
     seeing:
       "The Glarus Thrust (the mountains around it are called the \"Tectonic Arena Sardona\", a World Heritage Site), in eastern Switzerland around the canton of Glarus. Its most striking feature: on the mid-slopes of several mountains there is a near-horizontal, sharp line running right across the hillside — above the line, dark red old rock; below it, grey young rock. This line is the thrust fault itself — the surface along which a large slice of crust was pushed — cut open and displayed on the mountainside.",
     formation:
@@ -5135,11 +5209,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Monte San Giorgio is unlike an ordinary mountain — its value is not in its landform (an unremarkable hill) but in the \"time capsule\" in its rock. Like other famous fossil sites (Chengjiang in China, the Burgess Shale in Canada), a special anoxic setting allowed soft parts to be preserved; Monte San Giorgio's distinction is a complete record of one Triassic marine ecosystem.",
     concept:
       "Monte San Giorgio is a case study in a Lagerstätte (a site of exceptional preservation): most organisms are decomposed after death and leave only hard shells; only in special settings — anoxic, rapidly buried, undisturbed — can skin, muscle and fin outlines be preserved, opening a \"window\" onto an ancient ecosystem. To recognise such a site, look at whether the fossils are numerous, diverse and include soft-bodied forms. A common misconception is that fossils form everywhere.",
+    // history sources: 化石分类：提契诺鳄（Ticinosuchus）是陆生镶嵌踝类主龙，属贝萨诺组里少见的陆生标本；贝萨诺龙（Besanosaurus）是鱼龙类、海生。原文把两者并称「海生爬行动物」是分类错误，已分开。3 级交叉印证，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Ticinosuchus
+    //   海拔 1097 米、化石层为中三叠世（UNESCO 口径 2.45–2.30 亿年前）、2003 年瑞士一侧列入、2010 年扩展到意大利一侧均核实无误（1 级 https://whc.unesco.org/en/list/1090/ ）。
     history:
-      "Fossil excavation at Monte San Giorgio began in the 1850s, and over more than a century tens of thousands of specimens have been recovered, including marine reptiles such as Ticinosuchus and Besanosaurus, now in museums in Zurich, Milan and elsewhere. The Swiss side was inscribed as a World Heritage Site in 2003, extended to the Italian side in 2010.",
+      "Fossil excavation at Monte San Giorgio began in the 1850s, and over more than a century tens of thousands of specimens have been recovered, including the land-living archosaur Ticinosuchus and marine reptiles such as the ichthyosaur Besanosaurus, now in museums in Zurich, Milan and elsewhere. The Swiss side was inscribed as a World Heritage Site in 2003, extended to the Italian side in 2010.",
   },
 
   "saentis": {
+    // seeing sources: 森蒂斯峰 2502 米、山顶气象站 1882 年建成：多个独立信源一致（3 级），2026-09-09 核，本轮无需改动。
     seeing:
       "Säntis, in north-eastern Switzerland, is the highest peak of the Alpstein limestone massif, 2,502 m. It is not very high, but because it stands isolated between the Swiss Plateau and the main Alps with no higher mountains around it, it is very prominent — on an exceptionally clear day the summit is said to give views into six countries (Switzerland, Germany, Austria, Liechtenstein, France, Italy). A weather station has stood on the summit since 1882.",
     formation:
@@ -5155,8 +5233,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aletsch-glacier": {
+    // seeing sources: 冰川长度 / 面积 / 厚度：瑞士冰川监测网 GLAMOS 官方长度变化数据集（level 1，直接下载核对）显示 2013–2023 年逐年退缩（2016–17 年度 80.4 米、2022–23 年度 36.5 米），2000–2023 年年均约 40 米；面积约 76 平方公里（GLAMOS，2023 年测量，经德文维基转引）；康科迪亚广场冰厚各来源 800–940 米，正文取 800–900 米区间。2026-09-09 核。
+    //   https://doi.glamos.ch/data/lengthchange/lengthchange_2024_r2024.zip
+    //   https://www.swissinfo.ch/eng/glaciers-permafrost/the-aletsch-glacier-will-disappear-by-2100-according-to-an-italian-study/89865724
+    //   ⚠️ 会过期（C6-j）：**GLAMOS 年度冰川公报通常在每年秋季（10 月前后）发布上一测量年度（10 月至次年 9 月）的数据** —— 下一轮回来刷新。2001 年列入 UNESCO 世界遗产核实无误。
     seeing:
-      "The Great Aletsch Glacier, in the Bernese Alps, is the largest glacier in the whole Alps — about 20 km long and around 78 km² in area. It flows from the high snowfields around the Jungfrau, three ice streams merging at \"Konkordiaplatz\" into one broad ice river, where the ice is about 800 m thick. Dark \"medial moraine\" stripes run along its surface, especially clear from the air. It is the heart of the Jungfrau–Aletsch World Heritage Site.",
+      "The Great Aletsch Glacier, in the Bernese Alps, is the largest glacier in the whole Alps — about 20 km long and around 76 km² in area as measured in 2023, and still retreating — Swiss glacier monitoring puts the average retreat between 2000 and 2023 at about 40 m a year. It flows from the high snowfields around the Jungfrau, three ice streams merging at \"Konkordiaplatz\" into one broad ice river, where the ice is about 800 to 900 m thick. Dark \"medial moraine\" stripes run along its surface, especially clear from the air. It is the heart of the Jungfrau–Aletsch World Heritage Site.",
     formation:
       "The Aletsch Glacier forms from snow high in the mountains that accumulates faster than it melts, compacting into ice year by year and flowing down the valley under its own weight. Its accumulation area (firn basin) is large and high, which is why it can form such a long tongue. As it flows it scrapes the valley walls and floor, and lines the debris from its tributary glaciers into lengthwise \"medial moraine\" bands. In recent decades warming has clearly retreated its terminus and thinned its surface.",
     observation:
@@ -5172,8 +5254,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "rhone-glacier": {
     seeing:
       "The Rhône Glacier, in central Switzerland near the Furka Pass, is the source of the Rhône — the meltwater that flows from its terminus runs south-west through the canton of Valais, into Lake Geneva, then via Lyon in France and finally to the Mediterranean. It is famous for a blue ice grotto carved into it each summer for visitors, and it is one of the most vivid \"showcase windows\" of Alpine glacier retreat.",
+    // formation sources: 末端退缩：GLAMOS 官方长度变化数据集（级别 1，直接下载核对）—— 自 1874 年有系统记录以来年均约 8.5 米、累计逾 1 公里；2022–23 测量年度单年退缩 95.5 米，是 2003–2016 年间任何一年的两三倍。2026-09-09 核。原文「近一个多世纪后退约 1300 米」数值不错，但没有起算年与截止年。
+    //   https://doi.glamos.ch/data/lengthchange/lengthchange_2024_r2024.zip
+    //   https://de.wikipedia.org/wiki/Rhonegletscher
+    //   ⚠️ 会过期（C6-j）：随 GLAMOS 年度公报（每年秋季）刷新。
     formation:
-      "The Rhône Glacier, like other valley glaciers, forms from mountain snow compacting and flowing down the valley. In the ice ages it was much larger — during the last ice age the Rhône Glacier reached as far as present-day Lyon in France, gouging the whole Rhône valley into a deep trough. After the ice retreated, the glacier drew back all the way up to its present high position. Over the last century and more its terminus has retreated about 1,300 m and its body has thinned dramatically; in recent years white insulating blankets are laid over part of the ice in summer to slow the melt.",
+      "The Rhône Glacier, like other valley glaciers, forms from mountain snow compacting and flowing down the valley. In the ice ages it was much larger — during the last ice age the Rhône Glacier reached as far as present-day Lyon in France, gouging the whole Rhône valley into a deep trough. After the ice retreated, the glacier drew back all the way up to its present high position. Since systematic records began in 1874 its terminus has retreated an average of about 8.5 m a year, more than a kilometre in total, and its body has thinned dramatically; the pace has clearly picked up in recent years — nearly 100 m in the 2022–23 measurement year alone; in recent years white insulating blankets are laid over part of the ice in summer to slow the melt.",
     observation:
       "From the air the Rhône Glacier is a body of ice hanging on the mountainside at the head of the Goms valley, its terminus grey rubble and a small proglacial lake of ponded meltwater, from which the water flows out as the first stretch of the Rhône. Between the terminus and the valley road (the Furka Pass road) is a large expanse of smooth, near-vegetation-free rock exposed from under the ice only in recent decades — still carrying the scratches ground by the glacier.",
     distinguish:
@@ -5185,10 +5271,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gorner-glacier": {
+    // seeing sources: 面积与排名：GLAMOS 2023 年测得戈尔纳冰川系统约 35 平方公里，为阿尔卑斯继阿莱奇之后第二大的连片冰川区；这个排名是在 2019 年夏主体与格伦茨冰川分离之后重新测量仍成立的。3 级转引 GLAMOS 数据，2026-09-09 核。
+    //   https://de.wikipedia.org/wiki/Gornergletscher
+    //   ⚠️ 会过期（C6-j）：随 GLAMOS 年度公报（每年秋季）刷新。戈尔内格拉特铁路 1898 年通车、19 世纪戈尔纳湖冰坝周期性溃决均核实无误。
     seeing:
-      "The Gorner Glacier, south-east of Zermatt between the Matterhorn and Monte Rosa, is a whole system of several glaciers merged together — by area the second-largest glacier area in the Alps after the Aletsch. The Gornergrat railway (3,089 m) faces it directly and is a classic spot for viewing this glacier and the ring of 4,000 m peaks around it. In recent decades the Gorner Glacier has retreated fast, and the confluence of its tributary glaciers has separated.",
+      "The Gorner Glacier, south-east of Zermatt between the Matterhorn and Monte Rosa, is a whole system of several glaciers merged together — by area the second-largest contiguous glacier area in the Alps after the Aletsch — about 35 km² as measured by Swiss glacier monitoring in 2023. The Gornergrat railway (3,089 m) faces it directly and is a classic spot for viewing this glacier and the ring of 4,000 m peaks around it. In recent decades the Gorner Glacier has retreated fast: in the summer of 2019 its main body parted from the larger Grenzgletscher, and the confluence has stayed apart since.",
     formation:
       "The ice of the Gorner Glacier comes from the firn basins of a ring of 4,000 m peaks — Monte Rosa, the Lyskamm, the Breithorn and others — several ice streams converging to the north-west and flowing down. The high mountains here have hard rock, high altitude and heavy snow, so a large glacier area can persist. Like other glaciers it scrapes the valley and carries debris as it flows; several medial moraines run between the merged ice streams.",
+    // observation sources: 分离时点：2019 年夏，戈尔纳冰川主体与格伦茨冰川分离。3 级转引 GLAMOS，2026-09-09 核。
+    //   https://de.wikipedia.org/wiki/Gornergletscher
     observation:
       "From the air the Gorner Glacier is a white network of ice with several \"tributaries\" at the head of the Zermatt valley, ringed by the dark rock peaks of the Matterhorn, Monte Rosa and others; several parallel dark medial-moraine stripes run along the ice, and the terminus is grey rubble and a steadily growing proglacial lake. The little red rack-railway train and viewing platform on the Gornergrat ridge face this ice directly.",
     distinguish:

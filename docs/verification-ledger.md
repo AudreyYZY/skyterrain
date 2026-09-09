@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 37a5e52
+lastVerifiedCommit: 7f08e25
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,9 @@ lastVerifiedCommit: 37a5e52
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-09 | terrain · 英国（高地 / 国家公园 / 沼地 / 海崖）（2026-09-09 地形核实：英国第 1 批 12 篇） | 28 | 9 / 19 / 0 | 当场修 28 条；新开 issue 0、关闭 0 |
+| 2026-09-09 | terrain · 瑞士（阿尔卑斯山系 / 冰川 / 逆冲断层 / 化石山）（2026-09-09 地形核实：瑞士第 1 批 12 篇） | 13 | 8 / 5 / 0 | 当场修 13 条；新开 issue 0、关闭 0 |
+| 2026-09-09 | terrain · 冰岛（火山 / 冰帽 / 裂谷 / 外冲平原）（2026-09-09 地形核实：冰岛第 1 批 12 篇） | 17 | 5 / 12 / 0 | 当场修 17 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel/orlando, travel/atlanta, travel/st-johns, travel/paris（2026-09-09 C6i-b 首轮：同条目两段引同一档口径、数字对不上（4 城）） | 7 | 0 / 7 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain-content 6 篇 × 6 板块：尼特米卢克/玻璃屋山/大澳大利亚湾/南邦尖峰石阵/威兰德拉湖区/甘比尔山 —— 澳大利亚 34 篇至此全部有核实留痕（地形讲解核实 · 批 15（澳大利亚收尾 6 篇）） | 7 | 3 / 4 / 0 | 当场修 7 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel-content 美加条目的 identity / howItWorks 人口口径（一手 CSV 全表核对）（城市人口口径核实 · 美国 7 城 + 加拿大 7 城） | 22 | 0 / 22 / 0 | 当场修 22 条；新开 issue 0、关闭 0 |

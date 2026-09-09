@@ -3726,7 +3726,7 @@ const SOUTHERN_UPLANDS: TerrainEntry = {
 const SNOWDONIA: TerrainEntry = {
   id: "snowdonia",
   nameZh: "斯诺登尼亚",
-  nameEn: "Snowdonia / Eryri",
+  nameEn: "Eryri / Snowdonia",
   category: "mountain_system",
   regionId: "europe",
   country: "uk",
@@ -3736,13 +3736,13 @@ const SNOWDONIA: TerrainEntry = {
   viewFrom: 90,
   viewScale: 1.5,
   label: { lon: -4.05, lat: 53.05, rotation: -50 },
-  source: "斯诺登尼亚 / Eryri：威尔士西北部，寒武纪—奥陶纪沉积岩与火山岩强烈冰蚀的山地；斯诺登峰1085m 为威尔士暨英格兰-威尔士最高峰（BGS / Natural Resources Wales）",
+  source: "Eryri（旧英语名 Snowdonia，2023-11 起国家公园管理局以威尔士语名为官方名；核实 2026-09-09）：威尔士西北部，寒武纪—奥陶纪沉积岩与火山岩强烈冰蚀的山地；斯诺登峰1085m 为威尔士暨英格兰-威尔士最高峰（BGS / Natural Resources Wales）",
 };
 
 const BRECON_BEACONS: TerrainEntry = {
   id: "brecon-beacons",
   nameZh: "布雷肯比肯斯",
-  nameEn: "Brecon Beacons / Bannau Brycheiniog",
+  nameEn: "Bannau Brycheiniog / Brecon Beacons",
   category: "hills",
   regionId: "europe",
   country: "uk",
@@ -3752,7 +3752,7 @@ const BRECON_BEACONS: TerrainEntry = {
   viewFrom: 180,
   viewScale: 1.6,
   label: { lon: -3.44, lat: 51.90, rotation: -6 },
-  source: "布雷肯比肯斯 / Bannau Brycheiniog：南威尔士的老红砂岩（泥盆纪）陡崖，北坡有冰蚀凹地；彭伊范山886m 为南不列颠最高点；国际暗夜保护区（Natural Resources Wales / BGS）",
+  source: "Bannau Brycheiniog（旧英语名 Brecon Beacons，2023-04 起为官方名；核实 2026-09-09）：南威尔士的老红砂岩（泥盆纪）陡崖，北坡有冰蚀凹地；彭伊范山886m 为南不列颠最高点；国际暗夜保护区（Natural Resources Wales / BGS）",
 };
 
 const LAKE_DISTRICT: TerrainEntry = {
