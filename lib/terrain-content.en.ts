@@ -6190,11 +6190,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Aquitaine Basin and the Paris Basin are \"sister basins\", but the Aquitaine is more asymmetric — its southern edge was strongly reworked by Pyrenean mountain-building (folded, uplifted), the northern edge quiet — so it does not have the Paris Basin's concentric-ring form. It and the coastal Landes sand are two different things: the basin is a deep sedimentary structure, the Landes a young layer of wind-blown sand over the basin's western surface. To judge how much a basin has been reworked by mountain-building, look at whether the strata on its mountain-facing side are folded and uplifted.",
     concept:
       "The Landes coast is a sample for understanding \"dunes damming water into marsh\": the prevailing west wind blows beach sand steadily inland, building a shore-parallel, slowly migrating dune belt; the dunes block the drainage of the plain behind, and surface water ponds into large marshes and lagoons. To tell whether a coastal marsh formed this way, look at whether a dune belt separates it from the sea and whether the dunes are still migrating inland. In the 19th century France fixed the drifting sand of the Landes with large-scale pine planting.",
+    // history sources: 拉斯科壁画年代：法国文化部 LAsCO 项目 2018–2021 年重新测年，约 21,500–21,000 年前（另一组数据给 23,500–22,000 年前）。级别 1（官方考古页），2026-09-09 核。原文的「约 1.7 万年前」是长期流传的旧值，老出四五千年。
+    //   https://archeologie.culture.gouv.fr/lascaux/en/dating-figures-lascaux
+    //   **这一条和切达人（9000 → 1 万年前）是同一形状**：数字看起来只是「一个年代」，背后换的是一整代测年方法 —— 靠年份格式看不出来，只能回官方页面查。
+    //   阿基坦为法国第二大沉积盆地（陆上约 6.6 万平方公里）、1152–1453 年属英格兰王室、1857 年排水造林立法：均核实无误。
     history:
-      "Aquitaine (Guyenne) was long held by the English crown in the Middle Ages (1152–1453), and the Bordeaux wine trade grew up then, shipped across the Atlantic to England. Before the 19th century the Landes was a poor, marshy heath where shepherds tended flocks on stilts in the wetland; from 1857 national law required drainage and pine planting, and over a few decades it became a vast pine forest. The Lascaux cave paintings (about 17,000 years old) are in the Dordogne valley on the basin's eastern edge.",
+      "Aquitaine (Guyenne) was long held by the English crown in the Middle Ages (1152–1453), and the Bordeaux wine trade grew up then, shipped across the Atlantic to England. Before the 19th century the Landes was a poor, marshy heath where shepherds tended flocks on stilts in the wetland; from 1857 national law required drainage and pine planting, and over a few decades it became a vast pine forest. The Lascaux cave paintings — redated by France's culture ministry in 2018–2021 to about 21,000 years old — are in the Dordogne valley on the basin's eastern edge.",
   },
 
   corsica: {
+    // seeing sources: 钦托山 2706 米；花岗岩（西南）与片岩（东北）两半的成因表述核实无误。**零争议红线本轮专门复核：通过** —— `history` 段止于 1768 年并入法国、热那亚塔与 GR20 徒步线路，不碰现代自治/独立议题（这是仓库对科西嘉定过的口径）。2026-09-09 核，本轮无需改动。
     seeing:
       "Corsica is a mountainous Mediterranean island, a region of France. A north–south central ridge runs almost the length of the island, with more than twenty peaks over 2,000 m, the highest, Monte Cinto, at 2,706 m — by area, Corsica is the most mountainous island in the Mediterranean. The coast varies greatly, from the cliff peninsula in the north, to the red granite bays of the west (Piana), to the white limestone cliffs of the south (Bonifacio). For its high mountains, dense forest and fine coast it is called the \"Isle of Beauty\".",
     formation:
@@ -6210,6 +6215,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "loire-river": {
+    // seeing sources: 卢瓦尔河约 1006–1013 公里、法国最长（3 级多口径一致）。UNESCO 第 933 号「Loire Valley between Sully-sur-Loire and Chalonnes」2000 年列入，**只覆盖约 280 公里的一段**（级别 1）—— 正文已正确限定，本轮复核通过。2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/933/
     seeing:
       "The Loire is the longest river in France, about 1,006 km. It rises at a small mountain called Gerbier de Jonc on the eastern edge of the Massif Central, flows north at first, then near the edge of the Paris Basin makes a nearly 90-degree bend to the west, crossing the heart of France through Orléans, Tours and Nantes to reach the Atlantic at Saint-Nazaire. A middle stretch is famous for the Renaissance châteaux along its valley (a World Heritage Site).",
     formation:
@@ -6225,6 +6232,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhone-river": {
+    // seeing sources: 按流量为法国最大的河；总长约 812–813 公里（源头在瑞士），法国境内段约 545 公里。**这个「法国段」口径与同批 seine-river 条目改后的排名限定已对齐** —— 两条河的表述现在用同一把尺子。2026-09-09 核，本轮无需改动。
     seeing:
       "The Rhône is the largest river in France by volume. It rises at the Rhône Glacier in the Swiss Alps, passes through Lake Geneva, and on entering France takes in the almost equally large Saône at Lyon, then runs south along a straight, deep north–south valley between the Alps and the Massif Central, splitting into two arms at Arles to enclose the Camargue delta and reaching the Mediterranean. The French section is about 545 km, with a large drop and full flow — one of the most fully developed rivers in Europe for hydropower and navigation.",
     formation:
@@ -6240,8 +6248,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "seine-river": {
+    // seeing sources: 法国河流长度排名**取决于口径**：按境内河长 —— 卢瓦尔 1006 > 塞纳 775–776 > 罗讷法国段 545 > 加龙 529；按含瑞士段的全长 —— 罗讷 812 公里排在塞纳之前。3 级来源两个独立口径一致，未找到更高级别的官方排名表，2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Liste_de_fleuves_de_France
+    //   **做法不是把「第三」改成「第二」，而是补上口径** —— 两种排法都有依据，原文缺的是那句限定（`C1b` 的标准形状）。本库 `rhone-river` 条目用的是「法国段约 545 公里」，两处口径已对齐。
     seeing:
-      "The Seine is the third-longest river in France, about 775 km, entirely within the Paris Basin. It rises at an unremarkable spring on the Burgundy plateau, takes in the Yonne, the Marne, the Oise and other tributaries, runs through Paris, then through a deeply incised, strongly meandering valley around Rouen, and reaches the English Channel at Le Havre. Its gradient is very low and its flow steady year-round — historically the golden waterway to Paris.",
+      "The Seine is about 775 km long — the second-longest river in France by length within the country (the Rhône is longer if its Swiss section is counted), entirely within the Paris Basin. It rises at an unremarkable spring on the Burgundy plateau, takes in the Yonne, the Marne, the Oise and other tributaries, runs through Paris, then through a deeply incised, strongly meandering valley around Rouen, and reaches the English Channel at Le Havre. Its gradient is very low and its flow steady year-round — historically the golden waterway to Paris.",
     formation:
       "The Seine's network is a direct product of the Paris Basin's \"bowl\" structure: the basin's strata dip toward the centre, so the rivers follow that dip along the soft layers, converging radially on the basin centre (near Paris), then flowing out together toward the lower ground to the northwest. Downstream around Rouen the Seine cuts into harder chalk, leaving a string of large meanders set between steep cliffs (\"incised meanders\") — the result of the river cutting down while continuing to meander on a slowly uplifting block.",
     observation:
@@ -6255,6 +6266,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   ecrins: {
+    // seeing sources: 埃克兰峰 4102 米、勃朗峰山群之外法国唯一的四千米级山峰（这个限定是必要的、正文写对了）；埃克兰国家公园 1973 年成立；1864-06-25 首登。**分类复核：国家公园，不是 PNR。** 2026-09-09 核，本轮无需改动。
     seeing:
       "The Massif des Écrins in the Dauphiné region of southeastern France is a high mountain area of pure crystalline rock (granite, gneiss) in the French Alps. Its highest peak, the Barre des Écrins at 4,102 m, is the only summit over 4,000 m in France outside the Mont Blanc massif, and the highest point lying entirely within France. The area is steep, heavily glaciered, with almost no road through it, and is protected by the Écrins National Park.",
     formation:
@@ -6270,6 +6282,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vanoise: {
+    // seeing sources: 瓦努瓦兹国家公园 1963-07-06 成立，法国第一个国家公园（为保护阿尔卑斯羱羊而设，与意大利大帕拉迪索毗邻）；大卡斯峰 3855 米。**分类复核：国家公园，不是 PNR。** 2026-09-09 核，本轮无需改动。
     seeing:
       "The Vanoise in the French Alps lies between the two large valleys of the Tarentaise and the Maurienne. Its high point is the Grande Casse at 3,855 m. It has one of the larger glacier fields on the French side of the Alps, many mountain lakes, and is the main habitat in France for the Alpine ibex. In 1963 the Vanoise became France's first national park.",
     formation:
@@ -6344,6 +6357,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cantal-volcano": {
+    // seeing sources: 坎塔尔活动期约 1300 万–200 万年前（主峰期 850 万–700 万年前），**与同轮刚改好的 massif-central 条目对齐** —— 那条原来把坎塔尔错塞进「上新世到几千年前」，本条目自己写的年代反而是对的，两处现在一致。底面直径约 70 公里、底面积约 2500–2770 平方公里；「欧洲最大的层火山之一」已带「之一」限定，**判定不收紧**。3 级转引学术论文，2026-09-09 核。
     seeing:
       "The Cantal volcano in the southern Massif Central is an old stratovolcano long extinct and eroded for millions of years. Its base is about 70 km across and the volume of its volcanic rock is over 400 km³ — by base area, one of the largest stratovolcanoes in Europe. The original cone (possibly 3,000–4,000 m high when active) is now just a ring of residual peaks at the centre — the Plomb du Cantal (1,855 m), the Puy Mary and others — around a hollowed-out core. Around it, like a cut cake, are basalt tablelands spread out radially.",
     formation:
@@ -6359,6 +6373,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "monts-dore": {
+    // seeing sources: 多尔山（盖里段）约 309 万–146 万年前、桑西层火山约 110 万–23 万年前，合并后与正文的「300 万到 25 万年前」吻合。桑西 1885 米，中央高原最高点（另有 1886 米的说法，**取整差异、判定不改**）。3 级转引学术文献，2026-09-09 核。
     seeing:
       "The Monts Dore (also called the Massif du Sancy) in the Massif Central, between the younger Chaîne des Puys and the older Cantal volcano, is a group of stratovolcanoes active between about 3 million and 250,000 years ago. Erosion has cut the cone into a ring of sharp residual peaks, the highest, the Puy de Sancy at 1,885 m, being the high point of the whole Massif Central. The two headwater streams of the Dordogne (the Dore and the Dogne) rise and meet here.",
     formation:
@@ -6374,6 +6389,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "grands-causses": {
+    // seeing sources: 台地海拔 800–1200 米。**UNESCO 分类复核：「Causses and Cévennes」2011-06-28 以「活态演进的文化景观」列入，不是自然遗产 —— 本条目与 cevennes 条目都写的「文化景观」，两处都对。**（级别 1）2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1153/
     seeing:
       "The Grands Causses are several limestone tablelands about 800 to 1,200 m high on the southern edge of the Massif Central — the Causse Méjean, the Causse du Larzac, the Causse Noir, the Causse de Sauveterre. The tops are open, dry, with almost no surface rivers, sheep-grazing country of short grass and juniper in the rock cracks. The tablelands are cut by the Tarn, the Jonte and the Dourbie into gorges hundreds of metres deep and near-vertical, and the gorges, by contrast, are green and wooded with villages.",
     formation:
@@ -6389,6 +6406,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vercors: {
+    // seeing sources: 韦科尔 1970-10-16 设立，**PNR 不是国家公园，正文没写错**（本批 grands-causses、landes-de-gascogne 同样是 PNR，三处都对）；面积约 227,621 公顷。贝尔热竖井 1953–1963 年为世界最深洞穴（−1122 米），后被比利牛斯的圣马丁洞取代 —— 正文写「1950s–60s 一度」准确。2026-09-09 核，本轮无需改动。
     seeing:
       "The Vercors, southwest of Grenoble, is a limestone \"Pre-Alps\" tableland. Its eastern edge is a kilometre-high cliff facing Grenoble and the high Alps, looking like a city wall from the plain. The interior is cut by the Bourne and other rivers into deep gorges (the \"Grands Goulets\" is the narrowest stretch, with the road cut into the rock wall). The surface is large forests and high pasture, and below is one of the best-developed cave systems in France.",
     formation:
@@ -6404,6 +6422,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   cevennes: {
+    // seeing sources: 洛泽尔山 1699 米、埃古阿勒山 1565–1567 米；塞文山国家公园 1970 年成立；UNESCO 2011 年「科斯与塞文」**文化景观**（非自然遗产）；1878 年史蒂文森携驴穿越、《Travels with a Donkey in the Cévennes》。**零争议红线本轮专门复核：通过** —— 宗教战争与二战抵抗运动都只作简短事实陈述、不做评价。2026-09-09 核，本轮无需改动。
     seeing:
       "The Cévennes are the southeastern edge of the Massif Central facing the Mediterranean — a long ridge of granite and schist cut deep by countless streams into a comb of steep spurs and deep valleys. The highest, Mont Lozère, is 1,699 m, and Mont Aigoual 1,565 m. It is the boundary between an Atlantic and a Mediterranean climate: the northwest slope mild and misty, the southeast slope prone to violent autumn rainstorms. The Cévennes National Park was created in 1970.",
     formation:
@@ -6437,6 +6456,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ardeche-gorge": {
+    // seeing sources: 阿尔克桥宽约 59 米、高约 34 米（个别来源的 54×60 米属测量口径差异，**判定不改**）；肖维洞 1994-12-18 发现、壁画约 3.6 万年前、2014-06 列入 UNESCO；峡谷 1980 年设国家级自然保护区（约 1572 公顷）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Gorges de l'Ardèche in southeastern France, on the edge of the Massif Central facing the Mediterranean, is a stretch about 30 km long and up to about 300 m deep that the Ardèche River has cut into a limestone tableland. At the gorge entrance stands the Pont d'Arc — a natural arch about 59 m wide and 34 m high, with the river running through the opening. The walls are white limestone, the floor a green river good for canoeing.",
     formation:
@@ -6462,8 +6482,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Landes de Gascogne and the Aquitaine Basin are a \"surface and depth\" relationship: the basin is a sedimentary structure kilometres deep, the Landes just a thin young layer of wind-blown sand over the basin's western surface. It is unlike a true natural forest — the Landes' pines were planted by hand in the 19th century, a single species in regular rows, essentially a \"forestry plantation\". To tell whether a forest is planted, look at whether the species is uniform and whether there are regular rows and forest roads.",
     concept:
       "The Landes are a sample for understanding \"how an impermeable layer causes marsh\": even where rainfall is not high, if the surface is extremely flat and there is an impermeable hard crust below (here the iron pan, alios), rain can neither soak in nor run off and ponds into large marshes on the surface. To fix it, you either break through the crust or dig ditches to drain the water — the 19th-century Landes took the latter route. To tell whether a marsh is this kind, look for an impermeable layer below it and whether the ground slope is near zero.",
+    // history sources: 1949 年 8 月的朗德大火：烧毁约 5.2 万公顷、82 人死亡；朗德松林总面积约 100 万–140 万公顷，占比约 3.7%–5%。3 级（法语维基，给出具体公顷数），2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Incendie_de_la_for%C3%AAt_des_Landes_de_1949
+    //   **「约五分之一」是把两件事合成了一件**：1937–1949 年**累计**火灾超 45 万公顷、约占森林四成，那才是接近「五分之一」量级的数 —— 单次大火被安上了累计数据的比例。与埃特勒塔那条（区域平均值被安在一段崖壁上）同属「一个真数字用错了对象」。
+    //   面积约 1 万平方公里、1857 年排水造林立法、PNR 1970-10-16 设立：均核实无误。
     history:
-      "Before the 19th century the Landes was one of the few \"stilt-shepherding\" lands in Europe — shepherds on wooden stilts over a metre tall watched their flocks in knee-deep wetland and knitted wool as they went. In 1857 France legislated compulsory drainage and afforestation, and over a few decades the Landes became a vast pine forest, an important source of timber and pine resin (turpentine, rosin) for France. A great fire in 1949 burned about a fifth of the forest, after which a tight network of firebreaks was built. The Landes de Gascogne Regional Nature Park was created in 1970.",
+      "Before the 19th century the Landes was one of the few \"stilt-shepherding\" lands in Europe — shepherds on wooden stilts over a metre tall watched their flocks in knee-deep wetland and knitted wool as they went. In 1857 France legislated compulsory drainage and afforestation, and over a few decades the Landes became a vast pine forest, an important source of timber and pine resin (turpentine, rosin) for France. A great fire in 1949 burned about 50,000 hectares and killed 82 people, after which a tight network of firebreaks was built. The Landes de Gascogne Regional Nature Park was created in 1970.",
   },
 
   calanques: {
@@ -6539,8 +6563,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cirque-de-gavarnie": {
+    // seeing sources: 加瓦尔尼大瀑布落差 422 米，通行表述为**「法国本土落差最大的瀑布」**；挪威文诺斯瀑布约 860 米等远超它，「欧洲最大之一」不成立。3 级，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Gavarnie_Falls
+    //   **这一条和同批 `verdon-gorge`「欧洲最大的峡谷」是同型** —— 都是把一个「法国范围内成立」的说法抬到欧洲。
+    //   UNESCO「Pyrénées – Mont Perdu」1997 年列入（自然 + 文化双重遗产，1999 年向北扩展纳入法方 Gèdre 公社）；跨境按「法国与西班牙交界一带」中性表述、不描述边界线、不表述主权，**红线复核通过**。
     seeing:
-      "The Cirque de Gavarnie, in the central Pyrenees near the French–Spanish border, is a huge semicircular valley. Three tiers of rock wall rise from the floor, the highest about 1,500 m above it, ringing an \"amphitheatre\" several kilometres across — Victor Hugo called it \"the Colosseum of nature\". Down the wall drops the Grande Cascade de Gavarnie, about 420 m — one of the highest-drop waterfalls in Europe.",
+      "The Cirque de Gavarnie, in the central Pyrenees near the French–Spanish border, is a huge semicircular valley. Three tiers of rock wall rise from the floor, the highest about 1,500 m above it, ringing an \"amphitheatre\" several kilometres across — Victor Hugo called it \"the Colosseum of nature\". Down the wall drops the Grande Cascade de Gavarnie, about 420 m — the highest-drop waterfall in mainland France.",
     formation:
       "Gavarnie is a particularly large cirque. In the ice age a thick glacier lodged here, rotating and scouring around the valley head, digging the walls into a steep semicircle and deepening and flattening the floor. Its \"stepped\" walls reflect the folded strata below — during Pyrenean mountain-building, limestone and marble were squeezed into near-horizontal stacked layers, and the glacier eroded differentially along the layers, hard layers left as steps, soft layers retreating into scarps. After the ice withdrew, snowmelt and groundwater from the walls fall into the valley as waterfalls.",
     observation:

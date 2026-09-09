@@ -6,7 +6,7 @@
 > 规则见 [`.claude/skills/verify-content/SKILL.md`](../.claude/skills/verify-content/SKILL.md)，
 > 错误分类见 [`known-errors.md`](known-errors.md)。
 
-lastVerifiedCommit: 11f3b3b
+lastVerifiedCommit: cd68f5a
 
 ## 覆盖现状（截至 2026-09-08）
 
@@ -39,6 +39,7 @@ lastVerifiedCommit: 11f3b3b
 
 | 日期 | 范围 | 条数 | ok / wrong / unknown | 结果 |
 |---|---|---|---|---|
+| 2026-09-09 | terrain · 法国（盆地 / 河流 / 国家公园 / 火山 / 喀斯特 / 沙地）（2026-09-09 地形核实：法国第 2 批 15 篇（收尾）） | 15 | 11 / 4 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | travel · 韩国 / 捷克（2026-09-09 城市核实：韩国 7 城 + 捷克 7 城） | 15 | 3 / 12 / 0 | 当场修 15 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain · 法国（山系 / 盆地 / 火山 / 冰川 / 峡谷 / 海岸）（2026-09-09 地形核实：法国第 1 批 14 篇） | 17 | 5 / 12 / 0 | 当场修 17 条；新开 issue 0、关闭 0 |
 | 2026-09-09 | terrain · 挪威（山系 / 高原 / 峡湾 / 冰帽 / 潮流）（2026-09-09 地形核实：挪威第 1 批 14 篇） | 16 | 9 / 7 / 0 | 当场修 16 条；新开 issue 0、关闭 0 |
