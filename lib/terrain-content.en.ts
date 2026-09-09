@@ -2746,6 +2746,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
 
   // ============ North America · Canada ============
   "canadian-shield": {
+    // seeing sources: 加拿大地盾约占国土 **50%**；已知最古老岩石为西北地区**阿卡斯塔片麻岩约 40.3 亿年** ——
+    //   加拿大自然资源部（1 级，2026-09-09 核）。
+    //   **正文写「有的超过 30 亿年」比实际更保守** —— 方向正确、没有夸大，是可接受的写法；
+    //   若日后要写得更具体，可点名阿卡斯塔片麻岩并带年代。
     seeing:
       "The Canadian Shield is a large area of ancient crystalline rock wrapped around Hudson Bay, shaped like a huge shallow saucer, covering about half of Canada and extending into parts of the United States. Its rock is among the oldest on Earth (some more than 3 billion years), but the surface is not high — repeated glaciation has scraped it into a low, hard land dense with lakes and bogs. Most of Canada's forest, mineral wealth and hydropower is on the Shield.",
     formation:
@@ -2761,6 +2765,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "canadian-rockies": {
+    // seeing sources: 罗布森山 **3,954 m**（BC 省公园管理局，1 级，2026-09-09 核），加拿大落基山最高峰。
+    //   1885 年加拿大太平洋铁路穿越山区、同年在班夫温泉周围划出保护地（1887 年扩为落基山公园），
+    //   是公认的加拿大第一个国家公园、世界第三个。
+    //   哥伦比亚冰原是北美的**水文顶点**，融水分别流向太平洋、大西洋（经哈得孙湾）与北冰洋。
+    //   斯托尼·纳科达（Stoney Nakoda）、克里（Cree）、库特奈（Ktunaxa）三个族名与公园管理方现行用法一致。
+    //   **formation 段的逆冲年代区间未能证实，已另记 unknown。**
+    //   **冰原面积是会退缩的量** —— 正文没写面积，是正确处理；日后要写必须带监测时点。
     seeing:
       "The Canadian Rockies are the stretch of the Rocky Mountain system along the British Columbia–Alberta border. They are closer to the west coast and more heavily glaciated than the U.S. Rockies. They are known for clearly bedded sedimentary rock, jagged peaks, large icefields and a string of glacial lakes; Banff, Jasper, Yoho and Kootenay national parks form a connected block that is a World Heritage site. The highest peak, Mount Robson, is 3,954 m.",
     formation:
@@ -2776,6 +2787,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "coast-mountains": {
+    // seeing sources: 海岸山脉长约 **1,600 km**（从温哥华附近的弗雷泽低地延伸至育空）；
+    //   **沃丁顿山 4,019 m 是「完全位于不列颠哥伦比亚境内」的最高峰** ——
+    //   境内更高的费尔韦瑟山、亚当斯山都跨美加边境（3 级，2026-09-09 核）。
+    //   **这个限定语下得很准**：换成「BC 最高峰」就错了。
+    //   海岸萨利什、夸夸嘉夸、海达、钦西安四个族名与「大熊雨林」的位置表述均与官方用法一致；
+    //   跨境处只做地理事实性对比，不描述边界线、不作主权表述。
     seeing:
       "The Coast Mountains run along the Pacific coast of North America, from southern British Columbia to the Alaska border, about 1,600 km. They rise straight out of the sea, their body cut by countless long, deep fjords, and are covered in temperate rainforest and many glaciers. The highest peak entirely within British Columbia is Mount Waddington, 4,019 m. Vancouver and Whistler are on the southern edge.",
     formation:
@@ -2801,11 +2818,26 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Saint Elias Mountains and the adjacent Alaska Range (with Denali) are both high mountains of north-western North America and both intensely glaciated; the Saint Elias are closer to the sea, rising faster, with a larger icefield, and nearer the coast. Versus the Himalaya: the Himalaya are higher, longer, and formed by two continents meeting head-on; the Saint Elias are an oceanic plate hitting a continent obliquely and shoving accreted terranes up.",
     concept:
       "The Saint Elias Mountains show that huge icefields can form outside the poles — as long as it is high and cold and snowy enough, ice can build up over a large area. A common misconception is that these glaciers are static, unchanging ice: they flow continuously, and some \"surge\" periodically (advancing several kilometres in a few years), making them an important site for the study of glacier dynamics.",
+    // history sources: 「Kluane / Wrangell-St Elias / Glacier Bay / Tatshenshini-Alsek」跨境世界遗产：
+    //   **1979 年首次列入**（Kluane 与 Wrangell-St Elias）、**1992 年扩展纳入 Glacier Bay**、
+    //   **1994 年扩展纳入 Tatshenshini-Alsek**（后者也在加拿大境内）——3 级，多来源交叉确认，2026-09-09 核。
+    //   **原文的「1993 年」既不是首次列入、也不是两次扩展中的任何一次** —— 落在两次扩展中间，
+    //   像是把 1992 与 1994 折了个中。
+    //   **洛根山 5,959 m 是一个会被新测量修正的量**：这是加拿大自然资源部沿用的 1992 年 GPS 标准值，
+    //   2007 年 LIDAR 测得略高（约 5,967 m），而且这座山因构造抬升每年仍在增高约 0.35 mm ——
+    //   下一轮留意是否有官方重测。
+    //   **跨境表述复核通过**：只做地理事实性对比，不描述边界线走向、不作主权表述。
     history:
-      "The Saint Elias area is the traditional land of the Southern Tutchone, Tlingit and other Native nations, and the mountain passes were trade routes between the coast and the interior. In the 18th century European navigators saw and named Mount Saint Elias from the sea. In 1993 this mountain area (with the Alaska side) was inscribed as a World Heritage site, chiefly for its glaciers and ecosystems.",
+      "The Saint Elias area is the traditional land of the Southern Tutchone, Tlingit and other Native nations, and the mountain passes were trade routes between the coast and the interior. In the 18th century European navigators saw and named Mount Saint Elias from the sea. In 1979 this mountain area (with the Alaska side) was inscribed as a World Heritage site, later extended in 1992 and 1994, chiefly for its glaciers and ecosystems.",
   },
 
   "torngat-mountains": {
+    // seeing sources: 萨格勒克湾一带的太古代片麻岩（Uivak / Nanok）约 **36—39 亿年**，Saglek Block 部分达 39 亿年，
+    //   属北美已知最古老岩石之一 —— 正文「接近 40 亿年」合理（2 级，2026-09-09 核）。
+    //   Torngait 源自因纽特语，意为「神灵之地」（另有诠释作「恶灵之地」），正文译作「神灵」核心义准确。
+    //   考布维克山（Mont D'Iberville）**1,652 m**，被明确称为「加拿大落基山以东大陆地区最高点」。
+    //   **2005-12-01 随拉布拉多因纽特土地权协议生效设立为国家公园保护区，2008 年才转为国家公园** ——
+    //   正文写的是「保护区」，与 2005 年正好对应，**没有把两个年份混起来**。
     seeing:
       "The Torngat Mountains are at the far northern tip of the Labrador Peninsula, the boundary range between the provinces of Newfoundland and Labrador and Quebec, and the highest mountain country in mainland eastern Canada. \"Torngait\" means \"spirits\" in Inuktitut. There are no trees, roads or permanent residents; the coast is a series of deep glacier-cut fjords; and in summer there are polar bears and caribou. It became a national park reserve in 2005.",
     formation:
@@ -2823,6 +2855,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "long-range-mountains": {
     seeing:
       "The Long Range Mountains are a north–south highland on the western side of the island of Newfoundland, the north-easternmost stretch of the Appalachian Mountains in mainland North America. They are essentially a raised, then glacier-cut plateau, flat on top and steep-edged. Gros Morne National Park is here — best known for \"the Tablelands\", a bare orange-brown mountain whose surface rock should be tens of kilometres down in the mantle.",
+    // formation sources: 岛湾（Bay of Islands）蛇绿岩形成于约 **485—489 Ma**、仰冲发生在约 **470 Ma**（中奥陶世 Taconic 造山）——
+    //   正文的「约 5 亿年前」是科普取整，与实测差 2—6%，方向与数量级正确（3 级学术文献，2026-09-09 核）；
+    //   若要更精确可写「约 4.7 亿年前」。
+    //   格罗莫讷国家公园 **1987 年**列入世界遗产。
+    //   兰塞奥兹牧草地约公元 1000 年（**较新的树轮定年精确到公元 1021 年**），是已确认的欧洲人在美洲最早据点 ——
+    //   正文用的是「已确认的」这个限定，写法稳妥。
     formation:
       "The Long Range Mountains record an ancient continental collision. About 500 million years ago an old ocean closed, and crust and mantle rock from the ocean floor were thrust up onto the edge of the continent — the mantle peridotite of the Tablelands was carried up this way. The range was then eroded into a low, flat plateau. Quaternary glaciers cut cliffs into the plateau edge and deepened the valleys below sea level — Western Brook Pond is a glacier-cut inland \"fjord\" later cut off from the sea.",
     observation:
@@ -2836,6 +2874,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "interior-plains-ca": {
+    // seeing sources: 2026-09-09 核：加拿大内陆平原从北冰洋延伸至美加边境；
+    //   温尼伯湖为冰期古阿加西湖（Lake Agassiz）萎缩后的残留水体之一，属地质学共识。全篇 6 板块无误。
     seeing:
       "The Interior Plains of Canada lie between the Rocky Mountains to the west and the Canadian Shield to the east, reaching north all the way to the Arctic Ocean. Their southern part is the Prairies of Alberta, Saskatchewan and Manitoba, Canada's grain belt; further north the grassland gives way to aspen parkland, then boreal forest, and finally the lowlands of the lower Mackenzie. The surface is near-horizontal sedimentary rock, cut into broad shallow valleys by rivers.",
     formation:
@@ -2853,6 +2893,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "hudson-bay-lowlands": {
     seeing:
       "The Hudson Bay Lowlands wrap around the southern shores of Hudson Bay and James Bay — an extremely flat lowland of bog and shallow pool, stretching a few hundred kilometres inland where it is widest. It is one of the largest continuous wetlands in the world, and an important area (around Churchill) where polar bears wait on land for the sea ice to form. The ground has almost no perceptible slope, and the rivers are wide, shallow and meandering to the sea.",
+    // formation sources: 哈得孙湾南岸均衡回弹速率约**每百年 1—1.3 米**，与正文「约一米」一致（3 级，2026-09-09 核）——
+    //   这是一个长期平均值，仍属被持续重新测量修正的地球物理量。
+    //   **「世界上最大的连续湿地之一」这个限定用得对**：它是北美最大湿地/泥炭地群、世界第二大连续泥炭地群、
+    //   世界第三大湿地（西西伯利亚低地最大）—— 正文没有坐实具体名次，是正确写法。
+    //   1670 年英王查理二世授予哈得孙湾公司特许状。
     formation:
       "The Hudson Bay Lowlands were once part of the floor of Hudson Bay. In the last ice age a very thick ice sheet pressed this crust down by hundreds of metres; after the ice melted about 8,000 years ago the unloaded land began to \"rebound\" fast — the area is still rising at roughly a metre per century, the coastline keeps advancing into the bay, and the newly exposed flat seabed becomes new bog. The bedrock is limestone with poor drainage, and with weak evaporation and permafrost blocking the way, the water cannot escape and forms vast peat bog.",
     observation:
@@ -2868,6 +2913,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "saint-lawrence-lowlands": {
     seeing:
       "The St. Lawrence Lowlands are a comparatively narrow, flat valley between the eastern Great Lakes and the mouth of the St. Lawrence River, hemmed in by the Canadian Shield to the north and the Appalachian uplands to the south. With fertile soil, a relatively mild climate and easy water transport, it is the most densely populated and industrially and agriculturally concentrated belt in Canada — Toronto, Ottawa, Montreal and Quebec City are all on this corridor.",
+    // formation sources: 皇家山与蒙泰雷吉安山丘为白垩纪碱性侵入岩体（stock），**从未喷出地表**，后期上覆岩层剥蚀后出露 ——
+    //   2026-09-09 核。**正文没有把它们写成火山**，那是关于这组山丘很常见的误解。
     formation:
       "The St. Lawrence Lowlands are a fault-bounded sedimentary trough between the Shield and the Appalachians, filled with Palaeozoic limestone and shale. Ice sheets pushed along this lowland in the ice ages; on retreat, seawater flooded up the ice-depressed valley to form the \"Champlain Sea\", which withdrew to leave a flat, fertile plain of marine clay. The isolated small hills near Montreal (the \"Monteregian Hills\") are old magma bodies that never reached the surface, later exposed by erosion.",
     observation:
@@ -2891,11 +2938,23 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Great Slave Lake and Great Bear Lake to the north are the two largest lakes in the Canadian Northwest, similar in form (both straddling the Shield–sedimentary boundary); Great Bear is larger in area, further north and colder; Great Slave is deeper, with a city and roads on its southern shore. Versus Lake Baikal: Baikal formed by a crustal rift dropping down and is far deeper; Great Slave's depth comes mainly from glacial scouring plus faulting.",
     concept:
       "The depth of Great Slave Lake (about 600 m) shows the power of glacial excavation: a continuous ice sheet advancing repeatedly along a weak zone in the rock can dig a valley floor hundreds of metres below the surrounding ground. A common misconception is that all high-latitude big lakes are shallow — Great Slave and Great Bear are both deep, because part of their basins was deeply excavated by glaciers, not just low ground holding water.",
+    // history sources: 大奴湖最深 **614 m（2,015 ft）**，北美最深湖，多来源一致，2026-09-09 核。
+    //   **名称那段处理得好**：「Slave（奴）」源自克里人对当地 Dene（Dehcho Dene）的旧称 Slavey，
+    //   与部族间冲突与奴役史有关；如今被广泛认为是带贬义的殖民命名，西北地区确有地名去殖民化运动
+    //   （如 Trout Lake 改为 Sambaa K'e）—— CBC（2 级）。**正文如实写出了这一层，而不是只当作一个地名。**
+    //   1934 年前后东臂/耶洛奈夫湾发现金矿（Burwash、Con Mine），1936—37 年聚落成形。
+    //   **结冰期是会随气候变暖变化的量** —— 正文用「大约」留了余地，日后要写具体天数须带监测年份。
     history:
       "The Great Slave Lake area is the home of the Chipewyan, Tłı̨chǫ, Yellowknives and other First Nations and later the Métis. The name \"Slave\" comes from an old term used by a neighbouring people for the local Dene; it is now regarded as derogatory, and some place names are being changed to Dene-language names. Gold was found on the north shore of the East Arm in the 1930s, and Yellowknife was founded because of it. Today the lake area has fishing, tourism and a winter ice road toward the Arctic.",
   },
 
   "great-bear-lake": {
+    // seeing sources: **「完全位于加拿大境内的最大湖」这个限定语正确** —— 大熊湖是世界第 8 大湖，
+    //   苏必利尔湖等更大者都跨美加边境，所以不能只写「加拿大最大湖」（3 级，2026-09-09 核）。
+    //   横跨北纬 65—67 度、与北极圈（66°33′N）相交；五条湖臂 Dease / McTavish / McVicar / Keith / Smith；
+    //   封冻期典型 8—9 个月（**会随气候变暖变化，正文用「大约」留了余地**）。
+    //   1930-05-16 Gilbert LaBine 在东岸发现沥青铀矿，Eldorado 矿是当时世界少数几个铀镭产地之一。
+    //   Sahtúgot'ı̨nę 自称意为「大熊湖之人」，正文译法准确、非过期称谓。
     seeing:
       "Great Bear Lake is in the Northwest Territories, straddling the Arctic Circle — the largest lake entirely within Canada and one of the largest lakes in the world. It is made of five large arms and shaped like an open hand; the water is extremely clear and cold, frozen for about nine months a year, and the only community on it is the small settlement of Délı̨nę.",
     formation:
@@ -2911,6 +2970,14 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mackenzie-river": {
+    // seeing sources: 马更些河**干流本身约 1,738 km**；**从最上游芬利河算起的整个水系约 4,241 km**，
+    //   是加拿大最长河流系统、北美第二长（次于密西西比—密苏里）——3 级交叉《加拿大百科全书》，2026-09-09 核。
+    //   **正文写的是「如果从最上游的芬利河算起，整个水系长约 4200 公里」，限定语明确** ——
+    //   **没有把水系长度当成干流长度冒用**，与塔里木河（「约 2000 公里」哪套口径都不是）、
+    //   达令河（把含支流的合计当成干流长度）正好构成对照，是正确写法的范例。
+    //   马更些河三角洲为北美最大北极三角洲（**权威来源写的是 the largest，正文用的「之一」更保守**），
+    //   约 25,000 个小湖，与正文「上万个」一致。
+    //   1789 年亚历山大·马更些（受雇于西北公司，哈得孙湾公司的竞争对手）沿河而下抵达北冰洋。
     seeing:
       "The Mackenzie River is the longest river in Canada. Measured from its farthest headwater, the Finlay, the whole system is about 4,200 km long. It flows out of Great Slave Lake, north-west through the subarctic forest and lowlands, and into the Beaufort Sea of the Arctic Ocean. Its lower reach is one of the largest Arctic deltas in North America, dense with tens of thousands of small lakes. The whole river is frozen for much of the year and is a winter \"ice road\" for the communities along it.",
     formation:
