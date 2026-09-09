@@ -3700,6 +3700,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-ruapehu": {
+    // seeing sources: 海拔 2797 米（LINZ Topo50，峰名 Tahurangi）；汤加里罗 1887 年赠地设立、新西兰第一个国家公园、自然与文化双重世界遗产；1953-12-24 坦吉瓦伊事故（火口湖堤坝溃决 → 约 34 万立方米泥流 → 铁路桥冲毁 → 151 人遇难，新西兰史上最严重铁路事故，2 级 NZ History）。**「Mount Ruapehu」未见 NZGB 更名或加长音符记录，沿用现行拼写。** **正文没有写死火山警戒级别 —— 这是对的**，那是随时会变的量。2026-09-09 核，本轮无需改动。
     seeing:
       "Mount Ruapehu stands on the volcanic plateau of the central North Island at 2,797 m — the highest peak in the North Island and an active volcano, with a summit Crater Lake that heats up and changes colour with volcanic activity. Together with the young cone of Ngāuruhoe and the older, multi-craered Tongariro alongside it, it makes up Tongariro National Park — New Zealand's first national park (established 1887) and a dual natural and cultural World Heritage Site.",
     formation:
@@ -3725,11 +3726,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Taranaki and Ruapehu are both North Island andesitic volcanoes, but Taranaki is an isolated, symmetrical single cone well away from the main axis of the Taupō Volcanic Zone, whereas Ruapehu sits near the axis and is a cluster of overlapping cones with a summit crater lake. Taranaki's symmetry reflects its youth — it has not yet been deeply eroded.",
     concept:
       "The circular forest boundary at Taranaki's foot is an extreme example of a hard land-use edge: a line drawn purely for administrative reasons that, decades later, shows up on the ground — and from satellites — as an abrupt change in vegetation. A common misconception is to read that circle as a natural treeline; it is the park boundary set in 1881.",
+    // history sources: 公园官方名：**2025-04-01 起由 Egmont National Park 改为 Te Papa-Kura-o-Taranaki**（自然保护部官网，级别 1）；山的官方名 2025-04-03 由 NZGB 公告定为 **Taranaki Maunga**（无英文对应名，是新西兰首例仅以毛利语命名的国家公园/山峰）。2026-09-09 核。
+    //   https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/
+    //   **这一条的形状：同一轮立法改了两个名字，正文只跟进了其中一个** —— 上一句刚写完山改名，下一句还用着公园的旧名。与英国 AONB → National Landscape 那次（写下待办却没执行）不同，这次是**同一段文字里的两个名字，改了一个漏了一个**。
+    //   2025 年立法赋予山法人地位（由 Te Kāhui Tupua 实体代表）—— 作为制度事实客观陈述、不展开评价，**零争议红线复核通过**。1881 年以峰顶为圆心、半径约 9.6 公里划定的森林保留地边界核实无误。
     history:
-      "Mount Taranaki is a revered ancestor and a core of identity for the local iwi (such as Taranaki and Te Āti Awa). In 2025 New Zealand passed legislation making Taranaki Maunga the mountain's official name and granting it legal personhood, represented by an entity called Te Kāhui Tupua, with iwi and the Crown jointly speaking for its interests. Egmont National Park is the second-oldest national park in New Zealand.",
+      "Mount Taranaki is a revered ancestor and a core of identity for the local iwi (such as Taranaki and Te Āti Awa). In 2025 New Zealand passed legislation making Taranaki Maunga the mountain's official name and granting it legal personhood, represented by an entity called Te Kāhui Tupua, with iwi and the Crown jointly speaking for its interests. Established in 1900, the park is New Zealand's second-oldest; the same 2025 legislation renamed it from Egmont National Park to Te Papa-Kura-o-Taranaki.",
   },
 
   "tasman-glacier": {
+    // seeing sources: 长约 23.5 公里（20 世纪长期约 28 公里，1990 年代起加速退缩），新西兰最长冰川；塔斯曼湖 1970 年代形成，1990 年约 1.7 平方公里 → 2020 年约 7.1 平方公里（3 级，NASA Earth Observatory 等交叉）。**正文写的是「从 1970 年代开始出现、现在还在扩大」而不是一个面积数 —— 这正是处理会过期量的第三条路（只写趋势、不写数字），判定不改。** 2026-09-09 核。
     seeing:
       "The Tasman Glacier is the largest glacier in New Zealand, about 23 km long, flowing down from the high snowfields on the eastern side of Aoraki / Mount Cook, within Aoraki / Mount Cook National Park. Its lower part is buried under thick rock debris and looks like a grey-black river of rubble; at its end is a terminal lake that appeared in the 1970s and is still growing, with icebergs calved from the glacier floating in it.",
     formation:
@@ -3745,6 +3751,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "franz-josef-glacier": {
+    // seeing sources: 官方并名 Franz Josef Glacier / Kā Roimata o Hine Hukatere：《1998 年恩加伊塔胡索赔和解法》Schedule 96 法定条目（级别 1）。
+    //   https://www.legislation.govt.nz/act/public/1998/97/en/2022-07-01.pdf
+    //   1983–2008 年前进、2008 年后快速退缩（NIWA / 现 Earth Sciences New Zealand，级别 1）——**正文没写死退缩量，判定不改**。2026-09-09 核。
+    //   https://niwa.co.nz/news/explaining-new-zealands-unusual-growing-glaciers
     seeing:
       "Franz Josef Glacier (Māori: Kā Roimata o Hine Hukatere, \"the tears of Hine Hukatere\") is on the western slope of the Southern Alps, dropping steeply from its high snowfield to only a few hundred metres above sea level, near the temperate rainforest of the West Coast. Like the neighbouring Fox Glacier, it is one of the few glaciers in the world that reaches down into rainforest. It has retreated markedly since the late 2000s.",
     formation:
@@ -3760,6 +3770,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "fiordland": {
+    // seeing sources: Te Wāhipounamu（南西新西兰）1990 年列入 UNESCO 世界自然遗产，DOC 官网用此名（级别 1）；峡湾国家公园约 12,607 平方公里，新西兰面积最大。
+    //   https://www.doc.govt.nz/te-wahipounamu
+    //   **「Te Rua-o-te-Moko」是旅游业惯用名、未经 NZGB 官方地名程序确认，正文没有采用 —— 本轮专门核过这一点，处理得当。** 14 条峡湾（另有「15 个已命名海洋峡湾」的口径，差异在计入方式，不构成矛盾）。2026-09-09 核，本轮无需改动。
     seeing:
       "Fiordland, in the south-western corner of the South Island, is the largest national park in New Zealand and part of the Te Wāhipounamu World Heritage Area. It is almost roadless and unpopulated — a block of high mountains cut to pieces by glaciers, where 14 long, deep fiords run inland from the Tasman Sea, the mountains are densely forested, waterfalls are everywhere, and it is one of the wettest places on Earth.",
     formation:
@@ -3775,6 +3788,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "milford-sound": {
+    // seeing sources: 官方并名 Milford Sound / Piopiotahi（恩加伊塔胡法 Schedule 96，级别 1）；最大长度约 15.1 公里；教冠峰（Mitre Peak / Rahotu）**LINZ Topo 官方高程 1683 米** —— 旅游站流传的 1692 米是非权威数据，**以 LINZ 为准，正文写对了**；年降雨约 200 天（另有 182 天/年的精确统计，同一量级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Milford Sound (Māori: Piopiotahi), in the north of Fiordland, is the only fiord in the region reachable by road, and so one of the best-known natural attractions in New Zealand. The fiord is about 15 km long, walled by near-vertical cliffs; the most prominent feature, Mitre Peak / Rahotu, rises straight from the water to about 1,683 m. It rains here on more than 200 days a year, and after rain the cliffs run with rows of waterfalls.",
     formation:
@@ -3790,6 +3804,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-taupo": {
+    // seeing sources: **英文正文已带长音符 Lake Taupō，符合 2019-06 NZGB 核准 824 个毛利地名（含长音符）的现行拼写**（2 级）；面积 616 平方公里、新西兰最大湖。欧鲁阿努伊超级喷发约 2.55–2.7 万年前（不同研究测年略有差异）；Hatepe 喷发**公元 232±10 年**（树轮碳十四 wiggle-matching，Hogg et al. 2019 / Lowe & Pittari 2021 综述，为当前共识）。**层级复核：陶波湖是陶波火山带里的一个独立破火山口，与火山带本身、与罗托鲁瓦破火山口都没有混淆** —— 这一批专门查了嵌套压层问题，未发现。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Taupō sits at the centre of the North Island, about 616 km² in area — the largest lake in New Zealand. Its shape and its lake-bed topography still carry the marks of a volcano — because it fills a large volcanic caldera. The Waikato River, New Zealand's longest, flows out of the lake's north-eastern corner. The lake district is an important place for recreation and trout fishing.",
     formation:
@@ -3805,6 +3820,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-wakatipu": {
+    // seeing sources: **官方现行地名仍是单一 Lake Wakatipu**：「Whakatipu Waimāori」不在恩加伊塔胡法 Schedule 96 的地名变更表内（级别 1），只见于同法的「法定确认」条文与 LAWA 资料页（2 级）——**尚未成为 NZGB 官方并名，正文没有误加**。长度约 75.2–80 公里（测量基准差异）、深度约 377.5–380 米（LAWA 与 Te Ara/Britannica 一致；维基单出的 420 米未见区域机构佐证，未采信）。定振周期约 27 分钟、振幅约 20 厘米，是新西兰最著名的湖泊定振案例。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Wakatipu is a Z-shaped (or \"lightning-bolt\") glacial ribbon lake in the South Island, about 80 km long, with Queenstown on one of its bends. It is up to about 380 m deep, and its floor lies below sea level. The water is clear and cold, and it is ringed by steep schist mountains such as the Remarkables.",
     formation:
@@ -3820,6 +3836,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-tekapo": {
+    // seeing sources: **Lake Tekapo 仍是 NZGB 唯一现行官方名**：2019 年 NZGB 曾拟把「Takapō」作为非官方收录名加入地名典，麦肯齐区议会 2021 年起本地宣传用双名，**但都不是 NZGB 的正式地名变更程序**（Takapo 在恩加伊塔胡法里只出现在「法定确认」条文，不在 Schedule 96 的地名变更表）。**正文保持单名是更保守也更准确的做法，判定不改。**
+    //   ⚠️ **这是一个正在推进中的更名议题，下一轮回来复核 NZGB 是否已正式公告** —— 与塔拉纳基那条（2025 年真的落地了）是同一类，只是还没走完程序。岩粉散射致色为标准解释。2 级，2026-09-09 核。
     seeing:
       "Lake Tekapo, in the Mackenzie Basin of the South Island interior, is a lake dammed by a glacier and its moraine. It is best known for its colour — an opaque milky blue-turquoise. The Church of the Good Shepherd on its southern shore is one of the most photographed buildings in New Zealand. The area is the Aoraki Mackenzie International Dark Sky Reserve, with very dark, clear night skies.",
     formation:
@@ -3895,6 +3913,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rotorua-caldera": {
+    // seeing sources: 直径约 22 公里、陶波火山带最西北端唯一的单事件破火山口；喷出 340+ 立方公里 Mamaku 浮岩流纹质岩浆；年代 240,000±11,000 年（Gravley et al. 2007 —— 早期研究的约 22 万年已被这份数据取代）；莫科亚岛为喷发后隆起的流纹岩穹丘（<5 万年）。3 级转引，2026-09-09 核，本轮无需改动。
     seeing:
       "The Rotorua Caldera, on the North Island's volcanic plateau, is a circular basin formed by the collapse that followed a large eruption, about 22 km across, with Lake Rotorua occupying part of it. Around it is one of the most active geothermal areas in New Zealand — geysers, boiling mud pools, coloured silica terraces and steaming ground, which you can see and smell (the rotten-egg smell of hydrogen sulphide) right in the city.",
     formation:
@@ -3912,8 +3931,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "waikato-river": {
     seeing:
       "The Waikato River is the longest river in New Zealand, about 425 km. It flows out of Lake Taupō in the central North Island, passes first through a chain of hydro stations and reservoirs, then across the lowland basin around Hamilton, and finally reaches the Tasman Sea at Port Waikato, south of Auckland. The name Waikato means \"flowing water\" in Māori. It is an important source of water and electricity for the North Island.",
+    // formation sources: 改道机制：约 2 万年前的大改道由陶波火山带**欧鲁阿努伊喷发（约 2.65 万年前）的火山碎屑沉积物逐步淤高堵塞原河道**所致（Hinuera 组研究），**不是熔岩流**。2 级，2026-09-09 核。
+    //   https://www.nzgeo.com/stories/4664/
+    //   **C7（因果解释错了）的又一例** —— 与内伊湖「熔岩压弯地壳」、阿摩里卡「没有被重新抬升」同类：都是把一个真实的地质过程换成了另一个听起来更直观的过程。
+    //   长 425 公里、新西兰最长（Te Ara，2 级）；「八座水电站」与运营方的「八座水坝、九座电站」是坝/站计数口径不同，**不构成实质矛盾、判定不改**。
     formation:
-      "The upper Waikato runs over the volcanic rock of the Taupō Volcanic Zone, and where hard rock narrows the channel it forms rapids and falls (Huka Falls is the river squeezing through a hard, pale volcanic-rock trough). The middle and lower river enter softer sedimentary rock and ash-covered lowland, where the channel broadens and meanders between fertile farmland. The Waikato has changed course in the past — a large volcanic mudflow and lava activity switched it from flowing north-east (through what is now the Hauraki Plains) to its present north-westerly course to the sea.",
+      "The upper Waikato runs over the volcanic rock of the Taupō Volcanic Zone, and where hard rock narrows the channel it forms rapids and falls (Huka Falls is the river squeezing through a hard, pale volcanic-rock trough). The middle and lower river enter softer sedimentary rock and ash-covered lowland, where the channel broadens and meanders between fertile farmland. The Waikato has changed course in the past — volcanic sediment from Taupō's Ōruanui eruption gradually buried and blocked the old channel, switching it from flowing north-east (through what is now the Hauraki Plains) to its present north-westerly course to the sea.",
     observation:
       "From the air the upper Waikato is a string of long narrow blue reservoirs held between dams, set in the volcanic plateau; below Huka Falls is a stretch of white rapids; entering the Hamilton basin it becomes a strongly meandering brown river between green pasture; at its mouth it splits into several channels crossing black ironsand beaches to the sea.",
     distinguish:
@@ -3987,8 +4010,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "punakaiki": {
     seeing:
       "Punakaiki, on the West Coast of the South Island, is part of Paparoa National Park, and is best known for the \"Pancake Rocks\" — a stretch of sea cliff where the limestone has weathered into stacked thin layers, like piles of pancakes. At high tide with the right swell, several blowholes in the rock send seawater spouting high into the air.",
+    // formation sources: 千层成因：**stylobedding 不是原始沉积层理**，而是石灰岩埋藏后经压溶作用沿一组大致平行的面重新分异出的次生构造；**为何按这样的间距周期性成带，学界至今仍有讨论**。新西兰地质学会 GeoTrips 专业资源（2 级）+ 3 级交叉，2026-09-09 核。
+    //   https://www.geotrips.org.nz/trip.html?id=436
+    //   **C7 的又一例，而且是「把成因说反了」这一种**：原文写「交替沉积」，实际是埋藏之后才分异出来的。正文现在保留了「至今没有定论」这句留白 —— 与英国阿勒峡「学界至今仍在讨论细节」是同一种处理。
+    //   1987 年帕帕罗瓦国家公园设立、威斯特兰黑鹱（tāiko）全球唯一已知繁殖地：核实无误。
     formation:
-      "The Pancake Rocks limestone formed on the sea floor about 30 million years ago, from alternating layers of fine calcium carbonate and weaker marl. After it was uplifted above the sea, waves and rain eroded it differentially along these bedding planes — the weaker layers were hollowed out and cut back, the harder layers stood out, giving the \"layered\" look (this layered weathering is generally called stylobedding). Waves have cut caves and vertical fissures at the cliff base, and seawater forced in spouts out of the openings above.",
+      "The Pancake Rocks limestone formed on the sea floor about 30 million years ago. The stacked \"pancake\" banding is not original sedimentary bedding: it is a secondary structure formed after burial, when pressure-solution along a set of roughly parallel planes segregated the rock into alternating harder and softer bands — a feature geologists call stylobedding, and exactly why it forms at the spacing it does is still debated. Once the rock was uplifted above the sea, waves and rain eroded these bands differentially — the weaker ones hollowed out and cut back, the harder ones left standing proud, giving the \"pancake\" look. Waves have cut caves and vertical fissures at the cliff base, and seawater forced in spouts out of the openings above.",
     observation:
       "From the air Punakaiki is a small stretch of grey-white, heavily cut limestone sea cliff between the green rainforest of the West Coast and the blue of the Tasman Sea, with a platform walkway on top and wave-cut caves, blowholes and surging white water below. To the north are the limestone hills running down from the Paparoa Range.",
     distinguish:
@@ -4015,6 +4042,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "whakaari-white-island": {
+    // seeing sources: 官方并名 **Whakaari/White Island**（1997 年 NZGB 核准，级别 1，GeoNet 页面确认）；最高点 321 米（约占火山总体量 30%）；2019-12-09 喷发 22 人遇难、此后登岛严格受限。**正文表述克制、未渲染，判定不改。**
+    //   https://www.geonet.org.nz/about/volcano/whiteisland
+    //   ⚠️ **时效提醒：2026 年 3 月再度出现小规模喷发**（警戒级别一度升至 3 级、后回落至 2 级）—— 与正文「新西兰最活跃的活火山」的定性一致，**正文没有写死警戒级别，所以这次活动不影响它的准确性**。这正是「警戒级别一律不写死」这条规矩的价值。2026-09-09 核。
     seeing:
       "Whakaari / White Island lies about 48 km offshore in the Bay of Plenty, off the North Island, and is an active volcano that rises above the sea. It is the most active volcano in New Zealand — steam and volcanic gas rise from it constantly, and its crater holds a strongly acidic hot lake. Because of the continuing volcanic hazard, access to the island has been strictly limited since an eruption in 2019 caused loss of life.",
     formation:
@@ -4045,6 +4075,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "waitomo": {
+    // seeing sources: **「Waitomo」无长音符**：2019-06 新西兰公报正式公告（2019-ln2814）里 Waitomo Cave / Caves / Stream / Valley 均无长音符，正文拼写正确（级别 1）。
+    //   https://gazette.govt.nz/notice/id/2019-ln2814
+    //   萤火虫为发光蕈蚊（Arachnocampa luminosa）**幼虫**，不是甲虫 —— **正文已准确避开这个常见误区**。1887-12-28 首探（Tāne Tinorau 与 Fred Mace）、1889 年开放、长期由当地毛利家族共管（2 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Waitomo, in a belt of limestone hill country in the western North Island, is known for its underground cave system. Besides stalactites and stalagmites, the caves are famous for tens of thousands of blue-green points of light — \"glowworms\", actually the larvae of a fungus gnat found only in New Zealand, which hang sticky threads from the cave roof and glow to lure insects.",
     formation:
@@ -4062,8 +4095,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "auckland-volcanic-field": {
     seeing:
       "Auckland is built on a \"volcanic field\" — more than fifty small volcanoes scattered across the city area, with scoria cones, crater lakes and lava plateaus. Individually they are small, but the whole field is still considered active: the youngest, Rangitoto Island, formed in an eruption about 600 years ago, when Māori were already living nearby and witnessed the whole event.",
+    // formation sources: 单成因框架保留，但补上已知例外：**朗伊托托岛至少两期喷发**（约距今 553±7 年与 504±5 年，相隔近 50 年，岩浆成分不同），Needham, Lindsay, Smith et al., GSA Bulletin（2 级同行评议）—— 是「单成因」定义公认的疑难案例。53 个喷发中心、面积约 360 平方公里（GNS Science 数据，3 级转引）。2026-09-09 核。
+    //   https://pubs.geoscienceworld.org/gsa/gsabulletin/article-abstract/128/7-8/1160/185376/
+    //   **为什么必须补**：正文的 observation 段把朗伊托托当作这个火山场最完整的范例来写，如果 formation 段把「各喷一次」讲成铁律，读者拿这条判据去看的第一座山恰好就是那个例外。
     formation:
-      "The Auckland Volcanic Field is a \"monogenetic volcanic field\": basaltic magma from deep in the mantle comes up at a new location every so often, erupts once (weeks to years) and stops permanently, with the next one somewhere else. So this is not one large volcano erupting repeatedly, but dozens of small volcanoes each erupting once, spread over about 360 km². Where magma meets groundwater there are violent steam explosions that blast out round shallow craters (maars), such as Lake Pupuke.",
+      "The Auckland Volcanic Field is a \"monogenetic volcanic field\": basaltic magma from deep in the mantle comes up at a new location every so often, erupts once (weeks to years) and stops permanently, with the next one somewhere else. So this is not one large volcano erupting repeatedly, but dozens of small volcanoes each erupting once, spread over about 360 km² (Rangitoto Island is a known exception: sediment dating shows at least two eruptive phases about fifty years apart with different magma chemistry, a recognised puzzle for the \"monogenetic\" label). Where magma meets groundwater there are violent steam explosions that blast out round shallow craters (maars), such as Lake Pupuke.",
     observation:
       "From the air the Auckland Volcanic Field is a set of green conical hills rising within the city (many with a bowl-shaped crater on top, some still showing the terraces of Māori ring settlements), plus several round crater lakes and parks. Rangitoto Island in the harbour is a near-perfectly symmetrical low shield cone, more complete in shape than any of the volcanoes on land.",
     distinguish:
@@ -5711,6 +5747,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   glomma: {
+    // seeing sources: 格洛马河长约 621–623 公里、流域 41,970 平方公里（含瑞典境内 422 平方公里）、占挪威本土面积 12.8%（正文取整为 13%）：全部吻合（2 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Glomma (Norwegian Glomma or Glåma) is Norway's longest and most voluminous river — about 620 km long, with a drainage basin of about 42,000 km², roughly 13% of mainland Norway. It flows out of Lake Aursunden near Røros in the centre of the country and runs almost due south through Østerdalen, eastern Norway's longest valley, taking in many tributaries; via its tributary the Vorma it connects to Mjøsa, Norway's largest lake, then through Lake Øyeren, and finally into the Oslofjord at a delta at Fredrikstad.",
     formation:
@@ -5742,6 +5779,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   jaeren: {
+    // seeing sources: 耶伦海滩约 70 公里、1977 年设景观保护区（SNL，2 级半官方）；「耶伦-利斯塔阶终碛」为学界公认成因，是挪威南部已知最古老的终碛之一。2026-09-09 核，本轮无需改动。
     seeing:
       "Jæren, at Norway's southwestern tip south of Stavanger, is the largest area of low flat land in Norway — in a country known for fjords and steep mountains, this is a rare stretch of open farmland and gentle coast. The ground is low with little relief, running out to the North Sea; the coast is the roughly 70 km \"Jæren beaches\", a mix of sand, shingle and moraine shore. It is windy, has little snow, and mild winters.",
     formation:
@@ -5774,6 +5812,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   rondane: {
+    // seeing sources: 1962-12-21 设立、挪威第一个国家公园、10 座 2000 米以上山峰、龙达讷宫 2178 米、2003 年扩界：全部核实无误（2 级/3 级交叉）。2026-09-09 核，本轮无需改动。
     seeing:
       "Rondane in inland southern Norway, between Dovrefjell and Jotunheimen, was made Norway's first national park in 1962. It has ten peaks over 2,000 m around a broad plateau, the highest, Rondeslottet, 2,178 m. The summits are generally rounded, with deep cirques and U-shaped valleys between them and emerald tarns on the valley floors. Vegetation is sparse; much of the ground is grey-white scree and lichen tundra, giving a clean, empty, almost lunar feel.",
     formation:
@@ -5799,8 +5838,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Trollheimen, Jotunheimen and Rondane are all central-Norway mountain areas, but Trollheimen's distinctive feature is \"many mountain forms in one place\" — because it straddles a double transition of both climate and rock type. Jotunheimen is almost all gabbro spires, Rondane almost all quartzite domes, Trollheimen has both. To recognise this \"transition-zone mountain area\", look for large changes in landform type over a short distance.",
     concept:
       "Trollheimen shows that landforms are the joint result of \"rock plus climate plus erosion\": the same glacial action produces spires on hard rock and rounded fells on soft rock; and the same range is carved deeper on its wetter side, where the glaciers are more active. To understand why a mountain area \"looks messy\", look separately at its geology and its rainfall pattern. A common misconception is that a mountain region's landforms should be uniform throughout.",
+    // history sources: 保护区类别：因讷达尔 1967 年成为挪威第一个 **landskapsvernområde（景观保护区，IUCN 第五类）**，与 naturreservat（自然保护区）是并列但不同的两档。**英文材料自己也常把它松散译成 nature reserve** —— 这不是本库独有的错，但口径要写准。2 级/3 级交叉，2026-09-09 核。
+    //   大特罗拉峰约 1850 米（多来源 1842–1850，取整差异，**判定不改**）；DNT 山屋徒步环线、地名里的「巨魔」：核实无误。
     history:
-      "Innerdalen became Norway's first nature reserve in 1967; it was mountain summer pasture (seter), livestock driven up into the valley in summer, and it still keeps its traditional huts, open to hikers. Trollheimen carries one of the classic hut-to-hut circuits of the Norwegian Trekking Association (DNT). The many \"troll\" place names here are a typical example of Norwegian folklore personifying rugged terrain.",
+      "Innerdalen became Norway's first protected landscape area (landskapsvernområde, a category distinct from the stricter nature reserve) in 1967; it was mountain summer pasture (seter), livestock driven up into the valley in summer, and it still keeps its traditional huts, open to hikers. Trollheimen carries one of the classic hut-to-hut circuits of the Norwegian Trekking Association (DNT). The many \"troll\" place names here are a typical example of Norwegian folklore personifying rugged terrain.",
   },
 
   jostedalsbreen: {
@@ -5895,6 +5936,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hardangerfjord: {
+    // seeing sources: 哈当厄峡湾：**独立主干峡湾体系、不是任何峡湾的支汊**（本轮专门核了层级，与同批吕瑟峡湾相反）；挪威第二长；长度各口径 179–185 公里，正文的 179 落在区间内（SNL，2 级半官方）。沃林斯瀑布为悬谷瀑布，成因表述准确。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Hardangerfjorden
     seeing:
       "The Hardangerfjord in southwestern Norway is Norway's second-longest fjord, reaching about 179 km inland from the Atlantic to the foot of the Hardangervidda plateau. It is not a knife-slit like the Geirangerfjord but fairly open, branching into several arms (the Sørfjord, the Eidfjord and others). Its inner slopes have a mild, sunny climate and it is a well-known fruit-growing district — in spring the shores are banks of apple and cherry blossom.",
     formation:
@@ -5910,8 +5953,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   lysefjord: {
+    // seeing sources: 水系层级：布克纳峡湾 → 赫格峡湾（约 23 公里）→ 吕瑟峡湾（在福尔桑德分出）。挪威国家百科（SNL，2 级半官方）+ 3 级交叉，2026-09-09 核。
+    //   https://snl.no/H%C3%B8gsfjorden
+    //   **「把两层嵌套压成一层」在挪威已经是第三例**（盖朗厄尔、纳柔依、这一条）—— 同一国、同一类地貌、三个条目各写各的，说明这不是偶发笔误，而是写作时的固定简化倾向。
+    //   布道石 604 米 / 平台约 25×25 米、谢拉格崖面约 984 米（正文「约 1000 米」为取整）、卡石：核实无误。**布道石那条裂缝的表述本轮专门核过**：挪威地质调查局（NGU）自 1930 年代监测这条约 0.5 米宽的裂缝，2022 年测到二十多年来首次 2–3 毫米扩张，但明确表示近期无移动迹象、2018 年结构建模也确认短期无崩塌风险 —— 正文的「未来某天会沿它崩塌，但地质调查显示短期内稳定」是准确的概括。
     seeing:
-      "The Lysefjord in southwestern Norway, northeast of Stavanger, is about 42 km long and up to about 400 m deep below sea level. The name \"Lyse\" means \"bright\", said to come from the sheen of the pale granite on its walls in sunlight. The fjord itself is not large, but two places have made it world-famous: Preikestolen (the Pulpit Rock) on the north side — a level rock platform about 604 m high and roughly 25 m square — and, on the south side, the roughly 1,000 m Kjerag wall with the \"Kjeragbolten\" boulder wedged in a crack.",
+      "The Lysefjord in southwestern Norway, northeast of Stavanger, joins the Boknafjord system through the Høgsfjord and is itself about 42 km long and up to about 400 m deep below sea level. The name \"Lyse\" means \"bright\", said to come from the sheen of the pale granite on its walls in sunlight. The fjord itself is not large, but two places have made it world-famous: Preikestolen (the Pulpit Rock) on the north side — a level rock platform about 604 m high and roughly 25 m square — and, on the south side, the roughly 1,000 m Kjerag wall with the \"Kjeragbolten\" boulder wedged in a crack.",
     formation:
       "The Lysefjord's rock is hard granite-gneiss. In the ice age an ice stream scoured seaward along a structural line in the rock, cutting the fjord deep and straight with near-vertical walls. Preikestolen's flat top comes from a set of horizontal joints in the granite — the ice, and later freeze–thaw, stripped away the rock above the joint plane sheet by sheet, leaving a level platform; there is also a prominent vertical crack along the platform's edge, which it will one day collapse along, though geological surveys show it stable in the short term.",
     observation:
@@ -5925,6 +5972,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   trondheimsfjord: {
+    // seeing sources: 挪威第三长、约 130 公里、最深 617 米（SNL，2 级半官方）；1888 年海底滑坡引发局地海啸（学术文献，3 级）。Tautra 冷水珊瑚礁浅至 39 米属实。
+    //   ⚠️ **「记录鱼类超过 90 种」没找到可核实的独立来源，本轮标 unknown、正文不动** —— 按「拿不准就记 unknown、不要改成另一个没核实的数」处理。下一轮查挪威海洋研究所（Havforskningsinstituttet）或 NINA 的一手鱼类普查数据。2026-09-09 核。
+    //   https://snl.no/Trondheimsfjorden
     seeing:
       "The Trondheimsfjord in central Norway is Norway's third-longest fjord, about 130 km long and up to about 617 m deep. It is very unlike the narrow deep fjords of the west — wide and open, with large areas of shallow water and tidal flats, and its main body ice-free all year. Norway's third-largest city, Trondheim (medieval Nidaros), sits on its middle reach. The fjord is exceptionally rich in life: over 90 recorded fish species, cold-water coral reefs in the deep water, and several of Norway's top salmon rivers entering along its shores.",
     formation:
@@ -5940,8 +5990,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   romsdalen: {
+    // seeing sources: 巨魔墙：**垂直岩壁本身约 1000–1100 米**（SNL 给约 1000，英文维基给 1100）；**谷底到巨魔诸峰顶的总落差约 1700 米** —— 这是两个不同的量。2 级半官方 + 3 级交叉，2026-09-09 核。
+    //   https://snl.no/Trollveggen
+    //   **「一个真数字用在了比它大得多的对象上」第四例**（前三例：埃特勒塔的区域平均退缩速率、苏梅岛的跨海比较、朗德 1949 年大火的累计比例）。这次更隐蔽 —— 两个数字都在同一条目里、都是真的，只是被拼进了同一个主语。
+    //   50 米外倾、1965 年首攀、1980 年代 BASE 跳伞禁令：核实无误。
     seeing:
-      "Romsdalen in western Norway, at the head of the Romsdalsfjord, is a deep U-shaped valley cut by the Rauma River. On its west side stands Trollveggen (the Troll Wall) — the tallest vertical rock face in Europe, a drop of about 1,700 m from the valley floor to the summits of the Troll Peaks above, with the upper part of the wall overhanging its base by nearly 50 m. The valley floor is flat, carrying the Rauma River, European route E136 and the Rauma Line railway side by side, between near-vertical walls and peaks.",
+      "Romsdalen in western Norway, at the head of the Romsdalsfjord, is a deep U-shaped valley cut by the Rauma River. On its west side stands Trollveggen (the Troll Wall) — the tallest vertical rock face in Europe — the sheer wall itself drops about 1,100 m, and with the slopes above it the total relief from the valley floor to the summits of the Troll Peaks is about 1,700 m; the upper part of the wall overhangs its base by nearly 50 m. The valley floor is flat, carrying the Rauma River, European route E136 and the Rauma Line railway side by side, between near-vertical walls and peaks.",
     formation:
       "Romsdalen was originally a river valley; Quaternary glaciers flowed down it repeatedly and dug it deep, widening the V-shaped river valley into a broad, deep U-shaped trough. The walls stand so steep and high because the rock here (gneiss) is very hard and has near-vertical joints — the ice carried away whole blocks outside the joint planes, leaving near-vertical and even overhanging faces. The overhang at the top of the Troll Wall is the result of collapse along a set of joints dipping out of the valley.",
     observation:
@@ -5955,8 +6009,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   gudbrandsdalen: {
+    // seeing sources: 劳根河：源出莱斯耶附近的莱斯耶斯科格湖（海拔 611 米，位于多夫勒山/罗姆斯达尔一带，**不是尤通黑门**）；到姆约萨湖长 202 公里（SNL，2 级半官方；多来源交叉 200–204）。原文的「约特山地」与「约 230 公里」两处都错，2026-09-09 核。
+    //   https://snl.no/Gudbrandsdalsl%C3%A5gen
     seeing:
-      "Gudbrandsdalen in eastern Norway is one of the country's main valleys; the Lågen River (Gudbrandsdalslågen) flows out from the mountains and runs about 230 km southeast down the valley into Lake Mjøsa. The valley is wide and flat, its floor farmland, villages, the E6 highway and the railway, its sides forested slopes tiered with farms and summer dairies. It has been the most important north–south route in eastern Norway.",
+      "Gudbrandsdalen in eastern Norway is one of the country's main valleys; the Lågen River (Gudbrandsdalslågen) rises at Lake Lesjaskogsvatnet near Lesja and runs about 200 km southeast down the valley into Lake Mjøsa. The valley is wide and flat, its floor farmland, villages, the E6 highway and the railway, its sides forested slopes tiered with farms and summer dairies. It has been the most important north–south route in eastern Norway.",
     formation:
       "Gudbrandsdalen broadly follows a north–south structural low; Quaternary glaciers flowed along this low, widening and deepening it into a broad U-shaped valley. After the ice retreated, meltwater piled thick sand and gravel on the valley floor, and the river then shaped meanders and river terraces in this loose material — villages and fields are mostly built on the terraces, above the flood level. At the valley mouth around Lake Mjøsa the river builds a delta.",
     observation:
@@ -5970,8 +6026,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lyngen-alps": {
+    // seeing sources: 冰川数量：多个独立 3 级来源交叉印证约 140 条、总面积约 141 平方公里；**未能定位到 NVE 的分区域一手编目**，因此正文只把量级从「几十条」改成「上百条」、**不写死 140 这个精确数**。2026-09-09 核。
+    //   **这是「3 级来源不能作为最终数字的唯一依据」的一次正面执行**：来源足以证明原来的量级错了，但不足以支撑一个精确值 —— 于是只改到证据能支撑的那一步。下一轮若拿到 NVE 一手数据可补精确数。
+    //   耶克瓦里峰 1834 米核实无误。
     seeing:
-      "The Lyngen Alps in northern Norway, northeast of Tromsø on the Lyngen Peninsula, are a north–south, roughly 90 km ridge of sharp peaks and glaciers, flanked by the Lyngenfjord to the east and the Ullsfjord to the west. The high point, Jiehkkevárri, is 1,834 m. The elevation is modest, but the high latitude, closeness to the sea and very heavy snowfall have grown dozens of small glaciers, with horns and arêtes rising straight from the fjord water — the sense of drop \"from sea level to glacier\" is strong.",
+      "The Lyngen Alps in northern Norway, northeast of Tromsø on the Lyngen Peninsula, are a north–south, roughly 90 km ridge of sharp peaks and glaciers, flanked by the Lyngenfjord to the east and the Ullsfjord to the west. The high point, Jiehkkevárri, is 1,834 m. The elevation is modest, but the high latitude, closeness to the sea and very heavy snowfall have grown well over a hundred small glaciers, with horns and arêtes rising straight from the fjord water — the sense of drop \"from sea level to glacier\" is strong.",
     formation:
       "The Lyngen Alps' rock belongs to sheets stacked up in the Caledonian orogeny, including harder gabbro and peridotite. After uplift, abundant maritime snowfall grew many valley and cirque glaciers, and the ice dug deep along the rock's joints, cutting the ridge into a series of sharp horns, arêtes and cirques, ice still hanging in the cirques today. The fjords are the result of the same glacial action scouring seaward.",
     observation:
@@ -5985,6 +6044,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   mjosa: {
+    // seeing sources: 最深 449 米（NVE 1909 年测量，正文「约 450 米」）、长 117 公里、面积约 365 平方公里（SNL 给 369，约 1% 差异）、湖面海拔约 123 米（SNL 给 122）—— **后两项是取整差异，判定不改**（SNL，2 级半官方）。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Mj%C3%B8sa
     seeing:
       "Lake Mjøsa in eastern Norway is the country's largest lake — about 365 km² in area, up to about 450 m deep, about 117 km long — lying like a wide north–south ribbon in the lower part of Gudbrandsdalen. Hamar is on its east shore, Gjøvik on the west, Lillehammer at the south end; this is a densely settled, agriculturally rich \"lake district\" of Norway. The deepest point of the lake bed lies below sea level — a cryptodepression.",
     formation:
@@ -6006,8 +6067,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Femunden sits on a glacially abraded old bedrock upland, its basin a string of hollows scoured by ice along weak zones in the bedrock and joined up. After the ice retreated the hollows filled with water, and the surrounding moraine and meltwater deposits, regulating inflow and outflow, gave today's shallow, clear, ragged-shored, island-strewn lake. Its water drains eastward, via the Trysil river system into the Klarälven in Sweden and finally to the sea — one of the few places where Norway's drainage runs east across the divide.",
     observation:
       "From the air Lake Femunden is a dark lake with an extremely ragged shoreline, scattered with many small islands and peninsulas, surrounded by low coniferous forest and mire upland with almost no mountains. Femundsmarka on the east shore is a \"stone wilderness\" — glacial boulders everywhere, dwarf pine and lichen growing in the gaps.",
+    // distinguish sources: 费蒙湖最大深度：**SNL 正文给 140 米**（同一页 factbox 里另有 150 米的旧数并存）、英文维基信息框给 150 米 —— **两个来源直接打架，不是取整差异**，按级别取 SNL。2 级半官方 vs 3 级，2026-09-09 核。
+    //   https://snl.no/Femunden
+    //   **冲突本身写在这里**，免得下一轮碰到 150 的人以为我们漏了更新（同一处理见杰古沙龙冰河湖深度 248 vs 284）。面积约 204 平方公里（SNL 给 203，取整差异）、湖面 662 米、几乎无人工调节：核实无误。
     distinguish:
-      "Lake Femunden and Lake Mjøsa are both large Norwegian lakes, but Femunden is far shallower (150 m versus 450 m), sits on the highland, and has a broken, island-strewn shore — it is a \"glacially scoured bedrock-hollow lake\", while Mjøsa is a \"deep long structural-valley lake\". Femunden is also almost unregulated, keeping a natural rhythm of rise and fall. To tell whether a lake is a \"scoured bedrock lake\", look at whether it is shallow, island-rich and very irregular in shore, sitting on polished old bedrock.",
+      "Lake Femunden and Lake Mjøsa are both large Norwegian lakes, but Femunden is far shallower (about 140 m versus about 450 m), sits on the highland, and has a broken, island-strewn shore — it is a \"glacially scoured bedrock-hollow lake\", while Mjøsa is a \"deep long structural-valley lake\". Femunden is also almost unregulated, keeping a natural rhythm of rise and fall. To tell whether a lake is a \"scoured bedrock lake\", look at whether it is shallow, island-rich and very irregular in shore, sitting on polished old bedrock.",
     concept:
       "Lake Femunden is a sample for understanding \"the two sides of a divide\": the great majority of Norway's rivers flow west and south into the Atlantic, but Lake Femunden lies east of the main Scandinavian divide, and its water flows east into Sweden and reaches the sea from the Swedish coast. Which sea a lake's water ends up in depends on which side of the divide it falls on, not which country it is in. A common misconception is that a country's rivers all drain to that country's coast.",
     history:
@@ -6015,6 +6079,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hornindalsvatnet: {
+    // seeing sources: 深 514 米、湖面海拔约 53 米（SNL，2 级半官方）。**「欧洲最深的湖」这个断言本轮专门查过竞争者**：SNL 明确写「挪威最深的四个湖同时也是欧洲最深的四个湖」，拉多加约 230 米、博登约 250 米都远浅于它，贝加尔湖不在欧洲 —— **排名成立、不需要加限定**。长度「约 22 公里」对维基 24 公里属测量口径差异，判定不改。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Hornindalsvatnet
     seeing:
       "Hornindalsvatnet in western Norway is the deepest lake in Europe — about 514 m deep. Its surface is only about 53 m above sea level, so the lake bed is about 460 m below sea level. The lake is about 22 km long and narrow, set between steep slopes, shaped like a straightened-out fjord. Because no river carrying glacial sediment enters it, the water is exceptionally clear, ink-blue at depth.",
     formation:
@@ -6062,8 +6128,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   varangerhalvoya: {
+    // seeing sources: 「唯一」的对象改了：挪威南部高山（多夫勒山、尤通黑门）在约 1450–1490 米以上同样有多年冻土（探地雷达/电阻率探测论文证实），**同批的 dovrefjell 条目自己就写了那里是典型的冰缘地貌** —— 原句按字面把它们排除了。真正独特的是**纬度驱动、低地也常年冻结的低北极带**（国家公园官网：「Subarctic meets Low Arctic」）。级别 1 + 3 级学术论文，2026-09-09 核。
+    //   https://varangerhalvoya.no/en/about-the-national-park/
+    //   **这一条的形状：「唯一」用对了地方就是有信息量的，用错了对象就是错的** —— 修法不是删掉「唯一」，而是把它挪到真正成立的那个限定上。
+    //   Bigganjarga 冰碛岩 1891 年首次记述、对应马里诺期冰期（约 6.45–6.35 亿年前）、「瓦兰吉尔冰期」以此地命名、雪球地球的国际地质遗产点：核实无误。**零争议红线本轮逐句复核：通过。**
     seeing:
-      "The Varanger Peninsula in Norway's far northeast juts into the Barents Sea, with the Varangerfjord to its south. It is the only place on mainland Norway with true Arctic tundra and permafrost — the interior of the peninsula is a low, gently rolling upland, large expanses of unvegetated block field, its climate and landscape closer to an Arctic island than to the rest of Norway. Most of the peninsula is Varangerhalvøya National Park.",
+      "The Varanger Peninsula in Norway's far northeast juts into the Barents Sea, with the Varangerfjord to its south. It is the only place on mainland Norway where tundra and permafrost are set by latitude rather than altitude, staying frozen year-round even in the lowlands (Norway's southern mountains such as Dovrefjell and Jotunheimen also carry permafrost, but that is altitude-driven alpine permafrost, a different thing) — the interior of the peninsula is a low, gently rolling upland, large expanses of unvegetated block field, its climate and landscape closer to an Arctic island than to the rest of Norway. Most of the peninsula is Varangerhalvøya National Park.",
     formation:
       "The Varanger Peninsula's surface is to a large extent pre-last-ice-age — during the ice age the ice sheet lay over the peninsula essentially without flowing and did almost nothing to the terrain, so it keeps its old, slowly weathered upland surface and block field (felsenmeer, a \"sea of stones\"). The bedrock is weakly metamorphosed Neoproterozoic to Early Cambrian sedimentary rock with clear bedding. The peninsula's edges have raised coastal terraces in steps, recording post-glacial land rebound.",
     observation:

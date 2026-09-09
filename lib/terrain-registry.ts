@@ -3293,9 +3293,9 @@ const MOUNT_TARANAKI: TerrainEntry = {
   bbox: [173.85, -39.52, 174.28, -39.07],
   label: { lon: 174.064, lat: -39.296, rotation: 0 },
   pois: [
-    { name: "埃格蒙特国家公园圆形边界", lon: 174.09, lat: -39.30, note: "1881年沿距峰顶约9.6km画的近乎正圆的森林保护线，空中看林、牧分明" },
+    { name: "国家公园圆形边界（Te Papa-Kura-o-Taranaki，原埃格蒙特国家公园）", lon: 174.09, lat: -39.30, note: "1881年沿距峰顶约9.6km画的近乎正圆的森林保护线，空中看林、牧分明" },
   ],
-  source: "塔拉纳基山：近乎对称的安山质层状火山，2518m；官方名2025年定为Taranaki Maunga（此前作Mount Taranaki或Mount Egmont）（GNS Science / DOC / LINZ）",
+  source: "塔拉纳基山：近乎对称的安山质层状火山，2518m；官方名2025年定为Taranaki Maunga（此前作Mount Taranaki或Mount Egmont）；同年4月1日国家公园官方名由Egmont National Park改为Te Papa-Kura-o-Taranaki（GNS Science / DOC / LINZ，核实2026-09-09）",
 };
 
 const TASMAN_GLACIER: TerrainEntry = {
