@@ -5600,9 +5600,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   并补上此前缺的 identity 来源留痕。
     identity:
       "博洛尼亚在意大利东北部、亚平宁山脉北麓的波河平原边缘，大都会市（Città Metropolitana）55 个市镇约 102 万人（2026 年 1 月 1 日估计，ISTAT），是艾米利亚-罗马涅大区首府。它拥有世界上持续运作历史最悠久的大学（博洛尼亚大学，创立于 1088 年），也被公认为意大利的美食之都之一——博洛尼亚肉酱面、帕尔玛干酪、帕尔玛火腿等名菜都产自这一带。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bologna (comune 140.9 km²; ~390,700; 6 quartieri; Metropolitan City of Bologna 55 comuni ~1 million; Emilia-Romagna capital; porticoes UNESCO 2021, ~38 km in the centre; Two Towers; university 1088 oldest; Centrale high-speed junction; Marconi airport with monorail)
+    // howItWorks sources: **意大利的官方人口口径**（ISTAT，2026-09-09 复核）：`comune`（市镇常住人口）是唯一严格意义上的统计口径，逐月滚动、按 1 月 1 日定案，当年临时数约次年 3 月上线；`città metropolitana`（大都会市）**是 2015 年起取代省的行政建制、不是统计口径**，数字为辖内各 comune 相加，会随行政区划改革变动。「市区人口」「都会区」在意大利官方统计里都不存在，已由 `check:claims` 的 `C6k` 拦住。
+    //   独立复核：comune 391,473、大都会市（55 市镇）1,024,290，均为 2026-01-01（ISTAT）。数字准确，**缺的是统计时点**。 3 级转引 ISTAT，2026-09-09 独立复核（本批意大利 6 城此前已有 2026-09-08 的核实痕迹，本轮是**复核**，全部与 ISTAT 对上）。
+    //   https://www.istat.it/
     howItWorks:
-      "博洛尼亚是艾米利亚—罗马涅大区的首府，由市长和市议会治理，市下分 6 个区（quartiere）；市域约 141 平方公里，人口约 39 万，而取代省而设的博洛尼亚大都会市有 55 个市镇、约 100 万人。老城的柱廊是它的形制：市中心约 38 公里的连续拱廊 2021 年列入世界遗产，下雨天可以不打伞穿过半座城，两座斜塔立在老城中央，马焦雷广场是坐标原点；1088 年创办的博洛尼亚大学是世界上连续办学最久的大学，学生让这座城比周围年轻；博洛尼亚中央站是意大利南北与东西高铁的十字路口，马可尼机场有单轨直达车站，肉酱面与火腿是这一带的日常。初来的人最容易犯的错，是把博洛尼亚当作一个换乘站，而它是意大利的美食之都与最老的大学城。",
+      "博洛尼亚是艾米利亚—罗马涅大区的首府，由市长和市议会治理，市下分 6 个区（quartiere）；市域约 141 平方公里，2026 年 1 月 1 日人口约 39.1 万，而取代省而设的博洛尼亚大都会市有 55 个市镇、约 102 万人。老城的柱廊是它的形制：市中心约 38 公里的连续拱廊 2021 年列入世界遗产，下雨天可以不打伞穿过半座城，两座斜塔立在老城中央，马焦雷广场是坐标原点；1088 年创办的博洛尼亚大学是世界上连续办学最久的大学，学生让这座城比周围年轻；博洛尼亚中央站是意大利南北与东西高铁的十字路口，马可尼机场有单轨直达车站，肉酱面与火腿是这一带的日常。初来的人最容易犯的错，是把博洛尼亚当作一个换乘站，而它是意大利的美食之都与最老的大学城。",
     layout:
       "博洛尼亚老城以两座斜塔（阿西内利塔和加里森达塔）为地标，全城连拱廊总长约 62 公里（历史中心区约 42 公里）是它最独特的城市景观，几乎可以在雨天不打伞走遍全城；2021 年其中 12 段最具代表性的拱廊列入世界遗产。马焦雷广场是市中心核心，圣白托略圣殿在广场南侧。老城因大量红砖建筑被称为“红色之城”。",
     gettingAround:
@@ -5616,12 +5618,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   naples: {
-    // identity sources: 那不勒斯 comune 约 90 万；**那不勒斯大都会市（2015 年取代省而设，辖 92 个市镇）约 295 万**，
-    //   是欧洲人口最密集的地区之一 —— 与同条目 howItWorks 及既有注释一致，2026-09-08 复核。
-    //   **注释里早已标明「行政建制，不是统计口径」，正文 identity 却还在用「都会区」** ——
-    //   典型的 C6-h（注释写对了、正文没同步）。
+    // identity sources: **意大利的官方人口口径**（ISTAT，2026-09-09 复核）：`comune`（市镇常住人口）是唯一严格意义上的统计口径，逐月滚动、按 1 月 1 日定案，当年临时数约次年 3 月上线；`città metropolitana`（大都会市）**是 2015 年起取代省的行政建制、不是统计口径**，数字为辖内各 comune 相加，会随行政区划改革变动。「市区人口」「都会区」在意大利官方统计里都不存在，已由 `check:claims` 的 `C6k` 拦住。
+    //   独立复核：大都会市（92 市镇）约 295.1 万、comune 本身 905,050，均为 2026-01-01（ISTAT）。数字准确，缺年份。 3 级转引 ISTAT，2026-09-09 独立复核（本批意大利 6 城此前已有 2026-09-08 的核实痕迹，本轮是**复核**，全部与 ISTAT 对上）。
+    //   https://www.istat.it/
     identity:
-      "那不勒斯在意大利南部、那不勒斯湾畔，大都会市（Città Metropolitana，92 个市镇）约 295 万人，是意大利南方最大的城市、地中海历史最悠久的城市之一（公元前 6 世纪由希腊人建立）。这里是玛格丽塔披萨的发源地，城市气质喧闹、密集、充满生活气息，与北方城市的秩序感形成鲜明对比。维苏威火山就在海湾对岸，公元 79 年的喷发掩埋了庞贝古城。",
+      "那不勒斯在意大利南部、那不勒斯湾畔，大都会市（Città Metropolitana，92 个市镇）2026 年约 295 万人，是意大利南方最大的城市、地中海历史最悠久的城市之一（公元前 6 世纪由希腊人建立）。这里是玛格丽塔披萨的发源地，城市气质喧闹、密集、充满生活气息，与北方城市的秩序感形成鲜明对比。维苏威火山就在海湾对岸，公元 79 年的喷发掩埋了庞贝古城。",
     // howItWorks sources: Wikipedia (2026-09): Naples (10 municipalità; ~119 km²; ~905,000 2026; Metropolitan City 92 comuni ~2.95 million; centro storico UNESCO 1995; funiculars; metro 1/2/6); Comune
     howItWorks:
       "那不勒斯是坎帕尼亚大区的首府，由市长和市议会治理，市下分 10 个区（municipalità）；市域约 119 平方公里，人口约 90 万，是意大利第三大城市，而 2015 年取代省而设的那不勒斯大都会市有 92 个市镇、约 295 万人，是欧洲人口最密集的地区之一。老城沿希腊罗马时代的格网铺开，Spaccanapoli 这条直街把它一切为二，1995 年列入世界遗产；西班牙区在老城西侧，沃梅罗在山上，基亚亚与波西利波是海边的富裕街区，中央商务区是 1980 年代建的高楼群。缆车把山上与山下连起来，1、2、6 号地铁线连起市区。维苏威火山在东南，坎皮弗莱格雷火山区在西面，城市就在两者之间。地址写“街道、门牌、邮编”。初来的人最容易犯的错，是把老城的喧闹当作整座城，而山上与海边的那不勒斯是另一种秩序。",
@@ -5645,9 +5646,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   howItWorks 段本来就是对的，identity 的「都会区约 75 万」哪一档都不是，已对齐。
     identity:
       "巴里在意大利东南部普利亚大区、亚得里亚海边，大都会市（città metropolitana）约 122 万人（2026 年，ISTAT），是普利亚大区首府，也是意大利通往希腊、阿尔巴尼亚等巴尔干国家的重要渡轮港口。城市以圣尼古拉（Santa Claus 原型圣人之一）的圣髑安放地闻名，老城是一片保存完好的白色石灰岩巷弄。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bari (comune 117.4 km²; ~316,000; municipi; Metropolitan City of Bari ~1.2 million; Apulia capital; Bari Vecchia peninsula with San Nicola; Murat grid 19th c.; lungomare; ferries to Greece/Albania/Montenegro; airport; Fiera del Levante)
+    // howItWorks sources: **意大利的官方人口口径**（ISTAT，2026-09-09 复核）：`comune`（市镇常住人口）是唯一严格意义上的统计口径，逐月滚动、按 1 月 1 日定案，当年临时数约次年 3 月上线；`città metropolitana`（大都会市）**是 2015 年起取代省的行政建制、不是统计口径**，数字为辖内各 comune 相加，会随行政区划改革变动。「市区人口」「都会区」在意大利官方统计里都不存在，已由 `check:claims` 的 `C6k` 拦住。
+    //   独立复核：comune 316,248、大都会市（41 市镇）1,218,073，均为 2026-01-01（ISTAT）。数字准确，缺时点。 3 级转引 ISTAT，2026-09-09 独立复核（本批意大利 6 城此前已有 2026-09-08 的核实痕迹，本轮是**复核**，全部与 ISTAT 对上）。
+    //   https://www.istat.it/
     howItWorks:
-      "巴里是普利亚大区的首府，由市长和市议会治理；市域约 117 平方公里，人口约 32 万，而取代省而设的巴里大都会市有 41 个市镇、约 120 万人。城市分两片：伸进亚得里亚海的半岛上是老城巴里维基亚，圣尼古拉大教堂与诺曼—施瓦本城堡在里面，1087 年圣尼古拉的圣髑从米拉运到这里，手擀耳朵面的街巷是它的日常；老城以南是 19 世纪的穆拉特新区，方格街道与商业街在这里，海滨大道沿海岸展开；港口有开往希腊、阿尔巴尼亚与黑山的渡轮，机场在城西，东方博览会每年秋天举行。初来的人最容易犯的错，是把巴里当作去阿尔贝罗贝洛或马泰拉的中转站，而它是意大利南方大陆最重要的经济中心之一。",
+      "巴里是普利亚大区的首府，由市长和市议会治理；市域约 117 平方公里，2026 年 1 月 1 日人口约 31.6 万，而取代省而设的巴里大都会市有 41 个市镇、约 122 万人。城市分两片：伸进亚得里亚海的半岛上是老城巴里维基亚，圣尼古拉大教堂与诺曼—施瓦本城堡在里面，1087 年圣尼古拉的圣髑从米拉运到这里，手擀耳朵面的街巷是它的日常；老城以南是 19 世纪的穆拉特新区，方格街道与商业街在这里，海滨大道沿海岸展开；港口有开往希腊、阿尔巴尼亚与黑山的渡轮，机场在城西，东方博览会每年秋天举行。初来的人最容易犯的错，是把巴里当作去阿尔贝罗贝洛或马泰拉的中转站，而它是意大利南方大陆最重要的经济中心之一。",
     layout:
       "巴里老城（Bari Vecchia）建在一个伸入海中的小半岛上，街道狭窄曲折像迷宫，圣尼古拉圣殿和主教座堂都在这里。新城区呈规整网格，19 世纪按当时的规划理念建造，与老城形成鲜明对比。城市往内陆是普利亚典型的橄榄园平原，往北是阿尔塔穆尔杰石灰岩台地，往北再远一些是加尔加诺半岛。",
     gettingAround:
@@ -5661,10 +5664,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   palermo: {
-    // identity sources: 巴勒莫 comune 2026 年约 63 万；**巴勒莫大都会市（82 个市镇）约 120 万** ——
-    //   与同条目 howItWorks 一致，2026-09-08 复核。identity 原本写「都会区约 130 万」，称谓与数字都不对。
+    // identity sources: **意大利的官方人口口径**（ISTAT，2026-09-09 复核）：`comune`（市镇常住人口）是唯一严格意义上的统计口径，逐月滚动、按 1 月 1 日定案，当年临时数约次年 3 月上线；`città metropolitana`（大都会市）**是 2015 年起取代省的行政建制、不是统计口径**，数字为辖内各 comune 相加，会随行政区划改革变动。「市区人口」「都会区」在意大利官方统计里都不存在，已由 `check:claims` 的 `C6k` 拦住。
+    //   独立复核：comune 626,273、大都会市（82 市镇）约 120 万，均为 2026 年（ISTAT）。数字准确，缺年份。 3 级转引 ISTAT，2026-09-09 独立复核（本批意大利 6 城此前已有 2026-09-08 的核实痕迹，本轮是**复核**，全部与 ISTAT 对上）。
+    //   https://www.istat.it/
     identity:
-      "巴勒莫是西西里岛首府，位于岛屿西北岸的一个海湾边，大都会市（Città Metropolitana，82 个市镇）约 120 万人，历史上先后被腓尼基人、希腊人、罗马人、阿拉伯人、诺曼人统治，建筑和文化因此融合了地中海多种传统，诺曼-阿拉伯风格的宫殿和教堂是巴勒莫最独特的标志，已列入世界遗产。",
+      "巴勒莫是西西里岛首府，位于岛屿西北岸的一个海湾边，大都会市（Città Metropolitana，82 个市镇）2026 年约 120 万人，历史上先后被腓尼基人、希腊人、罗马人、阿拉伯人、诺曼人统治，建筑和文化因此融合了地中海多种传统，诺曼-阿拉伯风格的宫殿和教堂是巴勒莫最独特的标志，已列入世界遗产。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Palermo (comune 161 km²; 626,273 2026; 8 circoscrizioni; Metropolitan City of Palermo ~1.2 million; capital of the autonomous Sicilian Region with its own parliament; Arab-Norman UNESCO 2015 with Monreale and Cefalù in other comuni; Quattro Canti; Ballarò/Vucciria/Capo markets; Mondello in comune; Punta Raisi airport ~35 km)
     howItWorks:
       "巴勒莫是西西里大区的首府，西西里是意大利的自治大区，有自己的议会与立法权；市镇由市长和市议会治理，市下分 8 个区，市域约 161 平方公里，2026 年人口约 63 万，大都会市有 82 个市镇、约 120 万人。城市在一片被山围住的“金色盆地”里，四角场是老城十字街的交点，巴拉罗、乌奇利亚与卡波三个市场至今是阿拉伯式的叫卖，2015 年列入世界遗产的“阿拉伯—诺曼式巴勒莫”包括王宫的帕拉蒂那礼拜堂，但同一项遗产里的蒙雷阿莱大教堂在 8 公里外的另一个市镇，切法卢在更远的海边；蒙德罗的海滩在市域北端，机场在西面 35 公里。初来的人最容易犯的错，是以为蒙雷阿莱在巴勒莫城里，而它是山上的另一座市镇。",
@@ -5688,9 +5692,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   「西西里第二大城市」按 comune 人口成立（巴勒莫 comune 约 62.6 万）。
     identity:
       "卡塔尼亚在西西里岛东岸，紧挨着欧洲最高的活火山埃特纳，大都会市（città metropolitana）约 107 万人（2026 年，ISTAT）。城市历史上多次被埃特纳火山的熔岩流和地震摧毁又重建，现在的巴洛克风格老城建于 1693 年大地震之后，大量用埃特纳的黑色火山岩建造，因此又被称为“黑色巴洛克之城”，已列入世界遗产。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Catania (comune 183 km²; ~297,000; Metropolitan City of Catania 58 comuni ~1.07 million; second city of Sicily; Etna, comune reaches the slopes; Baroque centre rebuilt after 1693, Val di Noto UNESCO 2002; Piazza Duomo elephant; via Etnea; metro 1 line; Fontanarossa busiest in Sicily; university 1434)
+    // howItWorks sources: **意大利的官方人口口径**（ISTAT，2026-09-09 复核）：`comune`（市镇常住人口）是唯一严格意义上的统计口径，逐月滚动、按 1 月 1 日定案，当年临时数约次年 3 月上线；`città metropolitana`（大都会市）**是 2015 年起取代省的行政建制、不是统计口径**，数字为辖内各 comune 相加，会随行政区划改革变动。「市区人口」「都会区」在意大利官方统计里都不存在，已由 `check:claims` 的 `C6k` 拦住。
+    //   独立复核：comune 296,984、大都会市（58 市镇）1,067,550，均为 2026-01-01（ISTAT）。数字准确，缺时点。 3 级转引 ISTAT，2026-09-09 独立复核（本批意大利 6 城此前已有 2026-09-08 的核实痕迹，本轮是**复核**，全部与 ISTAT 对上）。
+    //   https://www.istat.it/
     howItWorks:
-      "卡塔尼亚是西西里的第二大城市，由市长和市议会治理，市域约 183 平方公里，人口约 30 万，大都会市有 58 个市镇、约 107 万人；西西里是自治大区，有自己的议会。城市建在埃特纳火山的东南脚下，市域一直伸到火山的坡上，1669 年的熔岩与 1693 年的地震毁了旧城，之后用黑色火山岩与白石重建，这批巴洛克建筑 2002 年作为“诺托谷晚期巴洛克城镇”列入世界遗产；大教堂广场的象雕是城市的标志，埃特内亚大道从广场笔直向北指向火山，鱼市在广场背后；一条地铁线连起市区，丰塔纳罗萨机场是西西里最繁忙的，1434 年创办的大学是岛上最老的。初来的人最容易犯的错，是把卡塔尼亚当作陶尔米纳的机场，而它是一座三十万人的巴洛克城市。",
+      "卡塔尼亚是西西里的第二大城市，由市长和市议会治理，市域约 183 平方公里，2026 年 1 月 1 日人口约 29.7 万，大都会市有 58 个市镇、约 107 万人；西西里是自治大区，有自己的议会。城市建在埃特纳火山的东南脚下，市域一直伸到火山的坡上，1669 年的熔岩与 1693 年的地震毁了旧城，之后用黑色火山岩与白石重建，这批巴洛克建筑 2002 年作为“诺托谷晚期巴洛克城镇”列入世界遗产；大教堂广场的象雕是城市的标志，埃特内亚大道从广场笔直向北指向火山，鱼市在广场背后；一条地铁线连起市区，丰塔纳罗萨机场是西西里最繁忙的，1434 年创办的大学是岛上最老的。初来的人最容易犯的错，是把卡塔尼亚当作陶尔米纳的机场，而它是一座三十万人的巴洛克城市。",
     layout:
       "卡塔尼亚老城以主教座堂广场为核心，广场中央的“大象喷泉”（用一座古罗马黑色玄武岩象雕做基座）是城市象征。老城街道用黑色火山岩铺就，建筑立面也常见黑白相间的火山岩装饰。城市西北方向就是埃特纳火山，晴天能看到山顶的烟柱。",
     gettingAround:
@@ -5732,9 +5738,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   verona: {
     identity:
       "维罗纳在意大利东北部阿迪杰河的河湾里，人口约25.5万（2025年）。公元一世纪建成的维罗纳竞技场是意大利保存最完好的罗马圆形剧场之一，自1913年起每年夏季举办歌剧节；莎士比亚把《罗密欧与朱丽叶》设定在这里，朱丽叶之家的阳台每天挤满游客。老城的百草广场（古罗马广场遗址）、斯卡拉家族的老城堡和圣泽诺大殿代表了从罗马到中世纪的层层历史，2000年整座老城列入世界遗产。加尔达湖在西面约30公里。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Verona (comune 206 km²; ~255,000; 8 circoscrizioni; Province of Verona, Veneto; Adige bend; Arena with opera festival, 25,000 seats originally; Piazza delle Erbe; UNESCO 2000; Castelvecchio; rail junction Milan–Venice/Brenner, ~68,000 passengers/day; Villafranca airport; Lake Garda ~30 km; Vinitaly)
+    // howItWorks sources: **意大利的官方人口口径**（ISTAT，2026-09-09 复核）：`comune`（市镇常住人口）是唯一严格意义上的统计口径，逐月滚动、按 1 月 1 日定案，当年临时数约次年 3 月上线；`città metropolitana`（大都会市）**是 2015 年起取代省的行政建制、不是统计口径**，数字为辖内各 comune 相加，会随行政区划改革变动。「市区人口」「都会区」在意大利官方统计里都不存在，已由 `check:claims` 的 `C6k` 拦住。
+    //   数字与同条目 identity 一致（约 25.5 万 / 2025 年），**只是 howItWorks 段没写年份 —— 典型的「同一条目两段各写各的」**。未找到更新一期的维罗纳 comune 数（ISTAT 的 2026-01-01 数据要到 2026 年下半年才滚动上线，属正常滞后、不算过期）。 3 级转引 ISTAT，2026-09-09 独立复核（本批意大利 6 城此前已有 2026-09-08 的核实痕迹，本轮是**复核**，全部与 ISTAT 对上）。
+    //   https://www.istat.it/
     howItWorks:
-      "维罗纳是威尼托大区维罗纳省的省会，由市长和市议会治理，市下分 8 个区；市域约 206 平方公里，人口约 25.5 万。老城在阿迪杰河的一个大河湾里，2000 年整片列入世界遗产：罗马时期的竞技场就在市中心的布拉广场上，如今是夏天的露天歌剧场，草药广场是罗马集市的原址，斯卡拉家族 13 至 14 世纪统治这里，老城堡与桥是他们留下的；莎士比亚把《罗密欧与朱丽叶》放在这座城里，朱丽叶的阳台是后世的附会；火车站是米兰—威尼斯与布伦纳山口两条干线的交点，每天约 6.8 万旅客，机场在西南的维拉弗兰卡，加尔达湖在西面 30 公里，瓦尔波利切拉的酒庄在城北。初来的人最容易犯的错，是把维罗纳当作一处爱情景点，而它是意大利北部的铁路枢纽与葡萄酒之都。",
+      "维罗纳是威尼托大区维罗纳省的省会，由市长和市议会治理，市下分 8 个区；市域约 206 平方公里，2025 年人口约 25.5 万。老城在阿迪杰河的一个大河湾里，2000 年整片列入世界遗产：罗马时期的竞技场就在市中心的布拉广场上，如今是夏天的露天歌剧场，草药广场是罗马集市的原址，斯卡拉家族 13 至 14 世纪统治这里，老城堡与桥是他们留下的；莎士比亚把《罗密欧与朱丽叶》放在这座城里，朱丽叶的阳台是后世的附会；火车站是米兰—威尼斯与布伦纳山口两条干线的交点，每天约 6.8 万旅客，机场在西南的维拉弗兰卡，加尔达湖在西面 30 公里，瓦尔波利切拉的酒庄在城北。初来的人最容易犯的错，是把维罗纳当作一处爱情景点，而它是意大利北部的铁路枢纽与葡萄酒之都。",
     layout:
       "老城在阿迪杰河的一个大河湾里，几乎被河三面环绕：布拉广场和竞技场在南端入口，从这里沿马志尼街走到百草广场和领主广场（但丁像、斯卡拉家族墓），朱丽叶之家在百草广场旁的小街上；主教座堂在老城北端，老城堡和斯卡拉桥在西侧河边。河对岸是罗马剧场和圣彼得城堡观景台。圣泽诺大殿在老城西面约1公里。新门火车站在老城南面约1.5公里，机场在西南约10公里。",
     gettingAround:
@@ -6249,11 +6257,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   berlin: {
+    // identity sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
+    //   柏林 2025-12-31：官方人口推算（Zensus 2022 基准）**3,700,577**；居民登记统计 **3,913,644**（差约 21.3 万）。正文用的是前者、数字准确。级别 1，2026-09-09 核。
+    //   https://www.statistik-berlin-brandenburg.de/presse/2026/16-einwohnerregisterstatistik/
+    //   **两套数并存这件事本身要写在这里** —— 下一轮碰到 391 万的人才不会以为我们漏了更新（同一处理见杰古沙龙湖深、费蒙湖深）。
     identity:
-      "柏林是德国首都，人口约370万，是德国人口最多的城市，位于德国东北部平原。1990年两德统一前，柏林曾被柏林墙分割为东西两部分近30年，如今这段历史在城市的博物馆、纪念地和部分保留的墙体遗迹中随处可见。",
+      "柏林是德国首都，2025 年末人口约370万（柏林-勃兰登堡统计局的官方人口推算），是德国人口最多的城市，位于德国东北部平原。1990年两德统一前，柏林曾被柏林墙分割为东西两部分近30年，如今这段历史在城市的博物馆、纪念地和部分保留的墙体遗迹中随处可见。",
     // howItWorks sources: Wikipedia (2026-09): Berlin (city-state; 12 Bezirke without own budgets; 891 km²; ~3.7 million; S-Bahn ring; VBB zones A/B/C); States of Germany
     howItWorks:
-      "柏林既是德国的首都，也是 16 个联邦州之一——一座“城市州”，由执政市长和参议院治理，州议会同时也是市议会。市下分 12 个区（Bezirk），各区有民选的区议会和区政府，但没有独立的预算，财政由州统一掌握。冷战的分割留下了多中心的格局：东面的米特区是历史中心与政府所在，西面的选帝侯大街一带是“西城”，两者各有自己的商业街和地标；环形的 S-Bahn 线是本地人心里内城的边界。面积约 891 平方公里，人口约 370 万，四周被勃兰登堡州整个包围，波茨坦就在西南。地址写“街道、门牌、邮编”，公共交通按 A、B、C 三个票价区计价，C 区已在勃兰登堡。初来的人最容易犯的错，是寻找一个唯一的市中心，而柏林至今有两个。",
+      "柏林既是德国的首都，也是 16 个联邦州之一——一座“城市州”，由执政市长和参议院治理，州议会同时也是市议会。市下分 12 个区（Bezirk），各区有民选的区议会和区政府，但没有独立的预算，财政由州统一掌握。冷战的分割留下了多中心的格局：东面的米特区是历史中心与政府所在，西面的选帝侯大街一带是“西城”，两者各有自己的商业街和地标；环形的 S-Bahn 线是本地人心里内城的边界。面积约 891 平方公里，2025 年末人口约 370 万（官方人口推算口径），四周被勃兰登堡州整个包围，波茨坦就在西南。地址写“街道、门牌、邮编”，公共交通按 A、B、C 三个票价区计价，C 区已在勃兰登堡。初来的人最容易犯的错，是寻找一个唯一的市中心，而柏林至今有两个。",
     layout:
       "博物馆岛（施普雷河中的一座岛，集中了五座国家级博物馆）和勃兰登堡门是市中心的地标；查理检查站一带保留着冷战时期的边境哨所遗迹；东区画廊是一段保留下来的柏林墙，被涂满壁画。城市整体面积很大，各区（如克罗伊茨贝格、腓特烈斯海因）风格各异。",
     gettingAround:
@@ -6373,9 +6385,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   dresden: {
     identity:
       "德累斯顿是萨克森州首府，坐落在易北河畔，以保存完好的巴洛克老城和丰富的艺术收藏闻名，历史上曾被称为“易北河畔的佛罗伦萨”。是探访萨克森瑞士砂岩地貌的门户城市。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Dresden (capital of Saxony; ~565,000, urban area ~790,000, second in Saxony after Leipzig; Elbe; Frauenkirche rebuilt 1994–2005, Zwinger, Semperoper, State Art Collections; "Elbflorenz"; February 1945 bombing destroyed the centre; Elbe Valley UNESCO 2004, delisted 2009 over a bridge; Silicon Saxony; 4.7 million overnight stays)
+    // howItWorks sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
+    //   德累斯顿市居民登记 **571,510（2025-12-31）**，市官网（级别 1）；原文的 56.5 万取自 en.wikipedia 的滞后估计值。2026-09-09 核。
+    //   https://www.dresden.de/de/leben/stadtportrait/statistik/bevoelkerung-gebiet/Bevoelkerungsbestand.php
+    //   ⚠️ **「城市连绵区约 79 万」已从正文撤下**：市官网的 Ballungsraum Dresden 是**欧盟噪声地图指令下的行政边界**（用于环境噪声监测），不同年份/口径在 75–80 万之间摆动，本轮没能拿到标明基准年的一手文件 —— 按既定做法，拿不到基准年的数字不留在正文里（同处理见伯尔尼集聚区）。
     howItWorks:
-      "德累斯顿是萨克森州的州府，人口约 56.5 万，城市连绵区约 79 万，是州内第二大城市——最大的是莱比锡；市议会与州议会都在城里，警察与学校归州。易北河把城市分成两岸：南岸的老城是奥古斯特二世时代的巴洛克建筑群，茨温格宫、森佩尔歌剧院与国家艺术收藏馆在这里，圣母教堂 1994 至 2005 年按原样重建，成为战后重建的象征；北岸的新城区是酒吧与年轻人的街区。1945 年 2 月的轰炸摧毁了整个市中心，约两万五千人遇难；易北河谷 2004 年列入世界遗产，2009 年因新建的大桥被除名。半导体产业让这一带被称为“硅萨克森”，撒克逊小瑞士在东南 30 公里。初来的人最容易犯的错，是把德累斯顿当作萨克森最大的城市，而莱比锡比它大。",
+      "德累斯顿是萨克森州的州府，2025 年末居民登记人口约 57.2 万，是州内第二大城市——最大的是莱比锡；市议会与州议会都在城里，警察与学校归州。易北河把城市分成两岸：南岸的老城是奥古斯特二世时代的巴洛克建筑群，茨温格宫、森佩尔歌剧院与国家艺术收藏馆在这里，圣母教堂 1994 至 2005 年按原样重建，成为战后重建的象征；北岸的新城区是酒吧与年轻人的街区。1945 年 2 月的轰炸摧毁了整个市中心，约两万五千人遇难；易北河谷 2004 年列入世界遗产，2009 年因新建的大桥被除名。半导体产业让这一带被称为“硅萨克森”，撒克逊小瑞士在东南 30 公里。初来的人最容易犯的错，是把德累斯顿当作萨克森最大的城市，而莱比锡比它大。",
     layout:
       "茨温格宫、圣母教堂、德累斯顿城堡集中在老城核心区，沿易北河一线展开，是德国保存最完整的巴洛克城市景观之一；新城区在河对岸，是更年轻、更有活力的街区。",
     gettingAround:
@@ -6391,9 +6406,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   nuremberg: {
     identity:
       "纽伦堡是巴伐利亚州第二大城市，保留着德国最典型的中世纪老城风貌，是通往弗兰肯汝拉山和弗兰肯葡萄酒产区的门户，也是德国传统圣诞市场文化的代表城市之一。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Nuremberg (Bavaria, capital of Middle Franconia; ~529,500, second in Bavaria; metropolitan region ~3.6 million; Fürth adjoining; Free Imperial City, Imperial Regalia 1424–1806; Dürer; Kaiserburg; bombing of 2 January 1945 destroyed about eighty per cent of the old town; Nuremberg trials 1945–46; Christkindlesmarkt; Toy Fair; first German railway 1835 to Fürth)
+    // howItWorks sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
+    //   纽伦堡 **531,159（2025-12-31）**，巴伐利亚州统计局报表（级别 1）。
+    //   https://www.statistik.bayern.de/mam/produkte/veroffentlichungen/statistische_berichte/a1210c_202500.pdf
+    //   欧洲纽伦堡都市区 **3,572,122（2025-12-31）**，由都市区协会自己发布 —— **MKRO 认定的官方都市区，但不是 Destatis 的统计口径**（2/3 级）。做法与瑞士的巴塞尔三国区、瑞典的 Göteborgsregionen、捷克布拉格的 Eurostat FUA 一致：**写明发布方与年份，不删这个词**。
     howItWorks:
-      "纽伦堡是巴伐利亚州第二大城市与中弗兰肯行政区的首府，人口约 53 万，都会区约 360 万，紧邻的菲尔特是另一座独立的市；市议会管地方服务，警察与学校归州。老城被中世纪的城墙围着，皇帝堡在北端的岩丘上，1424 至 1806 年帝国宝物存放在这里，丢勒的故居在城内，佩格尼茨河从城中穿过；1945 年 1 月 2 日的一次轰炸摧毁了约八成的老城，战后按原貌重建，同年起的纽伦堡审判在司法宫的 600 号法庭举行，帝国党代会旧址如今是文献中心。圣诞市场与国际玩具展是它每年的两件大事，1835 年德国第一条铁路从这里通往菲尔特，地铁有全自动线路。弗兰肯人的口音与身份与巴伐利亚南部不同。初来的人最容易犯的错，是把纽伦堡当作巴伐利亚的一部分来理解，而弗兰肯有自己的方言、啤酒与香肠。",
+      "纽伦堡是巴伐利亚州第二大城市与中弗兰肯行政区的首府，2025 年末人口约 53.1 万，欧洲纽伦堡都市区约 357 万人（由都市区协会自己发布，不是联邦统计局的口径），紧邻的菲尔特是另一座独立的市；市议会管地方服务，警察与学校归州。老城被中世纪的城墙围着，皇帝堡在北端的岩丘上，1424 至 1806 年帝国宝物存放在这里，丢勒的故居在城内，佩格尼茨河从城中穿过；1945 年 1 月 2 日的一次轰炸摧毁了约八成的老城，战后按原貌重建，同年起的纽伦堡审判在司法宫的 600 号法庭举行，帝国党代会旧址如今是文献中心。圣诞市场与国际玩具展是它每年的两件大事，1835 年德国第一条铁路从这里通往菲尔特，地铁有全自动线路。弗兰肯人的口音与身份与巴伐利亚南部不同。初来的人最容易犯的错，是把纽伦堡当作巴伐利亚的一部分来理解，而弗兰肯有自己的方言、啤酒与香肠。",
     layout:
       "老城被中世纪城墙环绕，佩格尼茨河穿城而过；纽伦堡城堡俯瞰整座老城；圣劳伦茨教堂和圣塞巴尔杜斯教堂是老城两大哥特式地标；老城中心广场每年11—12月举办德国最著名的圣诞市场之一。",
     gettingAround:
@@ -6430,9 +6448,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   heidelberg: {
     identity:
       "海德堡在内卡河畔，以海德堡城堡遗址和德国最古老的大学（海德堡大学，1386年创立）闻名，浪漫主义时期是众多诗人和艺术家钟爱的题材，至今保留着完整的老城风貌。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Heidelberg (fifth city of Baden-Württemberg; ~155,000, about a quarter of them students; Heidelberg University 1386, oldest in Germany; castle ruin above the Altstadt; old bridge 1786–88; Philosophers' Walk; Neckar; spared Allied bombing; US forces left 2013, Patrick Henry Village conversion; Bahnstadt; UNESCO City of Literature; Frankfurt ~78 km)
+    // howItWorks sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
+    //   海德堡：Zensus 2022 普查结果 **153,809**（基准日 2022-05-15），比旧（Zensus 2011 基准）推算的 162,273 **低约 5.3%**；市自身居民登记（仅主要住所）**149,495（2023-12-31）**。市官网概览页写「约 155,000」但**没标基准日，按红线不采信**。巴登-符腾堡州统计局滞后约 16 个月，未找到 2024 年之后的州口径数。级别 1 + 3 级，2026-09-09 核。
+    //   https://www.heidelberg.de/
+    //   **这是 Zensus 2022 下修的又一个实例**（前一例是汉堡 −5.6%）。⚠️ 下一轮回来找 2024/2025 年的更新数据。学生约占四分之一在两个口径下都成立（38,500 学生对 15.4 万或 14.9 万都是 25%–26%）。
     howItWorks:
-      "海德堡是巴登—符腾堡州的第五大城市，人口约 15.5 万，其中约四分之一是学生；市议会管地方服务，警察与学校归州；它在莱茵—内卡都会区里，隔壁的曼海姆比它大。1386 年创办的海德堡大学是德国最老的大学，校区散在老城与内卡河北岸；老城沿河一条主街长约 1.6 公里，城堡的废墟悬在南岸的山坡上，1786 至 1788 年建的老桥连着两岸，北岸的哲学家小路是看城的地方。二战中它几乎未遭轰炸，因此老城是原物；美军在此驻扎到 2013 年，撤离后留下的营区正在改建成住宅区，车站西面的“铁路城”是新建的低能耗街区。法兰克福机场在西北约 78 公里，SAP 的总部在南面的瓦尔多夫。初来的人最容易犯的错，是把海德堡当作一座只有游客的老城，而它是一座大学与研究机构撑起来的城市。",
+      "海德堡是巴登—符腾堡州的第五大城市，人口约 15 万（2022 年人口普查为 153,809，市自身居民登记 2023 年末为 149,495，尚无更新一期的官方数），其中约四分之一是学生；市议会管地方服务，警察与学校归州；它在莱茵—内卡都会区里，隔壁的曼海姆比它大。1386 年创办的海德堡大学是德国最老的大学，校区散在老城与内卡河北岸；老城沿河一条主街长约 1.6 公里，城堡的废墟悬在南岸的山坡上，1786 至 1788 年建的老桥连着两岸，北岸的哲学家小路是看城的地方。二战中它几乎未遭轰炸，因此老城是原物；美军在此驻扎到 2013 年，撤离后留下的营区正在改建成住宅区，车站西面的“铁路城”是新建的低能耗街区。法兰克福机场在西北约 78 公里，SAP 的总部在南面的瓦尔多夫。初来的人最容易犯的错，是把海德堡当作一座只有游客的老城，而它是一座大学与研究机构撑起来的城市。",
     layout:
       "海德堡城堡遗址俯瞰整座老城和内卡河谷；老桥连接内卡河两岸，桥上可远眺城堡与老城全景；老城主街是欧洲最长的步行街之一，两侧是巴洛克风格建筑。",
     gettingAround:
@@ -6446,11 +6467,16 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   },
 
   trier: {
+    // identity sources: 「德国最古老的城市」在德国国内有争论：特里尔（公元前 17 年罗马建城，罗马桥木桩年代测定）vs 肯普滕（公元前 15 年罗马定居点、约公元 18 年斯特拉波最早文字记载），判据不同（建城年 / 最早文字记载 / 连续建成史）。2 级媒体报道，2026-09-09 核。
+    //   https://www.t-online.de/leben/alltagswissen/id_100663112/aelteste-stadt-in-deutschland-kempten-und-trier-fuehren-hitzige-debatte.html
+    //   **这一条的形状值得记：同一条目内部对同一个断言的确定性程度不一致** —— howItWorks 段早就写了「自称」，identity 段却写成既定事实。**修法是把 identity 降到与 howItWorks 相同的确定性**，而不是反过来。
     identity:
-      "特里尔在摩泽尔河畔，是德国最古老的城市，公元前16年由古罗马人建城，保留着阿尔卑斯山以北最丰富的古罗马遗迹群，是探访摩泽尔河谷葡萄酒产区的门户。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trier (fourth city of Rhineland-Palatinate; ~113,000; Augusta Treverorum founded about 17 BC, oldest city in Germany; one of four imperial capitals under the Tetrarchy; Roman and medieval monuments UNESCO 1986 — Porta Nigra, Imperial Baths, Aula Palatina, cathedral with the Holy Tunic; Karl Marx born 1818; University of Trier; Moselle wine)
+      "特里尔在摩泽尔河畔，自称德国最古老的城市（这个头衔在德国国内有争议，主要与肯普滕互相竞争），公元前16年由古罗马人建城，保留着阿尔卑斯山以北最丰富的古罗马遗迹群，是探访摩泽尔河谷葡萄酒产区的门户。",
+    // howItWorks sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
+    //   特里尔 **113,577（2025-12-31，市居民登记）**，市政府《Bevölkerungsbericht 2025》新闻稿（级别 1）。2026-09-09 核。
+    //   https://www.trier.de/aktuelles/nachrichten/18606.Bevoelkerungsbericht-2025-Zuwanderung-als-Wachstumsmotor.html
     howItWorks:
-      "特里尔是莱茵兰—普法尔茨州第四大城市，人口约 11.3 万，在摩泽尔河谷里，靠近卢森堡；市议会管地方服务，警察与学校归州。公元前约 17 年罗马人在这里建起奥古斯塔·特雷维罗鲁姆，因此它自称德国最古老的城市；公元 3 世纪末到 4 世纪，它是四帝共治时期罗马帝国的四座都城之一，尼格拉城门、皇帝浴场、君士坦丁巴西利卡与大教堂 1986 年一并列入世界遗产，大教堂里存着“圣袍”。1818 年卡尔·马克思生在城中的一栋房子里，如今是博物馆；摩泽尔河两岸的葡萄园是本地的产业，特里尔大学在城南。卢森堡在西面约 50 公里，大量居民每天跨境去卢森堡上班，没有机场。初来的人最容易犯的错，是把特里尔当作一座边境小城，而它是德国最古老的城市，罗马遗迹是原物而非复制。",
+      "特里尔是莱茵兰—普法尔茨州第四大城市，2025 年末人口约 11.36 万，在摩泽尔河谷里，靠近卢森堡；市议会管地方服务，警察与学校归州。公元前约 17 年罗马人在这里建起奥古斯塔·特雷维罗鲁姆，因此它自称德国最古老的城市；公元 3 世纪末到 4 世纪，它是四帝共治时期罗马帝国的四座都城之一，尼格拉城门、皇帝浴场、君士坦丁巴西利卡与大教堂 1986 年一并列入世界遗产，大教堂里存着“圣袍”。1818 年卡尔·马克思生在城中的一栋房子里，如今是博物馆；摩泽尔河两岸的葡萄园是本地的产业，特里尔大学在城南。卢森堡在西面约 50 公里，大量居民每天跨境去卢森堡上班，没有机场。初来的人最容易犯的错，是把特里尔当作一座边境小城，而它是德国最古老的城市，罗马遗迹是原物而非复制。",
     layout:
       "黑门（Porta Nigra，古罗马城门，世界文化遗产）是老城最醒目的地标；老城中心还保留着古罗马大浴场、圆形剧场等遗迹；沿摩泽尔河两岸是层层叠叠的葡萄园梯田。",
     gettingAround:
@@ -6466,9 +6492,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
   stralsund: {
     identity:
       "施特拉尔松在德国东北部波罗的海沿岸，是保存完好的汉萨同盟古城，2002年与维斯马老城一同整体列入世界文化遗产，也是通往吕根岛白垩崖的主要门户。",
-    // howItWorks sources: en.wikipedia (2026-09, Tier B short): Stralsund (fifth city of Mecklenburg-Vorpommern, seat of Vorpommern-Rügen district; 54 km²; ~54,000; charter 1234, oldest city in Pomerania; Hanseatic; old town UNESCO 2002 with Wismar; St Mary's the world's tallest structure 1625–1647; Ozeaneum; Gorch Fock; Rügen bridge; Swedish rule 1648–1815; shipbuilding)
+    // howItWorks sources: **德国的官方人口口径**（2026-09-09 核）：① **amtliche Bevölkerungsfortschreibung（官方人口推算，Zensus 2022 基准）** —— 各州统计局在 2022 年普查基础上逐年滚动推算，**跨市可比、最权威**，发布月份各州不同（巴伐利亚次年 5 月 · 北威州次年 6 月中 · 黑森次年 6–7 月 · 汉堡与石荷次年 7 月初 · 柏林-勃兰登堡次年年中 · **巴登-符腾堡滞后约 16 个月**）；② **各市自己的居民登记（Melderegister / Einwohnerregister）** —— 含主/次要住所，通常**高于**州口径（柏林两者差约 21 万、科隆差约 7 万），多数城市次年 2–3 月就能出年末数；③ **Europäische Metropolregion（MKRO 认定的 11 个都市区）** —— **不是联邦统计局口径**，边界很大、人口由各都市区协会自己发布。⚠️ **Zensus 2022 把不少城市的人口向下修正了几个百分点**（汉堡 −5.6%、海德堡 −5.3%），起算点是 2022-05-15，此后按每年 12-31 滚动。
+    //   施特拉尔松德：54,128（2025-06-01）与 54,094（2024-12-31），两个二/三级来源互相印证。**没有取到标明基准日的市级一手文件** —— 它不是独立市（M-V 全州只有罗斯托克与施威林两个 kreisfreie Stadt），州统计局新闻稿只到县级，官方 PDF 是图片版取不到文字。**来源级别偏低，如实标在这里**，下一轮换渠道核到一手数。2026-09-09 核。
     howItWorks:
-      "施特拉尔松德是梅克伦堡—前波美拉尼亚州的第五大城市，也是前波美拉尼亚—吕根县的县治，市域约 54 平方公里，人口约 5.4 万；市议会管地方服务，警察与学校归州。老城建在斯特雷拉松海峡与几片水塘之间的一座岛上，四面环水，1234 年获得城市权，是波美拉尼亚最老的城市，13 世纪末加入汉萨同盟；砖砌哥特式的圣尼古拉教堂、圣玛丽教堂与市政厅是它的骨架，圣玛丽教堂 1625 至 1647 年间曾是世界最高的建筑，2002 年老城与维斯马一起列入世界遗产。1648 至 1815 年这里属于瑞典。海洋馆在旧港边，“戈尔希·福克号”帆船停在码头，吕根岛的大桥从城北跨过海峡，造船业至今是它的产业。初来的人最容易犯的错，是把施特拉尔松德当作去吕根岛的过路站，而它是一座汉萨老城，桥只是它北面的出口。",
+      "施特拉尔松德是梅克伦堡—前波美拉尼亚州的第五大城市，也是前波美拉尼亚—吕根县的县治，市域约 54 平方公里，2025 年年中人口约 5.41 万；市议会管地方服务，警察与学校归州。老城建在斯特雷拉松海峡与几片水塘之间的一座岛上，四面环水，1234 年获得城市权，是波美拉尼亚最老的城市，13 世纪末加入汉萨同盟；砖砌哥特式的圣尼古拉教堂、圣玛丽教堂与市政厅是它的骨架，圣玛丽教堂 1625 至 1647 年间曾是世界最高的建筑，2002 年老城与维斯马一起列入世界遗产。1648 至 1815 年这里属于瑞典。海洋馆在旧港边，“戈尔希·福克号”帆船停在码头，吕根岛的大桥从城北跨过海峡，造船业至今是它的产业。初来的人最容易犯的错，是把施特拉尔松德当作去吕根岛的过路站，而它是一座汉萨老城，桥只是它北面的出口。",
     layout:
       "老城建在一座三面环水的半岛上，尼古拉教堂等几座砖砌哥特式教堂是老城天际线的标志；海洋博物馆（Ozeaneum）位于港口区，是德国知名的海洋生物展馆；施特拉尔松海峡对岸就是吕根岛。",
     gettingAround:
@@ -9146,16 +9173,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月是南部旅游旺季、日照最长；拉普兰地区12-次年3月可观测极光，6-7月可见极昼；跨越南北的行程建议乘国内航班衔接，火车更适合区域内深度游览。",
   },
   helsinki: {
-    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：赫尔辛基市镇 694,392（2025-12-31）；**首都圈（4 市镇）约 1,267,272、大赫尔辛基约 1,606,104（2024-12-31）**——
-    //   原来写的「都会区约 150 万」卡在这两个官方口径之间，不对应任何一个。
-    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
-    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
-    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   赫尔辛基市 694,392、首都圈四市 1,283,382、大赫尔辛基 1,630,200，**均为 2025-12-31**（3 级但四市数字可交叉验证 + 2 级区域官方统计门户），2026-09-10 核 —— 比原注释引的 2024-12-31 新一期。
+    //   https://www.helsinginseudunsuunnat.fi/fi/vakiluvun-muutos
     identity:
-      "赫尔辛基是芬兰首都与最大城市，人口约69万（2025年末；首都圈四市约127万，大赫尔辛基约161万），坐落于芬兰湾北岸的半岛与群岛之上，是北欧重要的设计、科技与港口城市。",
-    // howItWorks sources: Wikipedia (2026-09): Helsinki (land ~214 km²; ~694,000; mayor elected by council since 2017; capital region 4 municipalities ~1.3 million; Greater Helsinki ~1.6 million ≈ quarter of Finland; HSL zones; bilingual, Swedish 5.4%; Suomenlinna UNESCO 1991; airport in Vantaa); Municipalities of Finland (Helsinki keeps own health services)
+      "赫尔辛基是芬兰首都与最大城市，人口约69万（2025年末；首都圈四市约128万，大赫尔辛基约163万，均为2025年末），坐落于芬兰湾北岸的半岛与群岛之上，是北欧重要的设计、科技与港口城市。",
+    // howItWorks sources: 给人口数补年份（2025 年末，与同条目 identity 一致）。
+    //   **顺带记一条脚本行为**：`C6d` 取句中最大年份当统计时点，所以「人口没写年份 + 同句提到某个更早的年份（这里是 2017 年起采用市长制）」会被误判成「用了 2017 年的人口数」。**这不是规则写错了 —— 它指出的问题是真的（那个人口数确实缺年份），补上年份两个问题一起消失。**
     howItWorks:
-      "人们口中的赫尔辛基，在行政上只是陆地约 214 平方公里的赫尔辛基市，人口约 69 万；2017 年起它由市议会选出的专职市长治理，是芬兰第一个采用市长制的市镇。芬兰的市镇管学校、规划与地方交通，2023 年起医疗与社会服务移交给福利服务县，唯独赫尔辛基保留了自己的医疗体系，国家管警察与大学。首都圈由赫尔辛基、埃斯波、万塔、考尼艾宁四个独立的市镇组成，约 130 万人，大赫尔辛基约 160 万，占芬兰的四分之一；机场在万塔。HSL 交通局统管首都圈的地铁、有轨电车、通勤火车与渡轮，按 ABCD 票价区计费，一条地铁线的支线 2017 与 2022 年延伸到了埃斯波。参议院广场与克鲁努哈卡是老城，坎皮是商业中心，卡利奥是旧工人区，托洛是 20 世纪初的街区，卡拉萨塔马与耶特卡萨里是旧港区改成的新区，芬兰堡 1991 年列入世界遗产，三百多座岛屿属于市镇。市镇法定双语，路牌先芬兰语后瑞典语，瑞典语人口约 5%。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把赫尔辛基市当作整个首都圈，而埃斯波与万塔是两座有自己市政府的城市。",
+      "人们口中的赫尔辛基，在行政上只是陆地约 214 平方公里的赫尔辛基市，2025 年末人口约 69 万；2017 年起它由市议会选出的专职市长治理，是芬兰第一个采用市长制的市镇。芬兰的市镇管学校、规划与地方交通，2023 年起医疗与社会服务移交给福利服务县，唯独赫尔辛基保留了自己的医疗体系，国家管警察与大学。首都圈由赫尔辛基、埃斯波、万塔、考尼艾宁四个独立的市镇组成，2025 年末约 128 万人，大赫尔辛基 2025 年末约 163 万，占芬兰的四分之一；机场在万塔。HSL 交通局统管首都圈的地铁、有轨电车、通勤火车与渡轮，按 ABCD 票价区计费，一条地铁线的支线 2017 与 2022 年延伸到了埃斯波。参议院广场与克鲁努哈卡是老城，坎皮是商业中心，卡利奥是旧工人区，托洛是 20 世纪初的街区，卡拉萨塔马与耶特卡萨里是旧港区改成的新区，芬兰堡 1991 年列入世界遗产，三百多座岛屿属于市镇。市镇法定双语，路牌先芬兰语后瑞典语，瑞典语人口约 5%。地址写“街道、门牌、五位邮编”。初来的人最容易犯的错，是把赫尔辛基市当作整个首都圈，而埃斯波与万塔是两座有自己市政府的城市。",
     layout:
       "市中心以元老院广场与赫尔辛基大教堂为核心，向南延伸至港口区与市场广场，岩石教堂、西贝柳斯公园等地标分布在各片区，市郊由数百座岛屿组成的群岛环绕。",
     gettingAround:
@@ -9189,11 +9215,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人，也是群岛海航行的最佳季节；建议安排一日乘船探索邻近群岛，感受世界最密集岛屿群之一的风光。",
   },
   mariehamn: {
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   玛丽港 **11,957（2025-12-31）**，奥兰统计与研究局（ÅSUB）官方页，级别 1，2026-09-10 核。
+    //   https://www.asub.ax/sv/statistik/invanarantalet-31122025
     identity:
-      "玛丽港是奥兰群岛的首府，人口约1.2万，是芬兰唯一的瑞典语单一官方语言自治区的行政与文化中心。",
+      "玛丽港是奥兰群岛的首府，2025 年末人口约1.2万，是芬兰唯一的瑞典语单一官方语言自治区的行政与文化中心。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Mariehamn (capital of Åland, an autonomous Swedish-speaking region of Finland and the seat of its government and parliament; ~11,957 in late 2025, about 40 per cent of Åland's population; founded 21 February 1861 and named after Empress Maria Alexandrovna; Western Harbour with daily ferries to Sweden, Estonia and mainland Finland, Eastern Harbour a large marina; the four-masted Pommern as a museum ship; Mariehamn Airport; about 1.5 million visitors a year)
     howItWorks:
-      "玛丽港是奥兰的首府，人口约 1.2 万，约占奥兰总人口的四成。奥兰是芬兰的一个自治区，讲瑞典语，有自己的议会与政府，也有自己的居民权制度；政府与议会都设在这座城里，因此它虽小，却是一整个自治区的行政中心，学校、医疗与地方立法都在这里决定。城市 1861 年 2 月 21 日建立，名字取自当时的俄国皇后玛丽亚·亚历山德罗夫娜，“玛丽的港”是它的字面意思。它有两个港：西港是国际港，每天有渡轮开往瑞典、爱沙尼亚与芬兰本土，四桅帆船“波美恩号”作为博物馆船停在这里；东港是北欧最大的游艇码头之一。机场在城外，每年约一百五十万人次到访。初来的人最容易犯的错，是把玛丽港当作芬兰本土的一座小城，而它是一个讲瑞典语的自治区的首府，规则与本土并不相同。",
+      "玛丽港是奥兰的首府，2025 年末人口约 1.2 万，约占奥兰总人口的四成。奥兰是芬兰的一个自治区，讲瑞典语，有自己的议会与政府，也有自己的居民权制度；政府与议会都设在这座城里，因此它虽小，却是一整个自治区的行政中心，学校、医疗与地方立法都在这里决定。城市 1861 年 2 月 21 日建立，名字取自当时的俄国皇后玛丽亚·亚历山德罗夫娜，“玛丽的港”是它的字面意思。它有两个港：西港是国际港，每天有渡轮开往瑞典、爱沙尼亚与芬兰本土，四桅帆船“波美恩号”作为博物馆船停在这里；东港是北欧最大的游艇码头之一。机场在城外，每年约一百五十万人次到访。初来的人最容易犯的错，是把玛丽港当作芬兰本土的一座小城，而它是一个讲瑞典语的自治区的首府，规则与本土并不相同。",
     layout:
       "小城分为西港与东港两片港区，西港以现代游艇码头为主，东港保留传统渔港风貌，市中心街道以瑞典风格建筑为主。",
     gettingAround:
@@ -9270,10 +9299,8 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月最宜人，7月歌剧节期间住宿紧张、建议提前预订；蓬卡哈尔尤距市区约30公里，是萨翁林纳周边最经典的一日游目的地。",
   },
   kuopio: {
-    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：库奥皮奥市镇 126,572（2025-12-31），全国第八。
-    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
-    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
-    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   库奥皮奥 126,626（2025 年末，市政府官方新闻稿，2 级）vs 仓库的 126,572（统计局初步数，3 级转引）—— **差 54 人是市自身登记与统计局初步数的口径微差，判定不改**。2026-09-10 复核，维持 2026-09-08 的结论。
     identity:
       "库奥皮奥是芬兰中东部湖区的核心城市，人口约12.7万（2025年末），坐落于卡拉韦西湖畔，普宜奥山观景塔是俯瞰湖区群岛的经典地点。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuopio (Finland; regional capital of North Savo, about 126,572 residents, the eighth-most populous municipality, the region about 148,000; nearly surrounded by Lake Kallavesi, Finland's tenth-largest lake at 472.76 km²; Puijo tower and ski jumps with annual World Cup ski jumping; kalakukko, the Savonian fish pastry; the market square and market hall; until 2018 the seat of the primate of the Finnish Orthodox Church; University of Eastern Finland; Kuopio Airport in Siilinjärvi, the fifth busiest in Finland)
@@ -9312,10 +9339,8 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-8月适合探索沿海风光，2-3月冬季海冰稳固期可体验独特的破冰船与海冰徒步活动，奥卢也是前往罗瓦涅米的中转门户。",
   },
   rovaniemi: {
-    // identity sources: 芬兰统计中心（Tilastokeskus）市镇（kunta）年末人口，基准日 2025-12-31：罗瓦涅米市镇 66,191（2025-12-31），在全国市镇人口序列里排第 17。
-    //   https://fi.wikipedia.org/wiki/Luettelo_Suomen_kunnista_väkiluvun_mukaan（3 级，转引 Tilastokeskus，2026-09-08 核）。
-    //   **发布节奏**：人口初步统计逐月发布，市镇年末数通常在次年 1 月随年度汇总可查。
-    //   **口径要分清**：kunta（市镇）与 seutukunta / 都市区是两档 —— 本条写的是市镇本身。
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   罗瓦涅米 66,191（2025-12-31，芬兰统计局，3 级转引），与仓库完全一致、是最新一期。2026-09-10 复核，维持既有结论，本轮无需改动。
     identity:
       "罗瓦涅米是芬兰拉普兰省的首府，人口约6.6万（2025年末），坐落于北极圈线上，是圣诞老人村所在地与探索拉普兰荒原的传统门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Rovaniemi (Finland; regional capital of Lapland, about 66,191 residents, the 17th largest city, one of the largest municipalities in Europe by area; about 6 km south of the Arctic Circle at the confluence of the Kemijoki and Ounasjoki; about 90 per cent of buildings destroyed by German forces in 1944, rebuilt to Alvar Aalto's plan in the shape of a reindeer's head with the roads as antlers; Santa Claus Village at the Arctic Circle, the slogan trademarked in 2009; midnight sun 7 June–6 July, December under six minutes of sunshine a day; auroras up to 200 nights a year; University of Lapland)
@@ -9333,8 +9358,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "12月至次年3月是观测极光与圣诞主题旅游旺季，也是全年游客最多的时段；6-7月可见极昼、适合户外活动，冬季务必备好极地保暖装备。",
   },
   kuusamo: {
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   库萨莫 14,792（2025-12-31，芬兰统计局初步数，3 级转引），与同条目 howItWorks 已引的 1.48 万一致。2026-09-10 核。
     identity:
-      "库萨莫是芬兰东北部的小城，人口约1.5万，是探索奥兰卡国家公园与“熊之路”徒步路线的传统门户，也是芬兰知名的鲁卡滑雪度假地所在地。",
+      "库萨莫是芬兰东北部的小城，2025 年末人口约1.48万，是探索奥兰卡国家公园与“熊之路”徒步路线的传统门户，也是芬兰知名的鲁卡滑雪度假地所在地。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Kuusamo (Finland; town and municipality in North Ostrobothnia near the eastern border; population 14,800 over 5,809 km², the eleventh largest municipality by area; about 60 km south of the Arctic Circle; Ruka ski resort on the 492 m Rukatunturi; about a million tourists a year, tourism 149 million euros in 2024, 18 per cent of output; Oulanka National Park and the 80 km Karhunkierros trail; snow cover about 200 days a year, late October to mid-May; 166 lakes, forests 90 per cent of the land; Kuusamo Airport 6 km from town, 129,373 passengers in 2024)
     howItWorks:
       "库萨莫是芬兰北博滕区的市镇，人口约 1.48 万，市域约 5,809 平方公里，是全国面积第 11 大的市镇，在北极圈以南约 60 公里；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。人少地大是这里的常态：森林占了九成的土地，境内有 166 个湖，河流分别流向白海与波的尼亚湾。经济几乎押在旅游上——2024 年旅游收入 1.49 亿欧元，占本地产出的约 18%，每年约一百万人次到访，主要去的是城北 25 公里、鲁卡山上的鲁卡滑雪场；奥兰卡国家公园与全长 80 公里的“熊之径”徒步道在东面靠边境处。这里一年约有两百天积雪，从十月底到五月中；空气质量按国际监测常年居前列。机场在镇外 6 公里，2024 年运送约 12.9 万人次，赫尔辛基有直飞。初来的人最容易犯的错，是把鲁卡当作库萨莫的市中心，而它是山上的度假区，镇子在山下另一个地方。",
@@ -9350,8 +9377,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6-9月是徒步旺季，12月至次年4月是滑雪旺季；奥兰卡国家公园距库萨莫市区约30公里，建议安排至少一日徒步行程。",
   },
   inari: {
+    // identity sources: **芬兰的官方人口口径**（2026-09-10 核）：`kunta`（市镇年末人口，芬兰统计局 Tilastokeskus，**逐月初步数、市镇年末数通常次年 1 月随年度汇总公布**）· `taajama`（聚居区/建成区，用于村落级的小地方，**不是每年更新、间隔可达数年**）· `seutukunta`（次区域）· `maakunta`（大区）。**`pääkaupunkiseutu`（首都圈，四个市镇）没有独立的法定统计口径，就是四市之和**；**`Helsingin seutu`（大赫尔辛基）是区域规划与通勤圈意义上的约定俗成范围，发布方不是统计局本身，而是赫尔辛基地区的官方区域统计门户 Helsingin Seudun Suunnat** —— 按本库既定做法**写明发布方与年份，不禁用这个词**（同瑞士巴塞尔三国区、瑞典 Göteborgsregionen、捷克 Eurostat FUA、德国 MKRO 都市区）。
+    //   伊纳里村：芬兰统计局 `taajama`（聚居区）口径 **632（2022-12-31）**，本轮未找到更新一期（**taajama 不是每年更新**）。原注释引的 en.wikipedia 信息框「581（2014）」已 12 年旧，而正文写成了 550 且无年份。3 级转引统计局表，2026-09-10 核。
+    //   **与同条目 howItWorks 的市镇口径 7,244（2025-12-31）是两个不同的地理单元，不是数字打架** —— 这一点写在这里，免得下一轮有人把它们「统一」掉。
     identity:
-      "伊纳里是芬兰北极圈内拉普兰地区的村落，人口约550人，坐落于伊纳里湖畔，是芬兰萨米原住民文化的核心聚居区。",
+      "伊纳里是芬兰北极圈内拉普兰地区的村落，按芬兰统计局的聚居区口径，2022 年末约630人（本轮未找到更新一期），坐落于伊纳里湖畔，是芬兰萨米原住民文化的核心聚居区。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Inari (Finland; the largest municipality in Finland by area at 17,333.65 km² and among the most sparsely populated, 7,244 residents in December 2025, density 0.48 per km²; four official languages — Finnish (86.4 per cent), Northern Sámi, Inari Sámi and Skolt Sámi; widely called the capital of Sámi culture; the Sámi Parliament of Finland and the Siida museum at Inari village; registered Sámi about 31 per cent of residents; Lake Inari 1,043 km², Finland's third-largest; Ivalo Airport and European route E75; tourism, services and cold-climate testing)
     howItWorks:
       "伊纳里是芬兰面积最大的市镇，约 17,334 平方公里，2025 年底人口 7,244，每平方公里不到半个人，是全国人口最稀的地方之一；市镇管学校与规划，医疗与社会服务归福祉服务县，国家管警察。它最特别的地方是语言：这里有四种官方语言——芬兰语，以及北萨米语、伊纳里萨米语与斯科尔特萨米语三种萨米语言，其中伊纳里萨米语只在这一个市镇使用，路牌与公文都要并列。芬兰的萨米议会设在伊纳里村的萨约斯文化中心，旁边是介绍萨米文化与北方自然的西达博物馆，因此这里常被称作芬兰萨米文化的中心，登记的萨米人约占居民的三成。伊纳里湖面积 1,043 平方公里，是芬兰第三大湖；最大的村落与机场都在伊瓦洛，E75 公路穿境通往挪威。初来的人最容易犯的错，是把萨米文化当作展演项目，而它是这里日常使用的语言与生计。",
@@ -9589,9 +9619,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
       "清迈是泰国北部最大城市，2025年市自治市登记人口约11.2万（城市实际连绵范围远超市界，但无官方统计口径），坐落于平河河谷，曾是兰纳王国古都，是泰国北部文化与手工艺中心。",
-    // howItWorks sources: Wikipedia (2026-09): Chiang Mai (thesaban nakhon 40.2 km², ~127,000; urban area ~1 million+; Lanna capital 1296; northern rail terminus; smoke season Feb–Apr); Local government in Thailand (appointed provincial governors)
+    // howItWorks sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   清迈市自治市 **111,809（2568/2025 年末，DOPA 口径）**，与同条目 identity 一致；原 howItWorks 的 127,240 是 **2562/2019** 的旧数。3 级转引 DOPA 整表页，2026-09-10 核。
+    //   https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2
+    //   **这一条的形状与前几批相反**：前几批（爱尔兰、捷克、意大利、德国）都是 identity 停在旧数、howItWorks 是对的；泰国这批连着三条（清迈、呵叻、北碧）都是**identity 已经更新、howItWorks 没有回填** —— 说明上一轮批量更新时只挑了 identity 改。
     howItWorks:
-      "清迈是清迈府的府治，府尹由内政部任命；清迈市本身是一个“城市自治市”，有民选的市长和市议会，但市域只有约 40 平方公里、约 12.7 万人，而城市的实际范围早已蔓延到周边几个县，连绵的城区约 100 万人，分属十几个各有自己自治机构的乡镇。护城河围住的方形老城是 1296 年兰纳王国的都城，至今是城市的坐标原点；宁曼路是老城西面的新商业区，夜市在老城东面的滨河一带，素贴山在西北方俯视全城。超级公路环线是本地人心里的市区边界。没有轨道交通，红色双条车与嘟嘟车承担出行，火车站是泰国铁路的北端终点。北部方言“Kham Mueang”仍是许多本地人的日常语言。地址写“门牌、soi、路、乡镇”。每年二至四月的烧荒季空气污染严重。初来的人最容易犯的错，是把老城当作整个清迈，而市政府管辖的范围只是这片城区的很小一角。",
+      "清迈是清迈府的府治，府尹由内政部任命；清迈市本身是一个“城市自治市”，有民选的市长和市议会，但市域只有约 40 平方公里、2025 年末约 11.2 万人，而城市的实际范围早已蔓延到周边几个县，连绵的城区约 100 万人，分属十几个各有自己自治机构的乡镇。护城河围住的方形老城是 1296 年兰纳王国的都城，至今是城市的坐标原点；宁曼路是老城西面的新商业区，夜市在老城东面的滨河一带，素贴山在西北方俯视全城。超级公路环线是本地人心里的市区边界。没有轨道交通，红色双条车与嘟嘟车承担出行，火车站是泰国铁路的北端终点。北部方言“Kham Mueang”仍是许多本地人的日常语言。地址写“门牌、soi、路、乡镇”。每年二至四月的烧荒季空气污染严重。初来的人最容易犯的错，是把老城当作整个清迈，而市政府管辖的范围只是这片城区的很小一角。",
     layout:
       "古城区呈方形，四面城墙与护城河环绕，寺庙密集分布城内，尼曼路一带是现代咖啡馆与设计店聚集区。",
     gettingAround:
@@ -9604,10 +9637,7 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年2月凉季最宜人；2-4月部分年份受周边农业焚烧影响空气质量下降，出行前建议查询空气质量指数。",
   },
   phuket: {
-    // identity sources: 普吉府（即全岛）DOPA 登记人口 **429,583 人（2024-12-31）** ——
-    //   泰国国家统计局普吉府统计报告
-    //   https://phuket.nso.go.th/images/documents/Phuket%20Provincial%20Statistical%20Report/2568/1.demography68.pdf
-    //   （1 级，2026-09-08 核）。原 identity 写 42 万，与本条目 howItWorks 的 43 万对不上。
+    // identity sources: 普吉府 429,583（2024-12-31，NSO 报告，级别 1）；普吉镇 71,284（2024，3 级）。**identity 用府口径、howItWorks 用镇口径，两段各自准确、不是数字打架** —— 这一点写在这里免得下一轮被「统一」掉。截至 2026-09-10 未见 2025 年末更新一期（NSO 报告惯例次年发布，值得下一轮回来确认）。2026-09-10 复核，维持 2026-09-09 结论。
     identity:
       "普吉岛是泰国最大的岛屿，2024年登记人口约43万，坐落于安达曼海，是泰国最负盛名的海岛度假目的地。",
     // howItWorks sources: Wikipedia (2026-09): Phuket (city) (thesaban nakhon ~12 km², 71,284 2024; provincial capital; Old Town Sino-Portuguese; airport 36 km; Patong in Kathu district); Local government in Thailand
@@ -9648,8 +9678,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11月至次年4月为旱季，海况平稳，适合跳岛游；5-10月雨季部分离岛航线会暂停。",
   },
   pattaya: {
+    // identity sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   芭提雅登记人口约 12 万为 **2019 年（พ.ศ. 2562）** 的内政部数据，本轮未找到可信的更新一期。
+    //   https://en.wikipedia.org/wiki/Pattaya
+    //   ⚠️ **这是本库第三次确认同一个坑**：en.wikipedia 的 Pattaya 信息框把这个 2019 年的数标成「2025 年 1 月」，**脚注引的却是 2019 年的报告** —— 二手来源的年份标注本身可能是错的，凡引二手必须点开脚注看一手。
     identity:
-      "芭提雅是泰国东部湾区一座海滨度假城市，人口约12万（旅游旺季实际流动人口更多），距曼谷约150公里，是曼谷居民周末度假的传统目的地。",
+      "芭提雅是泰国东部湾区一座海滨度假城市，2019 年登记人口约12万（旅游旺季实际流动人口更多；本轮未找到可信的更新一期），距曼谷约150公里，是曼谷居民周末度假的传统目的地。",
     // howItWorks sources: 泰国内政部地方行政厅（DOPA）基准日每年 **12 月 31 日**，全国公告次年 1—2 月发布；
     //   市镇与府级细分表由二手渠道零散转引、滞后数周到数月。**一手站点 stat.bora.dopa.go.th 本轮仍直连失败**
     //   （疑 SPA/反爬），下一轮试其开放数据接口或 gdcatalog.go.th。2026-09-09 核。
@@ -9822,17 +9856,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   补上了前两轮因一手站点直连失败留下的缺口。
     identity:
       "呵叻（那空叻差是玛）是泰国东北部依善地区的门户城市，2025年登记人口约11.1万，是探索考艾山国家公园与呵叻高原的重要基地。",
-    // howItWorks sources: **面积排名在权威来源之间互相打架，本轮改为不写名次**：
-    //   ① 3 级来源：呵叻 20,736 km²（第二）、清迈 22,311 km²（第一）—— 上一轮据此改成「第二大」；
-    //   ② **泰国国家统计局 PDF（1 级）**：呵叻 **20,493.964 km²（第一）**、清迈 20,107.057 km²（第二）
-    //      https://nksawan.nso.go.th/images/report/01size_of_area.pdf；
-    //   ③ 泰国国家广播局清迈台（2 级，2023-09-21）：清迈边界纠纷解决后增至 22,436 km²、重夺第一。
-    //   **三组互不一致，1 级来源与此前采信的 3 级来源结论相反。**
-    //   **这条记下来是因为它推翻了上一轮我自己刚做的修正** —— 一次修正不等于一劳永逸；
-    //   **当依据是 3 级来源时，下一轮拿到 1 级来源要准备好推翻自己。**
-    //   北碧条目「泰国第三大府」（19,483 km²）不受影响，仍成立。
+    // howItWorks sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   呵叻市自治市 **110,641（2568/2025 年末）**，与同条目 identity 一致；那空叻差是玛府 **2,613,132（2568/2025 年末）**。3 级转引 DOPA，2026-09-10 核。
+    //   https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B9%83%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0%B8%A2
+    //   **「泰国面积最大的府」这个名次仍然不写** —— 上一轮的教训：3 级来源给的名次被泰国 NSO 的 1 级 PDF 推翻过一次，各来源的面积与名次至今互相矛盾。
     howItWorks:
-      "呵叻是那空叻差是玛府的府治，那空叻差是玛是泰国面积最大的几个府之一（各来源给出的面积与名次互相矛盾，见来源注释），府尹由内政部任命，全府约 260 万人；呵叻市是一个“城市自治市”，有民选的市长，登记人口约 13 万，城区约 47 万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
+      "呵叻是那空叻差是玛府的府治，那空叻差是玛是泰国面积最大的几个府之一（各来源给出的面积与名次互相矛盾，见来源注释），府尹由内政部任命，全府2025年末约261万人；呵叻市是一个“城市自治市”，有民选的市长，2025年末登记人口约11.1万，城区约47万。市区在呵叻高原的西缘，是曼谷进入伊桑的门户，苏拉娜丽夫人纪念碑与老城的护城河是市中心的坐标，Terminal 21 是新的商业中心，铁路与公路从这里分向伊桑各地，高铁在建；考艾国家公园在西面约 100 公里的北冲，披迈的高棉古庙在东北 60 公里。本地人说“呵叻”，不说全名。初来的人最容易犯的错，是以为考艾在呵叻城边，而它在一百公里外的山里。",
     layout:
       "城市保留有他玛叻古城墙与护城河遗迹，是连接曼谷与依善地区的传统交通枢纽。",
     gettingAround:
@@ -9858,13 +9887,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
     //   北碧府 19,483 km²「泰国面积第三大」经核成立。
     identity:
       "北碧在曼谷以西约120公里，在桂诺河与桂艾河汇成湄功河（Mae Klong，与湄公河 Mekong 是两条完全不同的河）的地方，市镇2024年登记人口约2.5万。二战期间日军用盟军战俘和亚洲劳工修建泰缅铁路（“死亡铁路”），约半数劳工死于疾病、虐待和事故，桂河大桥、北碧战争公墓、泰缅铁路中心和地狱火通道是这段历史的纪念地。北碧府境内还有七层的爱侣湾瀑布、赛育瀑布和缅甸边境的桑卡武里孟族木桥，是曼谷周边最受欢迎的一日和两日游目的地之一。",
-    // howItWorks sources: 北碧镇 DOPA 登记 **25,651 人（2017，年份偏旧，本轮未找到更新数）**；
-    //   北碧府 **19,482 km²，泰国面积第三大府**（清迈 22,311 > 那空叻差是玛 20,736 > 北碧 19,482）
-    //   ——3 级，2026-09-08 核。
-    //   **这条排序正是发现呵叻条目「泰国面积最大的府」有误的线索** ——
-    //   同一个仓库里两处排名互相矛盾，本身就是可以自查的信号。
+    // howItWorks sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   北碧镇 **24,624（2024-12-31，DOPA）**，与同条目 identity 一致；原 howItWorks 的 25,651 是 **2017 年**旧数。2026-09-10 复核。
+    //   **这是泰国这批「identity 已更新、howItWorks 没回填」的第三例**（清迈、呵叻、北碧）—— 见 known-errors 里对这个方向的记录。
     howItWorks:
-      "北碧镇是北碧府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，有民选的镇长，人口约 2.6 万，而北碧府约 1.9 万平方公里，是泰国第三大府，一直伸到缅甸边境。镇子在桂河大支流与小支流汇合处，桂河大桥就在镇北的河上，1942 至 43 年由战俘与劳工修建，两座战争公墓与博物馆在镇内，河上的筏屋是本地的旅馆；地狱火通道在西北约 80 公里，爱侣湾瀑布在北面约 65 公里，曼谷在东面约 120 公里，火车从吞武里开来。初来的人最容易犯的错，是把北碧当作一座桥，而桥在镇上，府域的森林与瀑布要再走一两个小时。",
+      "北碧镇是北碧府的府治，府尹由内政部任命；镇本身是一个“镇级自治市”，有民选的镇长，2024 年末人口约 2.5 万，而北碧府约 1.9 万平方公里，是泰国第三大府，一直伸到缅甸边境。镇子在桂河大支流与小支流汇合处，桂河大桥就在镇北的河上，1942 至 43 年由战俘与劳工修建，两座战争公墓与博物馆在镇内，河上的筏屋是本地的旅馆；地狱火通道在西北约 80 公里，爱侣湾瀑布在北面约 65 公里，曼谷在东面约 120 公里，火车从吞武里开来。初来的人最容易犯的错，是把北碧当作一座桥，而桥在镇上，府域的森林与瀑布要再走一两个小时。",
     layout:
       "市镇在桂艾河东岸，河边一带是酒店、水上屋和餐馆，桂河大桥在市镇北面约3公里的河上，战争公墓和泰缅铁路中心在火车站旁，JEATH 战争博物馆在河边。死亡铁路从桂河大桥向西北沿桂诺河到南多（Nam Tok），沿途有塔告山岩栈道；地狱火通道在西北约80公里。爱侣湾国家公园在北面约65公里，赛育在西北约100公里，桑卡武里在西北约220公里。",
     gettingAround:
@@ -9963,8 +9990,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "11–4月最好，斯米兰只在此期间开放；12–2月最挤。住三到五晚，配一次斯米兰。雨季酒店便宜但海况差、部分关闭。",
   },
   "ko-lanta": {
+    // identity sources: **泰国的官方人口口径**（2026-09-10 核）：**DOPA（内政部地方行政厅）的户籍登记人口**，按 12 月 31 日基准、次年 1–2 月起陆续发布（府/市镇级细分表常滞后数周到数月；一手站点 stat.bora.dopa.go.th 本轮仍连不上）· **NSO（国家统计局）的普查与专项调查人口**（普查十年一次）。**两套互不可换算、常年差很多**（曼谷：DOPA 登记约 542 万 vs NSO 普查规划区 1522 万），写哪一套必须点名。本库统一用 DOPA 登记口径。
+    //   兰塔岛：10,830（2012）是可查到的最后一个全岛口径数；**乡镇级数据显示兰达耶乡镇 2022 年末已降到 6,942**（沙拉丹镇 1983 年已分出、是另一个乡镇），提示全岛口径大概率也在下降。**本轮没有找到能可靠合并两个乡镇的全岛最新数，因此只补年份 + 写明可能已下降，不换一个没核到的数。** 3 级，2026-09-10 核。
     identity:
-      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，人口约1.1万。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
+      "兰塔岛在泰国甲米府的安达曼海上，由兰塔大岛和兰塔小岛组成，大岛长约25公里、宽约6公里，面积约81平方公里，2012 年人口约1.1万（本轮未找到可信的更新一期，乡镇级 2022 年的数据显示可能已下降）。它比皮皮岛安静，西岸是一串长沙滩（空道、长滩、干藤湾），南端是兰塔群岛国家公园的灯塔和海角；东岸的兰塔老镇是十九世纪华人和海上民族（乌拉克拉沃伊）聚居的木屋渔港。2015年通车的桥把大小岛与大陆连了起来，罗克岛和红石、紫石潜点是安达曼海最好的潜水地之一。2004年海啸对兰塔的影响远小于皮皮岛。",
     // howItWorks sources: 兰达耶岛（主岛）**10,830 人（2012）**；兰达县（含大小兰达岛）30,500 人（2012）
     //   或 26,805（2010 年 NSO 普查）——3 级，2026-09-08 核。
     //   **howItWorks 原写的「约 2 万」三个数都对不上**：注释称它转引自英文维基关于苏梅岛的
@@ -10169,18 +10198,23 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "端午节期间（农历五月初五前后）江陵端午祭是体验当地传统的最佳时机；夏季海滩旺季、冬季则是滑雪与温泉季节。",
   },
   sokcho: {
+    // identity sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条不是核实方报的，是我在处理韩国批之后对全库做 `朝鲜战争 / Korean War / 军事分界线 / Military Demarcation / 非军事区 / DMZ / 38 度 / 停战` 的正则扫描扫出来的** —— 核实方只看它那一批的 14 个条目，扫全库才发现同一类表述还散在别处。**「派一批去核」和「把这一类在全库搜一遍」是两件事。**
+    //   束草这一条**在 identity、howItWorks、culture 三段里各踩了一次**，三处都已改成可核实的地理、产业与生活事实。
     identity:
-      "束草是江原道东北部海岸城市，人口约8万，是探索雪岳山国家公园的传统门户，与朝鲜半岛军事分界线相距不远。",
-    // howItWorks sources: **韩国的官方人口口径**（2026-09-09 核）：**住民登录人口（주민등록인구，行政安全部 MOIS）** —— 韩国国民中的居住者 + 居住不明者 + 国内居所申报的在外国民，**不含外国人**，按月发布（月末数约在次月内更新），**这是本库统一采用的城市人口口径**；另有各地方政府自行合并 MOIS 数与法务部登记外国人数得到的「含外国人总人口」，**没有单一央级机构统一发布**，引用必须注明；统计厅（KOSTAT）的人口总调查每 5 年一次（尾数 0/5，最近 2025 年）与推计人口是另一套方法，**不能与住民登录人口混用**。行政层级：特别市 / 6 个广域市 / 特别自治市 与 道 / 特别自治道 同级（合称广域自治团体 17 个），其下市 / 郡 / 自治区为基础自治团体；「特例市」不是行政层级，是给人口 ≥100 万的市的扩权地位。**官方的「都会区」概念只存在于首都圈（수도권）**，地方城市没有对应的官方口径。
-    //   束草市域约 105–106 平方公里。**「韩国面积最小的市之一」不成立**：全国至少有龟里、果川、军浦、乌山、富川、义王、安养、鸡龙等多个市比它小，束草在约 75 个市里处于中下游。排名已删。3 级交叉验证，2026-09-09 核。
+      "束草是江原道东北部海岸城市，人口约8万，是探索雪岳山国家公园的传统门户，也是东海岸重要的渔港与海鲜集散地。",
+    // howItWorks sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一段里有三处踩线**，全部按红线处理：① 开头的 1945/1951/1953 时间线 —— 删，不改写；② 结尾的「北面是高城与非军事区」—— 改成「北面是高城」；③ 把这座城定性为「边境城市」—— 改成「有渔港与自己节奏的城市」。**阿爸村、手摇渡船、鱼糕这些可核实的生活事实保留下来了，只是不再交代它的成因** —— 按仓库口径，这类内容宁可少说一层，也不写可能读作立场表态的句子。2026-09-10。
     howItWorks:
-      "束草是江原特别自治道的一座市，市域约 106 平方公里，人口约 8 万。这座城的位置决定了它的历史：1945 年划界时它在北纬 38 度以北，1951 年 8 月由韩国军队占领，1953 年停战后归韩国，当年南下的实乡人在青湖洞聚居，形成了“阿爸村”，那里的手摇渡船与鱼糕至今是本地的标志。市区夹在东海与雪岳山之间：雪岳山国家公园的入口在西面 10 公里，新兴寺与缆车在里面，永郎湖在市区中央，大浦港的鱼市在南端。首尔到这里约一个半小时，襄阳机场在南面 20 公里，北面是高城与非军事区。初来的人最容易犯的错，是把束草当作雪岳山的山门，而它是一座有渔港与自己历史的边境城市。",
+      "束草是江原特别自治道的一座市，市域约 106 平方公里，人口约 8 万。青湖洞的“阿爸村”是市区里一片自成一格的街区，靠一条手摇渡船与对岸相连，那条渡船和当地的鱼糕至今是束草的标志。市区夹在东海与雪岳山之间：雪岳山国家公园的入口在西面 10 公里，新兴寺与缆车在里面，永郎湖在市区中央，大浦港的鱼市在南端。首尔到这里约一个半小时，襄阳机场在南面 20 公里，北面是高城。初来的人最容易犯的错，是把束草当作雪岳山的山门，而它是一座有渔港与自己节奏的海滨城市。",
     layout:
       "城市紧邻东海岸，青草湖潟湖与束草港分布于市区，雪岳山国家公园入口位于市区西侧内陆约15公里处。",
     gettingAround:
       "本地无商业机场，最近为襄阳国际机场（距市区约20km，国内定期航班有限）；从首尔乘高速大巴约2至2.5小时可达。市区及雪岳山入口建议乘公交或包车。",
+    // culture sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一处在 `culture` 段** —— 红线的适用范围不只是 `history` 段，任何段落里可能读作立场表态的句子都算。2026-09-10。
     culture:
-      "束草因邻近朝鲜半岛军事分界线，历史上曾是南北分隔前重要的港口城镇，如今以海鲜市场与雪岳山旅游闻名。",
+      "束草长期是东海岸的港口城镇，如今以海鲜市场与雪岳山旅游闻名。",
     seeAndDo:
       "雪岳山国家公园（大青峰、九龙瀑布徒步）；束草中央市场海鲜美食；青草湖生态公园；洛山寺海边佛寺。",
     whenAndTips:
@@ -10250,8 +10284,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
 
   // ── 韩国 批2（2026-09-05）──
   incheon: {
+    // identity sources: **零争议红线**（`CLAUDE.md`）：不碰现代政治 / 领土议题；可能有争议 → 删或换中性表述。
+    //   这一条踩了两层：① 涉及朝鲜半岛现代军事史；② 「转折点」本身是评价性表述。**已删句**，同段其余内容（1883 年开港、韩国唯一官方中华街、开港场老建筑、2001 年仁川国际机场、松岛国际都市与 2003 年首个经济自由区、2014 年亚运会、江华岛与舞衣岛）全部保留。2026-09-10。
+    //   **这一条是全库扫描扫出来的，不在韩国地形那一批的 14 个条目里** —— 又一次说明「派一批去核」和「把这一类在全库搜一遍」是两件事。
     identity:
-      "仁川在首尔以西的黄海岸，是韩国第三大城市，人口约302万（2026年）。1883年开港后它成为朝鲜半岛最早接触外国的港口之一，仁川站旁的中华街是韩国唯一的官方中华街，开港场一带保留着日式和西式老建筑；1950年9月的仁川登陆是朝鲜战争的转折点。仁川国际机场（2001年）建在永宗岛上，是韩国的国际门户；松岛国际都市是在填海地上规划的新城，2003年设立韩国第一个经济自由区，2014年仁川办过亚运会。江华岛、舞衣岛等海岛也属仁川。",
+      "仁川在首尔以西的黄海岸，是韩国第三大城市，人口约302万（2026年）。1883年开港后它成为朝鲜半岛最早接触外国的港口之一，仁川站旁的中华街是韩国唯一的官方中华街，开港场一带保留着日式和西式老建筑。仁川国际机场（2001年）建在永宗岛上，是韩国的国际门户；松岛国际都市是在填海地上规划的新城，2003年设立韩国第一个经济自由区，2014年仁川办过亚运会。江华岛、舞衣岛等海岛也属仁川。",
     // howItWorks sources: Wikipedia (2026-09): Incheon (Metropolitan City; 2026-01 pop 3,015,482; Songdo FEZ 2003; ICN); Special cities of South Korea
     howItWorks:
       "仁川是韩国的“广域市”，与道同级，由民选市长治理，下分 8 个自治区和 2 个郡，各区有自己的区长和区议会；2026 年人口约 302 万，是韩国第三大城市。它既是一座独立的城，又是首都圈的西大门：仁川国际机场建在永宗岛上，机场铁路直通首尔站，首尔地铁 1 号线直通仁川站，大量居民每天往返首尔。城市有三个重心：仁川站周边的开港场老城，松岛的填海新城——2003 年设立的韩国第一个经济自由区，以及富平、九月洞的商业区。地址按“道路名 + 建筑号”书写，本地人以“松岛”“旧城”“机场”来分辨地段。江华岛、舞衣岛等海岛也属仁川。初来的人最容易犯的错，是把仁川当作机场所在的一个郊区，而它是一座有自己中心、比首尔面积更大的广域市。",
@@ -12449,28 +12486,31 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "安卡拉属大陆性气候，夏季炎热干燥、冬季寒冷，4月至6月与9月至10月是较适宜的旅行季节；安尼特卡比尔参观需着装得体，游客较多建议避开土耳其国定假日高峰时段。",
   },
   izmir: {
+    // identity sources: 人口：**TÜİK 的「伊兹密尔人口」是全省数**（2014 年起省界 = 大都会市界），4,504,185（2025-12-31，2026-02-09 发布）。「第三大城市」按省人口排名成立。2 级转引 TÜİK。2026-09-10 核。
     identity:
-      "伊兹密尔是土耳其第三大城市，人口逾450万，是爱琴海沿岸重要港口，因相对世俗开放的城市氛围与滨海科尔顿长廊而被称为“爱琴海明珠”。",
+      "伊兹密尔是土耳其第三大城市（按省人口排名，伊兹密尔省自2014年起与大都会市同界），2025年省人口逾450万（土耳其统计局），是爱琴海沿岸重要港口，滨海的科尔顿长廊是城市地标，因此被称为“爱琴海明珠”。",
     // howItWorks sources: Wikipedia (2026-09): İzmir (metropolitan municipality = province; 30 districts; ~4.5 million 2024; Gulf of İzmir; Konak/Alsancak/Karşıyaka/Bornova/Bayraklı; İzban/metro/ferries; Ephesus 80 km); Metropolitan municipalities in Turkey
     howItWorks:
-      "伊兹密尔在行政上是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，市下分 30 个区，各区有自己的民选区长和区议会，区之下是有民选社区长的 mahalle。2024 年人口约 450 万，是土耳其第三大城市。城市环抱着伊兹密尔湾：科纳克与阿尔桑贾克是市中心，海滨的科尔敦长廊是市民散步的地方，凯麦拉尔特集市与古代士麦那的市集遗址在老城，卡迪费卡莱山俯瞰全城；对岸的卡尔希亚卡靠渡轮往来，博尔诺瓦是大学区，巴伊拉克勒是新的高楼商务区。İzban 通勤铁路、地铁与渡轮用一张卡贯通。港口与自由贸易区是经济支柱，以弗所在南面约 80 公里。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把伊兹密尔当作去以弗所的中转站，而它是一座围着海湾生长、靠渡轮把两岸连成一体的大城市。",
+      "伊兹密尔在行政上是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，市下分 30 个区，各区有自己的民选区长和区议会，区之下是有民选社区长的 mahalle。2025 年省人口约 450 万（土耳其统计局），是土耳其第三大城市。城市环抱着伊兹密尔湾：科纳克与阿尔桑贾克是市中心，海滨的科尔敦长廊是市民散步的地方，凯麦拉尔特集市与古代士麦那的市集遗址在老城，卡迪费卡莱山俯瞰全城；对岸的卡尔希亚卡靠渡轮往来，博尔诺瓦是大学区，巴伊拉克勒是新的高楼商务区。İzban 通勤铁路、地铁与渡轮用一张卡贯通。港口与自由贸易区是经济支柱，以弗所在南面约 80 公里。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把伊兹密尔当作去以弗所的中转站，而它是一座围着海湾生长、靠渡轮把两岸连成一体的大城市。",
     layout:
       "城市沿伊兹密尔湾呈弧形展开，科尔顿海滨长廊是市民日常休闲核心区；老城区卡迪费卡莱城堡所在的科纳克一带保留历史街区，士麦那古市集遗址位于市中心。",
     gettingAround:
       "阿德南·门德雷斯机场（ADB）距市区约18公里；市内有地铁与轻轨网络，前往以弗所古城通常需乘火车或大巴至邻近的塞尔柱镇，车程约1小时。",
+    // culture sources: ⚠️ 零争议红线（D-redline）：identity 与 culture 两段原本都写了「相对世俗开放 / 世俗化程度较高」——对土耳其国内城市在世俗／宗教轴上做比较评价，2026-09-10 一并删除，换成不带评价的城市事实。
     culture:
-      "官方语言土耳其语。伊兹密尔是土耳其世俗化程度较高的城市之一，衣着相对自由；进入清真寺仍需遵守脱鞋、女性备头巾等基本礼仪。餐厅小费一般为账单的10%至15%。",
+      "官方语言土耳其语。伊兹密尔是滨海度假与商贸氛围较浓的城市，日常衣着以休闲为主；进入清真寺仍需遵守脱鞋、女性备头巾等基本礼仪。餐厅小费一般为账单的10%至15%。",
     seeAndDo:
       "科尔顿海滨长廊（日落时分观景与用餐胜地）；卡迪费卡莱城堡；士麦那古市集遗址；以伊兹密尔为基地前往以弗所古城（古希腊罗马时期重要城邦遗址）一日游。",
     whenAndTips:
       "4月至6月、9月至10月气候最为宜人，7、8月沿海地区炎热且游客较多；前往以弗所建议安排一整天行程，早晨出发可避开旅游团高峰。",
   },
   antalya: {
+    // identity sources: 人口：TÜİK 2025 安塔利亚省 2,777,677（省界 = 大市界，2014 年起）。「地中海沿岸最大」经与阿达纳 2,283,609、梅尔辛比对成立。2026-09-10 核。
     identity:
-      "安塔利亚是土耳其地中海沿岸最大城市，人口逾270万，是土耳其地中海（土耳其里维埃拉）旅游的核心枢纽，古城卡莱伊奇临海而建。",
-    // howItWorks sources: Wikipedia (2026-09): Antalya (metropolitan municipality = province since 2014; 19 districts, 5 central; ~2.7 million province / ~1.4 million urban 2024; Kaleiçi; Konyaaltı/Lara; AntRay; airport); Metropolitan municipalities in Turkey
+      "安塔利亚是土耳其地中海沿岸最大城市（按省人口，2025年省人口逾277万，土耳其统计局），是土耳其地中海（土耳其里维埃拉）旅游的核心枢纽，古城卡莱伊奇临海而建。",
+    // howItWorks sources: 人口：省 2,777,677（TÜİK 2025）。**「城区约 140 万」核不到 TÜİK 一手口径**（疑为维基自定义 urban area），已撤下、记 unknown，不用另一个没核到的数替换。2026-09-10 核。
     howItWorks:
-      "安塔利亚自 2014 年起是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，省下分 19 个区，各区有自己的民选区长和区议会；其中穆拉特帕夏、凯佩兹、科尼亚阿尔特、多谢梅阿尔特与阿克苏 5 个区构成城市本身，2024 年全省约 270 万人，城区约 140 万。人们心中的“安塔利亚度假区”多在别的区：贝莱克、锡德、阿拉尼亚、凯梅尔各在自己的区里，离市区几十到一百多公里。城市本身建在托罗斯山与地中海之间的海岸台地上：卡莱伊奇老城在港口上方的悬崖上，科尼亚阿尔特海滩在西，拉拉海滩在东，杜登瀑布从台地直接跌入海里。安塔利亚机场是土耳其最繁忙的机场之一，旅客多是度假者；AntRay 有轨电车连起市区。柑橘与温室农业是旅游之外的产业。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把安塔利亚市当作度假村，而它是一座 140 万人的省会，度假村在几十公里外。",
+      "安塔利亚自 2014 年起是一座与省同域的大都会市：民选的大都会市长管交通与全市规划，中央任命的省长管国家事务，省下分 19 个区，各区有自己的民选区长和区议会；其中穆拉特帕夏、凯佩兹、科尼亚阿尔特、多谢梅阿尔特与阿克苏 5 个区构成城市本身，2024 年全省约 278 万人（2025年，土耳其统计局）；城区人口另有估算，但核不到官方口径，这里不写。人们心中的“安塔利亚度假区”多在别的区：贝莱克、锡德、阿拉尼亚、凯梅尔各在自己的区里，离市区几十到一百多公里。城市本身建在托罗斯山与地中海之间的海岸台地上：卡莱伊奇老城在港口上方的悬崖上，科尼亚阿尔特海滩在西，拉拉海滩在东，杜登瀑布从台地直接跌入海里。安塔利亚机场是土耳其最繁忙的机场之一，旅客多是度假者；AntRay 有轨电车连起市区。柑橘与温室农业是旅游之外的产业。地址写“社区、街道、门牌、区”。初来的人最容易犯的错，是把安塔利亚市当作度假村，而它本身是一座省会城市，度假村在几十公里外。",
     layout:
       "老城卡莱伊奇以哈德良门为标志性入口，保留奥斯曼时期街巷与港湾；城市周边分布科尼亚勒特、伦达等多处知名海滩，杜登瀑布位于市区东北侧。",
     gettingAround:
@@ -12500,11 +12540,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月至6月、9月至10月是热气球飞行成功率较高、气候最宜人的季节；热气球飞行受天气条件影响，建议预留备用日期以防取消；冬季偶有降雪，为岩柱地貌增添别样景观但飞行取消概率更高。",
   },
   bodrum: {
+    // identity sources: 人口：博德鲁姆是穆拉省下的**区（ilçe）**、不是省会，故用区人口而非省人口（穆拉全省 2025 年 1,099,547，不适用）。TÜİK 2025 区人口 207,196，2/3 级转引。2026-09-10 核。
     identity:
-      "博德鲁姆是土耳其爱琴海南岸半岛度假胜地，人口约20万，因白色建筑、风车与圣彼得城堡闻名，是土耳其地中海式生活方式的代表城镇之一。",
+      "博德鲁姆是土耳其爱琴海南岸半岛度假胜地，2025年区人口约20.7万（土耳其统计局），因白色建筑、风车与圣彼得城堡闻名，是土耳其地中海式生活方式的代表城镇之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bodrum (Turkey; town and district of Muğla Province, the ancient Halicarnassus, whose Mausoleum was one of the Seven Wonders of the Ancient World; Bodrum Castle built by the Knights of St John from 1402 using stone from the Mausoleum, now the Museum of Underwater Archaeology; the district population grew from about 26,000 in 1965 to about 198,000 in 2023 as tourism replaced fishing and sponge diving; white-washed building mandated since 2006; peninsula villages including Yalıkavak, Gümüşlük and Türkbükü; marinas and gulet yachting; Milas-Bodrum Airport; ferries to Kos)
     howItWorks:
-      "博德鲁姆是土耳其穆拉省的一个县与同名县城，在爱琴海边的一处半岛上；穆拉是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。它是古代的哈利卡纳苏斯：公元前 4 世纪的摩索拉斯陵墓曾是世界七大奇迹之一，后毁于地震，1402 年起圣约翰骑士团用陵墓的石料在海岬上建起博德鲁姆城堡，如今这座城堡是水下考古博物馆，藏有从附近海域打捞的古代沉船。20 世纪中期这里还是渔业与采海绵的小镇，1965 年全县约 2.6 万人，2023 年已约 19.8 万，旅游把它彻底改写；2006 年起当地规定新建筑一律刷白，因此整个半岛外观统一。真正的度假区分散在半岛上的村子里——亚勒卡瓦克、居米什吕克、蒂尔克比库各有不同的气质，县城只是港口与交通的中心。米拉斯—博德鲁姆机场在东北，渡轮通往希腊的科斯岛。初来的人最容易犯的错，是把住宿定在县城，而多数人想去的海湾在半岛另一侧，开车还要半小时以上。",
+      "博德鲁姆是土耳其穆拉省的一个县与同名县城，在爱琴海边的一处半岛上；穆拉是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。它是古代的哈利卡纳苏斯：公元前 4 世纪的摩索拉斯陵墓曾是世界七大奇迹之一，后毁于地震，1402 年起圣约翰骑士团用陵墓的石料在海岬上建起博德鲁姆城堡，如今这座城堡是水下考古博物馆，藏有从附近海域打捞的古代沉船。20 世纪中期这里还是渔业与采海绵的小镇，1965 年全县约 2.6 万人，2023 年已约 19.8 万、2025 年约 20.7 万（土耳其统计局），旅游把它彻底改写；2006 年起当地规定新建筑一律刷白，因此整个半岛外观统一。真正的度假区分散在半岛上的村子里——亚勒卡瓦克、居米什吕克、蒂尔克比库各有不同的气质，县城只是港口与交通的中心。米拉斯—博德鲁姆机场在东北，渡轮通往希腊的科斯岛。初来的人最容易犯的错，是把住宿定在县城，而多数人想去的海湾在半岛另一侧，开车还要半小时以上。",
     layout:
       "城市围绕博德鲁姆湾呈半圆形分布，圣彼得城堡（博德鲁姆城堡）矗立于港湾中央的岬角上，将港湾分为东、西两个海湾；半岛周边分布图尔古特雷斯、亚利卡瓦克等多个度假小镇。",
     gettingAround:
@@ -12534,11 +12575,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "日出或傍晚时段游客相对较少、光线柔和适合拍摄；夏季正午气温较高，梯田表面反光强烈，建议携带防晒用品并避开正午时段前往。",
   },
   trabzon: {
+    // 零改动留痕（2026-09-10）：TZX 机场代码现行有效；前 756 年米利都殖民地特拉佩祖斯、1204 年第四次十字军后的
+    //   特拉比松帝国、1461 年入奥斯曼——均为广泛记载的前现代史，未涉现代议题。
+    // identity sources: 人口：identity 的「逾 80 万」是**省**人口（TÜİK 2025 823,323），howItWorks 的「约 33.5 万」是**中心区奥尔塔希萨尔**（2025 年 335,116）——两个都对，原来只是都没写口径，并排读像打架。2026-09-10 核。
     identity:
-      "特拉布宗是土耳其黑海东岸重要港口城市，人口逾80万，历史上曾是丝绸之路支线港口与拜占庭特拉比松帝国都城，是探索黑海山地景观的核心门户。",
+      "特拉布宗是土耳其黑海东岸重要港口城市，2025年省人口逾82万（土耳其统计局，特拉布宗省自2014年起与大市同界），历史上曾是丝绸之路支线港口与拜占庭特拉比松帝国都城，是探索黑海山地景观的核心门户。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Trabzon (Turkey; city and capital of Trabzon Province on the north-eastern Black Sea coast, urban population about 335,000; founded in 756 BC as the Greek colony Trapezus, capital of the Empire of Trebizond, a successor state of Byzantium after the Fourth Crusade of 1204, until Ottoman rule began in 1461; the Hagia Sophia of Trabzon; Sumela Monastery about 45 km away at Maçka; steep mountains behind the coast and the wettest region of Turkey; hazelnuts and tea the main exports, anchovies known throughout Turkey as hamsi; Uzungöl; Trabzonspor; Trabzon Airport)
     howItWorks:
-      "特拉布宗是土耳其特拉布宗省的省会，在黑海东南岸，城区人口约 33.5 万；特拉布宗是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。地形决定了这座城的形状：庞廷山脉在离岸很近的地方陡然升起，可用的平地只有沿海一条窄带，因此城市顺着海岸拉长，往山上一层层叠着建，公路与隧道是日常。公元前 756 年它作为希腊殖民城市特拉佩苏斯建立，1204 年第四次十字军东征之后成为特拉比松帝国的都城，1461 年起入奥斯曼治下；13 世纪的圣索菲亚教堂建筑保存至今，苏梅拉修道院嵌在城南约 45 公里马奇卡的悬崖上。这一带是土耳其降水最多的地区，山坡上密植茶树与榛子，两者是本地的主要出口；黑海的凤尾鱼在土耳其称“哈姆西”，是这座城最有名的食物。乌宗湖在南面山中。初来的人最容易犯的错，是按地中海沿岸的印象预期这里，而黑海岸多雨、多云、山陡。",
+      "特拉布宗是土耳其特拉布宗省的省会，在黑海东南岸，中心城区（奥尔塔希萨尔区）2025年人口约 33.5 万（土耳其统计局）；特拉布宗是实行“大市”制的省份，市界与省界重合，本地事务由大市与县两级办理。地形决定了这座城的形状：庞廷山脉在离岸很近的地方陡然升起，可用的平地只有沿海一条窄带，因此城市顺着海岸拉长，往山上一层层叠着建，公路与隧道是日常。公元前 756 年它作为希腊殖民城市特拉佩苏斯建立，1204 年第四次十字军东征之后成为特拉比松帝国的都城，1461 年起入奥斯曼治下；13 世纪的圣索菲亚教堂建筑保存至今，苏梅拉修道院嵌在城南约 45 公里马奇卡的悬崖上。这一带是土耳其降水最多的地区，山坡上密植茶树与榛子，两者是本地的主要出口；黑海的凤尾鱼在土耳其称“哈姆西”，是这座城最有名的食物。乌宗湖在南面山中。初来的人最容易犯的错，是按地中海沿岸的印象预期这里，而黑海岸多雨、多云、山陡。",
     layout:
       "城市沿黑海海岸带状分布，老城区保留拜占庭时期特拉布宗圣索菲亚教堂等历史建筑，市郊山区分布苏美拉修道院与乌宗湖等自然与人文景观。",
     gettingAround:
@@ -12551,11 +12595,15 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "6月至9月气候相对温暖干燥，是探访苏美拉修道院与乌宗湖的适宜季节；黑海地区全年多雨，出行建议随身携带雨具，山区道路多弯建议预留充足车程时间。",
   },
   konya: {
+    // 零改动留痕（2026-09-10）：KYA 机场代码现行有效。identity 的「因苏菲派诗人鲁米与旋转苦行僧传统闻名，是重要的
+    //   宗教文化中心」经专项复核为**客观史实／文旅表述**，与伊兹密尔那句「相对世俗开放」的国内比较评价不同，
+    //   ✅ 不在红线之内，不改。
+    // identity sources: 人口：TÜİK 2025 科尼亚省 2,343,409。**howItWorks 早就写清了口径、identity 没跟上**——C6-h「注释／另一段写对了，这一段没同步」的又一例。「宗教文化中心」是客观史实表述，与伊兹密尔那句国内比较评价不同，不踩红线、保留。2026-09-10 核。
     identity:
-      "科尼亚是土耳其中安纳托利亚重要城市，人口逾220万，历史上是塞尔柱王朝在安纳托利亚的都城，因苏菲派诗人鲁米与旋转苦行僧传统闻名，是土耳其重要的宗教文化中心。",
+      "科尼亚是土耳其中安纳托利亚重要城市，2025年省人口逾234万（土耳其统计局，省界与大市同域），历史上是塞尔柱王朝在安纳托利亚的都城，因苏菲派诗人鲁米与旋转苦行僧传统闻名，是土耳其重要的宗教文化中心。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Konya (Turkey; city and capital of Konya Province, the largest province of Turkey by area, the metropolitan municipality counting 2,330,024 in 2024 and the sixth most populous city in Turkey; historically Iconium, capital of the Seljuk Sultanate of Rum in the 12th and 13th centuries with its Seljuk architecture; Rumi, called Mevlâna, spent his last years here and his turquoise-domed tomb is the chief visitor site, with authentic sema performances each Saturday at the Mevlana Cultural Centre and the Şeb-i Arûs in December; on the south-western edge of the Central Anatolian Plateau in Turkey's largest plain, a cold semi-arid climate; among the Anatolian Tigers economically; high-speed rail to Ankara, Istanbul and Karaman; Çatalhöyük nearby; etli ekmek)
     howItWorks:
-      "科尼亚是土耳其科尼亚省的省会，科尼亚是土耳其面积最大的省；这里实行“大市”制，市界与省界重合，2024 年大市辖区人口 2,330,024——因此这个数字包括了广阔的农村，不是市区人口，市区在其中约占一半，全国排第六。城市在中安纳托利亚高原西南缘的大平原上，气候属冷半干旱，冬冷夏热、雨少，这片平原是土耳其最大的产粮区，小麦与甜菜是它的支柱，本地因经济活跃被归入“安纳托利亚之虎”。12 至 13 世纪它是塞尔柱罗姆苏丹国的首都，城中的塞尔柱式清真寺与经学院留自那个时代。13 世纪的苏非诗人鲁米在此度过晚年，绿松石圆顶的梅夫拉纳陵是全城最主要的参观地，每周六在文化中心有旋转舞“塞玛”的正式演出，12 月的“谢比阿鲁斯”纪念活动规模最大。高铁通往安卡拉与伊斯坦布尔，恰塔霍裕克遗址在东南约 40 公里。初来的人最容易犯的错，是用大市人口来估计城市规模，而那是全省的数字。",
+      "科尼亚是土耳其科尼亚省的省会，科尼亚是土耳其面积最大的省；这里实行“大市”制，市界与省界重合，2025 年大市辖区人口 2,343,409——因此这个数字包括了广阔的农村，不是市区人口，市区在其中约占一半，全国排第六。城市在中安纳托利亚高原西南缘的大平原上，气候属冷半干旱，冬冷夏热、雨少，这片平原是土耳其最大的产粮区，小麦与甜菜是它的支柱，本地因经济活跃被归入“安纳托利亚之虎”。12 至 13 世纪它是塞尔柱罗姆苏丹国的首都，城中的塞尔柱式清真寺与经学院留自那个时代。13 世纪的苏非诗人鲁米在此度过晚年，绿松石圆顶的梅夫拉纳陵是全城最主要的参观地，每周六在文化中心有旋转舞“塞玛”的正式演出，12 月的“谢比阿鲁斯”纪念活动规模最大。高铁通往安卡拉与伊斯坦布尔，恰塔霍裕克遗址在东南约 40 公里。初来的人最容易犯的错，是用大市人口来估计城市规模，而那是全省的数字。",
     layout:
       "梅夫拉纳博物馆（鲁米陵墓所在地）是老城核心地标，周边分布阿拉丁清真寺、细长尖塔神学院博物馆等塞尔柱时期建筑，是科尼亚历史城区的核心区域。",
     gettingAround:
@@ -12568,8 +12616,12 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "每年12月中旬鲁米逝世纪念周（Şeb-i Arus）期间可观赏正式的旋转苦行僧仪式，但游客较多需提前订票；4月至6月、9月至10月是气候较宜人的旅行季节。",
   },
   bursa: {
+    // 零改动留痕（2026-09-10）：howItWorks 段全篇没有写人口数字，与其余五城的体例不一致，但**不是错误**，本轮不补——
+    //   补数字要连口径一起写，等下一轮连同布尔萨城区口径（三个中心区）一起查清再补。
+    //   1326 年攻取、1360 年代迁都埃迪尔内、2014 年「布尔萨与朱马勒克兹克：奥斯曼帝国的诞生」列入 UNESCO：均核实无误。
+    // identity sources: 人口：原文 216 万**量级就不对**——TÜİK 2025 布尔萨省 3,263,011。216 万接近三个中心区的城区规模，属把城区数当全市数用（C6-c）。「第四大」按省人口排名成立（伊斯坦布尔、安卡拉、伊兹密尔之后）。2 级转引 TÜİK。2026-09-10 核。
     identity:
-      "布尔萨是土耳其第四大城市，人口逾216万，是奥斯曼帝国首个都城（1326至1365年），因清真寺众多与紧邻乌鲁山滑雪场而被称为“绿色布尔萨”。",
+      "布尔萨是土耳其第四大城市，2025年省人口逾326万（土耳其统计局，省界与大市同域），是奥斯曼帝国首个都城（1326至1365年），因清真寺众多与紧邻乌鲁山滑雪场而被称为“绿色布尔萨”。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Bursa (Turkey; city and capital of Bursa Province, the fourth most populous city in Turkey and second in the Marmara Region after Istanbul; captured from the Byzantines in 1326 and the capital of the early Ottoman state until the 1360s, when the capital moved to Edirne; Bursa and Cumalıkızık: the Birth of the Ottoman Empire, UNESCO World Heritage 2014; the Grand Mosque with twenty domes in four rows of five, the Green Mosque and Green Tomb, the Koza Han silk market; Mount Uludağ above the city with skiing and thermal springs used since Roman times; the largest production centre of the Turkish automotive industry with Fiat, Renault and Bosch, plus textiles and food; called Yeşil Bursa, green Bursa)
     howItWorks:
       "布尔萨是土耳其布尔萨省的省会，是土耳其第四大城市、马尔马拉地区仅次于伊斯坦布尔的第二大城市；布尔萨实行“大市”制，市界与省界重合，本地事务由大市与县两级办理。1326 年奥斯曼势力从拜占庭手中取得此城，此后到 1360 年代它是奥斯曼国家的第一个主要都城，之后迁往埃迪尔内；2014 年“布尔萨与楚马勒克兹克：奥斯曼帝国的诞生”列入世界遗产，涵盖大清真寺、绿色清真寺与绿陵以及山坡上的老村楚马勒克兹克。大清真寺的屋顶由二十个穹顶按四排五列排开，科扎商栈曾是丝绸交易的中心——布尔萨长期是丝绸之路西端的丝织重镇。城市贴着乌鲁山的北坡，山上有滑雪场与缆车，罗马时代起就利用这里的温泉，因此市内多浴场，绿地多，本地自称“绿布尔萨”。今天它是土耳其汽车工业最大的生产中心，菲亚特、雷诺与博世都在此设厂。初来的人最容易犯的错，是把它当作伊斯坦布尔的一日游，而它是一座工业与遗产并重的大城。",
@@ -12602,11 +12654,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月是沿海旅游旺季，7、8月气温高、游客最多，5、6月与9月气候宜人且价格较低；内陆萨格勒布四季皆宜，冬季有圣诞集市；沿海与内陆之间车程较长，建议合理安排行程天数。",
   },
   zagreb: {
+    // 零改动留痕（2026-09-10）：ZAG（弗拉尼奥·图季曼机场）代码现行有效；history 段止于中世纪格拉德茨与卡普托尔
+    //   两座山丘小镇，未涉 1990 年代及以后议题。✅ 零争议红线通过。
+    // identity sources: 人口：DZS 年中估计 777,744（2025 年年中，STAN-2026-3-1，2026-09-04 发布，1 级）。萨格勒布因「市 = 县」地位在该序列里单列，所以它**有**年度更新数，不同于其他克罗地亚城市。2026-09-10 核。
     identity:
-      "萨格勒布是克罗地亚首都与最大城市，人口约80万，是全国政治、经济与文化中心，城市历史可追溯至中世纪的格拉德茨与卡普托尔两座山丘小镇。",
-    // howItWorks sources: Wikipedia (2026-09): Zagreb (City of Zagreb with county status; 17 city districts with elected councils, 218 local committees; ~641 km²; ~767,000 2021 ≈ quarter of Croatia; metro ~1.1 million; Upper/Lower Town, Novi Zagreb; ZET trams, no metro; ~70 settlements incl. Sesvete)
+      "萨格勒布是克罗地亚首都与最大城市，2025年年中人口约77.8万（克罗地亚统计局），是全国政治、经济与文化中心，城市历史可追溯至中世纪的格拉德茨与卡普托尔两座山丘小镇。",
+    // howItWorks sources: 人口：DZS 年中估计 777,744（2025 年年中，STAN-2026-3-1，2026-09-04 发布，1 级）；占全国 20.1%。原文「都会区约 110 万」核不到发布方——DZS 不发布这一档，已撤下（Eurostat FUA 一类有具名发布方的口径不禁用，但要写明是谁发的、哪一年）。2026-09-10 核。
     howItWorks:
-      "萨格勒布既是克罗地亚的首都，也是一个与县同级的行政区，与四周的萨格勒布县是两个不同的政府；由民选的市长与市议会治理，市下分 17 个区（gradska četvrt），各有民选的区议会，区之下是 218 个地方委员会。市域约 641 平方公里，包括塞斯韦特等约 70 个聚落，2021 年人口约 77 万，约占克罗地亚的四分之一，都会区约 110 万。城市从北向南分成三层：山坡上的上城是格拉德茨与卡普托尔两座中世纪城镇合成的老城，下城是 19 世纪的格网，耶拉契奇总督广场是坐标原点，绿色马蹄形的公园群穿过其中；萨瓦河对岸的新萨格勒布是战后建起的住宅区。梅德韦德尼察山在北面，是市民的后山。ZET 的有轨电车是市内交通的骨架，没有地铁；缆车连接上下城，多拉茨市场在市中心。地址写“街道、门牌、五位邮编”，邮编 10000 开头。初来的人最容易犯的错，是把上城与下城当作整座城，而萨瓦河以南住着几十万人。",
+      "萨格勒布既是克罗地亚的首都，也是一个与县同级的行政区，与四周的萨格勒布县是两个不同的政府；由民选的市长与市议会治理，市下分 17 个区（gradska četvrt），各有民选的区议会，区之下是 218 个地方委员会。市域约 641 平方公里，包括塞斯韦特等约 70 个聚落，2025 年年中人口约 77.8 万（克罗地亚统计局），约占克罗地亚的五分之一；克罗地亚统计局不单独发布「都会区」这一档，更大范围只能按县计。城市从北向南分成三层：山坡上的上城是格拉德茨与卡普托尔两座中世纪城镇合成的老城，下城是 19 世纪的格网，耶拉契奇总督广场是坐标原点，绿色马蹄形的公园群穿过其中；萨瓦河对岸的新萨格勒布是战后建起的住宅区。梅德韦德尼察山在北面，是市民的后山。ZET 的有轨电车是市内交通的骨架，没有地铁；缆车连接上下城，多拉茨市场在市中心。地址写“街道、门牌、五位邮编”，邮编 10000 开头。初来的人最容易犯的错，是把上城与下城当作整座城，而萨瓦河以南住着几十万人。",
     layout:
       "城市分为上城区（历史老城，圣马可教堂与总督府所在地）与下城区（19世纪规划的方格状街区，包含中央广场耶拉契奇总督广场与众多博物馆）；多拉茨市场是连接上下城的传统市集。",
     gettingAround:
@@ -12619,11 +12674,14 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "4月至6月、9月至10月气候宜人，是探访萨格勒布的最佳季节；12月圣诞集市期间游客较多但氛围浓厚；作为内陆城市，萨格勒布全年皆可游览，不受沿海旅游季节限制。",
   },
   split: {
+    // 零改动留痕（2026-09-10）：SPU 机场代码现行有效；戴克里先宫 1979 年列入 UNESCO 属实；
+    //   history 段止于古罗马—威尼斯—哈布斯堡，未涉现代议题。✅ 零争议红线通过。
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "斯普利特是达尔马提亚地区最大城市，人口约16万，因古罗马皇帝戴克里先在此建造退位宫殿而闻名，宫殿建筑群历经近1700年演变为城市老城核心。",
-    // howItWorks sources: Wikipedia (2026-09): Split (79.4 km²; ~160,600 2021; Split-Dalmatia seat; 27 kotari; Diocletian's Palace UNESCO 1979; Riva, Marjan, Bačvice; conurbation ~307,000 with Solin/Kaštela; Promet buses; airport in Kaštela ~20 km)
+      "斯普利特是达尔马提亚地区最大城市，2021年人口普查约16.1万，因古罗马皇帝戴克里先在此建造退位宫殿而闻名，宫殿建筑群历经近1700年演变为城市老城核心。",
+    // howItWorks sources: ⚠️ 「约 31 万」原本挂在索林 + 卡什泰拉两个市镇上，实际那是斯普利特连同周边十余个市镇的**加总**（2021 年普查 307,289，含斯普利特本身 16.1 万）。索林 24,912 + 卡什泰拉 37,951 ≈ 6.3 万。DZS 不发布「都会区」档，故写成「加总」而不是造一个口径。2026-09-10 核。
     howItWorks:
-      "斯普利特是克罗地亚第二大城市，斯普利特—达尔马提亚县的县治；市镇约 79 平方公里，2021 年人口约 16 万，由民选的市长与市议会治理，市下分 27 个区（kotar）。这座城是从戴克里先宫里长出来的：公元 4 世纪的罗马皇宫本身就是老城，居民至今住在宫墙之内，1979 年列入世界遗产，里瓦海滨长廊在宫的南墙外；马里安半岛是城西的森林山丘，巴奇维采是市中心的海滩。港口是亚得里亚海最大的客运港之一，渡轮通往赫瓦尔、布拉奇、维斯与意大利。索林（古萨洛纳）与卡什泰拉是城区连绵的另外两座市镇，合计约 31 万人，机场在卡什泰拉，约 20 公里。Promet 的公交承担出行，没有轨道交通。哈伊杜克队与波柳德球场是这座城的身份，克拉帕合唱是达尔马提亚的声音。地址写“街道、门牌、五位邮编”，邮编 21000 开头。初来的人最容易犯的错，是把戴克里先宫当作一处遗址，而它是一座住着人的老城。",
+      "斯普利特是克罗地亚第二大城市，斯普利特—达尔马提亚县的县治；市镇约 79 平方公里，2021 年人口约 16 万，由民选的市长与市议会治理，市下分 27 个区（kotar）。这座城是从戴克里先宫里长出来的：公元 4 世纪的罗马皇宫本身就是老城，居民至今住在宫墙之内，1979 年列入世界遗产，里瓦海滨长廊在宫的南墙外；马里安半岛是城西的森林山丘，巴奇维采是市中心的海滩。港口是亚得里亚海最大的客运港之一，渡轮通往赫瓦尔、布拉奇、维斯与意大利。与市区连绵的另外两座市镇是索林（古萨洛纳）与卡什泰拉，二者合计约 6.3 万人（2021年普查）；把斯普利特连同周边十余个市镇一并加总则约 30.7 万（2021年普查加总，克罗地亚统计局并不单独发布「都会区」这一档）。机场在卡什泰拉，约 20 公里。Promet 的公交承担出行，没有轨道交通。哈伊杜克队与波柳德球场是这座城的身份，克拉帕合唱是达尔马提亚的声音。地址写“街道、门牌、五位邮编”，邮编 21000 开头。初来的人最容易犯的错，是把戴克里先宫当作一处遗址，而它是一座住着人的老城。",
     layout:
       "老城完整坐落于戴克里先宫遗址之上，宫殿地下室、圣多姆尼乌斯主教座堂（原戴克里先陵墓）与街巷格局至今保留罗马时期布局；里瓦滨海长廊是老城与港口之间的日常休闲地带。",
     gettingAround:
@@ -12653,8 +12711,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至6月、9月至10月气候宜人、游客相对较少，7、8月气温高且邮轮游客密集；城墙步道无遮蔽，建议避开正午时段并携带充足饮水。",
   },
   rijeka: {
+    // 零改动留痕（2026-09-10）：RJK 机场代码现行有效。history 段的「1924–1945 年费乌梅／苏沙克分界」是两次大战之间的
+    //   行政边界事实（费乌梅自由邦），早于 1990 年代那条线，✅ 零争议红线通过、不改。
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "里耶卡是克罗地亚最大海港与第三大城市，人口约11万，自奥匈帝国时期起即是中欧通往地中海的重要港口，是一座工业与港口传统深厚的城市。",
+      "里耶卡是克罗地亚最大海港与第三大城市，2021年人口普查约10.8万，自奥匈帝国时期起即是中欧通往地中海的重要港口，是一座工业与港口传统深厚的城市。",
     // howItWorks sources: Wikipedia (2026-09): Rijeka (43.4 km²; 107,964 2021; Primorje-Gorski Kotar seat; largest port; Korzo; Trsat; Rječina Fiume/Sušak 1924–45; Opatija 15 km; ECoC 2020; torpedo 1874; University of Rijeka)
     howItWorks:
       "里耶卡是克罗地亚第三大城市，也是最大的港口，滨海和山区县的县治；市镇约 43 平方公里，2021 年人口约 11 万，由民选的市长与市议会治理。城市沿克瓦尔内尔湾的山脚展开，只有一条窄带：科尔佐步行街是市中心，特尔萨特城堡在山上俯瞰全城，列奇纳河把老城与东面的苏沙克分开——1924 至 1945 年间这条河曾是两座城市的边界。奥匈帝国时期它是帝国的主要港口，1913 年位列欧洲第十繁忙的港，1874 年怀特黑德在这里造出了第一枚鱼雷，1882 年建起欧洲第一座工业炼油厂。2020 年它是欧洲文化之都，里耶卡大学在城里。奥帕蒂亚海滨在西面 15 公里，是另一座市镇，克尔克岛上的机场约 30 公里。Autotrolej 的公交承担出行，没有轨道交通。地址写“街道、门牌、五位邮编”，邮编 51000 开头。初来的人最容易犯的错，是把里耶卡当作去岛屿的码头，而它是一座有自己工业史与大学的港口城市。",
@@ -12670,8 +12731,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月气候适宜，里耶卡游客量低于达尔马提亚沿海城市，适合喜欢本地生活氛围的旅行者；作为克瓦内尔湾门户，是探访乌奇卡山与岛屿的理想出发点。",
   },
   zadar: {
+    // 零改动留痕（2026-09-10）：ZAD 机场代码现行有效；history 段止于古罗马至威尼斯时期。✅ 零争议红线通过。
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "扎达尔是北达尔马提亚古城，人口约7万，城市历史可追溯至古罗马时期，是克罗地亚保留罗马遗迹最丰富的城市之一。",
+      "扎达尔是北达尔马提亚古城，2021年人口普查约7.1万，城市历史可追溯至古罗马时期，是克罗地亚保留罗马遗迹最丰富的城市之一。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Zadar (Croatia; the seat of Zadar County and the fifth-largest city in the country, with 70,779 residents in the 2021 census; the oldest continuously inhabited city in Croatia, beginning as the Liburnian settlement Iader in the 9th century BC, a Roman municipality in 59 BC and a Roman colony in 48 BC, held in turn by Byzantine, Venetian, Hungarian and Austrian rule; the 9th-century Church of St Donatus, the cathedral and the Roman forum; the Sea Organ and the Monument to the Sun installed in the 2000s; the fortified city inscribed by UNESCO in 2017 as part of the Venetian defensive works; a ferry port for the Zadar archipelago; Zadar Airport)
     howItWorks:
       "扎达尔是克罗地亚扎达尔县的首府，2021 年普查人口 70,779，是全国第五大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理，县管区域事务。它是克罗地亚有人连续居住时间最长的城市：公元前 9 世纪利布尔尼亚人在此建聚落，称“亚德尔”，公元前 59 年成为罗马自治市、前 48 年升为殖民城，此后历经拜占庭、威尼斯共和国、匈牙利与哈布斯堡的治理。老城建在一条伸入海中的半岛上，街道至今沿用罗马时期的方格布局，广场上留着罗马集市的遗址；9 世纪的圣多纳特教堂是达尔马提亚早期教堂建筑的代表，主教座堂在旁。2017 年这座城的防御工事随“威尼斯共和国防御体系”列入世界遗产。海边的“海风琴”与“向太阳致敬”是 2000 年代加建的两件装置，前者用海浪推动管风琴发声。渡轮从这里通往扎达尔群岛，1396 年创办的大学是克罗地亚最早的一所。初来的人最容易犯的错，是把老城当作步行几分钟的小片，而半岛上层层叠着从罗马到威尼斯的两千年。",
@@ -12687,8 +12750,10 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月气候适宜，日落时分海之风琴与向太阳致敬两处景点最具氛围；扎达尔是探访科尔纳蒂群岛国家公园的主要门户城市。",
   },
   pula: {
+    // 零改动留痕（2026-09-10）：PUY 机场代码现行有效；history 段止于古罗马—威尼斯共和国—奥匈帝国。✅ 零争议红线通过。
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "普拉是伊斯特拉半岛最大城市，人口约5万，因保存完好的古罗马竞技场闻名，历史上先后受古罗马、威尼斯共和国、奥匈帝国治理。",
+      "普拉是伊斯特拉半岛最大城市，2021年人口普查约5.2万，因保存完好的古罗马竞技场闻名，历史上先后受古罗马、威尼斯共和国、奥匈帝国治理。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Pula (Croatia; the largest city in Istria County and the seventh-largest in the country with 52,220 residents in 2021, though it was the administrative centre of Istria from Roman times until superseded by Pazin in 1991; the Pula Arena, one of the best preserved Roman amphitheatres and among the six largest surviving, still used for concerts and a film festival; the Temple of Augustus and the 1st-century Arch of the Sergii; under Austro-Hungarian rule the natural harbour became Austria's main naval base and a major shipbuilding centre from 1856; James Joyce taught English here from 30 October 1904 to March 1905; Brijuni National Park nearby; Pula Airport)
     howItWorks:
       "普拉是克罗地亚伊斯特拉县最大的城市，2021 年人口 52,220，是全国第七大城市；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。这里有一处容易弄错的关系：从罗马时代起普拉一直是伊斯特拉半岛的行政中心，但 1991 年之后县治迁到了内陆的帕津，如今它是最大的城市而非首府。城中的圆形竞技场是保存最完好的罗马竞技场之一，也是现存规模最大的六座之一，四座边塔完整保留，至今用于演出与电影节；奥古斯都神庙与公元 1 世纪的塞尔吉凯旋门也在老城。它的近代面貌来自军港：1856 年起奥匈帝国把这处天然良港建成海军主基地与造船中心，城市因此扩张，乌利亚尼克船厂沿用至今。1904 年 10 月至次年 3 月，乔伊斯曾在此教英语。布里俄尼国家公园在西北的海上，普拉机场在城东。初来的人最容易犯的错，是以为普拉是伊斯特拉的首府，而县政府在帕津。",
@@ -12704,8 +12769,11 @@ export const TRAVEL_CONTENT_ZH: Record<string, TravelGuide> = {
       "5月至9月气候适宜，夏季竞技场常有音乐节活动、氛围热烈但门票需提前预订；普拉是探索伊斯特拉半岛红土海岸城镇群的理想出发点。",
   },
   osijek: {
+    // 零改动留痕（2026-09-10）：OSI 机场代码现行有效；history 段止于奥斯曼—哈布斯堡治理，未涉 1990 年代及以后议题。
+    //   ✅ 零争议红线通过——这一条本轮专门查过，因为斯拉沃尼亚是红线最敏感的一带。
+    // identity sources: 人口：2021 年普查（DZS）。DZS 另有逐市镇年度估计 SP31_2（2001–2024），本轮工具取不到交互式表的具体值——**不进 stale-exempt**（那张表确实存在，属该刷新而非该免检），下一轮直接查 SP31_2。下次普查预计 2031 年。2026-09-10 核。
     identity:
-      "奥西耶克是斯拉沃尼亚地区最大城市，人口约9.6万，克罗地亚第四大城市，德拉瓦河穿城而过，历史上曾先后受奥斯曼帝国、哈布斯堡王朝治理。",
+      "奥西耶克是斯拉沃尼亚地区最大城市，2021年人口普查约9.6万，克罗地亚第四大城市，德拉瓦河穿城而过，历史上曾先后受奥斯曼帝国、哈布斯堡王朝治理。",
     // howItWorks sources: en.wikipedia (2026-09, Tier B short): Osijek (Croatia; the fourth-largest city in the country and the seat of Osijek-Baranja County, the largest city in Slavonia, with 96,313 residents in 2021; on the Drava about 25 km upstream from its confluence with the Danube; the Roman settlement of Mursa, an important military colony, later under Ottoman control for over 150 years until Habsburg forces took it in 1687; the Tvrđa, an 18th-century Baroque fortress quarter; the neo-Gothic co-cathedral whose 90 m tower is the second-highest church tower in Croatia; agriculture and food industry, with Saponia, the Osječko brewery and Kandit; Kopački rit nature park; a tram system running since 1884, the only one in Croatia outside Zagreb; Osijek Airport and the university)
     howItWorks:
       "奥西耶克是克罗地亚第四大城市，也是奥西耶克-巴拉尼亚县的首府与斯拉沃尼亚地区最大的城市，2021 年人口 96,313；克罗地亚的地方行政分县与市镇两级，市由民选的市长与市议会治理。城市在德拉瓦河边，往下游约 25 公里就是德拉瓦河汇入多瑙河之处，四周是潘诺尼亚平原——这片平原是克罗地亚的粮仓，因此本地的产业以农业与食品加工为主，肥皂与洗涤剂厂萨波尼亚、奥西耶克啤酒厂与糖果厂坎迪特都是老企业。罗马时期这里是名为“穆尔萨”的军事殖民城；此后奥斯曼治理了一个半世纪以上，1687 年哈布斯堡军队取得此城，并在 18 世纪沿河建起“特弗尔贾”棱堡城区，那一整片巴洛克营房与广场至今完整保留，是全城最有辨识度的地方。新哥特式共同主教座堂的塔高 90 米，在克罗地亚居第二。1884 年通车的有轨电车是萨格勒布之外克罗地亚唯一仍在运营的一套。科帕奇基里特自然公园在东北的河汊湿地上。初来的人最容易犯的错，是以为克罗地亚都是海岸，而这里离海很远。",

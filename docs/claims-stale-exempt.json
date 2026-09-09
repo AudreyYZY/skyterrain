@@ -135,6 +135,12 @@
       "recheckAfter": "2026-12"
     },
     {
+      "key": "travel/ko-lanta/identity",
+      "reason": "兰塔岛最后一个可查到的**全岛**口径数是 2012 年的 10,830；乡镇级数据显示兰达耶乡镇 2022 年末已降到 6,942（沙拉丹镇 1983 年已分出、是另一个乡镇），但没有能可靠合并两个乡镇的全岛最新数。正文已写明年份与「可能已下降」。",
+      "confirmedOn": "2026-09-10",
+      "recheckAfter": "2027-03"
+    },
+    {
       "key": "travel/koh-samui/howItWorks",
       "reason": "同上，苏梅岛 70,059 人（2019）。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
@@ -169,12 +175,6 @@
       "reason": "南邦市自治市 53,614 人（2017）是能查到的最新一期。泰国内政部地方行政厅（DOPA）的一手站点 stat.bora.dopa.go.th 本轮多次直连失败，只能经泰媒/维基转引；",
       "confirmedOn": "2026-09-08",
       "recheckAfter": "2026-12"
-    },
-    {
-      "key": "travel/limerick/howItWorks",
-      "reason": "爱尔兰 CSO 的城市一级数字只随普查发布，上次 2022-04、**下次 2027-05-09**；年度估计（PME）只到全国与 8 个 NUTS3 区域、不下探到城市。2022 不是落后，是这一级唯一有的一期。",
-      "confirmedOn": "2026-09-09",
-      "recheckAfter": "2027-09"
     },
     {
       "key": "travel/linyi/howItWorks",
@@ -235,6 +235,12 @@
       "reason": "芭提雅 119,532 人（2019-12-31）是能确认年份的最新一期。**英文维基把这个数标成「2025 年 1 月」，但该标签的脚注引用的仍是 2019 年报告** —— 二手来源的年份标注是错的，本轮未找到确认无误的更新一期。",
       "confirmedOn": "2026-09-09",
       "recheckAfter": "2026-12"
+    },
+    {
+      "key": "travel/pattaya/identity",
+      "reason": "芭提雅的登记人口最后一个可信数是 2019 年（พ.ศ. 2562）的内政部数据；en.wikipedia 信息框把它标成「2025 年 1 月」，脚注引的却是 2019 年报告——本库第三次撞到这个错标年份的坑。本轮未找到任何 2019 年之后的可信更新。",
+      "confirmedOn": "2026-09-10",
+      "recheckAfter": "2027-03"
     },
     {
       "key": "travel/phuket/identity",

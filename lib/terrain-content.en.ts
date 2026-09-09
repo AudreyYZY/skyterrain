@@ -3657,8 +3657,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "kaikoura-ranges": {
     seeing:
       "The Kaikōura Ranges, in the north-east of the South Island, are two parallel greywacke ranges that rise very steeply a short distance inland from the Pacific. Tapuae-o-Uenuku, in the Inland Kaikōura Range, is 2,885 m — the highest mountain in New Zealand outside the main Southern Alps. The town of Kaikōura and its small peninsula are known for sperm whales that can be seen year-round because deep water lies close to shore.",
+    // formation sources: 2016-11-14 凯库拉地震（M7.8）：GeoNet / GNS Science 官方报告的最大抬升实测值为**韦帕帕湾约 5.5 米**，官方原话强调**该数不代表整段海岸**（哈夫穆恩湾附近仅 2.1–2.4 米）。级别 1，2026-09-10 核。
+    //   https://www.geonet.org.nz/news/3kTum4hHVCEI2YwMoUWmEm
+    //   **这是「一个真数字用在了比它大得多的对象上」的又一形状** —— 只是这次连数字本身也偏大了。「一次撕裂了十几条断层」与 GNS 主导的《Science》论文「至少 12 条」一致，不改。
+    //   **Kaikōura 现行官方拼写带长音符，正文中英两侧都已一致使用。** 塔普埃奥韦努库峰 2885 米、地名释义「吃小龙虾的地方」、19 世纪捕鲸站转生态旅游：均核实无误。
     formation:
-      "The Kaikōura Ranges sit on a belt of active faults where the Pacific and Australian plates meet, and are being uplifted and offset continuously. The November 2016 Kaikōura earthquake (magnitude 7.8) ruptured more than a dozen faults at once and lifted parts of the coast by up to about 6 m, raising broad areas of former seabed permanently above the water.",
+      "The Kaikōura Ranges sit on a belt of active faults where the Pacific and Australian plates meet, and are being uplifted and offset continuously. The November 2016 Kaikōura earthquake (magnitude 7.8) ruptured more than a dozen faults at once and lifted parts of the coast — a localised maximum of about 5.5 m at Waipapa Bay, with most of the coastline rising far less — raising broad areas of former seabed permanently above the water.",
     observation:
       "From the air the Kaikōura Ranges are a steep wall hard against the coastline: wide inland valleys on the west, and on the east the mountains drop almost straight into the Pacific, with snow on the tops in winter and green pasture, road and rail squeezed onto a narrow coastal terrace below. Offshore the sea colour deepens quickly over the Kaikōura Canyon.",
     distinguish:
@@ -3670,6 +3674,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "the-remarkables": {
+    // seeing sources: Double Cone 2319 米（ClimbNZ 引 LINZ Topo50，3 级）—— **英文维基自身正文与信息框互相矛盾，未采用**。「Kawarau」是传统称呼、**未见 NZGB 正式并名的公报证据**，正文用「（毛利语 X）」框架、没有声称官方并名，处理正确。2026-09-10 核，本轮无需改动。
     seeing:
       "The Remarkables (Māori: Kawarau) rise on the eastern shore of Lake Wakatipu, south-east of Queenstown, as a fault-block range that climbs almost sheer from the lake. The highest point, Double Cone, is 2,319 m. Their sharp saw-toothed skyline above Queenstown is one of the most photographed mountain views in New Zealand, and there is a ski field on the range.",
     formation:
@@ -3685,6 +3690,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tararua-range": {
+    // seeing sources: 米特雷峰 1571 米；马纳瓦图峡谷为经典先成河案例，**因果方向与正文一致**；塔拉鲁瓦为纯挤压褶皱山脉、不含火山。2026-09-10 核，本轮无需改动。
     seeing:
       "The Tararua Range is part of the North Island's axial mountain chain, north of Wellington, dividing the Kāpiti Coast on the west from the Wairarapa on the east. The mountains are not very high — Mitre, the highest, is 1,571 m — but because they face straight into the wind funnel of Cook Strait and the weather changes fast, they have long been a proving ground for New Zealand tramping and mountain training.",
     formation:
@@ -3700,6 +3706,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-ruapehu": {
+    // seeing sources: 海拔 2797 米（LINZ Topo50，峰名 Tahurangi）；汤加里罗 1887 年赠地设立、新西兰第一个国家公园、自然与文化双重世界遗产；1953-12-24 坦吉瓦伊事故（火口湖堤坝溃决 → 约 34 万立方米泥流 → 铁路桥冲毁 → 151 人遇难，新西兰史上最严重铁路事故，2 级 NZ History）。**「Mount Ruapehu」未见 NZGB 更名或加长音符记录，沿用现行拼写。** **正文没有写死火山警戒级别 —— 这是对的**，那是随时会变的量。2026-09-09 核，本轮无需改动。
     seeing:
       "Mount Ruapehu stands on the volcanic plateau of the central North Island at 2,797 m — the highest peak in the North Island and an active volcano, with a summit Crater Lake that heats up and changes colour with volcanic activity. Together with the young cone of Ngāuruhoe and the older, multi-craered Tongariro alongside it, it makes up Tongariro National Park — New Zealand's first national park (established 1887) and a dual natural and cultural World Heritage Site.",
     formation:
@@ -3725,11 +3732,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Taranaki and Ruapehu are both North Island andesitic volcanoes, but Taranaki is an isolated, symmetrical single cone well away from the main axis of the Taupō Volcanic Zone, whereas Ruapehu sits near the axis and is a cluster of overlapping cones with a summit crater lake. Taranaki's symmetry reflects its youth — it has not yet been deeply eroded.",
     concept:
       "The circular forest boundary at Taranaki's foot is an extreme example of a hard land-use edge: a line drawn purely for administrative reasons that, decades later, shows up on the ground — and from satellites — as an abrupt change in vegetation. A common misconception is to read that circle as a natural treeline; it is the park boundary set in 1881.",
+    // history sources: 公园官方名：**2025-04-01 起由 Egmont National Park 改为 Te Papa-Kura-o-Taranaki**（自然保护部官网，级别 1）；山的官方名 2025-04-03 由 NZGB 公告定为 **Taranaki Maunga**（无英文对应名，是新西兰首例仅以毛利语命名的国家公园/山峰）。2026-09-09 核。
+    //   https://www.doc.govt.nz/parks-and-recreation/places-to-go/taranaki/places/te-papa-kura-o-taranaki/
+    //   **这一条的形状：同一轮立法改了两个名字，正文只跟进了其中一个** —— 上一句刚写完山改名，下一句还用着公园的旧名。与英国 AONB → National Landscape 那次（写下待办却没执行）不同，这次是**同一段文字里的两个名字，改了一个漏了一个**。
+    //   2025 年立法赋予山法人地位（由 Te Kāhui Tupua 实体代表）—— 作为制度事实客观陈述、不展开评价，**零争议红线复核通过**。1881 年以峰顶为圆心、半径约 9.6 公里划定的森林保留地边界核实无误。
     history:
-      "Mount Taranaki is a revered ancestor and a core of identity for the local iwi (such as Taranaki and Te Āti Awa). In 2025 New Zealand passed legislation making Taranaki Maunga the mountain's official name and granting it legal personhood, represented by an entity called Te Kāhui Tupua, with iwi and the Crown jointly speaking for its interests. Egmont National Park is the second-oldest national park in New Zealand.",
+      "Mount Taranaki is a revered ancestor and a core of identity for the local iwi (such as Taranaki and Te Āti Awa). In 2025 New Zealand passed legislation making Taranaki Maunga the mountain's official name and granting it legal personhood, represented by an entity called Te Kāhui Tupua, with iwi and the Crown jointly speaking for its interests. Established in 1900, the park is New Zealand's second-oldest; the same 2025 legislation renamed it from Egmont National Park to Te Papa-Kura-o-Taranaki.",
   },
 
   "tasman-glacier": {
+    // seeing sources: 长约 23.5 公里（20 世纪长期约 28 公里，1990 年代起加速退缩），新西兰最长冰川；塔斯曼湖 1970 年代形成，1990 年约 1.7 平方公里 → 2020 年约 7.1 平方公里（3 级，NASA Earth Observatory 等交叉）。**正文写的是「从 1970 年代开始出现、现在还在扩大」而不是一个面积数 —— 这正是处理会过期量的第三条路（只写趋势、不写数字），判定不改。** 2026-09-09 核。
     seeing:
       "The Tasman Glacier is the largest glacier in New Zealand, about 23 km long, flowing down from the high snowfields on the eastern side of Aoraki / Mount Cook, within Aoraki / Mount Cook National Park. Its lower part is buried under thick rock debris and looks like a grey-black river of rubble; at its end is a terminal lake that appeared in the 1970s and is still growing, with icebergs calved from the glacier floating in it.",
     formation:
@@ -3745,6 +3757,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "franz-josef-glacier": {
+    // seeing sources: 官方并名 Franz Josef Glacier / Kā Roimata o Hine Hukatere：《1998 年恩加伊塔胡索赔和解法》Schedule 96 法定条目（级别 1）。
+    //   https://www.legislation.govt.nz/act/public/1998/97/en/2022-07-01.pdf
+    //   1983–2008 年前进、2008 年后快速退缩（NIWA / 现 Earth Sciences New Zealand，级别 1）——**正文没写死退缩量，判定不改**。2026-09-09 核。
+    //   https://niwa.co.nz/news/explaining-new-zealands-unusual-growing-glaciers
     seeing:
       "Franz Josef Glacier (Māori: Kā Roimata o Hine Hukatere, \"the tears of Hine Hukatere\") is on the western slope of the Southern Alps, dropping steeply from its high snowfield to only a few hundred metres above sea level, near the temperate rainforest of the West Coast. Like the neighbouring Fox Glacier, it is one of the few glaciers in the world that reaches down into rainforest. It has retreated markedly since the late 2000s.",
     formation:
@@ -3760,6 +3776,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "fiordland": {
+    // seeing sources: Te Wāhipounamu（南西新西兰）1990 年列入 UNESCO 世界自然遗产，DOC 官网用此名（级别 1）；峡湾国家公园约 12,607 平方公里，新西兰面积最大。
+    //   https://www.doc.govt.nz/te-wahipounamu
+    //   **「Te Rua-o-te-Moko」是旅游业惯用名、未经 NZGB 官方地名程序确认，正文没有采用 —— 本轮专门核过这一点，处理得当。** 14 条峡湾（另有「15 个已命名海洋峡湾」的口径，差异在计入方式，不构成矛盾）。2026-09-09 核，本轮无需改动。
     seeing:
       "Fiordland, in the south-western corner of the South Island, is the largest national park in New Zealand and part of the Te Wāhipounamu World Heritage Area. It is almost roadless and unpopulated — a block of high mountains cut to pieces by glaciers, where 14 long, deep fiords run inland from the Tasman Sea, the mountains are densely forested, waterfalls are everywhere, and it is one of the wettest places on Earth.",
     formation:
@@ -3775,6 +3794,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "milford-sound": {
+    // seeing sources: 官方并名 Milford Sound / Piopiotahi（恩加伊塔胡法 Schedule 96，级别 1）；最大长度约 15.1 公里；教冠峰（Mitre Peak / Rahotu）**LINZ Topo 官方高程 1683 米** —— 旅游站流传的 1692 米是非权威数据，**以 LINZ 为准，正文写对了**；年降雨约 200 天（另有 182 天/年的精确统计，同一量级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Milford Sound (Māori: Piopiotahi), in the north of Fiordland, is the only fiord in the region reachable by road, and so one of the best-known natural attractions in New Zealand. The fiord is about 15 km long, walled by near-vertical cliffs; the most prominent feature, Mitre Peak / Rahotu, rises straight from the water to about 1,683 m. It rains here on more than 200 days a year, and after rain the cliffs run with rows of waterfalls.",
     formation:
@@ -3790,6 +3810,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-taupo": {
+    // seeing sources: **英文正文已带长音符 Lake Taupō，符合 2019-06 NZGB 核准 824 个毛利地名（含长音符）的现行拼写**（2 级）；面积 616 平方公里、新西兰最大湖。欧鲁阿努伊超级喷发约 2.55–2.7 万年前（不同研究测年略有差异）；Hatepe 喷发**公元 232±10 年**（树轮碳十四 wiggle-matching，Hogg et al. 2019 / Lowe & Pittari 2021 综述，为当前共识）。**层级复核：陶波湖是陶波火山带里的一个独立破火山口，与火山带本身、与罗托鲁瓦破火山口都没有混淆** —— 这一批专门查了嵌套压层问题，未发现。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Taupō sits at the centre of the North Island, about 616 km² in area — the largest lake in New Zealand. Its shape and its lake-bed topography still carry the marks of a volcano — because it fills a large volcanic caldera. The Waikato River, New Zealand's longest, flows out of the lake's north-eastern corner. The lake district is an important place for recreation and trout fishing.",
     formation:
@@ -3805,6 +3826,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-wakatipu": {
+    // seeing sources: **官方现行地名仍是单一 Lake Wakatipu**：「Whakatipu Waimāori」不在恩加伊塔胡法 Schedule 96 的地名变更表内（级别 1），只见于同法的「法定确认」条文与 LAWA 资料页（2 级）——**尚未成为 NZGB 官方并名，正文没有误加**。长度约 75.2–80 公里（测量基准差异）、深度约 377.5–380 米（LAWA 与 Te Ara/Britannica 一致；维基单出的 420 米未见区域机构佐证，未采信）。定振周期约 27 分钟、振幅约 20 厘米，是新西兰最著名的湖泊定振案例。2026-09-09 核，本轮无需改动。
     seeing:
       "Lake Wakatipu is a Z-shaped (or \"lightning-bolt\") glacial ribbon lake in the South Island, about 80 km long, with Queenstown on one of its bends. It is up to about 380 m deep, and its floor lies below sea level. The water is clear and cold, and it is ringed by steep schist mountains such as the Remarkables.",
     formation:
@@ -3820,6 +3842,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-tekapo": {
+    // seeing sources: **Lake Tekapo 仍是 NZGB 唯一现行官方名**：2019 年 NZGB 曾拟把「Takapō」作为非官方收录名加入地名典，麦肯齐区议会 2021 年起本地宣传用双名，**但都不是 NZGB 的正式地名变更程序**（Takapo 在恩加伊塔胡法里只出现在「法定确认」条文，不在 Schedule 96 的地名变更表）。**正文保持单名是更保守也更准确的做法，判定不改。**
+    //   ⚠️ **这是一个正在推进中的更名议题，下一轮回来复核 NZGB 是否已正式公告** —— 与塔拉纳基那条（2025 年真的落地了）是同一类，只是还没走完程序。岩粉散射致色为标准解释。2 级，2026-09-09 核。
     seeing:
       "Lake Tekapo, in the Mackenzie Basin of the South Island interior, is a lake dammed by a glacier and its moraine. It is best known for its colour — an opaque milky blue-turquoise. The Church of the Good Shepherd on its southern shore is one of the most photographed buildings in New Zealand. The area is the Aoraki Mackenzie International Dark Sky Reserve, with very dark, clear night skies.",
     formation:
@@ -3835,6 +3859,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-wanaka": {
+    // seeing sources: 第四大湖；瓦纳卡湖面 300 米 vs 哈威亚湖面 348 米，**水位差约 48 米**，正文的「几十米」成立（3 级）。**英文侧长音符 Wānaka 与注册表 nameEn 一致 —— 本轮专门核过。** 「Clutha River / Mata-Au」这个并名沿用上一批已核实的法定写法。2026-09-10 核，本轮无需改动。
     seeing:
       "Lake Wānaka, in Central Otago in the South Island, is a glacier-carved ribbon lake — the fourth-largest lake in New Zealand — with the resort town of Wānaka on its shore, second only to Queenstown as a holiday base. Its water drains south via the Clutha River / Mata-Au. It is separated from Lake Hāwea to the east by a very narrow isthmus (locally \"the Neck\"), yet the two lake surfaces differ by tens of metres in height.",
     formation:
@@ -3850,8 +3875,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "canterbury-plains": {
+    // seeing sources: 尺寸：长约 180 公里（新西兰官方百科 Te Ara，级别 1，仅确认长度）、最宽处约 70 公里（多方 3 级收敛）。原文的「宽约 50 公里」比实际窄约 30–40%、且查不到权威支撑。2026-09-10 核。
+    //   https://teara.govt.nz/en/canterbury-region/page-3
+    //   ⚠️ **Te Ara 没有给出精确宽度值**，70 公里来自 3 级来源的收敛，下一轮若能拿到更高级别来源应回来复核。
+    //   **「冲积扇群叠合而成」这个成因本轮专门核过：正文写对了** —— 是拉凯亚 / 怀马卡里里 / 朗伊塔塔等河的冲积扇并合，不是普通的曲流冲积平原（学术文献，级别 1）。2010–2011 年地震序列的液化与河口软土地基的关联也核实无误。
     seeing:
-      "The Canterbury Plains, on the east coast of the South Island, are the largest continuous area of flat land in New Zealand, running from the foothills of the Southern Alps to the Pacific, about 50 km wide. They are an important farming region and the site of Christchurch, one of the country's largest cities. Several braided rivers rising in the mountains cut straight across the plains to the sea.",
+      "The Canterbury Plains, on the east coast of the South Island, are the largest continuous area of flat land in New Zealand, running from the foothills of the Southern Alps to the Pacific, about 180 km long and up to about 70 km wide. They are an important farming region and the site of Christchurch, one of the country's largest cities. Several braided rivers rising in the mountains cut straight across the plains to the sea.",
     formation:
       "The Canterbury Plains are built of gravel carried down by several rivers from the Southern Alps (the Rakaia, Waimakariri, Rangitata and others): each river spreads a huge alluvial fan at its mountain mouth, and the neighbouring fans coalesce into one broad gravel plain sloping gently to the sea. The ice ages produced especially large amounts of glacially ground debris, the main source of the plains' gravel.",
     observation:
@@ -3865,6 +3894,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mackenzie-basin": {
+    // seeing sources: 海拔：麦肯齐地区议会官方海拔清单 —— 普卡基湖区/特威泽尔约 470–532 米、特卡波湖面约 700–710 米，盆地跨度接近 450–720 米。级别 2（地方政府官方文件），2026-09-10 核。
+    //   https://www.mackenzie.govt.nz/__data/assets/pdf_file/0010/742078/Elevations-of-the-Mackenzie-District-1.pdf
+    //   **这是「中英两侧各写各的」在数字上的又一例**：英文写 500–700 米（贴近实况），中文写「约五六百米」（低估上限）—— 两侧各自都通顺，只有并排看才发现不一致。已把中文改成与英文一致。
+    //   **「Te Manahuna」是常用毛利语名，正文只作「（毛利语 X）」平行标注、未声称官方并名 —— 本轮核实：NZGB 没有正式并名的公报证据，正文的处理是对的。** 2012 年 6 月获国际暗夜协会认定、James Mackenzie 1855-03-04 在此被抓获（「1850 年代」这个更宽表述成立）：均核实无误。
     seeing:
       "The Mackenzie Basin (Māori: Te Manahuna), on the eastern side of the Southern Alps, is a high basin ringed by mountains, at about 500–700 m elevation. It lies in the rain shadow of the mountains — dry and open, its floor covered in tawny tussock grassland dotted with the milky-blue glacial lakes Tekapo, Pukaki and Ōhau. Its night sky is very dark: it is the Aoraki Mackenzie International Dark Sky Reserve.",
     formation:
@@ -3886,8 +3919,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Central Otago's bedrock is schist. Under crustal compression the schist broke along a series of parallel faults; some blocks were lifted into long, narrow ranges (the Dunstan, Pisa, Old Man and others), and the blocks between them dropped relatively into basins (the Manuherikia, Maniototo and others) — a range, then a basin, then a range: this alternating structure is called basin-and-range. The range tops still carry remnants of an ancient, gently rolling plateau surface.",
     observation:
       "From the air Central Otago is a set of long parallel ridges and wide valleys running north-east to south-west, the ranges pale-brown dry grass slopes often topped by bare schist tors, the valleys green with irrigated orchards and vineyards and a few winding rivers. The Clutha River and its tributaries string together several reservoirs.",
+    // distinguish sources: 成因对比：美国盆岭省是**伸展构造**（地壳拉张、正断层塌陷，Geosphere/GSA，级别 1）；中奥塔哥是**挤压构造**（沿逆断层抬升，NZ Journal of Geology and Geophysics，级别 1）。2026-09-10 核。
+    //   https://pubs.geoscienceworld.org/gsa/geosphere/article/20/5/1247/646605
+    //   https://www.tandfonline.com/doi/abs/10.1080/00288306.2023.2176892
+    //   **C7 的又一例，而且是「把外形相似当成机制相同」这一种** —— 更糟的是**同一条目的 `formation` 段自己就写着「地壳受挤压」**，两段互相打架而没人发现。这与奥克兰火山场那条（formation 给的判据被 observation 举的例子推翻）是同一形状：**条目内部的自相矛盾，逐段读不出来，要把六段并排读。**
     distinguish:
-      "Central Otago's basin-and-range is the same kind of structure as the Basin and Range province of the western United States, only on a smaller scale and in schist. Compared with the Mackenzie Basin, Central Otago is more of a \"mature fault-block landscape\" with a whole series of ranges and basins; the Mackenzie is a single large basin deeply reworked by glaciers.",
+      "Central Otago's basin-and-range looks like the Basin and Range province of the western United States — alternating ranges and basins — but the mechanism is the opposite: the American province formed by crustal extension along normal faults, while Central Otago was pushed up by compression along reverse faults, at a much smaller scale and in schist. Compared with the Mackenzie Basin, Central Otago is more of a \"mature fault-block landscape\" with a whole series of ranges and basins; the Mackenzie is a single large basin deeply reworked by glaciers.",
     concept:
       "Central Otago is a case study in basin-and-range: when the crust is stretched or compressed it breaks into parallel blocks along faults, one rising into a range and the next dropping into a basin, giving alternating ranges and basins. To recognise this landscape, look at whether the ridges and basins are long, parallel and aligned in the same direction. A common misconception is to read these parallel valleys as river-cut — they are mainly fault-controlled.",
     history:
@@ -3895,6 +3932,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rotorua-caldera": {
+    // seeing sources: 直径约 22 公里、陶波火山带最西北端唯一的单事件破火山口；喷出 340+ 立方公里 Mamaku 浮岩流纹质岩浆；年代 240,000±11,000 年（Gravley et al. 2007 —— 早期研究的约 22 万年已被这份数据取代）；莫科亚岛为喷发后隆起的流纹岩穹丘（<5 万年）。3 级转引，2026-09-09 核，本轮无需改动。
     seeing:
       "The Rotorua Caldera, on the North Island's volcanic plateau, is a circular basin formed by the collapse that followed a large eruption, about 22 km across, with Lake Rotorua occupying part of it. Around it is one of the most active geothermal areas in New Zealand — geysers, boiling mud pools, coloured silica terraces and steaming ground, which you can see and smell (the rotten-egg smell of hydrogen sulphide) right in the city.",
     formation:
@@ -3912,8 +3950,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "waikato-river": {
     seeing:
       "The Waikato River is the longest river in New Zealand, about 425 km. It flows out of Lake Taupō in the central North Island, passes first through a chain of hydro stations and reservoirs, then across the lowland basin around Hamilton, and finally reaches the Tasman Sea at Port Waikato, south of Auckland. The name Waikato means \"flowing water\" in Māori. It is an important source of water and electricity for the North Island.",
+    // formation sources: 改道机制：约 2 万年前的大改道由陶波火山带**欧鲁阿努伊喷发（约 2.65 万年前）的火山碎屑沉积物逐步淤高堵塞原河道**所致（Hinuera 组研究），**不是熔岩流**。2 级，2026-09-09 核。
+    //   https://www.nzgeo.com/stories/4664/
+    //   **C7（因果解释错了）的又一例** —— 与内伊湖「熔岩压弯地壳」、阿摩里卡「没有被重新抬升」同类：都是把一个真实的地质过程换成了另一个听起来更直观的过程。
+    //   长 425 公里、新西兰最长（Te Ara，2 级）；「八座水电站」与运营方的「八座水坝、九座电站」是坝/站计数口径不同，**不构成实质矛盾、判定不改**。
     formation:
-      "The upper Waikato runs over the volcanic rock of the Taupō Volcanic Zone, and where hard rock narrows the channel it forms rapids and falls (Huka Falls is the river squeezing through a hard, pale volcanic-rock trough). The middle and lower river enter softer sedimentary rock and ash-covered lowland, where the channel broadens and meanders between fertile farmland. The Waikato has changed course in the past — a large volcanic mudflow and lava activity switched it from flowing north-east (through what is now the Hauraki Plains) to its present north-westerly course to the sea.",
+      "The upper Waikato runs over the volcanic rock of the Taupō Volcanic Zone, and where hard rock narrows the channel it forms rapids and falls (Huka Falls is the river squeezing through a hard, pale volcanic-rock trough). The middle and lower river enter softer sedimentary rock and ash-covered lowland, where the channel broadens and meanders between fertile farmland. The Waikato has changed course in the past — volcanic sediment from Taupō's Ōruanui eruption gradually buried and blocked the old channel, switching it from flowing north-east (through what is now the Hauraki Plains) to its present north-westerly course to the sea.",
     observation:
       "From the air the upper Waikato is a string of long narrow blue reservoirs held between dams, set in the volcanic plateau; below Huka Falls is a stretch of white rapids; entering the Hamilton basin it becomes a strongly meandering brown river between green pasture; at its mouth it splits into several channels crossing black ironsand beaches to the sea.",
     distinguish:
@@ -3925,6 +3967,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "clutha-river": {
+    // seeing sources: 克卢萨 338 公里（全国第二长）、平均流量 614 立方米每秒（全国最大），新西兰官方百科 Te Ara（级别 1）。**「水量最大」与「长度第二」两个排名各自带了口径，正文写对了。** 上游三个大冰蚀湖的削峰填谷调节作用为标准水文学表述、因果方向正确。2026-09-10 核，本轮无需改动。
+    //   https://teara.govt.nz/en/otago-places/page-12
     seeing:
       "The Clutha River (Māori: Mata-Au) has the greatest flow of any river in New Zealand and is the second longest (about 338 km). It flows out of Lake Wānaka, runs south through the dry schist gorges and several large reservoirs of Central Otago, and finally splits into two branches with a small delta to reach the Pacific near Balclutha in the south-east of the South Island.",
     formation:
@@ -3940,6 +3984,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "bay-of-islands": {
+    // seeing sources: 144 座岛（新西兰旅游局官网，2 级；另有约 150 的计数口径）。《怀唐伊条约》1840-02-06 在此首次签署（新西兰政府官方历史网站，级别 1）。
+    //   https://nzhistory.govt.nz/politics/treaty/location/waitangi/6-february-1840
+    //   **零争议红线本轮逐句复核：通过** —— 正文只写「1840 年 2 月在此签署」这一史实本身，不评价条约内容、不涉及后续索赔与争议。「这份文件至今是新西兰宪制关系的基础」是客观陈述、无评价色彩，保留。
+    //   **毛利语名的处理也正确**：Bay of Islands 常见的毛利语名有 Te Pēwhairangi / Ipipiri / Tokerau 三个并用，**未见 NZGB 把其中之一定为唯一官方并名**，正文没有做这个断言。
     seeing:
       "The Bay of Islands, in the north of the North Island, is a subtropical coast with about 140-odd small islands scattered through the bay. The climate is warm and the water clear, and this was one of the earliest areas of European settlement in New Zealand; the Treaty of Waitangi was signed here in 1840. Today it is known for sailing, dolphins and the historic towns of Paihia and Russell.",
     formation:
@@ -3955,6 +4003,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "abel-tasman-coast": {
+    // seeing sources: 阿贝尔塔斯曼国家公园 1942 年设立、22,530 公顷、新西兰面积最小的国家公园（3 级，与 DOC 资料一致）。花岗岩差异风化机制正确。**1642 年金湾冲突：正文只写冲突本身、未作评价，红线通过。** 2026-09-10 核，本轮无需改动。
     seeing:
       "The Abel Tasman Coast, at the top of the South Island, is the smallest national park in New Zealand. Its characteristic scene is weathered golden granite headlands, curving soft golden beaches, tidal estuary flats that look completely different at high and low water, and evergreen native forest behind. The coast track and sea kayaking are its signature.",
     formation:
@@ -3970,6 +4019,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "coromandel-peninsula": {
+    // seeing sources: 科罗曼德火山带中新世至上新世（约 18–1.95 Ma），Coromandel Group（18–3.8 Ma，安山岩/英安岩）+ Whitianga Group（11–1.5 Ma，流纹岩）叠置（学术文献，级别 1）。1820 年 HMS Coromandel 号采购贝壳杉桅材。**与 banks-peninsula 条目的对比表述互相吻合 —— 本轮专门对照过两条目。** 2026-09-10 核，本轮无需改动。
     seeing:
       "The Coromandel Peninsula extends north from the north-east of the North Island as a narrow, rugged, mountainous peninsula. Down its centre runs a forest-covered volcanic-rock ridge, and both coasts are intricate, with rocky bays, arches and hot-water beaches. It is close to Auckland and a popular holiday and tramping area.",
     formation:
@@ -3987,8 +4037,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "punakaiki": {
     seeing:
       "Punakaiki, on the West Coast of the South Island, is part of Paparoa National Park, and is best known for the \"Pancake Rocks\" — a stretch of sea cliff where the limestone has weathered into stacked thin layers, like piles of pancakes. At high tide with the right swell, several blowholes in the rock send seawater spouting high into the air.",
+    // formation sources: 千层成因：**stylobedding 不是原始沉积层理**，而是石灰岩埋藏后经压溶作用沿一组大致平行的面重新分异出的次生构造；**为何按这样的间距周期性成带，学界至今仍有讨论**。新西兰地质学会 GeoTrips 专业资源（2 级）+ 3 级交叉，2026-09-09 核。
+    //   https://www.geotrips.org.nz/trip.html?id=436
+    //   **C7 的又一例，而且是「把成因说反了」这一种**：原文写「交替沉积」，实际是埋藏之后才分异出来的。正文现在保留了「至今没有定论」这句留白 —— 与英国阿勒峡「学界至今仍在讨论细节」是同一种处理。
+    //   1987 年帕帕罗瓦国家公园设立、威斯特兰黑鹱（tāiko）全球唯一已知繁殖地：核实无误。
     formation:
-      "The Pancake Rocks limestone formed on the sea floor about 30 million years ago, from alternating layers of fine calcium carbonate and weaker marl. After it was uplifted above the sea, waves and rain eroded it differentially along these bedding planes — the weaker layers were hollowed out and cut back, the harder layers stood out, giving the \"layered\" look (this layered weathering is generally called stylobedding). Waves have cut caves and vertical fissures at the cliff base, and seawater forced in spouts out of the openings above.",
+      "The Pancake Rocks limestone formed on the sea floor about 30 million years ago. The stacked \"pancake\" banding is not original sedimentary bedding: it is a secondary structure formed after burial, when pressure-solution along a set of roughly parallel planes segregated the rock into alternating harder and softer bands — a feature geologists call stylobedding, and exactly why it forms at the spacing it does is still debated. Once the rock was uplifted above the sea, waves and rain eroded these bands differentially — the weaker ones hollowed out and cut back, the harder ones left standing proud, giving the \"pancake\" look. Waves have cut caves and vertical fissures at the cliff base, and seawater forced in spouts out of the openings above.",
     observation:
       "From the air Punakaiki is a small stretch of grey-white, heavily cut limestone sea cliff between the green rainforest of the West Coast and the blue of the Tasman Sea, with a platform walkway on top and wave-cut caves, blowholes and surging white water below. To the north are the limestone hills running down from the Paparoa Range.",
     distinguish:
@@ -4010,11 +4064,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Although \"Sound\" is in the English name, the Marlborough Sounds differ in origin from the glacial fiords of Fiordland: they are drowned river valleys, V-shaped in cross-section and branching like a tree; glacial fiords are U-shaped, deep and straight, with a sill at the mouth. They are of the same kind as the North Island's Bay of Islands, only with higher hills and longer, deeper waterways.",
     concept:
       "The Marlborough Sounds are a case study in a drowned dendritic drainage: a system of tributaries feeding into a main stem, once flooded by the sea, becomes a system of side-arms feeding into a main waterway — the plan shape is still that \"tree\". A common misconception is to see a \"Sound\" and assume it was carved by a glacier.",
+    // history sources: Te Tau Ihu 全称 **Te Tau Ihu o Te Waka a Māui**，官方与地方机构一致释义为「毛伊独木舟的船头」（南岛在毛利传统里被视为一艘独木舟）。级别 2（区域发展政府机构），2026-09-10 核。
+    //   https://www.growregions.govt.nz/regions/in-your-region/top-south-te-tau-ihu
+    //   **层级处理本轮专门核过：正文是对的** —— Te Tau Ihu 指的是尼尔森 / 马尔堡 / 塔斯曼整个「南岛之北」，正文用「马尔堡峡湾**一带**」把它框成区域而不是峡湾的官方名，没有把两层压成一层。峡湾内部分水道另有各自的 NZGB 并名（Queen Charlotte Sound/Tōtaranui、Ship Cove/Meretoto），与「Marlborough Sounds」整体无关，不要混为一层。
+    //   **下沉机制本轮专门核过：正文写对了** —— 学术文献确认下沉速率与倾斜方向确实向北北东增大，与冰后期海侵叠加，**是被淹没的河谷（ria）不是冰蚀峡湾**（Nicol et al. 2011，级别 1）。
+    //   https://rsnz.onlinelibrary.wiley.com/doi/10.1080/00288306.2010.523079
     history:
-      "The area (Māori: Te Tau Ihu, \"the prow of the island\") is the traditional territory of several Māori iwi, and the waterways were important canoe routes. In 1770 Cook anchored repeatedly at Ship Cove in Queen Charlotte Sound to repair and resupply his ship. From the 19th century there was scattered logging, whaling and farming; today large areas of water are green-lipped mussel and salmon farms.",
+      "The area (Māori: Te Tau Ihu, \"the prow of Māui's canoe\") is the traditional territory of several Māori iwi, and the waterways were important canoe routes. In 1770 Cook anchored repeatedly at Ship Cove in Queen Charlotte Sound to repair and resupply his ship. From the 19th century there was scattered logging, whaling and farming; today large areas of water are green-lipped mussel and salmon farms.",
   },
 
   "whakaari-white-island": {
+    // seeing sources: 官方并名 **Whakaari/White Island**（1997 年 NZGB 核准，级别 1，GeoNet 页面确认）；最高点 321 米（约占火山总体量 30%）；2019-12-09 喷发 22 人遇难、此后登岛严格受限。**正文表述克制、未渲染，判定不改。**
+    //   https://www.geonet.org.nz/about/volcano/whiteisland
+    //   ⚠️ **时效提醒：2026 年 3 月再度出现小规模喷发**（警戒级别一度升至 3 级、后回落至 2 级）—— 与正文「新西兰最活跃的活火山」的定性一致，**正文没有写死警戒级别，所以这次活动不影响它的准确性**。这正是「警戒级别一律不写死」这条规矩的价值。2026-09-09 核。
     seeing:
       "Whakaari / White Island lies about 48 km offshore in the Bay of Plenty, off the North Island, and is an active volcano that rises above the sea. It is the most active volcano in New Zealand — steam and volcanic gas rise from it constantly, and its crater holds a strongly acidic hot lake. Because of the continuing volcanic hazard, access to the island has been strictly limited since an eruption in 2019 caused loss of life.",
     formation:
@@ -4030,6 +4092,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "stewart-island": {
+    // seeing sources: 新西兰第三大岛；拉基乌拉国家公园约 1400 平方公里、占全岛约 85%；2023 年人口约 450。**「Stewart Island/Rakiura」是法定并名**（恩加伊塔胡法 Schedule 96），正文与注册表一致。**零争议红线复核：羊鸟习俗采集权只写「这项传统至今保留」这一客观事实，通过。** 2026-09-10 核，本轮无需改动。
     seeing:
       "Stewart Island (Māori: Rakiura, \"glowing skies\", for the aurora australis often seen here) lies off the southern end of the South Island across Foveaux Strait, and is the third-largest island in New Zealand. About 85% of it is Rakiura National Park, and its population of only a few hundred is concentrated in the small town of Oban at Halfmoon Bay. It is cool and wet, densely forested, and one of the easiest places to see kiwi in the wild.",
     formation:
@@ -4045,6 +4108,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "waitomo": {
+    // seeing sources: **「Waitomo」无长音符**：2019-06 新西兰公报正式公告（2019-ln2814）里 Waitomo Cave / Caves / Stream / Valley 均无长音符，正文拼写正确（级别 1）。
+    //   https://gazette.govt.nz/notice/id/2019-ln2814
+    //   萤火虫为发光蕈蚊（Arachnocampa luminosa）**幼虫**，不是甲虫 —— **正文已准确避开这个常见误区**。1887-12-28 首探（Tāne Tinorau 与 Fred Mace）、1889 年开放、长期由当地毛利家族共管（2 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "Waitomo, in a belt of limestone hill country in the western North Island, is known for its underground cave system. Besides stalactites and stalagmites, the caves are famous for tens of thousands of blue-green points of light — \"glowworms\", actually the larvae of a fungus gnat found only in New Zealand, which hang sticky threads from the cave roof and glow to lure insects.",
     formation:
@@ -4062,8 +4128,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "auckland-volcanic-field": {
     seeing:
       "Auckland is built on a \"volcanic field\" — more than fifty small volcanoes scattered across the city area, with scoria cones, crater lakes and lava plateaus. Individually they are small, but the whole field is still considered active: the youngest, Rangitoto Island, formed in an eruption about 600 years ago, when Māori were already living nearby and witnessed the whole event.",
+    // formation sources: 单成因框架保留，但补上已知例外：**朗伊托托岛至少两期喷发**（约距今 553±7 年与 504±5 年，相隔近 50 年，岩浆成分不同），Needham, Lindsay, Smith et al., GSA Bulletin（2 级同行评议）—— 是「单成因」定义公认的疑难案例。53 个喷发中心、面积约 360 平方公里（GNS Science 数据，3 级转引）。2026-09-09 核。
+    //   https://pubs.geoscienceworld.org/gsa/gsabulletin/article-abstract/128/7-8/1160/185376/
+    //   **为什么必须补**：正文的 observation 段把朗伊托托当作这个火山场最完整的范例来写，如果 formation 段把「各喷一次」讲成铁律，读者拿这条判据去看的第一座山恰好就是那个例外。
     formation:
-      "The Auckland Volcanic Field is a \"monogenetic volcanic field\": basaltic magma from deep in the mantle comes up at a new location every so often, erupts once (weeks to years) and stops permanently, with the next one somewhere else. So this is not one large volcano erupting repeatedly, but dozens of small volcanoes each erupting once, spread over about 360 km². Where magma meets groundwater there are violent steam explosions that blast out round shallow craters (maars), such as Lake Pupuke.",
+      "The Auckland Volcanic Field is a \"monogenetic volcanic field\": basaltic magma from deep in the mantle comes up at a new location every so often, erupts once (weeks to years) and stops permanently, with the next one somewhere else. So this is not one large volcano erupting repeatedly, but dozens of small volcanoes each erupting once, spread over about 360 km² (Rangitoto Island is a known exception: sediment dating shows at least two eruptive phases about fifty years apart with different magma chemistry, a recognised puzzle for the \"monogenetic\" label). Where magma meets groundwater there are violent steam explosions that blast out round shallow craters (maars), such as Lake Pupuke.",
     observation:
       "From the air the Auckland Volcanic Field is a set of green conical hills rising within the city (many with a bowl-shaped crater on top, some still showing the terraces of Māori ring settlements), plus several round crater lakes and parks. Rangitoto Island in the harbour is a near-perfectly symmetrical low shield cone, more complete in shape than any of the volcanoes on land.",
     distinguish:
@@ -4075,6 +4144,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "banks-peninsula": {
+    // seeing sources: 火山年代：**GNS Science 官方地质图**（Forsyth et al. 2008《Geology of the Christchurch area》1:250,000）—— 利特尔顿 11–9.7 Ma、阿卡罗阿 9–8 Ma，合并区间与正文的「1100 万到 800 万年前」**精确吻合**（级别 1，经转引）。
+    //   https://en.wikipedia.org/wiki/Banks_Peninsula_Volcano
+    //   **本批点名的高风险项，结果是正文写对了**：班克斯半岛被写成两座**侵蚀火山**的残体、港湾是淹没的火山中心，**不是「隆起的陆块」**；「陆连岛」成因（先有岛、后被坎特伯雷平原的砾石接上大陆）方向也正确。2026-09-10 核，本轮无需改动。
     seeing:
       "Banks Peninsula, on the east coast of the South Island next to Christchurch, is a hilly block jutting out into the sea, with two large deep harbours in its middle — Lyttelton Harbour and Akaroa Harbour. It was originally an island, later joined to the mainland by the gravels of the Canterbury Plains on its western side. The peninsula is pasture, remnant native forest and an intricate volcanic coast.",
     formation:
@@ -5711,6 +5783,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   glomma: {
+    // seeing sources: 格洛马河长约 621–623 公里、流域 41,970 平方公里（含瑞典境内 422 平方公里）、占挪威本土面积 12.8%（正文取整为 13%）：全部吻合（2 级）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Glomma (Norwegian Glomma or Glåma) is Norway's longest and most voluminous river — about 620 km long, with a drainage basin of about 42,000 km², roughly 13% of mainland Norway. It flows out of Lake Aursunden near Røros in the centre of the country and runs almost due south through Østerdalen, eastern Norway's longest valley, taking in many tributaries; via its tributary the Vorma it connects to Mjøsa, Norway's largest lake, then through Lake Øyeren, and finally into the Oslofjord at a delta at Fredrikstad.",
     formation:
@@ -5742,6 +5815,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   jaeren: {
+    // seeing sources: 耶伦海滩约 70 公里、1977 年设景观保护区（SNL，2 级半官方）；「耶伦-利斯塔阶终碛」为学界公认成因，是挪威南部已知最古老的终碛之一。2026-09-09 核，本轮无需改动。
     seeing:
       "Jæren, at Norway's southwestern tip south of Stavanger, is the largest area of low flat land in Norway — in a country known for fjords and steep mountains, this is a rare stretch of open farmland and gentle coast. The ground is low with little relief, running out to the North Sea; the coast is the roughly 70 km \"Jæren beaches\", a mix of sand, shingle and moraine shore. It is windy, has little snow, and mild winters.",
     formation:
@@ -5774,6 +5848,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   rondane: {
+    // seeing sources: 1962-12-21 设立、挪威第一个国家公园、10 座 2000 米以上山峰、龙达讷宫 2178 米、2003 年扩界：全部核实无误（2 级/3 级交叉）。2026-09-09 核，本轮无需改动。
     seeing:
       "Rondane in inland southern Norway, between Dovrefjell and Jotunheimen, was made Norway's first national park in 1962. It has ten peaks over 2,000 m around a broad plateau, the highest, Rondeslottet, 2,178 m. The summits are generally rounded, with deep cirques and U-shaped valleys between them and emerald tarns on the valley floors. Vegetation is sparse; much of the ground is grey-white scree and lichen tundra, giving a clean, empty, almost lunar feel.",
     formation:
@@ -5799,8 +5874,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Trollheimen, Jotunheimen and Rondane are all central-Norway mountain areas, but Trollheimen's distinctive feature is \"many mountain forms in one place\" — because it straddles a double transition of both climate and rock type. Jotunheimen is almost all gabbro spires, Rondane almost all quartzite domes, Trollheimen has both. To recognise this \"transition-zone mountain area\", look for large changes in landform type over a short distance.",
     concept:
       "Trollheimen shows that landforms are the joint result of \"rock plus climate plus erosion\": the same glacial action produces spires on hard rock and rounded fells on soft rock; and the same range is carved deeper on its wetter side, where the glaciers are more active. To understand why a mountain area \"looks messy\", look separately at its geology and its rainfall pattern. A common misconception is that a mountain region's landforms should be uniform throughout.",
+    // history sources: 保护区类别：因讷达尔 1967 年成为挪威第一个 **landskapsvernområde（景观保护区，IUCN 第五类）**，与 naturreservat（自然保护区）是并列但不同的两档。**英文材料自己也常把它松散译成 nature reserve** —— 这不是本库独有的错，但口径要写准。2 级/3 级交叉，2026-09-09 核。
+    //   大特罗拉峰约 1850 米（多来源 1842–1850，取整差异，**判定不改**）；DNT 山屋徒步环线、地名里的「巨魔」：核实无误。
     history:
-      "Innerdalen became Norway's first nature reserve in 1967; it was mountain summer pasture (seter), livestock driven up into the valley in summer, and it still keeps its traditional huts, open to hikers. Trollheimen carries one of the classic hut-to-hut circuits of the Norwegian Trekking Association (DNT). The many \"troll\" place names here are a typical example of Norwegian folklore personifying rugged terrain.",
+      "Innerdalen became Norway's first protected landscape area (landskapsvernområde, a category distinct from the stricter nature reserve) in 1967; it was mountain summer pasture (seter), livestock driven up into the valley in summer, and it still keeps its traditional huts, open to hikers. Trollheimen carries one of the classic hut-to-hut circuits of the Norwegian Trekking Association (DNT). The many \"troll\" place names here are a typical example of Norwegian folklore personifying rugged terrain.",
   },
 
   jostedalsbreen: {
@@ -5895,6 +5972,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hardangerfjord: {
+    // seeing sources: 哈当厄峡湾：**独立主干峡湾体系、不是任何峡湾的支汊**（本轮专门核了层级，与同批吕瑟峡湾相反）；挪威第二长；长度各口径 179–185 公里，正文的 179 落在区间内（SNL，2 级半官方）。沃林斯瀑布为悬谷瀑布，成因表述准确。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Hardangerfjorden
     seeing:
       "The Hardangerfjord in southwestern Norway is Norway's second-longest fjord, reaching about 179 km inland from the Atlantic to the foot of the Hardangervidda plateau. It is not a knife-slit like the Geirangerfjord but fairly open, branching into several arms (the Sørfjord, the Eidfjord and others). Its inner slopes have a mild, sunny climate and it is a well-known fruit-growing district — in spring the shores are banks of apple and cherry blossom.",
     formation:
@@ -5910,8 +5989,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   lysefjord: {
+    // seeing sources: 水系层级：布克纳峡湾 → 赫格峡湾（约 23 公里）→ 吕瑟峡湾（在福尔桑德分出）。挪威国家百科（SNL，2 级半官方）+ 3 级交叉，2026-09-09 核。
+    //   https://snl.no/H%C3%B8gsfjorden
+    //   **「把两层嵌套压成一层」在挪威已经是第三例**（盖朗厄尔、纳柔依、这一条）—— 同一国、同一类地貌、三个条目各写各的，说明这不是偶发笔误，而是写作时的固定简化倾向。
+    //   布道石 604 米 / 平台约 25×25 米、谢拉格崖面约 984 米（正文「约 1000 米」为取整）、卡石：核实无误。**布道石那条裂缝的表述本轮专门核过**：挪威地质调查局（NGU）自 1930 年代监测这条约 0.5 米宽的裂缝，2022 年测到二十多年来首次 2–3 毫米扩张，但明确表示近期无移动迹象、2018 年结构建模也确认短期无崩塌风险 —— 正文的「未来某天会沿它崩塌，但地质调查显示短期内稳定」是准确的概括。
     seeing:
-      "The Lysefjord in southwestern Norway, northeast of Stavanger, is about 42 km long and up to about 400 m deep below sea level. The name \"Lyse\" means \"bright\", said to come from the sheen of the pale granite on its walls in sunlight. The fjord itself is not large, but two places have made it world-famous: Preikestolen (the Pulpit Rock) on the north side — a level rock platform about 604 m high and roughly 25 m square — and, on the south side, the roughly 1,000 m Kjerag wall with the \"Kjeragbolten\" boulder wedged in a crack.",
+      "The Lysefjord in southwestern Norway, northeast of Stavanger, joins the Boknafjord system through the Høgsfjord and is itself about 42 km long and up to about 400 m deep below sea level. The name \"Lyse\" means \"bright\", said to come from the sheen of the pale granite on its walls in sunlight. The fjord itself is not large, but two places have made it world-famous: Preikestolen (the Pulpit Rock) on the north side — a level rock platform about 604 m high and roughly 25 m square — and, on the south side, the roughly 1,000 m Kjerag wall with the \"Kjeragbolten\" boulder wedged in a crack.",
     formation:
       "The Lysefjord's rock is hard granite-gneiss. In the ice age an ice stream scoured seaward along a structural line in the rock, cutting the fjord deep and straight with near-vertical walls. Preikestolen's flat top comes from a set of horizontal joints in the granite — the ice, and later freeze–thaw, stripped away the rock above the joint plane sheet by sheet, leaving a level platform; there is also a prominent vertical crack along the platform's edge, which it will one day collapse along, though geological surveys show it stable in the short term.",
     observation:
@@ -5925,6 +6008,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   trondheimsfjord: {
+    // seeing sources: 挪威第三长、约 130 公里、最深 617 米（SNL，2 级半官方）；1888 年海底滑坡引发局地海啸（学术文献，3 级）。Tautra 冷水珊瑚礁浅至 39 米属实。
+    //   ⚠️ **「记录鱼类超过 90 种」没找到可核实的独立来源，本轮标 unknown、正文不动** —— 按「拿不准就记 unknown、不要改成另一个没核实的数」处理。下一轮查挪威海洋研究所（Havforskningsinstituttet）或 NINA 的一手鱼类普查数据。2026-09-09 核。
+    //   https://snl.no/Trondheimsfjorden
     seeing:
       "The Trondheimsfjord in central Norway is Norway's third-longest fjord, about 130 km long and up to about 617 m deep. It is very unlike the narrow deep fjords of the west — wide and open, with large areas of shallow water and tidal flats, and its main body ice-free all year. Norway's third-largest city, Trondheim (medieval Nidaros), sits on its middle reach. The fjord is exceptionally rich in life: over 90 recorded fish species, cold-water coral reefs in the deep water, and several of Norway's top salmon rivers entering along its shores.",
     formation:
@@ -5940,8 +6026,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   romsdalen: {
+    // seeing sources: 巨魔墙：**垂直岩壁本身约 1000–1100 米**（SNL 给约 1000，英文维基给 1100）；**谷底到巨魔诸峰顶的总落差约 1700 米** —— 这是两个不同的量。2 级半官方 + 3 级交叉，2026-09-09 核。
+    //   https://snl.no/Trollveggen
+    //   **「一个真数字用在了比它大得多的对象上」第四例**（前三例：埃特勒塔的区域平均退缩速率、苏梅岛的跨海比较、朗德 1949 年大火的累计比例）。这次更隐蔽 —— 两个数字都在同一条目里、都是真的，只是被拼进了同一个主语。
+    //   50 米外倾、1965 年首攀、1980 年代 BASE 跳伞禁令：核实无误。
     seeing:
-      "Romsdalen in western Norway, at the head of the Romsdalsfjord, is a deep U-shaped valley cut by the Rauma River. On its west side stands Trollveggen (the Troll Wall) — the tallest vertical rock face in Europe, a drop of about 1,700 m from the valley floor to the summits of the Troll Peaks above, with the upper part of the wall overhanging its base by nearly 50 m. The valley floor is flat, carrying the Rauma River, European route E136 and the Rauma Line railway side by side, between near-vertical walls and peaks.",
+      "Romsdalen in western Norway, at the head of the Romsdalsfjord, is a deep U-shaped valley cut by the Rauma River. On its west side stands Trollveggen (the Troll Wall) — the tallest vertical rock face in Europe — the sheer wall itself drops about 1,100 m, and with the slopes above it the total relief from the valley floor to the summits of the Troll Peaks is about 1,700 m; the upper part of the wall overhangs its base by nearly 50 m. The valley floor is flat, carrying the Rauma River, European route E136 and the Rauma Line railway side by side, between near-vertical walls and peaks.",
     formation:
       "Romsdalen was originally a river valley; Quaternary glaciers flowed down it repeatedly and dug it deep, widening the V-shaped river valley into a broad, deep U-shaped trough. The walls stand so steep and high because the rock here (gneiss) is very hard and has near-vertical joints — the ice carried away whole blocks outside the joint planes, leaving near-vertical and even overhanging faces. The overhang at the top of the Troll Wall is the result of collapse along a set of joints dipping out of the valley.",
     observation:
@@ -5955,8 +6045,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   gudbrandsdalen: {
+    // seeing sources: 劳根河：源出莱斯耶附近的莱斯耶斯科格湖（海拔 611 米，位于多夫勒山/罗姆斯达尔一带，**不是尤通黑门**）；到姆约萨湖长 202 公里（SNL，2 级半官方；多来源交叉 200–204）。原文的「约特山地」与「约 230 公里」两处都错，2026-09-09 核。
+    //   https://snl.no/Gudbrandsdalsl%C3%A5gen
     seeing:
-      "Gudbrandsdalen in eastern Norway is one of the country's main valleys; the Lågen River (Gudbrandsdalslågen) flows out from the mountains and runs about 230 km southeast down the valley into Lake Mjøsa. The valley is wide and flat, its floor farmland, villages, the E6 highway and the railway, its sides forested slopes tiered with farms and summer dairies. It has been the most important north–south route in eastern Norway.",
+      "Gudbrandsdalen in eastern Norway is one of the country's main valleys; the Lågen River (Gudbrandsdalslågen) rises at Lake Lesjaskogsvatnet near Lesja and runs about 200 km southeast down the valley into Lake Mjøsa. The valley is wide and flat, its floor farmland, villages, the E6 highway and the railway, its sides forested slopes tiered with farms and summer dairies. It has been the most important north–south route in eastern Norway.",
     formation:
       "Gudbrandsdalen broadly follows a north–south structural low; Quaternary glaciers flowed along this low, widening and deepening it into a broad U-shaped valley. After the ice retreated, meltwater piled thick sand and gravel on the valley floor, and the river then shaped meanders and river terraces in this loose material — villages and fields are mostly built on the terraces, above the flood level. At the valley mouth around Lake Mjøsa the river builds a delta.",
     observation:
@@ -5970,8 +6062,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lyngen-alps": {
+    // seeing sources: 冰川数量：多个独立 3 级来源交叉印证约 140 条、总面积约 141 平方公里；**未能定位到 NVE 的分区域一手编目**，因此正文只把量级从「几十条」改成「上百条」、**不写死 140 这个精确数**。2026-09-09 核。
+    //   **这是「3 级来源不能作为最终数字的唯一依据」的一次正面执行**：来源足以证明原来的量级错了，但不足以支撑一个精确值 —— 于是只改到证据能支撑的那一步。下一轮若拿到 NVE 一手数据可补精确数。
+    //   耶克瓦里峰 1834 米核实无误。
     seeing:
-      "The Lyngen Alps in northern Norway, northeast of Tromsø on the Lyngen Peninsula, are a north–south, roughly 90 km ridge of sharp peaks and glaciers, flanked by the Lyngenfjord to the east and the Ullsfjord to the west. The high point, Jiehkkevárri, is 1,834 m. The elevation is modest, but the high latitude, closeness to the sea and very heavy snowfall have grown dozens of small glaciers, with horns and arêtes rising straight from the fjord water — the sense of drop \"from sea level to glacier\" is strong.",
+      "The Lyngen Alps in northern Norway, northeast of Tromsø on the Lyngen Peninsula, are a north–south, roughly 90 km ridge of sharp peaks and glaciers, flanked by the Lyngenfjord to the east and the Ullsfjord to the west. The high point, Jiehkkevárri, is 1,834 m. The elevation is modest, but the high latitude, closeness to the sea and very heavy snowfall have grown well over a hundred small glaciers, with horns and arêtes rising straight from the fjord water — the sense of drop \"from sea level to glacier\" is strong.",
     formation:
       "The Lyngen Alps' rock belongs to sheets stacked up in the Caledonian orogeny, including harder gabbro and peridotite. After uplift, abundant maritime snowfall grew many valley and cirque glaciers, and the ice dug deep along the rock's joints, cutting the ridge into a series of sharp horns, arêtes and cirques, ice still hanging in the cirques today. The fjords are the result of the same glacial action scouring seaward.",
     observation:
@@ -5985,6 +6080,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   mjosa: {
+    // seeing sources: 最深 449 米（NVE 1909 年测量，正文「约 450 米」）、长 117 公里、面积约 365 平方公里（SNL 给 369，约 1% 差异）、湖面海拔约 123 米（SNL 给 122）—— **后两项是取整差异，判定不改**（SNL，2 级半官方）。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Mj%C3%B8sa
     seeing:
       "Lake Mjøsa in eastern Norway is the country's largest lake — about 365 km² in area, up to about 450 m deep, about 117 km long — lying like a wide north–south ribbon in the lower part of Gudbrandsdalen. Hamar is on its east shore, Gjøvik on the west, Lillehammer at the south end; this is a densely settled, agriculturally rich \"lake district\" of Norway. The deepest point of the lake bed lies below sea level — a cryptodepression.",
     formation:
@@ -6006,8 +6103,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Lake Femunden sits on a glacially abraded old bedrock upland, its basin a string of hollows scoured by ice along weak zones in the bedrock and joined up. After the ice retreated the hollows filled with water, and the surrounding moraine and meltwater deposits, regulating inflow and outflow, gave today's shallow, clear, ragged-shored, island-strewn lake. Its water drains eastward, via the Trysil river system into the Klarälven in Sweden and finally to the sea — one of the few places where Norway's drainage runs east across the divide.",
     observation:
       "From the air Lake Femunden is a dark lake with an extremely ragged shoreline, scattered with many small islands and peninsulas, surrounded by low coniferous forest and mire upland with almost no mountains. Femundsmarka on the east shore is a \"stone wilderness\" — glacial boulders everywhere, dwarf pine and lichen growing in the gaps.",
+    // distinguish sources: 费蒙湖最大深度：**SNL 正文给 140 米**（同一页 factbox 里另有 150 米的旧数并存）、英文维基信息框给 150 米 —— **两个来源直接打架，不是取整差异**，按级别取 SNL。2 级半官方 vs 3 级，2026-09-09 核。
+    //   https://snl.no/Femunden
+    //   **冲突本身写在这里**，免得下一轮碰到 150 的人以为我们漏了更新（同一处理见杰古沙龙冰河湖深度 248 vs 284）。面积约 204 平方公里（SNL 给 203，取整差异）、湖面 662 米、几乎无人工调节：核实无误。
     distinguish:
-      "Lake Femunden and Lake Mjøsa are both large Norwegian lakes, but Femunden is far shallower (150 m versus 450 m), sits on the highland, and has a broken, island-strewn shore — it is a \"glacially scoured bedrock-hollow lake\", while Mjøsa is a \"deep long structural-valley lake\". Femunden is also almost unregulated, keeping a natural rhythm of rise and fall. To tell whether a lake is a \"scoured bedrock lake\", look at whether it is shallow, island-rich and very irregular in shore, sitting on polished old bedrock.",
+      "Lake Femunden and Lake Mjøsa are both large Norwegian lakes, but Femunden is far shallower (about 140 m versus about 450 m), sits on the highland, and has a broken, island-strewn shore — it is a \"glacially scoured bedrock-hollow lake\", while Mjøsa is a \"deep long structural-valley lake\". Femunden is also almost unregulated, keeping a natural rhythm of rise and fall. To tell whether a lake is a \"scoured bedrock lake\", look at whether it is shallow, island-rich and very irregular in shore, sitting on polished old bedrock.",
     concept:
       "Lake Femunden is a sample for understanding \"the two sides of a divide\": the great majority of Norway's rivers flow west and south into the Atlantic, but Lake Femunden lies east of the main Scandinavian divide, and its water flows east into Sweden and reaches the sea from the Swedish coast. Which sea a lake's water ends up in depends on which side of the divide it falls on, not which country it is in. A common misconception is that a country's rivers all drain to that country's coast.",
     history:
@@ -6015,6 +6115,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   hornindalsvatnet: {
+    // seeing sources: 深 514 米、湖面海拔约 53 米（SNL，2 级半官方）。**「欧洲最深的湖」这个断言本轮专门查过竞争者**：SNL 明确写「挪威最深的四个湖同时也是欧洲最深的四个湖」，拉多加约 230 米、博登约 250 米都远浅于它，贝加尔湖不在欧洲 —— **排名成立、不需要加限定**。长度「约 22 公里」对维基 24 公里属测量口径差异，判定不改。2026-09-09 核，本轮无需改动。
+    //   https://snl.no/Hornindalsvatnet
     seeing:
       "Hornindalsvatnet in western Norway is the deepest lake in Europe — about 514 m deep. Its surface is only about 53 m above sea level, so the lake bed is about 460 m below sea level. The lake is about 22 km long and narrow, set between steep slopes, shaped like a straightened-out fjord. Because no river carrying glacial sediment enters it, the water is exceptionally clear, ink-blue at depth.",
     formation:
@@ -6062,8 +6164,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   varangerhalvoya: {
+    // seeing sources: 「唯一」的对象改了：挪威南部高山（多夫勒山、尤通黑门）在约 1450–1490 米以上同样有多年冻土（探地雷达/电阻率探测论文证实），**同批的 dovrefjell 条目自己就写了那里是典型的冰缘地貌** —— 原句按字面把它们排除了。真正独特的是**纬度驱动、低地也常年冻结的低北极带**（国家公园官网：「Subarctic meets Low Arctic」）。级别 1 + 3 级学术论文，2026-09-09 核。
+    //   https://varangerhalvoya.no/en/about-the-national-park/
+    //   **这一条的形状：「唯一」用对了地方就是有信息量的，用错了对象就是错的** —— 修法不是删掉「唯一」，而是把它挪到真正成立的那个限定上。
+    //   Bigganjarga 冰碛岩 1891 年首次记述、对应马里诺期冰期（约 6.45–6.35 亿年前）、「瓦兰吉尔冰期」以此地命名、雪球地球的国际地质遗产点：核实无误。**零争议红线本轮逐句复核：通过。**
     seeing:
-      "The Varanger Peninsula in Norway's far northeast juts into the Barents Sea, with the Varangerfjord to its south. It is the only place on mainland Norway with true Arctic tundra and permafrost — the interior of the peninsula is a low, gently rolling upland, large expanses of unvegetated block field, its climate and landscape closer to an Arctic island than to the rest of Norway. Most of the peninsula is Varangerhalvøya National Park.",
+      "The Varanger Peninsula in Norway's far northeast juts into the Barents Sea, with the Varangerfjord to its south. It is the only place on mainland Norway where tundra and permafrost are set by latitude rather than altitude, staying frozen year-round even in the lowlands (Norway's southern mountains such as Dovrefjell and Jotunheimen also carry permafrost, but that is altitude-driven alpine permafrost, a different thing) — the interior of the peninsula is a low, gently rolling upland, large expanses of unvegetated block field, its climate and landscape closer to an Arctic island than to the rest of Norway. Most of the peninsula is Varangerhalvøya National Park.",
     formation:
       "The Varanger Peninsula's surface is to a large extent pre-last-ice-age — during the ice age the ice sheet lay over the peninsula essentially without flowing and did almost nothing to the terrain, so it keeps its old, slowly weathered upland surface and block field (felsenmeer, a \"sea of stones\"). The bedrock is weakly metamorphosed Neoproterozoic to Early Cambrian sedimentary rock with clear bedding. The peninsula's edges have raised coastal terraces in steps, recording post-glacial land rebound.",
     observation:
@@ -6190,11 +6296,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Aquitaine Basin and the Paris Basin are \"sister basins\", but the Aquitaine is more asymmetric — its southern edge was strongly reworked by Pyrenean mountain-building (folded, uplifted), the northern edge quiet — so it does not have the Paris Basin's concentric-ring form. It and the coastal Landes sand are two different things: the basin is a deep sedimentary structure, the Landes a young layer of wind-blown sand over the basin's western surface. To judge how much a basin has been reworked by mountain-building, look at whether the strata on its mountain-facing side are folded and uplifted.",
     concept:
       "The Landes coast is a sample for understanding \"dunes damming water into marsh\": the prevailing west wind blows beach sand steadily inland, building a shore-parallel, slowly migrating dune belt; the dunes block the drainage of the plain behind, and surface water ponds into large marshes and lagoons. To tell whether a coastal marsh formed this way, look at whether a dune belt separates it from the sea and whether the dunes are still migrating inland. In the 19th century France fixed the drifting sand of the Landes with large-scale pine planting.",
+    // history sources: 拉斯科壁画年代：法国文化部 LAsCO 项目 2018–2021 年重新测年，约 21,500–21,000 年前（另一组数据给 23,500–22,000 年前）。级别 1（官方考古页），2026-09-09 核。原文的「约 1.7 万年前」是长期流传的旧值，老出四五千年。
+    //   https://archeologie.culture.gouv.fr/lascaux/en/dating-figures-lascaux
+    //   **这一条和切达人（9000 → 1 万年前）是同一形状**：数字看起来只是「一个年代」，背后换的是一整代测年方法 —— 靠年份格式看不出来，只能回官方页面查。
+    //   阿基坦为法国第二大沉积盆地（陆上约 6.6 万平方公里）、1152–1453 年属英格兰王室、1857 年排水造林立法：均核实无误。
     history:
-      "Aquitaine (Guyenne) was long held by the English crown in the Middle Ages (1152–1453), and the Bordeaux wine trade grew up then, shipped across the Atlantic to England. Before the 19th century the Landes was a poor, marshy heath where shepherds tended flocks on stilts in the wetland; from 1857 national law required drainage and pine planting, and over a few decades it became a vast pine forest. The Lascaux cave paintings (about 17,000 years old) are in the Dordogne valley on the basin's eastern edge.",
+      "Aquitaine (Guyenne) was long held by the English crown in the Middle Ages (1152–1453), and the Bordeaux wine trade grew up then, shipped across the Atlantic to England. Before the 19th century the Landes was a poor, marshy heath where shepherds tended flocks on stilts in the wetland; from 1857 national law required drainage and pine planting, and over a few decades it became a vast pine forest. The Lascaux cave paintings — redated by France's culture ministry in 2018–2021 to about 21,000 years old — are in the Dordogne valley on the basin's eastern edge.",
   },
 
   corsica: {
+    // seeing sources: 钦托山 2706 米；花岗岩（西南）与片岩（东北）两半的成因表述核实无误。**零争议红线本轮专门复核：通过** —— `history` 段止于 1768 年并入法国、热那亚塔与 GR20 徒步线路，不碰现代自治/独立议题（这是仓库对科西嘉定过的口径）。2026-09-09 核，本轮无需改动。
     seeing:
       "Corsica is a mountainous Mediterranean island, a region of France. A north–south central ridge runs almost the length of the island, with more than twenty peaks over 2,000 m, the highest, Monte Cinto, at 2,706 m — by area, Corsica is the most mountainous island in the Mediterranean. The coast varies greatly, from the cliff peninsula in the north, to the red granite bays of the west (Piana), to the white limestone cliffs of the south (Bonifacio). For its high mountains, dense forest and fine coast it is called the \"Isle of Beauty\".",
     formation:
@@ -6210,6 +6321,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "loire-river": {
+    // seeing sources: 卢瓦尔河约 1006–1013 公里、法国最长（3 级多口径一致）。UNESCO 第 933 号「Loire Valley between Sully-sur-Loire and Chalonnes」2000 年列入，**只覆盖约 280 公里的一段**（级别 1）—— 正文已正确限定，本轮复核通过。2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/933/
     seeing:
       "The Loire is the longest river in France, about 1,006 km. It rises at a small mountain called Gerbier de Jonc on the eastern edge of the Massif Central, flows north at first, then near the edge of the Paris Basin makes a nearly 90-degree bend to the west, crossing the heart of France through Orléans, Tours and Nantes to reach the Atlantic at Saint-Nazaire. A middle stretch is famous for the Renaissance châteaux along its valley (a World Heritage Site).",
     formation:
@@ -6225,6 +6338,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "rhone-river": {
+    // seeing sources: 按流量为法国最大的河；总长约 812–813 公里（源头在瑞士），法国境内段约 545 公里。**这个「法国段」口径与同批 seine-river 条目改后的排名限定已对齐** —— 两条河的表述现在用同一把尺子。2026-09-09 核，本轮无需改动。
     seeing:
       "The Rhône is the largest river in France by volume. It rises at the Rhône Glacier in the Swiss Alps, passes through Lake Geneva, and on entering France takes in the almost equally large Saône at Lyon, then runs south along a straight, deep north–south valley between the Alps and the Massif Central, splitting into two arms at Arles to enclose the Camargue delta and reaching the Mediterranean. The French section is about 545 km, with a large drop and full flow — one of the most fully developed rivers in Europe for hydropower and navigation.",
     formation:
@@ -6240,8 +6354,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "seine-river": {
+    // seeing sources: 法国河流长度排名**取决于口径**：按境内河长 —— 卢瓦尔 1006 > 塞纳 775–776 > 罗讷法国段 545 > 加龙 529；按含瑞士段的全长 —— 罗讷 812 公里排在塞纳之前。3 级来源两个独立口径一致，未找到更高级别的官方排名表，2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Liste_de_fleuves_de_France
+    //   **做法不是把「第三」改成「第二」，而是补上口径** —— 两种排法都有依据，原文缺的是那句限定（`C1b` 的标准形状）。本库 `rhone-river` 条目用的是「法国段约 545 公里」，两处口径已对齐。
     seeing:
-      "The Seine is the third-longest river in France, about 775 km, entirely within the Paris Basin. It rises at an unremarkable spring on the Burgundy plateau, takes in the Yonne, the Marne, the Oise and other tributaries, runs through Paris, then through a deeply incised, strongly meandering valley around Rouen, and reaches the English Channel at Le Havre. Its gradient is very low and its flow steady year-round — historically the golden waterway to Paris.",
+      "The Seine is about 775 km long — the second-longest river in France by length within the country (the Rhône is longer if its Swiss section is counted), entirely within the Paris Basin. It rises at an unremarkable spring on the Burgundy plateau, takes in the Yonne, the Marne, the Oise and other tributaries, runs through Paris, then through a deeply incised, strongly meandering valley around Rouen, and reaches the English Channel at Le Havre. Its gradient is very low and its flow steady year-round — historically the golden waterway to Paris.",
     formation:
       "The Seine's network is a direct product of the Paris Basin's \"bowl\" structure: the basin's strata dip toward the centre, so the rivers follow that dip along the soft layers, converging radially on the basin centre (near Paris), then flowing out together toward the lower ground to the northwest. Downstream around Rouen the Seine cuts into harder chalk, leaving a string of large meanders set between steep cliffs (\"incised meanders\") — the result of the river cutting down while continuing to meander on a slowly uplifting block.",
     observation:
@@ -6255,6 +6372,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   ecrins: {
+    // seeing sources: 埃克兰峰 4102 米、勃朗峰山群之外法国唯一的四千米级山峰（这个限定是必要的、正文写对了）；埃克兰国家公园 1973 年成立；1864-06-25 首登。**分类复核：国家公园，不是 PNR。** 2026-09-09 核，本轮无需改动。
     seeing:
       "The Massif des Écrins in the Dauphiné region of southeastern France is a high mountain area of pure crystalline rock (granite, gneiss) in the French Alps. Its highest peak, the Barre des Écrins at 4,102 m, is the only summit over 4,000 m in France outside the Mont Blanc massif, and the highest point lying entirely within France. The area is steep, heavily glaciered, with almost no road through it, and is protected by the Écrins National Park.",
     formation:
@@ -6270,6 +6388,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vanoise: {
+    // seeing sources: 瓦努瓦兹国家公园 1963-07-06 成立，法国第一个国家公园（为保护阿尔卑斯羱羊而设，与意大利大帕拉迪索毗邻）；大卡斯峰 3855 米。**分类复核：国家公园，不是 PNR。** 2026-09-09 核，本轮无需改动。
     seeing:
       "The Vanoise in the French Alps lies between the two large valleys of the Tarentaise and the Maurienne. Its high point is the Grande Casse at 3,855 m. It has one of the larger glacier fields on the French side of the Alps, many mountain lakes, and is the main habitat in France for the Alpine ibex. In 1963 the Vanoise became France's first national park.",
     formation:
@@ -6344,6 +6463,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cantal-volcano": {
+    // seeing sources: 坎塔尔活动期约 1300 万–200 万年前（主峰期 850 万–700 万年前），**与同轮刚改好的 massif-central 条目对齐** —— 那条原来把坎塔尔错塞进「上新世到几千年前」，本条目自己写的年代反而是对的，两处现在一致。底面直径约 70 公里、底面积约 2500–2770 平方公里；「欧洲最大的层火山之一」已带「之一」限定，**判定不收紧**。3 级转引学术论文，2026-09-09 核。
     seeing:
       "The Cantal volcano in the southern Massif Central is an old stratovolcano long extinct and eroded for millions of years. Its base is about 70 km across and the volume of its volcanic rock is over 400 km³ — by base area, one of the largest stratovolcanoes in Europe. The original cone (possibly 3,000–4,000 m high when active) is now just a ring of residual peaks at the centre — the Plomb du Cantal (1,855 m), the Puy Mary and others — around a hollowed-out core. Around it, like a cut cake, are basalt tablelands spread out radially.",
     formation:
@@ -6359,6 +6479,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "monts-dore": {
+    // seeing sources: 多尔山（盖里段）约 309 万–146 万年前、桑西层火山约 110 万–23 万年前，合并后与正文的「300 万到 25 万年前」吻合。桑西 1885 米，中央高原最高点（另有 1886 米的说法，**取整差异、判定不改**）。3 级转引学术文献，2026-09-09 核。
     seeing:
       "The Monts Dore (also called the Massif du Sancy) in the Massif Central, between the younger Chaîne des Puys and the older Cantal volcano, is a group of stratovolcanoes active between about 3 million and 250,000 years ago. Erosion has cut the cone into a ring of sharp residual peaks, the highest, the Puy de Sancy at 1,885 m, being the high point of the whole Massif Central. The two headwater streams of the Dordogne (the Dore and the Dogne) rise and meet here.",
     formation:
@@ -6374,6 +6495,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "grands-causses": {
+    // seeing sources: 台地海拔 800–1200 米。**UNESCO 分类复核：「Causses and Cévennes」2011-06-28 以「活态演进的文化景观」列入，不是自然遗产 —— 本条目与 cevennes 条目都写的「文化景观」，两处都对。**（级别 1）2026-09-09 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1153/
     seeing:
       "The Grands Causses are several limestone tablelands about 800 to 1,200 m high on the southern edge of the Massif Central — the Causse Méjean, the Causse du Larzac, the Causse Noir, the Causse de Sauveterre. The tops are open, dry, with almost no surface rivers, sheep-grazing country of short grass and juniper in the rock cracks. The tablelands are cut by the Tarn, the Jonte and the Dourbie into gorges hundreds of metres deep and near-vertical, and the gorges, by contrast, are green and wooded with villages.",
     formation:
@@ -6389,6 +6512,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   vercors: {
+    // seeing sources: 韦科尔 1970-10-16 设立，**PNR 不是国家公园，正文没写错**（本批 grands-causses、landes-de-gascogne 同样是 PNR，三处都对）；面积约 227,621 公顷。贝尔热竖井 1953–1963 年为世界最深洞穴（−1122 米），后被比利牛斯的圣马丁洞取代 —— 正文写「1950s–60s 一度」准确。2026-09-09 核，本轮无需改动。
     seeing:
       "The Vercors, southwest of Grenoble, is a limestone \"Pre-Alps\" tableland. Its eastern edge is a kilometre-high cliff facing Grenoble and the high Alps, looking like a city wall from the plain. The interior is cut by the Bourne and other rivers into deep gorges (the \"Grands Goulets\" is the narrowest stretch, with the road cut into the rock wall). The surface is large forests and high pasture, and below is one of the best-developed cave systems in France.",
     formation:
@@ -6404,6 +6528,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   cevennes: {
+    // seeing sources: 洛泽尔山 1699 米、埃古阿勒山 1565–1567 米；塞文山国家公园 1970 年成立；UNESCO 2011 年「科斯与塞文」**文化景观**（非自然遗产）；1878 年史蒂文森携驴穿越、《Travels with a Donkey in the Cévennes》。**零争议红线本轮专门复核：通过** —— 宗教战争与二战抵抗运动都只作简短事实陈述、不做评价。2026-09-09 核，本轮无需改动。
     seeing:
       "The Cévennes are the southeastern edge of the Massif Central facing the Mediterranean — a long ridge of granite and schist cut deep by countless streams into a comb of steep spurs and deep valleys. The highest, Mont Lozère, is 1,699 m, and Mont Aigoual 1,565 m. It is the boundary between an Atlantic and a Mediterranean climate: the northwest slope mild and misty, the southeast slope prone to violent autumn rainstorms. The Cévennes National Park was created in 1970.",
     formation:
@@ -6437,6 +6562,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "ardeche-gorge": {
+    // seeing sources: 阿尔克桥宽约 59 米、高约 34 米（个别来源的 54×60 米属测量口径差异，**判定不改**）；肖维洞 1994-12-18 发现、壁画约 3.6 万年前、2014-06 列入 UNESCO；峡谷 1980 年设国家级自然保护区（约 1572 公顷）。2026-09-09 核，本轮无需改动。
     seeing:
       "The Gorges de l'Ardèche in southeastern France, on the edge of the Massif Central facing the Mediterranean, is a stretch about 30 km long and up to about 300 m deep that the Ardèche River has cut into a limestone tableland. At the gorge entrance stands the Pont d'Arc — a natural arch about 59 m wide and 34 m high, with the river running through the opening. The walls are white limestone, the floor a green river good for canoeing.",
     formation:
@@ -6462,8 +6588,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Landes de Gascogne and the Aquitaine Basin are a \"surface and depth\" relationship: the basin is a sedimentary structure kilometres deep, the Landes just a thin young layer of wind-blown sand over the basin's western surface. It is unlike a true natural forest — the Landes' pines were planted by hand in the 19th century, a single species in regular rows, essentially a \"forestry plantation\". To tell whether a forest is planted, look at whether the species is uniform and whether there are regular rows and forest roads.",
     concept:
       "The Landes are a sample for understanding \"how an impermeable layer causes marsh\": even where rainfall is not high, if the surface is extremely flat and there is an impermeable hard crust below (here the iron pan, alios), rain can neither soak in nor run off and ponds into large marshes on the surface. To fix it, you either break through the crust or dig ditches to drain the water — the 19th-century Landes took the latter route. To tell whether a marsh is this kind, look for an impermeable layer below it and whether the ground slope is near zero.",
+    // history sources: 1949 年 8 月的朗德大火：烧毁约 5.2 万公顷、82 人死亡；朗德松林总面积约 100 万–140 万公顷，占比约 3.7%–5%。3 级（法语维基，给出具体公顷数），2026-09-09 核。
+    //   https://fr.wikipedia.org/wiki/Incendie_de_la_for%C3%AAt_des_Landes_de_1949
+    //   **「约五分之一」是把两件事合成了一件**：1937–1949 年**累计**火灾超 45 万公顷、约占森林四成，那才是接近「五分之一」量级的数 —— 单次大火被安上了累计数据的比例。与埃特勒塔那条（区域平均值被安在一段崖壁上）同属「一个真数字用错了对象」。
+    //   面积约 1 万平方公里、1857 年排水造林立法、PNR 1970-10-16 设立：均核实无误。
     history:
-      "Before the 19th century the Landes was one of the few \"stilt-shepherding\" lands in Europe — shepherds on wooden stilts over a metre tall watched their flocks in knee-deep wetland and knitted wool as they went. In 1857 France legislated compulsory drainage and afforestation, and over a few decades the Landes became a vast pine forest, an important source of timber and pine resin (turpentine, rosin) for France. A great fire in 1949 burned about a fifth of the forest, after which a tight network of firebreaks was built. The Landes de Gascogne Regional Nature Park was created in 1970.",
+      "Before the 19th century the Landes was one of the few \"stilt-shepherding\" lands in Europe — shepherds on wooden stilts over a metre tall watched their flocks in knee-deep wetland and knitted wool as they went. In 1857 France legislated compulsory drainage and afforestation, and over a few decades the Landes became a vast pine forest, an important source of timber and pine resin (turpentine, rosin) for France. A great fire in 1949 burned about 50,000 hectares and killed 82 people, after which a tight network of firebreaks was built. The Landes de Gascogne Regional Nature Park was created in 1970.",
   },
 
   calanques: {
@@ -6539,8 +6669,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cirque-de-gavarnie": {
+    // seeing sources: 加瓦尔尼大瀑布落差 422 米，通行表述为**「法国本土落差最大的瀑布」**；挪威文诺斯瀑布约 860 米等远超它，「欧洲最大之一」不成立。3 级，2026-09-09 核。
+    //   https://en.wikipedia.org/wiki/Gavarnie_Falls
+    //   **这一条和同批 `verdon-gorge`「欧洲最大的峡谷」是同型** —— 都是把一个「法国范围内成立」的说法抬到欧洲。
+    //   UNESCO「Pyrénées – Mont Perdu」1997 年列入（自然 + 文化双重遗产，1999 年向北扩展纳入法方 Gèdre 公社）；跨境按「法国与西班牙交界一带」中性表述、不描述边界线、不表述主权，**红线复核通过**。
     seeing:
-      "The Cirque de Gavarnie, in the central Pyrenees near the French–Spanish border, is a huge semicircular valley. Three tiers of rock wall rise from the floor, the highest about 1,500 m above it, ringing an \"amphitheatre\" several kilometres across — Victor Hugo called it \"the Colosseum of nature\". Down the wall drops the Grande Cascade de Gavarnie, about 420 m — one of the highest-drop waterfalls in Europe.",
+      "The Cirque de Gavarnie, in the central Pyrenees near the French–Spanish border, is a huge semicircular valley. Three tiers of rock wall rise from the floor, the highest about 1,500 m above it, ringing an \"amphitheatre\" several kilometres across — Victor Hugo called it \"the Colosseum of nature\". Down the wall drops the Grande Cascade de Gavarnie, about 420 m — the highest-drop waterfall in mainland France.",
     formation:
       "Gavarnie is a particularly large cirque. In the ice age a thick glacier lodged here, rotating and scouring around the valley head, digging the walls into a steep semicircle and deepening and flattening the floor. Its \"stepped\" walls reflect the folded strata below — during Pyrenean mountain-building, limestone and marble were squeezed into near-horizontal stacked layers, and the glacier eroded differentially along the layers, hard layers left as steps, soft layers retreating into scarps. After the ice withdrew, snowmelt and groundwater from the walls fall into the valley as waterfalls.",
     observation:
@@ -6554,8 +6688,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "italian-alps": {
+    // seeing sources: 「完全落在意大利境内的最高峰」这个说法**两派资料打架**：Britannica 等支持大帕拉迪索（勃朗峰、罗莎峰的最高点都在国界上）；但罗莎峰山群的科尔诺内罗峰 4321 米、文森峰金字塔 4215 米**本身完全在意大利境内且更高**，只是不是独立山峰。**反例只有 3 级来源，按规矩不足以推翻正文** —— 因此没有改数字，只补了「独立山峰」这一档限定，让句子在两种读法下都成立。2026-09-10 核。
+    //   **这一条的处理值得记：遇到「3 级来源提出的反例」时，不是二选一，而是找一句在两种情况下都为真的写法。** 同一断言在 `gran-paradiso` 条目里也出现了一次，已一并改。
     seeing:
-      "The Italian Alps are the great arc the Alps make along Italy's northern border, from Piedmont in the west to near Slovenia in the east. They are a high wall between the Po Valley and the countries to the north, closing Italy off on the south side. Mont Blanc, the Matterhorn and Monte Rosa — famous Alpine peaks — are all near the Italian–French or Italian–Swiss border; the highest peak lying entirely within Italy is Gran Paradiso, 4,061 m.",
+      "The Italian Alps are the great arc the Alps make along Italy's northern border, from Piedmont in the west to near Slovenia in the east. They are a high wall between the Po Valley and the countries to the north, closing Italy off on the south side. Mont Blanc, the Matterhorn and Monte Rosa — famous Alpine peaks — are all near the Italian–French or Italian–Swiss border; the highest freestanding peak lying entirely within Italy is Gran Paradiso, 4,061 m.",
     formation:
       "The Alps are the result of the African plate (with the Adriatic \"promontory\" ahead of it) pressing into Europe in the Cenozoic — the Tethys Ocean between the two continents closed, and the layers of the seafloor and continental margins were folded, thrust and stacked into piles of nappes. The Italian side faces the direction of the push, so you can see much \"older-over-younger\" inverted stratigraphy. Quaternary glaciers flowed south from the main crest into Italy's valleys, deepening the floors and leaving huge terminal moraines at the valley mouths; after the ice, those moraine dams held back a string of large \"Pre-Alpine\" lakes — Garda, Como and others.",
     observation:
@@ -6569,6 +6705,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   apennines: {
+    // seeing sources: 大角峰 2912 米；2009 年拉奎拉地震、2016 年阿马特里切地震均为广泛记录的事件、年份准确。2026-09-10 核，本轮无需改动。
     seeing:
       "The Apennines are the \"backbone\" running the length of the Italian peninsula, from Liguria in the northwest to Calabria in the far south, about 1,200 km long. As a whole they are much lower than the Alps, the highest peak the Corno Grande (part of the Gran Sasso) at 2,912 m. The range is not wide, but it divides the peninsula into two sides different in climate and drainage — the Adriatic side short and steep, the Tyrrhenian side broad and gentle with some volcanic areas and coastal plains.",
     formation:
@@ -6584,6 +6721,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   dolomites: {
+    // seeing sources: UNESCO「The Dolomites」2009-06-26 列入（编号 1237，级别 1）。
+    //   https://whc.unesco.org/en/list/1237/
+    //   白云石化机制（富镁卤水改造礁体）与现有地质文献一致。**零争议红线本轮专门复核：通过** —— `history` 段只写拉迪恩语、19 世纪登山史、一战山地战的简短事实，不碰自治省政治（这是仓库对意大利定过的口径）。2026-09-10 核，本轮无需改动。
     seeing:
       "The Dolomites in northeastern Italy are a range of unusually pale (near-white) carbonate-rock peaks — vertical walls, rows of spires, flat-topped tablelands — rearing abruptly out of deep-green meadow and forest. This distinctive rock and mountain form made it a mecca of mountaineering and tourism as early as the 19th century, and it was inscribed as a World Heritage Site in 2009. The name comes from the French mineralogist Dolomieu — both the mineral dolomite and this range are named for him.",
     formation:
@@ -6599,6 +6739,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "po-valley": {
+    // seeing sources: 面积约 4.6 万平方公里（各资料 4.6 万–4.78 万，**属统计边界口径差异、判定不改**）。**前陆盆地成因本轮专门核过：正文写对了** —— 两侧造山带对挤使地壳下弯、再被沉积物充填，不是「河流冲积出来的平原」。2026-09-10 核，本轮无需改动。
     seeing:
       "The Po Valley (Italian Pianura Padana) is the largest lowland in Italy — about 650 km east–west, about 46,000 km², running from the foot of the Western Alps all the way to the Adriatic. The surface is extremely flat, an agricultural and industrial core filled with fields, canals, roads and cities (Turin, Milan, Bologna, Venice and others). Ringed on three sides by the Alps and the Apennines, and with persistent fog and stagnant air, it is one of the more air-polluted regions of Europe.",
     formation:
@@ -6614,6 +6755,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "po-river": {
+    // seeing sources: 约 652 公里，与波河流域管理局（Autorità di Bacino Distrettuale del Fiume Po）官方口径一致（级别 1）。2026-09-10 核，本轮无需改动。
+    //   https://www.adbpo.it/
     seeing:
       "The Po is the longest river in Italy, about 652 km. It starts at the foot of Monviso in the Western Alps, runs almost straight east across the whole Po Valley, taking in many tributaries from the Alps (the Ticino, the Adda, the Mincio and others) and the Apennines (the Tanaro, the Secchia and others), and finally builds a large, still-advancing delta on the Adriatic. Its lower bed, silted up, is now higher than the farmland on either side — a \"perched river\", held only by two high embankments.",
     formation:
@@ -6629,6 +6772,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tiber-river": {
+    // seeing / formation sources: 长 406 km、意大利第三长河（波河 652、阿迪杰 410），3 级复核一致；
+    //   「沿亚平宁西侧拉张断陷谷地发育」的构造解释经学术文献核对成立——台伯河中游对应 Paglia-Tevere
+    //   地堑，NNW-SSE 走向的拉张盆地，受 Alto Tiberina 正断层控制（3 级学术论文摘要）。2026-09-10 核，verdict: ok。
     seeing:
       "The Tiber (Italian Tevere) is the third-longest river in Italy, about 406 km. It rises at Monte Fumaiolo in the Apennines, runs south through the hills of Umbria and Lazio, flows through the centre of Rome, and reaches the Tyrrhenian Sea near Ostia. Its water is yellowish (the ancients called it \"the golden Tiber\"), carrying Apennine sediment. In the city of Rome the Tiber makes several bends, cradling the Tiber Island in the middle.",
     formation:
@@ -6644,6 +6790,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   sicily: {
+    // seeing / history sources: 地中海第一大岛（约 25,711 km²）；1693 年东南部地震（M7.4）摧毁约 40 座城镇、
+    //   诺托谷巴洛克重建列入 UNESCO；1908 年墨西拿地震 M7.1；1669 年埃特纳熔岩毁卡塔尼亚部分城区。
+    //   19 世纪硫矿：世纪中叶约占世界 3/4、世纪末约 90%，1912 年后被美国 Frasch 法超过——正文「大部分」偏保守，成立。
+    //   以上均 3 级复核（未找到 1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Sicily is the largest island in the Mediterranean, roughly triangular, separated from mainland Italy by a narrow strait (the Strait of Messina). The north of the island is mountains (the continuation of the Apennines), the centre and south rolling hills and plateaus, and on the east coast stands Etna — one of the highest and most frequently active volcanoes in Europe. The coast varies greatly: headlands and bays in the north, long beaches in the south, Etna's lava coast in the east.",
     formation:
@@ -6659,6 +6809,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   sardinia: {
+    // seeing / formation / history sources: 地中海第二大岛；真纳尔真图最高峰 Punta La Marmora 1834 m
+    //   （意大利文化部 idese.cultura.gov.it，2 级）；巴鲁米尼 Su Nuraxi 1997 年列入 UNESCO（whc.unesco.org，1 级）。
+    //   撒丁-科西嘉微陆块 30–15 Ma 逆时针旋转、南撒丁曾属伊比利亚边缘，古地磁研究（Tectonics 2023，3 级摘要）与正文一致。
+    //   2026-09-10 核，verdict: ok。
     seeing:
       "Sardinia is the second-largest island in the Mediterranean, west of mainland Italy and south of Corsica. It is an old, quiet land — no active volcano, and very weak earthquakes. The body of the island is hills and mountains of moderate height of granite and older rock (the Gennargentu is highest, 1,834 m), with only in the east a spectacular limestone upland (the Supramonte) cut by deep gorges and caves. The coast has many granite reef headlands and turquoise bays.",
     formation:
@@ -6674,8 +6828,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gran-paradiso": {
+    // seeing sources: 同 `italian-alps` 条目的注释。**这个断言在两个条目里各写了一次** —— 又一例「同一条口径问题在库里出现两次，修一处要搜另一处」。1922-12-03 设立、意大利第一个国家公园（1919 年国王宣布捐赠）核实无误。
     seeing:
-      "Gran Paradiso in the western Italian Alps, between the Aosta Valley and Piedmont, is a high mountain area of mainly gneiss, its highest peak Gran Paradiso at 4,061 m — the highest peak lying entirely within Italy (Mont Blanc and Monte Rosa are on the border). It has dozens of glaciers and over a hundred mountain lakes, with forest and pasture in the valleys. In 1922 Italy's first national park was created here.",
+      "Gran Paradiso in the western Italian Alps, between the Aosta Valley and Piedmont, is a high mountain area of mainly gneiss, its highest peak Gran Paradiso at 4,061 m — the highest freestanding peak lying entirely within Italy (the summits of Mont Blanc and Monte Rosa are on the border). It has dozens of glaciers and over a hundred mountain lakes, with forest and pasture in the valleys. In 1922 Italy's first national park was created here.",
     formation:
       "Gran Paradiso's rock is a block of ancient granitic crust, buried deep and metamorphosed to gneiss during Alpine mountain-building, then lifted as a whole and pushed northwest along thrust faults — geologically an \"internal crystalline massif\", the same kind as the Écrins and the Vanoise in France. It is much harder than the folded sedimentary rock around it, so it stands out as a high mountain area. Quaternary glaciers dug deep along the rock's joints, cutting it into sharp peaks, arêtes and rings of cirques, with ice still hanging in the cirques today.",
     observation:
@@ -6691,8 +6846,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "gran-sasso": {
     seeing:
       "The Gran Sasso d'Italia (\"the great rock of Italy\") in the central Apennines, in the Abruzzo region, is a high mountain area of limestone, its highest peak the Corno Grande at 2,912 m, the highest point of the whole Apennines — its snowy top is visible from the Adriatic coast to the east. On the north side of the Corno Grande is the Calderone glacier, which since 1913 has been the southernmost glacier in Europe and is now shrunk to a thin sheet of ice that could vanish at any time. The southern slope is an open high plain called Campo Imperatore, so empty and plateau-like it is nicknamed \"Little Tibet\".",
+    // formation sources: 卡尔代罗内：**技术分类已变** —— 不再有整体流动、2000 年前后分裂成两块，CNR 与意大利冰川学委员会现归类为 glacionevato（永久冰雪体）而非严格意义的冰川；2022-04 探地雷达测到残冰仅约 25 米厚、每年约损失 1 米。级别 1（CNR 官方新闻稿），2026-09-10 核。
+    //   https://www.cnr.it/it/comunicato-stampa/11058/calderone-restano-circa-25-metri-di-ghiaccio
+    //   「自 1913 年起是欧洲纬度最南的冰川」这个位置仍成立（西班牙内华达山的 Corral del Veleta 在此之前已实质消亡）。**正文里「冰川」这个通俗称呼保留、不逐处替换 —— 补一句分类变化就够了。** CNR-ISP 近年约每 2–3 年做一次探地雷达实地调查。
     formation:
-      "The Gran Sasso's limestone is a shallow-sea deposit about 200 million years old, strongly folded and thrust into an upland during Apennine mountain-building. Because the Apennines are still stretching (on the west), the Gran Sasso area is cut and uplifted by several large normal faults, forming steep rock walls and the down-faulted plain of Campo Imperatore at its foot. Karst action on the limestone is strong — the surface is short of water and there are many caves and underground rivers below. A world-renowned underground physics laboratory is also cut into the mountain, precisely for the rock's shielding of cosmic rays.",
+      "The Gran Sasso's limestone is a shallow-sea deposit about 200 million years old, strongly folded and thrust into an upland during Apennine mountain-building. Because the Apennines are still stretching (on the west), the Gran Sasso area is cut and uplifted by several large normal faults, forming steep rock walls and the down-faulted plain of Campo Imperatore at its foot. The Calderone on the north side no longer flows as a glacier does and split into two bodies around 2000; ground-penetrating radar in 2022 found only about 25 m of ice left, and scientists now classify it as a permanent ice-and-snow body rather than a true glacier — it keeps its place as Europe's southernmost glacial remnant, but its technical classification has changed. Karst action on the limestone is strong — the surface is short of water and there are many caves and underground rivers below. A world-renowned underground physics laboratory is also cut into the mountain, precisely for the rock's shielding of cosmic rays.",
     observation:
       "From the air the Gran Sasso is an unusually striking white limestone mountain wall in the central Apennines, its north face near-vertical rock (the Corno Grande's \"east face\"), its south side grading gently into the yellow-green high plain of Campo Imperatore, with grazing horses and sheep and a few seasonal lakes on the plain. The glacier is only a remnant in a small shaded hollow on the Corno Grande.",
     distinguish:
@@ -6704,6 +6862,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   pollino: {
+    // seeing / history sources: Serra Dolcedorme 2267 m；公园 1925.65 km²，意大利面积最大的国家公园；1993 年建园。
+    //   波斯尼亚松 Italus 树轮 + 碳 14 联合定年约 1230 岁（ANSA 国家通讯社，2 级）。
+    //   ⚠️「欧洲已知最老的树」正文已带「经科学定年」这一限定 —— 瑞典 Old Tjikko 的克隆根系年龄更大但树干很年轻，
+    //   两者不是同一口径，故保留限定语、不改写。其余数字为 3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Pollino in the far southern Apennines, on the border of Basilicata and Calabria, is a high mountain area of limestone and dolomite, its highest peak Serra Dolcedorme at 2,267 m. The Pollino National Park around it, about 1,925 km², is the largest national park in Italy. The emblem of this range is a relict pine called the Bosnian pine (pino loricato) — its bark like scale armour, able to live for hundreds or a thousand years on the poorest, most wind-exposed rock; a Bosnian pine in the park scientifically dated to about 1,230 years old is the oldest known tree in Europe.",
     formation:
@@ -6719,6 +6881,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   gennargentu: {
+    // seeing / formation sources: 拉马莫拉峰 1834 m（意大利文化部 idese.cultura.gov.it，2 级）——与 sardinia 条目数字一致，已并排核过。
+    //   「约 4—5 亿年前海相沉积、海西造山约 3 亿年前变质」与撒丁岛古生代变质基底（寒武纪—泥盆纪）的通行表述数量级一致，
+    //   属合理简化，未找到冲突来源（3 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Gennargentu in central-eastern Sardinia is the highest ground on the island — its highest peak, Punta La Marmora, at 1,834 m. Unlike the granite hills of most of Sardinia, Gennargentu is made of ancient schist and slate, rounded in form, with no sharp peaks. Above the tree line is large high pasture, snow-covered in winter (one of the few places you can ski on Sardinia). It is the source of several of the island's main rivers, and the heart of the traditional shepherding region of \"Barbagia\".",
     formation:
@@ -6734,6 +6899,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-garda": {
+    // seeing sources: 面积约 370 平方公里、最深约 346 米，多方一致（3 级但互相印证）。2026-09-10 核，本轮无需改动。
     seeing:
       "Lake Garda in northern Italy, on the northern edge of the Po Valley, is the largest lake in Italy by surface area (about 370 km²). Its shape is distinctive: the northern part is narrow and deep, wedged between Alpine cliffs (like a fjord), up to about 346 m deep; the southern part is wide and shallow, ringed by low vineyard hills. This \"narrow at the top, wide at the bottom\" contrast directly records the glacier that made it.",
     formation:
@@ -6749,6 +6915,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "lake-como": {
+    // seeing sources: 最深约 410 米（ARPA Lombardia，区域官方一手，级别 1）—— 另有 414–425 米的 3 级说法，**属测量口径差异，且官方数据支持正文，判定不改**；湖面海拔 199 米、隐洼地 199 − 410 = −211 米算术核对无误。**加尔达湖与科莫湖是冰川超深挖的槽谷湖，不是断层湖 —— 本轮专门核过，正文写对了。** 2026-09-10 核。
+    //   https://www.arpalombardia.it/territori/como/lago-di-como/
     seeing:
       "Lake Como, at the foot of the Alps north of Milan, is an inverted \"Y\"-shaped deep lake — three long narrow arms meeting near Bellagio. It is one of the deepest lakes in Europe (up to about 410 m), its bed far below sea level. Its shores are steep mountain slopes, with dense forest and villas, churches and fishing villages at the waterline, making up the iconic \"Lake Como\" picture.",
     formation:
@@ -6764,6 +6932,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "venetian-lagoon": {
+    // seeing / formation sources: 潟湖约 550 km²，经 Lido / Malamocco / Chioggia 三个潮汐口与外海相通；
+    //   MOSE 活动闸 2020-10-03 正式启用。3 级复核（未找到 1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Venetian Lagoon at the far northern end of the Adriatic is about 550 km² of shallow water — most of it only a metre or two deep, exposing broad mudflats and salt marsh at low tide. The lagoon is separated from the open sea by a line of long thin barrier islands (\"lidi\"), connected only at three \"tidal inlets\". Dozens of small islands sit on the mudflats within it, and the city of Venice is built on one group of them, on foundations of wooden piles.",
     formation:
@@ -6779,6 +6949,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-vesuvius": {
+    // seeing sources: 主峰 1281 米；1631 年喷发死亡人数各研究在 3000–6000 以上不等，**正文用「数千人」而不是一个精确数，是稳妥的写法、判定不改**；1944 年最近一次喷发。2026-09-10 核，本轮无需改动。
     seeing:
       "Mount Vesuvius on the eastern shore of the Bay of Naples is the only active volcano on mainland Europe, about 1,281 m high. Today's cone actually sits within a ring of older, half-broken crater rim — that old rim is \"Monte Somma\", left by a series of larger cone collapses and eruptions over tens of thousands of years. The whole \"Somma–Vesuvius\" volcano is right next to the Naples metropolitan area, with hundreds of thousands of people at its foot.",
     formation:
@@ -6794,8 +6965,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "mount-etna": {
+    // seeing sources: 峰顶高度：**随每次喷发变化，INGV 用无人机不定期复测** —— 2021-08 东南火山口 3357 米 → 2023-12 修正 3354 米 → 2024-07 Voragine 东侧沿口约 3369 米 → **2024-09-12 复测约 3403 米（迄今最高）**。2025–2026 年仍持续喷发（2026 年 6–8 月 Voragine / 东北火山口一带多次活动），截至 2026-09-10 未检索到更新的官方复测数字。级别 1（INGV 官方博客）+ 2/3 级交叉，2026-09-10 核。
+    //   https://ingvvulcani.com/2024/07/10/la-voragine-fa-la-voce-grossa-e-diventa-la-nuova-vetta-delletna/
+    //   **这是 `C8`（连海拔也会过期）最典型的一例**：三年之内官方数字动了四次，而原文停在「约 3350 米」。⚠️ **下一轮先查 INGV 有没有针对 2025–2026 年活动发布新的无人机测绘结果。**
+    //   「欧洲最高的活火山」通行的限定是**不计高加索**（厄尔布鲁士 5642 米），已补。
     seeing:
-      "Mount Etna on the east coast of Sicily, about 3,350 m, is the tallest active volcano in Europe and one of the most active in the world — with an eruption or lava flow almost every year, and smoke almost never stopping. It is huge, with a base circumference of about 140 km, its slopes covered with hundreds of parasitic cones. On the east flank is a huge horseshoe-shaped collapse depression, the \"Valle del Bove\". The summit is snow-covered year-round, an odd contrast with the smoking craters.",
+      "Mount Etna on the east coast of Sicily has a summit that shifts with every eruption — a drone survey in September 2024 put it at about 3,403 m, the highest yet recorded, and it has kept erupting since, so the current figure is whatever Italy's geophysics and volcanology institute last measured. It is the tallest active volcano in Europe outside the Caucasus, and one of the most active in the world — with an eruption or lava flow almost every year, and smoke almost never stopping. It is huge, with a base circumference of about 140 km, its slopes covered with hundreds of parasitic cones. On the east flank is a huge horseshoe-shaped collapse depression, the \"Valle del Bove\". The summit is snow-covered year-round, an odd contrast with the smoking craters.",
     formation:
       "Etna's position is special — it is roughly at the meeting of the African plate, Ionian oceanic crust and several large faults, where the crust is being torn open, letting mantle-derived magma rise fairly freely. Etna's magma is fairly basic and runny, and gas escapes easily, so most of its eruptions are relatively \"mild\" — effusive lava, persistent small explosions at the summit craters, occasional lava fountains. This \"high-frequency, low-intensity\" style is how it built such a huge mountain over hundreds of thousands of years.",
     observation:
@@ -6809,6 +6984,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "campi-flegrei": {
+    // seeing sources: **正文没有写死警戒级别或数字 —— 这是对的，判定不改。** 截至 2026-09-10：坎皮弗莱格瑞持续处于「2 级·注意（黄色预警）」；地面持续抬升（2025-12 起月均约 15±3 毫米、2026-02 起约 10±3 毫米；自 2005-11 累计约 167.5 厘米，2025 年以来约 30 厘米）；2025 年 3/5/6 月与 2026 年 5 月有 4.4–4.6 级地震，**2026 年 7 月记录到该区有仪器记录以来能量最大的一次地震（M4.7±0.3）**。级别 1（民防部 + INGV 维苏威观测站），2026-09-10 核。
+    //   https://www.ov.ingv.it/index.php/flegrei-stato-attuale
+    //   ⚠️ 警戒等级由民防部按 INGV 建议动态调整、**无固定发布周期，按事件触发查询**；正文一律不写死。
     seeing:
       "Campi Flegrei (Italian for \"burning fields\") west of Naples is not a mountain but a large caldera a dozen or so kilometres across. Within it is an undulating lowland and bays, dotted with dozens of small cones, circular crater lakes (Lake Averno) and fumaroles steaming with sulphur (the Solfatara). Towns such as Pozzuoli are built inside the caldera.",
     formation:
@@ -6824,6 +7002,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "aeolian-islands": {
+    // seeing sources: UNESCO「Isole Eolie (Aeolian Islands)」2000 年列入、编号 908（级别 1）—— **正文没有直接写年份，因此没有可错的地方**，备查。2026-09-10 核，本轮无需改动。
     seeing:
       "The Aeolian Islands in the Tyrrhenian Sea north of Sicily are a line of 7 main volcanic islands (Lipari, Vulcano, Salina, Stromboli, Filicudi, Alicudi, Panarea). Some are still active (Stromboli erupts mildly year-round, Vulcano has fumaroles and mud baths), some dormant. The islands are black and white volcanic-rock cliffs, conical mountains, and vines and capers grown on volcanic soil.",
     formation:
@@ -6839,6 +7018,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   stromboli: {
+    // seeing sources: 2019-07-03 阵发（喷发柱 2.5–3 公里，一名徒步者遇难）、2024-07-11 阵发（火山碎屑流沿「火流」入海，无伤亡）；INGV 记录里近 120 年最强的几次阵发为 1919 / 1930 / 2003 / 2019 / 2024。级别 1，2026-09-10 核，本轮无需改动。
     seeing:
       "Stromboli is the northernmost of the Aeolian Islands, about 924 m high, almost the whole island a volcanic cone rising from the seabed. It has hardly stopped erupting for over two thousand years — every few minutes to few tens of minutes the summit crater bursts with a \"puff\", throwing hot fragments tens to hundreds of metres up. Seen from the sea at night, these repeated bursts are like a light blinking on and off, hence \"the Lighthouse of the Mediterranean\". Locals call the volcano \"Iddu\" (\"him\").",
     formation:
@@ -6854,6 +7034,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "amalfi-coast": {
+    // seeing / history sources: 海岸约 50 km；1997 年列入 UNESCO 世界遗产（Costiera Amalfitana，whc.unesco.org/en/list/830，1 级）；
+    //   阿马尔菲为四大海上共和国之一（与威尼斯、热那亚、比萨并称），9—11 世纪鼎盛。2026-09-10 核，verdict: ok。
     seeing:
       "The Amalfi Coast is a stretch of coast about 50 km long on the south side of the Sorrento Peninsula, where the limestone cliffs of the Lattari Mountains plunge straight into the Tyrrhenian Sea. There is almost no flat land — the towns (Amalfi, Positano, Ravello and others) are built up the near-vertical cliff slope in tiers, houses, churches, lemon-grove terraces and staircases of hundreds of steps stacked together. A narrow, twisting road clings to the cliff, the only land route along the coast.",
     formation:
@@ -6869,6 +7051,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   capri: {
+    // seeing / history sources: 岛面积约 10.4 km²（另有 10.53 km² 一说）；索拉罗山 589 m 为全岛最高点；
+    //   提比略别墅据苏埃托尼乌斯记载为 12 座（正文「十几座」成立）；蓝洞 1826 年由 Kopisch 与 Fries「重新发现」。
+    //   均 3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Capri, at the mouth of the Bay of Naples off the western end of the Sorrento Peninsula, is a small limestone island of only about 10 km². It is ringed almost entirely by near-vertical sea cliffs, with three sea stacks called the \"Faraglioni\" standing in the sea. Its most famous feature is the \"Blue Grotto\" — a sea cave you can only enter by small boat with your head down, its opening mostly underwater, so that daylight refracts in through the underwater opening and lights the whole cave a glowing deep blue.",
     formation:
@@ -6884,6 +7069,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "cinque-terre": {
+    // seeing / formation / history sources: 1997 年作为文化景观列入 UNESCO；国家公园由 D.P.R. 1999-10-06 设立
+    //   （意大利环境部官方公报 mase.gov.it，1 级）；2011-10-25 极端暴雨泥石流属实。
+    //   岩性：主体为 Macigno 组砂岩—泥岩浊积岩（flysch），局部变质，仅公园最东缘有少量石灰岩 —— 正文
+    //   「砂岩-片岩、不是石灰岩」的定性成立（「片岩」是通俗简化，主体为浊积砂岩）。2026-09-10 核，verdict: ok。
     seeing:
       "The Cinque Terre on the Ligurian coast of northwestern Italy is five small villages close together — Monterosso, Vernazza, Corniglia, Manarola, Riomaggiore. Each is squeezed onto one of the few scraps of flat land at a stream mouth or into a rock crevice on the coastal cliff, coloured houses stacked in tiers. The steep slope behind each village is built into tiers of extremely narrow vine terraces by hundreds of kilometres of dry-stone wall. There is no real road between the villages, only a coastal railway and cliffside footpaths.",
     formation:
@@ -6899,6 +7088,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "tuscan-hills": {
+    // seeing / formation sources: 奥尔恰谷 2004 年列入 UNESCO 文化景观；「上新世古海留下的黏土、泥灰岩和砂」
+    //   与托斯卡纳盆地随亚平宁隆升出露的通行地质表述一致，calanchi 劣地成因未见因果颠倒。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "The Tuscan Hills on the western side of the Apennines are a gently rolling green (golden in summer) hill country divided by fields, vineyards, olive groves and rows of cypress — the Tuscany of postcards. South of Siena is a distinctive patch of \"clay hills\" (Crete Senesi), almost treeless, eroded by rain into gullies and whitish domes, looking lunar or desert-like.",
     formation:
@@ -6914,6 +7105,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "carso-karst": {
+    // seeing / formation / history sources: 「karst」一词源自的里雅斯特背后的 Carso / Kras 高原地名，为国际地质学界公认的
+    //   术语原产地（type locality）；蒂马沃河（Reka）潜入地下、在杜伊诺附近涌出为公认水文地质事实；
+    //   白垩纪浅海碳酸盐岩随阿尔卑斯-第纳尔造山抬升。一战伊松佐战线止于客观战史。
+    //   ✅ 零争议红线复核：跨境表述保持中性、不描述边界线、不表述主权，通过。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "The Carso Plateau at Italy's far northeast, north of the city of Trieste, is a limestone tableland two or three hundred metres high, extending east into Slovenia. This small plateau carries great weight in the history of geology — \"karst\" (the general term in many languages for limestone-dissolution landforms) comes from a place name here (Italian Carso / Slovenian Kras). The plateau surface has almost no rivers, is covered in funnel-shaped solution hollows and sinkholes, and below is a network of caves and underground rivers.",
     formation:
@@ -6929,6 +7124,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "alta-murgia": {
+    // seeing / formation / history sources: 阿尔塔穆拉人铀钍法定年约 13 万—17.2 万年前（正文「约 15 万年」落在区间内）；
+    //   上穆尔杰国家公园 2004-03-10 总统令设立；亚得里亚/阿普利亚前陆碳酸盐台地、构造稳定，gravina 干峡谷的
+    //   喀斯特成因未见因果颠倒。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "The Alta Murgia in Apulia in southeastern Italy is the higher part of the Murge limestone plateau, a few hundred metres in elevation. The surface is an endless expanse of loose rock and short grass — a semi-arid landscape called \"rocky steppe\", almost treeless, very windy. The plateau is cut by several deep, straight dry canyons (Italian gravina), dry most of the time and carrying water only briefly in storms. People have carved dwellings into the canyon walls since the Palaeolithic.",
     formation:
@@ -6944,6 +7142,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "gargano-promontory": {
+    // seeing / history sources: 最高点 Monte Calvo 1065 m（正文「约 1000 米」为合理取整）；石灰岩地垒 + 陆连岛成因为公认解释；
+    //   国家公园经 1991-12-06 第 394 号法律设立；翁布拉森林 2017 年列入 UNESCO「欧洲古老山毛榉林」扩展名录
+    //   （加尔加诺国家公园官网 parcogargano.it，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "The Gargano Promontory is the \"spur\" of the Italian \"boot\" — a block of upland jutting into the Adriatic from the coast of Apulia, up to about 1,000 m high. It is quite unlike the flat land around it in Apulia: a forest-covered limestone upland, its edges white sea cliffs, sea stacks and caves, its interior karst hollows and an ancient beech-and-oak forest (the Foresta Umbra). The northern coast has two large lagoons held back by sand bars (Lake Lesina, Lake Varano).",
     formation:
@@ -6959,21 +7160,31 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   marmolada: {
+    // seeing sources: 冰川面积：帕多瓦大学「参与式冰川调查」（联合意大利冰川学委员会与 ARPAV，**每年夏末 8–9 月发布**）—— 2022 年约 1.12 平方公里（已是 2000 年的一半）、2023 年约 1.00、2025 年约 0.92、**2026 年约 0.83**；2026 年一夏消退 23 米，是 2025 年 8 米的近三倍。级别 1（大学官方新闻稿）+ 2 级报道，2026-09-10 核。
+    //   https://www.unipd.it/news/marmolada-ghiacciaio-dimezzato-ultimi-25-anni
+    //   原文的「约 1.6 平方公里」约是 2000 年前后的数 —— **这类数字沿用二十年而不带年份，读者无从判断它有多旧**。⚠️ 每年 8–9 月回来刷新。
     seeing:
-      "Marmolada is the highest peak of the Dolomites, its summit Punta Penia 3,343 m. In a range known for white spires and walls, Marmolada is the only \"big block\" — a huge slab tilted to the south, with a near-1,000 m vertical wall on its south side and a relatively gentle slope on the north, covered by the only glacier in the Dolomites. This glacier has shrunk to about 1.6 km² and is retreating very fast.",
+      "Marmolada is the highest peak of the Dolomites, its summit Punta Penia 3,343 m. In a range known for white spires and walls, Marmolada is the only \"big block\" — a huge slab tilted to the south, with a near-1,000 m vertical wall on its south side and a relatively gentle slope on the north, covered by the only glacier in the Dolomites. This glacier is shrinking fast — annual surveys by the University of Padua put its area at about 1.12 km² in 2022 and about 0.83 km² by 2026.",
     formation:
       "Unlike most Dolomite peaks, which are dolomite, Marmolada is a single mass of grey limestone — a reef body at the edge of a Triassic carbonate platform that was not fully dolomitised, so it kept a grey colour and is also relatively more intact. Alpine mountain-building lifted this slab and tilted it south, and glaciers then scoured the concave north side, forming today's asymmetric cross-section of \"steep south wall, gentle north slope with a glacier\". The glacier, being small and marginal in both latitude and elevation, is extremely sensitive to warming.",
     observation:
       "From the air Marmolada is a distinctly larger, more continuous mass of rock among the Dolomite peaks, its south face a straight grey wall overlooking Lake Fedaia below, its north side a white glacier slope, the glacier's snout retreating uphill year by year and exposing fresh pale rock and rubble. There are crevasses and a few collapsed séracs on the ice. The summit has a cable-car station and weather and observation facilities.",
     distinguish:
       "Marmolada, compared with the Dolomite spires around it, has different rock (grey limestone versus pale dolomite), a different bulk (one mass versus separate towers), and is the only one in the range with a glacier. Compared with the large glaciers elsewhere in the Alps (the Mer de Glace, the Aletsch), it is far smaller, more marginal, and vanishing faster. To tell how long a glacier can survive, look at its size, its latitude and elevation, and how close it is to the snowline.",
+    // concept sources: 消失预测：CNR 旧预测「25–30 年内」（约 2040 年代中）→ Legambiente 2024 年报告给 **2040 年** → 2026 年调查的 Varotto 教授称若酷暑重复出现**可能只剩约十年**。级别 1（CNR 新闻稿）+ 2 级，2026-09-10 核。
+    //   https://www.cnr.it/it/comunicato-stampa/9125/tra-25-30-anni-il-ghiacciaio-della-marmolada-non-ci-sara-piu
+    //   **做法是写「预测点在提前」这个序列，而不是换一个新的单点** —— 单点会在下一份报告出来时再次过期，而「一直在提前」这件事本身是稳定的、也更接近读者需要知道的东西。
     concept:
-      "The Marmolada glacier is a sample for understanding \"the amplified response of a marginal glacier to climate\": a glacier that is small, thin and low stores little \"buffer\", and a slight rise in temperature or drop in snowfall makes it shrink far faster than a large glacier — because it is already on the minimum condition line for a glacier to exist. Such glaciers are the most sensitive indicators of climate change and the first to disappear. The Marmolada glacier is predicted to largely vanish around the middle of this century.",
+      "The Marmolada glacier is a sample for understanding \"the amplified response of a marginal glacier to climate\": a glacier that is small, thin and low stores little \"buffer\", and a slight rise in temperature or drop in snowfall makes it shrink far faster than a large glacier — because it is already on the minimum condition line for a glacier to exist. Such glaciers are the most sensitive indicators of climate change and the first to disappear. Estimates of when it will vanish keep moving earlier: older predictions pointed to mid-century, a 2024 glacier-monitoring report gave 2040, and researchers after the 2026 survey said that if hot summers like 2026 recur it may have only about a decade left.",
     history:
       "In the First World War Marmolada was a section of the Italian–Austro-Hungarian front, and Austro-Hungarian troops cut kilometres of tunnels and living space beneath the glacier (the \"City of Ice\") to shelter from shellfire and cold — these tunnels have been re-exposed in recent years as the glacier melts. After the war Marmolada developed as a skiing and climbing area. In July 2022 a large mass of ice above the glacier (a serac collapse) broke away in high temperatures, causing deaths among climbers and prompting wide discussion of the safety of high mountain glaciers.",
   },
 
   "lake-trasimeno": {
+    // seeing / formation sources: 面积约 128 km²、最大水深约 6 m（平均约 4.3 m）、亚平宁半岛最大湖（全国第四）
+    //   —— Treccani 百科（2 级）。波尔韦塞岛约 69.6 ha 为三岛最大（Maggiore 约 24 ha、Minore 约 5 ha）。
+    //   前 217 年特拉西梅诺湖战役为公认史实。⚠️ C8：这是浅水湖、水位年际波动极大，正文已用「随季节和年份的降水大幅涨落」
+    //   作口径限定，面积数字不再单独更新。2026-09-10 核，verdict: ok。
     seeing:
       "Lake Trasimeno in Umbria in central Italy is the largest lake on the Italian peninsula, about 128 km² — but it is remarkably shallow, only about 6 m deep at most, and waist-deep in many places. It has three small islands. Its shores are low and flat, ringed by hills, olive groves and a few medieval lakeside towns. Because it is shallow, the water rises and falls greatly with the seasons and the year's rainfall, and the shoreline is often on the move.",
     formation:
@@ -6989,8 +7200,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "dune-di-piscinas": {
+    // seeing sources: 沙丘高度：不写单一数字。3 级来源给 60 米与 100 米两说、均无监测年份；未找到 ISPRA / Regione Sardegna 的带时点实测值。属 C8「尺度也会过期」——用区间 + 机制代替裸数字。2026-09-10 核。
     seeing:
-      "The Dune di Piscinas on the \"Costa Verde\" in southwestern Sardinia is a large coastal dune field rare in Europe — ranks of golden sand ridges running several kilometres inland from the sea, the highest near 100 m. The dunes are sparsely grown with drought- and salt-tolerant juniper and marram grass, with more vegetation the further inland. For its size and its \"sand sea\" look it is called \"the Sahara of Sardinia\".",
+      "The Dune di Piscinas on the \"Costa Verde\" in southwestern Sardinia is a large coastal dune field rare in Europe — ranks of golden sand ridges running several kilometres inland from the sea, the tallest ridges tens of metres high — not a fixed figure, since the prevailing wind reshapes them every year and published values range from a few tens of metres to close to 100 m. The dunes are sparsely grown with drought- and salt-tolerant juniper and marram grass, with more vegetation the further inland. For its size and its \"sand sea\" look it is called \"the Sahara of Sardinia\".",
     formation:
       "The sand of Piscinas comes partly from debris brought down by rivers behind it — rivers that pass through the 19th-century Montevecchio–Ingurtosu mining district and washed large amounts of finely ground rock waste to the shore. Waves pile this sand and beach sand together onto the shore, and the prevailing west-to-southwest wind then blows the dry sand inland layer by layer, piling it high. The whole dune field is migrating slowly inland, gradually burying the juniper scrub behind it and a few abandoned mine buildings.",
     observation:
@@ -12103,6 +12315,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ South Korea ============
   "taebaek-mountains": {
+    // seeing sources: 太白山 1566.7 米（正文取整为 1567，3 级）。2026-09-10 核，本轮无需改动。
     seeing:
       "The Taebaek Mountains form the north-south spine along Korea's east coast, dividing the peninsula's landscape and climate; the range's namesake peak, Mount Taebaek, rises to 1,567 m.",
     formation:
@@ -12117,6 +12330,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The summit altar atop Mount Taebaek has long served as a site for sky-worship rites, one of the representative surviving traditions of mountain veneration on the Korean Peninsula.",
   },
   seoraksan: {
+    // seeing sources: 大青峰 1708 米、韩国第三高峰；1965 年天然纪念物、1982 年韩国首个 UNESCO 生物圈保护区（3 级）。正文没有写 1970 年的国家公园年份，但已写的两个年份都对。2026-09-10 核，本轮无需改动。
     seeing:
       "Seoraksan is South Korea's third-highest peak at 1,708 m, known for its granite peaks, deep-cut gorges, and clearly banded seasonal vegetation.",
     formation:
@@ -12131,6 +12345,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a Natural Monument protection area in 1965 and a UNESCO Biosphere Reserve in 1982, Seoraksan is one of the first mountain areas in Korea to receive systematic nature protection.",
   },
   jirisan: {
+    // seeing sources: 天王峰 1915 米、跨三道、1967 年韩国第一个国家公园（3 级）。**「韩国内陆最高峰」这个限定必要且正确**（汉拏山在济州岛，是全国最高峰）—— 正文写对了。2026-09-10 核，本轮无需改动。
     seeing:
       "Jirisan is the highest peak on mainland South Korea at 1,915 m, spanning three provinces; it became Korea's first national park in 1967.",
     formation:
@@ -12145,6 +12360,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Jirisan's designation as Korea's first national park in 1967 marked the starting point of the country's national park system.",
   },
   songnisan: {
+    // seeing sources: 天王峰 1058 m、1970 年韩国第 6 座国家公园（국립공원공단 knps.or.kr，1 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Songnisan is a relatively isolated massif in central Korea; its highest peak, Cheonhwangbong, reaches 1,058 m, and it became Korea's sixth national park in 1970.",
     formation:
@@ -12159,6 +12375,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Beopjusa Temple at the mountain's foot traces its founding to the Silla period, and preserves important Buddhist heritage including a rock-cut standing Buddha.",
   },
   deogyusan: {
+    // seeing sources: 香积峰 1614 m、南韩第四高峰；1975 年与五台山同批列为第 10 个国家公园
+    //   （국립공원공단 1 级 + 한국민족문화대백과사전 2 级）。2026-09-10 核，verdict: ok。
     seeing:
       "Deogyusan is South Korea's fourth-highest peak at 1,614 m, designated the country's tenth national park in 1975.",
     formation:
@@ -12173,6 +12391,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Muju area at the mountain's foot developed into one of Korea's earliest alpine ski resorts from the mid-20th century, an important site in the history of Korean winter sports.",
   },
   hallasan: {
+    // seeing sources: 汉拏山 1947 米（国土地理情报院 2005 年测量、2008 年公布 1947.269 米；KIGAM 激光雷达 1947.06 米，级别 2 转述）。UNESCO「Jeju Volcanic Island and Lava Tubes」2007 年列入，**由三个要素组成**（拒文岳熔岩洞系统 + 城山日出峰 + 汉拏山国家公园山顶区）—— 正文说汉拏山是「核心组成部分」措辞略强，但它确是其中面积与知名度最大的要素，**判定不构成事实错误、不改**。2026-09-10 核。
     seeing:
       "Hallasan, South Korea's highest peak at 1,947 m, is the shield volcano at the centre of Jeju Island; its summit crater lake, Baengnokdam, formed where water pooled in the caldera.",
     formation:
@@ -12189,8 +12408,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "jeju-island": {
     seeing:
       "Jeju Island, South Korea's largest island, was built entirely by basaltic volcanic activity; 368 small parasitic cones known as oreum dot the island, and its coastline is known for lava landforms and tuff sea-cliffs.",
+    // formation sources: 火山分期：济州道世界地质公园官方页 —— 约 180 万年前起水成火山活动 → 中更新世（约 40–80 万年前）转为熔岩溢流为主、形成熔岩台地 → **全新世中期（数千年前）仍有水成火山喷发**（城山日出峰、松岳山等）→ 有记录的最近一次活动约在千年前。级别 1，2026-09-10 核。
+    //   https://www.jeju.go.kr/geopark/park/jejuintro/volcanic.htm
+    //   **原文两处都错**：① 「25 万年前」这个终点查无官方来源，疑似把「寄生火山锥形成于 120 万至 25 万年前」误套到了「岛屿主体」上；② **因果说反** —— 城山日出峰是约 5000 年前一次水成火山喷发**堆出来的凝灰岩锥**，海蚀只是后来把它削出崖面，不是「火山活动结束后由海蚀塑造出的地貌」。**这是 C7 的又一例。**
+    //   368 座오름（Invest Korea 官方页，级别 2）、「单一火山周边寄生火山锥数量之最」（同一官方页原话）、2010 年 UNESCO 世界地质公园（IGGP 官方，级别 1）：均核实无误。
     formation:
-      "The island's main body formed through repeated basaltic eruptions between roughly 1.8 million and 250,000 years ago; after volcanism ceased, sea erosion of the coastal lava layers carved landforms such as the tuff sea-cliffs of Seongsan Ilchulbong.",
+      "Jeju's volcanic activity began about 1.8 million years ago and built the island up through several stages of basaltic eruption, with eruptions continuing until a few thousand years ago. Seongsan Ilchulbong is one of the later ones — a tuff cone thrown up by a hydrovolcanic eruption around 5,000 years ago, which the waves then cut back into the sea cliff seen today.",
     observation:
       "From the air, the island is roughly oval, with Hallasan rising at its centre and numerous low, rounded parasitic cones scattered around it; on the east coast, Seongsan Ilchulbong juts into the sea like a great green crown.",
     distinguish:
@@ -12203,8 +12426,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   ulleungdo: {
     seeing:
       "Ulleungdo is a Quaternary volcanic island in the waters east of the Korean Peninsula; its highest point, Seonginbong, reaches 984 m, and it is the emergent summit of a stratovolcano rising roughly 3,000 m from the seafloor.",
+    // formation sources: 起始年代：**郁陵岛自身的火山活动始于约 250 万年前**（郁陵郡官方 + 《数字郁陵文化大典》，级别 1/2；史密森尼全球火山活动计划给 2.7 Ma–0.01 Ma 佐证）；原文的 460 万年是该海域内**另一处火山地质体**的年代，被张冠李戴。2026-09-10 核。
+    //   https://ulleung.grandculture.net/ulleung/toc/GC01500385
+    //   **零争议红线本轮逐句检查：通过** —— `seeing` / `formation` / `observation` / `distinguish` / `concept` / `history` 全六段**未出现独岛、竹岛，也没有「附近有 X 岛」这类指向性表述**。圣人峰 984 米、纳里破火山口全新世早期喷发的火山灰远至日本本州中部沉积：均核实无误。
     formation:
-      "The island built up through multiple phases of submarine and subaerial eruption from about 4.6 million to roughly 5,000 years ago, with volcanic rock consisting mainly of trachyte, andesite, and basalt.",
+      "The island built up through multiple phases of submarine and subaerial eruption from about 2.5 million to roughly 5,000 years ago, with volcanic rock consisting mainly of trachyte, andesite, and basalt.",
     observation:
       "From the air, Ulleungdo's outline is steep and compact; at its centre, the Nari Basin is a well-preserved caldera landform ringed by high volcanic walls.",
     distinguish:
@@ -12215,20 +12441,36 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Ulleungdo's volcanic record spans several million years, with its most recent eruption roughly 5,000 years ago; the Nari Basin remains a key site for studying the island's volcanic evolution.",
   },
   "haean-basin": {
+    // seeing sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条踩线了，已按红线删掉战史归因**：原文写「被**朝鲜战争期间的联合国军**称为 Punchbowl」，现在只保留「俗称 Punchbowl」这个事实本身。2026-09-10 核。
+    //   尺寸：南北长约 10 公里、东西宽约 7 公里（韩国民族文化大百科事典，级别 2）—— 原文的「直径约 5 公里」约为实际的一半。
+    //   https://encykorea.aks.ac.kr/Article/E0062645
+    //   **成因本轮专门核过：正文写对了** —— 韩国地质资源研究院（KIGAM）明确写明是前寒武纪片麻岩被侏罗纪花岗岩侵入、花岗岩抗风化更弱而被优先侵蚀掏空形成的**差异侵蚀盆地**，**不是陨石坑也不是火山口**（级别 1）。
+    //   https://mgeo.kigam.re.kr/geoinfo/mt_geomorph/report/ch_16_0.html
+    //   盆地比周边山地低约 400–800 米，正文的「500 至 800 米」在取值范围内、判定不改。
     seeing:
-      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon Province, about 5 km across; its bowl-like shape led UN forces during the Korean War to nickname it the \"Punchbowl.\"",
+      "The Haean Basin is a roughly oval erosional basin in Yanggu County, Gangwon Province, roughly 10 km north-south and 7 km east-west; its bowl-like shape has given it the nickname \"Punchbowl\".",
     formation:
       "The basin's centre is Jurassic granite while its rim is Precambrian metamorphic rock; the difference in weathering resistance between the two is thought to have shaped the basin, with the more easily eroded granite hollowed out at the centre and the harder rock left standing as the surrounding ridge.",
     observation:
       "From the air, the basin forms a neat, roughly oval depression, ringed by ridges rising 500–800 m above its floor; villages and fields are laid out neatly on the basin floor, contrasting sharply with the steep terrain around it.",
+    // distinguish sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **同一条红线问题在这个条目里出现了三次**（`seeing` 的战史归因、`history` 的整句、`distinguish` 的定位），三处都已改。
+    //   **这一条不是核实方报的，是我在处理韩国批之后对全库做 `朝鲜战争 / Korean War / 军事分界线 / Military Demarcation / 非军事区 / DMZ / 38 度 / 停战` 的正则扫描扫出来的** —— 核实方只看它那一批的 14 个条目，扫全库才发现同一类表述还散在别处。**「派一批去核」和「把这一类在全库搜一遍」是两件事。**
     distinguish:
-      "The Haean Basin and Yongneup on Mt. Daeam are both in the Gangwon mountains near the Military Demarcation Line, but the Haean Basin is a large-scale erosional basin, while Yongneup is a small high-altitude peat moor.",
+      "The Haean Basin and Yongneup on Mt. Daeam are both in the mountains of northern Gangwon, but the Haean Basin is a large-scale erosional basin, while Yongneup is a small high-altitude peat moor.",
     concept:
       "The Haean Basin's bowl-shaped depression, formed by differential weathering, is a clear example of how contrasting rock resistance shapes basin topography.",
+    // history sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条整句踩线，已按红线替换**：原句写「邻近朝鲜战争期间形成的军事分界线」「别称源自朝鲜战争时期联合国军的战地记录」—— 两处都是战史。替换句只写可核实的地貌与生境事实（盆底农田、山脊围合、人为活动受限带来的生境保存），**不勉强补一段新的历史内容**。2026-09-10 核。
     history:
-      "The basin's northern edge lies near the Military Demarcation Line established during the Korean War, and its nickname \"Punchbowl\" originates from UN forces' wartime field records.",
+      "The basin floor is open farmland ringed by ridges, and long-standing limits on development have left the surrounding wetland and woodland habitat relatively intact.",
   },
   "yongneup-daeamsan": {
+    // seeing / history sources: 1997-03-28 与牛浦沼同批登记为韩国首批拉姆萨尔湿地；面积 7,490 ㎡、海拔约 1280 m
+    //   （문화체육관광부 + 인제군 官网，均 1 级）。
+    //   ✅ 零争议红线逐句复核：全六段未出现朝鲜战争 / 军事分界线 / DMZ / 南北对立 / 「最北端」类表述，通过。
+    //   2026-09-10 核，verdict: ok。
     seeing:
       "Yongneup, on the northwest slope of Mt. Daeam at 1,280 m elevation, is a high-altitude peat moor covering about 7,490 m², the only site in Korea preserving a peat layer.",
     formation:
@@ -12253,8 +12495,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Cheorwon Lava Plateau and Juwangsan Gorge both display columnar jointing, but the Cheorwon plateau formed from solidified basalt lava flows later re-incised by a river, while Juwangsan Gorge formed from a river eroding rhyolitic tuff.",
     concept:
       "The Cheorwon Lava Plateau shows a two-stage landform evolution — lava accumulating along an ancient valley, then a new river course cutting back into it — making it an important case for studying Quaternary basalt plateau formation.",
+    // history sources: **零争议红线**（`CLAUDE.md`）：`history` 段不碰现代政治 / 领土 / 宗教 / 族群评价；可能有争议 → **删或换中性表述**。
+    //   **这一条踩线了，已按红线删句**（不是改写）：原 `history` 段后半句写「这一区域也是朝鲜战争期间军事活动的历史地点之一」—— 条目就在非军事区一带，按仓库口径这类叙述一律不写。2026-09-10 核。
+    //   UNESCO 官方名是 **Hantangang UNESCO Global Geopark**，2020 年认定（级别 1）；正文原来把「汉滩江熔岩地貌」这句描述当成专名放进了引号，已订正。
+    //   https://www.unesco.org/en/iggp/hantangang-unesco-global-geopark
+    //   熔岩源出的오리산（454 米）在韩文资料里标注为休眠火山，第四纪曾十余次喷发、熔岩向南流约 95 公里（另有「逾 110 公里」的口径，属统计方式不同）；`seeing`/`formation`/`observation`/`distinguish`/`concept` 五段逐句检查**未见军事或政治内容，通过**。
     history:
-      "In 2020 the \"Hantangang River volcanic landforms\" were designated a UNESCO Global Geopark; the area was also a site of military activity during the Korean War.",
+      "In 2020 the Hantangang area was designated a UNESCO Global Geopark.",
   },
   "charyeong-mountains": {
     seeing:
@@ -12263,14 +12510,19 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The range's bedrock is mainly old metamorphic rock and granite; over a long geological span, weathering and erosion have worn down what may once have been a taller range into today's low, rounded hills.",
     observation:
       "From the air, the Charyeong Mountains roll gently, their peaks low and rounded, transitioning without sharp relief into the surrounding plains and hills — a classic example of mature, worn-down mountain topography.",
+    // distinguish sources: 车岭山脉的地质学地位有分歧：该名出自 1903 年一套按地下岩性划分的传统山脉体系，与分水岭不重合；现代地形学倾向视为残丘群。**只查到 3 级转述**（韩国国土研究院 2005 年山脉地图原件未找到官方链接），故正文只写「学界有分歧」，不写年份、不下结论。下一轮若找到官方地图可再收紧。2026-09-10 核。
     distinguish:
-      "The Charyeong Mountains and the Taebaek Mountains are both structural backbones of the Korean Peninsula, but the Charyeong range is lower and gentler, while the Taebaek Mountains are comparatively tall and steep.",
+      "The Charyeong Mountains are often mentioned alongside the Taebaek Mountains, but the two do not stand on equal geological footing: the Taebaek range is a recognised structural range, while whether Charyeong counts as an independent range at all is still disputed among Korean geomorphologists, some of whom read it instead as a belt of low residual hills left by long weathering. In form, Charyeong is the lower and gentler of the two, the Taebaek Mountains comparatively tall and steep.",
     concept:
       "The low, rounded form of the Charyeong Mountains is a classic case for studying how ancient mountain ranges wear down toward peneplanation through long-term weathering and erosion.",
+    // history sources: 「湖西 / 湖南 的分界」是错的：车岭整条在忠清南道境内。《择里志》讲的是忠清道内部南北之分。湖西/湖南 称谓的由来本身有碧骨堤、义林池、锦江几种说法，学界无定论，故正文不断言其分界。2026-09-10 核。
     history:
-      "The Charyeong Mountains have historically marked the natural boundary between Korea's traditional geographic regions of Hoseo (Chungcheong) and Honam (Jeolla), a distinction still used in Korean geographic culture today.",
+      "The 18th-century geography Taengniji records the Charyeong Mountains as a traditional divide within Chungcheong itself — the country south of the range leaning toward Jeolla, the country north of it toward Gyeonggi — and that internal line still shows up in local geographic usage.",
   },
   wolchulsan: {
+    // seeing / formation sources: 天皇峰 809 m；1988-06-11 第 20 个国家公园、面积 56.22 km² 为韩国最小；
+    //   梅峰—蛇长峰间「云桥」悬索桥现桥 2006 年启用（월출산국립공원 官网 1 级 + 한국민족문화대백과사전 2 级）。
+    //   花岗岩差异风化 / 球状风化成因为韩国花岗岩地貌研究的通行解释。2026-09-10 核，verdict: ok。
     seeing:
       "Wolchulsan is a cluster of granite peaks rising abruptly from the surrounding flatland; its highest peak, Cheonhwangbong, reaches 809 m, and in 1988 it became Korea's smallest national park.",
     formation:
@@ -12285,6 +12537,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Wolchulsan has long been regarded as a notable mountain of south-western Korea for its striking isolated-peak scenery; the temples and rock-cut Buddha images on its slopes record a long local Buddhist tradition.",
   },
   "suncheon-bay-wetland": {
+    // seeing sources: 2006-01-20 列入拉姆萨尔（韩国首个滨海湿地站点）；2021 年 UNESCO「Getbol, Korean Tidal Flats」列入，顺天湾属最初四个组成部分之一（级别 1）。**正文的「作为……的组成部分」这个限定必要且正确** —— 系列遗产不能写成整体列入。2026-09-10 核，本轮无需改动。
+    //   https://whc.unesco.org/en/list/1591/
     seeing:
       "Suncheon Bay Wetland is an estuarine wetland made up of a stream, tidal flats, and reed beds; in 2006 it became Korea's first coastal wetland listed under the Ramsar Convention.",
     formation:
@@ -12299,6 +12553,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 2021 the Suncheon Bay tidal flat was inscribed on the UNESCO World Heritage List as a component of the transboundary \"Getbol, Korean Tidal Flats\" series.",
   },
   "byeonsan-peninsula-coast": {
+    // seeing / history sources: 1988 年韩国第 19 个国家公园；官方自述为「국내 유일의 반도형 국립공원」
+    //   （国内唯一的半岛型国家公园），与正文「唯一将山地与海岸纳入同一座国家公园」一致（knps.or.kr，1 级）。
+    //   2026-09-10 核，verdict: ok。
     seeing:
       "The Byeonsan Peninsula Coast is home to Korea's only national park combining mountain and coastal scenery; the layered sea cliffs at Chaeseokgang are its most distinctive feature.",
     formation:
@@ -12313,6 +12570,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "In 1988 the Byeonsan Peninsula was designated a national park, the only case in Korea where mountain and coastal landscapes are combined within a single national park.",
   },
   "taean-coast-dunes": {
+    // seeing sources: 泰安海岸国立公园 1978 年设立（韩国第 13 个）、海岸线约 230 公里；新斗里沙丘为韩国最大规模海岸沙丘（3 级）。2026-09-10 核，本轮无需改动。
     seeing:
       "The Taean Coast is a roughly 230-km stretch of shoreline on the west coast, designated a national park in 1978; the Sinduri area preserves Korea's largest coastal dune field.",
     formation:
@@ -12327,6 +12585,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Designated a national park in 1978, the Taean Coast is one of Korea's earliest coastal-type national parks.",
   },
   "hallyeohaesang-marine-park": {
+    // seeing / history sources: 1968-12-31 设立，为韩国第 4 个国家公园、但确系**首座海上**国家公园
+    //   （knps.or.kr 1 级 + 한국민족문화대백과사전 2 级）。溺谷型多岛海的描述与官方一致。2026-09-10 核，verdict: ok。
     seeing:
       "Hallyeohaesang Marine National Park is a stretch of Korea's southern coastal waters scattered with hundreds of islands; established in 1968, it was Korea's first marine national park.",
     formation:
@@ -12341,6 +12601,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The park's name combines Hansan-do and Yeosu; its waters preserve the sites of naval battles between the Joseon navy and Japanese forces, an important location in Korea's maritime history.",
   },
   "daegwallyeong-highland": {
+    // seeing / observation sources: 隘口海拔 1100–1400 m、三阳牧场、风力发电机、连接岭东岭西的通道 —— 与既有地理资料一致，
+    //   未见冲突（3 级，未找到 1 级实测口径）。
+    //   ✅ 零争议红线逐句复核（本条位于太白山脉岭东岭西一带，为红线重点条目）：全六段未出现军事 / 分断 /
+    //   边界管制 / 战争 / 「最北端」类表述，也未把生态保存归因于军事管制，通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Daegwallyeong highland pastures occupy a mountain pass in the Taebaek Mountains at roughly 1,100–1,400 m elevation; Samyang Ranch is the largest of the pastures there.",
     formation:
@@ -12355,6 +12619,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Daegwallyeong has long served as a key mountain passage linking the Yeongdong and Yeongseo regions of Gangwon Province; today's ranches and wind farms continue this area's historic role as a hub for transport and resource use.",
   },
   "honam-plain": {
+    // seeing / formation sources: 面积约 3500 km²、韩国最重要稻米产区 —— 3500 km² 与「半岛最大平原」这两项被
+    //   익산 향토문화전자대전（2 级）等多方一致引用，但**均未标注测算年份与机构口径**，未找到 1 级来源。
+    //   平原边界相对稳定、不属易过期量，故正文不改；下一轮若找到国土地理情报院口径再补年份。2026-09-10 核，verdict: ok（口径待补）。
     seeing:
       "The Honam Plain is the largest plain on the Korean Peninsula, covering about 3,500 km², and Korea's most important rice-producing region.",
     formation:
@@ -12369,6 +12636,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The ancient Byeokgolje reservoir within the plain is believed to date to the Three Kingdoms period and is among the earliest known large-scale irrigation works on the Korean Peninsula, testifying to this region's long history of rice cultivation.",
   },
   "nakdong-estuary-eulsukdo": {
+    // seeing / history sources: 正文未断言河口堰的运行状态，不构成事实错误。
+    //   ⚠️ 待补（C8）：洛东江河口堰自 2019 年起分阶段试验开闸放海水、2022 年起大潮期常态化开闸
+    //   （기후에너지환경부，1 级）—— 这是一个正在变的量，当前条目完全未提及。**下一轮补一句带时点的表述**，
+    //   这一轮不编。沙洲面积同样未找到带监测时点的官方值。2026-09-10 核，verdict: ok（有待补项）。
     seeing:
       "The Nakdong River Estuary is a braided delta formed where the Nakdong River meets the coast; Eulsukdo is the largest of its sandbars.",
     formation:
@@ -12385,18 +12656,23 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "han-river": {
     seeing:
       "The Han River rises in the Taebaek Mountains and runs about 508 km through Seoul, South Korea's capital, making it one of the most important rivers in central Korea.",
+    // formation sources: 源头：**南汉江发源于太白山脉（太白市境内），北汉江源出金刚山一带**，原文的「分别发源于太白山脉不同支脉」对北汉江不成立。3 级，2026-09-10 核。
+    //   https://en.wikipedia.org/wiki/Bukhan_River
+    //   **改法是只写南汉江的源头、不写北汉江的源头** —— 既订正了事实，又避免在正文里描述朝鲜半岛北段的地理归属（零争议红线）。
+    //   汉江全长 508 公里；`distinguish` 段只涉及汉江的传统主源，未断言北汉江也发源于太白山脉，**属可接受的简化、判定不改**。
     formation:
-      "The Han River's upper course splits into the Namhan (South Han) and Bukhan (North Han) branches, each rising from a different spur of the Taebaek Mountains; the two meet at Yangsu-ri (Dumulmeori) to form the main Han River, which then flows west through Seoul to the Yellow Sea.",
+      "The Han River's upper course splits into the Namhan (South Han) and Bukhan (North Han) branches, the Namhan rising in the Taebaek Mountains; the two meet at Yangsu-ri (Dumulmeori) to form the main Han River, which then flows west through Seoul to the Yellow Sea.",
     observation:
       "From the air, the two Han River branches meet at Yangsu-ri in a Y-shaped confluence; the water is broad and calm, and the green sandbar at the junction, together with the hills on either bank, forms a layered river-valley scene.",
     distinguish:
       "The Han River and the Nakdong River both rise in the Taebaek Mountains, but the Han flows west through Seoul to the Yellow Sea, while the Nakdong flows south through the Yeongnam region to Korea's south-eastern coast.",
     concept:
-      "The confluence of the Han River's two main branches is a classic case for studying how the Korean Peninsula's river systems are organised around the Taebaek Mountains as a watershed.",
+      "The Han River forms its main channel where two branches rising in different source areas meet — a classic case for understanding how a large river is assembled from separate headwaters.",
     history:
       "The rapid urbanisation and economic development along the Han River in Seoul during the late 20th century is often referred to as the \"Miracle on the Han River,\" a phrase now a common shorthand in accounts of Korea's modernisation.",
   },
   "nakdong-river": {
+    // seeing sources: 洛东江发源于太白市（太白山脉范围内）、全长 510 公里、**完全流经韩国境内的最长河流**（3 级）。**「韩国境内最长」这个限定必要且正确** —— 正文写对了，与汉江条目不冲突。2026-09-10 核，本轮无需改动。
     seeing:
       "The Nakdong River rises in the Taebaek Mountains and runs about 510 km, making it the longest river in South Korea; it flows past several major cities in the Yeongnam region.",
     formation:
@@ -12411,6 +12687,8 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Nakdong River valley has long been a centre of population and culture in the Yeongnam region; historic riverside settlements such as Hahoe Village in Andong record this area's long cultural tradition.",
   },
   "geum-river": {
+    // seeing sources: 国家河川段 397.79 km（금강홍수통제소 geumriver.go.kr，1 级），常见口径 397–401 km；
+    //   正文「约 397 公里」与「第三长河」均在可接受范围内。2026-09-10 核，verdict: ok。
     seeing:
       "The Geum River rises in the Sobaek Mountains and runs about 397 km, Korea's third-longest river; the stretch flowing past Buyeo, the former capital of Baekje, is known as the Baengmagang (\"White Horse River\").",
     formation:
@@ -12424,7 +12702,13 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     history:
       "The Buyeo area was the site of the later capital of the Baekje kingdom; Nakhwaam is traditionally said to be the cliff from which palace women leapt to their deaths as Baekje fell, an important site in the Korean Peninsula's ancient history.",
   },
-  "hoeryongpo-andong-meander": {
+  "hahoe-andong-meander": {
+    // id 更名留痕（2026-09-10）：原 id 为 `hoeryongpo-andong-meander`，但 nameZh / nameEn / landmark / bbox / source
+    //   与全六段正文自始至终讲的都是**安东河回村**（洛东江干流曲流、芙蓉台、2010 年与良洞村同批列入 UNESCO
+    //   「韩国历史村落」）。回龙浦（醴泉郡，洛东江支流内城川）是韩国地理教科书里**另一处**同样著名的嵌入曲流范例，
+    //   两者常被并列对比、但不是同一处。正文逐句核对与河回村事实吻合、不改；只把 id 里那个错配的专名改掉，
+    //   免得下一轮核实的人再为「回龙浦」白跑一趟（本轮就发生了）。参照：국가유산청「名胜 醴泉回龙浦」（1 级）。
+    //   seeing / history sources: 2010 年河回村与庆州良洞村列入 UNESCO 世界遗产「韩国历史村落」。verdict: ok。
     seeing:
       "The Hahoe (Andong) meander is a horseshoe-shaped incised meander cut by the Nakdong River into granite bedrock, with the river wrapping around three sides of Hahoe Village.",
     formation:
@@ -12439,6 +12723,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Hahoe Village, a well-preserved traditional settlement on the terrace inside the meander, was inscribed on the UNESCO World Heritage List in 2010 together with Yangdong Village in Gyeongju as the \"Historic Villages of Korea.\"",
   },
   "sogeumgang-gorge": {
+    // seeing / formation sources: 구룡폭포沿청학동소금강溪谷约 3 km 分布 9 个大小瀑布、瀑潭深约 13 m，与「九级连瀑」一致；
+    //   花岗岩节理差异侵蚀为标准解释（한국민족문화대백과사전 2 级 + 韩国观光公社 2 级）。
+    //   ✅ 零争议红线：两处提及「金刚山」仅为命名类比（传统上以本地名山比拟金刚山以彰显秀丽），未涉主权 / 军事 /
+    //   南北对立，通过。2026-09-10 核，verdict: ok。
     seeing:
       "Sogeumgang Gorge, within Odaesan National Park, is a deep-cut granite gorge named for scenery said to rival that of Mount Kumgang in the northern Korean Peninsula.",
     formation:
@@ -12453,8 +12741,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The name \"Sogeumgang\" (\"Little Kumgang\") reflects a traditional Korean naming convention of comparing a local scenic mountain to Mount Kumgang in the north to highlight its beauty.",
   },
   "juwangsan-gorge": {
+    // seeing sources: UNESCO 世界地质公园：2017-05-05 认定，主体是「青松 UNESCO 世界地质公园」、周王山为其片区之一；2014 年先获认定为韩国国家地质公园。原文的 2003 年查无出处。UNESCO IGGP 官方页（1 级）。2026-09-10 核。
     seeing:
-      "Juwangsan Gorge is cut into rhyolitic tuff formed by a volcanic eruption roughly 70 million years ago; in 2003 Juwangsan became a UNESCO Global Geopark.",
+      "Juwangsan Gorge is cut into rhyolitic tuff formed by a volcanic eruption roughly 70 million years ago; the surrounding Cheongsong area was designated a UNESCO Global Geopark in 2017.",
     formation:
       "The gorge's bedrock is rhyolitic tuff, consolidated from pyroclastic material deposited during a major Late Cretaceous eruption; the Juwang Stream has long eroded along the rock's joints, carving the steep quartz-rich cliffs and isolated rock peaks on either side.",
     observation:
@@ -12464,9 +12753,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
     concept:
       "The formation of Juwangsan's rhyolitic tuff gorge is an important case for studying how river erosion of acidic pyroclastic rock produces isolated peaks and gorge landforms.",
     history:
-      "In 2003 Juwangsan was designated a UNESCO Global Geopark for its distinctive volcanic geological heritage, one of the earlier areas in Korea to receive this international geological-heritage recognition.",
+      "In 2017 the Cheongsong area, Juwangsan included, was designated a UNESCO Global Geopark for volcanic geological heritage such as its spherulitic rhyolite, having already been certified a national geopark in 2014; it was the second such designation in Korea, after Jeju.",
   },
   "soyang-lake": {
+    // seeing sources: 昭阳江大坝 1967-04-15 动工、1973-10-15 竣工，总库容约 29 亿立方米，韩国库容最大的水库（3 级 + 2 级转述）。**正文写明是「人工水库」，没有与天然湖混用口径** —— 本轮专门核过这一点。2026-09-10 核，本轮无需改动。
     seeing:
       "Soyang Lake is an artificial reservoir created in 1973 by damming the Soyang River, holding roughly 2.9 billion m³ of water — Korea's largest reservoir by capacity.",
     formation:
@@ -12481,6 +12771,7 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Soyang Dam was begun in 1967 and completed in 1973, serving flood control, water supply, and hydropower generation — a significant project in the history of 20th-century Korean water infrastructure.",
   },
   "gyeongpo-lagoon": {
+    // seeing sources: 镜浦湖约 6000 年前原为海湾，沙嘴在湾口堆积逐渐封闭形成潟湖（3 级）—— **成因方向与正文一致，本轮专门核过**。2026-09-10 核，本轮无需改动。
     seeing:
       "Gyeongpo Lagoon, on Korea's east coast, is a lagoon formed where a coastal sandbar closed off a bay; its name means \"lake as clear as a mirror.\"",
     formation:
@@ -14785,8 +15076,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
   // ============ Turkey ============
   "toros-mountains": {
+    // seeing sources: 托罗斯最高峰：2008 年 HGM + 土耳其登山联合会 GPS 复测把最高点从德米尔卡泽克（3756 m）改到克孜勒卡亚（3771.418 m）。**只查到 2 级转引 HGM，PeakVisor 另给 3767 m** —— 故正文写「约 3770 米」不写死精确值。属 C8「海拔也会过期」。2026-09-10 核。
     seeing:
-      "The Taurus Mountains form an arcing range along Turkey's southern Mediterranean coast, separating the coastal lowlands from the Central Anatolian Plateau, running over 1,500 km with the range's highest peak, Demirkazık, at 3,756 m.",
+      "The Taurus Mountains form an arcing range along Turkey's southern Mediterranean coast, separating the coastal lowlands from the Central Anatolian Plateau, running over 1,500 km; its highest peak is Kızılkaya in the Aladağlar massif, about 3,770 m — before a 2008 GPS resurvey that distinction was long assigned to neighbouring Demirkazık, at 3,756 m.",
     formation:
       "The range is part of the Alpine-Himalayan orogenic belt, folded and uplifted by long-term collision between the African plate and the Anatolian block; it is predominantly limestone, with extensive karst development including caves and underground rivers.",
     observation:
@@ -14799,6 +15091,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The range has long been a natural barrier for north-south movement across the Anatolian peninsula; several passes historically served as traditional routes for caravans and armies, and numerous ancient settlement remains survive in the mountains.",
   },
   "pontus-mountains": {
+    // 全六段 sources: 阿尔卑斯—喜马拉雅带构造归属、东段（卡奇卡尔一带）更高更冰蚀化、迎风坡多雨森林更密、
+    //   本都王国古代史 —— 逐段交叉核对未见数字硬伤（3 级，未找到 MTA 一手页面）。
+    //   ✅ 零争议红线：未涉及东南安纳托利亚 / 库尔德议题，通过。2026-09-10 核，verdict: ok。
     seeing:
       "The Pontic Mountains run along Turkey's Black Sea coast, named for the ancient region of Pontus; the range rises abruptly from the shoreline, separating the humid Black Sea coast from the arid Central Anatolian Plateau.",
     formation:
@@ -14821,14 +15116,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the air, the plateau shows broad, gently undulating terrain interwoven with farmland and steppe; interior lakes such as Lake Tuz display a distinct white salt crust during the dry season, contrasting sharply with the darker mountains around the rim.",
     distinguish:
       "Unlike young orogenic plateaus such as the Qinghai-Tibet Plateau, the Central Anatolian Plateau has gentler terrain made up mostly of separate interior drainage basins rather than continuous highland, and receives far less rainfall than the surrounding mountains.",
+    // concept sources: 年降水：MGM 科尼亚站 1991–2020 平年值 326 mm（1 级）；综述文献给高原内部 300–500 mm。原文「仅 200–300 毫米」低于实测均值。写平年值时段而不是单一年份——气候平均值每十年换一版，不属 C6d。2026-09-10 核。
     concept:
-      "The plateau receives only 200 to 300 mm of rainfall annually, but most falls in winter and infiltrates to recharge groundwater, supporting both rain-fed and irrigated agriculture — a classic sample for understanding water use in semi-arid plateau regions.",
+      "The plateau typically receives 250 to 400 mm of rainfall a year (Konya's 1991–2020 average is 326 mm, MGM), but most falls in winter and infiltrates to recharge groundwater, supporting both rain-fed and irrigated agriculture — a classic sample for understanding water use in semi-arid plateau regions.",
     history:
       "The plateau has a long history of human settlement dating to the Neolithic (as at Çatalhöyük in the Konya Basin), passing through Hittite, Roman, Byzantine, Seljuk and Ottoman periods; Ankara has been the capital of the Republic of Turkey since 1923.",
   },
   aladaglar: {
+    // seeing sources: 同 toros-mountains：最高峰是克孜勒卡亚而非德米尔卡泽克（2008 HGM GPS 复测，2 级转引）。德米尔卡泽克连阿拉达山地自身最高峰都不是。2026-09-10 核。
     seeing:
-      "The Aladağlar massif is a high mountain block in the eastern Taurus range; Aladağlar National Park, established in 1995, averages about 3,500 m in elevation, with the highest peak, Demirkazık, reaching 3,756 m — the Taurus system's highest point outside its western section.",
+      "The Aladağlar massif is a high mountain block in the eastern Taurus range; Aladağlar National Park, established in 1995, averages about 3,500 m in elevation, with the highest peak, Kızılkaya, at about 3,770 m — the highest point in the whole Taurus system; neighbouring Demirkazık, at 3,756 m, held that distinction until a 2008 GPS resurvey.",
     formation:
       "The massif is composed of interwoven limestone, marble and volcanic rock, sculpted by regional uplift and glacial action; it is steep and rugged, preserving multiple glacial lakes and U-shaped valleys.",
     observation:
@@ -14841,6 +15138,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Historically used as seasonal high-altitude pasture by local herders, the massif became a major base for mountaineering and rock climbing in Turkey after the national park was established in 1995.",
   },
   "kackar-mountains": {
+    // seeing sources: 卡奇卡尔峰高程**两说并存** —— 多数土耳其媒体给 3937 m，另有国家公园相关资料给 3932 m，
+    //   均为 3 级、未见 HGM 权威值。5 米之差落在测量口径差异内，**正文保留 3937 不改**（比照伯尔尼纳峰 4048/4049 那一例：
+    //   同一测量的不同取整，不该靠 3 级来源推翻）。「距黑海海岸约 40 公里」与检索到的 40–50 km 区间吻合。
+    //   2026-09-10 核，verdict: ok（两个值都记在这里，下一轮别再改一遍）。
     seeing:
       "The Kaçkar Mountains form the highest section of the eastern Pontic range, with the summit of Mount Kaçkar reaching 3,937 m and its high plateau areas around 3,000 m, only about 40 km from the Black Sea coast.",
     formation:
@@ -14855,14 +15156,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The mountains have historically been home to Laz and Georgian communities, with stone-built highland shelters and old trails still surviving; today the range is a major hiking destination in Turkey.",
   },
   "mount-ararat": {
+    // seeing sources: 官方名：Ağrı Dağı。原文「阿厄勒达」是打乱字序的错误音译，改为原文名 + 通行中文名并列，不生造音译。英文侧本来就用 Ağrı Dağı、未动。2026-09-10 核。
     seeing:
       "Mount Ararat is Turkey's highest peak, officially known as Ağrı Dağı, at 5,137 m, located in eastern Turkey near Turkey's border with Armenia; the mountain is permanently snow-capped and stands as a massive isolated volcanic cone.",
     formation:
       "Mount Ararat is a dormant compound stratovolcano built up from repeated lava flows and pyroclastic deposits; it consists of two cones, Greater and Little Ararat (the latter at 3,896 m), with the whole massif about 35 km wide at its base.",
     observation:
       "From the air, Mount Ararat rises as an isolated, massive snow peak on the East Anatolian Plateau, creating a striking contrast with the comparatively gentle plateau terrain around it; the summit remains snow- and ice-covered year-round.",
+    // distinguish sources: 「唯一有常年冰帽的孤立火山」不成立：苏芬火山（4058 m）山顶同样有永久冰帽（Smithsonian GVP，1 级）。苏芬火山就在本库注册表里（mount-suphan）——本库另一条目即可证伪的排他性断言。2026-09-10 核。
     distinguish:
-      "Along with Mount Süphan and the Nemrut volcano, Ararat is one of eastern Turkey's volcanoes, but it is the highest and most massive, and the only isolated Turkish volcano with a permanent summit ice cap.",
+      "Along with Mount Süphan and the Nemrut volcano, Ararat is one of eastern Turkey's volcanoes, but it is the highest and most massive of these isolated stratovolcanoes; Süphan likewise carries a permanent summit ice cap.",
     concept:
       "As an isolated, massive stratovolcano, Mount Ararat is a geographic sample for studying how large solitary volcanoes form at the margins of plate-collision zones.",
     history:
@@ -14871,8 +15174,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "mount-erciyes": {
     seeing:
       "Mount Erciyes is the highest volcano in Central Anatolia at 3,917 m, located about 15 to 25 km from the city of Kayseri; it is a large stratovolcano surrounded by numerous monogenetic cinder cones and lava domes.",
+    // formation sources: Cora Maar：玛珥式火山口属实，但**没有常年湖**，原文的「火口湖」不准确。是否有季节性积水未查到一级来源，记 unknown、正文往回缩不写湖。2026-09-10 核。
     formation:
-      "The current stratovolcano formed during Pleistocene eruptions of andesitic and dacitic lava; a maar-type crater lake sits near the volcano, and its last eruption dates to around 6880 BCE, making it a dormant volcano.",
+      "The current stratovolcano formed during Pleistocene eruptions of andesitic and dacitic lava; a maar-type crater sits near the volcano (Cora Maar, which holds no permanent lake), and its last eruption dates to around 6880 BCE, making it a dormant volcano.",
     observation:
       "From the air, Mount Erciyes appears as a complete conical stratovolcano, snow-capped year-round in winter and connected to the volcanic ash terrain of Cappadocia at its base, making it the most prominent landmark peak in the region.",
     distinguish:
@@ -14883,8 +15187,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The city of Kayseri at the volcano's foot has long been an important trade and craft center in Anatolia; today Erciyes is also one of Turkey's major ski destinations.",
   },
   "nemrut-caldera-van": {
+    // seeing sources: 「世界第二大火口湖」删掉：只见土耳其媒体转述（3 级），查不到国际权威给出的火口湖全球排名口径与年份，属 C1b「排名断言缺口径」。土耳其第一大、海拔 2247 m、水深 176 m 三项保留（多来源吻合）。2026-09-10 核。
     seeing:
-      "The Nemrut volcano, near Tatvan in Bitlis Province west of Lake Van, has a collapsed summit forming a crescent-shaped caldera lake — Lake Nemrut — at about 2,247 m elevation and 176 m deep, the world's second-largest and Turkey's largest crater lake.",
+      "The Nemrut volcano, near Tatvan in Bitlis Province west of Lake Van, has a collapsed summit forming a crescent-shaped caldera lake — Lake Nemrut — at about 2,247 m elevation and 176 m deep, Turkey's largest crater lake.",
     formation:
       "After the volcano's magma chamber emptied, the summit lost support and collapsed, forming a huge caldera that gradually filled with water to become today's crater lake; roughly 600,000 years ago, lava flows from this volcano also blocked the Murat River, contributing to the formation of Lake Van.",
     observation:
@@ -14897,8 +15202,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The area around the volcano has historically been used by pastoral and farming communities of the Lake Van basin; today it is an important geological tourism and mountaineering destination in eastern Turkey.",
   },
   "lake-van": {
+    // seeing sources: 面积/水位两套来源打架：塔特万区公所（1 级）给 3713 km²、平均水深 171 m、长期均值约 1648 m；国际文献（3 级）给 3764 km² / 607 km³。取 1 级并写成「约 3700 平方公里」。**原文的 1646 米其实是接近 1963 年历史最低的枯水值**，不是常态水位——2025 年 9 月因干旱又逼近该值。属 C8，正文改为「长期均值 + 近年走低」两层。2026-09-10 核。
     seeing:
-      "Lake Van is Turkey's largest lake by area, covering about 3,764 km² with a volume of roughly 607 km³ at an elevation of about 1,646 m, and it is the world's largest soda (alkaline) lake.",
+      "Lake Van is Turkey's largest lake by area, covering about 3,700 km², its surface averaging around 1,648 m over the long run — sustained drought has drawn it down markedly in recent years, and in September 2025 it approached the 1,646 m record low first set in 1963 — and it is the world's largest soda (alkaline) lake.",
     formation:
       "About 600,000 years ago, lava flows from the Nemrut volcano blocked the course of the Murat River; unable to drain, the water gradually accumulated to form today's closed basin — a classic case of a volcanically dammed lake.",
     observation:
@@ -14911,8 +15217,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Lake Van basin was historically a core territory of the Kingdom of Urartu, and numerous ancient fortress ruins survive along the shore today; the lake remains a major geographic landmark in eastern Turkey.",
   },
   "lake-tuz": {
+    // seeing sources: 面积/水深：**季节性盐湖，写固定值本身就是错的**。3 级来源两套数字打架（1665 km²/0.5 m vs 1500 km²/1 m），分歧本身说明无一致口径。按 C8 改为区间 + 季节机制。2026-09-10 核。
     seeing:
-      "Lake Tuz is Turkey's second-largest lake, covering about 1,665 km², roughly 80 km long and 50 km wide, but with an average depth of only 0.5 m, making it one of the most saline lakes on Earth.",
+      "Lake Tuz is Turkey's second-largest lake, covering some 1,500 to 1,665 km² at its spring high water, roughly 80 km long and 50 km wide but nowhere much more than a metre deep, and drying out across most of its bed in high summer, making it one of the most saline lakes on Earth.",
     formation:
       "Lake Tuz sits at the lowest point of an interior drainage basin on the Central Anatolian Plateau; winter and spring precipitation and groundwater fill the lake, while intense summer evaporation dries out large areas, leaving a salt crust roughly 30 cm thick on the lakebed.",
     observation:
@@ -14921,10 +15228,16 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Both Lake Tuz and Lake Van are major interior-drainage lakes in Turkey, but Lake Tuz is a shallow, seasonally dry salt lake with far higher salinity, while Lake Van holds water year-round at comparatively lower salinity.",
     concept:
       "With a salinity of about 32 to 33 percent — close to the Dead Sea — Lake Tuz is a classic sample for studying how long-term evaporative concentration in interior basins produces highly saline lakes, and it is also an important salt-producing region for Turkey.",
+    // history sources: 产盐量：原文 30 万吨**量级错了约五倍**。3 级来源一致给百万吨级（1997 年 170.8 万吨，占当年全国 233 万吨的 73.3%，与「约七成」吻合）。只有 3 级 → 正文写「百万吨量级」不写死精确值，等找到带年份的官方产量序列再收紧。2026-09-10 核。
     history:
-      "Lake Tuz has long been an important source of salt in Anatolia; today it produces roughly 300,000 tonnes of salt annually, supplying about 70 percent of Turkey's salt needs.",
+      "Lake Tuz has long been an important source of salt in Anatolia; today it yields salt on the order of a million tonnes a year, supplying about 70 percent of Turkey's salt needs.",
   },
   "konya-basin": {
+    // seeing sources: 盆地面积约 5 万 km² —— **两个官方来源互相印证**：土耳其农业与林业部 49,805.34 km²、
+    //   国家水利总局（DSİ）49,786 km²，均 1 级。
+    //   ⚠️ 「海拔 850 至 3450 米」**未能核实**：查不到官方一手数据说明 3450 m 上限对应哪座山峰，记 unknown、正文不动。
+    //   下一轮若仍核不到，改成「数百米至三千余米不等」这类不会出错的表述。
+    //   formation / history: 地下水超采 + 干旱导致天坑（obruk）激增，多篇论文与新闻交叉印证。2026-09-10 核，verdict: ok（一项 unknown）。
     seeing:
       "The Konya Basin is a large interior-drainage basin on the Central Anatolian Plateau, covering about 50,000 km² at elevations of 850 to 3,450 m, bounded by the Pontic Mountains to the north and the Taurus Mountains to the south, and forming an important agricultural heartland for Turkey.",
     formation:
@@ -14939,6 +15252,9 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Konya, within the basin, was the capital of the Seljuk Sultanate in Anatolia; the 13th-century Sufi poet Rumi lived there and founded the Mevlevi Order (the whirling dervishes), and the Çatalhöyük site within the basin is a major Neolithic archaeological site.",
   },
   "pamukkale-travertines": {
+    // 全六段 sources: 钙华台地约 2700 m × 600 m × 160 m；17 处以上温泉（35–100 ℃）；1988 年与希拉波利斯古城一同列入 UNESCO。
+    //   ✅ **成因机制专项复核**：正文写的是「二氧化碳逸出后碳酸钙结晶析出」，**没有落进「温泉水蒸发」这个常见错误说法**——
+    //   这正是 C7 要防的那一类，本条通过。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Pamukkale ('Cotton Castle') is a geothermal travertine terrace formation in the Denizli graben, named for its brilliant white, stepped calcium-carbonate terraces, spanning about 2,700 m long, 600 m wide and 160 m high.",
     formation:
@@ -14953,6 +15269,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "From the 2nd century BCE, the Greco-Roman city of Hierapolis was built beside the springs atop the terrace, its people believing the thermal waters had healing and sacred properties; Pamukkale was inscribed as a UNESCO World Heritage Site alongside Hierapolis in 1988.",
   },
   "cappadocia-fairy-chimneys": {
+    // formation / history sources: 凝灰岩来自埃尔吉耶斯、哈桑、梅伦迪兹等火山自中新世持续至上新世的多次喷发，
+    //   堆积约 1 万 km² 的凝灰岩／熔结凝灰岩；软质凝灰岩快速侵蚀、硬质盖层保护形成「精灵烟囱」——差异风化机制表述正确，
+    //   未见因果颠倒。格雷梅国家公园 1985 年列入 UNESCO（whc.unesco.org/en/list/357，1 级）。
+    //   ⚠️ 「侵蚀速率每千年 2 至 3 厘米」未能独立核实，记 unknown、正文不动。2026-09-10 核，verdict: ok（一项 unknown）。
     seeing:
       "Cappadocia is a volcanic-ash landscape in Central Anatolia renowned for its 'fairy chimney' rock pillars, encompassing Göreme National Park between Nevşehir, Ürgüp and Avanos, inscribed as a UNESCO World Heritage Site in 1985.",
     formation:
@@ -14967,6 +15287,10 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Cappadocia was historically a refuge where Byzantine-era Christians carved underground cities and rock-cut churches; the Göreme area preserves numerous rock-cut monasteries and frescoes, and today a sunrise hot-air balloon flight over this pillar landscape is the region's signature visitor experience.",
   },
   "ihlara-valley": {
+    // 全六段 sources: 峡谷长约 15 km（多来源 14–18 km 区间内）、最深约 150 m（100–150 m 区间内）；
+    //   梅伦迪兹河全长约 60 km、发源于梅伦迪兹山；**「最终流入图兹湖」经专项核实成立**——该河经马马森水坝与乌卢河水道
+    //   汇入图兹湖，其流域本就在图兹湖封闭流域内。约 50 座拜占庭岩凿教堂与资料一致。
+    //   ✅ 零争议红线：history 只写宗教避难史实，无现代政治内容，通过。3 级复核。2026-09-10 核，verdict: ok。
     seeing:
       "Ihlara Valley, in southwestern Cappadocia, is a deeply incised canyon about 15 km long and up to 150 m deep, carved by the Melendiz River over thousands of years through volcanic rock.",
     formation:

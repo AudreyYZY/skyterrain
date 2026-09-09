@@ -3293,9 +3293,9 @@ const MOUNT_TARANAKI: TerrainEntry = {
   bbox: [173.85, -39.52, 174.28, -39.07],
   label: { lon: 174.064, lat: -39.296, rotation: 0 },
   pois: [
-    { name: "埃格蒙特国家公园圆形边界", lon: 174.09, lat: -39.30, note: "1881年沿距峰顶约9.6km画的近乎正圆的森林保护线，空中看林、牧分明" },
+    { name: "国家公园圆形边界（Te Papa-Kura-o-Taranaki，原埃格蒙特国家公园）", lon: 174.09, lat: -39.30, note: "1881年沿距峰顶约9.6km画的近乎正圆的森林保护线，空中看林、牧分明" },
   ],
-  source: "塔拉纳基山：近乎对称的安山质层状火山，2518m；官方名2025年定为Taranaki Maunga（此前作Mount Taranaki或Mount Egmont）（GNS Science / DOC / LINZ）",
+  source: "塔拉纳基山：近乎对称的安山质层状火山，2518m；官方名2025年定为Taranaki Maunga（此前作Mount Taranaki或Mount Egmont）；同年4月1日国家公园官方名由Egmont National Park改为Te Papa-Kura-o-Taranaki（GNS Science / DOC / LINZ，核实2026-09-09）",
 };
 
 const TASMAN_GLACIER: TerrainEntry = {
@@ -11317,7 +11317,7 @@ const HAEAN_BASIN: TerrainEntry = {
   landmark: { name: "海安里", lon: 128.1075, lat: 38.2967, elevation: 450, kind: "city" },
   bbox: [128.03, 38.24, 128.20, 38.35],
   label: { lon: 128.11, lat: 38.29, rotation: 0 },
-  source: "海安盆地：江原道杨口郡一处近椭圆形侵蚀盆地，中心为侏罗纪花岗岩、边缘为前寒武纪变质岩，二者抗风化能力的差异被认为是盆地成因，盆地直径约5公里，四周山脊高出盆底500至800米，朝鲜战争期间联合国军因其形似大碗将其称为\"Punchbowl\"（韩国地质资源研究院KIGAM）",
+  source: "海安盆地：江原道杨口郡一处近椭圆形侵蚀盆地，中心为侏罗纪花岗岩、边缘为前寒武纪变质岩，二者抗风化能力的差异被认为是盆地成因（韩国地质资源研究院 KIGAM，核实 2026-09-10）；南北长约10km、东西宽约7km，四周山脊高出盆底约400至800m，因形似大碗而俗称 Punchbowl",
 };
 
 const YONGNEUP_DAEAMSAN: TerrainEntry = {
@@ -11513,7 +11513,7 @@ const GEUM_RIVER: TerrainEntry = {
 };
 
 const HOERYONGPO_ANDONG_MEANDER: TerrainEntry = {
-  id: "hoeryongpo-andong-meander",
+  id: "hahoe-andong-meander",
   nameZh: "安东河回村曲流",
   nameEn: "Hahoe (Andong) Incised Meander",
   category: "valley",
