@@ -2849,11 +2849,19 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "washington-dc": {
+    // identity sources: 美国人口普查局 Vintage 2025 官方 CSV 全表核对（基准 2025-07-01）：
+    //   county/metro 档 2026-03-26 发布、city/place 档 2026-05-14 发布（本项目日历那一行核对无误）。
+    //   **美国有四档并存的官方口径**：place（市建制）/ MSA / CSA / urbanized area，数字差别巨大；
+    //   MSA 与 CSA 的边界由 OMB 定义、会调整（最近一次大改是 2023-07 的 OMB Bulletin 23-01，
+    //   丹佛 MSA 官方名由 Denver-Aurora-Lakewood 改为 Denver-Aurora-Centennial，
+    //   拉斯维加斯由 Las Vegas-Henderson-Paradise 改为 Las Vegas-Henderson-North Las Vegas）。2026-09-09 核。
+    //   华盛顿特区（place）Vintage 2025 **693,645**；
+    //   MSA「Washington-Arlington-Alexandria, DC-VA-MD-WV」**6,465,724**（1 级，2026-09-09 核）。
     identity:
-      "Washington is the capital of the United States, formally the District of Columbia (D.C.), which is not part of any state, with a population of about 700,000 and a metro area of about 6.3 million. The city is planned around the Capitol on a radial-plus-grid layout, with federal institutions, monuments and national museums gathered along an open lawn (the National Mall) running east–west. The city is named for the first president.",
+      "Washington is the capital of the United States, formally the District of Columbia (D.C.), which is not part of any state, with a population of about 690,000 and a metro area of about 6.47 million, both 2025 Census Bureau estimates. The city is planned around the Capitol on a radial-plus-grid layout, with federal institutions, monuments and national museums gathered along an open lawn (the National Mall) running east–west. The city is named for the first president.",
     // howItWorks sources: Wikipedia (2026-09): Washington, D.C. (Home Rule Act 1973; 8 wards; 4 quadrants; 2020 census 689,545; metro 6.3 million)
     howItWorks:
-      "Washington belongs to no state: it is the only federal district in the United States, and only since the Home Rule Act of 1973 has it had an elected mayor and a 13-member council, while Congress retains the power to overturn local laws and residents have no voting representation in it. The city follows L'Enfant's plan of 1791, divided into four quadrants — NW, NE, SE, SW — meeting at the Capitol, so that the same street name occurs once in each quadrant and the letters after an address cannot be dropped; a height limit keeps the skyline low. The 2020 census counted about 690,000 residents in the District and about 6.3 million in a metropolitan area including the Maryland and Virginia suburbs, where most federal workers live and commute by Metro. Newcomers most often go wrong by leaving the quadrant off an address, or by imagining that 'Washington' is only the monuments around the National Mall.",
+      "Washington belongs to no state: it is the only federal district in the United States, and only since the Home Rule Act of 1973 has it had an elected mayor and a 13-member council, while Congress retains the power to overturn local laws and residents have no voting representation in it. The city follows L'Enfant's plan of 1791, divided into four quadrants — NW, NE, SE, SW — meeting at the Capitol, so that the same street name occurs once in each quadrant and the letters after an address cannot be dropped; a height limit keeps the skyline low. The 2025 estimates put about 690,000 residents in the District and about 6.3 million in a metropolitan area including the Maryland and Virginia suburbs, where most federal workers live and commute by Metro. Newcomers most often go wrong by leaving the quadrant off an address, or by imagining that 'Washington' is only the monuments around the National Mall.",
     layout:
       "Washington is built beside the Potomac River on the Atlantic coastal plain, and is flat. The National Mall runs from the Capitol to the Lincoln Memorial, lined with the Smithsonian museums; the White House is just north of it. The city is divided into quadrants (NW/NE/SW/SE), with lettered and numbered streets that make it easy to navigate. Beyond are the Virginia and Maryland suburbs.",
     gettingAround:
@@ -2867,11 +2875,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   chicago: {
+    // identity sources: 美国人口普查局 Vintage 2025 官方 CSV 全表核对（基准 2025-07-01）：
+    //   county/metro 档 2026-03-26 发布、city/place 档 2026-05-14 发布（本项目日历那一行核对无误）。
+    //   **美国有四档并存的官方口径**：place（市建制）/ MSA / CSA / urbanized area，数字差别巨大；
+    //   MSA 与 CSA 的边界由 OMB 定义、会调整（最近一次大改是 2023-07 的 OMB Bulletin 23-01，
+    //   丹佛 MSA 官方名由 Denver-Aurora-Lakewood 改为 Denver-Aurora-Centennial，
+    //   拉斯维加斯由 Las Vegas-Henderson-Paradise 改为 Las Vegas-Henderson-North Las Vegas）。2026-09-09 核。
+    //   MSA「Chicago-Naperville-Elgin, IL-IN」Vintage 2025 **9,434,123**；芝加哥市（place）**2,731,585**
+    //   （1 级，2026-09-09 核）。原 identity 写 950 万、howItWorks 写 940 万，**两段本来就打架且都不是最新数**。
+    //   「美国第三大城市」按 2025 年估计仍成立。
     identity:
-      "Chicago is the third-largest city in the United States, on the south-western shore of Lake Michigan, with a metro area of about 9.5 million. It is the Midwest's transport and financial hub, one of the birthplaces of the modern skyscraper (which took off in the rebuilding after the 1871 fire), and is known for blues, jazz and deep-dish pizza. The name comes from a local Indigenous word, roughly meaning 'wild garlic (place)'.",
+      "Chicago is the third-largest city in the United States, on the south-western shore of Lake Michigan, with a metro area of about 9.43 million on 2025 estimates. It is the Midwest's transport and financial hub, one of the birthplaces of the modern skyscraper (which took off in the rebuilding after the 1871 fire), and is known for blues, jazz and deep-dish pizza. The name comes from a local Indigenous word, roughly meaning 'wild garlic (place)'.",
     // howItWorks sources: Wikipedia (2026-09): Chicago (50 wards; 77 community areas; Cook County; State/Madison origin; 2020 census 2,746,388; metro ~9.4 million)
     howItWorks:
-      "Chicago is governed by a mayor and a City Council of 50 ward aldermen and is the seat of Cook County; beyond the city, a metropolitan area of about 9.4 million spreads across Illinois, Indiana and Wisconsin, and the 2020 census counted about 2.75 million in the city itself. A Chicagoan's map begins with the Loop — the circuit traced by the elevated railway is downtown — and beyond it the city divides into the North, South and West sides, the three white stripes of the city flag; street numbers rise outward from the crossing of State and Madison, so an address alone tells how far a place lies from the centre. The 77 community areas drawn by University of Chicago sociologists in the 1920s remain the units by which locals say where they live. The CTA's 'L' serves the city and Metra the suburbs. Newcomers most often go wrong by taking the lakefront Loop for the whole of Chicago, when most of the city lies outside the elevated ring.",
+      "Chicago is governed by a mayor and a City Council of 50 ward aldermen and is the seat of Cook County; beyond the city, a metropolitan area of about 9.43 million on 2025 estimates spreads across Illinois, Indiana and Wisconsin, and the 2020 census counted about 2.75 million in the city itself. A Chicagoan's map begins with the Loop — the circuit traced by the elevated railway is downtown — and beyond it the city divides into the North, South and West sides, the three white stripes of the city flag; street numbers rise outward from the crossing of State and Madison, so an address alone tells how far a place lies from the centre. The 77 community areas drawn by University of Chicago sociologists in the 1920s remain the units by which locals say where they live. The CTA's 'L' serves the city and Metra the suburbs. Newcomers most often go wrong by taking the lakefront Loop for the whole of Chicago, when most of the city lies outside the elevated ring.",
     layout:
       "Chicago is built on the plain along Lake Michigan; the Chicago River runs through downtown (the Loop) and was engineered to flow inland, away from the lake. The lakefront is a continuous ribbon of parks and beaches, with the downtown towers right at the water's edge. The streets are a regular grid centred on the Loop. South along the lake is Indiana; west are the Great Plains.",
     gettingAround:
@@ -2908,11 +2925,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   miami: {
+    // identity sources: 美国人口普查局 Vintage 2025 官方 CSV 全表核对（基准 2025-07-01）：
+    //   county/metro 档 2026-03-26 发布、city/place 档 2026-05-14 发布（本项目日历那一行核对无误）。
+    //   **美国有四档并存的官方口径**：place（市建制）/ MSA / CSA / urbanized area，数字差别巨大；
+    //   MSA 与 CSA 的边界由 OMB 定义、会调整（最近一次大改是 2023-07 的 OMB Bulletin 23-01，
+    //   丹佛 MSA 官方名由 Denver-Aurora-Lakewood 改为 Denver-Aurora-Centennial，
+    //   拉斯维加斯由 Las Vegas-Henderson-Paradise 改为 Las Vegas-Henderson-North Las Vegas）。2026-09-09 核。
+    //   MSA「Miami-Fort Lauderdale-West Palm Beach, FL」Vintage 2025 **6,391,072**；
+    //   迈阿密市（place）**489,812**（较 2020 普查 442,241 **上涨 10.7%**）；迈阿密-戴德县 **2,802,029**
+    //   （1 级，2026-09-09 核）。原文 identity 620 万偏低、howItWorks「超过 640 万」偏高，真值在中间。
     identity:
-      "Miami is at the south-eastern tip of the Florida peninsula, with a metro area of about 6.2 million. It is the United States' gateway to Latin America and the Caribbean; Spanish is nearly as common as English, and the Cuban, Haitian and Venezuelan communities are large. The city is known for its beaches, its Art Deco architecture, its nightlife and the edge of the Everglades. The name comes from a local Indigenous word.",
+      "Miami is at the south-eastern tip of the Florida peninsula, with a metro area of about 6.39 million on 2025 estimates. It is the United States' gateway to Latin America and the Caribbean; Spanish is nearly as common as English, and the Cuban, Haitian and Venezuelan communities are large. The city is known for its beaches, its Art Deco architecture, its nightlife and the edge of the Everglades. The name comes from a local Indigenous word.",
     // howItWorks sources: Wikipedia (2026-09): Miami (city 145 km², 2020 census 442,241; Miami-Dade County 34 municipalities, ~2.7 million; South Florida metro 6.4 million; Spanish ~70%)
     howItWorks:
-      "The City of Miami covers only about 145 km² and had about 442,000 residents at the 2020 census, governed by a mayor and commission; the 'Miami' people speak of is Miami-Dade County — a county government with a strong mayor, 34 separate municipalities and about 2.7 million people, in which Miami Beach and Coral Gables are cities of their own. The South Florida metropolitan area holds more than 6.4 million. Downtown and Brickell form the financial district, with Brickell Avenue holding the largest concentration of international banks in the country; Biscayne Bay separates the mainland from the barrier island of Miami Beach, and the Everglades lie to the west. The water table is so high that rail transit runs on elevated tracks. About seventy per cent of residents speak Spanish at home. Newcomers most often go wrong by taking Miami Beach for part of the City of Miami, when it is another city across the bay.",
+      "The City of Miami covers only about 145 km² and had about 442,000 residents at the 2020 census, governed by a mayor and commission; the 'Miami' people speak of is Miami-Dade County — a county government with a strong mayor, 34 separate municipalities and about 2.7 million people, in which Miami Beach and Coral Gables are cities of their own. The South Florida metropolitan area holds about 6.39 million on 2025 estimates. Downtown and Brickell form the financial district, with Brickell Avenue holding the largest concentration of international banks in the country; Biscayne Bay separates the mainland from the barrier island of Miami Beach, and the Everglades lie to the west. The water table is so high that rail transit runs on elevated tracks. About seventy per cent of residents speak Spanish at home. Newcomers most often go wrong by taking Miami Beach for part of the City of Miami, when it is another city across the bay.",
     layout:
       "The city of Miami is on the west shore of Biscayne Bay; across the bay is Miami Beach (a separate city on a barrier island), where South Beach and the Art Deco district are. Downtown and Brickell are the financial towers; Little Havana is west of downtown. The whole city is built on low, flat limestone at very low elevation, with the Everglades to the west.",
     gettingAround:
@@ -2926,11 +2952,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   denver: {
+    // identity sources: 美国人口普查局 Vintage 2025 官方 CSV 全表核对（基准 2025-07-01）：
+    //   county/metro 档 2026-03-26 发布、city/place 档 2026-05-14 发布（本项目日历那一行核对无误）。
+    //   **美国有四档并存的官方口径**：place（市建制）/ MSA / CSA / urbanized area，数字差别巨大；
+    //   MSA 与 CSA 的边界由 OMB 定义、会调整（最近一次大改是 2023-07 的 OMB Bulletin 23-01，
+    //   丹佛 MSA 官方名由 Denver-Aurora-Lakewood 改为 Denver-Aurora-Centennial，
+    //   拉斯维加斯由 Las Vegas-Henderson-Paradise 改为 Las Vegas-Henderson-North Las Vegas）。2026-09-09 核。
+    //   MSA「**Denver-Aurora-Centennial, CO**」（2023 年 OMB 定界后官方名由 Denver-Aurora-Lakewood 改来）
+    //   Vintage 2025 **3,092,037**；丹佛市县合一 **740,613**（1 级，2026-09-09 核）。
+    //   **MSA 的官方名会随 OMB 定界调整而改** —— 引用时要写明是哪一版定义、哪一年的估计。
     identity:
-      "Denver is the capital of Colorado, on the eastern foot of the Rocky Mountains at the western edge of the Great Plains, at an elevation of almost exactly one mile — hence the 'Mile High City'. The metro area is about 3 million, and it is the commercial and transport hub of the Mountain West and the gateway to Rocky Mountain National Park and the ski resorts.",
+      "Denver is the capital of Colorado, on the eastern foot of the Rocky Mountains at the western edge of the Great Plains, at an elevation of almost exactly one mile — hence the 'Mile High City'. The metro area was about 3.09 million on 2025 estimates, and it is the commercial and transport hub of the Mountain West and the gateway to Rocky Mountain National Park and the ski resorts.",
     // howItWorks sources: Wikipedia (2026-09): Denver (consolidated city-county 1902; 400.7 km²; 2020 census 715,522; metro ~3.1 million across 10 counties; RTD)
     howItWorks:
-      "Denver has been both a city and a county since 1902, governed by a mayor and a 13-member council over about 400 km², with about 716,000 residents at the 2020 census; the Denver metropolitan area holds about 3.1 million people across ten counties, and Aurora, Lakewood and Boulder each lie in a different county with a government of its own. The Regional Transportation District runs light rail and buses across county lines. The city sits in the South Platte valley on the western edge of the High Plains at exactly one mile above sea level, with the Front Range of the Rockies about 20 km west; most streets follow the compass, and only the downtown grid is turned to follow the river. Addresses give street number, city and ZIP code, and locals take their bearings from 'the mountains' and 'the plains'. Newcomers most often go wrong by taking the whole metropolitan area for the City of Denver, when the great majority of residents live in other counties beyond the city line.",
+      "Denver has been both a city and a county since 1902, governed by a mayor and a 13-member council over about 400 km², with about 716,000 residents at the 2025 estimates; the Denver metropolitan area holds about 3.1 million people across ten counties, and Aurora, Lakewood and Boulder each lie in a different county with a government of its own. The Regional Transportation District runs light rail and buses across county lines. The city sits in the South Platte valley on the western edge of the High Plains at exactly one mile above sea level, with the Front Range of the Rockies about 20 km west; most streets follow the compass, and only the downtown grid is turned to follow the river. Addresses give street number, city and ZIP code, and locals take their bearings from 'the mountains' and 'the plains'. Newcomers most often go wrong by taking the whole metropolitan area for the City of Denver, when the great majority of residents live in other counties beyond the city line.",
     layout:
       "Denver is built on the plain; a few dozen kilometres west is the Rocky Mountain 'Front Range', and on a clear day you can see a whole wall of snowy peaks from the city. Downtown centres on Union Station and the 16th Street pedestrian strip; the tech parks are to the south; west, past Boulder, the mountains begin. The city is flat and gridded, with one older district set on the diagonal.",
     gettingAround:
@@ -2944,11 +2979,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "las-vegas": {
+    // identity sources: 美国人口普查局 Vintage 2025 官方 CSV 全表核对（基准 2025-07-01）：
+    //   county/metro 档 2026-03-26 发布、city/place 档 2026-05-14 发布（本项目日历那一行核对无误）。
+    //   **美国有四档并存的官方口径**：place（市建制）/ MSA / CSA / urbanized area，数字差别巨大；
+    //   MSA 与 CSA 的边界由 OMB 定义、会调整（最近一次大改是 2023-07 的 OMB Bulletin 23-01，
+    //   丹佛 MSA 官方名由 Denver-Aurora-Lakewood 改为 Denver-Aurora-Centennial，
+    //   拉斯维加斯由 Las Vegas-Henderson-Paradise 改为 Las Vegas-Henderson-North Las Vegas）。2026-09-09 核。
+    //   克拉克县（拉斯维加斯是**单县 MSA**）Vintage 2025 **2,407,226**；拉斯维加斯市 **679,817**
+    //   （1 级，2026-09-09 核）。**MSA 官方名已由 Las Vegas-Henderson-Paradise 改为
+    //   Las Vegas-Henderson-North Las Vegas**（2023 年 OMB 定界）。
     identity:
-      "Las Vegas is in southern Nevada, in the Mojave Desert, in an arid basin ringed by mountains, with a metro area of about 2.3 million. The city itself is young and grew on entertainment, conventions and resorts; its best-known feature is the Strip, a stretch of large resort hotels and casinos. The name is Spanish for 'the meadows' — there were desert springs and grassland here.",
+      "Las Vegas is in southern Nevada, in the Mojave Desert, in an arid basin ringed by mountains, with a metro area of about 2.41 million on 2025 estimates. The city itself is young and grew on entertainment, conventions and resorts; its best-known feature is the Strip, a stretch of large resort hotels and casinos. The name is Spanish for 'the meadows' — there were desert springs and grassland here.",
     // howItWorks sources: Wikipedia (2026-09): Las Vegas Strip (Paradise/Winchester unincorporated, Clark County; 1950 annexation refused); 2020 census: City of Las Vegas 641,903, Clark County 2,265,461
     howItWorks:
-      "The Las Vegas Strip — the boulevard of casino resorts — does not lie within the City of Las Vegas. When the city tried to annex it in 1950 to widen its tax base, the casino owners instead petitioned Clark County to create the unincorporated towns of Paradise and Winchester, and the Strip has remained under the county ever since; the city proper is downtown and Fremont Street to the north. The 2020 census counted about 642,000 people in the city and about 2.27 million in Clark County, and the 'Las Vegas Valley' locals speak of is the county's whole urban area. Addresses give street number, city and ZIP code, with Strip addresses written as Paradise or simply Las Vegas. Daily life depends on the car, with a monorail and buses between the Strip and downtown. Newcomers most often go wrong by taking the Strip for the City of Las Vegas, when the people who live around it pay their taxes and cast their votes in Clark County.",
+      "The Las Vegas Strip — the boulevard of casino resorts — does not lie within the City of Las Vegas. When the city tried to annex it in 1950 to widen its tax base, the casino owners instead petitioned Clark County to create the unincorporated towns of Paradise and Winchester, and the Strip has remained under the county ever since; the city proper is downtown and Fremont Street to the north. The 2025 estimates put about 680,000 people in the city and about 2.27 million in Clark County, and the 'Las Vegas Valley' locals speak of is the county's whole urban area. Addresses give street number, city and ZIP code, with Strip addresses written as Paradise or simply Las Vegas. Daily life depends on the car, with a monorail and buses between the Strip and downtown. Newcomers most often go wrong by taking the Strip for the City of Las Vegas, when the people who live around it pay their taxes and cast their votes in Clark County.",
     layout:
       "Las Vegas Boulevard (the Strip) runs north–south, lined with themed resort hotels; the older downtown (Fremont Street) is further north and was the early casino core. The whole city sits in a desert basin ringed by bare mountains; about half an hour south-east are Lake Mead and the Hoover Dam, west is Red Rock Canyon, and east lies the way to the Grand Canyon.",
     gettingAround:
@@ -2962,11 +3006,25 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "san-francisco": {
+    // identity sources: 美国人口普查局 Vintage 2025 官方 CSV 全表核对（基准 2025-07-01）：
+    //   county/metro 档 2026-03-26 发布、city/place 档 2026-05-14 发布（本项目日历那一行核对无误）。
+    //   **美国有四档并存的官方口径**：place（市建制）/ MSA / CSA / urbanized area，数字差别巨大；
+    //   MSA 与 CSA 的边界由 OMB 定义、会调整（最近一次大改是 2023-07 的 OMB Bulletin 23-01，
+    //   丹佛 MSA 官方名由 Denver-Aurora-Lakewood 改为 Denver-Aurora-Centennial，
+    //   拉斯维加斯由 Las Vegas-Henderson-Paradise 改为 Las Vegas-Henderson-North Las Vegas）。2026-09-09 核。
+    //   **「九县湾区」与「460/470 万」不是同一个东西，这是一处口径与数字不匹配**：
+    //   - Census **五县 MSA「San Francisco-Oakland-Fremont, CA」= 4,630,041**（旧金山、阿拉米达、
+    //     康特拉科斯塔、马林、圣马刁）；
+    //   - 真正对应「九县湾区」（ABAG 定义）的官方最接近口径是**组合统计区 CSA
+    //     「San Jose-San Francisco-Oakland, CA」= 9,140,485**，**是文中数字的两倍还多**。
+    //   本轮选择保留 460 万这个量级、把口径改写成五县 MSA，**删掉与之不符的「九县」标签**。
+    //   旧金山市（place=county）Vintage 2025 **826,079**，较 2020 普查 873,965 **下降约 5.5%** ——
+    //   原文没有反映这个下降。1 级，2026-09-09 核。
     identity:
-      "San Francisco is in northern California, at the tip of a peninsula surrounded by water on three sides, with a city population of about 810,000 and a Bay Area metro of about 4.7 million. It is known for its steep hills, Victorian houses, the Golden Gate Bridge and its summer fog, and is a centre of the tech industry (Silicon Valley is at the southern end of the bay) and of diverse cultures. The name is Spanish for 'Saint Francis', from an 18th-century Spanish mission.",
+      "San Francisco is in northern California, at the tip of a peninsula surrounded by water on three sides, with a city population of about 830,000 on 2025 estimates and a San Francisco-Oakland metro area (the five-county Census definition) of about 4.63 million. It is known for its steep hills, Victorian houses, the Golden Gate Bridge and its summer fog, and is a centre of the tech industry (Silicon Valley is at the southern end of the bay) and of diverse cultures. The name is Spanish for 'Saint Francis', from an 18th-century Spanish mission.",
     // howItWorks sources: Wikipedia (2026-09): San Francisco (consolidated city-county 1856; ~121 km² land; 11 supervisor districts; 2020 census 873,965; 9-county Bay Area; BART/Muni)
     howItWorks:
-      "San Francisco has been both a city and a county since 1856, with identical boundaries, governed by a mayor and an 11-district Board of Supervisors; its land area is only about 121 km², and the 2020 census counted about 874,000 people in a compact city hemmed in by the bay and the ocean. It is the heart of the nine-county Bay Area, but Oakland and San Jose are large cities in their own right, the region holds about 4.6 million people, and Silicon Valley lies down the peninsula in Santa Clara County. Buses and light rail within the city are San Francisco's own Muni, while BART across the bay and Caltrain to the south are regional railways. The city is a set of hills and named neighbourhoods — the Mission, the Castro, Chinatown — and locals place things by neighbourhood first. Newcomers most often go wrong by calling the whole Bay Area San Francisco, when the city holds only a fifth of the region's people.",
+      "San Francisco has been both a city and a county since 1856, with identical boundaries, governed by a mayor and an 11-district Board of Supervisors; its land area is only about 121 km², and the 2020 census counted about 874,000 people in a compact city hemmed in by the bay and the ocean. It is the heart of the five-county San Francisco-Oakland metro area as the Census Bureau defines it, but Oakland and San Jose are large cities in their own right, the region holds about 4.6 million people, and Silicon Valley lies down the peninsula in Santa Clara County. Buses and light rail within the city are San Francisco's own Muni, while BART across the bay and Caltrain to the south are regional railways. The city is a set of hills and named neighbourhoods — the Mission, the Castro, Chinatown — and locals place things by neighbourhood first. Newcomers most often go wrong by calling the whole Bay Area San Francisco, when the city holds only a fifth of the region's people.",
     layout:
       "San Francisco is built on dozens of steep hills, with streets that run straight up and over them. Downtown and the Financial District are in the north-east, with Chinatown and North Beach beside them; Fisherman's Wharf and the Golden Gate Bridge are on the north shore; Golden Gate Park is a green band running west to the ocean. To the south the city joins the peninsula; across the bay to the east are Oakland and Berkeley, linked by the Bay Bridge and BART.",
     gettingAround:
@@ -2980,11 +3038,20 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "los-angeles": {
+    // identity sources: 美国人口普查局 Vintage 2025 官方 CSV 全表核对（基准 2025-07-01）：
+    //   county/metro 档 2026-03-26 发布、city/place 档 2026-05-14 发布（本项目日历那一行核对无误）。
+    //   **美国有四档并存的官方口径**：place（市建制）/ MSA / CSA / urbanized area，数字差别巨大；
+    //   MSA 与 CSA 的边界由 OMB 定义、会调整（最近一次大改是 2023-07 的 OMB Bulletin 23-01，
+    //   丹佛 MSA 官方名由 Denver-Aurora-Lakewood 改为 Denver-Aurora-Centennial，
+    //   拉斯维加斯由 Las Vegas-Henderson-Paradise 改为 Las Vegas-Henderson-North Las Vegas）。2026-09-09 核。
+    //   MSA「Los Angeles-Long Beach-Anaheim, CA」Vintage 2025 **12,844,441**；
+    //   洛杉矶县 **9,694,934**（**比正文引的 2022 年 986 万低约 17 万，方向是降的**）；
+    //   洛杉矶市 **3,869,089**（1 级，2026-09-09 核）。「美国第二大城市」按 2025 年估计仍成立。
     identity:
-      "Los Angeles is the second-largest city in the United States, a wide basin in southern California hemmed in by mountains and the sea, with a metro area of about 13 million. It has no single centre; it is dozens of distinct districts and satellite cities strung together by a freeway network, and it is the centre of the film and television industry. The name is Spanish for 'the angels', a short form of the full name of the 18th-century Spanish settlement.",
+      "Los Angeles is the second-largest city in the United States, a wide basin in southern California hemmed in by mountains and the sea, with a metro area of about 12.84 million on 2025 estimates. It has no single centre; it is dozens of distinct districts and satellite cities strung together by a freeway network, and it is the centre of the film and television industry. The name is Spanish for 'the angels', a short form of the full name of the 18th-century Spanish settlement.",
     // howItWorks sources: Wikipedia (2026-09): Los Angeles (15 council districts, ~1,215 km², 2020 census 3,898,747; LA County 88 cities, ~9.86 million 2022; LA Metro)
     howItWorks:
-      "There are two Los Angeleses. The City of Los Angeles is governed by a mayor and a 15-district council, covers about 1,215 km² and had about 3.9 million residents at the 2020 census; Los Angeles County is run by a five-member Board of Supervisors and contains 88 independent cities — Santa Monica, Beverly Hills, Long Beach and Pasadena are none of them part of the city — with about 9.86 million people in 2022. The city itself absorbed once-separate towns such as those of the San Fernando Valley, so no single downtown dominates, and the Westside, the Eastside and South LA are worlds of their own. Public transport is run by the county-wide LA Metro, but the freeways are the true skeleton. Addresses give street number, city and ZIP code, and locals describe a place by its freeway exit or neighbourhood. Newcomers most often go wrong by assuming Hollywood, Santa Monica and downtown share one city government, or that Los Angeles can be lived in without a car.",
+      "There are two Los Angeleses. The City of Los Angeles is governed by a mayor and a 15-district council, covers about 1,215 km² and had about 3.9 million residents at the 2020 census; Los Angeles County is run by a five-member Board of Supervisors and contains 88 independent cities — Santa Monica, Beverly Hills, Long Beach and Pasadena are none of them part of the city — with about 9.69 million on 2025 estimates people in 2022. The city itself absorbed once-separate towns such as those of the San Fernando Valley, so no single downtown dominates, and the Westside, the Eastside and South LA are worlds of their own. Public transport is run by the county-wide LA Metro, but the freeways are the true skeleton. Addresses give street number, city and ZIP code, and locals describe a place by its freeway exit or neighbourhood. Newcomers most often go wrong by assuming Hollywood, Santa Monica and downtown share one city government, or that Los Angeles can be lived in without a car.",
     layout:
       "The Los Angeles basin is backed to the north and east by the San Gabriel and other mountains, snow-capped on a clear day; to the west are the Pacific and a string of beaches (Santa Monica, Venice, Malibu). Downtown is in the centre-east of the basin; Hollywood, Beverly Hills and West Hollywood are to the north-west; south are the port and Long Beach; east is Pasadena. The city is very spread out — an hour or two by car from one side to the other.",
     gettingAround:
@@ -3275,15 +3342,21 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   ottawa: {
+    // identity sources: 加拿大统计局官方 CSV 全表核对（基准 2025-07-01，2026-01-14 由 The Daily 发布）：
+    //   CMA 表 17-10-0148-01、CSD 表 17-10-0155-01。**CSD（市镇）与 CMA（人口普查都会区）是两档并存的官方口径**，
+    //   差别可以很大。本项目日历「次年 1 月中旬」那一行核对无误。2026-09-09 核。
+    //   CMA「Ottawa - Gatineau (Ontario/Quebec)」2025-07-01 **1,700,014**；
+    //   渥太华市（CSD）**1,188,114**（1 级，官方 CSV 全表核对，2026-09-09）。
+    //   **这个 CMA 跨安大略与魁北克两省** —— 正文的「国家首都区」说法对应的正是它。
     identity:
-      "Ottawa is the capital of Canada, in eastern Ontario on the south bank of the Ottawa River, facing the city of Gatineau in Quebec across the water, with a metro area of about 1.5 million. Britain made it the capital in the mid-19th century precisely because it sits on the boundary between English Ontario and French Quebec, is well back from the US border, and was easier to defend. The city and the river are named for the Odawa (Ottawa) Indigenous nation.",
+      "Ottawa is the capital of Canada, in eastern Ontario on the south bank of the Ottawa River, facing the city of Gatineau in Quebec across the water, with a metro area of about 1.7 million as of July 2025. Britain made it the capital in the mid-19th century precisely because it sits on the boundary between English Ontario and French Quebec, is well back from the US border, and was easier to defend. The city and the river are named for the Odawa (Ottawa) Indigenous nation.",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501
     //   发布节奏：**次年 1 月中旬**（2023 年数那次延迟到 2024-05 是唯一例外）。下一期 2026-07-01 的数预计 2027-01 中旬。2026 年 5 月的普查结果要 2027 年起才陆续发布，与这个年度估计系列是两条并行数据线。
     //   City of Ottawa（CSD）2025-07-01 = 1,188,114。
     howItWorks:
-      "Ottawa has been a single-tier city since 2001, formed by merging eleven municipalities and governed by a mayor and 24 ward councillors; it covers about 2,790 km², of which the urban area is only about 549 km², the rest farmland and villages, with about 1.19 million people in July 2025. With Gatineau across the Ottawa River in Quebec it forms the National Capital Region of about 1.5 million, two cities in two provinces with two legal systems and two main languages, and the National Capital Commission created in 1959 manages the federal lands on both sides and the Greenbelt around the urban area. The federal government is the largest employer, with Parliament Hill, the Supreme Court and the ministries downtown; Centretown and the ByWard Market are the old city, Kanata the technology district to the west, and the names of former municipalities such as Orléans and Nepean remain the everyday language of address. The Rideau Canal was inscribed as World Heritage in 2007 and becomes a skating rink when it freezes. The O-Train light rail opened in 2019. Addresses give number, street, neighbourhood and postal code, and city services are bilingual. Newcomers most often go wrong by picturing Ottawa as a small government town, when its territory is four times that of Toronto.",
+      "Ottawa has been a single-tier city since 2001, formed by merging eleven municipalities and governed by a mayor and 24 ward councillors; it covers about 2,790 km², of which the urban area is only about 549 km², the rest farmland and villages, with about 1.19 million people in July 2025. With Gatineau across the Ottawa River in Quebec it forms the National Capital Region of about 1.7 million as of July 2025, two cities in two provinces with two legal systems and two main languages, and the National Capital Commission created in 1959 manages the federal lands on both sides and the Greenbelt around the urban area. The federal government is the largest employer, with Parliament Hill, the Supreme Court and the ministries downtown; Centretown and the ByWard Market are the old city, Kanata the technology district to the west, and the names of former municipalities such as Orléans and Nepean remain the everyday language of address. The Rideau Canal was inscribed as World Heritage in 2007 and becomes a skating rink when it freezes. The O-Train light rail opened in 2019. Addresses give number, street, neighbourhood and postal code, and city services are bilingual. Newcomers most often go wrong by picturing Ottawa as a small government town, when its territory is four times that of Toronto.",
     layout:
       "The core of Ottawa is Parliament Hill — a group of Gothic parliament buildings on a cliff above the Ottawa River. The Rideau Canal runs from beside Parliament Hill through the city toward the lake system to the south; it was a 19th-century military canal and is now used for boating in summer and, in winter, becomes one of the longest natural skating rinks in the world. Downtown is compact and walkable, and the ByWard Market is the old quarter.",
     gettingAround:
@@ -3297,8 +3370,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   montreal: {
+    // identity sources: 加拿大统计局官方 CSV 全表核对（基准 2025-07-01，2026-01-14 由 The Daily 发布）：
+    //   CMA 表 17-10-0148-01、CSD 表 17-10-0155-01。**CSD（市镇）与 CMA（人口普查都会区）是两档并存的官方口径**，
+    //   差别可以很大。本项目日历「次年 1 月中旬」那一行核对无误。2026-09-09 核。
+    //   CMA「Montréal, Quebec」2025-07-01 **4,597,837**；蒙特利尔市（CSD）约 192 万（1 级，2026-09-09 核）。
+    //   **howItWorks 本来就是对的，identity 落后**。
     identity:
-      "Montreal is the largest city in Quebec and the second-largest in Canada, with a metro area of about 4.3 million, and one of the largest French-speaking cities in North America (French is the dominant everyday language, and most people also speak English). The city is built on a large island in the St Lawrence River, centred on a small hill called Mont Réal ('Mount Royal') — Jacques Cartier climbed it in 1535 and named it, and the name later became Montréal.",
+      "Montreal is the largest city in Quebec and the second-largest in Canada, with a metro area of about 4.6 million as of July 2025, and one of the largest French-speaking cities in North America (French is the dominant everyday language, and most people also speak English). The city is built on a large island in the St Lawrence River, centred on a small hill called Mont Réal ('Mount Royal') — Jacques Cartier climbed it in 1535 and named it, and the name later became Montréal.",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501
@@ -3319,8 +3397,12 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   "quebec-city": {
+    // identity sources: 加拿大统计局官方 CSV 全表核对（基准 2025-07-01，2026-01-14 由 The Daily 发布）：
+    //   CMA 表 17-10-0148-01、CSD 表 17-10-0155-01。**CSD（市镇）与 CMA（人口普查都会区）是两档并存的官方口径**，
+    //   差别可以很大。本项目日历「次年 1 月中旬」那一行核对无误。2026-09-09 核。
+    //   CMA「Québec, Quebec」2025-07-01 **903,607**；魁北克市（CSD）约 59 万（1 级，2026-09-09 核）。
     identity:
-      "Quebec City is the capital of the province of Quebec, set on a cliff (Cap Diamant) where the St Lawrence River suddenly narrows, with a metro area of about 850,000. The name comes from an Algonquin word, 'kébec', meaning exactly 'where the river narrows'. Its old town is the only walled city in North America with its walls intact; it was founded by the French in 1608 and is one of the earliest European settlements in North America.",
+      "Quebec City is the capital of the province of Quebec, set on a cliff (Cap Diamant) where the St Lawrence River suddenly narrows, with a metro area of about 900,000 as of July 2025. The name comes from an Algonquin word, 'kébec', meaning exactly 'where the river narrows'. Its old town is the only walled city in North America with its walls intact; it was founded by the French in 1608 and is one of the earliest European settlements in North America.",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501
@@ -3341,8 +3423,14 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   halifax: {
+    // identity sources: 加拿大统计局官方 CSV 全表核对（基准 2025-07-01，2026-01-14 由 The Daily 发布）：
+    //   CMA 表 17-10-0148-01、CSD 表 17-10-0155-01。**CSD（市镇）与 CMA（人口普查都会区）是两档并存的官方口径**，
+    //   差别可以很大。本项目日历「次年 1 月中旬」那一行核对无误。2026-09-09 核。
+    //   哈利法克斯 **CSD（哈利法克斯区域市）516,822** / **CMA 544,834**（2025-07-01，1 级，2026-09-09 核）。
+    //   **原 identity 的「约 50 万」既不是 CSD 也不是 CMA**，是一个游离的旧数；
+    //   howItWorks 的「约 52 万」是 CSD 口径但没标明是哪一档，已一并写清。
     identity:
-      "Halifax is the capital of Nova Scotia and the largest city in Atlantic Canada, with a metro area of about 500,000, a natural-harbour city that was historically a major British naval base in North America. The name comes from an 18th-century British politician, the Earl of Halifax (there is also a town called Halifax in Yorkshire, England).",
+      "Halifax is the capital of Nova Scotia and the largest city in Atlantic Canada, with a metropolitan area (CMA) of about 550,000 as of July 2025 and about 517,000 in the Halifax Regional Municipality itself, a natural-harbour city that was historically a major British naval base in North America. The name comes from an 18th-century British politician, the Earl of Halifax (there is also a town called Halifax in Yorkshire, England).",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501
@@ -3385,8 +3473,15 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   winnipeg: {
+    // identity sources: 加拿大统计局官方 CSV 全表核对（基准 2025-07-01，2026-01-14 由 The Daily 发布）：
+    //   CMA 表 17-10-0148-01、CSD 表 17-10-0155-01。**CSD（市镇）与 CMA（人口普查都会区）是两档并存的官方口径**，
+    //   差别可以很大。本项目日历「次年 1 月中旬」那一行核对无误。2026-09-09 核。
+    //   温尼伯 **CSD 850,260** / **CMA 951,758**（2025-07-01，1 级，2026-09-09 核）。
+    //   **identity 把 CSD 的 85 万贴上了「都会区」的标签** —— 两个数字都是真的，错在标签。
+    //   howItWorks 本来就把两档分开写对了。
+    //   **注意：这类错 `C6i` 抓不到** —— 85 万与 95 万只差约 11%，落在 20% 容差内。
     identity:
-      "Winnipeg is the capital of Manitoba, on the eastern edge of the Canadian prairies at the meeting of the Red and Assiniboine rivers, with a metro area of about 850,000. This has long been a meeting point for Indigenous peoples and the fur trade, and became the 'gateway to the West' with the railway in the late 19th century. The name comes from the Cree 'wīnipēk', meaning 'muddy water', for Lake Winnipeg to the north.",
+      "Winnipeg is the capital of Manitoba, on the eastern edge of the Canadian prairies at the meeting of the Red and Assiniboine rivers, with a metro area of about 950,000 as of July 2025. This has long been a meeting point for Indigenous peoples and the fur trade, and became the 'gateway to the West' with the railway in the late 19th century. The name comes from the Cree 'wīnipēk', meaning 'muddy water', for Lake Winnipeg to the north.",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501
@@ -3407,8 +3502,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   calgary: {
+    // identity sources: 加拿大统计局官方 CSV 全表核对（基准 2025-07-01，2026-01-14 由 The Daily 发布）：
+    //   CMA 表 17-10-0148-01、CSD 表 17-10-0155-01。**CSD（市镇）与 CMA（人口普查都会区）是两档并存的官方口径**，
+    //   差别可以很大。本项目日历「次年 1 月中旬」那一行核对无误。2026-09-09 核。
+    //   卡尔加里 **CSD 1,612,834** / **CMA 1,836,012**（2025-07-01，1 级，2026-09-09 核）。
+    //   **与温尼伯同一种错：identity 把市域数当成了都会区数**，差约 14%、同样落在 `C6i` 的 20% 容差内。
     identity:
-      "Calgary is the largest city in Alberta, on the eastern foot of the Rockies where the prairies meet the mountains, with a metro area of about 1.6 million. It is Canada's oil-and-gas centre and the gateway to Banff, the Rockies and cowboy culture. The name comes from Calgary on the Isle of Mull in Scotland, given by an early North-West Mounted Police commissioner.",
+      "Calgary is the largest city in Alberta, on the eastern foot of the Rockies where the prairies meet the mountains, with a metro area of about 1.84 million as of July 2025. It is Canada's oil-and-gas centre and the gateway to Banff, the Rockies and cowboy culture. The name comes from Calgary on the Isle of Mull in Scotland, given by an early North-West Mounted Police commissioner.",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501
@@ -3429,8 +3529,13 @@ export const TRAVEL_CONTENT_EN: Record<string, TravelGuide> = {
   },
 
   edmonton: {
+    // identity sources: 加拿大统计局官方 CSV 全表核对（基准 2025-07-01，2026-01-14 由 The Daily 发布）：
+    //   CMA 表 17-10-0148-01、CSD 表 17-10-0155-01。**CSD（市镇）与 CMA（人口普查都会区）是两档并存的官方口径**，
+    //   差别可以很大。本项目日历「次年 1 月中旬」那一行核对无误。2026-09-09 核。
+    //   埃德蒙顿 **CSD 1,238,295** / **CMA 1,692,385**（2025-07-01，1 级，2026-09-09 核）。
+    //   **原 identity 的「约 150 万」两档都对不上**，是一个游离的旧数字。
     identity:
-      "Edmonton is the capital of Alberta, in the centre of the province on both banks of the North Saskatchewan River valley, with a metro area of about 1.5 million — one of the northernmost large cities in Canada, and the supply base for the northern oil-sands region and the territories. The name comes from Edmonton, a district of London, England, via a Hudson's Bay Company official's home town.",
+      "Edmonton is the capital of Alberta, in the centre of the province on both banks of the North Saskatchewan River valley, with a metro area of about 1.69 million as of July 2025 — one of the northernmost large cities in Canada, and the supply base for the northern oil-sands region and the territories. The name comes from Edmonton, a district of London, England, via a Hudson's Bay Company official's home town.",
     // howItWorks sources: 加拿大统计局（StatCan）Subprovincial areas 年度系列，REF_DATE 2025（即 2025-07-01），随 The Daily 2026-01-14《Canada's population estimates: Subprovincial areas, 2025》发布。子代理直接下载官方 CSV 全表核对（非网页摘要、非转述），**级别 1**。
     //   有效表号：**17-10-0155-01（CSD 市镇）/ 17-10-0148-01（CMA 都会区）** —— 旧表号 17-10-0142-01 / 17-10-0135-01 是 2016 边界版，**已停用**。
     //   https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1710015501

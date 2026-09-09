@@ -1247,6 +1247,12 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   nitmiluk: {
+    // seeing sources: 孔博尔吉砂岩 **1,650 Ma（约 16.5 亿年）** —— 北领地政府官方考察指南（2 级，2026-09-09 核）。
+    //   旱季水位低时峡谷断成 **13 段**独立深潭，多来源一致。
+    //   **1989-09-10 土地正式归还 Jawoyn 人**，此后在 99 年租约下与北领地公园部门联合管理（ABC News，2 级）。
+    //   地名 Nitmiluk 意为「蝉之地」（Cicada Place / place of the cicada dreaming）——
+    //   Jawoyn 官方旅游资料（2 级）。
+    //   **这是官方双名（Nitmiluk / Katherine Gorge）用法正确的范例**：现行官方名在前、旧名并列，不作主次断言。
     seeing:
       "Nitmiluk, north-east of the town of Katherine in the Northern Territory, is a chain of gorges where the Katherine River cuts through a sandstone plateau — at low water in the dry season it breaks into 13 separate deep pools divided by rock bars; when the wet season raises the river it joins back into one continuous flow.",
     formation:
@@ -1262,6 +1268,11 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   },
 
   "glasshouse-mountains": {
+    // seeing sources: 比尔瓦山（Mount Beerwah）**556 m**；火山颈年代学界普遍给 **26—27 Ma**（渐新世早期），
+    //   正文的「约 2500—2700 万年前」吻合（3 级交叉，2026-09-09 核）。
+    //   库克 **1770-05-17** 的日记原话即以约克郡的玻璃窑（glass houses）作比，命名沿用至今（2 级，昆州档案馆）。
+    //   **联邦环境部（DCCEEW）国家名录页确认此地是 Jinibara（及 Kabi Kabi）传统土地，多座山峰为圣址，
+    //   传统主人建议不要攀爬**（1 级）—— 正文的「多座山峰是圣址」与官方表述一致。
     seeing:
       "The Glass House Mountains, in south-east Queensland about 70 km north of Brisbane, are a group of steep peaks rising abruptly and alone from a flat coastal plain, the highest being Mount Beerwah at about 556 m. Their shapes are striking — some like round towers, some like knife-backs — and they do not connect to each other.",
     formation:
@@ -1295,8 +1306,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
   "great-australian-bight": {
     seeing:
       "The Great Australian Bight is a huge, open, curved gulf on the central southern coast of Australia, facing the Southern Ocean. Its best-known stretch of coast is the Bunda Cliffs: a straight limestone cliff line running about 210 km, some 60–120 m high, with the edge of the Nullarbor Plain at the top and deep sea directly below.",
+    // formation sources: **「澳大利亚与南极分离」不是一个可以钉在某一年的事件**：裂解始于白垩纪晚期（约 85—99 Ma），
+    //   深水通道完全打通（洋流意义上的分离）多篇地球物理文献定在约 **30—35 Ma**；
+    //   科普材料常用「约 5000 万年前」甚至「约 6500 万年前」，**找不到可作定论的一手（GA / 澳南极局）口径**
+    //   （3 级学术论文 + 2 级澳大利亚南极局，2026-09-09 核）。已改成过程性表述，不写单一年代。
+    //   邦达崖连续约 210 km、高约 60—120 m；岩石为中—晚始新世的威尔逊崖石灰岩（欧克拉盆地最老最厚的
+    //   石灰岩单元），均核实无误。南露脊鲸 5—10 月带幼崽近岸，与 Head of Bight 官方及海洋公园的季节限制一致。
+    //   1840—41 年艾尔与向导 Wylie 完成有记录的首次陆路穿越。
     formation:
-      "The Bunda Cliffs are Eocene Wilson Bluff Limestone, then a shallow sea floor. About 50 million years ago Australia separated from Antarctica and drifted north; this continental margin was uplifted and then cut back by the constant pounding of the Southern Ocean's swell into this near-vertical cliff line. The clifftop is almost featureless because the Nullarbor itself is one uncut slab of limestone.",
+      "The Bunda Cliffs are Eocene Wilson Bluff Limestone, then a shallow sea floor. Since the Late Cretaceous, Australia has been slowly separating from Antarctica and drifting north; this continental margin was uplifted and then cut back by the constant pounding of the Southern Ocean's swell into this near-vertical cliff line. The clifftop is almost featureless because the Nullarbor itself is one uncut slab of limestone.",
     observation:
       "From the air there are three parallel bands — plain, cliff, sea: inland is the pale-yellow, treeless Nullarbor Plain, then abruptly a white cliff wall, and immediately below it the deep-blue Southern Ocean, with almost no beach in between. The cliff line is extremely straight, notched only here and there by small bays. Around the Head of Bight, southern right whales with calves appear close inshore from about May to October.",
     distinguish:
@@ -1318,13 +1336,21 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Pinnacles are residual bodies left by dissolution plus differential erosion — not stalagmites (they do not grow by dripping water) and not fossil tree trunks. They are similar in form and related in origin to Purnululu's sandstone cones (both shaped by water eroding along cracks), but the Pinnacles are far smaller individually and develop in young coastal limestone.",
     concept:
       "This pillar field shows that a coastal dune is not just an inert pile of sand: given enough rainfall, seeping water can, over tens of thousands of years, rework the interior of a calcareous dune into alternating hard pillars and soft sand — and once the wind removes the soft part, the underground form is turned up to the surface.",
+    // history sources: **1658 年荷兰航海图标的是海岸沙丘状导航地标（South / North Hummocks），不是尖峰石阵** ——
+    //   石柱群在内陆、从海上根本看不见；它直到 **1934 年**地质调查才首次被记录，
+    //   1967 年先划为保护区、1994 年三块保护区合并设立南邦国家公园（3 级，2026-09-09 核）。
+    //   **原文把「荷兰航图标了这段海岸的地标」和「荷兰航图标了尖峰石阵」混成了一件事** ——
+    //   与「霍伊老人被写成白垩海蚀柱」「湄功河被写成湄公河」同一形状。
+    //   母岩确为塔马拉石灰岩；**成因至今没有定论**（溶蚀管模型 vs 钙结层/根管模型，2024 年仍有新研究
+    //   在修正认知）—— **正文写的是「学界还有不同看法」，是正确写法**。
+    //   Yued（努恩加语言群）作为传统主人的表述与官方一致。
     history:
-      "The Nambung area is the country of the Yued Noongar people. A 17th-century Dutch chart already marked \"limestone pinnacles\" near this coast. The pillar field was long covered by drifting sand and only came to wide notice in the 1960s; it was added to the national park in 1994.",
+      "The Nambung area is the country of the Yued Noongar people. A 17th-century Dutch chart already marked the coastal dunes here as navigation landmarks (the \"Hummocks\"), but the pillars themselves lie inland and are invisible from the sea. The pillar field was long covered by drifting sand, was first recorded by a geological survey in 1934, and only came to wide notice in the 1960s; it was added to the national park in 1994.",
   },
 
   "willandra-lakes": {
     seeing:
-      "The Willandra Lakes Region, in the dry interior of south-western New South Wales, is a chain of about 17 long-dry Pleistocene lake beds. Today there is no water — only flat lake floors and, on the eastern shore of each, a crescent-shaped ridge of sand and clay. Lake Mungo is the most thoroughly studied of them.",
+      "The Willandra Lakes Region, in the dry interior of south-western New South Wales, is a chain of 19 long-dry Pleistocene lake beds — five larger interconnected basins and fourteen smaller ones. Today there is no water — only flat lake floors and, on the eastern shore of each, a crescent-shaped ridge of sand and clay. Lake Mungo is the most thoroughly studied of them.",
     formation:
       "The lakes were once fed by Willandra Creek, formerly a branch of the Lachlan River. In wetter glacial times the lakes joined into one sheet of water; about 18,500 years ago the river shifted course and the climate dried, and the lakes dried out for good. While the lakes existed, prevailing westerly winds carried sand and clay from the lake shores to the eastern side and piled them into crescent-shaped \"lunettes\"; the one at Lake Mungo is known as the \"Walls of China.\"",
     observation:
@@ -1333,8 +1359,18 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "Willandra's basins are dry lakes left behind after the climate dried, unlike Lake Eyre, an \"active salt lake that fills only occasionally\": Lake Eyre still fills in big flood years, whereas the Willandra lakes have held no water for more than ten thousand years. Its lunettes are the key evidence for \"there was once a lake here, and this is the wind that blew then.\"",
     concept:
       "A lunette is the \"fingerprint\" of an ancient lake: it always sits on the downwind shore, and within it a layer of quartz sand marks a time when the lake held water, a layer of clay a time when the lake shrank to a salt flat. Reading a section through a lunette reconstructs the wet–dry history of that lake over tens of thousands of years.",
+    // history sources: **「归还」与「重新安葬」是分属不同年份的两件事**：
+    //   **芒戈女士 1992 年归还传统所有者保管、芒戈先生 2017 年归还；2022 年是正式重新安葬（reburial）**，
+    //   连同其他遗骸共 108 具 —— ABC News（2 级，2026-09-09 核）。原文把三个年份压成了「2022 年归还并重新安葬」。
+    //   **遗骸年代约 4 万年前（40,000 ± 2,000 BP）是 Bowler 等 2003 年在《Nature》重新测年的结果**，
+    //   取代了此前 6.2 万年的旧说 —— 正文用的是现行共识，没有停在旧说。
+    //   发现年份 1968（芒戈女士火化遗迹）与 1974（芒戈先生）、约 460 处化石脚印（2003 年发现，
+    //   已知世界最大规模更新世人类脚印遗迹群）、1981 年列入世界遗产，均核实无误。
+    //   族名 Mutthi Mutthi / Ngiyampaa / Paakantyi(Barkindji) 与 NSW NPWS、UNESCO 的官方表述一致。
+    //   **干涸时间「约 1.85 万年前」是会被新研究修正的量**：NSW 环境局给「约 1.9 万年前开始干涸」，
+    //   另有研究给约 1.4 万年前完全断流 —— 干涸是渐进过程，下一轮留意区间是否收窄。
     history:
-      "Willandra is the country of the Mutthi Mutthi, Ngiyampaa and Paakantyi (Barkindji) peoples, continuously occupied for at least tens of thousands of years. In 1968 and 1974, geologists found in the Lake Mungo lunette two sets of human remains about 40,000 years old (known as \"Mungo Lady\" and \"Mungo Man\"), and later about 460 fossil footprints; these findings are all scientifically published and are central to the area's 1981 World Heritage listing. The remains were returned to the local community and reburied in 2022.",
+      "Willandra is the country of the Mutthi Mutthi, Ngiyampaa and Paakantyi (Barkindji) peoples, continuously occupied for at least tens of thousands of years. In 1968 and 1974, geologists found in the Lake Mungo lunette two sets of human remains about 40,000 years old (known as \"Mungo Lady\" and \"Mungo Man\"), and later about 460 fossil footprints; these findings are all scientifically published and are central to the area's 1981 World Heritage listing. Mungo Lady's remains were returned to the custody of the traditional owners in 1992 and Mungo Man's in 2017; in 2022 the two were formally reburied along with other remains, 108 sets in all.",
   },
 
   "mount-gambier": {
@@ -1348,6 +1384,15 @@ export const TERRAIN_CONTENT_EN: Record<string, TerrainLesson> = {
       "The Blue Lake is a crater lake, entirely different in origin from a glacially scoured lake like Kanas or a fault-subsidence lake like Qinghai Lake. It also differs from a Hawaiian-style shield volcano that pours out sheets of lava — this was an explosive eruption where magma met groundwater, and the product is a pit, not a lava flow.",
     concept:
       "The Blue Lake's summer colour is generally attributed to warming of the surface water and the crystallisation of tiny calcium carbonate crystals in the lake, which scatter the blue light in sunlight so the water looks blue; when it cools the crystals dissolve and the blue fades. The exact mechanism is still under study. It is a reminder that a lake's colour can be a physical phenomenon that changes with the season, not a dye.",
+    // history sources: **这一篇是「把不确定性如实写出来」的正面范例**：
+    //   最近一次喷发年代的估计范围极宽（**4,300—28,000 年前**不等，最新放射性碳测年给约 6,000 年前），
+    //   正文用了「不同方法」「若……成立」「可能」**三重限定**，与文献的不确定程度相符 —— 不需要改。
+    //   蓝湖变蓝写的是「确切机制仍在研究」：学术研究确认色变与钙华（calcite）析出、光散射有关，
+    //   但具体驱动（脱气 / 腐殖质共沉淀等）仍有不同表述 —— 同样没把有争议的机制写成定论。
+    //   maar（低平火山口）的岩浆遇地下水爆炸成因与标准地质学一致；
+    //   布安迪克（Boandik）人为传统主人，蓝湖的 Boandik 语名为 WarWar（1 级，甘比尔山市政府双名页）；
+    //   1884 年建成抽水站取水供应市镇，沿用至今（2 级，南澳水务）。
+    //   **火山测年会随新方法持续修正，下一轮回来复核这个区间。**
     history:
       "This area is the country of the Boandik people. Different methods give ages for the last eruption ranging from about 28,000 to about 6,000 years ago; if the most recent figure of about 6,000 years is correct, this may be the most recent volcanic eruption known on the Australian mainland. The Blue Lake has been Mount Gambier's drinking-water supply since 1884.",
   },

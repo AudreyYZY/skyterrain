@@ -185,11 +185,26 @@ const CROSS_SUB_ZH =
   /(市区|城区|都会区|市辖区|新区|地区单位|城市吸引区|建成区|首都圈|大区|这个省|该省|全省|全国|户籍|城镇人口|游客|学生|外国籍|老城|镇|口径|登记人口|城市本身|市镇|县|岛上|全岛|府|州|旧城|市中心)/;
 const CROSS_SUB_EN =
   /\b(urban|metropolitan|metro|agglomeration|regional unit|capital area|built-up|province|prefecture|state|nationwide|visitors|students|foreign residents|old town|with the towns of|district|districts|New Area|estates|register|registered)\b/i;
-const CROSS_POP_ZH = /(常住人口|登录人口|普查人口|人口|居民)/;
-const CROSS_POP_EN = /\b(population|people|residents|inhabitants)\b/i;
+/**
+ * **这里曾经有和 C6 一模一样的洞**（2026-09-09 修）：判据要求句子里出现「人口 / 居民」，
+ * 于是「温尼伯……**都会区约 85 万人**」这种句子 C6i 根本看不见 —— 那一段压根没进比较。
+ * C6 的同一个洞在 2026-09-08 补过一次（`PERISHABLE_ZH` 加了「口径词 + 数字 + 万人」分支），
+ * **但补一处不等于补了另一处**：两条规则各有一份自己的正则，改一份的时候没想到另一份。
+ * 这也是为什么温尼伯「把 CSD 的数贴上都会区标签」那条要靠人工核实才发现。
+ */
+const CROSS_POP_ZH = /(常住人口|登录人口|普查人口|人口|居民)|(都会区|大都会市|城区|市域|全市|全岛|连绵区)[^。；！？]{0,8}?\d[\d.,]*\s*万人/;
+const CROSS_POP_EN = /\b(population|people|residents|inhabitants)\b|\b(metro(?:politan)? area|urban area|conurbation)\b[^.;!?]{0,24}?[\d,]{4,}/i;
 /** 中文数字紧跟在「人口」后；英文数字通常在词之前，所以取句中第一个带单位的数 */
 const CROSS_NUM_ZH = /(?:人口|居民)[^。；！？]{0,10}?([\d.,]+)\s*(万|亿)/;
 const CROSS_NUM_EN = /([\d.,]+)\s*(million|thousand)\b/i;
+/** 口径词直接接数字的写法（「都会区约 85 万人」），C6 那边也补过同一条分支 */
+const CROSS_NUM_ZH_CALIBER = /(?:都会区|大都会市|城区|市域|全市|全岛|连绵区)[^。；！？]{0,8}?([\d.,]+)\s*(万|亿)人/;
+const CROSS_NUM_EN_CALIBER = /(?:metro(?:politan)? area|urban area|conurbation)[^.;!?]{0,24}?([\d,]{4,})(?!\s*(?:million|thousand))/i;
+/** 两种写法都试一遍，先试带「人口/居民」的那种 */
+function crossNumMatch(s: string, zh: boolean): RegExpExecArray | null {
+  return (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s)
+    ?? (zh ? CROSS_NUM_ZH_CALIBER : CROSS_NUM_EN_CALIBER).exec(s);
+}
 /**
  * 次级口径词只在**数字所在的那个分句**里才算数。
  *
@@ -233,13 +248,49 @@ function nearSub(s: string, at: number, len: number, zh: boolean): boolean {
  */
 const CROSS_TOLERANCE = 0.20;
 
-function crossValue(s: string, zh: boolean): number | null {
-  const m = (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s);
+/**
+ * **C6i-b：两段都点名「都会区」这一档，数字却对不上**（2026-09-09 加）。
+ *
+ * C6i 主轨**有意只比「全市档」** —— `CROSS_SUB_ZH` 里明明白白列着「都会区」，
+ * 带子口径的数字一律被 `nearSub` 排除掉。这个设计是对的（拿都会区的数去和市的数比会满屏误报），
+ * 但它留下一个盲区：**两段都写「都会区」、数字却对不上**的情况，主轨根本看不见。
+ *
+ * 温尼伯就是这么漏掉的：identity 写「**都会区**约 85 万」，howItWorks 写
+ * 「市域约 85 万、**都会区**约 95 万」—— 85 万其实是 CSD（市镇）的数被贴上了都会区的标签，
+ * 两个数字都是真的、错的是标签。卡尔加里（161 万 vs 184 万）是同一种。
+ *
+ * 所以另开一条轨：**只在两段都点名同一档口径时比**，容差收到 5% ——
+ * 都指同一个东西，就没有「一段取整、一段精确」的余地了。
+ */
+const SAME_CALIBER_TOLERANCE = 0.05;
+const METRO_CALIBER_ZH = /(都会区|大都会市|城市连绵区|连绵建成区)/;
+const METRO_CALIBER_EN = /\b(metro(?:politan)? area|metropolitan region|conurbation)\b/i;
+/** 取**紧跟在口径词之后**的那个数字（同一句里往往还有市域人口，不能取错） */
+const METRO_NUM_ZH = /(?:都会区|大都会市|城市连绵区|连绵建成区)[^。；！？]{0,10}?([\d.,]+)\s*(万|亿)/;
+const METRO_NUM_EN_FWD =
+  /(?:metro(?:politan)? area|metropolitan region|conurbation)[^.;!?]{0,30}?([\d.,]+)\s*(million|thousand)?/i;
+const METRO_NUM_EN_BACK =
+  /([\d.,]+)\s*(million|thousand)?\s+in the (?:metro(?:politan)? area|metropolitan region)/i;
+function metroValue(s: string, zh: boolean): number | null {
+  const m = zh
+    ? METRO_NUM_ZH.exec(s)
+    : (METRO_NUM_EN_BACK.exec(s) ?? METRO_NUM_EN_FWD.exec(s));
   if (!m) return null;
   const n = parseFloat(m[1]!.replace(/,/g, ""));
   if (!Number.isFinite(n)) return null;
-  const unit = m[2]!.toLowerCase();
-  const mult = unit === "亿" ? 1e8 : unit === "万" ? 1e4 : unit === "million" ? 1e6 : 1e3;
+  const unit = (m[2] ?? "").toLowerCase();
+  return n * (unit === "亿" ? 1e8 : unit === "万" ? 1e4 : unit === "million" ? 1e6 : unit === "thousand" ? 1e3 : 1);
+}
+
+function crossValue(s: string, zh: boolean): number | null {
+  const m = crossNumMatch(s, zh);
+  if (!m) return null;
+  const n = parseFloat(m[1]!.replace(/,/g, ""));
+  if (!Number.isFinite(n)) return null;
+  // 口径词分支（英文）没有单位词，数字本身就是人数
+  const unit = (m[2] ?? "").toLowerCase();
+  const mult =
+    unit === "亿" ? 1e8 : unit === "万" ? 1e4 : unit === "million" ? 1e6 : unit === "thousand" ? 1e3 : 1;
   return n * mult;
 }
 
@@ -283,6 +334,8 @@ const hits: Hit[] = [];
 const exempted: { key: string; e: Exempt }[] = [];
 /** C6i 用：按「条目 + 语言」攒 identity / howItWorks 两段的全市人口 */
 const crossByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
+/** C6i-b 用：同样按条目+语言，但只攒**点名了「都会区」这一档**的数字 */
+const metroByEntry = new Map<string, { seg: (typeof segments)[number]; rows: CrossRow[] }>();
 
 const { segments } = await collectTtsSegments();
 
@@ -307,8 +360,16 @@ for (const seg of segments) {
     seg.kind === "travel" && (seg.section === "identity" || seg.section === "howItWorks");
 
   for (const s of splitSentences(seg.text)) {
+    if (crossable && (zh ? METRO_CALIBER_ZH : METRO_CALIBER_EN).test(s)) {
+      const mv = metroValue(s, zh);
+      if (mv !== null && mv >= 1000) {
+        const key = `${seg.id}|${seg.lang}`;
+        if (!metroByEntry.has(key)) metroByEntry.set(key, { seg, rows: [] });
+        metroByEntry.get(key)!.rows.push({ section: seg.section, sentence: s, v: mv, census: false });
+      }
+    }
     if (crossable && (zh ? CROSS_POP_ZH : CROSS_POP_EN).test(s)) {
-      const nm = (zh ? CROSS_NUM_ZH : CROSS_NUM_EN).exec(s);
+      const nm = crossNumMatch(s, zh);
       const v = nm && !nearSub(s, nm.index, nm[0].length, zh) ? crossValue(s, zh) : null;
       if (v !== null && v >= 1000) {
         const key = `${seg.id}|${seg.lang}`;
@@ -376,6 +437,21 @@ for (const [, { seg, rows }] of crossByEntry) {
     ...seg,
     rule: "C6i-同条目两段人口打架",
     sentence: `identity「${a.sentence.slice(0, 45)}」 vs howItWorks「${b.sentence.slice(0, 45)}」`,
+  });
+}
+
+// C6i-b：两段都点名「都会区」这一档，数字却对不上（容差 5%）
+for (const [, { seg, rows }] of metroByEntry) {
+  const ident = rows.filter((r) => r.section === "identity");
+  const hiw = rows.filter((r) => r.section === "howItWorks");
+  if (!ident.length || !hiw.length) continue;
+  const a = ident.reduce((m, r) => (r.v > m.v ? r : m));
+  const b = hiw.reduce((m, r) => (r.v > m.v ? r : m));
+  if (Math.abs(a.v - b.v) / Math.max(a.v, b.v) <= SAME_CALIBER_TOLERANCE) continue;
+  hits.push({
+    ...seg,
+    rule: "C6i-同条目两段人口打架",
+    sentence: `【都会区档】identity「${a.sentence.slice(0, 40)}」 vs howItWorks「${b.sentence.slice(0, 40)}」`,
   });
 }
 
